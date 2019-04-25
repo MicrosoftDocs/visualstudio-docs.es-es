@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: bb87a322-bac4-4258-92bc-9a876f05d653
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: eacbe69488d605d9cde2fb219a8adbca1419361b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1e70a64e01e388af61127fd76f4a2fcee8e5a9b9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53904301"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091569"
 ---
 # <a name="design-xml-command-table-vsct-files"></a>Diseñar archivos de tabla (.vsct) de comandos XML
 Una tabla de comandos XML (*.vsct*) archivo describe el diseño y la apariencia de los elementos de comando para un paquete VSPackage. Elementos de comandos incluyen botones, cuadros combinados, los menús, barras de herramientas y grupos de elementos de comando. En este artículo se describe cómo crearlos, cómo afectan a los menús y elementos de comandos y archivos de la tabla de comandos XML.
@@ -61,7 +61,7 @@ Una tabla de comandos XML (*.vsct*) archivo describe el diseño y la apariencia 
 - Enlace de teclado: Ya no debe especificar un emulador. Si se especifica uno, el compilador supondrá que el editor y el emulador de son los mismos.
 
 - Keychord: Se ha quitado Keychord. Es el nuevo formato *Key1, Mod1, Key2, Mod2*.  Puede especificar un carácter, hexadecimal o constante VK.
-       
+
 El nuevo compilador, *vsct.exe*, compila ambos *.ctc* y *.vsct* archivos. La antigua *ctc.exe* compilador, sin embargo, no se reconoce o compilar *.vsct* archivos.
 
 Puede usar el *vsct.exe* compilador que convierta existente *.cto* el archivo en un *.vsct* archivo. Para obtener más información, vea [Cómo: Crear un archivo .vsct a partir de un archivo .cto existente](../../extensibility/internals/how-to-create-a-dot-vsct-file.md#how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file).
@@ -69,48 +69,48 @@ Puede usar el *vsct.exe* compilador que convierta existente *.cto* el archivo en
 ## <a name="the-vsct-file-elements"></a>Los elementos del archivo .vsct
  La tabla de comandos tiene la jerarquía y los elementos siguientes:
 
- [CommandTable (elemento)](../../extensibility/commandtable-element.md): Representa todos los comandos, grupos de menús y menús asociados con el VSPackage.
+- [CommandTable (elemento)](../../extensibility/commandtable-element.md): Representa todos los comandos, grupos de menús y menús asociados con el VSPackage.
 
- [Extern (elemento)](../../extensibility/extern-element.md): Hace referencia a los archivos .h externo que desea combinar con el *.vsct* archivo.
+- [Extern (elemento)](../../extensibility/extern-element.md): Hace referencia a los archivos .h externo que desea combinar con el *.vsct* archivo.
 
- [Elemento de inclusión](../../extensibility/include-element.md): Hace referencia a los archivos de encabezado adicional (. h) que desee compilar junto con su *.vsct* archivo. Un *.vsct* puede incluir el archivo *.h* archivos que contiene las constantes que definen los comandos, grupos de menús y menús que el IDE o en otro VSPackage proporciona.
+- [Elemento de inclusión](../../extensibility/include-element.md): Hace referencia a los archivos de encabezado adicional (. h) que desee compilar junto con su *.vsct* archivo. Un *.vsct* puede incluir el archivo *.h* archivos que contiene las constantes que definen los comandos, grupos de menús y menús que el IDE o en otro VSPackage proporciona.
 
- [Elemento Commands](../../extensibility/commands-element.md): Representa todos los comandos individuales que se pueden ejecutar. Cada comando tiene los cuatro elementos secundarios siguientes:
+- [Elemento Commands](../../extensibility/commands-element.md): Representa todos los comandos individuales que se pueden ejecutar. Cada comando tiene los cuatro elementos secundarios siguientes:
 
- [Menus (elemento)](../../extensibility/menus-element.md): Representa todos los menús y barras de herramientas en el VSPackage. Los menús son contenedores de grupos de comandos.
+- [Menus (elemento)](../../extensibility/menus-element.md): Representa todos los menús y barras de herramientas en el VSPackage. Los menús son contenedores de grupos de comandos.
 
- [Elemento Groups](../../extensibility/groups-element.md): Representa todos los grupos en el VSPackage. Los grupos son colecciones de comandos individuales.
+- [Elemento Groups](../../extensibility/groups-element.md): Representa todos los grupos en el VSPackage. Los grupos son colecciones de comandos individuales.
 
- [Elemento botones](../../extensibility/buttons-element.md): Representa todos los botones de comando y los elementos de menú en el VSPackage. Los botones son controles visuales que pueden asociarse con comandos.
+- [Elemento botones](../../extensibility/buttons-element.md): Representa todos los botones de comando y los elementos de menú en el VSPackage. Los botones son controles visuales que pueden asociarse con comandos.
 
- [Elemento de mapas de bits](../../extensibility/bitmaps-element.md): Representa todos los mapas de bits para todos los botones en el VSPackage. Los mapas de bits son imágenes que se muestran junto a o en los botones de comando, dependiendo del contexto.
+- [Elemento de mapas de bits](../../extensibility/bitmaps-element.md): Representa todos los mapas de bits para todos los botones en el VSPackage. Los mapas de bits son imágenes que se muestran junto a o en los botones de comando, dependiendo del contexto.
 
- [CommandPlacements (elemento)](../../extensibility/commandplacements-element.md): Indica más ubicaciones donde los comandos individuales deben estar ubicados en los menús del paquete VSPackage.
+- [CommandPlacements (elemento)](../../extensibility/commandplacements-element.md): Indica más ubicaciones donde los comandos individuales deben estar ubicados en los menús del paquete VSPackage.
 
- [VisibilityConstraints (elemento)](../../extensibility/visibilityconstraints-element.md): Especifica si un comando se muestra en absoluto veces o sólo en determinados contextos, como cuando se muestre un cuadro de diálogo determinado o ventana. Menús y comandos que tienen un valor para este elemento se mostrarán solo cuando está activo el contexto especificado. El comportamiento predeterminado consiste en Mostrar el comando en todo momento.
+- [VisibilityConstraints (elemento)](../../extensibility/visibilityconstraints-element.md): Especifica si un comando se muestra en absoluto veces o sólo en determinados contextos, como cuando se muestre un cuadro de diálogo determinado o ventana. Menús y comandos que tienen un valor para este elemento se mostrarán solo cuando está activo el contexto especificado. El comportamiento predeterminado consiste en Mostrar el comando en todo momento.
 
- [Elemento KeyBindings](../../extensibility/keybindings-element.md): Especifica los enlaces de teclado para los comandos. Es decir, una o varias combinaciones de teclas que se deben presionar para ejecutar el comando, como **Ctrl**+**S**.
+- [Elemento KeyBindings](../../extensibility/keybindings-element.md): Especifica los enlaces de teclado para los comandos. Es decir, una o varias combinaciones de teclas que se deben presionar para ejecutar el comando, como **Ctrl**+**S**.
 
- [UsedCommands (elemento)](../../extensibility/usedcommands-element.md): Informa a la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] que, aunque se implementa el comando especificado por otro código, cuando el paquete VSPackage actual está activo, proporciona la implementación de comandos del entorno.
+- [UsedCommands (elemento)](../../extensibility/usedcommands-element.md): Informa a la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] que, aunque se implementa el comando especificado por otro código, cuando el paquete VSPackage actual está activo, proporciona la implementación de comandos del entorno.
 
- [Symbols (elemento)](../../extensibility/symbols-element.md): Contiene los nombres de símbolos y los identificadores GUID para todos los comandos en el paquete.
+- [Symbols (elemento)](../../extensibility/symbols-element.md): Contiene los nombres de símbolos y los identificadores GUID para todos los comandos en el paquete.
 
 ## <a name="vsct-file-design-guidelines"></a>instrucciones de diseño del archivo .vsct
  Diseño correctamente un *.vsct* , siga estas instrucciones.
 
--   Los comandos se pueden colocar solo en grupos, grupos se pueden colocar solo en los menús y menús pueden colocarse únicamente en grupos. Sólo los menús realmente se muestran en el IDE, grupos y los comandos no están.
+- Los comandos se pueden colocar solo en grupos, grupos se pueden colocar solo en los menús y menús pueden colocarse únicamente en grupos. Sólo los menús realmente se muestran en el IDE, grupos y los comandos no están.
 
--   No se puede asignar directamente a un menú submenús, pero deben asignarse a un grupo, que a su vez se asigna a un menú.
+- No se puede asignar directamente a un menú submenús, pero deben asignarse a un grupo, que a su vez se asigna a un menú.
 
--   Comandos, submenús y grupos pueden asignarse a un menú mediante el campo principal de su definición de directiva o grupo de la relación jerárquica.
+- Comandos, submenús y grupos pueden asignarse a un menú mediante el campo principal de su definición de directiva o grupo de la relación jerárquica.
 
--   Organización de una tabla de comandos únicamente a través de los campos de elemento primario en las directivas tiene una limitación importante. Las directivas que definen objetos pueden tomar el argumento de un único elemento primario.
+- Organización de una tabla de comandos únicamente a través de los campos de elemento primario en las directivas tiene una limitación importante. Las directivas que definen objetos pueden tomar el argumento de un único elemento primario.
 
--   Volver a usar los comandos, grupos o submenús requiere el uso de una directiva nueva para crear una nueva instancia del objeto con su propio `GUID:ID` par.
+- Volver a usar los comandos, grupos o submenús requiere el uso de una directiva nueva para crear una nueva instancia del objeto con su propio `GUID:ID` par.
 
--   Cada `GUID:ID` par debe ser único. Volver a usar un comando, por ejemplo, colocados en un menú, una barra de herramientas, o en un menú contextual, se controla mediante el <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfaz.
+- Cada `GUID:ID` par debe ser único. Volver a usar un comando, por ejemplo, colocados en un menú, una barra de herramientas, o en un menú contextual, se controla mediante el <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfaz.
 
--   Los comandos y submenús también pueden asignarse a varios grupos y grupos se pueden asignar a varios menús con el [elemento Commands](../../extensibility/commands-element.md).
+- Los comandos y submenús también pueden asignarse a varios grupos y grupos se pueden asignar a varios menús con el [elemento Commands](../../extensibility/commands-element.md).
 
 ## <a name="vsct-file-notes"></a>notas del archivo .vsct
  Si realiza los cambios realizados en un *.vsct* archivo después de tanto compilarlo y colocarlo en un archivo DLL nativo, debe ejecutar **devenv.exe /setup /nosetupvstemplates**. Realizar por lo que fuerza los recursos de VSPackage especificados en el registro de experimental a leer y la base de datos interna que describe [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] se vuelvan a generar.
@@ -122,4 +122,4 @@ Puede usar el *vsct.exe* compilador que convierta existente *.cto* el archivo en
  Ejecute la herramienta mediante el comando **CreateExpInstance /Reset**. Recuerde que esta herramienta quita el subárbol experimental todos los VSPackages registrados normalmente no se instala con [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
 
 ## <a name="see-also"></a>Vea también
- [Extender los menús y comandos](../../extensibility/extending-menus-and-commands.md)
+- [Extender los menús y comandos](../../extensibility/extending-menus-and-commands.md)

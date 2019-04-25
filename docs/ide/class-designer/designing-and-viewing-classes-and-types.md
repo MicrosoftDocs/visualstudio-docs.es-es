@@ -1,7 +1,6 @@
 ---
 title: Usar el Diseñador de clases
 ms.date: 05/08/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.diagram
@@ -14,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 40ed2c9d-0ce0-4b95-ad78-5dec2065ccea
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6533827c3aa962cf8856752c0482678684e65755
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ee4910471693a2941ec9548773a2f50e443a639b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53853429"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55910745"
 ---
 # <a name="design-and-view-classes-and-types-with-class-designer"></a>Diseñar y ver clases y tipos con el Diseñador de clases
 

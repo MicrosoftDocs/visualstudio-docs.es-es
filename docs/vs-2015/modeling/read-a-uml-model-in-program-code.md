@@ -1,32 +1,29 @@
 ---
 title: Leer un modelo UML en código de programa | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML API, reading models
 ms.assetid: 0f63105e-6079-498a-94f1-318c0f5f9621
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 62355c8b934b152aae8d3a4102432d2eb0553473
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 48d70901a2d616031eeed197b639f3a7bb7336c3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51721245"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092999"
 ---
 # <a name="read-a-uml-model-in-program-code"></a>Leer un modelo UML en el código del programa
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Puede cargar un modelo UML y sus diagramas usando la API de UML.  
   
-##  <a name="Reading"></a> Leer un modelo en el código de programa  
+## <a name="Reading"></a> Leer un modelo en el código de programa  
  Para tener acceso al contenido de un modelo sin mostrarlo en una ventana de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], utilice `ModelingProject.LoadReadOnly()`.  
   
  Por ejemplo:  
@@ -73,7 +70,7 @@ foreach (string diagramFile in projectReader. DiagramFileNames)
   
  También puede abrir modelos y diagramas en la interfaz de usuario mediante la API de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Para obtener más información, consulte [abrir un modelo UML mediante la API de Visual Studio](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md).  
   
-##  <a name="Standalone"></a> Aplicaciones independientes  
+## <a name="Standalone"></a> Aplicaciones independientes  
  El ejemplo de la sección anterior funcionará en las extensiones de Visual Studio. Es posible leer un modelo en una aplicación independiente, pero debe agregar algunas referencias al proyecto de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 > [!NOTE]
@@ -85,9 +82,9 @@ foreach (string diagramFile in projectReader. DiagramFileNames)
   
 2. Agregue las referencias de [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)] que necesita para tener acceso a los modelos UML, normalmente:  
   
-   -   Microsoft.VisualStudio.Uml.Interfaces.dll  
+   - Microsoft.VisualStudio.Uml.Interfaces.dll  
   
-   -   Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll  
+   - Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll  
   
 3. Además de las referencias enumeradas en las secciones anteriores, agregue las siguientes referencias de proyecto de **\Program Files\Microsoft Visual Studio [versión] \Common7\IDE\PrivateAssemblies**:  
   
@@ -110,6 +107,3 @@ foreach (string diagramFile in projectReader. DiagramFileNames)
 ## <a name="see-also"></a>Vea también  
  [Programación con la API de UML](../modeling/programming-with-the-uml-api.md)   
  [Ampliar modelos y diagramas UML](../modeling/extend-uml-models-and-diagrams.md)
-
-
-

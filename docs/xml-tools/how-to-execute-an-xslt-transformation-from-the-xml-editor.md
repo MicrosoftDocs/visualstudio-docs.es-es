@@ -1,68 +1,63 @@
 ---
-title: Procedimiento Ejecutar una transformación XSLT desde el Editor XML
-ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
+title: Ejecutar una transformación XSLT
+ms.date: 03/05/2019
 ms.topic: conceptual
 ms.assetid: 56a0fe82-5231-487d-8b6e-a08a9b04e0fc
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3fccad81c2990a93e78f329e2ee4af070d6e5c97
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e84b1c6303da4c0db39da1b3585a7d4548560feb
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53866522"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526378"
 ---
-# <a name="how-to-execute-an-xslt-transformation-from-the-xml-editor"></a>Procedimiento Ejecutar una transformación XSLT desde el Editor XML
+# <a name="how-to-execute-an-xslt-transformation-from-the-xml-editor"></a>Filtrar Ejecutar una transformación XSLT desde el editor XML
 
-El Editor XML permite asociar una hoja de estilos XSLT con un documento XML, realizar la transformación y ver el resultado. El resultado de la transformación XSLT se muestra en una nueva ventana de documento.
+El editor XML permite asociar una hoja de estilos XSLT a un documento XML, realizar la transformación y ver la salida. El resultado de la transformación XSLT se muestra en una nueva ventana de documento.
 
 El **salida** propiedad especifica el nombre de archivo para la salida. Si el **salida** propiedad está en blanco, se genera un nombre de archivo en el directorio temporal. La extensión de archivo se basa en el `xsl:output` elemento en su estilo de hoja y puede ser. *XML*,. *txt* o. *htm*.
 
-Si el **salida** propiedad especifica un nombre de archivo con un. *htm* o. *HTML* extensión, el resultado XSLT es una vista previa con [!INCLUDE[msCoName](../xml-tools/includes/msconame_md.md)] Internet Explorer. Todas las demás extensiones de archivo se abren con el editor predeterminado que elija [!INCLUDE[msCoName](../xml-tools/includes/msconame_md.md)] Visual Studio. Por ejemplo, si es la extensión de archivo. *xml*, Visual Studio utiliza el Editor XML.
+Si el **salida** propiedad especifica un nombre de archivo con un. *htm* o. *HTML* extensión, el resultado XSLT es una vista previa con un explorador web. Todas las demás extensiones de archivo se abren mediante el editor predeterminado elegido por Visual Studio. Por ejemplo, si es la extensión de archivo. *xml*, Visual Studio utiliza el editor XML.
 
-## <a name="to-execute-an-xslt-transformation-from-an-xml-document"></a>Para ejecutar una transformación XSLT desde un documento XML
+## <a name="execute-an-xslt-transformation-from-an-xml-file"></a>Ejecutar una transformación XSLT desde un archivo XML
 
-1.  Abra un documento XML en el Editor XML.
+1. Abra un documento XML en el editor XML.
 
-2.  Asocie una hoja de estilos XSLT con el documento XML.
+2. Asocie una hoja de estilos XSLT con el documento XML.
 
-    -   Agregue una instrucción de procesamiento `xml-stylesheet` al documento XML. Por ejemplo, agregue la siguiente línea `<?xml-stylesheet type='text/xsl' href='filename.xsl'?>` al prólogo del documento.
+    - Agregue una instrucción de procesamiento `xml-stylesheet` al documento XML. Por ejemplo, agregue la siguiente línea en el prólogo del documento: `<?xml-stylesheet type='text/xsl' href='filename.xsl'?>`
 
-         O bien
+       O bien
 
-    -   Agregar hoja de estilos XSLT mediante la **propiedades** ventana. En el documento **ventana propiedades**, haga clic en el **examinar** botón el **Stylesheet** campo, seleccione la hoja de estilos XSLT y haga clic en **abrir**.
+    - Agregar hoja de estilos XSLT mediante la **propiedades** ventana. Con el archivo XML abierto en el editor, haga clic en cualquier lugar en el editor y elija **propiedades**. En el **propiedades** ventana, haga clic en el **Stylesheet** campo y elija el botón Examinar (...). Seleccione la hoja de estilos XSLT y, a continuación, elija **abierto**.
 
-3.  Haga clic en el **ShowXSL salida** situado en la **Editor XML** barra de herramientas.
+3. En la barra de menús, elija **XML** > **iniciar sin depuración XSLT**. O bien, presione **Ctrl**+**Alt**+**F5**.
 
-    > [!NOTE]
-    > Si no hay ninguna hoja de estilos asociada con el documento XML, un cuadro de diálogo le pide que proporcione la hoja de estilos que desea utilizar.
-    >
-    >  El resultado de la transformación XSLT se muestra en una nueva ventana de documento.
+   La salida de la transformación XSLT se muestra en una nueva ventana de documento.
 
-## <a name="to-execute-an-xslt-transformation-from-an-xslt-style-sheet"></a>Para ejecutar una transformación XSLT desde una hoja de estilos XSLT
+   > [!NOTE]
+   > Si no hay ninguna hoja de estilos asociada con el documento XML, un cuadro de diálogo le pide que proporcione la hoja de estilos que desea utilizar.
 
-1.  Abra una hoja de estilos XSLT en el Editor XML.
+## <a name="execute-an-xslt-transformation-from-an-xslt-style-sheet"></a>Ejecutar una transformación XSLT desde una hoja de estilos XSLT
 
-2.  Especifique un documento XML en el **entrada** campo del documento **propiedades** ventana.
+1. Abra una hoja de estilos XSLT en el editor XML.
 
-    > [!NOTE]
-    > El documento XML es el documento de entrada que se utiliza en la transformación. Si no se especifica un documento cuando se inicia la transformación XSLT, el **abrir archivo** aparece el cuadro de diálogo, y puede especificar un documento en ese momento.
+2. Especifique un documento XML en el **entrada** campo del documento **propiedades** ventana.
 
-3.  Haga clic en el **ShowXSLT salida** situado en la **Editor XML** barra de herramientas.
+   > [!NOTE]
+   > El documento XML es el documento de entrada que se utiliza en la transformación. Si no se especifica un documento cuando se inicia la transformación XSLT, el **abrir archivo** aparece el cuadro de diálogo y se puede especificar un documento en ese momento.
 
-     El resultado de la transformación XSLT se muestra en una nueva ventana de documento.
+3. En la barra de menús, elija **XML** > **iniciar sin depuración XSLT**. O bien, presione **Ctrl**+**Alt**+**F5**.
 
-## <a name="to-provide-a-different-output-file-name"></a>Para proporcionar un nombre de archivo de salida diferente
+   La salida de la transformación XSLT se muestra en una nueva ventana de documento.
 
-1.  Especifique un nombre de archivo en el **salida** campo del documento **propiedades** ventana.
+## <a name="specify-an-output-file-name"></a>Especifique un nombre de archivo de salida
 
-2.  Haga clic en el **ShowXSLT salida** situado en la **Editor XML** barra de herramientas.
-
-     La salida resultante de la transformación XSLT se muestra en una nueva ventana de documento y el editor que se usa en la ventana de salida depende de la extensión de archivo de su **salida** propiedad de documento.
+Puede especificar un nombre de archivo de salida para archivos XML y XSL. Abra el **propiedades** ventana y especifique un nombre de archivo en el **salida** campo.
 
 ## <a name="see-also"></a>Vea también
 

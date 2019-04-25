@@ -1,14 +1,9 @@
 ---
 title: Página de opciones, Propiedades de nodo Editor de texto | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - Tools Options settings, Text Editor node properties
 - automation [Visual Studio], controlling Tools Options
@@ -16,18 +11,17 @@ ms.assetid: 19438302-0677-4f4d-9720-5667e6a22ab2
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 88ba9765e292d4f07a7e1392a64270ddf27e8f60
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: fa63e84cd7655ebf8a48ff47a8d844a471c193cd
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241909"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651622"
 ---
 # <a name="options-page-text-editor-node-properties"></a>Página de opciones, Propiedades de nodo Editor de texto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 En este documento, se describen algunas páginas (o colecciones de propiedades) asociadas a la categoría **Editor de texto**, `DTE.Properties("TextEditor", <Property Page>)`, del cuadro de diálogo **Opciones**. El título de cada subsección es la llamada que se usa para obtener acceso a la colección `Properties` y, en la tabla de cada subsección, se muestran las propiedades que se encuentran en la colección.  
   
  Las macros de Visual Basic de [Controlar la configuración de opciones](http://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d) ilustran cómo se muestran las opciones actuales y los valores de cada página del cuadro de diálogo **Opciones**.  
@@ -76,6 +70,3 @@ En este documento, se describen algunas páginas (o colecciones de propiedades) 
  [Determinar los nombres de los elementos de propiedades en las páginas de opciones](http://msdn.microsoft.com/library/d450422d-47c7-4eeb-9f9f-3286264bc5aa)   
  [Página de opciones, Propiedades de nodo Entorno](../../ide/reference/options-page-environment-node-properties.md)   
  [Página de opciones, Propiedades de nodo Fuentes y colores](../../ide/reference/options-page-fonts-and-colors-node-properties.md)
-
-
-

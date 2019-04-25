@@ -1,22 +1,21 @@
 ---
 title: IntelliSense para C#
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - C#, IntelliSense
 - IntelliSense [C#]
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: cf15c8015eb1a26cc418bcf11d9e189eb3875585
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ef4f8974f448ad9e2e81d4f1ba98aa02ed9da354
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53885801"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194611"
 ---
 # <a name="c-intellisense"></a>IntelliSense para C#
 
@@ -95,11 +94,11 @@ Puede instalar una [extensión de IntelliCode](/visualstudio/intellicode/intelli
 
 La operación **Agregar using** de IntelliSense agrega automáticamente la directiva `using` necesaria al archivo de código. Esta característica le permite mantener el foco en el código que escribe en lugar de tener que cambiar el foco a otra parte del código.
 
-Para iniciar la operación **Agregar using**, coloque el cursor en una referencia de tipo que no se pueda resolver. Por ejemplo, al crear una aplicación de consola y después agregar `XmlTextReader` en el cuerpo del método `Main`, aparece un subrayado ondulado de color rojo en esa línea de código porque no se puede resolver la referencia de tipo. Puede invocar **Agregar using** a través de **Acciones rápidas**. **Acciones rápidas** solo está visible cuando el cursor se coloca en el tipo sin enlazar.
+Para iniciar la operación **Agregar using**, coloque el cursor en una referencia de tipo que no se pueda resolver. Por ejemplo, al crear una aplicación de consola y después agregar `XmlReader` en el cuerpo del método `Main`, aparece un subrayado ondulado de color rojo en esa línea de código porque no se puede resolver la referencia de tipo. Puede invocar **Agregar using** a través de **Acciones rápidas**. **Acciones rápidas** solo está visible cuando el cursor se coloca en el tipo sin enlazar.
 
 ![Imagen expandida de Agregar using, Acción rápida](../ide/media/addusing-quickaction.png)
 
-Haga clic en el icono de bombilla y después elija **using System.Xml;** para agregar automáticamente la directiva using.
+Haga clic en el icono de la bombilla de error y después elija **using System.Xml;** para agregar la directiva "using" de forma automática.
 
 ### <a name="remove-and-sort-usings"></a>Eliminar y ordenar instrucciones Using
 
@@ -123,7 +122,7 @@ La característica **Generar a partir del uso** le permite usar clases y miembro
 
 Aparece un subrayado ondulado de color rojo debajo de cada identificador no definido. Cuando se sitúa el puntero del mouse sobre el identificador, aparece un mensaje de error en una ventana de información rápida. Para mostrar las opciones adecuadas, puede usar uno de los procedimientos siguientes:
 
-- Haga clic en el identificador no definido. Aparece una bombilla de **Acciones rápidas** debajo del identificador. Haga clic en la bombilla.
+- Haga clic en el identificador no definido. Aparece una bombilla de error **Acciones rápidas** debajo del identificador. Haga clic en la bombilla de error.
 
 - Haga clic en el identificador no definido y, después, presione **CTRL**+**.** (**CTRL** + punto).
 

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - ClickOnce deployment [Office development in Visual Studio], troubleshooting
 - Office development in Visual Studio, troubleshooting
 - deploying applications [Office development in Visual Studio], troubleshooting
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5d6dc3a871389b8b7624b31a4f2a4d3e4e185865
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 418a1a22979b701ec1d1d32521f7f89e2c5274eb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53947262"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088098"
 ---
 # <a name="troubleshoot-office-solution-deployment"></a>Solución de problemas de implementación de soluciones de Office
   Este tema contiene información sobre cómo solucionar problemas comunes que pueden surgir al implementar soluciones de Office.
@@ -43,11 +43,11 @@ ms.locfileid: "53947262"
 
 #### <a name="to-set-the-time-out-value"></a>Para establecer el valor de tiempo de espera
 
-1.  En el registro, navegue a la clave siguiente:
+1. En el registro, navegue a la clave siguiente:
 
      **HKEY_CURRENT_USER\Software\Microsoft\VSTA**
 
-2.  En la subclave **AddInTimeout** , establezca el valor de tiempo de espera en milisegundos.
+2. En la subclave **AddInTimeout** , establezca el valor de tiempo de espera en milisegundos.
 
      Si la subclave **AddInTimeout** no existe, créela como DWORD.
 

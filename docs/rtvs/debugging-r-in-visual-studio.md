@@ -2,25 +2,24 @@
 title: Depuración de código de R
 description: Visual Studio ofrece una experiencia de depuración completa para R que incluye puntos de interrupción, asociación e inspección de pila de llamadas y variables.
 ms.date: 01/24/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 93e2887b15ff3f53634d68774ab31d3b4bfb7aaa
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 98dcbaaeb6f330cda3a14cf8c32afe403b50aa85
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53925503"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55933956"
 ---
 # <a name="debug-r-in-visual-studio"></a>Depurar R en Visual Studio
 
 Herramientas de R para Visual Studio (RTVS) se integra con la experiencia de depuración completa de Visual Studio (vea [Depuración en Visual Studio](/visualstudio/debugger/debugger-feature-tour). Esta compatibilidad incluye puntos de interrupción, adjuntar procesos de ejecución, inspeccionar y ver variables e inspeccionar la pila de llamadas. En este artículo se exploran esos aspectos de la depuración que son únicos en R y RTVS.
 
-El procedimiento para iniciar el depurador para el archivo de inicio de R en un proyecto de R es el mismo que para otros tipos de proyectos: use **Depurar** > **Iniciar depuración**, la tecla **F5** o el comando **Archivo de inicio de origen** en la barra de herramientas de depuración: 
+El procedimiento para iniciar el depurador para el archivo de inicio de R en un proyecto de R es el mismo que para otros tipos de proyectos: use **Depurar** > **Iniciar depuración**, la tecla **F5** o el comando **Archivo de inicio de origen** en la barra de herramientas de depuración:
 
 ![Botón de inicio del depurador de R](media/debugger-start-button.png)
 

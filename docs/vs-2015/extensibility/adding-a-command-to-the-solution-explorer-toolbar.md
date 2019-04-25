@@ -1,14 +1,9 @@
 ---
 title: Agregar un comando a la barra de herramientas del explorador de soluciones | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - toolbars [Visual Studio], adding buttons
 - buttons [Visual Studio], adding to Solution Explorer
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: f6411557-2f4b-4e9f-b02e-fce12a6ac7e9
 caps.latest.revision: 40
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 52e963a202d75c29c65521729e70e062a579d479
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 234f8ffbb3fdde48ca844386d5e5a716f74e8969
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51753644"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054735"
 ---
 # <a name="adding-a-command-to-the-solution-explorer-toolbar"></a>Adición de un comando a la barra de herramientas del Explorador de soluciones
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,13 +40,13 @@ En este tutorial se muestra cómo agregar un botón a la **el Explorador de solu
 ## <a name="adding-a-button-to-the-solution-explorer-toolbar"></a>Agregar un botón a la barra de herramientas del explorador de soluciones  
  En esta sección del tutorial se muestra cómo agregar un botón a la **el Explorador de soluciones** barra de herramientas. Cuando se hace clic en el botón, se ejecuta el código en el método de devolución de llamada.  
   
-1.  En el archivo ToolbarButtonPackage.vsct, vaya a la `<Symbols>` sección. El `<GuidSymbol>` nodo contiene el grupo de menús y el comando generado por la plantilla de paquete. Agregar un `<IDSymbol>` elemento a este nodo para declarar el grupo que contenga el comando.  
+1. En el archivo ToolbarButtonPackage.vsct, vaya a la `<Symbols>` sección. El `<GuidSymbol>` nodo contiene el grupo de menús y el comando generado por la plantilla de paquete. Agregar un `<IDSymbol>` elemento a este nodo para declarar el grupo que contenga el comando.  
   
     ```xml  
     <IDSymbol name="SolutionToolbarGroup" value="0x0190"/>  
     ```  
   
-2.  En la `<Groups>` sección, después de la entrada de grupo existente, definir el nuevo grupo que declaró en el paso anterior.  
+2. En la `<Groups>` sección, después de la entrada de grupo existente, definir el nuevo grupo que declaró en el paso anterior.  
   
     ```xml  
     <Group guid="guidToolbarButtonPackageCmdSet"  
@@ -62,7 +57,7 @@ En este tutorial se muestra cómo agregar un botón a la **el Explorador de solu
   
      Defina el elemento primario par GUID: ID `guidSHLMainMenu` y `IDM_VS_TOOL_PROJWIN` coloca este grupo en el **el Explorador de soluciones** barra de herramientas y establecer un valor de prioridad alta se coloca después de los otros grupos de comandos.  
   
-3.  En el `<Buttons>` sección, cambie el identificador principal de generado `<Button>` entrada para reflejar el grupo que ha definido en el paso anterior. Modificado `<Button>` elemento debe tener este aspecto:  
+3. En el `<Buttons>` sección, cambie el identificador principal de generado `<Button>` entrada para reflejar el grupo que ha definido en el paso anterior. Modificado `<Button>` elemento debe tener este aspecto:  
   
     ```xml  
     <Button guid="guidToolbarButtonPackageCmdSet" id="ToolbarButtonId" priority="0x0100" type="Button">  
@@ -74,11 +69,11 @@ En este tutorial se muestra cómo agregar un botón a la **el Explorador de solu
     </Button>  
     ```  
   
-4.  Compile la solución y comience la depuración. Aparece la instancia experimental.  
+4. Compile la solución y comience la depuración. Aparece la instancia experimental.  
   
      El **el Explorador de soluciones** barra de herramientas debe mostrar el nuevo botón de comando a la derecha de los botones existentes. El icono del botón es el tachado.  
   
-5.  Haga clic en el botón nuevo.  
+5. Haga clic en el botón nuevo.  
   
      Un cuadro de diálogo que tiene el mensaje **ToolbarButtonPackage dentro SolutionToolbar.ToolbarButton.MenuItemCallback()** debe mostrarse.  
   
@@ -125,4 +120,3 @@ En este tutorial se muestra cómo agregar un botón a la **el Explorador de solu
   
 ## <a name="see-also"></a>Vea también  
  [Comandos, menús y barras de herramientas](../extensibility/internals/commands-menus-and-toolbars.md)
-

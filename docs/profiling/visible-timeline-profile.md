@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 559841d1-967c-4b51-8574-6ace23969580
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb27cdc6fdf276ad71942553aa92bc75412a8de6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 352651be28f178272caaad9a01070dc9d7357d79
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964752"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56637677"
 ---
 # <a name="visible-timeline-profile"></a>Perfil de escala de tiempo visible
-El perfil de escala de tiempo visible para la vista Bloqueo de subprocesos proporciona información estadística y vínculos a los informes. Los números de la leyenda activa cambian para reflejar lo que está actualmente en la vista a medida que amplía, reduce, se desplaza horizontalmente y oculta o muestra canales. Para ver un informe sobre un elemento de la leyenda, haga clic en él.  
-  
-## <a name="see-also"></a>Vea también  
- [Vista de subprocesos](../profiling/threads-view-parallel-performance.md)
+El perfil de escala de tiempo visible para la vista Bloqueo de subprocesos proporciona información estadística y vínculos a los informes. Los números de la leyenda activa cambian para reflejar lo que está actualmente en la vista a medida que amplía, reduce, se desplaza horizontalmente y oculta o muestra canales. Para ver un informe sobre un elemento de la leyenda, haga clic en él.
+
+## <a name="see-also"></a>Vea también
+- [Vista de subprocesos](../profiling/threads-view-parallel-performance.md)

@@ -19,23 +19,23 @@ helpviewer_keywords:
 ms.assetid: 9e67a308-1c81-42ab-966b-7fc3c1d2bf7a
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 60bd259dd5acb542211fe57b0741c2e28d0baaca
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 11bd61cda8c92721fb42c640b0b5100b8054acdf
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53910326"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56698032"
 ---
 # <a name="how-can-i-use-debugger-windows-while-debugging-a-foreground-program"></a>Cómo utilizar ventanas del depurador mientras se depura un programa en primer plano
-## <a name="problem-description"></a>Descripción del problema  
- Estoy intentando depurar un problema de actualización de pantalla. Para observar este problema, debo mantener mi programa en primer plano, de modo que no tengo acceso a las ventanas de depuración. ¿Qué puedo hacer?  
-  
-## <a name="solution"></a>Soluciones  
- Si dispone de un segundo equipo, puede utilizar la función de depuración remota. Con un segundo equipo, puede observar la actualización de pantalla en el equipo remoto mientras ejecuta el depurador en el host. Para obtener más información sobre la depuración remota, vea [depuración remota](../debugger/remote-debugging.md).  
-  
-## <a name="see-also"></a>Vea también  
- [Preguntas más frecuentes sobre la depuración de código nativo](../debugger/debugging-native-code-faqs.md)   
- [Depuración de código nativo](../debugger/debugging-native-code.md)
+## <a name="problem-description"></a>Descripción del problema
+ Estoy intentando depurar un problema de actualización de pantalla. Para observar este problema, debo mantener mi programa en primer plano, de modo que no tengo acceso a las ventanas de depuración. ¿Qué puedo hacer?
+
+## <a name="solution"></a>Soluciones
+ Si dispone de un segundo equipo, puede utilizar la función de depuración remota. Con un segundo equipo, puede observar la actualización de pantalla en el equipo remoto mientras ejecuta el depurador en el host. Para obtener más información sobre la depuración remota, vea [depuración remota](../debugger/remote-debugging.md).
+
+## <a name="see-also"></a>Vea también
+- [Preguntas más frecuentes sobre la depuración de código nativo](../debugger/debugging-native-code-faqs.md)
+- [Depuración de código nativo](../debugger/debugging-native-code.md)

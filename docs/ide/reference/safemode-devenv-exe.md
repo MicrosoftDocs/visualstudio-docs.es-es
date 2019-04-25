@@ -1,7 +1,6 @@
 ---
 title: -SafeMode (devenv.exe)
 ms.date: 12/10/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - /SafeMode Devenv switch
@@ -10,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b191f6a5-8f12-47ec-bcc7-b68149a22aa8
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 092cc1fc3267113e862646b7572e9091b8f6ddef
-ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.openlocfilehash: 14b2ac3a80a9e17e0c554f56ae8e31ac32450c5e
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54227205"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55938688"
 ---
 # <a name="safemode-devenvexe"></a>/SafeMode (devenv.exe)
 

@@ -8,16 +8,15 @@ helpviewer_keywords:
 ms.assetid: 257d2a24-d582-4cfe-8b2b-51f51ba9cc84
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: d23da01a9f36501789991b7d261a819879fd50ce
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: bd5a7183589255d246fd299b9ec628330d948dcf
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53962261"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55917550"
 ---
-# <a name="how-to-add-additional-run-settings-to-a-load-test"></a>Procedimiento para agregar más parámetros de ejecución a una prueba de carga
+# <a name="how-to-add-additional-run-settings-to-a-load-test"></a>Filtrar para agregar más parámetros de ejecución a una prueba de carga
 
 Los parámetros de ejecución de una prueba de carga determinan una variedad de otros valores. Estos incluyen la duración de la prueba, el nivel de detalle de la colección de resultados y los conjuntos de contadores que se recopilan cuando se ejecuta la prueba. Puede crear y almacenar varios parámetros de ejecución para cada prueba de carga, y seleccionar una configuración determinada para utilizarla durante la ejecución de la prueba. Cuando crea la prueba de carga mediante el **Asistente para prueba de carga nueva**, se agrega un parámetro de ejecución inicial a la prueba de carga.
 

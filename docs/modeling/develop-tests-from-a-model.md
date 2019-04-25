@@ -6,16 +6,15 @@ helpviewer_keywords:
 - tests and requirements
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 01aee6de65f1ddc0db16b0ebe527fb3d4d5480ad
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cc81e0f0912e2a32a6fc582420f4fef9823b9891
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53958818"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090488"
 ---
 # <a name="develop-tests-from-a-model"></a>Desarrollar pruebas en un modelo
 Puede usar modelos arquitectónicos y modelos de requisitos que le ayuden a organizar las pruebas del sistema y sus componentes. Con esta práctica, tendrá la certeza de que incluye en la prueba los requisitos que son importantes para los usuarios y otras partes interesadas, y podrá actualizar las pruebas rápidamente cuando cambien los requisitos. Si usa [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)], también puede mantener vínculos entre los modelos y las pruebas.
@@ -41,17 +40,17 @@ Puede usar modelos arquitectónicos y modelos de requisitos que le ayuden a orga
 
  Estas directrices pueden resultar útiles:
 
--   Cada caso de uso debería tener varias pruebas, tanto para las operaciones principales como para los resultados excepcionales.
+- Cada caso de uso debería tener varias pruebas, tanto para las operaciones principales como para los resultados excepcionales.
 
--   Al describir un caso de uso del modelo de requisitos, es más importante definir su condición posterior, es decir, el objetivo que se consigue, que describir en detalle los procedimientos que el usuario sigue para lograr el objetivo. Por ejemplo, la condición posterior de pedir un menú podría ser que un restaurante prepare una comida para un cliente y que el cliente pague. La condición posterior es el criterio que las pruebas deben comprobar.
+- Al describir un caso de uso del modelo de requisitos, es más importante definir su condición posterior, es decir, el objetivo que se consigue, que describir en detalle los procedimientos que el usuario sigue para lograr el objetivo. Por ejemplo, la condición posterior de pedir un menú podría ser que un restaurante prepare una comida para un cliente y que el cliente pague. La condición posterior es el criterio que las pruebas deben comprobar.
 
--   Cree pruebas independientes basadas en las distintas cláusulas de la condición posterior. Por ejemplo, cree pruebas distintas para notificar el pedido al restaurante y para realizar el pago del cliente. Esta separación tiene las siguientes ventajas:
+- Cree pruebas independientes basadas en las distintas cláusulas de la condición posterior. Por ejemplo, cree pruebas distintas para notificar el pedido al restaurante y para realizar el pago del cliente. Esta separación tiene las siguientes ventajas:
 
-    -   Los cambios en los distintos aspectos de los requisitos suelen producirse de forma independiente. Al dividir las pruebas en diferentes aspectos de esta manera, resulta más sencillo actualizar las pruebas cuando cambian los requisitos.
+    - Los cambios en los distintos aspectos de los requisitos suelen producirse de forma independiente. Al dividir las pruebas en diferentes aspectos de esta manera, resulta más sencillo actualizar las pruebas cuando cambian los requisitos.
 
-    -   Si el plan de desarrollo implementa un aspecto del caso de uso antes que otro, puede habilitar las pruebas de forma independiente a medida que progresa el desarrollo.
+    - Si el plan de desarrollo implementa un aspecto del caso de uso antes que otro, puede habilitar las pruebas de forma independiente a medida que progresa el desarrollo.
 
--   Cuando diseñe las pruebas, separe los datos de la prueba que ha elegido del código o del script que determina si se ha logrado la condición posterior. Por ejemplo, una prueba de una función aritmética sencilla podría ser: Entrada 4; Compruebe que el resultado es 2. En su lugar, diseñe el script como: Elija una entrada; multiplique el resultado por sí mismo y compruebe que el resultado es la entrada original. Este estilo permite variar las entradas de prueba sin cambiar el cuerpo principal de la prueba.
+- Cuando diseñe las pruebas, separe los datos de la prueba que ha elegido del código o del script que determina si se ha logrado la condición posterior. Por ejemplo, una prueba de una función aritmética sencilla podría ser: Entrada 4; Compruebe que el resultado es 2. En su lugar, diseñe el script como: Elija una entrada; multiplique el resultado por sí mismo y compruebe que el resultado es la entrada original. Este estilo permite variar las entradas de prueba sin cambiar el cuerpo principal de la prueba.
 
 #### <a name="linking-tests-to-use-cases"></a>Vincular pruebas a casos de uso
  Si usas [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)] para diseñar y ejecutar las pruebas, puede organizar las pruebas en el requisito, caso de uso o elementos de trabajo de caso de usuario. Puede vincular estos elementos de trabajo a casos de uso en el modelo. Esto le permite realizar un seguimiento rápido de los cambios en los requisitos de las pruebas y le ayuda a supervisar el progreso de cada caso de uso.
@@ -60,7 +59,7 @@ Puede usar modelos arquitectónicos y modelos de requisitos que le ayuden a orga
 
 1. En [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)], cree un requisito y base en él un conjunto de pruebas.
 
-    El requisito que cree será un elemento de trabajo de [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Podría ser un elemento de trabajo de caso de usuario, requisito o caso de uso, dependiendo de la plantilla de proceso que utiliza el proyecto con Team Foundation. Para obtener más información, consulte [administración de proyectos de Agile y herramientas sobre Agile](/azure/devops/boards/backlogs/overview?view=vsts).
+    El requisito que cree será un elemento de trabajo de [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Podría ser un elemento de trabajo de caso de usuario, requisito o caso de uso, dependiendo de la plantilla de proceso que utiliza el proyecto con Team Foundation. Para obtener más información, consulte [administración de proyectos de Agile y herramientas sobre Agile](/azure/devops/boards/backlogs/backlogs-overview?view=vsts).
 
 2. Vincule el elemento de trabajo de requisito a uno o varios casos de uso del modelo.
 
@@ -134,21 +133,21 @@ Assert (countAfter == countBefore = 1);
 
  Puede vincular las pruebas a todos los tipos de elemento. A continuación se muestran algunos ejemplos:
 
--   Vincule un caso de uso a las pruebas que lo verifican.
+- Vincule un caso de uso a las pruebas que lo verifican.
 
--   Escriba las cláusulas de una condición posterior del caso de uso, u objetivo, en los comentarios que están vinculados al caso de uso y, después, vincule las pruebas a cada comentario.
+- Escriba las cláusulas de una condición posterior del caso de uso, u objetivo, en los comentarios que están vinculados al caso de uso y, después, vincule las pruebas a cada comentario.
 
--   Escriba reglas invariantes en los comentarios de los diagramas de clases o de actividades y vincúlelas a las pruebas.
+- Escriba reglas invariantes en los comentarios de los diagramas de clases o de actividades y vincúlelas a las pruebas.
 
--   Vincule las pruebas a un diagrama de actividades o a actividades individuales.
+- Vincule las pruebas a un diagrama de actividades o a actividades individuales.
 
--   Vincule un conjunto de pruebas al componente o subsistema que verifica.
+- Vincule un conjunto de pruebas al componente o subsistema que verifica.
 
 #### <a name="to-link-tests-to-a-model-element-or-relationship"></a>Para vincular las pruebas a un elemento del modelo o la relación
 
 1. En [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)], cree un requisito y base en él un conjunto de pruebas.
 
-    El requisito que cree será un elemento de trabajo de [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Podría ser un elemento de trabajo de caso de usuario, requisito o caso de uso, dependiendo de la plantilla de proceso que utiliza el proyecto con Team Foundation. Para obtener más información, consulte [administración de proyectos de Agile y herramientas sobre Agile](/azure/devops/boards/backlogs/overview?view=vsts).
+    El requisito que cree será un elemento de trabajo de [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Podría ser un elemento de trabajo de caso de usuario, requisito o caso de uso, dependiendo de la plantilla de proceso que utiliza el proyecto con Team Foundation. Para obtener más información, consulte [administración de proyectos de Agile y herramientas sobre Agile](/azure/devops/boards/backlogs/backlogs-overview?view=vsts).
 
 2. Vincule el elemento de trabajo de requisito a uno o varios elementos del modelo.
 

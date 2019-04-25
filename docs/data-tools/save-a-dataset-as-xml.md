@@ -13,16 +13,15 @@ helpviewer_keywords:
 ms.assetid: 68b8327c-ae05-49ff-b9ba-99183e70b52c
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: fbcacfbb44bb9f5ed4d34637a5aee5f9d014be46
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3c993ac8703468a24a99e114563fec1bdc817581
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53894053"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55913124"
 ---
 # <a name="save-a-dataset-as-xml"></a>Guardar un conjunto de datos como XML
 

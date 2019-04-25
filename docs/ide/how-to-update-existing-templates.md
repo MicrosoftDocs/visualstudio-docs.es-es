@@ -1,7 +1,6 @@
 ---
 title: Actualización de las plantillas de elemento de proyecto existentes
 ms.date: 01/02/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - item templates, updating
@@ -10,27 +9,27 @@ helpviewer_keywords:
 - updating templates [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: db5b9c3f601ae11b704e54ae2ebcd58f10c4c724
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 57e457224d47e278df169b931c6e9cf6b8ae25e1
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53835833"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355395"
 ---
 # <a name="how-to-update-existing-templates"></a>Procedimiento Actualizar plantillas existentes
 
-Después de crear una plantilla y comprimir los archivos en un archivo *.zip*, es posible que desee modificarla. Puede hacerlo al cambiar los archivos de la misma de forma manual o al exportar una nueva plantilla de un proyecto basado en la plantilla.
+Después de crear una plantilla y comprimir los archivos en un archivo *.zip*, es posible que desee modificarla. Puede hacerlo cambiando manualmente los archivos de la plantilla o exportando una nueva plantilla de un proyecto basado en la plantilla.
 
-## <a name="using-the-export-template-wizard-to-update-an-existing-project-template"></a>Uso del Asistente para exportar plantillas para actualizar una plantilla de proyecto
+## <a name="use-the-export-template-wizard"></a>Uso del Asistente para exportar plantillas
 
 Visual Studio proporciona un **Asistente para exportar plantillas** que se puede usar para actualizar una plantilla:
 
-1. Abra el cuadro de diálogo **Nuevo proyecto** eligiendo **Archivo** > **Nuevo** > **Proyecto**.
+1. Elija **Archivo** > **Nuevo** > **Proyecto** de la barra de menús.
 
-1. Seleccione la plantilla que quiera actualizar, escriba un nombre y una ubicación para el proyecto y elija **Aceptar**.
+1. Seleccione la plantilla que quiere actualizar y siga los pasos para crear el proyecto.
 
-1. Modifique el proyecto en Visual Studio.
+1. Modifique el proyecto en Visual Studio. Por ejemplo, cambie el tipo de salida o agregue un nuevo archivo al proyecto.
 
 1. En el menú **Proyecto**, elija **Exportar plantilla**.
 
@@ -38,7 +37,7 @@ Visual Studio proporciona un **Asistente para exportar plantillas** que se puede
 
 1. Siga las indicaciones del asistente para exportar la plantilla como un archivo *.zip*.
 
-1. (Opcional) Para agregar la plantilla al cuadro de diálogo **Nuevo proyecto**, coloque el archivo *.zip* en este directorio: *%USERPROFILE%\Documentos\Visual Studio \<versión\>\Templates\ProjectTemplates*. Tendrá que completar este paso si no ha seleccionado la opción **Importar la plantilla automáticamente en Visual Studio** del **Asistente para exportar plantillas**.
+1. (Opcional) Coloque el archivo *.zip* en este directorio: *%USERPROFILE%\Documents\Visual Studio \<version\>\Templates\ProjectTemplates* para que quede disponible para su selección. Tendrá que completar este paso si no ha seleccionado la opción **Importar la plantilla automáticamente en Visual Studio** del **Asistente para exportar plantillas**.
 
 1. Elimine el archivo *.zip* de la plantilla antigua.
 

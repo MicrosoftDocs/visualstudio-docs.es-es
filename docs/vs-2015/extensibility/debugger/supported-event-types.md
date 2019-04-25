@@ -1,26 +1,21 @@
 ---
 title: Admite los tipos de evento | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], supported events
 ms.assetid: a3c0386d-551e-4734-9a0c-368d1c2e6671
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: dd6f8f5b7c2782bb908538426cb531db216b72fb
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d82bce8546d4c63a82f4850097ca92c804399a66
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51781470"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58999208"
 ---
 # <a name="supported-event-types"></a>Tipos de evento compatibles
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -52,7 +47,7 @@ Depuración de Visual Studio admite actualmente los siguientes tipos de evento:
   > [!NOTE]
   >  No se admiten los eventos de detención asincrónica. Es un error al enviar un evento de detención asincrónica.  
   
-## <a name="discussion"></a>Explicación  
+## <a name="discussion"></a>Discusión  
  La implementación real de los eventos depende del diseño de la DE. El tipo de cada evento enviado viene determinada por sus atributos, que se establecen cuando se diseña la DE. Por ejemplo, puede enviar uno DE un [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) como un evento asincrónico, mientras que otro puede enviar como un evento de detención.  
   
  En la tabla siguiente especifica qué parámetros de programa y subproceso son necesarios para los eventos, así como tipos de eventos. Cualquier evento puede ser sincrónico. Ningún evento debe ser sincrónico.  
@@ -94,4 +89,3 @@ Depuración de Visual Studio admite actualmente los siguientes tipos de evento:
   
 ## <a name="see-also"></a>Vea también  
  [Envío de eventos](../../extensibility/debugger/sending-events.md)
-

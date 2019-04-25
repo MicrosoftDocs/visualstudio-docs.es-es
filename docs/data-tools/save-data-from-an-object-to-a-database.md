@@ -12,16 +12,15 @@ helpviewer_keywords:
 ms.assetid: efd6135a-40cf-4b0d-8f8b-41a5aaea7057
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 76b2673e81bcf15227195a299711848100bcd499
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: c672103c0426f2d49eb47aa41014ee13ff0ecae9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968597"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073444"
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>Guardar los datos de un objeto en una base de datos
 
@@ -42,7 +41,7 @@ De forma predeterminada, `DBDirect` métodos se crean en un TableAdapter que se 
 
 ## <a name="to-save-new-records-from-an-object-to-a-database"></a>Para guardar los nuevos registros de un objeto a una base de datos
 
--   Cree los registros pasando los valores para el `TableAdapter.Insert` método.
+- Cree los registros pasando los valores para el `TableAdapter.Insert` método.
 
      En el ejemplo siguiente se crea un nuevo registro de cliente en el `Customers` tabla pasando los valores de la `currentCustomer` de objeto para el `TableAdapter.Insert` método.
 
@@ -51,7 +50,7 @@ De forma predeterminada, `DBDirect` métodos se crean en un TableAdapter que se 
 
 ## <a name="to-update-existing-records-from-an-object-to-a-database"></a>Para actualizar registros existentes de un objeto a una base de datos
 
--   Modificar los registros mediante una llamada a la `TableAdapter.Update` método, pasando los nuevos valores para actualizar el registro y pasar los valores originales para buscar el registro.
+- Modificar los registros mediante una llamada a la `TableAdapter.Update` método, pasando los nuevos valores para actualizar el registro y pasar los valores originales para buscar el registro.
 
     > [!NOTE]
     > El objeto necesita mantener los valores originales para pasarlos a la `Update` método. En este ejemplo usa las propiedades con un `orig` prefijo para almacenar los valores originales.
@@ -63,7 +62,7 @@ De forma predeterminada, `DBDirect` métodos se crean en un TableAdapter que se 
 
 ## <a name="to-delete-existing-records-from-a-database"></a>Para eliminar registros existentes de una base de datos
 
--   Eliminar los registros mediante una llamada a la `TableAdapter.Delete` método y pasando los valores originales para buscar el registro.
+- Eliminar los registros mediante una llamada a la `TableAdapter.Delete` método y pasando los valores originales para buscar el registro.
 
     > [!NOTE]
     > El objeto necesita mantener los valores originales para pasarlos a la `Delete` método. En este ejemplo usa las propiedades con un `orig` prefijo para almacenar los valores originales.

@@ -1,7 +1,6 @@
 ---
-title: Procedimiento Imprimir diagramas de clases (Diseñador de clases)
+title: Filtrar Imprimir diagramas de clases (Diseñador de clases)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - printing [Visual Studio], class diagrams
@@ -9,17 +8,17 @@ helpviewer_keywords:
 ms.assetid: 62c87425-3446-41fb-943c-1f86397883c8
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e4b38967badbed94c946b04a1434150912c32859
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7cea673bdf0378c5ce2c5e3e1925139523b498a5
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53916259"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55925207"
 ---
-# <a name="how-to-print-class-diagrams"></a>Procedimiento Imprimir diagramas de clases
+# <a name="how-to-print-class-diagrams"></a>Filtrar Imprimir diagramas de clases
 
 También puede imprimir un diagrama de clase mediante la función de impresión de Visual Studio.
 

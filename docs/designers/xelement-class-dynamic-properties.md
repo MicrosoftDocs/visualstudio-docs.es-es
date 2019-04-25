@@ -1,20 +1,19 @@
 ---
 title: Propiedades dinámicas de la clase XElement
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 ms.assetid: a9795dba-2afc-45f7-9b53-c6c67a23c40b
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cdb6d9a662288d1a83449c65d00155b251870c73
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 90c79ea987f3d7a0ec4e15f30882a3ad76c57aef
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53830068"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55934333"
 ---
 # <a name="xelement-class-dynamic-properties"></a>Propiedades dinámicas de la clase XElement
 

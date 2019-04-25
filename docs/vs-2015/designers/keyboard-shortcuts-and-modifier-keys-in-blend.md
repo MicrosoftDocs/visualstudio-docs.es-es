@@ -1,25 +1,20 @@
 ---
 title: Métodos abreviados de teclado y teclas modificadoras en Blend | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: f9ec9724-7571-4777-8ff8-d9be012eae8f
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 96e68794346b32c5117ff06c8e90f05293460203
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: b6da7ef473f279c968c676c768e89a6f1145ae4c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49848571"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059167"
 ---
 # <a name="keyboard-shortcuts-and-modifier-keys-in-blend"></a>Métodos abreviados de teclado y teclas modificadoras en Blend
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,11 +40,8 @@ Los métodos abreviados de teclado pueden agilizar el trabajo al reducir una acc
 ## <a name="modifier-keys"></a>Teclas modificadoras  
  Algunos métodos abreviados de teclado no tienen elementos de menú asociados, lo que significa que no puede usar la interfaz de usuario de [!INCLUDE[blend_subs](../includes/blend-subs-md.md)] para descubrirlos. En los siguientes temas se proporcionan los métodos abreviados de teclado que modifican el comportamiento de las herramientas, o que modifican una acción como, por ejemplo, cambiar el tamaño de un objeto:  
   
--   [Teclas modificadoras de la mesa de trabajo](../designers/artboard-modifier-keys-in-blend.md)  
+- [Teclas modificadoras de la mesa de trabajo](../designers/artboard-modifier-keys-in-blend.md)  
   
--   [Teclas modificadoras de la herramienta Pluma](../designers/pen-tool-modifier-keys-in-blend.md)  
+- [Teclas modificadoras de la herramienta Pluma](../designers/pen-tool-modifier-keys-in-blend.md)  
   
--   [Teclas modificadoras de la herramienta Selección directa](../designers/direct-selection-tool-modifier-keys-in-blend.md)
-
-
-
+- [Teclas modificadoras de la herramienta Selección directa](../designers/direct-selection-tool-modifier-keys-in-blend.md)

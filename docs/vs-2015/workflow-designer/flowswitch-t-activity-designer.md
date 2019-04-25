@@ -1,11 +1,8 @@
 ---
 title: FlowSwitch&lt;T&gt; Diseñador de actividad | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Core.Presentation.FlowSwitchLink.UI
@@ -16,16 +13,16 @@ ms.assetid: 5b9c5afe-7499-4ee8-8c33-28aff14bde07
 caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: ed39806fdca8eec3deccf5383c2386d07f0af929
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: ccd3e328a904540dd03c85f53634dc1eaab96c6e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49254763"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58998189"
 ---
 # <a name="flowswitchlttgt-activity-designer"></a>FlowSwitch&lt;T&gt; Diseñador de actividad
-La actividad <xref:System.Activities.Statements.FlowSwitch%601> es un nodo condicional que proporciona capacidad de bifurcación para el flujo de control según criterios de coincidencia cuando se necesitan más de dos bifurcaciones alternativas. Si la rama del flujo requiere dos rutas de acceso, utilice la actividad <xref:System.Activities.Statements.FlowDecision> en su lugar.  
+La actividad <xref:System.Activities.Statements.FlowSwitch%601> es un nodo condicional que proporciona capacidad de bifurcación para el flujo de control según criterios de coincidencia cuando se necesitan más de dos bifurcaciones alternativas. Si la bifurcación del flujo requiere dos rutas de acceso, utilice la actividad <xref:System.Activities.Statements.FlowDecision> en su lugar.  
   
 ## <a name="the-flowswitcht-activity"></a>La actividad FlowSwitch\<T > actividad  
  El <xref:System.Activities.Statements.FlowSwitch%601> actividad contiene una <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A> que devuelve un valor de tipo *T* (especificado por el parámetro genérico) cuando se evalúa. La actividad también contiene un conjunto de propiedades <xref:System.Activities.Statements.FlowSwitch%601.Cases%2A>, que especifica una asignación única de posibles resultados de esta evaluación para un conjunto de objetos <xref:System.Activities.Statements.FlowNode>. El <xref:System.Activities.Statements.FlowNode> ejecutó tiene un objeto de tipo *T* coincide con el valor de evaluado <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A>. Se puede proporcionar (opcionalmente) un caso <xref:System.Activities.Statements.FlowSwitch%601.Default%2A> para el caso en el que no se obtuvo ninguna coincidencia.  
@@ -47,6 +44,6 @@ La actividad <xref:System.Activities.Statements.FlowSwitch%601> es un nodo condi
 |<xref:System.Activities.Statements.FlowSwitch%601.Default%2A>|True|Especifica la asignación cuando la evaluación de <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A> no coincide con uno de los valores que contiene el objeto <xref:System.Activities.Statements.FlowSwitch%601.Cases%2A>.|  
   
 ## <a name="see-also"></a>Vea también  
- [Diagrama de flujo](../workflow-designer/flowchart-activity-designers.md)   
- [Diagrama de flujo](../workflow-designer/flowchart-activity-designer.md)   
+ [Flowchart](../workflow-designer/flowchart-activity-designers.md)   
+ [Flowchart](../workflow-designer/flowchart-activity-designer.md)   
  [FlowDecision](../workflow-designer/flowdecision-activity-designer.md)

@@ -1,14 +1,9 @@
 ---
 title: Recursos para solucionar problemas de errores en el entorno de desarrollo integrado | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.Message.0x00005A89
 - VS.Message.0x00005A8E
@@ -98,18 +93,17 @@ ms.assetid: 8f866eb5-a206-4c16-807e-96a0f2c0e645
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 269806ea71794f1b328fd94e147dbf055b78ca1f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 97edc5419cb552f853a75817564a69dd175ec54b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232666"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666070"
 ---
 # <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>Recursos para solucionar problemas de errores en el entorno de desarrollo integrado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 No todos los mensajes de error tienen un tema de ayuda específico asociado. Si con información del mensaje de error no consigue resolver el problema, puede consultar otros recursos, como los artículos de Knowledge Base, la comunidad de programadores o los servicios de soporte técnico.  
   
 ## <a name="knowledge-base-articles"></a>Artículos de Knowledge Base  
@@ -118,10 +112,7 @@ No todos los mensajes de error tienen un tema de ayuda específico asociado. Si 
 ## <a name="the-developer-community"></a>Comunidad de desarrolladores  
  Los foros permiten al usuario interactuar con otros desarrolladores y con empleados de Microsoft. Si se produce un error para el que no encuentra solución, puede publicar preguntas sobre dicho problema en un foro. También puede buscar en los grupos de noticias para ver si ya se ha expuesto el mismo problema.  
   
- Puede acceder a foros, blogs, chats y otros recursos en el sitio web de las [comunidades técnicas de Microsoft](http://go.microsoft.com/fwlink/?LinkID=144922).  
+ Puede acceder a foros, blogs, chats y otros recursos en el sitio web de las [comunidades técnicas de Microsoft](https://techcommunity.microsoft.com/).  
   
 ## <a name="product-support"></a>Soporte técnico  
  Si aún tiene preguntas después de recurrir a estos otros recursos, puede ponerse en contacto con los servicios de soporte técnico de Microsoft en el sitio web [Soporte técnico de Microsoft](http://go.microsoft.com/fwlink/?linkid=1782). Para obtener información sobre los servicios de soporte técnico disponibles en su área, vea [Hable con nosotros](../../ide/talk-to-us.md).
-
-
-

@@ -13,30 +13,30 @@ helpviewer_keywords:
 ms.assetid: 81114b67-520f-43b5-8891-224f68a78516
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6086c03d3dae5a919b9b30abaecf2957076631b1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e6c8bc23a843112a234dad0dfc718937bebfe5aa
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53845478"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56629890"
 ---
 # <a name="formaturl-task"></a>FormatUrl (tarea)
-Convierte una dirección URL en un formato de dirección URL correcto.  
-  
-## <a name="parameters"></a>Parámetros  
- En la siguiente tabla se describen los parámetros de la tarea `FormatUrl` .  
-  
-|Parámetro|Descripción|  
-|---------------|-----------------|  
-|`InputUrl`|Parámetro `String` opcional.<br /><br /> Especifica la dirección URL a la que se va a aplicar formato.|  
-|`OutputUrl`|Parámetro de salida `String` opcional.<br /><br /> Especifica la dirección URL con formato.|  
-  
-## <a name="remarks"></a>Comentarios  
- Además de tener los parámetros que se enumeran en la tabla, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.TaskExtension>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de estos parámetros adicionales y sus descripciones, consulte [TaskExtension base class](../msbuild/taskextension-base-class.md).  
-  
-## <a name="see-also"></a>Vea también  
- [Tareas](../msbuild/msbuild-tasks.md)   
- [Referencia de tareas](../msbuild/msbuild-task-reference.md)
+Convierte una dirección URL en un formato de dirección URL correcto.
+
+## <a name="parameters"></a>Parámetros
+ En la siguiente tabla se describen los parámetros de la tarea `FormatUrl` .
+
+|Parámetro|Descripción|
+|---------------|-----------------|
+|`InputUrl`|Parámetro `String` opcional.<br /><br /> Especifica la dirección URL a la que se va a aplicar formato.|
+|`OutputUrl`|Parámetro de salida `String` opcional.<br /><br /> Especifica la dirección URL con formato.|
+
+## <a name="remarks"></a>Comentarios
+ Además de tener los parámetros que se enumeran en la tabla, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.TaskExtension>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de estos parámetros adicionales y sus descripciones, consulte [TaskExtension base class](../msbuild/taskextension-base-class.md).
+
+## <a name="see-also"></a>Vea también
+- [Tareas](../msbuild/msbuild-tasks.md)
+- [Referencia de tareas](../msbuild/msbuild-task-reference.md)

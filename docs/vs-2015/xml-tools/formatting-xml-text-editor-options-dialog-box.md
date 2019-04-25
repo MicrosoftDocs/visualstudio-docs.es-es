@@ -1,30 +1,24 @@
 ---
 title: Formato, XML, Editor de texto, cuadro de diálogo Opciones | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: bb539b3a-027c-4b2f-906e-403e0e22ba8d
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 5c8379393dd5327359789f8621cf67ed55e89209
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 34eedf61afd79570ca1e4ba471efa9802aae7bfa
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49256677"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664130"
 ---
 # <a name="formatting-xml-text-editor-options-dialog-box"></a>Formato, XML, Editor de texto, Cuadro de diálogo Opciones
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Este cuadro de diálogo permite especificar las opciones de formato del Editor XML. Puede tener acceso a la **opciones** cuadro de diálogo desde el **herramientas** menú.  
   
 > [!NOTE]
@@ -51,7 +45,7 @@ Este cuadro de diálogo permite especificar las opciones de formato del Editor X
  **Al pegar desde el Portapapeles**  
  Vuelve a dar formato al texto XML pegado desde el portapapeles.  
   
- **Al finalizar la etiqueta de cierre**  
+ **Al terminar la etiqueta final**  
  Vuelve a dar formato el elemento cuando se completa la etiqueta de cierre.  
   
 ## <a name="mixed-content"></a>Contenido mixto  
@@ -70,6 +64,3 @@ Este cuadro de diálogo permite especificar las opciones de formato del Editor X
 ## <a name="see-also"></a>Vea también  
  [Propiedades del documento XML, ventana Propiedades](../xml-tools/xml-document-properties-properties-window.md)   
  [Componentes del Editor XML](../xml-tools/xml-editor-components.md)
-
-
-

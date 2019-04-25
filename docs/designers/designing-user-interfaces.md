@@ -1,20 +1,19 @@
 ---
 title: Diseño de interfaces de usuario
 ms.date: 07/17/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 880da508-7573-4434-b3a0-d48cf003c0a9
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 067afe28f9d9f904291576a9580b46c2c1fe5dde
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2b3096242335a1e9d374da4a801c9ff4d2c80635
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53896017"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55951727"
 ---
 # <a name="design-user-interfaces"></a>Diseño de interfaces de usuario
 

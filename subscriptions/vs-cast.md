@@ -6,21 +6,19 @@ manager: lank
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Obtenga información sobre la ventaja de CAST Highlight disponible en las suscripciones de Visual Studio.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: ac1d960ea16346de6d1ca12a2b0602eedf47f704
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: 1858170bb57d4ea46b1aac1d08857dea9609d22d
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54379801"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56840909"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>Ventaja de CAST Highlight para suscripciones de Visual Studio
 
-Los desarrolladores necesitan información clave sobre su software al realizar la migración a la nube. Con CAST Highlight, los suscriptores de Visual Studio Enterprise pueden examinar rápidamente su código fuente de aplicación para identificar la preparación de la nube de sus aplicaciones para la migración a Azure y supervisar el progreso de su aplicación tanto durante una migración como después.  
+Los desarrolladores necesitan información clave sobre su software al realizar la migración a la nube. Con CAST Highlight, los suscriptores de Visual Studio Enterprise pueden examinar rápidamente su código fuente de aplicación para identificar la preparación de la nube de sus aplicaciones para la migración a Azure y supervisar el progreso de su aplicación tanto durante una migración como después.
 
-Los suscriptores de Visual Studio Enterprise pueden obtener una suscripción gratuita de un mes con todas las características de CAST Highlight para hasta cinco aplicaciones por suscriptor. 
+Los suscriptores de Visual Studio Enterprise pueden obtener una suscripción gratuita de un mes con todas las características de CAST Highlight para hasta cinco aplicaciones por suscriptor.
 
 
 ## <a name="activation-steps"></a>Pasos para la activación
@@ -32,7 +30,7 @@ Los suscriptores de Visual Studio Enterprise pueden obtener una suscripción gra
    > [!div class="mx-imgBorder"]
    > ![Icono de la ventaja de CAST Highlight](_img/vs-cast-highlight/vs-cast-highlight-tile.png)
 
-   
+
 0. Verá un mensaje que le informará de que el código se ha recuperado correctamente.  Haga clic en **Activar**. Seguidamente, se le redirigirá a la página de CAST Highlight, donde podrá continuar con el proceso de activación.  (Si decide no efectuar la activación en este momento, siempre puede volver al icono de CAST Highlight en el portal de suscripción.  El vínculo "Obtener código" cambiará a "Activar" y, si hace clic en él, se reanudará el proceso de activación).
 
 0. Se le redirigirá a la página de CAST Highlight, donde podrá explorar las características de su suscripción.  Cuando esté a punto para crear la cuenta, solo tendrá que proporcionar su información de contacto en el formulario web y hacer clic en **Enviar**.
@@ -43,16 +41,16 @@ Los suscriptores de Visual Studio Enterprise pueden obtener una suscripción gra
    > [!NOTE]
    > Las activaciones de la ventaja de CAST Highlight se limitan a diez por organización.  Si ya se han consumido las diez activaciones de su organización, no podrá activar la ventaja de CAST Highlight y recibirá un correo electrónico con información más detallada.
 
- 0. Después de enviar su información, verá una página de confirmación de la recepción de su solicitud.    
+ 0. Después de enviar su información, verá una página de confirmación de la recepción de su solicitud.
 
     > [!div class="mx-imgBorder"]
     > ![Página de agradecimiento de CAST Highlight](_img/vs-cast-highlight/vs-cast-highlight-thankyou.png)
 
-0.  El equipo de CAST evaluará su solicitud y se comunicará con usted para finalizar la creación de su cuenta.  
+0.  El equipo de CAST evaluará su solicitud y se comunicará con usted para finalizar la creación de su cuenta.
 
 0.  También recibirá el siguiente correo electrónico de CAST, en el que se confirma la recepción de la solicitud.
 
-   *Le agradecemos su solicitud para activar el acceso de 30 días a CAST Highlight, una oferta exclusiva para los clientes de Microsoft Visual Studio Enterprise.*  
+   *Le agradecemos su solicitud para activar el acceso de 30 días a CAST Highlight, una oferta exclusiva para los clientes de Microsoft Visual Studio Enterprise.*
 
    *Actualmente estamos revisando su solicitud de activación y acceso a CAST Highlight. Nos volveremos a poner en contacto con usted en un máximo de 48 horas.*
 
@@ -60,7 +58,7 @@ Los suscriptores de Visual Studio Enterprise pueden obtener una suscripción gra
    *Greg*
 
 
-Tras la aprobación de su solicitud, recibirá un segundo correo electrónico en el que se le confirmará la creación correcta de su cuenta y se le solicitará que haga clic en el vínculo de activación para completar el proceso de activación. 
+Tras la aprobación de su solicitud, recibirá un segundo correo electrónico en el que se le confirmará la creación correcta de su cuenta y se le solicitará que haga clic en el vínculo de activación para completar el proceso de activación.
 
    *Hemos comprobado y validado correctamente su solicitud para obtener acceso a CAST Highlight. ¡Bienvenido a bordo!*
 
@@ -76,7 +74,7 @@ Tras la aprobación de su solicitud, recibirá un segundo correo electrónico en
     -   [Guía de introducción (PDF)](https://casthighlight.com/Getting-Started-Guide.pdf)
     -   Tutorial de vídeo: [Configuración de la cartera](https://www.youtube.com/watch?v=MDm8ln4vuGE)
     -   Tutorial de vídeo: [Incorporación de las aplicaciones](https://www.youtube.com/watch?v=x-7Dsn3Rmw4)
-    
+
    *Saludos,*
    *Greg*
 
@@ -120,4 +118,4 @@ Tras la aprobación de su solicitud, recibirá un segundo correo electrónico en
 
 Si todavía no ha activado la ventaja de Azure que se incluye con su suscripción, visite [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) y haga clic en el icono de Azure en la categoría Herramientas para configurar su suscripción de Azure y canjear los créditos gratuitos de Azure.
 
-Y no olvide consultar la demostración, el manual del usuario y los vídeos del tutorial que se mencionan en el correo electrónico de Greg. 
+Y no olvide consultar la demostración, el manual del usuario y los vídeos del tutorial que se mencionan en el correo electrónico de Greg.

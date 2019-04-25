@@ -7,14 +7,13 @@ helpviewer_keywords:
 ms.assetid: de10dabb-02ed-403b-9e6f-0b735524988c
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 73c561cf7f79345751b62b53ec3b7da4f74e2e52
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 555b3714dffa69e79d0c0e57effaa3e294905709
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53860210"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55932591"
 ---
 # <a name="load-test-run-settings-properties"></a>Propiedades de los parámetros de ejecución de las pruebas de carga
 

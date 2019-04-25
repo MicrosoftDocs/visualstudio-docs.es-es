@@ -1,25 +1,20 @@
 ---
 title: Depuración histórica | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 7cc5ddf2-2f7c-4f83-b7ca-58e92e9bfdd2
 caps.latest.revision: 9
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d43e48b67cdbfabcb38703469f8570f78336dcab
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c7db175535e0eebdcf1974f0f85123959ba5a3ed
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51794600"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58999414"
 ---
 # <a name="historical-debugging"></a>Depuración histórica
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +31,7 @@ Depuración histórica es un modo de depuración que depende de la información 
  Puede usar IntelliTrace y Depuración histórica para recorrer la aplicación e inspeccionar su estado (pila de llamadas y variables locales) sin tener que establecer puntos de interrupción, reiniciar la depuración y repetir los pasos de prueba. Esto puede ahorrarle mucho tiempo, especialmente cuando el error se encuentra escondido en un escenario de prueba que se tarda en ejecutar.  
   
 ## <a name="how-do-i-start-using-historical-debugging"></a>¿Cómo empiezo a usar Depuración histórica?  
- De forma predeterminada, IntelliTrace está habilitado. Solo tiene que decidir qué eventos y llamadas de función le interesan. Para obtener más información acerca de cómo definir lo que desea buscar, ver [las características de IntelliTrace](../debugger/intellitrace-features.md). Para una cuenta de paso a paso de depuración con IntelliTrace, vea [Tutorial: uso de IntelliTrace](../debugger/walkthrough-using-intellitrace.md).  
+ De forma predeterminada, IntelliTrace está habilitado. Solo tiene que decidir qué eventos y llamadas de función le interesan. Para obtener más información sobre cómo definir lo que quiere buscar, consulte [Características de IntelliTrace](../debugger/intellitrace-features.md). Para una cuenta de paso a paso de depuración con IntelliTrace, vea [Tutorial: Uso de IntelliTrace](../debugger/walkthrough-using-intellitrace.md).  
   
 ## <a name="navigating-your-code-with-historical-debugging"></a>Desplazarse por el código con Depuración histórica  
  Comencemos con un sencillo programa que tiene un error. En una aplicación de consola C#, agregue el código siguiente:  
@@ -71,9 +66,9 @@ private static int AddInt(int add)
   
 1. En Herramientas / Opciones / IntelliTrace / General, asegúrese de que IntelliTrace está habilitado y seleccione la opción de eventos de IntelliTrace e información de llamadas. Si no selecciona esta opción, no podrá ver el medianil de navegación (tal y como se explica más adelante).  
   
-2. Establezca un punto de interrupción en la línea `Console.WriteLine(resultInt);`.  
+2. Establezca un punto de interrupción en la línea `Console.WriteLine(resultInt);` .  
   
-3. Inicie la depuración. El código se ejecuta hasta el punto de interrupción. En el **variables locales** ventana, puede ver que el valor de `resultInt` es 44.  
+3. Inicie la depuración. El código se ejecuta hasta el punto de interrupción. En la ventana **Locales** puede ver que el valor de `resultInt` es 44.  
   
 4. Abra el **herramientas de diagnóstico** ventana (**depurar / Mostrar herramientas de diagnóstico**). La ventana de código debe ser similar a la que se muestra a continuación:  
   
@@ -87,13 +82,8 @@ private static int AddInt(int add)
   
     ![ventana de código en modo de depuración histórica](../debugger/media/historicaldebuggingback.png "HistoricalDebuggingBack")  
   
-6. Ahora puede entrar en el `AddAll()` método (**F11**, o el **paso a paso** botón en el medianil de navegación. Avanzar paso a paso (**F10**, o **ir a llamada siguiente** en el medianil de navegación. La línea rosa se encuentra ahora en la línea `j = AddInt(j);`. **F10** en este caso no avanza a la siguiente línea de código. sino a la siguiente llamada de función. Depuración histórica va de una llamada a otra y omite las líneas de código que no incluyen una llamada de función.  
+6. Ahora puede depurar paso a paso por instrucciones el método `AddAll()` (**F11**, o el botón **Depurar paso a paso por instrucciones** en el medianil de navegación. Avanzar paso a paso (**F10** o **Ir a llamada siguiente** en el medianil de navegación. La línea rosa se encuentra ahora en la línea `j = AddInt(j);`. En este caso, **F10** no avanza a la siguiente línea de código. sino a la siguiente llamada de función. Depuración histórica va de una llamada a otra y omite las líneas de código que no incluyen una llamada de función.  
   
 7. Ahora, depure paso a paso por instrucciones el método `AddInt()`. Debería ver el error en este código inmediatamente.  
   
-   Este procedimiento no ha hecho sino arañar la superficie de lo que se puede hacer con Depuración histórica. Para obtener más información sobre las distintas configuraciones y los efectos de los botones diferentes en el medianil de navegación, consulte [las características de IntelliTrace](../debugger/intellitrace-features.md).
-
-
-
-
-
+   Este procedimiento no ha hecho sino arañar la superficie de lo que se puede hacer con Depuración histórica. Para obtener más información sobre las distintas configuraciones y los efectos de los botones diferentes en el medianil de navegación, consulte [Características de IntelliTrace](../debugger/intellitrace-features.md).

@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Obtenga información sobre la suscripción de aprendizaje de DataCamp incluida en la suscripción de Visual Studio seleccionada.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: afda11bd8cbc0a8f0be1c25ab0b23d9f7b3a39b8
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: 0751c29833b9fac85107af9992910f8046487a70
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380410"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428640"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Beneficio de aprendizaje de DataCamp en suscripciones de Visual Studio
 
@@ -33,7 +31,7 @@ La duración del beneficio de DataCamp depende de su suscripción de Visual Stud
 3. En la página de DataCamp, puede crear una cuenta.  Puede especificar una dirección de correo electrónico y una contraseña o iniciar sesión con cuentas de Facebook, LinkedIn o Google existentes.  Una vez que haya proporcionado su información de inicio de sesión, haga clic en **Get Started** (Comenzar).
    > [!div class="mx-imgBorder"]
    > ![Crear cuenta de DataCamp](_img/vs-datacamp/vs-datacamp-create-account.png)
-   > 
+   >
    > [!NOTE]
    > Cuando empiece a crear la cuenta, es posible que reciba el mensaje de error siguiente: ¡Vaya!  Your promo code is invalid or expired". (Lo sentimos, el código de promoción no es válido o expiró).  Esto sucede porque el código de promoción expira unos minutos después de su creación.  Si recibe este mensaje, solo tiene que volver a la página [Beneficios](https://my.visualstudio.com/benefits) y hacer clic en el vínculo **Activar** en el icono de beneficio de DataCamp.
 
@@ -62,7 +60,7 @@ La duración del beneficio de DataCamp depende de su suscripción de Visual Stud
 
 Puede parar en cualquier momento y reanudar el curso en la siguiente sesión.  Solo tiene que ir a [http://www.datacamp.com](http://www.datacamp.com) e iniciar sesión.  Aparecerá su panel y podrá reanudar el curso justo donde lo dejó. Bastará con que haga clic en **Continue Track** (Continuar pista).
 
-> [!div class="mx-imgBorder"]   
+> [!div class="mx-imgBorder"]
 > ![Continuar con la formación de DataCamp](_img/vs-datacamp/vs-datacamp-continue-training.png)
 
 ## <a name="eligibility"></a>Elegibilidad
@@ -71,8 +69,8 @@ Puede parar en cualquier momento y reanudar el curso en la siguiente sesión.  S
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (estándar)   | Licencia por volumen, Azure, venta directa | 3 meses       |  No.  Disponible solo para nuevos suscriptores          |
 | Visual Studio Professional (estándar) | Licencia por volumen, Azure, venta directa                                       | 3 meses                                                            |  No.  Disponible solo para nuevos suscriptores           |
-| Visual Studio Test Professional (estándar)                         | Licencia por volumen, venta directa                                              | Disponible                                             |  No.  Disponible solo para nuevos suscriptores           |
-| Plataformas MSDN (estándar)                                          | Licencia por volumen, venta directa                                              | Disponible                                              |  No.  Disponible solo para nuevos suscriptores           |
+| Visual Studio Test Professional (estándar)                         | Licencia por volumen, venta directa                                              | 3 meses                                             |  No.  Disponible solo para nuevos suscriptores           |
+| Plataformas MSDN (estándar)                                          | Licencia por volumen, venta directa                                              | 3 meses                                              |  No.  Disponible solo para nuevos suscriptores           |
 | Visual Studio Dev Essentials | N/D  | 2 meses | No. Disponible solo para nuevos suscriptores |
 | Visual Studio Enterprise (estándar)  | NFR<sup>1</sup> |No disponible  | N/D |
 | Visual Studio Enterprise, Visual Studio Professional (de nube mensual) | Azure | No disponible | N/D |

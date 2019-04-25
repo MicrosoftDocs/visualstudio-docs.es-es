@@ -1,7 +1,6 @@
 ---
 title: 'CA1009: Declarar los controladores de evento correctamente'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA1009
@@ -12,19 +11,19 @@ helpviewer_keywords:
 ms.assetid: ab65c471-1449-49d2-9896-7b9af74284b4
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CPP
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: b56f93a1ea4afbe3c9fd590df937fe56a155b044
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c3c5d2df6be4fef281d91794b5b71bfa0c3e653f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987659"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55956081"
 ---
 # <a name="ca1009-declare-event-handlers-correctly"></a>CA1009: Declarar los controladores de evento correctamente
 

@@ -2,22 +2,21 @@
 title: 'Diseñador de flujo de trabajo: Examinar y seleccionar un cuadro de diálogo de tipo .NET'
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.prod: visual-studio-dev15
 f1_keywords:
 - TypeBrowser.UI
 - ActivityTypeResolver.UI
 ms.assetid: 864b60b6-a070-4e5c-aa5b-a25341b57ea6
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 016dbb410aeade96d99d3ac27473e15ccc4b824c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f48a30e11e28daef2d1803646d2b495bcb718b84
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53915223"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046194"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>Examinar y seleccionar un cuadro de diálogo de tipo .NET
 
@@ -25,11 +24,11 @@ En el **propiedades** diseñadores como el Diseñador de variables, cuando se se
 
 Este cuadro de diálogo se emplea en varios escenarios de usuario, lo cual incluye lo siguiente:
 
--   Cuando se establece el tipo de una variable o argumento.
+- Cuando se establece el tipo de una variable o argumento.
 
--   Cuando se selecciona un tipo para una actividad genérica.
+- Cuando se selecciona un tipo para una actividad genérica.
 
--   Cuando se agrega una instrucción catch en la actividad <xref:System.Activities.Statements.TryCatch>.
+- Cuando se agrega una instrucción catch en la actividad <xref:System.Activities.Statements.TryCatch>.
 
 > [!NOTE]
 > El explorador de tipo puede mostrar tipos de matrices escalonadas Visual Basic de matriz, pero no tipos de matrices multidimensionales. Consulte [matrices escalonadas](http://go.microsoft.com/fwlink/?LinkId=195226) y [matrices multidimensionales](http://go.microsoft.com/fwlink/?LinkId=195227) para obtener más información.
@@ -38,19 +37,19 @@ Este cuadro de diálogo se emplea en varios escenarios de usuario, lo cual inclu
 
 ### <a name="to-select-a-value-or-reference-type-from-the-type-browser"></a>Para seleccionar un tipo de valor y de referencia en el explorador de tipo
 
-1.  En el **nombre de tipo** , escriba el nombre del tipo que desea usar.
+1. En el **nombre de tipo** , escriba el nombre del tipo que desea usar.
 
-2.  Realice una de las siguientes acciones:
+2. Realice una de las siguientes acciones:
 
-    -   Cuando aparezca el nombre del tipo que se va a usar en el árbol en el **nombre de tipo** cuadro, haga doble clic en el tipo para seleccionarlo.
+    - Cuando aparezca el nombre del tipo que se va a usar en el árbol en el **nombre de tipo** cuadro, haga doble clic en el tipo para seleccionarlo.
 
-    -   Escriba los caracteres suficientes en el **nombre de tipo** cuadro para identificar de forma única el tipo que desea usar y, a continuación, presione ENTRAR para seleccionar el tipo
+    - Escriba los caracteres suficientes en el **nombre de tipo** cuadro para identificar de forma única el tipo que desea usar y, a continuación, presione ENTRAR para seleccionar el tipo
 
 ### <a name="to-select-a-generic-type-from-the-type-browser"></a>Para seleccionar un tipo genérico en el explorador de tipo
 
-1.  En el **nombre de tipo** cuadro, escriba el nombre del tipo que desea usar.
+1. En el **nombre de tipo** cuadro, escriba el nombre del tipo que desea usar.
 
-2.  Cuando aparezca el nombre del tipo que se va a usar en el árbol en el **nombre de tipo** cuadro, haga clic en el tipo para seleccionarla y hacer que los cuadros de lista desplegable aparezca.
+2. Cuando aparezca el nombre del tipo que se va a usar en el árbol en el **nombre de tipo** cuadro, haga clic en el tipo para seleccionarla y hacer que los cuadros de lista desplegable aparezca.
 
      Seleccione el tipo que desea usar para cerrar el genérico en los cuadros de lista desplegable y, a continuación, haga clic en **Aceptar**.
 
@@ -66,9 +65,9 @@ La lista de tipos en el **nombre de tipo** cuadro obtiene más corto a medida qu
 
 Por ejemplo:
 
-1.  Escriba **operación** coincide con <xref:System.OperationCanceledException> pero no <xref:System.InvalidOperationException>. Para buscar coincidencias con <xref:System.InvalidOperationException>, comience a escribir System.I o Invalid.
+1. Escriba **operación** coincide con <xref:System.OperationCanceledException> pero no <xref:System.InvalidOperationException>. Para buscar coincidencias con <xref:System.InvalidOperationException>, comience a escribir System.I o Invalid.
 
-2.  Escriba **genérico** coincide con <xref:System.GenericUriParser> pero no con los tipos en el <xref:System.Collections.Generic> espacio de nombres. Para buscar tipos en el <xref:System.Collections.Generic> espacio de nombres, escriba el nombre completo del espacio de nombres.
+2. Escriba **genérico** coincide con <xref:System.GenericUriParser> pero no con los tipos en el <xref:System.Collections.Generic> espacio de nombres. Para buscar tipos en el <xref:System.Collections.Generic> espacio de nombres, escriba el nombre completo del espacio de nombres.
 
 ## <a name="selecting-a-service-contract-using-the-type-browser-dialog"></a>Seleccionar un contrato de servicio usando el cuadro de diálogo de explorador de tipo
 

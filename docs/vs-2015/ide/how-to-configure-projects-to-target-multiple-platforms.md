@@ -1,14 +1,9 @@
 ---
-title: 'Cómo: Configurar proyectos para múltiples plataformas de destino | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Configurar proyectos para múltiples plataformas de destino | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio], targeting platforms
 - platforms, changing target platforms
@@ -16,15 +11,15 @@ ms.assetid: affa2392-7aed-45ac-9ffa-1d8e0496d590
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 9a3010e6304124ee306c5ecad3593df98d555523
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 7457b5be3a6c1cbf2c2b6a1c6f66f9fb89e8d225
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49921839"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100305"
 ---
-# <a name="how-to-configure-projects-to-target-multiple-platforms"></a>Cómo: Configurar proyectos para múltiples plataformas de destino
+# <a name="how-to-configure-projects-to-target-multiple-platforms"></a>Procedimiento Configurar proyectos para varias plataformas de destino
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] proporciona una forma para que una solución tenga como destino varias arquitecturas de CPU diferentes (o plataformas) a la vez. Se tiene acceso a las propiedades que las establecerán a través del cuadro de diálogo **Configuration Manager**.  
@@ -34,31 +29,31 @@ ms.locfileid: "49921839"
   
 #### <a name="to-set-your-configuration-to-target-a-different-platform"></a>Para establecer la configuración para que tenga como destino otra plataforma  
   
-1.  En el menú **Compilar**, haga clic en **Configuration Manager**.  
+1. En el menú **Compilar**, haga clic en **Configuration Manager**.  
   
-2.  En el cuadro **Plataforma de soluciones activas**, seleccione la plataforma que quiere establecer como destino de la solución o seleccione **\<Nuevo>** para crear una plataforma. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] compilará la aplicación para que tenga como destino la plataforma que se establece como la plataforma activa en el cuadro de diálogo **Configuration Manager**.  
+2. En el cuadro **Plataforma de soluciones activas**, seleccione la plataforma que quiere establecer como destino de la solución o seleccione **\<Nuevo>** para crear una plataforma. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] compilará la aplicación para que tenga como destino la plataforma que se establece como la plataforma activa en el cuadro de diálogo **Configuration Manager**.  
   
 ## <a name="removing-a-platform"></a>Quitar una plataforma  
  Si se da cuenta de que no necesita una plataforma, puede quitarla mediante el cuadro de diálogo Configuration Manager. Esta acción quitará todas las configuraciones de soluciones y proyectos que haya configurado para esa combinación de configuración y destino.  
   
 #### <a name="to-remove-a-platform"></a>Para quitar una plataforma  
   
-1.  En el menú **Compilar**, haga clic en **Configuration Manager**.  
+1. En el menú **Compilar**, haga clic en **Configuration Manager**.  
   
-2.  En el cuadro **Plataforma de soluciones activas**, seleccione **\<Editar>**. Se abre el cuadro de diálogo **Editar plataformas de solución**.  
+2. En el cuadro **Plataforma de soluciones activas**, seleccione **\<Editar>**. Se abre el cuadro de diálogo **Editar plataformas de solución**.  
   
-3.  Haga clic en la plataforma que quiera quitar y haga clic en **Quitar**.  
+3. Haga clic en la plataforma que quiera quitar y haga clic en **Quitar**.  
   
 ## <a name="targeting-multiple-platforms-with-one-solution"></a>Establecer como destino varias plataformas con una solución  
  Dado que puede cambiar la configuración en función de la combinación de configuración y plataforma, puede configurar una solución que puede tener como destino más de una plataforma.  
   
 #### <a name="to-target-multiple-platforms"></a>Para establecer varias plataformas como destino  
   
-1.  Use **Configuration Manager** para agregar al menos dos plataformas de destino para la solución.  
+1. Use **Configuration Manager** para agregar al menos dos plataformas de destino para la solución.  
   
-2.  Seleccione la plataforma que quiera establecer como destino de la lista **Plataforma de soluciones activas**.  
+2. Seleccione la plataforma que quiera establecer como destino de la lista **Plataforma de soluciones activas**.  
   
-3.  Compile la solución.  
+3. Compile la solución.  
   
 #### <a name="to-build-multiple-solution-configurations-at-once"></a>Para compilar varias configuraciones de solución a la vez  
   
@@ -72,6 +67,3 @@ ms.locfileid: "49921839"
  [Cómo: Crear y editar configuraciones](../ide/how-to-create-and-edit-configurations.md)   
  [Descripción de las configuraciones de compilación](../ide/understanding-build-configurations.md)   
  [Compilar y limpiar proyectos y soluciones en Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
-
-
-

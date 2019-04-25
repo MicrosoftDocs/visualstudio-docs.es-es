@@ -1,14 +1,9 @@
 ---
 title: Parámetros de plantilla | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio templates, parameters
 - template parameters [Visual Studio]
@@ -18,13 +13,13 @@ ms.assetid: 1b567143-08c6-4d7a-b484-49f0671754fe
 caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ef4e1a6e3c56df744ce5375a1cb3a1dbd53a6fad
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: dc5f69fee15d3dc67b31c54f0b397fbf039aa52a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49238906"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077347"
 ---
 # <a name="template-parameters"></a>Parámetros de plantilla
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,19 +29,19 @@ Si se usan parámetros en las plantillas, se pueden reemplazar los valores de la
 ## <a name="declaring-and-enabling-template-parameters"></a>Declarar y habilitar parámetros de plantilla  
  Los parámetros de plantilla se declaran en el formato $*parámetro*$. Por ejemplo:  
   
--   $safeprojectname$  
+- $safeprojectname$  
   
--   $guid1$  
+- $guid1$  
   
--   $guid5$  
+- $guid5$  
   
 #### <a name="to-enable-parameter-substitution-in-templates"></a>Para habilitar la substitución de parámetros en las plantillas  
   
-1.  En el archivo .vstemplate de la plantilla, busque el elemento `ProjectItem` correspondiente al elemento para el que desea habilitar el reemplazo de parámetros.  
+1. En el archivo .vstemplate de la plantilla, busque el elemento `ProjectItem` correspondiente al elemento para el que desea habilitar el reemplazo de parámetros.  
   
-2.  Establezca el atributo `ReplaceParameters` del elemento `ProjectItem` en `true`:  
+2. Establezca el atributo `ReplaceParameters` del elemento `ProjectItem` en `true`:  
   
-3.  En el archivo de código del elemento de proyecto, incluya los parámetros donde proceda. Por ejemplo, el parámetro siguiente especifica que se debe utilizar el nombre del proyecto seguro para el espacio de nombres en un archivo:  
+3. En el archivo de código del elemento de proyecto, incluya los parámetros donde proceda. Por ejemplo, el parámetro siguiente especifica que se debe utilizar el nombre del proyecto seguro para el espacio de nombres en un archivo:  
   
     ```  
     namespace $safeprojectname$  
@@ -130,6 +125,3 @@ namespace $safeprojectname$
   
 ## <a name="see-also"></a>Vea también  
  [Personalizar plantillas](../ide/customizing-project-and-item-templates.md)
-
-
-

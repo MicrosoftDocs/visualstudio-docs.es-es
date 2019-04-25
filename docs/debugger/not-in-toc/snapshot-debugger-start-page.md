@@ -5,15 +5,15 @@ robots: noindex, nofollow
 ms.topic: reference
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c9c2e5ec77a2abf07ca396166d4cc2ae9792cacc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cf2aba33089623dc98a90c23166291bb2d6e7123
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53853741"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428653"
 ---
 # <a name="getting-started-with-the-snapshot-debugger"></a>Introducción a Snapshot Debugger
 
@@ -27,7 +27,7 @@ Snapshot Debugger recopila instantáneas de la aplicación. Las instantáneas so
 
 ### <a name="set-a-snappoint"></a>Establecer un punto de acoplamiento
 
-1. En el editor de código, haga clic en el margen interno izquierdo junto a una línea de código que está interesado en establecer un punto de acoplamiento. Asegúrese de que se trata de código que sabe que se ejecutará. 
+1. En el editor de código, haga clic en el margen interno izquierdo junto a una línea de código que está interesado en establecer un punto de acoplamiento. Asegúrese de que se trata de código que sabe que se ejecutará.
 
     ![Establecer un punto de acoplamiento en el Editor](../media/snapshot-startpage-set-snappoint.png)
 
@@ -37,7 +37,7 @@ Snapshot Debugger recopila instantáneas de la aplicación. Las instantáneas so
 
 ### <a name="open-a-snapshot"></a>Abrir una instantánea
 
-1. Cuando se alcanza el punto de acoplamiento, aparece una instantánea en la ventana de herramientas de diagnóstico de la derecha. Si no se abre la ventana, ábralo eligiendo **depurar** > **Windows** > **Mostrar herramientas de diagnóstico**. 
+1. Cuando se alcanza el punto de acoplamiento, aparece una instantánea en la ventana de herramientas de diagnóstico de la derecha. Si no se abre la ventana, ábralo eligiendo **depurar** > **Windows** > **Mostrar herramientas de diagnóstico**.
 
     ![Instantánea en la ventana de herramientas de diagnóstico](../media/snapshot-startpage-diagsession-window.png)
 
@@ -59,7 +59,7 @@ El mismo sitio Web está todavía activo y los usuarios finales no se ve afectad
 
 3. En el **mensaje** , escriba un mensaje de registro que desea registrar. También puede evaluar las variables en el mensaje del registro si se colocan dentro de llaves.
 
-    Si elige **enviar a la ventana de salida**, aparece el mensaje en la ventana de herramientas de diagnóstico cuando se alcanza el punto de registro. 
+    Si elige **enviar a la ventana de salida**, aparece el mensaje en la ventana de herramientas de diagnóstico cuando se alcanza el punto de registro.
 
     Si elige **envía al registro de aplicación**, aparece el mensaje en cualquier lugar que puede ver los mensajes de `System.Diagnostics.Trace` (o `ILogger` en .NET Core), como App Insights, cuando se alcanza el punto de registro.
 
@@ -69,6 +69,6 @@ Puede encontrar más información sobre el depurador de instantáneas en el [pá
 
 ## <a name="dont-show-me-this-again"></a>No volver a mostrar
 
-Para que nunca la página de inicio del depurador de instantáneas volver a mostrar cuando se conecta el depurador de instantáneas, cambie el **mostrar la página "Introducción" en el inicio de sesión** opción **herramientas**  >   **Opciones de** > **depurador de instantáneas**. 
+Para no volver a mostrar la página de inicio del depurador de instantáneas al conectar el depurador de instantáneas, cambie el **mostrar la página "Introducción" en el inicio de sesión** opción **herramientas**  >   **Opciones de** > **depurador de instantáneas**.
 
 ![Página de opciones de herramienta de depurador de instantáneas](../media/snapshot-startpage-tools-options.png)

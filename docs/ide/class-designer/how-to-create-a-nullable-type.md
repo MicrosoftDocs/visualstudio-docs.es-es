@@ -1,7 +1,6 @@
 ---
-title: Procedimiento Crear un tipo que acepta valores NULL en el Diseñador de clases
+title: Filtrar Crear un tipo que acepta valores NULL en el Diseñador de clases
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - nullable types, Class Designer
@@ -9,20 +8,20 @@ helpviewer_keywords:
 ms.assetid: 84673a89-3f6d-4668-919e-1c0f56182fe5
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 461bcef015169cfd9506d301111859b53fdce600
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a5c70375e7b7b47b9c345c13b5529ea29e1eed45
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53953045"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55925529"
 ---
-# <a name="how-to-create-a-nullable-type-in-class-designer"></a>Procedimiento Crear un tipo que acepta valores NULL en el Diseñador de clases
+# <a name="how-to-create-a-nullable-type-in-class-designer"></a>Filtrar Crear un tipo que acepta valores NULL en el Diseñador de clases
 
 Determinados tipos de valor no siempre tienen (o necesitan) un valor definido. Esto es habitual en las bases de datos, donde es posible que algunos campos no tengan asignado ningún valor. Por ejemplo, se podría asignar un valor nulo a un campo de base de datos para indicar que aún no se le ha asignado ningún valor.
 

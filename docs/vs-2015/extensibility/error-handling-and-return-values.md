@@ -1,14 +1,9 @@
 ---
 title: Control de errores y valores devueltos | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - errors [Visual Studio SDK], handling
 - error handling
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: b2d9079d-39a6-438a-8010-290056694b5c
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: d55dea94e55e676a1ca37b46bcaa35a2a7a508e1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4fe446234317aedbf2090c5ee43d69fd08b1f020
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51728175"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117465"
 ---
 # <a name="error-handling-and-return-values"></a>Control de errores y valores devueltos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,28 +36,27 @@ VSPackages y COM utilizan la misma arquitectura de errores. El `SetErrorInfo` y 
 ## <a name="general-guidelines"></a>Instrucciones generales  
  Puede usar el <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A> y <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ReportErrorInfo%2A> métodos para establecer y notificar los errores que son internos a su implementación del VSPackage. Sin embargo, como regla general, siga estas instrucciones para controlar los mensajes de error en el paquete de VS:  
   
--   Implemente `ISupportErrorInfo` en sus objetos COM de VSPackage.  
+- Implemente `ISupportErrorInfo` en sus objetos COM de VSPackage.  
   
--   Crear un error que informa el mecanismo que llama a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A> método en objetos que implementan <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>.  
+- Crear un error que informa el mecanismo que llama a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A> método en objetos que implementan <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>.  
   
--   Permitir que el IDE de mostrar los errores a los usuarios a través de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ReportErrorInfo%2A> método.  
+- Permitir que el IDE de mostrar los errores a los usuarios a través de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ReportErrorInfo%2A> método.  
   
 ## <a name="error-information-in-the-ide"></a>Información de error en el IDE  
  Las reglas siguientes indican cómo controlar la información de error en la [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE:  
   
--   Como una estrategia defensiva para garantizar que la información de error obsoletos no se notifica a los usuarios, las funciones que llaman a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ReportErrorInfo%2A> en primer lugar debe llamar al método el <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A> método. Pasar `null` para borrar los mensajes de error almacenado en caché antes de llamar a cualquier cosa que puede establecer la nueva información de error.  
+- Como una estrategia defensiva para garantizar que la información de error obsoletos no se notifica a los usuarios, las funciones que llaman a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.ReportErrorInfo%2A> en primer lugar debe llamar al método el <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A> método. Pasar `null` para borrar los mensajes de error almacenado en caché antes de llamar a cualquier cosa que puede establecer la nueva información de error.  
   
--   Solo se pueden llamar a funciones que no informan de los mensajes de error directamente el <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A> método si va a devolver un error `HRESULT`. Es admisible para borrar el `ErrorInfo` en la entrada a una función o al devolver <xref:Microsoft.VisualStudio.VSConstants.S_OK>. La única excepción a esta regla es cuando una llamada devuelve un error `HRESULT` desde que el receptor puede recuperar explícitamente o pasar por alto.  
+- Solo se pueden llamar a funciones que no informan de los mensajes de error directamente el <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A> método si va a devolver un error `HRESULT`. Es admisible para borrar el `ErrorInfo` en la entrada a una función o al devolver <xref:Microsoft.VisualStudio.VSConstants.S_OK>. La única excepción a esta regla es cuando una llamada devuelve un error `HRESULT` desde que el receptor puede recuperar explícitamente o pasar por alto.  
   
--   Cualquier entidad que explícitamente hace caso omiso de un error `HRESULT` debe llamar a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A> método con <xref:Microsoft.VisualStudio.VSConstants.S_OK>. En caso contrario, el `ErrorInfo` objeto podría utilizarse accidentalmente cuando otra entidad, genera un error sin proporcionar sus propios `ErrorInfo`.  
+- Cualquier entidad que explícitamente hace caso omiso de un error `HRESULT` debe llamar a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A> método con <xref:Microsoft.VisualStudio.VSConstants.S_OK>. En caso contrario, el `ErrorInfo` objeto podría utilizarse accidentalmente cuando otra entidad, genera un error sin proporcionar sus propios `ErrorInfo`.  
   
--   Todos los métodos que se originan un error `HRESULT` se recomienda llamar a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A> método para proporcionar información de error enriquecida. Si el valor devuelto `HRESULT` es un especial `FACILITY_ITF` error y, a continuación, el método es necesario para proporcionar una adecuada `ErrorInfo`objeto. Si el error devuelto es un error del sistema estándar (por ejemplo, <xref:Microsoft.VisualStudio.VSConstants.E_OUTOFMEMORY>, <xref:Microsoft.VisualStudio.VSConstants.E_ABORT>, <xref:Microsoft.VisualStudio.VSConstants.E_INVALIDARG>, <xref:Microsoft.VisualStudio.VSConstants.E_UNEXPECTED>y así sucesivamente.) es aceptable para devolver el código de error sin llamar explícitamente a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A> método. Como una estrategia defensiva codificación, al que se origina un error `HRESULT` (incluidos los errores del sistema), llame siempre a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A> método, ya sea con `ErrorInfo` que describe el error con más detalle o `null`.  
+- Todos los métodos que se originan un error `HRESULT` se recomienda llamar a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A> método para proporcionar información de error enriquecida. Si el valor devuelto `HRESULT` es un especial `FACILITY_ITF` error y, a continuación, el método es necesario para proporcionar una adecuada `ErrorInfo`objeto. Si el error devuelto es un error del sistema estándar (por ejemplo, <xref:Microsoft.VisualStudio.VSConstants.E_OUTOFMEMORY>, <xref:Microsoft.VisualStudio.VSConstants.E_ABORT>, <xref:Microsoft.VisualStudio.VSConstants.E_INVALIDARG>, <xref:Microsoft.VisualStudio.VSConstants.E_UNEXPECTED>y así sucesivamente.) es aceptable para devolver el código de error sin llamar explícitamente a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A> método. Como una estrategia defensiva codificación, al que se origina un error `HRESULT` (incluidos los errores del sistema), llame siempre a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SetErrorInfo%2A> método, ya sea con `ErrorInfo` que describe el error con más detalle o `null`.  
   
--   Llamar todas las funciones que devuelven un error originado por otra llamada debe pasar la información que se recibió el error en la `HRESULT` sin modificar el `ErrorInfo` objeto.  
+- Llamar todas las funciones que devuelven un error originado por otra llamada debe pasar la información que se recibió el error en la `HRESULT` sin modificar el `ErrorInfo` objeto.  
   
 ## <a name="see-also"></a>Vea también  
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>   
- [SetErrorInfo (automatización de componentes)](http://msdn.microsoft.com/en-us/8eaacfac-fc37-4eaa-870b-10b99d598d66)   
- [GetErrorInfo](http://msdn.microsoft.com/en-us/03317526-8c4f-4173-bc10-110c8112676a)   
- [Interfaz ISupportErrorInfo](http://msdn.microsoft.com/en-us/42d33066-36b4-4a5b-aa5d-46682e560f32)
-
+ [SetErrorInfo (automatización de componentes)](http://msdn.microsoft.com/8eaacfac-fc37-4eaa-870b-10b99d598d66)   
+ [GetErrorInfo](http://msdn.microsoft.com/03317526-8c4f-4173-bc10-110c8112676a)   
+ [Interfaz ISupportErrorInfo](http://msdn.microsoft.com/42d33066-36b4-4a5b-aa5d-46682e560f32)

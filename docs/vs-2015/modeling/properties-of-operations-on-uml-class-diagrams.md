@@ -1,12 +1,9 @@
 ---
 title: Propiedades de las operaciones de UML de diagramas de clases | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.teamarch.logicalclassdiagram.operation.properties
 helpviewer_keywords:
@@ -15,13 +12,13 @@ ms.assetid: 4128f3e2-3a51-4edf-b3e4-b7f170a32f6b
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 7a5a2e18c41f99462231da2a11dc80a0ae01e99e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f98a3211bebf832009b84fac0fc1305a4162c610
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51804484"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668449"
 ---
 # <a name="properties-of-operations-on-uml-class-diagrams"></a>Propiedades de las operaciones de diagramas de clases de UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +32,7 @@ En un diagrama de clases UML, puede agregar *operaciones* a clases e interfaces.
 ## <a name="signature-of-an-operation"></a>Firma de una operación  
  La firma de una operación es la línea de texto que la representa en una clase o interfaz en un diagrama de clases UML. Tiene la forma siguiente:  
 
- \+ OperationName (parameter1: Type1 [*],...): ReturnType [\*]  
+ \+ OperationName (parameter1: Tipo1 [*]...) : ReturnType [\*]  
 
  \+ denota visibilidad pública. Los otros valores permitidos son: - (privado), # (protegido), ~ (paquete).  
 
@@ -52,8 +49,7 @@ En un diagrama de clases UML, puede agregar *operaciones* a clases e interfaces.
 
  Para ver las propiedades de una operación, haga clic en la operación en la clase o interfaz en el diagrama y, a continuación, haga clic en **propiedades**. Las propiedades aparecen en la **propiedades** ventana.  
 
-
-|      Property       |   Predeterminado    |                                                                                                                                                                                 Descripción                                                                                                                                                                                 |
+|      Propiedad       |   Default    |                                                                                                                                                                                 Descripción                                                                                                                                                                                 |
 |---------------------|--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |      **Name**       | (un nombre nuevo) |                                                                                                                                                                Debe ser único dentro del tipo contenedor.                                                                                                                                                                 |
 |   **Parámetros**    |    (ninguno)    |      Una lista que tiene el formato <em>nombre</em>**:**<em>tipo</em>**,** <em>nombre</em>**:**  <em>Tipo</em>**,...** Haga clic en **[...]**  para editar la lista.<br /><br /> Los tipos pueden ser tipos primitivos o tipos que se definen en el modelo. Si escribe un nombre para un nuevo tipo en esta propiedad, se agregará un tipo a la sección **Tipos sin especificar** del Explorador de modelos UML.      |
@@ -74,11 +70,8 @@ En un diagrama de clases UML, puede agregar *operaciones* a clases e interfaces.
 |    **Es único**    |    False     |                                                                                                                                         Si es True, no hay ningún valor duplicado en la colección. Para **multiplicidad** más de 1.                                                                                                                                         |
 
 ## <a name="see-also"></a>Vea también  
- [Diagramas de clases UML: referencia](../modeling/uml-class-diagrams-reference.md)   
+ [Diagrama de clases de UML: Referencia](../modeling/uml-class-diagrams-reference.md)   
  [Propiedades de tipos en diagramas de clases UML](../modeling/properties-of-types-on-uml-class-diagrams.md)   
  [Propiedades de atributos en diagramas de clases UML](../modeling/properties-of-attributes-on-uml-class-diagrams.md)   
  [Propiedades de las asociaciones de diagramas de clases UML](../modeling/properties-of-associations-on-uml-class-diagrams.md)   
- [Diagramas de clases de UML: instrucciones](../modeling/uml-class-diagrams-guidelines.md)
-
-
-
+ [Diagrama de clases de UML: directrices](../modeling/uml-class-diagrams-guidelines.md)

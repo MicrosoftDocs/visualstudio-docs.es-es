@@ -1,7 +1,6 @@
 ---
 title: Ejecutar como administrador
 ms.date: 06/05/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio, user permissions
@@ -10,15 +9,15 @@ helpviewer_keywords:
 - permissions
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 14d82825d9f1db2cd95222f4722d19b2f9347186
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 229b1606a8a7de18da7354852e3e5adb9123f5b5
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53833596"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222864"
 ---
 # <a name="user-permissions-and-visual-studio"></a>Permisos de usuario y Visual Studio
 
@@ -51,11 +50,25 @@ Si tiene que ejecutar Visual Studio como administrador, siga estos pasos para ab
 > [!NOTE]
 > Estas instrucciones corresponden a Windows 10. Son similares para otras versiones de Windows.
 
+::: moniker range="vs-2017"
+
 1. Abra el menú **Inicio** y desplácese hasta Visual Studio 2017.
 
-1. En el menú contextual o que aparece al hacer clic con el botón derecho de **Visual Studio 2017**, seleccione **Más** > **Ejecutar como administrador**.
+1. En el menú contextual de **Visual Studio 2017**, seleccione **Más**>**Ejecutar como administrador**.
 
    Cuando se inicia Visual Studio, aparece **(Administrador)** después del nombre de producto en la barra de título.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Abra el menú **Inicio** y vaya a Visual Studio 2019.
+
+1. En el menú contextual de **Visual Studio 2019**, seleccione **Más**>**Ejecutar como administrador**.
+
+   Cuando se inicia Visual Studio, aparece **(Administrador)** después del nombre de producto en la barra de título.
+
+::: moniker-end
 
 También puede modificar el acceso directo a la aplicación para ejecutarla siempre con permisos administrativos.
 

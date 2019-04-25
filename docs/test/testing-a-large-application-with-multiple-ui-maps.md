@@ -1,22 +1,21 @@
 ---
 title: Probar una aplicación grande con varias asignaciones de IU
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - coded UI tests, multiple UI maps
 - coded UI tests, for large applications
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f1677ac36222b3d7efddc22bc1c0a69394eaf564
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5bebc8581ead00eeb6b28c2c45f4dcfe991a9e1a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53931689"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55918161"
 ---
 # <a name="test-a-large-application-with-multiple-ui-maps"></a>Probar una aplicación grande con varias asignaciones de IU
 

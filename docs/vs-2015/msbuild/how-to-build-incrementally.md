@@ -1,14 +1,9 @@
 ---
-title: 'Cómo: Compilar de forma incremental | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Compilar de forma incremental | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, incremental builds
 - incremental builds
@@ -17,18 +12,17 @@ ms.assetid: 8d82d7d8-a2f1-4df6-9d2f-80b9e0cb3ac3
 caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 88ad4f984af2be6884005c5ec3c7dec4d7b5c6aa
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 4aba200bff4bc8a017756ece6576e589f33e9df6
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49844629"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662262"
 ---
-# <a name="how-to-build-incrementally"></a>Cómo: Compilar versiones incrementalmente
+# <a name="how-to-build-incrementally"></a>Procedimiento Compilar de forma incremental
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Cuando se compila un proyecto grande, es importante que los componentes que se compilaron previamente y que aún están actualizados no se recompilen. Si todos los destinos se compilan cada vez, llevará más tiempo finalizar la compilación. Para habilitar las compilaciones incrementales (aquellas en las que solo se compilan los destinos no compilados con anterioridad o no actualizados), [!INCLUDE[vstecmsbuildengine](../includes/vstecmsbuildengine-md.md)] ([!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]) compara las marcas de tiempo de los archivos de entrada con las de los archivos de salida y determina si debe omitir, compilar o recompilar parcialmente un destino. En cambio, debe haber una asignación unívoca entre las entradas y resultados. Se pueden usar las transformaciones para permitir que los destinos identifiquen esta asignación directa. Para obtener más información sobre transformaciones, vea [Transformaciones](../msbuild/msbuild-transforms.md).  
   
 ## <a name="specifying-inputs-and-outputs"></a>Especificar entradas y resultados  
@@ -57,7 +51,7 @@ Cuando se compila un proyecto grande, es importante que los componentes que se c
 </Target>  
 ```  
   
- Cuando las entradas y los resultados están especificados en un destino, puede suceder que cada resultado solo se asigne a una entrada o que no exista ninguna asignación directa entre resultados y entradas. En el anterior [Csc (tarea)](../msbuild/csc-task.md), por ejemplo, la salida, hello.exe, no se puede asignar a una única entrada: depende de todas ellas.  
+ Cuando las entradas y los resultados están especificados en un destino, puede suceder que cada resultado solo se asigne a una entrada o que no exista ninguna asignación directa entre resultados y entradas. Por ejemplo, en [Csc (Tarea)](../msbuild/csc-task.md) anterior, la salida hello.exe no se puede asignar a una única entrada porque depende de todas ellas.  
   
 > [!NOTE]
 >  Un destino en el que no exista asignación directa entre entradas y resultados se compilará con más frecuencia que un destino en el que cada resultado solo se puede asignar a una entrada. Esto se debe a que [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] no puede determinar qué resultados necesitan recompilarse si algunas de las entradas han cambiado.  
@@ -69,7 +63,7 @@ Cuando se compila un proyecto grande, es importante que los componentes que se c
   
 - `GenerateContentFiles`: Convierte archivos .txt en archivos .content.  
   
-- `BuildHelp`: Combina archivos .content y archivos XML de metadatos para compilar el archivo .help final.  
+- `BuildHelp`: Combina archivos .content y archivos XML de metadatos para generar el archivo .help final.  
   
   El proyecto usa transformaciones para crear una asignación unívoca entre las entradas y los resultados en la tarea `GenerateContentFiles`. Para obtener más información, consulte [Transformaciones](../msbuild/msbuild-transforms.md). Además, el elemento `Output` se establece para que use automáticamente los resultados de la tarea `GenerateContentFiles` como entradas para la tarea `BuildHelp`.  
   
@@ -116,6 +110,3 @@ Cuando se compila un proyecto grande, es importante que los componentes que se c
  [Transformaciones](../msbuild/msbuild-transforms.md)   
  [Csc (tarea)](../msbuild/csc-task.md)   
  [Tarea Vbc](../msbuild/vbc-task.md)
-
-
-

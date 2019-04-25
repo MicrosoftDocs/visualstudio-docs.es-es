@@ -2,20 +2,19 @@
 title: Corregir los errores del programa y mejorar el código
 description: En este artículo se describen algunas formas básicas en las que Visual Studio puede ayudarle a encontrar y corregir problemas en el código, incluidos los errores de compilación, análisis de código, herramientas de depuración y pruebas unitarias.
 ms.date: 05/02/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: c3a14d28-d811-4ff3-bd09-21dce14025ca
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e61c5917ee3d77161c31213d4851472e714d1679
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a43be698fd908737c96f9de3cf346b48e84f27fc
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53940182"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504463"
 ---
 # <a name="make-code-work-in-visual-studio"></a>Hacer que el código funcione en Visual Studio
 
@@ -45,7 +44,7 @@ Salvo que no haya realizado ninguna modificación en un código que ya se haya c
 
 ![Salida y lista de errores de Visual Studio](../ide/media/vs_ide_gs_debug_bad_build_error_list.png)
 
-Haga clic en la línea del error en la ventana **Lista de errores** para ir a la línea donde se ha producido el error. (O active los números de línea; para ello, haga clic en la barra **Inicio rápido** en la parte superior derecha, escriba "números de línea" y presione **Entrar**. Esta es la forma más rápida de acceder al cuadro de diálogo **Opciones** donde puede activar los números de línea. Obtenga información sobre cómo usar la barra **Inicio rápido** y ahórrese muchos clics en la interfaz de usuario).
+Haga clic en la línea del error en la ventana **Lista de errores** para ir a la línea donde se ha producido el error. (O puede activar los números de línea si presiona **Ctrl**+**Q**, escribe **números de línea** y elige **Activar o desactivar los números de línea** en los resultados. Esta es la forma más rápida de acceder al cuadro de diálogo **Opciones** donde puede activar los números de línea).
 
 ![Editor de Visual Studio con números de línea](../ide/media/vs_ide_gs_debug_line_numbers.png)
 
@@ -75,7 +74,7 @@ Los analizadores de código busca problemas comunes de código que pueden dar lu
 
 ### <a name="c-and-visual-basic-code-analysis"></a>Análisis de código de C# y Visual Basic
 
-Visual Studio 2017 incluye un conjunto integrado de [analizadores de .NET Compiler Platform](../code-quality/roslyn-analyzers-overview.md) que examinan el código de C# y Visual Basic mientras escribe. Puede instalar analizadores adicionales como una extensión de Visual Studio, o como un paquete de NuGet. Si se detectan infracciones de reglas, se notifican en el editor de código con un subrayado ondulado bajo el código incorrecto y en la **lista de errores**.
+Visual Studio incluye un conjunto integrado de [analizadores de .NET Compiler Platform](../code-quality/roslyn-analyzers-overview.md) que examinan el código de C# y Visual Basic mientras escribe. Puede instalar analizadores adicionales como una extensión de Visual Studio, o como un paquete de NuGet. Si se detectan infracciones de reglas, se notifican en el editor de código con un subrayado ondulado bajo el código incorrecto y en la **lista de errores**.
 
 ### <a name="c-code-analysis"></a>Análisis de código de C++
 
@@ -89,9 +88,9 @@ Las advertencias nuevas o actualizadas se muestran en la pestaña **Lista de err
 
 ![Lista de errores con advertencias de Visual Studio](../ide/media/cpp-code-analysis-warning.png)
 
-## <a name="use-light-bulbs-to-fix-or-refactor-code"></a>Usar bombillas para corregir o refactorizar el código
+## <a name="use-quick-actions-to-fix-or-refactor-code"></a>Uso de Acciones rápidas para corregir o refactorizar el código
 
-Las [acciones rápidas](../ide/quick-actions.md), que están disponibles desde el icono de la bombilla o el destornillador, le permiten refactorizar código alineado. Son una manera fácil de corregir advertencias comunes de forma rápida y eficaz en el código de C#, C++ y Visual Basic. Para obtener acceso a ellas, haga clic con el botón derecho en un subrayado ondulado de advertencia y seleccione **Acciones rápidas y refactorizaciones**. O bien, cuando el cursor se encuentre en la línea con el subrayado ondulado de color, presione **Ctrl**+**.** o seleccione el icono de la bombilla o el destornillador en el margen. Verá una lista de posibles correcciones o refactorizaciones que puede aplicar a esa línea de código.
+Las [acciones rápidas](../ide/quick-actions.md), que están disponibles desde el icono de la bombilla o el destornillador, le permiten refactorizar código alineado. Son una manera fácil de corregir advertencias comunes de forma rápida y eficaz en el código de C#, C++ y Visual Basic. Para obtener acceso a ellas, haga clic con el botón derecho en un subrayado ondulado de advertencia y seleccione **Acciones rápidas y refactorizaciones**. O bien, cuando el cursor se encuentre en la línea con el subrayado ondulado de color, presione **Ctrl**+**.** o bien, haga clic en el icono de la bombilla, la bombilla de error o el destornillador en el margen. Verá una lista de posibles correcciones o refactorizaciones que puede aplicar a esa línea de código.
 
 ![Vista previa de bombilla de Visual Studio](../ide/media/quick-actions-options.png)
 
@@ -157,6 +156,6 @@ Para obtener más información sobre las pruebas unitarias en Visual Studio y c�
 
 ## <a name="see-also"></a>Vea también
 
-- [Guía de características del depurador](../debugger/debugger-feature-tour.md)
-- [Más información sobre cómo usar el depurador](../debugger/debugger-feature-tour.md)
+- [Primer vistazo al depurador](../debugger/debugger-feature-tour.md)
+- [Más información sobre cómo usar el depurador](../debugger/index.md)
 - [Generación y corrección del código](../ide/code-generation-in-visual-studio.md)

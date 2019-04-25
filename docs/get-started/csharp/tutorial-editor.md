@@ -3,29 +3,28 @@ title: Introducción a la edición para desarrolladores de C#
 description: En esta introducción al editor de código de Visual Studio de 10 minutos de duración se describen algunas de las formas en que Visual Studio hace que escribir y comprender el código de C# (así como desplazarse por él) sea más fácil.
 ms.custom: seodec18, get-started
 ms.date: 11/20/2018
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: tutorial
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5eda81f5d10a8c7b116d9be690de71017735bf45
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.openlocfilehash: e828d5eaf090aa47e82ed41cf5c6acb9301dd142
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53442086"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323349"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Aprender a usar el editor de código
 
 En esta introducción de 10 minutos al editor de código, se agrega código a un archivo para ver algunas de las formas en que Visual Studio hace que escribir y comprender el código (así como desplazarse por él) sea más fácil.
 
 > [!TIP]
-> Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) para instalarlo de forma gratuita.
+> Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) para instalarlo de forma gratuita.
 
 En este artículo se da por hecho que ya está familiarizado con C#. Si no lo está, le aconsejamos que antes eche un vistazo a un tutorial del tipo [Introducción a C# y ASP.NET Core en Visual Studio](tutorial-aspnet-core.md).
 
@@ -36,9 +35,21 @@ En este artículo se da por hecho que ya está familiarizado con C#. Si no lo es
 
 Empezaremos creando un archivo y agregándole código.
 
-1. Abra Visual Studio y, en el menú **Archivo** de la barra de menús, elija **Nuevo** > **Archivo**.
+::: moniker range="vs-2017"
 
-1. En el cuadro de diálogo **Nuevo archivo**, en la categoría **General**, elija **Clase de Visual C#** y, después, elija **Abrir**.
+1. Abra Visual Studio.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Abra Visual Studio. Presione **Esc** o haga clic en **Continuar sin código** en la ventana de inicio para abrir el entorno de desarrollo.
+
+::: moniker-end
+
+2. En el menú **Archivo** de la barra de menús, elija **Nuevo** > **Archivo**.
+
+3. En el cuadro de diálogo **Nuevo archivo**, en la categoría **General**, elija **Clase de Visual C#** y, después, elija **Abrir**.
 
    Se abre un archivo nuevo en el editor con el esqueleto de una clase de C#. (Observe que no es necesario crear un proyecto de Visual Studio completo para aprovechar algunas de las ventajas que ofrece el editor de código; lo único que se necesita es un archivo de código).
 
@@ -110,7 +121,7 @@ El bloque de código se contrae para mostrar únicamente la primera línea segui
 
 ## <a name="view-symbol-definitions"></a>Ver definiciones de símbolos
 
-Gracias al editor de Visual Studio, es muy sencillo inspeccionar la definición de un tipo, método, etc. Una forma consiste en ir al archivo que contiene la definición, por ejemplo, seleccionando **Ir a definición** en cualquier lugar donde se haga referencia al símbolo. Otra más rápida aún (y que no desplaza el enfoque del archivo en el que está trabajando) es usar [Ver la definición](../../ide/go-to-and-peek-definition.md#peek-definition). Vamos a ver la definición del tipo `string`.
+Gracias al editor de Visual Studio, es muy sencillo inspeccionar la definición de un tipo, método, etc. Una forma consiste en ir al archivo que contiene la definición, por ejemplo, seleccionando **Ir a definición** o presionando **F12** en cualquier lugar donde se haga referencia al símbolo. Otra más rápida aún (y que no desplaza el enfoque del archivo en el que está trabajando) es usar [Ver la definición](../../ide/go-to-and-peek-definition.md#peek-definition). Vamos a ver la definición del tipo `string`.
 
 1. Haga clic con el botón derecho en cualquier instancia de `string` y elija **Ver la definición** en el menú de contenido. O bien, presione **Alt**+**F12**.
 

@@ -1,30 +1,24 @@
 ---
 title: Archivos XSD de ejemplo | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 6a3d0ab6-825e-42fa-8df0-37fbc5da9e73
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 0f2cf35070cc8ec76b128e85bc9219400bbaf3d5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 4cc746e66bc08d980c11a9e582ccc9db23690d59
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49297393"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650844"
 ---
 # <a name="sample-xsd-files"></a>Archivos XSD de muestra
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Los archivos de muestra siguientes se usan en la documentación del Diseñador de esquemas XSD.  
   
 > [!NOTE]
@@ -34,9 +28,6 @@ Los archivos de muestra siguientes se usan en la documentación del Diseñador d
   
 |Tema|Descripción|  
 |-----------|-----------------|  
-|[Archivo XSD de ejemplo: esquema de pedido de compra](../xml-tools/sample-xsd-file-purchase-order-schema.md)|Un documento XSD que contiene un esquema de pedido de compra típico.|  
-|[Ejemplo de archivo XSD: esquema simple](../xml-tools/sample-xsd-file-simple-schema.md)|Un documento XSD que contiene un esquema simple.|  
-|[Archivo XSD de muestra: relaciones](../xml-tools/sample-xsd-file-relationships.md)|Un documento XSD que contiene un esquema con relaciones.|
-
-
-
+|[Archivo XSD de ejemplo: Esquema de pedido de compra](../xml-tools/sample-xsd-file-purchase-order-schema.md)|Un documento XSD que contiene un esquema de pedido de compra típico.|  
+|[Archivo XSD de ejemplo: Esquema simple](../xml-tools/sample-xsd-file-simple-schema.md)|Un documento XSD que contiene un esquema simple.|  
+|[Archivo XSD de ejemplo: Relaciones](../xml-tools/sample-xsd-file-relationships.md)|Un documento XSD que contiene un esquema con relaciones.|

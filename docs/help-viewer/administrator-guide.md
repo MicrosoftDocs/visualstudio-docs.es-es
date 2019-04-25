@@ -1,20 +1,19 @@
 ---
 title: Guía del administrador del Visor de Ayuda
 ms.date: 11/01/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 4340c69f-b96b-4932-bb82-38b16a5ab149
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c58a0907f384c98ae3c1a341bc0e9be2794cdf18
-ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
+ms.openlocfilehash: 21497404d6cdad3f55bffd97fd0329d76418b313
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "54406303"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841581"
 ---
 # <a name="help-viewer-administrator-guide"></a>Guía del administrador del Visor de Ayuda
 
@@ -123,7 +122,7 @@ A continuación, debe empaquetar el contenido para poder implementarlo en los eq
 
 4.  Escriba lo siguiente:
 
-     `Xcopy %ProgramData%\Microsoft\HelpLibrary2 \<*foldername*>\ /y /e /k /o `
+     `Xcopy %ProgramData%\Microsoft\HelpLibrary2 \<*foldername*>\ /y /e /k /o`
 
      Por ejemplo: `Xcopy %ProgramData%\Microsoft\HelpLibrary2 c:\VSHelp\ /y /e /k /o`.
 

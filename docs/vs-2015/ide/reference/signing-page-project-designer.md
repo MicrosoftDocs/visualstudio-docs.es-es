@@ -1,14 +1,9 @@
 ---
 title: Página Firma, Diseñador de proyectos | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vs.AddNewStrongNameKey
 - ResolveKeySource.KeyFileForSignAssemblyNotImported
@@ -24,18 +19,17 @@ ms.assetid: dab3ba13-2f92-4827-92bd-1be3c35bc48b
 caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: e4aa8ee86032c4cadf9cbfa59d3db840102be669
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 01bfaf5ee9143a3122f779ab8292210b90da771f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263950"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650401"
 ---
 # <a name="signing-page-project-designer"></a>Página Firma, Diseñador de proyectos
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Use la página **Firma** del **Diseñador de proyectos** para firmar los manifiestos de aplicación e implementación y también para firmar el ensamblado (firma con nombre seguro).  
   
  Tenga en cuenta que la firma de manifiestos de aplicación e implementación es un proceso distinto al de la firma de un ensamblado, aunque ambas tareas se realicen en la página **Firma**.  
@@ -46,7 +40,7 @@ Use la página **Firma** del **Diseñador de proyectos** para firmar los manifie
   
 ## <a name="application-and-deployment-manifest-signing"></a>Firma de manifiestos de aplicación e implementación  
  Casilla **Firmar los manifiestos de ClickOnce**  
- Active esta casilla para firmar los manifiestos de aplicación e implementación con un par de claves pública y privada. Para más información sobre cómo hacerlo, vea [Cómo: Firmar aplicaciones y manifiestos de implementación](../../ide/how-to-sign-application-and-deployment-manifests.md).  
+ Active esta casilla para firmar los manifiestos de aplicación e implementación con un par de claves pública y privada. Para obtener más información sobre cómo hacerlo, vea [Cómo: Firmar aplicaciones y manifiestos de implementación](../../ide/how-to-sign-application-and-deployment-manifests.md).  
   
  Botón **Seleccionar de almacén**  
  Permite seleccionar un certificado existente desde el almacén de certificados personales del usuario actual. Puede seleccionar uno de estos certificados para firmar los manifiestos de aplicación e implementación.  
@@ -72,9 +66,9 @@ Use la página **Firma** del **Diseñador de proyectos** para firmar los manifie
   
 ## <a name="assembly-signing"></a>Firma de ensamblados  
  Casilla **Firmar el ensamblado**  
- Active esta casilla para firmar el ensamblado y crear un archivo de clave con nombre seguro. Para más información sobre la firma del ensamblado mediante el **Diseñador de proyectos**, vea [Cómo: Firmar un ensamblado (Visual Studio)](http://msdn.microsoft.com/en-us/f468a7d3-234c-4353-924d-8e0ae5896564).  
+ Active esta casilla para firmar el ensamblado y crear un archivo de clave con nombre seguro. Para obtener más información sobre la firma del ensamblado mediante el **Diseñador de proyectos**, vea [Cómo: Firmar un ensamblado (Visual Studio)](http://msdn.microsoft.com/f468a7d3-234c-4353-924d-8e0ae5896564).  
   
- Esta opción usa la herramienta Al.exe proporcionada por [!INCLUDE[winsdklong](../../includes/winsdklong-md.md)] para firmar el ensamblado. Para más información sobre Al.exe, vea [Cómo: Firmar un ensamblado con un nombre seguro](http://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67).  
+ Esta opción usa la herramienta Al.exe proporcionada por [!INCLUDE[winsdklong](../../includes/winsdklong-md.md)] para firmar el ensamblado. Para obtener más información sobre Al.exe, vea [Cómo: Firmar un ensamblado con un nombre seguro](http://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67).  
   
  Lista **Elija un archivo de clave de nombre seguro**  
  Permite especificar un archivo de clave con nombre seguro nuevo o existente para firmar el ensamblado. Seleccione **\<Examinar... >** para seleccionar un archivo de clave existente.  
@@ -97,11 +91,8 @@ Use la página **Firma** del **Diseñador de proyectos** para firmar los manifie
 ## <a name="see-also"></a>Vea también  
  [Referencia de propiedades del proyecto](../../ide/reference/project-properties-reference.md)   
  [Administrar la firma de ensamblados y manifiestos](../../ide/managing-assembly-and-manifest-signing.md)   
- [Firma de nombre seguro para aplicaciones administradas](http://msdn.microsoft.com/en-us/5fef3490-c519-4363-94fd-8b1ad260dab5)   
+ [Firma de nombre seguro para aplicaciones administradas](http://msdn.microsoft.com/5fef3490-c519-4363-94fd-8b1ad260dab5)   
  [Cómo: Firmar aplicaciones y manifiestos de implementación](../../ide/how-to-sign-application-and-deployment-manifests.md)   
- [Cómo: Firmar un ensamblado (Visual Studio)](http://msdn.microsoft.com/en-us/f468a7d3-234c-4353-924d-8e0ae5896564)   
+ [Cómo: Firmar un ensamblado (Visual Studio)](http://msdn.microsoft.com/f468a7d3-234c-4353-924d-8e0ae5896564)   
  [Cómo: Firmar un ensamblado con un nombre seguro](http://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67)   
  [Ensamblados con nombre seguro](http://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)
-
-
-

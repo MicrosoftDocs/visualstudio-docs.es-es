@@ -1,23 +1,20 @@
 ---
 title: Compartir clases entre DSL mediante una biblioteca DSL | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 509bd96b-3e66-47f4-8642-771421d0d0d5
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: ed469b4621205539e3f7a2ce59878bd318ba556f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 1f5b12dce533aa03cf12efd8a6f9fc26ce990e5d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49860041"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073831"
 ---
 # <a name="sharing-classes-between-dsls-by-using-a-dsl-library"></a>Compartir clases entre DSL mediante una biblioteca DSL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,11 +25,11 @@ En el [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] SDK de modelado y visualizaci
   
 #### <a name="to-create-a-dsl-library"></a>Para crear una biblioteca DSL  
   
-1.  Cree un nuevo proyecto DSL y elija la plantilla de solución de la biblioteca DSL.  
+1. Cree un nuevo proyecto DSL y elija la plantilla de solución de la biblioteca DSL.  
   
      Con un modelo vacío, se creará un único proyecto DSL.  
   
-2.  Puede agregar clases de dominio, relaciones, formas y así sucesivamente.  
+2. Puede agregar clases de dominio, relaciones, formas y así sucesivamente.  
   
      Los elementos de la biblioteca no es necesario que formar un único árbol de incrustación.  
   
@@ -40,15 +37,15 @@ En el [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] SDK de modelado y visualizaci
   
      Considere la posibilidad de la **modificador de herencia** de las clases de dominio para `Abstract`.  
   
-3.  Puede agregar elementos que se definen en el Explorador de DSL, por ejemplo, los generadores de conexiones.  
+3. Puede agregar elementos que se definen en el Explorador de DSL, por ejemplo, los generadores de conexiones.  
   
-4.  Puede agregar las personalizaciones que requieren código adicional, como las restricciones de validación.  
+4. Puede agregar las personalizaciones que requieren código adicional, como las restricciones de validación.  
   
-5.  Haga clic en **Transformar todas las plantillas**.  
+5. Haga clic en **Transformar todas las plantillas**.  
   
-6.  Compile el proyecto.  
+6. Compile el proyecto.  
   
-7.  Cuando se distribuye el DSL para otras personas usar, debe proporcionar el ensamblado compilado (DLL) y el archivo `DslDefinition.dsl`. Puede encontrar el ensamblado compilado en una carpeta bajo `Dsl\bin\*`  
+7. Cuando se distribuye el DSL para otras personas usar, debe proporcionar el ensamblado compilado (DLL) y el archivo `DslDefinition.dsl`. Puede encontrar el ensamblado compilado en una carpeta bajo `Dsl\bin\*`  
   
 #### <a name="to-import-a-dsl-library"></a>Para importar una biblioteca DSL  
   
@@ -70,6 +67,3 @@ En el [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] SDK de modelado y visualizaci
   
 ## <a name="see-also"></a>Vea también  
  [Cómo definir lenguajes específicos de dominio](../modeling/how-to-define-a-domain-specific-language.md)
-
-
-

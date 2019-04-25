@@ -1,29 +1,24 @@
 ---
 title: 'Área de prueba 2: Obtener de Control de código fuente | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, getting items from source control
 - source control [Visual Studio SDK], getting items from
 ms.assetid: cbd345c5-ca43-4630-b7a4-85564f4e2090
 caps.latest.revision: 19
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 96b00cfc9965b6006fa51b3cd313566658d604bd
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 069c396ce4cb75c9153082fdbb352b2ba713c8a8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51786163"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052591"
 ---
-# <a name="test-area-2-get-from-source-control"></a>Área de prueba 2: obtener de control de código fuente
+# <a name="test-area-2-get-from-source-control"></a>Área de prueba 2: Obtención desde el control de código fuente
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Esta área de prueba trata los casos de prueba para recuperar los elementos del almacén de versiones mediante el comando Get. Estos casos de prueba se pueden aplicar a ambos local y a los proyectos Web.  
@@ -33,13 +28,13 @@ Esta área de prueba trata los casos de prueba para recuperar los elementos del 
   
 ##### <a name="get-latest-version"></a>Obtener la versión más reciente:  
   
--   **Archivo**, **Control de código fuente**, **obtener última versión**.  
+- **Archivo**, **Control de código fuente**, **obtener última versión**.  
   
--   **Archivo**, **obtener última versión**.  
+- **Archivo**, **obtener última versión**.  
   
--   Menú contextual, **obtener última versión**.  
+- Menú contextual, **obtener última versión**.  
   
--   Get: **archivo**, **Control de código fuente**, **obtener**.  
+- Obtener: **Archivo**, **Control de código fuente**, **obtener**.  
   
 ## <a name="expected-behavior"></a>Comportamiento esperado  
   
@@ -62,4 +57,3 @@ Esta área de prueba trata los casos de prueba para recuperar los elementos del 
   
 ## <a name="see-also"></a>Vea también  
  [Guía de pruebas para los complementos de control de código fuente](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)
-

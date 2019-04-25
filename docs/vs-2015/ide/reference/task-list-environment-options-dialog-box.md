@@ -1,14 +1,9 @@
 ---
 title: Cuadro de diálogo Lista de tareas, Entorno, Opciones | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.Task_List
 - VS.ToolsOptionsPag.Environment.Task_List
@@ -28,18 +23,17 @@ ms.assetid: 88327e04-fa3e-48db-995b-ad89e0dc4ed2
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 17404838fc567d37f23c683f6b8f83b7529a3dc8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e4010d474c2f1ab1997b372fa551e168fe618021
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49252544"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651661"
 ---
 # <a name="task-list-environment-options-dialog-box"></a>Lista de tareas, Entorno, Opciones (Cuadro de diálogo)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Esta página Opciones permite agregar, eliminar y cambiar los tokens de comentarios que generan los avisos de **Lista de tareas**. Para mostrar estas opciones, seleccione **Opciones** en el menú **Herramientas**, expanda la carpeta **Entorno** y elija **Lista de tareas**.  
   
 ## <a name="task-list-options"></a>Opciones de lista de tareas  
@@ -67,7 +61,7 @@ Esta página Opciones permite agregar, eliminar y cambiar los tokens de comentar
  nombre  
  Escriba la cadena de token. Esto habilita el botón **Agregar**. En **Agregar**, esta cadena está incluida en la **Lista de tokens** y los comentarios que comienzan por este nombre se mostrarán en la **Lista de tareas**.  
   
- Add  
+ Agregar  
  Se habilita al escribir un nuevo **Nombre**. Haga clic para agregar una nueva cadena de tokens utilizando los valores especificados en los campos **Nombre** y **Prioridad**.  
   
  Eliminar  
@@ -83,6 +77,3 @@ Esta página Opciones permite agregar, eliminar y cambiar los tokens de comentar
  [Usar la Lista de tareas](../../ide/using-the-task-list.md)   
  [Establecer marcadores en el código](../../ide/setting-bookmarks-in-code.md)   
  [Opciones de entorno (Cuadro de diálogo)](../../ide/reference/environment-options-dialog-box.md)
-
-
-

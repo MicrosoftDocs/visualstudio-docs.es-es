@@ -1,14 +1,9 @@
 ---
 title: Reemplazar en archivos | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.findreplace.replaceinfiles
 - vs.replaceinfiles
@@ -20,29 +15,29 @@ ms.assetid: ca361466-53bd-44db-a28a-3a74bc03b028
 caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 92029377d5e7d4faf4c6b7f38deda1eecdeaa395
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 6d4199b0f1daad60ea7fdcdf6405ae232a70d5b3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228831"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082599"
 ---
 # <a name="replace-in-files"></a>Reemplazar en archivos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Reemplazar en archivos ** le permite buscar el código de un conjunto especificado de archivos para una cadena o expresión y cambiar algunas o todas las coincidencias encontradas. Las coincidencias encontradas y las acciones realizadas se muestran en la ventana **Resultados de la búsqueda** seleccionada en **Opciones de resultados**.  
+Reemplazar en archivos** permite buscar el código de un conjunto de archivos especificado para una cadena o expresión, y cambiar algunas o todas las coincidencias que se detectan. Las coincidencias encontradas y las acciones realizadas se muestran en la ventana **Resultados de la búsqueda** seleccionada en **Opciones de resultados**.  
   
 > [!NOTE]
->  Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija Importar y exportar configuraciones en el menú Herramientas. Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija Importar y exportar configuraciones en el menú Herramientas. Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Puede usar cualquiera de los métodos siguientes para mostrar **Reemplazar en archivos** en la ventana **Buscar y reemplazar**.  
   
 ### <a name="to-display-replace-in-files"></a>Para mostrar Reemplazar en archivos  
   
-1.  En el menú **Edición**, expanda **Buscar y reemplazar**.  
+1. En el menú **Edición**, expanda **Buscar y reemplazar**.  
   
-2.  Pulse **Reemplazar en archivos**.  
+2. Pulse **Reemplazar en archivos**.  
   
      o  
   
@@ -66,7 +61,7 @@ Reemplazar en archivos ** le permite buscar el código de un conjunto especifica
  Coincidir mayúsculas y minúsculas  
  Cuando está seleccionada, las ventanas **Resultados de búsqueda** solo mostrarán instancias de la cadena **Buscar** que coinciden en contenido y en mayúsculas y minúsculas. Por ejemplo, una búsqueda de "MiObjeto" con la opción **Coincidir mayúsculas y minúsculas** seleccionada, devolverá "MiObjeto" pero no "miobjeto" o "MIOBJETO".  
   
- Solo palabras completas  
+  Solo palabras completas  
  Cuando está seleccionada, las ventanas **Resultados de búsqueda** solo mostrarán instancias de la cadena **Buscar** que coinciden en palabras completas. Por ejemplo, una búsqueda de "MiObjeto" devolverá "MiObjeto" pero no "CMiObjeto" o "MiObjetoC".  
   
  Usar expresiones regulares  
@@ -99,6 +94,3 @@ Reemplazar en archivos ** le permite buscar el código de un conjunto especifica
  [Buscar y reemplazar texto](../ide/finding-and-replacing-text.md)   
  [Buscar en archivos](../ide/find-in-files.md)   
  [Comandos de Visual Studio](../ide/reference/visual-studio-commands.md)
-
-
-

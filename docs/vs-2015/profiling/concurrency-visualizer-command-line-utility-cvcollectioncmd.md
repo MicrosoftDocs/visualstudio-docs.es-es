@@ -1,27 +1,22 @@
 ---
 title: Utilidad de la línea de comandos Visualizador de simultaneidad (CVCollectionCmd) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.performance.cvcollectioncmd
 ms.assetid: 476601be-1608-4014-af15-5aba6ccbed1c
 caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ee6ba9335cee43a36750dfcdf46faed16c56db4e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: d7d37db61f49db19d952cf5b45699b604a91e090
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51790998"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54752918"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Utilidad de línea de comandos Visualizador de simultaneidad (CVCollectionCmd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,7 +76,7 @@ Se puede usar la utilidad de la línea de comandos (CVCollectionCmd.exe) del Vis
 |MarkerProvider|Especifica un proveedor de marcadores único.|Debe contener estos elementos:<br /><br /> -   Level<br />-   GUID<br />-   Name<br /><br /> Puede contener estos elementos:<br /><br /> -   Categories<br />-   IsEnabled|  
 |Nivel|Establece el nivel de importancia de un MarkerProvider.|-   Low<br />-   Normal<br />-   High<br />-   Critical<br />-   Everything|  
 |GUID|Identificador único global del proveedor de marcadores ETW.|Un GUID.|  
-|Nombre|Especifica la descripción del proveedor de marcadores.|Una cadena.|  
+|nombre|Especifica la descripción del proveedor de marcadores.|Una cadena.|  
 |Categorías|Especifica las categorías recopiladas por el proveedor de marcadores.|Cadena delimitada por comas de números o intervalos de números.|  
 |IsEnabled|Establece un valor que determina si el proveedor de marcadores está habilitado para la recolección.|-   True<br />-   False|  
 |FilterConfig|Especifica la lista de opciones de configuración de los eventos ETW que se filtran de la recolección.|Puede contener estos elementos:<br /><br /> -   CollectClrEvents<br />-   ClrCollectionOptions<br />-   CollectSampleEvents<br />-   CollectGpuEvents<br />-   CollectFileIO|  
@@ -158,6 +153,3 @@ Se puede usar la utilidad de la línea de comandos (CVCollectionCmd.exe) del Vis
 </LocalConfig>  
   
 ```
-
-
-

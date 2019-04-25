@@ -4,16 +4,16 @@ ms.date: 01/26/2018
 ms.topic: conceptual
 author: PooyaZv
 ms.author: pozandev
-manager: douge
+manager: jillfra
 ms.workload: multiple
-ms.openlocfilehash: 1bd09827899000e4f3d1f65fae27da969bcbc107
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 00266fd8fbc881707652247e08b093ca4b15a88d
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53887716"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324349"
 ---
-# <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>Procedimiento Diagnosticar retrasos de la interfaz de usuario causados por las extensiones
+# <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>Filtrar Diagnosticar retrasos de la interfaz de usuario causados por las extensiones
 
 Cuando la interfaz de usuario deja de responder, Visual Studio examina la pila de llamadas del subproceso de interfaz de usuario, comenzando por la hoja y dirigiéndose a la base. Si Visual Studio determina que un marco de pila de llamadas pertenece a un módulo que forma parte de una extensión habilitada e instalada, muestra una notificación.
 
@@ -21,7 +21,7 @@ Cuando la interfaz de usuario deja de responder, Visual Studio examina la pila d
 
 La notificación informa al usuario que el retraso de la interfaz de usuario (es decir, en la falta de respuesta en la interfaz de usuario) podría haber sido el resultado del código de una extensión. También proporciona al usuario con opciones para deshabilitar la extensión o las notificaciones futuras de esa extensión.
 
-Este documento describe cómo puede diagnosticar qué en el código de extensión está causando las notificaciones de retraso de la interfaz de usuario. 
+Este documento describe cómo puede diagnosticar qué en el código de extensión está causando las notificaciones de retraso de la interfaz de usuario.
 
 > [!NOTE]
 > No use la instancia experimental de Visual Studio para diagnosticar retrasos de la interfaz de usuario. Algunas partes de los análisis de la pila de llamadas necesarios para las notificaciones de retraso de la interfaz de usuario se desactivan cuando se usa la instancia experimental, lo que significa que no se muestren las notificaciones de retraso de la interfaz de usuario.
@@ -43,7 +43,7 @@ Para diagnosticar un retraso de la interfaz de usuario, primero debe identificar
 
 ## <a name="restart-vs-with-activity-logging-on"></a>Reinicie VS con la actividad de inicio de sesión
 
-Visual Studio puede generar un "registro de actividad" que proporciona información útil al depurar un problema. Para activar la actividad de registro en Visual Studio, inicie Visual Studio con el `/log` opción de línea de comandos. Cuando se inicia Visual Studio, el registro de actividad se almacena en la siguiente ubicación:
+Visual Studio puede generar un "registro de actividad" que proporciona información útil al depurar un problema. Para activar la actividad de registro en Visual Studio, abra Visual Studio con el `/log` opción de línea de comandos. Cuando se inicia Visual Studio, el registro de actividad se almacena en la siguiente ubicación:
 
 ```DOS
 %APPDATA%\Microsoft\VisualStudio\<vs_instance_id>\ActivityLog.xml
@@ -102,7 +102,7 @@ A continuación, abra el archivo de seguimiento. Para ello, ya sea mediante la m
 A continuación, seleccione el archivo de seguimiento en el panel izquierdo y ábrala eligiendo **abrir** en el menú contextual.
 
 > [!NOTE]
-> De forma predeterminada PerfView da como resultado un archivo Zip. Al abrir *trace.zip*, descomprime el archivo automáticamente y se abre el seguimiento. Puede omitir esto desactivando el **Zip** cuadro durante la recolección de seguimiento. Sin embargo, si va a transferir y utilizar seguimientos en las distintas máquinas, se recomienda desactivar la **Zip** cuadro. Sin esta opción, los archivos PDB necesarios para los ensamblados Ngen no se adjuntará a la traza y, por tanto, no se resolverán símbolos de los ensamblados Ngen en el equipo de destino. (Consulte [esta entrada de blog](https://blogs.msdn.microsoft.com/devops/2012/12/10/creating-ngen-pdbs-for-profiling-reports/) para obtener más información sobre los archivos PDB para ensamblados Ngen.) 
+> De forma predeterminada PerfView da como resultado un archivo Zip. Al abrir *trace.zip*, descomprime el archivo automáticamente y se abre el seguimiento. Puede omitir esto desactivando el **Zip** cuadro durante la recolección de seguimiento. Sin embargo, si va a transferir y utilizar seguimientos en las distintas máquinas, se recomienda desactivar la **Zip** cuadro. Sin esta opción, los archivos PDB necesarios para los ensamblados Ngen no se adjuntará a la traza y, por tanto, no se resolverán símbolos de los ensamblados Ngen en el equipo de destino. (Consulte [esta entrada de blog](https://devblogs.microsoft.com/devops/creating-ngen-pdbs-for-profiling-reports/) para obtener más información sobre los archivos PDB para ensamblados Ngen.)
 
 Puede tardar varios minutos en PerfView procesar y abrir el seguimiento. Una vez que el seguimiento está abierto, aparecerá una lista de diversas "vistas" debajo de él.
 

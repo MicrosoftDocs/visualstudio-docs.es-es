@@ -15,24 +15,23 @@ helpviewer_keywords:
 ms.assetid: 87399e20-5510-41e4-b5b7-4a87c5773f21
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 86d7512101adf58f13a07481910ab1c28251b8da
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 7c70b58577f8aa6e391215658afb7f8fa43c9bb5
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53885256"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666759"
 ---
 # <a name="deploy-prerequisites-for-64-bit-applications"></a>Implementación de requisitos previos de aplicaciones de 64 bits
-La implementación de ClickOnce admite la instalación de aplicaciones en plataformas de 64 bits. Las plataformas de destino son **x86** para plataformas de 32 bits, **x64** para máquinas que admiten los conjuntos de instrucciones de AMD64 y EM64T, e **Itanium** para el procesador Itanium de 64 bits.  
+La implementación de ClickOnce admite la instalación de aplicaciones en plataformas de 64 bits. Las plataformas de destino son **x86** para plataformas de 32 bits, **x64** para máquinas que admiten los conjuntos de instrucciones de AMD64 y EM64T, e **Itanium** para el procesador Itanium de 64 bits.
 
-## <a name="prerequisites"></a>Requisitos previos  
- En la tabla siguiente se enumeran los redistribuibles que puede usar como requisitos previos para la instalación de su aplicación de 64 bits.  
+## <a name="prerequisites"></a>Requisitos previos
+ En la tabla siguiente se enumeran los redistribuibles que puede usar como requisitos previos para la instalación de su aplicación de 64 bits.
 
- Si selecciona un requisito previo que no tiene componentes de 64 bits, podría ver una advertencia que indica que los paquetes seleccionados no están disponibles para la plataforma de 64 bits.  
-
+ Si selecciona un requisito previo que no tiene componentes de 64 bits, podría ver una advertencia que indica que los paquetes seleccionados no están disponibles para la plataforma de 64 bits.
 
 | Redistribuible | Compatibilidad con x64 | Compatibilidad con IA64 |
 | - |-------------|--------------|
@@ -42,7 +41,7 @@ La implementación de ClickOnce admite la instalación de aplicaciones en plataf
 | Microsoft .NET Framework 4 (x86 y x64) | Sí | |
 | Microsoft .NET Framework 4 Client Profile (x86 y x64) | Sí | |
 
-## <a name="see-also"></a>Vea también  
- [Implementar aplicaciones, servicios y componentes](../deployment/deploying-applications-services-and-components.md)   
- [Cómo: Requisitos previos de instalación con una aplicación ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
- [Aplicaciones de 64 bits](/dotnet/framework/64-bit-apps)
+## <a name="see-also"></a>Vea también
+- [Implementar aplicaciones, servicios y componentes](../deployment/deploying-applications-services-and-components.md)
+- [Cómo: Instalar requisitos previos mediante una aplicación ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
+- [Aplicaciones de 64 bits](/dotnet/framework/64-bit-apps)

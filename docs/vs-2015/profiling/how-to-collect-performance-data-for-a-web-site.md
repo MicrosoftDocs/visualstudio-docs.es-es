@@ -1,14 +1,9 @@
 ---
-title: Recopilación de datos de rendimiento de un sitio web | Microsoft Docs
-ms.custom: ''
+title: Procedimiento para recopilar datos de rendimiento de un sitio web | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vsperf.url.url
 - vsperf.chooseurl
@@ -23,18 +18,18 @@ ms.assetid: a62d27fd-a966-4065-bebe-6874195a71fb
 caps.latest.revision: 38
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 646d5a59dee68123e478da074901c9d6f98c2763
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4391f4cf989b51a49b874e6eccdcceb28f609003
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51783914"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060559"
 ---
-# <a name="how-to-collect-performance-data-for-a-web-site"></a>Cómo recopilar datos de rendimiento de un sitio web
+# <a name="how-to-collect-performance-data-for-a-web-site"></a>Procedimiento Recopilar datos de rendimiento para un sitio Web
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Puede usar el **Asistente de rendimiento** para recopilar datos de rendimiento de una aplicación web de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Puede generar perfiles de una aplicación web que esté abierta en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] o de un sitio web de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] que se encuentre en su equipo local y que no esté abierto en el IDE de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+Puede usar el **Asistente de rendimiento** para recopilar datos de rendimiento de una aplicación web de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] . Puede generar perfiles de una aplicación web que esté abierta en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] o de un sitio web de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] que se encuentre en su equipo local y que no esté abierto en el IDE de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 > [!NOTE]
 >  Con el **Asistente de rendimiento** puede agregar datos de generación de perfiles de interacción de capa (TIP), datos de rendimiento de JScript o ambos tipos de datos a los datos de generación de perfiles recopilados. La opción TIP recopila datos de los procesos del servidor. La generación de perfiles de JScript recopila datos de los scripts que se ejecutan en un sitio web local o remoto. En la mayoría de los casos, debe elegir solo una de las opciones.  
@@ -51,27 +46,27 @@ Puede usar el **Asistente de rendimiento** para recopilar datos de rendimiento d
   
 ### <a name="to-profile-a-web-site-project"></a>Para generar perfiles de un proyecto de sitio web  
   
-1.  Abra el proyecto web de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] en [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] o [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)].  
+1. Abra el proyecto web de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] en [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] o [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)].  
   
-2.  En el menú **Analizar** , haga clic en **Iniciar Asistente de rendimiento**.  
+2. En el menú **Analizar** , haga clic en **Iniciar Asistente de rendimiento**.  
   
-3.  En la primera página del asistente, seleccione un método de generación de perfiles y haga clic en **Siguiente**. Para obtener más información sobre los métodos de generación de perfiles, vea [Introducción a los métodos de generación de perfiles](../profiling/understanding-performance-collection-methods.md). Tenga en cuenta que el método de generación de perfiles del visualizador de simultaneidad no está disponible para las aplicaciones web.  
+3. En la primera página del asistente, seleccione un método de generación de perfiles y haga clic en **Siguiente**. Para obtener más información sobre los métodos de generación de perfiles, vea [Introducción a los métodos de generación de perfiles](../profiling/understanding-performance-collection-methods.md). Tenga en cuenta que el método de generación de perfiles del visualizador de simultaneidad no está disponible para las aplicaciones web.  
   
-4.  En la lista desplegable **¿Para qué aplicación desea generar perfiles?** , asegúrese de que el proyecto actual está seleccionado y haga clic en **Siguiente**.  
+4. En la lista desplegable **¿Para qué aplicación desea generar perfiles?** , asegúrese de que el proyecto actual está seleccionado y haga clic en **Siguiente**.  
   
-5.  En la tercera página del asistente puede agregar datos de generación de perfiles de interacción de capa (TIP), datos del JavaScript que se ejecuta en las páginas web o ambos tipos de datos.  
+5. En la tercera página del asistente puede agregar datos de generación de perfiles de interacción de capa (TIP), datos del JavaScript que se ejecuta en las páginas web o ambos tipos de datos.  
   
-    -   Para recopilar la interacción de capa, active la casilla **Habilitar generación de perfiles de interacción de capa** .  
+    - Para recopilar la interacción de capa, active la casilla **Habilitar generación de perfiles de interacción de capa** .  
   
-    -   Para recopilar datos del JavaScript que se ejecuta en las páginas web, active la casilla **Generar perfiles de JavaScript** .  
+    - Para recopilar datos del JavaScript que se ejecuta en las páginas web, active la casilla **Generar perfiles de JavaScript** .  
   
-6.  Haga clic en **Siguiente**.  
+6. Haga clic en **Siguiente**.  
   
-7.  En la cuarta página del asistente, haga clic en **Finalizar**.  
+7. En la cuarta página del asistente, haga clic en **Finalizar**.  
   
-8.  Se creará una sesión de rendimiento para la aplicación de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] y el sitio web se abrirá en el explorador. Ejecute la funcionalidad de la que quiere generar perfiles y, luego, cierre el explorador.  
+8. Se creará una sesión de rendimiento para la aplicación de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] y el sitio web se abrirá en el explorador. Ejecute la funcionalidad de la que quiere generar perfiles y, luego, cierre el explorador.  
   
-     El generador de perfiles genera el archivo de datos y muestra la vista de resumen de los datos en la ventana principal de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+     El generador de perfiles genera el archivo de datos y muestra la vista de resumen de los datos en la ventana principal de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
 ### <a name="to-profile-a-web-site-without-opening-a-project-in-visual-studio"></a>Para generar perfiles de un sitio web sin tener que abrir un proyecto en Visual Studio  
   
@@ -89,15 +84,15 @@ Puede usar el **Asistente de rendimiento** para recopilar datos de rendimiento d
   
    - Para un sitio web basado en un archivo, escriba una ruta de acceso como ///**c:\WebSites\MySite\default.aspx**. Esto hace que se genere un perfil de la aplicación de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] ubicada en c:\webSites\MySite y que la página http://localhost:nnnn/MySite/default.aspx se inicie en Internet Explorer para iniciar la sesión.  
   
-   - Para los sitios externos en los que quiera recopilar datos de JavaScript, escriba la dirección URL (por ejemplo, http://www.contoso.com).  
+   - Para los sitios externos que desea recopilar datos de JavaScript, escriba la dirección URL, por ejemplo, http:\//www.contoso.com.  
   
      Para obtener más información, consulte las páginas de propiedades de un binario de destino de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] .  
   
 6. En la tercera página del asistente puede agregar datos de generación de perfiles de interacción de capa (TIP), datos del JavaScript que se ejecuta en las páginas web o ambos tipos de datos.  
   
-   -   Para recopilar la interacción de capa, active la casilla **Habilitar generación de perfiles de interacción de capa** .  
+   - Para recopilar la interacción de capa, active la casilla **Habilitar generación de perfiles de interacción de capa** .  
   
-   -   Para recopilar datos del JavaScript que se ejecuta en las páginas web, active la casilla **Generar perfiles de JavaScript** .  
+   - Para recopilar datos del JavaScript que se ejecuta en las páginas web, active la casilla **Generar perfiles de JavaScript** .  
   
 7. Haga clic en **Siguiente**.  
   
@@ -112,6 +107,3 @@ Puede usar el **Asistente de rendimiento** para recopilar datos de rendimiento d
  [Configurar sesiones de rendimiento](../profiling/configuring-performance-sessions.md)   
  [Introducción a los valores de datos de instrumentación en las herramientas de generación de perfiles](../profiling/understanding-instrumentation-data-values.md)   
  [Introducción a los valores de datos de muestreo](../profiling/understanding-sampling-data-values.md)
-
-
-

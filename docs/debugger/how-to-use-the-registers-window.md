@@ -21,19 +21,19 @@ helpviewer_keywords:
 ms.assetid: 2918ffa2-562f-40d6-9053-ef321bbeb767
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8622bb1288324429ad346834930559d1435ac6d5
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
-ms.translationtype: MTE95
+ms.openlocfilehash: afcada407060af2072e3cf1c30e86153762890b5
+ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53867584"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59584394"
 ---
 # <a name="view-register-values-in-the-registers-window-c-c-visual-basic-f"></a>Ver los valores de registro en la ventana registros (C#, C++, Visual Basic, F#)
 
-El **registra** ventana muestra el contenido del registro durante la depuración de Visual Studio. Para obtener una introducción de alto nivel conceptos relacionados con los registros y la **registra** ventana, consulte [Fundamentos de la depuración: Ventana Registros
+El **registra** ventana muestra el contenido del registro durante la depuración de Visual Studio. Para obtener una introducción de alto nivel conceptos relacionados con los registros y la **registra** ventana, consulte [Fundamentos de la depuración: Ventana registros](../debugger/debugging-basics-registers-window.md).
 
 > [!NOTE]
 > Información de registro no está disponible para la secuencia de comandos o las aplicaciones SQL.
@@ -41,6 +41,8 @@ El **registra** ventana muestra el contenido del registro durante la depuración
 Durante la depuración, registrar el cambio de valores mientras se ejecuta código en la aplicación. Los valores que han cambiado recientemente aparecen en rojo en el **registra** ventana.
 
 Por motivos de claridad, la ventana **Registros** organiza los registros en grupos que varían según la plataforma y el tipo de procesador. Puede mostrar u ocultar grupos de registros. Para obtener más información, vea [Cómo: mostrar y ocultar grupos de registros](../debugger/how-to-display-and-hide-register-groups.md).
+
+Para obtener información sobre las marcas que ve en el **registra** ventana, consulte [registra la ventana](../debugger/debugging-basics-registers-window.md)
 
 Se pueden modificar los valores de los registros. Para obtener más información, vea [Cómo: editar un valor de registro](../debugger/how-to-edit-a-register-value.md).
 

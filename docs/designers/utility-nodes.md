@@ -1,20 +1,19 @@
 ---
 title: Nodos de utilidad
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 ms.assetid: ff732221-b731-424c-ad5b-82ef5f21dff5
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d6bab6f3ce689903003b055e89389bb73e48b7c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f136327716d07ea76771b49d95e6d79f8ac3d1a8
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53883112"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55911928"
 ---
 # <a name="utility-nodes"></a>Nodos de utilidad
 

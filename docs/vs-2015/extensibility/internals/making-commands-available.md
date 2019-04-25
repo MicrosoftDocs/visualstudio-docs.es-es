@@ -1,14 +1,9 @@
 ---
 title: Disposición de comandos | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - menus [Visual Studio SDK], commands
 - best practices, menu and toolbar commands
@@ -17,22 +12,22 @@ helpviewer_keywords:
 ms.assetid: 3ffc4312-c6db-4759-a946-a4bb85f4a17a
 caps.latest.revision: 36
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 00ed8231641718b6d0dce8d535b0c43e40b83dd8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 78561db4bbf9517cc3fbcd5d9ac6ca36fcafbe05
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51783043"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071231"
 ---
 # <a name="making-commands-available"></a>Puesta a disposición de comandos
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Cuando se agregan varios VSPackages a Visual Studio, la interfaz de usuario (UI) puede convertirse en demasiado repleto con comandos. Puede programar el paquete para ayudar a reducir este problema, como sigue:  
   
--   El paquete de programa para que se cargue solo cuando un usuario lo requiere.  
+- El paquete de programa para que se cargue solo cuando un usuario lo requiere.  
   
--   El paquete del programa para que sus comandos se muestran únicamente cuando que pueden ser necesario en el contexto del estado actual del entorno de desarrollo integrado (IDE).  
+- El paquete del programa para que sus comandos se muestran únicamente cuando que pueden ser necesario en el contexto del estado actual del entorno de desarrollo integrado (IDE).  
   
 ## <a name="delayed-loading"></a>Carga retrasada  
  La forma habitual para habilitar la carga retrasada es diseñar el VSPackage para que sus comandos se muestran en la interfaz de usuario, pero el propio paquete no se cargará hasta que un usuario hace clic en uno de los comandos. Para ello, en el archivo .vsct, cree los comandos que no tengan ninguna marca de comando.  
@@ -99,11 +94,11 @@ Cuando se agregan varios VSPackages a Visual Studio, la interfaz de usuario (UI)
 ### <a name="custom-context-guids"></a>GUID de contexto personalizado  
  Si un contexto de comando adecuado que GUID ya no está definido, puede definir uno en el paquete de VS y, a continuación, programa que esté activo o inactivo según sea necesario para controlar la visibilidad de los comandos. Use el <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> servicio:  
   
--   Registrar identificadores GUID de contexto (mediante una llamada a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCmdUIContextCookie%2A> método).  
+- Registrar identificadores GUID de contexto (mediante una llamada a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCmdUIContextCookie%2A> método).  
   
--   Obtener el estado de un contexto `GUID` (mediante una llamada a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> método).  
+- Obtener el estado de un contexto `GUID` (mediante una llamada a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> método).  
   
--   Activar contexto `GUID`s activar y desactivar (mediante una llamada a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.SetCmdUIContext%2A> método).  
+- Activar contexto `GUID`s activar y desactivar (mediante una llamada a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.SetCmdUIContext%2A> método).  
   
     > [!CAUTION]
     >  Asegúrese de que el VSPackage no afecta el estado de los GUID de contexto existente de porque otros VSPackages que dependen de ellos.  
@@ -156,4 +151,3 @@ Cuando se agregan varios VSPackages a Visual Studio, la interfaz de usuario (UI)
  [Cómo VSPackages agregar elementos de la interfaz de usuario](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [Enrutamiento de comandos en VSPackages](../../extensibility/internals/command-routing-in-vspackages.md)   
  [Adición dinámica de elementos de menú](../../extensibility/dynamically-adding-menu-items.md)
-

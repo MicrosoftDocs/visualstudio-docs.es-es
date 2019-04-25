@@ -1,22 +1,21 @@
 ---
 title: Instalación de ayuda sin conexión
 ms.date: 11/01/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - installing Help Viewer
 - Help Viewer, installing
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e806efad72578ecfbeecfdb55af1e8d48e75e77
-ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
+ms.openlocfilehash: d61b101b4abf3829eed824ddf434af976cd4b276
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "54406063"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789684"
 ---
 # <a name="microsoft-help-viewer-installation"></a>Instalación del Visor de Ayuda de Microsoft
 
@@ -32,21 +31,17 @@ El Visor de Ayuda es un componente de instalación opcional de Visual Studio. Pa
 
 1. Haga clic en el botón **Modificar** para iniciar la instalación del Visor de Ayuda de Microsoft.
 
-Otra manera de instalar fácilmente el Visor de Ayuda de Microsoft es a través del cuadro **Inicio rápido**:
+Otra manera de instalar fácilmente el Visor de Ayuda de Microsoft es a través del cuadro de búsqueda:
 
-1. Escriba **visor de ayuda** en el cuadro **Inicio rápido** en la barra de título de Visual Studio.
+1. Presione **Ctrl**+**Q** y, luego, escriba o especifique **Visor de Ayuda** en el cuadro de búsqueda.
 
-   ![Cuadro Inicio rápido](media/installation/quick-launch.png)
+   ![Cuadro de búsqueda](media/installation/quick-launch.png)
 
 1. Elija el resultado denominado **Visor de Ayuda (componente individual)**.
 
 1. En el cuadro de diálogo que aparece, haga clic en el botón **Instalar**.
 
    ![Botón Instalar](media/installation/install.png)
-
-| | |
-|---------|---------|
-| ![icono de cámara de película para vídeo](../install/media/video-icon.png) | [Vea un vídeo](https://mva.microsoft.com/en-us/training-courses/getting-started-with-visual-studio-2017-17798?l=ZMfaVID6D_7411787171) sobre cómo instalar el Visor de Ayuda de Microsoft con el Instalador de Visual Studio. |
 
 ## <a name="see-also"></a>Vea también
 

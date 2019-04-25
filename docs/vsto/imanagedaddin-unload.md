@@ -7,33 +7,33 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - Unload method
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4aa3c07ed715a6118bd053d44503607a889f3da7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 296502aa461688c34152d86ee21aab5f2c83ecb4
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53880905"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56640498"
 ---
 # <a name="imanagedaddinunload"></a>IManagedAddin::Unload
-  Se llama a este elemento justo antes de descargar un complemento VSTO administrado.  
-  
-## <a name="syntax"></a>Sintaxis  
-  
+  Se llama a este elemento justo antes de descargar un complemento VSTO administrado.
+
+## <a name="syntax"></a>Sintaxis
+
 ```csharp
-HRESULT Unload();  
-```  
-  
-## <a name="return-value"></a>Valor devuelto  
- Un valor HRESULT que indica si el método se ha completado correctamente.  
-  
-## <a name="remarks"></a>Comentarios  
- No se llama a este método con las versiones actuales de Microsoft Office. Este método está reservado para un uso futuro.  
-  
-## <a name="see-also"></a>Vea también  
- [Interfaz IManagedAddin](../vsto/imanagedaddin-interface.md)   
- [IManagedAddin::Load](../vsto/imanagedaddin-load.md)  
+HRESULT Unload();
+```
+
+## <a name="return-value"></a>Valor devuelto
+ Un valor HRESULT que indica si el método se ha completado correctamente.
+
+## <a name="remarks"></a>Comentarios
+ No se llama a este método con las versiones actuales de Microsoft Office. Este método está reservado para un uso futuro.
+
+## <a name="see-also"></a>Vea también
+- [Interfaz IManagedAddin](../vsto/imanagedaddin-interface.md)
+- [IManagedAddin::Load](../vsto/imanagedaddin-load.md)

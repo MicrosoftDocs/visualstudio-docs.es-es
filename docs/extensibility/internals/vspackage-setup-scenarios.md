@@ -6,15 +6,15 @@ helpviewer_keywords:
 - VSPackages, deployment considerations
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6bacb7a8226ac9f82987eede32b9df18a103270a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7a8c8d0501222616ad97b745ce69e102ebd54835
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53932949"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56613332"
 ---
 # <a name="vspackage-setup-scenarios"></a>Escenarios de instalación de VSPackage
 
@@ -78,5 +78,5 @@ Para obtener más información sobre la implementación de ensamblados en parale
 
 ## <a name="see-also"></a>Vea también
 
-[Windows Installer](/windows/desktop/Msi/windows-installer-portal)  
-[Compatibilidad con varias versiones de Visual Studio](../../extensibility/supporting-multiple-versions-of-visual-studio.md)
+- [Windows Installer](/windows/desktop/Msi/windows-installer-portal)
+- [Compatibilidad con varias versiones de Visual Studio](../../extensibility/supporting-multiple-versions-of-visual-studio.md)

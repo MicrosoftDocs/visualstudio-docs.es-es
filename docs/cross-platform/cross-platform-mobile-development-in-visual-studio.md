@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c040d0375a8ecb2872e148331166ecae45040cf
-ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.openlocfilehash: 2144ebd4725532d3dbbf4685f6629cbbbdd7c73e
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54154055"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58069689"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Desarrollo móvil multiplataforma en Visual Studio
 
@@ -38,7 +38,7 @@ Con Visual Studio Tools para Xamarin, puede tener como destino Android, iOS y Wi
 |[Documentación de desarrollo de aplicaciones móviles de Xamarin](/xamarin/) |
 |[DevOps con aplicaciones de Xamarin](/xamarin/tools/ci/devops/) |
 |[Obtener información acerca de las aplicaciones de Windows universales en Visual Studio](https://visualstudio.microsoft.com/vs/universal-windows-platform/) (VisualStudio.com)|
-|[Obtener información acerca de las similitudes entre Swift y C#](http://aka.ms/scposter) (download.microsoft.com)|
+|[Obtener información acerca de las similitudes entre Swift y C#](https://aka.ms/scposter) (download.microsoft.com)|
 
 ###  <a name="AndroidHTML"></a> Tener como destino Android, iOS y Windows desde una sola base de código
 
@@ -96,7 +96,7 @@ Con Visual Studio Tools para Xamarin, puede tener como destino Android, iOS y Wi
 
  ![Aplicaciones híbridas multidispositivo con JavaScript](../cross-platform/media/multidevicehybridapps.png "Multi-device hybrid apps with Javascript")
 
- Para empezar, instale Visual Studio 2017 y elija la característica **Desarrollo para dispositivos móviles con JavaScript** durante la instalación. Las herramientas de Cordova instalan automáticamente todo el software de terceros necesario para compilar una aplicación multiplataforma.
+ Para empezar, instale Visual Studio y elija la característica **Desarrollo para dispositivos móviles con JavaScript** durante la instalación. Las herramientas de Cordova instalan automáticamente todo el software de terceros necesario para compilar una aplicación multiplataforma.
 
  Después de instalar la extensión, abra Visual Studio y cree un proyecto **Aplicación vacía (Apache Cordova)** . Después, desarrolle la aplicación usando JavaScript o TypeScript. También puede agregar complementos para ampliar la funcionalidad de la aplicación; a medida que escriba código, aparecerán las API de los complementos en IntelliSense.
 
@@ -158,7 +158,7 @@ Con Visual Studio Tools para Xamarin, puede tener como destino Android, iOS y Wi
 |[Obtener información acerca de la compilación de juegos Unity con Visual Studio](https://visualstudio.microsoft.com/vs/features/game-development/#tab-4b0d0be8de5f65564ad)|
 |[Más información sobre Visual Studio Tools para Unity](../cross-platform/visual-studio-tools-for-unity.md) |
 |[Empezar a usar Visual Studio Tools para Unity](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md) |
-|[Obtener más información acerca de las mejoras más recientes de Visual Studio Tools para Unity 2.0 Preview](https://blogs.msdn.microsoft.com/visualstudio/2014/12/03/visual-studio-tools-for-unity-2-0-preview/) (blog de Visual Studio)|
+|[Obtener más información acerca de las mejoras más recientes de Visual Studio Tools para Unity 2.0 Preview](https://devblogs.microsoft.com/visualstudio/visual-studio-tools-for-unity-2-0-preview/) (blog de Visual Studio)|
 |[Ver un vídeo de introducción a Visual Studio Tools para Unity 2.0 Preview](http://www.bing.com/videos/search?q=visual+studio+tools+for+unity&qs=n&form=QBVLPG&pq=visual+studio+tools+for+unity&sc=6-29&sp=-1&sk=#view=detail&mid=0A13177F0BC7463A24080A13177F0BC7463A2408) (vídeo)|
 |[Obtener información acerca de Unity](http://unity3d.com/) (sitio web de Unity)|
 

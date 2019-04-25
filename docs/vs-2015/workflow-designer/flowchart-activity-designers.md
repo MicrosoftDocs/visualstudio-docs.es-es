@@ -1,23 +1,20 @@
 ---
 title: Diseñadores de actividades flowchart | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 ms.assetid: 8b7b4aa6-d27d-45c8-87c2-641440d38afc
 caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: fb74c7db38cc57d337cec649ad683ab4761552f9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: d26c60dab3ab09d2fc9f42609568ab21ecd19104
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49189220"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58986605"
 ---
 # <a name="flowchart-activity-designers"></a>Diseñadores de actividades Flowchart
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] incluye varias actividades proporcionadas por el sistema que puede utilizar cuando cree flujos de trabajo. En esta sección se incluyen las actividades proporcionadas por el sistema que se utilizan para administrar los diagramas de flujo dentro de un flujo de trabajo. Los siguientes temas describen estas actividades y ofrecen orientación sobre cómo utilizarlas.  
@@ -27,7 +24,7 @@ ms.locfileid: "49189220"
  **Se usa para crear flujos de trabajo que definen y administran los controles de flujo complejos.**  [FlowDecision](../workflow-designer/flowdecision-activity-designer.md)  
  Proporciona una bifurcación para el flujo de control en una alternativa entre dos en función de si se satisface una condición especificada.  
   
- [FlowSwitch\<T >](../workflow-designer/flowswitch-t-activity-designer.md)  
+ [FlowSwitch\<T>](../workflow-designer/flowswitch-t-activity-designer.md)  
  Proporciona la bifurcación para el flujo de control basado en un criterio de coincidencia cuando se requieren más de dos bifurcaciones alternativas.  
   
 ## <a name="reference"></a>Referencia  

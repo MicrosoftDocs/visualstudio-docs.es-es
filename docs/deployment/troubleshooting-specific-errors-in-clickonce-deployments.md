@@ -16,112 +16,111 @@ helpviewer_keywords:
 ms.assetid: 22dfe8f1-8271-4708-9c25-6bbb13920ac8
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fdd69b83702b07aae8a1c39c6c9298201c2f048
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: c2d337a1ed97524dc04c8154fe2b074baf0921ca
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53862171"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042386"
 ---
 # <a name="troubleshoot-specific-errors-in-clickonce-deployments"></a>Solución de problemas de errores específicos de implementaciones de ClickOnce
-Este artículo enumeran los siguientes errores comunes que pueden producirse al implementar un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación y proporciona los pasos para solucionar cada problema.  
+Este artículo enumeran los siguientes errores comunes que pueden producirse al implementar un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación y proporciona los pasos para solucionar cada problema.
 
-## <a name="general-errors"></a>Errores generales  
+## <a name="general-errors"></a>Errores generales
 
-#### <a name="when-you-try-to-locate-an-application-file-nothing-occurs-or-xml-renders-in-internet-explorer-or-you-receive-a-run-or-save-as-dialog-box"></a>Cuando intenta buscar un archivo de aplicación, no ocurre nada, se representa XML en Internet Explorer o aparece un cuadro de diálogo Ejecutar o guardar como  
- Este error se debe probablemente a tipos de contenido (también conocido como tipos MIME) no está registrados correctamente en el servidor o cliente.  
+#### <a name="when-you-try-to-locate-an-application-file-nothing-occurs-or-xml-renders-in-internet-explorer-or-you-receive-a-run-or-save-as-dialog-box"></a>Cuando intenta buscar un archivo de aplicación, no ocurre nada, se representa XML en Internet Explorer o aparece un cuadro de diálogo Ejecutar o guardar como
+ Este error se debe probablemente a tipos de contenido (también conocido como tipos MIME) no está registrados correctamente en el servidor o cliente.
 
- En primer lugar, asegúrese de que el servidor está configurado para asociar el *.application* extensión con el contenido de tipo "application/x-ms-application".  
+ En primer lugar, asegúrese de que el servidor está configurado para asociar el *.application* extensión con el contenido de tipo "application/x-ms-application".
 
- Si el servidor está configurado correctamente, compruebe que el [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] está instalado en el equipo. Si el [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] está instalado, y sigue apareciendo este problema, pruebe a desinstalar y reinstalar el [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] para volver a registrar el tipo de contenido en el cliente.  
+ Si el servidor está configurado correctamente, compruebe que el [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] está instalado en el equipo. Si el [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] está instalado, y sigue apareciendo este problema, pruebe a desinstalar y reinstalar el [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] para volver a registrar el tipo de contenido en el cliente.
 
-#### <a name="error-message-says-unable-to-retrieve-application-files-missing-in-deployment-or-application-download-has-been-interrupted-check-for-network-errors-and-try-again-later"></a>Mensaje de error: "no se puede recuperar la aplicación. No se encuentra en la implementación de archivos"o"se ha interrumpido la descarga de la aplicación, compruebe si hay errores de red y vuelva a intentarlo más tarde"  
- Este mensaje indica que uno o varios archivos que se hace referencia el [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] no se puede descargar los manifiestos. La manera más fácil de depurar este error es intentar descargar la dirección URL que [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] no puede descargar. Estas son algunas causas posibles:  
+#### <a name="error-message-says-unable-to-retrieve-application-files-missing-in-deployment-or-application-download-has-been-interrupted-check-for-network-errors-and-try-again-later"></a>Mensaje de error: "no se puede recuperar la aplicación. No se encuentra en la implementación de archivos"o"se ha interrumpido la descarga de la aplicación, compruebe si hay errores de red y vuelva a intentarlo más tarde"
+ Este mensaje indica que uno o varios archivos que se hace referencia el [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] no se puede descargar los manifiestos. La manera más fácil de depurar este error es intentar descargar la dirección URL que [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] no puede descargar. Estas son algunas causas posibles:
 
-- Si el archivo de registro dice "(403) prohibido" o "(404) no encontrado", compruebe que el servidor Web está configurado para que no bloquea la descarga de este archivo. Para obtener más información, vea [Problemas de configuración de servidor y cliente en implementaciones de ClickOnce](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md).  
+- Si el archivo de registro dice "(403) prohibido" o "(404) no encontrado", compruebe que el servidor Web está configurado para que no bloquea la descarga de este archivo. Para obtener más información, vea [Problemas de configuración de servidor y cliente en implementaciones de ClickOnce](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md).
 
-- Si el *.config* archivo está bloqueado por el servidor, consulte la sección "error de descarga al intentar instalar una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación que tiene un archivo .config" más adelante en este artículo.  
+- Si el *.config* archivo está bloqueado por el servidor, consulte la sección "error de descarga al intentar instalar una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación que tiene un archivo .config" más adelante en este artículo.
 
-- Determinar si este error se produjo porque la `deploymentProvider` dirección URL del manifiesto de implementación está señalando a una ubicación diferente a la dirección URL usada para la activación.  
+- Determinar si este error se produjo porque la `deploymentProvider` dirección URL del manifiesto de implementación está señalando a una ubicación diferente a la dirección URL usada para la activación.
 
-- Asegúrese de que todos los archivos están presentes en el servidor. el [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] registro debe indicarle qué archivos no se encontró.  
+- Asegúrese de que todos los archivos están presentes en el servidor. el [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] registro debe indicarle qué archivos no se encontró.
 
-- Si hay problemas de conectividad de red; puede recibir este mensaje si el equipo cliente estuvo sin conexión durante la descarga.  
+- Si hay problemas de conectividad de red; puede recibir este mensaje si el equipo cliente estuvo sin conexión durante la descarga.
 
-#### <a name="download-error-when-you-try-to-install-a-clickonce-application-that-has-a-config-file"></a>Error de descarga al intentar instalar una aplicación ClickOnce que tiene un archivo .config  
- De forma predeterminada, una aplicación basada en Windows de Visual Basic incluye un archivo App.config. Habrá un problema cuando un usuario intenta instalar desde un servidor Web que utiliza Windows Server 2003, porque ese sistema operativo bloquea la instalación de *.config* archivos por motivos de seguridad. Para habilitar el *.config* archivo va a instalar, haga clic en **usar extensión de archivo ".deploy"** en el **opciones de publicación** cuadro de diálogo.  
+#### <a name="download-error-when-you-try-to-install-a-clickonce-application-that-has-a-config-file"></a>Error de descarga al intentar instalar una aplicación ClickOnce que tiene un archivo .config
+ De forma predeterminada, una aplicación basada en Windows de Visual Basic incluye un archivo App.config. Habrá un problema cuando un usuario intenta instalar desde un servidor Web que utiliza Windows Server 2003, porque ese sistema operativo bloquea la instalación de *.config* archivos por motivos de seguridad. Para habilitar el *.config* archivo va a instalar, haga clic en **usar extensión de archivo ".deploy"** en el **opciones de publicación** cuadro de diálogo.
 
- También se deben establecer los tipos de contenido (también conocido como tipos MIME) adecuadamente para .application, .manifest y archivos. deploy. Para obtener más información, consulte la documentación del servidor Web.  
+ También se deben establecer los tipos de contenido (también conocido como tipos MIME) adecuadamente para .application, .manifest y archivos. deploy. Para obtener más información, consulte la documentación del servidor Web.
 
- Para obtener más información, vea "Windows Server 2003: Bloqueado tipos de contenido" [problemas de configuración de servidor y cliente en implementaciones ClickOnce](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md).  
+ Para obtener más información, vea "Windows Server 2003: Bloqueado tipos de contenido" [problemas de configuración de servidor y cliente en implementaciones ClickOnce](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md).
 
-#### <a name="error-message-application-is-improperly-formatted-log-file-contains-xml-signature-is-invalid"></a>Mensaje de error: "Aplicación de formato no es correcto;" Archivo de registro contiene "la firma XML es válido"  
- Asegúrese de que ha actualizado el archivo de manifiesto y se vuelve a estar firmada. Volver a publicar la aplicación mediante el uso de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] o usar Mage para firmar la aplicación de nuevo.  
+#### <a name="error-message-application-is-improperly-formatted-log-file-contains-xml-signature-is-invalid"></a>Mensaje de error: "Aplicación de formato no es correcto;" Archivo de registro contiene "la firma XML es válido"
+ Asegúrese de que ha actualizado el archivo de manifiesto y se vuelve a estar firmada. Volver a publicar la aplicación mediante el uso de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] o usar Mage para firmar la aplicación de nuevo.
 
-#### <a name="you-updated-your-application-on-the-server-but-the-client-does-not-download-the-update"></a>Actualiza la aplicación en el servidor, pero el cliente no descarga la actualización  
- Este problema podría resolverse realizando una de las tareas siguientes:  
+#### <a name="you-updated-your-application-on-the-server-but-the-client-does-not-download-the-update"></a>Actualiza la aplicación en el servidor, pero el cliente no descarga la actualización
+ Este problema podría resolverse realizando una de las tareas siguientes:
 
-- Examine el `deploymentProvider` dirección URL del manifiesto de implementación. Asegúrese de que está actualizando los bits en la misma ubicación que `deploymentProvider` apunta a.  
+- Examine el `deploymentProvider` dirección URL del manifiesto de implementación. Asegúrese de que está actualizando los bits en la misma ubicación que `deploymentProvider` apunta a.
 
-- Compruebe el intervalo de actualización en el manifiesto de implementación. Si este intervalo se establece en un intervalo periódico, como una vez cada seis horas, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] no examinará una actualización hasta que haya transcurrido este intervalo. Puede cambiar el manifiesto para buscar una actualización cada vez que se inicia la aplicación. Cambiar el intervalo de actualización es una opción recomendable durante el tiempo de desarrollo para comprobar las actualizaciones se instalan pero ralentiza la activación de la aplicación.  
+- Compruebe el intervalo de actualización en el manifiesto de implementación. Si este intervalo se establece en un intervalo periódico, como una vez cada seis horas, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] no examinará una actualización hasta que haya transcurrido este intervalo. Puede cambiar el manifiesto para buscar una actualización cada vez que se inicia la aplicación. Cambiar el intervalo de actualización es una opción recomendable durante el tiempo de desarrollo para comprobar las actualizaciones se instalan pero ralentiza la activación de la aplicación.
 
-- Pruebe a iniciar la aplicación de nuevo en el menú Inicio. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] es posible que haya detectado la actualización en segundo plano, pero se le solicitará que instale los bits en la siguiente activación.  
+- Pruebe a iniciar la aplicación de nuevo en el menú Inicio. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] es posible que haya detectado la actualización en segundo plano, pero se le solicitará que instale los bits en la siguiente activación.
 
-#### <a name="during-update-you-receive-an-error-that-has-the-following-log-entry-the-reference-in-the-deployment-does-not-match-the-identity-defined-in-the-application-manifest"></a>Durante la actualización, recibirá un error que tiene la siguiente entrada del registro: "La referencia en la implementación no coincide con la identidad definida en el manifiesto de aplicación"  
- Este error puede producirse porque se han editado manualmente los manifiestos de aplicación e implementación y haber causado la descripción de la identidad de un ensamblado en un manifiesto para que dejen de estar sincronizados con las demás. La identidad de un ensamblado consta de su nombre, versión, referencia cultural y token de clave pública. Examine las descripciones de identidad en los manifiestos y corrija cualquier diferencia.  
+#### <a name="during-update-you-receive-an-error-that-has-the-following-log-entry-the-reference-in-the-deployment-does-not-match-the-identity-defined-in-the-application-manifest"></a>Durante la actualización, recibirá un error que tiene la siguiente entrada del registro: "La referencia en la implementación no coincide con la identidad definida en el manifiesto de aplicación"
+ Este error puede producirse porque se han editado manualmente los manifiestos de aplicación e implementación y haber causado la descripción de la identidad de un ensamblado en un manifiesto para que dejen de estar sincronizados con las demás. La identidad de un ensamblado consta de su nombre, versión, referencia cultural y token de clave pública. Examine las descripciones de identidad en los manifiestos y corrija cualquier diferencia.
 
-#### <a name="first-time-activation-from-local-disk-or-cd-rom-succeeds-but-subsequent-activation-from-start-menu-does-not-succeed"></a>Activación desde el disco local o CD-ROM de primera vez que se realiza correctamente, pero no se realiza correctamente la activación posterior desde el menú Inicio  
- [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] usa la dirección URL del proveedor de implementación para recibir las actualizaciones de la aplicación. Compruebe que la ubicación en la que apunta a la dirección URL es correcta.  
+#### <a name="first-time-activation-from-local-disk-or-cd-rom-succeeds-but-subsequent-activation-from-start-menu-does-not-succeed"></a>Activación desde el disco local o CD-ROM de primera vez que se realiza correctamente, pero no se realiza correctamente la activación posterior desde el menú Inicio
+ [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] usa la dirección URL del proveedor de implementación para recibir las actualizaciones de la aplicación. Compruebe que la ubicación en la que apunta a la dirección URL es correcta.
 
-#### <a name="error-cannot-start-the-application"></a>Error: "No se puede iniciar la aplicación"  
- Este mensaje de error suele indica que hay un problema al instalar esta aplicación en el [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] almacenar. La aplicación tiene un error o el almacén está dañado. El archivo de registro puede indicarle que se produjo el error.  
+#### <a name="error-cannot-start-the-application"></a>Error: "No se puede iniciar la aplicación"
+ Este mensaje de error suele indica que hay un problema al instalar esta aplicación en el [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] almacenar. La aplicación tiene un error o el almacén está dañado. El archivo de registro puede indicarle que se produjo el error.
 
- Debe hacer lo siguiente:  
+ Debe hacer lo siguiente:
 
--   Compruebe que la identidad del manifiesto de implementación, la identidad del manifiesto de aplicación y la aplicación principal EXE son únicas.  
+- Compruebe que la identidad del manifiesto de implementación, la identidad del manifiesto de aplicación y la aplicación principal EXE son únicas.
 
--   Compruebe que las rutas de acceso de archivo no son más de 100 caracteres. Si la aplicación contiene las rutas de acceso de archivo que son demasiado grandes, puede superar las limitaciones en la ruta de acceso máxima que puede almacenar. Intente acortar las rutas de acceso y vuelva a instalar.  
+- Compruebe que las rutas de acceso de archivo no son más de 100 caracteres. Si la aplicación contiene las rutas de acceso de archivo que son demasiado grandes, puede superar las limitaciones en la ruta de acceso máxima que puede almacenar. Intente acortar las rutas de acceso y vuelva a instalar.
 
-#### <a name="privatepath-settings-in-application-config-file-are-not-honored"></a>No se respeta la configuración PrivatePath en el archivo de configuración de aplicación  
- Para utilizar PrivatePath (rutas de búsqueda de fusión), la aplicación debe solicitar permiso de plena confianza. Pruebe a cambiar el manifiesto de aplicación para solicitar la plena confianza y, a continuación, vuelva a intentarlo.  
+#### <a name="privatepath-settings-in-application-config-file-are-not-honored"></a>No se respeta la configuración PrivatePath en el archivo de configuración de aplicación
+ Para utilizar PrivatePath (rutas de búsqueda de fusión), la aplicación debe solicitar permiso de plena confianza. Pruebe a cambiar el manifiesto de aplicación para solicitar la plena confianza y, a continuación, vuelva a intentarlo.
 
-#### <a name="during-uninstall-a-message-appears-saying-failed-to-uninstall-application"></a>Durante la desinstalación aparece el mensaje, "No se pudo desinstalar la aplicación"  
- Este mensaje suele indica que la aplicación ya se ha quitado o el almacén está dañado. Tras hacer clic en **Aceptar**, **agregar o quitar programa** entrada se quitará.  
+#### <a name="during-uninstall-a-message-appears-saying-failed-to-uninstall-application"></a>Durante la desinstalación aparece el mensaje, "No se pudo desinstalar la aplicación"
+ Este mensaje suele indica que la aplicación ya se ha quitado o el almacén está dañado. Tras hacer clic en **Aceptar**, **agregar o quitar programa** entrada se quitará.
 
-#### <a name="during-installation-a-message-appears-that-says-that-the-platform-dependencies-are-not-installed"></a>Durante la instalación, aparece un mensaje que dice que no están instaladas las dependencias de plataforma  
- Falta un requisito previo en la GAC (caché global de ensamblados) que la aplicación necesita para ejecutarse.  
+#### <a name="during-installation-a-message-appears-that-says-that-the-platform-dependencies-are-not-installed"></a>Durante la instalación, aparece un mensaje que dice que no están instaladas las dependencias de plataforma
+ Falta un requisito previo en la GAC (caché global de ensamblados) que la aplicación necesita para ejecutarse.
 
-## <a name="publishing-with-visual-studio"></a>Publicación con Visual Studio  
+## <a name="publishing-with-visual-studio"></a>Publicación con Visual Studio
 
-#### <a name="publishing-in-visual-studio-fails"></a>Se produce un error en la publicación en Visual Studio  
- Asegúrese de que tiene el derecho a publicar en el servidor de destino. Por ejemplo, si ha iniciado sesión un equipo de servidor de terminal server como un usuario normal, no como administrador, probablemente no tendrá los derechos necesarios para publicar en el servidor Web local.  
+#### <a name="publishing-in-visual-studio-fails"></a>Se produce un error en la publicación en Visual Studio
+ Asegúrese de que tiene el derecho a publicar en el servidor de destino. Por ejemplo, si ha iniciado sesión un equipo de servidor de terminal server como un usuario normal, no como administrador, probablemente no tendrá los derechos necesarios para publicar en el servidor Web local.
 
- Si va a publicar con una dirección URL, asegúrese de que el equipo de destino tiene habilitadas las extensiones de servidor de FrontPage.  
+ Si va a publicar con una dirección URL, asegúrese de que el equipo de destino tiene habilitadas las extensiones de servidor de FrontPage.
 
-#### <a name="error-message-unable-to-create-the-web-site-site-the-components-for-communicating-with-frontpage-server-extensions-are-not-installed"></a>Mensaje de error: No se puede crear el sitio Web '\<sitio >'. No se instalan los componentes para comunicarse con extensiones de servidor.  
- Asegúrese de que tiene Microsoft Visual Studio Web Authoring componente instalado en la máquina que va a publicar en. Para los usuarios de Express, este componente no está instalado de forma predeterminada. Para obtener más información, vea [http://go.microsoft.com/fwlink/?LinkId=102310](http://go.microsoft.com/fwlink/?LinkId=102310).  
+#### <a name="error-message-unable-to-create-the-web-site-site-the-components-for-communicating-with-frontpage-server-extensions-are-not-installed"></a>Mensaje de error: No se puede crear el sitio Web '\<sitio >'. No se instalan los componentes para comunicarse con extensiones de servidor.
+ Asegúrese de que tiene Microsoft Visual Studio Web Authoring componente instalado en la máquina que va a publicar en. Para los usuarios de Express, este componente no está instalado de forma predeterminada. Para obtener más información, vea [http://go.microsoft.com/fwlink/?LinkId=102310](http://go.microsoft.com/fwlink/?LinkId=102310).
 
-#### <a name="error-message-could-not-find-file-microsoftwindowscommon-controls-version6000-culture-publickeytoken6595b64144ccf1df-processorarchitecture-typewin32"></a>Mensaje de error: No se pudo encontrar el archivo ' Microsoft.Windows.Common-controles, Version = 6.0.0.0, referencia cultural = *, PublicKeyToken = 6595b64144ccf1df, ProcessorArchitecture =\*, tipo = win32'  
- Este mensaje de error aparece cuando se intenta publicar una aplicación WPF con estilos visuales habilitados. Para resolver este problema, consulte [Cómo: Publicación de una aplicación WPF con estilos visuales habilitados](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md)  
+#### <a name="error-message-could-not-find-file-microsoftwindowscommon-controls-version6000-culture-publickeytoken6595b64144ccf1df-processorarchitecture-typewin32"></a>Mensaje de error: No se pudo encontrar el archivo ' Microsoft.Windows.Common-controles, Version = 6.0.0.0, referencia cultural = *, PublicKeyToken = 6595b64144ccf1df, ProcessorArchitecture =\*, tipo = win32'
+ Este mensaje de error aparece cuando se intenta publicar una aplicación WPF con estilos visuales habilitados. Para resolver este problema, consulte [Cómo: Publicar una aplicación de WPF con estilos visuales habilitados](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md).
 
-## <a name="using-mage"></a>Utilizar Mage  
+## <a name="using-mage"></a>Utilizar Mage
 
-#### <a name="you-tried-to-sign-with-a-certificate-in-your-certificate-store-and-a-received-blank-message-box"></a>Se intentó iniciar sesión con un certificado en el almacén de certificados y un cuadro de mensaje en blanco.  
- En el **firma** cuadro de diálogo, debe:  
+#### <a name="you-tried-to-sign-with-a-certificate-in-your-certificate-store-and-a-received-blank-message-box"></a>Se intentó iniciar sesión con un certificado en el almacén de certificados y un cuadro de mensaje en blanco.
+ En el **firma** cuadro de diálogo, debe:
 
--   Seleccione **firmar con un certificado almacenado**, y  
+- Seleccione **firmar con un certificado almacenado**, y
 
--   Seleccione un certificado de la lista. el primer certificado no es la selección predeterminada.  
+- Seleccione un certificado de la lista. el primer certificado no es la selección predeterminada.
 
-#### <a name="clicking-the-dont-sign-button-causes-an-exception"></a>Al hacer clic en el botón "Inicio de sesión no" produce una excepción  
- Este problema es un problema conocido. Todos los [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifiestos son debe estar firmado. Seleccione una de las opciones de firma y, a continuación, haga clic en **Aceptar**.  
+#### <a name="clicking-the-dont-sign-button-causes-an-exception"></a>Al hacer clic en el botón "Inicio de sesión no" produce una excepción
+ Este problema es un problema conocido. Todos los [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifiestos son debe estar firmado. Seleccione una de las opciones de firma y, a continuación, haga clic en **Aceptar**.
 
-## <a name="additional-errors"></a>Otros errores  
- La siguiente tabla muestra algunos mensajes de error comunes que puede recibir un equipo cliente cuando el usuario instala una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación. Cada mensaje de error aparece junto con una descripción de la causa más probable del error.  
-
+## <a name="additional-errors"></a>Otros errores
+ La siguiente tabla muestra algunos mensajes de error comunes que puede recibir un equipo cliente cuando el usuario instala una [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación. Cada mensaje de error aparece junto con una descripción de la causa más probable del error.
 
 | Mensaje de error | Descripción |
 | - | - |
@@ -137,6 +136,6 @@ Este artículo enumeran los siguientes errores comunes que pueden producirse al 
 | Métodos abreviados no se puede activar a través de la red. | Accesos directos a un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] solo se puede iniciar la aplicación en el disco duro local. No pueden iniciarse abriendo una dirección URL que apunta a un archivo de acceso directo en un servidor remoto. |
 | La aplicación es demasiado grande para ejecutarse en línea con confianza parcial. Para obtener ayuda, póngase en contacto con el proveedor de la aplicación o el administrador del sistema. | Una aplicación que se ejecuta en confianza parcial no puede ser mayor que la mitad del tamaño de la cuota de aplicación en línea, cuyo valor predeterminado es 250 MB. |
 
-## <a name="see-also"></a>Vea también  
- [Seguridad e implementación ClickOnce](../deployment/clickonce-security-and-deployment.md)   
- [Solución de problemas de implementaciones de ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)
+## <a name="see-also"></a>Vea también
+- [Seguridad e implementación ClickOnce](../deployment/clickonce-security-and-deployment.md)
+- [Solución de problemas de implementaciones de ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)

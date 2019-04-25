@@ -1,14 +1,9 @@
 ---
 title: Página Aplicación, Diseñador de proyectos (Visual Basic) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesApplicationWPF
 - vb.ProjectPropertiesApplication
@@ -19,18 +14,17 @@ ms.assetid: 8cec9fea-cd92-47ff-88dd-7c928f0b4a74
 caps.latest.revision: 68
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 9d2b23b5570a6372b727906a63ffb51513019df7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: d2484d0fc921d8a5bb42c8e89306a57c3ab6c11d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49175492"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670386"
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Application Page, Project Designer (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Use la página **Aplicación** del Diseñador de proyectos para especificar la configuración de la aplicación y las propiedades de un proyecto.  
   
  Para obtener acceso a la página **Aplicación**, seleccione un nodo de proyecto (no el nodo **Solución**) en el **Explorador de soluciones**. Después, pulse **Proyecto**, **Propiedades** en la barra de menús. Cuando aparezca el Diseñador de proyectos, haga clic en la pestaña **Aplicación**.  
@@ -87,7 +81,7 @@ Use la página **Aplicación** del Diseñador de proyectos para especificar la c
   
  Si **Habilitar marco de trabajo de la aplicación** está seleccionado (valor predeterminado), esta lista se titula **Formulario de inicio** y muestra solo formularios, ya que el marco de trabajo de la aplicación admite solo formularios de inicio, no objetos.  
   
- Si el proyecto es una Aplicación de explorador WPF, esta lista se titula **URI de inicio** y el valor predeterminado es **Page1.xaml**. La lista **URI de inicio** le permite especificar el recurso de interfaz de usuario (un elemento XAML) que la aplicación muestra al iniciarse. Para obtener más información, consulta <xref:System.Windows.Application.StartupUri%2A>.  
+ Si el proyecto es una Aplicación de explorador WPF, esta lista se titula **URI de inicio** y el valor predeterminado es **Page1.xaml**. La lista **URI de inicio** le permite especificar el recurso de interfaz de usuario (un elemento XAML) que la aplicación muestra al iniciarse. Para obtener más información, vea <xref:System.Windows.Application.StartupUri%2A>.  
   
  Si **Habilitar marco de trabajo de la aplicación** está desactivado, esta lista se convierte en **Objeto de inicio** y muestra los formularios y las clases o módulos con un `Sub Main`.  
   
@@ -116,7 +110,7 @@ Use la página **Aplicación** del Diseñador de proyectos para especificar la c
  Las siguientes opciones de configuración están disponibles en la sección **Propiedades del marco de trabajo de la aplicación Windows**. Estas opciones están disponibles solo si la casilla **Habilitar marco de trabajo de la aplicación** está seleccionada. En la sección siguiente se describe la configuración de las **Propiedades del marco de trabajo de la aplicación Windows** para aplicaciones de Windows Presentation Foundation (WPF).  
   
  **Habilitar estilos visuales de XP**  
- Habilita o deshabilita los estilos visuales de Windows XP, también conocidos como *Temas de Windows XP*. Los estilos visuales de Windows XP presentan, por ejemplo, controles con esquinas redondeadas y colores dinámicos. El valor predeterminado está habilitado. Para obtener más información sobre los estilos visuales de Windows XP, vea [Características de Windows XP y controles de Windows Forms](http://msdn.microsoft.com/en-us/bc7fab94-fce9-4bf1-a8ad-a5837c91c3c0).  
+ Habilita o deshabilita los estilos visuales de Windows XP, también conocidos como *Temas de Windows XP*. Los estilos visuales de Windows XP presentan, por ejemplo, controles con esquinas redondeadas y colores dinámicos. El valor predeterminado está habilitado. Para obtener más información sobre los estilos visuales de Windows XP, vea [Características de Windows XP y controles de Windows Forms](http://msdn.microsoft.com/bc7fab94-fce9-4bf1-a8ad-a5837c91c3c0).  
   
  **Crear aplicación de instancia única**  
  Seleccione esta casilla para evitar que los usuarios ejecuten varias instancias de la aplicación. La configuración predeterminada de esta casilla está desactivada. Esta configuración permite que se ejecuten varias instancias de la aplicación.  
@@ -166,6 +160,3 @@ Use la página **Aplicación** del Diseñador de proyectos para especificar la c
   
 ## <a name="see-also"></a>Vea también  
 [Administrar las propiedades de la aplicación](../../ide/application-properties.md) [Escribir código en soluciones de Office](http://msdn.microsoft.com/library/2d4d8fd0-e881-4829-976f-0d1a9221dec0)
-
-
-

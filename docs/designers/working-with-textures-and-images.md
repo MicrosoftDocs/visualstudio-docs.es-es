@@ -1,20 +1,19 @@
 ---
 title: Trabajar con texturas e imágenes
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: b9fbc8fa-66d1-4055-8460-24d8b8fbe43e
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d7e7519817c15a73ad0c4e6b136790984cbe1cdf
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5642a2e84766758b5fdf50bc652fd32b585427bf
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53913887"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55933471"
 ---
 # <a name="work-with-textures-and-images"></a>Trabajar con texturas e imágenes
 

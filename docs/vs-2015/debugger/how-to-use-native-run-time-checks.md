@@ -1,14 +1,9 @@
 ---
-title: 'Cómo: utilizar comprobaciones nativas en tiempo de ejecución | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Utilizar comprobaciones nativas en tiempo de ejecución | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - c.runtime.errorchecks
 dev_langs:
@@ -45,15 +40,15 @@ ms.assetid: dc7b2f1e-5ff6-42e0-89b3-dc9dead83ee1
 caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 4efbb4e151ea47f655f0b28e19d2811d5541e944
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 02f619d727b83e681d9dda6dd851c43f168f1311
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798760"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101683"
 ---
-# <a name="how-to-use-native-run-time-checks"></a>Cómo: Utilizar comprobaciones nativas en tiempo de ejecución
+# <a name="how-to-use-native-run-time-checks"></a>Procedimiento Uso de comprobaciones nativas en tiempo de ejecución
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 En Visual C++, puede realizar [runtime_checks](http://msdn.microsoft.com/library/ae50b43f-f88d-47ad-a2db-3389e9e7df5b) nativas para detectar errores en tiempo de ejecución, tales como:  
@@ -82,18 +77,13 @@ En Visual C++, puede realizar [runtime_checks](http://msdn.microsoft.com/library
   
 ### <a name="to-enable-native-run-time-checks-in-a-debug-build"></a>Para habilitar las comprobaciones nativas en tiempo de ejecución en una versión de depuración  
   
--   Utilice la opción **/RTC** y vincule la versión de depuración de una biblioteca C en tiempo de ejecución (/MDd, por ejemplo).  
+- Utilice la opción **/RTC** y vincule la versión de depuración de una biblioteca C en tiempo de ejecución (/MDd, por ejemplo).  
   
 ### <a name="to-modify-native-run-time-check-behavior"></a>Para modificar el comportamiento de las comprobaciones nativas en tiempo de ejecución  
   
--   Utilice la directiva pragma `runtime_checks` .  
+- Utilice la directiva pragma `runtime_checks` .  
   
 ## <a name="see-also"></a>Vea también  
  [Depurar en Visual Studio](../debugger/debugging-in-visual-studio.md)   
  [runtime_checks](http://msdn.microsoft.com/library/ae50b43f-f88d-47ad-a2db-3389e9e7df5b)   
  [Comprobar errores en tiempo de ejecución](http://msdn.microsoft.com/library/c965dd01-57ad-4a3c-b1d6-5aa04f920501)
-
-
-
-
-

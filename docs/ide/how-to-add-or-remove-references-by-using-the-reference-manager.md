@@ -1,7 +1,6 @@
 ---
 title: Agregar referencias en el Administrador de referencias
 ms.date: 04/11/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - VS.ReferenceManager
@@ -19,15 +18,15 @@ helpviewer_keywords:
 - referencing components, assemblies not listed
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e3e21f38f8b4f60678aa4bb767368393c666cab
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1b26c700e90189882f850d4bda1d47fb6f54c025
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53856285"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58322329"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Procedimiento Agregar o quitar referencias con el Administrador de referencias
 
@@ -47,9 +46,7 @@ En el cuadro de diálogo **Administrador de referencias** se muestran distintas 
 
 - **Examinar**, con el subgrupo **Reciente**.
 
-## <a name="add-and-remove-a-reference"></a>Agregar y quitar una referencia
-
-### <a name="to-add-a-reference"></a>Para agregar una referencia
+## <a name="add-a-reference"></a>Agregar una referencia
 
 1. En el **Explorador de soluciones**, haga clic con el botón derecho en el nodo **Referencias** o **Dependencias** y elija **Agregar referencia**. También puede hacer clic con el botón derecho en el nodo del proyecto y seleccionar **Agregar** > **Referencia**.
 
@@ -148,44 +145,27 @@ Se crea una referencia de archivo en lugar de una referencia de proyecto si un p
 
 Un proyecto cuyo destino sea [!INCLUDE[net_win8_profile](../ide/includes/net_win8_profile_md.md)] no puede agregar una referencia de proyecto a un proyecto cuyo destino sea .NET Framework, y viceversa.
 
-## <a name="windows-tab"></a>Pestaña Windows
+## <a name="universal-windows-tab"></a>Pestaña Windows universal
 
-La pestaña **Windows** muestra todos los SDK que son específicos de las plataformas en las que se ejecutan sistemas operativos Windows.
-
-Puede generar un archivo WinMD en Visual Studio de dos maneras:
-
-- **Proyectos administrados de aplicación de Windows 8.x Store**: Los proyectos de aplicación de Windows 8.x Store pueden generar archivos binarios WinMD al establecer **Propiedades del proyecto** > **Tipo de salida = Archivo WinMD**. El nombre de archivo WinMD debe ser el espacio de nombres que engloba a todos los espacios de nombres que existen en él. Por ejemplo, si un proyecto consta de los espacios de nombres `A.B` y `A.B.C`, los nombres posibles para sus archivos WinMD resultantes son *A.winmd* y *A.B.winmd*. Si un usuario especifica un valor de **Propiedades del proyecto** > **Nombre del ensamblado** o **Propiedades del proyecto** > **Espacio de nombres** que diverge del conjunto de espacios de nombres del proyecto, o si no hay un espacio de nombres englobador dentro de un proyecto, se genera una advertencia de compilación: “A.winmd” no es un nombre de archivo .winmd válido para este ensamblado. Todos los tipos de un archivo de metadatos de Windows deben existir en un subespacio de nombres del nombre de archivo. Los tipos que no existen en un subespacio de nombres del nombre de archivo no podrán encontrarse en tiempo de ejecución. En este ensamblado, el espacio de nombres común más pequeño es `CSWSClassLibrary1`. Un proyecto de escritorio de Visual Basic o C# solo puede usar archivos WinMD que hayan sido generados mediante los SDK de Windows 8, denominados archivos WinMD propios, y no puede generar archivos WinMD.
-
-- **Proyectos nativos de aplicación de Windows 8.x Store**: Un archivo WinMD nativo solo contiene metadatos. Su implementación está en un archivo DLL distinto. Se pueden generar archivos binarios nativos si se elige la plantilla del proyecto Componente de Windows Runtime en el cuadro de diálogo **Nuevo proyecto** o si se empieza a partir de un proyecto en blanco y se modifican las propiedades del proyecto para generar un archivo WinMD. Si el proyecto está compuesto de espacios de nombres dispares, un error de compilación indicará al usuario que combine los espacios de nombres o ejecute la herramienta MSMerge.
-
-La pestaña **Windows** se compone de dos subgrupos.
+La pestaña **Windows universal** muestra todos los SDK que son específicos de las plataformas en las que se ejecutan sistemas operativos Windows.
+Esta pestaña contiene dos subgrupos: **Principal** y **Extensiones**.
 
 ### <a name="core-subgroup"></a>Subgrupo Principal
 
-El subgrupo **Principal** muestra todos los archivos WinMD (para los elementos de Windows Runtime) del SDK de la versión de Windows de destino.
-
-Los proyectos de aplicaciones de la Tienda Windows 8.x contienen referencias a todos los archivos WinMD del SDK de Windows 8 de forma predeterminada cuando se crea el proyecto. En los proyectos administrados, un nodo de solo lectura bajo la carpeta **Referencias** del **Explorador de soluciones** indica la referencia a la versión completa del SDK de Windows 8. Por tanto, el subgrupo **Principal** del **Administrador de referencias** no enumera ninguno de los ensamblados de Windows 8 SDK y, en su lugar, muestra un mensaje: "Ya se hace referencia a Windows SDK. Use el Examinador de objetos para explorar las referencias en el Windows SDK".
-
-En los proyectos de escritorio, el subgrupo **Principal** no aparece de manera predeterminada. Puede agregar Windows Runtime si abre el menú contextual del nodo del proyecto, elige **Descargar el proyecto**, agrega el siguiente fragmento de código y vuelve a abrir el proyecto (en el nodo del proyecto, elija **Volver a cargar el proyecto**). Cuando se invoca el cuadro de diálogo **Administrador de referencias**, aparece el subgrupo **Principal**.
-
-```xml
-<PropertyGroup>
-  <TargetPlatformVersion>8.0</TargetPlatformVersion>
-</PropertyGroup>
-```
-
-Asegúrese de activar la casilla **Windows** en este subgrupo. Debe poder utilizar elementos de Windows Runtime. Sin embargo, también conviene agregar <xref:System.Runtime>, en el que Windows Runtime define algunas clases e interfaces estándar, como <xref:System.Collections.IEnumerable>, que se utilizan en las bibliotecas de Windows Runtime. Para más información sobre cómo agregar <xref:System.Runtime>, vea [Managed desktop apps and Windows Runtime](/previous-versions/windows/apps/jj856306(v=win.10)#consuming-standard-windows-runtime-types) (Aplicaciones de escritorio administradas y Windows Runtime).
+Los proyectos de aplicación Windows universal hacen referencia de forma predeterminada al SDK de Windows universal. Por consiguiente, el subgrupo **Principal** del **Administrador de referencias** no muestra ninguno de los ensamblajes del SDK de Windows universal.
 
 ### <a name="extensions-subgroup"></a>Subgrupo Extensiones
 
-El subgrupo **Extensiones** muestra los SDK del usuario que amplían la plataforma Windows de destino. Esta pestaña aparece únicamente para los proyectos de aplicaciones de la Tienda Windows 8.x. Los proyectos de escritorio no mostrarán esta pestaña porque solo pueden usar archivos *.winmd* propios.
+El subgrupo **Extensiones** muestra los SDK del usuario que amplían la plataforma Windows de destino.
 
-Un SDK es una colección de archivos que Visual Studio trata como un único componente. En la pestaña **Extensiones**, los SDK que se aplican al proyecto desde el que se ha invocado el cuadro de diálogo **Administrador de referencias** se muestran como entradas individuales. Cuando se agrega a un proyecto, todo el contenido de los SDK lo usa Visual Studio, de modo que el usuario no necesita realizar ninguna acción adicional para usar el contenido de los SDK en IntelliSense, cuadro de herramientas, diseñadores, Explorador de objetos, compilación, implementación, depuración y empaquetado. Para más información sobre cómo mostrar el SDK en la pestaña **Extensiones**, vea [Creación de un Kit de desarrollo de software](../extensibility/creating-a-software-development-kit.md).
+Un SDK es una colección de archivos que Visual Studio trata como un único componente. En la pestaña **Extensiones**, los SDK que se aplican al proyecto desde el que se ha invocado el cuadro de diálogo **Administrador de referencias** se muestran como entradas individuales. Cuando se agrega a un proyecto, todo el contenido de los SDK lo usa Visual Studio, de modo que el usuario no necesita realizar ninguna acción adicional para usar el contenido de los SDK en IntelliSense, cuadro de herramientas, diseñadores, Explorador de objetos, compilación, implementación, depuración y empaquetado.
+
+Para más información sobre cómo mostrar el SDK en la pestaña **Extensiones**, vea [Creación de un Kit de desarrollo de software](../extensibility/creating-a-software-development-kit.md).
 
 > [!NOTE]
-> Si un proyecto hace referencia a un SDK que depende de otro SDK, Visual Studio no usará el segundo SDK a menos que el usuario agregue manualmente una referencia al segundo SDK. Cuando un usuario elige un SDK en la pestaña **Extensiones**, el cuadro de diálogo **Administrador de referencias** le ayuda a identificar las dependencias del SDK al mostrar no solo el nombre y la versión del SDK sino también el nombre de todas las dependencias del SDK en el panel de detalles. Si un usuario se olvida de las dependencias y solo agrega ese SDK, MSBuild pedirá al usuario que agregue las dependencias.
+> Si un proyecto hace referencia a un SDK que depende de otro SDK, Visual Studio no usará el segundo SDK a menos que se agregue manualmente una referencia al segundo SDK. Cuando un usuario elige un SDK en la pestaña **Extensiones**, el cuadro de diálogo **Administrador de referencias** ayuda a identificar las dependencias del SDK al mostrar todas las dependencias del SDK en el panel de detalles.
 
-Si un tipo de proyecto no admite extensiones, la pestaña no aparecerá en el cuadro de diálogo **Administrador de referencias**.
+Si un tipo de proyecto no admite extensiones, esta pestaña no aparecerá en el cuadro de diálogo **Administrador de referencias**.
 
 ## <a name="com-tab"></a>Pestaña COM
 
@@ -203,11 +183,11 @@ No se deben agregar referencias de archivos a resultados de otro proyecto de la 
 
 No puede buscar un SDK y agregarlo al proyecto. Solo puede buscar un archivo (por ejemplo, un ensamblado o *.winmd*) y agregarlo al proyecto.
 
-Cuando se hace una referencia a un archivo WinMD, el diseño esperado es que todos los archivos *<FileName>.winmd*, *<FileName>.dll* y *<FileName>.pri* aparezcan colocados unos junto a otros. Si hace referencia a un archivo WinMD en los escenarios siguientes, se copiará un conjunto de archivos incompleto en el directorio de resultados del proyecto y, por tanto, se producirán errores de compilación y en tiempo de ejecución.
+Cuando se hace referencia a un archivo WinMD, el diseño esperado es que los archivos *\<FileName>.winmd*, *\<FileName>.dll* y *\<FileName>.pri* aparezcan colocados unos junto a otros. Si hace referencia a un archivo WinMD en los escenarios siguientes, se copiará un conjunto de archivos incompleto en el directorio de resultados del proyecto y, por tanto, se producirán errores de compilación y en tiempo de ejecución.
 
-- **Componente nativo**: un proyecto nativo creará un archivo WinMD para cada conjunto disjunto de espacios de nombre y un archivo DLL con la implementación. Los archivos WinMD tendrán nombres dispares. Al hacer referencia a este archivo de componente nativo, MSBuild no reconocerá que el archivo WinMD con un nombre dispar crea un componente. Por tanto, solo se copiarán los archivos *<FileName>.dll* y *<FileName>.winmd* con idéntico nombre y se producirán errores en tiempo de ejecución. Para solucionar este problema, cree un SDK de extensión. Para obtener más información, vea [Creación de un Kit de desarrollo de software](../extensibility/creating-a-software-development-kit.md).
+- **Componente nativo**: un proyecto nativo creará un archivo WinMD para cada conjunto disjunto de espacios de nombre y un archivo DLL con la implementación. Los archivos WinMD tendrán nombres dispares. Al hacer referencia a este archivo de componente nativo, MSBuild no reconocerá que el archivo WinMD con un nombre dispar crea un componente. Por tanto, solo se copiarán los archivos *\<FileName>.dll*  y *\<FileName>.winmd* con idéntico nombre y se producirán errores en tiempo de ejecución. Para solucionar este problema, cree un SDK de extensión. Para obtener más información, vea [Creación de un Kit de desarrollo de software](../extensibility/creating-a-software-development-kit.md).
 
-- **Uso de controles**: como mínimo, un control XAML está compuesto de un archivo *<FileName>.winmd*, *<FileName>.dll*, *<FileName>.pri*, *<XamlName>.xaml*, y un *<ImageName>.jpg*. Cuando se compila el proyecto, los archivos de recursos asociados a la referencia de archivo no se copian en el directorio de salida del proyecto, y solo se copiarán *<FileName>.winmd*, *<FileName>.dll* y *<FileName>.pri*. Se registrará un error de compilación para informar al usuario de que faltan los recursos *<XamlName>.xaml* y *<ImageName>.jpg*. Para permitir un funcionamiento correcto, el usuario tendrá que copiar manualmente estos archivos de recursos en el directorio de salida del proyecto para la compilación y depuración/tiempo de ejecución. Para solucionar este problema, cree un SDK de extensión siguiendo los pasos de [Creación de un Kit de desarrollo de software](../extensibility/creating-a-software-development-kit.md) o edite el archivo de proyecto para agregar la siguiente propiedad:
+- **Uso de controles**: como mínimo, un control XAML está compuesto por un *\<FileName>.winmd*, *\<FileName>.dll*, *\<FileName>.pri*, *\<XamlName>.xaml* y un *\<ImageName>.jpg*. Cuando se compila el proyecto, los archivos de recursos asociados a la referencia de archivo no se copian en el directorio de salida del proyecto y solo se copian *\<FileName>.winmd*, *\<FileName>.dll* y *\<FileName>.pri*. Se registra un error de compilación para informar al usuario de que faltan los recursos *\<XamlName>.xaml* y *\<ImageName>.jpg*. Para permitir un funcionamiento correcto, el usuario tendrá que copiar manualmente estos archivos de recursos en el directorio de salida del proyecto para la compilación y depuración/tiempo de ejecución. Para solucionar este problema, cree un SDK de extensión siguiendo los pasos de [Creación de un Kit de desarrollo de software](../extensibility/creating-a-software-development-kit.md) o edite el archivo de proyecto para agregar la siguiente propiedad:
 
     ```xml
     <PropertyGroup>

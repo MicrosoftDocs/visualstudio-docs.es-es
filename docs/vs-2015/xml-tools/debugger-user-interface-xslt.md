@@ -1,25 +1,20 @@
 ---
 title: Depurador (XSLT) de interfaz de usuario | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 846fdabd-e5c3-4688-9b0d-a93fbeea1b96
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 02ba962a3410b2e964e7653fcb6308b9209def44
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 1af3b47b2d7c897b36556f0ebac105088cdc9b75
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891861"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58999698"
 ---
 # <a name="debugger-user-interface-xslt"></a>Interfaz de usuario del depurador (XSLT)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +43,7 @@ En este tema se describen las ventanas y los cuadros de diálogo del depurador. 
 |`position()`|La posición, o número de índice, del nodo de contexto, con respecto al tamaño del contexto.|  
 |`self::node()`|El valor del nodo de contexto.|  
   
- Para obtener más información, consulte [Cómo: cambiar el contexto del depurador](http://msdn.microsoft.com/library/8a69ea63-2ef0-4b4f-9521-cf8ad2e3ec5e).  
+ Para obtener más información, vea [Cómo: Cambiar el contexto del depurador](http://msdn.microsoft.com/library/8a69ea63-2ef0-4b4f-9521-cf8ad2e3ec5e).  
   
 ## <a name="output-window"></a>Resultados (Ventana)  
  La Ventana de salida muestra los mensajes de error o las excepciones de seguridad que se producen durante la depuración.  
@@ -83,7 +78,7 @@ En este tema se describen las ventanas y los cuadros de diálogo del depurador. 
   
  Si las plantillas no tienen un nombre en el archivo XSLT, se utilizan los nombres generados por el procesador XSLT.  
   
- Al hacer clic en otro elemento que no es el que se encuentra en primer lugar de la lista se indica al visor dónde ha tenido lugar la bifurcación de la ejecución XSLT mediante el uso de resaltes y flechas verdes estándar.  
+ Al hacer clic en otro elemento que no es el que se encuentra en primer lugar de la lista se indica al visor dónde ha tenido lugar la rama de la ejecución XSLT mediante el uso de resaltes y flechas verdes estándar.  
   
 ## <a name="quickwatch-dialog-box"></a>Cuadro de diálogo Inspección rápida  
  El **Inspección rápida** cuadro de diálogo se usa para evaluar expresiones XPath 1.0. El nodo de contexto (el nodo `self::node()` de la ventana Locales) proporciona el contexto para la ejecución de la expresión XPath. El resultado de la ejecución de la expresión XPath se muestra en la ventana Inspección.  
@@ -96,15 +91,14 @@ En este tema se describen las ventanas y los cuadros de diálogo del depurador. 
   
 - No se permiten funciones definidas por el usuario.  
   
-  Para obtener más información, consulte [Cómo: evaluar una expresión XPath](../xml-tools/how-to-evaluate-an-xpath-expression.md).  
+  Para obtener más información, vea [Cómo: Evaluar una expresión XPath](../xml-tools/how-to-evaluate-an-xpath-expression.md).  
   
 ## <a name="disassembly-window"></a>Ventana Desensamblado  
  La ventana Desensamblado muestra el código ensamblador generado por el compilador de XSLT. Esta ventana se puede utilizar de la misma manera que todas las demás ventanas de desensamblado de Visual Studio.  
   
- Para obtener más información, [Cómo: usar la ventana Desensamblado](../debugger/how-to-use-the-disassembly-window.md).  
+ Para obtener más información, [Cómo: Utilice la ventana Desensamblado](../debugger/how-to-use-the-disassembly-window.md).  
   
 ## <a name="see-also"></a>Vea también  
  [Depuración de XSLT](../xml-tools/debugging-xslt.md)   
  [Conceptos básicos del depurador](../debugger/debugger-basics.md)   
- [Windows variable](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)
-
+ [Ventanas de variables](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)

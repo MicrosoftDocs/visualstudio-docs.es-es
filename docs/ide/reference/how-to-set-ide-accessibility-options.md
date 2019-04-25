@@ -1,28 +1,27 @@
 ---
-title: Procedimiento Establecimiento de opciones de accesibilidad de IDE
+title: Filtrar Establecimiento de opciones de accesibilidad de IDE
 description: Obtenga información sobre cómo establecer las opciones de accesibilidad en Visual Studio para que el entorno de desarrollo integrado (IDE) sea más fácil de usar para todos, incluidos los usuarios con problemas de visión para leer y con limitaciones para escribir.
 ms.date: 08/22/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - accessibility [Visual Studio]
 ms.assetid: ddc96c4c-0600-46c1-8267-7dce4c44ad24
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c8fa92644221149d3405eea25b1c85e229861e4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5763178ecf30cc0c946c8810770ba2948383a715
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53906779"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56317190"
 ---
-# <a name="how-to-set-ide-accessibility-options"></a>Procedimiento Establecimiento de opciones de accesibilidad de IDE
+# <a name="how-to-set-ide-accessibility-options"></a>Filtrar Establecimiento de opciones de accesibilidad de IDE
 
 > [!TIP]
-> Para más información sobre las actualizaciones de accesibilidad recientes, vea la entrada de blog [Accessibility improvements in Visual Studio 2017 version 15.3](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/) (Mejoras de accesibilidad en Visual Studio 2017 versión 15.3).
+> Para más información sobre las actualizaciones de accesibilidad recientes, vea la entrada de blog [Accessibility improvements in Visual Studio 2017 version 15.3](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/) (Mejoras de accesibilidad en Visual Studio 2017 versión 15.3).
 
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] contiene características que facilitan la lectura a las personas que tienen poca visión y la escritura a las personas que tienen una destreza manual limitada. Estas características incluyen el cambio del tamaño y el color del texto en los editores, el cambio del tamaño de texto y de los botones de opción en las barras de herramientas y la función Autocompletar para métodos y parámetros, entre otras.
 

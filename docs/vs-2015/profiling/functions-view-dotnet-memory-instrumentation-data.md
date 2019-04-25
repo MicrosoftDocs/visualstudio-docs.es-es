@@ -1,27 +1,22 @@
 ---
 title: 'Vista Funciones: Datos de instrumentación de memoria de .NET | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Functions view
 ms.assetid: cd45b379-394b-4b71-828c-92cd89e46ae0
 caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 8bacc61ec9c254ce662854a08fe6a508977a72e2
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+manager: jillfra
+ms.openlocfilehash: 340a12bfb8dc9a26c4200682851bb0acc684dddf
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "51730187"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54787398"
 ---
 # <a name="functions-view---net-memory-instrumentation-data"></a>Vista Funciones: Datos de instrumentación de memoria .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -109,6 +104,3 @@ La vista Funciones de los datos de generación de perfiles de asignación de mem
  [Vista Funciones: muestreo](../profiling/functions-view-dotnet-memory-sampling-data.md)   
  [Vista Funciones](../profiling/functions-view-instrumentation-data.md)   
  [Vista Funciones](../profiling/functions-view-sampling-data.md)
-
-
-

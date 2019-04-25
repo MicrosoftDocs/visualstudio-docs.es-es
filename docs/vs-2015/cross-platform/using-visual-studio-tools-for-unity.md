@@ -1,30 +1,24 @@
 ---
 title: Uso de Visual Studio Tools para Unity | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- tgt-pltfrm-cross-plat
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-unity-tools
+ms.topic: conceptual
 ms.assetid: e67ec9a2-a449-413e-8930-9a471bd43a06
 caps.latest.revision: 7
 author: conceptdev
 ms.author: crdun
-manager: ghogen
-ms.openlocfilehash: a7dbe0e13691e5ac0dbf67945728bada3ef4e57f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: eed341b5ae43f52e7df35d820012e760166e096f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51771311"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073437"
 ---
 # <a name="using-visual-studio-tools-for-unity"></a>Uso de Visual Studio Tools para Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 En esta sección aprenderá a utilizar las características de productividad e integración de Visual Studio Tools para Unity y cómo utilizar al depurador de Visual Studio para el desarrollo en Unity.  
   
 ## <a name="unity-integration-and-productivity"></a>Productividad e integración de Unity  
@@ -35,7 +29,7 @@ En esta sección aprenderá a utilizar las características de productividad e i
   
 ##### <a name="to-access-unity-documentation"></a>Para acceder a la documentación de Unity  
   
--   En Visual Studio, resalte o coloque el cursor sobre la API de Unity sobre la que quiere obtener información y, después, presione **Ctrl+Alt+M, Ctrl+H**  
+- En Visual Studio, resalte o coloque el cursor sobre la API de Unity sobre la que quiere obtener información y, después, presione **Ctrl+Alt+M, Ctrl+H**  
   
 ### <a name="unity-monobehavior-scripting-wizard"></a>Asistente de scripting de MonoBehavior de Unity  
  En Unity la mayoría de los scripts se implementan derivando a partir de la clase MonoBehavior y reemplazando algunos de sus métodos. Puede utilizar al Asistente de MonoBehavior para crear rápidamente definiciones vacías de los métodos de MonoBehavior que desee sobrecargar. Con este asistente puede especificar uno o varios métodos que desee sobrecargar de la lista de métodos disponibles, elegir dónde se insertará en el código y decidir si desea incluir comentarios acerca de cómo se utilizan.  
@@ -65,13 +59,13 @@ En esta sección aprenderá a utilizar las características de productividad e i
   
 ###### <a name="to-create-an-empty-monobehavior-method-definition-by-using-the-quick-monobehavior-wizard"></a>Para crear una definición vacía de método MonoBehavior con el asistente rápido de MonoBehavior  
   
-1.  En Visual Studio, coloque el cursor donde quiera que se inserte el método y, después, presione **Ctrl+Mayús+Q** para iniciar el asistente rápido de MonoBehavior. Al contrario que el otro asistente de MonoBehavior, debe colocar el cursor intencionadamente al utilizar este asistente porque el nuevo método siempre se inserta en esa posición.  
+1. En Visual Studio, coloque el cursor donde quiera que se inserte el método y, después, presione **Ctrl+Mayús+Q** para iniciar el asistente rápido de MonoBehavior. Al contrario que el otro asistente de MonoBehavior, debe colocar el cursor intencionadamente al utilizar este asistente porque el nuevo método siempre se inserta en esa posición.  
   
-2.  Asegúrese de que la versión de Framework que se muestra en la esquina superior derecha de la ventana **Crear método de script** coincide con la versión que está usando. Si no coincide, cambie el valor de la lista desplegable a la versión que quiera usar.  
+2. Asegúrese de que la versión de Framework que se muestra en la esquina superior derecha de la ventana **Crear método de script** coincide con la versión que está usando. Si no coincide, cambie el valor de la lista desplegable a la versión que quiera usar.  
   
-3.  Busque el método que desee sobrecargar. En la ventana Crear método de script, comience a escribir el nombre del método en el cuadro de texto. Se mostrará una lista de los métodos cuyos nombres coincidan con lo que ha escrito.  
+3. Busque el método que desee sobrecargar. En la ventana Crear método de script, comience a escribir el nombre del método en el cuadro de texto. Se mostrará una lista de los métodos cuyos nombres coincidan con lo que ha escrito.  
   
-4.  Seleccione el método que desee sobrecargar. Cuando se muestre el método que quiera en la lista, selecciónelo con el mouse o las teclas de flecha y, después, presione **Entrar**. Si es el único método en la lista, puede simplemente presionar **ENTRAR**. El método se inserta en el código.  
+4. Seleccione el método que desee sobrecargar. Cuando se muestre el método que quiera en la lista, selecciónelo con el mouse o las teclas de flecha y, después, presione **Entrar**. Si es el único método de la lista, puede simplemente presionar **Entrar**. El método se inserta en el código.  
   
 ### <a name="unity-project-explorer"></a>Explorador de proyectos de Unity  
  Puede utilizar el Explorador de proyectos de Unity para navegar por el proyecto de Unity dentro de Visual Studio.  
@@ -109,16 +103,16 @@ En esta sección aprenderá a utilizar las características de productividad e i
 ## <a name="unity-debugging"></a>Depuración de Unity  
  Visual Studio Tools para Unity permite depurar scripts de editor y juego del proyecto de Unity mediante el potente depurador de Visual Studio.  
   
-###  <a name="connecting-visual-studio-to-unity"></a> Conectar Visual Studio a Unity  
+### <a name="connecting-visual-studio-to-unity"></a> Conectar Visual Studio a Unity  
  Visual Studio Tools para Unity se comunica con Unity a través de una conexión UDP. Esto significa que puede conectarse a una instancia de Unity que se ejecute de forma local o en cualquier parte de la red exactamente de la misma manera. Puede conectarse a cualquiera de las instancias de Unity que puede ver en la red mediante el cuadro de diálogo **Seleccionar instancia de Unity**.  
   
 ##### <a name="to-open-the-select-unity-instance-dialog"></a>Para abrir el diálogo Seleccionar instancia de Unity  
   
--   En el menú principal de Visual Studio seleccione **Depurar**, **Adjuntar depurador de Unity**.  
+- En el menú principal de Visual Studio seleccione **Depurar**, **Adjuntar depurador de Unity**.  
   
      ![Asociar el depurador de Unity.](../cross-platform/media/vstu-debugging-attach-unity-debugger.png "vstu_debugging_attach_unity_debugger")  
   
--   *O* en la barra de estado en Visual Studio seleccione el icono con forma de enchufe que se muestra en la esquina inferior derecha de Visual Studio.  
+- *O* en la barra de estado en Visual Studio seleccione el icono con forma de enchufe que se muestra en la esquina inferior derecha de Visual Studio.  
   
      ![Este icono muestra que VSTU está conectado a Unity.](../cross-platform/media/vstu-connection-connected.png "vstu_connection_connected")  
   
@@ -144,7 +138,7 @@ En esta sección aprenderá a utilizar las características de productividad e i
 > [!IMPORTANT]
 >  Puesto que Visual Studio Tools para de Unity y la instancia de Unity se están comunicando a través de un socket de red UDP, el firewall podría preguntarle al respecto. Si esto sucede, tendrá que autorizar la conexión para que VSTU y Unity puedan comunicarse.  
   
-###  <a name="debugging-your-project-in-a-unity-player"></a> Depuración del proyecto en un Reproductor de Unity  
+### <a name="debugging-your-project-in-a-unity-player"></a> Depuración del proyecto en un Reproductor de Unity  
  Puede conectar Visual Studio Tools para Unity directamente a la aplicación de Unity que se está ejecutando en un reproductor independiente si no está ejecutando el Editor de Unity o para depurar problemas específicos de la plataforma.  
   
 ##### <a name="to-enable-script-debugging-in-a-unity-player"></a>Para habilitar la depuración de scripts en un reproductor de Unity  
@@ -193,4 +187,3 @@ En esta sección aprenderá a utilizar las características de productividad e i
      Los archivos PDB son necesarios para la depuración porque contienen símbolos de depuración de los archivos DLL y asignan el código del archivo DLL a su forma de código fuente. Visual Studio Tools para Unity usará información de los archivos DLL y PDB para crear un archivo DLL.MDB, que es el formato de símbolo de depuración utilizado por el motor de scripting de Unity.  
   
 4. Depure el código que ha creado. Ahora puede depurar el código fuente de archivos DLL junto con el código fuente del proyecto de Unity y utilizar todas las características de depuración a las que está acostumbrado, como los puntos de interrupción y ejecutar código paso a paso.
-

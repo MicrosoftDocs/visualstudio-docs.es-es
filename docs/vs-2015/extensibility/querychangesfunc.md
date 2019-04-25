@@ -1,14 +1,9 @@
 ---
 title: QUERYCHANGESFUNC | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 f1_keywords:
 - QUERYCHANGESFUNC
 helpviewer_keywords:
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: 9d383e2c-eee1-4996-973a-0652d4c5951c
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: b9a0bbf3c26f797ec1bbf67ad8439e5f5ba05b11
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 42f901fa31b3b682c7e19c98f5707adb3b4fb3f3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764233"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093922"
 ---
 # <a name="querychangesfunc"></a>QUERYCHANGESFUNC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +52,7 @@ typedef BOOL (*QUERYCHANGESFUNC)(
 |SCC_I_OPERATIONCANCELED|Detener el procesamiento.|  
 |SCC_E_xxx|Cualquier error de SCC apropiado debería detener el procesamiento.|  
   
-##  <a name="LinkQUERYCHANGESDATA"></a> Estructura QUERYCHANGESDATA  
+## <a name="LinkQUERYCHANGESDATA"></a> Estructura QUERYCHANGESDATA  
  La estructura pasada en cada archivo tiene el siguiente aspecto:  
   
 ```cpp#  
@@ -109,4 +104,3 @@ struct QUERYCHANGESDATA_W
  [Funciones de devolución de llamada implementadas por el IDE](../extensibility/callback-functions-implemented-by-the-ide.md)   
  [SccQueryChanges](../extensibility/sccquerychanges-function.md)   
  [Códigos de error](../extensibility/error-codes.md)
-

@@ -1,14 +1,9 @@
 ---
-title: 'CA2229: Implementar constructores de serialización | Microsoft Docs'
-ms.custom: ''
+title: 'CA2229: Implementar constructores de serialización | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2229
 - ImplementSerializationConstructors
@@ -20,12 +15,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 45a7c9d74c5574b0e39f77f1b29fad15d9f19dbe
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 41e296a979557a42a96c2f57ce49610d88b98a40
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49858386"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073169"
 ---
 # <a name="ca2229-implement-serialization-constructors"></a>CA2229: Implementar constructores de serialización
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,11 +35,11 @@ ms.locfileid: "49858386"
 ## <a name="cause"></a>Motivo
  El tipo implementa la <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> interfaz, no es un delegado o interfaz y una de las siguientes condiciones es verdadera:
 
--   El tipo no tiene un constructor que toma un <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName> objeto y un <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName> objeto (la firma del constructor de serialización).
+- El tipo no tiene un constructor que toma un <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName> objeto y un <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName> objeto (la firma del constructor de serialización).
 
--   El tipo está sellado y el modificador de acceso de su constructor de serialización no está protegida (familia).
+- El tipo está sellado y el modificador de acceso de su constructor de serialización no está protegida (familia).
 
--   El tipo está sellado y el modificador de acceso de su constructor de serialización no es privado.
+- El tipo está sellado y el modificador de acceso de su constructor de serialización no es privado.
 
 ## <a name="rule-description"></a>Descripción de la regla
  Esta regla es relevante para los tipos que admiten la serialización personalizada. Un tipo admite la serialización personalizada si implementa el <xref:System.Runtime.Serialization.ISerializable> interfaz. Se requiere el constructor de serialización para deserializar o volver a crear los objetos que se han serializado utilizando el <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName> método.
@@ -66,6 +61,3 @@ ms.locfileid: "49858386"
 ## <a name="see-also"></a>Vea también
  <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName>
  <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName>
-
-
-

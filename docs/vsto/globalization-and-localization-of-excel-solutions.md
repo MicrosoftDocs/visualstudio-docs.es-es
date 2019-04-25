@@ -9,15 +9,15 @@ helpviewer_keywords:
 - globalization [Office development in Visual Studio], configuring
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6de8e63331c4cb5250ceadd6f7394dd54319e499
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f8d21f1697ce3d566c27e9845ae4c2a9a9d5e068
+ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53856415"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56450183"
 ---
 # <a name="globalization-and-localization-of-excel-solutions"></a>Globalización y localización de las soluciones de Excel
   Esta sección contiene información sobre las consideraciones especiales de las soluciones de Microsoft Office Excel que se vayan a ejecutar en equipos que tengan una configuración de Windows distinta del inglés. La mayoría de los aspectos de globalización y localización de las soluciones de Microsoft Office son los mismos que se pueden encontrar cuando se crean otros tipos de soluciones mediante Visual Studio. Para obtener información general, consulte [Globalize y localizar aplicaciones](../ide/globalizing-and-localizing-applications.md).
@@ -36,7 +36,7 @@ ms.locfileid: "53856415"
 
  Incluso aunque use el formato de inglés (Estados Unidos) para los datos que se pasan o manipulan mediante código administrado, Excel interpreta y muestra los datos correctamente según la configuración regional del usuario final. Excel puede aplicar formato correctamente a los datos porque el código administrado pasa el id. de configuración regional 1033 junto con los datos, lo que indica que los datos están en el formato inglés (Estados Unidos) y, por tanto, se debe cambiar el formato para que coincida con la configuración regional del usuario.
 
- Por ejemplo, si los usuarios finales tienen la configuración regional establecida en alemán (Alemania), esperan que la fecha del 29 de junio de 2005, tenga el formato de esta manera: 29.06.2005. Sin embargo, si la solución pasa la fecha a Excel como una cadena, debe dar formato a la fecha según el formato de inglés (Estados Unidos): 29/6/2005. Si a la celda se le aplica el formato de celda de fecha, Excel mostrará la fecha en formato de alemán (Alemania).
+ Por ejemplo, si los usuarios finales tienen la configuración regional establecida en alemán (Alemania), esperan que la fecha del 29 de junio de 2005, tenga el formato de esta manera: 29.06.2005. Sin embargo, si la solución pasa la fecha a Excel como una cadena, debe dar formato a la fecha según el formato de inglés (Estados Unidos): 6/29/2005. Si a la celda se le aplica el formato de celda de fecha, Excel mostrará la fecha en formato de alemán (Alemania).
 
 ### <a name="pass-other-locale-ids-to-the-excel-object-model"></a>Pasar otros Id. de configuración regional al modelo de objetos de Excel
  Common Language Runtime (CLR) pasa automáticamente el id. de configuración regional 1033 a todos los métodos y propiedades del modelo de objetos de Excel que aceptan datos que dependen de la configuración regional. No hay ninguna manera de cambiar este comportamiento automáticamente para todas las llamadas al modelo de objetos. Sin embargo, puede pasar un id. de configuración regional diferente a un método específico utilizando <xref:System.Type.InvokeMember%2A> para llamar al método y pasando el id. de configuración regional al parámetro *culture* del método.
@@ -47,7 +47,7 @@ ms.locfileid: "53856415"
  Aún debe asegurarse de que cualquier parte del código que interactúa con el texto del documento sigue coincidiendo con el idioma del texto y que los marcadores, rangos con nombre y otros campos de visualización se adaptan a cualquier nuevo formato del documento de Office necesario para ajustarse a diferentes gramáticas y longitud de texto. Las plantillas de documento que contienen relativamente poco texto, puede considerar almacenar el texto en archivos de recursos y, a continuación, cargar el texto en tiempo de ejecución.
 
 ### <a name="text-direction"></a>Dirección del texto
- En Excel, puede establecer una propiedad de la hoja de cálculo para representar el texto de derecha a izquierda. Controles host, o cualquier control que tenga un `RightToLeft` propiedad, que se coloca en el diseñador automáticamente coinciden con esta configuración en tiempo de ejecución. Word no tiene una configuración de documento para texto bidireccional (solo cambia la alineación del texto), de manera que los controles no se pueden asignar a esta configuración. En su lugar, debe establecer la alineación del texto para cada control. Es posible escribir código para recorrer todos los controles y hacer que representen el texto de derecha a izquierda.
+ En Excel, puede establecer una propiedad de la hoja de cálculo para representar el texto de derecha a izquierda. Controles host, o cualquier control que tenga un `RightToLeft` propiedad, que se coloca en el diseñador automáticamente coinciden con esta configuración en tiempo de ejecución. Word no tiene una configuración de documento para el texto de bidireccional (solo cambia la alineación del texto), por lo que los controles no se puede asignar a esta configuración. En su lugar, debe establecer la alineación del texto para cada control. Es posible escribir código para recorrer todos los controles y hacer que representen el texto de derecha a izquierda.
 
 ### <a name="change-culture"></a>Cambiar la referencia cultural
  Su código de personalización de nivel de documento normalmente comparte el subproceso de la interfaz de usuario principal de Excel, de modo que cualquier cambio que realice a la referencia cultural del subproceso afecta a todo lo demás que se está ejecutando en dicho subproceso; el cambio no se limita a la personalización.

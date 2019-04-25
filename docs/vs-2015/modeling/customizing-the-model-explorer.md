@@ -1,12 +1,9 @@
 ---
 title: Personalizar el Explorador de modelos | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.dsldesigner.explorerbehavior
 helpviewer_keywords:
@@ -15,26 +12,26 @@ ms.assetid: d2926444-9408-41d8-a27e-3fd0c416f9ac
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 77999eea0a76088368ff5e7ee66f9088dc45efa5
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 51e79850e2958ce295ab4d98f3ea191a5222a8fb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49175947"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078920"
 ---
 # <a name="customizing-the-model-explorer"></a>Personalizar el Explorador de modelos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Puede cambiar la apariencia y comportamiento del explorador para el Diseñador de lenguaje específico de dominio como sigue:  
   
--   Cambie el título de ventana.  
+- Cambie el título de ventana.  
   
--   Cambiar el icono de pestaña.  
+- Cambiar el icono de pestaña.  
   
--   Cambiar los iconos para los nodos.  
+- Cambiar los iconos para los nodos.  
   
--   Ocultar los nodos.  
+- Ocultar los nodos.  
   
 ## <a name="changing-the-window-title"></a>Cambiar el título de ventana  
  Para cambiar el título de la ventana del explorador generado, seleccione **comportamiento de Explorer** en el **DSL Explorer**y, a continuación, en el **propiedades** ventana, establezca el  **Título** propiedad para el título que desee.  
@@ -47,21 +44,21 @@ Puede cambiar la apariencia y comportamiento del explorador para el Diseñador d
   
 #### <a name="to-add-an-icon-to-an-explorer-node"></a>Para agregar un icono a un nodo del explorador  
   
-1.  Crear un [!INCLUDE[dsl](../includes/dsl-md.md)] solución mediante la plantilla de solución de flujo de tareas.  
+1. Crear un [!INCLUDE[dsl](../includes/dsl-md.md)] solución mediante la plantilla de solución de flujo de tareas.  
   
-2.  Coloque un archivo .bmp que contiene un icono de 16 x 16 píxeles en el **Dsl\Resources** carpeta en la solución.  
+2. Coloque un archivo .bmp que contiene un icono de 16 x 16 píxeles en el **Dsl\Resources** carpeta en la solución.  
   
-3.  En el **DSL Explorer**, haga clic en **comportamiento de Explorer** y, a continuación, haga clic en **agregar nueva configuración de nodo de explorador**.  
+3. En el **DSL Explorer**, haga clic en **comportamiento de Explorer** y, a continuación, haga clic en **agregar nueva configuración de nodo de explorador**.  
   
      Un **ExplorerNodeSettings** nodo aparece en el **configuración personalizada del nodo** nodo.  
   
-4.  Seleccione **ExplorerNodeSettings**y, a continuación, en el **propiedades** ventana, establezca **clase** a **Actor**.  
+4. Seleccione **ExplorerNodeSettings**y, a continuación, en el **propiedades** ventana, establezca **clase** a **Actor**.  
   
-5.  Establecer **icono para mostrar** a la ruta de acceso del archivo del icono.  
+5. Establecer **icono para mostrar** a la ruta de acceso del archivo del icono.  
   
-6.  Transformar todas las plantillas y, a continuación, compilar y ejecutar la solución.  
+6. Transformar todas las plantillas y, a continuación, compilar y ejecutar la solución.  
   
-7.  En el diseñador generado, abra el diagrama de ejemplo.  
+7. En el diseñador generado, abra el diagrama de ejemplo.  
   
      El explorador debería mostrar tres **Actor** nodos que tengan su icono.  
   
@@ -73,25 +70,25 @@ Puede cambiar la apariencia y comportamiento del explorador para el Diseñador d
   
 #### <a name="to-display-a-property"></a>Para mostrar una propiedad  
   
-1.  Abra la solución que creó en el procedimiento anterior.  
+1. Abra la solución que creó en el procedimiento anterior.  
   
-2.  Asegúrese de que el **comentario** hace referencia a solo una clase de dominio único, establezca la multiplicidad del rol con el nombre de la propiedad **asuntos** a 0.. 1. El nombre de propiedad debe convertirse en **asunto**, y debe ser el nombre de la relación **CommentReferencesSubject**.  
+2. Asegúrese de que el **comentario** hace referencia a solo una clase de dominio único, establezca la multiplicidad del rol con el nombre de la propiedad **asuntos** a 0.. 1. El nombre de propiedad debe convertirse en **asunto**, y debe ser el nombre de la relación **CommentReferencesSubject**.  
   
-3.  En el **DSL Explorer**, haga clic en **comportamiento de Explorer** y, a continuación, haga clic en **agregar nueva configuración de nodo de explorador**.  
+3. En el **DSL Explorer**, haga clic en **comportamiento de Explorer** y, a continuación, haga clic en **agregar nueva configuración de nodo de explorador**.  
   
      Un **ExplorerNodeSettings** nodo aparece en el **configuración personalizada del nodo** nodo.  
   
-4.  Seleccione **ExplorerNodeSettings**y, a continuación, en el **propiedades** ventana, establezca **clase** a **comentario**.  
+4. Seleccione **ExplorerNodeSettings**y, a continuación, en el **propiedades** ventana, establezca **clase** a **comentario**.  
   
-5.  Haga clic en el **comentario** nodo y, a continuación, haga clic en **agregar nueva ruta de acceso de propiedad**.  
+5. Haga clic en el **comentario** nodo y, a continuación, haga clic en **agregar nueva ruta de acceso de propiedad**.  
   
      Aparece un nuevo nodo denominado **propiedad muestra**.  
   
-6.  Seleccione **propiedad muestra**y, a continuación, en el **propiedades** ventana, haga clic en el campo de valor de **ruta de acceso a la propiedad**. Seleccione **comentario**, a continuación, **CommentReferencesSubject**, a continuación, **FlowElement**. La ruta de acceso resultante debe ser similar a **CommentReferencesSubject.Subject/! Asunto**.  
+6. Seleccione **propiedad muestra**y, a continuación, en el **propiedades** ventana, haga clic en el campo de valor de **ruta de acceso a la propiedad**. Seleccione **comentario**, a continuación, **CommentReferencesSubject**, a continuación, **FlowElement**. La ruta de acceso resultante debe ser similar a **CommentReferencesSubject.Subject/! Asunto**.  
   
-7.  En el campo de valor de **propiedad**, seleccione **nombre**.  
+7. En el campo de valor de **propiedad**, seleccione **nombre**.  
   
-8.  Transformar todas las plantillas y, a continuación, compilar y ejecutar la solución.  
+8. Transformar todas las plantillas y, a continuación, compilar y ejecutar la solución.  
   
 9. En el diseñador generado, abra el diagrama de ejemplo.  
   
@@ -104,22 +101,19 @@ Puede cambiar la apariencia y comportamiento del explorador para el Diseñador d
   
 #### <a name="to-hide-an-explorer-node"></a>Para ocultar un nodo del explorador  
   
-1.  Abra la solución que creó en el procedimiento anterior.  
+1. Abra la solución que creó en el procedimiento anterior.  
   
-2.  En el **DSL Explorer**, haga clic en **comportamiento de Explorer** y, a continuación, haga clic en **agregar nueva ruta de acceso de dominio**.  
+2. En el **DSL Explorer**, haga clic en **comportamiento de Explorer** y, a continuación, haga clic en **agregar nueva ruta de acceso de dominio**.  
   
      Un **ruta de acceso de dominio** nodo aparece en **nodos ocultos**.  
   
-3.  Seleccione **ruta de acceso de dominio**y, a continuación, en el **propiedades** ventana, haga clic en el campo de valor de **definición de ruta de acceso**. Seleccione **FlowGraph**, a continuación, **FlowGraphHasComments**. La ruta de acceso resultante debe ser similar a **FlowGraphHasComments.Comments**  
+3. Seleccione **ruta de acceso de dominio**y, a continuación, en el **propiedades** ventana, haga clic en el campo de valor de **definición de ruta de acceso**. Seleccione **FlowGraph**, a continuación, **FlowGraphHasComments**. La ruta de acceso resultante debe ser similar a **FlowGraphHasComments.Comments**  
   
-4.  Transformar todas las plantillas y, a continuación, compilar y ejecutar la solución.  
+4. Transformar todas las plantillas y, a continuación, compilar y ejecutar la solución.  
   
-5.  En el diseñador generado, abra el diagrama de ejemplo.  
+5. En el diseñador generado, abra el diagrama de ejemplo.  
   
      El explorador debería mostrar sólo una **actores** nodo y no debe mostrar el **comentarios** nodo.  
   
 ## <a name="see-also"></a>Vea también  
- [Glosario de las herramientas de lenguajes específicos de dominio](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
-
-
-
+ [Glosario de las Herramientas del lenguaje específico de dominio](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

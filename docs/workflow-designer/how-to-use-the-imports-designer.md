@@ -2,21 +2,20 @@
 title: 'Diseñador de flujo de trabajo - Cómo: Usar el diseñador de importaciones'
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.prod: visual-studio-dev15
 f1_keywords:
 - System.Activities.Presentation.View.ImportDesigner.UI
 ms.assetid: 61328ab6-9b66-4e12-8630-22e30ee8c9d1
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f0ae017eaf9843b4411ecf762b91d29ff9d95c0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 11c0c959964fee21f2cdfe098907ab2dfe184f7e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53823972"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60038463"
 ---
 # <a name="how-to-use-the-imports-designer"></a>Procedimiento Usar el diseñador de importaciones
 
@@ -34,14 +33,14 @@ El diseñador de importaciones reacciona tanto a los cambios en la interfaz de u
 
 ## <a name="to-add-a-namespace-to-the-list-of-imported-namespaces"></a>Para agregar un espacio de nombres a la lista de espacios de nombres importados
 
-1.  Abra una aplicación de servicio de flujo de trabajo de WCF, aplicación de consola de flujos de trabajo o proyecto de biblioteca de actividades en Visual Studio o una aplicación de flujo de trabajo rehospedado.
+1. Abra una aplicación de servicio de flujo de trabajo de WCF, aplicación de consola de flujos de trabajo o proyecto de biblioteca de actividades en Visual Studio o una aplicación de flujo de trabajo rehospedado.
 
-2.  Haga clic en **importaciones** en la parte inferior del lienzo principal. Aparecerá el diseñador de importaciones.
+2. Haga clic en **importaciones** en la parte inferior del lienzo principal. Aparecerá el diseñador de importaciones.
 
-3.  Escriba o seleccione un espacio de nombres desde el control de lista desplegable en la parte superior del diseñador de importaciones.
+3. Escriba o seleccione un espacio de nombres desde el control de lista desplegable en la parte superior del diseñador de importaciones.
 
      Cuando escriba, aparecerá una lista de espacios de nombres válidos que coinciden con los caracteres que se van escribiendo.
 
-4.  Presione **ENTRAR** para agregar el espacio de nombres a la lista.
+4. Presione **ENTRAR** para agregar el espacio de nombres a la lista.
 
-5.  Si desea quitar un espacio de nombres de la lista, seleccione el espacio de nombres y, a continuación, presione el **eliminar** en el teclado. Observe que un espacio de nombres solo se puede eliminar si el espacio de nombres no es válido por cualquier razón, por ejemplo si el proyecto ya no hace referencia al ensamblado que contiene el espacio de nombres.
+5. Si desea quitar un espacio de nombres de la lista, seleccione el espacio de nombres y, a continuación, presione el **eliminar** en el teclado. Observe que un espacio de nombres solo se puede eliminar si el espacio de nombres no es válido por cualquier razón, por ejemplo si el proyecto ya no hace referencia al ensamblado que contiene el espacio de nombres.

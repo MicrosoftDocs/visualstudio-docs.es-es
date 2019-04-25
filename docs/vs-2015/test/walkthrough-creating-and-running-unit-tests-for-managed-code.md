@@ -1,14 +1,9 @@
 ---
-title: 'Tutorial: Crear y ejecutar pruebas unitarias en código administrado | Microsoft Docs'
-ms.custom: ''
+title: 'Tutorial: Crear y ejecutar pruebas unitarias para código administrado | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 helpviewer_keywords:
 - unit tests, walkthrough
 - unit tests, creating
@@ -18,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 2b018b18-b412-4e0e-b0ee-b580a2f3ba9c
 caps.latest.revision: 85
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 50d8190f386a4923fd05cbfaec137791bd9f2b5a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: ad9a30f5a54177a9df955cbe78d0ad0bc5d99ac3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49874506"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058894"
 ---
-# <a name="walkthrough-creating-and-running-unit-tests-for-managed-code"></a>Tutorial: Crear y ejecutar pruebas unitarias en código administrado
+# <a name="walkthrough-creating-and-running-unit-tests-for-managed-code"></a>Tutorial: Crear y ejecutar pruebas unitarias para código administrado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Este tutorial recorre paso a paso la creación, ejecución y personalización de una serie de pruebas unitarias mediante el marco de pruebas unitarias para código administrado de Microsoft y el Explorador de pruebas de Visual Studio. Se empieza con un proyecto C# que está en desarrollo, se crean pruebas que utilizan el código, se ejecutan las pruebas y se examinan los resultados. Por último, puede cambiar el código del proyecto y volver a ejecutar las pruebas.  
@@ -59,9 +54,9 @@ Este tutorial recorre paso a paso la creación, ejecución y personalización de
   
 ## <a name="prerequisites"></a>Requisitos previos  
   
--   El proyecto del banco. Consulte [Proyecto de ejemplo para crear pruebas unitarias](../test/sample-project-for-creating-unit-tests.md).  
+- El proyecto del banco. Consulte [Proyecto de ejemplo para crear pruebas unitarias](../test/sample-project-for-creating-unit-tests.md).  
   
-##  <a name="BKMK_Prepare_the_walkthrough"></a> Preparar el tutorial  
+## <a name="BKMK_Prepare_the_walkthrough"></a> Preparar el tutorial  
   
 1. Abra Visual Studio.  
   
@@ -112,28 +107,28 @@ public void Debit(double amount)
   
 ```  
   
-##  <a name="BKMK_Create_a_unit_test_project"></a> Crear un proyecto de prueba unitaria  
- **Requisito previo**: siga los pasos del procedimiento [Prepare the walkthrough](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Prepare_the_walkthrough).  
+## <a name="BKMK_Create_a_unit_test_project"></a> Crear un proyecto de prueba unitaria  
+ **Requisitos previos**: Siga los pasos del procedimiento, [preparar el tutorial](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Prepare_the_walkthrough).  
   
 #### <a name="to-create-a-unit-test-project"></a>Para crear un proyecto de prueba unitaria  
   
-1.  En el menú **Archivo** , elija **Agregar**y, a continuación, elija **Nuevo proyecto...**.  
+1. En el menú **Archivo** , elija **Agregar**y, a continuación, elija **Nuevo proyecto...**.  
   
-2.  En el cuadro de diálogo Nuevo proyecto, expanda **Instalado**, expanda **Visual C#** y, a continuación, elija **Prueba**.  
+2. En el cuadro de diálogo Nuevo proyecto, expanda **Instalado**, expanda **Visual C#** y, a continuación, elija **Prueba**.  
   
-3.  En la lista de plantillas, seleccione **Proyecto de prueba unitaria**.  
+3. En la lista de plantillas, seleccione **Proyecto de prueba unitaria**.  
   
-4.  En el cuadro **Nombre** , escriba BankTest y elija **Aceptar**.  
+4. En el cuadro **Nombre** , escriba BankTest y elija **Aceptar**.  
   
      El proyecto **BankTests** se agrega a la solución **Bank**.  
   
-5.  En el proyecto **BankTests** , agregue una referencia a la solución **Bank** .  
+5. En el proyecto **BankTests** , agregue una referencia a la solución **Bank** .  
   
      En el Explorador de soluciones, seleccione **Referencias** en el proyecto **BankTests** y, después, elija **Agregar referencia...** desde el menú contextual.  
   
-6.  En el cuadro de diálogo del Administrador de referencia, expanda **Solución** y active el elemento **Bank** .  
+6. En el cuadro de diálogo del Administrador de referencia, expanda **Solución** y active el elemento **Bank** .  
   
-##  <a name="BKMK_Create_the_test_class"></a> Crear la clase de prueba  
+## <a name="BKMK_Create_the_test_class"></a> Crear la clase de prueba  
  Se necesita una clase de prueba para comprobar la clase `BankAccount` . Se puede utilizar UnitTest1.cs, generado por la plantilla de proyecto, pero se debe asignar al archivo y a la clase nombres más descriptivos. Podemos hacer esto en un solo paso cambiando el nombre del archivo en el Explorador de soluciones.  
   
  **Cambiar el nombre de un archivo de clase**  
@@ -168,7 +163,7 @@ namespace BankTests
 using BankAccountNS;  
 ```  
   
-###  <a name="BKMK_Test_class_requirements"></a> Requisitos de la clase de prueba  
+### <a name="BKMK_Test_class_requirements"></a> Requisitos de la clase de prueba  
  Los requisitos mínimos para una clase de prueba son los siguientes:  
   
 - El atributo `[TestClass]` se requiere en el marco de pruebas unitarias para código administrado de Microsoft para cualquier clase que contenga métodos de prueba unitaria que desee ejecutar en el Explorador de pruebas.  
@@ -177,12 +172,12 @@ using BankAccountNS;
   
   Puede tener otras clases de un proyecto de prueba unitaria que no tengan el atributo `[TestClass]` y puede tener otros métodos de clases de prueba que no tengan el atributo `[TestMethod]` . Puede utilizar estos otros métodos y clases en sus métodos de prueba.  
   
-##  <a name="BKMK_Create_the_first_test_method"></a> Crear el primer método de prueba  
+## <a name="BKMK_Create_the_first_test_method"></a> Crear el primer método de prueba  
  En este procedimiento, se escribirán métodos de prueba unitaria para comprobar el comportamiento del método `Debit` de la clase `BankAccount` . El método se muestra más arriba.  
   
  Al analizar el método en pruebas, se determina que hay al menos tres comportamientos que deben comprobarse:  
   
-1. El método produce una excepción [ArgumentOutOfRangeException] (<!-- TODO: review code entity reference <xref:assetId:///ArgumentOutOfRangeException?qualifyHint=False&amp;autoUpgrade=True>  -->) si la cantidad de débito es mayor que el saldo.  
+1. El método produce una ([ArgumentOutOfRangeException]<!-- TODO: review code entity reference <xref:assetId:///ArgumentOutOfRangeException?qualifyHint=False&amp;autoUpgrade=True>  -->) si la cantidad de débito es mayor que el saldo.  
   
 2. También produce `ArgumentOutOfRangeException` si la cantidad de débito es menor que cero.  
   
@@ -218,28 +213,28 @@ using BankAccountNS;
   
    El método es bastante sencillo. Se configura un nuevo objeto `BankAccount` con un saldo inicial y después se retira una cantidad válida. Se utiliza el marco de pruebas unitarias de Microsoft para el método <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual%2A> de código administrado, para comprobar que el saldo de cierre es el esperado.  
   
-###  <a name="BKMK_Test_method_requirements"></a> Requisitos del método de prueba  
+### <a name="BKMK_Test_method_requirements"></a> Requisitos del método de prueba  
  Un método de prueba debe cumplir los siguientes requisitos:  
   
--   El método se debe señalar con el atributo `[TestMethod]` .  
+- El método se debe señalar con el atributo `[TestMethod]` .  
   
--   El método debe devolver `void`.  
+- El método debe devolver `void`.  
   
--   El método no puede tener parámetros.  
+- El método no puede tener parámetros.  
   
-##  <a name="BKMK_Build_and_run_the_test"></a> Compilar y ejecutar la prueba  
+## <a name="BKMK_Build_and_run_the_test"></a> Compilar y ejecutar la prueba  
   
 #### <a name="to-build-and-run-the-test"></a>Para compilar y ejecutar la prueba  
   
-1.  En el menú **Compilar** , elija **Compilar solución**.  
+1. En el menú **Compilar** , elija **Compilar solución**.  
   
      Si no hay ningún error, aparece la ventana UnitTestExplorer con **Debit_WithValidAmount_UpdatesBalance** incluido en el grupo **Pruebas no ejecutadas** . Si no el Explorador de pruebas aparece tras realizar una compilación correcta, elija **Prueba** en el menú, **Ventanas**y, a continuación,  **Explorador de pruebas**.  
   
-2.  Elija **Ejecutar todas** para ejecutar la prueba. Mientras se ejecuta la prueba, la barra de estado en la parte superior de la ventana se anima. Al final de la serie de pruebas, la barra se vuelve verde si todos los métodos de prueba se completan correctamente o roja si no alguna de las prueba no lo hace.  
+2. Elija **Ejecutar todas** para ejecutar la prueba. Mientras se ejecuta la prueba, la barra de estado en la parte superior de la ventana se anima. Al final de la serie de pruebas, la barra se vuelve verde si todos los métodos de prueba se completan correctamente o roja si no alguna de las prueba no lo hace.  
   
-3.  En este caso, la prueba no se completa correctamente. El método de prueba se mueve al grupo **Pruebas no superadas** . Seleccione el método en el Explorador de pruebas para ver los detalles en la parte inferior de la ventana.  
+3. En este caso, la prueba no se completa correctamente. El método de prueba se mueve al grupo **Pruebas no superadas** . Seleccione el método en el Explorador de pruebas para ver los detalles en la parte inferior de la ventana.  
   
-##  <a name="BKMK_Fix_your_code_and_rerun_your_tests"></a> Corrija el código y vuelva a ejecutar las pruebas  
+## <a name="BKMK_Fix_your_code_and_rerun_your_tests"></a> Corrija el código y vuelva a ejecutar las pruebas  
  **Analizar los resultados de pruebas**  
   
  El resultado de la prueba contiene un mensaje que describe el error. Para el método `AreEquals`, el mensaje muestra lo que se esperaba (el parámetro <strong>Expected\<*XXX*></strong>) y lo que se ha recibido realmente (el parámetro **Actual\<*YYY*>**). Se esperaba una disminución en el saldo en comparación con el inicial pero, en cambio, ha aumentado en la cantidad retirada.  
@@ -264,7 +259,7 @@ m_balance -= amount;
   
  En el Explorador de pruebas, elija **Ejecutar todas** para volver a ejecutar la prueba. La barra de color rojo o verde se vuelve verde y la prueba se mueve al grupo de **Pruebas superadas** .  
   
-##  <a name="BKMK_Use_unit_tests_to_improve_your_code"></a> Utilice pruebas unitarias para mejorar el código  
+## <a name="BKMK_Use_unit_tests_to_improve_your_code"></a> Utilice pruebas unitarias para mejorar el código  
  En esta sección se describe cómo un proceso iterativo de análisis, el desarrollo de pruebas unitarias y la refactorización pueden servirle de ayuda para que el código de producción sea más compacto y eficaz.  
   
  **Analizar los problemas**  
@@ -423,6 +418,3 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 ```  
   
  En esta sección final, el trabajo que se hizo al mejorar el código de prueba condujo a métodos de prueba más eficaces e informativos. Pero, lo que es más importante, el análisis adicional también condujo a mejoras en el código del proyecto en pruebas.
-
-
-

@@ -1,45 +1,39 @@
 ---
 title: Definiciones de elementos | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - msbuild, item definitions
 ms.assetid: 8e3dc223-f9e5-4974-aa0e-5dc7967419cb
 caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 35506967ee20ff6c936e2de4a19d7860e154e4c5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: a9298f57e3b1f4a05effcb82a39e14503c9cbf74
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49866576"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090764"
 ---
 # <a name="item-definitions"></a>Definiciones de elementos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 2.0 permite la declaración estática de los elementos de archivos de proyecto mediante el elemento [ItemGroup](../msbuild/itemgroup-element-msbuild.md). Sin embargo, sólo se pueden agregar metadatos en el nivel de elemento, aunque los metadatos sean idénticos para todos los elementos. A partir de [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 3.5, un elemento de proyecto denominado [ItemDefinitionGroup](../msbuild/itemdefinitiongroup-element-msbuild.md) resuelve esta limitación. *ItemDefinitionGroup* permite definir un conjunto de definiciones de elementos, las cuales agregan valores de metadatos predeterminados a todos los elementos del tipo de elemento especificado.  
   
  El elemento *ItemDefinitionGroup* aparece inmediatamente después del elemento [Project](../msbuild/project-element-msbuild.md) del archivo de proyecto. Las definiciones de elementos proporcionan la funcionalidad siguiente:  
   
--   Puede definir metadatos predeterminados globales para los elementos fuera de un destino. Es decir, los mismos metadatos se aplican a todos los elementos del tipo especificado.  
+- Puede definir metadatos predeterminados globales para los elementos fuera de un destino. Es decir, los mismos metadatos se aplican a todos los elementos del tipo especificado.  
   
--   Los tipos de elementos pueden tener varias definiciones. Cuando se agregan otras especificaciones de metadatos al tipo, la última especificación tiene la prioridad. \(Los metadatos siguen el mismo orden de importación que las propiedades.\)  
+- Los tipos de elementos pueden tener varias definiciones. Cuando se agregan otras especificaciones de metadatos al tipo, la última especificación tiene la prioridad. \(Los metadatos siguen el mismo orden de importación que las propiedades.\)  
   
--   Los metadatos pueden ser aditivos. Por ejemplo, los valores de CDefines se acumulan condicionalmente, dependiendo de las propiedades que se establezcan. Por ejemplo: `MT;STD_CALL;DEBUG;UNICODE`.  
+- Los metadatos pueden ser aditivos. Por ejemplo, los valores de CDefines se acumulan condicionalmente, dependiendo de las propiedades que se establezcan. Por ejemplo: `MT;STD_CALL;DEBUG;UNICODE`.  
   
--   Se puede quitar los metadatos.  
+- Se puede quitar los metadatos.  
   
--   Se puede utilizar condiciones para controlar la inclusión de metadatos.  
+- Se puede utilizar condiciones para controlar la inclusión de metadatos.  
   
 ## <a name="item-metadata-default-values"></a>Valores predeterminados de los metadatos de elemento  
  Los metadatos de elemento definidos en ItemDefinitionGroup son simplemente una declaración de los metadatos predeterminados. Los metadatos no se aplican a menos que defina un elemento que utilice un ItemGroup para contener los valores de los metadatos.  
@@ -72,21 +66,21 @@ ms.locfileid: "49866576"
 ## <a name="value-sources"></a>Orígenes de los valores  
  Los valores de los metadatos definidos en ItemDefinitionGroup pueden proceder de muchos orígenes diferentes, como se indica a continuación:  
   
--   Propiedad PropertyGroup  
+- Propiedad PropertyGroup  
   
--   Elemento de un ItemDefinitionGroup  
+- Elemento de un ItemDefinitionGroup  
   
--   Transformación de un elemento de ItemDefinitionGroup  
+- Transformación de un elemento de ItemDefinitionGroup  
   
--   Variable de entorno  
+- Variable de entorno  
   
--   Propiedad global \(de la línea de comandos de MSBuild.exe\)  
+- Propiedad global \(de la línea de comandos de MSBuild.exe\)  
   
--   Propiedad reservada  
+- Propiedad reservada  
   
--   Metadatos conocidos en un elemento de un ItemDefinitionGroup  
+- Metadatos conocidos en un elemento de un ItemDefinitionGroup  
   
--   Sección CDATA\<\!\[CDATA\[no se analiza nada de lo que se escriba aquí\]\]\>  
+- Sección CDATA\<\!\[CDATA\[no se analiza nada de lo que se escriba aquí\]\]\>  
   
 > [!NOTE]
 >  Los metadatos de elemento de un ItemGroup no son útiles en una declaración de metadatos de ItemDefinitionGroup porque los elementos de ItemDefinitionGroup se procesan antes que los elementos de ItemGroup.  
@@ -247,6 +241,3 @@ ms.locfileid: "49866576"
   
 ## <a name="see-also"></a>Vea también  
  [Procesamiento por lotes](../msbuild/msbuild-batching.md)
-
-
-

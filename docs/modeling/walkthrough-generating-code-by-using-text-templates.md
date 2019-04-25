@@ -7,18 +7,17 @@ helpviewer_keywords:
 - walkthroughs [text templates]
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 5785dee0da189da4db7aad15ee8eff18b20ee49a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 042d6b6c59489abcfbdcdd4dd10055ea4dedfff5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898091"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055670"
 ---
-# <a name="walkthrough-generate-code-by-using-text-templates"></a>Tutorial: Generar código mediante plantillas de texto
+# <a name="walkthrough-generate-code-by-using-text-templates"></a>Tutorial: Generación de código mediante plantillas de texto
 
 La generación de código permite producir código de programa que está fuertemente tipado, pero que se puede modificar con facilidad cuando el modelo de origen cambia. Compare esto con la técnica alternativa de escribir un programa totalmente genérico que acepta un archivo de configuración, que es más flexible, pero produce código que no es tan fácil de leer ni de cambiar y que no tiene un rendimiento tan bueno. En este tutorial se muestra esta ventaja.
 
@@ -84,9 +83,9 @@ En este proyecto, se usa un solo archivo de plantilla para generar las clases qu
 
 Puede aplicar esta técnica a cualquier proyecto de código. En este tutorial se usa un proyecto de C#, mientras que para la realización de las pruebas se usa una aplicación de consola.
 
-1.  En el menú **Archivo** , haga clic en **Nuevo** y, después, haga clic en **Proyecto**.
+1. En el menú **Archivo** , haga clic en **Nuevo** y, después, haga clic en **Proyecto**.
 
-2.  Haga clic en el nodo **Visual C#** y, en el panel **Plantillas** , haga clic en **Aplicación de consola**.
+2. Haga clic en el nodo **Visual C#** y, en el panel **Plantillas** , haga clic en **Aplicación de consola**.
 
 ### <a name="add-a-prototype-xml-file-to-the-project"></a>Agregar un archivo XML de prototipo al proyecto
 
@@ -94,13 +93,13 @@ El propósito de este archivo es proporcionar ejemplos de los tipos de nodo XML 
 
 El archivo debe formar parte del proyecto para que la plantilla pueda leerlo, pero no se integrará en la aplicación compilada.
 
-1.  En el **Explorador de soluciones**, haga clic con el botón derecho en el proyecto, haga clic en **Agregar** y después en **Nuevo elemento**.
+1. En el **Explorador de soluciones**, haga clic con el botón derecho en el proyecto, haga clic en **Agregar** y después en **Nuevo elemento**.
 
-2.  En el cuadro de diálogo **Agregar nuevo elemento** , seleccione **Archivo XML** en el panel **Plantillas** .
+2. En el cuadro de diálogo **Agregar nuevo elemento** , seleccione **Archivo XML** en el panel **Plantillas** .
 
-3.  Agregue el contenido de ejemplo al archivo.
+3. Agregue el contenido de ejemplo al archivo.
 
-4.  Para este tutorial, asigne al archivo el nombre `exampleXml.xml`. Establezca el contenido del archivo de modo que sea el XML que se muestra en la sección anterior.
+4. Para este tutorial, asigne al archivo el nombre `exampleXml.xml`. Establezca el contenido del archivo de modo que sea el XML que se muestra en la sección anterior.
 
 ### <a name="add-a-test-code-file"></a>Agregar un archivo de código de prueba
 
@@ -132,20 +131,20 @@ Una prueba más completa podría comprobar la salida de esta función de prueba 
 
 Agregue un archivo de plantilla de texto y establezca la extensión de salida *.cs*.
 
-1.  En el **Explorador de soluciones**, haga clic con el botón derecho en el proyecto, haga clic en **Agregar**y después en **Nuevo elemento**.
+1. En el **Explorador de soluciones**, haga clic con el botón derecho en el proyecto, haga clic en **Agregar**y después en **Nuevo elemento**.
 
-2.  En el cuadro de diálogo **Agregar nuevo elemento** , seleccione **Plantilla de texto** en el panel **Plantillas** .
+2. En el cuadro de diálogo **Agregar nuevo elemento** , seleccione **Plantilla de texto** en el panel **Plantillas** .
 
     > [!NOTE]
     > Asegúrese de agregar una plantilla de texto y no una plantilla de texto preprocesada.
 
-3.  En la directiva de plantilla del archivo, cambie el atributo `hostspecific` a `true`.
+3. En la directiva de plantilla del archivo, cambie el atributo `hostspecific` a `true`.
 
      Este cambio permitirá que el código de plantilla obtener acceso a los servicios de Visual Studio.
 
-4.  En la directiva de salida, cambie el atributo de extensión a ".cs" para que la plantilla genere un archivo de C#. En un proyecto de Visual Basic, lo cambiaría a ".vb".
+4. En la directiva de salida, cambie el atributo de extensión a ".cs" para que la plantilla genere un archivo de C#. En un proyecto de Visual Basic, lo cambiaría a ".vb".
 
-5.  Guarde el archivo. En esta fase, el archivo de plantilla de texto debe contener estas líneas:
+5. Guarde el archivo. En esta fase, el archivo de plantilla de texto debe contener estas líneas:
 
     ```
     <#@ template debug="false" hostspecific="true" language="C#" #>
@@ -413,15 +412,15 @@ Para volver a generar las clases cuando se cambia el archivo XML de ejemplo, hag
 
 En este tutorial se muestran varias técnicas y ventajas de la generación de código:
 
--   La*generación de código* es la creación de parte del código fuente de la aplicación a partir de un *modelo*. El modelo contiene información en un formato adecuado para el dominio de aplicación y puede cambiar durante la vigencia de la aplicación.
+- La*generación de código* es la creación de parte del código fuente de la aplicación a partir de un *modelo*. El modelo contiene información en un formato adecuado para el dominio de aplicación y puede cambiar durante la vigencia de la aplicación.
 
--   El tipado fuerte es una de las ventajas de la generación de código. Aunque el modelo representa la información en un formato más adecuado para el usuario, el código generado permite que otras partes de la aplicación traten la información con un conjunto de tipos.
+- El tipado fuerte es una de las ventajas de la generación de código. Aunque el modelo representa la información en un formato más adecuado para el usuario, el código generado permite que otras partes de la aplicación traten la información con un conjunto de tipos.
 
--   IntelliSense y el compilador ayudan a crear código que cumple el esquema del modelo, tanto al escribir código nuevo como al actualizar el esquema.
+- IntelliSense y el compilador ayudan a crear código que cumple el esquema del modelo, tanto al escribir código nuevo como al actualizar el esquema.
 
--   La adición de un único archivo de plantilla poco complicado a un proyecto puede proporcionar estas ventajas.
+- La adición de un único archivo de plantilla poco complicado a un proyecto puede proporcionar estas ventajas.
 
--   Es posible desarrollar y probar rápidamente y de manera incremental una plantilla de texto.
+- Es posible desarrollar y probar rápidamente y de manera incremental una plantilla de texto.
 
 En este tutorial, el código de programa se genera realmente desde una instancia del modelo, que es un ejemplo representativo de los archivos XML que la aplicación va a procesar. Siguiendo un enfoque más formal, el esquema XML sería la entrada a la plantilla, en forma de archivo .xsd o definición de lenguaje específico de dominio. Este enfoque puede facilitar que la plantilla determine características como la multiplicidad de una relación.
 

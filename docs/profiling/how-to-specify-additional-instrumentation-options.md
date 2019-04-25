@@ -10,15 +10,15 @@ helpviewer_keywords:
 - performance sessions, options
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a4e7d75724d6980be5d3a51947e3dd3e4eeeca08
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c95add435824663e798d226e0be11ddbe06b8aba
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53858674"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56618684"
 ---
 # <a name="how-to-specify-additional-instrumentation-options"></a>Procedimiento Especificar opciones de instrumentación adicionales
 
@@ -41,5 +41,5 @@ Puede instrumentar archivos binarios mediante el IDE de Visual Studio o con las 
 
 ## <a name="see-also"></a>Vea también
 
-[Configuración de sesiones de rendimiento](../profiling/configuring-performance-sessions.md)  
+[Configurar sesiones de rendimiento](../profiling/configuring-performance-sessions.md)
 [Generación de perfiles desde la línea de comandos](../profiling/using-the-profiling-tools-from-the-command-line.md)

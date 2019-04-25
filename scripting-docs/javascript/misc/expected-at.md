@@ -1,14 +1,9 @@
 ---
-title: Se esperaba ' @' | Microsoft Docs
-ms.custom: ''
+title: Se esperaba '@' | Microsoft Docs
 ms.date: 01/18/2017
-ms.prod: windows-client-threshold
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- javascript
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-windows
+ms.technology: vs-javascript
+ms.topic: reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1032
 dev_langs:
@@ -16,23 +11,22 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: 82ff8b74-1710-4358-9a26-dc92ab29c53b
-caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 73e7e8fb43bb45e4c97b6bb5ec6c739c16a4423a
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: aa2728306d9e650bf7f8b446b6af5a409a39d0e0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54349865"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101566"
 ---
-# <a name="expected-"></a>Se esperaba '@'
+# <a name="expected-"></a>Se esperaba '\@'
 Se intentó crear una variable para su uso con instrucciones de compilación condicional mediante el `@set` instrucción, pero no realizó una arroba "**@**" antes del nombre de variable.  
   
 ### <a name="to-correct-this-error"></a>Para corregir este error  
   
--   Agregue un signo "**@**" inmediatamente antes del nombre de variable. Por ejemplo:  
+- Agregue un signo "**@**" inmediatamente antes del nombre de variable. Por ejemplo:  
   
     ```JavaScript  
     @set @myvar = 1  

@@ -30,15 +30,15 @@ helpviewer_keywords:
 ms.assetid: 43a77fa8-37d0-4c98-a334-0134dbca4ece
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f31fa49916bf9b6d13865cd5d427670ceb33cb0
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.openlocfilehash: b83cb026bec6d33490517e5703a042b4a8e2434c
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54204423"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428705"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Administración de excepciones con el depurador de Visual Studio
 
@@ -204,7 +204,7 @@ Puede agregar la excepción a **configuración de excepciones** mediante el proc
 Use la **configuración de excepciones** ventana para establecer condiciones en las excepciones. Las condiciones admitidas actualmente incluyen los nombres de módulo para incluir o excluir de la excepción. Al establecer los nombres de módulo como condiciones, puede interrumpir para la excepción solo en determinados módulos de código. También puede evitar interrupciones en módulos concretos.
 
 > [!NOTE]
-> Agregar condiciones a una excepción es nueva en [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
+> Agregar condiciones a una excepción se admite a partir de [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
 
 Para agregar excepciones condicionales:
 
@@ -222,8 +222,8 @@ Para agregar excepciones condicionales:
 
 ## <a name="see-also"></a>Vea también
 
-[Continuación de la ejecución después de una excepción](../debugger/continuing-execution-after-an-exception.md)<br/>
-[Cómo: examinar el código del sistema después de una excepción](../debugger/how-to-examine-system-code-after-an-exception.md)<br/>
-[Cómo: usar comprobaciones nativas en tiempo de ejecución](../debugger/how-to-use-native-run-time-checks.md)<br/>
-[Usar comprobaciones en tiempo de ejecución sin la biblioteca en tiempo de ejecución de C](../debugger/using-run-time-checks-without-the-c-run-time-library.md)<br/>
-[Primer vistazo al depurador](../debugger/debugger-feature-tour.md)
+- [Continuación de la ejecución después de una excepción](../debugger/continuing-execution-after-an-exception.md)<br/>
+- [Análisis del código del sistema después de una excepción](../debugger/how-to-examine-system-code-after-an-exception.md)<br/>
+- [Uso de comprobaciones nativas en tiempo de ejecución](../debugger/how-to-use-native-run-time-checks.md)<br/>
+- [Usar comprobaciones en tiempo de ejecución sin la biblioteca en tiempo de ejecución de C](../debugger/using-run-time-checks-without-the-c-run-time-library.md)<br/>
+- [Primer vistazo al depurador](../debugger/debugger-feature-tour.md)

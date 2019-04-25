@@ -2,25 +2,24 @@
 title: 'Inició rápido: Clonación de un repositorio de código Python'
 description: En este inicio rápido, creará un proyecto de Python en Visual Studio mediante la clonación del repositorio de Python Koans mediante Visual Studio Team Explorer.
 ms.date: 12/06/2018
-ms.prod: visual-studio-dev15
 ms.topic: quickstart
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a98b236d12954d5707df7fa4933c1f31150c7a0c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 446c2622c01e1b127347a668e199e3e6e6e0b1c5
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53922852"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59367009"
 ---
 # <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>Inicio rápido: Clonar un repositorio de código de Python en Visual Studio
 
-Cuando haya [instalado compatibilidad de Python en Visual Studio 2017](installing-python-support-in-visual-studio.md), puede agregar la extensión de GitHub para Visual Studio. La extensión le permite clonar fácilmente un repositorio de código de Python y crear un proyecto a partir de allí desde el IDE. Siempre puede clonar repositorios en la línea de comandos y después trabajar con ellos en Visual Studio.
+Cuando haya [instalado la compatibilidad con Python en Visual Studio](installing-python-support-in-visual-studio.md), puede agregar la extensión de GitHub para Visual Studio. La extensión le permite clonar fácilmente un repositorio de código de Python y crear un proyecto a partir de allí desde el IDE. Siempre puede clonar repositorios en la línea de comandos y después trabajar con ellos en Visual Studio.
 
 ## <a name="install-the-github-extension-for-visual-studio"></a>Instalación de la extensión de GitHub para Visual Studio
 
@@ -51,7 +50,7 @@ Cuando haya [instalado compatibilidad de Python en Visual Studio 2017](installin
 
 1. En el **Explorador de soluciones**, expanda el nodo **python3**, haga clic con el botón derecho en **contemplate_koans.py** y seleccione **Establecer como archivo de inicio**. Este paso indica a Visual Studio qué archivo debe usar al ejecutar el proyecto.
 
-1. Seleccione **Proyecto**  > **Koans Properties** en el menú, seleccione la pestaña **General** y establezca **Directorio de trabajo** en "python3". Este paso es necesario porque, de forma predeterminada, Visual Studio establece el directorio de trabajo en la raíz del proyecto en lugar de hacerlo en la ubicación del archivo de inicio (*python3\contemplate_koans.py*, que también puede ver en las propiedades del proyecto). El código de programa busca un archivo *koans.txt* en la carpeta de trabajo por lo que, si no cambia este valor, verá un error en tiempo de ejecución.
+1. Seleccione **Proyecto** > **Koans Properties** en el menú, seleccione la pestaña **General** y establezca **Directorio de trabajo** en "python3". Este paso es necesario porque, de forma predeterminada, Visual Studio establece el directorio de trabajo en la raíz del proyecto en lugar de hacerlo en la ubicación del archivo de inicio (*python3\contemplate_koans.py*, que también puede ver en las propiedades del proyecto). El código de programa busca un archivo *koans.txt* en la carpeta de trabajo por lo que, si no cambia este valor, verá un error en tiempo de ejecución.
 
     ![Configuración del directorio de trabajo para un proyecto de Python](media/projects-set-working-directory.png)
 
@@ -83,6 +82,6 @@ Cuando haya [instalado compatibilidad de Python en Visual Studio 2017](installin
 
 ## <a name="see-also"></a>Vea también
 
-- [Manually identifying an existing Python interpreter](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment) (Identificación manual de un intérprete de Python existente)
+- [Identificación manual de un intérprete de Python existente](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)
 - [Instalación de la compatibilidad con Python en Visual Studio 2015 y versiones anteriores](installing-python-support-in-visual-studio.md)
 - [Ubicaciones de instalación](installing-python-support-in-visual-studio.md#install-locations)

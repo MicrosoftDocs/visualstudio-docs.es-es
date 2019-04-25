@@ -2,19 +2,18 @@
 title: Versión actual de Herramientas de R
 description: Describe cómo comprobar la versión de Herramientas de R para Visual Studio e instalar las actualizaciones.
 ms.date: 07/23/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: c5d531f90dd748b3c10e3ac2295a8c340d63b04b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 107e39e147c62f73c5656f3a398fbca231620c67
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53885697"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56840416"
 ---
 # <a name="rtvs-current-version"></a>Versión actual de RTVS
 
@@ -28,4 +27,4 @@ En Visual Studio 2015, el instalador más reciente está disponible en [aka.ms/r
 
 Consulte los requisitos de [instalación](installing-r-tools-for-visual-studio.md) de Visual Studio y Windows.
 
-Para obtener actualizaciones de Microsoft R Open y Microsoft Machine Learning Server (anteriormente, Microsoft R Server), vea: [Productos de Microsoft R](http://aka.ms/rtvs-msft-r).
+Para obtener actualizaciones de Microsoft R Open y Microsoft Machine Learning Server (anteriormente, Microsoft R Server), vea: [Productos de Microsoft R](https://aka.ms/rtvs-msft-r).

@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 1472e884-c74e-4c23-9d4a-6d8bdcac043b
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dcf5f6366514fb18074d253b788c9cf67f1d297a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: eafa07afa26744e3c5be3e1fe3d588b2a43ebfd8
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53835057"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56693303"
 ---
 # <a name="ngen-support-in-vsix-v3"></a>Compatibilidad con Ngen en VSIX v3
 

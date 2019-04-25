@@ -1,13 +1,8 @@
 ---
-title: JavaScript en Visual Studio | Microsoft Docs
-ms.custom: ''
+title: JavaScript
 ms.date: 01/15/2019
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-nodejs
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-javascript
+ms.topic: conceptual
 dev_langs:
 - JavaScript
 - TypeScript
@@ -16,13 +11,14 @@ ms.assetid: 74dca14c-5071-416f-a92b-d09f95e3dfb8
 caps.latest.revision: 1
 author: bowdenk7
 ms.author: wilkelly
-manager: douge
-ms.openlocfilehash: 1045c515870d2574bfb86d12396c5572b01ddda4
-ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
+manager: jillfra
+monikerRange: vs-2017
+ms.openlocfilehash: 88de2703db119f4124eb02658efb327df2ae899f
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54398439"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790477"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>JavaScript en Visual Studio 2017
 
@@ -37,7 +33,7 @@ Visual Studio admite ahora la sintaxis para actualizaciones del lenguaje ECMAScr
 
 ### <a name="what-is-ecmascript-2015"></a>¿Qué es ECMAScript 2015?
 
-JavaScript sigue aún evolucionando como un lenguaje de programación y [TC39](http://www.ecma-international.org/memento/TC39.htm) es el comité responsable de realizar actualizaciones.
+JavaScript sigue aún evolucionando como un lenguaje de programación y [TC39](https://www.ecma-international.org/memento/tc39-m.htm) es el comité responsable de realizar actualizaciones.
 ECMAScript 2015 es una actualización del lenguaje JavaScript que incorpora funciones y sintaxis nuevas de gran utilidad. Para profundizar en las características de ES6, consulte [este](http://es6-features.org) sitio de referencia.
 
 Además, para la compatibilidad con ECMAScript 2015, Visual Studio también admite ECMAScript 2016 y tendrá compatibilidad con versiones futuras de ECMAScript cuando se publiquen. Para mantenerse informado con TC39 y los últimos cambios en ECMAScript, siga su trabajo en [Github](https://github.com/tc39).
@@ -206,7 +202,8 @@ Podría usar el siguiente archivo `tsconfig.json` para asegurarse de que el serv
   }
 }
 ```
-# <a name="troubleshooting-the-javascript-language-service-has-been-disabled-for-the-following-projects"></a>La solución de problemas del servicio de lenguaje JavaScript se ha deshabilitado para los proyectos siguientes
+
+## <a name="troubleshooting-the-javascript-language-service-has-been-disabled-for-the-following-projects"></a>La solución de problemas del servicio de lenguaje JavaScript se ha deshabilitado para los proyectos siguientes
 Al abrir un proyecto de JavaScript que tiene una gran cantidad de contenido, es posible que obtenga un mensaje que dice "el servicio de lenguaje de JavaScript se ha deshabilitado para los siguientes proyectos". La razón más común para tener una gran cantidad de código fuente de JavaScript es para incluir las bibliotecas con código fuente que supera un límite de proyecto de 20 MB.
 
 Una manera sencilla de optimizar el proyecto consiste en agregar un archivo `tsconfig.json` en la raíz del proyecto para que el servicio de lenguaje sepa qué archivos se pueden ignorar. Use el ejemplo siguiente para excluir los directorios más comunes donde se almacenan las bibliotecas:
@@ -231,7 +228,7 @@ Una manera sencilla de optimizar el proyecto consiste en agregar un archivo `tsc
 }
 ```
 
-Agregue más directorios como considere oportuno. Otros ejemplos incluyen los directorios "proveedor" o "wwwroot/lib". 
+Agregue más directorios como considere oportuno. Otros ejemplos incluyen los directorios "proveedor" o "wwwroot/lib".
 
 > [!NOTE]
 > También se puede usar la propiedad de compilador `disableSizeLimit` para deshabilitar el límite de comprobación de 20 MB. Tome precauciones especiales al usar esta propiedad porque deshabilitar el límite es posible que bloquee el servicio de lenguaje.

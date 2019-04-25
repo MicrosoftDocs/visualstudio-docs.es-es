@@ -1,14 +1,9 @@
 ---
 title: Csc (tarea) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Csc
 dev_langs:
@@ -23,18 +18,17 @@ ms.assetid: d8c19b36-f5ca-484b-afa6-8ff3b90e103a
 caps.latest.revision: 30
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 657535e73294508ac59330cd379c1c6bd192a0b2
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 2d69d19e43ae2e94382e32ba6579f55cecb2efca
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49237385"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659493"
 ---
 # <a name="csc-task"></a>Csc (Tarea)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Encapsula CSC.exe y genera archivos ejecutables (.exe), archivos de biblioteca de vínculos dinámicos (.dll) o archivos de módulos de códigos (.netmodule). Para obtener más información sobre CSC.exe, consulte [Opciones del compilador de C#](http://msdn.microsoft.com/library/d3403556-1816-4546-a782-e8223a772e44).  
   
 ## <a name="parameters"></a>Parámetros  
@@ -103,6 +97,3 @@ Encapsula CSC.exe y genera archivos ejecutables (.exe), archivos de biblioteca d
 ## <a name="see-also"></a>Vea también  
  [Referencia de tareas](../msbuild/msbuild-task-reference.md)   
  [Tareas](../msbuild/msbuild-tasks.md)
-
-
-

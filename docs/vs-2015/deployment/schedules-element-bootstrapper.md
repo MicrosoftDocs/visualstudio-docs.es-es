@@ -1,14 +1,9 @@
 ---
 title: '&lt;Las programaciones&gt; (elemento, arranque) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -20,13 +15,13 @@ ms.assetid: 28d094cf-64f5-42b1-bd8a-3697082aab4f
 caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: ba556d1f9ab7dfefd5502ee150354d4f664d6710
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 85ffab2272a55bfe77c5f2a73c6e25967a203c85
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49250996"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58995030"
 ---
 # <a name="ltschedulesgt-element-bootstrapper"></a>&lt;Las programaciones&gt; (elemento, arranque)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +52,7 @@ El `Schedules` contiene elemento `Schedule` elementos, que definen las horas esp
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|`Name`|Requerido. El nombre del elemento de programación. Esto corresponde a la `ScheduleName` propiedad de la `Command` elemento. Cuando un `Command` hace referencia a la programación con nombre, sólo se ejecutará en el momento indicado por el que `Schedule` elemento. También se pueden asociar las programaciones del `FailIf` y `BypassIf` elementos, que restringen estas comprobaciones condicionales para la ejecución de la programación especificada. Para obtener más información, consulte [ \<comandos > elemento](../deployment/commands-element-bootstrapper.md).|  
+|`Name`|Obligatorio. El nombre del elemento de programación. Esto corresponde a la `ScheduleName` propiedad de la `Command` elemento. Cuando un `Command` hace referencia a la programación con nombre, sólo se ejecutará en el momento indicado por el que `Schedule` elemento. También se pueden asociar las programaciones del `FailIf` y `BypassIf` elementos, que restringen estas comprobaciones condicionales para la ejecución de la programación especificada. Para obtener más información, consulte [ \<comandos > elemento](../deployment/commands-element-bootstrapper.md).|  
   
  A partir de `Schedule` elemento puede tener exactamente uno de los elementos secundarios siguientes.  
   
@@ -73,6 +68,3 @@ El `Schedules` contiene elemento `Schedule` elementos, que definen las horas esp
 ## <a name="see-also"></a>Vea también  
  [\<Producto > elemento](../deployment/product-element-bootstrapper.md)   
  [Referencia de esquemas de productos y paquetes](../deployment/product-and-package-schema-reference.md)
-
-
-

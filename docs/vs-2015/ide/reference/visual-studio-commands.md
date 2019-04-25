@@ -1,13 +1,9 @@
 ---
-title: Comandos | Microsoft Docs
-ms.custom: ''
+title: Comandos | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: reference
 helpviewer_keywords:
 - Visual Studio, commands
 - commands, Visual Studio
@@ -16,17 +12,16 @@ ms.assetid: 76ffa394-ee89-4629-aba9-1a62b72e6cc1
 caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 8bfcac20d0facea28734e27cbb60966717cdcdc2
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
-ms.translationtype: MTE95
+manager: jillfra
+ms.openlocfilehash: 10ce4bd59567d7d055dd107dd05358d994d22c36
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53869812"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662571"
 ---
 # <a name="visual-studio-commands"></a>Comandos de Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
-
 
 Los comandos de Visual Studio le permiten invocar un comando desde la ventana **Comando** , la ventana **Inmediato** o el cuadro **Buscar/comando** . En todos los casos, el signo mayor que (`>`) se usa para indicar que se debe seguir un comando en lugar de una operación de búsqueda o de depuración.
 

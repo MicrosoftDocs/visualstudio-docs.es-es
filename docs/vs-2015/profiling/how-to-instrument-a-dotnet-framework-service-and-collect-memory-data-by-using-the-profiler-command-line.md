@@ -1,27 +1,22 @@
 ---
-title: 'Cómo: Instrumentar un servicio de .NET Framework y recopilar datos de memoria mediante la línea de comandos del generador de perfiles | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Instrumentar un servicio de .NET Framework y recopilar datos de memoria mediante la línea de comandos del generador de perfiles | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 2fa072fc-05fe-4420-99c0-51d2ea3ac4ce
 caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 489ca430aa6f2bf510ab8cebb375146502deedef
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e0bbf15c82f62ad61e538f48cec065a9ef806ad4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51757804"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113617"
 ---
-# <a name="how-to-instrument-a-net-framework-service-and-collect-memory-data-by-using-the-profiler-command-line"></a>Cómo: Instrumentar un servicio de .NET Framework y recopilar datos de memoria mediante la línea de comandos del generador de perfiles
+# <a name="how-to-instrument-a-net-framework-service-and-collect-memory-data-by-using-the-profiler-command-line"></a>Procedimiento Instrumentar un servicio .NET Framework y recopilar datos de memoria mediante el uso de la línea de comandos de Profiler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 En este tema se describe cómo usar las herramientas de línea de comandos de las herramientas de generación de perfiles de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para instrumentar un servicio de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] y recopilar datos de uso de memoria. Puede recopilar datos de asignación de memoria o recopilar tanto datos de asignación de memoria como de duración de objetos.  
@@ -55,7 +50,7 @@ En este tema se describe cómo usar las herramientas de línea de comandos de la
 
     **VSPerfClrEnv** {**/globaltracegc** &#124; **/globaltracegclife**}  
 
-   -   **/globaltracegc** y **/globaltracegclife** habilitan la recopilación de datos de asignación de memoria y duración de los objetos.  
+   - **/globaltracegc** y **/globaltracegclife** habilitan la recopilación de datos de asignación de memoria y duración de los objetos.  
 
        |Opción|Descripción|  
        |------------|-----------------|  
@@ -90,21 +85,20 @@ En este tema se describe cómo usar las herramientas de línea de comandos de la
    |         [/automark](../profiling/automark.md) **:** `Interval`          |                                                                                  Utilizar solo con **/wincounter**. Especifica el número de milisegundos entre eventos de recopilación de contadores de rendimiento de Windows. El valor predeterminado es 500 ms.                                                                                   |
    |       [/events](../profiling/events-vsperfcmd.md) **:** `Config`        |                                                                                     Especifica un evento de Seguimiento de eventos para Windows (ETW) que se va a recopilar durante la generación de perfiles. Los eventos ETW se recopilan en un archivo (.etl) independiente.                                                                                     |
 
-
 8. Si es necesario, inicie el servicio.  
 
 9. Adjunte el generador de perfiles al servicio. Tipo:  
 
      **VSPerfCmd /attach:** `PID`&#124;`ProcessName`  
 
-    -   Especifica el identificador o el nombre de proceso del servicio. Puede ver los nombres e identificadores de todos los procesos que se están ejecutando en el Administrador de tareas de Windows.  
+    - Especifica el identificador o el nombre de proceso del servicio. Puede ver los nombres e identificadores de todos los procesos que se están ejecutando en el Administrador de tareas de Windows.  
 
 ## <a name="controlling-data-collection"></a>Controlar la recolección de datos  
  Mientras se ejecuta el servicio, puede controlar la recopilación de datos iniciando o deteniendo la escritura de los datos en el archivo con las opciones de **VSPerfCmd.exe**. Al controlar la recolección de datos, puede recopilar datos de una parte específica de la ejecución de un programa, como por ejemplo el inicio o el cierre de una aplicación.  
 
 #### <a name="to-start-and-stop-data-collection"></a>Para iniciar y detener la recolección de datos  
 
--   Los siguientes pares de opciones de **VSPerfCmd** inician y detienen la recolección de datos. Especifique cada opción en una línea de comandos diferente. Puede activar y desactivar la recolección de datos varias veces.  
+- Los siguientes pares de opciones de **VSPerfCmd** inician y detienen la recolección de datos. Especifique cada opción en una línea de comandos diferente. Puede activar y desactivar la recolección de datos varias veces.  
 
     |Opción|Descripción|  
     |------------|-----------------|  
@@ -117,23 +111,20 @@ En este tema se describe cómo usar las herramientas de línea de comandos de la
 
 #### <a name="to-end-a-profiling-session"></a>Para finalizar una sesión de generación de perfiles  
 
-1.  Detenga el servicio en el Administrador de control de servicios.  
+1. Detenga el servicio en el Administrador de control de servicios.  
 
-2.  Cierre el generador de perfiles. Tipo:  
+2. Cierre el generador de perfiles. Tipo:  
 
      **VSPerfCmd /shutdown**  
 
-3.  Cuando haya finalizado la generación de perfiles, borre las variables de entorno de generación de perfiles. Tipo:  
+3. Cuando haya finalizado la generación de perfiles, borre las variables de entorno de generación de perfiles. Tipo:  
 
      **VSPerfClrEnv /globaloff**  
 
      Reemplace el módulo instrumentado con el original. Si es necesario, vuelva a configurar el Tipo de inicio del servicio.  
 
-4.  Reinicie el equipo.  
+4. Reinicie el equipo.  
 
 ## <a name="see-also"></a>Vea también  
  [Generación de perfiles de servicios](../profiling/command-line-profiling-of-services.md)   
  [Vistas de datos de memoria de .NET](../profiling/dotnet-memory-data-views.md)
-
-
-

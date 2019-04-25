@@ -1,7 +1,6 @@
 ---
 title: Desarrollo de código sin proyectos o soluciones
 ms.date: 02/21/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - open folder [Visual Studio]
@@ -9,19 +8,19 @@ helpviewer_keywords:
 - projects and solutions, develop code without
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a1275a5c0ada3ddc12fe4257880e16d130243d0e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7554d3f89547701e1a7cad0280a1655450520586
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968477"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323664"
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>Desarrollo de código en Visual Studio sin proyectos o soluciones
 
-En Visual Studio 2017, puede abrir código desde casi cualquier tipo de proyecto basado en directorios en Visual Studio sin necesidad de un archivo de solución o proyecto. Esto significa que, por ejemplo, puede clonar un repositorio en GitHub, abrirlo directamente en Visual Studio y comenzar a desarrollar sin tener que crear una solución o proyecto. Si es necesario, puede especificar tareas de compilación personalizadas y parámetros de inicio a través de archivos JSON simples.
+Puede abrir código desde casi cualquier tipo de proyecto basado en directorios en Visual Studio sin necesidad de un archivo de solución o proyecto. Esto significa que, por ejemplo, puede clonar un repositorio en GitHub, abrirlo directamente en Visual Studio y comenzar a desarrollar sin tener que crear una solución o proyecto. Si es necesario, puede especificar tareas de compilación personalizadas y parámetros de inicio a través de archivos JSON simples.
 
 Una vez que abre los archivos de código en Visual Studio, el **Explorador de soluciones** muestra todos los archivos de la carpeta. Puede hacer clic en cualquier archivo para comenzar a editarlo. En segundo plano, Visual Studio comienza a indexar los archivos para habilitar las características de refactorización, navegación e IntelliSense. A medida que edita, crea, mueve o elimina archivos, Visual Studio hace seguimiento de manera automática de los cambios y actualiza de manera continua su indice de IntelliSense. El código aparecerá con coloración de sintaxis y, en muchos casos, incluye la finalización de instrucciones de IntelliSense básicas.
 
@@ -30,9 +29,19 @@ Una vez que abre los archivos de código en Visual Studio, el **Explorador de so
 Puede abrir el código en Visual Studio de una de las maneras siguientes:
 
 - En la barra de menús de Visual Studio, elija **Archivo** > **Abrir** > **Carpeta** y vaya a la ubicación del código.
+
 - En el menú contextual (clic derecho) de una carpeta que contiene código, elija el comando **Abrir en Visual Studio**.
+
+::: moniker range="vs-2017"
 - Elija el vínculo **Abrir carpeta** en la **página de inicio** de Visual Studio.
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+- Haga clic en el vínculo **Abrir carpeta** de la ventana de inicio.
+::: moniker-end
+
 - Si es usuario de teclado, presione **Ctrl**+**Mayús**+**Alt**+**O** en Visual Studio.
+
 - Abra el código desde un repositorio GitHub clonado.
 
 ### <a name="to-open-code-from-a-cloned-github-repo"></a>Para abrir el código desde un repositorio de GitHub clonado
@@ -62,10 +71,6 @@ En el ejemplo siguiente se muestra cómo clonar un repositorio de GitHub y, a co
    ![Mostrar vista de carpeta](./media/VSIDE_Code_Clone3_show.png)
 
    Ahora puede examinar las carpetas y los archivos del repositorio clonado y ver y buscar en el código en el editor de código de Visual Studio, con coloración de sintaxis y otras características.
-
-| | |
-|---------|---------|
-| ![icono de cámara de película para vídeo](../install/media/video-icon.png)| [Vea un vídeo](https://mva.microsoft.com/en-us/training-courses/getting-started-with-visual-studio-2017-17798?l=lp3TOKD6D_6711787171) sobre cómo clonar y abrir código desde un repositorio de GitHub en Visual Studio. |
 
 ## <a name="run-and-debug-your-code"></a>Ejecución y depuración del código
 
@@ -98,7 +103,7 @@ Si el código base contiene código de Python o JavaScript, no es necesario conf
 
 ### <a name="codebases-that-contain-c-code"></a>Códigos base que contienen código C++
 
-Para información sobre cómo abrir el código C++ sin soluciones ni proyectos en Visual Studio, consulte [Open Folder projects for C++](/cpp/ide/non-msbuild-projects) (Proyectos Abrir carpeta para C++).
+Para información sobre cómo abrir el código C++ sin soluciones ni proyectos en Visual Studio, consulte [Open Folder projects for C++](/cpp/build/open-folder-projects-cpp) (Proyectos Abrir carpeta para C++).
 
 ### <a name="codebases-that-contain-a-visual-studio-project"></a>Códigos base que contienen un proyecto de Visual Studio
 
@@ -113,6 +118,6 @@ El texto del botón **Inicio** cambia para reflejar que el proyecto es el elemen
 ## <a name="see-also"></a>Vea también
 
 - [Personalización de las tareas de compilación y depuración](../ide/customize-build-and-debug-tasks-in-visual-studio.md)
-- [Open Folder projects for C++](/cpp/ide/non-msbuild-projects) (Proyectos Abrir carpeta para C++)
-- [CMake projects in C++](/cpp/ide/cmake-tools-for-visual-cpp) (Proyectos CMake en C++)
+- [Open Folder projects for C++](/cpp/build/open-folder-projects-cpp) (Proyectos Abrir carpeta para C++)
+- [CMake projects in C++](/cpp/build/cmake-projects-in-visual-studio) (Proyectos CMake en C++)
 - [Escribir código en el editor de código y texto](../ide/writing-code-in-the-code-and-text-editor.md)

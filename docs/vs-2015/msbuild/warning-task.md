@@ -1,14 +1,9 @@
 ---
 title: Warning (Tarea) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Warning
 dev_langs:
@@ -23,18 +18,17 @@ ms.assetid: 96ba5507-8b43-4f54-a1d7-9b15644dd56c
 caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 0447c3803de6845dcfb02a30270cfe9b96b96f0a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: adbddc2fb36e5036e535dfc1049945187fe14ed0
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49213605"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59667799"
 ---
 # <a name="warning-task"></a>Warning (Tarea)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Registra una advertencia durante la compilación basándose en una instrucción condicional evaluada.  
   
 ## <a name="parameters"></a>Parámetros  
@@ -74,6 +68,3 @@ Registra una advertencia durante la compilación basándose en una instrucción 
 ## <a name="see-also"></a>Vea también  
  [Obtener registros de compilación](../msbuild/obtaining-build-logs-with-msbuild.md)   
  [Referencia de esquemas de archivo del proyecto](../msbuild/msbuild-project-file-schema-reference.md)
-
-
-

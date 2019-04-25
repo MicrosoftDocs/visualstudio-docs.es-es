@@ -1,27 +1,22 @@
 ---
 title: Carga de VSPackages | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, autoloading
 - VSPackages, loading
 ms.assetid: f4c3dcea-5051-4065-898f-601269649d92
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e351f49ea3e9579202e21868361e5d6f3d53b8fd
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6c9de9c90840c01b37b99d813fbf23b7c2be3eea
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51753881"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066577"
 ---
 # <a name="loading-vspackages"></a>Carga de VSPackages
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +30,7 @@ Los paquetes VSPackage se cargan en Visual Studio solo cuando su funcionalidad e
   
 ### <a name="autoloading-a-vspackage-in-a-specific-context"></a>Un VSPackage en un contexto específico de carga automática  
   
--   Agregar el `ProvideAutoLoad` atributo a los atributos de VSPackage:  
+- Agregar el `ProvideAutoLoad` atributo a los atributos de VSPackage:  
   
     ```csharp  
     [DefaultRegistryRoot(@"Software\Microsoft\VisualStudio\14.0")]  
@@ -48,11 +43,11 @@ Los paquetes VSPackage se cargan en Visual Studio solo cuando su funcionalidad e
   
      Ver los campos enumerados de <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80> para obtener una lista de los contextos de interfaz de usuario y sus valores GUID.  
   
--   Establecer un punto de interrupción en el <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> método.  
+- Establecer un punto de interrupción en el <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> método.  
   
--   Crear el VSPackage e iniciar la depuración.  
+- Crear el VSPackage e iniciar la depuración.  
   
--   Cargue una solución o cree uno.  
+- Cargue una solución o cree uno.  
   
      El VSPackage carga y se detiene en el punto de interrupción.  
   
@@ -61,7 +56,7 @@ Los paquetes VSPackage se cargan en Visual Studio solo cuando su funcionalidad e
   
  Puede usar el <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackage%2A> método para forzar la carga de un paquete VSPackage.  
   
--   Inserte este código en el <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> método del VSPackage que obliga a otro VSPackage para cargar:  
+- Inserte este código en el <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> método del VSPackage que obliga a otro VSPackage para cargar:  
   
     ```csharp  
     IVsShell shell = GetService(typeof(SVsShell)) as IVsShell;  
@@ -134,4 +129,3 @@ public override void Unregister(RegistrationContext context)
   
 ## <a name="see-also"></a>Vea también  
  [VSPackages](../extensibility/internals/vspackages.md)
-

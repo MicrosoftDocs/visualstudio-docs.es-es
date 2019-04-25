@@ -1,14 +1,9 @@
 ---
 title: /ResetSettings (devenv.exe) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - Devenv, /ResetSettings switch
 - ResetSettings switch
@@ -17,18 +12,17 @@ ms.assetid: 1d41021c-6f58-4bd5-b122-d1c995812192
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 276205ae2aab3c38ceb3d4f1419e0bac13ae626c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: a81c0082bc9b8e31c6c64ff1785f5f380709f3b5
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49273499"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650972"
 ---
 # <a name="resetsettings-devenvexe"></a>/ResetSettings (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Restaura la configuración predeterminada de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] e inicia automáticamente el IDE de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Opcionalmente, restablece la configuración de un archivo .vssettings especificado.  
   
  La configuración predeterminada se determina mediante el perfil que se ha seleccionado cuando [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] se ha iniciado por primera vez.  
@@ -56,8 +50,5 @@ Devenv.exe /ResetSettings "C:\My Files\MySettings.vssettings"
 ```  
   
 ## <a name="see-also"></a>Vea también  
- [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)   
+ [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)   
  [Modificadores de línea de comandos para Devenv](../../ide/reference/devenv-command-line-switches.md)
-
-
-

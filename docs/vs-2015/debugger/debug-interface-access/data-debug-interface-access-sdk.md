@@ -1,14 +1,9 @@
 ---
 title: Datos (Debug Interface Access SDK) | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -20,13 +15,13 @@ ms.assetid: 0f17e96a-2e06-42c9-a877-3e5e670ee0ef
 caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c0e777401602a4d802fa48c2b14ba97be89d8631
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a69e1cddec945cd797d91a92d28ba46221a20d10
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51809979"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58995766"
 ---
 # <a name="data-debug-interface-access-sdk"></a>Datos (Debug Interface Access SDK)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -70,11 +65,8 @@ Todas las variables, como parámetros, variables locales, las variables globales
 |[IDiaSymbol::get_volatileType](../../debugger/debug-interface-access/idiasymbol-get-volatiletype.md)|`BOOL`|`TRUE` Si los datos se marcan como volátil.|  
   
 ## <a name="see-also"></a>Vea también  
- [CV_access_e (enumeración)](../../debugger/debug-interface-access/cv-access-e.md)   
- [DataKind (enumeración)](../../debugger/debug-interface-access/datakind.md)   
+ [Enumeración CV_access_e](../../debugger/debug-interface-access/cv-access-e.md)   
+ [Enumeración DataKind](../../debugger/debug-interface-access/datakind.md)   
  [Jerarquía léxica de tipos de símbolos](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)   
- [LocationType (enumeración)](../../debugger/debug-interface-access/locationtype.md)   
+ [Enumeración LocationType](../../debugger/debug-interface-access/locationtype.md)   
  [Ubicaciones de símbolos](../../debugger/debug-interface-access/symbol-locations.md)
-
-
-

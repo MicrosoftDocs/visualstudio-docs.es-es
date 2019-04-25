@@ -1,14 +1,9 @@
 ---
 title: MergeLocalizationDirectives (Tarea) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -23,18 +18,17 @@ ms.assetid: 9095b4f1-88da-4194-914b-ee1456826830
 caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 842e36d549dab7d6e7c2f7d1da2f3e9b4db4e9d3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 2001a3278037eb1c2dc1866c9508bb8623af3370
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268208"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652492"
 ---
 # <a name="mergelocalizationdirectives-task"></a>MergeLocalizationDirectives (Tarea)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 La tarea <xref:Microsoft.Build.Tasks.Windows.MergeLocalizationDirectives> combina los atributos y los comentarios de localización de uno o varios archivos de formato binario [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] en un solo archivo para todo el ensamblado.  
   
 ## <a name="task-parameters"></a>Parámetros de tareas  
@@ -69,6 +63,3 @@ La tarea <xref:Microsoft.Build.Tasks.Windows.MergeLocalizationDirectives> combin
  [Referencia de MSBuild](../msbuild/msbuild-reference.md)   
  [Referencia de tareas](../msbuild/msbuild-task-reference.md)   
  [Compilar una aplicación de WPF (WPF)](http://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)
-
-
-

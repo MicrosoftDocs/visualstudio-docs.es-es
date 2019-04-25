@@ -1,14 +1,9 @@
 ---
 title: Modificadores de línea de comandos para Devenv | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - switches, Devenv
 - builds [Team System], command-line
@@ -25,18 +20,17 @@ ms.assetid: e12bc6ed-74fd-4bea-8d7c-89b99c20bad8
 caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 7ee1596cf59fb4ba9b21772cdabc0c875ef8779a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4eadb8c9553873f43ad9435ad43fae00f57affcb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49215039"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050717"
 ---
 # <a name="devenv-command-line-switches"></a>Modificadores de línea de comandos para Devenv
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Devenv permite establecer diversas opciones para el entorno de desarrollo integrado (IDE), así como compilar, depurar e implementar proyectos, desde la línea de comandos. Utilice estos modificadores para ejecutar el IDE desde un script o un archivo .bat (por ejemplo, un script de compilación nocturna) o para iniciar el IDE con una configuración determinada.  
   
 > [!NOTE]
@@ -52,24 +46,24 @@ Devenv permite establecer diversas opciones para el entorno de desarrollo integr
   
  Las reglas de sintaxis de los modificadores de `devenv` son similares a las de otros programas de línea de comandos de DOS. Las siguientes reglas sintácticas se aplican a todos los modificadores de `devenv` y sus argumentos:  
   
--   Los comandos comienzan por `devenv`.  
+- Los comandos comienzan por `devenv`.  
   
--   Los modificadores no distinguen mayúsculas de minúsculas.  
+- Los modificadores no distinguen mayúsculas de minúsculas.  
   
--   Cuando se especifica una solución o un proyecto, el primer argumento es el nombre del archivo de solución o del archivo de proyecto, incluida la ruta de acceso del archivo.  
+- Cuando se especifica una solución o un proyecto, el primer argumento es el nombre del archivo de solución o del archivo de proyecto, incluida la ruta de acceso del archivo.  
   
--   Si el primer argumento es un archivo que no es una solución ni un proyecto, ese archivo se abrirá en el editor adecuado, en una nueva instancia del IDE.  
+- Si el primer argumento es un archivo que no es una solución ni un proyecto, ese archivo se abrirá en el editor adecuado, en una nueva instancia del IDE.  
   
--   Cuando se indica un nombre de archivo de proyecto en lugar de un nombre de archivo de solución, un comando `devenv` buscará en la carpeta primaria del archivo de proyecto un archivo de solución que tenga el mismo nombre. Por ejemplo, el comando `devenv /build myproject1.vbproj` buscará en la carpeta primaria un archivo de solución denominado "myproject1.sln".  
+- Cuando se indica un nombre de archivo de proyecto en lugar de un nombre de archivo de solución, un comando `devenv` buscará en la carpeta primaria del archivo de proyecto un archivo de solución que tenga el mismo nombre. Por ejemplo, el comando `devenv /build myproject1.vbproj` buscará en la carpeta primaria un archivo de solución denominado "myproject1.sln".  
   
     > [!NOTE]
     >  En su carpeta primaria debe haber un archivo de solución, y solamente uno, que haga referencia a este proyecto. Si la carpeta primaria no contiene ningún archivo de solución que hace referencia a este proyecto, o si contiene dos o más archivos de solución que hacen referencia a él, se creará en ella un archivo de solución temporal con el nombre de este proyecto y que haga referencia a él.  
   
--   Si las rutas de acceso y los nombres de archivo contienen espacios en blanco, deben incluirse entre comillas dobles (""). Por ejemplo, "c:\project a\\".  
+- Si las rutas de acceso y los nombres de archivo contienen espacios en blanco, deben incluirse entre comillas dobles (""). Por ejemplo, "c:\project a\\".  
   
--   Inserte un carácter de espacio entre los modificadores y los argumentos de la misma línea. Por ejemplo, el comando **devenv /log output.txt** abre el IDE y envía toda la información de registro de esa sesión a output.txt.  
+- Inserte un carácter de espacio entre los modificadores y los argumentos de la misma línea. Por ejemplo, el comando **devenv /log output.txt** abre el IDE y envía toda la información de registro de esa sesión a output.txt.  
   
--   No se puede utilizar la sintaxis de coincidencia de patrones en los comandos de `devenv`.  
+- No se puede utilizar la sintaxis de coincidencia de patrones en los comandos de `devenv`.  
   
 ## <a name="devenv-switches"></a>Modificadores de devenv  
  Utilice los modificadores de línea de comandos siguientes para mostrar el IDE y realizar la tarea descrita.  
@@ -109,6 +103,3 @@ Devenv permite establecer diversas opciones para el entorno de desarrollo integr
   
 ## <a name="see-also"></a>Vea también  
  [General, Entorno, Opciones (Cuadro de diálogo)](../../ide/reference/general-environment-options-dialog-box.md)
-
-
-

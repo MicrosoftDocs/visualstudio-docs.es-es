@@ -1,7 +1,6 @@
 ---
 title: Mostrar desensamblador (Comando)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - debug.listdisassembly
@@ -11,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: eb363e35-e86a-4121-966f-991210c27e2a
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b175c6b7e0fcd145d58318d89707cfd907acb2c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 71a1be7841cb25cebafe951419006bb8b635093c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53913379"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55934307"
 ---
 # <a name="list-disassembly-command"></a>Mostrar desensamblador (Comando)
 Inicia el proceso de depuración y le permite especificar cómo se deben tratar los errores.

@@ -10,16 +10,15 @@ helpviewer_keywords:
 ms.assetid: 729b4c30-4bc3-4698-91b3-17a676897443
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 4026c8077c45fa7f383f59eda0595c8a97eba58d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 09a0b390299c354494ef29d177a4bd6c72f0548d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53823521"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55913072"
 ---
-# <a name="how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results"></a>Procedimiento para acercar una región del gráfico en los resultados de pruebas de carga
+# <a name="how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results"></a>Filtrar para acercar una región del gráfico en los resultados de pruebas de carga
 
 Una vez terminada una prueba de carga, puede usar las barras de zoom para acercar una región del gráfico y desplazarse por ella. Al aplicar el zoom para acercar, puede examinar los datos que se generaron durante la ejecución de una prueba de carga con más detalle.
 

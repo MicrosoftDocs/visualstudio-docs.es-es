@@ -1,5 +1,5 @@
 ---
-title: Usar el atributo DebuggerTypeProxy | Microsoft Docs
+title: Mostrar tipo personalizado con DebuggerTypeProxy | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -14,17 +14,17 @@ helpviewer_keywords:
 ms.assetid: 943f3bb1-993e-4800-a47e-0af78b063014
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f868041449e622ddbd5cf177a0aa22771fd48498
-ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
-ms.translationtype: MTE95
+ms.openlocfilehash: c379fbeb9d17f92dcc7067424ea06bb1a2805ed1
+ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54227543"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59537548"
 ---
-# <a name="using-debuggertypeproxy-attribute-c-visual-basic-ccli"></a>Usar el atributo DebuggerTypeProxy (C#, Visual Basic, C++ / c++ / CLI)
+# <a name="tell-the-debugger-what-type-to-show-using-debuggertypeproxy-attribute-c-visual-basic-ccli"></a>Indicar al depurador qué tipo a se muestra el uso del atributo DebuggerTypeProxy (C#, Visual Basic, C++/CLI)
 
 <xref:System.Diagnostics.DebuggerTypeProxyAttribute> especifica un proxy, o suplente, para un tipo y cambia la forma en que se muestra el tipo en las ventanas del depurador. Cuando se ve una variable que tiene un proxy, el proxy reemplaza al tipo original en la **presentación**. En la ventana de las variables del depurador se muestran sólo los miembros públicos del tipo de servidor proxy. No se muestran los miembros privados.
 
@@ -35,7 +35,7 @@ Este atributo se puede aplicar a:
 - Ensamblados
 
 > [!NOTE]
-> Para código nativo, este atributo solo se admite en C++ / c++ / código de la CLI.
+> Para código nativo, este atributo solo se admite en C++código /CLI.
 
 Una clase de proxy de tipo debe tener un constructor que tome un argumento del tipo que el proxy reemplazará. El depurador crea una nueva instancia de la clase de proxy de tipo cada vez que necesita mostrar una variable del tipo de destino. Esto puede afectar al rendimiento. Por tanto, en el constructor no debe realizarse más trabajo del estrictamente necesario.
 

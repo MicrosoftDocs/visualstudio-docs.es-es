@@ -1,11 +1,8 @@
 ---
 title: Asignar dependencias en sus soluciones | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
 ms.topic: conceptual
 f1_keywords:
 - vs.progression.codemap
@@ -31,13 +28,13 @@ ms.assetid: e04850a2-17c5-459b-93ec-6c74143b3292
 caps.latest.revision: 245
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 20122a1b254eee15efb557b5899e59fc914fda3a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 1601853a99ebea5ef687fbe5679fd74b45d5c381
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51740046"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107702"
 ---
 # <a name="map-dependencies-across-your-solutions"></a>Asignar dependencias de sus soluciones
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,18 +45,18 @@ Si desea comprender las dependencias de todo su código, cree mapas de código p
   
  **A continuación encontrará unos vídeos**:  
   
--   [Comprenda las dependencias del código visualizándolas](http://go.microsoft.com/fwlink/?LinkID=252065)  
+- [Comprenda las dependencias del código visualizándolas](http://go.microsoft.com/fwlink/?LinkID=252065)  
   
--   [Visualice el impacto de un cambio](http://go.microsoft.com/fwlink/?LinkID=252068)  
+- [Visualice el impacto de un cambio](http://go.microsoft.com/fwlink/?LinkID=252068)  
   
--   [Comprensión del código complejo con ayuda del mapa de código](http://go.microsoft.com/fwlink/?LinkID=259869)  
+- [Comprensión del código complejo con ayuda del mapa de código](http://go.microsoft.com/fwlink/?LinkID=259869)  
   
-##  <a name="GetStarted"></a> Introducción a los mapas de código  
+## <a name="GetStarted"></a> Introducción a los mapas de código  
  **Para poder usar mapas de código necesitará una de las soluciones siguientes**:  
   
--   Visual Studio Enterprise: permite crear mapas de código desde el editor de código, el explorador de soluciones, la vista de clases o el examinador de objetos.  
+- Visual Studio Enterprise: Cree mapas de código desde el editor de código, el Explorador de soluciones, vista de clases o Examinador de objetos.  
   
--   Visual Studio Professional: permite abrir mapas de código, realizar ediciones limitadas y navegar por código.  
+- Visual Studio Professional: Abrir mapas de código, realizar ediciones limitadas y navegar por el código.  
   
 > [!WARNING]
 >  Antes de compartir los mapas creados en Visual Studio Enterprise con otros usuarios que usen Visual Studio Professional, asegúrese de que todos los elementos del mapa son visibles (por ejemplo, los elementos ocultos, los grupos expandidos y los vínculos entre grupos).  
@@ -72,55 +69,55 @@ Si desea comprender las dependencias de todo su código, cree mapas de código p
   
 - Proyectos y ensamblados de X++ creados desde módulos de .NET para Microsoft Dynamics AX  
   
-  **Nota:** para los proyectos que no sean de C# o Visual Basic. NET, no hay tantas opciones para iniciar un mapa de código o agregar elementos a un mapa de código existente. Por ejemplo, no podrá hacer clic con el botón secundario en un objeto en el editor de texto de un proyecto de C++ y agregarlo a un mapa de código. Sin embargo, puede arrastrar y colocar elementos de código individuales o archivos desde el Explorador de soluciones, la Vista de clases y el Examinador de objetos.  
+  **Nota:** Para los proyectos que no sea C# o Visual Basic. NET, hay menos opciones para iniciar un mapa de código o agregar elementos a un mapa de código existente. Por ejemplo, no podrá hacer clic con el botón secundario en un objeto en el editor de texto de un proyecto de C++ y agregarlo a un mapa de código. Sin embargo, puede arrastrar y colocar elementos de código individuales o archivos desde el Explorador de soluciones, la Vista de clases y el Examinador de objetos.  
   
 #### <a name="to-see-the-overall-dependencies-across-your-solution"></a>Para ver las dependencias generales de la solución  
   
-1.  Abra el menú **Arquitectura** .  
+1. Abra el menú **Arquitectura** .  
   
-2.  Si acaba de abrir la solución y aún no la ha compilado, o bien si el código ha cambiado desde la última vez que se compiló, elija **Generar mapa de código para solución**.  
+2. Si acaba de abrir la solución y aún no la ha compilado, o bien si el código ha cambiado desde la última vez que se compiló, elija **Generar mapa de código para solución**.  
   
-3.  Si el código no ha cambiado desde la última vez que se compiló, elija **Generar mapa de código para una solución sin compilación** para que la creación del mapa sea más rápida.  
+3. Si el código no ha cambiado desde la última vez que se compiló, elija **Generar mapa de código para una solución sin compilación** para que la creación del mapa sea más rápida.  
   
-4.  [Vea las dependencias generales](#SeeOverviewSource) para comprender cómo puede usar mapas de código para ver las dependencias globales en toda la solución.  
+4. [Vea las dependencias generales](#SeeOverviewSource) para comprender cómo puede usar mapas de código para ver las dependencias globales en toda la solución.  
   
 #### <a name="to-see-specific-dependencies-within-your-solution"></a>Para ver dependencias concretas de la solución  
   
-1.  Con la solución cargada, abra el **Explorador de soluciones**.  
+1. Con la solución cargada, abra el **Explorador de soluciones**.  
   
-2.  Seleccione los proyectos, las referencias de ensamblado, las carpetas, los archivos, los tipos o los miembros que desee asignar.  
+2. Seleccione los proyectos, las referencias de ensamblado, las carpetas, los archivos, los tipos o los miembros que desee asignar.  
   
-3.  En el **el Explorador de soluciones** barra de herramientas, elija **mostrar en mapa de código**![crear nuevo gráfico de nodos botón seleccionados](../modeling/media/createnewgraphfromselectedbutton.gif "CreateNewGraphFromSelectedButton "). O bien, abra el menú contextual y elija **Mostrar en mapa de código**. También puede arrastrar elementos desde la vista de clases o el examinador de objetos en un mapa de código nuevo o existente.  
+3. En el **el Explorador de soluciones** barra de herramientas, elija **mostrar en mapa de código**![crear nuevo gráfico de nodos botón seleccionados](../modeling/media/createnewgraphfromselectedbutton.gif "CreateNewGraphFromSelectedButton "). O bien, abra el menú contextual y elija **Mostrar en mapa de código**. También puede arrastrar elementos desde la vista de clases o el examinador de objetos en un mapa de código nuevo o existente.  
   
-4.  [Vea las dependencias específicas](#SeeSpecificSource) para comprender cómo puede usar mapas de código para ver dependencias específicas de su solución.  
+4. [Vea las dependencias específicas](#SeeSpecificSource) para comprender cómo puede usar mapas de código para ver dependencias específicas de su solución.  
   
-###  <a name="CreateEmptyMap"></a> Para agregar un nuevo mapa de código vacío a la solución  
+### <a name="CreateEmptyMap"></a> Para agregar un nuevo mapa de código vacío a la solución  
   
-1.  En el **Explorador de soluciones**, abra el menú contextual del nodo de la solución de nivel superior. Elija **Agregar** y **Nuevo elemento**.  
+1. En el **Explorador de soluciones**, abra el menú contextual del nodo de la solución de nivel superior. Elija **Agregar** y **Nuevo elemento**.  
   
-2.  Bajo **Instalado**, elija **General**.  
+2. Bajo **Instalado**, elija **General**.  
   
-3.  En el panel derecho, elija **Documento de gráfico dirigido** y después elija **Agregar**.  
+3. En el panel derecho, elija **Documento de gráfico dirigido** y después elija **Agregar**.  
   
      Ahora tiene un mapa en blanco que aparece en la carpeta **Elementos de la solución** de su solución.  
   
 #### <a name="to-create-a-new-empty-code-map-without-adding-it-to-your-solution"></a>Para crear un nuevo mapa de código vacío sin agregarlo a la solución  
   
-1.  Abra el menú **Arquitectura** y elija **Nuevo mapa de código**.  
+1. Abra el menú **Arquitectura** y elija **Nuevo mapa de código**.  
   
      \- o -  
   
-2.  Abra el menú **Archivo** y elija **Nuevo** y luego elija **Archivo**.  
+2. Abra el menú **Archivo** y elija **Nuevo** y luego elija **Archivo**.  
   
-3.  Bajo **Instalado**, elija **General**.  
+3. Bajo **Instalado**, elija **General**.  
   
-4.  En el panel derecho, elija **Documento de gráfico dirigido** y después elija **Abrir**.  
+4. En el panel derecho, elija **Documento de gráfico dirigido** y después elija **Abrir**.  
   
      Ahora tiene un mapa en blanco que no aparece en las carpetas de su solución.  
   
-##  <a name="SeeOverviewSource"></a> Vea las dependencias generales  
+## <a name="SeeOverviewSource"></a> Vea las dependencias generales  
   
-###  <a name="OverviewSource"></a> Ver las dependencias de su solución  
+### <a name="OverviewSource"></a> Ver las dependencias de su solución  
   
 1. En el menú **Arquitectura** , elija **Generar mapa de código para solución**.  
   
@@ -186,35 +183,35 @@ Si desea comprender las dependencias de todo su código, cree mapas de código p
   
     Vea también:  
   
--   [Examinar y reorganizar mapas de código](../modeling/browse-and-rearrange-code-maps.md)  
+- [Examinar y reorganizar mapas de código](../modeling/browse-and-rearrange-code-maps.md)  
   
--   [Personalizar mapas de código mediante la edición de los archivos DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md)  
+- [Personalizar mapas de código mediante la edición de los archivos DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md)  
   
--   Busque posibles problemas en el código mediante la [ejecución de un analizador](../modeling/find-potential-problems-using-code-map-analyzers.md).  
+- Busque posibles problemas en el código mediante la [ejecución de un analizador](../modeling/find-potential-problems-using-code-map-analyzers.md).  
   
-###  <a name="OverviewCompiled"></a> Ver las dependencias entre ensamblados o archivos binarios  
+### <a name="OverviewCompiled"></a> Ver las dependencias entre ensamblados o archivos binarios  
   
-1.  [Cree un mapa de código vacío](#GetStarted)o abra un mapa de código existente (archivo .dgml).  
+1. [Cree un mapa de código vacío](#GetStarted)o abra un mapa de código existente (archivo .dgml).  
   
-2.  Arrastre hasta el mapa los ensamblados o los archivos binarios que desee asignar desde fuera de Visual Studio. Por ejemplo, arrastre los ensamblados o los archivos binarios desde el Explorador de Windows o el Explorador de archivos.  
+2. Arrastre hasta el mapa los ensamblados o los archivos binarios que desee asignar desde fuera de Visual Studio. Por ejemplo, arrastre los ensamblados o los archivos binarios desde el Explorador de Windows o el Explorador de archivos.  
   
 > [!NOTE]
 >  Solo puede arrastrar ensamblados o archivos binarios desde el Explorador de Windows o el Explorador de archivos si ejecuta tanto dichos exploradores como Visual Studio en el mismo nivel de permisos del Control de cuentas de usuario (UAC). Por ejemplo, si UAC está activado y está ejecutando Visual Studio como administrador, el Explorador de Windows o el Explorador de archivos bloquearán la operación de arrastre. Para resolver este problema, asegúrese de que ambos se ejecutan con el mismo nivel de permisos o desactive UAC.  
   
-##  <a name="SeeSpecificSource"></a> Vea las dependencias específicas  
+## <a name="SeeSpecificSource"></a> Vea las dependencias específicas  
  Por ejemplo, suponga que debe realizar una revisión de código en unos archivos con cambios pendientes. Para ver las dependencias que hay en esos cambios, cree un mapa de código a partir de dichos archivos.  
   
  ![Mostrar las dependencias específicas en un mapa de código](../modeling/media/codemapsspecificdependenciesintro.png "CodeMapsSpecificDependenciesIntro")  
   
 ### <a name="see-specific-dependencies-in-your-solution"></a>Ver dependencias concretas de la solución  
   
-1.  Abra el **Explorador de soluciones**. Seleccione los proyectos, las referencias de ensamblado, las carpetas, los archivos, los tipos y los miembros que le interesen. Para buscar elementos que dependen de tipos o miembros, abra el menú contextual del tipo o del miembro desde el **Explorador de soluciones**. Elija el tipo de dependencia y, después, seleccione los resultados.  
+1. Abra el **Explorador de soluciones**. Seleccione los proyectos, las referencias de ensamblado, las carpetas, los archivos, los tipos y los miembros que le interesen. Para buscar elementos que dependen de tipos o miembros, abra el menú contextual del tipo o del miembro desde el **Explorador de soluciones**. Elija el tipo de dependencia y, después, seleccione los resultados.  
   
-2.  Asigne los elementos y sus miembros. En el **el Explorador de soluciones** barra de herramientas haga clic en **mostrar en mapa de código**![crear nuevo gráfico de nodos botón seleccionados](../modeling/media/createnewgraphfromselectedbutton.gif "CreateNewGraphFromSelectedButton").  
+2. Asigne los elementos y sus miembros. En el **el Explorador de soluciones** barra de herramientas haga clic en **mostrar en mapa de código**![crear nuevo gráfico de nodos botón seleccionados](../modeling/media/createnewgraphfromselectedbutton.gif "CreateNewGraphFromSelectedButton").  
   
      ![Seleccione los elementos que desea asignar](../modeling/media/codemapsselectinsolutionexplorer.png "CodeMapsSelectInSolutionExplorer")  
   
-3.  El mapa muestra los elementos seleccionados dentro de los ensamblados que los contienen.  
+3. El mapa muestra los elementos seleccionados dentro de los ensamblados que los contienen.  
   
      ![Los elementos se muestran como grupos en el mapa seleccionados](../modeling/media/codemapsshowitemsfromsolnexplorer.png "CodeMapsShowItemsFromSolnExplorer")  
   
@@ -223,19 +220,19 @@ Si desea comprender las dependencias de todo su código, cree mapas de código p
     > [!NOTE]
     >  Cuando se agregan elementos de un proyecto que se comparte entre varias aplicaciones, como Windows Phone o la Tienda Windows, dichos elementos aparecen en el mapa con el proyecto de aplicación activo actualmente. Si cambia el contexto a otro proyecto de aplicación y agrega más elementos del proyecto compartido, dichos elementos aparecerán ahora con el nuevo proyecto de aplicación activo. Las operaciones que se realizan con un elemento en el mapa solo se aplican a los elementos que comparten el mismo contexto.  
   
-4.  Para explorar los elementos, expándalos. Mueva el puntero del mouse sobre un elemento y luego haga clic en el botón de contenido adicional (flecha hacia abajo) cuando aparezca.  
+4. Para explorar los elementos, expándalos. Mueva el puntero del mouse sobre un elemento y luego haga clic en el botón de contenido adicional (flecha hacia abajo) cuando aparezca.  
   
      ![Expandir un nodo en un mapa de código](../modeling/media/dependencygraph-containment.png "DependencyGraph_Containment")  
   
      Para expandir todos los elementos, selecciónelos mediante **CTRL+A**y luego abra el menú contextual del mapa y elija **Grupo**, **Expandir**. Sin embargo, esta opción no está disponible si el hecho de expandir todos los grupos genera un mapa que no se puede usar o problemas de memoria.  
   
-5.  Continúe expandiendo los elementos que le interesen hasta el nivel de clase y miembro (si es necesario).  
+5. Continúe expandiendo los elementos que le interesen hasta el nivel de clase y miembro (si es necesario).  
   
      ![Expandir grupos a nivel de clase y miembro](../modeling/media/codemapsexpandtoclassandmember.png "CodeMapsExpandToClassAndMember")  
   
      Para ver los miembros que existen en el código pero no aparecen en el mapa, haga clic en el **volver a obtener elementos secundarios** icono ![volver a obtener elementos secundarios icono](../modeling/media/dependencygraph-deletednodesicon.png "DependencyGraph_DeletedNodesIcon") en la parte superior esquina izquierda de un grupo.  
   
-6.  Para ver más elementos relacionados con los del mapa, seleccione uno y elija **Mostrar relacionados** en la barra de herramientas del mapa de código, y luego seleccione el tipo de elementos relacionados que se agregarán al mapa. Si lo prefiere, seleccione uno o más elementos, abra el menú contextual y, después, elija la opción **Mostrar...** para el tipo de elementos relacionados que desea agregar al mapa. Por ejemplo:  
+6. Para ver más elementos relacionados con los del mapa, seleccione uno y elija **Mostrar relacionados** en la barra de herramientas del mapa de código, y luego seleccione el tipo de elementos relacionados que se agregarán al mapa. Si lo prefiere, seleccione uno o más elementos, abra el menú contextual y, después, elija la opción **Mostrar...** para el tipo de elementos relacionados que desea agregar al mapa. Por ejemplo:  
   
      Para un **ensamblado**, elija:  
   
@@ -278,30 +275,30 @@ Si desea comprender las dependencias de todo su código, cree mapas de código p
   
      ![Mostrar métodos llamados por este miembro](../modeling/media/codemapsshowrelatedmethods.png "CodeMapsShowRelatedMethods")  
   
-7.  El mapa muestra las relaciones. En este ejemplo, se muestran los métodos llamados por el método `Find` y su ubicación en la solución o externa.  
+7. El mapa muestra las relaciones. En este ejemplo, se muestran los métodos llamados por el método `Find` y su ubicación en la solución o externa.  
   
      ![Mostrar las dependencias específicas en un mapa de código](../modeling/media/codemapsspecificdependenciesintro.png "CodeMapsSpecificDependenciesIntro")  
   
-8.  Para simplificar el mapa y centrarse en partes individuales, elija **Filtros** en la barra de herramientas del mapa de código y seleccione únicamente los tipos de nodos y los vínculos que le interesan. Por ejemplo, desactive la visualización de carpetas de soluciones, ensamblados y espacios de nombres.  
+8. Para simplificar el mapa y centrarse en partes individuales, elija **Filtros** en la barra de herramientas del mapa de código y seleccione únicamente los tipos de nodos y los vínculos que le interesan. Por ejemplo, desactive la visualización de carpetas de soluciones, ensamblados y espacios de nombres.  
   
      ![Utilice el panel de filtro para simplificar la presentación](../modeling/media/almcodemapfilterpane.png "ALMCodeMapFilterPane")  
   
-##  <a name="SeeSourceHeader"></a> Ver las dependencias entre los archivos de código fuente de C y C++ y los archivos de encabezado  
+## <a name="SeeSourceHeader"></a> Ver las dependencias entre los archivos de código fuente de C y C++ y los archivos de encabezado  
  Si desea crear mapas más completos para proyectos de C++, establezca en dichos proyectos la opción del compilador de información de examen (**/FR**). Vea [/FR, /Fr (Create .Sbr File)](http://msdn.microsoft.com/library/3fd8f88b-3924-4feb-9393-287036a28896). Si no, aparece un mensaje que le solicita establecer esta opción. Si selecciona **Aceptar**, la opción se establece solamente en el mapa actual. Si lo desea, puede ocultar el mensaje para todos los mapas posteriores. Si oculta este mensaje, puede hacer que aparezca de nuevo. Establezca la siguiente clave del registro en `0` o elimine la clave:  
   
- **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\NativeProvider: AutoEnableSbr**  
+ **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\NativeProvider : AutoEnableSbr**  
   
  Al abrir una solución que contiene proyectos de Visual C++, podría llevar algún tiempo la actualización de la base de datos de IntelliSense. Durante este tiempo, quizás no pueda crear mapas de código para los archivos de encabezado (.h o `#include`) hasta que la base de datos de IntelliSense finalice la actualización. Puede supervisar el progreso de actualización en la barra de estado de Visual Studio. Para resolver los problemas o los mensajes que aparecen porque ciertas opciones de IntelliSense están deshabilitadas, vea el artículo sobre [solución de problemas de mapas de código C y C++](#Troubleshooting).  
   
--   Para ver las dependencias entre todos los archivos de código fuente y los archivos de encabezado de la solución, vaya al menú **Arquitectura** y elija **Generar gráfico de archivos de inclusión**.  
+- Para ver las dependencias entre todos los archivos de código fuente y los archivos de encabezado de la solución, vaya al menú **Arquitectura** y elija **Generar gráfico de archivos de inclusión**.  
   
      ![Gráfico de dependencias para código nativo](../modeling/media/dependencygraphgeneral-nativecode.png "DependencyGraphGeneral_NativeCode")  
   
--   Para ver las dependencias entre el archivo abierto actualmente y los archivos de código fuente y de encabezado relacionados, abra el archivo de origen o el archivo de encabezado. Abra el menú contextual del archivo desde cualquier parte del archivo. Elija **Generar gráficos de archivos de inclusión**.  
+- Para ver las dependencias entre el archivo abierto actualmente y los archivos de código fuente y de encabezado relacionados, abra el archivo de origen o el archivo de encabezado. Abra el menú contextual del archivo desde cualquier parte del archivo. Elija **Generar gráficos de archivos de inclusión**.  
   
      ![Primera&#45;gráfico de dependencias de nivel de archivo .h](../modeling/media/dependencygraph-native-firstlevel.png "DependencyGraph_Native_FirstLevel")  
   
-###  <a name="Troubleshooting"></a> solución de problemas de mapas de código C y C++  
+### <a name="Troubleshooting"></a> solución de problemas de mapas de código C y C++  
  Estos elementos no se admiten para código de C y C++:  
   
 - Los tipos base no aparecen en los mapas que incluyen la jerarquía primaria.  
@@ -321,7 +318,7 @@ Si desea comprender las dependencias de todo su código, cree mapas de código p
 ||Se ha quitado la información de depuración del archivo .pdb.|Si se ha usado la opción **/PDBSTRIPPED** en el vinculador, incluya el archivo .pdb completo en su lugar.<br /><br /> Vea [/PDBSTRIPPED (Strip Private Symbols)](http://msdn.microsoft.com/library/9b9e0070-6a13-4142-8180-19c003fbbd55).|  
 ||El llamador no es una función y, o bien es un código thunk en el archivo binario o es un puntero en la sección de datos.|Cuando el llamador es un código thunk, intente usar `_declspec(dllimport)` para evitar el código thunk.<br /><br /> Vea:<br /><br /> -   [Reglas generales y limitaciones](http://msdn.microsoft.com/library/6c48902d-4259-4761-95d4-e421d69aa050)<br />-   [Importar llamadas a funciones mediante __declspec (dllimport)](http://msdn.microsoft.com/library/6b53c616-0c6d-419a-8e2a-d2fff20510b3)<br />-   [dllexport, dllimport](http://msdn.microsoft.com/library/ff95b645-ef55-4e72-b848-df44657b3208)|  
   
-##  <a name="RenderMoreQuickly"></a> Acelerar la representación de los mapas de código  
+## <a name="RenderMoreQuickly"></a> Acelerar la representación de los mapas de código  
  Al generar por primera vez un mapa, Visual Studio indiza todas las dependencias que encuentra. Este proceso puede tardar algún tiempo, especialmente con soluciones de gran tamaño, pero mejorará el rendimiento posterior. Si el código cambia, Visual Studio solo vuelve a indizar el código actualizado. Para minimizar el tiempo necesario para que el mapa la asignación de finalizar la representación, considere las siguientes opciones:  
   
 - [Asigne solo las dependencias que le interesan.](#SeeSpecificSource)  
@@ -342,12 +339,12 @@ Si desea comprender las dependencias de todo su código, cree mapas de código p
   
   El mapa completo mostrará las dependencias únicamente del código compilado correctamente. Si se producen errores de compilación de determinados componentes, dichos errores se mostrarán en mapa. Asegúrese de que un componente se compila realmente y de que tiene dependencias antes de tomar decisiones sobre la arquitectura en función del mapa.  
   
-##  <a name="SavingExporting"></a> Compartir mapas de código  
+## <a name="SavingExporting"></a> Compartir mapas de código  
   
 ### <a name="share-the-map-with-other-visual-studio-users"></a>Compartir el mapa con otros usuarios de Visual Studio  
  Guarde el mapa desde el menú **Archivo** .  
   
- O bien  
+ -o bien-  
   
  Para guardar el mapa como parte de un proyecto específico, en la barra de herramientas del mapa elija **Compartir**, **Mover** \<*CodeMapName*>**.dgml en**y, después, elija el proyecto donde desea guardar el mapa.  
   
@@ -366,29 +363,26 @@ Si desea comprender las dependencias de todo su código, cree mapas de código p
   
 ### <a name="export-the-map-as-an-image-so-you-can-copy-it-into-other-applications-such-as-microsoft-word-or-powerpoint"></a>Exportar el mapa como una imagen para que se pueda copiar en otras aplicaciones como Microsoft Word o PowerPoint  
   
-1.  En la barra de herramientas del mapa de código, elija **Compartir**, **Correo electrónico como imagen** o **Copiar imagen**.  
+1. En la barra de herramientas del mapa de código, elija **Compartir**, **Correo electrónico como imagen** o **Copiar imagen**.  
   
-2.  Pegue la imagen en otra aplicación.  
+2. Pegue la imagen en otra aplicación.  
   
 ### <a name="export-the-map-as-an-xps-file-so-you-can-see-it-in-xml-or-xaml-viewers-like-internet-explorer"></a>Exportar el gráfico como archivo XPS para visualizarlo en visores XML o XAML como Internet Explorer  
   
-1.  En la barra de herramientas del mapa de código, elija **Compartir**, **Correo electrónico como XPS portable** o **Guardar como XPS portable**.  
+1. En la barra de herramientas del mapa de código, elija **Compartir**, **Correo electrónico como XPS portable** o **Guardar como XPS portable**.  
   
-2.  Vaya adonde desea guardar el archivo.  
+2. Vaya adonde desea guardar el archivo.  
   
-3.  Póngale un nombre al mapa de código. Asegúrese de que el **Guardar como tipo** cuadro se establece en **archivos XPS (\*.xps)**. Elija **Guardar**.  
+3. Póngale un nombre al mapa de código. Asegúrese de que el **Guardar como tipo** cuadro se establece en **archivos XPS (\*.xps)**. Elija **Guardar**.  
   
 ## <a name="what-else-can-i-do"></a>¿Qué más puedo hacer?  
   
--   [Usar mapas de código para depurar aplicaciones](../modeling/use-code-maps-to-debug-your-applications.md)  
+- [Usar mapas de código para depurar aplicaciones](../modeling/use-code-maps-to-debug-your-applications.md)  
   
--   [Asignar métodos en la pila de llamadas durante la depuración](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)  
+- [Asignar métodos en la pila de llamadas durante la depuración](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)  
   
--   [Buscar posibles problemas mediante analizadores de mapas de código](../modeling/find-potential-problems-using-code-map-analyzers.md)  
+- [Buscar posibles problemas mediante analizadores de mapas de código](../modeling/find-potential-problems-using-code-map-analyzers.md)  
   
--   [Examinar y reorganizar mapas de código](../modeling/browse-and-rearrange-code-maps.md)  
+- [Examinar y reorganizar mapas de código](../modeling/browse-and-rearrange-code-maps.md)  
   
--   [Personalizar mapas de código mediante la edición de los archivos DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md)
-
-
-
+- [Personalizar mapas de código mediante la edición de los archivos DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md)

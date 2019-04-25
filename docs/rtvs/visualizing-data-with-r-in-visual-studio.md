@@ -2,19 +2,18 @@
 title: Visualización de datos con R
 description: Describe cómo trazar datos desde programas de R en Visual Studio con ventanas de trazados.
 ms.date: 06/29/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 8b0c633e3236f537e9f631df12a5af597e67475c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a48ad7800f8ea2b992e848cfbf6b4fdac99b2062
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53859086"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55911772"
 ---
 # <a name="create-visual-data-plots-with-r"></a>Crear trazados de datos visuales con R
 
@@ -38,7 +37,7 @@ Las ventanas de trazado son independientes de los proyectos de Visual Studio, y 
 
 Al generar un trazado se usa la ventana de trazado "activa", guardando cualquier trazado anterior en el historial de trazados (vea [Historial de trazados](#plot-history)). Por ejemplo, escriba `plot(100:1)` y el primer trazado se reemplaza por una línea hacia abajo.
 
-Como todas las demás ventanas de Visual Studio. La ventana de trazado admite diseños personalizados (vea [Personalizar los diseños de ventana de Visual Studio](../ide/customizing-window-layouts-in-visual-studio.md)). Las ventanas de trazado pueden acoplarse en diferentes ubicaciones dentro del marco de Visual Studio, cambiar su tamaño dentro de ese marco o salirse de ese marco por completo para cambiar su tamaño de manera independiente. 
+Como todas las demás ventanas de Visual Studio. La ventana de trazado admite diseños personalizados (vea [Personalizar los diseños de ventana de Visual Studio](../ide/customizing-window-layouts-in-visual-studio.md)). Las ventanas de trazado pueden acoplarse en diferentes ubicaciones dentro del marco de Visual Studio, cambiar su tamaño dentro de ese marco o salirse de ese marco por completo para cambiar su tamaño de manera independiente.
 
 Al cambiar el tamaño de una ventana de trazado siempre se vuelve a representar el trazado para proporcionar la mejor calidad de imagen. Normalmente quiere cambiar el tamaño de un trazado antes de exportar el trazado a un archivo o al Portapapeles con los comandos descritos en la sección siguiente.
 
@@ -46,7 +45,7 @@ Al cambiar el tamaño de una ventana de trazado siempre se vuelve a representar 
 
 La barra de herramientas de la ventana de trazado incluye comandos aplicables, la mayoría de los cuales también están disponibles en el menú **Herramientas de R** > **Trazados**.
 
-| Botón | Comando | Descripción | 
+| Botón | Comando | Descripción |
 | --- | --- | --- |
 | ![Botón Nueva ventana de trazado](media/plotting-toolbar-01-new-plot-window.png) | Nueva ventana de trazado | Crea una ventana de trazado independiente con su propio historial. Vea [Varias ventanas de trazado](#multiple-plot-windows). |
 | ![Botón Activar ventana de trazado](media/plotting-toolbar-02-activate-plot-window.png) | Activar ventana de trazado | Establece la ventana de trazado actual como la ventana activa, de manera que los comandos `plot` posteriores se representen en esa ventana. Vea [Varias ventanas de trazado](#multiple-plot-windows). Vea [Varias ventanas de trazado](#multiple-plot-windows). |
@@ -54,8 +53,8 @@ La barra de herramientas de la ventana de trazado incluye comandos aplicables, l
 | ![Botones del historial de trazados](media/plotting-toolbar-04-plot-history-arrows.png) | Trazado siguiente o anterior |  Se dirige al trazado siguiente o anterior del historial. También puede ir al historial presionando Ctrl+Alt+F11 (anterior) y Ctrl+Alt+F12 (siguiente). Vea [Historial de trazados](#plot-history). |
 | ![Botón Guardar como imagen](media/plotting-toolbar-05-save-as-image.png)| Guardar como imagen | Solicita un nombre de archivo y guarda el trazado actual (el contenido de la ventana, en el tamaño de la ventana) en un archivo de imagen. Los formatos disponibles son `.png`, `.jpg`, `.bmp` y `.tif`. |
 | ![Botón Guardar como PDF](media/plotting-toolbar-06-save-as-pdf.png)| Guardar como PDF | Guarda el trazado actual en un archivo PDF con el tamaño de ventana actual. El trazado se volverá a representar si se escala el PDF. |
-| ![Botón Copiar como mapa de bits](media/plotting-toolbar-07-copy-as-bitmap.png)| Copiar como mapa de bits | Copia el trazado al Portapapeles como un mapa de bits de trama, con el tamaño de ventana actual. | 
-| ![Botón Copiar como metarchivo](media/plotting-toolbar-08-copy-as-metafile.png)| Copiar como metarchivo | Copia el trazado al Portapapeles como un [metarchivo de Windows](https://en.wikipedia.org/wiki/Windows_Metafile) (Wikipedia). | 
+| ![Botón Copiar como mapa de bits](media/plotting-toolbar-07-copy-as-bitmap.png)| Copiar como mapa de bits | Copia el trazado al Portapapeles como un mapa de bits de trama, con el tamaño de ventana actual. |
+| ![Botón Copiar como metarchivo](media/plotting-toolbar-08-copy-as-metafile.png)| Copiar como metarchivo | Copia el trazado al Portapapeles como un [metarchivo de Windows](https://en.wikipedia.org/wiki/Windows_Metafile) (Wikipedia). |
 | ![Botón Quitar trazado](media/plotting-toolbar-09-remove-plot.png)| Quitar trazado | Quita el trazado actual del historial. |
 | ![Botón Borrar todos los trazados](media/plotting-toolbar-10-clear-all-plots.png) | Borrar todos los trazados | Quita todos los trazados del historial (solicita confirmación). |
 
@@ -84,7 +83,7 @@ La duración de su historial de trazado en todas las ventanas está vinculado a 
 
 ## <a name="programmatically-manipulate-plot-windows"></a>Manipular ventanas de trazado mediante programación
 
-Puede manipular ventanas de trazado mediante programación desde el código de R, con números de dispositivo para identificar las ventanas de trazado específicas. 
+Puede manipular ventanas de trazado mediante programación desde el código de R, con números de dispositivo para identificar las ventanas de trazado específicas.
 
 - `dev.list()`: Mostrar todos los dispositivos de gráficos en la sesión actual de R.
 - `dev.new()`: Crear un nuevo dispositivo de gráficos (una nueva ventana de trazado).

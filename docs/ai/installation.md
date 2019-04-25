@@ -7,16 +7,14 @@ ms.author: liwong
 manager: routlaw
 ms.date: 11/13/2017
 ms.topic: conceptual
-ms.devlang: multiple
-ms.service: multiple
 ms.workload:
 - multiple
-ms.openlocfilehash: ab5101d6b6ddca4a86e635fff70b52429888001a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7fe18719e55a59abfcbde35195ed499fe9882c6c
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821106"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58146076"
 ---
 # <a name="installation"></a>Instalación
 
@@ -26,7 +24,7 @@ Visual Studio Tools para AI se puede instalar en sistemas operativos Windows de 
 
 Esta extensión funciona con Visual Studio 2015 y 2017, Community Edition o superior.
 
-Puede descargar las herramientas desde [Visual Studio Marketplace](http://aka.ms/vstoolsforai) o desde Visual Studio:
+Puede descargar las herramientas desde [Visual Studio Marketplace](https://aka.ms/vstoolsforai) o desde Visual Studio:
 
 1. Seleccione **Herramientas** > **Extensiones y actualizaciones**.
 
@@ -199,21 +197,32 @@ pip3.5 install Theano==0.9.0
 Para instalar PyTorch, ejecute el siguiente comando en un terminal:
 
 - **Windows**
-    - Aún no hay ningún paquete Wheel oficial. Puede descargar un [paquete de Anaconda PyTorch](https://anaconda.org/pytorch/repo?type=all) de terceros.
-    - Descomprímalo en su directorio principal, p. ej., "C:\Usuarios\test\pytorch".
-    - Agregue "C:\Usuarios\test\pytorch\Lib\site-packages" a la variable de entorno %PYTHONPATH%.
+
+   Aún no hay ningún paquete Wheel oficial. Puede descargar un paquete de terceros de [Anaconda](https://anaconda.org/pytorch/repo?type=all) o la [Universidad de California](https://www.lfd.uci.edu/~gohlke/pythonlibs/#pytorch).
+
+   - Descomprímalo en el directorio principal, como por ejemplo, *C:\Users\test\pytorch*.
+   - Agregue *C:\Users\test\pytorch\Lib\site-packages* a la variable de entorno %PYTHONPATH%.
+
+      ```bash
+      pip3 install http://download.pytorch.org/whl/cu80/torch-0.4.0-cp36-cp36m-win_amd64.whl
+      pip3 install torchvision
+      ```
 
 - **macOS**
+
     ```bash
     pip3.5 install http://download.pytorch.org/whl/torch-0.2.0.post3-cp35-cp35m-macosx_10_7_x86_64.whl
     ```
+
     > [!NOTE]
     > Los archivos binarios de macOS no admiten CUDA. Instálelo desde el origen en caso de que CUDA sea necesario.
 
 - **Linux**
+
     ```bash
     pip3.5 install http://download.pytorch.org/whl/cu80/torch-0.2.0.post3-cp35-cp35m-manylinux1_x86_64.whl
     ```
+
     > [!NOTE]
     > Este paquete único admite tanto la CPU como la GPU.
 

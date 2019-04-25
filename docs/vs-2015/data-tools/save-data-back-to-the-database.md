@@ -1,12 +1,9 @@
 ---
 title: Guardar los datos en la base de datos | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -28,18 +25,17 @@ ms.assetid: afe6cb8a-dc6a-428b-b07b-903ac02c890b
 caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 6b6fd99b2b1a41d6baa3a110b2a595afb1dd7e3f
-ms.sourcegitcommit: c9a01c599ce19a5845605b3b28c0229fd0abb93f
+manager: jillfra
+ms.openlocfilehash: b0489dec1c2d6cb3d7559a2bdd029ccab6c3ce5f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52281854"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056814"
 ---
 # <a name="save-data-back-to-the-database"></a>Guardar los datos de nuevo en la base de datos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 El conjunto de datos es una copia en memoria de datos. Si modifica datos, es una buena práctica para guardar los cambios en la base de datos. Para ello en uno de tres maneras:  
   
 - Llamando a uno de los `Update` métodos de un TableAdapter  
@@ -78,7 +74,7 @@ Proceso de actualización en dos fases y rol de DataRowVersion en una actualizac
 ## <a name="merge-datasets"></a>Combinar conjuntos de datos  
  Puede actualizar el contenido de un conjunto de datos por *combinación* con otro conjunto de datos. Esto implica copiar el contenido de un *origen* conjunto de datos en el conjunto de datos que realiza la llamada (denominados el *destino* conjunto de datos). Cuando se fusionan mediante combinación conjuntos de datos, los registros nuevos del conjunto de datos de origen se agregan al conjunto de datos de destino. Asimismo, las columnas adicionales del conjunto de datos de origen se agregan al conjunto de datos de destino. Combinar conjuntos de datos es útil cuando tiene un conjunto de datos local y recibe un segundo conjunto de datos desde otra aplicación. También es útil cuando reciba un segundo conjunto de datos de un componente como un servicio web XML, o cuando sea necesario integrar datos de varios conjuntos de datos.  
   
- Cuando se mezclan los conjuntos de datos, puede pasar un argumento booleano (`preserveChanges`) que indica la <xref:System.Data.DataSet.Merge%2A> método si desea conservar las modificaciones existentes del conjunto de datos de destino. Dado que los conjuntos de datos mantienen varias versiones de los registros, es importante a tener en cuenta que se está combinando varias versiones de los registros. En la tabla siguiente se muestra cómo se combina un registro en dos conjuntos de datos:  
+ Cuando se mezclan los conjuntos de datos, puede pasar un argumento booleano (`preserveChanges`) que indica la <xref:System.Data.DataSet.Merge%2A> método si desea conservar las modificaciones existentes del conjunto de datos de destino. Debido a que los conjuntos de datos mantienen varias versiones de los registros, es importante recordar que se está combinado más de una versión de los registros. En la tabla siguiente se muestra cómo se combina un registro en dos conjuntos de datos:  
   
 |DataRowVersion|Conjunto de datos de destino|Conjunto de datos de origen|  
 |--------------------|--------------------|--------------------|  
@@ -122,7 +118,7 @@ Proceso de actualización en dos fases y rol de DataRowVersion en una actualizac
   
  Para obtener más información sobre la suspensión de eventos, consulte [desactivar restricciones al llenar un conjunto de datos](../data-tools/turn-off-constraints-while-filling-a-dataset.md).  
   
-## <a name="dataset-update-errors"></a>Errores de actualización del conjunto de datos  
+## <a name="dataset-update-errors"></a>Errores de actualización de conjuntos de datos  
  Cuando se actualiza un registro de un conjunto de datos, existe la posibilidad de que se produzca un error. Por ejemplo, podría escribir accidentalmente datos de un tipo incorrecto a una columna, o datos que es demasiado largos o datos que tenga algún otro problema de integridad. O bien, es posible que tenga las comprobaciones de validación específica de la aplicación que generen errores personalizados durante cualquier fase de un evento de actualización. Para obtener más información, consulte [validar datos en conjuntos de datos](../data-tools/validate-data-in-datasets.md).  
   
 ## <a name="maintaining-information-about-changes"></a>Mantener la información sobre los cambios  
@@ -148,10 +144,10 @@ Proceso de actualización en dos fases y rol de DataRowVersion en una actualizac
   
 |Valor de DataRowVersion|Descripción|  
 |--------------------------|-----------------|  
-|<xref:System.Data.DataRowVersion>|La versión actual de un registro contiene todas las modificaciones que se han realizado en el registro desde la última vez <xref:System.Data.DataRow.AcceptChanges%2A> llamó. Si se ha eliminado la fila, no hay ninguna versión actual.|  
+|<xref:System.Data.DataRowVersion>|La versión actual de un registro contiene todas las modificaciones que se han realizado en el registro desde la última vez <xref:System.Data.DataRow.AcceptChanges%2A> llamó. Si la fila se ha eliminado, no existe una versión actual.|  
 |<xref:System.Data.DataRowVersion>|Es el valor predeterminado de un registro, tal como se define en el esquema del conjunto de datos o en el origen de datos.|  
 |<xref:System.Data.DataRowVersion>|La versión original de un registro es una copia del registro tal como se encontraba la última vez que se confirmaron cambios en el conjunto de datos. En términos prácticos, suele ser la versión de un registro leído de un origen de datos.|  
-|<xref:System.Data.DataRowVersion>|La versión propuesta de un registro que está disponible temporalmente mientras está en curso una actualización, es decir, entre el momento en que ha llamado el <xref:System.Data.DataRow.BeginEdit%2A> método y el <xref:System.Data.DataRow.EndEdit%2A> método. Normalmente, se obtiene acceso a la versión propuesta de un registro en un controlador de un evento tal como <xref:System.Data.DataTable.RowChanging>. Al invocar al método <xref:System.Data.DataRow.CancelEdit%2A>, se anulan los cambios y se elimina la versión propuesta de la fila de datos.|  
+|<xref:System.Data.DataRowVersion>|Es la versión propuesta de un registro que está disponible temporalmente, mientras está en curso una actualización, es decir, el intervalo que transcurre desde que se llama al método <xref:System.Data.DataRow.BeginEdit%2A> hasta que se llama al método <xref:System.Data.DataRow.EndEdit%2A>. Normalmente, se obtiene acceso a la versión propuesta de un registro en un controlador de un evento tal como <xref:System.Data.DataTable.RowChanging>. Al invocar al método <xref:System.Data.DataRow.CancelEdit%2A>, se anulan los cambios y se elimina la versión propuesta de la fila de datos.|  
   
  Las versiones original y actual son de utilidad cuando se transmite la información de actualización a un origen de datos. Normalmente, cuando envía una actualización al origen de datos, la nueva información de la base de datos está en la versión actual de un registro. Para buscar el registro que actualizar se utiliza información de la versión original.  
   
@@ -170,12 +166,12 @@ Proceso de actualización en dos fases y rol de DataRowVersion en una actualizac
   
  `GetChanges` por sí solo devuelve todos los registros modificados. En cambio, pasando el deseado <xref:System.Data.DataRowState> como un parámetro a la `GetChanges` método, puede especificar qué subconjunto de registros cambiados desea: recién agregado registros, registros marcados para su eliminación, registros desasociados o registros modificados.  
   
- Obtener un subconjunto de registros modificados es útil cuando desea enviar registros a otro componente para su procesamiento. En lugar de enviar todo el conjunto de datos, se puede reducir la sobrecarga de la comunicación con el otro componente al obtener únicamente los registros necesarios. Para obtener más información, consulte [Cómo: recuperar filas modificadas](http://msdn.microsoft.com/library/6ff0cbd0-5253-48e7-888a-144d56c2e0a9).  
+ Obtener un subconjunto de registros modificados es útil cuando desea enviar registros a otro componente para su procesamiento. En lugar de enviar todo el conjunto de datos, se puede reducir la sobrecarga de la comunicación con el otro componente al obtener únicamente los registros necesarios. Para obtener más información, vea [Cómo: Recuperar filas modificadas](http://msdn.microsoft.com/library/6ff0cbd0-5253-48e7-888a-144d56c2e0a9).  
   
 ## <a name="committing-changes-in-the-dataset"></a>Confirmar los cambios en el conjunto de datos  
  Cuando se realizan cambios en el conjunto de datos, se establece la propiedad <xref:System.Data.DataRow.RowState%2A> de las filas modificadas. Las versiones originales y actuales de registros se establezcan, mantienen y a su disposición mediante la <xref:System.Data.DataRowView.RowVersion%2A> propiedad. Los metadatos que se almacenan en las propiedades de estas filas cambiadas están necesario para enviar las actualizaciones correctas para el origen de datos.  
   
- Si los cambios reflejan el estado actual del origen de datos, ya no es necesario mantener esta información. Normalmente, hay dos veces cuando el conjunto de datos y su origen están sincronizados:  
+ Si los cambios reflejan el estado actual del origen de datos, ya no es necesario mantener esta información. Normalmente, el conjunto de datos y su origen están sincronizados en dos ocasiones:  
   
 - Inmediatamente después de haber cargado información en el conjunto de datos; por ejemplo, cuando lee datos del origen.  
   
@@ -207,7 +203,7 @@ Proceso de actualización en dos fases y rol de DataRowVersion en una actualizac
   
 |Método|Resultado|  
 |------------|------------|  
-|<xref:System.Data.DataRow.AcceptChanges%2A?displayProperty=fullName>|Los cambios se confirman sólo en una fila específica.|  
+|<xref:System.Data.DataRow.AcceptChanges%2A?displayProperty=fullName>|Los cambios se confirman solo en una fila específica.|  
 |<xref:System.Data.DataTable.AcceptChanges%2A?displayProperty=fullName>|Los cambios se confirman en todas las filas de una tabla específica.|  
 |<xref:System.Data.DataSet.AcceptChanges%2A?displayProperty=fullName>|Los cambios se confirman en todas las filas de todas las tablas del conjunto de datos.|  
   
@@ -221,7 +217,7 @@ Proceso de actualización en dos fases y rol de DataRowVersion en una actualizac
   
  Los datos se pueden validar de distintas maneras:  
   
-- En la capa de empresa, agregando código a la aplicación para validar los datos. Un lugar en el que puede hacerlo es en el conjunto de datos. El conjunto de datos proporciona algunas ventajas de validación back end, como la capacidad de validar los cambios a medida que se modifican los valores de las columnas y las filas. Para obtener más información, consulte [validar datos en conjuntos de datos](../data-tools/validate-data-in-datasets.md).  
+- En la capa de empresa, agregando código a la aplicación para validar los datos. Un lugar en el que puede hacerlo es en el conjunto de datos. El Diseñador de DataSet proporciona algunas de las ventajas de validación de back-end, como la capacidad para validar los cambios cuando se modifican los valores de columna y fila. Para obtener más información, consulte [validar datos en conjuntos de datos](../data-tools/validate-data-in-datasets.md).  
   
 - En la capa de presentación, agregando validación a los formularios. Para obtener más información, consulte [User Input Validation in Windows Forms](http://msdn.microsoft.com/library/4ec07681-1dee-4bf9-be5e-718f635a33a1).  
   
@@ -249,15 +245,15 @@ Proceso de actualización en dos fases y rol de DataRowVersion en una actualizac
 (Modified)     c400         Nancy Buchanan    Preferred  
 ```  
   
- Llegados a este punto, su aplicación llama al método `Update` para transmitir el conjunto de datos a la base de datos. El método inspecciona cada fila de una en una. Para la primera fila, el método no transmite ninguna instrucción SQL a la base de datos porque esa fila no ha cambiado desde que se obtuvo de la base de datos.  
+ Llegados a este punto, su aplicación llama al método `Update` para transmitir el conjunto de datos a la base de datos. El método inspecciona cada fila de una en una. En la primera fila, el método no transmite ninguna instrucción SQL a la base de datos, porque esa fila no ha cambiado desde la primera vez que se obtuvo de la base de datos.  
   
  Para la segunda fila, sin embargo, el `Update` automáticamente, el método invoca el comando de datos correcto y la transmite a la base de datos. La sintaxis específica de la instrucción SQL depende del dialecto de SQL que sea compatible con el almacén de datos subyacente. Con todo, cabe señalar los siguientes rasgos generales de la instrucción SQL transmitida:  
   
--   Es una instrucción UPDATE. El adaptador sabe cómo utilizar una instrucción UPDATE, porque el valor de la propiedad <xref:System.Data.DataRow.RowState%2A> es <xref:System.Data.DataRowState>.  
+- Es una instrucción UPDATE. El adaptador sabe cómo utilizar una instrucción UPDATE, porque el valor de la propiedad <xref:System.Data.DataRow.RowState%2A> es <xref:System.Data.DataRowState>.  
   
--   La instrucción SQL transmitida incluye una cláusula WHERE que indica que el destino de la instrucción UPDATE es la fila donde `CustomerID = 'c400'`. Esta parte de la instrucción SELECT distingue la fila de destino de las demás porque `CustomerID` es la clave principal de la tabla de destino. La información de la cláusula WHERE se deriva de la versión original del registro (`DataRowVersion.Original`), en caso de los valores que son necesarios para identificar la fila han cambiado.  
+- Incluye una cláusula WHERE que indica que el destino de la instrucción UPDATE es la fila donde `CustomerID = 'c400'`. Esta parte de la instrucción SELECT distingue la fila de destino de las demás porque `CustomerID` es la clave principal de la tabla de destino. La información de la cláusula WHERE se deriva de la versión original del registro (`DataRowVersion.Original`), en caso de los valores que son necesarios para identificar la fila han cambiado.  
   
--   Incluye la cláusula SET para establecer los nuevos valores de las columnas modificadas.  
+- Incluye la cláusula SET para establecer los nuevos valores de las columnas modificadas.  
   
     > [!NOTE]
     >  Si la propiedad `UpdateCommand` del TableAdapter se ha establecido en el nombre de un procedimiento almacenado, el adaptador no construye una instrucción SQL. En su lugar, invoca al procedimiento almacenado pasando los parámetros correspondientes.  
@@ -275,14 +271,7 @@ Proceso de actualización en dos fases y rol de DataRowVersion en una actualizac
 >  También puede establecer los valores de la colección `Parameters` en el código; en ese caso, sería necesario hacerlo en un controlador de eventos para el evento <xref:System.Data.DataTable.RowChanging> del adaptador de datos.  
   
 ## <a name="see-also"></a>Vea también  
- [Información general sobre TableAdapter](../data-tools/tableadapter-overview.md)   
  [Actualizar datos mediante un TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)   
- [Información general de aplicaciones de datos en Visual Studio](../data-tools/overview-of-data-applications-in-visual-studio.md)   
- [Conectarse a datos en Visual Studio](../data-tools/connecting-to-data-in-visual-studio.md)   
- [Preparar su aplicación para recibir datos](http://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)   
- [Captura de datos en la aplicación](../data-tools/fetching-data-into-your-application.md)   
+ [Preparara la aplicación para recibir datos](http://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)   
  [Enlazar controles a los datos en Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)   
- [Edición de datos en la aplicación](../data-tools/editing-data-in-your-application.md)   
- [Validación de datos](http://msdn.microsoft.com/library/b3a9ee4e-5d4d-4411-9c56-c811f2b4ee7e)   
- [Guardar datos](../data-tools/saving-data.md)
-
+ [Validar datos](http://msdn.microsoft.com/library/b3a9ee4e-5d4d-4411-9c56-c811f2b4ee7e)   

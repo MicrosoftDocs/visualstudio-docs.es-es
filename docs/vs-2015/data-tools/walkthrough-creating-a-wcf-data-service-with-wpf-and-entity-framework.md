@@ -1,12 +1,9 @@
 ---
-title: 'Tutorial: Crear un servicio de datos WCF con WPF y Entity Framework | Microsoft Docs'
-ms.custom: ''
+title: 'Tutorial: Creación de un servicio de datos WCF con WPF y Entity Framework | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 helpviewer_keywords:
 - data services in Visual Studio
 - WCF Data Services, Visual Studio
@@ -16,38 +13,37 @@ ms.assetid: da66ad1b-a25d-485c-af13-2d18f0422e3d
 caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 3d115c7ea7b2739f49492fb28fe855e2638d972c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 52a2d7c239c9a4f3508f4bdb2077928e44ff802a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49889599"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107052"
 ---
-# <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Tutorial: Crear un servicio de datos WCF con WPF y Entity Framework
+# <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Tutorial: Creación de un servicio de datos de WCF con WPF y Entity Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 En este tutorial se muestra cómo crear una sencilla [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] que se hospeda en un [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplicación Web y, a continuación, acceder a ella desde una aplicación de Windows Forms.  
   
  En este tutorial:  
   
--   Creará una aplicación web para hospedar un [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)].  
+- Creará una aplicación web para hospedar un [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)].  
   
--   Creará un [!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] que represente la tabla Customers de la base de datos Northwind.  
+- Creará un [!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] que represente la tabla Customers de la base de datos Northwind.  
   
--   Creará un control [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)].  
+- Creará un control [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)].  
   
--   Creará una aplicación cliente y agregará una referencia al [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)].  
+- Creará una aplicación cliente y agregará una referencia al [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)].  
   
--   Habilitará el enlace de datos al servicio y generará la interfaz de usuario.  
+- Habilitará el enlace de datos al servicio y generará la interfaz de usuario.  
   
--   Opcionalmente agregará funciones de filtrado a la aplicación.  
+- Opcionalmente agregará funciones de filtrado a la aplicación.  
   
 ## <a name="prerequisites"></a>Requisitos previos  
  Necesita los componentes siguientes para completar este tutorial:  
   
--   Base de datos de ejemplo Northwind.  
+- Base de datos de ejemplo Northwind.  
   
      Si no dispone de esta base de datos en el equipo de desarrollo, puede descargarla del [Centro de descarga de Microsoft](http://go.microsoft.com/fwlink/?LinkID=98088). Para obtener instrucciones, consulte [descargar bases de datos de ejemplo](http://msdn.microsoft.com/library/ef9d69a1-9461-43fe-94bb-7c836754bcb5).  
   
@@ -62,11 +58,11 @@ En este tutorial se muestra cómo crear una sencilla [!INCLUDE[ss_data_service](
   
 1. En la barra de menús, elija **archivo**, **New**, **proyecto**.  
   
-2. En el **nuevo proyecto** cuadro de diálogo, expanda el **Visual Basic** o **Visual C#** y **Web** nodos y, a continuación, elija el **ASP. Aplicación Web de NET** plantilla.  
+2. En el cuadro de diálogo **Nuevo proyecto**, expanda los nodos **Visual Basic** o **Visual C#** y **Web** y después elija la plantilla **Aplicación web ASP.NET**.  
   
-3. En el **nombre** texto, escriba **NorthwindWeb**y, a continuación, elija el **Aceptar** botón.  
+3. En el cuadro de texto **Nombre**, escriba **NorthwindWeb** y elija el botón **Aceptar**.  
   
-4. En el **nuevo proyecto ASP.NET** cuadro de diálogo el **seleccionar una plantilla** elija **vacía**y, a continuación, elija el **Aceptar** botón.  
+4. En el cuadro de diálogo **Nuevo proyecto ASP.NET**, en la lista **Seleccionar una plantilla**, elija **Vacía** y después elija el botón **Aceptar**.  
   
    En este paso, creará un [!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] que represente la tabla Customers de la base de datos Northwind.  
   
@@ -74,33 +70,33 @@ En este tutorial se muestra cómo crear una sencilla [!INCLUDE[ss_data_service](
   
 1. En la barra de menús, elija **proyecto**, **Agregar nuevo elemento**.  
   
-2. En el **Agregar nuevo elemento** diálogo cuadro, elija el **datos** nodo y, a continuación, elija el **ADO.NET Entity Data Model** elemento.  
+2. En el cuadro de diálogo **Agregar nuevo elemento**, elija el nodo **Datos** y después elija el elemento **Entity Data Model de ADO.NET**.  
   
 3. En el **nombre** texto, escriba `NorthwindModel`y, a continuación, elija el **agregar** botón.  
   
     Aparecerá el Asistente para Entity Data Model.  
   
-4. En el Asistente de Entity Data Model, en el **Elegir contenido de Model** página, elija el **EF Designer de base de datos** elemento y, a continuación, elija el **siguiente** botón.  
+4. En el Asistente para Entity Data Model, en la página **Elegir contenido del modelo**, elija el elemento **EF Designer de base de datos** y luego elija el botón **Siguiente**.  
   
 5. En la página **Elegir la conexión de datos** , siga uno de estos procedimientos:  
   
-   -   Si una conexión de datos a la base de datos de ejemplo Northwind está disponible en la lista desplegable, elíjala.  
+   - Si una conexión de datos a la base de datos de ejemplo Northwind está disponible en la lista desplegable, elíjala.  
   
-        O bien  
+        -o bien-  
   
-   -   Elija la **nueva conexión** botón para configurar una nueva conexión de datos. Para obtener más información, consulte [agregar nuevas conexiones](../data-tools/add-new-connections.md).  
+   - Elija el botón **Nueva conexión** para configurar una nueva conexión de datos. Para obtener más información, consulte [agregar nuevas conexiones](../data-tools/add-new-connections.md).  
   
-6. Si la base de datos requiere una contraseña, elija el **Sí, incluir datos confidenciales en la cadena de conexión** botón de opción y, a continuación, elija el **siguiente** botón.  
+6. Si la base de datos requiere una contraseña, elija el botón de opción **Sí, incluir datos confidenciales en la cadena de conexión** y elija el botón **Siguiente**.  
   
    > [!NOTE]
-   >  Si aparece un cuadro de diálogo, elija **Sí** para guardar el archivo al proyecto.  
+   >  Si aparece un cuadro de diálogo, elija **Sí** para guardar el archivo en su proyecto.  
   
-7. En el **elija su versión** página, elija el **Entity Framework 5.0** botón de opción y, a continuación, elija el **siguiente** botón.  
+7. En la página **Elija su versión**, elija el botón de opción **Entity Framework 5.0** y después elija el botón **Siguiente**.  
   
    > [!NOTE]
    >  Para usar la última versión de Entity Framework 6 con servicios WCF, deberá instalar el paquete NuGet del proveedor de Entity Framework para WCF Data Services. Consulte [usar WCF Data Services 5.6.0 con Entity Framework 6 +](http://blogs.msdn.com/b/odatateam/archive/2013/10/02/using-wcf-data-services-5-6-0-with-entity-framework-6.aspx).  
   
-8. En el **elija los objetos de base de datos** , expanda el **tablas** nodo, seleccione el **clientes** casilla de verificación y, a continuación, elija el **finalizar** botón.  
+8. En la página **Elija los objetos de base de datos**, expanda el nodo **Tablas**, active la casilla **Customers** y después elija el botón **Finalizar**.  
   
     Se mostrará el diagrama del modelo de entidad y se agregará un archivo NorthwindModel.edmx al proyecto.  
   
@@ -110,13 +106,13 @@ En este tutorial se muestra cómo crear una sencilla [!INCLUDE[ss_data_service](
   
 1. En la barra de menús, elija **proyecto**, **Agregar nuevo elemento**.  
   
-2. En el **Agregar nuevo elemento** diálogo cuadro, elija el **Web** nodo y, a continuación, elija el **5.6 de servicio de datos de WCF** elemento.  
+2. En el cuadro de diálogo **Agregar nuevo elemento**, elija el nodo **Web** y después elija el elemento **Servicio de datos de WCF 5.6**.  
   
 3. En el **nombre** texto, escriba `NorthwindCustomers`y, a continuación, elija el **agregar** botón.  
   
     El archivo NorthwindCustomers.svc aparecerá en el **Editor de código**.  
   
-4. En el **Editor de código**, busque la primera `TODO:` comentar y reemplácelo por el código siguiente:  
+4. En el **Editor de código**, busque el primer comentario `TODO:` y reemplace el código por el texto siguiente:  
   
     [!code-csharp[WCFDataServiceWalkthrough#1](../snippets/csharp/VS_Snippets_VBCSharp/wcfdataservicewalkthrough/cs/northwindcustomers.svc.cs#1)]
     [!code-vb[WCFDataServiceWalkthrough#1](../snippets/visualbasic/VS_Snippets_VBCSharp/wcfdataservicewalkthrough/vb/northwindcustomers.svc.vb#1)]  
@@ -152,9 +148,9 @@ En este tutorial se muestra cómo crear una sencilla [!INCLUDE[ss_data_service](
   
 3. En el cuadro de texto **Nombre**, escriba `NorthwindClient` y elija el botón **Aceptar**.  
   
-4. En **el Explorador de soluciones**, elija el **NorthwindClient** nodo del proyecto.  
+4. En el **Explorador de soluciones**, elija el nodo de proyecto **NorthwindClient**.  
   
-5. En la barra de menús, elija **proyecto**, **establecer como proyecto de inicio**.  
+5. En la barra de menús, elija **Proyecto**, **Establecer como proyecto de inicio**.  
   
    En este paso, agregará una referencia de servicio al [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)] en el proyecto web.  
   
@@ -162,11 +158,11 @@ En este tutorial se muestra cómo crear una sencilla [!INCLUDE[ss_data_service](
   
 1. En la barra de menús, elija **proyecto**, **Add Service Reference**.  
   
-2. En el **Add Service Reference** diálogo cuadro, elija el **Discover** botón.  
+2. En el cuadro de diálogo **Agregar referencia de servicio**, elija el botón **Detectar**.  
   
-    La dirección URL del servicio NorthwindCustomers aparece en el **dirección** campo.  
+    En el campo **Dirección** aparecerá la dirección URL del servicio NorthwindCustomers.  
   
-3. Elija la **Aceptar** para agregar la referencia de servicio.  
+3. Elija el botón **Aceptar** para agregar la referencia del servicio.  
   
    En este paso, configurará un origen de datos para habilitar el enlace de datos al servicio.  
   
@@ -174,25 +170,25 @@ En este tutorial se muestra cómo crear una sencilla [!INCLUDE[ss_data_service](
   
 1. En la barra de menús, elija **vista**, **Other Windows**, **orígenes de datos**.  
   
-2. En el **orígenes de datos** ventana, elija el **Agregar nuevo origen de datos** botón.  
+2. En la ventana **Orígenes de datos**, elija el botón **Agregar nuevo origen de datos**.  
   
-3. En el **elegir un tipo de origen de datos** página de la **Asistente para configuración de origen de datos**, elija **objeto**y, a continuación, elija el **siguiente** botón .  
+3. En la página **Elija un tipo de origen de datos** del **Asistente para configuración de orígenes de datos**, elija **Objeto** y después elija el botón **Siguiente**.  
   
-4. En el **seleccionar objetos de datos** , expanda el **NorthwindClient** nodo y, a continuación, expanda el **NorthwindClient.ServiceReference1** nodo.  
+4. En la página **Seleccionar los objetos de datos**, expanda el nodo **NorthwindClient** y después expanda el nodo **NorthwindClient.ServiceReference1**.  
   
-5. Seleccione **cliente** casilla de verificación y, a continuación, elija el **finalizar** botón.  
+5. Active la casilla **Customer** y elija el botón **Finalizar**.  
   
    En este paso, creará la interfaz de usuario que mostrará los datos del servicio.  
   
 #### <a name="to-create-the-user-interface"></a>Para crear la interfaz de usuario  
   
-1. En el **orígenes de datos** ventana, abra el menú contextual para el **clientes** nodo y elija **copia**.  
+1. En la ventana **Orígenes de datos**, abra el menú contextual del nodo **Customers** y elija **Copiar**.  
   
-2. En el **Form1.vb** o **Form1.cs** Diseñador de formularios, abra el menú contextual y elija **pegar**.  
+2. En el diseñador de formularios de **Form1.vb** o de **Form1.cs**, abra el menú contextual y elija **Pegar**.  
   
     Se agregarán al formulario un control <xref:System.Windows.Forms.DataGridView>, un componente <xref:System.Windows.Forms.BindingSource> y un componente <xref:System.Windows.Forms.BindingNavigator>.  
   
-3. Elija la **CustomersDataGridView** control y, a continuación, en el **propiedades** ventana conjunto el **Dock** propiedad **rellenar**.  
+3. Elija el control **CustomersDataGridView** y después en la ventana **Propiedades**, establezca la propiedad **Acoplar** en **Rellenar**.  
   
 4. En **el Explorador de soluciones**, abra el menú contextual para el **Form1** nodo y elija **ver código** para abrir el Editor de código y agregue las siguientes importaciones o mediante declaración en el principio del archivo:  
   
@@ -240,11 +236,11 @@ En este tutorial se muestra cómo crear una sencilla [!INCLUDE[ss_data_service](
   
 #### <a name="to-add-filtering-by-city"></a>Para agregar el filtrado por ciudad  
   
-1.  En **el Explorador de soluciones**, abra el menú contextual para el **Form1.vb** o **Form1.cs** nodo y elija **abrir**.  
+1. En el **Explorador de soluciones**, abra el menú contextual del nodo **Form1.vb** o **Form1.cs** y elija **Abrir**.  
   
-2.  Agregar un <xref:System.Windows.Forms.TextBox> control y un <xref:System.Windows.Forms.Button> controlar desde la **cuadro de herramientas** al formulario.  
+2. Agregue un control <xref:System.Windows.Forms.TextBox> y un control <xref:System.Windows.Forms.Button> desde el **Cuadro de herramientas** al formulario.  
   
-3.  Abra el menú contextual para el <xref:System.Windows.Forms.Button> controlar y elegir **ver código**y, a continuación, agregue el código siguiente en el `Button1_Click` controlador de eventos:  
+3. Abra el menú contextual para el <xref:System.Windows.Forms.Button> controlar y elegir **ver código**y, a continuación, agregue el código siguiente en el `Button1_Click` controlador de eventos:  
   
     ```vb  
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click  
@@ -273,13 +269,12 @@ En este tutorial se muestra cómo crear una sencilla [!INCLUDE[ss_data_service](
     }  
     ```  
   
-4.  En el código anterior, reemplace `http://localhost:53161/NorthwindCustomers.svc` por la dirección URL del controlador de eventos `Form1_Load`.  
+4. En el código anterior, reemplace `http://localhost:53161/NorthwindCustomers.svc` por la dirección URL del controlador de eventos `Form1_Load`.  
   
-5.  En la barra de menús, elija **depurar**, **Iniciar depuración** para ejecutar la aplicación.  
+5. En la barra de menús, elija **depurar**, **Iniciar depuración** para ejecutar la aplicación.  
   
-6.  En el cuadro de texto, escriba **Londres**y, a continuación, elija el botón. Solo se mostrarán los clientes de Londres.  
+6. En el cuadro de texto, escriba **London** y después elija el botón. Solo se mostrarán los clientes de Londres.  
   
 ## <a name="see-also"></a>Vea también  
  [Servicios de Windows Communication Foundation y WCF Data Services en Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)   
- [Cómo: Agregar, actualizar o quitar una referencia de servicio de datos de WCF](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)
-
+ [Cómo: Agregar, actualizar o eliminar una referencia de servicio de datos de WCF](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)

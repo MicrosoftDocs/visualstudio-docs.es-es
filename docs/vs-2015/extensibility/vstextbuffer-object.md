@@ -1,14 +1,9 @@
 ---
 title: VSTextBuffer (objeto) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 f1_keywords:
 - VSTextBuffer
 helpviewer_keywords:
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: c5f94b45-7249-4e1f-a53d-1d2a1c61e0ef
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 987514f20746b8480391a35d7a9c9a9d3663cac2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 950f9c50ccaf137b21d775ceaf1bff196b1b8ac7
+ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51728782"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "59002108"
 ---
 # <a name="vstextbuffer-object"></a>VSTextBuffer (Objeto)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,9 +29,9 @@ El objeto de búfer de texto representa una secuencia de texto Unicode, que suel
   
 |Método|Descripción|  
 |------------|-----------------|  
-|[IOleCommandTarget](http://msdn.microsoft.com/library/windows/desktop/ms683797)|Interfaz OLE estándar. Se utiliza principalmente para el control en el búfer de deshacer y rehacer.|  
-|[IPersistFile](http://msdn.microsoft.com/library/windows/desktop/ms687223)|Interfaz OLE estándar.|  
-|[IPersistStream](http://msdn.microsoft.com/library/windows/desktop/ms690091)|Interfaz OLE estándar.|  
+|[IOleCommandTarget](/windows/desktop/api/docobj/nn-docobj-iolecommandtarget)|Interfaz OLE estándar. Se utiliza principalmente para el control en el búfer de deshacer y rehacer.|  
+|[IPersistFile](/windows/desktop/api/objidl/nn-objidl-ipersistfile)|Interfaz OLE estándar.|  
+|[IPersistStream](/windows/desktop/api/objidl/nn-objidl-ipersiststream)|Interfaz OLE estándar.|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompoundAction>|Permite la creación de acciones compuestos (es decir, las acciones que se agrupan en una unidad de deshacer y rehacer único).|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData>|Habilita la persistencia de datos administrados por el búfer de texto del documento.|  
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>|Proporciona servicios básicos; muchos clientes usan.|  
@@ -53,5 +48,4 @@ El objeto de búfer de texto representa una secuencia de texto Unicode, que suel
 ## <a name="see-also"></a>Vea también  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>   
  <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>   
- [Edición de cifras](http://msdn.microsoft.com/en-us/f08872bd-fd9c-4e36-8cf2-a2a2622ef986)
-
+ [Edición de cifras](http://msdn.microsoft.com/f08872bd-fd9c-4e36-8cf2-a2a2622ef986)

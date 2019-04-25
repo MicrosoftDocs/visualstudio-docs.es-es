@@ -1,7 +1,6 @@
 ---
 title: Resultados (Ventana)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - vs.build.output
@@ -14,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: d8931d88-250e-4db4-963f-2c5b3e99b45f
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f5121053ebb88d3c6c5bcbedbb2798daff3ad07f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 45a88ccb599ce709cae5e58b4fd2678b34706362
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53836496"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55943680"
 ---
 # <a name="output-window"></a>Resultados (ventana)
 

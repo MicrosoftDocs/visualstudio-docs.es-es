@@ -2,7 +2,6 @@
 title: IActiveScriptSiteInterruptPoll (interfaz) | Documentos de Microsoft
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7b93a0e353e342d805d933030b2ad4d2babb9ab9
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 6e4ec765d61da4d727fc9b500602c0619569ff67
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54345089"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58146011"
 ---
 # <a name="iactivescriptsiteinterruptpoll-interface"></a>IActiveScriptSiteInterruptPoll (Interfaz)
 El `IActiveScriptSiteInterruptPoll` interfaz permite a un host especificar que una secuencia de comandos debe finalizar.  

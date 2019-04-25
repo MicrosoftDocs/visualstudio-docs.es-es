@@ -6,16 +6,14 @@ Manager: lank
 layout: LandingPage
 Ms.date: 06/25/2018
 Ms.topic: landing-page
-Description: Welcome to Visual Studio Subscriptions
-Ms.prod: vs-subscription
-Ms.technology: vs-subscriptions
+Description: Bienvenido a las suscripciones de Visual Studio
 Searchscope: VS Subscription
-ms.openlocfilehash: 083522aae47abdfdec37d5add756457f18590953
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bac5cbd1ae0da5d4607b566af898c28efc0876ad
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49856839"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58322603"
 ---
 # <a name="visual-studio-subscriptions"></a>Suscripciones de Visual Studio
 
@@ -26,6 +24,7 @@ Las suscripciones de Visual Studio son un conjunto de recursos completo para que
 Los administradores deben iniciar sesión en [https://manage.visualstudio.com](https://manage.visualstudio.com) para asignar suscripciones a su equipo.<br>
 Los suscriptores deben iniciar sesión en [https://my.visualstudio.com](https://my.visualstudio.com) para tener acceso a las ventajas de la suscripción.
 
+<!-- markdownlint-disable MD033 -->
 <ul class="panelContent cardsFTitle">
     <li>
         <a href="/azure/">
@@ -157,7 +156,7 @@ Para hacer que la suscripción resulte más útil, agregamos y actualizamos las 
                         <ul>
                             <li><a href="/visualstudio/subscriptions/vs-ide-benefit">Visual Studio</a></li>
                             <li>Visual Studio para Mac</li>
-                            <li>Team Foundation Server y CAL de TFS</li>
+                            <li>Azure DevOps Server y CAL</li>
                         </ul>
                     </div>
                 </div>

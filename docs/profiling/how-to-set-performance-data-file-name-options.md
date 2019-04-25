@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: d7a8d6b9-ab23-46fb-98ed-774781157860
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e0027457e099c57423989070e6f30f275d7982e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2b83b0aa083ca115797c9dc1cd8345d397307177
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53990573"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56626965"
 ---
 # <a name="how-to-set-performance-data-file-name-options"></a>Procedimiento Establecer opciones de nombre de archivo de datos de rendimiento
 

@@ -1,7 +1,6 @@
 ---
 title: Cambiar las fuentes y los colores del editor
 ms.date: 11/26/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - editors, fonts
@@ -12,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: 3f7629d1-1cdf-4046-9a31-0632517f234d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed964723265015d0305fce156cb81bf593123e38
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b4fba419605dd332346885dbf93460c1a4e53c9d
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53891766"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223187"
 ---
-# <a name="how-to-change-fonts-and-colors-for-the-editor-in-visual-studio-2017"></a>Procedimiento Cambiar las fuentes y los colores del editor en Visual Studio 2017
+# <a name="how-to-change-fonts-and-colors-for-the-editor-in-visual-studio"></a>Procedimiento Cambiar las fuentes y los colores del editor de Visual Studio
 
 Puede cambiar la fuente predeterminada, ajustar el tamaño de fuente y cambiar los colores de primer plano y de fondo de diverso texto de **Mostrar los elementos** en el editor de código. Al cambiar la configuración de fuente, tenga en cuenta la información siguiente:
 

@@ -1,7 +1,6 @@
 ---
 title: Página de opciones, Propiedades de nodo Fuentes y colores
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - Tools Options settings, Fonts and Colors node properties
@@ -9,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 8e1ab784-5f85-4e2b-8ef9-e5d59ca4dbcb
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 61b36afc1098a5045bfefcb92fb2a3fda36d81ca
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b5363d71082128c13146c445fe312424be7e4340
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53938700"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55907366"
 ---
 # <a name="options-page-fonts-and-colors-node-properties"></a>Página de opciones, Propiedades de nodo Fuentes y colores
 En este documento se describen las propiedades de fuente y color de una ventana de herramientas registrada para aparecer en **Fuentes y colores** en la categoría **Entorno** del cuadro de diálogo **Opciones**. Esto apoya la naturaleza dinámica de los grupos de elementos coloreables, que pueden cambiar si se instalan o desinstalan VSPackages.

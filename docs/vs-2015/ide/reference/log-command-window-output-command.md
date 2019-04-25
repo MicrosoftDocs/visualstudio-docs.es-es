@@ -1,14 +1,9 @@
 ---
 title: Comando Registrar resultados de la ventana Comandos | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - tools.logcommandwindowoutput
 helpviewer_keywords:
@@ -18,18 +13,17 @@ ms.assetid: d4ecec35-5af4-4954-8d60-2cd24583fbb4
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: c48c61177f80be00532347d3c49173aae54c7109
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 26ab9d7f19e56e35b5524472b4a7179b33d09cf0
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49266401"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651302"
 ---
 # <a name="log-command-window-output-command"></a>Registrar resultados de la ventana de comandos (Comando)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Copia en un archivo todas las entradas y salidas de la ventana **Comandos**.  
   
 ## <a name="syntax"></a>Sintaxis  
@@ -82,6 +76,3 @@ Tools.LogCommandWindowOutput [filename] [/on|/off] [/overwrite]
  [Ventana Comandos](../../ide/reference/command-window.md)   
  [Cuadro Buscar/Comando](../../ide/find-command-box.md)   
  [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
-
-
-

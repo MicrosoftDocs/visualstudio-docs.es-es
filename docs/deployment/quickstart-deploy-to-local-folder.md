@@ -1,27 +1,30 @@
 ---
 title: Implementar en una carpeta local
-ms.date: 06/22/2018
+ms.date: 01/29/2019
 ms.topic: quickstart
 helpviewer_keywords:
 - deployment, local folder
 ms.assetid: adb461c4-812a-4b8c-b2ab-96002379f6a9
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b4dff7adb3942fce20b7b6cb5b09c29965320399
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5627cd0f5ad37a7f92408e887b87d5eda14706eb
+ms.sourcegitcommit: 612f8c21d1448f1a013c30100cdecfbec5ddb24f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53854040"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "55571232"
 ---
 # <a name="deploy-an-app-to-a-local-folder-using-visual-studio"></a>Implementar una aplicación en una carpeta local con Visual Studio
 
 Puede usar la herramienta **Publicar** para publicar aplicaciones ASP.NET, ASP.NET Core, .NET Core y Python en una carpeta local desde Visual Studio. En Node.js, se admiten los pasos, pero la interfaz de usuario es diferente.
 
 [!INCLUDE [quickstart-prereqs](includes/quickstart-prereqs.md)]
+
+> [!NOTE]
+> Si tiene que publicar una aplicación de escritorio de Windows en una carpeta local, vea [Implementación de una aplicación de escritorio con ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# o Visual Basic). Para C++ y CLR, vea [Implementación de ClickOnce para aplicaciones de Visual C++](/cpp/ide/clickonce-deployment-for-visual-cpp-applications), o bien, para C y C ++, vea [Implementación de una aplicación de Visual C++ mediante un proyecto de instalación](/cpp/ide/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
 
 ## <a name="deploy-to-a-local-folder"></a>Implementar en una carpeta local
 
@@ -33,7 +36,7 @@ Puede usar la herramienta **Publicar** para publicar aplicaciones ASP.NET, ASP.N
 
 1. En el cuadro de diálogo **Elegir un destino de publicación**, elija **Carpeta**.
 
-    ![Selección de carpeta local como destino de publicación](../deployment/media/quickstart-publish-folder.png "Selección de carpeta")
+    ![Selección de la carpeta local como destino de publicación](../deployment/media/quickstart-publish-folder.png "Selección de la carpeta")
 
 1. Especifique una ruta de acceso o seleccione **Examinar** para especificar una carpeta local.
 

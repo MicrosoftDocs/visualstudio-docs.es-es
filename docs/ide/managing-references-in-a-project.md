@@ -1,7 +1,6 @@
 ---
 title: Administrar referencias en un proyecto
 ms.date: 04/11/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.ProjectPropertiesReferencePaths
@@ -19,15 +18,15 @@ helpviewer_keywords:
 - objects [Visual Studio], referencing
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6209daea293859df16212560255f50d7f7ffff28
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d04e5703c96b710208cc1ecc79a169a458463497
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53822513"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55921060"
 ---
 # <a name="manage-references-in-a-project"></a>Administrar referencias en un proyecto
 

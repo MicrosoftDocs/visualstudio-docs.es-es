@@ -1,13 +1,9 @@
 ---
 title: Buscar y usar extensiones | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.ExtensionManager
 helpviewer_keywords:
@@ -18,13 +14,13 @@ ms.assetid: 4ca92d93-31b9-47ef-8109-4a429d9e2ca3
 caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: d557af4b09af81d4145a7ef66a7b812f5dcf04bb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+manager: jillfra
+ms.openlocfilehash: 2070c9c68719e51357f3cd5fed4bee3cfbc35fcf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53884406"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051913"
 ---
 # <a name="finding-and-using-visual-studio-extensions"></a>Buscar y usar extensiones de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +33,7 @@ Las extensiones de Visual Studio son paquetes de códigos que se ejecutan dentro
 >  A partir de Visual Studio 2015, las extensiones de la Galería de Visual Studio se actualizarán automáticamente.  Puede cambiar esta configuración en el cuadro de diálogo **Extensiones y actualizaciones** .  Vea la sección sobre **Actualizaciones automáticas de extensión** a continuación para obtener más información.
 
 ## <a name="finding-visual-studio-extensions"></a>Buscar extensiones de Visual Studio
- Se pueden instalar extensiones desde la [Galería de Visual Studio](http://go.microsoft.com/fwlink/?LinkID=178891) o desde la [Galería de ejemplos](http://go.microsoft.com/fwlink/?LinkId=245175) del sitio web de Microsoft. Las extensiones pueden ser controles, ejemplos, plantillas, herramientas u otros componentes que agregan funcionalidad a Visual Studio. Visual Studio admite extensiones con el formato de paquete VSIX; esto incluye plantillas de proyecto, plantillas de elementos, elementos del **Cuadro de herramientas** , componentes de Managed Extension Framework (MEF) y VSPackages. También puede descargar e instalar extensiones basadas en MSI, pero el cuadro de diálogo **Extensiones y actualizaciones** no puede habilitarlas ni deshabilitarlas. La Galería de Visual Studio contiene extensiones VSIX y MSI.
+ Puede instalar extensiones desde la [Visual Studio Marketplace](https://marketplace.visualstudio.com/) o [Galería de ejemplos](https://code.msdn.microsoft.com/vstudio) en el sitio Web de Microsoft. Las extensiones pueden ser controles, ejemplos, plantillas, herramientas u otros componentes que agregan funcionalidad a Visual Studio. Visual Studio admite extensiones con el formato de paquete VSIX; esto incluye plantillas de proyecto, plantillas de elementos, elementos del **Cuadro de herramientas** , componentes de Managed Extension Framework (MEF) y VSPackages. También puede descargar e instalar extensiones basadas en MSI, pero el cuadro de diálogo **Extensiones y actualizaciones** no puede habilitarlas ni deshabilitarlas. La Galería de Visual Studio contiene extensiones VSIX y MSI.
 
 ## <a name="installing-or-uninstalling-visual-studio-extensions"></a>Instalar o desinstalar extensiones de Visual Studio
  En **Extensiones y actualizaciones**, busque la extensión que desea instalar. (Si conoce el nombre o parte del nombre de la extensión, puede buscar en la ventana **Búsqueda en la Galería de Visual Studio**). Haga clic en **Descargar** y, después, en **Instalar**. Para cargar la extensión, debe reiniciar Visual Studio.
@@ -58,9 +54,9 @@ Las extensiones de Visual Studio son paquetes de códigos que se ejecutan dentro
 
  Si desea deshabilitar las actualizaciones automáticas, puede deshabilitar la característica para todas las extensiones o solo para extensiones específicas.
 
--   Para deshabilitar las actualizaciones automáticas para todas las extensiones, haga clic en el vínculo **Cambiar la configuración de extensiones y actualizaciones** en el cuadro de diálogo **Extensiones y actualizaciones** y desactive la opción **Actualizar las extensiones automáticamente**.
+- Para deshabilitar las actualizaciones automáticas para todas las extensiones, haga clic en el vínculo **Cambiar la configuración de extensiones y actualizaciones** en el cuadro de diálogo **Extensiones y actualizaciones** y desactive la opción **Actualizar las extensiones automáticamente**.
 
--   Para deshabilitar las actualizaciones automáticas de una extensión específica, desactive la opción **Actualizar esta extensión automáticamente** en el panel de detalles de la extensión situado en el lado derecho del cuadro de diálogo **Extensiones y actualizaciones** .
+- Para deshabilitar las actualizaciones automáticas de una extensión específica, desactive la opción **Actualizar esta extensión automáticamente** en el panel de detalles de la extensión situado en el lado derecho del cuadro de diálogo **Extensiones y actualizaciones** .
 
 > [!NOTE]
 >  A partir de Visual Studio 2015 Update 2, puede especificar (en **Herramientas / Opciones / Entorno / Extensiones y actualizaciones**) si quiere actualizaciones automáticas para las extensiones por usuario, todas las extensiones de usuario o ambas (la configuración predeterminada).

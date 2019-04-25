@@ -1,7 +1,6 @@
 ---
-title: Procedimiento Visualizar una asociación de colecciones (Diseñador de clases)
+title: Filtrar Visualizar una asociación de colecciones (Diseñador de clases)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.collectionassociationline
@@ -13,17 +12,17 @@ helpviewer_keywords:
 ms.assetid: 54e39838-2fc9-4dc2-85b6-7e88a743108e
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: acf1fd75770888f492833235f09a381d0836be34
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e734b84bb8c386c60f3fef9061d74b8b31277cec
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53925399"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55910954"
 ---
-# <a name="how-to-visualize-a-collection-association-in-class-designer"></a>Procedimiento Visualizar una asociación de colecciones en el Diseñador de clases
+# <a name="how-to-visualize-a-collection-association-in-class-designer"></a>Filtrar Visualizar una asociación de colecciones en el Diseñador de clases
 
 Las propiedades y campos que son colecciones de otros tipos se pueden mostrar en el diagrama de clase como una asociación de colecciones. A diferencia de una asociación normal, que muestra un campo o propiedad como una línea que vincula la clase propietaria con el tipo de campo, una asociación de colecciones se muestra como una línea que vincula la clase propietaria con el tipo recopilado.
 

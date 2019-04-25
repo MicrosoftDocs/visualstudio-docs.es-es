@@ -6,16 +6,15 @@ helpviewer_keywords:
 - text templates, accessing models
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 364e39744f403e83847d983e02843bf538bf5c57
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: afb835c883050064d96c32c80de75d58299892f7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53856870"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040695"
 ---
 # <a name="accessing-models-from-text-templates"></a>Acceso a modelos a partir de plantillas de texto
 Mediante el uso de plantillas de texto, puede crear archivos de informe, archivos de código fuente y otros archivos de texto que se basan en modelos de lenguaje específico de dominio. Para obtener información básica acerca de las plantillas de texto, consulte [generación de código y plantillas de texto T4](../modeling/code-generation-and-t4-text-templates.md). Las plantillas de texto funcionarán en modo experimental cuando se depura su DSL y también funcionará en un equipo en el que ha implementado el DSL.
@@ -76,9 +75,9 @@ Here is a list of elements in the model:
 
  El procesador de directivas de DSL realiza dos tareas principales:
 
--   Inserta eficazmente ensamblado e importar directivas en la plantilla que hace referencia a su DSL. Esto le permite usar las clases de dominio en el código de plantilla.
+- Inserta eficazmente ensamblado e importar directivas en la plantilla que hace referencia a su DSL. Esto le permite usar las clases de dominio en el código de plantilla.
 
--   Carga el archivo que especifique en el `requires` parámetro y establece una propiedad `this` que hace referencia al elemento raíz del modelo cargado.
+- Carga el archivo que especifique en el `requires` parámetro y establece una propiedad `this` que hace referencia al elemento raíz del modelo cargado.
 
 ## <a name="validating-the-model-before-running-the-template"></a>Validar el modelo antes de ejecutar la plantilla
  Puede hacer que el modelo que se valida antes de ejecuta la plantilla.

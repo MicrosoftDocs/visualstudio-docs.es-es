@@ -9,33 +9,32 @@ helpviewer_keywords:
 ms.assetid: 9df51800-190e-4662-b685-fdaafcff1400
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4ff1c9d1557722b31a4375c3189b788968c2b198
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 89152fcb003886087704107f2d4c2a66d3313cc3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53925214"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050367"
 ---
 # <a name="template-directory-description-vsdir-files"></a>Archivos de descripción del directorio de plantilla (.Vsdir)
-Un archivo de descripción del directorio de plantilla (.vsdir) es un archivo de texto que permite que el entorno de desarrollo integrado (IDE) para mostrar las carpetas, archivos .vsz del asistente y archivos de plantilla que están asociados con el proyecto en los cuadros de diálogo. El contenido incluye un registro por cada archivo o carpeta. Se combinan todos los archivos .vsdir en una ubicación que se hace referencia, aunque generalmente se proporciona solo un archivo .vsdir para describir varias carpetas, los asistentes o los archivos de plantilla.  
+Un archivo de descripción del directorio de plantilla (.vsdir) es un archivo de texto que permite que el entorno de desarrollo integrado (IDE) para mostrar las carpetas, archivos .vsz del asistente y archivos de plantilla que están asociados con el proyecto en los cuadros de diálogo. El contenido incluye un registro por cada archivo o carpeta. Se combinan todos los archivos .vsdir en una ubicación que se hace referencia, aunque generalmente se proporciona solo un archivo .vsdir para describir varias carpetas, los asistentes o los archivos de plantilla.
 
- Carpetas (subdirectorios), los archivos que se hace referencia en el archivo vsdir y el propio archivo .vsdir se encuentran en el mismo directorio. Cuando el IDE ejecuta un asistente o muestra una carpeta o archivo en el **nuevo proyecto** o **Agregar nuevo elemento** cuadros de diálogo, el IDE examina el directorio que contiene los archivos para determinar si es un archivo .vsdir ejecutados presente. Si se encuentra un archivo VSDir, el IDE lo lee para determinar si contiene una entrada para el archivo o carpeta ejecutada o que se muestran. Si se encuentra una entrada, el IDE usa la información de la ejecución del asistente o presentación del contenido.  
+ Carpetas (subdirectorios), los archivos que se hace referencia en el archivo vsdir y el propio archivo .vsdir se encuentran en el mismo directorio. Cuando el IDE ejecuta un asistente o muestra una carpeta o archivo en el **nuevo proyecto** o **Agregar nuevo elemento** cuadros de diálogo, el IDE examina el directorio que contiene los archivos para determinar si es un archivo .vsdir ejecutados presente. Si se encuentra un archivo VSDir, el IDE lo lee para determinar si contiene una entrada para el archivo o carpeta ejecutada o que se muestran. Si se encuentra una entrada, el IDE usa la información de la ejecución del asistente o presentación del contenido.
 
- El siguiente ejemplo de código pertenece al archivo SourceFiles.vsdir en el \<EnvSDK > \BscPrj\BscPrj\BscPrjProjectItems\Source_Files clave de registro:  
+ El siguiente ejemplo de código pertenece al archivo SourceFiles.vsdir en el \<EnvSDK > \BscPrj\BscPrj\BscPrjProjectItems\Source_Files clave de registro:
 
-```  
-HeaderFile.h|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#125|130|#126|0|0|0|#127  
-SourceFile.cpp|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#122|110|#123|0|0|0|#124  
-```  
+```
+HeaderFile.h|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#125|130|#126|0|0|0|#127
+SourceFile.cpp|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#122|110|#123|0|0|0|#124
+```
 
- En este caso, los dos registros están en un archivo. Una nueva línea (carácter de retorno de carro) separa cada registro. Cada línea representa un tipo de archivo diferente. Una canalización (&#124;) separa los campos de cada registro. Un único directorio puede contener varios archivos .vsdir que tienen nombres de archivo diferente, o puede tener un archivo VSDIR para cada tipo de archivo.  
+ En este caso, los dos registros están en un archivo. Una nueva línea (carácter de retorno de carro) separa cada registro. Cada línea representa un tipo de archivo diferente. Una canalización (&#124;) separa los campos de cada registro. Un único directorio puede contener varios archivos .vsdir que tienen nombres de archivo diferente, o puede tener un archivo VSDIR para cada tipo de archivo.
 
-## <a name="fields"></a>Campos  
- En la tabla siguiente se enumera los campos especificados para cada registro.  
-
+## <a name="fields"></a>Campos
+ En la tabla siguiente se enumera los campos especificados para cada registro.
 
 | Campo | Descripción |
 | - | - |
@@ -49,20 +48,20 @@ SourceFile.cpp|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#122|110|#123|0|0|0|#124
 | Marcas (<xref:Microsoft.VisualStudio.Shell.Interop.__VSDIRFLAGS>) | Se utiliza para habilitar o deshabilitar la **nombre** y **ubicación** campos de la **Agregar nuevo elemento** cuadro de diálogo. El valor de la **marcas** campo es el equivalente decimal de la combinación de marcas de bits necesarios.<br /><br /> Cuando un usuario selecciona un elemento en el **New** ficha, el proyecto determina si el campo de nombre y el campo de ubicación se muestran cuando el **Agregar nuevo elemento** cuadro de diálogo se muestra por primera vez. Un elemento, mediante un archivo VSDir, puede controlar solo si están habilitados los campos frente a deshabilitado cuando se selecciona el elemento. |
 | SuggestedBaseName | Representa el nombre predeterminado para el archivo, el asistente o la plantilla. Este campo es una cadena o un identificador de recursos de la forma "#ResID". El IDE usa este valor para proporcionar un nombre predeterminado para el elemento. Este valor base se anexa con un valor entero y que el nombre sea único, como MyFile21.asp.<br /><br /> En la lista anterior, descripción, DLLPath, IconResourceId, indicadores y SuggestedBaseNumber solo se aplican a los archivos de plantilla y el asistente. Estos campos no se aplican a las carpetas. Este hecho se ilustra en el código en el archivo BscPrjProjectItems el \<EnvSDK > \BscPrj\BscPrj\BscPrjProjectItems clave de registro. Este archivo contiene tres registros (uno para cada carpeta) con cuatro campos para cada registro: RelPathName, {clsidPackage}, LocalizedName y SortPriority.<br /><br /> `General&#124;{E59935A1-6156-11d1-87A6-00A0C91E2A46}&#124;#110&#124;100`<br /><br /> `Source_Files&#124;{E59935A1-6156-11d1-87A6-00A0C91E2A46}&#124;#111&#124;110`<br /><br /> `Env&#124;{E59935A1-6156-11d1-87A6-00A0C91E2A46}&#124;#112&#124;120` |
 
- Cuando se crea un archivo de asistente, también debe considerar los siguientes problemas.  
+ Cuando se crea un archivo de asistente, también debe considerar los siguientes problemas.
 
--   Los campos opcionales para los que no existen datos significativos tienen que contener un cero (0) como marcador de posición.  
+- Los campos opcionales para los que no existen datos significativos tienen que contener un cero (0) como marcador de posición.
 
--   Si se proporciona ningún nombre localizado, se usa el nombre de ruta de acceso relativa en el archivo del asistente.  
+- Si se proporciona ningún nombre localizado, se usa el nombre de ruta de acceso relativa en el archivo del asistente.
 
--   DLLPath invalida clsidPackage para la ubicación del icono.  
+- DLLPath invalida clsidPackage para la ubicación del icono.
 
--   Si se define ningún icono, el IDE sustituye el icono predeterminado para un archivo que tiene esa extensión.  
+- Si se define ningún icono, el IDE sustituye el icono predeterminado para un archivo que tiene esa extensión.
 
--   Si no se proporciona ninguna sugerencia de nombre base, se utiliza 'Project'.  
+- Si no se proporciona ninguna sugerencia de nombre base, se utiliza 'Project'.
 
--   Si elimina los archivos .vsz, carpetas o archivos de plantilla, debe quitar también los registros asociados desde el archivo vsdir.  
+- Si elimina los archivos .vsz, carpetas o archivos de plantilla, debe quitar también los registros asociados desde el archivo vsdir.
 
-## <a name="see-also"></a>Vea también  
- [Asistentes](../../extensibility/internals/wizards.md)   
- [Archivos de asistentes (.Vsz)](../../extensibility/internals/wizard-dot-vsz-file.md)
+## <a name="see-also"></a>Vea también
+- [Asistentes](../../extensibility/internals/wizards.md)
+- [Archivos de asistentes (.Vsz)](../../extensibility/internals/wizard-dot-vsz-file.md)

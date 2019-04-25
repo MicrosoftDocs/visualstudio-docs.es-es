@@ -1,7 +1,6 @@
 ---
 title: Establecer el proceso actual
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - Debug.SetCurrentProcess command
@@ -9,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 1e016ebd-aadd-411f-a606-03bf69d3f8aa
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c01c399dc76d1b328443edef27edd9a921b1b9c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 24f4c08147f72168f5207418a51d7a9cfa8a2b51
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53855288"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55938441"
 ---
 # <a name="set-current-process"></a>Establecer el proceso actual
 Establece el proceso especificado como el proceso activo en el depurador.

@@ -1,24 +1,19 @@
 ---
 title: Solución de problemas de cobertura de código | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: troubleshooting
 ms.assetid: 26de91b8-45e3-4976-a20e-a3bd1942ddcb
 caps.latest.revision: 13
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: f7df2f4c83a61c62a7774bea475d54c3deea4c47
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 8faf41bb838880b1f0f747f1feb9d3a318b2f1c4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306057"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117413"
 ---
 # <a name="troubleshooting-code-coverage"></a>Solucionar problemas de cobertura de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,9 +45,9 @@ La herramienta de análisis de cobertura de código de Visual Studio recopila da
 ### <a name="youre-looking-at-a-previous-result"></a>Está viendo un resultado anterior  
  Cuando se modifican y se vuelven a ejecutar las pruebas, todavía puede estar visible un resultado de cobertura de código anterior, incluido el color del código de esa ejecución anterior.  
   
-1.  Ejecute Analizar cobertura de código.  
+1. Ejecute Analizar cobertura de código.  
   
-2.  Asegúrese de que ha seleccionado el conjunto de resultados más reciente en la ventana de resultados de cobertura de código.  
+2. Asegúrese de que ha seleccionado el conjunto de resultados más reciente en la ventana de resultados de cobertura de código.  
   
 ### <a name="pdb-symbol-files-are-unavailable"></a>Los archivos .pdb (símbolo) no están disponibles  
  Análisis  
@@ -112,17 +107,17 @@ La herramienta de análisis de cobertura de código de Visual Studio recopila da
  Resolución  
  Hay dos posibles tipos de errores:  
   
--   **Error de XML**  
+- **Error de XML**  
   
      Abra el archivo .runsettings en el editor XML de Visual Studio. Busque las indicaciones del error.  
   
--   **Error de expresión regular**  
+- **Error de expresión regular**  
   
      Cada cadena del archivo es una expresión regular. Revise cada una de ellas en busca de errores y, en particular, busque:  
   
-    -   Paréntesis no coincidentes (...) o paréntesis sin escape \\(...\\). Si desea asociar un paréntesis en la cadena de búsqueda, debe indicar su secuencia de escape. Por ejemplo, para hacer coincidir una función, use: `.*MyFunction\(double\)`  
+    - Paréntesis no coincidentes (...) o paréntesis sin escape \\(...\\). Si desea asociar un paréntesis en la cadena de búsqueda, debe indicar su secuencia de escape. Por ejemplo, para hacer coincidir una función, use: `.*MyFunction\(double\)`  
   
-    -   Asterisco o signo más al principio de una expresión. Para asociar cualquier cadena de caracteres, use un punto seguido de un asterisco: `.*`  
+    - Asterisco o signo más al principio de una expresión. Para asociar cualquier cadena de caracteres, use un punto seguido de un asterisco: `.*`  
   
 ### <a name="custom-runsettings-file-with-incorrect-exclusions"></a>Archivo .runsettings personalizado con exclusiones incorrectas  
  Análisis  
@@ -152,6 +147,3 @@ La herramienta de análisis de cobertura de código de Visual Studio recopila da
   
 ## <a name="see-also"></a>Vea también  
  [Usar cobertura de código para determinar la cantidad de código que se está probando](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)
-
-
-

@@ -1,28 +1,27 @@
 ---
 title: Búsqueda de referencias en el código
 ms.date: 09/26/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - code editor, find all references
 - find all references
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 143a40c1a2e3602460419465cb84d6ffa44d853c
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: df3eb6577c72aa421f2a22d93b3109f63548cc96
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54269857"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324752"
 ---
 # <a name="find-references-in-your-code"></a>Búsqueda de referencias en el código
 
 Puede usar el comando **Buscar todas las referencias** para buscar dónde se hace referencia a elementos de código específicos en todo el código base. El comando **Buscar todas las referencias** está disponible en el menú contextual (clic en el botón derecho) del elemento del que quiere buscar referencias. O bien, si prefiere usar el teclado, presione **MAYÚS+F12**.
 
-Los resultados aparecen en una ventana de herramientas denominada **<element> references**, donde *element* es el nombre del elemento que está buscando. Una barra de herramientas en esta ventana **Referencias** le permite hacer lo siguiente:
+Los resultados aparecen en una ventana de herramientas denominada **\<element> references**, donde *element* es el nombre del elemento que busca. Una barra de herramientas en esta ventana **Referencias** le permite hacer lo siguiente:
 - Cambiar el ámbito de la búsqueda en una lista desplegable. Puede buscar solo en los documentos modificados o en toda la solución.
 - Copiar el elemento seleccionado al que se hace referencia mediante el botón **Copiar**.
 - Seleccionar botones para ir a la ubicación siguiente o anterior en la lista, o presionar las teclas **F8** y **Mayús + F8** para hacerlo.
@@ -47,6 +46,11 @@ Puede usar los métodos siguientes para navegar a referencias en la ventana **Re
 De forma predeterminada, las referencias se agrupan por proyecto y, luego, por definición. Aun así, puede cambiar este orden de agrupación si cambia la configuración de la lista desplegable **Agrupar por:** en la barra de herramientas. Por ejemplo, puede cambiarlo del valor predeterminado **Proyecto y luego definición** a **Definición y luego Proyecto** o a otros valores.
 
 **Definición** y **Proyecto** son las dos agrupaciones predeterminadas que se usan, pero puede agregar otras mediante el comando **Agrupación** en el menú contextual del elemento seleccionado. Puede ser útil agregar más agrupaciones si su solución tiene una gran cantidad de archivos y rutas de acceso.
+
+## <a name="filter-by-reference-type-in-net"></a>Filtrar por tipo de referencia en .NET
+En C# o Visual Basic, la ventana Buscar referencias tiene una columna de tipo donde se indica el tipo de referencia encontrada. Esta columna se puede usar para filtrar por tipo de referencia. Basta con hacer clic en el icono de filtro que aparece cuando se pasa el mouse sobre el encabezado de columna. Las referencias se pueden filtrar por lectura, escritura, referencia y NameOnly.
+
+![Columna de tipo de la ventana Buscar referencias ](../ide/media/vside_findallreferencesKind.png)
 
 ## <a name="see-also"></a>Vea también
 

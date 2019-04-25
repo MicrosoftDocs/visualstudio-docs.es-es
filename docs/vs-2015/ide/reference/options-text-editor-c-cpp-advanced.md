@@ -1,14 +1,9 @@
 ---
-title: Opciones, Editor de texto, C/C ++, avanzado | Documentos de Microsoft
-ms.custom: ''
+title: Opciones, editor de texto, C-C++, avanzado | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.C\C++.Advanced
 - VS.ToolsOptionsPages.Text_Editor.C%2FC%2B%2B.Advanced
@@ -19,24 +14,23 @@ ms.assetid: 67c82ae5-fddd-49df-baec-8e7498b156f3
 caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: aafa46e62af6eadb56d8cf53cb2190bc7403358b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: ca10710d87777cdaeead42015d46cc6d489c907e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49285706"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072643"
 ---
 # <a name="options-text-editor-cc-advanced"></a>Opciones, editor de texto, C/C++, avanzado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Al cambiar estas opciones, puede modificar el comportamiento relacionado con IntelliSense y la base de datos de exploración cuando programa en C o C++.  
   
  Para tener acceso a esta página, en el cuadro de diálogo **Opciones**, en el panel izquierdo, expanda **Editor de texto**, expanda **C/C++** y, después, pulse **Opciones avanzadas**.  
   
 > [!NOTE]
->  Es posible que el equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Vea [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Es posible que el equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Vea [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="browsingnavigation"></a>Exploración o navegación  
  Nunca debería elegir estas opciones excepto en el caso excepcional donde una solución sea tan grande que la actividad de base de datos use una cantidad inaceptable de recursos del sistema.  
@@ -79,19 +73,19 @@ Al cambiar estas opciones, puede modificar el comportamiento relacionado con Int
   
  Puede establecerlo con una suma de alguna de las siguientes opciones:  
   
--   0 - Ninguno  
+- 0 - Ninguno  
   
--   1 - General  
+- 1 - General  
   
--   2 - Inactivo  
+- 2 - Inactivo  
   
--   4 - WorkItem  
+- 4 - WorkItem  
   
--   8 - IntelliSense  
+- 8 - IntelliSense  
   
--   16 - ACPerf  
+- 16 - ACPerf  
   
--   32 - ClassView  
+- 32 - ClassView  
   
 ## <a name="fallback-location"></a>Ubicación de recursos de reserva  
  La ubicación de recursos de reserva es el lugar donde se colocan los archivos auxiliares de SDF e IntelliSense (por ejemplo, iPCH) cuando la ubicación principal (mismo directorio que la solución) no se usa. Esta situación puede producirse si el usuario no tiene permisos para escribir en el directorio de la solución o este se encuentra en un dispositivo lento. La ubicación de recursos de reserva predeterminada está en el directorio temporal del usuario.  
@@ -164,6 +158,3 @@ Al cambiar estas opciones, puede modificar el comportamiento relacionado con Int
   
 ## <a name="see-also"></a>Vea también  
  [Opciones del editor específicas del lenguaje](../../ide/reference/setting-language-specific-editor-options.md)
-
-
-

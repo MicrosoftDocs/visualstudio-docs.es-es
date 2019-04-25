@@ -1,7 +1,6 @@
 ---
 title: 'CA1304: Especificar CultureInfo'
 ms.date: 06/30/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - SpecifyCultureInfo
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: b912d76a-54fd-4c93-b25d-16491e0ae319
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 564180330380a7076b091e0b2f793ea575606d53
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f1fe4ebce3a49c4aa626515e22eacd1c8e263847
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968490"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57870378"
 ---
 # <a name="ca1304-specify-cultureinfo"></a>CA1304: Especificar CultureInfo
 
@@ -87,4 +86,4 @@ Este ejemplo produce el siguiente resultado:
 
 ## <a name="see-also"></a>Vea también
 
-- [Uso de la clase CultureInfo](/dotnet/standard/globalization-localization/globalization#Cultures)
+- [Uso de la clase CultureInfo](/dotnet/standard/globalization-localization/globalization#work-with-culture-specific-settings)

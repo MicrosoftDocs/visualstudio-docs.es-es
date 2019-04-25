@@ -12,23 +12,23 @@ helpviewer_keywords:
 ms.assetid: bb6291e1-596d-4af0-9f22-5fd713d6b84b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f84b18cd3d4bfbae949ba4dd3199bace6604148f
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
-ms.translationtype: MTE95
+ms.openlocfilehash: 60bb98644c1905b030176b28b97575b379bed38d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54204498"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103100"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>Inspeccionar las variables en las ventanas automático y variables locales
 
-El **automático** y **variables locales** ventanas muestran valores de variables durante la depuración. Windows solo están disponibles durante una sesión de depuración. El **automático** ventana muestra las variables usadas en torno al punto de interrupción actual. El **variables locales** ventana muestra las variables definidas en el ámbito local, que normalmente es la función actual o el método. Si esta es la primera vez que intenta depurar código, le recomendamos que lea [Cómo depurar para principiantes sin experiencia](../debugger/debugging-absolute-beginners.md) y [Fix bugs by writing better C# code](../debugger/write-better-code-with-visual-studio.md) (Mejora de la escritura de código de C# para solucionar errores) antes de continuar con este artículo.
+El **automático** y **variables locales** ventanas muestran valores de variables durante la depuración. Windows solo están disponibles durante una sesión de depuración. El **automático** ventana muestra las variables usadas en torno al punto de interrupción actual. El **variables locales** ventana muestra las variables definidas en el ámbito local, que normalmente es la función actual o el método. Si se trata de la primera vez que ha probado para depurar el código, es posible que desea leer [de depuración para principiantes absolutos](../debugger/debugging-absolute-beginners.md) y [herramientas y técnicas de depuración](../debugger/write-better-code-with-visual-studio.md) antes de pasar a través de este artículo.
 
  El **automático** ventana está disponible para C#, código de Visual Basic, C++ y Python, pero no para JavaScript o F#.
-  
-Para abrir el **automático** ventana, durante la depuración, seleccione **depurar** > **Windows** > **automático**, o presione **Ctrl**+**Alt**+**V** > **A**.  
+
+Para abrir el **automático** ventana, durante la depuración, seleccione **depurar** > **Windows** > **automático**, o presione **Ctrl**+**Alt**+**V** > **A**.
 
 Para abrir el **variables locales** ventana, durante la depuración, seleccione **depurar** > **Windows** > **variables locales**, o presione **Alt**+**4**.
 
@@ -56,9 +56,22 @@ En el código C++ nativo, se debe calificar el contexto de un nombre de variable
 >[!CAUTION]
 >Asegúrese de que comprende las consecuencias antes de cambiar los valores y expresiones. Algunas causas posibles son:
 >
->-   La evaluación de algunas expresiones puede cambiar el valor de una variable o afectar de otra forma al estado del programa. Por ejemplo, evaluar `var1 = ++var2` cambia el valor de ambos `var1` y `var2`. Estas expresiones se dice que tienen [efectos](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\)). Efectos secundarios pueden producir resultados inesperados si no es consciente de ellos.
+>- La evaluación de algunas expresiones puede cambiar el valor de una variable o afectar de otra forma al estado del programa. Por ejemplo, evaluar `var1 = ++var2` cambia el valor de ambos `var1` y `var2`. Estas expresiones se dice que tienen [efectos](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\)). Efectos secundarios pueden producir resultados inesperados si no es consciente de ellos.
 >
->-   La modificación de valores de punto flotante puede dar lugar a ligeras imprecisiones debido a la conversión de decimal a binario de los componentes fraccionarios. Incluso una operación de edición aparentemente inofensiva puede causar cambios en alguno de los bits de la variable de punto flotante.
+>- La modificación de valores de punto flotante puede dar lugar a ligeras imprecisiones debido a la conversión de decimal a binario de los componentes fraccionarios. Incluso una operación de edición aparentemente inofensiva puede causar cambios en alguno de los bits de la variable de punto flotante.
+
+::: moniker range=">= vs-2019" 
+## <a name="search-in-the-autos-or-locals-window"></a>Buscar en la ventana automático o variables locales
+
+Puede buscar palabras clave en las columnas Nombre, valor y tipo de la **automático** o **variables locales** ventana mediante la barra de búsqueda encima de cada ventana. Presione ENTRAR o seleccione una de las flechas para ejecutar una búsqueda. Para cancelar una búsqueda en curso, seleccione el icono "x" en la barra de búsqueda.
+
+Utilice las flechas izquierdas y derecha (MAYÚS + F3 y F3, respectivamente) navegar entre encuentra coincidencias.
+
+![Búsqueda en la ventana variables locales](../debugger/media/ee-search-locals.png "búsqueda en la ventana variables locales")
+
+Para realizar la búsqueda exhaustiva de más o menos, use el **búsqueda más profunda** lista desplegable en la parte superior de la **automático** o **variables locales** ventana Seleccionar cuántos niveles de profundidad desea buscar en objetos anidados. 
+
+::: moniker-end
 
 ## <a name="change-the-context-for-the-autos-or-locals-window"></a>Cambiar el contexto de la ventana automático o variables locales
 
@@ -72,9 +85,9 @@ Establezca un punto de interrupción e inicie la depuración. Cuando se alcanza 
 
 ## <a name="bkmk_whatvariables"></a> Las variables en la ventana automático (C#, C++, Visual Basic, Python)
 
- Diferentes lenguajes de código muestran distintas variables en el **automático** ventana.
+Diferentes lenguajes de código muestran distintas variables en el **automático** ventana.
 
- - En C# y Visual Basic, la ventana **Automático** muestra cualquier variable que se usa en la línea actual o anterior. Por ejemplo, en C# o Visual Basic de código, declare las variables de cuatro siguientes:
+- En C# y Visual Basic, la ventana **Automático** muestra cualquier variable que se usa en la línea actual o anterior. Por ejemplo, en C# o Visual Basic de código, declare las variables de cuatro siguientes:
 
    ```csharp
        public static void Main()
@@ -93,7 +106,7 @@ Establezca un punto de interrupción e inicie la depuración. Cuando se alcanza 
 
    El valor de `c` es 0, porque la línea `c = 3` aún no se ha ejecutado.
 
- - En C++, el **automático** ventana muestra las variables utilizadas en al menos tres líneas anteriores a la línea actual donde se pausa la ejecución. Por ejemplo, en el código de C++, declara seis variables:
+- En C++, el **automático** ventana muestra las variables utilizadas en al menos tres líneas anteriores a la línea actual donde se pausa la ejecución. Por ejemplo, en el código de C++, declara seis variables:
 
    ```C++
        void main() {
@@ -113,7 +126,7 @@ Establezca un punto de interrupción e inicie la depuración. Cuando se alcanza 
 
     La variable `e` no está inicializada, porque la línea `e = 5` aún no se ha ejecutado.
 
-##  <a name="bkmk_returnValue"></a> View return values of method calls
+## <a name="bkmk_returnValue"></a> View return values of method calls
  En el código de .NET y C++, puede examinar los valores devueltos en la **automático** ventana paso a paso a través o fuera de una llamada al método. Llamada al método de visualización, se devuelven los valores pueden ser útiles cuando no se almacenan en variables locales. Un método podría utilizarse como un parámetro o como el valor devuelto de otro método.
 
  Por ejemplo, la siguiente C# código agrega los valores devueltos de dos funciones:
@@ -142,13 +155,15 @@ private static int subtractVars(int i, int j)
 
 Para ver los valores devueltos de la `sumVars()` y `subtractVars()` llama al método en la ventana automático:
 
-1. Establezca un punto de interrupción en la línea `int x = sumVars(a, b) + subtractVars(c, d);` .  
-   
-1. Inicie la depuración y cuando la ejecución se detiene en el punto de interrupción, seleccione **saltar** o presione **F10**. Debería ver los siguientes valores devueltos en la **automático** ventana:  
-   
-  ![Valor devuelven de autos C# ](../debugger/media/autosreturnvaluecsharp2.png "automático de valor devueltoC#")  
-  
-## <a name="see-also"></a>Vea también  
- [¿Qué es la depuración?](../debugger/what-is-debugging.md)  
- [Corrección de errores escribiendo mejor código de C#](../debugger/write-better-code-with-visual-studio.md)  
- [Primer vistazo al depurar](../debugger/debugger-feature-tour.md) [ventanas del depurador](../debugger/debugger-windows.md)
+1. Establezca un punto de interrupción en la línea `int x = sumVars(a, b) + subtractVars(c, d);` .
+
+1. Inicie la depuración y cuando la ejecución se detiene en el punto de interrupción, seleccione **saltar** o presione **F10**. Debería ver los siguientes valores devueltos en la **automático** ventana:
+
+  ![Valor devuelven de autos C# ](../debugger/media/autosreturnvaluecsharp2.png "automático de valor devueltoC#")
+
+## <a name="see-also"></a>Vea también
+
+- [¿Qué es la depuración?](../debugger/what-is-debugging.md)
+- [Herramientas y técnicas de depuración](../debugger/write-better-code-with-visual-studio.md)
+- [Primer vistazo a la depuración](../debugger/debugger-feature-tour.md)
+- [Ventanas del depurador](../debugger/debugger-windows.md)

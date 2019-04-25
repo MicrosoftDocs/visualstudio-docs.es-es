@@ -1,7 +1,6 @@
 ---
 title: Configuración de compilador avanzada (Cuadro de diálogo, Visual Basic)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesAdvancedCompile
@@ -10,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 1f81133a-293f-4dba-bc1c-8baafb01d857
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 34880d96effb9c1c77c1d88c22f61967741b693e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 87a7924a8a1239da61553c50dc7c7ba8cea547d2
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53878278"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55918330"
 ---
 # <a name="advanced-compiler-settings-dialog-box-visual-basic"></a>Configuración de compilador avanzada (Cuadro de diálogo, Visual Basic)
 

@@ -1,125 +1,128 @@
 ---
-title: IDebugComPlusSymbolProvider2::GetTypesByName | Documentos de Microsoft
+title: IDebugComPlusSymbolProvider2::GetTypesByName | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - GetTypesByName
 - IDebugComPlusSymbolProvider2::GetTypesByName
 ms.assetid: ef76b1a8-6910-48fe-b4af-d9045eefd23f
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cbf0a70aa13b40f0c560fb726ac1eef5c4ead28a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: be32b39df6da618e38dc9e62264412fce8c29e20
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53889636"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56678857"
 ---
 # <a name="idebugcomplussymbolprovider2gettypesbyname"></a>IDebugComPlusSymbolProvider2::GetTypesByName
-Recupera un tipo dado su nombre.  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```cpp  
-HRESULT GetTypesByName(  
-   LPCOLESTR          pszClassName,  
-   NAME_MATCH         nameMatch,  
-   IEnumDebugFields** ppEnum  
-);  
-```  
-  
-```csharp  
-int GetTypesByName(  
-   string               pszClassName,  
-   enum_ NAME_MATCH     nameMatch,  
-   out IEnumDebugFields ppEnum  
-);  
-```  
-  
-#### <a name="parameters"></a>Parámetros  
- `pszClassName`  
- [in] Nombre del tipo.  
-  
- `nameMatch`  
- [in] Selecciona el tipo de coincidencia, por ejemplo, distingue mayúsculas de minúsculas. Un valor de la [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) enumeración.  
-  
- `ppEnum`  
- [out] Un enumerador que contiene el tipo o tipos con el nombre especificado.  
-  
-## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
-  
-## <a name="remarks"></a>Comentarios  
- Para los tipos genéricos, el nombre que se busca de ' lista\<int >' o ' lista\<int, int > "sería"List". Si los tipos del mismo nombre aparecen en varios módulos, el `ppEnum` parámetro contendrá todas las copias. Tiene que usar [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) y distinguir en función de la `guidModule` parámetro.  
-  
-## <a name="example"></a>Ejemplo  
- El ejemplo siguiente muestra cómo implementar este método para un **CDebugSymbolProvider** objeto que expone el [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) interfaz.  
-  
-```cpp  
-HRESULT CDebugSymbolProvider::GetTypesByName(  
-    LPCOLESTR pszClassName,  
-    NAME_MATCH nameMatch,  
-    IEnumDebugFields** ppEnum  
-)  
-{  
-    HRESULT hr = S_OK;  
-    CModIter ModIter;  
-    CModule* pmodule; // the iterator owns the reference  
-    CFieldList listField;  
-  
-    ASSERT(IsValidWideStringPtr(pszClassName));  
-    ASSERT(IsValidWritePtr(ppEnum, IEnumDebugFields*));  
-  
-    METHOD_ENTRY( CDebugSymbolProvider::GetTypesByName );  
-  
-    IfFalseGo( pszClassName && ppEnum, E_INVALIDARG );  
-    *ppEnum = NULL;  
-  
-    IfFailGo( GetModuleIter(&ModIter) );  
-  
-    hr = S_FALSE;  
-  
-    if ( nameMatch == nmCaseInsensitive)  
-    {  
-        while (ModIter.GetNext(&pmodule))  
-        {  
-            if (pmodule->FindTypesByNameCaseInsensitive( pszClassName,  
-                    &listField,  
-                    this ) )  
-            {  
-                hr = S_OK;  
-            }  
-        }  
-    }  
-    else  
-    {  
-        while (ModIter.GetNext(&pmodule))  
-        {  
-            if (pmodule->FindTypesByName( pszClassName,  
-                                          &listField,  
-                                          this) )  
-            {  
-                hr = S_OK;  
-            }  
-        }  
-    }  
-  
-    // If the list is empty then no type  
-    IfFalseGo( listField.GetCount(), E_FAIL );  
-  
-    // Create enumerator  
-    IfFailGo( CreateEnumerator( ppEnum, &listField ) );  
-  
-Error:  
-  
-    METHOD_EXIT( CDebugSymbolProvider::GetTypesByName, hr );  
-  
-    return hr;  
-}  
-```  
-  
-## <a name="see-also"></a>Vea también  
- [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)
+Recupera un tipo dado su nombre.
+
+## <a name="syntax"></a>Sintaxis
+
+```cpp
+HRESULT GetTypesByName(
+    LPCOLESTR          pszClassName,
+    NAME_MATCH         nameMatch,
+    IEnumDebugFields** ppEnum
+);
+```
+
+```csharp
+int GetTypesByName(
+    string               pszClassName,
+    enum_ NAME_MATCH     nameMatch,
+    out IEnumDebugFields ppEnum
+);
+```
+
+#### <a name="parameters"></a>Parámetros
+`pszClassName`
+
+ [in] Nombre del tipo.
+
+`nameMatch`
+
+ [in] Selecciona el tipo de coincidencia, por ejemplo, distingue mayúsculas de minúsculas. Un valor de la [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) enumeración.
+
+`ppEnum`
+
+ [out] Un enumerador que contiene el tipo o tipos con el nombre especificado.
+
+## <a name="return-value"></a>Valor devuelto
+Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+
+## <a name="remarks"></a>Comentarios
+Para los tipos genéricos, el nombre que se busca de ' lista\<int >' o ' lista\<int, int > "sería"List". Si los tipos del mismo nombre aparecen en varios módulos, el `ppEnum` parámetro contendrá todas las copias. Tiene que usar [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) y distinguir en función de la `guidModule` parámetro.
+
+## <a name="example"></a>Ejemplo
+El ejemplo siguiente muestra cómo implementar este método para un **CDebugSymbolProvider** objeto que expone el [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) interfaz.
+
+```cpp
+HRESULT CDebugSymbolProvider::GetTypesByName(
+    LPCOLESTR pszClassName,
+    NAME_MATCH nameMatch,
+    IEnumDebugFields** ppEnum
+)
+{
+    HRESULT hr = S_OK;
+    CModIter ModIter;
+    CModule* pmodule; // the iterator owns the reference
+    CFieldList listField;
+
+    ASSERT(IsValidWideStringPtr(pszClassName));
+    ASSERT(IsValidWritePtr(ppEnum, IEnumDebugFields*));
+
+    METHOD_ENTRY( CDebugSymbolProvider::GetTypesByName );
+
+    IfFalseGo( pszClassName && ppEnum, E_INVALIDARG );
+    *ppEnum = NULL;
+
+    IfFailGo( GetModuleIter(&ModIter) );
+
+    hr = S_FALSE;
+
+    if ( nameMatch == nmCaseInsensitive)
+    {
+        while (ModIter.GetNext(&pmodule))
+        {
+            if (pmodule->FindTypesByNameCaseInsensitive( pszClassName,
+                    &listField,
+                    this ) )
+            {
+                hr = S_OK;
+            }
+        }
+    }
+    else
+    {
+        while (ModIter.GetNext(&pmodule))
+        {
+            if (pmodule->FindTypesByName( pszClassName,
+                                          &listField,
+                                          this) )
+            {
+                hr = S_OK;
+            }
+        }
+    }
+
+    // If the list is empty then no type
+    IfFalseGo( listField.GetCount(), E_FAIL );
+
+    // Create enumerator
+    IfFailGo( CreateEnumerator( ppEnum, &listField ) );
+
+Error:
+
+    METHOD_EXIT( CDebugSymbolProvider::GetTypesByName, hr );
+
+    return hr;
+}
+```
+
+## <a name="see-also"></a>Vea también
+- [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)

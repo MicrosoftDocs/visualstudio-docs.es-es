@@ -1,7 +1,6 @@
 ---
 title: Documentos, Entorno, Opciones (Cuadro de diálogo)
-ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
+ms.date: 03/28/2019
 ms.topic: reference
 f1_keywords:
 - VS.Environment.Documents
@@ -29,31 +28,25 @@ helpviewer_keywords:
 ms.assetid: 4e3ccf1b-cd68-4db6-9470-710c911b47fc
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 21abb3d10f3cf80e46e86aa5e5141df32d6e804a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e74358d4eb24d54c36ee099942dfbf0b5ca40210
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53855879"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647263"
 ---
-# <a name="documents-environment-options-dialog-box"></a>Documentos, Entorno, Opciones (Cuadro de diálogo)
+# <a name="options-dialog-box-environment--documents"></a>Cuadro de diálogo Opciones: Entorno \> Documentos
 
-Use esta página del cuadro de diálogo **Opciones** para controlar la visualización de documentos en el entorno de desarrollo integrado (IDE) y administrar los cambios externos de los documentos y archivos. Puede tener acceso a este cuadro de diálogo haciendo clic en **Opciones** en el menú **Herramientas** y, después, seleccionar **Documentos** en el nodo **Entorno**. Si **Documentos** no aparece en la lista, en el cuadro de diálogo **Opciones**, seleccione **Mostrar todas las configuraciones**.
-
-**Reusar la ventana de documento activa si se guardó**
-
-Cuando está seleccionada, cierra su documento actual si se ha guardado y abre un nuevo documento en la misma ventana. Si el documento actual no se ha guardado, permanece abierto y el documento nuevo se abre en una ventana independiente. Cuando esta opción se desactiva, los documentos nuevos siempre se abren en ventanas independientes.
-
-Si realiza operaciones de copiar y pegar varios documentos con poca frecuencia y quiere minimizar el número de documentos abiertos y ventanas en su área de trabajo, pruebe esta opción.
+Use esta página del cuadro de diálogo **Opciones** para controlar la visualización de documentos en el entorno de desarrollo integrado (IDE) y administrar los cambios externos de los documentos y archivos. Para tener acceso a este cuadro de diálogo, haga clic en **Opciones** en el menú **Herramientas** y luego seleccione **Entorno** > **Documentos**.
 
 **Detectar si se modifica el archivo fuera del entorno**
 
 Cuando esta opción está seleccionada, un mensaje le notifica inmediatamente los cambios en un archivo abierto que ha realizado un editor externo al IDE. Este mensaje le permite volver a cargar el archivo del almacenamiento.
 
-**Cargar cambios automáticamente, si están guardados**
+**Volver a cargar los archivos modificados, a menos que haya cambios no guardados**
 
 Cuando tiene la opción **Detectar si se modifica el archivo fuera del entorno** seleccionada y un archivo abierto en el IDE se cambia fuera de este, se genera un mensaje de advertencia de manera predeterminada. Si esta opción está habilitada, no aparece ninguna advertencia y el documento se vuelve a cargar en el IDE para recopilar los cambios externos.
 
@@ -80,7 +73,7 @@ Seleccione esta opción para mostrar el nodo **Archivos varios** en el **Explora
 > [!NOTE]
 > Seleccione esta opción para habilitar el comando **Ver en el explorador** del menú **Archivo** para los documentos web que no están incluidos en la aplicación web activa.
 
-**\<** *n* **> elementos guardados en el proyecto de archivos varios**
+**Elementos guardados en el proyecto Archivos varios**
 
 Especifica el número de archivos que se va a conservar en la carpeta **Archivos varios** del **Explorador de soluciones**. Estos archivos se muestran incluso si ya no están abiertos en un editor. Puede especificar cualquier número entero de 0 a 256. El número predeterminado es 0.
 

@@ -1,14 +1,9 @@
 ---
 title: Información general sobre el informe de rendimiento | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools, about performance rerports
 - performance, reports
@@ -17,13 +12,13 @@ ms.assetid: 7324c24c-fd09-479b-b2ad-e0c3b613e040
 caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6b9a729698841d1bbbcd9b49ffe0d3dd9bddccc8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 81bb2392a4ea6d9860cdcf2beeadcfe4e6ec7940
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51790525"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091621"
 ---
 # <a name="performance-report-overview"></a>Información general sobre el informe de rendimiento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -87,23 +82,20 @@ Puede ver los datos de generación de perfiles de una sesión de rendimiento en 
 ## <a name="customizable-filter-control"></a>Control de filtro personalizable  
  El control de filtro personalizable tiene las siguientes opciones:  
   
--   **Importar filtro**: recupera una consulta personalizada guardada previamente.  
+- **Importar filtro**: recupera una consulta personalizada guardada previamente.  
   
--   **Exportar filtro**: guarda la consulta personalizada en la ubicación especificada.  
+- **Exportar filtro**: guarda la consulta personalizada en la ubicación especificada.  
   
--   **Ejecutar consulta**: ejecuta la consulta como se muestra en el control de consultas personalizadas.  
+- **Ejecutar consulta**: ejecuta la consulta como se muestra en el control de consultas personalizadas.  
   
--   **Detener consulta**: detiene la ejecución de una consulta. Este botón no está disponible si no se está ejecutando ninguna consulta.  
+- **Detener consulta**: detiene la ejecución de una consulta. Este botón no está disponible si no se está ejecutando ninguna consulta.  
   
--   **Mostrar consulta**: muestra u oculta el control de consultas personalizadas.  
+- **Mostrar consulta**: muestra u oculta el control de consultas personalizadas.  
   
--   **Guardar analizado**: guarda el informe junto con su análisis actual como un archivo .vsps.  
+- **Guardar analizado**: guarda el informe junto con su análisis actual como un archivo .vsps.  
   
--   **Exportar**: guarda el informe actual en un archivo con formato .CSV o .XML, con opciones para guardar las diferentes vistas.  
+- **Exportar**: guarda el informe actual en un archivo con formato .CSV o .XML, con opciones para guardar las diferentes vistas.  
   
 ## <a name="see-also"></a>Vea también  
  [Analizar datos de herramientas de rendimiento](../profiling/analyzing-performance-tools-data.md)   
  [Vistas de informes de rendimiento](../profiling/performance-report-views.md)
-
-
-

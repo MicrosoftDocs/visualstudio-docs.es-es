@@ -7,20 +7,19 @@ helpviewer_keywords:
 - UML designers
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 5d393433f3b4ba50a384c7498ac51d49d0527658
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 940b6b1b232e213238af7b1cb547e8278efd0d25
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53920094"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56317502"
 ---
 # <a name="create-uml-modeling-projects-and-diagrams"></a>Crear proyectos y diagramas de modelado UML
 
-A partir de Visual Studio 2017, se quitaron los diseñadores de UML de Visual Studio. Para obtener más información, consulte este [entrada de blog](https://blogs.msdn.microsoft.com/devops/2016/10/14/uml-designers-have-been-removed-layer-designer-now-supports-live-architectural-analysis/).
+A partir de Visual Studio 2017, se quitaron los diseñadores de UML de Visual Studio. Para obtener más información, consulte este [entrada de blog](https://devblogs.microsoft.com/devops/uml-designers-have-been-removed-layer-designer-now-supports-live-architectural-analysis/).
 
 Si necesita utilizar UML, puede usar Visual Studio 2015 Enterprise edition, que es compatible en paralelo con versiones posteriores de Visual Studio.
 

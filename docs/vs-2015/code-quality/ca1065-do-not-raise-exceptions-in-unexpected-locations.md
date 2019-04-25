@@ -1,14 +1,9 @@
 ---
-title: 'CA1065: No producir excepciones en ubicaciones inesperadas | Microsoft Docs'
-ms.custom: ''
+title: 'CA1065: No producir excepciones en ubicaciones inesperadas | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1065
 - DoNotRaiseExceptionsInUnexpectedLocations
@@ -20,12 +15,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 142322360d4ba1ffed6ef893bf02254548ee2705
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6c5a393c32d7f7182fc3226689e24d20a4cae1ac
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49887612"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095358"
 ---
 # <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065: No producir excepciones en ubicaciones inesperadas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,24 +65,24 @@ ms.locfileid: "49887612"
 
  Se permiten las siguientes excepciones pueden iniciarse desde un método get de propiedad:
 
--   <xref:System.InvalidOperationException?displayProperty=fullName> y todos los derivados (incluido <xref:System.ObjectDisposedException?displayProperty=fullName>)
+- <xref:System.InvalidOperationException?displayProperty=fullName> y todos los derivados (incluido <xref:System.ObjectDisposedException?displayProperty=fullName>)
 
--   <xref:System.NotSupportedException?displayProperty=fullName> y todos los derivados
+- <xref:System.NotSupportedException?displayProperty=fullName> y todos los derivados
 
--   <xref:System.ArgumentException?displayProperty=fullName> (sólo de get indizado)
+- <xref:System.ArgumentException?displayProperty=fullName> (sólo de get indizado)
 
--   <xref:System.Collections.Generic.KeyNotFoundException> (sólo de get indizado)
+- <xref:System.Collections.Generic.KeyNotFoundException> (sólo de get indizado)
 
 ### <a name="event-accessor-methods"></a>Métodos de descriptor de acceso de eventos
  Los descriptores de acceso de eventos deberían ser operaciones simples que no producen excepciones. Un evento no debería producir una excepción al intentar agregar o quitar un controlador de eventos.
 
  Se permiten las siguientes excepciones pueden iniciarse desde un descriptor de acceso de eventos:
 
--   <xref:System.InvalidOperationException?displayProperty=fullName> y todos los derivados (incluido <xref:System.ObjectDisposedException?displayProperty=fullName>)
+- <xref:System.InvalidOperationException?displayProperty=fullName> y todos los derivados (incluido <xref:System.ObjectDisposedException?displayProperty=fullName>)
 
--   <xref:System.NotSupportedException?displayProperty=fullName> y todos los derivados
+- <xref:System.NotSupportedException?displayProperty=fullName> y todos los derivados
 
--   <xref:System.ArgumentException> y derivados
+- <xref:System.ArgumentException> y derivados
 
 ### <a name="equals-methods"></a>Es igual a métodos
  La siguiente **es igual a** métodos no deberían producir excepciones:
@@ -142,6 +137,3 @@ ms.locfileid: "49887612"
 
 ## <a name="see-also"></a>Vea también
  [Advertencias de diseño](../code-quality/design-warnings.md)
-
-
-

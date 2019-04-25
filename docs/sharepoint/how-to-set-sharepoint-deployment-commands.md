@@ -7,40 +7,40 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, deploying
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 98aedc0c7fa557a45b43ab8344a49587b8febec1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7664dfcfe11d7ab7dc6ab03045533bbd9e69fb9c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53920370"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077789"
 ---
 # <a name="how-to-set-sharepoint-deployment-commands"></a>Procedimiento Establecer comandos de implementación de SharePoint
-  Puede personalizar el proceso de implementación mediante el establecimiento de los comandos anteriores y posteriores a la implementación. Estos comandos se ejecutan antes y después de otras acciones de implementación al depurar soluciones de SharePoint en Visual Studio.  
-  
-### <a name="to-add-a-pre-deployment-command"></a>Para agregar un comando anterior a la implementación  
-  
-1.  En la barra de menús, elija **proyecto** > **\<*ProjectName*> propiedades**.  
-  
-2.  Elija la **SharePoint** ficha.  
-  
-3.  En el **línea de comandos anterior a la implementación** texto, escriba los comandos de MS-DOS o MSBuild para personalizar este paso.  
-  
-     Por ejemplo, para enumerar el contenido del directorio antes de que se completa la implementación, escriba **dir**.  
-  
-### <a name="to-add-a-post-deployment-command"></a>Para agregar un comando posterior a la implementación  
-  
-1.  En la barra de menús, elija **proyecto** > **\<*ProjectName*> propiedades**.  
-  
-2.  Elija la **SharePoint** ficha.  
-  
-3.  En el **implementación posterior a la línea de comandos** texto, escriba los comandos de MS-DOS o MSBuild para personalizar este paso.  
-  
-     Por ejemplo, para enumerar el contenido del directorio, una vez completada la implementación, escriba **dir**. Para usar una variable de MSBuild para copiar el ensamblado desde el directorio de compilación, escriba **copiar $ (TargetPath) c:\DeploymentDirectory**.  
-  
+  Puede personalizar el proceso de implementación mediante el establecimiento de los comandos anteriores y posteriores a la implementación. Estos comandos se ejecutan antes y después de otras acciones de implementación al depurar soluciones de SharePoint en Visual Studio.
+
+### <a name="to-add-a-pre-deployment-command"></a>Para agregar un comando anterior a la implementación
+
+1. En la barra de menús, elija **proyecto** > **\<*ProjectName*> propiedades**.
+
+2. Elija la **SharePoint** ficha.
+
+3. En el **línea de comandos anterior a la implementación** texto, escriba los comandos de MS-DOS o MSBuild para personalizar este paso.
+
+     Por ejemplo, para enumerar el contenido del directorio antes de que se completa la implementación, escriba **dir**.
+
+### <a name="to-add-a-post-deployment-command"></a>Para agregar un comando posterior a la implementación
+
+1. En la barra de menús, elija **proyecto** > **\<*ProjectName*> propiedades**.
+
+2. Elija la **SharePoint** ficha.
+
+3. En el **implementación posterior a la línea de comandos** texto, escriba los comandos de MS-DOS o MSBuild para personalizar este paso.
+
+     Por ejemplo, para enumerar el contenido del directorio, una vez completada la implementación, escriba **dir**. Para usar una variable de MSBuild para copiar el ensamblado desde el directorio de compilación, escriba **copiar $ (TargetPath) c:\DeploymentDirectory**.
+
 ## <a name="see-also"></a>Vea también
- [Empaquetar e implementar soluciones de SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)  
+- [Empaquetar e implementar soluciones de SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

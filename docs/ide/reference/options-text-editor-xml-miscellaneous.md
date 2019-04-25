@@ -1,24 +1,23 @@
 ---
 title: Opciones, editor de texto, XML y varios
 ms.date: 10/29/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.XML.Miscellaneous
 ms.assetid: b6538cbe-badd-4313-a1fb-39e906736bbe
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 85f37f4266f4c05d4de016caa07e8cc6e3cf43a4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: d3421580251a6a871adba311fd609e881e088ebd
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53905629"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525087"
 ---
 # <a name="options-text-editor-xml-miscellaneous"></a>Opciones, editor de texto, XML y varios
 
-Use la página de propiedades **Varios** para cambiar las opciones de finalización automática y esquema del Editor XML. Para abrir el cuadro de diálogo **Opciones**, haga clic en el menú **Herramientas** y, después, en **Opciones**. Para acceder a la página de propiedades **Varios**, expanda el nodo **Editor de texto** > **XML** > **Varios**.
+Use la página de opciones **Varios** para cambiar los valores de finalización automática y esquema del Editor XML. Para acceder a otras opciones de XML, elija **Herramientas** > **Opciones** > **Editor de texto** > **XML** y, a continuación, elija **Varios**.
 
 ## <a name="auto-insert"></a>Inserción automática
 
@@ -54,9 +53,9 @@ Activa la característica de esquematización cuando se abre un archivo. Esta ca
 
 **Esquemas**
 
-Especifica la ubicación de la caché de esquema. El botón Examinar (...) abre la ubicación actual de la caché de esquema en una nueva ventana. La ubicación predeterminada es *\<Directorio de instalación de Management Studio>* \Xml\Schemas.
+Especifica la ubicación de la caché de esquema. El botón **Examinar** abre la ubicación actual de la caché de esquema en una nueva ventana. La ubicación predeterminada es *%VsInstallDir%\xml\Schemas*.
 
 ## <a name="see-also"></a>Vea también
 
-- [Cómo: Crear documentación de XML (Visual Basic)](/dotnet/visual-basic/programming-guide/program-structure/how-to-create-xml-documentation)
-- [Generación de código](../code-generation-in-visual-studio.md)
+- [Opciones de XML: formato](options-text-editor-xml-formatting.md)
+- [Herramientas XML en Visual Studio](../../xml-tools/xml-tools-in-visual-studio.md)

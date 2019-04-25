@@ -1,14 +1,9 @@
 ---
 title: Compilación de varios proyectos en paralelo con MSBuild | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - parallel project builds
 - building multiple projects in parallel
@@ -17,23 +12,22 @@ ms.assetid: c8c9aadc-33ad-4aa1-b07d-b879e9eabda0
 caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 98444a8af0dfd231d63748a1dd0e9b62ca54b651
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: c420c4546a836d1440bdb150eba1319ad6218622
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49285381"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050251"
 ---
 # <a name="building-multiple-projects-in-parallel-with-msbuild"></a>Compilar varios proyectos en paralelo con MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Puede usar MSBuild para compilar varios proyectos más rápidamente si los ejecuta en paralelo. Para ejecutar compilaciones en paralelo, use los parámetros siguientes en un equipo con varios procesadores o varios núcleos:  
   
--   El modificador `/maxcpucount` en un símbolo del sistema.  
+- El modificador `/maxcpucount` en un símbolo del sistema.  
   
--   El parámetro de tarea <xref:Microsoft.Build.Tasks.MSBuild.BuildInParallel%2A> en una tarea de MSBuild.  
+- El parámetro de tarea <xref:Microsoft.Build.Tasks.MSBuild.BuildInParallel%2A> en una tarea de MSBuild.  
   
 > [!NOTE]
 >  El modificador **/verbosity** (**/v**) en una línea de comandos también puede afectar al rendimiento de la compilación. Es posible que disminuya el rendimiento de la compilación si el nivel de detalle de la información del registro de compilación se establece en "detailed" o "diagnostic", que se usan para solucionar problemas. Para obtener más información, consulte [Obtener registros de compilación](../msbuild/obtaining-build-logs-with-msbuild.md) y [Referencia de la línea de comandos](../msbuild/msbuild-command-line-reference.md).  
@@ -82,6 +76,3 @@ msbuild.exe myproj.proj /maxcpucount:3
  [Uso de varios procesadores para compilar proyectos](../msbuild/using-multiple-processors-to-build-projects.md)   
  [Escribir registradores que reconocen varios procesadores](../msbuild/writing-multi-processor-aware-loggers.md)   
  [Blog sobre la optimización del paralelismo de compilación de C++](http://go.microsoft.com/fwlink/?LinkId=251457)
-
-
-

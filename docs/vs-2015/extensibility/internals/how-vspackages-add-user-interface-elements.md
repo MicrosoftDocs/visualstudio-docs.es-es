@@ -1,14 +1,9 @@
 ---
 title: Cómo VSPackages agregar elementos de la interfaz de usuario | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - user interfaces, adding elements
 - UI element design [Visual Studio SDK], VSPackages
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: abc5d9d9-b267-48a1-92ad-75fbf2f4c1b9
 caps.latest.revision: 61
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 88b1a71964ddae67241025dd32c1a1384c79765f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: df04f8da29972b4be3967e5fd677a43e76ce1ac5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51753375"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085641"
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>Cómo VSPackages agrega elementos de la interfaz de usuario
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,11 +29,11 @@ Un VSPackage puede agregar elementos de interfaz (IU) del usuario, por ejemplo, 
 ## <a name="the-visual-studio-command-table-architecture"></a>La arquitectura de tabla de comandos de Visual Studio  
  Como se mencionó, la arquitectura de la tabla de comandos es compatible con los principios de arquitectura anteriores. Los principios detrás de las abstracciones, estructuras de datos y herramientas de la arquitectura de la tabla de comandos son los siguientes:  
   
--   Hay tres tipos básicos de elementos: menús, comandos y grupos. Los menús pueden exponerse en la interfaz de usuario como menús, submenús, barras de herramientas o ventanas de herramientas. Los comandos son procedimientos que el usuario puede ejecutar en el IDE, y pueden exponerse como elementos de menú, botones, cuadros de lista u otros controles. Los grupos son contenedores para los menús y comandos.  
+- Hay tres tipos básicos de elementos: menús, comandos y grupos. Los menús pueden exponerse en la interfaz de usuario como menús, submenús, barras de herramientas o ventanas de herramientas. Los comandos son procedimientos que el usuario puede ejecutar en el IDE, y pueden exponerse como elementos de menú, botones, cuadros de lista u otros controles. Los grupos son contenedores para los menús y comandos.  
   
--   Cada elemento viene especificada por una definición que describe el elemento, su prioridad relativa respecto a otros elementos y las marcas que modifican su comportamiento.  
+- Cada elemento viene especificada por una definición que describe el elemento, su prioridad relativa respecto a otros elementos y las marcas que modifican su comportamiento.  
   
--   Cada elemento tiene una selección de ubicación que describe al elemento primario del elemento. Un elemento puede tener varios elementos primarios, por lo que puede aparecer en varias ubicaciones de la interfaz de usuario.  
+- Cada elemento tiene una selección de ubicación que describe al elemento primario del elemento. Un elemento puede tener varios elementos primarios, por lo que puede aparecer en varias ubicaciones de la interfaz de usuario.  
   
      Cada comando debe tener un grupo como su elemento primario, incluso si es el único elemento secundario de ese grupo. Cada menú estándar también debe tener un grupo primario. Las barras de herramientas y ventanas de herramientas actúan como sus propios elementos primarios. Un grupo puede tener como su elemento primario de la barra de menús de Visual Studio principal, o cualquier menú, barra de herramientas o ventana de herramientas.  
   
@@ -81,15 +76,15 @@ Un VSPackage puede agregar elementos de interfaz (IU) del usuario, por ejemplo, 
 ### <a name="menus-groups-and-commands"></a>Menús, grupos y comandos  
  Cuando un menú, grupo o comando tiene un GUID y un identificador, se puede agregar al IDE. Cada elemento de interfaz de usuario debe tener lo siguiente:  
   
--   Un `guid` atributo que coincida con el nombre de la `GuidSymbol` elemento definido en el elemento de interfaz de usuario.  
+- Un `guid` atributo que coincida con el nombre de la `GuidSymbol` elemento definido en el elemento de interfaz de usuario.  
   
--   Un `id` atributo que coincida con el nombre del asociado `IDSymbol` elemento.  
+- Un `id` atributo que coincida con el nombre del asociado `IDSymbol` elemento.  
   
      Juntos, el `guid` y `id` atributos componen el *firma* del elemento de interfaz de usuario.  
   
--   Un `priority` atributo que determina la posición del elemento de interfaz de usuario en su menú primario o un grupo.  
+- Un `priority` atributo que determina la posición del elemento de interfaz de usuario en su menú primario o un grupo.  
   
--   Un [elemento primario](../../extensibility/parent-element.md) cuya `guid` y `id` atributos que especifican la firma del menú primario o del grupo.  
+- Un [elemento primario](../../extensibility/parent-element.md) cuya `guid` y `id` atributos que especifican la firma del menú primario o del grupo.  
   
 #### <a name="menus"></a>Menús  
  Cada menú se define como un [Menu Element](../../extensibility/menu-element.md) en la `Menus` sección. Deben tener los menús `guid`, `id`, y `priority` atributos y un `Parent` elemento y también los siguientes atributos adicionales y elementos secundarios:  
@@ -276,17 +271,17 @@ priority="0x0100" type="Menu">
 ##### <a name="general-requirements"></a>Requisitos generales  
  El comando debe pasar a la siguiente serie de pruebas antes de mostrarse y habilitado:  
   
--   El comando se coloca correctamente.  
+- El comando se coloca correctamente.  
   
--   El `DefaultInvisible` no se establece la marca.  
+- El `DefaultInvisible` no se establece la marca.  
   
--   El menú primario o la barra de herramientas está visible.  
+- El menú primario o la barra de herramientas está visible.  
   
--   El comando no es invisible debido a una entrada de contexto en el [VisibilityConstraints (elemento)](../../extensibility/visibilityconstraints-element.md) sección.  
+- El comando no es invisible debido a una entrada de contexto en el [VisibilityConstraints (elemento)](../../extensibility/visibilityconstraints-element.md) sección.  
   
--   Código de VSPackage que implemente la <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfaz muestra y permite que el comando. No hay código de la interfaz interceptado y ha actuado sobre él.  
+- Código de VSPackage que implemente la <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfaz muestra y permite que el comando. No hay código de la interfaz interceptado y ha actuado sobre él.  
   
--   Cuando un usuario hace clic en el comando, se convierte en sujeto al procedimiento que se describe en [algoritmo de enrutamiento](../../extensibility/internals/command-routing-algorithm.md).  
+- Cuando un usuario hace clic en el comando, se convierte en sujeto al procedimiento que se describe en [algoritmo de enrutamiento](../../extensibility/internals/command-routing-algorithm.md).  
   
 ## <a name="calling-pre-defined-commands"></a>Comandos predefinido que realiza la llamada  
  El [UsedCommands (elemento)](../../extensibility/usedcommands-element.md) habilita a VSPackages para acceder a los comandos que se proporcionan por otros VSPackages o por el IDE. Para ello, cree un [UsedCommand (elemento)](../../extensibility/usedcommand-element.md) que tiene el GUID y el identificador del comando que se va a usar. Esto garantiza que el comando se cargarán por Visual Studio, incluso si no es parte de la configuración actual de Visual Studio. Para obtener más información, consulte [UsedCommand (elemento)](../../extensibility/usedcommand-element.md).  
@@ -294,18 +289,17 @@ priority="0x0100" type="Menu">
 ## <a name="interface-element-appearance"></a>Apariencia del elemento de interfaz  
  Consideraciones para seleccionar y colocar elementos de comando son los siguientes:  
   
--   [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ofrece muchos elementos de interfaz de usuario que aparecen de manera diferente dependiendo de la selección de ubicación.  
+- [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ofrece muchos elementos de interfaz de usuario que aparecen de manera diferente dependiendo de la selección de ubicación.  
   
--   Un elemento de interfaz de usuario que se define utilizando el `DefaultInvisible` marca no se mostrará en el IDE a menos que se muestran en su implementación de VSPackage de la <xref:EnvDTE.IDTCommandTarget.QueryStatus%2A> método, o asociados con un determinado contexto de interfaz de usuario en el `VisibilityConstraints` sección.  
+- Un elemento de interfaz de usuario que se define utilizando el `DefaultInvisible` marca no se mostrará en el IDE a menos que se muestran en su implementación de VSPackage de la <xref:EnvDTE.IDTCommandTarget.QueryStatus%2A> método, o asociados con un determinado contexto de interfaz de usuario en el `VisibilityConstraints` sección.  
   
--   No puede mostrarse incluso un comando colocado correctamente. Esto es porque el IDE automáticamente oculta o muestra algunos comandos, dependiendo de las interfaces que el VSPackage tiene (o no) implementa. Por ejemplo, la implementación de un VSPackage de algunos crear interfaces de elementos de menú relacionadas con la compilación de las causas que se mostrará automáticamente.  
+- No puede mostrarse incluso un comando colocado correctamente. Esto es porque el IDE automáticamente oculta o muestra algunos comandos, dependiendo de las interfaces que el VSPackage tiene (o no) implementa. Por ejemplo, la implementación de un VSPackage de algunos crear interfaces de elementos de menú relacionadas con la compilación de las causas que se mostrará automáticamente.  
   
--   Aplicar el `CommandWellOnly` marca en la definición del elemento de interfaz de usuario significa que se puede agregar el comando sólo gracias a la personalización.  
+- Aplicar el `CommandWellOnly` marca en la definición del elemento de interfaz de usuario significa que se puede agregar el comando sólo gracias a la personalización.  
   
--   Los comandos pueden estar disponibles solo en determinados contextos de interfaz de usuario, por ejemplo, solo cuando se muestra un cuadro de diálogo cuando el IDE está en la vista Diseño.  
+- Los comandos pueden estar disponibles solo en determinados contextos de interfaz de usuario, por ejemplo, solo cuando se muestra un cuadro de diálogo cuando el IDE está en la vista Diseño.  
   
--   Para hacer que algunos elementos de interfaz de usuario que se mostrará en el IDE, debe implementar uno o más interfaces o escribir algo de código.  
+- Para hacer que algunos elementos de interfaz de usuario que se mostrará en el IDE, debe implementar uno o más interfaces o escribir algo de código.  
   
 ## <a name="see-also"></a>Vea también  
  [Ampliación de menús y comandos](../../extensibility/extending-menus-and-commands.md)
-

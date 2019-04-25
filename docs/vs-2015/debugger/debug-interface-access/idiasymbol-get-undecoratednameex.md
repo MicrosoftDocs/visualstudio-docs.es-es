@@ -1,14 +1,9 @@
 ---
-title: Get_undecoratednameex | Microsoft Docs
-ms.custom: ''
+title: IDiaSymbol::get_undecoratedNameEx | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 579aed0b-c57d-41a1-a94a-3bf665fd4a9d
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e1902c6300a35924e7fcd626d9b63f69bc5bbc2c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 889412b3fb060250a0ff8392bf959c2759cf81d8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51745406"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58994727"
 ---
 # <a name="idiasymbolgetundecoratednameex"></a>IDiaSymbol::get_undecoratedNameEx
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -61,7 +56,7 @@ HRESULT get_undecoratedNameEx( 
 |Marcar|Valor|Descripción|  
 |----------|-----------|-----------------|  
 |UNDNAME_COMPLETE|0x0000|Habilita undecoration completa.|  
-|UNDNAME_NO_LEADING_UNDERSCORES|0 x 0001|Quita los caracteres de subrayado de Microsoft ampliar las palabras clave.|  
+|UNDNAME_NO_LEADING_UNDERSCORES|0x0001|Quita los caracteres de subrayado de Microsoft ampliar las palabras clave.|  
 |UNDNAME_NO_MS_KEYWORDS|0x0002|Deshabilita la expansión de extendidas palabras clave de Microsoft.|  
 |UNDNAME_NO_FUNCTION_RETURNS|0x0004|Deshabilita la expansión de tipo de valor devuelto para la declaración principal.|  
 |UNDNAME_NO_ALLOCATION_MODEL|0x0008|Deshabilita la expansión del modelo de declaración.|  
@@ -69,20 +64,17 @@ HRESULT get_undecoratedNameEx( 
 |UNDNAME_RESERVED1|0x0020|RESERVADO.|  
 |UNDNAME_RESERVED2|0x0040|RESERVADO.|  
 |UNDNAME_NO_THISTYPE|0x0060|Deshabilita todos los modificadores en el `this` tipo.|  
-|UNDNAME_NO_ACCESS_SPECIFIERS|0 x 0080|Deshabilita la expansión de especificadores de acceso para los miembros.|  
-|UNDNAME_NO_THROW_SIGNATURES|0 x 0100|Deshabilita la expansión de "throw-firmas" para las funciones y punteros a funciones.|  
-|UNDNAME_NO_MEMBER_TYPE|0 x 0200|Deshabilita la expansión de `static` o `virtual` miembros.|  
-|UNDNAME_NO_RETURN_UDT_MODEL|0 x 0400|Deshabilita la expansión del modelo de Microsoft para UDT se devuelve.|  
-|UNDNAME_32_BIT_DECODE|0 x 0800|Undecorates nombres representativos de 32 bits.|  
-|UNDNAME_NAME_ONLY|0 x 1000|Obtiene solo el nombre de declaración principal; devuelve simplemente [ámbito::] nombre.  Expande los parámetros de plantilla.|  
-|UNDNAME_TYPE_ONLY|0 x 2000|La entrada es un tipo de codificación; crea un declarador abstracto.|  
-|UNDNAME_HAVE_PARAMETERS|0 x 4000|Los parámetros de plantilla reales están disponibles.|  
-|UNDNAME_NO_ECSU|0 x 8000|Suprime la enumeración, clase, struct o unión.|  
-|UNDNAME_NO_IDENT_CHAR_CHECK|0 x 10000|Suprime la comprobación de caracteres de identificador válidos.|  
-|UNDNAME_NO_PTR64|0 x 20000|No incluye ptr64 en la salida.|  
+|UNDNAME_NO_ACCESS_SPECIFIERS|0x0080|Deshabilita la expansión de especificadores de acceso para los miembros.|  
+|UNDNAME_NO_THROW_SIGNATURES|0x0100|Deshabilita la expansión de "throw-firmas" para las funciones y punteros a funciones.|  
+|UNDNAME_NO_MEMBER_TYPE|0x0200|Deshabilita la expansión de `static` o `virtual` miembros.|  
+|UNDNAME_NO_RETURN_UDT_MODEL|0x0400|Deshabilita la expansión del modelo de Microsoft para UDT se devuelve.|  
+|UNDNAME_32_BIT_DECODE|0x0800|Undecorates nombres representativos de 32 bits.|  
+|UNDNAME_NAME_ONLY|0x1000|Obtiene solo el nombre de declaración principal; devuelve simplemente [ámbito::] nombre.  Expande los parámetros de plantilla.|  
+|UNDNAME_TYPE_ONLY|0x2000|La entrada es un tipo de codificación; crea un declarador abstracto.|  
+|UNDNAME_HAVE_PARAMETERS|0x4000|Los parámetros de plantilla reales están disponibles.|  
+|UNDNAME_NO_ECSU|0x8000|Suprime la enumeración, clase, struct o unión.|  
+|UNDNAME_NO_IDENT_CHAR_CHECK|0x10000|Suprime la comprobación de caracteres de identificador válidos.|  
+|UNDNAME_NO_PTR64|0x20000|No incluye ptr64 en la salida.|  
   
 ## <a name="see-also"></a>Vea también  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
-
-
-

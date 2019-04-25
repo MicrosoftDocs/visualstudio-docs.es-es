@@ -1,7 +1,6 @@
 ---
 title: Referencia de C++ Core Guidelines Comprobador
 ms.date: 03/22/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - code analysis, C++ core check
@@ -11,12 +10,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d6824041d362c0dda584c59998090e85f38d35a8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0b725d0ee49590062ebdde9a1ef27f838678ccf5
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53959489"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652116"
 ---
 # <a name="c-core-guidelines-checker-reference"></a>Referencia de C++ Core Guidelines Comprobador
 
@@ -108,12 +107,9 @@ Expresión "% expr %": Ninguna matriz de decadencia de puntero. Consulte [C++ Co
 
 [C26435 SINGLE_VIRTUAL_SPECIFICATION](c26435.md) función '% símbolo %' debe especificar exactamente uno de 'virtual', 'override' o 'final'. Consulte [C.128: Funciones virtuales deben especificar exactamente uno de virtual, invalidación, o final](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md).
 
-
 [C26436 NEED_VIRTUAL_DTOR](C26436.md) el tipo '% símbolo %' con una función virtual necesita cualquier destructor no virtual público virtual o protegido. Consulte [C++ Core Guidelines C.35](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#c35-a-base-class-destructor-should-be-either-public-and-virtual-or-protected-and-nonvirtual).
 
-
 [C26443 NO_EXPLICIT_DTOR_OVERRIDE](c26443.md) no debe utilizar el destructor de invalidación explícita 'override' o 'virtuales' especificadores. Consulte [C.128: Funciones virtuales deben especificar exactamente uno de virtual, invalidación, o final](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md).
-
 
 ## <a name="type-group"></a>TIPO de grupo
 
@@ -202,11 +198,10 @@ Consulte [C++ Core Guidelines GSL.view: Vistas](https://github.com/isocpp/CppCor
 
 [C26446 USE_GSL_AT](c26446.md) prefieren usar `gsl::at()` en lugar del operador de subíndice unchecked. Consulte [directrices principales de C++:  Bounds.4: No use la biblioteca estándar de funciones y tipos que no son límites](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile).
 
-[C26448 USE_GSL_FINALLY ](c26448.md) considere el uso `gsl::finally` si está destinada la acción final. Consulte [directrices principales de C++:  GSL.util: Utilidades](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-utilities).
+[C26448 USE_GSL_FINALLY](c26448.md) considere el uso `gsl::finally` si está destinada la acción final. Consulte [directrices principales de C++:  GSL.util: Utilidades](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-utilities).
 
 [C26449 NO_SPAN_FROM_TEMPORARY](c26449.md) 
  `gsl::span` o `std::string_view` creado a partir de un archivo temporal se consideran no válidos cuando se invalida temporal. Consulte [directrices principales de C++: GSL.view: Vistas](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#gslview-views).
-
 
 ## <a name="deprecated-warnings"></a>Advertencias en desuso
 

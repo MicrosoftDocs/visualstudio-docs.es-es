@@ -1,7 +1,6 @@
 ---
 title: 'CA1819: Las propiedades no deben devolver matrices'
-ms.date: 09/28/2018
-ms.prod: visual-studio-dev15
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - PropertiesShouldNotReturnArrays
@@ -12,18 +11,18 @@ helpviewer_keywords:
 ms.assetid: 85fcf312-57f8-438a-8b10-34441fe0bdeb
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 6159d6b9a2d8d3dc02cd5f0690f3b1360b4461fd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 11209ec181e2c2b61c7767787ee99c2d69eabe8b
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53949461"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57872748"
 ---
 # <a name="ca1819-properties-should-not-return-arrays"></a>CA1819: Las propiedades no deben devolver matrices
 
@@ -36,7 +35,9 @@ ms.locfileid: "53949461"
 
 ## <a name="cause"></a>Motivo
 
-Una propiedad pública o protegida en un tipo público devuelve una matriz.
+Una propiedad devuelve una matriz.
+
+De forma predeterminada, esta regla solo se examina las propiedades visibles externamente y tipos, pero se trata de [configurable](#configurability).
 
 ## <a name="rule-description"></a>Descripción de la regla
 
@@ -53,6 +54,16 @@ Puede suprimir una advertencia que se genera para una propiedad de un atributo q
 Puede suprimir la advertencia si la propiedad forma parte de un [el objeto de transferencia de datos (DTO)](/previous-versions/msp-n-p/ff649585(v=pandp.10)) clase.
 
 En caso contrario, no suprima una advertencia de esta regla.
+
+## <a name="configurability"></a>Capacidad de configuración
+
+Si ejecuta esta regla de [analizadores de FxCop](install-fxcop-analyzers.md) (y no a través de análisis de código estático), puede configurar qué partes de su código base para ejecutar esta regla en, en función de su accesibilidad. Por ejemplo, para especificar que debe ejecutarse la regla sólo con respecto a la superficie de API no públicos, agregue el siguiente par clave-valor a un archivo .editorconfig en el proyecto:
+
+```
+dotnet_code_quality.ca1819.api_surface = private, internal
+```
+
+Puede configurar esta opción para simplemente esta regla, para todas las reglas o para todas las reglas de esta categoría (rendimiento). Para obtener más información, consulte [analizadores de FxCop configurar](configure-fxcop-analyzers.md).
 
 ## <a name="example-violation"></a>Infracción de ejemplo
 

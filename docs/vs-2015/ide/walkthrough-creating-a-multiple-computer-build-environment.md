@@ -1,14 +1,9 @@
 ---
 title: 'Tutorial: Crear un entorno de compilación para varios equipos | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, building on multiple computers
 - build environment, MSBuild
@@ -16,13 +11,13 @@ ms.assetid: ae5391b1-3eec-42f5-beb3-f28630615a9e
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 1422a126f88e72d0eca662aaa5348a6af500b8bb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: d7a7ee6b8dec07284e35ff6807859136a1223fb7
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49820699"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57868052"
 ---
 # <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>Tutorial: Crear un entorno de compilación para varios equipos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,7 +70,7 @@ Se puede crear un entorno de compilación dentro de la organización si se insta
   
 -   Una copia con licencia de Visual Studio Ultimate, Visual Studio Premium o Visual Studio Professional  
   
--   Una copia de .NET Framework 4.5.1, que se puede descargar desde el sitio web de [Visual Studio](http://www.microsoft.com/visualstudio/eng/downloads#d-additional-software).  
+-   Una copia de .NET Framework 4.5.1, que puede descargar desde el [Microsoft](https://www.microsoft.com/download/details.aspx?id=40779) sitio Web.  
   
 ##  <a name="InstallingSoftware"></a> Instalar software en los equipos  
  En primer lugar, configure el equipo host y configure después el equipo de compilación.  
@@ -431,6 +426,3 @@ Se puede crear un entorno de compilación dentro de la organización si se insta
 ## <a name="see-also"></a>Vea también  
  [Preparar un equipo de pruebas para ejecutar un archivo ejecutable de depuración](http://msdn.microsoft.com/library/f0400989-cc2e-4dce-9788-6bdbe91c6f5a)   
  [Referencia de la línea de comandos](../msbuild/msbuild-command-line-reference.md)
-
-
-

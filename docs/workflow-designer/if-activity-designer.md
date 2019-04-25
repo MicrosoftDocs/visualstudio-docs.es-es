@@ -2,21 +2,20 @@
 title: 'Diseñador de flujo de trabajo: si el Diseñador de actividad'
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
 f1_keywords:
 - System.Activities.Statements.If.UI
 ms.assetid: 930a8fa2-db98-43e9-ad6d-a85cc7a6519a
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de237acd09f4c4139bdf79f986dbb43c1a1f8343
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 762199906bbb84701c044b5fa9f3f3b8c6fdfdae
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53988422"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55916978"
 ---
 # <a name="if-activity-designer"></a>Diseñador de actividades If
 

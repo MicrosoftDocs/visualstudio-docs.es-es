@@ -18,25 +18,23 @@ helpviewer_keywords:
 ms.assetid: 932269fe-94e3-43cb-8931-078f31afd177
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ef9edc87963e6c2e3a4ba6ab8eebda429a41a60
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 16091b8743a30404560a1bf841710f65ad1343a3
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53856165"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56701360"
 ---
 # <a name="select-code-type-dialog-box"></a>Seleccionar tipo de código (Cuadro de diálogo)
-Para abrir este cuadro de diálogo, abra el cuadro de diálogo **Asociar al proceso** y haga clic en el botón **Seleccionar**.  
-  
- **Determinar automáticamente el tipo de código para depurar**  
- Se seleccionará el depurador adecuado en función del tipo de código que se está ejecutando.  
-  
- **Depurar estos tipos de código:**  
- En la lista proporcionada, elija el tipo de código que desee depurar.  
-  
-## <a name="see-also"></a>Vea también  
- [Seguridad del depurador](../debugger/debugger-security.md)   
- [Asociar a procesos en ejecución](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)
+Para abrir este cuadro de diálogo, abra el cuadro de diálogo **Asociar al proceso** y haga clic en el botón **Seleccionar**.
+
+ **Determinar automáticamente el tipo de código para depurar** se seleccionará el depurador adecuado según el tipo de código que se está ejecutando.
+
+ **Depurar estos tipos de código:** de la lista proporcionada, elija el tipo de código que desea depurar.
+
+## <a name="see-also"></a>Vea también
+- [Seguridad del depurador](../debugger/debugger-security.md)
+- [Asociar a procesos en ejecución](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)

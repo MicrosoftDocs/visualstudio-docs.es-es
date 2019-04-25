@@ -1,21 +1,20 @@
 ---
 title: Opciones, Editor de texto, F#, IntelliSense
 ms.date: 01/16/2019
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.FSharp.IntelliSense
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 52c181943d4ebfb128c50c87e5ff1f855ad1717a
-ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
+ms.openlocfilehash: 7227fa83e829fff7bac28fa7bb2b50969768e934
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54398429"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55955614"
 ---
 # <a name="options-text-editor-f-intellisense"></a>Opciones, Editor de texto, F#, IntelliSense
 

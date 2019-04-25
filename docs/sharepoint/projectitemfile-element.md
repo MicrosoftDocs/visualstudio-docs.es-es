@@ -7,63 +7,63 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - ProjectItemFile element
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f2c4446d8c0e3beff59a08cfbe6c0a6c9e5294d0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 57c491c79030eea1a01024235c01aec425d5994c
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53883921"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58322917"
 ---
 # <a name="projectitemfile-element"></a>ProjectItemFile (elemento)
-  Representa un archivo de SharePoint, como archivo de elemento de característica, se incluyen con el elemento de proyecto cuando se implementa en SharePoint.  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```xml  
-<ProjectItemFile Source = "Name of the file"  
-    Target = "Deployment path of the file"  
-    Type = "Type of deployment for the file" />  
-```  
-  
-## <a name="type"></a>Tipo  
- **ProjectItemFileType**  
-  
+  Representa un archivo de SharePoint, como archivo de elemento de característica, se incluyen con el elemento de proyecto cuando se implementa en SharePoint.
+
+## <a name="syntax"></a>Sintaxis
+
+```xml
+<ProjectItemFile Source = "Name of the file"
+    Target = "Deployment path of the file"
+    Type = "Type of deployment for the file" />
+```
+
+## <a name="type"></a>Tipo
+ **ProjectItemFileType**
+
 ## <a name="attributes-and-elements"></a>Atributos y elementos
- En las siguientes secciones se describen los atributos, los elementos secundarios y los elementos primarios.  
-  
-### <a name="attributes"></a>Atributos  
-  
-|Atributo|Descripción|  
-|---------------|-----------------|  
-|**Origen**|Requiere **xs: String** atributo.<br /><br /> El nombre del archivo que se va a implementar con el elemento de proyecto.|  
-|**Target**|Opcional **xs: String** atributo.<br /><br /> La ruta de acceso donde se implementará el archivo en SharePoint, relativa a la carpeta raíz de implementación. La carpeta raíz de implementación viene determinada por el tipo de implementación especificado por el **tipo** atributo. Si el **destino** atributo no se especifica, el archivo se implementará en una carpeta con el nombre especificado en el **origen** atributo.<br /><br /> Para obtener más información, vea las descripciones de los **Deployment Path** y **Deployment Root** propiedades de SharePoint elementos de proyecto en [soluciones de desarrollo de SharePoint](../sharepoint/developing-sharepoint-solutions.md).|  
-|**Type**|Requiere **xs: String** atributo.<br /><br /> El tipo de implementación para el archivo. Para obtener más información acerca de los valores posibles, vea la descripción para el **tipo de implementación** propiedad de los elementos de proyecto de SharePoint en [soluciones de desarrollo de SharePoint](../sharepoint/developing-sharepoint-solutions.md).|  
-  
+ En las siguientes secciones se describen los atributos, los elementos secundarios y los elementos primarios.
+
+### <a name="attributes"></a>Atributos
+
+|Atributo|Descripción|
+|---------------|-----------------|
+|**Origen**|Requiere **xs: String** atributo.<br /><br /> El nombre del archivo que se va a implementar con el elemento de proyecto.|
+|**Target**|Opcional **xs: String** atributo.<br /><br /> La ruta de acceso donde se implementará el archivo en SharePoint, relativa a la carpeta raíz de implementación. La carpeta raíz de implementación viene determinada por el tipo de implementación especificado por el **tipo** atributo. Si el **destino** atributo no se especifica, el archivo se implementará en una carpeta con el nombre especificado en el **origen** atributo.<br /><br /> Para obtener más información, vea las descripciones de los **Deployment Path** y **Deployment Root** propiedades de SharePoint elementos de proyecto en [soluciones de desarrollo de SharePoint](../sharepoint/developing-sharepoint-solutions.md).|
+|**Type**|Requiere **xs: String** atributo.<br /><br /> El tipo de implementación para el archivo. Para obtener más información acerca de los valores posibles, vea la descripción para el **tipo de implementación** propiedad de los elementos de proyecto de SharePoint en [soluciones de desarrollo de SharePoint](../sharepoint/developing-sharepoint-solutions.md).|
+
 ### <a name="child-elements"></a>Elementos secundarios
- Ninguno.  
-  
+ Ninguno.
+
 ### <a name="parent-elements"></a>Elementos primarios
-  
-|Elemento|Descripción|  
-|-------------|-----------------|  
-|[Archivos](../sharepoint/files-element.md)|Especifica los archivos que se incluirá con el elemento de proyecto de SharePoint cuando se implementa en SharePoint.|  
-  
-## <a name="remarks"></a>Comentarios  
- Los archivos de SharePoint que se suele hacer referencia a **ProjectItemFile** elementos incluyen archivos de elemento de característica (*Elements.xml*), archivos de esquema para definiciones de lista (*Schema.xml*) y los archivos de definición de elemento Web para elementos Web (*.webpart*).  
-  
+
+|Elemento|Descripción|
+|-------------|-----------------|
+|[Archivos](../sharepoint/files-element.md)|Especifica los archivos que se incluirá con el elemento de proyecto de SharePoint cuando se implementa en SharePoint.|
+
+## <a name="remarks"></a>Comentarios
+ Los archivos de SharePoint que se suele hacer referencia a **ProjectItemFile** elementos incluyen archivos de elemento de característica (*Elements.xml*), archivos de esquema para definiciones de lista (*Schema.xml*) y los archivos de definición de elemento Web para elementos Web (*.webpart*).
+
 ## <a name="element-information"></a>Información de elemento
-  
-|||  
-|-|-|  
-|**Espacio de nombres**|HTTP<nolink>: //schemas.microsoft.com/VisualStudio/<br>SharePointProjectItemModel/SharePointTools/2010|  
-|**Nombre de esquema**|Esquema de elemento de proyecto de SharePoint|  
-|**Archivo de validación**|ProjectItemModelSchema.xsd|  
-|**Puede estar vacío**|No|  
-  
+
+|||
+|-|-|
+|**Espacio de nombres**|http:\/\/schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
+|**Nombre de esquema**|Esquema de elemento de proyecto de SharePoint|
+|**Archivo de validación**|ProjectItemModelSchema.xsd|
+|**Puede estar vacío**|No|
+
 ## <a name="see-also"></a>Vea también
- [Referencia de esquemas de elemento de proyecto de SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)  
+- [Referencia de esquemas de elemento de proyecto de SharePoint](../sharepoint/sharepoint-project-item-schema-reference.md)

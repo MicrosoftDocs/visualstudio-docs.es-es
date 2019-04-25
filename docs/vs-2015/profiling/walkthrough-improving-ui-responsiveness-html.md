@@ -1,14 +1,9 @@
 ---
-title: 'Tutorial: Mejorar la capacidad de respuesta de la interfaz de usuario (HTML) | Microsoft Docs'
-ms.custom: ''
+title: 'Tutorial: Mejorar la capacidad de respuesta de la interfaz de usuario (HTML) | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -23,13 +18,13 @@ ms.assetid: 7e5a2524-dbf5-4a40-b5d6-2d1ed7fff3de
 caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: f0cf1b080a0e803beda6682265dc383dc43a33d0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ae2bb442edbeb49de25b44056263607fa4f26111
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51791155"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071647"
 ---
 # <a name="walkthrough-improving-ui-responsiveness-html"></a>Tutorial: Mejorar la capacidad de respuesta de la interfaz de usuario (HTML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,16 +33,16 @@ Este tutorial le guía a través del proceso de identificar y corregir un proble
   
 ### <a name="creating-and-running-the-performance-test-app"></a>Crear y ejecutar la aplicación de prueba de rendimiento  
   
-1.  En Visual Studio, cree un nuevo proyecto de JavaScript para Windows Universal. (Seleccione **Archivo / Nuevo / Proyecto**. Seleccione **JavaScript** en el panel izquierdo y seleccione **Windows**, **Windows 10**, y después **Universal** o **Windows Phone**.  
+1. En Visual Studio, cree un nuevo proyecto de JavaScript para Windows Universal. (Seleccione **Archivo / Nuevo / Proyecto**. Seleccione **JavaScript** en el panel izquierdo y seleccione **Windows**, **Windows 10**, y después **Universal** o **Windows Phone**.  
   
-2.  > [!IMPORTANT]
+2. > [!IMPORTANT]
     >  Los resultados de diagnóstico que se muestran en este tema son para una aplicación de Windows 8.  
   
-3.  Seleccione una de las plantillas de proyecto vacías del panel central, como **Aplicación vacía**.  
+3. Seleccione una de las plantillas de proyecto vacías del panel central, como **Aplicación vacía**.  
   
-4.  En el cuadro **Nombre**, especifique un nombre como `JS_Perf_Tester` y elija **Aceptar**.  
+4. En el cuadro **Nombre**, especifique un nombre como `JS_Perf_Tester` y elija **Aceptar**.  
   
-5.  En el **Explorador de soluciones**, abre default.html y pega el siguiente código entre las etiquetas \<body>:  
+5. En el **Explorador de soluciones**, abre default.html y pega el siguiente código entre las etiquetas \<body>:  
   
     ```html  
     <div class="wrapper">  
@@ -55,7 +50,7 @@ Este tutorial le guía a través del proceso de identificar y corregir un proble
     </div>  
     ```  
   
-6.  Abre default.css y agrega el código CSS siguiente:  
+6. Abre default.css y agrega el código CSS siguiente:  
   
     ```css  
     #content {  
@@ -64,7 +59,7 @@ Este tutorial le guía a través del proceso de identificar y corregir un proble
     }  
     ```  
   
-7.  Abre default.js y reemplaza todo el código con este código:  
+7. Abre default.js y reemplaza todo el código con este código:  
   
     ```javascript  
     (function () {  
@@ -153,7 +148,7 @@ Este tutorial le guía a través del proceso de identificar y corregir un proble
   
     ```  
   
-8.  Elija la tecla F5 para iniciar la depuración. Compruebe que el botón **En espera de valores** aparece en la página.  
+8. Elija la tecla F5 para iniciar la depuración. Compruebe que el botón **En espera de valores** aparece en la página.  
   
 9. Seleccione **En espera de valores** y compruebe que el texto y el color del botón se actualizan aproximadamente una vez por segundo. Esto es intencionado.  
   
@@ -209,9 +204,9 @@ Este tutorial le guía a través del proceso de identificar y corregir un proble
   
      Se pueden deducir varios hechos de los datos. Por ejemplo:  
   
-    -   Cada evento `Timer`, con un código de color que lo identifica como evento de scripting, incluye una llamada a `document.createElement`, seguida de un cálculo de estilos y una llamada a `style.backgroundColor` y `appendChild()`.  
+    - Cada evento `Timer`, con un código de color que lo identifica como evento de scripting, incluye una llamada a `document.createElement`, seguida de un cálculo de estilos y una llamada a `style.backgroundColor` y `appendChild()`.  
   
-    -   En el breve intervalo de tiempo seleccionado (aproximadamente uno o dos segundos), se produce una gran cantidad de eventos `Timer`, `Layout` y `Paint`. Los eventos `Timer` ocurren con más frecuencia, incluso más de una vez por segundo, lo que resulta evidente después de ejecutar la aplicación y seleccionar el botón **En espera de valores**.  
+    - En el breve intervalo de tiempo seleccionado (aproximadamente uno o dos segundos), se produce una gran cantidad de eventos `Timer`, `Layout` y `Paint`. Los eventos `Timer` ocurren con más frecuencia, incluso más de una vez por segundo, lo que resulta evidente después de ejecutar la aplicación y seleccionar el botón **En espera de valores**.  
   
 10. Para investigar este problema, elige el vínculo a la función anónima de uno de los eventos `Timer` en el panel izquierdo inferior. La siguiente función se abre en default.js:  
   
@@ -230,7 +225,7 @@ Este tutorial le guía a través del proceso de identificar y corregir un proble
   
 ### <a name="fixing-the-performance-issue"></a>Corregir el problema de rendimiento  
   
-1.  Reemplaza la función `update()` por el código siguiente:  
+1. Reemplaza la función `update()` por el código siguiente:  
   
     ```javascript  
     function update() {  
@@ -245,10 +240,7 @@ Este tutorial le guía a través del proceso de identificar y corregir un proble
   
      Esta versión corregida del código incluye un retraso de 1.000 milisegundos, que estaba omitido en la versión anterior del código, que permite el uso de un valor predeterminado de retraso. A tenor de los datos del generador de perfiles, parece que el valor predeterminado son cero milisegundos, lo que hace que la función `setValues()` se ejecute con demasiada frecuencia.  
   
-2.  Ejecuta de nuevo el generador de perfiles de capacidad de respuesta de la IU de HTML y consulta el gráfico de utilización de CPU. Verás que los eventos que se producían con demasiada frecuencia han desaparecido y que la utilización de la CPU ha disminuido a un nivel próximo al cero. ¡Arreglado!  
+2. Ejecuta de nuevo el generador de perfiles de capacidad de respuesta de la IU de HTML y consulta el gráfico de utilización de CPU. Verás que los eventos que se producían con demasiada frecuencia han desaparecido y que la utilización de la CPU ha disminuido a un nivel próximo al cero. ¡Arreglado!  
   
 ## <a name="see-also"></a>Vea también  
  [Capacidad de respuesta de la IU HTML](../profiling/html-ui-responsiveness.md)
-
-
-

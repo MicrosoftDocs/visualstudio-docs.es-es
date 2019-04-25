@@ -1,22 +1,21 @@
 ---
-title: Procedimiento Exportar una textura que tiene valores alfa previamente multiplicados
+title: Filtrar Exportar una textura que tiene valores alfa previamente multiplicados
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 05348afa-f079-4f53-a05b-ecd91d13adab
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a05235b2212e64baea3caf2d7dc3977c3e9d6dc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9a228b3f69730eee5fb1672e07a6eea74d18c71e
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53988010"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55946878"
 ---
-# <a name="how-to-export-a-texture-that-has-premultiplied-alpha"></a>Procedimiento Exportar una textura que tiene valores alfa previamente multiplicados
+# <a name="how-to-export-a-texture-that-has-premultiplied-alpha"></a>Filtrar Exportar una textura que tiene valores alfa previamente multiplicados
 
 La canalización de contenido de la imagen puede generar texturas de alfa premultiplicado a partir de una imagen de origen. Pueden ser más fáciles de usar y más sólidas que las texturas que no contienen alfa previamente multiplicada.
 

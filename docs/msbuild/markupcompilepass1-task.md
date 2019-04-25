@@ -14,15 +14,15 @@ helpviewer_keywords:
 - MarkupCompilePass1 task [WPF MSBuild], converting XAML to binary format
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 52b6e36e06ee74f974d2d774af806a234835cff0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: dfcd34daa6a9a2b4cb4bd095bc91ac5962c7335d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53906883"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56643059"
 ---
 # <a name="markupcompilepass1-task"></a>MarkupCompilePass1 (Tarea)
 
@@ -102,11 +102,11 @@ En el siguiente ejemplo se muestra cómo convertir tres archivos *Page* [!INCLUD
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <UsingTask 
-    TaskName="Microsoft.Build.Tasks.Windows.MarkupCompilePass1" 
+  <UsingTask
+    TaskName="Microsoft.Build.Tasks.Windows.MarkupCompilePass1"
     AssemblyFile="C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.0\PresentationBuildTasks.dll" />
   <Target Name="MarkupCompilePass1Task">
-    <MarkupCompilePass1 
+    <MarkupCompilePass1
       AssemblyName="WPFMSBuildSample"
       Language="C#"
       OutputType="WinExe"
@@ -121,9 +121,9 @@ En el siguiente ejemplo se muestra cómo convertir tres archivos *Page* [!INCLUD
 
 ## <a name="see-also"></a>Vea también
 
-[Referencia de MSBuild para WPF](../msbuild/wpf-msbuild-reference.md)  
-[Referencia de tareas de MSBuild para WPF](../msbuild/wpf-msbuild-task-reference.md)  
-[Referencia de MSBuild](../msbuild/msbuild-reference.md)  
-[Referencia de tareas de MSBuild](../msbuild/msbuild-task-reference.md)  
-[Compilar una aplicación de WPF (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)  
-[Información general sobre las aplicaciones de explorador XAML de WPF](/dotnet/framework/wpf/app-development/wpf-xaml-browser-applications-overview)
+- [Referencia de MSBuild para WPF](../msbuild/wpf-msbuild-reference.md)
+- [Referencia de tareas de MSBuild para WPF](../msbuild/wpf-msbuild-task-reference.md)
+- [Referencia de MSBuild](../msbuild/msbuild-reference.md)
+- [Referencia de tareas de MSBuild](../msbuild/msbuild-task-reference.md)
+- [Compilar una aplicación de WPF (WPF)](/dotnet/framework/wpf/app-development/building-a-wpf-application-wpf)
+- [Información general sobre las aplicaciones de explorador XAML de WPF](/dotnet/framework/wpf/app-development/wpf-xaml-browser-applications-overview)

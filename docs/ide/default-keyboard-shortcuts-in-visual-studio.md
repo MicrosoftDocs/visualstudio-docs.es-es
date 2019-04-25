@@ -1,7 +1,6 @@
 ---
 title: Métodos abreviados de teclado predeterminados
 ms.date: 06/26/2017
-ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - shortcut keys [Visual Studio], keyboard binding schemes
@@ -11,15 +10,15 @@ helpviewer_keywords:
 - keyboard shortcuts
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dbde2e26ac576758d45ee908e30d9bef3341a3ec
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6bc8879dbc515f7f779308db0b745ce5bb5afc50
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53849595"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56607413"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Métodos abreviados de teclado predeterminados de Visual Studio
 
@@ -799,11 +798,17 @@ Las secciones de la siguiente tabla incluyen comandos que son globales en el sen
 | Edit.ExpandCurrentRegion | **Ctrl+M, Ctrl+E** |
 | Edit.FormatDocument | **Ctrl+K, Ctrl+D** |
 | Edit.FormatSelection | **Ctrl+K, Ctrl+F** |
+| Edit.GotoAll | **Ctrl+T**<br /><br /> o<br /><br /> **Ctrl+,** |
 | Edit.GotoBrace | **Ctrl+]** |
 | Edit.GotoBraceExtend | **Ctrl+Mayús+]** |
+| Edit.GotoRecent | **Ctrl+T,R** |
+| Edit.GotoNextIssueinFile | **Alt+AvPág** |
+| Edit.GotoPreviousIssueinFile **Alt+RePág** |
 | Edit.HideSelection | **Ctrl+M, Ctrl+H** |
 | Edit.IncreaseFilterLevel | **Alt+.** |
 | Edit.IncrementalSearch | **Ctrl+I** |
+| Edit.InsertCaretsatAllMatching | **Mayús+Alt+;** |
+| Edit.InsertNextMatchingCaret | **Mayús+Alt+.** |
 | Edit.InsertTab | **Tabulación** |
 | Edit.LineCut | **Ctrl+L** |
 | Edit.LineDelete | **Ctrl+Mayús+L** |
@@ -846,7 +851,8 @@ Las secciones de la siguiente tabla incluyen comandos que son globales en el sen
 | Edit.SelectCurrentWord | **Ctrl+W** |
 | Edit.SelectionCancel | **Escape** |
 | Edit.SelectToLastGoBack | **Ctrl+=** |
-| Edit.ShowCodeLensMenu | **Alt+\`** |
+| Edit.ShowCodeLensMenu | **Ctrl+K, Ctrl+\`** |
+| Edit.ShowNavigateMenu | **Alt+\`** |
 | Edit.StopHidingCurrent | **Ctrl+M, Ctrl+U** |
 | Edit.StopOutlining | **Ctrl+M, Ctrl+P** |
 | Edit.SwapAnchor | **Ctrl+K, Ctrl+A** |
@@ -1047,7 +1053,7 @@ Las secciones de la siguiente tabla incluyen comandos que son globales en el sen
 |Edit.RefreshWorkItem|**F5**|
 |Team.NewLinkedWorkItem|**Mayús+Alt+L**|
 
-##  <a name="work-item-query-view"></a>Vista de consulta de elemento de trabajo
+##  <a name="work-item-query-view"></a>Vista de consulta de elementos de trabajo
 
 |Comandos|Métodos abreviados de teclado|
 |--------------| - |

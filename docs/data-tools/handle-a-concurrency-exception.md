@@ -15,16 +15,15 @@ helpviewer_keywords:
 ms.assetid: 73ee9759-0a90-48a9-bf7b-9d6fc17bff93
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b626aa489323d26ef439ade216d1fa97a52a8d13
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a8e14a53719d4913bcc04bcb2b702ca4ec4a8c55
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53825651"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55927222"
 ---
 # <a name="handle-a-concurrency-exception"></a>Tratar las excepciones de simultaneidad
 
@@ -207,7 +206,7 @@ Puede comprobar el formulario para asegurarse de que se comporta de la forma pre
 
 8. En el primer registro en el formulario (**ALFKI**), cambiar **ContactName** a **Maria Anders1**.
 
-9. Seleccione el **guardar** botón.
+9. Seleccione el botón **Guardar**.
 
      Se produce el error de simultaneidad y aparece el cuadro de mensaje.
 

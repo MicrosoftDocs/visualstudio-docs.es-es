@@ -1,14 +1,9 @@
 ---
 title: Ventana Inmediato | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.ImmediateWindow
 helpviewer_keywords:
@@ -19,18 +14,17 @@ ms.assetid: d33e7937-73f3-4c69-9df0-777a8713c6f2
 caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: be77104c4570068cbebf6c25801f600757a6ee0d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 7a39b6f84185c78ccea11e09e628050a6bf4f601
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49850430"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053408"
 ---
 # <a name="immediate-window"></a>Inmediato (ventana)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 La ventana **Inmediato** sirve para depurar y evaluar expresiones, ejecutar instrucciones, imprimir valores de variables, etc. Permite escribir expresiones para evaluarlas o ejecutarlas mediante el lenguaje de desarrollo durante la depuración. Para mostrar la ventana **Inmediato**, abra un proyecto para editarlo, elija **Ventanas** en el menú **Depurar** y seleccione **Inmediato**, o bien presione CTRL+ALT+I.  
   
  Puede usar esta ventana para emitir comandos [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] individuales. Entre los comandos disponibles se incluye `EvaluateStatement`, que puede usarse para asignar valores a variables. La ventana **Inmediato** también admite IntelliSense.  
@@ -80,7 +74,7 @@ La ventana **Inmediato** sirve para depurar y evaluar expresiones, ejecutar inst
   
     La ventana **Inmediato** ejecutará `MyFunction` y mostrará `4`.  
   
-   Si la función o la subrutina contienen un punto de interrupción, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] interrumpirá la ejecución en el punto adecuado. A continuación puede utilizar las ventanas del depurador para examinar el estado del programa. Para más información, vea [Tutorial: Depurar en tiempo de diseño](../../debugger/walkthrough-debugging-at-design-time.md).  
+   Si la función o la subrutina contienen un punto de interrupción, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] interrumpirá la ejecución en el punto adecuado. A continuación puede utilizar las ventanas del depurador para examinar el estado del programa. Para más información, vea [Tutorial: Depuración en tiempo de diseño](../../debugger/walkthrough-debugging-at-design-time.md).  
   
    No puede usar la evaluación de expresiones en tiempo de diseño en los tipos de proyectos que requieren que se inicie un entorno de ejecución, incluidos los proyectos de [!INCLUDE[trprVSTOshort](../../includes/trprvstoshort-md.md)], proyectos web, proyectos de Smart Device y proyectos de SQL.  
   
@@ -124,9 +118,9 @@ La ventana **Inmediato** sirve para depurar y evaluar expresiones, ejecutar inst
   
 #### <a name="to-toggle-first-chance-exception-notifications-in-the-immediate-window"></a>Para activar o desactivar las notificaciones de excepciones de primera oportunidad en la ventana Inmediato  
   
-1.  En el menú **Vista**, haga clic en **Otras ventanas** y en **Salida**.  
+1. En el menú **Vista**, haga clic en **Otras ventanas** y en **Salida**.  
   
-2.  Haga doble clic en el área de texto de la ventana **Salida** y seleccione o anule la selección de **Mensajes de excepción**.  
+2. Haga doble clic en el área de texto de la ventana **Salida** y seleccione o anule la selección de **Mensajes de excepción**.  
   
 ## <a name="see-also"></a>Vea también  
  [Desplazarse por el código con el depurador](../../debugger/navigating-through-code-with-the-debugger.md)   
@@ -136,6 +130,3 @@ La ventana **Inmediato** sirve para depurar y evaluar expresiones, ejecutar inst
  [Tutorial: Depuración en tiempo de diseño](../../debugger/walkthrough-debugging-at-design-time.md)   
  [Alias de comandos de Visual Studio](../../ide/reference/visual-studio-command-aliases.md)   
  [Usar expresiones regulares en Visual Studio](../../ide/using-regular-expressions-in-visual-studio.md)
-
-
-

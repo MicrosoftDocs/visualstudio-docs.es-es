@@ -1,36 +1,29 @@
 ---
-title: Caché de esquema | Documentos de Microsoft
-ms.custom: ''
+title: Schema Cache | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 35a7fcad-f3bf-4a96-9008-4306e7276223
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 071ae9f75ab48a2fbabba7c272ad542f59e9e8be
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 8667c55eed6de6b2b3c76af2ef45a5357a254516
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49833153"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115996"
 ---
 # <a name="schema-cache"></a>Caché de esquema
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 El Editor XML proporciona una caché de esquema que está ubicada en el directorio %InstallRoot%\Xml\Schemas. La caché de esquema es global para todos los usuarios de un equipo e incluye esquemas XML estándar que se utilizan en IntelliSense y en la validación de documentos XML.  
 
  El editor XML también puede encontrar los esquemas ubicados en la solución, los esquemas especificados en el **esquemas** campo del documento **propiedades** ventana y los esquemas identificados por el `xsi:schemaLocation` y `xsi:noNamespaceSchemaLocation`atributos.  
 
  En la siguiente tabla se describen los esquemas que están instalados con el Editor XML.  
-
 
 |     Filename      |                                                      Descripción                                                      |
 |-------------------|-----------------------------------------------------------------------------------------------------------------------|
@@ -72,7 +65,7 @@ El Editor XML proporciona una caché de esquema que está ubicada en el director
 
 - InstallDir  
 
-- System  
+- Sistema  
 
 - ProgramFiles  
 
@@ -116,26 +109,23 @@ El Editor XML proporciona una caché de esquema que está ubicada en el director
 
 #### <a name="to-change-the-schema-cache-location"></a>Para cambiar la ubicación de la caché de esquema  
 
-1.  Desde el **herramientas** menú, seleccione **opciones**.  
+1. Desde el **herramientas** menú, seleccione **opciones**.  
 
-2.  Expanda **Editor de texto**, expanda **XML**y, a continuación, haga clic en **varios**.  
+2. Expanda **Editor de texto**, expanda **XML**y, a continuación, haga clic en **varios**.  
 
-3.  Haga clic en el **examinar** situado en la **esquemas** campo.  
+3. Haga clic en el **examinar** situado en la **esquemas** campo.  
 
-4.  Seleccione la carpeta para la caché de esquema y haga clic en **Aceptar**.  
+4. Seleccione la carpeta para la caché de esquema y haga clic en **Aceptar**.  
 
 #### <a name="to-add-another-directory-of-common-schemas"></a>Para agregar otro directorio de esquemas comunes  
 
-1.  Edite el archivo catalog.xml del directorio de la caché de esquema del Editor XML.  
+1. Edite el archivo catalog.xml del directorio de la caché de esquema del Editor XML.  
 
-2.  Agregue un nuevo elemento `<Catalog href="…"/>` que apunte al directorio de esquemas adicionales.  
+2. Agregue un nuevo elemento `<Catalog href="…"/>` que apunte al directorio de esquemas adicionales.  
 
-3.  Guarde los cambios.  
+3. Guarde los cambios.  
 
      El catálogo se recarga automáticamente.  
 
 ## <a name="see-also"></a>Vea también  
  [Editor XML](../xml-tools/xml-editor.md)
-
-
-

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Web Parts [SharePoint development in Visual Studio], designer
 - Web Parts [SharePoint development in Visual Studio], creating
 - Web Parts [SharePoint development in Visual Studio], designing
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 146a1722f240895e0f508b0474df72f6f5f84ece
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4a22d814ce50dea1ee67ed3bf1f071839e60a797
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53870919"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56607033"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint-by-using-a-designer"></a>Tutorial: Crear un elemento web para SharePoint utilizando un diseñador
 
@@ -187,6 +187,6 @@ Los eventos de todos los calendarios especificados aparecen en la vista de calen
 
 ## <a name="see-also"></a>Vea también
 
-[Crear elementos web para SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)  
-[Cómo: Crear un elemento web de SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md)  
+[Crear elementos web para SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md)
+[Cómo: Crear un elemento web de SharePoint](../sharepoint/how-to-create-a-sharepoint-web-part.md)
 [Tutorial: Crear un elemento web para SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md)

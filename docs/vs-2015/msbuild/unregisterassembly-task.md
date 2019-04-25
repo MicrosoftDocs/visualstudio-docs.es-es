@@ -1,14 +1,9 @@
 ---
 title: UnregisterAssembly (Tarea) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#UnregisterAssembly
 dev_langs:
@@ -23,18 +18,17 @@ ms.assetid: 04f549dd-3591-4dda-9c3a-cf6ede9df2c3
 caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: dcfddcf1603a16ee4d436766e4f34fa2c41491bb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 2ef7ef7f4ec930b8aa338a8be33c4009b3009b20
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298615"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666161"
 ---
 # <a name="unregisterassembly-task"></a>UnregisterAssembly (Tarea)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Elimina del Registro los ensamblados especificados para la interoperabilidad COM. Invierte la [tarea RegisterAssembly](../msbuild/registerassembly-task.md).  
   
 ## <a name="parameters"></a>Parámetros  
@@ -73,6 +67,3 @@ Elimina del Registro los ensamblados especificados para la interoperabilidad COM
  [RegisterAssembly (Tarea)](../msbuild/registerassembly-task.md)   
  [Tareas](../msbuild/msbuild-tasks.md)   
  [Referencia de tareas](../msbuild/msbuild-task-reference.md)
-
-
-

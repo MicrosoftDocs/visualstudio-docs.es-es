@@ -1,14 +1,9 @@
 ---
 title: SccUncheckout (función) | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccUncheckout
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 6d498b70-29c7-44b7-ae1c-7e99e488bb09
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 5769f68055985fc79cc821387f6bd75613d70777
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3ae5ecd7568a10936479f72f92e9914132f2dcdf
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51752717"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58998164"
 ---
 # <a name="sccuncheckout-function"></a>SccUncheckout (Función)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +44,7 @@ SCCRTN SccUncheckout (
  hWnd  
  [in] Identificador de la ventana del IDE que puede usar el complemento de control de código fuente como un elemento primario para los cuadros de diálogo que proporciona.  
   
- n  
+ nFiles  
  [in] Número de archivos especificados en el `lpFileNames` matriz.  
   
  lpFileNames  
@@ -80,4 +75,3 @@ SCCRTN SccUncheckout (
   
 ## <a name="see-also"></a>Vea también  
  [Funciones de API de complemento de control de código fuente](../extensibility/source-control-plug-in-api-functions.md)
-

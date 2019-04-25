@@ -1,14 +1,9 @@
 ---
 title: Información rápida en un servicio de lenguaje heredado | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Quick Info, supporting in language services [managed package framework]
 - IntelliSense, Quick Info
@@ -16,20 +11,20 @@ helpviewer_keywords:
 ms.assetid: 159ccb0b-f5d6-4912-b88b-e9612924ed5e
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6ff6f4a29d194aaa5c9b868fffa19947a7321c77
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5f27b58b4ef94f4b859b43c2321ddbd9b67327fe
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51797213"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58998806"
 ---
 # <a name="quick-info-in-a-legacy-language-service"></a>Información rápida en un servicio de lenguaje heredado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Información rápida de IntelliSense muestra información acerca de un identificador en el origen cuando el usuario, ya sea coloca el símbolo de intercalación en el identificador y selecciona **información rápida** desde el **IntelliSense** menú o mantiene el mouse cursor sobre el identificador. Esto hace que una información sobre herramientas con información sobre el identificador. Esta información normalmente está formada por el tipo de identificador. Cuando el motor de depuración está activo, esta información puede incluir el valor actual. El motor de depuración proporciona valores de expresión, mientras que el servicio de lenguaje controla solo identificadores.  
   
- Servicios de lenguaje heredado se implementan como parte de un paquete VSPackage, pero la forma más reciente para implementar características de servicio de lenguaje es usar las extensiones MEF. Para obtener más información, consulte [Tutorial: mostrar información rápida](../../extensibility/walkthrough-displaying-quickinfo-tooltips.md).  
+ Servicios de lenguaje heredado se implementan como parte de un paquete VSPackage, pero la forma más reciente para implementar características de servicio de lenguaje es usar las extensiones MEF. Para obtener más información, consulte [Tutorial: Mostrar información sobre herramientas de QuickInfo](../../extensibility/walkthrough-displaying-quickinfo-tooltips.md).  
   
 > [!NOTE]
 >  Se recomienda que comience a usar el nuevo editor de API tan pronto como sea posible. Esto mejorará el rendimiento de su servicio de lenguaje y le permiten aprovechar las nuevas características del editor.  
@@ -49,4 +44,3 @@ Información rápida de IntelliSense muestra información acerca de un identific
  La mayoría de los analizadores hacer un análisis inicial del archivo de código fuente completo y almacenan los resultados en un árbol de análisis. Cuando se realiza el análisis completo <xref:Microsoft.VisualStudio.Package.ParseReason> se pasa a <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> método. Otros tipos de análisis, a continuación, pueden usar el árbol de análisis para obtener la información deseada.  
   
  Por ejemplo, el valor de motivo de análisis de <xref:Microsoft.VisualStudio.Package.ParseReason> puede encontrar el identificador en la ubicación de origen y buscar en el árbol de análisis para obtener la información de tipo. Esta información de tipo, a continuación, se pasa a la <xref:Microsoft.VisualStudio.Package.AuthoringScope> clase y es devuelto por la <xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDataTipText%2A> método.
-

@@ -1,21 +1,20 @@
 ---
 title: Análisis de código de FxCop y analizadores de FxCop
 ms.date: 09/06/2018
-ms.prod: visual-studio-dev15
 ms.topic: overview
 helpviewer_keywords:
 - code analysis FAQ
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 83b9fb827ea413952713284073b712594fd26d52
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6d8e3f3288c6a64b35a1de59fe0f317b6283b805
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53904960"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232559"
 ---
 # <a name="frequently-asked-questions-about-fxcop-and-fxcop-analyzers"></a>Preguntas más frecuentes acerca de FxCop y analizadores de FxCop
 
@@ -32,7 +31,7 @@ Los analizadores de FxCop se basan en .NET Compiler Platform (“Roslyn”). Se 
 
 ## <a name="does-the-run-code-analysis-command-run-fxcop-analyzers"></a>¿El comando Ejecutar análisis de código ejecuta los analizadores de FxCop?
 
-No. Al seleccionar **Analizar** > **Ejecutar análisis de código** en Visual Studio 2017, se ejecuta el análisis de código estático o el FxCop heredado. **Ejecutar análisis de código** no tiene ningún efecto en los analizadores basados en Roslyn, incluidos los analizadores de FxCop basados en Roslyn.
+No. Al seleccionar **Analizar** > **Ejecutar análisis de código**, se ejecuta el análisis de código estático o el FxCop heredado. **Ejecutar análisis de código** no tiene ningún efecto en los analizadores basados en Roslyn, incluidos los analizadores de FxCop basados en Roslyn.
 
 ## <a name="does-the-runcodeanalysis-msbuild-project-property-run-analyzers"></a>¿La propiedad de proyecto de msbuild RunCodeAnalysis ejecuta los analizadores?
 
@@ -41,6 +40,14 @@ No. La propiedad **RunCodeAnalysis** en un archivo de proyecto (por ejemplo, *.c
 ## <a name="so-how-do-i-run-fxcop-analyzers-then"></a>¿En ese caso, cómo puedo ejecutar analizadores de FxCop?
 
 Para ejecutar los analizadores de FxCop, primero [instale el paquete NuGet](install-fxcop-analyzers.md) para ellos. Después, compile el proyecto o solución en Visual Studio o con msbuild. Las advertencias y errores que generan los analizadores de FxCop aparecerán en la **Lista de errores** o la ventana de comandos.
+
+## <a name="i-get-warning-ca0507-even-after-ive-installed-the-fxcop-analyzers-nuget-package"></a>Aparece una advertencia CA0507 incluso después de instalar el paquete de NuGet de los analizadores de FxCop
+
+Si ha instalado los analizadores de FxCop, pero sigue apareciendo la advertencia CA0507 **"Ejecutar análisis de código" se ha dejado de usar en favor de los analizadores de FxCop, que se ejecutan durante la compilación**, puede que sea necesario establecer la propiedad **RunCodeAnalysis** de msbuild del archivo del proyecto en **false**. En caso contrario, el análisis de código estático se ejecutará después de cada compilación.
+
+```xml
+<RunCodeAnalysis>false</RunCodeAnalysis>
+```
 
 ## <a name="see-also"></a>Vea también
 

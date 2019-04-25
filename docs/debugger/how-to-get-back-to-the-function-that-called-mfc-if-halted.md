@@ -21,15 +21,15 @@ helpviewer_keywords:
 ms.assetid: d254a5a9-afbd-4923-9d7a-7422d824cabf
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b9b3d95108ac91066da51feed9f5813d15693d52
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: f846b636d2790839de6d05d048fc7e24d0bc6253
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53988344"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114891"
 ---
 # <a name="how-to-get-back-to-the-function-that-called-mfc-if-halted"></a>Procedimiento Volver a la función que llamó a MFC cuando está detenido
 
@@ -42,7 +42,7 @@ A veces el código puede interrumpir el bombeo de mensajes. En ese caso, no hay 
 
 ## <a name="navigate-to-the-function-from-which-mfc-was-called"></a>Vaya a la función desde el que se llamó a MFC
 
--   Use la ventana **Pila de llamadas**.
+- Use la ventana **Pila de llamadas**.
 
 ## <a name="see-also"></a>Vea también
 

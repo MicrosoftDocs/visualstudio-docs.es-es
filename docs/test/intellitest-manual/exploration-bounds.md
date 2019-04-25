@@ -1,21 +1,20 @@
 ---
 title: Límites de exploración | Herramientas de prueba para desarrolladores de Microsoft IntelliTest
 ms.date: 05/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - IntelliTest, Exploration bounds
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 718c8cfdf7b4d03ea0c1c3b5f9f4a120a5997a8e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ffa6908fe759f33ad1e82f2fd44975d6731cdf16
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935468"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325284"
 ---
 # <a name="exploration-bounds"></a>Límites de exploración
 
@@ -30,17 +29,17 @@ public partial class FooTest {...}
 
 * **Límites de solución de restricciones**
   * [MaxConstraintSolverTime](#maxconstraintsolvertime): el número de segundos que el [solucionador de restricciones](input-generation.md#constraint-solver) tiene para detectar entradas que provocarán una nueva y diferente ruta de ejecución que se va a seguir.
-  * [MaxConstraintSolverMemory](#maxconstraintsolvermemory): el tamaño en megabytes que puede usar el [solucionador de restricciones](input-generation.md#constraint-solver) para detectar entradas.<p />
+  * [MaxConstraintSolverMemory](#maxconstraintsolvermemory): el tamaño en megabytes que puede usar el [solucionador de restricciones](input-generation.md#constraint-solver) para detectar entradas.
 * **Límites de la ruta de exploración**
   * [MaxBranches](#maxbranches): el número máximo de ramas que se pueden tomar a lo largo de una sola ruta de ejecución.
   * [MaxCalls](#maxcalls): el número máximo de llamadas que pueden realizarse durante una sola ruta de ejecución.
   * [MaxStack](#maxstack): el tamaño máximo de la pila en cualquier momento durante una sola ruta de ejecución, medido como el número de marcos de llamada activos.
-  * [MaxConditions](#maxconditions): el número máximo de condiciones en las entradas que se pueden comprobar durante una sola ruta de acceso de ejecución.<p />
+  * [MaxConditions](#maxconditions): el número máximo de condiciones en las entradas que se pueden comprobar durante una sola ruta de acceso de ejecución.
 * **Límites de exploración**
   * [MaxRuns](#maxruns): el número máximo de ejecuciones que se intentarán durante una exploración.
   * [MaxRunsWithoutNewTests](#maxrunswithoutnewtests): el número máximo de ejecuciones consecutivas sin que se emita una nueva prueba.
   * [MaxRunsWithUniquePaths](#maxrunswithuniquepaths): el número máximo de ejecuciones con rutas de ejecución únicas que se intentarán durante una exploración.
-  * [MaxExceptions](#maxexceptions): el número máximo de excepciones que pueden detectarse para una combinación de todas las rutas de ejecución detectadas.<p />
+  * [MaxExceptions](#maxexceptions): el número máximo de excepciones que pueden detectarse para una combinación de todas las rutas de ejecución detectadas.
 * **Configuración de la generación de código para el conjunto de pruebas**
   * [TestExcludePathBoundsExceeded](#testexcludepathboundsexceeded): cuando se establezca en True, las rutas de ejecución que exceden cualquiera de los límites de ruta ([MaxCalls](#maxcalls), [MaxBranches](#maxbranches), [MaxStack](#maxstack), [MaxConditions](#maxconditions)) se ignoran.
   * [TestEmissionFilter](#testemissionfilter): indica en qué circunstancias IntelliTest debe emitir pruebas.
@@ -106,7 +105,7 @@ Por ejemplo, cada ruta del siguiente código consume n+1 condiciones:
 
 ```csharp
 [PexMethod]
-void ParameterizedTest(int n) 
+void ParameterizedTest(int n)
 {
      for (int i=0; i<n; i++) { // conditions are "0<n", "1<n", ..., "!(n<n)"
           ...
@@ -144,10 +143,10 @@ El número máximo de rutas únicas que IntelliTest considerará durante una exp
 
 La motivación para este límite de exploración es que cualquier código que contiene bucles o recursividad pueda tener un número infinito de rutas de ejecución y, por lo tanto, IntelliTest debe limitarse durante la [generación de entradas](input-generation.md).
 
-Las dos opciones **MaxRuns** y **MaxRunsWithUniquePaths** se relacionan de la manera siguiente: 
+Las dos opciones **MaxRuns** y **MaxRunsWithUniquePaths** se relacionan de la manera siguiente:
 
 * IntelliTest llamará a un método de prueba parametrizado hasta **MaxRuns** veces con diferentes entradas de prueba.
-* Si el código de prueba es determinista, IntelliTest tomará una ruta de ejecución diferente cada vez. En cambio, en determinadas condiciones el código ejecutado puede seguir una ruta de ejecución que ya haya tomado antes, con entradas diferentes. 
+* Si el código de prueba es determinista, IntelliTest tomará una ruta de ejecución diferente cada vez. En cambio, en determinadas condiciones el código ejecutado puede seguir una ruta de ejecución que ya haya tomado antes, con entradas diferentes.
 * IntelliTest cuenta el número de rutas de ejecución únicas que detecta; este número está limitado mediante la opción **MaxRunsWithUniquePaths**.
 
 <a name="maxexceptions"></a>

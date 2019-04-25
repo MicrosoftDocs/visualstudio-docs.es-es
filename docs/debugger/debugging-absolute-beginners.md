@@ -7,15 +7,15 @@ helpviewer_keywords:
 - debugger
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 15facda7bcb2b07dd071aaf0e40c44d265a01826
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.openlocfilehash: 505678b52253d1efb21b06a2fb39d5250311167c
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54204513"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789398"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>Cómo depurar para principiantes sin experiencia
 
@@ -64,7 +64,7 @@ Al ejecutar una aplicación con normalidad, verá errores y resultados incorrect
 
 Ejecutar una aplicación dentro de un depurador, también denominado *modo de depuración*, significa que el depurador supervisa activamente todo lo que sucede durante la ejecución del programa. También permite pausar la aplicación en cualquier momento para examinar su estado y después recorrer el código línea por línea para ver todos los detalles a medida que se produce.
 
-En Visual Studio, puede entrar en el modo de depuración mediante **F5** (o el comando de menú **Depurar** > **Iniciar depuración** o el botón **Iniciar depuración** ![Start Debugging](../debugger/media/dbg-tour-start-debugging.png "Start Debugging") de la barra de herramientas Depurar). Si se produce alguna excepción, el Asistente de excepciones de Visual Studio le lleva al punto exacto donde ocurrió y proporciona información útil adicional. Para obtener más información sobre cómo controlar las excepciones en el código, vea [Fix bugs by writing better C# code](../debugger/write-better-code-with-visual-studio.md) (Mejora de la escritura de código de C# para corregir errores).
+En Visual Studio, puede entrar en el modo de depuración mediante **F5** (o el comando de menú **Depurar** > **Iniciar depuración** o el botón **Iniciar depuración** ![Start Debugging](../debugger/media/dbg-tour-start-debugging.png "Start Debugging") de la barra de herramientas Depurar). Si se produce alguna excepción, el Asistente de excepciones de Visual Studio le lleva al punto exacto donde ocurrió y proporciona información útil adicional. Para más información sobre cómo controlar las excepciones en el código, vea [Técnicas y herramientas de depuración](../debugger/write-better-code-with-visual-studio.md).
 
 Si no recibió una excepción, probablemente pueda hacerse una idea de dónde buscar el problema en el código. Aquí es donde usará *puntos de interrupción* con el depurador para examinar más detenidamente el código. Los puntos de interrupción son la característica más básica y esencial para una depuración confiable. Un punto de interrupción indica dónde Visual Studio debe pausar la ejecución de código para poder echar un vistazo a los valores de las variables, al comportamiento de la memoria o a la secuencia en la que se ejecuta el código.
 
@@ -78,21 +78,20 @@ A continuación, crearemos una aplicación que tiene algunos errores.
 
 1. Debe tener instalado Visual Studio y las cargas de trabajo **Desarrollo de escritorio de .NET** o **Desarrollo multiplataforma de .NET Core**, según el tipo de aplicación que quiera crear.
 
-    Si todavía no ha instalado Visual Studio, vaya a la página de  [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)  para instalarlo de forma gratuita.
+    Si todavía no ha instalado Visual Studio, vaya a la página de  [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/)  para instalarlo de forma gratuita.
 
     Si tiene que instalar la carga de trabajo pero ya tiene Visual Studio, haga clic en **Herramientas** > **Obtener herramientas y características**. Se iniciará el Instalador de Visual Studio. Elija la carga de trabajo **Desarrollo de escritorio de .NET** (o la carga de trabajo **Desarrollo multiplataforma de .NET Core**) y después haga clic en **Modificar**.
 
-1. Abra Visual Studio, y después elija **Archivo** > **Nuevo** > **Proyecto**.
+1. Abra Visual Studio.
 
-1. Elija una plantilla para el código de aplicación.
+    ::: moniker range=">=vs-2019"
+    En la ventana de inicio, elija **Crear un proyecto nuevo**. Escriba **consola** en el cuadro de búsqueda y luego elija **Aplicación de consola (.NET Framework)** o **Aplicación de consola (.NET Core)**. Seleccione **Siguiente**. Escriba un nombre de proyecto como, por ejemplo, **ConsoleApp-FirstApp** y haga clic en **Crear**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    En la barra de menús superior, seleccione **Archivo** > **Nuevo** > **Proyecto**. En el panel izquierdo del cuadro de diálogo **Nuevo proyecto**, en **Visual C#**, elija **Aplicación de consola** y luego, en el panel central, **Aplicación de consola (.NET Framework)** o **Aplicación de consola (.NET Core)**. Escriba un nombre como **ConsoleApp-FirstApp** y haga clic en **Aceptar**.
+    ::: moniker-end
 
-    Para .NET Framework, en el cuadro de diálogo **Nuevo proyecto**, elija **Visual C#**, **Windows Desktop** desde la sección Plantillas instaladas y después, en el panel central, seleccione **Aplicación de consola (.NET Framework)**.
-
-    Para .NET Core, en el cuadro de diálogo **Nuevo proyecto**, elija **Visual C#**, **.NET Core** desde la sección Plantillas instaladas y después, en el panel central, seleccione **Aplicación de consola (.NET Core)**.
-
-    Si no ve estas plantillas, debe instalar la carga de trabajo adecuada (consulte los pasos anteriores).
-
-1. En el campo **Nombre**, escriba **ConsoleApp-FirstApp** y haga clic en **Aceptar**.
+    Si no ve la plantilla de proyecto **Aplicación de consola (.NET Framework)** o **Aplicación de consola (.NET Core)**, vaya a **Herramientas** > **Obtener herramientas y características…** y se abrirá el Instalador de Visual Studio. Elija la carga de trabajo **Desarrollo de escritorio de .NET** o la carga de trabajo **Desarrollo multiplataforma de .NET Core** y luego elija **Modificar**.
 
     Visual Studio crea el proyecto de consola, con lo que aparece el Explorador de soluciones (en el panel derecho).
 
@@ -101,7 +100,7 @@ A continuación, crearemos una aplicación que tiene algunos errores.
     ```csharp
     using System;
     using System.Collections.Generic;
-    
+
     namespace ConsoleApp_FirstApp
     {
         class Program
@@ -112,7 +111,7 @@ A continuación, crearemos una aplicación que tiene algunos errores.
                 IterateThroughList();
                 Console.ReadKey();
             }
-    
+
             private static void IterateThroughList()
             {
                 var theGalaxies = new List<Galaxy>
@@ -124,33 +123,33 @@ A continuación, crearemos una aplicación que tiene algunos errores.
                 new Galaxy() { Name="Andromeda", MegaLightYears=3, GalaxyType=new GType('S')},
                 new Galaxy() { Name="Maffei 1", MegaLightYears=11, GalaxyType=new GType('E')}
             };
-    
+
                 foreach (Galaxy theGalaxy in theGalaxies)
                 {
                     Console.WriteLine(theGalaxy.Name + "  " + theGalaxy.MegaLightYears + ",  " + theGalaxy.GalaxyType);
                 }
-    
-                // Expected Output:  
-                //  Tadpole  400,  Spiral 
-                //  Pinwheel  25,  Spiral 
+
+                // Expected Output:
+                //  Tadpole  400,  Spiral
+                //  Pinwheel  25,  Spiral
                 //  Cartwheel, 500,  Lenticular
                 //  Small Magellanic Cloud .2,  Irregular
                 //  Andromeda  3,  Spiral
                 //  Maffei 1,  11,  Elliptical
             }
         }
-    
+
         public class Galaxy
         {
             public string Name { get; set; }
-    
+
             public double MegaLightYears { get; set; }
             public object GalaxyType { get; set; }
-    
+
         }
-    
+
         public class GType
-        { 
+        {
             public GType(char type)
             {
                 switch(type)
@@ -188,8 +187,8 @@ A continuación, crearemos una aplicación que tiene algunos errores.
     La aplicación se inicia y el depurador no nos muestra ninguna excepción. Sin embargo, la salida que se ve en la ventana de consola no es la esperada. Este es el resultado esperado:
 
     ```
-    Tadpole  400,  Spiral 
-    Pinwheel  25,  Spiral 
+    Tadpole  400,  Spiral
+    Pinwheel  25,  Spiral
     Cartwheel, 500,  Lenticular
     Small Magellanic Cloud .2,  Irregular
     Andromeda  3,  Spiral
@@ -199,8 +198,8 @@ A continuación, crearemos una aplicación que tiene algunos errores.
     No obstante, en su lugar vemos esto:
 
     ```
-    Tadpole  400,  ConsoleApp_FirstApp.GType 
-    Pinwheel  25,  ConsoleApp_FirstApp.GType 
+    Tadpole  400,  ConsoleApp_FirstApp.GType
+    Pinwheel  25,  ConsoleApp_FirstApp.GType
     Cartwheel, 500,  ConsoleApp_FirstApp.GType
     Small Magellanic Cloud .2,  ConsoleApp_FirstApp.GType
     Andromeda  3,  ConsoleApp_FirstApp.GType
@@ -217,7 +216,7 @@ A continuación, crearemos una aplicación que tiene algunos errores.
     foreach (Galaxy theGalaxy in theGalaxies)
     {
         Console.WriteLine(theGalaxy.Name + "  " + theGalaxy.MegaLightYears + ",  " + theGalaxy.GalaxyType);
-    }    
+    }
     ```
 
     Cuando establece el punto de interrupción, aparece un punto rojo en el margen izquierdo.
@@ -247,13 +246,13 @@ A continuación, crearemos una aplicación que tiene algunos errores.
 1. Al examinar el código relacionado con la configuración del tipo galaxia, descubre que la propiedad `GalaxyType` de la clase `Galaxy` está especificada como `object` en lugar de `GType`.
 
     ```csharp
-    public object GalaxyType { get; set; }     
+    public object GalaxyType { get; set; }
     ```
 
 1. Cambiar el código anterior a este:
 
     ```csharp
-    public GType GalaxyType { get; set; }     
+    public GType GalaxyType { get; set; }
     ```
 
 1. Haga clic en el botón **Reiniciar** ![Reiniciar aplicación](../debugger/media/dbg-tour-restart.png "RestartApp") de la barra de herramientas de depuración (**Ctrl** + **Mayús**  +  **F5**) para volver a compilar el código y reiniciar.
@@ -265,8 +264,8 @@ A continuación, crearemos una aplicación que tiene algunos errores.
     La aplicación se ejecuta y muestra el resultado. Ahora tiene bastante buen aspecto, pero tenga en cuenta una cosa; esperaba que la galaxia Pequeña Nube de Magallanes apareciese como una galaxia irregular en la salida de consola, pero no muestra ningún tipo de galaxia en absoluto.
 
     ```
-    Tadpole  400,  Spiral 
-    Pinwheel  25,  Spiral 
+    Tadpole  400,  Spiral
+    Pinwheel  25,  Spiral
     Cartwheel, 500,  Lenticular
     Small Magellanic Cloud .2,
     Andromeda  3,  Spiral
@@ -283,7 +282,7 @@ A continuación, crearemos una aplicación que tiene algunos errores.
 
 1. Haga clic en el botón **Reiniciar** ![Reiniciar aplicación](../debugger/media/dbg-tour-restart.png "RestartApp") de la barra de herramientas de depuración (**Ctrl** + **Mayús**  +  **F5**) para reiniciar.
 
-    El depurador se detiene en la línea de código en la que estableció el punto de interrupción.  
+    El depurador se detiene en la línea de código en la que estableció el punto de interrupción.
 
 1. Mantenga el mouse sobre la variable `type`. Ve un valor de `S` (siguiendo el código de carácter). Le interesa un valor de `I`, dado que usted sabe que es un tipo de galaxia irregular.
 
@@ -323,7 +322,7 @@ Cuando encuentre la región de código con el problema, utilice el depurador par
 * Compruebe si la aplicación está ejecutando el código que espera. (Por ejemplo, en la aplicación de ejemplo, se esperaba que el código de la instrucción de conmutador estableciese el tipo de galaxia en irregular, pero la aplicación omitió el código debido al error de escritura).
 
 > [!TIP]
-> Use un depurador para ayudarle a encontrar errores. Una herramienta de depuración puede encontrar errores *automáticamente* solo si conoce la intención del código. Una herramienta solo puede saber la intención del código si usted, la persona que desarrolla, expresa dicha intención. Puede hacerlo escribiendo [pruebas unitarias](../test/improve-code-quality.md). 
+> Use un depurador para ayudarle a encontrar errores. Una herramienta de depuración puede encontrar errores *automáticamente* solo si conoce la intención del código. Una herramienta solo puede saber la intención del código si usted, la persona que desarrolla, expresa dicha intención. Puede hacerlo escribiendo [pruebas unitarias](../test/improve-code-quality.md).
 
 ## <a name="next-steps"></a>Pasos siguientes
 

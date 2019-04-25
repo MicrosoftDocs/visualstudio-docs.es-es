@@ -1,14 +1,9 @@
 ---
 title: Jerarquía de llamadas | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.CallHierarchy
 helpviewer_keywords:
@@ -17,18 +12,17 @@ ms.assetid: c55bda01-d7de-4823-8f9a-1bcc37dbb74a
 caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 86cf4e12f412e6448f4a4b7c38af8268f10d9c56
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 751b894e46fa6c76f866ddd3209d25c169ff6660
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49851131"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649412"
 ---
 # <a name="call-hierarchy"></a>Jerarquía de llamadas
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 La jerarquía de llamadas le permite navegar por el código al mostrar todas las llamadas a y desde un constructor, una propiedad o un método seleccionados. Esto le permite comprender mejor cómo fluye el código y evaluar los efectos de los cambios en el código. Puede examinar varios niveles de código para ver cadenas complejas de llamadas de métodos y puntos de entrada adicionales al código, lo que le permite explorar todas las posibles rutas de acceso de ejecución.  
   
  La jerarquía de llamadas está disponible en tiempo de diseño, a diferencia de la pila de llamadas mostrada por el depurador.  
@@ -74,6 +68,3 @@ Ventana Jerarquía de llamadas
 |**Buscar todas las referencias**|Ejecuta el comando Buscar todas las referencias en el nodo seleccionado. De esta forma, busca todas las líneas de código en el proyecto que hacen referencia a una clase o un miembro.<br /><br /> También puede usar MAYÚS+F12 para ejecutar el comando Buscar todas las referencias en el nodo seleccionado.|  
 |**Copiar**|Copia el contenido del nodo seleccionado (pero no sus subnodos).|  
 |**Actualizar**|Contrae el nodo seleccionado para que, al volver a expandirlo, se muestre la información actual.|
-
-
-

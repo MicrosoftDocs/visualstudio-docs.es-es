@@ -1,7 +1,6 @@
 ---
 title: Panel Publicar, Diseñador de proyectos
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - Microsoft.VisualStudio.Publish.ClickOnceProvider.Dialog.PropertyPage
@@ -10,15 +9,15 @@ helpviewer_keywords:
 - Publish page in Project Designer
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d8ff0600efbb591e8646c5369aa255e7ce153b3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 00202ab13001a56d472027d538bc5560f936ef93
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53911421"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55909354"
 ---
 # <a name="publish-page-project-designer"></a>Panel Publicar, Diseñador de proyectos
 La página **Publicar** del **Diseñador de proyectos** se utiliza para configurar las propiedades para la implementación de ClickOnce.

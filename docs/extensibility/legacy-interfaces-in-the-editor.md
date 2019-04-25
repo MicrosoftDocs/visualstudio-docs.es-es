@@ -7,20 +7,20 @@ helpviewer_keywords:
 ms.assetid: 741d45f5-0ea3-4614-972a-8728fe054e07
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 340156463d2c4ec194ed70c0c8d74232574917ee
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 044bf36845be70290291b79dee255c452f56f0a0
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53842650"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56694418"
 ---
 # <a name="legacy-interfaces-in-the-editor"></a>Interfaces heredadas en el editor
-El editor de Visual Studio puede tener acceso desde las interfaces heredadas. El SDK de Visual Studio incluye los adaptadores que se conoce como *las correcciones de compatibilidad*, que permiten estas interfaces interactuar con el nuevo editor. No obstante, se recomienda que actualice el código heredado para usar el nuevo editor de API. El código funcionará mejor y puede usar las nuevas tecnologías como Windows Presentation Foundation (WPF) y Managed Extensibility Framework (MEF).  
+El editor de Visual Studio puede tener acceso desde las interfaces heredadas. El SDK de Visual Studio incluye los adaptadores que se conoce como *las correcciones de compatibilidad*, que permiten estas interfaces interactuar con el nuevo editor. No obstante, se recomienda que actualice el código heredado para usar el nuevo editor de API. El código funcionará mejor y puede usar las nuevas tecnologías como Windows Presentation Foundation (WPF) y Managed Extensibility Framework (MEF).
 
-## <a name="related-topics"></a>Temas relacionados  
+## <a name="related-topics"></a>Temas relacionados
 
 | Título | Descripción |
 | - | - |

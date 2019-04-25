@@ -2,22 +2,21 @@
 title: Paso 1 del tutorial de Python en Visual Studio, Creación de un proyecto
 titleSuffix: ''
 description: Información general y paso 1 de un tutorial básico de las funcionalidades de Python en Visual Studio, incluidos los requisitos previos y la creación de un proyecto de Python.
-ms.date: 10/29/2018
-ms.prod: visual-studio-dev15
+ms.date: 01/28/2019
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2741d98eff02fd17be67213ab1069bdd43476475
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ed4fdbfe7090a66d955461f2c3a394f6fb661c5a
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53916051"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366294"
 ---
 # <a name="tutorial-work-with-python-in-visual-studio"></a>Tutorial: Uso de Python en Visual Studio
 
@@ -61,7 +60,7 @@ En este tutorial, empezará con un proyecto simple que contiene un único archiv
 
     (1) El proyecto está resaltado en negrita. Tiene el nombre que le ha asignado en el cuadro de diálogo **Nuevo proyecto**. En el disco, este proyecto se representa mediante un archivo *.pyproj* en la carpeta del proyecto.
 
-    (2) En el nivel superior se encuentra una *solución*, que de forma predeterminada tiene el mismo nombre que el proyecto. Una solución, representada por un archivo *.sln* en el disco, es un contenedor para uno o más proyectos relacionados. Por ejemplo, si escribe una extensión de C++ para la aplicación de Python, ese proyecto de C++ puede residir dentro de la misma solución. La solución también podría contener un proyecto para un servicio web, junto con proyectos para programas de prueba dedicados. 
+    (2) En el nivel superior se encuentra una *solución*, que de forma predeterminada tiene el mismo nombre que el proyecto. Una solución, representada por un archivo *.sln* en el disco, es un contenedor para uno o más proyectos relacionados. Por ejemplo, si escribe una extensión de C++ para la aplicación de Python, ese proyecto de C++ puede residir dentro de la misma solución. La solución también podría contener un proyecto para un servicio web, junto con proyectos para programas de prueba dedicados.
 
     (3) Bajo el proyecto verá los archivos de código fuente, en este caso, un solo archivo *.py*. Al seleccionar un archivo, se muestran sus propiedades en la ventana **Propiedades**. Si hace doble clic en un archivo, se abrirá de la manera más adecuada.
 
@@ -72,12 +71,10 @@ En este tutorial, empezará con un proyecto simple que contiene un único archiv
 ## <a name="next-step"></a>Paso siguiente
 
 > [!div class="nextstepaction"]
-> [Escribir y ejecutar código](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)
+> [Escritura y ejecución de código](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)
 
 ## <a name="go-deeper"></a>Profundizar un poco más
 
 - [Proyectos de Python en Visual Studio](managing-python-projects-in-visual-studio.md).
 - [Obtenga información sobre el lenguaje Python en python.org](https://www.python.org)
 - [Python para principiantes](https://www.python.org/about/gettingstarted/) (python.org)
-- [Cursos gratuitos de Python en Microsoft Virtual Academy](https://mva.microsoft.com/search/SearchResults.aspx#!q=python)
-- [Preguntas principales de Python en Microsoft Virtual Academy](https://aka.ms/mva-top-python-questions)

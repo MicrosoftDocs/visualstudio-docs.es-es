@@ -221,16 +221,15 @@ helpviewer_keywords:
 ms.assetid: 357c9f0a-9d59-4db4-9b7c-b96cad839961
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: a02b82fbd3f32c2174d571ff923b8a219a66c9b6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9867f9b595937e0ae8586aabdba180f4b1d8d359
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53932725"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55917069"
 ---
 # <a name="troubleshoot-data-access-errors-on-the-forums"></a>Solución de problemas de errores de acceso de datos en los foros
 

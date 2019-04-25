@@ -1,19 +1,18 @@
 ---
 title: Datos de diagnóstico y registros generados por el sistema
 ms.date: 05/24/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: gewarren
 ms.author: michma
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 873d0be0e1efee220e0a702fc537beace1d7aa32
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0f92e899ff8e56c68fcf1a4ab639d027c139afcf
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53824517"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62557403"
 ---
 # <a name="system-generated-logs-collected-by-visual-studio"></a>Registros generados por el sistema recopilados por Visual Studio
 

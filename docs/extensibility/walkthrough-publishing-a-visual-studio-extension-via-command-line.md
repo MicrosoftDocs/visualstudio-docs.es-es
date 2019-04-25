@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 6ff9efc4-919d-4071-a80d-6dbdd2ceb2f8
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cb35365220ade512defc180b06e46b95999dfa7b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a2d68554ed982313e631938401f855a47dd9a35a
+ms.sourcegitcommit: 4c7a0c2d712eb24609216577a793e912a6083eaf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53857220"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983382"
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension-via-command-line"></a>Tutorial: Publicación de una extensión de Visual Studio a través de la línea de comandos
 
@@ -34,14 +34,14 @@ Publica una extensión en Marketplace. La extensión puede ser un archivo vsix, 
 |---------|---------|
 |carga (obligatorio) | Ser una ruta de acceso a la carga para publicar o un vínculo que se usará como la "URL de información adicional". |
 |publishManifest (obligatorio) | Ruta de acceso a la publicación del manifiesto archivo que se usará. |
-|ignoreWarnings | Lista de advertencias para pasar por alto al publicar una extensión. Estas advertencias se muestran como mensajes de la línea de comandos al publicar una extensión. (por ejemplo, "VSIXValidatorWarning01, VSIXValidatorWarning02")  
+|ignoreWarnings | Lista de advertencias para pasar por alto al publicar una extensión. Estas advertencias se muestran como mensajes de la línea de comandos al publicar una extensión. (por ejemplo, "VSIXValidatorWarning01, VSIXValidatorWarning02")
 |personalAccessToken | Personal Access Token (PAT) que se usa para autenticar el publicador. Si no se proporciona, se adquiere el PAT de los usuarios que ha iniciado sesión. |
 
 ```
 VsixPublisher.exe publish -payload "{path to vsix}" -publishManifest "{path to vs-publish.json}" -ignoreWarnings "VSIXValidatorWarning01,VSIXValidatorWarning02"
 ```
 
-### <a name="createpublisher"></a>CreatePublisher para
+### <a name="createpublisher"></a>createPublisher
 
 Crea un publicador en Marketplace. También registra el publicador en la máquina para las futuras acciones (por ejemplo, una extensión de eliminación y publicación).
 
@@ -90,9 +90,9 @@ Registra un publicador en el equipo.
 
 |Opciones de comando |Descripción |
 |---------|---------|
-|personalAccessToken (obligatorio | Token de acceso personal que se usa para autenticar el publicador. |
+|personalAccessToken (required | Token de acceso personal que se usa para autenticar el publicador. |
 |publisherName (obligatorio) | El nombre del publicador (por ejemplo, el identificador). |
-|Sobrescribir | Especifica que se debe sobrescribir cualquier publicador existente con el nuevo token de acceso personal. |
+|overwrite | Especifica que se debe sobrescribir cualquier publicador existente con el nuevo token de acceso personal. |
 
 ```
 VsixPublisher.exe login -personalAccessToken "{Personal Access Token}" -publisherName "{Publisher Name}"
@@ -290,7 +290,7 @@ Puede quitar la extensión de Visual Studio Marketplace y de su equipo.
 
 ### <a name="to-remove-the-extension-from-your-computer"></a>Para quitar la extensión de su equipo
 
-1. En Visual Studio, en el **herramientas** menú, haga clic en **extensiones y actualizaciones...** .
+1. En Visual Studio, en el **herramientas** menú, haga clic en **extensiones y actualizaciones**.
 
 2. Seleccione "MyVsixExtension" y, a continuación, haga clic en **desinstalar**. A continuación, se programará la extensión para la desinstalación.
 

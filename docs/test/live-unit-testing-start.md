@@ -1,7 +1,6 @@
 ---
-title: Más información sobre cómo probar el código con Live Unit Test 2017 | Microsoft Docs
+title: Más información sobre cómo probar el código con Live Unit Test
 ms.date: 08/31/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio ALM
@@ -10,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6b96faf4ec1daa80bdd6d97e623fd0e155a39325
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 59e8206bd1110a06c8b94b71ac9da8253a3a4b25
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942192"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416311"
 ---
 # <a name="get-started-with-live-unit-testing-in-visual-studio"></a>Comenzar a utilizar Live Unit Testing en Visual Studio
 
@@ -24,47 +23,72 @@ Al habilitar Live Unit Testing en una solución de Visual Studio, Live Unit Test
 Live Unit Testing puede utilizarse para probar soluciones que tienen como destino .NET Framework o .NET Core. En este tutorial, obtendrá información sobre cómo utilizar Live Unit Testing mediante la creación de una biblioteca de clases sencilla que tiene como destino .NET Standard y podrá crear un proyecto de MSTest, cuyo destino es .NET Core, para probarlo.
 
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
+
 La solución completa de C# puede descargarse desde el repositorio [MicrosoftDocs/visualstudio-docs](https://github.com/MicrosoftDocs/visualstudio-docs/tree/master/docs/test/samples/csharp/UtilityLibraries/) en GitHub.
-# <a name="visual-basictabvisual-basic"></a>[Visual Basic](#tab/visual-basic)
+
+# <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
+
 La solución completa de Visual Basic puede descargarse desde el repositorio [MicrosoftDocs/visualstudio-docs](https://github.com/MicrosoftDocs/visualstudio-docs/tree/master/docs/test/samples/visual-basic/UtilityLibraries/) en GitHub.
 
 ---
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-Para completar este tutorial, debe haber instalado la versión 15.3 de Visual Studio 2017 Enterprise Edition con la carga de trabajo de .NET Core 2.0.
+Este tutorial exige la instalación previa de Visual Studio Enterprise Edition con la carga de trabajo de .NET Core 2.0.
 
 ## <a name="create-the-solution-and-the-class-library-project"></a>Creación de la solución y del proyecto de biblioteca de clases
 
 Empiece por crear una solución de Visual Studio denominada `UtilityLibraries`, que consta de un solo proyecto de biblioteca de clases de .NET Standard, `StringLibrary`. Puede escribir `StringLibrary` en C# o Visual Basic.
 
-La solución es simplemente un contenedor para uno o varios proyectos. Para crear la solución, abra Visual Studio 2017 y haga lo siguiente:
+La solución es simplemente un contenedor para uno o varios proyectos. Para crear una solución en blanco, abra Visual Studio y haga lo siguiente:
 
 1. Seleccione **Archivo** > **Nuevo** > **Proyecto** en el menú de nivel superior de Visual Studio.
 
-1. En el cuadro de diálogo **Nuevo proyecto**, expanda el nodo **Otros tipos de proyectos** y seleccione **Soluciones de Visual Studio**. Seleccione la plantilla **Solución en blanco** en el panel derecho y escriba `UtilityLibraries` en el cuadro de texto **Nombre**, como se muestra en la figura siguiente:
+1. Escriba **solución** en el cuadro de búsqueda de la plantilla y luego seleccione la plantilla **Solución en blanco**.
+
+   ::: moniker range="vs-2017"
 
    ![Cuadro de diálogo **Nuevo proyecto**](./media/lut-start/new-solution.png)
 
-1. Seleccione **Aceptar** para crear la solución.
+   ::: moniker-end
+
+1. Termine de crear la solución.
 
 Ahora que ha creado la solución, podrá crear una biblioteca de clases denominada `StringLibrary`, que contiene una serie de métodos de extensión para trabajar con cadenas.
 
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
+
 1. En el **Explorador de soluciones**, haga clic con el botón derecho en la solución `UtilityLibraries` y seleccione **Agregar** > **Nuevo proyecto**.
 
-1. En el cuadro de diálogo **Agregar nuevo proyecto**, seleccione el nodo de C# y, después, **.NET Standard**.
+::: moniker range="vs-2017"
+
+2. En el cuadro de diálogo **Agregar nuevo proyecto**, seleccione el nodo de C# y, después, **.NET Standard**.
 
    > [!NOTE]
    > Debido a que nuestra biblioteca tiene como destino .NET Standard en lugar de una implementación concreta de .NET, se puede llamar desde cualquier implementación de .NET que admita esa versión de .NET Standard. Para más información, consulte [.NET Standard](/dotnet/standard/net-standard).
 
-1. Seleccione la plantilla **Biblioteca de clases (.NET Standard)** en el panel derecho y escriba `StringLibrary` en el cuadro de texto **Nombre**, como se muestra en la figura siguiente:
+3. Seleccione la plantilla **Biblioteca de clases (.NET Standard)** en el panel derecho y escriba `StringLibrary` en el cuadro de texto **Nombre**, como se muestra en la figura siguiente:
 
    ![Cuadro de diálogo **Agregar nuevo proyecto**](./media/lut-start/add-project-cs.png)
 
-1. Seleccione **Aceptar** para crear el proyecto.
+4. Seleccione **Aceptar** para crear el proyecto.
 
-1. Reemplace el código existente en la ventana de código por el código siguiente:
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+2. Escriba **biblioteca de clases** en el cuadro de búsqueda de la plantilla y seleccione la plantilla **Biblioteca de clases (.NET Standard)**. Haga clic en **Siguiente**.
+
+   > [!NOTE]
+   > Debido a que nuestra biblioteca tiene como destino .NET Standard en lugar de una implementación concreta de .NET, se puede llamar desde cualquier implementación de .NET que admita esa versión de .NET Standard. Para más información, consulte [.NET Standard](/dotnet/standard/net-standard).
+
+3. Dé un nombre al proyecto `StringLibrary`.
+
+4. Haga clic en **Crear** para crear el proyecto.
+
+::: moniker-end
+
+5. Reemplace el código existente en la ventana de código por el código siguiente:
 
    [!code-csharp[StringLibrary source code](samples/csharp/utilitylibraries/stringlibrary/class1.cs)]
 
@@ -76,23 +100,41 @@ Ahora que ha creado la solución, podrá crear una biblioteca de clases denomina
 
       - `HasEmbeddedSpaces` devuelve `true` si una cadena contiene un espacio en blanco insertado; en caso contrario, devuelve `false`.
 
-1.  Seleccione **Compilar** > **Compilar solución** en el menú de nivel superior de Visual Studio. Visual Studio compilará correctamente la biblioteca.
+6. Seleccione **Compilar** > **Compilar solución** en el menú de nivel superior de Visual Studio. Visual Studio compilará correctamente la biblioteca.
 
-# <a name="visual-basictabvisual-basic"></a>[Visual Basic](#tab/visual-basic)
+# <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
+
 1. En el **Explorador de soluciones**, haga clic con el botón derecho en la solución `UtilityLibraries` y seleccione **Agregar** > **Nuevo proyecto**.
 
-1. En el cuadro de diálogo **Agregar nuevo proyecto**, seleccione el nodo de Visual Basic y, después, **.NET Standard**.
+::: moniker range="vs-2017"
+
+2. En el cuadro de diálogo **Agregar nuevo proyecto**, seleccione el nodo de Visual Basic y, después, **.NET Standard**.
 
    > [!NOTE]
    > Debido a que nuestra biblioteca tiene como destino .NET Standard en lugar de una implementación concreta de .NET, se puede llamar desde cualquier implementación de .NET que admita esa versión de .NET Standard. Para más información, consulte [.NET Standard](/dotnet/standard/net-standard).
 
-1. Seleccione la plantilla **Biblioteca de clases (.NET Standard)** en el panel derecho y escriba `StringLibrary` en el cuadro de texto **Nombre**, como se muestra en la figura siguiente:
+3. Seleccione la plantilla **Biblioteca de clases (.NET Standard)** en el panel derecho y escriba `StringLibrary` en el cuadro de texto **Nombre**, como se muestra en la figura siguiente:
 
    ![Cuadro de diálogo **Agregar nuevo proyecto**](./media/lut-start/add-project-vb.png)
 
-1. Seleccione **Aceptar** para crear el proyecto.
+4. Seleccione **Aceptar** para crear el proyecto.
 
-1. Reemplace el código existente en la ventana de código por el código siguiente:
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+2. Escriba **biblioteca de clases** en el cuadro de búsqueda de la plantilla y seleccione la plantilla **Biblioteca de clases (.NET Standard)**. Haga clic en **Siguiente**.
+
+   > [!NOTE]
+   > Debido a que nuestra biblioteca tiene como destino .NET Standard en lugar de una implementación concreta de .NET, se puede llamar desde cualquier implementación de .NET que admita esa versión de .NET Standard. Para más información, consulte [.NET Standard](/dotnet/standard/net-standard).
+
+3. Dé un nombre al proyecto `StringLibrary`.
+
+4. Haga clic en **Crear** para crear el proyecto.
+
+::: moniker-end
+
+5. Reemplace el código existente en la ventana de código por el código siguiente:
 
    [!code-vb[StringLibrary source code](samples/visual-basic/utilitylibraries/stringlibrary/class1.vb)]
 
@@ -104,11 +146,11 @@ Ahora que ha creado la solución, podrá crear una biblioteca de clases denomina
 
       - `HasEmbeddedSpaces` devuelve `true` si una cadena contiene un espacio en blanco insertado; en caso contrario, devuelve `false`.
 
-1. En el **Explorador de soluciones**, haga clic con el botón derecho en el proyecto StringLibrary y seleccione **Propiedades**. En la pestaña **Aplicación**, elimine el texto del cuadro de texto **Espacio de nombres raíz**, como se muestra en la figura siguiente. El espacio de nombres raíz se define mediante la [instrucción Namespace](/dotnet/visual-basic/language-reference/statements/namespace-statement) en el código fuente.
+6. En el **Explorador de soluciones**, haga clic con el botón derecho en el proyecto StringLibrary y seleccione **Propiedades**. En la pestaña **Aplicación**, elimine el texto del cuadro de texto **Espacio de nombres raíz**, como se muestra en la figura siguiente. El espacio de nombres raíz se define mediante la [instrucción Namespace](/dotnet/visual-basic/language-reference/statements/namespace-statement) en el código fuente.
 
    ![Cuadro de diálogo Propiedades del proyecto para un proyecto de Visual Basic](./media/lut-start/vb-properties.png)
 
-1.  Seleccione **Compilar** > **Compilar solución** en el menú de nivel superior de Visual Studio. Visual Studio compilará correctamente la biblioteca.
+7. Seleccione **Compilar** > **Compilar solución** en el menú de nivel superior de Visual Studio. Visual Studio compilará correctamente la biblioteca.
 
 ---
 
@@ -117,79 +159,108 @@ Ahora que ha creado la solución, podrá crear una biblioteca de clases denomina
 El paso siguiente consiste en crear el proyecto de prueba unitaria para probar la biblioteca de `StringLibrary`. Siga estos pasos para crear las pruebas unitarias:
 
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
+
 1. En el **Explorador de soluciones**, haga clic con el botón derecho en la solución `UtilityLibraries` y seleccione **Agregar** > **Nuevo proyecto**.
 
-1. En el cuadro de diálogo **Agregar nuevo proyecto**, seleccione el nodo de C# y, después, **.NET Core**.
+::: moniker range="vs-2017"
+
+2. En el cuadro de diálogo **Agregar nuevo proyecto**, seleccione el nodo de C# y, después, **.NET Core**.
 
    > [!NOTE]
    > No es necesario escribir las pruebas unitarias en el mismo lenguaje que el de la biblioteca de clases.
 
-1. Seleccione la plantilla **Proyecto de prueba unitaria (.NET Core)** en el panel derecho y escriba `StringLibraryTests` en el cuadro de texto **Nombre**, como se muestra en la figura siguiente:
+3. Seleccione la plantilla **Proyecto de prueba unitaria (.NET Core)** en el panel derecho y escriba `StringLibraryTests` en el cuadro de texto **Nombre**, como se muestra en la figura siguiente:
 
    ![Cuadro de diálogo **Agregar nuevo proyecto** para el proyecto de prueba unitaria](./media/lut-start/add-unit-test-cs.png)
 
-1. Seleccione **Aceptar** para crear el proyecto.
+4. Seleccione **Aceptar** para crear el proyecto.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+2. Escriba **prueba unitaria** en el cuadro de búsqueda de la plantilla y seleccione la plantilla **Proyecto de prueba unitaria (.NET Core)**. Haga clic en **Siguiente**.
+
+3. Dé un nombre al proyecto `StringLibraryTests`.
+
+4. Haga clic en **Crear** para crear el proyecto.
+
+::: moniker-end
 
    > [!NOTE]
    > En este tutorial de introducción, Live Unit Testing se utiliza con el marco de pruebas de MSTest. También puede usar los marcos de pruebas de xUnit y NUnit.
 
-1. El proyecto de prueba unitaria no puede acceder automáticamente a la biblioteca de clases que está probando. Para conceder acceso a la biblioteca de prueba, agregue una referencia al proyecto de biblioteca de clases. Para ello, haga clic con el botón derecho en el proyecto `StringLibraryTests` y seleccione **Agregar** > **Referencia**. En el cuadro de diálogo **Administrador de referencias**, asegúrese de que la pestaña **Solución** esté seleccionada y elija el proyecto `StringLibrary`, como se muestra en la figura siguiente.
+5. El proyecto de prueba unitaria no puede acceder automáticamente a la biblioteca de clases que está probando. Para conceder acceso a la biblioteca de prueba, agregue una referencia al proyecto de biblioteca de clases. Para ello, haga clic con el botón derecho en el proyecto `StringLibraryTests` y seleccione **Agregar** > **Referencia**. En el cuadro de diálogo **Administrador de referencias**, asegúrese de que la pestaña **Solución** esté seleccionada y elija el proyecto `StringLibrary`, como se muestra en la figura siguiente.
 
    ![Cuadro de diálogo **Administrador de referencias**](./media/lut-start/add-reference.png)
 
-1. Reemplace el código de prueba unitaria reutilizable que proporciona la plantilla por el código siguiente:
+6. Reemplace el código de prueba unitaria reutilizable que proporciona la plantilla por el código siguiente:
 
    [!code-csharp[StringLibraryTest source code](samples/snippets/csharp/lut-start/unittest1.cs)]
 
-1. Guarde el proyecto seleccionando el icono **Guardar** de la barra de herramientas.
+7. Guarde el proyecto seleccionando el icono **Guardar** de la barra de herramientas.
 
-1. Dado que el código de prueba unitaria incluye algunos caracteres no ASCII, Visual Studio muestra el siguiente cuadro de diálogo para advertir de que algunos caracteres se perderán si guardamos el archivo en el formato ASCII predeterminado. Elija el botón **Guardar con otra codificación**.
+8. Dado que el código de prueba unitaria incluye algunos caracteres no ASCII, Visual Studio muestra el siguiente cuadro de diálogo para advertir de que algunos caracteres se perderán si guardamos el archivo en el formato ASCII predeterminado. Elija el botón **Guardar con otra codificación**.
 
    ![Elegir una codificación de archivos](media/lut-start/ascii-encoding.png)
 
-1. En la lista desplegable **Codificación** del cuadro de diálogo **Opciones avanzadas para guardar**, elija **Unicode (UTF-8 sin signatura) - Página de códigos 65001**, como se muestra en esta figura:
+9. En la lista desplegable **Codificación** del cuadro de diálogo **Opciones avanzadas para guardar**, elija **Unicode (UTF-8 sin signatura) - Página de códigos 65001**, como se muestra en esta figura:
 
    ![Elegir la codificación UTF-8](media/lut-start/utf8-encoding.png)
 
-1. Para compilar el proyecto de prueba unitaria, seleccione **Compilar** > **Recompilar solución** en el menú de nivel superior de Visual Studio.
+10. Para compilar el proyecto de prueba unitaria, seleccione **Compilar** > **Recompilar solución** en el menú de nivel superior de Visual Studio.
 
-# <a name="visual-basictabvisual-basic"></a>[Visual Basic](#tab/visual-basic)
+# <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
 
 1. En el **Explorador de soluciones**, haga clic con el botón derecho en la solución `UtilityLibraries` y seleccione **Agregar** > **Nuevo proyecto**.
 
-1. En el cuadro de diálogo **Agregar nuevo proyecto**, seleccione el nodo de Visual Basic y, después, **.NET Core**.
+::: moniker range="vs-2017"
+
+2. En el cuadro de diálogo **Agregar nuevo proyecto**, seleccione el nodo de Visual Basic y, después, **.NET Core**.
 
    > [!NOTE]
    > No es necesario escribir las pruebas unitarias en el mismo lenguaje que el de la biblioteca de clases.
 
-1. Seleccione la plantilla **Proyecto de prueba unitaria (.NET Core)** en el panel derecho y escriba `StringLibraryTests` en el cuadro de texto **Nombre**, como se muestra en la figura siguiente:
+3. Seleccione la plantilla **Proyecto de prueba unitaria (.NET Core)** en el panel derecho y escriba `StringLibraryTests` en el cuadro de texto **Nombre**, como se muestra en la figura siguiente:
 
    ![Cuadro de diálogo **Agregar nuevo proyecto** para la prueba unitaria](./media/lut-start/add-unit-test-vb.png)
 
-1. Seleccione **Aceptar** para crear el proyecto.
+4. Seleccione **Aceptar** para crear el proyecto.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+2. Escriba **prueba unitaria** en el cuadro de búsqueda de la plantilla y seleccione la plantilla **Proyecto de prueba unitaria (.NET Core)**. Haga clic en **Siguiente**.
+
+3. Dé un nombre al proyecto `StringLibraryTests`.
+
+4. Haga clic en **Crear** para crear el proyecto.
+
+::: moniker-end
 
    > [!NOTE]
    > En este tutorial de introducción, Live Unit Testing se utiliza con el marco de pruebas de MSTest. También puede usar los marcos de pruebas de xUnit y NUnit.
 
-1. El proyecto de prueba unitaria no puede acceder automáticamente a la biblioteca de clases que está probando. Para conceder acceso a la biblioteca de prueba, agregue una referencia al proyecto de biblioteca de clases. Para ello, haga clic con el botón derecho en el proyecto `StringLibraryTests` y seleccione **Agregar** > **Referencia**. En el cuadro de diálogo **Administrador de referencias**, asegúrese de que la pestaña **Solución** esté seleccionada y elija el proyecto `StringLibrary`, como se muestra en la figura siguiente.
+5. El proyecto de prueba unitaria no puede acceder automáticamente a la biblioteca de clases que está probando. Para conceder acceso a la biblioteca de prueba, agregue una referencia al proyecto de biblioteca de clases. Para ello, haga clic con el botón derecho en el proyecto `StringLibraryTests` y seleccione **Agregar** > **Referencia**. En el cuadro de diálogo **Administrador de referencias**, asegúrese de que la pestaña **Solución** esté seleccionada y elija el proyecto `StringLibrary`, como se muestra en la figura siguiente.
 
    ![Cuadro de diálogo **Administrador de referencias**](./media/lut-start/add-reference.png)
 
-1. Reemplace el código de prueba unitaria reutilizable que proporciona la plantilla por el código siguiente:
+6. Reemplace el código de prueba unitaria reutilizable que proporciona la plantilla por el código siguiente:
 
    [!code-vb[StringLibraryTest source code](samples/snippets/visual-basic/lut-start/unittest1.vb)]
 
-1. Guarde el proyecto seleccionando el icono **Guardar** de la barra de herramientas.
+7. Guarde el proyecto seleccionando el icono **Guardar** de la barra de herramientas.
 
-1. Dado que el código de prueba unitaria incluye algunos caracteres no ASCII, Visual Studio muestra el siguiente cuadro de diálogo para advertir de que algunos caracteres se perderán si guardamos el archivo en el formato ASCII predeterminado. Elija el botón **Guardar con otra codificación**.
+8. Dado que el código de prueba unitaria incluye algunos caracteres no ASCII, Visual Studio muestra el siguiente cuadro de diálogo para advertir de que algunos caracteres se perderán si guardamos el archivo en el formato ASCII predeterminado. Elija el botón **Guardar con otra codificación**.
 
    ![Elegir una codificación de archivos](media/lut-start/ascii-encoding.png)
 
-1. En la lista desplegable **Codificación** del cuadro de diálogo **Opciones avanzadas para guardar**, elija **Unicode (UTF-8 sin signatura) - Página de códigos 65001**, como se muestra en esta figura:
+9. En la lista desplegable **Codificación** del cuadro de diálogo **Opciones avanzadas para guardar**, elija **Unicode (UTF-8 sin signatura) - Página de códigos 65001**, como se muestra en esta figura:
 
    ![Elegir la codificación UTF-8](media/lut-start/utf8-encoding.png)
 
-1. Para compilar el proyecto de prueba unitaria, seleccione **Compilar** > **Recompilar solución** en el menú de nivel superior de Visual Studio.
+10. Para compilar el proyecto de prueba unitaria, seleccione **Compilar** > **Recompilar solución** en el menú de nivel superior de Visual Studio.
 
 ---
 
@@ -208,9 +279,11 @@ Hasta ahora, aunque ha escrito las pruebas para la biblioteca de clases `StringL
 Cuando acaba de ejecutar las pruebas, el **Explorador de pruebas** muestra los resultados globales y el resultado de las pruebas individuales. Además, la ventana de código muestra gráficamente la cobertura de código de prueba y el resultado de las pruebas. Como se muestra en la figura siguiente, las tres pruebas se han ejecutado correctamente. También muestra que nuestras pruebas han cubierto todas las rutas de acceso de código en el método `StartsWithUpper` y que esas pruebas se han ejecutado correctamente (lo que se indica mediante la marca de verificación de color verde, "✓"). Por último, muestra que ninguno de los otros métodos de `StringLibrary` tiene cobertura de código (lo que se indica mediante una línea azul, "➖").
 
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
+
 ![Explorador de pruebas y ventana de código después de iniciar Live Unit Testing](media/lut-start/lut-results-cs.png)
 
-# <a name="visual-basictabvisual-basic"></a>[Visual Basic](#tab/visual-basic)
+# <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
+
 ![Explorador de pruebas y ventana de código después de iniciar Live Unit Testing](media/lut-start/lut-results-vb.png)
 
 ---
@@ -218,6 +291,7 @@ Cuando acaba de ejecutar las pruebas, el **Explorador de pruebas** muestra los r
 También puede obtener información más detallada sobre la cobertura y los resultados de las pruebas seleccionando un icono de cobertura de código determinado en la ventana de código. Para examinar este detalle, haga lo siguiente:
 
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
+
 1. Haga clic en la marca de verificación verde situada en la línea `if (String.IsNullOrWhiteSpace(s))` del método `StartsWithUpper`. Como se muestra en la figura siguiente, Live Unit Testing indica que las tres pruebas cubren esa línea de código y que todas se han ejecutado correctamente.
 
    ![Cobertura de código para la instrucción condicional "if"](media/lut-start/code-coverage-cs1.png)
@@ -226,7 +300,8 @@ También puede obtener información más detallada sobre la cobertura y los resu
 
    ![Cobertura de código para la instrucción Return](media/lut-start/code-coverage-cs2.png)
 
-# <a name="visual-basictabvisual-basic"></a>[Visual Basic](#tab/visual-basic)
+# <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
+
 1. Haga clic en la marca de verificación verde situada en la línea `If (String.IsNullOrWhiteSpace(s)) Then` del método `StartsWithUpper`. Como se muestra en la figura siguiente, Live Unit Testing indica que las tres pruebas cubren esa línea de código y que todas se han ejecutado correctamente.
 
    ![Cobertura de código para la instrucción condicional "If"](media/lut-start/code-coverage-vb1.png)
@@ -246,6 +321,7 @@ En esta sección, podrá ampliar las pruebas unitarias al método `StartsWithLow
 Para ampliar la cobertura de código al método `StartsWithLower`, haga lo siguiente:
 
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
+
 1. Agregue los métodos `TestStartsWithLower` y `TestDoesNotStartWithLower` al archivo de código fuente de prueba del proyecto:
 
     [!code-csharp[StringLibraryTest source code](samples/snippets/csharp/lut-start/unittest2.cs#1)]
@@ -262,7 +338,8 @@ Para ampliar la cobertura de código al método `StartsWithLower`, haga lo sigui
 
     ![Cobertura de código para el método StartsWithLower](media/lut-start/lut-extended-cs.png)
 
-# <a name="visual-basictabvisual-basic"></a>[Visual Basic](#tab/visual-basic)
+# <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
+
 1. Agregue los métodos `TestStartsWithLower` y `TestDoesNotStartWithLower` al archivo de código fuente de prueba del proyecto:
 
     [!code-vb[StringLibraryTest source code](samples/snippets/visual-basic/lut-start/unittest2.vb#1)]
@@ -290,6 +367,7 @@ Hasta ahora, todas nuestras pruebas se han realizado correctamente. En la siguie
 En esta sección, explorará cómo puede usar Live Unit Testing para identificar, solucionar y abordar los errores de pruebas. Para ello, debe expandir la cobertura de las pruebas al método `HasEmbeddedSpaces`.
 
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
+
 1. Agregue el método siguiente al archivo de prueba:
 
     [!code-csharp[The TestHasEmbeddedSpaces test method](samples/snippets/csharp/lut-start/unittest2.cs#3)]
@@ -322,7 +400,8 @@ En esta sección, explorará cómo puede usar Live Unit Testing para identificar
 
 1. Seleccione **Depurar** > **Continuar**, presione **F5** o haga clic en el botón **Continuar** de la barra de herramientas para continuar ejecutando el programa de prueba. La prueba ha finalizado porque se ha producido una excepción no controlada.
 
-# <a name="visual-basictabvisual-basic"></a>[Visual Basic](#tab/visual-basic)
+# <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
+
 1. Agregue el método siguiente al archivo de prueba:
 
     [!code-vb[The TestHasEmbeddedSpaces test method](samples/snippets/visual-basic/lut-start/unittest2.vb#3)]
@@ -360,6 +439,7 @@ En esta sección, explorará cómo puede usar Live Unit Testing para identificar
 Esto proporciona información suficiente para una investigación preliminar del error. `TestHasEmbeddedSpaces`, la rutina de prueba, ha realizado una suposición incorrecta, o bien `HasEmbeddedSpaces` no reconoce correctamente todos los espacios insertados. Para diagnosticar y corregir el problema, comience por el método `StringLibrary.HasEmbeddedSpaces`:
 
 # <a name="ctabcsharp"></a>[C#](#tab/csharp)
+
 1. Mire la comparación en el método `HasEmbeddedSpaces`. Considera que U+0020 es un espacio insertado. Sin embargo, el estándar Unicode incluye otros caracteres de espacio. Esto sugiere que el código de biblioteca ha probado incorrectamente la presencia de un carácter de espacio en blanco.
 
 1. Reemplace la comparación de igualdad por una llamada al método <xref:System.Char.IsWhiteSpace%2A?displayProperty=fullName>:
@@ -370,7 +450,8 @@ Esto proporciona información suficiente para una investigación preliminar del 
 
     ![Prueba HasEmbeddedSpaces correcta.](media/lut-start/test-success-cs.png)
 
-# <a name="visual-basictabvisual-basic"></a>[Visual Basic](#tab/visual-basic)
+# <a name="visual-basictabvb"></a>[Visual Basic](#tab/vb)
+
 1. Mire la comparación en el método `HasEmbeddedSpaces`. Considera que U+0020 es un espacio insertado. Sin embargo, el estándar Unicode incluye otros caracteres de espacio. Esto sugiere que el código de biblioteca ha probado incorrectamente la presencia de un carácter de espacio en blanco.
 
 1. Reemplace la comparación de igualdad por una llamada al método <xref:System.Char.IsWhiteSpace%2A?displayProperty=fullName>:
@@ -384,5 +465,6 @@ Esto proporciona información suficiente para una investigación preliminar del 
 ---
 
 ## <a name="see-also"></a>Vea también
+
 - [Live Unit Testing en Visual Studio](live-unit-testing.md)
 - [Preguntas más frecuentes sobre Live Unit Testing](live-unit-testing-faq.md)

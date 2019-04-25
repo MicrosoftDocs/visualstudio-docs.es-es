@@ -1,17 +1,16 @@
 ---
 title: Referencia de Team Explorer
 ms.date: 12/04/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
-ms.manager: douge
-ms.openlocfilehash: c4feda1f01e08807041efb9ae9b3d0bbe84d24b0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.manager: jillfra
+ms.openlocfilehash: 6a7c1e9d0f5e8b8ef48a033d58038818d2d620e5
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53840757"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222979"
 ---
 # <a name="team-explorer-reference"></a>Referencia de Team Explorer
 
@@ -34,7 +33,7 @@ La página **Inicio** tiene otras funciones en función de si está conectado a 
 
 | Página **Inicio** con Git | Página **Inicio** con TFVC |
 | - | - |
-| ![Página principal de Team Explorer con Git en Visual Studio 2019](media/team-explorer-reference/team-explorer-git.png) | ![Página principal de Team Explorer con TFVC en Visual Studio 2017](media/team-explorer-reference/team-explorer-tfvc.png) |
+| ![Página principal de Team Explorer con Git en Visual Studio 2019](media/team-explorer-reference/team-explorer-git.png) | ![Página principal de Team Explorer con TFVC en Visual Studio](media/team-explorer-reference/team-explorer-tfvc.png) |
 
 ## <a name="changes-page-git"></a>Página Cambios (Git)
 
@@ -80,8 +79,12 @@ La página **Elementos de trabajo** permite ver las consultas de [elemento de tr
 - [Email query results list using Outlook](/azure/devops/boards/queries/share-plans) (Envío por correo electrónico de los resultados de la consulta con Outlook).
 - [Create reports from query in Excel](/azure/devops/report/excel/create-status-and-trend-excel-reports) (Creación de informes a partir de una consulta en Excel) (solo TFS)
 
+::: moniker range=">= vs-2019"
+
 > [!NOTE]
-> Hay una nueva [experiencia de elementos de trabajo](/azure/devops/boards/work-items/set-work-item-experience-vs) en la versión preliminar 1 de Visual Studio 2019. Para obtener información sobre cómo ver los elementos de trabajo en la versión preliminar 1 de Visual Studio 2019, vea [View and add work items](/azure/devops/boards/work-items/view-add-work-items) (Visualización y adición de elementos de trabajo).
+> Hay una nueva [experiencia de elementos de trabajo](/azure/devops/boards/work-items/set-work-item-experience-vs) en Visual Studio 2019. Para obtener información sobre cómo ver los elementos de trabajo en Visual Studio 2019, vea [View and add work items](/azure/devops/boards/work-items/view-add-work-items) (Ver y agregar elementos de trabajo).
+
+::: moniker-end
 
 ## <a name="builds-page"></a>Página Compilaciones
 

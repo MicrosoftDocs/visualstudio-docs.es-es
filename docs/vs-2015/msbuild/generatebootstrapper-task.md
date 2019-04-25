@@ -1,14 +1,9 @@
 ---
 title: GenerateBootstrapper (Tarea) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#GenerateBootstrapper
 dev_langs:
@@ -23,18 +18,17 @@ ms.assetid: ca3ba2c6-d2ea-41f2-b7e3-0fc2b0730460
 caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c5c96c91a48e854c1619aa112bae5e1d84737765
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 488caf02a20b4f0855df1ba2ef64c85e70e1a6a4
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49811913"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668124"
 ---
 # <a name="generatebootstrapper-task"></a>GenerateBootstrapper (Tarea)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Proporciona una forma automatizada de detectar, descargar e instalar una aplicación y sus requisitos previos. Actúa como instalador único que integra los instaladores independientes de todos los componentes que forman una aplicación.  
   
 ## <a name="task-parameters"></a>Parámetros de tareas  
@@ -101,11 +95,11 @@ Proporciona una forma automatizada de detectar, descargar e instalar una aplicac
   
    Especifica una ubicación en que el programa previo va a buscar los requisitos previos de instalación que se deben instalar. Este parámetro puede tener los valores siguientes:  
   
-  - `HomeSite`: indica que el proveedor del componente hospeda el requisito previo.  
+  - `HomeSite`: Indica que el proveedor del componente hospeda el requisito previo.  
   
-  - `Relative`: indica que el requisito previo está en la misma ubicación de la aplicación.  
+  - `Relative`: Indica que el requisito previo está en la misma ubicación de la aplicación.  
   
-  - `Absolute`: indica que todos los componentes deben encontrarse en una dirección URL centralizada. Este valor debe utilizarse junto con el parámetro de entrada `ComponentsUrl`.  
+  - `Absolute`: Indica que todos los componentes deben encontrarse en una dirección URL centralizada. Este valor debe utilizarse junto con el parámetro de entrada `ComponentsUrl`.  
   
     Si `ComponentsLocation` no se especifica, `HomeSite` se utiliza de forma predeterminada.  
   
@@ -187,6 +181,3 @@ Proporciona una forma automatizada de detectar, descargar e instalar una aplicac
 ## <a name="see-also"></a>Vea también  
  [Tareas](../msbuild/msbuild-tasks.md)   
  [Referencia de tareas](../msbuild/msbuild-task-reference.md)
-
-
-

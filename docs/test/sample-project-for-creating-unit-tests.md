@@ -2,22 +2,21 @@
 title: Código de ejemplo para crear pruebas unitarias
 description: En este artículo se proporciona código de ejemplo que se puede probar con pruebas unitarias en Visual Studio.
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: sample
 helpviewer_keywords:
 - unit test sample [Visual Studio]
 - unit tests, samples
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b98e8fc926917d4da8bc805110f464ead24d405c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0b914101a98f3eb40c479a3a39556e7e4138504c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898952"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55929731"
 ---
 # <a name="sample-code-for-testing"></a>Código de ejemplo para pruebas
 

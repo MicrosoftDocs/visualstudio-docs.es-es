@@ -1,7 +1,6 @@
 ---
-title: Procedimiento Mostrar los números de línea en el editor
-ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
+title: Visualización de los números de línea del código
+ms.date: 03/28/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - line numbers, displaying
@@ -11,34 +10,30 @@ helpviewer_keywords:
 ms.assetid: 40b38559-b8de-4041-91f2-68986767c976
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b76ac306607dae5fbeaa015bf3f41eb787bf0f2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cd3c5d9c1d17bd8a0dae4969c7203902747a8c8b
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53882544"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647159"
 ---
-# <a name="how-to-display-line-numbers-in-the-editor"></a>Procedimiento Mostrar los números de línea en el editor
+# <a name="how-to-display-line-numbers-in-the-editor"></a>Procedimiento Visualización de los números de línea en el editor
 
 Puede mostrar u ocultar la numeración de las líneas del código.
 
-## <a name="display-line-numbers-in-code"></a>Para mostrar los números de línea en el código
+## <a name="display-line-numbers-in-code"></a>Visualización de los números de línea en el código
 
-Los números de línea no se agregan al código; solo sirven de referencia. Si quiere imprimir los números de línea, en el cuadro de diálogo **Imprimir**, active la casilla **Incluir números de línea**.
+1. En la barra de menús, elija **Herramientas** > **Opciones**. Expanda el nodo **Editor de texto** y seleccione el lenguaje que usa o **Todos los lenguajes** para activar los números de línea en todos los lenguajes. (O bien escriba el **número de línea** en el cuadro de búsqueda y elija **Activar o desactivar los números de línea** en los resultados).
 
-### <a name="to-display-line-numbers-in-code"></a>Para mostrar los números de línea en el código
+2. Active la casilla **Números de línea**.
 
-1.  En la barra de menús, elija **Herramientas**, **Opciones**. Expanda el nodo de **Editor de texto** y, después, seleccione el nodo del lenguaje que use o **Todos los lenguajes** para activar los números de línea en todos los lenguajes. También puede escribir el **número de línea** en el cuadro **Inicio rápido**.
+   ![Opción para mostrar los números de línea en el editor de VS](../../ide/reference/media/line-numbers-option.png)
 
-2.  Active la casilla **Números de línea**.
-
-    ![Opciones para mostrar números de línea en el editor](../../ide/reference/media/vs_displaylinenumbers.png)
-
-> [!NOTE]
-> Según el lenguaje o los valores de configuración, puede que tenga que activar la casilla **Mostrar todas las configuraciones** en el cuadro de diálogo **Opciones** para ver el subnodo **Todos los lenguajes**.
+> [!TIP]
+> Los números de línea no se agregan al código; solo sirven de referencia. Si quiere imprimir los números de línea, en el cuadro de diálogo **Imprimir**, active la casilla **Incluir números de línea**.
 
 ## <a name="see-also"></a>Vea también
 

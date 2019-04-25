@@ -1,7 +1,6 @@
 ---
 title: advertencias de movilidad
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - vs.codeanalysis.MobilityRules
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 9808054c-593b-4fc3-92cc-1fc45f41569c
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2125f8fc674c91d5bbb301c13a3a898b79e174a8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 170caf52999fb687c040c2e9212d1a1ed2e154a0
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53889972"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55908419"
 ---
 # <a name="mobility-warnings"></a>advertencias de movilidad
 Advertencias de movilidad admiten el uso eficiente de energía.

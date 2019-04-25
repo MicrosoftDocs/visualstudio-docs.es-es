@@ -1,23 +1,20 @@
 ---
 title: Personalizar campos de imagen y texto | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: a7259fc0-5afa-4356-b27e-5641e01628a9
 caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: c73f14e2b581ea5a9c0bd22f50c11ed205c0f804
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 3c1e6aa853d2f8202ed42652a0d0f70a7300c0b5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49271133"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077172"
 ---
 # <a name="customizing-text-and-image-fields"></a>Personalizar campos de texto y de imagen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -191,13 +188,13 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
   
 #### <a name="to-create-a-subclass-of-imagefield"></a>Para crear una subclase de ImageField  
   
-1.  Establecer el **genera doble derivada** propiedad de la clase de la forma primaria en la definición de DSL.  
+1. Establecer el **genera doble derivada** propiedad de la clase de la forma primaria en la definición de DSL.  
   
-2.  Invalidar el `InitializeShapeFields` método de la clase shape.  
+2. Invalidar el `InitializeShapeFields` método de la clase shape.  
   
-    -   Cree un nuevo archivo de código en el proyecto DSL y escribir una definición de clase parcial para la clase shape. Reemplazar la definición de método no existe.  
+    - Cree un nuevo archivo de código en el proyecto DSL y escribir una definición de clase parcial para la clase shape. Reemplazar la definición de método no existe.  
   
-3.  Inspeccione el código de `InitializeShapeFields` en DSL\GeneratedCode\Shapes.cs.  
+3. Inspeccione el código de `InitializeShapeFields` en DSL\GeneratedCode\Shapes.cs.  
   
      En el método de invalidación, llame al método base y, a continuación, cree una instancia de su propia clase de campo de imagen. Úselo para reemplazar el campo de imagen normal en el `shapeFields` lista.  
   
@@ -277,6 +274,3 @@ partial class ExampleShape
  [Establecer una imagen de fondo en un diagrama](../modeling/setting-a-background-image-on-a-diagram.md)   
  [Navegar y actualizar un modelo en el código de programa](../modeling/navigating-and-updating-a-model-in-program-code.md)   
  [Escribir código para personalizar lenguajes específicos de dominio](../modeling/writing-code-to-customise-a-domain-specific-language.md)
-
-
-

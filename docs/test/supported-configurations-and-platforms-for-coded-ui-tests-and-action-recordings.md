@@ -1,21 +1,20 @@
 ---
 title: Configuraciones y plataformas para pruebas automatizadas de IU
-ms.date: 2015-10-04
-ms.prod: visual-studio-dev15
+ms.date: 10/04/2015
 ms.topic: reference
 helpviewer_keywords:
 - coded UI tests
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: ebac25b0269d5c5bc1d0bd674b41d35ab91cc7b5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 43153f86ca9ee9a26465ad910b6918aee5292a87
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53893041"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62431255"
 ---
 # <a name="supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings"></a>Configuraciones y plataformas compatibles con las pruebas automatizadas de IU y las grabaciones de acciones
 
@@ -28,7 +27,7 @@ En la tabla siguiente se enumeran las configuraciones y plataformas compatibles 
 
 **Requisitos**
 
--   Visual Studio Enterprise
+- Visual Studio Enterprise
 
 ## <a name="supported-configurations"></a>Configuraciones compatibles
 
@@ -41,7 +40,6 @@ En la tabla siguiente se enumeran las configuraciones y plataformas compatibles 
 
 > [!NOTE]
 > *Sincronización de la interfaz de usuario* es una característica que comprueba la reproducción en la cola de mensajes de cada control. Si un control no respondiera al evento que se le envió, el evento se envía de nuevo.
-
 
 ## <a name="platform-support"></a>Compatibilidad con la plataforma
 

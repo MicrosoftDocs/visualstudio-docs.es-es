@@ -2,19 +2,18 @@
 title: Procedimiento Usar una búsqueda en el Diseñador de flujo de trabajo
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.prod: visual-studio-dev15
 ms.assetid: f42d3115-2ed2-4941-8f1e-92dac41c30fa
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 52adbded9f570689cd5749cc620ca8f74222e308
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0a80bfecaa288eabc0161d0262535a7912411f78
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53854677"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091296"
 ---
 # <a name="how-to-use-search-in-the-workflow-designer"></a>Procedimiento Usar una búsqueda en el Diseñador de flujo de trabajo
 
@@ -24,13 +23,13 @@ Para facilitar la creación de flujos de trabajo más grandes y complejas, puede
 
 Búsqueda rápida busca lo siguiente en el diseñador:
 
--   Propiedades de los objetos <xref:System.Activities.Activity>, objetos <xref:System.Activities.Statements.FlowNode>, objetos <xref:System.Activities.Statements.State>, transiciones, así como otros elementos de control de flujo personalizados.
+- Propiedades de los objetos <xref:System.Activities.Activity>, objetos <xref:System.Activities.Statements.FlowNode>, objetos <xref:System.Activities.Statements.State>, transiciones, así como otros elementos de control de flujo personalizados.
 
--   Variables
+- Variables
 
--   Argumentos
+- Argumentos
 
--   Expresiones
+- Expresiones
 
 ### <a name="use-quick-find"></a>Usar la búsqueda rápida
 
@@ -48,8 +47,8 @@ Buscar en archivos busca cadenas en archivos de flujo de trabajo, incluidos los 
 
 ### <a name="use-find-in-files"></a>Usar la función Buscar en archivos
 
-1.  En Visual Studio, presione **Ctrl**+**MAYÚS**+**F**, o bien seleccione **editar**  >   **Buscar y reemplazar** > **buscar en archivos**.
+1. En Visual Studio, presione **Ctrl**+**MAYÚS**+**F**, o bien seleccione **editar**  >   **Buscar y reemplazar** > **buscar en archivos**.
 
-2.  Escriba el elemento de búsqueda en el **buscar** cuadro de texto y haga clic en **Buscar todo**.
+2. Escriba el elemento de búsqueda en el **buscar** cuadro de texto y haga clic en **Buscar todo**.
 
-3.  Resultado de la búsqueda se muestra en el **resultado de la búsqueda** vista. Haga doble clic en un elemento de resultado se desplaza a la actividad que contiene a la coincidencia en el Diseñador de flujo de trabajo.
+3. Resultado de la búsqueda se muestra en el **resultado de la búsqueda** vista. Haga doble clic en un elemento de resultado se desplaza a la actividad que contiene a la coincidencia en el Diseñador de flujo de trabajo.

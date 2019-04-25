@@ -1,14 +1,9 @@
 ---
 title: '&lt;dependencia&gt; elemento (aplicación ClickOnce) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#osVersionInfo
 - urn:schemas-microsoft-com:asm.v2#os
@@ -31,13 +26,13 @@ ms.assetid: 09d6a1e0-60f8-4fbd-843b-8e49ee3115a3
 caps.latest.revision: 36
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: e76d517af1e0bd93507a47facd63bd50ae98e635
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: e79fadcab1a4f00c084d675c3267b5886772fe2c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49233862"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58988583"
 ---
 # <a name="ltdependencygt-element-clickonce-application"></a>&lt;dependencia&gt; elemento (aplicación ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -110,20 +105,20 @@ Identifica una dependencia de plataforma o ensamblado que se requiere para la ap
 |`description`|Opcional. Se describe en forma legible, el sistema operativo descrito por el `dependentOS` elemento.|  
   
 ### <a name="osversioninfo"></a>osVersionInfo  
- Requerido. Este elemento es un elemento secundario del elemento `dependentOS` y contiene el elemento `os` . Este elemento no tiene atributos.  
+ Obligatorio. Este elemento es un elemento secundario del elemento `dependentOS` y contiene el elemento `os` . Este elemento no tiene atributos.  
   
-### <a name="os"></a>sistema operativo  
- Requerido. Este elemento es un elemento secundario del elemento `osVersionInfo` . Este elemento tiene los atributos siguientes.  
+### <a name="os"></a>Elementos y atributos  
+ Obligatorio. Este elemento es un elemento secundario del elemento `osVersionInfo` . Este elemento tiene los atributos siguientes.  
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|`majorVersion`|Requerido. Especifica el número de versión principal del sistema operativo.|  
-|`minorVersion`|Requerido. Especifica el número de versión secundaria del sistema operativo.|  
-|`buildNumber`|Requerido. Especifica el número de compilación del sistema operativo.|  
-|`servicePackMajor`|Requerido. Especifica el número principal de service pack del sistema operativo.|  
+|`majorVersion`|Obligatorio. Especifica el número de versión principal del sistema operativo.|  
+|`minorVersion`|Obligatorio. Especifica el número de versión secundaria del sistema operativo.|  
+|`buildNumber`|Obligatorio. Especifica el número de compilación del sistema operativo.|  
+|`servicePackMajor`|Obligatorio. Especifica el número principal de service pack del sistema operativo.|  
 |`servicePackMinor`|Opcional. Especifica el número secundario de service pack del sistema operativo.|  
 |`productType`|Opcional. Identifica el valor de tipo de producto. Valores válidos son `server`, `workstation` y `domainController`. Por ejemplo, para Windows 2000 Professional, este valor de atributo es `workstation`.|  
-|`suiteType`|Opcional. Identifica un conjunto de productos disponible en el sistema o el tipo de configuración del sistema. Los valores válidos son `backoffice`, `blade`, `datacenter`, `enterprise`, `home`, `professional`, `smallbusiness`, `smallbusinessRestricted`, y `terminal`. Por ejemplo, para Windows 2000 Professional, este valor de atributo es `professional`.|  
+|`suiteType`|Opcional. Identifica un conjunto de productos disponible en el sistema o el tipo de configuración del sistema. Los valores válidos son `backoffice`, `blade`, `datacenter`, `enterprise`, `home`, `professional`, `smallbusiness`, `smallbusinessRestricted` y `terminal`. Por ejemplo, para Windows 2000 Professional, este valor de atributo es `professional`.|  
   
 ### <a name="dependentassembly"></a>dependentAssembly  
  Opcional. Contiene el `assemblyIdentity` elemento. El `dependentOS` y `dependentAssembly` elementos se excluyen mutuamente: uno de ellos debe existir para un `dependency` elemento, pero no ambos.  
@@ -132,19 +127,19 @@ Identifica una dependencia de plataforma o ensamblado que se requiere para la ap
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|`dependencyType`|Requerido. Especifica el tipo de dependencia. Los valores válidos son `preprequisite` y `install`. Un `install` ensamblado se instala como parte de la [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicación. Un `prerequisite` ensamblado debe estar presente en la caché de ensamblados global (GAC) antes de la [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] puede instalar la aplicación.|  
-|`allowDelayedBinding`|Requerido. Especifica si el ensamblado se puede cargar mediante programación en tiempo de ejecución.|  
-|`group`|Opcional. Si el `dependencyType` atributo está establecido en `install`, designa un grupo de ensamblados con nombre que solo se instalan a petición. Para más información, consulte [Tutorial: Descargar ensamblados a petición con la API de implementación de ClickOnce mediante el diseñador](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md).<br /><br /> Si establece en `framework` y `dependencyType` atributo está establecido en `prerequisite`, designa el ensamblado como parte de .NET Framework. No se comprueba la caché de ensamblado global (GAC) para este ensamblado cuando se instala en [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] y versiones posteriores.|  
+|`dependencyType`|Obligatorio. Especifica el tipo de dependencia. Los valores válidos son `preprequisite` y `install`. Un `install` ensamblado se instala como parte de la [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicación. Un `prerequisite` ensamblado debe estar presente en la caché de ensamblados global (GAC) antes de la [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] puede instalar la aplicación.|  
+|`allowDelayedBinding`|Obligatorio. Especifica si el ensamblado se puede cargar mediante programación en tiempo de ejecución.|  
+|`group`|Opcional. Si el `dependencyType` atributo está establecido en `install`, designa un grupo de ensamblados con nombre que solo se instalan a petición. Para obtener más información, vea [Tutorial: Descarga de ensamblados a petición con la API de implementación ClickOnce mediante el diseñador](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md).<br /><br /> Si establece en `framework` y `dependencyType` atributo está establecido en `prerequisite`, designa el ensamblado como parte de .NET Framework. No se comprueba la caché de ensamblado global (GAC) para este ensamblado cuando se instala en [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] y versiones posteriores.|  
 |`codeBase`|Obligatorio cuando el `dependencyType` atributo está establecido en `install`. La ruta de acceso al ensamblado dependiente. Puede ser una ruta de acceso absoluta o una ruta de acceso en relación con el código del manifiesto a la base. Esta ruta de acceso debe ser un URI válido en orden para el manifiesto del ensamblado sea válido.|  
 |`size`|Obligatorio cuando el `dependencyType` atributo está establecido en `install`. El tamaño del ensamblado dependiente, en bytes.|  
   
 ### <a name="assemblyidentity"></a>assemblyIdentity  
- Requerido. Este elemento es un elemento secundario del elemento `dependentAssembly` y tiene los atributos siguientes.  
+ Obligatorio. Este elemento es un elemento secundario del elemento `dependentAssembly` y tiene los atributos siguientes.  
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|`name`|Requerido. Identifica el nombre de la aplicación.|  
-|`version`|Requerido. Especifica el número de versión de la aplicación en el formato siguiente: `major.minor.build.revision`|  
+|`name`|Obligatorio. Identifica el nombre de la aplicación.|  
+|`version`|Obligatorio. Especifica el número de versión de la aplicación en el formato siguiente: `major.minor.build.revision`|  
 |`publicKeyToken`|Opcional. Especifica una cadena hexadecimal de 16 caracteres que representa los últimos 8 bytes de la `SHA-1` valor hash de la clave pública con la que se firma la aplicación o el ensamblado. La clave pública utilizada para firmar el catálogo debe ser 2048 bits o más.|  
 |`processorArchitecture`|Opcional. Especifica el procesador. Los valores válidos son `x86` para Windows de 32 bits y `I64` para Windows de 64 bits.|  
 |`language`|Opcional. Identifica los códigos de idioma de dos partes, como EN-US, del ensamblado.|  
@@ -154,7 +149,7 @@ Identifica una dependencia de plataforma o ensamblado que se requiere para la ap
   
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] utiliza un valor hash algorítmico de todos los archivos en una aplicación como una comprobación de seguridad para asegurarse de que ninguno de los archivos se han modificado después de la implementación. Si el `hash` elemento no se incluye, no se realizará esta comprobación. Por lo tanto, si se omite el `hash` elemento no se recomienda.  
   
-### <a name="dsigtransforms"></a>dsig: TRANSFORMS  
+### <a name="dsigtransforms"></a>dsig:Transforms  
  El `dsig:Transforms` elemento es un elemento secundario necesario de la `hash` elemento. El elemento `dsig:Transforms` no tiene atributos.  
   
 ### <a name="dsigtransform"></a>dsig: Transform  
@@ -171,7 +166,7 @@ Identifica una dependencia de plataforma o ensamblado que se requiere para la ap
 |---------------|-----------------|  
 |`Algorithm`|El algoritmo utilizado para calcular la síntesis de este archivo. Actualmente el único valor utilizado por [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] es `http://www.w3.org/2000/09/xmldsig#sha1`.|  
   
-### <a name="dsigdigestvalue"></a>dsig: DigestValue  
+### <a name="dsigdigestvalue"></a>dsig:DigestValue  
  El `dsig:DigestValue` elemento es un elemento secundario necesario de la `hash` elemento. El elemento `dsig:DigestValue` no tiene atributos. Su valor de texto es el hash calculado para el archivo especificado.  
   
 ## <a name="remarks"></a>Comentarios  
@@ -226,7 +221,4 @@ Identifica una dependencia de plataforma o ensamblado que se requiere para la ap
   
 ## <a name="see-also"></a>Vea también  
  [Manifiesto de aplicación ClickOnce](../deployment/clickonce-application-manifest.md)   
- [\<dependencia > elemento](../deployment/dependency-element-clickonce-deployment.md)
-
-
-
+ [\<dependency> Element](../deployment/dependency-element-clickonce-deployment.md)

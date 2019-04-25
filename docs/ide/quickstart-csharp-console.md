@@ -2,38 +2,51 @@
 title: Uso de Visual Studio para crear la primera aplicación de consola de C#
 titleSuffix: ''
 description: Obtenga información sobre cómo crear una aplicación de consola Hola mundo sencilla en Visual Studio con C#, paso a paso.
-ms.date: 09/21/2018
-ms.prod: visual-studio-dev15
 ms.custom: seodec18
+ms.date: 03/23/2019
+ms.technology: vs-ide-general
+ms.prod: visual-studio-windows
 ms.topic: quickstart
 ms.devlang: vb
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b36051f3a316f2b00ebdd08110f22346a910512
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a90324d1d9321be3f3105d5830e0c08927c4f535
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53853923"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856585"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-c-console-app"></a>Inicio rápido: Uso de Visual Studio para crear la primera aplicación de consola de C#
 
 En esta introducción al entorno de desarrollo integrado (IDE) de Visual Studio, de entre 5 y 10 minutos, creará una aplicación de C# sencilla que se ejecuta en la consola.
 
-Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) para instalarlo de forma gratuita.
+::: moniker range="vs-2017"
+
+Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) para instalarlo de forma gratuita.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) para instalarlo de forma gratuita.
+
+::: moniker-end
 
 ## <a name="create-a-project"></a>Crear un proyecto
 
 En primer lugar, se creará un proyecto de aplicación C#. En el tipo de proyecto se incluyen todos los archivos de plantilla que vamos a necesitar, sin necesidad de agregar nada más.
 
+::: moniker range="vs-2017"
+
 1. Abra Visual Studio 2017.
 
-2. En la barra de menús superior, seleccione **Archivo** > **Nuevo** > **Proyecto**.
+2. En la barra de menús superior, elija **Archivo** > **Nuevo** > **Proyecto**.
 
 3. En el cuadro de diálogo **Nuevo proyecto** del panel de la izquierda, expanda **C#** y seleccione **.NET Core**. En el panel central, elija **Aplicación de consola (.NET Core)**. Luego, asigne el nombre *HelloWorld* al proyecto.
 
@@ -45,19 +58,64 @@ En primer lugar, se creará un proyecto de aplicación C#. En el tipo de proyect
 
      Se iniciará el Instalador de Visual Studio. Elija la carga de trabajo **Desarrollo multiplataforma de .NET Core** y, después, elija **Modificar**.
 
-     ![Carga de trabajo de desarrollo multiplataforma de .NET Core en el Instalador de Visual Studio](../ide/media/dot-net-core-xplat-dev-workload.png)
+     ![Carga de trabajo Desarrollo multiplataforma de .NET Core en el instalador de Visual Studio](../ide/media/dot-net-core-xplat-dev-workload.png)
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. Abra Visual Studio 2019.
+
+1. En la ventana de inicio, elija **Crear un proyecto nuevo**.
+
+   ![Ventana "Crear un proyecto"](../get-started/media/vs-2019/create-new-project-dark-theme.png)
+
+1. En el cuadro de búsqueda de la ventana **Crear un proyecto**, escriba *consola*. Seguidamente, elija **C#** en la lista de lenguajes y luego, **Windows** en la lista de plataformas. 
+
+   Después de aplicar los filtros de lenguaje y plataforma, elija la plantilla **Aplicación de consola (.NET Core)** y luego, **Siguiente**.
+
+   ![Elija la plantilla C# para Aplicación de consola (.NET Framework).](../get-started/csharp/media/vs-2019/csharp-create-new-project-search-console-net-core-filtered.png)
+
+   > [!NOTE]
+   > Si no ve la plantilla **Aplicación de consola (.NET Core)**, puede instalarla desde la ventana **Crear un proyecto**. En el mensaje **¿No encuentra lo que busca?**, elija el vínculo **Instalar más herramientas y características**.
+   >
+   > ![Vínculo "Instalar más herramientas y características" del mensaje "¿No encuentra lo que busca?" que aparece en la ventana "Crear proyecto"](../get-started/media/vs-2019/not-finding-what-looking-for.png) 
+   > 
+   > Luego, en el Instalador de Visual Studio, elija la carga de trabajo **Desarrollo multiplataforma de .NET Core**.
+   >
+   > ![Carga de trabajo Desarrollo multiplataforma de .NET Core en el instalador de Visual Studio](./media/dot-net-core-xplat-dev-workload.png)
+   >
+   > Después, elija el botón **Modificar** en el Instalador de Visual Studio. Es posible que se le pida que guarde su trabajo; si es así, hágalo. Seguidamente, elija **Continuar** para instalar la carga de trabajo. Luego, vuelva al paso 2 de este procedimiento "[Crear un proyecto](#create-a-project)".
+
+1. En la ventana **Configurar el nuevo proyecto**, escriba *HelloWorld* en el cuadro **Nombre del proyecto**. Luego, elija **Crear**.
+
+   ![En la ventana "Configurar el nuevo proyecto", asigne al proyecto el nombre "HelloWorld".](../get-started/csharp/media/vs-2019/csharp-name-your-helloworld-project.png)
+
+   Visual Studio se abre en el nuevo proyecto.
+   
+::: moniker-end
 
 ## <a name="create-the-application"></a>Crear la aplicación
 
-Tras seleccionar la plantilla de proyecto de C# y asignar un nombre al proyecto, Visual Studio crea automáticamente una sencilla aplicación llamada "Hola mundo". 
+::: moniker range="vs-2017"
 
-(Para hacerlo, llama al método <xref:System.Console.WriteLine%2A> para mostrar la cadena literal "Hola mundo" en la ventana de la consola).
+Tras seleccionar la plantilla de proyecto de C# y asignar un nombre al proyecto, Visual Studio crea automáticamente una sencilla aplicación llamada "Hola mundo".
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Visual Studio incluye código predeterminado de "Hola mundo" en el proyecto.
+
+::: moniker-end
+
+(Para ello, llama al método <xref:System.Console.WriteLine%2A> que muestra la cadena literal "Hola mundo" en la ventana de la consola).
 
    ![Visualización del código de Hello World predeterminado de la plantilla](../ide/media/csharp-console-helloworld-template.png)
 
 Si presiona **F5**, puede ejecutar el programa en modo de depuración. Sin embargo, la ventana de la consola solo se ve durante un momento antes de cerrarse.
 
-(Esto ocurre porque el método `Main` finaliza en cuanto se ejecuta su única instrucción, con lo cual la aplicación termina).
+(Este comportamiento se debe a que el método `Main` finaliza en cuanto se ejecuta su única instrucción, con lo cual la aplicación termina).
 
 ### <a name="add-some-code"></a>Agregar algo de código
 

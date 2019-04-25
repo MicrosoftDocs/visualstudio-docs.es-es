@@ -1,14 +1,9 @@
 ---
 title: Clase base TaskExtension | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,18 +16,17 @@ ms.assetid: 08bb8059-b7e2-4565-89ba-d9034d4f0e16
 caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 15c5882b66a56b01e27501168aba285dfb89bea3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9c8e4823ae9a997feae15836962d0c5b8a1f2aa1
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49203897"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655431"
 ---
 # <a name="taskextension-base-class"></a>TaskExtension (Clase base)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Muchas tareas heredan de la clase <xref:Microsoft.Build.Tasks.TaskExtension>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.Task>. Esta cadena de herencia agrega varios parámetros a las tareas que derivan de ellos. Estos parámetros se muestran en este documento.  
   
 ## <a name="parameters"></a>Parámetros  
@@ -49,6 +43,3 @@ Muchas tareas heredan de la clase <xref:Microsoft.Build.Tasks.TaskExtension>, qu
 ## <a name="see-also"></a>Vea también  
  [Referencia de tareas](../msbuild/msbuild-task-reference.md)   
  [Tareas](../msbuild/msbuild-tasks.md)
-
-
-

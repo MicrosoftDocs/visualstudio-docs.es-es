@@ -7,14 +7,13 @@ helpviewer_keywords:
 ms.assetid: 2f634fba-8dfa-4c7a-a8b9-be867b78d16a
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: b9cd7790bb121e5b3942767a6ac372b5f10ca914
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: e053ee01d60d1ce3dcae10e044bb642e11f90dd7
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53911213"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55924089"
 ---
 # <a name="configure-scenario-start-delays-in-load-tests"></a>Configurar retrasos de inicio de escenario en pruebas de carga
 

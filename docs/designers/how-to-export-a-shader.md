@@ -1,22 +1,21 @@
 ---
-title: Procedimiento Exportar un sombreador
+title: Filtrar Exportar un sombreador
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 0bd48bf4-9792-4456-a545-e462a2be668d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 92e0ae391cb196053d136dc44a8e64758f485115
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7d0a962fe941f676369c4c3575647610df809d58
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53861457"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55927768"
 ---
-# <a name="how-to-export-a-shader"></a>Procedimiento Exportar un sombreador
+# <a name="how-to-export-a-shader"></a>Filtrar Exportar un sombreador
 
 En este artículo se muestra cómo usar el **Diseñador de sombras** para exportar un sombreador del lenguaje DGSL (Directed Graph Shader Language) para poder usarlo en la aplicación.
 

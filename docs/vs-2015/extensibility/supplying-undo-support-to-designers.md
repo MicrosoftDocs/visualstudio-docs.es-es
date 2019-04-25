@@ -1,26 +1,21 @@
 ---
 title: Proporcionar deshacer a diseñadores | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - designers [Visual Studio SDK], undo support
 ms.assetid: 43eb1f14-b129-404a-8806-5bf9b099b67b
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 3043bf41c3420644bcf8d65a2d8bbde86eff6910
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9118cbe3f4a8dcee443eca8b3fa5fb9a7664fd41
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51778506"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049313"
 ---
 # <a name="supplying-undo-support-to-designers"></a>Compatibilidad de la característica Deshacer en los diseñadores
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,9 +41,9 @@ Normalmente los diseñadores, editores, al igual que deben admitir las operacion
 ## <a name="obtaining-undo-support-automatically"></a>Obtener soporte para deshacer automáticamente  
  Cualquier creado en el diseñador [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] es compatible con la fase de reversión automática y completa if, el diseñador:  
   
--   Hace uso de un <xref:System.Windows.Forms.Control> en función de clase para la interfaz de usuario.  
+- Hace uso de un <xref:System.Windows.Forms.Control> en función de clase para la interfaz de usuario.  
   
--   Emplea el sistema de análisis y generación de código estándar basado en CodeDOM para la persistencia y la generación de código.  
+- Emplea el sistema de análisis y generación de código estándar basado en CodeDOM para la persistencia y la generación de código.  
   
      Para obtener más información sobre cómo trabajar con la compatibilidad de CodeDOM de Visual Studio, consulte [generación de código fuente dinámico y la compilación](http://msdn.microsoft.com/library/d077a3e8-bd81-4bdf-b6a3-323857ea30fb)  
   
@@ -85,15 +80,15 @@ Normalmente los diseñadores, editores, al igual que deben admitir las operacion
   
 - Esto <xref:System.IServiceProvider> clase debe proporcionar los siguientes servicios:  
   
-  -   <xref:System.ComponentModel.Design.IDesignerHost>.  
+  - <xref:System.ComponentModel.Design.IDesignerHost>.  
   
-  -   <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>  
+  - <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>  
   
        Los diseñadores que utilizan [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] serialización de CodeDOM se puede optar por usar <xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService> proporcionado con el [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] como su implementación de la <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>.  
   
        En este caso, el <xref:System.IServiceProvider> clase proporcionada para el <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine> constructor debe devolver este objeto como una implementación de la <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService> clase.  
   
-  -   <xref:System.ComponentModel.Design.IComponentChangeService>  
+  - <xref:System.ComponentModel.Design.IComponentChangeService>  
   
        Los diseñadores que utilizan el valor predeterminado <xref:System.ComponentModel.Design.DesignSurface> proporcionada por el [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] host de diseño se garantiza que tiene una implementación predeterminada de la <xref:System.ComponentModel.Design.IComponentChangeService> clase.  
   
@@ -111,4 +106,3 @@ Normalmente los diseñadores, editores, al igual que deben admitir las operacion
  <xref:System.ComponentModel.Design.UndoEngine>   
  <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine>   
  [Ampliar compatibilidad en tiempo de diseño](http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2)
-

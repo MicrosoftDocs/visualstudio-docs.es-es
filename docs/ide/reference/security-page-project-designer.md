@@ -1,7 +1,6 @@
 ---
 title: Página Seguridad, Diseñador de proyectos
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesSecurity
@@ -11,15 +10,15 @@ helpviewer_keywords:
 - Security page in Project Designer
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 30b09fee21dd7f028615612c27c3aab468a22055
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 71411ed03906e13ae666a12a67fbdb499d737b5f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987958"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55936140"
 ---
 # <a name="security-page-project-designer"></a>Página Seguridad, Diseñador de proyectos
 

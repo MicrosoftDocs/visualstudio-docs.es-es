@@ -6,16 +6,15 @@ helpviewer_keywords:
 - text templates, custom directive processors
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 5db3772b782af666023f39fd833e18ba2092c176
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6c159cd6fbd4f2fbfff414688e2ec865bcc8ddb4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989155"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109262"
 ---
 # <a name="creating-custom-t4-text-template-directive-processors"></a>Crear procesadores de directivas personalizadas para las plantillas de texto T4
 
@@ -41,9 +40,9 @@ Diferentes plantillas de texto pueden compartir la funcionalidad que proporciona
 
 Algunos ejemplos de procesadores de directivas personalizados podrían ser:
 
--   Un procesador de directivas para devolver datos de una base de datos que acepta un nombre de usuario y una contraseña como parámetros.
+- Un procesador de directivas para devolver datos de una base de datos que acepta un nombre de usuario y una contraseña como parámetros.
 
--   Un procesador de directivas para abrir y leer un archivo que acepta el nombre del archivo como un parámetro.
+- Un procesador de directivas para abrir y leer un archivo que acepta el nombre del archivo como un parámetro.
 
 ### <a name="principal-parts-of-a-custom-directive-processor"></a>Partes de la entidad de seguridad de un procesador de directivas personalizada
 
@@ -51,19 +50,19 @@ Para desarrollar un procesador de directivas, debe crear una clase que herede de
 
 Lo más importante `DirectiveProcessor` métodos que debe implementar son los siguientes.
 
--   `bool IsDirectiveSupported(string directiveName)` : Devuelve `true` si el procesador de directivas puede tratar con la directiva con nombre.
+- `bool IsDirectiveSupported(string directiveName)` : Devuelve `true` si el procesador de directivas puede tratar con la directiva con nombre.
 
--   `void ProcessDirective (string directiveName, IDictionary<string, string> arguments)` : El motor de plantilla llama a este método para cada aparición de una directiva en la plantilla. El procesador debe guardar los resultados.
+- `void ProcessDirective (string directiveName, IDictionary<string, string> arguments)` : El motor de plantilla llama a este método para cada aparición de una directiva en la plantilla. El procesador debe guardar los resultados.
 
 Después de todas las llamadas a ProcessDirective() el motor de plantillas llamará a estos métodos:
 
--   `string[] GetReferencesForProcessingRun()` : Devuelve los nombres de ensamblados que requiere el código de plantilla.
+- `string[] GetReferencesForProcessingRun()` : Devuelve los nombres de ensamblados que requiere el código de plantilla.
 
--   `string[] GetImportsForProcessingRun()` -Devuelve los espacios de nombres que se pueden usar en el código de plantilla.
+- `string[] GetImportsForProcessingRun()` -Devuelve los espacios de nombres que se pueden usar en el código de plantilla.
 
--   `string GetClassCodeForProcessingRun()` -Devuelve el código de los métodos, propiedades y otras declaraciones que puede usar el código de plantilla. La manera más fácil de hacerlo es generar una cadena que contiene el código C# o Visual Basic. Para hacer que el procesador de directivas sean capaces de que se llama desde una plantilla que use cualquier lenguaje CLR, puede construir las instrucciones como un árbol CodeDom y, a continuación, devolver el resultado de serializar el árbol en el idioma usado por la plantilla.
+- `string GetClassCodeForProcessingRun()` -Devuelve el código de los métodos, propiedades y otras declaraciones que puede usar el código de plantilla. La manera más fácil de hacerlo es generar una cadena que contiene el código C# o Visual Basic. Para hacer que el procesador de directivas sean capaces de que se llama desde una plantilla que use cualquier lenguaje CLR, puede construir las instrucciones como un árbol CodeDom y, a continuación, devolver el resultado de serializar el árbol en el idioma usado por la plantilla.
 
--   Para obtener más información, vea [Tutorial: Creación de un procesador de directivas personalizado](../modeling/walkthrough-creating-a-custom-directive-processor.md).
+- Para obtener más información, vea [Tutorial: Creación de un procesador de directivas personalizado](../modeling/walkthrough-creating-a-custom-directive-processor.md).
 
 ## <a name="see-also"></a>Vea también
 

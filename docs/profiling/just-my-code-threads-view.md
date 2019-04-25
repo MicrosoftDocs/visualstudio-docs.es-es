@@ -9,23 +9,23 @@ helpviewer_keywords:
 ms.assetid: a9ac8a2c-9d99-4207-8ed4-e87f033f440d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 825bf6e16aa0420a24b80dbfaaeb869325b3e68b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 607247c6853c59036d1ab386f7371964265a32b8
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53877424"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56625197"
 ---
 # <a name="just-my-code-threads-view"></a>Sólo mi código (Vista de subprocesos)
-Si selecciona esta opción, se filtrará la pila de llamadas para mostrar solo su código además de un nivel de las funciones llamadas.  
-  
- Al activar esta opción, puede reducir significativamente la complejidad de la pila de llamadas y es posible que resulte más fácil diagnosticar un problema determinado.  
-  
- En algunos casos, la selección de esta opción puede filtrar la llamada de bloqueo. Si necesita detalles completos de la pila de llamadas para tomar esa determinación, desactive esta opción para exponer la pila de llamadas completa.  
-  
-## <a name="see-also"></a>Vea también  
- [Vista de subprocesos](../profiling/threads-view-parallel-performance.md)   
- [Porcentaje de reducción de ruido](../profiling/noise-reduction-percentage.md)
+Si selecciona esta opción, se filtrará la pila de llamadas para mostrar solo su código además de un nivel de las funciones llamadas.
+
+ Al activar esta opción, puede reducir significativamente la complejidad de la pila de llamadas y es posible que resulte más fácil diagnosticar un problema determinado.
+
+ En algunos casos, la selección de esta opción puede filtrar la llamada de bloqueo. Si necesita detalles completos de la pila de llamadas para tomar esa determinación, desactive esta opción para exponer la pila de llamadas completa.
+
+## <a name="see-also"></a>Vea también
+- [Vista de subprocesos](../profiling/threads-view-parallel-performance.md)
+- [Porcentaje de reducción de ruido](../profiling/noise-reduction-percentage.md)

@@ -1,40 +1,35 @@
 ---
 title: Administrar el cuadro de herramientas | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - Toolbox [Visual Studio SDK], automatic tab selection
 - Toolbox [Visual Studio SDK], managing
 ms.assetid: 3b052047-f6db-46dd-b3bf-da1c348ee410
 caps.latest.revision: 33
-manager: douge
-ms.openlocfilehash: 227001e827057ffab4c851a985f7e36afaf0f351
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: ba4b166cc409dd2c50c258a9b82ee34c22e9b084
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49873427"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054773"
 ---
 # <a name="managing-the-toolbox"></a>Managing the Toolbox
 [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] permite un VSPackage como, por ejemplo, un editor o diseñador, para administrar la pertenencia y la apariencia del **Cuadro de herramientas**.  
   
- Además, el **Cuadro de herramientas** sí puede administrarse mediante la automatización. Para más información sobre la administración de un cuadro de herramientas mediante automatización, vea [How to: Control the Toolbox](http://msdn.microsoft.com/library/c9d8a18a-d2bc-43d4-a803-601bfc6a6599).  
+ Además, el **Cuadro de herramientas** sí puede administrarse mediante la automatización. Para obtener más información sobre la administración de un cuadro de herramientas mediante automatización, vea [Cómo: El cuadro de herramientas de control](http://msdn.microsoft.com/library/c9d8a18a-d2bc-43d4-a803-601bfc6a6599).  
   
 ## <a name="automatic-toolbox-tab-selection"></a>Selección automática de la pestaña Cuadro de herramientas  
  Es posible activar de manera automática una categoría o pestaña **Cuadro de herramientas** determinada en función del diseñador o editor actualmente activo. Por ejemplo, si se activa un diseñador de formularios, puede que desee seleccionar la pestaña **Todos los formularios Windows Forms** .  
   
  Esto se admite solo para editores y diseñadores que requieran lo siguiente:  
   
-1.  Implementar un objeto de fábrica para proporcionar instancias del editor o diseñador. Para más información sobre la implementación de un objeto de generador de diseñador o editor, vea [Editor Factories](../extensibility/editor-factories.md).  
+1. Implementar un objeto de fábrica para proporcionar instancias del editor o diseñador. Para más información sobre la implementación de un objeto de generador de diseñador o editor, vea [Editor Factories](../extensibility/editor-factories.md).  
   
-2.  Registrar la pestaña del cuadro de herramientas activada automáticamente si está presente el editor o diseñador.  
+2. Registrar la pestaña del cuadro de herramientas activada automáticamente si está presente el editor o diseñador.  
   
 ## <a name="controlling-the-toolbox"></a>Control del cuadro de herramientas  
  Como complemento a la compatibilidad de automatización, [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] proporciona las siguientes interfaces para proporcionar a VSPackages mayor control sobre la administración del **Cuadro de herramientas** .  

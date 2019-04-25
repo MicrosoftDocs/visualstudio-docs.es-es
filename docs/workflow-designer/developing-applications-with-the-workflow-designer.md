@@ -2,7 +2,6 @@
 title: Desarrollar aplicaciones con el Diseñador de flujo de trabajo
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.prod: visual-studio-dev15
 f1_keywords:
 - DefaultWorkflowDesigner
 - DefaultWorkflowDesigner.UI
@@ -14,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 4cd062b1-b496-4668-bbc1-ee85545e066d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ef3b7e9bfc18407023e6a84a25eb32d453823ce
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 45c687be4efc5a83827836cd1ac89bbc38ad4cb1
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53903636"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223291"
 ---
 # <a name="develop-apps-with-the-workflow-designer"></a>Desarrollar aplicaciones con el Diseñador de flujo de trabajo
 
@@ -30,7 +29,7 @@ El Diseñador de flujo de trabajo es un diseñador visual y un depurador para la
 
 ## <a name="install-windows-workflow-foundation"></a>Instalar Windows Workflow Foundation
 
-Para usar las plantillas de proyecto de flujo de trabajo en Visual Studio 2017, instale primero el **Windows Workflow Foundation** componente.
+Para usar las plantillas de proyecto de flujo de trabajo en Visual Studio, instale primero el **Windows Workflow Foundation** componente.
 
 1. Abra el instalador de Visual Studio. Una forma rápida para abrirlo es seleccionando **herramientas** > **obtener herramientas y características** en Visual Studio.
 
@@ -38,7 +37,7 @@ Para usar las plantillas de proyecto de flujo de trabajo en Visual Studio 2017, 
 
 1. Desplácese hacia abajo hasta la **las actividades de desarrollo** categoría y, a continuación, seleccione el **Windows Workflow Foundation** componente.
 
-   ![Componente de Windows Workflow Foundation para Visual Studio 2017](media/windows-workflow-foundation-component.png)
+   ![Componente de Windows Workflow Foundation para Visual Studio](media/windows-workflow-foundation-component.png)
 
 1. Seleccione **Modificar**.
 

@@ -1,14 +1,9 @@
 ---
 title: Vista Líneas | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.lines
 helpviewer_keywords:
@@ -19,13 +14,13 @@ ms.assetid: 71ec0781-6031-4e17-af09-f50226018437
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 829db9b1f8e4826ea9761a4433e6ee1adaab49e2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: ccdb211312a6f53e7f519b7fac0e3ac28aab2429
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51749977"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058635"
 ---
 # <a name="lines-view"></a>Vista Líneas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,22 +33,19 @@ La vista Líneas está disponible solo para los datos del generador de perfiles 
   
  Una instrucción se identifica mediante lo siguiente:  
   
--   El archivo de código fuente que contiene la instrucción de la función.  
+- El archivo de código fuente que contiene la instrucción de la función.  
   
--   La función que contiene la instrucción.  
+- La función que contiene la instrucción.  
   
--   La línea de origen donde se inicia la instrucción.  
+- La línea de origen donde se inicia la instrucción.  
   
--   El carácter en la línea de origen donde se inicia la instrucción.  
+- El carácter en la línea de origen donde se inicia la instrucción.  
   
--   La línea de origen donde finaliza la instrucción.  
+- La línea de origen donde finaliza la instrucción.  
   
--   El carácter en la línea de origen donde finaliza la instrucción.  
+- El carácter en la línea de origen donde finaliza la instrucción.  
   
 ## <a name="see-also"></a>Vea también  
  [Vista Líneas](../profiling/lines-view-sampling-data.md)   
  [Vista Líneas: muestreo](../profiling/lines-view-dotnet-memory-sampling-data.md)   
  [Vista Líneas](../profiling/lines-view-contention-data.md)
-
-
-

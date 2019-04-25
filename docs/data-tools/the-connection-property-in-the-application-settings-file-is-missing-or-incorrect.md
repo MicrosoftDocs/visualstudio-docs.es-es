@@ -5,16 +5,15 @@ ms.topic: reference
 ms.assetid: 77724510-ff59-4d43-b933-a0434e1ac597
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: bdaf4abfa1c1e931328466cc4fb4c525b47310b4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1a2b06d16c3761c1f2d82197c82d195b67845989
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935325"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55941470"
 ---
 # <a name="the-connection-property-in-the-application-settings-file-is-missing-or-incorrect"></a>Falta o no es correcta la propiedad de conexión del archivo de configuración de la aplicación
 

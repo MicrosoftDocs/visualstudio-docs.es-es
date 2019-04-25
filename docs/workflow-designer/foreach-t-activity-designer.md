@@ -2,21 +2,20 @@
 title: 'Diseñador de flujo de trabajo: ForEach&lt;T&gt; Diseñador de actividad'
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
 f1_keywords:
 - System.Activities.Statements.ForEach`1.UI
 ms.assetid: 67097b3a-fcf5-4a72-beb1-2c7784151a86
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 681a89bd9c31cc4682e3ba7f5b9b0762f0ad8983
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e441898973614b6e3e33fc91d5d9688b51aab7fe
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53830315"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55928873"
 ---
 # <a name="foreachlttgt-activity-designer"></a>ForEach&lt;T&gt; Diseñador de actividad
 
@@ -36,5 +35,5 @@ De forma predeterminada, el iterador del bucle se denomina **elemento**. Puede c
 
 ## <a name="see-also"></a>Vea también
 
-- [ParallelForEach\<T >](../workflow-designer/parallelforeach-t-activity-designer.md)
+- [ParallelForEach\<T>](../workflow-designer/parallelforeach-t-activity-designer.md)
 - [Flujo de control](../workflow-designer/control-flow-activity-designers.md)

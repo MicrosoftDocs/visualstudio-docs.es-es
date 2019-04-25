@@ -1,7 +1,6 @@
 ---
-title: Procedimiento Creación y eliminación de dependencias del proyecto
+title: Filtrar Creación y eliminación de dependencias del proyecto
 ms.date: 06/21/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - VS.ProjectDependenciesDlg
@@ -15,17 +14,17 @@ helpviewer_keywords:
 ms.assetid: e2a0a8ff-dae7-40a8-b774-b88aa5235183
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24f44545ebc591a8e3b1a8359e0d7db8dddbb5d5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 476e72e50ac796412fbeef1c180a3340764fb121
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53925702"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55907665"
 ---
-# <a name="how-to-create-and-remove-project-dependencies"></a>Procedimiento Creación y eliminación de dependencias del proyecto
+# <a name="how-to-create-and-remove-project-dependencies"></a>Filtrar Creación y eliminación de dependencias del proyecto
 
 Al compilar una solución que contiene varios proyectos, puede ser necesario compilar determinados proyectos primero para generar código que usan otros proyectos. Cuando un proyecto consume código ejecutable generado por otro proyecto, al proyecto que genera el código se le hace referencia como una dependencia de proyecto del proyecto que consume el código. Dichas relaciones de dependencia pueden definirse en el cuadro de diálogo **Dependencias del proyecto**.
 

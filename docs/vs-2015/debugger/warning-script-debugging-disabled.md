@@ -1,14 +1,9 @@
 ---
-title: 'Advertencia: Depuración de scripts deshabilitada | Microsoft Docs'
-ms.custom: ''
+title: 'Advertencia: Depuración de scripts deshabilitada | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.scriptdisabled
 dev_langs:
@@ -20,15 +15,15 @@ ms.assetid: 323d2b1d-52a4-42f7-b4ad-96b4b0c23b8d
 caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 505f93056de1d5212856d32152a91a26d5f2a250
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 36065120dc636f0004f0e00d8b17a0059a680723
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51805962"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105596"
 ---
-# <a name="warning-script-debugging-disabled"></a>Advertencia: Depuración de script deshabilitada
+# <a name="warning-script-debugging-disabled"></a>Advertencia: Depuración de scripts deshabilitada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 La depuración de script está deshabilitada actualmente en Internet Explorer  
@@ -37,22 +32,19 @@ La depuración de script está deshabilitada actualmente en Internet Explorer
   
 ### <a name="to-enable-script-debugging-in-internet-explorer"></a>Para habilitar la depuración de script en Internet Explorer  
   
-1.  En el Explorador de Internet **herramientas** menú, elija **opciones de Internet**.  
+1. En el menú **Herramientas** de Internet Explorer, elija **Opciones de Internet**.  
   
-2.  En el **opciones de Internet** cuadro de diálogo, haga clic en el **avanzadas** ficha.  
+2. En el cuadro de diálogo **Opciones de Internet**, haga clic en la pestaña **Opciones avanzadas**.  
   
-3.  En el **avanzadas** pestaña, observe el **configuración** cuadro, **exploración** categoría.  
+3. En la pestaña **Opciones avanzadas**, observe la categoría **Examinar** en el cuadro **Configuración**.  
   
-4.  Borrar **Deshabilitar depuración de scripts (Internet Explorer)**.  
+4. Desactive **Deshabilitar la depuración de scripts (Internet Explorer)**.  
   
-5.  Haga clic en **Aceptar**.  
+5. Haga clic en **Aceptar**.  
   
-6.  Salga y reinicie Internet Explorer.  
+6. Salga y reinicie Internet Explorer.  
   
      La nueva configuración estará ahora en vigor.  
   
 ## <a name="see-also"></a>Vea también  
- [Cómo: Adjuntar a script](../debugger/how-to-attach-to-script.md)
-
-
-
+ [Cómo: Asociación a script](../debugger/how-to-attach-to-script.md)

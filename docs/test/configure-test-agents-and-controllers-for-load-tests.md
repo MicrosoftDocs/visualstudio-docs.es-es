@@ -6,14 +6,13 @@ helpviewer_keywords:
 - load tests, test agents and controllers
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: c4462c97febc7f1075080bf659a679647bc7bbe5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 16686d3900b3db2656492f5049590eeff47eb93a
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53899842"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796356"
 ---
 # <a name="configure-test-agents-and-test-controllers-for-running-load-tests"></a>Configurar agentes y controladores de pruebas para ejecutar pruebas de carga
 
@@ -78,7 +77,7 @@ El agente de prueba se ejecuta como un servicio que realiza escuchas de solicitu
 
 La siguiente ilustración muestra los puntos de conexión entre el controlador de prueba, el agente de prueba y el cliente. Describe qué puertos se usan para las conexiones entrantes y salientes, así como las restricciones de seguridad empleadas en estos puertos.
 
- ![Puertos de controlador de pruebas y agente de prueba y seguridad](./media/test-controller-agent-firewall.png)
+ ![Puertos y seguridad del controlador y el agente de pruebas](./media/test-controller-agent-firewall.png)
 
  Para obtener más información, vea [Configuración de los puertos para los controladores de pruebas y los agentes de pruebas](../test/configure-ports-for-test-controllers-and-test-agents.md).
 

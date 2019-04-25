@@ -1,14 +1,9 @@
 ---
 title: -Out (devenv.exe) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - errors [Visual Studio], builds
 - Devenv, /out switch
@@ -23,18 +18,17 @@ ms.assetid: 9002d8c2-36d4-451c-b489-8f01932f31f7
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: cbf9608bc4f476599676b27f12bc125fd170fc71
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e1f20b446d355ea0cbc6700de5f2e6f79de51d09
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49211008"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59647066"
 ---
 # <a name="out-devenvexe"></a>/Out (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Especifica un archivo que se va a almacenar y muestra los errores al ejecutar, compilar, recompilar o implementar una solución.  
   
 ## <a name="syntax"></a>Sintaxis  
@@ -45,7 +39,7 @@ devenv /out FileName
   
 ## <a name="arguments"></a>Argumentos  
  `FileName`  
- Requerido. Ruta de acceso y nombre del archivo que va a recibir los errores al compilar un ejecutable.  
+ Obligatorio. Ruta de acceso y nombre del archivo que va a recibir los errores al compilar un ejecutable.  
   
 ## <a name="remarks"></a>Comentarios  
  Si se especifica un nombre de archivo que no existe, se crea automáticamente el archivo. Si el archivo ya existe, los resultados se anexan al contenido existente del archivo.  
@@ -65,6 +59,3 @@ devenv /run "C:\Documents and Settings\someuser\My Documents\Visual Studio\Proje
  [/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md)   
  [/Rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md)   
  [/Deploy (devenv.exe)](../../ide/reference/deploy-devenv-exe.md)
-
-
-

@@ -1,7 +1,6 @@
 ---
 title: Anotar comportamiento de bloqueo
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - _Releases_nonreentrant_lock_
@@ -33,12 +32,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b0a9f28da48582ac562f08e3327fb3d80375c3b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6590a07ec7fc67bef5f1b1cfd96e80105fa325ce
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53835297"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053734"
 ---
 # <a name="annotating-locking-behavior"></a>Anotar comportamiento de bloqueo
 Para evitar errores de simultaneidad en el programa multiproceso, siempre que siga una disciplina de bloqueo apropiada y utilizar anotaciones SAL.
@@ -56,11 +55,11 @@ Para evitar errores de simultaneidad en el programa multiproceso, siempre que si
 
  Algunas reglas de la propiedad de subprocesos debe tener en cuenta:
 
--   Bloqueos de giro son bloqueos uncounted que tienen la propiedad de subprocesos no cifrado.
+- Bloqueos de giro son bloqueos uncounted que tienen la propiedad de subprocesos no cifrado.
 
--   Secciones críticas y las exclusiones mutuas se cuentan los bloqueos que tienen la propiedad clara de subproceso.
+- Secciones críticas y las exclusiones mutuas se cuentan los bloqueos que tienen la propiedad clara de subproceso.
 
--   Los semáforos y eventos se cuentan los bloqueos que no tienen la propiedad de subprocesos no cifrado.
+- Los semáforos y eventos se cuentan los bloqueos que no tienen la propiedad de subprocesos no cifrado.
 
 ## <a name="locking-annotations"></a>Anotaciones de bloqueos
  En la tabla siguiente se enumera las anotaciones de bloqueos.
@@ -105,6 +104,18 @@ Para evitar errores de simultaneidad en el programa multiproceso, siempre que si
 |`_Interlocked_`|Anota una variable y es equivalente a `_Guarded_by_(_Global_interlock_)`.|
 |`_Interlocked_operand_`|El parámetro de función anotado es el operando de destino de una de las distintas funciones Interlocked.  Los operandos deben tener propiedades adicionales específicas.|
 |`_Write_guarded_by_(expr)`|Anota una variable e indica que cada vez que la variable se modifica, el recuento de bloqueos del objeto de bloqueo que se denomina por `expr` como mínimo.|
+
+## <a name="smart-lock-and-raii-annotations"></a>Smart Lock y RAII anotaciones
+ Cerraduras inteligentes suelen incluir bloqueos nativos y administran su duración. La siguiente tabla enumera las anotaciones que pueden utilizarse con cerraduras inteligentes y RAII patrones con compatibilidad para de codificación `move` semántica.
+
+|Anotación|Descripción|
+|----------------|-----------------|
+|`_Analysis_assume_smart_lock_acquired_`|Indica que el analizador de suponer que se ha adquirido un bloqueo inteligente. Esta anotación espera un tipo de bloqueo de referencia como su parámetro.|
+|`_Analysis_assume_smart_lock_released_`|Indica que el analizador de suponer que se ha liberado un bloqueo inteligente. Esta anotación espera un tipo de bloqueo de referencia como su parámetro.|
+|`_Moves_lock_(target, source)`|Describe `move constructor` operación que transfiere el estado de bloqueo de la `source` de objeto para el `target`. El `target` se considera un objeto recién creado, por lo que cualquier estado que tenía antes de que se pierde y reemplazado por el `source` estado. El `source` es también restablecer a un estado limpio con ningún destino de recuentos o alias de bloqueo, pero los alias que apunte a él no se modificarán.|
+|`_Replaces_lock_(target, source)`|Describe `move assignment operator` semántica donde se libera el bloqueo de destino antes de transferir el estado desde el origen. Se puede considerar como una combinación de `_Moves_lock_(target, source)` precedido por un `_Releases_lock_(target)`.|
+|`_Swaps_locks_(left, right)`|Describe el estándar `swap` comportamiento que se da por supuesto que los objetos `left` y `right` su estado de exchange. El estado que se intercambian incluye destino recuento y alias de bloqueo, si está presente. Los alias que apuntan a la `left` y `right` objetos permanecen sin cambios.|
+|`_Detaches_lock_(detached, lock)`|Describe un escenario en el que un tipo de contenedor de bloqueo permite disociación con sus recursos independientes. Esto es similar a cómo `std::unique_ptr` funciona con su puntero interno: permite a los programadores extraer el puntero y dejar su contenedor de puntero inteligente en un estado limpio. Una lógica similar es compatible con `std::unique_lock` y se pueden implementar en contenedores de bloqueo personalizada. El bloqueo desasociado conserva su estado (bloqueo recuento y alias de destino, si existe), mientras se restablece el contenedor que contiene cero el número de bloqueos y ningún destino de creación de alias, conservando sus propios alias. No hay ninguna operación en los recuentos de bloqueo (adquisición y liberación). Esta anotación se comporta exactamente como `_Moves_lock_` , salvo que el argumento desasociado debe ser `return` lugar `this`.|
 
 ## <a name="see-also"></a>Vea también
 

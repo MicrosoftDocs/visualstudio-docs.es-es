@@ -1,25 +1,22 @@
 ---
 title: Implementar un procesador de directivas personalizado | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, custom directive processors
 ms.assetid: 80c28722-a630-47b5-923b-024dc3f2c940
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6986811b522f6ed3621335227231bb69ab6cf1c0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 0a440fbd87e85a72b2807ea09c7af61adf9f8af7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836403"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108365"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Implementar un procesador de directivas personalizadas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +25,7 @@ Para utilizar un procesador de directivas personalizado en [!INCLUDE[vsprvs](../
   
  A continuación se indican los métodos que puede usar:  
   
-- [Extensión de Visual Studio (VSIX)](http://msdn.microsoft.com/en-us/64ff1452-f7d5-42d9-98b8-76f769f76832). Proporciona una manera de instalar y desinstalar el procesador de directivas tanto en el propio equipo como en otros equipos. Por lo general, puede empaquetar otras características en la misma extensión VSIX.  
+- [Extensión de Visual Studio (VSIX)](http://msdn.microsoft.com/64ff1452-f7d5-42d9-98b8-76f769f76832). Proporciona una manera de instalar y desinstalar el procesador de directivas tanto en el propio equipo como en otros equipos. Por lo general, puede empaquetar otras características en la misma extensión VSIX.  
   
 - [VSPackage](../extensibility/internals/vspackages.md). Si define un paquete de VS que contiene otras características además del procesador de directivas, este constituye un método práctico para registrar el procesador de directivas.  
   
@@ -37,7 +34,7 @@ Para utilizar un procesador de directivas personalizado en [!INCLUDE[vsprvs](../
   Solamente debe usar uno de estos métodos si desea transformar la plantilla de texto en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] o [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Si utiliza un host personalizado en su propia aplicación, el host personalizado es el responsable de localizar los procesadores de directivas para cada directiva.  
   
 ## <a name="deploying-a-directive-processor-in-a-vsix"></a>Implementar un procesador de directivas en una extensión VSIX  
- Puede agregar un procesador de directivas personalizado a un [extensión de Visual Studio (VSIX)](http://msdn.microsoft.com/en-us/64ff1452-f7d5-42d9-98b8-76f769f76832).  
+ Puede agregar un procesador de directivas personalizado a un [extensión de Visual Studio (VSIX)](http://msdn.microsoft.com/64ff1452-f7d5-42d9-98b8-76f769f76832).  
   
  Debe asegurarse de que los dos elementos siguientes están incluidos en el archivo .vsix:  
   
@@ -51,27 +48,27 @@ Para utilizar un procesador de directivas personalizado en [!INCLUDE[vsprvs](../
   
 #### <a name="to-develop-a-custom-directive-processor-in-a-vsix-project"></a>Para desarrollar un procesador de directivas personalizado en un proyecto VSIX  
   
-1.  Cree un proyecto VSIX en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+1. Cree un proyecto VSIX en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-    -   En el **nuevo proyecto** cuadro de diálogo, expanda **Visual Basic** o **Visual C#**, a continuación, expanda **extensibilidad**. Haga clic en **proyecto VSIX**.  
+    - En el **nuevo proyecto** cuadro de diálogo, expanda **Visual Basic** o **Visual C#**, a continuación, expanda **extensibilidad**. Haga clic en **proyecto VSIX**.  
   
-2.  En **source.extension.vsixmanifest**, establezca el tipo de contenido y las ediciones compatibles.  
+2. En **source.extension.vsixmanifest**, establezca el tipo de contenido y las ediciones compatibles.  
   
-    1.  En el VSIX manifest editor, en el **activos** ficha, elija **New** y establecer las propiedades del elemento nuevo:  
+    1. En el VSIX manifest editor, en el **activos** ficha, elija **New** y establecer las propiedades del elemento nuevo:  
   
          **Tipo de contenido** = **VSPackage**  
   
          **Proyecto de origen** = \<*el proyecto actual*>  
   
-    2.  Haga clic en **ediciones seleccionadas** y compruebe los tipos de instalación en el que desea que el procesador de directivas que se pueda usar.  
+    2. Haga clic en **ediciones seleccionadas** y compruebe los tipos de instalación en el que desea que el procesador de directivas que se pueda usar.  
   
-3.  Agregue un archivo .pkgdef y establezca sus propiedades para incluirlo en el proyecto VSIX.  
+3. Agregue un archivo .pkgdef y establezca sus propiedades para incluirlo en el proyecto VSIX.  
   
-    1.  Cree un archivo de texto y denomínelo \< *assemblyName*> pkgdef.  
+    1. Cree un archivo de texto y denomínelo \< *assemblyName*> pkgdef.  
   
          \<*assemblyName*> suele ser el mismo que el nombre del proyecto.  
   
-    2.  Selecciónelo en el Explorador de soluciones y establezca sus propiedades de la manera siguiente:  
+    2. Selecciónelo en el Explorador de soluciones y establezca sus propiedades de la manera siguiente:  
   
          **Acción de compilación** = **contenido**  
   
@@ -79,9 +76,9 @@ Para utilizar un procesador de directivas personalizado en [!INCLUDE[vsprvs](../
   
          **Incluir en VSIX** = **True**  
   
-    3.  Establezca el nombre de la extensión VSIX y asegúrese de que el identificador es único.  
+    3. Establezca el nombre de la extensión VSIX y asegúrese de que el identificador es único.  
   
-4.  Agregue el siguiente texto en el archivo .pkgdef.  
+4. Agregue el siguiente texto en el archivo .pkgdef.  
   
     ```  
     [$RootKey$\TextTemplating]  
@@ -94,46 +91,46 @@ Para utilizar un procesador de directivas personalizado en [!INCLUDE[vsprvs](../
   
      Reemplace los siguientes nombres con sus propios nombres: `CustomDirectiveProcessorName`, `NamespaceName`, `ClassName`, `AssemblyName`.  
   
-5.  Agregue las referencias siguientes al proyecto:  
+5. Agregue las referencias siguientes al proyecto:  
   
-    -   **Microsoft.VisualStudio.TextTemplating.\*.0**  
+    - **Microsoft.VisualStudio.TextTemplating.\*.0**  
   
-    -   **Microsoft.VisualStudio.TextTemplating.Interfaces.\*.0**  
+    - **Microsoft.VisualStudio.TextTemplating.Interfaces.\*.0**  
   
-    -   **Microsoft.VisualStudio.TextTemplating.VSHost.\*.0**  
+    - **Microsoft.VisualStudio.TextTemplating.VSHost.\*.0**  
   
-6.  Agregue la clase de procesador de directivas personalizado al proyecto.  
+6. Agregue la clase de procesador de directivas personalizado al proyecto.  
   
      Se trata de una clase pública que debe implementar <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> o <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor>.  
   
 #### <a name="to-install-the-custom-directive-processor"></a>Para instalar el procesador de directivas personalizado  
   
-1.  En el Explorador de Windows (Explorador de archivos en Windows 8), abra el directorio de compilación (normalmente bin\Debug o bin\Release).  
+1. En el Explorador de Windows (Explorador de archivos en Windows 8), abra el directorio de compilación (normalmente bin\Debug o bin\Release).  
   
-2.  Si desea instalar el procesador de directivas en otro equipo, copie el archivo .vsix en el otro equipo.  
+2. Si desea instalar el procesador de directivas en otro equipo, copie el archivo .vsix en el otro equipo.  
   
-3.  Haga doble clic en el archivo .vsix. Aparecerá el instalador de extensiones de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+3. Haga doble clic en el archivo .vsix. Aparecerá el instalador de extensiones de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-4.  Reinicie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Ahora podrá ejecutar plantillas de texto que contienen directivas que hacen referencia al procesador de directivas personalizado. Cada directiva tiene el formato:  
+4. Reinicie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Ahora podrá ejecutar plantillas de texto que contienen directivas que hacen referencia al procesador de directivas personalizado. Cada directiva tiene el formato:  
   
      `<#@ CustomDirective Processor="CustomDirectiveProcessorName" parameter1="value1" … #>`  
   
 #### <a name="to-uninstall-or-temporarily-disable-the-custom-directive-processor"></a>Para desinstalar o deshabilitar temporalmente el procesador de directivas personalizado  
   
-1.  En el [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **herramientas** menú, haga clic en **Administrador de extensiones**.  
+1. En el [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **herramientas** menú, haga clic en **Administrador de extensiones**.  
   
-2.  Seleccione la extensión VSIX que contiene el procesador de directivas y, a continuación, haga clic en **desinstalar** o **deshabilitar**.  
+2. Seleccione la extensión VSIX que contiene el procesador de directivas y, a continuación, haga clic en **desinstalar** o **deshabilitar**.  
   
 ### <a name="troubleshooting-a-directive-processor-in-a-vsix"></a>Solucionar problemas de un procesador de directivas en una extensión VSIX  
  Si el procesador de directivas no funciona, las siguientes sugerencias pueden servir de ayuda:  
   
--   El nombre del procesador que especifica en la directiva personalizada debe coincidir con el valor de `CustomDirectiveProcessorName` que especificó en el archivo .pkgdef.  
+- El nombre del procesador que especifica en la directiva personalizada debe coincidir con el valor de `CustomDirectiveProcessorName` que especificó en el archivo .pkgdef.  
   
--   El método `IsDirectiveSupported` debe devolver `true` cuando se pasa el nombre de `CustomDirective`.  
+- El método `IsDirectiveSupported` debe devolver `true` cuando se pasa el nombre de `CustomDirective`.  
   
--   Si no puede ver la extensión en el Administrador de extensiones, pero el sistema no permitirá que lo instale, elimine la extensión de **%localappdata%\Microsoft\VisualStudio\\\*. 0\Extensions\\** .  
+- Si no puede ver la extensión en el Administrador de extensiones, pero el sistema no permitirá que lo instale, elimine la extensión de **%localappdata%\Microsoft\VisualStudio\\\*. 0\Extensions\\** .  
   
--   Abra el archivo .vsix e inspeccione su contenido. Para abrirlo, cambie la extensión del nombre del archivo a .zip. Compruebe que contiene los archivos .dll, .pkgdef y extension.vsixmanifest. El archivo extension.vsixmanifest debe contener la lista adecuada del nodo SupportedProducts y un nodo VsPackage bajo el nodo Contenido:  
+- Abra el archivo .vsix e inspeccione su contenido. Para abrirlo, cambie la extensión del nombre del archivo a .zip. Compruebe que contiene los archivos .dll, .pkgdef y extension.vsixmanifest. El archivo extension.vsixmanifest debe contener la lista adecuada del nodo SupportedProducts y un nodo VsPackage bajo el nodo Contenido:  
   
      `<Content>`  
   
@@ -177,19 +174,19 @@ Para utilizar un procesador de directivas personalizado en [!INCLUDE[vsprvs](../
   
 3. Agregue una clave del Registro con el mismo nombre que la clase de procesador de directivas.  
   
-   -   En el árbol del registro, haga clic en el **DirectiveProcessors** nodo, seleccione **New**y, a continuación, haga clic en **clave**.  
+   - En el árbol del registro, haga clic en el **DirectiveProcessors** nodo, seleccione **New**y, a continuación, haga clic en **clave**.  
   
 4. En el nuevo nodo, agregue valores de cadena para Class y CodeBase o Assembly, según las siguientes tablas.  
   
-   1.  Haga clic en el nodo que ha creado, seleccione **New**y, a continuación, haga clic en **valor de cadena**.  
+   1. Haga clic en el nodo que ha creado, seleccione **New**y, a continuación, haga clic en **valor de cadena**.  
   
-   2.  Edite el nombre del valor.  
+   2. Edite el nombre del valor.  
   
-   3.  Haga doble clic en el nombre y edite los datos.  
+   3. Haga doble clic en el nombre y edite los datos.  
   
    Si el procesador de directivas personalizado no se encuentra en la GAC, las subclaves del Registro deben ser similares a las que aparecen en la siguiente tabla:  
   
-|nombre|Tipo|Datos|  
+|Name|Tipo|Datos|  
 |----------|----------|----------|  
 |(Predeterminado)|REG_SZ|(valor no establecido)|  
 |Clase|REG_SZ|**\<Nombre de Namespace >. \<Nombre de clase >**|  
@@ -197,7 +194,7 @@ Para utilizar un procesador de directivas personalizado en [!INCLUDE[vsprvs](../
   
  Si el ensamblado se encuentra en la GAC, las subclaves del Registro deben ser similares a las que se muestran en la siguiente tabla:  
   
-|nombre|Tipo|Datos|  
+|Name|Tipo|Datos|  
 |----------|----------|----------|  
 |(Predeterminado)|REG_SZ|(valor no establecido)|  
 |Clase|REG_SZ|\<**El nombre de clase completo**>|  
@@ -205,6 +202,3 @@ Para utilizar un procesador de directivas personalizado en [!INCLUDE[vsprvs](../
   
 ## <a name="see-also"></a>Vea también  
  [Crear procesadores de directivas personalizadas para las plantillas de texto T4](../modeling/creating-custom-t4-text-template-directive-processors.md)
-
-
-

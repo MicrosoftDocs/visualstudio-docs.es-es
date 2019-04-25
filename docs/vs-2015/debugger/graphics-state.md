@@ -1,29 +1,24 @@
 ---
 title: Estado de los gráficos | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.statewindow
 ms.assetid: 97e7757e-c372-4626-8149-99a81367a0e1
 caps.latest.revision: 5
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c5100f32a7a706f0d61e3b0ac006c8168e1ee553
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 485969b40fdcedd2ec8835de8d9c9a699aba9e79
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750372"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091790"
 ---
-# <a name="graphics-state"></a>Estado de los gráficos
+# <a name="graphics-state"></a>Estado de gráficos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 La ventana de estado de diagnóstico de gráficos de Visual Studio ofrece información sobre el estado activo de los gráficos en el momento del evento actual (por ejemplo, durante una llamada a draw).  
@@ -42,23 +37,23 @@ La ventana de estado de diagnóstico de gráficos de Visual Studio ofrece inform
   
 ##### <a name="to-change-the-state-view"></a>Para cambiar la vista de estado:  
   
--   En la ventana de estado, vaya a la esquina superior izquierda, justo debajo de la barra de título, y elija el botón correspondiente al estilo de vista de estado que desea usar.  
+- En la ventana de estado, vaya a la esquina superior izquierda, justo debajo de la barra de título, y elija el botón correspondiente al estilo de vista de estado que desea usar.  
   
-    -   **Mostrar la vista de estado de entrada de API**  
+    - **Mostrar la vista del estado de entrada de la API**  
   
-    -   **Vista Mostrar estado lógico**  
+    - **Vista Mostrar estado lógico**  
   
-    -   **Vista Mostrar estado anclado**  
+    - **Vista Mostrar estado anclado**  
   
 > [!IMPORTANT]
->  Debe anclar el estado en el **API Mostrar estado de entrada** o **Mostrar estado lógico** vistas para que se muestre en el **vista Mostrar estado anclado**.  
+>  Debe anclar el estado en las vistas **Mostrar estado de entrada de la API** o **Mostrar estado lógico** para que se muestre en la **Vista Mostrar estado anclado**.  
   
 ### <a name="state-table-format"></a>Formato de la tabla de estado  
  La ventana de estado contiene varias columnas de información.  
   
 |Columna|Descripción|  
 |------------|-----------------|  
-|nombre|El nombre del elemento de estado. Si este elemento representa una agrupación de estado, puede expandirse para mostrarla.<br /><br /> En el **vista de estado de entrada de API** y **vista estado lógico** indica que se aplica sangría a los nombres para mostrar la relación jerárquica entre Estados.<br /><br /> En el **vista de estado anclado** de estado, se muestran los nombres completos en una lista plana.|  
+|Name|El nombre del elemento de estado. Si este elemento representa una agrupación de estado, puede expandirse para mostrarla.<br /><br /> En los estados de la **vista de estado de entrada de la API** y la **vista de estado lógico**, se aplica sangría a los nombres para mostrar la relación jerárquica entre los estados.<br /><br /> En el estado de la **vista de estado anclado**, se muestran los nombres completos en una lista plana.|  
 |Valor|El valor del elemento de estado.|  
 |Tipo|El tipo del elemento de estado.|  
   
@@ -72,11 +67,8 @@ La ventana de estado de diagnóstico de gráficos de Visual Studio ofrece inform
   
 ##### <a name="to-pin-state-in-place"></a>Para anclar el estado en su lugar:  
   
-1.  En la ventana de estado, busque el estado que le interesa. Posiblemente deberá expandir el estado de alto nivel para localizar los detalles que le interesan.  
+1. En la ventana de estado, busque el estado que le interesa. Posiblemente deberá expandir el estado de alto nivel para localizar los detalles que le interesan.  
   
-2.  Sitúe el cursor sobre el estado que le interesa. Aparecerá un icono de pin a la izquierda del elemento de estado.  
+2. Sitúe el cursor sobre el estado que le interesa. Aparecerá un icono de pin a la izquierda del elemento de estado.  
   
-3.  Para anclar el elemento de estado en su lugar, elija el icono de pin.
-
-
-
+3. Para anclar el elemento de estado en su lugar, elija el icono de pin.

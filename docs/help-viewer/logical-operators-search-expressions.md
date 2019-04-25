@@ -1,7 +1,6 @@
 ---
 title: Operadores lógicos y avanzados en expresiones de búsqueda (Visor de Ayuda)
 ms.date: 11/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - Help Viewer, logical operators in search
@@ -9,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 0c38ae7d-3e20-4d47-a020-9677cd285916
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b5e9739ffe1e66186f62bb87ef5ffabdef27801a
-ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
+ms.openlocfilehash: dc27a5206b7939cd55fc95878d2cc8968ae8bf39
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "54406113"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55944226"
 ---
 # <a name="logical-and-advanced-operators-in-search-expressions"></a>Operadores lógicos y avanzados en expresiones de búsqueda
 

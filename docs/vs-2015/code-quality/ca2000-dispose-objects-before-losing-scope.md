@@ -1,14 +1,9 @@
 ---
-title: 'CA2000: Eliminar objetos antes de perder el ámbito | Microsoft Docs'
-ms.custom: ''
+title: 'CA2000: Eliminar objetos antes de perder el ámbito | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2000
 - Dispose objects before losing scope
@@ -21,14 +16,14 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ce258af87dc9a7732200b410113ee778e0bfbccb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 4cc41376905dd5bd5df5711d2de3edf1ea1d04dd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49857866"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085043"
 ---
-# <a name="ca2000-dispose-objects-before-losing-scope"></a>CA2000: Eliminar objetos antes de perder el ámbito
+# <a name="ca2000-dispose-objects-before-losing-scope"></a>CA2000: Desechar objetos antes de perder el ámbito
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||  
@@ -51,11 +46,11 @@ ms.locfileid: "49857866"
   
  A continuación se indican algunas situaciones donde la instrucción using no es suficiente para proteger objetos IDisposable, lo que puede hacer que se produzca la advertencia CA2000.  
   
--   Devolver un objeto descartable requiere que el objeto se construya en un bloque try/finally fuera de un bloque using.  
+- Devolver un objeto descartable requiere que el objeto se construya en un bloque try/finally fuera de un bloque using.  
   
--   No deben inicializarse miembros de un objeto descartable en el constructor de una instrucción using.  
+- No deben inicializarse miembros de un objeto descartable en el constructor de una instrucción using.  
   
--   Anidar constructores únicamente protegidos por un controlador de excepciones. Por ejemplo,  
+- Anidar constructores únicamente protegidos por un controlador de excepciones. Por ejemplo,  
   
     ```  
     using (StreamReader sr = new StreamReader(new FileStream("C:\myfile.txt", FileMode.Create)))  
@@ -64,15 +59,15 @@ ms.locfileid: "49857866"
   
      hace que se produzca CA2000 porque un error en la construcción del objeto StreamReader puede hacer que el objeto FileStream nunca se cierre.  
   
--   Los objetos dinámicos deben usar un objeto de sombra para implementar el patrón Dispose de los objetos IDisposable.  
+- Los objetos dinámicos deben usar un objeto de sombra para implementar el patrón Dispose de los objetos IDisposable.  
   
 ## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias  
  No suprima una advertencia de esta regla a menos que haya llamado a un método del objeto que llama a `Dispose`, como <xref:System.IO.Stream.Close%2A>, o si el método que generó la advertencia devuelve un objeto IDisposable que ajusta el objeto.  
   
 ## <a name="related-rules"></a>Reglas relacionadas  
- [CA2213: Aplique Dispose a los campos a los que se pueda](../code-quality/ca2213-disposable-fields-should-be-disposed.md)  
+ [CA2213: los campos descartables deben ser descartables](../code-quality/ca2213-disposable-fields-should-be-disposed.md)  
   
- [CA2202: No usar Dispose varias veces en objetos](../code-quality/ca2202-do-not-dispose-objects-multiple-times.md)  
+ [CA2202: No desechar objetos varias veces](../code-quality/ca2202-do-not-dispose-objects-multiple-times.md)  
   
 ## <a name="example"></a>Ejemplo  
  Si implementa un método que devuelve un objeto descartable, use un bloque try/finally sin un bloque catch para asegurarse de que el objeto se elimina. Al usar un bloque try/finally, permite la generación de excepciones en el momento del error y se asegura de que se elimine el objeto.  

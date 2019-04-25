@@ -1,23 +1,25 @@
 ### YamlMime:YamlDocument
-ms.openlocfilehash: c9110582a80de3031ed4d2698a4f1afcf31e3b72
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.openlocfilehash: b9b709c14cf0f22d12054322635c852e09214316
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53442941"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323193"
 documentType: LandingData
-title: Visual Studio | Visual Basic
+title: Tutoriales de Visual Studio | Visual Basic
 metadata:
   title: Desarrollo de Visual Basic con Visual Studio | Microsoft Docs
   description: Tutoriales y artículos conceptuales sobre el desarrollo de aplicaciones de Visual Basic con Visual Studio.
   ms.custom: seodec18
   author: ghogen
-  manager: douge
-  ms.prod: visual-studio-dev15
+  manager: jillfra
+  ms.prod: visual-studio-windows
   ms.technology: vs-acquisition
   ms.topic: landing-page
   ms.date: 10/30/2018
   ms.author: ghogen
+abstract:
+  description: En esta página hay vínculos a tutoriales para principiantes en los que se enseña Visual Studio para usuarios de Visual Basic. Para acceder a toda la documentación de Visual Studio, vea <a href="/visualstudio/ide/">Visual Studio</a>. Para acceder a la documentación de lenguaje de Visual Basic, vea <a href=/dotnet/visual-basic>Guía de Visual Basic</a>.
 sections:
 - title: Primeros pasos
   items:
@@ -43,6 +45,11 @@ sections:
     className: cardsM
     columns: 3
     items:
+    - href: ../tutorial-open-project-from-repo.md?toc=/visualstudio/get-started/visual-basic/toc.json&bc=/visualstudio/get-started/visual-basic/breadcrumb/toc.json
+      html: <p></p>
+      image:
+        src: https://docs.microsoft.com/media/common/i_pull-request.svg
+      title: Abrir código desde un repositorio
     - href: tutorial-console.md
       html: <p></p>
       image:
@@ -72,7 +79,7 @@ sections:
     className: cardsM
     columns: 3
     items:
-    - href: quickstart-editor.md
+    - href: tutorial-editor.md
       html: <p></p>
       image:
         src: https://docs.microsoft.com/media/common/i_code-edit.svg

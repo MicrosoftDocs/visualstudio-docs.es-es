@@ -1,37 +1,31 @@
 ---
 title: Comparar propiedades y elementos | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - msbuild, msbuild properties
 ms.assetid: b9da45ae-d6a6-4399-8628-397deed31486
 caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 9d42cc8fb4e5ba0783ad24aedc0edf7a323db4d9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 66fc8065e81b8b93e73ec034a166e3d5645d4b6b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878588"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095833"
 ---
 # <a name="comparing-properties-and-items"></a>Comparar propiedades y elementos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Las propiedades y elementos de MSBuild se utilizan para pasar información a las tareas, evaluar condiciones y almacenar valores a los que se puede hacer referencia en el archivo del proyecto.  
   
--   Las propiedades son pares de nombre-valor. Para obtener más información, consulte [Propiedades de MSBuild](msbuild-properties1.md).  
+- Las propiedades son pares de nombre-valor. Para obtener más información, consulte [Propiedades de MSBuild](msbuild-properties1.md).  
   
--   Los elementos son objetos que normalmente representan archivos. Los objetos de elemento pueden tener asociadas colecciones de metadatos. Los metadatos son pares de nombre-valor. Para obtener más información, consulte [Elementos](../msbuild/msbuild-items.md).  
+- Los elementos son objetos que normalmente representan archivos. Los objetos de elemento pueden tener asociadas colecciones de metadatos. Los metadatos son pares de nombre-valor. Para obtener más información, consulte [Elementos](../msbuild/msbuild-items.md).  
   
 ## <a name="scalars-and-vectors"></a>Escalares y vectores  
  Dado que las propiedades de MSBuild son pares de nombre-valor que tienen un solo valor de cadena, a menudo se describen como *escalares*. Puesto que los tipos de elemento de MSBuild son listas de elementos, a menudo se describen como *vector*. Sin embargo, en la práctica, las propiedades pueden representar varios valores y los tipos de elemento pueden tener un elemento o ninguno.  
@@ -102,15 +96,15 @@ Las propiedades y elementos de MSBuild se utilizan para pasar información a las
   
 - Durante la fase de evaluación de una compilación:  
   
-  -   Las propiedades se definen y modifican en el orden en que aparecen. Las funciones de propiedad se ejecutan. Los valores de propiedad en la forma $(PropertyName) se expanden dentro de las expresiones. El valor de propiedad se establece en la expresión expandida.  
+  - Las propiedades se definen y modifican en el orden en que aparecen. Las funciones de propiedad se ejecutan. Los valores de propiedad en la forma $(PropertyName) se expanden dentro de las expresiones. El valor de propiedad se establece en la expresión expandida.  
   
-  -   Las definiciones de elementos se definen y modifican en el orden en que aparecen. Las funciones de propiedad ya se han expandido dentro de las expresiones. Los valores de metadatos se establecen en las expresiones expandidas.  
+  - Las definiciones de elementos se definen y modifican en el orden en que aparecen. Las funciones de propiedad ya se han expandido dentro de las expresiones. Los valores de metadatos se establecen en las expresiones expandidas.  
   
-  -   Los tipos de elemento se definen y modifican en el orden en que aparecen. Los valores de elemento en la forma @(ItemType) se expanden. Las transformaciones de elemento también se expanden. Las funciones de propiedad ya se han expandido dentro de las expresiones. La lista de elementos y los valores de metadatos se establecen en las expresiones expandidas.  
+  - Los tipos de elemento se definen y modifican en el orden en que aparecen. Los valores de elemento en la forma @(ItemType) se expanden. Las transformaciones de elemento también se expanden. Las funciones de propiedad ya se han expandido dentro de las expresiones. La lista de elementos y los valores de metadatos se establecen en las expresiones expandidas.  
   
 - Durante la fase de ejecución de una compilación:  
   
-  -   Las propiedades y los elementos que se definen dentro de los destinos se evalúan conjuntamente en el orden en que aparecen. Las funciones de propiedad se ejecutan y los valores de propiedad se expanden dentro de las expresiones. Los valores de elemento y las transformaciones de elemento también se expanden. Los valores de propiedad, de tipo de elemento y de metadatos se establecen en las expresiones expandidas.  
+  - Las propiedades y los elementos que se definen dentro de los destinos se evalúan conjuntamente en el orden en que aparecen. Las funciones de propiedad se ejecutan y los valores de propiedad se expanden dentro de las expresiones. Los valores de elemento y las transformaciones de elemento también se expanden. Los valores de propiedad, de tipo de elemento y de metadatos se establecen en las expresiones expandidas.  
   
 ### <a name="subtle-effects-of-the-evaluation-order"></a>Efectos sutiles del orden de evaluación  
  En la fase de evaluación de una compilación, la evaluación de propiedades precede a la evaluación de elementos. No obstante, las propiedades pueden tener valores que parezcan depender de valores de elemento. Considere el script siguiente.  
@@ -189,6 +183,3 @@ KeyFileVersion: 1.0.0.3
   
 ## <a name="see-also"></a>Vea también  
  [Conceptos avanzados](../msbuild/msbuild-advanced-concepts.md)
-
-
-

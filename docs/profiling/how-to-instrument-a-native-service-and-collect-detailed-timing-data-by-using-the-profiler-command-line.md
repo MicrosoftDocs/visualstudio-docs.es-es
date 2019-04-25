@@ -5,52 +5,52 @@ ms.topic: conceptual
 ms.assetid: dfe58b39-63f8-4a87-ab3a-2b5b14faa8d0
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9a4b01cb5543da45733be05c24b8b09209107b68
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b2be1ac0818f7efd31fb30981e50eff5e42df7af
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53966630"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56634791"
 ---
 # <a name="how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line"></a>Procedimiento Instrumentar un servicio nativo y recopilar datos detallados de control de tiempo mediante la línea de comandos del generador de perfiles
-En este artículo se describe cómo utilizar las herramientas de línea de comandos de las Herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para instrumentar un servicio nativo (C/C++) y recopilar datos de control de tiempo detallados.  
+En este artículo se describe cómo utilizar las herramientas de línea de comandos de las Herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para instrumentar un servicio nativo (C/C++) y recopilar datos de control de tiempo detallados.
 
 > [!NOTE]
->  No puede generar perfiles de un servicio con el método de instrumentación si el servicio no se puede reiniciar después de iniciar el equipo, como por ejemplo un servicio que se inicia solamente cuando se inicia el sistema operativo.  
-> 
+>  No puede generar perfiles de un servicio con el método de instrumentación si el servicio no se puede reiniciar después de iniciar el equipo, como por ejemplo un servicio que se inicia solamente cuando se inicia el sistema operativo.
+>
 >  Para obtener la ruta de acceso a las herramientas de generación de perfiles, vea [Especificar la ruta de acceso a las herramientas de línea de comandos](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). En equipos de 64 bits, están disponibles las dos versiones de las herramientas, la de 64 bits y la de 32 bits. Para utilizar las herramientas de línea de comandos del generador de perfiles, debe agregar la ruta de acceso de las herramientas a la variable de entorno PATH de la ventana Símbolo del sistema o agregarla al propio comando.
- 
- Para recopilar datos de control de tiempo detallados de un servicio nativo mediante el método de instrumentación, utilice la herramienta [VSInstr.exe](../profiling/vsinstr.md) para generar una versión instrumentada del componente. A continuación, reemplace la versión no instrumentada del servicio por la versión instrumentada, asegurándose de que el servicio se configura para iniciarse manualmente. A continuación, inicie el generador de perfiles.  
 
- Cuando se inicia el servicio, los datos de control de tiempo se recopilan automáticamente en un archivo de datos. Puede pausar y reanudar la recolección de datos durante la sesión de generación de perfiles.  
+ Para recopilar datos de control de tiempo detallados de un servicio nativo mediante el método de instrumentación, utilice la herramienta [VSInstr.exe](../profiling/vsinstr.md) para generar una versión instrumentada del componente. A continuación, reemplace la versión no instrumentada del servicio por la versión instrumentada, asegurándose de que el servicio se configura para iniciarse manualmente. A continuación, inicie el generador de perfiles.
 
- Para finalizar una sesión de generación de perfiles, desactive el servicio y, a continuación, apague explícitamente el generador de perfiles.  
+ Cuando se inicia el servicio, los datos de control de tiempo se recopilan automáticamente en un archivo de datos. Puede pausar y reanudar la recolección de datos durante la sesión de generación de perfiles.
 
-## <a name="start-the-application-with-the-profiler"></a>Iniciar la aplicación con el generador de perfiles  
+ Para finalizar una sesión de generación de perfiles, desactive el servicio y, a continuación, apague explícitamente el generador de perfiles.
 
-#### <a name="to-start-profiling-a-native-service"></a>Para iniciar la generación de perfiles de un servicio nativo  
+## <a name="start-the-application-with-the-profiler"></a>Iniciar la aplicación con el generador de perfiles
 
-1. Abra una ventana de símbolo del sistema.  
+#### <a name="to-start-profiling-a-native-service"></a>Para iniciar la generación de perfiles de un servicio nativo
 
-2. Use la herramienta **VSInstr** para generar una versión instrumentada del archivo binario del servicio.  
+1. Abra una ventana de símbolo del sistema.
 
-3. Reemplace el archivo binario original por la versión instrumentada. En el Administrador de control de servicios de Windows, asegúrese de que el Tipo de inicio del servicio está establecido en Manual.  
+2. Use la herramienta **VSInstr** para generar una versión instrumentada del archivo binario del servicio.
 
-4. Inicie el generador de perfiles. Tipo:  
+3. Reemplace el archivo binario original por la versión instrumentada. En el Administrador de control de servicios de Windows, asegúrese de que el Tipo de inicio del servicio está establecido en Manual.
 
-    **VSPerfCmd** [/start](../profiling/start.md) **:trace**  [/output](../profiling/output.md) **:** `OutputFile` [`Options`]  
+4. Inicie el generador de perfiles. Tipo:
 
-   - La opción **/start:trace** inicia el generador de perfiles.  
+    **VSPerfCmd** [/start](../profiling/start.md) **:trace**  [/output](../profiling/output.md) **:** `OutputFile` [`Options`]
 
-   - La opción **/output:**`OutputFile` es necesaria con **/start**. `OutputFile` especifica el nombre y la ubicación del archivo de datos de generación de perfiles (.*vsp*).  
+   - La opción **/start:trace** inicia el generador de perfiles.
 
-     Puede usar cualquiera de las siguientes opciones con la opción **/start:trace**.  
+   - La opción **/output:**`OutputFile` es necesaria con **/start**. `OutputFile` especifica el nombre y la ubicación del archivo de datos de generación de perfiles (.*vsp*).
+
+     Puede usar cualquiera de las siguientes opciones con la opción **/start:trace**.
 
    > [!NOTE]
-   >  Normalmente, las opciones **/user** y **/crosssession** son necesarias para aplicaciones ASP.NET.  
+   >  Normalmente, las opciones **/user** y **/crosssession** son necesarias para aplicaciones ASP.NET.
 
    | Opción | Descripción |
    | - | - |
@@ -64,34 +64,34 @@ En este artículo se describe cómo utilizar las herramientas de línea de coman
    | [/events](../profiling/events-vsperfcmd.md) **:** `Config` | Especifica un evento de Seguimiento de eventos para Windows (ETW) que se va a recopilar durante la generación de perfiles. Los eventos ETW se recopilan en un archivo *.etl* independiente. |
 
 
-5. Inicie el servicio en el Administrador de control de servicios.  
+5. Inicie el servicio en el Administrador de control de servicios.
 
-## <a name="control-data-collection"></a>Controlar la recopilación de datos  
- Cuando se está ejecutando el servicio, puede usar las opciones de *VSPerfCmd.exe* para iniciar y detener la escritura de datos en el archivo de datos del generador de perfiles. Al controlar la recolección de datos, puede recopilar datos de una parte específica de la ejecución de un programa, como por ejemplo el inicio o el cierre de un servicio.  
+## <a name="control-data-collection"></a>Controlar la recopilación de datos
+ Cuando se está ejecutando el servicio, puede usar las opciones de *VSPerfCmd.exe* para iniciar y detener la escritura de datos en el archivo de datos del generador de perfiles. Al controlar la recolección de datos, puede recopilar datos de una parte específica de la ejecución de un programa, como por ejemplo el inicio o el cierre de un servicio.
 
-#### <a name="to-start-and-stop-data-collection"></a>Para iniciar y detener la recolección de datos  
+#### <a name="to-start-and-stop-data-collection"></a>Para iniciar y detener la recolección de datos
 
--   Los siguientes pares de opciones de **VSPerfCmd** inician y detienen la recolección de datos. Especifique cada opción en una línea de comandos diferente. Puede activar y desactivar la recolección de datos varias veces.  
+-   Los siguientes pares de opciones de **VSPerfCmd** inician y detienen la recolección de datos. Especifique cada opción en una línea de comandos diferente. Puede activar y desactivar la recolección de datos varias veces.
 
-    |Opción|Descripción|  
-    |------------|-----------------|  
-    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Inicia (**/globalon**) o detiene (**/globaloff**) la recolección de datos para todos los procesos.|  
-    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Inicia (**/processon**) o detiene (**/processoff**) la recolección de datos para el proceso especificado por el identificador de proceso (`PID`).|  
-    |[/threadon](../profiling/threadon-and-threadoff.md) **:** `TID` [/threadoff](../profiling/threadon-and-threadoff.md) **:** `TID`|Inicia (**/threadon**) o detiene (**/threadoff**) la recopilación de datos para el subproceso especificado por el identificador de subproceso (`TID`).|  
+    |Opción|Descripción|
+    |------------|-----------------|
+    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Inicia (**/globalon**) o detiene (**/globaloff**) la recolección de datos para todos los procesos.|
+    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Inicia (**/processon**) o detiene (**/processoff**) la recolección de datos para el proceso especificado por el identificador de proceso (`PID`).|
+    |[/threadon](../profiling/threadon-and-threadoff.md) **:** `TID` [/threadoff](../profiling/threadon-and-threadoff.md) **:** `TID`|Inicia (**/threadon**) o detiene (**/threadoff**) la recopilación de datos para el subproceso especificado por el identificador de subproceso (`TID`).|
 
-## <a name="end-the-profiling-session"></a>Finalización de la sesión de generación de perfiles  
- Para finalizar una sesión de generación de perfiles, detenga el servicio que está ejecutando el componente instrumentado y, después, llame a la opción [/shutdown](../profiling/shutdown.md) de **VSPerfCmd** para desactivar el generador de perfiles y cerrar el archivo de datos de generación de perfiles.  
+## <a name="end-the-profiling-session"></a>Finalización de la sesión de generación de perfiles
+ Para finalizar una sesión de generación de perfiles, detenga el servicio que está ejecutando el componente instrumentado y, después, llame a la opción [/shutdown](../profiling/shutdown.md) de **VSPerfCmd** para desactivar el generador de perfiles y cerrar el archivo de datos de generación de perfiles.
 
-#### <a name="to-end-a-profiling-session"></a>Para finalizar una sesión de generación de perfiles  
+#### <a name="to-end-a-profiling-session"></a>Para finalizar una sesión de generación de perfiles
 
-1.  Detenga el servicio en el Administrador de control de servicios.  
+1.  Detenga el servicio en el Administrador de control de servicios.
 
-2.  Cierre el generador de perfiles. Tipo:  
+2.  Cierre el generador de perfiles. Tipo:
 
-     **VSPerfCmd /shutdown**  
+     **VSPerfCmd /shutdown**
 
-3.  Reemplace el módulo instrumentado con el original. Si es necesario, vuelva a configurar el Tipo de inicio del servicio.  
+3.  Reemplace el módulo instrumentado con el original. Si es necesario, vuelva a configurar el Tipo de inicio del servicio.
 
-## <a name="see-also"></a>Vea también  
- [Servicios de generación de perfiles](../profiling/command-line-profiling-of-services.md)   
- [Vistas de datos del método de instrumentación](../profiling/instrumentation-method-data-views.md)
+## <a name="see-also"></a>Vea también
+- [Generar perfiles para servicios](../profiling/command-line-profiling-of-services.md)
+- [Vistas de datos del método de instrumentación](../profiling/instrumentation-method-data-views.md)

@@ -15,16 +15,15 @@ helpviewer_keywords:
 ms.assetid: 104d1d19-b5a9-4071-b81e-1b3af08e9c7b
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: fc4164ff4cf88edad8c4b0e4e69a41fc18a0b58c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 94712279b09a4def616ed264483b894c673bafc4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53900221"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062092"
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>Crear consultas parametrizadas de TableAdapter
 
@@ -39,40 +38,40 @@ Crear consultas parametrizadas de TableAdapter en el **Diseñador de Dataset**. 
 
 ### <a name="to-create-a-parameterized-query-in-the-dataset-designer"></a>Para crear una consulta parametrizada en el Diseñador de Dataset
 
--   Cree un nuevo TableAdapter y agregue una cláusula WHERE con los parámetros deseados a la instrucción SQL. Para obtener más información, consulte [crear y configurar TableAdapters](../data-tools/create-and-configure-tableadapters.md).
+- Cree un nuevo TableAdapter y agregue una cláusula WHERE con los parámetros deseados a la instrucción SQL. Para obtener más información, consulte [crear y configurar TableAdapters](../data-tools/create-and-configure-tableadapters.md).
 
-     o bien
+     -o bien-
 
--   Agregue una consulta a un TableAdapter existente, y agregue una cláusula WHERE con los parámetros deseados a la instrucción SQL.
+- Agregue una consulta a un TableAdapter existente, y agregue una cláusula WHERE con los parámetros deseados a la instrucción SQL.
 
 ### <a name="to-create-a-parameterized-query-while-designing-a-data-bound-form"></a>Para crear una consulta parametrizada durante el diseño de un formulario enlazado a datos
 
-1.  Seleccione en el formulario un control que ya esté enlazado a un conjunto de datos. Para obtener más información, consulte [controla el enlace Windows Forms a datos en Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md).
+1. Seleccione en el formulario un control que ya esté enlazado a un conjunto de datos. Para obtener más información, consulte [controla el enlace Windows Forms a datos en Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md).
 
-2.  En el **datos** menú, seleccione **Agregar consulta**.
+2. En el **datos** menú, seleccione **Agregar consulta**.
 
-3.  Complete el cuadro de diálogo **Generador de criterios de búsqueda** y agregue una cláusula WHERE con los parámetros deseados a la instrucción SQL.
+3. Complete el cuadro de diálogo **Generador de criterios de búsqueda** y agregue una cláusula WHERE con los parámetros deseados a la instrucción SQL.
 
 ### <a name="to-add-a-query-to-an-existing-data-bound-form"></a>Para agregar una consulta a un formulario enlazado a datos existente
 
-1.  Abra el formulario en el **Diseñador de Windows Forms**.
+1. Abra el formulario en el **Diseñador de Windows Forms**.
 
-2.  En el **datos** menú, seleccione **Agregar consulta** o **etiquetas inteligentes de datos**.
+2. En el **datos** menú, seleccione **Agregar consulta** o **etiquetas inteligentes de datos**.
 
     > [!NOTE]
     > Si **Agregar consulta** no está disponible en el menú **Datos**, seleccione un control en el formulario que muestra el origen de datos al que quiere agregar parametrización. Por ejemplo, si el formulario muestra datos en un control <xref:System.Windows.Forms.DataGridView>, selecciónelo. Si el formulario muestra datos en controles individuales, seleccione un control enlazado a datos.
 
-3.  En el **tabla de origen de datos seleccione** área, seleccione la tabla a la que desea agregar parametrización.
+3. En el **tabla de origen de datos seleccione** área, seleccione la tabla a la que desea agregar parametrización.
 
-4.  Escriba un nombre en el cuadro **Nuevo nombre de consulta** si va a crear una nueva consulta.
+4. Escriba un nombre en el cuadro **Nuevo nombre de consulta** si va a crear una nueva consulta.
 
-     o bien
+     -o bien-
 
      Seleccione una consulta en el cuadro **Nombre de consulta existente**.
 
-5.  En el **texto de la consulta** , escriba una consulta que toma parámetros.
+5. En el **texto de la consulta** , escriba una consulta que toma parámetros.
 
-6.  Seleccione **Aceptar**.
+6. Seleccione **Aceptar**.
 
      Se agregan al formulario un control para especificar los valores del parámetro y un botón **Cargar**, en un control <xref:System.Windows.Forms.ToolStrip>.
 
@@ -93,11 +92,11 @@ Si se tratara de una consulta en un TableAdapter, podría consultar todos los pe
 
 Para habilitar una consulta que acepte valores null:
 
-1.  En el **Diseñador de Dataset**, seleccione la consulta de TableAdapter que debe aceptar los valores de parámetro null.
+1. En el **Diseñador de Dataset**, seleccione la consulta de TableAdapter que debe aceptar los valores de parámetro null.
 
-2.  En el **propiedades** ventana, seleccione **parámetros**, a continuación, haga clic en el botón de puntos suspensivos (**...** ) para abrir el **Editor de la colección de parámetros**.
+2. En el **propiedades** ventana, seleccione **parámetros**, a continuación, haga clic en el botón de puntos suspensivos (**...** ) para abrir el **Editor de la colección de parámetros**.
 
-3.  Seleccione el parámetro que permite valores null y establezca el **AllowDbNull** propiedad `true`.
+3. Seleccione el parámetro que permite valores null y establezca el **AllowDbNull** propiedad `true`.
 
 ## <a name="see-also"></a>Vea también
 

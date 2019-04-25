@@ -2,21 +2,20 @@
 title: Diseñador de flujo de trabajo - Diseñador de actividades Send
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
 f1_keywords:
 - System.ServiceModel.Activities.Send.UI
 ms.assetid: b514f2e4-767c-4b94-ac61-dd3a54d4b96d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 788884590054b29ae31df9c5ba2ca31ac0ea5c49
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8d27bd9be1b769215dd77d1e906a5698e17bd18b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53954034"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659948"
 ---
 # <a name="send-activity-designer"></a>Diseñador de actividad Sent
 
@@ -37,7 +36,6 @@ Como alternativa, el **SendAndReceiveReply** Diseñador de plantilla en el **men
 ### <a name="the-send-activity-properties"></a>Propiedades de la actividad Send
 
 En la tabla siguiente se muestran las propiedades <xref:System.ServiceModel.Activities.Send> y se describe cómo se utilizan en el diseñador. Estas propiedades se pueden editar en cuadrícula de propiedades o en la superficie del Diseñador de flujo de trabajo.
-
 
 | Nombre de la propiedad | Obligatorio | Uso |
 |-|----------|-|

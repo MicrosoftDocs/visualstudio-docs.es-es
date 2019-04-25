@@ -1,7 +1,6 @@
 ---
 title: 'CA1060: Mover P/Invokes a la clase NativeMethods'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - MovePInvokesToNativeMethodsClass
@@ -12,18 +11,18 @@ helpviewer_keywords:
 ms.assetid: 06686c8c-6ad3-42f7-a355-cbaefa347cfc
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e1dc9cf738e74390ea1867966d20f4246d0b1f8c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a01c8ca81ab469d578d58e6195171c2e3b07704b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53874237"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55957005"
 ---
 # <a name="ca1060-move-pinvokes-to-nativemethods-class"></a>CA1060: Mover P/Invokes a la clase NativeMethods
 

@@ -8,16 +8,15 @@ helpviewer_keywords:
 - Domain-Specific Language, element merge directives
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: cf200620036c41fe4ed975fa6ff60bd1438b7d88
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 00026cd53a67a216e126bcc5de92a136a6359331
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821046"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043529"
 ---
 # <a name="customizing-element-creation-and-movement"></a>Personalizar la creación y el movimiento de los elementos
 
@@ -39,7 +38,7 @@ Aunque pueden parecer las operaciones de creación sea distinto de las operacion
 
 La responsabilidad de una EMD es decidir cómo se debe combinar un objeto o grupo de objetos en una ubicación determinada en el modelo. En concreto, decide qué relaciones deben crearse para vincular el grupo combinado en el modelo. También puede personalizar para establecer las propiedades y para crear objetos adicionales.
 
-![DSL&#45;EMD&#95;fusionar mediante combinación](../modeling/media/dsl-emd_merge.png)
+![DSL&#45;EMD&#95;Merge](../modeling/media/dsl-emd_merge.png)
 
 Una EMD se genera automáticamente al definir una relación de incrustación. Este valor predeterminado EMD crea una instancia de la relación cuando los usuarios agreguen nuevas instancias de elemento secundario al elemento primario. Puede modificar estos EMDs de forma predeterminada, por ejemplo agregando código personalizado.
 
@@ -88,9 +87,9 @@ Los usuarios también pueden pegar elementos en otros elementos.
 
 2. Para permitir que los usuarios combinar elementos en `ExampleElement` formas, crear un nuevo EMD en el `ExampleElement` la clase de dominio:
 
-   1.  En **DSL Explorer**, expanda **clases de dominio**. Haga clic en `ExampleElement` y, a continuación, haga clic en **Agregar directiva de fusión de nuevo elemento**.
+   1. En **DSL Explorer**, expanda **clases de dominio**. Haga clic en `ExampleElement` y, a continuación, haga clic en **Agregar directiva de fusión de nuevo elemento**.
 
-   2.  Asegúrese de que el **detalles de DSL** ventana está abierta, para que puedan ver los detalles de la nueva EMD. (Menú: **Ver**, **otros Windows**, **detalles de DSL**.)
+   2. Asegúrese de que el **detalles de DSL** ventana está abierta, para que puedan ver los detalles de la nueva EMD. (Menú: **Ver**, **otros Windows**, **detalles de DSL**.)
 
 3. Establecer el **clase de indexación** en la ventana Detalles de DSL, para definir qué clase de elementos se puede combinar en `ExampleElement` objetos.
 
@@ -118,29 +117,29 @@ Los usuarios también pueden pegar elementos en otros elementos.
 
 5. Probar el DSL:
 
-   1.  Presione **F5** para volver a generar y ejecutar la solución.
+   1. Presione **F5** para volver a generar y ejecutar la solución.
 
         Volver a generar tardará más tiempo del habitual porque se actualizará el código generado desde plantillas de texto para ajustarse a la nueva definición de DSL.
 
-   2.  Cuando se ha iniciado la instancia experimental de Visual Studio, abra un archivo de modelo de su DSL. Cree algunos elementos de ejemplo.
+   2. Cuando se ha iniciado la instancia experimental de Visual Studio, abra un archivo de modelo de su DSL. Cree algunos elementos de ejemplo.
 
-   3.  Arrastre desde el **ejemplo elemento** herramienta en una forma existente.
+   3. Arrastre desde el **ejemplo elemento** herramienta en una forma existente.
 
         Aparece una forma nueva y esté vinculado a la forma con un conector existente.
 
-   4.  Copie una forma existente. Seleccione otra forma y pegar.
+   4. Copie una forma existente. Seleccione otra forma y pegar.
 
         Se crea una copia de la primera forma.  Tiene un nombre nuevo y esté vinculado a la segunda forma con un conector.
 
 Tenga en cuenta los siguientes puntos de este procedimiento:
 
--   Mediante la creación de directivas de combinación de elementos, puede permitir que cualquier clase de elemento para aceptar cualquier otro. Se crea el EMD en la clase de dominio receptora, y se especifica la clase de dominio aceptado en el **Index (clase)** campo.
+- Mediante la creación de directivas de combinación de elementos, puede permitir que cualquier clase de elemento para aceptar cualquier otro. Se crea el EMD en la clase de dominio receptora, y se especifica la clase de dominio aceptado en el **Index (clase)** campo.
 
--   Al definir las rutas de acceso, puede especificar los vínculos que deben usarse para conectar el nuevo elemento con el modelo existente.
+- Al definir las rutas de acceso, puede especificar los vínculos que deben usarse para conectar el nuevo elemento con el modelo existente.
 
      Los vínculos que especifique deben incluir una relación de incrustación.
 
--   El EMD afecta a ambas creación desde el cuadro de herramientas y también las operaciones de pegar.
+- El EMD afecta a ambas creación desde el cuadro de herramientas y también las operaciones de pegar.
 
      Si escribe código personalizado que crea nuevos elementos, puede invocar explícitamente el EMD utilizando el `ElementOperations.Merge` método. Esto garantiza que el código vincula nuevos elementos en el modelo en la misma manera que otras operaciones. Para obtener más información, consulte [personalizar el comportamiento de copia](../modeling/customizing-copy-behavior.md).
 
@@ -150,21 +149,21 @@ Al agregar código personalizado a una EMD, puede definir el comportamiento de c
 
 ### <a name="to-write-custom-accept-code-to-restrict-what-the-user-can-add"></a>Escribir código de aceptación personalizada para restringir lo que puede agregar el usuario
 
-1.  Crear un DSL con la **lenguaje mínimo** plantilla de solución. Abra el diagrama de definición de DSL.
+1. Crear un DSL con la **lenguaje mínimo** plantilla de solución. Abra el diagrama de definición de DSL.
 
-2.  En el Explorador de DSL, expanda **clases de dominio**, `ExampleModel`, **directivas de combinación de elementos**. Seleccione la directiva de combinación del elemento que se denomina `ExampleElement`.
+2. En el Explorador de DSL, expanda **clases de dominio**, `ExampleModel`, **directivas de combinación de elementos**. Seleccione la directiva de combinación del elemento que se denomina `ExampleElement`.
 
      Este EMD controla cómo el usuario puede crear nuevos `ExampleElement` objetos en el modelo, por ejemplo, arrastre desde el cuadro de herramientas.
 
-3.  En el **detalles de DSL** ventana, seleccione **aceptación personalizada usa**.
+3. En el **detalles de DSL** ventana, seleccione **aceptación personalizada usa**.
 
-4.  Recompilar la solución. Esto tardará más tiempo del habitual porque el código generado se actualizará desde el modelo.
+4. Recompilar la solución. Esto tardará más tiempo del habitual porque el código generado se actualizará desde el modelo.
 
      Un error de compilación será notificado, al igual que: "Company.ElementMergeSample.ExampleElement no contiene una definición para CanMergeExampleElement..."
 
      Debe implementar el método `CanMergeExampleElement`.
 
-5.  Cree un nuevo archivo de código en el **Dsl** proyecto. Reemplace su contenido por el código siguiente y cambiar el espacio de nombres al espacio de nombres del proyecto.
+5. Cree un nuevo archivo de código en el **Dsl** proyecto. Reemplace su contenido por el código siguiente y cambiar el espacio de nombres al espacio de nombres del proyecto.
 
     ```csharp
     using Microsoft.VisualStudio.Modeling;
@@ -193,11 +192,11 @@ Al agregar código personalizado a una EMD, puede definir el comportamiento de c
 
     Este sencillo ejemplo restringe el número de elementos que se pueden combinar en el modelo primario. Para condiciones más interesantes, puede inspeccionar el método cualquiera de las propiedades y los vínculos del objeto receptor. También puede inspeccionar las propiedades de los elementos de combinación, que se realizan en un <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype>. Para obtener más información acerca de `ElementGroupPrototypes`, consulte [personalizar el comportamiento de copia](../modeling/customizing-copy-behavior.md). Para obtener más información sobre cómo escribir código que lee un modelo, vea [navegar y actualizar un modelo en el código de programa](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
-6.  Probar el DSL:
+6. Probar el DSL:
 
-    1.  Presione **F5** para recompilar la solución. Cuando se abre la instancia experimental de Visual Studio, abra una instancia de su DSL.
+    1. Presione **F5** para recompilar la solución. Cuando se abre la instancia experimental de Visual Studio, abra una instancia de su DSL.
 
-    2.  Crear nuevos elementos de varias maneras:
+    2. Crear nuevos elementos de varias maneras:
 
         - Arrastre desde el **ejemplo elemento** herramienta al diagrama.
 
@@ -205,7 +204,7 @@ Al agregar código personalizado a una EMD, puede definir el comportamiento de c
 
         - Copiar y pegar un elemento en el diagrama.
 
-    3.  Compruebe que no se puede usar cualquiera de estas formas de agregar más de cuatro elementos al modelo. Esto es porque todos usan la directiva de fusión de elemento.
+    3. Compruebe que no se puede usar cualquiera de estas formas de agregar más de cuatro elementos al modelo. Esto es porque todos usan la directiva de fusión de elemento.
 
 ## <a name="example-adding-custom-merge-code-to-an-emd"></a>Ejemplo: Agregar código personalizado de mezcla para una EMD
 
@@ -219,19 +218,19 @@ En el código de combinación personalizada, puede definir lo que sucede cuando 
 
 ### <a name="to-override-mergerelate"></a>Para invalidar MergeRelate
 
-1.  En la definición de DSL, asegúrese de que ha definido el EMD a la que desea agregar el código. Si lo desea, puede agregar rutas de acceso y definir código de aceptación personalizada tal como se describe en las secciones anteriores.
+1. En la definición de DSL, asegúrese de que ha definido el EMD a la que desea agregar el código. Si lo desea, puede agregar rutas de acceso y definir código de aceptación personalizada tal como se describe en las secciones anteriores.
 
-2.  En el diagrama DslDefinition, seleccione la clase receptora de la combinación. Normalmente es la clase en el extremo de origen de una relación de incrustación.
+2. En el diagrama DslDefinition, seleccione la clase receptora de la combinación. Normalmente es la clase en el extremo de origen de una relación de incrustación.
 
      Por ejemplo, en un DSL generado a partir de la solución de lenguaje mínimo, seleccione `ExampleModel`.
 
-3.  En el **propiedades** ventana, establezca **genera doble derivada** a **true**.
+3. En el **propiedades** ventana, establezca **genera doble derivada** a **true**.
 
-4.  Recompilar la solución.
+4. Recompilar la solución.
 
-5.  Inspeccionar el contenido de **Dsl\Generated Files\DomainClasses.cs**. Buscar métodos denominados `MergeRelate` y examinar su contenido. Esto ayudará a escribir sus propias versiones.
+5. Inspeccionar el contenido de **Dsl\Generated Files\DomainClasses.cs**. Buscar métodos denominados `MergeRelate` y examinar su contenido. Esto ayudará a escribir sus propias versiones.
 
-6.  En un nuevo archivo de código, escribir una clase parcial para la clase receptora y reemplazar el `MergeRelate` método. No se olvide de llamar al método base. Por ejemplo:
+6. En un nuevo archivo de código, escribir una clase parcial para la clase receptora y reemplazar el `MergeRelate` método. No se olvide de llamar al método base. Por ejemplo:
 
     ```csharp
     partial class ExampleModel

@@ -1,22 +1,21 @@
 ---
 title: Aislar el código probado con Microsoft Fakes
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: f38ce5a070214d96e969d3b27eb1662448e8360c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1d3ec88a8abc0a6fcac47043a1b27d27f5b3e6f4
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53966526"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316462"
 ---
 # <a name="isolate-code-under-test-with-microsoft-fakes"></a>Aislar el código en pruebas con Microsoft Fakes
 
@@ -36,7 +35,8 @@ Fakes tiene dos versiones:
 -   Un proyecto de .NET Framework
 
 > [!NOTE]
-> No se admiten los proyectos de .NET Standard.
+> - No se admiten los proyectos de .NET Standard.
+> - La generación de perfiles con Visual Studio no está disponible para las pruebas que usan Microsoft Fakes.
 
 ## <a name="choose-between-stub-and-shim-types"></a>Elegir entre código auxiliar y corrección de compatibilidad (shim)
 Normalmente, un proyecto de Visual Studio se consideraría un componente, porque esas clases se desarrollan y actualizan al mismo tiempo. Puede considerar el uso de código auxiliar y correcciones de compatibilidad (shims) para las llamadas que el proyecto realice a otros proyectos de la solución o a otros ensamblados a los que el proyecto haga referencia.

@@ -1,7 +1,6 @@
 ---
 title: Pruebas automatizadas de IU
 ms.date: 12/04/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.codedUITest
@@ -14,15 +13,15 @@ helpviewer_keywords:
 - coded UI test
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8dc3e25b55f5f30ebfeb9f790baba0bb5ad8797c
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: b6798af3630f81aa50eaae05b23b6844dcba1f38
+ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54270198"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58897730"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Usar la automatización de la interfaz de usuario para probar el código
 
@@ -49,7 +48,7 @@ Para obtener más información sobre las configuraciones y plataformas compatibl
 
 ## <a name="install-the-coded-ui-test-component"></a>Instalar el componente Prueba automatizada de IU
 
-Para obtener acceso a las plantillas y herramientas de pruebas automatizadas de IU, instale el componente **Prueba automatizada de IU** de Visual Studio 2017.
+Para acceder a las plantillas y herramientas de pruebas automatizadas de IU, instale el componente **Prueba automatizada de IU** de Visual Studio.
 
 1. Inicie el **Instalador de Visual Studio** eligiendo **Herramientas** > **Obtener herramientas y características**.
 
@@ -59,13 +58,17 @@ Para obtener acceso a las plantillas y herramientas de pruebas automatizadas de 
 
 1. Seleccione **Modificar**.
 
-## <a name="create-a-coded-ui-test"></a>Crear una prueba de IU programada
+## <a name="create-a-coded-ui-test"></a>Crear una prueba de IU codificada
 
 1. Cree un proyecto de prueba de IU codificada.
 
-   Las pruebas de IU codificadas deben incluirse en un proyecto de prueba de IU codificada. Si aún no tiene un proyecto de este tipo, cree uno. Elija **Archivo** > **Nuevo** > **Proyecto** para abrir el cuadro de diálogo **Nuevo proyecto**. En el panel de categorías de la izquierda, expanda **Instalado** > **Visual Basic***o***Visual C#** > **Prueba**. Seleccione la plantilla **Proyecto de prueba de IU codificada** y luego elija **Aceptar**.
+   Las pruebas de IU codificadas deben incluirse en un proyecto de prueba de IU codificada. Si aún no tiene un proyecto de este tipo, cree uno. Elija **Archivo** > **Nuevo** > **Proyecto**. Busque la plantilla de proyecto **Proyecto de prueba automatizada de IU** y selecciónela.
+
+   ::: moniker range="vs-2017"
 
    ![Plantilla Proyecto de prueba de IU codificada en el cuadro de diálogo Nuevo proyecto](media/coded-ui-test-project-template.png)
+
+   ::: moniker-end
 
    > [!NOTE]
    > Si no ve la plantilla **Proyecto de prueba automatizada de IU**, necesitará [instalar el componente de prueba automatizada de IU](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component).
@@ -141,7 +144,7 @@ Para obtener acceso a las plantillas y herramientas de pruebas automatizadas de 
 
 8. Ejecute la prueba.
 
-   Use el Explorador de pruebas o abra el menú contextual del método de prueba y después elija **Ejecutar pruebas**. Para obtener más información sobre cómo ejecutar pruebas, vea [Ejecutar pruebas unitarias con el Explorador de pruebas](../test/run-unit-tests-with-test-explorer.md) y *Opciones adicionales para ejecutar pruebas de IU codificadas* en la sección [Pasos adicionales](#what's-next?) al final de este tema.
+   Use el Explorador de pruebas o abra el menú contextual del método de prueba y después elija **Ejecutar pruebas**. Para obtener más información sobre cómo ejecutar pruebas, vea [Ejecutar pruebas unitarias con el Explorador de pruebas](../test/run-unit-tests-with-test-explorer.md) y *Opciones adicionales para ejecutar pruebas de IU codificadas* en la sección [Pasos adicionales](#whats-next) al final de este tema.
 
 Las secciones restantes de este tema proporcionan más detalles sobre los pasos de este procedimiento.
 
@@ -300,7 +303,7 @@ Después de crear la prueba de IU codificada, podrá editarla mediante cualquier
 
        - [Anatomía de una prueba automatizada de IU](../test/anatomy-of-a-coded-ui-test.md)
 
-       - [Procedimientos recomendados para las pruebas automatizadas de IU](../test/best-practices-for-coded-ui-tests.md)
+       - [Procedimientos recomendados para las pruebas de IU codificadas](../test/best-practices-for-coded-ui-tests.md)
 
        - [Probar una aplicación grande con varias asignaciones de IU](../test/testing-a-large-application-with-multiple-ui-maps.md)
 
@@ -399,7 +402,7 @@ Para realizar acciones en los controles de prueba de IU, como clics del mouse o 
 
 Para obtener y establecer los valores de propiedad específicos del control de IU, puede obtener o establecer directamente los valores de las propiedades de un control o puede usar los métodos <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.GetProperty%2A?displayProperty=fullName> y <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.SetProperty%2A?displayProperty=fullName> con el nombre de la propiedad específica que desea obtener o establecer.
 
-<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.GetProperty%2A> devuelve un objeto que puede a su vez convertirse en el objeto <xref:System.Type> apropiado. <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.SetProperty%2A> acepta un objeto para el valor de la propiedad.
+<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.GetProperty%2A> devuelve un objeto que, a su vez, puede convertirse en el objeto <xref:System.Type> apropiado. <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.SetProperty%2A> acepta un objeto para el valor de la propiedad.
 
 ### <a name="to-get-or-set-properties-from-ui-test-controls-directly"></a>Para obtener o establecer las propiedades directamente desde los controles de prueba de IU
 
@@ -444,7 +447,7 @@ Puede analizar pruebas de IU codificadas mediante los registros de dichas prueba
 
 - [Ejecutar pruebas en el proceso de compilación](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts)
 
-- [Cómo: Configurar el agente de pruebas para ejecutar pruebas que interactúen con el escritorio](https://msdn.microsoft.com/Library/3a94dd07-6d17-402c-ae8f-7947143755c9)
+- [Procedimiento Configurar el agente de pruebas para ejecutar pruebas que interactúen con el escritorio](https://msdn.microsoft.com/Library/3a94dd07-6d17-402c-ae8f-7947143755c9)
 
 **Agregar compatibilidad con controles personalizados:**  el marco de pruebas de IU codificadas no admite todas las IU posibles (puede que no sea compatible con la interfaz de usuario que quiera probar). Por ejemplo, no puede crear inmediatamente una prueba automatizada de IU de la interfaz de usuario para Microsoft Excel. Sin embargo, puede crear una extensión al marco de pruebas de IU codificadas que admitirá un control personalizado.
 
@@ -459,7 +462,7 @@ Las pruebas de IU codificadas se suelen usar para automatizar las pruebas manual
 - <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>
 - [Tutorial: Crear, editar y mantener una prueba automatizada de IU](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
-- [Crear una prueba automatizada de IU para probar una aplicación para UWP](test-uwp-app-with-coded-ui-test.md)
+- [Crear una prueba automatizada de IU para probar una aplicación de UWP](test-uwp-app-with-coded-ui-test.md)
 - [Anatomía de una prueba automatizada de IU](../test/anatomy-of-a-coded-ui-test.md)
-- [Procedimientos recomendados para las pruebas automatizadas de IU](../test/best-practices-for-coded-ui-tests.md)
+- [Procedimientos recomendados para las pruebas de IU codificadas](../test/best-practices-for-coded-ui-tests.md)
 - [Probar una aplicación grande con varias asignaciones de IU](../test/testing-a-large-application-with-multiple-ui-maps.md)

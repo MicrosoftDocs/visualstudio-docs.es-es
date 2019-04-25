@@ -1,27 +1,24 @@
 ---
-title: 'Cómo: interceptar un clic en una forma o decorador | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Interceptar un clic en una forma o decorador | Documentos de Microsoft
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
 ms.assetid: e2bc3124-c0c0-4104-9779-a5bf565d7f51
 caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6a3e0d12aa7d5537b9dd11f1b7d4c3daedc68a84
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 9e67b6e999078523c11ba2b59175743e4a8f3d33
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926753"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044240"
 ---
-# <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>Cómo: Interceptar un clic en una forma o decorador
+# <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>Procedimiento Interceptar un clic en una forma o un elemento Decorator
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Los procedimientos siguientes muestran cómo interceptar un clic en una forma o un elemento decorator de icono. Se puede interceptar clics, hace doble clic en, se arrastra, y otras gestos y hacer que el elemento responda.  
@@ -50,11 +47,11 @@ public partial class MyShape // change
   
 #### <a name="to-intercept-a-click-on-an-icon-decorator"></a>Para interceptar un clic en un elemento decorator de icono  
   
-1.  Abra o cree una solución de DSL.  
+1. Abra o cree una solución de DSL.  
   
-2.  Elija o cree una forma que tiene un elemento decorator de icono y asignarlo a una clase de dominio.  
+2. Elija o cree una forma que tiene un elemento decorator de icono y asignarlo a una clase de dominio.  
   
-3.  En un archivo de código que es independiente de los archivos en el `GeneratedCode` carpeta, cree la nueva subclase de ImageField:  
+3. En un archivo de código que es independiente de los archivos en el `GeneratedCode` carpeta, cree la nueva subclase de ImageField:  
   
     ```  
     using Microsoft.VisualStudio.Modeling;  
@@ -92,7 +89,7 @@ public partial class MyShape // change
   
      Debe establecer Handled en verdadero si no desea que el evento que se pasará a la forma que lo contiene.  
   
-4.  Invalide el método InitializeShapeFields en su forma de clase agregando la siguiente definición de clase parcial.  
+4. Invalide el método InitializeShapeFields en su forma de clase agregando la siguiente definición de clase parcial.  
   
     ```  
     public partial class MyShape // change  
@@ -119,9 +116,9 @@ public partial class MyShape // change
     }  
     ```  
   
-1.  Compile y ejecute la solución.  
+1. Compile y ejecute la solución.  
   
-2.  Haga doble clic en el icono en una instancia de la forma. Debería aparecer el mensaje de prueba.  
+2. Haga doble clic en el icono en una instancia de la forma. Debería aparecer el mensaje de prueba.  
   
 ## <a name="intercepting-clicks-and-drags-on-compartmentshape-lists"></a>Interceptar hace clic y arrastra en listas de CompartmentShape  
  El ejemplo siguiente permite a los usuarios cambiar el orden de los elementos en una forma de compartimiento arrastrándolos. Para ejecutar este código:  
@@ -138,19 +135,19 @@ public partial class MyShape // change
   
    En resumen, el código funciona del siguiente modo. En este ejemplo, `ClassShape` es el nombre de la forma de compartimiento.  
   
--   Cuando se crea, un conjunto de controladores de eventos del mouse se adjunta a cada instancia de compartment.  
+- Cuando se crea, un conjunto de controladores de eventos del mouse se adjunta a cada instancia de compartment.  
   
--   El `ClassShape.MouseDown` evento almacena el elemento actual.  
+- El `ClassShape.MouseDown` evento almacena el elemento actual.  
   
--   Cuando el mouse se desplaza fuera del elemento actual, se crea una instancia de MouseAction, que establece el cursor y captura el mouse hasta que se publique.  
+- Cuando el mouse se desplaza fuera del elemento actual, se crea una instancia de MouseAction, que establece el cursor y captura el mouse hasta que se publique.  
   
      Para evitar interferencias con otras acciones del mouse, por ejemplo, seleccione el texto de un elemento, MouseAction no se crea hasta que el mouse ha salido del elemento original.  
   
      Una alternativa a la creación de una MouseAction sería simplemente para escuchar MouseUp. Sin embargo, esto no funcionaría correctamente si el usuario suelta el mouse después de arrastrarlo fuera el compartimiento. MouseAction es capaz de realizar las acciones apropiadas, independientemente de donde se suelta el mouse.  
   
--   Cuando se suelta el mouse, MouseAction.MouseUp reorganiza el orden de los vínculos entre los elementos del modelo.  
+- Cuando se suelta el mouse, MouseAction.MouseUp reorganiza el orden de los vínculos entre los elementos del modelo.  
   
--   El cambio de orden de función desencadena una regla que se actualiza la presentación. Este comportamiento se ha definido y se requiere ningún código adicional.  
+- El cambio de orden de función desencadena una regla que se actualiza la presentación. Este comportamiento se ha definido y se requiere ningún código adicional.  
   
 ```csharp  
 using Microsoft.VisualStudio.Modeling;  
@@ -404,6 +401,3 @@ namespace Company.CompartmentDrag
 ## <a name="see-also"></a>Vea también  
  [Responder a los cambios y propagarlos](../modeling/responding-to-and-propagating-changes.md)   
  [Propiedades de los decoradores](../modeling/properties-of-decorators.md)
-
-
-

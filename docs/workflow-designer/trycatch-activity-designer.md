@@ -2,22 +2,21 @@
 title: Diseñador de flujo de trabajo - Diseñador de actividades TryCatch
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
 f1_keywords:
 - System.Activities.Statements.TryCatch.UI
 - System.Activities.Statements.Catch`1.UI
 ms.assetid: 02a326c2-4009-442f-b7cb-e42121fd2992
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a4a62b660f2deb2b3ab3a092cdfd586a56b2bcb8
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: 079c25b2bbaa37432009f0eeade9673f8d0afd28
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54269818"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55950050"
 ---
 # <a name="trycatch-activity-designer"></a>Diseñador de actividades TryCatch
 

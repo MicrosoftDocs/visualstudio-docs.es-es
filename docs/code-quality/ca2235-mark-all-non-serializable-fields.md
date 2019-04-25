@@ -1,7 +1,6 @@
 ---
 title: 'CA2235: Marcar todos los campos no serializables'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA2235
@@ -12,18 +11,18 @@ helpviewer_keywords:
 ms.assetid: 599ad877-3a15-426c-bf17-5de15427365f
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 484755feac873be04648cfef936b2faa701bba2c
-ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.openlocfilehash: 51bb7c0e38df92873da6c17b305334c2f6aac25b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54154155"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55909520"
 ---
 # <a name="ca2235-mark-all-non-serializable-fields"></a>CA2235: Marcar todos los campos no serializables
 
@@ -39,7 +38,7 @@ ms.locfileid: "54154155"
 
 ## <a name="rule-description"></a>Descripción de la regla
  Un tipo serializable es aquel que está marcado con el <xref:System.SerializableAttribute?displayProperty=fullName> atributo. Cuando se serializa el tipo, un <xref:System.Runtime.Serialization.SerializationException?displayProperty=fullName> excepción se produce si el tipo contiene un campo de instancia de un tipo que no es serializable.
- 
+
  Una excepción a esto es cuando el tipo no usa la serialización personalizada a través de la <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> interfaz. Tipos que implementan esta interfaz proporcionan su propia lógica de serialización y, por lo que no se activarán CA2235 para los campos de instancia que no son serializables de esos tipos.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
@@ -55,7 +54,7 @@ ms.locfileid: "54154155"
  [!code-vb[FxCop.Usage.MarkNonSerializable#1](../code-quality/codesnippet/VisualBasic/ca2235-mark-all-non-serializable-fields_1.vb)]
 
 ## <a name="related-rules"></a>Reglas relacionadas
- [LCA2236: Llamar a métodos de clase base en tipos ISerializable](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)
+ [CA2236: Llamar a métodos de clase base en tipos ISerializable](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)
 
  [CA2240: Implementar ISerializable correctamente](../code-quality/ca2240-implement-iserializable-correctly.md)
 

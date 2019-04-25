@@ -1,14 +1,9 @@
 ---
 title: General, Entorno, Opciones (Cuadro de diálogo) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.Message.0x800a002e
 - VS.ToolsOptionsPages.Environment.General
@@ -31,28 +26,27 @@ ms.assetid: 90fc2e6f-572f-4384-96d8-5678299ce58e
 caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 967036aa0aedef2f789a1352e213079270f70339
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 93e60448ec2820758ac7f5a6a5f7b6c4b0065500
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49206887"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59667202"
 ---
 # <a name="general-environment-options-dialog-box"></a>General, Entorno, Opciones (Cuadro de diálogo)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Use esta página para cambiar, entre otras opciones, los temas de color, la configuración de la barra de estado y las asociaciones de las extensiones de archivo del entorno de desarrollo integrado (IDE). Para acceder al cuadro de diálogo **Opciones**, abra el menú **Herramientas**, pulse **Opciones**, abra la carpeta **Entorno** y pulse la página **General**. Si esta página no aparece en la lista, en el cuadro de diálogo **Opciones**, seleccione la casilla **Mostrar todas las configuraciones**.  
   
 > [!NOTE]
->  Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, abra el menú **Herramientas** y elija **Importar y exportar configuraciones**. Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, abra el menú **Herramientas** y elija **Importar y exportar configuraciones**. Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="visual-experience"></a>Experiencia visual  
  **Tema de color**  
  Pulse el tema de color **Azul**, **Claro** u **Oscuro** para el IDE.  
   
- Puede instalar temas predefinidos adicionales y crear temas personalizados si descarga e instala **Visual Studio 2015 Color Theme Editor** desde la [Galería de Visual Studio](https://visualstudiogallery.msdn.microsoft.com/site/search?f%5B0%5D.Type=RootCategory&f%5B0%5D.Value=tools). Después de instalar esta herramienta, aparecerán temas de color adicionales en el cuadro de lista Tema de color.  
+ Puede instalar temas predefinidos adicionales y crear temas personalizados si descarga e instala **Visual Studio 2015 Color Theme Editor** desde [Visual Studio Marketplace](https://marketplace.visualstudio.com). Después de instalar esta herramienta, aparecerán temas de color adicionales en el cuadro de lista Tema de color.  
   
  Aplicar el tipo título en la barra de menús  
  Los menús están en **Tipo título** de manera predeterminada en Visual Studio 2015. Desactive esta opción para establecerlos en **MAYÚSCULAS**.  
@@ -90,6 +84,3 @@ Use esta página para cambiar, entre otras opciones, los temas de color, la conf
 ## <a name="see-also"></a>Vea también  
  [Opciones de entorno (Cuadro de diálogo)](../../ide/reference/environment-options-dialog-box.md)   
  [Personalizar los diseños de ventana](../../ide/customizing-window-layouts-in-visual-studio.md)
-
-
-

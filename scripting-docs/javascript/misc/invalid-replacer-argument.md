@@ -1,14 +1,9 @@
 ---
 title: Argumento reemplazante no válido | Documentos de Microsoft
-ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-client-threshold
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- javascript
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-windows
+ms.technology: vs-javascript
+ms.topic: reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5035
 dev_langs:
@@ -20,19 +15,19 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0f144e733bf115cc98bf61b23a2ed3e4e3cda1e0
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 46e01a4e6bb989fad2da6f979c79b7aba13df63a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54346220"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060792"
 ---
 # <a name="invalid-replacer-argument"></a>Argumento reemplazante no válido
 Se ha intentado invocar `JSON.stringify` con un argumento que no es válido. El `replacer` argumento debe ser una función o una matriz.  
   
 ### <a name="to-correct-this-error"></a>Para corregir este error  
   
--   Cambiar el `replacer` argumento a una función o una matriz.  
+- Cambiar el `replacer` argumento a una función o una matriz.  
   
 ## <a name="example"></a>Ejemplo  
  El código en este ejemplo genera un error de tiempo de ejecución porque `memberfilter` es un objeto en lugar de una función o matriz.  

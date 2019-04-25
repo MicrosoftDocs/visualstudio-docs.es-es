@@ -1,7 +1,6 @@
 ---
 title: Ir a la línea
 ms.date: 05/18/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - vs.gotoline
@@ -11,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 529fa251-b7b3-49cf-863c-10e0b82ac7cc
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 89bc0016390fd2690a0136b3c3c6c130ab3eae46
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3ae4db65bc4e220a38e8fd5e5fefc221aa7d2eda
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53847560"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62789698"
 ---
 # <a name="go-to-line-dialog-box"></a>Ir a la línea (cuadro de diálogo)
 

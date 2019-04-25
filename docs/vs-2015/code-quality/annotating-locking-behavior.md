@@ -1,14 +1,9 @@
 ---
 title: Anotar comportamiento de bloqueo | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - _Releases_nonreentrant_lock_
 - _Lock_kind_mutex_
@@ -37,13 +32,13 @@ ms.assetid: 07769c25-9b97-4ab7-b175-d1c450308d7a
 caps.latest.revision: 11
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.openlocfilehash: f09b38ceb4a6824ec38f0d9206cf37e0f056ce28
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 66c4aafb380d50ec0faafce931b8ce73e5138e6f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51790765"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052394"
 ---
 # <a name="annotating-locking-behavior"></a>Anotar comportamiento de bloqueo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,11 +58,11 @@ Para evitar errores de simultaneidad en el programa multiproceso, siempre que si
   
  Algunas reglas de la propiedad de subprocesos debe tener en cuenta:  
   
--   Bloqueos de giro son bloqueos uncounted que tienen la propiedad de subprocesos no cifrado.  
+- Bloqueos de giro son bloqueos uncounted que tienen la propiedad de subprocesos no cifrado.  
   
--   Secciones críticas y las exclusiones mutuas se cuentan los bloqueos que tienen la propiedad clara de subproceso.  
+- Secciones críticas y las exclusiones mutuas se cuentan los bloqueos que tienen la propiedad clara de subproceso.  
   
--   Los semáforos y eventos se cuentan los bloqueos que no tienen la propiedad de subprocesos no cifrado.  
+- Los semáforos y eventos se cuentan los bloqueos que no tienen la propiedad de subprocesos no cifrado.  
   
 ## <a name="locking-annotations"></a>Anotaciones de bloqueos  
  En la tabla siguiente se enumera las anotaciones de bloqueos.  
@@ -123,6 +118,3 @@ Para evitar errores de simultaneidad en el programa multiproceso, siempre que si
  [Funciones intrínsecas](../code-quality/intrinsic-functions.md)   
  [Procedimientos recomendados y ejemplos](../code-quality/best-practices-and-examples-sal.md)   
  [Blog del equipo de análisis de código](http://go.microsoft.com/fwlink/p/?LinkId=251197)
-
-
-

@@ -1,19 +1,18 @@
 ---
 title: Extender las pruebas automatizadas de IU y las grabaciones de acciones
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 71e5ae809cf2c42e032d8545f0007c61d97e7047
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 07cdc27cb47a6de46585f573d78b5af00631c2a2
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53842179"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55951194"
 ---
 # <a name="extend-coded-ui-tests-and-action-recordings"></a>Extender las pruebas automatizadas de IU y las grabaciones de acciones
 

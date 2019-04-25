@@ -9,17 +9,18 @@ helpviewer_keywords:
 ms.assetid: 9118eaa4-0453-4dc5-9e16-c7062d254869
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f356fe21f512ae1fabb51df3ab562b067a692665
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 078bf457c798c0be9ac56aad1859c6750881922a
+ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821150"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "57870278"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>Dentro de Visual Studio SDK
+
 En esta sección se proporciona información detallada acerca de las extensiones de Visual Studio, incluida la arquitectura de Visual Studio, componentes, servicios, esquemas, utilidades y similares.
 
 ## <a name="extensibility-architecture"></a>Arquitectura de extensibilidad
@@ -55,13 +56,13 @@ En esta sección se proporciona información detallada acerca de las extensiones
 
  Ventanas de herramientas normalmente ofrecen diversos controles con el que el usuario puede interactuar. Por ejemplo, el **propiedades** ventana permite al usuario establecer las propiedades de objetos que sirven para un propósito determinado. El **propiedades** ventana está especializado en este sentido, pero también general porque se puede usar en muchas situaciones diferentes. De forma similar, el **salida** está especializada en la ventana porque proporciona salida basado en texto, pero general porque muchos subsistemas en Visual Studio pueden usar para proporcionar la salida para el usuario de Visual Studio.
 
- Tenga en cuenta la siguiente imagen de Visual Studio, que contiene varias ventanas de herramientas.
+ Tenga en cuenta la siguiente imagen de Visual Studio, que contiene varias ventanas de herramientas:
 
  ![Captura de pantalla](../../extensibility/internals/media/t1gui.png "T1gui")
 
  Algunas de las ventanas de herramientas están acopladas juntas en un solo panel que muestra la ventana de herramientas del explorador de soluciones y oculta las otras ventanas de herramientas, pero hace que estén disponibles al hacer clic en las pestañas. La imagen muestran dos ventanas de herramientas, el **lista de errores** y **salida** ventana, acoplada juntas en un único panel.
 
- También se muestra es el panel de documento principal, que muestra varias ventanas del editor. Aunque las ventanas de herramientas normalmente tienen una sola instancia (por ejemplo, puede abrir sólo uno **el Explorador de soluciones**), ventanas del editor pueden tener varias instancias, cada uno de los cuales se usa para editar un documento independiente, pero todos ellos están acoplados en el mismo panel. La imagen muestra un panel de documento que tiene dos ventanas del editor, una ventana del Diseñador de formulario y una ventana del explorador que muestra la página de inicio. Todas las ventanas en el panel de documento están disponibles al hacer clic en las fichas, pero la ventana del editor que contiene el archivo EditorPane.cs está visible y activo.
+ También se muestra es el panel de documento principal, que muestra varias ventanas del editor. Aunque las ventanas de herramientas normalmente tienen una sola instancia (por ejemplo, puede abrir sólo uno **el Explorador de soluciones**), ventanas del editor pueden tener varias instancias, cada uno de los cuales se usa para editar un documento independiente, pero todos ellos están acoplados en el mismo panel. La imagen muestra un panel de documento que tiene dos ventanas del editor, una ventana del Diseñador de formulario. Todas las ventanas en el panel de documento están disponibles al hacer clic en las fichas, pero la ventana del editor que contiene el archivo EditorPane.cs está visible y activo.
 
  Al extender Visual Studio, puede crear la herramienta interactúan de ventanas que permiten a los usuarios de Visual Studio con la extensión. También puede crear sus propios editores que permiten a los usuarios de Visual Studio editar documentos. Dado que los editores y ventanas de herramientas se integrarán en Visual Studio, no es necesario programarlos para acoplar o aparezcan correctamente en una pestaña. Están registrados correctamente en Visual Studio, automáticamente tienen las características típicas de las ventanas de herramientas y ventanas de documento en Visual Studio. Para obtener más información, consulte [ampliación y personalización de Windows de herramienta](../../extensibility/extending-and-customizing-tool-windows.md).
 
@@ -83,14 +84,15 @@ En esta sección se proporciona información detallada acerca de las extensiones
  En el corazón de un servicio de lenguaje son un analizador y un escáner. Escáner (o lexer) divide un archivo de código fuente en los elementos que se conocen como tokens y un analizador establece las relaciones entre esos tokens. Cuando se crea un servicio de lenguaje, debe implementar el analizador y el analizador para que Visual Studio pueda comprender los tokens y la gramática del lenguaje. Puede crear servicios de lenguaje administrado o no administrado. Para obtener más información, consulte [extensibilidad de servicio de lenguaje heredado](../../extensibility/internals/legacy-language-service-extensibility.md).
 
 ## <a name="projects"></a>Proyectos
- En Visual Studio, los proyectos son los contenedores que los desarrolladores usan para organizar y compilar el código fuente y otros recursos. Proyectos permiten organizar, compilar, depurar y distribuir el código fuente, las referencias a servicios Web y bases de datos y otros recursos. Paquetes VSPackage pueden extender el sistema de proyectos de Visual Studio proporcionando herramientas personalizadas, subtipos de proyecto y tipos de proyecto.
 
- También se pueden recopilar los proyectos en una solución, que es una agrupación de uno o varios proyectos que funcionan conjuntamente para crear una aplicación. Información de estado y de proyecto que pertenece a la solución se almacena en dos archivos de solución, el archivo de solución basado en texto (.sln) y el archivo de solución binario usuario opción (.suo). Estos archivos son similares a los archivos del grupo (. vbg) que se usaron en versiones anteriores de [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)], y el área de trabajo (.dsw) y el usuario (.opt) los archivos que se usaron en versiones anteriores de las opciones [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)].
+En Visual Studio, los proyectos son los contenedores que los desarrolladores usan para organizar y compilar el código fuente y otros recursos. Proyectos permiten organizar, compilar, depurar y distribuir el código fuente, las referencias a servicios Web y bases de datos y otros recursos. Paquetes VSPackage pueden extender el sistema de proyectos de Visual Studio proporcionando herramientas personalizadas, subtipos de proyecto y tipos de proyecto.
 
- Para obtener más información, consulte [proyectos](../../extensibility/internals/projects.md) y [soluciones](../../extensibility/internals/solutions.md).
+Los proyectos también se pueden recopilar juntos un *solución*, que es una agrupación de uno o varios proyectos que funcionan conjuntamente para crear una aplicación. Información de estado y de proyecto que pertenece a la solución se almacena en dos archivos de solución, basado en texto [archivo de solución (.sln)](solution-dot-sln-file.md) y el archivo binario [opción (.suo) archivo de solución usuario](solution-user-options-dot-suo-file.md). Estos archivos son similares a los archivos de grupo (. vbg) que se usaron en versiones anteriores de Visual Basic y el área de trabajo (.dsw) y los archivos de opciones (.opt) del usuario que se usaron en versiones anteriores de C++.
+
+Para obtener más información, consulte [proyectos](../../extensibility/internals/projects.md) y [soluciones](../../extensibility/internals/solutions-overview.md).
 
 ## <a name="project-and-item-templates"></a>Plantillas de proyecto y elemento
- Visual Studio incluye plantillas de proyecto predefinidas y las plantillas de elemento de proyecto. Puede también hacer sus propias plantillas o adquirir las plantillas de la Comunidad y, a continuación, integrarlos en Visual Studio. El [MSDN Code Gallery](http://code.msdn.microsoft.com/Project/ProjectDirectory.aspx?ProjectSearchText=visual%20studio) es el lugar indicado para las plantillas y las extensiones.
+ Visual Studio incluye plantillas de proyecto predefinidas y las plantillas de elemento de proyecto. Puede también hacer sus propias plantillas o adquirir las plantillas de la Comunidad y, a continuación, integrarlos en Visual Studio. El [MSDN Code Gallery](https://code.msdn.microsoft.com/site/search?query=visual%20studio) es el lugar indicado para las plantillas y las extensiones.
 
  Las plantillas contienen la estructura del proyecto y los archivos básicos que son necesarios para compilar un determinado tipo de clase, biblioteca, control o aplicación. Cuando desea desarrollar software que se parece a una de las plantillas, cree un proyecto que se basa en la plantilla y, a continuación, modifique los archivos en el proyecto.
 
@@ -102,7 +104,7 @@ En esta sección se proporciona información detallada acerca de las extensiones
 ## <a name="properties-and-options"></a>Propiedades y opciones
  El **propiedades** ventana muestra las propiedades de uno o varios elementos seleccionados: [Extender propiedades](../../extensibility/internals/extending-properties.md) páginas de opciones contienen conjuntos de opciones que pertenecen a un componente determinado, como un lenguaje de programación o un paquete VSPackage: [Opciones y páginas de opciones](../../extensibility/internals/options-and-options-pages.md). Valores son características generalmente relacionadas con la interfaz de usuario que pueden importarse y exportarse: [Compatibilidad con la configuración de usuario](../../extensibility/internals/support-for-user-settings.md).
 
-## <a name="visual-studio-services"></a>Servicios de Visual Studio
+## <a name="visual-studio-services"></a>Visual Studio Services
  Un servicio proporciona un conjunto específico de interfaces de componentes consumir. Visual Studio proporciona un conjunto de servicios que puede usarse por los componentes, incluidas las extensiones. Por ejemplo, servicios de Visual Studio permiten ventanas de herramientas para mostrarse u oculto de forma dinámica, habilitar el acceso a la Ayuda, barra de estado o eventos de interfaz de usuario. El editor de Visual Studio también proporciona servicios que pueden importarse por extensiones de editor. Para obtener más información, consulte [Using y proporcionar servicios](../../extensibility/using-and-providing-services.md).
 
 ## <a name="debugger"></a>instantáneas

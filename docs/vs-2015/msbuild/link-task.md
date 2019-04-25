@@ -1,14 +1,9 @@
 ---
 title: Vincular tarea | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - VC.Project.VCLinkerTool.ForceFileOutput
 - VC.Project.VCLinkerTool.LinkStatus
@@ -35,18 +30,17 @@ ms.assetid: 0a61f168-3113-4fa7-83a3-d9142e2a33f8
 caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: f2ca9c721567d89bddad4a9ee61639bd3a82f10d
-ms.sourcegitcommit: 1abb9cf4c3ccb90e3481ea8079272c98aad12875
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 7300d11741e9e3395a39b275ec966f4d801e0cec
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50143455"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650154"
 ---
 # <a name="link-task"></a>Vincular tarea
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Encapsula la herramienta del vinculador de Visual C++, link.exe. La herramienta del vinculador vincula bibliotecas y archivos de objeto de formato de archivo de objeto común (COFF) para crear un archivo ejecutable (.exe) o una biblioteca de vínculos dinámicos (DLL). Para obtener más información, consulte [Opciones del enlazador](http://msdn.microsoft.com/library/c1d51b8a-bd23-416d-81e4-900e02b2c129).  
   
 ## <a name="parameters"></a>Parámetros  
@@ -194,7 +188,7 @@ Encapsula la herramienta del vinculador de Visual C++, link.exe. La herramienta 
   
    Especifica si el enlazador aplicará **SuppressUnmanagedCodeSecurityAttribute** a las llamadas P/Invoke generadas por enlazador a partir de código administrado en archivos DLL nativos.  
   
-   Para obtener más información, consulte [/CLRUNMANAGEDCODECHECK (agregar SuppressUnmanagedCodeSecurityAttribute)](http://msdn.microsoft.com/library/73abc426-dab0-45e2-be85-0f9a14206cc2).  
+   Para obtener más información, vea [/CLRUNMANAGEDCODECHECK (quite SuppressUnmanagedCodeSecurityAttribute)](http://msdn.microsoft.com/library/73abc426-dab0-45e2-be85-0f9a14206cc2).  
   
 - **CreateHotpatchableImage**  
   
@@ -934,6 +928,3 @@ Encapsula la herramienta del vinculador de Visual C++, link.exe. La herramienta 
   
 ## <a name="see-also"></a>Vea también  
  [Referencia de tareas](../msbuild/msbuild-task-reference.md)
-
-
-

@@ -1,7 +1,6 @@
 ---
 title: Cuadro de herramientas, pestaña Datos
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - Toolbox, Data tab
@@ -10,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2ae38b2a-29d2-461c-a67d-29dad274bf45
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d9e23cd79510d789c8c8f8b426fb3196f1845745
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2a83999345cd36f1677eca91b243e1ab3455c8a3
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53952966"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55910771"
 ---
 # <a name="toolbox-data-tab"></a>Cuadro de herramientas, pestaña Datos
 

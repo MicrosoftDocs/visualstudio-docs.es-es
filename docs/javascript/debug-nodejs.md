@@ -6,24 +6,24 @@ ms.topic: conceptual
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 29b58d588a07be8ba25ab844da171222c57df545
-ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
+ms.openlocfilehash: 20f5a8b3400ab70db9988fcb38bdc26e15307d36
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54398239"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856598"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Depuración de una aplicación JavaScript o TypeScript en Visual Studio
 
 Puede depurar código JavaScript y TypeScript con Visual Studio. Puede establecer y alcanzar puntos de interrupción, asociar el depurador, inspeccionar variables, ver la pila de llamadas y usar otras características de depuración.
 
 > [!TIP]
-> Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) para instalarlo de forma gratuita. Según la forma en que vaya a desarrollar la aplicación, es posible que tenga que instalar la **carga de trabajo de desarrollo Node.js** con Visual Studio.
+> Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/) para instalarlo de forma gratuita. Según la forma en que vaya a desarrollar la aplicación, es posible que tenga que instalar la **carga de trabajo de desarrollo Node.js** con Visual Studio.
 
 ## <a name="debug-server-side-script"></a>Depurar scripts del servidor
 
@@ -60,6 +60,11 @@ Para asociar el depurador desde Visual Studio y alcanzar puntos de interrupción
     `chrome.exe --remote-debugging-port=9222`
 
     Este comando inicia Chrome con la depuración habilitada.
+
+    ::: moniker range=">=vs-2019"
+    > [!NOTE]
+    > También puede establecer la marca `--remote-debugging-port` al iniciar el explorador si selecciona **Explorar con...** > en la barra de herramientas **Depurar**, elige **Agregar** y, después, configura la marca en el campo **Argumentos**. Use un nombre descriptivo distinto para el explorador, como **Chrome con depuración**. Para obtener información detallada, vea las [notas de la versión](https://docs.microsoft.com/visualstudio/releases/2019/release-notes-preview#browser-cli-params-support).
+    ::: moniker-end
 
 3. Cambie a Visual Studio y establezca un punto de interrupción en el código fuente (establezca el punto de interrupción en una línea de código que permita los puntos de interrupción, como una instrucción `return` o una declaración `var`).
 
@@ -101,7 +106,7 @@ Para asociar el depurador desde Visual Studio y alcanzar puntos de interrupción
     * Si tiene que interrumpir el código en un archivo JavaScript transcompilado (por ejemplo, *app-bundle.js*) y no puede hacerlo, quite el archivo de mapa de origen, *nombreDeArchivo.js.map*.
 
      > [!TIP]
-     > Una vez que se asocia al proceso la primera vez siguiendo estos pasos, puede volver a asociar rápidamente al mismo proceso en Visual Studio 2017 si selecciona **Depurar** > **Reasociar al proceso**.
+     > Una vez que se asocia al proceso la primera vez siguiendo estos pasos, puede volver a asociar rápidamente al mismo proceso si selecciona **Depurar** > **Reasociar al proceso**.
 
 ## <a name="generate_sourcemaps"></a> Generar mapas de origen para la depuración
 
@@ -168,8 +173,8 @@ La depuración de archivos generados dinámicamente no es automática. Los punto
    En Chrome, vaya a **Explorador de soluciones > Documentos de Script > nombreDeLaPágina**.
 
     > [!NOTE]
-    > Si usa Chrome, podría aparecer el mensaje `no source is available between `<script>` tags.` This is OK, just continue debugging.
+    > Al usar Chrome, podría obtener un mensaje de tipo **no hay código fuente disponible entre etiquetas \<script>**. Esto es normal, simplemente continúe con la depuración.
 
    En Internet Explorer, vaya a **Explorador de soluciones > Documentos de Script > Windows Internet Explorer > nombreDeLaPágina**.
 
-Para más información, vea [Client-side debugging of ASP.NET projects in Google Chrome](https://blogs.msdn.microsoft.com/webdev/2016/11/21/client-side-debugging-of-asp-net-projects-in-google-chrome/) (Depuración del lado cliente de proyectos de ASP.NET en Google Chrome).
+Para más información, vea [Client-side debugging of ASP.NET projects in Google Chrome](https://devblogs.microsoft.com/aspnet/client-side-debugging-of-asp-net-projects-in-google-chrome/) (Depuración del lado cliente de proyectos de ASP.NET en Google Chrome).

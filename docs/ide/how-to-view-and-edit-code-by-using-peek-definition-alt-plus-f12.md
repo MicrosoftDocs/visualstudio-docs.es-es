@@ -1,19 +1,18 @@
 ---
 title: Uso de Ver la definición
 ms.date: 01/10/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c8fb33e1b6df6cd43aaaba9c38123ff7b941da5c
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: 5ce26aeb22ca34a6cb01608e89dba4666e30f846
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54269974"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223603"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Procedimiento para ver y editar código mediante Ver la definición (Alt+F12)
 
@@ -25,7 +24,7 @@ Se puede usar **Ver la definición** con código de C#, Visual Basic y C++. En V
 
 ### <a name="to-open-a-peek-definition-window"></a>Para abrir una ventana Ver la definición
 
-1. Para ver una definición, seleccione **Ver la definición** en el menú contextual del tipo o el miembro que quiera explorar. A partir de la versión 15.4 de Visual Studio 2017, si la opción está habilitada, también puede ver una definición utilizando el mouse y presionando **Ctrl** (u otro modificador) y haciendo clic en el nombre del miembro. También puede presionar **Alt**+**F12** en el teclado.
+1. Para ver una definición, seleccione **Ver la definición** en el menú contextual del tipo o el miembro que quiera explorar. Si la opción está habilitada, también puede ver una definición con el mouse, si presiona **Ctrl** (u otro modificador) y hace clic en el nombre del miembro. También puede presionar **Alt**+**F12** en el teclado.
 
      En esta ilustración se muestra la ventana **Ver la definición** para un método denominado `Print()`:
 

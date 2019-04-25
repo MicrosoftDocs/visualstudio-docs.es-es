@@ -1,14 +1,9 @@
 ---
 title: Depuración de scripts del lado cliente | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -21,13 +16,13 @@ ms.assetid: bb668527-2288-47bd-a6c8-cecbad76dde2
 caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3aa04ab77b6e3dc6264a517c83c4ed319f36d686
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c5b8108f0751cbb8848a70b99f23dd3f204ccff2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817807"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58995426"
 ---
 # <a name="client-side-script-debugging"></a>Depuración de secuencias de comandos en el cliente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +30,7 @@ ms.locfileid: "51817807"
 El depurador de Visual Studio proporciona un entorno de depuración completo para encontrar y corregir errores en los scripts de cliente en las páginas de ASP.NET.  
   
 ## <a name="opening-script-documents"></a>Abrir documentos de script  
- En el **Explorador de soluciones** , puede ver listas de documentos de script de cliente y servidor. Puede abrir cualquier documento de script en el **Explorador de soluciones**. Para obtener más información, consulta [How to: View Script Documents](../debugger/how-to-view-script-documents.md).  
+ En el **Explorador de soluciones** , puede ver listas de documentos de script de cliente y servidor. Puede abrir cualquier documento de script en el **Explorador de soluciones**. Para obtener más información, vea [Cómo: Visualización de documentos de script](../debugger/how-to-view-script-documents.md).  
   
 ## <a name="breakpoint-mapping"></a>Asignación de puntos de interrupción  
  En Visual Studio, no puede depurar directamente código de servidor, pero puede establecer un punto de interrupción en un archivo de servidor. Visual Studio asigna automáticamente el punto de interrupción a una ubicación correspondiente en el archivo de cliente y crea un punto de interrupción asignado en el código de cliente.  
@@ -43,7 +38,7 @@ El depurador de Visual Studio proporciona un entorno de depuración completo par
 ## <a name="manually-or-automatically-attaching-to-script"></a>Asociar a script manual o automáticamente  
  Para empezar a depurar el script en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], el depurador debe asociarse al script que se desea depurar. Esto se puede realizar manual o automáticamente.  
   
- Puede establecer una asociación manualmente utilizando la interfaz del depurador de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para elegir un proceso de script en ejecución al que desee asociarse. Para obtener más información, consulta [How to: Attach to Script](../debugger/how-to-attach-to-script.md).  
+ Puede establecer una asociación manualmente utilizando la interfaz del depurador de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para elegir un proceso de script en ejecución al que desee asociarse. Para obtener más información, vea [Cómo: Asociación a script](../debugger/how-to-attach-to-script.md).  
   
  El depurador se asocia automáticamente al script cuando se produce una de las siguientes situaciones:  
   
@@ -68,11 +63,8 @@ El depurador de Visual Studio proporciona un entorno de depuración completo par
  [Debugging and Tracing Ajax Applications Overview](http://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375).  
   
 ## <a name="see-also"></a>Vea también  
- [Depuración de aplicaciones de ASP.NET y AJAX](../debugger/debugging-aspnet-and-ajax-applications.md)   
+ [Depurar aplicaciones de ASP.NET y AJAX](../debugger/debugging-aspnet-and-ajax-applications.md)   
  [Limitaciones de la depuración de scripts](../debugger/limitations-on-script-debugging.md)   
- [Windows variable](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)   
+ [Ventanas de variables](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)   
  [Ventana Inmediato](../ide/reference/immediate-window.md)   
  [Debugging and Tracing Ajax Applications Overview](http://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375)
-
-
-

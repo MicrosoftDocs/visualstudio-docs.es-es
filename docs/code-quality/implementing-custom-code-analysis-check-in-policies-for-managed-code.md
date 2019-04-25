@@ -1,7 +1,6 @@
 ---
 title: Implementar directivas de protección de análisis de código personalizadas para el código administrado
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.code.analysis.selecttfsrulesets
@@ -10,15 +9,15 @@ f1_keywords:
 ms.assetid: fd029003-5671-4b24-8b6f-032e0a98b2e8
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ab2c4e61eca64917a032d9dfd80c5eca71c09ec9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c32164ef319199171b75379823dc021cfd886d74
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53873802"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55931889"
 ---
 # <a name="implement-custom-code-analysis-check-in-policies-for-managed-code"></a>Implementar directivas de inserción en el repositorio de análisis de código personalizadas para el código administrado
 

@@ -1,5 +1,5 @@
 ---
-title: Seguridad, control de versiones y manifiestos problemas en implementaciones de ClickOnce | Microsoft Docs
+title: Problemas de seguridad, control de versiones y manifiestos en implementaciones de ClickOnce | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -19,15 +19,15 @@ helpviewer_keywords:
 - ClickOnce applications, security issues
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 366e384ec01c67a1beb6b08b018365cbb3c73bf4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c87fc29b24b3c5ab4bd59d9cca25113f82895ff4
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53927147"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56631268"
 ---
 # <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>Seguridad, control de versiones y manifiestos problemas en implementaciones de ClickOnce
 
@@ -96,6 +96,6 @@ Si desea mover o copiar una aplicación, también debe actualizar el `deployment
 
 ## <a name="see-also"></a>Vea también
 
-[Solución de problemas de implementaciones de ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)  
-[Aplicaciones Securw ClickOnce](../deployment/securing-clickonce-applications.md)  
-[Selección de una estrategia de implementación de ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md)
+[Solución de problemas de implementaciones de ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)
+[aplicaciones Securw ClickOnce](../deployment/securing-clickonce-applications.md)
+[elegir una estrategia de implementación de ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md)

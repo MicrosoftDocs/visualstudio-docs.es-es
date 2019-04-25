@@ -1,14 +1,9 @@
 ---
 title: Informe de resumen por subproceso | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.report.executionbreakdown
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 5a0aa339-03f5-4727-90b3-8950446bbdbe
 caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 7c3c919d666f1e634261895227380de43efc8853
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 06fbc7f8574a5b66e731bb2e7975203866f3eb72
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51772435"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54805386"
 ---
 # <a name="per-thread-summary-report"></a>Informe de resumen por subproceso
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,6 +34,3 @@ Este gráfico de barras muestra la proporción de tiempo que cada subproceso no 
  [Hora de sincronización](../profiling/synchronization-time.md)   
  [Tiempo de procesamiento de la interfaz de usuario](../profiling/ui-processing-time.md)   
  [Vista de subprocesos](../profiling/threads-view-parallel-performance.md)
-
-
-

@@ -1,20 +1,19 @@
 ---
 title: Conjunto de reglas Reglas de directrices de diseño básicas para código administrado
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 ms.assetid: 7eb384f5-f961-400b-b151-115d92addc6a
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 54169ea373c87e731410492954773dcc575e20c1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7c2a9570eeae6d9545bb91f7f1ed0c57df3a9c92
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53844907"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55913855"
 ---
 # <a name="basic-design-guideline-rules-rule-set-for-managed-code"></a>Conjunto de reglas Reglas de directrices de diseño básicas para código administrado
 Puede usar el conjunto de reglas reglas de directrices de diseño básicas de Microsoft a centrar en hacer que el código sea más fácil de entender y utilizar. Debe incluir este conjunto de reglas si el proyecto incluye código de bibliotecas o si desea exigir procedimientos recomendados para el código que es fácil de mantener.

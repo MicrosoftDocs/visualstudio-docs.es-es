@@ -9,46 +9,43 @@ helpviewer_keywords:
 ms.assetid: 33c05d65-abb4-4800-a382-54a3805ea7b0
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 373149884078b58926493fd7f37756ddb4eb8829
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 90230bd95e1dbcd3e4c186257c6c36faad6ba1f7
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53838760"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56605479"
 ---
 # <a name="cvaccesse"></a>CV_access_e
-Especifica el ámbito de visibilidad (nivel de acceso) de las funciones miembro y variables.  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```C++  
-typedef enum CV_access_e {   
-   CV_private   = 1,  
-   CV_protected = 2,  
-   CV_public    = 3  
-} CV_access_e;  
-```  
-  
-## <a name="elements"></a>Elementos  
- CV_private  
- Miembro tiene acceso privado.  
-  
- CV_protected  
- Miembro de acceso protegido.  
-  
- CV_public  
- Miembro tiene acceso público.  
-  
-## <a name="remarks"></a>Comentarios  
- El `friend` especificador de acceso no se incluye aquí porque se usa normalmente por funciones no miembro que tienen acceso a elementos privados y protegidos de la clase. Use la [Get_symtag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md) método para buscar símbolos con `SymTagFriend` acceso.  
-  
-## <a name="requirements"></a>Requisitos  
- Encabezado: cvconst.h  
-  
-## <a name="see-also"></a>Vea también  
- [Enumeraciones y estructuras](../../debugger/debug-interface-access/enumerations-and-structures.md)   
- [IDiaSymbol::get_access](../../debugger/debug-interface-access/idiasymbol-get-access.md)   
- [IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)
+Especifica el ámbito de visibilidad (nivel de acceso) de las funciones miembro y variables.
+
+## <a name="syntax"></a>Sintaxis
+
+```C++
+typedef enum CV_access_e {
+    CV_private   = 1,
+    CV_protected = 2,
+    CV_public    = 3
+} CV_access_e;
+```
+
+## <a name="elements"></a>Elementos
+Miembro de CV_private tiene acceso privado.
+
+Acceso protegido CV_protected miembro.
+
+Miembro de CV_public tiene acceso público.
+
+## <a name="remarks"></a>Comentarios
+El `friend` especificador de acceso no se incluye aquí porque se usa normalmente por funciones no miembro que tienen acceso a elementos privados y protegidos de la clase. Use la [Get_symtag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md) método para buscar símbolos con `SymTagFriend` acceso.
+
+## <a name="requirements"></a>Requisitos
+Encabezado: cvconst.h
+
+## <a name="see-also"></a>Vea también
+- [Enumeraciones y estructuras](../../debugger/debug-interface-access/enumerations-and-structures.md)
+- [IDiaSymbol::get_access](../../debugger/debug-interface-access/idiasymbol-get-access.md)
+- [IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)

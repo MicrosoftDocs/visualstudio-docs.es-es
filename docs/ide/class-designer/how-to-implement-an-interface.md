@@ -1,7 +1,6 @@
 ---
-title: Procedimiento Implementar una interfaz (Diseñador de clases)
+title: Filtrar Implementar una interfaz (Diseñador de clases)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - interfaces [Visual Studio], implementing
@@ -9,17 +8,17 @@ helpviewer_keywords:
 ms.assetid: 81d2cf46-7f60-448c-83e3-1d16bb88ca36
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b1f427a78c11696253bdd418f5c8f7ac86b906bf
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: f070e3224dcc683d766da556512f285751c37ca4
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53916324"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55923922"
 ---
-# <a name="how-to-implement-an-interface-in-class-designer"></a>Procedimiento Implementar una interfaz en el Diseñador de clases
+# <a name="how-to-implement-an-interface-in-class-designer"></a>Filtrar Implementar una interfaz en el Diseñador de clases
 
 En el **Diseñador de clases**, puede implementar una interfaz en el diagrama de clases si la conecta a una clase que proporcione código para los métodos de interfaz. El **Diseñador de clases** genera una implementación de interfaz y muestra la relación entre la interfaz y la clase como una relación de herencia. Para implementar una interfaz, dibuje una línea de herencia entre la interfaz y la clase, o bien arrastre la interfaz desde la Vista de clases.
 

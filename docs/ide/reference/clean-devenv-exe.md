@@ -1,7 +1,6 @@
 ---
 title: -Clean (devenv.exe)
 ms.date: 12/10/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - builds [Team System], cleaning files
@@ -11,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 79929dfd-22c9-4cec-a0d0-a16f15b8f7e4
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd2271ca3a2a674d569bc20ad6b45642e460108f
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: 810f05b0838f27004bee983dc0acf7a3009e22a0
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54269571"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55954015"
 ---
 # <a name="clean-devenvexe"></a>/Clean (devenv.exe)
 

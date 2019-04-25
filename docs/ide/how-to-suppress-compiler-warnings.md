@@ -1,26 +1,25 @@
 ---
 title: Supresión de las advertencias del compilador para proyectos y paquetes NuGet
 ms.date: 01/24/2018
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f805ce50a94304651aca6dd1379fbbf2f5ecc7b
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: 2d3f207190fed7c01dd851d809e12e6032549ff3
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53060370"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323469"
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>Procedimiento Supresión de advertencias del compilador
 
 Puede despejar un registro de compilación mediante el filtrado de uno o varios tipos de advertencias del compilador. Por ejemplo, quizá quiera revisar solo parte de los resultados generados al establecer el nivel de detalle del registro de la compilación en **Normal**, **Detallado** o **Diagnóstico**. Para obtener más información sobre el nivel de detalle, vea [Cómo: Ver, guardar y configurar archivos de registro de compilación](../ide/how-to-view-save-and-configure-build-log-files.md).
 
-## <a name="suppress-specific-warnings-for-visual-c-or-f"></a>Suprimir advertencias específicas de Visual C# o F# #
+## <a name="suppress-specific-warnings-for-visual-c-or-f"></a>Suprimir advertencias específicas de Visual C# o F\#
 
 Use la página de propiedades de **Compilación** para suprimir advertencias específicas para proyectos de C# y F#.
 
@@ -64,7 +63,7 @@ En este ejemplo se muestra cómo modificar el archivo *.vbproj* para suprimir ad
 
 1. En la barra de menús, elija **Proyecto** > **Descargar proyecto**.
 
-1. En el **Explorador de soluciones**, abra el menú contextual del proyecto haciendo clic con el botón derecho y, después, elija **Editar <ProjectName>.vbproj**.
+1. En el **Explorador de soluciones**, abra el menú contextual del proyecto y luego elija **Editar \<NombreDelProyecto>.vbproj**.
 
     El archivo del proyecto XML se abre en el editor de código.
 

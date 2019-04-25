@@ -1,11 +1,8 @@
 ---
 title: Cuadro de diálogo del Editor (heredado) conjunto de reglas | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Workflow.Activities.Rules.Design.RuleSetDialog.UI
@@ -15,13 +12,13 @@ ms.assetid: 7cfd5df1-1115-4e5c-9b72-121f39419e83
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 3469e395ee50e63f8ac76e4181d02b777ccbd4ba
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: e259328b2c9b7e2abcd5decead3560cb184fa930
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942405"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58998900"
 ---
 # <a name="rule-set-editor-dialog-box-legacy"></a>Editor de conjunto de reglas (Cuadro de diálogo) (Heredado)
 Este tema se describe cómo usar el **Editor de conjunto de reglas** cuadro de diálogo heredado [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Use el [!INCLUDE[wfd2](../includes/wfd2-md.md)] heredado cuando deba tener como destino [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -31,7 +28,7 @@ Este tema se describe cómo usar el **Editor de conjunto de reglas** cuadro de d
 > [!NOTE]
 >  Si desea abrir el archivo .rules con el **Editor XML con codificación**, primero debe cerrar la ventana del diseñador asociada para el flujo de trabajo o actividad.  
   
- Para obtener información acerca de cómo obtener acceso a la **Editor de conjunto de reglas** cuadro de diálogo, vea [Cómo: crear un conjunto de reglas de PolicyActivity (heredado)](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md).  
+ Para obtener información acerca de cómo obtener acceso a la **Editor de conjunto de reglas** cuadro de diálogo, vea [Cómo: Crear un conjunto de reglas para PolicyActivity (heredado)](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md).  
   
 > [!WARNING]
 >  El editor de reglas del [!INCLUDE[wfd2](../includes/wfd2-md.md)] heredado que se usa para tener como destino [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] no es compatible con múltiples versiones.  
@@ -54,7 +51,7 @@ Este tema se describe cómo usar el **Editor de conjunto de reglas** cuadro de d
 |**Condición:**|Escriba una expresión para la condición de la regla. Para obtener información sobre la sintaxis de las expresiones, vea la sección "Escribir expresiones de condiciones y de acciones" de esta página.|  
 |**Acciones Then:**|Escriba una expresión para las acciones Then. Para obtener información sobre la sintaxis de las expresiones, vea la sección "Escribir expresiones de condiciones y de acciones" de esta página.|  
 |**Acciones Else:**|Escriba una expresión para las acciones Else. Para obtener información sobre la sintaxis de las expresiones, vea la sección "Escribir expresiones de condiciones y de acciones" de esta página.|  
-|**VALE**|Haga clic en Aceptar para guardar el conjunto de reglas en un archivo .rules.|  
+|**OK**|Haga clic en Aceptar para guardar el conjunto de reglas en un archivo .rules.|  
   
  Para obtener más información sobre los conjuntos de reglas, consulte [mediante la actividad PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65004).  
   
@@ -73,13 +70,13 @@ Este tema se describe cómo usar el **Editor de conjunto de reglas** cuadro de d
   
 - Operadores aritméticos: +, - , *, /, MOD  
   
-- Operadores lógicos: Y, & &, OR, &#124; &#124;, NOT,!  
+- Operadores lógicos: Y, &AMP; &AMP;, OR, &AMP;#124; &AMP;#124;, NOT,!  
   
 - Operadores bit a bit: &,&#124;  
   
   La prioridad de los operadores de las expresiones sigue las reglas de prioridad de los operadores de C#.  
   
-  Para obtener más información acerca de las condiciones, consulte [usar condiciones en flujos de trabajo](http://msdn.microsoft.com/en-us/541211f5-d382-4810-894f-71f00b34fa77).  
+  Para obtener más información acerca de las condiciones, consulte [usar condiciones en flujos de trabajo](http://msdn.microsoft.com/541211f5-d382-4810-894f-71f00b34fa77).  
   
 ### <a name="halt-and-update-functions"></a>Funciones Halt y Update  
  **Acciones Then:** y **acciones Else:** expresiones admiten **Halt** y **actualización** funciones. Para usar el **Halt** de función, escriba **Halt** en un **, a continuación, acción:** o **acción Else:** cuadro de texto. El **Halt** acción hace que la ejecución del conjunto de reglas detener inmediatamente, y el control vuelve al código de llamada. Usa el **actualización** función con el encadenamiento hacia delante.  

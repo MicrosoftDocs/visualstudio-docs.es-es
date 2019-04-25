@@ -1,26 +1,25 @@
 ---
 title: Suprimir advertencias de análisis de código
-ms.date: 08/03/2018
-ms.prod: visual-studio-dev15
+ms.date: 12/01/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - source suppression, code analysis
 - code analysis, source suppression
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: d72697a8969983d83445808b75c63bc8657ecf1f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6cd61304e150da63d2d461ef364e7039789c71fc
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53932889"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223096"
 ---
 # <a name="suppress-code-analysis-warnings"></a>Suprimir advertencias de análisis de código
 
@@ -34,7 +33,7 @@ En C++ / c++ / CLI, use las macros CA\_suprimir\_mensaje o CA\_GLOBAL\_SUPPRESS_
 > No debe utilizar supresiones en código fuente en las compilaciones de versión para evitar que los metadatos de supresión en el origen de trasvase de registros por accidente. Además, debido al costo de procesamiento de supresión en el código fuente, puede disminuir el rendimiento de la aplicación.
 
 > [!NOTE]
-> Si migra un proyecto de Visual Studio 2017, podría encontrarse, de repente, con un gran número de advertencias de análisis de código. Estas advertencias proceden [analizadores de Roslyn](roslyn-analyzers-overview.md). Si no está preparado para solucionar las advertencias, puede suprimir todas ellas eligiendo **analizar** > **ejecutar análisis de código y suprimir problemas activos**.
+> Si migra un proyecto de Visual Studio 2017 o Visual Studio de 2019, podría encontrarse, de repente, con un gran número de advertencias de análisis de código. Estas advertencias proceden [analizadores de Roslyn](roslyn-analyzers-overview.md). Si no está preparado para solucionar las advertencias, puede suprimir todas ellas eligiendo **analizar** > **ejecutar análisis de código y suprimir problemas activos**.
 >
 > ![Ejecutar análisis de código y suprimir problemas en Visual Studio](media/suppress-active-issues.png)
 
@@ -66,17 +65,19 @@ Las propiedades del atributo incluyen:
 
 - **MessageId** -identificador único de un problema para cada mensaje.
 
-- **Ámbito** -el destino en el que se suprime la advertencia. Si el destino no se especifica, se establece en el destino del atributo. Los ámbitos admitidos incluyen lo siguiente:
+- **Ámbito** -el destino en el que se suprime la advertencia. Si el destino no se especifica, se establece en el destino del atributo. Admite [ámbitos](xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope) incluyen lo siguiente:
 
-    - Module
+   - `module`
 
-    - Espacio de nombres
+   - `resource`
 
-    - Recurso
+   - `type`
 
-    - Tipo
+   - `member`
 
-    - Miembro
+   - `namespace` -En este ámbito suprime las advertencias en el espacio de nombres. No suprime las advertencias con los tipos del espacio de nombres.
+
+   - `namespaceanddescendants` -(Nuevo en Visual Studio de 2019) este ámbito suprime las advertencias en un espacio de nombres y todos los símbolos de sus descendientes. El `namespaceanddescendants` valor solo es válido para los analizadores de Roslyn y se omite binario, en función de FxCop análisis estático.
 
 - **Destino** : un identificador que se usa para especificar el destino en el que se suprime la advertencia. Debe contener un nombre completo del elemento.
 
@@ -151,7 +152,7 @@ La herramienta de análisis de código administrado examina `SuppressMessage` at
 `[module: SuppressMessage("Microsoft.Design", "CA1020:AvoidNamespacesWithFewTypes", Scope = "namespace", Target = "MyNamespace")]`
 
 > [!NOTE]
-> Al suprimir una advertencia con ámbito de espacio de nombres, se suprime la advertencia en el espacio de nombres. No se suprime la advertencia contra los tipos del espacio de nombres.
+> Cuando se suprime una advertencia con `namespace` ámbito, se suprime la advertencia en el espacio de nombres. No se suprime la advertencia contra los tipos del espacio de nombres.
 
 Cualquier supresión se puede expresar mediante la especificación de un ámbito explícito. Estas supresiones deben residir en el nivel global. No se puede especificar la supresión de nivel de miembro mediante la decoración de un tipo.
 
@@ -168,5 +169,6 @@ El archivo de supresión global mantiene supresiones de nivel global o supresion
 
 ## <a name="see-also"></a>Vea también
 
+- <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope>
 - <xref:System.Diagnostics.CodeAnalysis>
 - [Usar analizadores de Roslyn](../code-quality/use-roslyn-analyzers.md)

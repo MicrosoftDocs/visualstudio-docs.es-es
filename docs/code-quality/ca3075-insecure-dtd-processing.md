@@ -1,20 +1,19 @@
 ---
 title: 'CA3075: Procesamiento no seguro de DTD'
-ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
+ms.date: 03/18/2019
 ms.topic: reference
 ms.assetid: 65798d66-7a30-4359-b064-61a8660c1eed
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb8d3cf4a9a05710fc5f1d338d0ba134bce8417d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6de817e3aaecbdd1c89cc2174e91126ea39d99d7
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53861739"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194624"
 ---
 # <a name="ca3075-insecure-dtd-processing"></a>CA3075: Procesamiento no seguro de DTD
 
@@ -31,7 +30,7 @@ Si usa instancias de <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> no seg
 
 ## <a name="rule-description"></a>Descripción de la regla
 
-Una *definición de tipo de documento (DTD)* es una de las dos formas que tiene un analizador XML para determinar la validez de un documento, como se define en el  [lenguaje de marcado extensible (XML) 1.0 de World Wide Web Consortium (W3C)](http://www.w3.org/TR/2008/REC-xml-20081126/). Esta regla busca propiedades e instancias en las que se aceptan datos que no son de confianza para advertir a los desarrolladores de las posibles amenazas de [Information Disclosure](/dotnet/framework/wcf/feature-details/information-disclosure) , lo que puede provocar ataques por [denegación de servicio (DoS)](/dotnet/framework/wcf/feature-details/denial-of-service) . Esta regla se desencadena cuando:
+Una *definición de tipo de documento (DTD)* es una de las dos formas que tiene un analizador XML para determinar la validez de un documento, como se define en el  [lenguaje de marcado extensible (XML) 1.0 de World Wide Web Consortium (W3C)](http://www.w3.org/TR/2008/REC-xml-20081126/). Esta regla busca propiedades e instancias que se aceptan los datos de confianza para advertir a los desarrolladores de las posibles [la divulgación de información](/dotnet/framework/wcf/feature-details/information-disclosure) amenazas o [denegación de servicio (DoS)](/dotnet/framework/wcf/feature-details/denial-of-service) ataques. Esta regla se desencadena cuando:
 
 - DtdProcessing está habilitado en la instancia <xref:System.Xml.XmlReader> , que resuelve entidades XML externas mediante <xref:System.Xml.XmlUrlResolver>.
 
@@ -39,27 +38,27 @@ Una *definición de tipo de documento (DTD)* es una de las dos formas que tiene 
 
 - <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> propiedad está establecida en el análisis.
 
-- Las entradas que no son de confianza se procesan mediante <xref:System.Xml.XmlResolver> en lugar de con <xref:System.Xml.XmlSecureResolver> .
+- No es de confianza se procesa la entrada mediante <xref:System.Xml.XmlResolver> en lugar de <xref:System.Xml.XmlSecureResolver>.
 
-- XmlReader.<xref:System.Xml.XmlReader.Create%2A> se invoca el método con una <xref:System.Xml.XmlReaderSettings> instancia o ninguna en absoluto.
+- El <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> método se invoca con una <xref:System.Xml.XmlReaderSettings> instancia o ninguna en absoluto.
 
 - <xref:System.Xml.XmlReader> se crea con los valores predeterminados no seguros o valores.
 
-En cada uno de estos casos, el resultado es el mismo: el contenido del sistema de archivos o de los recursos compartidos de red del equipo en el que se procesa el XML se expondrá al atacante, y posteriormente se podría usar como vector de denegación de servicio.
+En cada uno de estos casos, el resultado es el mismo: el contenido ya sea el sistema o la red recursos compartidos de archivos desde el equipo donde se procesa el XML se expondrá al atacante, o el procesamiento de DTD puede usarse como un vector de denegación de servicio.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
 
 - Detecte y procese todas las excepciones XmlTextReader correctamente para evitar la divulgación de información de ruta de acceso.
 
-- Use <xref:System.Xml.XmlSecureResolver> para restringir los recursos a los que puede obtener acceso XmlTextReader.
+- Use el <xref:System.Xml.XmlSecureResolver> para restringir los recursos que puede obtener acceso XmlTextReader.
 
 - Establezca la propiedad <xref:System.Xml.XmlReader> en <xref:System.Xml.XmlResolver> null **para evitar que**abra ningún recurso externo.
 
-- Asegúrese de que la propiedad <xref:System.Data.DataViewManager.DataViewSettingCollectionString%2A> de <xref:System.Data.DataViewManager> se asigne desde un origen de confianza.
+- Asegúrese de que el <xref:System.Data.DataViewManager.DataViewSettingCollectionString%2A?displayProperty=nameWithType> se asigna la propiedad de un origen de confianza.
 
 **.NET 3.5 y versiones anteriores**
 
-- Deshabilite el procesamiento de DTD si trabaja con orígenes que no son de confianza; para ello, establezca la  propiedad <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> en **true** .
+- Deshabilite el procesamiento de DTD si trabaja con orígenes de confianza estableciendo el <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> propiedad **true**.
 
 - La clase XmlTextReader tiene una petición de herencia de plena confianza.
 
@@ -205,7 +204,7 @@ public static void TestMethod(string xml)
 {
     XmlDocument doc = new XmlDocument() { XmlResolver = null };
     System.IO.StringReader sreader = new System.IO.StringReader(xml);
-    XmlTextReader reader = new XmlTextReader(sreader) { DtdProcessing = DtdProcessing.Prohibit };
+    XmlReader reader = XmlReader.Create(sreader, new XmlReaderSettings() { XmlResolver = null });
     doc.Load(reader);
 }
 ```
@@ -244,7 +243,7 @@ namespace TestNamespace
         public void TestMethod(Stream stream)
         {
             XmlSerializer serializer = new XmlSerializer(typeof(UseXmlReaderForDeserialize));
-            XmlTextReader reader = new XmlTextReader(stream) { DtdProcessing = DtdProcessing.Prohibit } ;
+            XmlReader reader = XmlReader.Create(stream, new XmlReaderSettings() { XmlResolver = null });
             serializer.Deserialize(reader );
         }
     }
@@ -281,7 +280,7 @@ namespace TestNamespace
     {
         public void TestMethod(string path)
         {
-            XmlTextReader reader = new XmlTextReader(path) { DtdProcessing = DtdProcessing.Prohibit };
+            XmlReader reader = XmlReader.Create(path, new XmlReaderSettings() { XmlResolver = null });
             XPathDocument doc = new XPathDocument(reader);
         }
     }
@@ -317,22 +316,6 @@ namespace TestNamespace
 ```
 
 ### <a name="violations"></a>Infracciones
-
-```csharp
-using System.Xml;
-
-namespace TestNamespace
-{
-    public class TestClass
-    {
-        public void TestMethod(string path)
-        {
-            XmlReaderSettings settings = new XmlReaderSettings(){ DtdProcessing = DtdProcessing.Parse };
-            XmlReader reader = XmlReader.Create(path, settings); // warn
-        }
-    }
-}
-```
 
 ```csharp
 using System.Xml;
@@ -379,7 +362,7 @@ namespace TestNamespace
     {
         public void TestMethod(string path)
         {
-            XmlReaderSettings settings = new XmlReaderSettings(){ DtdProcessing = DtdProcessing.Prohibit };
+            XmlReaderSettings settings = new XmlReaderSettings() { XmlResolver = null };
             XmlReader reader = XmlReader.Create(path, settings);
         }
     }

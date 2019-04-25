@@ -22,26 +22,27 @@ helpviewer_keywords:
 ms.assetid: 6fe97aac-2131-4615-bd92-d3afee741558
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a966709ed4b3fbb773d9f91726f4f79289af5504
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d557fc0ec056cac22603338f95920e5c721f67dd
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53864474"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56637287"
 ---
 # <a name="continuing-execution-after-an-exception"></a>Continuar la ejecución después de una excepción
-Cuando el depurador interrumpe la ejecución debido a una excepción, verá el **aplicación auxiliar de excepciones**, de forma predeterminada. Si ha deshabilitado la **aplicación auxiliar de excepciones** en el **opciones** cuadro de diálogo, verá el **Asistente de excepciones** (C# o Visual Basic) o el **excepción**  cuadro de diálogo) (C++).  
-  
+Cuando el depurador interrumpe la ejecución debido a una excepción, verá el **aplicación auxiliar de excepciones**, de forma predeterminada. Si ha deshabilitado la **aplicación auxiliar de excepciones** en el **opciones** cuadro de diálogo, verá el **Asistente de excepciones** (C# o Visual Basic) o el **excepción**  cuadro de diálogo) (C++).
+
  Cuando el **aplicación auxiliar de excepciones** aparece, puede intentar corregir el problema que provocó la excepción.
-  
-## <a name="managed-and-native-code"></a>Código administrado y nativo  
+
+## <a name="managed-and-native-code"></a>Código administrado y nativo
  En el código administrado y nativo, puede continuar la ejecución en el mismo subproceso después de una excepción no controlada. El **aplicación auxiliar de excepciones** se desenreda la pila de llamadas al punto donde se produjo la excepción.
-  
-## <a name="mixed-code"></a>Código mixto  
- Si se produce una excepción no controlada durante la depuración de código mixto nativo y administrado, las restricciones de sistema operativo impedirán que se desenrede la pila de llamadas. Si intenta rebobinar la pila de llamadas mediante el menú contextual, aparecerá un mensaje de error que indica que el depurador no puede desenredar la pila de llamadas si se ha producido una excepción no controlada durante la depuración de código mixto.  
-  
-## <a name="see-also"></a>Vea también  
- [Administración de excepciones con el depurador](../debugger/managing-exceptions-with-the-debugger.md)
+
+## <a name="mixed-code"></a>Código mixto
+ Si se produce una excepción no controlada durante la depuración de código mixto nativo y administrado, las restricciones de sistema operativo impedirán que se desenrede la pila de llamadas. Si intenta rebobinar la pila de llamadas mediante el menú contextual, aparecerá un mensaje de error que indica que el depurador no puede desenredar la pila de llamadas si se ha producido una excepción no controlada durante la depuración de código mixto.
+
+## <a name="see-also"></a>Vea también
+
+- [Administración de excepciones con el depurador](../debugger/managing-exceptions-with-the-debugger.md)

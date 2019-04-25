@@ -1,7 +1,7 @@
 ---
-title: IDebugBinder3::GetTypeArguments | Documentos de Microsoft
+title: IDebugBinder3::GetTypeArguments | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugBinder3::GetTypeArguments
 helpviewer_keywords:
@@ -9,58 +9,62 @@ helpviewer_keywords:
 ms.assetid: fa0c37a7-327f-463e-9a9d-bb3f534584cb
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c0151814261df2f57289edbb564e691b50c3acfd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7cbccb155b8a96a3a7480c4e898a597e57250df4
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987932"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56712156"
 ---
 # <a name="idebugbinder3gettypearguments"></a>IDebugBinder3::GetTypeArguments
-Este método recupera una lista de tipos de argumentos asociada a este objeto.  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```cpp  
-HRESULT GetTypeArguments(  
-   UINT          skip,  
-   UINT          count,  
-   IDebugField** ppFields,  
-   UINT*         pFetched  
-);  
-```  
-  
-```csharp  
-int GetTypeArguments(  
-   uint          skip,  
-   uint          count,  
-   IDebugField[] ppFields,  
-   out uint      pFetched  
-);  
-```  
-  
-#### <a name="parameters"></a>Parámetros  
- `skip`  
- [in] Número de campos que se omitirán antes de obtener los tipos de argumento.  
-  
- `count`  
- [in] El número de campos de argumento que se devolverán (también especifica el tamaño de la `ppFields` matriz).  
-  
- `ppFields`  
- [in, out] Una matriz de los campos que se rellena si la devolución de este método.  
-  
- `pFetched`  
- [out] \(opcional) El número de argumento de tipo campos devueltos realmente.  
-  
-## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
-  
-## <a name="remarks"></a>Comentarios  
- El número de tipos de argumento se puede obtener de antemano con [GetTypeArgumentCount](../../../extensibility/debugger/reference/idebugbinder3-gettypeargumentcount.md).  
-  
-## <a name="see-also"></a>Vea también  
- [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)   
- [GetTypeArgumentCount](../../../extensibility/debugger/reference/idebugbinder3-gettypeargumentcount.md)
+Este método recupera una lista de tipos de argumentos asociada a este objeto.
+
+## <a name="syntax"></a>Sintaxis
+
+```cpp
+HRESULT GetTypeArguments(
+   UINT          skip,
+   UINT          count,
+   IDebugField** ppFields,
+   UINT*         pFetched
+);
+```
+
+```csharp
+int GetTypeArguments(
+   uint          skip,
+   uint          count,
+   IDebugField[] ppFields,
+   out uint      pFetched
+);
+```
+
+#### <a name="parameters"></a>Parámetros
+ `skip`
+
+ [in] Número de campos que se omitirán antes de obtener los tipos de argumento.
+
+ `count`
+
+ [in] El número de campos de argumento que se devolverán (también especifica el tamaño de la `ppFields` matriz).
+
+ `ppFields`
+
+ [in, out] Una matriz de los campos que se rellena si la devolución de este método.
+
+ `pFetched`
+
+ [out] \(opcional) El número de argumento de tipo campos devueltos realmente.
+
+## <a name="return-value"></a>Valor devuelto
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+
+## <a name="remarks"></a>Comentarios
+ El número de tipos de argumento se puede obtener de antemano con [GetTypeArgumentCount](../../../extensibility/debugger/reference/idebugbinder3-gettypeargumentcount.md).
+
+## <a name="see-also"></a>Vea también
+- [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)
+- [GetTypeArgumentCount](../../../extensibility/debugger/reference/idebugbinder3-gettypeargumentcount.md)

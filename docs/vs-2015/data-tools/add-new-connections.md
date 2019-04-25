@@ -1,27 +1,24 @@
 ---
 title: Agregar nuevas conexiones | Documentos de Microsoft
-ms.custom: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-data-tools
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 8a93c287-2834-4a83-a590-bdc3fe8d293f
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 03407962b4ea8160d492971367f121835fa39aae
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: ff1ec43d6faec329db6138598d84e47db009113e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49218515"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665329"
 ---
-# <a name="add-new-connections"></a>Agregar nuevas conexiones
+# <a name="add-new-connections"></a>Adición de nuevas conexiones
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Puede probar la conexión a una base de datos o un servicio y explorar el contenido de la base de datos y esquemas, mediante el uso de **Explorador de servidores**, **Cloud Explorer**, o **Explorador de objetos de SQL Server**. La funcionalidad de estas ventanas se superpone en cierta medida. Las diferencias básicas son:  
   
  Explorador de servidores  
@@ -47,7 +44,7 @@ Puede probar la conexión a una base de datos o un servicio y explorar el conten
   
  ![Cambiar el proveedor de datos de AD0.NET](../data-tools/media/raddata-change-ad0-net-data-provider.png "raddata proveedor de datos de cambio AD0.NET")  
   
-## <a name="test-the-connection"></a>Probar la conexión  
+## <a name="test-the-connection"></a>Prueba de la conexión  
  Una vez que haya elegido el origen de datos, haga clic en **Probar conexión**. Si no tiene éxito, deberá solucionar según la documentación del fabricante.  
   
  ![Probar conexión](../data-tools/media/raddata-test-connection.png "raddata Probar conexión")  
@@ -56,4 +53,3 @@ Puede probar la conexión a una base de datos o un servicio y explorar el conten
   
 ## <a name="see-also"></a>Vea también  
  [Visual Studio Data Tools para .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)
-

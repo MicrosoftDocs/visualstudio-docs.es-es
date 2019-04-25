@@ -1,7 +1,6 @@
 ---
 title: Uso de recursos en 3D en un juego o una aplicación
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - VC.Project.ImageContentTask.ContentOutput
@@ -13,15 +12,15 @@ f1_keywords:
 ms.assetid: ea587909-e434-46a8-abf8-9b3e95a58b4f
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d346982d682305f3c80531bd4386fbefda536a9f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2fb6897d9dd603b5a86a6774336d64f51a6bb5d6
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986770"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55908626"
 ---
 # <a name="use-3d-assets-in-your-game-or-app"></a>Usar recursos en 3D en un juego o una aplicación
 

@@ -1,14 +1,9 @@
 ---
 title: Agregar referencias usando NuGet en lugar de un SDK de extensión | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.toolsoptionspages.nuget_package_manager.general
 - vs.toolsoptionspages.nuget_package_manager.package_sources
@@ -16,22 +11,22 @@ ms.assetid: 2175581e-83cb-444c-bb52-cc1fca8ea196
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 031b582665abeb14f705725c7bee97f272bd5ab4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e89b677113a04f286be3201a6b76d78fd5d191c2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49235812"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044023"
 ---
 # <a name="adding-references-using-nuget-versus-an-extension-sdk"></a>Agregar referencias usando NuGet en lugar de un SDK de extensión
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Puede proporcionar un paquete para el consumo en proyectos de Visual Studio mediante la extensión NuGet para Visual Studio o un kit de desarrollo de software (SDK). Este tema puede ayudarle a elegir el mejor método para su tarea, ya que describe las similitudes y las diferencias entre los dos mecanismos.  
   
--   NuGet es un sistema de administración de paquetes de código abierto que simplifica el proceso de incorporar bibliotecas a una solución de proyecto. Para obtener más información, vea [NuGet Overview](http://go.microsoft.com/fwlink/?LinkId=254877) (Introducción a NuGet).  
+- NuGet es un sistema de administración de paquetes de código abierto que simplifica el proceso de incorporar bibliotecas a una solución de proyecto. Para obtener más información, vea [NuGet Overview](http://go.microsoft.com/fwlink/?LinkId=254877) (Introducción a NuGet).  
   
--   Un SDK es una colección de archivos que Visual Studio trata como un único elemento de referencia. En el cuadro de diálogo **Administrador de referencias** se muestran todos los SDK que son pertinentes para el proyecto que está abierto cuando se muestra el cuadro de diálogo. Cuando se agrega un SDK a un proyecto, puede tener acceso a todo el contenido de ese SDK a través de IntelliSense, el **Cuadro de herramientas**, los diseñadores, el **Examinador de objetos**, MSBuild, la implementación, la depuración y el empaquetado. Para obtener más información sobre los SDK, vea [Crear un kit de desarrollo de software](../extensibility/creating-a-software-development-kit.md).  
+- Un SDK es una colección de archivos que Visual Studio trata como un único elemento de referencia. En el cuadro de diálogo **Administrador de referencias** se muestran todos los SDK que son pertinentes para el proyecto que está abierto cuando se muestra el cuadro de diálogo. Cuando se agrega un SDK a un proyecto, puede tener acceso a todo el contenido de ese SDK a través de IntelliSense, el **Cuadro de herramientas**, los diseñadores, el **Examinador de objetos**, MSBuild, la implementación, la depuración y el empaquetado. Para obtener más información sobre los SDK, vea [Crear un kit de desarrollo de software](../extensibility/creating-a-software-development-kit.md).  
   
 ## <a name="which-mechanism-should-i-use"></a>¿Qué mecanismo debo usar?  
  La tabla siguiente le ayuda a comparar las características de referencia de un SDK con las características de referencia de NuGet.  
@@ -77,6 +72,3 @@ Puede proporcionar un paquete para el consumo en proyectos de Visual Studio medi
   
 ## <a name="see-also"></a>Vea también  
  [Administrar referencias en un proyecto](../ide/managing-references-in-a-project.md)
-
-
-

@@ -4,16 +4,15 @@ ms.date: 11/04/2016
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 4a4b4f111776dc083e4c29ae7944b1f61762fe07
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1a3ab6aa4cd116c779cac4367d1eeb9a187edaeb
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53963756"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323298"
 ---
 # <a name="t4-include-directive"></a>Directiva Include T4
 
@@ -66,7 +65,7 @@ Output message 5 (from top template).
 
 ```
    Output Message 2 (from included file).
-<#@include file="TextFile2.t4" #>
+<#@ include file="TextFile2.t4" #>
    Output Message 4 (from included file).
 <#+ // Start of class feature control block.
 void GenerateMessage(int n)

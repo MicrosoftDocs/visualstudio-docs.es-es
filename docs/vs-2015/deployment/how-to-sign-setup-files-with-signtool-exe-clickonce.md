@@ -1,14 +1,9 @@
 ---
-title: 'Cómo: firmar archivos de instalación con SignTool.exe (ClickOnce) | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Firmar archivos de instalación con SignTool.exe (ClickOnce) | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -23,15 +18,15 @@ ms.assetid: 545a4005-d283-4110-9821-c78a9833c250
 caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: f6975fb9c3c3e1abeeaebe23b4a85f41833e421e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 67dc8e858a8ee87ee9e1fef9d99bf24ea4994960
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49179314"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053213"
 ---
-# <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>Cómo: Firmar archivos de instalación con SignTool.exe (ClickOnce)
+# <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>Procedimiento Firmar archivos de instalación con SignTool.exe (ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Puede usar SignTool.exe para firmar un programa de instalación (setup.exe). Este proceso ayuda a garantizar que no se instalen archivos alterados en los equipos de los usuarios finales.  
@@ -42,27 +37,27 @@ Puede usar SignTool.exe para firmar un programa de instalación (setup.exe). Est
   
 ### <a name="to-generate-an-unsigned-setup-program-and-sign-later"></a>Para generar un programa de instalación sin firmar y firmarlo más adelante  
   
-1.  En el equipo de desarrollo, instale el certificado con el que quiere firmar el manifiesto.  
+1. En el equipo de desarrollo, instale el certificado con el que quiere firmar el manifiesto.  
   
-2.  Seleccione el proyecto en el **Explorador de soluciones**.  
+2. Seleccione el proyecto en el **Explorador de soluciones**.  
   
-3.  En el **proyecto** menú, haga clic en *ProjectName* **propiedades**.  
+3. En el menú **Proyecto**, haga clic en **Propiedades** de *NombreDelProyecto*.  
   
-4.  En el **firma** página, desactive **firmar los manifiestos de ClickOnce**.  
+4. En la página **Firma**, desactive **Firmar los manifiestos de ClickOnce**.  
   
-5.  En el **publicar** página, haga clic en **requisitos previos**.  
+5. En la página **Publicar**, haga clic en **Requisitos previos**.  
   
-6.  Compruebe que todos los requisitos previos están seleccionados y, a continuación, haga clic en **Aceptar**.  
+6. Compruebe que se han seleccionado todos los requisitos previos y haga clic en **Aceptar**.  
   
-7.  En el **publicar** página, compruebe la configuración de publicación y, a continuación, haga clic en **publicar ahora**.  
+7. En la página **Publicar**, compruebe la configuración de la publicación y haga clic en **Publicar ahora**.  
   
      La solución publica el manifiesto de la aplicación sin firmar, el manifiesto de implementación sin firmar, los archivos específicos de la versión y el programa de instalación sin firmar en la ubicación de la carpeta de publicación.  
   
-8.  En el **publicar** página, haga clic en **requisitos previos**.  
+8. En la página **Publicar**, haga clic en **Requisitos previos**.  
   
-9. En el **requisitos previos** cuadro de diálogo, desactive **crear programa de instalación para instalar los componentes necesarios**.  
+9. En el cuadro de diálogo **Requisitos previos**, desactive **Crear programa de instalación para instalar los componentes necesarios**.  
   
-10. En el **publicar** página, compruebe la configuración de publicación y, a continuación, haga clic en **publicar ahora**.  
+10. En la página **Publicar**, compruebe la configuración de la publicación y haga clic en **Publicar ahora**.  
   
      La solución publica el manifiesto de la aplicación firmado, el manifiesto de implementación firmado y los archivos específicos de la versión en la ubicación de la carpeta de publicación. El proceso de publicación no sobrescribe el programa de instalación sin firmar.  
   
@@ -85,7 +80,4 @@ Puede usar SignTool.exe para firmar un programa de instalación (setup.exe). Est
     ```  
   
 ## <a name="see-also"></a>Vea también  
- [Cómo: Volver a firmar manifiestos de aplicación e implementación](../deployment/how-to-re-sign-application-and-deployment-manifests.md)
-
-
-
+ [Cómo: Repetición de la firma de manifiestos de implementación y aplicación](../deployment/how-to-re-sign-application-and-deployment-manifests.md)

@@ -4,16 +4,15 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: d1cec12a7a97ffa23f2eb75ffd9fc53da8ad2ed1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 85a4356837180d13428acf34636f28cca668a423
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53940711"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063158"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>Procedimiento Ampliar el Diseñador de lenguaje específico de dominio
 
@@ -27,25 +26,23 @@ Configurar un proyecto que contiene el código de la extensión y un proyecto VS
 
 ### <a name="to-create-a-dsl-designer-extension-solution"></a>Para crear una solución de extensión del Diseñador de DSL
 
-1.  Cree un nuevo proyecto mediante la plantilla de proyecto de biblioteca de clases. En el **nuevo proyecto** cuadro de diálogo, haga clic en **Visual C#** y en la ventana central, después, haga clic en **biblioteca de clases**.
+1. Cree un nuevo proyecto con el **biblioteca de clases** plantilla de proyecto. Este proyecto contendrá el código de las extensiones.
 
-     Este proyecto contendrá el código de las extensiones.
-
-2.  Cree un nuevo proyecto mediante la plantilla de proyecto VSIX. En el **nuevo proyecto** cuadro de diálogo, expanda **Visual C#**, haga clic en **extensibilidad**y, a continuación, en la ventana central, seleccione **proyecto VSIX**.
+2. Cree un nuevo **proyecto VSIX** proyecto.
 
      Seleccione **agregar a solución**.
 
-     Source.Extension.vsixmanifest se abre en el editor de manifiestos VSIX.
+     *Source.Extension.vsixmanifest* se abre en el editor de manifiestos VSIX.
 
-3.  Sobre el campo de contenido, haga clic en **agregar contenido**.
+3. Sobre el campo de contenido, haga clic en **agregar contenido**.
 
-4.  En el **agregar contenido** cuadro de diálogo, establezca **seleccione un tipo de contenido** a **componente MEF**y establezca **proyecto** a su proyecto de biblioteca de clases.
+4. En el **agregar contenido** cuadro de diálogo, establezca **seleccione un tipo de contenido** a **componente MEF**y establezca **proyecto** a su proyecto de biblioteca de clases.
 
-5.  Haga clic en **seleccionar ediciones** y asegúrese de que **Visual Studio Enterprise** está activada.
+5. Haga clic en **seleccionar ediciones** y asegúrese de que **Visual Studio Enterprise** está activada.
 
-6.  Asegúrese de que el proyecto VSIX es el proyecto de inicio de la solución.
+6. Asegúrese de que el proyecto VSIX es el proyecto de inicio de la solución.
 
-7.  En el proyecto de biblioteca de clases, agregue referencias a los ensamblados siguientes:
+7. En el proyecto de biblioteca de clases, agregue referencias a los ensamblados siguientes:
 
      Microsoft.VisualStudio.CoreUtility
 
@@ -71,17 +68,17 @@ Para probar cualquiera de las extensiones en este tema, compile y ejecute la sol
 
 Para implementar las extensiones a la principal de Visual Studio y a otros equipos, siga estos pasos:
 
-1.  Busque el archivo de instalación de VSIX en el proyecto VSIX en bin\\*\*\\\*.vsix
+1. Busque el archivo de instalación de VSIX en el proyecto VSIX en bin\\*\*\\\*.vsix
 
-2.  Copie este archivo en el equipo de destino y, a continuación, en el Explorador de Windows (o explorador de archivos), haga doble clic en él.
+2. Copie este archivo en el equipo de destino y, a continuación, en el Explorador de Windows (o explorador de archivos), haga doble clic en él.
 
      Se abre el Administrador de extensiones de Visual Studio para confirmar que se ha instalado la extensión.
 
 Para desinstalar la extensión, siga estos pasos:
 
-1.  En Visual Studio, en el **herramientas** menú, haga clic en **Administrador de extensiones**.
+1. En Visual Studio, en el **herramientas** menú, haga clic en **Administrador de extensiones**.
 
-2.  Seleccione la extensión y elimínelo.
+2. Seleccione la extensión y elimínelo.
 
 ## <a name="add-a-shortcut-menu-command"></a>Agregar un comando de menú contextual
 

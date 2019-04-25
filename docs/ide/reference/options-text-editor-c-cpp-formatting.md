@@ -1,7 +1,6 @@
 ---
 title: Opciones, editor de texto, C/C++, formato
 ms.date: 04/30/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.C/C++.Formatting.General
@@ -17,20 +16,20 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6aa4c543d19c43bd397d7d18a185a73a4bf161a6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 95683c93558f67457f0868a76f52d1334e7a6712
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53960753"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223226"
 ---
 # <a name="options-text-editor-cc-formatting"></a>Opciones, editor de texto, C/C++, formato
 
 Utilice estas páginas de propiedades para cambiar el comportamiento predeterminado del editor de código cuando se programa en C o C++.
 
-[Páginas de propiedades de formato de C++](media/cpp-formatting.png)
+![Páginas de propiedades de formato de C++](media/cpp-formatting.png)
 
- Para tener acceso a esta página, en el cuadro de diálogo **Opciones**, en el panel izquierdo, expanda **Editor de texto**, expanda **C/C++** y, a continuación, haga clic en **Formato**.
+Para tener acceso a esta página, en el cuadro de diálogo **Opciones**, en el panel izquierdo, expanda **Editor de texto**, expanda **C/C++** y, a continuación, haga clic en **Formato**.
 
 > [!NOTE]
 > Es posible que el equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Para más información, vea [Personalizar el IDE de Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
@@ -39,14 +38,25 @@ Utilice estas páginas de propiedades para cambiar el comportamiento predetermin
 
 Esta página tiene opciones para dar formato a las instrucciones y las bloquea a medida que las escribe.
 
-**Visual Studio 2017 versión 15.7 y posteriores:** La página también tiene opciones para configurar la compatibilidad con [ClangFormat](https://clang.llvm.org/docs/ClangFormat.html) versión 5.0. ClangFormat es una utilidad que facilita aplicar estilo y dar formato al código según un conjunto de reglas que se pueden configurar en un archivo de formato .clang o de formato _clang.
+::: moniker range="vs-2017"
+
+**Visual Studio 2017 versión 15.7 y posteriores:**
+
+::: moniker-end
+
+La página también tiene opciones para configurar la compatibilidad con [ClangFormat](https://clang.llvm.org/docs/ClangFormat.html) versión 5.0. ClangFormat es una utilidad que facilita aplicar estilo y dar formato al código según un conjunto de reglas que se pueden configurar en un archivo de formato .clang o de formato _clang.
 
 ### <a name="configuring-clangformat-options"></a>Configurar las opciones de ClangFormat
 
-En Visual Studio 2017 versión 15.7 y versiones posteriores, la compatibilidad con ClangFormat está habilitada de forma predeterminada. Puede elegir cuál de estas convenciones de formato comunes quiere aplicar a todos los proyectos: LLVM, Google, Chromium, Mozilla o WebKit. También puede crear un archivo de formato .clang o _clang de definición de formato personalizado. Si este archivo está presente en una carpeta de proyecto, Visual Studio lo usará para dar formato a todos los archivos de código fuente en esa carpeta y en sus subcarpetas. 
+::: moniker range="vs-2017"
+
+**Visual Studio 2017 versión 15.7 y posteriores:**
+
+::: moniker-end
+
+La compatibilidad con ClangFormat está habilitada de forma predeterminada. Puede elegir cuál de estas convenciones de formato comunes quiere aplicar a todos los proyectos: LLVM, Google, Chromium, Mozilla o WebKit. También puede crear un archivo de formato .clang o _clang de definición de formato personalizado. Si este archivo está presente en una carpeta de proyecto, Visual Studio lo usará para dar formato a todos los archivos de código fuente en esa carpeta y en sus subcarpetas.
 
 De forma predeterminada, Visual Studio ejecuta clangformat.exe en segundo plano y aplica formato a medida que escribe. También puede especificar que solo se ejecute manualmente en los comandos de formato invocados manualmente **Dar formato al documento (Ctrl+K, Ctrl+D)** o **Dar formato a la selección (Ctrl+K, Ctrl+F)**.
-
 
 ## <a name="indentation-new-lines-spacing-wrapping-pages"></a>Páginas de sangría, nuevas líneas, ajuste del espaciado
 

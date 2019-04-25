@@ -1,7 +1,6 @@
 ---
 title: IntelliSense de Visual Basic
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.Basic.IntelliSense
@@ -10,15 +9,15 @@ helpviewer_keywords:
 - IntelliSense [Visual Studio], Visual Basic
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e01c255a7e89298a2a4bd7548bab0b548520ceed
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: dc0897f3b2964996b18a40cc8dda16068ff772f2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53877895"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62582516"
 ---
 # <a name="intellisense-for-visual-basic-code-files"></a>Archivos de código de IntelliSense para Visual Basic
 

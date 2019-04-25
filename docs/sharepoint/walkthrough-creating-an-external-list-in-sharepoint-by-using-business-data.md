@@ -14,17 +14,17 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], entity backed list
 - Business Data Connectivity service [SharePoint development in Visual Studio], entity backed list
 - Business Data Connectivity service [SharePoint development in Visual Studio], external list
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 96c52d1d30444aa557465ce2022a3ef1db4c3de0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 45f0a896db97d489d58036ea226962550b512665
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53918789"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56600303"
 ---
 # <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>Tutorial: Crear una lista externa en SharePoint con datos profesionales
 
@@ -76,7 +76,7 @@ Necesita los componentes siguientes para completar este tutorial:
 
 1. En la barra de menús, elija **herramientas** > **conectar con base de datos**.
 
-     El **Agregar conexión** abre el cuadro de diálogo.
+     Se abrirá el cuadro de diálogo **Agregar conexión**.
 
 2. Agregar una conexión a la base de datos de ejemplo AdventureWorks de SQL Server.
 
@@ -187,7 +187,7 @@ Agregar un método Finder específico a la entidad Contact mediante el **detalle
     |Nombre|System.String|
     |LastName|System.String|
     |Teléfono|System.String|
-    |Dirección de correo electrónico|System.String|
+    |EmailAddress|System.String|
     |EmailPromotion|System.Int32|
     |NameStyle|System.Boolean|
     |PasswordHash|System.String|
@@ -276,7 +276,7 @@ Puede obtener más información acerca de cómo diseñar modelos para el servici
 
 ## <a name="see-also"></a>Vea también
 
-[Diseñar un modelo de conectividad a datos empresariales](../sharepoint/designing-a-business-data-connectivity-model.md)  
-[Crear un modelo de conectividad a datos empresariales](../sharepoint/creating-a-business-data-connectivity-model.md)  
-[Introducción a las herramientas de diseño de modelo BDC](../sharepoint/bdc-model-design-tools-overview.md)  
-[Integrar datos profesionales en SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)
+[Diseñar un modelo de conectividad a datos empresariales](../sharepoint/designing-a-business-data-connectivity-model.md)
+[crear un modelo de conectividad a datos empresariales](../sharepoint/creating-a-business-data-connectivity-model.md)
+[información general de las herramientas de diseño del modelo BDC](../sharepoint/bdc-model-design-tools-overview.md) 
+ [ Integrar datos profesionales en SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)

@@ -1,27 +1,22 @@
 ---
 title: Aislamiento de los parámetros de punto de entrada de Shell (C++) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Shell [Visual Studio], isolated mode%2C Start entry point
 - Visual Studio shell, isolated mode%2C Start entry point
 ms.assetid: 18f4b18b-2173-4afa-ba0a-42fe33e61118
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 270a5c932429a518447d0029b05d3c9522db7387
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6089c4ef32ef0d0b0bce081cef6d16bd569c0901
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51749168"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041956"
 ---
 # <a name="isolated-shell-entry-point-parameters-c"></a>Parámetros de punto de entrada de Shell aislado (C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ Cuando se inicia una aplicación basada en el shell de Visual Studio, llama el p
   
 - AllowsDroppedFilesOnMainWindow  
   
-- Nombre de aplicación  
+- AppName  
   
 - CommandLineLogo  
   
@@ -84,17 +79,17 @@ typedef int (__cdecl *STARTFCN)(LPSTR, LPWSTR, int, GUID *, WCHAR *pszSettings);
   
  Para valores booleanos, las cadenas siguientes representan el valor true; todas las demás cadenas representan el valor false. Estas cadenas distinguen mayúsculas de minúsculas.  
   
--   \+  
+- \+  
   
--   1  
+- 1  
   
--   -1  
+- -1  
   
--   el  
+- en  
   
--   true  
+- true  
   
--   sí  
+- sí  
   
 ## <a name="example"></a>Ejemplo  
  Para deshabilitar complementos y cambiar la ubicación de proyectos predeterminada para la aplicación, puede establecer el último parámetro a "AddinsAllowed=false;DefaultProjectsLocation=%USERPROFILE%\temp".  
@@ -102,4 +97,3 @@ typedef int (__cdecl *STARTFCN)(LPSTR, LPWSTR, int, GUID *, WCHAR *pszSettings);
 ## <a name="see-also"></a>Vea también  
  [Personalización del Shell aislado](../extensibility/customizing-the-isolated-shell.md)   
  [Archivos .Pkgdef](../extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file.md)
-

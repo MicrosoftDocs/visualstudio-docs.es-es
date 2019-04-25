@@ -1,26 +1,21 @@
 ---
 title: Agregar directorios a la Agregar cuadro de diálogo nuevo elemento | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Add New Item dialog box, extending
 ms.assetid: 67ae8af6-3752-49e8-8ce3-007aca5f7982
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: d094f9911b80f3cff3e648da2593c62e0429fb54
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: f370d208cb8f7aad88f806983983ccee9f584625
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51751499"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58995676"
 ---
 # <a name="adding-directories-to-the-add-new-item-dialog-box"></a>Adición de directorios al cuadro de diálogo Agregar nuevo elemento
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -65,4 +60,3 @@ NoRemove Projects
  [Registro de plantillas de proyecto y elemento](../../extensibility/internals/registering-project-and-item-templates.md)   
  [Agregar elementos a la Agregar nuevo elemento de los cuadros de diálogo](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)   
  [Adición de directorios al cuadro de diálogo Nuevo proyecto](../../extensibility/internals/adding-directories-to-the-new-project-dialog-box.md)
-

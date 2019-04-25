@@ -1,25 +1,20 @@
 ---
 title: Depuración ASP.NET remota en un servidor remoto de IIS 7.5 equipo | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 573a3fc5-6901-41f1-bc87-557aa45d8858
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 71d249571830ac608bef12c4a47d0243de1859a5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 5873033e160a8354db70565606dcb399da13e073
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764073"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109535"
 ---
 # <a name="remote-debugging-aspnet-on-a-remote-iis-computer"></a>Depuración ASP.NET remota en un equipo remoto de IIS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +59,7 @@ Una vez instalado, asegúrese de que el depurador remoto se está ejecutando en 
 
     ![RemoteDBG_IIS_AspNet_45](../debugger/media/remotedbg-iis-aspnet-45.png "RemoteDBG_IIS_AspNet_45")
 
-    En Windows Server 2008 R2, instale ASP.NET 4 en lugar de utilizar este comando: **\v4.0.30319\aspnet_regiis.exe - ir de C:\Windows\Microsoft.NET\Framework (64)**
+    En Windows Server 2008 R2, instale ASP.NET 4 en lugar de utilizar este comando:   **C:\Windows\Microsoft.NET\Framework(64)\v4.0.30319\aspnet_regiis.exe -ir**
 1. Copie el directorio del proyecto ASP.NET desde el equipo de Visual Studio a un directorio local (que llamaremos **C:\Publish**) en el equipo de Windows Server. Puede copiar manualmente el proyecto, use Xcopy, Web Deploy, Robocopy, Powershell u otras opciones.
 
     > [!CAUTION]
@@ -79,6 +74,7 @@ Una vez instalado, asegúrese de que el depurador remoto se está ejecutando en 
       </system.web>
   
     ```
+
 1. Abra el **Administrador de Internet Information Services (IIS)** y vaya a **Sitios**.
 1. Haga clic con el botón secundario en el nodo **Sitio web predeterminado** y seleccione **Agregar aplicación**.
 1. Establecer el **Alias** campo **MyMVC** y el campo de grupo de aplicaciones a **ASP.NET v4.0** (ASP.NET 4.5 no es una opción para el grupo de aplicaciones). Establezca la **Ruta de acceso física** como **C:\Publish** (donde haya copiado el directorio del proyecto ASP.NET).
@@ -107,12 +103,9 @@ Una vez instalado, asegúrese de que el depurador remoto se está ejecutando en 
 
     ![RemoteDBG_AttachToProcess](../debugger/media/remotedbg-attachtoprocess.png "RemoteDBG_AttachToProcess")
 
-1. Abra el sitio web del equipo remoto. En un explorador, vaya a **http://\<nombre del equipo remoto >**.
+1. Abra el sitio web del equipo remoto. En un explorador, vaya a **http://\<nombre del equipo remoto>**.
     
     Debería ver la página web de ASP.NET.
 1. En la página web ASP.NET, haga clic en el vínculo a la **sobre** página.
 
     Se alcanzará el punto de interrupción en Visual Studio.
-
-
-

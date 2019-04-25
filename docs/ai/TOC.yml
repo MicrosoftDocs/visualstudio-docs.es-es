@@ -1,45 +1,52 @@
+items:
 - name: Visual Studio Tools para IA
   href: index.yml
   items:
-    - name: Información general
+  - name: Información general
+    items:
+    - name: Acerca de Visual Studio Tools para IA
+      href: about-ai-tools.md
+  - name: Instalación
+    href: installation.md
+  - name: Guías de inicio rápido
+    items:
+    - name: Tensorflow + Python
+      href: tensorflow-local.md
+  - name: Tutoriales
+    items:
+    - name: Máquina virtual de TensorFlow + Azure Deep Learning
+      href: tensorflow-vm.md
+  - name: Guías de procedimientos
+    items:
+    - name: Crear un proyecto
       items:
-        - name: Acerca de Visual Studio Tools para IA
-          href: about-ai-tools.md
-    - name: Instalación
-      href: installation.md
-    - name: Guías de inicio rápido
-      items:
-        - name: Tensorflow + Python
-          href: tensorflow-local.md
-    - name: Tutoriales
-      items:
-        - name: Máquina virtual de TensorFlow + Azure Deep Learning
-          href: tensorflow-vm.md
-    - name: Guías de procedimientos
-      items:
-        - name: Crear un proyecto
-          items:
-            - name: Creación de un proyecto a partir de una galería de muestra
-              href: create-project-gallery.md
-            - name: Creación de un proyecto a partir del código existente
-              href: create-project-existing.md
-            - name: Creación de un proyecto a partir de una plantilla
-              href: create-project.md
-            - name: Creación de un proyecto a partir del repositorio GitHub
-              href: create-project-repo.md
-        - name: Entrenar el modelo
-          href: train-model.md
-        - name: Visualización de detalles del trabajo
-          href: job-details.md
-        - name: Supervisión de utilización de GPU
-          href: monitor-gpu.md
-        - name: Supervisión de TensorBoard
-          href: monitor-tensorboard.md
-        - name: Administración de almacenamiento
-          href: manage-storage.md
-    - name: Muestras
-      items:
-        - name: GitHub
-          href: 'https://github.com/Microsoft/samples-for-ai'
-        - name: Galería de Machine Learning
-          href: 'https://gallery.cortanaintelligence.com/projects'
+      - name: Creación de un proyecto a partir de una galería de muestra
+        href: create-project-gallery.md
+      - name: Creación de un proyecto a partir del código existente
+        href: create-project-existing.md
+      - name: Creación de un proyecto a partir de una plantilla
+        href: create-project.md
+      - name: Creación de un proyecto a partir del repositorio GitHub
+        href: create-project-repo.md
+    - name: Entrenar el modelo
+      href: train-model.md
+    - name: Visualización de detalles del trabajo
+      href: job-details.md
+    - name: Supervisión de utilización de GPU
+      href: monitor-gpu.md
+    - name: Supervisión de TensorBoard
+      href: monitor-tensorboard.md
+    - name: Administración de almacenamiento
+      href: manage-storage.md
+  - name: Muestras
+    items:
+    - name: GitHub
+      href: https://github.com/Microsoft/samples-for-ai
+    - name: Galería de Machine Learning
+      href: https://gallery.cortanaintelligence.com/projects
+ms.openlocfilehash: 06ed7a4c59a97742f3055d0d5084f28f9022adc9
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56624391"

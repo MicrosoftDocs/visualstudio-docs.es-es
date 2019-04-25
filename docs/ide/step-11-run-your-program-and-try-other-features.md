@@ -1,20 +1,19 @@
 ---
 title: 'Paso 11: Ejecutar el programa y probar otras características'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 656614d0-4fe7-4a67-8edc-c10919377d09
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b0a00b328c85758c2be824377d04a0b3cfe122f3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fbceecbbe03e84e1dac6c851f3bbb692c0e26539
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968250"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55934658"
 ---
 # <a name="step-11-run-your-program-and-try-other-features"></a>Paso 11: Ejecutar el programa y probar otras características
 El programa está finalizado y listo para ejecutarse. Puede ejecutar el programa y establecer el color de fondo del control <xref:System.Windows.Forms.PictureBox>. Para aprender más, intente mejorar el programa cambiando el color del formulario, personalizando los botones y la casilla, y cambiando las propiedades del formulario.

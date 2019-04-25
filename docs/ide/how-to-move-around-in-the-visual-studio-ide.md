@@ -1,7 +1,6 @@
 ---
 title: Cómo moverse por el IDE
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - environments [Visual Studio], navigation
@@ -15,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 6c36b6eb-c93f-496b-af08-4199f7afd8bd
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bf2c00350b6b366e0e1d5ea02a8e260c8927b348
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5933d89e38d040b088879f10911f2f1fff049aab
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53988889"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62547690"
 ---
 # <a name="how-to-move-around-in-the-visual-studio-ide"></a>Procedimiento para moverse por el IDE de Visual Studio
 
@@ -44,9 +43,9 @@ Puede navegar hacia atrás y hacia delante por los archivos abiertos en el edito
 
 ### <a name="to-move-through-open-files-in-order-of-use"></a>Para desplazarse por los archivos abiertos por orden de uso
 
--   Para activar los documentos abiertos en el orden de acceso más reciente, presione **Ctrl**+**-**.
+- Para activar los documentos abiertos en el orden de acceso más reciente, presione **Ctrl**+**-**.
 
--   Para activar los documentos abiertos en el orden inverso, **Ctrl**+**Mayús**+**-**.
+- Para activar los documentos abiertos en el orden inverso, **Ctrl**+**Mayús**+**-**.
 
     > [!NOTE]
     > **Navegar hacia atrás** y **Navegar hacia delante** también se pueden encontrar en el menú **Ver**.
@@ -64,20 +63,20 @@ El **Navegador del IDE** funciona como el conmutador de aplicaciones de Windows.
 
 ### <a name="to-switch-to-specific-files-in-the-editor"></a>Para cambiar a archivos concretos en el editor
 
--   Presione **Ctrl**+**Tab** para mostrar el **Navegador del IDE**. Mantenga presionada la tecla **Ctrl** y presione la tecla **Tab** varias veces hasta que seleccione el archivo al que desea cambiar.
+- Presione **Ctrl**+**Tab** para mostrar el **Navegador del IDE**. Mantenga presionada la tecla **Ctrl** y presione la tecla **Tab** varias veces hasta que seleccione el archivo al que desea cambiar.
 
     > [!TIP]
     > Para invertir el orden por el que se desplaza por la lista **Archivos activos**, mantenga presionadas las teclas **Ctrl**+**Mayús** y presione la tecla **Tab**.
 
     \- o -
 
--   En la esquina superior derecha del editor, pulse el botón **Archivos activos** y, después, seleccione en la lista un archivo al que cambiar.
+- En la esquina superior derecha del editor, pulse el botón **Archivos activos** y, después, seleccione en la lista un archivo al que cambiar.
 
     \- o -
 
--   En la barra de menús, elija **Ventana** > **Ventanas**.
+- En la barra de menús, elija **Ventana** > **Ventanas**.
 
--   En la lista, seleccione el archivo que quiere ver y, después, pulse **Activar**.
+- En la lista, seleccione el archivo que quiere ver y, después, pulse **Activar**.
 
 ## <a name="navigate-among-tool-windows-in-the-ide"></a>Navegar entre las ventanas de herramientas en el IDE
 
@@ -88,7 +87,7 @@ El **Navegador del IDE** también permite recorrer las ventanas de herramientas 
 
 ### <a name="to-switch-to-a-specific-tool-window-in-the-ide"></a>Para cambiar a una ventana de herramientas específica en el IDE
 
--   Presione **Alt**+**F7** para mostrar el **Navegador del IDE**. Mantenga presionada la tecla **Alt** y presione la tecla **F7** varias veces hasta que seleccione la ventana a la que quiere cambiar.
+- Presione **Alt**+**F7** para mostrar el **Navegador del IDE**. Mantenga presionada la tecla **Alt** y presione la tecla **F7** varias veces hasta que seleccione la ventana a la que quiere cambiar.
 
     > [!TIP]
     > Para invertir el orden por el que se desplaza por la lista de **Ventanas de herramientas activas**, mantenga presionadas las teclas **Mayús**+**Alt** y presione la tecla **F7**.

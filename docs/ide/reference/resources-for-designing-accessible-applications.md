@@ -2,7 +2,6 @@
 title: Recursos para diseñar aplicaciones accesibles
 description: Obtenga información sobre cómo crear aplicaciones accesibles para facilitar su uso a las personas con discapacidades.
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - accessibility, Windows applications
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 426bf023-bb34-43c4-9edb-c307191c8170
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 10b63de96ce56005abeb59de35b533693edcff53
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b79d1f95b6aab700de060a3749374e9ecb48c229
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53959630"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55952676"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>Recursos para diseñar aplicaciones accesibles
 

@@ -1,36 +1,39 @@
 ---
-title: Procedimiento Distribuir fragmentos de código
-ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
+title: Distribución de fragmentos de código como extensión
+ms.date: 03/21/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - code snippets, distributing
 ms.assetid: 5f717abd-e167-47ae-818c-6b0bae100ceb
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e624f313c66df09c7496babe08a32dfd8453829c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0f0b3211352dc16e51b64196e13f7378bf2a423c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53836067"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62429550"
 ---
 # <a name="how-to-distribute-code-snippets"></a>Procedimiento Distribuir fragmentos de código
 
-Los fragmentos de código se pueden entregar a los compañeros para que los instalen en sus equipos mediante el **Administrador de fragmentos de código**. Pero si tiene que distribuir varios fragmentos de código o le gustaría distribuirlos más ampliamente, incluya el archivo de fragmento de código en una extensión de Visual Studio. Los usuarios de Visual Studio pueden, entonces, instalar la extensión.
+Los fragmentos de código se pueden entregar a los compañeros para que los instalen en sus equipos mediante el **Administrador de fragmentos de código**. Aunque si tiene que distribuir varios fragmentos de código o quiere distribuirlos más ampliamente, puede incluir los archivos de fragmento de código en una extensión de Visual Studio. Los usuarios de Visual Studio pueden después instalar la extensión para obtener los fragmentos de código.
 
-Debe instalar el SDK de Visual Studio para poder crear extensiones de Visual Studio. Busque la versión de VSSDK que coincida con su instalación de Visual Studio en [Descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017).
+## <a name="prerequisites"></a>Requisitos previos
+
+Instalar la carga de trabajo **Desarrollo de extensiones de Visual Studio** para obtener acceso a las plantillas de proyecto **Proyecto VSIX**.
+
+![Carga de trabajo Desarrollo de extensiones de Visual Studio](media/vs-2019/extension-development-workload.png)
 
 ## <a name="set-up-the-extension"></a>Configurar la extensión
 
-En este procedimiento se usa el mismo fragmento de código de Hola mundo creado en [Tutorial: Creación de un fragmento de código](../ide/walkthrough-creating-a-code-snippet.md). Nosotros le proporcionaremos el texto *.snippet* para que no tenga que volver a crearlo.
+En este procedimiento se usa el mismo fragmento de código de Hola mundo creado en [Tutorial: Creación de un fragmento de código](../ide/walkthrough-creating-a-code-snippet.md). En este artículo se ofrece el fragmento de código de XML, por lo que no tendrá que volver atrás y crear un fragmento de código.
 
-1. Cree un nuevo proyecto de VSIX denominado **TestSnippet**. (**Archivo** > **Nuevo** > **Proyecto** > **Visual C# (o Visual Basic)** > **Extensibilidad**).
+1. Cree un proyecto a partir de la plantilla **Proyecto VSIX vacío** y asígnele el nombre **TestSnippet**.
 
 2. En el proyecto **TestSnippet**, agregue un nuevo archivo XML con el nombre *VBCodeSnippet.snippet*. Reemplace el contenido por el siguiente XML:
 
@@ -68,7 +71,17 @@ En este procedimiento se usa el mismo fragmento de código de Hola mundo creado 
 
 ### <a name="add-the-pkgdef-file"></a>Agregar el archivo .pkgdef
 
+::: moniker range="vs-2017"
+
 1. Agregue un archivo de texto a la carpeta *HelloWorldVB* y asígnele el nombre *HelloWorldVB.pkgdef*. Este archivo se usa para agregar determinadas claves al registro. En este caso, agrega una nueva subclave a la clave **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Languages\CodeExpansions\Basic**.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Agregue un archivo de texto a la carpeta *HelloWorldVB* y asígnele el nombre *HelloWorldVB.pkgdef*. Este archivo se usa para agregar determinadas claves al registro. En este caso, agrega una nueva subclave a la clave **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\16.0\Languages\CodeExpansions\Basic**.
+
+::: moniker-end
 
 2. Agregue las líneas siguientes al archivo.
 
@@ -102,7 +115,9 @@ En este procedimiento se usa el mismo fragmento de código de Hola mundo creado 
 
 4. Pruebe el fragmento de código. En la instancia experimental, abra un proyecto de Visual Basic y luego abra uno de los archivos de código. Coloque el cursor en algún lugar del código, haga clic con el botón derecho y, en el menú contextual, seleccione **Insertar fragmento de código**.
 
-5. Verá que una de las carpetas es *HelloWorldVB*. Haga doble clic en ella. Se debería ver un elemento emergente **Insertar fragmento de código: HelloWorldVB >** con una lista desplegable **HelloWorldVB**. Haga clic en la lista desplegable de **HelloWorldVB**. Verá la línea siguiente agregada al archivo:
+5. Verá que una de las carpetas es *HelloWorldVB*. Haga doble clic en ella. Se debería ver un elemento emergente **Insertar fragmento de código: HelloWorldVB >** con una lista desplegable **HelloWorldVB**. Haga clic en la lista desplegable de **HelloWorldVB**.
+
+   Se agrega la siguiente línea al archivo de código:
 
     ```vb
     Console.WriteLine("Hello, World!")

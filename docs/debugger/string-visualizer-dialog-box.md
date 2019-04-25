@@ -1,6 +1,7 @@
 ---
-title: Ver cadenas en un visualizador de cadenas | Microsoft Docs
+title: Cuadro de diálogo del visualizador de cadena | Microsoft Docs
 ms.date: 10/10/2018
+ms.custom: seoapril2019
 ms.topic: reference
 f1_keywords:
 - vs.debug.stringviewer
@@ -9,57 +10,53 @@ dev_langs:
 - VB
 - FSharp
 - C++
-- JScript
-- SQL
+- JavaScript
 helpviewer_keywords:
 - string visualizer
 - visualizers, string
 ms.assetid: 080fd8f1-72b0-461f-8451-3c84d5dc51df
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d4808e1a6f3086e15162bf2f25c1df369ab90866
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 982db296fd17fb86b4a139e02a9418eeb507cd91
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53901235"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59366788"
 ---
-# <a name="view-strings-in-a-string-visualizer-in-visual-studio"></a>Ver cadenas en un visualizador de cadenas en Visual Studio
+# <a name="string-visualizer-dialog-box"></a>Visualizador de cadenas (cuadro de diálogo)
 
 Durante la depuración en Visual Studio, puede ver las cadenas con el visualizador de cadenas integrada. El visualizador de cadenas muestra las cadenas que son demasiado grandes para una ventana de sugerencia o depurador de datos. También puede ayudarle a identificar cadenas con formato incorrecto.
 
-El visualizador de cadenas integrada incluye texto sin formato, XML, HTML y JSON opciones. Visualizadores para otros tipos, tales como objetos WPF, también se pueden abrir desde el **automático** u otras ventanas del depurador.
+El visualizador de cadenas integrada incluye texto sin formato, XML, HTML y JSON opciones. También puede abrir los visualizadores integrados para algunos otros tipos, tales como [DataSet, DataTable y DataView](../debugger/dataset-visualizer-dialog-box.md) objetos, desde el **automático** u otras ventanas del depurador.
 
-## <a name="open-a-string-visualizer"></a>Abrir un visualizador de cadenas
+> [!NOTE]
+> Si necesita inspeccionar elementos XAML o UI de WPF en un visualizador, vea o [propiedades XAML inspeccionar durante la depuración](../debugger/inspect-xaml-properties-while-debugging.md) o [cómo usar el visualizador de árboles WPF](../debugger/how-to-use-the-wpf-tree-visualizer.md).
 
 Para abrir el visualizador de cadenas, debe ponerse en pausa durante la depuración. Mantenga el mouse sobre una variable que tiene un texto sin formato, XML, HTML o JSON el valor de cadena y seleccione el icono de lupa ![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "icono visualizador").
 
-![Abrir un visualizador de cadenas](../debugger/media/dbg-tips-string-visualizers.png "visualizador de cadenas abierto")
+## <a name="uielement-list"></a>Lista de UIElement
 
-## <a name="view-string-visualizer-data"></a>Ver datos de cadena visualizador
+**Expresión** campo muestra la variable o expresión que está encima.
 
-En la ventana del visualizador de cadenas, la **expresión** campo muestra la variable o expresión que está encima, y el **valor** campo muestra el valor de cadena.
+**Valor** campo muestra el valor de cadena. Un espacio en blanco **valor** significa que el visualizador elegido no reconoce la cadena. Por ejemplo, el **Visualizador XML** muestra un espacio en blanco **valor** para una cadena de texto sin etiquetas XML o una cadena JSON. Para ver las cadenas que no se reconoce el visualizador elegido, elija el **visualizador de texto** en su lugar. El **visualizador de texto** muestra texto sin formato.
 
-Un espacio en blanco **valor** significa que el visualizador elegido no reconoce la cadena. Por ejemplo, el **Visualizador XML** muestra un espacio en blanco **valor** para una cadena de texto sin etiquetas XML o una cadena JSON.
-
-Para ver las cadenas que no se reconoce el visualizador elegido, elija el **visualizador de texto**. El **visualizador de texto** muestra texto sin formato.
-
-### <a name="view-json-string-data"></a>Ver datos de cadena JSON
+### <a name="json-string-data"></a>Datos de cadena JSON
 
 Una cadena JSON con formato correcto es similar a la siguiente ilustración, en el visualizador JSON. JSON con formato incorrecto puede mostrar un icono de error (o en blanco si no reconocido). Para identificar el error JSON, copie y pegue la cadena en una herramienta de detección de errores JSON como [JSLint](https://www.jslint.com/).
 
 ![Visualizador de cadenas JSON](../debugger/media/dbg-tips-string-visualizer-json.png "visualizador de cadenas JSON")
 
-### <a name="view-xml-string-data"></a>Ver datos de cadena XML
+### <a name="xml-string-data"></a>Datos de cadena XML
 
 Una cadena XML con formato correcto es similar a la siguiente ilustración, en el visualizador de XML. XML con formato incorrecto puede mostrar sin las etiquetas XML, o en blanco si no se reconoce.
 
 ![Visualizador de cadenas XML](../debugger/media/dbg-string-visualizers-xml.png "visualizador de cadenas XML")
 
-### <a name="view-html-string-data"></a>Datos de cadena de la vista HTML
+### <a name="html-string-data"></a>Datos de cadena HTML
 
 Una cadena HTML que tiene el formato correcto aparece como si se representa en un explorador, como se muestra en la siguiente ilustración. HTML con formato incorrecto puede aparecer como texto sin formato.
 

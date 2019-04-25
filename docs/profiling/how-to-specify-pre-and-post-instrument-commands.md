@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 6a8d5340-1d1b-4d81-88dd-8e1f435eb828
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c80e16b3566fd0687b74c5a43363864038f88cbf
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: dec06f7f45666845dfcc7080ed4b18db8baba993
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53861467"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62539072"
 ---
 # <a name="how-to-specify-pre--and-post-instrument-commands"></a>Procedimiento Especificar comandos anteriores y posteriores a la instrumentación
 

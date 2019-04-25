@@ -2,21 +2,20 @@
 title: Diseñador de flujo de trabajo - Diseñador de actividades Pick
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
 f1_keywords:
 - System.Activities.Statements.Pick.UI
 ms.assetid: 642c0a47-1b47-45de-a19a-ca0606cedd7a
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 710c7728069a7166d67ab39239b360634fb80509
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: ed558c40e932f2148f2240247d19a4fc6df0d06a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54269506"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55950531"
 ---
 # <a name="pick-activity-designer"></a>Diseñador de actividades Pick
 

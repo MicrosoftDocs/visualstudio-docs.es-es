@@ -1,32 +1,26 @@
 ---
 title: Funciones de elementos | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - msbuild, Item functions
 ms.assetid: 5e6df3cc-2db8-4cbd-8fdd-3ffd03ac0876
 caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 687d740a379bd3b04bd47d0d2e3111bb71e7934d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: c94624aaea629c087b552ee46266a44f534888d5
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49207927"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670269"
 ---
 # <a name="item-functions"></a>Funciones de elementos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 A partir de MSBuild 4.0, el código de las tareas y de los destinos puede llamar a funciones de elementos para obtener información sobre los elementos del proyecto. Estas funciones simplifican la obtención de elementos Distinct() y son más rápidas que si se recorren en bucle los elementos.  
   
 ## <a name="string-item-functions"></a>Funciones de elementos de cadena  
@@ -110,6 +104,3 @@ A partir de MSBuild 4.0, el código de las tareas y de los destinos puede llamar
   
 ## <a name="see-also"></a>Vea también  
  [Elementos](../msbuild/msbuild-items.md)
-
-
-

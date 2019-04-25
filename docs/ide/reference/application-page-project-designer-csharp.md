@@ -1,7 +1,6 @@
 ---
 title: Página Aplicación de propiedades de proyecto de C#
 ms.date: 10/30/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - cs.ProjectPropertiesApplicationWPF
@@ -11,15 +10,15 @@ helpviewer_keywords:
 - Application page in Project Designer
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: cd8b2de9d4e878a524ee5c1e012e26c8d2224957
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 18527e9b45726dbd76f1e76f5d63976278800f6f
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53850932"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355346"
 ---
 # <a name="application-page-project-designer-c"></a>Página de aplicación, Diseñador de proyectos (C#)
 
@@ -53,7 +52,7 @@ Para obtener acceso a esta propiedad mediante programación, vea <xref:VSLangPro
 
 Especifica la versión de .NET Framework a la que se destina la aplicación. Esta opción puede tener valores diferentes dependiendo de qué versiones de .NET Framework están instaladas en el equipo.
 
-El valor predeterminado es el del marco de destino que ha seleccionado en el cuadro de diálogo **Nuevo proyecto**.
+El valor predeterminado corresponde a la plataforma de destino seleccionada al crear el proyecto.
 
 > [!NOTE]
 > Los paquetes de requisitos previos incluidos en el [cuadro de diálogo Requisitos previos](../../ide/reference/prerequisites-dialog-box.md) se establecen automáticamente la primera vez que abre el cuadro de diálogo. Si posteriormente cambia la plataforma de destino del proyecto, debe seleccionar manualmente los requisitos previos para que coincidan con la nueva plataforma de destino.
@@ -72,7 +71,7 @@ Para obtener información sobre cómo tener acceso a esta propiedad mediante pro
 
 **Generar automáticamente redireccionamientos de enlace**
 
-Los redireccionamientos de enlace se agregan al proyecto si la aplicación o sus componentes hacen referencia a más de una versión del mismo ensamblado. Si quiere definir manualmente los redireccionamientos de enlace en el archivo de proyecto, desactive **Generar automáticamente redireccionamientos de enlace**. Esta casilla se incorporó en Visual Studio 2017, versión 15.7.
+Los redireccionamientos de enlace se agregan al proyecto si la aplicación o sus componentes hacen referencia a más de una versión del mismo ensamblado. Si quiere definir manualmente los redireccionamientos de enlace en el archivo de proyecto, desactive **Generar automáticamente redireccionamientos de enlace**.
 
 Para obtener más información sobre los redireccionamientos, vea [Redirecting assembly versions](/dotnet/framework/configure-apps/redirect-assembly-versions) (Redireccionamiento de versiones de ensamblado).
 

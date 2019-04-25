@@ -12,32 +12,32 @@ helpviewer_keywords:
 - Multilingual User Interface [Office development in Visual Studio]
 - localization [Office development in Visual Studio], user interface targeting
 - Office applications [Office development in Visual Studio], globalization
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e911563406e0cfdeff613f70a5059da34c4b66df
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c495f8a83b58c53404056befd2227b295c3324d5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53872286"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063990"
 ---
 # <a name="how-to-target-the-office-multilingual-user-interface"></a>Procedimiento Destino de la interfaz de usuario multilingüe de Office
-  La interfaz de usuario multilingüe (MUI) es una característica de Microsoft Office que proporciona al usuario final la capacidad de cambiar el idioma de la interfaz de usuario (UI). Por ejemplo, un usuario final, trabajando con una interfaz de usuario inglés puede cambiar el idioma de la interfaz de usuario en español.  
-  
- [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]  
-  
- Si la aplicación se usará por personas que utilizan muchos idiomas de Office, puede agregar código para cambiar automáticamente el idioma de las cadenas de interfaz de usuario para que coincida con el idioma que utiliza Office en el equipo del usuario (si el usuario tiene instalados los recursos correctos).  
-  
-## <a name="to-check-the-current-office-ui-setting"></a>Para comprobar la configuración actual de la interfaz de usuario de Office  
-  
-1.  Use el <xref:System.Threading.Thread.CurrentUICulture%2A> propiedad del subproceso actual. Establecer el idioma de las cadenas de interfaz de usuario para que coincida con el idioma usado por la versión de Office que actualmente se ejecuta en el equipo del usuario.  
-  
+  La interfaz de usuario multilingüe (MUI) es una característica de Microsoft Office que proporciona al usuario final la capacidad de cambiar el idioma de la interfaz de usuario (UI). Por ejemplo, un usuario final, trabajando con una interfaz de usuario inglés puede cambiar el idioma de la interfaz de usuario en español.
+
+ [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
+
+ Si la aplicación se usará por personas que utilizan muchos idiomas de Office, puede agregar código para cambiar automáticamente el idioma de las cadenas de interfaz de usuario para que coincida con el idioma que utiliza Office en el equipo del usuario (si el usuario tiene instalados los recursos correctos).
+
+## <a name="to-check-the-current-office-ui-setting"></a>Para comprobar la configuración actual de la interfaz de usuario de Office
+
+1. Use el <xref:System.Threading.Thread.CurrentUICulture%2A> propiedad del subproceso actual. Establecer el idioma de las cadenas de interfaz de usuario para que coincida con el idioma usado por la versión de Office que actualmente se ejecuta en el equipo del usuario.
+
      [!code-vb[Trin_VstcoreCreatingExcel#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreCreatingExcelVB/Sheet1.vb#10)]
-     [!code-csharp[Trin_VstcoreCreatingExcel#10](../vsto/codesnippet/CSharp/Trin_VstcoreCreatingExcelCS/Sheet1.cs#10)]  
-  
-## <a name="see-also"></a>Vea también  
- [Cómo: Aplicaciones de Office de destino a través de los ensamblados de interoperabilidad primarios](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)   
- [Enlace en tiempo de ejecución en las soluciones de Office](../vsto/late-binding-in-office-solutions.md)  
+     [!code-csharp[Trin_VstcoreCreatingExcel#10](../vsto/codesnippet/CSharp/Trin_VstcoreCreatingExcelCS/Sheet1.cs#10)]
+
+## <a name="see-also"></a>Vea también
+- [Cómo: Aplicaciones de Office de destino a través de los ensamblados de interoperabilidad primarios](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)
+- [Enlace en tiempo de ejecución en las soluciones de Office](../vsto/late-binding-in-office-solutions.md)

@@ -2,19 +2,17 @@
 title: Asignar licencias a suscripciones de Visual Studio | Microsoft Docs
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.date: 07/16/2018
 ms.topic: conceptual
 description: Obtenga información sobre la manera en que los administradores pueden asignar licencias a los suscriptores.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 6f0bbded7682bd8f7162ae415c6c83711df04a04
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 97962571d8a7c433a5f72af90d9107f9e2b08a9b
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49931238"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843030"
 ---
 # <a name="assign-licenses-in-the-visual-studio-subscriptions-administrator-portal"></a>Asignar licencias en el portal de administradores de suscripciones de Visual Studio
 
@@ -46,7 +44,7 @@ Aquí se muestra cómo asignar una licencia de suscripciones de Visual Studio a 
 
     Si quiere agregar sus propias notas de referencia a la suscripción, puede hacerlo en la sección **Agregar referencia**.
    > [!div class="mx-imgBorder"]
-   > ![Adición de notas de referencia propias a cada suscripción](media/add-subscriber-reference-notes.png) 
+   > ![Adición de notas de referencia propias a cada suscripción](media/add-subscriber-reference-notes.png)
 
     Cuando haya terminado de seleccionar opciones y de especificar datos para el suscriptor, elija **Agregar** en la parte inferior de la ventana emergente **Agregar suscriptor**.
    > [!div class="mx-imgBorder"]
@@ -54,7 +52,7 @@ Aquí se muestra cómo asignar una licencia de suscripciones de Visual Studio a 
 
 4. Después de agregar el suscriptor, se envía automáticamente un correo electrónico de asignación al nuevo suscriptor con más instrucciones. Puede volver a enviar el correo electrónico de asignación en cualquier momento si selecciona el suscriptor y hace clic en el botón **Reenviar** en el menú superior.
    > [!div class="mx-imgBorder"]
-   > ![Reenvío del correo electrónico de activación a cualquier usuario o a varios usuarios siempre que se quiera](media/resend-subscriber-activation-emails.png) 
+   > ![Reenvío del correo electrónico de activación a cualquier usuario o a varios usuarios siempre que se quiera](media/resend-subscriber-activation-emails.png)
 
 ## <a name="bulk-assignments"></a>Asignaciones en masa
 
@@ -65,7 +63,7 @@ Aquí se muestra cómo asignar una licencia de suscripciones de Visual Studio a 
 2. La asignación en masa usa una plantilla de Microsoft Excel para cargar los suscriptores. En el cuadro de diálogo para cargar varios suscriptores, haga clic en **Descargar** para descargar la plantilla.
    > [!div class="mx-imgBorder"]
    > ![Descarga de la plantilla de Excel para cargar varios suscriptores](media/download-template-upload-subscribers.png)
-   > 
+   >
    > [!NOTE]
    > Descargue siempre la versión más reciente de esta plantilla. Si usa una versión antigua, se puede producir un error en la carga masiva.
 

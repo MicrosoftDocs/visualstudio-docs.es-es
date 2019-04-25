@@ -1,14 +1,9 @@
 ---
-title: 'CA1810: Tipo de referencia inicializar campos estáticos insertados | Microsoft Docs'
-ms.custom: ''
+title: 'CA1810: Inicializar campos estáticos de tipo de referencia insertados | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - InitializeReferenceTypeStaticFieldsInline
 - CA1810
@@ -20,12 +15,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e4d7ffbe4fc821ffd70b0bb299b2a4738d63873b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: dd0372ca3264bedd6fbb17ef3c8326471cb6e99f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862689"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60037873"
 ---
 # <a name="ca1810-initialize-reference-type-static-fields-inline"></a>CA1810: Inicializar campos estáticos de tipo de referencia insertados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,9 +42,9 @@ ms.locfileid: "49862689"
 
  Las comprobaciones del constructor estático pueden reducir el rendimiento. A menudo se usa un constructor estático solo para inicializar campos estáticos, en cuyo caso debe solo asegurarse de que la inicialización estática se produce antes del primer acceso a un campo estático. El `beforefieldinit` comportamiento es adecuado para estos y muchos otros tipos. No es adecuado sólo cuando la inicialización estática afecta al estado global y se cumple una de las siguientes acciones:
 
--   El efecto sobre el estado global es costoso y no es necesario si no se utiliza el tipo.
+- El efecto sobre el estado global es costoso y no es necesario si no se utiliza el tipo.
 
--   Los efectos de estado global se pueden acceder sin tener acceso a los campos estáticos del tipo.
+- Los efectos de estado global se pueden acceder sin tener acceso a los campos estáticos del tipo.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
  Para corregir una infracción de esta regla, inicialice todos los datos estáticos cuando se declara y quite el constructor estático.
@@ -73,6 +68,3 @@ ms.locfileid: "49862689"
  **} / final de la clase NoStaticConstructor**
 ## <a name="related-rules"></a>Reglas relacionadas
  [CA2207: Inicializar campos estáticos de tipo de valor insertados](../code-quality/ca2207-initialize-value-type-static-fields-inline.md)
-
-
-

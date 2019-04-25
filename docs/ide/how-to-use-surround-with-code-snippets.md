@@ -1,24 +1,23 @@
 ---
 title: Cómo usar fragmentos de código envolventes | Microsoft Docs
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - surround-with snippets
 - snippets [C#], surround with
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 11e31d46af00620b9e8ac9f45fe79946eea4eb1a
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: 0bf279502c52c47a68ea7eb5fb5c193e7d31e4d6
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54270157"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55952273"
 ---
-# <a name="how-to-use-surround-with-code-snippets"></a>Procedimiento Usar fragmentos de código envolventes
+# <a name="how-to-use-surround-with-code-snippets"></a>Filtrar Usar fragmentos de código envolventes
 
 Los siguientes procedimientos describen cómo usar fragmentos de código envolventes. Los fragmentos de código envolventes están disponibles de tres maneras: mediante un método abreviado de teclado, desde del menú **Edición** y mediante el menú contextual.
 

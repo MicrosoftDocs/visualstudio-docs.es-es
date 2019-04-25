@@ -7,15 +7,15 @@ helpviewer_keywords:
 - Profiling Tools, sampling
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d98a34abcd0e17f7b453ab3bd6e706665a9379bb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f2668d5b60fba429613975cc24e751dbe07f87b7
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53863477"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56641083"
 ---
 # <a name="understand-sampling-data-values"></a>Introducción a los valores de datos de muestreo
 
@@ -51,5 +51,5 @@ El porcentaje del número total de muestras exclusivas de la generación de perf
 
 ## <a name="see-also"></a>Vea también
 
-[Cómo: Elegir métodos de recopilación](../profiling/how-to-choose-collection-methods.md)  
-[Análisis de datos de herramientas de rendimiento](../profiling/analyzing-performance-tools-data.md)
+[Cómo: Elegir métodos de recopilación](../profiling/how-to-choose-collection-methods.md)
+[Analizar datos de herramientas de rendimiento](../profiling/analyzing-performance-tools-data.md)

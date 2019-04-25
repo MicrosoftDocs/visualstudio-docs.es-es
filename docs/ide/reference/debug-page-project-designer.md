@@ -1,7 +1,6 @@
 ---
 title: Página Depuración, Diseñador de proyectos
 ms.date: 06/27/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesDebug
@@ -11,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: ef11eae9-df96-4e20-aabd-2678ba317140
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f383701017e9fb830333f7a9869aac99684333a6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a49b2c77833538cb983f776a2f54ad332fb87f59
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53848264"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504411"
 ---
 # <a name="debug-page-project-designer"></a>Página Depuración, Diseñador de proyectos
 
@@ -84,8 +83,8 @@ Active o desactive esta casilla para habilitar o deshabilitar la depuración de 
 
 ## <a name="see-also"></a>Vea también
 
-- [Depurar en Visual Studio](../../debugger/debugger-feature-tour.md)
+- [Primer vistazo al depurador](../../debugger/debugger-feature-tour.md)
 - [Configuración del proyecto para configuraciones de depuración en C#](../../debugger/project-settings-for-csharp-debug-configurations.md)
 - [Configuración del proyecto para una configuración de depuración de Visual Basic](../../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
-- [Cómo: Depuración de una aplicación ClickOnce con permisos restringidos](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)
-- [Cómo: Crear y editar configuraciones](../../ide/how-to-create-and-edit-configurations.md)
+- [Procedimiento Depurar una aplicación ClickOnce con permisos restringidos](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)
+- [Procedimiento Crear y editar configuraciones](../../ide/how-to-create-and-edit-configurations.md)

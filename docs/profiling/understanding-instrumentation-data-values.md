@@ -7,15 +7,15 @@ helpviewer_keywords:
 - instrumentation profiling method
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 10353dabf0ae0e0bbee726c2f816a04c2af99f90
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0f10a3f434def1c96c2f096c4b299b47dd8aad9f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53991102"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56620778"
 ---
 # <a name="understand-instrumentation-data-values"></a>Introducción a los valores de datos de instrumentación
 
@@ -97,5 +97,5 @@ El porcentaje de los valores de tiempo inclusivo de aplicación total de la sesi
 
 ## <a name="see-also"></a>Vea también
 
-[Análisis de datos de herramientas de rendimiento](../profiling/analyzing-performance-tools-data.md)  
-[Cómo: Elegir métodos de recopilación](../profiling/how-to-choose-collection-methods.md)
+[Analizar datos de herramientas de rendimiento](../profiling/analyzing-performance-tools-data.md)
+[ Elegir métodos de recopilación](../profiling/how-to-choose-collection-methods.md)

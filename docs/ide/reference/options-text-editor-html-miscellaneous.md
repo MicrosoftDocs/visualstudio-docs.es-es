@@ -1,22 +1,21 @@
 ---
 title: Opciones, Editor de texto, HTML (formularios Web Forms), varios
 ms.date: 1/15/2019
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.HTML.Miscellaneous
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 01fd6fa7e2fc2a3db1b05523ddcc9d4a5dc5629b
-ms.sourcegitcommit: d0b02affd24e66efed924c197824f35f823e3240
+ms.openlocfilehash: 43ab664968ca75f8af6da89db84725924caa3584
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/21/2019
-ms.locfileid: "54417842"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55955432"
 ---
 # <a name="options-text-editor-html-web-forms-miscellaneous"></a>Opciones, Editor de texto, HTML (formularios Web Forms), varios
 

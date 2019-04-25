@@ -1,22 +1,21 @@
 ---
 title: Depuración de código de Python
 description: Visual Studio proporciona depuración enriquecida para código de Python, incluido el establecimiento de puntos de interrupción, la ejecución paso a paso, la inspección de valores, el examen de excepciones y la depuración en la ventana interactiva.
-ms.date: 01/07/2019
-ms.prod: visual-studio-dev15
+ms.date: 03/13/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7ed108232fc1dd04785f5eeb68d29fb304607ed7
-ms.sourcegitcommit: a7e6675185fd34ac8084f09627b2038046cdd2b1
+ms.openlocfilehash: 4678e3508c16b38fec2a10cdeb79bc499eaf15fd
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54060860"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366502"
 ---
 # <a name="debug-your-python-code"></a>Depurar el código de Python
 
@@ -25,12 +24,8 @@ Visual Studio proporciona una experiencia de depuración completa para Python, l
 Vea también los siguientes artículos de depuración específicos para distintos escenarios:
 
 - [Depuración remota de Linux](debugging-python-code-on-remote-linux-machines.md)
-- [Mixed-mode Python/C++ debugging](debugging-mixed-mode-c-cpp-python-in-visual-studio.md) (Depuración en modo mixto Python/C++)
-- [Symbols for mixed-mode debugging](debugging-symbols-for-mixed-mode-c-cpp-python.md) (Símbolos de depuración en modo mixto)
-
-|   |   |
-|---|---|
-| ![icono de cámara de película para vídeo](../install/media/video-icon.png "Ver un vídeo") | [Eche un vistazo a un vídeo (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Debugging-Python-Ep5dp5LWE_3805918567) para ver una demostración de la depuración de Python (3 minutos 32 segundos).|
+- [Depuración en modo mixto Python/C++](debugging-mixed-mode-c-cpp-python-in-visual-studio.md)
+- [Símbolos de depuración en modo mixto](debugging-symbols-for-mixed-mode-c-cpp-python.md)
 
 <a name="debugging-without-a-project"></a>
 
@@ -45,7 +40,7 @@ Vea también los siguientes artículos de depuración específicos para distinto
 
 El flujo de trabajo de depuración básica conlleva configurar puntos de interrupción, recorrer paso a paso el código, inspeccionar valores y administrar excepciones, tal y como se describe en las secciones siguientes.
 
-Puede iniciar una sesión de depuración con el comando **Depurar** > **Iniciar depuración**, el botón **Iniciar** de la barra de herramientas o la tecla **F5**. Estas acciones inician el archivo de inicio del proyecto (se muestra en negrita en el **Explorador de soluciones**) con el entorno activo del proyecto y los argumentos de línea de comandos o las rutas de búsqueda que se hayan especificado en **Propiedades del proyecto** (vea [Project debugging options](#project-debugging-options) [Opciones de depuración de proyectos]). **Visual Studio 2017, versión 15.6** y posteriores, le avisa si no tiene un archivo de inicio configurado; en las versiones anteriores, es posible que se abra una ventana de salida con el intérprete de Python en ejecución o que la ventana de salida aparezca brevemente y luego desaparezca. En cualquier caso, haga clic con el botón derecho en el archivo adecuado y seleccione **Establecer como archivo de inicio**.
+Puede iniciar una sesión de depuración con el comando **Depurar** > **Iniciar depuración**, el botón **Iniciar** de la barra de herramientas o la tecla **F5**. Estas acciones inician el archivo de inicio del proyecto (se muestra en negrita en el **Explorador de soluciones**) con el entorno activo del proyecto y los argumentos de línea de comandos o las rutas de búsqueda que se hayan especificado en **Propiedades del proyecto** (vea [Project debugging options](#project-debugging-options) [Opciones de depuración de proyectos]). Visual Studio 2017, versión 15.6 y posteriores, le avisa si no tiene un archivo de inicio configurado; en las versiones anteriores, es posible que se abra una ventana de salida con el intérprete de Python en ejecución o que la ventana de salida aparezca brevemente y luego desaparezca. En cualquier caso, haga clic con el botón derecho en el archivo adecuado y seleccione **Establecer como archivo de inicio**.
 
 > [!Note]
 > El depurador siempre se inicia con el entorno de Python activo para el proyecto. Para cambiar el entorno, active otro distinto como se explica en [Cómo asignar el entorno de Python que se usa en un proyecto](selecting-a-python-environment-for-a-project.md).
@@ -73,8 +68,8 @@ Una vez detenido en un punto de interrupción, hay varias maneras de recorrer el
 
 | Característica | Pulsación de tecla | Descripción |
 | --- | --- | --- |
-| **Continue** | **F5** | Ejecuta código hasta que se alcanza el punto de interrupción siguiente. |
-| **Depurar paso a paso por instrucciones** | **F11** | Ejecuta la instrucción siguiente y se detiene. Si la siguiente instrucción es una llamada a una función, el depurador se detiene en la primera línea de la función que se va a invocar. |
+| **Continuar** | **F5** | Ejecuta código hasta que se alcanza el punto de interrupción siguiente. |
+| **Paso a paso por instrucciones** | **F11** | Ejecuta la instrucción siguiente y se detiene. Si la siguiente instrucción es una llamada a una función, el depurador se detiene en la primera línea de la función que se va a invocar. |
 | **Paso a paso por procedimientos** | **F10** | Ejecuta la siguiente instrucción, como realizar una llamada a una función (mediante la ejecución de todo su código) y aplicar cualquier valor devuelto. Esta acción permite omitir con facilidad aquellas funciones que no necesita depurar. |
 | **Paso a paso para salir** | **Mayús**+**F11** | Ejecuta el código hasta el final de la función actual y después pasa a la instrucción de llamada.  Este comando resulta útil cuando no necesita depurar el resto de la función actual. |
 | **Ejecutar hasta el cursor** | **Ctrl**+**F10** | Ejecuta código hasta la ubicación del operador exponencial en el editor. Este comando le permite saltar fácilmente un segmento de código que no necesita depurar. |
@@ -139,10 +134,10 @@ De forma predeterminada, el depurador inicia el programa con el selector de Pyth
 
 | Opción | Descripción |
 | --- | --- |
-| **Iniciador de Python estándar** | Utiliza código de depuración escrito en Portable Python que es compatible con CPython, IronPython y variantes, como Stackless Python. Proporciona la mejor experiencia de depuración de código Python puro. Al realizar una asociación a un proceso *python.exe* en ejecución, se usa este iniciador. Este selector también proporciona [depuración en modo mixto](debugging-mixed-mode-c-cpp-python-in-visual-studio.md) para CPython, que permite cambiar sin problemas entre los códigos C/C++ y Python. |
-| **Iniciador web** | Inicia el explorador predeterminado para la selección y habilita la depuración de plantillas. Vea la sección de [depuración de plantillas web](python-web-application-project-templates.md#debugging) para obtener más información. |
-| **Iniciador web de Django** | Idéntico al selector web y se muestra solo para la compatibilidad con versiones anteriores. |
-| **Iniciador de IronPython (.NET)** | Usa el depurador de .NET, que solo funciona con IronPython, pero permite cambiar entre cualquier proyecto en lenguaje .NET, incluidos C# y VB. Este selector se usa para establecer una asociación con un proceso .NET en ejecución que hospeda IronPython. |
+| **Selector de Python estándar** | Utiliza código de depuración escrito en Portable Python que es compatible con CPython, IronPython y variantes, como Stackless Python. Proporciona la mejor experiencia de depuración de código Python puro. Al realizar una asociación a un proceso *python.exe* en ejecución, se usa este iniciador. Este selector también proporciona [depuración en modo mixto](debugging-mixed-mode-c-cpp-python-in-visual-studio.md) para CPython, que permite cambiar sin problemas entre los códigos C/C++ y Python. |
+| **Selector web** | Inicia el explorador predeterminado para la selección y habilita la depuración de plantillas. Vea la sección de [depuración de plantillas web](python-web-application-project-templates.md#debugging) para obtener más información. |
+| **Selector web Django** | Idéntico al selector web y se muestra solo para la compatibilidad con versiones anteriores. |
+| **Selector de IronPython (.NET)** | Usa el depurador de .NET, que solo funciona con IronPython, pero permite cambiar entre cualquier proyecto en lenguaje .NET, incluidos C# y VB. Este selector se usa para establecer una asociación con un proceso .NET en ejecución que hospeda IronPython. |
 
 ### <a name="run-options-search-paths-startup-arguments-and-environment-variables"></a>Opciones de ejecución (rutas de búsqueda, argumentos de inicio y variables de entorno)
 
@@ -151,7 +146,7 @@ De forma predeterminada, el depurador inicia el programa con el selector de Pyth
 | **Rutas de búsqueda** | Estos valores coinciden con lo que se muestra en el nodo **Rutas de búsqueda** del proyecto en el **Explorador de soluciones**. Puede modificar este valor aquí, pero es más fácil usar el **Explorador de soluciones**, ya que permite examinar las carpetas y convierte automáticamente las rutas de acceso a un formato relativo. |
 | **Argumentos de script** | Estos argumentos se agregan al comando que se ha usado para iniciar el script, y aparecen después del nombre de archivo del script. El primer elemento aquí está disponible para el script como `sys.argv[1]`, el segundo como `sys.argv[2]`, y así sucesivamente. |
 | **Argumentos del intérprete** | Estos argumentos se agregan a la línea de comandos del iniciador antes del nombre del script. Los argumentos comunes aquí son `-W ...` para controlar advertencias, `-O` para optimizar ligeramente el programa y `-u` para utilizar E/S no almacenada en el búfer. Los usuarios de IronPython probablemente usen este campo para pasar opciones `-X`, como `-X:Frames` o `-X:MTA`. |
-| **Ruta del intérprete** | Reemplaza la ruta de acceso asociada con el entorno actual. El valor puede resultar útil para iniciar el script con un intérprete no estándar. |
+| **Ruta de acceso del intérprete** | Reemplaza la ruta de acceso asociada con el entorno actual. El valor puede resultar útil para iniciar el script con un intérprete no estándar. |
 | **Variables de entorno** | En este cuadro de texto de varias líneas, agregue entradas con el formato \<NAME>=\<VALUE>. Como esta opción se aplica al final, por encima de cualquier variable de entorno global existente y, después, `PYTHONPATH` se establece según la configuración de **Rutas de búsqueda**, puede usarse para reemplazar manualmente cualquiera de esas otras variables. |
 
 ## <a name="immediate-and-interactive-windows"></a>Ventanas inmediatas e interactivas
@@ -171,25 +166,21 @@ La ventana **Interactiva de depuración** admite metacomandos especiales además
 | `$continue`, `$cont`, `$c` | Inicia la ejecución del programa a partir de la instrucción actual. |
 | `$down`, `$d` | Baja el marco actual un nivel en el seguimiento de la pila. |
 | `$frame` | | Muestra el identificador del marco actual.
-| `$frame` | Identificador del marco | Cambia el marco actual al identificador del marco especificado.
+| `$frame` | frame ID | Cambia el marco actual al identificador del marco especificado.
 | `$load` | Carga los comandos del archivo y los ejecuta hasta que terminan. |
 | `$proc` |  | Muestra el identificador de proceso actual. |
-| `$proc` | Identificador de proceso | Cambia el proceso actual al identificador de proceso especificado. |
+| `$proc` | process ID | Cambia el proceso actual al identificador de proceso especificado. |
 | `$procs` | | Muestra los procesos que se están depurando actualmente. |
 | `$stepin`, `$step`, `$s` | Recorre paso a paso instrucciones hasta llegar a la siguiente llamada de función, si es posible. |
 | `$stepout`, `$return`, `$r` | Sale paso a paso de la función actual. |
 | `$stepover`, `$until`, `$unt` | Pasa por alto la siguiente llamada de función. |
 | `$thread` | | Muestra el identificador de subproceso actual. |
-| `$thread` | Identificador de subproceso | Cambia el subproceso actual al identificador de subproceso especificado. |
+| `$thread` | thread ID | Cambia el subproceso actual al identificador de subproceso especificado. |
 | `$threads` | | Muestra los subprocesos que se están depurando actualmente. |
 | `$up`, `$u` | | Sube el marco actual un nivel en el seguimiento de la pila. |
 | `$where`, `$w`, `$bt` | Muestra los marcos del subproceso actual. |
 
 Tenga en cuenta que las ventanas estándar del depurador, como **Procesos**, **Subprocesos** y **Pila de llamadas**, no están sincronizadas con la ventana **Interactiva de depuración**. El cambio del marco, subproceso o proceso activo en la ventana **Interactiva de depuración** no afecta a las otras ventanas del depurador. Del mismo modo, el cambio del marco, subproceso o proceso activo en las otras ventanas del depurador no afecta a la ventana **Interactiva de depuración**.
-
-La ventana **Interactiva de depuración** tiene su propio conjunto de opciones, a las que puede acceder en **Herramientas** > **Opciones** > **Herramientas de Python** > **Ventana interactiva de depuración**. A diferencia de la ventana **Python interactivo** normal, que tiene una instancia independiente para cada entorno Python, solo hay una ventana **Interactiva de depuración** y siempre usa el intérprete de Python para el proceso que se va a depurar. Vea [Opciones: Opciones de depuración](python-support-options-and-settings-in-visual-studio.md#debugging-options).
-
-![Opciones de la ventana Depuración interactiva](media/debugging-interactive-options.png)
 
 <a name="use-the-experimental-debugger"></a>
 
@@ -251,7 +242,7 @@ Los pasos siguientes habilitan la depuración en la sesión actual de Visual Stu
 1. Escriba el comando siguiente:
 
     ```ps
-    DebugAdapterHost.Logging /On
+    DebugAdapterHost.Logging /On /OutputWindow
     ```
 
 1. Inicie la depuración y recorra los pasos que sean necesarios para reproducir el problema. Durante este tiempo, los registros de depuración aparecen en la ventana **Salida** bajo **Registro del host de adaptador de depuración**. Luego puede copiar los registros de esa ventana y pegarlos en un problema de GitHub, correo electrónico, etc.
@@ -261,7 +252,7 @@ Los pasos siguientes habilitan la depuración en la sesión actual de Visual Stu
 1. Si Visual Studio se bloquea o usted no es capaz de acceder a la ventana **Salida**, reinicie Visual Studio, abra una ventana de comandos y escriba el siguiente comando:
 
     ```ps
-    DebugAdapterHost.Logging /On /OutputWindow
+    DebugAdapterHost.Logging /On
     ```
 
 1. Inicie la depuración y reproduzca el problema de nuevo. Después, puede encontrar los registros del depurador en `%temp%\DebugAdapterHostLog.txt`.

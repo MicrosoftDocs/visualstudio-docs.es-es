@@ -1,14 +1,9 @@
 ---
-title: 'Cómo: utilizar un visualizador | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Utilizar un visualizador | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.dataviewer
 - vs.debug.stringviewer
@@ -27,15 +22,15 @@ helpviewer_keywords:
 ms.assetid: d2611385-0134-4387-8c5a-979fe625a462
 caps.latest.revision: 37
 ms.author: mikejo
-manager: douge
-ms.openlocfilehash: f50dba2f236127bd2e155ea13cb8646f18de0e92
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c0344b9961e7ade31864d70c7d7422f328983abd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51721923"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100983"
 ---
-# <a name="how-to-use-a-visualizer"></a>Cómo: Utilizar un visualizador
+# <a name="how-to-use-a-visualizer"></a>Procedimiento Utilizar un visualizador
 Puede utilizar un visualizador para mostrar el contenido de una variable o un objeto de manera significativa para el tipo de datos. Puede usar los visualizadores de **DataTips**, un **inspección** ventana, el **automático** ventana, o la **variables locales** ventana.  
   
  Los visualizadores no se admiten en .NET Compact Framework.  
@@ -45,26 +40,26 @@ Puede utilizar un visualizador para mostrar el contenido de una variable o un ob
   
 ### <a name="to-open-a-visualizer"></a>Para abrir un visualizador  
   
-1.  Haga clic en el icono de lupa que aparece junto al nombre de variable en **DataTips**, un **inspección** ventana, o en el **automático**, **variables locales**, o **Inspección rápida** ventana.  
+1. Haga clic en el icono de lupa que aparece junto al nombre de variable en **DataTips**, un **inspección** ventana, o en el **automático**, **variables locales**, o **Inspección rápida** ventana.  
   
      Se mostrará una lista de visualizadores.  
   
-2.  Haga clic en el visualizador que desee usar.  
+2. Haga clic en el visualizador que desee usar.  
   
 ### <a name="to-use-a-visualizer-for-managed-code-during-remote-debugging"></a>Para utilizar un visualizador para el código administrado durante la depuración remota  
   
--   Copie el archivo DLL del visualizador en el equipo remoto antes de iniciar la sesión de depuración.  
+- Copie el archivo DLL del visualizador en el equipo remoto antes de iniciar la sesión de depuración.  
   
      La ruta de acceso al archivo DLL debe ser la misma en el equipo remoto y en el equipo local. Esta ruta de acceso puede ser cualquiera de las siguientes ubicaciones:  
   
      *Ruta de instalación de Visual Studio* `\Common7\Packages\Debugger\Visualizers`  
   
-     O bien  
+     -o bien-  
   
      `My Documents\Visual Studio 2010\Visualizers` *Versión de Visual Studio* `\Visualizers`  
   
 ## <a name="see-also"></a>Vea también  
- [Crear visualizadores personalizados](../debugger/create-custom-visualizers-of-data.md)   
- [Cómo: instalar un visualizador](../debugger/how-to-install-a-visualizer.md)   
- [Cómo: escribir un visualizador](../debugger/how-to-write-a-visualizer.md)   
+ [Creación de visualizadores personalizados](../debugger/create-custom-visualizers-of-data.md)   
+ [Cómo: Instalación de un visualizador](../debugger/how-to-install-a-visualizer.md)   
+ [Cómo: Escritura de un visualizador](../debugger/how-to-write-a-visualizer.md)   
  [Ver valores de datos en sugerencias de datos](../debugger/view-data-values-in-data-tips-in-the-code-editor.md)

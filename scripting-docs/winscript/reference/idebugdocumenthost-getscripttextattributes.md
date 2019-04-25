@@ -2,7 +2,6 @@
 title: 'Idebugdocumenthost:: Getscripttextattributes | Documentos de Microsoft'
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 016073d2ce22ab814716efc204ce573ea17cd510
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 6a5e56468e51f6d90e37e90c885b6b9df48d5f6e
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54092721"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58159002"
 ---
 # <a name="idebugdocumenthostgetscripttextattributes"></a>IDebugDocumentHost::GetScriptTextAttributes
 Devuelve los atributos de texto de un bloque de texto del documento.  
@@ -55,9 +54,9 @@ HRESULT GetScriptTextAttributes(
   
 |Constante|Valor|Descripción|  
 |--------------|-----------|-----------------|  
-|GETATTRTYPE_DEPSCAN|0 x 0001|Indica que los identificadores y los operadores dot deben identificarse con los indicadores SOURCETEXT_ATTR_IDENTIFIER y SOURCETEXT_ATTR_MEMBERLOOKUP, respectivamente.|  
-|GETATTRFLAG_THIS|0 x 0100|Indica que se debe identificar el identificador para el objeto actual con la marca SOURCETEXT_ATTR_THIS.|  
-|GETATTRFLAG_HUMANTEXT|0 x 8000|Indica que el texto de comentario y el contenido de cadena debe identificarse con el indicador SOURCETEXT_ATTR_HUMANTEXT.|  
+|GETATTRTYPE_DEPSCAN|0x0001|Indica que los identificadores y los operadores dot deben identificarse con los indicadores SOURCETEXT_ATTR_IDENTIFIER y SOURCETEXT_ATTR_MEMBERLOOKUP, respectivamente.|  
+|GETATTRFLAG_THIS|0x0100|Indica que se debe identificar el identificador para el objeto actual con la marca SOURCETEXT_ATTR_THIS.|  
+|GETATTRFLAG_HUMANTEXT|0x8000|Indica que el texto de comentario y el contenido de cadena debe identificarse con el indicador SOURCETEXT_ATTR_HUMANTEXT.|  
   
  `pattr`  
  [in, out] Búfer que contiene los atributos devueltos.  

@@ -1,14 +1,9 @@
 ---
 title: Utilidad CreatePkgDef | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - package definition
 - create pkgdef
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: c745cb76-47a6-49ff-9eed-16af0f748e35
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 492e34c92019de7f3c0921b853d103252e09b996
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5f450453ce8e336fecb401e30bc777c7b9c8ef7d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782653"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58995663"
 ---
 # <a name="createpkgdef-utility"></a>Utilidad CreatePkgDef
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,8 +35,8 @@ CreatePkgDef /out=FileName [/codebase] [/assembly] AssemblyPath
 ```  
   
 ## <a name="arguments"></a>Argumentos  
- / out =`FileName`  
- Requerido. Establece el nombre del archivo de salida .pkgdef a`FileName`.  
+ /out=`FileName`  
+ Obligatorio. Establece el nombre del archivo de salida .pkgdef a`FileName`.  
   
  /codebase  
  Opcional. Registro de las fuerzas con la utilidad de la base de código.  
@@ -62,4 +57,3 @@ CreatePkgDef /out=FileName [/codebase] [/assembly] AssemblyPath
   
 ## <a name="see-also"></a>Vea también  
  [Utilidad CreateExpInstance](../../extensibility/internals/createexpinstance-utility.md)
-

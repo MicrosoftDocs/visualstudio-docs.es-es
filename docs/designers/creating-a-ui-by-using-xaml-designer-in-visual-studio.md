@@ -1,7 +1,6 @@
 ---
-title: Crear una UI en el Diseñador XAML
-ms.date: 11/05/2018
-ms.prod: visual-studio-dev15
+title: Creación de una UI con el Diseñador XAML
+ms.date: 03/28/2019
 ms.topic: conceptual
 f1_keywords:
 - VS.XamlDesigner
@@ -11,15 +10,15 @@ f1_keywords:
 ms.assetid: c54969a7-d75a-4a35-9b37-af7a596a7c24
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 83dc9bd74615c60a5a39d7b095b4466f332eb60e
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: 3cd26f35111fc2e79290b30e7ae488b268e558d0
+ms.sourcegitcommit: f17e3afa5c324595afccf15a8a69df8c33b873d5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54270026"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58658871"
 ---
 # <a name="create-a-ui-by-using-xaml-designer-in-visual-studio"></a>Creación de una UI con el Diseñador XAML en Visual Studio
 
@@ -105,56 +104,9 @@ La barra de vista en dos paneles aparece en la parte superior de la vista XAML c
 
 El zoom de marcado permite cambiar el tamaño de la vista **XAML**. Puede hacer zoom del 20% al 400%.
 
-## <a name="device-window"></a>Ventana de dispositivo
-
-> [!NOTE]
-> Si la versión de la plataforma de destino (`TargetPlatformVersion`) de una aplicación de UWP es 10.0.16299.0 o superior, la ventana **Dispositivo** no está disponible.
-
-La ventana **Dispositivo** del Diseñador XAML permite simular varias vistas, presentaciones y opciones de presentación en tiempo de diseño para el proyecto. La ventana **Dispositivo** está disponible en el menú **Diseño** cuando se trabaja en el Diseñador XAML. Este es su aspecto:
-
-![Ventana de dispositivo](../designers/media/xaml_editor_device_panel.png)
-
-Estas son las opciones disponibles en la ventana Dispositivo:
-
-**Pantalla**
-
-Especifica los diferentes tamaños y resoluciones de la aplicación.
-
-**Orientación**
-
-Especifica las diferentes orientaciones de la aplicación: **Horizontal** o **Vertical**.
-
-**Borde**
-
-Especifica las diferentes alineaciones de los bordes de la aplicación: **Ambos**, **Izquierdo**, **Derecho** o **Ninguno**.
-
-**Contraste alto**
-
-Muestra una vista previa de la aplicación en función de la configuración de contraste seleccionada. Al establecerse en un valor distinto de **Predeterminado**, esta configuración invalida la propiedad `RequestedTheme` establecida en *App.xaml*.
-
-**Invalidar ajuste de escala**
-
-Activa o desactiva la emulación de un ajuste de escala del documento en la superficie de diseño. Esto permite aumentar el porcentaje de escala en un factor. Active la casilla para activar la emulación. Por ejemplo, si el porcentaje de ajuste de escala es del 100%, el documento dentro de la superficie de diseño escalará hasta el 140%. Esta opción está deshabilitada si el porcentaje actual de ajuste de escala es de 180.
-
-**Ancho mínimo**
-
-Especifica el ajuste de ancho mínimo. El ancho mínimo se puede cambiar en *App.xaml*.
-
-**Tema**
-
-Especifica el tema de la aplicación. Por ejemplo, puede cambiar entre un tema **oscuro** y un tema **claro**.
-
-**Mostrar cromo**
-
-Activa y desactiva el marco de tableta simulado alrededor de la aplicación en la vista Diseño. Active la casilla para mostrar el marco.
-
-**Recortar para mostrar**
-
-Especifica el modo de presentación. Seleccione la casilla para recortar el tamaño del documento con el tamaño de presentación.
-
 ## <a name="document-outline-window"></a>Ventana Esquema del documento
 
-La ventana Esquema del documento del Diseñador XAML ayuda a realizar estas tareas:
+La ventana Esquema del documento del Diseñador XAML es similar a la ventana **Objetos y escala de tiempo** de Blend para Visual Studio. **Esquema de documento** le ayuda a realizar estas tareas:
 
 - Ver la estructura jerárquica de todos los elementos de la mesa de trabajo.
 
@@ -166,7 +118,7 @@ La ventana Esquema del documento del Diseñador XAML ayuda a realizar estas tare
 
 Para ver la ventana **Esquema del documento**, en la barra de menús elija **Vista** > **Otras ventanas** > **Esquema del documento**.
 
-![Ventana Esquema del documento](../designers/media/xaml_editor_doc_outline.png)
+![Ventana Esquema del documento en Visual Studio](../designers/media/document-outline-window.png)
 
 Estas son las opciones disponibles en la ventana **Esquema del documento**:
 
@@ -190,9 +142,13 @@ La opción de la parte superior de la ventana **Esquema del documento**, que mue
 
 La ventana **Propiedades** permite establecer valores de propiedad en los controles. Este es su aspecto:
 
-![Propiedades (ventana)](../designers/media/xaml_editor_prop_window.png)
+![Propiedades (ventana)](../designers/media/xaml-designer-properties-window.png)
 
-Hay varias opciones en la parte superior de la ventana **Propiedades**. Puede cambiar el nombre del elemento seleccionado actualmente mediante el cuadro **Nombre** . En la esquina superior izquierda, hay un icono que representa el elemento actualmente seleccionado. Para organizar las propiedades por categoría o alfabéticamente, haga clic en **Categoría**, **Nombre**u **Origen** en la lista **Organizar por** . Para ver la lista de eventos de un control, haga clic en el botón **Eventos** , que muestra un símbolo de rayo. Para buscar una propiedad, empiece a escribir el nombre de la propiedad en el cuadro **Buscar propiedades** . La ventana **Propiedades** muestra las propiedades que coinciden con la búsqueda a medida que escribe. Algunas propiedades permiten establecer propiedades avanzadas si selecciona un botón de flecha hacia abajo. Para obtener más información sobre el uso de propiedades y el control de eventos, vea [Introducción a los controles y patrones](/windows/uwp/design/controls-and-patterns/controls-and-events-intro).
+Hay varias opciones en la parte superior de la ventana **Propiedades**. Puede cambiar el nombre del elemento seleccionado actualmente mediante el cuadro **Nombre** . En la esquina superior izquierda, hay un icono que representa el elemento actualmente seleccionado. Para organizar las propiedades por categoría o alfabéticamente, haga clic en **Categoría**, **Nombre**u **Origen** en la lista **Organizar por** . Para ver la lista de eventos de un control, haga clic en el botón **Eventos** , que muestra un símbolo de rayo.
+
+Para buscar una propiedad, empiece a escribir el nombre de la propiedad en el cuadro de búsqueda. La ventana **Propiedades** muestra las propiedades que coinciden con la búsqueda a medida que escribe. Algunas propiedades permiten establecer propiedades avanzadas si selecciona un botón de flecha hacia abajo.
+
+Para obtener más información sobre el uso de propiedades y el control de eventos, vea [Introducción a los controles y patrones](/windows/uwp/design/controls-and-patterns/controls-and-events-intro).
 
 A la derecha de cada propiedad de valor se encuentra un *marcador de propiedad* que aparece como un símbolo de cuadro. La apariencia del marcador de propiedad indica si se aplicó a la propiedad un enlace de datos o un recurso. Por ejemplo, un símbolo de cuadro blanco indica un valor predeterminado, un símbolo de cuadro negro suele indicar que se ha aplicado un recurso local y un símbolo de cuadro naranja suele indicar que se ha aplicado un enlace de datos. Al hacer clic en el marcador de propiedad, puede navegar a la definición de un estilo, abrir el generador de enlace de datos o abrir el selector de recursos.
 

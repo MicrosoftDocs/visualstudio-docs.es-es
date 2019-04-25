@@ -1,14 +1,9 @@
 ---
-title: 'Cómo: instalar un visualizador | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Instalar un visualizador | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -25,15 +20,15 @@ ms.assetid: 3310ef43-515c-4d97-b0f9-51047247d3da
 caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d5b2c77bd5f9d32b3bb4a0954017b7abdee1947c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2e223831b30f784094a2affa5cebb314cc6e997f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51731468"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059713"
 ---
-# <a name="how-to-install-a-visualizer"></a>Cómo: Instalar un visualizador
+# <a name="how-to-install-a-visualizer"></a>Procedimiento Instalación de un visualizador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Después de crear un visualizador, hay que instalarlo para que esté disponible en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Instalar un visualizador es un proceso sencillo.  
@@ -43,21 +38,18 @@ Después de crear un visualizador, hay que instalarlo para que esté disponible 
   
 ### <a name="to-install-a-visualizer"></a>Para instalar un visualizador  
   
-1.  Busque el archivo DLL que contiene el visualizador que ha compilado.  
+1. Busque el archivo DLL que contiene el visualizador que ha compilado.  
   
-2.  Copie el archivo DLL a una de las siguientes ubicaciones:  
+2. Copie el archivo DLL a una de las siguientes ubicaciones:  
   
-    -   *VisualStudioInstallPath* `\Common7\Packages\Debugger\Visualizers`  
+    - *VisualStudioInstallPath* `\Common7\Packages\Debugger\Visualizers`  
   
-    -   `My Documents\` *VisualStudioVersion* `\Visualizers`  
+    - `My Documents\` *VisualStudioVersion* `\Visualizers`  
   
-3.  Si desea utilizar un visualizador administrado para la depuración remota, copie el archivo DLL en la misma ruta de acceso en el equipo remoto.  
+3. Si desea utilizar un visualizador administrado para la depuración remota, copie el archivo DLL en la misma ruta de acceso en el equipo remoto.  
   
-4.  Reinicie la sesión de depuración.  
+4. Reinicie la sesión de depuración.  
   
 ## <a name="see-also"></a>Vea también  
- [Crear visualizadores personalizados](../debugger/create-custom-visualizers-of-data.md)   
- [Cómo: Escribir un visualizador](../debugger/how-to-write-a-visualizer.md)
-
-
-
+ [Creación de visualizadores personalizados](../debugger/create-custom-visualizers-of-data.md)   
+ [Cómo: Escritura de un visualizador](../debugger/how-to-write-a-visualizer.md)

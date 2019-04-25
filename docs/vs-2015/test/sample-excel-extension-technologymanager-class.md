@@ -1,26 +1,21 @@
 ---
-title: 'Extensión de Excel de muestra: TechnologyManager (Clase) | Microsoft Docs'
-ms.custom: ''
+title: 'Extensión de Excel: TechnologyManager (clase) | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: 8a7b760d-b5ac-4451-9593-6ac1a0b95cdb
 caps.latest.revision: 11
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: b23c3e735aba74d86b31afb4b83862d83bcd2bdb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 64632c175b44a370d7dcaf48e7c0a8cee766a4ab
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49190585"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078075"
 ---
-# <a name="sample-excel-extension-technologymanager-class"></a>Extensión de Excel de muestra: TechnologyManager (Clase)
+# <a name="sample-excel-extension-technologymanager-class"></a>Extensión de Excel: TechnologyManager (Clase)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Esta clase extiende la clase <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager> y es responsable de proporcionar servicios principales a la extensión [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)]. Aunque la clase base tiene muchos métodos, solo un subconjunto de ellos se utiliza en este ejemplo.  
@@ -43,15 +38,15 @@ Esta clase extiende la clase <xref:Microsoft.VisualStudio.TestTools.UITest.Exten
 ## <a name="methods-to-get-an-element"></a>Métodos para obtener un elemento  
  Hay varios métodos importantes que usa el marco de pruebas de IU codificadas para obtener un elemento específico de la tecnología proporcionando un identificador, un punto de la pantalla o un elemento de una tecnología distinta. El código para estos métodos es autoexplicativo. Los métodos base son los siguientes:  
   
--   <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.GetFocusedElement%2A?displayProperty=fullName>  
+- <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.GetFocusedElement%2A?displayProperty=fullName>  
   
--   <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.GetElementFromPoint%2A?displayProperty=fullName>  
+- <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.GetElementFromPoint%2A?displayProperty=fullName>  
   
--   <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.GetElementFromWindowHandle%2A?displayProperty=fullName>  
+- <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.GetElementFromWindowHandle%2A?displayProperty=fullName>  
   
--   <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.GetElementFromNativeElement%2A?displayProperty=fullName>  
+- <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.GetElementFromNativeElement%2A?displayProperty=fullName>  
   
--   <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.ConvertToThisTechnology%2A?displayProperty=fullName>  
+- <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.ConvertToThisTechnology%2A?displayProperty=fullName>  
   
 ## <a name="parsequeryid-method"></a>ParseQueryId (Método)  
  Cuando se crea una prueba de IU codificada, el usuario puede especificar valores de propiedad de algunos o todos los controles en la prueba. El marco de pruebas utiliza estos valores de propiedad para crear pares de nombre-valor denominados propiedades de búsqueda que se usan para buscar los controles de interfaz de usuario específicos durante la prueba. Todas las propiedades de búsqueda representan conjuntamente el valor de la propiedad <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement.QueryId%2A?displayProperty=fullName> de cada elemento de la tecnología, que incluye cada control. Dado que un control podría tener que encontrarse varias veces durante una prueba, este método proporciona al administrador de tecnología una manera de optimizar el análisis de propiedades de búsqueda para el control dado. Este método también devuelve una cookie que el marco puede utilizar para las búsquedas posteriores de ese control. Esta implementación del método usa el método <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.AndCondition.Match%2A?displayProperty=fullName> para analizar las propiedades de búsqueda.  
@@ -72,6 +67,3 @@ Esta clase extiende la clase <xref:Microsoft.VisualStudio.TestTools.UITest.Exten
  <xref:System.Runtime.InteropServices.ComVisibleAttribute>   
  <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement.QueryId%2A>   
  [Extender las pruebas de IU codificadas y las grabaciones de acciones para la compatibilidad con Microsoft Excel](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)
-
-
-

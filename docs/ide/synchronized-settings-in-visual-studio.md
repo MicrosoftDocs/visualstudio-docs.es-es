@@ -1,20 +1,19 @@
 ---
 title: Sincronizar la configuración
 ms.date: 12/10/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: a3d2ea29-be5d-4012-9820-44b06adbb7dd
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 107b1096f694e0dc784181eae675a0c1a2285726
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1ff663a7d2a22f152b3a0b9081623766535f9a53
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935208"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57869049"
 ---
 # <a name="synchronize-visual-studio-settings-across-multiple-computers"></a>Sincronizar la configuración de Visual Studio en varios equipos
 
@@ -42,7 +41,7 @@ De forma predeterminada, se sincroniza la configuración siguiente:
 
    - Todos los valores de la página de opciones **Entorno** > **Inicio**.
 
-   - Todos los valores de las páginas de opciones **Editor de texto**.
+   - Todos los valores de las páginas de opciones **Editor de texto**, por ejemplo, las [preferencias de estilo del código](code-styles-and-quick-actions.md).
 
    - Todos los valores de las páginas de opciones **Diseñador XAML**.
 
@@ -61,20 +60,30 @@ La configuración se sincroniza en todas las versiones y ediciones de Visual Stu
 
 ## <a name="side-by-side-synchronized-settings"></a>Configuración sincronizada en paralelo
 
-En Visual Studio 2017 versión 15.3 y posteriores, determinadas opciones como el diseño de ventanas de herramientas no se comparten entre otras instalaciones en paralelo de Visual Studio 2017. El archivo *CurrentSettings.vssettings* de *%userprofile%\Documents\Visual Studio 2017\Settings* se encuentra en una carpeta específica de la instalación que es similar a *%localappdata%\Microsoft\VisualStudio\15.0_xxxxxxxx\Settings*.
+::: moniker range="vs-2017"
+
+No se comparten determinadas opciones, como el diseño de ventanas de herramientas, entre distintas instalaciones en paralelo de Visual Studio. El archivo *CurrentSettings.vssettings* de *%userprofile%\Documents\Visual Studio 2017\Settings* se encuentra en una carpeta específica de la instalación que es similar a *%localappdata%\Microsoft\VisualStudio\15.0_xxxxxxxx\Settings*.
 
 > [!NOTE]
-> Para usar la nueva configuración específica de la instalación, realice una instalación nueva. Al actualizar una instalación de Visual Studio 2017 existente a la versión más reciente, se usa la ubicación compartida existente.
+> Para usar la nueva configuración específica de la instalación, realice una instalación nueva. Al actualizar una instalación existente de Visual Studio, usa la ubicación compartida existente.
 
-Si actualmente tiene instalaciones en paralelo de Visual Studio 2017 y quiere usar la nueva ubicación del archivo de configuración específico de la instalación, siga estos pasos:
+Si actualmente tiene instalaciones en paralelo de Visual Studio y quiere usar la nueva ubicación del archivo de configuración específico de la instalación, siga estos pasos:
 
 1. Actualice a Visual Studio 2017, versión 15.3 o posterior.
 
-1. Use el **Asistente para importar y exportar configuraciones** para exportar toda la configuración existente a una ubicación fuera de la carpeta *%localappdata%\Microsoft\VisualStudio\15.0_xxxxxxxx*.
+2. Use el **Asistente para importar y exportar configuraciones** para exportar toda la configuración existente a una ubicación fuera de la carpeta *%localappdata%\Microsoft\VisualStudio\15.0_xxxxxxxx*.
 
-1. Abra el **símbolo del sistema para desarrolladores de VS 2017** de la instalación de Visual Studio actualizada y ejecute `devenv /resetuserdata`.
+3. Abra el **Símbolo del sistema para desarrolladores de VS 2017** y ejecute `devenv /resetuserdata`.
 
-1. Inicie Visual Studio e importe la configuración guardada desde el archivo de configuración exportado.
+1. Abra Visual Studio e importe la configuración guardada desde el archivo de configuración exportado.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+No se comparten determinadas opciones, como el diseño de ventanas de herramientas, entre distintas instalaciones en paralelo de Visual Studio. El archivo *CurrentSettings.vssettings* de *%userprofile%\Documents\Visual Studio 2019\Settings* se encuentra en una carpeta específica de la instalación que es similar a *%localappdata%\Microsoft\VisualStudio\16.0_xxxxxxxx\Settings*.
+
+::: moniker-end
 
 ## <a name="see-also"></a>Vea también
 

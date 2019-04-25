@@ -1,14 +1,9 @@
 ---
 title: Encapsular campo (refactorización, C#) | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vs.csharp.refactoring.encapsulatefield
 dev_langs:
@@ -20,13 +15,13 @@ ms.assetid: bf714a04-ab1e-49ce-99ce-dda1ebb1a17f
 caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
-manager: wpickett
-ms.openlocfilehash: 35d7e03e30aa5301ee65f15a8591fbccd1de3fcd
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: a2c8d54b1625a4097d6b5a0acf6555d74fe83001
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223553"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116607"
 ---
 # <a name="encapsulate-field-refactoring-c"></a>Encapsular campo (Refactorización, C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +36,7 @@ El **encapsular campo** operación de refactorización le permite crear rápidam
   
 ### <a name="to-create-a-property-from-a-field"></a>Para crear una propiedad a partir de un campo  
   
-1.  Cree una aplicación de consola denominada `EncapsulateFieldExample` y, a continuación, reemplace `Program` por el siguiente código de ejemplo.  
+1. Cree una aplicación de consola denominada `EncapsulateFieldExample` y, a continuación, reemplace `Program` por el siguiente código de ejemplo.  
   
     ```csharp  
     class Square  
@@ -63,13 +58,13 @@ El **encapsular campo** operación de refactorización le permite crear rápidam
     }  
     ```  
   
-2.  En el [Editor de código](../ide/writing-code-in-the-code-and-text-editor.md), coloque el cursor en la declaración, en el nombre del campo que desea encapsular. En el ejemplo siguiente, coloque el cursor sobre la palabra `width`:  
+2. En el [Editor de código](../ide/writing-code-in-the-code-and-text-editor.md), coloque el cursor en la declaración, en el nombre del campo que desea encapsular. En el ejemplo siguiente, coloque el cursor sobre la palabra `width`:  
   
     ```csharp  
     public int width, height;  
     ```  
   
-3.  En el **refactorizar** menú, haga clic en **encapsular campo**.  
+3. En el **refactorizar** menú, haga clic en **encapsular campo**.  
   
      El **encapsular campo** aparece el cuadro de diálogo.  
   
@@ -77,11 +72,11 @@ El **encapsular campo** operación de refactorización le permite crear rápidam
   
      También puede haga clic en el cursor, apuntar a **refactorizar**y, a continuación, haga clic en **encapsular campo** para mostrar el **encapsular campo** cuadro de diálogo.  
   
-4.  Especifique la configuración.  
+4. Especifique la configuración.  
   
-5.  Presione ENTRAR o haga clic en el **Aceptar** botón.  
+5. Presione ENTRAR o haga clic en el **Aceptar** botón.  
   
-6.  Si ha seleccionado la **vista previa de cambios de referencia** opción, el **vista previa de cambios de referencia** abre la ventana. Haga clic en el **aplicar** botón.  
+6. Si ha seleccionado la **vista previa de cambios de referencia** opción, el **vista previa de cambios de referencia** abre la ventana. Haga clic en el **aplicar** botón.  
   
      El siguiente código de los descriptores de acceso `get` y `set` se muestra en el archivo de código fuente:  
   

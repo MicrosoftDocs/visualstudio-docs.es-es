@@ -1,7 +1,6 @@
 ---
 title: Opciones, editor de texto, general
 ms.date: 01/18/2019
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.RDL_Expression.General
@@ -27,15 +26,15 @@ helpviewer_keywords:
 ms.assetid: 4ac21e48-3243-4141-9058-7eaf12b3cde7
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ce5553f54b5864c27fc4dfa14376e8eb7735c613
-ms.sourcegitcommit: d0b02affd24e66efed924c197824f35f823e3240
+ms.openlocfilehash: 9a7bcf7b57c6cdc7e0ff4ff5a851397b7c96b345
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/21/2019
-ms.locfileid: "54417803"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55930238"
 ---
 # <a name="options-text-editor-general"></a>Opciones, editor de texto, general
 
@@ -67,7 +66,7 @@ Cuando está activa, las convenciones de la codificación especificada del proye
 
 Si se selecciona esta opción, puede presionar **Ctrl** y mantener el puntero sobre un elemento mientras hace clic con el mouse. Al hacerlo, va a la definición del elemento seleccionado. También puede elegir **Alt** o **Ctrl** + **Alt** en el menú desplegable **Usar clave de modificador**.
 
-Active la casilla de verificación **Abrir definición en vista de inspección** para mostrar la definición del elemento en una ventana sin salir de la ubicación actual en el editor de código. 
+Active la casilla de verificación **Abrir definición en vista de inspección** para mostrar la definición del elemento en una ventana sin salir de la ubicación actual en el editor de código.
 
 ## <a name="display"></a>Pantalla
 

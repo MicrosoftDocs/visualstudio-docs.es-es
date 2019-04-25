@@ -1,30 +1,24 @@
 ---
 title: Visual Studio Tools para Unity | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- tgt-pltfrm-cross-plat
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-unity-tools
+ms.topic: conceptual
 ms.assetid: 6cabc626-5310-4622-a743-210a9abb5535
 caps.latest.revision: 6
 author: conceptdev
 ms.author: crdun
-manager: ghogen
-ms.openlocfilehash: 7bdcdbc4a19914494b0a48932afc25c1f7626fbb
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9d2bfa0a3ca4a751637204ef156a609f4ee0c3e5
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51762326"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657485"
 ---
 # <a name="visual-studio-tools-for-unity"></a>Visual Studio Tools para Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 En esta sección conocerá Visual Studio Tools para Unity, una extensión gratuita que convierte Visual Studio en una herramienta eficaz para la compilación de juegos con Unity.  
   
 ## <a name="visual-studio-tools-for-unity"></a>Visual Studio Tools para Unity  
@@ -47,11 +41,10 @@ En esta sección conocerá Visual Studio Tools para Unity, una extensión gratui
  En esta sección aprenderá a utilizar las características de productividad e integración de Visual Studio Tools para Unity y cómo utilizar al depurador de Visual Studio para el desarrollo en Unity.  
   
  [Programación de Visual Studio Tools para Unity](../cross-platform/programming-visual-studio-tools-for-unity.md)  
- En esta sección encontrará ejemplos de uso de Visual Studio Tools para la API de Unity.  
+ En esta sección encontrará ejemplos de uso de la API de Visual Studio Tools para Unity.  
   
  [Solución de problemas y problemas conocidos](../cross-platform/troubleshooting-and-known-issues-visual-studio-tools-for-unity.md)  
  En esta sección encontrará soluciones a problemas comunes con Visual Studio Tools para Unity y descripciones de problemas conocidos. Asimismo descubrirá cómo puede ayudar a mejorar Visual Studio Tools para Unity mediante la notificación de errores.  
   
  [Registro de cambios](../cross-platform/change-log-visual-studio-tools-for-unity.md)  
  En esta sección descubrirá las nuevas características, correcciones de errores y otros cambios de cada versión de Visual Studio Tools para Unity.
-

@@ -1,53 +1,48 @@
 ---
 title: Extender la ventana de salida | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Output window, about Output window
 ms.assetid: b02fa88c-f92a-4ff6-ba5f-2eb4d48a643a
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e4afd91c42eeb60d005b1eb186c30d3896e3101f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2788903c60564d501770616fbe3ad2335e60a250
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51731387"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105414"
 ---
 # <a name="extending-the-output-window"></a>Ampliación de la ventana de salida
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-El **salida** ventana es un conjunto de paneles de texto de lectura/escritura. Visual Studio tiene estos paneles integrados: **compilar**, en los proyectos que se comunican los mensajes sobre las compilaciones, y **General**, en el que [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] comunica mensajes de información sobre el IDE. Proyectos de obtención una referencia a la **compilar** automáticamente a través del panel la <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> métodos de interfaz y Visual Studio ofrece acceso directo a la **General** panel a través de la <xref:Microsoft.VisualStudio.Shell.Interop.SVsGeneralOutputWindowPane> servicio. Además de los paneles integrados, puede crear y administrar sus propios paneles personalizados.  
+El **salida** ventana es un conjunto de paneles de texto de lectura/escritura. Visual Studio tiene estos paneles integrados: **Compilar**, en los proyectos que se comunican los mensajes sobre las compilaciones, y **General**, en el que [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] comunica mensajes de información sobre el IDE. Proyectos de obtención una referencia a la **compilar** automáticamente a través del panel la <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> métodos de interfaz y Visual Studio ofrece acceso directo a la **General** panel a través de la <xref:Microsoft.VisualStudio.Shell.Interop.SVsGeneralOutputWindowPane> servicio. Además de los paneles integrados, puede crear y administrar sus propios paneles personalizados.  
   
  Puede controlar la **salida** directamente a través de la ventana la <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> y <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane> interfaces. El <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> interfaz, que ofrece el <xref:Microsoft.VisualStudio.Shell.Interop.SVsOutputWindow> de servicio, que define los métodos para crear, recuperar y destruir **salida** paneles de ventana. El <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> interfaz define métodos para mostrar paneles, ocultar paneles y manipular el texto. Una manera alternativa de controlar la **salida** ventana es a través de la <xref:EnvDTE.OutputWindow> y <xref:EnvDTE.OutputWindowPane> objetos en el modelo de objetos de automatización de Visual Studio. Estos objetos casi toda la funcionalidad de encapsulan la <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindow> y <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputWindowPane> interfaces. Además, el <xref:EnvDTE.OutputWindow> y <xref:EnvDTE.OutputWindowPane> objetos agregan algunas funciones de nivel superior para que sea más fácil enumerar los **salida** paneles de ventana y para recuperar el texto de los paneles.  
   
 ## <a name="creating-an-extension-that-uses-the-output-pane"></a>Crear una extensión que utiliza el panel de resultados  
  Puede realizar una extensión que ejerce distintos aspectos del panel de salida.  
   
-1.  Cree un proyecto VSIX denominado `TestOutput` con un comando de menú denominado **TestOutput**. Para obtener más información, consulte [crear una extensión con un comando de menú](../extensibility/creating-an-extension-with-a-menu-command.md).  
+1. Cree un proyecto VSIX denominado `TestOutput` con un comando de menú denominado **TestOutput**. Para obtener más información, consulte [crear una extensión con un comando de menú](../extensibility/creating-an-extension-with-a-menu-command.md).  
   
-2.  Agregue las siguientes referencias:  
+2. Agregue las siguientes referencias:  
   
-    1.  EnvDTE  
+    1. EnvDTE  
   
-    2.  EnvDTE80  
+    2. EnvDTE80  
   
-3.  En TestOutput.cs, agregue la siguiente instrucción using:  
+3. En TestOutput.cs, agregue la siguiente instrucción using:  
   
     ```f#  
     using EnvDTE;  
     using EnvDTE80;  
     ```  
   
-4.  En TestOutput.cs, elimine el método ShowMessageBox. Agregue el código auxiliar del método siguiente:  
+4. En TestOutput.cs, elimine el método ShowMessageBox. Agregue el código auxiliar del método siguiente:  
   
     ```csharp  
     private void OutputCommandHandler(object sender, EventArgs e)  
@@ -55,7 +50,7 @@ El **salida** ventana es un conjunto de paneles de texto de lectura/escritura. V
     }  
     ```  
   
-5.  En el constructor TestOutput, cambie el controlador de comandos a OutputCommandHandler. Aquí está lo que agrega los comandos:  
+5. En el constructor TestOutput, cambie el controlador de comandos a OutputCommandHandler. Aquí está lo que agrega los comandos:  
   
     ```csharp  
     OleMenuCommandService commandService = this.ServiceProvider.GetService(typeof(IMenuCommandService)) as OleMenuCommandService;  
@@ -68,7 +63,7 @@ El **salida** ventana es un conjunto de paneles de texto de lectura/escritura. V
     }  
     ```  
   
-6.  Las secciones siguientes tienen métodos diferentes que muestran distintas formas de trabajar con el panel de salida. Puede llamar a estos métodos al cuerpo del método OutputCommandHandler(). Por ejemplo, el código siguiente agrega el método de CreatePane() indicado en la sección siguiente.  
+6. Las secciones siguientes tienen métodos diferentes que muestran distintas formas de trabajar con el panel de salida. Puede llamar a estos métodos al cuerpo del método OutputCommandHandler(). Por ejemplo, el código siguiente agrega el método de CreatePane() indicado en la sección siguiente.  
   
     ```csharp  
     private void OutputCommandHandler(object sender, EventArgs e)  
@@ -102,7 +97,7 @@ void CreatePane(Guid paneGuid, string title,
 }  
 ```  
   
- Si agrega este método a la extensión dada en la sección anterior, al hacer clic en el **invocar TestOutput** comando debería ver el **salida** ventana con un encabezado que dice **mostrar salida desde: CreatedPane** y las palabras **este es el panel creado** en el propio panel.  
+ Si agrega este método a la extensión dada en la sección anterior, al hacer clic en el **invocar TestOutput** comando debería ver el **salida** ventana con un encabezado que dice **mostrar salida De: CreatedPane** y las palabras **este es el panel creado** en el propio panel.  
   
 ## <a name="creating-an-output-window-with-outputwindow"></a>Creación de una ventana de salida con OutputWindow  
  En este ejemplo se muestra cómo crear un **salida** panel de ventana utilizando la <xref:EnvDTE.OutputWindow> objeto.  
@@ -154,7 +149,7 @@ void DeletePane(Guid paneGuid)
 }  
 ```  
   
- Si agrega este método a la extensión dada en la sección anterior, al hacer clic en el **invocar TestOutput** debería ver la ventana de salida con un encabezado que indica que el comando **mostrar resultados desde: nuevo panel** y las palabras **agregado panel creado** en el propio panel. Si hace clic en el **TestOutput invocar** comando nuevo, se elimina el panel.  
+ Si agrega este método a la extensión dada en la sección anterior, al hacer clic en el **invocar TestOutput** debería ver la ventana de salida con un encabezado que indica que el comando **mostrar resultados desde: Nuevo panel** y las palabras **agregado panel creado** en el propio panel. Si hace clic en el **TestOutput invocar** comando nuevo, se elimina el panel.  
   
 ## <a name="getting-the-general-pane-of-the-output-window"></a>Obteniendo el panel General de la ventana de salida  
  En este ejemplo se muestra cómo obtener los integrados **General** panel de la **salida** ventana.  
@@ -190,4 +185,3 @@ void OutputTaskItemStringExExample(string buildMessage)
         }  
 }  
 ```
-

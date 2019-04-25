@@ -1,14 +1,9 @@
 ---
 title: Vistas de datos del método de muestreo del generador de perfiles | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Profiling Tools,sampling data views
 - sampling data views
@@ -16,13 +11,13 @@ ms.assetid: 798de693-e43a-4056-aff5-48310c2172c5
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: bde5ae4d7f6fe7d556096ee29533bdbcae5445bf
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: dccfb68838d204bfa560e728262b71e359082a97
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817222"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54800359"
 ---
 # <a name="profiler-sampling-method-data-views"></a>Vistas de datos del método de muestreo del generador de perfiles
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,6 +68,3 @@ Esta sección contiene información de referencia para las vistas y los informes
   
 ## <a name="see-also"></a>Vea también  
  [Introducción a los valores de datos de muestreo](../profiling/understanding-sampling-data-values.md)
-
-
-

@@ -1,19 +1,18 @@
 ---
 title: Uso de correcciones de compatibilidad (shim) para aislar la aplicación para pruebas unitarias
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 908a31a50b1af99f7123f292f250f9262a7da62e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 74600a68d8759a70c600dfb1fbcafc06aabdb6ef
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53947340"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55908671"
 ---
 # <a name="use-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing"></a>Usar correcciones de compatibilidad (shim) para aislar la aplicación de otros ensamblados para pruebas unitarias
 

@@ -1,7 +1,6 @@
 ---
 title: Procedimiento Especificación de eventos de compilación (Visual Basic)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - pre-build events
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 40dc83bf-a7c5-4a14-816a-fa0980b6e4c3
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 60f1ab9444c38514646a5ef1147b3f1b0473289e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 88903c1370219976bca6e8418c3254d048db51d2
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53828870"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324726"
 ---
 # <a name="how-to-specify-build-events-visual-basic"></a>Procedimiento Especificación de eventos de compilación (Visual Basic)
 
@@ -116,7 +115,7 @@ En el procedimiento siguiente se muestra cómo establecer la versión de sistema
    End Sub
    ```
 
-   El comando toma dos argumentos. El primero es la ruta al manifiesto de aplicación (es decir, la carpeta en la que el proceso de compilación crea el manifiesto, normalmente *<Projectname>.publish*). El segundo es la nueva versión del sistema operativo.
+   El comando toma dos argumentos. El primero es la ruta al manifiesto de aplicación (es decir, la carpeta en la que el proceso de compilación crea el manifiesto, normalmente *\<NombreDelProyecto>.publish*). El segundo es la nueva versión del sistema operativo.
 
 5. En el menú **Compilar** , haga clic en **Compilar solución**.
 

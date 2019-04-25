@@ -1,14 +1,9 @@
 ---
 title: Clase base ToolTaskExtension | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 f1_keywords:
 - MSBuild.ToolTask.ToolCommandFailed
 dev_langs:
@@ -20,18 +15,17 @@ ms.assetid: 258ae433-f68a-49f1-b276-da20e3472e68
 caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: fa6ec44c857d8b8e229d8f34658e8a9d448fcb19
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 41ac1db7348ff993671623214b59113d6210b83e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49221291"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670282"
 ---
 # <a name="tooltaskextension-base-class"></a>ToolTaskExtension (Clase base)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Muchas tareas heredan de la clase <xref:Microsoft.Build.Tasks.ToolTaskExtension>, que hereda de la clase <xref:Microsoft.Build.Utilities.ToolTask>, la cual a su vez hereda de la clase <xref:Microsoft.Build.Utilities.Task>. Esta cadena de herencia agrega varios parámetros a las tareas que derivan de ellos. Estos parámetros se muestran en este documento.  
   
 ## <a name="parameters"></a>Parámetros  
@@ -59,6 +53,3 @@ Muchas tareas heredan de la clase <xref:Microsoft.Build.Tasks.ToolTaskExtension>
 ## <a name="see-also"></a>Vea también  
  [Referencia de tareas](../msbuild/msbuild-task-reference.md)   
  [Tareas](../msbuild/msbuild-tasks.md)
-
-
-

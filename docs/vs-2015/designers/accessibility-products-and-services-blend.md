@@ -1,38 +1,33 @@
 ---
 title: Productos y servicios de accesibilidad (Blend) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: ba8557f6-231a-4d8b-80dd-80397e87a17f
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 394940ae59ceb87cf2bc71d71584fe0bf39eb0b0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 202ff45d5b69f91d9f0081c8253c11962009abaa
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49197826"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068956"
 ---
 # <a name="accessibility-products-and-services-blend"></a>Productos y servicios de accesibilidad (Blend)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Microsoft ha asumido el compromiso de facilitar el acceso de todos los usuarios a sus productos y servicios. Las siguientes secciones proporcionan información acerca de las características, productos y servicios que permiten a Microsoft Windows ser más accesible para las personas con discapacidades:  
   
--   Características de accesibilidad de Windows  
+- Características de accesibilidad de Windows  
   
--   Documentación en formatos alternativos  
+- Documentación en formatos alternativos  
   
--   "Servicio al cliente para personas con dificultades auditivas"  
+- "Servicio al cliente para personas con dificultades auditivas"  
   
--   Para obtener más información,  
+- Para obtener más información,  
   
 > [!NOTE]
 >  La información de esta sección sólo se aplica a los usuarios que obtengan la licencia de los productos Microsoft en Estados Unidos. Si adquirió este producto fuera de Estados Unidos, puede usar la tarjeta de información de subsidiaria que se adjunta con el paquete de software o puede visitar el [Sitio de accesibilidad de Microsoft](http://go.microsoft.com/fwlink/?LinkID=75069) para obtener una lista de los números de teléfono y las direcciones de los servicios de atención al cliente de Microsoft. Puede ponerse en contacto con la subsidiaria para averiguar si el tipo de productos y servicios que se describen en esta sección están disponibles en su área. Recuerde que los productos localizados no pueden adquirirse en los Estados Unidos. La información sobre accesibilidad está disponible en otros idiomas, incluido japonés y francés.  
@@ -61,11 +56,11 @@ Microsoft ha asumido el compromiso de facilitar el acceso de todos los usuarios 
   
  Princeton, NJ 08540  
   
- Número de teléfono en los Estados Unidos: (800) 221-4792  
+ Número de teléfono desde los Estados Unidos: (800) 221-4792  
   
  Número de teléfono desde fuera de los Estados Unidos y Canadá: (609) 452-0606  
   
- Fax: (609) 987 8116  
+ Fax: (609) 987-8116  
   
  [Sitio de Learning Ally](http://go.microsoft.com/fwlink/?LinkId=111110)  
   
@@ -82,6 +77,3 @@ Microsoft ha asumido el compromiso de facilitar el acceso de todos los usuarios 
   
 ## <a name="for-more-information"></a>Para obtener más información  
  Para obtener más información acerca de cómo la tecnología de accesibilidad en los equipos informáticos ayuda a mejorar la vida de las personas con discapacidad, consulte el [Sitio de accesibilidad de Microsoft](http://go.microsoft.com/fwlink/?LinkID=75069).
-
-
-

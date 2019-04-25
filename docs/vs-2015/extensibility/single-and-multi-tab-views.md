@@ -1,33 +1,28 @@
 ---
 title: Vistas únicas y varias pestañas | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - single and multi-tab views
 ms.assetid: e3611704-349f-4323-b03c-f2b0a445d781
 caps.latest.revision: 23
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8231581761199be4df9c368494fb27bdc7926c51
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 804a37a43ffe25335dc522542f5035b0882e63ee
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51748996"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58987530"
 ---
 # <a name="single-and-multi-tab-views"></a>Vistas de una sola pestaña y varias pestañas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Un editor puede crear diferentes tipos de vistas. Un ejemplo es una ventana del editor de código, el otro es un diseñador de formularios.  
   
- Una vista con múltiples fichas es una vista que tiene varias pestañas. Por ejemplo, el editor HTML tiene dos pestañas en la parte inferior: **diseño** y **origen**, cada una vista lógica. La vista de diseño muestra una página web representada, mientras que la otra muestra el código HTML que incluye la página web.  
+ Una vista con múltiples fichas es una vista que tiene varias pestañas. Por ejemplo, el editor HTML tiene dos pestañas en la parte inferior: **Diseño** y **origen**, cada una vista lógica. La vista de diseño muestra una página web representada, mientras que la otra muestra el código HTML que incluye la página web.  
   
 ## <a name="accessing-physical-views"></a>Obtener acceso a vistas físicas  
  Vistas físicas hospedan objetos de vista de documento, que representa una vista de datos en el búfer, por ejemplo, código o un formulario. En consecuencia, cada objeto de vista de documento tiene una vista física (identificado por algo conocido como una cadena de la vista física) y, por lo general una sola vista lógica.  
@@ -121,6 +116,5 @@ Error:
   
 ## <a name="see-also"></a>Vea también  
  [Compatibilidad con varias vistas de documento](../extensibility/supporting-multiple-document-views.md)   
- [Cómo: adjuntar las vistas de datos de documentos](../extensibility/how-to-attach-views-to-document-data.md)   
+ [Cómo: Anexión de vistas de datos de documentos](../extensibility/how-to-attach-views-to-document-data.md)   
  [Creación de diseñadores y editores personalizados](../extensibility/creating-custom-editors-and-designers.md)
-

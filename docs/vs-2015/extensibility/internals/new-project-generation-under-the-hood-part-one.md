@@ -1,44 +1,39 @@
 ---
-title: 'Nueva generación de proyectos: Aspectos técnicos, primera parte | Microsoft Docs'
-ms.custom: ''
+title: 'Generación de nuevos proyectos: Internamente, la primera parte | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio], new project dialog
 - projects [Visual Studio], new project generation
 ms.assetid: 66778698-0258-467d-8b8b-c351744510eb
 caps.latest.revision: 30
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: f1181cb3f84471727b181bb1ff91b69e8613b8a5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6f26c093f09cd5b7b99f00ee69a81be99c769e2e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51792934"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054243"
 ---
-# <a name="new-project-generation-under-the-hood-part-one"></a>Nueva generación de proyectos: aspectos técnicos, primera parte
+# <a name="new-project-generation-under-the-hood-part-one"></a>Generación de nuevos proyectos: Aspectos técnicos (parte 1)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 ¿Cómo crear su propio tipo de proyecto ha pensado alguna vez? ¿Se ha preguntado qué pasará cuando cree un nuevo proyecto? Vamos a echar un vistazo en segundo plano y ver lo que realmente está ocurriendo.  
   
  Hay varias tareas que coordina la Visual Studio para usted:  
   
--   Muestra un árbol de todos los tipos de proyecto disponibles.  
+- Muestra un árbol de todos los tipos de proyecto disponibles.  
   
--   Muestra una lista de plantillas de aplicación para cada tipo de proyecto y le permite elegir uno.  
+- Muestra una lista de plantillas de aplicación para cada tipo de proyecto y le permite elegir uno.  
   
--   Recopila información del proyecto para la aplicación, como el nombre del proyecto y la ruta de acceso.  
+- Recopila información del proyecto para la aplicación, como el nombre del proyecto y la ruta de acceso.  
   
--   Esta información se pasa en el generador de proyectos.  
+- Esta información se pasa en el generador de proyectos.  
   
--   Genera los elementos de proyecto y carpetas en la solución actual.  
+- Genera los elementos de proyecto y carpetas en la solución actual.  
   
 ## <a name="the-new-project-dialog-box"></a>El cuadro de diálogo nuevo proyecto  
  Todo comienza cuando se selecciona un tipo de proyecto para un nuevo proyecto. Empecemos haciendo **nuevo proyecto** en el **archivo** menú. El **nuevo proyecto** aparece el cuadro de diálogo, aspecto algo parecido a esto:  
@@ -97,7 +92,7 @@ devenv /installvstemplates
 ##### <a name="developeractivity"></a>DeveloperActivity  
  Si esta subclave está presente, a continuación, la posición del nodo raíz se controla mediante el cuadro de diálogo Opciones del desarrollador. Por ejemplo,  
   
- REG_SZ DeveloperActivity VC #  
+ DeveloperActivity REG_SZVC#  
   
  indica que Visual C# será un nodo raíz si Visual Studio se establece para [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] desarrollo. De lo contrario, será un nodo secundario de **otros lenguajes**.  
   
@@ -121,14 +116,14 @@ devenv /installvstemplates
   
  Cuando el **nuevo proyecto** abre el cuadro de diálogo, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] recorre la carpeta ProjectTemplates y vuelve a crear su estructura está en el **tipos de proyecto** árbol con algunos cambios:  
   
--   El nodo raíz en el **tipos de proyecto** árbol viene determinada por la plantilla de aplicación.  
+- El nodo raíz en el **tipos de proyecto** árbol viene determinada por la plantilla de aplicación.  
   
--   El nombre de nodo se puede localizar y puede contener caracteres especiales.  
+- El nombre de nodo se puede localizar y puede contener caracteres especiales.  
   
--   Se puede cambiar el criterio de ordenación.  
+- Se puede cambiar el criterio de ordenación.  
   
 ##### <a name="finding-the-root-node-for-a-project-type"></a>Buscar el nodo raíz de un tipo de proyecto  
- Cuando Visual Studio recorre las carpetas ProjectTemplates, abre todos los archivos .zip y extrae los archivos .vstemplate. Un archivo .vstemplate usa XML para describir una plantilla de aplicación. Para obtener más información, consulte [nueva generación de proyectos: Under the Hood, segunda parte](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
+ Cuando Visual Studio recorre las carpetas ProjectTemplates, abre todos los archivos .zip y extrae los archivos .vstemplate. Un archivo .vstemplate usa XML para describir una plantilla de aplicación. Para obtener más información, consulte [nueva generación de proyectos: Internamente, la segunda parte](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
   
  El \<ProjectType > etiqueta determina el tipo de proyecto para la aplicación. Por ejemplo, el archivo \CSharp\SmartDevice\WindowsCE\1033\WindowsCE-EmptyProject.zip contiene un archivo EmptyProject.vstemplate que tiene esta etiqueta:  
   
@@ -220,5 +215,4 @@ devenv /installvstemplates
     **MyProjectNode** aparece como un nodo secundario de Visual C# solo en el nodo de Windows.  
   
 ## <a name="see-also"></a>Vea también  
- [Nueva generación de proyectos: aspectos técnicos, segunda parte](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)
-
+ [Nueva generación de proyectos: Internamente, la segunda parte](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)

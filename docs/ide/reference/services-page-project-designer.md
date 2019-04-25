@@ -1,7 +1,6 @@
 ---
 title: Página Servicios, Diseñador de proyectos
 ms.date: 01/18/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesServices
@@ -10,15 +9,15 @@ helpviewer_keywords:
 - Project Designer, Services page
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c3e40108f6bca3226e6f39eb2eb4b09437a4f1e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3c439a981573934215ecad8796e7980a5f9c8c2f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53952386"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55936465"
 ---
 # <a name="services-page-project-designer"></a>Página Servicios, Diseñador de proyectos
 

@@ -1,13 +1,9 @@
 ---
-title: Procedimiento Extender el proceso de compilación | Microsoft Docs
-ms.custom: ''
+title: Ampliación del proceso de compilación | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, overriding predefined targets
 - MSBuild, overriding DependsOn properties
@@ -17,17 +13,16 @@ ms.assetid: cb077613-4a59-41b7-96ec-d8516689163c
 caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a3a530f74e1cf90012f9724d68493b1602b0e6dc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 1f86605f3e76dc17fd8e404eb0d189f51ff2dc69
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53938726"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652168"
 ---
-# <a name="how-to-extend-the-visual-studio-build-process"></a>Procedimiento Extender el proceso de compilación de Visual Studio
+# <a name="how-to-extend-the-visual-studio-build-process"></a>Cómo: Extender el proceso de compilación de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 El proceso de compilación [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] se define mediante una serie de archivos .targets [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] que se importan en el archivo del proyecto. Uno de estos archivos importados, Microsoft.Common.targets, se puede extender para que pueda ejecutar tareas personalizadas en varios puntos del proceso de compilación. En este tema se explican dos métodos que puede usar para extender el proceso de compilación de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]:
 
@@ -63,7 +58,7 @@ El proceso de compilación [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] se defin
 |Nombre de destino|Descripción|
 |-----------------|-----------------|
 |`BeforeCompile`, `AfterCompile`|Las tareas insertadas en uno de estos destinos se ejecutan antes o después de realizar la compilación básica. La mayoría de las personalizaciones se realiza en uno de estos dos destinos.|
-|`BeforeBuild`, `AfterBuild`|Las tareas insertadas en uno de estos destinos se ejecutarán antes o después de todo lo demás en la compilación. **Nota:**  El `BeforeBuild` y `AfterBuild` destinos ya están definidos en los comentarios al final de la mayoría de los archivos de proyecto. Esto le permite agregar con facilidad eventos previos y posteriores a la compilación del archivo del proyecto.|
+|`BeforeBuild`, `AfterBuild`|Las tareas insertadas en uno de estos destinos se ejecutarán antes o después de todo lo demás en la compilación. **Nota**: Los destinos `BeforeBuild` y `AfterBuild` ya están definidos en los comentarios al final de la mayoría de los archivos del proyecto. Esto le permite agregar con facilidad eventos previos y posteriores a la compilación del archivo del proyecto.|
 |`BeforeRebuild`, `AfterRebuild`|Las tareas insertadas en uno de estos destinos se ejecutan antes o después de invocar la funcionalidad de la recompilación básica. El orden de ejecución de destino en Microsoft.Common.targets es: `BeforeRebuild`, `Clean`, `Build` y, a continuación, `AfterRebuild`.|
 |`BeforeClean`, `AfterClean`|Las tareas insertadas en uno de estos destinos se ejecutan antes o después de invocar la funcionalidad de la limpieza básica.|
 |`BeforePublish`, `AfterPublish`|Las tareas insertadas en uno de estos destinos se ejecutan antes o después de invocar la funcionalidad de la publicación básica.|
@@ -131,4 +126,4 @@ El proceso de compilación [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] se defin
 |`CompileDependsOn`|La propiedad que se debe reemplazar si quiere insertar procesos personalizados antes o después del paso de compilación.|
 
 ## <a name="see-also"></a>Vea también
- [Integración de Visual Studio](../msbuild/visual-studio-integration-msbuild.md) [conceptos de MSBuild](../msbuild/msbuild-concepts.md) [. Archivos de destinos](../msbuild/msbuild-dot-targets-files.md)
+ [Integración de Visual Studio](../msbuild/visual-studio-integration-msbuild.md) [Conceptos de MSBuild](../msbuild/msbuild-concepts.md) [Archivos .targets](../msbuild/msbuild-dot-targets-files.md)

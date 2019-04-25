@@ -1,14 +1,9 @@
 ---
-title: 'Error: se terminó el proceso de trabajo de sitio Web IIS | Microsoft Docs'
-ms.custom: ''
+title: 'Error: IIS ha interrumpido el proceso de trabajo del sitio Web | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.debug.error.web_server_process_terminated
 dev_langs:
@@ -20,13 +15,13 @@ ms.assetid: 5707b972-71a6-4cc6-ab99-c7c00ca8628c
 caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 93271bcba524054a2289b078b0e92fde115eaf23
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 787785909cd980176fd9220f58198ae6cc272ea8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51789062"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080246"
 ---
 # <a name="error-web-site-worker-process-has-been-terminated-by-iis"></a>Error: IIS ha interrumpido el proceso de trabajo del sitio web
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,36 +32,33 @@ El depurador detuvo la ejecución del código en el sitio web. Esto hizo que Int
   
 ### <a name="to-configure-iis-7-to-allow-the-worker-process-to-continue"></a>Para configurar IIS 7 de manera que el proceso de trabajo pueda continuar  
   
-1. Abra el **herramientas administrativas** ventana.  
+1. Abra la ventana **Herramientas administrativas**.  
   
-   1.  Haga clic en **iniciar**y, a continuación, elija **Panel de Control**.  
+   1. Haga clic en **Inicio** y después elija **Panel de control**.  
   
-   2.  En **Panel de Control**, elija **cambiar a vista clásica**, si es necesario y, a continuación, haga doble clic en **herramientas administrativas**.  
+   2. En el **Panel de control**, elija **Cambiar a Vista clásica** si es necesario y, a continuación, haga doble clic en **Herramientas administrativas**.  
   
-2. En el **herramientas administrativas** ventana, haga doble clic en **Internet Information Services (IIS) Manager**.  
+2. En la ventana **Herramientas administrativas**, haga doble clic en **Administrador de Internet Information Services (IIS)**.  
   
     Se abrirá el Administrador de IIS.  
   
-3. En el **conexiones** panel, expanda el \<nombre_equipo > nodo si es necesario.  
+3. En el panel **Conexiones**, expanda el nodo \<nombre del equipo> si es necesario.  
   
-4. En el \<nombre_equipo > nodo, haga clic en **grupos de aplicaciones**.  
+4. En el nodo \<nombre del equipo>, haga clic en **Grupos de aplicaciones**.  
   
-5. En el **grupos de aplicaciones** lista, haga clic en el nombre del grupo de la aplicación se ejecuta en y, a continuación, haga clic en **configuración avanzada**.  
+5. En la lista **Grupos de aplicaciones**, haga clic con el botón derecho en el nombre del grupo en el que se ejecuta la aplicación y, a continuación, haga clic en **Configuración avanzada**.  
   
-6. En el **configuración avanzada** diálogo cuadro, busque la **modelo de proceso** sección y realice una de las siguientes acciones:  
+6. En el cuadro de diálogo **Configuración avanzada**, busque la sección **Modelo de proceso** y realice una de las acciones siguientes:  
   
-   - Establecer **Ping habilitado** a **False**.  
+   - Establezca **Ping habilitado** en **False**.  
   
-   - Establecer **tiempo máximo de respuesta de Ping** en un valor que es mayor que 90 segundos.  
+   - Establezca **Tiempo máximo de respuesta de ping** en un valor mayor de 90 segundos.  
   
-     Establecer **Ping habilitado** a **False** IIS dejará de comprobar si el proceso de trabajo se sigue ejecutando y que mantiene el proceso de trabajo activo hasta que detenga el proceso depurado. Establecer **tiempo máximo de respuesta de Ping** en un valor grande permite a IIS seguir supervisando el proceso de trabajo.  
+     Si establece **Ping habilitado** en **False**, IIS dejará de comprobar si el proceso de trabajo todavía se está ejecutando y lo mantendrá activo hasta que detenga el proceso depurado. Establecer **Tiempo máximo de respuesta de ping** en un valor grande permite a IIS seguir supervisando el proceso de trabajo.  
   
-7. Haga clic en **Aceptar** para cerrar el **configuración avanzada** cuadro de diálogo.  
+7. Haga clic en **Aceptar** para cerrar el cuadro de diálogo **Configuración avanzada**.  
   
-8. Cierre el Administrador de IIS y la **herramientas administrativas** ventana.  
+8. Cierre el Administrador de IIS y la ventana **Herramientas administrativas**.  
   
 ## <a name="see-also"></a>Vea también  
  [Errores de la depuración remota y sus soluciones](../debugger/remote-debugging-errors-and-troubleshooting.md)
-
-
-

@@ -1,20 +1,22 @@
 ---
 title: Procedimiento Desbloquear Visual Studio
-ms.date: 07/20/2017
-ms.prod: visual-studio-dev15
+titleSuffix: ''
+ms.date: 03/30/2019
 ms.topic: conceptual
 ms.assetid: ffb580a1-8b5d-48f5-b811-87f8036f50ea
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c2cf3980e92f6e95b058b51667f584492ecf9aea
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
+ms.openlocfilehash: 2bb6de32188abb11e0286c200383bdb1e8fb12f7
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53844959"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856825"
 ---
 # <a name="how-to-unlock-visual-studio"></a>Procedimiento Desbloquear Visual Studio
 
@@ -39,7 +41,7 @@ Para desbloquear Visual Studio mediante una suscripción a Visual Studio o una o
 
 1. Seleccione **Archivo** > **Configuración de la cuenta** para abrir el cuadro de diálogo **Configuración de la cuenta** y haga clic en el vínculo **Licencia con una clave de producto**.
 
-Escriba la clave de producto en el espacio para ello.
+1. Escriba la clave de producto en el espacio para ello.
 
 > [!TIP]
 > Las versiones preliminares de Visual Studio no tienen claves de producto. Para poder usar esas versiones preliminares, debe iniciar sesión en el IDE.
@@ -48,7 +50,7 @@ Escriba la clave de producto en el espacio para ello.
 
 ### <a name="update-stale-licenses"></a>Actualizar licencias obsoletas
 
- Es posible que haya visto el mensaje siguiente donde se indica que su licencia de Visual Studio se está quedando obsoleta: "Su licencia ha quedado obsoleta y debe actualizarse".
+ Es posible que haya visto el mensaje siguiente que indica que la licencia de Visual Studio se está quedando obsoleta. El mensaje indica "La licencia es obsoleta y se debe actualizar".
 
  ![Mensaje de licencia obsoleta de Visual Studio](../ide/media/vs2017_stale-license.png)
 
@@ -57,12 +59,12 @@ Escriba la clave de producto en el espacio para ello.
 - No se ha usado Visual Studio o no ha habido conexión a Internet durante un período prolongado de tiempo.
 - Se cerró la sesión de Visual Studio.
 
-Antes de que el token de licencia quede obsoleto, Visual Studio muestra un mensaje de advertencia donde se le pide que vuelva a escribir sus credenciales.
+Antes de que el token de licencia quede obsoleto, Visual Studio muestra un mensaje de advertencia donde se le pide que vuelva a escribir sus credenciales.
 
-Si no vuelve a escribirlas, el token empieza a quedar obsoleto y en el cuadro de diálogo **Configuración de la cuenta** se le indica cuántos días quedan antes de que el token expire por completo. Si el token expira, habrá que introducir de nuevo las credenciales de esta cuenta o licencia con el otro método anterior para poder continuar usando Visual Studio.
+Si no vuelve a escribirlas, el token empieza a quedar obsoleto y en el cuadro de diálogo **Configuración de la cuenta** se le indica cuántos días quedan antes de que el token expire por completo. Una vez que el token expire, deberá volver a escribir las credenciales de la cuenta para seguir usando Visual Studio.
 
 > [!Important]
-> Si trabaja con Visual Studio durante largos períodos en entornos con poco o ningún acceso a Internet, use una clave de producto para desbloquear Visual Studio con el fin de evitar la interrupción.
+> Si trabaja con Visual Studio durante largos períodos en entornos con poco o ningún acceso a Internet, use una clave de producto para desbloquear Visual Studio con el fin de evitar la interrupción.
 
 ### <a name="update-expired-licenses"></a>Actualizar licencias caducadas
 
@@ -70,4 +72,4 @@ Si no vuelve a escribirlas, el token empieza a quedar obsoleto y en el cuadro de
 
 ## <a name="see-also"></a>Vea también
 
-* [Inicio de sesión en Visual Studio](../ide/signing-in-to-visual-studio.md)
+* [Iniciar sesión en Visual Studio](../ide/signing-in-to-visual-studio.md)

@@ -1,20 +1,19 @@
 ---
 title: Ejemplos del Diseñador de sombras
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: f12f5dee-63ab-4376-9952-7f87f269e9c4
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ef12409a1c0c90a94a7284f3d6d7576bb241b62
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d0f3821905062eaf819c8d618a5deffa113c25b6
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53959857"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55924362"
 ---
 # <a name="shader-designer-examples"></a>Ejemplos del Diseñador de sombras
 

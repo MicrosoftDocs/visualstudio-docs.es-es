@@ -2,7 +2,6 @@
 title: IActiveScriptProperty::SetProperty | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 683041b50002cb926a36e4f10d6758246af91726
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: f24f63612b5d4dcb1c6a5a65e0ad38f8056cf842
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54090781"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58159392"
 ---
 # <a name="iactivescriptpropertysetproperty"></a>IActiveScriptProperty::SetProperty
 Establece la propiedad especificada por el parámetro.  
@@ -49,7 +48,7 @@ HRESULT SetProperty(
  No se utiliza.  
   
  `pvarValue`  
- El valor de la propiedad.  
+ Valor de la propiedad.  
   
  Los valores permiten para `dwProperty` se describen en la tabla siguiente.  
   

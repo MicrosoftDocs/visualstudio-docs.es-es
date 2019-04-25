@@ -1,14 +1,9 @@
 ---
 title: Guardar un documento estándar | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], saving standard documents
 - projects [Visual Studio SDK], saving standard documents
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: d692fedf-b46e-4d60-84bd-578635042235
 caps.latest.revision: 9
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 72415a4ddfa3de9511aab4b52ae37960af872fde
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5040070287db6486fa62c9010fe023be31b04cbe
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51803583"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052485"
 ---
 # <a name="saving-a-standard-document"></a>Guardado de un documento estándar
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -58,13 +53,12 @@ Guardar, guardar como y guardar todos los comandos de control para un editor est
   
 #### <a name="to-change-file-ownership-to-the-miscellaneous-files-project"></a>Para cambiar la propiedad de archivo al proyecto archivos varios  
   
-1.  Consultar el servicio para el <xref:Microsoft.VisualStudio.Shell.Interop.SVsExternalFilesManager> interfaz.  
+1. Consultar el servicio para el <xref:Microsoft.VisualStudio.Shell.Interop.SVsExternalFilesManager> interfaz.  
   
      Un puntero a <xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager2> se devuelve.  
   
-2.  Llame a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager2.TransferDocument%2A> (`pszMkDocumentNew`, `punkWindowFrame`) método para transferir el documento a la nueva jerarquía. Este método llama a la jerarquía de la ejecución del comando Guardar como.  
+2. Llame a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager2.TransferDocument%2A> (`pszMkDocumentNew`, `punkWindowFrame`) método para transferir el documento a la nueva jerarquía. Este método llama a la jerarquía de la ejecución del comando Guardar como.  
   
 ## <a name="see-also"></a>Vea también  
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>   
  [Apertura y guardado de elementos de proyecto](../../extensibility/internals/opening-and-saving-project-items.md)
-

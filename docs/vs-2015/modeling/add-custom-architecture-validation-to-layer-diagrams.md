@@ -1,25 +1,22 @@
 ---
 title: Agregar validación de arquitectura personalizada a diagramas de capas | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - layer diagrams, adding custom validation
 ms.assetid: fed7bc08-295a-46d6-9fd8-fb537f1f75f1
 caps.latest.revision: 44
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 9748f2f7b43426f7f981d027400f097b260bf23d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: b91f89bc6c3db52526c8c5e64549b08310a17313
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817521"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045889"
 ---
 # <a name="add-custom-architecture-validation-to-layer-diagrams"></a>Agregar validación de arquitectura personalizada a diagramas de capas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +51,7 @@ En Visual Studio, los usuarios pueden validar el código fuente en un proyecto c
    >  A makethe plantilla funcione correctamente:  
    > 
    > - Edite las llamadas a `LogValidationError` para quitar los argumentos opcionales `errorSourceNodes` y `errorTargetNodes`.  
-   >   -   Si usa propiedades personalizadas, aplique la actualización mencionada en [agregar propiedades personalizadas a diagramas de capas](../modeling/add-custom-properties-to-layer-diagrams.md).  
+   >   - Si usa propiedades personalizadas, aplique la actualización mencionada en [agregar propiedades personalizadas a diagramas de capas](../modeling/add-custom-properties-to-layer-diagrams.md).  
   
 3. Modifique el código para definir la validación. Para obtener más información, vea [Programar la validación](#programming).  
   
@@ -70,19 +67,19 @@ En Visual Studio, los usuarios pueden validar el código fuente en un proyecto c
   
 #### <a name="to-add-layer-validation-to-a-separate-vsix"></a>Para agregar la validación de capas a un VSIX independiente  
   
-1.  Cree un proyecto de biblioteca de clases en una solución de Visual Studio nueva o en una existente. En el cuadro de diálogo **Nuevo proyecto** , haga clic en **Visual C#** y haga clic en **Biblioteca de clases**. Este proyecto contendrá la clase de validación de capas.  
+1. Cree un proyecto de biblioteca de clases en una solución de Visual Studio nueva o en una existente. En el cuadro de diálogo **Nuevo proyecto** , haga clic en **Visual C#** y haga clic en **Biblioteca de clases**. Este proyecto contendrá la clase de validación de capas.  
   
-2.  Identifique o cree un proyecto de VSIX en la solución. Un proyecto de VSIX contiene un archivo denominado **source.extension.vsixmanifest**. Si tiene que agregar un proyecto VSIX, siga estos pasos:  
+2. Identifique o cree un proyecto de VSIX en la solución. Un proyecto de VSIX contiene un archivo denominado **source.extension.vsixmanifest**. Si tiene que agregar un proyecto VSIX, siga estos pasos:  
   
-    1.  En el cuadro de diálogo **Nuevo proyecto** , elija **Visual C#**, **Extensibilidad**, **Proyecto VSIX**.  
+    1. En el cuadro de diálogo **Nuevo proyecto** , elija **Visual C#**, **Extensibilidad**, **Proyecto VSIX**.  
   
-    2.  En el **Explorador de soluciones**, en el menú contextual del proyecto VSIX, elija **Establecer como proyecto de inicio**.  
+    2. En el **Explorador de soluciones**, en el menú contextual del proyecto VSIX, elija **Establecer como proyecto de inicio**.  
   
-3.  En **source.extension.vsixmanifest**, en **Activos**, agregue el proyecto de validación de capas como componente MEF:  
+3. En **source.extension.vsixmanifest**, en **Activos**, agregue el proyecto de validación de capas como componente MEF:  
   
-    1.  Elija **Nuevo**.  
+    1. Elija **Nuevo**.  
   
-    2.  En el cuadro de diálogo **Agregar nuevo activo** , establezca:  
+    2. En el cuadro de diálogo **Agregar nuevo activo** , establezca:  
   
          **Tipo** = **Microsoft.VisualStudio.MefComponent**  
   
@@ -90,11 +87,11 @@ En Visual Studio, los usuarios pueden validar el código fuente en un proyecto c
   
          **Proyecto** = *El proyecto validador*  
   
-4.  También debe agregarse como validación de capas:  
+4. También debe agregarse como validación de capas:  
   
-    1.  Elija **Nuevo**.  
+    1. Elija **Nuevo**.  
   
-    2.  En el cuadro de diálogo **Agregar nuevo activo** , establezca:  
+    2. En el cuadro de diálogo **Agregar nuevo activo** , establezca:  
   
          **Tipo** = **Microsoft.VisualStudio.ArchitectureTools.Layer.Validator**. Esta no es una de las opciones de la lista desplegable. Debe escribirla desde el teclado.  
   
@@ -102,7 +99,7 @@ En Visual Studio, los usuarios pueden validar el código fuente en un proyecto c
   
          **Proyecto** = *El proyecto validador*  
   
-5.  Vuelva al proyecto de validación de capas y agregue las siguientes referencias de proyecto:  
+5. Vuelva al proyecto de validación de capas y agregue las siguientes referencias de proyecto:  
   
     |**Referencia**|**Qué permite hacer**|  
     |-------------------|------------------------------------|  
@@ -113,18 +110,18 @@ En Visual Studio, los usuarios pueden validar el código fuente en un proyecto c
     |System.ComponentModel.Composition|Definir el componente de validación mediante MEF (Managed Extensibility Framework)|  
     |Microsoft.VisualStudio.Modeling.Sdk.[versión]|Definir las extensiones de modelado|  
   
-6.  Copie el código de ejemplo al final de este tema en el archivo de clase del proyecto de biblioteca de validador para que contenga el código de la validación. Para obtener más información, vea [Programar la validación](#programming).  
+6. Copie el código de ejemplo al final de este tema en el archivo de clase del proyecto de biblioteca de validador para que contenga el código de la validación. Para obtener más información, vea [Programar la validación](#programming).  
   
-7.  Para probar la extensión, vea [Depurar la validación de capas](#debugging).  
+7. Para probar la extensión, vea [Depurar la validación de capas](#debugging).  
   
     > [!NOTE]
     >  Solo se llamará al método en circunstancias concretas y los puntos de interrupción no funcionarán automáticamente. Para obtener más información, vea [Depurar la validación de capas](#debugging).  
   
-8.  Para instalar VSIX en la instancia principal de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]o en otro equipo, busque el archivo **.vsix** en el directorio **bin** del proyecto de VSIX. Cópielo en el equipo donde desea instalar VSIX. En el Explorador de Windows, haga doble clic en el archivo VSIX. (Explorador de archivos in Windows 8).  
+8. Para instalar VSIX en la instancia principal de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]o en otro equipo, busque el archivo **.vsix** en el directorio **bin** del proyecto de VSIX. Cópielo en el equipo donde desea instalar VSIX. En el Explorador de Windows, haga doble clic en el archivo VSIX. (Explorador de archivos in Windows 8).  
   
      Para desinstalarlo, use **Extensiones y actualizaciones** en el menú **Herramientas** .  
   
-##  <a name="programming"></a> Programar la validación  
+## <a name="programming"></a> Programar la validación  
  Para definir una extensión de validación de capas, defina una clase que tenga las siguientes características:  
   
 - El formato general de la declaración será similar al siguiente:  
@@ -193,8 +190,8 @@ En Visual Studio, los usuarios pueden validar el código fuente en un proyecto c
   
   Los vínculos entre las capas y los elementos del código tienen la categoría "Representa".  
   
-##  <a name="debugging"></a> Depurar la validación  
- Para depurar la extensión de validación de capas, presione CTRL+F5. Se abre una instancia experimental de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. En esta instancia, abra o cree un modelo de capas. Este modelo debe estar asociado a código y debe tener al menos una dependencia.  
+## <a name="debugging"></a> Depurar la validación  
+ Para depurar la extensión de validación de capas, presione CTRL+F5. Se abre una instancia experimental de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . En esta instancia, abra o cree un modelo de capas. Este modelo debe estar asociado a código y debe tener al menos una dependencia.  
   
 ### <a name="test-with-a-solution-that-contains-dependencies"></a>Probar con una solución que contiene dependencias  
  No se ejecuta la validación a menos que estén presentes las siguientes características:  
@@ -220,7 +217,7 @@ En Visual Studio, los usuarios pueden validar el código fuente en un proyecto c
 ### <a name="deploying-a-validation-extension"></a>Implementar una extensión de validación  
  Para instalar la extensión de validación en un equipo en el que está instalado una versión adecuada de Visual Studio, abra el archivo VSIX en el equipo de destino. Para instalarla en un equipo en el que está instalado [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] , debe extraer manualmente el contenido de VSIX en una carpeta Extensions. Para obtener más información, consulte [implementar una extensión del modelo de capas](../modeling/deploy-a-layer-model-extension.md).  
   
-##  <a name="example"></a> Example code  
+## <a name="example"></a> Example code  
   
 ```csharp  
 using System;  
@@ -283,6 +280,3 @@ namespace Validator3
   
 ## <a name="see-also"></a>Vea también  
  [Ampliar diagramas de capas](../modeling/extend-layer-diagrams.md)
-
-
-

@@ -1,48 +1,59 @@
 ---
 title: Crear un proyecto de prueba unitaria
-ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
+ms.date: 01/29/2019
 ms.topic: conceptual
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 8b3b3f8af1dbc2cfd745a56238694cd19cc1f16d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ca83689628f02a8c7a2e0166b390d5b277086c1d
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53824943"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416141"
 ---
 # <a name="create-a-unit-test-project"></a>Crear un proyecto de prueba unitaria
 
 Las pruebas unitarias a menudo reflejan la estructura del código sometido a pruebas. Por ejemplo, se crearía un proyecto de prueba unitaria para cada proyecto de código en el producto. El proyecto de prueba puede estar en la misma solución que el código de producción, o puede estar en una solución independiente. Puede tener varios proyectos de prueba unitaria en una solución.
 
 > [!NOTE]
-> La ubicación de las pruebas unitarias para código nativo y la estructura del proyecto de prueba puede ser diferente de la estructura que se describe en este tema. Para obtener más información, vea [Writing unit tests for C/C++](writing-unit-tests-for-c-cpp.md) (Escritura de pruebas unitarias para C/C++).
+> La ubicación de las pruebas unitarias para código nativo y la estructura del proyecto de prueba puede ser diferente de la estructura que se describe en este artículo. Para obtener más información, vea [Writing unit tests for C/C++](writing-unit-tests-for-c-cpp.md) (Escritura de pruebas unitarias para C/C++).
 
-## <a name="to-create-a-unit-test-project"></a>Para crear un proyecto de prueba unitaria:
+## <a name="to-create-a-unit-test-project"></a>Para crear un proyecto de prueba unitaria
 
-1.  En el menú **Archivo**, elija **Nuevo** y, después, **Proyecto** (teclado **Ctrl**+**Mayús**+**N**).
+1. En el menú **Archivo**, elija **Nuevo** > **Proyecto** o presiones **Ctrl**+**Mayús**+**N**.
 
-2.  En el cuadro de diálogo **Nuevo proyecto**, expanda el nodo **Instalado**, elija el lenguaje que quiere usar para el proyecto de prueba y, después, elija **Probar**.
+::: moniker range="vs-2017"
 
-3.  Para usar uno de los marcos de pruebas unitarias de Microsoft, elija **Proyecto de prueba unitaria** en la lista de plantillas de proyecto. De lo contrario, elija la plantilla de proyecto del marco de pruebas unitarias que desea usar. Para probar el proyecto Cuentas del ejemplo, el proyecto se denominaría **CuentasPrueba**.
+2. En el cuadro de diálogo **Nuevo proyecto**, expanda el nodo **Instalado**, elija el lenguaje que quiere usar para el proyecto de prueba y, después, elija **Probar**.
 
-4.  En el proyecto de prueba unitaria, agregue una referencia al código en pruebas.  Aquí se muestra cómo crear la referencia a un proyecto de código en la misma solución:
+3. Para usar uno de los marcos de pruebas unitarias de Microsoft, elija **Proyecto de prueba unitaria** en la lista de plantillas de proyecto. De lo contrario, elija la plantilla de proyecto del marco de pruebas unitarias que desea usar. Asigne un nombre al proyecto y, después, haga clic en **Aceptar**.
 
-    1.  Seleccione el proyecto en el **Explorador de soluciones**.
+::: moniker-end
 
-    2.  En el menú **Proyecto** , elija **Agregar referencia**.
+::: moniker range=">=vs-2019"
 
-    3.  En el cuadro de diálogo **Administrador de referencias**, abra el nodo **Solución** y elija **Proyectos**. Compruebe el nombre del proyecto de código y cierre el cuadro de diálogo.
+2. En el cuadro de búsqueda de la página **Crear un proyecto**, escriba **prueba unitaria**. Seleccione la plantilla de proyecto **Proyecto de prueba unitaria (.NET Framework)** y haga clic en **Siguiente**.
 
-5.  Si el código que desea probar está en otra ubicación, consulte [Administrar referencias en un proyecto](../ide/managing-references-in-a-project.md) para obtener información sobre cómo agregar referencias.
+3. En la página **Configurar el nuevo proyecto**, escriba un nombre para el proyecto y haga clic en **Crear**.
+
+::: moniker-end
+
+4. En el proyecto de prueba unitaria, agregue una referencia al código en pruebas. Para agregar una referencia a un proyecto de código de la misma solución:
+
+   1. Seleccione el proyecto en el **Explorador de soluciones**.
+
+   2. En el menú **Proyecto** , elija **Agregar referencia**.
+
+   3. En **Administrador de referencias**, haga clic en el nodo **Solución**, en **Proyectos**. Seleccione el proyecto de código que quiera probar y, después, haga clic en **Aceptar**.
+
+   Si el código que quiere probar está en otra ubicación, vea [Administrar referencias en un proyecto](../ide/managing-references-in-a-project.md) para obtener información sobre cómo agregar una referencia.
 
 ## <a name="next-steps"></a>Pasos siguientes
 
- Consulte una de las siguientes secciones:
+Consulte una de las siguientes secciones:
 
 **Escribir pruebas unitarias**
 

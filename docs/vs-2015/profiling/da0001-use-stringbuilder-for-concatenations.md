@@ -1,14 +1,9 @@
 ---
-title: 'DA0001: Utilizar StringBuilder para las concatenaciones | Microsoft Docs'
-ms.custom: ''
+title: 'DA0001: Usar StringBuilder para las concatenaciones | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.performance.DA0001
 - vs.performance.rules.DAUseStringBuilder
@@ -18,18 +13,18 @@ ms.assetid: a7cc7613-ad5f-48c8-bd2b-56372cc12dfc
 caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 4cbfbabc96273f6a39a69888025b80d12103dd4b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 386eda282364ccc4ab9841f126bb10944477df18
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51803323"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659155"
 ---
-# <a name="da0001-use-stringbuilder-for-concatenations"></a>DA0001: Utilizar StringBuilder para las concatenaciones
+# <a name="da0001-use-stringbuilder-for-concatenations"></a>DA0001: Usar StringBuilder para las concatenaciones
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Para obtener la documentación más reciente de Visual Studio 2017, consulte [DA0001: utilizar StringBuilder para concatenaciones](https://docs.microsoft.com/visualstudio/profiling/da0001-use-stringbuilder-for-concatenations) en docs.microsoft.com.  
+Para obtener la documentación más reciente de Visual Studio, consulte [DA0001: Use StringBuilder para concatenaciones](https://docs.microsoft.com/visualstudio/profiling/da0001-use-stringbuilder-for-concatenations).  
   
 |||  
 |-|-|  
@@ -51,4 +46,3 @@ Para obtener la documentación más reciente de Visual Studio 2017, consulte [DA
  Haga doble clic en el mensaje en la ventana Lista de errores para navegar a la [vista Detalles de la función](../profiling/function-details-view.md) de los datos del perfil de muestreo. Busque las secciones del programa que utilizan la concatenación de cadenas con mayor frecuencia. Utilice la clase StringBuilder para las manipulaciones de cadenas complejas, incluidas las operaciones de concatenación de cadenas frecuentes.  
   
  Para obtener más información sobre cómo trabajar con cadenas, consulte la sección [Operaciones de cadenas](http://go.microsoft.com/fwlink/?LinkId=177816) de [Capítulo 5: Mejorar el rendimiento del código administrado](http://go.microsoft.com/fwlink/?LinkId=177817) en la biblioteca Patrones y prácticas de Microsoft.
-

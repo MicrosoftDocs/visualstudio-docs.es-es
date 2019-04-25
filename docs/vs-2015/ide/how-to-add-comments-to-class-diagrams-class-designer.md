@@ -1,14 +1,9 @@
 ---
-title: 'Cómo: Agregar comentarios a diagramas de clases (Diseñador de clases) | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Agregar comentarios a diagramas de clases (Diseñador de clases) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.comment
 helpviewer_keywords:
@@ -19,15 +14,15 @@ ms.assetid: d54005d5-a29d-4c4e-b153-feb6e84dd44f
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 7fbf85c9a64c08aab69672b9e0a005745df44540
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: bcf6a06ee89bcc3ba691b38e98cf8bf43d9c063b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49283015"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048052"
 ---
-# <a name="how-to-add-comments-to-class-diagrams-class-designer"></a>Cómo: Agregar comentarios a diagramas de clases (Diseñador de clases)
+# <a name="how-to-add-comments-to-class-diagrams-class-designer"></a>Procedimiento Agregar comentarios a diagramas de clases (Diseñador de clases)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Puede usar formas de comentario para anotar diagramas de clases. Una forma de comentario tiene una propiedad, **Text**, en la que puede escribir texto. Las formas de comentario solo existen en la superficie del diagrama y no en el código.  
@@ -38,14 +33,11 @@ Puede usar formas de comentario para anotar diagramas de clases. Una forma de co
   
 ### <a name="to-add-a-comment"></a>Para agregar un comentario  
   
-1.  Arrastre un comentario del **Cuadro de herramientas del Diseñador de clase** al diagrama de clases.  
+1. Arrastre un comentario del **Cuadro de herramientas del Diseñador de clase** al diagrama de clases.  
   
-2.  Haga clic en la nueva forma de comentario en el diagrama y escriba el texto que quiera.  
+2. Haga clic en la nueva forma de comentario en el diagrama y escriba el texto que quiera.  
   
 ## <a name="see-also"></a>Vea también  
  [Trabajar con diagramas de clases (Diseñador de clases)](../ide/working-with-class-diagrams-class-designer.md)   
  [Trabajar con diagramas de clases (Diseñador de clases)](../ide/working-with-class-diagrams-class-designer.md)   
- [Cómo: Personalizar los diagramas de clases (Diseñador de clases)](../ide/how-to-customize-class-diagrams-class-designer.md)
-
-
-
+ [Cómo: Personalizar diagramas de clases (Diseñador de clases)](../ide/how-to-customize-class-diagrams-class-designer.md)

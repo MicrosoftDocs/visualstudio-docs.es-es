@@ -1,21 +1,20 @@
 ---
 title: Generar pruebas unitarias para el código con IntelliTest
 ms.date: 10/05/2015
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.UnitTest.CreateIntelliTest
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 1d7c7886e407ab7f8151ecb8f79a7eb4090aed89
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9edda9d12ad5dfea1e65bd0356010d97af6dc3ac
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53958831"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56317425"
 ---
 # <a name="generate-unit-tests-for-your-code-with-intellitest"></a>Generar pruebas unitarias para el código con IntelliTest
 
@@ -158,4 +157,4 @@ A continuación, ejecute IntelliTest para generar pruebas unitarias individuales
 
 ### <a name="q-can-i-learn-more-about-how-the-tests-are-generated"></a>P: ¿Puedo obtener más información sobre cómo se generan las pruebas?
 
-**R:** Sí, para obtener una visión general, lea esta [entrada de blog](https://blogs.msdn.microsoft.com/devops/2015/07/05/intellitest-one-test-to-rule-them-all/).
+**R:** Sí, para obtener una visión general, lea esta [entrada de blog](https://devblogs.microsoft.com/devops/intellitest-one-test-to-rule-them-all/).

@@ -1,7 +1,6 @@
 ---
 title: Biblioteca de imágenes
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: sample
 helpviewer_keywords:
 - animation [Visual Studio]
@@ -14,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: f7a2e7c8-3b9f-4f8e-a6a8-000d72e3811d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 984f36ea98c0e61be7236407c9188211bdb2fe60
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: aee70ea2c0463b56f7f82093087ec5a629aba53e
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987497"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55938956"
 ---
 # <a name="the-visual-studio-image-library"></a>Biblioteca de imágenes de Visual Studio
 

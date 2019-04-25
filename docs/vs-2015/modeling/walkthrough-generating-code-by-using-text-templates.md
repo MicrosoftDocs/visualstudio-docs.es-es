@@ -1,12 +1,9 @@
 ---
 title: 'Tutorial: Generar código mediante plantillas de texto | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - walkthroughs [text templates], generating application code
 - walkthroughs [text templates]
@@ -14,13 +11,13 @@ ms.assetid: 24602ade-baca-425e-a6ce-be09a2c7f7e1
 caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: bd360e07ca555bb7cb2c482970ab9a202f7bb630
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 8c374dc5cc616f58cb81a1191b095971561df9b1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49932558"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052888"
 ---
 # <a name="walkthrough-generating-code-by-using-text-templates"></a>Tutorial: Generar código mediante plantillas de texto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -89,9 +86,9 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
   
 ##### <a name="to-create-the-project"></a>Para crear el proyecto  
   
-1.  En el menú **Archivo** , haga clic en **Nuevo** y, después, haga clic en **Proyecto**.  
+1. En el menú **Archivo** , haga clic en **Nuevo** y, después, haga clic en **Proyecto**.  
   
-2.  Haga clic en el nodo **Visual C#** y, en el panel **Plantillas** , haga clic en **Aplicación de consola**.  
+2. Haga clic en el nodo **Visual C#** y, en el panel **Plantillas** , haga clic en **Aplicación de consola**.  
   
 ### <a name="add-a-prototype-xml-file-to-the-project"></a>Agregar un archivo XML de prototipo al proyecto  
  El propósito de este archivo es proporcionar ejemplos de los tipos de nodo XML que quiere que lea su aplicación. Puede ser un archivo que se usará para probar la aplicación. La plantilla producirá una clase de C# para cada tipo de nodo de este archivo.  
@@ -426,6 +423,3 @@ namespace MyProject
 ## <a name="see-also"></a>Vea también  
  [Generación de código en tiempo de diseño usando las plantillas de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)   
  [Escribir una plantilla de texto T4](../modeling/writing-a-t4-text-template.md)
-
-
-

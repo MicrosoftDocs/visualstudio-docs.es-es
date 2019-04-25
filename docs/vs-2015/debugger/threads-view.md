@@ -1,14 +1,9 @@
 ---
 title: Vista de subprocesos | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.externaltools.spyplus.threadsview
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: abfb4e9e-1622-47c9-afda-b6b71a9d88e4
 caps.latest.revision: 9
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 14b5038ef2512631c929dddb9262f2eec91f4485
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 489216c637f28d2e0abb3ee9bfe27fd077008985
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51770580"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58994731"
 ---
 # <a name="threads-view"></a>Vista de subprocesos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,6 +58,3 @@ La vista de subprocesos es una lista plana de todos los subprocesos asociados co
   
  [Referencia de Spy++](../debugger/spy-increment-reference.md)  
  Incluye secciones que describen cada Spy ++ menú y cuadro de diálogo.
-
-
-

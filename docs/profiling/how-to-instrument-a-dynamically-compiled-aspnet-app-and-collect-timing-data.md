@@ -4,15 +4,15 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 54aed21b3f2a4d2ac7ac837bd001731c98ada987
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ae33644c72288f79d6be9fcc1aec476939980a5c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53925789"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56646166"
 ---
 # <a name="how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler-by-using-the-command-line"></a>Procedimiento Instrumentar una aplicación web ASP.NET compilada dinámicamente y recopilar datos detallados de control de tiempo con el generador de perfiles mediante la línea de comandos
 
@@ -115,5 +115,5 @@ Después de completar la generación de perfiles, reemplace el archivo *web.conf
 
 ## <a name="see-also"></a>Vea también
 
-[Generación de perfiles de aplicaciones web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)  
+[Generación de perfiles de aplicaciones web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)
 [Vistas de datos del método de instrumentación](../profiling/instrumentation-method-data-views.md)

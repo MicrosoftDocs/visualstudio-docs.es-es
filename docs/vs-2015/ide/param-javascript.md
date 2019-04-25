@@ -1,14 +1,9 @@
 ---
-title: '&lt;param&gt; (JavaScript) | Documentos de Microsoft'
-ms.custom: ''
+title: '&lt;param&gt; (JavaScript) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - <param> JavaScript XML tag
 - param JavaScript XML tag
@@ -16,13 +11,13 @@ ms.assetid: 2c4e0167-c1dd-4e54-83f1-c437856bddc1
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: b1178fc6ff2cb5b4664930eaa70fd3de5ebed0f5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: a8477de8bf84950d778d4ce843522be35b2d7387
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949076"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54772386"
 ---
 # <a name="ltparamgt-javascript"></a>&lt;param&gt; (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +39,7 @@ Especifica información de documentación de un parámetro en una función o un 
   
 #### <a name="parameters"></a>Parámetros  
  `name`  
- Requerido. Nombre del parámetro.  
+ Obligatorio. Nombre del parámetro.  
   
  `type`  
  Opcional. Tipo de datos del parámetro. El tipo puede ser uno de los siguientes:  
@@ -128,6 +123,3 @@ function calculate(a) {
   
 ## <a name="see-also"></a>Vea también  
  [Comentarios de documentación XML](../ide/xml-documentation-comments-javascript.md)
-
-
-

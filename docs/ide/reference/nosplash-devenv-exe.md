@@ -1,7 +1,6 @@
 ---
 title: -NoSplash (devenv.exe)
 ms.date: 12/10/2018
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
@@ -10,15 +9,15 @@ helpviewer_keywords:
 - NoSplash Devenv switch
 author: DennisLee-DennisLee
 ms.author: v-dele
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 794934ab0bddcc90a36accf639b26e5ecc6bab30
-ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.openlocfilehash: 9a1e8118faa743398271fb282a2603aab5fcd76b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54233153"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55937960"
 ---
 # <a name="nosplash-devenvexe"></a>/NoSplash (devenv.exe)
 

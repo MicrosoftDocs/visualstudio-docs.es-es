@@ -2,27 +2,26 @@
 title: 'Inicio rápido: Crear un proyecto de Python con una plantilla'
 description: En este inicio rápido, creará un proyecto de Visual Studio para Python utilizando la plantilla integrada para una aplicación básica de Flask.
 ms.date: 12/06/2018
-ms.prod: visual-studio-dev15
 ms.topic: quickstart
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f01750978527a02d0d67267f550b8a0c0c558435
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 089be3e6f28a939979f6bd97097ea7558824b493
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964564"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59365956"
 ---
 # <a name="quickstart-create-a-python-project-from-a-template-in-visual-studio"></a>Inicio rápido: Creación de un proyecto de Python desde una plantilla en Visual Studio
 
-Después de [instalar la compatibilidad con Python en Visual Studio 2017](installing-python-support-in-visual-studio.md), resulta fácil crear un nuevo proyecto de Python con una variedad de plantillas. En este inicio rápido, creará una aplicación sencilla de Flask mediante una plantilla. El proyecto resultante es similar al proyecto que crea manualmente a través de [Inicio rápido: usar Visual Studio para crear su primera aplicación web Python](../ide/quickstart-python.md).
+Después de [instalar la compatibilidad con Python en Visual Studio](installing-python-support-in-visual-studio.md), resulta fácil crear un nuevo proyecto de Python con diversas plantillas. En este inicio rápido, creará una aplicación sencilla de Flask mediante una plantilla. El proyecto resultante es similar al proyecto que crea manualmente a través de [Inicio rápido: usar Visual Studio para crear su primera aplicación web Python](../ide/quickstart-python.md).
 
-1. Inicie Visual Studio 2017.
+1. Inicie Visual Studio.
 
 1. En la barra de menús superior, seleccione **Archivo** > **Nuevo** > **Proyecto**. Luego, en el cuadro de diálogo **Nuevo proyecto**, busque "flask en blanco", seleccione la plantilla **Proyecto web de Flask en blanco** en la lista del medio, asigne un nombre al proyecto y seleccione **Aceptar**:
 
@@ -76,7 +75,7 @@ Después de [instalar la compatibilidad con Python en Visual Studio 2017](instal
 
 1. Seleccione **Depurar** > **Iniciar sin depurar** para ejecutar el programa y abrir un explorador en `localhost:5555`.
 
-**Pregunta: ¿Qué otras plantillas de Python ofrece Visual Studio?**
+**Pregunta: Estoy utilizando un certificado X.509 con mi servicio y obtengo un System.Security.Cryptography.CryptographicException. ¿Qué otras plantillas de Python ofrece Visual Studio?**
 
 **Respuesta**: Con la carga de trabajo de Python instalada, Visual Studio proporciona una variedad de plantillas de proyecto que incluyen las de los [marcos web Flask, Bottle y Django](../python/python-web-application-project-templates.md), servicios en la nube de Azure, diferentes escenarios de aprendizaje automático e incluso una plantilla para crear un proyecto a partir de una estructura de carpetas existente que contiene una aplicación de Python. Puede acceder a ellas a través del cuadro de diálogo **Archivo** > **Nuevo** > **Proyecto** seleccionando el nodo de lenguaje **Python** y sus nodos secundarios.
 
@@ -84,7 +83,7 @@ Visual Studio también proporciona una variedad de *plantillas de elemento* o ar
 
 Mediante las plantillas puede ahorrar bastante tiempo al comenzar un proyecto o crear un archivo y también son una excelente manera de obtener información sobre diferentes tipos de aplicaciones y estructuras de código. Resulta útil invertir unos minutos en crear proyectos y elementos a partir de las diferentes plantillas para familiarizarse con lo que ofrecen.
 
-**Pregunta: ¿Puedo usar también las plantillas de Cookiecutter?**
+**Pregunta: Estoy utilizando un certificado X.509 con mi servicio y obtengo un System.Security.Cryptography.CryptographicException. ¿Puedo usar también las plantillas de Cookiecutter?**
 
 **Respuesta**: Sí. De hecho, Visual Studio proporciona integración directa con Cookiecutter. Puede obtener información sobre esta utilidad en [Inicio rápido: Creación de un proyecto a partir de una plantilla de Cookiecutter](../python/quickstart-04-python-in-visual-studio-project-from-cookiecutter.md).
 
@@ -95,6 +94,6 @@ Mediante las plantillas puede ahorrar bastante tiempo al comenzar un proyecto o 
 
 ## <a name="see-also"></a>Vea también
 
-- [Manually identifying an existing Python interpreter](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment) (Identificación manual de un intérprete de Python existente)
+- [Identificación manual de un intérprete de Python existente](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)
 - [Instalación de la compatibilidad con Python en Visual Studio 2015 y versiones anteriores](installing-python-support-in-visual-studio.md)
 - [Ubicaciones de instalación](installing-python-support-in-visual-studio.md#install-locations)

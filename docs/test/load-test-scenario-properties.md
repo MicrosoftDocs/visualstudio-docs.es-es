@@ -8,14 +8,13 @@ helpviewer_keywords:
 ms.assetid: 4414a638-1fa2-40ad-b1f4-b99f90b62e62
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 1887f1e5eb2ac77520f54c50d0f4ab16772f5e17
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 86ed8346a27a02eb7e04c1f7a9fa361b0e03431a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53843624"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55935074"
 ---
 # <a name="load-test-scenario-properties"></a>Propiedades de los escenarios de pruebas de carga
 

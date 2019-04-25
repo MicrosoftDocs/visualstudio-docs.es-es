@@ -1,29 +1,23 @@
 ---
 title: Administración del ciclo de vida de las aplicaciones (ALM) con aplicaciones de Xamarin | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- tgt-pltfrm-cross-plat
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: tgt-pltfrm-cross-plat
+ms.topic: conceptual
 ms.assetid: ff978cc2-5a25-46d6-921b-e51adaa65992
 caps.latest.revision: 16
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: f2e7af8227e11d554a4f953593dad396d5543aca
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: d524319eb31d3c51613894ad51470c718c9008e3
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51745214"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652765"
 ---
 # <a name="application-lifecycle-management-alm-with-xamarin-apps"></a>Administración del ciclo de vida de las aplicaciones (ALM) con aplicaciones de Xamarin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Xamarin le permite crear aplicaciones móviles multiplataforma destinadas a Android, iOS y Windows con C#, .NET y Visual Studio. Xamarin permite compartir entre plataformas gran parte del código. Solo es necesario que un pequeño porcentaje sea específico de la plataforma. Para más información sobre Xamarin, vea [Visual Studio y Xamarin](../cross-platform/visual-studio-and-xamarin.md).  
   
  El desarrollo de aplicaciones para plataformas modernas implica muchas otras actividades, además de escribir código. Estas actividades, denominadas DevOps (desarrollo + operaciones), abarcan el ciclo de vida completo de la aplicación e incluyen la planeación y el seguimiento del trabajo, el diseño y la implementación del código, la administración de un repositorio de código fuente, las compilaciones, la administración de integraciones e implementaciones continuas, las pruebas (incluidas las pruebas unitarias y las pruebas de la interfaz de usuario), la ejecución de diversas formas de diagnóstico tanto en entornos de desarrollo como de producción y la supervisión del rendimiento de la aplicación y del comportamiento de los usuarios en tiempo real mediante telemetría y análisis.  
@@ -35,7 +29,7 @@ Xamarin le permite crear aplicaciones móviles multiplataforma destinadas a Andr
  Las siguientes tablas identifican qué características ALM de Visual Studio puede esperar que funcionen bien con un proyecto de Xamarin y cuáles tienen limitaciones. Consulte la documentación vinculada para obtener más información acerca de cada característica.  
   
 ## <a name="agile-tools"></a>Herramientas de Agile  
- Vínculo de referencia: **[Trabajar](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)** (con Visual Studio Team Services o TFS, incluido Team Explorer Everywhere)  
+ Vínculo de referencia: **[Trabajo](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)**  (con Visual Studio Team Services o TFS, incluido Team Explorer Everywhere)  
   
  Comentario general: todas las características de planeación y seguimiento son independientes del tipo de proyecto y de los lenguajes de codificación.  
   
@@ -74,18 +68,18 @@ Xamarin le permite crear aplicaciones móviles multiplataforma destinadas a Andr
 |[Usar mapas de código para depurar aplicaciones](../modeling/use-code-maps-to-debug-your-applications.md)|Sí||  
   
 ## <a name="build"></a>Compilar  
- Vínculo de referencia: **[Compilar](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)**  
+ Vínculo de referencia: **[Compilación](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)**  
   
 |Característica|Compatible con Xamarin|Comentarios adicionales|  
 |-------------|----------------------------|-------------------------|  
 |Servidor TFS local|Sí|Los equipos de compilación deben tener instalado Xamarin y se pueden vincular a un equipo OSX para compilar para iOS. Vea [Configuring TFS for Xamarin](http://developer.xamarin.com/guides/cross-platform/ci/configuring_tfs/) (sitio web de Xamarin).|  
 |Servidor de compilación local vinculado a Visual Studio Team Services|Sí|Vea [Build server (Servidor de compilación)](http://msdn.microsoft.com/library/2d258a0a-f178-4e93-9da1-eba61151af3c) para obtener instrucciones.|  
-|Servicio de controlador hospedado de Visual Studio Team Services|Sí|Vea [Build your Xamarin app](https://www.visualstudio.com/en-us/docs/build/apps/mobile/xamarin) (Crear su aplicación de Xamarin).|  
+|Servicio de controlador hospedado de Visual Studio Team Services|Sí|Vea [Build your Xamarin app](https://www.visualstudio.com/docs/build/apps/mobile/xamarin) (Crear su aplicación de Xamarin).|  
 |Compilar definiciones con scripts anteriores y posteriores|Sí||  
 |Integración continua, incluidas entradas validadas|Sí|Entradas validadas para TFVC solo cuando GIT funciona en un modelo de solicitud de extracción en lugar de entradas.|  
   
 ## <a name="testing"></a>Pruebas  
- Vínculo de referencia: **[Testing the application (Probar la aplicación)](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)**  
+ Vínculo de referencia: **[Probar la aplicación](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)**  
   
 |Característica|Compatible con Xamarin|Comentarios adicionales|  
 |-------------|----------------------------|-------------------------|  
@@ -108,7 +102,7 @@ Xamarin le permite crear aplicaciones móviles multiplataforma destinadas a Andr
 |[Analizar problemas de memoria de .NET Framework](../misc/analyze-dotnet-framework-memory-issues.md)|No|Las herramientas de Visual Studio no tienen enlaces al marco de trabajo de Mono para la generación de perfiles.|  
   
 ## <a name="release-management"></a>Administración de versiones  
- Vínculo de referencia: **[Automate deployments with Release Management (Automatizar implementaciones con Release Management)](https://msdn.microsoft.com/library/vs/alm/release/overview)**  
+ Vínculo de referencia: **[Automatizar implementaciones con Release Management](https://msdn.microsoft.com/library/vs/alm/release/overview)**  
   
 |Característica|Compatible con Xamarin|Comentarios adicionales|  
 |-------------|----------------------------|-------------------------|  
@@ -122,4 +116,3 @@ Xamarin le permite crear aplicaciones móviles multiplataforma destinadas a Andr
 |Característica|Compatible con Xamarin|Comentarios adicionales|  
 |-------------|----------------------------|-------------------------|  
 |Análisis de bloqueo, telemetría y distribución beta|Sí||
-

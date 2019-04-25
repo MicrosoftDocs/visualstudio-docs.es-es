@@ -1,7 +1,7 @@
 ---
 title: IDebugProgramNode2::DetachDebugger_V7 | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugProgramNode2::DetachDebugger
 helpviewer_keywords:
@@ -9,15 +9,15 @@ helpviewer_keywords:
 - IDebugProgramNode2::DetachDebugger_V7
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 603c459d39f8141789b22955e916e3e8520214fb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0b7d97e277a3f7f327bf8830e49507d28e82568f
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53924155"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56713703"
 ---
 # <a name="idebugprogramnode2detachdebuggerv7"></a>IDebugProgramNode2::DetachDebugger_V7
 
@@ -49,4 +49,4 @@ Este método se llama cuando el depurador se cierra inesperadamente. Cuando se l
 
 ## <a name="see-also"></a>Vea también
 
-[IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)
+- [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)

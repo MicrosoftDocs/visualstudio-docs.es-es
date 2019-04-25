@@ -1,23 +1,20 @@
 ---
 title: Actualizar un modelo UML a partir de un subproceso en segundo plano | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 42c06b0b-b681-4e19-b5f3-6116dd2a4072
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 4173b70cda9df39ce8a4500817fff199ed1a2996
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d5a7ad318b5bd9fac41d5e8835169e4075d1da67
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750002"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093012"
 ---
 # <a name="update-a-uml-model-from-a-background-thread"></a>Actualizar un modelo UML a partir de un subproceso en segundo plano
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,9 +23,9 @@ En ocasiones, puede resultar útil realizar cambios en un modelo a través de un
   
  Sin embargo, debe tener en cuenta que el almacén UML no es seguro para subprocesos. Las siguientes consideraciones son importantes:  
   
--   Todas las actualizaciones de un modelo o diagrama deben realizarse en el subproceso de la interfaz de usuario. El subproceso en segundo plano debe usar <xref:System.Windows.Forms.Control.Invoke%2A> o `Dispatcher.`<xref:System.Windows.Threading.Dispatcher.Invoke%2A> para hacer que sea el subproceso de la interfaz de usuario el que realmente realice las actualizaciones.  
+- Todas las actualizaciones de un modelo o diagrama deben realizarse en el subproceso de la interfaz de usuario. El subproceso en segundo plano debe usar <xref:System.Windows.Forms.Control.Invoke%2A> o `Dispatcher.`<xref:System.Windows.Threading.Dispatcher.Invoke%2A> para hacer que sea el subproceso de la interfaz de usuario el que realmente realice las actualizaciones.  
   
--   Si agrupa una serie de cambios en una única transacción, le recomendamos que impida que el usuario edite el modelo mientras la transacción esté en curso. De lo contrario, cualquier modificación que pudiera hacer el usuario pasaría a formar parte de la misma transacción. Para evitar que el usuario realice cambios, muestre un cuadro de diálogo modal. Si lo desea, puede incluir un botón Cancelar en el cuadro de diálogo. El usuario puede ver los cambios cuando se producen.  
+- Si agrupa una serie de cambios en una única transacción, le recomendamos que impida que el usuario edite el modelo mientras la transacción esté en curso. De lo contrario, cualquier modificación que pudiera hacer el usuario pasaría a formar parte de la misma transacción. Para evitar que el usuario realice cambios, muestre un cuadro de diálogo modal. Si lo desea, puede incluir un botón Cancelar en el cuadro de diálogo. El usuario puede ver los cambios cuando se producen.  
   
 ## <a name="example"></a>Ejemplo  
  En este ejemplo se usa un subproceso en segundo plano para realizar diversos cambios en un modelo. Se usa un cuadro de diálogo para excluir al usuario mientras el subproceso está en ejecución. En este sencillo ejemplo, no se incluye el botón Cancelar en el cuadro de diálogo. Sin embargo, sería fácil agregar esa característica.  
@@ -39,17 +36,17 @@ En ocasiones, puede resultar útil realizar cambios en un modelo a través de un
   
 2. Asegúrese de que el proyecto contiene referencias a estos ensamblados:  
   
-   -   Microsoft.VisualStudio.ArchitectureTools.Extensibility  
+   - Microsoft.VisualStudio.ArchitectureTools.Extensibility  
   
-   -   Microsoft.VisualStudio.Modeling.Sdk.[versión]  
+   - Microsoft.VisualStudio.Modeling.Sdk.[versión]  
   
-   -   Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[versión]  
+   - Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[versión]  
   
-   -   Microsoft.VisualStudio.Uml.Interfaces  
+   - Microsoft.VisualStudio.Uml.Interfaces  
   
-   -   System.ComponentModel.Composition  
+   - System.ComponentModel.Composition  
   
-   -   System.Windows.Forms  
+   - System.Windows.Forms  
   
 3. Agregue al proyecto un formulario de Windows denominado **ProgressForm**. Debe aparece un mensaje en el que se indique que las actualizaciones están en curso. No es necesario que contengan ningún otro control.  
   
@@ -165,9 +162,9 @@ namespace BackgroundThreadProgressUI // CHANGE TO YOUR NAMESPACE
   
 #### <a name="to-allow-the-user-to-cancel-the-thread-in-the-example"></a>Para permitir que el usuario pueda cancelar el subproceso del ejemplo  
   
-1.  Agregue un botón de cancelación en el cuadro de diálogo de progreso.  
+1. Agregue un botón de cancelación en el cuadro de diálogo de progreso.  
   
-2.  Agregue el código siguiente al cuadro de diálogo de progreso:  
+2. Agregue el código siguiente al cuadro de diálogo de progreso:  
   
      `public event MethodInvoker Cancel;`  
   
@@ -179,7 +176,7 @@ namespace BackgroundThreadProgressUI // CHANGE TO YOUR NAMESPACE
   
      `}`  
   
-3.  En el método Execute (), inserte esta línea tras la construcción del formulario:  
+3. En el método Execute (), inserte esta línea tras la construcción del formulario:  
   
      `form.Cancel += delegate() { worker.CancelAsync(); };`  
   
@@ -193,6 +190,3 @@ namespace BackgroundThreadProgressUI // CHANGE TO YOUR NAMESPACE
 ## <a name="see-also"></a>Vea también  
  [Definir un comando de menú en un diagrama de modelado](../modeling/define-a-menu-command-on-a-modeling-diagram.md)   
  [Definir un controlador de gestos en un diagrama de modelado](../modeling/define-a-gesture-handler-on-a-modeling-diagram.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: Vista de utilización | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.cpuutilization
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: b4f7ceab-3653-4069-bb74-c309aec62866
 caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: f50c78aa9f9bad18c65658f01aa93c1e6944aa74
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 238d821795aaa4e9ef0ac06e117316450b46fda4
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51761543"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54795837"
 ---
 # <a name="utilization-view"></a>Vista de utilización
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,6 +54,3 @@ La **Vista de utilización** muestra información acerca de la CPU, la GPU y otr
 ## <a name="see-also"></a>Vea también  
  [Visualizador de simultaneidad](../profiling/concurrency-visualizer.md)   
  [Vista Núcleos](../profiling/cores-view.md)
-
-
-

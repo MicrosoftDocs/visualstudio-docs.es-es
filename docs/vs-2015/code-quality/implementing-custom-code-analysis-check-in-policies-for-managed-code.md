@@ -1,14 +1,9 @@
 ---
 title: Implementar código personalizado en el repositorio directivas de análisis de código administrado | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - vs.code.analysis.selecttfsrulesets
 - vs.code.analysis.browsefortfsruleset
@@ -18,12 +13,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 82f360bb9dc256fd78a8b06aca66d9e49c57ab22
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: e27892859dd58add2f505fa04e21faac5576a80b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49268975"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088761"
 ---
 # <a name="implementing-custom-code-analysis-check-in-policies-for-managed-code"></a>Implementar directivas de protección de análisis de código personalizadas para el código administrado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,56 +35,56 @@ Un directiva de protección especifica un conjunto de reglas que los miembros de
  Para crear una regla personalizada establecido para un proyecto de equipo, primero se crea una carpeta especial para la regla de directiva de protección se establece **Explorador de Control de código fuente**. A continuación, cree el archivo de conjunto de reglas y agregue el archivo al control de versiones. Por último, especifique el conjunto de reglas como la directiva de comprobación del análisis de código del proyecto de equipo.  
   
 > [!NOTE]
->  Para crear una carpeta en un proyecto de equipo, primero debe asignar la raíz del proyecto de equipo a una ubicación en el equipo local. Para obtener más información, consulte [crear y trabajar con áreas de trabajo (antiguo)](http://msdn.microsoft.com/en-us/db4d5692-179a-44fe-ad31-0c1c900c9cb2).  
+>  Para crear una carpeta en un proyecto de equipo, primero debe asignar la raíz del proyecto de equipo a una ubicación en el equipo local. Para obtener más información, consulte [crear y trabajar con áreas de trabajo (antiguo)](http://msdn.microsoft.com/db4d5692-179a-44fe-ad31-0c1c900c9cb2).  
   
 #### <a name="to-create-the-version-control-folder-for-the-check-in-policy-rule-set"></a>Para crear la carpeta de control de versiones para el conjunto de reglas de directiva de protección  
   
-1.  En [!INCLUDE[esprtfc](../includes/esprtfc-md.md)], expanda el nodo de proyecto de equipo y, a continuación, haga clic en **Control de código fuente**.  
+1. En [!INCLUDE[esprtfc](../includes/esprtfc-md.md)], expanda el nodo de proyecto de equipo y, a continuación, haga clic en **Control de código fuente**.  
   
-2.  En el **carpetas** panel, haga clic en el proyecto de equipo y, a continuación, haga clic en **nueva carpeta**.  
+2. En el **carpetas** panel, haga clic en el proyecto de equipo y, a continuación, haga clic en **nueva carpeta**.  
   
-3.  En el panel de Control de código fuente principal, haga clic en **nueva carpeta**, haga clic en **cambiar el nombre**y escriba un nombre para la regla del conjunto de carpetas.  
+3. En el panel de Control de código fuente principal, haga clic en **nueva carpeta**, haga clic en **cambiar el nombre**y escriba un nombre para la regla del conjunto de carpetas.  
   
 #### <a name="to-create-the-check-in-policy-rule-set"></a>Para crear el conjunto de reglas de directiva de protección  
   
-1.  En el **archivo** menú, elija **New**y, a continuación, haga clic en **archivo**.  
+1. En el **archivo** menú, elija **New**y, a continuación, haga clic en **archivo**.  
   
-2.  En el **categorías** lista, haga clic en **General**.  
+2. En el **categorías** lista, haga clic en **General**.  
   
-3.  En el **plantillas** lista, haga doble clic en **conjunto de reglas de análisis de código**.  
+3. En el **plantillas** lista, haga doble clic en **conjunto de reglas de análisis de código**.  
   
-4.  Especificar las reglas que se va a incluir en el conjunto de reglas y, a continuación, guarde el archivo de conjunto de regla en la carpeta de conjunto de reglas que ha creado.  
+4. Especificar las reglas que se va a incluir en el conjunto de reglas y, a continuación, guarde el archivo de conjunto de regla en la carpeta de conjunto de reglas que ha creado.  
   
      Para obtener más información, consulte [creación de conjuntos de reglas personalizadas](../code-quality/creating-custom-code-analysis-rule-sets.md)  
   
 #### <a name="to-add-the-rule-set-file-to-version-control"></a>Para agregar la regla de conjunto de archivos al control de versiones  
   
-1.  En **Explorador de Control de código fuente**, haga clic en la nueva carpeta y, a continuación, haga clic en **agregar elementos a la carpeta**.  
+1. En **Explorador de Control de código fuente**, haga clic en la nueva carpeta y, a continuación, haga clic en **agregar elementos a la carpeta**.  
   
      Para obtener más información, consulte [usar control de versiones](http://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314).  
   
-2.  Haga clic en la regla establece el archivo que ha creado y, a continuación, haga clic en **finalizar**.  
+2. Haga clic en la regla establece el archivo que ha creado y, a continuación, haga clic en **finalizar**.  
   
      El archivo se agrega al control de código fuente y desprotegido.  
   
-3.  En el **Explorador de Control de código fuente** ventana de detalles, haga clic en el nombre de archivo y, a continuación, haga clic en **proteger cambios pendientes**.  
+3. En el **Explorador de Control de código fuente** ventana de detalles, haga clic en el nombre de archivo y, a continuación, haga clic en **proteger cambios pendientes**.  
   
-4.  En el **en el repositorio** cuadro de diálogo, tiene la opción para agregar un comentario y, a continuación, haga clic en **proteger**.  
+4. En el **en el repositorio** cuadro de diálogo, tiene la opción para agregar un comentario y, a continuación, haga clic en **proteger**.  
   
     > [!NOTE]
     >  Si ya ha configurado una directiva de protección de análisis de código para el proyecto de equipo y ha seleccionado la **exigir la protección para que solo contenga los archivos que forman parte de la solución actual**, se desencadenará una advertencia de error de directiva. En el cuadro de diálogo de error de la directiva, seleccione **invalidar el error de directiva y continuar la protección**. Agregue un comentario necesario y, a continuación, haga clic en **Aceptar**.  
   
 #### <a name="to-specify-the-rule-set-file-as-the-check-in-policy"></a>Para especificar la regla de conjunto de archivos como la directiva de protección  
   
-1.  En el **equipo** menú, elija **configuración del proyecto de equipo**y, a continuación, haga clic en **Control de código fuente**.  
+1. En el **equipo** menú, elija **configuración del proyecto de equipo**y, a continuación, haga clic en **Control de código fuente**.  
   
-2.  Haga clic en **directiva de protección**y, a continuación, haga clic en **agregar**.  
+2. Haga clic en **directiva de protección**y, a continuación, haga clic en **agregar**.  
   
-3.  En el **directiva de protección** lista, haga doble clic en **análisis de código**y asegúrese de que el **aplicar análisis de código para código administrado** casilla está activada.  
+3. En el **directiva de protección** lista, haga doble clic en **análisis de código**y asegúrese de que el **aplicar análisis de código para código administrado** casilla está activada.  
   
-4.  En el **ejecutar este conjunto de reglas** lista, haga clic en  **\<Seleccionar conjunto de reglas de Control de código fuente >**.  
+4. En el **ejecutar este conjunto de reglas** lista, haga clic en  **\<Seleccionar conjunto de reglas de Control de código fuente >**.  
   
-5.  Escriba la ruta de acceso del archivo de conjunto de regla de directiva de protección en el control de versiones.  
+5. Escriba la ruta de acceso del archivo de conjunto de regla de directiva de protección en el control de versiones.  
   
      La ruta de acceso debe ajustarse a la sintaxis siguiente:  
   
@@ -98,32 +93,29 @@ Un directiva de protección especifica un conjunto de reglas que los miembros de
     > [!NOTE]
     >  Puede copiar la ruta de acceso mediante uno de los siguientes procedimientos en **Explorador de Control de código fuente**:  
   
-    -   En el **carpetas** panel, haga clic en la carpeta que contiene el archivo de conjunto de reglas. Copie la ruta de acceso de control de versiones de la carpeta que aparece en el **origen** cuadro y escriba el nombre del archivo de conjunto de reglas manualmente.  
+    - En el **carpetas** panel, haga clic en la carpeta que contiene el archivo de conjunto de reglas. Copie la ruta de acceso de control de versiones de la carpeta que aparece en el **origen** cuadro y escriba el nombre del archivo de conjunto de reglas manualmente.  
   
-    -   En la ventana de detalles, haga clic en el archivo de conjunto de reglas y, a continuación, haga clic en **propiedades**. En el **General** pestaña, copie el valor en **nombre del servidor**.  
+    - En la ventana de detalles, haga clic en el archivo de conjunto de reglas y, a continuación, haga clic en **propiedades**. En el **General** pestaña, copie el valor en **nombre del servidor**.  
   
 ## <a name="synchronizing-code-projects-to-the-check-in-policy-rule-set"></a>Sincronizando el conjunto de reglas de directiva de protección de los proyectos de código  
  Especifique una regla de directiva de protección del proyecto de equipo se establece como el conjunto de reglas de análisis de código de una configuración de proyecto de código en el cuadro de diálogo Propiedades del proyecto de código. Si el conjunto de reglas se encuentra en la misma unidad que el proyecto de código, una ruta de acceso relativa se utiliza para especificar el conjunto de reglas cuando se selecciona la ruta de acceso desde el cuadro de diálogo de archivo. Estructuras de control de la ruta de acceso relativa permite que la configuración de propiedades del proyecto que sean portables a otros equipos que usan la versión local similar.  
   
 #### <a name="to-specify-a-team-project-rule-set-as-the-rule-set-of-a-code-project"></a>Para especificar una regla de proyecto de equipo establecido como el conjunto de reglas de un proyecto de código  
   
-1.  Si es necesario, recuperar la carpeta de conjunto de reglas de directiva de protección y el archivo de control de versiones.  
+1. Si es necesario, recuperar la carpeta de conjunto de reglas de directiva de protección y el archivo de control de versiones.  
   
      Puede realizar este paso en **Explorador de Control de código fuente** haciendo la regla establece carpeta y, a continuación, haga clic en **obtener última versión**.  
   
-2.  En **el Explorador de soluciones**, haga clic en el proyecto de código y, a continuación, haga clic en **propiedades**.  
+2. En **el Explorador de soluciones**, haga clic en el proyecto de código y, a continuación, haga clic en **propiedades**.  
   
-3.  **Haga clic en el análisis de código**.  
+3. **Haga clic en el análisis de código**.  
   
-4.  Si es necesario, haga clic en las opciones adecuadas en el **configuración** y **plataforma** enumera.  
+4. Si es necesario, haga clic en las opciones adecuadas en el **configuración** y **plataforma** enumera.  
   
-5.  Para ejecutar análisis de código cada vez que se compila el proyecto de código con la configuración especificada, seleccione el **Habilitar análisis de código al compilar (define la constante CODE_ANALYSIS)** casilla de verificación.  
+5. Para ejecutar análisis de código cada vez que se compila el proyecto de código con la configuración especificada, seleccione el **Habilitar análisis de código al compilar (define la constante CODE_ANALYSIS)** casilla de verificación.  
   
-6.  Para omitir el código en componentes de otras empresas, seleccione el **Suprimir resultados del código generado** casilla de verificación.  
+6. Para omitir el código en componentes de otras empresas, seleccione el **Suprimir resultados del código generado** casilla de verificación.  
   
-7.  En el **ejecutar este conjunto de reglas** lista, haga clic en  **\<Examinar... >**.  
+7. En el **ejecutar este conjunto de reglas** lista, haga clic en  **\<Examinar... >**.  
   
-8.  Especifique la versión local del archivo de conjunto de regla de directiva de protección.
-
-
-
+8. Especifique la versión local del archivo de conjunto de regla de directiva de protección.

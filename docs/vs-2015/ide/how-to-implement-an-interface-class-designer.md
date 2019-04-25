@@ -1,14 +1,9 @@
 ---
-title: 'Cómo: Implementar una interfaz (Diseñador de clases) | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Implementar una interfaz (Diseñador de clases) | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - interfaces [Visual Studio], implementing
 - interfaces [Visual Studio]
@@ -16,15 +11,15 @@ ms.assetid: 81d2cf46-7f60-448c-83e3-1d16bb88ca36
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 9a196f49765623966a48b07eef3abe3f8ca7e5a1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 0d49d0cb43e4d93c5981aa9000c8ae539bc84879
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49900545"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099564"
 ---
-# <a name="how-to-implement-an-interface-class-designer"></a>Cómo: Implementar una interfaz (Diseñador de clases)
+# <a name="how-to-implement-an-interface-class-designer"></a>Procedimiento Implementar una interfaz (Diseñador de clases)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 En el Diseñador de clases, puede implementar una interfaz en el diagrama de clases si la conecta a una clase que proporcione el código para los métodos de interfaz. El Diseñador de clases genera una implementación de interfaz y muestra la relación que existe entre la interfaz y la clase como una relación de herencia. Para implementar una interfaz, dibuje una línea de herencia entre la interfaz y la clase, o bien arrastre la interfaz desde la Vista de clases.  
@@ -44,14 +39,14 @@ En el Diseñador de clases, puede implementar una interfaz en el diagrama de cla
   
 ### <a name="to-implement-an-interface-from-the-class-view-window"></a>Para implementar una interfaz desde la ventana Vista de clases  
   
-1.  En el diagrama de clases, muestre la clase que quiere que implemente la interfaz.  
+1. En el diagrama de clases, muestre la clase que quiere que implemente la interfaz.  
   
-2.  Abra la Vista de clases y busque la interfaz.  
+2. Abra la Vista de clases y busque la interfaz.  
   
     > [!TIP]
-    >  Si la Vista de clases no está abierta, ábrala desde el menú **Ver**. Para obtener más información sobre la Vista de clases, vea [Ver clases y sus miembros](http://msdn.microsoft.com/en-us/71e9e8f3-261a-4e0c-87bf-5ec48b8bf333).  
+    >  Si la Vista de clases no está abierta, ábrala desde el menú **Ver**. Para obtener más información sobre la Vista de clases, vea [Ver clases y sus miembros](http://msdn.microsoft.com/71e9e8f3-261a-4e0c-87bf-5ec48b8bf333).  
   
-3.  Arrastre el nodo de interfaz a la forma de clase en el diagrama.  
+3. Arrastre el nodo de interfaz a la forma de clase en el diagrama.  
   
      Aparece un círculo conectado a la clase y una etiqueta con el nombre de interfaz identifica la relación de herencia. Visual Studio genera código auxiliar para todos los miembros de interfaz; en este momento, se implementa la interfaz.  
   
@@ -60,6 +55,3 @@ En el Diseñador de clases, puede implementar una interfaz en el diagrama de cla
  [Cómo: Ver los tipos existentes (Diseñador de clases)](../ide/how-to-view-existing-types-class-designer.md)   
  [Cómo: Crear la herencia entre tipos (Diseñador de clases)](../ide/how-to-create-inheritance-between-types-class-designer.md)   
  [Refactorización de clases y tipos (Diseñador de clases)](../ide/refactoring-classes-and-types-class-designer.md)
-
-
-

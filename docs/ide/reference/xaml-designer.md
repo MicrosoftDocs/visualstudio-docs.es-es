@@ -1,21 +1,20 @@
 ---
 title: Página de opciones del Diseñador XAML
 ms.date: 03/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.XAMLDesigner
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 2ef58fb7b1f58eb9d7618981251bdc7981142500
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: f56b6405935bd46c7f1e225ce587ed3d13e5fd34
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54315545"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55954727"
 ---
 # <a name="xaml-designer-options-page"></a>Página de opciones del Diseñador XAML
 

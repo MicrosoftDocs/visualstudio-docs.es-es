@@ -1,28 +1,27 @@
 ---
 title: Instalación de compatibilidad con Python
 description: Cómo instalar las Herramientas de Python para Visual Studio (PTVS) en Visual Studio 2017, 2015, 2013, 2012 y 2010, incluidas las opciones y las ubicaciones de instalación.
-ms.date: 12/06/2018
-ms.prod: visual-studio-dev15
+ms.date: 03/13/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3c59aee52ca547b4d209870516beb359d7138366
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ce4963f753498ff4c43b92b0b59fbfae25a45315
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53961756"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366243"
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>Instalación de la compatibilidad con Python en Visual Studio en Windows
 
 Para instalar la compatibilidad de Python para Visual Studio (también conocida como Herramientas de Python para Visual Studio o PTVS), siga las instrucciones que aparecen en la sección correspondiente a su versión de Visual Studio:
 
-- [Visual Studio 2017](#visual-studio-2017)
+- [Visual Studio 2017 y Visual Studio 2019](#visual-studio-2017-and-2019)
 - [Visual Studio 2015](#visual-studio-2015)
 - [Visual Studio 2013 y anterior](#visual-studio-2013-and-earlier)
 
@@ -34,32 +33,45 @@ Para probar rápidamente la compatibilidad de Python después de seguir los paso
 > [!Note]
 > La compatibilidad con Python no está actualmente disponible en Visual Studio para Mac, pero está disponible en Mac y Linux a través de Visual Studio Code. Consulte las [preguntas y respuestas](overview-of-python-tools-for-visual-studio.md#questions-and-answers).
 
-## <a name="visual-studio-2017"></a>Visual Studio 2017
+<a name="visual-studio-2017-and-2019"></a>
+## <a name="visual-studio-2019-and-visual-studio-2017"></a>Visual Studio 2019 y Visual Studio 2017
 
-1. Descargue y ejecute el instalador de Visual Studio 2017 más reciente. Si tiene Visual Studio ya instalado, ejecute el Instalador de Visual Studio, seleccione la opción **Modificar** (consulte [Modificar Visual Studio](../install/modify-visual-studio.md)) y vaya al paso 2.
+1. Descargue y ejecute el instalador de Visual Studio más reciente. Si tiene Visual Studio ya instalado, ejecute el Instalador de Visual Studio, seleccione la opción **Modificar** (consulte [Modificar Visual Studio](../install/modify-visual-studio.md)) y vaya al paso 2.
 
     > [!div class="nextstepaction"]
-    > [Instalar Visual Studio 2017 Community](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted)
+    > [Instalación de Visual Studio 2019 Community](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted)
 
     >[!Tip]
-    > La edición Community es para desarrolladores individuales, aprendizaje en el aula, investigación académica y desarrollo de código abierto. Para otros usos, instale [Visual Studio 2017 Professional](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Professional&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted) o [Visual Studio 2017 Enterprise](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted).
+    > La edición Community es para desarrolladores individuales, aprendizaje en el aula, investigación académica y desarrollo de código abierto. Para otros usos, instale [Visual Studio 2019 Professional](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Professional&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted) o [Visual Studio 2019 Enterprise](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted).
 
 1. El instalador muestra una lista de las cargas de trabajo, que son grupos de opciones relacionadas para áreas de desarrollo específicas. Para Python, seleccione la carga de trabajo **Desarrollo de Python**.
 
     ![Carga de trabajo de desarrollo de Python en el instalador de Visual Studio](media/installation-python-workload.png)
 
-    Opcional: si está trabajando con la ciencia de datos, considere también la posibilidad de la carga de trabajo **Aplicaciones de ciencia de datos y de análisis**. Esta carga de trabajo incluye compatibilidad con Python y también con los lenguajes R y F#. Para más información, vea [Carga de trabajo Aplicaciones de ciencia de datos y de análisis](../rtvs/data-science-and-analytical-applications-workload.md).
+    ::: moniker range="vs-2017"
+    Opcional: si está trabajando con la ciencia de datos, considere también la posibilidad de la carga de trabajo **Aplicaciones de ciencia de datos y de análisis**. Esta carga de trabajo incluye compatibilidad con los lenguajes Python, R y F#. Para más información, vea [Carga de trabajo Aplicaciones de ciencia de datos y de análisis](data-science-and-analytical-applications-workload.md).
 
     > [!Note]
     > Las cargas de trabajo de Python y Ciencia de datos solo están disponibles con Visual Studio 2017 versión 15.2 y posteriores.
+    ::: moniker-end
+
+    ::: moniker range=">=vs-2019"
+    Opcional: si está trabajando con la ciencia de datos, considere también la posibilidad de la carga de trabajo **Aplicaciones de ciencia de datos y de análisis**. Esta carga de trabajo incluye compatibilidad con los lenguajes Python y F#. Para más información, vea [Carga de trabajo Aplicaciones de ciencia de datos y de análisis](data-science-and-analytical-applications-workload.md).
+    ::: moniker-end
 
 1. En la parte derecha del instalador, puede elegir opciones adicionales si lo prefiere. Omita este paso para aceptar las opciones predeterminadas.
 
+    ::: moniker range="vs-2017"
     ![Opciones de desarrollo de Python en el instalador de Visual Studio](media/installation-python-options.png)
+    ::: moniker-end
+
+    ::: moniker range=">=vs-2019"
+    ![Opciones de desarrollo de Python en el instalador de Visual Studio 2019](media/installation-python-options-2019.png)
+    ::: moniker-end
 
     | Opción | Descripción |
     | --- | --- |
-    | Distribuciones de Python | Elija cualquier combinación de las variantes de 32 bits y 64 bits de las distribuciones de Python 2, Python 3, Anaconda2 y Anaconda3 con las que piensa trabajar. En todas se incluye el intérprete, el runtime y las bibliotecas de la distribución. Anaconda, en concreto, es una plataforma abierta de ciencia de datos que incluye una gran variedad de paquetes preinstalados. (Puede volver al instalador de Visual Studio en cualquier momento para agregar o quitar distribuciones).  **Nota**: Si ha instalado una distribución fuera del instalador de Visual Studio, no es necesario comprobar la opción equivalente aquí. Visual Studio detecta automáticamente las instalaciones existentes de Python. Vea [La ventana Entornos de Python](managing-python-environments-in-visual-studio.md#the-python-environments-window). Además, si hay una versión más reciente de Python que la que se muestra en el instalador, puede instalar esta versión por separado y Visual Studio la detectará. |
+    | Distribuciones de Python | Elija cualquier combinación de las opciones disponibles, como las variantes de 32 bits y 64 bits de las distribuciones de Python 2, Python 3, Miniconda, Anaconda2 y Anaconda3 con las que piensa trabajar. En todas se incluye el intérprete, el runtime y las bibliotecas de la distribución. Anaconda, en concreto, es una plataforma abierta de ciencia de datos que incluye una gran variedad de paquetes preinstalados. (Puede volver al instalador de Visual Studio en cualquier momento para agregar o quitar distribuciones).  **Nota**: Si ha instalado una distribución fuera del instalador de Visual Studio, no es necesario comprobar la opción equivalente aquí. Visual Studio detecta automáticamente las instalaciones existentes de Python. Vea [La ventana Entornos de Python](managing-python-environments-in-visual-studio.md#the-python-environments-window). Además, si hay una versión más reciente de Python que la que se muestra en el instalador, puede instalar esta versión por separado y Visual Studio la detectará. |
     | **Compatibilidad con plantillas de Cookiecutter** | Instala la interfaz de usuario gráfica de Cookiecutter para detectar plantillas, opciones de plantilla de entrada y crear proyectos y archivos. Vea [Uso de la extensión Cookiecutter](using-python-cookiecutter-templates.md). |
     | **Compatibilidad web con Python** | Instala herramientas para desarrollo web, incluida la compatibilidad de edición de HTML, CSS y JavaScript, junto con plantillas de proyectos que usan los marcos Bottle, Flask y Django. Vea [Plantillas de proyecto web de Python](python-web-application-project-templates.md). |
     | **Compatibilidad con IoT de Python** | Admite el desarrollo de Windows IoT Core con Python. |
@@ -69,10 +81,6 @@ Para probar rápidamente la compatibilidad de Python después de seguir los paso
 1. Después de la instalación, el instalador proporciona opciones para modificar, iniciar, reparar o desinstalar Visual Studio. El botón **Modificar** cambia a **Actualizar** cuando hay actualizaciones de Visual Studio disponibles para alguno de los componentes instalados. (Después, la opción **Modificar** está disponible en el menú desplegable). También puede iniciar Visual Studio y el instalador desde el menú **Inicio** de Windows mediante la búsqueda de "Visual Studio".
 
     ![Inicio, modificación o desinstalación de Visual Studio desde el instalador](media/installation-vs-launch.png)
-
-|   |   |
-|---|---|
-| ![icono de cámara de película para vídeo](../install/media/video-icon.png "Ver un vídeo") | [Vea un vídeo (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Installing-Visual-Studio-Python-Support-go1id3LWE_1705918567) sobre cómo instalar la compatibilidad de Python en Visual Studio.|
 
 ### <a name="troubleshooting"></a>Solución de problemas
 
@@ -110,7 +118,7 @@ Si encuentra problemas al instalar o ejecutar Python en Visual Studio, pruebe lo
 
 De forma predeterminada, la compatibilidad de Python se instala para todos los usuarios de un equipo.
 
-En Visual Studio 2017, la carga de trabajo de Python se instala en *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\\<VS_edition>Common7\IDE\Extensions\Microsoft\Python*, donde &lt;VS_edition&gt; es Community, Professional o Enterprise.
+En Visual Studio 2019 y Visual Studio 2017, la carga de trabajo de Python se instala en *%ProgramFiles(x86)%\Microsoft Visual Studio\\<VS_version>\\<VS_edition>Common7\IDE\Extensions\Microsoft\Python*, donde &lt;VS_version&gt; es 2019 o 2017 y &lt;VS_edition&gt; es Community, Professional o Enterprise.
 
 En Visual Studio 2015 y versiones anteriores, las rutas de instalación son las siguientes:
 

@@ -1,27 +1,22 @@
 ---
 title: Registro de VSPackage | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - registration, VSPackages
 - VSPackages, registering
 ms.assetid: ecd20da8-b04b-4141-a8f4-a2ef91dd597a
 caps.latest.revision: 19
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 30da9208df8c5b9b7c3368ef10fc85e55a994baa
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ec9bb626b44365dc27d46a235a1ee4895f3eb5c6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782029"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074563"
 ---
 # <a name="vspackage-registration"></a>Registro de VSPackage
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -52,17 +47,16 @@ Debe aconsejar VSPackages [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] que es
   
  Además de bueno en teoría, autorregistro tiene varios defectos que hacen que no son adecuados para la instalación de VSPackage:  
   
--   Admitir correctamente la instalación, desinstalación, reversión de la instalación y desinstalación rollback, deberá crear cuatro acciones personalizadas para cada VSPackage administrado que se registra automáticamente mediante una llamada a RegPkg.  
+- Admitir correctamente la instalación, desinstalación, reversión de la instalación y desinstalación rollback, deberá crear cuatro acciones personalizadas para cada VSPackage administrado que se registra automáticamente mediante una llamada a RegPkg.  
   
--   El enfoque para la compatibilidad en paralelo puede requerir que crear cuatro acciones personalizadas que invocan RegSvr32 o RegPkg para todas las versiones compatibles de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
+- El enfoque para la compatibilidad en paralelo puede requerir que crear cuatro acciones personalizadas que invocan RegSvr32 o RegPkg para todas las versiones compatibles de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
   
--   Una instalación con módulos registrados automáticamente no se puede revertir sin ningún riesgo porque no hay ninguna manera de indicar si se utilizan las claves autorregistrar por otra aplicación o característica.  
+- Una instalación con módulos registrados automáticamente no se puede revertir sin ningún riesgo porque no hay ninguna manera de indicar si se utilizan las claves autorregistrar por otra aplicación o característica.  
   
--   DLL autorregistrar a veces se vinculan a archivos DLL auxiliar que no están presentes o tienen una versión incorrecta. En cambio, Windows Installer puede registrar la DLL mediante las tablas de registro sin ninguna dependencia con el estado actual del sistema.  
+- DLL autorregistrar a veces se vinculan a archivos DLL auxiliar que no están presentes o tienen una versión incorrecta. En cambio, Windows Installer puede registrar la DLL mediante las tablas de registro sin ninguna dependencia con el estado actual del sistema.  
   
--   Código de registro automático se puede denegar el acceso a recursos de red, como bibliotecas de tipos, si es un componente especificado como la ejecución desde origen tanto se muestra en la tabla SelfReg. Esto puede causar la instalación del componente a un error durante una instalación administrativa.  
+- Código de registro automático se puede denegar el acceso a recursos de red, como bibliotecas de tipos, si es un componente especificado como la ejecución desde origen tanto se muestra en la tabla SelfReg. Esto puede causar la instalación del componente a un error durante una instalación administrativa.  
   
 ## <a name="see-also"></a>Vea también  
  [Windows Installer](http://msdn.microsoft.com/library/cc185688\(VS.85\).aspx)   
- [Registro de paquetes administrados](http://msdn.microsoft.com/en-us/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)
-
+ [Registro de paquetes administrados](http://msdn.microsoft.com/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)

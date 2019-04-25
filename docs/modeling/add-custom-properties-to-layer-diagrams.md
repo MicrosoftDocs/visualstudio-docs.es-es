@@ -6,16 +6,15 @@ helpviewer_keywords:
 - dependency diagrams, adding custom properties
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 407db46519872d8f1c4e6eba79ddd5ca84610d70
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0c4639b5e2edcfebd05dcc6511102c0369b4b3e1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53892243"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066096"
 ---
 # <a name="add-custom-properties-to-dependency-diagrams"></a>Agregar propiedades personalizadas a diagramas de dependencia
 
@@ -23,7 +22,7 @@ Al escribir código de extensión para diagramas de dependencia, puede almacenar
 
 ## <a name="non-visible-properties"></a>Propiedades no visibles
 
-Si desea que el código asocie valores a cualquier elemento en un diagrama de dependencia, no es necesario definir un componente MEF. Hay un diccionario denominado `Properties` en <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement>. Solo tiene que agregar valores que calculan referencias al diccionario de cualquier elemento de capa. Se guardará como parte del diagrama de dependencia. Para obtener más información, consulte [navegación y actualización de modelos en el código de programa capa](../modeling/navigate-and-update-layer-models-in-program-code.md).
+Si desea que el código asocie valores a cualquier elemento en un diagrama de dependencia, no es necesario definir un componente MEF. Hay un diccionario denominado `Properties` en <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement>. Solo tiene que agregar valores que calculan referencias al diccionario de cualquier elemento de capa. Se guardará como parte del diagrama de dependencia.
 
 ## <a name="editable-properties"></a>Propiedades editables
 
@@ -38,6 +37,7 @@ Si desea que el código asocie valores a cualquier elemento en un diagrama de de
 >     ```xml
 >     <MefComponent>Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.Provider.dll</MefComponent>
 >     ```
+>
 > 3. En el **Visual Studio Tools** sección del menú de inicio de aplicación de Visual Studio, abrirlo **símbolo**. Especifique:
 >
 >      `devenv /rootSuffix /updateConfiguration`
@@ -63,15 +63,15 @@ public class MyProperty : PropertyExtension<ILayerElement>
 
 Puede definir propiedades en <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement> o cualquiera de sus clases derivadas, entre las que se incluyen:
 
--   `ILayerModel`: el modelo
+- `ILayerModel`: el modelo
 
--   `ILayer`: cada capa
+- `ILayer`: cada capa
 
--   `ILayerDependencyLink`: los vínculos entre las capas
+- `ILayerDependencyLink`: los vínculos entre las capas
 
--   `ILayerComment`
+- `ILayerComment`
 
--   `ILayerCommentLink`
+- `ILayerCommentLink`
 
 ## <a name="example"></a>Ejemplo
 

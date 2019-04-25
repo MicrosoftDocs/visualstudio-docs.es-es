@@ -1,23 +1,20 @@
 ---
 title: Dirige la referencia de Graph Markup Language (DGML) | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 ms.assetid: cc3e4ae7-60fa-4e22-9227-98020b480b73
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: f352d87975bf2c9705b348b465215a0a9fe72f2a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9330a41d0888532640774891386011f6b8dbfc24
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51790895"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106025"
 ---
 # <a name="directed-graph-markup-language-dgml-reference"></a>Referencia de Directed Graph Markup Language (DGML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +26,7 @@ El formato DGML (Directed Graph Markup Language) describe la información que se
 > [!NOTE]
 >  Al editar un archivo .dgml, IntelliSense le ayuda a identificar los atributos disponibles para cada elemento y sus valores. Para especificar color en un atributo, use nombres para los colores comunes, como "Blue", o valores hexadecimales de ARGB, como "#ffa0b1c3". DGML emplea un pequeño subconjunto de los formatos de definición de color de Windows Presentation Foundation (WPF). Para obtener más información, consulte [clase Colors](http://go.microsoft.com/fwlink/?LinkId=182345).  
   
-##  <a name="DGML"></a> Sintaxis DGML  
+## <a name="DGML"></a> Sintaxis DGML  
  En la tabla siguiente se describen los tipos de elementos que se emplean en DGML:  
   
 - `<DirectedGraph></DirectedGraph>`  
@@ -305,7 +302,7 @@ El formato DGML (Directed Graph Markup Language) describe la información que se
   </DirectedGraph>  
   ```  
   
-###  <a name="AddAlias"></a> Alias para rutas de acceso usadas con frecuencia  
+### <a name="AddAlias"></a> Alias para rutas de acceso usadas con frecuencia  
  El reemplazo de rutas de acceso usadas con frecuencia con alias ayuda a reducir el tamaño del archivo .dgml y el tiempo necesario para cargar o guardar el archivo. Para crear un alias, agregue una sección `<Paths></Paths>` al final del archivo .dgml. En esta sección, agregue un elemento `<Path/>` para definir un alias para la ruta de acceso:  
   
 ```xml  
@@ -329,6 +326,3 @@ El formato DGML (Directed Graph Markup Language) describe la información que se
  [Asignar dependencias en sus soluciones](../modeling/map-dependencies-across-your-solutions.md)   
  [Usar mapas de código para depurar sus aplicaciones](../modeling/use-code-maps-to-debug-your-applications.md)   
  [Buscar posibles problemas mediante analizadores de mapas de código](../modeling/find-potential-problems-using-code-map-analyzers.md)
-
-
-

@@ -1,25 +1,24 @@
 ---
 title: Procedimiento Guardar y abrir archivos con codificación
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
-- Unicode, bi-directional language support
+- Unicode, bidirectional language support
 - files, encoding
-- bi-directional language support, encoded files
-- file encoding, bi-directional languages
+- bidirectional language support, encoded files
+- file encoding, bidirectional languages
 ms.assetid: cb52b732-b395-4ba1-a3ef-104b3942a12a
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 38d52cdee3ee0f6ccbdd378e4fb70e356d5826c2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 484a891c83796f58c7ed8d6053c51189b2448bb9
+ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53869575"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56449910"
 ---
 # <a name="how-to-save-and-open-files-with-encoding"></a>Procedimiento Guardar y abrir archivos con codificación
 

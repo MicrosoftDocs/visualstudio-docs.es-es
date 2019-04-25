@@ -1,26 +1,29 @@
 ---
 title: Selección e instalación de intérpretes de Python
 description: Una lista completa de los intérpretes de Python compatibles con Visual Studio, con instrucciones breves sobre dónde encontrar sus instaladores.
-ms.date: 12/06/2018
-ms.prod: visual-studio-dev15
+ms.date: 03/13/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 60a3aff0cf0a5803cfc60b0215ca1f3cda44cef4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8e7648496e85b35d4f97fc9c85dc0bce6d17000e
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53905233"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59365228"
 ---
 # <a name="install-python-interpreters"></a>Instalación de intérpretes de Python
 
-De forma predeterminada, la instalación de la carga de trabajo de desarrollo de Python en Visual Studio de 2017 también instala Python 3 (64 bits). Puede optar por instalar las versiones de 32 bits y 64 bits de Python 2, Python 3, Anaconda 2 y Anaconda 3, como se describe en [Instalación](installing-python-support-in-visual-studio.md).
+De manera predeterminada, la instalación de la carga de trabajo de desarrollo de Python en Visual Studio de 2017 y versiones posteriores también instala Python 3 (64 bits). De manera opcional, puede optar por instalar versiones de Python 2 y Python 3 de 32 y 64 bits, junto con Miniconda (Visual Studio 2019) o Anaconda2/Anaconda 3 (Visual Studio 2017), tal como se describe en [Instalación](installing-python-support-in-visual-studio.md).
+
+::: moniker range=">=vs-2019"
+Como alternativa, puede instalar intérpretes de Python estándar desde el cuadro de diálogo **Agregar entorno**. Seleccione el comando **Agregar entorno** en la ventana **Entornos de Python** o la barra de herramientas de Python, seleccione la pestaña **Instalación de Python**, indique los intérpretes que se van a instalar y seleccione **Instalar**.
+::: moniker-end
 
 También puede instalar manualmente cualquiera de los intérpretes que aparecen en la tabla siguiente fuera del Instalador de Visual Studio. Por ejemplo, si instaló Anaconda 3 antes de instalar Visual Studio, no necesita volver a instalarlo mediante el instalador de Visual Studio. También puede instalar un intérprete manualmente si, por ejemplo, hay una versión más reciente disponible que todavía no aparece en el instalador de Visual Studio.
 

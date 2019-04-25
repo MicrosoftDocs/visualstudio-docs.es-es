@@ -1,7 +1,6 @@
 ---
 title: Establecer base (Comando)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - debug.setradix
@@ -11,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 6ffd1554-7530-4da4-b5f5-e276a5034f3b
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 93172b8ed16e2520c060671d12ef0ab35960f6ad
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 70b61dff4ebe7486c2e04e4fd3061cd4110feca1
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53829413"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55938402"
 ---
 # <a name="set-radix-command"></a>Establecer base (Comando)
 Establece o devuelve la base numérica que se ha usado para mostrar valores enteros.

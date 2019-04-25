@@ -1,7 +1,6 @@
 ---
 title: 'CA1305: Especificar IFormatProvider'
 ms.date: 06/30/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - SpecifyIFormatProvider
@@ -12,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: fb34ed9a-4eab-47cc-8eef-3068a4a1397e
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: fea236a51b8bde5171c91ad1935d4168dfabd94a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b96ca08b51bb5145357ef921bde753e133062203
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53954242"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868022"
 ---
 # <a name="ca1305-specify-iformatprovider"></a>CA1305: Especificar IFormatProvider
 
@@ -86,4 +85,4 @@ string example3 = FormattableString.Invariant($"Hello {name}");
 
 ## <a name="see-also"></a>Vea también
 
-- [Uso de la clase CultureInfo](/dotnet/standard/globalization-localization/globalization#Cultures)
+- [Uso de la clase CultureInfo](/dotnet/standard/globalization-localization/globalization#work-with-culture-specific-settings)

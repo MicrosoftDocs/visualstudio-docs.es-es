@@ -1,7 +1,6 @@
 ---
-title: Procedimiento Crear tipos con el Diseñador de clases
+title: Filtrar Crear tipos con el Diseñador de clases
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - VS.Clr.ClrAttributesDialog
@@ -15,17 +14,17 @@ helpviewer_keywords:
 ms.assetid: 94458c31-28bc-40e2-9737-85868788a0e5
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 131c09b170e86858d8a2855092404208fe06fa91
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 28d4fbcd5581a2cbc860d90a6ba5557c9156cba7
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53916473"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55919649"
 ---
-# <a name="how-to-create-types-by-using-class-designer"></a>Procedimiento Crear tipos con el Diseñador de clases
+# <a name="how-to-create-types-by-using-class-designer"></a>Filtrar Crear tipos con el Diseñador de clases
 
 Para diseñar nuevos tipos para proyectos de C# y Visual Basic, créelos en un diagrama de clases. Para visualizar los tipos existentes, vea [Cómo: Ver tipos existentes](how-to-view-existing-types.md).
 

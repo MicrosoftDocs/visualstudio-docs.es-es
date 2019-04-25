@@ -1,29 +1,26 @@
 ---
-title: Procedimiento Aplicar automáticamente las claves de producto durante la implementación de Visual Studio 2015 | Microsoft Docs
+title: Aplicación automática de las claves de producto durante la implementación de Visual Studio 2015 | Microsoft Docs
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-install
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: d79260be-6234-4fd3-89b5-a9756b4a93c1
 caps.latest.revision: 11
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.openlocfilehash: 1dd9127895a375ae02e6d4f18bae0a09bef494bb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: ec050cf8f365bfae2290593a0c7f215dcb2f39cc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942049"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656731"
 ---
-# <a name="how-to-automatically-apply-product-keys-when-deploying-visual-studio"></a>Procedimiento Aplicación automática de claves de producto durante la implementación de Visual Studio
+# <a name="how-to-automatically-apply-product-keys-when-deploying-visual-studio"></a>Cómo: aplicar automáticamente las claves de producto durante la implementación de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Para obtener la documentación más reciente de Visual Studio 2017, consulte [aplicar automáticamente las claves de producto durante la implementación de Visual Studio](/visualstudio/install/automatically-apply-product-keys-when-deploying-visual-studio).
+Para obtener la documentación más reciente de Visual Studio, consulte [Aplicación automática de claves de producto durante la implementación de Visual Studio](/visualstudio/install/automatically-apply-product-keys-when-deploying-visual-studio).
 
 Puede aplicar la clave de producto mediante programación como parte de un script usado para automatizar la implementación de Visual Studio 2015. Las claves de producto se pueden establecer en un dispositivo mediante programación durante la instalación de Visual Studio o después de completar una instalación.
 
@@ -57,9 +54,10 @@ Puede aplicar la clave de producto mediante programación como parte de un scrip
 |Visual Studio Professional 2013|06177|
 |Visual Studio Test Professional 2013|06194|
 
- Para obtener más información sobre cómo obtener una clave de producto, consulte [Cómo: Busque la clave de producto de Visual Studio](../install/how-to-locate-the-visual-studio-product-key.md).
+Para más información sobre cómo obtener una clave de producto, vea [Encontrar la clave de producto de Visual Studio](../install/how-to-locate-the-visual-studio-product-key.md).
 
- Si StorePID.exe aplicó correctamente la clave del producto, devolverá 0. Si encuentra errores, devolverá un número comprendido entre 1 y 6.
+Si StorePID.exe aplicó correctamente la clave del producto, devolverá 0. Si encuentra errores, devolverá un número comprendido entre 1 y 6.
 
 ## <a name="see-also"></a>Vea también
- [Instalar Visual Studio](../install/install-visual-studio-2015.md)
+
+- [Instalar Visual Studio](../install/install-visual-studio-2015.md)

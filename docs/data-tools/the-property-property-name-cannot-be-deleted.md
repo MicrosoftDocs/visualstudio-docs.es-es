@@ -5,16 +5,15 @@ ms.topic: reference
 ms.assetid: 55873f74-7834-4ec1-8815-eeeb65618d87
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 73e3443c5af145934de15f674213ea5bd01384d1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4b1e0652d19b10b1d1ede7b1b950d89ca1bf670c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53951672"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55939650"
 ---
 # <a name="the-property-property-name-cannot-be-deleted"></a>No se puede eliminar la propiedad \<nombre de propiedad>
 

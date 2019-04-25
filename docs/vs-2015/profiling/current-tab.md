@@ -1,14 +1,9 @@
 ---
 title: Pestaña Actual | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.reportnav.current
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 2c7b1ae5-3756-4795-bc59-f6bb113f2ba5
 caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 0731118ae3e14d319507851005e4d15a2c2c4ffa
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b3c901803d8ab2b35624d185e62588c72a3586ca
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51726731"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54787909"
 ---
 # <a name="current-tab"></a>Pestaña actual
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,6 +29,3 @@ Si hace clic en la pestaña **Actual**, puede ver una pila de llamadas (si está
   
 ## <a name="see-also"></a>Vea también  
  [Vista de subprocesos](../profiling/threads-view-parallel-performance.md)
-
-
-

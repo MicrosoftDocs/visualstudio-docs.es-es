@@ -1,14 +1,9 @@
 ---
 title: Introducción a aplicaciones internacionales basadas en .NET Framework | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - strings [Visual Studio], localizing
 - Web applications [.NET Framework], globalization
@@ -30,13 +25,13 @@ ms.assetid: b0788993-e62d-4f68-8235-5f87b1d48525
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 3d1539d832b67a160e29b22b71066f72609e35b8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 86ca63ead6b2014dfe0d90d496ef4b7d7efe7f63
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49270047"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54784805"
 ---
 # <a name="introduction-to-international-applications-based-on-the-net-framework"></a>Introducción a aplicaciones internacionales basadas en .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,4 +53,3 @@ En [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], hay dos partes para crear una a
  <xref:System.Resources>   
  [Globalizar y localizar aplicaciones](../ide/globalizing-and-localizing-applications.md)   
  [Seguridad y ensamblados satélite localizados](../ide/security-and-localized-satellite-assemblies.md)
-

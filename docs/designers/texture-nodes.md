@@ -1,20 +1,19 @@
 ---
 title: Nodos de textura
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 ms.assetid: b7df5ef3-dd4f-4964-9d96-34e0e180515e
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 858857dae187174a70740a91063943383526def9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 73f5bfe71866422cd3717c2a29f1eeb48d15cc76
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53830760"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55911018"
 ---
 # <a name="texture-nodes"></a>Nodos de textura
 

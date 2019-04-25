@@ -1,26 +1,27 @@
 ---
 title: Carga de un subconjunto de proyectos
 ms.date: 12/04/2018
-ms.topic: conceptual
 ms.prod: visual-studio-dev16
+ms.topic: conceptual
 helpviewer_keywords:
 - filtered solution
 - solution filtering
 author: gewarren
 ms.author: stsu
-manager: douge
-ms.openlocfilehash: 689f0f2c4ba6d6b8e2e94c2b7982604b1d444745
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+monikerRange: '>= vs-2019'
+ms.openlocfilehash: 67ebbd94298c3325560b64945bed51c09db93833
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53822802"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983889"
 ---
 # <a name="filtered-solutions-in-visual-studio"></a>Soluciones filtradas en Visual Studio
 
-**Novedades de Visual Studio 2019 Preview 1**
+**Novedades de Visual Studio 2019**
 
-Los equipos grandes de desarrollo suelen colaborar mediante una sola solución de gran tamaño con muchos proyectos. Sin embargo, los desarrolladores individuales normalmente trabajan en un pequeño subconjunto de estos proyectos. Para mejorar el rendimiento al abrir soluciones de gran tamaño, Visual Studio 2019 Preview 1 presenta el *filtrado de soluciones*. El filtrado de soluciones permite abrir una solución únicamente con proyectos selectivos cargados. El hecho de cargar un subconjunto de proyectos en una solución reduce el tiempo de carga, compilación y pruebas de la solución, y permite una revisión más específica.
+Los equipos grandes de desarrollo suelen colaborar mediante una sola solución de gran tamaño con muchos proyectos. Sin embargo, los desarrolladores individuales normalmente trabajan en un pequeño subconjunto de estos proyectos. Para mejorar el rendimiento al abrir soluciones de gran tamaño, Visual Studio 2019 presenta el *filtrado de soluciones*. El filtrado de soluciones permite abrir una solución únicamente con proyectos selectivos cargados. El hecho de cargar un subconjunto de proyectos en una solución reduce el tiempo de carga, compilación y pruebas de la solución, y permite una revisión más específica.
 
 A continuación se enumeran las características disponibles:
 
@@ -36,7 +37,7 @@ Para abrir una solución con solo algunos de los proyectos cargados, siga estos 
 
 1. Elija **Archivo** > **Abrir** > **Proyecto o solución** en la barra de menús.
 
-2. En el cuadro de diálogo **Nuevo proyecto**, seleccione la solución y, a continuación, seleccione **No cargar los proyectos**.
+2. En el cuadro de diálogo **Abrir proyecto**, seleccione la solución y, a continuación, seleccione **No cargar los proyectos**.
 
    ![Cuadro de diálogo Abrir proyecto de Visual Studio con la opción para no cargar proyectos seleccionada](media/filtered-solutions/do-not-load-projects.png)
 

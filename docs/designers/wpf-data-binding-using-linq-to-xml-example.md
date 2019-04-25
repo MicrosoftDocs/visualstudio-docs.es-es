@@ -1,20 +1,19 @@
 ---
 title: Ejemplo de enlace de datos WPF utilizando LINQ to XML
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 8e90b252-646e-4449-a898-5f03e40df87d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 80d5e7d679971034f8c1b60a82d7a63911a81971
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6407102230141ab75e819f32f03eb6acad94a004
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53945592"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55951649"
 ---
 # <a name="wpf-data-binding-using-linq-to-xml-example"></a>Ejemplo de enlace de datos WPF mediante LINQ to XML
 

@@ -1,30 +1,24 @@
 ---
 title: Personalización de archivos de proyecto creados por VSTU | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- tgt-pltfrm-cross-plat
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: tgt-pltfrm-cross-plat
+ms.topic: conceptual
 ms.assetid: 60b8cc1d-cacc-404d-b768-77e81bc354f8
 caps.latest.revision: 4
 author: conceptdev
 ms.author: crdun
-manager: ghogen
-ms.openlocfilehash: 51e03c97326409b4c793c48e6c151b059ad38e89
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 744e7d89827e169579953474c9e7b37f2dcc653f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51768086"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660515"
 ---
 # <a name="customize-project-files-created-by-vstu"></a>Personalizar archivos de proyecto creados por VSTU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Visual Studio Tools para Unity ofrece una devolución de llamada al estilo de Unity durante la generación del archivo de proyecto. Regístrese con el evento `VisualStudioIntegration.ProjectFileGeneration` para modificar el archivo de proyecto cada vez que se vuelve a generar.  
   
 ## <a name="demonstrates"></a>Demostraciones  
@@ -76,4 +70,3 @@ public class ProjectFileHook
   
 ## <a name="see-also"></a>Vea también  
  [Ejemplo: Devolución de llamada de registro](../cross-platform/share-the-unity-log-callback-with-vstu.md)
-

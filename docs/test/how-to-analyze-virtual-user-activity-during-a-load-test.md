@@ -7,16 +7,15 @@ helpviewer_keywords:
 ms.assetid: 8bda19b3-91c1-4daf-b6c7-09108bddadff
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 714e38e6bf0ca97e683eda6e5cd6303b9f1160fa
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 384e742a4d9e61133f2f3b2cdcf713057704317a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53875276"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55917498"
 ---
-# <a name="how-to-analyze-what-virtual-users-are-doing-during-a-load-test-using-the-virtual-user-activity-chart"></a>Procedimiento para analizar lo que hacen los usuarios virtuales durante una prueba de carga mediante el diagrama de actividad de usuarios virtuales
+# <a name="how-to-analyze-what-virtual-users-are-doing-during-a-load-test-using-the-virtual-user-activity-chart"></a>Filtrar para analizar lo que hacen los usuarios virtuales durante una prueba de carga mediante el diagrama de actividad de usuarios virtuales
 
 Vea ver la actividad de usuario virtual que está asociada a la prueba de carga mediante el **Diagrama de actividad del usuario virtual**. Cada fila del diagrama representa un usuario virtual individual. El **Diagrama de actividad del usuario virtual** muestra exactamente qué estaba ejecutando cada usuario virtual durante la prueba. Puede ver patrones de actividad de los usuarios, modelos de carga, poner en correlación pruebas con errores o lentas y ver solicitudes con otra actividad de usuarios virtuales. El **Diagrama de actividad del usuario virtual** solamente está disponible cuando una prueba de carga termina de ejecutarse.
 

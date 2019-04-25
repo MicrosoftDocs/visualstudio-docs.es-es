@@ -1,27 +1,22 @@
 ---
 title: Pestaña de mensajes, el cuadro de diálogo Opciones de mensaje | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - message options, Messages
 ms.assetid: fb9fa211-e82c-40a5-9e4b-ba8de07313c0
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: b44a5932d178fe8432273038d677f5831d568146
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a9eb1c88d935fa307e8b86a9a75da423bc08111c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51793950"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58987973"
 ---
 # <a name="messages-tab-message-options-dialog-box"></a>Pestaña Mensajes (Cuadro de diálogo Opciones de mensaje)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ Use la **mensajes** tab para seleccionar qué tipos de mensaje a la lista en [vi
   
  Las siguientes opciones están disponibles en el **mensajes** pestaña:  
   
- **Mensajes a la vista**  
+ **Mensajes que se quieren ver**  
  Seleccione mensajes específicos para su visualización. Cuando se crea una nueva ventana de mensajes, puede mostrar todos los mensajes. Cuando se filtra los mensajes de la **mensajes** ficha, dicho filtro sólo se aplica a los nuevos mensajes, no de los mensajes que ya se han mostrado en la vista de Windows.  
   
  **Grupos de mensajes**  
@@ -50,6 +45,3 @@ Use la **mensajes** tab para seleccionar qué tipos de mensaje a la lista en [vi
   
   **Guardar configuración como predeterminada**  
   Guardar la configuración actual para su uso posterior como opciones de búsqueda de mensajes. Esta configuración también se guarda al salir de Spy ++.
-
-
-

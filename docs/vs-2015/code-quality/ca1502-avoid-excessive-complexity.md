@@ -1,14 +1,9 @@
 ---
-title: 'CA1502: Evite la excesiva complejidad | Microsoft Docs'
-ms.custom: ''
+title: 'CA1502: Evite la excesiva complejidad | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - AvoidExcessiveComplexity
 - CA1502
@@ -20,14 +15,14 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: b582d4679aee10010741994117b8b17f47b23aa5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e1885a07f4c9edbbdea9be4f0e74aaf8e4d3a6f9
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49890587"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58988011"
 ---
-# <a name="ca1502-avoid-excessive-complexity"></a>CA1502: Evite la excesiva complejidad
+# <a name="ca1502-avoid-excessive-complexity"></a>CA1502: Evitar una complejidad excesiva
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -99,6 +94,3 @@ ms.locfileid: "49890587"
 
 ## <a name="see-also"></a>Vea también
  [Medir la complejidad y el mantenimiento del código administrado](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)
-
-
-

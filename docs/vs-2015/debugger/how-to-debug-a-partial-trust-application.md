@@ -1,14 +1,9 @@
 ---
-title: 'Cómo: depurar una aplicación de confianza parcial | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Depurar una aplicación de confianza parcial | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -22,15 +17,15 @@ ms.assetid: 9d30ad92-28ce-4b21-91d8-698474cddf64
 caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 76cce8cfcf57f956b5de16b72f7a275e1d629630
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8340867406e99fd6c6f84d1dc84d89a395a338fb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782055"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106870"
 ---
-# <a name="how-to-debug-a-partial-trust-application"></a>Cómo: Depurar una aplicación de confianza parcial
+# <a name="how-to-debug-a-partial-trust-application"></a>Procedimiento Depurar una aplicación de confianza parcial
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Se aplica a Windows y aplicaciones de consola.  
@@ -50,45 +45,42 @@ Se aplica a Windows y aplicaciones de consola.
   
 ### <a name="to-choose-a-zone-for-your-partial-trust-application"></a>Para elegir una zona para la aplicación de confianza parcial  
   
-1.  Desde el **proyecto** menú, elija _Projectname_**propiedades**.  
+1. Desde el **proyecto** menú, elija _Projectname_**propiedades**.  
   
-2.  En el *Projectname* páginas de propiedades, haga clic en el **seguridad** página.  
+2. En el *Projectname* páginas de propiedades, haga clic en el **seguridad** página.  
   
-3.  Seleccione **habilitar la configuración de seguridad de ClickOnce**.  
+3. Seleccione **habilitar la configuración de seguridad de ClickOnce**.  
   
-4.  En **zona desde la que se instalará la aplicación**, haga clic en el cuadro de lista desplegable y elija la zona que desea simular la aplicación se instala del.  
+4. En **zona desde la que se instalará la aplicación**, haga clic en el cuadro de lista desplegable y elija la zona que desea simular la aplicación se instala del.  
   
      El **los permisos requeridos por la aplicación** cuadrícula muestra todos los permisos disponibles. La marca de verificación indica los permisos concedidos a la aplicación.  
   
-5.  Si la zona elegida es **(personalizada)**, seleccione la configuración personalizada correcta en el **configuración** columna de la **permisos** cuadrícula.  
+5. Si la zona elegida es **(personalizada)**, seleccione la configuración personalizada correcta en el **configuración** columna de la **permisos** cuadrícula.  
   
-6.  Haga clic en **Aceptar** para cerrar las páginas de propiedades.  
+6. Haga clic en **Aceptar** para cerrar las páginas de propiedades.  
   
 ### <a name="to-add-an-extra-permission-when-a-security-exception-occurs"></a>Para agregar un permiso adicional cuando se produce una excepción de seguridad  
   
-1.  El **Asistente de excepciones** aparece el cuadro de diálogo con el mensaje: **se controló la excepción SecurityException.**  
+1. El **Asistente de excepciones** aparece el cuadro de diálogo con el mensaje: **No se controló SecurityException.**  
   
-2.  En el **Asistente de excepciones** cuadro de diálogo **acciones**, haga clic en **agregar permisos al proyecto**.  
+2. En el **Asistente de excepciones** cuadro de diálogo **acciones**, haga clic en **agregar permisos al proyecto**.  
   
-3.  El **reiniciar depuración** aparece el cuadro de diálogo.  
+3. El **reiniciar depuración** aparece el cuadro de diálogo.  
   
-    -   Si desea reiniciar la sesión de depuración con el nuevo permiso, haga clic en **Sí**.  
+    - Si desea reiniciar la sesión de depuración con el nuevo permiso, haga clic en **Sí**.  
   
-    -   Si no desea reiniciar todavía, haga clic en **No**.  
+    - Si no desea reiniciar todavía, haga clic en **No**.  
   
 ### <a name="to-view-extra-permissions-added-while-debugging"></a>Para ver permisos adicionales agregados durante la depuración  
   
-1.  Desde el **proyecto** menú, elija _Projectname_**propiedades**.  
+1. Desde el **proyecto** menú, elija _Projectname_**propiedades**.  
   
-2.  En el *Projectname* páginas de propiedades, haga clic en el **seguridad** página.  
+2. En el *Projectname* páginas de propiedades, haga clic en el **seguridad** página.  
   
-3.  Examine el **los permisos requeridos por la aplicación** cuadrícula. Los permisos adicionales agregados presentan dos iconos en el **incluidos** columna: la marca de verificación normal, que incluye todos los permisos y un icono adicional, que se parece a un globo que contiene la letra "i".  
+3. Examine el **los permisos requeridos por la aplicación** cuadrícula. Los permisos adicionales agregados presentan dos iconos en el **incluidos** columna: la marca de verificación normal, que incluye todos los permisos y un icono adicional, que se parece a un globo que contiene la letra "i".  
   
-4.  Use la barra de desplazamiento vertical para ver toda la **los permisos requeridos por la aplicación** cuadrícula.  
+4. Use la barra de desplazamiento vertical para ver toda la **los permisos requeridos por la aplicación** cuadrícula.  
   
 ## <a name="see-also"></a>Vea también  
  [Seguridad e implementación ClickOnce](../deployment/clickonce-security-and-deployment.md)   
  [Seguridad del depurador](../debugger/debugger-security.md)
-
-
-

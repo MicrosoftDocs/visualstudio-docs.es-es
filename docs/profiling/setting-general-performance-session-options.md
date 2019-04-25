@@ -6,15 +6,15 @@ f1_keywords:
 - vs.performance.property.general
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b3dce2f53ef0e16563ff73d188e5d475c42bf0fb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0395f58d9e4cf700784ee632dc860823cd50e11f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53896414"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56624963"
 ---
 # <a name="set-general-performance-session-options"></a>Establecer opciones generales de sesión de rendimiento
 
@@ -27,8 +27,8 @@ El método de recolección base se establece mediante la selección de una opci�
 |||
 |-|-|
 |**Muestreo**. El método de muestreo recopila información de generación de perfiles a intervalos regulares. Este método es útil para buscar problemas de utilización del procesador y es el método sugerido para iniciar la mayoría de las investigaciones de rendimiento.|- [Recopilar estadísticas de rendimiento mediante el muestreo](../profiling/collecting-performance-statistics-by-using-sampling.md)|
-|**Instrumentación**. El método de instrumentación inserta en una copia de un módulo código de generación de perfiles que graba cada entrada, salida y llamada de función de las funciones del módulo durante una ejecución de generación de perfiles. Este método es útil para recopilar información de tiempo detallada sobre una sección del código y para entender el impacto de las operaciones de entrada y salida en el rendimiento de la aplicación.|- [Recopilar datos de control de tiempo detallados mediante la instrumentación](../profiling/collecting-detailed-timing-data-by-using-instrumentation.md)|
-|**Simultaneidad**. El método de simultaneidad recopila datos de cada evento que bloquea la ejecución del código, como sucede cuando un subproceso espera que se libere el acceso bloqueado a un recurso de aplicación. Este método es útil para analizar aplicaciones multiproceso.|- [Recopilar datos de simultaneidad de procesos y subprocesos](../profiling/collecting-thread-and-process-concurrency-data.md)|
+|**Instrumentación**. El método de instrumentación inserta en una copia de un módulo código de generación de perfiles que graba cada entrada, salida y llamada de función de las funciones del módulo durante una ejecución de generación de perfiles. Este método es útil para recopilar información de tiempo detallada sobre una sección de su código y entender el impacto de las operaciones de entrada y salida en el rendimiento de la aplicación.|- [Recopilar datos de control de tiempo detallados mediante la instrumentación](../profiling/collecting-detailed-timing-data-by-using-instrumentation.md)|
+|**Simultaneidad**. El método de simultaneidad recopila datos de cada evento que bloquea la ejecución de su código, por ejemplo, cuando un subproceso espera a que se libere el acceso bloqueado a un recurso de aplicación. Este método es útil para analizar aplicaciones multiproceso.|- [Recopilar datos de simultaneidad de procesos y subprocesos](../profiling/collecting-thread-and-process-concurrency-data.md)|
 
  Puede recopilar datos de memoria de .NET mediante los métodos de muestreo o instrumentación. El tipo de datos se selecciona en **Generación de perfiles de memoria de .NET**.
 

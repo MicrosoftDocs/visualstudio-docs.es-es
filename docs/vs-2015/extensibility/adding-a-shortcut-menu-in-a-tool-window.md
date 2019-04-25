@@ -1,14 +1,9 @@
 ---
 title: Adición de un menú contextual en una ventana de herramientas | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - context menus, adding to tool windows
 - menus, context menus
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: 50234537-9e95-4b7e-9cb7-e5cf26d6e9d2
 caps.latest.revision: 38
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 179a103475a47be95cbf45f88640b8a635a7ff34
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 604e5792c17e1458faccfd6518ab8cd5e7e303f2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51796225"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093740"
 ---
 # <a name="adding-a-shortcut-menu-in-a-tool-window"></a>Adición de un menú contextual en una ventana de herramientas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,12 +36,12 @@ En este tutorial, se coloca un menú contextual en una ventana de herramientas. 
   
 ## <a name="creating-the-tool-window-shortcut-menu-package"></a>Crear el paquete de menú de acceso directo de ventana de herramienta  
   
-1.  Cree un proyecto VSIX denominado `TWShortcutMenu` y agregar una plantilla de la ventana de herramienta denominada **menú contextual** a él. Para obtener más información sobre la creación de una ventana de herramientas, consulte [crear una extensión con una ventana de herramientas](../extensibility/creating-an-extension-with-a-tool-window.md).  
+1. Cree un proyecto VSIX denominado `TWShortcutMenu` y agregar una plantilla de la ventana de herramienta denominada **menú contextual** a él. Para obtener más información sobre la creación de una ventana de herramientas, consulte [crear una extensión con una ventana de herramientas](../extensibility/creating-an-extension-with-a-tool-window.md).  
   
 ## <a name="specifying-the-shortcut-menu"></a>Especifica el menú contextual  
  Un menú contextual, como se muestra en este tutorial permite al usuario seleccionar de una lista de colores que se usan para rellenar el fondo de la ventana de herramientas.  
   
-1.  En ShortcutMenuPackage.vsct, busque en el elemento GuidSymbol denominado guidShortcutMenuPackageCmdSet y declare el menú contextual, grupo del menú de accesos directos y opciones de menú. El elemento de GuidSymbol debe ser ahora similar al siguiente:  
+1. En ShortcutMenuPackage.vsct, busque en el elemento GuidSymbol denominado guidShortcutMenuPackageCmdSet y declare el menú contextual, grupo del menú de accesos directos y opciones de menú. El elemento de GuidSymbol debe ser ahora similar al siguiente:  
   
     ```xml  
     <GuidSymbol name="guidShortcutMenuPackageCmdSet" value="{00000000-0000-0000-0000-0000}"> // your GUID here  
@@ -59,7 +54,7 @@ En este tutorial, se coloca un menú contextual en una ventana de herramientas. 
     </GuidSymbol>  
     ```  
   
-2.  Inmediatamente antes del elemento de botones, cree un elemento de los menús y, a continuación, defina el menú contextual en ella.  
+2. Inmediatamente antes del elemento de botones, cree un elemento de los menús y, a continuación, defina el menú contextual en ella.  
   
     ```vb  
     <Menus>  
@@ -74,7 +69,7 @@ En este tutorial, se coloca un menú contextual en una ventana de herramientas. 
   
      Un menú contextual no tiene un elemento primario porque no forma parte de un menú o barra de herramientas.  
   
-3.  Cree un elemento de grupos con un elemento de grupo que contiene los elementos de menú contextual y asociar el grupo con el menú contextual.  
+3. Cree un elemento de grupos con un elemento de grupo que contiene los elementos de menú contextual y asociar el grupo con el menú contextual.  
   
     ```xml  
     <Groups>  
@@ -84,7 +79,7 @@ En este tutorial, se coloca un menú contextual en una ventana de herramientas. 
     </Groups>  
     ```  
   
-4.  En el elemento de botones, definir los comandos individuales que aparecerán en el menú contextual. El elemento de los botones debe tener este aspecto:  
+4. En el elemento de botones, definir los comandos individuales que aparecerán en el menú contextual. El elemento de los botones debe tener este aspecto:  
   
     ```xml  
     <Buttons>  
@@ -119,7 +114,7 @@ En este tutorial, se coloca un menú contextual en una ventana de herramientas. 
     </Buttons>  
     ```  
   
-5.  En ShortcutMenuPackageGuids.cs, agregue que las definiciones para el comando establecen el GUID, el menú contextual y los elementos de menú.  
+5. En ShortcutMenuPackageGuids.cs, agregue que las definiciones para el comando establecen el GUID, el menú contextual y los elementos de menú.  
   
     ```csharp  
     public const string guidShortcutMenuPackageCmdSet = "00000000-0000-0000-0000-00000000"; // your GUID will differ  
@@ -134,16 +129,16 @@ En este tutorial, se coloca un menú contextual en una ventana de herramientas. 
 ## <a name="implementing-the-shortcut-menu"></a>Implementar el acceso directo  
  En esta sección se implementa el menú contextual y sus comandos.  
   
-1.  En ShortcutMenu.cs, la ventana de herramientas puede obtener el servicio de comandos de menú, pero no el control que contiene. Los pasos siguientes muestran cómo hacer que el servicio de comandos de menú disponibles para el control de usuario.  
+1. En ShortcutMenu.cs, la ventana de herramientas puede obtener el servicio de comandos de menú, pero no el control que contiene. Los pasos siguientes muestran cómo hacer que el servicio de comandos de menú disponibles para el control de usuario.  
   
-2.  En ShortcutMenu.cs, agregue las siguientes instrucciones using:  
+2. En ShortcutMenu.cs, agregue las siguientes instrucciones using:  
   
     ```csharp  
     using Microsoft.VisualStudio.Shell;  
     using System.ComponentModel.Design;  
     ```  
   
-3.  Invalide el método Initialize() de la ventana de herramientas para obtener el servicio de comandos de menú y agregue el control al pasar el servicio de comandos de menú para el constructor:  
+3. Invalide el método Initialize() de la ventana de herramientas para obtener el servicio de comandos de menú y agregue el control al pasar el servicio de comandos de menú para el constructor:  
   
     ```csharp  
     protected override void Initialize()  
@@ -153,7 +148,7 @@ En este tutorial, se coloca un menú contextual en una ventana de herramientas. 
     }  
     ```  
   
-4.  En el constructor de ventana de herramienta de menú contextual, quite la línea que agrega el control. El constructor debe ser ahora similar al siguiente:  
+4. En el constructor de ventana de herramienta de menú contextual, quite la línea que agrega el control. El constructor debe ser ahora similar al siguiente:  
   
     ```csharp  
     public ShortcutMenu() : base(null)  
@@ -164,7 +159,7 @@ En este tutorial, se coloca un menú contextual en una ventana de herramientas. 
     }  
     ```  
   
-5.  En ShortcutMenuControl.xaml.cs, agregue un campo privado para el servicio de comandos de menú y cambie el constructor del control para aprovechar el servicio de comandos de menú. A continuación, utilice el servicio de comandos de menú para agregar comandos de menú contextual. El constructor ShortcutMenuControl deberá parecerse el código siguiente. El controlador de comandos se definirán más adelante.  
+5. En ShortcutMenuControl.xaml.cs, agregue un campo privado para el servicio de comandos de menú y cambie el constructor del control para aprovechar el servicio de comandos de menú. A continuación, utilice el servicio de comandos de menú para agregar comandos de menú contextual. El constructor ShortcutMenuControl deberá parecerse el código siguiente. El controlador de comandos se definirán más adelante.  
   
     ```csharp  
     public ShortcutMenuControl(OleMenuCommandService service)  
@@ -190,7 +185,7 @@ En este tutorial, se coloca un menú contextual en una ventana de herramientas. 
     }  
     ```  
   
-6.  En ShortcutMenuControl.xaml, agregue un <xref:System.Windows.UIElement.MouseRightButtonDown> eventos al nivel superior <xref:System.Windows.Controls.UserControl> elemento. Ahora debe ver el archivo XAML así:  
+6. En ShortcutMenuControl.xaml, agregue un <xref:System.Windows.UIElement.MouseRightButtonDown> eventos al nivel superior <xref:System.Windows.Controls.UserControl> elemento. Ahora debe ver el archivo XAML así:  
   
     ```vb  
     <UserControl x:Class="TWShortcutMenu.ShortcutMenuControl"  
@@ -212,7 +207,7 @@ En este tutorial, se coloca un menú contextual en una ventana de herramientas. 
     </UserControl>  
     ```  
   
-7.  En ShortcutMenuControl.xaml.cs, agregue un código auxiliar para el controlador de eventos.  
+7. En ShortcutMenuControl.xaml.cs, agregue un código auxiliar para el controlador de eventos.  
   
     ```csharp  
     private void MyToolWindow_MouseRightButtonDown(object sender, MouseButtonEventArgs e)  
@@ -221,7 +216,7 @@ En este tutorial, se coloca un menú contextual en una ventana de herramientas. 
     }  
     ```  
   
-8.  Agregue las siguientes instrucciones using en el mismo archivo:  
+8. Agregue las siguientes instrucciones using en el mismo archivo:  
   
     ```csharp  
     using Microsoft.VisualStudio.Shell;  
@@ -275,15 +270,14 @@ En este tutorial, se coloca un menú contextual en una ventana de herramientas. 
   
 ## <a name="testing-the-tool-window-features"></a>Probar las características de la ventana de herramienta  
   
-1.  Compile la solución y comience la depuración. Aparece la instancia experimental.  
+1. Compile la solución y comience la depuración. Aparece la instancia experimental.  
   
-2.  En la instancia experimental, haga clic en **vista / Windows otras**y, a continuación, haga clic en **menú contextual**. Esto debe mostrar la ventana de herramientas.  
+2. En la instancia experimental, haga clic en **vista / Windows otras**y, a continuación, haga clic en **menú contextual**. Esto debe mostrar la ventana de herramientas.  
   
-3.  Haga doble clic en el cuerpo de la ventana de herramientas. Debe mostrarse un menú contextual que tiene una lista de colores.  
+3. Haga doble clic en el cuerpo de la ventana de herramientas. Debe mostrarse un menú contextual que tiene una lista de colores.  
   
-4.  Haga clic en un color en el menú contextual. El color de fondo de la ventana de herramienta debe cambiarse al color seleccionado.  
+4. Haga clic en un color en el menú contextual. El color de fondo de la ventana de herramienta debe cambiarse al color seleccionado.  
   
 ## <a name="see-also"></a>Vea también  
  [Los comandos, menús y barras de herramientas](../extensibility/internals/commands-menus-and-toolbars.md)   
  [Uso y provisión de servicios](../extensibility/using-and-providing-services.md)
-

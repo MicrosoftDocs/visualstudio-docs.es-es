@@ -1,14 +1,9 @@
 ---
 title: SccGet (función) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccGet
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 09a18bd2-b788-411a-9da6-067d806e46f6
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 78c766e52278c8bae29e57cad6f1c0255de4ea43
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3f8317405c52850eceb816b958718835c029c6c4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51761715"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068306"
 ---
 # <a name="sccget-function"></a>SccGet (Función)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +44,7 @@ SCCRTN SccGet(
  hWnd  
  [in] Identificador de la ventana del IDE que puede usar el complemento de control de código fuente como un elemento primario para los cuadros de diálogo que proporciona.  
   
- n  
+ nFiles  
  [in] Número de archivos especificados en el `lpFileNames` matriz.  
   
  lpFileNames  
@@ -91,23 +86,22 @@ SCCRTN SccGet(
   
  Hay dos maneras de resolver esta situación donde la memoria caché local de versiones del control de código fuente no está sincronizada con la base de datos de control de código fuente:  
   
-1.  No permiten cambiar el nombre de un archivo en la base de datos de control de código fuente está desprotegido actualmente.  
+1. No permiten cambiar el nombre de un archivo en la base de datos de control de código fuente está desprotegido actualmente.  
   
-2.  Es el equivalente de "eliminación antiguo" seguida de "Agregar nuevo". El algoritmo siguiente es una manera de lograr esto.  
+2. Es el equivalente de "eliminación antiguo" seguida de "Agregar nuevo". El algoritmo siguiente es una manera de lograr esto.  
   
-    1.  Llame a la [SccQueryChanges](../extensibility/sccquerychanges-function.md) función para obtener información sobre el cambio de nombre de a.txt a b.txt en la base de datos de control de código fuente.  
+    1. Llame a la [SccQueryChanges](../extensibility/sccquerychanges-function.md) función para obtener información sobre el cambio de nombre de a.txt a b.txt en la base de datos de control de código fuente.  
   
-    2.  Cambiar el nombre de la local a.txt a b.txt.  
+    2. Cambiar el nombre de la local a.txt a b.txt.  
   
-    3.  Llame a la `SccGet` función a.txt y b.txt.  
+    3. Llame a la `SccGet` función a.txt y b.txt.  
   
-    4.  Porque a.txt no existe en la base de datos de control de código fuente, se purga la caché de la versión local de la información de versión a.txt que falta.  
+    4. Porque a.txt no existe en la base de datos de control de código fuente, se purga la caché de la versión local de la información de versión a.txt que falta.  
   
-    5.  El archivo b.txt que se va a desproteger se combina con el contenido del archivo b.txt local.  
+    5. El archivo b.txt que se va a desproteger se combina con el contenido del archivo b.txt local.  
   
-    6.  Ahora se puede proteger el archivo b.txt actualizada.  
+    6. Ahora se puede proteger el archivo b.txt actualizada.  
   
 ## <a name="see-also"></a>Vea también  
  [Funciones de API de complemento de Control de código fuente](../extensibility/source-control-plug-in-api-functions.md)   
  [Marcadores de bits utilizados por comandos específicos](../extensibility/bitflags-used-by-specific-commands.md)
-

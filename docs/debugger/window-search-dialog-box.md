@@ -7,59 +7,46 @@ helpviewer_keywords:
 ms.assetid: 9c30390d-dc3c-4c27-ae1a-9d92dc076d2b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a57e0bacdbe12b889879eaca417127953f90beb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3ca04cadbfce26319a9ed72b85071d7ab139a85a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826275"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56696914"
 ---
 # <a name="window-search-dialog-box"></a>Cuadro de diálogo Buscar ventana
-Utilice este cuadro de diálogo para buscar y seleccionar el nodo de una ventana específica en [Windows Vista](../debugger/windows-view.md). Para mostrar este cuadro de diálogo, mueva el foco a la ventana de Windows Vista. A continuación, elija **Buscar ventana** desde el **búsqueda** menú.  
-  
- Puede usar el **herramienta de búsqueda** seleccionar una ventana, o puede escribir el identificador de ventana o identificar la ventana por título y clase.  
-  
- Las siguientes opciones están disponibles:  
-  
- **Herramienta de búsqueda**  
- La herramienta de arrastrar y colocar que se utiliza para seleccionar una ventana.  
-  
- **Ocultar Spy ++**  
- Quita de la ventana principal de Spy ++ y deja el **Buscar ventana** cuadro de diálogo visible encima de las otras aplicaciones.  
-  
- **Identificador**  
- El identificador único de la ventana que se busca.  
-  
- **Título**  
- El texto del título de la ventana que se busca.  
-  
- **Clase**  
- La clase de la ventana que se busca.  
-  
- **Dirección de búsqueda hacia arriba o hacia abajo**  
- La dirección inicial de la búsqueda.  
-  
-## <a name="related-sections"></a>Secciones relacionadas  
- [Buscar una ventana de Windows Vista](../debugger/how-to-search-for-a-window-in-windows-view.md)  
- Explica cómo buscar una ventana específica en la vista de Windows.  
-  
- [Vista Ventanas](../debugger/windows-view.md)  
- Muestra una vista de árbol de los controles y ventanas disponibles.  
-  
- [Vistas de Spy++](../debugger/spy-increment-views.md)  
- Explica las vistas de árbol de Spy ++ de windows, los mensajes, los procesos y subprocesos.  
-  
- [Usar Spy++](../debugger/using-spy-increment.md)  
- Presenta la herramienta Spy ++ y explica cómo se puede usar.  
-  
- [Cuadro de diálogo Buscar ventana](../debugger/find-window-dialog-box.md)  
- Se usa para ver las propiedades o los mensajes de una ventana específica.  
-  
- [Cuadro de diálogo Propiedades de la ventana](../debugger/window-properties-dialog-box.md)  
- Se utiliza para mostrar las propiedades de una ventana seleccionado en Windows Vista.  
-  
- [Referencia de Spy++](../debugger/spy-increment-reference.md)  
- Incluye secciones que describen cada Spy ++ menú y cuadro de diálogo.
+Utilice este cuadro de diálogo para buscar y seleccionar el nodo de una ventana específica en [Windows Vista](../debugger/windows-view.md). Para mostrar este cuadro de diálogo, mueva el foco a la ventana de Windows Vista. A continuación, elija **Buscar ventana** desde el **búsqueda** menú.
+
+ Puede usar el **herramienta de búsqueda** seleccionar una ventana, o puede escribir el identificador de ventana o identificar la ventana por título y clase.
+
+ Las siguientes opciones están disponibles:
+
+ **Herramienta de búsqueda** utilizada para seleccionar una ventana de la herramienta de arrastrar y colocar.
+
+ **Ocultar Spy ++** quita de la ventana principal de Spy ++ y deja el **Buscar ventana** cuadro de diálogo visible encima de las otras aplicaciones.
+
+ **Controlar** el identificador único de la ventana que se busca.
+
+ **Título** el texto del título de la ventana que se busca.
+
+ **Clase** la clase de la ventana que se busca.
+
+ **Dirección de la búsqueda hacia arriba o abajo** la dirección inicial de la búsqueda.
+
+## <a name="related-sections"></a>Secciones relacionadas
+ [Buscar una ventana de Windows Vista](../debugger/how-to-search-for-a-window-in-windows-view.md) explica cómo buscar una ventana específica en la vista de Windows.
+
+ [Windows Vista](../debugger/windows-view.md) muestra una vista de árbol de los controles y ventanas disponibles.
+
+ [Vistas de Spy ++](../debugger/spy-increment-views.md) explica las vistas de árbol de Spy ++ de windows, los mensajes, los procesos y subprocesos.
+
+ [Usar Spy ++](../debugger/using-spy-increment.md) presenta la herramienta Spy ++ y explica cómo se puede usar.
+
+ [Ventana cuadro de diálogo Buscar](../debugger/find-window-dialog-box.md) utilizado para ver las propiedades o los mensajes de una ventana específica.
+
+ [Cuadro de diálogo de propiedades de ventana](../debugger/window-properties-dialog-box.md) utilizado para mostrar las propiedades de una ventana seleccionado en Windows Vista.
+
+ [Referencia de Spy ++](../debugger/spy-increment-reference.md) incluye secciones que describen cada Spy ++ menú y cuadro de diálogo.

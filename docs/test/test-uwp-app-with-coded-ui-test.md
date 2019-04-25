@@ -1,22 +1,21 @@
 ---
 title: Probar una aplicación de UWP con una prueba automatizada de IU
 ms.date: 05/31/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - uwp
-ms.openlocfilehash: 2ee648a11c04f9ff6da2f7113c37424b4f1f6388
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 11fc95978690e98d496f539d4e98acf58104be3b
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53842049"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416128"
 ---
 # <a name="create-a-coded-ui-test-to-test-a-uwp-app"></a>Crear una prueba automatizada de IU para probar una aplicación de UWP
 
@@ -30,7 +29,11 @@ El primer paso es crear una aplicación sencilla de UWP para ejecutar la prueba.
 
 1. En Visual Studio, cree un nuevo proyecto con la plantilla **Aplicación vacía (Windows Universal)** para Visual C# o Visual Basic.
 
-     ![Plantilla de aplicación vacía de Windows Universal](../test/media/blank-uwp-app-template.png)
+   ::: moniker range="vs-2017"
+
+   ![Plantilla de aplicación vacía de Windows Universal](../test/media/blank-uwp-app-template.png)
+
+   ::: moniker-end
 
 1. En el cuadro de diálogo **Nuevo proyecto de la plataforma universal de Windows**, seleccione **Aceptar** para aceptar las versiones de la plataforma predeterminadas.
 
@@ -58,20 +61,24 @@ El primer paso es crear una aplicación sencilla de UWP para ejecutar la prueba.
 
    ![Aplicación de UWP con botón y cuadro de texto](media/uwp-app.png)
 
-## <a name="create-a-coded-ui-test"></a>Crear una prueba de IU programada
+## <a name="create-a-coded-ui-test"></a>Crear una prueba de IU codificada
 
 1. Para agregar un nuevo proyecto de prueba a la solución, haga clic con el botón derecho en el **Explorador de soluciones** y seleccione **Agregar** > **Nuevo proyecto**.
 
-1. En el cuadro de diálogo **Nuevo proyecto**, seleccione la plantilla **Proyecto de prueba automatizada de IU (Windows universal)**. La plantilla se encuentra en la categoría **Windows Universal** en **Visual C#** o **Visual Basic**.
+1. Busque la plantilla de proyecto **Proyecto de prueba automatizada de IU (Windows universal)** y selecciónela.
 
-     ![Nuevo proyecto de prueba automatizada de IU](../test/media/coded-ui-test-project-uwp-template.png)
+   ::: moniker range="vs-2017"
+
+   ![Nuevo proyecto de prueba automatizada de IU](../test/media/coded-ui-test-project-uwp-template.png)
+
+   ::: moniker-end
 
    > [!NOTE]
    > Si no ve la plantilla **Proyecto de prueba automatizada de IU (Windows universal)**, necesitará [instalar el componente de prueba automatizada de IU](../test/use-ui-automation-to-test-your-code.md#install-the-coded-ui-test-component).
 
 1. En el cuadro de diálogo **Generar código para prueba automatizada de IU**, seleccione **Editar la prueba manualmente**.
 
-     ![Generar código para prueba automatizada de IU](../test/media/manually-edit-the-test.png)
+   ![Generar código para prueba automatizada de IU](../test/media/manually-edit-the-test.png)
 
 1. Si su aplicación de UWP no se está ejecutando, presione **Ctrl**+**F5** para iniciarla.
 

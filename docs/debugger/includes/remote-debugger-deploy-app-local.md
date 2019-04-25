@@ -8,16 +8,16 @@ ms.topic: include
 ms.date: 05/23/2018
 ms.author: mikejo
 ms.custom: include file
-ms.openlocfilehash: bd477fec033eb75f626401586abfd10c798601ef
-ms.sourcegitcommit: c57ae28181ffe14a30731736661bf59c3eff1211
-ms.translationtype: MT
+ms.openlocfilehash: 67ffd17c772221c356e8c25d14437c2a737fda9e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38809474"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56723882"
 ---
 1. En el **el Explorador de soluciones**, haga clic en el nodo del proyecto y seleccione **publicar** (para formularios Web Forms, **publicar aplicación Web**).
 
-    Si previamente ha configurado ningún perfil de publicación, el **publicar** aparecerá el panel. Haga clic en **nuevo perfil**.
+    Si previamente ha configurado algún perfil de publicación, aparece el panel **Publicar**. Haga clic en **nuevo perfil**.
 
 1. En el **publicar** cuadro de diálogo, seleccione **carpeta**, haga clic en **examinar**y cree una carpeta nueva, **C:\Publish**.
 
@@ -37,7 +37,7 @@ ms.locfileid: "38809474"
 1. Haga clic en **Publicar**.
 
     ![RemoteDBG_Publish_Debug_Config](../media/remotedbg_publish_debug_config.png "RemoteDBG_Publish_Debug_Config")
-    
+
     La aplicación publica una **depurar** configuración del proyecto en la carpeta local. El progreso se muestra en la ventana de salida.
 
 1. Copie el directorio del proyecto ASP.NET desde el equipo de Visual Studio en el directorio local configurado para la aplicación ASP.NET (en este ejemplo, **C:\Publish**) en el equipo de Windows Server. En este tutorial, asumimos que va a copiar manualmente, pero puede usar otras herramientas como PowerShell, Xcopy o Robocopy.

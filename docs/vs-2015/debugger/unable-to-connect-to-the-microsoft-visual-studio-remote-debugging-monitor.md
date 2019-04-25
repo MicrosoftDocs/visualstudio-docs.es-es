@@ -1,14 +1,9 @@
 ---
 title: No se puede conectar a Microsoft Visual Studio Monitor de depuración remota | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.error.remote_debug
 dev_langs:
@@ -20,13 +15,13 @@ ms.assetid: a1d959fc-3817-491c-831b-e6b768a3877a
 caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 139c650ac61b9312b069cc2e19fa66d3673ca30f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f03936b9404339e3ad46e30ef92286da360323bb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51733014"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085771"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>No se puede conectar al Monitor de depuración remota de Microsoft Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,11 +38,11 @@ Este mensaje de error aparece cuando escribe un nombre de Monitor de depuración
   
 ## <a name="to-correct-this-error"></a>Para corregir este error  
   
--   Asegúrese de que el Monitor de depuración remota de Visual Studio está instalado y en ejecución en el equipo remoto. Para obtener información sobre el depurador remoto y cómo instalarlo, consulte [depuración remota](../debugger/remote-debugging.md).  
+- Asegúrese de que el Monitor de depuración remota de Visual Studio está instalado y en ejecución en el equipo remoto. Para obtener información sobre el depurador remoto y cómo instalarlo, consulte [depuración remota](../debugger/remote-debugging.md).  
   
--   En Visual Studio, examine las propiedades del proyecto (**Proyecto / Propiedades / Depuración**). Asegúrese de que el **nombre del servidor remoto** es correcto.  
+- En Visual Studio, examine las propiedades del proyecto (**Proyecto / Propiedades / Depuración**). Asegúrese de que el **nombre del servidor remoto** es correcto.  
   
--   Compruebe que se tiene acceso al equipo remoto en la red.  
+- Compruebe que se tiene acceso al equipo remoto en la red.  
   
 ## <a name="the-remote-machine-is-not-reachable"></a>El equipo remoto no está accesible  
  Pruebe a hacer [ping](https://technet.microsoft.com/library/ee624059\(v=ws.10\).aspx) a la máquina remota. Si no recibe respuesta al ping, las herramientas remotas no se podrán conectar tampoco. Pruebe a reiniciar el equipo remoto y, de lo contrario, asegúrese de que está configurado correctamente en la red.  
@@ -63,13 +58,13 @@ Este mensaje de error aparece cuando escribe un nombre de Monitor de depuración
 ## <a name="the-remote-debugger-is-running-under-a-different-user-account"></a>El depurador remoto se ejecuta bajo una cuenta de usuario diferente  
  Puede resolver este problema de una de las siguientes formas:  
   
--   Puede detener al depurador remoto y reiniciarlo con la cuenta que está usando en el equipo local.  
+- Puede detener al depurador remoto y reiniciarlo con la cuenta que está usando en el equipo local.  
   
--   Puede iniciar el depurador remoto desde la línea de comandos con el **/ allow \<username >** parámetro: `msvsmon /allow <username@computer>`  
+- Puede iniciar el depurador remoto desde la línea de comandos con el parámetro **/allow \<username>** : `msvsmon /allow <username@computer>`  
   
--   Puede agregar el usuario a los permisos del depurador remoto (en la ventana del depurador remoto, **Herramientas / Permisos**).  
+- Puede agregar el usuario a los permisos del depurador remoto (en la ventana del depurador remoto, **Herramientas / Permisos**).  
   
--   Si no puede usar los métodos descritos en los pasos anteriores, puede permitir que cualquier usuario realice la depuración remota. En la ventana del depurador remoto, vaya al cuadro de diálogo **Herramientas/Opciones** . Al seleccionar   **Sin autenticación**, podrá activar **Permitir que cualquier usuario depure**. Sin embargo, debe usar esta opción solo como último recurso o si se encuentra en una red privada.  
+- Si no puede usar los métodos descritos en los pasos anteriores, puede permitir que cualquier usuario realice la depuración remota. En la ventana del depurador remoto, vaya al cuadro de diálogo **Herramientas/Opciones** . Al seleccionar   **Sin autenticación**, podrá activar **Permitir que cualquier usuario depure**. Sin embargo, debe usar esta opción solo como último recurso o si se encuentra en una red privada.  
   
 ## <a name="the-firewall-on-the-remote-machine-doesnt-allow-incoming-connections-to-the-remote-debugger"></a>El firewall del equipo remoto no permite conexiones entrantes al depurador remoto  
  El firewall del equipo de Visual Studio y el firewall del equipo remoto deben configurarse para permitir la comunicación entre Visual Studio y el depurador remoto. Para obtener información sobre los puertos que usa el depurador remoto, vea [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md). Para obtener información sobre de cómo configurar el firewall de Windows, vea [Configure the Windows Firewall for Remote Debugging](../debugger/configure-the-windows-firewall-for-remote-debugging.md).  
@@ -90,6 +85,3 @@ Este mensaje de error aparece cuando escribe un nombre de Monitor de depuración
   
 ## <a name="see-also"></a>Vea también  
  [Remote Debugging](../debugger/remote-debugging.md)
-
-
-

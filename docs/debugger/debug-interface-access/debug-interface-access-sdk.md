@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 4c0abe53-11d3-4b7a-bdc7-b054f85aaf40
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bdc5a980c9019fdaf330db9602f0b8445456c7c4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 915f594a984af41da167e0fd3d58beb2f6ddd978
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53889571"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56608089"
 ---
 # <a name="debug-interface-access-sdk"></a>Debug Interface Access SDK
 
@@ -27,17 +27,22 @@ El Microsoft depurar interfaz acceso Software Development Kit (SDK de DIA) propo
 
 ## <a name="in-this-section"></a>En esta sección
 
-[Introducción](../../debugger/debug-interface-access/getting-started-debug-interface-access-sdk.md)  
+[Introducción](../../debugger/debug-interface-access/getting-started-debug-interface-access-sdk.md)
+
 Proporciona información general sobre el SDK de DIA características y especifica donde está instalado el SDK de DIA, así como los archivos de biblioteca y el encabezado necesario.
 
-[Consultar el archivo .pdb](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)  
+[Consultar el archivo .pdb](../../debugger/debug-interface-access/querying-the-dot-pdb-file.md)
+
 Proporciona instrucciones sobre cómo usar la API de DIA para consultar el archivo PDB.
 
-[Símbolos y etiquetas de símbolo](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)  
+[Símbolos y etiquetas de símbolo](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)
+
 Describe cómo se usan los símbolos y etiquetas de símbolo de la API de DIA.
 
-[Referencia](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)  
+[Referencia](../../debugger/debug-interface-access/debug-interface-access-sdk-reference.md)
+
 Contiene las interfaces, métodos, enumeraciones y estructuras de la API de DIA.
 
-[Ejemplo Dia2dump](../../debugger/debug-interface-access/dia2dump-sample.md)  
+[Ejemplo Dia2dump](../../debugger/debug-interface-access/dia2dump-sample.md)
+
 Se muestra cómo usar la API de DIA para buscar y examinar la información de depuración.

@@ -2,9 +2,8 @@
 title: Usar parámetros de la línea de comandos para instalar Visual Studio
 titleSuffix: ''
 description: Obtenga información sobre cómo usar parámetros de línea de comandos para controlar o personalizar la instalación de Visual Studio.
-ms.date: 11/14/2018
+ms.date: 03/30/2019
 ms.custom: seodec18
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - command-line parameters
@@ -13,19 +12,21 @@ f1_keywords:
 ms.assetid: 480f3cb4-d873-434e-a8bf-82cff7401cf2
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb4ab50f5b5b699d2cbb8fa800705f4ed218c588
-ms.sourcegitcommit: a8c841648d862c83a0f0d654df1b367c159adc5e
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: 8e999df4fc1269025c9adc038c1a17dd586a3081
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54403972"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790490"
 ---
-# <a name="use-command-line-parameters-to-install-visual-studio-2017"></a>Uso de parámetros de la línea de comandos para instalar Visual Studio 2017
+# <a name="use-command-line-parameters-to-install-visual-studio"></a>Usar parámetros de la línea de comandos para instalar Visual Studio
 
-Cuando instala Visual Studio 2017 desde un símbolo del sistema, puede usar diversos parámetros de la línea de comandos para controlar o personalizar la instalación. Desde la línea de comandos, puede hacer lo siguiente:
+Cuando instala Visual Studio desde un símbolo del sistema, puede usar diversos parámetros de la línea de comandos para controlar o personalizar la instalación. Desde la línea de comandos, puede hacer lo siguiente:
 
 - Iniciar la instalación con determinadas opciones preseleccionadas.
 - Automatizar el proceso de instalación.
@@ -33,11 +34,23 @@ Cuando instala Visual Studio 2017 desde un símbolo del sistema, puede usar dive
 
 Las opciones de la línea de comandos se usan junto con el programa previo de instalación, que es el archivo pequeño (de aproximadamente 1 MB) que inicia el proceso de descarga. El programa previo es el primer ejecutable que se inicia cuando se realiza la descarga desde el sitio de Visual Studio. Use los vínculos siguientes para obtener un vínculo directo a la versión más reciente del programa previo para la edición del producto que está instalando:
 
-- [Visual Studio 2017 Enterprise](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=15?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
-- [Visual Studio 2017 Professional](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=15?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
-- [Visual Studio 2017 Community](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&rel=15?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
+::: moniker range="vs-2017"
 
-## <a name="list-of-command-line-parameters"></a>Lista de parámetros de la línea de comandos
+- [Visual Studio 2017 Enterprise](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
+- [Visual Studio 2017 Professional](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
+- [Visual Studio 2017 Community](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+- [Visual Studio 2019 Enterprise](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2019+rc)
+- [Visual Studio 2019 Professional](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2019+rc)
+- [Visual Studio 2019 Community](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2019+rc)
+
+::: moniker-end
+
+## <a name="command-line-parameters"></a>Parámetros de la línea de comandos
 
  Los parámetros de la línea de comandos de Visual Studio no distinguen mayúsculas de minúsculas.
 
@@ -46,7 +59,7 @@ Las opciones de la línea de comandos se usan junto con el programa previo de in
 (Reemplace `vs_enterprise.exe` según corresponda para la edición del producto que está instalando.
 
 >[!TIP]
-> Para obtener más ejemplos de cómo usar la línea de comandos para instalar Visual Studio 2017, consulte la página [Ejemplos de parámetros de línea de comandos para la instalación de Visual Studio 2017](command-line-parameter-examples.md)).
+> Para más ejemplos de cómo usar la línea de comandos para instalar Visual Studio, consulte la página de [ejemplos de parámetros de la línea de comandos](command-line-parameter-examples.md).
 
 | **Comando** | **Descripción** |
 | ----------------------- | --------------- |
@@ -55,7 +68,9 @@ Las opciones de la línea de comandos se usan junto con el programa previo de in
 | `update` | Actualiza un producto instalado. |
 | `repair` | Repara un producto instalado. |
 | `uninstall` | Desinstala un producto instalado. |
-| `export` | **Novedad de la versión 15.9**: exporta la selección de instalación a un archivo de configuración de la instalación. **Nota**: solo se puede utilizar con vs_installer.exe. |
+| `export` | **Novedades de la versión 15.9**: exporta la selección de instalación a un archivo de configuración de la instalación. **Nota**: solo se puede utilizar con vs_installer.exe. |
+
+## <a name="install-options"></a>Opciones de instalación
 
 | **Opción de instalación** | **Descripción** |
 | ----------------------- | --------------- |
@@ -80,13 +95,15 @@ Las opciones de la línea de comandos se usan junto con el programa previo de in
 > [!IMPORTANT]
 > Al especificar varias cargas de trabajo y componentes, debe repetir el modificador de la línea de comandos `--add` o `--remove` para cada elemento.
 
+## <a name="layout-options"></a>Opciones de diseño
+
 | **Opciones de diseño** | **Descripción** |
 | ----------------------- | --------------- |
 | `--layout <dir>` | Especifica un directorio para crear una caché de instalación sin conexión. Para obtener más información, consulte [Crear una instalación sin conexión de Visual Studio 2017](create-a-network-installation-of-visual-studio.md).|
 | `--lang <one or more language-locales>` | **Opcional**: se usa con `--layout` para preparar una caché de instalación sin conexión con paquetes de recursos con los idiomas especificados. Para obtener más información, consulte la sección [Lista de configuraciones regionales de idioma](#list-of-language-locales) de esta página.|
 | `--add <one or more workload or component IDs>` | **Opcional**: uno o varios identificadores de componente o carga de trabajo para agregar. Se instalan los componentes necesarios del artefacto, pero no los componentes recomendados ni opcionales. Puede controlar los componentes adicionales de forma global mediante `--includeRecommended` o `--includeOptional`. Para un control más preciso, puede anexar `;includeRecommended` o `;includeOptional` al identificador (por ejemplo, `--add Workload1;includeRecommended` o `--add Workload2;includeOptional`). Para obtener más información, consulte la página [Identificadores de componente y carga de trabajo](workload-and-component-ids.md). <br/>**Nota**: Si se usa `--add`, solo se descargan las cargas de trabajo y los componentes especificados y sus dependencias. Si no se especifica `--add`, todos los componentes y las cargas de trabajo se descargan en el diseño.|
 | `--includeRecommended` | **Opcional**: incluye los componentes recomendados para cualquier carga de trabajo que se instale, pero no los componentes recomendados. Las cargas de trabajo se especifican con `--allWorkloads` o `--add`. |
-| `--includeOptional` | **Opcional**: incluye los componentes recomendados *y* opcionales para las cargas de trabajo que se incluyen en el diseño. Las cargas de trabajo se especifican con `--add`.  |
+| `--includeOptional` | **Opcional**: incluye los componentes recomendados * y * opcionales para las cargas de trabajo que se incluyen en el diseño. Las cargas de trabajo se especifican con `--add`.  |
 | `--keepLayoutVersion` | **Novedad de la versión 15.3, opcional**: se aplican cambios en el diseño sin actualizar la versión de este. |
 | `--verify` | **Novedad de la versión 15.3, opcional**: se comprueba el contenido del diseño. Se muestra una lista con los archivos dañados o que no se hayan encontrado. |
 | `--fix` | **Novedad de la versión 15.3, opcional**: se comprueba el contenido del diseño.  Si se detecta que faltan archivos o que estos están dañados, se vuelven a descargar. Para corregir el diseño, es necesario tener acceso a Internet. |
@@ -104,7 +121,7 @@ Las opciones de la línea de comandos se usan junto con el programa previo de in
 | `--cache` | **Novedad de la versión 15.2, opcional**: si los hay, los paquetes se conservarán después de instalarse de cara a posteriores reparaciones. Esta opción invalida la configuración global de directiva que se usará en posteriores instalaciones, reparaciones o modificaciones. La directiva predeterminada es almacenar en caché los paquetes. Se omite para el comando de desinstalación. Para más información, lea cómo [deshabilitar o mover la caché de paquetes](disable-or-move-the-package-cache.md). |
 | `--nocache` | **Novedad de la versión 15.2, opcional**: si los hay, los paquetes se eliminan después de instalarlos o repararlos. Solo se descargarán de nuevo si es necesario y se volverán a eliminar después de su uso. Esta opción invalida la configuración global de directiva que se usará en posteriores instalaciones, reparaciones o modificaciones. La directiva predeterminada es almacenar en caché los paquetes. Se omite para el comando de desinstalación. Para más información, lea cómo [deshabilitar o mover la caché de paquetes](disable-or-move-the-package-cache.md). |
 | `--noUpdateInstaller` | **Novedad de la versión 15.2, opcional**: si está presente, impide que el instalador se actualice de forma automática cuando se especifica el modo silencioso. El instalador producirá un error en el comando y devolverá un código de salida distinto de cero si se especifica noUpdateInstaller con el modo silencioso cuando se requiere una actualización del instalador. |
-| `--noWeb` | **Novedad de la versión 15.3, opcional**: el programa de instalación ahora descarga de Internet cualquier contenido que se esté instalando.  Todo el contenido que se esté instalando debe estar disponible en un diseño sin conexión.  Si falta contenido del diseño, no se podrá realizar la instalación.  Para obtener más información, consulte [Implementación de una instalación de red](create-a-network-installation-of-visual-studio.md). |
+| `--noWeb` | **Novedad de la versión 15.3, opcional**: Si está presente, la configuración de Visual Studio utiliza los archivos del directorio de diseño para instalar Visual Studio. Si un usuario intenta instalar componentes que no están en el diseño, se produce un error en la instalación.  Para obtener más información, consulte [Implementación de una instalación de red](create-a-network-installation-of-visual-studio.md). <br/><br/> **Importante**: Este modificador no impide que la configuración de Visual Studio busque actualizaciones. Para más información, consulte [Control de actualizaciones a implementaciones de Visual Studio basadas en red](controlling-updates-to-visual-studio-deployments.md).|
 | `--path <name>=<path>` | **Novedad de la versión 15.7, opcional**: se usa para especificar las rutas de acceso de instalación personalizada para la instalación. Los nombre de ruta de acceso admitidos son uso compartido, caché e instalar. |
 | `--path cache=<path>` | **Novedad de la versión 15.7, opcional**: usa la ubicación que se especifique para descargar los archivos de instalación. Esta ubicación solo puede establecerse la primera vez que se instala Visual Studio. Ejemplo: `--path cache="C:\VS\cache"` |
 | `--path shared=<path>` | **Novedad de la versión 15.7, opcional**: contiene los archivos compartidos para las instalaciones en paralelo de Visual Studio. Algunas herramientas y SDK se instalan en una ubicación en esta unidad, mientras que otros pueden invalidar esta configuración e instalarse en otra unidad. Ejemplo: `--path shared="C:\VS\shared"` <br><br>Importante: Solo se puede establecer una vez y tiene que ser la primera que se instala Visual Studio. |
@@ -112,7 +129,7 @@ Las opciones de la línea de comandos se usan junto con el programa previo de in
 
 ## <a name="list-of-workload-ids-and-component-ids"></a>Lista de los id. de carga de trabajo y los id. de componente
 
-Para obtener una lista de los identificadores de componente y carga de trabajo ordenados por producto de Visual Studio, vea la página [Identificadores de componente y carga de trabajo de Visual Studio 2017](workload-and-component-ids.md).
+Para una lista de los identificadores de componente y carga de trabajo ordenados por producto de Visual Studio, consulte la página [Identificadores de componente y carga de trabajo de Visual Studio](workload-and-component-ids.md).
 
 ## <a name="list-of-language-locales"></a>Lista de configuraciones regionales de idioma
 
@@ -152,7 +169,7 @@ Cada operación genera varios archivos de registro en el directorio `%TEMP%` que
 
 ## <a name="see-also"></a>Vea también
 
-- [Ejemplos de parámetros de línea de comandos para la instalación de Visual Studio 2017](command-line-parameter-examples.md)
-- [Crear una instalación sin conexión de Visual Studio 2017](create-an-offline-installation-of-visual-studio.md)
+- [Ejemplos de parámetros de la línea de comandos para la instalación de Visual Studio](command-line-parameter-examples.md)
+- [Crear una instalación sin conexión de Visual Studio](create-an-offline-installation-of-visual-studio.md)
 - [Automatizar la instalación de Visual Studio con un archivo de respuesta](automated-installation-with-response-file.md)
-- [Identificadores de componente y carga de trabajo de Visual Studio 2017](workload-and-component-ids.md)
+- [Identificadores de cargas de trabajo y componentes de Visual Studio](workload-and-component-ids.md)

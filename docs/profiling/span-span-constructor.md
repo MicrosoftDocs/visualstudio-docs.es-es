@@ -9,65 +9,65 @@ helpviewer_keywords:
 ms.assetid: 8b5578aa-5e5c-4ac7-87c7-ce87c4246e2c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 88112a9ee8f89ee0e3b4fc4a71633b9028b692bb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f761e87c1658c11bfdfd93a4f4e22299d88575a8
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53952019"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953306"
 ---
 # <a name="spanspan-constructor"></a>span::span (Constructor)
-Inicializa una nueva instancia de la clase `span`.  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```cpp  
-span(  
-   const marker_series& _Series,  
-   _In_ LPCTSTR _Format,  
-   ...  
-);  
-span(  
-   const marker_series& _Series,  
-   marker_importance _Importance,  
-   _In_ LPCTSTR _Format,  
-   ...  
-);  
-span(  
-   const marker_series& _Series,  
-   int _Category,  
-   _In_ LPCTSTR _Format,  
-   ...  
-);  
-span(  
-   const marker_series& _Series,  
-   marker_importance _Importance,  
-   int _Category,  
-   _In_ LPCTSTR _Format,  
-   ...  
-);  
-```  
-  
-#### <a name="parameters"></a>Parámetros  
- `_Series`  
- Contexto de la serie de marcador válido.  
-  
- `_Format`  
- Una cadena de formato compuesto que contiene texto combinado con cero o más elementos de formato, que corresponden a objetos de la lista de argumentos.  
-  
- `_Importance`  
- Nivel de importancia.  
-  
- `_Category`  
- Categoría.  
-  
-## <a name="requirements"></a>Requisitos  
- **Encabezado:** *cvmarkersobj.h*  
-  
- **Espacio de nombres**: Concurrency::diagnostic
- 
- ## <a name="see-also"></a>Vea también
- [Clase span](../profiling/span-class.md)
+
+Inicializa una nueva instancia de la clase `span`.
+
+## <a name="syntax"></a>Sintaxis
+
+```cpp
+span(
+   const marker_series& _Series,
+   _In_ LPCTSTR _Format,
+   ...
+);
+span(
+   const marker_series& _Series,
+   marker_importance _Importance,
+   _In_ LPCTSTR _Format,
+   ...
+);
+span(
+   const marker_series& _Series,
+   int _Category,
+   _In_ LPCTSTR _Format,
+   ...
+);
+span(
+   const marker_series& _Series,
+   marker_importance _Importance,
+   int _Category,
+   _In_ LPCTSTR _Format,
+   ...
+);
+```
+
+#### <a name="parameters"></a>Parámetros
+
+`_Series` Contexto de la serie de marcador válido.
+
+`_Format` Una cadena de formato compuesto que contiene texto combinado con cero o más elementos de formato, que corresponden a objetos de la lista de argumentos.
+
+`_Importance` Nivel de importancia.
+
+`_Category` Categoría.
+
+## <a name="requirements"></a>Requisitos
+
+**Encabezado:** *cvmarkersobj.h*
+
+**Espacio de nombres**: Concurrency::diagnostic
+
+## <a name="see-also"></a>Vea también
+
+- [Clase span](../profiling/span-class.md)

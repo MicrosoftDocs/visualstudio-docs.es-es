@@ -7,27 +7,23 @@ helpviewer_keywords:
 ms.assetid: 86a66cce-3436-4532-bc3e-3b0662c8b198
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c4d30268bc5a41ec45875640aafa0458733c89e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2cbfbfb5ee11711b36d20d808cef22b42bcc43b5
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53915379"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56721009"
 ---
 # <a name="view-menu-commands"></a>Comandos del menú Ver
-El **vista** menú proporciona comandos para controlar la Spy ++ interfaz de usuario.  
-  
- **Fuente**  
- Se abre el **fuente** cuadro de diálogo, donde puede seleccionar una fuente para su uso en la vista actual de Spy ++.  
-  
- **Toolbar**  
- Oculta o muestra la barra de herramientas.  
-  
- **Barra de estado**  
- Oculta o muestra la barra de estado.  
-  
- **Propiedades**  
- Se abre el **propiedades** cuadro de diálogo de la vista activa.
+El **vista** menú proporciona comandos para controlar la Spy ++ interfaz de usuario.
+
+ **Fuente** abre el **fuente** cuadro de diálogo, donde puede seleccionar una fuente para su uso en la vista actual de Spy ++.
+
+ **Barra de herramientas** oculta o muestra la barra de herramientas.
+
+ **Barra de estado** oculta o muestra la barra de estado.
+
+ **Propiedades** abre el **propiedades** cuadro de diálogo de la vista activa.

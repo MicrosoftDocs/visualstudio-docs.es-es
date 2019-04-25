@@ -1,7 +1,6 @@
 ---
 title: Compilar (Página, Diseñador de proyectos) (C#)
 ms.date: 06/20/2017
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - cs.ProjectPropertiesBuild
@@ -11,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 77ff1bfc-d633-4634-ba29-9afdb6d7e362
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b690340440cfeeb13cecd82ed39109f688d24760
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 330c8bb033a167b03f62cf4fda95a58ea08ccd92
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53908022"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55922152"
 ---
 # <a name="build-page-project-designer-c"></a>Compilar (Página, Diseñador de proyectos) (C#)
 Use la página **Compilar** del **Diseñador de proyectos** para especificar las propiedades de configuración de compilación del proyecto. Esta página se aplica solo a proyectos de [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)].

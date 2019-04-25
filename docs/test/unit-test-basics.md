@@ -1,21 +1,20 @@
 ---
 title: Conceptos básicos de prueba unitaria
-ms.date: 2016-01-07
-ms.prod: visual-studio-dev15
+ms.date: 01/07/2016
 ms.topic: conceptual
 f1_keywords:
 - vs.UnitTest.CreateUnitTest
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e5b08592fdd60bf88ce703b1b97bd5485cc307ab
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: df0d6c25bad57550fcfc9ce475dcc9da488f195f
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54270185"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647419"
 ---
 # <a name="unit-test-basics"></a>Conceptos básicos de las pruebas unitarias
 
@@ -39,7 +38,7 @@ Para obtener una introducción a las pruebas unitarias que le guíe directamente
 
 ## <a name="the-mybank-solution-example"></a>Ejemplo de la solución MyBank
 
-En este tema, usamos el desarrollo de una aplicación ficticia denominada `MyBank` como ejemplo. No es necesario el código real para seguir las explicaciones de este tema. Los métodos de prueba se escriben en C# y presentan mediante el Marco de pruebas unitarias de Microsoft para código administrado. Sin embargo, los conceptos se transfieren fácilmente a otros lenguajes y marcos de trabajo.
+En este artículo, se utiliza el desarrollo de una aplicación ficticia denominada `MyBank` como ejemplo. No es necesario el código real para seguir las explicaciones de este tema. Los métodos de prueba se escriben en C# y presentan mediante el Marco de pruebas unitarias de Microsoft para código administrado. Sin embargo, los conceptos se transfieren fácilmente a otros lenguajes y marcos de trabajo.
 
 ![Solución MyBank](../test/media/ute_mybanksolution.png)
 
@@ -79,7 +78,7 @@ Ahora que tenemos código, es el momento de probar.
 
 ## <a name="create-unit-test-projects-and-test-methods"></a>Crear proyectos de prueba unitaria y métodos de prueba
 
-En general, es más rápido generar el proyecto de prueba unitaria y los códigos auxiliares de pruebas unitarias a partir del código, aunque también puede crear el proyecto y las pruebas manualmente según sus requisitos.
+En general, es más rápido generar el proyecto de prueba unitaria y los códigos auxiliares de pruebas unitarias a partir del código, aunque también puede crear el proyecto y las pruebas manualmente según sus requisitos. Si quiere crear pruebas unitarias con un marco de terceros, necesitará tener una de las siguientes extensiones instaladas: [NUnit](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension-18371) o [xUnit](https://marketplace.visualstudio.com/items?itemName=YowkoTsai.xUnitnetTestGenerator).
 
 ### <a name="generate-unit-test-project-and-unit-test-stubs"></a>Generar el proyecto de prueba unitaria y los códigos auxiliares correspondientes
 
@@ -89,7 +88,7 @@ En general, es más rápido generar el proyecto de prueba unitaria y los código
 
 2. Haga clic en **Aceptar** para aceptar los valores predeterminados al crear las pruebas unitarias o cambiar los valores usados para crear las pruebas unitarias y el proyecto que las engloba, y asignarles un nombre. Puede seleccionar el código que se agrega de forma predeterminada a los métodos de prueba unitaria.
 
-    ![Haga clic con el botón derecho en el editor y elija Crear pruebas unitarias](../test/media/createunittestsdialog.png)
+    ![Cuadro de diálogo Crear pruebas unitarias en Visual Studio](../test/media/create-unit-tests.png)
 
 3. El código auxiliar de prueba unitaria se crea en un proyecto de prueba unitaria nuevo para todos los métodos de la clase.
 
@@ -103,14 +102,26 @@ Un proyecto de prueba unitaria suele reflejar la estructura de un solo proyecto 
 
 **Para agregar un proyecto de prueba unitaria a una solución:**
 
-1. En el menú **Archivo**, elija **Nuevo** y, después, **Proyecto** (teclado **Ctrl**+**Mayús**+**N**).
+1. En el **Explorador de soluciones**, haga clic con el botón derecho en la solución y elija **Agregar** > **Nuevo** **proyecto**.
+
+::: moniker range="vs-2017"
 
 2. En el cuadro de diálogo **Nuevo proyecto**, expanda el nodo **Instalado**, elija el lenguaje que quiere usar para el proyecto de prueba y, después, elija **Probar**.
 
 3. Para usar uno de los marcos de pruebas unitarias de Microsoft, elija **Proyecto de prueba unitaria** en la lista de plantillas de proyecto. De lo contrario, elija la plantilla de proyecto del marco de pruebas unitarias que desea usar. Para probar el proyecto `Accounts` del ejemplo, el proyecto se denominaría `AccountsTests`.
 
-   > [!WARNING]
+   > [!NOTE]
    > No todos los marcos de pruebas unitarias de terceros y de código abierto proporcionan una plantilla de proyecto de Visual Studio. Consulte el documento del marco para obtener información sobre cómo crear un proyecto.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+2. Use el cuadro de búsqueda de plantillas de proyecto para encontrar una plantilla de proyecto de prueba unitaria para el marco de pruebas que quiere utilizar.
+
+3. En la página siguiente, asigne un nombre al proyecto. Para probar el proyecto `Accounts` del ejemplo, podría asignarle el nombre `AccountsTests`.
+
+::: moniker-end
 
 4. En el proyecto de prueba unitaria, agregue una referencia al proyecto de código en pruebas, en el ejemplo para el proyecto Accounts.
 

@@ -16,16 +16,15 @@ helpviewer_keywords:
 - MSBuild, validating code
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: ac75be41d547905b122284fa09a654be368d73e7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 05e09dfc70ae5bc4adf85562f48c5cc8c4874bc6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53907831"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055826"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Validación código con diagramas de dependencia
 
@@ -50,7 +49,7 @@ Para asegurarse de que código no entre en conflicto con el diseño, valide el c
 - Una solución que tiene un proyecto de modelado con un diagrama de dependencia. Este diagrama de dependencia debe vincularse a artefactos de proyectos de C# o Visual Basic que se desean validar. Consulte [crear diagramas de dependencia desde el código](../modeling/create-layer-diagrams-from-your-code.md).
 
 > [!NOTE]
-> Diagramas de dependencia no se admiten para los proyectos de .NET Core en Visual Studio 2017.
+> Diagramas de dependencia no se admiten para los proyectos de .NET Core en Visual Studio.
 
 Para ver qué ediciones de Visual Studio admiten esta característica, vea [compatibilidad con la edición de arquitectura y las herramientas de modelado](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
@@ -80,17 +79,17 @@ Se produce la validación de dependencias en tiempo real y los errores se muestr
 
 Puede vincular capas a sitios Web, documentos de Office, archivos de texto sin formato y archivos de proyectos que se comparten entre varias aplicaciones, pero el proceso de validación no los incluirá. Los errores de validación no aparecerán para las referencias a proyectos o ensamblados que están vinculados a capas independientes cuando no aparece ninguna dependencia entre esas capas. Tales referencias no se consideran dependencias a menos que el código utilice esas referencias.
 
-1.  En el diagrama de dependencia, seleccione una o varias capas, haga clic en la selección y, a continuación, haga clic en **ver vínculos**.
+1. En el diagrama de dependencia, seleccione una o varias capas, haga clic en la selección y, a continuación, haga clic en **ver vínculos**.
 
-2.  En **Explorador de capas**, examine el **admite validación** columna. Si el valor es false, el elemento no admite la validación.
+2. En **Explorador de capas**, examine el **admite validación** columna. Si el valor es false, el elemento no admite la validación.
 
 ## <a name="include-other-net-assemblies-and-projects-for-validation"></a>Incluir otros ensamblados y proyectos de .NET para su validación
 
 Al arrastrar elementos al diagrama de dependencia, las referencias a los ensamblados de .NET correspondientes o proyectos se agregan automáticamente a la **referencias de capa** carpeta en el proyecto de modelado. Esta carpeta contiene referencias a los ensamblados y proyectos que se analizan durante la validación. Puede incluir otros ensamblados .NET y proyectos para la validación sin arrastrarlos manualmente al diagrama de dependencia.
 
-1.  En **el Explorador de soluciones**, haga clic en el proyecto de modelado o **referencias de capa** carpeta y, a continuación, haga clic en **Agregar referencia**.
+1. En **el Explorador de soluciones**, haga clic en el proyecto de modelado o **referencias de capa** carpeta y, a continuación, haga clic en **Agregar referencia**.
 
-2.  En el **Agregar referencia** cuadro de diálogo, seleccione los ensamblados o proyectos y, a continuación, haga clic en **Aceptar**.
+2. En el **Agregar referencia** cuadro de diálogo, seleccione los ensamblados o proyectos y, a continuación, haga clic en **Aceptar**.
 
 ## <a name="validate-code-manually"></a>Validar código manualmente
 
@@ -98,19 +97,19 @@ Si tiene un diagrama abierto de dependencia que esté vinculado a elementos de l
 
 ### <a name="validate-code-from-an-open-dependency-diagram"></a>Validar el código de un diagrama de dependencia abierto
 
-1.  Haga clic en la superficie del diagrama y, a continuación, haga clic en **validar arquitectura**.
+1. Haga clic en la superficie del diagrama y, a continuación, haga clic en **validar arquitectura**.
 
     > [!NOTE]
     > De forma predeterminada, el **acción de compilación** propiedad en el archivo de diagrama (.layerdiagram) de dependencia se establece en **validar** para que el diagrama se incluye en el proceso de validación.
 
-     El **lista de errores** ventana notifica los errores que se producen. Para obtener más información sobre los errores de validación, consulte [entender y resolver errores de validación de capas](#UnderstandingValidationErrors).
+     El **lista de errores** ventana notifica los errores que se producen. Para obtener más información sobre los errores de validación, consulte [solucionar problemas de validación de capas](#troubleshoot-layer-validation-issues).
 
-2.  Para ver el origen de cada error, haga doble clic en el error en la **lista de errores** ventana.
+2. Para ver el origen de cada error, haga doble clic en el error en la **lista de errores** ventana.
 
     > [!NOTE]
     > Visual Studio podría mostrar un mapa de código en lugar del origen del error. Esto se produce cuando el código tiene una dependencia en un ensamblado que no se especifica en el diagrama de dependencia o el código le falta una dependencia que se especifica en el diagrama de dependencia. Revise el mapa de código o el código para determinar si debe existir la dependencia. Para obtener más información acerca de los mapas de código, vea [asignar dependencias en sus soluciones](../modeling/map-dependencies-across-your-solutions.md).
 
-3.  Para administrar los errores, vea [administrar errores de validación](#ManageErrors).
+3. Para administrar los errores, vea [resolver errores de validación de capas](#resolve-layer-validation-errors).
 
 ### <a name="validate-code-at-the-command-prompt"></a>Validar el código en el símbolo del sistema
 
@@ -148,7 +147,7 @@ Si tiene un diagrama abierto de dependencia que esté vinculado a elementos de l
 
      Se mostrará cualquier error que se produzca. Para obtener más información acerca de MSBuild, vea [MSBuild](../msbuild/msbuild.md) y [tarea MSBuild](../msbuild/msbuild-task.md).
 
-   Para obtener más información sobre los errores de validación, consulte [entender y resolver errores de validación de capas](#UnderstandingValidationErrors).
+   Para obtener más información sobre los errores de validación, consulte [solucionar problemas de validación de capas](#troubleshoot-layer-validation-issues).
 
 ### <a name="manage-validation-errors"></a>Administrar errores de validación
 
@@ -184,23 +183,23 @@ Use un editor de texto para abrir el archivo del proyecto de modelado (.modelpro
 
 \- o -
 
-1.  En **el Explorador de soluciones**, haga clic en el proyecto de modelado que contiene el diagrama de dependencias o diagramas y, a continuación, haga clic en **propiedades**.
+1. En **el Explorador de soluciones**, haga clic en el proyecto de modelado que contiene el diagrama de dependencias o diagramas y, a continuación, haga clic en **propiedades**.
 
-2.  En el **propiedades** ventana, establezca el proyecto de modelado **validar arquitectura** propiedad **True**.
+2. En el **propiedades** ventana, establezca el proyecto de modelado **validar arquitectura** propiedad **True**.
 
     Esto incluye el proyecto de modelado en el proceso de validación.
 
-3.  En **el Explorador de soluciones**, haga clic en el archivo de diagrama (.layerdiagram) de dependencia que se desea utilizar para la validación.
+3. En **el Explorador de soluciones**, haga clic en el archivo de diagrama (.layerdiagram) de dependencia que se desea utilizar para la validación.
 
-4.  En el **propiedades** ventana, asegúrese de que el diagrama **acción de compilación** propiedad está establecida en **validar**.
+4. En el **propiedades** ventana, asegúrese de que el diagrama **acción de compilación** propiedad está establecida en **validar**.
 
     Esto incluye el diagrama de dependencia en el proceso de validación.
 
-Para administrar los errores en la ventana Lista de errores, vea [administrar errores de validación](#ManageErrors).
+Para administrar los errores en la ventana Lista de errores, vea [resolver errores de validación de capas](#resolve-layer-validation-errors).
 
 ## <a name="troubleshoot-layer-validation-issues"></a>Solucionar problemas de validación de capas
 
-En la siguiente tabla se describen problemas de validación de capas y su solución. Estos problemas difieren de los errores que son resultado de conflictos entre el código y el diseño. Para obtener más información acerca de estos errores, vea [entender y resolver errores de validación de capas](#UnderstandingValidationErrors).
+En la siguiente tabla se describen problemas de validación de capas y su resolución. Estos problemas difieren de los errores que son resultado de conflictos entre el código y el diseño. Para obtener más información acerca de estos errores, vea [solucionar problemas de validación de capas](#troubleshoot-layer-validation-issues).
 
 |**Problema**|**Causa posible**|**Resolución**|
 |-|-|-|
@@ -236,6 +235,6 @@ En la sección siguiente se describe la sintaxis que se usa en estos errores, se
 
 ## <a name="see-also"></a>Vea también
 
-- [Validación dinámica de dependencias en Visual Studio 2017](https://blogs.msdn.microsoft.com/devops/2016/11/30/live-dependency-validation-in-visual-studio-2017/)
+- [Validación dinámica de dependencias en Visual Studio](https://devblogs.microsoft.com/devops/live-dependency-validation-in-visual-studio-2017/)
 - [Validar el sistema durante el desarrollo](../modeling/validate-your-system-during-development.md)
 - [Vídeo: Validar las dependencias de arquitectura en tiempo real](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)

@@ -1,14 +1,9 @@
 ---
 title: IntelliSense para Visual C# | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - IntelliSense [J#]
 - Visual C#, IntelliSense
@@ -17,13 +12,13 @@ ms.assetid: 79ca304d-dc1e-4dc9-a2a6-7808df2e588e
 caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 0d094a0272e5c90afa1a83a42543dd464f219a17
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: ea48e1807291e935081f01e821cffafa794104f5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862208"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075764"
 ---
 # <a name="visual-c-intellisense"></a>IntelliSense para Visual C#
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,15 +38,15 @@ Visual C# IntelliSense está disponible cuando se codifica en el editor y mientr
   
 - [Métodos de extensión](#ExtensionMethods)  
   
-  La lista de finalización en C# también es lo suficientemente inteligente como para filtrar los tokens irrelevantes y hacer una selección previa de un token en función del contexto. Para obtener más información, consulte [listas de finalización filtradas en C#](../misc/filtered-completion-lists-in-csharp.md) y [elementos de lista de finalización preseleccionada en C#](../misc/pre-selected-completion-list-items-in-csharp.md).  
+  La lista de finalización en C# también es lo suficientemente inteligente como para filtrar los tokens irrelevantes y hacer una selección previa de un token en función del contexto. Para más información, vea [Listas de finalización filtradas en C#](../misc/filtered-completion-lists-in-csharp.md) y [Elementos de la lista de finalización preseleccionada en C#](../misc/pre-selected-completion-list-items-in-csharp.md).  
   
-###  <a name="CodeSnippets"></a> Fragmentos de código en listas de finalización  
- En Visual C#, la lista de finalización incluye fragmentos de código para facilitar la inserción en el programa de cuerpos de código predefinidos. Los fragmentos de código aparecen en la lista de finalización como el [elemento Shortcut (fragmentos de código Intellisense)](http://msdn.microsoft.com/en-us/052cc97a-5c70-42f8-b398-4c3adf670cfa) del fragmento de código.  Para obtener más información sobre los fragmentos de código que están disponibles en Visual C# de manera predeterminada, vea [Fragmentos de código de Visual C#](../ide/visual-csharp-code-snippets.md).  
+### <a name="CodeSnippets"></a> Fragmentos de código en listas de finalización  
+ En Visual C#, la lista de finalización incluye fragmentos de código para facilitar la inserción en el programa de cuerpos de código predefinidos. Los fragmentos de código aparecen en la lista de finalización como el [elemento Shortcut (fragmentos de código Intellisense)](http://msdn.microsoft.com/052cc97a-5c70-42f8-b398-4c3adf670cfa) del fragmento de código.  Para obtener más información sobre los fragmentos de código que están disponibles en Visual C# de manera predeterminada, vea [Fragmentos de código de Visual C#](../ide/visual-csharp-code-snippets.md).  
   
-###  <a name="Keywords"></a> Palabras clave de lenguaje en listas de finalización  
+### <a name="Keywords"></a> Palabras clave de lenguaje en listas de finalización  
  En Visual C#, la lista de finalización también incluye palabras clave del lenguaje. Para obtener más información sobre las palabras claves del lenguaje C#, vea el artículo sobre [palabras clave de C#](http://msdn.microsoft.com/library/e929b0f2-4b92-4d37-8060-23d323b098ad).  
   
-###  <a name="ExtensionMethods"></a> Métodos de extensión en listas de finalización  
+### <a name="ExtensionMethods"></a> Métodos de extensión en listas de finalización  
  En Visual C#, la lista de finalización incluye métodos de extensión que están en el ámbito.  
   
 > [!NOTE]
@@ -64,23 +59,23 @@ Visual C# IntelliSense está disponible cuando se codifica en el editor y mientr
   
  Visual C# filtra las listas de finalización que aparecen para estos elementos:  
   
--   **Interfaces y clases base.** IntelliSense quita automáticamente los elementos de las listas de finalización de clase base e interfaz, tanto en las listas de interfaz y base de declaración de clases como en las listas de restricciones. Por ejemplo, las enumeraciones no aparecen en la lista de finalización de las clases base porque las enumeraciones no se pueden usar para clases base. La lista de finalización de clases base solo contiene interfaces y espacios de nombres. Si selecciona un elemento en la lista y luego escribe una coma, IntelliSense quita las clases base de la lista de finalización porque Visual C# no admite herencia múltiple. El mismo comportamiento se produce con las cláusulas de restricción.  
+- **Interfaces y clases base.** IntelliSense quita automáticamente los elementos de las listas de finalización de clase base e interfaz, tanto en las listas de interfaz y base de declaración de clases como en las listas de restricciones. Por ejemplo, las enumeraciones no aparecen en la lista de finalización de las clases base porque las enumeraciones no se pueden usar para clases base. La lista de finalización de clases base solo contiene interfaces y espacios de nombres. Si selecciona un elemento en la lista y luego escribe una coma, IntelliSense quita las clases base de la lista de finalización porque Visual C# no admite herencia múltiple. El mismo comportamiento se produce con las cláusulas de restricción.  
   
--   **Atributos**: cuando se aplica un atributo a un tipo, la lista de finalización se filtra para incluir únicamente los tipos que descienden de los espacios de nombres que contienen esos tipos, como <xref:System.Attribute>.  
+- **Atributos**: Cuando se aplica un atributo a un tipo, la lista de finalización se filtra para incluir únicamente los tipos que descienden de los espacios de nombres que contienen esos tipos, como <xref:System.Attribute>.  
   
--   Operadores `as` e `is`  
+- Operadores `as` e `is`  
   
--   **Cláusulas catch.**  
+- **Cláusulas catch.**  
   
--   **Inicializadores de objeto:** solo los miembros que se pueden inicializar aparecerán en la lista de finalización.  
+- **Inicializadores de objeto:** Solo los miembros que se pueden inicializar aparecerán en la lista de finalización.  
   
--   **Palabra clave new**: si se escribe `new` y luego se presiona la barra espaciadora, aparece una lista de finalización. Automáticamente se selecciona un elemento de la lista, que variará según el contexto del código. Por ejemplo, se seleccionan automáticamente elementos en la lista de finalización para las declaraciones y las instrucciones return de métodos.  
+- **Palabra clave new**: Si se escribe `new` y luego se presiona la barra espaciadora, aparece una lista de finalización. Automáticamente se selecciona un elemento de la lista, que variará según el contexto del código. Por ejemplo, se seleccionan automáticamente elementos en la lista de finalización para las declaraciones y las instrucciones return de métodos.  
   
--   **Operadores as e is:** cuando se presiona la BARRA ESPACIADORA después de haber escrito la palabra clave `as` o `is`, aparece automáticamente una lista de finalización filtrada.  
+- **como los operadores is y:** Cuando se presiona la barra espaciadora después de haber escrito la palabra clave `as` o `is`, aparece automáticamente una lista de finalización filtrada.  
   
--   Eventos: i se escribe la palabra clave `event`, la lista de finalización solo contiene tipos delegados.  
+- Eventos: al escribir la palabra clave `event`, la lista de finalización solo contiene tipos delegados.  
   
--   La ayuda de parámetros se ordena automáticamente por la primera sobrecarga de método que coincida con los parámetros que se especifican. Si existen varias sobrecargas de método, puede usar las flechas arriba y abajo para desplazarse a la siguiente sobrecarga posible de la lista.  
+- La ayuda de parámetros se ordena automáticamente por la primera sobrecarga de método que coincida con los parámetros que se especifican. Si existen varias sobrecargas de método, puede usar las flechas arriba y abajo para desplazarse a la siguiente sobrecarga posible de la lista.  
   
 ## <a name="most-recently-used-members"></a>Miembros usados más recientemente  
  IntelliSense recuerda los miembros que se han seleccionado recientemente en el cuadro emergente [Lista de miembros](../ide/using-intellisense.md) para autocompletar nombres de objetos. La siguiente vez que utiliza la lista de miembros, los miembros utilizados más recientemente se muestran en la parte superior. El historial de los miembros usados recientemente se borra entre cada sesión del IDE.  
@@ -114,7 +109,7 @@ Visual C# IntelliSense está disponible cuando se codifica en el editor y mientr
 ### <a name="implement-abstract-base-class"></a>Implementar una clase base abstracta  
  IntelliSense proporciona una opción útil para implementar miembros de una clase base abstracta de forma automática mientras se trabaja en el Editor de código. Normalmente, la implementación de miembros de una clase base abstracta requiere la creación de una nueva definición de método para cada método de la clase base abstracta en la clase derivada. Con IntelliSense, después de escribir el nombre de una clase base abstracta en una declaración de clase, se muestra una etiqueta inteligente. La etiqueta inteligente ofrece la opción de implementar los métodos de la clase base automáticamente.  
   
- El código auxiliar del método generado por la característica Implementar clases base abstractas está modelado por el fragmento de código definido en el archivo MethodStub.snippet. Los fragmentos de código son modificables. Para obtener más información, vea [Tutorial: Crear un fragmento de código](../ide/walkthrough-creating-a-code-snippet.md).  
+  El código auxiliar del método generado por la característica Implementar clases base abstractas está modelado por el fragmento de código definido en el archivo MethodStub.snippet. Los fragmentos de código son modificables. Para obtener más información, vea [Tutorial: Creación de un fragmento de código](../ide/walkthrough-creating-a-code-snippet.md).  
   
 ### <a name="generate-from-usage"></a>Generar a partir del uso  
  La característica **Generar a partir del uso** le permite usar clases y miembros antes de definirlos. Puede generar un código auxiliar para cualquier clase, constructor, método, propiedad, campo o enumeración que desee usar pero aún no haya definido. Puede generar nuevos tipos y miembros sin abandonar su ubicación actual en el código. Esto minimiza la interrupción del flujo de trabajo.  
@@ -164,6 +159,3 @@ Visual C# IntelliSense está disponible cuando se codifica en el editor y mientr
   
 ## <a name="see-also"></a>Vea también  
  [IDE de Visual Studio](../ide/visual-studio-ide.md)
-
-
-

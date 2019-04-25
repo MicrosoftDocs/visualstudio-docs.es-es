@@ -1,13 +1,9 @@
 ---
 title: Procedimiento Solucionar problemas de actualizaciones de proyecto incorrectas | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: troubleshooting
 f1_keywords:
 - VisualStudio.SourceControl.CannotOpenFromSourceControlDSW
 - vs.UpgradeProjectSolution.8.0
@@ -21,13 +17,13 @@ ms.assetid: 842fe448-c044-4343-8eae-d81711cf48ba
 caps.latest.revision: 31
 author: kraigb
 ms.author: kraigb
-manager: ghogen
-ms.openlocfilehash: 2e21feda11ef4d3405fa1488740fefe7c7238dc5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+manager: jillfra
+ms.openlocfilehash: 194dae93e3a013da366d454582b531a2cc4ff8b6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942023"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096340"
 ---
 # <a name="how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades"></a>Procedimiento Solucionar problemas de actualizaciones de proyecto de Visual Studio incorrectas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,11 +35,11 @@ A veces, Visual Studio no puede convertir totalmente un proyecto de una versión
 
 #### <a name="to-resolve-incorrect-file-paths"></a>Para resolver rutas de archivo incorrectas
 
-1.  Abra el archivo del proyecto en un editor de texto.
+1. Abra el archivo del proyecto en un editor de texto.
 
-2.  Examine las rutas de acceso que puedan ser incorrectas, sobre todo aquellas que contienen un número de versión de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+2. Examine las rutas de acceso que puedan ser incorrectas, sobre todo aquellas que contienen un número de versión de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
-3.  Modifique las rutas de archivo incorrectas para que apunten a los nuevos destinos.
+3. Modifique las rutas de archivo incorrectas para que apunten a los nuevos destinos.
 
 ## <a name="the-project-does-not-build-because-references-are-not-valid"></a>El proyecto no se compila porque las referencias no son válidas
  Al actualizar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], también podría estar actualizando la versión de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Si el proyecto contiene referencias desudadas en la versión más reciente de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], quizá no se resuelvan correctamente. Esto es especialmente probable en el caso de referencias que incluyen números de versión, por ejemplo, `Microsoft.VisualStudio.Shell.Interop.8.0`.

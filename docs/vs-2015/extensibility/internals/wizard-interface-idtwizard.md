@@ -1,27 +1,22 @@
 ---
 title: Interfaz de asistente (IDTWizard) | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - IDTWizard interface
 - wizards, interface
 ms.assetid: 09618d9d-d115-45b6-bccc-de328994b39c
 caps.latest.revision: 9
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 62ae4ab1137be452a1c769d16c153e4499a4a331
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 78867fa94851e373ae4d47cd82cd1084a941638c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51792533"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053031"
 ---
 # <a name="wizard-interface-idtwizard"></a>Interfaz de asistente (IDTWizard)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,23 +40,23 @@ STDMETHOD(Execute)(THIS_
   
  La siguiente información describe la <xref:EnvDTE.IDTWizard> interfaz que deben implementar los asistentes para trabajar en el [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE. Las llamadas IDE el <xref:EnvDTE.IDTWizard.Execute%2A> método en el asistente, pasa lo siguiente:  
   
--   El objeto DTE  
+- El objeto DTE  
   
      El objeto DTE es la raíz del modelo de automatización.  
   
--   El identificador para el cuadro de diálogo de ventana, como se muestra en el segmento de código, `hwndOwner ([in] long)`.  
+- El identificador para el cuadro de diálogo de ventana, como se muestra en el segmento de código, `hwndOwner ([in] long)`.  
   
      El asistente usa esto `hwndOwner` como el elemento primario de cuadro de diálogo del asistente.  
   
--   Parámetros de contexto de pasar a la interfaz como variante SAFEARRAY tal como se muestra en el segmento de código, `[in] SAFEARRAY (VARIANT)* ContextParams`.  
+- Parámetros de contexto de pasar a la interfaz como variante SAFEARRAY tal como se muestra en el segmento de código, `[in] SAFEARRAY (VARIANT)* ContextParams`.  
   
      Parámetros de contexto contienen una matriz de valores que son específicas del tipo de asistente que se está iniciando y el estado actual del proyecto. El IDE pasa los parámetros de contexto al asistente. Para obtener más información, consulte [parámetros de contexto](../../extensibility/internals/context-parameters.md).  
   
--   Parámetros personalizados de pasar a la interfaz como una variante SAFEARRAY tal como se muestra en el segmento de código, `[in] SAFEARRAY (VARIANT)* CustomParams`.  
+- Parámetros personalizados de pasar a la interfaz como una variante SAFEARRAY tal como se muestra en el segmento de código, `[in] SAFEARRAY (VARIANT)* CustomParams`.  
   
      Parámetros personalizados contienen una matriz de parámetros definido por el usuario. Un archivo .vsz pasa parámetros personalizados en el IDE. Los valores se determinan por el `Param=` instrucciones. Para obtener más información, consulte [parámetros personalizados](../../extensibility/internals/custom-parameters.md).  
   
--   Valores devueltos para la interfaz son  
+- Valores devueltos para la interfaz son  
   
     ```  
     wizardResultSuccess = -1,  
@@ -75,4 +70,3 @@ STDMETHOD(Execute)(THIS_
  [Parámetros personalizados](../../extensibility/internals/custom-parameters.md)   
  [Asistentes](../../extensibility/internals/wizards.md)   
  [Archivos de asistentes (.Vsz)](../../extensibility/internals/wizard-dot-vsz-file.md)
-

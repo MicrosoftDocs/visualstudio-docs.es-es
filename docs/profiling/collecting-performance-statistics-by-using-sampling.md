@@ -7,15 +7,15 @@ helpviewer_keywords:
 - sampling profiling method
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0cfae0277c1f3d84c939c06e08472a556e8eeaaa
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 97644776f4197e2f3286d29cbd3f746f7ecd0b15
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53865805"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62809657"
 ---
 # <a name="collect-performance-statistics-by-using-sampling"></a>Recopilar estadísticas de rendimiento mediante el muestreo
 

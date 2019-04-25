@@ -9,20 +9,19 @@ helpviewer_keywords:
 - constraints, architectural
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: f10323a1123b795f1fa6b09d52252b8038b1a732
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b9822dda92a096e3c497d468865d3ed9fd56e16d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53846170"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046922"
 ---
 # <a name="create-dependency-diagrams-from-your-code"></a>Crear diagramas de dependencia a partir del código
 
-Para visualizar la arquitectura de alto nivel, la lógica de su sistema de software, cree un *diagrama dependencias* en Visual Studio. Para asegurarse de que el código mantiene la coherencia con este diseño, valide el código con un diagrama de dependencia. Puede crear diagramas de dependencia para los proyectos de Visual C# y Visual Basic. Para ver qué ediciones de Visual Studio admiten esta característica, vea [compatibilidad con la edición de arquitectura y las herramientas de modelado](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+Para visualizar la arquitectura de alto nivel, la lógica de su sistema de software, cree un *diagrama dependencias* en Visual Studio. Para asegurarse de que el código mantiene la coherencia con este diseño, valide el código con un diagrama de dependencia. Puede crear diagramas de dependencia para los proyectos de Visual C# y Visual Basic. Para ver qué ediciones de Visual Studio admiten esta característica, vea [compatibilidad con la edición de arquitectura y las herramientas de modelado](../modeling/what-s-new-for-design-in-visual-studio.md#edition-support-for-architecture-and-modeling-tools).
 
 ![Crear un diagrama de dependencia](../modeling/media/layerdiagramvisualizecode.png)
 
@@ -42,24 +41,24 @@ Antes de crear un diagrama de dependencia, asegúrese de que su solución tiene 
 ### <a name="add-a-new-dependency-diagram-to-a-modeling-project"></a>Agregar un nuevo diagrama de dependencia a un proyecto de modelado
 
 > [!NOTE]
-> Diagramas de dependencia no se admiten para los proyectos de .NET Core en Visual Studio 2017.
+> Diagramas de dependencia no se admiten para los proyectos de .NET Core en Visual Studio.
 
-1.  En el **arquitectura** menú, elija **nuevo diagrama de dependencia**.
+1. En el **arquitectura** menú, elija **nuevo diagrama de dependencia**.
 
-2.  En **plantillas**, elija **diagrama dependencias**.
+2. En **plantillas**, elija **diagrama dependencias**.
 
-3.  Especifique un nombre para el diagrama.
+3. Especifique un nombre para el diagrama.
 
-4.  En **agregar a proyecto de modelado**, busque y seleccione un proyecto de modelado existente de la solución.
+4. En **agregar a proyecto de modelado**, busque y seleccione un proyecto de modelado existente de la solución.
 
-     O bien
+     -o bien-
 
      Elija **crear un nuevo proyecto de modelado** para agregar un nuevo proyecto de modelado a la solución.
 
     > [!NOTE]
     > El diagrama de dependencia debe existir dentro de un proyecto de modelado. Sin embargo, puede vincularlos a elementos en cualquier parte de la solución.
 
-5.  Asegúrese de guardar el proyecto de modelado y el diagrama de dependencia.
+5. Asegúrese de guardar el proyecto de modelado y el diagrama de dependencia.
 
 ## <a name="drag-and-drop-or-copy-and-paste-from-a-code-map"></a>Arrastrar y colocar, o copiar y pegar desde un mapa de código
 
@@ -102,19 +101,19 @@ Antes de crear un diagrama de dependencia, asegúrese de que su solución tiene 
 
  El número de una capa indica el número de artefactos vinculados a ella. Sin embargo, cuando lea este número, recuerde lo siguiente:
 
--   Si una capa se vincula a un artefacto que contiene otros artefactos, pero no se vincula directamente a estos otros artefactos, el número incluye únicamente el artefacto vinculado. Sin embargo, los demás artefactos se incluyen para el análisis durante la validación de capas.
+- Si una capa se vincula a un artefacto que contiene otros artefactos, pero no se vincula directamente a estos otros artefactos, el número incluye únicamente el artefacto vinculado. Sin embargo, los demás artefactos se incluyen para el análisis durante la validación de capas.
 
      Por ejemplo, si una capa está vinculada a un solo espacio de nombres, el número de artefactos vinculados es 1, aunque el espacio de nombres contenga clases. Si la capa tiene también vínculos a cada clase del espacio de nombres, el número incluirá las clases vinculadas.
 
--   Si una capa contiene otras que están vinculadas a artefactos, la capa contenedora también está vinculada a esos artefactos, incluso aunque el número de la capa contenedora no los incluya.
+- Si una capa contiene otras que están vinculadas a artefactos, la capa contenedora también está vinculada a esos artefactos, incluso aunque el número de la capa contenedora no los incluya.
 
 ## <a name="Managing"></a> Administrar vínculos entre capas y artefactos
 
-1.  En el diagrama de dependencia, abra el menú contextual para la capa y, a continuación, elija **ver vínculos**.
+1. En el diagrama de dependencia, abra el menú contextual para la capa y, a continuación, elija **ver vínculos**.
 
      **Explorador de capas** se muestran los vínculos de artefacto de la capa seleccionada.
 
-2.  Use las tareas siguientes para administrar estos vínculos:
+2. Use las tareas siguientes para administrar estos vínculos:
 
 |**En**|**En el Explorador de capas**|
 |-|-|
@@ -151,16 +150,17 @@ Antes de crear un diagrama de dependencia, asegúrese de que su solución tiene 
 ## <a name="Codemaps"></a> Detectar patrones y dependencias en un mapa de código
  Durante la creación de diagramas de dependencia, también puede crear **mapas de código**. Estos diagramas pueden ayudarle a detectar patrones y dependencias mientras explora el código. Use el Explorador de soluciones, la Vista de clases o el Examinador de objetos para explorar los ensamblados, los espacios de nombres y las clases, que a menudo corresponden a las capas existentes. Para obtener más información sobre mapas de código, vea:
 
--   [Asignar dependencias en las soluciones](../modeling/map-dependencies-across-your-solutions.md)
+- [Asignar dependencias en las soluciones](../modeling/map-dependencies-across-your-solutions.md)
 
--   [Usar mapas de código para depurar aplicaciones](../modeling/use-code-maps-to-debug-your-applications.md)
+- [Usar mapas de código para depurar aplicaciones](../modeling/use-code-maps-to-debug-your-applications.md)
 
--   [Buscar posibles problemas mediante analizadores de mapas de código](../modeling/find-potential-problems-using-code-map-analyzers.md)
+- [Buscar posibles problemas mediante analizadores de mapas de código](../modeling/find-potential-problems-using-code-map-analyzers.md)
 
 ## <a name="see-also"></a>Vea también
 
+- [Compatibilidad con la edición de arquitectura y modelado de herramientas](../modeling/what-s-new-for-design-in-visual-studio.md#edition-support-for-architecture-and-modeling-tools)
 - [Vídeo: Validar las dependencias de arquitectura en tiempo real](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)
-- [Diagramas de dependencia: Referencia](../modeling/layer-diagrams-reference.md)
-- [Diagramas de dependencia: Directrices](../modeling/layer-diagrams-guidelines.md)
+- [Diagramas de dependencia: referencia](../modeling/layer-diagrams-reference.md)
+- [Diagramas de dependencia: directrices](../modeling/layer-diagrams-guidelines.md)
 - [Validación de código con diagramas de dependencia](../modeling/validate-code-with-layer-diagrams.md)
 - [Visualizar el código](../modeling/visualize-code.md)

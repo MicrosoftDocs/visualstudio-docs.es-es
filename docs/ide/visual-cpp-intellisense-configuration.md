@@ -7,12 +7,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 64b14c27ffce1d2818b1ce38cdea72f63f9a7e28
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: aee7faef7b33c8dd87a056077991a915df9b64a0
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53864879"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194063"
 ---
 # <a name="configure-a-c-project-for-intellisense"></a>Configurar un proyecto de C++ para IntelliSense
 
@@ -52,7 +52,7 @@ Para obtener más información, vea [Cómo: Habilitar IntelliSense para proyecto
 
 ### <a name="open-folder-projects"></a>Proyectos Abrir carpeta
 
-En el caso de los proyectos CMake, asegúrese de que las rutas de acceso #include están correctamente especificadas para todas las configuraciones en CMakeLists.txt. Es posible que otros tipos de proyecto requieran un archivo CppProperties.json. Para más información, consulte [Configurar IntelliSense con CppProperties.json](/cpp/ide/non-msbuild-projects#cppproperties). Asegúrese de que las rutas de acceso sean correctas para cada configuración definida en el archivo.
+En el caso de los proyectos CMake, asegúrese de que las rutas de acceso #include están correctamente especificadas para todas las configuraciones en CMakeLists.txt. Es posible que otros tipos de proyecto requieran un archivo CppProperties.json. Para más información, consulte [Configurar IntelliSense con CppProperties.json](/cpp/build/open-folder-projects-cpp#configure-intellisense-and-browsing-hints-with-cpppropertiesjson). Asegúrese de que las rutas de acceso sean correctas para cada configuración definida en el archivo.
 
 Si hay un error de sintaxis en el archivo CppProperties.json, IntelliSense será incorrecto en los archivos afectados. Visual Studio mostrará el error en la ventana de salida.
 
@@ -72,9 +72,9 @@ Este problema se manifiesta de dos maneras habituales en Visual Studio:
 
    ![El analizador de etiquetas ofrece definir una función ya existente](media/vcpp-intellisense-tag-parser-function.png)
 
-Para corregir estos problemas, agregue un archivo llamado **cpp.hint** en la raíz del directorio de la solución. Para más información, consulte [Archivos de indicaciones](/cpp/ide/hint-files).
+Para corregir estos problemas, agregue un archivo llamado **cpp.hint** en la raíz del directorio de la solución. Para más información, consulte [Archivos de indicaciones](/cpp/build/reference/hint-files).
 
-**Visual Studio 2017 versión 15.7** El analizador de errores aparece en la ventana Lista de errores.
+Los errores del analizador de etiquetas aparecen en la ventana **Lista de errores**.
 
 ## <a name="validate-project-settings-with-diagnostic-logging"></a>Validar la configuración del proyecto con el registro de diagnóstico
 
@@ -107,7 +107,7 @@ Sin embargo, es posible que en algunos casos, Visual Studio no actualice la base
 
 ## <a name="troubleshooting-intellisense-build-failures"></a>Solución de problemas y errores de compilación de IntelliSense
 
-Una compilación de IntelliSense no genera archivos binarios, pero de todos modos pueden producir un error. Una causa posible de error son los archivos personalizados .props o .targets. En Visual Studio 2017 versión 15.6, los errores de compilación solo de IntelliSense se registran en la ventana de salida. Para verlos, establezca **Mostrar resultados desde** en **Solución**:
+Una compilación de IntelliSense no genera archivos binarios, pero de todos modos pueden producir un error. Una causa posible de error son los archivos personalizados .props o .targets. En Visual Studio 2017 versión 15.6 y posteriores, los errores de compilación solo de IntelliSense se registran en la ventana de salida. Para verlos, establezca **Mostrar resultados desde** en **Solución**:
 
 ![Ventana de salida para errores de la solución](media/vcpp-intellisense-output-window.png)
 

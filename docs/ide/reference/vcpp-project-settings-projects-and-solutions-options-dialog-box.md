@@ -1,7 +1,6 @@
 ---
 title: Configuración de proyecto de VC++, Proyectos y soluciones, Opciones (Cuadro de diálogo)
 ms.date: 08/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Projects.VCBuild
@@ -16,24 +15,24 @@ helpviewer_keywords:
 ms.assetid: 56420efd-6a95-464e-b890-e2b38c48d66a
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cab1a6841a321489091bcf1e62dbf2d8eeafacdc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2d3f81659930f75cda3c4ec0873837f7486e8b60
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53855028"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62789330"
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>Configuración de proyecto de VC++, Proyectos y soluciones, Opciones (Cuadro de diálogo)
 Este cuadro de diálogo le permite definir la configuración del proyecto y la compilación de [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] relacionada con el registro, el rendimiento y los tipos de archivos auxiliares.
 
 ### <a name="to-access-this-dialog-box"></a>Para obtener acceso a este cuadro de diálogo
 
-1.  En el menú **Herramientas** , haga clic en **Opciones**.
+1. En el menú **Herramientas** , haga clic en **Opciones**.
 
-2.  Seleccione **Proyectos y soluciones** y **Configuración de proyecto de VC++**.
+2. Seleccione **Proyectos y soluciones** y **Configuración de proyecto de VC++**.
 
 ## <a name="build-logging"></a>Registro de compilación
  **Sí**
@@ -94,5 +93,5 @@ No se usan los datos de proyecto almacenados en caché. Se analizan los archivos
 
 ## <a name="see-also"></a>Vea también
 
-- [Compilación de programas de C/C++](/cpp/build/building-c-cpp-programs)
+- [Compilación de programas de C/C++](/cpp/build/projects-and-build-systems-cpp)
 - [Referencia de compilación de C/C++](/cpp/build/reference/c-cpp-building-reference)

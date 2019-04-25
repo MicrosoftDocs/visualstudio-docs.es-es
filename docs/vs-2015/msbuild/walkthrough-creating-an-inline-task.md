@@ -1,14 +1,9 @@
 ---
 title: 'Tutorial: Creación de una tarea insertada | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 helpviewer_keywords:
 - MSBuild, tutorial
 - MSBuild, tasks
@@ -16,18 +11,17 @@ ms.assetid: 438194cb-668c-41a9-a7e2-c118d14c1ea7
 caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a399e8285b7b041488a4cecdf2007f8fd1647b2d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 77f57eeda2f193170f4cd4f8b09d92989962e7fd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49840723"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061598"
 ---
 # <a name="walkthrough-creating-an-inline-task"></a>Tutorial: Crear una tarea insertada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Las tareas de MSBuild se crean normalmente compilando una clase que implementa la interfaz <xref:Microsoft.Build.Framework.ITask>. A partir de .NET Framework versión 4, se pueden crear tareas insertadas en el archivo del proyecto. No es necesario crear un ensamblado independiente para hospedar la tarea. Para obtener más información, vea [Tareas insertadas](../msbuild/msbuild-inline-tasks.md).  
   
  En este tutorial se muestra la forma de crear y ejecutar estas tareas insertadas:  
@@ -53,15 +47,15 @@ Las tareas de MSBuild se crean normalmente compilando una clase que implementa l
   
 #### <a name="to-create-and-modify-a-project-file"></a>Para crear y modificar un archivo de proyecto  
   
-1.  En el menú **Archivo** de Visual Studio, haga clic en **Nuevo** y, a continuación, **Proyecto**.  
+1. En el menú **Archivo** de Visual Studio, haga clic en **Nuevo** y, a continuación, **Proyecto**.  
   
-2.  En el cuadro de diálogo **Nuevo proyecto**, seleccione el tipo de proyecto de Visual C# y, a continuación, seleccione la plantilla **Aplicación de Windows Forms**. En el cuadro **Nombre** , escriba `InlineTasks`. Escriba una **ubicación** para la solución, por ejemplo, `D:\`. Asegúrese de que la casilla **Crear directorio para la solución** esté activada, la opción **Agregar al control de código fuente** esté desactivada y el **Nombre de la solución** sea `InlineTasks`.  
+2. En el cuadro de diálogo **Nuevo proyecto**, seleccione el tipo de proyecto de Visual C# y, a continuación, seleccione la plantilla **Aplicación de Windows Forms**. En el cuadro **Nombre** , escriba `InlineTasks`. Escriba una **ubicación** para la solución, por ejemplo, `D:\`. Asegúrese de que la casilla **Crear directorio para la solución** esté activada, la opción **Agregar al control de código fuente** esté desactivada y el **Nombre de la solución** sea `InlineTasks`.  
   
      Haga clic en **Aceptar** para crear el archivo del proyecto.  
   
-3.  En el **Explorador de soluciones**, haga clic con el botón derecho en el nodo de proyecto InlineTasks y, a continuación, haga clic en **Descargar el proyecto**.  
+3. En el **Explorador de soluciones**, haga clic con el botón derecho en el nodo de proyecto InlineTasks y, a continuación, haga clic en **Descargar el proyecto**.  
   
-4.  Haga clic con el botón derecho de nuevo en el nodo del proyecto y, a continuación, haga clic en **Edit InlineTasks.csproj** (Editar InlineTasks.csproj).  
+4. Haga clic con el botón derecho de nuevo en el nodo del proyecto y, a continuación, haga clic en **Edit InlineTasks.csproj** (Editar InlineTasks.csproj).  
   
      El archivo del proyecto aparece en el editor de código.  
   
@@ -263,6 +257,3 @@ Las tareas de MSBuild se crean normalmente compilando una clase que implementa l
  [Tareas insertadas](../msbuild/msbuild-inline-tasks.md)   
  [Tareas](../msbuild/msbuild-tasks.md)   
  [Destinos](../msbuild/msbuild-targets.md)
-
-
-

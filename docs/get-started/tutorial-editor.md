@@ -1,30 +1,29 @@
 ---
 title: Introducción a la edición en el editor de código
 ms.date: 11/30/2017
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.custom: get-started
 ms.topic: tutorial
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c3953f69d263b948e84f0d1aa48d878cd39afe6
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: 3aacddcd5cd27435b92b4689999e6d9dc5ca190b
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53803338"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58069819"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Aprender a usar el editor de código
 
 En esta introducción de 10 minutos al editor de código, se agrega código a un archivo para ver algunas de las formas en que Visual Studio hace que escribir y comprender el código (así como desplazarse por él) sea más fácil.
 
 > [!TIP]
-> Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) para instalarlo de forma gratuita.
+> Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) para instalarlo de forma gratuita.
 
 En este artículo se presupone que ya está familiarizado con un lenguaje de programación. Si no lo está, le sugerimos que primero lea guías de inicio rápido de programación, como para crear una aplicación web con [Python](../ide/quickstart-python.md) o [C#](../get-started/csharp/tutorial-aspnet-core.md), o bien crear una aplicación de consola con [Visual Basic](../ide/quickstart-visual-basic-console.md) o [C++](../ide/getting-started-with-cpp-in-visual-studio.md).
 
@@ -32,9 +31,21 @@ En este artículo se presupone que ya está familiarizado con un lenguaje de pro
 
 Empezaremos creando un archivo y agregándole código.
 
-1. Abra Visual Studio y, en el menú **Archivo** de la barra de menús, elija **Nuevo** > **Archivo**.
+::: moniker range="vs-2017"
 
-1. En el cuadro de diálogo **Nuevo archivo**, en la categoría **General**, elija **Clase de Visual C#** y, después, elija **Abrir**.
+1. Abra Visual Studio.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Abra Visual Studio. Presione **Esc** o haga clic en **Continuar sin código** en la ventana de inicio para abrir el entorno de desarrollo.
+
+::: moniker-end
+
+2. En el menú **Archivo** de la barra de menús, elija **Nuevo** > **Archivo**.
+
+3. En el cuadro de diálogo **Nuevo archivo**, en la categoría **General**, elija **Clase de Visual C#** y, después, elija **Abrir**.
 
    Se abre un archivo nuevo en el editor con el esqueleto de una clase de C#. (Observe que no es necesario crear un proyecto de Visual Studio completo para aprovechar algunas de las ventajas que ofrece el editor de código; lo único que se necesita es un archivo de código).
 

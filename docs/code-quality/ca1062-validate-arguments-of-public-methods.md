@@ -1,7 +1,6 @@
 ---
 title: 'CA1062: Validar argumentos de métodos públicos'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA1062
@@ -12,18 +11,18 @@ helpviewer_keywords:
 - ValidateArgumentsOfPublicMethods
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b3b9461c72b21fcb2b77590786f47b90f5a98f5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 274b01a67974db08d9ec016a18ec115bcfac2452
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53860759"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55907976"
 ---
 # <a name="ca1062-validate-arguments-of-public-methods"></a>CA1062: Validar argumentos de métodos públicos
 

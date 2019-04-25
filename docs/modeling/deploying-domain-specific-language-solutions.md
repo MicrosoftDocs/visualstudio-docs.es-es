@@ -6,22 +6,21 @@ helpviewer_keywords:
 - Domain-Specific Language, deployment
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 96718a0a8c3693dd5ff57a356a1da2ddaa1ab5bd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7c17160fec7a1e8240edafc28174f1675946b5a5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53943069"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083641"
 ---
 # <a name="deploying-domain-specific-language-solutions"></a>Implementar soluciones de lenguajes específicos de dominio
 Puede instalar un idioma específico de dominio en su propio equipo o en otros equipos. Visual Studio ya debe instalarse en el equipo de destino.
 
--   [Implementación mediante MSI y VSIX de un DSL](../modeling/msi-and-vsix-deployment-of-a-dsl.md)
+- [Implementación mediante MSI y VSIX de un DSL](../modeling/msi-and-vsix-deployment-of-a-dsl.md)
 
--   [Varios DSL en una solución](../modeling/multiple-dsls-in-one-solution.md)
+- [Varios DSL en una solución](../modeling/multiple-dsls-in-one-solution.md)
 
--   [Implementación de VS Shell](../modeling/vs-shell-deployment.md)
+- [Implementación de VS Shell](../modeling/vs-shell-deployment.md)

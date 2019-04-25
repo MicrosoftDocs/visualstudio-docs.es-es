@@ -1,14 +1,9 @@
 ---
-title: 'CA1822: Marcar el miembro como estático | Microsoft Docs'
-ms.custom: ''
+title: 'CA1822: Marcar el miembro como estático | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - MarkMembersAsStatic
 - CA1822
@@ -20,24 +15,24 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 7b85d12038d4c505f912dd2f9440829f2c80679c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 42c6f0d333d1f7ee3f657b9c57c4154e9f824128
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49183500"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659779"
 ---
-# <a name="ca1822-mark-members-as-static"></a>CA1822: Marcar el miembro como estático
+# <a name="ca1822-mark-members-as-static"></a>CA1822: Marcar miembros como estáticos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Para obtener la documentación más reciente de Visual Studio 2017, consulte [CA1822: marcar el miembro como estático](https://docs.microsoft.com/visualstudio/code-quality/ca1822-mark-members-as-static) en docs.microsoft.com.  
+Para obtener la documentación más reciente de Visual Studio, consulte [CA1822: Marcar el miembro como estático](https://docs.microsoft.com/visualstudio/code-quality/ca1822-mark-members-as-static).  
   
 |||  
 |-|-|  
 |TypeName|MarkMethodsAsStatic|  
 |Identificador de comprobación|CA1822|  
 |Categoría|Microsoft.Performance|  
-|Cambio problemático|No problemático: si el miembro no es visible fuera del ensamblado, independientemente del cambio que realice. No problemático: si simplemente cambia el miembro a un miembro de instancia con el `this` palabra clave.<br /><br /> Problemático: si cambia al miembro de un miembro de instancia a un miembro estático y está visible fuera del ensamblado.|  
+|Cambio problemático|No problemático: si el miembro no es visible fuera del ensamblado, independientemente del cambio que realice.<br /><br /> No problemático: si simplemente cambia el miembro a un miembro de instancia con el `this` palabra clave.<br /><br /> Problemático: si cambia al miembro de un miembro de instancia a un miembro estático y está visible fuera del ensamblado.|  
   
 ## <a name="cause"></a>Motivo  
  Un miembro que no tiene acceso a datos de instancia no está marcado como estático (compartido en [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]).  
@@ -52,9 +47,8 @@ Para obtener la documentación más reciente de Visual Studio 2017, consulte [CA
  Es seguro suprimir una advertencia de esta regla para código lanzado al mercado anteriormente para que la solución sería un cambio importante.  
   
 ## <a name="related-rules"></a>Reglas relacionadas  
- [CA1811: Evitar código privado al que no se llama](../code-quality/ca1811-avoid-uncalled-private-code.md)  
+ [CA1811: Evitar código privado fuera de lugar](../code-quality/ca1811-avoid-uncalled-private-code.md)  
   
  [CA1812: Evitar las clases internas sin instancia](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)  
   
- [CA1804: Quitar variables locales no utilizadas](../code-quality/ca1804-remove-unused-locals.md)
-
+ [CA1804: Quitar a variables locales no utilizadas](../code-quality/ca1804-remove-unused-locals.md)

@@ -1,14 +1,9 @@
 ---
-title: 'Cómo: editar un valor del registro | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Editar un valor del registro | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.register.edit
 dev_langs:
@@ -27,24 +22,24 @@ ms.assetid: e27b6bd8-e6d4-4f1d-8a86-9f4047bb1167
 caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c41b54ea075415dac7114413f9cdc15cc6a07a12
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0ea1e932f7651439dcb9a1ff85094bd30e5239bb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764759"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116171"
 ---
-# <a name="how-to-edit-a-register-value"></a>Cómo: Editar un valor de registro
+# <a name="how-to-edit-a-register-value"></a>Procedimiento Editar un valor del registro
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La ventana registros sólo está disponible si la depuración de nivel de dirección está habilitada en el **opciones** cuadro de diálogo, **depuración** nodo.  
+La ventana Registros solo está disponible si está habilitada la depuración de nivel de dirección en el cuadro de diálogo **Opciones**, nodo **Depuración**.  
   
 ### <a name="to-change-the-value-of-a-register"></a>Para cambiar el valor de un registro  
   
-1.  En el **registra** ventana, utilice la tecla TAB o el mouse para mover la inserción del punto en el valor que desee cambiar. Cuando empiece a escribir, el cursor deberá estar situado delante del valor que desea sobrescribir.  
+1. En la ventana **Registros**, utilice la tecla TAB o el mouse para mover el punto de inserción hasta el valor que desee cambiar. Cuando empiece a escribir, el cursor deberá estar situado delante del valor que desea sobrescribir.  
   
-2.  Escriba el nuevo valor.  
+2. Escriba el nuevo valor.  
   
     > [!CAUTION]
     >  La modificación de los valores de registro (especialmente en los registros EIP y EBP) puede afectar a la ejecución del programa.  
@@ -53,9 +48,4 @@ La ventana registros sólo está disponible si la depuración de nivel de direcc
     >  La modificación de valores de punto flotante puede dar lugar a ligeras imprecisiones debido a la conversión de decimal a binario de los componentes fraccionarios. Incluso una operación de edición aparentemente inocua puede causar cambios en alguno de los bits menos significativos de un registro de punto flotante.  
   
 ## <a name="see-also"></a>Vea también  
- [Cómo: Usar la ventana Registros](../debugger/how-to-use-the-registers-window.md)
-
-
-
-
-
+ [Cómo: Uso de la ventana Registros](../debugger/how-to-use-the-registers-window.md)

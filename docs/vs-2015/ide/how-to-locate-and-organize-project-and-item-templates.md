@@ -1,14 +1,9 @@
 ---
-title: 'Cómo: Localizar y organizar plantillas de proyectos y de elementos | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Localizar y organizar el proyecto y plantillas de elemento | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - project templates [Visual Studio], locations
 - custom template locations [Visual Studio]
@@ -20,15 +15,15 @@ ms.assetid: 71f9ed52-c9c9-4818-9bce-c279ffaa0438
 caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 2a3954e5d18db6585c8dbda017773969f96b33de
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 1f4788ab9fa23049ded8107fe1d33a9419b79c00
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830982"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091244"
 ---
-# <a name="how-to-locate-and-organize-project-and-item-templates"></a>Cómo: Localizar y organizar plantillas de proyectos y de elementos
+# <a name="how-to-locate-and-organize-project-and-item-templates"></a>Procedimiento Localizar y organizar el proyecto y plantillas de elemento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Los archivos de plantilla se deben colocar en una ubicación que Visual Studio reconozca de forma que estas aparezcan en los cuadros de diálogo **Nuevo proyecto** y **Agregar nuevo elemento**. Puede crear subcategorías personalizadas para las plantillas de modo que estas subcategorías aparezcan también en la interfaz de usuario.  
@@ -56,7 +51,7 @@ Los archivos de plantilla se deben colocar en una ubicación que Visual Studio r
   
   Por ejemplo, el directorio siguiente contiene las plantillas de proyecto personalizadas de [!INCLUDE[csprcs](../includes/csprcs-md.md)]:  
   
-  C:\Documents and Settings\nombreDeUsuario\Mis documentos\\< versión de Visual Studio\>\Templates\ProjectTemplates\Visual C# \  
+  C:\Documents and Settings\UserName\My Documents\\<versión de Visual Studio\>\Templates\ProjectTemplates\Visual C#\  
   
   Las plantillas personalizadas no incluyen un subdirectorio para las plantillas de otros idiomas. Puede cambiar el directorio predeterminado para las plantillas personalizadas en el cuadro de diálogo **Opciones**, bajo **Entorno\Proyectos y soluciones**.  
   
@@ -95,23 +90,23 @@ Los archivos de plantilla se deben colocar en una ubicación que Visual Studio r
   
 ##### <a name="to-create-new-installed-item-template-categories"></a>Para crear nuevas categorías de plantillas de elementos instaladas  
   
-1.  Cree una carpeta en la carpeta de lenguaje del directorio de plantillas instaladas. Por ejemplo, para crear la categoría Web para las plantillas de elementos de [!INCLUDE[csprcs](../includes/csprcs-md.md)], se  crearía el directorio siguiente:  
+1. Cree una carpeta en la carpeta de lenguaje del directorio de plantillas instaladas. Por ejemplo, para crear la categoría Web para las plantillas de elementos de [!INCLUDE[csprcs](../includes/csprcs-md.md)], se  crearía el directorio siguiente:  
   
      \\*VisualStudioInstallationDirectory*\Common7\IDE\ItemTemplates\CSharp\1033\Web\  
   
-2.  Coloque todas las plantillas de esta categoría en la nueva carpeta.  
+2. Coloque todas las plantillas de esta categoría en la nueva carpeta.  
   
-3.  Cierre todas las instancias de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+3. Cierre todas las instancias de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-4.  En el menú **Inicio**, haga clic en **Ejecutar**, escriba **cmd** y haga clic en **Aceptar**.  
+4. En el menú **Inicio**, haga clic en **Ejecutar**, escriba **cmd** y haga clic en **Aceptar**.  
   
-5.  En el símbolo del sistema, busque el directorio que contiene devenv.exe y escriba **devenv /setup**.  
+5. En el símbolo del sistema, busque el directorio que contiene devenv.exe y escriba **devenv /setup**.  
   
-6.  Ejecute [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+6. Ejecute [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-7.  Cree un proyecto o abra uno existente.  
+7. Cree un proyecto o abra uno existente.  
   
-8.  En el menú **Proyecto** , haga clic en **Agregar nuevo elemento**.  
+8. En el menú **Proyecto** , haga clic en **Agregar nuevo elemento**.  
   
 9. Compruebe que la categoría Web aparece en el panel **Tipos de proyecto** del cuadro de diálogo **Agregar nuevo elemento**.  
   
@@ -122,7 +117,7 @@ Los archivos de plantilla se deben colocar en una ubicación que Visual Studio r
   
 1. Cree una carpeta en la carpeta del lenguaje del directorio de plantillas de proyecto personalizadas. Por ejemplo, para crear la categoría HelloWorld para las plantillas de [!INCLUDE[csprcs](../includes/csprcs-md.md)], crearía el directorio siguiente:  
   
-    Documentos \My\\< versión de Visual Studio\>\Templates\ProjectTemplates\CSharp\HelloWorld\  
+    \My Documents\\<versión de Visual Studio\>\Templates\ProjectTemplates\CSharp\HelloWorld\  
   
 2. Coloque todas las plantillas de esta categoría en la nueva carpeta.  
   
@@ -134,30 +129,30 @@ Los archivos de plantilla se deben colocar en una ubicación que Visual Studio r
   
 ##### <a name="to-create-new-custom-item-template-categories"></a>Para crear nuevas categorías de plantillas de elementos personalizadas  
   
-1.  Cree una carpeta en la carpeta del lenguaje en el directorio de plantillas de elementos personalizadas. Por ejemplo, para crear la categoría HelloWorld para las plantillas de [!INCLUDE[csprcs](../includes/csprcs-md.md)], se  crearía el directorio siguiente:  
+1. Cree una carpeta en la carpeta del lenguaje en el directorio de plantillas de elementos personalizadas. Por ejemplo, para crear la categoría HelloWorld para las plantillas de [!INCLUDE[csprcs](../includes/csprcs-md.md)], se  crearía el directorio siguiente:  
   
-     Documentos \My\\< versión de Visual Studio\>\Templates\ItemTemplates\CSharp\HelloWorld\  
+     \My Documents\\<versión de Visual Studio\>\Templates\ItemTemplates\CSharp\HelloWorld\  
   
-2.  Coloque todas las plantillas de esta categoría en la nueva carpeta.  
+2. Coloque todas las plantillas de esta categoría en la nueva carpeta.  
   
-3.  Cree un proyecto o abra uno existente.  
+3. Cree un proyecto o abra uno existente.  
   
-4.  En el menú **Proyecto** , haga clic en **Agregar nuevo elemento**.  
+4. En el menú **Proyecto** , haga clic en **Agregar nuevo elemento**.  
   
-5.  Compruebe que la categoría HelloWorld aparece en el panel **Tipos de proyecto** del cuadro de diálogo **Agregar nuevo elemento**.  
+5. Compruebe que la categoría HelloWorld aparece en el panel **Tipos de proyecto** del cuadro de diálogo **Agregar nuevo elemento**.  
   
 ### <a name="displaying-templates-in-parent-categories"></a>Mostrar las plantillas de categorías primarias  
  Puede permitir que las plantillas contenidas en subcategorías se muestren en sus categorías primarias utilizando el elemento `NumberOfParentCategoriesToRollUp` en el archivo .vstemplate. Estos pasos son idénticos para plantillas de proyecto y plantillas de elementos.  
   
 ##### <a name="to-display-templates-in-parent-categories"></a>Para mostrar las plantillas en categorías primarias  
   
-1.  Busque el archivo .zip que contiene la plantilla.  
+1. Busque el archivo .zip que contiene la plantilla.  
   
-2.  Extraiga el archivo .zip.  
+2. Extraiga el archivo .zip.  
   
-3.  Abra el archivo .vstemplate en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+3. Abra el archivo .vstemplate en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-4.  En el elemento `TemplateData`, agregue un elemento `NumberOfParentCategoriesToRollUp`. Por ejemplo, el código siguiente hace que la plantilla esté visible en la categoría primaria, pero no en los niveles superiores.  
+4. En el elemento `TemplateData`, agregue un elemento `NumberOfParentCategoriesToRollUp`. Por ejemplo, el código siguiente hace que la plantilla esté visible en la categoría primaria, pero no en los niveles superiores.  
   
     ```  
     <TemplateData>  
@@ -169,20 +164,17 @@ Los archivos de plantilla se deben colocar en una ubicación que Visual Studio r
     </TemplateData>  
     ```  
   
-5.  Guarde y cierre el archivo .vstemplate.  
+5. Guarde y cierre el archivo .vstemplate.  
   
-6.  Seleccione los archivos de la plantilla, haga clic con el botón derecho en la selección, haga clic en **Enviar a** y, después, en **Carpetas comprimidas (en zip)**. Los archivos se comprimen en un archivo .zip.  
+6. Seleccione los archivos de la plantilla, haga clic con el botón derecho en la selección, haga clic en **Enviar a** y, después, en **Carpetas comprimidas (en zip)**. Los archivos se comprimen en un archivo .zip.  
   
-7.  Elimine los archivos de plantilla extraídos y el archivo .zip de plantilla antiguo.  
+7. Elimine los archivos de plantilla extraídos y el archivo .zip de plantilla antiguo.  
   
-8.  Coloque el nuevo archivo .zip en el directorio que contenía el archivo .zip eliminado.  
+8. Coloque el nuevo archivo .zip en el directorio que contenía el archivo .zip eliminado.  
   
 ## <a name="see-also"></a>Vea también  
  [Personalizar plantillas](../ide/customizing-project-and-item-templates.md)   
  [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [NumberOfParentCategoriesToRollUp (Plantillas de Visual Studio)](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md)   
  [Cómo: Crear plantillas de proyecto](../ide/how-to-create-project-templates.md)   
- [Cómo: Crear plantillas de elementos](../ide/how-to-create-item-templates.md)
-
-
-
+ [Cómo: crear plantillas de elemento](../ide/how-to-create-item-templates.md)

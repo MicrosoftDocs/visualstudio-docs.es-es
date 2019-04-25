@@ -1,38 +1,33 @@
 ---
-title: 'Cómo: instalar un complemento de Control de código fuente | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Instalar un complemento de Control de código fuente | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - installation [Visual Studio SDK], source control plug-ins
 - source control plug-ins, installing
 ms.assetid: 9e2e01d9-7beb-42b2-99b2-86995578afda
 caps.latest.revision: 33
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 5f151653387c95e77d775bfc9f37cbdfb9f824e7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: fe03499200d3528a1aed286550191fd9dfcc1451
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51741628"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039847"
 ---
-# <a name="how-to-install-a-source-control-plug-in"></a>Cómo: instalar un complemento de Control de código fuente
+# <a name="how-to-install-a-source-control-plug-in"></a>Procedimiento Instalar un complemento de control de código fuente
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Creación de un control de código fuente complemento implica tres pasos:  
   
-1.  Cree un archivo DLL con las funciones definidas en la sección de referencia de API de complemento de Control de código fuente de esta documentación.  
+1. Cree un archivo DLL con las funciones definidas en la sección de referencia de API de complemento de Control de código fuente de esta documentación.  
   
-2.  Implemente las funciones definidas por la API de complemento de Control de código fuente. Cuando [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] llamadas, disponer de interfaces y los cuadros de diálogo desde el complemento.  
+2. Implemente las funciones definidas por la API de complemento de Control de código fuente. Cuando [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] llamadas, disponer de interfaces y los cuadros de diálogo desde el complemento.  
   
-3.  Registrar la DLL mediante la realización de entradas de registro correspondientes.  
+3. Registrar la DLL mediante la realización de entradas de registro correspondientes.  
   
 ## <a name="integration-with-visual-studio"></a>Integración con Visual Studio  
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] admite complementos de control de código fuente que se ajustan a la API de complemento de Control de código fuente.  
@@ -42,7 +37,7 @@ Creación de un control de código fuente complemento implica tres pasos:
   
 ##### <a name="to-register-the-source-control-plug-in-dll"></a>Para registrar el control de origen al archivo DLL de complemento  
   
-1.  Agregue dos entradas bajo la clave HKEY_LOCAL_MACHINE en la subclave SOFTWARE que especifica la subclave de nombre de empresa seguida de la subclave de nombre de producto. El patrón es HKEY_LOCAL_MACHINE\SOFTWARE\\ *[nombre de compañía]*\\ *[nombre de producto]*\\ *[entrada]* = valor. Las dos entradas siempre se llaman SCCServerName y SCCServerPath. Cada uno es una cadena normal.  
+1. Agregue dos entradas bajo la clave HKEY_LOCAL_MACHINE en la subclave SOFTWARE que especifica la subclave de nombre de empresa seguida de la subclave de nombre de producto. El patrón es HKEY_LOCAL_MACHINE\SOFTWARE\\ *[nombre de compañía]*\\ *[nombre de producto]*\\ *[entrada]* = valor. Las dos entradas siempre se llaman SCCServerName y SCCServerPath. Cada uno es una cadena normal.  
   
      Por ejemplo, si el nombre de la empresa es Microsoft y su producto de control de código fuente se denomina SourceSafe, esta ruta de acceso del registro sería HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SourceSafe. En esta subclave, la primera entrada, SCCServerName, es una cadena legible por el usuario de nomenclatura de su producto. La segunda entrada, SCCServerPath, es la ruta de acceso completa al origen de controlar la DLL del complemento que debe conectarse el IDE. A continuación proporciona entradas del registro de ejemplo:  
   
@@ -54,13 +49,13 @@ Creación de un control de código fuente complemento implica tres pasos:
     > [!NOTE]
     >  El SCCServerPath es la ruta de acceso completa para el complemento de SourceSafe. El complemento de control de código fuente usará nombres de empresa y los productos diferentes pero las mismas rutas de entrada del registro.  
   
-2.  Las siguientes entradas del registro opcional pueden usarse para modificar el comportamiento de su complemento de control de código fuente. Estas entradas van en la misma subclave como SccServerName y SccServerPath.  
+2. Las siguientes entradas del registro opcional pueden usarse para modificar el comportamiento de su complemento de control de código fuente. Estas entradas van en la misma subclave como SccServerName y SccServerPath.  
   
-    -   La entrada HideInVisualStudioregistry puede usarse si no desea que el origen de control-complemento aparezca en la lista de selección de complemento de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Esta entrada también afectará el cambio automático para el complemento de control de código fuente. Un uso posible para esta entrada es si proporciona un paquete de control de código fuente que reemplaza el complemento de control de código fuente, pero desea que sea más fácil para el usuario para la migración desde el complemento para el paquete de control de código fuente de control de origen. Cuando se instala el paquete de control de código fuente, establece esta entrada del registro, que oculta el complemento.  
+    - La entrada HideInVisualStudioregistry puede usarse si no desea que el origen de control-complemento aparezca en la lista de selección de complemento de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Esta entrada también afectará el cambio automático para el complemento de control de código fuente. Un uso posible para esta entrada es si proporciona un paquete de control de código fuente que reemplaza el complemento de control de código fuente, pero desea que sea más fácil para el usuario para la migración desde el complemento para el paquete de control de código fuente de control de origen. Cuando se instala el paquete de control de código fuente, establece esta entrada del registro, que oculta el complemento.  
   
          HideInVisualStudio es un valor DWORD y se establece en 1 para ocultar el complemento o 0 para mostrar el complemento. Si no aparece la entrada del registro, el comportamiento predeterminado es mostrar el complemento.  
   
-    -   La entrada de registro DisableSccManager puede usarse para deshabilitar u ocultar el **iniciar \<servidor de Control de código fuente >** opción de menú que aparece normalmente en el **archivo**  ->   **Control de código fuente** submenú. Al seleccionar este menú opción llamadas la [SccRunScc](../../extensibility/sccrunscc-function.md) función. El complemento de control de código fuente no puede admitir un programa externo y, por tanto, es posible que desee deshabilitar u ocultar incluso la **iniciar** opción de menú.  
+    - La entrada de registro DisableSccManager puede usarse para deshabilitar u ocultar el **iniciar \<servidor de Control de código fuente >** opción de menú que aparece normalmente en el **archivo**  ->   **Control de código fuente** submenú. Al seleccionar este menú opción llamadas la [SccRunScc](../../extensibility/sccrunscc-function.md) función. El complemento de control de código fuente no puede admitir un programa externo y, por tanto, es posible que desee deshabilitar u ocultar incluso la **iniciar** opción de menú.  
   
          DisableSccManager es un valor DWORD se establece en 0 para habilitar el **iniciar \<servidor de Control de código fuente >** opción de menú, establézcalo en 1 para deshabilitar la opción de menú y establecido en 2 para ocultar la opción de menú. Si no aparece esta entrada del registro, el comportamiento predeterminado es mostrar la opción de menú.  
   
@@ -69,7 +64,7 @@ Creación de un control de código fuente complemento implica tres pasos:
     |HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SourceSafe\HideInVisualStudio|1|  
     |HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SourceSafe\DisableSccManager|1|  
   
-3.  Agregue la subclave SourceCodeControlProvider, bajo la clave HKEY_LOCAL_MACHINE en la subclave SOFTWARE.  
+3. Agregue la subclave SourceCodeControlProvider, bajo la clave HKEY_LOCAL_MACHINE en la subclave SOFTWARE.  
   
      En esta subclave, la entrada del registro ProviderRegKey se establece en una cadena que representa la subclave que se han colocado en el registro en el paso 1. El patrón es HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\ProviderRegKey = SOFTWARE\\ *[nombre de compañía]*\\ *[nombre de producto]*.  
   
@@ -82,7 +77,7 @@ Creación de un control de código fuente complemento implica tres pasos:
     > [!NOTE]
     >  El complemento de control de código fuente se utiliza la misma subclave y nombres de entrada, pero el valor será diferente.  
   
-4.  Cree una subclave denominada InstalledSCCProviders bajo la subclave SourceCodeControlProvider y, a continuación, coloque una entrada en dicha subclave.  
+4. Cree una subclave denominada InstalledSCCProviders bajo la subclave SourceCodeControlProvider y, a continuación, coloque una entrada en dicha subclave.  
   
      El nombre de esta entrada es el nombre legible por el usuario del proveedor (igual que el valor especificado para la entrada SCCServerName) y el valor es, una vez más, la subclave que se creó en el paso 1. El patrón es HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders\\ *[nombre para mostrar]* = SOFTWARE\\ *[nombre de compañía]* \\ *[nombre de producto]*.  
   
@@ -125,4 +120,3 @@ Creación de un control de código fuente complemento implica tres pasos:
   
 ## <a name="see-also"></a>Vea también  
  [Introducción](../../extensibility/internals/getting-started-with-source-control-plug-ins.md)
-

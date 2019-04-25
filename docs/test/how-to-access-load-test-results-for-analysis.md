@@ -13,16 +13,15 @@ helpviewer_keywords:
 ms.assetid: b0a3e694-2894-479b-b270-7e61e9fafacd
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 74c30506dacd4b156fa7d065b11478fcf5e63765
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 958322e57340c356e8807deacb81e208441f4b4b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53890681"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55943082"
 ---
-# <a name="how-to-access-load-test-results-for-analysis"></a>Procedimiento para acceder a los resultados de pruebas de carga para el análisis
+# <a name="how-to-access-load-test-results-for-analysis"></a>Filtrar para acceder a los resultados de pruebas de carga para el análisis
 
 Al ejecutar una prueba de carga desde el Editor de pruebas de carga, los resultados de pruebas de carga se abren automáticamente y la prueba de carga en ejecución se muestra en el **Analizador de pruebas de carga**. Al ejecutar una prueba de carga desde la línea de comandos, debe obtener acceso a los resultados de pruebas de carga manualmente.
 

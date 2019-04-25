@@ -9,26 +9,26 @@ ms.assetid: c3a14d28-d811-4ff3-bd09-21dce14025ca
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 7e4366061cc6eba29f630cb51757ddc2ace58970
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+manager: jillfra
+ms.openlocfilehash: dfa68202d7f73d45b8422bb34c90954528d6af7b
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53066253"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324778"
 ---
 # <a name="getting-started-with-debugging-in-visual-studio-2015"></a>Introducción a la depuración en Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio 2015 proporciona un conjunto integrado y eficaz de herramientas de compilación y depuración de proyectos. En este tema verá cómo empezar a usar el conjunto más básico de características de depuración de la interfaz de usuario.
 
- Nota: Los vínculos a características más avanzadas y a temas específicos de la plataforma (o característica) están en la parte inferior de esta página.
+ Nota: los vínculos a características más avanzadas y a temas específicos de la plataforma (o característica) están en la parte inferior de esta página.
 
 ## <a name="my-code-doesnt-work-help-me-visual-studio-2015"></a>Mi código no funciona. ¡Ayuda, Visual Studio 2015!
  Ha ideado el editor y ha creado parte del código. Ahora, quiere empezar a depurar ese código. En Visual Studio 2015, al igual que en la mayoría de los IDE, hay dos fases de depuración: compilar el código para detectar y resolver errores de proyecto y de compilador; y ejecutar ese código en el entorno para detectar y resolver errores de tiempo de ejecución y dinámicos.
 
 ### <a name="configuring-a-build"></a>Configurar una compilación
- Hay dos tipos básicos de configuración de compilación: **depurar** y **versión**. La primera configuración genera un archivo ejecutable más lento y más grande que permite una experiencia de depuración en tiempo de ejecución interactiva y más completa, pero que nunca se debe enviar. La segunda crea un archivo ejecutable más rápido y optimizado, adecuado para enviar (al menos desde la perspectiva del compilador).
+ Hay dos tipos básicos de configuración de compilación: **Depuración** y **Versión**. La primera configuración genera un archivo ejecutable más lento y más grande que permite una experiencia de depuración en tiempo de ejecución interactiva y más completa, pero que nunca se debe enviar. La segunda crea un archivo ejecutable más rápido y optimizado, adecuado para enviar (al menos desde la perspectiva del compilador).
 
  La configuración de compilación predeterminada es **Depuración**.
 
@@ -44,7 +44,7 @@ Visual Studio 2015 proporciona un conjunto integrado y eficaz de herramientas de
 
  Para empezar, use **Depuración** y **x86** como configuración de compilación y plataforma, respectivamente. Cuando haya terminado la codificación y la depuración, cambie la configuración a **Versión** y elija una plataforma de destino específica. (Las versiones anteriores de Visual Studio proporcionan una plataforma predeterminada **AnyCPU** para los proyectos de código de .NET).
 
- Nota: Al compilar un proyecto, se usan también los valores de configuración y plataforma para determinar la ruta de acceso al directorio del proyecto que se creará para almacenar el archivo ejecutable. Normalmente, esta es **\<ruta-al-proyecto>\\<nombre-proyecto>\\<configuración\>\\<plataforma\>**. Por ejemplo, un proyecto con una configuración de `Debug` y una plataforma de `x86` se encontraría en `Projects\MyProjectNameHere\MyProjectNameHere\bin\Debug\x86`. Esto puede ser útil si tiene sus propias herramientas o scripts que administran estos ejecutables compilados.
+ Nota: al compilar un proyecto, se usan también los valores de configuración y plataforma para determinar la ruta de acceso al directorio del proyecto que se creará para almacenar el archivo ejecutable. Normalmente, esta es **\<ruta-al-proyecto>\\<nombre-proyecto>\>\\<configuración\>\\<plataforma\>**. Por ejemplo, un proyecto con una configuración de `Debug` y una plataforma de `x86` se encontraría en `Projects\MyProjectNameHere\MyProjectNameHere\bin\Debug\x86`. Esto puede ser útil si tiene sus propias herramientas o scripts que administran estos ejecutables compilados.
 
 ### <a name="building-your-code"></a>Compilar el código
  Una vez configurada la compilación, es el momento de compilar el proyecto. La manera más sencilla de hacerlo es presionar F7, pero también puede iniciar la compilación seleccionando **Compilar->Compilar solución** en el menú principal.
@@ -184,7 +184,7 @@ Visual Studio 2015 proporciona un conjunto integrado y eficaz de herramientas de
  ![Ventana de Visual Studio 2015 Diagnostic Tools](../ide/media/vs-ide-gs-debug-diagnostic-tools.PNG "Vs_ide_gs_debug_diagnostic_tools")
 
 ### <a name="running-unit-tests"></a>Ejecutar pruebas unitarias
- Las pruebas unitarias son programas que actúan sobre rutas de acceso a código en su aplicación o servicio. Visual Studio instala los entornos de pruebas unitarias de Microsoft tanto para código administrado como nativo. Use un entorno de pruebas unitarias para crear pruebas unitarias, ejecutarlas y notificar los resultados de las mismas. Cuando realice cambios, vuelva a ejecutar las pruebas unitarias para probar que el código sigue funcionando correctamente. Si usa Visual Studio 2015 Enterprise, puede ejecutar las pruebas automáticamente después de cada compilación.
+ Las pruebas unitarias son programas que actúan sobre rutas de acceso a código en su aplicación o servicio. Visual Studio 2015 instala los entornos de pruebas unitarias de Microsoft tanto para código administrado como nativo. Use un entorno de pruebas unitarias para crear pruebas unitarias, ejecutarlas y notificar los resultados de las mismas. Cuando realice cambios, vuelva a ejecutar las pruebas unitarias para probar que el código sigue funcionando correctamente. Si usa Visual Studio 2015 Enterprise, puede ejecutar las pruebas automáticamente después de cada compilación.
 
  Para empezar, lea [Generar pruebas unitarias para el código con IntelliTest](../test/generate-unit-tests-for-your-code-with-intellitest.md).
 

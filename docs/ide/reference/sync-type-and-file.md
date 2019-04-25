@@ -1,22 +1,21 @@
 ---
 title: Cambio de un nombre de archivo para que coincida con un tipo
 ms.date: 01/26/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 42e1d3cad1752649446a35abd863390166a57271
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 90783dcd609094659517d994c3a4d4e0610b7735
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53834586"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55940274"
 ---
 # <a name="sync-a-type-to-a-filename-or-a-filename-to-a-type-refactoring"></a>Refactorización de sincronización de un tipo con un nombre de archivo o de un nombre de archivo con un tipo
 
@@ -31,6 +30,9 @@ Esta refactorización se aplica a lo siguiente:
 **Cuándo:** Se ha cambiado el nombre de un archivo o un tipo, y aún no se ha actualizado el archivo o el tipo correspondiente para que coincidan.
 
 **Por qué:** La colocación de un tipo en un archivo con otro nombre, o viceversa, dificulta encontrar lo que se busca. Al cambiar el nombre del tipo o del archivo, es más fácil leer el código y navegar hasta él.
+
+> [!NOTE]
+> Esta refactorización aún no está disponible para proyectos de .NET Standard y .NET Core.
 
 ## <a name="how-to"></a>Procedimiento
 
@@ -62,8 +64,6 @@ Esta refactorización se aplica a lo siguiente:
    - Visual Basic: En el ejemplo siguiente, el nombre de archivo **Employee.vb** se ha cambiado a **Person.vb** para que coincida con el nombre de tipo.
 
        ![Resultado de la inserción (Visual Basic)](media/synctype-result-vb.png)
-
-> [NOTA] Esta refactorización aún no está disponible para proyectos de .NET Standard y .NET Core.
 
 ## <a name="see-also"></a>Vea también
 

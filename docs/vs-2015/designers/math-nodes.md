@@ -1,25 +1,20 @@
 ---
 title: Nodos matemáticos | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: adc225cc-1cf5-4f7c-9b00-e7ac8450b6b9
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: bab77bbed9f14ccc81429c37ad367d7d51709871
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: c2971a13e82e4b31f985be6db2a8a32167a3f74b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49305778"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54796227"
 ---
 # <a name="math-nodes"></a>Nodos matemáticos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,6 +53,3 @@ En el Diseñador de sombras, los nodos matemáticos realizan operaciones algebra
 |**Sqrt**|Calcula la raíz cuadrada de la entrada especificada, por componente.<br /><br /> Para todos los componentes del resultado, se calcula la raíz cuadrada del componente correspondiente.<br /><br /> **Entrada:**<br /><br /> `X`: `float`, `float2`, `float3` o `float4`<br /> Los valores para los que se va a calcular la raíz cuadrada.<br /><br /> **Salida:**<br /><br /> `Output`: igual que la entrada `X`<br /> La raíz cuadrada, por componente.|Ninguna|  
 |**Subtract**|Calcula la diferencia por componente de las entradas especificadas.<br /><br /> Para todos los componentes del resultado, el componente correspondiente de la entrada `Y` se resta del componente correspondiente de la entrada `X`. Se puede usar para calcular el vector que se extiende desde la primera entrada a la segunda.<br /><br /> **Entrada:**<br /><br /> `X`: `float`, `float2`, `float3` o `float4`<br /> Los valores de los que se va a restar.<br /><br /> `Y`: igual que la entrada `X`<br /> Los valores que se van a restar de la entrada `X`.<br /><br /> **Salida:**<br /><br /> `Output`: igual que la entrada `X`<br /> La diferencia, por componente.|Ninguna|  
 |**Transform 3D Vector**|Transforma el vector 3D especificado en un espacio diferente.<br /><br /> Se puede usar para poner puntos o vectores en un espacio común para que se puedan usar para realizar cálculos significativos.<br /><br /> **Entrada:**<br /><br /> `Vector`: `float3`<br /> Vector que se va a transformar.<br /><br /> **Salida:**<br /><br /> `Output`: `float3`<br /> Valor transformado.|**Desde el sistema**<br /> Espacio nativo del vector.<br /><br /> **Al sistema**<br /> Espacio en el que transformar el vector.|
-
-
-

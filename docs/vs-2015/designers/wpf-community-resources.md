@@ -1,24 +1,20 @@
 ---
 title: Recursos de la comunidad de WPF | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology: vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 89604bcf-da25-4180-a1d2-c5f22ab67bb6
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 7ebfbc4d20de9cb540fdfcd9362de2280933a37c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 63a4e207172d4f726091691985e7d1f84bb2e708
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53832182"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54776647"
 ---
 # <a name="wpf-community-resources"></a>Recursos de la comunidad de WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

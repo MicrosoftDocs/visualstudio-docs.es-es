@@ -2,21 +2,20 @@
 title: Diseñador de flujo de trabajo - ExistsInCollection&lt;T&gt; Diseñador de actividad
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
 f1_keywords:
 - System.Activities.Statements.ExistsInCollection`1.UI
 ms.assetid: 0acf9a13-caf5-4bb4-ba22-ec37d2b7267a
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb790bd7665bc5e9384dbc2e7426b0dd97065db0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 06892bcfdca33e5e77e8c01f06f594849e5293e5
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53952934"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55909497"
 ---
 # <a name="existsincollectiont-activity-designer"></a>ExistsInCollection\<T > Diseñador de actividad
 
@@ -47,6 +46,6 @@ La tabla siguiente muestra la <xref:System.Activities.Statements.ExistsInCollect
 ## <a name="see-also"></a>Vea también
 
 - [Colección](../workflow-designer/collection-activity-designers.md)
-- [AddToCollection\<T >](../workflow-designer/addtocollection-t-activity-designer.md)
-- [ClearCollection\<T >](../workflow-designer/clearcollection-t-activity-designer.md)
-- [RemoveFromCollection\<T >](../workflow-designer/removefromcollection-t-activity-designer.md)
+- [AddToCollection\<T>](../workflow-designer/addtocollection-t-activity-designer.md)
+- [ClearCollection\<T>](../workflow-designer/clearcollection-t-activity-designer.md)
+- [RemoveFromCollection\<T>](../workflow-designer/removefromcollection-t-activity-designer.md)

@@ -1,25 +1,24 @@
 ---
 title: Usar conjuntos de reglas para especificar las reglas C++ que se van a ejecutar
 ms.date: 04/28/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: mikeblome
 ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a556b0bb051ea25b438f91696b5e55b0c984115c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d4d7dfc1f010b860653edbe14fa7af9050bddba4
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53873540"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323658"
 ---
 # <a name="use-rule-sets-to-specify-the-c-rules-to-run"></a>Usar conjuntos de reglas para especificar las reglas de C++ en ejecución
 
 En Visual Studio, puede crear y modificar una personalizada *conjunto de reglas* para satisfacer las necesidades concretas del proyecto asociadas con el análisis de código. Los conjuntos de reglas predeterminado se almacenan en `%VSINSTALLDIR%\Team Tools\Static Analysis Tools\Rule Sets`.
 
-**Visual Studio 2017 versión 15.7** puede crear conjuntos de reglas personalizadas con cualquier texto editor y aplicarlas en las compilaciones de línea de comandos con independencia de lo que usa el sistema de compilación. Para obtener más información, consulte [/ analyze: ruleset](/cpp/build/reference/analyze-code-analysis).
+**Visual Studio 2017 versión 15.7 y versiones posterior** puede crear conjuntos de reglas personalizadas con cualquier texto editor y aplicarlas en las compilaciones de línea de comandos con independencia de lo que usa el sistema de compilación. Para obtener más información, consulte [/ analyze: ruleset](/cpp/build/reference/analyze-code-analysis).
 
 Para crear una regla personalizada de C++ en Visual Studio, un proyecto de C o C++ debe estar abierto en el IDE de Visual Studio. Y, a continuación, abra un conjunto de reglas estándar en el editor de conjunto de reglas, a continuación, agregar o quitar reglas concretas y, opcionalmente, cambiar la acción que se produce cuando el análisis de código determina que se ha infringido una regla.
 
@@ -83,8 +82,9 @@ Puede crear un conjunto de reglas personalizado en el texto del editor, almacén
 
 El ejemplo siguiente se muestra que una regla básica de establece el archivo que puede usar como punto de partida:
 
-```xml
+::: moniker range="vs-2017"
 
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <RuleSet Name="New Rule Set" Description=" " ToolsVersion="15.0">
   <Rules AnalyzerId="Microsoft.Analyzers.NativeCodeAnalysis" RuleNamespace="Microsoft.Rules.Native">
@@ -93,3 +93,19 @@ El ejemplo siguiente se muestra que una regla básica de establece el archivo qu
   </Rules>
 </RuleSet>
 ```
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<RuleSet Name="New Rule Set" Description=" " ToolsVersion="16.0">
+  <Rules AnalyzerId="Microsoft.Analyzers.NativeCodeAnalysis" RuleNamespace="Microsoft.Rules.Native">
+    <Rule Id="C6001" Action="Warning" />
+    <Rule Id="C26494" Action="Warning" />
+  </Rules>
+</RuleSet>
+```
+
+::: moniker-end

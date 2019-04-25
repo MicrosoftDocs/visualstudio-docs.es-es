@@ -6,29 +6,30 @@ helpviewer_keywords:
 - Domain-Specific Language, generated code
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: b47fe1e80f2441c729dd2d971bfadffb80dfbd04
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: 9d8ce41d6532a7c389d20872c35a216a96910578
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54270299"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087774"
 ---
 # <a name="understanding-the-dsl-code"></a>Introducción al código DSL
+
 Una solución de lenguaje específico de dominio (DSL) genera una API que puede usar para leer y actualizar las instancias del DSL en Visual Studio. Esta API se define en el código que se genera a partir de la definición de DSL. Este tema describe la API que se genera.
 
 ## <a name="the-example-solution-component-diagrams"></a>Solución de ejemplo: Diagrama de componentes
- Para crear la solución que es el origen de la mayoría de los ejemplos de este tema, cree un DSL desde el **modelos de componentes** plantilla de solución. Esta es una de las plantillas estándar que aparece al crear una nueva solución de DSL.
+
+Para crear la solución que es el origen de la mayoría de los ejemplos de este tema, cree un DSL desde el **modelos de componentes** plantilla de solución. Esta es una de las plantillas estándar que aparece al crear una nueva solución de DSL.
 
 > [!NOTE]
->  La plantilla de DSL de diagramas de componentes no está relacionado con los diagramas de componentes UML que se pueden crear mediante el menú de la arquitectura en Visual Studio. En el **nuevo proyecto** cuadro de diálogo, expanda **otros tipos de proyecto\extensibilidad** y, a continuación, haga clic en **Diseñador de lenguaje específico de dominio**.
+> Se llama a la plantilla de DSL de diagramas de componentes **Diseñador de lenguaje específico de dominio**.
 
- Si no está familiarizado con esta plantilla de solución, presione F5 y experimente. En concreto, tenga en cuenta que los puertos se crean arrastrando una herramienta de puerto a un componente, y que puede conectar puertos.
+Presione **F5** y experimentar si no está familiarizado con esta plantilla de solución. En concreto, tenga en cuenta que los puertos se crean arrastrando una herramienta de puerto a un componente, y que puede conectar puertos.
 
- ![Componentes y puertos interconectados](../modeling/media/componentsample.png)
+![Componentes y puertos interconectados](../modeling/media/componentsample.png)
 
 ## <a name="the-structure-of-the-dsl-solution"></a>Estructura de la solución de DSL
  El **Dsl** proyecto define la API para su DSL. El **DslPackage** proyecto define cómo se integra con Visual Studio. También puede agregar sus propios proyectos, que también pueden contener código generado a partir del modelo.
@@ -44,22 +45,22 @@ Una solución de lenguaje específico de dominio (DSL) genera una API que puede 
 
  Le recomendamos que no edite el código generado directamente, porque las ediciones se perderán al volver a compilar la solución. En su lugar, para personalizar el DSL:
 
--   Ajuste los numerosos parámetros de la definición de DSL.
+- Ajuste los numerosos parámetros de la definición de DSL.
 
--   Escriba clases parciales en archivos de código diferentes para invalidar los métodos que se definen en clases generadas o se heredan de ellas. En algunos casos, deberá establecer el **genera doble derivada** opción de una clase en la definición de DSL, para poder invalidar un método generado.
+- Escriba clases parciales en archivos de código diferentes para invalidar los métodos que se definen en clases generadas o se heredan de ellas. En algunos casos, deberá establecer el **genera doble derivada** opción de una clase en la definición de DSL, para poder invalidar un método generado.
 
--   Establecer opciones en la definición de DSL que hacen que el código generado proporcione 'ganchos' para su propio código.
+- Establecer opciones en la definición de DSL que hacen que el código generado proporcione 'ganchos' para su propio código.
 
      Por ejemplo, si establece la **tiene Custom Constructor** opción de una clase de dominio y, a continuación, compile la solución, verá mensajes de error. Al hacer doble clic en uno de estos mensajes de error, verá comentarios en el código generado que explican lo que su código personalizado debe proporcionar.
 
--   Escriba sus propias plantillas de texto para generar código específico para su aplicación. Puede usar archivos de inclusión para compartir partes de las plantillas que son comunes a muchos proyectos, y puede crear plantillas de proyecto de Visual Studio para configurar los proyectos que se inicializan con su propia estructura de archivos.
+- Escriba sus propias plantillas de texto para generar código específico para su aplicación. Puede usar archivos de inclusión para compartir partes de las plantillas que son comunes a muchos proyectos, y puede crear plantillas de proyecto de Visual Studio para configurar los proyectos que se inicializan con su propia estructura de archivos.
 
 ## <a name="generated-files-in-dsl"></a>Archivos generados en DSL
  Los siguientes archivos generados aparecen en la **Dsl** proyecto.
 
  *Sudsl* `Schema.xsd`
 
- Esquema de los archivos que contienen instancias de su DSL. Este archivo se copia en la compilación (**bin**) directory. Cuando instale su DSL, puede copiar este archivo en **\Program Files\Microsoft Visual Studio 11.0\Xml\Schemas** para que se pueden validar los archivos de modelo. Para obtener más información, consulte [implementar soluciones de lenguajes específicos de dominio](../modeling/deploying-domain-specific-language-solutions.md).
+ Esquema de los archivos que contienen instancias de su DSL. Este archivo se copia en la compilación (**bin**) directory. Cuando instale su DSL, puede copiar este archivo en **\Program Files\Microsoft Visual Studio 11.0\Xml\Schemas** para que se pueden validar los archivos de modelo. Para obtener más información, vea [Implementación de soluciones de lenguaje específico de dominio](../modeling/deploying-domain-specific-language-solutions.md).
 
  Si personaliza la serialización estableciendo las opciones en DSL Explorer (Explorador de DSL), el esquema cambiará como corresponda. Sin embargo, si escribe su propio código de serialización, este archivo podría no representar ya el esquema actual. Para obtener más información, consulte [personalizar el almacenamiento de archivos y serialización XML](../modeling/customizing-file-storage-and-xml-serialization.md).
 
@@ -138,7 +139,7 @@ Una solución de lenguaje específico de dominio (DSL) genera una API que puede 
 
  Contiene cadenas que se podrían mostrar al usuario, tales como descripciones de las clases y propiedades de dominio, nombres de propiedad, etiquetas de cuadro de herramientas o mensajes de error estándar, entre otras. También contiene imágenes e iconos de herramienta para formas de imagen.
 
- Este archivo se enlaza en el ensamblado compilado y proporciona los valores predeterminados de estos recursos. Puede localizar su DSL creando un ensamblado satélite que contenga una versión localizada de los recursos. Esta versión se usará cuando se instale el DSL en una referencia cultural que coincida con los recursos localizados. Para obtener más información, consulte [implementar soluciones de lenguajes específicos de dominio](../modeling/deploying-domain-specific-language-solutions.md).
+ Este archivo se enlaza en el ensamblado compilado y proporciona los valores predeterminados de estos recursos. Puede localizar su DSL creando un ensamblado satélite que contenga una versión localizada de los recursos. Esta versión se usará cuando se instale el DSL en una referencia cultural que coincida con los recursos localizados. Para obtener más información, vea [Implementación de soluciones de lenguaje específico de dominio](../modeling/deploying-domain-specific-language-solutions.md).
 
  `DomainRelationships.cs`
 
@@ -341,11 +342,11 @@ explorerWindow.TreeContainer.ObjectModelBrowser.SelectedNode = treeNode;
 > [!WARNING]
 >  Si edita el archivo .tt para incluir recursos como iconos o imágenes, asegúrese de que el recurso se incluye en la compilación de VSIX. En el Explorador de soluciones, seleccione el archivo y asegúrese de que el **incluir en VSIX** propiedad es `True`.
 
- Este archivo controla cómo se empaqueta el DSL en una extensión de integración de Visual Studio (VSIX). Para obtener más información, consulte [implementar soluciones de lenguajes específicos de dominio](../modeling/deploying-domain-specific-language-solutions.md).
+ Este archivo controla cómo se empaqueta el DSL en una extensión de integración de Visual Studio (VSIX). Para obtener más información, vea [Implementación de soluciones de lenguaje específico de dominio](../modeling/deploying-domain-specific-language-solutions.md).
 
 ## <a name="see-also"></a>Vea también
 
 - [Cómo definir lenguajes específicos de dominio](../modeling/how-to-define-a-domain-specific-language.md)
 - [Introducción a los modelos, las clases y las relaciones](../modeling/understanding-models-classes-and-relationships.md)
 - [Personalizar y ampliar lenguajes específicos de dominio](../modeling/customizing-and-extending-a-domain-specific-language.md)
-- [Escribir código para personalizar lenguajes específicos de dominio](../modeling/writing-code-to-customise-a-domain-specific-language.md)
+- [Escribir código para personalizar un lenguaje específico de dominio](../modeling/writing-code-to-customise-a-domain-specific-language.md)

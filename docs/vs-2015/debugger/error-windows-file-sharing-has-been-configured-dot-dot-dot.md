@@ -1,14 +1,9 @@
 ---
-title: 'Error: el uso compartido de archivos de Windows se configuró... | Microsoft Docs'
-ms.custom: ''
+title: 'Error: Uso compartido de archivos de Windows se ha configurado... | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.debug.error.remote_credentials_prohibited
 dev_langs:
@@ -20,13 +15,13 @@ ms.assetid: c45a1b74-61ec-4c64-9e2c-13051a4f50a5
 caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 30a2fd01828d92fadeb901305f56ad8c65b863d3
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 96d65ae615522bcee43ddf5e8181e96eecc0d958
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51803921"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040862"
 ---
 # <a name="error-windows-file-sharing-has-been-configured"></a>Error: Se ha configurado el uso compartido de archivos de Windows…
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,19 +36,16 @@ Se ha configurado el uso compartido de archivos de Windows para que se conecte a
   
 ### <a name="to-correct-this-error"></a>Para corregir este error  
   
-1.  Inicie sesión en el equipo local, aquel desde el cual lleva acabo la depuración, con el otro nombre de cuenta.  
+1. Inicie sesión en el equipo local, aquel desde el cual lleva acabo la depuración, con el otro nombre de cuenta.  
   
      -O bien-  
   
      . Desconecte del equipo remoto y, a continuación, vuelva a configurar el uso compartido de archivos para conectarse al otro equipo mediante su nombre de cuenta:  
   
-    1.  En el **iniciar** menú, elija **Accesorios**y, a continuación, haga clic en **símbolo**.  
+    1. En el menú **Inicio**, elija **Accesorios** y, a continuación, haga clic en **Símbolo del sistema**.  
   
-    2.  En la línea de comandos de Windows, escriba:  
+    2. En la línea de comandos de Windows, escriba:  
   
          `net use /delete computer_name`  
   
-    3.  Cambie la configuración del uso compartido de archivos mediante cualquiera de los métodos documentados en la ayuda de Windows.
-
-
-
+    3. Cambie la configuración del uso compartido de archivos mediante cualquiera de los métodos documentados en la ayuda de Windows.

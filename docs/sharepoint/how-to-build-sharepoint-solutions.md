@@ -9,17 +9,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, building
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d7c6b0b3a3e99c5c62713d1fdc12952ea421d8c5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 99109376c6c0279bcdd3852bd5bbadd8795c8564
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53928912"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067279"
 ---
 # <a name="how-to-build-sharepoint-solutions"></a>Procedimiento Compilar soluciones de SharePoint
 
@@ -27,11 +27,11 @@ Compilación de SharePoint solución no es diferente de generar otras aplicacion
 
 ## <a name="to-build-sharepoint-solutions"></a>Para compilar soluciones de SharePoint
 
-1.  Decida si va a realizar una depuración o una versión de lanzamiento. Para obtener más información, consulte [Debugger Project Settings](../debugger/debugger-project-settings.md).
+1. Decida si va a realizar una depuración o una versión de lanzamiento. Para obtener más información, consulte [Debugger Project Settings](../debugger/debugger-project-settings.md).
 
-2.  Elija la opción adecuada para generar o volver a generar la solución o proyecto. Para obtener más información, consulte [compilar y generar en Visual Studio](../ide/compiling-and-building-in-visual-studio.md).
+2. Elija la opción adecuada para generar o volver a generar la solución o proyecto. Para obtener más información, consulte [compilar y generar en Visual Studio](../ide/compiling-and-building-in-visual-studio.md).
 
-3.  En la barra de menús, elija **Compilar** > **Compilar solución**.
+3. En la barra de menús, elija **Compilar** > **Compilar solución**.
 
 ## <a name="see-also"></a>Vea también
 

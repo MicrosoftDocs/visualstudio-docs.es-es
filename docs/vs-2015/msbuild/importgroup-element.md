@@ -1,14 +1,9 @@
 ---
 title: Elemento ImportGroup | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,18 +16,17 @@ ms.assetid: dac3fa2d-6678-4017-af35-93686f53f302
 caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d4522099c893c7fb5dc37c0ad78d40cb0600e84b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 1b6fb90cd12dc59edc760b081e7108c52c815a72
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49219978"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650609"
 ---
 # <a name="importgroup-element"></a>Elemento ImportGroup
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Contiene una colección de elementos `Import` agrupados en una condición opcional. Para obtener más información, vea [Elemento Import (MSBuild)](../msbuild/import-element-msbuild.md).  
   
  \<Project>  
@@ -86,6 +80,3 @@ Contiene una colección de elementos `Import` agrupados en una condición opcion
 ## <a name="see-also"></a>Vea también  
  [Referencia de esquemas de archivo del proyecto](../msbuild/msbuild-project-file-schema-reference.md)   
  [Elementos](../msbuild/msbuild-items.md)
-
-
-

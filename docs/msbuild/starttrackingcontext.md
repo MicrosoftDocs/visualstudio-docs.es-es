@@ -12,34 +12,36 @@ helpviewer_keywords:
 ms.assetid: 720cd295-38e7-4974-86db-b8106b1207ba
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a12945400c1d479ad8543b2c8f050098d326881
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c395df1e08f1b4e33e9cd34fec54bdd044f3b4c9
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53844124"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56690518"
 ---
 # <a name="starttrackingcontext"></a>StartTrackingContext
-Inicia un contexto de seguimiento.  
-  
-## <a name="syntax"></a>Sintaxis  
-  
+Inicia un contexto de seguimiento.
+
+## <a name="syntax"></a>Sintaxis
+
 ```cpp
-HRESULT WINAPI StartTrackingContext(LPCTSTR intermediateDirectory, LPCTSTR taskName);  
-```  
-  
-#### <a name="parameters"></a>Parámetros  
- [in] `intermediateDirectory`  
- El directorio en el que almacenar el registro de seguimiento.  
-  
- [in] `taskName`  
- Identifica el contexto de seguimiento. Este nombre se usa para crear el nombre del archivo de registro.  
-  
-## <a name="return-value"></a>Valor devuelto  
- Un elemento **HRESULT** con el conjunto de bits **SUCCEEDED** si el contexto de seguimiento se ha creado.  
-  
-## <a name="requirements"></a>Requisitos  
+HRESULT WINAPI StartTrackingContext(LPCTSTR intermediateDirectory, LPCTSTR taskName);
+```
+
+#### <a name="parameters"></a>Parámetros
+[in] `intermediateDirectory`
+
+ El directorio en el que almacenar el registro de seguimiento.
+
+[in] `taskName`
+
+ Identifica el contexto de seguimiento. Este nombre se usa para crear el nombre del archivo de registro.
+
+## <a name="return-value"></a>Valor devuelto
+ Un elemento **HRESULT** con el conjunto de bits **SUCCEEDED** si el contexto de seguimiento se ha creado.
+
+## <a name="requirements"></a>Requisitos
  **Encabezado**: *FileTracker.h*

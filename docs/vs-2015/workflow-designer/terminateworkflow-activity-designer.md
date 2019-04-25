@@ -1,11 +1,8 @@
 ---
 title: Diseñador actividades TerminateWorkflow | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.TerminateWorkflow.UI
@@ -13,13 +10,13 @@ ms.assetid: 08e632ed-0724-4fb4-9df1-f8d443eaf0ac
 caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 67681982c9c8d77df77242be5c07679f3b0d24ff
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: b471cee4a07722e37ae4b58817823dd4fa48ee26
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49225735"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58989211"
 ---
 # <a name="terminateworkflow-activity-designer"></a>Diseñador actividades TerminateWorkflow
 El **TerminateWorkflow** Diseñador de actividad se usa para crear y configurar un <xref:System.Activities.Statements.TerminateWorkflow> actividad.  

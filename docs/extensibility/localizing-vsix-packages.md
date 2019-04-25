@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 10e80b13-b39e-466c-a7c8-774a862355af
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1d554819c8c615dc9f8fcd41bb4b460482e21fde
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 49908ba5110cf59d0aa4fff6f91bf356ec72c3c2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53956938"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065290"
 ---
 # <a name="localizing-vsix-packages"></a>Adaptación de paquetes VSIX
 
@@ -27,7 +27,7 @@ Si el contenido de su paquete VSIX incluye un VSPackage que agrega los comandos 
 
 ## <a name="directory-structure"></a>Estructura de directorios
 
- Cuando un usuario instala una extensión, **extensiones y actualizaciones** comprueba el nivel superior del paquete VSIX para una carpeta cuyo nombre coincida con la configuración regional de Visual Studio del equipo de destino. Si **extensiones y actualizaciones** busca un *vsixlangpack* archivo en la carpeta, sustituye los valores traducidos en ese archivo para los valores correspondientes en el *.vsixmanifest*archivo. Estos valores se muestran cuando se está instalando la extensión. El ejemplo siguiente muestra la estructura de directorios para un paquete VSIX que está traducido a español (es-es) y francés (fr-FR).  
+ Cuando un usuario instala una extensión, **extensiones y actualizaciones** comprueba el nivel superior del paquete VSIX para una carpeta cuyo nombre coincida con la configuración regional de Visual Studio del equipo de destino. Si **extensiones y actualizaciones** busca un *vsixlangpack* archivo en la carpeta, sustituye los valores traducidos en ese archivo para los valores correspondientes en el *.vsixmanifest*archivo. Estos valores se muestran cuando se está instalando la extensión. El ejemplo siguiente muestra la estructura de directorios para un paquete VSIX que está traducido a español (es-es) y francés (fr-FR).
 
 ```text
 .
@@ -53,7 +53,7 @@ Cuando se crea un archivo vsixlangpack, debe establecer el `Include in Vsix` pro
 
 1. En **el Explorador de soluciones**, haga clic en el archivo Extension.vsixlangpack y, a continuación, haga clic en **propiedades**.
 
-2.  En el **cuadrícula de propiedades**, haga clic en **incluir en Vsix**y establezca su valor en `true`.
+2. En el **cuadrícula de propiedades**, haga clic en **incluir en Vsix**y establezca su valor en `true`.
 
 ## <a name="example"></a>Ejemplo
 
@@ -63,7 +63,7 @@ El ejemplo siguiente muestra las partes relevantes de un *Extension.vsixmanifest
 
 ### <a name="code"></a>Código
 
- [*Extension.vsixmanifest*]
+- [*Extension.vsixmanifest*]
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -83,7 +83,7 @@ El ejemplo siguiente muestra las partes relevantes de un *Extension.vsixmanifest
 </PackageManifest>
 ```
 
- [*Extension.vsixlangpack*]
+- [*Extension.vsixlangpack*]
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>

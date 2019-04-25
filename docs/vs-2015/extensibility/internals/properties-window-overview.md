@@ -1,35 +1,30 @@
 ---
 title: Información general sobre la ventana de propiedades | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Properties window
 ms.assetid: 289ed4f2-02ac-4899-855e-42dfe57ee05f
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8b733a6845a61a71f15d8574666b345dedbf6f50
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e43893af3275258c49e3e23348afb106416636a6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51752099"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113851"
 ---
 # <a name="properties-window-overview"></a>Información general sobre la ventana Propiedades
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 El **propiedades** ventana se utiliza para mostrar las propiedades de objetos seleccionados en los dos tipos principales de windows disponibles en el [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] el entorno de desarrollo integrado (IDE). Estos dos tipos de windows son:  
   
--   Ventanas como explorador de objetos, vista de clases y Explorador de soluciones  
+- Ventanas como explorador de objetos, vista de clases y Explorador de soluciones  
   
--   Ventanas de documento que contiene dichos editores y diseñadores como el Diseñador de formularios, el editor XML y el editor HTML  
+- Ventanas de documento que contiene dichos editores y diseñadores como el Diseñador de formularios, el editor XML y el editor HTML  
   
 ## <a name="using-the-properties-window"></a>Mediante la ventana Propiedades  
  El **propiedades** ventana muestra las propiedades de uno o varios elementos seleccionados. Si se seleccionan varios elementos, se muestra la intersección de todas las propiedades para todos los objetos seleccionados.  
@@ -43,7 +38,7 @@ El **propiedades** ventana se utiliza para mostrar las propiedades de objetos se
 |Nombre de la interfaz|Descripción|  
 |--------------------|-----------------|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties>|Proporciona una lista de categorías a la **propiedades** ventana y cada propiedad se asigna a una categoría.|  
-|[Interfaz IDispatch](http://msdn.microsoft.com/en-us/ebbff4bc-36b2-4861-9efa-ffa45e013eb5)|Expone métodos y propiedades a la programación de herramientas y otras aplicaciones que admiten la automatización de un objeto.|  
+|[Interfaz IDispatch](http://msdn.microsoft.com/ebbff4bc-36b2-4861-9efa-ffa45e013eb5)|Expone métodos y propiedades a la programación de herramientas y otras aplicaciones que admiten la automatización de un objeto.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IProvidePropertyBuilder>|Proporciona los botones de puntos suspensivos (...) llamados *generadores* que abrir ventanas de cuadro de diálogo modal implementados por el propio objeto. Se usa cuando un valor no es fácilmente escrito por el usuario en un campo de texto. Por ejemplo, podría utilizarse para abrir un selector de color que determina el valor RGB para usted.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>|Proporciona acceso a objetos que se usa para actualizar la información mostrada en el **propiedades** ventana. <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> se implementa mediante paquetes VSPackage para cada ventana que contiene objetos seleccionables con las propiedades relacionadas que se mostrará.|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.ITypeInfo>|Proporciona información sobre el tipo de un objeto como métodos de una interfaz y los campos de una estructura.|  
@@ -58,4 +53,3 @@ El **propiedades** ventana se utiliza para mostrar las propiedades de objetos se
 ## <a name="see-also"></a>Vea también  
  [Propiedades de extensión](../../extensibility/internals/extending-properties.md)   
  [Interfaces y campos de la ventana Propiedades](../../extensibility/internals/properties-window-fields-and-interfaces.md)
-

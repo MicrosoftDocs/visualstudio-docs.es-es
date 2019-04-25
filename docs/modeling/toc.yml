@@ -1,7 +1,7 @@
 - name: Analizar y modelar la arquitectura
   href: analyze-and-model-your-architecture.md
   items:
-    - name: Novedades de diseño en Visual Studio
+    - name: "Novedades de diseño en Visual Studio\_2017"
       href: what-s-new-for-design-in-visual-studio.md
     - name: Cambiar el diseño mediante herramientas de visualización y modelado
       href: scenario-change-your-design-using-visualization-and-modeling.md
@@ -33,9 +33,9 @@
     - name: Crear modelos para la aplicación
       href: create-models-for-your-app.md
       items:
-        - name: 'Diagramas de dependencia: referencia'
+        - name: 'Diagramas de dependencia: Referencia'
           href: layer-diagrams-reference.md
-        - name: 'Diagramas de dependencia: instrucciones'
+        - name: 'Diagramas de dependencia: Instrucciones'
           href: layer-diagrams-guidelines.md
         - name: Compartir modelos y exportar diagramas
           href: share-models-and-exporting-diagrams.md
@@ -73,12 +73,6 @@
           href: add-custom-architecture-validation-to-layer-diagrams.md
         - name: Agregar propiedades personalizadas a diagramas de dependencia
           href: add-custom-properties-to-layer-diagrams.md
-        - name: Navegar por modelos de dependencia en el código del programa y actualizarlos
-          href: navigate-and-update-layer-models-in-program-code.md
-        - name: Implementar una extensión de modelo de dependencia
-          href: deploy-a-layer-model-extension.md
-        - name: Solucionar problemas de extensiones de diagramas de dependencia
-          href: troubleshoot-extensions-for-layer-diagrams.md
     - name: Modelar el SDK de Visual Studio - Lenguajes específicos de dominio
       href: modeling-sdk-for-visual-studio-domain-specific-languages.md
       items:
@@ -104,8 +98,6 @@
                   href: customizing-text-and-image-fields.md
                 - name: Establecer una imagen de fondo en un diagrama
                   href: setting-a-background-image-on-a-diagram.md
-                - name: Anidar formas
-                  href: nesting-shapes.md
                 - name: Insertar un diagrama en Windows Forms
                   href: embedding-a-diagram-in-a-windows-form.md
             - name: Personalizar herramientas y el cuadro de herramientas
@@ -114,8 +106,6 @@
               href: customizing-element-creation-and-movement.md
             - name: Personalizar el comportamiento de copia
               href: customizing-copy-behavior.md
-            - name: Personalizar el comportamiento de eliminación
-              href: customizing-deletion-behavior.md
             - name: Personalizar la ventana Propiedades
               href: customizing-the-properties-window.md
             - name: Personalizar el Explorador de modelos
@@ -176,8 +166,6 @@
               href: adding-extensions-to-dsl-definitions.md
             - name: Agregar una propiedad de seguimiento a una definición de lenguaje específico de dominio
               href: adding-a-tracking-property-to-a-domain-specific-language-definition.md
-            - name: Depurar con el visor de almacén
-              href: debugging-by-using-the-store-viewer.md
             - name: El archivo DslDefinition.dsl
               href: the-dsldefinition-dsl-file.md
             - name: Introducción al código DSL
@@ -197,8 +185,6 @@
               href: how-to-intercept-a-click-on-a-shape-or-decorator.md
             - name: Acceder a la selección actual y restringirla
               href: how-to-access-and-constrain-the-current-selection.md
-            - name: Personalizar herramientas de elemento
-              href: customizing-element-tools.md
         - name: Responder a cambios y propagarlos
           href: responding-to-and-propagating-changes.md
           items:
@@ -210,8 +196,6 @@
               href: rules-propagate-changes-within-the-model.md
             - name: Los controladores de eventos propagan cambios fuera del modelo
               href: event-handlers-propagate-changes-outside-the-model.md
-            - name: Ubicación y tamaño de las reglas de restricción de formas BoundsRules
-              href: boundsrules-constrain-shape-location-and-size.md
             - name: Actualizar formas y conectores para reflejar el modelo
               href: updating-shapes-and-connectors-to-reflect-the-model.md
         - name: Generar código a partir de un lenguaje específico de dominio
@@ -221,9 +205,9 @@
               href: accessing-models-from-text-templates.md
             - name: Usar Visual Studio ModelBus en una plantilla de texto
               href: using-visual-studio-modelbus-in-a-text-template.md
-            - name: 'Tutorial: Depurar una plantilla de texto que accede a un modelo'
+            - name: 'Tutorial: Depuración de una plantilla de texto que tiene acceso a un modelo'
               href: walkthrough-debugging-a-text-template-that-accesses-a-model.md
-            - name: 'Tutorial: Conectar un host a un procesador de directivas generadas'
+            - name: 'Tutorial: Conexión de un host a un procesador de directivas generadas'
               href: walkthrough-connecting-a-host-to-a-generated-directive-processor.md
             - name: El comando DslTextTransform
               href: the-dsltexttransform-command.md
@@ -263,7 +247,7 @@
               href: how-to-change-the-namespace-of-a-domain-specific-language.md
             - name: Ampliar el Diseñador de lenguaje específico de dominio
               href: how-to-extend-the-domain-specific-language-designer.md
-        - name: Versiones de Visual Studio compatibles con el SDK de modelado y virtualización
+        - name: Ediciones de Visual Studio compatibles con el SDK de visualización y modelado
           href: supported-visual-studio-editions-for-visualization-amp-modeling-sdk.md
         - name: Migrar un lenguaje específico de dominio a una nueva versión
           href: how-to-migrate-a-domain-specific-language-to-a-new-version.md
@@ -275,7 +259,7 @@
         - name: Generación de código en tiempo de diseño usando las plantillas de texto T4
           href: design-time-code-generation-by-using-t4-text-templates.md
           items:
-            - name: 'Tutorial: Generar código mediante plantillas de texto'
+            - name: 'Tutorial: Generación de código mediante plantillas de texto'
               href: walkthrough-generating-code-by-using-text-templates.md
             - name: Generación de código en un proceso de compilación
               href: code-generation-in-a-build-process.md
@@ -332,14 +316,14 @@
               items:
                 - name: Implementar un procesador de directivas personalizadas
                   href: deploying-a-custom-directive-processor.md
-                - name: 'Tutorial: Crear un procesador de directivas personalizadas'
+                - name: 'Tutorial: Creación de un procesador de directivas personalizado'
                   href: walkthrough-creating-a-custom-directive-processor.md
             - name: Invocar la transformación de texto en una extensión de VS
               href: invoking-text-transformation-in-a-vs-extension.md
             - name: Procesar plantillas de texto mediante un host personalizado
               href: processing-text-templates-by-using-a-custom-host.md
               items:
-                - name: 'Tutorial: Crear un host de plantillas de texto personalizadas'
+                - name: 'Tutorial: Creación de un host de plantilla de texto personalizado'
                   href: walkthrough-creating-a-custom-text-template-host.md
         - name: Referencia de API para plantillas de texto T4
           href: api-reference-for-t4-text-templates.md

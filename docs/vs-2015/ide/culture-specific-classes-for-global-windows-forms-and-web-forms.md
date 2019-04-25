@@ -1,14 +1,9 @@
 ---
 title: Clases específicas de las referencias culturales para Windows Forms y formularios Web Forms globales | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - globalization [Windows Forms], classes
 - Web applications [.NET Framework], globalization
@@ -30,13 +25,13 @@ ms.assetid: 0d06a0a4-f887-4f7c-bde7-1d543c06f803
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: bbd599864cfd1e5af770ab4305380d10c71b622a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f2e0cde0ca0026018c39557362e0ad090a568cfe
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49283301"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54804724"
 ---
 # <a name="culture-specific-classes-for-global-windows-forms-and-web-forms"></a>Clases específicas de las referencias culturales para Windows Forms y formularios Web Forms globales
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +39,7 @@ ms.locfileid: "49283301"
 Cada referencia cultural tiene distintas convenciones para mostrar fechas, horas, números, moneda y otra información. El espacio de nombres <xref:System.Globalization> contiene clases que pueden usarse para modificar el modo en que se muestran los valores específicos de referencias culturales, como <xref:System.Globalization.DateTimeFormatInfo>, **Calendario** y <xref:System.Globalization.NumberFormatInfo>.  
   
 ## <a name="using-the-culture-setting"></a>Uso de la configuración de la referencia cultural  
- Sin embargo, la mayoría de las veces usará la configuración de la referencia cultural, almacenada en la aplicación o en el panel de control **Configuración Regional**, para determinar automáticamente las convenciones en tiempo de ejecución y dar formato a la información en consecuencia. Para obtener más información sobre cómo establecer la referencia cultural, consulte [Cómo: Establecer la referencia cultural y la referencia cultural de la interfaz de usuario para la globalización de formularios Windows Forms](http://msdn.microsoft.com/en-us/694e049f-0b91-474a-9789-d35124f248f0) o [Cómo: establecer la referencia cultural y la referencia cultural de la interfaz de usuario para la globalización de páginas web de ASP.NET](http://msdn.microsoft.com/library/76091f86-f967-4687-a40f-de87bd8cc9a0). Las clases que dan formato automáticamente a la información según la configuración de la referencia cultural se denominan específicas de referencias culturales. Algunos métodos específicos de referencias culturales son <xref:System.IFormattable.ToString%2A?displayProperty=fullName>, <xref:System.Console.WriteLine%2A?displayProperty=fullName> y <xref:System.String.Format%2A?displayProperty=fullName>. Algunas funciones específicas de referencias culturales (en el lenguaje Visual Basic) son `MonthName` y `WeekDayName`.  
+ Sin embargo, la mayoría de las veces usará la configuración de la referencia cultural, almacenada en la aplicación o en el panel de control **Configuración Regional**, para determinar automáticamente las convenciones en tiempo de ejecución y dar formato a la información en consecuencia. Para obtener más información sobre cómo establecer la referencia cultural, consulte [Cómo: Establecer la referencia cultural y la referencia cultural de la interfaz de usuario para la globalización de formularios Windows Forms](http://msdn.microsoft.com/694e049f-0b91-474a-9789-d35124f248f0) o [Cómo: establecer la referencia cultural y la referencia cultural de la interfaz de usuario para la globalización de páginas web de ASP.NET](http://msdn.microsoft.com/library/76091f86-f967-4687-a40f-de87bd8cc9a0). Las clases que dan formato automáticamente a la información según la configuración de la referencia cultural se denominan específicas de referencias culturales. Algunos métodos específicos de referencias culturales son <xref:System.IFormattable.ToString%2A?displayProperty=fullName>, <xref:System.Console.WriteLine%2A?displayProperty=fullName> y <xref:System.String.Format%2A?displayProperty=fullName>. Algunas funciones específicas de referencias culturales (en el lenguaje Visual Basic) son `MonthName` y `WeekDayName`.  
   
  Por ejemplo, el código siguiente muestra cómo puede usar el método <xref:System.IFormattable.ToString%2A> para dar formato a la moneda para la referencia cultural actual:  
   
@@ -83,4 +78,3 @@ Console.WriteLine(myInt.ToString("C", Thread.CurrentThread.CurrentCulture));
  <xref:System.Console.WriteLine%2A?displayProperty=fullName>   
  <xref:System.String.Format%2A?displayProperty=fullName>   
  [Globalizar y localizar aplicaciones](../ide/globalizing-and-localizing-applications.md)
-

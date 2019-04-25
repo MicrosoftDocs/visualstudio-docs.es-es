@@ -1,27 +1,24 @@
 ---
 title: Con tipo frente a los conjuntos de datos sin tipo | Documentos de Microsoft
-ms.custom: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-data-tools
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: c83ba0bb-5425-4d47-8891-6b4dbf937701
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 71761826611c490a3fb43413acaa29eb6520138f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 0d02f72a686d0f271e387e550122451db34c019a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49283795"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668033"
 ---
 # <a name="typed-vs-untyped-datasets"></a>Conjuntos de datos con tipo frente a conjuntos de datos sin tipo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Un conjunto de datos con tipo es un conjunto de datos que primero se deriva de la base de <xref:System.Data.DataSet> clase y, a continuación, usa información de la **Diseñador de Dataset**, que está almacenado en un archivo .xsd, para generar un nuevo establecimiento inflexible de tipos dataset (clase). La información del esquema (tablas, columnas etc.) se genera y compila en esta nueva clase de conjunto de datos como un conjunto de propiedades y objetos de primera clase. Dado que un dataset con tipo hereda de la base de <xref:System.Data.DataSet> (clase), la clase con tipo asume toda la funcionalidad de la <xref:System.Data.DataSet> clase y se puede usar con métodos que toman una instancia de un <xref:System.Data.DataSet> clase como parámetro.  
   
  Un conjunto de datos sin tipo, en cambio, no tiene ningún esquema integrado correspondiente. Al igual que en un dataset con tipo, un conjunto de datos sin tipo contiene tablas, columnas y así sucesivamente, pero los que sólo se exponen como colecciones. (Sin embargo, después de crear manualmente las tablas y otros elementos de datos en un conjunto de datos sin tipo, puede exportar estructura del conjunto de datos como un esquema mediante el conjunto de datos <xref:System.Data.DataSet.WriteXmlSchema%2A> método.)  
@@ -42,4 +39,3 @@ Un conjunto de datos con tipo es un conjunto de datos que primero se deriva de l
  Aunque los conjuntos de datos con tipo tienen muchas ventajas, un conjunto de datos sin tipo resulta útil en una variedad de circunstancias. El escenario más evidente es cuando no hay ningún esquema disponible para el conjunto de datos. Esto puede ocurrir, por ejemplo, si la aplicación está interactuando con un componente que devuelve un conjunto de datos, pero no saber de antemano cuál es su estructura. De forma similar, hay veces cuando se trabaja con datos que no tienen una estructura estática y predecible. En ese caso, es práctico utilizar un conjunto de datos con tipo, ya que tendría que volver a generar la clase dataset con tipo con cada cambio realizado en la estructura de datos.  
   
  Por lo general, hay muchas veces que se podría crear un conjunto de datos dinámicamente sin disponer de un esquema. En ese caso, el conjunto de datos es simplemente una estructura práctica en el que puede mantener información, como los datos se pueden representar de forma relacional. Al mismo tiempo, puede aprovechar las capacidades del conjunto de datos, como la capacidad de serializar la información para pasar a otro proceso o para escribir un archivo XML.
-

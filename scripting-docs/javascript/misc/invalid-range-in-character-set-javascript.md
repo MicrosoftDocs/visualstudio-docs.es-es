@@ -1,14 +1,9 @@
 ---
 title: Intervalo no válido en el carácter establecido (JavaScript) | Microsoft Docs
-ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-client-threshold
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- javascript
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-windows
+ms.technology: vs-javascript
+ms.topic: reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5021
 dev_langs:
@@ -16,16 +11,15 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: 971e9d5a-f88a-47a8-af94-f3c7c4aed5ab
-caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e4cc8feb9a33c2995e592f8031beb2e03605891d
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 1cbfa4de401c2a1dc0626f8f00dbb0bd1bf24408
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54346090"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079596"
 ---
 # <a name="invalid-range-in-character-set-javascript"></a>Intervalo no válido en el juego de caracteres (JavaScript)
 Se intentó crear una expresión regular con un intervalo de conjunto de caracteres no válidos. Juegos de caracteres deben oscilar entre caracteres individuales, como a-z o 0-9; no se incluyen las clases de caracteres como \w en un juego de caracteres. El primer carácter del intervalo también debe ir delante del segundo carácter del intervalo. Por ejemplo:  
@@ -37,7 +31,7 @@ var notGood = /[z-a]/;  // An invalid character range - z does not come before a
   
 ### <a name="to-correct-this-error"></a>Para corregir este error  
   
--   Use caracteres único solo para componer el juego de caracteres de expresión regular y asegúrese de que se encuentran en el orden correcto.  
+- Use caracteres único solo para componer el juego de caracteres de expresión regular y asegúrese de que se encuentran en el orden correcto.  
   
 ## <a name="see-also"></a>Vea también  
  [Objeto de expresión regular](../../javascript/reference/regular-expression-object-javascript.md)   

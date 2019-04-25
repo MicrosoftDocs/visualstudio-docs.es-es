@@ -13,14 +13,13 @@ dev_langs:
 - VB
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 21c4f8a7c1f8e5d5449f576740e8f901d25d9006
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+manager: jillfra
+ms.openlocfilehash: f5c1a065d30f3925ba5c567d562d0138de8c5953
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54269539"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57869281"
 ---
 # <a name="generate-and-run-a-coded-web-performance-test"></a>Generar y ejecutar una prueba de rendimiento web codificada
 
@@ -30,7 +29,7 @@ Las pruebas de rendimiento web se graban al examinar la aplicación web. Las pru
 
 ## <a name="generate-a-coded-web-performance-test"></a>Generar una prueba de rendimiento web codificada
 
-1.  Si no ha creado una prueba de rendimiento web, vea [Grabar una prueba de rendimiento web](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-web-performance-and-load-test-project?view=vsts).
+1.  Si no ha creado una prueba de rendimiento web, vea [Grabar una prueba de rendimiento web](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-web-performance-and-load-test-project).
 
 2.  Genere la prueba codificada.
 
@@ -44,7 +43,7 @@ Las pruebas de rendimiento web se graban al examinar la aplicación web. Las pru
 
      Según el rendimiento web y la plantilla de proyecto de prueba de carga que agregó a la solución, el código se generará en Visual Basic o en Visual C#.
 
-     ![La nueva prueba programada se abre en el editor de código](../test/media/web_test_coded_generate_opencodeeditor.png)
+     ![La nueva prueba codificada se abre en el editor de código](../test/media/web_test_coded_generate_opencodeeditor.png)
 
      Puede ver en el código que el método GetRequestEnumerator() de C# o el método Run() de Visual Basic contienen todas las reglas de validación y las solicitudes web que estaban en la prueba recodificada.
 

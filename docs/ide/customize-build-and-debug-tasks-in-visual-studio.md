@@ -1,7 +1,6 @@
 ---
 title: Personalización de tareas de depuración de compilación con tasks.vs.json y launch.vs.json
 ms.date: 02/21/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - NMAKE [Visual Studio]
@@ -12,15 +11,15 @@ helpviewer_keywords:
 - vsworkspacesettings.json file [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2662c09c4d131f52b0426a910d9dd4b60e6b3459
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: 23888809dd4dfd05058ed71ba8a82e8e532d7e61
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54270130"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56954178"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>Personalización de las tareas de compilación y depuración para el desarrollo de "Abrir carpeta"
 
@@ -57,6 +56,7 @@ Si el código base usa las herramientas de compilación personalizadas que Visua
 
 Considere un código base que consta de un solo archivo de C# llamado *hello.cs*. El *archivo Make* para este tipo de código base podría tener el aspecto siguiente:
 
+<!-- markdownlint-disable MD010 -->
 ```makefile
 build: directory hello.exe
 
@@ -73,6 +73,7 @@ directory: bin
 bin:
     md bin
 ```
+<!-- markdownlint-enable MD010 -->
 
 Para este tipo de *archivo Make* que contiene destinos de compilación, limpieza y recompilación, es posible definir el siguiente archivo *tasks.vs.json*. Contiene tres tareas de compilación para compilar, recompilar y limpiar el código base, con NMAKE como la herramienta de compilación.
 

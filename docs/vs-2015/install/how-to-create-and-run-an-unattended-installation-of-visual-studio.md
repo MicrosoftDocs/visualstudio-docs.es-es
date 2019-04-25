@@ -1,13 +1,9 @@
 ---
-title: Procedimiento Crear y ejecutar una instalación desatendida | Microsoft Docs
-ms.custom: ''
+title: 'Cómo: crear y ejecutar una instalación desatendida | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-install
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - installing Visual Studio, unattended
 - unattended installation, Visual Studio
@@ -15,15 +11,15 @@ ms.assetid: 3867b5dc-ed34-4ee2-be32-a42e7e320517
 caps.latest.revision: 44
 author: TerryGLee
 ms.author: tglee
-manager: ghogen
-ms.openlocfilehash: 0045ff701947f834bd38dfff7c90b7388e9353b7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: b7fdf45fedece028a0bf5d62ccd60951754b9064
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53951935"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54803567"
 ---
-# <a name="how-to-create-and-run-an-unattended-installation-of-visual-studio"></a>Procedimiento Crear y ejecutar una instalación desatendida de Visual Studio
+# <a name="how-to-create-and-run-an-unattended-installation-of-visual-studio"></a>Cómo: Crear y ejecutar una instalación desatendida de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Puede ejecutar la aplicación de instalación de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] como instalación desatendida (es decir, silenciosa personalizada) en una intranet en lugar de usar otros medios como, por ejemplo, un DVD. En este tema se describe cómo preparar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para este tipo de instalación desde un recurso compartido de red.
@@ -118,7 +114,7 @@ Puede ejecutar la aplicación de instalación de [!INCLUDE[vsprvs](../includes/v
 
 2. Abra el menú **Iniciar** y, a continuación, elija **Ejecutar**.
 
-3. Escriba el siguiente texto: \\\\*ServerName*\IDEinstall\vs_*producto*.exe /AdminFile PathToAdmindeployment.xml archivo
+3. Escriba el siguiente texto: \\ \\ *ServerName*\IDEinstall\vs_*producto*.exe /AdminFile PathToAdmindeployment.xml archivo
 
     AdditionalParametersAsNeeded
 
@@ -177,7 +173,7 @@ Puede ejecutar la aplicación de instalación de [!INCLUDE[vsprvs](../includes/v
 
 2.  Escriba la clave de producto.
 
-     Para obtener más información, vea la página [Cómo: Busque la clave de producto de Visual Studio](../install/how-to-locate-the-visual-studio-product-key.md) y [Cómo: Aplicar automáticamente las claves de producto durante la implementación de Visual Studio](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md) temas.)
+     (Para obtener más información, consulte el [Cómo: buscar la clave de producto de Visual Studio](../install/how-to-locate-the-visual-studio-product-key.md) y [Cómo: aplicar automáticamente las claves de producto durante la implementación de Visual Studio](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md) temas.)
 
 ## <a name="see-also"></a>Vea también
  [Instalar Visual Studio](../install/install-visual-studio-2015.md)

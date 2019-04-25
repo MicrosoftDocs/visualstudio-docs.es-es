@@ -1,14 +1,9 @@
 ---
-title: 'Error: Sitio usa la dirección IP | Microsoft Docs'
-ms.custom: ''
+title: 'Error: Sitio usa la dirección IP | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.debug.error.webdbg_siteusesipaddress
 dev_langs:
@@ -22,31 +17,28 @@ ms.assetid: b2b8ddc8-746d-46e3-87a6-b956b1ee048d
 caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: daa9ed74df46dd6be66a27d09cbbd7c311e03de4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 46eace1c566a2810c5914a49654f8393f425fdee
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51793677"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040875"
 ---
-# <a name="error-site-uses-ip-address"></a>Error: El sitio utiliza una dirección IP
+# <a name="error-site-uses-ip-address"></a>Error: Uso de dirección IP por parte del sitio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Este error se produce cuando el depurador intenta asociarse automáticamente a una aplicación Web que utilice una dirección IP. Esto se produce si cambia **identificación del sitio Web** a **usar dirección IP específica** en IIS.  
+Este error se produce cuando el depurador intenta asociarse automáticamente a una aplicación Web que utilice una dirección IP. Esto ocurre si se cambia **Identificación del sitio Web** a **Usar una dirección IP específica** en IIS.  
   
  Para que funcione la asociación automática, es preciso crear el proyecto con la dirección IP específica en lugar de hacerlo simplemente con el nombre del equipo. De lo contrario, el depurador cambiará el nombre de equipo a localhost, lo que generará un error al enviar el verbo de depuración a IIS.  
   
 ### <a name="to-correct-this-error"></a>Para corregir este error  
   
-1.  Utilice la asociación manual (en el menú Depurar, elija **asociar al proceso**).  
+1. Utilice la asociación manual (en el menú Depurar, elija **Asociar al proceso**).  
   
      -O bien-  
   
-2.  Cambiar el **identificación del sitio Web de IIS** configuración.  
+2. Cambie el valor de configuración de **Identificación del sitio Web de IIS**.  
   
 ## <a name="see-also"></a>Vea también  
  [Depurar aplicaciones web: errores y solución de problemas](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
-
-
-

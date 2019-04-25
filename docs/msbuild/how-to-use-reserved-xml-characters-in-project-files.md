@@ -8,68 +8,68 @@ helpviewer_keywords:
 ms.assetid: 1ae37275-96bf-4e6e-897b-6b048e5bbe93
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f97a4bb00b15e31cc03b853de45b7a35d77b29c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 02c5693a2edca0d81e21e73215e00f25aae939eb
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53905509"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56603879"
 ---
 # <a name="how-to-use-reserved-xml-characters-in-project-files"></a>Procedimiento Usar caracteres XML reservados en archivos de proyecto
-Al crear archivos de proyecto, es posible que deba utilizar caracteres XML reservados, por ejemplo, en los valores de propiedad o en los valores de parámetro de la tarea. Sin embargo, algunos caracteres reservados se deben reemplazar por una entidad con nombre para que se pueda analizar el archivo del proyecto.  
-  
-## <a name="use-reserved-characters"></a>Usar caracteres reservados  
- En la tabla siguiente se describen los caracteres XML reservados que se deben reemplazar por la entidad con nombre correspondiente para que se pueda analizar el archivo del proyecto.  
-  
-|Carácter reservado|Entidad con nombre|  
-|------------------------|------------------|  
-|\<|&amp;lt;|  
-|>|&amp;gt;|  
-|&|&amp;amp;|  
-|"|&amp;quot;|  
-|'|&amp;apos;|  
-  
-#### <a name="to-use-double-quotes-in-a-project-file"></a>Para utilizar comillas dobles en un archivo del proyecto  
-  
--   Reemplace las comillas dobles por la entidad con nombre correspondiente, &amp;quot;. Por ejemplo, para colocar comillas dobles alrededor de la lista de elementos `EXEFile`, escriba:  
-  
-    ```xml  
-    <Message Text="The output file is &quot;@(EXEFile)&quot;."/>  
-    ```  
-  
-## <a name="example"></a>Ejemplo  
- En el ejemplo de código siguiente, se utilizan comillas dobles para resaltar el nombre de archivo en el mensaje que el archivo del proyecto genera.  
-  
-```xml  
-<Project DefaultTargets="Compile"  
-    xmlns="http://schemas.microsoft.com/developer/msbuild/2003" >  
-    <!-- Set the application name as a property -->  
-    <PropertyGroup>  
-        <appname>"HelloWorldCS"</appname>  
-    </PropertyGroup>  
-    <!-- Specify the inputs -->  
-    <ItemGroup>  
-        <CSFile Include = "consolehwcs1.cs" />  
-    </ItemGroup>  
-    <Target Name = "Compile">  
-        <!-- Run the Visual C# compilation using input  
-        files of type CSFile -->  
-        <Csc Sources = "@(CSFile)">  
-            <!-- Set the OutputAssembly attribute of the CSC task  
-            to the name of the executable file that is created -->  
-            <Output  
-                TaskParameter = "OutputAssembly"  
-                ItemName = "EXEFile"/>  
-        </Csc>  
-        <!-- Log the file name of the output file -->  
-        <Message Text="The output file is &quot;@(EXEFile)&quot;."/>  
-    </Target>  
-</Project>  
-```  
-  
-## <a name="see-also"></a>Vea también  
- [Referencia de MSBuild](../msbuild/msbuild-reference.md)    
- [MSBuild](../msbuild/msbuild.md)    
+Al crear archivos de proyecto, es posible que deba utilizar caracteres XML reservados, por ejemplo, en los valores de propiedad o en los valores de parámetro de la tarea. Sin embargo, algunos caracteres reservados se deben reemplazar por una entidad con nombre para que se pueda analizar el archivo del proyecto.
+
+## <a name="use-reserved-characters"></a>Usar caracteres reservados
+ En la tabla siguiente se describen los caracteres XML reservados que se deben reemplazar por la entidad con nombre correspondiente para que se pueda analizar el archivo del proyecto.
+
+|Carácter reservado|Entidad con nombre|
+|------------------------|------------------|
+|\<|&amp;lt;|
+|>|&amp;gt;|
+|&|&amp;amp;|
+|"|&amp;quot;|
+|'|&amp;apos;|
+
+#### <a name="to-use-double-quotes-in-a-project-file"></a>Para utilizar comillas dobles en un archivo del proyecto
+
+-   Reemplace las comillas dobles por la entidad con nombre correspondiente, &amp;quot;. Por ejemplo, para colocar comillas dobles alrededor de la lista de elementos `EXEFile`, escriba:
+
+    ```xml
+    <Message Text="The output file is &quot;@(EXEFile)&quot;."/>
+    ```
+
+## <a name="example"></a>Ejemplo
+ En el ejemplo de código siguiente, se utilizan comillas dobles para resaltar el nombre de archivo en el mensaje que el archivo del proyecto genera.
+
+```xml
+<Project DefaultTargets="Compile"
+    xmlns="http://schemas.microsoft.com/developer/msbuild/2003" >
+    <!-- Set the application name as a property -->
+    <PropertyGroup>
+        <appname>"HelloWorldCS"</appname>
+    </PropertyGroup>
+    <!-- Specify the inputs -->
+    <ItemGroup>
+        <CSFile Include = "consolehwcs1.cs" />
+    </ItemGroup>
+    <Target Name = "Compile">
+        <!-- Run the Visual C# compilation using input
+        files of type CSFile -->
+        <Csc Sources = "@(CSFile)">
+            <!-- Set the OutputAssembly attribute of the CSC task
+            to the name of the executable file that is created -->
+            <Output
+                TaskParameter = "OutputAssembly"
+                ItemName = "EXEFile"/>
+        </Csc>
+        <!-- Log the file name of the output file -->
+        <Message Text="The output file is &quot;@(EXEFile)&quot;."/>
+    </Target>
+</Project>
+```
+
+## <a name="see-also"></a>Vea también
+- [Referencia de MSBuild](../msbuild/msbuild-reference.md)
+- [MSBuild](../msbuild/msbuild.md)

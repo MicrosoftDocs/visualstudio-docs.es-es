@@ -15,21 +15,21 @@ helpviewer_keywords:
 ms.assetid: 96ba5507-8b43-4f54-a1d7-9b15644dd56c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c2c3b23f9377fff4e820f10b76ed841ff722b15d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 729f09f680969cb6a6653109f57d382cd7238557
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53910194"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56645958"
 ---
-# <a name="warning-task"></a>Warning task
-Registra una advertencia durante la compilación basándose en una instrucción condicional evaluada.  
+# <a name="warning-task"></a>Warning (tarea)
+Registra una advertencia durante la compilación basándose en una instrucción condicional evaluada.
 
-## <a name="parameters"></a>Parámetros  
- En la siguiente tabla se describen los parámetros de la tarea `Warning` .  
+## <a name="parameters"></a>Parámetros
+ En la siguiente tabla se describen los parámetros de la tarea `Warning` .
 
 
 | Parámetro | Descripción |
@@ -39,30 +39,30 @@ Registra una advertencia durante la compilación basándose en una instrucción 
 | `HelpKeyword` | Parámetro `String` opcional.<br /><br /> Palabra clave de ayuda que se debe asociar a la advertencia. |
 | `Text` | Parámetro `String` opcional.<br /><br /> Texto de advertencia que registra [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] si el parámetro `Condition` se evalúa como `true`. |
 
-## <a name="remarks"></a>Comentarios  
- La tarea `Warning` permite que los proyectos [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] verifiquen la presencia de una configuración o una propiedad necesaria antes de continuar con el siguiente paso de compilación.  
+## <a name="remarks"></a>Comentarios
+ La tarea `Warning` permite que los proyectos [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] verifiquen la presencia de una configuración o una propiedad necesaria antes de continuar con el siguiente paso de compilación.
 
- Si el parámetro `Condition` de la tarea `Warning` se evalúa como `true`, se registra el valor del parámetro `Text` y la compilación continúa ejecutándose. Si no existe ningún parámetro `Condition`, se registra el texto de advertencia. Para obtener más información sobre los registros, vea [Obtener registros de compilación con MSBuild](../msbuild/obtaining-build-logs-with-msbuild.md).  
+ Si el parámetro `Condition` de la tarea `Warning` se evalúa como `true`, se registra el valor del parámetro `Text` y la compilación continúa ejecutándose. Si no existe ningún parámetro `Condition`, se registra el texto de advertencia. Para obtener más información sobre los registros, vea [Obtener registros de compilación con MSBuild](../msbuild/obtaining-build-logs-with-msbuild.md).
 
- Además de los parámetros mencionados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.TaskExtension>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de estos parámetros adicionales y sus descripciones, consulte [TaskExtension base class](../msbuild/taskextension-base-class.md).  
+ Además de los parámetros mencionados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.TaskExtension>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de estos parámetros adicionales y sus descripciones, consulte [TaskExtension base class](../msbuild/taskextension-base-class.md).
 
-## <a name="example"></a>Ejemplo  
- En el ejemplo de código siguiente se verifican las propiedades que se establecen en la línea de comandos. Si no se establece ninguna propiedad, el proyecto genera un evento de advertencia y registra el valor del parámetro `Text` de la tarea `Warning`.  
+## <a name="example"></a>Ejemplo
+ En el ejemplo de código siguiente se verifican las propiedades que se establecen en la línea de comandos. Si no se establece ninguna propiedad, el proyecto genera un evento de advertencia y registra el valor del parámetro `Text` de la tarea `Warning`.
 
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-    <Target Name="ValidateCommandLine">  
-        <Warning  
-            Text=" The 0 property was not set on the command line."  
-            Condition="'$(0)' == ''" />  
-        <Warning  
-            Text=" The FREEBUILD property was not set on the command line."  
-            Condition="'$(FREEBUILD)' == ''" />  
-    </Target>  
-    ...  
-</Project>  
-```  
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Target Name="ValidateCommandLine">
+        <Warning
+            Text=" The 0 property was not set on the command line."
+            Condition="'$(0)' == ''" />
+        <Warning
+            Text=" The FREEBUILD property was not set on the command line."
+            Condition="'$(FREEBUILD)' == ''" />
+    </Target>
+    ...
+</Project>
+```
 
-## <a name="see-also"></a>Vea también  
- [Obtener registros de compilación](../msbuild/obtaining-build-logs-with-msbuild.md)   
- [Referencia de esquema de archivo de proyecto](../msbuild/msbuild-project-file-schema-reference.md)
+## <a name="see-also"></a>Vea también
+- [Obtener registros de compilación](../msbuild/obtaining-build-logs-with-msbuild.md)
+- [Referencia de esquema de archivo de proyecto](../msbuild/msbuild-project-file-schema-reference.md)

@@ -1,25 +1,20 @@
 ---
 title: Nodos de constante | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 2c798a50-a2d7-459b-9879-ad4ad8290c9b
 caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 0b062f6190213fc2b18670f50fdd527c4c3f212a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: d38a4f8a182562c11dbb742cb26392218edfd981
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49260070"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54788462"
 ---
 # <a name="constant-nodes"></a>Nodos de constante
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,6 +46,3 @@ En el Diseñador de sombras, los nodos de constante representan valores literale
 |**Dirección de la luz de espacio tangente**|El vector que define la dirección en la que se proyecta la luz desde una fuente de luz en el espacio tangente del píxel actual.<br /><br /> Se puede usar para calcular las contribuciones de reflexión especular y de iluminación en el espacio tangente.<br /><br /> **Salida:**<br /><br /> `Output`: `float3`<br /> El vector desde el píxel actual a una fuente de luz.|Ninguna|  
 |**Normal global**|El valor normal a la superficie del píxel actual en el espacio global.<br /><br /> Se puede usar para calcular las reflexiones y las contribuciones de la iluminación en el espacio global.<br /><br /> **Resultado**<br /><br /> `Output`: `float3`<br /> El valor normal a la superficie del píxel actual.|Ninguna|  
 |**Posición global**|Posición del píxel actual en el espacio global.<br /><br /> **Salida**<br /><br /> `Output`: `float4`<br /> La posición del píxel actual.|Ninguna|
-
-
-

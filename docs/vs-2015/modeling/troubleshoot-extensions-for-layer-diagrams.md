@@ -1,12 +1,9 @@
 ---
 title: Solucionar problemas de extensiones para diagramas de capas | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: troubleshooting
 helpviewer_keywords:
 - layer diagrams, extension errors
 - layer diagrams, troubleshooting extensions
@@ -14,13 +11,13 @@ ms.assetid: 1fda4f8a-38b8-482b-87b8-eade1a4e5662
 caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6361651672e72df6661f030a4b6c8e451fdaea89
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ba45ba733f5447523b6793d4f5e2946c3507c82e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51738774"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098694"
 ---
 # <a name="troubleshoot-extensions-for-layer-diagrams"></a>Solucionar problemas de extensiones de diagramas de capas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,16 +45,13 @@ En este tema se resuelven algunos problemas que pueden encontrarse al crear exte
   
 #### <a name="an-old-version-of-my-validation-results-appears-or-my-validation-method-is-not-called"></a>Aparece una versión anterior de mis resultados de validación o no se llama a mi método de validación.  
   
-1.  En la instancia experimental de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], en el **compilar** menú, haga clic en **Limpiar solución**. Esto borra los resultados almacenados en memoria caché del análisis de validación anterior.  
+1. En la instancia experimental de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], en el **compilar** menú, haga clic en **Limpiar solución**. Esto borra los resultados almacenados en memoria caché del análisis de validación anterior.  
   
-2.  Asegúrese de que las capas del modelo están asociadas a elementos de código y de que hay al menos un vínculo de dependencia en el modelo. La validación no se invoca si no hay nada que validar.  
+2. Asegúrese de que las capas del modelo están asociadas a elementos de código y de que hay al menos un vínculo de dependencia en el modelo. La validación no se invoca si no hay nada que validar.  
   
-3.  Los puntos de interrupción normales podrían no funcionar en un método de validación, porque se ejecuta en un proceso independiente. Debe insertar una llamada a `System.Diagnostics.Debugger.Launch()` si desea reproducir paso a paso el método.  
+3. Los puntos de interrupción normales podrían no funcionar en un método de validación, porque se ejecuta en un proceso independiente. Debe insertar una llamada a `System.Diagnostics.Debugger.Launch()` si desea reproducir paso a paso el método.  
   
-4.  En **source.extension.vsixmanifest** en el proyecto de validación de capas, asegúrese de que se ha agregado un **componente MEF** elemento y un **tipo de extensión personalizada** elemento bajo **Contenido**.  
+4. En **source.extension.vsixmanifest** en el proyecto de validación de capas, asegúrese de que se ha agregado un **componente MEF** elemento y un **tipo de extensión personalizada** elemento bajo **Contenido**.  
   
 ## <a name="see-also"></a>Vea también  
  [Ampliar diagramas de capas](../modeling/extend-layer-diagrams.md)
-
-
-

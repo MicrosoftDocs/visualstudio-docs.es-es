@@ -1,27 +1,22 @@
 ---
 title: Referencia de esquema 2.0 de extensión VSIX | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - vsix
 - extension schema
 ms.assetid: 0da81b98-f5e3-40d3-ba9a-94551378d0b4
 caps.latest.revision: 26
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: c0121f2d9d4a29942449b180c63c450d4a49b31f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3e5808d23f34c6d9cfa5c355092e0fd55b5f4270
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51785942"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048664"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>Referencia de esquema 2.0 de la extensión VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,131 +32,131 @@ Un archivo de manifiesto de implementación de VSIX describe el contenido de un 
 ### <a name="packagemanifest-element"></a>Elemento PackageManifest  
  Dentro de la `<PackageManifest>` elemento raíz, puede usar los siguientes elementos:  
   
--   `<Metadata>` -Metadatos e información de publicidad sobre el propio paquete. Solo un `Metadata` se admite el elemento en el manifiesto.  
+- `<Metadata>` -Metadatos e información de publicidad sobre el propio paquete. Solo un `Metadata` se admite el elemento en el manifiesto.  
   
--   `<Installation>` -Esta sección define la forma en que se puede instalar este paquete de extensión, incluidas las SKU de la aplicación que pueden instalar en. Una sola `Installation` se admite el elemento en el manifiesto. Debe tener un manifiesto un `Installation` elemento o este paquete no se instala en cualquier SKU.  
+- `<Installation>` -Esta sección define la forma en que se puede instalar este paquete de extensión, incluidas las SKU de la aplicación que pueden instalar en. Una sola `Installation` se admite el elemento en el manifiesto. Debe tener un manifiesto un `Installation` elemento o este paquete no se instala en cualquier SKU.  
   
--   `<Dependencies>` -Una lista opcional de las dependencias de este paquete se definen aquí.  
+- `<Dependencies>` -Una lista opcional de las dependencias de este paquete se definen aquí.  
   
--   `<Assets>` -Esta sección contiene todos los recursos contenidos en este paquete. Sin esta sección, este paquete no detectarán ningún contenido.  
+- `<Assets>` -Esta sección contiene todos los recursos contenidos en este paquete. Sin esta sección, este paquete no detectarán ningún contenido.  
   
--   `<AnyElement>*` -El esquema del manifiesto es lo suficientemente flexible como para permitir que cualquier otro elemento. Cualquier elemento secundario no reconocido por el cargador de manifiesto se expone en la API del Administrador de extensiones como objetos XmlElement adicionales. Las extensiones VSIX con estos elementos secundarios, pueden definir datos adicionales en el archivo de manifiesto que puede tener acceso código que se ejecuta en Visual Studio en tiempo de ejecución. Vea <xref:Microsoft.VisualStudio.ExtensionManager.IExtension.AdditionalElements%2A> y <xref:Microsoft.VisualStudio.ExtensionManager.IExtension.LocalizedAdditionalElements%2A>.  
+- `<AnyElement>*` -El esquema del manifiesto es lo suficientemente flexible como para permitir que cualquier otro elemento. Cualquier elemento secundario no reconocido por el cargador de manifiesto se expone en la API del Administrador de extensiones como objetos XmlElement adicionales. Las extensiones VSIX con estos elementos secundarios, pueden definir datos adicionales en el archivo de manifiesto que puede tener acceso código que se ejecuta en Visual Studio en tiempo de ejecución. Vea <xref:Microsoft.VisualStudio.ExtensionManager.IExtension.AdditionalElements%2A> y <xref:Microsoft.VisualStudio.ExtensionManager.IExtension.LocalizedAdditionalElements%2A>.  
   
 ### <a name="metadata-element"></a>Elemento de metadatos  
  En esta sección es los metadatos sobre el paquete, su identidad y anuncio de la información. `<Metadata>` contiene los siguientes elementos:  
   
--   `<Identity>` -Esto define la información de identificación de este paquete e incluye los siguientes atributos:  
+- `<Identity>` -Esto define la información de identificación de este paquete e incluye los siguientes atributos:  
   
-    -   `Id` : Este atributo debe ser un identificador único para el paquete elegido por su autor. Se debe calificar el nombre de la misma manera que los tipos CLR son tiene espacio de nombres: Company.Product.Feature.Name. El `Id` atributo está limitado a 100 caracteres.  
+    - `Id` : Este atributo debe ser un identificador único para el paquete elegido por su autor. Se debe calificar el nombre de la misma manera que los tipos CLR son tiene espacio de nombres: Company.Product.Feature.Name. El `Id` atributo está limitado a 100 caracteres.  
   
-    -   `Version` : Esto define la versión de este paquete y su contenido. Este atributo sigue el formato de control de versiones de ensamblado CLR: principal.secundaria.compilación.revisión (1.2.40308.00). Un paquete con un mayor número de versión se considera actualizaciones del paquete y puede instalarse a través de la versión instalada actualmente.  
+    - `Version` : Esto define la versión de este paquete y su contenido. Este atributo sigue el formato de control de versiones de ensamblado CLR: Principal.secundaria.compilación.revisión (1.2.40308.00). Un paquete con un mayor número de versión se considera actualizaciones del paquete y puede instalarse a través de la versión instalada actualmente.  
   
-    -   `Language` : Este atributo es el idioma predeterminado para el paquete y corresponde a los datos de texto de este manifiesto. Este atributo sigue la convención de código de configuración regional CLR para los ensamblados de recursos, por ejemplo: en-us, en, fr-fr. Puede especificar `neutral` para declarar una extensión independiente del idioma que se ejecutará en cualquier versión de Visual Studio. El valor predeterminado es `neutral`.  
+    - `Language` : Este atributo es el idioma predeterminado para el paquete y corresponde a los datos de texto de este manifiesto. Este atributo sigue la convención de código de configuración regional CLR para los ensamblados de recursos, por ejemplo: en-us, en, fr-fr. Puede especificar `neutral` para declarar una extensión independiente del idioma que se ejecutará en cualquier versión de Visual Studio. El valor predeterminado es `neutral`.  
   
-    -   `Publisher` : Este atributo identifica el publicador de este paquete, una empresa o un nombre individual. El `Publisher` atributo está limitado a 100 caracteres.  
+    - `Publisher` : Este atributo identifica el publicador de este paquete, una empresa o un nombre individual. El `Publisher` atributo está limitado a 100 caracteres.  
   
--   `<DisplayName>` : Este elemento especifica el nombre del paquete fácil de usar que se muestra en la UI del Administrador de extensiones. El `DisplayName` contenido está limitado a 100 caracteres.  
+- `<DisplayName>` : Este elemento especifica el nombre del paquete fácil de usar que se muestra en la UI del Administrador de extensiones. El `DisplayName` contenido está limitado a 100 caracteres.  
   
--   `<Description>` : Este elemento opcional es una breve descripción del paquete y su contenido se muestra en el Administrador de extensiones de UI. El `Description` contenido puede contener cualquier texto que desee, pero ha limitado a 1000 caracteres.  
+- `<Description>` : Este elemento opcional es una breve descripción del paquete y su contenido se muestra en el Administrador de extensiones de UI. El `Description` contenido puede contener cualquier texto que desee, pero ha limitado a 1000 caracteres.  
   
--   `<MoreInfo>` : Este elemento opcional es una dirección URL a una página en línea que contiene una descripción completa de este paquete. El protocolo debe especificarse como http.  
+- `<MoreInfo>` : Este elemento opcional es una dirección URL a una página en línea que contiene una descripción completa de este paquete. El protocolo debe especificarse como http.  
   
--   `<License>` : Este elemento opcional es una ruta de acceso relativa a un archivo de licencia (.txt, .rtf) contenido en el paquete.  
+- `<License>` : Este elemento opcional es una ruta de acceso relativa a un archivo de licencia (.txt, .rtf) contenido en el paquete.  
   
--   `<ReleaseNotes>` : Este elemento opcional es cualquier ruta de acceso relativa a un archivo de notas de la versión contenido en el paquete (.txt, .rtf) o bien una dirección URL a un sitio Web que muestra las notas.  
+- `<ReleaseNotes>` : Este elemento opcional es cualquier ruta de acceso relativa a un archivo de notas de la versión contenido en el paquete (.txt, .rtf) o bien una dirección URL a un sitio Web que muestra las notas.  
   
--   `<Icon>` : Este elemento opcional es una ruta de acceso relativa a un archivo de imagen (png, bmp, jpeg, ico) contenido en el paquete. La imagen del icono debe ser 32 x 32 píxeles (o se reducirá a dicho tamaño) y aparece en la interfaz de usuario de la vista de lista. Si no hay ningún `Icon` elemento se especifica, la interfaz de usuario usa un valor predeterminado.  
+- `<Icon>` : Este elemento opcional es una ruta de acceso relativa a un archivo de imagen (png, bmp, jpeg, ico) contenido en el paquete. La imagen del icono debe ser 32 x 32 píxeles (o se reducirá a dicho tamaño) y aparece en la interfaz de usuario de la vista de lista. Si no hay ningún `Icon` elemento se especifica, la interfaz de usuario usa un valor predeterminado.  
   
--   `<PreviewImage>` : Este elemento opcional es una ruta de acceso relativa a un archivo de imagen (png, bmp, jpeg) contenido en el paquete. La imagen de vista previa debe ser 200 x 200 píxeles y se muestra en los detalles de la interfaz de usuario. Si no hay ningún `PreviewImage` elemento se especifica, la interfaz de usuario usa un valor predeterminado.  
+- `<PreviewImage>` : Este elemento opcional es una ruta de acceso relativa a un archivo de imagen (png, bmp, jpeg) contenido en el paquete. La imagen de vista previa debe ser 200 x 200 píxeles y se muestra en los detalles de la interfaz de usuario. Si no hay ningún `PreviewImage` elemento se especifica, la interfaz de usuario usa un valor predeterminado.  
   
--   `<Tags>` : Este elemento opcional muestra las etiquetas de texto delimitada por punto y coma adicional que se usan para sugerencias de búsqueda. El `Tags` elemento está limitado a 100 caracteres.  
+- `<Tags>` : Este elemento opcional muestra las etiquetas de texto delimitada por punto y coma adicional que se usan para sugerencias de búsqueda. El `Tags` elemento está limitado a 100 caracteres.  
   
--   `<GettingStartedGuide>` : Este elemento opcional es una ruta de acceso relativa a un archivo HTML o una dirección URL a un sitio Web que contiene información sobre cómo usar la extensión o el contenido dentro de este paquete. Esta guía se inicia como parte de una instalación.  
+- `<GettingStartedGuide>` : Este elemento opcional es una ruta de acceso relativa a un archivo HTML o una dirección URL a un sitio Web que contiene información sobre cómo usar la extensión o el contenido dentro de este paquete. Esta guía se inicia como parte de una instalación.  
   
--   `<AnyElement>*` -El esquema del manifiesto es lo suficientemente flexible como para permitir que cualquier otro elemento. Los elementos secundarios que no son reconocidos por el cargador de manifiesto se exponen como una lista de objetos XmlElement. Con estos elementos secundarios, las extensiones VSIX pueden definir datos adicionales en el archivo de manifiesto y enumerarlos en tiempo de ejecución.  
+- `<AnyElement>*` -El esquema del manifiesto es lo suficientemente flexible como para permitir que cualquier otro elemento. Los elementos secundarios que no son reconocidos por el cargador de manifiesto se exponen como una lista de objetos XmlElement. Con estos elementos secundarios, las extensiones VSIX pueden definir datos adicionales en el archivo de manifiesto y enumerarlos en tiempo de ejecución.  
   
 ### <a name="installation-element"></a>Elemento de la instalación  
  En esta sección se define la forma en que se puede instalar este paquete y las SKU de la aplicación que pueden instalar en. Esta sección contiene los siguientes atributos:  
   
--   `Experimental` : Establezca este atributo en true si tiene una extensión que actualmente está instalada para todos los usuarios, pero está desarrollando una versión actualizada en el mismo equipo. Por ejemplo, si ha instalado 1.0 MyExtension para todos los usuarios, pero desea depurar MyExtension 2.0 en el mismo equipo, establezca Experimental = "true". Este atributo está disponible en Visual Studio 2015 Update 1 y versiones posteriores.  
+- `Experimental` : Establezca este atributo en true si tiene una extensión que actualmente está instalada para todos los usuarios, pero está desarrollando una versión actualizada en el mismo equipo. Por ejemplo, si ha instalado 1.0 MyExtension para todos los usuarios, pero desea depurar MyExtension 2.0 en el mismo equipo, establezca Experimental = "true". Este atributo está disponible en Visual Studio 2015 Update 1 y versiones posteriores.  
   
--   `Scope` : Este atributo puede tomar el valor "Global" o "ProductExtension":  
+- `Scope` : Este atributo puede tomar el valor "Global" o "ProductExtension":  
   
-    -   "Global" Especifica que la instalación no está dirigida a una SKU específica. Por ejemplo, este valor se utiliza cuando se instala un SDK de extensión.  
+    - "Global" Especifica que la instalación no está dirigida a una SKU específica. Por ejemplo, este valor se utiliza cuando se instala un SDK de extensión.  
   
-    -   "ProductExtension" Especifica que una extensión VSIX (versión 1.0) tradicional con ámbito para cada SKU de Visual Studio está instalada. Este es el valor predeterminado.  
+    - "ProductExtension" Especifica que una extensión VSIX (versión 1.0) tradicional con ámbito para cada SKU de Visual Studio está instalada. Este es el valor predeterminado.  
   
--   `AllUsers` : Este atributo opcional especifica si este paquete se instalará para todos los usuarios. De forma predeterminada, este atributo es false, que especifica que el paquete es por usuario. (Al establecer este valor en true, el usuario que instala debe elevar al nivel de privilegios administrativos para instalar VSIX resultante.  
+- `AllUsers` : Este atributo opcional especifica si este paquete se instalará para todos los usuarios. De forma predeterminada, este atributo es false, que especifica que el paquete es por usuario. (Al establecer este valor en true, el usuario que instala debe elevar al nivel de privilegios administrativos para instalar VSIX resultante.  
   
--   `InstalledByMsi` : Este atributo opcional especifica si se instala este paquete de MSI. Los paquetes instalados por un archivo MSI se instalan y administrados por MSI (programas y características) y no mediante el Administrador de extensiones de Visual Studio.  De forma predeterminada, este atributo es false, que especifica que el paquete no está instalado en un archivo MSI.  
+- `InstalledByMsi` : Este atributo opcional especifica si se instala este paquete de MSI. Los paquetes instalados por un archivo MSI se instalan y administrados por MSI (programas y características) y no mediante el Administrador de extensiones de Visual Studio.  De forma predeterminada, este atributo es false, que especifica que el paquete no está instalado en un archivo MSI.  
   
--   `SystemComponent` : Este atributo opcional especifica si este paquete se debe considerar un componente del sistema. Los componentes del sistema no se muestran en la UI del Administrador de extensiones y no se puede actualizar. De forma predeterminada, este atributo es false, que especifica que el paquete no es un componente del sistema.  
+- `SystemComponent` : Este atributo opcional especifica si este paquete se debe considerar un componente del sistema. Los componentes del sistema no se muestran en la UI del Administrador de extensiones y no se puede actualizar. De forma predeterminada, este atributo es false, que especifica que el paquete no es un componente del sistema.  
   
--   `AnyAttribute*` – La `Installation` elemento acepta un conjunto abierto de atributos que se expondrá en tiempo de ejecución como un diccionario de pares nombre-valor.  
+- `AnyAttribute*` – La `Installation` elemento acepta un conjunto abierto de atributos que se expondrá en tiempo de ejecución como un diccionario de pares nombre-valor.  
   
--   `<InstallationTarget>` : Este elemento controla la ubicación donde el instalador de VSIX instala el paquete. Si el valor de la `Scope` atributo es "ProductExtension" el paquete debe tener como destino una SKU que tiene instalado un archivo de manifiesto como parte de su contenido para anunciar su disponibilidad a las extensiones. El `<InstallationTarget>` elemento tiene los siguientes atributos cuando el `Scope` atributo tiene la configuración explícita o el valor predeterminado "ProductExtension":  
+- `<InstallationTarget>` : Este elemento controla la ubicación donde el instalador de VSIX instala el paquete. Si el valor de la `Scope` atributo es "ProductExtension" el paquete debe tener como destino una SKU que tiene instalado un archivo de manifiesto como parte de su contenido para anunciar su disponibilidad a las extensiones. El `<InstallationTarget>` elemento tiene los siguientes atributos cuando el `Scope` atributo tiene la configuración explícita o el valor predeterminado "ProductExtension":  
   
-    -   `Id` : Este atributo identifica el paquete.  El atributo sigue la convención de espacio de nombres: Company.Product.Feature.Name. El `Id` atributo puede contener solo caracteres alfanuméricos y está limitado a 100 caracteres. Valores esperados:  
+    - `Id` : Este atributo identifica el paquete.  El atributo sigue la convención de espacio de nombres: Company.Product.Feature.Name. El `Id` atributo puede contener solo caracteres alfanuméricos y está limitado a 100 caracteres. Valores esperados:  
   
-        -   Microsoft.VisualStudio.IntegratedShell  
+        - Microsoft.VisualStudio.IntegratedShell  
   
-        -   Microsoft.VisualStudio.Pro  
+        - Microsoft.VisualStudio.Pro  
   
-        -   Microsoft.VisualStudio.Premium  
+        - Microsoft.VisualStudio.Premium  
   
-        -   Microsoft.VisualStudio.Ultimate  
+        - Microsoft.VisualStudio.Ultimate  
   
-        -   Microsoft.VisualStudio.VWDExpress  
+        - Microsoft.VisualStudio.VWDExpress  
   
-        -   Microsoft.VisualStudio.VPDExpress  
+        - Microsoft.VisualStudio.VPDExpress  
   
-        -   Microsoft.VisualStudio.VSWinExpress  
+        - Microsoft.VisualStudio.VSWinExpress  
   
-        -   Microsoft.VisualStudio.VSLS  
+        - Microsoft.VisualStudio.VSLS  
   
-        -   My.Shell.App  
+        - My.Shell.App  
   
-    -   `Version` : Este atributo especifica un intervalo de versiones con las versiones compatibles mínimas y máxima de esta SKU. Un paquete puede detallan las versiones de las SKU que admite. La notación de rango de versión es [10.0: 11.0], donde  
+    - `Version` : Este atributo especifica un intervalo de versiones con las versiones compatibles mínimas y máxima de esta SKU. Un paquete puede detallan las versiones de las SKU que admite. La notación de rango de versión es [10.0: 11.0], donde  
   
-        -   [: versión mínima inclusive.  
+        - [: versión mínima inclusive.  
   
-        -   ] – versión máximo inclusivo.  
+        - ] – versión máximo inclusivo.  
   
-        -   (-exclusivo de versión mínima.  
+        - (-exclusivo de versión mínima.  
   
-        -   ): versión máxima exclusivo.  
+        - ): versión máxima exclusivo.  
   
-        -   Versión única # - solo la versión especificada.  
+        - Versión única # - solo la versión especificada.  
   
         > [!IMPORTANT]
         >  La versión 2.0 del esquema VSIX se introdujo en Visual Studio 2012. Para usar este esquema se debe tener Visual Studio 2012 o posterior instalado en el equipo y usa el VSIXInstaller.exe que forma parte de ese producto. Puede tener como destino versiones anteriores de Visual Studio con Visual Studio 2012 o posterior VSIXInstaller, pero solo mediante el uso de las versiones más recientes del instalador.  
   
-    -   `AnyAttribute*` – La `<InstallationTarget>` elemento permite a un conjunto abierto de atributos que se va exponer en tiempo de ejecución como un diccionario de pares nombre-valor.  
+    - `AnyAttribute*` – La `<InstallationTarget>` elemento permite a un conjunto abierto de atributos que se va exponer en tiempo de ejecución como un diccionario de pares nombre-valor.  
   
 ### <a name="dependencies-element"></a>Elemento de dependencias  
  Este elemento contiene una lista de dependencias que declara este paquete. Si se especifican las dependencias, esos paquetes (identificado por su `Id`) debe haber sido instalada antes.  
   
--   `<Dependency>` elemento: este elemento secundario tiene los siguientes atributos:  
+- `<Dependency>` elemento: este elemento secundario tiene los siguientes atributos:  
   
-    -   `Id` : Este atributo debe ser un identificador único para el paquete dependiente. Este valor de identidad debe coincidir con el `<Metadata><Identity>Id` atributo de un paquete que depende este paquete. El `Id` atributo sigue la convención de espacio de nombres: Company.Product.Feature.Name. El atributo puede contener solo caracteres alfanuméricos y está limitado a 100 caracteres.  
+    - `Id` : Este atributo debe ser un identificador único para el paquete dependiente. Este valor de identidad debe coincidir con el `<Metadata><Identity>Id` atributo de un paquete que depende este paquete. El `Id` atributo sigue la convención de espacio de nombres: Company.Product.Feature.Name. El atributo puede contener solo caracteres alfanuméricos y está limitado a 100 caracteres.  
   
-    -   `Version` : Este atributo especifica un intervalo de versiones con las versiones compatibles mínimas y máxima de esta SKU. Un paquete puede detallan las versiones de las SKU que admite. Es la notación de rango de versión [12.0, 13.0], donde:  
+    - `Version` : Este atributo especifica un intervalo de versiones con las versiones compatibles mínimas y máxima de esta SKU. Un paquete puede detallan las versiones de las SKU que admite. Es la notación de rango de versión [12.0, 13.0], donde:  
   
-        -   [: versión mínima inclusive.  
+        - [: versión mínima inclusive.  
   
-        -   ] – versión máximo inclusivo.  
+        - ] – versión máximo inclusivo.  
   
-        -   (-exclusivo de versión mínima.  
+        - (-exclusivo de versión mínima.  
   
-        -   ): versión máxima exclusivo.  
+        - ): versión máxima exclusivo.  
   
-        -   Versión única # - solo la versión especificada.  
+        - Versión única # - solo la versión especificada.  
   
-    -   `DisplayName` : Este atributo es el nombre para mostrar del paquete dependiente que se usa en elementos de interfaz de usuario, como cuadros de diálogo y mensajes de error. El atributo es opcional, a menos que se instala el paquete dependiente de MSI.  
+    - `DisplayName` : Este atributo es el nombre para mostrar del paquete dependiente que se usa en elementos de interfaz de usuario, como cuadros de diálogo y mensajes de error. El atributo es opcional, a menos que se instala el paquete dependiente de MSI.  
   
-    -   `Location` : Este atributo opcional especifica la ruta de acceso relativa en este VSIX a un paquete VSIX anidado o una dirección URL a la ubicación de descarga de la dependencia. Este atributo se utiliza para ayudar al usuario busque el paquete de requisitos previos.  
+    - `Location` : Este atributo opcional especifica la ruta de acceso relativa en este VSIX a un paquete VSIX anidado o una dirección URL a la ubicación de descarga de la dependencia. Este atributo se utiliza para ayudar al usuario busque el paquete de requisitos previos.  
   
-    -   `AnyAttribute*` – La `Dependency` elemento acepta un conjunto abierto de atributos que se expondrá en tiempo de ejecución como un diccionario de pares nombre-valor.  
+    - `AnyAttribute*` – La `Dependency` elemento acepta un conjunto abierto de atributos que se expondrá en tiempo de ejecución como un diccionario de pares nombre-valor.  
   
 ### <a name="assets-element"></a>Elemento de activos  
  Este elemento contiene una lista de `<Asset>` etiquetas para cada elemento de extensión o contenido obtenidas por este paquete.  
@@ -222,4 +217,3 @@ Un archivo de manifiesto de implementación de VSIX describe el contenido de un 
   
 ## <a name="see-also"></a>Vea también  
  [Suministro de extensiones de Visual Studio](../extensibility/shipping-visual-studio-extensions.md)
-

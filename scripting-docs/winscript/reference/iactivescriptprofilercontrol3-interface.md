@@ -2,7 +2,6 @@
 title: IActiveScriptProfilerControl3 (interfaz) | Documentos de Microsoft
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -12,12 +11,12 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bebe351608b3136ac00a059bffab3535141e7fca
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 7b7b57dbf76eb5dd9eadb05eb5705cdffb76106b
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54344725"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58150925"
 ---
 # <a name="iactivescriptprofilercontrol3-interface"></a>IActiveScriptProfilerControl3 (Interfaz)
 Proporciona un método para enumerar los objetos del montón GC asociados con un motor de scripts.  

@@ -1,26 +1,21 @@
 ---
 title: Secuencia de inicialización de subtipos de proyecto | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project subtypes, initialization sequence
 ms.assetid: f657f8c3-5e68-4308-9971-e81e3099ba29
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 53c0a474a5a5caf887599bc50e623bd25e7be782
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c5594d54c188c2f561dd66229e808e48068ba41a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51746523"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062709"
 ---
 # <a name="initialization-sequence-of-project-subtypes"></a>Secuencia de inicialización de subtipos de proyecto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,7 +31,7 @@ El entorno construye un proyecto mediante una llamada a la implementación del g
   
     A continuación detalla los pasos de inicialización.  
   
-   1.  La implementación del entorno de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsCreateAggregateProject.CreateAggregateProject%2A> llamadas al método ' HrCreateInnerProj'' ' método con la siguiente declaración de función:  
+   1. La implementación del entorno de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsCreateAggregateProject.CreateAggregateProject%2A> llamadas al método ' HrCreateInnerProj'' ' método con la siguiente declaración de función:  
   
        ```  
        HRESULT HrCreateInnerProj  
@@ -55,13 +50,13 @@ El entorno construye un proyecto mediante una llamada a la implementación del g
   
         Cuando esta función se invoca por primera vez, es decir, para el subtipo de proyecto más externo, los parámetros `pOuter` y `pOwner` se pasan como `null` y la función establece el subtipo de proyecto más externo `IUnknown` a `pOuter`.  
   
-   2.  A continuación el entorno llama a `HrCreateInnerProj` función con el segundo tipo de proyecto GUID en la lista. Este GUID se corresponde con el subtipo de proyecto interno segunda ejecución paso a paso hacia el proyecto de base de la secuencia de agregación.  
+   2. A continuación el entorno llama a `HrCreateInnerProj` función con el segundo tipo de proyecto GUID en la lista. Este GUID se corresponde con el subtipo de proyecto interno segunda ejecución paso a paso hacia el proyecto de base de la secuencia de agregación.  
   
-   3.  El `pOuter` apuntan ahora a la `IUnknown` del subtipo de proyecto más externo, y `HrCreateInnerProj` llama a la implementación de <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProjectFactory.PreCreateForOuter%2A> seguido por una llamada a la implementación de <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.SetInnerProject%2A>. En <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProjectFactory.PreCreateForOuter%2A> método pasa en el control `IUnknown` del subtipo de proyecto más externo, `pOuter`. Debe crear su objeto de proyecto agregado aquí al proyecto propietario (subtipo interno del proyecto). En el <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.SetInnerProject%2A> implementación del método se pasa un puntero a la `IUnknown` del proyecto interno que se agrega. Estos dos métodos de crean el objeto de agregación y las implementaciones deben seguir las reglas de agregación de COM para asegurarse de que un subtipo de proyecto no terminen mantiene un recuento de referencias a sí mismo.  
+   3. El `pOuter` apuntan ahora a la `IUnknown` del subtipo de proyecto más externo, y `HrCreateInnerProj` llama a la implementación de <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProjectFactory.PreCreateForOuter%2A> seguido por una llamada a la implementación de <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.SetInnerProject%2A>. En <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProjectFactory.PreCreateForOuter%2A> método pasa en el control `IUnknown` del subtipo de proyecto más externo, `pOuter`. Debe crear su objeto de proyecto agregado aquí al proyecto propietario (subtipo interno del proyecto). En el <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.SetInnerProject%2A> implementación del método se pasa un puntero a la `IUnknown` del proyecto interno que se agrega. Estos dos métodos de crean el objeto de agregación y las implementaciones deben seguir las reglas de agregación de COM para asegurarse de que un subtipo de proyecto no terminen mantiene un recuento de referencias a sí mismo.  
   
-   4.  `HrCreateInnerProj` llama a la implementación de <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProjectFactory.PreCreateForOuter%2A>. En este método, el subtipo de proyecto realiza su trabajo de inicialización. Por ejemplo, puede registrar eventos de la solución en <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.InitializeForOuter%2A>.  
+   4. `HrCreateInnerProj` llama a la implementación de <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProjectFactory.PreCreateForOuter%2A>. En este método, el subtipo de proyecto realiza su trabajo de inicialización. Por ejemplo, puede registrar eventos de la solución en <xref:Microsoft.VisualStudio.Shell.Interop.IVsAggregatableProject.InitializeForOuter%2A>.  
   
-   5.  `HrCreateInnerProj` se llama de forma recursiva hasta que se alcance el último GUID (el proyecto de base) en la lista. Para cada una de estas llamadas, los pasos, c y d, se repiten. `pOuter` señala el subtipo de proyecto más externo `IUnknown` para cada nivel de agregación.  
+   5. `HrCreateInnerProj` se llama de forma recursiva hasta que se alcance el último GUID (el proyecto de base) en la lista. Para cada una de estas llamadas, los pasos, c y d, se repiten. `pOuter` señala el subtipo de proyecto más externo `IUnknown` para cada nivel de agregación.  
   
    El ejemplo siguiente detalla el proceso mediante programación en una representación aproximada de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsCreateAggregateProject.CreateAggregateProject%2A> método tal como está implementado por el entorno. El código es solo un ejemplo; no está pensado para compilarse y todas las comprobaciones de error se ha quitado para mayor claridad.  
   
@@ -156,4 +151,3 @@ HRESULT HrCreateInnerProj
 ## <a name="see-also"></a>Vea también  
  <xref:Microsoft.VisualStudio.Shell.Flavor>   
  [Subtipos de proyecto](../../extensibility/internals/project-subtypes.md)
-

@@ -1,20 +1,21 @@
 ---
 title: 'Paso 1: Crear un proyecto y agregar una tabla a un formulario'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
 ms.assetid: 1cac4ba4-f3cd-43bd-ad5d-50fc599234e8
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da8d951c7bbb96d1c955d9254756ea80925d4969
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0f1c651c27fac6036aa2abcbd3e86b5f46cc9f02
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53882781"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647497"
 ---
 # <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>Paso 1: Crear un proyecto y agregar una tabla a un formulario
 
@@ -22,7 +23,23 @@ El primer paso para crear un juego de formar parejas es crear el proyecto y agre
 
 ## <a name="to-create-a-project-and-add-a-table-to-your-form"></a>Para crear un proyecto y agregar una tabla al formulario
 
+::: moniker range="vs-2017"
+
 1. En la barra de menús, elija **Archivo** > **Nuevo** > **Proyecto**.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. En la ventana de inicio, elija **Crear un proyecto nuevo**.
+
+1. En el cuadro de búsqueda, escriba "WPF", elija **Aplicación de WPF (.NET Framework)** y, luego, **Siguiente**.
+
+   (Si no ve la plantilla **Aplicación de WPF (.NET Framework)**, use el Instalador de Visual Studio para instalar la carga de trabajo **Desarrollo de escritorio de .NET**).
+
+1. Asigne un nombre al proyecto, **MatchingGame**, y elija **Crear**.
+
+::: moniker-end
 
 2. Si no usa Visual Studio Express, primero debe seleccionar un lenguaje de programación. En la lista **Plantillas instaladas**, pulse **Visual C#** o **Visual Basic**.
 
@@ -69,7 +86,7 @@ El primer paso para crear un juego de formar parejas es crear el proyecto y agre
 
    5.  Pulse la propiedad **Font**. Debe aparecer un botón de puntos suspensivos (**…**).
 
-   6.  Pulse el botón de puntos suspensivos y establezca el valor de **Fuente** en **Webdings**, **Estilo de fuente** en **Negrita** y **Tamaño** en **72**.
+   6.  Pulse el botón de puntos suspensivos y establezca el valor de **Fuente** en **Webdings**, **Estilo de fuente** en **Negrita** y **Tamaño** en **48**.
 
    7.  Establezca la propiedad **Text** de la etiqueta en la letra **c**.
 

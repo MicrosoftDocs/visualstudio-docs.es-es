@@ -1,25 +1,20 @@
 ---
 title: 'Cómo: Filtrar informes desde la línea de comandos | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 6e9b140f-b44f-4a5c-bd65-d868ddc94023
 caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: eb8df34291d99d093ccf0d053d5dd1fbe2955232
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: db2c9d845af962fc17da1ebd84e8dd5fe6ffadab
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51789790"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54803006"
 ---
 # <a name="how-to-filter-reports-from-the-command-line"></a>Cómo: Filtrar informes desde la línea de comandos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,6 +30,3 @@ Al usar las opciones del comando **VSPerfReport**, puede filtrar los informes a 
 |**Process:**[*Pid*]|Solo muestra los datos del proceso especificado.|  
 |**Thread:**[*ThreadID*]|Solo muestra los datos del subproceso especificado.|  
 |**Thread:**[*ThreadID,ProcessID*]|Solo muestra los datos del subproceso especificado que está asociado al proceso especificado.|
-
-
-

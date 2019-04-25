@@ -1,23 +1,22 @@
 ---
 title: Pruebas unitarias
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio, unit tests
 - unit tests, verifying code with
 - testing code, automated tests
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 1b036a9a34711d82194ea3c41acdb12651978446
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 900492cf7a4e617a044ca60b3b72d9891bdaa15b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53868646"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62788478"
 ---
 # <a name="unit-test-your-code"></a>Prueba unitaria del código
 

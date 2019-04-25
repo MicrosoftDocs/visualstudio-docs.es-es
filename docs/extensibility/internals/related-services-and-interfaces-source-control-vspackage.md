@@ -8,35 +8,35 @@ helpviewer_keywords:
 ms.assetid: 3e96e838-5675-46bb-99cf-40d420086038
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c312b6d89812a76f5fc8135eb18f02f0afedc5ec
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a792bc7b0c64b7e509e6d426c8b4f33c9f816276
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53940630"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062053"
 ---
 # <a name="related-services-and-interfaces-source-control-vspackage"></a>Interfaces y servicios relacionados (VSPackage de control de código fuente)
-Esta sección enumeran todas las interfaces de VSPackage de control de origen al [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]. El control de código fuente VSPackage implementa algunas de estas interfaces y utiliza otros usuarios para realizar tareas de control de código fuente.  
-  
-## <a name="interfaces-implemented-by-and-for-source-control-vspackages"></a>Interfaces implementadas por y para VSPackages de Control de código fuente  
- Las interfaces siguientes se describen en la [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], y el control de código fuente VSPackage implementa un subconjunto de ellas, dependiendo de su conjunto de características deseadas. Algunas de las interfaces se marcan como requerido y debe ser implementada por cada VSPackage de control de código fuente.  
-  
- Para las interfaces que implementa un paquete, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] proporciona una implementación predeterminada. Tenga en cuenta que la implementación predeterminada está diseñada para el caso cuando no se registra ningún paquete de VS y no se controla ningún proyecto. Un control de código fuente escrito correctamente VSPackage implementa interfaces toda en lugar de dejarlo para la implementación predeterminada de esas interfaces.  
-  
- Un VSPackage de control de origen debe implementar un servicio privado que encapsula algunas o todas las interfaces siguientes.  
-  
- Las interfaces son:  
-  
--   Obligatorio: La entidad adecuada (control de código fuente VSPackage, código auxiliar de Control de código fuente, project) debe implementar la interfaz.  
-  
--   Recomendado: La entidad debe implementar esta interfaz; en caso contrario, la funcionalidad de control de código fuente puede ser limitada.  
-  
--   Opcional: la entidad puede implementar esta interfaz para proporcionar un conjunto de características más completo.  
-  
-| Interfaz | Propósito | Implementado por | ¿Implementar? |
+Esta sección enumeran todas las interfaces de VSPackage de control de origen al [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]. El control de código fuente VSPackage implementa algunas de estas interfaces y utiliza otros usuarios para realizar tareas de control de código fuente.
+
+## <a name="interfaces-implemented-by-and-for-source-control-vspackages"></a>Interfaces implementadas por y para VSPackages de Control de código fuente
+ Las interfaces siguientes se describen en la [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], y el control de código fuente VSPackage implementa un subconjunto de ellas, dependiendo de su conjunto de características deseadas. Algunas de las interfaces se marcan como requerido y debe ser implementada por cada VSPackage de control de código fuente.
+
+ Para las interfaces que implementa un paquete, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] proporciona una implementación predeterminada. Tenga en cuenta que la implementación predeterminada está diseñada para el caso cuando no se registra ningún paquete de VS y no se controla ningún proyecto. Un control de código fuente escrito correctamente VSPackage implementa interfaces toda en lugar de dejarlo para la implementación predeterminada de esas interfaces.
+
+ Un VSPackage de control de origen debe implementar un servicio privado que encapsula algunas o todas las interfaces siguientes.
+
+ Las interfaces son:
+
+- Obligatorio: La entidad adecuada (control de código fuente VSPackage, código auxiliar de Control de código fuente, project) debe implementar la interfaz.
+
+- Recomendado: La entidad debe implementar esta interfaz; en caso contrario, la funcionalidad de control de código fuente puede ser limitada.
+
+- Opcional: la entidad puede implementar esta interfaz para proporcionar un conjunto de características más completo.
+
+| Interfaz | Finalidad | Implementado por | ¿Implementar? |
 | - | - |--------------------------|-------------|
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> | Editores de llamar a esta interfaz antes de modificar o guardar un archivo. El control de código fuente VSPackage puede desproteger el archivo o denegar la operación si se produce un error en la desprotección. | VSPackage de control de código fuente | Se recomienda |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2> | Esta interfaz proporciona funcionalidad de control de código fuente básicos para los proyectos, como registrar y anular el registro de los proyectos con control de código fuente y proporcionar soporte técnico para los glifos de control de código fuente básicos. | VSPackage de control de código fuente | Obligatorio |
@@ -60,6 +60,6 @@ Esta sección enumeran todas las interfaces de VSPackage de control de origen al
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps> | Esta interfaz se utiliza para guardar el origen de configuración del control en el archivo de solución (.sln). La configuración incluye la ubicación del control de código fuente y las marcas de estado de control de código fuente. | VSPackage de control de código fuente | Se recomienda |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts> | Esta interfaz se utiliza para guardar la configuración de control de código fuente en el archivo de solución (.suo) de opciones. Esto puede incluir la configuración de control de origen específicas para el usuario como la ubicación de la inscripción del usuario actual. | VSPackage de control de código fuente | Se recomienda |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3> | Esta interfaz se utiliza para supervisar los eventos con el fin de realizar operaciones como la comprobación en los archivos de proyecto antes de cerrar soluciones o la obtención de los nuevos archivos de control de código fuente al abrir un proyecto. | VSPackage de control de código fuente | Se recomienda |
-  
-## <a name="see-also"></a>Vea también  
- [Elementos de diseño](../../extensibility/internals/source-control-vspackage-design-elements.md)
+
+## <a name="see-also"></a>Vea también
+- [Elementos de diseño](../../extensibility/internals/source-control-vspackage-design-elements.md)

@@ -1,20 +1,19 @@
 ---
 title: Procedimiento Suprimir advertencias de análisis de código para código generado
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 3a96434e-d419-43a7-81ba-95cccac835b8
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b2913ea1645ab7fced11aa64e671a5c0f0a87edc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c2d58ea5d23ed8b302b6ec2a0352f23b0eeeff66
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53844985"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066525"
 ---
 # <a name="how-to-suppress-code-analysis-warnings-for-generated-code"></a>Procedimiento Suprimir advertencias de análisis de código para código generado
 Compiladores de código administrado a menudo generan código que se agrega a un proyecto para facilitar el desarrollo rápido de código. Además, los desarrolladores suelen utilizar herramientas de terceros para ayudar a desarrollar aplicaciones rápidamente. Estas herramientas también generan código que se agrega al proyecto.
@@ -28,8 +27,8 @@ Compiladores de código administrado a menudo generan código que se agrega a un
 
 ### <a name="to-suppress-warnings-for-generated-code-in-a-project"></a>Para suprimir advertencias de código generado en un proyecto
 
-1.  Haga clic en el proyecto en el Explorador de soluciones y, a continuación, haga clic en **propiedades**.
+1. Haga clic en el proyecto en el Explorador de soluciones y, a continuación, haga clic en **propiedades**.
 
-2.  Haga clic en **análisis de código**.
+2. Haga clic en **análisis de código**.
 
-3.  Seleccione el **Suprimir resultados del código generado** casilla de verificación.
+3. Seleccione el **Suprimir resultados del código generado** casilla de verificación.

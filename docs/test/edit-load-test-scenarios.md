@@ -9,14 +9,13 @@ helpviewer_keywords:
 ms.assetid: fec04f2e-bf38-4d44-b2ec-fa50f58fd0d9
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 18acb181125bcc8bd2f68a93661658f8ba01c79c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 647548a59c965b6feacb994efa041ecd5b6c6b91
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53934023"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55908818"
 ---
 # <a name="edit-load-test-scenarios"></a>Edición de escenarios de prueba de carga
 

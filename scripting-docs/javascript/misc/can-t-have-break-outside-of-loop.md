@@ -1,14 +1,9 @@
 ---
 title: No puede tener 'break' fuera del bucle | Microsoft Docs
-ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-client-threshold
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- javascript
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-windows
+ms.technology: vs-javascript
+ms.topic: reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1019
 dev_langs:
@@ -16,16 +11,15 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: 11d02172-2a78-4705-a730-d21111db5f42
-caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 53f32da997b775e01959df5abc7e72fb55c1b194
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: a02848230187eb465d56ed73e44380e4b043b117
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54345050"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084432"
 ---
 # <a name="cant-have-break-outside-of-loop"></a>'break' no puede estar fuera del bucle
 Se intentó utilizar el **salto** palabra clave fuera de un bucle. El **salto** palabra clave se usa para finalizar un bucle o `switch` instrucción. Se debe incrustar en el cuerpo de un bucle o `switch` instrucción. Sin embargo, un **etiqueta** puede seguir la palabra clave break.  
@@ -38,7 +32,7 @@ break labelname;
   
 ### <a name="to-correct-this-error"></a>Para corregir este error  
   
--   Asegúrese de que el **salto** palabra clave aparece dentro de una instrucción de bucle o switch envolvente.  
+- Asegúrese de que el **salto** palabra clave aparece dentro de una instrucción de bucle o switch envolvente.  
   
 ## <a name="see-also"></a>Vea también  
  [break (Instrucción)](../../javascript/reference/break-statement-javascript.md)   

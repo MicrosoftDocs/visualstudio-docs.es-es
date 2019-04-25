@@ -7,16 +7,15 @@ helpviewer_keywords:
 - Domain-Specific Language, events
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: f421874e092ff4d0d6e722b7bebee6f6bb48f7ff
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cd02491b42e9e6a5d677eca35ccde2aa559352c4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53842452"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096886"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>Los controladores de eventos propagan cambios fuera del modelo
 
@@ -26,21 +25,21 @@ La superficie gráfica y otros controles de interfaz de usuario son ejemplos de 
 
 ### <a name="to-define-a-store-event"></a>Para definir un evento de almacén
 
-1.  Elija el tipo de evento que desea supervisar. Para obtener una lista completa, examine las propiedades de <xref:Microsoft.VisualStudio.Modeling.EventManagerDirectory>. Cada propiedad se corresponde con un tipo de evento. Usado con mayor frecuencia son tipos de evento:
+1. Elija el tipo de evento que desea supervisar. Para obtener una lista completa, examine las propiedades de <xref:Microsoft.VisualStudio.Modeling.EventManagerDirectory>. Cada propiedad se corresponde con un tipo de evento. Usado con mayor frecuencia son tipos de evento:
 
-    -   `ElementAdded` -se desencadena cuando un elemento de modelo, se crea el vínculo de relación, forma o conector.
+    - `ElementAdded` -se desencadena cuando un elemento de modelo, se crea el vínculo de relación, forma o conector.
 
-    -   Desencadena la ElementPropertyChanged - cuando el valor de un `Normal` se cambia la propiedad de dominio. El evento se desencadena únicamente si los valores nuevos y antiguos no son iguales. El evento no se puede aplicar a las propiedades de almacenamiento calculadas y personalizadas.
+    - Desencadena la ElementPropertyChanged - cuando el valor de un `Normal` se cambia la propiedad de dominio. El evento se desencadena únicamente si los valores nuevos y antiguos no son iguales. El evento no se puede aplicar a las propiedades de almacenamiento calculadas y personalizadas.
 
          No se puede aplicar a las propiedades de rol que se corresponden con los vínculos de relación. En su lugar, use `ElementAdded` para supervisar la relación de dominio.
 
-    -   `ElementDeleted` -se desencadena después de un elemento de modelo, relación, forma o conector se ha eliminado. Todavía puede tener acceso a los valores de propiedad del elemento, pero no tendrá ninguna relación con otros elementos.
+    - `ElementDeleted` -se desencadena después de un elemento de modelo, relación, forma o conector se ha eliminado. Todavía puede tener acceso a los valores de propiedad del elemento, pero no tendrá ninguna relación con otros elementos.
 
-2.  Agregue una definición de clase parcial para _Sudsl_**DocData** en un archivo de código independiente en el **DslPackage** proyecto.
+2. Agregue una definición de clase parcial para _Sudsl_**DocData** en un archivo de código independiente en el **DslPackage** proyecto.
 
-3.  Escribir el código del evento como un método, como en el ejemplo siguiente. Puede ser `static`, a menos que desee tener acceso a `DocData`.
+3. Escribir el código del evento como un método, como en el ejemplo siguiente. Puede ser `static`, a menos que desee tener acceso a `DocData`.
 
-4.  Invalidar `OnDocumentLoaded()` para registrar el controlador. Si tiene más de un controlador, puede registrarlos todos en el mismo lugar.
+4. Invalidar `OnDocumentLoaded()` para registrar el controlador. Si tiene más de un controlador, puede registrarlos todos en el mismo lugar.
 
 La ubicación del código de registro no es crítica. `DocView.LoadView()` es una ubicación alternativa.
 
@@ -161,11 +160,11 @@ private static void AlbumTitleAdjuster(object sender,
 
 Si escribe un evento que se actualiza el almacén:
 
--   Use `store.InUndoRedoOrRollback` para evitar realizar cambios en los elementos del modelo en la fase de reversión. El Administrador de transacciones todo lo establecerá en el almacén a su estado original.
+- Use `store.InUndoRedoOrRollback` para evitar realizar cambios en los elementos del modelo en la fase de reversión. El Administrador de transacciones todo lo establecerá en el almacén a su estado original.
 
--   Use `store.InSerializationTransaction` para evitar realizar cambios mientras se carga el modelo del archivo.
+- Use `store.InSerializationTransaction` para evitar realizar cambios mientras se carga el modelo del archivo.
 
--   Hará que los cambios aún más los eventos que se desencadene. Asegúrese de que se evite un bucle infinito.
+- Hará que los cambios aún más los eventos que se desencadene. Asegúrese de que se evite un bucle infinito.
 
 ## <a name="store-event-types"></a>Tipos de evento de Store
 

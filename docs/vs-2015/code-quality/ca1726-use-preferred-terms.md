@@ -1,14 +1,9 @@
 ---
-title: 'CA1726: Utilizar términos preferidos | Microsoft Docs'
-ms.custom: ''
+title: 'CA1726: Utilizar términos preferidos | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - UsePreferredTerms
 - CA1726
@@ -19,17 +14,17 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c17514d00be7b0a3303b1c5bf703702fe564e0d1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 67dab4c732faa04af44800f740d78c4ce4f9dc80
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220524"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664117"
 ---
 # <a name="ca1726-use-preferred-terms"></a>CA1726: Utilizar términos preferidos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Para obtener la documentación más reciente de Visual Studio 2017, consulte [CA1726: utilizar términos preferidos](https://docs.microsoft.com/visualstudio/code-quality/ca1726-use-preferred-terms) en docs.microsoft.com.  
+Para obtener la documentación más reciente de Visual Studio, consulte [CA1726: Utilizar términos preferidos](https://docs.microsoft.com/visualstudio/code-quality/ca1726-use-preferred-terms).  
   
 |||  
 |-|-|  
@@ -46,30 +41,30 @@ Para obtener la documentación más reciente de Visual Studio 2017, consulte [CA
   
 |Término obsoleto|Término preferido|  
 |-------------------|--------------------|  
-|no es|No van|  
-|Cancelado|Cancelado|  
-|No se puede|No se puede|  
-|ComPlus|EnterpriseServices|  
-|No se pueden|CouldNot|  
-|Didnt|DidNot|  
-|Doesnt|No|  
-|No|No conectar|  
-|Marca o indicadores|No hay ningún término de reemplazo. No utilizar.|  
-|no se habían|HadNot|  
-|No se ha|HasNot|  
-|todavía no|HaveNot|  
-|Índices|Índices|  
-|no es|IsNot|  
-|Inicio de sesión|Inicio de sesión|  
-|Cierre de sesión|Cierre de sesión|  
-|Shouldnt|ShouldNot|  
-|Inicio de sesión|Inicio de sesión|  
-|Aprobación|Cierre de sesión|  
-|Wasnt|WasNot|  
-|no estaban|No están|  
-|No|No|  
-|Wouldnt|WouldNot|  
-|Puede escribir|Puede escribir|  
+|`Arent`|`AreNot`|
+|`Cancelled`|`Canceled`|
+|`Cant`|`Cannot`|
+|`ComPlus`|`EnterpriseServices`|
+|`Couldnt`|`CouldNot`|
+|`Didnt`|`DidNot`|
+|`Doesnt`|`DoesNot`|
+|`Dont`|`DoNot`|
+|`Flag` o `Flags`|No hay ningún término de reemplazo. No utilizar.|
+|`Hadnt`|`HadNot`|
+|`Hasnt`|`HasNot`|
+|`Havent`|`HaveNot`|
+|`Indices`|`Indexes`|
+|`Isnt`|`IsNot`|
+|`LogIn`|`LogOn`|
+|`LogOut`|`LogOff`|
+|`Shouldnt`|`ShouldNot`|
+|`SignOn`|`SignIn`|
+|`SignOff`|`SignOut`|
+|`Wasnt`|`WasNot`|
+|`Werent`|`WereNot`|
+|`Wont`|`WillNot`|
+|`Wouldnt`|`WouldNot`|
+|`Writeable`|`Writable`|
   
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones  
  Para corregir una infracción de esta regla, reemplace el término con el término preferido alternativo.  
@@ -79,4 +74,3 @@ Para obtener la documentación más reciente de Visual Studio 2017, consulte [CA
   
 ## <a name="related-rules"></a>Reglas relacionadas  
  [Advertencias sobre nomenclatura](../code-quality/naming-warnings.md)
-

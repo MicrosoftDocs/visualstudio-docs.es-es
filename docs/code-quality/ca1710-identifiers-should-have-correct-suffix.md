@@ -1,7 +1,6 @@
 ---
 title: 'CA1710: Los identificadores deben tener un sufijo correcto'
-ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - CA1710
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 2b8e6dce-b4e8-4a66-ba9a-6b79be5bfe8c
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e8923f3bb1ae4fe92891593c2109852810beb4e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 65ac417476752da832e5e9ebe693f6c83a5c1cfe
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53944715"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57868080"
 ---
 # <a name="ca1710-identifiers-should-have-correct-suffix"></a>CA1710: Los identificadores deben tener un sufijo correcto
 
@@ -35,6 +34,8 @@ ms.locfileid: "53944715"
 
 Un identificador no tiene el sufijo correcto.
 
+De forma predeterminada, esta regla solo se examina los identificadores visibles externamente, pero se trata de [configurable](#configurability).
+
 ## <a name="rule-description"></a>Descripción de la regla
 
 Por convención, los nombres de tipos que extienden determinados tipos bases o que implementan algunas interfaces, o tipos derivados de estos tipos, tienen un sufijo que está asociado con el tipo base o interfaz.
@@ -48,12 +49,12 @@ En la tabla siguiente se enumera los tipos bases e interfaces que tienen asociad
 |<xref:System.Attribute?displayProperty=fullName>|Atributo|
 |<xref:System.EventArgs?displayProperty=fullName>|EventArgs|
 |<xref:System.Exception?displayProperty=fullName>|Excepción|
-|<xref:System.Collections.ICollection?displayProperty=fullName>|Colección|
+|<xref:System.Collections.ICollection?displayProperty=fullName>|Collection|
 |<xref:System.Collections.IDictionary?displayProperty=fullName>|Dictionary|
-|<xref:System.Collections.IEnumerable?displayProperty=fullName>|Colección|
+|<xref:System.Collections.IEnumerable?displayProperty=fullName>|Collection|
 |<xref:System.Collections.Queue?displayProperty=fullName>|Colección o una cola|
 |<xref:System.Collections.Stack?displayProperty=fullName>|Colección o pila|
-|<xref:System.Collections.Generic.ICollection%601?displayProperty=fullName>|Colección|
+|<xref:System.Collections.Generic.ICollection%601?displayProperty=fullName>|Collection|
 |<xref:System.Collections.Generic.IDictionary%602?displayProperty=fullName>|Dictionary|
 |<xref:System.Data.DataSet?displayProperty=fullName>|DataSet|
 |<xref:System.Data.DataTable?displayProperty=fullName>|Colección o DataTable|
@@ -91,6 +92,16 @@ Cambie el nombre del tipo tiene el sufijo con el término correcto.
 Es seguro suprimir una advertencia al utilizar el sufijo 'Collection' Si el tipo es una estructura de datos generalizada que podría extenderse o que va a contener un conjunto arbitrario de elementos diversos. En este caso, un nombre que proporcione información significativa sobre la implementación, rendimiento u otras características de la estructura de datos podría tener sentido (por ejemplo, BinaryTree). En casos donde el tipo representa una colección de un tipo específico (por ejemplo, StringCollection), no suprima una advertencia de esta regla porque el sufijo indica que el tipo se puede enumerar mediante el uso de un `foreach` instrucción.
 
 Para otros sufijos, no suprima una advertencia de esta regla. El sufijo permite el uso previsto sea evidente desde el nombre de tipo.
+
+## <a name="configurability"></a>Capacidad de configuración
+
+Si ejecuta esta regla de [analizadores de FxCop](install-fxcop-analyzers.md) (y no a través de análisis de código estático), puede configurar qué partes de su código base para ejecutar esta regla en, en función de su accesibilidad. Por ejemplo, para especificar que debe ejecutarse la regla sólo con respecto a la superficie de API no públicos, agregue el siguiente par clave-valor a un archivo .editorconfig en el proyecto:
+
+```
+dotnet_code_quality.ca1710.api_surface = private, internal
+```
+
+Puede configurar esta opción para simplemente esta regla, para todas las reglas o para todas las reglas de esta categoría (convenciones de nomenclatura). Para obtener más información, consulte [analizadores de FxCop configurar](configure-fxcop-analyzers.md).
 
 ## <a name="related-rules"></a>Reglas relacionadas
 

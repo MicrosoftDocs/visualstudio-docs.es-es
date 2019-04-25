@@ -1,20 +1,19 @@
 ---
 title: Vista Gráfico del Diseñador de esquemas XML
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 ms.assetid: 5881afde-3f24-4eb9-bff8-6cb3fc8aade7
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 252b22305579f3c0beccdca0a5464f7d08bbc985
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: 3beeb41d89f96cea8ab0f7f97bada815101f7e2f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54269909"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079713"
 ---
 # <a name="graph-view"></a>Vista de gráfico
 
@@ -28,11 +27,11 @@ La vista Gráfico proporciona una representación gráfica de los nodos de esque
 
  La superficie de diseño de la vista gráfico muestra el contenido de la [área de trabajo de diseñador de esquemas XML](../xml-tools/xml-schema-designer-workspace.md). Si el área de trabajo contiene nodos globales del conjunto de esquemas, dichos nodos se muestran en la superficie de diseño de la vista Gráfico y se dibujan flechas entre los nodos que tienen relaciones.
 
- Haga doble clic en un nodo en la vista Gráfico para mostrar el Editor XML.
+ Haga doble clic en un nodo en la vista gráfico se abrirá el editor de XML.
 
  Para eliminar los nodos seleccionados del área de trabajo, use la barra de herramientas del diseñador XSD o **eliminar** clave.
 
- Si la superficie de diseño está en blanco, el Editor XML, el **Explorador de esquemas XML**, y se muestran la marca de agua. El *marca de agua* es una lista de vínculos a todas las vistas de diseñador XSD.
+ Si la superficie de diseño está en blanco, el editor XML, el **Explorador de esquemas XML**, y se muestran la marca de agua. El *marca de agua* es una lista de vínculos a todas las vistas de diseñador XSD.
 
  ![Diseñador XSD; vista Gráfico](../xml-tools/media/xsdgraphviewwatermark.gif)
 
@@ -56,7 +55,7 @@ La vista Gráfico proporciona una representación gráfica de los nodos de esque
 |**Quitar todo salvo la selección del área de trabajo**|Quita los nodos que no están seleccionados del área de trabajo y de la superficie de diseño.|
 |**Exportar diagrama como imagen**|Guarda la superficie de diseño en un archivo XPS.|
 |**Seleccionar todo**|Selecciona todos los nodos de la superficie de diseño.|
-|**Vista Código**|Abre el archivo que contiene el nodo seleccionado en el Editor XML. El elemento seleccionado en el **Explorador de esquemas XML** también está seleccionado en el Editor XML.|
+|**Vista Código**|Abre el archivo que contiene el nodo seleccionado en el editor XML. El elemento seleccionado en el **Explorador de esquemas XML** también está seleccionado en el editor XML.|
 |**Propiedades (ventana)**|Se abre el **propiedades** ventana (si aún no está abierto). Esta ventana muestra información sobre el nodo.|
 
  Además de las opciones comunes descritas anteriormente, el menú contextual para los elementos globales también tiene las opciones siguientes:
@@ -121,11 +120,11 @@ La vista Gráfico proporciona una representación gráfica de los nodos de esque
 
  La función de deshacer/rehacer está habilitada en la vista Gráfico para las siguientes acciones:
 
--   Agregar un nodo único arrastrándolo y colocándolo.
+- Agregar un nodo único arrastrándolo y colocándolo.
 
--   Agregar varios nodos de la ventana de resultados de la búsqueda de las consultas del Explorador de esquemas o de la vista Inicio.
+- Agregar varios nodos de la ventana de resultados de la búsqueda de las consultas del Explorador de esquemas o de la vista Inicio.
 
--   Eliminar uno o varios nodos.
+- Eliminar uno o varios nodos.
 
 ## <a name="zoom"></a>Zoom
 
@@ -133,17 +132,17 @@ La vista Gráfico proporciona una representación gráfica de los nodos de esque
 
  El zoom se puede controlar de las maneras siguientes:
 
--   Si mantiene presionada la **Ctrl** las ruedas clave y girando el mouse cuando se mantiene el mouse sobre la superficie de la vista gráfico.
+- Si mantiene presionada la **Ctrl** las ruedas clave y girando el mouse cuando se mantiene el mouse sobre la superficie de la vista gráfico.
 
--   Usando el control deslizante. El control deslizante muestra el nivel de zoom actual.
+- Usando el control deslizante. El control deslizante muestra el nivel de zoom actual.
 
 El control deslizante de Zoom es opaco al seleccionarla, mantenga el mouse sobre él o usar **Ctrl** con la rueda del mouse para hacer zoom; en el resto del tiempo, es transparente.
 
 ## <a name="xml-editor-integration"></a>Integración del editor XML
 
- Puede alternar entre las vistas gráfico y el Editor XML haciendo clic en un nodo y mediante el menú contextual (clic derecho) de la vista código.
+ Puede alternar entre las vistas gráfico y el editor XML haciendo clic en un nodo y mediante el menú contextual (clic derecho) de la vista código.
 
- Si realiza modificaciones en el conjunto de esquemas en el Editor XML, dichas modificaciones se sincronizarán en la vista Gráfico. Para obtener más información, consulte [integración con el editor XML](../xml-tools/integration-with-xml-editor.md).
+ Si realiza cambios en el esquema especificado en el editor XML, se sincronizarán los cambios en la vista gráfico. Para obtener más información, consulte [integración con el editor XML](../xml-tools/integration-with-xml-editor.md).
 
 ## <a name="see-also"></a>Vea también
 

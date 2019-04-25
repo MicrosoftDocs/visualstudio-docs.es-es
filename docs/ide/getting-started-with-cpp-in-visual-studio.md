@@ -3,21 +3,20 @@ title: Introducción a C++
 description: ''
 ms.custom: mvc
 ms.date: 12/04/2017
-ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: corob-msft
 ms.author: corob
-manager: douge
+manager: jillfra
 dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6d77732d6bf54e4849be55324e6ac18be2a46f74
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 375879e6a6aba93b702c65412328458a9a5568ab
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53820895"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790347"
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Introducción a C++ en Visual Studio
 
@@ -27,15 +26,37 @@ Tras completar este inicio rápido, estará familiarizado con muchas de las herr
 
 No es necesario estar familiarizado con C++ para completar este inicio rápido, pero sí conviene estar al tanto de algunos conceptos generales de depuración y programación. La documentación de Visual Studio no sirve para aprender a programar en C++. Una buena guía de recursos de aprendizaje de C++ es la página de [introducción](https://isocpp.org/get-started) del sitio web de ISO C++.
 
-Para seguir este inicio rápido, se necesita una copia de Visual Studio 2017 versión 15.3 o posterior que tenga instalada la carga de trabajo **Desarrollo de escritorio con C++**. Para obtener una guía rápida de instalación, vea [Install C++ support in Visual Studio](/cpp/build/vscpp-step-0-installation) (Instalar la compatibilidad con C++ en Visual Studio).
+::: moniker range="vs-2017"
+
+Para seguir este inicio rápido, se necesita una copia de Visual Studio 2017 que tenga instalada la carga de trabajo **Desarrollo de escritorio con C++**. Para obtener una guía rápida de instalación, vea [Install C++ support in Visual Studio](/cpp/build/vscpp-step-0-installation) (Instalar la compatibilidad con C++ en Visual Studio).
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Para seguir este inicio rápido, se necesita una copia de Visual Studio 2019 que tenga instalada la carga de trabajo **Desarrollo de escritorio con C++**. Para obtener una guía rápida de instalación, vea [Install C++ support in Visual Studio](/cpp/build/vscpp-step-0-installation) (Instalar la compatibilidad con C++ en Visual Studio).
+
+::: moniker-end
 
 ## <a name="create-a-console-app"></a>Crear una aplicación de consola
 
-Inicie Visual Studio si aún no se está ejecutando.
+Abra Visual Studio si aún no se está ejecutando.
+
+::: moniker range="vs-2017"
 
 ![IDE con la configuración de Visual C&#43;&#43; aplicada](../ide/media/get-started-cpp-ide-layout.png)
 
 Después de abrir Visual Studio, puede ver las tres partes básicas del IDE: ventanas de herramientas, menús y barras de herramientas, así como el espacio de la ventana principal. Las ventanas de herramientas se acoplan a los lados izquierdo y derecho de la ventana de la aplicación. El cuadro **Inicio rápido**, la barra de menús y la barra de herramientas estándar se sitúan en la parte superior. El centro de la ventana contiene la **Página de inicio**. Cuando se abre una solución o un proyecto, los editores y diseñadores aparecen en este espacio. Al desarrollar una aplicación, la mayor parte del tiempo se invierte en esta área central.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Después de abrir Visual Studio, la primera ventana que aparece es la de inicio. Haga clic en **Continuar sin código** para abrir el entorno de desarrollo.
+
+Verá las tres partes básicas del IDE: ventanas de herramientas, menús y barras de herramientas, así como el espacio de la ventana principal. Las ventanas de herramientas se acoplan a los lados izquierdo y derecho de la ventana de la aplicación. El cuadro de búsqueda, la barra de menús y la barra de herramientas estándar se encuentran en la parte superior. Cuando se carga una solución o un proyecto, los editores y diseñadores aparecen en el espacio central de la ventana de la aplicación. Cuando desarrolle una aplicación, pasará la mayor parte del tiempo en esta área central.
+
+::: moniker-end
 
 Visual Studio usa *proyectos* para organizar el código de una aplicación y *soluciones* para organizar los proyectos. Un proyecto contiene todas las opciones, las configuraciones y las reglas que se usan para compilar las aplicaciones. También sirve para administrar la relación entre todos los archivos del proyecto y cualquier archivo externo. Para crear la aplicación, hay que crear en primer lugar un proyecto y una solución.
 

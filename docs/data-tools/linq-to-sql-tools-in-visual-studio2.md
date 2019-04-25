@@ -5,16 +5,15 @@ ms.topic: conceptual
 ms.assetid: 45e477c0-5c6b-41f9-b2d0-2808fb4f6537
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0c4b3c752a2ca28c4cfb4b08b2f51f8b8fc6ac23
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4105a93d4ad459c8bc1cb3a7a20b37c69f311c12
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53894160"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55931642"
 ---
 # <a name="linq-to-sql-tools-in-visual-studio"></a>Herramientas de LINQ to SQL en Visual Studio
 
@@ -49,7 +48,7 @@ Después de agregar un **clases LINQ to SQL** elemento a un proyecto y abrir el 
 
 ## <a name="create-entity-classes-that-map-to-database-tables-and-views"></a>Crear clases de entidad que se asignan a tablas de base de datos y vistas
 
-Puede crear clases de entidad asignadas a tablas y vistas arrastrando tablas de base de datos y vistas de **Explorador de servidores** o **Database Explorer** hasta la **Object Relational Designer**. Tal como se ha indicado en la sección anterior, el <xref:System.Data.Linq.DataContext> se configura con la información de conexión proporcionada por el primer elemento que se arrastra hasta la superficie de diseño. Si se agrega un elemento subsiguiente que use otra conexión a la **Object Relational Designer**, puede cambiar la conexión para el <xref:System.Data.Linq.DataContext>. Para obtener más información, vea [Cómo: Creación de clases de LINQ to SQL asignadas a tablas y vistas (Object Relational Designer)](../data-tools/how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md).
+Puede crear clases de entidad asignadas a tablas y vistas arrastrando tablas de base de datos y vistas de **Explorador de servidores** o **Database Explorer** hasta la **Object Relational Designer**. Tal como se ha indicado en la sección anterior, el <xref:System.Data.Linq.DataContext> se configura con la información de conexión proporcionada por el primer elemento que se arrastra hasta la superficie de diseño. Si se agrega un elemento subsiguiente que use otra conexión a la **Object Relational Designer**, puede cambiar la conexión para el <xref:System.Data.Linq.DataContext>. Para obtener más información, consulte [Cómo: crear clases de LINQ to SQL asignadas a tablas y vistas (Object Relational Designer)](../data-tools/how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md).
 
 ## <a name="create-datacontext-methods-that-call-stored-procedures-and-functions"></a>Crear métodos de DataContext que llamen a procedimientos almacenados y funciones
 
@@ -60,15 +59,15 @@ Puede crear <xref:System.Data.Linq.DataContext> métodos que llaman (estén asig
 
 ## <a name="configure-a-datacontext-to-use-stored-procedures-to-save-data-between-entity-classes-and-a-database"></a>Configurar DataContext de modo que utilice procedimientos almacenados para guardar los datos entre las clases de entidad y una base de datos
 
-Como se ha indicado anteriormente, puede crear métodos de <xref:System.Data.Linq.DataContext> que llamen a los procedimientos almacenados y funciones. Además, también puede asignar procedimientos almacenados que se usan para el valor predeterminado LINQ al comportamiento en tiempo de ejecución de SQL, que realiza inserciones, actualizaciones y eliminaciones. Para obtener más información, vea [Cómo: Asignación de procedimientos almacenados para realizar actualizaciones, inserciones y eliminaciones (Object Relational Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md).
+Como se ha indicado anteriormente, puede crear métodos de <xref:System.Data.Linq.DataContext> que llamen a los procedimientos almacenados y funciones. Además, también puede asignar procedimientos almacenados que se usan para el valor predeterminado LINQ al comportamiento en tiempo de ejecución de SQL, que realiza inserciones, actualizaciones y eliminaciones. Para obtener más información, consulte [Cómo: asignar procedimientos almacenados para realizar actualizaciones, inserciones y eliminaciones (Object Relational Designer)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md).
 
 ## <a name="inheritance-and-the-or-designer"></a>Herencia y Object Relational Designer
 
-Al igual que otros objetos, clases LINQ to SQL puede usar la herencia y derivarse de otras clases. En una base de datos, las relaciones de herencia se crean de varias maneras. El **Object Relational Designer** admite el concepto de herencia de tabla única normalmente implementada en los sistemas relacionales. Para obtener más información, vea [Cómo: configurar herencia mediante Object Relational Designer](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md).
+Al igual que otros objetos, clases LINQ to SQL puede usar la herencia y derivarse de otras clases. En una base de datos, las relaciones de herencia se crean de varias maneras. El **Object Relational Designer** admite el concepto de herencia de tabla única normalmente implementada en los sistemas relacionales. Para obtener más información, consulte [Cómo: configurar la herencia mediante Object Relational Designer](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md).
 
 ## <a name="linq-to-sql-queries"></a>Consultas de LINQ to SQL
 
-Las clases de entidad creadas por el **Object Relational Designer** están diseñados para su uso con [Language-Integrated query (LINQ)](/dotnet/csharp/linq/). Para obtener más información, vea [Cómo: Consultar información](/dotnet/framework/data/adonet/sql/linq/how-to-query-for-information).
+Las clases de entidad creadas por el **Object Relational Designer** están diseñados para su uso con [Language-Integrated query (LINQ)](/dotnet/csharp/linq/). Para obtener más información, consulte [Cómo: consultar información](/dotnet/framework/data/adonet/sql/linq/how-to-query-for-information).
 
 ## <a name="separate-the-generated-datacontext-and-entity-class-code-into-different-namespaces"></a>Separar el código de clase DataContext y entidad generado en diferentes espacios de nombres
 

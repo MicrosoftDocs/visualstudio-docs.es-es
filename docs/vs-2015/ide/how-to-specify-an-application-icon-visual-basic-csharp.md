@@ -1,14 +1,9 @@
 ---
-title: 'Cómo: Especificar el icono de una aplicación (Visual Basic, C#) | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Especificar un icono de aplicación (Visual Basic, C#) | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - icons [Visual Studio], application
 - application properties [Visual Studio], icons
@@ -17,15 +12,15 @@ ms.assetid: ad8e14ed-adc2-45b6-a0be-818b16d5616f
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 97c452cbdf4d8f0393160ad15e0bb192998961a8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: b10434f92a5d310d2f53c4a1c1ff7ab3a84bc1ca
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49235435"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045785"
 ---
-# <a name="how-to-specify-an-application-icon-visual-basic-c"></a>Cómo: Especificar el icono de una aplicación (Visual Basic, C#)
+# <a name="how-to-specify-an-application-icon-visual-basic-c"></a>Procedimiento Especificar un icono de aplicación (Visual Basic, C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 La propiedad `Icon` de un proyecto especifica el archivo de icono (.ico) que se mostrará para la aplicación compilada en el Explorador de archivos y en la barra de tareas de Windows.  
@@ -37,13 +32,13 @@ La propiedad `Icon` de un proyecto especifica el archivo de icono (.ico) que se 
   
 ### <a name="to-specify-an-application-icon"></a>Para especificar el icono de una aplicación  
   
-1.  En el **Explorador de soluciones**, elija el nodo de proyecto (no el nodo **Solución**).  
+1. En el **Explorador de soluciones**, elija el nodo de proyecto (no el nodo **Solución**).  
   
-2.  En la barra de menús, seleccione **Proyecto**, **Propiedades**.  
+2. En la barra de menús, seleccione **Proyecto**, **Propiedades**.  
   
-3.  Cuando aparezca **Diseñador de proyectos**, elija la pestaña **Aplicación**.  
+3. Cuando aparezca **Diseñador de proyectos**, elija la pestaña **Aplicación**.  
   
-4.  **(Visual Basic)** En la lista **Icono**, elija un archivo de icono (.ico).  
+4. **(Visual Basic)** En la lista **Icono**, elija un archivo de icono (.ico).  
   
      **C#** Cerca de la lista **Icono**, elija el botón **\<Examinar... >** y, después, vaya a la ubicación del archivo de icono que quiere.  
   
@@ -51,7 +46,4 @@ La propiedad `Icon` de un proyecto especifica el archivo de icono (.ico) que se 
  [Página de aplicación, Diseñador de proyectos (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)   
  [Página de aplicación, Diseñador de proyectos (C#)](../ide/reference/application-page-project-designer-csharp.md)   
  [Administrar las propiedades de la aplicación](../ide/application-properties.md)  
- [Cómo: Agregar o quitar recursos](http://msdn.microsoft.com/en-us/7b77bc06-3952-4799-b029-def3f8f7f88d)
-
-
-
+ [Cómo: Agregar o quitar recursos](http://msdn.microsoft.com/7b77bc06-3952-4799-b029-def3f8f7f88d)

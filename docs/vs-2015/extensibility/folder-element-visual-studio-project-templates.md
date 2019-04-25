@@ -1,14 +1,9 @@
 ---
 title: Elemento Folder (plantillas de proyecto de Visual Studio) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#Folder
 helpviewer_keywords:
@@ -16,21 +11,21 @@ helpviewer_keywords:
 ms.assetid: 558e3d41-0db5-4c44-82bb-6bb87892b093
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 81d2856bb7c261219fd69ec1e12db85cfb41d7e8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 35448f4324213739cb2dc14a95598ac9a3d4432f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51787671"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055618"
 ---
 # <a name="folder-element-visual-studio-project-templates"></a>Folder (Elemento, Plantillas de proyecto de Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Especifica una carpeta que se agregará al proyecto.  
   
- \<VSTemplate >  
- \<TemplateContent >  
+ \<VSTemplate>  
+ \<TemplateContent>  
  \<Project>  
  \<Carpeta >  
   
@@ -71,7 +66,7 @@ Especifica una carpeta que se agregará al proyecto.
   
  Puede usar cualquiera de los siguientes métodos para organizar los elementos de proyecto en carpetas en una plantilla:  
   
--   Incluir las carpetas en el archivo .zip de plantilla y agregarlos al proyecto en el archivo .vstemplate especificando la ruta de acceso al archivo en el `ProjectItem` elementos, sin ningún `Folder` elementos. Este es el método recomendado. Por ejemplo:  
+- Incluir las carpetas en el archivo .zip de plantilla y agregarlos al proyecto en el archivo .vstemplate especificando la ruta de acceso al archivo en el `ProjectItem` elementos, sin ningún `Folder` elementos. Este es el método recomendado. Por ejemplo:  
   
      `...`  
   
@@ -81,7 +76,7 @@ Especifica una carpeta que se agregará al proyecto.
   
      `...`  
   
--   Incluir las carpetas en el archivo .zip de plantilla y agregarlos al proyecto en el archivo .vstemplate con `Folder` elementos. Por ejemplo:  
+- Incluir las carpetas en el archivo .zip de plantilla y agregarlos al proyecto en el archivo .vstemplate con `Folder` elementos. Por ejemplo:  
   
      `...`  
   
@@ -95,7 +90,7 @@ Especifica una carpeta que se agregará al proyecto.
   
      `...`  
   
--   No incluya carpetas en el archivo .zip de plantilla, pero agregue carpetas mediante la `TargetFileName` atributo de la `ProjectItem` elemento. Por ejemplo:  
+- No incluya carpetas en el archivo .zip de plantilla, pero agregue carpetas mediante la `TargetFileName` atributo de la `ProjectItem` elemento. Por ejemplo:  
   
      `...`  
   
@@ -138,4 +133,3 @@ Especifica una carpeta que se agregará al proyecto.
  [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Crear plantillas para proyectos y elementos en Visual Studio](../ide/creating-project-and-item-templates.md)   
  [ProjectItem (Elemento, Plantillas de elementos de Visual Studio)](../extensibility/projectitem-element-visual-studio-item-templates.md)
-

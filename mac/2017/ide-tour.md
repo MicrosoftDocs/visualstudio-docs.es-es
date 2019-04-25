@@ -3,22 +3,37 @@ title: Paseo por Visual Studio para Mac
 description: Visual Studio para Mac proporciona un entorno de desarrollo integrado para compilar aplicaciones .NET en macOS, incluidos sitios web de ASP.NET Core y proyectos de Xamarin para iOS, Android, Mac y Xamarin.Forms.
 author: conceptdev
 ms.author: crdun
-ms.date: 11/03/2018
+ms.date: 02/07/2019
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
-ms.openlocfilehash: 99ad6cfcda7bf271853aff5c095bbb0664b3b592
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.custom: video
+ms.openlocfilehash: 0ab7293a7b7d956778d1dbab568d609e6bf3d644
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54315833"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857262"
 ---
 # <a name="visual-studio-2017-for-mac-tour"></a>Paseo por Visual Studio 2017 para Mac
 
-Visual Studio para Mac convierte el IDE centrado en dispositivos móviles de Xamarin, Xamarin Studio, en un entorno de desarrollo con un enfoque de primero móvil, primero en la nube en el equipo Mac. Esta herramienta para desarrolladores permite utilizar la eficacia de .NET para crear aplicaciones para todas las plataformas que exigen los usuarios.
+> [!NOTE]
+> Visual Studio 2019 para Mac está [ya disponible](installation.md).
 
-La experiencia de usuario (UX) de Visual Studio para Mac es similar a la de su equivalente de Windows, pero con una sensación de macOS nativo. La creación, la apertura y el desarrollo de una aplicación son experiencias familiares para cualquiera que haya usado anteriormente Visual Studio en Windows. Además, Visual Studio para Mac emplea muchas de las eficaces herramientas que convierten a su equivalente de Windows en un IDE tan eficaz. La plataforma de compilador Roslyn se usa para la refactorización e IntelliSense. El sistema del proyecto y el motor de compilación usan MSBuild y el editor de código fuente es compatible con los paquetes de TextMate. Usa los mismos motores de depuración para las aplicaciones .NET Core y Xamarin y los mismos diseñadores para Xamarin.iOS y Xamarin.Android.
+Visual Studio para Mac es un _entorno de desarrollo integrado_ de .NET en Mac que se puede usar para editar, depurar y compilar código y, después, publicar una aplicación. Además de las características esperadas, como un editor estándar y un depurador, Visual Studio para Mac incluye compiladores, herramientas de finalización de código, diseñadores gráficos y control de código fuente para facilitar el proceso de desarrollo de software.
 
-En este artículo se analizan varias secciones de Visual Studio para Mac y se ofrece una visión general de algunas de las características que lo convierten en una herramienta eficaz para crear aplicaciones multiplataforma.
+Visual Studio para Mac admite muchos de los mismos tipos de archivo que su equivalente de Windows, como `.csproj`, `.fsproj` o `.sln`, y admite características como EditorConfig, lo que significa que puede usar el IDE que mejor le convenga.
+La creación, la apertura y el desarrollo de una aplicación son experiencias familiares para cualquiera que haya usado anteriormente Visual Studio en Windows. Además, Visual Studio para Mac emplea muchas de las eficaces herramientas que convierten a su equivalente de Windows en un IDE tan eficaz. La plataforma de compilador Roslyn se usa para la refactorización e IntelliSense. El sistema del proyecto y el motor de compilación usan MSBuild y el editor de código fuente es compatible con los paquetes de TextMate. Usa los mismos motores de depuración para las aplicaciones .NET Core y Xamarin y los mismos diseñadores para Xamarin.iOS y Xamarin.Android.
+
+## <a name="what-can-i-do-in-visual-studio-for-mac"></a>Qué puedo hacer en Visual Studio para Mac
+
+Visual Studio para Mac admite los siguientes tipos de desarrollo:
+
+- Aplicaciones web de ASP.NET Core con C#, F# y compatibilidad con páginas de Razor, JavaScript y TypeScript
+- Aplicaciones de consola .NET Core con C# o F#
+- Aplicaciones y juegos de Unity multiplataforma con C#
+- Aplicaciones de Android, iOS, tvOS y watchOS en Xamarin con C# o F# y XAML
+- Aplicaciones de escritorio de Cocoa en C# o F#
+
+En este artículo se analizan varias secciones de Visual Studio para Mac y se ofrece una visión general de algunas de las características que lo convierten en una herramienta eficaz para crear estas aplicaciones.
 
 ## <a name="ide-tour"></a>Paseo por el IDE
 
@@ -103,6 +118,11 @@ Los archivos con cambios sin confirmar tienen una anotación en sus iconos en el
 
 Para más información sobre el uso del control de versiones en Visual Studio, consulte el artículo [Control de versiones](/visualstudio/mac/version-control).
 
+## <a name="related-video"></a>Vídeo relacionado
+
+> [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Overview/player]
+
+
 ## <a name="see-also"></a>Vea también
 
-- [IDE de Visual Studio (en Windows)](/visualstudio/ide/visual-studio-ide)
+- [IDE de Visual Studio (en Windows)](/visualstudio/ide/visual-studio-ide)

@@ -1,14 +1,9 @@
 ---
 title: Usar activos 3D en un juego o una aplicación | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 f1_keywords:
 - VC.Project.ImageContentTask.ContentOutput
 - VC.Project.MeshContentTask.ContentOutput
@@ -20,13 +15,13 @@ ms.assetid: ea587909-e434-46a8-abf8-9b3e95a58b4f
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: e04f4c82e6f11f2659b4cc65549efb291009b720
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: c475366c190e5ac008394f8642f64da022532a0a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863600"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064744"
 ---
 # <a name="using-3-d-assets-in-your-game-or-app"></a>Usar activos 3D en un juego o una aplicación
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,9 +35,9 @@ En este artículo se describe cómo se puede utilizar [!INCLUDE[vsprvs](../inclu
   
 #### <a name="to-add-the-build-customizations-to-your-project"></a>Para agregar las personalizaciones de compilación al proyecto  
   
-1.  En el **Explorador de soluciones**, abra el menú contextual del proyecto y, después, elija **Dependencias de compilación**, **Compilar personalizaciones**. Aparece el cuadro de diálogo **Archivos de personalizaciones de compilación de Visual C++**.  
+1. En el **Explorador de soluciones**, abra el menú contextual del proyecto y, después, elija **Dependencias de compilación**, **Compilar personalizaciones**. Aparece el cuadro de diálogo **Archivos de personalizaciones de compilación de Visual C++**.  
   
-2.  En **Archivos de personalizaciones de compilación disponibles**, active las casillas correspondientes a los tipos de recurso que quiere usar en el proyecto, como se describe en esta tabla:  
+2. En **Archivos de personalizaciones de compilación disponibles**, active las casillas correspondientes a los tipos de recurso que quiere usar en el proyecto, como se describe en esta tabla:  
   
     |Tipo de activo|Nombre de personalización de compilación|  
     |----------------|------------------------------|  
@@ -50,7 +45,7 @@ En este artículo se describe cómo se puede utilizar [!INCLUDE[vsprvs](../inclu
     |Modelos 3D|**MeshContentTask(.targets, .props)**|  
     |Sombreadores|**ShaderGraphContentTask(.targets, .props)**|  
   
-3.  Elija el botón **Aceptar** .  
+3. Elija el botón **Aceptar** .  
   
 ## <a name="including-assets-in-your-build"></a>Incluir activos en la compilación  
  Ahora que el proyecto sabe cuáles son las diferentes clases de activos 3D que desea usar, el paso siguiente consiste en indicarle qué archivos son activos 3D y de qué clases de activos se tratan.  
@@ -81,13 +76,13 @@ En este artículo se describe cómo se puede utilizar [!INCLUDE[vsprvs](../inclu
   
 #### <a name="to-configure-content-pipeline-properties"></a>Para configurar las propiedades de la canalización de contenido  
   
-1.  En el **Explorador de soluciones**, en el proyecto, abra el menú contextual del archivo de recursos y, después, elija **Propiedades**. Aparece el cuadro de diálogo **Página de propiedades** del recurso.  
+1. En el **Explorador de soluciones**, en el proyecto, abra el menú contextual del archivo de recursos y, después, elija **Propiedades**. Aparece el cuadro de diálogo **Página de propiedades** del recurso.  
   
-2.  Asegúrese de que las propiedades **Configuración** y **Plataforma** se establecen en los valores a los que quiere que se apliquen los cambios.  
+2. Asegúrese de que las propiedades **Configuración** y **Plataforma** se establecen en los valores a los que quiere que se apliquen los cambios.  
   
-3.  En **Propiedades de configuración**, elija el nodo de canalización de contenido (por ejemplo, **Canalización de contenido de la imagen** para los recursos de textura e imagen) y, después, establezca las propiedades en los valores adecuados en la cuadrícula de propiedades. Por ejemplo, para generar los mapas MIP para un recurso de textura en tiempo de compilación, establezca la propiedad **Generar Mips** en **Sí**.  
+3. En **Propiedades de configuración**, elija el nodo de canalización de contenido (por ejemplo, **Canalización de contenido de la imagen** para los recursos de textura e imagen) y, después, establezca las propiedades en los valores adecuados en la cuadrícula de propiedades. Por ejemplo, para generar los mapas MIP para un recurso de textura en tiempo de compilación, establezca la propiedad **Generar Mips** en **Sí**.  
   
-4.  Elija el botón **Aceptar** .  
+4. Elija el botón **Aceptar** .  
   
 ### <a name="image-content-pipeline-configuration"></a>Configuración de la canalización de contenido de imagen  
  Cuando se utiliza la herramienta de canalización de contenido de la imagen para compilar un activo de textura, se puede comprimir la textura de varias maneras, indicar si se deben generar niveles de MIP en tiempo de compilación y cambiar el nombre del archivo de salida.  
@@ -97,26 +92,26 @@ En este artículo se describe cómo se puede utilizar [!INCLUDE[vsprvs](../inclu
 |**Compress**|Especifica el tipo de compresión que se utiliza para el archivo de salida.<br /><br /> Las opciones disponibles son:<br /><br /> -   **Sin compresión**<br />-   **Compresión BC1_UNORM**<br />-   **Compresión BC1_UNORM_SRGB**<br />-   **Compresión BC2_UNORM**<br />-   **Compresión BC2_UNORM_SRGB**<br />-   **Compresión BC3_UNORM**<br />-   **Compresión BC3_UNORM_SRGB**<br />-   **Compresión BC4_UNORM**<br />-   **Compresión BC4_SNORM**<br />-   **Compresión BC5_UNORM**<br />-   **Compresión BC5_SNORM**<br />-   **Compresión BC6H_UF16**<br />-   **Compresión BC6H_SF16**<br />-   **Compresión BC7_UNORM**<br />-   **Compresión BC7_UNORM_SRGB**<br /><br /> Para obtener información sobre qué formatos de compresión se admiten en las diferentes versiones de DirectX, vea la [Guía de programación para DXGI](http://go.microsoft.com/fwlink/p/?LinkId=246265).|  
 |Convertir a formato alpha premultiplicado|**Sí** para convertir la imagen al formato alfa premultiplicado en el archivo de salida, de lo contrario, **No**. Solo se cambia el archivo de salida, la imagen original no se cambia.|  
 |**Generar MIP**|**Sí** para generar una cadena completa de mapas MIP en tiempo de compilación e incluirla en el archivo de salida; de lo contrario, **No**. Si es **No** y el archivo de código fuente ya contiene una cadena de mapas MIP, el archivo de salida tendrá una cadena de mapas MIP; de lo contrario, el archivo de salida no tendrá ninguna cadena de mapas MIP.|  
-|**Salida de contenido**|Especifica el nombre del archivo de salida. **Importante:** Cambiar la extensión del nombre del archivo de salida no tiene ningún efecto sobre el formato del archivo.|  
+|**Salida de contenido**|Especifica el nombre del archivo de salida. **Importante:**  Cambiar la extensión del nombre del archivo de salida no tiene ningún efecto sobre el formato del archivo.|  
   
 ### <a name="mesh-content-pipeline-configuration"></a>Configuración de la canalización de contenido de mallas  
  Cuando se utiliza la herramienta de canalización de contenido de mallas para compilar un activo de malla, se puede cambiar el nombre del archivo de salida.  
   
 |Propiedad|Descripción|  
 |--------------|-----------------|  
-|**Salida de contenido**|Especifica el nombre del archivo de salida. **Importante:** Cambiar la extensión del nombre del archivo de salida no tiene ningún efecto sobre el formato del archivo.|  
+|**Salida de contenido**|Especifica el nombre del archivo de salida. **Importante:**  Cambiar la extensión del nombre del archivo de salida no tiene ningún efecto sobre el formato del archivo.|  
   
 ### <a name="shader-content-pipeline-configuration"></a>Configuración de la canalización de contenido del sombreador  
  Cuando se utiliza la herramienta de canalización de contenido del sombreador para compilar un activo de sombreador, se puede cambiar el nombre del archivo de salida.  
   
 |Propiedad|Descripción|  
 |--------------|-----------------|  
-|**Salida de contenido**|Especifica el nombre del archivo de salida. **Importante:** Cambiar la extensión del nombre del archivo de salida no tiene ningún efecto sobre el formato del archivo.|  
+|**Salida de contenido**|Especifica el nombre del archivo de salida. **Importante:**  Cambiar la extensión del nombre del archivo de salida no tiene ningún efecto sobre el formato del archivo.|  
   
 ## <a name="loading-and-using-3-d-assets-at-run-time"></a>Cargar y usar activos 3D en tiempo de ejecución  
   
 ### <a name="using-textures-and-images"></a>Utilizar texturas e imágenes  
- Direct3D proporciona funciones para crear recursos de textura. En Direct3D 11, la biblioteca de utilidades D3DX11 proporciona funciones adicionales para crear recursos de texturas y vistas de recursos de textura directamente a partir de archivos de imagen. Para más información sobre cómo crear un recurso de textura en Direct3D 11, vea [Texturas](http://go.microsoft.com/fwlink/p/?LinkID=246267). Para más información sobre cómo usar la biblioteca D3DX11 para crear un recurso de textura o una vista de recursos de textura a partir de un archivo de imagen, vea [Cómo: Inicializar una textura desde un archivo](http://go.microsoft.com/fwlink/p/?LinkId=246268).  
+ Direct3D proporciona funciones para crear recursos de textura. En Direct3D 11, la biblioteca de utilidades D3DX11 proporciona funciones adicionales para crear recursos de texturas y vistas de recursos de textura directamente a partir de archivos de imagen. Para más información sobre cómo crear un recurso de textura en Direct3D 11, vea [Texturas](http://go.microsoft.com/fwlink/p/?LinkID=246267). Para obtener más información sobre cómo usar la biblioteca D3DX11 para crear un recurso o una vista de recursos de textura a partir de un archivo de imagen, vea [How to: Inicializar una textura a partir de un archivo](http://go.microsoft.com/fwlink/p/?LinkId=246268).  
   
 ### <a name="using-3-d-models"></a>Utilizar modelos 3D  
  Direct3D 11 no proporciona funciones para crear recursos a partir de modelos 3D. En su lugar, tiene que escribir código que lea el archivo del modelo 3D y cree búferes de vértices y de índices que representen el modelo 3D y cualquier recurso que requiera el modelo, como texturas o sombreadores.  
@@ -208,10 +203,7 @@ cbuffer MiscVars : register(b3)
 |Título|Descripción|  
 |-----------|-----------------|  
 |[Cómo: Exportar una textura que contiene mapas MIP](../designers/how-to-export-a-texture-that-contains-mipmaps.md)|Describe cómo utilizar la canalización de contenido de la imagen para exportar una textura que contiene mapas MIP calculados previamente.|  
-|[Cómo: Exportar una textura que tiene alfa premultiplicado](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)|Describe cómo utilizar la canalización de contenido de imagen para exportar una textura que contiene valores alfa multiplicados previamente.|  
-|[Cómo: Exportar una textura para usarla con aplicaciones de Direct2D o Javascript](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|Describe cómo utilizar la canalización de contenido de la imagen para exportar una textura que se puede utilizar en una aplicación de Direct2D o JavaScript.|  
+|[Cómo: Exportar una textura que tiene alfa Premultiplicado](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)|Describe cómo utilizar la canalización de contenido de imagen para exportar una textura que contiene valores alfa multiplicados previamente.|  
+|[Cómo: Exportar una textura para usarla con Direct2D o Javascipt](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|Describe cómo utilizar la canalización de contenido de la imagen para exportar una textura que se puede utilizar en una aplicación de Direct2D o JavaScript.|  
 |[Trabajar con activos 3D para juegos y aplicaciones](../designers/working-with-3-d-assets-for-games-and-apps.md)|Describe las herramientas de edición que proporciona Visual Studio para crear y manipular activos 3D, que incluyen texturas e imágenes, modelos 3D y sombreadores.|  
 |[Cómo: Exportar un sombreador](../designers/how-to-export-a-shader.md)|Describe cómo exportar un sombreador desde el Diseñador de sombras.|
-
-
-

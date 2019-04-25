@@ -1,14 +1,9 @@
 ---
 title: Archivos varios | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.newfile
 - VS.OpenWith
@@ -25,18 +20,17 @@ ms.assetid: 5b96640b-8efe-48a4-8d0a-1ae3f9587e44
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: cb9c7fb46517ff2d6dffdeb0cedfc4982c1f3366
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: aadb6b0212f760ab16efd677e02e1d922ae52e12
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49258493"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658503"
 ---
 # <a name="miscellaneous-files"></a>Archivos varios
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Tal vez desee usar los editores de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] para trabajar de forma independiente en los archivos de un proyecto o de una solución. Mientras la solución está abierta, se pueden abrir y modificar los archivos sin necesidad de agregarlos a soluciones o proyectos. Los archivos con los que desea trabajar independientemente de los contenedores reciben el nombre de archivos varios. Los archivos varios son externos a soluciones y proyectos, no se incluyen en compilaciones y no se pueden incluir en soluciones que estén bajo control de código fuente.  
   
  Hay un gran número de razones por las que resulta de utilidad abrir archivos independientemente de un contenedor. Puede darse el caso de que desee ver un archivo mientras desarrolla una solución basada en un proyecto, pero que dicho archivo no sea fundamental para el desarrollo de la solución. Este es el caso de las notas o instrucciones de programación, los esquemas de base de datos y los fragmentos de código. Además, es posible que desee crear un archivo independiente.  
@@ -59,6 +53,3 @@ Tal vez desee usar los editores de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md
 ## <a name="see-also"></a>Vea también  
  [Soluciones y proyectos](../../ide/solutions-and-projects-in-visual-studio.md)   
  [Documentos, Entorno, Opciones (Cuadro de diálogo)](../../ide/reference/documents-environment-options-dialog-box.md)
-
-
-

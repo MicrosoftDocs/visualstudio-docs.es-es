@@ -1,14 +1,9 @@
 ---
 title: Iconos de la vista de clases y del examinador de objetos | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - icons, in Object Browser
 - signal icons
@@ -22,24 +17,24 @@ ms.assetid: 58cc3f44-c296-4a88-a008-09d28598d9c0
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: af7ce3ee9b97996f92ac9ca8537c583b063a3445
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 7cb80c7ad81708724750660560d65cfef722af86
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279745"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54785054"
 ---
 # <a name="class-view-and-object-browser-icons"></a>Iconos de la Vista de clases y del Examinador de objetos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Clase vista ** y **Examinador de objetos** mostrar iconos que representan las entidades de código, por ejemplo, los espacios de nombres, clases, funciones y variables. En la tabla siguiente se muestran y describen los iconos.  
+En Vista de clases** y el **Examinador de objetos** se muestran iconos que representan las entidades de código, por ejemplo, los espacios de nombres, las clases, las funciones y las variables. En la tabla siguiente se muestran y describen los iconos.  
   
 |Iconos|Descripción|Iconos|Descripción|  
 |----------|-----------------|----------|-----------------|  
 |![Símbolo de espacio de nombres](../ide/media/vxnamespace-icon.gif "vxNamespace_Icon")|Espacio de nombres|![Símbolo de declaración](../ide/media/vxmethod-icon.gif "vxMethod_Icon")|Método o función|  
 |![Icono de clase](../ide/media/vxclass-icon.gif "vxClass_Icon")|Clase|![Símbolo de operador](../ide/media/vxoperator-icon.gif "vxOperator_Icon")|Operador|  
-|![Símbolo de círculo de interfaz](../ide/media/vxinterface-icon.gif "vxInterface_Icon")|Interfaz|![Símbolo de propiedad](../ide/media/vxproperty-icon.gif "vxProperty_Icon")|Property|  
+|![Símbolo de círculo de interfaz](../ide/media/vxinterface-icon.gif "vxInterface_Icon")|Interfaz|![Símbolo de propiedad](../ide/media/vxproperty-icon.gif "vxProperty_Icon")|Propiedad.|  
 |![Símbolo de estructura](../ide/media/vxstruct-icon.gif "vxStruct_Icon")|Estructura|![Icono de campo](../ide/media/vxfield-icon.gif "vxField_Icon")|Campo o variable|  
 |![Símbolo de unión](../ide/media/vxunion-icon.gif "vxUnion_Icon")|Unión|![Símbolo de evento](../ide/media/vxevent-icon.gif "vxEvent_Icon")|evento|  
 |![Símbolo de enumeración](../ide/media/vxenum-icon.gif "vxEnum_Icon")|Enum|![Icono de constante](../ide/media/vxconstant-icon.gif "vxConstant_Icon")|Constante|  
@@ -68,6 +63,3 @@ Clase vista ** y **Examinador de objetos** mostrar iconos que representan las en
   
 ## <a name="see-also"></a>Vea también  
  [Ver la estructura del código](../ide/viewing-the-structure-of-code.md)
-
-
-

@@ -1,19 +1,18 @@
 ---
 title: IntelliSense de C++
 ms.date: 10/08/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: mikeblome
 ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 203e36c1ea7863b18495284174690d3c985b2900
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6f92a1c9e39013c9c9cc0a320169f12e0c075b5a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53959766"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55942277"
 ---
 # <a name="visual-c-intellisense-features"></a>Características de IntelliSense de Visual C++
 

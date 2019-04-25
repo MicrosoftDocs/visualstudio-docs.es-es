@@ -1,22 +1,21 @@
 ---
 title: Administración de proyectos de aplicación de Python
 description: Los proyectos de Visual Studio administran las dependencias entre los archivos y la complejidad de las relaciones en una aplicación.
-ms.date: 10/29/2018
-ms.prod: visual-studio-dev15
+ms.date: 03/18/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b30929c5e5c7be49b5817f520a4f6402ceff67b4
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2ee3b0d82251d01e8ede22be238dc1bca5a4e092
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53825297"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62536353"
 ---
 # <a name="python-projects-in-visual-studio"></a>Proyectos de Python en Visual Studio
 
@@ -30,28 +29,41 @@ Visual Studio proporciona numerosas plantillas de proyecto de Python para config
 
 <a name="lightweight-usage-project-free"></a>
 
+::: moniker range=">=vs-2019"
 > [!Tip]
-> Incluso sin un proyecto, Visual Studio funciona bien con código de Python. Por ejemplo, puede abrir un archivo de Python por sí mismo y disfrutar de las funciones de autocompletar, IntelliSense y depuración. Para ello, haga clic con el botón derecho en el editor y seleccione **Iniciar con depurar**. Como dicho código siempre usa el entorno global predeterminado, puede ver finalizaciones incorrectas o errores si el código está pensado para un entorno diferente. Además, Visual Studio analiza todos los archivos y paquetes de la carpeta desde la que se abrió el archivo único, lo que podría consumir mucho tiempo de CPU.
+> Visual Studio 2019 permite abrir una carpeta que contiene código de Python y ejecutar ese código sin crear archivos de solución y proyecto de Visual Studio. Para obtener más información, vea [Inicio rápido: Apertura y ejecución de código de Python en una carpeta](quickstart-05-python-visual-studio-open-folder.md). Sin embargo, usar un archivo del proyecto trae ventajas, como se explica en esta sección.
+::: moniker-end
+
+> [!Tip]
+> Sin un proyecto, todas las versiones de Visual Studio funcionan bien con el código de Python. Por ejemplo, puede abrir un archivo de Python por sí mismo y disfrutar de las funciones de autocompletar, IntelliSense y depuración. Para ello, haga clic con el botón derecho en el editor y seleccione **Iniciar con depurar**. Como dicho código siempre usa el entorno global predeterminado, puede ver finalizaciones incorrectas o errores si el código está pensado para un entorno diferente. Además, Visual Studio analiza todos los archivos y paquetes de la carpeta desde la que se abrió el archivo único, lo que podría consumir mucho tiempo de CPU.
 >
 > Se puede crear fácilmente un proyecto de Visual Studio a partir de código existente, como se describe en [Creación de un proyecto a partir de archivos existentes](#create-project-from-existing-files).
 
 |   |   |
 |---|---|
-| ![icono de cámara de película para vídeo](../install/media/video-icon.png "Ver un vídeo") | [Vea un vídeo (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Getting-Python-Code-iLAv23LWE_3905918567) para obtener una introducción a los proyectos de Python (2 minutos 17 segundos). |
-| ![icono de cámara de película para vídeo](../install/media/video-icon.png "Ver un vídeo") | Vea también el vídeo de Youtube.com (8 minutos y 55 segundos) [Deep Dive: Use source control with Python projects](https://youtu.be/Aq8eqApnugM) (Profundización: uso del control de código fuente con proyectos de Python). |
+| ![icono de cámara de película para vídeo](../install/media/video-icon.png "Ver un vídeo") | [Profundización: Use source control with Python projects](https://youtu.be/Aq8eqApnugM) (Profundización: uso del control de código fuente con proyectos de Python). |
 
 ## <a name="add-files-assign-a-startup-file-and-set-environments"></a>Incorporación de archivos, asignación de un archivo de inicio y establecimiento de entornos
 
 Al desarrollar la aplicación, normalmente necesita agregar nuevos archivos de distintos tipos al proyecto. La adición de dichos archivos se realiza fácilmente haciendo clic con el botón derecho en el proyecto y seleccionando **Agregar** > **Elemento existente**, lo que le permitirá buscar un archivo que quiere agregar, o mediante **Agregar** > **Nuevo elemento**, que abre un cuadro de diálogo con numerosas plantillas de elementos. Como se describe en la referencia sobre [plantillas de elemento](python-item-templates.md), las opciones incluyen archivos de Python vacíos, una clase de Python, una prueba unitaria y varios archivos relacionados con aplicaciones web. Puede explorar estas opciones con un proyecto de prueba para saber lo que está disponible en la versión de Visual Studio.
 
-Cada proyecto de Python tiene un archivo de inicio asignado, que se muestra en negrita en el **Explorador de soluciones**. El archivo de inicio es el archivo que se ejecuta al iniciar la depuración (**F5** o **Depurar** > **Iniciar depuración**) o que ejecuta el proyecto en la ventana **interactiva** (**Mayús**+**Alt**+**F5** o **Depurar** > **Ejecutar proyecto en Python interactivo**). Para cambiarlo, haga clic con el botón derecho en el archivo nuevo y seleccione **Set as Startup File** (Establecer como archivo de inicio).
+Cada proyecto de Python tiene un archivo de inicio asignado, que se muestra en negrita en el **Explorador de soluciones**. El archivo de inicio es el archivo que se ejecuta al iniciar la depuración (**F5** o **Depurar** > **Iniciar depuración**) o que ejecuta el proyecto en la ventana **interactiva** (**Mayús**+**Alt**+**F5** o **Depurar** > **Ejecutar proyecto en Python interactivo**). Para cambiarlo, haga clic con el botón derecho en el archivo nuevo y seleccione **Establecer como elemento de inicio** (o **Establecer como archivo de inicio** en versiones anteriores de Visual Studio).
 
 > [!Tip]
 > Si quita el archivo de inicio seleccionado de un proyecto y no selecciona uno nuevo, Visual Studio no sabrá con que archivo de Python empezar al intentar ejecutar el proyecto. En este caso, Visual Studio 2017, versión 15.6 y posteriores, muestra un error; con las versiones anteriores, se abre una ventana de salida con el intérprete de Python en ejecución o verá la ventana de salida aparecer pero desaparecer a continuación casi de inmediato. Si se produce alguno de estos comportamientos, compruebe que tiene un archivo de inicio asignado.
 >
 > Si desea mantener abierta la ventana de salida por cualquier motivo, haga clic con el botón derecho en el proyecto, seleccione **Propiedades**, seleccione la pestaña **Depurar** y, después, agregue `-i` al campo **Argumentos del intérprete**. Este argumento hace que el intérprete entre en modo interactivo una vez que se haya finalizado un programa, con lo que la ventana se mantendrá abierta hasta que pulse **Ctrl**+**Z** > **Entrar** para salir.
 
-Un proyecto nuevo siempre está asociado al entorno de Python global predeterminado. Para asociar el proyecto a otro entorno (incluidos los entornos virtuales), haga clic con el botón derecho en el nodo **Python Environments** (Entornos de Python) del proyecto, seleccione **Add/Remove Python Environments** (Agregar o quitar entornos de Python) y seleccione los que desee. Para cambiar el entorno activo, haga clic con el botón derecho en el entorno que quiera y seleccione **Activar entorno** como se muestra a continuación. Para más información, vea [Selección de un entorno para un proyecto](selecting-a-python-environment-for-a-project.md).
+::: moniker range="vs-2017"
+Un proyecto nuevo siempre está asociado al entorno de Python global predeterminado. Para asociar el proyecto a otro entorno (incluidos los entornos virtuales), haga clic con el botón derecho en el nodo **Python Environments** (Entornos de Python) del proyecto, seleccione **Add/Remove Python Environments** (Agregar o quitar entornos de Python) y seleccione los que desee.
+::: moniker-end
+::: moniker range=">=vs-2019"
+Un proyecto nuevo siempre está asociado al entorno de Python global predeterminado. Para asociar el proyecto con un entorno distinto (incluidos los entornos virtuales), haga clic con el botón derecho en el nodo **Entornos de Python** del proyecto, seleccione **Agregar entorno…** y seleccione el que quiera. También puede usar el control desplegable de entornos de la barra de herramientas para seleccionar un entorno o agregar uno al proyecto.
+
+![Comando Agregar entorno de la barra de herramientas de Python](media/environments/environments-toolbar-2019.png)
+::: moniker-end
+
+Para cambiar el entorno activo, haga clic con el botón derecho en el entorno que quiera en el **Explorador de soluciones** y seleccione **Activar entorno** como se muestra a continuación. Para más información, vea [Selección de un entorno para un proyecto](selecting-a-python-environment-for-a-project.md).
 
 ![Activación de un entorno para un proyecto de Python](media/projects-activate-environment.png)
 
@@ -63,7 +75,7 @@ Visual Studio ofrece varias maneras de configurar un proyecto de Python, desde c
 
 ![Cuadro de diálogo Nuevo proyecto con plantillas de Python](media/projects-new-project-dialog.png)
 
-En la tabla siguiente se muestra un resumen de las plantillas disponibles en Visual Studio 2017 (no todas las plantillas están disponibles en todas las versiones anteriores):
+En la tabla siguiente se muestra un resumen de las plantillas disponibles en Visual Studio 2017 y versiones posteriores (no todas las plantillas están disponibles en todas las versiones anteriores):
 
 | Plantilla | Descripción |
 | --- | --- |
@@ -76,7 +88,7 @@ En la tabla siguiente se muestra un resumen de las plantillas disponibles en Vis
 | **Página de IronPython y Silverlight** | Proyecto de IronPython que se ejecuta en un explorador mediante Silverlight. El código Python de la aplicación se incluye en la página web como un script. Una etiqueta de script reutilizable extrae código de JavaScript que inicializa IronPython ejecutándose dentro de Silverlight, desde donde el código Python puede interactuar con DOM. |
 | **Aplicación de Windows Forms de IronPython** | Estructura de proyecto que usa IronPython con la interfaz de usuario creada mediante código con Windows Forms. La aplicación se ejecuta sin mostrar una consola. |
 | **Aplicación en segundo plano (IoT)** | Admite la implementación de proyectos de Python para que se ejecuten como servicios en segundo plano en dispositivos. Visite el [Centro de desarrollo de Windows IoT](https://dev.windows.com/en-us/iot) para más información. |
-| **Módulo de extensión de Python** | Esta plantilla aparece en Visual C++ si ha instalado las **herramientas de desarrollo nativo de Python** con la carga de trabajo de Python en Visual Studio 2017 (consulte [Instalación](installing-python-support-in-visual-studio.md)). Proporciona la estructura básica de un archivo DLL de extensión de C++, similar a lo que se describe en [Creación de una extensión de C++ para Python](working-with-c-cpp-python-in-visual-studio.md). |
+| **Módulo de extensión de Python** | Esta plantilla aparece en Visual C++ si ha instalado las **herramientas de desarrollo nativo Python** con la carga de trabajo de Python en Visual Studio 2017 o versiones posteriores (vea [Instalación](installing-python-support-in-visual-studio.md)). Proporciona la estructura básica de un archivo DLL de extensión de C++, similar a lo que se describe en [Creación de una extensión de C++ para Python](working-with-c-cpp-python-in-visual-studio.md). |
 
 > [!Note]
 > Dado que Python es un lenguaje interpretado, los proyectos de Python en Visual Studio no producen un archivo ejecutable independiente al igual que otros proyectos de lenguaje compilado (C#, por ejemplo). Para obtener más información, consulte [Preguntas y respuestas](overview-of-python-tools-for-visual-studio.md#questions-and-answers).
@@ -113,7 +125,7 @@ Los archivos vinculados se omiten en cualquiera de las condiciones siguientes:
 
 Para agregar un elemento existente como un vínculo, haga clic con el botón derecho en la carpeta donde desea agregar el archivo, seleccione **Agregar** > **Elemento existente**. En el cuadro de diálogo que aparece, seleccione un archivo y pulse **Agregar como vínculo** en la lista desplegable del botón **Agregar**. Siempre que no haya ningún archivo en conflicto, este comando crea un vínculo en la carpeta seleccionada. Sin embargo, el vínculo no se agrega si ya existe un archivo con el mismo nombre o ya existe un vínculo a ese archivo en el proyecto.
 
-Si intenta establecer el vínculo a un archivo que ya existe en las carpetas de proyecto, se agrega como un archivo normal y no como un vínculo. Para convertir un archivo en un vínculo, seleccione **Archivo** > **Guardar como** para guardar el archivo en una ubicación fuera de la jerarquía del proyecto; Visual Studio lo convierte automáticamente en un vínculo. De forma similar, se puede invertir la conversión de un vínculo mediante **Archivo** > **Guardar como** para guardar el archivo en algún lugar dentro de la jerarquía del proyecto. 
+Si intenta establecer el vínculo a un archivo que ya existe en las carpetas de proyecto, se agrega como un archivo normal y no como un vínculo. Para convertir un archivo en un vínculo, seleccione **Archivo** > **Guardar como** para guardar el archivo en una ubicación fuera de la jerarquía del proyecto; Visual Studio lo convierte automáticamente en un vínculo. De forma similar, se puede invertir la conversión de un vínculo mediante **Archivo** > **Guardar como** para guardar el archivo en algún lugar dentro de la jerarquía del proyecto.
 
 Si mueve un archivo vinculado en el **Explorador de soluciones**, dicho vínculo se mueve, pero el archivo real no se ve afectado. De manera similar, al eliminar un vínculo este se quita sin afectar al archivo.
 

@@ -33,16 +33,18 @@
           href: custom-native-etw-heap-events.md
         - name: Uso de memoria sin el depurador
           href: memory-usage-without-debugging2.md
+    - name: Medición del rendimiento desde la línea de comandos
+      href: profile-apps-from-command-line.md
     - name: Analizar el uso de la GPU
       href: gpu-usage.md
     - name: Analizar el uso de recursos
       href: application-timeline.md
     - name: Usar PerfTips
       href: perftips.md
-    - name: Analizar la memoria de JavaScript
-      href: javascript-memory.md
     - name: Analizar el uso de la red
       href: network-usage.md
+    - name: Analizar la memoria de JavaScript
+      href: javascript-memory.md
     - name: Analizar la capacidad de respuesta de la interfaz de usuario HTML
       href: html-ui-responsiveness.md
     - name: Usar el Explorador de rendimiento
@@ -169,7 +171,7 @@
                     - name: Reglas de rendimiento de uso de .NET Framework
                       href: dotnet-framework-usage-performance-rules.md
                       items:
-                        - name: 'DA0001: Utilizar StringBuilder para las concatenaciones'
+                        - name: 'DA0001: Usar StringBuilder para las concatenaciones'
                           href: da0001-use-stringbuilder-for-concatenations.md
                         - name: 'DA0005: Colecciones GC2 frecuentes'
                           href: da0005-frequent-gc2-collections.md
@@ -177,34 +179,34 @@
                           href: da0006-override-equals-parens-for-value-types.md
                         - name: 'DA0007: Evite utilizar excepciones para el flujo de control'
                           href: da0007-avoid-using-exceptions-for-control-flow.md
-                        - name: 'DA0010: GetHashCode consume muchos recursos'
+                        - name: 'DA0010: GetHashCode que consume muchos recursos'
                           href: da0010-expensive-gethashcode.md
-                        - name: 'DA0011: CompareTo consume muchos recursos'
+                        - name: 'DA0011: CompareTo que consume muchos recursos'
                           href: da0011-expensive-compareto.md
-                        - name: 'DA0012: Cantidad significativa de reflexión'
+                        - name: 'DA0012: Cantidad considerable de reflexión'
                           href: da0012-significant-amount-of-reflection.md
-                        - name: 'DA0013: Uso alto de String.Split o String.Substring'
+                        - name: 'DA0013: Uso intenso de String.Split o String.Substring'
                           href: da0013-high-usage-of-string-split-or-string-substring.md
-                        - name: 'DA0018: Una aplicación de 32 bits se está ejecutando en límites de memoria administrados del proceso'
+                        - name: "DA0018: Aplicación de 32\_bits ejecutándose con límites de memoria administrada de procesos"
                           href: da0018-32-bit-application-running-at-process-managed-memory-limits.md
                         - name: 'DA0021: Alta frecuencia de recolección de elementos no utilizados de gen 1'
                           href: da0021-high-rate-of-gen-1-garbage-collections.md
                         - name: 'DA0022: Alta frecuencia de recolección de elementos no utilizados de gen 2'
                           href: da0022-high-rate-of-gen-2-garbage-collections.md
-                        - name: 'DA0024: Tiempo elevado de CPU de GC'
+                        - name: 'DA0023: Mucho tiempo de CPU de GC'
                           href: da0023-high-gc-cpu-time.md
                         - name: 'DA0024: Tiempo excesivo de CPU de GC'
                           href: da0024-excessive-gc-cpu-time.md
-                        - name: 'DA0038: Tasa alta de contenciones de bloqueo'
+                        - name: 'DA0038: Alta frecuencia de contenciones de bloqueo'
                           href: da0038-high-rate-of-lock-contentions.md
-                        - name: 'DA0039: Tasa muy alta de contenciones de bloqueo'
+                        - name: 'DA0039: Frecuencia muy alta de contenciones de bloqueo'
                           href: da0039-very-high-rate-of-lock-contentions.md
                     - name: Reglas de rendimiento de memoria y paginación
                       href: memory-and-paging-performance-rules.md
                       items:
                         - name: 'DA0014: Frecuencia extremadamente alta de paginación de memoria activa en el disco'
                           href: da0014-extremely-high-rates-of-paging-active-memory-to-disk.md
-                        - name: 'DA0017: Tasas altas de memoria paginada activa en disco'
+                        - name: 'DA0017: Alta frecuencia de paginación de memoria activa en el disco'
                           href: da0017-high-rates-of-paging-active-memory-to-disk.md
                     - name: Reglas de uso de herramientas de generación de perfiles
                       href: profiling-tools-usage-rules.md
@@ -213,30 +215,30 @@
                           href: da0002-vsperfcorprof-dll-is-missing.md
                         - name: 'DA0003: Muchas muestras de kernel'
                           href: da0003-many-kernel-samples.md
-                        - name: 'DA0004: Alto uso del procesador'
+                        - name: 'DA0004: Uso intenso del procesador'
                           href: da0004-high-processor-usage.md
                         - name: 'DA0008: Pocos ejemplos recolectados'
                           href: da0008-few-samples-collected.md
-                        - name: 'DA0026: Tiempo de procesamiento excesivo de la CPU de kernel'
+                        - name: 'DA0026: Procesamiento excesivo de tiempo de CPU en modo kernel'
                           href: da0026-excessive-kernel-cpu-time-processing.md
-                        - name: 'DA0029: Versión de CLR incompatible'
+                        - name: 'DA0029: Versión de CLR no admitida'
                           href: da0029-unsupported-clr-version.md
-                        - name: 'DA0030: Recopilar las medidas de interacción de capas para los proyectos de base de datos'
+                        - name: 'DA0030: Recopilación de medidas de interacción de capas para proyectos de base de datos'
                           href: da0030-gather-tier-interaction-measurements-for-database-projects.md
                     - name: Reglas de rendimiento de la supervisión de recursos
                       href: resource-monitoring-performance-rules.md
                       items:
-                        - name: 'DA0501: Promedio de uso de CPU por parte del proceso cuyo perfil se está generando'
+                        - name: 'DA0501: Promedio de consumo de CPU del proceso del que se está generando el perfil'
                           href: da0501-average-cpu-consumption-by-the-process-being-profiled.md
-                        - name: 'DA0502: Máximo consumo de CPU por parte del proceso que se va a perfilar'
+                        - name: 'DA0502: Consumo máximo de CPU del proceso del que se está generando el perfil'
                           href: da0502-maximum-cpu-consumption-by-the-process-being-profiled.md
-                        - name: 'DA0503: Promedio de conjuntos de trabajo en bytes para el proceso que se va a perfilar'
+                        - name: 'DA0503: Promedio de espacio de trabajo en bytes del proceso del que se está generando el perfil'
                           href: da0503-average-working-set-in-bytes-for-the-process-being-profiled.md
-                        - name: 'DA0504: Conjunto de trabajo máximo en bytes para el proceso que se va a perfilar'
+                        - name: 'DA0504: Espacio de trabajo máximo en bytes para el proceso del que se está generando el perfil'
                           href: da0504-maximum-working-set-in-bytes-for-the-process-being-profiled.md
                         - name: 'DA0505: Promedio de bytes privados asignados al proceso que se va a perfilar'
                           href: da0505-average-private-bytes-allocated-for-the-process-being-profiled.md
-                        - name: 'DA0506: Máximo de bytes privados asignados al proceso que se va a perfilar'
+                        - name: 'DA0506: Máximo de bytes privados asignados para el proceso del que se está generando el perfil'
                           href: da0506-maximum-private-bytes-allocated-for-the-process-being-profiled.md
             - name: Vistas de informes de rendimiento
               href: performance-report-views.md
@@ -431,7 +433,7 @@
                       href: how-to-attach-the-profiler-to-a-dotnet-framework-app-to-collect-memory-data.md
                     - name: Instrumentar un componente de .NET Framework independiente y recopilar datos de memoria con el generador de perfiles mediante la línea de comandos
                       href: how-to-instrument-a-dotnet-framework-component-and-collect-memory-data.md
-                - name: 'Tutorial: Generación de perfiles de línea de comandos mediante muestreo'
+                - name: 'Tutorial: Generación de perfiles mediante muestreo desde la línea de comandos'
                   href: walkthrough-command-line-profiling-using-sampling.md
             - name: Generación de perfiles de línea de comandos de aplicaciones web ASP.NET
               href: command-line-profiling-of-aspnet-web-applications.md
@@ -576,7 +578,7 @@
                       href: lineoff.md
                     - name: Consola
                       href: console.md
-                    - name: Estado
+                    - name: Situación
                       href: status.md
                     - name: TargetCLR
                       href: targetclr.md

@@ -1,7 +1,6 @@
 ---
 title: Identificar y personalizar métodos abreviados de teclado
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.Keyboard
@@ -15,15 +14,15 @@ helpviewer_keywords:
 - exporting shortcut keys [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f52a2e57e913735ffe678768732a822e1bb30e6f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1dc65b29bafd67fa8265feb75b533d66504d33c8
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53820402"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222066"
 ---
 # <a name="identify-and-customize-keyboard-shortcuts-in-visual-studio"></a>Identificar y personalizar métodos abreviados de teclado en Visual Studio
 
@@ -107,11 +106,21 @@ Puede compartir los métodos abreviados de teclado personalizados exportándolos
 
 4. Active la casilla **Teclado** y elija el botón **Siguiente**.
 
-    ![Exportar solo los métodos abreviados de teclado personalizados](../ide/media/exportshortcuts.png)
+   ![Exportar solo los métodos abreviados de teclado personalizados](../ide/media/exportshortcuts.png)
 
 5. En los cuadros **¿Qué nombre desea dar al archivo de configuración?** y **Almacenar mi archivo de configuración en este directorio**, deje los valores predeterminados o especifique otros diferentes y elija el botón **Finalizar**.
 
-    Los métodos abreviados se guardan de forma predeterminada en un archivo de la carpeta *%USERPROFILE%\Documents\Visual Studio 2017\Settings*. El nombre del archivo indica la fecha en la que se ha exportado la configuración y la extensión es *.vssettings*.
+::: moniker range="vs-2017"
+
+Los métodos abreviados se guardan de forma predeterminada en un archivo de la carpeta *%USERPROFILE%\Documents\Visual Studio 2017\Settings*. El nombre del archivo indica la fecha en la que se ha exportado la configuración y la extensión es *.vssettings*.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+De forma predeterminada, los accesos directos se guardan en un archivo de la carpeta *%USERPROFILE%\Documents\Visual Studio 2019\Settings*. El nombre del archivo indica la fecha en la que se ha exportado la configuración y la extensión es *.vssettings*.
+
+::: moniker-end
 
 ### <a name="to-import-only-keyboard-shortcuts"></a>Para importar solo métodos abreviados de teclado
 

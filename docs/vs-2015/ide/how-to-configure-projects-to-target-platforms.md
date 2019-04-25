@@ -1,14 +1,9 @@
 ---
 title: 'Cómo: Configurar proyectos para plataformas de destino | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - project settings [Visual Studio], targeting platforms
 - platforms, targeting specific CPUs
@@ -22,13 +17,13 @@ ms.assetid: 845302fc-273d-4f81-820a-7296ce91bd76
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4e2b39aa13316b1b9ca47c5587ffabf6f6a14e68
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 660f1fd1d67490bde327533f9d030c7deba9f819
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49843059"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084926"
 ---
 # <a name="how-to-configure-projects-to-target-platforms"></a>Cómo: Configurar proyectos para plataformas de destino
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,16 +39,16 @@ ms.locfileid: "49843059"
   
 2. En la lista **Plataforma de soluciones activas**, elija una plataforma de 64 bits para la solución de destino y luego elija el botón **Cerrar**.  
   
-   1.  Si la plataforma que quiere no aparece en la lista **Plataforma de soluciones activas**, elija **Nueva**.  
+   1. Si la plataforma que quiere no aparece en la lista **Plataforma de soluciones activas**, elija **Nueva**.  
   
         Aparecerá el cuadro de diálogo **Nueva plataforma de solución**.  
   
-   2.  En la lista **Escriba o seleccione la nueva plataforma**, elija **x64**.  
+   2. En la lista **Escriba o seleccione la nueva plataforma**, elija **x64**.  
   
        > [!NOTE]
        >  Si asigna un nuevo nombre a la configuración, es posible que tenga que modificar la configuración del **Diseñador de proyectos** para seleccionar la plataforma correcta como destino.  
   
-   3.  Si quiere copiar la configuración de una configuración de plataforma actual, selecciónela y luego elija el botón **Aceptar**.  
+   3. Si quiere copiar la configuración de una configuración de plataforma actual, selecciónela y luego elija el botón **Aceptar**.  
   
    Se actualizarán las propiedades de todos los proyectos que tienen como destino la plataforma de 64 bits y la próxima compilación del proyecto se optimizará para plataformas de 64 bits.  
   
@@ -62,17 +57,14 @@ ms.locfileid: "49843059"
   
  La realización de esta tarea varía según el lenguaje de programación utilizado. Para obtener más información, vea los siguientes vínculos:  
   
--   Para proyectos de [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], vea [/platform (Visual Basic)](http://msdn.microsoft.com/library/f9bc61e6-e854-4ae1-87b9-d6244de23fd1).  
+- Para proyectos de [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], vea [/platform (Visual Basic)](http://msdn.microsoft.com/library/f9bc61e6-e854-4ae1-87b9-d6244de23fd1).  
   
--   Para proyectos de [!INCLUDE[csprcs](../includes/csprcs-md.md)], vea [Compilar (Página, Diseñador de proyectos) (C#)](../ide/reference/build-page-project-designer-csharp.md).  
+- Para proyectos de [!INCLUDE[csprcs](../includes/csprcs-md.md)], vea [Compilar (Página, Diseñador de proyectos) (C#)](../ide/reference/build-page-project-designer-csharp.md).  
   
--   Para proyectos de [!INCLUDE[vcprvc](../includes/vcprvc-md.md)], vea [/clr (Compilación de Common Language Runtime)](http://msdn.microsoft.com/library/fec5a8c0-40ec-484c-a213-8dec918c1d6c).  
+- Para proyectos de [!INCLUDE[vcprvc](../includes/vcprvc-md.md)], vea [/clr (Compilación de Common Language Runtime)](http://msdn.microsoft.com/library/fec5a8c0-40ec-484c-a213-8dec918c1d6c).  
   
 ## <a name="see-also"></a>Vea también  
  [Descripción de las plataformas de compilación](../ide/understanding-build-platforms.md)   
  [/platform (Opciones del compilador de C#)](http://msdn.microsoft.com/library/c290ff5e-47f4-4a85-9bb3-9c2525b0be04)   
  [Aplicaciones de 64 bits](http://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)   
  [Compatibilidad de 64 bits del IDE de Visual Studio](../ide/visual-studio-ide-64-bit-support.md)
-
-
-

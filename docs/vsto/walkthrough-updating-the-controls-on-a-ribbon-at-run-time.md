@@ -12,17 +12,17 @@ helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], dynamic menu
 - dynamic menus [Office development in Visual Studio]
 - Ribbon [Office development in Visual Studio], updating
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cd318be64bb15f72a0bd0147e2b14e79301fb7d6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e293a0136e6ae2d8b6a6747201e484fdea43f91e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53926960"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067240"
 ---
 # <a name="walkthrough-update-the-controls-on-a-ribbon-at-runtime"></a>Tutorial: Actualizar los controles de una cinta en tiempo de ejecución
 
@@ -34,13 +34,13 @@ En el ejemplo, se extraen los datos de la base de datos de ejemplo Northwind par
 
 En este tutorial se muestran las tareas siguientes:
 
--   Cree un nuevo proyecto de complemento VSTO de Outlook.
+- Cree un nuevo proyecto de complemento VSTO de Outlook.
 
--   Diseñar un grupo personalizado de la cinta de opciones.
+- Diseñar un grupo personalizado de la cinta de opciones.
 
--   Agregue el grupo personalizado a una pestaña integrada.
+- Agregue el grupo personalizado a una pestaña integrada.
 
--   Actualizar los controles en la cinta de opciones en tiempo de ejecución.
+- Actualizar los controles en la cinta de opciones en tiempo de ejecución.
 
 > [!NOTE]
 > Es posible que el equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Para más información, vea [Personalizar el IDE de Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
@@ -49,9 +49,9 @@ En este tutorial se muestran las tareas siguientes:
 
 Necesita los componentes siguientes para completar este tutorial:
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   Microsoft Outlook
+- Microsoft Outlook
 
 ## <a name="create-a-new-outlook-vsto-add-in-project"></a>Cree un nuevo proyecto de complemento VSTO de Outlook
 
@@ -59,11 +59,11 @@ En primer lugar, cree un proyecto de complemento de VSTO de Outlook.
 
 ### <a name="to-create-a-new-outlook-vsto-add-in-project"></a>Para crear un proyecto de complemento de VSTO de Outlook
 
-1.  En [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], cree un proyecto de complemento VSTO de Outlook con el nombre **Ribbon_Update_At_Runtime**.
+1. En [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], cree un proyecto de complemento VSTO de Outlook con el nombre **Ribbon_Update_At_Runtime**.
 
-2.  En el cuadro de diálogo **Nuevo proyecto** , seleccione **Crear directorio para la solución**.
+2. En el cuadro de diálogo **Nuevo proyecto** , seleccione **Crear directorio para la solución**.
 
-3.  Guarde el proyecto en el directorio de proyecto predeterminado.
+3. Guarde el proyecto en el directorio de proyecto predeterminado.
 
      Para obtener más información, vea [Cómo: Crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
@@ -73,25 +73,25 @@ La cinta de opciones para este ejemplo aparecerá cuando un usuario cree un nuev
 
 ### <a name="to-design-a-custom-group"></a>Para diseñar un grupo personalizado
 
-1.  En el menú **Proyecto** , haga clic en **Agregar nuevo elemento**.
+1. En el menú **Proyecto** , haga clic en **Agregar nuevo elemento**.
 
-2.  En el cuadro de diálogo **Agregar nuevo elemento** , seleccione **Cinta (diseñador visual)**.
+2. En el cuadro de diálogo **Agregar nuevo elemento** , seleccione **Cinta (diseñador visual)**.
 
-3.  Cambiar el nombre de la nueva cinta de opciones para **CustomerRibbon**y, a continuación, haga clic en **agregar**.
+3. Cambiar el nombre de la nueva cinta de opciones para **CustomerRibbon**y, a continuación, haga clic en **agregar**.
 
      El *CustomerRibbon.cs* o *CustomerRibbon.vb* archivo se abre en el Diseñador de cinta de opciones y muestra una ficha predeterminada y un grupo.
 
-4.  Haga clic en el Diseñador de la cinta de opciones para seleccionarlo.
+4. Haga clic en el Diseñador de la cinta de opciones para seleccionarlo.
 
-5.  En el **propiedades** ventana, haga clic en la flecha desplegable situada junto a la **RibbonType** propiedad y, a continuación, haga clic en **Microsoft.Outlook.Mail.Compose**.
+5. En el **propiedades** ventana, haga clic en la flecha desplegable situada junto a la **RibbonType** propiedad y, a continuación, haga clic en **Microsoft.Outlook.Mail.Compose**.
 
      Esto permite que la cinta de opciones que aparecen cuando el usuario redacte un nuevo mensaje de correo electrónico en Outlook.
 
-6.  En el Diseñador de cinta de opciones, haga clic en **Group1** para seleccionarlo.
+6. En el Diseñador de cinta de opciones, haga clic en **Group1** para seleccionarlo.
 
-7.  En el **propiedades** ventana, establezca **etiqueta** a **compras del cliente**.
+7. En el **propiedades** ventana, establezca **etiqueta** a **compras del cliente**.
 
-8.  Desde el **controles de la cinta de Office** pestaña de la **cuadro de herramientas**, arrastre un **ComboBox** hasta la **compras del cliente** grupo.
+8. Desde el **controles de la cinta de Office** pestaña de la **cuadro de herramientas**, arrastre un **ComboBox** hasta la **compras del cliente** grupo.
 
 9. Haga clic en **ComboBox1** para seleccionarlo.
 
@@ -111,17 +111,17 @@ Una pestaña integrada es una ficha que ya está en la cinta de opciones de un I
 
 ### <a name="to-add-the-custom-group-to-a-built-in-tab"></a>Para agregar el grupo personalizado a una pestaña integrada
 
-1.  Haga clic en el **TabAddins (integrado)** tab para seleccionarla.
+1. Haga clic en el **TabAddins (integrado)** tab para seleccionarla.
 
-2.  En el **propiedades** ventana, expanda el **ControlId** propiedad y, después, establezca **OfficeId** a **TabNewMailMessage**.
+2. En el **propiedades** ventana, expanda el **ControlId** propiedad y, después, establezca **OfficeId** a **TabNewMailMessage**.
 
      Esto agrega el **compras del cliente** grupo la **mensajes** pestaña de la cinta de opciones que aparece en un mensaje de correo.
 
-3.  Haga clic en el **compras del cliente** grupo para seleccionarlo.
+3. Haga clic en el **compras del cliente** grupo para seleccionarlo.
 
-4.  En el **propiedades** ventana, expanda el **posición** propiedad, haga clic en la flecha desplegable situada junto a la **PositionType** propiedad y, a continuación, haga clic en  **BeforeOfficeId**.
+4. En el **propiedades** ventana, expanda el **posición** propiedad, haga clic en la flecha desplegable situada junto a la **PositionType** propiedad y, a continuación, haga clic en  **BeforeOfficeId**.
 
-5.  Establecer el **OfficeId** propiedad **GroupClipboard**.
+5. Establecer el **OfficeId** propiedad **GroupClipboard**.
 
      Esto coloca el **compras del cliente** grupo antes de la **Portapapeles** grupo de la **mensajes** ficha.
 
@@ -131,31 +131,31 @@ Use la ventana **Orígenes de datos** para agregar un conjunto de datos con tipo
 
 ### <a name="to-create-the-data-source"></a>Para crear el origen de datos
 
-1.  En el menú **Datos** , haga clic en **Agregar nuevo elemento**.
+1. En el menú **Datos** , haga clic en **Agregar nuevo elemento**.
 
      Esto inicia el **Asistente para configuración de origen de datos**.
 
-2.  Seleccione **base de datos**y, a continuación, haga clic en **siguiente**.
+2. Seleccione **base de datos**y, a continuación, haga clic en **siguiente**.
 
-3.  Seleccione **Dataset**y, a continuación, haga clic en **siguiente**.
+3. Seleccione **Dataset**y, a continuación, haga clic en **siguiente**.
 
-4.  Seleccione una conexión de datos para la base de datos de Microsoft SQL Server Compact 4.0 de ejemplo Northwind, o agregar una nueva conexión mediante el **nueva conexión** botón.
+4. Seleccione una conexión de datos para la base de datos de Microsoft SQL Server Compact 4.0 de ejemplo Northwind, o agregar una nueva conexión mediante el **nueva conexión** botón.
 
-5.  Después de haberse seleccionada o creada una conexión, haga clic en **siguiente**.
+5. Después de haberse seleccionada o creada una conexión, haga clic en **siguiente**.
 
-6.  Haga clic en **siguiente** para guardar la cadena de conexión.
+6. Haga clic en **siguiente** para guardar la cadena de conexión.
 
-7.  En el **elija los objetos de base de datos** , expanda **tablas**.
+7. En el **elija los objetos de base de datos** , expanda **tablas**.
 
-8.  Active la casilla situada al lado de cada una de las siguientes tablas:
+8. Active la casilla situada al lado de cada una de las siguientes tablas:
 
-    1.  **Clientes**
+    1. **Clientes**
 
-    2.  **Detalles del pedido**
+    2. **Detalles del pedido**
 
-    3.  **Pedidos**
+    3. **Pedidos**
 
-    4.  **Productos**
+    4. **Productos**
 
 9. Haga clic en **Finalizar**.
 
@@ -163,11 +163,11 @@ Use la ventana **Orígenes de datos** para agregar un conjunto de datos con tipo
 
 Use el modelo de objetos de la cinta de opciones para llevar a cabo las siguientes tareas:
 
--   Agregar nombres de los clientes a la **clientes** cuadro combinado.
+- Agregar nombres de los clientes a la **clientes** cuadro combinado.
 
--   Agregar controles de menú y el botón a la **productos comprados** menú que representen los pedidos y productos vendidos.
+- Agregar controles de menú y el botón a la **productos comprados** menú que representen los pedidos y productos vendidos.
 
--   Rellenar el para, asunto y cuerpo de los campos de nuevos mensajes de correo mediante el uso de datos de la **clientes** cuadro combinado y **productos comprados** menú.
+- Rellenar el para, asunto y cuerpo de los campos de nuevos mensajes de correo mediante el uso de datos de la **clientes** cuadro combinado y **productos comprados** menú.
 
 ### <a name="to-update-controls-in-the-custom-group-by-using-the-ribbon-object-model"></a>Para actualizar los controles del grupo personalizado mediante el modelo de objetos de la cinta de opciones
 
@@ -183,7 +183,7 @@ Use el modelo de objetos de la cinta de opciones para llevar a cabo las siguient
 
     Se abre el archivo de código de la cinta de opciones en el editor de código.
 
-5. Agregue las siguientes instrucciones a la parte superior del archivo de código de la cinta de opciones. Estas instrucciones proporcionan acceso fácil a los espacios de nombres LINQ y al espacio de nombres del ensamblado de interoperabilidad primario (PIA) de Outlook.
+5. Agregue las siguientes instrucciones a la parte superior del archivo de código de la cinta. Estas instrucciones proporcionan acceso fácil a los espacios de nombres LINQ y al espacio de nombres del ensamblado de interoperabilidad primario (PIA) de Outlook.
 
     [!code-csharp[Trin_Ribbon_Update_At_Runtime#1](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#1)]
     [!code-vb[Trin_Ribbon_Update_At_Runtime#1](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#1)]
@@ -257,31 +257,31 @@ Para crear un mensaje de correo electrónico de seguimiento de cliente, seleccio
 
 ### <a name="to-test-the-controls-in-the-custom-group"></a>Para probar los controles en el grupo personalizado
 
-1.  Presione **F5** para ejecutar el proyecto.
+1. Presione **F5** para ejecutar el proyecto.
 
      Se inicia Outlook.
 
-2.  En Outlook, en el **archivo** menú, elija **New**y, a continuación, haga clic en **mensaje de correo electrónico**.
+2. En Outlook, en el **archivo** menú, elija **New**y, a continuación, haga clic en **mensaje de correo electrónico**.
 
      Se producen las siguientes acciones:
 
-    -   Aparece una nueva ventana del inspector de mensajes de correo.
+    - Aparece una nueva ventana del inspector de mensajes de correo.
 
-    -   En el **mensaje** pestaña de la cinta de opciones, el **compras del cliente** grupo aparece antes de la **Portapapeles** grupo.
+    - En el **mensaje** pestaña de la cinta de opciones, el **compras del cliente** grupo aparece antes de la **Portapapeles** grupo.
 
-    -   El **clientes** cuadro combinado en el grupo se actualiza con los nombres de los clientes en la base de datos Northwind.
+    - El **clientes** cuadro combinado en el grupo se actualiza con los nombres de los clientes en la base de datos Northwind.
 
-3.  En el **mensaje** pestaña de la cinta de opciones, en el **compras del cliente** grupo, seleccione un cliente en el **clientes** cuadro combinado.
+3. En el **mensaje** pestaña de la cinta de opciones, en el **compras del cliente** grupo, seleccione un cliente en el **clientes** cuadro combinado.
 
      Se producen las siguientes acciones:
 
-    -   El **productos comprados** menú se actualiza para mostrar cada pedido de ventas para el cliente seleccionado.
+    - El **productos comprados** menú se actualiza para mostrar cada pedido de ventas para el cliente seleccionado.
 
-    -   Cada submenú del pedido se actualiza para mostrar los productos comprados en ese pedido.
+    - Cada submenú del pedido se actualiza para mostrar los productos comprados en ese pedido.
 
-    -   Dirección de correo electrónico del cliente seleccionado se agrega a la **a** línea del mensaje de correo electrónico y el asunto y cuerpo del mensaje de correo se rellenan con texto.
+    - Dirección de correo electrónico del cliente seleccionado se agrega a la **a** línea del mensaje de correo electrónico y el asunto y cuerpo del mensaje de correo se rellenan con texto.
 
-4.  Haga clic en el **Products Purchases** menú, elija cualquier pedido de ventas y, a continuación, haga clic en un producto del pedido de ventas.
+4. Haga clic en el **Products Purchases** menú, elija cualquier pedido de ventas y, a continuación, haga clic en un producto del pedido de ventas.
 
      El nombre del producto se agrega al cuerpo del mensaje de correo.
 
@@ -289,11 +289,11 @@ Para crear un mensaje de correo electrónico de seguimiento de cliente, seleccio
 
 Puede aprender más acerca de la personalización de la interfaz de usuario de Office en estos temas:
 
--   Agregar una interfaz de usuario basada en contexto a cualquier personalización de nivel de documento. Para obtener más información, consulte [información general sobre el panel de acciones](../vsto/actions-pane-overview.md).
+- Agregar una interfaz de usuario basada en contexto a cualquier personalización de nivel de documento. Para obtener más información, consulte [información general sobre el panel de acciones](../vsto/actions-pane-overview.md).
 
--   Extender un formulario estándar o personalizado de Microsoft Office Outlook. Para obtener más información, vea [Tutorial: Diseñar un formulario de Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md).
+- Extender un formulario estándar o personalizado de Microsoft Office Outlook. Para obtener más información, vea [Tutorial: Diseñar un formulario de Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md).
 
--   Agregar un panel de tareas personalizado a Outlook. Para obtener más información, consulte [paneles de tareas personalizados](../vsto/custom-task-panes.md).
+- Agregar un panel de tareas personalizado a Outlook. Para obtener más información, consulte [paneles de tareas personalizados](../vsto/custom-task-panes.md).
 
 ## <a name="see-also"></a>Vea también
 

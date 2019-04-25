@@ -5,17 +5,16 @@ ms.topic: conceptual
 ms.assetid: c3175080-1dfb-4ab8-a460-92dadbb844b4
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - data-storage
 - dotnet
-ms.openlocfilehash: 24da256ac835e477465845714cc844ac5bb305d7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a454218bbddb6c135ff7dc2a5910e6e4a9b3c7e4
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53872757"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55956784"
 ---
 # <a name="visual-studio-data-tools-for-net"></a>Visual Studio Data Tools para .NET
 

@@ -1,12 +1,9 @@
 ---
-title: 'Cómo: habilitar y deshabilitar el análisis de la solución completa para código administrado | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Habilitar y deshabilitar el análisis de la solución completa para código administrado | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - full solution analysis
 ms.assetid: 04315147-5792-47f0-8b5f-9ac8413c6a57
@@ -14,14 +11,14 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: af0aae4020182f6414d44a2004f98a6fc0df23ca
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: fddc41d264f30f6de5a2f69b098865cf3d997147
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49221876"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044829"
 ---
-# <a name="how-to-enable-and-disable-full-solution-analysis-for-managed-code"></a>Cómo: habilitar y deshabilitar el análisis de la solución completa para código administrado
+# <a name="how-to-enable-and-disable-full-solution-analysis-for-managed-code"></a>Procedimiento Habilitar y deshabilitar el análisis de la solución completa para código administrado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 NOTA]
@@ -33,11 +30,11 @@ NOTA]
   
 #### <a name="to-toggle-full-solution-analysis"></a>Para activar o desactivar el análisis de la solución completa  
   
-1.  En el menú principal de Visual Studio, elija **herramientas** &#124; **opciones** para ver el **opciones** cuadro de diálogo.  
+1. En el menú principal de Visual Studio, elija **herramientas** &#124; **opciones** para ver el **opciones** cuadro de diálogo.  
   
-2.  En el **opciones** diálogo cuadro, elija **Editor de texto** &#124; **C#** o **básica** &#124; **avanzadas**.  
+2. En el **opciones** diálogo cuadro, elija **Editor de texto** &#124; **C#** o **básica** &#124; **avanzadas**.  
   
-3.  Seleccione el **Habilitar análisis de la solución completa** casilla de verificación para habilitar el análisis de la solución completa, o desactive la casilla para deshabilitarla. Elija la **Aceptar** cuando haya terminado.  
+3. Seleccione el **Habilitar análisis de la solución completa** casilla de verificación para habilitar el análisis de la solución completa, o desactive la casilla para deshabilitarla. Elija la **Aceptar** cuando haya terminado.  
   
      ![Habilitar la casilla de verificación de análisis de solución completa. ](../code-quality/media/fsa-toolsoptions.png "FSA_ToolsOptions")  
   
@@ -59,6 +56,3 @@ NOTA]
  De forma predeterminada, análisis de la solución completa está habilitado para Visual Basic y deshabilitado para Visual C#.  
   
  Visual Studio Update 3 RC incluye un motor de diagnóstico v2 de analizador de código mejorada que reduce el uso de memoria significativamente y reduce el tiempo de CPU en inactividad, incluso si está habilitado el análisis de la solución completa.
-
-
-

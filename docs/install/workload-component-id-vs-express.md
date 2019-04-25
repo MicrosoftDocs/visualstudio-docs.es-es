@@ -1,30 +1,29 @@
 ---
-title: Identificadores de componente y carga de trabajo de Visual Studio Desktop Express 2017
+title: Identificadores de componente y carga de trabajo de Visual Studio Express para escritorio
 titleSuffix: ''
 description: Uso de identificadores de componente y carga de trabajo para instalar Visual Studio mediante la línea de comandos o especificarlo como una dependencia en un manifiesto VSIX
 keywords: ''
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.date: 11/13/2018
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
-ms.service: ''
-ms.prod: visual-studio-dev15
 ms.assetid: a3c0cc76-e3ce-435c-a1af-a6318b5a4dbe
-ms.workload:
-- multiple
-ms.openlocfilehash: f04e52ed3198c37f19cd5cf1ce9eb334446c6d52
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+monikerRange: vs-2017
+ms.openlocfilehash: 2447f0eab7ee3931df70f503519f3f110f4ba272
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53959409"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323781"
 ---
-# <a name="visual-studio-2017-desktop-express-component-directory"></a>Directorio de componentes de Visual Studio 2017 Express para escritorio
+# <a name="visual-studio-desktop-express-component-directory"></a>Directorio de componentes de Visual Studio Express para escritorio
 
 Las tablas de esta página presentan los identificadores que puede usar para instalar Visual Studio mediante la línea de comandos o que puede especificar como una dependencia en un manifiesto VSIX. Tenga en cuenta que agregaremos componentes adicionales a medida que se publiquen actualizaciones de Visual Studio.
 

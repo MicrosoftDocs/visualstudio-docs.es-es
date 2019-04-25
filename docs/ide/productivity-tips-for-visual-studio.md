@@ -1,19 +1,18 @@
 ---
 title: Sugerencias de productividad
-ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
+ms.date: 2/21/2019
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9acb00dba8024e8d577dac15a114cbed93e6107d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: afe225d111f3e011b5f852b283c9a7ea161ba07a
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53885280"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789918"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Sugerencias de productividad para Visual Studio
 
@@ -25,7 +24,7 @@ Para obtener más información acerca de los métodos abreviados de teclado más
 
 Escriba código más rápidamente con las características siguientes.
 
-- **Usar comandos prácticos**. Visual Studio contiene varios comandos que le ayudarán a realizar las tareas de edición comunes con mayor rapidez. Por ejemplo, en **Visual Studio 2017, versión 15.6** y posteriores, puede elegir un comando para duplicar fácilmente una línea de código sin tener que copiarla, cambiar la posición del cursor y, a continuación, pegarla. Elija **Editar** > **Duplicar** o presione **Ctrl**+**E**,**V**. También puede expandir o contraer una selección de texto rápidamente; para ello, seleccione **Editar** > **Avanzado** > **Expandir selección** o **Editar** > **Avanzado** > **Contraer selección**, o bien presione **Mayús**+**Alt**+**=** y **Mayús**+**Alt**+**-** (disponible en la **versión 15.5 de Visual Studio 2017** y posteriores).
+- **Usar comandos prácticos**. Visual Studio contiene varios comandos que le ayudarán a realizar las tareas de edición comunes con mayor rapidez. Por ejemplo, puede elegir un comando para duplicar fácilmente una línea de código sin tener que copiarla, cambiar la posición del cursor y luego pegarla. Elija **Editar** > **Duplicar** o presione **Ctrl**+**E**,**V**. También puede expandir o contraer una selección de texto rápidamente; para ello, seleccione **Edición** > **Avanzado** > **Expandir selección** o **Edición** > **Avanzado** > **Contraer selección**, o bien presione **Mayús**+**Alt**+**=** o **Mayús**+**Alt**+**-**.
 
 - **Usar IntelliSense**. Cuando se escribe código en el editor, aparece información de IntelliSense, como Lista de miembros, Información de parámetros, Información rápida, ayuda para las signaturas y Palabra completa. Estas características admiten la coincidencia aproximada de texto; por ejemplo, las listas de resultados para Lista de miembros no solo incluyen las entradas que comienzan con los caracteres que escribió, sino también entradas que contienen la combinación de caracteres en cualquier lugar de sus nombres. Para obtener más información, vea [Usar IntelliSense](../ide/using-intellisense.md).
 
@@ -67,11 +66,23 @@ Puede buscar comandos, archivos y opciones en el IDE, además de filtrar el cont
 
 - **Mostrar solo los errores que quiera abordar**. Si elige el selecciona el botón **Filtro** de la barra de herramientas **Lista de errores**, puede reducir el número de errores que aparecen en la ventana **Lista de errores**. Puede mostrar solo los errores de los archivos que están abiertos en el editor, solo los errores del archivo actual o solo los errores del proyecto actual. También puede buscar errores específicos dentro de la ventana **Lista de errores**.
 
-- **Buscar cuadros de diálogo, comandos de menú y opciones**. En el cuadro [Inicio rápido](../ide/reference/quick-launch-environment-options-dialog-box.md), escriba palabras clave o frases correspondientes a los elementos que intenta buscar. Por ejemplo, aparecen las opciones siguientes si escribe `new project`:
+- **Buscar cuadros de diálogo, comandos de menú, opciones y demás**. En el cuadro de búsqueda, escriba palabras clave o frases correspondientes a los elementos que intenta buscar. Por ejemplo, aparecen las opciones siguientes si escribe **nuevo proyecto**:
 
-    ![Resultados de inicio rápido para 'nuevo proyecto'](../ide/media/productivity_quicklaunch.png)
+   ::: moniker range="vs-2017"
 
-    En **Inicio rápido** se muestran vínculos al cuadro de diálogo **Nuevo proyecto**, al cuadro de diálogo **Agregar nuevo elemento** y a la página **Proyectos y soluciones** del cuadro de diálogo **Opciones**, entre otros. Los resultados de Inicio rápido también pueden incluir archivos de proyecto y ventanas de herramientas.
+   ![Resultados de inicio rápido para 'nuevo proyecto'](../ide/media/productivity_quicklaunch.png)
+
+   En **Inicio rápido** se muestran vínculos para crear un proyecto, agregar un nuevo elemento a un proyecto y a la página **Proyectos y soluciones** del cuadro de diálogo **Opciones**, entre otros. Los resultados de Inicio rápido también pueden incluir archivos de proyecto y ventanas de herramientas.
+
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2019"
+
+   ![Resultados de la búsqueda para "nuevo proyecto"](../ide/media/vs-2019/productivity-quick-launch-new-project.png)
+
+   ::: moniker-end
+
+   Presione **Ctrl**+**Q** para ir directamente al cuadro de búsqueda.
 
 ## <a name="debug-code"></a>Depurar código
 
@@ -101,9 +112,19 @@ La depuración puede consumir mucho tiempo, pero las siguientes sugerencias pued
 
 Puede tener acceso rápidamente al Símbolo del sistema para desarrolladores o a otra herramienta de Visual Studio si ancla este elemento en el menú Inicio o en la barra de tareas.
 
-1. En el Explorador de Windows, navegue a `%ProgramData%\Microsoft\Windows\Start Menu\Programs\Visual Studio 2017\Visual Studio Tools`.
+::: moniker range="vs-2017"
 
-1. Haga clic con el botón derecho o abra el menú contextual de **Símbolo del sistema para desarrolladores** y, luego, elija **Anclar a Inicio** o **Anclar a la barra de tareas**.
+1. En el Explorador de Windows, vaya a *%ProgramData%\Microsoft\Windows\Start Menu\Programs\Visual Studio 2017\Visual Studio Tools*.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. En el Explorador de Windows, vaya a *%ProgramData%\Microsoft\Windows\Start Menu\Programs\Visual Studio 2019\Visual Studio Tools*.
+
+::: moniker-end
+
+2. Haga clic con el botón derecho o abra el menú contextual de **Símbolo del sistema para desarrolladores** y, luego, elija **Anclar a Inicio** o **Anclar a la barra de tareas**.
 
 ## <a name="manage-files-toolbars-and-windows"></a>Administrar archivos, barras de herramientas y ventanas
 

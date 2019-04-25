@@ -1,27 +1,22 @@
 ---
 title: 'Vista Módulos: datos de contención | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Modules view
 ms.assetid: 1a9aa122-2d8f-4a09-b503-92975aa6b648
 caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 9c98689007a9497a4186dc19086ec46588b0a842
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9a2553396614cacbc22925f8f7f3a61d56c50541
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51759406"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54771045"
 ---
 # <a name="modules-view---contention-data"></a>Vista Módulos: datos de contención
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,6 +52,3 @@ En la vista Módulos de datos de contención se muestran datos de simultaneidad 
  [Vista Módulos: muestreo](../profiling/modules-view-dotnet-memory-sampling-data.md)   
  [Vista Módulos](../profiling/modules-view-instrumentation-data.md)   
  [Vista Módulos](../profiling/modules-view-sampling-data.md)
-
-
-

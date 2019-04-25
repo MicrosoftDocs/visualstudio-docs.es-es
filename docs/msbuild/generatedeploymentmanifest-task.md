@@ -14,15 +14,15 @@ helpviewer_keywords:
 - GenerateDeploymentManifest task [MSBuild]
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d8f6f45b0a02922f3c91b9d1443000a385eb240
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cb06b656b107dce623ea75df162b20a1ea34b401
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53932384"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56610325"
 ---
 # <a name="generatedeploymentmanifest-task"></a>GenerateDeploymentManifest (tarea)
 
@@ -67,7 +67,7 @@ Además de los parámetros mencionados anteriormente, esta tarea hereda los par�
 
 ## <a name="see-also"></a>Vea también
 
-[Tareas](../msbuild/msbuild-tasks.md)  
-[GenerateApplicationManifest (Tarea)](../msbuild/generateapplicationmanifest-task.md)  
-[SignFile (Tarea)](../msbuild/signfile-task.md)  
-[Referencia de tareas](../msbuild/msbuild-task-reference.md)
+- [Tareas](../msbuild/msbuild-tasks.md)
+- [GenerateApplicationManifest (Tarea)](../msbuild/generateapplicationmanifest-task.md)
+- [SignFile (Tarea)](../msbuild/signfile-task.md)
+- [Referencia de tareas](../msbuild/msbuild-task-reference.md)

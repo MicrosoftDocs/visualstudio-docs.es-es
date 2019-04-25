@@ -1,13 +1,9 @@
 ---
 title: Procedimiento Cambiar fuentes y colores
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio, color themes
 - color themes, Visual Studio
@@ -15,13 +11,13 @@ ms.assetid: 60d91ba1-244b-4c43-847f-60b744f1352a
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: db98360ecf13ddeec8af7be0b546553b81a7dc72
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
-ms.translationtype: MTE95
+manager: jillfra
+ms.openlocfilehash: 247780815af4357fb8a529946e901b41c5d4a83c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53915366"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060623"
 ---
 # <a name="how-to-change-fonts-and-colors-in-visual-studio"></a>Procedimiento Cambiar fuentes y colores en Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,11 +29,11 @@ Puede personalizar el color del marco y las ventanas de herramientas del IDE de 
 
 ### <a name="change-the-color-theme-of-the-ide"></a>Cambiar el tema de color del IDE
 
-1.  En la barra de menús, elija **Herramientas**, **Opciones**.
+1. En la barra de menús, elija **Herramientas**, **Opciones**.
 
-2.  En la lista de opciones, elija **Entorno**, **General**.
+2. En la lista de opciones, elija **Entorno**, **General**.
 
-3.  En la lista **Tema de color**, elija el tema predeterminado **Azul**, **Oscuro** o **Claro**.
+3. En la lista **Tema de color**, elija el tema predeterminado **Azul**, **Oscuro** o **Claro**.
 
     > [!IMPORTANT]
     >  Al cambiar un tema de color, el texto del IDE vuelve a ser el predeterminado o las fuentes y tamaños previamente personalizadas.
@@ -46,7 +42,7 @@ Puede personalizar el color del marco y las ventanas de herramientas del IDE de 
 
 ### <a name="use-windows-high-contrast-colors"></a>Utilizar colores de alto contraste de Windows
 
--   Elija las teclas Alt izquierda + Mayús izquierda + Impr Pant.
+- Elija las teclas Alt izquierda + Mayús izquierda + Impr Pant.
 
     > [!WARNING]
     >  Esta opción establece un alto contraste para todas las aplicaciones y la interfaz de usuario del equipo actual.
@@ -56,18 +52,18 @@ Puede personalizar el color del marco y las ventanas de herramientas del IDE de 
 
 #### <a name="to-change-the-font-and-size-of-all-text-in-the-ide"></a>Para cambiar el tamaño y la fuente del texto del IDE
 
-1.  En la barra de menús, elija **Herramientas**, **Opciones**.
+1. En la barra de menús, elija **Herramientas**, **Opciones**.
 
-2.  En la lista de opciones, elija **Entorno**, **Fuentes y colores**.
+2. En la lista de opciones, elija **Entorno**, **Fuentes y colores**.
 
-3.  En la lista **Mostrar configuración para**, elija **Fuente del entorno**.
+3. En la lista **Mostrar configuración para**, elija **Fuente del entorno**.
 
     > [!TIP]
     >  Si solo quiere cambiar la fuente de las ventanas de herramientas, en la lista **Mostrar configuración para**, elija **[Todas las ventanas de herramientas de texto]**.
 
-4.  En la lista **Fuente**, elija una fuente.
+4. En la lista **Fuente**, elija una fuente.
 
-5.  En la lista **Tamaño**, elija un tamaño de texto y elija el botón **Aceptar**.
+5. En la lista **Tamaño**, elija un tamaño de texto y elija el botón **Aceptar**.
 
 ## <a name="see-also"></a>Vea también
- [Características de accesibilidad de Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md) [Cómo: Cambio de fuentes y colores del editor.
+ [Características de accesibilidad de Visual Studio](../ide/reference/accessibility-features-of-visual-studio.md) [Cómo: Cambio de fuentes y colores del editor](../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)

@@ -1,23 +1,20 @@
 ---
 title: T4 Directiva de plantilla | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 2b0a8e04-6fee-4c6c-b086-e49fc728a3ed
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: dcd11416bc067acaab8855b51969c7e1068e2c97
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 71d7dc0fc208fa3c108019f6324c3d053673e918
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49248229"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070841"
 ---
 # <a name="t4-template-directive"></a>Directiva de plantilla T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,7 +55,8 @@ Normalmente, una plantilla de texto T4 de [!INCLUDE[vsprvs](../includes/vsprvs-m
   
 ## <a name="debug-attribute"></a>debug (atributo)  
  Ejemplo:  
- ```  
+
+```  
 debug="true"  
 ```  
   
@@ -73,7 +71,8 @@ debug="true"
   
 ## <a name="hostspecific-attribute"></a>hostspecific (atributo)  
  Ejemplo:  
- ```  
+
+```  
 hostspecific="true"  
 ```  
   
@@ -147,7 +146,8 @@ Squares of numbers:
  Por lo general, se especifica otra plantilla preprocesada como la clase base. La plantilla base proporciona bloques de texto comunes, que pueden intercalarse con texto en las plantillas derivadas. Puede utilizar bloques de característica de clase `<#+ ... #>` para definir métodos que contienen fragmentos de texto. Por ejemplo, puede colocar el marco del texto de salida en la plantilla base, proporcionando métodos virtuales que se pueden invalidar en plantillas derivadas:  
   
  Plantilla de texto (preprocesada) en tiempo de ejecución BaseTemplate.tt:  
- ```scr  
+
+```scr  
 This is the common header.  
 <#   
   SpecificFragment1();   
@@ -166,7 +166,8 @@ This is the common footer.
 ```  
   
  Plantilla de texto (preprocesada) en tiempo de ejecución DerivedTemplate1.tt:  
- ```csharp  
+
+```csharp  
 <#@ template language="C#" inherits="BaseTemplate" #>  
 <#   
   // Run the base template:  
@@ -191,12 +192,14 @@ protected override void SpecificFragment2()
 ```  
   
  Código de aplicación para invocar a DerivedTemplate1:  
- ```csharp  
+
+```csharp  
 Console.WriteLine(new DerivedTemplate().TransformText());  
 ```  
   
  Resultado que se obtiene:  
- ```  
+
+```  
 This is the common header.  
    Fragment 1 for DerivedTemplate1  
 A common central text.  
@@ -241,6 +244,3 @@ This is the common footer.
  `internal`  
   
  En una plantilla de texto en tiempo de ejecución, establece el atributo de visibilidad de la clase generada. De forma predeterminada, la clase forma parte de la API pública del código, pero si se establece `visibility="internal"`, puede asegurarse de que solo el código pueda utilizar la clase de generación de texto.
-
-
-

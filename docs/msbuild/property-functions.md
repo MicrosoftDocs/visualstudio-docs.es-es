@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 2253956e-3ae0-4bdc-9d3a-4881dfae4ddb
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0fab9dc76bf47dbe03388aaef56c85ca2fa5a7bf
-ms.sourcegitcommit: d0b02affd24e66efed924c197824f35f823e3240
+ms.openlocfilehash: 7d7e8c3bab691eeaf71383aef3315b51173492f7
+ms.sourcegitcommit: 2dc924c96a6d48803c8eedc3d6781202629b41fa
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/21/2019
-ms.locfileid: "54417907"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57737032"
 ---
 # <a name="property-functions"></a>Funciones de propiedad
 
@@ -166,7 +166,7 @@ Esta es una lista de las funciones de propiedad de MSBuild:
 |int BitwiseXor(int first, int second)|Realiza una operación `XOR` bit a bit en el primero y el segundo (primero ^ segundo).|
 |int BitwiseNot(int first)|Realiza una operación `NOT` bit a bit (~first).|
 |bool IsOsPlatform(string platformString)|Especifica si la plataforma del sistema operativo actual es `platformString`. `platformString` debe ser un miembro de <xref:System.Runtime.InteropServices.OSPlatform>.|
-|bool IsOSUnixLike|True si el sistema operativo actual es un sistema Unix.|
+|bool IsOSUnixLike()|True si el sistema operativo actual es un sistema Unix.|
 |string NormalizePath(params string[] path)|Obtiene la ruta de acceso completa con formato canónico de la ruta proporcionada y garantiza que contiene los caracteres separadores de directorio correctos para el sistema operativo actual.|
 |string NormalizeDirectory(params string[] path)|Obtiene la ruta de acceso completa con formato canónico del directorio proporcionado y garantiza que contiene los caracteres separadores de directorio correctos para el sistema operativo actual mientras garantiza que tiene una barra diagonal final.|
 |string EnsureTrailingSlash(string path)|Si la ruta de acceso proporcionada no tiene una barra diagonal final, entonces agrega una. Si la ruta es una cadena vacía, no la modifica.|
@@ -338,6 +338,6 @@ Output:
 
 ## <a name="see-also"></a>Vea también
 
-[Propiedades de MSBuild](../msbuild/msbuild-properties.md)
+- [Propiedades de MSBuild](../msbuild/msbuild-properties.md)
 
-[Información general sobre MSBuild](../msbuild/msbuild.md)
+- [Información general sobre MSBuild](../msbuild/msbuild.md)

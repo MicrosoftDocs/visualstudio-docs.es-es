@@ -1,14 +1,9 @@
 ---
 title: Opciones, editor de texto, C#, avanzado | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Outlining
 - VS.ToolsOptionsPages.Text_Editor.Visual_JSharp.Advanced
@@ -24,22 +19,21 @@ ms.assetid: 947f9d9a-b0f3-408d-9866-d82895bcee31
 caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 51707a1df9c9f7144dc9a3af021262ca818f03b1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: ed1260d414c21d40bd0dc57f885cf5996594b7d6
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49850521"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664558"
 ---
 # <a name="options-text-editor-c-advanced"></a>Opciones, editor de texto, C#, avanzado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Use este cuadro de diálogo para modificar la configuración del formato del editor, la refactorización de código y los comentarios de documentación XML para Visual C#. Para tener acceso a este cuadro de diálogo, haga clic en **Opciones** en el menú **Herramientas**, expanda la carpeta **Editor de texto**, expanda **C#** y, después, haga clic en **Opciones avanzadas**.  
   
 > [!NOTE]
->  Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="outlining"></a>esquematizar  
  Especificar el modo de esquematización al abrir los archivos  
@@ -82,12 +76,9 @@ Use este cuadro de diálogo para modificar la configuración del formato del edi
   
 ## <a name="organize-usings"></a>Organizar instrucciones Using  
  Aplicar primero directivas "System" al ordenar instrucciones Using  
- Cuando está seleccionada, las directivas Using `System` aparecen antes que otras directivas Using. Para obtener más información, consulte [ordenar instrucciones using](../../misc/sort-usings.md).  
+ Cuando está seleccionada, las directivas Using `System` aparecen antes que otras directivas Using. Para más información, vea [Organización de directivas using](../../misc/sort-usings.md).  
   
 ## <a name="see-also"></a>Vea también  
  [Comentarios de documentación XML](http://msdn.microsoft.com/library/803b7f7b-7428-4725-b5db-9a6cff273199)   
  [Opciones del editor específicas del lenguaje](../../ide/reference/setting-language-specific-editor-options.md)   
  [IntelliSense para Visual C#](../../ide/visual-csharp-intellisense.md)
-
-
-

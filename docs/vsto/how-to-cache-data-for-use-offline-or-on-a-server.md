@@ -14,15 +14,15 @@ helpviewer_keywords:
 - data caching [Office development in Visual Studio], offline use
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b72748a4f37aa89fd12ba8751800fa9cb3c7be84
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7c53d7bd1264ff21866746796d598b27cfac5984
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53939429"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094546"
 ---
 # <a name="how-to-cache-data-for-use-offline-or-on-a-server"></a>Procedimiento Almacenar en caché datos para su uso sin conexión o en un servidor
   Puede marcar un elemento de datos en la memoria caché en el documento, por lo que esté disponible sin conexión. Esto también permite para los datos en el documento que se va a ser manipulados por otro código cuando el documento está almacenado en un servidor.
@@ -36,28 +36,32 @@ ms.locfileid: "53939429"
 
 ### <a name="to-cache-data-in-the-document-using-code"></a>Para almacenar datos en caché en el documento mediante código
 
-1.  Declarar un campo público o propiedad del elemento de datos como un miembro de una clase de elemento host en el proyecto, como el `ThisDocumen`clase t en un proyecto de Word o el `ThisWorkbook` clase en un proyecto de Excel.
+1. Declarar un campo público o propiedad del elemento de datos como un miembro de una clase de elemento host en el proyecto, como el `ThisDocumen`clase t en un proyecto de Word o el `ThisWorkbook` clase en un proyecto de Excel.
 
-2.  Aplicar el <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> atributo al miembro para marcar el elemento de datos se almacenen en caché de datos del documento. El ejemplo siguiente aplica este atributo a una declaración de campo para un <xref:System.Data.DataSet>.
+2. Aplicar el <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> atributo al miembro para marcar el elemento de datos se almacenen en caché de datos del documento. El ejemplo siguiente aplica este atributo a una declaración de campo para un <xref:System.Data.DataSet>.
 
      [!code-csharp[Trin_VstcoreDataExcel#11](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#11)]
      [!code-vb[Trin_VstcoreDataExcel#11](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#11)]
 
-3.  Agregue código para crear una instancia del elemento de datos y, si procede, realizar la carga desde la base de datos.
+3. Agregue código para crear una instancia del elemento de datos y, si procede, realizar la carga desde la base de datos.
 
      El elemento de datos solo se carga cuando se crea por primera vez; a partir de entonces, la memoria caché permanece con el documento y se debe escribir otro código para actualizarlo.
 
 ### <a name="to-cache-a-dataset-in-the-document-by-using-the-properties-window"></a>Para almacenar en caché un conjunto de datos en el documento mediante el uso de la ventana Propiedades
 
-1.  Agregar el conjunto de datos al proyecto mediante el uso de herramientas del Diseñador de Visual Studio, por ejemplo, mediante la adición de un origen de datos al proyecto mediante el **orígenes de datos** ventana.
+1. Agregar el conjunto de datos al proyecto mediante el uso de herramientas del Diseñador de Visual Studio, por ejemplo, mediante la adición de un origen de datos al proyecto mediante el **orígenes de datos** ventana.
 
-2.  Cree una instancia del conjunto de datos si aún no tiene uno y seleccione la instancia en el diseñador.
+2. Cree una instancia del conjunto de datos si aún no tiene uno y seleccione la instancia en el diseñador.
 
-3.  En el **propiedades** ventana, establezca el **CacheInDocument** propiedad **True**.
+3. En el **propiedades** ventana, establezca el **CacheInDocument** propiedad **True**.
 
      Para obtener más información, consulte [propiedades en proyectos de Office](../vsto/properties-in-office-projects.md).
 
-4.  En el **propiedades** ventana, establezca el **modificadores** propiedad **pública** (de forma predeterminada es **interno**).
+4. En el **propiedades** ventana, establezca el **modificadores** propiedad **pública** (de forma predeterminada es **interno**).
 
 ## <a name="see-also"></a>Vea también
- [Almacenar en caché datos](../vsto/caching-data.md) [Cómo: Almacenar en caché mediante programación un origen de datos en un documento de Office](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md) [Cómo: Almacenar en caché datos en un documento protegido por contraseña](../vsto/how-to-cache-data-in-a-password-protected-document.md) [tener acceso a datos de documentos en el servidor](../vsto/accessing-data-in-documents-on-the-server.md) [guardar los datos](../data-tools/saving-data.md)
+- [Almacenar datos en caché](../vsto/caching-data.md)
+- [Cómo: Almacenar en caché mediante programación un origen de datos en un documento de Office](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)
+- [Cómo: Almacenar datos en caché en un documento protegido por contraseña](../vsto/how-to-cache-data-in-a-password-protected-document.md)
+- [Acceder a los datos de documentos en el servidor](../vsto/accessing-data-in-documents-on-the-server.md)
+- [Guardar datos](../data-tools/saving-data.md)

@@ -1,14 +1,9 @@
 ---
-title: Finalización de instrucciones para identificadores | Documentos de Microsoft
-ms.custom: ''
+title: Finalización de instrucciones para identificadores | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - IntelliSense [JavaScript], statement completion
 - statement completion, JavaScript IntelliSense
@@ -16,13 +11,13 @@ ms.assetid: c2cd4945-c67e-471b-8057-96cfd25f7fb2
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: d58c5ecc1d787195f7f5c91a07da7a4e775fc27e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 89f507c2f4d01cf5e3e1e983cfcb5bafd9d9a7dd
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49827065"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54787657"
 ---
 # <a name="statement-completion-for-identifiers"></a>Finalización de instrucciones para identificadores
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,6 +62,3 @@ JavaScript no permite explícita de tipos para las declaraciones de variable. Co
   
 ## <a name="see-also"></a>Vea también  
  [IntelliSense para JavaScript](../ide/javascript-intellisense.md)
-
-
-

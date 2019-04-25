@@ -12,16 +12,15 @@ helpviewer_keywords:
 ms.assetid: 177420b9-568b-4dad-9d16-1b0e98a24d71
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 585b5b5397ebd259476654dc2cc62f1add262af9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b85999a22bf49923630a0abe2f9ef33950edd8fe
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53918906"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325086"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Enlazar controles de WPF a un conjunto de datos
 
@@ -57,15 +56,29 @@ El conocimiento previo de los siguientes conceptos es útil, aunque no necesario
 
 Cree un nuevo proyecto WPF para mostrar los registros de productos.
 
-1. Inicie Visual Studio.
+::: moniker range="vs-2017"
+
+1. Abra Visual Studio.
 
 2. En el menú **Archivo**, seleccione **Nuevo** > **Proyecto**.
 
 3. Expanda **Visual Basic** o **Visual C#** y después seleccione **Windows**.
 
-4. Seleccione la plantilla de proyecto **Aplicación WPF**.
+4. Seleccione el **aplicación WPF** plantilla de proyecto.
 
 5. En el **nombre** , escriba **AdventureWorksProductsEditor** y, a continuación, seleccione **Aceptar**.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Abra Visual Studio.
+
+2. En la ventana de inicio, elija **Crear un proyecto nuevo**.
+
+3. Busque el C# **aplicación WPF** plantilla de proyecto y siga los pasos para crear el proyecto, por nombrar el proyecto **AdventureWorksProductsEditor**.
+
+::: moniker-end
 
    Visual Studio crea el proyecto AdventureWorksProductsEditor.
 
@@ -243,7 +256,7 @@ Después de completar este tutorial, es posible que intente las siguientes tarea
 
 - Aprenda cómo usar la ventana **Orígenes de datos** en Visual Studio para enlazar controles WPF a otros tipos de orígenes de datos. Para obtener más información, consulte [WPF enlazar controles a un servicio de datos WCF](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md).
 
-- Aprenda cómo usar la ventana **Orígenes de datos** en Visual Studio para mostrar datos relacionados (es decir, datos en una relación primario-secundario) en controles WPF. Para obtener más información, vea [Tutorial: Mostrar datos relacionados en una aplicación WPF](../data-tools/display-related-data-in-wpf-applications.md).
+- Aprenda cómo usar la ventana **Orígenes de datos** en Visual Studio para mostrar datos relacionados (es decir, datos en una relación primario-secundario) en controles WPF. Para obtener más información, consulte [Tutorial: mostrar datos relacionados en una aplicación WPF](../data-tools/display-related-data-in-wpf-applications.md).
 
 ## <a name="see-also"></a>Vea también
 

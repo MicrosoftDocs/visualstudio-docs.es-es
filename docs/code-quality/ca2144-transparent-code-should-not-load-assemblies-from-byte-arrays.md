@@ -1,22 +1,21 @@
 ---
 title: 'CA2144: El código transparente no debe cargar ensamblados desde matrices de bytes'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA2144
 ms.assetid: 777b1310-6e16-4413-b4ee-5f3136304f82
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ea3149d2fb01b447bd2c539f7de0d440a36fe91
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 971c7e794c5b782c2ba71be868fc2f9e7747fdb4
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53825768"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55928938"
 ---
 # <a name="ca2144-transparent-code-should-not-load-assemblies-from-byte-arrays"></a>CA2144: El código transparente no debe cargar ensamblados desde matrices de bytes
 

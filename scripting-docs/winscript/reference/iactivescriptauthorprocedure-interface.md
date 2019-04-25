@@ -2,7 +2,6 @@
 title: IActiveScriptAuthorProcedure (interfaz) | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,12 +13,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bec6696a40868ad3cc64cf41efe5ab6bfc9d95ec
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 5e684a9e41165ceb266199c64a93e2e765506fb6
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54349626"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58149018"
 ---
 # <a name="iactivescriptauthorprocedure-interface"></a>IActiveScriptAuthorProcedure (Interfaz)
 Además de los métodos heredados de `IUnknown`, el `IScriptAuthorProcedure` interfaz expone el método siguiente.  

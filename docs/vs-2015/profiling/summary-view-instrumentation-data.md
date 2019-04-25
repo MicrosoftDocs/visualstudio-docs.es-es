@@ -1,27 +1,22 @@
 ---
 title: 'Vista Resumen: datos de instrumentación | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Summary view
 ms.assetid: 0a3b3a1f-e22b-4ac8-b46e-71694e9b2cf1
 caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 73883b29dfd98e9ad5955505fa8840db815ec218
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5dc0b4195d33a7bf72d17681b6d71e78f1bacfe5
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51724997"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54784591"
 ---
 # <a name="summary-view---instrumentation-data"></a>Vista Resumen: datos de instrumentación
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,6 +50,3 @@ La vista Resumen muestra información acerca de las funciones más exigentes en 
 ## <a name="see-also"></a>Vea también  
  [Vista Resumen](../profiling/summary-view-sampling-data.md)   
  [Vista Resumen](../profiling/summary-view-dotnet-memory-data.md)
-
-
-

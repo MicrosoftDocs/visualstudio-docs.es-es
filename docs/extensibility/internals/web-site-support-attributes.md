@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 46d52e2c-ca2a-4bbd-8500-5b0129768aec
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ea55937318d22a40b90cddb54490b87ab0c44325
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 076b7aa56ec00fda559bbdfdc8b2b9df2be38816
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53916827"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56603136"
 ---
 # <a name="web-site-support-attributes"></a>Atributos de compatibilidad del sitio web
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Proyecto de sitio Web puede ampliarse para proporcionar compatibilidad con Web lenguajes de programación. El lenguaje debe registrarse con [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para que las plantillas de proyecto pueden aparecer en el **nuevo sitio Web** cuadro de diálogo cuando se selecciona el idioma.
@@ -55,4 +55,4 @@ public class PythonPackage : Package, IOleComponent
  La implementación de IVsIntellisenseProject controla las referencias y llama al compilador del lenguaje cuando se solicita una página Web con código, pero no se almacenan en caché.
 
 ## <a name="see-also"></a>Vea también
- [Compatibilidad con sitios web](../../extensibility/internals/web-site-support.md)
+- [Compatibilidad con sitios web](../../extensibility/internals/web-site-support.md)

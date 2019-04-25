@@ -1,14 +1,9 @@
 ---
 title: Vista de asignaciones de memoria de .NET | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.view.allocation
 helpviewer_keywords:
@@ -20,13 +15,13 @@ ms.assetid: 01eb876e-c413-4516-977b-4f896929e8a6
 caps.latest.revision: 32
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 73a2be1314b01a0a7de73f71794bc94b18f0e851
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a3c24d8aa984ddc947d3c532020974a196192940
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51760354"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082391"
 ---
 # <a name="net-memory-allocations-view"></a>Vista de asignaciones de memoria de .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +39,7 @@ La vista de asignaciones enumera los tipos que se han creado durante la generaci
 ## <a name="highlighting-the-execution-hot-path"></a>Resaltar la ruta de acceso activa de ejecución  
  Puede encontrar la ruta de acceso de ejecución del árbol de llamadas que ha creado la mayoría de los objetos del tipo primario.  
   
--   Para mostrar la ruta de acceso más activa, haga clic con el botón derecho en el tipo o función y, a continuación, haga clic en **Expandir ruta de acceso activa**.  
+- Para mostrar la ruta de acceso más activa, haga clic con el botón derecho en el tipo o función y, a continuación, haga clic en **Expandir ruta de acceso activa**.  
   
 |Columna|Descripción|  
 |------------|-----------------|  
@@ -64,6 +59,3 @@ La vista de asignaciones enumera los tipos que se han creado durante la generaci
 |**Porcentaje de bytes inclusivos**|-   Para una función, el porcentaje de toda la memoria asignada en la generación de perfiles que eran asignaciones inclusivas del tipo primario por parte de la función.<br />-   Para un tipo, el porcentaje de toda la memoria asignada en la generación de perfiles que se ha asignado para las instancias del tipo.|  
 |**Bytes exclusivos**|-   Para una función, el número de bytes de memoria que la función ha asignado para objetos del tipo primario. Este número no incluye la memoria que sus funciones secundarias han asignado.<br />-   Para un tipo, el número total de bytes asignados en la generación de perfiles para las instancias del tipo.|  
 |**Porcentaje de bytes exclusivos**|-   Para una función, el porcentaje de toda la memoria asignada en la generación de perfiles que eran asignaciones exclusivas del tipo primario por parte de la función.<br />-   Para un tipo, el porcentaje de toda la memoria asignada en la generación de perfiles que se ha asignado para las instancias del tipo.|
-
-
-

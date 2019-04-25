@@ -10,45 +10,45 @@ helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], dialog box launcher
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8b7cc0f9cc789f7cccb49dc2c5b827f7cf604813
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9d831cb629665e641394d011bd11eb74481c4f94
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53846209"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087188"
 ---
 # <a name="how-to-add-a-dialog-box-launcher-to-a-ribbon-group"></a>Procedimiento Agregar un selector de cuadro de diálogo a un grupo de cinta de opciones
-  Puede agregar un selector de cuadro de diálogo a cualquier grupo de una cinta. Un selector de cuadro de diálogo es un pequeño icono que aparece en un grupo. Los usuarios, haga clic en este icono para abrir cuadros de diálogo relacionados o paneles de tareas que proporcionan más opciones que se relacionan con el grupo.  
-  
- [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]  
-  
-### <a name="to-add-a-dialog-box-launcher-to-a-ribbon-group"></a>Para agregar un selector de cuadro de diálogo a un grupo de cinta de opciones  
-  
-1.  Seleccione el archivo de código de la cinta de opciones (*.vb* o *.cs* archivo) en **el Explorador de soluciones**.  
-  
-2.  En el **vista** menú, haga clic en **diseñador**.  
-  
-3.  En el Diseñador de cinta de opciones, haga clic en cualquier grupo y, a continuación, haga clic en **agregar DialogBoxLauncher**.  
-  
-     Agregue código a la <xref:Microsoft.Office.Tools.Ribbon.RibbonGroup.DialogLauncherClick> eventos del grupo para abrir un cuadro de diálogo integrado o personalizado.  
-  
-## <a name="see-also"></a>Vea también  
- [Información general de la cinta de opciones](../vsto/ribbon-overview.md)   
- [Obtener acceso a la cinta de opciones en tiempo de ejecución](../vsto/accessing-the-ribbon-at-run-time.md)   
- [Tutoriales y ejemplos de desarrollo de office](../vsto/office-development-samples-and-walkthroughs.md)   
- [Diseñador de cinta](../vsto/ribbon-designer.md)   
- [Información general sobre el modelo de objetos de cinta de opciones](../vsto/ribbon-object-model-overview.md)   
- [XML de la cinta](../vsto/ribbon-xml.md)   
- [Cómo: Exportar una cinta desde el Diseñador de cinta de opciones a XML de la cinta](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)   
- [Cómo: Cambiar la posición de una pestaña en la cinta de opciones](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)   
- [Cómo: Personalizar una pestaña integrada](../vsto/how-to-customize-a-built-in-tab.md)   
- [Cómo: Agregar controles a la vista backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)   
- [Personalizar una cinta de opciones para Outlook](../vsto/customizing-a-ribbon-for-outlook.md)   
- [Cómo: Introducción a la personalización de la cinta de opciones](../vsto/how-to-get-started-customizing-the-ribbon.md)   
- [Cómo: Mostrar errores de interfaz de usuario del complemento](../vsto/how-to-show-add-in-user-interface-errors.md)   
- [Tutorial: Crear una pestaña personalizada usando el Diseñador de cinta de opciones](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)   
- [Tutorial: Actualizar los controles de una cinta en tiempo de ejecución](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)   
- [Tutorial: Crear una pestaña personalizada usando XML de cinta de opciones](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)  
+  Puede agregar un selector de cuadro de diálogo a cualquier grupo de una cinta. Un selector de cuadro de diálogo es un pequeño icono que aparece en un grupo. Los usuarios, haga clic en este icono para abrir cuadros de diálogo relacionados o paneles de tareas que proporcionan más opciones que se relacionan con el grupo.
+
+ [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]
+
+### <a name="to-add-a-dialog-box-launcher-to-a-ribbon-group"></a>Para agregar un selector de cuadro de diálogo a un grupo de cinta de opciones
+
+1. Seleccione el archivo de código de la cinta de opciones (*.vb* o *.cs* archivo) en **el Explorador de soluciones**.
+
+2. En el **vista** menú, haga clic en **diseñador**.
+
+3. En el Diseñador de cinta de opciones, haga clic en cualquier grupo y, a continuación, haga clic en **agregar DialogBoxLauncher**.
+
+     Agregue código a la <xref:Microsoft.Office.Tools.Ribbon.RibbonGroup.DialogLauncherClick> eventos del grupo para abrir un cuadro de diálogo integrado o personalizado.
+
+## <a name="see-also"></a>Vea también
+- [Información general de la cinta de opciones](../vsto/ribbon-overview.md)
+- [Obtener acceso a la cinta de opciones en tiempo de ejecución](../vsto/accessing-the-ribbon-at-run-time.md)
+- [Tutoriales y ejemplos de desarrollo de office](../vsto/office-development-samples-and-walkthroughs.md)
+- [Diseñador de cinta](../vsto/ribbon-designer.md)
+- [Información general sobre el modelo de objetos de cinta de opciones](../vsto/ribbon-object-model-overview.md)
+- [Ribbon XML](../vsto/ribbon-xml.md)
+- [Cómo: Exportar una cinta desde el Diseñador de cinta de opciones a XML de la cinta](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)
+- [Cómo: Cambiar la posición de una pestaña en la cinta de opciones](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)
+- [Cómo: Personalizar una pestaña integrada](../vsto/how-to-customize-a-built-in-tab.md)
+- [Cómo: Agregar controles a la vista backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)
+- [Personalizar una cinta de opciones para Outlook](../vsto/customizing-a-ribbon-for-outlook.md)
+- [Cómo: Introducción a la personalización de la cinta de opciones](../vsto/how-to-get-started-customizing-the-ribbon.md)
+- [Cómo: Mostrar errores de interfaz de usuario del complemento](../vsto/how-to-show-add-in-user-interface-errors.md)
+- [Tutorial: Crear una pestaña personalizada usando el Diseñador de cinta de opciones](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
+- [Tutorial: Actualizar los controles de una cinta en tiempo de ejecución](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)
+- [Tutorial: Crear una pestaña personalizada usando XML de cinta de opciones](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)

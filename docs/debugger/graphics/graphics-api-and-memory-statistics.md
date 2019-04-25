@@ -8,15 +8,15 @@ f1_keywords:
 ms.assetid: 27d2f303-e3ed-4219-9009-345a0d849506
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 36feec786ba0bba71723073fb990054cc0206847
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7810889d4af411477573c71aa694d797a90763f3
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53916684"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56720606"
 ---
 # <a name="graphics-api-and-memory-statistics"></a>API de gráficos y estadísticas de memoria
 <!-- VERSIONLESS --> Visual Studio 2017 y mayor compatibilidad con las estadísticas de la API de gráficos y herramientas de estadísticas de memoria.  Ambas herramientas le permiten ver los distintos bits de información en uso de la API de Direct3D, así como el consumo de memoria GPU de diversos recursos.
@@ -39,7 +39,7 @@ El **GPU asignación** columna muestra la cantidad de memoria utilizada por el e
 
 Al igual que con la herramienta de estadísticas de API, hacer clic en la ventana para copiar todos los datos como CSV, que se puede pegar en algo parecido a Excel para su posterior análisis.
 
-## <a name="see-also"></a>Vea también  
-[Diagnóstico de gráficos (depuración de gráficos DirectX)](visual-studio-graphics-diagnostics.md)   
-[Historial de recursos](graphics-event-list.md#resource-history)
+## <a name="see-also"></a>Vea también
+- [Diagnóstico de gráficos (Depurar gráficos de DirectX)](visual-studio-graphics-diagnostics.md)
+- [Historial de recursos](graphics-event-list.md#resource-history)
 <!-- /VERSIONLESS -->

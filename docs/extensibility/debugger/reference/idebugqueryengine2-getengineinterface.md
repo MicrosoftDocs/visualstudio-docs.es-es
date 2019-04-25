@@ -1,7 +1,7 @@
 ---
 title: IDebugQueryEngine2::GetEngineInterface | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugQueryEngine2::GetEngineInterface
 helpviewer_keywords:
@@ -9,44 +9,45 @@ helpviewer_keywords:
 ms.assetid: ed84aa98-7ec7-48f3-97ae-821090bc3664
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 06d3608ea330e67ef96c4c4414473a208806ee3b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5b5ac40af5f508a00b010025f9851ee2a8933dfa
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53854833"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56720983"
 ---
 # <a name="idebugqueryengine2getengineinterface"></a>IDebugQueryEngine2::GetEngineInterface
-Obtiene una interfaz de motor DE depuración personalizado.  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```cpp  
-HRESULT GetEngineInterface(   
-   IUnknown** ppUnk  
-);  
-```  
-  
-```csharp  
-int GetEngineInterface(   
-   out object ppUnk  
-);  
-```  
-  
-#### <a name="parameters"></a>Parámetros  
- `ppUnk`  
- [out] Devuelve un `IUnknown` objeto representa el motor de depuración (DE) y que se puede consultar para cualquier otra interfaz válida asociada con una DE (por ejemplo [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) o [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md)).  
-  
-## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
-  
-## <a name="remarks"></a>Comentarios  
- La interfaz resultante debe usarse con cuidado, ya que realiza la llamada a través de interfaces que se recuperan de este método evita el procesamiento del Administrador de depuración de sesión y puede provocar el SDM introducción en mal estado o generan errores durante la depuración.  
-  
-## <a name="see-also"></a>Vea también  
- [IDebugQueryEngine2](../../../extensibility/debugger/reference/idebugqueryengine2.md)   
- [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)   
- [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md)
+Obtiene una interfaz de motor DE depuración personalizado.
+
+## <a name="syntax"></a>Sintaxis
+
+```cpp
+HRESULT GetEngineInterface( 
+   IUnknown** ppUnk
+);
+```
+
+```csharp
+int GetEngineInterface( 
+   out object ppUnk
+);
+```
+
+#### <a name="parameters"></a>Parámetros
+ `ppUnk`
+
+ [out] Devuelve un `IUnknown` objeto representa el motor de depuración (DE) y que se puede consultar para cualquier otra interfaz válida asociada con una DE (por ejemplo [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) o [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md)).
+
+## <a name="return-value"></a>Valor devuelto
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+
+## <a name="remarks"></a>Comentarios
+ La interfaz resultante debe usarse con cuidado, ya que realiza la llamada a través de interfaces que se recuperan de este método evita el procesamiento del Administrador de depuración de sesión y puede provocar el SDM introducción en mal estado o generan errores durante la depuración.
+
+## <a name="see-also"></a>Vea también
+- [IDebugQueryEngine2](../../../extensibility/debugger/reference/idebugqueryengine2.md)
+- [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)
+- [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md)

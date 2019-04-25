@@ -1,7 +1,6 @@
 ---
 title: Especificación de eventos de compilación personalizados
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 69e935a5-e208-4bcd-865c-3e5f9b047ca8
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e6c5bde6b6dce7655043f3dc766a5faa81fa944e
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: 66feaa25b9910a48e192e80798e50d80d861fb08
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53055133"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55940612"
 ---
 # <a name="specify-custom-build-events-in-visual-studio"></a>Especificar eventos de compilación personalizados en Visual Studio
 

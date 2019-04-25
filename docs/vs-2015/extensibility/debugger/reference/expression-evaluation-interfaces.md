@@ -1,26 +1,21 @@
 ---
 title: Interfaces de evaluación de expresión | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - expression evaluation, interfaces
 ms.assetid: 2d259f60-2cd7-460e-b02d-24a8fb202850
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 1c7365e17749d69d0dc36e06c3d11d053a44e94d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: bbd7eaa37ba54757b4073f164b47e46a7d665267
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51774847"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074407"
 ---
 # <a name="expression-evaluation-interfaces"></a>Interfaces de evaluación de expresiones
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -30,16 +25,16 @@ ms.locfileid: "51774847"
   
  Los siguientes son las Interfaces de evaluación de expresión para el [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] SDK de depuración.  
   
-## <a name="discussion"></a>Explicación  
+## <a name="discussion"></a>Discusión  
  Estas interfaces se usan para evaluar expresiones en una pila de llamadas durante el modo de interrupción. Se implementan únicamente para los evaluadores de expresiones en tiempo de ejecución de lenguaje común (EE).  
   
  Cada interfaz de la tabla muestra el componente que se puede implementar en la lista siguiente:  
   
--   (DE) del motor de depuración  
+- (DE) del motor de depuración  
   
--   Evaluador de expresiones (EE)  
+- Evaluador de expresiones (EE)  
   
--   Visual Studio (VS)  
+- Visual Studio (VS)  
   
 |Interfaz|Implementado por|Descripción|  
 |---------------|--------------------|-----------------|  
@@ -70,4 +65,3 @@ ms.locfileid: "51774847"
  [Referencia de API](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)   
  [Escribir un evaluador de expresiones CLR](../../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)   
  [Visualizador de tipo y visor personalizado](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)
-

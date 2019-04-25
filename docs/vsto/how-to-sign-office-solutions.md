@@ -9,24 +9,24 @@ helpviewer_keywords:
 - certificates [Office development in Visual Studio], Office solutions
 - security [Office development in Visual Studio], signing Office solutions
 - signing manifests [Office development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3aafdf24a6a2c5c5484291fb30b70a4ef1b7aa7e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1fff7555c17f4fdac43de2690f8e133cc32881db
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53829052"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101235"
 ---
 # <a name="how-to-sign-office-solutions"></a>Procedimiento Firmar soluciones de Office
   Si inicia sesión una solución, puede conceder confianza a la solución utilizando el certificado como prueba. Puede usar el mismo certificado para varias soluciones y todas las soluciones serán de confianza sin actualizaciones de directiva de seguridad adicional.
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
- Si edita manualmente la aplicación y los manifiestos de implementación mediante el uso de la herramienta de edición y generación de manifiesto (*mage.exe* y *mageui.exe*), deberá volver a firmar los manifiestos antes de usarlos. Para obtener más información, vea [Cómo: Volver a firmar manifiestos de aplicación e implementación](../deployment/how-to-re-sign-application-and-deployment-manifests.md).
+ Si edita manualmente la aplicación y los manifiestos de implementación mediante el uso de la herramienta de edición y generación de manifiesto (*mage.exe* y *mageui.exe*), deberá volver a firmar los manifiestos antes de usarlos. Para obtener más información, vea [Cómo: Repetición de la firma de manifiestos de implementación y aplicación](../deployment/how-to-re-sign-application-and-deployment-manifests.md).
 
 ## <a name="sign-by-using-a-certificate"></a>Inicie sesión con un certificado
  Un certificado es un archivo que contiene una clave única y la identidad del Editor de la solución. Puede adquirir certificados de una entidad de certificación, o crear su propio certificado y tiene una entidad de certificación de firmarlo.
@@ -35,15 +35,15 @@ ms.locfileid: "53829052"
 
 ### <a name="to-sign-an-office-solution-by-using-a-certificate"></a>Para iniciar sesión con un certificado de una solución de Office
 
-1.  En el **proyecto** menú, haga clic en _SolutionName_**propiedades**.
+1. En el **proyecto** menú, haga clic en _SolutionName_**propiedades**.
 
-2.  Haga clic en la pestaña **Firma**.
+2. Haga clic en la pestaña **Firma**.
 
-3.  Seleccione **firmar los manifiestos de ClickOnce**.
+3. Seleccione **firmar los manifiestos de ClickOnce**.
 
-4.  Busque el certificado, haga clic en **seleccione de Store** o **seleccionar del archivo** y navegar hasta el certificado.
+4. Busque el certificado, haga clic en **seleccione de Store** o **seleccionar del archivo** y navegar hasta el certificado.
 
-5.  Para comprobar que se está utilizando el certificado correcto, haga clic en **más detalles** para ver la información del certificado.
+5. Para comprobar que se está utilizando el certificado correcto, haga clic en **más detalles** para ver la información del certificado.
 
 ## <a name="see-also"></a>Vea también
 

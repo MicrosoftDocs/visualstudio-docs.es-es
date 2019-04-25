@@ -1,22 +1,21 @@
 ---
 title: Procedimientos recomendados para usar fragmentos de código
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - code snippets, best practices
 - code snippets, security
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d95b1b95d1859d29f82f7de45aa6ddb9cde7554f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3f106606ae00c8f22aa5948128afb8f7f27659a5
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53908923"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55933413"
 ---
 # <a name="best-practices-for-using-code-snippets"></a>Procedimientos recomendados para usar fragmentos de código
 

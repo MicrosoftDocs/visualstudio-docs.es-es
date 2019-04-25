@@ -2,7 +2,6 @@
 title: 'Inicio rápido: Usar Visual Studio para crear su primer servicio web de ASP.NET Core en F#'
 description: Aprenda a crear paso a paso un servicio web de ASP.NET Core en Visual Studio con F#.
 ms.date: 08/24/2018
-ms.prod: visual-studio-dev15
 ms.topic: quickstart
 author: cartermp
 ms.author: phcart
@@ -12,26 +11,28 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 9cdd97349732b4e228c77ce59990e47a396a0112
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f0fab988185efef6baf7e39c0b4250ada88b5fbd
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53961876"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58322249"
 ---
-# <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-service-in-f"></a>Inicio rápido: Usar Visual Studio para crear su primer servicio web de ASP.NET Core en F#
+# <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-service-in-f"></a>Inicio rápido: Usar Visual Studio para crear el primer servicio web de ASP.NET Core en F\#
 
 En esta introducción a F# en Visual Studio de unos 5 a 10 minutos, creará una aplicación web de ASP.NET Core en F#.
 
-Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) para instalarlo de forma gratuita.
+Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) para instalarlo de forma gratuita.
 
 ## <a name="create-a-project"></a>Crear un proyecto
 
 Primero creará un proyecto de API web de ASP.NET Core. En el tipo de proyecto se incluyen los archivos de plantilla, que constituyen un servicio web funcional por sí mismos, sin necesidad de agregar nada más.
 
-1. Abra Visual Studio 2017.
+::: moniker range="vs-2017"
 
-2. En la barra de menús superior, seleccione **Archivo** > **Nuevo** > **Proyecto**.
+1. Abra Visual Studio.
+
+2. En la barra de menús superior, elija **Archivo** > **Nuevo** > **Proyecto**.
 
 3. En el panel de la izquierda del cuadro de diálogo **Nuevo proyecto**, expanda **Visual F#** y seleccione **Web**. En el panel central, elija **Aplicación web ASP.NET Core** y después elija **Aceptar**.
 
@@ -39,7 +40,23 @@ Primero creará un proyecto de API web de ASP.NET Core. En el tipo de proyecto s
 
      ![Carga de trabajo ASP.NET en el instalador de Visual Studio](../ide/media/quickstart-aspnet-workload.png)
 
-4. En el cuadro de diálogo **Nueva aplicación web ASP.NET Core**, seleccione **ASP.NET Core 2.1** en el menú desplegable situado en la parte superior. Si en la lista no aparece **ASP.NET Core 2.1**, debe instalarlo siguiendo el vínculo **Descargar** que aparece en una barra amarilla en la parte superior del cuadro de diálogo. Elija **Aceptar**.
+4.En el cuadro de diálogo **Nueva aplicación web ASP.NET Core**, seleccione **ASP.NET Core 2.1** en el menú desplegable situado en la parte superior. Si en la lista no aparece **ASP.NET Core 2.1**, debe instalarlo siguiendo el vínculo **Descargar** que aparece en una barra amarilla en la parte superior del cuadro de diálogo. Elija **Aceptar**.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Abra Visual Studio.
+
+2. En la ventana de inicio, elija **Crear un proyecto nuevo**.
+
+3. En la página **Crear un proyecto nuevo**, escriba **f# web** en el cuadro de búsqueda y elija la plantilla de proyecto **Aplicación web de ASP.NET Core**. Seleccione **Siguiente**.
+
+4. En la página **Configure su nuevo proyecto**, escriba un nombre y elija **Crear**.
+
+5. En la página **Crear una aplicación web de ASP.NET Core**, seleccione **ASP.NET Core 2.1** en el menú desplegable superior y elija **Crear**.
+
+::: moniker-end
 
 ## <a name="explore-the-ide"></a>Explorar el IDE
 

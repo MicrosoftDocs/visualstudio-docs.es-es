@@ -1,20 +1,19 @@
 ---
 title: 'Paso 5: Agregar referencias a etiquetas'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: d418350c-0396-494e-8149-71fa61b395c5
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b8360e44109819a5de75e6262efcfb71fc10ade
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5b9d6e2786b2d917348818134c9e1cbe2767f7fb
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53830552"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55934346"
 ---
 # <a name="step-5-add-label-references"></a>Paso 5: Agregar referencias a etiquetas
 El programa necesita realizar un seguimiento de los controles Label que elige el jugador. De momento, el programa muestra todas las etiquetas elegidas por el jugador. Pero vamos a cambiar eso. Después de que se haga elegido la primera etiqueta, el programa debería mostrar el icono correspondiente. Una vez elegida la segunda etiqueta, el programa debe mostrar ambos iconos durante un breve período de tiempo y después ocultar ambos iconos de nuevo. El programa realizará ahora un seguimiento del control Label elegido en primer lugar y del control elegido en segundo lugar mediante *variables de referencia*.

@@ -1,13 +1,9 @@
 ---
 title: Soluciones y proyectos
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - vs.savedeferredsaveprojectonclose
 - vs.untrustedtemplateopeningdocuments
@@ -53,13 +49,13 @@ ms.assetid: aeaf56cb-c2dd-47f6-b012-23b84b7a7254
 caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a4e50e386be097338207a2ef66904347f9170d3b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: cd93fdc527e38b820bc7df6387ca6f8e9078bfd6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53905246"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045334"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Soluciones y proyectos en Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,7 +75,7 @@ Cuando cree una aplicación, una solicitud, un sitio web, una aplicación web, u
  También puede crear un proyecto y plantillas de elemento personalizados. Para obtener más información, vea [Crear plantillas para proyectos y elementos en Visual Studio](../ide/creating-project-and-item-templates.md).
 
 ## <a name="creating-new-projects"></a>Crear nuevos proyectos
- La manera más fácil de crear un nuevo proyecto es empezar con una plantilla de proyecto predefinida, que consiste en un conjunto básico de archivos de código generados previamente, archivos de configuración, activos y configuraciones que permiten comenzar a crear un tipo concreto de aplicación o sitio web en un lenguaje de programación determinado. Estas plantillas son las que puede ver en el **cuadro de diálogo Nuevo proyecto** cuando selecciona **Archivo &#124; Nuevo &#124; Proyecto** o **Archivo &#124; Nuevo &#124; Sitio web** en el menú principal y navega por él. Para obtener más información, vea [Crear soluciones y proyectos](../ide/creating-solutions-and-projects.md) y [NIB: Crear proyectos a partir de plantillas](http://msdn.microsoft.com/en-us/7c36d86a-6b79-4480-8228-0f925f1204b2).
+ La manera más fácil de crear un nuevo proyecto es empezar con una plantilla de proyecto predefinida, que consiste en un conjunto básico de archivos de código generados previamente, archivos de configuración, activos y configuraciones que permiten comenzar a crear un tipo concreto de aplicación o sitio web en un lenguaje de programación determinado. Estas plantillas son las que puede ver en el **cuadro de diálogo Nuevo proyecto** cuando selecciona **Archivo &#124; Nuevo &#124; Proyecto** o **Archivo &#124; Nuevo &#124; Sitio web** en el menú principal y navega por él. Para obtener más información, vea [Crear soluciones y proyectos](../ide/creating-solutions-and-projects.md) y [NIB: Crear proyectos a partir de plantillas](http://msdn.microsoft.com/7c36d86a-6b79-4480-8228-0f925f1204b2).
 
 ## <a name="managing-projects-in-solution-explorer"></a>Administración de proyectos en el Explorador de soluciones
  Después de crear un proyecto nuevo, use el **Explorador de soluciones** para ver y administrar proyectos, soluciones y los elementos que tienen asociados. La siguiente ilustración muestra el Explorador de servidores con una solución de C# que contiene dos proyectos.
@@ -88,23 +84,23 @@ Cuando cree una aplicación, una solicitud, un sitio web, una aplicación web, u
 
 ## <a name="in-this-section"></a>En esta sección
 
--   [Crear soluciones y proyectos](../ide/creating-solutions-and-projects.md)
+- [Crear soluciones y proyectos](../ide/creating-solutions-and-projects.md)
 
--   [Agregar y quitar elementos del proyecto](../ide/adding-and-removing-project-items.md)
+- [Agregar y quitar elementos del proyecto](../ide/adding-and-removing-project-items.md)
 
--   [Administrar propiedades de soluciones y proyectos](../ide/managing-project-and-solution-properties.md)
+- [Administrar propiedades de soluciones y proyectos](../ide/managing-project-and-solution-properties.md)
 
--   [Administrar referencias en un proyecto](../ide/managing-references-in-a-project.md)
+- [Administrar referencias en un proyecto](../ide/managing-references-in-a-project.md)
 
--   [Administrar las propiedades de la aplicación](../ide/application-properties.md)
+- [Administrar las propiedades de la aplicación](../ide/application-properties.md)
 
--   [Administrar la firma de ensamblados y manifiestos](../ide/managing-assembly-and-manifest-signing.md)
+- [Administrar la firma de ensamblados y manifiestos](../ide/managing-assembly-and-manifest-signing.md)
 
--   [Cómo: especificar un icono de aplicación (Visual Basic, C#)](../ide/how-to-specify-an-application-icon-visual-basic-csharp.md)
+- [Cómo: Especificar el icono de una aplicación (Visual Basic, C#)](../ide/how-to-specify-an-application-icon-visual-basic-csharp.md)
 
--   [Elegir una versión específica de .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md)
+- [Elegir una versión específica de .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md)
 
--   [Crear plantillas para proyectos y elementos en Visual Studio](../ide/creating-project-and-item-templates.md)
+- [Crear plantillas para proyectos y elementos en Visual Studio](../ide/creating-project-and-item-templates.md)
 
 ## <a name="see-also"></a>Vea también
  [IDE de Visual Studio](../ide/visual-studio-ide.md)

@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Deshabilitar la activación de direcciones URL de aplicaciones ClickOnce | Microsoft Docs
+title: Procedimiento Deshabilitar la activación de direcciones URL de aplicaciones ClickOnce | Documentos de Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: db31a16b-960f-4264-91d7-c7c40f876068
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 611bb0d2c3c828be5f8eaa10f3baeaafca1c8f37
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 6841b8a91cec24f467f6e3f684cbb27e25c9fa63
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53854781"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045621"
 ---
 # <a name="how-to-disable-url-activation-of-clickonce-applications"></a>Procedimiento Desactivación de la activación de URL de aplicaciones ClickOnce
 
@@ -29,19 +29,19 @@ Normalmente, una aplicación [!INCLUDE[ndptecclick](../deployment/includes/ndpte
 
 Esta técnica se puede utilizar solo para las aplicaciones [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] instaladas en el equipo del usuario desde un servidor web. No se puede utilizar para aplicaciones solo en línea, que se pueden iniciar utilizando su dirección URL. Para obtener más información acerca de la diferencia entre las aplicaciones solo en línea e instaladas, consulte [Elegir una estrategia de implementación de ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md).
 
-Este procedimiento usa la herramienta de Kit de desarrollo de Software (SDK) de Windows MageUI.exe. Para obtener más información sobre esta herramienta, consulte [MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client). También puede realizar este procedimiento con Visual Studio.
+Este procedimiento usa la herramienta de Kit de desarrollo de Software (SDK) de Windows MageUI.exe. Para obtener más información sobre esta herramienta, consulte [MageUI.exe (Herramienta de generación y edición de manifiestos, cliente gráfico)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client). También puede realizar este procedimiento con Visual Studio.
 
 ## <a name="procedure"></a>Procedimiento
 
 ### <a name="to-disable-url-activation-for-your-application"></a>Deshabilitar la activación de direcciones URL para la aplicación
 
-1.  Abra el manifiesto de implementación en MageUI.exe. Si aún no ha creado uno, siga los pasos descritos en [Tutorial: Implementar manualmente una aplicación ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
+1. Abra el manifiesto de implementación en MageUI.exe. Si aún no ha creado uno, siga los pasos descritos en [Tutorial: Implementar manualmente una aplicación ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
 
-2.  Seleccione la pestaña **Opciones de implementación**.
+2. Seleccione la pestaña **Opciones de implementación**.
 
-3.  Desactive la casilla de verificación **Ejecutar automáticamente la aplicación después de instalarla**.
+3. Desactive la casilla de verificación **Ejecutar automáticamente la aplicación después de instalarla**.
 
-4.  Guarde y firme el manifiesto.
+4. Guarde y firme el manifiesto.
 
 ## <a name="see-also"></a>Vea también
 

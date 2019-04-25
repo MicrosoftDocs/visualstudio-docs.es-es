@@ -1,26 +1,21 @@
 ---
 title: En el Editor básico | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - core editor
 ms.assetid: 8265f31c-c45b-4858-882c-6d9f1e3b9083
 caps.latest.revision: 22
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9aca4bb8ad55dbd4cac0a6f899731711ccb6db8f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: cf9bc42aec3aac5acc996487f99c7e1f29ca252c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798552"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083366"
 ---
 # <a name="inside-the-core-editor"></a>En el Editor básico
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,17 +24,17 @@ El [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] editor básico es un conjunto de
   
  Las áreas siguientes son algunos aspectos importantes del editor de núcleo:  
   
--   Búfer de texto  
+- Búfer de texto  
   
--   Vista de texto  
+- Vista de texto  
   
--   Ventana Código  
+- Ventana Código  
   
--   Marcadores de texto  
+- Marcadores de texto  
   
--   Administrador de texto  
+- Administrador de texto  
   
--   Integración con servicios de lenguaje  
+- Integración con servicios de lenguaje  
   
 ## <a name="in-this-section"></a>En esta sección  
  [Creación de instancias del editor principal mediante la API heredada](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md)  
@@ -70,7 +65,7 @@ El [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] editor básico es un conjunto de
  Describe la creación de instancias de un servicio de lenguaje decoraciones del código de control.  
   
 ## <a name="related-sections"></a>Secciones relacionadas  
- [Tutorial: Crear un editor principal y registrar un tipo de archivo del editor](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)  
+ [Tutorial: Crear un Editor de núcleo y registrar un tipo de archivo del Editor](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)  
  Proporciona instrucciones paso a paso sobre cómo iniciar el editor básico desde el código administrado.  
   
  [Barra desplegable](../extensibility/drop-down-bar.md)  
@@ -82,6 +77,5 @@ El [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] editor básico es un conjunto de
  [Cómo: Agregar marcadores de texto estándar](../extensibility/how-to-add-standard-text-markers.md)  
  Proporciona instrucciones paso a paso sobre cómo crear un marcador de texto y cómo agregar un comando personalizado a un menú contextual.  
   
- [Cómo: Crear marcadores de texto personalizados](../extensibility/how-to-create-custom-text-markers.md)  
+ [Cómo: Crear marcadores de texto personalizado](../extensibility/how-to-create-custom-text-markers.md)  
  Proporciona instrucciones paso a paso sobre cómo crear un marcador de texto personalizado y cómo proporcionar el tipo de marcador como un servicio.
-

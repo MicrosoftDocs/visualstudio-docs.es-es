@@ -1,14 +1,9 @@
 ---
 title: Comando Replace | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - edit.replace
 helpviewer_keywords:
@@ -18,18 +13,17 @@ ms.assetid: a15767f1-5a3d-44f5-8c77-7b0f1157f340
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 83281a656d553dfa677d7ae25bf043fc0b588978
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4ef58a39f1ff96a3c72cbb5a48940e378997cbca
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49283210"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664497"
 ---
 # <a name="replace-command"></a>Reemplazar (Comando)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Reemplaza texto de los archivos mediante el uso de un subconjunto de las opciones disponibles en la pestaña **Reemplazar en archivos** de la ventana **Buscar y reemplazar**.  
   
 ## <a name="syntax"></a>Sintaxis  
@@ -42,10 +36,10 @@ Edit.Replace findwhat replacewith [/all] [/case]
   
 ## <a name="arguments"></a>Argumentos  
  `findwhat`  
- Requerido. Texto que debe coincidir.  
+ Obligatorio. Texto que debe coincidir.  
   
  `replacewith`  
- Requerido. Texto que va a sustituir el texto coincidente.  
+ Obligatorio. Texto que va a sustituir el texto coincidente.  
   
 ## <a name="switches"></a>Modificadores  
  /all o /a  
@@ -100,6 +94,3 @@ Edit.Replace findwhat replacewith [/all] [/case]
  [Cuadro Buscar/Comando](../../ide/find-command-box.md)   
  [Comandos de Visual Studio](../../ide/reference/visual-studio-commands.md)   
  [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
-
-
-

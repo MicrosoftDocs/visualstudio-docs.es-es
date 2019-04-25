@@ -1,7 +1,6 @@
 ---
 title: Opciones de formato del editor de U-SQL
 ms.date: 01/17/2019
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.U-SQL.Formatting.Spacing
@@ -11,15 +10,15 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.U-SQL.Formatting.General
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e0afd9a8ba99ca7b1c167042bc1bbd03da93af1
-ms.sourcegitcommit: d0b02affd24e66efed924c197824f35f823e3240
+ms.openlocfilehash: 6c402033efe31b4cbbddbe02b73aec7be08914fc
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/21/2019
-ms.locfileid: "54418064"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55955471"
 ---
 # <a name="options-text-editor-u-sql-formatting"></a>Opciones, Editor de texto, U-SQL, formato
 

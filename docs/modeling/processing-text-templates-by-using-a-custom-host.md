@@ -7,16 +7,15 @@ helpviewer_keywords:
 - text templates, custom directive hosts
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 12c443879ebbe142dde69a713d214c3b79b254ea
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e72b279d55cbe11f6232ff1f91c8fee443d9c283
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53865445"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55910941"
 ---
 # <a name="process-text-templates-by-using-a-custom-host"></a>Procesar plantillas de texto mediante un host personalizado
 

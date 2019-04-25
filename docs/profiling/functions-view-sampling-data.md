@@ -8,39 +8,39 @@ helpviewer_keywords:
 ms.assetid: 029d5ebb-e551-46b0-b64e-2c553d9dbb8e
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1f45c2437a1bf1f5d0c81d91bced3f26a6faaad
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c734c7eb5ad6aed489d1c6d2ffb8cd774be6fdd7
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942585"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56624326"
 ---
 # <a name="functions-view---sampling-data"></a>Vista Funciones: datos de muestreo
-La vista de informe de funciones para el método de perfiles de muestreo enumera las funciones que se muestrearon durante la ejecución de generación de perfiles.  
-  
+La vista de informe de funciones para el método de perfiles de muestreo enumera las funciones que se muestrearon durante la ejecución de generación de perfiles.
+
 > [!NOTE]
->  Las características de seguridad mejoradas en Windows 8 y Windows Server 2012 requirieron cambios significativos en la forma en que el generador de perfiles de Visual Studio recopila datos en estas plataformas. Las aplicaciones para UWP también requieren nuevas técnicas de recopilación. Consulte [Herramientas de rendimiento en aplicaciones de Windows 8 y Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
-  
-|Columna|Descripción|  
-|------------|-----------------|  
-|**Identificador del proceso**|Identificador de proceso (PID) de la ejecución de generación de perfiles.|  
-|**Nombre de proceso**|Nombre del proceso.|  
-|**Nombre del módulo**|Nombre del módulo que contiene la función.|  
-|**Ruta de acceso del módulo**|Ruta de acceso del módulo que contiene la función.|  
-|**Archivo de código fuente**|Archivo de origen que contiene la definición de esta función.|  
-|**Nombre de la función**|El nombre completo de la función.|  
-|**Número de línea de la función**|Número de línea del inicio de esta función en el archivo de origen.|  
-|**Dirección de la función**|Dirección de la función.|  
-|**Muestras inclusivas**|El número total de muestras recopiladas cuando se estaba ejecutando esta función; es decir, el número de muestras recopiladas cuando esta función estaba en la pila de llamadas. El número incluye las muestras recopiladas cuando se ejecutaban funciones a las que llamó esta función.|  
-|**Porcentaje de muestras inclusivas**|El porcentaje de todas las muestras de la ejecución de generación de perfiles que fueron muestras inclusivas de esta función.|  
-|**Muestras exclusivas**|El número total de muestras recopiladas cuando se estaba ejecutando código en el cuerpo de esta función; es decir, cuando esta función estaba en la parte superior de la pila de llamadas. Las muestras recopiladas en funciones a las que llamó esta función no se incluyen.|  
-|**Porcentaje de muestras exclusivas**|El porcentaje de todas las muestras de la ejecución de generación de perfiles que fueron muestras exclusivas de esta función.|  
-  
-## <a name="see-also"></a>Vea también  
- [Cómo: Personalizar las columnas de la vista de informes](../profiling/how-to-customize-report-view-columns.md)   
- [Vista Funciones: instrumentación](../profiling/functions-view-dotnet-memory-instrumentation-data.md)   
- [Vista Funciones: muestreo](../profiling/functions-view-dotnet-memory-sampling-data.md)   
- [Vista Funciones](../profiling/functions-view-instrumentation-data.md)
+>  Las características de seguridad mejoradas en Windows 8 y Windows Server 2012 requirieron cambios significativos en la forma en que el generador de perfiles de Visual Studio recopila datos en estas plataformas. Las aplicaciones para UWP también requieren nuevas técnicas de recopilación. Consulte [Herramientas de rendimiento en aplicaciones de Windows 8 y Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
+
+|Columna|Descripción|
+|------------|-----------------|
+|**Identificador del proceso**|Identificador de proceso (PID) de la ejecución de generación de perfiles.|
+|**Nombre de proceso**|Nombre del proceso.|
+|**Nombre del módulo**|Nombre del módulo que contiene la función.|
+|**Ruta de acceso del módulo**|Ruta de acceso del módulo que contiene la función.|
+|**Archivo de código fuente**|Archivo de origen que contiene la definición de esta función.|
+|**Nombre de la función**|El nombre completo de la función.|
+|**Número de línea de la función**|Número de línea del inicio de esta función en el archivo de origen.|
+|**Dirección de la función**|Dirección de la función.|
+|**Muestras inclusivas**|El número total de muestras recopiladas cuando se estaba ejecutando esta función; es decir, el número de muestras recopiladas cuando esta función estaba en la pila de llamadas. El número incluye las muestras recopiladas cuando se ejecutaban funciones a las que llamó esta función.|
+|**Porcentaje de muestras inclusivas**|El porcentaje de todas las muestras de la ejecución de generación de perfiles que fueron muestras inclusivas de esta función.|
+|**Muestras exclusivas**|El número total de muestras recopiladas cuando se estaba ejecutando código en el cuerpo de esta función; es decir, cuando esta función estaba en la parte superior de la pila de llamadas. Las muestras recopiladas en funciones a las que llamó esta función no se incluyen.|
+|**Porcentaje de muestras exclusivas**|El porcentaje de todas las muestras de la ejecución de generación de perfiles que fueron muestras exclusivas de esta función.|
+
+## <a name="see-also"></a>Vea también
+- [Cómo: Personalizar las columnas de la vista de informes](../profiling/how-to-customize-report-view-columns.md)
+- [Vista Funciones: instrumentación](../profiling/functions-view-dotnet-memory-instrumentation-data.md)
+- [Vista Funciones: muestreo](../profiling/functions-view-dotnet-memory-sampling-data.md)
+- [Vista Funciones](../profiling/functions-view-instrumentation-data.md)

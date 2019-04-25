@@ -1,22 +1,24 @@
 ---
 layout: LandingPage
 title: Cálculo del rendimiento de las aplicaciones con la generación de perfiles | Microsoft Docs
-description: Aprenda a usar Visual Studio 2017 para crear perfiles del rendimiento de las aplicaciones, los servicios y las herramientas en el idioma de su elección.
+description: Aprenda a usar Visual Studio para crear perfiles del rendimiento de las aplicaciones, los servicios y las herramientas en el idioma de su elección.
 ms.custom: seodec18
 ms.topic: landing-page
 author: mikejo5000
 ms.author: mikejo
-manager: douge
-ms.openlocfilehash: ced28177670ab33916701858bfae36fa860a357f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: e47f44a78fbd8632b834c46c451f5f3106c85fcd
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53886454"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323013"
 ---
 # <a name="measure-app-performance-in-visual-studio"></a>Cálculo del rendimiento de las aplicaciones en Visual Studio
 
-La generación de perfiles y las herramientas de diagnóstico le ayudan a diagnosticar el uso de CPU y memoria, y otros problemas de nivel de aplicación. Con estas herramientas, puede acumular datos (como valores de variables, llamadas a funciones y eventos) durante el tiempo que se ejecute la aplicación en el depurador. Puede ver el estado de su aplicación en distintos momentos de la ejecución del código. 
+La generación de perfiles y las herramientas de diagnóstico le ayudan a diagnosticar el uso de CPU y memoria, y otros problemas de nivel de aplicación. Con estas herramientas, puede acumular datos (como valores de variables, llamadas a funciones y eventos) durante el tiempo que se ejecute la aplicación en el depurador. Puede ver el estado de su aplicación en distintos momentos de la ejecución del código.
+
+<!-- markdownlint-disable MD033 -->
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -49,24 +51,6 @@ La generación de perfiles y las herramientas de diagnóstico le ayudan a diagno
                     </div>
                     <div class="cardText">
                         <h3>Introducción a las herramientas de diagnóstico (uso de la CPU)</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Profiling-with-Diagnostics-Tools-in-Visual-Studio-2017-daHnzMD6D_9211787171">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="/media/common/i_video.svg" alt="Watch a Video on the Diagnostics Tools">
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Vídeo sobre las herramientas de diagnóstico</h3>
                     </div>
                 </div>
             </div>

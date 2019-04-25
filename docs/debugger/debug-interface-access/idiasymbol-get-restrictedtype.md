@@ -7,32 +7,33 @@ dev_langs:
 ms.assetid: c48b00a6-26b0-47b0-b824-fe44dedbc756
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9753fa8d500fcd1b38593b5b2f1f985452340dfa
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f8929414c0e36983d378ea2a801803321f3aa88c
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53953175"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56598198"
 ---
 # <a name="idiasymbolgetrestrictedtype"></a>IDiaSymbol::get_restrictedType
-Especifica si el `this` puntero se marca como restringido.  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```C++  
-HRESULT get_restrictedType(   
-   BOOL* pRetVal);  
-```  
-  
-#### <a name="parameters"></a>Parámetros  
- `pRetVal`  
- [out] Un puntero a un `BOOL` que especifica si el `this` puntero se marca como restringido.  
-  
-## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
-  
-## <a name="see-also"></a>Vea también  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+Especifica si el `this` puntero se marca como restringido.
+
+## <a name="syntax"></a>Sintaxis
+
+```C++
+HRESULT get_restrictedType(
+   BOOL* pRetVal);
+```
+
+#### <a name="parameters"></a>Parámetros
+ `pRetVal`
+
+[out] Un puntero a un `BOOL` que especifica si el `this` puntero se marca como restringido.
+
+## <a name="return-value"></a>Valor devuelto
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.
+
+## <a name="see-also"></a>Vea también
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

@@ -1,14 +1,9 @@
 ---
 title: Capacidad de respuesta de la interfaz de usuario HTML | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -24,13 +19,13 @@ ms.assetid: da13070a-ba40-47dd-a846-ad72eed70d0b
 caps.latest.revision: 52
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 63027ccfffde0aa3b62bae6c1529826fd9b26c71
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+manager: jillfra
+ms.openlocfilehash: 9b12906c5a1a2f8e2473d2b0088600830a291744
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "51760715"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58151185"
 ---
 # <a name="html-ui-responsiveness"></a>Capacidad de respuesta de IU HTML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,7 +74,7 @@ En este tema se describe cómo aislar los problemas de rendimiento en sus aplica
 6.  Para detener la generación de perfiles de la aplicación y ver los datos recopilados por el generador de perfiles, elige **Detener colección**.  
   
 ##  <a name="IsolateAnIssue"></a> Aislar un problema  
- En la siguiente sección se proporcionan sugerencias para ayudarte a aislar problemas de rendimiento. Para obtener una explicación paso a paso de cómo identificar y corregir problemas de rendimiento con una aplicación de pruebas de rendimiento de ejemplo, vea [Tutorial: Mejorar la capacidad de respuesta de la interfaz de usuario (HTML)](../profiling/walkthrough-improving-ui-responsiveness-html.md).  
+ En la siguiente sección se proporcionan sugerencias para ayudarte a aislar problemas de rendimiento. Para obtener una explicación paso a paso de cómo identificar y corregir problemas de rendimiento con una aplicación de prueba de rendimiento de ejemplo, consulte [Tutorial: Mejorar la capacidad de respuesta de la interfaz de usuario (HTML)](../profiling/walkthrough-improving-ui-responsiveness-html.md).  
   
 ###  <a name="Workflow"></a> Aislar un problema de capacidad de respuesta de la IU  
  Estos pasos proporcionan un flujo de trabajo sugerido que puede ayudarte a utilizar el generador de perfiles de la capacidad de respuesta de la IU de forma más eficaz:  
@@ -111,7 +106,7 @@ En este tema se describe cómo aislar los problemas de rendimiento en sus aplica
   
     -   Use la [Ver la escala de tiempo de la sesión de diagnóstico](#Ruler) para ver [Marcar código para el análisis](#ProfileMark), eventos del ciclo de vida de la aplicación y la escala de tiempo asociada a estos eventos, así como la de los datos de los gráficos restantes.  
   
-    -   Utilice [CPU utilization graph](#CPUutilization) para ver información general sobre la actividad de la CPU y el tipo de trabajo que lleva a cabo durante un período de tiempo concreto. En los períodos en los que hay una actividad excesiva de la CPU es más probable que se produzcan problemas de la capacidad de respuesta y fotogramas descartados.  
+    -   Utilice [CPU utilization graph](#CPUUtilization) para ver información general sobre la actividad de la CPU y el tipo de trabajo que lleva a cabo durante un período de tiempo concreto. En los períodos en los que hay una actividad excesiva de la CPU es más probable que se produzcan problemas de la capacidad de respuesta y fotogramas descartados.  
   
     -   Si está desarrollando un juego o una aplicación multimedia compleja, use el [Ver el rendimiento visual (FPS)](#VisualThroughput) para identificar los períodos de tiempo en los que disminuyó la velocidad de los fotogramas.  
   
@@ -198,7 +193,7 @@ if (performance.mark && performance.measure) {
 -   Un evento de navegación, que se produce cuando navegas a otra página. La información sobre herramientas del evento muestra la dirección URL de la página de destino.  
   
 ###  <a name="CPUUtilization"></a> Ver uso de CPU  
- El gráfico de uso de CPU te permite identificar los períodos de tiempo en los que hay una actividad excesiva de la CPU. Proporciona información sobre el promedio de consumo de CPU de la aplicación durante un período de tiempo. La información está codificada por colores para representar las siguientes categorías específicas: **Cargando**, **Scripting**, recolección de elementos no utilizados (**GC**), **Aplicación de estilos**, **Representación** y **Descodificación de imágenes**. Para obtener más información sobre estas categorías, consulte [Profiler event reference](#ProfilerEvents) en este tema.  
+ El gráfico de uso de CPU te permite identificar los períodos de tiempo en los que hay una actividad excesiva de la CPU. Proporciona información sobre el promedio de consumo de CPU de la aplicación durante un período de tiempo. La información está codificada por colores para representar las categorías específicas siguientes: **Carga**, **Scripting**, recolección de elementos no utilizados (**GC**), **Aplicación de estilos**, **Representación**y **Descodificación de imágenes**. Para obtener más información sobre estas categorías, consulte [Profiler event reference](#ProfilerEvents) en este tema.  
   
  El gráfico de uso de CPU muestra la cantidad de tiempo empleado en todos los subprocesos de la aplicación, agrupando valores de uso de CPU de una o más CPU en un único valor de porcentaje. El valor de uso de CPU puede superar el cien por cien si se utilizan varias CPU.  
   
@@ -369,6 +364,3 @@ if (performance.mark && performance.measure) {
   
 ## <a name="see-also"></a>Vea también  
  [Analizar el rendimiento de las aplicaciones](http://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)
-
-
-

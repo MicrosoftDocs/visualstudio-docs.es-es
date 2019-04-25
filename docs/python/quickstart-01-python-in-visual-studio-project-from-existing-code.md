@@ -2,25 +2,24 @@
 title: 'Inicio rápido: Crear un proyecto de Python a partir del código existente'
 description: En este tutorial, creará un proyecto de Visual Studio para Python a partir de una carpeta existente, mediante una plantilla adecuada.
 ms.date: 12/06/2018
-ms.prod: visual-studio-dev15
 ms.topic: quickstart
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e26768c3e18fb12ca97e2875dec6ab84cb0344ac
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8fbbd8c49ecc367a0dd01d9ab775735b93174fe6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53965512"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62429085"
 ---
 # <a name="quickstart-create-a-python-project-from-existing-code"></a>Inicio rápido: Creación de un proyecto de Python a partir del código existente
 
-Una vez que haya [instalado la compatibilidad con Python en Visual Studio 2017](installing-python-support-in-visual-studio.md), es fácil incorporar el código Python existente a un proyecto de Visual Studio.
+Cuando se ha [instalado la compatibilidad con Python en Visual Studio](installing-python-support-in-visual-studio.md), resulta fácil incorporar el código Python existente a un proyecto de Visual Studio.
 
 > [!Important]
 > El proceso que se describe aquí no mueve ni copia los archivos de código fuente originales. Si quiere trabajar con una copia, duplique primero la carpeta.

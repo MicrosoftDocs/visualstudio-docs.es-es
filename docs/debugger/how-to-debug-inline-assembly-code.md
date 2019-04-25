@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Depurar código ensamblador en línea | Microsoft Docs
+title: Procedimiento Depurar código ensamblador en línea | Documentos de Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: cc5664e0-0b38-40c1-bb65-04ae720c2adb
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e0bf97141b78079c8080fb4b624c524ee0a6065f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 87e76b2668d8777c46404f0b304eeb56d1821bb8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935429"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094905"
 ---
 # <a name="how-to-debug-inline-assembly-code"></a>Procedimiento Depuración del código de ensamblado en línea
 
@@ -33,11 +33,11 @@ ms.locfileid: "53935429"
 
 El depurador proporciona dos ventanas para depurar código de ensamblado en línea: la ventana **Desensamblado** y la ventana **Registros**.
 
-## <a name="debug-inline-assembly-code"></a>Depuración de código de ensamblado en línea
+## <a name="debug-inline-assembly-code"></a>Depurar código de ensamblado en línea
 
-1.  Utilice la ventana **Desensamblado** para ver las instrucciones de ensamblado.
+1. Utilice la ventana **Desensamblado** para ver las instrucciones de ensamblado.
 
-2.  Utilice la ventana **Registros** para ver el contenido de los registros.
+2. Utilice la ventana **Registros** para ver el contenido de los registros.
 
 ## <a name="see-also"></a>Vea también
 

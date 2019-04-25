@@ -1,20 +1,19 @@
 ---
 title: L2DBForm.xaml.cs Source Code
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: sample
 ms.assetid: 5a40dad3-6763-4576-b3ad-874df3f2c8d9
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a99effa4820b33e860d44889bc67ba48ee9b590a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d6f0e70111c557be038e73c05ef7a1578493002d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53960503"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55951324"
 ---
 # <a name="l2dbformxamlcs-source-code"></a>Código fuente de L2DBForm.xaml.cs
 

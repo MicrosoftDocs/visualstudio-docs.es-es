@@ -1,14 +1,9 @@
 ---
 title: Crear vistas personalizadas de los objetos nativos | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - natvis
 dev_langs:
@@ -20,13 +15,13 @@ ms.assetid: 2d9a177a-e14b-404f-a6af-49498eff0bd7
 caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ff03e5e07c07b4516009c7606f8a8ea183c57298
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e44e8166fb4f03f28d96203dc7efc09d3913224c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51732493"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086200"
 ---
 # <a name="create-custom-views-of-native-objects"></a>Crear vistas personalizadas de los objetos nativos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,10 +34,10 @@ El marco Natvis de Visual Studio permite personalizar la manera en que Visual St
 >  No se puede usar el marco Natvis para las visualizaciones en los siguientes casos:  
 > 
 > - Está depurando un proyecto de escritorio de Windows de C++ con el tipo de depurador establecido en **mixto**.  
->   -   Está efectuando una depuración en modo mixto en una aplicación de escritorio de Windows en modo de compatibilidad administrado (**Herramientas / Opciones / Depuración / General / Usar modo de compatibilidad administrado**).  
->   -   Está efectuando una depuración en una aplicación de escritorio de Windows en modo de compatibilidad nativa (**Herramientas / Opciones / Depuración / General / Usar el modo de compatibilidad nativa**).  
+>   - Está efectuando una depuración en modo mixto en una aplicación de escritorio de Windows en modo de compatibilidad administrado (**Herramientas / Opciones / Depuración / General / Usar modo de compatibilidad administrado**).  
+>   - Está efectuando una depuración en una aplicación de escritorio de Windows en modo de compatibilidad nativa (**Herramientas / Opciones / Depuración / General / Usar el modo de compatibilidad nativa**).  
 
-##  <a name="BKMK_Why_create_visualizations_"></a> ¿Por qué crear visualizaciones de Natvis?  
+## <a name="BKMK_Why_create_visualizations_"></a> ¿Por qué crear visualizaciones de Natvis?  
  Puede usar el marco Natvis para crear reglas de visualización para los tipos creados, de manera que los desarrolladores puedan verlas fácilmente durante la depuración.  
 
  Por ejemplo, en la imagen siguiente se muestra una variable de tipo [Windows::UI::Xaml::Controls::TextBox](http://go.microsoft.com/fwlink/?LinkId=258422) que se muestra en el depurador sin aplicar ninguna visualización personalizada.  
@@ -55,7 +50,7 @@ El marco Natvis de Visual Studio permite personalizar la manera en que Visual St
 
  ![Datos de cuadro de texto mediante el visualizador](../debugger/media/dbg-natvis-textbox-visualizer.png "DBG_NATVIS_TextBox_Visualizer")  
 
-##  <a name="BKMK_Using_Natvis_files"></a> Usar archivos Natvis  
+## <a name="BKMK_Using_Natvis_files"></a> Usar archivos Natvis  
  Los archivos .natvis son archivos XML con una extensión .natvis. El esquema se define en **%VSINSTALLDIR%\Xml\Schemas\natvis.xsd**.  
 
  La estructura básica de un archivo .natvis consta de uno o más elementos `Type` , donde cada elemento `Type` representa una entrada de visualización para un tipo cuyo nombre completo se especifica en el atributo `Name` .  
@@ -87,18 +82,18 @@ El marco Natvis de Visual Studio permite personalizar la manera en que Visual St
 
  Los archivos Natvis que se cargan desde un archivo .pdb solo se aplican a los tipos del módulo al que hace referencia el archivo .pdb. Por ejemplo, si Module1.pdb define una entrada para un tipo denominado `Test`, esta entrada solo se aplica a la clase **Test** de Module1.dll. Si hay otro módulo que también define una clase denominada **Test**, la entrada natvis de Module1.pdb no se aplica a este.  
 
-##  <a name="BKMK_natvis_location"></a> Implementar archivos .natvis  
+## <a name="BKMK_natvis_location"></a> Implementar archivos .natvis  
  Si el archivo .natvis solo se aplica a los tipos que está creando en un proyecto de Visual Studio, no tiene que hacer nada; el archivo .natvis se incluye en el archivo .pdb. No obstante, puede agregar archivos .natvis al directorio del usuario o a un directorio del sistema si desea aplicarlos a varios proyectos.  
 
  El orden de evaluación de los archivos .natvis es el siguiente:  
 
-1.  Archivos .natvis insertados en un archivo .pdb que está depurando (a menos que exista un archivo con el mismo nombre en un proyecto cargado).  
+1. Archivos .natvis insertados en un archivo .pdb que está depurando (a menos que exista un archivo con el mismo nombre en un proyecto cargado).  
 
-2.  Archivos .natvis que forman parte de un proyecto de C++ cargado o de un elemento de la solución de nivel superior. Se incluyen todos los proyectos de C++ cargados, incluidas las bibliotecas de clases, pero no los proyectos de otros lenguajes (por ejemplo, no puede cargar un archivo .natvis desde un proyecto de C#). Para los proyectos ejecutables, debe usar los elementos de la solución para hospedar los archivos .natvis que no estén presentes en un archivo .pdb, ya que no hay ningún proyecto de C++ disponible.  
+2. Archivos .natvis que forman parte de un proyecto de C++ cargado o de un elemento de la solución de nivel superior. Se incluyen todos los proyectos de C++ cargados, incluidas las bibliotecas de clases, pero no los proyectos de otros lenguajes (por ejemplo, no puede cargar un archivo .natvis desde un proyecto de C#). Para los proyectos ejecutables, debe usar los elementos de la solución para hospedar los archivos .natvis que no estén presentes en un archivo .pdb, ya que no hay ningún proyecto de C++ disponible.  
 
-3.  El directorio de Natvis específico de usuario (**%USERPROFILE%\My Documents\Visual Studio 2015\Visualizers**).  
+3. El directorio de Natvis específico de usuario (**%USERPROFILE%\My Documents\Visual Studio 2015\Visualizers**).  
 
-4.  El directorio de Natvis de todo el sistema (**%VSINSTALLDIR%\Common7\Packages\Debugger\Visualizers**). Ubicación donde se copian los archivos .natvis instalados con Visual Studio. También puede agregar otros archivos a este directorio si cuenta con permisos de administrador.  
+4. El directorio de Natvis de todo el sistema (**%VSINSTALLDIR%\Common7\Packages\Debugger\Visualizers**). Ubicación donde se copian los archivos .natvis instalados con Visual Studio. También puede agregar otros archivos a este directorio si cuenta con permisos de administrador.  
 
 ## <a name="modifying-natvis-files-while-debugging"></a>Modificar archivos .natvis durante la depuración  
  Es posible modificar un archivo .natvis en el IDE mientras se depura el proyecto en el que está incluido. Abra el archivo en el IDE (con la misma instancia de Visual Studio con la que está efectuando la depuración), modifíquelo y guárdelo. Cuando haya guardado el archivo, debe actualizar las ventanas **Inspección** y **Locales** para reflejar el cambio. Si modifica el archivo .natvis fuera del IDE, los cambios no surtirán efecto automáticamente. Para actualizar las ventanas, puede evaluar el comando **.natvisreload** en la ventana **Inspección** . Esto hace que los cambios surtan efecto sin tener que reiniciar la sesión de depuración.  
@@ -109,7 +104,7 @@ El marco Natvis de Visual Studio permite personalizar la manera en que Visual St
 
  Use el comando **.natvisreload** al actualizar el archivo .natvis a una versión más reciente (por ejemplo, si se ha comprobado en el control de código fuente y desea recoger los cambios recientes que alguien ha hecho en el archivo). Es aconsejable editar los archivos natvis con el editor XML de Visual Studio.  
 
-##  <a name="BKMK_Expressions_and_formatting"></a> Expresiones y formato  
+## <a name="BKMK_Expressions_and_formatting"></a> Expresiones y formato  
  Las visualizaciones de Natvis usan expresiones de C++ para especificar los elementos de datos que se deben mostrar. Además de las mejoras y las limitaciones de las expresiones de C++ en el depurador que se describen en [Context Operator (C++)](../debugger/context-operator-cpp.md), debe tener en cuenta las siguientes diferencias:  
 
 - Las expresiones Natvis se evalúan en el contexto del objeto que se visualiza, no el marco de pila actual. Por ejemplo, si usa `x` en una expresión Natvis, esto hace referencia al campo denominado `x` del objeto visualizado, no a una variable local denominada `x` de la función que se está ejecutando actualmente. En las expresiones Natvis no se puede acceder a variables locales, aunque sí a variables globales.  
@@ -139,12 +134,12 @@ El marco Natvis de Visual Studio permite personalizar la manera en que Visual St
 
  ![Ventana Inspección con vista sencilla](../debugger/media/watch-simpleview.png "SimpleView de inspección")  
 
-##  <a name="BKMK_Diagnosing_Natvis_errors"></a> Diagnosticar errores de Natvis  
+## <a name="BKMK_Diagnosing_Natvis_errors"></a> Diagnosticar errores de Natvis  
  Puede usar los diagnósticos de Natvis para solucionar problemas de sintaxis y errores de análisis. Cuando el depurador detecta errores en una entrada de visualización, omite los errores y muestra el tipo en formato sin procesar o elige otra visualización adecuada. Para comprender el motivo por el que se omite una determinada entrada de visualización y para ver cuáles son los errores subyacentes, puede activar la opción de diagnósticos de Natvis en **Herramientas / Opciones / Depuración / Ventana Salida / Mensajes de diagnóstico de Natvis (solo en C++)** . Los errores se muestran en la ventana **Salida** .  
 
-##  <a name="BKMK_Syntax_reference"></a> Referencia de la sintaxis de Natvis  
+## <a name="BKMK_Syntax_reference"></a> Referencia de la sintaxis de Natvis  
 
-###  <a name="BKMK_AutoVisualizer"></a> Elemento AutoVisualizer  
+### <a name="BKMK_AutoVisualizer"></a> Elemento AutoVisualizer  
  El elemento `AutoVisualizer`  es el nodo raíz del archivo .natvis y contiene el atributo `xmlns:` del espacio de nombres.  
 
 ```xml  
@@ -155,7 +150,7 @@ El marco Natvis de Visual Studio permite personalizar la manera en que Visual St
 </AutoVisualizer>  
 ```  
 
-###  <a name="BKMK_Type"></a> Elemento Type  
+### <a name="BKMK_Type"></a> Elemento Type  
  Este es el aspecto de un elemento Type básico:  
 
 ```xml  
@@ -189,7 +184,7 @@ El marco Natvis de Visual Studio permite personalizar la manera en que Visual St
 
  Observe que se puede hacer referencia a los parámetros de plantilla en la entrada de visualización mediante macros $T1, $T2, etc. Para buscar ejemplos de estas macros, vea los archivos .natvis incluidos con Visual Studio.  
 
-####  <a name="BKMK_Visualizer_type_matching"></a> Coincidencia de tipos del visualizador  
+#### <a name="BKMK_Visualizer_type_matching"></a> Coincidencia de tipos del visualizador  
  Si no se puede validar una entrada de visualización, se usará la siguiente visualización disponible.  
 
 #### <a name="inheritable-attribute"></a>Atributo heredable  
@@ -228,7 +223,7 @@ El marco Natvis de Visual Studio permite personalizar la manera en que Visual St
 </Type>  
 ```  
 
-####  <a name="BKMK_Versioning"></a> Elemento Version  
+#### <a name="BKMK_Versioning"></a> Elemento Version  
  Utilice el elemento `Version` para delimitar las visualizaciones a módulos concretos y sus versiones de manera que se puedan minimizar los conflictos de nombres y se puedan usar diferentes visualizaciones para distintas versiones de los tipos. Por ejemplo:  
 
 ```xml  
@@ -255,7 +250,7 @@ El marco Natvis de Visual Studio permite personalizar la manera en que Visual St
 </Type>  
 ```  
 
-###  <a name="BKMK_Condition_attribute"></a> Atributo Condition  
+### <a name="BKMK_Condition_attribute"></a> Atributo Condition  
  El atributo `Condition` opcional está disponible para muchos elementos de visualización y especifica cuándo se debe usar una regla de visualización. Si la expresión del atributo Condition se resuelve como `false`, no se aplicará la regla de visualización especificada por el elemento. Si se evalúa como True o si no hay ningún atributo `Condition` , la regla de visualización se aplica al tipo. Puede usar este atributo para la lógica `if-else` en las entradas de visualización. Por ejemplo, la siguiente visualización tiene dos elementos `DisplayString` para un tipo de puntero inteligente:  
 
 ```xml  
@@ -292,7 +287,7 @@ El marco Natvis de Visual Studio permite personalizar la manera en que Visual St
 
  Puede usar los atributos `IncludeView` y `ExcludeView` en los tipos y en los miembros individuales.  
 
-###  <a name="BKMK_DisplayString"></a> DisplayString  
+### <a name="BKMK_DisplayString"></a> DisplayString  
  Un elemento `DisplayString` especifica la cadena que se mostrará como valor de la variable. Acepta cadenas arbitrarias mezcladas con expresiones. Todos los datos encerrados entre llaves se interpretan como una expresión. Por ejemplo, una entrada `DisplayString` como la siguiente:  
 
 ```xml  
@@ -311,7 +306,7 @@ El marco Natvis de Visual Studio permite personalizar la manera en que Visual St
 > [!NOTE]
 >  El elemento `DisplayString` es el único que acepta cadenas arbitrarias y la sintaxis de llaves. Todos los demás elementos de visualización solo aceptan expresiones que evalúa el depurador.  
 
-###  <a name="BKMK_StringView"></a> StringView  
+### <a name="BKMK_StringView"></a> StringView  
  El elemento `StringView` define la expresión cuyo valor se va a enviar al visualizador de texto integrado. Por ejemplo, suponga que tenemos la visualización siguiente para el tipo `ATL::CStringT` :  
 
 ```xml  
@@ -343,17 +338,17 @@ El marco Natvis de Visual Studio permite personalizar la manera en que Visual St
 > [!NOTE]
 >  Observe que la expresión `{m_pszData,su}` incluye un especificador de formato de C++, `su` , para mostrar el valor como cadena Unicode. Vea [Format Specifiers in C++](../debugger/format-specifiers-in-cpp.md) para obtener más información.  
 
-###  <a name="BKMK_Expand"></a> Expand  
+### <a name="BKMK_Expand"></a> Expand  
  El nodo `Expand` se utiliza para personalizar los elementos secundarios del tipo visualizado cuando el usuario los expande en las ventanas de variables. Acepta una lista de nodos secundarios que definen los elementos secundarios.  
 
  El nodo `Expand` es opcional.  
 
--   Si no se especifica ningún nodo `Expand` en una entrada de visualización, se usarán las reglas predeterminadas de expansión de Visual Studio.  
+- Si no se especifica ningún nodo `Expand` en una entrada de visualización, se usarán las reglas predeterminadas de expansión de Visual Studio.  
 
--   Si se especifica un nodo `Expand` sin nodos secundarios, el tipo no se podrá expandir en las ventanas del depurador.  
+- Si se especifica un nodo `Expand` sin nodos secundarios, el tipo no se podrá expandir en las ventanas del depurador.  
 
-####  <a name="BKMK_Item_expansion"></a> Expansión de Item  
- El elemento `Item` es el elemento más básico y más común que se usará en un nodo `Expand` . `Item` define un único elemento secundario. Por ejemplo, suponga que tiene una clase `CRect` con `top`, `left`, `right` y `bottom` como campos y la siguiente entrada de visualización:  
+#### <a name="BKMK_Item_expansion"></a> Expansión de Item  
+ El elemento `Item` es el elemento más básico y más común que se usará en un nodo `Expand` . `Item` define un único elemento secundario. Por ejemplo, suponga que tiene una clase `CRect` con `top`, `left`, `right`y `bottom` como campos y la siguiente entrada de visualización:  
 
 ```xml  
 <Type Name="CRect">  
@@ -375,7 +370,7 @@ El marco Natvis de Visual Studio permite personalizar la manera en que Visual St
 > [!NOTE]
 >  Si la expresión del elemento Item apunta a un tipo complejo, el propio nodo `Item` se puede expandir.  
 
-####  <a name="BKMK_ArrayItems_expansion"></a> ArrayItems expansion  
+#### <a name="BKMK_ArrayItems_expansion"></a> ArrayItems expansion  
  Utilice el nodo `ArrayItems` para que el depurador de Visual Studio interprete el tipo como matriz y muestre sus elementos individuales. La visualización de `std::vector` es un buen ejemplo:  
 
 ```xml  
@@ -431,8 +426,8 @@ El marco Natvis de Visual Studio permite personalizar la manera en que Visual St
 
  ![Matriz bidimensional con expansión de ArrayItems](../debugger/media/dbg-natvis-expand-arrayitems-2d.png "DBG_NATVIS_Expand_ArrayItems_2D")  
 
-####  <a name="BKMK_IndexListItems_expansion"></a> Expansión de IndexListItems  
- Puede usar la expansión `ArrayItems` solo si los elementos de matriz están dispuestos de forma contigua en la memoria. El depurador obtiene el elemento siguiente al incrementar simplemente el puntero al elemento actual. Para admitir casos donde es necesario manipular el índice al nodo de valor, se pueden usar nodos `IndexListItems`. Esta es una visualización del uso del nodo `IndexListItems` :  
+#### <a name="BKMK_IndexListItems_expansion"></a> Expansión de IndexListItems  
+ Puede usar la expansión `ArrayItems` solo si los elementos de matriz están dispuestos de forma contigua en la memoria. El depurador obtiene el elemento siguiente al incrementar simplemente el puntero al elemento actual. Para admitir casos donde es necesario manipular el índice al nodo de valor, se pueden usar nodos `IndexListItems` . Esta es una visualización del uso del nodo `IndexListItems` :  
 
 ```xml  
 <Type Name="Concurrency::multi_link_registry&lt;*&gt;">  
@@ -452,7 +447,7 @@ El marco Natvis de Visual Studio permite personalizar la manera en que Visual St
 
  La única diferencia entre `ArrayItems` y `IndexListItems` reside en que `ValueNode` espera la expresión completa para el elemento<sup>n</sup> con el parámetro `$i` implícito.  
 
-####  <a name="BKMK_LinkedListItems_expansion"></a> Expansión de LinkedListItems  
+#### <a name="BKMK_LinkedListItems_expansion"></a> Expansión de LinkedListItems  
  Si el tipo visualizado representa una lista vinculada, el depurador puede mostrar sus elementos secundarios si se usa un nodo `LinkedListItems` . A continuación se muestra la visualización del tipo `CAtlList` mediante esta característica:  
 
 ```xml  
@@ -473,9 +468,9 @@ El marco Natvis de Visual Studio permite personalizar la manera en que Visual St
 
  El elemento `Size` hace referencia a la longitud de la lista. `HeadPointer` apunta al primer elemento, `NextPointer` hace referencia al elemento siguiente y `ValueNode` hace referencia al valor del elemento.  
 
--   Las expresiones `NextPointer` y `ValueNode` se evalúan en el contexto del elemento del nodo de lista de vínculo, no del tipo de lista primario. En el ejemplo anterior, `CAtlList` tiene una clase `CNode` (que se encuentra en `atlcoll.h`) que representa un nodo de la lista vinculada. Los objetos`m_pNext` y `m_element` son campos de la clase `CNode` class y not of `CAtlList` .  
+- Las expresiones `NextPointer` y `ValueNode` se evalúan en el contexto del elemento del nodo de lista de vínculo, no del tipo de lista primario. En el ejemplo anterior, `CAtlList` tiene una clase `CNode` (que se encuentra en `atlcoll.h`) que representa un nodo de la lista vinculada. Los objetos`m_pNext` y `m_element` son campos de la clase `CNode` class y not of `CAtlList` .  
 
--   `ValueNode` puede dejarse vacío o usar `this` para hacer referencia al propio nodo de lista de vínculo.  
+- `ValueNode` puede dejarse vacío o usar `this` para hacer referencia al propio nodo de lista de vínculo.  
 
 #### <a name="customlistitems-expansion"></a>Expansión CustomListItems  
  La expansión `CustomListItems` le permite escribir una lógica personalizada para recorrer una estructura de datos, como una tabla hash. Debe usar `CustomListItems` para visualizar estructuras de datos en las que todo lo que deba evaluar se pueda expresar mediante expresiones de C++, pero que no se ajustan lo suficiente al molde para `ArrayItems`, `TreeItems`o `LinkedListItems.`.  
@@ -511,7 +506,7 @@ El marco Natvis de Visual Studio permite personalizar la manera en que Visual St
 </Type>  
 ```  
 
-####  <a name="BKMK_TreeItems_expansion"></a> Expansión de TreeItems  
+#### <a name="BKMK_TreeItems_expansion"></a> Expansión de TreeItems  
  Si el tipo visualizado representa un árbol, el depurador puede recorrer el árbol y mostrar sus elementos secundarios utilizando un nodo `TreeItems` . A continuación se muestra la visualización del tipo `std::map` mediante esta característica:  
 
 ```xml  
@@ -532,9 +527,9 @@ El marco Natvis de Visual Studio permite personalizar la manera en que Visual St
 
 ```  
 
- La sintaxis es muy similar a la del nodo `LinkedListItems`. Los objetos`LeftPointer`, `RightPointer`y `ValueNode` are evaluated under the context of the tree node classy `ValueNode` puede dejarse vacío o incluir el objeto `this` para hacer referencia al propio nodo de árbol.  
+ La sintaxis es muy similar a la del nodo `LinkedListItems` . Los objetos`LeftPointer`, `RightPointer`y `ValueNode` are evaluated under the context of the tree node classy `ValueNode` puede dejarse vacío o incluir el objeto `this` para hacer referencia al propio nodo de árbol.  
 
-####  <a name="BKMK_ExpandedItem_expansion"></a> Expansión de ExpandedItem  
+#### <a name="BKMK_ExpandedItem_expansion"></a> Expansión de ExpandedItem  
  El elemento `ExpandedItem` se puede utilizar para generar una vista secundaria agregada que muestre las propiedades de las clases base o los miembros de datos como si fueran elementos secundarios del tipo visualizado. Se evalúa la expresión especificada y se anexan los nodos secundarios del resultado a la lista secundaria del tipo visualizado. Por ejemplo, suponga que tenemos un tipo de puntero inteligente `auto_ptr<vector<int>>` que suele mostrarse como:  
 
  ![Auto&#95;ptr&#60;vector&#60;int&#62; &#62; expansión predeterminada](../debugger/media/dbg-natvis-expand-expandeditem-default.png "DBG_NATVIS_Expand_ExpandedItem_Default")  
@@ -566,7 +561,7 @@ El marco Natvis de Visual Studio permite personalizar la manera en que Visual St
 
 ```  
 
-####  <a name="BKMK_Synthetic_Item_expansion"></a> Expansión de elemento Synthetic  
+#### <a name="BKMK_Synthetic_Item_expansion"></a> Expansión de elemento Synthetic  
  En los casos donde el elemento `ExpandedItem` elimina las jerarquías para proporcionar una vista de datos más plana, el nodo `Synthetic` hace lo contrario. Permite crear un elemento secundario artificial (es decir, un elemento secundario que no es un resultado de una expresión). Este elemento secundario puede contener elementos secundarios propios. En el ejemplo siguiente, la visualización del tipo `Concurrency::array` usa un nodo `Synthetic` para mostrar un mensaje de diagnóstico al usuario:  
 
 ```xml  
@@ -589,7 +584,7 @@ El marco Natvis de Visual Studio permite personalizar la manera en que Visual St
 
  ![Concurrency:: Array con expansión de elementos sythentic](../debugger/media/dbg-natvis-expand-synthetic.png "DBG_NATVIS_Expand_Synthetic")  
 
-###  <a name="BKMK_HResult"></a> HResult  
+### <a name="BKMK_HResult"></a> HResult  
  El elemento `HResult` permite personalizar la información que se muestra para un tipo de datos HRESULT en las ventanas del depurador. El elemento `HRValue` debe contener el valor de 32 bits de HRESULT que se debe personalizar. El elemento `HRDescription` contiene la información que se muestra en el depurador.  
 
 ```  
@@ -600,7 +595,7 @@ El marco Natvis de Visual Studio permite personalizar la manera en que Visual St
 </HResult>  
 ```  
 
-###  <a name="BKMK_UIVisualizer"></a> UIVisualizer  
+### <a name="BKMK_UIVisualizer"></a> UIVisualizer  
  Un elemento `UIVisualizer` registra un complemento de visualizador gráfico en el depurador. Un complemento de visualizador gráfico crea un cuadro de diálogo u otra interfaz para mostrar una variable o un objeto de forma adecuada según su tipo de datos. El complemento del visualizador se debe crear como [VSPackage](../extensibility/internals/vspackages.md) y tiene que exponer un servicio que el depurador pueda consumir. El archivo .natvis contiene información de registro del complemento, como su nombre, el GUID del servicio expuesto y los tipos que puede visualizar.  
 
  A continuación se muestra un ejemplo de un elemento UIVisualizer:  
@@ -638,6 +633,3 @@ El marco Natvis de Visual Studio permite personalizar la manera en que Visual St
  `CustomVisualizer` es un punto de extensibilidad que especifica una extensión VSIX que puede escribir para controlar la visualización en un código que se ejecuta en Visual Studio. Para obtener más información sobre cómo escribir extensiones VSIX, vea [Visual Studio SDK](../extensibility/visual-studio-sdk.md). Escribir un visualizador personalizado comporta mucho más trabajo que escribir una definición de natvis XML, pero le libera de las restricciones de compatibilidad con natvis. Los visualizadores personalizados tienen acceso a todo el conjunto de API de extensibilidad del depurador, que se pueden usar para consultar y modificar el proceso de depurado o para comunicarse con otras partes de Visual Studio.  
 
  Puede usar los atributos `Condition`, `IncludeView`y `ExcludeView` en los elementos CustomVisualizer.
-
-
-

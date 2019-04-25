@@ -1,24 +1,19 @@
 ---
 title: Configurar pruebas unitarias usando un archivo .runsettings | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: f7e9e4a2-5d01-4f78-b408-5be3892bd162
 caps.latest.revision: 28
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 8d9b03c3b3e418a59c5cea40d61c1ad4c5024d1d
-ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
-ms.translationtype: MTE95
+manager: jillfra
+ms.openlocfilehash: a86811bb4d87dffcf9abdacae9bca1fdac4298ee
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54154494"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043047"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Configurar pruebas unitarias usando un archivo .runsettings
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +43,7 @@ Las pruebas unitarias en Visual Studio se pueden configurar mediante un archivo 
   
    ![Habilitar un archivo de parámetros de ejecución](../test/media/runsettings-1.png "RunSettings-1")  
   
-##  <a name="example"></a> Copiar este archivo de ejemplo .runsettings  
+## <a name="example"></a> Copiar este archivo de ejemplo .runsettings  
  A continuación se muestra un archivo *.runsettings típico. Cada elemento del archivo es opcional, porque cada valor tiene una configuración predeterminada.  
   
 ```xml  
@@ -170,6 +165,3 @@ Las pruebas unitarias en Visual Studio se pueden configurar mediante un archivo 
 ## <a name="see-also"></a>Vea también  
  [Personalizar el análisis de cobertura de código](../test/customizing-code-coverage-analysis.md)   
  [Especificar la configuración de pruebas para las pruebas en Visual Studio](http://msdn.microsoft.com/library/0c15317e-80c6-4317-aed3-82b8e15e3901)
-
-
-

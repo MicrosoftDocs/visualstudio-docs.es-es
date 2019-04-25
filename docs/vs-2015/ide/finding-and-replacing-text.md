@@ -1,14 +1,9 @@
 ---
 title: Buscar y reemplazar texto | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.find
 - vs.findreplacecontrol
@@ -41,13 +36,13 @@ ms.assetid: a62545c3-1570-4d12-99fb-a82607eb35a1
 caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: e4bbe1456632b2707ca548582bb278f7646ec540
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4a0edc40a8a6523c76a6b6f8074a108219152c06
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49273447"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54756883"
 ---
 # <a name="finding-and-replacing-text"></a>Finding and Replacing Text
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,13 +74,10 @@ Puede buscar y reemplazar texto en el editor de código de Visual Studio y en de
  Cuando pulse **Buscar todo**, se abre una ventana **Buscar resultados** y se muestran las coincidencias de la búsqueda. Al seleccionar un resultado en la lista se muestra el archivo asociado y se resalta la coincidencia. Si el archivo todavía no está abierto para su edición, se abre en una pestaña de vista previa en el lateral derecho de la pestaña también. Puede usar el control **Buscar** para buscar en la lista **Resultados de la búsqueda**.  
   
 ### <a name="creating-custom-search-folder-sets"></a>Creación de conjuntos de carpetas de búsqueda personalizados  
- Puede definir un ámbito de búsqueda eligiendo el **elegir carpetas de búsqueda** botón (se parece a **...** ) junto a la **buscar en** cuadro. En el cuadro de diálogo **Elegir carpetas de búsqueda**, puede especificar un conjunto de carpetas en el que buscar, y puede guardar la especificación para que pueda volver a usarla más tarde. Puede especificar carpetas de un equipo remoto solo si ha asignado su unidad al equipo local.  
+ Puede definir un ámbito de búsqueda si hace clic en el botón **Elegir carpetas de búsqueda** (parecido a **...**) junto al cuadro **Buscar en**. En el cuadro de diálogo **Elegir carpetas de búsqueda**, puede especificar un conjunto de carpetas en el que buscar, y puede guardar la especificación para que pueda volver a usarla más tarde. Puede especificar carpetas de un equipo remoto solo si ha asignado su unidad al equipo local.  
   
 ### <a name="creating-custom-component-sets"></a>Creación de conjuntos de componentes personalizados  
  Puede definir conjuntos de componentes como su ámbito de búsqueda pulsando el botón **Editar conjunto de componentes personalizado** junto al cuadro **Buscar en**. Puede especificar componentes COM o .NET instalados, proyectos de Visual Studio que se incluyen en la solución o cualquier ensamblado o biblioteca de tipos (.dll, .tlb, .olb, .exe o .ocx). Para buscar referencias, seleccione el cuadro **Buscar en referencias**.  
   
 ## <a name="see-also"></a>Vea también  
  [Usar expresiones regulares en Visual Studio](../ide/using-regular-expressions-in-visual-studio.md)
-
-
-

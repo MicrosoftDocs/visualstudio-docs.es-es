@@ -1,14 +1,9 @@
 ---
-title: '&lt;valor&gt; (JavaScript) | Documentos de Microsoft'
-ms.custom: ''
+title: '&lt;value&gt; (JavaScript) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - <value> JavaScript XML tag
 - value JavaScript XML tag
@@ -16,15 +11,15 @@ ms.assetid: 983e31de-cb1d-411e-b60d-eea6698a26f6
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f88f3ae2e7442549004d2331b4517eb7fa2b5509
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: ac74dde41a2d6cea0a768cfc89838cc34ce41afd
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49914338"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54799147"
 ---
-# <a name="ltvaluegt-javascript"></a>&lt;valor&gt; (JavaScript)
+# <a name="ltvaluegt-javascript"></a>&lt;value&gt; (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Especifica información de documentación de las funciones `get` y `set` para propiedades de ECMAScript 3.  
@@ -95,6 +90,3 @@ function Sys$CancelEventArgs$get_cancel() {
   
 ## <a name="see-also"></a>Vea también  
  [Comentarios de documentación XML](../ide/xml-documentation-comments-javascript.md)
-
-
-

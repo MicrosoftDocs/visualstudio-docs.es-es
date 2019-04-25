@@ -14,16 +14,15 @@ helpviewer_keywords:
 ms.assetid: 9748815e-3556-49e8-86b1-c6aa593c6163
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 803de097d05f472e7a5b585a8b58395c45a924ed
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 4e41cb7bf747a1c083dc1728d7ea26f47ad8fa48
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53914999"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107000"
 ---
 # <a name="bind-controls-to-pictures-from-a-database"></a>Enlazar controles a imágenes desde una base de datos
 
@@ -35,14 +34,14 @@ El procedimiento siguiente supone que la ventana **Orígenes de datos** ya inclu
 
 ## <a name="to-bind-a-picture-in-a-database-to-a-control"></a>Para enlazar una imagen de una base de datos a un control
 
-1.  Asegúrese de que la superficie de diseño a la que va a agregar el control está abierta en WPF Designer o en el Diseñador de Windows Forms.
+1. Asegúrese de que la superficie de diseño a la que va a agregar el control está abierta en WPF Designer o en el Diseñador de Windows Forms.
 
-2.  En la ventana **Orígenes de datos**, expanda la tabla o el objeto deseado para mostrar sus columnas o propiedades.
+2. En la ventana **Orígenes de datos**, expanda la tabla o el objeto deseado para mostrar sus columnas o propiedades.
 
    > [!TIP]
    > Si el **orígenes de datos** ventana no está abierta, ábrala, seleccione **vista** > **Other Windows** > **orígenes de datos**.
 
-3.  Seleccione la columna o propiedad que contiene los datos de la imagen y seleccione uno de los siguientes controles de la lista desplegable del control:
+3. Seleccione la columna o propiedad que contiene los datos de la imagen y seleccione uno de los siguientes controles de la lista desplegable del control:
 
     - Si el diseñador WPF está abierto, seleccione **Imagen**.
 

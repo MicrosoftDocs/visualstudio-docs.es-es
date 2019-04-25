@@ -12,14 +12,13 @@ helpviewer_keywords:
 ms.assetid: 211edbd7-9fe4-4251-ba85-8bec4363261b
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: ca6d95de1ddcf50796810b2d9ec11438ca705fe9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: bd66bcb3615477abc2fc9a8122f2ec4675f37bbb
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53823693"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796691"
 ---
 # <a name="configure-ports-for-test-controllers-and-test-agents"></a>Configuración de los puertos para los controladores de pruebas y los agentes de pruebas
 
@@ -29,7 +28,7 @@ Puede cambiar los puertos de entrada predeterminados que usan por el controlador
 
 La siguiente ilustración muestra los puntos de conexión entre el controlador de prueba, el agente de prueba y el cliente. Describe qué puertos se usan para las conexiones entrantes y salientes, así como las restricciones de seguridad empleadas en estos puertos.
 
-![Puertos de controlador de pruebas y agente de prueba y seguridad](../test/media/test-controller-agent-firewall.png)
+![Puertos y seguridad del controlador y el agente de pruebas](../test/media/test-controller-agent-firewall.png)
 
 ## <a name="incoming-connections"></a>Conexiones entrantes
 

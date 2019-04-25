@@ -1,14 +1,9 @@
 ---
 title: En información general sobre supresiones de origen | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - source suppression, code analysis
 - code analysis, source suppression
@@ -17,24 +12,24 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 844681d079e5565aab9eceadb73f7d8a61cbb2c6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 046ae576880c6749c6bb033f66124c0085dfab16
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49209045"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057165"
 ---
 # <a name="in-source-suppression-overview"></a>Información general sobre supresiones en código fuente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Supresión en el código fuente es la capacidad para suprimir o pasar por alto infracciones de análisis de código en código administrado mediante la adición de la **SuppressMessage** los segmentos de código que provocan las infracciones de atributo. El **SuppressMessage** es un atributo condicional que se incluye en los metadatos de IL del ensamblado de código administrado solo si se ha definido el símbolo de compilación CODE_ANALYSIS en tiempo de compilación.  
   
- En C / c++ / CLI, use las macros CA_GLOBAL_SUPPRESS_MESSAGE o CA_SUPPRESS_MESSAGE en el archivo de encabezado para agregar el atributo.  
+ En C++/CLI, use las macros CA_GLOBAL_SUPPRESS_MESSAGE o CA_SUPPRESS_MESSAGE en el archivo de encabezado para agregar el atributo.  
   
  No debe utilizar supresiones en código fuente en las compilaciones de versión para evitar que los metadatos de supresión en el origen de trasvase de registros por accidente. Debido al costo de procesamiento de supresión en el código fuente, también puede disminuir el rendimiento de la aplicación mediante la inclusión de los metadatos de supresión en el código fuente.  
   
 > [!NOTE]
->  No tiene a mano código estos atributos por sí mismo. Para obtener más información, consulte [Cómo: Suprimir advertencias mediante el elemento de menú](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md). El elemento de menú no está disponible para código C++.  
+>  No tiene a mano código estos atributos por sí mismo. Para obtener más información, vea [Cómo: Suprimir advertencias mediante el elemento de menú](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md). El elemento de menú no está disponible para código C++.  
   
 ## <a name="suppressmessage-attribute"></a>Atributo SuppressMessage  
  Cuando haga clic en una advertencia de análisis de código en el **lista de errores** y, a continuación, haga clic en **Suprimir mensajes**, un **SuppressMessage** se agrega un atributo en el código o en el archivo de supresiones globales del proyecto.  
@@ -59,27 +54,27 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
   
  Dónde:  
   
--   **Categoría de regla** -la categoría en la que se define la regla. Para obtener más información acerca de las categorías de regla de análisis de código, vea [Code Analysis for Managed Code Warnings](../code-quality/code-analysis-for-managed-code-warnings.md).  
+- **Categoría de regla** -la categoría en la que se define la regla. Para obtener más información acerca de las categorías de regla de análisis de código, vea [Code Analysis for Managed Code Warnings](../code-quality/code-analysis-for-managed-code-warnings.md).  
   
--   **Id. de regla** -el identificador de la regla. La compatibilidad incluye tanto un nombre corto y largo para el identificador de regla. El nombre corto es la regla. el nombre corto es CAXXXX.  
+- **Id. de regla** -el identificador de la regla. La compatibilidad incluye tanto un nombre corto y largo para el identificador de regla. El nombre corto es la regla. el nombre corto es CAXXXX.  
   
--   **Justificación** -el texto que se usa para documentar el motivo para suprimir el mensaje.  
+- **Justificación** -el texto que se usa para documentar el motivo para suprimir el mensaje.  
   
--   **Id. de mensaje** -identificador único de un problema para cada mensaje.  
+- **Id. de mensaje** -identificador único de un problema para cada mensaje.  
   
--   **Ámbito** -el destino en el que se suprime la advertencia. Si el destino no se especifica, se establece en el destino del atributo. Los ámbitos admitidos incluyen lo siguiente:  
+- **Ámbito** -el destino en el que se suprime la advertencia. Si el destino no se especifica, se establece en el destino del atributo. Los ámbitos admitidos incluyen lo siguiente:  
   
-    -   Module  
+    - Module  
   
-    -   Espacio de nombres  
+    - Espacio de nombres  
   
-    -   Recurso  
+    - Recurso  
   
-    -   Tipo  
+    - Tipo  
   
-    -   Miembro  
+    - Miembro  
   
--   **Destino** : un identificador que se usa para especificar el destino en el que se suprime la advertencia. Debe contener un nombre de elemento completo.  
+- **Destino** : un identificador que se usa para especificar el destino en el que se suprime la advertencia. Debe contener un nombre de elemento completo.  
   
 ## <a name="suppressmessage-usage"></a>Uso de SuppressMessage  
  Se suprimen las advertencias de análisis de código en el nivel al que una instancia de la **SuppressMessage** se aplica el atributo. El propósito de esto es acoplando la información de supresión en el código donde se produce la infracción.  
@@ -126,10 +121,7 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 >  Destino siempre contiene el nombre del elemento completo.  
   
 ## <a name="global-suppression-file"></a>Archivo de supresión global  
- El archivo de supresión global mantiene supresiones de nivel global o supresiones que no especifican un destino. Por ejemplo, las supresiones de las infracciones de nivel de ensamblado se almacenan en este archivo. Además, algunas supresiones de ASP.NET se almacenan en este archivo porque la configuración del nivel de proyecto no está disponibles para el código detrás de un formulario. Se crea y se agrega al proyecto la primera vez que seleccione una supresión global la **en el archivo de supresión del proyecto** opción de la **Suprimir mensajes** comando en la ventana Lista de errores. Para obtener más información, consulte [Cómo: Suprimir advertencias mediante el elemento de menú](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md).  
+ El archivo de supresión global mantiene supresiones de nivel global o supresiones que no especifican un destino. Por ejemplo, las supresiones de las infracciones de nivel de ensamblado se almacenan en este archivo. Además, algunas supresiones de ASP.NET se almacenan en este archivo porque la configuración del nivel de proyecto no está disponibles para el código detrás de un formulario. Se crea y se agrega al proyecto la primera vez que seleccione una supresión global la **en el archivo de supresión del proyecto** opción de la **Suprimir mensajes** comando en la ventana Lista de errores. Para obtener más información, vea [Cómo: Suprimir advertencias mediante el elemento de menú](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md).  
   
 ## <a name="see-also"></a>Vea también  
  <xref:System.Diagnostics.CodeAnalysis>
-
-
-

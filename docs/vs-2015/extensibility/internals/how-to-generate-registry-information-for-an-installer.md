@@ -1,14 +1,9 @@
 ---
-title: 'Cómo: generar información del registro para un instalador | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Generar información del registro para un instalador | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - registration, VSPackages
 - VSPackages, registering
@@ -16,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: b1b41012-a777-4ccf-81a6-3b41f0e96583
 caps.latest.revision: 20
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 612b8eda676b7e27b226a99e04e7298df8c8fab7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 63dd7f96e1d7af81b81a1b9d6a445356bb8de27e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782640"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117738"
 ---
-# <a name="how-to-generate-registry-information-for-an-installer"></a>Cómo: generar información del registro para un instalador
+# <a name="how-to-generate-registry-information-for-an-installer"></a>Procedimiento Generar información del Registro para un instalador
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 La utilidad RegPkg.exe puede usarse para generar un manifiesto de registro para un VSPackage administrado. El manifiesto se puede incorporar en un paquete de instalación de Windows Installer. RegPkg también puede generar un archivo que puede incluirse en un archivo de origen de instalación según la [Windows Installer XML Toolset](http://go.microsoft.com/fwlink/?LinkId=62238).  
@@ -34,7 +29,7 @@ La utilidad RegPkg.exe puede usarse para generar un manifiesto de registro para 
   
 ### <a name="to-create-a-registration-manifest"></a>Para crear un manifiesto de registro  
   
--   Ejecute RegPkg con el **/regfile** cambie. Proporcionar ningún otro modificador, el nombre del archivo de salida y la ruta de acceso del VSPackage.  
+- Ejecute RegPkg con el **/regfile** cambie. Proporcionar ningún otro modificador, el nombre del archivo de salida y la ruta de acceso del VSPackage.  
   
      Por ejemplo, en el símbolo del sistema, escribiría algo parecido a lo siguiente:  
   
@@ -44,7 +39,7 @@ La utilidad RegPkg.exe puede usarse para generar un manifiesto de registro para 
   
 ### <a name="to-view-a-registration-manifest"></a>Para ver un manifiesto de registro  
   
--   Abra el manifiesto de registro en cualquier editor de texto.  
+- Abra el manifiesto de registro en cualquier editor de texto.  
   
      El ejemplo siguiente es el manifiesto de registro que crea el servicio de lenguaje de IronPython RegPkg:  
   
@@ -105,7 +100,7 @@ La utilidad RegPkg.exe puede usarse para generar un manifiesto de registro para 
   
 ### <a name="to-create-a-windows-installer-xml-toolset-include-file"></a>Para crear un conjunto de herramientas de Windows Installer XML incluir archivo  
   
--   Ejecute RegPkg con el **/wixfile** cambie. Proporcionar ningún otro modificador, el nombre del archivo de salida y la ruta de acceso del VSPackage.  
+- Ejecute RegPkg con el **/wixfile** cambie. Proporcionar ningún otro modificador, el nombre del archivo de salida y la ruta de acceso del VSPackage.  
   
      Por ejemplo, en el símbolo del sistema, escribiría algo parecido a lo siguiente:  
   
@@ -115,7 +110,7 @@ La utilidad RegPkg.exe puede usarse para generar un manifiesto de registro para 
   
 ### <a name="to-view-a-windows-installer-xml-toolset-include-file"></a>Para ver un conjunto de herramientas de Windows Installer XML incluir archivo  
   
--   Abra el conjunto de herramientas de Windows Installer XML incluir el archivo en cualquier editor de texto.  
+- Abra el conjunto de herramientas de Windows Installer XML incluir el archivo en cualquier editor de texto.  
   
      El ejemplo siguiente es el archivo de inclusión RegPkg crea para el servicio de lenguaje de IronPython:  
   
@@ -188,6 +183,5 @@ La utilidad RegPkg.exe puede usarse para generar un manifiesto de registro para 
     ```  
   
 ## <a name="see-also"></a>Vea también  
- [Registro de VSPackages](http://msdn.microsoft.com/en-us/31e6050f-1457-4849-944a-a3c36b76f3dd)   
+ [Registro de VSPackages](registering-vspackages.md)   
  [VSPackages](../../extensibility/internals/vspackages.md)
-

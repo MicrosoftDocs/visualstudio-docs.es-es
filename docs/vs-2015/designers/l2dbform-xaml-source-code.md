@@ -1,30 +1,25 @@
 ---
 title: Código fuente de L2DBForm.xaml | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 624e96d4-6d27-4195-8ac2-2f3835f6c57e
 caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 291f7ece2c53d168125da32a11e50ca42e19f3fb
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 11b35534641ec01c9d622b35caacf2e68162e4e1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49207693"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54797358"
 ---
 # <a name="l2dbformxaml-source-code"></a>Código fuente de L2DBForm.xaml
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Este tema contiene y describe el archivo de origen XAML para el [WPF Data Binding Using LINQ to XML Example](../designers/wpf-data-binding-using-linq-to-xml-example.md), L2DBForm.xaml.  
+Este tema contiene y describe el archivo de origen XAML para el [Ejemplo de enlace de datos WPF utilizando LINQ to XML](../designers/wpf-data-binding-using-linq-to-xml-example.md), L2DBForm.xaml.  
   
 ## <a name="overall-ui-structure"></a>Estructura de IU general  
  Tal y como es típico para un proyecto de WPF, este archivo contiene un elemento primario, un elemento XML <xref:System.Windows.Window> XML asociada con la clase derivada `L2XDBFrom` del espacio de nombres `LinqToXmlDataBinding` .  
@@ -249,6 +244,3 @@ Text="{Binding Path=Attribute[id].Value}"...Text="{Binding Path=Value}"
 ## <a name="see-also"></a>Vea también  
  [Tutorial: LinqToXmlDataBinding Example](../designers/walkthrough-linqtoxmldatabinding-example.md)   
  [L2DBForm.xaml.cs Source Code](../designers/l2dbform-xaml-cs-source-code.md)
-
-
-

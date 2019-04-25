@@ -1,12 +1,9 @@
 ---
 title: Validar el modelo UML | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML, constraints
 - UML, validation
@@ -14,13 +11,13 @@ ms.assetid: deed5092-c11d-4431-a801-1e866a103075
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: fea958a20e5eee78f79f324ad19ef646f7920951
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5114e7b32bd22b341489e15ac354cc24b3c6d7d7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51739967"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113318"
 ---
 # <a name="validate-your-uml-model"></a>Validar el modelo UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,29 +49,26 @@ Algunos de los modelos UML que trace en Visual Studio podrían no ser válidos e
   
 #### <a name="to-install-a-visual-studio-extension"></a>Para instalar una extensión de Visual Studio  
   
-1.  Haga doble clic en el **.vsix** archivo en el Explorador de Windows (o explorador de archivos).  
+1. Haga doble clic en el **.vsix** archivo en el Explorador de Windows (o explorador de archivos).  
   
-2.  Reinicie cualquier instancia de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] que ya se esté ejecutando.  
+2. Reinicie cualquier instancia de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] que ya se esté ejecutando.  
   
 ## <a name="disabling-and-uninstalling-validation-constraints"></a>Deshabilitar y desinstalar restricciones de validación  
  Si desea trabajar con un modelo en el que no se aplican las restricciones, puede deshabilitar temporalmente la extensión que los contiene. De esta manera, habilitando y deshabilitando las extensiones, puede trabajar con distintos tipos de modelo en momentos diferentes.  
   
 #### <a name="to-disable-or-uninstall-a-visual-studio-extension"></a>Para deshabilitar o desinstalar una extensión de Visual Studio  
   
-1.  En el [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **herramientas** menú, haga clic en **extensiones y actualizaciones**.  
+1. En el [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **herramientas** menú, haga clic en **extensiones y actualizaciones**.  
   
-2.  Junto con la extensión, haga clic en **deshabilitar** para deshabilitar temporalmente la extensión. Se puede volver a habilitarla más adelante mediante la devolución a la **extensiones y actualizaciones** ventana.  
+2. Junto con la extensión, haga clic en **deshabilitar** para deshabilitar temporalmente la extensión. Se puede volver a habilitarla más adelante mediante la devolución a la **extensiones y actualizaciones** ventana.  
   
      \- o -  
   
      Haga clic en **desinstalar** para quitar la extensión.  
   
-3.  Reinicie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+3. Reinicie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 ## <a name="see-also"></a>Vea también  
  [Definir restricciones de validación para modelos UML](../modeling/define-validation-constraints-for-uml-models.md)   
  [Crear modelos para la aplicación](../modeling/create-models-for-your-app.md)   
  [Usar modelos en el proceso de desarrollo](../modeling/use-models-in-your-development-process.md)
-
-
-

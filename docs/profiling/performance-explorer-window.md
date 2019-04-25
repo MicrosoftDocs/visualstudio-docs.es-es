@@ -9,15 +9,15 @@ helpviewer_keywords:
 - performance tools, Performance Explorer
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 01aae2cc3ed447f608992df11b72136d418bd5a9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c8ffa5340ceaa00adb5e86100d8e58c307f41d40
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53869471"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56647038"
 ---
 # <a name="performance-explorer-window"></a>Ventana Explorador de rendimiento
 
@@ -51,6 +51,6 @@ La ventana **Explorador de rendimiento** contiene un control de árbol que muest
 
 ## <a name="see-also"></a>Vea también
 
-[Información general](../profiling/overviews-performance-tools.md)  
-[Configurar sesiones de rendimiento](../profiling/configuring-performance-sessions.md)  
+[Información general](../profiling/overviews-performance-tools.md)
+[Configurar sesiones de rendimiento](../profiling/configuring-performance-sessions.md)
 [Controlar la recopilación de datos](../profiling/controlling-data-collection.md)

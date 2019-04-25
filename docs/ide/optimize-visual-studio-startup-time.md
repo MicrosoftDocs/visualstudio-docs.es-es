@@ -9,18 +9,17 @@ helpviewer_keywords:
 ms.assetid: d1508121-8499-4084-8eb5-fa89fa7b17d3
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 f1_keywords:
 - vs.performancecenter
-ms.prod: visual-studio-dev15
 ms.workload:
 - multiple
-ms.openlocfilehash: 39dd45f7b66dfe0966f3a8c62841f591d56a195a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 60302646abbf36034756f38183d7be7f0d28c1ca
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53865549"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223655"
 ---
 # <a name="optimize-visual-studio-startup-time"></a>Optimizar el tiempo de inicio de Visual Studio
 
@@ -28,7 +27,7 @@ Visual Studio está diseñado para iniciarse de la forma más rápida y eficaz p
 
 ## <a name="startup-behavior"></a>Comportamiento de inicio
 
-Para evitar que se alargue demasiado el tiempo de inicio, Visual Studio de 2017 carga las extensiones mediante un enfoque _a petición_. Con este comportamiento, las extensiones no se abren inmediatamente cuando Visual Studio se inicia, sino cuando son necesarias. Además, como las ventanas de herramientas que se han quedado abiertas en una sesión de Visual Studio anterior pueden ralentizar el tiempo de inicio, Visual Studio abre ventanas de herramientas de una manera más inteligente para evitar el impacto en el tiempo de inicio.
+Para evitar que se alargue demasiado el tiempo de inicio, Visual Studio carga las extensiones mediante un enfoque _a petición_. Con este comportamiento, las extensiones no se abren inmediatamente cuando Visual Studio se inicia, sino cuando son necesarias. Además, como las ventanas de herramientas que se han quedado abiertas en una sesión de Visual Studio anterior pueden ralentizar el tiempo de inicio, Visual Studio abre ventanas de herramientas de una manera más inteligente para evitar el impacto en el tiempo de inicio.
 
 Si Visual Studio detecta un inicio lento, aparece un mensaje emergente avisándole de la extensión o la ventana de herramientas que está provocando la ralentización. El mensaje ofrece un vínculo al cuadro de diálogo **Administrar el rendimiento de Visual Studio**. También puede acceder a este cuadro de diálogo si elige **Ayuda** > **Administrar el rendimiento de Visual Studio** en la barra de menús.
 
@@ -67,10 +66,10 @@ Siempre puede volver a habilitar la extensión en futuras sesiones con el cuadro
      ![Administración del rendimiento de Visual Studio: vista de ventanas de herramientas](../ide/media/vside_perfdialog_toolwindows.png)
 
 > [!NOTE]
-> Algunas versiones anteriores de Visual Studio 2017 tenían una característica llamada **carga de solución ligera**. Esta característica ya no está disponible en la versión 15.5 de Visual Studio 2017 ni en versiones posteriores. En la versión 15.5 de Visual Studio 2017 y versiones posteriores, las soluciones de gran tamaño que contiene código administrado se cargan mucho más rápido que antes, incluso sin la carga de solución ligera.
+> Algunas versiones anteriores de Visual Studio 2017 tenían una característica llamada **carga de solución ligera**. En las versiones actuales, las soluciones de gran tamaño que contienen código administrado se cargan mucho más rápido que antes, incluso sin la carga de solución ligera.
 
 ## <a name="see-also"></a>Vea también
 
 - [Optimización del rendimiento de Visual Studio](../ide/optimize-visual-studio-performance.md)
 - [Sugerencias y trucos de rendimiento de Visual Studio](../ide/visual-studio-performance-tips-and-tricks.md)
-- [Visual Studio blog - Load solutions faster with Visual Studio 2017 version 15.6](https://blogs.msdn.microsoft.com/visualstudio/2018/04/04/load-solutions-faster-with-visual-studio-2017-version-15-6/) (Blog de Visual Studio: Cargar soluciones más rápido con Visual Studio 2017 versión 15.6)
+- [Visual Studio blog - Load solutions faster with Visual Studio 2017 version 15.6](https://devblogs.microsoft.com/visualstudio/load-solutions-faster-with-visual-studio-2017-version-15-6/) (Blog de Visual Studio: Cargar soluciones más rápido con Visual Studio 2017 versión 15.6)

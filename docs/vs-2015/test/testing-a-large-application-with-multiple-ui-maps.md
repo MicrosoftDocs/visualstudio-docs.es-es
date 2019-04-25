@@ -1,27 +1,22 @@
 ---
 title: Probar una aplicación grande con varias asginaciones de IU | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 helpviewer_keywords:
 - coded UI tests, multiple UI maps
 - coded UI tests, for large applications
 ms.assetid: 6e1ae9ec-e9b1-458a-bd96-0eb15e46f1d5
 caps.latest.revision: 24
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 0bc13aa389d6597831682cad62bcaad53672fa7b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 5a6a3247ed53b6a84feb203ce0e9b480e7f9ce5d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49893473"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073896"
 ---
 # <a name="testing-a-large-application-with-multiple-ui-maps"></a>Probar una aplicación grande con varios mapas de IU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,9 +42,9 @@ En este tema se describe cómo usar pruebas de IU codificadas cuando esté proba
 ## <a name="do-you-need-multiple-ui-maps"></a>¿Necesita varias asignaciones de IU?  
  Cree varias asignaciones de IU en cada uno de estos tipos de situaciones:  
   
--   Varios conjuntos complejos de controles de IU compuestos que realizan conjuntamente una operación lógica, como una página de registro de un sitio web o la página de compra de un carro de la compra.  
+- Varios conjuntos complejos de controles de IU compuestos que realizan conjuntamente una operación lógica, como una página de registro de un sitio web o la página de compra de un carro de la compra.  
   
--   Un conjunto independiente de controles a los que se tiene acceso desde varios lugares de la aplicación, como un asistente con varias páginas de operaciones. Si cada página de un asistente es especialmente compleja, podría crear asignaciones de IU diferentes para cada página.  
+- Un conjunto independiente de controles a los que se tiene acceso desde varios lugares de la aplicación, como un asistente con varias páginas de operaciones. Si cada página de un asistente es especialmente compleja, podría crear asignaciones de IU diferentes para cada página.  
   
 ## <a name="adding-multiple-ui-maps"></a>Adición de varias asignaciones de IU  
   
@@ -149,6 +144,3 @@ namespace ContosoProject
  [Usar UI Automation para probar el código](../test/use-ui-automation-to-test-your-code.md)   
  [Crear pruebas de IU codificadas](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
  [Anatomía de una prueba de IU codificada](../test/anatomy-of-a-coded-ui-test.md)
-
-
-

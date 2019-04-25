@@ -1,14 +1,9 @@
 ---
 title: Funciones de los fragmentos de código | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - code snippets [Visual Studio], functions
 - snippets [Visual Studio], functions
@@ -17,18 +12,18 @@ ms.assetid: c0a2bf21-8fa5-4457-9281-f599beb53e7d
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 3874b162719deb02813ceb7eae09b373e208f458
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 95ee6a99a069f81a2e63c5bbe11186afaf773423
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49270886"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54790012"
 ---
 # <a name="code-snippet-functions"></a>Funciones de los fragmentos de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Hay tres funciones disponibles para utilizar con fragmentos de código [!INCLUDE[csprcs](../includes/csprcs-md.md)]. Las funciones se especifican en el elemento [Function](http://msdn.microsoft.com/en-us/572c5549-5821-4e15-8ecd-0fa86c1c65df) del fragmento de código. Para obtener información sobre cómo crear fragmentos de código, vea [Fragmentos de código](../ide/code-snippets.md).  
+Hay tres funciones disponibles para utilizar con fragmentos de código [!INCLUDE[csprcs](../includes/csprcs-md.md)]. Las funciones se especifican en el elemento [Function](http://msdn.microsoft.com/572c5549-5821-4e15-8ecd-0fa86c1c65df) del fragmento de código. Para obtener información sobre cómo crear fragmentos de código, vea [Fragmentos de código](../ide/code-snippets.md).  
   
 ## <a name="functions"></a>Funciones  
  En la tabla siguiente se describen las funciones que puede utilizar con el elemento `Function` en fragmentos de código.  
@@ -159,8 +154,5 @@ Hay tres funciones disponibles para utilizar con fragmentos de código [!INCLUDE
 ```  
   
 ## <a name="see-also"></a>Vea también  
- [Elemento Function (fragmentos de código de IntelliSense)](http://msdn.microsoft.com/en-us/572c5549-5821-4e15-8ecd-0fa86c1c65df)   
+ [Elemento Function (fragmentos de código de IntelliSense)](http://msdn.microsoft.com/572c5549-5821-4e15-8ecd-0fa86c1c65df)   
  [Referencia de esquemas de fragmentos de código](../ide/code-snippets-schema-reference.md)
-
-
-

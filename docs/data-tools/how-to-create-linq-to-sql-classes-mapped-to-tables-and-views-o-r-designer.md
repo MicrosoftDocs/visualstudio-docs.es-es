@@ -5,16 +5,15 @@ ms.topic: conceptual
 ms.assetid: 0fb78bbc-7a78-4ab4-b32f-85ece912e660
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b011ccd782a270eb770a77683db62dadbb66d223
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 1b9fb62fe3b6d92c617fc89f083aadcd262579e4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53844306"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055930"
 ---
 # <a name="how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-or-designer"></a>Procedimiento Creación de clases de LINQ to SQL asignadas a tablas y vistas (Object Relational Designer)
 
@@ -33,9 +32,9 @@ De forma predeterminada, el motor en tiempo de ejecución de [!INCLUDE[vbtecdlin
 
 ### <a name="to-create-linq-to-sql-classes-that-are-mapped-to-database-tables-or-views"></a>Para crear clases de LINQ to SQL asignadas a tablas o vistas de base de datos
 
-1.  En **Servidor** o en **Explorador de bases de datos**, expanda **Tablas** o **Vistas** y busque la tabla o vista de base de datos que desee usar en la aplicación.
+1. En **Servidor** o en **Explorador de bases de datos**, expanda **Tablas** o **Vistas** y busque la tabla o vista de base de datos que desee usar en la aplicación.
 
-2.  Arrastre la tabla o vista hasta el **Object Relational Designer**.
+2. Arrastre la tabla o vista hasta el **Object Relational Designer**.
 
      Se crea una clase de entidad, que aparece en la superficie de diseño. La clase de entidad tiene propiedades que se asignan a las columnas en la tabla o vista seleccionada.
 
@@ -45,22 +44,22 @@ Después de crear las clases de entidad mediante el uso de la **Object Relationa
 
 ### <a name="to-create-an-object-data-source-based-on-linq-to-sql-entity-classes"></a>Para crear un origen de datos de objeto basándose en las clases de entidad de LINQ to SQL
 
-1.  Para compilar el proyecto, en el menú **Compilar**, haga clic en **Compilar solución**.
+1. Para compilar el proyecto, en el menú **Compilar**, haga clic en **Compilar solución**.
 
-2.  Para abrir el **orígenes de datos** ventana, en el **datos** menú, haga clic en **Mostrar orígenes de datos**.
+2. Para abrir el **orígenes de datos** ventana, en el **datos** menú, haga clic en **Mostrar orígenes de datos**.
 
-3.  En la ventana **Orígenes de datos** , seleccione **Agregar nuevo origen de datos**.
+3. En la ventana **Orígenes de datos** , seleccione **Agregar nuevo origen de datos**.
 
-4.  Haga clic en **Objeto** en la página **Elegir un tipo de origen de datos** y después haga clic en **Siguiente**.
+4. Haga clic en **Objeto** en la página **Elegir un tipo de origen de datos** y después haga clic en **Siguiente**.
 
-5.  Expanda los nodos y, a continuación, busque y seleccione la clase.
+5. Expanda los nodos y, a continuación, busque y seleccione la clase.
 
     > [!NOTE]
     > Si la clase **Customer** no está disponible, cierre el asistente, compile el proyecto y vuelva a ejecutar el asistente.
 
-6.  Haga clic en **Finalizar** para crear el origen de datos y agregar la clase de entidad **Customer** a la ventana **Orígenes de datos**.
+6. Haga clic en **Finalizar** para crear el origen de datos y agregar la clase de entidad **Customer** a la ventana **Orígenes de datos**.
 
-7.  Arrastre los elementos desde la ventana **Orígenes de datos** a un formulario.
+7. Arrastre los elementos desde la ventana **Orígenes de datos** a un formulario.
 
 ## <a name="see-also"></a>Vea también
 
@@ -69,5 +68,5 @@ Después de crear las clases de entidad mediante el uso de la **Object Relationa
 - [DataContext methods (O/R Designer)](../data-tools/datacontext-methods-o-r-designer.md) (Métodos DataContext [Object Relational Designer])
 - [Cómo: Crear métodos DataContext asignados a funciones y procedimientos almacenados (Object Relational Designer)](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md)
 - [The LINQ to SQL object model](/dotnet/framework/data/adonet/sql/linq/the-linq-to-sql-object-model) (Modelo de objetos de LINQ to SQL)
-- [Tutorial: Personalización del comportamiento de inserción, actualización y eliminación de clases de entidad](../data-tools/walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes.md)
+- [Tutorial: Personalizar el comportamiento de inserción, actualización y eliminación de clases de entidad](../data-tools/walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes.md)
 - [Cómo: Crear una asociación (relación) entre clases de LINQ to SQL (Object Relational Designer)](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)

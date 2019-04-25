@@ -6,16 +6,15 @@ helpviewer_keywords:
 - UML, modeling architecture
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: fe5fe257814d547ead60d25f2e17b3afcdc13827
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9c09e8eeed3ba5b7e2a348982444ad8faa0884e9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53820431"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047818"
 ---
 # <a name="model-your-app39s-architecture"></a>Modelar la aplicación&#39;arquitectura s
 Para ayudar a garantizar que el sistema de software o la aplicación cumple sus usuarios necesidades, puede crear modelos en Visual Studio como parte de la descripción de la estructura general y el comportamiento de su aplicación o sistema de software. A través de los modelos, también puede describir los patrones que se usan a lo largo de todo el proceso de diseño. Estos modelos le ayudan a entender la arquitectura existente, a analizar los cambios y a comunicar sus intenciones con claridad.
@@ -29,9 +28,9 @@ Para ayudar a garantizar que el sistema de software o la aplicación cumple sus 
 
  La arquitectura de un sistema puede dividirse en dos áreas:
 
--   [Diseño de alto nivel](#Structure). Aquí se describen los componentes principales y el modo en que interactúan entre sí para satisfacer cada uno de los requisitos. Si el sistema es grande, cada componente puede tener su propio diseño de alto nivel donde se muestra su composición a partir de componentes más pequeños.
+- [Diseño de alto nivel](#Structure). Aquí se describen los componentes principales y el modo en que interactúan entre sí para satisfacer cada uno de los requisitos. Si el sistema es grande, cada componente puede tener su propio diseño de alto nivel donde se muestra su composición a partir de componentes más pequeños.
 
--   [Patrones de diseño](#Patterns) y convenciones que se usan a lo largo de los diseños de los componentes. Un modelo describe un determinado enfoque para lograr un objetivo de programación. Si se usan los mismos modelos a lo largo de un diseño completo, el equipo puede reducir el costo que suponen los cambios y el desarrollo de nuevo software.
+- [Patrones de diseño](#Patterns) y convenciones que se usan a lo largo de los diseños de los componentes. Un modelo describe un determinado enfoque para lograr un objetivo de programación. Si se usan los mismos modelos a lo largo de un diseño completo, el equipo puede reducir el costo que suponen los cambios y el desarrollo de nuevo software.
 
 ## <a name="Structure"></a> Diseño de alto nivel
  En un diseño de alto nivel se describen los componentes principales del sistema y el modo en que interactúan entre sí para lograr los objetivos del diseño. En el desarrollo del diseño de alto nivel están implicadas las actividades de la lista siguiente, aunque no necesariamente en un orden determinado.
@@ -40,11 +39,11 @@ Para ayudar a garantizar que el sistema de software o la aplicación cumple sus 
 
  En cualquier caso, resulta útil desarrollar en paralelo las diferentes actividades y desarrollar el código y las pruebas en una fase inicial. No intente completar uno de estos aspectos antes de comenzar con otro. Normalmente, a medida que escriba y pruebe el código, irán cambiando los requisitos y su concepción sobre la mejor manera de diseñar el sistema. Por tanto, debe empezar por concebir y codificar las características principales de los requisitos y el diseño. Ocúpese de los detalles en posteriores iteraciones del proyecto.
 
--   [Descripción de los requisitos](#Requirements). El punto inicial de cualquier diseño es describir claramente las necesidades de los usuarios.
+- [Descripción de los requisitos](#Requirements). El punto inicial de cualquier diseño es describir claramente las necesidades de los usuarios.
 
--   [Modelos arquitectónicos](#BigDecisions). Son las elecciones que hace respecto a las tecnologías y elementos arquitectónicos básicos del sistema.
+- [Modelos arquitectónicos](#BigDecisions). Son las elecciones que hace respecto a las tecnologías y elementos arquitectónicos básicos del sistema.
 
--   Modelo de datos de los componentes e Interfaces. Puede dibujar diagramas de clases para describir la información que se pasa entre los componentes y que se almacena en los componentes.
+- Modelo de datos de los componentes e Interfaces. Puede dibujar diagramas de clases para describir la información que se pasa entre los componentes y que se almacena en los componentes.
 
 ## <a name="Requirements"></a> Descripción de los requisitos
  La forma más eficaz de desarrollar el diseño de alto nivel de una aplicación completa es hacerlo junto con un modelo de requisitos y otra descripción de las necesidades de los usuarios. Para obtener más información acerca de los modelos de requisitos, consulte [modelar los requisitos del usuario](../modeling/model-user-requirements.md).
@@ -89,19 +88,19 @@ Para ayudar a garantizar que el sistema de software o la aplicación cumple sus 
 
  Un modelo de diseño se describe en un documento y normalmente incluye estos elementos:
 
--   Nombre.
+- Nombre.
 
--   Descripción del contexto en el que es aplicable. ¿Qué criterios debe tener en cuenta un programador al aplicar este modelo?
+- Descripción del contexto en el que es aplicable. ¿Qué criterios debe tener en cuenta un programador al aplicar este modelo?
 
--   Breve explicación del problema que resuelve.
+- Breve explicación del problema que resuelve.
 
--   Modelo de los elementos primarios y sus relaciones. Pueden tratarse de clases o componentes e interfaces, con asociaciones y dependencias entre ellos. Normalmente, los elementos pertenecen a dos categorías:
+- Modelo de los elementos primarios y sus relaciones. Pueden tratarse de clases o componentes e interfaces, con asociaciones y dependencias entre ellos. Normalmente, los elementos pertenecen a dos categorías:
 
--   Convenciones de nomenclatura.
+- Convenciones de nomenclatura.
 
--   Descripción del modo en que el modelo resuelve el problema.
+- Descripción del modo en que el modelo resuelve el problema.
 
--   Descripción de las variaciones que los desarrolladores podrían adoptar.
+- Descripción de las variaciones que los desarrolladores podrían adoptar.
 
 ## <a name="see-also"></a>Vea también
 

@@ -1,14 +1,9 @@
 ---
 title: Página Eventos de compilación, Diseñador de proyectos (C#) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - cs.ProjectPropertiesBuildEvents
 helpviewer_keywords:
@@ -20,18 +15,17 @@ ms.assetid: 3fff9ae5-213c-46ea-a660-1d70acb6c922
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 5a73978bf78c26914e7ee6b21c27f1eb2e7682ea
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 9d04c750bbe8183ae8e39765e41af2f138704ba3
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223103"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654066"
 ---
 # <a name="build-events-page-project-designer-c"></a>Eventos de compilación (Página, Diseñador de proyectos) (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Use la página **Eventos de compilación** del **Diseñador de proyectos** para especificar las instrucciones de configuración de compilación. También puede especificar las condiciones en las que se ejecutan los eventos posteriores a la compilación. Para obtener más información, vea [Cómo: Especificar eventos de compilación (C#)](../../ide/how-to-specify-build-events-csharp.md) y [Cómo: Especificar eventos de compilación (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md).  
   
 ## <a name="uielement-list"></a>Lista de UIElement  
@@ -67,6 +61,3 @@ Use la página **Eventos de compilación** del **Diseñador de proyectos** para 
  [Cómo: Especificar eventos de compilación (C#)](../../ide/how-to-specify-build-events-csharp.md)   
  [Referencia de propiedades del proyecto](../../ide/reference/project-properties-reference.md)   
  [Compilar y generar en Visual Studio](../../ide/compiling-and-building-in-visual-studio.md)
-
-
-

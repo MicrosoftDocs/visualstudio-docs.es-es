@@ -1,14 +1,9 @@
 ---
 title: Memoria de JavaScript | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -27,13 +22,13 @@ ms.assetid: 78f8532b-7b4e-4b50-b8b7-68ca0926dd4e
 caps.latest.revision: 54
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: b2341e9cf0ca1494d8dad79cd521c283c2c23a06
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+manager: jillfra
+ms.openlocfilehash: 6c3ecb692bf450a1d9f4bbd3408d0033bac8c290
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "51798943"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086616"
 ---
 # <a name="javascript-memory"></a>Memoria de JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +47,7 @@ El analizador de memoria de JavaScript está disponible en Visual Studio para ay
   
    Los objetos que no se crean directamente en el código de la aplicación se filtran automáticamente. También puedes filtrar datos por nombre de objeto.  
   
-  Para obtener un tutorial que le guíe a lo largo del proceso de identificación de una fuga de memoria en una aplicación en funcionamiento, vea [Tutorial: Buscar una fuga de memoria (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md).  
+  Para obtener un tutorial que le guíe por el proceso de identificación de una fuga de memoria en una aplicación en funcionamiento, consulte [Tutorial: buscar una fuga de memoria (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md).  
   
   En este tema:  
   
@@ -72,18 +67,18 @@ El analizador de memoria de JavaScript está disponible en Visual Studio para ay
   [Associate source code with memory usage data](#JSConsoleCommands)   
   [Sugerencias para identificar problemas de memoria](#Tips)  
   
-##  <a name="Run"></a> Ejecutar el analizador de memoria de JavaScript  
+## <a name="Run"></a> Ejecutar el analizador de memoria de JavaScript  
  Si tiene una aplicación de la Tienda Windows operativa y abierta en Visual Studio o instalada en un equipo que ejecute [!INCLUDE[win8](../includes/win8-md.md)] o posterior, puede usar el analizador de memoria.  
   
 #### <a name="to-run-the-memory-analyzer"></a>Para ejecutar el analizador de memoria  
   
-1.  Abra Visual Studio.  
+1. Abra Visual Studio.  
   
-2.  Si estás ejecutando la aplicación desde Visual Studio, en la lista **Iniciar depuración** de la barra de herramientas **Estándar** , elige el destino de depuración del proyecto: un emulador de Windows Phone o, en el caso de una aplicación de la Tienda Windows, **Equipo local**, **Simulador**o **Equipo remoto**.  
+2. Si estás ejecutando la aplicación desde Visual Studio, en la lista **Iniciar depuración** de la barra de herramientas **Estándar** , elige el destino de depuración del proyecto: un emulador de Windows Phone o, en el caso de una aplicación de la Tienda Windows, **Equipo local**, **Simulador**o **Equipo remoto**.  
   
      Para obtener más información sobre estas opciones, consulte [Ejecutar aplicaciones desde Visual Studio](../debugger/run-store-apps-from-visual-studio.md).  
   
-3.  En la barra de menús, elija **Depurar**, **Generador de perfiles de rendimiento...**  
+3. En la barra de menús, elija **Depurar**, **Generador de perfiles de rendimiento...**  
   
      De forma predeterminada, se analiza el proyecto de inicio actual. Si quieres cambiar el destino de análisis, elige **Cambiar destino**.  
   
@@ -91,47 +86,47 @@ El analizador de memoria de JavaScript está disponible en Visual Studio para ay
   
      Tienes las siguientes opciones disponibles para el destino de análisis:  
   
-    -   **Proyecto de inicio**. Analiza el proyecto de inicio actual. Si estás ejecutando la aplicación en un equipo remoto, debes elegir esta opción, que es el valor predeterminado.  
+    - **Proyecto de inicio**. Analiza el proyecto de inicio actual. Si estás ejecutando la aplicación en un equipo remoto, debes elegir esta opción, que es el valor predeterminado.  
   
-    -   **Aplicación en ejecución**. Permite seleccionar una aplicación de la Tienda Windows de una lista de aplicaciones en ejecución. No puedes utilizar esta opción si estás ejecutando la aplicación en un equipo remoto.  
+    - **Aplicación en ejecución**. Permite seleccionar una aplicación de la Tienda Windows de una lista de aplicaciones en ejecución. No puedes utilizar esta opción si estás ejecutando la aplicación en un equipo remoto.  
   
          Usa esta opción para analizar el uso de memoria de las aplicaciones que se ejecutan en el equipo cuando no tienes acceso al código fuente.  
   
-    -   **Aplicación instalada**. Permite seleccionar la aplicación de la Tienda Windows instalada que quieras analizar. No puedes utilizar esta opción si estás ejecutando la aplicación en un equipo remoto.  
+    - **Aplicación instalada**. Permite seleccionar la aplicación de la Tienda Windows instalada que quieras analizar. No puedes utilizar esta opción si estás ejecutando la aplicación en un equipo remoto.  
   
          Usa esta opción para analizar el uso de memoria de las aplicaciones que has instalado en el equipo cuando no tienes acceso al código fuente. Esta opción también es útil cuando solo deseas analizar el uso de memoria de cualquier aplicación, fuera de tu propio desarrollo de aplicaciones.  
   
-4.  En **Herramientas disponibles**, activa la casilla **Memoria de JavaScript** y elige **Inicio**.  
+4. En **Herramientas disponibles**, activa la casilla **Memoria de JavaScript** y elige **Inicio**.  
   
-5.  Al iniciar el analizador de memoria, puede aparecer una ventana de Control de cuentas de usuario que solicite tu permiso para ejecutar Visual Studio ETW Collector.exe. Elija **Sí**.  
+5. Al iniciar el analizador de memoria, puede aparecer una ventana de Control de cuentas de usuario que solicite tu permiso para ejecutar Visual Studio ETW Collector.exe. Elija **Sí**.  
   
      Interactúa con la aplicación para probar los escenarios pertinentes de uso de memoria y ver el gráfico de memoria, como se describe en las secciones siguientes.  
   
-6.  Cambia a Visual Studio presionando Alt+Tab.  
+6. Cambia a Visual Studio presionando Alt+Tab.  
   
-7.  Para ver datos recopilados por el analizador de memoria, elige **Tomar instantánea de montón**. Consulte [View a snapshot summary](#SnapshotSummary) más adelante en este tema.  
+7. Para ver datos recopilados por el analizador de memoria, elige **Tomar instantánea de montón**. Consulte [View a snapshot summary](#SnapshotSummary) más adelante en este tema.  
   
-##  <a name="Check"></a> Comprobar el uso de la memoria  
+## <a name="Check"></a> Comprobar el uso de la memoria  
  Puedes intentar identificar pérdidas de memoria mediante distintas vistas en el analizador de memoria de JavaScript. Si ya sospecha que la aplicación pierde memoria, consulte [Isolate a memory leak](#Isolate) para obtener una sugerencia de flujo de trabajo.  
   
  Usa las siguientes vistas para ayudar a identificar pérdidas de memoria en una aplicación:  
   
--   [Ver el resumen de uso de memoria activo](#LiveMemory). Utiliza el gráfico de uso de memoria para buscar aumentos repentinos del uso de memoria o un uso de esta en continuo aumento como resultado de acciones concretas. Usa la vista de resumen de uso de memoria activa para tomar instantáneas del montón. Las instantáneas aparecen como una colección bajo el gráfico de uso de memoria.  
+- [Ver el resumen de uso de memoria activo](#LiveMemory). Utiliza el gráfico de uso de memoria para buscar aumentos repentinos del uso de memoria o un uso de esta en continuo aumento como resultado de acciones concretas. Usa la vista de resumen de uso de memoria activa para tomar instantáneas del montón. Las instantáneas aparecen como una colección bajo el gráfico de uso de memoria.  
   
     > [!TIP]
     >  Verás un pico en el uso de memoria cuando tomes una instantánea. Utiliza los resúmenes de instantánea para obtener una indicación más precisa del aumento de memoria.  
   
--   [View a snapshot summary](#SnapshotSummary). Puedes ver la información del resumen de instantánea durante una sesión de generación de perfiles de memoria o después de esta. Usa los resúmenes de instantánea para vincularlos a los detalles y las vistas de diferencia de instantánea.  
+- [View a snapshot summary](#SnapshotSummary). Puedes ver la información del resumen de instantánea durante una sesión de generación de perfiles de memoria o después de esta. Usa los resúmenes de instantánea para vincularlos a los detalles y las vistas de diferencia de instantánea.  
   
     > [!TIP]
     >  Por lo general, las vistas de diferencia de instantánea proporcionarán la información más útil sobre las pérdidas de memoria.  
   
--   [Ver detalles de la instantánea](#SnapshotDetails). Muestra datos detallados de uso de memoria de una sola instantánea.  
+- [Ver detalles de la instantánea](#SnapshotDetails). Muestra datos detallados de uso de memoria de una sola instantánea.  
   
--   [Ver una diferencia de instantánea](#SnapshotDiff). Muestra valores diferenciales entre las instantáneas. Estas vistas muestran diferencias respecto al tamaño del objeto y los recuentos de objetos.  
+- [Ver una diferencia de instantánea](#SnapshotDiff). Muestra valores diferenciales entre las instantáneas. Estas vistas muestran diferencias respecto al tamaño del objeto y los recuentos de objetos.  
   
-##  <a name="Isolate"></a> Isolate a memory leak  
- Estos pasos proporcionan un flujo de trabajo que puede ayudarte a usar el analizador de memoria de JavaScript de forma más eficaz. Estos pasos pueden resultar útiles si sospechas que tu aplicación tiene una pérdida de memoria. Para obtener un tutorial que le guíe a lo largo del proceso de identificación de una fuga de memoria en una aplicación en funcionamiento, vea [Tutorial: Buscar una fuga de memoria (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md).  
+## <a name="Isolate"></a> Isolate a memory leak  
+ Estos pasos proporcionan un flujo de trabajo que puede ayudarte a usar el analizador de memoria de JavaScript de forma más eficaz. Estos pasos pueden resultar útiles si sospechas que tu aplicación tiene una pérdida de memoria. Para obtener un tutorial que le guíe por el proceso de identificación de una fuga de memoria en una aplicación en funcionamiento, consulte [Tutorial: buscar una fuga de memoria (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md).  
   
 1. Abre la aplicación en Visual Studio.  
   
@@ -173,15 +168,15 @@ El analizador de memoria de JavaScript está disponible en Visual Studio para ay
   
     - Tamaño diferencial del montón (vínculo izquierdo debajo del tamaño del montón). El texto del vínculo muestra la diferencia entre el tamaño del montón de la instantánea actual y el de la instantánea anterior.  
   
-    - Recuento diferencial de objetos (vínculo derecho debajo del recuento de objetos). El texto del vínculo muestra dos valores (por ejemplo, +1858 / -1765): El primer valor es el número de objetos nuevos agregados desde la instantánea anterior, mientras que el segundo es el número de objetos que se han quitado desde la instantánea anterior.  
+    - Recuento diferencial de objetos (vínculo derecho debajo del recuento de objetos). El texto del vínculo muestra dos valores (por ejemplo, +1858/-1765): el primer valor es el número de objetos nuevos agregados desde la instantánea anterior, mientras que el segundo es el número de objetos que se han quitado desde la instantánea anterior.  
   
       Estos vínculos abren una vista diferencial de detalles de instantánea de tipos en el montón, ordenada por tamaño retenido o recuento de objetos, en función de qué vínculo se abriera.  
   
 12. Elige una de las siguientes opciones de filtro **Ámbito** para ayudar a identificar problemas de uso de memoria:  
   
-    -   **Objetos dejados de la instantánea n.º 2**.  
+    - **Objetos dejados de la instantánea n.º 2**.  
   
-    -   **Objetos agregados entre las instantáneas n.º 2 y 3**  
+    - **Objetos agregados entre las instantáneas n.º 2 y 3**  
   
     > [!TIP]
     >  Usa la vista filtrada de objetos dejados desde la instantánea anterior para investigar pérdidas de memoria. Por ejemplo, si el recuento diferencial de objetos es de +205/-195, esta vista mostrará los 10 objetos dejados, que son probables candidatos para las pérdidas de memoria.  
@@ -196,7 +191,7 @@ El analizador de memoria de JavaScript está disponible en Visual Studio para ay
   
 14. Si hay demasiados objetos en la vista de objetos dejados, intenta aislar aún más el periodo en que se produce la pérdida de memoria y vuelve a tomar las tres instantáneas. Para aislar aún más la pérdida de memoria, use [Associate source code with memory usage data](#JSConsoleCommands), [Associate source code with memory usage data](#JSConsoleCommands)y otros datos de uso de memoria disponibles en el analizador de memoria.  
   
-##  <a name="LiveMemory"></a> Ver el resumen de uso de memoria activo  
+## <a name="LiveMemory"></a> Ver el resumen de uso de memoria activo  
  La vista de resumen de uso de memoria activo proporciona un gráfico de uso de memoria de la aplicación actual y una colección de todos los mosaicos de resumen de la instantánea. En esta vista, puedes realizar tareas básicas como tomar instantáneas, analizar información de resumen y navegar a otras vistas. Cuando se detiene la recolección de datos, el gráfico de memoria desaparece y solo se ve la vista [View a snapshot summary](#SnapshotSummary) .  
   
  El gráfico de memoria muestra una vista dinámica de la memoria de proceso de la aplicación, que incluye bytes privados, memoria nativa y el montón de JavaScript. El gráfico de memoria es una vista desplazable de la memoria de proceso. Este es su aspecto:  
@@ -207,7 +202,7 @@ El analizador de memoria de JavaScript está disponible en Visual Studio para ay
   
  Parte de la memoria mostrada en el gráfico de memoria está asignada por el runtime de JavaScript. No puedes controlar este uso de memoria en tu aplicación. El uso de memoria que se muestra en el gráfico aumenta cuando tomas la primera instantánea y, a continuación, aumenta más despacio para cada instantánea adicional.  
   
-##  <a name="SnapshotSummary"></a> View a snapshot summary  
+## <a name="SnapshotSummary"></a> View a snapshot summary  
  Para tomar una instantánea del estado actual del uso de memoria de la aplicación, elige **Tomar instantánea de montón** en el gráfico de memoria. Un mosaico de resumen de instantánea, que aparece en el resumen de uso de memoria activo (mientras se ejecuta la aplicación) y en el resumen de instantánea (cuando se detiene la aplicación), proporciona información sobre la pila de JavaScript y vínculos a información más detallada. Si tomas dos o más instantáneas, una instantánea proporciona información adicional comparando sus datos con los de la instantánea anterior.  
   
 > [!NOTE]
@@ -219,21 +214,21 @@ El analizador de memoria de JavaScript está disponible en Visual Studio para ay
   
  El resumen de la instantánea incluye:  
   
--   Título de la instantánea y marca de tiempo.  
+- Título de la instantánea y marca de tiempo.  
   
--   Recuento de posibles problemas (marcados con un icono azul de información). Este número, si aparece, identifica posibles problemas de memoria, como nodos que no están asociados a DOM. El recuento vincula a la vista Tipos de la instantánea, que está ordenada por tipo de problema para resaltar los problemas potenciales. Se muestra la descripción del problema con una información sobre herramientas.  
+- Recuento de posibles problemas (marcados con un icono azul de información). Este número, si aparece, identifica posibles problemas de memoria, como nodos que no están asociados a DOM. El recuento vincula a la vista Tipos de la instantánea, que está ordenada por tipo de problema para resaltar los problemas potenciales. Se muestra la descripción del problema con una información sobre herramientas.  
   
--   Tamaño del montón. Este número incluye los elementos y los objetos DOM que el runtime de JavaScript agrega al montón de JavaScript. El tamaño del montón vincula a la vista Tipos de la instantánea.  
+- Tamaño del montón. Este número incluye los elementos y los objetos DOM que el runtime de JavaScript agrega al montón de JavaScript. El tamaño del montón vincula a la vista Tipos de la instantánea.  
   
--   Tamaño diferencial del montón. Este valor muestra la diferencia entre el tamaño del montón de la instantánea actual y el de la instantánea anterior. El valor va seguido de una flecha arriba de color rojo si hay un aumento de memoria o de una flecha abajo de color verde si hay una disminución de memoria. Si el tamaño del montón no ha cambiado entre las instantáneas, verás el texto **No cambia** en lugar de un número. Para la primera instantánea, verás el texto **Línea de base**. El tamaño del montón diferencial es un vínculo a la vista Tipos de la diferencia de instantánea.  
+- Tamaño diferencial del montón. Este valor muestra la diferencia entre el tamaño del montón de la instantánea actual y el de la instantánea anterior. El valor va seguido de una flecha arriba de color rojo si hay un aumento de memoria o de una flecha abajo de color verde si hay una disminución de memoria. Si el tamaño del montón no ha cambiado entre las instantáneas, verás el texto **No cambia** en lugar de un número. Para la primera instantánea, verás el texto **Línea de base**. El tamaño del montón diferencial es un vínculo a la vista Tipos de la diferencia de instantánea.  
   
--   Recuento de objetos. Este recuento solo muestra los objetos creados en la aplicación y filtra los objetos integrados creados por el runtime de JavaScript. El recuento de objetos tiene un vínculo a la vista Tipos de los detalles de la instantánea.  
+- Recuento de objetos. Este recuento solo muestra los objetos creados en la aplicación y filtra los objetos integrados creados por el runtime de JavaScript. El recuento de objetos tiene un vínculo a la vista Tipos de los detalles de la instantánea.  
   
--   Recuento diferencial de objetos. Muestra dos valores: El primer valor es el número de objetos nuevos agregados desde la instantánea anterior, mientras que el segundo es el número de objetos que se han quitado desde la instantánea anterior. Por ejemplo, la ilustración muestra que se agregaron 1.859 objetos y se quitaron 1.733 objetos de la instantánea 1. Esta información va seguida de una flecha arriba de color rojo si el recuento total de objetos ha aumentado o de una flecha abajo de color verde si se ha reducido. Si el recuento de objetos no ha cambiado, verás el texto **No cambia** en lugar de un número. Para la primera instantánea, verás el texto **Línea de base**. El recuento diferencial de objetos es un vínculo a la vista Tipos de la diferencia de instantánea.  
+- Recuento diferencial de objetos. Esto muestra dos valores: el primer valor es el número de objetos nuevos agregados desde la instantánea anterior. El segundo valor es el número de objetos que se han quitado desde la instantánea anterior. Por ejemplo, la ilustración muestra que se agregaron 1.859 objetos y se quitaron 1.733 objetos de la instantánea 1. Esta información va seguida de una flecha arriba de color rojo si el recuento total de objetos ha aumentado o de una flecha abajo de color verde si se ha reducido. Si el recuento de objetos no ha cambiado, verás el texto **No cambia** en lugar de un número. Para la primera instantánea, verás el texto **Línea de base**. El recuento diferencial de objetos es un vínculo a la vista Tipos de la diferencia de instantánea.  
   
--   Captura de la pantalla en el momento en que se toma la instantánea.  
+- Captura de la pantalla en el momento en que se toma la instantánea.  
   
-##  <a name="SnapshotDetails"></a> Ver detalles de la instantánea  
+## <a name="SnapshotDetails"></a> Ver detalles de la instantánea  
  Puedes ver información detallada sobre el uso de memoria de cada instantánea en las vistas de detalles de la instantánea.  
   
  En la vista Resumen de la instantánea, elige un vínculo para ver los detalles de la instantánea. Por ejemplo, el vínculo de tamaño del montón abre los detalles de instantánea con la vista Tipos abierta de manera predeterminada.  
@@ -268,7 +263,7 @@ El analizador de memoria de JavaScript está disponible en Visual Studio para ay
   
 - **Recuento**. Número de instancias de objeto. Este valor solo aparece en la vista Tipos.  
   
-##  <a name="SnapshotDiff"></a> Ver una diferencia de instantánea  
+## <a name="SnapshotDiff"></a> Ver una diferencia de instantánea  
  En el analizador de memoria de JavaScript, puedes comparar una instantánea con la instantánea anterior en las vistas de diferencia de instantánea.  
   
  En la vista de resumen de la instantánea, puedes ver los detalles diferenciales de las instantáneas eligiendo los vínculos de tamaño diferencial del montón o de recuento diferencial de objetos después de haberse tomado dos o más instantáneas.  
@@ -301,22 +296,22 @@ El analizador de memoria de JavaScript está disponible en Visual Studio para ay
 > [!TIP]
 >  Se recomienda seguir los pasos de [Isolate a memory leak](#Isolate) y luego usar el filtro de objetos dejados **Ámbito** para ayudar a identificar los objetos que producen la pérdida de memoria.  
   
-##  <a name="FoldObjects"></a> Ver objetos por dominador  
+## <a name="FoldObjects"></a> Ver objetos por dominador  
  En las vistas Tipos y Dominadores, puede elegir si desea ver los objetos incluidos en los dominadores (esta es la vista predeterminada en la pestaña Dominadores). Al seleccionar esta vista, solo se muestran los dominadores en la vista de nivel superior de los objetos. (Los objetos que son descendientes de objetos no globales se ocultan en la vista de nivel superior). Para algunas aplicaciones, esto puede aclarar qué objetos causan una pérdida de memoria mediante la reducción del ruido en los datos.  
   
  Para alternar la vista de los objetos por dominador, elija el botón **Incluir objetos por dominador** . ![Doblar objetos en los dominadores](../profiling/media/js-mem-fold-objects.png "JS_Mem_Fold_Objects")  
   
  Para obtener más información sobre los dominadores, consulte [Ver detalles de la instantánea](#SnapshotDetails).  
   
-##  <a name="Filter"></a> Filtrar datos por identificador  
+## <a name="Filter"></a> Filtrar datos por identificador  
  En las vistas Dominadores y Tipos, puedes filtrar datos buscando determinados identificadores. Para buscar un identificador, simplemente escribe su nombre en el cuadro de texto **Filtro de identificador** arriba a la derecha. Al empezar a escribir caracteres, se filtran los identificadores que no contienen los caracteres escritos.  
   
  Cada vista tiene su propio filtro, por lo que el filtro no se conserva al pasar a otra vista.  
   
-##  <a name="ShowInRootsView"></a> Buscar un objeto en el árbol de objetos  
+## <a name="ShowInRootsView"></a> Buscar un objeto en el árbol de objetos  
  En las vistas Tipos y Dominadores, puedes ver la relación de un objeto determinado con el objeto `Global` . Los objetos con raíz en el objeto `Global` no se detectarán durante la recolección de elementos no utilizados. Puedes buscar fácilmente un objeto conocido en la vista Raíces sin buscar a través del árbol de objetos de `Global` . Para ello, abre el menú contextual de un objeto en la vista Dominadores o Tipo y elige **Mostrar en vista de raíces**.  
   
-##  <a name="References"></a> Ver referencias de objeto compartidas  
+## <a name="References"></a> Ver referencias de objeto compartidas  
  En las vistas Tipos y Dominadores, el panel inferior contiene una lista de referencias de objeto que muestra las referencias compartidas. Al elegir un objeto en el panel superior, la lista de referencias de objeto muestra todos los objetos que apuntan a ese objeto.  
   
 > [!NOTE]
@@ -328,15 +323,15 @@ El analizador de memoria de JavaScript está disponible en Visual Studio para ay
   
  ![Referencias a objetos con identificadores visibles](../profiling/media/js-mem-shared-refs.png "JS_Mem_Shared_Refs")  
   
-##  <a name="BuiltInValues"></a> Mostrar objetos integrados  
+## <a name="BuiltInValues"></a> Mostrar objetos integrados  
  De forma predeterminada, las vistas Dominadores y Tipos solo muestran los objetos que creas en la aplicación. Esto ayuda a filtrar información innecesaria y aislar problemas relacionados con la aplicación. Sin embargo, a veces puede ser útil ver todos los objetos que el runtime de JavaScript genera para la aplicación.  
   
  Para mostrar estos objetos, elija **Mostrar elementos integrados** en la lista de configuración ![Lista desplegable de configuración en el analizador de memoria](../profiling/media/js-mem-settings.png "JS_Mem_Settings"), en la esquina superior derecha del panel.  
   
-##  <a name="Save"></a> Guardar archivos de sesión de diagnóstico  
+## <a name="Save"></a> Guardar archivos de sesión de diagnóstico  
  Los resúmenes de instantánea de diagnóstico y sus vistas de detalles asociadas se guardan como archivos .diagsession. El**Explorador de soluciones** muestra las sesiones de diagnóstico anteriores en la carpeta Diagnostic Sessions. En el **Explorador de soluciones**, puedes abrir sesiones anteriores o quitar o cambiar el nombre de archivos.  
   
-##  <a name="JSConsoleCommands"></a> Associate source code with memory usage data  
+## <a name="JSConsoleCommands"></a> Associate source code with memory usage data  
  Para ayudar a aislar la sección de código que tienes problemas de memoria, usa los siguientes métodos:  
   
 - Busca nombres de clase e identificadores de elementos DOM en las vistas de detalles y de diferencias.  
@@ -377,36 +372,33 @@ if (performance && performance.mark) {
   
  ![Mediante una marca de perfil](../profiling/media/js-mem-performance-marks.png "JS_Mem_Performance_Marks")  
   
-##  <a name="Tips"></a> Sugerencias para identificar problemas de memoria  
+## <a name="Tips"></a> Sugerencias para identificar problemas de memoria  
   
--   Siga el flujo de trabajo descrito en [Aislar una pérdida de memoria](#Isolate) y use el filtro **Objetos dejados de la instantánea nº \<número>** en una vista de diferencias para identificar los posibles candidatos para las pérdidas de memoria.  
+- Siga el flujo de trabajo descrito en [Aislar una pérdida de memoria](#Isolate) y use el filtro **Objetos dejados de la instantánea nº \<número>** en una vista de diferencias para identificar los posibles candidatos para las pérdidas de memoria.  
   
--   Usa [Buscar un objeto en el árbol de objetos](#ShowInRootsView) para ver dónde se hace referencia a un objeto en la jerarquía de memoria. La vista Raíces muestra cómo está enraizado un objeto al objeto global, lo que evitaría que se detectara durante la recolección de elementos no utilizados.  
+- Usa [Buscar un objeto en el árbol de objetos](#ShowInRootsView) para ver dónde se hace referencia a un objeto en la jerarquía de memoria. La vista Raíces muestra cómo está enraizado un objeto al objeto global, lo que evitaría que se detectara durante la recolección de elementos no utilizados.  
   
--   Cuando la causa de un problema de memoria resulta difícil de identificar, usa las distintas vistas (como Dominadores y Tipos) para buscar elementos en común, especialmente para ayudar a identificar un objeto (o unos pocos objetos) que puedan contener referencias a muchos de los demás objetos que aparecen en la vista.  
+- Cuando la causa de un problema de memoria resulta difícil de identificar, usa las distintas vistas (como Dominadores y Tipos) para buscar elementos en común, especialmente para ayudar a identificar un objeto (o unos pocos objetos) que puedan contener referencias a muchos de los demás objetos que aparecen en la vista.  
   
--   Buscar objetos que se conserven en memoria involuntariamente después de que el usuario haya navegado a una nueva página. Esta es una causa frecuente de los problemas de memoria. Por ejemplo:  
+- Buscar objetos que se conserven en memoria involuntariamente después de que el usuario haya navegado a una nueva página. Esta es una causa frecuente de los problemas de memoria. Por ejemplo:  
   
-    -   El uso incorrecto de la función [URL.CreateObjectUrl](http://msdn.microsoft.com/library/windows/apps/hh453196.aspx) puede producir este problema.  
+    - El uso incorrecto de la función [URL.CreateObjectUrl](http://msdn.microsoft.com/library/windows/apps/hh453196.aspx) puede producir este problema.  
   
-    -   Algunos objetos pueden proporcionar un método `dispose` y recomendaciones de uso. Por ejemplo, debería llamar a `dispose` en [WinJS.Binding.List](http://msdn.microsoft.com/library/windows/apps/Hh700774.aspx) si llama al método `createFiltered` de la lista y luego sale de una página.  
+    - Algunos objetos pueden proporcionar un método `dispose` y recomendaciones de uso. Por ejemplo, debería llamar a `dispose` en [WinJS.Binding.List](http://msdn.microsoft.com/library/windows/apps/Hh700774.aspx) si llama al método `createFiltered` de la lista y luego sale de una página.  
   
-    -   Podrías tener que quitar uno o varios agentes de escucha de eventos. Para obtener más información, consulta [View DOM event listeners](../debugger/view-dom-event-listeners.md).  
+    - Podrías tener que quitar uno o varios agentes de escucha de eventos. Para obtener más información, consulta [View DOM event listeners](../debugger/view-dom-event-listeners.md).  
   
--   Mira la última parte de [este vídeo](http://channel9.msdn.com/Events/Build/2013/3-316) de la conferencia Build 2013 sobre el analizador de memoria de JavaScript.  
+- Mira la última parte de [este vídeo](http://channel9.msdn.com/Events/Build/2013/3-316) de la conferencia Build 2013 sobre el analizador de memoria de JavaScript.  
   
--   Lee cómo [administrar la memoria en aplicaciones de la Tienda Windows](http://msdn.microsoft.com/magazine/jj651575.aspx).  
+- Lee cómo [administrar la memoria en aplicaciones de la Tienda Windows](http://msdn.microsoft.com/magazine/jj651575.aspx).  
   
--   Considera la posibilidad de modificar temporalmente el código para aislar problemas. Por ejemplo, puedes:  
+- Considera la posibilidad de modificar temporalmente el código para aislar problemas. Por ejemplo, puedes:  
   
-    -   Usar los comandos del analizador de memoria, `console.takeSnapshot` y `performance.mark`. (Vea [Associate source code with memory usage data](#JSConsoleCommands).)  
+    - Usar los comandos del analizador de memoria, `console.takeSnapshot` y `performance.mark`. (Vea [Associate source code with memory usage data](#JSConsoleCommands).)  
   
          Puedes usar estos comandos para intentar aislar los problemas que no se pueden aislar manualmente tomando una instantánea del montón.  
   
-    -   Crea un objeto de prueba y realiza un seguimiento de él en las vistas del analizador de memoria de JavaScript, como la vista Tipos. Por ejemplo, puedes adjuntar un objeto muy grande a otro para ver si un objeto o elemento determinado se ha detectado durante la recolección de elementos no utilizados.  
+    - Crea un objeto de prueba y realiza un seguimiento de él en las vistas del analizador de memoria de JavaScript, como la vista Tipos. Por ejemplo, puedes adjuntar un objeto muy grande a otro para ver si un objeto o elemento determinado se ha detectado durante la recolección de elementos no utilizados.  
   
 ## <a name="see-also"></a>Vea también  
- [Tutorial: Búsqueda de una pérdida de memoria (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md)
-
-
-
+ [Tutorial: Buscar fugas de memoria (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md)

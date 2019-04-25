@@ -1,14 +1,9 @@
 ---
 title: Proteger aplicaciones | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - security [Visual Studio], applications
 - application design, securability
@@ -16,13 +11,13 @@ ms.assetid: 7d32c4cf-8bec-4307-a2a8-42f0ceddf3eb
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 2838534f8241b347cc22b3c50c595b3973f14b56
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: d5e7bba9dd9806952fc56ac62b2322f00aebc5ed
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49291283"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54800779"
 ---
 # <a name="securing-applications"></a>Proteger aplicaciones
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,19 +30,19 @@ Aunque la mayoría de las aplicaciones presentan desafíos en relación con la s
  [Procedimientos recomendados para la seguridad](http://msdn.microsoft.com/library/86acaccf-cdb4-4517-bd58-553618e3ec42)  
  Proporciona información sobre las características y las prácticas de seguridad disponibles al trabajar con Visual C++.  
   
- [NO INCLUIDO EN COMPILACIÓN: Seguridad y programación (C# y Visual Basic)](http://msdn.microsoft.com/en-us/227e2863-cf09-4c28-9611-bcd82be5e994)  
+ [NO INCLUIDO EN COMPILACIÓN: Seguridad y programación (C# y Visual Basic)](http://msdn.microsoft.com/227e2863-cf09-4c28-9611-bcd82be5e994)  
  Proporciona información sobre los tres aspectos relacionados con la seguridad que más preocupan a los desarrolladores de Visual Basic y C#: privilegios, aplicaciones web e instalación de Visual Studio.  
   
 ## <a name="securing-mobile-applications"></a>Proteger aplicaciones móviles  
  A medida que aumenta la popularidad de los dispositivos móviles, la seguridad de la información y de los datos en estos dispositivos se está convirtiendo en una cuestión de mayor importancia.  
   
- [Consideraciones de seguridad para dispositivos](http://msdn.microsoft.com/en-us/45fab484-8718-452e-8210-04fda3c6cb87)  
+ [Consideraciones de seguridad para dispositivos](http://msdn.microsoft.com/45fab484-8718-452e-8210-04fda3c6cb87)  
  Describe los diversos factores que influyen en la directiva de seguridad de dispositivos.  
   
- [Objetivos de seguridad para .NET Compact Framework](http://msdn.microsoft.com/en-us/64ac2770-e2bc-40a3-abbf-56c8a2c0e364)  
+ [Objetivos de seguridad para .NET Compact Framework](http://msdn.microsoft.com/64ac2770-e2bc-40a3-abbf-56c8a2c0e364)  
  Describe los objetivos de seguridad para .NET Compact Framework.  
   
- [Diseñar páginas seguras de formularios Mobile Web Forms](http://msdn.microsoft.com/en-us/b69727c1-f81f-4221-a116-8f92f769365f)  
+ [Diseñar páginas seguras de formularios Mobile Web Forms](http://msdn.microsoft.com/b69727c1-f81f-4221-a116-8f92f769365f)  
  Explica la seguridad en el planeamiento, implementación y compatibilidad de dispositivos móviles y redes inalámbricas.  
   
 ## <a name="securing-web-applications"></a>Proteger aplicaciones Web  
@@ -59,10 +54,10 @@ Aunque la mayoría de las aplicaciones presentan desafíos en relación con la s
  [Seguridad de aplicaciones Web ASP.NET](http://msdn.microsoft.com/library/658d0430-1644-4744-b52d-08b0d6fcacb8)  
  Explica cómo solucionar problemas de autorización y autenticación en ASP.NET.  
   
- [Consideraciones de seguridad para JScript](http://msdn.microsoft.com/en-us/8572efc9-071a-472d-a1a4-f0a3b42644c1)  
+ [Consideraciones de seguridad para JScript](http://msdn.microsoft.com/8572efc9-071a-472d-a1a4-f0a3b42644c1)  
  Describe algunos problemas relacionados con la seguridad que pueden encontrar los programadores de JScript.  
   
- [Cómo utilizar seguridad de transporte](http://msdn.microsoft.com/en-us/16210e41-5492-4cc8-9002-7366b1fc7297)  
+ [Cómo utilizar seguridad de transporte](http://msdn.microsoft.com/16210e41-5492-4cc8-9002-7366b1fc7297)  
  Describe cómo usar la seguridad de transporte para la autenticación cuando se establece conexión con un servicio WCF.  
   
 ## <a name="securing-desktop-applications"></a>Proteger aplicaciones de escritorio  
@@ -73,6 +68,3 @@ Aunque la mayoría de las aplicaciones presentan desafíos en relación con la s
   
 ## <a name="see-also"></a>Vea también  
  [Seguridad](../ide/security-in-visual-studio.md)
-
-
-

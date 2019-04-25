@@ -1,49 +1,44 @@
 ---
 title: Servicio de lenguaje y puntos de extensión del Editor | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - extension points
 ms.assetid: 91a6417e-a6fe-4bc2-9d9f-5173c634a99b
 caps.latest.revision: 34
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 0bcbef5094bd12392b7ea79865e1d28e2934a11e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 295ff3e48e2b0598a8cf33bfd4842e35b7469737
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51743581"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085527"
 ---
 # <a name="language-service-and-editor-extension-points"></a>Servicio de lenguaje y puntos de extensión del editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 El editor proporciona puntos de extensión que se pueden ampliar como componentes de Managed Extensibility Framework (MEF), incluidos la mayoría de las características de servicio de lenguaje. Estas son las categorías de punto de extensión principal:  
   
--   Tipos de contenido  
+- Tipos de contenido  
   
--   Tipos de clasificación y formatos de clasificación  
+- Tipos de clasificación y formatos de clasificación  
   
--   Márgenes y barras de desplazamiento  
+- Márgenes y barras de desplazamiento  
   
--   Etiquetas  
+- Etiquetas  
   
--   Elementos gráficos  
+- Elementos gráficos  
   
--   Procesadores de mouse  
+- Procesadores de mouse  
   
--   Quitar controladores  
+- Quitar controladores  
   
--   Opciones  
+- Opciones  
   
--   IntelliSense  
+- IntelliSense  
   
 ## <a name="extending-content-types"></a>Extender tipos de contenido  
  Tipos de contenido son las definiciones de los tipos de texto que se administra mediante el editor, por ejemplo, "text", "código" o "CSharp". Definir un nuevo tipo de contenido al declarar una variable del tipo <xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition> y lo que proporciona el nuevo tipo de contenido de un nombre único. Para registrar el tipo de contenido con el editor, exportarlo junto con los siguientes atributos:  
@@ -283,7 +278,7 @@ internal class TestTaggerProvider : ITaggerProvider
 - <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>: asociado a un elemento de gráfico.  
   
   > [!NOTE]
-  >  Para obtener un ejemplo de un <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>, consulte la definición de HighlightWordTag en [Tutorial: texto resaltado](../extensibility/walkthrough-highlighting-text.md).  
+  >  Para obtener un ejemplo de un <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>, consulte la definición de HighlightWordTag en [Tutorial: Resaltar texto](../extensibility/walkthrough-highlighting-text.md).  
   
 - <xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag>: asociados con las regiones que se pueden expandir o contraer de esquematización.  
   
@@ -329,7 +324,7 @@ internal class HighlightWordFormatDefinition : MarkerFormatDefinition
  Para aplicar esta definición de formato a una etiqueta, haga referencia al nombre que se establece en el atributo de nombre de la clase (no el nombre para mostrar).  
   
 > [!NOTE]
->  Para obtener un ejemplo de un <xref:Microsoft.VisualStudio.Text.Classification.MarkerFormatDefinition>, consulte la clase HighlightWordFormatDefinition en [Tutorial: texto resaltado](../extensibility/walkthrough-highlighting-text.md).  
+>  Para obtener un ejemplo de un <xref:Microsoft.VisualStudio.Text.Classification.MarkerFormatDefinition>, consulte la clase HighlightWordFormatDefinition en [Tutorial: Resaltar texto](../extensibility/walkthrough-highlighting-text.md).  
   
 ## <a name="extending-adornments"></a>Ampliar los elementos gráficos  
  Los elementos gráficos definen los efectos visuales que pueden agregarse al texto que se muestra en una vista de texto o para el texto de vista de sí mismo. Puede definir su propio elemento de gráfico como cualquier tipo de <xref:System.Windows.UIElement>.  
@@ -338,7 +333,7 @@ internal class HighlightWordFormatDefinition : MarkerFormatDefinition
   
 - <xref:Microsoft.VisualStudio.Utilities.NameAttribute>: el nombre del elemento gráfico.  
   
-- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: la ordenación del elemento de gráfico con respecto a otros niveles del elemento gráfico. La clase <xref:Microsoft.VisualStudio.Text.Editor.PredefinedAdornmentLayers> define cuatro niveles de forma predeterminada: selección, esquematización, símbolo de intercalación y el texto.  
+- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: la ordenación del elemento de gráfico con respecto a otros niveles del elemento gráfico. La clase <xref:Microsoft.VisualStudio.Text.Editor.PredefinedAdornmentLayers> define cuatro niveles de forma predeterminada: Selección, esquematización, símbolo de intercalación y texto.  
   
   El ejemplo siguiente muestra los atributos de exportación en una definición de la capa de elemento gráfico.  
   
@@ -414,21 +409,21 @@ internal sealed class TestMouseProcessorProvider : IMouseProcessorProvider
   
 - <xref:Microsoft.VisualStudio.Text.Editor.DragDrop.DropFormatAttribute>: el formato de texto para el que este controlador de colocación es válido. Los siguientes formatos se controlan en el orden de prioridad de mayor a menor:  
   
-  1.  Cualquier formato personalizado  
+  1. Cualquier formato personalizado  
   
-  2.  Entrega de archivos  
+  2. FileDrop  
   
-  3.  EnhancedMetafile  
+  3. EnhancedMetafile  
   
-  4.  WaveAudio  
+  4. WaveAudio  
   
-  5.  RIFF  
+  5. RIFF  
   
-  6.  DIF  
+  6. Dif  
   
-  7.  Configuración regional  
+  7. Configuración regional  
   
-  8.  Paleta  
+  8. Paleta  
   
   9. PenData  
   
@@ -436,11 +431,11 @@ internal sealed class TestMouseProcessorProvider : IMouseProcessorProvider
   
   11. SymbolicLink  
   
-  12. XAML  
+  12. Xaml  
   
   13. XamlPackage  
   
-  14. TIFF  
+  14. Tiff  
   
   15. Bitmap  
   
@@ -512,39 +507,39 @@ internal sealed class TestOption : EditorOptionDefinition<bool>
 ### <a name="implementing-an-intellisense-source"></a>Implementación de un origen de IntelliSense  
  Para personalizar un origen, debe implementar uno o más de las siguientes interfaces de origen:  
   
--   <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource>  
+- <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource>  
   
--   <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoSource>  
+- <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoSource>  
   
--   <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSource>  
+- <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSource>  
   
--   <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>  
+- <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>  
   
 > [!IMPORTANT]
 >  <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSource> en desuso en favor de <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>.  
   
  Además, debe implementar un proveedor de la misma clase:  
   
--   <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider>  
+- <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider>  
   
--   <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoSourceProvider>  
+- <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoSourceProvider>  
   
--   <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSourceProvider>  
+- <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSourceProvider>  
   
--   <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>  
+- <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>  
   
 > [!IMPORTANT]
 >  <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSourceProvider> en desuso en favor de <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>.  
   
  Debe exportar el proveedor junto con los siguientes atributos:  
   
--   <xref:Microsoft.VisualStudio.Utilities.NameAttribute>: el nombre del origen.  
+- <xref:Microsoft.VisualStudio.Utilities.NameAttribute>: el nombre del origen.  
   
--   <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: el tipo de contenido (por ejemplo, "text" o "code") al que se aplica el origen.  
+- <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: el tipo de contenido (por ejemplo, "text" o "code") al que se aplica el origen.  
   
--   <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: el orden en el que debe aparecer el origen (con respecto a otros orígenes).  
+- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: el orden en el que debe aparecer el origen (con respecto a otros orígenes).  
   
--   El ejemplo siguiente muestra los atributos de exportación en un proveedor de origen de finalización.  
+- El ejemplo siguiente muestra los atributos de exportación en un proveedor de origen de finalización.  
   
 ```  
 Export(typeof(ICompletionSourceProvider))]  
@@ -556,9 +551,9 @@ internal class TestCompletionSourceProvider : ICompletionSourceProvider
   
  Para obtener más información acerca de cómo implementar orígenes de IntelliSense, vea los siguientes tutoriales:  
   
- [Tutorial: visualización de información sobre herramientas de QuickInfo](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
+ [Tutorial: Mostrar información rápida](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
   
- [Tutorial: visualización de la ayuda de firma](../extensibility/walkthrough-displaying-signature-help.md)  
+ [Tutorial: Mostrar la Ayuda de firma](../extensibility/walkthrough-displaying-signature-help.md)  
   
  [Tutorial: Mostrar la finalización de instrucciones](../extensibility/walkthrough-displaying-statement-completion.md)  
   
@@ -583,5 +578,4 @@ internal class TestIntellisenseControllerProvider : IIntellisenseControllerProvi
   
  Para obtener más información sobre el uso de controladores de IntelliSense, vea los siguientes tutoriales:  
   
- [Tutorial: visualización de información sobre herramientas de QuickInfo](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)
-
+ [Tutorial: Mostrar información rápida](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)

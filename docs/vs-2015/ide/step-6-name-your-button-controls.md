@@ -1,27 +1,22 @@
 ---
-title: 'Paso 6: Asignar un nombre a los controles de botón | Microsoft Docs'
-ms.custom: ''
+title: 'Paso 6: Nombre de los controles de botón | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 56b3baa3-651e-4ad4-8942-e334c5c57158
 caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: e02c240f8e4146ce1c87fd1d90c30eb7787cef5d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 98a7159f750a036ed588fd01761e20a2a23ee84e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303789"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059973"
 ---
-# <a name="step-6-name-your-button-controls"></a>Paso 6: Asignar un nombre a los controles de botón
+# <a name="step-6-name-your-button-controls"></a>Paso 6: asignación de nombres a los controles de botón
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Hay solo un control PictureBox en el formulario. Al agregarlo, el IDE lo denominó automáticamente **pictureBox1**. Solamente hay una casilla, denominada **checkBox1**. Pronto, escribirá código, y ese código hará referencia a CheckBox y PictureBox. Como no hay más que un ejemplar de cada control, entenderá lo que significan los términos **pictureBox1** o **checkBox1** cuando los vea en su código.  
@@ -31,26 +26,26 @@ Hay solo un control PictureBox en el formulario. Al agregarlo, el IDE lo denomin
   
  Hay cuatro botones en el formulario, que el IDE ha denominado **button1**, **button2**, **button3**y **button4**. Solo con mirar los nombres actuales no sabemos cuál es el botón **Cerrar** ni cuál es el botón **Mostrar una imagen** . Por eso resulta útil asignar a los controles de botón nombres más descriptivos.  
   
- ![vínculo al vídeo](../data-tools/media/playvideo.gif "PlayVideo")Para obtener una versión en vídeo de este tema, vea el [Tutorial 1: Crear un visor de imágenes en Visual Basic (vídeo 3)](http://go.microsoft.com/fwlink/?LinkId=205213) o el [Tutorial 1: Crear un visor de imágenes en C# (vídeo 3)](http://go.microsoft.com/fwlink/?LinkId=205202). En estos vídeos se utilizó una versión anterior de Visual Studio, por lo que hay ligeras diferencias en algunos comandos de menú y otros elementos de la interfaz de usuario. Sin embargo, los conceptos y procedimientos funcionan de forma similar en la versión actual de Visual Studio.  
+ ![vínculo a vídeo](../data-tools/media/playvideo.gif "PlayVideo")para una versión en vídeo de este tema, consulte [Tutorial 1: Crear un visor de imágenes en Visual Basic - vídeo 3](http://go.microsoft.com/fwlink/?LinkId=205213) o [Tutorial 1: Crear un visor de imágenes en C# - vídeo 3](http://go.microsoft.com/fwlink/?LinkId=205202). En estos vídeos se utilizó una versión anterior de Visual Studio, por lo que hay ligeras diferencias en algunos comandos de menú y otros elementos de la interfaz de usuario. Sin embargo, los conceptos y procedimientos funcionan de forma similar en la versión actual de Visual Studio.  
   
 ### <a name="to-name-your-button-controls"></a>Para dar un nombre a los controles de botón  
   
-1.  En el formulario, elija el botón **Cerrar** . (Si todavía están seleccionados todos los botones, elija la tecla ESC para cancelar la selección). Desplácese en la ventana **Propiedades** hasta que vea la propiedad **(Name)**. (La propiedad **(Name)** se encuentra cerca de la parte superior cuando las propiedades están por orden alfabético). Cambie el nombre a **closeButton**, como se muestra en la siguiente imagen.  
+1. En el formulario, elija el botón **Cerrar** . (Si todavía están seleccionados todos los botones, elija la tecla ESC para cancelar la selección). Desplácese en la ventana **Propiedades** hasta que vea la propiedad **(Name)**. (La propiedad **(Name)** se encuentra cerca de la parte superior cuando las propiedades están por orden alfabético). Cambie el nombre a **closeButton**, como se muestra en la siguiente imagen.  
   
      ![Ventana Propiedades con el nombre closeButton](../ide/media/express-setnameproperty.png "Express_SetNameProperty")  
 Ventana Propiedades mostrando el nombre closeButton  
   
     > [!NOTE]
-    >  If you try changing the name of your button to **closeButton**, with a space between the words close and Button, the IDE displays an error message: "Property value is not valid." En los nombres de los controles no se permiten espacios (ni algunos otros caracteres).  
+    >  Si intenta cambiar el nombre del botón por **closeButton**, con un espacio entre las palabras Botón y Cerrar, el IDE muestra el mensaje de error: "El valor de la propiedad no es válido". En los nombres de los controles no se permiten espacios (ni algunos otros caracteres).  
   
-2.  Cambie el nombre de los otros tres botones a **backgroundButton**, **clearButton**y **showButton**. Puede comprobar los nombres eligiendo la lista desplegable de selección de controles de la ventana **Propiedades** . Aparecerán los nuevos nombres de los botones.  
+2. Cambie el nombre de los otros tres botones a **backgroundButton**, **clearButton**y **showButton**. Puede comprobar los nombres eligiendo la lista desplegable de selección de controles de la ventana **Propiedades** . Aparecerán los nuevos nombres de los botones.  
   
-3.  Haga doble clic en el botón **Mostrar una imagen** del formulario. Si lo desea, también puede elegir el botón **Mostrar una imagen** del formulario y, a continuación, la tecla ENTRAR. Al hacerlo, el IDE abre una pestaña adicional en la ventana principal denominada **Form1.cs** (**Form1.vb** si utiliza Visual Basic). En esta pestaña se muestra el archivo de código subyacente del formulario, tal y como se muestra en la siguiente imagen.  
+3. Haga doble clic en el botón **Mostrar una imagen** del formulario. Si lo desea, también puede elegir el botón **Mostrar una imagen** del formulario y, a continuación, la tecla ENTRAR. Al hacerlo, el IDE abre una pestaña adicional en la ventana principal denominada **Form1.cs** (**Form1.vb** si utiliza Visual Basic). En esta pestaña se muestra el archivo de código subyacente del formulario, tal y como se muestra en la siguiente imagen.  
   
      ![Pestaña Form1.cs con código de Visual C&#35;](../ide/media/express-showbuttoncode.png "Express_ShowButtonCode")  
 Pestaña Form1.cs con código de Visual C#  
   
-4.  Céntrese en esta parte del código. (Si utiliza Visual Basic, elija la pestaña **VB** que se muestra a continuación para ver la versión de Visual Basic del código).  
+4. Céntrese en esta parte del código. (Si utiliza Visual Basic, elija la pestaña **VB** que se muestra a continuación para ver la versión de Visual Basic del código).  
   
      [!code-csharp[VbExpressTutorial1Step6#1](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial1step6/cs/form1.cs#1)]
      [!code-vb[VbExpressTutorial1Step6#1](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial1step6/vb/form1.vb#1)]  
@@ -60,9 +55,9 @@ Pestaña Form1.cs con código de Visual C#
     > [!NOTE]
     >  En este tutorial, el código de Visual Basic que se genera automáticamente se ha simplificado quitando todo lo que hay entre los paréntesis (). Siempre que esto sucede, se puede quitar el mismo código. El programa funcionará en ambos casos. En el resto de los tutoriales, se simplifica el código generado automáticamente siempre que sea posible.  
   
-5.  Vuelva a elegir la pestaña del Diseñador de Windows Forms (**Form1.cs [Diseño]** en Visual C#, **Form1.vb [Diseño]** en Visual Basic) y luego abra el archivo de código para que el botón **Borrar la imagen** cree un método para él en el código del formulario. Repita el procedimiento con los dos botones restantes. El IDE agrega cada vez un nuevo método al archivo de código del formulario.  
+5. Vuelva a elegir la pestaña del Diseñador de Windows Forms (**Form1.cs [Diseño]** en Visual C#, **Form1.vb [Diseño]** en Visual Basic) y luego abra el archivo de código para que el botón **Borrar la imagen** cree un método para él en el código del formulario. Repita el procedimiento con los dos botones restantes. El IDE agrega cada vez un nuevo método al archivo de código del formulario.  
   
-6.  Si desea agregar varios métodos, abra el archivo de código del control CheckBox en el Diseñador de Windows Forms para hacer que el IDE agregue un método `checkBox1_CheckedChanged()` . Cada vez que el usuario activa o desactiva la casilla, se llama a este método.  
+6. Si desea agregar varios métodos, abra el archivo de código del control CheckBox en el Diseñador de Windows Forms para hacer que el IDE agregue un método `checkBox1_CheckedChanged()` . Cada vez que el usuario activa o desactiva la casilla, se llama a este método.  
   
     > [!NOTE]
     >  Cuando se trabaja en un programa, a menudo se utilizan alternativamente el editor de código y el Diseñador de Windows Forms. El IDE facilita la navegación en el proyecto. Use el **Explorador de soluciones** para abrir el Diseñador de Windows Forms haciendo doble clic en **Form1.cs** en Visual C# o en **Form1.vb** en Visual Basic o, en la barra de menús, elija **Ver**, **Diseñador**.  
@@ -82,9 +77,6 @@ Pestaña Form1.cs con código de Visual C#
   
 ### <a name="to-continue-or-review"></a>Para continuar o revisar  
   
--   Para ir al siguiente paso del tutorial, vea [Paso 7: Agregar componentes de diálogo al formulario](../ide/step-7-add-dialog-components-to-your-form.md).  
+- Para ir al siguiente paso del tutorial, vea [Paso 7: Agregar componentes de diálogo al formulario](../ide/step-7-add-dialog-components-to-your-form.md).  
   
--   Para volver al paso anterior del tutorial, vea [Paso 5: Agregar controles al formulario](../ide/step-5-add-controls-to-your-form.md).
-
-
-
+- Para volver al paso anterior del tutorial, vea [Paso 5: Agregar controles al formulario](../ide/step-5-add-controls-to-your-form.md).

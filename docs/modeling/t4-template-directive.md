@@ -4,16 +4,15 @@ ms.date: 11/04/2016
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 337560d6db6d8747b1aedd23d789f2ef56d045c9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 56332c58c48903a13a5b1538cf18986ba81e20a7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53885293"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059011"
 ---
 # <a name="t4-template-directive"></a>Directiva de plantilla T4
 
@@ -36,7 +35,7 @@ Ejemplo:
 `compilerOptions="optimize+"`
 
 Valores válidos:
- 
+
 Cualquier opción del compilador válida.
 
 Se omite para plantillas (preprocesadas) en tiempo de ejecución.
@@ -46,11 +45,11 @@ Estas opciones se aplican cuando la plantilla se ha convertido en [!INCLUDE[cspr
 ## <a name="culture-attribute"></a>culture (atributo)
 
 Ejemplo:
- 
+
 `culture="de-CH"`
 
 Valores válidos:
- 
+
 "", la referencia cultural, que es la predeterminada.
 
 Una referencia cultural expresada como una cadena con el formato xx-XX. Por ejemplo, es-ES, ja-JP, de-CH, de-DE. Para obtener más información, consulta <xref:System.Globalization.CultureInfo?displayProperty=fullName>.
@@ -66,11 +65,11 @@ debug="true"
 ```
 
 Valores válidos:
- 
+
 `true`
- 
+
 `false` (valor predeterminado)
- 
+
 Si el atributo `debug` es `true`, el archivo de código intermedio contiene información que permite al depurador identificar con más precisión la posición de la plantilla donde se produjo una interrupción o una excepción.
 
 Para plantillas en tiempo de diseño se escribirá el archivo de código intermedio para su **% TEMP %** directory.
@@ -88,9 +87,9 @@ hostspecific="true"
 Valores válidos:
 
 `true`
- 
+
 `false` (valor predeterminado)
- 
+
 `trueFromBase`
 
 Si establece el valor de este atributo en `true`, una propiedad denominada `Host` se agrega a la clase generada por la plantilla de texto. La propiedad es una referencia al host del motor de transformación y se declara como <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>. Si ha definido un host personalizado, puede convertirlo al tipo de host personalizado.
@@ -207,13 +206,15 @@ protected override void SpecificFragment2()
 #>
 ```
 
- Código de aplicación para invocar a DerivedTemplate1:
- ```csharp
+Código de aplicación para invocar a DerivedTemplate1:
+
+```csharp
 Console.WriteLine(new DerivedTemplate().TransformText());
 ```
 
- Resultado que se obtiene:
- ```
+Resultado que se obtiene:
+
+```
 This is the common header.
    Fragment 1 for DerivedTemplate1
 A common central text.
@@ -236,7 +237,7 @@ Para una plantilla de texto en tiempo de diseño, puede especificar cualquier cl
 
 Para obtener más información, consulte ["Herencia en plantillas de texto" en el Blog de Gareth Jones](http://go.microsoft.com/fwlink/?LinkId=208373).
 
-## <a name="linepragmas-attribute"></a>Atributo LinePragmas
+## <a name="linepragmas-attribute"></a>linePragmas attribute
 
 Ejemplo:
 

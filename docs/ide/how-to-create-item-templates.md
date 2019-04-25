@@ -1,25 +1,24 @@
 ---
 title: Crear plantillas de elemento
 ms.date: 01/02/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - item templates [Visual Studio], creating
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: d921257e202e3b8175fcfd01910c00ece4306136
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: a861843da139701c23e38df11c7ad380c047a846
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53952266"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416410"
 ---
 # <a name="how-to-create-item-templates"></a>Procedimiento Crear plantillas de elemento
 
 En este tema se muestra cómo crear una plantilla de elemento con el **Asistente para exportar plantillas**. Si la plantilla consta de varios archivos, vea [Cómo: Crear plantillas de elementos de varios archivos](../ide/how-to-create-multi-file-item-templates.md).
 
-## <a name="to-add-a-user-item-template-to-the-add-new-item-dialog-box"></a>Para agregar una plantilla de elemento de usuario al cuadro de diálogo Agregar nuevo elemento
+## <a name="add-an-item-template-to-the-add-new-item-dialog-box"></a>Incorporación de una plantilla de elemento al cuadro de diálogo Agregar nuevo elemento
 
 1. Cree o abra un proyecto en Visual Studio.
 
@@ -47,7 +46,7 @@ En este tema se muestra cómo crear una plantilla de elemento con el **Asistente
 
    La plantilla de elemento aparece en el cuadro de diálogo **Agregar nuevo elemento**. Si ha agregado una descripción en el **Asistente para exportar plantillas**, la descripción aparecerá en la parte derecha del cuadro de diálogo.
 
-## <a name="to-enable-the-item-template-to-be-used-in-a-universal-windows-app-project"></a>Para permitir que se use la plantilla de elemento en un proyecto de Aplicación universal de Windows
+## <a name="enable-the-item-template-to-be-used-in-a-universal-windows-app-project"></a>Habilitación del uso de plantillas de elemento en un proyecto de aplicación Windows universal
 
 El asistente hace gran parte del trabajo de creación de una plantilla básica, pero en muchos casos deberá modificar manualmente el archivo *.vstemplate* después de haber exportado la plantilla. Por ejemplo, si quiere que el elemento aparezca en el cuadro de diálogo **Agregar nuevo elemento** de un proyecto de Aplicación universal de Windows, tendrá que efectuar unos pasos adicionales.
 
@@ -69,7 +68,7 @@ El asistente hace gran parte del trabajo de creación de una plantilla básica, 
 
 Ahora puede agregar un elemento basado en esta plantilla a un proyecto de Windows universal desde el cuadro de diálogo **Agregar nuevo elemento**.
 
-## <a name="to-enable-templates-for-specific-project-subtypes"></a>Para habilitar las plantillas para subtipos de proyecto específicos
+## <a name="enable-templates-for-specific-project-subtypes"></a>Habilitación de plantillas para subtipos de proyecto específicos
 
 Puede especificar que la plantilla solo debería aparecer para determinados subtipos de proyecto, como Windows, Office, base de datos o web.
 
@@ -104,25 +103,35 @@ En el ejemplo siguiente se muestra una plantilla de elementos para los proyectos
 </VSTemplate>
 ```
 
-## <a name="to-manually-create-an-item-template-without-using-the-export-template-wizard"></a>Para crear manualmente una plantilla de elementos sin usar el Asistente para exportar plantillas
+## <a name="manually-create-an-item-template"></a>Creación manual de una plantilla de elemento
 
 En algunos casos es posible que quiera crear una plantilla de elementos manualmente desde cero.
 
 1. Cree un proyecto y un elemento de proyecto.
 
-1. Modifique el elemento de proyecto hasta que se pueda guardar como plantilla.
+2. Modifique el elemento de proyecto hasta que se pueda guardar como plantilla.
 
-1. Modifique el archivo de código para indicar dónde debe aplicarse el reemplazo de parámetros, si se debe aplicar alguno. Para obtener más información sobre el reemplazo de parámetros, vea [Cómo: Sustituir parámetros en una plantilla.](../ide/how-to-substitute-parameters-in-a-template.md)
+3. Modifique el archivo de código para indicar dónde debe aplicarse el reemplazo de parámetros, si se debe aplicar alguno. Para obtener más información sobre el reemplazo de parámetros, vea [Cómo: Sustituir parámetros en una plantilla.](../ide/how-to-substitute-parameters-in-a-template.md)
 
-1. Cree un archivo XML y guárdelo con la extensión de archivo *.vstemplate* en el mismo directorio del archivo de elemento de proyecto.
+4. Cree un archivo XML y guárdelo con la extensión de archivo *.vstemplate* en el mismo directorio del archivo de elemento de proyecto.
 
-1. Edite el archivo XML *.vstemplate* para proporcionar los metadatos de la plantilla de elementos. Para obtener más información, vea [Referencia de esquema de plantilla de Visual Studio (Extensibilidad)](../extensibility/visual-studio-template-schema-reference.md) y el ejemplo de la sección anterior.
+5. Edite el archivo XML *.vstemplate* para proporcionar los metadatos de la plantilla de elementos. Para obtener más información, vea [Referencia de esquema de plantilla de Visual Studio (Extensibilidad)](../extensibility/visual-studio-template-schema-reference.md) y el ejemplo de la sección anterior.
 
-1. Guarde el archivo *.vstemplate* y ciérrelo.
+6. Guarde el archivo *.vstemplate* y ciérrelo.
 
-1. En el **Explorador de Windows**, seleccione los archivos que quiere incluir en la plantilla. Haga clic con el botón derecho en la selección y elija **Enviar a** > **Carpeta comprimida (en zip)**. Los archivos seleccionados se comprimen en un archivo *.zip*.
+7. En el **Explorador de Windows**, seleccione los archivos que quiere incluir en la plantilla. Haga clic con el botón derecho en la selección y elija **Enviar a** > **Carpeta comprimida (en zip)**. Los archivos seleccionados se comprimen en un archivo *.zip*.
 
-1. Copie el archivo *.zip* y péguelo en la ubicación de la plantilla de elementos del usuario. En Visual Studio 2017, el directorio predeterminado es *%USERPROFILE%\Documentos\Visual Studio 2017\Templates\ItemTemplates*. Para obtener más información, vea [Cómo: Buscar y organizar plantillas de proyecto y elemento](../ide/how-to-locate-and-organize-project-and-item-templates.md).
+::: moniker range="vs-2017"
+
+8. Copie el archivo *.zip* y péguelo en la ubicación de la plantilla de elementos del usuario. El directorio predeterminado es *%USERPROFILE%\Documents\Visual Studio 2017\Templates\ItemTemplates*. Para obtener más información, vea [Cómo: Buscar y organizar plantillas de proyecto y elemento](../ide/how-to-locate-and-organize-project-and-item-templates.md).
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+8. Copie el archivo *.zip* y péguelo en la ubicación de la plantilla de elementos del usuario. El directorio predeterminado es *%USERPROFILE%\Documents\Visual Studio 2019\Templates\ItemTemplates*. Para obtener más información, vea [Cómo: Buscar y organizar plantillas de proyecto y elemento](../ide/how-to-locate-and-organize-project-and-item-templates.md).
+
+::: moniker-end
 
 ## <a name="see-also"></a>Vea también
 

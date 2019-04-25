@@ -1,7 +1,6 @@
 ---
 title: Uso de la tabla de contenido del Visor de Ayuda
 ms.date: 11/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - hv_contents
@@ -13,17 +12,17 @@ helpviewer_keywords:
 ms.assetid: 8b98464d-2b05-4710-ad68-5647e78c6b7b
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 667295e0343b7523f039770b02a7544c36906db2
-ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
+ms.openlocfilehash: de77349ec3e8ddc4fd0b4716bc39bd84024d981c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "54406083"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55942107"
 ---
-# Procedimiento para buscar temas en la tabla de contenido
+# Filtrar para buscar temas en la tabla de contenido
 
 En la pestaña **Contenido**, puede usar la tabla de contenido (TDC) para buscar información. La tabla de contenido es una lista ampliable que contiene todos los temas en los libros instalados. Para obtener información de accesibilidad sobre cómo navegar por la TDC, vea [Teclas de método abreviado (Visor de Ayuda)](../help-viewer/shortcut-keys.md).
 

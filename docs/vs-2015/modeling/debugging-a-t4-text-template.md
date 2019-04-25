@@ -1,12 +1,9 @@
 ---
 title: Depurar una plantilla de texto T4 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, troubleshooting
 - text templates, debugging
@@ -14,13 +11,13 @@ ms.assetid: 0877fdf2-20bf-42da-b3cc-4c5856b80821
 caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: f299b89f7f59cbfc043bb77e6e56c3e5fac22d16
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 08e74dbb5fefcdaa0959690c7eb1633bca2a8bc6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298914"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58994923"
 ---
 # <a name="debugging-a-t4-text-template"></a>Depurar una plantilla de texto T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,6 +81,3 @@ Puede establecer puntos de interrupción en plantillas de texto. Para depurar un
 |Se produjo una excepción al procesar una directiva denominada '{0}'.|Se produce cuando un procesador de directivas produce una excepción al procesar una directiva.|Asegúrese de que los parámetros del procesador de directivas son correctos.|  
 |El host generó una excepción al intentar resolver la referencia de ensamblado '{0}'.|Se produce cuando el host genera una excepción cuando intenta resolver una referencia de ensamblado. El mensaje proporciona la cadena de referencia del ensamblado.|Ensamblado proceden de las referencias de \<@# assembly #> directivas y de procesadores de directivas. Asegúrese de que el parámetro 'name' proporcionado en el parámetro de ensamblado es correcto.|  
 |Intentó especificar no admitido {1} valor '{0}' para la directiva {2}|Lo produce RequiresProvidesDirectiveProcessor (todos los procesadores de directivas generados derivan de él) cuando proporciona un argumento requires o provides no admitido.|Asegúrese de que los nombres de los pares name='value' proporcionados en los parámetros requires y provides son correctos.|
-
-
-

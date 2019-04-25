@@ -2,21 +2,20 @@
 title: Depuración de código de Python en equipos Linux remotos
 description: Use Visual Studio para depurar código de Python que se ejecute en equipos remotos de Linux, incluidos los pasos de configuración necesarios, la seguridad y la solución de problemas.
 ms.date: 12/06/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: eaeb13a087723b10098c9cfe6f75f3be2aad351e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e718a5610d9539e3e2a89af0a9de502ebfd168a7
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964895"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366749"
 ---
 # <a name="remotely-debug-python-code-on-linux"></a>Depurar código de Python en Linux de forma remota
 
@@ -66,7 +65,7 @@ Para obtener detalles sobre cómo crear una regla de firewall para una máquina 
         print('Nope. The number I was thinking of was {0}'.format(number))
     ```
 
-1. Instale el paquete `ptvsd` en su entorno mediante `pip3 install ptvsd`. 
+1. Instale el paquete `ptvsd` en su entorno mediante `pip3 install ptvsd`.
    >[!NOTE]
    >Es buena idea registrar la versión de ptvsd que se instala en caso de necesitarla para solucionar problemas; la [lista de ptvsd](https://pypi.python.org/pypi/ptvsd) también muestra las versiones disponibles.
 

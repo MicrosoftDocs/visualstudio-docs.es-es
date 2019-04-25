@@ -13,15 +13,15 @@ helpviewer_keywords:
 - customHostSpecified element
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0880e0ddf4763cf2c67c10871992a24b76f59ef2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 26597796c99d3ab8740812819cf3aa5568e2985b
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53896648"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54874385"
 ---
 # <a name="ltcustomhostspecifiedgt-element-office-development-in-visual-studio"></a>&lt;customHostSpecified&gt; elemento (desarrollo de Office en Visual Studio)
   El `customHostSpecified` elemento indica que esta solución no es una aplicación independiente. Soluciones de Office contienen componentes que están alojados en aplicaciones de Microsoft Office.
@@ -32,7 +32,7 @@ ms.locfileid: "53896648"
 <customHostSpecified />
 ```
 
-## <a name="elements-and-attributes"></a>Los elementos y atributos
+## <a name="elements-and-attributes"></a>Elementos y atributos
  El `customHostSpecified` elemento es necesario para soluciones de Office. Este elemento está en el `co.v1` espacio de nombres y especifica que esta implementación contiene un componente que se va a implementar dentro de un host personalizado y no es una aplicación independiente.
 
  Este es un elemento secundario de la primera `<entrypoint>` elemento en el manifiesto de aplicación. No puede haber ningún otro elemento secundario en el que `<entrypoint>` elemento o [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] , se producirá un error de validación durante la instalación.

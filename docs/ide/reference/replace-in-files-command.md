@@ -1,7 +1,6 @@
 ---
 title: Reemplazar en archivos (Comando)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - edit.replaceinfiles
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: f116066a-4f65-4f2c-94ef-12cbd8cfb598
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f24005473780591a89afcf97eae234976ff81a85
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a87b4dcff0bd626947a0d98822150d03fc7c7059
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53960018"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55935659"
 ---
 # <a name="replace-in-files-command"></a>Reemplazar en archivos (Comando)
 Reemplaza texto de los archivos mediante el uso de un subconjunto de las opciones disponibles en la pestaña **Reemplazar en archivos** de la ventana **Buscar y reemplazar**.

@@ -1,27 +1,22 @@
 ---
 title: Referencia de la biblioteca C++ | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 helpviewer_keywords:
 - Concurrency Visualizer SDK, C++ Library Reference
 ms.assetid: c9f8eea2-c964-485d-9ad0-55a4bf425ae7
 caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d21a6e11503d9322dd8eb3f5168be619cecef243
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 684d7b0c16d203bad66fe24911406798d78aea30
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51761233"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54794233"
 ---
 # <a name="c-library-reference"></a>Referencia de la biblioteca C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,6 +31,3 @@ Esta sección contiene información de referencia para el SDK del visualizador d
   
 ## <a name="see-also"></a>Vea también  
  [SDK del visualizador de simultaneidad](../profiling/concurrency-visualizer-sdk.md)
-
-
-

@@ -1,7 +1,6 @@
 ---
 title: Value (Propiedad dinámica de XAttribute)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 apiname:
 - XAttribute.Value
@@ -9,15 +8,15 @@ apitype: Assembly
 ms.assetid: 019733d2-e050-4120-b537-831cd3fc008e
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b97e33bdcb28a3c8790af752d5ab9786dc5ef3d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fe9127d4a7c691c34f15d399bd32f5e48cc6f0ed
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53882898"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55908548"
 ---
 # <a name="value-xattribute-dynamic-property"></a>Value (Propiedad dinámica de XAttribute)
 

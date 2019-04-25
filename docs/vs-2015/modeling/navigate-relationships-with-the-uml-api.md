@@ -1,25 +1,22 @@
 ---
 title: Navegar por las relaciones con la API de UML | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML API
 ms.assetid: a4d11d45-b8c0-40f9-a597-363f07659610
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 0f8d1392bebf4d2591bbd7e4dc7bd8755c09f2c2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: cb2a02ba27f06ef027001c2de07308c153b21c2b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51740537"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58996480"
 ---
 # <a name="navigate-relationships-with-the-uml-api"></a>Navegar por las relaciones con la API de UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -95,7 +92,7 @@ IEnumerable<IBehavioredClassifier> GetRealizingClassifiers
   
 ```  
   
-### <a name="dependency"></a>Dependencia  
+### <a name="dependency"></a>Dependency  
   
 ```  
 /// Returns the elements depending on this element  
@@ -155,7 +152,7 @@ IEnumerable<IUseCase>GetIncludingCases(this IUseCase usecase);
 ```  
   
 ## <a name="enumerating-relationships"></a>Enumeración de relaciones  
- Todas las propiedades del modelo UML que devuelven varios valores se ajustan a la interfaz IEnumerable <>. Esto significa que puede usar [expresiones de consulta Linq](http://go.microsoft.com/fwlink/?LinkId=168834) y los métodos de extensión definidos en el **System.Linq** espacio de nombres.  
+ Todas las propiedades del modelo UML que devuelven varios valores se ajustan a la interfaz de IEnumerable <>. Esto significa que puede usar [expresiones de consulta Linq](http://go.microsoft.com/fwlink/?LinkId=168834) y los métodos de extensión definidos en el **System.Linq** espacio de nombres.  
   
  Por ejemplo:  
   
@@ -169,6 +166,3 @@ select shape.Element
 ## <a name="see-also"></a>Vea también  
  [Ampliar modelos y diagramas UML](../modeling/extend-uml-models-and-diagrams.md)   
  [Navegar por el modelo UML](../modeling/navigate-the-uml-model.md)
-
-
-

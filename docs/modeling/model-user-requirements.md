@@ -7,16 +7,15 @@ helpviewer_keywords:
 - stories
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 9101c6f264d3f4017581a6732e9b93f78e33215d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d75bfd7634e068224b12168390193773c198957a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53867019"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058530"
 ---
 # <a name="model-user-requirements"></a>Requisitos del usuario de modelos
 
@@ -57,7 +56,7 @@ Puede crear varias vistas diferentes de los requisitos de los usuarios.  Cada vi
 
 Observe que la mayoría de los tipos de diagramas se pueden usar para otros fines. Para obtener información general de los tipos de diagramas, vea [crear modelos para la aplicación](../modeling/create-models-for-your-app.md).
 
-##  <a name="BusinessRules"></a> Showing Business Rules
+## <a name="BusinessRules"></a> Showing Business Rules
 
 Una regla de negocio es un requisito que no está asociado a ningún caso de uso determinado y que se debe observar en todo el sistema.
 
@@ -77,19 +76,19 @@ Para obtener más información, consulte los temas siguientes:
 |-|-|
 |Cómo desarrollar código que cumple las reglas de negocio|[Modelar la arquitectura de la aplicación](../modeling/model-your-app-s-architecture.md)|
 
-##  <a name="QoSRequirements"></a> Describing Quality of Service Requirements
+## <a name="QoSRequirements"></a> Describing Quality of Service Requirements
 
 Existen varias categorías de requisito de calidad de servicio. Entre esos tipos se incluyen los siguientes:
 
--   Rendimiento
+- Rendimiento
 
--   Seguridad
+- Seguridad
 
--   Facilidad de uso
+- Facilidad de uso
 
--   Confiabilidad
+- Confiabilidad
 
--   Solidez
+- Solidez
 
 Puede incluir algunos de estos requisitos en las descripciones de casos de uso concretos. Otros requisitos no son específicos de los casos de uso y resulta más eficaz incluirlos en un documento independiente. Cuando sea posible, resulta útil ajustarse al vocabulario definido en el modelo de requisitos. En el ejemplo siguiente, observe que las principales palabras que se usan en el requisito son los títulos de los actores, los casos de uso y las clases de las ilustraciones anteriores:
 

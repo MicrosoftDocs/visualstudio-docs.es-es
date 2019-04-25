@@ -1,24 +1,19 @@
 ---
 title: Distribuir aplicaciones de Shell aislado | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: c503a985-d67a-4ef8-9123-7744a78f2f17
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 27228131c1e955a394e666ac05f0ddd68c879be0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: bf0d8a4cab8d30a56e84d1a6869c2c842b982aea
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51758776"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58998800"
 ---
 # <a name="distributing-isolated-shell-applications"></a>Distribuir aplicaciones de Shell aislado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +22,7 @@ Debe instalar Visual Studio y el SDK de Visual Studio para crear una aplicación
   
 ## <a name="prerequisites-for-distributing-isolated-shell-applications"></a>Requisitos previos para la distribución de aplicaciones de Shell aislado  
   
-|nombre|Descripción|  
+|Name|Descripción|  
 |----------|-----------------|  
 |Visual Studio SDK|El SDK debe tener para desarrollar y probar las extensiones de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. También puede usar el SDK para crear su propia instancia del shell aislado de Visual Studio.<br /><br /> Visual Studio es un requisito previo para el SDK.|  
 |Paquete redistribuible de Shell (aislado) Microsoft Visual Studio|El paquete redistribuible de incluir en el programa de instalación cuando se compila en un entorno de herramientas en Visual Studio shell (aislado). El paquete redistribuible de Shell aislado incluye .NET Framework 4.5.|  
@@ -37,4 +32,3 @@ Debe instalar Visual Studio y el SDK de Visual Studio para crear una aplicación
   
 ## <a name="allowing-for-updates-to-your-application"></a>Permitir que las actualizaciones de la aplicación  
  El programa de instalación debe permitir la posibilidad de que se actualizará la aplicación, las actualizaciones de Microsoft o las actualizaciones de su compañía. Para obtener más información acerca de las actualizaciones, consulte [mantenimiento directrices para las aplicaciones de Shell aislado](../extensibility/servicing-guidelines-for-isolated-shell-applications.md).
-

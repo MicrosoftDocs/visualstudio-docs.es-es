@@ -1,14 +1,9 @@
 ---
-title: 'Tutorial: Implementar manualmente una aplicación ClickOnce | Microsoft Docs'
-ms.custom: ''
+title: 'Tutorial: Implementar manualmente una aplicación ClickOnce | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -25,13 +20,13 @@ ms.assetid: ccee6551-a1b9-4ca2-8845-9c1cf4ac2560
 caps.latest.revision: 51
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 4e8874324c5e5cbfb5bc42e5c6c23666b5e14b67
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: df11af5dee9ce510af01dab037a47a1bdd2f2880
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49236176"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082209"
 ---
 # <a name="walkthrough-manually-deploying-a-clickonce-application"></a>Tutorial: Implementar manualmente una aplicación ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,53 +36,53 @@ Si no se puede usar Visual Studio para implementar su [!INCLUDE[ndptecclick](../
 ## <a name="prerequisites"></a>Requisitos previos  
  En este tutorial tiene algunos requisitos previos y las opciones que necesita para elegir antes de compilar una implementación.  
   
--   Instale Mage.exe y MageUI.exe.  
+- Instale Mage.exe y MageUI.exe.  
   
      Mage.exe y MageUI.exe forman parte de la [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]. Debe tener la [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] instalado o la versión de la [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] incluida con Visual Studio. Para obtener más información, consulte [Windows SDK](http://go.microsoft.com/fwlink/?LinkId=158044) en MSDN.  
   
--   Proporcionar una aplicación para la implementación.  
+- Proporcionar una aplicación para la implementación.  
   
      En este tutorial se supone que tiene una aplicación de Windows que esté listo para implementar. Esta aplicación se denomina AppToDeploy.  
   
--   Determinar cómo se distribuirá la implementación.  
+- Determinar cómo se distribuirá la implementación.  
   
-     Las opciones de distribución incluyen: Web, recurso compartido de archivos o CD. Para obtener más información, consulta [ClickOnce Security and Deployment](../deployment/clickonce-security-and-deployment.md).  
+     Las opciones de distribución se incluyen: Web, recurso compartido de archivos o CD. Para obtener más información, consulta [ClickOnce Security and Deployment](../deployment/clickonce-security-and-deployment.md).  
   
--   Determinar si la aplicación requiere un nivel elevado de confianza.  
+- Determinar si la aplicación requiere un nivel elevado de confianza.  
   
      Si la aplicación requiere plena confianza, por ejemplo, acceso total al sistema del usuario, puede usar el `-TrustLevel` establezca esta opción de Mage.exe. Si desea definir un permiso personalizado establecido para la aplicación, puede copiar la sección de permisos de Internet o intranet de otro manifiesto, modificarlo para adaptarlo a sus necesidades y agregarlo al manifiesto de aplicación mediante un editor de texto o MageUI.exe. Para obtener más información, consulta [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).  
   
--   Obtenga un certificado de Authenticode.  
+- Obtenga un certificado de Authenticode.  
   
      Debe firmar la implementación con un certificado Authenticode. Puede generar un certificado de prueba mediante las herramientas de Visual Studio, MageUI.exe o MakeCert.exe y Pvk2Pfx.exe o puede obtener un certificado de una entidad de certificación (CA). Si decide usar la implementación de aplicaciones de confianza, también debe realizar una instalación única del certificado en todos los equipos cliente. Para obtener más información, consulta [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).  
   
     > [!NOTE]
     >  También puede firmar la implementación con un certificado CNG que puede obtener de una entidad de certificación.  
   
--   Asegúrese de que la aplicación no tiene un manifiesto con información de UAC.  
+- Asegúrese de que la aplicación no tiene un manifiesto con información de UAC.  
   
      Deberá determinar si la aplicación contiene un manifiesto con información de Control de cuentas de usuario (UAC), como un `<dependentAssembly>` elemento. Para examinar un manifiesto de aplicación, puede usar el Sysinternals Windows [Sigcheck](http://go.microsoft.com/fwlink/?LinkId=158035) utilidad.  
   
      Si la aplicación contiene un manifiesto con detalles UAC, debe volver a compilar sin la información de UAC. Para un proyecto de C# en Visual Studio, abra las propiedades del proyecto y seleccione la pestaña de la aplicación. En el **manifiesto** lista desplegable, seleccione **crear aplicación sin manifiesto**. Para un proyecto de Visual Basic en Visual Studio, abra las propiedades del proyecto, seleccione la pestaña aplicación y haga clic en **ver configuración de UAC**. En el archivo de manifiesto abierto, quite todos los elementos dentro de la única `<asmv1:assembly>` elemento.  
   
--   Determinar si la aplicación requiere los requisitos previos en el equipo cliente.  
+- Determinar si la aplicación requiere los requisitos previos en el equipo cliente.  
   
      [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] las aplicaciones implementadas desde Visual Studio pueden incluir a un programa previo de instalación del requisito previo (setup.exe) con la implementación. Este tutorial crea los dos manifiestos requeridos para una [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] implementación. Puede crear un arranque de requisitos previos mediante el [GenerateBootstrapper (tarea)](../msbuild/generatebootstrapper-task.md).  
   
 ### <a name="to-deploy-an-application-with-the-mageexe-command-line-tool"></a>Para implementar una aplicación con la herramienta de línea de comandos Mage.exe  
   
-1.  Cree un directorio donde almacenará su [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] archivos de implementación.  
+1. Cree un directorio donde almacenará su [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] archivos de implementación.  
   
-2.  En el directorio de implementación que acaba de crear, cree un subdirectorio de versión. Si se trata de la primera vez que va a implementar la aplicación, el nombre del subdirectorio de versión **1.0.0.0**.  
+2. En el directorio de implementación que acaba de crear, cree un subdirectorio de versión. Si se trata de la primera vez que va a implementar la aplicación, el nombre del subdirectorio de versión **1.0.0.0**.  
   
     > [!NOTE]
     >  La versión de la implementación puede ser distinta de la versión de la aplicación.  
   
-3.  Copie todos los archivos de aplicación en el subdirectorio de versión, incluidos los archivos ejecutables, ensamblados, recursos y archivos de datos. Si es necesario, puede crear subdirectorios adicionales que contienen archivos adicionales.  
+3. Copie todos los archivos de aplicación en el subdirectorio de versión, incluidos los archivos ejecutables, ensamblados, recursos y archivos de datos. Si es necesario, puede crear subdirectorios adicionales que contienen archivos adicionales.  
   
-4.  Abra el [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] o comandos de Visual Studio símbolo del sistema y cambie al subdirectorio de versión.  
+4. Abra el [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] o comandos de Visual Studio símbolo del sistema y cambie al subdirectorio de versión.  
   
-5.  Cree el manifiesto de aplicación con una llamada a Mage.exe. La siguiente instrucción crea un manifiesto de aplicación para el código compilado para ejecutarse en el procesador Intel x86.  
+5. Cree el manifiesto de aplicación con una llamada a Mage.exe. La siguiente instrucción crea un manifiesto de aplicación para el código compilado para ejecutarse en el procesador Intel x86.  
   
     ```  
     mage -New Application -Processor x86 -ToFile AppToDeploy.exe.manifest -name "My App" -Version 1.0.0.0 -FromDirectory .   
@@ -96,7 +91,7 @@ Si no se puede usar Visual Studio para implementar su [!INCLUDE[ndptecclick](../
     > [!NOTE]
     >  No olvide incluir el punto (.) después de la `-FromDirectory` opción, que indica el directorio actual. Si no incluye el punto, debe especificar la ruta de acceso a los archivos de aplicación.  
   
-6.  Inicie sesión en el manifiesto de aplicación con el certificado Authenticode. Reemplace *mycert.pfx* con la ruta de acceso al archivo de certificado. Reemplace *passwd* con la contraseña para el archivo de certificado.  
+6. Inicie sesión en el manifiesto de aplicación con el certificado Authenticode. Reemplace *mycert.pfx* con la ruta de acceso al archivo de certificado. Reemplace *passwd* con la contraseña para el archivo de certificado.  
   
     ```  
     mage -Sign AppToDeploy.exe.manifest -CertFile mycert.pfx -Password passwd  
@@ -108,9 +103,9 @@ Si no se puede usar Visual Studio para implementar su [!INCLUDE[ndptecclick](../
     mage -Sign AppToDeploy.exe.manifest -CertFile cngCert.pfx  
     ```  
   
-7.  Cambie a la raíz del directorio de implementación.  
+7. Cambie a la raíz del directorio de implementación.  
   
-8.  Generar el manifiesto de implementación con una llamada a Mage.exe. De forma predeterminada, Mage.exe marcará la [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] implementación como una aplicación instalada, por lo que TI puede ejecutarse tanto en línea y sin conexión. Para que la aplicación esté disponible solo cuando el usuario está conectado, use la `-Install` opción con un valor de `false`. Si usa el valor predeterminado, y los usuarios instalarán la aplicación desde un sitio Web o recurso compartido de archivos, asegúrese de que el valor de la `-ProviderUrl` puntos opción a la ubicación de la aplicación de manifiesto en el servidor Web o recurso compartido.  
+8. Generar el manifiesto de implementación con una llamada a Mage.exe. De forma predeterminada, Mage.exe marcará la [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] implementación como una aplicación instalada, por lo que TI puede ejecutarse tanto en línea y sin conexión. Para que la aplicación esté disponible solo cuando el usuario está conectado, use la `-Install` opción con un valor de `false`. Si usa el valor predeterminado, y los usuarios instalarán la aplicación desde un sitio Web o recurso compartido de archivos, asegúrese de que el valor de la `-ProviderUrl` puntos opción a la ubicación de la aplicación de manifiesto en el servidor Web o recurso compartido.  
   
     ```  
     mage -New Deployment -Processor x86 -Install true -Publisher "My Co." -ProviderUrl "\\myServer\myShare\AppToDeploy.application" -AppManifest 1.0.0.0\AppToDeploy.exe.manifest -ToFile AppToDeploy.application  
@@ -134,28 +129,28 @@ Si no se puede usar Visual Studio para implementar su [!INCLUDE[ndptecclick](../
   
 ### <a name="to-deploy-an-application-with-the-mageuiexe-graphical-tool"></a>Para implementar una aplicación con la herramienta gráfica MageUI.exe  
   
-1.  Cree un directorio donde almacenará su [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] archivos de implementación.  
+1. Cree un directorio donde almacenará su [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] archivos de implementación.  
   
-2.  En el directorio de implementación que acaba de crear, cree un subdirectorio de versión. Si se trata de la primera vez que va a implementar la aplicación, el nombre del subdirectorio de versión **1.0.0.0**.  
+2. En el directorio de implementación que acaba de crear, cree un subdirectorio de versión. Si se trata de la primera vez que va a implementar la aplicación, el nombre del subdirectorio de versión **1.0.0.0**.  
   
     > [!NOTE]
     >  La versión de la implementación probablemente es distinta de la versión de la aplicación.  
   
-3.  Copie todos los archivos de aplicación en el subdirectorio de versión, incluidos los archivos ejecutables, ensamblados, recursos y archivos de datos. Si es necesario, puede crear subdirectorios adicionales que contienen archivos adicionales.  
+3. Copie todos los archivos de aplicación en el subdirectorio de versión, incluidos los archivos ejecutables, ensamblados, recursos y archivos de datos. Si es necesario, puede crear subdirectorios adicionales que contienen archivos adicionales.  
   
-4.  Inicie la herramienta gráfica MageUI.exe.  
+4. Inicie la herramienta gráfica MageUI.exe.  
   
     ```  
     MageUI.exe  
     ```  
   
-5.  Crear un nuevo manifiesto de aplicación seleccionando **archivo**, **New**, **Application Manifest** en el menú.  
+5. Crear un nuevo manifiesto de aplicación seleccionando **archivo**, **New**, **Application Manifest** en el menú.  
   
-6.  En el valor predeterminado **nombre** , escriba el nombre y número de versión de esta implementación. Especifique también el **procesador** que se compila la aplicación, como x86.  
+6. En el valor predeterminado **nombre** , escriba el nombre y número de versión de esta implementación. Especifique también el **procesador** que se compila la aplicación, como x86.  
   
-7.  Seleccione el **archivos** ficha y haga clic en el botón de puntos suspensivos (**...** ) situado junto a la **directorio de la aplicación** cuadro de texto. Aparece un cuadro de diálogo Buscar carpeta.  
+7. Seleccione el **archivos** ficha y haga clic en el botón de puntos suspensivos (**...** ) situado junto a la **directorio de la aplicación** cuadro de texto. Aparece un cuadro de diálogo Buscar carpeta.  
   
-8.  Seleccione el subdirectorio de versión que contiene los archivos de aplicación y, a continuación, haga clic en **Aceptar**.  
+8. Seleccione el subdirectorio de versión que contiene los archivos de aplicación y, a continuación, haga clic en **Aceptar**.  
   
 9. Si va a implementar desde Internet Information Services (IIS), seleccione el **cuando rellenar agrega la extensión .deploy a cualquier archivo que no la tiene** casilla de verificación.  
   
@@ -167,7 +162,7 @@ Si no se puede usar Visual Studio para implementar su [!INCLUDE[ndptecclick](../
   
 13. Si tiene un certificado almacenado como un archivo en el sistema de archivos, use el **firmar con archivo de certificado** opción y seleccione el certificado en el sistema de archivos mediante el uso de los puntos suspensivos (**...** ) botón. A continuación, escriba la contraseña del certificado.  
   
-     O bien  
+     -o bien-  
   
      Si el certificado se guarda en un almacén de certificados accesible desde el equipo, seleccione el **firmar con certificado almacenado** opción y seleccione el certificado de la lista proporcionada.  
   
@@ -195,7 +190,7 @@ Si no se puede usar Visual Studio para implementar su [!INCLUDE[ndptecclick](../
   
 25. Si tiene un certificado almacenado como un archivo en el sistema de archivos, use el **firmar con archivo de certificado** opción y seleccione el certificado en el sistema de archivos mediante el uso de los puntos suspensivos (**...** ) botón. A continuación, escriba la contraseña del certificado.  
   
-     O bien  
+     -o bien-  
   
      Si el certificado se guarda en un almacén de certificados accesible desde el equipo, seleccione el **firmar con certificado almacenado** opción y seleccione el certificado de la lista proporcionada.  
   
@@ -216,6 +211,3 @@ Si no se puede usar Visual Studio para implementar su [!INCLUDE[ndptecclick](../
  [Publicar aplicaciones ClickOnce](../deployment/publishing-clickonce-applications.md)   
  [Manifiesto de implementación de ClickOnce](../deployment/clickonce-deployment-manifest.md)   
  [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md)
-
-
-

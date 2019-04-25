@@ -2,22 +2,21 @@
 title: Depurar flujos de trabajo con el Diseñador de flujo de trabajo
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.prod: visual-studio-dev15
 helpviewer_keywords:
 - Visual Studio Workflow Designer [WFD], debugging workflows
 - Workflow Designer [WFD], debugging workflows
 ms.assetid: d71308cf-d464-4536-8711-0d0a8eadb255
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 64574156bb1645a3d1f4e84f50a8e322751fd370
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1270e57ae6c9235311569c04ebb982157ea3b608
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53923435"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55953950"
 ---
 # <a name="debug-workflows-with-the-workflow-designer"></a>Depurar flujos de trabajo con el Diseñador de flujo de trabajo
 

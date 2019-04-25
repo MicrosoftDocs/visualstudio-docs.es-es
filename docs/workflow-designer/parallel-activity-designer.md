@@ -2,21 +2,20 @@
 title: Diseñador de flujo de trabajo - Diseñador de actividad Parallel
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
 f1_keywords:
 - System.Activities.Statements.Parallel.UI
 ms.assetid: 0306dc3b-075a-4091-ac3a-96486fbabed5
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ad0d0d44c18c17dd1602c51954a7c529b84d114
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 79e1e7e48f7ed7e8cd4084805dfae2018a886a82
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53843611"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55950422"
 ---
 # <a name="parallel-activity-designer"></a>Diseñador de actividades Parallel
 
@@ -49,5 +48,5 @@ En la tabla siguiente se muestran las propiedades de la actividad Parallel y se 
 ## <a name="see-also"></a>Vea también
 
 - [Sequence](../workflow-designer/sequence-activity-designer.md)
-- [ParallelForEach\<T >](../workflow-designer/parallelforeach-t-activity-designer.md)
+- [ParallelForEach\<T>](../workflow-designer/parallelforeach-t-activity-designer.md)
 - [Flujo de control](../workflow-designer/control-flow-activity-designers.md)

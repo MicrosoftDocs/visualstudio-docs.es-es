@@ -1,27 +1,22 @@
 ---
-title: 'Cómo: Adjuntar el generador de perfiles a una aplicación web ASP.NET para recopilar datos de simultaneidad mediante la línea de comandos | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Adjuntar el Profiler a una aplicación Web ASP.NET para recopilar datos de simultaneidad mediante la línea de comandos | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 0e215fdd-55f8-43ef-9534-06542eefe223
 caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ea6f642f3178e06127dc21bc115d70c68525bf0e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d720779019ab4106fa6c4b727e9994f168a2d8f2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750139"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102294"
 ---
-# <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line"></a>Cómo: Adjuntar el generador de perfiles a una aplicación web ASP.NET para recopilar datos de simultaneidad mediante la línea de comandos
+# <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line"></a>Procedimiento Adjuntar al Profiler a una aplicación Web ASP.NET para recopilar datos de simultaneidad mediante la línea de comandos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 En este tema se describe cómo utilizar las herramientas de línea de comandos de las herramientas de generación de perfiles de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para adjuntar el generador de perfiles a una aplicación ASP.NET y recopilar datos de simultaneidad de procesos y subprocesos.  
@@ -52,21 +47,20 @@ En este tema se describe cómo utilizar las herramientas de línea de comandos d
    |       [/automark](../profiling/automark.md) **:** `Interval`       | Utilizar solo con **/wincounter**. Especifica el número de milisegundos entre eventos de recopilación de contadores de rendimiento de Windows. El valor predeterminado es 500. |
    |     [/events](../profiling/events-vsperfcmd.md) **:** `Config`     |       Especifica un evento de Seguimiento de eventos para Windows (ETW) que se va a recopilar durante la generación de perfiles. Los eventos ETW se recopilan en un archivo (.etl) independiente.       |
 
-
 2. Inicie la aplicación ASP.NET de la manera habitual.  
 
 3. Escriba el siguiente comando para adjuntar el generador de perfiles al proceso de trabajo de ASP.NET: **VSPerfCmd /attach:**`PID` [**/targetclr:**`Version`]  
 
-   -   `PID` especifica el identificador o nombre del proceso de trabajo de ASP.NET. Puede ver los identificadores de todos los procesos que se están ejecutando en el Administrador de tareas de Windows.  
+   - `PID` especifica el identificador o nombre del proceso de trabajo de ASP.NET. Puede ver los identificadores de todos los procesos que se están ejecutando en el Administrador de tareas de Windows.  
 
-   -   [/targetclr](../profiling/targetclr.md) **:** `Version` especifica la versión de Common Language Runtime (CLR) para generar perfiles cuando se carga más de una versión del runtime en una aplicación. Este parámetro es opcional.  
+   - [/targetclr](../profiling/targetclr.md) **:** `Version` especifica la versión de Common Language Runtime (CLR) para generar perfiles cuando se carga más de una versión del runtime en una aplicación. Este parámetro es opcional.  
 
 ## <a name="controlling-data-collection"></a>Controlar la recolección de datos  
  Mientras se ejecuta la aplicación, puede controlar la recolección de datos iniciando o deteniendo la escritura de los datos en el archivo con las opciones de VSPerfCmd.exe. Al controlar la recolección de datos, puede recopilar datos de una parte específica de la ejecución de un programa, como por ejemplo el inicio o el cierre de una aplicación.  
 
 #### <a name="to-start-and-stop-data-collection"></a>Para iniciar y detener la recolección de datos  
 
--   Los pares de opciones de VSPerfCmd de la tabla siguiente inician y detienen la recolección de datos. Especifique cada opción en una línea de comandos diferente. Puede activar y desactivar la recolección de datos varias veces.  
+- Los pares de opciones de VSPerfCmd de la tabla siguiente inician y detienen la recolección de datos. Especifique cada opción en una línea de comandos diferente. Puede activar y desactivar la recolección de datos varias veces.  
 
     |Opción|Descripción|  
     |------------|-----------------|  
@@ -79,17 +73,14 @@ En este tema se describe cómo utilizar las herramientas de línea de comandos d
 
 #### <a name="to-end-a-profiling-session"></a>Para finalizar una sesión de generación de perfiles  
 
-1.  Desasocie el generador de perfiles de la aplicación de destino cerrándolo o escribiendo lo siguiente en un símbolo del sistema:  
+1. Desasocie el generador de perfiles de la aplicación de destino cerrándolo o escribiendo lo siguiente en un símbolo del sistema:  
 
      **VSPerfCmd /detach**  
 
-2.  Apague el generador de perfiles escribiendo el siguiente comando en un símbolo del sistema:  
+2. Apague el generador de perfiles escribiendo el siguiente comando en un símbolo del sistema:  
 
      **VSPerfCmd**  [/shutdown](../profiling/shutdown.md)  
 
 ## <a name="see-also"></a>Vea también  
  [Generar perfiles de aplicaciones web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [Generación rápida de perfiles de sitio web con VSPerfASPNETCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md)
-
-
-

@@ -1,11 +1,10 @@
 ---
 title: Generación de una clase o tipo
 ms.date: 01/26/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 f1_keywords:
 - vsl.GenerateFromUsage
 dev_langs:
@@ -13,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: a98ccfc73a1d0390cdec101ed763535f316a5625
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a1258e0448fe7be9dd7fa0180f52604d877b051d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53965835"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55953170"
 ---
 # <a name="generate-a-class-or-type-in-visual-studio"></a>Generación de una clase o tipo en Visual Studio
 
@@ -52,8 +51,8 @@ Esta generación de código se aplica a:
       - Presione **Ctrl**+**.** para activar el menú **Acciones rápidas y refactorizaciones**.
    - **Mouse**
       - Haga clic con el botón derecho y seleccione el menú **Acciones rápidas y refactorizaciones**.
-      - Mantenga el mouse sobre el subrayado ondulado de color rojo y haga clic en el botón ![de icono Bombilla](media/bulb-cs.png) que aparece.
-      - Haga clic en el botón ![de icono Bombilla](media/bulb-cs.png) que aparece en el margen izquierdo si el cursor de texto ya está en la línea con el subrayado ondulado de color rojo.
+      - Mantenga el mouse sobre el subrayado ondulado de color rojo y haga clic en el botón ![bombilla de error](media/error-bulb.png) que aparece.
+      - Haga clic en el botón ![bombilla de error](media/error-bulb.png) que aparece en el margen izquierdo si el cursor de texto ya está en la línea con el subrayado ondulado de color rojo.
 
       ![Vista previa de generación de clase](media/class-preview-cs.png)
 
@@ -74,7 +73,7 @@ Esta generación de código se aplica a:
    Selección | Descripción
    --- | ---
    Access | Configure el tipo para que tenga acceso *Predeterminado*, *Interno* o *Público*.
-   Tipo | Esta propiedad puede establecerse como *clase* o *struct*.
+   Kind | Esta propiedad puede establecerse como *clase* o *struct*.
    nombre | No se puede cambiar y será el nombre que ya ha escrito.
    Proyecto | Si hay varios proyectos en la solución, puede elegir dónde desea que resida la clase/estructura.
    Nombre de archivo | Puede crear un nuevo archivo o agregar el tipo a un archivo existente.

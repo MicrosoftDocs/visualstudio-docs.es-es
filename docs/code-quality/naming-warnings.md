@@ -1,7 +1,6 @@
 ---
 title: advertencias de nomenclatura
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - vs.codeanalysis.namingrules
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: f97223ce-1d39-4134-81c9-fff2c75d979b
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dac680369c8dc7025de26c83e2e680b2c5057f7d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d3fc446207d2f8c2800135154ca435b821a0afd1
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53845342"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55952533"
 ---
 # <a name="naming-warnings"></a>advertencias de nomenclatura
 Las advertencias de nomenclatura compatibles con el cumplimiento de las convenciones de nomenclatura de las instrucciones de diseño de .NET Framework.

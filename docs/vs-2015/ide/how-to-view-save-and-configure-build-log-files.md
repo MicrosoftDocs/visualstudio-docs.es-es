@@ -1,25 +1,20 @@
 ---
 title: 'Cómo: Ver, guardar y configurar archivos de registro de compilación | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 ms.assetid: 75d38b76-26d6-4f43-bbe7-cbacd7cc81e7
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 26ece0c0d46e5c747ac05bae8c2d4fc793c34601
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 496fcdf28f8ce9b0809988949d435c064734b508
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49207407"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053576"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>Cómo: Ver, guardar y configurar archivos de registro de compilación
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,23 +25,23 @@ Después de compilar un proyecto en el IDE de Visual Studio, puede ver informaci
   
 ### <a name="to-view-the-build-log-file-for-a-c-project"></a>Para ver el archivo de registro de compilación de un proyecto de C++  
   
-1.  En el **Explorador de Windows** o el **Explorador de archivos**, abra el archivo siguiente: \\…\Visual Studio *Versión*\Projects\\*NombreDelProyecto*\\*NombreDelProyecto*\Debug\\*NombreDelProyecto*.txt  
+1. En el **Explorador de Windows** o el **Explorador de archivos**, abra el archivo siguiente: \\…\Visual Studio *Versión*\Projects\\*NombreDelProyecto*\\*NombreDelProyecto*\Debug\\*NombreDelProyecto*.txt  
   
 ### <a name="to-create-a-build-log-file-for-a-managed-code-project"></a>Para crear un archivo de registro de compilación para un proyecto de código administrado  
   
-1.  En la barra de menús, elija **Compilar**, **Compilar solución**.  
+1. En la barra de menús, elija **Compilar**, **Compilar solución**.  
   
-2.  En la ventana **Salida**, resalte la información de la compilación y, después, cópiela en el Portapapeles.  
+2. En la ventana **Salida**, resalte la información de la compilación y, después, cópiela en el Portapapeles.  
   
-3.  Abra un editor de texto, como el Bloc de notas, pegue la información en el archivo y guárdelo.  
+3. Abra un editor de texto, como el Bloc de notas, pegue la información en el archivo y guárdelo.  
   
 ### <a name="to-change-the-amount-of-information-included-in-the-build-log"></a>Para cambiar el volumen de información incluida en el registro de compilación  
   
-1.  En la barra de menús, elija **Herramientas**, **Opciones**.  
+1. En la barra de menús, elija **Herramientas**, **Opciones**.  
   
-2.  En la página **Proyectos y soluciones**, elija la página **Compilar y ejecutar**.  
+2. En la página **Proyectos y soluciones**, elija la página **Compilar y ejecutar**.  
   
-3.  En la lista **Detalles de la salida de la compilación del proyecto de MSBuild**, seleccione uno de los valores siguientes y, después, elija el botón **Aceptar**.  
+3. En la lista **Detalles de la salida de la compilación del proyecto de MSBuild**, seleccione uno de los valores siguientes y, después, elija el botón **Aceptar**.  
   
     |Nivel de detalle|Descripción|  
     |---------------------|-----------------|  
@@ -65,6 +60,3 @@ Después de compilar un proyecto en el IDE de Visual Studio, puede ver informaci
  [Obtener registros de compilación](../msbuild/obtaining-build-logs-with-msbuild.md)   
  [Compilar y limpiar proyectos y soluciones en Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)   
  [Compilar y generar en Visual Studio](../ide/compiling-and-building-in-visual-studio.md)
-
-
-

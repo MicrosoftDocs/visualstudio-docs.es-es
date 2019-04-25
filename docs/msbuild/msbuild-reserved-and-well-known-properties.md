@@ -12,23 +12,23 @@ helpviewer_keywords:
 ms.assetid: 99333e61-83c9-4804-84e3-eda297c2478d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82ab1ec887fd6a0c881f2d1e4b0c1295e1c67716
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: eefff14fd2277f791b61677fb9a23894c974c353
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53967740"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58070144"
 ---
 # <a name="msbuild-reserved-and-well-known-properties"></a>Propiedades reservadas y conocidas de MSBuild
-[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] proporciona un conjunto de propiedades predefinidas que almacenan información sobre el archivo de proyecto y los archivos binarios de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Estas propiedades se evalúan igual que otras propiedades de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Por ejemplo, para utilizar la propiedad `MSBuildProjectFile` escribiría `$(MSBuildProjectFile)`.  
+[!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] proporciona un conjunto de propiedades predefinidas que almacenan información sobre el archivo de proyecto y los archivos binarios de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Estas propiedades se evalúan igual que otras propiedades de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Por ejemplo, para utilizar la propiedad `MSBuildProjectFile` escribiría `$(MSBuildProjectFile)`.
 
  MSBuild utiliza los valores de la tabla siguiente para predefinir propiedades reservadas y conocidas. Las propiedades reservadas no se pueden invalidar, pero las propiedades conocidas se pueden invalidar con propiedades del entorno, propiedades globales o propiedades que se declaran en el archivo de proyecto con el mismo nombre.
 
-## <a name="reserved-and-well-known-properties"></a>Propiedades reservadas y conocidas  
- En la tabla siguiente se describen las propiedades predefinidas de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].  
+## <a name="reserved-and-well-known-properties"></a>Propiedades reservadas y conocidas
+ En la tabla siguiente se describen las propiedades predefinidas de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].
 
 
 | Propiedad. | Reservadas o conocidas | Descripción |
@@ -57,6 +57,7 @@ ms.locfileid: "53967740"
 | `MSBuildThisFileName` | Reservada | Parte de nombre de archivo de `MSBuildThisFileFullPath`, sin la extensión de nombre de archivo. |
 | `MSBuildToolsPath` | Reservada | Ruta de acceso de instalación de la versión de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] que se asocia al valor de `MSBuildToolsVersion`.<br /><br /> No incluya la barra diagonal inversa final de la ruta.<br /><br /> Esta propiedad no se puede invalidar. |
 | `MSBuildToolsVersion` | Reservada | Versión del conjunto de herramientas de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] que se utilizará para compilar el proyecto.<br /><br /> Nota: Un conjunto de herramientas de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] consta de tareas, destinos y herramientas que se utilizan para compilar una aplicación. Las herramientas incluyen compiladores como *csc.exe* y *vbc.exe*. Para obtener más información, vea [Conjunto de herramientas de MSBuild (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md) y [Configuraciones de conjuntos de herramientas estándar y personalizados](../msbuild/standard-and-custom-toolset-configurations.md). |
+| `MSBuildVersion` | Reservada | La versión de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] que se usa para compilar el proyecto. <br /><br/> Esta propiedad no se puede invalidar, de lo contrario, se devuelve el mensaje de error `MSB4004 - The 'MSBuildVersion' property is reserved, and can not be modified.`. |
 
 ## <a name="names-that-conflict-with-msbuild-elements"></a>Nombres en conflicto con elementos de MSBuild
 
@@ -75,7 +76,7 @@ Aparte de lo anterior, los nombres relativos a elementos del lenguaje MSBuild no
 * Cuando
 * Otherwise
 
-## <a name="see-also"></a>Vea también  
-[Referencia de MSBuild](../msbuild/msbuild-reference.md)
+## <a name="see-also"></a>Vea también
+- [Referencia de MSBuild](../msbuild/msbuild-reference.md)
 
-[Propiedades de MSBuild](../msbuild/msbuild-properties.md)
+- [Propiedades de MSBuild](../msbuild/msbuild-properties.md)

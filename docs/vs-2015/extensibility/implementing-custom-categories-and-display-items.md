@@ -1,27 +1,22 @@
 ---
 title: Implementación de las categorías personalizadas y mostrar los elementos | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - font and color control [Visual Studio SDK], categories
 - custom categories
 ms.assetid: 99311a93-d642-4344-bbf9-ff6e7fa5bf7f
 caps.latest.revision: 26
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 394f8f99539ab49c1201fa61ce612aee22ff2064
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f84d66a1dc51baffe743b1f7c16b4bf0ff15ef3a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51769123"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117907"
 ---
 # <a name="implementing-custom-categories-and-display-items"></a>Implementación de las categorías personalizadas y mostrar los elementos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,10 +53,10 @@ Un VSPackage puede proporcionar control de las fuentes y colores de su texto par
   
 - Llenar el registro con dos valores:  
   
-  |nombre|Tipo|Datos|Descripción|  
+  |Name|Tipo|Datos|Descripción|  
   |----------|----------|----------|-----------------|  
   |Categoría|REG_SZ|GUID|Crea un GUID para identificar la categoría.|  
-  |Package|REG_SZ|GUID|El GUID del servicio de VSPackage que admite la categoría.|  
+  |Paquete|REG_SZ|GUID|El GUID del servicio de VSPackage que admite la categoría.|  
   
   El servicio especificado en el registro debe proporcionar una implementación de <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> para la categoría correspondiente.  
   
@@ -73,10 +68,10 @@ Un VSPackage puede proporcionar control de las fuentes y colores de su texto par
   
 - Llenar el registro con dos valores:  
   
-  |nombre|Tipo|Datos|Descripción|  
+  |Name|Tipo|Datos|Descripción|  
   |----------|----------|----------|-----------------|  
   |Categoría|REG_SZ|GUID|Crea un GUID para identificar el grupo.|  
-  |Package|REG_SZ|GUID|El GUID del servicio que admite la categoría.|  
+  |Paquete|REG_SZ|GUID|El GUID del servicio que admite la categoría.|  
   
   El servicio especificado en el registro debe proporcionar una implementación de `T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup` para el grupo correspondiente.  
   
@@ -88,11 +83,11 @@ Un VSPackage puede proporcionar control de las fuentes y colores de su texto par
   
 - Los métodos se implementan a través de <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> debe proporcionar el IDE con:  
   
-  -   Listas de **mostrar elementos** en el **categoría.**  
+  - Listas de **mostrar elementos** en el **categoría.**  
   
-  -   Nombres localizables para **mostrar elementos**.  
+  - Nombres localizables para **mostrar elementos**.  
   
-  -   Mostrar la información de cada miembro de **categoría**.  
+  - Mostrar la información de cada miembro de **categoría**.  
   
   > [!NOTE]
   >  Cada **categoría** debe contener al menos un **Mostrar artículo**.  
@@ -101,11 +96,11 @@ Un VSPackage puede proporcionar control de las fuentes y colores de su texto par
   
    Su implementación proporciona el IDE con:  
   
-  -   Una lista de los **categorías** que componen un grupo determinado.  
+  - Una lista de los **categorías** que componen un grupo determinado.  
   
-  -   Acceso a las instancias de <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> que admiten cada **categoría** dentro del grupo.  
+  - Acceso a las instancias de <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> que admiten cada **categoría** dentro del grupo.  
   
-  -   Nombres de grupo localizable.  
+  - Nombres de grupo localizable.  
   
 - Actualizando el IDE:  
   
@@ -116,13 +111,13 @@ Un VSPackage puede proporcionar control de las fuentes y colores de su texto par
 ## <a name="to-handle-font-and-color-changes"></a>Para controlar la fuente y Color cambia  
  Para admitir correctamente la coloración de texto que muestra un paquete VSPackage, el servicio de coloración compatible con el paquete VSPackage debe responder a los cambios iniciados por el usuario a través de la **fuentes y colores** página de propiedades. Un VSPackage para ello:  
   
--   Controlar eventos generados por el IDE implementando la <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> interfaz.  
+- Controlar eventos generados por el IDE implementando la <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> interfaz.  
   
      El IDE llama al método apropiado siguiendo las modificaciones de usuario de la **fuentes y colores** página. Por ejemplo, llama a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents.OnFontChanged%2A> método si se selecciona una nueva fuente.  
   
-     O bien  
+     -o bien-  
   
--   Sondear el IDE para que los cambios.  
+- Sondear el IDE para que los cambios.  
   
      Esto puede hacerse a través del sistema implementado <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interfaz. Aunque principalmente por compatibilidad con la persistencia, el <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A> método puede utilizarse para obtener información de fuente y color para **mostrar elementos**. Para obtener más información, consulte [acceso a fuente de almacenados y la configuración de Color](../extensibility/accessing-stored-font-and-color-settings.md).  
   
@@ -138,6 +133,5 @@ Un VSPackage puede proporcionar control de las fuentes y colores de su texto par
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>   
  [Obtención de información de fuente y Color para la coloración de texto](../extensibility/getting-font-and-color-information-for-text-colorization.md)   
  [Obtener acceso a la configuración de Color y fuente almacenado](../extensibility/accessing-stored-font-and-color-settings.md)   
- [Cómo: obtener acceso a la combinación de colores y fuentes integradas](../extensibility/how-to-access-the-built-in-fonts-and-color-scheme.md)   
+ [Cómo: Obtener acceso a la combinación de colores y fuentes integradas](../extensibility/how-to-access-the-built-in-fonts-and-color-scheme.md)   
  [Información general sobre fuentes y colores](../extensibility/font-and-color-overview.md)
-

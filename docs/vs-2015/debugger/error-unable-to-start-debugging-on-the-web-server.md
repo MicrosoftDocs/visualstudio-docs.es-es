@@ -1,14 +1,9 @@
 ---
-title: 'Error: No se puede iniciar la depuración en el servidor Web | Microsoft Docs'
-ms.custom: ''
+title: 'Error: No se puede iniciar la depuración en el servidor Web | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.debug.error.http
 - vwd.nonadmin.error.
@@ -32,22 +27,22 @@ ms.assetid: f62e378a-3a99-4f78-9d97-8bb63a4da181
 caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 168aaff6e7165c0566b198dab22174b14dad9949
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0b0cbd7afe90b1dbc091263e3a2594c9ca739e1c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51779299"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048767"
 ---
-# <a name="error-unable-to-start-debugging-on-the-web-server"></a>Error: No se puede iniciar la depuración en el servidor Web
+# <a name="error-unable-to-start-debugging-on-the-web-server"></a>Error: No es posible iniciar la depuración en el servidor web
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Cuando se intenta depurar una aplicación de ASP.NET que se ejecuta en un servidor web, puede obtener este mensaje de error: No se puede iniciar la depuración en el servidor Web.
+Al intentar depurar una aplicación de ASP.NET que se ejecutan en un servidor Web, obtendrá este mensaje de error: No se puede iniciar la depuración en el servidor Web.
   
 En muchos casos, este error se produce porque IIS no está configurado correctamente.
 
-##  <a name="vxtbshttpservererrorsthingstocheck"></a> Compruebe la configuración de IIS
+## <a name="vxtbshttpservererrorsthingstocheck"></a> Compruebe la configuración de IIS
 
 Después de llevar a cabo pasos para resolver un problema detallado aquí y antes de intentar de nuevo depurar, es posible que deba restablecer IIS. Para ello, abra un símbolo del sistema de administrador y escriba `iisreset`, o puede hacerlo en el Administrador de IIS. 
 
@@ -93,10 +88,6 @@ Si está usando una versión anterior de Visual Studio:
     Un error en las versiones anteriores (arreglar más adelante) requiere privilegios elevados en algunos escenarios de depuración de ASP.NET.
     
 - Si se ejecutan varias instancias de Visual Studio, vuelva a abrir el proyecto en una instancia de Visual Studio e inténtelo de nuevo.
-   
-  
+
 ## <a name="see-also"></a>Vea también  
  [Depurar aplicaciones web: errores y solución de problemas](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
-
-
-

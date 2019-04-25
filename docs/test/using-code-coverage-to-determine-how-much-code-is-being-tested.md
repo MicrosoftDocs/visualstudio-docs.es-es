@@ -1,7 +1,6 @@
 ---
 title: Pruebas de cobertura de código
 ms.date: 09/18/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - code coverage
@@ -11,15 +10,15 @@ dev_langs:
 - CPP
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ff77dc6c434a58ee916ea1eb4ffcab932d7a675
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a76b40e2a9848b0f80e755d15a9bd6e65fcf51da
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53958136"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222914"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Usar cobertura de código para determinar la cantidad de código que se está probando
 
@@ -259,7 +258,17 @@ Para ejecutar pruebas desde la línea de comandos, utilice *vstest.console.exe*.
 
 1. Inicie el Símbolo del sistema para desarrolladores de Visual Studio:
 
+   ::: moniker range="vs-2017"
+
    En el menú **Inicio** de Windows, elija **Visual Studio 2017** > **Símbolo del sistema para desarrolladores de VS 2017**.
+
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2019"
+
+   En el menú **Inicio** de Windows, elija **Visual Studio 2019** > **Símbolo del sistema para desarrolladores de VS 2019**.
+
+   ::: moniker-end
 
 2. En el símbolo del sistema, ejecute el siguiente comando:
 

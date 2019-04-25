@@ -1,29 +1,24 @@
 ---
-title: 'Área de prueba 7: Compartir | Microsoft Docs'
-ms.custom: ''
+title: 'Área de prueba 7: Recurso compartido de | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], sharing items
 - source control plug-ins, sharing items
 ms.assetid: 6ec4780a-bda4-4327-bb3e-c6c9e7eabf35
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e9389d03da7c4e4b763e979a721a22639ecb9fbe
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a788eb73c65a84731dd5505af54f4dd78439d456
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51796927"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111641"
 ---
-# <a name="test-area-7-share"></a>Área de prueba 7: compartir
+# <a name="test-area-7-share"></a>Área de prueba 7: Compartir
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Esta área de prueba trata para compartir elementos entre las ubicaciones a través de la **Share** comando.  
@@ -32,26 +27,26 @@ Esta área de prueba trata para compartir elementos entre las ubicaciones a trav
   
  Uso compartido de carpetas funciona si selecciona una carpeta con al menos un archivo bajo control de código fuente en ella. El comando compartir está deshabilitado en las siguientes condiciones:  
   
--   Si la carpeta seleccionada es una carpeta vacía.  
+- Si la carpeta seleccionada es una carpeta vacía.  
   
--   Si hay una carpeta real, pero no contiene ningún archivo de control de código fuente.  
+- Si hay una carpeta real, pero no contiene ningún archivo de control de código fuente.  
   
--   Si hay una carpeta virtual, si los archivos bajo control de código fuente están en él o no.  
+- Si hay una carpeta virtual, si los archivos bajo control de código fuente están en él o no.  
   
--   Si hay un proyecto Web de sitio remoto.  
+- Si hay un proyecto Web de sitio remoto.  
   
 ## <a name="command-menu-access"></a>Acceso al menú de comandos  
  La siguiente [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] rutas de menú del entorno de desarrollo integrado que se usan en los casos de prueba.  
   
- Recurso compartido: **archivo**->**Control de código fuente**->**Share**.  
+ Compartir: **Archivo**->**Control de código fuente**->**Share**.  
   
 ## <a name="expected-behavior"></a>Comportamiento esperado  
   
--   Archivo compartido aparece en la ubicación compartida.  
+- Archivo compartido aparece en la ubicación compartida.  
   
--   Ver el código fuente control versión almacén historial muestra que se comparten los archivos.  
+- Ver el código fuente control versión almacén historial muestra que se comparten los archivos.  
   
--   Editar un archivo compartido edita las ubicaciones del archivo.  
+- Editar un archivo compartido edita las ubicaciones del archivo.  
   
 ## <a name="test-cases"></a>Casos de prueba  
  Los siguientes son casos de prueba concretos para el área de prueba de recurso compartido.  
@@ -67,4 +62,3 @@ Esta área de prueba trata para compartir elementos entre las ubicaciones a trav
   
 ## <a name="see-also"></a>Vea también  
  [Guía de pruebas para los complementos de control de código fuente](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)
-

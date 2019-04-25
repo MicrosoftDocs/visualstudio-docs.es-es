@@ -1,21 +1,20 @@
 ---
 title: Instalar analizadores de FxCop
 ms.date: 08/03/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - fxcop analyzers
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: be213d25ca406a8532f00ad88b006c36d369e1a9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 017077717f5353fed941124d69d258beaab04e40
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53893790"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043086"
 ---
 # <a name="install-fxcop-analyzers-in-visual-studio"></a>Instalar analizadores de FxCop en Visual Studio
 
@@ -44,16 +43,19 @@ Utilice las siguientes directrices para determinar qué versión del paquete de 
 
 | Versión de Visual Studio | Versión del paquete de analizador de FxCop |
 | - | - |
-| Visual Studio 2017 versión 15.5 y versiones posterior | 2.6.2, por ejemplo https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.6.2 |
-| Visual Studio 2017 versión 15.3 a 15.4 | 2.3.0-Beta1, por ejemplo https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.3.0-beta1 |
-| Visual Studio 2017 versión 15.0 a 15.2 | 2.0.0-Beta2, por ejemplo https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.0.0-beta2 |
-| Visual Studio 2015 update 2 y 3 | Versión 1.2.0-beta2, por ejemplo https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/1.2.0-beta2 |
-| Visual Studio 2015 Update 1 | La versión 1.1.0, por ejemplo https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/1.1. |
-| Visual Studio 2015 RTW | Versión 1.0.1, por ejemplo https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/1.0.1 |
+| Visual Studio 2017 versión 15,8 y versiones posterior | [2.9.2](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.9.2) |
+| Visual Studio 2017 versión 15.5 a 15.7 | [2.6.3](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.6.3) |
+| Visual Studio 2017 versión 15.3 a 15.4 | [2.3.0-beta1](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.3.0-beta1) |
+| Visual Studio 2017 versión 15.0 a 15.2 | [2.0.0-beta2](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/2.0.0-beta2) |
+| Visual Studio 2015 update 2 y 3 | [1.2.0-beta2](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/1.2.0-beta2) |
+| Visual Studio 2015 Update 1 | [1.1.0](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/1.1.0) |
+| Visual Studio 2015 RTW | [1.0.1](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/1.0.1) |
 
 ## <a name="to-install-fxcop-analyzers-as-a-vsix"></a>Para instalar analizadores de FxCop como una extensión VSIX
 
 En Visual Studio 2017 versión 15.5 y versiones posterior, puede instalar el [2017 de análisis de código de Microsoft](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2017) extensión que contiene todos los analizadores de FxCop para proyectos administrados.
+
+::: moniker range="vs-2017"
 
 1. En Visual Studio, seleccione **herramientas** > **extensiones y actualizaciones**.
 
@@ -61,6 +63,19 @@ En Visual Studio 2017 versión 15.5 y versiones posterior, puede instalar el [20
 
    > [!NOTE]
    > Como alternativa, descargue la extensión directamente desde [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2017).
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. En Visual Studio, seleccione **extensiones** > **administrar extensiones**.
+
+   El **administrar extensiones** abre el cuadro de diálogo.
+
+   > [!NOTE]
+   > Como alternativa, descargue la extensión directamente desde [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2017).
+
+::: moniker-end
 
 1. Expanda **Online** en el panel izquierdo y, a continuación, seleccione **Visual Studio Marketplace**.
 
@@ -80,11 +95,21 @@ En Visual Studio 2017 versión 15.5 y versiones posterior, puede instalar el [20
 
 1. Seleccione **modificar** para iniciar la instalación.
 
-1. Después de un minuto o dos, se completa la instalación. Seleccione **cerrar**.
+1. Después de un minuto o dos, se completa la instalación. Seleccione **Cerrar**.
 
 1. Vuelva a abrir Visual Studio.
 
+::: moniker range="vs-2017"
+
 Si desea comprobar si la extensión está instalada, seleccione **herramientas** > **extensiones y actualizaciones**. En el **extensiones y actualizaciones** cuadro de diálogo, seleccione el **instalado** categoría de la izquierda y, a continuación, busque la extensión por nombre.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Si desea comprobar si la extensión está instalada, seleccione **extensiones** > **administrar extensiones**. En el **administrar extensiones** cuadro de diálogo, seleccione el **instalado** categoría de la izquierda y, a continuación, busque la extensión por nombre.
+
+::: moniker-end
 
 ## <a name="see-also"></a>Vea también
 

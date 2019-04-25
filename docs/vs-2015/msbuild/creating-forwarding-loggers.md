@@ -1,14 +1,9 @@
 ---
 title: Crear registradores de reenvío | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, forwarding loggers
 - MSBuild, logging
@@ -16,18 +11,17 @@ ms.assetid: 3aebf9c8-b62c-4cb2-b2d6-8cdfcd369a24
 caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 46cff57e8238e00f914f8437fbc81d1887e7d629
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: ecc9bae7176c0d8c0f79452baff87a7a697db459
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49281247"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648226"
 ---
 # <a name="creating-forwarding-loggers"></a>Crear registradores de reenvío
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Los registradores de reenvío mejoran la eficacia del registro, ya que le permiten elegir los eventos que quiere supervisar al compilar proyectos en un sistema de varios procesadores. Al habilitar los registradores de reenvío, puede evitar que eventos no deseados sobrecarguen el registrador central, ralenticen el tiempo de compilación y saturen el registro.  
   
  Para crear un registrador de reenvío, puede implementar la interfaz <xref:Microsoft.Build.Framework.IForwardingLogger> y después implementar manualmente sus métodos, o bien usar la clase <xref:Microsoft.Build.BuildEngine.ConfigurableForwardingLogger> y sus métodos preconfigurados. (Esto último será suficiente para la mayoría de las aplicaciones).  
@@ -51,6 +45,3 @@ Los registradores de reenvío mejoran la eficacia del registro, ya que le permit
  [Obtener registros de compilación](../msbuild/obtaining-build-logs-with-msbuild.md)   
  [Registradores de compilación](../msbuild/build-loggers.md)   
  [Registrar en un entorno de varios procesadores](../msbuild/logging-in-a-multi-processor-environment.md)
-
-
-

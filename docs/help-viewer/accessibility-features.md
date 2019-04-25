@@ -1,7 +1,6 @@
 ---
 title: Accesibilidad del Visor de ayuda
 ms.date: 11/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - accessibility features [Help Viewer]
@@ -9,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 94a3225c-d2cb-4565-8453-855d1cdc1acf
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2800bc660ac157fd7acf8d9d0452a21e62db45da
-ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
+ms.openlocfilehash: 808b3902747198697aa6a1147bd1c04c85dd96a6
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "54406053"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55913709"
 ---
 # <a name="accessibility-features-of-the-help-viewer"></a>Características de accesibilidad del Visor de Ayuda
 Microsoft ha asumido el compromiso de facilitar el acceso de todos los usuarios a sus productos y servicios. Este tema incluye información sobre las características, productos y servicios que permiten que el Visor de Ayuda de Microsoft sea accesible para los usuarios con una amplia gama de opciones.

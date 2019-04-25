@@ -18,10 +18,11 @@
 ### [Beneficios para los suscriptores](subscriber-benefits.md)
 ## Uso de beneficios para los suscriptores
 ### Herramientas
-#### [Visual Studio IDE](vs-ide-benefit.md)
+#### [IDE de Visual Studio](vs-ide-benefit.md)
 #### [Azure DevOps](vs-azure-devops.md)
 #### [Crédito de Azure](vs-azure.md)
 #### [Suscripción a Office 365 Developer](vs-office-dev.md)
+#### [RStudio](vs-rstudio.md)
 #### [Resaltado de CAST](vs-cast.md)
 #### [CloudPilot](vs-cloudpilot.md)
 #### [Visual Studio App Center](vs-visual-studio-app-center.md)
@@ -30,7 +31,7 @@
 #### [Enterprise Mobility & Security](vs-ems.md)
 #### [Cuenta de desarrollador de Windows](vs-windows-dev.md)
 #### [Suscripción de Office 365](vs-office365.md)
-#### [Power BI Pro ](vs-pbi.md)
+#### [Power BI Pro](vs-pbi.md)
 #### [Modern Requirements4TFS](vs-modernreq.md)
 #### [Pago por uso de Azure](vs-azure-payg.md)
 ### [Desarrollo profesional](professional-development.md)
@@ -68,6 +69,7 @@
 #### [Búsqueda de una suscripción](search-license.md)
 #### [Exportación de suscripciones](exporting-subscriptions.md)
 #### [Sobreasignaciones](handle-overclaimed-license.md)
+#### [Uso máximo](maximum-usage.md)
 #### [Suscripciones expiradas](handle-expired-license.md)
 #### [Suscriptores con inicios de sesión con el correo electrónico personal](personal-email-sign-ins.md)
 ## Adquisición de suscripciones de Visual Studio
@@ -81,7 +83,7 @@
 #### [Administración de suscripciones para MPN](manage-mpn-subscriptions.md)
 #### [Microsoft for Startups](program-startups.md)
 ## Recursos
-### [Artículo de licencias de Visual Studio](http://aka.ms/vslicensing)
+### [Artículo de licencias de Visual Studio](https://aka.ms/vslicensing)
 ### [Comparación de opciones de suscripción y precios](https://visualstudio.microsoft.com/vs/pricing)
 ### [Comparación de las características de los IDE de Visual Studio](https://visualstudio.microsoft.com/vs/compare)
 ### [Soporte técnico para suscripciones y administración de Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)

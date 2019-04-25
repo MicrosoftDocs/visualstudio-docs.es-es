@@ -1,7 +1,6 @@
 ---
 title: Ventana métricas de código
 ms.date: 12/12/2017
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - vs.codemetrics.output
@@ -11,15 +10,15 @@ helpviewer_keywords:
 - results window, code metrics
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31690ccc3c2f32b4abb2ff9fefcc268c83977595
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bbe2c216a9293ddc8c5c1212957c2987924d14e1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53856324"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089294"
 ---
 # <a name="use-the-code-metrics-results-window"></a>Utilice la ventana de resultados de las métricas de código
 
@@ -49,15 +48,15 @@ El **filtro** cuadro de lista desplegable contiene los nombres de las columnas d
 
 ### <a name="to-filter-the-code-metrics-results"></a>Para filtrar los resultados de las métricas de código
 
-1.  Desde el **filtro** lista, seleccione el nombre de columna.
+1. Desde el **filtro** lista, seleccione el nombre de columna.
 
-2.  En **Min**, escriba el valor mínimo que se mostrará.
+2. En **Min**, escriba el valor mínimo que se mostrará.
 
-3.  En **Max**, escriba el valor máximo que se mostrará.
+3. En **Max**, escriba el valor máximo que se mostrará.
 
-4.  Haga clic en el **aplicar filtro** botón.
+4. Haga clic en el **aplicar filtro** botón.
 
-5.  Para ver los detalles de resultados, expanda el árbol de jerarquía.
+5. Para ver los detalles de resultados, expanda el árbol de jerarquía.
 
 ## <a name="add-remove-and-rearrange-data-columns"></a>Agregar, quitar y reorganizar las columnas de datos
 
@@ -89,23 +88,23 @@ Para obtener más información acerca de los paneles de Azure, los elementos de 
 
 ### <a name="to-create-a-work-item-based-on-a-result"></a>Para crear un elemento de trabajo basado en un resultado
 
-1.  Haga clic en el resultado.
+1. Haga clic en el resultado.
 
-2.  Seleccione **crear elemento de trabajo**y, a continuación, haga clic en el tipo de elemento de trabajo que desea crear (**error**, **tarea**, y así sucesivamente).
+2. Seleccione **crear elemento de trabajo**y, a continuación, haga clic en el tipo de elemento de trabajo que desea crear (**error**, **tarea**, y así sucesivamente).
 
-3.  Complete el formulario de elemento de trabajo rellenando todos los campos obligatorios.
+3. Complete el formulario de elemento de trabajo rellenando todos los campos obligatorios.
 
-4.  En el **archivo** menú, haga clic en **guardar todo** para guardar el elemento de trabajo.
+4. En el **archivo** menú, haga clic en **guardar todo** para guardar el elemento de trabajo.
 
 ### <a name="to-create-a-bug-based-on-a-result"></a>Para crear un error basado en un resultado
 
-1.  Haga clic en el resultado para seleccionarlo.
+1. Haga clic en el resultado para seleccionarlo.
 
-2.  Haga clic en el **crear elemento de trabajo** botón.
+2. Haga clic en el **crear elemento de trabajo** botón.
 
-3.  Complete el formulario de elemento de trabajo rellenando todos los campos obligatorios.
+3. Complete el formulario de elemento de trabajo rellenando todos los campos obligatorios.
 
-4.  En el **archivo** menú, haga clic en **guardar todo** para guardar el elemento de trabajo.
+4. En el **archivo** menú, haga clic en **guardar todo** para guardar el elemento de trabajo.
 
 ## <a name="see-also"></a>Vea también
 

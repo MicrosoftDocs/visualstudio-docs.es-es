@@ -1,7 +1,6 @@
 ---
 title: Comandos de navegación por el código
 ms.date: 08/14/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - code editor, navigation
@@ -16,15 +15,15 @@ helpviewer_keywords:
 - go to
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c9415b3cf2c777e0a99b3f24a26e56d1a1c94bf8
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: 792b3ccf09faf9983afcd72de9acc0f23540683d
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54269948"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223538"
 ---
 # <a name="navigate-code"></a>Navegación en el código
 
@@ -83,7 +82,7 @@ Ir a tiene los comandos siguientes, que están disponibles en el menú **Editar*
 
 - **Ir al archivo** (**Ctrl**+**1**, **Ctrl**+**F**): Moverse al archivo especificado en la solución.
 
-- **Ir al archivo reciente** (**Ctrl**+**1**, **Ctrl**+**R**): Moverse al archivo especificado visitado recientemente en la solución (novedad de Visual Studio 2017 versión 15.8).
+- **Ir al archivo reciente** (**Ctrl**+**1**, **Ctrl**+**R**): Moverse al archivo especificado visitado recientemente en la solución.
 
 - **Ir al tipo** (**Ctrl**+**1**, **Ctrl**+**T**): Moverse al tipo especificado en la solución.
 
@@ -106,7 +105,7 @@ Ir a definición le lleva a la definición del elemento seleccionado. Vea [Ir a 
 Entrada | Función
 ------------ | ---
 **Teclado** | Coloque el cursor de texto en algún lugar del nombre de tipo y presione **F12**
-**Mouse** | Haga clic con el botón derecho en el nombre de tipo y seleccione **Ir a definición**, o bien presione **CTRL** y haga clic en el nombre de tipo (nuevo en Visual Studio 2017 versión 15.4).
+**Mouse** | Haga clic con el botón derecho en el nombre de tipo y seleccione **Ir a definición** O presione **Ctrl** y haga clic en el nombre de tipo.
 
 ## <a name="peek-definition"></a>Definición de Peek
 

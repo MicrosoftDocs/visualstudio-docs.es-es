@@ -1,12 +1,9 @@
 ---
 title: Llenar conjuntos de datos mediante TableAdapters | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -24,18 +21,17 @@ ms.assetid: 55f3bfbe-db78-4486-add3-c62f49e6b9a0
 caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 118b8165b4c5ad972aacf9a3d91cff78c1b776e1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: f4c036cac8fa60e3f0353815cb3790f0f74ddc77
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251856"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656783"
 ---
-# <a name="fill-datasets-by-using-tableadapters"></a>Llenar conjuntos de datos mediante TableAdapters
+# <a name="fill-datasets-by-using-tableadapters"></a>Rellenar conjuntos de datos mediante TableAdapters
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Un componente de TableAdapter rellena un dataset con los datos de la base de datos, en función de una o varias consultas o procedimientos almacenados que especifique. También puede llevar a cabo los TableAdapters agrega, actualiza y elimina la base de datos para conservar los cambios realizados en el conjunto de datos. También puede emitir comandos globales que están relacionados con una tabla específica.  
   
 > [!NOTE]
@@ -49,7 +45,7 @@ Un componente de TableAdapter rellena un dataset con los datos de la base de dat
 |[Crear consultas parametrizadas de TableAdapter](../data-tools/create-parameterized-tableadapter-queries.md)|Cómo habilitar usuarios proporcionar argumentos a las consultas o procedimientos de TableAdapter|  
 |[Obtener acceso directamente a la base de datos con un TableAdapter](../data-tools/directly-access-the-database-with-a-tableadapter.md)|Cómo usar los métodos Dbdirect de TableAdapter|  
 |[Desactivar restricciones al llenar un conjunto de datos](../data-tools/turn-off-constraints-while-filling-a-dataset.md)|Cómo trabajar con restricciones foreign key durante la actualización de datos|  
-|[Cómo ampliar la funcionalidad de un TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md)|Cómo agregar código personalizado a los TableAdapters|  
+|[Cómo extender la funcionalidad de un TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md)|Cómo agregar código personalizado a los TableAdapters|  
 |[Leer datos XML en un conjunto de datos](../data-tools/read-xml-data-into-a-dataset.md)|Cómo trabajar con XML|  
   
 ## <a name="tableadapters-overview"></a>Información general de TableAdapters  
@@ -63,7 +59,7 @@ Un componente de TableAdapter rellena un dataset con los datos de la base de dat
  [!code-vb[VbRaddataTableAdapters#7](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataTableAdapters/VB/Class1.vb#7)]  
   
 ## <a name="associated-datatable-schema"></a>Esquema de DataTable asociado  
- Al crear un TableAdapter, utilice la consulta inicial o procedimiento almacenado para definir el esquema del TableAdapter asociado a la <xref:System.Data.DataTable>. Ejecute esta consulta inicial o procedimiento almacenado mediante una llamada del TableAdapter `Fill` método (que rellena el TableAdapter asociado <xref:System.Data.DataTable>). Los cambios realizados en la consulta principal del TableAdapter se reflejan en el esquema de la tabla de datos asociada. Por ejemplo, al quitar una columna de la consulta principal también quita la columna de la tabla de datos asociados. Si alguna consulta adicional del TableAdapter utiliza instrucciones SQL que devuelven columnas que no están en la consulta principal, el diseñador intenta sincronizar los cambios de columna entre la consulta principal y las consultas adicionales. Para obtener más información, consulte [Cómo: editar TableAdapters](http://msdn.microsoft.com/library/ca178745-e35a-45f1-a395-23cddfd8f855).  
+ Al crear un TableAdapter, utilice la consulta inicial o procedimiento almacenado para definir el esquema del TableAdapter asociado a la <xref:System.Data.DataTable>. Ejecute esta consulta inicial o procedimiento almacenado mediante una llamada del TableAdapter `Fill` método (que rellena el TableAdapter asociado <xref:System.Data.DataTable>). Los cambios realizados en la consulta principal del TableAdapter se reflejan en el esquema de la tabla de datos asociada. Por ejemplo, al quitar una columna de la consulta principal también quita la columna de la tabla de datos asociados. Si alguna consulta adicional del TableAdapter utiliza instrucciones SQL que devuelven columnas que no están en la consulta principal, el diseñador intenta sincronizar los cambios de columna entre la consulta principal y las consultas adicionales. Para obtener más información, vea [Cómo: Editar TableAdapters](http://msdn.microsoft.com/library/ca178745-e35a-45f1-a395-23cddfd8f855).  
   
 ## <a name="tableadapter-update-commands"></a>Comandos de actualización de TableAdapter  
  La funcionalidad de actualización de un objeto TableAdapter depende de la cantidad de información está disponible en la consulta principal en el Asistente de TableAdapter. Por ejemplo, los TableAdapter configurados para obtener valores de varias tablas (consultas JOIN), valores escalares, vistas o los resultados de funciones de agregado no se crean inicialmente con la capacidad de enviar actualizaciones a la base de datos subyacente. Sin embargo, puede configurar los comandos INSERT, UPDATE y DELETE manualmente en el **propiedades** ventana.  
@@ -83,8 +79,8 @@ Un componente de TableAdapter rellena un dataset con los datos de la base de dat
 ## <a name="tableadapter-inheritance"></a>Herencia de TableAdapter  
  Los TableAdapter amplían la funcionalidad de los adaptadores de datos estándar encapsulando un <xref:System.Data.Common.DataAdapter> clase? qualifyHint = False & autoUpgrade = True. De forma predeterminada, el objeto TableAdapter hereda el <xref:System.ComponentModel.Component> clase y no puede convertirse el <xref:System.Data.Common.DataAdapter> clase. Convertir un TableAdapter a la <xref:System.Data.Common.DataAdapter> clase da como resultado un <xref:System.InvalidCastException> error? qualifyHint = False & autoUpgrade = True. Para cambiar la clase base de un TableAdapter, puede escribir una clase que derive de <xref:System.ComponentModel.Component> en el **clase Base** propiedad del TableAdapter en el **Diseñador de Dataset**.  
   
-## <a name="tableadapter-methods-and-properties"></a>Las propiedades y métodos de TableAdapter  
- La clase TableAdapter no es parte de la [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Esto significa que no puede buscarla en la documentación o **Examinador de objetos**. Se crea en tiempo de diseño cuando se usa uno de los asistentes que se ha mencionado anteriormente. El nombre que se asigna a un TableAdapter al crearlo se basa en el nombre de la tabla que está trabajando. Por ejemplo, cuando se crea un TableAdapter basado en una tabla en una base de datos denominada `Orders`, lo TableAdapter se denomina `OrdersTableAdapter`. Se puede cambiar el nombre de clase del TableAdapter utilizando la **nombre** propiedad en el **Diseñador de Dataset**.  
+## <a name="tableadapter-methods-and-properties"></a>Métodos y propiedades de TableAdapter  
+ La clase TableAdapter no es parte de la [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Esto significa que no puede buscarla en la documentación o **Examinador de objetos**. Se crea en tiempo de diseño cuando se usa uno de los asistentes que se ha mencionado anteriormente. El nombre que se asigna a un TableAdapter al crearlo se basa en el nombre de la tabla que está trabajando. Por ejemplo, cuando se crea un TableAdapter basado en una tabla en una base de datos denominada `Orders`, lo TableAdapter se denomina `OrdersTableAdapter`. Se puede cambiar el nombre de clase del TableAdapter utilizando la propiedad **Name** en el **Diseñador de DataSet**.  
   
  Siguiente es las propiedades de los TableAdapters y los métodos más utilizados:  
   
@@ -109,7 +105,7 @@ Un componente de TableAdapter rellena un dataset con los datos de la base de dat
   
  Si no desea crear estos métodos directos, establezca el TableAdapter **GenerateDbDirectMethods** propiedad `false` (en el **propiedades** ventana). Las consultas adicionales que se agregan al objeto TableAdapter son consultas independientes, que no generan estos métodos.  
   
-## <a name="tableadapter-support-for-nullable-types"></a>Compatibilidad de TableAdapter para tipos que aceptan valores null  
+## <a name="tableadapter-support-for-nullable-types"></a>Compatibilidad del objeto TableAdapter con los tipos que aceptan valores NULL  
  Los TableAdapters admiten tipos que aceptan valores NULL `Nullable(Of T)` y `T?`. Para más información sobre los tipos que aceptan valores NULL en Visual Basic, vea [Tipos que admiten valores null](http://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6). Para obtener más información acerca de los tipos que aceptan valores NULL en C#, vea [utilizar tipos que aceptan valores NULL](http://msdn.microsoft.com/library/0bacbe72-ce15-4b14-83e1-9c14e6380c28).  
   
 ## <a name="security"></a>Seguridad  
@@ -117,4 +113,3 @@ Un componente de TableAdapter rellena un dataset con los datos de la base de dat
   
 ## <a name="see-also"></a>Vea también  
  [Herramientas de conjunto de datos en Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
-

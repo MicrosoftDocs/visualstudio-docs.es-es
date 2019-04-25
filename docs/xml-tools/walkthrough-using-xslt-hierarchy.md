@@ -1,17 +1,16 @@
 ---
 title: 'Tutorial: Usar la herramienta jerarquía XSLT'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 65af5f973f9440ac781a8af1042700cf89acee1c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 3cf836ed59dadba71314aa38cd4d2907bee384a6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53834729"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051640"
 ---
 # <a name="walkthrough-use-xslt-hierarchy"></a>Tutorial: Utilice la herramienta jerarquía XSLT
 
@@ -70,7 +69,7 @@ El ejemplo de este tema muestra la depuración en una hoja de estilos a la que s
     </xsl:stylesheet>
     ```
 
-3.  Agregue el siguiente *xsinclude.xsl* archivo:
+3. Agregue el siguiente *xsinclude.xsl* archivo:
 
     ```xml
     <?xml version='1.0'?>
@@ -104,12 +103,12 @@ El ejemplo de este tema muestra la depuración en una hoja de estilos a la que s
     </xsl:stylesheet>
     ```
 
-4.  Agregar un punto de interrupción en la instrucción `<xsl:include href="xslincludefile.xsl" />`.
+4. Agregar un punto de interrupción en la instrucción `<xsl:include href="xslincludefile.xsl" />`.
 
-5.  Inicie la depuración.
+5. Inicie la depuración.
 
-6.  Cuando el depurador se detiene en la instrucción `<xsl:include href="xslincludefile.xsl" />`, presione el **paso a paso** botón. Puede continuar la depuración en la hoja de estilos que se hace referencia. La jerarquía está visible y el diseñador muestra la ruta de acceso correcta.
+6. Cuando el depurador se detiene en la instrucción `<xsl:include href="xslincludefile.xsl" />`, presione el **paso a paso** botón. Puede continuar la depuración en la hoja de estilos que se hace referencia. La jerarquía está visible y el diseñador muestra la ruta de acceso correcta.
 
 ## <a name="see-also"></a>Vea también
 
-- [Tutorial: Generador de perfiles XSLT](../xml-tools/walkthrough-xslt-profiler.md)
+- [Generador de perfiles XSLT](../xml-tools/xslt-profiler.md)

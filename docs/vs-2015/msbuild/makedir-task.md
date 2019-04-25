@@ -1,14 +1,9 @@
 ---
 title: Tarea MakeDir | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#MakeDir
 dev_langs:
@@ -23,18 +18,17 @@ ms.assetid: bc951577-1bfb-4100-b1f1-bc8278c45bf7
 caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 17c9d16c8ed9d92b6008ae5efd873c60b59643ea
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 139d52963cfbb332fa084840c665efd3aeb8e88f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49287344"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648413"
 ---
 # <a name="makedir-task"></a>MakeDir (Tarea)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Crea directorios y, si es preciso, cualquier directorio primario.  
   
 ## <a name="parameters"></a>Parámetros  
@@ -69,6 +63,3 @@ Crea directorios y, si es preciso, cualquier directorio primario.
 ## <a name="see-also"></a>Vea también  
  [Tareas](../msbuild/msbuild-tasks.md)   
  [Referencia de tareas](../msbuild/msbuild-task-reference.md)
-
-
-

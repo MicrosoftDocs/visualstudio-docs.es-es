@@ -1,7 +1,6 @@
 ---
 title: Modificadores de línea de comandos para Devenv
 ms.date: 12/10/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - switches, Devenv
@@ -11,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: e12bc6ed-74fd-4bea-8d7c-89b99c20bad8
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c2ea1bfc4cc49378308933dffd5bc3873b25209
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: db9aaeb48095b058abb0deefa342598eefeed1b9
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54269675"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57868916"
 ---
 # <a name="devenv-command-line-switches"></a>Modificadores de línea de comandos para Devenv
 
@@ -68,6 +67,7 @@ Los siguientes modificadores de línea de comandos muestran el IDE y realizan la
 |[/Command](command-devenv-exe.md)|Inicia el IDE y ejecuta el comando especificado.<br /><br /> `devenv /command "nav https://docs.microsoft.com/"`|
 |[/DebugExe](debugexe-devenv-exe.md)|Carga un archivo ejecutable de C++ bajo el control del depurador. Este modificador no está disponible para los archivos ejecutables de Visual Basic o C#. Para obtener más información, vea [Iniciar automáticamente un proceso en el depurador](../../debugger/debug-multiple-processes.md#BKMK_Automatically_start_an_process_in_the_debugger).<br /><br /> `devenv /debugexe mysln.exe`|
 |[/Diff](diff.md)|Compara dos archivos. Toma cuatro parámetros: *SourceFile*, *TargetFile*, *SourceDisplayName* (opcional) y *TargetDisplayName* (opcional).<br /><br /> `devenv /diff File1 File2 Alias1 Alias2`|
+|[/DoNotLoadProjects](donotloadprojects-devenv-exe.md)|Abre la solución especificada sin cargar ningún proyecto.<br /><br /> `devenv /donotloadprojects mysln.sln`|
 |[/Edit](edit-devenv-exe.md)|Abre los archivos especificados en una instancia en ejecución de esta aplicación. Si no hay ninguna instancia en ejecución, inicia una instancia nueva con un diseño de ventanas simplificado.<br /><br /> `devenv /edit File1 File2`|
 |[/LCID o /L](lcid-devenv-exe.md)|Establece el idioma predeterminado del IDE. Si el idioma especificado no se incluye en la instalación de Visual Studio, se omitirá este valor.<br /><br /> `devenv /l 1033`|
 |[/Log](log-devenv-exe.md)|Inicia Visual Studio y registra toda la actividad en el archivo de registro.<br /><br /> `devenv /log mylogfile.xml`|

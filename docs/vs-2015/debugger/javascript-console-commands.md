@@ -1,14 +1,9 @@
 ---
 title: Comandos de la consola de JavaScript | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -22,20 +17,20 @@ ms.assetid: 359e2b24-6bb7-48e7-8b55-b570df0cb774
 caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d62754dc881e42b2beada17379def19eb96abcda
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: aeaba355e101bd8e48126bfa01f95668a37abe3e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51725341"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081429"
 ---
 # <a name="javascript-console-commands"></a>JavaScript Console commands
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
   
- La ventana Consola JavaScript de Visual Studio te permite usar comandos para enviar mensajes y realizar otras tareas. Para obtener ejemplos que muestran cómo usar esa ventana, consulte [inicio rápido: depurar JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md). La información de este tema se aplica a las aplicaciones de la Tienda Windows, las aplicaciones de la Tienda de Windows Phone y las aplicaciones creadas con Visual Studio Tools para Apache Cordova. Para obtener información acerca sobre los comandos de consola compatibles en las aplicaciones de Cordova, vea [Debug Your App](http://msdn.microsoft.com/library/c2a4a1d4-a4e8-47ec-811f-ad207c54f4d1). Para obtener información sobre el uso de la consola con herramientas de F12 de Internet Explorer, consulte [este tema](http://msdn.microsoft.com/library/ie/dn255006.aspx).  
+ La ventana Consola JavaScript de Visual Studio te permite usar comandos para enviar mensajes y realizar otras tareas. Para obtener ejemplos que muestran cómo usar esa ventana, consulte [inicio rápido: Depurar JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md). La información de este tema se aplica a las aplicaciones de la Tienda Windows, las aplicaciones de la Tienda de Windows Phone y las aplicaciones creadas con Visual Studio Tools para Apache Cordova. Para obtener información acerca sobre los comandos de consola compatibles en las aplicaciones de Cordova, vea [Debug Your App](http://msdn.microsoft.com/library/c2a4a1d4-a4e8-47ec-811f-ad207c54f4d1). Para obtener información sobre el uso de la consola con herramientas de F12 de Internet Explorer, consulte [este tema](http://msdn.microsoft.com/library/ie/dn255006.aspx).  
   
  Si la ventana Consola JavaScript está cerrada, puedes abrirla durante la depuración en Visual Studio si eliges **Depurar** > **Ventanas** > **Consola JavaScript**.  
   
@@ -98,7 +93,7 @@ if (console && console.log) {
 ## <a name="examining-objects-in-the-javascript-console-window"></a>Examinar objetos en la ventana Consola JavaScript  
  Puedes interactuar con cualquier objeto que esté dentro del ámbito cuando utilices la ventana Consola JavaScript. Para inspeccionar un objeto que esté fuera del ámbito en la ventana de la consola, utiliza `console.log` , `console.dir`u otros comandos del código. También puede interactuar con el objeto desde la ventana de la consola mientras esté dentro del ámbito si establece un punto de interrupción en el código (**Punto de interrupción** > **Insert Punto de interrupción**).  
   
-##  <a name="ConsoleLog"></a> Formato de salida de console.log  
+## <a name="ConsoleLog"></a> Aplicación de formato a la salida de console.log  
  Si pasas varios argumentos a `console.log`, la consola los tratará como una matriz y concatenará el resultado.  
   
 ```javascript  
@@ -143,8 +138,5 @@ console.log("%s is %f years old!", user.first, user.age);
 ```  
   
 ## <a name="see-also"></a>Vea también  
- [Inicio rápido: Depurar JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)   
- [Inicio rápido: Depurar HTML y CSS](../debugger/quickstart-debug-html-and-css.md)
-
-
-
+ [Inicio rápido: Depuración de JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)   
+ [Inicio rápido: depuración de HTML y CSS](../debugger/quickstart-debug-html-and-css.md)

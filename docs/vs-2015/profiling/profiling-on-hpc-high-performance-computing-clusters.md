@@ -1,14 +1,9 @@
 ---
 title: Generar perfiles en clústeres HPC (Sistemas de alto rendimiento) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.hpc.wizard.exeoptions
 - vs.performance.hpc.wizard.summary
@@ -25,18 +20,18 @@ ms.assetid: 1525bbdb-27da-4088-8487-a486cee5e7b3
 caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: f6b0838a7fb3db86290647fadec9ca3572cbdf90
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e14ce5ac1e0596947e69d20e14a3dc1e7ff4f1e5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51809163"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60038956"
 ---
 # <a name="profiling-on-hpc-high-performance-computing-clusters"></a>Generar perfiles en clústeres HPC (Sistemas de alto rendimiento)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Puede generar perfiles en nodos de ejecución de clústeres de Microsoft Windows HPC usando el método de muestreo de las herramientas de generación de perfiles de [!INCLUDE[vsPreExt](../includes/vspreext-md.md)] o [!INCLUDE[vsUltExt](../includes/vsultext-md.md)]. Para obtener más información sobre HPC, consulte [Windows HPC](http://go.microsoft.com/fwlink/?LinkId=165393) en el sitio web de Microsoft.  
+Puede generar perfiles en nodos de ejecución de clústeres de Microsoft Windows HPC usando el método de muestreo de las herramientas de generación de perfiles de [!INCLUDE[vsPreExt](../includes/vspreext-md.md)] o [!INCLUDE[vsUltExt](../includes/vsultext-md.md)]. Para obtener más información sobre HPC vea [Big Compute: HPC y Batch](https://azure.microsoft.com/solutions/big-compute/) en el sitio Web de Microsoft.  
   
 ## <a name="prerequisites"></a>Requisitos previos  
  Para generar perfiles en un nodo de ejecución HPC, debe hacer lo siguiente:  
@@ -47,68 +42,68 @@ Puede generar perfiles en nodos de ejecución de clústeres de Microsoft Windows
   
   Para instalar el [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)] y las herramientas de generación de perfiles independientes en un nodo de ejecución de HPC activo y habilitar la generación de perfiles en el equipo del clúster, siga estos pasos:  
   
-1.  Abra la ventana de símbolo del sistema que se instala con el paquete de HPC.  
+1. Abra la ventana de símbolo del sistema que se instala con el paquete de HPC.  
   
-2.  Escriba los siguientes comandos en símbolos del sistema separados:  
+2. Escriba los siguientes comandos en símbolos del sistema separados:  
   
-    1.  `clusrun /all /scheduler:` *%HeadNode% %FxPath%* `/q /norestart`  
+    1. `clusrun /all /scheduler:` *%HeadNode% %FxPath%* `/q /norestart`  
   
-    2.  `clusrun /all /scheduler:` *%HeadNode%* `shutdown /r /t 0 /d u:4:2 /c "Microsoft .NET Framework install required restart"`  
+    2. `clusrun /all /scheduler:` *%HeadNode%* `shutdown /r /t 0 /d u:4:2 /c "Microsoft .NET Framework install required restart"`  
   
-    3.  `clusrun /all /scheduler:` *%HeadNode% %ProfilerPath%* `/q /norestart`  
+    3. `clusrun /all /scheduler:` *%HeadNode% %ProfilerPath%* `/q /norestart`  
   
 |||  
 |-|-|  
 |*%HeadNode%*|Nombre del nodo principal del clúster.|  
-|*%FxPath%*|Ruta de acceso al instalador de [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)]. En los medios de instalación de [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] la ruta de acceso es: WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe|  
-|*%ProfilerPath%*|Ruta de acceso a la versión independiente del instalador de las herramientas de generación de perfiles. En los medios de instalación de [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] la ruta de acceso es: Standalone Profiler\x64\vs_profiler.exe|  
+|*%FxPath%*|Ruta de acceso al instalador de [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)]. En el [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] es la ruta de acceso de medios de instalación: WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe|  
+|*%ProfilerPath%*|Ruta de acceso a la versión independiente del instalador de las herramientas de generación de perfiles. En el [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] es la ruta de acceso de medios de instalación: Standalone Profiler\x64\vs_profiler.exe|  
   
 ## <a name="profiling-on-an-hpc-compute-node"></a>Generación de perfiles en un nodo de ejecución HPC  
  Configure una sesión de generación de perfiles mediante el Asistente de rendimiento HPC para especificar la información de destino y de clúster de HPC. Puede establecer opciones adicionales en las páginas de propiedades de la sesión de rendimiento. Las herramientas de generación de perfiles implementan los binarios de destino necesarios e inician el generador de perfiles y la aplicación HPC automáticamente.  
   
 #### <a name="to-profile-on-an-hpc-compute-node"></a>Para generar perfiles en un nodo de ejecución HPC  
   
-1.  En el menú **Analizar**, haga clic en **Iniciar Asistente de rendimiento HPC**. Si el comando no está disponible, asegúrese de que tiene los requisitos previos mencionados anteriormente.  
+1. En el menú **Analizar**, haga clic en **Iniciar Asistente de rendimiento HPC**. Si el comando no está disponible, asegúrese de que tiene los requisitos previos mencionados anteriormente.  
   
-2.  Haga clic en **Siguiente** en la primera página del asistente.  
+2. Haga clic en **Siguiente** en la primera página del asistente.  
   
-3.  En la segunda página del asistente, seleccione la aplicación de la que desea generar perfiles.  
+3. En la segunda página del asistente, seleccione la aplicación de la que desea generar perfiles.  
   
-    -   Para generar perfiles de un proyecto que está abierto actualmente en [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], seleccione la opción **Uno o más proyectos disponibles** y después el nombre del proyecto de la lista.  
+    - Para generar perfiles de un proyecto que está abierto actualmente en [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], seleccione la opción **Uno o más proyectos disponibles** y después el nombre del proyecto de la lista.  
   
-    -   Para generar perfiles de un binario que no está en un proyecto abierto, seleccione la opción **Un archivo ejecutable (un archivo .EXE)**.  
+    - Para generar perfiles de un binario que no está en un proyecto abierto, seleccione la opción **Un archivo ejecutable (un archivo .EXE)**.  
   
-4.  Haga clic en **Siguiente**.  
+4. Haga clic en **Siguiente**.  
   
-5.  En la tercera página del asistente:  
+5. En la tercera página del asistente:  
   
-    -   Si está generando perfiles de un archivo ejecutable que no está en un proyecto abierto, especifique la ruta de acceso al archivo binario en **¿Cuál es la ruta de acceso completa al archivo ejecutable?**  
+    - Si está generando perfiles de un archivo ejecutable que no está en un proyecto abierto, especifique la ruta de acceso al archivo binario en **¿Cuál es la ruta de acceso completa al archivo ejecutable?**  
   
-    -   Si está generando perfiles de un archivo ejecutable que no está en un proyecto abierto, puede especificar argumentos de línea de comandos para pasar al proceso en **Argumentos de línea de comandos**.  
+    - Si está generando perfiles de un archivo ejecutable que no está en un proyecto abierto, puede especificar argumentos de línea de comandos para pasar al proceso en **Argumentos de línea de comandos**.  
   
-    -   En **Directorio de trabajo remoto**, especifique la ruta de acceso a la carpeta que se usa en las instancias de proceso en los nodos de ejecución individuales.  
+    - En **Directorio de trabajo remoto**, especifique la ruta de acceso a la carpeta que se usa en las instancias de proceso en los nodos de ejecución individuales.  
   
-    -   En **Ubicación de implementación**, especifique la ruta de acceso al directorio que el servidor HPC usa para organizar las imágenes para la implementación.  
+    - En **Ubicación de implementación**, especifique la ruta de acceso al directorio que el servidor HPC usa para organizar las imágenes para la implementación.  
   
-6.  Haga clic en **Siguiente**.  
+6. Haga clic en **Siguiente**.  
   
-7.  En la cuarta página del asistente:  
+7. En la cuarta página del asistente:  
   
-    -   En lista **Nodo principal**, haga clic en el equipo que actúa como el nodo principal de HPC en la generación de perfiles. El nodo principal puede ser "localhost", lo que permite generar perfiles en el equipo local sin necesidad de un clúster.  
+    - En lista **Nodo principal**, haga clic en el equipo que actúa como el nodo principal de HPC en la generación de perfiles. El nodo principal puede ser "localhost", lo que permite generar perfiles en el equipo local sin necesidad de un clúster.  
   
-    -   En la lista **Número de procesos**, haga clic en el número de instancias de la aplicación que se ejecutarán.  
+    - En la lista **Número de procesos**, haga clic en el número de instancias de la aplicación que se ejecutarán.  
   
-    -   Desde la lista **Opciones de generación de perfiles**, seleccione el destino de generación de perfiles.  
+    - Desde la lista **Opciones de generación de perfiles**, seleccione el destino de generación de perfiles.  
   
          Para generar perfiles de un proceso concreto en el clúster, seleccione la opción **Perfil en el rango** y después el rango del proceso en la lista desplegable.  
   
          Para generar perfiles del proceso o procesos que se ejecutan en un nodo concreto del clúster HPC, seleccione la opción **Perfil en el nodo** y después el nodo de la lista desplegable.  
   
-8.  Haga clic en **Siguiente**.  
+8. Haga clic en **Siguiente**.  
   
 9. En la quinta página del asistente, puede elegir iniciar inmediatamente el generador de perfiles y el proceso de generación de perfiles o iniciar la generación de perfiles más tarde mediante el Explorador de rendimiento.  
   
-    -   Seleccione **Iniciar la generación de perfiles cuando finalice el asistente** para empezar a generar perfiles inmediatamente o desactive la casilla para empezar a generar perfiles manualmente.  
+    - Seleccione **Iniciar la generación de perfiles cuando finalice el asistente** para empezar a generar perfiles inmediatamente o desactive la casilla para empezar a generar perfiles manualmente.  
   
 10. Haga clic en **Finalizar**.  
   
@@ -117,21 +112,21 @@ Puede generar perfiles en nodos de ejecución de clústeres de Microsoft Windows
   
 #### <a name="to-open-the-performance-session-property-pages"></a>Para abrir las páginas de propiedades de la sesión de rendimiento  
   
-1.  Si es necesario, abra el archivo de sesión de rendimiento (.psess) en el Explorador de rendimiento. En el menú **Archivo**, haga clic en **Abrir** y busque el archivo.  
+1. Si es necesario, abra el archivo de sesión de rendimiento (.psess) en el Explorador de rendimiento. En el menú **Archivo**, haga clic en **Abrir** y busque el archivo.  
   
-2.  En el Explorador de rendimiento, haga clic con el botón derecho en el nombre de la sesión y después haga clic en **Propiedades**.  
+2. En el Explorador de rendimiento, haga clic con el botón derecho en el nombre de la sesión y después haga clic en **Propiedades**.  
   
-3.  En el cuadro de diálogo Páginas de propiedades, use uno de los siguientes métodos:  
+3. En el cuadro de diálogo Páginas de propiedades, use uno de los siguientes métodos:  
   
-    -   Haga clic en **General** y después seleccione **Recopilar en clúster HPC** para activar la generación de perfiles de HPC o desmarque la casilla para desactivarla.  
+    - Haga clic en **General** y después seleccione **Recopilar en clúster HPC** para activar la generación de perfiles de HPC o desmarque la casilla para desactivarla.  
   
-    -   Haga clic en **Propiedades de inicio de HPC** para cambiar las propiedades que inician la aplicación HPC.  
+    - Haga clic en **Propiedades de inicio de HPC** para cambiar las propiedades que inician la aplicación HPC.  
   
-    -   Haga clic en **Propiedades avanzadas de HPC** para establecer opciones adicionales  
+    - Haga clic en **Propiedades avanzadas de HPC** para establecer opciones adicionales  
   
 ### <a name="hpc-launch-properties"></a>Propiedades de inicio de HPC  
   
-|Property|Descripción|  
+|Propiedad|Descripción|  
 |--------------|-----------------|  
 |**Nodo principal**|Especifica el equipo que actúa como el nodo principal de HPC en la generación de perfiles.|  
 |**Número de procesos**|Especifica el número de instancias de la aplicación que se ejecutan en la aplicación perfilada.|  
@@ -142,7 +137,7 @@ Puede generar perfiles en nodos de ejecución de clústeres de Microsoft Windows
   
 ### <a name="advanced-properties"></a>Avanzadas (Propiedades)  
   
-|Property|Descripción|  
+|Propiedad|Descripción|  
 |--------------|-----------------|  
 |**Nombre del proyecto**|Muestra el nombre del proyecto o la solución de [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] actual.|  
 |**Limpiar cuando se detenga el generador de perfiles**|Cuando es true, quita los binarios que se han implementado en el directorio de ejecución. Los archivos y directorios creados por el programa de usuario no se quitan en este paso. Si el directorio de ejecución y el de implementación fueron creados por el IDE, el IDE intentará quitarlos, pero no podrá hacerlo si tienen archivos no implementados por el IDE.|  
@@ -155,6 +150,3 @@ Puede generar perfiles en nodos de ejecución de clústeres de Microsoft Windows
 |**Argumentos de script anteriores a la generación de perfiles**|Especifica los argumentos para pasar al script que se ejecuta antes de la generación de perfiles.|  
 |**Script posterior a la generación de perfiles**|Especifica la ruta de acceso y el nombre de archivo de un script que se ejecutará en el equipo de desarrollo local después de finalizar la sesión de generación de perfiles.|  
 |**Argumentos de script posteriores a la generación de perfiles**|Especifica los argumentos para pasar al script que se ejecuta después de la generación de perfiles.|
-
-
-

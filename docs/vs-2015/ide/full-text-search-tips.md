@@ -1,14 +1,9 @@
 ---
 title: Sugerencias para la búsqueda de texto completo | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - hv_search
 helpviewer_keywords:
@@ -18,13 +13,13 @@ ms.assetid: bcaad23d-2ca7-4bec-8b54-b884bc34e70b
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 85770dfd3c610f92bcb190b7a2c151b40cd31a4c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 686bf7962e164e718f007a44c83febfc8f49418d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49850053"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108378"
 ---
 # <a name="full-text-search-tips"></a>Sugerencias para la búsqueda de texto completo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +43,7 @@ Uno de los métodos más útiles de buscar información en la Ayuda consiste en 
   
 > [!IMPORTANT]
 > 1. No se admite la búsqueda de frases. Si se especifica más de una palabra en una cadena de búsqueda, los temas devueltos contendrán todas las palabras que ha especificado pero no necesariamente la frase exacta especificada.  
->    2.  Use los operadores lógicos para especificar la relación entre las palabras en la frase de búsqueda. Puede incluir operadores lógicos, como Y, O, NO y CERCA_DE, para restringir más la búsqueda. Por ejemplo, si busca "declarar CERCA_DE unión", los resultados de la búsqueda incluirán temas que contengan las palabras "declarar" y "unión" cerca la una de la otra. Para obtener más información, vea [Operadores lógicos en expresiones de búsqueda](../ide/logical-operators-in-search-expressions.md).  
+>    2. Use los operadores lógicos para especificar la relación entre las palabras en la frase de búsqueda. Puede incluir operadores lógicos, como Y, O, NO y CERCA_DE, para restringir más la búsqueda. Por ejemplo, si busca "declarar CERCA_DE unión", los resultados de la búsqueda incluirán temas que contengan las palabras "declarar" y "unión" cerca la una de la otra. Para obtener más información, vea [Operadores lógicos en expresiones de búsqueda](../ide/logical-operators-in-search-expressions.md).  
   
 ### <a name="filters"></a>Filtros  
  Puede restringir aún más los resultados de la búsqueda mediante los operadores de búsqueda avanzada. La Ayuda incluye tres categorías que puede usar para filtrar los resultados de una búsqueda de texto completo: Título, Código y Palabra clave. Para obtener más información, vea [Operadores de búsqueda avanzada en expresiones de búsqueda](../ide/advanced-search-operators-in-search-expressions.md).  
@@ -56,11 +51,11 @@ Uno de los métodos más útiles de buscar información en la Ayuda consiste en 
 ### <a name="ranking-of-search-results"></a>Clasificación de resultados de la búsqueda  
  El algoritmo de búsqueda aplica ciertos criterios para ayudar a situar los resultados de la búsqueda más arriba o más abajo en la lista de resultados. En general:  
   
-1.  El contenido que incluye palabras de búsqueda en el título tiene mejor clasificación que el que no lo hace.  
+1. El contenido que incluye palabras de búsqueda en el título tiene mejor clasificación que el que no lo hace.  
   
-2.  El contenido que incluye palabras de búsqueda muy próximas tiene mejor clasificación que el que no lo hace.  
+2. El contenido que incluye palabras de búsqueda muy próximas tiene mejor clasificación que el que no lo hace.  
   
-3.  El contenido con una mayor densidad de las palabras de búsqueda tiene mejor clasificación que el contenido con una densidad inferior.  
+3. El contenido con una mayor densidad de las palabras de búsqueda tiene mejor clasificación que el contenido con una densidad inferior.  
   
 ### <a name="words-ignored-in-searches-stop-words"></a>Palabras omitidas en las búsquedas (palabras irrelevantes)  
  Las palabras o números que aparecen más habitualmente, a veces llamadas palabras irrelevantes, se omiten automáticamente durante una búsqueda de texto completo. Por ejemplo, si busca la frase "pasar por", los resultados de la búsqueda mostrarán los temas que contienen la palabra "pasar", pero no "por".  
@@ -68,6 +63,3 @@ Uno de los métodos más útiles de buscar información en la Ayuda consiste en 
 ## <a name="see-also"></a>Vea también  
  [Encontrar información](../ide/locate-information.md)   
  [Operadores lógicos en expresiones de búsqueda](../ide/logical-operators-in-search-expressions.md)
-
-
-

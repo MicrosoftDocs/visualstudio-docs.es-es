@@ -1,27 +1,22 @@
 ---
 title: Visual Studio Shell (integrado) | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio shell, integrated mode features
 - Shell [Visual Studio], integrated mode features
 ms.assetid: 0b40d495-f17f-4bb9-ace8-b365a7172784
 caps.latest.revision: 26
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 3eb0c8dd0588e1af9b3aad500c8bc9f899b44513
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0ef8bdb5f35ed727a207140dde6cf20f5645e5b3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51765281"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074130"
 ---
 # <a name="visual-studio-shell-integrated"></a>Visual Studio Shell (integrado)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +39,7 @@ El shell integrado de Visual Studio incluye el entorno de desarrollo integrado (
 |IDE|<ul><li>Configuración<br /><br /> <ul><li>Crear una configuración</li><li>Importar y exportar configuraciones</li><li>Restablecer la configuración</li></ul></li><li>**Cuadro de herramientas** integración</li><li>**Lista de tareas** integración</li><li>Integración de la Ayuda</li><li>**Opciones de** cuadro de diálogo</li><li>Administración de fuentes y colores</li><li>**Salida** ventana</li><li>**Comando** ventana</li><li>Administración de ventanas</li><li>Los enlaces de teclado, menús y comandos</li><li>En tiempo de ejecución de lenguaje específico de dominio (DSL)</li></ul>|  
 |Sistema de proyectos y tipos de proyecto|-Soluciones y las carpetas de soluciones<br />: Administrador de configuración de la solución<br />: Administración de elementos<br />-Proyecto único y varios proyectos de soluciones<br />-Diseñador de aplicaciones (propiedades del proyecto simplificada)<br />-Agregar referencia Web<br />-Agregar referencia de servicio<br />Proyecto único<br />: Tipos de proyecto de sitio Web de<br />: Proyectos de aplicación web|  
 |Compilar|-Pasos de compilación personalizada en el IDE<br />-Precompilación para protección de la propiedad intelectual (IP)<br />: Firma de código<br />     MSBuild|  
-|Editor|-(Búsqueda unificada, definición de origen, herencia) de herramientas de exploración de código<br />: Navegación de código<br />: IntelliSense<br />-Etiquetas inteligentes<br />-Refactorización<br />-Lista descriptiva<br />: Filtrado de IntelliSense<br />-   **Definición de código** ventana|  
+|Editor|-(Búsqueda unificada, definición de origen, herencia) de herramientas de exploración de código<br />: Navegación de código<br />-   IntelliSense<br />-   SmartTags<br />-Refactorización<br />-Lista descriptiva<br />: Filtrado de IntelliSense<br />-   **Definición de código** ventana|  
 |Diseñador|-Diseñador Windows Presentation Foundation<br />-Diseñador de formularios de Windows<br />-Editor de HTML y diseñador web|  
 |Datos|-   **Explorador de servidores** (simplificado: sólo los datos). Vea la Nota 1.<br />-   **Orígenes de datos** ventana<br />-Todo el conjunto de controles de datos<br />-XML Editor<br />-Data enlaza al origen de datos local (. MDF o. MDB)<br />: Enlace de datos objeto<br />-Enlazar datos al servicio Web<br />-Data enlaza al servidor de base de datos local<br />-Data enlaza al servidor de base de datos remota<br />-Herramientas DDL para los datos remotos<br />-   **Explorador de servidores** extensibilidad ([!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] ejemplos)|  
 |instantáneas|-Depuración local. Vea la nota 2.<br />-Depuración administrada<br />-Depuración local<br />-Adjuntar al proceso local<br />-Adjuntar al proceso remoto<br />-Delegado anónimo<br />: Dominios de aplicación<br />-Depuración ASPX<br />-Attributes<br />-Interrumpir durante la función eval<br />: Los puntos de interrupción<br />: Restricciones de punto de interrupción<br />: Pila de llamadas<br />-   **Comando** ventana<br />-Depuración entre subprocesos<br />: Sugerencias de datos<br />: Visualizador de datos<br />-Compatibilidad del depurador con asistentes para la depuración administradas (MDA)<br />-Compatibilidad con el depurador reenviador de tipos<br />-Compatibilidad con DTEEvents OTB<br />-JMC motor paso a paso<br />-Prueba de AppID debugger (DBGCLR)<br />: Perfil del depurador<br />-Herramientas y opciones del depurador<br />-Iteradores de depuración<br />-Evaluación de expresiones tiempo de diseño<br />-El evaluador de expresiones C#<br />-Desensamblado<br />-Editar y continuar<br />-Ventanas de evaluador de expresiones (inspección, variables locales, automático)<br />: Aplicación auxiliar de excepciones<br />: Excepciones<br />: Ejecución<br />- Genéricos<br />-Obtener el código fuente correcto<br />-Depuración de clúster HPC y de<br />-Depuración de varios idiomas integrada<br />-Depuración interoperabilidad<br />-Depuración just-in-time<br />-Depuración local<br />-Depuración administrada<br />-Control manual (ventana de procesos)<br />-Memoria<br />-Compatibilidad con minivolcado<br />-Modules<br />-Depuración de varios procesos<br />-Depuración nativa<br />-Nueva compatibilidad del motor de depuración<br />-Depuración de código optimizado<br />-Filtrado de windows output<br />-Proceso de hospedaje para la depuración administrada<br />-Procesos<br />-Inspección rápida<br />: Registra<br />-Registros de pila<br />-Depuración remota<br />: Valores devueltos de<br />: Depuración de scripts<br />-Compatibilidad con el servicio origen<br />-Seguridad<br />Side-by-side<br />-SQL<br />: Servidor de símbolos<br />: Puntos de seguimiento<br />: Subprocesos<br />-Visualizaciones<br />-Depurador de extensible Stylesheet Language Transformations (XSLT)|  
@@ -73,15 +68,15 @@ El shell integrado de Visual Studio incluye el entorno de desarrollo integrado (
 ## <a name="features-not-included-in-the-integrated-shell"></a>Características no incluidas en el Shell integrado  
  La siguiente es una lista de características que no están incluidos en el shell integrado:  
   
--   Diseñador de clases  
+- Diseñador de clases  
   
--   DotFuscator preferente  
+- PreEmptive Protection - Dotfuscator  
   
--   Características del lenguaje  
+- Características del lenguaje  
   
--   VSHost  
+- VSHost  
   
--   Ningún idioma de Visual Studio o sus plantillas de proyecto asociado o plantillas de elemento de proyecto, se incluyen en el shell integrado. Implementaciones específicas de idioma de otras características no se incluyen, para fragmentos de código de Visual Basic de ejemplo.  
+- Ningún idioma de Visual Studio o sus plantillas de proyecto asociado o plantillas de elemento de proyecto, se incluyen en el shell integrado. Implementaciones específicas de idioma de otras características no se incluyen, para fragmentos de código de Visual Basic de ejemplo.  
   
 ## <a name="see-also"></a>Vea también  
  [Ampliación de introducción a Visual Studio](http://msdn.microsoft.com/library/3e9078d7-2763-4cc4-8e20-fac69d747f59)

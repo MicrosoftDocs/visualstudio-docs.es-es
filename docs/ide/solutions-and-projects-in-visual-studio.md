@@ -1,7 +1,6 @@
 ---
 title: Soluciones y proyectos
 ms.date: 10/05/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.addnewsolutionitem
@@ -21,19 +20,19 @@ helpviewer_keywords:
 - projects [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8331ff52da4b0d0e8afe81e66f5674258df709fb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9d8373f13d3a7fc4280b383c534d0adba0b02a53
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53938558"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355149"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Soluciones y proyectos en Visual Studio
 
-En este artículo se explica el concepto de *proyecto* y *solución* en Visual Studio. También se trata brevemente cómo crear un nuevo proyecto y la ventana de herramientas **Explorador de soluciones**.
+En este artículo se explica el concepto de *proyecto* y *solución* en Visual Studio. También se trata brevemente cómo crear un proyecto y la ventana de la herramienta **Explorador de soluciones**.
 
 > [!NOTE]
 > Este tema se aplica a Visual Studio para Windows. En el caso de Visual Studio para Mac, vea [Proyectos y soluciones en Visual Studio para Mac](/visualstudio/mac/projects-and-solutions).
@@ -65,7 +64,7 @@ En Visual Studio se usan dos tipos de archivo (*.sln* y *.suo*) para almacenar l
 
 ## <a name="create-new-projects"></a>Crear nuevos proyectos
 
-La manera más fácil de crear un proyecto consiste en empezar desde una plantilla de proyecto para un tipo concreto de aplicación o sitio web. Una plantilla de proyecto consta de un conjunto básico de archivos de código generados previamente, archivos de configuración, recursos y configuraciones. Estas plantillas son lo que se ve en el cuadro de diálogo **Nuevo proyecto** al elegir **Archivo** > **Nuevo** > **Proyecto**. Para obtener más información, vea [Crear soluciones y proyectos](../ide/creating-solutions-and-projects.md).
+La manera más fácil de crear un proyecto consiste en empezar desde una plantilla de proyecto para un tipo concreto de aplicación o sitio web. Una plantilla de proyecto consta de un conjunto básico de archivos de código generados previamente, archivos de configuración, recursos y configuraciones. Estas plantillas están disponibles en el cuadro de diálogo en que se crea un proyecto (**Archivo** > **Nuevo** > **Proyecto**). Para obtener más información, vea [Crear soluciones y proyectos](../ide/creating-solutions-and-projects.md).
 
 También puede crear un proyecto y plantillas de elemento personalizados. Para obtener más información, vea [Crear plantillas para proyectos y elementos](../ide/creating-project-and-item-templates.md).
 

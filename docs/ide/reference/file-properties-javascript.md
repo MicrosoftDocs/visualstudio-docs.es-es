@@ -1,7 +1,6 @@
 ---
 title: Propiedades de archivo, JavaScript
 ms.date: 06/21/2017
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - javascript.project.property.expandedsdknode.fileversion
@@ -23,15 +22,15 @@ f1_keywords:
 ms.assetid: 085913b8-a97b-45f7-85fa-bbb0902f3ee9
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8706264733faf147c2f53ffceff401ca42432d6b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 684e638d1a2e69d48381964272294999d43c5242
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53910235"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55956771"
 ---
 # <a name="file-properties-javascript"></a>Propiedades de archivo, JavaScript
 Puede usar propiedades de archivo para indicar qué acciones debe realizar el sistema del proyecto en los archivos. Por ejemplo, puede establecer propiedades de archivo para indicar si un archivo debe agregarse al paquete como un archivo de recursos.

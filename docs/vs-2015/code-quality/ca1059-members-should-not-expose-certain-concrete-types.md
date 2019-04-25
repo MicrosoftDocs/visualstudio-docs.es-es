@@ -1,14 +1,9 @@
 ---
-title: 'CA1059: Los miembros no deben exponer algunos tipos concretos | Microsoft Docs'
-ms.custom: ''
+title: 'CA1059: Los miembros no deben exponer algunos tipos concretos | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1059
 - MembersShouldNotExposeCertainConcreteTypes
@@ -20,14 +15,14 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 894b4c22aaab2b0cce81053e6466b791a50b089a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: a78125645dc6369811b4b9e1d7101b7bb4cbba76
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49816890"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103828"
 ---
-# <a name="ca1059-members-should-not-expose-certain-concrete-types"></a>CA1059: Los miembros no deben exponer determinados tipos concretos
+# <a name="ca1059-members-should-not-expose-certain-concrete-types"></a>CA1059: Los miembros no deben exponer algunos tipos concretos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -40,7 +35,7 @@ ms.locfileid: "49816890"
 ## <a name="cause"></a>Motivo
  Un miembro visible externamente es un tipo concreto o expone determinados tipos concretos a través de uno de sus parámetros o valor devuelto. Actualmente, esta regla informa sobre la exposición de los siguientes tipos concretos:
 
--   Un tipo derivado de <xref:System.Xml.XmlNode?displayProperty=fullName>.
+- Un tipo derivado de <xref:System.Xml.XmlNode?displayProperty=fullName>.
 
 ## <a name="rule-description"></a>Descripción de la regla
  Un tipo concreto es un tipo que tiene una implementación completa y, por consiguiente, se pueden crear instancias de él. Para permitir un uso extendido del miembro, reemplace el tipo concreto por la interfaz sugerida. Esto permite que el miembro que acepte cualquier tipo que implementa la interfaz o usarse donde se espera un tipo que implementa la interfaz.
@@ -58,7 +53,4 @@ ms.locfileid: "49816890"
  Es seguro suprimir un mensaje de esta regla si se necesita la funcionalidad específica que proporciona el tipo concreto.
 
 ## <a name="related-rules"></a>Reglas relacionadas
- [CA1011: Considere pasar los tipos base como parámetros](../code-quality/ca1011-consider-passing-base-types-as-parameters.md)
-
-
-
+ [CA1011: Considere la posibilidad de pasar los tipos base como parámetros](../code-quality/ca1011-consider-passing-base-types-as-parameters.md)

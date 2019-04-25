@@ -5,16 +5,15 @@ ms.topic: reference
 ms.assetid: 42178ae8-be6c-4df6-9b7a-cdac24d71dd2
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 243eb5a9d10ec824cc2c17ff1692e58fa3738ca8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cb07949fd36763fc7588d18c12c31b9af15eaf0a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53859872"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55950557"
 ---
 # <a name="or-designer-messages"></a>Mensajes de Object Relational Designer
 

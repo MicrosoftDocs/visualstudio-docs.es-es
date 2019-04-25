@@ -1,14 +1,9 @@
 ---
-title: 'CA2109: Revisar los controladores de eventos visibles | Microsoft Docs'
-ms.custom: ''
+title: 'CA2109: Revisar los controladores de eventos visibles | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2109
 - ReviewVisibleEventHandlers
@@ -20,12 +15,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 328df28441fa5c96fee40baed11a54c3044542b8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f5bd94892a0321346adeacbcad2655a4ab62c6a1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49880382"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60038335"
 ---
 # <a name="ca2109-review-visible-event-handlers"></a>CA2109: Revisar los controladores de eventos visibles
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,18 +42,18 @@ ms.locfileid: "49880382"
 
  Una demanda no puede proteger de forma confiable un método invocado por un controlador de eventos. Ayuda de las solicitudes de seguridad proteger el código de los llamadores de confianza mediante el examen de los llamadores situados en la pila de llamadas. El código que agrega un controlador de eventos a un evento no es necesariamente presente en la pila de llamadas cuando se ejecutan los métodos del controlador de eventos. Por lo tanto, la pila de llamadas podría haber sólo llamadores de plena confianza cuando se invoca el método de controlador de eventos. Esto hace que las demandas realizadas por el método de controlador de eventos se realice correctamente. Además, se puede declarar el permiso exigido cuando se invoca el método. Por estas razones, sólo puede evaluarse el riesgo de no corregir una infracción de esta regla después de revisar el método de control de eventos. Cuando revise el código, tenga en cuenta lo siguiente:
 
--   ¿El controlador de eventos lleva a cabo ninguna operación peligrosa o explotable, como validar los permisos o suprimir el permiso de código no administrado?
+- ¿El controlador de eventos lleva a cabo ninguna operación peligrosa o explotable, como validar los permisos o suprimir el permiso de código no administrado?
 
--   ¿Cuáles son las amenazas de seguridad a y desde el código porque se puede ejecutar en cualquier momento con sólo altamente llamadores en la pila de confianza?
+- ¿Cuáles son las amenazas de seguridad a y desde el código porque se puede ejecutar en cualquier momento con sólo altamente llamadores en la pila de confianza?
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
  Para corregir una infracción de esta regla, revise el método y evaluar las siguientes:
 
--   ¿Puede hacer que el método de control de eventos no públicos?
+- ¿Puede hacer que el método de control de eventos no públicos?
 
--   ¿Puede mover toda la funcionalidad peligrosa fuera el controlador de eventos?
+- ¿Puede mover toda la funcionalidad peligrosa fuera el controlador de eventos?
 
--   ¿Si se impone una petición de seguridad, esto se puede realizar en alguna otra manera?
+- ¿Si se impone una petición de seguridad, esto se puede realizar en alguna otra manera?
 
 ## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
  Suprima una advertencia de esta regla solo después de revisar cuidadosamente la seguridad para asegurarse de que el código no supongan una amenaza de seguridad.
@@ -70,7 +65,4 @@ ms.locfileid: "49880382"
 
 ## <a name="see-also"></a>Vea también
  <xref:System.Security.CodeAccessPermission.Demand%2A?displayProperty=fullName> <xref:System.EventArgs?displayProperty=fullName>
- [Peticiones de seguridad](http://msdn.microsoft.com/en-us/324c14f8-54ff-494d-9fd1-bfd20962c8ba)
-
-
-
+ [Peticiones de seguridad](http://msdn.microsoft.com/324c14f8-54ff-494d-9fd1-bfd20962c8ba)

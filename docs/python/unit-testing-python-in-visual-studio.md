@@ -2,21 +2,20 @@
 title: Código de pruebas unitarias de Python
 description: La configuración de pruebas unitarias para código de Python en Visual Studio aprovecha al máximo las características del Explorador de pruebas con el fin de detectar, ejecutar y depurar las pruebas.
 ms.date: 11/12/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5f808314639c72f530e64c4ccac08c49439c6818
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e16612287d1efa76b206de50c6af9f18edab7c8a
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53858284"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366138"
 ---
 # <a name="set-up-unit-testing-for-python-code"></a>Configuración de pruebas unitarias para código de Python
 
@@ -25,10 +24,6 @@ Las pruebas unitarias son fragmentos de código que prueban otras unidades de c�
 Python utiliza pruebas unitarias ampliamente para validar escenarios durante el diseño de un programa. La compatibilidad de Python en Visual Studio incluye características para descubrir, ejecutar y depurar pruebas unitarias dentro del contexto de su proceso de desarrollo, sin tener que ejecutar pruebas independientemente.
 
 En este artículo se proporciona una descripción breve de las funcionalidades de las pruebas unitarias en Visual Studio con Python. Para más información sobre las pruebas unitarias en general, vea [Hacer una prueba unitaria del código](../test/unit-test-your-code.md).
-
-|   |   |
-|---|---|
-| ![icono de cámara de película para vídeo](../install/media/video-icon.png "Ver un vídeo") | [Vea el vídeo (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Testing-Python-hb46k6LWE_405918567) sobre pruebas unitarias de Python (2 minutos 31 segundos). |
 
 ## <a name="discover-and-view-tests"></a>Detección y visualización de pruebas
 
@@ -91,7 +86,7 @@ Para iniciar la depuración, establezca un punto de interrupción inicial en el 
 
 ![Depuración de una prueba](media/unit-test-debugging.png)
 
-También puede utilizar los comandos **Analizar cobertura de código para las pruebas seleccionadas** y **Generar perfil para pruebas**, según la versión de Visual Studio (consulte la [Matriz de características](overview-of-python-tools-for-visual-studio.md#features-matrix)).
+También puede usar los comandos **Analizar cobertura de código para las pruebas seleccionadas** y **Generar perfil para pruebas**.
 
 ### <a name="known-issues"></a>Problemas conocidos
 

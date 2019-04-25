@@ -1,30 +1,24 @@
 ---
 title: Vista gráfica | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 5881afde-3f24-4eb9-bff8-6cb3fc8aade7
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: d1c0bbe55f2e63c1d86d71556392d57d1330c6b4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 3e2b51128e851252d3949e6cfde122a52a09af6e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813627"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110549"
 ---
 # <a name="graph-view"></a>Vista de gráfico
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 La vista Gráfico proporciona una representación gráfica de los nodos de esquema globales y de las relaciones entre ellos. Tenga en cuenta que la vista Gráfico no le permite modificar el diseño del conjunto de esquemas en la superficie de diseño. La vista Gráfico también incluye la barra de herramientas del Diseñador de esquemas XML y la barra de ruta de navegación.  
   
  La imagen siguiente muestra la vista Gráfico con seis nodos globales en su superficie de diseño.  
@@ -42,7 +36,7 @@ La vista Gráfico proporciona una representación gráfica de los nodos de esque
   
  ![Diseñador XSD; Vista gráfica](../xml-tools/media/xsdgraphviewwatermark.gif "XSDGraphViewWatermark")  
   
- Si el conjunto de esquemas tiene errores, se muestra el texto siguiente al final de la lista: "Use la lista de errores para ver y corregir los errores en el conjunto de esquemas".  
+ Si el conjunto de esquemas tiene errores, se mostrará el texto siguiente al final de la lista: "Usar la lista de errores para ver y corregir los errores en el conjunto".  
   
 ## <a name="breadcrumb-bar"></a>Barra de ruta de navegación  
  La barra de ruta de navegación situada en la parte inferior de la vista Gráfico muestra la ubicación del nodo seleccionado en el conjunto de esquemas. Si se han seleccionado varios elementos, la barra de ruta de navegación estará en blanco.  
@@ -121,11 +115,11 @@ La vista Gráfico proporciona una representación gráfica de los nodos de esque
 ## <a name="undoredo"></a>Deshacer/rehacer  
  La función de deshacer/rehacer está habilitada en la vista Gráfico para las siguientes acciones:  
   
--   Agregar un nodo único arrastrándolo y colocándolo.  
+- Agregar un nodo único arrastrándolo y colocándolo.  
   
--   Agregar varios nodos de la ventana de resultados de la búsqueda de las consultas del Explorador de esquemas o de la vista Inicio.  
+- Agregar varios nodos de la ventana de resultados de la búsqueda de las consultas del Explorador de esquemas o de la vista Inicio.  
   
--   Eliminar uno o varios nodos.  
+- Eliminar uno o varios nodos.  
   
 ## <a name="zoom"></a>Zoom  
  El zoom está disponible en la esquina inferior derecha de la vista Gráfico.  
@@ -145,6 +139,3 @@ La vista Gráfico proporciona una representación gráfica de los nodos de esque
   
 ## <a name="see-also"></a>Vea también  
  [Superficie de diseño](../xml-tools/xml-schema-designer-workspace.md)
-
-
-

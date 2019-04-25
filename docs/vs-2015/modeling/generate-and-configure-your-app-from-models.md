@@ -1,23 +1,20 @@
 ---
 title: Generar y configurar su aplicación a partir de modelos | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 4dc8f572-a09e-4d19-a92d-f1df383e728b
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 58d7112048aba7d0c3b75e83e2b10249b200e6d9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: bb12d80c581b0ea0b605932083cf4f62fe764e30
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51806365"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073493"
 ---
 # <a name="generate-and-configure-your-app-from-models"></a>Generar y configurar la aplicación a partir de modelos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,27 +54,27 @@ Puede generar o configurar partes de la aplicación a partir de un modelo. El mo
 ## <a name="developing-a-derived-application"></a>Desarrollar una aplicación derivada  
  Las siguientes pautas generales podrían resultarle de utilidad:  
   
--   **Iniciar específico y luego generalice.** Escriba en primer lugar una versión específica de la aplicación. Esta versión debería funcionar con un conjunto de condiciones. Cuando esté satisfecho con su funcionamiento, puede hacer que algunas de ellas deriven de un modelo. Amplíe gradualmente los elementos derivados.  
+- **Iniciar específico y luego generalice.** Escriba en primer lugar una versión específica de la aplicación. Esta versión debería funcionar con un conjunto de condiciones. Cuando esté satisfecho con su funcionamiento, puede hacer que algunas de ellas deriven de un modelo. Amplíe gradualmente los elementos derivados.  
   
      Por ejemplo, puede diseñar un sitio web que tiene un conjunto específico de las páginas web antes de diseñar una aplicación web que presenta las páginas que se definen en un modelo.  
   
--   **Modele los aspectos variantes.** Identifique los aspectos variables, ya sea entre implementaciones o a lo largo del tiempo, a medida que los requisitos cambian. Estos son los aspectos que se deben derivar de un modelo.  
+- **Modele los aspectos variantes.** Identifique los aspectos variables, ya sea entre implementaciones o a lo largo del tiempo, a medida que los requisitos cambian. Estos son los aspectos que se deben derivar de un modelo.  
   
      Por ejemplo, si el conjunto de páginas web y los vínculos entre ellos cambian pero el estilo y el formato de las páginas es siempre el mismo, el modelo debe describir los vínculos, pero no tiene que describir el formato de las páginas.  
   
--   **Divida los problemas.** Si los aspectos de las variables pueden dividirse en zonas independientes, use modelos independientes para cada área. Con ModelBus, puede definir las operaciones que afectan a los dos modelos y las restricciones entre ellos.  
+- **Divida los problemas.** Si los aspectos de las variables pueden dividirse en zonas independientes, use modelos independientes para cada área. Con ModelBus, puede definir las operaciones que afectan a los dos modelos y las restricciones entre ellos.  
   
      Por ejemplo, puede usar un modelo para definir la navegación entre las páginas web y un modelo diferente para definir el diseño de las páginas. Para obtener más información, consulte [integrar modelos UML con otros modelos y herramientas](../modeling/integrate-uml-models-with-other-models-and-tools.md).  
   
--   **Modele el requisito, no en la solución.** Diseñe el DSL o adapte el UML para que describa los requisitos del usuario. Por el contrario, no diseñe la notación de acuerdo con los aspectos variables de la implementación.  
+- **Modele el requisito, no en la solución.** Diseñe el DSL o adapte el UML para que describa los requisitos del usuario. Por el contrario, no diseñe la notación de acuerdo con los aspectos variables de la implementación.  
   
      Por ejemplo, el modelo de exploración web debe representar las páginas web y los hipervínculos entre ellas. El modelo de exploración web no debería representar fragmentos de HTML o clases de la aplicación.  
   
--   **Generar o interpretar?** Si los requisitos de una implementación determinada cambian con poca frecuencia, genere código de programa a partir del modelo. Si los requisitos pueden cambiar con frecuencia o coexistir en más de una variante de la misma implementación, escriba la aplicación de modo que pueda leer e interpretar un modelo.  
+- **Generar o interpretar?** Si los requisitos de una implementación determinada cambian con poca frecuencia, genere código de programa a partir del modelo. Si los requisitos pueden cambiar con frecuencia o coexistir en más de una variante de la misma implementación, escriba la aplicación de modo que pueda leer e interpretar un modelo.  
   
      Por ejemplo, si usa el modelo del sitio web para desarrollar una serie de sitios web diferentes e instalados por separado, es recomendable que genere el código del sitio a partir del modelo. No obstante, si usa el modelo para controlar un sitio que cambia a diario, es preferible escribir en servidor web que lea el modelo y presente el sitio según corresponda.  
   
--   **¿UML o DSL?** Estudie la posibilidad de crear la notación de modelado usando estereotipos para ampliar UML. Defina un DSL si ningún diagrama UML puede ajustarse al propósito, pero intente no romper la semántica estándar de UML.  
+- **¿UML o DSL?** Estudie la posibilidad de crear la notación de modelado usando estereotipos para ampliar UML. Defina un DSL si ningún diagrama UML puede ajustarse al propósito, pero intente no romper la semántica estándar de UML.  
   
      Por ejemplo, un diagrama de clases UML es una colección de cuadros y flechas; con esta notación, en teoría, es posible definir cualquier cosa. Tenga en cuenta que no le recomendamos usar el diagrama de clases, excepto para describir un conjunto de tipos. Por ejemplo, podría adaptar los diagramas de clases para describir distintos tipos de páginas web.  
   
@@ -85,8 +82,5 @@ Puede generar o configurar partes de la aplicación a partir de un modelo. El mo
  [Generar archivos a partir de un modelo UML](../modeling/generate-files-from-a-uml-model.md)   
  [Leer un modelo UML en código de programa](../modeling/read-a-uml-model-in-program-code.md)   
  [Generar código a partir de un lenguaje específico de dominio](../modeling/generating-code-from-a-domain-specific-language.md)   
- [Cómo: abrir un modelo desde un archivo de código de programa](../modeling/how-to-open-a-model-from-file-in-program-code.md)   
+ [Cómo: Abrir un modelo desde un archivo de código de programa](../modeling/how-to-open-a-model-from-file-in-program-code.md)   
  [Generación de código en tiempo de diseño mediante plantillas de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
-
-
-

@@ -1,20 +1,19 @@
 ---
 title: 'Paso 2: Ejecutar el programa'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 9a8fe90e-c97b-4e98-b6c8-0c6b3962c49d
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d20e17d8d953e083d878530aa971c714db72241f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c598aff620232ec56707206efa4715f8bc7ea2da
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53835729"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55952334"
 ---
 # <a name="step-2-run-your-program"></a>Paso 2: Ejecutar el programa
 Al crear una solución, en realidad compiló un programa que se ejecuta. Todavía no hace gran cosa; se limita a mostrar una ventana vacía en la que se ve **Form1** en la barra de título. Pero se ejecuta, como vamos a comprobar a continuación.

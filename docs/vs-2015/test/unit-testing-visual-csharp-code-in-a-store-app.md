@@ -1,25 +1,20 @@
 ---
 title: Pruebas unitarias de código de Visual C# en una aplicación de la Tienda | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: 23cb0d82-0451-464e-98ea-fa66e7010ead
 caps.latest.revision: 21
 author: alexhomer1
 ms.author: gewarren
-manager: robinr
-ms.openlocfilehash: ae41a5a646860526cbc5b3f6e3c04bfbf7612e2b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: af4b6ba85982c926230100aac5c7a451df79b825
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49901559"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100188"
 ---
 # <a name="unit-testing-visual-c-code-in-a-store-app"></a>Pruebas unitarias de código de Visual C# en una aplicación de la Tienda
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,12 +29,12 @@ Este tema describe una forma de crear pruebas unitarias para una clase de Visual
 >  Visual Studio Community, Enterprise y Professional proporcionan características adicionales para las pruebas unitarias.  
 > 
 > - Use cualquier marco de pruebas unitarias de terceros y de código abierto que haya creado un adaptador complementario para el Explorador de pruebas de Microsoft. También puedes analizar y mostrar información de cobertura de código para las pruebas.  
->   -   Ejecute las pruebas después de cada compilación.  
->   -   VS Enterprise también contiene Microsoft Fakes, un marco de aislamiento para código administrado que ayuda a centrar las pruebas en su propio código sustituyendo el código de prueba para el sistema y la funcionalidad de terceros.  
+>   - Ejecute las pruebas después de cada compilación.  
+>   - VS Enterprise también contiene Microsoft Fakes, un marco de aislamiento para código administrado que ayuda a centrar las pruebas en su propio código sustituyendo el código de prueba para el sistema y la funcionalidad de terceros.  
 > 
 >   Para más información, vea [Haga una prueba unitaria de su código](http://msdn.microsoft.com/library/dd264975.aspx) en MSDN Library.  
   
-##  <a name="BKMK_In_this_topic"></a> En este tema  
+## <a name="BKMK_In_this_topic"></a> En este tema  
  [Crear la solución y el proyecto de prueba unitaria](#BKMK_Create_the_solution_and_the_unit_test_project)  
   
  [Comprobar que las pruebas se ejecutan en el Explorador de pruebas](#BKMK_Verify_that_the_tests_run_in_Test_Explorer)  
@@ -54,21 +49,21 @@ Este tema describe una forma de crear pruebas unitarias para una clase de Visual
   
  [Refactorizar el código](#BKMK_Refactor_the_code_)  
   
-##  <a name="BKMK_Create_the_solution_and_the_unit_test_project"></a> Crear la solución y el proyecto de prueba unitaria  
+## <a name="BKMK_Create_the_solution_and_the_unit_test_project"></a> Crear la solución y el proyecto de prueba unitaria  
   
-1.  En el menú **Archivo**, elija **Nuevo** y después **Nuevo proyecto**.  
+1. En el menú **Archivo**, elija **Nuevo** y después **Nuevo proyecto**.  
   
-2.  En el cuadro de diálogo **Nuevo proyecto**, expanda **Instalado**, **Visual C#** y seleccione **Tienda Windows**. Después, elija **Aplicación vacía** en la lista de plantillas de proyecto.  
+2. En el cuadro de diálogo **Nuevo proyecto**, expanda **Instalado**, **Visual C#** y seleccione **Tienda Windows**. Después, elija **Aplicación vacía** en la lista de plantillas de proyecto.  
   
-3.  Asigne al proyecto el nombre `Maths` y asegúrese de que esté seleccionado **Crear directorio para la solución**.  
+3. Asigne al proyecto el nombre `Maths` y asegúrese de que esté seleccionado **Crear directorio para la solución**.  
   
-4.  En el Explorador de soluciones, seleccione el nombre de la solución, **Agregar** en el menú contextual y **Nuevo proyecto**.  
+4. En el Explorador de soluciones, seleccione el nombre de la solución, **Agregar** en el menú contextual y **Nuevo proyecto**.  
   
-5.  En el cuadro de diálogo **Nuevo proyecto**, expanda **Instalado**, **Visual C#** y seleccione **Tienda Windows**. Después elija **Biblioteca de pruebas unitarias (aplicaciones de la Tienda Windows)** en la lista de plantillas de proyecto.  
+5. En el cuadro de diálogo **Nuevo proyecto**, expanda **Instalado**, **Visual C#** y seleccione **Tienda Windows**. Después elija **Biblioteca de pruebas unitarias (aplicaciones de la Tienda Windows)** en la lista de plantillas de proyecto.  
   
      ![Crear el proyecto de prueba unitaria](../test/media/ute-cs-windows-createunittestproject.png "UTE_Cs_windows_CreateUnitTestProject")  
   
-6.  Abre UnitTest1.cs en el editor de Visual Studio.  
+6. Abre UnitTest1.cs en el editor de Visual Studio.  
   
     ```csharp  
   
@@ -94,17 +89,17 @@ Este tema describe una forma de crear pruebas unitarias para una clase de Visual
   
      Ten en cuenta lo siguiente:  
   
-    1.  Cada prueba se define utilizando `[TestMethod]`. Un método de prueba debe devolver void y no puede tener parámetros.  
+    1. Cada prueba se define utilizando `[TestMethod]`. Un método de prueba debe devolver void y no puede tener parámetros.  
   
-    2.  Los métodos de prueba deben estar en una clase decorada con el atributo `[TestClass]`.  
+    2. Los métodos de prueba deben estar en una clase decorada con el atributo `[TestClass]`.  
   
          Cuando se ejecutan las pruebas, se crea una instancia de cada clase de prueba. Se llama a los métodos de prueba en un orden no especificado.  
   
-    3.  Puede definir métodos especiales que se invocan antes y después de cada módulo, clase o método. Para más información, vea [Usar miembros de Microsoft.VisualStudio.TestTools.UnitTesting en pruebas unitarias](../test/using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md) en MSDN Library.  
+    3. Puede definir métodos especiales que se invocan antes y después de cada módulo, clase o método. Para más información, vea [Usar miembros de Microsoft.VisualStudio.TestTools.UnitTesting en pruebas unitarias](../test/using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md) en MSDN Library.  
   
-##  <a name="BKMK_Verify_that_the_tests_run_in_Test_Explorer"></a> Compruebe que las pruebas se ejecutan en el Explorador de pruebas  
+## <a name="BKMK_Verify_that_the_tests_run_in_Test_Explorer"></a> Compruebe que las pruebas se ejecutan en el Explorador de pruebas  
   
-1.  Inserte código de prueba en `TestMethod1` del archivo **UnitTest1.cs**:  
+1. Inserte código de prueba en `TestMethod1` del archivo **UnitTest1.cs**:  
   
     ```csharp  
   
@@ -118,19 +113,19 @@ Este tema describe una forma de crear pruebas unitarias para una clase de Visual
   
      Tenga en cuenta que la clase `Assert` proporciona varios métodos estáticos que puede usar para comprobar los resultados de los métodos de prueba.  
   
-2.  En el menú **Prueba**, elija **Ejecutar** y después **Ejecutar todas**.  
+2. En el menú **Prueba**, elija **Ejecutar** y después **Ejecutar todas**.  
   
      El proyecto de prueba se compila y ejecuta. Aparece la ventana Explorador de pruebas y la prueba se muestra debajo de **Pruebas superadas**. El panel Resumen de la parte inferior de la ventana proporciona detalles adicionales sobre la prueba seleccionada.  
   
      ![Explorador de pruebas](../test/media/ute-cpp-testexplorer-testmethod1.png "UTE_Cpp_TestExplorer_TestMethod1")  
   
-##  <a name="BKMK_Add_the_Rooter_class_to_the_Maths_project"></a> Agregar la clase Rooter al proyecto Maths  
+## <a name="BKMK_Add_the_Rooter_class_to_the_Maths_project"></a> Agregar la clase Rooter al proyecto Maths  
   
-1.  En el Explorador de soluciones, seleccione el nombre del proyecto **Maths**. En el menú contextual, elija **Agregar** y **Clase**.  
+1. En el Explorador de soluciones, seleccione el nombre del proyecto **Maths**. En el menú contextual, elija **Agregar** y **Clase**.  
   
-2.  Asigne al archivo de clase el nombre `Rooter.cs`.  
+2. Asigne al archivo de clase el nombre `Rooter.cs`.  
   
-3.  Agregue el código siguiente al archivo **Rooter.cs** de la clase Rooter:  
+3. Agregue el código siguiente al archivo **Rooter.cs** de la clase Rooter:  
   
     ```csharp  
   
@@ -148,23 +143,23 @@ Este tema describe una forma de crear pruebas unitarias para una clase de Visual
   
      La clase `Rooter` declara un constructor y el método de perito de `SqareRoot`.  
   
-4.  El método `SqareRoot` es solo una implementación mínima, suficiente para probar la estructura básica de la configuración de pruebas.  
+4. El método `SqareRoot` es solo una implementación mínima, suficiente para probar la estructura básica de la configuración de pruebas.  
   
-##  <a name="BKMK_Couple_the_test_project_to_the_app_project"></a> Acoplar el proyecto de prueba al proyecto de la aplicación  
+## <a name="BKMK_Couple_the_test_project_to_the_app_project"></a> Acoplar el proyecto de prueba al proyecto de la aplicación  
   
 1. Agrega una referencia a la aplicación Maths en el proyecto RooterTests.  
   
-   1.  En el Explorador de soluciones, seleccione el proyecto **RooterTests** y **Agregar referencia** en el menú contextual.  
+   1. En el Explorador de soluciones, seleccione el proyecto **RooterTests** y **Agregar referencia** en el menú contextual.  
   
-   2.  En el cuadro de diálogo **Agregar referencia: RooterTests**, expanda **Solución** y elija **Proyectos**. Después, seleccione el elemento **Maths**.  
+   2. En el cuadro de diálogo **Agregar referencia: RooterTests**, expanda **Solución** y elija **Proyectos**. Después, seleccione el elemento **Maths**.  
   
         ![Agregar una referencia al proyecto Maths](../test/media/ute-cs-windows-addreference.png "UTE_Cs_windows_AddReference")  
   
 2. Agrega una instrucción Using al archivo UnitTest1.cs:  
   
-   1.  Abra **UnitTest1.cs**.  
+   1. Abra **UnitTest1.cs**.  
   
-   2.  Agrega este código debajo de la línea `using Microsoft.VisualStudio.TestPlatform.UnitTestFramework;`:  
+   2. Agrega este código debajo de la línea `using Microsoft.VisualStudio.TestPlatform.UnitTestFramework;`:  
   
        ```csharp  
        using Maths;  
@@ -195,9 +190,9 @@ Este tema describe una forma de crear pruebas unitarias para una clase de Visual
   
    Ha configurado la prueba y los proyectos de código, y ha verificado que puede ejecutar las pruebas que ejecutan funciones en el proyecto de código. Ahora puede empezar a escribir pruebas y código reales.  
   
-##  <a name="BKMK_Iteratively_augment_the_tests_and_make_them_pass"></a> Aumentar las pruebas de forma interactiva y comprobar si se superan  
+## <a name="BKMK_Iteratively_augment_the_tests_and_make_them_pass"></a> Aumentar las pruebas de forma interactiva y comprobar si se superan  
   
-1.  Agregue una nueva prueba:  
+1. Agregue una nueva prueba:  
   
     ```csharp  
     [TestMethod]  
@@ -220,16 +215,16 @@ Este tema describe una forma de crear pruebas unitarias para una clase de Visual
     >   
     >  Cuando los usuarios cambien los requisitos, deshabilite las pruebas que ya no son correctas. Escriba nuevas pruebas y hágalas funcionar una a una de la misma manera incremental.  
   
-2.  En el Explorador de pruebas, elija **Ejecutar todas**.  
+2. En el Explorador de pruebas, elija **Ejecutar todas**.  
   
-3.  La prueba sufre un error.  
+3. La prueba sufre un error.  
   
      ![Se produce un error en RangeTest](../test/media/ute-cpp-testexplorer-rangetest-fail.png "UTE_Cpp_TestExplorer_RangeTest_Fail")  
   
     > [!TIP]
     >  Inmediatamente después de haberla escrito, comprueba que cada prueba sufre un error. Esto ayuda a evitar el error habitual de escribir una prueba que nunca falla.  
   
-4.  Mejora el código objeto de prueba para que la nueva prueba se supere. Cambie la función `SqareRoot` de **Rooter.cs** a lo siguiente:  
+4. Mejora el código objeto de prueba para que la nueva prueba se supere. Cambie la función `SqareRoot` de **Rooter.cs** a lo siguiente:  
   
     ```csharp  
     public double SquareRoot(double x)  
@@ -247,14 +242,14 @@ Este tema describe una forma de crear pruebas unitarias para una clase de Visual
   
     ```  
   
-5.  Compile la solución y, en el Explorador de pruebas, elija **Ejecutar todo**.  
+5. Compile la solución y, en el Explorador de pruebas, elija **Ejecutar todo**.  
   
      Ahora se superan las tres pruebas.  
   
 > [!TIP]
 >  Desarrolle código agregando pruebas una a una. Asegúrese de que se pasan todas las pruebas después de cada iteración.  
   
-##  <a name="BKMK_Debug_a_failing_test"></a> Depurar una prueba fallida  
+## <a name="BKMK_Debug_a_failing_test"></a> Depurar una prueba fallida  
   
 1. Agregue otra prueba a **UnitTest1.cs**:  
   
@@ -297,13 +292,13 @@ Este tema describe una forma de crear pruebas unitarias para una clase de Visual
   
 3. Para ver por qué se produce el error, revise la función:  
   
-   1.  Establece un punto de interrupción al principio de la función `SquareRoot`.  
+   1. Establece un punto de interrupción al principio de la función `SquareRoot`.  
   
-   2.  En el menú contextual de la prueba no superada, elija **Depurar pruebas seleccionadas**.  
+   2. En el menú contextual de la prueba no superada, elija **Depurar pruebas seleccionadas**.  
   
         Cuando la ejecución se detiene en el punto de interrupción, revise paso a paso el código.  
   
-   3.  Agrega código al método Rooter para detectar la excepción:  
+   3. Agrega código al método Rooter para detectar la excepción:  
   
        ```csharp  
        public double SquareRoot(double x)  
@@ -315,16 +310,16 @@ Este tema describe una forma de crear pruebas unitarias para una clase de Visual
   
        ```  
   
-   1.  En el Explorador de pruebas, elija **Ejecutar todas** para probar el método corregido y asegúrese de que no se haya introducido una regresión.  
+   1. En el Explorador de pruebas, elija **Ejecutar todas** para probar el método corregido y asegúrese de que no se haya introducido una regresión.  
   
    Ahora, todas las pruebas pasan.  
   
    ![Todas las pruebas pasan](../test/media/ute-ult-alltestspass.png "UTE_ULT_AllTestsPass")  
   
-##  <a name="BKMK_Refactor_the_code_"></a> Refactorizar el código  
+## <a name="BKMK_Refactor_the_code_"></a> Refactorizar el código  
  **Simplifique el cálculo central en la función SquareRoot.**  
   
-1.  Cambia la implementación del resultado.  
+1. Cambia la implementación del resultado.  
   
     ```csharp  
     // old code  
@@ -334,7 +329,7 @@ Este tema describe una forma de crear pruebas unitarias para una clase de Visual
   
     ```  
   
-2.  Elija **Ejecutar todas** para probar el método refactorizado y asegúrese de que no haya introducido una regresión.  
+2. Elija **Ejecutar todas** para probar el método refactorizado y asegúrese de que no haya introducido una regresión.  
   
 > [!TIP]
 >  Un conjunto estable de pruebas unitarias correctas proporciona la confianza de que no se han introducido errores al cambiar el código.  
@@ -343,7 +338,7 @@ Este tema describe una forma de crear pruebas unitarias para una clase de Visual
   
  Observa que el método `RangeTest` codifica de forma rígida el denominador de la variable de tolerancia que se utiliza en el método `Assert`. Si tienes la intención de agregar otras pruebas que utilizan el mismo cálculo de tolerancia, el uso de un valor codificado de forma rígida en varias ubicaciones puede provocar errores.  
   
-1.  Agrega un método privado a la clase Unit1Test para calcular el valor de tolerancia y, después, llama a ese método en su lugar.  
+1. Agrega un método privado a la clase Unit1Test para calcular el valor de tolerancia y, después, llama a ese método en su lugar.  
   
     ```csharp  
     private double ToleranceHelper(double expected)  
@@ -367,10 +362,7 @@ Este tema describe una forma de crear pruebas unitarias para una clase de Visual
   
     ```  
   
-2.  Seleccione **Ejecutar todas** para probar el método refactorizado y asegúrese de que no ha introducido un error.  
+2. Seleccione **Ejecutar todas** para probar el método refactorizado y asegúrese de que no ha introducido un error.  
   
 > [!NOTE]
 >  Para agregar un método del asistente a una clase de prueba, no debes agregar el atributo `[TestMethod]` al método. El Explorador de pruebas no registra el método que se va a ejecutar.
-
-
-

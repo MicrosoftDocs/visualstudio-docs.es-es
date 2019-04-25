@@ -1,27 +1,22 @@
 ---
 title: Información general de Color y fuente | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], font and color
 - font and color control [Visual Studio SDK], editors
 ms.assetid: 2203e4e7-8b7f-44ec-8884-6ff718d4f278
 caps.latest.revision: 23
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: d849d93bdab481cecbb7d1f0f862f1db8eb3c181
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0a20cfa2372b1e55652ffcebe6d173cff86140a6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51769439"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58987180"
 ---
 # <a name="font-and-color-overview"></a>Información general de Color y fuente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,7 +73,7 @@ Este tema describe la configuración de fuente y color del texto en el [!INCLUDE
   
 - Tanto la capacidad de usar los elementos de visualización integradas de la **EditorCategory texto** y a ampliarlos.  
   
-   Para obtener más información, consulte [Cómo: uso de elementos coloreables integrados](../extensibility/internals/how-to-use-built-in-colorable-items.md) y [elementos coloreables personalizados](../extensibility/internals/custom-colorable-items.md).  
+   Para obtener más información, vea [Cómo: Usar elementos coloreables integrados](../extensibility/internals/how-to-use-built-in-colorable-items.md) y [elementos coloreables personalizados](../extensibility/internals/custom-colorable-items.md).  
   
 - Persistencia automática del estado de ambos integrados y personalizado actual mostrar los elementos con el **Editor de texto** categoría.  
   
@@ -87,4 +82,3 @@ Este tema describe la configuración de fuente y color del texto en el [!INCLUDE
 ## <a name="see-also"></a>Vea también  
  [Interfaces heredadas en el Editor](../extensibility/legacy-interfaces-in-the-editor.md)   
  [Colores de la sintaxis en un servicio de lenguaje heredado](../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)
-

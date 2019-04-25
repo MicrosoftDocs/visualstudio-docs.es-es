@@ -1,25 +1,22 @@
 ---
 title: Leer modelos y diagramas en otras ediciones de Visual Studio | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - models, versions of Visual Studio
 ms.assetid: 46eee279-a9e4-4742-a024-5bd2cf032b86
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6d104d8d92345ba56d390fdd7ad9b856432b4c92
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 20c449148b98c89f1eb64beb61588661f02ab74a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51757367"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073533"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>Leer modelos y diagramas en otras ediciones de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,16 +35,16 @@ Al abrir un modelo en una versión de Visual Studio que no es compatible con la 
   
  Para leer un diagrama UML o un diagrama de capas, necesita el siguiente conjunto mínimo de archivos:  
   
--   Los dos archivos de diagrama que desea leer, por ejemplo, de diagrama **MyDiagram.classdiagram y MyDiagram.classdiagram.layout**.  
+- Los dos archivos de diagrama que desea leer, por ejemplo, de diagrama **MyDiagram.classdiagram y MyDiagram.classdiagram.layout**.  
   
     > [!NOTE]
     >  Diagramas de capas, también debe tener el archivo que se denomina _MyDiagram_**. layerdiagram.suppressions**.  
   
--   El modelado del archivo de proyecto (**MyModel.modelproj**)  
+- El modelado del archivo de proyecto (**MyModel.modelproj**)  
   
--   El archivo de modelo raíz (**ModelDefinition\MyModel. UML**)  
+- El archivo de modelo raíz (**ModelDefinition\MyModel. UML**)  
   
--   Los archivos del paquete para los paquetes que se hace referencia en el diagrama (**ModelDefinition\MyPackage.uml**)  
+- Los archivos del paquete para los paquetes que se hace referencia en el diagrama (**ModelDefinition\MyPackage.uml**)  
   
 ## <a name="changes-that-you-can-make-in-read-only-mode"></a>Cambios que puede realizar en modo de solo lectura  
  Si abre un modelo y sus diagramas en una versión de Visual Studio que no es compatible con la creación de modelos, no podrá cambiar el modelo. Es decir, no podrá cambiar los elementos y relaciones que se muestran en los diagramas o en el explorador de modelos. Sin embargo, puede realizar algunos cambios en el diseño de los diagramas:  
@@ -58,19 +55,16 @@ Al abrir un modelo en una versión de Visual Studio que no es compatible con la 
   
   Puede guardar estos cambios. Si desea que los cambios sea visible para otros usuarios, debe enviar al menos la actualización **.layout** archivos.  
   
-##  <a name="RelatedTopics"></a> Temas relacionados  
+## <a name="RelatedTopics"></a> Temas relacionados  
   
-|Title|Descripción|  
+|Título|Descripción|  
 |-----------|-----------------|  
 |[Diagramas de capas: referencia](../modeling/layer-diagrams-reference.md)|Un diagrama de capas muestra la estructura de una arquitectura existente o propuesta. Cuando se escribe código, se puede validar automáticamente con un diagrama de capas.|  
 |[Diagramas de actividades UML: referencia](../modeling/uml-activity-diagrams-reference.md)|Un diagrama de actividad muestra un flujo de trabajo, ya sea en un proceso empresarial o en software.|  
-|[Diagramas de clases de UML: referencia](../modeling/uml-class-diagrams-reference.md)|Un diagrama de clase muestra tipos y relaciones que se usan en muchos contextos, como el código, los esquemas de base de datos, los protocolos de comunicaciones o el glosario de términos usados para describir un dominio empresarial.|  
-|[Diagramas de componentes de UML: referencia](../modeling/uml-component-diagrams-reference.md)|Un diagrama de componentes muestra partes que se pueden separar en un diseño de software y sus interfaces.|  
-|[Diagramas de secuencia UML: referencia](../modeling/uml-sequence-diagrams-reference.md)|Un diagrama de secuencia muestra las interacciones entre los elementos de un diseño de software.|  
-|[Diagramas de casos de uso de UML: referencia](../modeling/uml-use-case-diagrams-reference.md)|Un diagrama de casos de uso muestra los usuarios de un sistema y las actividades que pueden realizar para lograr objetivos concretos.|  
+|[Diagrama de clases de UML: referencia](../modeling/uml-class-diagrams-reference.md)|Un diagrama de clase muestra tipos y relaciones que se usan en muchos contextos, como el código, los esquemas de base de datos, los protocolos de comunicaciones o el glosario de términos usados para describir un dominio empresarial.|  
+|[Diagramas de componentes UML: referencia](../modeling/uml-component-diagrams-reference.md)|Un diagrama de componentes muestra partes que se pueden separar en un diseño de software y sus interfaces.|  
+|[Diagramas de secuencia de UML: referencia](../modeling/uml-sequence-diagrams-reference.md)|Un diagrama de secuencia muestra las interacciones entre los elementos de un diseño de software.|  
+|[Diagramas de casos de uso UML: referencia](../modeling/uml-use-case-diagrams-reference.md)|Un diagrama de casos de uso muestra los usuarios de un sistema y las actividades que pueden realizar para lograr objetivos concretos.|  
   
 ## <a name="see-also"></a>Vea también  
  [Crear modelos para la aplicación](../modeling/create-models-for-your-app.md)
-
-
-

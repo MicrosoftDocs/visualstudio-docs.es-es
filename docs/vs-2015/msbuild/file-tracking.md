@@ -1,32 +1,26 @@
 ---
 title: Seguimiento de archivos | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - msbuild, file tracking
 ms.assetid: e6c66ac0-3464-451f-9192-3b98dca21b4a
 caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 179124c09e0846cbbf649a819bd8c954b5a72e7a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: d8d999d65b207f72542b732842f6eb984df40764
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228194"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656822"
 ---
 # <a name="file-tracking"></a>Seguimiento de archivos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Los registros de seguimiento de archivos llaman al sistema de archivos de Windows para un proceso y sus procesos secundarios. Para controlar cuándo activar y desactivar este registro y especificar el archivo de registro que se debe utilizar, los programas llaman a las funciones que se enumeran a continuación.  
   
 ## <a name="in-this-section"></a>En esta sección  
@@ -56,6 +50,3 @@ Los registros de seguimiento de archivos llaman al sistema de archivos de Window
   
  [WriteContextTLogs](../msbuild/writecontexttlogs.md)  
  Escribe el registro de seguimiento del contexto actual.
-
-
-

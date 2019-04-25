@@ -8,16 +8,15 @@ helpviewer_keywords:
 - text templates, functions that generate text
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: b78e34205c2b7af36f3c43f2307fd62bfca6fe39
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 68bb68160b78df4abe1b6874080c9a3ec91a3e31
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53990521"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063431"
 ---
 # <a name="writing-a-t4-text-template"></a>Escribir una plantilla de texto T4
 Una plantilla de texto contiene el texto que se generará a partir de ella. Por ejemplo, una plantilla que crea una página web contendrá "\<html >..." y todas las demás partes estándar de una página HTML. Inserta en la plantilla son *bloques de control*, que son fragmentos de código de programa. Los bloques de control proporcionan valores variables y permiten que partes del texto sean condiciones y se repitan.
@@ -26,11 +25,11 @@ Una plantilla de texto contiene el texto que se generará a partir de ella. Por 
 
  Las plantillas de texto se componen de las siguientes partes:
 
--   **Directivas** -elementos que controlan cómo se procesa la plantilla.
+- **Directivas** -elementos que controlan cómo se procesa la plantilla.
 
--   **Bloques de texto** : contenido que se copia directamente en la salida.
+- **Bloques de texto** : contenido que se copia directamente en la salida.
 
--   **Bloques de control** -código de programa que inserta valores variables en el texto y controla las partes condicionales o repetidas del texto.
+- **Bloques de control** -código de programa que inserta valores variables en el texto y controla las partes condicionales o repetidas del texto.
 
 Para probar los ejemplos de este tema, cópielos en un archivo de plantilla como se describe en [generación de código de tiempo de diseño mediante el uso de plantillas de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md). Después de editar el archivo de plantilla, guárdelo y, a continuación, inspeccione la salida **.txt** archivo.
 
@@ -108,7 +107,7 @@ Hello!
 <#= 2 + 3 #>
 ```
 
- Observe que el símbolo de apertura tiene tres caracteres "<#=".
+ Observe que el símbolo de apertura tiene tres caracteres "< #=".
 
  La expresión puede incluir cualquier variable que esté en el ámbito. Por ejemplo, este bloque imprime líneas con números:
 

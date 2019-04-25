@@ -1,30 +1,24 @@
 ---
 title: Versión de .NET Framework de destino y plataforma de destino de MSBuild | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 ms.assetid: df6517c5-edd6-4cc4-97ad-b3cdfc78e799
 caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 74ca7eb25aac26eb66628ea76be502e4a244a2bd
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 1a550b4a6634604594da0893e3f420fd9c38ca3c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49923373"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650738"
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>Plataforma de destino de MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Un proyecto se puede compilar para su ejecución en una *plataforma de destino*, que es una versión determinada de .NET Framework, y en una *plataforma de destino*, que es una arquitectura de software determinada.  Por ejemplo, puede diseñar una aplicación para que se ejecute en .NET Framework 2.0 en una plataforma de 32 bits compatible con la familia de procesadores 802x86 (“x86”). La combinación de la plataforma de destino y la plataforma de destino se denomina *contexto de destino*.  
   
 ## <a name="target-framework-and-profile"></a>Plataforma de destino y perfil objetivo  
@@ -93,6 +87,3 @@ Un proyecto se puede compilar para su ejecución en una *plataforma de destino*,
   
 ## <a name="see-also"></a>Vea también  
  [Compatibilidad con múltiples versiones (multi-targeting)](../msbuild/msbuild-multitargeting-overview.md)
-
-
-

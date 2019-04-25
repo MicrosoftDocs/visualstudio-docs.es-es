@@ -1,25 +1,20 @@
 ---
 title: InstallShield Limited Edition | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 ms.assetid: 151e46e5-86da-4336-b6d0-42b5326c4884
 caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 482b06a079346e91a91708d32733754a3f98a3db
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: a05aba81292fba9520defe39af6977682452b850
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49189675"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080636"
 ---
 # <a name="installshield-limited-edition"></a>InstallShield Limited Edition
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,13 +26,10 @@ Use InstallShield Limited Edition para crear un archivo de instalación y distri
   
 ### <a name="to-enable-installshield-limited-edition"></a>Para habilitar InstallShield Limited Edition  
   
-1.  En la barra de menús, elija **Archivo**, **Nuevo**, **Proyecto**.  
+1. En la barra de menús, elija **Archivo**, **Nuevo**, **Proyecto**.  
   
-2.  En el cuadro de diálogo **Nuevo proyecto** , expanda el nodo **Otros tipos de proyectos** y, a continuación, elija el nodo **Instalación e implementación** .  
+2. En el cuadro de diálogo **Nuevo proyecto** , expanda el nodo **Otros tipos de proyectos** y, a continuación, elija el nodo **Instalación e implementación** .  
   
-3.  En la lista de plantillas, elija **Habilitar InstallShield Limited Edition**y, a continuación, elija el botón **Aceptar** .  
+3. En la lista de plantillas, elija **Habilitar InstallShield Limited Edition**y, a continuación, elija el botón **Aceptar** .  
   
-4.  En la ventana del explorador que se abre, lea las instrucciones y, a continuación, elija el vínculo **Vaya al sitio web de descarga** .
-
-
-
+4. En la ventana del explorador que se abre, lea las instrucciones y, a continuación, elija el vínculo **Vaya al sitio web de descarga** .

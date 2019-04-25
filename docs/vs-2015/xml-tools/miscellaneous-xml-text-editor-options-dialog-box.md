@@ -1,30 +1,24 @@
 ---
 title: Varios, XML, Editor de texto, cuadro de diálogo Opciones | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: fd3fff31-cddc-422d-a2f0-a5a1ef492afd
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a58ef682ec269ebf83cb72bfbd7801da1fc17c64
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: cfebf34b9fc45a94733b4b10cb22b74190ebb127
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49194511"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59667136"
 ---
 # <a name="miscellaneous-xml-text-editor-options-dialog-box"></a>Varios, XML, Editor de texto, Cuadro de diálogo Opciones
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Este cuadro de diálogo permite cambiar las opciones de finalización automática y esquema del Editor XML. Puede tener acceso a la **opciones** cuadro de diálogo desde el **herramientas** menú.  
   
 > [!NOTE]
@@ -32,7 +26,7 @@ Este cuadro de diálogo permite cambiar las opciones de finalización automátic
   
 ## <a name="auto-insert"></a>Inserción automática  
  **Etiquetas de cierre**  
- Si se activa la configuración de autocompletar, el editor agrega automáticamente una etiqueta de cierre al escribir un corchete derecho (>) para cerrar una etiqueta inicial, si la etiqueta aún no está cerrada. Éste es el comportamiento predeterminado.  
+ Si la configuración de Autocompletar está activada, el editor agrega automáticamente una etiqueta de cierre al escribir un corchete angular derecho (>) para cerrar una etiqueta de apertura, si la etiqueta no está ya cerrada. Éste es el comportamiento predeterminado.  
   
  La finalización de un elemento vacío no depende de la configuración de autocompletar. Siempre puede autocompletar un elemento vacío escribiendo una barra diagonal inversa (/).  
   
@@ -70,6 +64,3 @@ Este cuadro de diálogo permite cambiar las opciones de finalización automátic
 ## <a name="see-also"></a>Vea también  
  [Propiedades del documento XML, ventana Propiedades](../xml-tools/xml-document-properties-properties-window.md)   
  [Componentes del Editor XML](../xml-tools/xml-editor-components.md)
-
-
-

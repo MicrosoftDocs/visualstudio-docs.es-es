@@ -1,26 +1,21 @@
 ---
 title: Menús contextuales | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - context menus
 ms.assetid: 44fd9e6a-6d42-4aba-80ba-f37fa0070f1d
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: efd4e1c80b9af2a0d73730f0bd7d741cd877fb07
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9baab8ef64fa1952eff138165f608e25960c8cfd
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51796849"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58994976"
 ---
 # <a name="context-menus"></a>Menús contextuales
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,4 +28,3 @@ Menús contextuales se muestran cuando un usuario del botón secundario en una r
 ## <a name="see-also"></a>Vea también  
  [Desarrollar un servicio de lenguaje heredado](../extensibility/internals/developing-a-legacy-language-service.md)   
  [Ampliación de menús y comandos](../extensibility/extending-menus-and-commands.md)
-

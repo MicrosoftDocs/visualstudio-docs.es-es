@@ -1,14 +1,9 @@
 ---
-title: 'Cómo: establecer configuraciones Debug y Release | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Establecer configuraciones Debug y Release | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.builds
 dev_langs:
@@ -39,15 +34,15 @@ ms.assetid: 57b6bbb7-f2af-48f7-8773-127d75034ed2
 caps.latest.revision: 48
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ba827fda69b1dc455df4efe9c9f6eb83687780f3
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: da8b3b32eae5d3045216f562dc7db25fb1f3264a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51758497"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048197"
 ---
-# <a name="how-to-set-debug-and-release-configurations"></a>Cómo: Establecer configuraciones Debug y Release
+# <a name="how-to-set-debug-and-release-configurations"></a>Procedimiento Conjunto de configuraciones Debug y Release
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Los proyectos de Visual Studio tienen configuraciones independientes para el lanzamiento y la depuración del programa. Como se desprende de sus nombres, la versión de depuración se compila para depurar y la versión de lanzamiento para la distribución final.  
@@ -62,9 +57,9 @@ Los proyectos de Visual Studio tienen configuraciones independientes para el lan
   
 ### <a name="to-change-the-build-configuration"></a>Para cambiar la configuración de compilación:  
   
-1.  En el menú compilar: haga clic en **compilar / Administrador de configuración**, a continuación, seleccione **depurar** o **versión**.  
+1. En el menú compilar: haga clic en **compilar / Administrador de configuración**, a continuación, seleccione **depurar** o **versión**.  
   
-2.  En la barra de herramientas, elija **depurar** o **versión** desde el **configuraciones de soluciones** cuadro de lista.  
+2. En la barra de herramientas, elija **depurar** o **versión** desde el **configuraciones de soluciones** cuadro de lista.  
   
      ![configuración de compilación de la barra de herramientas](../debugger/media/toolbarbuildconfiguration.png "ToolbarBuildConfiguration")  
   
@@ -76,7 +71,4 @@ Los proyectos de Visual Studio tienen configuraciones independientes para el lan
  [Configuración de proyectos para configuraciones de depuración en C#](../debugger/project-settings-for-csharp-debug-configurations.md)   
  [Configuración de proyectos para una configuración de depuración en Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
  [Cómo: Crear y editar configuraciones](../ide/how-to-create-and-edit-configurations.md)   
- [Configuraciones Debug y Release](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e)
-
-
-
+ [Configuraciones Debug y Release](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)

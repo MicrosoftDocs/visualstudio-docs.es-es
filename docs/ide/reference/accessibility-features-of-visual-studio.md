@@ -2,7 +2,6 @@
 title: Características de accesibilidad de Visual Studio
 description: Obtenga más información sobre las características y las utilidades de accesibilidad que ayudan a que tanto el sistema operativo Windows como el conjunto de desarrollo Visual Studio sean más accesibles para todos, incluidas las personas con discapacidades.
 ms.date: 08/22/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio, accessibility
@@ -10,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: aa1ada29-4d93-4bf0-af8b-03633fcb0fba
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 28a4d386dcaa6525acb450bcabb2f459637a8cbf
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: abe8be0804877b4836a766f2c4fec37321534b5f
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53866483"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318594"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Características de accesibilidad de Visual Studio
 
 > [!TIP]
-> Para más información sobre las actualizaciones de accesibilidad recientes, vea la entrada de blog [Accessibility improvements in Visual Studio 2017 version 15.3](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/) (Mejoras de accesibilidad en Visual Studio 2017 versión 15.3).
+> Para más información sobre las actualizaciones de accesibilidad recientes, vea la entrada de blog [Accessibility improvements in Visual Studio 2017 version 15.3](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/) (Mejoras de accesibilidad en Visual Studio 2017 versión 15.3).
 
 Además de las características y utilidades de accesibilidad de Windows, las características siguientes hacen que Visual Studio sea más accesible para personas con discapacidades:
 

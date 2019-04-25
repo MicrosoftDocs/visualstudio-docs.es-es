@@ -1,12 +1,9 @@
 ---
 title: Personalizar las herramientas y el cuadro de herramientas | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.dsldesigner.selectiondialog
 - vs.dsltools.dsldesigner.selecticondialog
@@ -17,13 +14,13 @@ ms.assetid: 2a0d03d7-ebc6-4458-b9f4-d2cb8418a62d
 caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 18c727a228b51c484905c381dd98b7db66c9d7ad
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 47b108cfbef8831f9650c7e1af29d528aa8abaa2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49847817"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077269"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>Personalizar las herramientas y el cuadro de herramientas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,15 +29,15 @@ Debe definir los elementos del cuadro de herramientas que quiera que los usuario
   
  En este tema:  
   
--   [Cómo se define el cuadro de herramientas](#ToolboxDef)  
+- [Cómo se define el cuadro de herramientas](#ToolboxDef)  
   
--   [Personalizar herramientas de elemento](#customizing)  
+- [Personalizar herramientas de elemento](#customizing)  
   
--   [Creación de grupos de elementos de una herramienta](#groups)  
+- [Creación de grupos de elementos de una herramienta](#groups)  
   
--   [Personalizar herramientas de conexión](#connections)  
+- [Personalizar herramientas de conexión](#connections)  
   
-##  <a name="ToolboxDef"></a> Cómo se define el cuadro de herramientas  
+## <a name="ToolboxDef"></a> Cómo se define el cuadro de herramientas  
  En DSL Explorer (Explorador de DSL), expanda el nodo Editor (Editor) y los nodos situados bajo él. Normalmente, verá una jerarquía similar a esta:  
   
 ```  
@@ -56,15 +53,15 @@ Editor
   
  En esta parte de DSL Explorer (Explorador de DSL), puede:  
   
--   Crear nuevas pestañas. Las pestañas definen los títulos de sección en el cuadro de herramientas.  
+- Crear nuevas pestañas. Las pestañas definen los títulos de sección en el cuadro de herramientas.  
   
--   Crear nuevas herramientas.  
+- Crear nuevas herramientas.  
   
--   Copiar y pegar herramientas.  
+- Copiar y pegar herramientas.  
   
--   Subir o bajar las herramientas en la lista.  
+- Subir o bajar las herramientas en la lista.  
   
--   Eliminar pestañas y herramientas.  
+- Eliminar pestañas y herramientas.  
   
 > [!IMPORTANT]
 >  Para agregar o pegar elementos en DSL Explorer (Explorador de DSL), haga clic con el botón secundario en el elemento primario principal del nuevo nodo. Por ejemplo, para agregar una herramienta, haga clic en la ficha y no el **herramientas** nodo. Para agregar una pestaña, haga clic en el **Editor** nodo.  
@@ -77,38 +74,38 @@ Editor
   
 #### <a name="to-add-a-tool-to-the-toolbox"></a>Para agregar una herramienta al cuadro de herramientas  
   
-1.  Normalmente, una herramienta de elemento se crea después de haber creado una clase de forma y de haberla asignado a una clase de dominio.  
+1. Normalmente, una herramienta de elemento se crea después de haber creado una clase de forma y de haberla asignado a una clase de dominio.  
   
      Y una herramienta de conector se suele crear después de haber creado una clase de conector y de haberla asignado a una relación de referencia.  
   
-2.  En el Explorador de DSL, expanda el **Editor** nodo y el **Toolbox Tabs** nodo.  
+2. En el Explorador de DSL, expanda el **Editor** nodo y el **Toolbox Tabs** nodo.  
   
      Haga clic en un nodo de la pestaña del cuadro de herramientas y, a continuación, haga clic en **agregar nueva herramienta de elemento** o **agregar nueva herramienta de conexión**.  
   
-3.  Establecer el **icono cuadro de herramientas** propiedad para hacer referencia a un mapa de bits de 16 x 16.  
+3. Establecer el **icono cuadro de herramientas** propiedad para hacer referencia a un mapa de bits de 16 x 16.  
   
-     Si desea definir un icono nuevo, cree un archivo de mapa de bits en el Explorador de soluciones en la **Dsl\Resources** carpeta. El archivo debe tener los siguientes valores de propiedad: **acción de compilación** = **contenido**; **Copy to Output Directory** = **no copie**.  
+     Si desea definir un icono nuevo, cree un archivo de mapa de bits en el Explorador de soluciones en la **Dsl\Resources** carpeta. El archivo debe tener los siguientes valores de propiedad: **Acción de compilación** = **contenido**; **Copy to Output Directory** = **no copie**.  
   
-4.  **Para una herramienta de elemento:** establecer el **clase** propiedad de la herramienta para hacer referencia a una clase de dominio concreto que se asigna a una forma.  
+4. **Para una herramienta de elemento:** Establecer el **clase** propiedad de la herramienta para hacer referencia a una clase de dominio concreto que se asigna a una forma.  
   
-     **Para una herramienta de conector:** establecer el **generador de conexiones** propiedad de la herramienta para uno de los elementos que se ofrecen en la lista desplegable. Los generadores de conexiones se crean automáticamente cuando se asigna un conector a una relación de dominio. Si ha creado un conector recientemente, normalmente seleccionaría el generador de conexiones asociado.  
+     **Para una herramienta de conector:** Establecer el **generador de conexiones** propiedad de la herramienta para uno de los elementos que se ofrecen en la lista desplegable. Los generadores de conexiones se crean automáticamente cuando se asigna un conector a una relación de dominio. Si ha creado un conector recientemente, normalmente seleccionaría el generador de conexiones asociado.  
   
-5.  Para probar el DSL, presione F5 o CTRL+F5 y, en la instancia experimental de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], abra un archivo de modelo de muestra. La nueva herramienta debería aparecer en el cuadro de herramientas. Arrástrela al diagrama para comprobar que crea un nuevo elemento.  
+5. Para probar el DSL, presione F5 o CTRL+F5 y, en la instancia experimental de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], abra un archivo de modelo de muestra. La nueva herramienta debería aparecer en el cuadro de herramientas. Arrástrela al diagrama para comprobar que crea un nuevo elemento.  
   
      Si la herramienta no aparece, detenga la instancia experimental de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. En el Windows **iniciar** menú, ejecute **restablecer el Microsoft Visual Studio 2010 Experimental Instance**. En el [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **compilar** menú, haga clic en **recompilar solución**. Después, vuelva a probar el DSL.  
   
-##  <a name="customizing"></a> Personalizar herramientas de elemento  
+## <a name="customizing"></a> Personalizar herramientas de elemento  
  De forma predeterminada, la herramienta creará una instancia única de la clase especificada, pero puede cambiar esto de dos maneras:  
   
--   Defina directivas de combinación de elementos en otras clases, permita que acepten nuevas instancias de esta clase y permita que creen vínculos adicionales cuando se crea un elemento nuevo. Por ejemplo, podría permitir que el usuario coloque un comentario en otro elemento, creando así un vínculo de referencia entre los dos.  
+- Defina directivas de combinación de elementos en otras clases, permita que acepten nuevas instancias de esta clase y permita que creen vínculos adicionales cuando se crea un elemento nuevo. Por ejemplo, podría permitir que el usuario coloque un comentario en otro elemento, creando así un vínculo de referencia entre los dos.  
   
      Estas personalizaciones afectan también a lo que sucede cuando el usuario pega o arrastra y coloca un elemento.  
   
      Para obtener más información, consulte [personalizar la creación de elemento y el movimiento](../modeling/customizing-element-creation-and-movement.md).  
   
--   Escriba código para personalizar la herramienta de manera que pueda crear grupos de elementos. La herramienta se inicializa mediante métodos de ToolboxHelper.cs que puede invalidar. Para obtener más información, consulte [crear grupos de elementos desde una herramienta](#groups).  
+- Escriba código para personalizar la herramienta de manera que pueda crear grupos de elementos. La herramienta se inicializa mediante métodos de ToolboxHelper.cs que puede invalidar. Para obtener más información, consulte [crear grupos de elementos desde una herramienta](#groups).  
   
-##  <a name="groups"></a> Creación de grupos de elementos de una herramienta  
+## <a name="groups"></a> Creación de grupos de elementos de una herramienta  
  Cada herramienta de elemento contiene un prototipo de los elementos que debe crear. De forma predeterminada, cada herramienta de elemento crea un solo elemento, pero se puede crear un grupo de objetos relacionados con una herramienta. Para ello, inicialice la herramienta con un <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> que contenga los elementos relacionados.  
   
  El siguiente ejemplo se toma de un DSL en el que hay un tipo Transistor. Cada Transistor tiene tres Terminals con nombre. La herramienta de elemento de Transistors almacena un prototipo que contiene cuatro elementos de modelo y tres vínculos de relación. Cuando el usuario arrastra la herramienta al diagrama, se crea una instancia del prototipo que se vincula a la raíz del modelo.  
@@ -158,7 +155,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
   
 ```  
   
-##  <a name="connections"></a> Personalizar herramientas de conexión  
+## <a name="connections"></a> Personalizar herramientas de conexión  
  Normalmente, se crea una herramienta de elemento al crear una nueva clase de conector. También puede sobrecargar una herramienta permitiendo que los tipos de los dos extremos determinen el tipo de la relación. Por ejemplo, podría definir una herramienta de conexión que podría crear relaciones Persona-Persona y Persona-Ciudad.  
   
  Las herramientas de conexión invocan generadores de conexiones. Use generadores de conexiones para especificar cómo los usuarios pueden vincular elementos en el diseñador generado. Los generadores de conexiones especifican los elementos que se pueden vincular y el tipo de vínculo que se crea entre ellos.  
@@ -233,7 +230,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
     /// <summary>  
     /// Only if source is on parent of target.  
     /// </summary>  
-    private static bool CanAcceptInPortAndInPortAsSourceAndTarget                (InPort sourceInPort, InPort targetInPort)  
+    private static bool CanAcceptInPortAndInPortAsSourceAndTarget                (InPort sourceInPort, InPort targetInPort)  
     {  
       return sourceInPort.Component == targetInPort.Component.Parent;  
     }  
@@ -254,9 +251,6 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 ## <a name="see-also"></a>Vea también  
  [Personalizar la creación de elemento y movimiento](../modeling/customizing-element-creation-and-movement.md)   
  [Personalizar el comportamiento de copia](../modeling/customizing-copy-behavior.md)   
- [Cómo: agregar un controlador de arrastrar y colocar](../modeling/how-to-add-a-drag-and-drop-handler.md)   
+ [Cómo: Agregar un controlador de arrastrar y colocar](../modeling/how-to-add-a-drag-and-drop-handler.md)   
  [Navegar y actualizar un modelo en el código de programa](../modeling/navigating-and-updating-a-model-in-program-code.md)   
  [Ejemplo de diagramas de circuitos DSL](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
-
-
-

@@ -1,7 +1,6 @@
 ---
 title: Administración de la firma de ensamblados y manifiestos
 ms.date: 02/17/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - manifests [Visual Studio]
@@ -11,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 6c1ef36b-25f7-4ad0-b29a-51801b7a5420
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c3795c2887e9d7516f3e9f781e42a2629e2a0b5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 17cda43c2fab2944e5027f5292b405f8a9e2e084
+ms.sourcegitcommit: 40393347a36779230d128f2355a911632a8d458e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53927576"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58866697"
 ---
 # <a name="manage-assembly-and-manifest-signing"></a>Administración de la firma de ensamblados y manifiestos
 
@@ -32,7 +31,7 @@ Para obtener información sobre cómo firmar ensamblados en proyectos de Visual 
 Para obtener información sobre cómo firmar ensamblados en proyectos de Visual C++, vea [Ensamblados de nombre seguro (C++/CLI)](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli).
 
 > [!NOTE]
-> La firma de nombre seguro no protege contra la ingeniería inversa del ensamblado. Para protegerse contra las técnicas de ingeniería inversa, consulte [Dotfuscator Community Edition (CE)](dotfuscator/index.md).
+> La firma de nombre seguro no protege contra la ingeniería inversa del ensamblado. Para proteger contra las técnicas de ingeniería inversa, consulte [Dotfuscator Community](dotfuscator/index.md).
 
 ## <a name="asset-types-and-signing"></a>Tipos de recursos y firma
 
@@ -58,7 +57,7 @@ En general, no debería firmar archivos ejecutables. Un componente con nombre se
 
 ## <a name="how-to-sign-an-assembly-in-visual-studio"></a>Cómo firmar un ensamblado en Visual Studio
 
-Puede firmar una aplicación o un componente mediante la pestaña **Firma** de la ventana Propiedades del proyecto (haga clic con el botón derecho en el nodo del proyecto en el **Explorador de soluciones** y seleccione **Propiedades**, o escriba **propiedades del proyecto** en la ventana **Inicio rápido**, o presione **Alt**+**Entrar** en el **Explorador de soluciones**). En la pestaña **Firma**, active la casilla **Firmar el ensamblado**.
+Puede firmar una aplicación o componente si usa la pestaña **Firma** de la ventana de propiedades del proyecto (haga clic con el botón derecho en el nodo del proyecto en el **Explorador de soluciones** y seleccione **Propiedades**). En la pestaña **Firma**, active la casilla **Firmar el ensamblado**.
 
 Especifique un archivo de clave. Si decide crear un archivo de clave, los nuevos archivos de clave se crean siempre en el formato *.pfx*. Necesita un nombre y una contraseña para el nuevo archivo.
 
@@ -74,4 +73,4 @@ Para obtener información sobre la firma de manifiestos, vea [Cómo: Firmar apli
 ## <a name="see-also"></a>Vea también
 
 - [Ensamblados con nombre seguro](/dotnet/framework/app-domains/strong-named-assemblies)
-- [Ensamblados con nombre seguro [C++/CLI]](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli)
+- [Ensamblados con nombre seguro (C++/CLI)](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli)

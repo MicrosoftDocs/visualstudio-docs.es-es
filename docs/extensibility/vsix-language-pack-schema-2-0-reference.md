@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 2a2932bc-cdbe-4d32-91fa-a3e0474f9098
 ms.author: dagriffe
 author: dgriffen
-manager: douge
+manager: jillfra
 ms.workload:
 - dagriffe
-ms.openlocfilehash: 73429f0ec41285dbab995a8a09411e5197bd0892
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: acea36031b98693e1d618986720d9932f76a0a63
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53889181"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56702530"
 ---
 # <a name="vsix-language-pack-schema-20-reference"></a>Referencia de esquema 2.0 del paquete de idioma VSIX
 

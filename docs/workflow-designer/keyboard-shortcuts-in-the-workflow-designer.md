@@ -2,21 +2,20 @@
 title: Diseñador de flujo de trabajo - métodos abreviados de teclado en el Diseñador de flujo de trabajo
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
 f1_keywords:
 - WFDKeyboardShortcuts.UI
 ms.assetid: 9be75438-a4a3-4781-94e5-45b7ec082358
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c092a4bcb419039b145bccf3f6c0cd952f0ff85
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: 95e42442e8dce5db1ef6b670043bf1f26e554773
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54269584"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094675"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>Métodos abreviados de teclado en el Diseñador de flujo de trabajo
 
@@ -58,13 +57,13 @@ La siguiente lista muestra los gestos que se utilizan para construir un diagrama
 
 - Para conectar actividades:
 
-    1.  Seleccione la actividad desplazándose hasta ella con la tecla de tabulación.
+    1. Seleccione la actividad desplazándose hasta ella con la tecla de tabulación.
 
-    2.  Presione CTRL+E, tantas veces como sea necesario para desplazar el foco de teclado a la actividad de destino.
+    2. Presione CTRL+E, tantas veces como sea necesario para desplazar el foco de teclado a la actividad de destino.
 
-    3.  Presione CTRL+E, S para agregar la actividad de destino a la selección.
+    3. Presione CTRL+E, S para agregar la actividad de destino a la selección.
 
-    4.  Presione CTRL+E, F para agregar el conector desde el origen al destino.
+    4. Presione CTRL+E, F para agregar el conector desde el origen al destino.
 
 Notas sobre cómo conectar las actividades mediante el teclado:
 

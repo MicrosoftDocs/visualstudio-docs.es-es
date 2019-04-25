@@ -1,4 +1,18 @@
 ---
+title: Crear un proyecto de IA a partir de código existente
+author: lisawong19
+ms.author: liwong
+manager: routlaw
+ms.date: 11/13/2017
+ms.topic: conceptual
+ms.workload:
+- multiple
+ms.openlocfilehash: 57003538072c372ce877c40db76922d6eed7397d
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56840823"
 ---
 # <a name="create-an-ai-project-from-existing-code"></a>Crear un proyecto de IA a partir de código existente
 

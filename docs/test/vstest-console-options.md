@@ -1,22 +1,21 @@
 ---
 title: Opciones de la línea de comandos para VSTest.Console.exe
 ms.date: 07/12/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - vstest.console.exe
 - command-line tests
 ms.author: gewarren
 author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c185622baeb3ad00bf5139190fe5c4fe627ba5e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 95ed8806844781bdaab4d97d63cb1b7ef324dd7b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53870760"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55949842"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>Opciones de la línea de comandos para VSTest.Console.exe
 

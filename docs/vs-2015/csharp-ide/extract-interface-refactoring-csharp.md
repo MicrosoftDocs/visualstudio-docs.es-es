@@ -1,14 +1,9 @@
 ---
 title: Extraer interfaz (refactorización, C#) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vs.csharp.refactoring.extractinterface
 dev_langs:
@@ -20,13 +15,13 @@ ms.assetid: 7d0aa225-3b33-4331-9652-5a67cac6f3d0
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: wpickett
-ms.openlocfilehash: e7c3af675155cf3d47d82457aadbfb6327895d4f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 55b24facd3a9ec935277a42c211a64d824ed6d7f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279908"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116750"
 ---
 # <a name="extract-interface-refactoring-c"></a>Extraer interfaz (Refactorización, C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +34,7 @@ Extraer interfaz es una operación de refactorización que proporciona una maner
   
 ### <a name="to-use-extract-interface"></a>Para utilizar Extraer interfaz  
   
-1.  Cree una aplicación de consola denominada `ExtractInterface`y, a continuación, reemplace `Program` con el código siguiente  
+1. Cree una aplicación de consola denominada `ExtractInterface`y, a continuación, reemplace `Program` con el código siguiente  
   
     ```csharp  
     // Invoke Extract Interface on ProtoA.  
@@ -50,7 +45,7 @@ Extraer interfaz es una operación de refactorización que proporciona una maner
     }  
     ```  
   
-2.  Con el cursor situado en `MethodB`y haga clic en **Extraer interfaz** en el **refactorizar** menú.  
+2. Con el cursor situado en `MethodB`y haga clic en **Extraer interfaz** en el **refactorizar** menú.  
   
      El **Extraer interfaz** aparece el cuadro de diálogo.  
   
@@ -58,9 +53,9 @@ Extraer interfaz es una operación de refactorización que proporciona una maner
   
      También puede haga clic en el mouse, apuntar a **refactorizar**y, a continuación, haga clic en **Extraer interfaz** para mostrar el **Extraer interfaz** cuadro de diálogo.  
   
-3.  Haga clic en **seleccionar todo**.  
+3. Haga clic en **seleccionar todo**.  
   
-4.  Haga clic en **Aceptar**.  
+4. Haga clic en **Aceptar**.  
   
      Consulte el nuevo archivo, IProtoA.cs y el código siguiente:  
   

@@ -7,15 +7,15 @@ helpviewer_keywords:
 - editorconfig, supporting in a language service
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3061f1a2efdf05a775f563311ccfbb4c48c49bc9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3c29c22ae4539d874ffc08c9ce5adf94ab33d404
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53830896"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56696979"
 ---
 # <a name="supporting-editorconfig-for-your-language-service"></a>Compatibilidad con EditorConfig el servicio de lenguaje
 
@@ -45,5 +45,5 @@ Microsoft.VisualStudio.TextManager.Interop.LANGPREFERENCES.uTabSize<br/>Microsof
 
 ## <a name="see-also"></a>Vea también
 
-[Crear una configuración de editor y portátiles con EditorConfig](../ide/create-portable-custom-editor-options.md)  
-[Ampliar los servicios de editor y lenguaje](../extensibility/extending-the-editor-and-language-services.md)
+- [Crear una configuración de editor y portátiles con EditorConfig](../ide/create-portable-custom-editor-options.md)
+- [Ampliar los servicios de editor y lenguaje](../extensibility/extending-the-editor-and-language-services.md)

@@ -1,21 +1,20 @@
 ---
 title: Instalar agentes y controladores de pruebas
 ms.date: 10/24/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - configure test agents, test lab
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fc0ea16ea10f4479fb635d4b84cb2eaee24c8b7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 04111b7a408b2378e0067ce1e3dd4e5ffd23ee48
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53879882"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223031"
 ---
 # <a name="install-test-agents-and-test-controllers"></a>Instalar agentes y controladores de pruebas
 
@@ -25,7 +24,7 @@ También considere la posibilidad de si mejor [usar Build o Release Management e
 
 ## <a name="system-requirements"></a>Requisitos del sistema
 
-En la siguiente tabla se muestran los requisitos del sistema para instalar el controlador de pruebas o el agente de pruebas para Visual Studio 2017:
+En la siguiente tabla se muestran los requisitos del sistema para instalar el controlador de pruebas o el agente de pruebas para Visual Studio:
 
 | Elemento | Requisitos |
 | ---- | ------------ |
@@ -35,7 +34,7 @@ En la siguiente tabla se muestran los requisitos del sistema para instalar el co
 
 ## <a name="install-the-test-controller-and-test-agents"></a>Instalación del controlador de pruebas y agentes de prueba
 
-Puede descargar agentes de Visual Studio 2017 desde [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?q=agents). Busque *Agentes para Visual Studio 2017*, seleccione *Agente* o *Controlador* y elija *Descargar*. Ejecute el archivo ejecutable descargado para instalar el controlador o el agente de prueba.
+Puede descargar agentes de Visual Studio desde [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?q=agents). Busque *Agentes para Visual Studio 2017*, seleccione *Agente* o *Controlador* y elija *Descargar*. Ejecute el archivo ejecutable descargado para instalar el controlador o el agente de prueba.
 
 Puede descargar agentes de Visual Studio 2015 y Visual Studio 2013 desde la página de [descargas anterior](https://visualstudio.microsoft.com/vs/older-downloads/).
 

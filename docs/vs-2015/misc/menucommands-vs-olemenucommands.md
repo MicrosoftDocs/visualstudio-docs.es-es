@@ -1,27 +1,22 @@
 ---
 title: MenuCommands frente a OleMenuCommands | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - commands, creating in VSPackages
 - command buttons, creating and placing
 - menus, creating commands
 ms.assetid: 553d5e07-3e19-4aba-b490-6c7dd05fd82e
 caps.latest.revision: 46
-manager: douge
-ms.openlocfilehash: 3b548a43cabcb097250411c3475f47774c840511
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: b6a12d683d3a2cb6b8d1c5ea5d7ca790de94adc6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49911920"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089151"
 ---
 # <a name="menucommands-vs-olemenucommands"></a>MenuCommands frente a OleMenuCommands
 Puede crear comandos de menú mediante la derivación de los objetos <xref:System.ComponentModel.Design.MenuCommand> o <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> e implementando los controladores de eventos apropiados. En la mayoría de los casos puede usar <xref:System.ComponentModel.Design.MenuCommand>, como hace la plantilla de proyecto de VSPackage, pero en ocasiones puede que deba usar <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>.  
@@ -69,17 +64,17 @@ Puede crear comandos de menú mediante la derivación de los objetos <xref:Syste
    </Button>
    ``` 
      
-   1.  Defina los campos `guid` y `id` de modo que coincidan con el par GUID:ID del nuevo comando.  
+   1. Defina los campos `guid` y `id` de modo que coincidan con el par GUID:ID del nuevo comando.  
   
-   2.  Defina el atributo `priority`.  
+   2. Defina el atributo `priority` .  
   
         El archivo .vsct usa el atributo `priority` para determinar la ubicación del botón entre los objetos de su grupo primario.  
   
         Los comandos que tienen valores de prioridad inferiores se muestran por encima o a la izquierda de los comandos que tienen valores de prioridad más altos. Se permiten valores de prioridad duplicados, pero la posición relativa de los comandos que tienen la misma prioridad se determina por el orden en que se procesan los VSPackages en tiempo de ejecución y ese orden no puede ser predeterminado.  
   
-        Si se omite el atributo `priority`, se define su valor en 0.  
+        Si se omite el atributo `priority` , se define su valor en 0.  
   
-   3.  Defina el atributo `type` . En la mayoría de los casos, su valor será `"Button"`. Para obtener descripciones de otros tipos de botones válidos, consulte [Button Element](../extensibility/button-element.md).  
+   3. Defina el atributo `type` . En la mayoría de los casos, su valor será `"Button"`. Para obtener descripciones de otros tipos de botones válidos, consulte [Button Element](../extensibility/button-element.md).  
   
 5. En la definición del botón, cree un elemento [Strings](../extensibility/strings-element.md) que contenga un elemento [ButtonText](../extensibility/buttontext-element.md) para que contenga el nombre del menú que aparece en el IDE y un elemento [CommandName](../extensibility/commandname-element.md) para que contenga el nombre del comando que se usa para acceder al menú en la ventana **Comando** .  
   
@@ -95,7 +90,7 @@ Puede crear comandos de menú mediante la derivación de los objetos <xref:Syste
   
     Puede hacerlo de dos maneras, en función del diseño:  
   
-   -   En el elemento `Button` , cree un elemento [Parent](../extensibility/parent-element.md) y defina sus campos `guid` y `id` en el Guid y el id. del grupo que va a hospedar el comando, también conocido como el *grupo principal primario*.  
+   - En el elemento `Button` , cree un elemento [Parent](../extensibility/parent-element.md) y defina sus campos `guid` y `id` en el Guid y el id. del grupo que va a hospedar el comando, también conocido como el *grupo principal primario*.  
   
         En el ejemplo siguiente se define un comando que aparecerá en un menú definido por el usuario.  
   
@@ -110,7 +105,7 @@ Puede crear comandos de menú mediante la derivación de los objetos <xref:Syste
        </Button>
        ```
       
-   -   Puede omitir el elemento `Parent` si el comando se va colocar mediante la ubicación del comando. Cree un elemento [CommandPlacements](../extensibility/commandplacements-element.md) antes de la sección `Symbols` y agregue un elemento [CommandPlacement](../extensibility/commandplacement-element.md) que tenga el `guid` y `id` del comando, un elemento `priority`, y un elemento primario, tal como se muestra en el ejemplo siguiente.  
+   - Puede omitir el elemento `Parent` si el comando se va colocar mediante la ubicación del comando. Cree un elemento [CommandPlacements](../extensibility/commandplacements-element.md) antes de la sección `Symbols` y agregue un elemento [CommandPlacement](../extensibility/commandplacement-element.md) que tenga el `guid` y `id` del comando, un elemento `priority`, y un elemento primario, tal como se muestra en el ejemplo siguiente.  
   
    ```xml
    <CommandPlacements>
@@ -131,11 +126,11 @@ Puede crear comandos de menú mediante la derivación de los objetos <xref:Syste
   
  Para el código que usa la interfaz <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> directamente para el control de comandos, debe implementar la interfaz <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> y sus métodos. Los dos métodos más importantes son <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> y <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A>.  
   
-1.  Obtenga la instancia <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> , como se muestra en el ejemplo siguiente.  
+1. Obtenga la instancia <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> , como se muestra en el ejemplo siguiente.  
   
      [!code-csharp[ButtonGroup#21](../snippets/csharp/VS_Snippets_VSSDK/buttongroup/cs/buttongrouppackage.cs#21)]  
   
-2.  Cree un objeto <xref:System.ComponentModel.Design.CommandID> que tenga como parámetros el GUID y el id. del comando que se va a controlar, como se muestra en el ejemplo siguiente.  
+2. Cree un objeto <xref:System.ComponentModel.Design.CommandID> que tenga como parámetros el GUID y el id. del comando que se va a controlar, como se muestra en el ejemplo siguiente.  
   
      [!code-csharp[ButtonGroup#22](../snippets/csharp/VS_Snippets_VSSDK/buttongroup/cs/buttongrouppackage.cs#22)]  
   
@@ -143,15 +138,15 @@ Puede crear comandos de menú mediante la derivación de los objetos <xref:Syste
   
      Como alternativa, puede rellenar el objeto <xref:System.ComponentModel.Design.CommandID> con el valor de cadena sin procesar del GUID y el valor entero del id.  
   
-3.  Cree una instancia de un objeto <xref:System.ComponentModel.Design.MenuCommand> o <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> que especifique el método que controla el comando junto con el <xref:System.ComponentModel.Design.CommandID>, como se muestra en el ejemplo siguiente.  
+3. Cree una instancia de un objeto <xref:System.ComponentModel.Design.MenuCommand> o <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> que especifique el método que controla el comando junto con el <xref:System.ComponentModel.Design.CommandID>, como se muestra en el ejemplo siguiente.  
   
      [!code-csharp[ButtonGroup#23](../snippets/csharp/VS_Snippets_VSSDK/buttongroup/cs/buttongrouppackage.cs#23)]  
   
-     <xref:System.ComponentModel.Design.MenuCommand> es adecuado para los comandos estáticos. Las pantallas de elementos de menú dinámicos necesitan controladores de eventos QueryStatus. El <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> agrega el evento <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> , que se produce cuando se abre el menú de host del comando y algunas otras propiedades, como <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.Text%2A>.  
+     <xref:System.ComponentModel.Design.MenuCommand> es adecuado para los comandos estáticos. Las visualizaciones de elementos de menú dinámicos necesitan controladores de eventos QueryStatus. El <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> agrega el evento <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> , que se produce cuando se abre el menú de host del comando y algunas otras propiedades, como <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.Text%2A>.  
   
      Los comandos creados por la plantilla de paquete se pasan de forma predeterminada a un objeto <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> en el método `Initialize()` de la clase de paquete.  
   
-4.  <xref:System.ComponentModel.Design.MenuCommand> es adecuado para los comandos estáticos. Las pantallas de elementos de menú dinámicos necesitan controladores de eventos QueryStatus. El <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> agrega el evento <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> , que se produce cuando se abre el menú de host del comando y algunas otras propiedades, como <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.Text%2A>.  
+4. <xref:System.ComponentModel.Design.MenuCommand> es adecuado para los comandos estáticos. Las visualizaciones de elementos de menú dinámicos necesitan controladores de eventos QueryStatus. El <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> agrega el evento <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus> , que se produce cuando se abre el menú de host del comando y algunas otras propiedades, como <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.Text%2A>.  
   
      Los comandos creados por la plantilla de paquete se pasan de forma predeterminada a un objeto <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> en el método `Initialize()` de la clase de paquete. El Asistente para Visual Studio implementa el método `Initialize` usando `MenuCommand`. Para pantallas de elementos de menús dinámicos, debe cambiar este valor a `OleMenuCommand`, como se muestra en el paso siguiente. Además, para cambiar el texto del elemento de menú, debe agregar un marcador de comando TextChanges al botón de comando de menú en el archivo .vsct, como se muestra en el ejemplo siguiente.  
   
@@ -167,11 +162,11 @@ Puede crear comandos de menú mediante la derivación de los objetos <xref:Syste
     </Button>
     ```
       
-5.  Pase el nuevo comando de menú al método <xref:System.ComponentModel.Design.IMenuCommandService.AddCommand%2A> en la interfaz <xref:System.ComponentModel.Design.IMenuCommandService> . Esto se consigue de forma predeterminada para los comandos creados por la plantilla de paquete, como se muestra en el ejemplo siguiente.  
+5. Pase el nuevo comando de menú al método <xref:System.ComponentModel.Design.IMenuCommandService.AddCommand%2A> en la interfaz <xref:System.ComponentModel.Design.IMenuCommandService> . Esto se consigue de forma predeterminada para los comandos creados por la plantilla de paquete, como se muestra en el ejemplo siguiente.  
   
      [!code-csharp[ButtonGroup#24](../snippets/csharp/VS_Snippets_VSSDK/buttongroup/cs/buttongrouppackage.cs#24)]  
   
-6.  Implemente el método que controla el comando.  
+6. Implemente el método que controla el comando.  
   
 #### <a name="to-implement-querystatus"></a>Para implementar el evento QueryStatus  
   
@@ -210,7 +205,7 @@ Puede crear comandos de menú mediante la derivación de los objetos <xref:Syste
   
 1. Devuelva <xref:Microsoft.VisualStudio.VSConstants.S_OK> para comandos válidos.  
   
-2. Defina el elemento `cmdf` del parámetro `prgCmds`.  
+2. Defina el elemento `cmdf` del parámetro `prgCmds` .  
   
     El valor del elemento `cmdf` es la unión lógica de valores de la enumeración <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> , combinados con el operador OR lógico (`|`).  
   
@@ -238,7 +233,7 @@ Puede crear comandos de menú mediante la derivación de los objetos <xref:Syste
   
       `prgCmds[0] cmdf |= OLECMDF_DEFHIDEONCTXMENU`  
   
-   - Si el comando usa la marca `TEXTCHANGES`, establezca el elemento `rgwz` del parámetro `pCmdText` en el nuevo texto del comando y establezca el elemento `cwActual` del parámetro `pCmdText` en el tamaño de la cadena de comandos.  
+   - Si el comando usa la marca `TEXTCHANGES` , establezca el elemento `rgwz` del parámetro `pCmdText` en el nuevo texto del comando y establezca el elemento `cwActual` del parámetro `pCmdText` en el tamaño de la cadena de comandos.  
   
      Para condiciones de error, el método <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> debe controlar los casos de error siguientes:  
   
@@ -250,11 +245,11 @@ Puede crear comandos de menú mediante la derivación de los objetos <xref:Syste
   
 ##### <a name="to-implement-the-exec-method"></a>Para implementar el método Exec  
   
--   Si el comando `GUID` es desconocido, se devuelve `OLECMDERR_E_UNKNOWNGROUP`.  
+- Si el comando `GUID` es desconocido, se devuelve `OLECMDERR_E_UNKNOWNGROUP`.  
   
--   Si el `GUID` es conocido, pero el id. de comando es desconocido, se devuelve `OLECMDERR_E_NOTSUPPORTED`.  
+- Si el `GUID` es conocido, pero el id. de comando es desconocido, se devuelve `OLECMDERR_E_NOTSUPPORTED`.  
   
--   Si el `GUID` y el id. de comando coinciden con el par GID:ID que usa el comando en el archivo .vsct, se ejecuta el código que está asociado con el comando y se devuelve <xref:Microsoft.VisualStudio.VSConstants.S_OK>.  
+- Si el `GUID` y el id. de comando coinciden con el par GID:ID que usa el comando en el archivo .vsct, se ejecuta el código que está asociado con el comando y se devuelve <xref:Microsoft.VisualStudio.VSConstants.S_OK>.  
   
 ## <a name="see-also"></a>Vea también  
  [Referencia del esquema XML de VSCT](../extensibility/vsct-xml-schema-reference.md)   

@@ -1,13 +1,8 @@
 ---
 title: Format Specifiers in C++ | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug
@@ -32,13 +27,13 @@ ms.assetid: 0f6f3b7c-ce2c-4b4d-b14f-7589dbed5444
 caps.latest.revision: 45
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6634124e7dc0b50236a9fd6ff9c5c5388c3063bc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ba950d55dcb4a4a0e1a06b40b1ed00ee3f58e54e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51810525"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116217"
 ---
 # <a name="format-specifiers-in-c"></a>Especificadores de formato en C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +46,7 @@ Puede cambiar el formato en el que se muestra un valor en la ventana **Inspecci�
 >  El depurador nativo de Visual Studio se ha cambiado a un motor de depuración nuevo. Como parte de este cambio, se han agregado algunos especificadores de formato nuevos y se han quitado otros más antiguos. El depurador antiguo todavía se usa cuando se realiza depuración de interoperabilidad (administrada y nativa mixta) con C++/CLI. Las secciones siguientes de este tema muestran los especificadores de formato de cada motor de depuración.  
 > 
 > - [Especificadores de formato](#BKMK_Visual_Studio_2012_format_specifiers) describe los especificadores de formato en el nuevo motor de depuración.  
->   -   [Especificadores de formato para la depuración de interoperabilidad con C++/CLI](#BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue) describe los especificadores de formato en el motor de depuración antiguo.  
+>   - [Especificadores de formato para la depuración de interoperabilidad con C++/CLI](#BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue) describe los especificadores de formato en el motor de depuración antiguo.  
   
 ## <a name="using-format-specifiers"></a>Uso de especificadores de formato  
  Si tiene el siguiente código:  
@@ -68,7 +63,7 @@ int main() {
   
  ![WatchFormatCPlus1](../debugger/media/watchformatcplus1.png "WatchFormatCPlus1")  
   
-##  <a name="BKMK_Visual_Studio_2012_format_specifiers"></a> Especificadores de formato  
+## <a name="BKMK_Visual_Studio_2012_format_specifiers"></a> Especificadores de formato  
  Las siguientes tablas muestran los especificadores de formato que se pueden usar en Visual Studio. Los especificadores en negrita no se admiten para la depuración de interoperabilidad con C++/CLI.  
   
 |Especificador|Formato|Valor de inspección original|Valor mostrado|  
@@ -82,24 +77,24 @@ int main() {
 |**sb**|cadena const char*|\<ubicación > "Hola mundo"|hola a todos|  
 |s8|cadena const char*|\<ubicación > "Hola mundo"|"hola a todos"|  
 |**s8b**|cadena const char*|\<ubicación > "Hola mundo"|"hola a todos"|  
-|su|const wchar_t * const<br /><br /> char16_t\* cadena|\<ubicación > L "Hola mundo"|L"hola a todos"<br /><br /> u"hola a todos"|  
-|sub|const wchar_t * const<br /><br /> char16_t\* cadena|\<ubicación > L "Hola mundo"|hola a todos|  
+|su|const wchar_t*  const<br /><br /> char16_t\* cadena|\<ubicación > L "Hola mundo"|L"hola a todos"<br /><br /> u"hola a todos"|  
+|sub|const wchar_t*  const<br /><br /> char16_t\* cadena|\<ubicación > L "Hola mundo"|hola a todos|  
 |bstr|Cadena BSTR|\<ubicación > L "Hola mundo"|L"hola a todos"|  
 |**s32**|cadena UTF-32|\<ubicación > U "Hola a todos"|U"hola a todos"|  
 |**s32b**|cadena UTF-32 (sin comillas)|\<ubicación > U "Hola a todos"|hola a todos|  
 |**en**|enum|Sábado(6)|Sábado|  
-|**hv**|Tipo de puntero: indica que el valor de puntero que se va a inspeccionar es el resultado de la asignación del montón de una matriz, por ejemplo, `new int[3]`.|\<ubicación > {\<primer miembro >}|\<ubicación > {\<primer miembro >, \<segundo miembro >,...}|  
-|**na**|Suprime la dirección de memoria de un puntero a un objeto.|\<ubicación >, {miembro = value...}|{member=value…}|  
+|**hv**|Tipo de puntero: indica que el valor de puntero que se va a inspeccionar es el resultado de la asignación del montón de una matriz, por ejemplo, `new int[3]`.|\<ubicación>{\<primer miembro>}|\<ubicación > {\<primer miembro >, \<segundo miembro >,...}|  
+|**na**|Suprime la dirección de memoria de un puntero a un objeto.|\<location>, {member=value…}|{member=value…}|  
 |**nd**|Muestra solo la información de la clase, omitiendo las clases derivadas|`(Shape*) square` incluye la información de clase base y derivada|Muestra únicamente la información de clase base|  
 |hr|HRESULT o código de error Win32. (Ahora, el depurador descodifica los valores HRESULT automáticamente, de modo que este especificador no es necesario en esos casos).|S_OK|S_OK|  
 |wc|Marcador de clase de ventana|0x0010|WC_DEFAULTCHAR|  
 |wm|Números de mensajes de Windows|16|WM_CLOSE|  
-|!|Sin formato, omite cualquier personalización de vistas de tipos de datos|\<personalizar la representación >|4|  
+|!|Sin formato, omite cualquier personalización de vistas de tipos de datos|\<representación personalizada>|4|  
   
 > [!NOTE]
 >  Cuando el especificador de formato **hv** está presente, el depurador intenta determinar la longitud del búfer y muestra el número apropiado de elementos. Dado que el depurador no siempre puede averiguar el tamaño del búfer exacto de una matriz, debe usar un especificador de tamaño de `(pBuffer,[bufferSize])` siempre que sea posible. El especificador de formato **hv** está diseñado para escenarios en los que el tamaño de búfer no está disponible  
   
-###  <a name="BKMK_Size_specifiers_for_pointers_as_arrays_in_Visual_Studio_2012"></a> Especificadores de tamaño para punteros como matrices  
+### <a name="BKMK_Size_specifiers_for_pointers_as_arrays_in_Visual_Studio_2012"></a> Especificadores de tamaño para punteros como matrices  
  Si tiene un puntero a un objeto que desea ver como una matriz, puede utilizar un entero o una expresión para especificar el número de elementos de matriz:  
   
 |Especificador|Formato|Valor de inspección original n|Valor mostrado|  
@@ -108,7 +103,7 @@ int main() {
 |**[exp]**|Expresión de C++ válida que se evalúa como un entero.|pBuffer,[bufferSize]|Muestra pBuffer como una matriz de `bufferSize` elementos.|  
 |**expand(n)**|Expresión de C++ válida que se evalúa como un entero|pBuffer, expand(2)|Muestra el tercer elemento de  `pBuffer`|  
   
-##  <a name="BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue"></a> Especificadores de formato para la depuración de interoperabilidad con C++/CLI  
+## <a name="BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue"></a> Especificadores de formato para la depuración de interoperabilidad con C++/CLI  
  Los especificadores en **negrita** solo son compatibles con la depuración nativa y con el código C++/CLI.  
   
 |Especificador|Formato|Valor de inspección original|Valor mostrado|  
@@ -121,17 +116,17 @@ int main() {
 |**f**|Punto flotante con signo|(3./2.), f|1.500000|  
 |**e**|Notación científica con signo|(3.0/2.0)|1.500000e+000|  
 |**g**|Punto flotante con signo o notación científica con signo, lo que sea más corto|(3.0/2.0)|1.5|  
-|c|carácter único|\<ubicación >|101 'e'|  
-|s|const char*|\<ubicación >|"hola a todos"|  
-|su|const wchar_t*<br /><br /> const char16_t\*|\<ubicación >|L"hola a todos"|  
-|sub|const wchar_t*<br /><br /> const char16_t\*|\<ubicación >|hola a todos|  
-|s8|const char*|\<ubicación >|"hola a todos"|  
+|c|carácter único|\<location>|101 'e'|  
+|s|const char*|\<location>|"hola a todos"|  
+|su|const wchar_t*<br /><br /> const char16_t\*|\<location>|L"hola a todos"|  
+|sub|const wchar_t*<br /><br /> const char16_t\*|\<location>|hola a todos|  
+|s8|const char*|\<location>|"hola a todos"|  
 |hr|HRESULT o código de error Win32. (Ahora, el depurador descodifica los valores HRESULT automáticamente, de modo que este especificador no es necesario en esos casos).|S_OK|S_OK|  
 |wc|Marcador de clase de ventana.|0x00000040,|WC_DEFAULTCHAR|  
 |wm|Números de mensajes de Windows|0x0010|WM_CLOSE|  
-|!|Sin formato, omite cualquier personalización de vistas de tipos de datos|\<personalizar la representación >|4|  
+|!|Sin formato, omite cualquier personalización de vistas de tipos de datos|\<representación personalizada>|4|  
   
-###  <a name="BKMK_Format_specifiers_memory_locations_in_interop_debugging_and_C___edit_and_continue"></a> Ubicaciones de memoria de los especificadores de formato en la depuración de interoperabilidad con C++/CLI  
+### <a name="BKMK_Format_specifiers_memory_locations_in_interop_debugging_and_C___edit_and_continue"></a> Ubicaciones de memoria de los especificadores de formato en la depuración de interoperabilidad con C++/CLI  
  La siguiente tabla contiene símbolos de formato que se utilizan para ubicaciones de memoria. Puede utilizar un especificador de ubicación de memoria con cualquier valor o expresión que se evalúe como una ubicación.  
   
 |Símbolo|Formato|Valor de inspección original|Valor mostrado|  
@@ -144,14 +139,9 @@ int main() {
 |**mq**|2 palabras cuádruples|0x0012ffac|0x0012ffac 7ffdf00000000000 5f441a790012fdd4|  
 |**mu**|Caracteres de 2 bytes (Unicode)|0x0012ffac|0x0012ffac 8478 77f4 ffff ffff 0000 0000 0000 0000|  
   
-###  <a name="BKMK_Size_specifier_for_pointers_as_arrays_in_interop_debugging_and_C___edit_and_continue"></a> Especificador de tamaño para punteros como matrices en la depuración de interoperabilidad con C++/CLIt  
+### <a name="BKMK_Size_specifier_for_pointers_as_arrays_in_interop_debugging_and_C___edit_and_continue"></a> Especificador de tamaño para punteros como matrices en la depuración de interoperabilidad con C++/CLIt  
  Si tiene un puntero a un objeto que desea ver como una matriz, puede utilizar un entero para especificar el número de elementos de matriz:  
   
 |Especificador|Formato|Expresión|Valor mostrado|  
 |---------------|------------|----------------|---------------------|  
 |n|Entero decimal|pBuffer[32]|Muestra `pBuffer` como una matriz de 32 elementos.|
-
-
-
-
-

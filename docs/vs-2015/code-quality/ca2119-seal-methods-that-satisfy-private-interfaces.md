@@ -1,14 +1,9 @@
 ---
-title: 'CA2119: Sellar los métodos que satisfacen las interfaces privadas | Microsoft Docs'
-ms.custom: ''
+title: 'CA2119: Sellar los métodos que satisfacen las interfaces privadas | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - SealMethodsThatSatisfyPrivateInterfaces
 - CA2119
@@ -20,14 +15,14 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c6d3e102cde1fc010f777006d629fa2d19add894
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2a120bb5eaab49e2652715c2583f898949b506a3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49825405"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061507"
 ---
-# <a name="ca2119-seal-methods-that-satisfy-private-interfaces"></a>CA2119: Sellar los métodos que cumplan las interfaces privadas
+# <a name="ca2119-seal-methods-that-satisfy-private-interfaces"></a>CA2119: Sellar los métodos que satisfacen las interfaces privadas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -46,15 +41,15 @@ ms.locfileid: "49825405"
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
  Para corregir una infracción de esta regla, evitar que el método se invalide fuera del ensamblado utilizando uno de los siguientes:
 
--   Convierta el tipo declarativo `sealed` (`NotInheritable` en Visual Basic).
+- Convierta el tipo declarativo `sealed` (`NotInheritable` en Visual Basic).
 
--   Cambie la accesibilidad del tipo declarativo para `internal` (`Friend` en Visual Basic).
+- Cambie la accesibilidad del tipo declarativo para `internal` (`Friend` en Visual Basic).
 
--   Quite todos los constructores públicos del tipo declarativo.
+- Quite todos los constructores públicos del tipo declarativo.
 
--   Implemente el método sin utilizar el `virtual` modificador.
+- Implemente el método sin utilizar el `virtual` modificador.
 
--   Implementar el método de forma explícita.
+- Implementar el método de forma explícita.
 
 ## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
  Es seguro suprimir una advertencia de esta regla si, tras una revisión exhaustiva, existe ningún problema de seguridad que puede ser aprovechable si se reemplaza el método fuera del ensamblado.
@@ -75,6 +70,3 @@ ms.locfileid: "49825405"
 
 ## <a name="see-also"></a>Vea también
  [Interfaces](http://msdn.microsoft.com/library/2feda177-ce11-432d-81b4-d50f5f35fd37) [Interfaces](http://msdn.microsoft.com/library/61b06674-12c9-430b-be68-cc67ecee1f5b)
-
-
-

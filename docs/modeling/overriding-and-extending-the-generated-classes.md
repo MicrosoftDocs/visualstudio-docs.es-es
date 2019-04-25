@@ -6,16 +6,15 @@ helpviewer_keywords:
 - Domain-Specific Language, providing overridable classes
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 3ea0446d53ad3cc74bd8af96e95fabada1098da5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9aa4f39fb54617ae1dbf048a1e13f009c8df5185
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53929285"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085634"
 ---
 # <a name="override-and-extend-the-generated-classes"></a>Invalidar y ampliar las clases generadas
 
@@ -55,9 +54,9 @@ No obstante, puede invalidar estos métodos estableciendo el **genera doble deri
 
 Por ejemplo, en el ejemplo Library.dsl, el `CirculationBook` clase de dominio tiene el `Generates``Double Derived` propiedad establecida en `true`. El código generado para esa clase de dominio contiene dos clases:
 
--   `CirculationBookBase`, que es abstracta y que contiene todos los métodos y propiedades.
+- `CirculationBookBase`, que es abstracta y que contiene todos los métodos y propiedades.
 
--   `CirculationBook`, que se deriva de `CirculationBookBase`. Está vacío, salvo sus constructores.
+- `CirculationBook`, que se deriva de `CirculationBookBase`. Está vacío, salvo sus constructores.
 
 Para invalidar cualquier método, cree una definición parcial de la clase derivada como `CirculationBook`. Puede invalidar los métodos generados y los métodos heredados del marco de modelado.
 
@@ -91,6 +90,6 @@ El almacén de modelado proporciona un mecanismo de eventos que puede usar para 
 
 Puede suscribirse a algunos eventos en las formas. Por ejemplo, puede escuchar la clics del mouse en una forma. Tendrá que escribir código que se suscribe al evento para cada objeto. Este código se puede escribir en un reemplazo de InitializeInstanceResources().
 
-Algunos eventos se generan en ShapeFields, que se usan para dibujar los elementos Decorator de una forma. Para obtener un ejemplo, vea [Cómo: Interceptar un clic en una forma o decorador](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).
+Algunos eventos se generan en ShapeFields, que se usan para dibujar los elementos Decorator de una forma. Como ejemplo, vea [Cómo: Interceptar un clic en una forma o decorador](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).
 
 Normalmente, estos eventos no se producen dentro de una transacción. Debe crear una transacción si desea realizar cambios en el almacén.

@@ -1,11 +1,8 @@
 ---
-title: 'Cómo: usar el Diseñador de importaciones | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Utilice el Diseñador de importaciones | Documentos de Microsoft
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Presentation.View.ImportDesigner.UI
@@ -13,15 +10,15 @@ ms.assetid: 61328ab6-9b66-4e12-8630-22e30ee8c9d1
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: cf0ece10310b82cd958ff528fc06f36ed1b709d3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: f1c305129a7f46c8d1841f28d8084535ec7e4d9f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49875507"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077581"
 ---
-# <a name="how-to-use-the-imports-designer"></a>Utilizar el diseñador de importaciones
+# <a name="how-to-use-the-imports-designer"></a>Procedimiento Usar el diseñador de importaciones
 El diseñador de importaciones le permite escribir los espacios de nombres para los tipos que utilizará en sus expresiones. De forma similar a la **importa** o **mediante** habilitar palabras clave en Visual Basic .NET y C#, la especificación de espacios de nombres en el Diseñador de importaciones le permite escribir simplemente un nombre de tipo en la expresión en lugar de un nombre completo nombre del tipo de versión.  
   
  El diseñador de importaciones reacciona tanto a los cambios en la interfaz de usuario como a los cambios que se efectúan cuando se guarda el flujo de trabajo. Cuando el flujo de trabajo está guardado, los espacios de nombres se pueden agregar automáticamente al diseñador de importaciones. Entre ellas se incluyen las siguientes:  
@@ -36,14 +33,14 @@ El diseñador de importaciones le permite escribir los espacios de nombres para 
   
 ### <a name="to-add-a-namespace-to-the-list-of-imported-namespaces"></a>Para agregar un espacio de nombres a la lista de espacios de nombres importados  
   
-1.  Abra una aplicación de servicio de WCF, una aplicación de consola del flujo de trabajo, un proyecto de biblioteca de actividades en [!INCLUDE[vs2010](../includes/vs2010-md.md)] o una aplicación de flujo de trabajo hospedada en otro host.  
+1. Abra una aplicación de servicio de WCF, una aplicación de consola del flujo de trabajo, un proyecto de biblioteca de actividades en [!INCLUDE[vs2010](../includes/vs2010-md.md)] o una aplicación de flujo de trabajo hospedada en otro host.  
   
-2.  Haga clic en **importaciones** en la parte inferior del lienzo principal. Aparecerá el diseñador de importaciones.  
+2. Haga clic en **importaciones** en la parte inferior del lienzo principal. Aparecerá el diseñador de importaciones.  
   
-3.  Escriba o seleccione un espacio de nombres desde el control de lista desplegable en la parte superior del diseñador de importaciones.  
+3. Escriba o seleccione un espacio de nombres desde el control de lista desplegable en la parte superior del diseñador de importaciones.  
   
      Cuando escriba, aparecerá una lista de espacios de nombres válidos que coinciden con los caracteres que se van escribiendo.  
   
-4.  Presione **ENTRAR** para agregar el espacio de nombres a la lista.  
+4. Presione **ENTRAR** para agregar el espacio de nombres a la lista.  
   
-5.  Si desea quitar un espacio de nombres de la lista, seleccione el espacio de nombres y, a continuación, presione el **eliminar** en el teclado. Observe que un espacio de nombres solo se puede eliminar si el espacio de nombres no es válido por cualquier razón, por ejemplo si el proyecto ya no hace referencia al ensamblado que contiene el espacio de nombres.
+5. Si desea quitar un espacio de nombres de la lista, seleccione el espacio de nombres y, a continuación, presione el **eliminar** en el teclado. Observe que un espacio de nombres solo se puede eliminar si el espacio de nombres no es válido por cualquier razón, por ejemplo si el proyecto ya no hace referencia al ensamblado que contiene el espacio de nombres.

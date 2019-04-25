@@ -1,14 +1,9 @@
 ---
 title: 'Cómo: Limpiar una compilación | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - Exec task [MSBuild]
 - MSBuild, cleaning a build
@@ -18,18 +13,17 @@ ms.assetid: 999ba473-b0c4-45c7-930a-63ea7a510509
 caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6c7b9811785808204fdd776617eec9cdeeaad317
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f8c64bb19d65540f8c72be9acb1c5f59deb3c8f9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229676"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075368"
 ---
 # <a name="how-to-clean-a-build"></a>Cómo: Limpiar los resultados de una compilación
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Cuando se limpia una compilación, se eliminan todos los archivos intermedios y de salida, de modo que solo queden los archivos de proyecto y de componentes. A partir de los archivos de proyecto y de componentes, se pueden compilar nuevas instancias de archivos intermedios y de salida. La biblioteca de tareas comunes que se proporciona con [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] incluye una tarea [Exec](../msbuild/exec-task.md) que se puede usar para ejecutar comandos del sistema. Para obtener más información sobre la biblioteca de tareas, vea [Referencia de tareas](../msbuild/msbuild-task-reference.md).  
   
 ## <a name="creating-a-directory-for-output-items"></a>Crear un directorio para los elementos de salida  
@@ -37,11 +31,11 @@ Cuando se limpia una compilación, se eliminan todos los archivos intermedios y 
   
 #### <a name="to-create-a-directory-for-output-items"></a>Para crear un directorio para los elementos de salida  
   
-1.  Use el elemento `Property` para definir la ubicación y el nombre del directorio. Por ejemplo, cree un directorio denominado `BuiltApp` en el directorio que contiene los archivos de proyecto y de código fuente:  
+1. Use el elemento `Property` para definir la ubicación y el nombre del directorio. Por ejemplo, cree un directorio denominado `BuiltApp` en el directorio que contiene los archivos de proyecto y de código fuente:  
   
      `<builtdir>BuiltApp</builtdir>`  
   
-2.  Use la tarea [MakeDir](../msbuild/makedir-task.md) para crear el directorio, si este no existe. Por ejemplo:  
+2. Use la tarea [MakeDir](../msbuild/makedir-task.md) para crear el directorio, si este no existe. Por ejemplo:  
   
      `<MakeDir Directories = "$(builtdir)"`  
   
@@ -52,7 +46,7 @@ Cuando se limpia una compilación, se eliminan todos los archivos intermedios y 
   
 #### <a name="to-remove-a-directory-and-all-files-contained-in-the-directory"></a>Para quitar un directorio y todos los archivos que contiene  
   
--   Use la tarea `RemoveDir` para quitar el directorio. Por ejemplo:  
+- Use la tarea `RemoveDir` para quitar el directorio. Por ejemplo:  
   
      `<RemoveDir Directories="$(builtdir)" />`  
   
@@ -113,6 +107,3 @@ Cuando se limpia una compilación, se eliminan todos los archivos intermedios y 
  [Tarea RemoveDir](../msbuild/removedir-task.md)   
  [Csc (tarea)](../msbuild/csc-task.md)   
  [Destinos](../msbuild/msbuild-targets.md)
-
-
-

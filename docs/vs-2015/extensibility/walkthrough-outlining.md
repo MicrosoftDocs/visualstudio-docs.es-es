@@ -1,28 +1,23 @@
 ---
 title: 'Tutorial: Esquematización | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - outlining
 ms.assetid: d75a44aa-265a-44d4-9c28-457f59c4ff9f
 caps.latest.revision: 31
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 897ff6a39716f424c40fa587d905847a0dbb3682
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7c1dd3d28b9978b52c95b5ff905d57720ed10f5d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51805273"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054710"
 ---
-# <a name="walkthrough-outlining"></a>Tutorial: Esquematización
+# <a name="walkthrough-outlining"></a>Tutorial: esquematizar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Puede implementar características basadas en lenguaje como mediante la definición de los tipos de regiones de texto que desea expandir o contraer la esquematización. Puede definir regiones en el contexto de un servicio de lenguaje, o puede definir su propio tipo de contenido y la extensión de nombre de archivo y la definición de la región se aplican sólo a ese tipo, o puede aplicar las definiciones de la región a un tipo de contenido existente (por ejemplo, "text"). En este tutorial se muestra cómo definir y mostrar las regiones de esquematización.  
@@ -34,11 +29,11 @@ Puede implementar características basadas en lenguaje como mediante la definici
   
 #### <a name="to-create-a-mef-project"></a>Para crear un nuevo proyecto de MEF  
   
-1.  Cree un proyecto VSIX. Asigne a la solución el nombre `OutlineRegionTest`.  
+1. Cree un proyecto VSIX. Asigne a la solución el nombre `OutlineRegionTest`.  
   
-2.  Agregar una plantilla de elemento de clasificador de Editor para el proyecto. Para obtener más información, consulte [crear una extensión con una plantilla de elementos de Editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
+2. Agregar una plantilla de elemento de clasificador de Editor para el proyecto. Para obtener más información, consulte [crear una extensión con una plantilla de elementos de Editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
   
-3.  Elimine los archivos de clase existentes.  
+3. Elimine los archivos de clase existentes.  
   
 ## <a name="implementing-an-outlining-tagger"></a>Implementar un etiquetador de esquematización  
  Las regiones de esquematización se marcan con un tipo de etiqueta (<xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag>). Esta etiqueta proporciona el estándar de comportamiento de esquematización. Puede expandir o contraer la región esquematizada. La región esquematizada está marcada por un signo más, si está contraído o un signo menos si se expande y la región expandida es enmarcado por una línea vertical.  
@@ -47,39 +42,39 @@ Puede implementar características basadas en lenguaje como mediante la definici
   
 #### <a name="to-implement-an-outlining-tagger"></a>Para implementar un etiquetador de esquematización  
   
-1.  Agregue un archivo de clase y asígnele el nombre `OutliningTagger`.  
+1. Agregue un archivo de clase y asígnele el nombre `OutliningTagger`.  
   
-2.  Importe los siguientes espacios de nombres.  
+2. Importe los siguientes espacios de nombres.  
   
      [!code-csharp[VSSDKOutlineRegionTest#1](../snippets/csharp/VS_Snippets_VSSDK/vssdkoutlineregiontest/cs/outliningtagger.cs#1)]
      [!code-vb[VSSDKOutlineRegionTest#1](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkoutlineregiontest/vb/outliningtagger.vb#1)]  
   
-3.  Cree una clase denominada `OutliningTagger`, y hacer que implemente <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601>:  
+3. Cree una clase denominada `OutliningTagger`, y hacer que implemente <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601>:  
   
      [!code-csharp[VSSDKOutlineRegionTest#2](../snippets/csharp/VS_Snippets_VSSDK/vssdkoutlineregiontest/cs/outliningtagger.cs#2)]
      [!code-vb[VSSDKOutlineRegionTest#2](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkoutlineregiontest/vb/outliningtagger.vb#2)]  
   
-4.  Agregue algunos campos para realizar un seguimiento del búfer de texto y la instantánea y acumular los conjuntos de líneas que se deben etiquetar como las regiones de esquematización. Este código incluye una lista de objetos de región (que se define más adelante) que representan las regiones de esquematización.  
+4. Agregue algunos campos para realizar un seguimiento del búfer de texto y la instantánea y acumular los conjuntos de líneas que se deben etiquetar como las regiones de esquematización. Este código incluye una lista de objetos de región (que se define más adelante) que representan las regiones de esquematización.  
   
      [!code-csharp[VSSDKOutlineRegionTest#3](../snippets/csharp/VS_Snippets_VSSDK/vssdkoutlineregiontest/cs/outliningtagger.cs#3)]
      [!code-vb[VSSDKOutlineRegionTest#3](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkoutlineregiontest/vb/outliningtagger.vb#3)]  
   
-5.  Agregue un constructor de etiquetador que inicializa los campos, analiza el búfer y se agrega un controlador de eventos para el <xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed> eventos.  
+5. Agregue un constructor de etiquetador que inicializa los campos, analiza el búfer y se agrega un controlador de eventos para el <xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed> eventos.  
   
      [!code-csharp[VSSDKOutlineRegionTest#4](../snippets/csharp/VS_Snippets_VSSDK/vssdkoutlineregiontest/cs/outliningtagger.cs#4)]
      [!code-vb[VSSDKOutlineRegionTest#4](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkoutlineregiontest/vb/outliningtagger.vb#4)]  
   
-6.  Implemente el <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A> abarca el método, que crea una instancia de la etiqueta. En este ejemplo se da por supuesto que los intervalos en el <xref:Microsoft.VisualStudio.Text.NormalizedSpanCollection> pasado al método son contiguas, aunque esto no sea siempre el caso. Este método crea una instancia de un nuevo intervalo de etiqueta para cada una de las regiones de esquematización.  
+6. Implemente el <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A> abarca el método, que crea una instancia de la etiqueta. En este ejemplo se da por supuesto que los intervalos en el <xref:Microsoft.VisualStudio.Text.NormalizedSpanCollection> pasado al método son contiguas, aunque esto no sea siempre el caso. Este método crea una instancia de un nuevo intervalo de etiqueta para cada una de las regiones de esquematización.  
   
      [!code-csharp[VSSDKOutlineRegionTest#5](../snippets/csharp/VS_Snippets_VSSDK/vssdkoutlineregiontest/cs/outliningtagger.cs#5)]
      [!code-vb[VSSDKOutlineRegionTest#5](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkoutlineregiontest/vb/outliningtagger.vb#5)]  
   
-7.  Declarar un `TagsChanged` controlador de eventos.  
+7. Declarar un `TagsChanged` controlador de eventos.  
   
      [!code-csharp[VSSDKOutlineRegionTest#6](../snippets/csharp/VS_Snippets_VSSDK/vssdkoutlineregiontest/cs/outliningtagger.cs#6)]
      [!code-vb[VSSDKOutlineRegionTest#6](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkoutlineregiontest/vb/outliningtagger.vb#6)]  
   
-8.  Agregar un `BufferChanged` controlador de eventos que responde a <xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed> eventos analizando el búfer de texto.  
+8. Agregar un `BufferChanged` controlador de eventos que responde a <xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed> eventos analizando el búfer de texto.  
   
      [!code-csharp[VSSDKOutlineRegionTest#7](../snippets/csharp/VS_Snippets_VSSDK/vssdkoutlineregiontest/cs/outliningtagger.cs#7)]
      [!code-vb[VSSDKOutlineRegionTest#7](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkoutlineregiontest/vb/outliningtagger.vb#7)]  
@@ -109,12 +104,12 @@ Puede implementar características basadas en lenguaje como mediante la definici
   
 #### <a name="to-implement-a-tagger-provider"></a>Para implementar un proveedor del etiquetador  
   
-1.  Cree una clase denominada `OutliningTaggerProvider` que implementa <xref:Microsoft.VisualStudio.Text.Tagging.ITaggerProvider>y expórtelo con los atributos ContentType y TagType.  
+1. Cree una clase denominada `OutliningTaggerProvider` que implementa <xref:Microsoft.VisualStudio.Text.Tagging.ITaggerProvider>y expórtelo con los atributos ContentType y TagType.  
   
      [!code-csharp[VSSDKOutlineRegionTest#12](../snippets/csharp/VS_Snippets_VSSDK/vssdkoutlineregiontest/cs/outliningtagger.cs#12)]
      [!code-vb[VSSDKOutlineRegionTest#12](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkoutlineregiontest/vb/outliningtagger.vb#12)]  
   
-2.  Implemente el <xref:Microsoft.VisualStudio.Text.Tagging.ITaggerProvider.CreateTagger%2A> método agregando un `OutliningTagger` a las propiedades del búfer.  
+2. Implemente el <xref:Microsoft.VisualStudio.Text.Tagging.ITaggerProvider.CreateTagger%2A> método agregando un `OutliningTagger` a las propiedades del búfer.  
   
      [!code-csharp[VSSDKOutlineRegionTest#13](../snippets/csharp/VS_Snippets_VSSDK/vssdkoutlineregiontest/cs/outliningtagger.cs#13)]
      [!code-vb[VSSDKOutlineRegionTest#13](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkoutlineregiontest/vb/outliningtagger.vb#13)]  
@@ -124,11 +119,11 @@ Puede implementar características basadas en lenguaje como mediante la definici
   
 #### <a name="to-build-and-test-the-outlineregiontest-solution"></a>Para compilar y probar la solución OutlineRegionTest  
   
-1.  Compile la solución.  
+1. Compile la solución.  
   
-2.  Al ejecutar este proyecto en el depurador, se crea una segunda instancia de Visual Studio.  
+2. Al ejecutar este proyecto en el depurador, se crea una segunda instancia de Visual Studio.  
   
-3.  Crear un archivo de texto Escriba algún texto que incluye la llave de apertura y la llave de cierre.  
+3. Crear un archivo de texto Escriba algún texto que incluye la llave de apertura y la llave de cierre.  
   
     ```  
     [  
@@ -136,8 +131,7 @@ Puede implementar características basadas en lenguaje como mediante la definici
     ]  
     ```  
   
-4.  Debe haber una región de esquematización que incluye dos llaves. Debe ser capaz de hacer clic en el signo menos a la izquierda de la llave de apertura para contraer la región de esquematización. Cuando la región se contrae, el símbolo de puntos suspensivos (...) debe aparecer a la izquierda de la región contraída y un menú emergente que contiene el texto **mantenga el puntero de texto** debe aparecer al mover el puntero sobre los puntos suspensivos.  
+4. Debe haber una región de esquematización que incluye dos llaves. Debe ser capaz de hacer clic en el signo menos a la izquierda de la llave de apertura para contraer la región de esquematización. Cuando la región se contrae, el símbolo de puntos suspensivos (...) debe aparecer a la izquierda de la región contraída y un menú emergente que contiene el texto **mantenga el puntero de texto** debe aparecer al mover el puntero sobre los puntos suspensivos.  
   
 ## <a name="see-also"></a>Vea también  
- [Tutorial: vinculación de un tipo de contenido con una extensión de nombre de archivo](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
-
+ [Tutorial: Vinculación de un tipo de contenido a una extensión de nombre de archivo](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

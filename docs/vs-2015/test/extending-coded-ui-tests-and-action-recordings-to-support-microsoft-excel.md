@@ -1,24 +1,19 @@
 ---
 title: Extensión de las pruebas de IU codificadas y las grabaciones de acciones para la compatibilidad con Microsoft Excel | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: 6b0f72a4-70ca-4e55-b236-2ea1034fd8a7
 caps.latest.revision: 32
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 705604153a0f24eb7ae6b2ff5924a600ddbff54e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4852dc5b65f00f7d298f5f1a15d39ff041022578
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49872985"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54791997"
 ---
 # <a name="extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel"></a>Extender las pruebas de IU codificadas y las grabaciones de acciones para la compatibilidad con Microsoft Excel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,10 +53,10 @@ El marco de pruebas de UI codificadas y grabaciones de acciones no admite todas 
   
  Para obtener más información, consulte [Tutorial: Crear el primer complemento de VSTO para Excel](http://msdn.microsoft.com/library/a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f).  
   
-### <a name="excel-ui-communication-exceluicommunicationhelper"></a>Comunicación de Interfaz de usuario de Excel: ExcelUIcommunicationHelper  
+### <a name="excel-ui-communication-exceluicommunicationhelper"></a>Comunicación de la interfaz de usuario de Excel: ExcelUIcommunicationHelper  
  Este proyecto incluye la interfaz de `IExcelUICommunication` y las clases de información que se usan para intercambiar datos entre el marco de trabajo de pruebas de IU codificada y Excel. Para obtener más información, consulte [Interfaz de muestra del Communicator de Excel](../test/sample-excel-communicator-interface.md).  
   
-### <a name="coded-ui-test-extension-codeduiexentsibilitysample"></a>Extensión de prueba de UI codificada: CodedUIExentsibilitySample  
+### <a name="coded-ui-test-extension-codeduiexentsibilitysample"></a>Extensión de prueba de IU codificada: CodedUIExentsibilitySample  
  Este proyecto incluye las clases personalizadas que se utilizan en pruebas de una hoja de cálculo de Excel. El código de cada una de estas clases es bastante autoexplicativo. Sin embargo, se proporciona una breve descripción de cada clase personalizada. Para obtener más información, consulte [Extensión de muestra para probar la IU codificada para Excel](../test/sample-coded-ui-test-extension-for-excel.md).  
   
 ### <a name="deploying-your-add-in-and-extension"></a>Implementar el complemento y la extensión  
@@ -84,6 +79,3 @@ El marco de pruebas de UI codificadas y grabaciones de acciones no admite todas 
  [Usar UI Automation para probar el código](../test/use-ui-automation-to-test-your-code.md)   
  [Procedimientos recomendados para las pruebas de IU codificadas](../test/best-practices-for-coded-ui-tests.md)   
  [Configuraciones y plataformas compatibles con las pruebas de IU codificadas y las grabaciones de acciones](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
-
-
-

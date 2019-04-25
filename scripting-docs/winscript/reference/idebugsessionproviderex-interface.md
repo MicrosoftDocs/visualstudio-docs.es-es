@@ -2,7 +2,6 @@
 title: IDebugSessionProviderEx (interfaz) | Documentos de Microsoft
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -12,12 +11,12 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fae1cf673f47d3be586f83320b2d2c38c817e2cf
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: c9bf341adeaeb17c8986b1b30b12f58113aef562
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54349223"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58146778"
 ---
 # <a name="idebugsessionproviderex-interface"></a>IDebugSessionProviderEx (Interfaz)
 La interfaz principal proporcionada por un IDE para habilitar la depuración iniciado por el lenguaje y el host del depurador. Establece una sesión de depuración para una aplicación en ejecución. Esta interfaz se implementa mediante el Administrador de depuración de la máquina.  

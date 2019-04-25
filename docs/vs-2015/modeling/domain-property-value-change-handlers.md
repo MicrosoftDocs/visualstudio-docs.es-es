@@ -1,25 +1,22 @@
 ---
 title: Controladores de cambio de valor de propiedad de dominio | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, overriding event handlers
 ms.assetid: 96d8f392-045e-4bc5-b165-fbaa470a3e16
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 7b79220a82ce2afc3cbafebedfbfea0c9caa649f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 500364d42c3c47b471102deee8f95193648183b8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232731"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095638"
 ---
 # <a name="domain-property-value-change-handlers"></a>Controladores de los cambios de valor de propiedad de dominio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,15 +55,15 @@ public partial class Comment
   
  Observe los siguientes aspectos sobre los controladores de propiedad:  
   
--   Se llama a ambos métodos del controlador de propiedad cuando el usuario realiza cambios en una propiedad de dominio y cuando el código de programa asigna un valor diferente a la propiedad.  
+- Se llama a ambos métodos del controlador de propiedad cuando el usuario realiza cambios en una propiedad de dominio y cuando el código de programa asigna un valor diferente a la propiedad.  
   
--   Solo se llama a los métodos cuando el valor cambia realmente. No se invoca al controlador si el código de programa asigna un valor que es igual al valor actual.  
+- Solo se llama a los métodos cuando el valor cambia realmente. No se invoca al controlador si el código de programa asigna un valor que es igual al valor actual.  
   
--   Las propiedades de dominio de almacenamiento calculadas y personalizadas no tienen los métodos OnValueChanged y OnValueChanging.  
+- Las propiedades de dominio de almacenamiento calculadas y personalizadas no tienen los métodos OnValueChanged y OnValueChanging.  
   
--   No puede usar un controlador de cambios para modificar el nuevo valor. Si quiere hacerlo, para restringir el valor de un intervalo determinado, por ejemplo, defina una `ChangeRule`.  
+- No puede usar un controlador de cambios para modificar el nuevo valor. Si quiere hacerlo, para restringir el valor de un intervalo determinado, por ejemplo, defina una `ChangeRule`.  
   
--   No puede agregar un controlador de cambios a una propiedad que represente un rol de una relación. En su lugar, defina una `AddRule` y una `DeleteRule` en la clase de relación. Estas reglas se desencadenan cuando se crean o se cambian vínculos. Para obtener más información, consulte [propagar cambios en el modelo de reglas de](../modeling/rules-propagate-changes-within-the-model.md).  
+- No puede agregar un controlador de cambios a una propiedad que represente un rol de una relación. En su lugar, defina una `AddRule` y una `DeleteRule` en la clase de relación. Estas reglas se desencadenan cuando se crean o se cambian vínculos. Para obtener más información, consulte [propagar cambios en el modelo de reglas de](../modeling/rules-propagate-changes-within-the-model.md).  
   
 ### <a name="changes-in-and-out-of-the-store"></a>Cambios dentro y fuera del almacén  
  Se llama a los métodos de controlador de propiedad dentro de la transacción que inició el cambio. Por lo tanto, puede realizar más cambios en el almacén sin abrir una nueva transacción. Los cambios podrían provocar llamadas adicionales del controlador.  
@@ -97,7 +94,7 @@ if (newValue > 10)
   
 ```  
   
-### <a name="alternative-technique-calculated-properties"></a>Técnica alternativa: calcula las propiedades  
+### <a name="alternative-technique-calculated-properties"></a>Técnica alternativa: propiedades calculadas  
  El ejemplo anterior muestra cómo se puede usar OnValueChanged() para propagar los valores de una propiedad de dominio a otra. Cada propiedad tiene su propio valor almacenado.  
   
  En su lugar, podría considerar la posibilidad de definir la propiedad derivada como una propiedad calculada. En ese caso, la propiedad no tiene su propio almacenamiento y su función de definición se evalúa siempre que se necesita su valor. Para obtener más información, consulte [calculadas y las propiedades de almacenamiento personalizado](../modeling/calculated-and-custom-storage-properties.md).  
@@ -106,7 +103,7 @@ if (newValue > 10)
   
  Sin embargo, un posible inconveniente de las propiedades calculadas es que la expresión se evalúa cada vez que se usa el valor, lo que podría suponer un problema de rendimiento. Además, las propiedades calculadas no tienen ningún método OnValueChanging() y OnValueChanged().  
   
-### <a name="alternative-technique-change-rules"></a>Técnica alternativa: cambiar las reglas  
+### <a name="alternative-technique-change-rules"></a>Técnica alternativa: reglas de cambio  
  Si define una regla de cambio, se ejecuta al final de una transacción en la que cambia el valor de una propiedad.  Para obtener más información, consulte [propagar cambios en el modelo de reglas de](../modeling/rules-propagate-changes-within-the-model.md).  
   
  Si se realizan varios cambios en una transacción, la regla de cambio se ejecuta cuando se completan todos. Por el contrario, los métodos OnValue... se ejecutan cuando algunos de los cambios no se han realizado. Según lo que quiera lograr, una regla de cambio podría ser más apropiada.  
@@ -177,6 +174,3 @@ namespace msft.FieldChangeSample
   }  
 }  
 ```  
-  
-
-

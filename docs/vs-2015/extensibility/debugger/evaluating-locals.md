@@ -1,27 +1,22 @@
 ---
 title: Evaluar las variables locales | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], evaluating locals
 - expression evaluation, evaluating locals
 ms.assetid: 7d1ed528-4e7a-4d8f-87b4-162440644a75
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 88b9fdd5ac8451056454b80ad0262b8aa9bf951b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ba059cc1c5546bc437c7ea83a08aa8dca0a56f98
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51759009"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117687"
 ---
 # <a name="evaluating-locals"></a>Evaluación de variables locales
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,13 +28,13 @@ ms.locfileid: "51759009"
   
  Esta funcionalidad de recuperar el valor de una variable local se encapsula en una función auxiliar que realiza las tareas siguientes:  
   
-1.  Enlaza el `IDebugField` objeto a la memoria para obtener un `IDebugObject` objeto.  
+1. Enlaza el `IDebugField` objeto a la memoria para obtener un `IDebugObject` objeto.  
   
-2.  Obtiene el valor de la memoria. Este valor se representa como una serie de bytes.  
+2. Obtiene el valor de la memoria. Este valor se representa como una serie de bytes.  
   
-3.  Da formato en el valor según el tipo de la variable local.  
+3. Da formato en el valor según el tipo de la variable local.  
   
-4.  Devuelve un objeto genérico que contiene el valor de la variable local. En C#, esto es un `object`, y en C++, se trata de un `VARIANT`.  
+4. Devuelve un objeto genérico que contiene el valor de la variable local. En C#, esto es un `object`, y en C++, se trata de un `VARIANT`.  
   
 ## <a name="managed-code"></a>Código administrado  
  Se trata de una implementación de una función que recupera el valor de una variable local en el código administrado.  
@@ -200,4 +195,3 @@ HRESULT FieldGetPrimitiveValue(
  [Implementación de ejemplo de variables locales](../../extensibility/debugger/sample-implementation-of-locals.md)   
  [Obtención de valores locales](../../extensibility/debugger/getting-local-values.md)   
  [Contexto de evaluación](../../extensibility/debugger/evaluation-context.md)
-

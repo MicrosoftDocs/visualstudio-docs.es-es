@@ -1,21 +1,20 @@
 ---
 title: Herramientas de prueba para desarrolladores
 ms.date: 05/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - unit testing, create unit tests
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 46d2d41cd337ec2cbdd1fe44bde97db39b1b764e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a1cc43bfeb66792d2d8ff5a736d957740f62c5ff
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53930172"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416219"
 ---
 # <a name="developer-testing-tools-scenarios-and-capabilities"></a>Herramientas de prueba para desarrolladores, escenarios y funciones
 
@@ -30,7 +29,7 @@ Mejore la cobertura y evite regresiones con IntelliTest. IntelliTest reduce drá
 ![Funcionamiento de IntelliTest](media/devtest-intellitest.png)
 
 * [Introducción a IntelliTest con Visual Studio](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Introduction%20to%20IntelliTest%20with%20Visual%20Studio%20Enterprise%202015.docx)
-* [IntelliTest: una prueba para controlarlo todo](https://blogs.msdn.microsoft.com/devops/2015/07/05/intellitest-one-test-to-rule-them-all/)
+* [IntelliTest: una prueba para controlarlo todo](https://devblogs.microsoft.com/devops/intellitest-one-test-to-rule-them-all/)
 * [Vídeos de IntelliTest](https://channel9.msdn.com/Series/Test-Tools-in-Visual-Studio)
 * [Introducción a IntelliTest](generate-unit-tests-for-your-code-with-intellitest.md)
 * [Manual de referencia de IntelliTest](intellitest-manual/index.md)
@@ -46,7 +45,6 @@ Tanto si elige las pruebas automatizadas de IU o pruebas genéricas de interfaz 
 * [Usar la automatización de la interfaz de usuario para probar el código](use-ui-automation-to-test-your-code.md)
 * [Comenzar a crear, modificar y mantener una prueba de UI codificada](walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
 * [Comprobación de aplicaciones para UWP con pruebas automatizadas de IU](test-uwp-app-with-coded-ui-test.md)
-* [Probar aplicaciones de SharePoint con pruebas automatizadas de UI](testing-sharepoint-2010-applications-with-coded-ui-tests.md)
 * [Introducción a las pruebas de UI codificadas con Visual Studio Enterprise (Lab)](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Introduction%20to%20Coded%20UI%20Tests%20with%20Visual%20Studio%20Enterprise%202015.docx)
 
 ## <a name="effective-unit-testing-with-visual-studio-code-coverage"></a>Pruebas unitarias eficaces con la cobertura de código de Visual Studio
@@ -79,7 +77,7 @@ Visual Studio también puede ampliarse y abre la puerta a adaptadores de pruebas
 ## <a name="see-also"></a>Vea también
 
 * [Introducción a las pruebas unitarias](getting-started-with-unit-testing.md)
-* [Acelerar la ejecución de pruebas unitarias en Team Foundation Server](https://blogs.msdn.microsoft.com/devops/2015/07/30/speeding-up-unit-test-execution-in-tfs/)
-* [Ejecución de pruebas unitarias contextuales y paralelas](https://blogs.msdn.microsoft.com/devops/2016/02/08/parallel-and-context-sensitive-test-execution-with-visual-studio-2015-update-1/)
+* [Acelerar la ejecución de pruebas unitarias en Team Foundation Server](https://devblogs.microsoft.com/devops/speeding-up-unit-test-execution-in-tfs/)
+* [Ejecución de pruebas unitarias contextuales y paralelas](https://devblogs.microsoft.com/devops/parallel-and-context-sensitive-test-execution-with-visual-studio-2015-update-1/)
 * [Pruebas unitarias, cobertura de código y análisis de clon de código con Visual Studio (Lab)](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Unit%20Testing,%20Code%20Coverage%20and%20Code%20Clone%20Analysis%20with%20Visual%20Studio%202015.docx)
 * [Escribir pruebas unitarias para C/C++](writing-unit-tests-for-c-cpp.md)

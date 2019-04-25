@@ -1,14 +1,9 @@
 ---
 title: Opciones y páginas de opciones | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Tools Options pages [Visual Studio SDK], managed package framework support
 - managed package framework, Tools Options pages support
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: e6c0e636-5ec3-450e-b395-fc4bb9d75918
 caps.latest.revision: 35
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 005aeceb328a24c8c90994b6b274dbddc6b874f8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 350f0c873a0b6692d16dcbc987db32b63f68be72
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51783284"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58997864"
 ---
 # <a name="options-and-options-pages"></a>Opciones y páginas de opciones
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -92,4 +87,3 @@ Al hacer clic en **opciones** en el **herramientas** menú se abre el **opciones
   
 > [!NOTE]
 >  El nombre canónico, mi página de cuadrícula Category.My, es el valor de la subclave de nombre de esta clave.
-

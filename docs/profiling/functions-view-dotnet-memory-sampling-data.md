@@ -7,39 +7,39 @@ helpviewer_keywords:
 ms.assetid: 5d9c6302-2ffd-430e-9535-13ce795f9f7c
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c4c689a39a606c57b6e534390ce98fd92b2e572d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b0e8c14779f9f7b3f14fab2dfc1022db0319aeb4
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53920042"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56637976"
 ---
 # <a name="functions-view---net-memory-sampling-data"></a>Vista Funciones: datos de muestreo de memoria de .NET
-La vista Funciones de los datos de generación de perfiles de asignación de memoria de .NET recopilados mediante el método de muestreo enumera las funciones que han asignado memoria durante la ejecución de generación de perfiles e informa del tamaño y número de asignaciones.  
-  
-|Columna|Descripción|  
-|------------|-----------------|  
-|**Identificador del proceso**|Identificador de proceso (PID) de la ejecución de generación de perfiles.|  
-|**Nombre de proceso**|Nombre del proceso.|  
-|**Nombre del módulo**|Nombre del módulo que contiene la función.|  
-|**Ruta de acceso del módulo**|Ruta de acceso del módulo que contiene la función.|  
-|**Archivo de código fuente**|Archivo de origen que contiene la definición de esta función.|  
-|**Nombre de la función**|El nombre completo de la función.|  
-|**Número de línea de la función**|Número de línea del inicio de esta función en el archivo de origen.|  
-|**Dirección de la función**|Dirección de la función.|  
-|**Asignaciones inclusivas**|Número total de objetos asignados en esta función y sus funciones secundarias.|  
-|**Porcentaje de asignaciones inclusivas**|Porcentaje de todos los objetos que se asignaron durante la ejecución de la generación de perfiles que eran asignaciones inclusivas de esta función.|  
-|**Asignaciones exclusivas**|Número de objetos creados cuando la función se estaba ejecutando directamente en la parte superior de la pila de llamadas. Este número no incluye los objetos creados en funciones secundarias.|  
-|**Porcentaje de asignaciones exclusivas**|Porcentaje de todos los objetos que se han asignado durante la ejecución de la generación de perfiles que eran asignaciones exclusivas de esta función.|  
-|**Porcentaje de bytes inclusivos**|Número de bytes de memoria asignados por esta función y sus funciones secundarias.|  
-|**Porcentaje de bytes inclusivos**|Porcentaje de todos los bytes de memoria que se asignaron durante la ejecución de la generación de perfiles que eran bytes inclusivos de esta función.|  
-|**Bytes exclusivos**|Número de bytes de memoria asignados por esta función, pero no por sus funciones secundarias.|  
-|**Porcentaje de bytes exclusivos**|Porcentaje de todos los bytes de memoria que se asignaron durante la ejecución de la generación de perfiles que eran bytes exclusivos de esta función.|  
-  
-## <a name="see-also"></a>Vea también  
- [Vista Funciones: instrumentación](../profiling/functions-view-dotnet-memory-instrumentation-data.md)   
- [Vista Funciones](../profiling/functions-view-sampling-data.md)   
- [Vista Funciones](../profiling/functions-view-instrumentation-data.md)
+La vista Funciones de los datos de generación de perfiles de asignación de memoria de .NET recopilados mediante el método de muestreo enumera las funciones que han asignado memoria durante la ejecución de generación de perfiles e informa del tamaño y número de asignaciones.
+
+|Columna|Descripción|
+|------------|-----------------|
+|**Identificador del proceso**|Identificador de proceso (PID) de la ejecución de generación de perfiles.|
+|**Nombre de proceso**|Nombre del proceso.|
+|**Nombre del módulo**|Nombre del módulo que contiene la función.|
+|**Ruta de acceso del módulo**|Ruta de acceso del módulo que contiene la función.|
+|**Archivo de código fuente**|Archivo de origen que contiene la definición de esta función.|
+|**Nombre de la función**|El nombre completo de la función.|
+|**Número de línea de la función**|Número de línea del inicio de esta función en el archivo de origen.|
+|**Dirección de la función**|Dirección de la función.|
+|**Asignaciones inclusivas**|Número total de objetos asignados en esta función y sus funciones secundarias.|
+|**Porcentaje de asignaciones inclusivas**|Porcentaje de todos los objetos que se asignaron durante la ejecución de la generación de perfiles que eran asignaciones inclusivas de esta función.|
+|**Asignaciones exclusivas**|Número de objetos creados cuando la función se estaba ejecutando directamente en la parte superior de la pila de llamadas. Este número no incluye los objetos creados en funciones secundarias.|
+|**Porcentaje de asignaciones exclusivas**|Porcentaje de todos los objetos que se han asignado durante la ejecución de la generación de perfiles que eran asignaciones exclusivas de esta función.|
+|**Porcentaje de bytes inclusivos**|Número de bytes de memoria asignados por esta función y sus funciones secundarias.|
+|**Porcentaje de bytes inclusivos**|Porcentaje de todos los bytes de memoria que se asignaron durante la ejecución de la generación de perfiles que eran bytes inclusivos de esta función.|
+|**Bytes exclusivos**|Número de bytes de memoria asignados por esta función, pero no por sus funciones secundarias.|
+|**Porcentaje de bytes exclusivos**|Porcentaje de todos los bytes de memoria que se asignaron durante la ejecución de la generación de perfiles que eran bytes exclusivos de esta función.|
+
+## <a name="see-also"></a>Vea también
+- [Vista Funciones: instrumentación](../profiling/functions-view-dotnet-memory-instrumentation-data.md)
+- [Vista Funciones](../profiling/functions-view-sampling-data.md)
+- [Vista Funciones](../profiling/functions-view-instrumentation-data.md)

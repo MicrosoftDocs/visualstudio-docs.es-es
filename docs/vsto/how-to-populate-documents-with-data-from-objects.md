@@ -10,15 +10,15 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], adding to documents
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5333b3d6f9ba107bde21bbc23566940ee5dbf80d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7cb221715ef1c2a50bc60e1725db3b1d8721f165
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53960620"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083036"
 ---
 # <a name="how-to-populate-documents-with-data-from-objects"></a>Procedimiento Rellenar documentos con datos de objetos
 
@@ -28,11 +28,11 @@ El acceso a los datos de un objeto de datos funciona de la misma manera en los p
 
 Para rellenar el documento con datos de un objeto, es necesario completar tres pasos básicos:
 
--   Agregar un control al documento que se puede enlazar a datos.
+- Agregar un control al documento que se puede enlazar a datos.
 
--   Agregar un objeto de datos al documento.
+- Agregar un objeto de datos al documento.
 
--   Conectar el objeto de datos a BindingSource.
+- Conectar el objeto de datos a BindingSource.
 
 ## <a name="to-add-a-data-object"></a>Para agregar un objeto de datos
 
@@ -48,23 +48,23 @@ En proyectos de complemento de VSTO, se crean controles y se enlazan en tiempo d
 
 Para conectar el objeto de datos a BindingSource:
 
-1.  Arrastre el campo de datos que quiera desde la ventana **Orígenes de datos** al documento. Así se crea un control automáticamente.
+1. Arrastre el campo de datos que quiera desde la ventana **Orígenes de datos** al documento. Así se crea un control automáticamente.
 
-2.  En el código, cree una instancia del tipo del objeto que eligió para el origen de datos.
+2. En el código, cree una instancia del tipo del objeto que eligió para el origen de datos.
 
-3.  Asigne la instancia a la propiedad <xref:System.Windows.Forms.BindingSource.DataSource%2A> de la clase <xref:System.Windows.Forms.BindingSource>.
+3. Asigne la instancia a la propiedad <xref:System.Windows.Forms.BindingSource.DataSource%2A> de la clase <xref:System.Windows.Forms.BindingSource>.
 
 ### <a name="application-level-projects"></a>Proyectos de nivel de aplicación
 
 Para conectar el objeto de datos a BindingSource:
 
-1.  En el código, cree una instancia del tipo del objeto que está asociado con el origen de datos.
+1. En el código, cree una instancia del tipo del objeto que está asociado con el origen de datos.
 
-2.  Cree una instancia de <xref:System.Windows.Forms.BindingSource>.
+2. Cree una instancia de <xref:System.Windows.Forms.BindingSource>.
 
-3.  Asigne la instancia del origen de datos a la propiedad <xref:System.Windows.Forms.BindingSource.DataSource%2A> de la clase <xref:System.Windows.Forms.BindingSource>.
+3. Asigne la instancia del origen de datos a la propiedad <xref:System.Windows.Forms.BindingSource.DataSource%2A> de la clase <xref:System.Windows.Forms.BindingSource>.
 
-4.  Agregue el origen de datos como un enlace de datos al control.
+4. Agregue el origen de datos como un enlace de datos al control.
 
 ## <a name="see-also"></a>Vea también
 

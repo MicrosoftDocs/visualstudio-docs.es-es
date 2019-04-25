@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Obtenga información sobre la ventaja Visual Studio App Center incluida en las suscripciones de Visual Studio.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: fd90f301abae9f0d85509a46255317282f284b9e
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: 30953834e36cb88e79a800e0356ac59189165aee
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380107"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56843571"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio App Center en suscripciones de Visual Studio
 
@@ -63,7 +61,7 @@ Es sencillo empezar a utilizar Visual Studio App Center.
 ## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
 ### <a name="q--i-get-an-error-that-my-browser-is-unsupported--whats-wrong"></a>P:  Aparece un error que indica que el explorador no es compatible.  ¿Qué ocurre?
-A:  App Center requiere funcionalidades recientes que es posible que no proporcionen algunos exploradores más antiguos.  Si el explorador no es compatible, siga estos pasos:
+R:  App Center requiere funcionalidades recientes que es posible que no proporcionen algunos exploradores más antiguos.  Si el explorador no es compatible, siga estos pasos:
 1.  Abra un explorador diferente, como Microsoft Edge o las versiones más recientes de Google Chrome, Firefox o Safari.
 2.  Conéctese a Visual Studio [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) e inicie sesión.
 3.  Ahora haga clic en el vínculo **Comience ahora** del icono de Visual Studio App Center.

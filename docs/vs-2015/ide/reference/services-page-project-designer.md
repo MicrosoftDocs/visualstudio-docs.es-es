@@ -1,14 +1,9 @@
 ---
 title: Página Servicios, Diseñador de proyectos | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesServices
 helpviewer_keywords:
@@ -18,18 +13,17 @@ ms.assetid: 6dd9e0fa-acba-4d7d-b081-705b0fc86ff5
 caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 3a968283a8836c9a31c1d7f1e6552c8302d87140
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 8b089cd468b9b4a69a22a3be31059be51e05ee24
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49243703"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648359"
 ---
 # <a name="services-page-project-designer"></a>Página Servicios, Diseñador de proyectos
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Los servicios de aplicación cliente proporcionan acceso simplificado al inicio de sesión, los roles y los servicios de perfiles de [!INCLUDE[ajax_current_short](../../includes/ajax-current-short-md.md)] desde aplicaciones de Windows Forms y Windows Presentation Foundation (WPF). Puede usar la página **Servicios** del **Diseñador de proyectos** para habilitar y configurar servicios de aplicación cliente para el proyecto.  
   
  Con los servicios de aplicación cliente, puede usar un servidor centralizado para autenticar a los usuarios, determinar los roles asignados a cada usuario y almacenar ajustes de aplicación por usuario para compartirlos a través de la red. Para más información, vea [Servicios de aplicación cliente](http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e).  
@@ -56,12 +50,12 @@ Los servicios de aplicación cliente proporcionan acceso simplificado al inicio 
  Indica que el proveedor de autenticación va a usar la autenticación basada en Windows, es decir, la identidad proporcionada por el sistema operativo Windows.  
   
  **Usar autenticación de formularios**  
- Indica que el proveedor de autenticación va a usar la autenticación de formularios. Esto significa que la aplicación debe proporcionar una interfaz de usuario para el inicio de sesión. Para más información, vea [Cómo: Implementar el inicio de sesión de usuarios con servicios de aplicaciones cliente](http://msdn.microsoft.com/library/5431a671-eb02-4e18-a651-24764fccec9a).  
+ Indica que el proveedor de autenticación va a usar la autenticación de formularios. Esto significa que la aplicación debe proporcionar una interfaz de usuario para el inicio de sesión. Para obtener más información, vea [Cómo: Implementar el inicio de sesión de usuarios con servicios de aplicaciones cliente](http://msdn.microsoft.com/library/5431a671-eb02-4e18-a651-24764fccec9a).  
   
  **Ubicación del servicio de autenticación**  
  Se usa únicamente con la autenticación de formularios. Especifica la ubicación del servicio de autenticación.  
   
- **Opcional: proveedor de credenciales**  
+ **Opcional: Proveedor de credenciales**  
  Se usa únicamente con la autenticación de formularios. Indica la implementación <xref:System.Web.ClientServices.Providers.IClientFormsAuthenticationCredentialsProvider> que el servicio de autenticación usará para mostrar un cuadro de diálogo de inicio de sesión cuando su aplicación llame al método `static`<xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName> y pase cadenas vacías o `null` a los parámetros. Si deja este cuadro en blanco, debe pasar un nombre de usuario válido y una contraseña al método <xref:System.Web.Security.Membership.ValidateUser%2A?displayProperty=fullName>. Tiene que especificar el proveedor de credenciales como un nombre de tipo calificado con el ensamblado. Para obtener más información, consulte <xref:System.Type.AssemblyQualifiedName%2A?displayProperty=fullName> y [Nombres del ensamblado](http://msdn.microsoft.com/library/8f8c2c90-f15d-400e-87e7-a757e4f04d0e). En su forma más simple, un nombre de tipo calificado con el ensamblado es similar al ejemplo siguiente: `MyNamespace.MyLoginClass, MyAssembly`  
   
  **Ubicación del servicio de roles**  
@@ -79,7 +73,4 @@ Los servicios de aplicación cliente proporcionan acceso simplificado al inicio 
  [Cómo: Configurar servicios de aplicaciones cliente](http://msdn.microsoft.com/library/34a8688a-a32c-40d3-94be-c8e610c6a4e8)   
  [Página Compilación, Diseñador de proyectos (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md)   
  [Compilar (Página, Diseñador de proyectos) (C#)](../../ide/reference/build-page-project-designer-csharp.md)   
- [Introducción al Diseñador de proyectos](http://msdn.microsoft.com/en-us/898dd854-c98d-430c-ba1b-a913ce3c73d7)
-
-
-
+ [Introducción al Diseñador de proyectos](http://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7)

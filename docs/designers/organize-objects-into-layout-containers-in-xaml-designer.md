@@ -1,20 +1,19 @@
 ---
 title: Organizar objetos en contenedores de diseño en el Diseñador XAML
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 29c80c38-0fa3-48d6-b3a8-3b864f482e44
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: d5c56dc477b3c788f8d5ebfee4809067c77e08e8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1937ab28af9b4c5c09bb12e2938a2aaa907fe8e6
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53829314"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55948243"
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>Organizar objetos en contenedores de diseño en el Diseñador XAML
 
@@ -30,19 +29,7 @@ Los paneles de diseño le ayudarán a organizar los objetos en una página, pero
 
 Para empezar su página, elija uno de estos paneles de diseño. La página puede tener más de uno. Por ejemplo, puede comenzar con un panel de diseño de **Cuadrícula** y, después, agregar un elemento **StackPanel** a un área de la **Cuadrícula**; así, podrá organizar los controles verticalmente en ese elemento.
 
-Los siguientes paneles de diseño son los usados más habitualmente, pero hay otros. Puede encontrarlos todos en el panel **Activos**.
-
-- [Grid](#Grid)
-
-- [UniformGrid](#UniformGrid)
-
-- [Canvas](#Canvas)
-
-- [StackPanel](#stackpanel)
-
-- [WrapPanel](#wrappanel)
-
-- [DockPanel](#dockpanel)
+Los siguientes paneles de diseño son los usados más habitualmente, pero hay otros. Puede encontrarlos todos en **Cuadro de herramientas** en Visual Studio o en el panel **Activos** en Blend para Visual Studio.
 
 ### <a name="grid"></a>Cuadrícula
 
@@ -92,15 +79,7 @@ Organice los objetos para que permanezcan, o se *acoplen*, en uno de los bordes 
 
 También puede agregar los objetos a controles de diseño. No tienen tantas características como un panel de diseño, pero pueden resultar útiles en determinados escenarios.
 
-Los siguientes controles de diseño son los más populares, pero hay otros. Puede encontrarlos todos en el panel **Activos**.
-
-- [Border](#Border)
-
-- [Popup](#Popup)
-
-- [ScrollViewer](#scrollviewer)
-
-- [Viewbox](#viewbox)
+Los siguientes controles de diseño son los más populares, pero hay otros. Puede encontrarlos todos en **Cuadro de herramientas** en Visual Studio o en el panel **Activos** en Blend para Visual Studio.
 
 ### <a name="border"></a>Borde
 

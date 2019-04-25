@@ -1,20 +1,19 @@
 ---
 title: 'Paso 5: Agregar controles al formulario'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: dc2746f4-0b5c-4674-9ef7-f40f94150f52
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bd07924f98c969340fbe2c7ccb88f4227a61026b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3da5294b085354d85e71445a30395072f091ae23
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968435"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55954730"
 ---
 # <a name="step-5-add-controls-to-your-form"></a>Paso 5: Agregar controles al formulario
 En este paso, se agregan controles, como un control <xref:System.Windows.Forms.PictureBox> y un control <xref:System.Windows.Forms.CheckBox>, al formulario. Luego puede agregar controles <xref:System.Windows.Forms.Button> al formulario.

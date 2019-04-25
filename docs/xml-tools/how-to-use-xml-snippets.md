@@ -1,24 +1,23 @@
 ---
 title: Cómo usar fragmentos XML
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 3a27375b-81cc-48f6-a884-e1cb8c4f78f5
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 514e3efe56c18288a596d4414512064ed4dcc157
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e4a56249c0a87b2516dc233818208f7c7c4b696e
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53940737"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526222"
 ---
-# <a name="how-to-use-xml-snippets"></a>Procedimiento Utilizar fragmentos XML
+# <a name="how-to-use-xml-snippets"></a>Filtrar Utilizar fragmentos XML
 
-Puede invocar fragmentos XML mediante los dos siguientes comandos del menú contextual del Editor XML. El **Insertar fragmento de código** comando inserta el fragmento XML en la posición del cursor. El **rodear con** comando encapsula el fragmento XML alrededor del texto seleccionado. Cada fragmento XML tiene designados tipos de fragmentos. Los tipos de fragmentos determinan si el fragmento de código está disponible con la **Insertar fragmento de código** comando, el **rodear con** comando, o ambos.
+Puede invocar fragmentos XML mediante el uso de los dos comandos siguientes en el menú contextual del editor XML. El **Insertar fragmento de código** comando inserta el fragmento XML en la posición del cursor. El **rodear con** comando encapsula el fragmento XML alrededor del texto seleccionado. Cada fragmento XML tiene designados tipos de fragmentos. Los tipos de fragmentos determinan si el fragmento de código está disponible con la **Insertar fragmento de código** comando, el **rodear con** comando, o ambos.
 
 Una vez que el fragmento XML se ha agregado al editor, todos los campos editables del fragmento se resaltan en amarillo y el cursor se coloca en el primer campo editable.
 
@@ -81,7 +80,7 @@ Los procedimientos siguientes describen cómo tener acceso a la **rodear con** c
 
 ### <a name="to-use-surround-with-from-the-context-menu"></a>Para usar rodear con en el menú contextual
 
-1. Seleccione el texto que se va a rodear en el Editor XML.
+1. Seleccione el texto que desee incorporar en el editor XML.
 
 2. Haga clic en y seleccione **rodear con**.
 
@@ -91,7 +90,7 @@ Los procedimientos siguientes describen cómo tener acceso a la **rodear con** c
 
 ### <a name="to-use-surround-with-from-the-intellisense-menu"></a>Para usar rodear con en el menú de IntelliSense
 
-1. Seleccione el texto que se va a rodear en el Editor XML.
+1. Seleccione el texto que desee incorporar en el editor XML.
 
 2. Desde el **editar** menú, elija **IntelliSense**y, a continuación, seleccione **rodear con**.
 

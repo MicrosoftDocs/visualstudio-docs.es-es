@@ -2,22 +2,21 @@
 title: Paso 4 del tutorial de Python en Visual Studio, Depuración
 titleSuffix: ''
 description: Paso 4 de un tutorial básico sobre las funcionalidades de Python en Visual Studio, que trata cómo ejecutar código de Python en el depurador.
-ms.date: 10/29/2018
-ms.prod: visual-studio-dev15
+ms.date: 01/28/2019
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7299765435cae99afedb176f0b8613d7b504b09f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3f6464986cb94ffa3ab3cc9264ab818112046ea9
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53931546"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366801"
 ---
 # <a name="step-4-run-code-in-the-debugger"></a>Paso 4: Ejecución de código en el depurador
 
@@ -48,12 +47,9 @@ Además de administrar proyectos, ofrecer una experiencia de edición enriquecid
 1. Compruebe que el código funciona correctamente presionando **F5** o seleccionando el comando de menú **Depurar** > **Iniciar depuración**. Este comando ejecuta el código en el depurador, pero dado que aún no ha hecho nada para pausar el programa mientras se está ejecutando, solo imprime un patrón ondulado para algunas iteraciones. Presione cualquier tecla para cerrar la ventana de salida.
 
     > [!Tip]
-    > Para cerrar la ventana de salida automáticamente cuando se completa el programa, reemplace la llamada `main()` con el código siguiente:
+    > Para cerrar la ventana de salida automáticamente cuando se complete el programa, seleccione el comando de menú **Herramientas** > **Opciones**, expanda el nodo **Python**, seleccione **Depuración** y, después, desactive la opción **Esperar la entrada cuando el proceso se cierre normalmente**:
     >
-    > ```python
-    > if __name__ == "__main__":
-    >     sys.exit(int(main() or 0))
-    > ```
+    > ![Opción de depuración de Python para cerrar la ventana de salida cuando el programa se cierre normalmente](media/vs-getting-started-python-22-debugging5.png)
 
 1. Establezca un punto de interrupción en la instrucción `for` haciendo clic una vez en el margen gris junto a esa línea o colocando el operador exponencial en dicha línea y usando el comando **Depurar** > **Alternar puntos de interrupción** (**F9**). Aparecerá un punto rojo en el margen gris para indicar el punto de interrupción (como indica la flecha a continuación):
 
@@ -105,7 +101,7 @@ Además de administrar proyectos, ofrecer una experiencia de edición enriquecid
 ## <a name="next-step"></a>Paso siguiente
 
 > [!div class="nextstepaction"]
-> [Instalar paquetes en un entorno de Python](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)
+> [Instalación de paquetes en el entorno de Python](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)
 
 ## <a name="go-deeper"></a>Profundizar un poco más
 

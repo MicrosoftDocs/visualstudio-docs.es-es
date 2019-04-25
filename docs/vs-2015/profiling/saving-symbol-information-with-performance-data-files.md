@@ -1,14 +1,9 @@
 ---
 title: Guardar información de símbolos con archivos de datos de rendimiento | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - packsymbols, in profiling tools reports
 - profiling tools, packsymbols
@@ -16,13 +11,13 @@ ms.assetid: 8b802505-e94d-4ee0-83e4-fdd790a332c1
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: dbe05d345e54a900fcdd5568aa898b80417bb68d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e9d2e8b0414746523d0f76e8266f6463d9c05574
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51761263"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098899"
 ---
 # <a name="saving-symbol-information-with-performance-data-files"></a>Guardar información de símbolos con archivos de datos de rendimiento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,9 +51,9 @@ Si está utilizando el entorno de desarrollo integrado (IDE) de [!INCLUDE[vsprvs
   
 - Asegúrese de que ha establecido la ruta de acceso de la memoria caché de símbolos de Windows. Realice una de las siguientes acciones para establecer la ruta de acceso a la memoria caché de símbolos:  
   
-  -   Establezca la opción Depurador->Símbolos en el IDE de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para la ruta de acceso correcta.  
+  - Establezca la opción Depurador->Símbolos en el IDE de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para la ruta de acceso correcta.  
   
-  -   Agregue la opción -symbolpath a la línea de comandos de VSPerfReport para incluir sus símbolos.  
+  - Agregue la opción -symbolpath a la línea de comandos de VSPerfReport para incluir sus símbolos.  
   
 - Si no ve los símbolos en [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], asegúrese de que el servidor de símbolos está configurado correctamente para el servidor ASP.  
   
@@ -71,8 +66,5 @@ Si está utilizando el entorno de desarrollo integrado (IDE) de [!INCLUDE[vsprvs
   
 ## <a name="see-also"></a>Vea también  
  [Guardar y exportar datos de herramientas de rendimiento](../profiling/saving-and-exporting-performance-tools-data.md)   
- [Cómo: Hacer referencia a información de símbolos de Windows](../profiling/how-to-reference-windows-symbol-information.md)   
+ [Cómo: Información de símbolos de Windows de referencia](../profiling/how-to-reference-windows-symbol-information.md)   
  [VSPerfReport](../profiling/vsperfreport.md)
-
-
-

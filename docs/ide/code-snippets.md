@@ -1,7 +1,6 @@
 ---
 title: Fragmentos de código
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.ExpansionManagerImport
@@ -11,19 +10,19 @@ helpviewer_keywords:
 - code snippets
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: c539e2a20f7fa32ccba86a56831c71b17fdbefa5
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: 98dadaed75cf16ae6ae35da9d6589355a63bd35c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54269419"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55908457"
 ---
 # <a name="code-snippets"></a>Fragmentos de código
 

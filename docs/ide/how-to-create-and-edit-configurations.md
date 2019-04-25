@@ -1,7 +1,6 @@
 ---
-title: 'Cómo: Crear y editar configuraciones'
+title: Procedimiento Creación y edición de configuraciones
 ms.date: 06/21/2017
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,17 +16,17 @@ helpviewer_keywords:
 ms.assetid: 19be121c-148e-4ece-bbfc-d20b08cfc3f7
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d3f6b271eb6b9b663e30953fa597fb7d8cec6ac
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.openlocfilehash: f8dffcc3bd007f27ba9912f909990a206ec6458a
+ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51348531"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "58268642"
 ---
-# <a name="how-to-create-and-edit-configurations"></a>Cómo: Crear y editar configuraciones
+# <a name="how-to-create-and-edit-configurations"></a>Procedimiento Creación y edición de configuraciones
 
 Se pueden crear configuraciones de compilación para una solución. Por ejemplo, se puede configurar una compilación de depuración que los evaluadores pueden utilizar para buscar y corregir problemas, y se pueden configurar diferentes tipos de compilaciones que se pueden distribuir a distintos clientes.
 
@@ -47,17 +46,13 @@ En el cuadro de diálogo **Administrador de configuración**, puede usar la list
 
  Después de establecer las configuraciones deseadas, puede establecer las propiedades del proyecto adecuadas para esas configuraciones.
 
-### <a name="to-set-properties-based-on-configurations"></a>Para establecer propiedades basadas en configuraciones
+### <a name="set-properties-based-on-configurations"></a>Establecimiento de propiedades en función de configuraciones
 
--   En el **Explorador de soluciones**, abra el menú contextual de un proyecto y, después, pulse **Propiedades**.
+Para establecer propiedades en función de configuraciones, abra el menú contextual de un proyecto en el **Explorador de soluciones** y luego elija **Propiedades**. Puede establecer propiedades para las configuraciones. Por ejemplo, para una configuración de Release, puede especificar que se optimice el código cuando se compile la solución, y para una configuración de Debug, puede especificar que se incluya el símbolo de compilación condicional `DEBUG`.
 
-     Se abre la ventana **Páginas de propiedades**.
+Para obtener más información sobre la configuración de la página propiedades, vea [Administrar propiedades de soluciones y proyectos](../ide/managing-project-and-solution-properties.md).
 
-     Puede establecer propiedades para las configuraciones. Por ejemplo, para una configuración de Release, puede especificar que se optimice el código cuando se compile la solución, y para una configuración de Debug, puede especificar que se incluya el símbolo de compilación condicional `DEBUG`. Para obtener más información sobre la configuración de la página propiedades, vea [Administrar propiedades de soluciones y proyectos](../ide/managing-project-and-solution-properties.md).
-
-## <a name="create-and-modify-project-configurations"></a>Crear y modificar configuraciones de proyecto
-
-### <a name="to-create-a-project-configuration"></a>Para crear una configuración de proyecto
+## <a name="create-a-project-configuration"></a>Creación de una configuración de proyecto
 
 1.  Abra el cuadro de diálogo **Administrador de configuración**.
 
@@ -73,7 +68,7 @@ En el cuadro de diálogo **Administrador de configuración**, puede usar la list
 
 6.  Para crear una configuración para toda la solución al mismo tiempo, active la casilla **Crear nueva configuración de solución**.
 
-### <a name="to-rename-a-project-configuration"></a>Para cambiar el nombre de una configuración de proyecto
+## <a name="rename-a-project-configuration"></a>Cambio del nombre de una configuración de proyecto
 
 1.  Abra el cuadro de diálogo **Administrador de configuración**.
 

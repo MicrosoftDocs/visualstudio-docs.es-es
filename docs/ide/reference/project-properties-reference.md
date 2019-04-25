@@ -1,7 +1,6 @@
 ---
 title: Referencia de propiedades del proyecto
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - user interface [Visual Studio], projects
@@ -9,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: eec49aec-5474-48a7-889d-709045b9a475
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1cfbe0c602264da31b89add3e2e6ca1124f62a52
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d998eee1965b9b28c1b8fde26c9232770d69f751
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53891649"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55955458"
 ---
 # <a name="project-properties-reference"></a>Referencia de propiedades del proyecto
 Obtenga más información sobre cómo configurar y personalizar propiedades del proyecto.

@@ -7,18 +7,18 @@ ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 26A0DE31-2FBF-4E1B-99FB-083111AA1680
-ms.openlocfilehash: d42103d17b64ee9b3fb2a0660017824490655808
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 3775e3fc4f391ea075a939a877fdab23f1eec1d2
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294024"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857507"
 ---
 # <a name="creating-and-editing-a-custom-editorconfig-file"></a>Crear y editar un archivo EditorConfig personalizado
 
 En Visual Studio para Mac, puede agregar un archivo [EditorConfig](http://editorconfig.org/) al proyecto o la solución para aplicar estilos de codificación coherentes para todos los que trabajen en el código base. La configuración declarada en el archivo EditorConfig tiene prioridad sobre la configuración global del editor de texto de Visual Studio para Mac. Usar un archivo EditorConfig dentro del proyecto o código base le permite establecer el estilo de codificación, las preferencias y las advertencias para el proyecto. Dado que el archivo forma parte del código base, es más fácil que todos los usuarios respeten las prácticas de codificación de un proyecto, independientemente del editor de código o IDE que usen.
 
-Los archivos [EditorConfig](http://editorconfig.org/) son compatibles con muchos editores de código e IDE, incluido Visual Studio 2017.
+Los archivos [EditorConfig](http://editorconfig.org/) son compatibles con muchos editores de código y entornos de desarrollo integrado, incluido Visual Studio.
 
 ## <a name="supported-settings"></a>Configuración admitida
 
@@ -150,4 +150,4 @@ root = true
 
 ## <a name="see-also"></a>Vea también
 
-- [Crear opciones de configuración del editor personalizadas y portátiles con EditorConfig (Visual Studio en Windows)](/visualstudio/ide/create-portable-custom-editor-options)
+- [Create custom editor settings with EditorConfig (Visual Studio on Windows) (Creación de opciones de configuración del editor personalizadas con EditorConfig [Visual Studio en Windows])](/visualstudio/ide/create-portable-custom-editor-options)

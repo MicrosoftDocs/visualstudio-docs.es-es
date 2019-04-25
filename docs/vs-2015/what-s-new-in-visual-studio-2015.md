@@ -3,10 +3,7 @@ title: Novedades de Visual Studio 2015 | Microsoft Docs
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - VS.StartPage.WhatsNew
 helpviewer_keywords:
@@ -16,13 +13,13 @@ ms.assetid: 7307e180-ba28-4774-8a43-cbb980085a71
 caps.latest.revision: 364
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 16c9a490970d6c41a5661f0755f09731ce2fba7e
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
-ms.translationtype: MTE95
+manager: jillfra
+ms.openlocfilehash: bd06e1b6eb74a6a356c085bdade2733e29d54023
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53740278"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041840"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Novedades de Visual Studio 2015
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -59,7 +56,7 @@ Para obtener más información acerca de las numerosas mejoras y nuevas caracter
  Visual Studio Tools para Apache Cordova es el resultado de una estrecha colaboración entre Microsoft y la comunidad Apache Cordova de código abierto. Las herramientas permiten el desarrollo móvil entre plataformas usando HTML, CSS y JavaScript (o Typescript). Puede dirigirse a Android, iOS y Windows con un solo código base y disfrutar de la riqueza del IDE de Visual Studio, que incluye JavaScript IntelliSense, el Explorador DOM, la Consola JavaScript, puntos de interrupción, inspecciones, variables locales, Solo mi código y más.  Con Visual Studio Tools para Apache Cordova, sus aplicaciones tienen acceso a capacidades de dispositivos nativas en todas las plataformas a través de complementos que ofrecen una API común de JavaScript. Para empezar, vea [empezar a trabajar con Visual Studio Tools para Apache Cordova](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42).
 
 ### <a name="cross-platform-mobile-games-in-c-with-unity"></a>Juegos móviles entre plataformas en C# con Unity
- Unity es una plataforma muy usada en el desarrollo de juegos multiplataforma en 2D y 3D. Puede escribir un juego en C# y ejecutarlo de forma nativa en Android, iOS, Windows Phone y muchas otras plataformas. Visual Studio Tools para Unity es una extensión que integra Unity con el IDE de Visual Studio. Con esta extensión, dispone de todas las funciones del IDE y el depurador de Visual Studio, además de las funciones de productividad diseñadas para desarrolladores de Unity. Visual Studio Tools para Unity 2.0 Preview 2 agrega compatibilidad con Visual Studio 2015, además de una serie de características nuevas, como, por ejemplo, una mejor visualización de los objetos en las ventanas Inspección y Variables locales. Microsoft ha adquirido hace poco SyntaxTree, los creadores de Visual Studio Tools para Unity. Para descargar Visual Studio Tools para Unity 2.0 Preview 2 y para obtener más información sobre Visual Studio Tools para Unity, vea [Visual Studio Tools para Unity 2.0](http://Aka.ms/vstu).
+ Unity es una plataforma muy usada en el desarrollo de juegos multiplataforma en 2D y 3D. Puede escribir un juego en C# y ejecutarlo de forma nativa en Android, iOS, Windows Phone y muchas otras plataformas. Visual Studio Tools para Unity es una extensión que integra Unity con el IDE de Visual Studio. Con esta extensión, dispone de todas las funciones del IDE y el depurador de Visual Studio, además de las funciones de productividad diseñadas para desarrolladores de Unity. Visual Studio Tools para Unity 2.0 Preview 2 agrega compatibilidad con Visual Studio 2015, además de una serie de características nuevas, como, por ejemplo, una mejor visualización de los objetos en las ventanas Inspección y Variables locales. Microsoft ha adquirido hace poco SyntaxTree, los creadores de Visual Studio Tools para Unity. Para descargar Visual Studio Tools para Unity 2.0 Preview 2 y para obtener más información sobre Visual Studio Tools para Unity, vea [Visual Studio Tools para Unity 2.0](https://aka.ms/vstu).
 
 ### <a name="cross-platform-apps-and-libraries-for-native-c"></a>Aplicaciones y bibliotecas multiplataforma para C++ nativo
  C++ es un lenguaje disponible de forma nativa en la mayoría de dispositivos móviles. Puede usarlo para escribir bibliotecas de código compartido multiplataforma que se pueden compilar y destinar a varias plataformas móviles. Incluso puede crear aplicaciones móviles completas en C++. Visual C++ contiene todas las herramientas para editar, compilar, implementar y depurar el código multiplataforma. Además de las plantillas para aplicaciones de Windows, puede crear proyectos a partir de plantillas de aplicaciones Android Native Activity, aplicaciones de iOS o proyectos de biblioteca de código compartido multiplataforma, entre las que se incluyen las aplicaciones híbridas de Xamarin. Gracias a su especificidad de plataforma, la característica Intellisense le permite explorar las API y generar el código correspondiente para Android, iOS o Windows. Puede configurar la compilación para las plataformas nativas x86 o ARM. Para la realización de pruebas, implemente el código en un simulador de iOS, en dispositivos iOS de un Mac conectado a la red, en dispositivos Android con conexión directa o use el emulador de Microsoft Visual Studio para Android. Puede establecer puntos de interrupción, ver las variables y la pila, y revisar el código de C++ en el depurador de Visual Studio. El código se puede compartir entre varias plataformas de aplicación (excepto el más específico), y con una única solución en Visual Studio se puede compilar para todas esas plataformas.
@@ -126,25 +123,24 @@ Para obtener más información acerca de las numerosas mejoras y nuevas caracter
 ## <a name="cross-platform-debugging-support"></a>Compatibilidad con la depuración entre plataformas
  Puede usar Visual Studio para crear y depurar aplicaciones móviles nativas que se ejecutan en dispositivos Windows, iOS y Android. Use el [Emulador de Visual Studio para Android](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx), o conecte un dispositivo y depure el código directamente en Visual Studio.
 
--   **JavaScript / Cordova**. Use [Visual Studio Tools para Apache Cordova](http://msdn.microsoft.com/library/dn879821\(v=vs.140\).aspx) para compilar aplicaciones nativas para Windows, iOS y Android con JavaScript.
+- **JavaScript / Cordova**. Use [Visual Studio Tools para Apache Cordova](http://msdn.microsoft.com/library/dn879821\(v=vs.140\).aspx) para compilar aplicaciones nativas para Windows, iOS y Android con JavaScript.
 
      [Depurar la aplicación](http://msdn.microsoft.com/library/c2a4a1d4-a4e8-47ec-811f-ad207c54f4d1) en MSDN Library es una visión detallada de la compatibilidad con Cordova de depuración de Visual Studio.
 
--   **C# / Xamarin**. Use [Xamarin](http://msdn.microsoft.com/library/dn879698\(v=vs.140\).aspx) para compilar aplicaciones nativas para Windows, iOS y Android en Visual Studio con C#.
+- **C# / Xamarin**. Use [Xamarin](http://msdn.microsoft.com/library/dn879698\(v=vs.140\).aspx) para compilar aplicaciones nativas para Windows, iOS y Android en Visual Studio con C#.
 
      [Depuración](http://developer.xamarin.com/guides/ios/deployment,_testing,_and_metrics/debugging_in_xamarin_ios/) (iOS) y [Depurar en dispositivo](http://developer.xamarin.com/guides/android/deployment,_testing,_and_metrics/debugging_with_xamarin_android/) en las [Guías para desarrolladores de Xamarin](http://developer.xamarin.com/guides) describen la experiencia de depuración.
 
--   **C++ / Android**. Use las plantillas de [Visual C++ para el desarrollo móvil multiplataforma](http://msdnstage.redmond.corp.microsoft.com/library/dn872463\(v=vs.140\).aspx) junto con herramientas de terceros como el [NDK de Android](https://developer.android.com/tools/sdk/ndk/index.html) para crear aplicaciones nativas para Windows y Android.
+- **C++ / Android**. Use las plantillas de [Visual C++ para el desarrollo móvil multiplataforma](cross-platform/visual-cpp-for-cross-platform-mobile-development.md) junto con herramientas de terceros como el [NDK de Android](https://developer.android.com/tools/sdk/ndk/index.html) para crear aplicaciones nativas para Windows y Android.
 
 ## <a name="debugging-and-diagnostics"></a>Depuración y diagnósticos
- Para obtener información sobre las novedades en depuración, vea [What’s New for the Debugger in Visual Studio 2015](/visualstudio/debugger/what-s-new-for-the-debugger-in-visual-studio-2015?view=vs-2015).
 
- Para obtener información acerca de cuáles son las novedades en diagnóstico, consulte [Novedades en las herramientas de generación de perfiles](./profiling/what-s-new-in-profiling-tools.md).
+Para obtener información acerca de cuáles son las novedades en diagnóstico, consulte [Novedades en las herramientas de generación de perfiles](./profiling/what-s-new-in-profiling-tools.md).
 
- Las herramientas siguientes se han introducido o mejorado para realizar diferentes tipos de diagnóstico y análisis en el código:
+Las herramientas siguientes se han introducido o mejorado para realizar diferentes tipos de diagnóstico y análisis en el código:
 
 ### <a name="perftips"></a>Sugerencias de rendimiento
- Las sugerencias de rendimiento muestran el tiempo de ejecución de los métodos durante la depuración, lo que le permite detectar rápidamente los cuellos de botella sin tener que invocar al generador de perfiles. Para empezar, vea [PerfTips: información de rendimiento de un vistazo mientras se depura con Visual Studio](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx).
+ Las sugerencias de rendimiento muestran el tiempo de ejecución de los métodos durante la depuración, lo que le permite detectar rápidamente los cuellos de botella sin tener que invocar al generador de perfiles. Para empezar, vea [sugerencias de rendimiento: Performance Information at-a-glance while Debugging with Visual Studio](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx) (Información de rendimiento de un solo vistazo mientras se realiza la depuración con Visual Studio)
 
 ### <a name="error-list"></a>Lista de errores
  Ahora, la lista de errores permite filtrar en cualquier columna. También muestra una vista activa de los errores, las advertencias y los análisis de código en toda la solución de C# o Visual Basic mientras escribe, incluso cuando un cambio en el código produce miles de advertencias. La nueva lista de errores es compatible con el uso existente. Para obtener más información, consulta [Error List Window](./ide/reference/error-list-window.md).
@@ -160,7 +156,7 @@ Para obtener más información acerca de las numerosas mejoras y nuevas caracter
 ## <a name="enjoy-these-additional-ide-improvements"></a>Disfrute de estas mejoras adicionales del IDE
 
 ### <a name="synchronized-settings-roaming-settings"></a>Configuración sincronizada (Configuración de roaming)
- Visual Studio 2013 introdujo Configuración sincronizada para algunas de las opciones que se configuran con más frecuencia, como Editor de texto, Enlaces de teclado, Tema, fuentes y colores, Inicio y Alias de entorno.  Visual Studio 2015 mejora esta experiencia sincronizando más opciones y sincronizando la configuración en la familia de aplicaciones de Visual Studio, como Professional, Enterprise, Express SKUs y Blend. Al iniciar sesión en Visual Studio 2015 por primera vez con la misma cuenta que usó en Visual Studio 2013, verá su configuración sincronizada aplicada desde Visual Studio 2013. Puede obtener acceso a su configuración escribiendo "sync" en **Inicio rápido** o en **Herramientas > Opciones > Entorno > Configuración sincronizada**.
+ Visual Studio 2013 introdujo a configuración sincronizada para algunas de las opciones configuradas con más frecuencia, como el Editor de texto, los enlaces de teclado, tema & fuentes & colores, inicio y alias de entorno.  Visual Studio 2015 mejora esta experiencia sincronizando más opciones y sincronizando la configuración en la familia de aplicaciones de Visual Studio, como Professional, Enterprise, Express SKUs y Blend. Al iniciar sesión en Visual Studio 2015 por primera vez con la misma cuenta que usó en Visual Studio 2013, verá su configuración sincronizada aplicada desde Visual Studio 2013. Puede obtener acceso a su configuración escribiendo "sync" en **Inicio rápido** o en **Herramientas > Opciones > Entorno > Configuración sincronizada**.
 
 ### <a name="automatic-extension-updates"></a>Actualizaciones automáticas de extensión
  Las extensiones instaladas de Visual Studio ahora se actualizarán automáticamente cuando haya disponible una versión nueva en la Galería de Visual Studio. Consulte [Buscar y usar extensiones de Visual Studio](./ide/finding-and-using-visual-studio-extensions.md) para obtener detalles sobre cómo personalizar las actualizaciones automáticas de extensión.
@@ -190,11 +186,11 @@ Para obtener más información acerca de las numerosas mejoras y nuevas caracter
 
 - Obtener el historial de un archivo de código completo en el editor de Visual Studio.
 
-   ![CodeLens Obtener detalles del archivo de código](./ide/media/codelensfilelevel.png "CodeLensFileLevel")
+   ![CodeLens: Obtener detalles del archivo de código](./ide/media/codelensfilelevel.png "CodeLensFileLevel")
 
 - Ver un gráfico que muestra las personas que cambiaron el código. Esto puede ayudarle a identificar patrones en los cambios de su equipo y a evaluar su impacto.
 
-   ![CodeLens Ver historial de cambios de código como un gráfico](./ide/media/codelens.png "CodeLens")
+   ![CodeLens: Ver historial de cambios de código como un gráfico](./ide/media/codelens.png "CodeLens")
 
 - Ver fácilmente cuándo se cambió el código por última vez.
 

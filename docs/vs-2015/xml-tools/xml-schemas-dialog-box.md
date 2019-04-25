@@ -1,30 +1,24 @@
 ---
 title: Cuadro de diálogo de esquemas XML | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 0271fa26-2205-49bd-96e0-ae1441571808
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f97bfca4623a826130e68a5399cc2ab86f784cbf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 82247c2510d64f712cc4b703154ea16a4bb7e7e1
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49899596"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59647451"
 ---
 # <a name="xml-schemas-dialog-box"></a>Cuadro de diálogo Esquemas XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 El **esquemas XML** cuadro de diálogo se usa para seleccionar qué esquemas XML esquema definición XSD (lenguaje) van a asociar a un documento XML. Podrá seleccionar un esquema de la caché de esquema o especificar un esquema que no está ubicado en la caché. Los esquemas seleccionados se consideran parte de un conjunto de esquemas. IntelliSense y la validación de documentos XML usan el conjunto de esquemas.  
   
  Puede tener acceso a la **esquemas XML** cuadro de diálogo haciendo clic en el **esquemas** botón en la ventana Propiedades del documento, o bien seleccionando **esquemas** desde el **XML** menú.  
@@ -53,8 +47,5 @@ El **esquemas XML** cuadro de diálogo se usa para seleccionar qué esquemas XML
   
 ## <a name="see-also"></a>Vea también  
  [Componentes del Editor XML](../xml-tools/xml-editor-components.md)   
- [Cómo: seleccionar los esquemas XML que se usarán](../xml-tools/how-to-select-the-xml-schemas-to-use.md)   
+ [Cómo: Seleccionar los esquemas XML que se usarán](../xml-tools/how-to-select-the-xml-schemas-to-use.md)   
  [Caché de esquema](../xml-tools/schema-cache.md)
-
-
-

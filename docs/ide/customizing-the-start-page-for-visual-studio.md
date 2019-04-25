@@ -1,7 +1,6 @@
 ---
-title: Instalación de la página de inicio personalizada o cambio del elemento de inicio
+title: Cambiar la experiencia de inicio
 ms.date: 02/01/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.ToolsOptionsPages.Startup
@@ -11,27 +10,45 @@ helpviewer_keywords:
 - Visual Studio Start Page
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3514effbe9b8affd870e46746b308216a80de33
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c8b31f033b9c04871e57836dd263071d87a24fda
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53864795"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58070118"
 ---
-# <a name="customize-the-start-page-for-visual-studio"></a>Personalizar la página principal de Visual Studio
+# <a name="customize-startup"></a>Personalizar el inicio
 
-Hay varias formas diferentes de personalizar la experiencia de inicio de Visual Studio: se puede mostrar el cuadro de diálogo **Abrir proyecto** o abrir la solución que se ha cargado en último lugar. También puede mostrar una página principal personalizada, que es una página XAML de Windows Presentation Foundation (WPF), que se ejecuta en una ventana de herramientas y ejecuta comandos internos de Visual Studio.
+La experiencia de inicio de Visual Studio se puede personalizar de varias maneras. Por ejemplo, puede elegir que se abra la solución más reciente o un entorno de desarrollo vacío.
+
+::: moniker range="vs-2017"
+
+También puede mostrar una página principal personalizada, que es una página XAML de Windows Presentation Foundation (WPF), que se ejecuta en una ventana de herramientas y ejecuta comandos internos de Visual Studio.
+
+::: moniker-end
 
 ## <a name="to-change-the-startup-item"></a>Para cambiar la pantalla de inicio
 
 1. En la barra de menús, elija **Herramientas** > **Opciones**.
 
-1. Expanda **Entorno** y después elija **Inicio**.
+2. Expanda **Entorno** y después elija **Inicio**.
 
-1. En la lista **Al iniciar el sistema**, seleccione el elemento que se mostrará después del inicio de Visual Studio.
+::: moniker range="vs-2017"
+
+3. En la lista **Al iniciar el sistema**, seleccione el elemento que se mostrará después del inicio de Visual Studio.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+3. En la lista **On startup, open** (Al iniciar, abrir), seleccione cuál debe ser el comportamiento al iniciarse Visual Studio. Puede elegir **Start window** (Ventana de inicio, que permite abrir un proyecto nuevo o existente), **Most recent solution** (Solución más reciente) o **Emtpy environment** (Entorno vacío).
+
+::: moniker-end
+
+::: moniker range="vs-2017"
 
 ## <a name="to-show-a-custom-start-page"></a>Para mostrar una página principal personalizada
 
@@ -41,15 +58,17 @@ Para instalar una página de inicio personalizada, abra el archivo *.vsix* o cop
 
 ### <a name="to-select-which-custom-start-page-to-display"></a>Para seleccionar la página de inicio personalizada que se va a mostrar
 
-1. En la barra de menús, elija **Herramientas** > **Opciones**.
+1. En la barra de menús, seleccione **Herramientas** > **Opciones**.
 
 1. Expanda **Entorno** y después elija **Inicio**.
 
 1. En la lista **Personalizar página principal**, seleccione la página que quiera.
 
-> [!NOTE]
-> Si un error de una página principal personalizada hace que Visual Studio se bloquee, inicie Visual Studio en modo seguro y después establezca que se use la página principal predeterminada. Consulte [/SafeMode (devenv.exe)](../ide/reference/safemode-devenv-exe.md).
+> [!TIP]
+> Si un error de una página principal personalizada hace que Visual Studio se bloquee, abra Visual Studio en modo seguro y después establezca que se use la página principal predeterminada. Consulte [/SafeMode (devenv.exe)](../ide/reference/safemode-devenv-exe.md).
 
 ## <a name="see-also"></a>Vea también
 
 - [Personalizar el IDE de Visual Studio](../ide/personalizing-the-visual-studio-ide.md)
+
+::: moniker-end

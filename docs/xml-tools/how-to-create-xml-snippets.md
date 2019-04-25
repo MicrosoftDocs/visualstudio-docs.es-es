@@ -1,46 +1,45 @@
 ---
 title: Procedimiento Crear fragmentos XML
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: d8556dd7-1382-4af7-ba80-3e873c9416be
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ec6332f52e732e99cc6d81512c9b3c469e99e18e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 99ad13fd3c8c1c2efeeec28794e10a91d9dd0db1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53829107"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060844"
 ---
-# <a name="how-to-create-xml-snippets"></a>Procedimiento Crear fragmentos XML
+# <a name="how-to-create-xml-snippets"></a>Procedimiento Creación de fragmentos XML
 
-El Editor XML se puede utilizar para crear nuevos fragmentos XML. El editor incluye un fragmento XML, llamado "Fragmento", que es un fragmento reutilizable que permite la creación de nuevos fragmentos XML.
+El editor XML se puede usar para crear nuevos fragmentos XML. El editor incluye un fragmento XML, llamado "Fragmento", que es un fragmento reutilizable que permite la creación de nuevos fragmentos XML.
 
 ## <a name="to-create-a-new-xml-snippet"></a>Para crear un nuevo fragmento XML
 
  Para crear un nuevo código XML fragmento de código, cree un nuevo archivo XML y usar el **Insertar fragmento de código** característica.
 
-1.  En el **archivo** menú, haga clic en **New** y, a continuación, haga clic en **archivo**.
+1. En el **archivo** menú, haga clic en **New** y, a continuación, haga clic en **archivo**.
 
-2.  Haga clic en **archivo XML** y, a continuación, haga clic en **abierto**.
+2. Haga clic en **archivo XML** y, a continuación, haga clic en **abierto**.
 
-3.  Haga clic en el panel del editor y seleccione **Insertar fragmento de código**.
+3. Haga clic en el panel del editor y seleccione **Insertar fragmento de código**.
 
-4.  Seleccione **fragmento** en la lista y presione **ENTRAR**.
+4. Seleccione **fragmento** en la lista y presione **ENTRAR**.
 
-5.  Realice los cambios que considere oportunos en el nuevo fragmento.
+5. Realice los cambios que considere oportunos en el nuevo fragmento.
 
-6.  Desde el **archivo** menú, seleccione **guardar archivoXml.XML**.
+6. Desde el **archivo** menú, seleccione **guardar archivoXml.XML**.
 
      El **Guardar archivo como** se muestra el cuadro de diálogo.
 
-7.  Escriba el nombre del nuevo fragmento y seleccione **archivos de fragmento** desde el **Guardar como tipo** ventana desplegable.
+7. Escriba el nombre del nuevo fragmento y seleccione **archivos de fragmento** desde el **Guardar como tipo** ventana desplegable.
 
-8.  Use la **guardar en** lista desplegable para cambiar la ubicación del archivo a la *Mis documentos\Visual Studio 2005\Code Snippets\XML\My XML Snippets* carpeta y, a continuación, presione **guardar**.
+8. Use la **guardar en** lista desplegable para cambiar la ubicación del archivo a la *Mis documentos\Visual Studio 2005\Code Snippets\XML\My XML Snippets* carpeta y, a continuación, presione **guardar**.
 
 ## <a name="snippet-description"></a>Descripción del fragmento de código
 
@@ -66,7 +65,6 @@ El Editor XML se puede utilizar para crear nuevos fragmentos XML. El editor incl
 > [!NOTE]
 > El texto del fragmento XML se debe incluir en una sección `<![CDATA[...]]>`.
 
-
  Este es el elemento `Code` que crea el fragmento reutilizable.
 
 ```xml
@@ -81,7 +79,7 @@ El Editor XML se puede utilizar para crear nuevos fragmentos XML. El editor incl
 
 - $name$ es una variable definida por el usuario. Crea un elemento `name`, que tiene un valor editable que adopta "name" como valor predeterminado. Las variables definidas por el usuario se definen mediante el elemento `Literal`.
 
-- $selected$ es una variable predefinida. Representa el texto que se ha seleccionado en el Editor XML antes de invocar el fragmento. La colocación de esta variable determina dónde aparece el texto seleccionado en el fragmento de código que rodea esa selección.
+- $selected$ es una variable predefinida. Representa el texto que se ha seleccionado en el editor XML antes de invocar el fragmento de código. La colocación de esta variable determina dónde aparece el texto seleccionado en el fragmento de código que rodea esa selección.
 
 - $end$ es una variable predefinida. Cuando el usuario presiona **ENTRAR** para finalizar la edición de los campos del fragmento de código, esta variable determina dónde se mueve el símbolo de intercalación (^) a.
 
@@ -106,7 +104,7 @@ El Editor XML se puede utilizar para crear nuevos fragmentos XML. El editor incl
 </Literal
 ```
 
- Los literales también pueden hacer referencia a funciones. El Editor XML incluye una función denominada **LookupPrefix**. El **LookupPrefix** función busca el URI de espacio de nombres determinado desde la ubicación en el documento XML que este fragmento de código se invoca desde y devuelve el prefijo de espacio de nombres que se define para ese espacio de nombres, si la hubiera, e incluye los dos puntos (:) en ese nombre. El siguiente es un ejemplo de un `Literal` elemento que usa el **LookupPrefix** función.
+ Los literales también pueden hacer referencia a funciones. El editor XML incluye una función denominada **LookupPrefix**. El **LookupPrefix** función busca el URI de espacio de nombres determinado desde la ubicación en el documento XML que este fragmento de código se invoca desde y devuelve el prefijo de espacio de nombres que se define para ese espacio de nombres, si la hubiera, e incluye los dos puntos (:) en ese nombre. El siguiente es un ejemplo de un `Literal` elemento que usa el **LookupPrefix** función.
 
 ```xml
 <Literal Editable="false">

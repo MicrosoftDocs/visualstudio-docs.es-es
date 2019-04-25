@@ -1,32 +1,34 @@
 items:
-- name: Visual Basic en Visual Studio
+- name: Tutoriales de Visual Basic
   href: index.yml
   items:
   - name: Información general
     items:
-    - name: Acerca de Visual Studio 2017
+    - name: Acerca de Visual Studio
       href: visual-studio-ide.md
     - name: Acerca del editor de código
       href: tutorial-editor.md
     - name: Acerca de los proyectos y las soluciones
       href: tutorial-projects-solutions.md
     - name: Más características de Visual Studio
-      href: ../../ide/advanced-feature-overview.md?toc=/visualstudio/visual-basic/toc.json&bc=/visualstudio/visual-basic/breadcrumb/toc.json
-  - name: Tutoriales
+      href: ../../ide/advanced-feature-overview.md?toc=/visualstudio/get-started/visual-basic/toc.json&bc=/visualstudio/get-started/visual-basic/breadcrumb/toc.json
+  - name: Cree una aplicación
     items:
     - name: Crear una aplicación de consola
       href: tutorial-console.md
     - name: Creación de una aplicación UWP
-      href: /windows/uwp/get-started/create-a-hello-world-app-xaml-universal?toc=/visualstudio/visual-basic/toc.json&bc=/visualstudio/visual-basic/breadcrumb/toc.json
+      href: /windows/uwp/get-started/create-a-hello-world-app-xaml-universal?toc=/visualstudio/get-started/visual-basic/toc.json&bc=/visualstudio/get-started/visual-basic/breadcrumb/toc.json
     - name: Crear una aplicación WPF
       href: tutorial-wpf.md
     - name: Creación de una aplicación web
       href: /aspnet/web-pages/overview/getting-started/introducing-razor-syntax-vb
     - name: Crear una aplicación de Windows Forms
-      href: ../../ide/create-a-visual-basic-winform-in-visual-studio.md?toc=/visualstudio/visual-basic/toc.json&bc=/visualstudio/visual-basic/breadcrumb/toc.json
+      href: ../../ide/create-a-visual-basic-winform-in-visual-studio.md?toc=/visualstudio/get-started/visual-basic/toc.json&bc=/visualstudio/get-started/visual-basic/breadcrumb/toc.json
     expanded: true
   - name: Conocer Visual Studio
     items:
+    - name: Abrir un proyecto desde un repositorio
+      href: ../tutorial-open-project-from-repo.md?toc=/visualstudio/get-started/visual-basic/toc.json&bc=/visualstudio/get-started/visual-basic/breadcrumb/toc.json
     - name: Escribir y editar código
       href: tutorial-editor.md
     - name: Compilar y generar
@@ -34,14 +36,15 @@ items:
     - name: Depurar el código
       href: ../visual-basic/tutorial-debugger.md
     - name: Pruebas unitarias
-      href: ../../test/getting-started-with-unit-testing.md?toc=/visualstudio/visual-basic/toc.json&bc=/visualstudio/visual-basic/breadcrumb/toc.json
+      href: ../../test/getting-started-with-unit-testing.md?toc=/visualstudio/get-started/visual-basic/toc.json&bc=/visualstudio/get-started/visual-basic/breadcrumb/toc.json
     - name: Implementar el proyecto
       href: ../../deployment/index.md
     - name: Acceder a datos
-      href: ../../data-tools/create-a-sql-database-by-using-a-designer.md?toc=/visualstudio/visual-basic/toc.json&bc=/visualstudio/visual-basic/breadcrumb/toc.json
-ms.openlocfilehash: 9026d3a8b9ba8463ea126c3d94e45743bd4b2874
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+      href: ../../data-tools/create-a-sql-database-by-using-a-designer.md?toc=/visualstudio/get-started/visual-basic/toc.json&bc=/visualstudio/get-started/visual-basic/breadcrumb/toc.json
+    expanded: true
+ms.openlocfilehash: f8098d467f66ce89c12c38dba54601a29f910494
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53442949"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58321621"

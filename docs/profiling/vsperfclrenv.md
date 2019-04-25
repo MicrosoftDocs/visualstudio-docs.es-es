@@ -10,15 +10,15 @@ helpviewer_keywords:
 - VSPerfCLREnv tool
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae0e54aff0e4206bd5c79c30c810dc6ba497ddf3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 119aa0a710218635cca945372ba9ea6fb6d4d27b
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53965089"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56632750"
 ---
 # <a name="vsperfclrenv"></a>VSPerfCLREnv
 
@@ -56,7 +56,7 @@ En el siguiente ejemplo se incluyen datos de interacción de capas en un proceso
 VSPerfCLREnv /GlobalSampleOn
 VSPerfCLREnv /GlobalInteractionOn
 REM Restart the computer and start the service
-VSPerfCmd /Start:Sample /Output:MyService.exe.vsp 
+VSPerfCmd /Start:Sample /Output:MyService.exe.vsp
 VSPerfCmd /Attach:MyService.exe
 ```
 

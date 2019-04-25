@@ -1,7 +1,6 @@
 ---
 title: Administrar los recursos de la aplicación (.NET)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - msvse_resedit.dlg.SetCustomTool
@@ -15,15 +14,15 @@ helpviewer_keywords:
 - application resources [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c689de00c5c5f37d47cb0ecc9f802be4b51a9ab
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1681484500c382b296a03e78661b808825768a5b
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53966815"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789152"
 ---
 # <a name="manage-application-resources-net"></a>Administrar los recursos de la aplicación (.NET)
 
@@ -39,7 +38,7 @@ Para obtener más información sobre los recursos de las aplicaciones de escrito
 En un proyecto de código administrado, abra la ventana de propiedades del proyecto. Puede abrir la ventana Propiedades de cualquiera de estas maneras:
 
 - Hacer clic con el botón derecho en el nodo de proyecto en el **Explorador de soluciones** y seleccionar **Propiedades**.
-- Escribir "propiedades del proyecto" en la ventana **Inicio rápido**.
+- Escribir las **propiedades del proyecto** en el cuadro de búsqueda **Ctrl**+**Q**
 - Presionar **Alt**+**Entrar** en el **Explorador de soluciones**
 
 Seleccione la pestaña **Recursos** . Puede agregar un archivo *.resx* si el proyecto no contiene ninguno y luego agregar y eliminar diferentes tipos de recursos y modificar recursos existentes.

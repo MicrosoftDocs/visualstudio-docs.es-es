@@ -8,24 +8,24 @@ helpviewer_keywords:
 ms.assetid: 75a046cc-d20a-4c79-ad2d-1f18426ac5d0
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b63fa7622b7dea4a6ad5c516547518911110a8ef
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 22cada0aaf77edd241992229c2bd6733be3ccc81
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53958045"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56711168"
 ---
 # <a name="deleting-a-breakpoint"></a>Eliminar un punto de interrupción
-El siguiente describe el proceso al eliminar un punto de interrupción pendiente:  
-  
-## <a name="deletion-process"></a>Proceso de eliminación  
- El Administrador de depuración de la sesión (SDM) llama a la [IDebugPendingBreakpoint2::Delete](../../extensibility/debugger/reference/idebugpendingbreakpoint2-delete.md) método para quitar el punto de interrupción pendiente y enlazados todos los puntos de interrupción enlazado de él.  
-  
+El siguiente describe el proceso al eliminar un punto de interrupción pendiente:
+
+## <a name="deletion-process"></a>Proceso de eliminación
+ El Administrador de depuración de la sesión (SDM) llama a la [IDebugPendingBreakpoint2::Delete](../../extensibility/debugger/reference/idebugpendingbreakpoint2-delete.md) método para quitar el punto de interrupción pendiente y enlazados todos los puntos de interrupción enlazado de él.
+
 > [!NOTE]
->  También se puede eliminar un punto de interrupción enlazado mediante una llamada a [IDebugBoundBreakpoint2::Delete](../../extensibility/debugger/reference/idebugboundbreakpoint2-delete.md).  
-  
-## <a name="see-also"></a>Vea también  
- [Llamar a los eventos del depurador](../../extensibility/debugger/calling-debugger-events.md)
+>  También se puede eliminar un punto de interrupción enlazado mediante una llamada a [IDebugBoundBreakpoint2::Delete](../../extensibility/debugger/reference/idebugboundbreakpoint2-delete.md).
+
+## <a name="see-also"></a>Vea también
+- [Llamar a los eventos del depurador](../../extensibility/debugger/calling-debugger-events.md)

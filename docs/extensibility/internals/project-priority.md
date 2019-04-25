@@ -7,32 +7,32 @@ helpviewer_keywords:
 ms.assetid: 9f707592-2fb6-4f75-9269-f6d4700a998e
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 81e9d0c92b70ce8499bc737547223d231fcc0009
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6d444896c305130c7805b8fd6ec1bdf020ed446d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53873900"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089450"
 ---
 # <a name="project-priority"></a>Prioridad del proyecto
-Normalmente, un elemento de proyecto es un miembro de un único proyecto de la solución. Por lo tanto, el IDE puede determinar fácilmente qué proyecto se usa para abrir el elemento. Sin embargo, si un elemento es un miembro de más de un proyecto, el IDE usa un esquema de prioridad para determinar el proyecto de procedimiento para abrir el elemento.  
-  
- En la lista siguiente se muestra el esquema de prioridad del proyecto:  
-  
--   Las llamadas IDE el <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject2.IsDocumentInProject%2A> método para cada proyecto de la solución para determinar si el documento es un miembro de ese proyecto.  
-  
--   Si el documento es un miembro del proyecto, el proyecto responde con una prioridad que el proyecto se asigna según su propio control de ese documento. Por ejemplo, un proyecto de lenguaje responde con una prioridad alta para sus archivos de código fuente del lenguaje pero responde con una prioridad más baja para un tipo de archivo no reconocido que no se usa como parte de su proceso de compilación.  
-  
--   Proyectos que ofrecen personalizados, específicas del proyecto editores o diseñadores para un documento también reciben una prioridad alta.  
-  
--   El <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> enumeración proporciona valores de prioridad de documento.  
-  
--   El proyecto que especifica la prioridad más alta se proporciona el contexto para abrir el documento. Si dos proyectos devuelvan valores de la misma prioridad, se prefiere el proyecto activo. Si ningún proyecto de la solución responde que puede abrir el documento, el IDE coloca el documento en el proyecto archivos varios. Para obtener más información, consulte [proyecto archivos varios](../../extensibility/internals/miscellaneous-files-project.md).  
-  
-## <a name="see-also"></a>Vea también  
- [Proyecto de archivos varios](../../extensibility/internals/miscellaneous-files-project.md)   
- [Cómo: Abrir editores para documentos abiertos](../../extensibility/how-to-open-editors-for-open-documents.md)   
- [Adición de plantillas de proyecto y de elementos de proyecto](../../extensibility/internals/adding-project-and-project-item-templates.md)
+Normalmente, un elemento de proyecto es un miembro de un único proyecto de la solución. Por lo tanto, el IDE puede determinar fácilmente qué proyecto se usa para abrir el elemento. Sin embargo, si un elemento es un miembro de más de un proyecto, el IDE usa un esquema de prioridad para determinar el proyecto de procedimiento para abrir el elemento.
+
+ En la lista siguiente se muestra el esquema de prioridad del proyecto:
+
+- Las llamadas IDE el <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject2.IsDocumentInProject%2A> método para cada proyecto de la solución para determinar si el documento es un miembro de ese proyecto.
+
+- Si el documento es un miembro del proyecto, el proyecto responde con una prioridad que el proyecto se asigna según su propio control de ese documento. Por ejemplo, un proyecto de lenguaje responde con una prioridad alta para sus archivos de código fuente del lenguaje pero responde con una prioridad más baja para un tipo de archivo no reconocido que no se usa como parte de su proceso de compilación.
+
+- Proyectos que ofrecen personalizados, específicas del proyecto editores o diseñadores para un documento también reciben una prioridad alta.
+
+- El <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> enumeración proporciona valores de prioridad de documento.
+
+- El proyecto que especifica la prioridad más alta se proporciona el contexto para abrir el documento. Si dos proyectos devuelvan valores de la misma prioridad, se prefiere el proyecto activo. Si ningún proyecto de la solución responde que puede abrir el documento, el IDE coloca el documento en el proyecto archivos varios. Para obtener más información, consulte [proyecto archivos varios](../../extensibility/internals/miscellaneous-files-project.md).
+
+## <a name="see-also"></a>Vea también
+- [Proyecto de archivos varios](../../extensibility/internals/miscellaneous-files-project.md)
+- [Cómo: Abrir editores para documentos abiertos](../../extensibility/how-to-open-editors-for-open-documents.md)
+- [Adición de plantillas de proyecto y de elementos de proyecto](../../extensibility/internals/adding-project-and-project-item-templates.md)

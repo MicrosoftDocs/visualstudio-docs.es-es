@@ -1,26 +1,21 @@
 ---
 title: Asociar después de un lanzamiento | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, attaching to programs
 ms.assetid: 5a3600a1-dc20-4e55-b2a4-809736a6ae65
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 416c05a7592d9f036a76a5d96537b4be917a0651
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 71b26fc2d26e180af25919dde5d3c4ee1bc1f891
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51774710"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113123"
 ---
 # <a name="attaching-after-a-launch"></a>Asociación tras el inicio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,9 +25,9 @@ Después de que se ha iniciado un programa, la sesión de depuración está list
 ## <a name="design-decisions"></a>Decisiones de diseño  
  Dado que la comunicación es más fácil dentro de un espacio de direcciones compartido, debe decidir si tiene más sentido para facilitar la comunicación entre la sesión de depuración y la DE o entre la DE y el programa. Elija entre lo siguiente:  
   
--   Si tiene más sentido para facilitar la comunicación entre la sesión de depuración y la DE, la sesión de depuración participa en la DE la creación y solicita la DE asociar al programa. Esto deja la sesión de depuración y DE juntos en un espacio de direcciones y el entorno de tiempo de ejecución y el programa juntos en otro.  
+- Si tiene más sentido para facilitar la comunicación entre la sesión de depuración y la DE, la sesión de depuración participa en la DE la creación y solicita la DE asociar al programa. Esto deja la sesión de depuración y DE juntos en un espacio de direcciones y el entorno de tiempo de ejecución y el programa juntos en otro.  
   
--   Si tiene más sentido para facilitar la comunicación entre la DE y el programa, el entorno de tiempo de ejecución crea conjuntamente la DE. Esto deja el SDM en un espacio de direcciones y el DE, el entorno de tiempo de ejecución y el programa juntos en otro. Esto es típico de una DE que se implementa con un intérprete para ejecutarse con secuencias de comandos de idiomas.  
+- Si tiene más sentido para facilitar la comunicación entre la DE y el programa, el entorno de tiempo de ejecución crea conjuntamente la DE. Esto deja el SDM en un espacio de direcciones y el DE, el entorno de tiempo de ejecución y el programa juntos en otro. Esto es típico de una DE que se implementa con un intérprete para ejecutarse con secuencias de comandos de idiomas.  
   
     > [!NOTE]
     >  Cómo la DE se une al programa es depende de la implementación. Comunicación entre el programa y la DE es también depende de la implementación.  
@@ -62,4 +57,3 @@ Después de que se ha iniciado un programa, la sesión de depuración está list
  [IDebugProgramNodeAttach2](../../extensibility/debugger/reference/idebugprogramnodeattach2.md)   
  [OnAttach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md)   
  [Asociar](../../extensibility/debugger/reference/idebugengine2-attach.md)
-

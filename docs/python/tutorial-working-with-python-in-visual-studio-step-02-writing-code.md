@@ -2,22 +2,21 @@
 title: Paso 2 del tutorial de Python en Visual Studio, escritura y generación de código
 titleSuffix: ''
 description: Paso 2 de un tutorial básico sobre las funcionalidades de Python en Visual Studio, entre otras, la edición de código y la ejecución de un proyecto.
-ms.date: 10/29/2018
-ms.prod: visual-studio-dev15
+ms.date: 01/28/2019
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 201284ad236b2182ba6c4e69971ff15d0b43a009
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fda68b9e5bffbd1afab3389a0d8d624312a8de3f
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53935149"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366437"
 ---
 # <a name="step-2-write-and-run-code"></a>Paso 2: Escritura y ejecución de código
 
@@ -46,7 +45,7 @@ Aunque el **Explorador de soluciones** es donde se administran los archivos del 
     ![Color de la sintaxis de IntelliSense y resaltado de errores](media/vs-getting-started-python-06-IntelliSense3b.png)
 
     > [!Tip]
-    > Puesto que el entorno de desarrollo de cada uno es muy personal, Visual Studio ofrece un control completo de su apariencia y comportamiento. Seleccione el comando de menú **Herramientas** > **Opciones** y explore los valores de las pestañas **Entorno** y **Editor de texto**. De forma predeterminada, solo se ve un número limitado de opciones. Para ver todas las opciones de todos los lenguajes de programación, seleccione **Mostrar todas las configuraciones** en la parte inferior del cuadro de diálogo. 
+    > Puesto que el entorno de desarrollo de cada uno es muy personal, Visual Studio ofrece un control completo de su apariencia y comportamiento. Seleccione el comando de menú **Herramientas** > **Opciones** y explore los valores de las pestañas **Entorno** y **Editor de texto**. De forma predeterminada, solo se ve un número limitado de opciones. Para ver todas las opciones de todos los lenguajes de programación, seleccione **Mostrar todas las configuraciones** en la parte inferior del cuadro de diálogo.
 
 1. Ejecute el código que ha escrito hasta este punto pulsando **Ctrl**+**F5** o seleccionando el elemento de menú **Depurar** > **Iniciar sin depurar**. Visual Studio le advierte si todavía hay errores en el código.
 
@@ -54,7 +53,7 @@ Aunque el **Explorador de soluciones** es donde se administran los archivos del 
 
     ![Resultado de la primera ejecución del programa](media/vs-getting-started-python-07-output.png)
 
-1. Además de finalizaciones para instrucciones y funciones, IntelliSense ofrece finalizaciones para las instrucciones `import` y `from` de Python. Estas finalizaciones le ayudan a detectar fácilmente qué módulos están disponibles en su entorno y los miembros de esos módulos. En el editor, elimine la línea `print` y comience a escribir `import `. Cuando se escribe el espacio, aparece una lista de módulos:
+1. Además de finalizaciones para instrucciones y funciones, IntelliSense ofrece finalizaciones para las instrucciones `import` y `from` de Python. Estas finalizaciones le ayudan a detectar fácilmente qué módulos están disponibles en su entorno y los miembros de esos módulos. En el editor, elimine la línea `print` y comience a escribir `import`. Cuando se escribe el espacio, aparece una lista de módulos:
 
     ![IntellSense muestra los módulos disponibles para una instrucción import](media/vs-getting-started-python-08-import1.png)
 
@@ -90,11 +89,11 @@ Aunque el **Explorador de soluciones** es donde se administran los archivos del 
 ## <a name="next-step"></a>Paso siguiente
 
 > [!div class="nextstepaction"]
-> [Usar la ventana interactiva de REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)
+> [Uso de la ventana interactiva de REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)
 
 ## <a name="go-deeper"></a>Profundizar un poco más
 
 - [Editar código](editing-python-code-in-visual-studio.md)
 - [Código de formato](formatting-python-code.md)
-- [Refactorización de código](refactoring-python-code.md)
+- [Refactorizar código](refactoring-python-code.md)
 - [Usar PyLint](linting-python-code.md)

@@ -1,23 +1,20 @@
 ---
 title: Actualizar formas y conectores para reflejar el modelo | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 51eb2af9-00e7-4725-a87d-62fb4f39f444
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 93c079a5dc80b0a26e133258328fb7b5b9fb8d41
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: c8520084b57fdf0f831f62626593832d03c25636
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49192457"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107871"
 ---
 # <a name="updating-shapes-and-connectors-to-reflect-the-model"></a>Actualizar formas y conectores para reflejar el modelo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,9 +32,9 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 ## <a name="set-shape-map-properties-to-control-the-visibility-of-a-decorator"></a>Establecer las propiedades de mapa de formas para controlar la visibilidad de un elemento decorator  
  Puede controlar la visibilidad de un elemento decorator sin necesidad de escribir código de programa, mediante la configuración de la asignación entre la forma y la clase de dominio en la definición de DSL. Para obtener más información, vea los temas siguientes:  
   
--   [Cómo: Controlar la visibilidad de un elemento Decorator - redirigir](../misc/how-to-control-the-visibility-of-a-decorator-redirect.md)  
+- [Cómo: Controlar la visibilidad de un elemento Decorator-redirigir](../misc/how-to-control-the-visibility-of-a-decorator-redirect.md)  
   
--   [Cómo definir lenguajes específicos de dominio](../modeling/how-to-define-a-domain-specific-language.md)  
+- [Cómo definir lenguajes específicos de dominio](../modeling/how-to-define-a-domain-specific-language.md)  
   
 ## <a name="expose-the-color-and-style-of-a-shape-as-properties"></a>Exponer el color y estilo de una forma como propiedades  
  En la definición de DSL, haga clic en la clase shape, seleccione **agregar expuestos**y, a continuación, haga clic en uno de los elementos como **Color de relleno**.  
@@ -118,7 +115,7 @@ partial class MyLanguageDiagram
   
  Este método puede usarse tanto para las propiedades de dominio y no-store características, como el tamaño de la forma.  
   
-##  <a name="OnAssociatedProperty"></a> Usar AssociateValueWith() para actualizar otras características de una forma  
+## <a name="OnAssociatedProperty"></a> Usar AssociateValueWith() para actualizar otras características de una forma  
  Para algunas características de una forma, por ejemplo, si tiene una sombra o el estilo de flecha de un conector, no hay ningún método integrado de exponer la función como una propiedad de dominio.  Los cambios en estas características no están bajo el control del sistema de transacciones. Por lo tanto, no es adecuado actualizarlos mediante reglas, puesto que las reglas no se invocan cuando el usuario realiza el comando Deshacer.  
   
  En su lugar, puede actualizar estas características mediante <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnAssociatedPropertyChanged%2A>. En el ejemplo siguiente, el estilo de flecha de un conector se controla mediante un valor de una propiedad de dominio en la relación que se muestra el conector:  
@@ -165,6 +162,3 @@ public partial class ArrowConnector // My connector class.
  `AssociateValueWith()` debe llamarse una vez para cada propiedad de dominio que desea registrar. Después de que se ha llamado, cualquier cambio en la propiedad especificada se llamará `OnAssociatedPropertyChanged()` en formas que presentan el elemento de modelo de la propiedad.  
   
  No es necesario llamar a `AssociateValueWith()` para cada instancia. Aunque InitializeResources es un método de instancia, se invoca solo una vez para cada clase shape.
-
-
-

@@ -1,14 +1,9 @@
 ---
 title: Crear aplicaciones ClickOnce para que otros usuarios para implementar | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -29,13 +24,13 @@ ms.assetid: d20766c7-4ef3-45ab-8aa0-3f15b61eccaa
 caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: f2b7bb6c990567a483ab28d215019fe1b259d166
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 049d557959a53c00be461a2b0e44338216c7e3a3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49862091"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58996055"
 ---
 # <a name="creating-clickonce-applications-for-others-to-deploy"></a>Crear aplicaciones ClickOnce para que las implementen terceros
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +59,7 @@ No todos los desarrolladores que crean las implementaciones de ClickOnce plan im
   
  Usar un certificado autofirmado para el manifiesto de implementación presenta varias ventajas. Al eliminar la necesidad del cliente obtener o crear su propio certificado Authenticode, `<useManifestForTrust>` simplifica la implementación del cliente, permitiendo al desarrollador mantener su propia identidad de marca en la aplicación. El resultado es un conjunto de implementaciones con signo que son más seguras y que tienen identidades de aplicación único. Esto elimina el posible conflicto que puede producirse al implementar la misma aplicación para varios clientes.  
   
- Para obtener información detallada sobre cómo crear una implementación de ClickOnce con `<useManifestForTrust>` habilitado, consulte [Tutorial: implementar manualmente una aplicación ClickOnce que Does no requerir nueva firma y esa información de personalización de marca conserva](../deployment/walkthrough-manually-deploying-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information.md).  
+ Para obtener información detallada sobre cómo crear una implementación de ClickOnce con `<useManifestForTrust>` habilitado, consulte [Tutorial: Implementar manualmente una aplicación ClickOnce que no requiere volver a firmar y que conserve la información de marca](/visualstudio/deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required?view=vs-2015).  
   
 ### <a name="how-application-manifest-for-trust-works-at-runtime"></a>Manifiesto de aplicación cómo para confianza funciona en tiempo de ejecución  
  Para obtener una mejor comprensión de cómo usar el manifiesto de aplicación de confianza funciona en tiempo de ejecución, considere el ejemplo siguiente. Microsoft crea una aplicación ClickOnce que tiene como destino .NET Framework 3.5. El manifiesto de aplicación usa el `<useManifestForTrust>` elemento y está firmado por Microsoft. Adventure Works firma el manifiesto de implementación mediante un certificado autofirmado. Los clientes de Adventure Works están configurados para confiar en cualquier aplicación firmada por Microsoft.  
@@ -108,7 +103,4 @@ No todos los desarrolladores que crean las implementaciones de ClickOnce plan im
 ## <a name="see-also"></a>Vea también  
  [Implementar aplicaciones ClickOnce para las pruebas y los servidores de producción sin nueva firma](../deployment/deploying-clickonce-applications-for-testing-and-production-servers-without-resigning.md)   
  [Tutorial: Implementar manualmente una aplicación ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)   
- [Tutorial: Implementar manualmente una aplicación ClickOnce que no requiera el proceso de volver a firmar y que conserve la información de marca comercial](../deployment/walkthrough-manually-deploying-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information.md)
-
-
-
+ [Tutorial: Implementación manual de una aplicación ClickOnce que no requiera el proceso de volver a firmar y que conserve la información de marca comercial](/visualstudio/deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required?view=vs-2015)

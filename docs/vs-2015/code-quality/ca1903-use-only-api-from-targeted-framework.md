@@ -1,14 +1,9 @@
 ---
-title: 'CA1903: Usar solo API de .NET framework de destino | Microsoft Docs'
-ms.custom: ''
+title: 'CA1903: Usar solo API de .NET framework de destino | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - UseOnlyAPIFromTargetedFramework
 - CA1903
@@ -20,24 +15,24 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 1c23b25029775cd3abca84e695c50b5a0fdf68cf
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 146563dfa358367e7c22f8ad37564b85d64eaf1d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49191586"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59647160"
 ---
 # <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903: Usar solo API de la versión de .NET Framework de destino
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Para obtener la documentación más reciente de Visual Studio 2017, consulte [CA1903: usar solo API de .NET framework de destino](https://docs.microsoft.com/visualstudio/code-quality/ca1903-use-only-api-from-targeted-framework) en docs.microsoft.com.  
+Para obtener la documentación más reciente de Visual Studio, consulte [CA1903: Usar solo API de .NET framework de destino](https://docs.microsoft.com/visualstudio/code-quality/ca1903-use-only-api-from-targeted-framework).  
   
 |||  
 |-|-|  
 |TypeName|UseOnlyApiFromTargetedFramework|  
 |Identificador de comprobación|CA1903|  
 |Categoría|Microsoft.Portability|  
-|Cambio problemático|Problemático: cuando se produce en la firma de un tipo o miembro visible externamente.<br /><br /> No problemático: cuando se desencadena en el cuerpo de un método.|  
+|Cambio problemático|Problemático: cuando se produce en la firma de un tipo o miembro visible externamente.<br /><br /> Indivisible - cuando se desencadena en el cuerpo de un método.|  
   
 ## <a name="cause"></a>Motivo  
  Un miembro o tipo utiliza un miembro o tipo que se introdujo en un service pack que no se incluyó en .NET framework de destino del proyecto.  
@@ -76,4 +71,3 @@ Para obtener la documentación más reciente de Visual Studio 2017, consulte [CA
 ## <a name="see-also"></a>Vea también  
  [Advertencias de portabilidad](../code-quality/portability-warnings.md)   
  [Elegir una versión específica de .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md)
-

@@ -6,16 +6,15 @@ helpviewer_keywords:
 - Domain-Specific Language, models
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 749c75af9056bc50689c47ca9ef8de037dfd71e5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d486ae5c056be37c0284d39fabaa6945f5c91659
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53908649"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045036"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Introducción a los modelos, las clases y las relaciones
 Un lenguaje específico de dominio (DSL) se define mediante su archivo de definición de DSL, junto con cualquier código de programa personalizado que se haya escrito. La mayoría del código de programa en la solución de DSL se genera a partir de este archivo.
@@ -62,13 +61,13 @@ Un lenguaje específico de dominio (DSL) se define mediante su archivo de defini
 
  Para reorganizar el diagrama de definición de DSL, hacer lo siguiente:
 
--   Intercambiar principal y hacer referencia a vistas mediante el **Traer árbol aquí** y **dividir árbol** comandos. Haga clic en una clase de dominio único para ver estos comandos.
+- Intercambiar principal y hacer referencia a vistas mediante el **Traer árbol aquí** y **dividir árbol** comandos. Haga clic en una clase de dominio único para ver estos comandos.
 
--   Cambiar el orden de las clases de dominio y las clases de formas presionando Ctrl + arriba y Ctrl+flecha abajo.
+- Cambiar el orden de las clases de dominio y las clases de formas presionando Ctrl + arriba y Ctrl+flecha abajo.
 
--   Contraer o expandir las clases mediante el icono en la superior derecha de cada forma.
+- Contraer o expandir las clases mediante el icono en la superior derecha de cada forma.
 
--   Contraer partes del árbol, haga clic en el signo menos (-) en la parte inferior de una clase de dominio.
+- Contraer partes del árbol, haga clic en el signo menos (-) en la parte inferior de una clase de dominio.
 
 ## <a name="inheritance"></a>Herencia
  Clases de dominio se pueden definir mediante herencia. Para crear una derivación de herencia, haga clic en la herramienta de herencia, haga clic en la clase derivada y, a continuación, haga clic en la clase base. Un elemento de modelo tiene todas las propiedades que se definen en su propia clase de dominio, junto con todas las propiedades heredadas de la clase base. También hereda sus roles en las relaciones.
@@ -151,4 +150,4 @@ Un lenguaje específico de dominio (DSL) se define mediante su archivo de defini
 
 ## <a name="see-also"></a>Vea también
 
-- [Glosario de las herramientas de lenguajes específicos de dominio](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Glosario de las Herramientas del lenguaje específico de dominio](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

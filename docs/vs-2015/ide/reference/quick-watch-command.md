@@ -1,14 +1,9 @@
 ---
 title: Inspección rápida (Comando) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - debug.quickwatch
 helpviewer_keywords:
@@ -18,19 +13,18 @@ ms.assetid: 9670ac3a-8f2f-4874-974d-cb87d3b0cde1
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: afe27d567601e43b10323f9dcc3417bcf15e9298
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 0a4bc73046ca32645ffcdc8c3f2978c9245aaec6
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49269417"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668072"
 ---
 # <a name="quick-watch-command"></a>Inspección rápida (Comando)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
-Muestra el texto seleccionado o especificado en el campo de expresión de la [cuadro de diálogo Inspección rápida](http://msdn.microsoft.com/library/ffaee1dd-e5ce-4ef2-9401-d28329398867). Puede usar este cuadro de diálogo para calcular el valor actual de una variable o expresión reconocida por el depurador, o el contenido de un registro. Además, puede cambiar el valor de cualquier variable no constante o el contenido de cualquier registro.  
+Muestra el texto seleccionado o especificado en el campo Expresión del [cuadro de diálogo Inspección rápida](http://msdn.microsoft.com/library/ffaee1dd-e5ce-4ef2-9401-d28329398867). Puede usar este cuadro de diálogo para calcular el valor actual de una variable o expresión reconocida por el depurador, o el contenido de un registro. Además, puede cambiar el valor de cualquier variable no constante o el contenido de cualquier registro.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -52,11 +46,8 @@ Debug.QuickWatchq [text]
 ```  
   
 ## <a name="see-also"></a>Vea también  
- [Cómo: usar el cuadro de diálogo Inspección rápida](http://msdn.microsoft.com/library/ffaee1dd-e5ce-4ef2-9401-d28329398867)   
+ [Cómo: Utilizar el cuadro de diálogo Inspección rápida](http://msdn.microsoft.com/library/ffaee1dd-e5ce-4ef2-9401-d28329398867)   
  [Comandos de Visual Studio](../../ide/reference/visual-studio-commands.md)   
  [Ventana Comandos](../../ide/reference/command-window.md)   
  [Cuadro Buscar/Comando](../../ide/find-command-box.md)   
  [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
-
-
-

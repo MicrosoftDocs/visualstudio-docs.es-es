@@ -1,8 +1,8 @@
 ---
 title: IntelliSense para JavaScript
 ms.date: 06/28/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
+ms.technology: vs-javascript
 helpviewer_keywords:
 - IntelliSense [JavaScript]
 - <reference> JavaScript XML tag
@@ -20,31 +20,31 @@ helpviewer_keywords:
 - IntelliSense [JavaScript], about
 - IntelliSense extensibility [JavaScript]
 - XML documentation comments [JavaScript]
-author: gewarren
-ms.author: gewarren
-manager: douge
+author: mikejo5000
+ms.author: mikejo
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de5470f0c48e76d972cd78fd84b7629b8f2426d2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6ee40d877af75469dcc1abc176d67f43c8bdcfb3
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53849679"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58324401"
 ---
 # <a name="javascript-intellisense"></a>IntelliSense para JavaScript
 
-[!include[vs_dev15](../misc/includes/vs_dev15_md.md)] proporciona una experiencia eficaz de edición de JavaScript lista para usar. Con tecnología de un servicio de lenguaje basado en TypeScript, Visual Studio proporciona IntelliSense con más funcionalidades, compatibilidad con características modernas de JavaScript y características de productividad mejoradas, como Ir a definición, la refactorización y mucho más.
+Visual Studio proporciona una eficaz experiencia de edición de JavaScript lista para usar. Con tecnología de un servicio de lenguaje basado en TypeScript, Visual Studio proporciona IntelliSense con más funcionalidades, compatibilidad con características modernas de JavaScript y características de productividad mejoradas, como Ir a definición, la refactorización y mucho más.
 
 > [!NOTE]
-> JavaScript Language Service en [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] usa un nuevo motor para el servicio de lenguaje (denominado "Salsa"). Este tema incluye información, pero es posible que también quiera leer esta [entrada de blog](https://blogs.msdn.microsoft.com/visualstudio/2016/11/28/more-productive-javascript-in-visual-studio-2017-rc/). La nueva experiencia de edición también se centra principalmente en el código de Visual Studio. Consulte [documentos de VS Code](https://code.visualstudio.com/docs/languages/javascript) para obtener más información.
+> A partir de Visual Studio 2017, el servicio de lenguaje de JavaScript usa un nuevo motor para el servicio de lenguaje (denominado "Salsa"). Puede leer los detalles en este artículo, además de en esta [entrada de blog](https://devblogs.microsoft.com/visualstudio/previewing-salsa-javascript-language-service-visual-studio-15/). La nueva experiencia de edición también se centra principalmente en el código de Visual Studio. Consulte [documentos de VS Code](https://code.visualstudio.com/docs/languages/javascript) para obtener más información.
 
 Para más información sobre la funcionalidad general de IntelliSense de Visual Studio, vea [Usar IntelliSense](../ide/using-intellisense.md).
 
-## <a name="whats-new-in-the-javascript-language-service-in-includevsdev15miscincludesvsdev15mdmd"></a>Novedades de JavaScript Language Service en [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
+## <a name="whats-new-in-the-javascript-language-service-in-visual-studio-2017"></a>Novedades de JavaScript Language Service en Visual Studio 2017
 
-Desde [!include[vs_dev15](../misc/includes/vs_dev15_md.md)], JavaScript IntelliSense muestra mucha más información sobre las listas de parámetros y miembros.
-Esta nueva información la proporciona el servicio de lenguaje TypeScript, que usa el análisis estático en segundo plano para comprender mejor el código.
+Desde Visual Studio 2017, JavaScript IntelliSense muestra mucha más información sobre las listas de parámetros y miembros. Esta nueva información la proporciona el servicio de lenguaje TypeScript, que usa el análisis estático en segundo plano para comprender mejor el código.
+
 TypeScript usa varios orígenes para generar esta información:
 
 - [IntelliSense basado en la inferencia de tipos](#TypeInference)
@@ -53,6 +53,7 @@ TypeScript usa varios orígenes para generar esta información:
 - [Adquisición automática de definiciones de tipo](#Auto)
 
 <a name="TypeInference"></a>
+
 ### <a name="intellisense-based-on-type-inference"></a>IntelliSense basado en la inferencia de tipos
 
 En JavaScript, la mayoría de las veces no hay ningún tipo explícito de información disponible. Afortunadamente, suele ser bastante fácil deducir un tipo según el contexto del código circundante.
@@ -90,6 +91,7 @@ exports.Foo = Foo;
 ```
 
 <a name="JsDoc"></a>
+
 ### <a name="intellisense-based-on-jsdoc"></a>IntelliSense basado en JSDoc
 
 Si la inferencia de tipos no proporciona la información de tipo deseada (o por compatibilidad con la documentación), se puede proporcionar información de tipo de forma explícita a través de anotaciones de JSDoc.  Por ejemplo, para proporcionar a un objeto parcialmente declarado un tipo específico, puede usar la etiqueta `@type` como se muestra a continuación:
@@ -123,7 +125,7 @@ Dado que TypeScript y JavaScript se basan ahora en el mismo servicio de lenguaje
 
 A continuación, se muestra un ejemplo sencillo de un archivo de definición de TypeScript que proporciona esa información de tipo (a través de una interfaz) a un archivo JavaScript del mismo proyecto (con una etiqueta de `JsDoc`).
 
-<img src="https://raw.githubusercontent.com/wiki/Microsoft/TypeScript/images/decl1.png" height="400" width="640" alt="TypeScript definition file" />
+![Archivo de definición de TypeScript](https://raw.githubusercontent.com/wiki/Microsoft/TypeScript/images/decl1.png)
 
 <a name="Auto"></a>
 ### <a name="automatic-acquisition-of-type-definitions"></a>Adquisición automática de definiciones de tipo

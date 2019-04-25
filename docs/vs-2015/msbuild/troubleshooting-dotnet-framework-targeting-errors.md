@@ -1,14 +1,9 @@
 ---
 title: Solucionar problemas de versión de .NET Framework de destino | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: troubleshooting
 f1_keywords:
 - vs.FrameworkTargetingErrors
 - MSBuild.ResolveAssemblyReference.FailedToResolveReferenceBecausePrimaryAssemblyInExclusionList
@@ -22,18 +17,17 @@ ms.assetid: 830e3e45-9a93-4279-a249-75b84599aefb
 caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: acadd858a1327380fc606bed36994ba0dda47169
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 85f57d03ac52562c5cbebc27f410570c03e33d3f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49280558"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668176"
 ---
 # <a name="troubleshooting-net-framework-targeting-errors"></a>Solucionar problemas de versión de .NET Framework de destino
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 En este tema se describen los errores de MSBuild que pueden producirse debido a problemas de referencia y cómo pueden resolverse esos errores.  
   
 ## <a name="you-have-referenced-a-project-or-assembly-that-targets-a-different-version-of-the-net-framework"></a>Ha hecho referencia a un proyecto o ensamblado que tiene como destino una versión diferente de .NET Framework  
@@ -63,10 +57,7 @@ En este tema se describen los errores de MSBuild que pueden producirse debido a 
 >  Después de cerrar y volver a abrir el proyecto, también debe volver a generarlo para garantizar que todas las referencias se resuelven correctamente.  
   
 ## <a name="see-also"></a>Vea también  
- [Cómo: Usar como destino una versión de .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md)   
+ [Cómo: Una versión de .NET Framework de destino](../ide/how-to-target-a-version-of-the-dotnet-framework.md)   
  [.NET Framework Client Profile](http://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1)  (Perfil de cliente de .NET Framework)  
  [Elegir una versión específica de .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md)   
  [Compatibilidad con múltiples versiones (multi-targeting)](../msbuild/msbuild-multitargeting-overview.md)
-
-
-

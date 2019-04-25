@@ -1,14 +1,9 @@
 ---
 title: ReadLinesFromFile (Tarea) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#ReadLinesFromFile
 dev_langs:
@@ -23,18 +18,17 @@ ms.assetid: a18af929-b53a-4d9e-b7bf-e3d3737ee85f
 caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: bf35b9d41ccd59394d085084923f8a5f8c00e30a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 6783b3e20c004e4270876dd8ee6b8b574a810d66
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251458"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648983"
 ---
 # <a name="readlinesfromfile-task"></a>ReadLinesFromFile (Tarea)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Lee una lista de elementos de un archivo de texto.  
   
 ## <a name="parameters"></a>Parámetros  
@@ -74,6 +68,3 @@ Lee una lista de elementos de un archivo de texto.
  [Referencia de tareas](../msbuild/msbuild-task-reference.md)   
  [Conceptos de MSBuild](../msbuild/msbuild-concepts.md)   
  [Tareas](../msbuild/msbuild-tasks.md)
-
-
-

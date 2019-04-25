@@ -1,7 +1,6 @@
 ---
 title: Live Unit Testing
-ms.date: 2017-03-07
-ms.prod: visual-studio-dev15
+ms.date: 03/07/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio ALM
@@ -10,49 +9,32 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5a443eddc56b3aa5af6e4ce1cb8cab958d2be621
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ce9a1a2da7397dbc7ce4235391c962cada7d59eb
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53892853"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62786553"
 ---
-# <a name="live-unit-testing-with-visual-studio-2017"></a>Live Unit Testing con Visual Studio 2017
+# <a name="live-unit-testing-with-visual-studio"></a>Live Unit Testing con Visual Studio
 
 Mientras desarrolla una aplicación, Live Unit Testing ejecuta automáticamente y en segundo plano las pruebas unitarias afectadas y presenta los resultados y la cobertura de código en vivo en el IDE de Visual Studio en tiempo real. Cuando modifica el código, Live Unit Testing proporciona comentarios sobre cómo los cambios afectaron a las pruebas existentes y si el código nuevo que ha agregado está cubierto por una o varias pruebas existentes. Esto le recordará que debe escribir pruebas unitarias cuando realiza correcciones de errores o agrega nuevas características.
 
 > [!NOTE]
-> Live Unit Testing está disponible para proyectos de C# y Visual Basic que tienen como destino .NET Core o .NET Framework en la edición Enterprise de Visual Studio 2017.
+> Live Unit Testing está disponible para proyectos de C# y Visual Basic que tienen como destino .NET Core o .NET Framework en la edición Enterprise de Visual Studio.
 
 Cuando se usa Live Unit Testing para las pruebas, Live Unit Testing conserva los datos sobre el estado de las pruebas. Su capacidad de usar datos persistentes permite que Live Unit Testing ofrezca un rendimiento superior mientras se ejecutan las pruebas de forma dinámica en respuesta a los cambios en el código.
 
 ## <a name="supported-test-frameworks"></a>Marcos de prueba admitidos
 Live Unit Testing funciona con los tres marcos de pruebas unitarias conocidos enumerados en la tabla siguiente. La versión mínima admitida de sus adaptadores y marcos también aparece en la tabla. Los marcos de pruebas unitarias están disponibles en NuGet.org.
 
-<table>
-<tr>
-   <th>Marco de prueba</th>
-   <th>Versión mínima del adaptador de Visual Studio</th>
-   <th>Versión mínima del marco</th>
-</tr>
-<tr>
-   <td>xUnit.net</td>
-   <td> xunit.runner.visualstudio version 2.2.0-beta3-build1187</td>
-   <td>xunit 1.9.2</td>
-</tr>
-<tr>
-   <td>NUnit</td>
-   <td>NUnit3TestAdapter version 3.5.1</td>
-   <td>NUnit version 3.5.0</td>
-</tr>
-<tr>
-   <td>MSTest</td>
-   <td>MSTest.TestAdapter 1.1.4-preview</td>
-   <td>MSTest.TestFramework 1.0.5-preview</td>
-</tr>
-</table>
+|Marco de prueba  |Versión mínima del adaptador de Visual Studio  |Versión mínima del marco  |
+|---------|---------|---------|
+|xUnit.net |xunit.runner.visualstudio version 2.2.0-beta3-build1187 |xunit 1.9.2 |
+|NUnit |NUnit3TestAdapter version 3.5.1 |NUnit version 3.5.0 |
+|MSTest |MSTest.TestAdapter 1.1.4-preview |MSTest.TestFramework 1.0.5-preview |
 
-Si tiene proyectos de prueba basados en versiones anteriores de MSTest que hacen referencia a `Microsoft.VisualStudio.QualityTools.UnitTestFramework` y no quiere utilizar los paquetes de MSTest NuGet más recientes, actualice a la versión 15.4 de Visual Studio 2017.
+Si tiene proyectos de prueba basados en versiones anteriores de MSTest que hacen referencia a `Microsoft.VisualStudio.QualityTools.UnitTestFramework` y no quiere migrar a los paquetes de MSTest NuGet más recientes, actualice a la versión 15.4 o posterior de Visual Studio 2017.
 
 En algunos casos, es posible que tenga que restaurar explícitamente los paquetes NuGet a los que los proyectos de la solución hacen referencia para que Live Unit Testing funcione. Puede hacerlo compilando explícitamente la solución (seleccione **Compilar** > **Recompilar solución** en el menú de Visual Studio de nivel superior) o restaurando los paquetes en la solución (haga clic con el botón derecho en la solución y seleccione **Restaurar paquetes de NuGet**) antes de habilitar Live Unit Testing.
 
@@ -179,8 +161,8 @@ Para soluciones con muchos proyectos de prueba, puede controlar qué proyectos y
 
 Para seleccionar proyectos individuales en pruebas unitarias, haga lo siguiente después de iniciar Live Unit Testing:
 
-1.  Haga clic con el botón derecho en la solución en el **Explorador de soluciones** y elija **Live Tests**(Pruebas en vivo)  > **Excluir** para excluir toda la solución.
-1.  Haga clic con el botón derecho en cada proyecto de prueba que le gustaría incluir en las pruebas y elija **Live Tests** (Pruebas en vivo)  > **Incluir**.
+1. Haga clic con el botón derecho en la solución en el **Explorador de soluciones** y elija **Live Tests**(Pruebas en vivo)  > **Excluir** para excluir toda la solución.
+1. Haga clic con el botón derecho en cada proyecto de prueba que le gustaría incluir en las pruebas y elija **Live Tests** (Pruebas en vivo)  > **Incluir**.
 
 **Exclusión de pruebas individuales de la ventana del editor de código**
 
@@ -201,4 +183,4 @@ También puede usar los atributos siguientes para excluir los métodos individua
 - [Herramientas de pruebas de código](https://visualstudio.microsoft.com/vs/testing-tools/)
 - [Blog de Live Unit Testing](https://go.microsoft.com/fwlink/?linkid=842514)
 - [Preguntas más frecuentes de Live Unit Testing](live-unit-testing-faq.md)
-- [Vídeo de Channel 9: Live Unit Testing en Visual Studio 2017](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T105)
+- [Vídeo de Channel 9: Live Unit Testing en Visual Studio](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T105)

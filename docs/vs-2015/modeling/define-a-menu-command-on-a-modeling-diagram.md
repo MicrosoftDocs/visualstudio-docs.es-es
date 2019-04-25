@@ -1,25 +1,22 @@
 ---
 title: Definir un comando de menú en un diagrama de modelado | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML - extending, menu commands
 ms.assetid: 79c277de-5871-4fc7-9701-55eec5c3cd46
 caps.latest.revision: 63
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: c211c37817ba996105d7496dc49e91db9fa9298e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: ef029cc6e931509997ad6f094adedc7d96e4bcd3
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51809108"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670330"
 ---
 # <a name="define-a-menu-command-on-a-modeling-diagram"></a>Definir un comando de menú en un diagrama de modelado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +65,6 @@ En Visual Studio, puede definir elementos de menú adicionales en los menús con
 
 2. Agregue las referencias siguientes al proyecto.  
 
-
    |                                                                                                    Referencia                                                                                                    |                                                                                                  Qué permite hacer                                                                                                  |
    |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
    |                                                                                        System.ComponentModel.Composition                                                                                        |                                         Defina los componentes mediante [Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).                                          |
@@ -77,7 +73,6 @@ En Visual Studio, puede definir elementos de menú adicionales en los menús con
    |                                                                                  Microsoft.VisualStudio.Modeling.Sdk.[versión]                                                                                  | Definir controladores de eventos del modelo.<br /><br /> Encapsular series de cambios en el modelo. Para obtener más información, consulte [actualizaciones del modelo UML vínculo mediante transacciones](../modeling/link-uml-model-updates-by-using-transactions.md). |
    |                                                            Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[versión]<br /><br /> (no siempre es necesario)                                                             |                                                                                   Obtener acceso a elementos del diagrama adicionales para controladores de gestos.                                                                                   |
    | Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer<br /><br /> Solo se requiere para los comandos en diagramas de capas. Para obtener más información, consulte [ampliar diagramas de capas](../modeling/extend-layer-diagrams.md). |                                                                                             Definir los comandos en un diagrama de capas.                                                                                              |
-
 
 3. Agregue un archivo de clase al proyecto y establezca su contenido en el código siguiente.  
 
@@ -223,7 +218,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
      Se iniciará una instancia experimental de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
 
-     **Solución de problemas**: si no se inicia un nuevo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] :  
+     **Solución de problemas de**: Si un nuevo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] no se inicia:  
 
     -   Si tiene más de un proyecto, asegúrese de que el proyecto VSIX está configurado como proyecto de inicio de la solución.  
 
@@ -235,7 +230,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
 3.  Abra el menú contextual en cualquier parte del diagrama. El comando debería aparecer en el menú.  
 
-     **Solución de problemas**: si el comando no aparece en el menú, asegúrese de que:  
+     **Solución de problemas de**: Si el comando no aparece en el menú, asegúrese de:  
 
     -   El proyecto de comando de menú aparece como componente MEF en la pestaña **Activos** de **source.extensions.manifest** en el proyecto VSIX.  
 
@@ -375,7 +370,4 @@ namespace SwapClassNames
  [Definir restricciones de validación para modelos UML](../modeling/define-validation-constraints-for-uml-models.md)   
  [Editar diagramas de secuencia UML mediante la API de UML](../modeling/edit-uml-sequence-diagrams-by-using-the-uml-api.md)   
  [Programación con la API de UML](../modeling/programming-with-the-uml-api.md)   
- [Ejemplo de Comando para alinear formas en un diagrama de UML](http://go.microsoft.com/fwlink/?LinkID=213809)
-
-
-
+ [Ejemplo: Comando para alinear formas en un diagrama de UML](http://go.microsoft.com/fwlink/?LinkID=213809)

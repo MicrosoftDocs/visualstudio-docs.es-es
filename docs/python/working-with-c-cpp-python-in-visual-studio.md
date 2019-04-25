@@ -2,21 +2,20 @@
 title: Escritura de extensiones de C++ para Python
 description: Un tutorial para crear una extensión de C++ para Python mediante Visual Studio, CPython y PyBind11, incluida la depuración en modo mixto.
 ms.date: 11/19/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 96921c3b711fa1f2d01bee343d68891cf246bc6b
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: 9c81984e8921e44e32b58ae7f5c5c27c5fe8b12f
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54315636"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366905"
 ---
 # <a name="create-a-c-extension-for-python"></a>Creación de una extensión de C++ para Python
 
@@ -39,7 +38,7 @@ El ejemplo completo de este tutorial se puede encontrar en [python-samples-vs-cp
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-- Visual Studio 2017 con las cargas de trabajo **Desarrollo para el escritorio con C++** y **Desarrollo de Python** instaladas con opciones predeterminadas.
+- Visual Studio 2017 o versiones posteriores con las cargas de trabajo **Desarrollo para el escritorio con C++** y **Desarrollo de Python** instaladas con opciones predeterminadas.
 - En la carga de trabajo **Desarrollo de Python**, seleccione también el cuadro de la derecha de **Herramientas de desarrollo nativo de Python**. Esta opción establece la mayor parte de la configuración descrita en este artículo. (Esta opción también incluye la carga de trabajo de C++ automáticamente).
 
     ![Selección de la opción Herramientas de desarrollo nativo Python](media/cpp-install-native.png)
@@ -108,7 +107,7 @@ Siga las instrucciones de esta sección para crear dos proyectos de C++ idéntic
 1. Busque "C++", seleccione **Proyecto vacío**, especifique el nombre "superfastcode" ("superfastcode2" para el segundo proyecto) y seleccione **Aceptar**.
 
     > [!Tip]
-    > Con las **herramientas de desarrollo nativo de Python** instaladas en Visual Studio 2017, puede comenzar con la plantilla **Módulo de extensión de Python**, que incluye gran parte de lo que se describe a continuación. En este tutorial partiremos de un proyecto vacío para mostrar la compilación del módulo de extensión paso a paso. Una vez que comprenda el proceso, la plantilla le permite ahorrar tiempo al escribir sus propias extensiones.
+    > Con las **herramientas de desarrollo nativo de Python** instaladas en Visual Studio, puede comenzar con la plantilla **Módulo de extensión de Python**, que incluye gran parte de lo que se describe a continuación. En este tutorial partiremos de un proyecto vacío para mostrar la compilación del módulo de extensión paso a paso. Una vez que comprenda el proceso, la plantilla le permite ahorrar tiempo al escribir sus propias extensiones.
 
 1. Cree un archivo de C++ en el nuevo proyecto. Para ello, haga clic con el botón derecho en el nodo **Archivos de código fuente**, seleccione **Agregar** > **Nuevo elemento**, seleccione **Archivo de C++**, asígnele el nombre `module.cpp` y seleccione **Aceptar**.
 
@@ -285,7 +284,7 @@ El primer método funciona si el proyecto de Python y el de C++ se encuentran en
 
 El método alternativo, que se describe en los pasos siguientes, instala el módulo en el entorno global de Python, lo que hace que esté disponible también para otros proyectos de Python. Normalmente, realizar esta acción requiere actualizar la base de datos de finalización de IntelliSense para ese entorno en Visual Studio 2017, versión 15.5 y anteriores. También es necesario actualizar al quitar el módulo del entorno.
 
-1. Si usa Visual Studio 2017, ejecute el instalador de Visual Studio, seleccione **Modificar**, seleccione **Componentes individuales** > **Compiladores, herramientas de compilación y entornos de ejecución** > **Conjunto de herramientas de Visual C++ 2015.3 v140**. Este paso es necesario porque que Python (para Windows) se compila con Visual Studio 2015 (versión 14.0) y espera que esas herramientas estén disponibles al compilar una extensión mediante el método descrito aquí. (tenga en cuenta que puede que necesite instalar una versión de 32 bits de Python y establecer el DLL como Win32 y no como x64).
+1. Si usa Visual Studio 2017 o versiones posteriores, ejecute el instalador de Visual Studio, seleccione **Modificar**, seleccione **Componentes individuales** > **Compiladores, herramientas de compilación y entornos de ejecución** > **Conjunto de herramientas de Visual C++ 2015.3 v140**. Este paso es necesario porque que Python (para Windows) se compila con Visual Studio 2015 (versión 14.0) y espera que esas herramientas estén disponibles al compilar una extensión mediante el método descrito aquí. (tenga en cuenta que puede que necesite instalar una versión de 32 bits de Python y establecer el DLL como Win32 y no como x64).
 
 1. Cree un archivo denominado *setup.py* en el proyecto de C++; para ello, haga clic con el botón derecho en el proyecto y seleccione **Agregar** > **Nuevo elemento**. Luego, seleccione **Archivo C++ (.cpp)**, asigne el nombre `setup.py` al archivo y seleccione **Aceptar** (al nombrar el archivo con la extensión *.py*, Visual Studio lo reconoce como Python aunque use la plantilla de archivos de C++). Cuando aparezca el archivo en el editor, pegue el código siguiente en él tal y como sea adecuado para el método de extensión:
 
@@ -323,7 +322,7 @@ El método alternativo, que se describe en los pasos siguientes, instala el mód
 
     setup(
         name = 'superfastcode2',
-        version = '1.0',    
+        version = '1.0',
         description = 'Python package with superfastcode2 C++ extension (PyBind11)',
         ext_modules = [sfc_module],
     )
@@ -404,12 +403,12 @@ Existen diversos métodos para crear extensiones de Python, como se describe en 
 | --- | --- | --- | --- | --- |
 | Módulos de extensión de C/C++ para CPython | 1991 | biblioteca estándar | [Amplia documentación y tutoriales](https://docs.python.org/3/c-api/). Control total. | Compilación, portabilidad, administración de referencias. Extensos conocimientos de C. |
 | [PyBind11](https://github.com/pybind/pybind11) (recomendado para C++) | 2015 |  | Biblioteca ligera de solo encabezados para crear los enlaces de Python de código de C++ existente. Pocas dependencias. Compatibilidad con PyPy. | Más reciente, menos maduro. Uso intensivo de características de C++11. Lista reducida de compiladores compatibles (incluye Visual Studio). |
-| Cython (recomendado para C) | 2007 | [gevent](https://www.gevent.org/), [kivy](https://kivy.org/) | Semejante a Python. Muy maduro. Alto rendimiento. | Compilación, nueva sintaxis y nueva cadena de herramientas. |
+| Cython (recomendado para C) | 2007 | [gevent](https://www.gevent.org/), [kivy](https://kivy.org/) | Semejante a Python. Muy maduro. Alto rendimiento. | Compilación, nueva sintaxis y nueva cadena de herramientas. |
 | [Boost.Python](https://www.boost.org/doc/libs/1_66_0/libs/python/doc/html/index.html) | 2002 | | Funciona con casi todos los compiladores de C++. | Conjunto grande y complejo de bibliotecas; contiene muchas soluciones alternativas para los compiladores anteriores. |
 | ctypes | 2003 | [oscrypto](https://github.com/wbond/oscrypto) | Sin compilación, amplia disponibilidad. | El acceso y la mutación de estructuras de C son complicados y propensos a errores. |
 | SWIG | 1996 | [crfsuite](http://www.chokkan.org/software/crfsuite/) | Generar enlaces para muchos lenguajes a la vez. | Sobrecarga excesiva si Python es el único destino. |
 | cffi | 2013 | [cryptography](https://cryptography.io/en/latest/), [pypy](https://pypy.org/) | Facilidad de integración, compatibilidad con PyPy. | Más reciente, menos maduro. |
-| [cppyy](https://cppyy.readthedocs.io/en/latest/) | 2017 | | Similar a cffi con C++. | Más reciente, puede tener algunos problemas con Visual Studio 2017. |  
+| [cppyy](https://cppyy.readthedocs.io/en/latest/) | 2017 | | Similar a cffi con C++. | Más reciente, puede tener algunos problemas con Visual Studio 2017. |
 
 ## <a name="see-also"></a>Vea también
 

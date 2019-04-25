@@ -1,25 +1,20 @@
 ---
 title: Uso de GPU | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 957fed3c-4ded-4e05-87c6-ccc33de65349
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3068f614275c14d022ed4d74fa6a10ffe396f68b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: eef55dd0e5af443379b2685ccab9bd2de8074e0d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817508"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066720"
 ---
 # <a name="gpu-usage"></a>Uso de GPU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +40,7 @@ La herramienta Uso de GPU del concentrador de rendimiento y diagnóstico de Visu
   
 #### <a name="to-start-the-gpu-usage-tool"></a>Para iniciar la herramienta Uso de GPU:  
   
-1. En el menú principal, seleccione **Depurar** y **Rendimiento y diagnósticos** (teclado: presione Alt+F2).  
+1. En el menú principal, seleccione **Depurar** y **Rendimiento y diagnósticos** (teclado: Alt + F2).  
   
 2. En el concentrador de rendimiento y diagnóstico, active la casilla junto a **Uso de GPU**. Si lo prefiere, active las casillas situadas junto a otras herramientas que le interesen. Puede ejecutar varias herramientas de rendimiento y diagnóstico de forma simultánea para obtener una imagen más completa del rendimiento de la aplicación.  
   
@@ -99,7 +94,7 @@ La herramienta Uso de GPU del concentrador de rendimiento y diagnóstico de Visu
 |--------------------|-----------------|  
 |**Process**|El nombre del proceso que le interesa. Este menú desplegable contiene todos los procesos que usan la GPU durante la sesión de diagnóstico. El color asocia con el proceso en este menú es el color de la actividad del subproceso en las escalas de tiempo que aparecen más abajo.|  
 |**Subproceso**|El identificador de subproceso que le interesa. En una aplicación multiproceso, este elemento puede ayudarle a aislar los subprocesos específicos del proceso que le interesa. En cada línea de tiempo se resaltan los eventos asociados con el subproceso seleccionado.|  
-|**Pantalla**|Número de la pantalla cuya frecuencia de actualización se muestra. **Nota**: Algunos controladores pueden configurarse para mostrar varias pantallas físicas como una única pantalla virtual más grande. En ese caso, solo aparecería una pantalla en la lista, incluso aunque la máquina esté conectada a varias pantallas.|  
+|**Pantalla**|El número de la pantalla cuya frecuencia de actualización se muestra **Nota:**  Algunos controladores pueden configurarse para mostrar varias pantallas físicas como una única pantalla virtual más grande. En ese caso, solo aparecería una pantalla en la lista, incluso aunque la máquina esté conectada a varias pantallas.|  
 |**Filtrar**|Las palabras clave que le interesan. Solo aparecerán en la parte inferior del informe los eventos que coincidan, total o parcialmente, con una palabra clave. Si desea especificar varias palabras clave, sepárelas con punto y coma (;).|  
 |**Orden de jerarquía**|Una casilla que indica si se deben conservar o ignorar las jerarquías de eventos que se han definido con marcadores de usuario.|  
   
@@ -122,11 +117,11 @@ La herramienta Uso de GPU del concentrador de rendimiento y diagnóstico de Visu
   
 #### <a name="to-postpone-profiling-from-the-start-of-the-app"></a>Para posponer la generación de perfiles de modo que no se produzca al iniciar la aplicación:  
   
-1.  En el menú principal, seleccione **Depurar** y **Rendimiento y diagnósticos** (teclado: presione Alt+F2).  
+1. En el menú principal, seleccione **Depurar** y **Rendimiento y diagnósticos** (teclado: Alt + F2).  
   
-2.  En el concentrador de rendimiento y diagnóstico, siga el vínculo de **configuración** situado junto a **Uso de GPU**.  
+2. En el concentrador de rendimiento y diagnóstico, siga el vínculo de **configuración** situado junto a **Uso de GPU**.  
   
-3.  En **GPU Profiling Configuration** (Configuración de generación de perfiles de GPU), vaya a la página de propiedades **General** y desactive la casilla **Begin profiling at app start** (Comenzar la generación de perfiles al iniciar la aplicación) para posponer la generación de perfiles.  
+3. En **GPU Profiling Configuration** (Configuración de generación de perfiles de GPU), vaya a la página de propiedades **General** y desactive la casilla **Begin profiling at app start** (Comenzar la generación de perfiles al iniciar la aplicación) para posponer la generación de perfiles.  
   
      ![Configure cuándo se inicia la recopilación de uso de GPU](../debugger/media/gfx-diag-gpu-usage-config.png "gfx_diag_gpu_usage_config")  
   
@@ -135,7 +130,7 @@ La herramienta Uso de GPU del concentrador de rendimiento y diagnóstico de Visu
   
  Si pospone la recopilación de la información de generación de perfiles con esta opción, cuando ejecute la aplicación con la herramienta Uso de GPU, aparecerá otro vínculo en la parte inferior de la ventana de esta herramienta. Para iniciar la recopilación de la información de generación de perfiles, haga clic en el vínculo **Iniciar** del mensaje **Inicie la recopilación de datos detallados adicionales del uso de GPU**.  
   
-##  <a name="hwsupport"></a> Compatibilidad de hardware y controladores  
+## <a name="hwsupport"></a> Compatibilidad de hardware y controladores  
  Se admiten el hardware y los controladores de GPU siguientes:  
   
 |Vendor|Descripción de GPU|Versión del controlador necesaria|  
@@ -148,13 +143,10 @@ La herramienta Uso de GPU del concentrador de rendimiento y diagnóstico de Visu
   
 ## <a name="see-also"></a>Vea también  
   
--   [Solucionar los problemas de gráficos más relevantes de los juegos con las herramientas DirectX (vídeo)](http://channel9.msdn.com/Events/GDC/GDC-2015/Solve-the-Tough-Graphics-Problems-with-your-Game-Using-DirectX-Tools)  
+- [Solucionar los problemas de gráficos más relevantes de los juegos con las herramientas DirectX (vídeo)](http://channel9.msdn.com/Events/GDC/GDC-2015/Solve-the-Tough-Graphics-Problems-with-your-Game-Using-DirectX-Tools)  
   
--   [Herramienta Uso de GPU de Visual Studio (vídeo)](http://channel9.msdn.com/Events/Visual-Studio/Connect-event-2014/715)  
+- [Herramienta Uso de GPU de Visual Studio (vídeo)](http://channel9.msdn.com/Events/Visual-Studio/Connect-event-2014/715)  
   
--   [Herramienta Uso de GPU de Visual Studio 2013 Update 4 CTP1 (blog)](http://blogs.msdn.com/b/vcblog/archive/2014/09/05/gpu-usage-tool-in-visual-studio-2013-update-4-ctp1.aspx)  
+- [Herramienta Uso de GPU de Visual Studio 2013 Update 4 CTP1 (blog)](http://blogs.msdn.com/b/vcblog/archive/2014/09/05/gpu-usage-tool-in-visual-studio-2013-update-4-ctp1.aspx)  
   
--   [Uso de GPU para DirectX en Visual Studio (blog)](http://blogs.msdn.com/b/ianhu/archive/2014/12/16/gpu-usage-for-directx-in-visual-studio.aspx)
-
-
-
+- [Uso de GPU para DirectX en Visual Studio (blog)](http://blogs.msdn.com/b/ianhu/archive/2014/12/16/gpu-usage-for-directx-in-visual-studio.aspx)

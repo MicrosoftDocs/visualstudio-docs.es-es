@@ -1,23 +1,24 @@
 ---
 title: Editor XML
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5c1c81abbbc2f252744c465adf1cb99b3396d54
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 39e069dfd65294ed3d40342816e871757378a57b
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53873776"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526196"
 ---
 # <a name="xml-editor"></a>Editor XML
 
-El editor XML se basa en el editor de texto de Visual Studio e incluye compatibilidad adicional para los lenguajes XML. El editor XML incluye las siguientes características:
+El editor XML en Visual Studio se basa en el editor de texto e incluye compatibilidad adicional para los lenguajes XML. Al abrir un archivo XML en Visual Studio, se abre en el editor XML.
+
+El editor XML incluye las siguientes características:
 
 - Comprobación de sintaxis XML 1.0.
 
@@ -33,13 +34,13 @@ El editor XML se basa en el editor de texto de Visual Studio e incluye compatibi
 
 - Conversión de una DTD o de un esquema reducido de datos XML (XDR) en un esquema XML.
 
-- Comprobación de sintaxis XSLT 1.0.
+- Comprobación de sintaxis XSLT.
 
 - Esquematización de documentos, de manera que los elementos se pueden expandir y contraer.
 
 - Integración con el [Explorador de esquemas XML](../xml-tools/xml-schema-explorer.md). Esto proporciona una vista jerárquica de esquemas XML.
 
-El editor XML se invoca para las extensiones de archivo conocidas, como *.xml*, *.xsd*, *.xsl*, y *.config*. También se invoca en extensión de archivo desconocidas si el archivo parece contener XML. También puede abrir cualquier archivo con el editor XML mediante el **abrir con** opción y seleccione el editor XML en la lista.
+El editor XML se invoca para las extensiones de archivo conocidas, como *.xml*, *.xsd*, *.xsl*, y *.config*. También se invoca en extensión de archivo desconocidas si el archivo parece contener XML.
 
 ## <a name="xslt-intellisense"></a>XSLT IntelliSense
 
@@ -47,7 +48,7 @@ El editor XML se invoca para las extensiones de archivo conocidas, como *.xml*, 
 
 ## <a name="xslt-profiler"></a>Generador de perfiles XSLT
 
-El [generador de perfiles XSLT](../xml-tools/walkthrough-xslt-profiler.md) crea rendimiento XSLT detallados informes que le ayudan a medir, evaluarán y solucionar problemas relacionados con el rendimiento en el código XSLT. El generador de perfiles XSLT incluye también sugerencias útiles para la optimización de hoja de estilos XSL y XSLT.
+El [generador de perfiles XSLT](../xml-tools/xslt-profiler.md) crea rendimiento XSLT detallados informes que le ayudan a medir, evaluarán y solucionar problemas relacionados con el rendimiento en el código XSLT. El generador de perfiles XSLT incluye también sugerencias útiles para la optimización de hoja de estilos XSL y XSLT.
 
 ## <a name="xslt-hierarchy"></a>Jerarquía XSLT
 
@@ -55,6 +56,8 @@ El [herramienta de la jerarquía XSLT](../xml-tools/walkthrough-using-xslt-hiera
 
 ## <a name="see-also"></a>Vea también
 
-- [Características del editor de código](../ide/writing-code-in-the-code-and-text-editor.md) proporciona información sobre el editor de texto.
-- [Referencia de las normas XML](https://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401) proporciona información sobre las tecnologías XML, incluidos XML, definición de tipo de documento (DTD), lenguaje de definición de esquemas XML (XSD) y XSLT.
+- [Opciones del editor XML - formato](../ide/reference/options-text-editor-xml-formatting.md)
+- [Opciones del editor XML - varias](../ide/reference/options-text-editor-xml-miscellaneous.md)
+- [Características del editor de código](../ide/writing-code-in-the-code-and-text-editor.md)
+- [Referencia de las normas XML](https://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401)
 - [Herramientas XML en Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)

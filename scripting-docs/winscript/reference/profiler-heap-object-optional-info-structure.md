@@ -2,7 +2,6 @@
 title: PROFILER_HEAP_OBJECT_OPTIONAL_INFO (estructura) | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -12,12 +11,12 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2d0159dd50d57aa77a62dc3b8536b50712b96df5
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 4c7f28499b5d6e1e01caab1e6fd83fc5ab72ccf6
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54087144"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58151042"
 ---
 # <a name="profilerheapobjectoptionalinfo-structure"></a>PROFILER_HEAP_OBJECT_OPTIONAL_INFO (Estructura)
 Representa información opcional sobre objetos de montón.  
@@ -32,12 +31,12 @@ typedef struct _PROFILER_HEAP_OBJECT_OPTIONAL_INFO{    PROFILER_HEAP_OBJECT_OPTI
   
 |Miembro|Tipo|Descripción|  
 |------------|----------|-----------------|  
-|tipo de información|[PROFILER_HEAP_OBJECT_OPTIONAL_INFO_TYPE (Enumeración)](../../winscript/reference/profiler-heap-object-optional-info-type-enumeration.md)|El tipo de la información opcional.|  
+|infoType|[PROFILER_HEAP_OBJECT_OPTIONAL_INFO_TYPE (Enumeración)](../../winscript/reference/profiler-heap-object-optional-info-type-enumeration.md)|El tipo de la información opcional.|  
 |prototipo|[PROFILER_HEAP_OBJECT_ID (Tipo)](../../winscript/reference/profiler-heap-object-id-type.md)|El identificador de objeto de prototipo del objeto de montón.|  
 |functionName|LPCWSTR|Nombre de la función del objeto de montón.|  
 |elementAttributesSize|UINT|El tamaño de los atributos del elemento del objeto de montón.|  
 |elementTextChildrenSize|UINT|El tamaño de los elementos secundarios de texto del objeto de montón.|  
-|ListaÁmbito|[PROFILER_HEAP_OBJECT_SCOPE_LIST (Estructura)](../../winscript/reference/profiler-heap-object-scope-list-structure.md)|Lista de ámbitos del objeto de montón.|  
+|scopeList|[PROFILER_HEAP_OBJECT_SCOPE_LIST (Estructura)](../../winscript/reference/profiler-heap-object-scope-list-structure.md)|Lista de ámbitos del objeto de montón.|  
 |internalProperty|[PROFILER_HEAP_OBJECT_RELATIONSHIP (Estructura)](../../winscript/reference/profiler-heap-object-relationship-structure.md)|Propiedad interna del objeto de montón.|  
 |namePropertyList|[PROFILER_HEAP_OBJECT_RELATIONSHIP_LIST (Estructura)](../../winscript/reference/profiler-heap-object-relationship-list-structure.md)|Una lista de propiedades de nombre del objeto de montón.|  
 |indexPropertyList|[PROFILER_HEAP_OBJECT_RELATIONSHIP_LIST (Estructura)](../../winscript/reference/profiler-heap-object-relationship-list-structure.md)|Una lista de propiedades del índice del objeto de montón.|  

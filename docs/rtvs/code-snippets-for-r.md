@@ -2,19 +2,18 @@
 title: Fragmentos de código para R
 description: Los fragmentos de código para R en Visual Studio ofrecen accesos directos para insertar rápidamente bloques de código de cualquier longitud, lo que evita que tenga que escribir código similar una y otra vez.
 ms.date: 01/24/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 0b9a06a747fb0169c22f251c1beb22dad3b86c9e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 05a21da94dd643b04cea94b7840ca26d9379cb5a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53860902"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55956368"
 ---
 # <a name="code-snippets"></a>Fragmentos de código
 

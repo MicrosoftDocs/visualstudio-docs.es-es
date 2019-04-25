@@ -6,15 +6,15 @@ helpviewer_keywords:
 - remote debugging, unblock download
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bfc212dff46cea4de494f46a439026c7d5a851bb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8a243033bf5831952d83fdf688302651e02b76b7
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53905350"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54988147"
 ---
 # <a name="how-to-unblock-the-download-of-the-remote-tools-on-windows-server"></a>Procedimiento Desbloquear la descarga de las herramientas remotas en Windows Server
 
@@ -43,13 +43,13 @@ Para descargar las herramientas de Windows Server, se recomienda uno de los sigu
   * download.microsoft.com
   * my.visualstudio.com
   * login.microsoftonline.com
-  * Login.Live.com
+  * login.live.com
   * secure.aadcdn.microsoftonline-p.com
-  * msft.STS.Microsoft.com
-  * auth.GFX.ms
+  * msft.sts.microsoft.com
+  * auth.gfx.ms
   * app.vssps.visualstudio.com
-  * vlscppe.Microsoft.com
-  * Query.prod.cms.RT.Microsoft.com
+  * vlscppe.microsoft.com
+  * query.prod.cms.rt.microsoft.com
 
     Si elige agregar estos dominios al descargar las herramientas remotas y luego elija **agregar** cuando se le solicite.
 

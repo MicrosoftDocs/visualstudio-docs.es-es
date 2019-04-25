@@ -1,27 +1,22 @@
 ---
 title: Marcadores de intervalo | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.markers.span
 ms.assetid: 736b7765-9c71-44d7-85e5-79787d13d91c
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 115ae981e463e0df744177c8158fa37376d23c74
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 8f733ccec12e422a11532b8012836422d14d93b9
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51805609"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54798038"
 ---
 # <a name="span-markers"></a>Marcadores de intervalo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,6 +41,3 @@ Un marcador de agregación de intervalo
 ## <a name="see-also"></a>Vea también  
  [Marcadores del visualizador de simultaneidad](../profiling/concurrency-visualizer-markers.md)   
  [SDK del visualizador de simultaneidad](../profiling/concurrency-visualizer-sdk.md)
-
-
-

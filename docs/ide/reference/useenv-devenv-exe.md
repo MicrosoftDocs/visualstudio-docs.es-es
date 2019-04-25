@@ -1,7 +1,6 @@
 ---
 title: -UseEnv (devenv.exe)
 ms.date: 01/10/2019
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - VC.Project.UseEnvVars.ExcludePath
@@ -17,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 2dd14603-a61b-42d2-ba31-427a0ee8a799
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f238cb2c426bcb931783b68a1ba0b4f3337e18b2
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: 37326bbe44eed15a562f0d28c01eac02973a2487
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54270398"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55918902"
 ---
 # <a name="useenv-devenvexe"></a>/UseEnv (devenv.exe)
 

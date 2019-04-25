@@ -3,14 +3,14 @@ title: Iniciar sesión en Visual Studio para Mac
 description: Cómo iniciar sesión en Visual Studio para Mac
 author: conceptdev
 ms.author: crdun
-ms.date: 05/06/2018
+ms.date: 04/02/2019
 ms.assetid: E4CFD03C-03AF-48CA-B409-6DB1CA45E991
-ms.openlocfilehash: b6a79982159c20d1d9634cd04117c859f8c69275
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: fe3b3ce45f72028e6081a849a9b10cad7a9916b5
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294232"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857468"
 ---
 # <a name="sign-in-to-visual-studio-for-mac"></a>Iniciar sesión en Visual Studio para Mac
 
@@ -24,7 +24,7 @@ Antes de iniciar sesión en Visual Studio para Mac, asegúrese de que está cone
 
 Para iniciar sesión en Visual Studio para Mac, siga estos pasos:
 
-1. Haga clic en el vínculo **Iniciar sesión** de la página principal para mostrar el cuadro de diálogo Cuentas y presione el botón **Iniciar sesión**:
+1. Haga clic en el botón **Iniciar sesión con Microsoft** en la ventana de inicio de sesión:
 
     ![Cuadro de diálogo de cuentas en Visual Studio para Mac](media/signing-in-image12.png)
 
@@ -34,7 +34,7 @@ Para iniciar sesión en Visual Studio para Mac, siga estos pasos:
 
     No puede usar las credenciales de Xamarin para iniciar sesión en Visual Studio para Mac.
 
-3.  Una vez que haya iniciado sesión, verá el tipo de licencia. En este cuadro de diálogo, puede agregar las cuentas Microsoft adicionales que quiera usar:
+3. Cuando haya iniciado sesión, verá la ventana de inicio de Visual Studio 2019 para Mac. Desde aquí, puede abrir o crear un proyecto:
 
     ![Inicio de sesión correcto](media/signing-in-image14.png)
 
@@ -42,9 +42,11 @@ Para iniciar sesión en Visual Studio para Mac, siga estos pasos:
 
 Visual Studio para Mac permite agregar varias cuentas a su cuenta de personalización. Estas cuentas adicionales le permitirán tener acceso a recursos, como Azure, desde cualquier cuenta agregada.
 
-Para agregar cuentas de usuario adicionales, siga los pasos descritos en la sección [Cómo iniciar sesión en Visual Studio para Mac](#how-to-sign-in-to-visual-studio-for-mac).
+Para agregar cuentas de usuario adicionales, elija el menú **Visual Studio > Cuenta...** en Visual Studio para Mac. Haga clic en el botón **Agregar...** para especificar las credenciales de la cuenta adicional.
+
+![Administración de cuentas](media/signing-in-image15.png)
 
 ## <a name="see-also"></a>Vea también
 
-- [Iniciar sesión en Visual Studio (en Windows)](/visualstudio/ide/signing-in-to-visual-studio)
-- [Trabajar con varias cuentas de usuario (Visual Studio en Windows)](/visualstudio/ide/work-with-multiple-user-accounts)
+- [Inicio de sesión en Visual Studio (en Windows)](/visualstudio/ide/signing-in-to-visual-studio)
+- [Trabajo con varias cuentas de usuario (Visual Studio en Windows)](/visualstudio/ide/work-with-multiple-user-accounts)

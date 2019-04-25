@@ -5,36 +5,36 @@ ms.topic: conceptual
 ms.assetid: ef60eb8d-1ac2-4e3a-9b4b-f6da0bdd9da8
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 826b399aa0ad0b5a45bc6fd80eb73b555cb3f01c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a462d22df9768d2ffc8b344933e9f5c1f556575a
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53836364"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56713599"
 ---
 # <a name="reference-programmatic-capture"></a>Referencia (captura mediante programación)
-Diagnóstico de gráficos admite el control mediante programación de sus características de captura a través de la API de captura mediante programación. Puede utilizar esta API para alternar y agregar mensajes al HUD (pantalla de visualización frontal) de diagnóstico de gráficos, inicializar y crear archivos de registro de gráficos, y capturar información de gráficos.  
+Diagnóstico de gráficos admite el control mediante programación de sus características de captura a través de la API de captura mediante programación. Puede utilizar esta API para alternar y agregar mensajes al HUD (pantalla de visualización frontal) de diagnóstico de gráficos, inicializar y crear archivos de registro de gráficos, y capturar información de gráficos.
 
-## <a name="programmatic-capture-apis"></a>API de captura mediante programación  
+## <a name="programmatic-capture-apis"></a>API de captura mediante programación
 
-### <a name="classes"></a>Clases  
+### <a name="classes"></a>Clases
 
-|nombre|Descripción|  
-|----------|-----------------|  
-|[Case VsgDbg](vsgdbg-class.md)|Representa la interfaz a través de la que se controla mediante programación el componente de aplicación de diagnóstico de gráficos.|  
+|nombre|Descripción|
+|----------|-----------------|
+|[Case VsgDbg](vsgdbg-class.md)|Representa la interfaz a través de la que se controla mediante programación el componente de aplicación de diagnóstico de gráficos.|
 
-### <a name="preprocessor-symbols"></a>Símbolos de preprocesador  
+### <a name="preprocessor-symbols"></a>Símbolos de preprocesador
 
-|nombre|Descripción|  
-|----------|-----------------|  
-|[DONT_SAVE_VSGLOG_TO_TEMP](dont-save-vsglog-to-temp.md)|Define por su presencia si el archivo de registro de gráficos se guarda en el directorio de archivos temporales del usuario.|  
-|[VSG_DEFAULT_RUN_FILENAME](vsg-default-run-filename.md)|Define el nombre de archivo predeterminado del archivo de registro de gráficos.|  
-|[VSG_NODEFAULT_INSTANCE](vsg-nodefault-instance.md)|Define por su presencia si se proporciona una instancia predeterminada de la clase `VsgDbg`.|  
+|nombre|Descripción|
+|----------|-----------------|
+|[DONT_SAVE_VSGLOG_TO_TEMP](dont-save-vsglog-to-temp.md)|Define por su presencia si el archivo de registro de gráficos se guarda en el directorio de archivos temporales del usuario.|
+|[VSG_DEFAULT_RUN_FILENAME](vsg-default-run-filename.md)|Define el nombre de archivo predeterminado del archivo de registro de gráficos.|
+|[VSG_NODEFAULT_INSTANCE](vsg-nodefault-instance.md)|Define por su presencia si se proporciona una instancia predeterminada de la clase `VsgDbg`.|
 
-## <a name="related-articles"></a>Artículos relacionados  
+## <a name="related-articles"></a>Artículos relacionados
 
 | Title | Descripción |
 | - | - |

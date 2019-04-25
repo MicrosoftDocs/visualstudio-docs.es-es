@@ -1,26 +1,21 @@
 ---
 title: Diseñar la tabla de comandos XML (. Archivos Vsct) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, designing
 ms.assetid: bb87a322-bac4-4258-92bc-9a876f05d653
 caps.latest.revision: 28
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6c7a4e07c45c5d651af057e1eb33c23d37601cb3
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 987536af051de4a66b3eccadb105fd98455ddf06
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51762813"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085916"
 ---
 # <a name="designing-xml-command-table-vsct-files"></a>Diseñar la tabla de comandos XML (. Archivos Vsct)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ Un archivo de tabla (.vsct) del comando XML describe el diseño y la apariencia 
   
  Cuando crea un nuevo VSPackage mediante la ejecución de la [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] plantilla de paquete, la plantilla genera un archivo .vsct con los elementos necesarios para un comando de menú, una ventana de herramientas o un editor personalizado, dependiendo de las selecciones. Este archivo .vsct, a continuación, se puede modificar para cumplir los requisitos de un VSPackage concreto. Para obtener ejemplos de cómo modificar un archivo .vsct, vea los ejemplos de [ampliación de menús y comandos](../../extensibility/extending-menus-and-commands.md).  
   
- Para crear un archivo .vsct en blanco, vea [Cómo: crear una. Archivo de Vsct](../../extensibility/internals/how-to-create-a-dot-vsct-file.md). Una vez creado, agregue elementos, atributos y valores XML al archivo para describir el diseño del elemento de comando. Para un esquema XML detallado, consulte el [VSCT XML Schema Reference](../../extensibility/vsct-xml-schema-reference.md).  
+ Para crear un archivo .vsct en blanco, vea [Cómo: Crear una. Archivo de Vsct](../../extensibility/internals/how-to-create-a-dot-vsct-file.md). Una vez creado, agregue elementos, atributos y valores XML al archivo para describir el diseño del elemento de comando. Para un esquema XML detallado, consulte el [VSCT XML Schema Reference](../../extensibility/vsct-xml-schema-reference.md).  
   
 ## <a name="differences-between-ctc-and-vsct-files"></a>Diferencias entre los archivos de CTC y .vsct  
  Aunque el significado de las etiquetas XML en un archivo .vsct es los mismos, como los de ahora en desuso de formato de archivo .ctc, su implementación es un poco diferente.  
@@ -71,7 +66,7 @@ Un archivo de tabla (.vsct) del comando XML describe el diseño y la apariencia 
   
   El nuevo compilador, vsct.exe, compila los archivos de CTC y .vsct. El compilador ctc.exe antiguo, sin embargo, no reconoce ni compilar archivos .vsct.  
   
-  Puede usar el compilador vsct.exe para convertir un archivo .cto existente en un archivo .vsct. Para obtener más información, vea [Cómo: crear una. Archivo de Vsct desde una existente. Archivo CTO](../../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file.md).  
+  Puede usar el compilador vsct.exe para convertir un archivo .cto existente en un archivo .vsct. Para obtener más información, vea [Cómo: Crear una. Archivo de Vsct desde una existente. Archivo CTO](../../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file.md).  
   
 ## <a name="the-vsct-file-elements"></a>Los elementos del archivo .vsct  
  La tabla de comandos tiene la jerarquía y los elementos siguientes:  
@@ -105,19 +100,19 @@ Un archivo de tabla (.vsct) del comando XML describe el diseño y la apariencia 
 ## <a name="vsct-file-design-guidelines"></a>. Instrucciones de diseño del archivo de Vsct  
  Para diseñar correctamente un archivo .vsct, siga estas instrucciones.  
   
--   Los comandos se pueden colocar solo en grupos, grupos se pueden colocar solo en los menús y menús pueden colocarse únicamente en grupos. Sólo los menús realmente se muestran en el IDE, grupos y los comandos no están.  
+- Los comandos se pueden colocar solo en grupos, grupos se pueden colocar solo en los menús y menús pueden colocarse únicamente en grupos. Sólo los menús realmente se muestran en el IDE, grupos y los comandos no están.  
   
--   No se puede asignar directamente a un menú submenús, pero deben asignarse a un grupo, que a su vez se asigna a un menú.  
+- No se puede asignar directamente a un menú submenús, pero deben asignarse a un grupo, que a su vez se asigna a un menú.  
   
--   Comandos, submenús y grupos pueden asignarse a un menú mediante el campo principal de su definición de directiva o grupo de la relación jerárquica.  
+- Comandos, submenús y grupos pueden asignarse a un menú mediante el campo principal de su definición de directiva o grupo de la relación jerárquica.  
   
--   Organización de una tabla de comandos únicamente a través de los campos de elemento primario en las directivas tiene una limitación importante. Las directivas que definen objetos pueden tomar el argumento de un único elemento primario.  
+- Organización de una tabla de comandos únicamente a través de los campos de elemento primario en las directivas tiene una limitación importante. Las directivas que definen objetos pueden tomar el argumento de un único elemento primario.  
   
--   Volver a usar los comandos, grupos o submenús requiere el uso de una directiva nueva para crear una nueva instancia del objeto con su propio `GUID:ID` par.  
+- Volver a usar los comandos, grupos o submenús requiere el uso de una directiva nueva para crear una nueva instancia del objeto con su propio `GUID:ID` par.  
   
--   Cada `GUID:ID` par debe ser único. Volver a usar un comando, por ejemplo, colocados en un menú, una barra de herramientas, o en un menú contextual, se controla mediante el <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfaz.  
+- Cada `GUID:ID` par debe ser único. Volver a usar un comando, por ejemplo, colocados en un menú, una barra de herramientas, o en un menú contextual, se controla mediante el <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfaz.  
   
--   Los comandos y submenús también pueden asignarse a varios grupos y grupos se pueden asignar a varios menús con el [elemento Commands](../../extensibility/commands-element.md).  
+- Los comandos y submenús también pueden asignarse a varios grupos y grupos se pueden asignar a varios menús con el [elemento Commands](../../extensibility/commands-element.md).  
   
 ## <a name="vsct-file-notes"></a>. Notas de archivo de Vsct  
  Si realiza cambios en un archivo .vsct después de que lo compilará y lo coloca en un archivo DLL nativo, debe ejecutar **devenv.exe /setup /nosetupvstemplates**. Esto obliga a los recursos de VSPackage especificados en el registro de experimental a leer y la base de datos interna que describe [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] se vuelvan a generar.  
@@ -130,4 +125,3 @@ Un archivo de tabla (.vsct) del comando XML describe el diseño y la apariencia 
   
 ## <a name="see-also"></a>Vea también  
  [Ampliación de menús y comandos](../../extensibility/extending-menus-and-commands.md)
-

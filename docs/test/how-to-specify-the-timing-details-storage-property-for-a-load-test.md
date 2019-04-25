@@ -8,16 +8,15 @@ helpviewer_keywords:
 ms.assetid: 867a9c21-0909-4963-bc02-d41e9393008c
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 43975e57e37a16522b483990c83d0db22a6eb27d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 94d996dbd069c258522418b9ca0be14bf54df156
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53896076"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55948698"
 ---
-# <a name="how-to-specify-the-timing-details-storage-property-for-a-load-test-run-setting"></a>Procedimiento para especificar la propiedad Almacenamiento de detalles de tiempo de los parámetros de ejecución de una prueba de carga
+# <a name="how-to-specify-the-timing-details-storage-property-for-a-load-test-run-setting"></a>Filtrar para especificar la propiedad Almacenamiento de detalles de tiempo de los parámetros de ejecución de una prueba de carga
 
 Después de crear la prueba de carga con el **Asistente para prueba de carga nueva**, puede usar el **Editor de pruebas de carga** para cambiar la configuración de modo que satisfaga las necesidades y los objetivos de la prueba.
 

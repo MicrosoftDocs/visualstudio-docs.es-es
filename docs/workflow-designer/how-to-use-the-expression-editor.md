@@ -2,21 +2,20 @@
 title: 'Diseñador de flujo de trabajo - Cómo: Usar el Editor de expresiones'
 ms.date: 11/04/2016
 ms.topic: conceptual
-ms.prod: visual-studio-dev15
 f1_keywords:
 - System.Activities.Presentation.View.ExpressionTextBox.UI
 ms.assetid: b5f961dd-6dda-41a9-9cae-0383d479ef3d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 63fca3051ce50f728cf83976f6ef6a5204ad35b8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ce46f1db900aa5c37b49a1cc228290d7d99d29a2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53956249"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117257"
 ---
 # <a name="how-to-use-the-expression-editor"></a>Procedimiento Usar el Editor de expresiones
 
@@ -37,18 +36,18 @@ El **Editor de expresiones** se comporta como sigue:
 
 ## <a name="use-the-expression-editor"></a>Usar el Editor de expresiones
 
-1.  En Visual Studio, abra un proyecto de flujo de trabajo nueva o existente.
+1. En Visual Studio, abra un proyecto de flujo de trabajo nueva o existente.
 
-2.  Por ejemplo, agregue la actividad <xref:System.Activities.Statements.Assign> a su flujo de trabajo.
+2. Por ejemplo, agregue la actividad <xref:System.Activities.Statements.Assign> a su flujo de trabajo.
 
     > [!NOTE]
     > Hay muchas actividades de flujo de trabajo que tienen editores de expresiones. También aparecen TextBlocks de expresión en el diseñador de variables, diseñador de argumentos y diseñador de argumentos dinámicos. La actividad <xref:System.Activities.Statements.Assign> se utiliza como ejemplo.
 
-3.  Haga clic en el editor de expresiones de la izquierda en el diseñador de actividades para la actividad <xref:System.Activities.Statements.Assign>.
+3. Haga clic en el editor de expresiones de la izquierda en el diseñador de actividades para la actividad <xref:System.Activities.Statements.Assign>.
 
      Las cadenas de marca de agua gris  **\<a >** y  **\<escriba una expresión de VB >** es cadenas de texto de la predeterminada para los editores de expresiones en el <xref:System.Activities.Statements.Assign> actividad.
 
-4.  Escriba su expresión. Si escribe una cadena, asegúrese de colocar comillas dobles en torno a la cadena. Si decide enlazar el argumento de expresión a una variable, no ponga las comillas dobles.
+4. Escriba su expresión. Si escribe una cadena, asegúrese de colocar comillas dobles en torno a la cadena. Si decide enlazar el argumento de expresión a una variable, no ponga las comillas dobles.
 
      Cuando haya terminado, seleccione una región o área fuera el Editor de expresiones para desplazar el foco a otra parte del diseñador. Desplazar el foco, hace que el compilador validar la expresión, como se describió anteriormente.
 

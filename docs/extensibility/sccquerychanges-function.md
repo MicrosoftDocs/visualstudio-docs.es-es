@@ -9,61 +9,66 @@ helpviewer_keywords:
 ms.assetid: 4cd58eb3-6952-49b1-9620-8682e3eaa604
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d6fabc1108f82c1cd2b43bf740e58c4ea9bb613e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d21dfe4418d033776431f4864f46412a798be204
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53910888"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56711714"
 ---
 # <a name="sccquerychanges-function"></a>SccQueryChanges (Función)
-Esta función enumera una lista de archivos, que proporciona información sobre los cambios de nombre para cada archivo a través de una función de devolución de llamada especificada.  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```cpp  
-SCCRTN SccQueryChanges(  
-   LPVOID           pContext,  
-   LONG             nFiles,  
-   LPCSTR*          lpFileNames,  
-   QUERYCHANGESFUNC pfnCallback,  
-   LPVOID           pvCallerData  
-);  
-```  
-  
-#### <a name="parameters"></a>Parámetros  
- pContext  
- [in] El puntero de contexto de complemento de control de código fuente.  
-  
- n  
- [in] Número de archivos en `lpFileNames` matriz.  
-  
- lpFileNames  
- [in] Matriz de nombres de archivo para obtener información acerca de.  
-  
- pfnCallback  
- [in] Función de devolución de llamada para llamar para cada nombre de archivo en la lista (consulte [QUERYCHANGESFUNC](../extensibility/querychangesfunc.md) para obtener más información).  
-  
- pvCallerData  
- [in] Valor que se pasa sin cambios a la función de devolución de llamada.  
-  
-## <a name="return-value"></a>Valor devuelto  
- La implementación de complemento de control de origen de esta función debe devolver uno de los valores siguientes:  
-  
-|Valor|Descripción|  
-|-----------|-----------------|  
-|SCC_OK|El proceso de consulta se completó correctamente.|  
-|SCC_E_PROJNOTOPEN|No se ha abierto el proyecto en control de código fuente.|  
-|SCC_E_ACCESSFAILURE|Hubo un problema al obtener acceso el sistema de control de código fuente, probablemente debido a problemas de red o de contención.|  
-|SCC_E_NONSPECIFICERROR|Se ha producido un error no especificado o general.|  
-  
-## <a name="remarks"></a>Comentarios  
- Son los cambios que se consulta al espacio de nombres: en concreto, el cambio de nombre, agregar y quitar un archivo.  
-  
-## <a name="see-also"></a>Vea también  
- [Funciones de API de complemento de Control de código fuente](../extensibility/source-control-plug-in-api-functions.md)   
- [QUERYCHANGESFUNC](../extensibility/querychangesfunc.md)   
- [Códigos de error](../extensibility/error-codes.md)
+Esta función enumera una lista de archivos, que proporciona información sobre los cambios de nombre para cada archivo a través de una función de devolución de llamada especificada.
+
+## <a name="syntax"></a>Sintaxis
+
+```cpp
+SCCRTN SccQueryChanges(
+   LPVOID           pContext,
+   LONG             nFiles,
+   LPCSTR*          lpFileNames,
+   QUERYCHANGESFUNC pfnCallback,
+   LPVOID           pvCallerData
+);
+```
+
+#### <a name="parameters"></a>Parámetros
+ pContext
+
+[in] El puntero de contexto de complemento de control de código fuente.
+
+ nFiles
+
+[in] Número de archivos en `lpFileNames` matriz.
+
+ lpFileNames
+
+[in] Matriz de nombres de archivo para obtener información acerca de.
+
+ pfnCallback
+
+[in] Función de devolución de llamada para llamar para cada nombre de archivo en la lista (consulte [QUERYCHANGESFUNC](../extensibility/querychangesfunc.md) para obtener más información).
+
+ pvCallerData
+
+[in] Valor que se pasa sin cambios a la función de devolución de llamada.
+
+## <a name="return-value"></a>Valor devuelto
+ La implementación de complemento de control de origen de esta función debe devolver uno de los valores siguientes:
+
+|Valor|Descripción|
+|-----------|-----------------|
+|SCC_OK|El proceso de consulta se completó correctamente.|
+|SCC_E_PROJNOTOPEN|No se ha abierto el proyecto en control de código fuente.|
+|SCC_E_ACCESSFAILURE|Hubo un problema al obtener acceso el sistema de control de código fuente, probablemente debido a problemas de red o de contención.|
+|SCC_E_NONSPECIFICERROR|Se ha producido un error no especificado o general.|
+
+## <a name="remarks"></a>Comentarios
+ Son los cambios que se consulta al espacio de nombres: en concreto, el cambio de nombre, agregar y quitar un archivo.
+
+## <a name="see-also"></a>Vea también
+- [Funciones de API de complemento de control de código fuente](../extensibility/source-control-plug-in-api-functions.md)
+- [QUERYCHANGESFUNC](../extensibility/querychangesfunc.md)
+- [Códigos de error](../extensibility/error-codes.md)

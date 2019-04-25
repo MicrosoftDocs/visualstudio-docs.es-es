@@ -1,52 +1,46 @@
 ---
-title: 'Cómo: crear fragmentos XML | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Crear fragmentos XML | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: d8556dd7-1382-4af7-ba80-3e873c9416be
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 38bec6de97a0b9d38891046a1a6b57f4d31541bf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: c6e6ec0cb8affbb820886f2bca163aae00d8536f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49818164"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101384"
 ---
-# <a name="how-to-create-xml-snippets"></a>Crear fragmentos de código XML
+# <a name="how-to-create-xml-snippets"></a>Procedimiento Crear fragmentos XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 El Editor XML se puede utilizar para crear nuevos fragmentos XML. El editor incluye un fragmento XML, llamado "Fragmento", que es un fragmento reutilizable que permite la creación de nuevos fragmentos XML.  
   
 ## <a name="to-create-a-new-xml-snippet"></a>Para crear un nuevo fragmento XML  
  Para crear un nuevo código XML fragmento de código, cree un nuevo archivo XML y usar el **Insertar fragmento de código** característica.  
   
-1.  En el **archivo** menú, haga clic en **New** y, a continuación, haga clic en **archivo**.  
+1. En el **archivo** menú, haga clic en **New** y, a continuación, haga clic en **archivo**.  
   
-2.  Haga clic en **archivo XML** y, a continuación, haga clic en **abierto**.  
+2. Haga clic en **archivo XML** y, a continuación, haga clic en **abierto**.  
   
-3.  Haga clic en el panel del editor y seleccione **Insertar fragmento de código**.  
+3. Haga clic en el panel del editor y seleccione **Insertar fragmento de código**.  
   
-4.  Seleccione **fragmento** en la lista y presione ENTRAR.  
+4. Seleccione **fragmento** en la lista y presione ENTRAR.  
   
-5.  Realice los cambios que considere oportunos en el nuevo fragmento.  
+5. Realice los cambios que considere oportunos en el nuevo fragmento.  
   
-6.  Desde el **archivo** menú, seleccione **guardar archivoXml.XML**.  
+6. Desde el **archivo** menú, seleccione **guardar archivoXml.XML**.  
   
      El **Guardar archivo como** se muestra el cuadro de diálogo.  
   
-7.  Escriba el nombre del nuevo fragmento y seleccione **archivos de fragmento** desde el **Guardar como tipo** ventana desplegable.  
+7. Escriba el nombre del nuevo fragmento y seleccione **archivos de fragmento** desde el **Guardar como tipo** ventana desplegable.  
   
-8.  Use la **guardar en** lista desplegable para cambiar la ubicación del archivo a la carpeta de Mis documentos\Visual Studio 2005\Code Snippets\XML\My XML Snippets y, a continuación, presione **guardar**.  
+8. Use la **guardar en** lista desplegable para cambiar la ubicación del archivo a la carpeta de Mis documentos\Visual Studio 2005\Code Snippets\XML\My XML Snippets y, a continuación, presione **guardar**.  
   
 ## <a name="snippet-description"></a>Descripción del fragmento  
  En esta sección se describen algunos de los elementos principales del fragmento reutilizable. Para obtener más información acerca de los elementos del esquema utilizado por los fragmentos de código XML, vea [referencia de esquemas de fragmentos de código](../ide/code-snippets-schema-reference.md).  
@@ -120,8 +114,5 @@ El Editor XML se puede utilizar para crear nuevos fragmentos XML. El editor incl
   
 ## <a name="see-also"></a>Vea también  
  [Fragmentos XML](../xml-tools/xml-snippets.md)   
- [Cómo: utilizar fragmentos XML](../xml-tools/how-to-use-xml-snippets.md)   
- [Cómo: Generar un fragmento de código XML a partir de un esquema XML](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)
-
-
-
+ [Cómo: Utilizar fragmentos XML](../xml-tools/how-to-use-xml-snippets.md)   
+ [Cómo: Generación de un fragmento de código XML a partir de un esquema XML](../xml-tools/how-to-generate-an-xml-snippet-from-an-xml-schema.md)

@@ -1,27 +1,22 @@
 ---
 title: 'Vista Árbol de llamadas: datos de contención | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Call Tree view
 ms.assetid: 9bd4bde2-2ca3-446c-9ccc-7421522e03ae
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 003e25121b3761a6e9440dcd4f0885975e0d98c1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5d12f1a2343018f05f0e741222b844c562b50f5e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51816468"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048390"
 ---
 # <a name="call-tree-view---contention-data"></a>Vista Árbol de llamadas: datos de contención
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +28,7 @@ La vista Árbol de llamadas muestra las rutas de acceso de ejecución de funcion
 ## <a name="highlighting-the-execution-hot-path"></a>Resaltar la ruta de acceso activa de ejecución  
  La vista Árbol de llamadas se puede expandir y resaltar la ruta de acceso de ejecución del proceso o la función que creó la mayoría de las contenciones.  
   
--   Para mostrar la ruta de acceso más activa, haga clic con el botón derecho en el proceso o función y, a continuación, haga clic en **Expandir ruta de acceso activa**.  
+- Para mostrar la ruta de acceso más activa, haga clic con el botón derecho en el proceso o función y, a continuación, haga clic en **Expandir ruta de acceso activa**.  
   
 ## <a name="setting-the-call-tree-root-node"></a>Establecer el nodo raíz del árbol de llamadas  
  Cada uno de los procesos de la generación de perfiles se muestra como nodo raíz. Para establecer el nodo inicial de la vista Árbol de llamadas, haga clic con el botón derecho en el nodo que desea establecer como nodo de inicio y, a continuación, haga clic en **Establecer raíz**.  
@@ -67,6 +62,3 @@ La vista Árbol de llamadas muestra las rutas de acceso de ejecución de funcion
  [Vista Árbol de llamadas: muestreo](../profiling/call-tree-view-dotnet-memory-sampling-data.md)   
  [Vista Árbol de llamadas](../profiling/call-tree-view-instrumentation-data.md)   
  [Vista Árbol de llamadas](../profiling/call-tree-view-sampling-data.md)
-
-
-

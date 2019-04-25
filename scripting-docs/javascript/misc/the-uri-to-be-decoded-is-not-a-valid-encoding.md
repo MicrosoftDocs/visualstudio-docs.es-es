@@ -1,14 +1,9 @@
 ---
 title: El URI que se desea descodificar no es una codificación válida | Documentos de Microsoft
-ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-client-threshold
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- javascript
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-windows
+ms.technology: vs-javascript
+ms.topic: reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5025
 dev_langs:
@@ -16,16 +11,15 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: 029e0790-ffd1-496d-8700-3b3dbac1b6fd
-caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2d37ca55dfd701aaeba2af729511a5ae6a4fa5f4
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 8fd8add72d016bc3f2e815f41c29c735505c8817
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54344387"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108430"
 ---
 # <a name="the-uri-to-be-decoded-is-not-a-valid-encoding"></a>El URI que se desea descodificar no tiene una codificación válida
 Se intentó descodificar un identificador URI formado incorrectamente (identificador uniforme de recursos). Los identificadores URI tienen una sintaxis especial; mayoría de los caracteres no alfanuméricos debe codificarse antes de que se pueden usar en un URI. Puede usar el `encodeURI` y `encodeURIComponent` métodos para crear un URI de una normal [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] cadena.  
@@ -40,7 +34,7 @@ Se intentó descodificar un identificador URI formado incorrectamente (identific
   
 ### <a name="to-correct-this-error"></a>Para corregir este error  
   
--   Asegúrese de que intenta descodificar a identificadores URI válidos solo. No se puede descodificar normal [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] cadenas, ya que pueden contener caracteres no válidos.  
+- Asegúrese de que intenta descodificar a identificadores URI válidos solo. No se puede descodificar normal [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] cadenas, ya que pueden contener caracteres no válidos.  
   
 ## <a name="see-also"></a>Vea también  
  [decodeURI (función)](../../javascript/reference/decodeuri-function-javascript.md)   

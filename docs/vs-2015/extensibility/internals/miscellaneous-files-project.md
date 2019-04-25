@@ -1,14 +1,9 @@
 ---
 title: Proyecto de archivos varios | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - files, adding existing files to solutions
 - Miscellaneous Files project
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: 93a278a8-d4f4-400b-8945-4f1b0a2b5bac
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e5786eb21813125237a35ed185542b5f73bdc839
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9c128475ad9f5cb71b98325bbece4e524507a08b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51777895"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58995896"
 ---
 # <a name="miscellaneous-files-project"></a>Proyecto de archivos varios
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ Cuando un usuario abre elementos del proyecto, el IDE asigna al proyecto archivo
   
  Los proyectos de desempeñan un papel importante en determinar qué editor se utiliza cuando un usuario abre un elemento de proyecto. Un proyecto puede diseñarse para abrir determinados archivos con un editor específico del proyecto o un editor estándar.  
   
- Normalmente, un editor específico del proyecto requiere que el usuario tiene un conocimiento especial o usar interfaces especiales del proyecto. Para obtener más información, consulte [Cómo: abrir editores específicos del proyecto](../../extensibility/how-to-open-project-specific-editors.md).  
+ Normalmente, un editor específico del proyecto requiere que el usuario tiene un conocimiento especial o usar interfaces especiales del proyecto. Para obtener más información, vea [Cómo: Apertura de editores específicos del proyecto](../../extensibility/how-to-open-project-specific-editors.md).  
   
  Un editor estándar puede abrir cualquier archivo de una extensión específica en cualquier proyecto. El usuario puede personalizar algunos editores estándares, como el [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] editor de texto, para los proyectos, pero siguen conservar su carácter público. Editores estándar se crean mediante el <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> método.  
   
@@ -46,8 +41,7 @@ Cuando un usuario abre elementos del proyecto, el IDE asigna al proyecto archivo
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument>   
  <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY>   
- [Cómo: abrir editores específicos del proyecto](../../extensibility/how-to-open-project-specific-editors.md)   
- [Cómo: abrir editores estándar](../../extensibility/how-to-open-standard-editors.md)   
+ [Cómo: Abrir editores específicos del proyecto](../../extensibility/how-to-open-project-specific-editors.md)   
+ [Cómo: Abrir editores estándar](../../extensibility/how-to-open-standard-editors.md)   
  [Adición de proyecto y plantillas de elemento de proyecto](../../extensibility/internals/adding-project-and-project-item-templates.md)   
  [Adición de plantillas de proyecto y de elementos de proyecto](../../extensibility/internals/adding-project-and-project-item-templates.md)
-

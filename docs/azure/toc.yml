@@ -2,19 +2,17 @@ items:
 - name: Desarrollo de Azure con Visual Studio
   href: index.yml
   expanded: true
-- name: Publicar en Azure
+- name: Implementación en Azure App Service
   items:
-  - name: Publicar una aplicación de ASP.NET Core en Azure
+  - name: Implementación de una aplicación ASP.NET Core en Azure
     href: /aspnet/core/tutorials/publish-to-azure-webapp-using-vs?view=aspnetcore-2.1
-  - name: Publicación de una aplicación web de lista de tareas de .NET en Azure
+  - name: Implementación de una aplicación web de lista de tareas .NET en Azure
     href: /dotnet/azure/dotnet-quickstart-vs?view=azure-dotnet
-  - name: Publicación de Azure Functions
-    href: /azure/azure-functions/functions-develop-vs?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
   - name: Implementación continua en Azure con Visual Studio y Git con ASP.NET Core
     href: /aspnet/core/host-and-deploy/azure-apps/azure-continuous-deployment?view=aspnetcore-2.1
   - name: Implementación continua en Azure con Azure Pipelines
     href: /azure/devops/pipelines/get-started-yaml?view=vsts
-  - name: Publicación de una aplicación web ASP.NET en una máquina virtual de Azure desde Visual Studio
+  - name: Implementación de una aplicación web ASP.NET en una máquina virtual de Azure
     href: /azure/virtual-machines/windows/publish-web-app-from-visual-studio?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
   expanded: true
 - name: Conexión a los servicios de Azure
@@ -77,19 +75,19 @@ items:
       href: vs-azure-tools-performance-profiling-cloud-services.md
     - name: Optimización del código de Azure
       href: vs-azure-tools-optimizing-azure-code-in-visual-studio.md
-  - name: Publicación de un servicio en la nube en Azure
+  - name: Implementación de un servicio en la nube en Azure
     items:
-    - name: Migración y publicación de una aplicación web a un servicio en la nube de Azure
+    - name: Migración e implementación de una aplicación web en un servicio en la nube de Azure
       href: vs-azure-tools-migrate-publish-web-app-to-cloud-service.md
-    - name: Uso del asistente para publicar una aplicación de Azure en Visual Studio
+    - name: Uso del asistente para implementación de Visual Studio en Azure
       href: vs-azure-tools-publish-azure-application-wizard.md
-    - name: Publicación de un servicio en la nube con Visual Studio
+    - name: Implementación de un servicio en la nube mediante Visual Studio
       href: vs-azure-tools-publishing-a-cloud-service.md
     - name: Uso de scripts de Windows PowerShell para publicar en entornos de desarrollo y prueba
       href: vs-azure-tools-publishing-using-powershell-scripts.md
-    - name: Publish-WebApplicationVM (script de Windows PowerShell)
+    - name: Deploy-WebApplicationVM (script de Windows PowerShell)
       href: vs-azure-tools-publish-webapplicationvm.md
-    - name: Publish-WebApplicationWebSite (script de Windows PowerShell)
+    - name: Deploy-WebApplicationWebSite (script de Windows PowerShell)
       href: vs-azure-tools-publish-webapplicationwebsite-windows-powershell-script.md
     - name: Administración de perfiles y configuraciones de servicio
       href: vs-azure-tools-service-configurations-and-profiles-how-to-manage.md
@@ -120,9 +118,9 @@ items:
     href: vs-azure-tools-resources-managing-with-cloud-explorer.md
   - name: Acceso a las máquinas virtuales de Azure desde el Explorador de servidores
     href: vs-azure-tools-virtual-machines-access-from-server-explorer.md
-ms.openlocfilehash: c0c4a4085432d18eed9b46b767069f18df39df8a
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: 212306b43f2be4ccb4fdee84945d317904f6f8b8
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51000834"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56629266"

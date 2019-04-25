@@ -1,14 +1,9 @@
 ---
 title: MT (Tarea) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - VC.Project.VCManifestTool.ResourceOutputFileName
 - VC.Project.VCManifestTool.SuppressDependencyElement
@@ -29,18 +24,17 @@ ms.assetid: bb94913c-1042-4968-9f08-b394518e899f
 caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c9b14de0b9e80379736dd7f6a02cb374d475fcda
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 93fd3bcff6fa16a4fb28521c58ff2caad6edafbb
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49214947"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59667916"
 ---
 # <a name="mt-task"></a>MT (Tarea)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Incluye la herramienta Manifiesto de Microsoft (mt.exe). Para obtener más información, vea "Mt.exe" en el sitio web de [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
 ## <a name="parameters"></a>Parámetros  
@@ -81,6 +75,3 @@ Incluye la herramienta Manifiesto de Microsoft (mt.exe). Para obtener más infor
   
 ## <a name="see-also"></a>Vea también  
  [Referencia de tareas](../msbuild/msbuild-task-reference.md)
-
-
-

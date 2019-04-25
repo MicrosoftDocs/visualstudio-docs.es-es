@@ -1,24 +1,23 @@
 ---
-title: Extensiones y actualizaciones, Entorno, Opciones (cuadro de diálogo)
-ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
+title: Extensiones, Entorno, Opciones (cuadro de diálogo)
+ms.date: 03/28/2019
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.ExtensionManager
 ms.assetid: c73859eb-3c33-4f39-86bf-6788387b5937
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 47784d19dee5ff911432f9849ebe4545ecee761f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d7c49cc7946f9fea988c57a4ba782ec93a6294fa
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53831042"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58646717"
 ---
-# <a name="extensions-and-updates-environment-options-dialog-box"></a>Extensiones y actualizaciones, Entorno, Opciones (cuadro de diálogo)
+# <a name="options-dialog-box-environment--extensions"></a>Cuadro de diálogo Opciones: Entorno \> Extensiones
 
 Utilice esta página para establecer las opciones de la manera en que Visual Studio realiza las actualizaciones y de cómo se actualizan y detectan las extensiones.
 
@@ -30,13 +29,13 @@ Al activar esta opción, Visual Studio comprobará periódicamente si hay actual
 
 Cuando se activa esta opción, las extensiones se actualizan sin preguntar. Para más información, vea [Buscar y usar extensiones de Visual Studio](../../ide/finding-and-using-visual-studio-extensions.md).
 
-## <a name="load-user-extensions-when-running-as-administrator"></a>Cargar las extensiones de usuario cuando se ejecuta como administrador
+## <a name="load-per-user-extensions-when-running-as-administrator"></a>Cargar las extensiones por usuario cuando se ejecuta como administrador
 
 Para más información, vea [Buscar y usar extensiones de Visual Studio](../../ide/finding-and-using-visual-studio-extensions.md).
 
 ## <a name="additional-extension-galleries"></a>Galerías de extensión adicionales
 
-Una característica empresarial que permite la compatibilidad para galerías de extensiones propias. Para más información, vea [Private Galleries](../../extensibility/private-galleries.md) (Galerías privadas).
+Una característica empresarial que permite la compatibilidad para galerías de extensiones propias. Para más información, consulte [Private galleries](../../extensibility/private-galleries.md) (Galerías privadas).
 
 ## <a name="see-also"></a>Vea también
 

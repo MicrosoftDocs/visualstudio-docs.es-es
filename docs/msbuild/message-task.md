@@ -15,49 +15,49 @@ helpviewer_keywords:
 ms.assetid: 2293309d-42b6-46dc-9684-8c146f66bc28
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 84f169d221ad8e6920844f2ccc2675277bb4af74
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b1d42f4d8a06e51c35387d07ecd21fa4970decc9
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53869838"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56643072"
 ---
 # <a name="message-task"></a>Message (tarea)
-Registra un mensaje durante una compilación.  
-  
-## <a name="parameters"></a>Parámetros  
- En la siguiente tabla se describen los parámetros de la tarea `Message` .  
-  
-|Parámetro|Descripción|  
-|---------------|-----------------|  
-|`Importance`|Parámetro `String` opcional.<br /><br /> Especifica la importancia del mensaje. Este parámetro puede tener un valor de `high`, `normal` o `low`. El valor predeterminado es `normal`.|  
-|`Text`|Parámetro `String` opcional.<br /><br /> El texto del error que se va a registrar.|  
-  
-## <a name="remarks"></a>Comentarios  
- La tarea `Message` permite a los proyectos de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] enviar mensajes a los registradores en etapas diferentes del proceso de compilación.  
-  
- Si el parámetro `Condition` se evalúa como `true`, se registrará el valor del parámetro `Text` y la compilación seguirá ejecutándose. Si no existe un parámetro `Condition`, se registra el texto del mensaje. Para obtener más información sobre los registros, vea [Obtener registros de compilación con MSBuild](../msbuild/obtaining-build-logs-with-msbuild.md).  
-  
- De forma predeterminada, el mensaje se envía al registrador de la consola de MSBuild. Esto se puede cambiar si se modifica el parámetro <xref:Microsoft.Build.Tasks.TaskExtension.Log%2A>. El registrador interpreta el parámetro `Importance`.  
-  
- Además de los parámetros mencionados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.TaskExtension>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de estos parámetros adicionales y sus descripciones, consulte [TaskExtension base class](../msbuild/taskextension-base-class.md).  
-  
-## <a name="example"></a>Ejemplo  
- El siguiente ejemplo de código registra mensajes para todos los registradores registrados.  
-  
-```xml  
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-    <Target Name="DisplayMessages">  
-        <Message Text="Project File Name = $(MSBuildProjectFile)" />  
-        <Message Text="Project Extension = $(MSBuildProjectExtension)" />  
-    </Target>  
-    ...  
-</Project>  
-```  
-  
-## <a name="see-also"></a>Vea también  
- [Referencia de tareas](../msbuild/msbuild-task-reference.md)   
- [Obtener registros de compilación](../msbuild/obtaining-build-logs-with-msbuild.md)
+Registra un mensaje durante una compilación.
+
+## <a name="parameters"></a>Parámetros
+ En la siguiente tabla se describen los parámetros de la tarea `Message` .
+
+|Parámetro|Descripción|
+|---------------|-----------------|
+|`Importance`|Parámetro `String` opcional.<br /><br /> Especifica la importancia del mensaje. Este parámetro puede tener un valor de `high`, `normal` o `low`. El valor predeterminado es `normal`.|
+|`Text`|Parámetro `String` opcional.<br /><br /> El texto del error que se va a registrar.|
+
+## <a name="remarks"></a>Comentarios
+ La tarea `Message` permite a los proyectos de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] enviar mensajes a los registradores en etapas diferentes del proceso de compilación.
+
+ Si el parámetro `Condition` se evalúa como `true`, se registrará el valor del parámetro `Text` y la compilación seguirá ejecutándose. Si no existe un parámetro `Condition`, se registra el texto del mensaje. Para obtener más información sobre los registros, vea [Obtener registros de compilación con MSBuild](../msbuild/obtaining-build-logs-with-msbuild.md).
+
+ De forma predeterminada, el mensaje se envía al registrador de la consola de MSBuild. Esto se puede cambiar si se modifica el parámetro <xref:Microsoft.Build.Tasks.TaskExtension.Log%2A>. El registrador interpreta el parámetro `Importance`.
+
+ Además de los parámetros mencionados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.TaskExtension>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de estos parámetros adicionales y sus descripciones, consulte [TaskExtension base class](../msbuild/taskextension-base-class.md).
+
+## <a name="example"></a>Ejemplo
+ El siguiente ejemplo de código registra mensajes para todos los registradores registrados.
+
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Target Name="DisplayMessages">
+        <Message Text="Project File Name = $(MSBuildProjectFile)" />
+        <Message Text="Project Extension = $(MSBuildProjectExtension)" />
+    </Target>
+    ...
+</Project>
+```
+
+## <a name="see-also"></a>Vea también
+- [Referencia de tareas](../msbuild/msbuild-task-reference.md)
+- [Obtener registros de compilación](../msbuild/obtaining-build-logs-with-msbuild.md)

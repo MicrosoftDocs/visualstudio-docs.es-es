@@ -11,16 +11,15 @@ helpviewer_keywords:
 ms.assetid: dafac00e-df9d-4d4a-95a6-e34b4d099425
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 17a56fcf0c89ef63033cdcd538e5b9cf9e3efe49
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 6454eb53bf6d171e469a4cf2758e0e10a76eab6e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53928294"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066122"
 ---
 # <a name="add-code-to-tableadapters-in-n-tier-applications"></a>Agregar código a TableAdapters en aplicaciones de n niveles
 Puede ampliar la funcionalidad de un TableAdapter mediante la creación de un archivo de clase parcial del TableAdapter y agregarle código (en lugar de agregar código a la *DatasetName.DataSet.Designer* archivo). Las clases parciales permiten código para una clase específica que va a dividir entre varios archivos físicos. Para obtener más información, consulte [parcial](/dotnet/visual-basic/language-reference/modifiers/partial) o [partial (tipos)](/dotnet/csharp/language-reference/keywords/partial-type).
@@ -39,17 +38,17 @@ De forma predeterminada, después de separar el conjunto de datos y el código d
 
 ## <a name="to-add-user-code-to-a-tableadapter-in-an-n-tier-application"></a>Para agregar código de usuario a un TableAdapter en una aplicación de n niveles
 
-1.  Busque el proyecto que contiene el *.xsd* archivo.
+1. Busque el proyecto que contiene el *.xsd* archivo.
 
-2.  Haga doble clic en el *.xsd* archivo para abrir el **Diseñador de Dataset**.
+2. Haga doble clic en el *.xsd* archivo para abrir el **Diseñador de Dataset**.
 
-3.  Haga clic en el TableAdapter que desea agregar el código a y, a continuación, seleccione **ver código**.
+3. Haga clic en el TableAdapter que desea agregar el código a y, a continuación, seleccione **ver código**.
 
      Una clase parcial se crea y se abre en el Editor de código.
 
-4.  Agregue el código dentro de la declaración de clase parcial.
+4. Agregue el código dentro de la declaración de clase parcial.
 
-5.  El ejemplo siguiente muestra dónde agregar código a la `CustomersTableAdapter` en el `NorthwindDataSet`:
+5. El ejemplo siguiente muestra dónde agregar código a la `CustomersTableAdapter` en el `NorthwindDataSet`:
 
     ```vb
     Partial Public Class CustomersTableAdapter

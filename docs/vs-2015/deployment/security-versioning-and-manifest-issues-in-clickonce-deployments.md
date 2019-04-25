@@ -1,14 +1,9 @@
 ---
-title: Seguridad, control de versiones y manifiestos problemas en implementaciones ClickOnce | Microsoft Docs
-ms.custom: ''
+title: Problemas de seguridad, control de versiones y manifiestos en implementaciones de ClickOnce | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -28,13 +23,13 @@ ms.assetid: d5d0c90b-ac1a-44e2-88dc-0d0ffd881624
 caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 77685b2eb6397d1edf9a342c25838fcefac2e619
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: e971271d17c88780ec543ffc12ed4c6ebcc48f23
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289229"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043685"
 ---
 # <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>Problemas de seguridad, versiones y manifiestos en implementaciones de ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,11 +67,11 @@ Hay una variedad de problemas con [!INCLUDE[ndptecclick](../includes/ndptecclick
   
  Si ha editado manualmente los manifiestos de implementación o aplicación, se pueden haberlos dañado involuntariamente. Un manifiesto dañado evitará una correcta [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] instalación. Puede depurar estos errores en tiempo de ejecución, haga clic en **detalles** en el **ClickOnce Error** cuadro de diálogo y leer el mensaje de error en el registro. El registro mostrará uno de los mensajes siguientes:  
   
--   Una descripción del error de sintaxis y el número de línea y el carácter posición donde se produjo el error.  
+- Una descripción del error de sintaxis y el número de línea y el carácter posición donde se produjo el error.  
   
--   El nombre de un elemento o atributo que se usa infringe el esquema del manifiesto. Si ha agregado manualmente XML a los manifiestos, tendrá que comparar las adiciones a los esquemas del manifiesto. Para obtener más información, consulte [del manifiesto de implementación ClickOnce](../deployment/clickonce-deployment-manifest.md) y [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md).  
+- El nombre de un elemento o atributo que se usa infringe el esquema del manifiesto. Si ha agregado manualmente XML a los manifiestos, tendrá que comparar las adiciones a los esquemas del manifiesto. Para obtener más información, consulte [del manifiesto de implementación ClickOnce](../deployment/clickonce-deployment-manifest.md) y [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md).  
   
--   Un conflicto de identificador. Las referencias de dependencias en los manifiestos de implementación y las aplicaciones deben ser únicas en ambos sus `name` y `publicKeyToken` atributos. Si ambos atributos coinciden entre dos elementos cualesquiera dentro de un manifiesto, análisis del manifiesto no se realizará correctamente.  
+- Un conflicto de identificador. Las referencias de dependencias en los manifiestos de implementación y las aplicaciones deben ser únicas en ambos sus `name` y `publicKeyToken` atributos. Si ambos atributos coinciden entre dos elementos cualesquiera dentro de un manifiesto, análisis del manifiesto no se realizará correctamente.  
   
 ## <a name="precautions-when-manually-changing-manifests-or-applications"></a>Precauciones al cambiar manualmente los manifiestos o aplicaciones  
  Cuando se actualiza un manifiesto de aplicación, deberá volver a firmar el manifiesto de aplicación y el manifiesto de implementación. El manifiesto de implementación contiene una referencia al manifiesto de aplicación que incluye el hash de ese archivo y su firma digital.  
@@ -99,6 +94,3 @@ Hay una variedad de problemas con [!INCLUDE[ndptecclick](../includes/ndptecclick
  [Solucionar problemas en implementaciones ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)   
  [Proteger las aplicaciones ClickOnce](../deployment/securing-clickonce-applications.md)   
  [Elegir una estrategia de implementación ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md)
-
-
-

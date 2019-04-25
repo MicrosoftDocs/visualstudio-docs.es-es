@@ -1,7 +1,6 @@
 ---
 title: 'CA2000: Desechar objetos antes de perder el ámbito'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA2000
@@ -13,18 +12,18 @@ helpviewer_keywords:
 ms.assetid: 0c3d7d8d-b94d-46e8-aa4c-38df632c1463
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d6aa3574e71cf64e01d083171e8bb477da02265
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b986e5219c1e8d437651feebeec09eb4ca3dd5cb
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53951136"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662691"
 ---
 # <a name="ca2000-dispose-objects-before-losing-scope"></a>CA2000: Desechar objetos antes de perder el ámbito
 
@@ -148,7 +147,6 @@ Public Function OpenPort2(ByVal PortName As String) As SerialPort
       If Not tempPort Is Nothing Then
          tempPort.Close()
       End If
-
 
    End Try
 

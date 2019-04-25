@@ -1,7 +1,7 @@
-# [Visual Studio para Mac](index.md)
-# [Paseo por el IDE](/visualstudio/mac/ide-tour/)
+# [Visual Studio para Mac](index.yml)
+# [Paseo por el IDE](ide-tour.md)
 
-# [Instalación](/visualstudio/mac/installation/)
+# [Instalación](installation.md)
 ## [Instalar y usar detrás de un firewall o proxy](install-behind-a-firewall-or-proxy-server.md)
 ## [Instalar una versión preliminar](install-preview.md)
 ## [Actualizar](update.md)
@@ -9,11 +9,10 @@
 
 # [Cuentas de usuario](user-accounts.md)
 ## [Iniciar sesión](signing-in.md)
-## [Habilitar la suscripción](activation.md)
+## [Habilitar la suscripción](enable-subscription.md)
 
 # [Personalizar el IDE](customizing-the-ide.md)
 ## [Extender Visual Studio para Mac](extending-visual-studio-mac.md)
-
 
 # [Proyectos y soluciones](projects-and-solutions.md)
 ## [Crear proyectos](create-new-projects.md)
@@ -33,7 +32,7 @@
 ## [Selección de bloques](block-selection.md)
 ## [Temas del editor](editor-themes.md)
 ## [EditorConfig](editorconfig.md)
-## [Accesos directos comunes del teclado](keyboard-shortcuts.md)
+## [Métodos abreviados de teclado predeterminados](keyboard-shortcuts.md)
 
 # [Depuración](debugging.md)
 ## [Visualizaciones de datos](data-visualizations.md)
@@ -41,6 +40,7 @@
 # [Compilar y generar en Visual Studio](compiling-and-building.md)
 ## [Compilar y limpiar proyectos y soluciones](building-and-cleaning-projects-and-solutions.md)
 ## [Acciones de compilación](build-actions.md)
+## [Cómo: Establecimiento de varios proyectos de inicio](set-startup-projects.md)
 ## [Personalizar el sistema de compilación](customizing-build-system.md)
 ## [Configuraciones](configurations.md)
 ### [Crear y editar configuraciones](create-and-edit-configurations.md)
@@ -52,10 +52,14 @@
 ## [Configurar un repositorio de Subversion](set-up-subversion-repository.md)
 ## [Trabajar con Subversion](working-with-subversion.md)
 
+# [Implementación de aplicaciones web](web-app-deployment.md)
+## [Publicación en Azure App Service](publish-app-svc.md)
+## [Publicación en una carpeta](publish-folder.md)
+
 # [Cargas de trabajo](workloads.md)
 ## [ASP.NET Core](asp-net-core.md)
 ### [Razor](razor.md)
-### [JavaScript](javascript.md)
+### [JavaScript y TypeScript](javascript.md)
 ## [Azure](azure-workload.md)
 ### [Introducción a Azure Functions](azure-functions.md)
 ### [Tutorial: Azure Functions](azure-functions-lab.md)
@@ -65,10 +69,12 @@
 ### [Uso de herramientas de Unity](using-vsmac-tools-unity.md)
 ### [Uso de .NET 4.x en Unity](/visualstudio/cross-platform/unity-scripting-upgrade/?context=visualstudio/mac/context)
 ### [Registro de cambios](/visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac/?context=visualstudio/mac/context)
-## [Aplicaciones móviles con Xamarin](/xamarin/)
+## [Aplicaciones móviles con Xamarin](/visualstudio/mac/xamarin)
 
 # [Accesibilidad](accessibility.md)
 
 # [Solución de problemas](troubleshooting.md)
 ## [Programa para la mejora de la experiencia del usuario de Visual Studio](visual-studio-experience-improvement-program.md)
 ## [Notificar un problema](report-a-problem.md)
+## [Solución de problemas: ¿Por qué no puedo ver todas las plantillas?](troubleshooting-no-templates.md)
+## [Solución de problemas: Se producen errores en el actualizador al recuperar información](updater-troubleshooting.md)

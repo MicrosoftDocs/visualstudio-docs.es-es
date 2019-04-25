@@ -1,14 +1,9 @@
 ---
 title: Agregar elemento existente (Comando) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - project.addexistingitem
 helpviewer_keywords:
@@ -18,18 +13,17 @@ ms.assetid: 41f56131-d4c7-4f81-83b7-bdac713ea870
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: c27c548ae4eff4f2087050060f5bcf51d8e86755
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 8ad1ab33de1aa0d25f7beff0dac43ebedbf0f6b4
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49197137"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658076"
 ---
 # <a name="add-existing-item-command"></a>Agregar elemento existente (Comando)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Agrega un archivo existente a la solución actual y lo abre.  
   
 ## <a name="syntax"></a>Sintaxis  
@@ -40,7 +34,7 @@ File.AddExistingItem filename [/e:editorname]
   
 ## <a name="arguments"></a>Argumentos  
  `filename`  
- Requerido. El nombre de archivo y la ruta de acceso completa, con extensión, del elemento que se agregará a la solución actual. Si el nombre de archivo o la ruta de acceso contienen espacios, incluya la ruta de acceso completa entre comillas.  
+ Obligatorio. El nombre de archivo y la ruta de acceso completa, con extensión, del elemento que se agregará a la solución actual. Si el nombre de archivo o la ruta de acceso contienen espacios, incluya la ruta de acceso completa entre comillas.  
   
 ## <a name="switches"></a>Modificadores  
  /e: `editorname`  
@@ -67,6 +61,3 @@ File.AddExistingItem filename [/e:editorname]
  [Ventana Comandos](../../ide/reference/command-window.md)   
  [Cuadro Buscar/Comando](../../ide/find-command-box.md)   
  [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
-
-
-

@@ -9,16 +9,15 @@ helpviewer_keywords:
 - constraints, architectural
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: f4a044481b1e359b2021b16da1f0b2b5aba8a872
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f5973643d8f87b4c992209e6512c51bc275de60b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53924428"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090122"
 ---
 # <a name="dependency-diagrams-guidelines"></a>Diagramas de dependencia: instrucciones
 
@@ -27,11 +26,11 @@ Describe la arquitectura de la aplicación en un nivel alto mediante la creació
 Para ver qué ediciones de Visual Studio admiten esta característica, vea [compatibilidad con la edición de arquitectura y las herramientas de modelado](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 > [!NOTE]
-> Diagramas de dependencia no se admiten para los proyectos de .NET Core en Visual Studio 2017.
+> Diagramas de dependencia no se admiten para los proyectos de .NET Core en Visual Studio.
 
 ## <a name="what-is-a-dependency-diagram"></a>¿Qué es un diagrama de dependencias?
 
-Como un diagrama de arquitectura tradicional, un diagrama de dependencia identifica los componentes primarios o las unidades funcionales del diseño y sus interdependencias. Cada nodo en el diagrama, denominado un *capa*, representa un grupo lógico de espacios de nombres, proyectos u otros artefactos. Puede dibujar las dependencias que debería haber en el diseño. A diferencia de un diagrama de arquitectura tradicional, puede comprobar que las dependencias reales del código fuente se ajustan a las dependencias especificadas que se pretenden. Al incluir la validación en el proceso de compilación normal de [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)], tiene la garantía de que el código de programa seguirá ajustándose a la arquitectura del sistema cuando se realicen cambios. Consulte [diagramas de dependencia: Referencia](../modeling/layer-diagrams-reference.md).
+Como un diagrama de arquitectura tradicional, un diagrama de dependencia identifica los componentes primarios o las unidades funcionales del diseño y sus interdependencias. Cada nodo en el diagrama, denominado un *capa*, representa un grupo lógico de espacios de nombres, proyectos u otros artefactos. Puede dibujar las dependencias que debería haber en el diseño. A diferencia de un diagrama de arquitectura tradicional, puede comprobar que las dependencias reales del código fuente se ajustan a las dependencias especificadas que se pretenden. Al incluir la validación en el proceso de compilación normal de [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)], tiene la garantía de que el código de programa seguirá ajustándose a la arquitectura del sistema cuando se realicen cambios. Consulte [diagramas de dependencia: referencia](../modeling/layer-diagrams-reference.md).
 
 ## <a name="how-to-design-or-update-your-app-with-dependency-diagrams"></a>Cómo diseñar o actualizar la aplicación con diagramas de dependencia
 
@@ -40,21 +39,21 @@ Los pasos siguientes proporcionan una visión general de cómo utilizar los diag
 > [!NOTE]
 > Estos pasos aparecen en un orden aproximado. Es probable que desee superponer las tareas, reorganizarlas para que se adapten a su situación particular y revisarlas al inicio de cada iteración del proyecto.
 
-1.  [Crear un diagrama de dependencia](#Create) para toda la aplicación, o para una capa dentro de él.
+1. [Crear un diagrama de dependencia](#Create) para toda la aplicación, o para una capa dentro de él.
 
-2.  [Definir capas para representar las principales áreas o componentes funcionales](#CreateLayers) de la aplicación. Denomine estos niveles según su función, por ejemplo, "Presentación" o "Servicios". Si tiene una solución de Visual Studio, puede asociar cada capa a una colección de *artefactos*, como proyectos, espacios de nombres, archivos y así sucesivamente.
+2. [Definir capas para representar las principales áreas o componentes funcionales](#CreateLayers) de la aplicación. Denomine estos niveles según su función, por ejemplo, "Presentación" o "Servicios". Si tiene una solución de Visual Studio, puede asociar cada capa a una colección de *artefactos*, como proyectos, espacios de nombres, archivos y así sucesivamente.
 
-3.  [Detecte las dependencias existentes](#Generate) entre capas.
+3. [Detecte las dependencias existentes](#Generate) entre capas.
 
-4.  [Modifique las capas y dependencias](#EditArchitecture) para mostrar la actualización que desea que el código para reflejar el diseño.
+4. [Modifique las capas y dependencias](#EditArchitecture) para mostrar la actualización que desea que el código para reflejar el diseño.
 
-5.  [Diseñe nuevas áreas de la aplicación](#NewAreas) mediante la creación de capas que representen los principales bloques arquitectónicos o componentes y definir las dependencias para mostrar cómo cada capa emplea las otras.
+5. [Diseñe nuevas áreas de la aplicación](#NewAreas) mediante la creación de capas que representen los principales bloques arquitectónicos o componentes y definir las dependencias para mostrar cómo cada capa emplea las otras.
 
-6.  [Editar el diseño y la apariencia del diagrama](#EditLayout) que le ayudarán a ponerse en contacto con sus compañeros.
+6. [Editar el diseño y la apariencia del diagrama](#EditLayout) que le ayudarán a ponerse en contacto con sus compañeros.
 
-7.  [Valide el código con el diagrama de dependencia](#Validate) para resaltar los conflictos entre el código y la arquitectura necesaria.
+7. [Valide el código con el diagrama de dependencia](#Validate) para resaltar los conflictos entre el código y la arquitectura necesaria.
 
-8.  [Actualice el código para que se ajuste a la nueva arquitectura](#UpdateCode). Desarrolle y refactorice el código en iteraciones hasta que la validación no muestre ningún conflicto.
+8. [Actualice el código para que se ajuste a la nueva arquitectura](#UpdateCode). Desarrolle y refactorice el código en iteraciones hasta que la validación no muestre ningún conflicto.
 
 9. [Incluir validación de capas en el proceso de compilación](#BuildValidation) para asegurarse de que el código seguirá ajustándose a su diseño.
 
@@ -80,11 +79,11 @@ Al actualizar una aplicación desconocida, también puede crear mapas de código
 
 Vea:
 
--   [Creación de diagramas de dependencia a partir del código](../modeling/create-layer-diagrams-from-your-code.md)
+- [Creación de diagramas de dependencia a partir del código](../modeling/create-layer-diagrams-from-your-code.md)
 
--   [Usar mapas de código para depurar aplicaciones](../modeling/use-code-maps-to-debug-your-applications.md)
+- [Usar mapas de código para depurar aplicaciones](../modeling/use-code-maps-to-debug-your-applications.md)
 
--   [Asignar dependencias en las soluciones](../modeling/map-dependencies-across-your-solutions.md)
+- [Asignar dependencias en las soluciones](../modeling/map-dependencies-across-your-solutions.md)
 
 ## <a name="Generate"></a> Detectar las dependencias existentes entre capas
 
@@ -124,13 +123,13 @@ Si esto no es el caso, el código será más difícil de cambiar a lo largo de s
 
 Cuando comience el desarrollo de un nuevo proyecto, o una nueva área de un nuevo proyecto, puede dibujar capas y dependencias que le ayuden a identificar los componentes primarios antes de empezar a desarrollar el código.
 
--   **Muestre modelos arquitectónicos identificables** en los diagramas de dependencia, si es posible. Por ejemplo, un diagrama de dependencia que describe una aplicación de escritorio puede incluir capas como presentación, lógica del dominio y Store de datos. Un diagrama de dependencia que abarque una única característica dentro de una aplicación puede tener las capas modelo, vista y controlador. Para obtener más información acerca de estos patrones, consulte [Patterns & Practices: Arquitectura de la aplicación](http://go.microsoft.com/fwlink/?LinkId=145794).
+- **Muestre modelos arquitectónicos identificables** en los diagramas de dependencia, si es posible. Por ejemplo, un diagrama de dependencia que describe una aplicación de escritorio puede incluir capas como presentación, lógica del dominio y Store de datos. Un diagrama de dependencia que abarque una única característica dentro de una aplicación puede tener las capas modelo, vista y controlador. Para obtener más información acerca de estos patrones, consulte [Patterns & Practices: Arquitectura de la aplicación](http://go.microsoft.com/fwlink/?LinkId=145794).
 
--   **Crear un artefacto de código para cada capa** como un espacio de nombres, clase o componente. De este modo, le resultará más fácil hacer un seguimiento del código y vincular los artefactos de código a las capas. Tan pronto como cree cada uno de los artefactos, vincúlelo a la capa apropiada.
+- **Crear un artefacto de código para cada capa** como un espacio de nombres, clase o componente. De este modo, le resultará más fácil hacer un seguimiento del código y vincular los artefactos de código a las capas. Tan pronto como cree cada uno de los artefactos, vincúlelo a la capa apropiada.
 
--   **No es necesario vincular la mayoría de las clases y otros artefactos a las capas** pues pertenecen a artefactos mayores, como espacios de nombres que ya han vinculado a las capas.
+- **No es necesario vincular la mayoría de las clases y otros artefactos a las capas** pues pertenecen a artefactos mayores, como espacios de nombres que ya han vinculado a las capas.
 
--   **Cree un nuevo diagrama de una nueva característica**. Normalmente, habrá uno o varios diagramas de dependencia que describe toda la aplicación. Si está diseñando una nueva característica de la aplicación, no agregue ni cambie los diagramas existentes. En su lugar, cree un diagrama propio en el que refleje los nuevos elementos del código. Las capas del nuevo diagrama pueden incluir las capas de la presentación, la lógica del dominio y la base de datos de la nueva característica.
+- **Cree un nuevo diagrama de una nueva característica**. Normalmente, habrá uno o varios diagramas de dependencia que describe toda la aplicación. Si está diseñando una nueva característica de la aplicación, no agregue ni cambie los diagramas existentes. En su lugar, cree un diagrama propio en el que refleje los nuevos elementos del código. Las capas del nuevo diagrama pueden incluir las capas de la presentación, la lógica del dominio y la base de datos de la nueva característica.
 
      Cuando compile la aplicación, el código se validará con el diagrama general y con el diagrama más detallado de la característica.
 
@@ -138,11 +137,11 @@ Cuando comience el desarrollo de un nuevo proyecto, o una nueva área de un nuev
 
 Para que le resulte más fácil identificar las capas y dependencias o para analizarlas con los miembros del equipo, edite el aspecto y el diseño del diagrama de los siguientes modos:
 
--   Cambiar el tamaño, la forma y la posición de las capas.
+- Cambiar el tamaño, la forma y la posición de las capas.
 
--   Cambiar el color de las capas y las dependencias.
+- Cambiar el color de las capas y las dependencias.
 
-    -   Seleccione una o varias capas o dependencias, con el botón secundario y, a continuación, haga clic en **propiedades**. En el **propiedades** ventana, edite el **Color** propiedad.
+    - Seleccione una o varias capas o dependencias, con el botón secundario y, a continuación, haga clic en **propiedades**. En el **propiedades** ventana, edite el **Color** propiedad.
 
 ## <a name="Validate"></a> Valide el código con el diagrama
 
@@ -150,17 +149,17 @@ Cuando se ha editado el diagrama, puede validarlo con el código manualmente en 
 
 Vea:
 
--   [Validación de código con diagramas de dependencia](../modeling/validate-code-with-layer-diagrams.md)
+- [Validación de código con diagramas de dependencia](../modeling/validate-code-with-layer-diagrams.md)
 
--   [Incluir validación de capas en el proceso de compilación](#BuildValidation)
+- [Incluir validación de capas en el proceso de compilación](#BuildValidation)
 
 ## <a name="UpdateCode"></a> Actualice el código para que se ajuste a la nueva arquitectura
 
 Normalmente, los errores aparecerán la primera vez que valide el código con un diagrama de dependencias actualizado. Estos errores pueden tener varias causas:
 
--   Un artefacto se ha asignado a la capa equivocada. En este caso, mueva el artefacto.
+- Un artefacto se ha asignado a la capa equivocada. En este caso, mueva el artefacto.
 
--   Un artefacto, como por ejemplo una clase, usa otra clase de forma que hay conflictos con su arquitectura. En este caso, tiene que refactorizar el código para quitar la dependencia.
+- Un artefacto, como por ejemplo una clase, usa otra clase de forma que hay conflictos con su arquitectura. En este caso, tiene que refactorizar el código para quitar la dependencia.
 
 Para resolver estos errores, actualice el código hasta no aparezcan más errores durante la validación. Normalmente, este es un proceso iterativo. Para obtener más información acerca de estos errores, vea [validar código con diagramas de dependencia](../modeling/validate-code-with-layer-diagrams.md).
 
@@ -175,5 +174,5 @@ Para asegurarse de que los cambios futuros en el código se ajustan a los diagra
 
 ## <a name="see-also"></a>Vea también
 
-- [Diagramas de dependencia: Referencia](../modeling/layer-diagrams-reference.md)
+- [Diagramas de dependencia: referencia](../modeling/layer-diagrams-reference.md)
 - [Creación de diagramas de dependencia a partir del código](../modeling/create-layer-diagrams-from-your-code.md)

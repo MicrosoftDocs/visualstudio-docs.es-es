@@ -1,14 +1,9 @@
 ---
 title: -Build (devenv.exe) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - builds [Team System], command-line
 - /build Devenv switch
@@ -18,18 +13,17 @@ ms.assetid: ced21627-7653-455b-8821-3e31c6a448cf
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 070dcb383b25315e363b822da87409eb953a9ac7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4c6f5f80512371ae323fbbfe143eb98bffbe7d98
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49186419"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668371"
 ---
 # <a name="build-devenvexe"></a>/Build (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Compila una solución mediante un archivo de configuración de solución especificado.  
   
 ## <a name="syntax"></a>Sintaxis  
@@ -40,10 +34,10 @@ Devenv SolutionName /build SolnConfigName [/project ProjName [/projectconfig Pro
   
 ## <a name="arguments"></a>Argumentos  
  `SolutionName`  
- Requerido. Ruta de acceso completa y nombre del archivo de solución.  
+ Obligatorio. Ruta de acceso completa y nombre del archivo de solución.  
   
  `SolnConfigName`  
- Requerido. El nombre de la configuración de solución que se usará para compilar la solución mencionada en `SolutionName`.  
+ Obligatorio. El nombre de la configuración de solución que se usará para compilar la solución mencionada en `SolutionName`.  
   
  /project `ProjName`  
  Opcional. Ruta de acceso y nombre de un archivo de proyecto dentro de la solución. Puede especificar una ruta de acceso relativa desde la carpeta `SolutionName` al archivo del proyecto (o el nombre para mostrar del proyecto), o bien la ruta de acceso completa y el nombre del archivo del proyecto.  
@@ -73,6 +67,3 @@ devenv "C:\Documents and Settings\someuser\My Documents\Visual Studio\Projects\M
  [/Rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md)   
  [/Clean (devenv.exe)](../../ide/reference/clean-devenv-exe.md)   
  [/Out (devenv.exe)](../../ide/reference/out-devenv-exe.md)
-
-
-

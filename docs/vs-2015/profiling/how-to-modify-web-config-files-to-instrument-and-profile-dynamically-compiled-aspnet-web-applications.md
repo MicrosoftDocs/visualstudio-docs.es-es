@@ -1,27 +1,22 @@
 ---
-title: Procedimiento Modificar archivos web.config para instrumentar y generar perfiles de aplicaciones web ASP.NET compiladas dinámicamente | Microsoft Docs
-ms.custom: ''
+title: 'Cómo: Modificar archivos web.config para instrumentar y generar perfiles de aplicaciones web ASP.NET compiladas dinámicamente | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: a92e5692-2183-4ae3-9431-b067c6a7aab4
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 471f2d2a0413cbf5932c980f195a49504bd975aa
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: a16ad46722213a703785d08209d68b3c4ee6b04f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53860733"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099599"
 ---
-# <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Procedimiento Modificar archivos web.config para instrumentar y generar perfiles de aplicaciones web ASP.NET compiladas dinámicamente
+# <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Cómo: Modificar archivos web.config para instrumentar y generar perfiles de aplicaciones web ASP.NET compiladas dinámicamente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Puede usar el método de instrumentación de las herramientas de generación de perfiles [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para recopilar datos detallados de tiempo, los datos de asignación de memoria de .NET y datos de duración de objetos .NET de aplicaciones web compiladas de forma dinámica [!INCLUDE[vstecasp](../includes/vstecasp-md.md)].  
@@ -43,27 +38,27 @@ Puede usar el método de instrumentación de las herramientas de generación de 
   
 ### <a name="to-add-the-aspnethelper-assembly-as-a-configurationruntimeassemblybindingdependentassembly-element"></a>Para agregar el ensamblado ASPNetHelper como un elemento configuration/runtime/assemblyBinding/dependentAssembly  
   
-1.  Si es necesario, agregue el elemento **runtime** como un elemento secundario del elemento **configuration**; en caso contrario, vaya al siguiente paso.  
+1. Si es necesario, agregue el elemento **runtime** como un elemento secundario del elemento **configuration**; en caso contrario, vaya al siguiente paso.  
   
      El elemento **runtime** no tiene atributos. El elemento **configuration** solo puede tener un elemento secundario **runtime**.  
   
-2.  Si es necesario, agregue el elemento **assemblyBinding** como un elemento secundario del elemento **runtime**; en caso contrario, vaya al siguiente paso.  
+2. Si es necesario, agregue el elemento **assemblyBinding** como un elemento secundario del elemento **runtime**; en caso contrario, vaya al siguiente paso.  
   
      El elemento **runtime** solo puede tener un elemento **assemblyBinding**.  
   
-3.  Agregue el siguiente nombre y valor de atributo para el elemento **assemblyBinding**:  
+3. Agregue el siguiente nombre y valor de atributo para el elemento **assemblyBinding**:  
   
     |Nombre de atributo|Valor del atributo|  
     |--------------------|---------------------|  
     |**Xmlns**|**urn:schemas-microsoft-com:asm.v1**|  
   
-4.  Agregue un elemento **dependentAssembly** como un elemento secundario del elemento **assemblyBinding**.  
+4. Agregue un elemento **dependentAssembly** como un elemento secundario del elemento **assemblyBinding**.  
   
      El elemento **dependentAssembly** no tiene atributos.  
   
-5.  Agregue un elemento **assemblyIdentity** como elemento secundario del elemento **dependentAssembly**.  
+5. Agregue un elemento **assemblyIdentity** como elemento secundario del elemento **dependentAssembly**.  
   
-6.  Agregue el siguiente nombre y valor de atributo para el elemento **assemblyIdentity**:  
+6. Agregue el siguiente nombre y valor de atributo para el elemento **assemblyIdentity**:  
   
     |Nombre de atributo|Valor del atributo|  
     |--------------------|---------------------|  
@@ -71,9 +66,9 @@ Puede usar el método de instrumentación de las herramientas de generación de 
     |**PublicKeyToken**|**b03f5f7f11d50a3a**|  
     |**culture**|**Neutral**|  
   
-7.  Agregue un elemento **codeBase** como elemento secundario del elemento **dependentAssembly**.  
+7. Agregue un elemento **codeBase** como elemento secundario del elemento **dependentAssembly**.  
   
-8.  Agregue el siguiente nombre y valor de atributo para el elemento **codeBase**:  
+8. Agregue el siguiente nombre y valor de atributo para el elemento **codeBase**:  
   
     |Nombre de atributo|Valor del atributo|  
     |--------------------|---------------------|  
@@ -103,15 +98,15 @@ Puede usar el método de instrumentación de las herramientas de generación de 
   
 ### <a name="to-add-the-profiler-post-process-step-to-the-configurationsystemwebcompilation-element"></a>Para agregar el paso posterior al proceso del generador de perfiles al elemento configuration/system.web/compilation  
   
-1.  Si es necesario, agregue el elemento **system.web** como un elemento secundario del elemento **configuration**; en caso contrario, vaya al siguiente paso.  
+1. Si es necesario, agregue el elemento **system.web** como un elemento secundario del elemento **configuration**; en caso contrario, vaya al siguiente paso.  
   
      El elemento **system.web** no tiene atributos. El elemento **configuration** solo puede tener un elemento secundario **system.web**.  
   
-2.  Si es necesario, agregue el elemento **compilation** como un elemento secundario del elemento **system.web**, en caso contrario, vaya al siguiente paso.  
+2. Si es necesario, agregue el elemento **compilation** como un elemento secundario del elemento **system.web**, en caso contrario, vaya al siguiente paso.  
   
      El elemento **system.web** solo puede tener un elemento secundario **compilation**.  
   
-3.  Quite cualquier atributo existente del elemento **compilation** y agregue el siguiente nombre y valor de atributo:  
+3. Quite cualquier atributo existente del elemento **compilation** y agregue el siguiente nombre y valor de atributo:  
   
     |Nombre de atributo|Valor del atributo|  
     |--------------------|---------------------|  
@@ -135,22 +130,22 @@ Puede usar el método de instrumentación de las herramientas de generación de 
   
 ### <a name="to-add-profiler-location-settings-to-the-configurationappsettings-element"></a>Para agregar valores de ubicación del generador de perfiles al elemento configuration/appSettings  
   
-1.  Si es necesario, agregue el elemento **system.appSettings** como un elemento secundario del elemento **configuration**; en caso contrario, vaya al siguiente paso.  
+1. Si es necesario, agregue el elemento **system.appSettings** como un elemento secundario del elemento **configuration**; en caso contrario, vaya al siguiente paso.  
   
      El elemento **system.appSettings** no tiene atributos. El elemento **configuration** solo puede tener un elemento secundario **appSettings**.  
   
-2.  Agregue un elemento **add** como elemento secundario del elemento **appSettings**.  
+2. Agregue un elemento **add** como elemento secundario del elemento **appSettings**.  
   
-3.  Agregue el siguiente nombre y valor de atributo para el elemento **add**:  
+3. Agregue el siguiente nombre y valor de atributo para el elemento **add**:  
   
     |Nombre de atributo|Valor del atributo|  
     |--------------------|---------------------|  
     |**key**|**Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrLocation**|  
     |**value**|`PerformanceToolsFolder` **\VSInstr.Exe**|  
   
-4.  Agregue otro elemento **add** como elemento secundario del elemento **appSettings**.  
+4. Agregue otro elemento **add** como elemento secundario del elemento **appSettings**.  
   
-5.  Agregue el siguiente nombre y valor de atributo para este elemento **add**:  
+5. Agregue el siguiente nombre y valor de atributo para este elemento **add**:  
   
     |Nombre de atributo|Valor del atributo|  
     |--------------------|---------------------|  
@@ -228,7 +223,4 @@ Puede usar el método de instrumentación de las herramientas de generación de 
   
 ## <a name="see-also"></a>Vea también  
  [Cómo: Instrumentar una aplicación ASP.NET compilada dinámicamente y recopilar datos de control de tiempo detallados](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler-by-using-the-command-line.md)   
- [Cómo: Instrumentación de una aplicación ASP.NET compilada dinámicamente y recopilar datos de memoria](/visualstudio/profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data?view=vs-2015)
-
-
-
+ [Cómo: Instrumentar una aplicación ASP.NET compilada dinámicamente y recopilar datos de memoria](/visualstudio/profiling/how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data?view=vs-2015)

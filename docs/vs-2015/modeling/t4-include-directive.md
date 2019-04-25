@@ -1,23 +1,20 @@
 ---
 title: T4 Directiva Include | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 8c3de9f3-755a-47c5-a30a-65717dcaaac2
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: e8de721b7f26152cd4e7f5df1ee7eb4d04770511
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 6b475b8e5c2138c909133aee0440f0dcaea99e13
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49835948"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057711"
 ---
 # <a name="t4-include-directive"></a>Directiva Include T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -115,7 +112,7 @@ Output message 5 (from top template).
   
 ```  
   
-##  <a name="msbuild"></a> Uso de las propiedades del proyecto de MSBuild y Visual Studio  
+## <a name="msbuild"></a> Uso de las propiedades del proyecto de MSBuild y Visual Studio  
  Aunque puede usar macros de Visual Studio como $ (SolutionDir) en una directiva include, estas macros no funcionan en MSBuild. Si desea transformar plantillas del equipo de compilación, tiene que utilizar las propiedades del proyecto.  
   
  Modifique el archivo .csproj o .vbproj para definir una propiedad de proyecto. En este ejemplo se define una propiedad denominada `myIncludeFolder`:  
@@ -140,6 +137,3 @@ Output message 5 (from top template).
 ```  
 <#@ include file="$(myIncludeFolder)\defs.tt" #>  
 ```
-
-
-

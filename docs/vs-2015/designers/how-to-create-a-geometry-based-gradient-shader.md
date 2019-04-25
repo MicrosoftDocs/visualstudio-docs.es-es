@@ -1,40 +1,35 @@
 ---
-title: 'Cómo: Crear un sombreador de degradado basado en geometría | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Crear un sombreador de degradado basado en geometría | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 4b204405-ba95-4c5e-bd51-ec033a3ebfb6
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 61dd80bb8d8ba4c272beff018d3ab65ffce41dc6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 8735931e761f7d511615b5be7e93e0198a6b1a45
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49911881"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071725"
 ---
-# <a name="how-to-create-a-geometry-based-gradient-shader"></a>Cómo: Crear un sombreador de gradiente basado en geometría
+# <a name="how-to-create-a-geometry-based-gradient-shader"></a>Procedimiento Crear un sombreador de gradiente basado en geometría
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 En este documento se muestra cómo usar el Diseñador de sombras y el lenguaje DGSL (Directed Graph Shader Language) para crear un sombreador de degradado basado en geometría. Este sombreador escala un valor de color RGB constante según el alto de cada punto de un objeto en el espacio global.  
   
  Este documento muestra estas actividades:  
   
--   Agregar nodos a un gráfico de sombreador  
+- Agregar nodos a un gráfico de sombreador  
   
--   Establecer las propiedades del nodo  
+- Establecer las propiedades del nodo  
   
--   Desconectar nodos  
+- Desconectar nodos  
   
--   Conectar nodos  
+- Conectar nodos  
   
 ## <a name="creating-a-geometry-based-gradient-shader"></a>Crear un sombreador de degradado basado en geometría  
  Puede implementar un sombreador basado en geometría mediante la incorporación de la posición del píxel en el sombreador. En los lenguajes de sombreado, un píxel contiene más información que solo el color y la ubicación en una pantalla 2D. Un píxel, conocido como un *fragmento* en algunos sistemas, es una colección de valores que describen la superficie que corresponde a un píxel. El sombreador que se describe en este documento usa el alto de cada píxel de un objeto 3D en el espacio global para afectar al color de salida final del fragmento.  
@@ -70,19 +65,16 @@ En este documento se muestra cómo usar el Diseñador de sombras y el lenguaje D
   
  Es posible que algunas formas proporcionen mejores vistas previas para algunos sombreadores. Para más información sobre cómo obtener una vista previa de los sombreadores en el Diseñador de sombras, vea **Vista previa de sombreadores** en [Diseñador de sombras](../designers/shader-designer.md)  
   
- La siguiente ilustración muestra el sombreador descrito en este documento aplicado a una escena 3D que se demuestra en [Cómo: Modelar un terreno en 3D](../designers/how-to-model-3-d-terrain.md). La intensidad del color aumenta con el alto del punto en la posición global.  
+ La siguiente ilustración muestra el sombreador que se describe en este documento aplicado a una escena 3D que se muestra en [Cómo: Modelar un terreno en 3D](../designers/how-to-model-3-d-terrain.md). La intensidad del color aumenta con el alto del punto en la posición global.  
   
  ![Efecto de degradado aplicado a un modelo de terreno 3D](../designers/media/digit-gradient-effect-result.png "Digit-Gradient-Effect-Result")  
   
- Para más información sobre cómo aplicar un sombreador a un modelo 3D, vea [Cómo: Aplicar un sombreador a un modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).  
+ Para obtener más información acerca de cómo aplicar un sombreador a un modelo 3D, vea [Cómo: Aplicar un sombreador a un modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).  
   
 ## <a name="see-also"></a>Vea también  
- [Cómo: Aplicar un sombreador a un modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
+ [Cómo: Aplicar a un sombreador a un modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
  [Cómo: Exportar un sombreador](../designers/how-to-export-a-shader.md)   
- [Cómo: Modelar un terreno en 3D](../designers/how-to-model-3-d-terrain.md)   
- [Cómo: Crear un sombreador de textura de escala de grises](../designers/how-to-create-a-grayscale-texture-shader.md)   
+ [Cómo: Modelo terreno en 3D](../designers/how-to-model-3-d-terrain.md)   
+ [Cómo: Crear a un sombreador de textura de escala de grises](../designers/how-to-create-a-grayscale-texture-shader.md)   
  [Diseñador de sombras](../designers/shader-designer.md)   
  [Nodos del Diseñador de sombras](../designers/shader-designer-nodes.md)
-
-
-

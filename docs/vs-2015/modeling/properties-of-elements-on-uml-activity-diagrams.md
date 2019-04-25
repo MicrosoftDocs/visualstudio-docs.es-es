@@ -1,12 +1,9 @@
 ---
 title: Propiedades de elementos de diagramas de actividades UML | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.teamarch.activitydiagram.shapes.properties
 helpviewer_keywords:
@@ -16,13 +13,13 @@ ms.assetid: 9849d45e-65d5-46bd-a319-757e90b7c748
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 5a3233d073a4b54c7c52b4b725f0d15833f5a51f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b8106fde63769d40f220165a072fff137da353f7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51803063"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58987841"
 ---
 # <a name="properties-of-elements-on-uml-activity-diagrams"></a>Propiedades de los elementos de diagramas de actividades UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,17 +27,17 @@ ms.locfileid: "51803063"
 En un diagrama de actividades UML, cada elemento del diagrama tiene propiedades. Para ver las propiedades de un elemento, haga clic en el elemento en el diagrama o en **Explorador de modelos UML** y, a continuación, haga clic en **propiedades**. Las propiedades aparecen en la **propiedades** ventana.  
   
 > [!NOTE]
->  Este tema trata sobre las propiedades de los elementos de los diagramas de actividades UML. Para obtener información sobre cómo leer diagramas de actividades UML, vea [diagramas de actividades UML: referencia](../modeling/uml-activity-diagrams-reference.md). Para obtener más información sobre cómo dibujar diagramas de actividades UML, vea [diagramas de actividades UML: instrucciones](../modeling/uml-activity-diagrams-guidelines.md).  
+>  Este tema trata sobre las propiedades de los elementos de los diagramas de actividades UML. Para obtener información sobre cómo leer diagramas de actividades UML, vea [diagramas de actividades UML: referencia](../modeling/uml-activity-diagrams-reference.md). Para obtener más información sobre cómo dibujar diagramas de actividades UML, vea [diagramas de actividades UML: Directrices](../modeling/uml-activity-diagrams-guidelines.md).  
   
 ## <a name="properties-of-elements"></a>Propiedades de los elementos  
   
-|         Propiedad         |        Predeterminado         |                               Elemento                               |                                                                                                                                                                Descripción                                                                                                                                                                 |
+|         Property         |        Default         |                               Elemento                               |                                                                                                                                                                Descripción                                                                                                                                                                 |
 |--------------------------|------------------------|---------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|         **Name**         |     Nombre predeterminado     |                                 Todo                                 |                                                                                                                                                          Identifica el elemento.                                                                                                                                                           |
-|    **Nombre completo**    |    Package :: Name     |                                 Todo                                 |                                                                                                                     Identifica el elemento de forma única. Prefijo con el nombre completo del paquete que lo contiene.                                                                                                                     |
-|      **Los elementos de trabajo**      |      0 asociados      |                                 Todo                                 |                                                                                Número de elementos de trabajo asociados a este elemento. Para asociar elementos de trabajo, consulte [vincular elementos de modelo y los elementos de trabajo](../modeling/link-model-elements-and-work-items.md).                                                                                |
-|     **Descripción**      |         (ninguno)         |                                 Todo                                 |                                                                                                                                             Aquí puede realizar anotaciones generales sobre el elemento.                                                                                                                                             |
-|        **Color**         | (valor predeterminado para el tipo) |                                 Todo                                 |                                                                                                                                                          Color de la forma.                                                                                                                                                           |
+|         **Name**         |     Nombre predeterminado     |                                 Todas                                 |                                                                                                                                                          Identifica el elemento.                                                                                                                                                           |
+|    **Nombre completo**    |    Paquete:: Name     |                                 Todas                                 |                                                                                                                     Identifica de forma única el elemento. Prefijo con el nombre completo del paquete que lo contiene.                                                                                                                     |
+|      **Los elementos de trabajo**      |      0 asociados      |                                 Todas                                 |                                                                                Número de elementos de trabajo asociados a este elemento. Para asociar elementos de trabajo, consulte [vincular elementos de modelo y los elementos de trabajo](../modeling/link-model-elements-and-work-items.md).                                                                                |
+|     **Descripción**      |         (ninguno)         |                                 Todas                                 |                                                                                                                                             Aquí puede realizar anotaciones generales sobre el elemento.                                                                                                                                             |
+|        **Color**         | (valor predeterminado para el tipo) |                                 Todas                                 |                                                                                                                                                          Color de la forma.                                                                                                                                                           |
 |         **Cuerpo**         |         (ninguno)         |                               Acción                                |                                                                                                                                                      Especifica la acción en detalle.                                                                                                                                                       |
 |       **Idioma**       |         (ninguno)         |                               Acción                                |                                                                                                                                                  Idioma de la expresión en Body.                                                                                                                                                   |
 | **Local Postconditions** |         (ninguno)         |         Action, Send, Accept, Call Behavior, Call Operation         |                                                                                                                          Restricciones que deben cumplirse cuando finaliza la ejecución. Objetivo alcanzado por la acción.                                                                                                                          |
@@ -61,8 +58,5 @@ En un diagrama de actividades UML, cada elemento del diagrama tiene propiedades.
 | **Is Single Execution**  |         False          |                          Diagrama de actividades                           |                                                                                                                                   -If true, hay a lo sumo una ejecución de este diagrama a la vez.                                                                                                                                    |
   
 ## <a name="see-also"></a>Vea también  
- [Diagramas de actividades UML: referencia](../modeling/uml-activity-diagrams-reference.md)   
- [Diagramas de actividades UML: instrucciones](../modeling/uml-activity-diagrams-guidelines.md)
-
-
-
+ [Diagramas de actividades UML: Referencia](../modeling/uml-activity-diagrams-reference.md)   
+ [Diagramas de actividades UML: directrices](../modeling/uml-activity-diagrams-guidelines.md)

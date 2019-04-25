@@ -1,14 +1,9 @@
 ---
-title: '&lt;campo&gt; (JavaScript) | Documentos de Microsoft'
-ms.custom: ''
+title: '&lt;field&gt; (JavaScript) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - <field> JavaScript XML tag
 - field JavaScript XML tag
@@ -16,15 +11,15 @@ ms.assetid: c494bae0-3095-42a3-aa0a-4c415188c65c
 caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a57f84901f2ac6bc691c50fa6d1e3c8b94db6c50
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b2fe09070261460b7b83f54de44a07cf96d40cf2
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49939911"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54766561"
 ---
-# <a name="ltfieldgt-javascript"></a>&lt;campo&gt; (JavaScript)
+# <a name="ltfieldgt-javascript"></a>&lt;field&gt; (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Especifica la información de documentación, incluida una descripción, para un campo o un miembro que se define en un objeto.  
@@ -162,6 +157,3 @@ new calculator().f.   // Completion list for a Number.
   
 ## <a name="see-also"></a>Vea también  
  [Comentarios de documentación XML](../ide/xml-documentation-comments-javascript.md)
-
-
-

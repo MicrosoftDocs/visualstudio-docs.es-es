@@ -2,25 +2,21 @@
 title: Sincronizar cambios entre XCode y Visual Studio 2015 | Microsoft Docs
 titleSuffix: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: c71a4d7c-120e-4559-a114-3a99c4b860a9
 caps.latest.revision: 10
 author: corob-msft
 ms.author: corob
-manager: ghogen
-ms.openlocfilehash: bd02f7b231956f10c0e8a816a93ee052f74cff66
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
-ms.translationtype: MTE95
+manager: jillfra
+ms.openlocfilehash: 42352ba4c5260c4b13a4cb3c6875d3469efcf404
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53050314"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665537"
 ---
 # <a name="sync-changes-between-xcode-and-visual-studio"></a>Sincronizar cambios entre XCode y Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 El componente Visual C++ para desarrollo móvil de Microsoft incluye capacidades remotas para sincronizar el trabajo entre el PC y el Mac. Cuando el equipo Mac y el equipo con Visual Studio están emparejados, existen opciones nuevas para proyectos de aplicación de iOS en Visual Studio que puede usar para abrir el proyecto en XCode, mover el código entre XCode y Visual Studio, y limpiar el directorio temporal del proyecto de XCode.
 

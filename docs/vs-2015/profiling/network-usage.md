@@ -1,25 +1,20 @@
 ---
 title: Uso de red | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 45fa397d-d7a1-4c4c-9c97-ede6c21643bd
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3dd68bec55b53d1b4618e8ae1679603577daf295
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 62f6847e03484838f232a9b64f392ca0938f213d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51726847"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114504"
 ---
 # <a name="network-usage"></a>Uso de red
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +31,7 @@ La herramienta de diagnóstico **Red** de Visual Studio recopila datos acerca de
   
 1. Abra el proyecto en Visual Studio.  
   
-2. En el menú, haga clic en **Depurar / Generador de perfiles de rendimiento...** Elija Red y después **Iniciar**.  
+2. En el menú, haga clic en **Depurar / Generador de perfiles de rendimiento...** Elija **Red** y después **Iniciar**.  
   
 3. La herramienta de red comienza a recopilar el tráfico de red HTTP de la aplicación.  
   
@@ -72,16 +67,13 @@ La herramienta de diagnóstico **Red** de Visual Studio recopila datos acerca de
 ### <a name="analysis-tips"></a>Sugerencias de análisis  
  Esta herramienta resalta determinadas áreas que pueden ser útiles al ejecutar análisis relacionados con redes:  
   
-1.  Las solicitudes que se atienden por completo desde la memoria caché se muestran como **(de caché)** en la columna **Recibido**. Esto puede ayudarle a determinar si se utiliza la caché de forma eficaz para ahorrar ancho de banda de usuario, o si está almacenando respuestas en caché por error y proporcionando datos obsoletos al usuario final de la aplicación.  
+1. Las solicitudes que se atienden por completo desde la memoria caché se muestran como **(de caché)** en la columna **Recibido**. Esto puede ayudarle a determinar si se utiliza la caché de forma eficaz para ahorrar ancho de banda de usuario, o si está almacenando respuestas en caché por error y proporcionando datos obsoletos al usuario final de la aplicación.  
   
-2.  Las respuestas de error (4xx o 5xx) se muestran en la columna **Resultados** con un código de estado rojo, además de resaltarse en la barra de resumen. Esto hace fácil detectar errores entre las muchas solicitudes posibles en la aplicación.  
+2. Las respuestas de error (4xx o 5xx) se muestran en la columna **Resultados** con un código de estado rojo, además de resaltarse en la barra de resumen. Esto hace fácil detectar errores entre las muchas solicitudes posibles en la aplicación.  
   
-3.  El botón de impresión bonita (dentro de la pestaña Cuerpo) puede ayudarle a analizar cargas de respuesta JSON, XML, HTML, CSS, JavaScript y TypeScript al aumentar la legibilidad del contenido.  
+3. El botón de impresión bonita (dentro de la pestaña Cuerpo) puede ayudarle a analizar cargas de respuesta JSON, XML, HTML, CSS, JavaScript y TypeScript al aumentar la legibilidad del contenido.  
   
 ## <a name="see-also"></a>Vea también  
  [Ejecutar herramientas de generación de perfiles sin depurar](http://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)   
- [Blog de Visual Studio: presentación del inspector Visual Studio red](http://go.microsoft.com/fwlink/?LinkId=535022)   
- [Vídeo de Channel 9: "Herramientas de diagnóstico de VS: nuevo generador de perfiles de red"](http://channel9.msdn.com/Series/ConnectOn-Demand/206)
-
-
-
+ [Visual Studio blog: Presentación de inspector de red de Visual Studio](http://go.microsoft.com/fwlink/?LinkId=535022)   
+ [Vídeo de Channel 9: Herramientas de diagnóstico de VS: nuevo Profiler de red](http://channel9.msdn.com/Series/ConnectOn-Demand/206)

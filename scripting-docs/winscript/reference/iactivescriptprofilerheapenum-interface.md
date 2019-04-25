@@ -2,7 +2,6 @@
 title: IActiveScriptProfilerHeapEnum (interfaz) | Documentos de Microsoft
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -12,12 +11,12 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 14562654e0fd3f3567d6f598f84cf2c966b1b8cb
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: fe83f00a96013ffcf7c5df2d47eb1ba7d7a0bae1
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54344894"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58144919"
 ---
 # <a name="iactivescriptprofilerheapenum-interface"></a>IActiveScriptProfilerHeapEnum (Interfaz)
 Un iterador en el montón de objetos asociados con un motor de scripts, recopilado por el [Iactivescriptprofilercontrol3 método](../../winscript/reference/iactivescriptprofilercontrol3-enumheap-method.md).  

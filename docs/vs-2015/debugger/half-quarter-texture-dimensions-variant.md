@@ -1,25 +1,20 @@
 ---
 title: Variante de dimensiones de textura mitad / cuarto | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 282e9bbb-51aa-4cd0-8e5c-0901268c29e5
 caps.latest.revision: 9
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6ef44ff579fbd96026fcd7c285b173ad19317275
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 03485a3b9df9c06b1ef4755a5758cf2c8c997d1e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51805988"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58987956"
 ---
 # <a name="halfquarter-texture-dimensions-variant"></a>MItad/cuarto (Variante de dimensiones de textura)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,8 +47,5 @@ Reduce las dimensiones de la textura en texturas que no son objetivos de present
  Esta variante modifica el tamaño de las texturas en el tiempo de ejecución antes de llamar a `CreateTexture2D`. No recomendamos este procedimiento para el código de producción, porque las texturas a tamaño completo consumen más espacio de disco y porque el paso adicional puede aumentar significativamente los tiempos de carga en la aplicación, especialmente para las texturas comprimidas, que requieren una gran cantidad de recursos técnicos para codificar. En su lugar, recomendamos que cambie el tamaño las texturas sin conexión utilizando un editor o un procesador de imágenes que forme parte de la canalización integrada. Estos procedimientos reducen los requisitos de espacio en disco, eliminan la sobrecarga del tiempo de ejecución en la aplicación y proporcionan más tiempo de procesamiento para que pueda mantener la mejor calidad de imagen al reducir o comprimir las texturas.  
   
 ## <a name="see-also"></a>Vea también  
- [Variante de generación MIP-map](../debugger/mip-map-generation-variant.md)   
+ [Variante de generación Mip-map](../debugger/mip-map-generation-variant.md)   
  [Variante de compresión de textura BC](../debugger/bc-texture-compression-variant.md)
-
-
-

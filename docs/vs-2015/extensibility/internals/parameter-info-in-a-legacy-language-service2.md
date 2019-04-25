@@ -1,14 +1,9 @@
 ---
 title: Información de parámetros en un archivo de lenguaje heredado2 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - IntelliSense, Parameter Info tool tip
 - language services [managed package framework], IntelliSense Parameter Info
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: a117365d-320d-4bb5-b61d-3e6457b8f6bc
 caps.latest.revision: 24
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: a540a2e5b282e1242109edd67a5dfbc95067e183
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 986a392dc381b972c9e4d4bfa6dda06fe1aa878e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51781327"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087748"
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>Información de parámetros en un servicio de lenguaje heredado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -118,11 +113,10 @@ testfunc("a string",3);
   
  Los pasos que toma el analizador se describen a continuación:  
   
-1.  Las llamadas del analizador <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartName%2A> con el texto "testfunc".  
+1. Las llamadas del analizador <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartName%2A> con el texto "testfunc".  
   
-2.  Las llamadas del analizador <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartParameters%2A>.  
+2. Las llamadas del analizador <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartParameters%2A>.  
   
-3.  Las llamadas del analizador <xref:Microsoft.VisualStudio.Package.AuthoringSink.NextParameter%2A>.  
+3. Las llamadas del analizador <xref:Microsoft.VisualStudio.Package.AuthoringSink.NextParameter%2A>.  
   
-4.  Las llamadas del analizador <xref:Microsoft.VisualStudio.Package.AuthoringSink.EndParameters%2A>.
-
+4. Las llamadas del analizador <xref:Microsoft.VisualStudio.Package.AuthoringSink.EndParameters%2A>.

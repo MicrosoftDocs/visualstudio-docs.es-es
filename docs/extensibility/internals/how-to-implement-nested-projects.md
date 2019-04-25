@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: d20b8d6a-f0e0-4115-b3a3-edda893ae678
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d22d67d81776f83683e11d1ca613a9138137e75c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 96df14cc6e337402761d89d7161094b513473a78
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53945814"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105000"
 ---
 # <a name="how-to-implement-nested-projects"></a>Procedimiento Implementación de proyectos anidados
 
@@ -24,18 +24,18 @@ Cuando se crea un tipo de proyecto anidado, hay varios pasos adicionales que deb
 
 ## <a name="create-nested-projects"></a>Crear proyectos anidados
 
-1.  El entorno de desarrollo integrado (IDE) carga la información de inicio y el archivo de proyecto del proyecto principal mediante una llamada a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory> interfaz. El proyecto principal se crea y se agrega a la solución.
+1. El entorno de desarrollo integrado (IDE) carga la información de inicio y el archivo de proyecto del proyecto principal mediante una llamada a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory> interfaz. El proyecto principal se crea y se agrega a la solución.
 
     > [!NOTE]
     > En este momento, es demasiado pronto en el proceso para el proyecto principal crear el proyecto anidado porque se debe crear el proyecto principal antes de que se pueden crear los proyectos secundarios. Siguiendo esta secuencia, el proyecto principal puede aplicar configuraciones a los proyectos secundarios y los proyectos secundarios pueden obtener información acerca de los proyectos principales si es necesario. Esta secuencia es si es necesario en los clientes como control de código fuente (SCC) y **el Explorador de soluciones**.
 
      El proyecto principal se debe esperar el <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren%2A> método para ser llamado por el IDE antes de pueda crear su anidados (secundarios) proyecto o proyectos.
 
-2.  Las llamadas IDE `QueryInterface` en el proyecto primario para <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject>. Si esta llamada se realiza correctamente, las llamadas IDE el <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren%2A> método del elemento primario para abrir todos los proyectos anidados en el proyecto principal.
+2. Las llamadas IDE `QueryInterface` en el proyecto primario para <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject>. Si esta llamada se realiza correctamente, las llamadas IDE el <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren%2A> método del elemento primario para abrir todos los proyectos anidados en el proyecto principal.
 
-3.  Las llamadas de proyecto primario el <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents.FireOnBeforeOpeningChildren%2A> método para notificar a los agentes de escucha que anidados proyectos está a punto de crearse. Control de código fuente, por ejemplo, está escuchando a esos eventos para saber si se producen los pasos descritos en el proceso de creación de soluciones y proyectos en orden. Si los pasos se producen fuera de servicio, la solución es posible que no esté registrada con el control de código fuente correctamente.
+3. Las llamadas de proyecto primario el <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents.FireOnBeforeOpeningChildren%2A> método para notificar a los agentes de escucha que anidados proyectos está a punto de crearse. Control de código fuente, por ejemplo, está escuchando a esos eventos para saber si se producen los pasos descritos en el proceso de creación de soluciones y proyectos en orden. Si los pasos se producen fuera de servicio, la solución es posible que no esté registrada con el control de código fuente correctamente.
 
-4.  Las llamadas de proyecto primario <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AddVirtualProject%2A> método o la <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AddVirtualProjectEx%2A> método en cada uno de sus proyectos secundarios.
+4. Las llamadas de proyecto primario <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AddVirtualProject%2A> método o la <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AddVirtualProjectEx%2A> método en cada uno de sus proyectos secundarios.
 
      Pasa <xref:Microsoft.VisualStudio.Shell.Interop.__VSADDVPFLAGS> a la `AddVirtualProject` método para indicar que el proyecto virtual (anidado) debe agregarse a la ventana de proyecto, excluida de la compilación, se agrega al control de código fuente y así sucesivamente. `VSADDVPFLAGS` le permite controlar la visibilidad del proyecto anidado e indican qué funcionalidad está asociada con él.
 
@@ -43,15 +43,15 @@ Cuando se crea un tipo de proyecto anidado, hay varios pasos adicionales que deb
 
      Si no hay ningún GUID disponibles, como cuando se agrega un nuevo proyecto anidado, la solución crea uno para el proyecto en el momento en que se agrega al elemento primario. Es responsabilidad del proyecto para conservar ese GUID en su archivo de proyecto del proyecto principal. Si elimina un proyecto anidado, también puede eliminarse el GUID para ese proyecto.
 
-5.  Las llamadas IDE el <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren> método en cada proyecto secundario del proyecto primario.
+5. Las llamadas IDE el <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren> método en cada proyecto secundario del proyecto primario.
 
      Debe implementar el proyecto principal `IVsParentProject` si desea anidar los proyectos. Pero el elemento primario del proyecto nunca llama a `QueryInterface` para `IVsParentProject` incluso si tiene proyectos principales debajo de ella. La solución controla la llamada a `IVsParentProject` y, si se implementa, se llama a `OpenChildren` para crear los proyectos anidados. `AddVirtualProjectEX` siempre se llama desde `OpenChildren`. Nunca se debería llamar el proyecto principal para mantener a la jerarquía de eventos de creación en orden.
 
-6.  Las llamadas IDE el <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenProject%2A> método en el proyecto secundario.
+6. Las llamadas IDE el <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenProject%2A> método en el proyecto secundario.
 
-7.  Las llamadas de proyecto primario el <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents.FireOnAfterOpeningChildren%2A> método para notificar a los agentes de escucha que se han creado los proyectos secundarios para el elemento primario.
+7. Las llamadas de proyecto primario el <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents.FireOnAfterOpeningChildren%2A> método para notificar a los agentes de escucha que se han creado los proyectos secundarios para el elemento primario.
 
-8.  Las llamadas IDE el <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents.FireOnAfterOpenProject%2A> método en el proyecto principal después de que todos los proyectos secundarios se han abierto.
+8. Las llamadas IDE el <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents.FireOnAfterOpenProject%2A> método en el proyecto principal después de que todos los proyectos secundarios se han abierto.
 
      Si no existe, el proyecto principal crea un GUID para cada proyecto anidado mediante una llamada a `CoCreateGuid`.
 
@@ -65,7 +65,7 @@ Cuando se crea un tipo de proyecto anidado, hay varios pasos adicionales que deb
      Dado que los proyectos primarios y secundarios se crean instancias mediante programación, puede establecer propiedades para proyectos anidados en este momento.
 
     > [!NOTE]
-    > No solo recibir la información de contexto desde el proyecto anidado, pero también puede hacer si el proyecto principal tiene cualquier contexto de ese elemento comprobando <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>. De esa manera, puede agregar atributos de Ayuda dinámica adicionales y opciones de menú específicas para proyectos anidados individuales.
+    > No solo recibir la información de contexto desde el proyecto anidado, pero también puede hacer si el proyecto principal tiene cualquier contexto de ese elemento comprobando [__VSHPROPID. VSHPROPID_UserContext](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_UserContext>). De esa manera, puede agregar atributos de Ayuda dinámica adicionales y opciones de menú específicas para proyectos anidados individuales.
 
 10. La jerarquía se crea para su presentación en **el Explorador de soluciones** con una llamada a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetNestedHierarchy%2A> método.
 

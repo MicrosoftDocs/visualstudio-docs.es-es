@@ -1,32 +1,26 @@
 ---
 title: Ejemplos de desarrollo móvil multiplataforma | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- tgt-pltfrm-cross-plat
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-mobile
+ms.topic: conceptual
 dev_langs:
 - C++
 ms.assetid: bc384c12-fccc-45d7-9fb9-b90d536aa663
 caps.latest.revision: 5
 author: corob-msft
 ms.author: corob
-manager: ghogen
-ms.openlocfilehash: 204aafd41427f46c86146b9867880137cf1b096b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c129634dd2421809d5ac15eb930f07c94d8b39f3
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51795276"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657446"
 ---
 # <a name="cross-platform-mobile-development-examples"></a>Ejemplos de desarrollo móvil multiplataforma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Varias de las plantillas instaladas por Visual C++ para el desarrollo móvil multiplataforma generan ejemplos completos que pueden usarse como referencia para el aprendizaje. Además, el Centro de desarrollo de Windows tiene varias aplicaciones de ejemplo que se pueden descargar y probar en Visual Studio.  
   
 - [Ejemplo de la aplicación hello-jni de Android](https://code.msdn.microsoft.com/hello-jni-Android-790ab73d)  
@@ -39,7 +33,7 @@ Varias de las plantillas instaladas por Visual C++ para el desarrollo móvil mul
   
 - [Ejemplo de aplicación Bitmap Plasma de Android](https://code.msdn.microsoft.com/Bitmap-Plasma-Android-77ae296a)  
   
-   Este ejemplo se ha tomado de la aplicación Bitmap Plasma del NDK de Android. Aquí se muestra una aplicación OpenGL ES 2.0 completa de Android que usa la interfaz Java Native Interface. Se muestra la manipulación directa de los búferes de píxel de mapa de bits Android para generar un efecto de plasma.  
+   Este ejemplo se ha tomado de la aplicación Bitmap Plasma del NDK de Android. Aquí se muestra una aplicación OpenGL ES 2.0 completa de Android que usa la interfaz Java Native Interface. Se muestra la manipulación directa de los búferes de píxel de mapa de bits Android para generar un efecto de plasma.  
   
 - [Ejemplo de la biblioteca TwoLibs de Android](https://code.msdn.microsoft.com/TwoLibs-Android-Library-6396e5c4)  
   
@@ -60,4 +54,3 @@ Varias de las plantillas instaladas por Visual C++ para el desarrollo móvil mul
   Para abrir uno de los ejemplos en Visual Studio, descargue el archivo ZIP y abra la página **Propiedades** del archivo descargado en el Explorador. Elija el botón **Desbloquear** y luego **Aceptar**. Extraiga el contenido del archivo ZIP en una ubicación adecuada, abra la carpeta de C++ en el ejemplo extraído y luego abra el archivo de solución.  
   
   Para compilar el ejemplo, presione F7 o elija **Compilar**, **Compilar solución**en la barra de menús.
-

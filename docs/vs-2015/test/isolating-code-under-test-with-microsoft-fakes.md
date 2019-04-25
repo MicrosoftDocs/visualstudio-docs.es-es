@@ -1,24 +1,19 @@
 ---
 title: Aislar el código en pruebas con Microsoft Fakes | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: a03c2e83-a41f-4854-bcf2-fcaa277a819d
 caps.latest.revision: 18
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: a2c5806af5712a396659d484d09d3fd7374111a1
-ms.sourcegitcommit: bccb05b5b4e435f3c1f7c36ba342e7d4031eb398
+manager: jillfra
+ms.openlocfilehash: 97f238b51e3f4ad3bbb32bdbdc134089c0cb7e99
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51220936"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099109"
 ---
 # <a name="isolating-code-under-test-with-microsoft-fakes"></a>Aislar el código probado con Microsoft Fakes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,10 +51,10 @@ Microsoft Fakes ayuda a aislar el código que se está probando mediante la sust
   
  Por lo general, nosotros recomendamos que se utilicen tipos de código auxiliar para aislar las dependencias del código base. Esto se puede conseguir ocultando los componentes en interfaces. Los tipos de corrección de compatibilidad (shim) pueden utilizarse para aislar los componentes de terceros que no proporcionan API comprobables.  
   
-##  <a name="stubs"></a> Introducción a los códigos auxiliares  
+## <a name="stubs"></a> Introducción a los códigos auxiliares  
  Para obtener una descripción más detallada, vea [Usar stubs para aislar las partes de la aplicación entre sí para las pruebas unitarias](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md).  
   
-1.  **Inyectar interfaces**  
+1. **Inyectar interfaces**  
   
      Para utilizar código auxiliar, tiene que escribir el código que desea probar de manera que no mencione clases en otro componente de la aplicación. Por "componente" se entiende una clase o clases que se desarrollan y se actualizan juntas, y que normalmente están contenidas en un proyecto de Visual Studio. Las variables y los parámetros que se deben declarar con interfaces e instancias de otros componentes deben pasarse en o crearse mediante un generador. Por ejemplo, si StockFeed es una clase de otro componente de la aplicación, se consideraría erróneo:  
   
@@ -80,15 +75,15 @@ Microsoft Fakes ayuda a aislar el código que se está probando mediante la sust
   
     ```  
   
-2.  **Agregar un ensamblado de Fakes**  
+2. **Agregar un ensamblado de Fakes**  
   
-    1.  En el Explorador de soluciones, expanda la lista de referencia del proyecto de prueba. Si está trabajando en Visual Basic, debe seleccionar **Mostrar todos los archivos** para ver la lista de referencia.  
+    1. En el Explorador de soluciones, expanda la lista de referencia del proyecto de prueba. Si está trabajando en Visual Basic, debe seleccionar **Mostrar todos los archivos** para ver la lista de referencia.  
   
-    2.  Seleccione la referencia al ensamblado donde se define la interfaz (por ejemplo IStockFeed). En el menú contextual de esta referencia, seleccione **Agregar ensamblado de Fakes**.  
+    2. Seleccione la referencia al ensamblado donde se define la interfaz (por ejemplo IStockFeed). En el menú contextual de esta referencia, seleccione **Agregar ensamblado de Fakes**.  
   
-    3.  Recompilar la solución.  
+    3. Recompilar la solución.  
   
-3.  En las pruebas, cree instancias de código auxiliar y proporcione código para sus métodos:  
+3. En las pruebas, cree instancias de código auxiliar y proporcione código para sus métodos:  
   
     ```csharp  
     [TestClass]  
@@ -150,7 +145,7 @@ Microsoft Fakes ayuda a aislar el código que se está probando mediante la sust
   
      El código auxiliar también se genera para captadores y establecedores de propiedades, para los eventos y para métodos genéricos. Para más información, vea [Usar stubs para aislar las partes de la aplicación entre sí para las pruebas unitarias](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md).  
   
-##  <a name="shims"></a> Introducción a las correcciones de compatibilidad (shim)  
+## <a name="shims"></a> Introducción a las correcciones de compatibilidad (shim)  
  (Para obtener una descripción más detallada, vea [Usar correcciones de compatibilidad (shim) para aislar la aplicación de otros ensamblados para las pruebas unitarias](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)).  
   
  Supongamos que el componente contiene las llamadas a `DateTime.Now`:  
@@ -253,6 +248,3 @@ System.IO.Fakes.ShimFile.AllInstances.ReadToEnd = ...
  [Usar correcciones de compatibilidad (shim) para aislar la aplicación de otros ensamblados para la prueba unitaria](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)  
   
  [Generación de código, compilación y convenciones de nomenclatura en Microsoft Fakes](../test/code-generation-compilation-and-naming-conventions-in-microsoft-fakes.md)
-
-
-

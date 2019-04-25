@@ -1,14 +1,9 @@
 ---
 title: Administrar los recursos de la aplicación (.NET) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - msvse_resedit.dlg.SetCustomTool
 - msvse_settingsdesigner.err.formatvalue
@@ -26,13 +21,13 @@ ms.assetid: f2582734-8ada-4baa-8a7c-e2ef943ddf7e
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: b29f32fa59f719af3efab6901596b682c95a5d57
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 8319e4e71b313e0c4614f720cb371b339c09d391
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49287227"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54784782"
 ---
 # <a name="managing-application-resources-net"></a>Administrar los recursos de la aplicación (.NET)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,5 +41,4 @@ Los archivos de recursos son archivos que forman parte de una aplicación, pero 
 ## <a name="working-with-resources"></a>Trabajar con recursos  
  En un proyecto de código administrado, abra la ventana de propiedades del proyecto (haga clic en el nodo del proyecto en el **Explorador de soluciones** y seleccione **Propiedades**o escriba las **propiedades del proyecto** en la ventana **Inicio rápido** , o bien presione ALT + ENTRAR en la ventana **Explorador de soluciones** ). Seleccione la pestaña **Recursos** . Puede agregar un archivo .resx si el proyecto no contiene uno ya y, a continuación, agregar y eliminar diferentes tipos de recursos y modificar los recursos existentes.  
   
- Para obtener información sobre cómo trabajar con recursos en proyectos de C++, vea [How to: Create a Resource](http://msdn.microsoft.com/library/aad44914-9145-45a3-a7d8-9de89b366716) (Cómo: Crear un recurso).
-
+ Para obtener información sobre cómo trabajar con recursos en proyectos de C++, vea [Cómo: Crear un recurso](http://msdn.microsoft.com/library/aad44914-9145-45a3-a7d8-9de89b366716)

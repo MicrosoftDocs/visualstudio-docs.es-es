@@ -1,29 +1,24 @@
 ---
-title: 'Cómo: iniciar Spy ++ | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Iniciar Spy ++ | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Spy++, starting
 ms.assetid: 1d36813a-dc2a-4fda-9b3d-a38928a62ced
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 2b5cd20a51d251e23cceb4ee86b3ce0a555f3d34
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4ade2b369cd1c9e0371acacfcd63b06a2d89e58a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51797486"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066714"
 ---
-# <a name="how-to-start-spy"></a>Cómo: Iniciar Spy++
+# <a name="how-to-start-spy"></a>Procedimiento Iniciar Spy++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Puede iniciar Spy ++ desde Visual Studio o en un símbolo del sistema.  
@@ -35,7 +30,7 @@ Puede iniciar Spy ++ desde Visual Studio o en un símbolo del sistema.
   
 ### <a name="to-start-spy-from-visual-studio"></a>Para iniciar Spy ++ desde Visual Studio  
   
--   En el **herramientas** menú, haga clic en **Spy ++**.  
+- En el **herramientas** menú, haga clic en **Spy ++**.  
   
      Dado que Spy ++ se ejecuta de forma independiente, después de iniciarla, puede cerrar Visual Studio.  
   
@@ -44,14 +39,11 @@ Puede iniciar Spy ++ desde Visual Studio o en un símbolo del sistema.
   
 ### <a name="to-start-spy-at-a-command-prompt"></a>Para iniciar Spy ++ en un símbolo del sistema  
   
-1.  En una ventana del símbolo del sistema, cambie los directorios a la carpeta que contiene spyxx.exe. Normalmente, es la ruta de acceso de esta carpeta... \\ *Carpeta de instalación de visual Studio*\Common7\Tools\\.  
+1. En una ventana del símbolo del sistema, cambie los directorios a la carpeta que contiene spyxx.exe. Normalmente, es la ruta de acceso de esta carpeta... \\ *Carpeta de instalación de visual Studio*\Common7\Tools\\.  
   
-2.  Tipo **spyxx.exe** y, a continuación, presione ENTRAR.  
+2. Tipo **spyxx.exe** y, a continuación, presione ENTRAR.  
   
 ## <a name="see-also"></a>Vea también  
- [Usar Spy ++](../debugger/using-spy-increment.md)   
- [Vistas de Spy ++](../debugger/spy-increment-views.md)   
+ [Usar Spy++](../debugger/using-spy-increment.md)   
+ [Vistas de Spy++](../debugger/spy-increment-views.md)   
  [Referencia de Spy++](../debugger/spy-increment-reference.md)
-
-
-

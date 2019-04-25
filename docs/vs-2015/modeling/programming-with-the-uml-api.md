@@ -1,12 +1,9 @@
 ---
 title: Programar con la API de UML | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML model, API
 - UML model, extending
@@ -14,13 +11,13 @@ ms.assetid: c5937139-49d0-4439-8a9f-89f5e0474618
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: d5670b0c0806d59119e1a1af87bae5642255c5a9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e85fc0add84f6f6097355d1fc7a58cc954c8e538
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51793183"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111758"
 ---
 # <a name="programming-with-the-uml-api"></a>Programar con la API de UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,9 +44,9 @@ La API de UML de Visual Studio le permite escribir código para crear, leer y ac
   
  Los tipos de esa plataforma están visibles en algunos de los ensamblados a los que se hace referencia para escribir extensiones UML. Aunque puede crear extensiones a las herramientas UML teniendo acceso a la API de [!INCLUDE[dsl](../includes/dsl-md.md)], debería tener en cuenta las siguientes consideraciones:  
   
--   Podría encontrar que algunos cambios aparentemente simples presentan inconsistencias y efectos inesperados.  
+- Podría encontrar que algunos cambios aparentemente simples presentan inconsistencias y efectos inesperados.  
   
--   La implementación puede cambiar en el futuro, de modo que las adaptaciones que realice utilizando la API de [!INCLUDE[dsl](../includes/dsl-md.md)] podrían dejar de funcionar.  
+- La implementación puede cambiar en el futuro, de modo que las adaptaciones que realice utilizando la API de [!INCLUDE[dsl](../includes/dsl-md.md)] podrían dejar de funcionar.  
   
 ## <a name="the-api-assemblies"></a>Los ensamblados de la API  
  En esta tabla se resumen los ensamblados que proporcionan extensibilidad a las herramientas UML y los espacios de nombres que se recomienda utilizar.  
@@ -74,6 +71,3 @@ La API de UML de Visual Studio le permite escribir código para crear, leer y ac
 ## <a name="see-also"></a>Vea también  
  [Ampliar modelos y diagramas UML](../modeling/extend-uml-models-and-diagrams.md)   
  [Referencia de la API para la extensibilidad del modelado UML](../modeling/api-reference-for-uml-modeling-extensibility.md)
-
-
-

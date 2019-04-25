@@ -4,7 +4,6 @@ decsprition: You must explicitly enable access to the Office VBA project system 
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vst.project.vbawrongversion
@@ -17,15 +16,15 @@ dev_langs:
 - CSharp
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0404498490569d3c9edee5b9e190535eafcb105b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 10dc439946cb209c9a8d8e0c5ff50a7e8cfe5363
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53933494"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869323"
 ---
 # <a name="enable-access-to-vba-to-create-or-open-a-visual-studio-tools-for-the-microsoft-office-system-project"></a>Habilitar el acceso a VBA para crear o abrir un proyecto de Visual Studio Tools para el proyecto de Microsoft Office system
 
@@ -41,8 +40,6 @@ Debe habilitar explícitamente acceso a Visual Basic para el sistema de proyecto
  Es importante señalar que la mera deshabilitación del acceso al sistema de proyectos de Visual Basic para Aplicaciones no le protege frente a los virus, sino que simplemente ayuda a impedir la propagación de algunos virus a otros documentos si el equipo se infecta con un virus de macro. La opción está deshabilitada de manera predeterminada como capa de protección adicional para el equipo, pero si la habilita, su equipo no será más susceptible a virus si sigue los procedimientos recomendados de seguridad.
 
  La mejor protección contra virus de macro es ejecutar Office en el nivel de seguridad alto o muy alto, confiar únicamente en las macros de orígenes verificados y conocidos, de Office y mantenerse al día con las revisiones de seguridad y antivirus.
-
- Para obtener más información sobre cómo proteger su PC de virus y otro código malintencionado, vea [ http://www.microsoft.com/protect ](http://www.microsoft.com/protect).
 
  Puede habilitar o deshabilitar la opción **confiar en el acceso al proyecto de Visual Basic** manualmente.
 
@@ -127,5 +124,4 @@ Debe habilitar explícitamente acceso a Visual Basic para el sistema de proyecto
 5. Seleccione **detectar y reparar errores en la instalación de Office**y, a continuación, haga clic en **instalar**.
 
 ## <a name="see-also"></a>Vea también
-
- [Proteger soluciones de Office](../vsto/securing-office-solutions.md)
+- [Proteger soluciones de Office](../vsto/securing-office-solutions.md)

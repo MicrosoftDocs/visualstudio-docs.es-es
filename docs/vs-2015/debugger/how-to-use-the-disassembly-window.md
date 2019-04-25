@@ -1,14 +1,9 @@
 ---
-title: 'Cómo: usar la ventana Desensamblado | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Utilice la ventana Desensamblado | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.disassembly
 dev_langs:
@@ -29,22 +24,22 @@ ms.assetid: eaf84dd0-c82d-481b-af51-690b74e7794c
 caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 67f9307f2f5fece64ee2ee11dd48863b9a951180
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 42d7c9798527498f2803d814515faefd62c3ace9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51760917"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077503"
 ---
-# <a name="how-to-use-the-disassembly-window"></a>Cómo: Utilizar la ventana Desensamblado
+# <a name="how-to-use-the-disassembly-window"></a>Procedimiento Utilice la ventana Desensamblado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Esta característica solo está disponible si está habilitada la depuración de nivel de dirección la **opciones** cuadro de diálogo, **depuración** nodo. No está disponible para la depuración de script ni de SQL.  
   
- El **desensamblado** ventana muestra el código de ensamblado correspondiente a las instrucciones creadas por el compilador. Si depura código administrado, estas instrucciones de ensamblado corresponden al código nativo creado por el compilador JIT, y no al lenguaje intermedio de Microsoft (MSIL) que genera el compilador de Visual Studio.  
+ En la ventana **Desensamblado** se muestra el código de ensamblado correspondiente a las instrucciones creadas por el compilador. Si depura código administrado, estas instrucciones de ensamblado corresponden al código nativo creado por el compilador JIT, y no al lenguaje intermedio de Microsoft (MSIL) que genera el compilador de Visual Studio.  
   
- Además de las instrucciones de ensamblado, el **desensamblado** ventana puede mostrar la siguiente información opcional:  
+ Además de las instrucciones de ensamblado, la ventana **Desensamblado** puede mostrar la siguiente información opcional:  
   
 - Dirección de memoria donde se encuentra cada instrucción máquina. Para aplicaciones nativas, ésta es la dirección de memoria real. Para Visual Basic, C# o código administrado, es un desplazamiento desde el inicio de la función.  
   
@@ -65,27 +60,22 @@ Esta característica solo está disponible si está habilitada la depuración de
   Probablemente, nunca sentirá el deseo de ver las instrucciones de código máquina con su formato puro, numérico, en lugar del lenguaje de ensamblado. Sin embargo, si así lo desea, puede usar la ventana Memoria con este fin, o elegir Bytes de código en el menú contextual de la ventana Desensamblado.  
   
 > [!NOTE]
->  Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ### <a name="to-display-the-disassembly-window"></a>Para mostrar la ventana Desensamblado  
   
--   En el **depurar** menú, elija **Windows**y haga clic en **desensamblado**.  
+- En el **depurar** menú, elija **Windows**y haga clic en **desensamblado**.  
   
      El depurador debe encontrarse en modo de interrupción.  
   
 ### <a name="to-turn-optional-information-on-or-off"></a>Para activar o desactivar la información opcional  
   
--   Haga clic en el **desensamblado** ventana y Active o desactive las opciones que desee en el menú contextual.  
+- Haga clic en el **desensamblado** ventana y Active o desactive las opciones que desee en el menú contextual.  
   
      Una flecha amarilla en el margen izquierdo indica la ubicación del punto de ejecución actual. Para el código nativo, este punto se corresponde con el contador de programas de la CPU. Esta ubicación indica la instrucción que debe ejecutarse a continuación en el programa.  
   
      Para obtener más información, consulte [retroceder o avanzar en la memoria](../debugger/how-to-page-up-or-down-in-memory.md).  
   
 ## <a name="see-also"></a>Vea también  
- [Visualización de datos en el depurador](../debugger/viewing-data-in-the-debugger.md)   
- [Cómo: Usar la ventana Registros](../debugger/how-to-use-the-registers-window.md)
-
-
-
-
-
+ [Ver datos en el depurador](../debugger/viewing-data-in-the-debugger.md)   
+ [Cómo: Uso de la ventana Registros](../debugger/how-to-use-the-registers-window.md)

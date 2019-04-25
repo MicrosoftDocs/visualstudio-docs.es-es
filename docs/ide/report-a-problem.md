@@ -2,20 +2,19 @@
 title: Notificar un problema
 description: Proporciona información general sobre la herramienta Notificar un problema e incluye definiciones y estados de problemas
 ms.date: 11/15/2018
-ms.prod: visual-studio-dev15
 ms.custom: seodec18
 ms.topic: conceptual
 author: seaniyer
 ms.author: seiyer
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 06f7f3cc2d39a28052a0f34eed8ab36d224d4b8e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 23ed63846eb11fd8eba95219aecaae3210e161fd
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53934364"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56800536"
 ---
 # <a name="overview-report-a-problem"></a>Información general: Notificar un problema
 
@@ -53,7 +52,7 @@ Después de notificar un problema, los estados indican en qué punto de su ciclo
 
 ![Estado Se necesita más información de los informes de problemas en la Comunidad de desarrolladores](../ide/media/ProblemStates/NeedMoreInfo.jpg)
 
-**Se necesita más información** indica que necesitamos más información de diagnóstico para poder avanzar con la investigación.  [Obtenga información sobre cómo responder a las solicitudes Se necesita más información.](./how-to-report-a-problem-with-visual-studio-2017.md#when-further-information-is-needed-need-more-info)
+**Se necesita más información** indica que necesitamos más información de diagnóstico para poder avanzar con la investigación.  [Obtenga información sobre cómo responder a las solicitudes Se necesita más información.](./how-to-report-a-problem-with-visual-studio.md#when-further-information-is-needed-need-more-info)
 
 - - -
 
@@ -63,7 +62,7 @@ Después de notificar un problema, los estados indican en qué punto de su ciclo
 
 - - -
 
-![Estado Cerrado: corregido de los informes de problemas en la Comunidad de desarrolladores](../ide/media/ProblemStates/ClosedFixed.jpg) 
+![Estado Cerrado: corregido de los informes de problemas en la Comunidad de desarrolladores](../ide/media/ProblemStates/ClosedFixed.jpg)
 
 **Cerrado: corregido** indica que hemos publicado una corrección para el problema. El problema ahora también tiene una etiqueta "corregido en:" que especifica la versión de lanzamiento.
 
@@ -111,7 +110,7 @@ Después de notificar un problema, los estados indican en qué punto de su ciclo
 
 Se recomienda usar la búsqueda para asegurarse de que aún no existen informes sobre el problema del que está a punto de informar. Si encuentra un elemento existente que coincide con su problema, vote ese vale de problema.
 
- Proporcione toda la información que pueda para ayudar a nuestros equipos a reproducir lo que está experimentando.  Esta información incluye los pasos de reproducción necesarios, fragmentos de código, capturas de pantalla, grabaciones de reproducción, archivos de registro y otros artefactos.  Aquí tiene [información sobre cómo notificar un problema en Visual Studio](./how-to-report-a-problem-with-visual-studio-2017.md).
+ Proporcione toda la información que pueda para ayudar a nuestros equipos a reproducir lo que está experimentando.  Esta información incluye los pasos de reproducción necesarios, fragmentos de código, capturas de pantalla, grabaciones de reproducción, archivos de registro y otros artefactos.  Aquí tiene [información sobre cómo notificar un problema en Visual Studio](./how-to-report-a-problem-with-visual-studio.md).
 
 ### <a name="how-is-my-feedback-prioritized"></a>¿Cómo se priorizan mis comentarios?
 

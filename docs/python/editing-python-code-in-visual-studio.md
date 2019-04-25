@@ -1,32 +1,27 @@
 ---
 title: Editar código de Python
 description: Para Python, Visual Studio proporciona IntelliSense enriquecido, fragmentos de código y características de navegación, además de formato, detección de errores y refactorización.
-ms.date: 11/19/2018
-ms.prod: visual-studio-dev15
+ms.date: 03/13/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 62d22b286b6f0e58f6b833ba1975a07a6ab0500b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b111d3b0fe2f4af9098186aff3ef661045215473
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53964369"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366281"
 ---
 # <a name="edit-python-code"></a>Editar código de Python
 
 Dado que invierte mucho tiempo de desarrollo en el editor de código, la [compatibilidad de Python en Visual Studio](installing-python-support-in-visual-studio.md) proporciona funciones para ayudarle a ser más productivo. Las características incluyen resalte de sintaxis de IntelliSense, finalización automática, ayuda para la firma, invalidaciones de método, búsqueda y navegación.
 
 El editor también está integrado en la ventana **interactiva** de Visual Studio, lo que hace que sea sencillo intercambiar código entre los dos. Vea [Paso 3 del tutorial: Uso de la ventana interactiva de REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md) y [Uso de la ventana interactiva - Comando Enviar código a Interactive](python-interactive-repl-in-visual-studio.md#send-to-interactive-command) para obtener información detallada.
-
-|   |   |
-|---|---|
-| ![icono de cámara de película para vídeo](../install/media/video-icon.png "Ver un vídeo") | [Eche un vistazo a un vídeo (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Editing-Python-Code-r2iQH5LWE_4605918567) para ver una demostración de la edición de código Python (2 minutos 30 segundos).|
 
 Para obtener documentación general sobre la edición de código en Visual Studio, vea [Características del editor de código](../ide/writing-code-in-the-code-and-text-editor.md). Vea también [Esquematización](../ide/outlining.md), que le ayudará a mantenerse centrado en determinadas secciones del código.
 
@@ -36,9 +31,9 @@ También puede usar el **Examinador de objetos** de Visual Studio (**Ver** > **O
 
 IntelliSense ofrece [finalizaciones](#completions), [ayuda para la firma](#signature-help), [información rápida](#quick-info) y [coloración de código](#code-coloring). Visual Studio 2017 versión 15.7 y posteriores también admite [sugerencias de tipo](#type-hints).
 
-Para mejorar el rendimiento, IntelliSense en **Visual Studio 2017, versión 15.5** y anteriores, depende de la base de datos de finalizaciones que se genera para cada entorno de Python en el proyecto. Si agrega, quita o actualiza paquetes las bases de datos puede que necesiten actualizarse. El estado de la base de datos se muestra en la ventana **Entornos de Python** (un elemento relacionado del **Explorador de soluciones**) en la pestaña **IntelliSense** (vea [Referencia de pestañas de la ventana Entorno de Python](python-environments-window-tab-reference.md#intellisense-tab)).
+Para mejorar el rendimiento, IntelliSense en Visual Studio 2017, versión 15.5 y versiones anteriores, depende de la base de datos de finalizaciones que se genera para cada entorno de Python en el proyecto. Si agrega, quita o actualiza paquetes las bases de datos puede que necesiten actualizarse. El estado de la base de datos se muestra en la ventana **Entornos de Python** (un elemento relacionado del **Explorador de soluciones**) en la pestaña **IntelliSense** (vea [Referencia de pestañas de la ventana Entorno de Python](python-environments-window-tab-reference.md#intellisense-tab)).
 
-**Visual Studio 2017, versión 15.6** y posteriores utiliza un medio diferente para proporcionar finalizaciones de IntelliSense que no dependen de la base de datos.
+Visual Studio 2017, versión 15.6 y posteriores, se utiliza un medio diferente para proporcionar finalizaciones de IntelliSense que no dependen de la base de datos.
 
 ### <a name="completions"></a>Finalizaciones
 
@@ -81,7 +76,7 @@ Al escribir @ se inicia un decorador y se muestran todos los posibles decoradore
 
 ### <a name="type-hints"></a>Sugerencias de escritura
 
-*Visual Studio 2017, versión 15.7 y posteriores*
+*Visual Studio 2017 versión 15.7 y posteriores.*
 
 "Sugerencias de escritura" en Python 3.5 + ([PEP 484](https://www.python.org/dev/peps/pep-0484/) (python.org) es una sintaxis de anotación de funciones y clases que indica los tipos de argumentos, valores devueltos y atributos de clase. IntelliSense muestra sugerencias de tipo cuando mantiene el mouse sobre las llamadas a funciones, argumentos y variables que tengan dichas anotaciones.
 
@@ -114,10 +109,20 @@ Al usar el comando **Ejecutar MyPy** en este código se genera el siguiente erro
 
 ![Resultado de ejemplo donde MyPy valida las sugerencias de tipo](media/code-editing-type-hints-validation-error.png)
 
+::: moniker range="vs-2017"
 > [!Tip]
-> Para las versiones de Python anteriores a la 3.5, Visual Studio también muestra las sugerencias de tipo que proporcione a través de *archivos de código auxiliar* (*.pyi*). Puede usar archivos de código auxiliar siempre que no quiera incluir sugerencias de tipo directamente en el código o cuando quiera crear sugerencias de tipo para una biblioteca que no los usa directamente. Para obtener más información, vea [Create Stubs for Python Modules](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules) (Creación de códigos auxiliares para los módulos de Python) en la wiki de proyecto de MyPy.
+> Para las versiones de Python anteriores a la 3.5, Visual Studio también muestra las sugerencias de tipo que proporcione a través de *archivos de código auxiliar* de Typeshed (*.pyi*). Puede usar archivos de código auxiliar siempre que no quiera incluir sugerencias de tipo directamente en el código o cuando quiera crear sugerencias de tipo para una biblioteca que no los usa directamente. Para obtener más información, vea [Create Stubs for Python Modules](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules) (Creación de códigos auxiliares para los módulos de Python) en la wiki de proyecto de MyPy.
 >
 > Actualmente Visual Studio no admite sugerencias de tipo en los comentarios.
+::: moniker-end
+::: moniker range=">=vs-2019"
+> [!Tip]
+> Para las versiones de Python anteriores a la 3.5, Visual Studio también muestra las sugerencias de tipo que proporcione a través de *archivos de código auxiliar* de Typeshed (*.pyi*). Puede usar archivos de código auxiliar siempre que no quiera incluir sugerencias de tipo directamente en el código o cuando quiera crear sugerencias de tipo para una biblioteca que no los usa directamente. Para obtener más información, vea [Create Stubs for Python Modules](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules) (Creación de códigos auxiliares para los módulos de Python) en la wiki de proyecto de MyPy.
+>
+> Visual Studio incluye un conjunto de agrupaciones de archivos Typeshed para Python 2 y 3, por lo que no se necesitan otras descargas. Sin embargo, si quiere usar un conjunto de archivos distinto, puede especificar la ruta en las opciones **Herramientas** > **Opciones** > **Python** > **Servidor de lenguaje**. Consulte [Opciones: servidor de lenguaje](python-support-options-and-settings-in-visual-studio.md#language-server-options).
+>
+> Actualmente Visual Studio no admite sugerencias de tipo en los comentarios.
+::: moniker-end
 
 ### <a name="signature-help"></a>Ayuda para la firma
 

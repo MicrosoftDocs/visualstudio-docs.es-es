@@ -1,0 +1,44 @@
+### YamlMime:YamlDocument
+ms.openlocfilehash: 78d27da24684d8d516921ae5258fe42f5e70f7e7
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55924063"
+documentType: LandingData
+title: Cognitive Services en Visual Studio
+metadata:
+  title: Cognitive Services | Microsoft Docs
+  meta.description: Tutorials and conceptual articles about connecting apps and services to cognitive services in Azure.
+  ms.custom: seohack18
+  author: ghogen
+  manager: jillfra
+  ms.prod: visual-studio-windows
+  ms.technology: vs-azure
+  ms.topic: landing-page
+  ms.date: 10/09/2018
+  ms.author: ghogen
+sections:
+- title: Conexión de las aplicaciones a Cognitive Services mediante Servicios conectados de Visual Studio
+  items:
+  - type: paragraph
+    text: 'Visual Studio ofrece una manera cómoda de conectar el proyecto de aplicación o servicio a una variedad de servicios de Azure, incluido Cognitive Services, que proporciona un eficaz conjunto de funciones de inteligencia artificial. Con los Servicios conectados de Visual Studio se simplifica considerablemente el proceso de desarrollo, ya que toda la configuración se realiza automáticamente. Para ver un tutorial, elija para qué servicio quiere agregar compatibilidad en el proyecto:'
+  - type: list
+    style: icon48
+    items:
+    - image:
+        src: https://docs.microsoft.com/azure/media/index/i_azure-cognitive-services-color.svg
+      text: Text Analytics
+      href: /azure/cognitive-services/text-analytics/vs-text-connected-service
+    - image:
+        src: https://docs.microsoft.com/azure/media/index/i_azure-cognitive-services-color.svg
+      text: Bing News Search
+      href: /azure/cognitive-services/bing-news-search/vs-bing-news-search-connected-service
+    - image:
+        src: https://docs.microsoft.com/azure/media/index/i_azure-cognitive-services-color.svg
+      text: Face API
+      href: /azure/cognitive-services/face/vs-face-connected-service
+    - image:
+        src: https://docs.microsoft.com/azure/media/index/i_azure-cognitive-services-color.svg
+      text: Computer Vision
+      href: /azure/cognitive-services/computer-vision/vs-computer-vision-connected-service

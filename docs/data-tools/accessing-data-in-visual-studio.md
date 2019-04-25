@@ -11,16 +11,15 @@ helpviewer_keywords:
 - ADO.NET, data access
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9a13efa2335cd0721b71dd61e270e5331d78dede
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 16cbdb0a673f503dcee49b7a323d1453ee93532a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53936391"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659727"
 ---
 # <a name="access-data-in-visual-studio"></a>Acceder a datos en Visual Studio
 
@@ -28,7 +27,7 @@ En Visual Studio, puede crear aplicaciones que se conectan a los datos de práct
 
 Para las aplicaciones en JavaScript, Python, PHP, Ruby o C++, conéctese a datos como hace con cualquier otra cosa, obtención de bibliotecas y escribiendo código. Para aplicaciones. NET, Visual Studio proporciona herramientas que puede usar para explorar los orígenes de datos, crear modelos de objeto para almacenar y manipular los datos en memoria y enlazar datos a la interfaz de usuario. Microsoft Azure proporciona SDK para. NET, Java, Node.js, PHP, Python, Ruby y las aplicaciones móviles y herramientas de Visual Studio para conectarse a Azure Storage.
 
-Las listas siguientes muestran algunos de los muchos sistemas de base de datos y almacenamiento que se pueden usar desde Visual Studio. El [Microsoft Azure](https://azure.microsoft.com/) ofertas son servicios de datos que incluyen todos los de aprovisionamiento y administración de almacén de datos subyacente. El **desarrollo de Azure** carga de trabajo en [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) le permite trabajar con almacenes de datos de Azure directamente desde Visual Studio.
+Las listas siguientes muestran algunos de los muchos sistemas de base de datos y almacenamiento que se pueden usar desde Visual Studio. El [Microsoft Azure](https://azure.microsoft.com/) ofertas son servicios de datos que incluyen todos los de aprovisionamiento y administración de almacén de datos subyacente. El **desarrollo de Azure** carga de trabajo en [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) le permite trabajar con almacenes de datos de Azure directamente desde Visual Studio.
 
 ![Carga de trabajo Desarrollo de Azure](media/azure-development-workload.png)
 
@@ -60,16 +59,26 @@ La mayoría de los otros productos SQL y NoSQL base de datos que se enumeran aqu
 - Apache Cassandra
 - CouchDB
 - MongoDB
-- Datos
-- OrientDB |
+- NDatabase
+- OrientDB|
 - RavenDB
 - VelocityDB
 - Y mucho más...
 
-Muchos proveedores de base de datos y de terceros admiten la integración de Visual Studio mediante paquetes de NuGet. Puede explorar las ofertas en nuget.org o mediante el Administrador de paquetes de NuGet en Visual Studio (**herramientas** > **Administrador de paquetes de NuGet** > **administrar paquetes NuGet Paquetes para la solución**). Otros productos de base de datos se integran con Visual Studio como una extensión. Puede examinar estas ofertas en Visual Studio Marketplace, vaya a **herramientas**, **extensiones y actualizaciones** y, a continuación, seleccione **Online** en el panel izquierdo de la cuadro de diálogo. Para obtener más información, consulte [sistemas de base de datos Compatible para Visual Studio](../data-tools/installing-database-systems-tools-and-samples.md).
+::: moniker range="vs-2017"
+
+Muchos proveedores de base de datos y de terceros admiten la integración de Visual Studio mediante paquetes de NuGet. Puede explorar las ofertas en nuget.org o mediante el Administrador de paquetes de NuGet en Visual Studio (**herramientas** > **Administrador de paquetes de NuGet** > **administrar paquetes NuGet Paquetes para la solución**). Otros productos de base de datos se integran con Visual Studio como una extensión. Puede examinar estas ofertas en el [Visual Studio Marketplace](https://marketplace.visualstudio.com/) o yendo a **herramientas** > **extensiones y actualizaciones** y, a continuación, seleccione  **Online** en el panel izquierdo del cuadro de diálogo. Para obtener más información, consulte [sistemas de base de datos Compatible para Visual Studio](../data-tools/installing-database-systems-tools-and-samples.md).
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Muchos proveedores de base de datos y de terceros admiten la integración de Visual Studio mediante paquetes de NuGet. Puede explorar las ofertas en nuget.org o mediante el Administrador de paquetes de NuGet en Visual Studio (**herramientas** > **Administrador de paquetes de NuGet** > **administrar paquetes NuGet Paquetes para la solución**). Otros productos de base de datos se integran con Visual Studio como una extensión. Puede examinar estas ofertas en el [Visual Studio Marketplace](https://marketplace.visualstudio.com/) o yendo a **extensiones** > **administrar extensiones** y, a continuación, seleccione  **Online** en el panel izquierdo del cuadro de diálogo. Para obtener más información, consulte [sistemas de base de datos Compatible para Visual Studio](../data-tools/installing-database-systems-tools-and-samples.md).
+
+::: moniker-end
 
 > [!NOTE]
-> El soporte extendido de SQL Server 2005 finalizó el 12 de abril de 2016. No hay ninguna garantía de que las herramientas de datos en Visual Studio 2015 y versiones posteriores seguirán funcionando con SQL Server 2005 después de esta fecha. Para obtener más información, consulte el [anuncio de fin de soporte para SQL Server 2005](https://www.microsoft.com/sql-server/sql-server-2005).
+> El soporte extendido de SQL Server 2005 finalizó el 12 de abril de 2016. No hay ninguna garantía de que las herramientas de datos en Visual Studio 2015 y versiones posteriores seguirán funcionando con SQL Server 2005. Para obtener más información, consulte el [anuncio de fin de soporte para SQL Server 2005](https://www.microsoft.com/sql-server/sql-server-2005).
 
 ## <a name="net-languages"></a>Lenguajes de .NET
 

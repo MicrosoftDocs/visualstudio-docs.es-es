@@ -1,7 +1,6 @@
 ---
 title: -Edit (devenv.exe)
 ms.date: 12/10/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - Edit Devenv switch
@@ -10,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 02b3d6e7-a2b1-4d83-a747-aa8c2fb758b7
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fb5ae37d3e4dc0973320c68f9db169cdbf7d663a
-ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.openlocfilehash: 26433d62a68b28450a56eee1282376733acfe55c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54227686"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55911915"
 ---
 # <a name="edit-devenvexe"></a>/Edit (devenv.exe)
 

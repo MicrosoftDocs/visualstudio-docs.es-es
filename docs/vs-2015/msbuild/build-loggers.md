@@ -1,14 +1,9 @@
 ---
 title: Registradores de compilación | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, writing loggers
 - MSBuild, logging
@@ -17,18 +12,17 @@ ms.assetid: fa34810d-185a-4d22-92bd-9852915e5f1d
 caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: dbf27388013b71945879537dffff1e53a7314e7b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 2908c8217070196de1b2d3cd4f1c5f8d8f2868a5
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49853252"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658895"
 ---
 # <a name="build-loggers"></a>Registradores de compilación
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Los registradores proporcionan un método para personalizar el resultado de la compilación y de mostrar mensajes, errores o advertencias en respuesta a eventos de compilación específicos. Cada registrador se implementa como una clase .NET que, a su vez, implementa la interfaz <xref:Microsoft.Build.Framework.ILogger>, definida en el ensamblado Microsoft.Build.Framework.dll.  
   
  Existen dos métodos que se pueden utilizar al implementar un registrador:  
@@ -92,6 +86,3 @@ MSBuild /nologo /noconsolelogger /logger:SimpleLogger.dll /verbosity:Detailed
 ## <a name="see-also"></a>Vea también  
  [Obtener registros de compilación](../msbuild/obtaining-build-logs-with-msbuild.md)   
  [Conceptos de MSBuild](../msbuild/msbuild-concepts.md)
-
-
-

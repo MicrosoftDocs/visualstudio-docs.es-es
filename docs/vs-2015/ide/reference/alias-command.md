@@ -1,14 +1,9 @@
 ---
 title: Alias (Comando) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - tools.alias
 helpviewer_keywords:
@@ -21,18 +16,17 @@ ms.assetid: bdf857df-b5d5-450f-8c10-a6fd4dccc130
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f9fb6a4da0b18cf022ee388ff4a6fa5f399dc650
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 49b9f88dd00321e00f5c64dad3616cd5a0ddb51a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49258523"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654287"
 ---
 # <a name="alias-command"></a>Alias (Comando)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Crea un nuevo alias para un comando completo, un comando completo con argumentos u otro alias.  
   
 > [!TIP]
@@ -89,6 +83,3 @@ Tools.Alias [/delete] [/reset] [aliasname] [aliasstring]
  [Ventana Comandos](../../ide/reference/command-window.md)   
  [Cuadro Buscar/Comando](../../ide/find-command-box.md)   
  [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
-
-
-

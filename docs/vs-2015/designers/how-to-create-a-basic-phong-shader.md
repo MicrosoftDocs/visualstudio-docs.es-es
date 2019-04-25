@@ -1,49 +1,44 @@
 ---
-title: 'Cómo: Crear un sombreador Phong básico | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Crear un sombreador Phong básico | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: c7c69da8-142b-4d3b-9be9-4be0d5970b25
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ddb8f32cbf23184da140c3426e88c1f622dea1b7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 78ff2ecf77d3d8943601b8bd0779fa37811ec2d2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49832685"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113760"
 ---
-# <a name="how-to-create-a-basic-phong-shader"></a>Cómo: Crear un sombreador Phong básico
+# <a name="how-to-create-a-basic-phong-shader"></a>Procedimiento Crear un sombreador Phong básico
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 En este documento se muestra cómo usar el Diseñador de sombras y el lenguaje DGSL (Directed Graph Shader Language) para crear un sombreador de iluminación que implementa el modelo de iluminación Phong clásico.  
   
  Este documento muestra estas actividades:  
   
--   Agregar nodos a un gráfico de sombreador  
+- Agregar nodos a un gráfico de sombreador  
   
--   Desconectar nodos  
+- Desconectar nodos  
   
--   Conectar nodos  
+- Conectar nodos  
   
 ## <a name="the-phong-lighting-model"></a>El modelo de iluminación Phong  
  El modelo de iluminación Phong extiende el modelo de iluminación de Lambert para incluir reflejos especulares, que simulan las propiedades brillantes de una superficie. El componente especular proporciona iluminación adicional de las mismas fuentes de iluminación direccionales que se usan en el modelo de iluminación de Lambert, pero su contribución al color final se procesa de manera diferente. El resaltado especular afecta a cada superficie en la escena de manera diferente, en función de la relación entre la dirección de la vista, la dirección de las fuentes de luz y la orientación de la superficie. Es un producto del color especular, la potencia especular y la orientación de la superficie, y del color, la intensidad y la dirección de las fuentes de luz. Las superficies que reflejan la fuente de luz directamente en el visor reciben la contribución especular máxima y las superficies que reflejan la fuente de luz lejos del visor no reciben ninguna contribución. En el modelo de iluminación Phong, uno o más componentes especulares se combinan para determinar el color y la intensidad del resaltado especular para cada punto en el objeto y, después, se agregan al resultado del modelo de iluminación Lambert para producir el color final del píxel.  
   
- Para más información sobre el modelo de iluminación Lambert, vea [Cómo: Crear un sombreador Lambert básico](../designers/how-to-create-a-basic-lambert-shader.md).  
+ Para obtener más información sobre el modelo de iluminación Lambert, vea [Cómo: Crear un sombreador Lambert básico](../designers/how-to-create-a-basic-lambert-shader.md).  
   
  Antes de empezar, asegúrese de que se muestran la ventana **Propiedades** y el **Cuadro de herramientas**.  
   
 #### <a name="to-create-a-phong-shader"></a>Para crear a un sombreador Phong  
   
-1. Cree un sombreador Lambert, como se describe en [Cómo: Crear un sombreador Lambert básico](../designers/how-to-create-a-basic-lambert-shader.md).  
+1. Cree un sombreador Lambert, como se explica en [Cómo: Crear un sombreador Lambert básico](../designers/how-to-create-a-basic-lambert-shader.md).  
   
 2. Desconecte el nodo **Lambert** del nodo **Color final**. Elija el terminal **RGB** del nodo **Lambert** y, después, elija **Romper vínculos**. Esto hace sitio para el nodo que se agrega en el paso siguiente.  
   
@@ -73,14 +68,11 @@ En este documento se muestra cómo usar el Diseñador de sombras y el lenguaje D
   
  ![Iluminación Phong aplicada a un modelo](../designers/media/digit-lighting-model.png "Digit-Lighting-Model")  
   
- Para más información sobre cómo aplicar un sombreador a un modelo 3D, vea [Cómo: Aplicar un sombreador a un modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).  
+ Para obtener más información acerca de cómo aplicar un sombreador a un modelo 3D, vea [Cómo: Aplicar un sombreador a un modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).  
   
 ## <a name="see-also"></a>Vea también  
- [Cómo: Aplicar un sombreador a un modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
+ [Cómo: Aplicar a un sombreador a un modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
  [Cómo: Exportar un sombreador](../designers/how-to-export-a-shader.md)   
- [Cómo: Crear un sombreador Lambert básico](../designers/how-to-create-a-basic-lambert-shader.md)   
+ [Cómo: Crear a un sombreador Lambert básico](../designers/how-to-create-a-basic-lambert-shader.md)   
  [Diseñador de sombras](../designers/shader-designer.md)   
  [Nodos del Diseñador de sombras](../designers/shader-designer-nodes.md)
-
-
-

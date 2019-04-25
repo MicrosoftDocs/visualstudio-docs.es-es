@@ -2,20 +2,19 @@
 title: R y contenedores de Docker
 description: Describe cómo configurar los contenedores de Docker para R y conectarse a ellos con Visual Studio.
 ms.date: 12/04/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 ms.reviewer: karthiknadig
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 39d28f01d6c59e91c07853b00d91680c4ce10278
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8c5b4278ab50aac96703f03e74c014d29831f22e
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53835609"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55954795"
 ---
 # <a name="use-docker-containers-with-r-tools-for-visual-studio"></a>Usar contenedores de Docker con Herramientas de R para Visual Studio
 

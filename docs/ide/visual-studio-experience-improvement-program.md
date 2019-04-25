@@ -2,19 +2,18 @@
 title: Programa para la mejora de la experiencia del usuario
 description: Obtenga información sobre cómo administrar la configuración de privacidad en Visual Studio.
 ms.date: 05/21/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: PoulChapman
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 71205231e3734fd5df876501f3880afa8b0779c5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a1e4f59b672049ee8148c94dbbf51e560e22c31e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53822776"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62582026"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Programa para la mejora de la experiencia del usuario de Visual Studio
 
@@ -26,14 +25,11 @@ El Programa para la mejora de la experiencia del usuario de Visual Studio (VSCEI
 
 VSCEIP está activado de forma predeterminada. Para desactivarlo o volver a activarlo, siga estas instrucciones:
 
-1. Inicie Visual Studio.
-
-1. En el menú **Ayuda**, elija **Enviar comentarios** y, después, seleccione **Configuración**.
+1. En Visual Studio, elija **Ayuda** > **Enviar comentarios** y seleccione **Configuración**.
 
    Se abre el cuadro de diálogo **Programa para la mejora de la experiencia de Visual Studio**.
 
-1. Para dejar de participar, seleccione **No, prefiero no participar** y **Aceptar**.
-   Para participar, seleccione **Sí, deseo participar** y **Aceptar**.
+1. Para dejar de participar, seleccione **No, prefiero no participar** y **Aceptar**. Para participar, seleccione **Sí, deseo participar** y **Aceptar**.
 
    ![Cuadro de diálogo Programa para la mejora de la experiencia de Visual Studio](media/experience-improvement-program.png)
 
@@ -43,11 +39,26 @@ Si instala [Build Tools para Visual Studio](https://visualstudio.microsoft.com/d
 
 La clave del Registro y la configuración necesarias son:
 
-En un sistema operativo de 64 bits, la clave = **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSCommon\15.0\SQM** En un sistema operativo de 32 bits, la clave = **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSCommon\15.0\SQM** Cuando la directiva de grupo está habilitada, la clave = **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\VisualStudio\SQM**
+::: moniker range="vs-2017"
+
+- En un sistema operativo de 64 bits, Key = **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSCommon\15.0\SQM**
+- En un sistema operativo de 32 bits, Key = **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSCommon\15.0\SQM**
+- Cuando la directiva de grupo está habilitada, Key = **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\VisualStudio\SQM**
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+- En un sistema operativo de 64 bits, Key = **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSCommon\16.0\SQM**
+- En un sistema operativo de 32 bits, Key = **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSCommon\16.0\SQM**
+- Cuando la directiva de grupo está habilitada, Key = **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\VisualStudio\SQM**
+
+::: moniker-end
 
 Entry = **OptIn**
 
 Value = (DWORD)
+
 - **0** es no participar (desactivar el VSCEIP)
 - **1** es participar (activar el VSCEIP)
 
@@ -60,6 +71,6 @@ Para obtener más información sobre los datos que recopila, procesa o transmite
 
 * [Información de diagnóstico recopilada por Visual Studio](diagnostic-data-collection.md)
 * [Hable con nosotros](../ide/talk-to-us.md)
-* [Cómo notificar un problema con Visual Studio 2017](../ide/how-to-report-a-problem-with-visual-studio-2017.md)
+* [Cómo notificar un problema con Visual Studio 2017](../ide/how-to-report-a-problem-with-visual-studio.md)
 * [Comunidad de desarrolladores de Visual Studio](https://developercommunity.visualstudio.com/)
 * [Declaración de privacidad de Microsoft](https://privacy.microsoft.com/privacystatement)

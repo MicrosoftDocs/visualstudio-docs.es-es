@@ -12,16 +12,15 @@ helpviewer_keywords:
 - text templates, generating code for your application
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 8e2ba4e158b6c012c05d29c988e9611d25f58e63
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b4cfca45d2ad1979b091c668854990ce9a7c0311
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53861986"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090425"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Generación de código en tiempo de diseño usando las plantillas de texto T4
 Plantillas de texto T4 de tiempo de diseño permiten generar código de programa y otros archivos en el proyecto de Visual Studio. Normalmente, las plantillas se escriben para que varíen el código que generan según los datos de un *modelo*. Un modelo es un archivo o una base de datos que contiene información esencial sobre los requisitos de la aplicación.
@@ -33,15 +32,11 @@ Plantillas de texto T4 de tiempo de diseño permiten generar código de programa
 
  Probablemente ya está familiarizado con la generación de código. Al definir los recursos en un **.resx** se genera automáticamente el archivo en la solución de Visual Studio, un conjunto de clases y métodos. El archivo de recursos hace que resulte más fácil y confiable editar los recursos que editar las clases y los métodos. Con las plantillas de texto, puede generar código de la misma manera a partir de un origen con un diseño propio.
 
- Una plantilla de texto contiene una mezcla del texto que se desea generar y el código de programa que genera partes variables del texto. El código de programa y el texto permiten repetir u omitir condicionalmente partes del texto generado. El texto generado por sí mismo puede ser código de programa que formará parte de la aplicación.
+ Una plantilla de texto contiene una mezcla del texto que se desea generar y el código de programa que genera partes variables del texto. El código de programa permite repetir u omitir condicionalmente partes del texto generado. El texto generado por sí mismo puede ser código de programa que formará parte de la aplicación.
 
-## <a name="creating-a-design-time-t4-text-template"></a>Crear una plantilla de texto T4 en tiempo de diseño
+## <a name="create-a-design-time-t4-text-template"></a>Crear una plantilla de texto T4 en tiempo de diseño
 
-#### <a name="to-create-a-design-time-t4-template-in-visual-studio"></a>Para crear una plantilla T4 en tiempo de diseño en Visual Studio
-
-1. Crear un proyecto de Visual Studio, o abrir uno existente.
-
-    Por ejemplo, en el **archivo** menú, elija **New** > **proyecto**.
+1. Cree un nuevo proyecto de Visual Studio o abrir uno existente.
 
 2. Agregue un archivo de plantilla de texto al proyecto y asígnele un nombre que tenga la extensión **.tt**.
 
@@ -71,10 +66,11 @@ Plantillas de texto T4 de tiempo de diseño permiten generar código de programa
 6. En **el Explorador de soluciones**, expanda el nodo del archivo de plantilla y encontrará un archivo que tiene la extensión **.txt**. El archivo contiene el texto generado a partir de la plantilla.
 
    > [!NOTE]
-   >  Si el proyecto es un proyecto de Visual Basic, debe hacer clic en **mostrar todos los archivos** con el fin de ver el archivo de salida.
+   > Si el proyecto es un proyecto de Visual Basic, debe hacer clic en **mostrar todos los archivos** con el fin de ver el archivo de salida.
 
-### <a name="regenerating-the-code"></a>Volver a generar el código
- Se ejecutará una plantilla, que generará el archivo subsidiario, en cualquiera de los siguientes casos:
+### <a name="regenerate-the-code"></a>Volver a generar el código
+
+Se ejecutará una plantilla, que generará el archivo subsidiario, en cualquiera de los siguientes casos:
 
 - Edite la plantilla y, a continuación, cambiar el foco a otra ventana de Visual Studio.
 
@@ -84,12 +80,11 @@ Plantillas de texto T4 de tiempo de diseño permiten generar código de programa
 
 - En **el Explorador de soluciones**, en el menú contextual de cualquier archivo, elija **ejecutar herramienta personalizada**. Utilice este método para transformar un subconjunto seleccionado de plantillas.
 
-  También puede configurar un proyecto de Visual Studio para que las plantillas se ejecuten cuando han cambiado los archivos de datos que leen. Para obtener más información, consulte [automáticamente volver a generar el código](#Regenerating).
+También puede configurar un proyecto de Visual Studio para que las plantillas se ejecuten cuando han cambiado los archivos de datos que leen. Para obtener más información, consulte [automáticamente volver a generar el código](#Regenerating).
 
-## <a name="generating-variable-text"></a>Generar texto variable
- Las plantillas de texto permiten utilizar código de programa para modificar el contenido del archivo generado.
+## <a name="generate-variable-text"></a>Generar texto Variable
 
-#### <a name="to-generate-text-by-using-program-code"></a>Para generar texto utilizando código de programa
+Las plantillas de texto permiten utilizar código de programa para modificar el contenido del archivo generado.
 
 1. Cambie el contenido del archivo `.tt`:
 
@@ -142,13 +137,13 @@ Plantillas de texto T4 de tiempo de diseño permiten generar código de programa
 >  Puede dejar la cláusula en la directiva de plantilla incluso aunque no esté realizando la depuración. Esto solo produce una pequeña caída del rendimiento.
 
 ## <a name="generating-code-or-resources-for-your-solution"></a>Generar código o recursos para la solución
- Puede generar archivos de programa que varían dependiendo de un modelo. Un modelo es una entrada como una base de datos, un archivo de configuración, un modelo UML, un modelo DSL u otro origen. Normalmente genera varios archivos de programa que proceden del mismo modelo. Para ello, crea un archivo de plantilla para cada archivo de programa generado y establece que todas las plantillas lean el mismo modelo.
+ Puede generar archivos de programa que varían dependiendo de un modelo. Un modelo es una entrada como una base de datos, un archivo de configuración, un modelo UML, un modelo DSL u otro origen. Normalmente, se generan varios archivos de programa desde el mismo modelo. Para ello, crea un archivo de plantilla para cada archivo de programa generado y establece que todas las plantillas lean el mismo modelo.
 
 #### <a name="to-generate-program-code-or-resources"></a>Para generar código de programa o recursos
 
-1.  Cambie la directiva de salida para generar un archivo del tipo adecuado, como .cs, .vb, .resx o .xml.
+1. Cambie la directiva de salida para generar un archivo del tipo adecuado, como .cs, .vb, .resx o .xml.
 
-2.  Inserte el código que generará el código de solución que requiere. Por ejemplo, si desea generar tres declaraciones de campo de número entero en una clase:
+2. Inserte el código que generará el código de solución que requiere. Por ejemplo, si desea generar tres declaraciones de campo de número entero en una clase:
 
     ```csharp
 
@@ -181,7 +176,7 @@ Plantillas de texto T4 de tiempo de diseño permiten generar código de programa
 
     ```
 
-3.  Guarde el archivo e inspeccione el archivo generado, que ahora contiene el siguiente código:
+3. Guarde el archivo e inspeccione el archivo generado, que ahora contiene el siguiente código:
 
     ```csharp
     class MyGeneratedClass {
@@ -285,17 +280,20 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 ```
 
 > [!TIP]
->  Una plantilla de texto se ejecuta en su propio dominio de aplicación y el acceso a los servicios se realiza mediante el cálculo de referencias. En este caso, GetCOMService() es más confiable que GetService().
+> Una plantilla de texto se ejecuta en su propio dominio de aplicación y el acceso a los servicios se realiza mediante el cálculo de referencias. En este caso, GetCOMService() es más confiable que GetService().
 
 ## <a name="Regenerating"></a> Volver a generar el código automáticamente
- Normalmente, se generan varios archivos en una solución de Visual Studio con un modelo de entrada. Cada archivo se genera a partir de su propia plantilla, pero todas las plantillas hacen referencia al mismo modelo.
 
- Si el modelo de origen cambia, debe volver a ejecutar todas las plantillas de la solución. Para hacerlo manualmente, elija **Transformar todas las plantillas** en el **compilar** menú.
+Normalmente, se generan varios archivos en una solución de Visual Studio con un modelo de entrada. Cada archivo se genera a partir de su propia plantilla, pero todas las plantillas hacen referencia al mismo modelo.
 
- Si ha instalado el SDK de modelado de Visual Studio, puede tener todas las plantillas se transformen automáticamente cada vez que realice una compilación. Para ello, edite el archivo de proyecto (.csproj o .vbproj) en un editor de texto y agregue las siguientes líneas cerca del final del archivo, después de cualquier otra instrucción `<import>`:
+Si el modelo de origen cambia, debe volver a ejecutar todas las plantillas de la solución. Para hacerlo manualmente, elija **Transformar todas las plantillas** en el **compilar** menú.
+
+Si ha instalado el SDK de modelado de Visual Studio, puede tener todas las plantillas se transformen automáticamente cada vez que realice una compilación. Para ello, edite el archivo de proyecto (.csproj o .vbproj) en un editor de texto y agregue las siguientes líneas cerca del final del archivo, después de cualquier otra instrucción `<import>`:
 
 > [!NOTE]
-> En Visual Studio 2017, el SDK de transformación de plantilla de texto y el SDK de modelado de Visual Studio se instalan automáticamente al instalar características específicas de Visual Studio. Para obtener más información, consulte [esta entrada de blog](https://blogs.msdn.microsoft.com/devops/2016/12/12/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
+> El SDK de transformación de plantilla de texto y el SDK de modelado de Visual Studio se instalan automáticamente al instalar características específicas de Visual Studio. Para obtener más información, consulte [esta entrada de blog](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
+
+::: moniker range="vs-2017"
 
 ```xml
 <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v15.0\TextTemplating\Microsoft.TextTemplating.targets" />
@@ -305,10 +303,25 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 </PropertyGroup>
 ```
 
- Para obtener más información, consulte [generación de código en un proceso de compilación](../modeling/code-generation-in-a-build-process.md).
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+```xml
+<Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v16.0\TextTemplating\Microsoft.TextTemplating.targets" />
+<PropertyGroup>
+   <TransformOnBuild>true</TransformOnBuild>
+   <!-- Other properties can be inserted here -->
+</PropertyGroup>
+```
+
+::: moniker-end
+
+Para obtener más información, consulte [generación de código en un proceso de compilación](../modeling/code-generation-in-a-build-process.md).
 
 ## <a name="error-reporting"></a>Notificación de errores
- Para colocar mensajes de error y advertencia en la ventana de errores de Visual Studio, puede utilizar estos métodos:
+
+Para colocar mensajes de error y advertencia en la ventana de errores de Visual Studio, puede utilizar estos métodos:
 
 ```
 Error("An error message");
@@ -328,12 +341,10 @@ Warning("A warning message");
 
 4. Compruebe las siguientes propiedades de la **.tt** archivo:
 
-
    | | |
    |-|-|
    | **Herramienta personalizada =** | **TextTemplatingFileGenerator** |
    | **Acción de compilación =** | **Ninguno** |
-
 
 5. Inserte las siguientes líneas al principio del archivo:
 

@@ -1,22 +1,21 @@
 ---
-title: Procedimiento Crear un modelo en 3D básico
+title: Filtrar Crear un modelo en 3D básico
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: a0d97966-2df8-449b-a8cf-5a19684dc773
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aeff9ce5ad4085c77443775fccb82e0eb9e6739d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 45944afe3c5ebd1baa307f6063b021c09fd6bfa6
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53929622"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55970275"
 ---
-# <a name="how-to-create-a-basic-3d-model"></a>Procedimiento Crear un modelo en 3D básico
+# <a name="how-to-create-a-basic-3d-model"></a>Filtrar Crear un modelo en 3D básico
 
 En este artículo se muestra cómo usar el Editor de modelos para crear un modelo 3D básico. En él se tratan las actividades siguientes:
 

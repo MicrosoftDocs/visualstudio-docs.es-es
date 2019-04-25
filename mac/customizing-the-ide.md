@@ -5,12 +5,13 @@ author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
 ms.assetid: F7C2A28C-0759-4E0D-A28E-B72D5AB73DB6
-ms.openlocfilehash: 58ad6f41528fd11510d55c4062cdd9a6ae678989
-ms.sourcegitcommit: bc43970c000f07c9cc2051f1264a9742943a9755
+ms.custom: video
+ms.openlocfilehash: b8386e5d27c2ddf6abd93ac93266f58869cd6c79
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51349616"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55853396"
 ---
 # <a name="customizing-the-ide"></a>Personalización del IDE
 
@@ -126,6 +127,10 @@ Las pestañas del editor se pueden arrastrar fuera del área de documento para c
 ![Dos columnas en paralelo con pestañas adicionales](media/customizing-the-ide-sbs2.png)
 
 Para revertir a un único editor abierto, seleccione **Vista > Columnas del editor > 1 columna**.
+
+## <a name="related-video"></a>Vídeo relacionado
+
+> [!Video https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/Visual-Studio-for-Mac-Customize-the-Look-and-Feel/player]
 
 ## <a name="see-also"></a>Vea también
 

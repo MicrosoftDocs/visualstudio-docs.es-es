@@ -1,32 +1,26 @@
 ---
 title: Iniciar una compilación desde el IDE | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - build
 ms.assetid: 936317aa-63b7-4eb0-b9db-b260a0306196
 caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c741b8dfd0607de41ca7b53bdd88244ae3957a9a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 94685a2b06b14c232d9e1f79a1d7440e1ceb765b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49230391"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663380"
 ---
 # <a name="starting-a-build-from-within-the-ide"></a>Iniciar una compilación desde el IDE
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Los sistemas de proyectos personalizados deben utilizar <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildManagerAccessor> para iniciar las compilaciones. En este tema se describen las razones de ello y se describe el procedimiento.  
   
 ## <a name="parallel-builds-and-threads"></a>Compilaciones y subprocesos paralelos  
@@ -127,6 +121,3 @@ public bool Build(Project project, bool isDesignTimeBuild)
 }  
   
 ```
-
-
-

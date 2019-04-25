@@ -2,21 +2,20 @@
 title: Diseñador de flujo de trabajo - Agregar cuadro de diálogo CorrelationInitializers
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
 f1_keywords:
 - AddCorrelationInitializers.UI
 ms.assetid: c0517467-d54a-4ee6-aef0-c19b96b6f395
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 67dea88845ffbfab8350e4a1134e09436c95321b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 21c030295d325ea1ee4d546356f8cda5ef6ffd3f
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53860361"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869907"
 ---
 # <a name="add-correlationinitializers-dialog-box"></a>Agregar CorrelationInitializers (cuadro de diálogo)
 
@@ -45,5 +44,4 @@ La tabla siguiente describen los elementos de interfaz de usuario de la **agrega
 
 ## <a name="see-also"></a>Vea también
 
-- [Agregar cuadro de diálogo de correlación](http://msdn.microsoft.com/en-us/9e41a149-e8ab-41b1-8886-ea06a63041b6)
 - [Cuadro de diálogo Inicializar correlación](../workflow-designer/initialize-correlation-dialog-box.md)

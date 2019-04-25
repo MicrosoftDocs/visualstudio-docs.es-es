@@ -2,28 +2,27 @@
 title: Introducción a la edición para desarrolladores de JavaScript
 description: En esta introducción al editor de código de Visual Studio se describen algunas de las formas en que Visual Studio hace que escribir y comprender el código JavaScript (así como desplazarse por él) sea más fácil.
 ms.date: 12/13/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 41e8628e6d747d523dae12448d81f39ad5de964b
-ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
+ms.openlocfilehash: 111100038817d16d4655271f648aeb076bf1e9af
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54398291"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856637"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Aprender a usar el editor de código
 
 En esta breve introducción al editor de código de Visual Studio veremos algunas de las formas en que Visual Studio hace que escribir y comprender el código (así como desplazarse por él) sea más fácil.
 
 > [!TIP]
-> Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) para instalarlo de forma gratuita. Según la forma en que vaya a desarrollar la aplicación, es posible que tenga que instalar la **carga de trabajo de desarrollo Node.js** con Visual Studio.
+> Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/) para instalarlo de forma gratuita. Según la forma en que vaya a desarrollar la aplicación, es posible que tenga que instalar la **carga de trabajo de desarrollo Node.js** con Visual Studio.
 
 En este artículo se da por hecho que ya está familiarizado con el desarrollo de JavaScript. Si no lo está, le aconsejamos que antes eche un vistazo a un tutorial del tipo [Crear una aplicación Node.js y Express](../javascript/tutorial-nodejs.md).
 
@@ -121,7 +120,7 @@ Para ver los fragmentos de código disponibles para el lenguaje, seleccione **Ed
 
 - [Fragmentos de código](../ide/code-snippets.md)
 - [Navegación en el código](../ide/navigating-code.md)
-- [Esquematización](../ide/outlining.md)
+- [esquematizar](../ide/outlining.md)
 - [Ir a definición y Ver la definición](../ide/go-to-and-peek-definition.md)
 - [Refactorización](../ide/refactoring-in-visual-studio.md)
-- [Uso de IntelliSense](../ide/using-intellisense.md)
+- [Usar IntelliSense](../ide/using-intellisense.md)

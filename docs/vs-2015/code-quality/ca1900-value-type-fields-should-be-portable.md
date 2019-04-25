@@ -1,14 +1,9 @@
 ---
-title: 'CA1900: Los campos de tipo de valor deberían ser portátiles | Microsoft Docs'
-ms.custom: ''
+title: 'CA1900: Campos de tipo de valor deberían ser portátiles | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1900
 - ValueTypeFieldsShouldBePortable
@@ -20,17 +15,17 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: d8794fc1e30e2afb70c6816b6d10feb8d69a5d86
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 97a83bf4ba71d0adc71fdb96d4e1c865358c08e2
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49236306"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665759"
 ---
-# <a name="ca1900-value-type-fields-should-be-portable"></a>CA1900: Los campos de tipos de valor deberían ser portátiles
+# <a name="ca1900-value-type-fields-should-be-portable"></a>CA1900: Los campos de tipo de valor deben ser portátiles
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Para obtener la documentación más reciente de Visual Studio 2017, consulte [CA1900: los campos de tipo de valor deberían ser portátiles](https://docs.microsoft.com/visualstudio/code-quality/ca1900-value-type-fields-should-be-portable) en docs.microsoft.com.  
+Para obtener la documentación más reciente de Visual Studio, consulte [CA1900: Campos de tipo de valor deberían ser portátiles](https://docs.microsoft.com/visualstudio/code-quality/ca1900-value-type-fields-should-be-portable).  
   
 |||  
 |-|-|  
@@ -50,4 +45,3 @@ Para obtener la documentación más reciente de Visual Studio 2017, consulte [CA
   
 ## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias  
  Esta advertencia se debe suprimir solo si se produce en error.
-

@@ -11,14 +11,13 @@ helpviewer_keywords:
 ms.assetid: e86806dd-5897-4e4c-bfd4-8d687fb72a6e
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 1f6debabdb154e091a8021ccd998bb31d8f88d28
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 6045466d93a0017b648ca4327e80c801517c1359
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53932264"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62786437"
 ---
 # <a name="how-to-specify-test-agents-to-use-in-load-test-scenarios"></a>Procedimiento para especificar los agentes de pruebas que se van a usar en escenarios de prueba de carga
 
@@ -46,24 +45,24 @@ Si una máquina de agente de prueba utiliza más del 75 por ciento de la CPU o t
 
 ## <a name="to-specify-the-agents-to-use-for-a-scenario"></a>Para especificar los agentes que se van a usar en un escenario
 
-1.  Abra una prueba de carga.
+1. Abra una prueba de carga.
 
      Aparece el **Editor de pruebas de carga**. Se mostrará el árbol de la prueba de carga.
 
-2.  En la carpeta **Escenarios** de los árboles de prueba de carga, elija el nodo del escenario en el que quiere especificar los agentes que se van a usar.
+2. En la carpeta **Escenarios** de los árboles de prueba de carga, elija el nodo del escenario en el que quiere especificar los agentes que se van a usar.
 
-3.  En el menú **Ver**, seleccione la ventana **Propiedades**.
+3. En el menú **Ver**, seleccione la ventana **Propiedades**.
 
      Las categorías y propiedades del escenario se muestran en la ventana **Propiedades**.
 
-4.  En el cuadro de texto de la propiedad **Agentes que se usarán**, escriba la lista de agentes en los que se puede ejecutar el escenario.
+4. En el cuadro de texto de la propiedad **Agentes que se usarán**, escriba la lista de agentes en los que se puede ejecutar el escenario.
 
      Los agentes deben estar separados por comas, por ejemplo, "**Agent1, Agent2, Agent3**". Al dejar la propiedad en blanco se indica que el escenario debería utilizar todos los agentes disponibles.
 
     > [!NOTE]
     > La propiedad **Agentes que se usarán** se omite en las ejecuciones locales. En las ejecuciones remotas, si no existe ninguno de los agentes especificados en **Agentes que se usarán**, no se ejecutan las pruebas en el escenario.
 
-5.  Después de cambiar la propiedad, elija **Guardar** en el menú **Archivo**. Luego, puede ejecutar la prueba de carga con el nuevo valor de **Agentes que se usarán**.
+5. Después de cambiar la propiedad, elija **Guardar** en el menú **Archivo**. Luego, puede ejecutar la prueba de carga con el nuevo valor de **Agentes que se usarán**.
 
 ## <a name="see-also"></a>Vea también
 

@@ -3,10 +3,17 @@ layout: HubPage
 hide_bc: true
 title: Documentación de Visual Studio | Microsoft Docs
 titleSuffix: ''
-description: 'Aprenda a usar Visual Studio 2017 para desarrollar aplicaciones, servicios y herramientas en el idioma de su elección para sus dispositivos y plataformas.'
+description: Aprenda a usar Visual Studio para desarrollar aplicaciones, servicios y herramientas en el idioma de su elección para sus dispositivos y plataformas.
 ms.topic: hub-page
 ms.custom: seodec18
+ms.openlocfilehash: f63b848481a43a9684424b31fe36c3436faff021
+ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58515329"
 ---
+<!-- markdownlint-disable MD033 -->
 <div id="main" class="v2">
     <div class="container">
         <ul class="cardsY panelContent featuredContent">
@@ -49,7 +56,7 @@ ms.custom: seodec18
                 </a>
             </li>
             <li>
-                <a href="/visualstudio/ide/whats-new-in-visual-studio">
+                <a href="/visualstudio/ide/whats-new-visual-studio-2019">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card">
@@ -59,7 +66,7 @@ ms.custom: seodec18
                                     </div>
                                 </div>
                                 <div class="cardText">
-                                    <h3>Novedades de Visual Studio 2017</h3>
+                                    <h3>Novedades de Visual Studio</h3>
                                 </div>
                             </div>
                         </div>
@@ -85,6 +92,7 @@ ms.custom: seodec18
                                                 <h3>Aprenda a usar Visual Studio</h3>
                                                 <ul class="noBullet">
                                                     <li><a class="barLink" href="get-started/visual-studio-ide.md"><img height="60" width="60" src="https://docs.microsoft.com/media/common/i_overview.svg" alt="Guided tour icon" />Iniciar una visita guiada</a></li>
+                                                    <li><a class="barLink" href="get-started/tutorial-open-project-from-repo.md"><img height="60" width="60" src="https://docs.microsoft.com/media/common/i_pull-request.svg" alt="Repo icon" />Abrir código desde un repositorio</a></li>
                                                     <li><a class="barLink" href="ide/index-writing-code.md"><img height="60" width="60" src="https://docs.microsoft.com/media/common/i_code-edit.svg" alt="Pencil icon" />Escritura y edición de código</a></li>
                                                     <li><a class="barLink" href="ide/compiling-and-building-in-visual-studio.md"><img height="60" width="60" src="https://docs.microsoft.com/media/common/i_build.svg" alt="Crane icon" />Creación del código</a></li>
                                                     <li><a class="barLink" href="debugger/debugger-feature-tour.md"><img height="60" width="60" src="https://docs.microsoft.com/media/common/i_debug.svg" alt="Debug icon" />Depuración del código</a></li>
@@ -101,7 +109,7 @@ ms.custom: seodec18
                                     <div class="cardPadding">
                                         <div class="card">
                                             <div class="cardText">
-                                                <h2>Elija un lenguaje</h2>
+                                                <h2>Seguir un tutorial</h2>
                                                 <table cellpadding="0" cellspacing="0" border="0">
                                                     <tr>
                                                         <td style="border-top-color:transparent!important;padding-left:0;">
@@ -155,7 +163,7 @@ JavaScript</a>
                                                 <h3>Cree una aplicación</h3>
                                                 <ul class="noBullet">
                                                     <li>
-                                                        <a class="barLink" href="/visualstudio/ide/quickstart-uwp-csharp">
+                                                        <a class="barLink" href="/visualstudio/get-started/csharp/tutorial-uwp">
                                                             <img src="https://docs.microsoft.com/media/logos/logo_windows.svg" alt="Windows logo">
 Aplicación universal de Windows</a>
                                                     </li>
@@ -170,8 +178,7 @@ Aplicación de escritorio de Windows</a>
 Aplicación móvil</a>
                                                     </li>
                                                     <li>
-                                                        <a class="barLink" href="/visualstudio/cross-platform/getting-started-with-visual-studio-tools-for-unity
-                ">
+                                                        <a class="barLink" href="/visualstudio/cross-platform/getting-started-with-visual-studio-tools-for-unity">
                                                             <img src="https://docs.microsoft.com/media/logos/logo_unity.svg" alt="Unity logo">
 Juego de Unity</a>
                                                     </li>
@@ -580,7 +587,7 @@ Aplicación web con ASP.NET Core</a>
                                             <div class="cardText">
                                                 <a href="/visualstudio/rtvs/">
                                                     <h3>R</h3>
-                                                    <p>Un lenguaje de programación extensible que a menudo se usa para cálculos estadísticos y gráficos.</p>
+                                                    <p>(Solo Visual Studio 2017) Lenguaje de programación extensible que normalmente se usa para cálculos estadísticos y gráficos.</p>
                                                 </a>
                                             </div>
                                         </div>
@@ -699,7 +706,7 @@ Aplicación web con ASP.NET Core</a>
                                 </a>
                             </li>
                             <li>
-                                <a href="rtvs/data-science-and-analytical-applications-workload.md">
+                                <a href="python/data-science-and-analytical-applications-workload.md">
                                   <div class="cardSize">
                                     <div class="cardPadding">
                                       <div class="card">
@@ -710,7 +717,7 @@ Aplicación web con ASP.NET Core</a>
                                         </div>
                                           <div class="cardText">
                                             <h3>Aplicaciones analíticas y de ciencia de datos</h3>
-                                            <p>Lenguajes y herramientas para crear aplicaciones de ciencia de datos, como Python, R y F#.</p>
+                                            <p>Lenguajes y herramientas para crear aplicaciones de ciencia de datos, como Python y F# (y R solo en Visual Studio 2017).</p>
                                         </div>
                                       </div>
                                     </div>
@@ -863,7 +870,7 @@ Aplicación web con ASP.NET Core</a>
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Desarrollo móvil con JavaScript</h3>
-                                                    <p>Cree aplicaciones multiplataforma para iOS, Android o mediante el marco Apache Cordova.</p>
+                                                    <p>(Solo Visual Studio 2017 y Visual Studio 2015) Cree aplicaciones multiplataforma para iOS, Android o Windows mediante el marco Apache Cordova.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -982,7 +989,7 @@ Aplicación web con ASP.NET Core</a>
         <h2>Manténgase en contacto con nosotros</h2>
         <ul class="links">
            <li>
-                <a href="https://blogs.msdn.microsoft.com/visualstudio/"> Blog </a>
+                <a href="https://devblogs.microsoft.com/visualstudio/"> Blog </a>
             </li>
             <li>
                 <a href="https://twitter.com/VisualStudio"> Twitter </a>

@@ -13,16 +13,15 @@ helpviewer_keywords:
 ms.assetid: 7ebe03da-ce8c-4cbc-bac0-a2fde4ae4d07
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2a9cde551796d43cf94c20a9e54768ea9df3ddb5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 9e4a30c3aa85969a4cbf712f2f4018c24169ff6d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53924805"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051419"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Guardar datos en una base de datos (varias tablas)
 
@@ -32,17 +31,15 @@ Puede guardar los datos de su aplicación en la base de datos llamando al métod
 
 Las tareas ilustradas en este tutorial incluyen:
 
--   Crear un proyecto nuevo de **aplicación de Windows Forms**.
+- Crear y configurar un origen de datos en la aplicación con el [Asistente para configuración de origen de datos](../data-tools/media/data-source-configuration-wizard.png).
 
--   Crear y configurar un origen de datos en la aplicación con el [Asistente para configuración de origen de datos](../data-tools/media/data-source-configuration-wizard.png).
+- Establecer los controles de los elementos de la [ventana Orígenes de datos](add-new-data-sources.md#data-sources-window). Para obtener más información, consulte [establecer el control que se creará al arrastrar desde la ventana Orígenes de datos](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
--   Establecer los controles de los elementos de la [ventana Orígenes de datos](add-new-data-sources.md#data-sources-window). Para obtener más información, consulte [establecer el control que se creará al arrastrar desde la ventana Orígenes de datos](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
+- Crear controles enlazados a datos arrastrando elementos desde la ventana **Orígenes de datos** hasta el formulario.
 
--   Crear controles enlazados a datos arrastrando elementos desde la ventana **Orígenes de datos** hasta el formulario.
+- Modificación de algunos registros de cada tabla en el conjunto de datos.
 
--   Modificación de algunos registros de cada tabla en el conjunto de datos.
-
--   Modificar el código para devolver los datos actualizados del conjunto de datos a la base de datos.
+- Modificar el código para devolver los datos actualizados del conjunto de datos a la base de datos.
 
 ## <a name="prerequisites"></a>Requisitos previos
 
@@ -64,17 +61,7 @@ En este tutorial usa SQL Server Express LocalDB y la base de datos de ejemplo No
 
 ## <a name="create-the-windows-forms-application"></a>Crear la aplicación de Windows Forms
 
-El primer paso es crear un **aplicación de Windows Forms**. Asignar un nombre al proyecto es opcional durante este paso, pero se lo entregaremos un nombre dado que se guardará el proyecto más adelante.
-
-1. En Visual Studio, en el **archivo** menú, seleccione **New** > **proyecto**.
-
-2. Expanda el **Visual C#** o **Visual Basic** en el panel izquierdo, seleccione **Windows Desktop**.
-
-3. En el panel central, seleccione la **aplicación de Windows Forms** tipo de proyecto.
-
-4. Denomine el proyecto **UpdateMultipleTablesWalkthrough**y, a continuación, elija **Aceptar**.
-
-     Se crea el proyecto **UpdateMultipleTablesWalkthrough** y se agrega al **Explorador de soluciones**.
+Cree un nuevo **aplicación de Windows Forms** proyecto para cualquiera C# o Visual Basic. Asigne al proyecto el nombre **UpdateMultipleTablesWalkthrough**.
 
 ## <a name="create-the-data-source"></a>Crear el origen de datos
 
@@ -90,11 +77,11 @@ Este paso crea un origen de datos a partir de la base de datos Northwind utiliza
 
 4. En el **elegir la conexión de datos** pantalla, realice una de las siguientes acciones:
 
-    -   Si una conexión de datos a la base de datos de ejemplo Northwind está disponible en la lista desplegable, selecciónela.
+    - Si una conexión de datos a la base de datos de ejemplo Northwind está disponible en la lista desplegable, selecciónela.
 
-         o bien
+         -o bien-
 
-    -   Seleccione **Nueva conexión** para abrir el cuadro de diálogo **Agregar o modificar conexión**.
+    - Seleccione **Nueva conexión** para abrir el cuadro de diálogo **Agregar o modificar conexión**.
 
 5. Si la base de datos requiere una contraseña, seleccione la opción para incluir datos confidenciales y, a continuación, seleccione **siguiente**.
 
@@ -153,7 +140,7 @@ Puede actualizar la base de datos llamando a los métodos `Update` de los TableA
 
 2. Realice algunos cambios en los datos de uno o más registros de cada tabla.
 
-3. Seleccione el **guardar** botón.
+3. Seleccione el botón **Guardar**.
 
 4. Compruebe los valores de la base de datos para verificar que se guardaron los cambios.
 

@@ -7,41 +7,41 @@ helpviewer_keywords:
 ms.assetid: 6da57b83-7b42-4d7c-9aea-8e0a830faf6b
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 58df3c16de6fd7a4eba95fabb0d67e900ba8152d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bc0997d46b928d4aef21c152fa4bf27f095f0d22
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53917428"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56632646"
 ---
 # <a name="summary-view---resource-contention-view"></a>Vista Resumen: vista de contención de recursos
-La vista Resumen muestra información sobre los eventos de la aplicación en el que se suspendió un proceso o subproceso mientras esperaba el acceso a un recurso.  
-  
- Para obtener más información, incluyendo una descripción de los vínculos de notificación y las listas de informes, consulte [Vista Resumen](../profiling/summary-view.md).  
-  
-## <a name="timeline-graph"></a>Gráfico de escala de tiempo  
- El gráfico de escala de tiempo en la vista Resumen muestra el número de eventos de contención de la aplicación de la que se generan perfiles durante el tiempo que se generaron perfiles. Puede usar el gráfico de escala de tiempo para filtrar la vista en un intervalo de tiempo seleccionado. Para obtener más información, vea [Cómo: Filtrar vistas de informe desde la escala de tiempo de resumen](../profiling/how-to-filter-report-views-from-the-summary-timeline.md).  
-  
-## <a name="most-contended-resources"></a>Recursos más contenidos  
- **Recursos más contenidos** enumera los recursos de la aplicación que provocaron más eventos de contención. Puede hacer clic en un nombre de recurso para mostrar la vista Contenciones. La vista Contenciones proporciona una escala de tiempo detallada de las contenciones de recursos por subproceso.  
-  
- **Recursos más contenidos** incluye los siguientes datos para cada recurso.  
-  
-|Columna|Descripción|  
-|------------|-----------------|  
-|**Name**|Nombre del recurso.|  
-|**Porcentaje de contenciones**|El porcentaje de todos los eventos de contención de los datos de generación de perfiles que eran contenciones de este recurso.|  
-  
-## <a name="most-contended-thread"></a>Subprocesos más contenidos  
- **Subprocesos más contenidos** enumera los subprocesos de la aplicación con el mayor número de eventos de contención. Puede hacer clic en el nombre de un subproceso para mostrar la vista Contenciones que proporciona una escala de tiempo detallada de las contenciones de recursos por el subproceso.  
-  
- **Subprocesos más contenidos** incluye los siguientes datos para cada subproceso.  
-  
-|Columna|Descripción|  
-|------------|-----------------|  
-|**ID**|Identifiador del subproceso.|  
-|**Name**|Nombre del proceso que posee el subproceso.|  
+La vista Resumen muestra información sobre los eventos de la aplicación en el que se suspendió un proceso o subproceso mientras esperaba el acceso a un recurso.
+
+ Para obtener más información, incluyendo una descripción de los vínculos de notificación y las listas de informes, consulte [Vista Resumen](../profiling/summary-view.md).
+
+## <a name="timeline-graph"></a>Gráfico de escala de tiempo
+ El gráfico de escala de tiempo en la vista Resumen muestra el número de eventos de contención de la aplicación de la que se generan perfiles durante el tiempo que se generaron perfiles. Puede usar el gráfico de escala de tiempo para filtrar la vista en un intervalo de tiempo seleccionado. Para obtener más información, vea [Cómo: Filtrar vistas de informe desde la escala de tiempo de resumen](../profiling/how-to-filter-report-views-from-the-summary-timeline.md).
+
+## <a name="most-contended-resources"></a>Recursos más contenidos
+ **Recursos más contenidos** enumera los recursos de la aplicación que provocaron más eventos de contención. Puede hacer clic en un nombre de recurso para mostrar la vista Contenciones. La vista Contenciones proporciona una escala de tiempo detallada de las contenciones de recursos por subproceso.
+
+ **Recursos más contenidos** incluye los siguientes datos para cada recurso.
+
+|Columna|Descripción|
+|------------|-----------------|
+|**Name**|Nombre del recurso.|
+|**Porcentaje de contenciones**|El porcentaje de todos los eventos de contención de los datos de generación de perfiles que eran contenciones de este recurso.|
+
+## <a name="most-contended-thread"></a>Subprocesos más contenidos
+ **Subprocesos más contenidos** enumera los subprocesos de la aplicación con el mayor número de eventos de contención. Puede hacer clic en el nombre de un subproceso para mostrar la vista Contenciones que proporciona una escala de tiempo detallada de las contenciones de recursos por el subproceso.
+
+ **Subprocesos más contenidos** incluye los siguientes datos para cada subproceso.
+
+|Columna|Descripción|
+|------------|-----------------|
+|**ID**|Identifiador del subproceso.|
+|**Name**|Nombre del proceso que posee el subproceso.|
 |**Porcentaje de contenciones**|El porcentaje de todos los eventos de contención de los datos de generación de perfiles que eran contenciones de este recurso.|

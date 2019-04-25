@@ -1,5 +1,5 @@
 ---
-title: Procedimiento para seleccionar un repositorio de resultados de pruebas de carga
+title: Filtrar para seleccionar un repositorio de resultados de pruebas de carga
 ms.date: 10/19/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,16 +14,15 @@ helpviewer_keywords:
 ms.assetid: fa0c4dd9-612f-4a57-b8eb-458f129d9cda
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: fcbe7979765fe921ccc42f7adfa556bc0b52b7d1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 6d1b324eb2122559eb45a22bc463458d4f6661ef
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53950438"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55941090"
 ---
-# <a name="how-to-select-a-load-test-results-repository"></a>Procedimiento para seleccionar un repositorio de resultados de pruebas de carga
+# <a name="how-to-select-a-load-test-results-repository"></a>Filtrar para seleccionar un repositorio de resultados de pruebas de carga
 
 el usuario no está limitado a un almacén de resultados local. Con frecuencia, las pruebas de carga se ejecutan en un conjunto remoto de equipos agente. Los agentes, junto con un controlador, pueden generar más carga simulada que cualquier equipo único. Para obtener más información, vea [Controladores y agentes de prueba](configure-test-agents-and-controllers-for-load-tests.md).
 

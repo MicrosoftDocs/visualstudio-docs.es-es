@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f732a9d3-fc29-405b-9298-01ea83fc58b8
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e28364360cf636273384480a35cd07468b9b7e6f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 573fcbce3b395f7f351d57208998b0b63b175559
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53845582"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55039155"
 ---
 # <a name="maxframeworkversion-element-visual-studio-templates"></a>MaxFrameworkVersion (elemento) (plantillas de Visual Studio)
 
@@ -26,7 +26,7 @@ Especifica la versión máxima de .NET Framework que requiere la plantilla. Dete
 > [!IMPORTANT]
 > A partir de Visual Studio 2017 versión 15.6, la **versión de Target Framework** dropdown ya no es un filtro para las plantillas que se muestran en el **plantillas** sección de la **denuevoproyecto** cuadro de diálogo. En su lugar, el **versión de Target Framework** desplegable funciona como un selector de marco de trabajo para la plantilla seleccionada.
 
- \<VSTemplate > \<TemplateData > \<MaxFrameworkVersion >
+ \<VSTemplate> \<TemplateData> \<MaxFrameworkVersion>
 
 ## <a name="syntax"></a>Sintaxis
 

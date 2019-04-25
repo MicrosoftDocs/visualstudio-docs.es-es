@@ -1,28 +1,27 @@
 ---
 title: Explorador de esquemas XML - buscar el conjunto de esquemas
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: ec1395e0-d03c-4130-810d-f2db656937bd
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fdb4a680fc2bbfc9a55d93d17f9ef95d45fc6186
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: b73d5c8acac211db09926acf0ba8009aa04ac0a8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54270078"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070908"
 ---
-# <a name="search-the-schema-set"></a>Buscar el conjunto de esquemas
+# <a name="search-the-schema-set"></a>Búsqueda en el conjunto de esquemas
 
 El **Explorador de esquemas XML** permite buscar el esquema especificado en las siguientes maneras:
 
--   Búsqueda de palabra clave.
+- Búsqueda de palabra clave.
 
--   Búsqueda específica del esquema.
+- Búsqueda específica del esquema.
 
 ## <a name="keyword-search"></a>Búsqueda de palabra clave
 
@@ -32,11 +31,11 @@ El **Explorador de esquemas XML** permite buscar el esquema especificado en las 
 
  El **Explorador de esquemas XML** busca el esquema especificado para los siguientes atributos:
 
--   Cualquier atributo `name` o `ref` que coincida con la palabra clave especificada. Puede buscar elementos, atributos, tipos etc. por nombre.
+- Cualquier atributo `name` o `ref` que coincida con la palabra clave especificada. Puede buscar elementos, atributos, tipos etc. por nombre.
 
--   Los atributos `schemaLocation` de las instrucciones include.
+- Los atributos `schemaLocation` de las instrucciones include.
 
--   Los atributos `namespace` de las instrucciones import.
+- Los atributos `namespace` de las instrucciones import.
 
 ## <a name="schema-specific-search"></a>Búsqueda específica del esquema
 

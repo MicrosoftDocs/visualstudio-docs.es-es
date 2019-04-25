@@ -1,7 +1,6 @@
 ---
 title: Ventana Cuadro de herramientas
 ms.date: 01/18/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - vs.toolbox.general
@@ -11,15 +10,15 @@ helpviewer_keywords:
 - custom controls [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 79d39aa23e752ee0ce6f95b6a6d8c419dbd51d9a
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: 1331f416d95b56d466b6e2fe268ed7db071d66da
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54270000"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55925412"
 ---
 # <a name="toolbox"></a>Cuadro de herramientas
 

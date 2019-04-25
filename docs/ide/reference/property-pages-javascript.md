@@ -1,7 +1,6 @@
 ---
 title: Página de propiedades, JavaScript
 ms.date: 06/21/2017
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - javascript.project.property.debugging.debuggertype
@@ -14,15 +13,15 @@ f1_keywords:
 ms.assetid: a05ab01f-3d5d-4675-a845-eab51807d3a3
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83c7a2b0d0004b1f96a1c46ab120814179f77d26
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 80f7c2d941852303771df1998a21c076265fdb93
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53956536"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55929497"
 ---
 # <a name="property-pages-javascript"></a>Página de propiedades, JavaScript
 Las **Páginas de propiedades** proporcionan acceso a la configuración del proyecto. Puede usar las páginas que aparecen en las **páginas Propiedades** para cambiar las propiedades del proyecto.

@@ -19,29 +19,29 @@ helpviewer_keywords:
 ms.assetid: 7c126f57-62ab-4d94-9805-632d696ba1f0
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d10c4804d4d53c22281c11d8afc464cf2ac3732
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: cac0524c0d4421c034ebfd6dfa6f61a0e9b589fc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53861519"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047625"
 ---
 # <a name="how-can-i-debug-windows-api-functions"></a>Cómo depurar funciones de la API de Windows
-Si desea depurar una función de la API de Windows que tiene símbolos de NT cargados, deberá hacer lo siguiente.  
-  
-### <a name="to-set-a-breakpoint-on-a-windows-api-function-with-nt-symbols-loaded"></a>Para establecer un punto de interrupción en una función API de Windows con símbolos de NT cargados  
-  
--   Escriba el nombre de la función junto con el nombre del archivo DLL en el que se encuentra la función. En el código de 32 bits, utilice el formato representativo del nombre de la función. Para establecer un punto de interrupción en **MessageBeep**, por ejemplo, debe escribir lo siguiente:  
-  
+Si desea depurar una función de la API de Windows que tiene símbolos de NT cargados, deberá hacer lo siguiente.
+
+### <a name="to-set-a-breakpoint-on-a-windows-api-function-with-nt-symbols-loaded"></a>Para establecer un punto de interrupción en una función API de Windows con símbolos de NT cargados
+
+- Escriba el nombre de la función junto con el nombre del archivo DLL en el que se encuentra la función. En el código de 32 bits, utilice el formato representativo del nombre de la función. Para establecer un punto de interrupción en **MessageBeep**, por ejemplo, debe escribir lo siguiente:
+
     ```cpp
-    {,,USER32.DLL}_MessageBeep@4  
-    ```  
-  
-     Para obtener el nombre representativo, vea [ver nombres representativos](https://msdn.microsoft.com/library/f79e2717-a4db-4d12-a689-69830cce2be0).  
-  
-## <a name="see-also"></a>Vea también  
- [Preguntas más frecuentes sobre la depuración de código nativo](../debugger/debugging-native-code-faqs.md)   
- [Depuración de código nativo](../debugger/debugging-native-code.md)
+    {,,USER32.DLL}_MessageBeep@4
+    ```
+
+     Para obtener el nombre representativo, vea [ver nombres representativos](https://msdn.microsoft.com/library/f79e2717-a4db-4d12-a689-69830cce2be0).
+
+## <a name="see-also"></a>Vea también
+- [Preguntas más frecuentes sobre la depuración de código nativo](../debugger/debugging-native-code-faqs.md)
+- [Depuración de código nativo](../debugger/debugging-native-code.md)

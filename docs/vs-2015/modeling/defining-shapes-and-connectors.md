@@ -1,30 +1,27 @@
 ---
 title: Definir formas y conectores | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 1fae548d-9288-4dd5-a24f-ff0d69c73628
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 61cd27b307b4761e3f7773f91583965466892285
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 761e0e77a0fe9f6f32f08045d81f6eab815801dd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812951"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112330"
 ---
 # <a name="defining-shapes-and-connectors"></a>Definir formas y conectores
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Hay varios tipos básicos de formas que puede usar para mostrar información en un diagrama en un lenguaje específico de dominio (DSL).  
   
-##  <a name="shapeTypes"></a> Tipos básicos de formas y conectores  
+## <a name="shapeTypes"></a> Tipos básicos de formas y conectores  
  Un diagrama DSL muestra una colección de *formas* intervinculadas por líneas o *conectores*.  Normalmente, aunque no siempre:  
   
 - Las formas son la representación visible de los elementos del modelo.  
@@ -48,8 +45,5 @@ Hay varios tipos básicos de formas que puede usar para mostrar información en 
 |Calles|Las calles dividen un diagrama en segmentos horizontales o verticales. La calle siempre permanece debajo de las demás formas del diagrama.<br /><br /> Normalmente, los elementos de modelo de la calle tienen elementos primarios en la raíz del modelo, y los demás elementos tienen elementos primarios en ellos. Para ver un ejemplo, cree un DSL con la plantilla de solución Task Flow (Flujo de tareas).|  
 |Conectores|Normalmente, las líneas que se dibujan entre las formas representan relaciones de referencia. Puede establecer las opciones para que un conector sea recto o rectilíneo, y para que tenga diferentes tipos de punta de flecha.|  
   
-##  <a name="shapeInheritance"></a> Herencia de formas  
+## <a name="shapeInheritance"></a> Herencia de formas  
  Una forma puede heredar de otra forma. Sin embargo, las formas deben ser del mismo tipo. Por ejemplo, de una forma geométrica solo puede heredar otra forma geométrica. Las formas heredadas tienen los compartimientos y los elementos Decorator de su forma base. Los conectores pueden heredar de otros conectores.
-
-
-

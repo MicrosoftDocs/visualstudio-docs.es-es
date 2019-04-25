@@ -1,25 +1,20 @@
 ---
 title: 'Tutorial: Crear una aplicación sencilla con Visual C# o Visual Basic | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.assetid: f84339c7-d617-4f56-bfcd-af2215c347ba
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 51fc073046833165097a8a9a4fb2f169ed3a04e7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5286f79f55f2a09122fb551911162bd609ce3bb2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49851691"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040564"
 ---
 # <a name="walkthrough-create-a-simple-application-with-visual-c-or-visual-basic"></a>Tutorial: Crear una aplicación sencilla con Visual C# o Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,14 +30,14 @@ Tras completar este tutorial, estará familiarizado con muchas de las herramient
  [Depurar y probar la aplicación](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md#BKMK_DebugTest)  
   
 > [!NOTE]
->  Este tutorial se basa en Visual Studio Professional, que proporciona la plantilla de aplicación WPF en la que creará el proyecto de este tutorial. Visual Studio Express para escritorio de Windows también proporciona esa plantilla, pero no así Visual Studio Express para Windows y Visual Studio Express para Web. Para obtener información preliminar sobre cómo usar Visual Studio Express para Windows, visite el [Centro de desarrollo de software para aplicaciones de la Tienda Windows](http://msdn.microsoft.com/windows/apps/br229519). Para obtener información preliminar sobre cómo usar Visual Studio Express para Web, consulte [Get Started with ASP.NET](http://www.asp.net/get-started)(Introducción a ASP.NET). Asimismo la edición de Visual Studio y la configuración que utilice determinan los nombres y las ubicaciones de algunos elementos de la interfaz de usuario. Consulte [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Este tutorial se basa en Visual Studio Professional, que proporciona la plantilla de aplicación WPF en la que creará el proyecto de este tutorial. Visual Studio Express para escritorio de Windows también proporciona esa plantilla, pero no así Visual Studio Express para Windows y Visual Studio Express para Web. Para obtener información preliminar sobre cómo usar Visual Studio Express para Windows, visite el [Centro de desarrollo de software para aplicaciones de la Tienda Windows](http://msdn.microsoft.com/windows/apps/br229519). Para obtener información preliminar sobre cómo usar Visual Studio Express para Web, consulte [Get Started with ASP.NET](http://www.asp.net/get-started)(Introducción a ASP.NET). Asimismo la edición de Visual Studio y la configuración que utilice determinan los nombres y las ubicaciones de algunos elementos de la interfaz de usuario. Consulte [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
-##  <a name="BKMK_ConfigureIDE"></a> Configurar el IDE  
+## <a name="BKMK_ConfigureIDE"></a> Configurar el IDE  
  Al iniciar Visual Studio por primera vez, Visual Studio le pedirá que inicie sesión con una cuenta de servicio de Microsoft (MSA). [Inicio de sesión en Visual Studio](http://blogs.msdn.com/b/visualstudio/archive/2013/06/28/welcome-sign-in-to-visual-studio.aspx). No es necesario iniciar sesión y puede hacerlo más tarde.  
   
  Al iniciar Visual Studio, debe elegir una combinación de configuración que aplique un conjunto de personalizaciones predefinidas al IDE. Cada combinación de opciones se ha diseñado para que el desarrollo de aplicaciones le resulte más sencillo.  
   
- Este tutorial asume que aplicó la **Configuración general de desarrollo**, lo que implica la menor cantidad de personalización del IDE. Si ya eligió C# o Visual Basic (ambas son opciones válidas), no debe cambiar la configuración.  Si desea cambiar la configuración, puede usar el **Asistente para importar y exportar configuraciones**. Consulte [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+ Este tutorial asume que aplicó la **Configuración general de desarrollo**, lo que implica la menor cantidad de personalización del IDE. Si ya eligió C# o Visual Basic (ambas son opciones válidas), no debe cambiar la configuración.  Si desea cambiar la configuración, puede usar el **Asistente para importar y exportar configuraciones**. Consulte [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Después de abrir Visual Studio, puede identificar las ventanas de herramientas, los menús y barras de herramientas y el espacio de la ventana principal. Las ventanas de herramientas se acoplan a los lados izquierdo y derecho de la ventana de la aplicación, con **Inicio rápido**, la barra de menús y la barra de herramientas estándar en la parte superior. En el centro de la ventana de la aplicación está la **Página principal**. Cuando se carga una solución o un proyecto, los editores y diseñadores aparecen en el espacio donde está la **página de inicio** . Cuando desarrolle una aplicación, pasará la mayor parte del tiempo en esta área central.  
   
@@ -72,9 +67,9 @@ Tras completar este tutorial, estará familiarizado con muchas de las herramient
   
    ![IDE con tema oscuro aplicado](../ide/media/exploreide-darkthemeide.png "ExploreIDE-DarkThemeIDE")  
   
-   El tema de color usado para las imágenes en el resto de este tutorial es el tema claro. Para obtener más información sobre cómo personalizar el IDE, consulte [Personalizar la configuración de desarrollo de Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+   El tema de color usado para las imágenes en el resto de este tutorial es el tema claro. Para obtener más información sobre cómo personalizar el IDE, consulte [Personalizar la configuración de desarrollo de Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
-##  <a name="BKMK_CreateApp"></a> Crear una aplicación sencilla  
+## <a name="BKMK_CreateApp"></a> Crear una aplicación sencilla  
   
 ### <a name="create-the-project"></a>Crear el proyecto  
  Cuando cree una aplicación en Visual Studio, primero creará un proyecto y una solución. Para este ejemplo, creará un proyecto de Windows Presentation Foundation (WPF).  
@@ -97,7 +92,7 @@ Tras completar este tutorial, estará familiarizado con muchas de las herramient
   
     ![Crear un proyecto de WPF de Visual C&#35;, HelloWPFApp](../ide/media/exploreide-newprojectcsharp.png "ExploreIDE-NewProjectcsharp")  
   
-   Visual Studio crea el proyecto HelloWPFApp y la solución y el **Explorador de soluciones** muestra los distintos archivos. WPF Designer muestra una vista de diseño y una vista XAML de MainWindow.xaml en una vista en dos paneles. Puede deslizar el divisor para mostrar más o menos de cualquiera de las vistas.  Puede elegir ver solo la vista visual o solo la vista XAML. (Para obtener más información, vea [Diseñador WPF para desarrolladores de Windows Forms](http://msdn.microsoft.com/en-us/47ad0909-e89b-4996-b4ac-874d929f94ca)). Los elementos siguientes aparecen en el **Explorador de soluciones**:  
+   Visual Studio crea el proyecto HelloWPFApp y la solución y el **Explorador de soluciones** muestra los distintos archivos. WPF Designer muestra una vista de diseño y una vista XAML de MainWindow.xaml en una vista en dos paneles. Puede deslizar el divisor para mostrar más o menos de cualquiera de las vistas.  Puede elegir ver solo la vista visual o solo la vista XAML. (Para obtener más información, vea [Diseñador WPF para desarrolladores de Windows Forms](http://msdn.microsoft.com/47ad0909-e89b-4996-b4ac-874d929f94ca)). Los elementos siguientes aparecen en el **Explorador de soluciones**:  
   
    Figura 5: Elementos del proyecto  
   
@@ -204,7 +199,7 @@ Tras completar este tutorial, estará familiarizado con muchas de las herramient
   
 ##### <a name="add-code-to-display-message-boxes"></a>Agregar código para mostrar cuadros de mensaje  
   
-1.  En la superficie de diseño, haga doble clic en el botón **Mostrar** .  
+1. En la superficie de diseño, haga doble clic en el botón **Mostrar** .  
   
      Se abre Greetings.xaml.vb o Greetings.xaml.cs con el cursor en el evento Button_Click. También puede agregar un controlador de eventos clic de la siguiente manera (si el código pegado tiene una línea en zigzag roja debajo de algún nombre, probablemente no seleccionó los controles RadioButton en la superficie de diseño y les cambió el nombre):  
   
@@ -225,7 +220,7 @@ Tras completar este tutorial, estará familiarizado con muchas de las herramient
     }  
     ```  
   
-2.  Para Visual Basic, escriba el código siguiente:  
+2. Para Visual Basic, escriba el código siguiente:  
   
     ```vb  
     If RadioButton1.IsChecked = True Then  
@@ -250,9 +245,9 @@ Tras completar este tutorial, estará familiarizado con muchas de las herramient
     }  
     ```  
   
-3.  Guarde la aplicación.  
+3. Guarde la aplicación.  
   
-##  <a name="BKMK_DebugTest"></a> Depurar y probar la aplicación  
+## <a name="BKMK_DebugTest"></a> Depurar y probar la aplicación  
  A continuación, depurará la aplicación para buscar errores y probar que los dos cuadros de mensaje aparecen correctamente. Las siguientes instrucciones indican cómo compilar e iniciar el depurador. Lea también [Compilar una aplicación de WPF (WPF)](http://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c) y [Depurar WPF](../debugger/debugging-wpf.md) para obtener más información.  
   
 ### <a name="find-and-fix-errors"></a>Buscar y corregir errores  
@@ -285,29 +280,29 @@ Tras completar este tutorial, estará familiarizado con muchas de las herramient
   
 ##### <a name="to-add-breakpoints"></a>Para agregar puntos de interrupción  
   
-1.  Abra Greetings.xaml.vb o Greetings.xaml.cs y seleccione la línea siguiente: `MessageBox.Show("Hello.")`  
+1. Abra Greetings.xaml.vb o Greetings.xaml.cs y seleccione la línea siguiente: `MessageBox.Show("Hello.")`  
   
-2.  Agregue un punto de interrupción en el menú seleccionando **Depurar**y después **Alternar puntos de interrupción**.  
+2. Agregue un punto de interrupción en el menú seleccionando **Depurar**y después **Alternar puntos de interrupción**.  
   
      ![Comando Alternar puntos de interrupción del menú Depurar](../ide/media/exploreide-togglebreakpoint.png "ExploreIDE-ToggleBreakpoint")  
   
      Aparece un círculo rojo al lado de la línea de código en el margen izquierdo de la ventana del editor.  
   
-3.  Seleccione la línea siguiente: `MessageBox.Show("Goodbye.")`.  
+3. Seleccione la línea siguiente: `MessageBox.Show("Goodbye.")`.  
   
-4.  Presione la tecla F9 para agregar un punto de interrupción y después presione la tecla F5 para iniciar la depuración.  
+4. Presione la tecla F9 para agregar un punto de interrupción y después presione la tecla F5 para iniciar la depuración.  
   
-5.  En la ventana **Greetings** , elija el botón de radio **Hello** y después elija el botón **Mostrar** .  
+5. En la ventana **Greetings** , elija el botón de radio **Hello** y después elija el botón **Mostrar** .  
   
      La línea `MessageBox.Show("Hello.")` se resalta en amarillo. En la parte inferior del IDE, las ventanas Automático, Variables locales e Inspección están acopladas juntas en el lado izquierdo, mientras que las ventanas Pila de llamadas, Puntos de interrupción, Comando, Inmediato y Salida están acopladas juntas en el lado derecho.  
   
-6.  En la barra de menús, elija **Depurar**, **Paso a paso para salir**.  
+6. En la barra de menús, elija **Depurar**, **Paso a paso para salir**.  
   
      La aplicación reanuda la ejecución y aparece un cuadro de mensaje con la palabra “Hello”.  
   
-7.  Elija el botón **Aceptar** en el cuadro de mensaje para cerrarlo.  
+7. Elija el botón **Aceptar** en el cuadro de mensaje para cerrarlo.  
   
-8.  En la ventana **Greetings** , elija el botón de radio **Goodbye** y después elija el botón **Mostrar** .  
+8. En la ventana **Greetings** , elija el botón de radio **Goodbye** y después elija el botón **Mostrar** .  
   
      La línea `MessageBox.Show("Goodbye.")` se resalta en amarillo.  
   
@@ -340,6 +335,3 @@ Tras completar este tutorial, estará familiarizado con muchas de las herramient
  [Novedades de Visual Studio 2015](../what-s-new-in-visual-studio-2015.md)   
  [Introducción al desarrollo con Visual Studio](../ide/get-started-developing-with-visual-studio.md)   
  [Sugerencias de productividad](../ide/productivity-tips-for-visual-studio.md)
-
-
-

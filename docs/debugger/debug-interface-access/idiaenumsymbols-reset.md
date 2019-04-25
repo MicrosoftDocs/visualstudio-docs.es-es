@@ -1,5 +1,5 @@
 ---
-title: Idiaenumsymbols | Microsoft Docs
+title: IDiaEnumSymbols::Reset | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,27 +9,27 @@ helpviewer_keywords:
 ms.assetid: dd3c41a5-ebdf-4a9e-bc84-2fe985be0075
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83bf82ebdf4410a0c38077fd079f6f1f81d6510b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 96ce674e9bfc15913c8b7c142ee36780bf74c7ea
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53961973"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56641993"
 ---
 # <a name="idiaenumsymbolsreset"></a>IDiaEnumSymbols::Reset
-Restablece una secuencia de enumeración al principio.  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```C++  
-HRESULT Reset ();  
-```  
-  
-## <a name="return-value"></a>Valor devuelto  
- Devuelve `S_OK`.  
-  
-## <a name="see-also"></a>Vea también  
- [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)
+Restablece una secuencia de enumeración al principio.
+
+## <a name="syntax"></a>Sintaxis
+
+```C++
+HRESULT Reset ();
+```
+
+## <a name="return-value"></a>Valor devuelto
+ Devuelve `S_OK`.
+
+## <a name="see-also"></a>Vea también
+- [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)

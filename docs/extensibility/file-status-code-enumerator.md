@@ -10,100 +10,82 @@ helpviewer_keywords:
 ms.assetid: 5c37876b-c83c-4ca1-837b-57cd465a879a
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cf7e39f91f6916f4d3ace7a9a303ea1c8e626ee9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 50312caddf0ce2b5c64d1ec83e1707e2e0ee086e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53954781"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56713482"
 ---
 # <a name="file-status-code-enumerator"></a>Enumerador de código de estado de archivo
-El `SccStatus` enumerador contiene valores constantes con nombre que especifican el estado de un archivo en el sistema de control de código fuente. Esta enumeración se utiliza en el [SccQueryInfo](../extensibility/sccqueryinfo-function.md) y `POPLISTFUNC` función de devolución de llamada (consulte [POPLISTFUNC](../extensibility/poplistfunc.md) para obtener más información).  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```  
-enum SccStatus {  
-   SCC_STATUS_INVALID          = -1L,  
-   SCC_STATUS_NOTCONTROLLED    = 0x0000L,  
-   SCC_STATUS_CONTROLLED       = 0x0001L,  
-   SCC_STATUS_CHECKEDOUT       = 0x0002L,  
-   SCC_STATUS_OUTOTHER         = 0x0004L,  
-   SCC_STATUS_OUTEXCLUSIVE     = 0x0008L,  
-   SCC_STATUS_OUTMULTIPLE      = 0x0010L,  
-   SCC_STATUS_OUTOFDATE        = 0x0020L,  
-   SCC_STATUS_DELETED          = 0x0040L,  
-   SCC_STATUS_LOCKED           = 0x0080L,  
-   SCC_STATUS_MERGED           = 0x0100L,  
-   SCC_STATUS_SHARED           = 0x0200L,  
-   SCC_STATUS_PINNED           = 0x0400L,  
-   SCC_STATUS_MODIFIED         = 0x0800L,  
-   SCC_STATUS_OUTBYUSER        = 0x1000L  
-   SCC_STATUS_NOMERGE          = 0x2000L  
-   SCC_STATUS_RESERVED_1       = 0x4000L  
-   SCC_STATUS_RESERVED_2       = 0x8000L  
-};  
-```  
-  
-## <a name="members"></a>Miembros  
- SCC_STATUS_INVALID  
- No se pudo obtener el estado; No confíe en él.  
-  
- SCC_STATUS_NOTCONTROLLED  
- Archivo no está bajo control de código fuente.  
-  
- SCC_STATUS_CONTROLLED  
- Archivo está bajo control de código fuente.  
-  
- SCC_STATUS_CHECKEDOUT  
- Desprotegido por el usuario actual en el disco local.  
-  
- SCC_STATUS_OUTOTHER  
- Archivo está desprotegido por otro usuario.  
-  
- SCC_STATUS_OUTEXCLUSIVE  
- Archivo está desprotegido en exclusiva.  
-  
- SCC_STATUS_OUTMULTIPLE  
- Archivo está desprotegido por más de un usuario.  
-  
- SCC_STATUS_OUTOFDATE  
- El archivo no es la más reciente.  
-  
- SCC_STATUS_DELETED  
- Se eliminó el archivo del proyecto.  
-  
- SCC_STATUS_LOCKED  
- El archivo está bloqueado; No hay versiones más permitidas.  
-  
- SCC_STATUS_MERGED  
- Archivo se ha combinado pero todavía no se ha corregido y comprobado.  
-  
- SCC_STATUS_SHARED  
- Archivo se comparte entre proyectos.  
-  
- SCC_STATUS_PINNED  
- Archivo se comparte en una versión explícita.  
-  
- SCC_STATUS_MODIFIED  
- Archivo ha sido modificado, interrumpido o infringido.  
-  
- SCC_STATUS_OUTBYUSER  
- Archivo está desprotegido por el usuario actual.  
-  
- SCC_STATUS_NOMERGE  
- Archivo nunca se puede mezclar con y no debe guardarse antes de una operación GET.  
-  
- SCC_STATUS_RESERVED_1  
- Reservado para uso interno.  
-  
- SCC_STATUS_RESERVED_2  
- Reservado para uso interno.  
-  
-## <a name="see-also"></a>Vea también  
- [Complementos de control de código fuente](../extensibility/source-control-plug-ins.md)   
- [SccQueryInfo](../extensibility/sccqueryinfo-function.md)   
- [POPLISTFUNC](../extensibility/poplistfunc.md)
+El `SccStatus` enumerador contiene valores constantes con nombre que especifican el estado de un archivo en el sistema de control de código fuente. Esta enumeración se utiliza en el [SccQueryInfo](../extensibility/sccqueryinfo-function.md) y `POPLISTFUNC` función de devolución de llamada (consulte [POPLISTFUNC](../extensibility/poplistfunc.md) para obtener más información).
+
+## <a name="syntax"></a>Sintaxis
+
+```
+enum SccStatus {
+   SCC_STATUS_INVALID          = -1L,
+   SCC_STATUS_NOTCONTROLLED    = 0x0000L,
+   SCC_STATUS_CONTROLLED       = 0x0001L,
+   SCC_STATUS_CHECKEDOUT       = 0x0002L,
+   SCC_STATUS_OUTOTHER         = 0x0004L,
+   SCC_STATUS_OUTEXCLUSIVE     = 0x0008L,
+   SCC_STATUS_OUTMULTIPLE      = 0x0010L,
+   SCC_STATUS_OUTOFDATE        = 0x0020L,
+   SCC_STATUS_DELETED          = 0x0040L,
+   SCC_STATUS_LOCKED           = 0x0080L,
+   SCC_STATUS_MERGED           = 0x0100L,
+   SCC_STATUS_SHARED           = 0x0200L,
+   SCC_STATUS_PINNED           = 0x0400L,
+   SCC_STATUS_MODIFIED         = 0x0800L,
+   SCC_STATUS_OUTBYUSER        = 0x1000L
+   SCC_STATUS_NOMERGE          = 0x2000L
+   SCC_STATUS_RESERVED_1       = 0x4000L
+   SCC_STATUS_RESERVED_2       = 0x8000L
+};
+```
+
+## <a name="members"></a>Miembros
+ No se pudo obtener el estado de SCC_STATUS_INVALID; No confíe en él.
+
+ Archivo de SCC_STATUS_NOTCONTROLLED no está bajo control de código fuente.
+
+ SCC_STATUS_CONTROLLED archivo está bajo control de código fuente.
+
+ SCC_STATUS_CHECKEDOUT activada por el usuario actual en el disco local.
+
+ SCC_STATUS_OUTOTHER archivo está desprotegido por otro usuario.
+
+ Archivo SCC_STATUS_OUTEXCLUSIVE estaba desprotegido.
+
+ SCC_STATUS_OUTMULTIPLE archivo está desprotegido por más de un usuario.
+
+ SCC_STATUS_OUTOFDATE el archivo no es la más reciente.
+
+ Se eliminó el archivo SCC_STATUS_DELETED desde el proyecto.
+
+ El archivo SCC_STATUS_LOCKED está bloqueado; No hay versiones más permitidas.
+
+ Archivo SCC_STATUS_MERGED se ha combinado pero todavía no se ha corregido y comprobado.
+
+ Archivo SCC_STATUS_SHARED es compartido entre proyectos.
+
+ Archivo SCC_STATUS_PINNED se comparte en una versión explícita.
+
+ Archivo SCC_STATUS_MODIFIED ha sido modificado, interrumpido o infringido.
+
+ SCC_STATUS_OUTBYUSER archivo está desprotegido por el usuario actual.
+
+ Archivo SCC_STATUS_NOMERGE nunca se pueden mezclar con y no deben guardarse antes de una operación GET.
+
+ SCC_STATUS_RESERVED_1 reservado para uso interno.
+
+ SCC_STATUS_RESERVED_2 reservado para uso interno.
+
+## <a name="see-also"></a>Vea también
+- [Complementos de control de código fuente](../extensibility/source-control-plug-ins.md)
+- [SccQueryInfo](../extensibility/sccqueryinfo-function.md)
+- [POPLISTFUNC](../extensibility/poplistfunc.md)

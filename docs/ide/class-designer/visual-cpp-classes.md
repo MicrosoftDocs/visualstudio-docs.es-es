@@ -1,7 +1,6 @@
 ---
 title: Clase de Visual C++ en el Diseñador de clases
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.inheritancelinelabel
@@ -10,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 75e56f8c-11ef-42a3-b7ec-3d2cf25c581b
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b768fa059d3933ef75c5ff58e050c8c1521f770a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: aea3dd9c4821b3c06839c746111c131eedcfa455
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53895238"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55939117"
 ---
 # <a name="visual-c-classes-in-class-designer"></a>Clases de Visual C++ en el Diseñador de clases
 

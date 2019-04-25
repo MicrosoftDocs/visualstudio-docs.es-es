@@ -2,9 +2,8 @@
 title: Quitar Visual Studio
 titleSuffix: ''
 description: Obtenga información detallada sobre cómo quitar completamente Visual Studio del equipo.
-ms.date: 09/12/2017
+ms.date: 03/30/2019
 ms.custom: seodec18
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - uninstall
@@ -18,19 +17,21 @@ f1_keywords:
 ms.assetid: 9c81a777-9c95-4934-b517-c60c6dc78799
 author: heaths
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26d29ccf0bfa834ec7581fea11a606ce0558cf74
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: 779771c51299239814f7ddd6a9cdbfbed017ac72
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53985672"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790126"
 ---
-# <a name="remove-visual-studio-2017"></a>Eliminación de Visual Studio 2017
+# <a name="remove-visual-studio"></a>Quitar Visual Studio
 
-Si se produce un error grave y no se puede reparar o desinstalar Visual Studio, puede ejecutar la herramienta `InstallCleanup.exe` para quitar los archivos de instalación y la información de producto de todas las instancias instaladas de Visual Studio 2017 y versiones más recientes. La ejecución de esta herramienta debe hacerse como último recurso si se produce un error en la reparación o desinstalación, y puede desinstalar características de otras instalaciones de Visual Studio u otros productos que sea necesario reparar.
+Si se produce un error grave y no se puede reparar o desinstalar Visual Studio, puede ejecutar la herramienta `InstallCleanup.exe` para quitar los archivos de instalación y la información de producto de todas las instancias instaladas de Visual Studio 2017 o Visual Studio 2019. La ejecución de esta herramienta debe hacerse como último recurso si se produce un error en la reparación o desinstalación. Además, se pueden desinstalar características de otras instalaciones de Visual Studio u otros productos que también sea necesario reparar.
 
 En las instrucciones siguientes, puede ejecutar la herramienta con distintos modificadores de línea de comandos con el comportamiento siguiente:
 
@@ -41,8 +42,7 @@ En las instrucciones siguientes, puede ejecutar la herramienta con distintos mod
 
 1. Cierre el instalador de Visual Studio.
 2. Abra un símbolo del sistema de administrador. Para abrir un símbolo del sistema de administrador, siga estos pasos:
-   * Haga clic en el menú **Inicio**.
-   * Escriba **cmd**.
+   * Escriba **cmd** en el cuadro "Escriba aquí para ejecutar la búsqueda".
    * Haga clic con el botón derecho en **Símbolo del sistema** y, después, haga clic en **Ejecutar como administrador**.
 3. Escriba la ruta de acceso completa de la utilidad `InstallCleanup.exe` y pase el modificador de línea de comandos que quiera. De forma predeterminada, la ruta de acceso de la utilidad es la siguiente:
    ```
@@ -55,7 +55,7 @@ Si no encuentra `InstallCleanup.exe` en el directorio del Instalador de Visual S
 
 ## <a name="see-also"></a>Vea también
 
-* [Instalación de Visual Studio 2017](install-visual-studio.md)
-* [Actualizar Visual Studio 2017](update-visual-studio.md)
-* [Modificación de Visual Studio 2017](modify-visual-studio.md)
-* [Desinstalación de Visual Studio 2017](uninstall-visual-studio.md)
+* [Instalar Visual Studio](install-visual-studio.md)
+* [Actualizar Visual Studio](update-visual-studio.md)
+* [Modificar Visual Studio](modify-visual-studio.md)
+* [Desinstalar Visual Studio](uninstall-visual-studio.md)

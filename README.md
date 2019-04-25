@@ -1,14 +1,14 @@
 ﻿---
-ms.openlocfilehash: 14e56ddbedb419b41f413b014391fc69caecc9dd
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 09d58e682424e09f0e8d5c37c1c6e0b8839495d4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54344712"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62422090"
 ---
-# <a name="visual-studio-2017-documentation"></a>Documentación de Visual Studio 2017
+# <a name="visual-studio-documentation"></a>Documentación de Visual Studio
 
-Inicio Este repositorio contiene archivos de origen para la documentación técnica de Visual Studio 2017. Los temas están publicados en [docs.microsoft.com](https://docs.microsoft.com/visualstudio).
+Inicio Este repositorio contiene archivos de origen para la documentación técnica de Visual Studio. Los temas están publicados en [docs.microsoft.com](https://docs.microsoft.com/visualstudio).
 
 Este repositorio se migró el 23 de junio de 2017 desde https://github.com/Microsoft/vsdocs. El tráfico a las direcciones URL anteriores se redirige aquí.
 

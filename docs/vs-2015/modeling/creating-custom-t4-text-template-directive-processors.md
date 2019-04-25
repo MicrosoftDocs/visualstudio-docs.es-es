@@ -1,25 +1,22 @@
 ---
 title: Crear procesadores de directivas de plantilla de texto T4 personalizadas | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, custom directive processors
 ms.assetid: 422b47af-5441-4b02-b5ad-1b8b328457e3
 caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 0defae5127b3443eb30f02558fd1acf545651e3e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: ccf7c3565925eb3fe55fe500a127c666515fb41a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49852750"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058615"
 ---
 # <a name="creating-custom-t4-text-template-directive-processors"></a>Crear procesadores de directivas personalizadas para las plantillas de texto T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,9 +42,9 @@ El *el proceso de transformación de plantillas de texto* toma un *plantilla de 
   
  Algunos ejemplos de procesadores de directivas personalizados podrían ser:  
   
--   Un procesador de directivas para devolver datos de una base de datos que acepta un nombre de usuario y una contraseña como parámetros.  
+- Un procesador de directivas para devolver datos de una base de datos que acepta un nombre de usuario y una contraseña como parámetros.  
   
--   Un procesador de directivas para abrir y leer un archivo que acepta el nombre del archivo como un parámetro.  
+- Un procesador de directivas para abrir y leer un archivo que acepta el nombre del archivo como un parámetro.  
   
 ### <a name="principal-parts-of-a-custom-directive-processor"></a>Partes de la entidad de seguridad de un procesador de directivas personalizada  
  Para desarrollar un procesador de directivas, debe crear una clase que herede de <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> o <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor>.  
@@ -66,14 +63,11 @@ El *el proceso de transformación de plantillas de texto* toma un *plantilla de 
   
 - `string GetClassCodeForProcessingRun()` -Devuelve el código de los métodos, propiedades y otras declaraciones que puede usar el código de plantilla. La manera más fácil de hacerlo es generar una cadena que contiene el código C# o Visual Basic. Para hacer que el procesador de directivas sean capaces de que se llama desde una plantilla que use cualquier lenguaje CLR, puede construir las instrucciones como un árbol CodeDom y, a continuación, devolver el resultado de serializar el árbol en el idioma usado por la plantilla.  
   
-- Para obtener más información, consulte [Tutorial: crear un procesador de directivas personalizado](../modeling/walkthrough-creating-a-custom-directive-processor.md).  
+- Para obtener más información, vea [Tutorial: Creación de un procesador de directivas personalizado](../modeling/walkthrough-creating-a-custom-directive-processor.md).  
   
 ## <a name="in-this-section"></a>En esta sección  
  [Implementar un procesador de directivas personalizadas](../modeling/deploying-a-custom-directive-processor.md)  
  Explica cómo registrar un procesador de directivas personalizado.  
   
- [Tutorial: Crear un procesador de directivas personalizadas](../modeling/walkthrough-creating-a-custom-directive-processor.md)  
+ [Tutorial: Crear un procesador de directivas personalizado](../modeling/walkthrough-creating-a-custom-directive-processor.md)  
  Describe cómo crear un procesador de directivas personalizado, cómo registrar y probar el procesador de directivas y cómo dar formato al archivo de salida como HTML.
-
-
-

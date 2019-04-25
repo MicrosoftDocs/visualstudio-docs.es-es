@@ -1,14 +1,9 @@
 ---
 title: Vistas de datos de memoria de .NET | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - .NET memory profiling method views
 - profiling tools,.NET memory profiling views
@@ -16,13 +11,13 @@ ms.assetid: 79184d8e-769b-4ace-be2b-521147772081
 caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: bc893857e56d97442efd9ceee8ffb8a5aed72ea2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 7d31213dc970fa7cb28c4d4620c6731692db83d2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51762484"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54782438"
 ---
 # <a name="net-memory-data-views"></a>Vistas de datos de memoria de .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,6 +80,3 @@ Esta sección contiene información de referencia acerca de las vistas y los inf
   
  [Vistas de datos del método de instrumentación](../profiling/instrumentation-method-data-views.md)  
  Información de referencia para las vistas y los informes de archivos de datos del generador de perfiles que se generaron mediante el método de instrumentación.
-
-
-

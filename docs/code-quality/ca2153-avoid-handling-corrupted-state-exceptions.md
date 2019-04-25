@@ -1,19 +1,18 @@
 ---
-title: 'CA2153: Evitar el control de excepciones de estado dañadas'
-ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
+title: Reglas de análisis de código CA2153 para excepciones de estado dañadas
+ms.date: 02/19/2019
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e6b789a4580c3787a4504d730e694308341657eb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4b75e45b8a199265eaefe3a2b3c37ed62039e0eb
+ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821865"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56450274"
 ---
 # <a name="ca2153-avoid-handling-corrupted-state-exceptions"></a>CA2153: Evitar el control de excepciones de estado dañadas
 
@@ -26,25 +25,25 @@ ms.locfileid: "53821865"
 
 ## <a name="cause"></a>Motivo
 
-Las[excepciones de estado dañado (CSE)](https://msdn.microsoft.com/magazine/dd419661.aspx) indican que la memoria está dañada en el proceso. Detectar estos problemas y evitar el bloqueo del proceso puede provocar vulnerabilidades de seguridad si un atacante puede colocar una vulnerabilidad de seguridad en la región de memoria dañada.
+[Excepciones de estado dañadas (CSE)](https://msdn.microsoft.com/magazine/dd419661.aspx) indican que la memoria dañada en el proceso. Detectar estos problemas y evitar el bloqueo del proceso puede provocar vulnerabilidades de seguridad si un atacante puede colocar una vulnerabilidad de seguridad en la región de memoria dañada.
 
 ## <a name="rule-description"></a>Descripción de la regla
 
-CSE indica que el estado de un proceso se ha dañado y el sistema no lo ha detectado. En el escenario de estado dañado, un controlador general solo detecta la excepción si se marca el método con el atributo `HandleProcessCorruptedStateExceptions` correcto. De forma predeterminada, [Common Language Runtime (CLR)](/dotnet/standard/clr) no invocará controladores catch de CSE.
+CSE indica que el estado de un proceso se ha dañado y el sistema no lo ha detectado. En el escenario de estado dañado, un controlador general solo detecta la excepción si marca el método con el <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute?displayProperty=fullName> atributo. De forma predeterminada, el [Common Language Runtime (CLR)](/dotnet/standard/clr) no invoca controladores catch de CSE.
 
-Permitir el bloqueo del proceso sin detectar estos tipos de excepciones es la opción más segura, ya que incluso el registro del código puede permitir a los atacantes aprovechar errores de memoria dañada.
+La opción más segura es permitir el bloqueo del proceso sin detectar estos tipos de excepciones. Incluso el registro del código puede permitir que los atacantes aprovechar errores de memoria dañada.
 
-Esta advertencia se desencadena cuando se detectan CSE con un controlador general que detecta todas las excepciones, como catch (excepción) o catch (sin especificación de excepción).
+Esta advertencia se desencadena cuando se detectan CSE con un controlador general que detecta todas las excepciones, por ejemplo, `catch (System.Exception e)` o `catch` con ningún parámetro de excepción.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
 
 Para resolver esta advertencia, realice una de las siguientes acciones:
 
-- Quite el atributo `HandleProcessCorruptedStateExceptions`. Esto revierte el comportamiento de tiempo de ejecución predeterminado en el que las CSE no se pasan a los controladores catch.
+- Quite el atributo <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute>. Esto revierte el comportamiento de tiempo de ejecución predeterminado en el que las CSE no se pasan a los controladores catch.
 
-- Quite el controlador catch general y use controladores que capturen tipos de excepción específicos. Esto puede incluir CSE suponiendo que el código del controlador puede controlarlas de manera segura (poco frecuente).
+- Quite el controlador catch general y use controladores que capturen tipos de excepción específicos. Esto puede incluir CSE, suponiendo que el código del controlador puede controlarlas de manera segura (poco frecuente).
 
-- Vuelva a producir el CSE en el controlador catch, lo que garantiza la excepción se pasa al autor de llamada y dará como resultado la finalización del proceso de ejecución.
+- Vuelva a producir el CSE en el controlador catch, que pasa la excepción al autor de llamada y debe tener como resultado la finalización del proceso de ejecución.
 
 ## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
 
@@ -58,7 +57,7 @@ El pseudocódigo siguiente muestra el patrón que detecta esta regla.
 
 ```csharp
 [HandleProcessCorruptedStateExceptions]
-// Method to handle and log CSE exceptions.
+// Method that handles CSE exceptions.
 void TestMethod1()
 {
     try
@@ -67,14 +66,14 @@ void TestMethod1()
     }
     catch (Exception e)
     {
-        // Handle error.
+        // Handle exception.
     }
 }
 ```
 
-### <a name="solution-1"></a>Solución 1
+### <a name="solution-1---remove-the-attribute"></a>Solución 1: quitar el atributo
 
-Quitar el atributo HandleProcessCorruptedExceptions garantiza que las excepciones no se controlarán.
+Quitar el <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute> atributo garantiza que las excepciones de estado dañado no administradas por el método.
 
 ```csharp
 void TestMethod1()
@@ -83,18 +82,14 @@ void TestMethod1()
     {
         FileStream fileStream = new FileStream("name", FileMode.Create);
     }
-    catch (IOException e)
+    catch (Exception e)
     {
-        // Handle error.
-    }
-    catch (UnauthorizedAccessException e)
-    {
-        // Handle error.
+        // Handle exception.
     }
 }
 ```
 
-### <a name="solution-2"></a>Solución 2
+### <a name="solution-2---catch-specific-exceptions"></a>Solución 2: detectar excepciones específicas
 
 Quite el controlador catch general y detecte solo los tipos determinados de excepción.
 
@@ -107,20 +102,21 @@ void TestMethod1()
     }
     catch (IOException e)
     {
-        // Handle error.
+        // Handle IOException.
     }
     catch (UnauthorizedAccessException e)
     {
-        // Handle error.
+        // Handle UnauthorizedAccessException.
     }
 }
 ```
 
-### <a name="solution-3"></a>Solución 3
+### <a name="solution-3---rethrow"></a>Solución 3: rethrow
 
 Vuelva a producir la excepción.
 
 ```csharp
+[HandleProcessCorruptedStateExceptions]
 void TestMethod1()
 {
     try
@@ -129,7 +125,7 @@ void TestMethod1()
     }
     catch (Exception e)
     {
-        // Handle error.
+        // Rethrow the exception.
         throw;
     }
 }

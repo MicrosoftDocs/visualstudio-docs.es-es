@@ -1,26 +1,21 @@
 ---
-title: 'Extensión de Excel de muestra: PropertyProvider (Clase) | Microsoft Docs'
-ms.custom: ''
+title: 'Extensión de Excel: PropertyProvider (clase) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: 075d9b8d-8658-4fca-8711-08304dbac1c5
 caps.latest.revision: 11
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 513d54fd9779bb4148e00d0839ef75b1a4637545
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: d38b430dd88eb1a732c4e4ca335a0a5bb057b1f4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49203663"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54801255"
 ---
-# <a name="sample-excel-extension-propertyprovider-class"></a>Extensión de Excel de muestra: PropertyProvider (Clase)
+# <a name="sample-excel-extension-propertyprovider-class"></a>Extensión de Excel: PropertyProvider (Clase)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Esta clase interna extiende la clase <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider> y proporciona servicios de propiedad para elementos [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)] para grabar y reproducir pruebas de interfaz de usuario (IU).  
@@ -44,6 +39,3 @@ Esta clase interna extiende la clase <xref:Microsoft.VisualStudio.TestTools.UITe
  <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider>   
  <xref:Microsoft.VisualStudio.TestTools.UITesting.Keyboard>   
  [Extender las pruebas de IU codificadas y las grabaciones de acciones para la compatibilidad con Microsoft Excel](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)
-
-
-

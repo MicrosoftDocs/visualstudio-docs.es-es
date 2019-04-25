@@ -1,38 +1,33 @@
 ---
-title: 'Cómo: Crear un sombreador Lambert básico | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Crear un sombreador Lambert básico | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: ec5c10fb-9600-4240-8280-d59451ea1d68
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 1f4fbf209e970367ded8e019087287d429bad8fc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: d70a0c279c0720e79477b518ab63cf0326ca5237
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49929730"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111251"
 ---
-# <a name="how-to-create-a-basic-lambert-shader"></a>Cómo: Crear un sombreador Lambert básico
+# <a name="how-to-create-a-basic-lambert-shader"></a>Procedimiento Crear un sombreador Lambert básico
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 En este documento se muestra cómo usar el Diseñador de sombras y el lenguaje DGSL (Directed Graph Shader Language) para crear un sombreador de iluminación que implementa el modelo de iluminación de Lambert clásico.  
   
  Este documento muestra estas actividades:  
   
--   Agregar nodos a un gráfico de sombreador  
+- Agregar nodos a un gráfico de sombreador  
   
--   Desconectar nodos  
+- Desconectar nodos  
   
--   Conectar nodos  
+- Conectar nodos  
   
 ## <a name="the-lambert-lighting-model"></a>El modelo de iluminación de Lambert  
  El modelo de iluminación de Lambert incorpora iluminación ambiental y direccional para sombrear objetos en una escena 3D. Los componentes ambientales proporcionan un nivel de iluminación base en la escena 3D. Los componentes direccionales proporcionan iluminación adicional de fuentes de luz direccionales (lejanas). La iluminación ambiental afecta a todas las superficies de la escena igualmente, sin importar su orientación. Para una superficie determinada, es el producto del color de ambiente de la superficie y del color y la intensidad de la luz ambiental en la escena. La iluminación direccional afecta a cada superficie de la escena de manera diferente, en función de la orientación de la superficie con respecto a la dirección de la fuente de luz. Es un producto del color difuso y la orientación de la superficie, y del color, la intensidad y la dirección de las fuentes de luz. Las superficies que miran directamente hacia la fuente de luz reciben la máxima contribución y las superficies que miran directamente al otro lado no reciben ninguna contribución. Bajo el modelo de iluminación de Lambert, se combinan el componente ambiental y uno o más componentes direccionales para determinar la contribución de color difuso total para cada punto del objeto.  
@@ -64,14 +59,11 @@ En este documento se muestra cómo usar el Diseñador de sombras y el lenguaje D
   
  ![Iluminación Lambert aplicada a un modelo.](../designers/media/digit-lambert-effect-result.png "Digit-Lambert-Effect-Result")  
   
- Para más información sobre cómo aplicar un sombreador a un modelo 3D, vea [Cómo: Aplicar un sombreador a un modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).  
+ Para obtener más información acerca de cómo aplicar un sombreador a un modelo 3D, vea [Cómo: Aplicar un sombreador a un modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).  
   
 ## <a name="see-also"></a>Vea también  
- [Cómo: Aplicar un sombreador a un modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
+ [Cómo: Aplicar a un sombreador a un modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
  [Cómo: Exportar un sombreador](../designers/how-to-export-a-shader.md)   
- [Cómo: Crear un sombreador Phong básico](../designers/how-to-create-a-basic-phong-shader.md)   
+ [Cómo: Crear a un sombreador Phong básico](../designers/how-to-create-a-basic-phong-shader.md)   
  [Diseñador de sombras](../designers/shader-designer.md)   
  [Nodos del Diseñador de sombras](../designers/shader-designer-nodes.md)
-
-
-

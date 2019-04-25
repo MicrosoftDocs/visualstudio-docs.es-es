@@ -1,27 +1,22 @@
 ---
 title: Ejemplo de implementación del cambio de valores | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - expression evaluation, local values
 - debugging [Debugging SDK], expression evaluation
 ms.assetid: ee2d955b-12ca-4f27-89aa-c2d0e768b6b6
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: dd7be330e4db12be446683d460f19d5365bbd45a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4a7b35c2a96ae31d698ff2294878adc45e3d6572
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51758600"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056411"
 ---
 # <a name="sample-implementation-of-changing-values"></a>Implementación de ejemplo de cambio de valores
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,13 +31,13 @@ ms.locfileid: "51758600"
   
  Esta implementación de `IDebugProperty2::SetValueAsString` realiza las siguientes tareas:  
   
-1.  Evalúa la expresión para generar un valor.  
+1. Evalúa la expresión para generar un valor.  
   
-2.  Enlaza asociado [IDebugField](../../extensibility/debugger/reference/idebugfield.md) a su ubicación de memoria de objetos y generar un [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) objeto.  
+2. Enlaza asociado [IDebugField](../../extensibility/debugger/reference/idebugfield.md) a su ubicación de memoria de objetos y generar un [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) objeto.  
   
-3.  Convierte el valor en una serie de bytes.  
+3. Convierte el valor en una serie de bytes.  
   
-4.  Las llamadas [SetValue](../../extensibility/debugger/reference/idebugobject-setvalue.md) para almacenar los bytes en memoria.  
+4. Las llamadas [SetValue](../../extensibility/debugger/reference/idebugobject-setvalue.md) para almacenar los bytes en memoria.  
   
 ## <a name="managed-code"></a>Código administrado  
  Se trata de una implementación de `IDebugProperty2::SetValueAsString` en código administrado.  
@@ -432,4 +427,3 @@ HRESULT FieldSetValue(
 ## <a name="see-also"></a>Vea también  
  [Cambiar el valor de una variable Local](../../extensibility/debugger/changing-the-value-of-a-local.md)   
  [Contexto de evaluación](../../extensibility/debugger/evaluation-context.md)
-

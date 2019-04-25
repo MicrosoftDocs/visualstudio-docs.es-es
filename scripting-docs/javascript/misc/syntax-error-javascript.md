@@ -1,14 +1,9 @@
 ---
 title: Error de sintaxis (JavaScript) | Documentos de Microsoft
-ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-client-threshold
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- javascript
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-windows
+ms.technology: vs-javascript
+ms.topic: reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1002
 dev_langs:
@@ -16,25 +11,24 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: e4a9d980-f3ef-4092-b192-bf4a45981d30
-caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a0df8de8df8e390cd1e361159a378da190518f43
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: f924dc1745dfe17265a750d4159f52643eb5c5ef
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54345375"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072999"
 ---
 # <a name="syntax-error-javascript"></a>Error de sintaxis (JavaScript)
 Crea una instrucción que infringe una o varias de las reglas gramaticales de [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  
   
 ### <a name="to-correct-this-error"></a>Para corregir este error  
   
--   Compruebe la sintaxis del programa en el número de línea indicado.  
+- Compruebe la sintaxis del programa en el número de línea indicado.  
   
--   Busque dirijan paréntesis o llaves.  
+- Busque dirijan paréntesis o llaves.  
   
 ## <a name="see-also"></a>Vea también  
  [Error (Objeto)](../../javascript/reference/error-object-javascript.md)

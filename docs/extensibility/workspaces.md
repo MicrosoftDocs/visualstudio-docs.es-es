@@ -2,18 +2,17 @@
 title: Las áreas de trabajo en Visual Studio | Microsoft Docs
 ms.date: 02/21/2018
 ms.topic: conceptual
-ms.assetid: 3489592a-dc0c-4cd3-9b08-cd367626980a
 author: vukelich
 ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: 406d55b773a586d5cb0128599e225dabbadf21d3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 011781b434c4d005e473c5f97c60a9269dc5d034
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53876908"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57324239"
 ---
 # <a name="workspaces"></a>Áreas de trabajo
 
@@ -176,9 +175,21 @@ Un contexto de interfaz de usuario puede utilizarse para cargar automáticamente
 
 ### <a name="the-sourceexplorerpackage-package-did-not-load-correctly"></a>No se cargó correctamente el paquete SourceExplorerPackage
 
-Extensibilidad de área de trabajo es principalmente basado en MEF y errores de composición hará que el paquete que hospeda la carpeta abierta para que no se pudo cargar. Por ejemplo, si una extensión exporta un tipo con `ExportFileContextProviderAttribute`, pero sólo implementa el tipo `IWorkspaceProviderFactory<IFileContextActionProvider>`, se producirá un error al intentar abrir una carpeta en Visual Studio. Detalles del error pueden encontrarse en _%LOCALAPPDATA%\Microsoft\VisualStudio\15.0_id\ComponentModelCache\Microsoft.VisualStudio.Default.err_. Resuelva los errores para los tipos implementados por la extensión.
+Extensibilidad de área de trabajo es principalmente basado en MEF y errores de composición hará que el paquete que hospeda la carpeta abierta para que no se pudo cargar. Por ejemplo, si una extensión exporta un tipo con `ExportFileContextProviderAttribute`, pero sólo implementa el tipo `IWorkspaceProviderFactory<IFileContextActionProvider>`, se producirá un error al intentar abrir una carpeta en Visual Studio.
+
+::: moniker range="vs-2017"
+
+Detalles del error pueden encontrarse en _%LOCALAPPDATA%\Microsoft\VisualStudio\15.0_id\ComponentModelCache\Microsoft.VisualStudio.Default.err_. Resuelva los errores para los tipos implementados por la extensión.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Detalles del error pueden encontrarse en _%LOCALAPPDATA%\Microsoft\VisualStudio\16.0_id\ComponentModelCache\Microsoft.VisualStudio.Default.err_. Resuelva los errores para los tipos implementados por la extensión.
+
+::: moniker-end
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-* [Contextos de archivo](workspace-file-contexts.md) -capturadores de contexto de archivo proporcionan inteligencia de código para las áreas de trabajo de la carpeta abierta. 
+* [Contextos de archivo](workspace-file-contexts.md) -capturadores de contexto de archivo proporcionan inteligencia de código para las áreas de trabajo de la carpeta abierta.
 * [Indexación](workspace-indexing.md) -área de trabajo de indexación recopila y se conserva la información sobre el área de trabajo.

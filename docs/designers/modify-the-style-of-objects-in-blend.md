@@ -1,19 +1,18 @@
 ---
 title: Modificar el estilo de objetos en Blend
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3cd8b8d9b3f9a12fa69cf708b0f7a3b16bae83d1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 727bf173336a25f380cc938c3252530f86f22ab8
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53906792"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647458"
 ---
 # <a name="modify-the-style-of-objects-in-blend"></a>Modificar el estilo de objetos en Blend
 
@@ -79,13 +78,13 @@ En el cuadro de diálogo **Crear recurso de estilo**, puede ponerle un nombre al
 
 ### <a name="apply-a-style-or-template-to-a-control"></a>Aplicar un estilo o una plantilla a un control
 
-Haga clic con el botón derecho en el panel [Objetos y escala de tiempo](../designers/creating-a-ui-by-using-blend-for-visual-studio.md#tour-of-the-objects-and-timeline-panel), pulse **Editar plantilla** y, después, **Aplicar recurso**.
+Haga clic con el botón derecho en un objeto en la ventana [Objetos y escala de tiempo](../designers/creating-a-ui-by-using-blend-for-visual-studio.md#objects-and-timeline-window), elija **Editar plantilla** y, luego, **Aplicar recurso**.
 
 ![Menú Aplicar recurso](../designers/media/dc12debc-7711-47d9-84ce-10322a384397.png)
 
 ### <a name="restore-the-default-style-or-template-of-a-control"></a>Restaurar el estilo o la plantilla predeterminados de un control
 
-Seleccione el control y, en el panel [Propiedades](../designers/creating-a-ui-by-using-blend-for-visual-studio.md#tour-of-the-properties-panel), busque la propiedad **Estilo** o **Plantilla**. Elija **Opciones avanzadas** y, después, haga clic en **Restablecer** en el menú contextual.
+Seleccione el control y, en la ventana [Propiedades](../designers/creating-a-ui-by-using-blend-for-visual-studio.md#properties-window), busque la propiedad **Estilo** o **Plantilla**. Elija **Opciones avanzadas** y, después, haga clic en **Restablecer** en el menú contextual.
 
 ## <a name="visual-states-change-the-appearance-of-a-control-based-on-its-state"></a>Estados visuales: Cambiar la apariencia de un control según su estado
 

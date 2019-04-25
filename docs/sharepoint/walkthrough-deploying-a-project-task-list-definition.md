@@ -7,17 +7,17 @@ dev_langs:
 - CSharp
 helpviewer_keywords:
 - SharePoint development in Visual Studio, deploying
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3df4f161eddc5d10b77887b99d93be2204821c24
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7ea7063ce432841e812312b7c7c36721a7d2d099
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53826629"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56625743"
 ---
 # <a name="walkthrough-deploy-a-project-task-list-definition"></a>Tutorial: Implementar una definición de lista de tareas de proyecto
 

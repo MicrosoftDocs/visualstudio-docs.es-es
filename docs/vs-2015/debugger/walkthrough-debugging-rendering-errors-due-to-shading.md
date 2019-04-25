@@ -1,38 +1,33 @@
 ---
-title: 'Tutorial: Depurar errores debidos al sombreado de representación | Microsoft Docs'
-ms.custom: ''
+title: 'Tutorial: Depurar errores debidos al sombreado de representación | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 01875b05-cc7b-4add-afba-f2b776f86974
 caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 5d65c3d2525533e5881b4626941e43fb302ce2aa
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b4c158c4ce6762b69f73a55915cc459f84cd7fff
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51733197"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067162"
 ---
-# <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>Tutorial: Depurar errores de representación debidos al sombreado
+# <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>Tutorial: Depuración de errores de representación debidos al sombreado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 En este tutorial se muestra cómo usar el Diagnóstico de gráficos de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para investigar un objeto que tiene un color incorrecto debido a un error del sombreador.  
   
  En este tutorial se muestra cómo:  
   
--   Examinar el documento de registro de gráficos para identificar los píxeles que muestran el problema.  
+- Examinar el documento de registro de gráficos para identificar los píxeles que muestran el problema.  
   
--   Usar la ventana **Historial de píxeles de gráfico** para examinar el estado de los píxeles más en detalle.  
+- Usar la ventana **Historial de píxeles de gráfico** para examinar el estado de los píxeles más en detalle.  
   
--   Usar el **Depurador de HLSL** para examinar los sombreadores de vértices y píxeles.  
+- Usar el **Depurador de HLSL** para examinar los sombreadores de vértices y píxeles.  
   
 ## <a name="scenario"></a>Escenario  
  Los colores incorrectos de los objetos normalmente se dan cuando un sombreador de vértices pasa información de sombreador de píxeles incompleta o incorrecta.  
@@ -113,6 +108,3 @@ output.color = input.color;
  Después de corregir el código, vuelva a compilarlo y ejecute de nuevo la aplicación para comprobar que se ha resuelto el problema de representación.  
   
  ![El objeto se presenta con los colores correctos. ](../debugger/media/gfx-diag-demo-render-error-shader-resolution.png "gfx_diag_demo_render_error_shader_resolution")
-
-
-

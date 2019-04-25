@@ -1,27 +1,22 @@
 ---
 title: Glosario del depurador de Visual Studio | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - glossary [Debugging SDK]
 - debugging [Debugging SDK], glossary
 ms.assetid: 4a2cfaab-1fbd-4a23-bd00-9ac4cc50d7fd
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 37c0608b5684c9d16041ce89707dd81e665b0623
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 19d82f006bb1c37981f60e1a0b2710588eb0053c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51757931"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58988096"
 ---
 # <a name="visual-studio-debugger-glossary"></a>Glosario del depurador de Visual Studio
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -85,7 +80,7 @@ Los siguientes son los términos usados en el [!INCLUDE[vsprvs](../../../include
   marco de pila  
   Representa el estado del cálculo en un fotograma determinado y un nivel concreto de llamadas a funciones anidadas.  
   
-  subproceso  
+  thread  
   La noción generalizada de ejecución de instrucciones basada en la pila que se ejecuta en al menos un programa.  
   
   punto de interrupción de advertencia  
@@ -93,4 +88,3 @@ Los siguientes son los términos usados en el [!INCLUDE[vsprvs](../../../include
   
 ## <a name="see-also"></a>Vea también  
  [Extensibilidad del depurador de Visual Studio](../../../extensibility/debugger/visual-studio-debugger-extensibility.md)
-

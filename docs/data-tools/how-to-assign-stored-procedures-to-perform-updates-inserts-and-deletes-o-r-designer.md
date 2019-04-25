@@ -5,16 +5,15 @@ ms.topic: conceptual
 ms.assetid: e88224ab-ff61-4a3a-b6b8-6f3694546cac
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 21cf1e16d708dcd66bca937600c11690a21dc7dd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 05dd21bbb423d75cd175f13ca945516024db01eb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53912722"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049847"
 ---
 # <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>Procedimiento Asignación de procedimientos almacenados para realizar actualizaciones, inserciones y eliminaciones (Object Relational Designer)
 
@@ -34,23 +33,23 @@ De forma predeterminada, se proporciona la lógica para actualizar una base de d
 
 ### <a name="to-assign-stored-procedures-to-override-the-default-behavior-of-an-entity-class"></a>Para asignar procedimientos almacenados con el fin de invalidar el comportamiento predeterminado de una clase de entidad
 
-1.  Abra el archivo de **LINQ to SQL** en el diseñador. (Haga doble clic en el archivo **.dbml** en el **Explorador de soluciones**).
+1. Abra el archivo de **LINQ to SQL** en el diseñador. (Haga doble clic en el archivo **.dbml** en el **Explorador de soluciones**).
 
-2.  En el **Explorador de servidores** o **Explorador de bases de datos**, expanda **Procedimientos almacenados** y busque los procedimientos almacenados que desee usar para los comandos Insertar, Actualizar y/o Eliminar de la clase de entidad.
+2. En el **Explorador de servidores** o **Explorador de bases de datos**, expanda **Procedimientos almacenados** y busque los procedimientos almacenados que desee usar para los comandos Insertar, Actualizar y/o Eliminar de la clase de entidad.
 
-3.  Arrastre el procedimiento almacenado hasta **Object Relational Designer**.
+3. Arrastre el procedimiento almacenado hasta **Object Relational Designer**.
 
      El procedimiento almacenado se agrega al panel de métodos como un método de <xref:System.Data.Linq.DataContext>. Para obtener más información, consulte [métodos DataContext (Object Relational Designer)](../data-tools/datacontext-methods-o-r-designer.md).
 
-4.  Seleccione la clase de entidad para la que desee usar el procedimiento almacenado para realizar las actualizaciones.
+4. Seleccione la clase de entidad para la que desee usar el procedimiento almacenado para realizar las actualizaciones.
 
-5.  En la ventana **Propiedades**, seleccione el comando que desee invalidar (**Insertar**, **Actualizar** o **Eliminar**).
+5. En la ventana **Propiedades**, seleccione el comando que desee invalidar (**Insertar**, **Actualizar** o **Eliminar**).
 
-6.  Haga clic en los puntos suspensivos (...) junto a **Usar motor en tiempo de ejecución** para abrir el cuadro de diálogo **Configurar comportamiento**.
+6. Haga clic en los puntos suspensivos (...) junto a **Usar motor en tiempo de ejecución** para abrir el cuadro de diálogo **Configurar comportamiento**.
 
-7.  Seleccione **Personalizar**.
+7. Seleccione **Personalizar**.
 
-8.  Seleccione el procedimiento almacenado que desee en la lista **Personalizar**.
+8. Seleccione el procedimiento almacenado que desee en la lista **Personalizar**.
 
 9. Examine la lista de **Argumentos de método** y **Propiedades de clase** para comprobar que los **Argumentos de método** se asignan a las **Propiedades de clase** adecuadas. Asigne los argumentos de método originales (`Original_<ArgumentName>`) a las propiedades originales (`<PropertyName> (Original)`) para el `Update` y `Delete` comandos.
 

@@ -9,40 +9,38 @@ helpviewer_keywords:
 ms.assetid: 24eb80f8-8fca-4c47-93b5-bb1eb8ffdffd
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e50e0d109ac5cfd17c5913213c4b86b406927593
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1a13174b2991b7c69535a6d1910f761890397818
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53967659"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56642799"
 ---
 # <a name="cvcreatedefaultmarkerseriesofdefaultprovider-function"></a>Función CvCreateDefaultMarkerSeriesOfDefaultProvider
-Crea la serie de marcadores predeterminados de un proveedor predeterminado.  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```C  
-HRESULT CvCreateDefaultMarkerSeriesOfDefaultProvider(  
-   _Out_ PCV_PROVIDER* ppProvider,  
-   _Out_ PCV_MARKERSERIES* ppMarkerSeries  
-);  
-```  
-  
-#### <a name="parameters"></a>Parámetros  
- `ppProvider`  
- Dirección de la variable de objeto de proveedor. La dirección no puede ser NULL, pero la variable puede tener cualquier valor.  
-  
- `ppMarkerSeries`  
- Dirección de la variable de objeto de serie de marcador. La dirección no puede ser NULL, pero la variable puede tener cualquier valor.  
-  
-## <a name="return-value"></a>Valor devuelto  
- S_OK cuando la serie de proveedor y marcador se crea correctamente, o código de error en caso de que se hayan producido errores. Utilice macros SUCCEEDED/FAILED para comprobar si existe una condición de error.  
-  
-## <a name="requirements"></a>Requisitos  
- **Encabezado:** *cvmarkers.h*  
-  
-## <a name="see-also"></a>Vea también  
- [Referencia de la biblioteca C++](../profiling/cpp-library-reference.md)
+Crea la serie de marcadores predeterminados de un proveedor predeterminado.
+
+## <a name="syntax"></a>Sintaxis
+
+```C
+HRESULT CvCreateDefaultMarkerSeriesOfDefaultProvider(
+   _Out_ PCV_PROVIDER* ppProvider,
+   _Out_ PCV_MARKERSERIES* ppMarkerSeries
+);
+```
+
+#### <a name="parameters"></a>Parámetros
+ `ppProvider` Dirección de la variable de objeto de proveedor. La dirección no puede ser NULL, pero la variable puede tener cualquier valor.
+
+ `ppMarkerSeries` Dirección de la variable de objeto de serie de marcador. La dirección no puede ser NULL, pero la variable puede tener cualquier valor.
+
+## <a name="return-value"></a>Valor devuelto
+ S_OK cuando la serie de proveedor y marcador se crea correctamente, o código de error en caso de que se hayan producido errores. Utilice macros SUCCEEDED/FAILED para comprobar si existe una condición de error.
+
+## <a name="requirements"></a>Requisitos
+ **Encabezado:** *cvmarkers.h*
+
+## <a name="see-also"></a>Vea también
+- [Referencia de la biblioteca C++](../profiling/cpp-library-reference.md)

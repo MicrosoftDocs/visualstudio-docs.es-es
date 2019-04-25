@@ -7,16 +7,15 @@ helpviewer_keywords:
 ms.assetid: ed6ff546-acfa-4dd8-b3a2-6e7455930ca4
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: cfbd259eb4363041988a7682f0e5ce601c3917cd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 768695338f77943e44d5e1883ce5da9d9a6bc307
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53914506"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55916692"
 ---
-# <a name="how-to-select-the-active-run-setting-for-a-load-test"></a>Procedimiento para seleccionar el parámetro de ejecución activo de una prueba de carga
+# <a name="how-to-select-the-active-run-setting-for-a-load-test"></a>Filtrar para seleccionar el parámetro de ejecución activo de una prueba de carga
 
 Después de crear la prueba de carga con el **Asistente para prueba de carga nueva**, puede usar el **Editor de pruebas de carga** para cambiar las propiedades de los escenarios de modo que satisfagan las necesidades y los objetivos de la prueba.
 

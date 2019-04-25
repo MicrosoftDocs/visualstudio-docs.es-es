@@ -1,7 +1,6 @@
 ---
 title: 'CA1052: Los tipos titulares estáticos deben estar sellados'
-ms.date: 11/09/2018
-ms.prod: visual-studio-dev15
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - StaticHolderTypesShouldBeSealed
@@ -12,19 +11,19 @@ helpviewer_keywords:
 ms.assetid: 51a3165d-781e-4a55-aa0d-ea25fee7d4f2
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CPP
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ec090fd11c122699bafb3d72ca1eeab13ecb830
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 46a8c9a4e22c7a54a4b2b68f95bb2b81f3a0888e
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53825950"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57870391"
 ---
 # <a name="ca1052-static-holder-types-should-be-sealed"></a>CA1052: Los tipos titulares estáticos deben estar sellados
 
@@ -37,7 +36,9 @@ ms.locfileid: "53825950"
 
 ## <a name="cause"></a>Motivo
 
-Un público o protegido, no abstracta tipo contiene sólo miembros estáticos y no se ha declarado con el [sealed](/dotnet/csharp/language-reference/keywords/sealed) ([NotInheritable](/dotnet/visual-basic/language-reference/modifiers/notinheritable)) modificador.
+Un tipo no abstracto contiene sólo miembros estáticos y no se ha declarado con el [sealed](/dotnet/csharp/language-reference/keywords/sealed) ([NotInheritable](/dotnet/visual-basic/language-reference/modifiers/notinheritable)) modificador.
+
+De forma predeterminada, esta regla busca solo en tipos visibles externamente, pero se trata de [configurable](#configurability).
 
 ## <a name="rule-description"></a>Descripción de la regla
 
@@ -51,9 +52,19 @@ Para corregir una infracción de esta regla, marque el tipo como `sealed` o `Not
 
 Suprima una advertencia de esta regla sólo si el tipo está diseñado para heredarse. La ausencia de la `sealed` o `NotInheritable` modificador sugiere que el tipo es útil como tipo base.
 
+## <a name="configurability"></a>Capacidad de configuración
+
+Si ejecuta esta regla de [analizadores de FxCop](install-fxcop-analyzers.md) (y no a través de análisis de código estático), puede configurar qué partes de su código base para ejecutar esta regla en, en función de su accesibilidad. Por ejemplo, para especificar que debe ejecutarse la regla sólo con respecto a la superficie de API no públicos, agregue el siguiente par clave-valor a un archivo .editorconfig en el proyecto:
+
+```
+dotnet_code_quality.ca1052.api_surface = private, internal
+```
+
+Puede configurar esta opción para simplemente esta regla, para todas las reglas o para todas las reglas de esta categoría (diseño). Para obtener más información, consulte [analizadores de FxCop configurar](configure-fxcop-analyzers.md).
+
 ## <a name="example-of-a-violation"></a>Ejemplo de una infracción
 
-El ejemplo siguiente muestra un tipo que infringe la regla.
+El ejemplo siguiente muestra un tipo que infringe la regla:
 
 [!code-csharp[FxCop.Design.StaticMembers#1](../code-quality/codesnippet/CSharp/ca1052-static-holder-types-should-be-sealed_1.cs)]
 [!code-vb[FxCop.Design.StaticMembers#1](../code-quality/codesnippet/VisualBasic/ca1052-static-holder-types-should-be-sealed_1.vb)]
@@ -61,10 +72,10 @@ El ejemplo siguiente muestra un tipo que infringe la regla.
 
 ## <a name="fix-with-the-static-modifier"></a>Corregir con el modificador "static"
 
-El ejemplo siguiente muestra cómo corregir una infracción de esta regla, marque el tipo con el `static` modificador en C#.
+El ejemplo siguiente muestra cómo corregir una infracción de esta regla, marque el tipo con el `static` modificador en C#:
 
 [!code-csharp[FxCop.Design.StaticMembersFixed#1](../code-quality/codesnippet/CSharp/ca1052-static-holder-types-should-be-sealed_2.cs)]
 
 ## <a name="related-rules"></a>Reglas relacionadas
 
-[CA1053: Los tipos titulares estáticos no deben tener constructores](../code-quality/ca1053-static-holder-types-should-not-have-constructors.md)
+- [CA1053: Los tipos titulares estáticos no deben tener constructores](../code-quality/ca1053-static-holder-types-should-not-have-constructors.md)

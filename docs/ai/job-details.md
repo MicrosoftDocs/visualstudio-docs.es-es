@@ -1,4 +1,18 @@
 ---
+title: Visualización de trabajos recientes
+author: lisawong19
+ms.author: liwong
+manager: routlaw
+ms.date: 11/13/2017
+ms.topic: conceptual
+ms.workload:
+- multiple
+ms.openlocfilehash: a2970c0086ec18789347eebdea752487be18ce7d
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56842775"
 ---
 # <a name="view-recent-job-performance-and-details"></a>Ver el rendimiento y los detalles de trabajos recientes
 

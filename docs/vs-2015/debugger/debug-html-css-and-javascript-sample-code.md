@@ -1,14 +1,9 @@
 ---
 title: Depurar código de ejemplo HTML, CSS y JavaScript | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,23 +13,23 @@ ms.assetid: 51893967-98c8-4141-ba40-03646f221760
 caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 9c4793747e85435b63361df03cdb011d38b214e6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 134b4e3c5195e9008d951062ec813a939d0d4fe6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51720785"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58986601"
 ---
 # <a name="debug-html-css-and-javascript-sample-code"></a>Depurar código de ejemplo HTML, CSS y JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "windows_and_phone_content")  
   
- El código de este tema es el archivo de ejemplo para [inicio rápido: depurar HTML y CSS](../debugger/quickstart-debug-html-and-css.md). Los errores presentes por diseño en el tutorial rápido se corrigen en esta versión del código.  
+ El código de este tema es el archivo de ejemplo para [inicio rápido: Depurar HTML y CSS](../debugger/quickstart-debug-html-and-css.md). Los errores presentes por diseño en el tutorial rápido se corrigen en esta versión del código.  
   
 ## <a name="sample-code"></a>Código de ejemplo  
- El siguiente código HTML se usa en el \<cuerpo > etiqueta en la Guía de inicio rápido.  
+ El siguiente código HTML se usa en la etiqueta \<body> del Inicio rápido.  
   
 ```html  
 <div id="flipTemplate" data-win-control="WinJS.Binding.Template"  
@@ -110,7 +105,4 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
 ```  
   
 ## <a name="see-also"></a>Vea también  
- [Inicio rápido: Depurar HTML y CSS](../debugger/quickstart-debug-html-and-css.md)
-
-
-
+ [Inicio rápido: depuración de HTML y CSS](../debugger/quickstart-debug-html-and-css.md)

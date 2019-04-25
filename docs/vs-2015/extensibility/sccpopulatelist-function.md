@@ -1,14 +1,9 @@
 ---
 title: SccPopulateList (función) | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccPopulateList
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 7416e781-c571-4a7f-8af3-a089ce8be662
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: fccf5ba354a99eaef6968c5d5027e8540762af75
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 18c46432cac2496a7b067d23b313e5d67b059bb3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798903"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58995292"
 ---
 # <a name="sccpopulatelist-function"></a>SccPopulateList (Función)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,10 +43,10 @@ SCCRTN SccPopulateList (
  pvContext  
  [in] La estructura de contexto de complemento de control de origen.  
   
- Ncomando  
+ nCommand  
  [in] El comando de control de código fuente que se aplicarán a todos los archivos en el `lpFileNames` matriz (consulte [código de comando](../extensibility/command-code-enumerator.md) para obtener una lista de comandos posibles).  
   
- n  
+ nFiles  
  [in] Número de archivos en el `lpFileNames` matriz.  
   
  lpFileNames  
@@ -94,4 +89,3 @@ SCCRTN SccPopulateList (
  [POPLISTFUNC](../extensibility/poplistfunc.md)   
  [Marcadores de bits utilizados por comandos específicos](../extensibility/bitflags-used-by-specific-commands.md)   
  [Código de comando](../extensibility/command-code-enumerator.md)
-

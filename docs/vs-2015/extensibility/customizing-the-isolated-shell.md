@@ -1,26 +1,21 @@
 ---
 title: Personalización del Shell aislado | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio shell, isolated mode
 ms.assetid: e0b7c3ae-210f-4f48-ac49-6a59e6034f5f
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 097186ba43202c537bf8acbe0b47893151055c19
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 724d4d0c4b392a362e702f33ea996df3a6fc0ad6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51733787"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58997441"
 ---
 # <a name="customizing-the-isolated-shell"></a>Personalización del Shell aislado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,15 +26,15 @@ Puede personalizar la aplicación de shell aislado de Visual Studio cambiando di
  La solución de plantilla de shell aislado incluye un *SolutionName*. Archivo Application.pkgdef que le permite modificar las siguientes características:  
   
 ##### <a name="the-application-title"></a>El título de la aplicación  
- Puede personalizar el título de la aplicación, que es el nombre que se muestra en la barra de título de la aplicación, cambiando el valor de la fila "AppName" en el *SolutionName*. Archivo Application.pkgdef. Para obtener más información, consulte [Tutorial: crear una aplicación básica de Shell aislado](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
+ Puede personalizar el título de la aplicación, que es el nombre que se muestra en la barra de título de la aplicación, cambiando el valor de la fila "AppName" en el *SolutionName*. Archivo Application.pkgdef. Para obtener más información, consulte [Tutorial: Creando un Basic aislado la aplicación de Shell](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
   
  Si no desea que el título de la aplicación para mostrar el proyecto que está cargado actualmente, cambie el valor de la fila "ShowHierarchyRootInTitle" en el *SolutionName*. Archivo de Application.pkgdef de DWORD: 00000001 a DWORD: 00000000.  
   
 ##### <a name="the-application-icon"></a>El icono de aplicación  
- Puede personalizar el icono de aplicación, que es el icono que muestra el nombre de la aplicación en la barra de título de la aplicación. Copie un icono diferente en el directorio de icono. En **el Explorador de soluciones**, el icono Agregar a la carpeta de archivos de recursos. A continuación, abra el archivo VSShellStub.rc y reemplace el valor de IDI_STUBPROGRAM con el nombre del nuevo icono. Para obtener más información, consulte [Tutorial: crear una aplicación básica de Shell aislado](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
+ Puede personalizar el icono de aplicación, que es el icono que muestra el nombre de la aplicación en la barra de título de la aplicación. Copie un icono diferente en el directorio de icono. En **el Explorador de soluciones**, el icono Agregar a la carpeta de archivos de recursos. A continuación, abra el archivo VSShellStub.rc y reemplace el valor de IDI_STUBPROGRAM con el nombre del nuevo icono. Para obtener más información, consulte [Tutorial: Creando un Basic aislado la aplicación de Shell](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
   
 ##### <a name="the-command-line-logo"></a>El logotipo de la línea de comandos  
- Puede personalizar el logotipo de línea de comandos, que es el texto que aparece cuando se inicia la aplicación desde la línea de comandos, cambie el valor de la fila "CommandLineLogo" en el *SolutionName*. Archivo Application.pkgdef. Para obtener más información, consulte [Tutorial: crear una aplicación básica de Shell aislado](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)  
+ Puede personalizar el logotipo de línea de comandos, que es el texto que aparece cuando se inicia la aplicación desde la línea de comandos, cambie el valor de la fila "CommandLineLogo" en el *SolutionName*. Archivo Application.pkgdef. Para obtener más información, consulte [Tutorial: Creación de una aplicación básica de Shell aislado](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)  
   
 ##### <a name="the-name-of-the-user-files-subfolder"></a>El nombre de la subcarpeta de archivos de usuario  
  Puede cambiar el nombre de la carpeta de la aplicación se mantiene para los archivos de usuario cambiando el valor de la fila "UserFilesSubFolderName" *SolutionName*. Archivo Application.pkgdef.  
@@ -63,7 +58,7 @@ Puede personalizar la aplicación de shell aislado de Visual Studio cambiando di
  Puede personalizar la página del explorador web, que es la página que se muestra cuando se abre la ventana del explorador web, cambiando el valor de la fila "DefaultSearchPage" en el *SolutionName*. Archivo Application.pkgdef.  
   
 ##### <a name="the-default-home-page"></a>La página principal predeterminada  
- Puede personalizar la página principal, cambie el valor de la fila "DefaultHomePage" en el *SolutionName*. Archivo Application.pkgdef. Para obtener más información, consulte [Tutorial: crear una aplicación básica de Shell aislado](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)  
+ Puede personalizar la página principal, cambie el valor de la fila "DefaultHomePage" en el *SolutionName*. Archivo Application.pkgdef. Para obtener más información, consulte [Tutorial: Creación de una aplicación básica de Shell aislado](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)  
   
 ##### <a name="whether-or-not-to-hide-the-solution-concept"></a>Si se debe o no ocultan el concepto de solución  
  Puede especificar si desea ocultar la solución en la aplicación cambiando el valor de la fila "HideSolutionConcept" o no el *SolutionName*. Archivo Application.pkgdef. Para ocultar la solución, establezca el valor `dword:00000001`y para mostrar la solución, establezca el valor `dword:00000000`.  
@@ -123,14 +118,13 @@ DisableStartPage=dword:00000000
 [$RootKey$\Projects\{A2FE74E1-B743-11d0-AE1A-00A0C90FFFC3}\AddItemTemplates\TemplateDirs\{39c9c826-8ef8-4079-8c95-428f5b1c323f}]  
 ```  
   
- Quita el proyecto archivos varios del conjunto de plantillas de proyecto que se muestra en el **nuevo proyecto** cuadro de diálogo. Para obtener más información, consulte [Tutorial: crear una aplicación básica de Shell aislado](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
+ Quita el proyecto archivos varios del conjunto de plantillas de proyecto que se muestra en el **nuevo proyecto** cuadro de diálogo. Para obtener más información, consulte [Tutorial: Creando un Basic aislado la aplicación de Shell](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
   
 ##### <a name="enabledisable-menu-commands"></a>Habilitar o deshabilitar los comandos de menú  
- El *SolutionName*UI.vsct archivo incluye una lista de comentada de todos los comandos de menú disponibles en el shell aislado. Para deshabilitar un comando determinado, quite la fila correspondiente. Por ejemplo, para deshabilitar el comentario de la ventana o dividir, quite el `<Define name="No_SplitCommand"/>` fila. Para obtener más información, consulte [Tutorial: crear una aplicación básica de Shell aislado](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
+ El *SolutionName*UI.vsct archivo incluye una lista de comentada de todos los comandos de menú disponibles en el shell aislado. Para deshabilitar un comando determinado, quite la fila correspondiente. Por ejemplo, para deshabilitar el comentario de la ventana o dividir, quite el `<Define name="No_SplitCommand"/>` fila. Para obtener más información, consulte [Tutorial: Creando un Basic aislado la aplicación de Shell](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
   
 ##### <a name="the-bitmap-used-on-the-splash-screen"></a>El mapa de bits utilizado en la pantalla de presentación  
- Puede personalizar el mapa de bits utilizado en la pantalla de presentación, que es la ventana que se muestra cuando se inicia la aplicación, cambiando el valor de la fila "SplashScreenBitmap" en el *SolutionName*. Archivo Application.pkgdef. Para obtener más información, consulte [Tutorial: crear una aplicación básica de Shell aislado](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
+ Puede personalizar el mapa de bits utilizado en la pantalla de presentación, que es la ventana que se muestra cuando se inicia la aplicación, cambiando el valor de la fila "SplashScreenBitmap" en el *SolutionName*. Archivo Application.pkgdef. Para obtener más información, consulte [Tutorial: Creando un Basic aislado la aplicación de Shell](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
   
 ##### <a name="the-helpabout-window"></a>La ayuda/acerca de la ventana  
- En la plantilla de shell aislado, hay un proyecto independiente se puede usar para personalizar la ayuda/acerca de la casilla de la aplicación. Para obtener más información, consulte [Tutorial: crear una aplicación básica de Shell aislado](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).
-
+ En la plantilla de shell aislado, hay un proyecto independiente se puede usar para personalizar la ayuda/acerca de la casilla de la aplicación. Para obtener más información, consulte [Tutorial: Creando un Basic aislado la aplicación de Shell](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).

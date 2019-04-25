@@ -1,23 +1,22 @@
 ---
 title: Configuración del entorno
 ms.date: 11/21/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ba582f0c7445a64eb27ea2d3875cd7072f65fe3d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c799d903c29d745d97a407c4c25f1285a5f35151
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53927108"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58069832"
 ---
 # <a name="environment-settings-for-visual-studio"></a>Configuración del entorno de Visual Studio
 
-Al iniciar Visual Studio por primera vez, es posible optimizar el entorno de desarrollo para el tipo de desarrollo que más se realiza mediante la elección de una colección de opciones. Cada colección optimiza elementos como los métodos abreviados de teclado, los diseños de ventana, las plantillas de proyecto y elemento y la visibilidad de los comandos.
+Al abrir Visual Studio por primera vez, es posible optimizar el entorno de desarrollo para el tipo de desarrollo que más se realiza mediante la elección de una colección de opciones. Cada colección optimiza elementos como los métodos abreviados de teclado, los diseños de ventana, las plantillas de proyecto y elemento y la visibilidad de los comandos.
 
 Estas son las colecciones de configuración disponibles:
 
@@ -31,7 +30,7 @@ Estas son las colecciones de configuración disponibles:
 
 ## <a name="reset-settings"></a>Restablecer la configuración
 
-Para cambiar la configuración de desarrollo después de iniciar Visual Studio por primera vez, siga estos pasos:
+Para cambiar la configuración de desarrollo después de abrir Visual Studio por primera vez, siga estos pasos:
 
 1. Seleccione **Herramientas** > **Importar y exportar configuraciones** en la barra de menús para abrir el **Asistente para importar y exportar configuraciones**.
 

@@ -6,15 +6,15 @@ helpviewer_keywords:
 - deployment, VSIX
 ms.assetid: 680c3b25-7901-4768-8363-6d1fcd1ea636
 ms.author: heaths
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f9d74c0a899139046cab1d73b59086e4ab9e2276
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c13146d0d48dc176417040bcb756bf8069ad3c3e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53955138"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56683576"
 ---
 # <a name="locate-visual-studio"></a>Busque Visual Studio
 
@@ -41,4 +41,4 @@ Para encontrar Visual Studio y otras herramientas en entornos de compilación, l
 
 ## <a name="see-also"></a>Vea también
 
-* [Cambios realizados en el programa de instalación de Visual Studio 2017](https://blogs.msdn.microsoft.com/heaths/2016/09/15/changes-to-visual-studio-15-setup/)
+* [Cambios realizados en el programa de instalación de Visual Studio 2017](https://devblogs.microsoft.com/setup/changes-to-visual-studio-15-setup/)

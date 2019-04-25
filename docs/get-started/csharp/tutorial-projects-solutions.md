@@ -1,30 +1,29 @@
 ---
 title: 'Tutorial: Soluciones y proyectos de C#'
 ms.date: 12/12/2018
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-general
 ms.custom: get-started
 ms.topic: tutorial
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: ba7bb7452fd86da4ab449c61c41dc27c865070c3
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
+ms.openlocfilehash: 68fdb7169bc87979cac56480664bfdbeab748c51
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53738996"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323482"
 ---
-# <a name="learn-about-projects-and-solutions-using-c"></a>Información sobre proyectos y soluciones con C#
+# <a name="learn-about-projects-and-solutions-using-c"></a>Información sobre proyectos y soluciones con C\#
 
 En este artículo introductorio se explica qué significa crear una *solución* y un *proyecto* en Visual Studio. Una solución es un contenedor que se usa para organizar uno o más proyectos de código relacionados, por ejemplo, un proyecto de biblioteca de clases y un proyecto de prueba correspondiente. Echaremos un vistazo a las propiedades de un proyecto y a algunos de los archivos que puede contener. También se crea una referencia de un proyecto a otro.
 
 > [!TIP]
-> Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) para instalarlo de forma gratuita.
+> Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) para instalarlo de forma gratuita.
 
 Se crean una solución y un proyecto desde cero como ejercicio educativo para comprender el concepto de proyecto. Cuando use Visual Studio, es probable que emplee alguna de las distintas *plantillas* de proyecto que Visual Studio ofrece al crear un nuevo proyecto.
 
@@ -39,9 +38,11 @@ A pesar de su nombre, una solución no es una "respuesta", sino simplemente cont
 
 Comenzaremos nuestro periplo creando una solución vacía. Cuando se familiarice con Visual Studio, lo más probable es que no cree soluciones vacías con mucha frecuencia. Al crear un proyecto, Visual Studio crea automáticamente una solución para hospedar ese proyecto si es que no hay ya una solución abierta.
 
+::: moniker range="vs-2017"
+
 1. Abra Visual Studio.
 
-1. En la barra de menús, que es la fila de menús, como **Archivo** y **Editar**, elija **Archivo** > **Nuevo** > **Proyecto**.
+1. En la barra de menús superior, elija **Archivo** > **Nuevo** > **Proyecto**.
 
    Aparece el cuadro de diálogo **Nuevo proyecto** .
 
@@ -50,6 +51,22 @@ Comenzaremos nuestro periplo creando una solución vacía. Cuando se familiarice
    ![Plantilla Solución en blanco en Visual Studio](../media/tutorial-projects-new-solution.png)
 
    La **página de inicio** se cierra y aparece una solución en el **Explorador de soluciones**, en el lado derecho de la ventana de Visual Studio. Seguramente use el **Explorador de soluciones** a menudo para examinar el contenido de los proyectos.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Abra Visual Studio.
+
+2. En la ventana de inicio, elija **Crear un proyecto nuevo**.
+
+3. En la página **Crear un proyecto nuevo**, escriba **solución en blanco** en el cuadro de búsqueda, seleccione la plantilla **Solución en blanco** y elija **Siguiente**.
+
+4. Asígnele a la solución el nombre **QuickSolution** y elija **Crear**.
+
+   Aparece una solución en el **Explorador de soluciones**, en el lado derecho de la ventana de Visual Studio. Seguramente use el **Explorador de soluciones** a menudo para examinar el contenido de los proyectos.
+
+::: moniker-end
 
 ### <a name="add-a-project"></a>Agregar un proyecto
 

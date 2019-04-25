@@ -1,14 +1,9 @@
 ---
-title: 'Cómo: depurar con código fuente de Code Center Premium | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Depurar con código fuente de Code Center Premium | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -21,15 +16,15 @@ ms.assetid: 18b4769d-b007-4428-9dae-9e72c283ff0d
 caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 090326e2bc86aee9acc6e9cee92bc518f64ad63d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 88644f3bf768f1b3467467a31edbd83e8e5f151c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51800190"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039882"
 ---
-# <a name="how-to-debug-with-code-center-premium-source"></a>Cómo: Depurar código fuente con Code Center Premium
+# <a name="how-to-debug-with-code-center-premium-source"></a>Procedimiento Depurar con código fuente de Code Center Premium
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Con el depurador de [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], puede depurar código fuente compartido seguro de Microsoft MSDN Code Center Premium.  
@@ -83,21 +78,21 @@ Con el depurador de [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], 
   
 ### <a name="to-debug-your-source-code-using-attach-to-process"></a>Para depurar el código fuente utilizando Asociar al proceso  
   
-1.  Conecte el lector de SmartCard e inserte la tarjeta que obtuvo en la Iniciativa de código fuente compartido.  
+1. Conecte el lector de SmartCard e inserte la tarjeta que obtuvo en la Iniciativa de código fuente compartido.  
   
-2.  Inicie Visual Studio.  
+2. Inicie Visual Studio.  
   
-3.  Abra el proyecto de Visual Studio.  
+3. Abra el proyecto de Visual Studio.  
   
-4.  En el **herramientas** menú, haga clic en **asociar al proceso**.  
+4. En el **herramientas** menú, haga clic en **asociar al proceso**.  
   
-5.  En el **asociar al proceso** cuadro de diálogo, haga clic en **seleccione**.  
+5. En el **asociar al proceso** cuadro de diálogo, haga clic en **seleccione**.  
   
-6.  En el **Seleccionar tipo de código** cuadro de diálogo **detectar estos tipos de código**, seleccione **nativo**, **administrada**, y **administrados () v4.0)**.  
+6. En el **Seleccionar tipo de código** cuadro de diálogo **detectar estos tipos de código**, seleccione **nativo**, **administrada**, y **administrados () v4.0)**.  
   
-7.  Haga clic en **Aceptar** para descartar el **Seleccionar tipo de código** cuadro de diálogo.  
+7. Haga clic en **Aceptar** para descartar el **Seleccionar tipo de código** cuadro de diálogo.  
   
-8.  En el **procesos disponibles** , seleccione el proceso que desea depurar.  
+8. En el **procesos disponibles** , seleccione el proceso que desea depurar.  
   
 9. Haga clic en **Adjuntar**.  
   
@@ -122,32 +117,29 @@ Con el depurador de [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], 
   
 4. Para cada proyecto administrado de la solución, haga lo siguiente  
   
-   1.  En el Explorador de soluciones, abra el menú contextual para el proyecto y, a continuación, elija **propiedades**.  
+   1. En el Explorador de soluciones, abra el menú contextual para el proyecto y, a continuación, elija **propiedades**.  
   
-   2.  Seleccione **depurar** y, a continuación, elija **Habilitar depuración de código no administrado**.  
+   2. Seleccione **depurar** y, a continuación, elija **Habilitar depuración de código no administrado**.  
   
 ### <a name="to-debug-your-solution-with-code-center-premium-source"></a>Para depurar la solución con el código fuente de Code Center Premium  
   
-1.  En la clase `Package`, establezca un punto de interrupción en el constructor del paquete.  
+1. En la clase `Package`, establezca un punto de interrupción en el constructor del paquete.  
   
-2.  En el `Debug` menú, haga clic en **Iniciar depuración**.  
+2. En el `Debug` menú, haga clic en **Iniciar depuración**.  
   
-3.  Cuando se alcance el punto de interrupción en el constructor del paquete, vaya a la **pila de llamadas** ventana y haga clic con el marco de pila del ensamblado que desea cargar símbolos y, a continuación, **cargar símbolos**.  
+3. Cuando se alcance el punto de interrupción en el constructor del paquete, vaya a la **pila de llamadas** ventana y haga clic con el marco de pila del ensamblado que desea cargar símbolos y, a continuación, **cargar símbolos**.  
   
      Haga doble clic en el marco de la llamada para cargar el código fuente.  
   
 ### <a name="to-browse-source-code-on-code-center-premium"></a>Para examinar el código fuente en Code Center Premium  
   
-1.  Conecte el lector de SmartCard e inserte la tarjeta que obtuvo en la Iniciativa de código fuente compartido.  
+1. Conecte el lector de SmartCard e inserte la tarjeta que obtuvo en la Iniciativa de código fuente compartido.  
   
-2.  Inicie Internet Explorer y escriba la siguiente dirección URL: `https://codepremium.msdn.microsoft.com`  
+2. Inicie Internet Explorer y escriba la siguiente dirección URL: `https://codepremium.msdn.microsoft.com`  
   
-3.  Busque el código fuente que desea.  
+3. Busque el código fuente que desea.  
   
 ## <a name="see-also"></a>Vea también  
  [Preparación y configuración de la depuración](../debugger/debugger-settings-and-preparation.md)   
  [Seguridad del depurador](../debugger/debugger-security.md)   
- [Code Center Premium](http://www.microsoft.com/resources/sharedsource/ccp.mspx)
-
-
-
+ [Code Center Premium](https://www.microsoft.com/en-us/sharedsource/code-center-premium.aspx)

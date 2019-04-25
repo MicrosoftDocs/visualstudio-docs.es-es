@@ -1,27 +1,22 @@
 ---
 title: Cambiar el valor de una variable Local | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluation
 - expression evaluation, changing values programmatically
 ms.assetid: 8407d3df-d38a-4328-82d1-98084bef43ec
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 166b4d22ec24f3137044ab19255abb15b109fbe0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b955d27089d86035f96711c2f8442fec5b34bceb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51807226"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113487"
 ---
 # <a name="changing-the-value-of-a-local"></a>Cambio del valor de una variable local
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,13 +32,13 @@ ms.locfileid: "51807226"
   
 2. `IDebugProperty2::SetValueAsString` realiza las tareas siguientes:  
   
-   1.  Evalúa la cadena para generar un valor.  
+   1. Evalúa la cadena para generar un valor.  
   
-   2.  Enlaza asociado [IDebugField](../../extensibility/debugger/reference/idebugfield.md) objeto para obtener un [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) objeto.  
+   2. Enlaza asociado [IDebugField](../../extensibility/debugger/reference/idebugfield.md) objeto para obtener un [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) objeto.  
   
-   3.  Convierte el valor en una serie de bytes.  
+   3. Convierte el valor en una serie de bytes.  
   
-   4.  Las llamadas [SetValue](../../extensibility/debugger/reference/idebugobject-setvalue.md) para colocar los bytes del valor en la memoria para el programa que se está depurando pueda acceder a ellos.  
+   4. Las llamadas [SetValue](../../extensibility/debugger/reference/idebugobject-setvalue.md) para colocar los bytes del valor en la memoria para el programa que se está depurando pueda acceder a ellos.  
   
 3. Visual Studio actualiza el **variables locales** mostrar (consulte [Mostrar variables locales](../../extensibility/debugger/displaying-locals.md) para obtener más información).  
   
@@ -56,4 +51,3 @@ ms.locfileid: "51807226"
 ## <a name="see-also"></a>Vea también  
  [Escribir un evaluador de expresiones CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)   
  [Visualización de variables locales](../../extensibility/debugger/displaying-locals.md)
-

@@ -10,37 +10,37 @@ f1_keywords:
 ms.assetid: c1f46f77-eb95-42e5-b340-d86bc9de41b4
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 627db454148a9abe1d9bdc8c3a9764ed014d7f39
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 84c44c8417247d4d33f66e8c56ed1775f6c895ac
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53911577"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56607842"
 ---
 # <a name="da0003-many-kernel-samples"></a>DA0003: Muchas muestras de kernel
 
-|||  
-|-|-|  
-|Identificador de regla|DA0003|  
-|Categoría|Uso de Herramientas de generación de perfiles|  
-|Métodos de generación de perfiles|Muestreo|  
-|Mensaje|Tiene una proporción elevada de muestras en modo kernel. Esto podría indicar un gran volumen de actividad de E/S o una alta tasa de cambio de contexto. Considere la posibilidad de volver a generar perfiles para la aplicación mediante el modo Instrumentación.|  
-|Tipo de regla|Información|  
+|||
+|-|-|
+|Identificador de regla|DA0003|
+|Categoría|Uso de Herramientas de generación de perfiles|
+|Métodos de generación de perfiles|Muestreo|
+|Mensaje|Tiene una proporción elevada de muestras en modo kernel. Esto podría indicar un gran volumen de actividad de E/S o una alta tasa de cambio de contexto. Considere la posibilidad de volver a generar perfiles para la aplicación mediante el modo Instrumentación.|
+|Tipo de regla|Información|
 
-## <a name="cause"></a>Motivo  
- Una proporción considerable de las muestras de la pila de llamadas recopiladas para la aplicación se estaban ejecutando en modo kernel. Considere la posibilidad de generar perfiles para la aplicación mediante un método de generación de perfiles diferente.  
+## <a name="cause"></a>Motivo
+ Una proporción considerable de las muestras de la pila de llamadas recopiladas para la aplicación se estaban ejecutando en modo kernel. Considere la posibilidad de generar perfiles para la aplicación mediante un método de generación de perfiles diferente.
 
-## <a name="rule-description"></a>Descripción de la regla  
- En Windows, se puede ejecutar código en modo kernel o en modo de usuario. (El modo kernel también se denomina modo privilegiado). En modo kernel solo se ejecuta código de sistema de bajo nivel, como los controladores de dispositivos. Una aplicación en modo de usuario puede hacer una transición al modo kernel para realizar operaciones de E/S, esperar las primitivas de sincronización de subproceso o proceso o realizar llamadas del sistema.  
+## <a name="rule-description"></a>Descripción de la regla
+ En Windows, se puede ejecutar código en modo kernel o en modo de usuario. (El modo kernel también se denomina modo privilegiado). En modo kernel solo se ejecuta código de sistema de bajo nivel, como los controladores de dispositivos. Una aplicación en modo de usuario puede hacer una transición al modo kernel para realizar operaciones de E/S, esperar las primitivas de sincronización de subproceso o proceso o realizar llamadas del sistema.
 
- El muestreo es más eficaz al generar perfiles de aplicaciones que trabajan en modo de usuario la mayor parte del tiempo. El número de muestras recopiladas cuando la aplicación se ha ejecutado en modo kernel puede indicar que se realizan operaciones de E/S con frecuencia o que se están produciendo cambios de contexto. Ninguna de estas operaciones se puede investigar mediante el método de muestreo. Si se toman demasiadas muestras del modo kernel, puede que los datos de muestreo no contengan suficientes muestras del modo de usuario para tener un valor estadístico significativo.  
+ El muestreo es más eficaz al generar perfiles de aplicaciones que trabajan en modo de usuario la mayor parte del tiempo. El número de muestras recopiladas cuando la aplicación se ha ejecutado en modo kernel puede indicar que se realizan operaciones de E/S con frecuencia o que se están produciendo cambios de contexto. Ninguna de estas operaciones se puede investigar mediante el método de muestreo. Si se toman demasiadas muestras del modo kernel, puede que los datos de muestreo no contengan suficientes muestras del modo de usuario para tener un valor estadístico significativo.
 
-## <a name="how-to-fix-violations"></a>Cómo corregir infracciones  
- Considere la posibilidad de volver a generar perfiles para la aplicación mediante una de las opciones siguientes:  
+## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
+ Considere la posibilidad de volver a generar perfiles para la aplicación mediante una de las opciones siguientes:
 
--   Generar perfiles mediante el método de instrumentación.  
+-   Generar perfiles mediante el método de instrumentación.
 
 -   Aumentar la velocidad de muestreo para intentar recopilar más muestras en modo de usuario.

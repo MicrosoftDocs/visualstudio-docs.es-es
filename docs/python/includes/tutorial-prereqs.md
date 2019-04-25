@@ -1,14 +1,20 @@
 ---
 ms.topic: include
-ms.openlocfilehash: 3da5e4b88a9d01354cc1c793d46f91d8f15439f1
-ms.sourcegitcommit: 206e738fc45ff8ec4ddac2dd484e5be37192cfbd
+ms.openlocfilehash: 38e4f8a6e0ae111627c756857417a173ae49c4d1
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39513590"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58395718"
 ---
 ## <a name="prerequisites"></a>Requisitos previos
 
+::: moniker range="vs-2017"
 - Visual Studio 2017 con la carga de trabajo de Python instalada. Para obtener instrucciones, consulte [Trabajar con Python en Visual Studio, paso 0](../tutorial-working-with-python-in-visual-studio-step-00-installation.md).
+::: moniker-end
 
-También puede usar una versión anterior de Visual Studio con las Herramientas de Python para Visual Studio instaladas. Consulte [Instalación de la compatibilidad con Python en Visual Studio](../installing-python-support-in-visual-studio.md). Es posible que algunas características no estén disponibles en versiones anteriores, como se explica en la [Matriz de características](../overview-of-python-tools-for-visual-studio.md#features-matrix).
+::: moniker range=">=vs-2019"
+- Visual Studio 2019 con la carga de trabajo de Python instalada. Para obtener instrucciones, consulte [Trabajar con Python en Visual Studio, paso 0](../tutorial-working-with-python-in-visual-studio-step-00-installation.md).
+::: moniker-end
+
+También puede usar una versión anterior de Visual Studio con las Herramientas de Python para Visual Studio instaladas. Consulte [Instalación de la compatibilidad con Python en Visual Studio](../installing-python-support-in-visual-studio.md).

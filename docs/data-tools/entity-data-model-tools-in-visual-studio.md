@@ -5,16 +5,15 @@ ms.topic: conceptual
 ms.assetid: 1b06b573-84aa-4458-b3f5-e238df47bf45
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 556f82d99fd6ea811f4198dc7abffb3ab32d47fd
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d6f14dbe79e9ba0f2a8642c61a0682b25aa703f0
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821262"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55945838"
 ---
 # <a name="entity-framework-tools-in-visual-studio"></a>Herramientas de Entity Framework en Visual Studio
 

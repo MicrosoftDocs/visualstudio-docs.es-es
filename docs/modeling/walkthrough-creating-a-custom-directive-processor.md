@@ -7,21 +7,20 @@ helpviewer_keywords:
 - walkthroughs [text templates], directive processor
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 44eb71a4bbb209453ee7deef6adf3b10c561e8af
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 661d8670f857240fdd4ed7714ca389c851d83601
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53951831"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649113"
 ---
-# <a name="walkthrough-create-a-custom-directive-processor"></a>Tutorial: Crear un procesador de directivas personalizado
+# <a name="walkthrough-create-a-custom-directive-processor"></a>Tutorial: Creación de un procesador de directivas personalizado
 
 *Procesadores de directivas* funcionan agregando código a la *clase de transformación generada*. Si se llama a un *directiva* desde un *plantilla de texto*, el resto del código que se escribe en la plantilla de texto puede basarse en la funcionalidad que proporciona la directiva.
 
@@ -35,7 +34,7 @@ Las tareas que se ilustran en este tutorial son las siguientes:
 
 - Probar el procesador de directivas
 
-## <a name="create-a-custom-directive-processor"></a>Crear un procesador de directivas personalizado
+## <a name="create-a-custom-directive-processor"></a>Creación de un procesador de directivas personalizado
 
 En este tutorial, creará un procesador de directivas personalizado. Agregará una directiva personalizada que lea un archivo XML, le almacene en una variable <xref:System.Xml.XmlDocument> y lo exponga a través de una propiedad. En la sección "Probar el procesador de directivas", utilizará esta propiedad en una plantilla de texto para tener acceso al archivo XML.
 
@@ -332,7 +331,7 @@ End Property
             {
                 XmlDocument d = new XmlDocument();
 
-                using (XmlTextReader reader = new XmlTextReader(fileName))
+                using (XmlReader reader = XmlReader.Create(fileName))
                 {
                     try
                     {
@@ -582,7 +581,7 @@ End Property
 
                 Dim d As XmlDocument = New XmlDocument()
 
-                Using reader As XmlTextReader = New XmlTextReader(fileName)
+                Using reader As XmlReader = XmlReader.Create(fileName)
 
                     Try
                         d.Load(reader)
@@ -655,8 +654,7 @@ En esta sección, agregará una clave para el procesador de directivas personali
 
      La clave del Registro debe tener los siguientes valores:
 
-
-   | nombre | Tipo | Datos |
+   | Name | Tipo | Datos |
    |-|-|-|
    | (Predeterminado) | REG_SZ | (valor no establecido) |
    | Clase | REG_SZ | CustomDP.CustomDirectiveProcessor |
@@ -664,13 +662,11 @@ En esta sección, agregará una clave para el procesador de directivas personali
 
      Si ha colocado el ensamblado en la GAC, los valores deberían ser similares a los siguientes:
 
-
-   | nombre | Tipo | Datos |
+   | Name | Tipo | Datos |
    |-|-|-|
    | (Predeterminado) | REG_SZ | (valor no establecido) |
    | Clase | REG_SZ | CustomDP.CustomDirectiveProcessor |
    | Ensamblado | REG_SZ | CustomDP.dll |
-
 
 6. Reinicie Visual Studio.
 

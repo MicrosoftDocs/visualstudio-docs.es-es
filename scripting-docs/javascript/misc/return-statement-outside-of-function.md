@@ -1,14 +1,9 @@
 ---
 title: "'return' instrucción fuera de función | Microsoft Docs"
-ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-client-threshold
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- javascript
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-windows
+ms.technology: vs-javascript
+ms.topic: reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT1018
 dev_langs:
@@ -16,16 +11,15 @@ dev_langs:
 - TypeScript
 - DHTML
 ms.assetid: 03568f9f-5f4f-4a10-a738-9a73f3832b9e
-caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 82ba1488692f8e8b59063b8f9a52b0682d27e7f8
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 01ef96385d5fe3dccf14a7491e67983d39913280
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54349457"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100396"
 ---
 # <a name="return-statement-outside-of-function"></a>'return' instrucción fuera de función
 Ha utilizado un `return` instrucción en el ámbito global de su código. El `return` instrucción solo debe aparecer dentro del cuerpo de una función.  
@@ -45,7 +39,7 @@ return [ expression ];
   
 ### <a name="to-correct-this-error"></a>Para corregir este error  
   
--   Quitar el `return` instrucción del cuerpo principal del código (el ámbito global).  
+- Quitar el `return` instrucción del cuerpo principal del código (el ámbito global).  
   
 ## <a name="see-also"></a>Vea también  
  [Return (instrucción)](../../javascript/reference/return-statement-javascript.md)   

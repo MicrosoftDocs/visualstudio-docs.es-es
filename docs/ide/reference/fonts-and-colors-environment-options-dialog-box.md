@@ -1,7 +1,6 @@
 ---
 title: Fuentes y colores, Entorno, Opciones (Cuadro de diálogo)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.FontsAndColors
@@ -23,19 +22,19 @@ helpviewer_keywords:
 ms.assetid: c767d302-51ed-47a8-a527-c07bce2aa485
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55f402eaaa1ee11feb115e38ae5e7759bbbb93f2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b48c86c74b724dc6df5d5935f1340f6de0fc9185
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53966017"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647471"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Fuentes y colores, Entorno, Opciones (Cuadro de diálogo)
 
-La página **Fuentes y colores** del cuadro de diálogo **Opciones** le permite establecer una combinación de colores y una fuente personalizadas para varios elementos de la interfaz de usuario del entorno de desarrollo integrado (IDE). Puede acceder a este cuadro de diálogo haciendo clic en **Herramientas / Opciones**, y,después, seleccione **Entorno / Fuentes y colores**. Si esta página no aparece en la lista, en el cuadro de diálogo **Opciones**, seleccione **Mostrar todas las configuraciones**.
+La página **Fuentes y colores** del cuadro de diálogo **Opciones** le permite establecer una combinación de colores y una fuente personalizadas para varios elementos de la interfaz de usuario del entorno de desarrollo integrado (IDE). Para acceder a este cuadro de diálogo, haga clic en **Herramientas** > **Opciones** y seleccione **Entorno** > **Fuentes y colores**.
 
 Los cambios de combinaciones de colores no surten efecto durante la sesión en la que se realizan. Puede evaluar los cambios de color abriendo otra instancia de Visual Studio y creando las condiciones en las que espera aplicar los cambios.
 
@@ -64,7 +63,13 @@ Enumera todos los elementos de la interfaz de usuario para los que puede cambiar
 
 -   **Fuente del entorno**
 
-     Cambia el estilo y el tamaño de la fuente de todos los elementos de la interfaz de usuario del IDE que aún no tienen una opción independiente en **Mostrar valores para.** Por ejemplo, esta opción se aplica a la **Página de inicio** pero no afectaría a la ventana de **salida**.
+     Cambia el estilo y el tamaño de la fuente de todos los elementos de la interfaz de usuario del IDE que aún no tienen una opción independiente en **Mostrar valores para**.
+
+     ::: moniker range="vs-2017"
+
+     Por ejemplo, esta opción se aplica a la **Página de inicio** pero no afecta a la ventana de **salida**.
+
+     ::: moniker-end
 
 -   **[Todas las ventanas de herramientas de texto]**
 
@@ -213,7 +218,7 @@ Los elementos pueden heredar el color de primer plano de otros elementos para mo
 
 **Predetermiado**
 
-Color que aparece para el elemento la primera vez que se inicia Visual Studio. Al hacer clic en el botón **Usar valores predeterminados** restablece este color.
+Color que aparece para el elemento la primera vez que se abre Visual Studio. Al hacer clic en el botón **Usar valores predeterminados** restablece este color.
 
 **Custom**
 
@@ -232,7 +237,7 @@ Los elementos pueden heredar el color de fondo de otros elementos para mostrar c
 
 **Predetermiado**
 
-Color que aparece para el elemento la primera vez que se inicia Visual Studio. Al hacer clic en el botón **Usar valores predeterminados** restablece este color.
+Color que aparece para el elemento la primera vez que se abre Visual Studio. Al hacer clic en el botón **Usar valores predeterminados** restablece este color.
 
 **Custom**
 

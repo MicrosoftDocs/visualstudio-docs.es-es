@@ -1,26 +1,21 @@
 ---
 title: Introducción a la plantilla de proyecto VSIX | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio SDK, VSIX project template
 ms.assetid: 89fac33e-9380-4723-9b45-048a6e16f0ed
 caps.latest.revision: 26
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 1f7230bce49342ad8e31baeb3f46c72f1c45d776
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: cc3f461c9e7dbdea1fd8481594292a0a247d2173
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51787736"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60038671"
 ---
 # <a name="getting-started-with-the-vsix-project-template"></a>Introducción a la plantilla de proyecto de VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,39 +29,39 @@ Puede usar la plantilla de proyecto de VSIX para crear una extensión o para una
 ## <a name="deploying-a-custom-project-template-using-the-vsix-project-template"></a>Implementar una plantilla de proyecto personalizado mediante la plantilla de proyecto de VSIX  
  Los pasos siguientes muestran cómo usar el proyecto VSIX para empaquetar una plantilla de proyecto que se puede compartir con otros desarrolladores o cargar en la Galería de Visual Studio.  
   
-1.  Crear una plantilla de proyecto.  
+1. Crear una plantilla de proyecto.  
   
-    1.  Abra el proyecto desde el que se va a crear una plantilla. Este proyecto puede ser de cualquier tipo de proyecto.  
+    1. Abra el proyecto desde el que se va a crear una plantilla. Este proyecto puede ser de cualquier tipo de proyecto.  
   
-    2.  En el menú **Archivo**, haga clic en **Exportar plantilla**. Complete los pasos del asistente.  
+    2. En el menú **Archivo**, haga clic en **Exportar plantilla**. Complete los pasos del asistente.  
   
          Se crea un archivo .zip en %USERPROFILE%\My Documents\Visual Studio  *\<versión >* \My Exported Templates\\.  
   
-2.  Crear un proyecto VSIX vacío.  
+2. Crear un proyecto VSIX vacío.  
   
      En el menú **Archivo** , haga clic en **Nuevo** y, a continuación, haga clic en **Proyecto**. Seleccione **Visual Basic** o **Visual C#**. En el nodo seleccionado, seleccione **extensibilidad**y, a continuación, seleccione **proyecto VSIX**.  
   
-3.  Agregue el archivo .zip al proyecto. Establezca su **Copy to Output Directory** propiedad `Copy Always`.  
+3. Agregue el archivo .zip al proyecto. Establezca su **Copy to Output Directory** propiedad `Copy Always`.  
   
-4.  En el **el Explorador de soluciones**, haga doble clic en el `source.extension.vsixmanifest` archivo para abrirlo en el **el Diseñador de manifiestos VSIX**y, a continuación, realice los cambios siguientes:  
+4. En el **el Explorador de soluciones**, haga doble clic en el `source.extension.vsixmanifest` archivo para abrirlo en el **el Diseñador de manifiestos VSIX**y, a continuación, realice los cambios siguientes:  
   
-    -   Establecer el **Product Name** campo **mi plantilla de proyecto**.  
+    - Establecer el **Product Name** campo **mi plantilla de proyecto**.  
   
-    -   Establecer el **Id. de producto** campo **MyProjectTemplate - 1**.  
+    - Establecer el **Id. de producto** campo **MyProjectTemplate - 1**.  
   
-    -   Establecer el **autor** campo **Fabrikam**.  
+    - Establecer el **autor** campo **Fabrikam**.  
   
-    -   Establecer el **descripción** campo **mi plantilla de proyecto**.  
+    - Establecer el **descripción** campo **mi plantilla de proyecto**.  
   
-    -   En el **activos** sección, agregue un **Microsoft.VisualStudio.ProjectTemplate** escriba y establezca su ruta de acceso en el nombre del archivo zip.  
+    - En el **activos** sección, agregue un **Microsoft.VisualStudio.ProjectTemplate** escriba y establezca su ruta de acceso en el nombre del archivo zip.  
   
-5.  Guarde y cierre el archivo source.extension.vsixmanifest.  
+5. Guarde y cierre el archivo source.extension.vsixmanifest.  
   
-6.  Compile el proyecto.  
+6. Compile el proyecto.  
   
-7.  En el directorio de resultados, haga doble clic en el archivo. vsix.  
+7. En el directorio de resultados, haga doble clic en el archivo. vsix.  
   
-8.  Un **instalador de VSIX** aparece el cuadro de mensaje. Siga las instrucciones para instalar la extensión.  
+8. Un **instalador de VSIX** aparece el cuadro de mensaje. Siga las instrucciones para instalar la extensión.  
   
 9. Cierre Visual Studio y, a continuación, vuelva a abrirlo.  
   
@@ -76,19 +71,18 @@ Puede usar la plantilla de proyecto de VSIX para crear una extensión o para una
   
 #### <a name="to-specify-the-location-of-the-template-in-the-new-project-dialog-box"></a>Para especificar la ubicación de la plantilla en el cuadro de diálogo nuevo proyecto  
   
-1.  Las carpetas de plantillas se encuentran en el *ruta de instalación de Visual Studio*\Common7\IDE\ProjectTemplates y *ruta de instalación de Visual Studio*\Common7\IDE\ItemTemplates directorios. Los nombres de las secciones de nivel superior en el cuadro de diálogo nuevo proyecto no coincidan con los nombres de las carpetas de plantilla. Si difieren, use el nombre de la carpeta de plantillas.  
+1. Las carpetas de plantillas se encuentran en el *ruta de instalación de Visual Studio*\Common7\IDE\ProjectTemplates y *ruta de instalación de Visual Studio*\Common7\IDE\ItemTemplates directorios. Los nombres de las secciones de nivel superior en el cuadro de diálogo nuevo proyecto no coincidan con los nombres de las carpetas de plantilla. Si difieren, use el nombre de la carpeta de plantillas.  
   
      Cambie la extensión .vsix del archivo a .zip y, a continuación, abra el archivo.  
   
-2.  Cree una nueva carpeta con el mismo nombre que la sección del cuadro de diálogo nuevo proyecto de en que la plantilla debe aparecer.  
+2. Cree una nueva carpeta con el mismo nombre que la sección del cuadro de diálogo nuevo proyecto de en que la plantilla debe aparecer.  
   
-3.  Si la plantilla que se va a aparecer en una subsección, cree una subcarpeta del mismo nombre.  
+3. Si la plantilla que se va a aparecer en una subsección, cree una subcarpeta del mismo nombre.  
   
-4.  Mueva el archivo .zip de plantilla en la nueva carpeta.  
+4. Mueva el archivo .zip de plantilla en la nueva carpeta.  
   
-5.  Cambie la extensión .zip para VSIX.  
+5. Cambie la extensión .zip para VSIX.  
   
-6.  Abra el manifiesto VSIX.  
+6. Abra el manifiesto VSIX.  
   
-7.  En el manifiesto de VSIX, actualice el **activos** ruta de acceso de la plantilla de forma que apunte a la raíz del árbol del directorio que contiene el archivo de plantilla. Por ejemplo, si la plantilla está en \CSharp\Windows, la referencia debe apuntar a \CSharp.
-
+7. En el manifiesto de VSIX, actualice el **activos** ruta de acceso de la plantilla de forma que apunte a la raíz del árbol del directorio que contiene el archivo de plantilla. Por ejemplo, si la plantilla está en \CSharp\Windows, la referencia debe apuntar a \CSharp.

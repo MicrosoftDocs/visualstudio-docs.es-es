@@ -1,12 +1,9 @@
 ---
 title: Definir e instalar una extensión de modelado | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML - extending
 - UML model, extending
@@ -14,13 +11,13 @@ ms.assetid: 82a58dc5-c7cf-4521-a6da-7ff09cd0de9d
 caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6f7895916cc4ee877c53b056f703d8e46b64b409
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: cf370b4ca0e0a4d14c482c6ece46b79d2d224d34
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51805572"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049742"
 ---
 # <a name="define-and-install-a-modeling-extension"></a>Definir e instalar una extensión de modelado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,42 +42,42 @@ En Visual Studio, puede definir extensiones para diagramas de modelado. De este 
   
 #### <a name="to-create-a-class-library-project-for-menu-commands-gesture-handlers-or-validation"></a>Para crear un proyecto de biblioteca de clases para los comandos de menú, los controladores de gestos o la validación  
   
-1.  En el menú **Archivo** , elija **Nuevo**, **Proyecto**.  
+1. En el menú **Archivo** , elija **Nuevo**, **Proyecto**.  
   
-2.  En **Plantillas instaladas**, seleccione **Visual C#** o **Visual Basic**y, a continuación, elija **Biblioteca de clases**.  
+2. En **Plantillas instaladas**, seleccione **Visual C#** o **Visual Basic**y, a continuación, elija **Biblioteca de clases**.  
   
 #### <a name="to-create-a-vsix-project"></a>Para crear un proyecto de VSIX  
   
-1.  Si está creando un componente con código, es más fácil crear primero el proyecto de biblioteca de clases. Va a agregar su código a ese proyecto.  
+1. Si está creando un componente con código, es más fácil crear primero el proyecto de biblioteca de clases. Va a agregar su código a ese proyecto.  
   
-2.  Crear un proyecto de VSIX.  
+2. Crear un proyecto de VSIX.  
   
-    1.  En el **Explorador de soluciones**, en el menú contextual de la solución, elija **Agregar**, **Nuevo proyecto**.  
+    1. En el **Explorador de soluciones**, en el menú contextual de la solución, elija **Agregar**, **Nuevo proyecto**.  
   
-    2.  En **Plantillas instaladas**, expanda **Visual C#** o **Visual Basic**y, a continuación, seleccione **Extensibilidad**. En la columna central, elija **Proyecto VSIX**.  
+    2. En **Plantillas instaladas**, expanda **Visual C#** o **Visual Basic**y, a continuación, seleccione **Extensibilidad**. En la columna central, elija **Proyecto VSIX**.  
   
-3.  Establezca el proyecto VSIX como proyecto de inicio de la solución.  
+3. Establezca el proyecto VSIX como proyecto de inicio de la solución.  
   
-    -   En el Explorador de soluciones, en el menú contextual del proyecto VSIX, elija **Establecer como proyecto de inicio**.  
+    - En el Explorador de soluciones, en el menú contextual del proyecto VSIX, elija **Establecer como proyecto de inicio**.  
   
-4.  Abra **source.extension.vsixmanifest**. El archivo se abre en el editor de manifiestos.  
+4. Abra **source.extension.vsixmanifest**. El archivo se abre en el editor de manifiestos.  
   
-5.  En la pestaña **Metadatos** , establezca el nombre y los campos descriptivos de VSIX.  
+5. En la pestaña **Metadatos** , establezca el nombre y los campos descriptivos de VSIX.  
   
-6.  En la pestaña **Destinos de instalación** , elija **Nuevo** y establezca las versiones de Visual Studio como destinos.  
+6. En la pestaña **Destinos de instalación** , elija **Nuevo** y establezca las versiones de Visual Studio como destinos.  
   
-7.  En la pestaña **Activos** , agregue los componentes a la extensión de Visual Studio.  
+7. En la pestaña **Activos** , agregue los componentes a la extensión de Visual Studio.  
   
-    1.  Elija **Nuevo**.  
+    1. Elija **Nuevo**.  
   
-    2.  Para un componente con código, establezca estos campos en el cuadro de diálogo **Agregar nuevo activo** :  
+    2. Para un componente con código, establezca estos campos en el cuadro de diálogo **Agregar nuevo activo** :  
   
         |||  
         |-|-|  
         |**Tipo** =|**Microsoft.VisualStudio.MefComponent**|  
         |**Source** =|**Un proyecto de la solución actual**|  
-        |**proyecto** =|*El proyecto de biblioteca de clases*|  
-        |**Incrustar en esta carpeta** =|*(vacío)*|  
+        |**Project** =|*El proyecto de biblioteca de clases*|  
+        |**Incrustar en esta carpeta** =|*(empty)*|  
   
          Para otros tipos de componentes, vea los vínculos de la sección siguiente.  
   
@@ -100,36 +97,36 @@ En Visual Studio, puede definir extensiones para diagramas de modelado. De este 
   
 #### <a name="to-run-an-extension-during-its-development"></a>Para ejecutar una extensión durante su desarrollo  
   
-1.  En el menú [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] **Depurar** , elija **Start Depurarging**.  
+1. En el menú [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] **Depurar** , elija **Start Depurarging**.  
   
      El proyecto se compila y se inicia una nueva instancia de [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] en modo experimental.  
   
-    -   Como alternativa, puede elegir **Iniciar sin depurar**. Esto reduce el tiempo que se tarda en iniciar el programa.  
+    - Como alternativa, puede elegir **Iniciar sin depurar**. Esto reduce el tiempo que se tarda en iniciar el programa.  
   
-2.  Cree o abra un proyecto de modelado en la instancia experimental de Visual Studio y cree o abra un diagrama.  
+2. Cree o abra un proyecto de modelado en la instancia experimental de Visual Studio y cree o abra un diagrama.  
   
      La extensión se cargará y se ejecutará.  
   
-3.  Si usó **Iniciar sin depurar** pero desea utilizar el depurador, vuelva a la instancia principal de Visual Studio. En el menú **Depurar** , haga clic en **Asociar al proceso**. En el cuadro de diálogo, seleccione la instancia experimental de Visual Studio, que tiene el nombre de programa **devenv**.  
+3. Si usó **Iniciar sin depurar** pero desea utilizar el depurador, vuelva a la instancia principal de Visual Studio. En el menú **Depurar** , haga clic en **Asociar al proceso**. En el cuadro de diálogo, seleccione la instancia experimental de Visual Studio, que tiene el nombre de programa **devenv**.  
   
-##  <a name="Installing"></a> Instalar y desinstalar una extensión  
+## <a name="Installing"></a> Instalar y desinstalar una extensión  
  Realice los pasos siguientes para ejecutar la extensión en la instancia principal de Visual Studio en su propio equipo o en otros equipos.  
   
-1.  En el equipo, busque el archivo **.vsix** que el proyecto de extensión compiló.  
+1. En el equipo, busque el archivo **.vsix** que el proyecto de extensión compiló.  
   
-    1.  En el **Explorador de soluciones**, en el menú contextual del proyecto, elija **Abrir carpeta en el Explorador de Windows**.  
+    1. En el **Explorador de soluciones**, en el menú contextual del proyecto, elija **Abrir carpeta en el Explorador de Windows**.  
   
-    2.  Busque el archivo **bin\\\*\\**_convertirá_**.vsix**  
+    2. Busque el archivo **bin\\\*\\**_convertirá_**.vsix**  
   
-2.  Copie el archivo **.vsix** en el equipo de destino en el que desea instalar la extensión. Puede tratarse de su propio equipo o de otro.  
+2. Copie el archivo **.vsix** en el equipo de destino en el que desea instalar la extensión. Puede tratarse de su propio equipo o de otro.  
   
-    -   El equipo de destino debe tener una de las ediciones de Visual Studio que se especificó en la pestaña **Destino de la instalación** de **source.extension.vsixmanifest**.  
+    - El equipo de destino debe tener una de las ediciones de Visual Studio que se especificó en la pestaña **Destino de la instalación** de **source.extension.vsixmanifest**.  
   
-3.  En el equipo de destino, abra el archivo **.vsix** , por ejemplo, haciendo doble clic en él.  
+3. En el equipo de destino, abra el archivo **.vsix** , por ejemplo, haciendo doble clic en él.  
   
      El**Instalador de extensiones de Visual Studio** se abre e instala la extensión.  
   
-4.  Inicie o reinicie Visual Studio.  
+4. Inicie o reinicie Visual Studio.  
   
 #### <a name="to-uninstall-an-extension"></a>Para desinstalar una extensión  
   
@@ -148,6 +145,3 @@ En Visual Studio, puede definir extensiones para diagramas de modelado. De este 
  [Definir un personalizado en un elemento de cuadro de herramientas de modelado](../modeling/define-a-custom-modeling-toolbox-item.md)   
  [Definir restricciones de validación para modelos UML](../modeling/define-validation-constraints-for-uml-models.md)   
  [Definir un comando de menú en un diagrama de modelado](../modeling/define-a-menu-command-on-a-modeling-diagram.md)
-
-
-

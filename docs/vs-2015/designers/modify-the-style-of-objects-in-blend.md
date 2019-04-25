@@ -1,25 +1,20 @@
 ---
 title: Modificar el estilo de objetos en Blend | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 31192d2c-5b84-41bc-94c0-898638c170bd
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 70bf451a828e3884a6004f6304b91351e866ee52
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: c1f2f4dc5eb4c285b99a72a58836e5f81b3ef30f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49843654"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088462"
 ---
 # <a name="modify-the-style-of-objects-in-blend"></a>Modificar el estilo de objetos en Blend
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,15 +25,15 @@ La manera más fácil de personalizar un objeto es establecer propiedades en el 
   
  **En este tema**:  
   
--   [Pinceles: modificar la apariencia de un objeto](#Brushes)  
+- [Pinceles: Modificar la apariencia de un objeto](#Brushes)  
   
--   [Estilos y plantillas: crear una apariencia coherente en todos los controles](#Styles)  
+- [Estilos y plantillas: Crear una apariencia coherente en todos los controles](#Styles)  
   
--   [Estados visuales: Cambiar la apariencia de un control según su estado](#Visual)  
+- [Estados visuales: Cambiar la apariencia de un control según su estado](#Visual)  
   
--   [Recursos: crear colores, estilos y plantillas y volver a usarlos más adelante](#Resources)  
+- [Recursos: Crear colores, estilos y plantillas y volver a usarlos más adelante](#Resources)  
   
-##  <a name="Brushes"></a>Pinceles: modificar la apariencia de un objeto  
+## <a name="Brushes"></a> Pinceles: Modificar la apariencia de un objeto  
  Aplique un pincel a un objeto si desea cambiar su apariencia.  
   
  **Vea un vídeo corto:** ![Configurar las características instaladas](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Editor de pinceles](http://www.popscreen.com/v/6A4mO/Microsoft-Expression-Blend-The-Brushes-Editor).  
@@ -60,9 +55,9 @@ La manera más fácil de personalizar un objeto es establecer propiedades en el 
   
  ![](../designers/media/fb6c90e0-153c-48fe-b563-e601beac6227.png "fb6c90e0-153c-48fe-b563-e601beac6227") ![](../designers/media/e261b99f-7d8f-4d91-bc84-19c7beccc255.png "e261b99f-7d8f-4d91-bc84-19c7beccc255")  
   
- **Vea un vídeo corto:** ![Configurar las características instaladas](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Pinceles de diseño en mosaico](http://www.popscreen.com/v/6A4iM/Microsoft-Expression-Blend-Tile-Brushes).  
+ **Vea un vídeo corto:** ![Configurar las características instaladas](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [pinceles en mosaico](http://www.popscreen.com/v/6A4iM/Microsoft-Expression-Blend-Tile-Brushes).  
   
-##  <a name="Styles"></a> Estilos y plantillas: crear una apariencia coherente en todos los controles  
+## <a name="Styles"></a> Estilos y plantillas: Crear una apariencia coherente en todos los controles  
  Puede diseñar la apariencia y el comportamiento de un control una vez y aplicar ese diseño a otros controles para no tener que hacerlo de forma individual.  
   
  **¿Debe usar un estilo?**: Si quiere establecer las propiedades predeterminadas (como el color de un botón), use un *estilo*. Puede modificar un control incluso después de aplicarle un estilo.  
@@ -84,7 +79,7 @@ La manera más fácil de personalizar un objeto es establecer propiedades en el 
   
 - Seleccione **Crear vacío** para empezar desde cero.  
   
-  El **editar actual** opción aparece sólo si edita un estilo o plantilla que ya ha creado. pero no aparecerá para un control que sigue utilizando una plantilla predeterminada del sistema.  
+  La opción **Editar actual** solo aparece si edita un estilo o plantilla que ya ha creado, pero no aparecerá para un control que sigue utilizando una plantilla predeterminada del sistema.  
   
   En el cuadro de diálogo **Crear recurso de estilo**, puede ponerle un nombre al estilo o a la plantilla para poder usarlo más adelante, o puede aplicar el estilo o la plantilla a todos los controles de ese tipo.  
   
@@ -97,34 +92,29 @@ La manera más fácil de personalizar un objeto es establecer propiedades en el 
 >   
 >  ![](../designers/media/4a5612e1-7a28-4587-b870-0fe7112ec2ad.png "4a5612e1-7a28-4587-b870-0fe7112ec2ad")  
   
- **Vea un vídeo corto:** ![Configurar las características instaladas](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Crear un estilo](http://www.microsoft.com/showcase/details.aspx?uuid=9b8e86e2-8e90-4d61-81af-fa5b5afb3e95).  
-  
- **Vea un vídeo corto:** ![Configurar las características instaladas](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Crear una plantilla de control en Expression Blend](http://msdn.microsoft.com/expression/cc263912.aspx).  
+ **Vea un vídeo corto:** ![Configurar las características instaladas](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [crear un estilo](https://www.youtube.com/watch?v=W8YdXDPeKdc).  
   
 ### <a name="apply-a-style-or-template-to-a-control"></a>Aplicar un estilo o una plantilla a un control  
- Haga clic con el botón derecho en el panel [Objetos y escala de tiempo](http://msdn.microsoft.com/en-us/135a5a5e-ec6d-4f38-8827-60e284cd5f57), pulse **Editar plantilla** y, después, **Aplicar recurso**.  
+ Haga clic con el botón derecho en el panel [Objetos y escala de tiempo](http://msdn.microsoft.com/135a5a5e-ec6d-4f38-8827-60e284cd5f57), pulse **Editar plantilla** y, después, **Aplicar recurso**.  
   
  ![](../designers/media/dc12debc-7711-47d9-84ce-10322a384397.png "dc12debc-7711-47d9-84ce-10322a384397")  
   
 ### <a name="restore-the-default-style-or-template-of-a-control"></a>Restaurar el estilo o la plantilla predeterminados de un control  
- Seleccione el control y, en el panel [Propiedades](http://msdn.microsoft.com/en-us/135a5a5e-ec6d-4f38-8827-60e284cd5f57), busque la propiedad **Estilo** o **Plantilla**. Después, haga clic en **Opciones avanzadas** ![](../designers/media/12e06962-5d8a-480d-a837-e06b84c545bb.png "12e06962-5d8a-480d-a837-e06b84c545bb") y luego en **Restablecer** en el menú contextual.  
+ Seleccione el control y, en el panel [Propiedades](http://msdn.microsoft.com/135a5a5e-ec6d-4f38-8827-60e284cd5f57), busque la propiedad **Estilo** o **Plantilla**. Después, haga clic en **Opciones avanzadas** ![](../designers/media/12e06962-5d8a-480d-a837-e06b84c545bb.png "12e06962-5d8a-480d-a837-e06b84c545bb") y luego en **Restablecer** en el menú contextual.  
   
-##  <a name="Visual"></a> Estados visuales: Cambiar la apariencia de un control según su estado  
+## <a name="Visual"></a> Estados visuales: Cambiar la apariencia de un control según su estado  
  Los controles pueden tener una apariencia visual distinta según las interacciones del usuario. Por ejemplo, cuando un usuario hace clic en un botón, puede hacer que este se vuelva verde o que se ejecute una animación. El tiempo entre estados visuales se puede alargar o acortar mediante el uso de las transiciones.  
   
  ![](../designers/media/a95c671a-5639-40b9-83db-1e6b214330d5.png "a95c671a-5639-40b9-83db-1e6b214330d5")  
   
- **Vea un vídeo corto:** ![Configurar las características instaladas](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Administrar el estado de los controles de WPF](https://www.youtube.com/watch?v=m0PlkF5i6uw).  
+ **Vea un vídeo corto:** ![Configurar las características instaladas](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [administrar el estado de los controles WPF](https://www.youtube.com/watch?v=m0PlkF5i6uw).  
   
-##  <a name="Resources"></a> Recursos: crear colores, estilos y plantillas y volver a usarlos más adelante  
+## <a name="Resources"></a> Recursos: Crear colores, estilos y plantillas y volver a usarlos más adelante  
  Prácticamente cualquier elemento del proyecto se puede convertir en un recurso. Un recurso es tan solo un objeto que se puede volver a usar en diferentes sitios de la aplicación. Por ejemplo, puede crear un color, convertirlo en un recurso y después usar ese color en varios objetos. Para cambiar el color de todos esos objetos, simplemente cambie el recurso de color.  
   
  ![](../designers/media/89203705-cf66-46e0-b153-52a23cd744f7.png "89203705-cf66-46e0-b153-52a23cd744f7") ![](../designers/media/6bff8b19-3cd5-41a0-bbf9-ff65532d5aae.png "6bff8b19-3cd5-41a0-bbf9-ff65532d5aae")  
   
- **Vea un vídeo corto:** ![Configurar las características instaladas](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Breve información sobre los recursos](http://www.popscreen.com/v/6A4k7/Microsoft-Expression-Blend-Brief-Touch-on-Resources).  
+ **Vea un vídeo corto:** ![Configurar las características instaladas](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [breve pincelada sobre recursos](http://www.popscreen.com/v/6A4k7/Microsoft-Expression-Blend-Brief-Touch-on-Resources).  
   
 ## <a name="see-also"></a>Vea también  
  [Crear una IU con Blend para Visual Studio](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)
-
-
-

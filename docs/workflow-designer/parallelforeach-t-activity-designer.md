@@ -2,21 +2,20 @@
 title: Diseñador de flujo de trabajo - ParallelForEach&lt;T&gt; Diseñador de actividad
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
 f1_keywords:
 - System.Activities.Statements.ParallelForEach`1.UI
 ms.assetid: e93a4843-aef2-4d3e-9a0a-a2d3d1411aa7
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e411f5e72566753d66ded4e445868e5ab245bf9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: be522112dd4cfa16744d0c9e54601ba7a0492704
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53873913"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55912630"
 ---
 # <a name="parallelforeach-activity-designer"></a>Diseñador de actividades ParallelForEach
 

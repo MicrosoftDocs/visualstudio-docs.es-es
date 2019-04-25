@@ -1,7 +1,6 @@
 ---
-title: Procedimiento Personalizar diagramas de clases (Diseñador de clases)
+title: Filtrar Personalizar diagramas de clases (Diseñador de clases)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - class diagrams, customizing
@@ -11,17 +10,17 @@ helpviewer_keywords:
 ms.assetid: e9030aea-c77d-4cc1-b8f6-b6ca469b692d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ac0ff3943d1209b0442c29785408c70b55cef43
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c23e24c9e087ff8ca64f90db1714ca2569bf02c0
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53882937"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55923979"
 ---
-# <a name="how-to-customize-class-diagrams"></a>Procedimiento Personalizar diagramas de clases
+# <a name="how-to-customize-class-diagrams"></a>Filtrar Personalizar diagramas de clases
 
 Es posible cambiar la manera en que se muestra la información en los diagramas de clases. Se puede personalizar el diagrama entero o los tipos individuales en la superficie de diseño.
 

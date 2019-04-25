@@ -1,14 +1,9 @@
 ---
 title: Extraer método (refactorización, C#) | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vs.csharp.refactoring.extractmethod
 dev_langs:
@@ -20,13 +15,13 @@ ms.assetid: eeba11df-a815-4bec-9c21-8a831891b783
 caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
-manager: wpickett
-ms.openlocfilehash: cc05da79676beed5fa698f11843a6b7485280e71
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 5a889250e641e004bdb0d89f6965c43c3d6b8e2a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228065"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041403"
 ---
 # <a name="extract-method-refactoring-c"></a>Extraer método (Refactorización, C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,19 +32,19 @@ ms.locfileid: "49228065"
   
  **Extraer método** tiene las siguientes ventajas:  
   
--   Anima a las prácticas de codificación mejor con énfasis en métodos discretos y reutilizables.  
+- Anima a las prácticas de codificación mejor con énfasis en métodos discretos y reutilizables.  
   
--   Recomienda el código a través de buena organización autodocumentado.  
+- Recomienda el código a través de buena organización autodocumentado.  
   
      Cuando los nombres descriptivos son métodos utilizados y de alto nivel pueden leer como una serie de comentarios.  
   
--   Fomenta la creación de métodos preciso para simplificar la sustitución.  
+- Fomenta la creación de métodos preciso para simplificar la sustitución.  
   
--   Reduce la duplicación de código.  
+- Reduce la duplicación de código.  
   
 ### <a name="to-use-extract-method"></a>Para utilizar Extraer método  
   
-1.  Cree una aplicación de consola denominada `ExtractMethod` y, a continuación, reemplace `Program` por el siguiente código de ejemplo.  
+1. Cree una aplicación de consola denominada `ExtractMethod` y, a continuación, reemplace `Program` por el siguiente código de ejemplo.  
   
     ```csharp  
     class A  
@@ -73,13 +68,13 @@ ms.locfileid: "49228065"
     }  
     ```  
   
-2.  Seleccione el fragmento de código que desea extraer:  
+2. Seleccione el fragmento de código que desea extraer:  
   
     ```csharp  
     double area = PI * radius * radius;  
     ```  
   
-3.  En el **refactorizar** menú, haga clic en **Extraer método**.  
+3. En el **refactorizar** menú, haga clic en **Extraer método**.  
   
      El **Extraer método** aparece el cuadro de diálogo.  
   
@@ -87,11 +82,11 @@ ms.locfileid: "49228065"
   
      También puede secundario seleccionado de código, apunte a **refactorizar**y, a continuación, haga clic en **Extraer método** para mostrar el **Extraer método** cuadro de diálogo.  
   
-4.  Especifique un nombre para el nuevo método, como `CircleArea`, en el **nombre del nuevo método** cuadro.  
+4. Especifique un nombre para el nuevo método, como `CircleArea`, en el **nombre del nuevo método** cuadro.  
   
      Muestra una vista previa de la firma del método nuevo en **vista previa de signatura de método**.  
   
-5.  Haga clic en **Aceptar**.  
+5. Haga clic en **Aceptar**.  
   
 ## <a name="remarks"></a>Comentarios  
  Cuando se usa el **Extraer método** comando, se inserta el nuevo método después del miembro de origen en la misma clase.  

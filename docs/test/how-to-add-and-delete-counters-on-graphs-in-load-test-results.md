@@ -10,16 +10,15 @@ helpviewer_keywords:
 ms.assetid: 81536233-1962-40d9-9511-0b4633814d90
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 079a7390b462dd8d48535f683f391ec2dca4827d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 6b73d0c9f056709bf393fd2e7ab23cf917d48ffc
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53916802"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55936088"
 ---
-# <a name="how-to-add-and-delete-counters-on-graphs-in-load-test-results"></a>Procedimiento para agregar y eliminar contadores de los gráficos de resultados de pruebas de carga
+# <a name="how-to-add-and-delete-counters-on-graphs-in-load-test-results"></a>Filtrar para agregar y eliminar contadores de los gráficos de resultados de pruebas de carga
 
 Puede usar el panel **Contadores** para agregar contadores de rendimiento a un gráfico.
 

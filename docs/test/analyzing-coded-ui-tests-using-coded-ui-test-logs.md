@@ -1,19 +1,18 @@
 ---
 title: Analizar pruebas de IU codificadas usando los registros de pruebas de IU codificadas
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 7a0913159b59e12c4491331a123045074cbea35f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 85be4e713a4cf2581200da7589a1001e6510459d
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53944965"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55948555"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Análisis de pruebas automatizadas de IU mediante los registros de pruebas automatizadas de IU
 

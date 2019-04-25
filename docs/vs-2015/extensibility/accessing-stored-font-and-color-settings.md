@@ -1,14 +1,9 @@
 ---
 title: Obtener acceso a la configuración de Color y fuente almacenado | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - fonts, accessing stored settings
 - font and color control [Visual Studio SDK], persistence
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: beba7174-e787-45c2-b6ff-a60f67ad4998
 caps.latest.revision: 27
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: ee5ed57639127bd6c30d2e7e1373a56848eca504
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6ff962a618ba0001441db748facac8af444cd255
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51772825"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078101"
 ---
 # <a name="accessing-stored-font-and-color-settings"></a>Obtener acceso a la configuración de Color y fuente almacenado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,21 +29,21 @@ El [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] el entorno de desarrollo integra
   
  Por lo tanto, para iniciar la persistencia, un VSPackage debe:  
   
--   Obtener un <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interfaz mediante una llamada a `QueryService` con el proveedor de servicios global.  
+- Obtener un <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interfaz mediante una llamada a `QueryService` con el proveedor de servicios global.  
   
      `QueryService` debe llamarse mediante el uso de un argumento de Id. de servicio `SID_SVsFontAndColorStorage` y un argumento de Id. de interfaz `IID_IVsFontAndColorStorage`.  
   
--   Use el <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.OpenCategory%2A> método para abrir una categoría que se deben conservar mediante el uso GUID de la categoría y un indicador de modo como argumentos.  
+- Use el <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.OpenCategory%2A> método para abrir una categoría que se deben conservar mediante el uso GUID de la categoría y un indicador de modo como argumentos.  
   
      El modo, especificado por el `fFlags` argumento, se construye a partir de valores en el <xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS> enumeración. Controles de este modo:  
   
-    -   La configuración que se puede acceder a través de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interfaz.  
+    - La configuración que se puede acceder a través de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interfaz.  
   
-    -   Todas las configuraciones o solo aquellos que los usuarios modificar y que se pueden recuperar a través de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interfaz.  
+    - Todas las configuraciones o solo aquellos que los usuarios modificar y que se pueden recuperar a través de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interfaz.  
   
-    -   La manera de propagar los cambios a la configuración de usuario.  
+    - La manera de propagar los cambios a la configuración de usuario.  
   
-    -   El formato de valores de color que se usan.  
+    - El formato de valores de color que se usan.  
   
 ## <a name="to-use-state-persistence-of-fonts-and-colors"></a>Persistencia de estado de uso de fuentes y colores  
  Colores y fuentes de persistencia implica:  
@@ -87,4 +82,3 @@ El [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] el entorno de desarrollo integra
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>   
  <xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS>   
  [Implementación de categorías y elementos para mostrar personalizados](../extensibility/implementing-custom-categories-and-display-items.md)
-

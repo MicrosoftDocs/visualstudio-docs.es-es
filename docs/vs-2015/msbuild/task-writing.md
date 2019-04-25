@@ -1,14 +1,9 @@
 ---
 title: Escribir tareas | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, writing tasks
 - tasks, creating for MSBuild
@@ -17,18 +12,17 @@ ms.assetid: 3ebc5f87-8f00-46fc-82a1-228f35a6823b
 caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d8cc7968664f201482647861a031a27c850611c2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: fab26a750dab2a1099280b886342731fe8a4612e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49914715"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656497"
 ---
 # <a name="task-writing"></a>Escribir tareas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Las tareas proporcionan el código que se ejecuta durante el proceso de compilación. Las tareas están contenidas en destinos. En [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] se incluye una biblioteca de tareas típicas, y también puede crear sus propias tareas. Para obtener más información sobre la biblioteca de tareas incluida en [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], consulte [Referencia de tareas](../msbuild/msbuild-task-reference.md).  
   
 ## <a name="tasks"></a>Tareas  
@@ -277,6 +271,3 @@ namespace SimpleTask2
 ## <a name="see-also"></a>Vea también  
  [Referencia de tareas](../msbuild/msbuild-task-reference.md)   
  [Referencia de tareas](../msbuild/msbuild-task-reference.md)
-
-
-

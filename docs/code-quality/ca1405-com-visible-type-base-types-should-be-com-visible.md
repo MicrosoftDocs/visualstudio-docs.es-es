@@ -1,7 +1,6 @@
 ---
 title: 'CA1405: Los tipos base de tipos visibles a través de COM deben ser visibles a través de COM'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA1405
@@ -12,18 +11,18 @@ helpviewer_keywords:
 ms.assetid: a762ea2f-5285-4f73-bfb9-9eb10aea4290
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: c0221231956c565eb2ce3792d0c88864b0e13e65
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 65bddd599bb544e000ca1d1269b84e53f51843bb
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53839328"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55918564"
 ---
 # <a name="ca1405-com-visible-type-base-types-should-be-com-visible"></a>CA1405: Los tipos base de tipos visibles a través de COM deben ser visibles a través de COM
 
@@ -32,7 +31,7 @@ ms.locfileid: "53839328"
 |TypeName|ComVisibleTypeBaseTypesShouldBeComVisible|
 |Identificador de comprobación|CA1405|
 |Categoría|Microsoft.Interoperability|
-|Cambio problemático|Depende de la corrección|
+|Cambio problemático|DependsOnFix|
 
 ## <a name="cause"></a>Motivo
  Un tipo visible del modelo de objetos componentes (COM) se deriva de un tipo que no es visible para COM.

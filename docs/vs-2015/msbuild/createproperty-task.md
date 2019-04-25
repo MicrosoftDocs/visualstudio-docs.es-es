@@ -1,14 +1,9 @@
 ---
 title: Tarea CreateProperty | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#CreateProperty
 dev_langs:
@@ -23,18 +18,17 @@ ms.assetid: fbc31a88-62d4-43d2-b739-68ef3fac38f5
 caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3c18288e5088871703605da4915786486e2e864b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: ea16950e47760e89204503413fd98811e781d059
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267662"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649763"
 ---
 # <a name="createproperty-task"></a>CreateProperty (Tarea)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Rellena las propiedades con los valores pasados. Esto permite que los valores se copien de una propiedad o cadena a otra.  
   
 ## <a name="attributes"></a>Atributos  
@@ -78,6 +72,3 @@ Rellena las propiedades con los valores pasados. Esto permite que los valores se
 ## <a name="see-also"></a>Vea también  
  [Referencia de tareas](../msbuild/msbuild-task-reference.md)   
  [Tareas](../msbuild/msbuild-tasks.md)
-
-
-

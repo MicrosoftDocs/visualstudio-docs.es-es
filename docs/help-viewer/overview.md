@@ -1,7 +1,6 @@
 ---
 title: Documentación de la ayuda sin conexión
 ms.date: 11/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - hv_general
@@ -17,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 74e41666-2ce8-4ac0-a0e5-3723d1e322c2
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bc9fd8b8684782f92c27563fb5d19a46d61c554e
-ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
+ms.openlocfilehash: ca207f06640d5ef2df02d966b733d3065c80fce6
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "54406123"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55939010"
 ---
 # <a name="microsoft-help-viewer"></a>Visor de Ayuda de Microsoft
 

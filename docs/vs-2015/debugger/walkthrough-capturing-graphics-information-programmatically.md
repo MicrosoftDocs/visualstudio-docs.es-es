@@ -1,49 +1,44 @@
 ---
-title: 'Tutorial: Capturar información de gráficos mediante programación | Microsoft Docs'
-ms.custom: ''
+title: 'Tutorial: Capturar información de gráficos mediante programación | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: a5adeff9-afaf-4047-b5ce-ef0aefe710eb
 caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: feff1af744bd9f42d2fe8af67a72ec4856a09acc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c1a5e5d8d33fed3c4e6348bcf2598f7093de5c98
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51747676"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093116"
 ---
-# <a name="walkthrough-capturing-graphics-information-programmatically"></a>Tutorial: Capturar información de gráficos mediante programación
+# <a name="walkthrough-capturing-graphics-information-programmatically"></a>Tutorial: Captura de información de gráficos mediante programación
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Puede utilizar el Diagnóstico de gráficos de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para capturar mediante programación información de gráficos desde la aplicación Direct3D.  
   
  La captura mediante programación es útil en escenarios tales como:  
   
--   Al iniciar la captura cuando la aplicación de gráficos no usa la cadena de intercambio (por ejemplo, cuando se representa en una textura).  
+- Al iniciar la captura cuando la aplicación de gráficos no usa la cadena de intercambio (por ejemplo, cuando se representa en una textura).  
   
--   Al iniciar la captura cuando la aplicación no se representa (por ejemplo, cuando usa DirectCompute para hacer cálculos).  
+- Al iniciar la captura cuando la aplicación no se representa (por ejemplo, cuando usa DirectCompute para hacer cálculos).  
   
--   Llame a `CaptureCurrentFrame`cuando un problema de representación sea difícil de anticipar y de capturar en pruebas manuales, pero se puede predecir mediante programación usando información sobre el estado de la aplicación en tiempo de ejecución.  
+- Llame a `CaptureCurrentFrame`cuando un problema de representación sea difícil de anticipar y de capturar en pruebas manuales, pero se puede predecir mediante programación usando información sobre el estado de la aplicación en tiempo de ejecución.  
   
-##  <a name="CaptureDX11_2"></a> Captura mediante programación en Windows 8.1  
+## <a name="CaptureDX11_2"></a> Captura mediante programación en Windows 8.1  
  En esta parte del tutorial se explica la captura mediante programación en aplicaciones que usan la API DirectX 11.2 en Windows 8.1, que emplea el método de captura robusta. Para obtener información sobre cómo utilizar la captura mediante programación en aplicaciones que utilicen versiones anteriores de DirectX en Windows 8.0, vea [Programmatic capture in Windows 8.0 and earlier](#CaptureDX11_1) más adelante en este tutorial.  
   
  Esta sección muestra cómo realizar estas tareas:  
   
--   Preparación de la aplicación para el uso de la captura mediante programación  
+- Preparación de la aplicación para el uso de la captura mediante programación  
   
--   Obtención de la interfaz IDXGraphicsAnalysis  
+- Obtención de la interfaz IDXGraphicsAnalysis  
   
--   Capturar información de gráficos  
+- Capturar información de gráficos  
   
 > [!NOTE]
 >  Las implementaciones previas de la captura mediante programación dependían de Herramientas remotas para [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para ofrecer la funcionalidad de captura, pero Windows 8.1 admite la captura directamente con Direct3D 11.2. El resultado es que ya no debe instalar las Herramientas remotas para la captura mediante programación en Windows 8.1.  
@@ -53,7 +48,7 @@ Puede utilizar el Diagnóstico de gráficos de [!INCLUDE[vsprvs](../includes/vsp
   
 ##### <a name="to-include-programmatic-capture-headers"></a>Cómo incluir encabezados de captura mediante programación  
   
--   Incluya estos encabezados en el archivo fuente donde define la interfaz IDXGraphicsAnalysis:  
+- Incluya estos encabezados en el archivo fuente donde define la interfaz IDXGraphicsAnalysis:  
   
     ```  
     #include <DXGItype.h>  
@@ -94,7 +89,7 @@ Puede utilizar el Diagnóstico de gráficos de [!INCLUDE[vsprvs](../includes/vsp
   
 ##### <a name="to-get-the-idxgraphicsanalysis-interface"></a>Cómo obtener la interfaz IDXGraphicsAnalysis  
   
--   Utilice el código siguiente para enlazar la interfaz IDXGraphicsAnalysis a la interfaz de depuración DXGI.  
+- Utilice el código siguiente para enlazar la interfaz IDXGraphicsAnalysis a la interfaz de depuración DXGI.  
   
     ```  
     IDXGraphicsAnalysis* pGraphicsAnalysis;  
@@ -118,7 +113,7 @@ Puede utilizar el Diagnóstico de gráficos de [!INCLUDE[vsprvs](../includes/vsp
   
 ##### <a name="to-capture-graphics-information"></a>Cómo capturar información de gráficos  
   
--   Para empezar a capturar información de gráficos, utilice `BeginCapture`:  
+- Para empezar a capturar información de gráficos, utilice `BeginCapture`:  
   
     ```  
     ...  
@@ -134,18 +129,18 @@ Puede utilizar el Diagnóstico de gráficos de [!INCLUDE[vsprvs](../includes/vsp
     ...  
     ```  
   
-##  <a name="CaptureDX11_1"></a> Programmatic capture in Windows 8.0 and earlier  
+## <a name="CaptureDX11_1"></a> Programmatic capture in Windows 8.0 and earlier  
  Esta parte del tutorial explica la captura mediante programación en aplicaciones para Windows 8.0 y versiones anteriores que usan la API DirectX 11.1, que emplea el método de captura heredada. Para obtener información sobre cómo utilizar la captura mediante programación en aplicaciones que utilicen DirectX 11.2 en Windows 8.1, vea [Captura mediante programación en Windows 8.1](#CaptureDX11_2) más arriba en este tutorial.  
   
  Esta parte muestra las tareas siguientes:  
   
--   Preparación del equipo para el uso de la captura mediante programación  
+- Preparación del equipo para el uso de la captura mediante programación  
   
--   Preparación de la aplicación para el uso de la captura mediante programación  
+- Preparación de la aplicación para el uso de la captura mediante programación  
   
--   Configuración del nombre y la ubicación del archivo de registro de gráficos  
+- Configuración del nombre y la ubicación del archivo de registro de gráficos  
   
--   Uso de la API `CaptureCurrentFrame`  
+- Uso de la API `CaptureCurrentFrame`  
   
 ### <a name="preparing-your-computer-to-use-programmatic-capture"></a>Preparación del equipo para el uso de la captura mediante programación  
  La API de captura mediante programación utiliza Herramientas remotas para [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para ofrecer la funcionalidad de captura. El equipo en el que se ejecuta la aplicación debe tener instaladas las herramientas remotas, incluso si utiliza la captura mediante programación en el ordenador local. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] no tiene que estar ejecutándose cuando realiza la captura mediante programación en un equipo local.  
@@ -162,9 +157,9 @@ Puede utilizar el Diagnóstico de gráficos de [!INCLUDE[vsprvs](../includes/vsp
   
 ##### <a name="to-prepare-your-app-to-capture-graphics-information-programmatically"></a>Preparación de la aplicación para capturar información de gráficos mediante programación  
   
-1.  Asegúrese de que el encabezado `vsgcapture.h` se incluye en el código fuente de la aplicación. Puede incluirse en una sola ubicación, por ejemplo, en el archivo de código fuente en el que llamará a la API de captura mediante programación, o en un archivo de encabezado precompilado para llamar a la API desde varios archivos de código fuente.  
+1. Asegúrese de que el encabezado `vsgcapture.h` se incluye en el código fuente de la aplicación. Puede incluirse en una sola ubicación, por ejemplo, en el archivo de código fuente en el que llamará a la API de captura mediante programación, o en un archivo de encabezado precompilado para llamar a la API desde varios archivos de código fuente.  
   
-2.  En el código fuente de la aplicación, cuando quiera capturar el resto del fotograma actual, llame a `g_pVsgDbg->CaptureCurrentFrame()`. Este método no toma ningún parámetro y no devuelve ningún valor.  
+2. En el código fuente de la aplicación, cuando quiera capturar el resto del fotograma actual, llame a `g_pVsgDbg->CaptureCurrentFrame()`. Este método no toma ningún parámetro y no devuelve ningún valor.  
   
 ### <a name="configuring-the-name-and-location-of-the-graphics-log-file"></a>Configuración del nombre y la ubicación del archivo de registro de gráficos  
  El registro de gráficos se crea en la ubicación que está definida por las macros `DONT_SAVE_VSGLOG_TO_TEMP` y `VSG_DEFAULT_RUN_FILENAME` .  
@@ -201,12 +196,9 @@ Puede utilizar el Diagnóstico de gráficos de [!INCLUDE[vsprvs](../includes/vsp
 ## <a name="next-steps"></a>Pasos siguientes  
  Este tutorial le ha mostrado cómo capturar información de gráficos mediante programación. El paso siguiente puede ser:  
   
--   Aprender cómo analizar la información de gráficos capturada utilizando la herramienta Diagnóstico de gráficos. Consulte [Introducción](../debugger/overview-of-visual-studio-graphics-diagnostics.md).  
+- Aprender cómo analizar la información de gráficos capturada utilizando la herramienta Diagnóstico de gráficos. Consulte [Introducción](../debugger/overview-of-visual-studio-graphics-diagnostics.md).  
   
 ## <a name="see-also"></a>Vea también  
- [Tutorial: Capturar información de gráficos](../debugger/walkthrough-capturing-graphics-information.md)   
+ [Tutorial: Captura de información de gráficos](../debugger/walkthrough-capturing-graphics-information.md)   
  [Capturing Graphics Information](../debugger/capturing-graphics-information.md)   
  [Herramienta de captura de línea de comandos](../debugger/command-line-capture-tool.md)
-
-
-

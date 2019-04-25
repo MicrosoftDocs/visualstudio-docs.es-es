@@ -1,7 +1,6 @@
 ---
 title: Compilación y generación
 ms.date: 07/14/2017
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c7958821-285f-4e28-9e7a-b5d8b40336a1
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7681ad9cd109dbc8da266721d9d8382d3552eda6
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: e943e43e93d7906c799b5ac5056f062d2522907f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53062598"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55910017"
 ---
 # <a name="compile-and-build-in-visual-studio"></a>Compilar y generar en Visual Studio
 

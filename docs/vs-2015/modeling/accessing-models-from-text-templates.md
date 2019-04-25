@@ -1,25 +1,22 @@
 ---
 title: Acceso a los modelos a partir de plantillas de texto | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, accessing models
 ms.assetid: cf65395a-0ca3-4826-89c7-b1869562685c
 caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: f311018197040c0c908964a49f63ab130121c8c2
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 1052529bb743091398b55535b231597c6609add9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49919863"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110497"
 ---
 # <a name="accessing-models-from-text-templates"></a>Acceso a modelos a partir de plantillas de texto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,15 +57,15 @@ Here is a list of elements in the model:
   
  Tenga en cuenta los siguientes puntos acerca de esta plantilla:  
   
--   La plantilla puede usar las clases de dominio, propiedades y relaciones que ha definido en la definición de DSL.  
+- La plantilla puede usar las clases de dominio, propiedades y relaciones que ha definido en la definición de DSL.  
   
--   La plantilla carga el archivo de modelo que especifique en el `requires` propiedad.  
+- La plantilla carga el archivo de modelo que especifique en el `requires` propiedad.  
   
--   Una propiedad en `this` contiene el elemento raíz. Desde allí, el código puede navegar a otros elementos del modelo. El nombre de la propiedad suele ser el mismo que la clase de dominio raíz de su DSL. En este ejemplo, es `this.ExampleModel`.  
+- Una propiedad en `this` contiene el elemento raíz. Desde allí, el código puede navegar a otros elementos del modelo. El nombre de la propiedad suele ser el mismo que la clase de dominio raíz de su DSL. En este ejemplo, es `this.ExampleModel`.  
   
--   Aunque el lenguaje en el que se escriben los fragmentos de código es C#, puede generar el texto de cualquier tipo. Como alternativa, puede escribir el código [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] mediante la adición de la propiedad `language="VB"` a la `template` directiva.  
+- Aunque el lenguaje en el que se escriben los fragmentos de código es C#, puede generar el texto de cualquier tipo. Como alternativa, puede escribir el código [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] mediante la adición de la propiedad `language="VB"` a la `template` directiva.  
   
--   Para depurar la plantilla, agregue `debug="true"` a la `template` directiva. La plantilla se abrirá en otra instancia de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] si se produce una excepción. Si desea interrumpir el depurador en un momento concreto en el código, inserte la instrucción `System.Diagnostics.Debugger.Break();`  
+- Para depurar la plantilla, agregue `debug="true"` a la `template` directiva. La plantilla se abrirá en otra instancia de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] si se produce una excepción. Si desea interrumpir el depurador en un momento concreto en el código, inserte la instrucción `System.Diagnostics.Debugger.Break();`  
   
      Para obtener más información, consulte [depurar una plantilla de texto T4](../modeling/debugging-a-t4-text-template.md).  
   
@@ -83,9 +80,9 @@ Here is a list of elements in the model:
   
  El procesador de directivas de DSL realiza dos tareas principales:  
   
--   Inserta eficazmente ensamblado e importar directivas en la plantilla que hace referencia a su DSL. Esto le permite usar las clases de dominio en el código de plantilla.  
+- Inserta eficazmente ensamblado e importar directivas en la plantilla que hace referencia a su DSL. Esto le permite usar las clases de dominio en el código de plantilla.  
   
--   Carga el archivo que especifique en el `requires` parámetro y establece una propiedad `this` que hace referencia al elemento raíz del modelo cargado.  
+- Carga el archivo que especifique en el `requires` parámetro y establece una propiedad `this` que hace referencia al elemento raíz del modelo cargado.  
   
 ## <a name="validating-the-model-before-running-the-template"></a>Validar el modelo antes de ejecutar la plantilla  
  Puede hacer que el modelo que se valida antes de ejecuta la plantilla.  
@@ -103,7 +100,7 @@ Here is a list of elements in the model:
   
    Si se encuentra un error, se le notificará en la ventana de errores y el archivo de resultados contendrá un mensaje de error.  
   
-##  <a name="Multiple"></a> Acceso a varios modelos desde una plantilla de texto  
+## <a name="Multiple"></a> Acceso a varios modelos desde una plantilla de texto  
   
 > [!NOTE]
 >  Este método le permite leer varios modelos en la misma plantilla, pero no admite referencias de ModelBus. Para los modelos que intervinculadas por referencias de ModelBus, consulte [utilizando Visual Studio ModelBus en una plantilla de texto](../modeling/using-visual-studio-modelbus-in-a-text-template.md).  
@@ -150,7 +147,7 @@ For Each element As ExampleElement In Me.WorkModel.Elements
   
  Para cargar el archivo, el método más eficaz es mediante [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ModelBus. En un escenario típico, la plantilla de texto usará una directiva específica de DSL para cargar el primer modelo de la forma habitual. Ese modelo contendría las referencias de ModelBus a otro modelo. Puede usar ModelBus para abrir el modelo que se hace referencia y tener acceso a un elemento determinado. Para obtener más información, consulte [utilizando Visual Studio ModelBus en una plantilla de texto](../modeling/using-visual-studio-modelbus-in-a-text-template.md).  
   
- En un escenario menos habitual, es posible que desee abrir un archivo de modelo para el que tiene solo un nombre de archivo, y que podría no ser actual [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] proyecto. En este caso, puede abrir el archivo mediante el uso de la técnica descrita en [Cómo: abrir un modelo desde un archivo de código de programa](../modeling/how-to-open-a-model-from-file-in-program-code.md).  
+ En un escenario menos habitual, es posible que desee abrir un archivo de modelo para el que tiene solo un nombre de archivo, y que podría no ser actual [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] proyecto. En este caso, puede abrir el archivo mediante el uso de la técnica descrita en [Cómo: Abrir un modelo desde un archivo de código de programa](../modeling/how-to-open-a-model-from-file-in-program-code.md).  
   
 ## <a name="generating-multiple-files-from-a-template"></a>Generar varios archivos desde una plantilla  
  Si desea generar varios archivos: por ejemplo, para generar un archivo independiente para cada elemento en un modelo, hay varios enfoques posibles. De forma predeterminada, se genera un único archivo de cada archivo de plantilla.  
@@ -222,6 +219,3 @@ For Each element As ExampleElement In Me.WorkModel.Elements
 #>  
   
 ```
-
-
-

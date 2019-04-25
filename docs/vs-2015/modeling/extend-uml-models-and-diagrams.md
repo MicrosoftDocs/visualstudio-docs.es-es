@@ -1,14 +1,9 @@
 ---
 title: Ampliar modelos y diagramas UML | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-techdebt
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML - extending
 - UML model, extending
@@ -16,13 +11,13 @@ ms.assetid: b5bfa61e-ea59-4c3b-b5af-53475d7d13cd
 caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 74f3c518682997dca57a630c6f084437f7175d80
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 917c88056709cfbeb89ce3f19d9c8da9866feb4e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51794769"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054617"
 ---
 # <a name="extend-uml-models-and-diagrams"></a>Ampliar modelos y diagramas UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,13 +30,13 @@ En este tema se resumen los distintos mecanismos mediante los que se pueden ampl
   
  El equipo de herramientas de Fabrikam realiza una serie de mejoras para ayudar a los equipos de desarrollo. En las secciones siguientes se describen los diferentes tipos de extensiones que se pueden definir. Puede combinar varias de estas técnicas en una extensión de Visual Studio.  
   
- Para obtener más información, vea este vídeo: ![vínculo al vídeo](../data-tools/media/playvideo.gif "PlayVideo")[MSDN How Do I Series: extensibilidad y herramientas UML](http://go.microsoft.com/fwlink/?LinkId=214467).  
+ Para obtener más información, vea este vídeo: ![vínculo al vídeo](../data-tools/media/playvideo.gif "PlayVideo")[MSDN How Do I Series: Extensibilidad y herramientas UML](http://go.microsoft.com/fwlink/?LinkId=214467).  
   
-##  <a name="Requirements"></a> Requisitos  
+## <a name="Requirements"></a> Requisitos  
   
--   [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
+- [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
   
--   [Modelado del SDK para Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=48148).  
+- [Modelado del SDK para Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=48148).  
   
 ## <a name="profiles"></a>Perfiles  
  Los perfiles permiten definir estereotipos y propiedades adicionales en los elementos de UML.  
@@ -81,10 +76,10 @@ En este tema se resumen los distintos mecanismos mediante los que se pueden ampl
   
  Los desarrolladores de Fabrikam crean código que establece automáticamente el color de un elemento en función de su estereotipo. De este modo, resulta sencillo para los usuarios distinguir los distintos roles que juegan los elementos en los modelos.  
   
- Para obtener más información, consulte [Cómo: responder a los cambios en un modelo UML](../misc/how-to-respond-to-changes-in-a-uml-model.md).  
+ Para obtener más información, vea [Cómo: Responder a los cambios en un modelo UML](../misc/how-to-respond-to-changes-in-a-uml-model.md).  
   
 ## <a name="model-bus"></a>Model Bus  
- Model Bus permite obtener acceso a un diagrama o modelo desde otro diagrama o extensión de [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]. Entre otras cosas, esto le permite compartir información entre varios modelos, de modo que varias personas pueden trabajar al mismo tiempo en el modelo combinado.  
+ Model Bus permite obtener acceso a un diagrama o modelo desde otro diagrama o extensión de [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] . Entre otras cosas, esto le permite compartir información entre varios modelos, de modo que varias personas pueden trabajar al mismo tiempo en el modelo combinado.  
   
  Fabrikam usa los elementos de los diagramas de actividades para representar el equipo de control de equipaje. Cada elemento del equipo puede tener una especificación más detallada en otro diagrama, que puede estar en otro modelo. Las restricciones de validación del diagrama de flujo de equipaje pueden recuperar propiedades del equipo pertinentes desde los demás diagramas. Las referencias a los otros diagramas se almacenan en otras propiedades adicionales que se definen en estereotipos.  
   
@@ -118,7 +113,7 @@ En este tema se resumen los distintos mecanismos mediante los que se pueden ampl
   
 |**Categoría**|**Vínculos**|  
 |------------------|---------------|  
-|**Vídeos**|![vínculo a vídeo](../data-tools/media/playvideo.gif "PlayVideo") [MSDN How Do I Series: extensibilidad y herramientas UML](http://go.microsoft.com/fwlink/?LinkId=214467)<br /><br /> ![vínculo a vídeo](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9: UML con Visual Studio](http://go.microsoft.com/fwlink/?LinkId=199957)|  
+|**Vídeos**|![vínculo a vídeo](../data-tools/media/playvideo.gif "PlayVideo") [MSDN How Do I Series: Extensibilidad y herramientas UML](http://go.microsoft.com/fwlink/?LinkId=214467)<br /><br /> ![vínculo a vídeo](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9: UML con Visual Studio](http://go.microsoft.com/fwlink/?LinkId=199957)|  
 |**Foros**|-   [Herramientas de visualización y modelado de Visual Studio](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [SDK de visualización y modelado de Visual Studio (Herramientas DSL)](http://go.microsoft.com/fwlink/?LinkId=184721)|  
 |**Blogs**|[Blog de Visual Studio ALM + Team Foundation Server](http://go.microsoft.com/fwlink/?LinkID=201340)|  
 |**Artículos y diarios técnicos**|[Centro de arquitectura - MSDN](http://go.microsoft.com/fwlink/?LinkId=201343)|  
@@ -126,6 +121,3 @@ En este tema se resumen los distintos mecanismos mediante los que se pueden ampl
 ## <a name="see-also"></a>Vea también  
  [Crear modelos para la aplicación](../modeling/create-models-for-your-app.md)   
  [Referencia de la API para la extensibilidad del modelado UML](../modeling/api-reference-for-uml-modeling-extensibility.md)
-
-
-

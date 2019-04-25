@@ -18,35 +18,32 @@ helpviewer_keywords:
 ms.assetid: 3260b2a7-3239-493d-9271-aedf705c13c7
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d75b045e16ce6435568b5bb6993a74f3123f779
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: b37522fec0438278f8cf063637132b146b3d3748
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54269616"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56609121"
 ---
 # <a name="com-and-activex-debugging"></a>Depurar COM y ActiveX
-Esta sección proporciona sugerencias sobre cómo depurar aplicaciones COM y controles ActiveX.  
-  
-## <a name="in-this-section"></a>En esta sección  
- [Depuración de servidores y contenedores COM](../debugger/com-server-and-container-debugging.md)  
- Se realizan consideraciones especiales sobre depuración de aplicaciones COM. Los aspectos tratados son: depurar un servidor COM y un contenedor mediante dos proyectos dentro de la misma solución, realizar la traza en llamadas que traspasan los límites de un proceso, establecer puntos de interrupción en funciones de devolución de llamada y ejecutar instrucciones paso a paso entre y dentro de contenedores y servidores.  
-  
- [Cómo: Depuración de un control ActiveX](../debugger/how-to-debug-an-activex-control.md)  
- Contiene información sobre depuración de controles ActiveX. Esta información incluye: especificar un contenedor para la sesión de depuración para ver cómo se ejecuta el código del control ActiveX, depurar un control ActiveX enlazado a datos, simular un contenedor particular y ejecutar instrucciones paso a paso en el código del contenedor.  
-  
- [Herramientas de depuración COM](../debugger/com-debugging-tools.md)  
- Muestra los visores y aplicaciones de ejemplo que pueden ser útiles para depurar la aplicación COM.  
-  
-## <a name="related-sections"></a>Secciones relacionadas  
- [Primer vistazo al depurador](../debugger/debugger-feature-tour.md)  
- Proporciona vínculos a secciones más amplias de la documentación relativa a la depuración. Incluye: novedades del depurador, configuración y preparación, puntos de interrupción, control de excepciones, editar y continuar, depurar código administrado, depurar proyectos de Visual C++, depurar COM y ActiveX, depurar archivos DLL, depurar SQL y las referencias a la interfaz de usuario.  
-  
-## <a name="see-also"></a>Vea también  
- [Seguridad del depurador](../debugger/debugger-security.md)   
- [Introducción a COM](/cpp/atl/introduction-to-com)   
- [Controles ActiveX](/cpp/mfc/activex-controls)   
- [Aplicaciones de servidor SDI](../debugger/sdi-server-applications.md)
+Esta sección proporciona sugerencias sobre cómo depurar aplicaciones COM y controles ActiveX.
+
+## <a name="in-this-section"></a>En esta sección
+ [Servidor COM y un contenedor de depuración](../debugger/com-server-and-container-debugging.md) realizan consideraciones especiales sobre depuración de aplicaciones COM. Los aspectos tratados son: depurar un servidor COM y un contenedor mediante dos proyectos dentro de la misma solución, realizar la traza en llamadas que traspasan los límites de un proceso, establecer puntos de interrupción en funciones de devolución de llamada y ejecutar instrucciones paso a paso entre y dentro de contenedores y servidores.
+
+ [Cómo: depurar un ActiveX Control](../debugger/how-to-debug-an-activex-control.md) contiene información sobre la depuración de controles ActiveX. Esta información incluye: especificar un contenedor para la sesión de depuración para ver cómo se ejecuta el código del control ActiveX, depurar un control ActiveX enlazado a datos, simular un contenedor particular y ejecutar instrucciones paso a paso en el código del contenedor.
+
+ [Herramientas de depuración COM](../debugger/com-debugging-tools.md) muestra los visores y aplicaciones de ejemplo que pueden ser útiles para depurar la aplicación COM.
+
+## <a name="related-sections"></a>Secciones relacionadas
+ [En primer lugar, examine el depurador](../debugger/debugger-feature-tour.md) proporciona vínculos a secciones más amplias de la documentación de depuración. Incluye: novedades del depurador, configuración y preparación, puntos de interrupción, control de excepciones, editar y continuar, depurar código administrado, depurar proyectos de Visual C++, depurar COM y ActiveX, depurar archivos DLL, depurar SQL y las referencias a la interfaz de usuario.
+
+## <a name="see-also"></a>Vea también
+
+- [Seguridad del depurador](../debugger/debugger-security.md)
+- [Introducción a COM](/cpp/atl/introduction-to-com)
+- [Controles ActiveX](/cpp/mfc/activex-controls)
+- [Aplicaciones de servidor SDI](../debugger/sdi-server-applications.md)

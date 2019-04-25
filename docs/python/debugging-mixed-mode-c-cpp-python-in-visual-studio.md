@@ -2,21 +2,20 @@
 title: Depuración en modo mixto para Python
 description: Depuración simultánea de C++ y Python en Visual Studio, incluida la ejecución paso a paso entre entornos, la visualización de valores y la evaluación de expresiones.
 ms.date: 11/12/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b654af11ce61cb9331682f8b46e4476c06020ed3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a2848f04e2765c23f60de041e865e7684901b924
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53885960"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366658"
 ---
 # <a name="debug-python-and-c-together"></a>Depurar Python y C++ de forma conjunta
 
@@ -58,13 +57,13 @@ Las características de depuración en modo mixto incluyen las siguientes opcion
 
     Es posible seleccionar otros tipos de código además de **Nativo**, o en lugar de este. Por ejemplo, si una aplicación administrada hospeda CPython, que, a su vez, usa módulos de extensión nativa, y desea depurar los tres, puede activar **Python**, **Nativo** y **Administrado** juntos para obtener una experiencia de depuración unificada que incluye pilas de llamadas combinadas y transición entre los tres tipos de tiempos de ejecución.
 
-1. Al iniciar la depuración en modo mixto por primera vez, es posible que vea un cuadro de diálogo **Se necesitan símbolos de Python** (consulte [Símbolos para la depuración en modo mixto](debugging-symbols-for-mixed-mode-c-cpp-python.md)). Debe instalar los símbolos solo una vez para cualquier entorno de Python. Los símbolos se incluyen automáticamente si instala la compatibilidad de Python mediante el instalador de Visual Studio 2017.
+1. Al iniciar la depuración en modo mixto por primera vez, es posible que vea un cuadro de diálogo **Se necesitan símbolos de Python** (consulte [Símbolos para la depuración en modo mixto](debugging-symbols-for-mixed-mode-c-cpp-python.md)). Debe instalar los símbolos solo una vez para cualquier entorno de Python. Los símbolos se incluyen automáticamente si instala la compatibilidad con Python mediante el instalador de Visual Studio (Visual Studio 2017 y versiones posteriores).
 
 1. Para que el código fuente de Python estándar esté disponible durante la depuración, visite [https://www.python.org/downloads/source/](https://www.python.org/downloads/source/), descargue el archivo correspondiente a la versión y extráigalo en una carpeta. Después, apunte Visual Studio a los archivos específicos de esa carpeta en el momento en el que se le pida.
 
 ## <a name="enable-mixed-mode-debugging-in-a-cc-project"></a>Habilitación de la depuración en modo mixto en un proyecto de C o C++
 
-Visual Studio 2017 (versión 15.5 y posteriores) admite la depuración en modo mixto desde un proyecto de C o C++ (por ejemplo, al [insertar Python en otra aplicación, tal y como se describe en python.org](https://docs.python.org/3/extending/embedding.html)). Para habilitar la depuración en modo mixto, configure el proyecto de C o C++ para que inicie **Depuración nativa/Python**:
+Visual Studio (2017 versión 15.5 y posteriores) admite la depuración en modo mixto desde un proyecto de C o C++ (por ejemplo, al [insertar Python en otra aplicación, tal y como se describe en python.org](https://docs.python.org/3/extending/embedding.html)). Para habilitar la depuración en modo mixto, configure el proyecto de C o C++ para que inicie **Depuración nativa/Python**:
 
 1. Haga clic con el botón derecho en el proyecto de C o C++ en el **Explorador de soluciones** y seleccione **Propiedades**.
 1. Haga clic en la pestaña **Depuración**, **Depuración nativa/Python** en **Depurador para iniciar** y haga clic en **Aceptar**.
@@ -87,7 +86,7 @@ En todas las versiones anteriores de Visual Studio, la depuración en modo mixto
 
 ## <a name="mixed-mode-specific-features"></a>Características específicas del modo mixto
 
-- [Pilas de llamadas combinadas](#combined-call-stack)
+- [Pila de llamadas combinada](#combined-call-stack)
 - [Transición entre código de Python y nativo](#step-between-python-and-native-code)
 - [Vista de valores PyObject en código nativo](#pyobject-values-view-in-native-code)
 - [Vista de valores nativos en el código de Python](#native-values-view-in-python-code)

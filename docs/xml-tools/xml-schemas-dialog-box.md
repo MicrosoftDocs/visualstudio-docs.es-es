@@ -1,20 +1,21 @@
 ---
-title: Cuadro de diálogo Esquemas XML
+title: esquemas XML
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
+f1_keywords:
+- vs.xmleditor.schemasdialog
 ms.assetid: 0271fa26-2205-49bd-96e0-ae1441571808
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b1f8f4824d18618b40ad4073dc6be0c81d9aba37
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f5323582bfe945bc031b9fd02fcf96bb615bcceb
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53835213"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57524928"
 ---
 # <a name="xml-schemas-dialog-box"></a>Cuadro de diálogo esquemas XML
 
@@ -23,15 +24,16 @@ El **esquemas XML** cuadro de diálogo se usa para seleccionar qué esquemas XML
 Puede tener acceso a la **esquemas XML** cuadro de diálogo haciendo clic en el **esquemas** botón en la ventana Propiedades del documento, o bien seleccionando **esquemas** desde el **XML** menú.
 
 ## <a name="uielement-list"></a>Lista de UIElement
- **Use**
 
- Seleccione cómo usar el esquema XML.
+**Use**
 
--   **Automática**. Aunque este esquema no se utiliza en el documento actual, está disponible para la asociación automática. Si el documento XML declara un espacio de nombres que coincide con el `targetNamespace` de este esquema, el esquema se asociará automáticamente y se incluirá en el conjunto de esquemas.
+Seleccione cómo usar el esquema XML.
 
--   **Utilizar este esquema**. El documento actual está utilizando este esquema. El usuario ha hecho clic en la columna para usar explícitamente este esquema, o el esquema estaba asociado automáticamente a una coincidencia con `targetNamespace`.
+- **Automática**. Aunque este esquema no se utiliza en el documento actual, está disponible para la asociación automática. Si el documento XML declara un espacio de nombres que coincide con el `targetNamespace` de este esquema, el esquema se asociará automáticamente y se incluirá en el conjunto de esquemas.
 
--   **No utilizar esquemas seleccionados**. El documento actual no utiliza este esquema, aunque haya una coincidencia del esquema con `targetNamespace`. Esta configuración puede ser útil para resolver conflictos cuando hay más de una versión del mismo esquema en la solución o caché de esquema.
+- **Utilizar este esquema**. El documento actual está utilizando este esquema. El usuario ha hecho clic en la columna para usar explícitamente este esquema, o el esquema estaba asociado automáticamente a una coincidencia con `targetNamespace`.
+
+- **No utilizar esquemas seleccionados**. El documento actual no utiliza este esquema, aunque haya una coincidencia del esquema con `targetNamespace`. Esta configuración puede ser útil para resolver conflictos cuando hay más de una versión del mismo esquema en la solución o caché de esquema.
 
 **Target Namespace**
 
@@ -51,6 +53,5 @@ Quita el esquema seleccionado actualmente del conjunto de esquemas. Esto supone 
 
 ## <a name="see-also"></a>Vea también
 
-- [Componentes del Editor XML](../xml-tools/xml-editor-components.md)
 - [Cómo: Seleccione los esquemas XML para usar](../xml-tools/how-to-select-the-xml-schemas-to-use.md)
 - [Caché de esquema](../xml-tools/schema-cache.md)

@@ -1,25 +1,20 @@
 ---
 title: 'Introducción a PTVS: Comenzar a codificar (proyectos) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-python
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-python
+ms.topic: conceptual
 ms.assetid: 14b85e70-b9a8-415c-a307-8c8c316a0495
 caps.latest.revision: 7
 author: kraigb
 ms.author: kraigb
-manager: ghogen
-ms.openlocfilehash: a8e0bd339d8e7b6d145cc9a916dafc2be9fc975e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 28622f290d82f86bf3d18cc4f40cfcfc8e953dad
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49845789"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54781074"
 ---
 # <a name="getting-started-with-ptvs-start-coding-projects"></a>Introducción a PTVS: Comenzar a codificar (proyectos)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,4 +41,3 @@ Python Tools para Visual Studio (PTVS) le ayuda a administrar el código.
  
 ## <a name="see-also"></a>Vea también 
  [Documentación Wiki](https://github.com/Microsoft/PTVS/wiki/Projects) [Introducción a PTVS y vídeos](https://www.youtube.com/playlist?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)
-

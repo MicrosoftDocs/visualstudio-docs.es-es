@@ -1,7 +1,6 @@
 ---
 title: Iconos de la Vista de clases y del Examinador de objetos
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - icons, in Object Browser
@@ -14,15 +13,15 @@ helpviewer_keywords:
 - Object Browser, icons in Class View
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29d39c210a14934ba50ace92692bee944b6b75c0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9814b03d0a8cd8733c9fd48b4e49c2cf306a8a44
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53844397"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55931902"
 ---
 # <a name="class-view-and-object-browser-icons"></a>Iconos de la Vista de clases y del Examinador de objetos
 

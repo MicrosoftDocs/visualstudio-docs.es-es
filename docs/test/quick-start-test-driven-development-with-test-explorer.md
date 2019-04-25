@@ -1,48 +1,42 @@
 ---
 title: Desarrollo controlado por pruebas con el Explorador de pruebas
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: f38b38fbce688b405887ec39cc6e234f5d7b70d2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2ba4b896a5cea964a4df6392a7c1963f8df00d31
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53833933"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415608"
 ---
 # <a name="quickstart-test-driven-development-with-test-explorer"></a>Inicio rápido: Desarrollo controlado por pruebas con el Explorador de pruebas
 
 Es recomendable crear pruebas unitarias para hacer que el código funcione correctamente a través de varios pasos incrementales de desarrollo. Hay varios marcos que se pueden utilizar para escribir pruebas unitarias, incluidos algunos desarrollados por terceros. Algunos marcos de prueba están especializados para pruebas en plataformas o lenguajes diferentes. El Explorador de pruebas proporciona una sola interfaz para las pruebas unitarias en cualquiera de estos marcos. Hay adaptadores disponibles para los marcos más comunes y es posible escribir adaptadores propios para otros marcos.
 
- El Explorador de pruebas reemplaza las ventanas de prueba unitaria que se encontraban en versiones anteriores de Visual Studio. Las ventajas incluyen:
+El Explorador de pruebas reemplaza las ventanas de prueba unitaria que se encontraban en versiones anteriores de Visual Studio. Las ventajas incluyen:
 
--   Ejecutar pruebas de .NET, no administradas, bases de datos y otros tipos utilizando una única interfaz.
+- Ejecutar pruebas de .NET, no administradas, bases de datos y otros tipos utilizando una única interfaz.
 
--   Usar el marco de pruebas unitarias que quiera, como NUnit o MSTest.
+- Usar el marco de pruebas unitarias que quiera, como NUnit o MSTest.
 
--   Ver en una ventana toda la información necesaria.
+- Ver en una ventana toda la información necesaria.
 
 ## <a name="use-test-explorer"></a>Usar el Explorador de pruebas
- ![Explorador de pruebas unitarias con el botón Ejecutar todas](../test/media/unittestexplorer-beta-.png)
+
+![Explorador de pruebas con el botón Ejecutar todas](../test/media/unittestexplorer-beta-.png)
 
 ### <a name="to-run-unit-tests-by-using-test-explorer"></a>Para ejecutar pruebas unitarias mediante el Explorador de pruebas
 
-1. Crear pruebas unitarias que utilicen los marcos de prueba de su elección.
+1. Crear pruebas unitarias que utilicen los marcos de prueba de su elección. Por ejemplo, para crear una prueba que utilice el marco de trabajo de MSTest:
 
-    Por ejemplo, para crear una prueba que utilice el marco de trabajo de MSTest:
+   1. Cree un proyecto **Proyecto de prueba unitaria** para C#, Visual Basic o C++.
 
-   1.  Cree un proyecto de prueba.
-
-        En el cuadro de diálogo **Nuevo proyecto**, expanda **Visual Basic**, **Visual C#** o **Visual C++** y, a continuación, elija **Prueba**.
-
-        Seleccione **Proyecto de prueba unitaria**.
-
-   2.  Escriba cada prueba unitaria como un método. Anteponga el atributo `[TestMethod]` a cada método de prueba.
+   2. Escriba cada prueba unitaria como un método. Anteponga el atributo `[TestMethod]` a cada método de prueba.
 
 2. Si las pruebas individuales no tienen ninguna dependencia que impida que se ejecuten en cualquier orden, active la ejecución de pruebas paralelas con el botón de alternancia ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) en la barra de herramientas. Esto puede reducir considerablemente el tiempo necesario para ejecutar todas las pruebas.
 
@@ -67,19 +61,17 @@ Es recomendable crear pruebas unitarias para hacer que el código funcione corre
 > [!NOTE]
 > Si no aparece ninguna prueba, asegúrese de haber instalado un adaptador para conectar el Explorador de pruebas al marco de pruebas que se está usando. Para más información, vea [Instalar marcos de prueba unitaria de terceros](install-third-party-unit-test-frameworks.md).
 
+## <a name="walkthrough-using-unit-tests-to-develop-a-method"></a>Tutorial: Uso de pruebas unitarias para desarrollar un método
 
-##  <a name="walkthrough-using-unit-tests-to-develop-a-method"></a>Tutorial: Uso de pruebas unitarias para desarrollar un método
- En este tutorial se muestra cómo desarrollar un método probado en C# con el marco de pruebas unitarias de Microsoft. Se puede adaptar fácilmente a otros lenguajes y utilizar otros marcos de prueba tales como NUnit. Para más información, vea [Instalar marcos de prueba unitaria de terceros](install-third-party-unit-test-frameworks.md).
+En este tutorial se muestra cómo desarrollar un método probado en C# con el marco de pruebas unitarias de Microsoft. Se puede adaptar fácilmente a otros lenguajes y utilizar otros marcos de prueba tales como NUnit. Para más información, vea [Instalar marcos de prueba unitaria de terceros](install-third-party-unit-test-frameworks.md).
 
 ### <a name="create-the-test-and-method"></a>Crear la prueba y el método
 
-1. Crear un proyecto de biblioteca de clases de Visual C#. Este proyecto contendrá el código que se va a entregar. En este ejemplo, se denomina `MyMath`.
+1. Cree un proyecto **Biblioteca de clases** de C#. Este proyecto contendrá el código que se va a entregar. En este ejemplo, se denomina `MyMath`.
 
-2. Cree un proyecto de prueba.
+2. Cree un proyecto **Proyecto de prueba unitaria**.
 
-   -   En el cuadro de diálogo **Nuevo proyecto**, elija **Visual C#** > **Prueba** y, después, elija **Proyecto de prueba unitaria**.
-
-        ![Nuevo código y proyectos de prueba](../test/media/unittestexplorerwalk1.png)
+   ![Nuevo código y proyectos de prueba](../test/media/unittestexplorerwalk1.png)
 
 3. Escriba un método de prueba básico. Compruebe el resultado obtenido para una entrada específica:
 

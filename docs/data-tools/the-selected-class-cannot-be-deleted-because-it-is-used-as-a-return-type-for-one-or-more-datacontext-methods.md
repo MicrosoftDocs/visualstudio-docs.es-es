@@ -5,16 +5,15 @@ ms.topic: reference
 ms.assetid: d68254a0-f3a1-47e2-aed3-a83471e1d711
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 36ad2afe48b5af06bf7ee59fa3043221bc787ba6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5d63abefc67d54734380e6a1dc7f3364d5400c03
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53988980"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55926208"
 ---
 # <a name="the-selected-class-cannot-be-deleted-because-it-is-used-as-a-return-type-for-one-or-more-datacontext-methods"></a>No se puede eliminar la clase seleccionada porque se usa como tipo devuelto de uno o varios métodos DataContext
 

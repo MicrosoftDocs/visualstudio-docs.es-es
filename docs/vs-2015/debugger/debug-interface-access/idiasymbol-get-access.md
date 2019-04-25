@@ -1,14 +1,9 @@
 ---
-title: Get_access | Microsoft Docs
-ms.custom: ''
+title: IDiaSymbol::get_access | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 908976ae-95c4-4020-89c9-de137f727f98
 caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 4be9dabc485c135113ef3d746ec59b6e15f94139
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b5d756f149e01043d8b191ae13dd5b4eba8e8b0b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51776257"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58987334"
 ---
 # <a name="idiasymbolgetaccess"></a>IDiaSymbol::get_access
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -52,12 +47,9 @@ HRESULT get_access ( 
   
 |Requisito|Descripción|  
 |-----------------|-----------------|  
-|Encabezado:|Dia2.h|  
+|Encabezado:|dia2.h|  
 |Versión:|SDK de DIA v7.0|  
   
 ## <a name="see-also"></a>Vea también  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [Enumeración CV_access_e](../../debugger/debug-interface-access/cv-access-e.md)
-
-
-

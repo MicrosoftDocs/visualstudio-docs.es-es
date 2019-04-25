@@ -2,20 +2,19 @@
 title: Configuración del Servicio R remoto en Linux
 description: Describe cómo configurar el servicio remoto de R en Ubuntu y el subsistema de Windows para Linux.
 ms.date: 12/04/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 ms.reviewer: karthiknadig
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: c9406db2f7ae97a40936d672fb01d4943aeadcce
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3fd7f8be7b2de02fb89c9eec3ea7859241beb0f2
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53835950"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55945825"
 ---
 # <a name="remote-r-service-for-linux"></a>Servicio R remoto para Linux
 

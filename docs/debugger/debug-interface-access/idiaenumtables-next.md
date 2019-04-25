@@ -1,5 +1,5 @@
 ---
-title: Idiaenumtables | Microsoft Docs
+title: IDiaEnumTables::Next | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -9,42 +9,45 @@ helpviewer_keywords:
 ms.assetid: 8d7bd359-d33e-4317-9674-d89283efd7de
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 27d9811fe55a3b942cd020ae8038f07df8bf7a2b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 15a9ebbd3a3993568e4b6496e04661a63290399e
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53949414"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56598759"
 ---
 # <a name="idiaenumtablesnext"></a>IDiaEnumTables::Next
-Recupera un número especificado de las tablas de la secuencia de enumeración.  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```C++  
-HRESULT Next (   
-   ULONG       celt,  
-   IDiaTable** rgelt,  
-   ULONG*      pceltFetched  
-);  
-```  
-  
-#### <a name="parameters"></a>Parámetros  
- `celt`  
- [in] El número de tablas en el enumerador que se va a recuperar.  
-  
- `rgelt`  
- [out] Una matriz que se va a rellenar con el [IDiaTable](../../debugger/debug-interface-access/idiatable.md) objetos que representan las tablas que desee.  
-  
- `pceltFetched`  
- [out] Devuelve el número de tablas en el enumerador capturado.  
-  
-## <a name="return-value"></a>Valor devuelto  
- Si la operación se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si no hay ninguna tabla más. De lo contrario, devuelve un código de error.  
-  
-## <a name="see-also"></a>Vea también  
- [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)   
- [IDiaTable](../../debugger/debug-interface-access/idiatable.md)
+Recupera un número especificado de las tablas de la secuencia de enumeración.
+
+## <a name="syntax"></a>Sintaxis
+
+```C++
+HRESULT Next ( 
+   ULONG       celt,
+   IDiaTable** rgelt,
+   ULONG*      pceltFetched
+);
+```
+
+#### <a name="parameters"></a>Parámetros
+ `celt`
+
+[in] El número de tablas en el enumerador que se va a recuperar.
+
+ `rgelt`
+
+[out] Una matriz que se va a rellenar con el [IDiaTable](../../debugger/debug-interface-access/idiatable.md) objetos que representan las tablas que desee.
+
+ `pceltFetched`
+
+[out] Devuelve el número de tablas en el enumerador capturado.
+
+## <a name="return-value"></a>Valor devuelto
+ Si la operación se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si no hay ninguna tabla más. De lo contrario, devuelve un código de error.
+
+## <a name="see-also"></a>Vea también
+- [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)
+- [IDiaTable](../../debugger/debug-interface-access/idiatable.md)

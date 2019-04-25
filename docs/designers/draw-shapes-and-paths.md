@@ -1,20 +1,19 @@
 ---
 title: Dibujar formas y trazados
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: d5378c59-e2e5-49f0-91f1-aa82d984a33c
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29cd9da26b632d8ed8b1d09b0803f27599dba95e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bc629f44ed39fb07459916f07ef430f87b00e14a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942650"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55918889"
 ---
 # <a name="draw-shapes-and-paths"></a>Dibujar formas y trazados
 

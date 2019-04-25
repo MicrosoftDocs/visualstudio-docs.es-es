@@ -1,14 +1,9 @@
 ---
 title: Análisis de código, Diseñador de proyectos | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vs29106
 helpviewer_keywords:
@@ -18,18 +13,17 @@ ms.assetid: 71743d26-4da5-4f7d-a403-7ab96cf2ef2e
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 9e2af505b7cf5700a521903a873c117c7daf4681
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: fa2aa4b3055ff49f59da329ea828e0dbcfc8ec05
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245172"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651644"
 ---
 # <a name="code-analysis-project-designer"></a>Análisis de código, Diseñador de proyectos
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Contiene la herramienta de análisis de código que puede optar por ejecutar en su código. La herramienta notifica información sobre los ensamblados, como las infracciones de las reglas de programación y de diseño estipuladas en las instrucciones de diseño de Microsoft .NET Framework.  
   
 ## <a name="uielement-list"></a>Lista de UIElement  
@@ -73,6 +67,3 @@ Contiene la herramienta de análisis de código que puede optar por ejecutar en 
  [Análisis de código de las advertencias de código administrado](../../code-quality/code-analysis-for-managed-code-warnings.md)   
  [Análisis de código para obtener información general de código administrado](../../code-quality/code-analysis-for-managed-code-overview.md)   
  [Tutorial: Analizar código administrado en previsión de defectos de código](../../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)
-
-
-

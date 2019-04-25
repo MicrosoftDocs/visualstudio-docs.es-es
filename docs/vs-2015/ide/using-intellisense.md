@@ -1,14 +1,9 @@
 ---
 title: Usar IntelliSense | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vc.tools.intellisense
 helpviewer_keywords:
@@ -29,13 +24,13 @@ ms.assetid: 9fdb489b-8b46-4b92-9ccc-c8f8cc184081
 caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 586a0b31166f3b7696865e54f7d2df9c415315f9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: bb859fe5e66dbfcc1f43dfff3c0744c84066054b
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49197202"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54758833"
 ---
 # <a name="using-intellisense"></a>Using IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -111,6 +106,3 @@ MessageBox( hWnd, "String literal|") )
  [IntelliSense para Visual C#](../ide/visual-csharp-intellisense.md)   
  [IntelliSense para JavaScript](../ide/javascript-intellisense.md)   
  [Proporcionar comentarios del código XML](../ide/supplying-xml-code-comments.md)
-
-
-

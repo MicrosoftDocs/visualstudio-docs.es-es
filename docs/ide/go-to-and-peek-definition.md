@@ -1,7 +1,6 @@
 ---
 title: Visualización de definiciones de tipo
 ms.date: 01/10/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - code editor, view definition
@@ -11,15 +10,15 @@ helpviewer_keywords:
 - member definition [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 95302b61da30cc2034edfe495a695efb510430d3
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: 2c5235bc19c1b06ec2cae26e3fcffb6a7d061c9b
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54269844"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222927"
 ---
 # <a name="view-type-and-member-definitions"></a>Vista de definiciones de tipo y miembro
 
@@ -31,17 +30,19 @@ La característica **Ir a definición** va hasta el origen de un tipo o miembro 
 
 ### <a name="ctrl-click-go-to-definition"></a>Ir a definición con Ctrl+clic
 
-En Visual Studio 2017 versión 15.4 hay una manera más fácil de que los usuarios que trabajan con el mouse obtengan acceso rápidamente a **Ir a definición**. Se puede hacer clic en los símbolos si se presiona **Ctrl** y se mantiene el puntero sobre el tipo o miembro. Para desplazarse rápidamente a la definición de un símbolo, presione la tecla **Ctrl** y después haga clic en él. Es así de fácil.
+**CTRL**+**clic** es un acceso directo para que los usuarios de mouse accedan rápidamente a **Ir a definición**. Se puede hacer clic en los símbolos si se presiona **Ctrl** y se mantiene el puntero sobre el tipo o miembro. Para desplazarse rápidamente a la definición de un símbolo, presione la tecla **Ctrl** y después haga clic en él. Es así de fácil.
 
 ![Animación de clic con el mouse en Ir a definición](../ide/media/click_gotodef.gif)
 
-Para cambiar la tecla modificadora del clic del mouse de **Ir a definición**, vaya a **Herramientas** > **Opciones** > **Editor de texto** > **General** y seleccione **Alt** o **Ctrl+Alt** en el menú desplegable **Usar clave de modificador**. También puede deshabilitar el clic del mouse de **Ir a definición**; para ello, desactive la casilla **Habilitar el clic del mouse para Ir a definición**.
+Para cambiar la tecla modificadora del clic del mouse de **Ir a definición**, vaya a **Herramientas** > **Opciones** > **Editor de texto** > **General** y seleccione **Alt** o **Ctrl**+**Alt** en el menú desplegable **Usar clave de modificador**. También puede deshabilitar el clic del mouse de **Ir a definición**; para ello, desactive la casilla **Habilitar el clic del mouse para Ir a definición**.
 
 ![Habilitación del clic del mouse para Ir a definición](../ide/media/editor_options_mouse_click_gotodef.png)
 
 ## <a name="peek-definition"></a>Definición de Peek
 
-La característica **Ver la definición** le permite obtener una vista previa de la definición de un tipo sin abandonar su ubicación actual en el editor. Si trabaja con el teclado, coloque el cursor de texto en algún lugar del nombre de tipo o miembro y presione **Alt + F12**. Si usa el mouse, puede seleccionar **Ver la definición** en el menú contextual. En Visual Studio 2017 versión 15.4 y posteriores, hay una nueva forma de ver una definición en vista de inspección mediante el mouse. En primer lugar, vaya a **Herramientas** > **Opciones** > **Editor de texto** > **General**. Seleccione la opción **Abrir definición en vista de inspección** y haga clic en **Aceptar** para cerrar el cuadro de diálogo **Opciones**.
+La característica **Ver la definición** le permite obtener una vista previa de la definición de un tipo sin abandonar su ubicación actual en el editor. Si trabaja con el teclado, coloque el cursor de texto en algún lugar del nombre de tipo o miembro y presione **Alt + F12**. Si usa el mouse, puede seleccionar **Ver la definición** en el menú contextual.
+
+Para habilitar la funcionalidad **Ctrl**+**clic**, vaya a **Herramientas** > **Opciones** > **Editor de texto** > **General**. Seleccione la opción **Abrir definición en vista de inspección** y haga clic en **Aceptar** para cerrar el cuadro de diálogo **Opciones**.
 
 ![Establecer la opción Ver la definición del clic del mouse](../ide/media/editor_options_peek_view.png)
 
@@ -49,7 +50,7 @@ Después, presione **Ctrl** (o la tecla modificadora que esté activada en **Opc
 
 ![Animación de Ver la definición](../ide/media/peek_definition.gif)
 
-Si ve otra definición en la ventana emergente, iniciará una ruta de navegación en la que puede desplazarse con los círculos y las flechas que aparecen encima de la ventana emergente.
+Si ve otra definición en la ventana emergente, inicia una ruta de navegación en la que puede desplazarse con los círculos y las flechas que aparecen encima de la ventana emergente.
 
 Para obtener más información, vea [Cómo: Ver y editar código mediante Ver la definición (Alt+F12)](how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md).
 
@@ -68,7 +69,7 @@ Por ejemplo, si ejecuta el comando **Ir a definición** para <xref:System.Consol
 
 ### <a name="view-decompiled-source-definitions-instead-of-metadata-c"></a>Visualización de definiciones de origen descompiladas en lugar de metadatos (C#)
 
-Como novedad en Visual Studio 2017, versión 15.6, puede configurar una opción para ver código fuente descompilado al ver la definición de un tipo o un miembro de C# cuyo código fuente no está disponible. Para activar esta característica, elija **Herramientas** > **Opciones** en la barra de menús. A continuación, expanda **Editor de texto** > **C#** > **Opciones avanzadas** y seleccione **Enable navigation to decompiled sources** (Habilitar la navegación a orígenes descompilados).
+Puede configurar una opción para ver código fuente descompilado al ver la definición de un tipo o un miembro de C# cuyo código fuente no está disponible. Para activar esta característica, elija **Herramientas** > **Opciones** en la barra de menús. A continuación, expanda **Editor de texto** > **C#** > **Opciones avanzadas** y seleccione **Enable navigation to decompiled sources** (Habilitar la navegación a orígenes descompilados).
 
 ![Visualización de una definición descompilada](media/go-to-definition-decompiled-sources.png)
 

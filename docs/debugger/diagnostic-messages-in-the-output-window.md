@@ -23,42 +23,42 @@ helpviewer_keywords:
 ms.assetid: 386e9524-be17-4573-83fb-4f7c5cae0be0
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 18ea526fdff312ce46cdb63b6c74e0e0a2600116
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bb4493eb55b83b9f76d1a833ba2df359ae9683e8
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53906753"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56682510"
 ---
 # <a name="send-messages-to-the-output-window"></a>Enrutamiento de mensajes a la ventana Salida
 
-Puede escribir mensajes en tiempo de ejecución para el **salida** ventana mediante la <xref:System.Diagnostics.Debug> clase o el <xref:System.Diagnostics.Trace> (clase), que forman parte de la <xref:System.Diagnostics> biblioteca de clases. Use la <xref:System.Diagnostics.Debug> clase si desea que solo salida el *depurar* versión del programa. Use la <xref:System.Diagnostics.Trace> clase si desea que la salida en ambos el *depurar* y *versión* versiones.  
-  
-## <a name="output-methods"></a>Métodos de salida  
- Las clases <xref:System.Diagnostics.Trace> y <xref:System.Diagnostics.Debug> proporcionan los siguientes métodos de salida:  
-  
-- Diversos métodos `Write`, que envían información sin interrumpir la ejecución. Estos métodos reemplazan el método `Debug.Print` que se utilizaba en versiones anteriores de Visual Basic.  
-  
-- <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> y <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> métodos, que interrumpen la ejecución y la salida de información si se produce un error en una condición especificada. De forma predeterminada, el método `Assert` muestra la información en un cuadro de diálogo. Para obtener más información, vea [Aserciones en el código administrado](../debugger/assertions-in-managed-code.md).  
-  
-- El <xref:System.Diagnostics.Debug.Fail%2A?displayProperty=fullName> y <xref:System.Diagnostics.Trace.Fail%2A?displayProperty=fullName> métodos, que interrumpen siempre la información de ejecución y de salida. De forma predeterminada, el método `Fail` muestra la información en un cuadro de diálogo.  
-  
-El **salida** ventana también puede mostrar información acerca de:  
-  
-- Módulos que el depurador ha cargado o ha descargado.  
-  
-- Excepciones que se producen.  
-  
-- Procesos que salen.  
-  
-- Subprocesos que salen.  
-  
-## <a name="see-also"></a>Vea también  
- [Seguridad del depurador](../debugger/debugger-security.md)   
- [Ventana Resultados](../ide/reference/output-window.md)   
- [Seguimiento e instrumentar aplicaciones](/dotnet/framework/debug-trace-profile/tracing-and-instrumenting-applications)  
- [Tipos de proyectos de C#, F# y Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)   
- [Depurar código administrado](../debugger/debugging-managed-code.md)
+Puede escribir mensajes en tiempo de ejecución para el **salida** ventana mediante la <xref:System.Diagnostics.Debug> clase o el <xref:System.Diagnostics.Trace> (clase), que forman parte de la <xref:System.Diagnostics> biblioteca de clases. Use la <xref:System.Diagnostics.Debug> clase si desea que solo salida el *depurar* versión del programa. Use la <xref:System.Diagnostics.Trace> clase si desea que la salida en ambos el *depurar* y *versión* versiones.
+
+## <a name="output-methods"></a>Métodos de salida
+ Las clases <xref:System.Diagnostics.Trace> y <xref:System.Diagnostics.Debug> proporcionan los siguientes métodos de salida:
+
+- Diversos métodos `Write`, que envían información sin interrumpir la ejecución. Estos métodos reemplazan el método `Debug.Print` que se utilizaba en versiones anteriores de Visual Basic.
+
+- <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=fullName> y <xref:System.Diagnostics.Trace.Assert%2A?displayProperty=fullName> métodos, que interrumpen la ejecución y la salida de información si se produce un error en una condición especificada. De forma predeterminada, el método `Assert` muestra la información en un cuadro de diálogo. Para obtener más información, vea [Aserciones en el código administrado](../debugger/assertions-in-managed-code.md).
+
+- El <xref:System.Diagnostics.Debug.Fail%2A?displayProperty=fullName> y <xref:System.Diagnostics.Trace.Fail%2A?displayProperty=fullName> métodos, que interrumpen siempre la información de ejecución y de salida. De forma predeterminada, el método `Fail` muestra la información en un cuadro de diálogo.
+
+El **salida** ventana también puede mostrar información acerca de:
+
+- Módulos que el depurador ha cargado o ha descargado.
+
+- Excepciones que se producen.
+
+- Procesos que salen.
+
+- Subprocesos que salen.
+
+## <a name="see-also"></a>Vea también
+- [Seguridad del depurador](../debugger/debugger-security.md)
+- [Resultados (Ventana)](../ide/reference/output-window.md)
+- [Seguimiento e instrumentar aplicaciones](/dotnet/framework/debug-trace-profile/tracing-and-instrumenting-applications)
+- [Tipos de proyectos de C#, F# y Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)
+- [Depurar código administrado](../debugger/debugging-managed-code.md)

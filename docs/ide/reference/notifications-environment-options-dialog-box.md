@@ -1,22 +1,22 @@
 ---
 title: Notificaciones, Entorno, Opciones (cuadro de diálogo)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.Notifications
 ms.assetid: 71cf7380-f2c6-436f-a17c-fdd5f90f5865
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 66ab05c4b1d9fb4dcc806f2acb2d1d64ac8a6d68
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+monikerRange: vs-2017
+ms.openlocfilehash: 702e1dfa14874691b72ce42e21cf6057f56d8394
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53946229"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789436"
 ---
 # <a name="notifications-environment-options-dialog-box"></a>Notificaciones, Entorno, Opciones (cuadro de diálogo)
 

@@ -1,7 +1,6 @@
 ---
 title: comando para importar y exportar configuraciones
 ms.date: 11/21/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - Tools.ImportandExportSettings
@@ -11,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 94a06468-a44d-403d-a931-77bbc9d06e56
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 38144381520002e1e3e9f9c7b440d6b87b90cb6d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b9be5826edf0d7220d30ce5c4a99f333c2ab8b67
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53943332"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55947229"
 ---
 # <a name="import-and-export-settings-command"></a>comando para importar y exportar configuraciones
 

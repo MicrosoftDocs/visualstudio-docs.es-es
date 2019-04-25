@@ -3,25 +3,24 @@ title: Información sobre el paso 4 del tutorial de Flask en Visual Studio, Plan
 titleSuffix: ''
 description: Un recorrido por los aspectos básicos de Flask en el contexto de los proyectos de Visual Studio, en particular las características que ofrecen las plantillas Proyecto web de Flask y Proyecto web de Flask/Jade.
 ms.date: 01/07/2019
-ms.prod: visual-studio-dev15
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 74118aee63a67310656926d84300ba180ff74188
-ms.sourcegitcommit: a7e6675185fd34ac8084f09627b2038046cdd2b1
+ms.openlocfilehash: 3c583ee2dd652a81410a756a5297e570afb20f76
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54060834"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366450"
 ---
 # <a name="step-4-use-the-full-flask-web-project-template"></a>Paso 4: Uso de la plantilla de proyecto web completa de Flask
 
-**Paso anterior: [Proporcionar archivos estáticos, agregar páginas y usar la herencia de plantilla](learn-flask-visual-studio-step-03-serve-static-files-add-pages.md)**
+**Paso anterior: [Atender archivos estáticos, agregar páginas y usar la herencia de plantilla](learn-flask-visual-studio-step-03-serve-static-files-add-pages.md)**
 
 Ahora que ha explorado los conceptos básicos de Flask mediante la creación de una aplicación a partir de la plantilla "Proyecto web de Flask en blanco" en Visual Studio, podrá comprender fácilmente la aplicación más completa que se genera mediante la plantilla "Proyecto web de Flask".
 
@@ -73,7 +72,7 @@ La plantilla de "Proyecto web de Flask" crea la estructura siguiente. El conteni
   - *\_\_init.py\_\_* marca el código de la aplicación como un módulo de Python, crea el objeto de Flask e importa las vistas de la aplicación.
   - *views.py* contiene el código para representar páginas.
   - La carpeta *static* contiene subcarpetas denominadas *content* (archivos CSS), *fonts* (archivos de fuentes) y *scripts* (archivos de JavaScript).
-  - La carpeta *templates* contiene una plantilla base *layout.html* junto con *about.html*, *contact.html* e  *index.HTML* para páginas específicas que amplían *layout.html*.
+  - La carpeta *templates* contiene una plantilla base *layout.html* junto con *about.html*, *contact.html* e *index.HTML* para páginas específicas que amplían *layout.html*.
 
 ### <a name="question-is-it-possible-to-share-a-virtual-environment-between-visual-studio-projects"></a>Pregunta: Estoy utilizando un certificado X.509 con mi servicio y obtengo un System.Security.Cryptography.CryptographicException. ¿Es posible compartir un entorno virtual entre los proyectos de Visual Studio?
 
@@ -163,7 +162,7 @@ Las plantillas de página individuales, *about.html*, *contact.html* e *index.ht
 
 Como se ha indicado al principio de este artículo, Visual Studio proporciona una plantilla "Proyecto web de Flask/Jade", que crea una aplicación que es visualmente idéntica a lo que genera "Proyecto web de Flask". La principal diferencia es que usa el motor de plantillas de Jade, que es una extensión de Jinja que implementa los mismos conceptos con un lenguaje más conciso. En concreto, Jade usa, por ejemplo, palabras clave en lugar de etiquetas entre delimitadores {% %} y permite hacer referencia a estilos CSS y elementos HTML mediante palabras clave.
 
-Para habilitar Jade, la plantilla de proyecto incluye primero el paquete pyjade en *requirements.txt*. 
+Para habilitar Jade, la plantilla de proyecto incluye primero el paquete pyjade en *requirements.txt*.
 
 El archivo *\_\_init\_\_.py* de la aplicación contiene una línea para
 

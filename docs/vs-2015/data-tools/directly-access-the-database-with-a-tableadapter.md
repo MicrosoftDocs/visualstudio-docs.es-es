@@ -1,12 +1,9 @@
 ---
 title: Tener acceso directamente a la base de datos con un TableAdapter | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -28,18 +25,17 @@ ms.assetid: 012c5924-91f7-4790-b2a6-f51402b7014b
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a592a185ad3dd01f881526e0b9471e3f5e969a94
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 079264d2687d382aa79e526d829687f2a60f6882
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49178456"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106636"
 ---
 # <a name="directly-access-the-database-with-a-tableadapter"></a>Acceder directamente a la base de datos con un TableAdapter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Además el `InsertCommand`, `UpdateCommand`, y `DeleteCommand`, los TableAdapters se crean con métodos que se pueden ejecutar directamente en la base de datos. Estos métodos (`TableAdapter.Insert`, `TableAdapter.Update`, y `TableAdapter.Delete`) se puede llamar para manipular los datos directamente en la base de datos.  
   
  Si no desea crear estos métodos directos, establezca el TableAdapter `GenerateDbDirectMethods` propiedad `false` en el **propiedades** ventana. Si las consultas se agregan a un TableAdapter además de la consulta principal del TableAdapter, son consultas independientes que no generan estos DbDirect (métodos).  
@@ -49,7 +45,7 @@ Además el `InsertCommand`, `UpdateCommand`, y `DeleteCommand`, los TableAdapter
   
 #### <a name="to-insert-new-records-directly-into-a-database"></a>Para insertar nuevos registros directamente en una base de datos  
   
--   Llamar a del TableAdapter `Insert` método, pasando los valores para cada columna como parámetros. El siguiente procedimiento usa la `Region` muestra un ejemplo de tabla en la databaseas de Northwind.  
+- Llamar a del TableAdapter `Insert` método, pasando los valores para cada columna como parámetros. El siguiente procedimiento usa la `Region` muestra un ejemplo de tabla en la databaseas de Northwind.  
   
     > [!NOTE]
     >  Si no tiene una instancia disponible, cree una instancia del TableAdapter que desea usar.  
@@ -59,7 +55,7 @@ Además el `InsertCommand`, `UpdateCommand`, y `DeleteCommand`, los TableAdapter
   
 #### <a name="to-update-records-directly-in-a-database"></a>Para actualizar registros directamente en una base de datos  
   
--   Llamar a del TableAdapter `Update` método, pasando los valores nuevos y originales de cada columna como parámetros.  
+- Llamar a del TableAdapter `Update` método, pasando los valores nuevos y originales de cada columna como parámetros.  
   
     > [!NOTE]
     >  Si no tiene una instancia disponible, cree una instancia del TableAdapter que desea usar.  
@@ -69,7 +65,7 @@ Además el `InsertCommand`, `UpdateCommand`, y `DeleteCommand`, los TableAdapter
   
 #### <a name="to-delete-records-directly-from-a-database"></a>Para eliminar registros directamente desde una base de datos  
   
--   Llamar a del TableAdapter `Delete` método, pasando los valores de cada columna como parámetros de la `Delete` método. El siguiente procedimiento usa la `Region` muestra un ejemplo de tabla en la databaseas de Northwind.  
+- Llamar a del TableAdapter `Delete` método, pasando los valores de cada columna como parámetros de la `Delete` método. El siguiente procedimiento usa la `Region` muestra un ejemplo de tabla en la databaseas de Northwind.  
   
     > [!NOTE]
     >  Si no tiene una instancia disponible, cree una instancia del TableAdapter que desea usar.  
@@ -79,4 +75,3 @@ Además el `InsertCommand`, `UpdateCommand`, y `DeleteCommand`, los TableAdapter
   
 ## <a name="see-also"></a>Vea también  
  [Llenar conjuntos de datos mediante TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md)
-

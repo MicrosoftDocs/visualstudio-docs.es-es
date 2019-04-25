@@ -3,21 +3,20 @@ title: Información sobre el paso 3 del tutorial de Django en Visual Studio, Arc
 titleSuffix: ''
 description: Un recorrido por los aspectos básicos de Django en el contexto de los proyectos de Visual Studio, en particular la demostración de cómo atender archivos estáticos, agregar páginas a la aplicación y usar la herencia de plantilla.
 ms.date: 11/19/2018
-ms.prod: visual-studio-dev15
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5c53001d31e6ef4ee32aaef2093e04be6fcaac29
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 54a80ef606a553846ef5be7a86ed4183f3ffde57
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53829594"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59365709"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Paso 3: Proporcionar archivos estáticos, agregar páginas y usar la herencia de plantilla
 
@@ -276,7 +275,7 @@ Los pasos siguientes muestran la herencia:
 ## <a name="next-steps"></a>Pasos siguientes
 
 > [!div class="nextstepaction"]
-> [Usar la plantilla completa de Proyecto web de Django](learn-django-in-visual-studio-step-04-full-django-project-template.md)
+> [Uso de la plantilla completa de Proyecto web de Django](learn-django-in-visual-studio-step-04-full-django-project-template.md)
 
 ## <a name="go-deeper"></a>Profundizar un poco más
 

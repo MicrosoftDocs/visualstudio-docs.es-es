@@ -1,14 +1,9 @@
 ---
 title: Tareas de MSBuild | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 helpviewer_keywords:
 - tasks
 - MSBuild, tasks
@@ -16,18 +11,17 @@ ms.assetid: 5d3cc4a7-e5db-4f73-b707-8b6882fddcf8
 caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: dff7c0ce45c71340f3b931e32843adb6a90ea075
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 756c19da1aeb8878c2d045f4ee471d8449d2a954
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176710"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650610"
 ---
 # <a name="msbuild-tasks"></a>Tareas de MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Una plataforma de compilación debe ser capaz de ejecutar cualquier número de acciones durante el proceso de compilación. [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] utiliza *tareas* para realizar estas acciones. Una tarea es una unidad de código ejecutable que [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] utiliza para realizar operaciones de compilación atómicas.  
   
 ## <a name="task-logic"></a>Lógica de las tareas  
@@ -78,5 +72,3 @@ Una plataforma de compilación debe ser capaz de ejecutar cualquier número de a
  [MSBuild](msbuild.md)   
  [Escribir tareas](../msbuild/task-writing.md)   
  [Tareas insertadas](../msbuild/msbuild-inline-tasks.md)
-
-

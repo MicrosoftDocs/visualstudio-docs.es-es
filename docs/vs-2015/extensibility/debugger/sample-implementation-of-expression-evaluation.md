@@ -1,14 +1,9 @@
 ---
 title: Ejemplo de implementación de evaluación de expresiones | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - expression evaluators
 - debugging [Debugging SDK], expression evaluators
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 2a5f04b8-6c65-4232-bddd-9093653a22c4
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: a79f61351363ba14b9993181c77e1a9be88515d9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 49fd700120e819bb0b38cb8d91401869a364714c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51735168"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039458"
 ---
 # <a name="sample-implementation-of-expression-evaluation"></a>Implementación de ejemplo de la evaluación de expresiones
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,11 +29,11 @@ ms.locfileid: "51735168"
   
  Esta implementación de `IDebugExpressionEvaluator::Parse` realiza las siguientes tareas:  
   
-1.  [Solo en C++] Analiza la expresión para buscar errores.  
+1. [C++ sólo] Analiza la expresión para buscar errores.  
   
-2.  Crea una instancia de una clase (llamado `CParsedExpression` en este ejemplo) que implementa el `IDebugParsedExpression` interfaz y almacena en la clase se puede analizar la expresión.  
+2. Crea una instancia de una clase (llamado `CParsedExpression` en este ejemplo) que implementa el `IDebugParsedExpression` interfaz y almacena en la clase se puede analizar la expresión.  
   
-3.  Devuelve el `IDebugParsedExpression` interfaz desde el `CParsedExpression` objeto.  
+3. Devuelve el `IDebugParsedExpression` interfaz desde el `CParsedExpression` objeto.  
   
 > [!NOTE]
 >  En los ejemplos siguientes y en el ejemplo MyCEE, el evaluador de expresiones no separa el análisis de la evaluación.  
@@ -117,4 +112,3 @@ STDMETHODIMP CExpressionEvaluator::Parse(
 ## <a name="see-also"></a>Vea también  
  [Evaluar una expresión de la ventana Inspección](../../extensibility/debugger/evaluating-a-watch-window-expression.md)   
  [Evaluación de una expresión de inspección](../../extensibility/debugger/evaluating-a-watch-expression.md)
-

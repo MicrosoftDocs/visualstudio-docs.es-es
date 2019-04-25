@@ -1,26 +1,21 @@
 ---
-title: IDebugPortSupplierDescription2 | Documentos de Microsoft
-ms.custom: ''
+title: IDebugPortSupplierDescription2 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - IDebugPortSupplierDescription2 interface
 ms.assetid: dd19b9d6-0703-44b3-9498-cedffa0ce5b7
 caps.latest.revision: 9
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 1bb6813992e616d964f3e86f8f42645d50700058
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e3da559a2d843ddb1129236966093b8a41f4234b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51774853"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58987248"
 ---
 # <a name="idebugportsupplierdescription2"></a>IDebugPortSupplierDescription2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -46,7 +41,6 @@ IDebugPortSupplierDescription2 : IUnknown
 ## <a name="requirements"></a>Requisitos  
  Encabezado: Msdbg.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
-

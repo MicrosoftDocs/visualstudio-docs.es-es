@@ -2,21 +2,20 @@
 title: 'Diseñador de flujo de trabajo: cuadro de diálogo Editor de la colección de tipo'
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
 f1_keywords:
 - TypeCollectionEditor.UI
 ms.assetid: 63cdea6b-bca2-4c06-b8b4-c8faabd40726
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a2c172517dd9e1945ee55fb6ab9ce576b4676ac
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 191635364c445bc3959ee2f5f63c7c72c71f171d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53820191"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093129"
 ---
 # <a name="type-collection-editor-dialog-box"></a>Editor de colección de tipos (cuadro de diálogo)
 
@@ -32,16 +31,16 @@ La tabla siguiente describen los elementos de interfaz de usuario de la **tipo c
 
 ## <a name="to-bring-up-the-type-collection-editor-for-the-send-and-receive-activities"></a>Para mostrar el Editor de colección de tipos para las actividades Send y Receive
 
-1.  Seleccione el **enviar** o **recepción** actividad en la vista Diseño.
+1. Seleccione el **enviar** o **recepción** actividad en la vista Diseño.
 
-2.  Presione **F4** para que aparezca el **propiedades** ventana.
+2. Presione **F4** para que aparezca el **propiedades** ventana.
 
-3.  En el **propiedades** ventana, haga clic en el botón de puntos suspensivos situado junto a la **KnownTypes** propiedad.
+3. En el **propiedades** ventana, haga clic en el botón de puntos suspensivos situado junto a la **KnownTypes** propiedad.
 
 ## <a name="to-bring-up-the-type-collection-editor-for-the-invokemethod-activity"></a>Para mostrar el Editor de colección de tipos para la actividad InvokeMethod
 
-1.  Seleccione el **InvokeMethod** actividad en la vista Diseño.
+1. Seleccione el **InvokeMethod** actividad en la vista Diseño.
 
-2.  Presione **F4** para que aparezca el **propiedades** ventana.
+2. Presione **F4** para que aparezca el **propiedades** ventana.
 
-3.  En el **propiedades** ventana, haga clic en el botón de puntos suspensivos situado junto a la **GenericTypeArguments** propiedad.
+3. En el **propiedades** ventana, haga clic en el botón de puntos suspensivos situado junto a la **GenericTypeArguments** propiedad.

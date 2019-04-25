@@ -14,15 +14,15 @@ helpviewer_keywords:
 - ASP.NET, performance profilng
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e50855061a69a8d3b5fd6aa068b0f8c1385173e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f91646575fba2df1f48c08adc7a9233bb63f27df
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53864156"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56630493"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>Procedimiento para recopilar datos de rendimiento de un sitio web
 
@@ -101,7 +101,7 @@ Puede usar el **Asistente de rendimiento** para recopilar datos de rendimiento d
 
 ## <a name="see-also"></a>Vea también
 
-[Información general](../profiling/overviews-performance-tools.md)  
-[Configuración de sesiones de rendimiento](../profiling/configuring-performance-sessions.md)  
-[Introducción a los valores de datos de instrumentación](../profiling/understanding-instrumentation-data-values.md)  
+[Información general](../profiling/overviews-performance-tools.md)
+[Configurar sesiones de rendimiento](../profiling/configuring-performance-sessions.md)
+[Introducción a los valores de datos de instrumentación](../profiling/understanding-instrumentation-data-values.md)
 [Introducción a los valores de datos de muestreo](../profiling/understanding-sampling-data-values.md)

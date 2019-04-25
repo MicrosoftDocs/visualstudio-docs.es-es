@@ -1,14 +1,9 @@
 ---
 title: Agregar un controlador de menú a una barra de herramientas | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - toolbars [Visual Studio], adding menu controllers
 - menus, adding menu controllers to toolbars
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 6af9b0b4-037f-404c-bb40-aaa1970768ea
 caps.latest.revision: 39
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 13dec4b907b52e35b5b2377aafa511e50dc5cc48
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3c63f6c98153c9f7a9fab171b3caddd57df717cc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51771532"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107806"
 ---
 # <a name="adding-a-menu-controller-to-a-toolbar"></a>Adición de un controlador de menú a una barra de herramientas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -119,7 +114,7 @@ En este tutorial se basa en el [agregar una barra de herramientas a una ventana 
   
 ## <a name="implementing-the-menu-controller-commands"></a>Implementar los comandos del controlador de menú  
   
-1.  En TWTestCommandPackageGuids.cs, agregue los identificadores de comando para los tres elementos de menú después del Id. de comando existente.  
+1. En TWTestCommandPackageGuids.cs, agregue los identificadores de comando para los tres elementos de menú después del Id. de comando existente.  
   
     ```csharp  
     public const int cmdidMCItem1 = 0x130;  
@@ -127,13 +122,13 @@ En este tutorial se basa en el [agregar una barra de herramientas a una ventana 
     public const int cmdidMCItem3 = 0x132;  
     ```  
   
-2.  En TWTestCommand.cs, agregue el código siguiente en la parte superior de la clase TWTestCommand.  
+2. En TWTestCommand.cs, agregue el código siguiente en la parte superior de la clase TWTestCommand.  
   
     ```csharp  
     private int currentMCCommand; // The currently selected menu controller command  
     ```  
   
-3.  En el constructor TWTestCommand, después de la última llamada a la `AddCommand` método, agregue código para enrutar los eventos para cada comando a través de los mismos controladores.  
+3. En el constructor TWTestCommand, después de la última llamada a la `AddCommand` método, agregue código para enrutar los eventos para cada comando a través de los mismos controladores.  
   
     ```csharp  
     for (int i = TWTestCommandPackageGuids.cmdidMCItem1; i <=  
@@ -154,7 +149,7 @@ En este tutorial se basa en el [agregar una barra de herramientas a una ventana 
     }  
     ```  
   
-4.  Agregue un controlador de eventos a la clase TWTestCommand para marcar el comando seleccionado como comprobado.  
+4. Agregue un controlador de eventos a la clase TWTestCommand para marcar el comando seleccionado como comprobado.  
   
     ```csharp  
     private void OnMCItemQueryStatus(object sender, EventArgs e)  
@@ -167,7 +162,7 @@ En este tutorial se basa en el [agregar una barra de herramientas a una ventana 
     }  
     ```  
   
-5.  Agregue un controlador de eventos que muestra un cuadro de mensaje cuando el usuario selecciona un comando en el controlador de menú:  
+5. Agregue un controlador de eventos que muestra un cuadro de mensaje cuando el usuario selecciona un comando en el controlador de menú:  
   
     ```csharp  
     private void OnMCItemClicked(object sender, EventArgs e)  
@@ -219,13 +214,13 @@ En este tutorial se basa en el [agregar una barra de herramientas a una ventana 
   
 ## <a name="testing-the-menu-controller"></a>Probar el controlador de menús  
   
-1.  Compile la solución y comience la depuración. Debería ver la instancia experimental.  
+1. Compile la solución y comience la depuración. Debería ver la instancia experimental.  
   
-2.  Abra el **ventana de herramientas de prueba** en el **vista / Windows otras** menú.  
+2. Abra el **ventana de herramientas de prueba** en el **vista / Windows otras** menú.  
   
      El controlador de menús aparece en la barra de herramientas en la ventana de herramientas y muestra **MC elemento 1**.  
   
-3.  Haga clic en el botón de controlador de menú a la izquierda de la flecha.  
+3. Haga clic en el botón de controlador de menú a la izquierda de la flecha.  
   
      Debería ver tres elementos, el primero de que está seleccionado y tiene un cuadro resaltado alrededor de su icono. Haga clic en **MC elemento 3**.  
   
@@ -234,4 +229,3 @@ En este tutorial se basa en el [agregar una barra de herramientas a una ventana 
 ## <a name="see-also"></a>Vea también  
  [Agregar una barra de herramientas a una ventana de herramientas](../extensibility/adding-a-toolbar-to-a-tool-window.md)   
  [Adición de una barra de herramientas](../extensibility/adding-a-toolbar.md)
-

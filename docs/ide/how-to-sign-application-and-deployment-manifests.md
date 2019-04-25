@@ -1,7 +1,6 @@
 ---
 title: Procedimiento Firmar manifiestos de implementación y aplicación
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - manifests [Visual Studio]
@@ -15,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 64173505-8bfb-41cf-a0de-b9075173f3a2
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 45199d736e1402c67ca84ced8db95d81534a7c3a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 00534f5ff415ba836d8c2d581e599669941fda6f
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53852919"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790854"
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>Procedimiento Firmar manifiestos de implementación y aplicación
 
@@ -36,11 +35,11 @@ Si quiere publicar una aplicación mediante la implementación ClickOnce, los ma
  Para obtener información sobre cómo crear archivos de clave, vea [Cómo: Crear un par de claves privada y pública](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair).
 
 > [!NOTE]
-> [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] solo admite archivos de claves de intercambio de información personal (PFX) que tienen la extensión *.pfx*. En cambio, puede seleccionar otros tipos de certificados desde el almacén de certificados de Windows del usuario actual si hace clic en **Seleccionar del almacén** en la página **Firma** de las propiedades del proyecto.
+> Visual Studio solo admite archivos de claves de intercambio de información personal (PFX) que tienen la extensión *.pfx*. En cambio, puede seleccionar otros tipos de certificados desde el almacén de certificados de Windows del usuario actual si hace clic en **Seleccionar del almacén** en la página **Firma** de las propiedades del proyecto.
 
-## <a name="to-sign-application-and-deployment-manifests-using-a-certificate"></a>Para firmar manifiestos de aplicación e implementación con un certificado
+## <a name="sign-using-a-certificate"></a>Inicio de sesión con un certificado
 
-1.  Vaya a la ventana Propiedades del proyecto (haga clic con el botón derecho en el nodo del proyecto en el **Explorador de soluciones** y seleccione **Propiedades**, escriba **propiedades del proyecto** en la ventana **Inicio rápido** o presione **Alt**+**Entrar** en el **Explorador de soluciones**). En la pestaña **Firma**, active la casilla **Firmar los manifiestos de ClickOnce**.
+1.  Vaya a la ventana de propiedades del proyecto (haga clic con el botón derecho en el nodo del proyecto en el **Explorador de soluciones** y seleccione **Propiedades**). En la pestaña **Firma**, active la casilla **Firmar los manifiestos de ClickOnce**.
 
 2.  Haga clic en el botón **Seleccionar del almacén**.
 
@@ -53,7 +52,7 @@ Si quiere publicar una aplicación mediante la implementación ClickOnce, los ma
 
 4.  Además, puede especificar la dirección de un servidor de marca de tiempo en el cuadro de texto **Dirección URL del servidor de marca de tiempo**. Se trata de un servidor que proporciona una marca de tiempo que especifica cuándo se ha firmado el manifiesto.
 
-## <a name="to-sign-application-and-deployment-manifests-using-an-existing-key-file"></a>Para firmar manifiestos de aplicación e implementación con un archivo de claves existente
+## <a name="sign-using-an-existing-key-file"></a>Inicio de sesión con un archivo de clave existente
 
 1.  En la página **Firma**, active la casilla **Firmar los manifiestos de ClickOnce**.
 
@@ -70,7 +69,7 @@ Si quiere publicar una aplicación mediante la implementación ClickOnce, los ma
 
 4.  Escriba la contraseña para acceder al archivo de claves y pulse **Entrar**.
 
-## <a name="to-sign-application-and-deployment-manifests-using-a-test-certificate"></a>Para firmar manifiestos de aplicación e implementación con un certificado de prueba
+## <a name="sign-using-a-test-certificate"></a>Inicio de sesión con un certificado de prueba
 
 1.  En la página **Firma**, active la casilla **Firmar los manifiestos de ClickOnce**.
 

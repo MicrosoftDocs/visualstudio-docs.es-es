@@ -1,20 +1,19 @@
 ---
 title: 'Tutorial: Crear una bola de billar en 3D realista'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: af8eb0f3-bf6a-4d1c-ab47-dcd88ab04efa
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 75b7b405ba9e25a94c8db22c4ddf5e4a0aedad09
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 241416a8c874a131b4c766bc0a707019d9ea12f1
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53913496"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55946178"
 ---
 # <a name="walkthrough-create-a-realistic-3d-billiard-ball"></a>Tutorial: Crear una bola de billar en 3D realista
 

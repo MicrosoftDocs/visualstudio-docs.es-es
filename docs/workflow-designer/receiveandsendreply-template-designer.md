@@ -2,22 +2,21 @@
 title: Diseñador de flujo de trabajo - Diseñador de plantillas ReceiveAndSendReply
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
 f1_keywords:
 - System.ServiceModel.Activities.ReceiveAndSendReply.UI
 - System.ServiceModel.Activities.SendReply.UI
 ms.assetid: d1d9a058-df7e-48f5-a2e7-3caeeba7eaa6
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b62da812773795ff89e1beb87af6364c8baee14
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7f6f3f874d00dff8a171a169dca6fe2d94f14fe6
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53915051"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648762"
 ---
 # <a name="receiveandsendreply-template-designer"></a>Diseñador de plantillas ReceiveAndSendReply
 
@@ -42,7 +41,6 @@ Para obtener más información sobre el uso de la **recepción** diseñador para
 ### <a name="properties-of-sendreply"></a>Propiedades SendReply
 
 En la tabla siguiente se muestran las propiedades <xref:System.ServiceModel.Activities.SendReply> y se describe cómo se utilizan en el diseñador. Estas propiedades se pueden editar en la cuadrícula de propiedades y algunas de ellas en la superficie del Diseñador de flujo de trabajo.
-
 
 | Nombre de la propiedad | Obligatorio | Uso |
 |-|----------|-|

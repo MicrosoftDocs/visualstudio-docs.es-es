@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 3ddb96f9-9bda-4a68-ad4d-ef488a0a68dc
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 53f9137c35bd89e812f1d671e2e51f88b343753c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: be2d566228367e2cdb07aecc2d73eaf82a6d961f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53920263"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56637690"
 ---
 # <a name="sleep-time"></a>Tiempo de suspensión
-Estos segmentos de la escala de tiempo se asocian al tiempo de bloqueo que se clasifica como Suspensión. La categoría de suspensión implica que un subproceso ha renunciado voluntariamente a su núcleo lógico y no está realizando ningún trabajo. Durante este tiempo, un subproceso se ha bloqueado en una API que el visualizador de simultaneidad está contando como Suspensión. Las API como `Sleep()` y `SwitchToThread()` se incluyen en este grupo.  
-  
-## <a name="see-also"></a>Vea también  
- [Vista Subprocesos](../profiling/threads-view-parallel-performance.md)
+Estos segmentos de la escala de tiempo se asocian al tiempo de bloqueo que se clasifica como Suspensión. La categoría de suspensión implica que un subproceso ha renunciado voluntariamente a su núcleo lógico y no está realizando ningún trabajo. Durante este tiempo, un subproceso se ha bloqueado en una API que el visualizador de simultaneidad está contando como Suspensión. Las API como `Sleep()` y `SwitchToThread()` se incluyen en este grupo.
+
+## <a name="see-also"></a>Vea también
+- [Vista Subprocesos](../profiling/threads-view-parallel-performance.md)

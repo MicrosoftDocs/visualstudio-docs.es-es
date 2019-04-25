@@ -1,14 +1,9 @@
 ---
 title: Herramienta de zoom de vista de núcleos | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.cores.zoom
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: f7d48602-ba32-4487-b51a-89e596124108
 caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d3d902c2642171fdfa27f20a764c5414daa3ccf3
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 28e307bd91d468e0efff840d2b6f469b000f243f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51727794"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105435"
 ---
 # <a name="cores-view-zoom-tool"></a>Herramienta de zoom de vista de núcleos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,12 +27,9 @@ El control de zoom es un control deslizante que le permite acercar y alejar la e
   
 ## <a name="other-ways-to-zoom"></a>Otras maneras de hacer zoom  
   
--   Acercar: arrastre para seleccionar un área en la vista de escala de tiempo. Al soltar el botón del mouse, la vista de escala de tiempo acerca el rango seleccionado.  
+- Acercar: Arrastre para seleccionar un área en la vista de escala de tiempo. Al soltar el botón del mouse, la vista de escala de tiempo acerca el rango seleccionado.  
   
--   Acercar y alejar: mueva el puntero sobre la escala de tiempo y presione CTRL mientras mueve la rueda del mouse.  
+- Acercar y alejar: Mantenga el mouse sobre la escala de tiempo y, a continuación, presione la tecla CTRL mientras mueve la rueda del mouse.  
   
 ## <a name="see-also"></a>Vea también  
  [Vista Núcleos](../profiling/cores-view.md)
-
-
-

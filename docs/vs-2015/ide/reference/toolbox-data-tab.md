@@ -1,14 +1,9 @@
 ---
 title: Cuadro de herramientas, pestaña Datos | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - Toolbox, Data tab
 - Data tab, Toolbox
@@ -17,29 +12,28 @@ ms.assetid: 2ae38b2a-29d2-461c-a67d-29dad274bf45
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: c5a75242a193345098ac33557a87e792f94f1ef4
-ms.sourcegitcommit: a205ff1b389fba1803acd32c54df7feb0ef7a203
+manager: jillfra
+ms.openlocfilehash: c681a67b48baf89e1e601943c6cafd25e91ff332
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53648566"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663920"
 ---
 # <a name="toolbox-data-tab"></a>Cuadro de herramientas, pestaña Datos
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Muestra objetos de datos que puede agregar a formularios y componentes. La pestaña **Datos** del **Cuadro de herramientas** aparece cuando crea un proyecto que tiene un diseñador asociado. El **Cuadro de herramientas** aparece de manera predeterminada en el entorno de desarrollo integrado de Visual Studio; si necesita mostrar el **Cuadro de herramientas**, seleccione **Cuadro de herramientas** del menú **Ver**.  
   
 > [!TIP]
->  Al ejecutar el Asistente para configuración de orígenes de datos se crearán y configurarán automáticamente la mayoría de elementos de datos. Para obtener más información, consulte [crear aplicaciones de datos con Visual Studio](http://msdn.microsoft.com/en-us/28edce21-220a-484c-b461-a75b0232d293).  
+>  Al ejecutar el Asistente para configuración de orígenes de datos se crearán y configurarán automáticamente la mayoría de elementos de datos. Para obtener más información, consulte [Crear aplicaciones de datos utilizando Visual Studio](http://msdn.microsoft.com/28edce21-220a-484c-b461-a75b0232d293).  
   
 ## <a name="ui-element-list"></a>Lista de elementos de la interfaz de usuario  
  Para ir directamente a la página de referencia de .NET Framework para un componente, presione **F1** en el elemento del **cuadro de herramientas** o en el elemento de componente en la bandeja del diseñador.  
   
 |nombre|Descripción|  
 |----------|-----------------|  
-|<xref:System.Data.DataSet>|Agrega una instancia de un conjunto de datos con o sin tipo al formulario o componente. Cuando arrastra este objeto en un diseñador, muestra un cuadro de diálogo que le permite seleccionar una clase de un conjunto de datos con tipo existente o especificar que quiere crear un conjunto de datos sin tipo y en blanco. **Nota:**  No se utiliza el <xref:System.Data.DataSet> objeto en el **cuadro de herramientas** para crear un nuevo esquema de dataset con tipo y una clase. Para obtener más información, vea [Crear y configurar conjuntos de datos](../../data-tools/create-and-configure-datasets-in-visual-studio.md).|  
+|<xref:System.Data.DataSet>|Agrega una instancia de un conjunto de datos con o sin tipo al formulario o componente. Cuando arrastra este objeto en un diseñador, muestra un cuadro de diálogo que le permite seleccionar una clase de un conjunto de datos con tipo existente o especificar que quiere crear un conjunto de datos sin tipo y en blanco. **Nota:** No use el objeto <xref:System.Data.DataSet> en el **cuadro de herramientas** para crear una clase y un esquema de conjunto de datos con tipo. Para obtener más información, vea [Crear y configurar conjuntos de datos](../../data-tools/create-and-configure-datasets-in-visual-studio.md).|  
 |<xref:System.Windows.Forms.DataGridView>|Proporciona una forma eficaz y flexible de mostrar datos en formato de tabla.|  
 |<xref:System.Windows.Forms.BindingSource>|Simplifica el proceso de enlazar controles a un origen de datos subyacente.|  
 |<xref:System.Windows.Forms.BindingNavigator>|Representa la interfaz de usuario de navegación y manipulación para los controles de un formulario que están enlazados a datos.|  

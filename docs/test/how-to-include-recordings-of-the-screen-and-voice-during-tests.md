@@ -7,16 +7,15 @@ helpviewer_keywords:
 ms.assetid: 2cefe8c2-430a-4cb4-bbe0-f3edb2e5bc03
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 8fd8d07274d67f590de1ab22a3bdfa641b07f847
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 9043411cd6681078e9e4d0418e6f3686aa37fc17
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53832143"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55949816"
 ---
-# <a name="how-to-include-recordings-of-the-screen-and-voice-during-tests-using-test-settings"></a>Procedimiento Incluir grabaciones de la pantalla y de voz durante las pruebas mediante la configuración de pruebas
+# <a name="how-to-include-recordings-of-the-screen-and-voice-during-tests-using-test-settings"></a>Filtrar Incluir grabaciones de la pantalla y de voz durante las pruebas mediante la configuración de pruebas
 
 En el editor de configuración de Visual Studio, puede configurar el adaptador de datos de diagnóstico que graba la pantalla y la voz del usuario que ejecuta la prueba. Este adaptador de datos de diagnóstico guarda una grabación de pantalla y voz de la sesión de escritorio durante la prueba. La grabación se guarda con el resultado de la prueba o se puede adjuntar a un error. Otros miembros del equipo pueden usar la grabación para aislar defectos de la aplicación que son difíciles de reproducir.
 

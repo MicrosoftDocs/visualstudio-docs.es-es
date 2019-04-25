@@ -13,16 +13,15 @@ helpviewer_keywords:
 - mapping relationships in code
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 715d64d48a82837aca0c576a1cc95b434244368a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e421c65e83bca88c01ea58cfd5cc402c6011cb23
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53895563"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55934892"
 ---
 # <a name="use-code-maps-to-debug-your-applications"></a>Usar mapas de código para depurar aplicaciones
 

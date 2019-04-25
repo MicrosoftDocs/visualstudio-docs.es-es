@@ -6,16 +6,15 @@ helpviewer_keywords:
 - text templates, transformation process
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 1f4cadbbf9de2f9f02a8bc95a4f436f399e2052b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 271d9625ba5c41599af6c92504b3f17a166a2ee7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53908662"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061781"
 ---
 # <a name="the-text-template-transformation-process"></a>El proceso de transformación de las plantillas de texto
 El proceso de transformación de plantillas de texto toma un archivo de plantilla de texto como entrada y genera un nuevo archivo de texto como salida. Por ejemplo, puede usar las plantillas de texto para generar el código de Visual Basic o C# o puede generar un informe HTML.
@@ -35,22 +34,22 @@ El proceso de transformación de plantillas de texto toma un archivo de plantill
 ## <a name="the-engine"></a>El motor de
  El motor recibe la plantilla como una cadena desde el host, que controla todos los archivos que se usan en el proceso de transformación. El motor de pregunta, a continuación, el host para localizar los procesadores de directivas personalizadas y otros aspectos del entorno. El motor, a continuación, compila y ejecuta la clase de transformación generada. El motor devuelve el texto generado para el host, que normalmente se guarda el texto en un archivo.
 
-## <a name="the-host"></a>El Host
+## <a name="the-host"></a>El host
  El host es responsable de todo lo que se relaciona con el entorno fuera del proceso de transformación, incluidos los siguientes:
 
--   Buscar archivos de texto y binarios solicitados por el motor o un procesador de directivas. El host puede buscar los directorios y la caché global de ensamblados para buscar ensamblados. El host puede localizar el código de procesador de directivas personalizadas para el motor. El host también puede buscar y leer archivos de texto y devolver su contenido como cadenas.
+- Buscar archivos de texto y binarios solicitados por el motor o un procesador de directivas. El host puede buscar los directorios y la caché global de ensamblados para buscar ensamblados. El host puede localizar el código de procesador de directivas personalizadas para el motor. El host también puede buscar y leer archivos de texto y devolver su contenido como cadenas.
 
--   Proporcionar listas de ensamblados estándar y espacios de nombres utilizados por el motor para crear la clase de transformación generada.
+- Proporcionar listas de ensamblados estándar y espacios de nombres utilizados por el motor para crear la clase de transformación generada.
 
--   Proporcionar el dominio de aplicación que se usa cuando el motor se compila y ejecuta la clase de transformación generada. Se usa un dominio de aplicación independiente con el fin de proteger la aplicación host de los errores en el código de plantilla.
+- Proporcionar el dominio de aplicación que se usa cuando el motor se compila y ejecuta la clase de transformación generada. Se usa un dominio de aplicación independiente con el fin de proteger la aplicación host de los errores en el código de plantilla.
 
--   Escribir el archivo de salida generado.
+- Escribir el archivo de salida generado.
 
--   Establecer la extensión predeterminada del archivo de salida generado.
+- Establecer la extensión predeterminada del archivo de salida generado.
 
--   Control de errores de transformación de plantilla de texto. Por ejemplo, el host puede mostrar los errores en la interfaz de usuario o escribirlos en un archivo. (En Visual Studio, los errores se muestran en la ventana de mensaje de Error).
+- Control de errores de transformación de plantilla de texto. Por ejemplo, el host puede mostrar los errores en la interfaz de usuario o escribirlos en un archivo. (En Visual Studio, los errores se muestran en la ventana de mensaje de Error).
 
--   Al proporcionar un valor de parámetro necesario si un usuario ha llamado a una directiva sin proporcionar un valor. El procesador de directivas puede especificar el nombre de la directiva y el parámetro y pedir al host proporcionar un valor predeterminado si lo tiene.
+- Al proporcionar un valor de parámetro necesario si un usuario ha llamado a una directiva sin proporcionar un valor. El procesador de directivas puede especificar el nombre de la directiva y el parámetro y pedir al host proporcionar un valor predeterminado si lo tiene.
 
 ## <a name="directives-and-directive-processors"></a>Las directivas y los procesadores de directivas
  Una directiva es un comando en la plantilla de texto. Proporciona los parámetros para el proceso de generación. Normalmente, las directivas definen el origen y el tipo del modelo u otra entrada y la extensión de nombre de archivo del archivo de salida.

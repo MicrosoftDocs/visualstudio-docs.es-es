@@ -1,28 +1,25 @@
 ---
-title: Procedimiento Actualizar proyectos de Visual C++ a Visual Studio 2015 | Microsoft Docs
+title: 'Cómo: actualizar proyectos de Visual C++ a Visual Studio 2015 | Microsoft Docs'
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [C++], upgrading
 ms.assetid: 9a283ebb-f6d8-49c0-a73e-323979ff56a2
 caps.latest.revision: 26
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.openlocfilehash: bd2cf85abd5b36ba0a3797ef711b4c9364b35c4e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 047cb8733e1f1fa32e67b2fc7b6c53edb6174fcb
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53945202"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54797057"
 ---
-# <a name="how-to-upgrade-visual-c-projects-to-visual-studio-2015"></a>Procedimiento Actualizar proyectos de Visual C++ a Visual Studio 2015
+# <a name="how-to-upgrade-visual-c-projects-to-visual-studio-2015"></a>Cómo: Actualizar proyectos de Visual C++ a Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Para obtener la documentación más reciente de Visual Studio 2017, consulte [Visual C++ Guía de migración y actualización](https://docs.microsoft.com/cpp/porting/visual-cpp-porting-and-upgrading-guide).

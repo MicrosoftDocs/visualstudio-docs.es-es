@@ -12,16 +12,15 @@ helpviewer_keywords:
 ms.assetid: 418249c8-c7f3-47ef-a94c-744cb6fe6aaf
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4a99ff0c28eac785e7e0e52958abcc4c94799685
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: d0ec905670c72ff7c2c5f5d94c9f5189241daebb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53900196"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100019"
 ---
 # <a name="extend-the-functionality-of-a-tableadapter"></a>Ampliar la funcionalidad de un TableAdapter
 
@@ -39,13 +38,13 @@ En el siguiente ejemplo se da por supuesto un TableAdapter llamado `CustomersTab
 
 ### <a name="to-create-a-partial-class-for-a-tableadapter"></a>Para crear una clase parcial para un TableAdapter
 
-1.  Agregar una nueva clase al proyecto, vaya a la **proyecto** menú y seleccionando **Agregar clase**.
+1. Agregar una nueva clase al proyecto, vaya a la **proyecto** menú y seleccionando **Agregar clase**.
 
-2.  Asigne a la clase el nombre `CustomersTableAdapterExtended`.
+2. Asigne a la clase el nombre `CustomersTableAdapterExtended`.
 
-3.  Seleccione **Agregar**.
+3. Seleccione **Agregar**.
 
-4.  Reemplace el código con el espacio de nombres correcto y el nombre de clase parcial para el proyecto como sigue:
+4. Reemplace el código con el espacio de nombres correcto y el nombre de clase parcial para el proyecto como sigue:
 
      [!code-csharp[VbRaddataTableAdapters#2](../data-tools/codesnippet/CSharp/extend-the-functionality-of-a-tableadapter_1.cs)]
      [!code-vb[VbRaddataTableAdapters#2](../data-tools/codesnippet/VisualBasic/extend-the-functionality-of-a-tableadapter_1.vb)]

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 492c0893-7043-452f-a020-890a47230d20
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 93c103387ff2acd7b041fc103bc519e9ac166593
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3f5b353986cf77c554b277975fabb1cb755faba3
+ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53859651"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57428549"
 ---
 # <a name="dia2dump-sample"></a>Ejemplo Dia2dump
 
@@ -64,7 +64,7 @@ De forma predeterminada, el directorio de instalación es un directorio protegid
 
 ## <a name="run-the-dia2dump-sample"></a>Ejecutar el ejemplo Dia2Dump
 
-Dia2Dump.exe se basa en el msdia*versión*.dll COM de servidor para proporcionar sus servicios. En Visual Studio 2015 y Visual Studio 2017, la versión es el archivo msdia140.dll. Si el msdia*versión*no se ha inicializado el servidor COM dll, debe registrarlo antes dia2dump.exe puede trabajar. El directorio del SDK de DIA tiene un subdirectorio bin que contiene el x86 versión del archivo DLL. Una versión para x64 máquinas de la arquitectura está en bin\amd64 y es una versión de ARM en bin\arm. Para registrar la dll, abra una ventana de símbolo del sistema para desarrolladores con privilegios elevados y cambie al directorio que contiene la versión de la arquitectura del equipo. Escriba el comando `regsvr32 msdia140.dll` para registrar el servidor COM.
+Dia2Dump.exe se basa en el msdia*versión*.dll COM de servidor para proporcionar sus servicios. A partir de Visual Studio 2015, la versión es el archivo msdia140.dll. Si el msdia*versión*no se ha inicializado el servidor COM dll, debe registrarlo antes dia2dump.exe puede trabajar. El directorio del SDK de DIA tiene un subdirectorio bin que contiene el x86 versión del archivo DLL. Una versión para x64 máquinas de la arquitectura está en bin\amd64 y es una versión de ARM en bin\arm. Para registrar la dll, abra una ventana de símbolo del sistema para desarrolladores con privilegios elevados y cambie al directorio que contiene la versión de la arquitectura del equipo. Escriba el comando `regsvr32 msdia140.dll` para registrar el servidor COM.
 
 ### <a name="to-run-the-sample"></a>Para ejecutar el ejemplo
 
@@ -76,4 +76,4 @@ Dia2Dump.exe se basa en el msdia*versión*.dll COM de servidor para proporcionar
 
 ## <a name="see-also"></a>Vea también
 
-- [Portar, migrar y actualizar proyectos de Visual Studio](../../porting/port-migrate-and-upgrade-visual-studio-projects.md)  
+- [Portar, migrar y actualizar proyectos de Visual Studio](../../porting/port-migrate-and-upgrade-visual-studio-projects.md)

@@ -1,7 +1,6 @@
 ---
 title: Cambiar el nombre y mover clases y tipos en el Diseñador de clases
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.ClassDesigner.OverrideMembersDialog
@@ -17,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: dcf07bb4-fa3b-4224-9dec-566fd924a8ce
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e85c4b760bab242ba5aa43f0e1aab0936565af33
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d99fc68f6b42b442a87ead02aba888063b1b42a1
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53891471"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55951922"
 ---
 # <a name="refactor-classes-and-types-in-class-designer"></a>Refactorizar clases y tipos en el Diseñador de clases
 

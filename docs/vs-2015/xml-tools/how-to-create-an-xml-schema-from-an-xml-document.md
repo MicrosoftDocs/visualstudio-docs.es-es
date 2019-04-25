@@ -1,30 +1,24 @@
 ---
-title: 'Cómo: crear un esquema XML de un documento XML | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Crear un esquema XML de un documento XML | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 1d6700a9-fd67-4794-8997-399589e99bec
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 84e09b4f7dcdcb21c2928ba0d80fb6ae27e90dc7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 8e32d96451e2494816ddd5f7a66591f40f847e85
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49889573"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066070"
 ---
-# <a name="how-to-create-an-xml-schema-from-an-xml-document"></a>Cómo: Crear un esquema XML a partir de un documento XML
+# <a name="how-to-create-an-xml-schema-from-an-xml-document"></a>Procedimiento Crear un esquema XML a partir de un documento XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 El Editor XML permite crear un esquema de lenguaje de definición de esquemas XML (XSD) a partir de un documento XML. El documento de instancia XML determina cómo se genera el esquema de la siguiente manera:  
   
 - Si el documento XML no tiene asociado un esquema o una definición de tipo de documento (DTD), los datos del documento XML se utilizan para inferir un nuevo esquema XML.  
@@ -39,9 +33,9 @@ El Editor XML permite crear un esquema de lenguaje de definición de esquemas XM
   
 ### <a name="to-create-an-xml-schema"></a>Para crear un esquema XML  
   
-1.  Cargue un documento de instancia XML en el Editor XML.  
+1. Cargue un documento de instancia XML en el Editor XML.  
   
-2.  Haga clic en el **Create Schema** botón desde la **barra de herramientas**.  
+2. Haga clic en el **Create Schema** botón desde la **barra de herramientas**.  
   
      Se crea un documento de esquema XML, que se abre para cada espacio de nombres hallado en el documento de instancia XML. Cada esquema se abre como un archivo de varios temporal.  
   
@@ -52,6 +46,3 @@ El Editor XML permite crear un esquema de lenguaje de definición de esquemas XM
   
 ## <a name="see-also"></a>Vea también  
  [Editor XML](../xml-tools/xml-editor.md)
-
-
-

@@ -1,20 +1,19 @@
 ---
 title: Mostrar datos en Blend
 ms.date: 03/06/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 87d31b6c-4607-4121-bb7d-cfc80390ab93
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cae026f0b4a7be3a0ed9a389f3f6d9b8a6a911f3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9a17f3db9aac8128218f82d3faa3ff1b62f9822a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53924402"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55953469"
 ---
 # <a name="display-data-in-blend"></a>Mostrar datos en Blend
 

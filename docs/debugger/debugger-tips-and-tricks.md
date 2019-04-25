@@ -2,7 +2,7 @@
 title: Sugerencias y trucos en el depurador
 description: Obtenga información sobre algunas de las características menos conocidas compatibles con el depurador de Visual Studio
 ms.custom: seodec18
-ms.date: 06/15/2017
+ms.date: 06/15/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - stepping
@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 5262d8b1-2648-429e-85d5-90fcaadfb362
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 530ed2144127e7934d02f5ccc0310d9542671507
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
-ms.translationtype: MTE95
+ms.openlocfilehash: 8b4c763ff31c6c62a177c77f8886f1de305a5170
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54270065"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097328"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Obtenga información sobre sugerencias de productividad y trucos del depurador de Visual Studio
 
@@ -53,6 +53,10 @@ Si es difícil o requiere tiempo volver a crear un estado determinado en la apli
 
 3. Si está interesado en otro tipo de condición, seleccione **filtro** en lugar de **expresión condicional** en el **configuración de punto de interrupción** cuadro de diálogo y, después, siga las sugerencias de filtro.
 
+## <a name="configure-the-data-to-show-in-the-debugger"></a>Configurar los datos que se va a mostrar en el depurador
+
+Para C#, Visual Basic, y C++ (C++solo código /CLI), puede indicar al depurador qué información se va a mostrar con el [DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md) atributo. Para C++ código, puede hacer el misma uso [visualizaciones de Natvis](create-custom-views-of-native-objects.md).
+
 ## <a name="change-the-execution-flow"></a>Cambio del flujo de ejecución
 
 Con el depurador pausó en una línea de código, use el mouse para captar el puntero de flecha amarilla en la parte izquierda. Mueva el puntero de flecha amarilla a un punto diferente en la ruta de acceso de ejecución de código. A continuación, utilice F5 o un comando de paso para continuar ejecutando la aplicación.
@@ -70,17 +74,17 @@ Es fácil ver las variables mediante las ventanas del depurador, como la **inspe
 
 #### <a name="to-create-an-object-id"></a>Para crear un identificador de objeto
 
-1.  Establezca un punto de interrupción cerca de una variable que se desea realizar un seguimiento.
+1. Establezca un punto de interrupción cerca de una variable que se desea realizar un seguimiento.
 
-2.  Iniciar el depurador (**F5**) y detenga el punto de interrupción.
+2. Iniciar el depurador (**F5**) y detenga el punto de interrupción.
 
 3. Busque la variable en el **variables locales** ventana (**Depurar > Windows > variables locales**), haga clic en la variable y seleccione **Make Object ID**.
 
     ![Crear un identificador de objeto](../debugger/media/dbg-tips-watch-create-object-id.png "CreateObjectID")
-  
-4.  Debería ver el símbolo **$** junto con un número en la ventana **Locales** . Esta variable es el identificador de objeto.
-  
-5.  Haga clic en la variable de Id. de objeto y elija **Agregar inspección**.
+
+4. Debería ver el símbolo **$** junto con un número en la ventana **Locales** . Esta variable es el identificador de objeto.
+
+5. Haga clic en la variable de Id. de objeto y elija **Agregar inspección**.
 
 Para obtener más información, consulte [crear un identificador de objeto](../debugger/watch-and-quickwatch-windows.md#bkmk_objectIds).
 
@@ -106,7 +110,7 @@ Un visualizador de cadenas puede ayudarle a averiguar si una cadena es un format
 
 ![Visualizador de cadenas JSON](../debugger/media/dbg-tips-string-visualizer-json.png "JSONStringVisualizer")
 
-Para algunos otros tipos como objetos WPF que aparecen en las ventanas del depurador, también puede abrir los visualizadores.
+Para algunos otros tipos como objetos DataSet y DataTable que aparecen en las ventanas del depurador, también puede abrir un visualizador integrado.
 
 ## <a name="break-into-code-on-handled-exceptions"></a>Interrumpir el código en las excepciones controladas
 
@@ -122,13 +126,13 @@ Si tiene que depurar los tipos de problemas que son comunes a las aplicaciones m
 
 #### <a name="to-show-threads-in-your-source-code"></a>Para mostrar los subprocesos en el código fuente
 
-1.  Durante la depuración, haga clic en el **Mostrar subprocesos en código fuente** botón ![Mostrar subprocesos en código fuente](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker") en el **depurar** barra de herramientas.
-  
-2.  Examine el margen interno izquierdo de la ventana. En esta línea, verá un *marcador de subproceso* icono ![marcador de subproceso](../debugger/media/dbg-thread-marker.png "ThreadMarker") que es similar a dos hilos. El marcador de subproceso indica que un subproceso se ha detenido en esa ubicación.
+1. Durante la depuración, haga clic en el **Mostrar subprocesos en código fuente** botón ![Mostrar subprocesos en código fuente](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker") en el **depurar** barra de herramientas.
+
+2. Examine el margen interno izquierdo de la ventana. En esta línea, verá un *marcador de subproceso* icono ![marcador de subproceso](../debugger/media/dbg-thread-marker.png "ThreadMarker") que es similar a dos hilos. El marcador de subproceso indica que un subproceso se ha detenido en esa ubicación.
 
     Tenga en cuenta que un marcador de subproceso es posible que se ocultan parcialmente por un punto de interrupción.
-  
-3.  Desplace el puntero sobre el marcador de subproceso. Aparece la Información sobre datos. En ella se indican el nombre y el número de id. de subproceso de cada subproceso detenido.
+
+3. Desplace el puntero sobre el marcador de subproceso. Aparece la Información sobre datos. En ella se indican el nombre y el número de id. de subproceso de cada subproceso detenido.
 
     También puede ver la ubicación de los subprocesos en la [ventana Pilas paralelas](../debugger/get-started-debugging-multithreaded-apps.md).
 
@@ -162,8 +166,8 @@ Para averiguar cómo el depurador clasifica el código como código de usuario, 
 
 Para otras recomendaciones y trucos y obtener información más detallada, vea estas entradas de blog:
 
-- [7 ataques conocidos menor para la depuración en Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/2017/06/26/7-lesser-known-hacks-for-debugging-in-visual-studio/)
-- [7 gemas ocultas de Visual Studio](https://blogs.msdn.microsoft.com/visualstudio/2017/10/05/7-hidden-gems-in-visual-studio-2017/)
+- [7 ataques conocidos menor para la depuración en Visual Studio](https://devblogs.microsoft.com/visualstudio/7-lesser-known-hacks-for-debugging-in-visual-studio/)
+- [7 gemas ocultas de Visual Studio](https://devblogs.microsoft.com/visualstudio/7-hidden-gems-in-visual-studio-2017/)
 
 ## <a name="see-also"></a>Vea también
 [Métodos abreviados de teclado](../ide/tips-and-tricks-for-visual-studio.md)

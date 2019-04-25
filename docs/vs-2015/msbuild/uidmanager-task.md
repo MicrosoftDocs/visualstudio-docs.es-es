@@ -1,14 +1,9 @@
 ---
 title: UidManager (Tarea) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -24,18 +19,17 @@ ms.assetid: 4fc7b5a5-11b0-46ca-9656-8c2a0b08d1fe
 caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: fa51ddb8f2cf6e200b7313069fca3ee6db3ebcf3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 497c8f2ff8defd0acdf943f4856f0195e50366ce
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49208070"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656835"
 ---
 # <a name="uidmanager-task"></a>UidManager (Tarea)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 La tarea <xref:Microsoft.Build.Tasks.Windows.UidManager> comprueba, actualiza o quita identificadores únicos (UID) para buscar todos los elementos de [!INCLUDE[TLA#tla_xaml](../includes/tlasharptla-xaml-md.md)] incluidos en los archivos [!INCLUDE[TLA2#tla_xaml](../includes/tla2sharptla-xaml-md.md)] de origen.  
   
 ## <a name="task-parameters"></a>Parámetros de tareas  
@@ -70,6 +64,3 @@ La tarea <xref:Microsoft.Build.Tasks.Windows.UidManager> comprueba, actualiza o 
  [Referencia de tareas](../msbuild/msbuild-task-reference.md)   
  [Compilar una aplicación de WPF (WPF)](http://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)   
  [Cómo: Localizar una aplicación](http://msdn.microsoft.com/library/5001227e-9326-48a4-9dcd-ba1b89ee6653)
-
-
-

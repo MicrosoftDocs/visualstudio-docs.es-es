@@ -1,26 +1,21 @@
 ---
 title: Enlace de puntos de interrupción | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - breakpoints, binding
 ms.assetid: 70737387-c52f-4dae-8865-77d4b203bf25
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: f8061b8d9a9cf3f29889405ea8004a79a0af8216
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: fc7f68093432c96d496921ea593b6e936bad8302
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51807379"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039722"
 ---
 # <a name="binding-breakpoints"></a>Enlace de puntos de interrupción
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,15 +25,15 @@ Si el usuario establece un punto de interrupción, quizás presionando F9, el ID
 ## <a name="setting-a-breakpoint"></a>Establecer un punto de interrupción  
  Establecer un punto de interrupción es un proceso en dos pasos, porque el código o los datos afectados por el punto de interrupción podrían no estar disponibles. En primer lugar, se debe describir el punto de interrupción y, a continuación, tal como están disponibles el código o datos, se debe estar enlazada a ese código o datos, como se indica a continuación:  
   
-1.  El punto de interrupción se solicita desde los motores de depuración relevantes (DEs) y, a continuación, se enlaza el punto de interrupción en el código o datos cuando se encuentre disponible.  
+1. El punto de interrupción se solicita desde los motores de depuración relevantes (DEs) y, a continuación, se enlaza el punto de interrupción en el código o datos cuando se encuentre disponible.  
   
-2.  La solicitud de punto de interrupción se envía a la sesión de depuración, que lo envía a todos los DEs pertinentes. Cualquier DE que elige para controlar el punto de interrupción crea correspondiente pendiente de punto de interrupción.  
+2. La solicitud de punto de interrupción se envía a la sesión de depuración, que lo envía a todos los DEs pertinentes. Cualquier DE que elige para controlar el punto de interrupción crea correspondiente pendiente de punto de interrupción.  
   
-3.  La sesión de depuración recopila los puntos de interrupción pendientes y los envía al paquete de depuración (el componente de depuración de Visual Studio).  
+3. La sesión de depuración recopila los puntos de interrupción pendientes y los envía al paquete de depuración (el componente de depuración de Visual Studio).  
   
-4.  El paquete de depuración solicita la sesión de depuración para enlazar el punto de interrupción pendiente al código o datos. La sesión de depuración envía esta solicitud a todos los DEs pertinentes.  
+4. El paquete de depuración solicita la sesión de depuración para enlazar el punto de interrupción pendiente al código o datos. La sesión de depuración envía esta solicitud a todos los DEs pertinentes.  
   
-5.  Si la DE se puede enlazar el punto de interrupción, envía que un punto de interrupción enlazado el evento a la sesión de depuración. Si no es así, envía un evento de error de punto de interrupción en su lugar.  
+5. Si la DE se puede enlazar el punto de interrupción, envía que un punto de interrupción enlazado el evento a la sesión de depuración. Si no es así, envía un evento de error de punto de interrupción en su lugar.  
   
 ## <a name="pending-breakpoints"></a>Puntos de interrupción pendientes  
  Un punto de interrupción pendiente puede enlazar a varias ubicaciones del código. Por ejemplo, puede enlazar una línea de código fuente de una plantilla de C++ para cada secuencia de código generado a partir de la plantilla. La sesión de depuración puede usar un evento de punto de interrupción enlazado para enumerar los contextos de código enlazados a un punto de interrupción en el momento en que se envió el evento. Más contextos de código se pueden enlazar más adelante, por lo que puede enviar la DE que punto de interrupción varias enlaza eventos para cada solicitud de enlace. Sin embargo, a DE debe enviar un solo evento de error de punto de interrupción por solicitud de enlace.  
@@ -62,4 +57,3 @@ Si el usuario establece un punto de interrupción, quizás presionando F9, el ID
   
 ## <a name="see-also"></a>Vea también  
  [Tareas de depuración](../../extensibility/debugger/debugging-tasks.md)
-

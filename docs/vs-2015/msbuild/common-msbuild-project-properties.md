@@ -1,14 +1,9 @@
 ---
 title: Propiedades comunes de proyectos de MSBuild | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -23,18 +18,17 @@ ms.assetid: 9857505d-ae15-42f1-936d-6cd7fb9dd276
 caps.latest.revision: 39
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 30371d20e240e5679664a687c5ca098519cac9c0
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 7d5c716d702716ffb0083279523668eab3e01685
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49300058"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650259"
 ---
 # <a name="common-msbuild-project-properties"></a>Propiedades comunes de proyectos de MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 En la tabla siguiente se enumeran las propiedades utilizadas con frecuencia definidas en los archivos de proyecto de Visual Studio o incluidas en los archivos .targets que proporciona MSBuild.  
   
  Los archivos de proyecto de Visual Studio (.csproj, .vbproj, vcxproj, etc.) contienen código XML de MSBuild que se ejecuta cuando se compila un proyecto mediante el IDE. Normalmente, los proyectos importan uno o más archivos .targets para definir su proceso de compilación. Para obtener más información, vea [Archivos .Targets](../msbuild/msbuild-dot-targets-files.md).  
@@ -136,6 +130,3 @@ En la tabla siguiente se enumeran las propiedades utilizadas con frecuencia defi
   
 ## <a name="see-also"></a>Vea también  
  [Elementos comunes de proyectos de MSBuild](../msbuild/common-msbuild-project-items.md)
-
-
-

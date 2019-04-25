@@ -1,7 +1,6 @@
 ---
 title: -Diff (devenv.exe)
 ms.date: 12/10/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - Devenv, /Diff switch
@@ -10,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5377fedb-632a-4e86-a947-7c11c86451e7
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cfe0fcdb039b4c7b234f3f43e6ce5741d96f5e9c
-ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.openlocfilehash: c2e69435a319a9730af846a912cb3f90a12d4ac8
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54227452"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55918474"
 ---
 # <a name="diff-devenvexe"></a>/Diff (devenv.exe)
 
@@ -47,7 +46,7 @@ devenv /Diff SourceFile TargetFile [SourceDisplayName [TargetDisplayName]]
 - *TargetDisplayName*
 
   Opcional. Nombre para mostrar del segundo archivo.
-    
+
 ## <a name="remarks"></a>Comentarios
 
 Si ya hay abierta una instancia de IDE, la comparación de archivos se mostrará en una pestaña de IDE actual.

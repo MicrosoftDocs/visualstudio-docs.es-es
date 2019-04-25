@@ -1,24 +1,19 @@
 ---
 title: Analizar la cobertura de código en pruebas de comprobación de la compilación | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: 59c07d15-511e-4fd0-b398-bde9d5ed00d9
 caps.latest.revision: 10
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: b67986e42a914c73dea99f97611967aa6ee24097
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e7525fe8e01922880199275576a8b12ec29bc029
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49905459"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54834938"
 ---
 # <a name="analyzing-code-coverage-in-build-verification-tests"></a>Analizar la cobertura de código en pruebas de comprobación de la compilación
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +28,7 @@ El análisis de cobertura de código de Microsoft Visual Studio muestra que cant
   
     Si tiene más de una definición de origen de la prueba, repita este paso para cada una.  
   
-   - <em>Pero no hay ningún campo denominado **tipo de archivo de configuración de ejecución</em>*. *  
+   - <em>Pero no hay ningún campo denominado **Tipo de archivo de parámetros de ejecución</em>*.*  
   
       En **Pruebas automatizadas**, seleccione **Ensamblado de prueba** y elija los puntos suspensivos **[...]** al final de la línea. En el cuadro de diálogo **Agregar o editar serie de pruebas**, en **Ejecutor de pruebas**, elija **Ejecutor de pruebas de Visual Studio**.  
   
@@ -43,6 +38,3 @@ El análisis de cobertura de código de Microsoft Visual Studio muestra que cant
   
 ## <a name="see-also"></a>Vea también  
  [Usar cobertura de código para determinar la cantidad de código que se está probando](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)
-
-
-

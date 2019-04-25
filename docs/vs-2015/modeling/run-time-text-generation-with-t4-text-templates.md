@@ -1,12 +1,9 @@
 ---
 title: Generación de texto en tiempo de ejecución con plantillas de texto T4 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Preprocessed Text Template project item
 - TextTemplatingFilePreprocessor custom tool
@@ -16,13 +13,13 @@ ms.assetid: 79b4b3c6-a9a7-4446-b6fd-e2388fc6b05f
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 75da17b32d3997121777f398a6663932c7d7143d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 37fa7bafb77c67d29ff9625fa04388f9dd826f8e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49920136"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059271"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>Generación de texto en tiempo de ejecución con plantillas de texto T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,16 +53,16 @@ This report is Company Confidential.
   
 #### <a name="to-create-a-run-time-text-template"></a>Para crear una plantilla de texto en tiempo de ejecución  
   
-1.  En el Explorador de soluciones, en el menú contextual del proyecto, elija **agregar**, **nuevo elemento**.  
+1. En el Explorador de soluciones, en el menú contextual del proyecto, elija **agregar**, **nuevo elemento**.  
   
-2.  En el **Agregar nuevo elemento** cuadro de diálogo, seleccione **plantilla de texto en tiempo de ejecución**. (En [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] mire en **Items\General común**.)  
+2. En el **Agregar nuevo elemento** cuadro de diálogo, seleccione **plantilla de texto en tiempo de ejecución**. (En [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] mire en **Items\General común**.)  
   
-3.  Escriba un nombre para el archivo de plantilla.  
+3. Escriba un nombre para el archivo de plantilla.  
   
     > [!NOTE]
     >  El nombre de archivo de plantilla se utilizará como nombre de clase en el código generado. Por lo tanto, no debe tener espacios o signos de puntuación.  
   
-4.  Haga clic en **Agregar**.  
+4. Haga clic en **Agregar**.  
   
      Se crea un nuevo archivo con extensión **.tt**. Su **Custom Tool** propiedad está establecida en **TextTemplatingFilePreprocessor**. Contiene las siguientes líneas:  
   
@@ -82,18 +79,18 @@ This report is Company Confidential.
   
 #### <a name="to-convert-an-existing-text-file-to-a-run-time-template"></a>Para convertir un archivo de texto existente en una plantilla en tiempo de ejecución  
   
-1.  Incluir el archivo en su [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] proyecto. En el Explorador de soluciones, en el menú contextual del proyecto, elija **agregar**, **elemento existente**.  
+1. Incluir el archivo en su [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] proyecto. En el Explorador de soluciones, en el menú contextual del proyecto, elija **agregar**, **elemento existente**.  
   
-2.  Establezca el archivo **Custom Tools** propiedad **TextTemplatingFilePreprocessor**. En el Explorador de soluciones, en el menú contextual del archivo, elija **propiedades**.  
+2. Establezca el archivo **Custom Tools** propiedad **TextTemplatingFilePreprocessor**. En el Explorador de soluciones, en el menú contextual del archivo, elija **propiedades**.  
   
     > [!NOTE]
     >  Si la propiedad ya está establecida, asegúrese de que es **TextTemplatingFilePreprocessor** y no **TextTemplatingFileGenerator**. Esto puede ocurrir si incluye un archivo que ya tiene la extensión **.tt**.  
   
-3.  Cambiar la extensión de nombre de archivo a **.tt**. Aunque este paso es opcional, le ayuda a evitar que se abra el archivo en un editor incorrecto.  
+3. Cambiar la extensión de nombre de archivo a **.tt**. Aunque este paso es opcional, le ayuda a evitar que se abra el archivo en un editor incorrecto.  
   
-4.  Quitar espacios ni signos de puntuación de la parte principal del nombre de archivo. Por ejemplo "Mi página Web.tt" sería correcto, pero "MyWebPage.tt" es correcta. El nombre de archivo se usará como nombre de clase en el código generado.  
+4. Quitar espacios ni signos de puntuación de la parte principal del nombre de archivo. Por ejemplo "Mi página Web.tt" sería correcto, pero "MyWebPage.tt" es correcta. El nombre de archivo se usará como nombre de clase en el código generado.  
   
-5.  Inserte la siguiente línea al principio del archivo. Si está trabajando en un proyecto de Visual Basic, reemplace "C#" con "VB".  
+5. Inserte la siguiente línea al principio del archivo. Si está trabajando en un proyecto de Visual Basic, reemplace "C#" con "VB".  
   
      `<#@ template language="C#" #>`  
   
@@ -292,7 +289,7 @@ System.IO.File.WriteAllText("outputPage.html", pageContent)
 ### <a name="inheritance-between-run-time-text-templates"></a>Herencia entre plantillas de texto de tiempo de ejecución  
  Puede compartir contenido entre las plantillas de tiempo de ejecución mediante la escritura de una plantilla de clase base, que puede ser abstracta. Use la `inherits` parámetro de la `<@#template#>` directiva para hacer referencia a otra clase de plantilla en tiempo de ejecución.  
   
-#### <a name="inheritance-pattern-fragments-in-base-methods"></a>Patrón de herencia: fragmentos de métodos Base  
+#### <a name="inheritance-pattern-fragments-in-base-methods"></a>Patrón de herencia: Fragmentos de métodos Base  
  En el patrón utilizado en el ejemplo siguiente, tenga en cuenta los siguientes puntos:  
   
 - La clase base `SharedFragments` define los métodos dentro de bloques de características de clase `<#+ ... #>`.  
@@ -431,7 +428,4 @@ End material for DerivedTemplate1.
 ## <a name="see-also"></a>Vea también  
  [Generación de código y plantillas de texto T4](../modeling/code-generation-and-t4-text-templates.md)   
  [Escribir una plantilla de texto T4](../modeling/writing-a-t4-text-template.md)   
- [Descripción de T4: Plantillas de texto preprocesada por Oleg Sych](http://www.olegsych.com/2009/09/t4-preprocessed-text-templates/)
-
-
-
+ [Descripción T4: Plantillas de texto preprocesada por Oleg Sych](https://github.com/olegsych/T4Toolbox)

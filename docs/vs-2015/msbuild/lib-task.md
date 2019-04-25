@@ -1,14 +1,9 @@
 ---
 title: Tarea LIB | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - VC.Project.VCLibrarianTool.Name
 - VC.Project.VCLibrarianTool.TreatLibWarningsAsErrors
@@ -30,29 +25,27 @@ ms.assetid: e062c7f9-cc69-4a83-9361-1bb5355e5fe8
 caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 141c153fa65d9858991061c79dc423f18227a381
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 338b5a93ebedca14c6ceb531354cd1852fbaae6e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812601"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665433"
 ---
 # <a name="lib-task"></a>LIB (tarea)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 Incluye la herramienta de Microsoft Administrador de bibliotecas de 32 bits, lib.exe. El Administrador de bibliotecas crea y administra una biblioteca de archivos objeto con formato de archivo de objeto común (COFF). El Administrador de bibliotecas también puede crear archivos de exportación y bibliotecas de importación para hacer referencia a las definiciones que se exportan. Para más información, vea [Referencia de LIB](http://msdn.microsoft.com/library/ecc7f643-bbd4-47a3-8dc6-b360f880db91) y [Ejecutar LIB](http://msdn.microsoft.com/library/d54f5c81-7147-4b2c-a8db-68ce6eb1eabd).  
 
 ## <a name="parameters"></a>Parámetros  
  En la siguiente tabla se describen los parámetros de la tarea **LIB**. La mayoría de los parámetros de tarea corresponden a una opción de línea de comandos.  
 
-
 |             Parámetro              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                  Descripción                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 |------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |     **AdditionalDependencies**     |                                                                                                                                                                                                                                                                                                                                                                                                                      Parámetro **String[]** opcional.<br /><br /> Especifica elementos adicionales que se agregarán a la línea de comandos del vínculo.                                                                                                                                                                                                                                                                                                                                                                                                                       |
 |  **AdditionalLibraryDirectories**  |                                                                                                                                                                                                                                                                                                                                         Parámetro **String[]** opcional.<br /><br /> Reemplaza la ruta de acceso a la biblioteca de entorno. Especifique un nombre de directorio.<br /><br /> Para obtener más información, consulte [/LIBPATH (Directorios de bibliotecas adicionales)](http://msdn.microsoft.com/library/7240af0b-9a3d-4d53-8169-2a92cd6958ba).                                                                                                                                                                                                                                                                                                                                          |
-|       **AdditionalOptions**        |                                                                                                                                                                                                                                                                        Parámetro **String** opcional.<br /><br /> Una lista de opciones de lib.exe especificada en la línea de comando. Por ejemplo, **"*/option1 option2 /Option #*". Utilice este parámetro para especificar opciones de lib.exe que no están representadas por ningún otro \* \*LIB** parámetro de tarea.<br /><br /> Para más información, vea [Ejecutar LIB](http://msdn.microsoft.com/library/d54f5c81-7147-4b2c-a8db-68ce6eb1eabd).                                                                                                                                                                                                                                                                        |
+|       **AdditionalOptions**        |                                                                                                                                                                                                                                                                        Parámetro **String** opcional.<br /><br /> Una lista de opciones de lib.exe especificada en la línea de comando. Por ejemplo, **"*/opción1 /opción2 /opción#*". Use este parámetro para especificar opciones de lib.exe que no estén representadas por ningún otro parámetro de tarea \*\*LIB**.<br /><br /> Para más información, vea [Ejecutar LIB](http://msdn.microsoft.com/library/d54f5c81-7147-4b2c-a8db-68ce6eb1eabd).                                                                                                                                                                                                                                                                        |
 |         **DisplayLibrary**         |                                                                                                                                                                                                                                                                                                                      Parámetro **String** opcional.<br /><br /> Muestra información sobre la biblioteca de salida. Especifique un nombre de archivo para redirigir la información a un archivo. Especifique "CON" o nada para redirigir la información a la consola.<br /><br /> Este parámetro corresponde a la opción **/LIST** de lib.exe.                                                                                                                                                                                                                                                                                                                      |
 |         **ErrorReporting**         |                                                                                                                                              Parámetro **String** opcional.<br /><br /> Especifica cómo enviar información de error interno a Microsoft si lib.exe genera un error en tiempo de ejecución.<br /><br /> Especifique uno de los valores siguientes, cada uno de los cuales corresponde a una opción de línea de comandos.<br /><br /> -   **NoErrorReport** - **/ERRORREPORT:NONE**<br />-   **PromptImmediately** - **/ERRORREPORT:PROMPT**<br />-   **QueueForNextLogin** - **/ERRORREPORT:QUEUE**<br />-   **SendErrorReport** - **/ERRORREPORT:SEND**<br /><br /> Para más información, vea la opción de línea de comandos **/ERRORREPORT** en [Ejecutar LIB](http://msdn.microsoft.com/library/d54f5c81-7147-4b2c-a8db-68ce6eb1eabd).                                                                                                                                               |
 |      **ExportNamedFunctions**      |                                                                                                                                                                                                                                                                                                                                                                                     Parámetro **String[]** opcional.<br /><br /> Especifica una o más funciones que se van a exportar.<br /><br /> Este parámetro corresponde a la opción **/EXPORT:** de lib.exe.                                                                                                                                                                                                                                                                                                                                                                                      |
@@ -79,6 +72,3 @@ Incluye la herramienta de Microsoft Administrador de bibliotecas de 32 bits, lib
 
 ## <a name="see-also"></a>Vea también  
  [Referencia de tareas](../msbuild/msbuild-task-reference.md)
-
-
-

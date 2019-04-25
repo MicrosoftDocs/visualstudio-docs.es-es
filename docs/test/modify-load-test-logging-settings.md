@@ -7,14 +7,13 @@ helpviewer_keywords:
 ms.assetid: 9649226a-857d-41ef-8ec7-047b6e498033
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 88819e8858a57a16e327e8e7b04f69c74fe5045a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 9751ce3b08a0ac963cccdf091ccb99001c6f2c9f
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53900787"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416089"
 ---
 # <a name="modify-load-test-logging-settings"></a>Modificar la configuración de registro de pruebas de carga
 
@@ -27,7 +26,7 @@ El *controlador de pruebas* pone en cola todos los datos de ejemplo de la prueba
 |Tarea|Temas relacionados|
 |-|-----------------------|
 |**Guardar los registros si se produce un error en una prueba de carga:** puede especificar si quiere guardar el registro de la prueba siempre que se produzca un error en una prueba de carga.|-   [Cómo: Especificar si los errores de las pruebas se guardan en los registros de pruebas](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)|
-|**Especificar el tamaño máximo del archivo de registro:** puede editar el archivo de configuración XML asociado al servicio del controlador de pruebas para especificar el tamaño máximo que quiere usar para el archivo de registro.|[Cómo: Especificar el tamaño máximo del archivo de registro](../test/how-to-specify-the-maximum-size-for-the-log-file.md)|
+|**Especificar el tamaño máximo del archivo de registro:** puede editar el archivo de configuración XML asociado al servicio del controlador de pruebas para especificar el tamaño máximo que quiere usar para el archivo de registro.|Modifique `<add key="LogSizeLimitInMegs" value="20"/>` en el archivo de configuración XML *QTCcontroller.exe.config*.|
 
 ## <a name="see-also"></a>Vea también
 

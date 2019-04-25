@@ -1,20 +1,19 @@
 ---
 title: Depuración o deshabilitación de código de proyecto en el Diseñador XAML
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: ac600581-8fc8-49e3-abdf-1569a3483d74
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 3ff3785d3acc5a16116cc8c56d41cc3988406bff
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 50ebaad52473eaccb39d8253e9af5fbb9f4a3cbf
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986744"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56596743"
 ---
 # <a name="debug-or-disable-project-code-in-xaml-designer"></a>Depuración o deshabilitación de código de proyecto en el Diseñador XAML
 
@@ -89,7 +88,7 @@ Cuando se deshabilita el código del proyecto, Visual Studio muestra marcadores 
 ## <a name="control-display-options"></a>Opciones de visualización de controles
 
 > [!NOTE]
-> **Opciones de visualización de controles** solo está disponible para aplicaciones de Plataforma universal de Windows que tienen como destino Windows 10 Fall Creators Update (compilación 16299) o posterior. La característica **Opciones de visualización de controles** está disponible en Visual Studio 2017, versión 15.9 o posterior. 
+> **Opciones de visualización de controles** solo está disponible para aplicaciones de Plataforma universal de Windows que tienen como destino Windows 10 Fall Creators Update (compilación 16299) o posterior. La característica **Opciones de visualización de controles** está disponible en Visual Studio 2017, versión 15.9 o posterior.
 
 En el diseñador XAML, puede cambiar las opciones de visualización de controles para que solo se muestren los controles de plataforma desde Windows SDK. Esto puede mejorar la confiabilidad del diseñador XAML.
 

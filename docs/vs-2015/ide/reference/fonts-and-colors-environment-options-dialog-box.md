@@ -1,14 +1,9 @@
 ---
 title: Fuentes y colores, Entorno, Opciones (Cuadro de diálogo) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPag.Environment.Fonts_And_Colors
 - VS.ToolsOptionsPages.FontsAndColors
@@ -31,22 +26,21 @@ ms.assetid: c767d302-51ed-47a8-a527-c07bce2aa485
 caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: dbaaab64a50a918844a8f9060ce80ee8c8e7ae00
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+manager: jillfra
+ms.openlocfilehash: a1a66ae20065546d5a42b990d0ba0009d0657ed0
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50220240"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656032"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Fuentes y colores, Entorno, Opciones (Cuadro de diálogo)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 La página **Fuentes y colores** del cuadro de diálogo **Opciones** le permite establecer una combinación de colores y una fuente personalizadas para varios elementos de la interfaz de usuario del entorno de desarrollo integrado (IDE). Puede acceder a este cuadro de diálogo haciendo clic en **Herramientas / Opciones**, y,después, seleccione **Entorno / Fuentes y colores**. Si esta página no aparece en la lista, en el cuadro de diálogo **Opciones**, seleccione **Mostrar todas las configuraciones**.  
   
 > [!NOTE]
->  Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Los cambios de combinaciones de colores no surten efecto durante la sesión en la que se realizan. Puede evaluar los cambios de color abriendo otra instancia de Visual Studio y creando las condiciones en las que espera aplicar los cambios.  
   
@@ -111,7 +105,7 @@ La página **Fuentes y colores** del cuadro de diálogo **Opciones** le permite 
 |**Marcador**|Líneas con marcadores. **Marcador** solo está visible si el margen del indicador está deshabilitado.|  
 |**Coincidencia de llaves (resaltar)**|Resaltado que suele ser el formato de negrita para la coincidencia de llaves.|  
 |**Coincidencia de llaves (rectángulo)**|Resaltado que suele ser un rectángulo gris en segundo plano.|  
-|**Punto de interrupción (deshabilitado)**|No usado.|  
+|**Punto de interrupción (deshabilitado)**|No se utiliza.|  
 |**Punto de interrupción (habilitado)**|Especifica el color de resaltado para las instrucciones o líneas que contienen puntos de interrupción simples. Esta opción solo es aplicable si los puntos de interrupción de nivel de instrucción están activos o si está seleccionada la opción **Resaltar la línea de código fuente para los puntos de interrupción o la instrucción actual** en [General, Depuración, Opciones (Cuadro de diálogo)](../../debugger/general-debugging-options-dialog-box.md).|  
 |**Punto de interrupción (error)**|Especifica el color de resaltado para las instrucciones o líneas que contienen puntos de interrupción que están en un estado de error. Solo es aplicable si los puntos de interrupción de nivel de instrucción están activos o si está seleccionada la opción **Resaltar la línea de código fuente para los puntos de interrupción o la instrucción actual** en [General, Depuración, Opciones (Cuadro de diálogo)](../../debugger/general-debugging-options-dialog-box.md).|  
 |**Punto de interrupción (advertencia)**|Especifica el color de resaltado para las instrucciones o líneas que contienen puntos de interrupción simples que están en un estado de advertencia. Solo es aplicable si los puntos de interrupción de nivel de instrucción están activos o si está seleccionada la opción **Resaltar la línea de código fuente para los puntos de interrupción o la instrucción actual** en [General, Depuración, Opciones (Cuadro de diálogo)](../../debugger/general-debugging-options-dialog-box.md).|  
@@ -153,7 +147,7 @@ La página **Fuentes y colores** del cuadro de diálogo **Opciones** le permite 
 |**Palabra clave**|Palabras clave para el idioma especificado que están reservadas. Por ejemplo: clase y espacio de nombres.|  
 |**Dirección de memoria**|El color de texto usado para mostrar la columna de direcciones dentro de la ventana **Memoria**.|  
 |**Memoria cambiada**|El color de texto usado para mostrar datos cambiados dentro de la ventana **Memoria**.|  
-|**Datos de memoria**|El color de texto utilizado para mostrar datos dentro de la **memoria** ventana.|  
+|**Datos de memoria**|El color de texto usado para mostrar datos dentro de la ventana **Memoria**.|  
 |**No se puede leer la memoria**|El color de texto usado para mostrar áreas de memoria dentro de la ventana **Memoria**.|  
 |**Número**|Un número en el código que representa un valor numérico real.|  
 |**Operator**|Operadores, como +, -, y! =.|  
@@ -172,7 +166,7 @@ La página **Fuentes y colores** del cuadro de diálogo **Opciones** le permite 
 |**Cadena (C# @ Verbatim)**|Literales de cadena en C# que se interpretan literalmente. Por ejemplo:<br /><br /> @"x"|  
 |**Error de sintaxis**|Errores de análisis.|  
 |**Acceso directo de la Lista de tareas**|Si se agrega a una línea un acceso directo de la **Lista de tareas** y el margen del indicador está deshabilitado, se resaltará la línea.|  
-|**Punto de seguimiento (deshabilitado)**|No usado.|  
+|**Punto de seguimiento (deshabilitado)**|No se utiliza.|  
 |**Punto de seguimiento (habilitado)**|Especifica el color de resaltado para las instrucciones o líneas que contienen puntos de seguimiento simples. Esta opción solo es aplicable si los puntos de seguimiento de nivel de instrucción están activos o si está seleccionada la opción **Resaltar la línea de código fuente para los puntos de interrupción o la instrucción actual** en [General, Depuración, Opciones (Cuadro de diálogo)](../../debugger/general-debugging-options-dialog-box.md).|  
 |**Punto de seguimiento (error)**|Especifica el color de resaltado para las instrucciones o líneas que contienen puntos de seguimiento que están en un estado de error. Esta opción solo es aplicable si los puntos de seguimiento de nivel de instrucción están activos o si está seleccionada la opción **Resaltar la línea de código fuente para los puntos de interrupción o la instrucción actual** en [General, Depuración, Opciones (Cuadro de diálogo)](../../debugger/general-debugging-options-dialog-box.md).|  
 |**Punto de seguimiento (advertencia)**|Especifica el color de resaltado para las instrucciones o líneas que contienen puntos de seguimiento que están en un estado de advertencia. Esta opción solo es aplicable si los puntos de seguimiento de nivel de instrucción están activos o si está seleccionada la opción **Resaltar la línea de código fuente para los puntos de interrupción o la instrucción actual** en [General, Depuración, Opciones (Cuadro de diálogo)](../../debugger/general-debugging-options-dialog-box.md).|  
@@ -197,7 +191,7 @@ La página **Fuentes y colores** del cuadro de diálogo **Opciones** le permite 
 |**Atributo XML**|Nombres de atributo.|  
 |**Comillas de atributo XML**|Los caracteres de comillas para los atributos XML.|  
 |**Valor del atributo XML**|Contenido de atributos XML.|  
-|**Sección CData XML**|Contenido de \<! [ CDATA [...]] >.|  
+|**Sección CData XML**|Contenido de \<![CDATA[…]]>.|  
 |**Comentario XML**|Contenido de \<!-- -->.|  
 |**Delimitador XML**|Delimitadores de sintaxis XML, <, <?, <!, \<!--, -->, ?\>, \<![, ]]> y [, ].|  
 |**Atributo de documento XML**|El valor de un atributo de documentación xml, como \<param name = "I" > donde la "I" se colorea.|  
@@ -241,7 +235,4 @@ La página **Fuentes y colores** del cuadro de diálogo **Opciones** le permite 
 ## <a name="see-also"></a>Vea también  
  [Opciones de entorno (Cuadro de diálogo)](../../ide/reference/environment-options-dialog-box.md)   
  [Cuadro de diálogo Opciones](../../ide/reference/options-dialog-box-visual-studio.md)   
- [Cómo: Cambiar fuentes y colores](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
-
-
-
+ [Cómo: cambiar fuentes y colores](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)

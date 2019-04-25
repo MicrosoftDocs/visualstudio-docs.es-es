@@ -6,33 +6,31 @@ helpviewer_keywords:
 - Domain-Specific Language, diagram
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: e38984ceeaad6971d94afd488a0f4027e7260769
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 19f63ebc662b745062f0163a1f82eb036e164f3a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968302"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046519"
 ---
-# <a name="customizing-presentation-on-the-diagram"></a>Personalizar la presentación en el diagrama
-El diagrama es el área de presentación principal de un diseñador de lenguaje específico de dominio. Normalmente, los usuarios utilizarán el diagrama para construir sus modelos. Puede personalizar el diagrama tal y como se describe en los siguientes temas.
+# <a name="customize-presentation-on-the-diagram"></a>Personalizar la presentación en el diagrama
 
--   [Definir formas y conectores](../modeling/defining-shapes-and-connectors.md)
+El diagrama es el área de presentación principal de un diseñador de lenguaje específico de dominio. Normalmente, los usuarios utilizarán el diagrama para construir sus modelos. Puede personalizar el diagrama, como se describe en los siguientes artículos:
 
--   [Controlar el color, el estilo de línea y otras propiedades de forma](../modeling/controlling-color-line-style-and-other-shape-properties.md)
+- [Definir formas y conectores](../modeling/defining-shapes-and-connectors.md)
 
--   [Controlar la visibilidad de un icono o un elemento Decorator](../modeling/controlling-the-visibility-of-an-icon-or-decorator.md)
+- [Controlar el color, el estilo de línea y otras propiedades de forma](../modeling/controlling-color-line-style-and-other-shape-properties.md)
 
--   [Personalizar campos de texto y de imagen](../modeling/customizing-text-and-image-fields.md)
+- [Controlar la visibilidad de un icono o un elemento Decorator](../modeling/controlling-the-visibility-of-an-icon-or-decorator.md)
 
--   [Establecer una imagen de fondo en un diagrama](../modeling/setting-a-background-image-on-a-diagram.md)
+- [Personalizar campos de texto y de imagen](../modeling/customizing-text-and-image-fields.md)
 
--   [Anidar formas](../modeling/nesting-shapes.md)
+- [Establecer una imagen de fondo en un diagrama](../modeling/setting-a-background-image-on-a-diagram.md)
 
--   [Insertar diagramas en Windows Forms](../modeling/embedding-a-diagram-in-a-windows-form.md)
+- [Insertar diagramas en Windows Forms](../modeling/embedding-a-diagram-in-a-windows-form.md)
 
 ## <a name="see-also"></a>Vea también
 

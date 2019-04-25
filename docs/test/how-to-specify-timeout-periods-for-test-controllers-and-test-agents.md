@@ -10,14 +10,13 @@ helpviewer_keywords:
 ms.assetid: 777d0db5-0073-458a-a2a3-58b1c1f24c60
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 49d81090a0db94fe0215d01a1194f3eb4fabfcad
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: b0e71e499eb1920dd59ee47533855cf9f86cbbd0
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53870458"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416102"
 ---
 # <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>Procedimiento para especificar periodos de tiempo de espera para controladores de pruebas y agentes de pruebas
 
@@ -118,5 +117,4 @@ Para editar diversas configuraciones de tiempo de espera de un controlador de pr
 - [Instalar y configurar agentes de prueba](../test/lab-management/install-configure-test-agents.md)
 - [Modificar la configuración de registro de pruebas de carga](../test/modify-load-test-logging-settings.md)
 - [Configurar los puertos para los controladores de prueba y los agentes de prueba](../test/configure-ports-for-test-controllers-and-test-agents.md)
-- [Cómo: Especificar el tamaño máximo del archivo de registro](../test/how-to-specify-the-maximum-size-for-the-log-file.md)
 - [Cómo: Enlazar un controlador de pruebas o un agente de pruebas a un adaptador de red](../test/how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter.md)

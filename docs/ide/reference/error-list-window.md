@@ -1,7 +1,6 @@
 ---
 title: Lista de errores (ventana)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - VS.ErrorList
@@ -13,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: b7f6d45a-733b-4ad8-bc2f-737a37509e56
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 50cc9a5198df29385519364455eda319b5aeae68
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 5fe70a8c7daeac86ea3a354f81d8462ca7f4e451
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53963876"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55933982"
 ---
 # <a name="error-list-window"></a>Lista de errores (ventana)
 

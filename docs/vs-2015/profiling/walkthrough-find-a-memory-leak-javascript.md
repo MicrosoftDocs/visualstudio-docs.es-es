@@ -1,14 +1,9 @@
 ---
-title: 'Tutorial: Buscar fugas de memoria (JavaScript) | Microsoft Docs'
-ms.custom: ''
+title: 'Tutorial: Buscar pérdidas de memoria (JavaScript) | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -20,13 +15,13 @@ ms.assetid: f595412f-776b-49a2-8433-ea0062c6904d
 caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e2b84adac23547f42cca6113c5f5a7090f224e8c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0533ed4a4d1fc45b41f1e324b087cc0e249e1083
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51744951"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100461"
 ---
 # <a name="walkthrough-find-a-memory-leak-javascript"></a>Tutorial: Buscar pérdidas de memoria (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,18 +34,18 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
   
 ### <a name="running-the-javascript-memory-analyzer-test-app"></a>Ejecutar la aplicación de prueba del analizador de memoria de JavaScript  
   
-1.  En Visual Studio, elige **Archivo**, **Nuevo**, **Proyecto**.  
+1. En Visual Studio, elige **Archivo**, **Nuevo**, **Proyecto**.  
   
-2.  Elija **JavaScript** en el panel izquierdo. A continuación, elija **Windows**, **Windows 8**y luego **Universal** o **Aplicaciones Windows Phone**.  
+2. Elija **JavaScript** en el panel izquierdo. A continuación, elija **Windows**, **Windows 8**y luego **Universal** o **Aplicaciones Windows Phone**.  
   
     > [!IMPORTANT]
     >  Los resultados del uso de memoria que se muestran en este tema se prueban con una aplicación de Windows 8.  
   
-3.  Elija la plantilla de proyecto **Aplicación vacía** en el panel central.  
+3. Elija la plantilla de proyecto **Aplicación vacía** en el panel central.  
   
-4.  En el cuadro **Nombre** , especifique un nombre como `JS_Mem_Tester`y elija **Aceptar**.  
+4. En el cuadro **Nombre** , especifique un nombre como `JS_Mem_Tester`y elija **Aceptar**.  
   
-5.  En el **Explorador de soluciones**, abre default.html y pega el siguiente código entre las etiquetas \<body>:  
+5. En el **Explorador de soluciones**, abre default.html y pega el siguiente código entre las etiquetas \<body>:  
   
     ```html  
     <div class="wrapper">  
@@ -62,7 +57,7 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
     > [!IMPORTANT]
     >  Si usa una plantilla de la aplicación universal de Windows 8.1, deberá actualizar el código HTML y CSS en los proyectos .Windows y .WindowsPhone.  
   
-6.  Abre default.css y agrega el código CSS siguiente:  
+6. Abre default.css y agrega el código CSS siguiente:  
   
     ```css  
     .memleak {  
@@ -70,7 +65,7 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
     }  
     ```  
   
-7.  Abre default.js y reemplaza todo el código con este código:  
+7. Abre default.js y reemplaza todo el código con este código:  
   
     ```javascript  
     (function () {  
@@ -131,7 +126,7 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
     })();  
     ```  
   
-8.  Elija la tecla F5 para iniciar la depuración. Comprueba que el botón **Leak Memory** aparece en la página.  
+8. Elija la tecla F5 para iniciar la depuración. Comprueba que el botón **Leak Memory** aparece en la página.  
   
 9. Vuelve a Visual Studio (Alt+Tab) y presiona Mayús+F5 para detener la depuración.  
   
@@ -224,12 +219,12 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
   
     - Este es un objeto sobrante de la instantánea 2 y representa una posible pérdida de memoria.  
   
-      En este punto puede ser útil conocer algo de la aplicación: al elegir el botón **Leak Memory** , se debería quitar un elemento DIV y agregarse un elemento, por lo que el código parece que no funciona bien, es decir, hay una pérdida de memoria. En la sección siguiente se explica cómo solucionar esto.  
+      Cierto conocimiento de la aplicación Ayuda en este momento: Elegir el **Leak Memory** botón debería quitar un elemento DIV y agregarse un elemento, por lo que el código no parece estar trabajando directamente (es decir, pierde memoria). En la sección siguiente se explica cómo solucionar esto.  
   
     > [!TIP]
     >  A veces, la ubicación de un objeto con respecto al objeto `Global` puede ayudar a identificar ese objeto. Para ello, abre el menú contextual del identificador y elige **Mostrar en vista de raíces**.  
   
-##  <a name="FixingMemory"></a> Corregir el problema de memoria  
+## <a name="FixingMemory"></a> Corregir el problema de memoria  
   
 1. Con los datos que revela el generador de perfiles, se examina el código responsable de quitar los elementos DOM cuyo id. sea "item". Esto se produce en la función `initialize()`.  
   
@@ -293,6 +288,3 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
   
 ## <a name="see-also"></a>Vea también  
  [Memoria de JavaScript](../profiling/javascript-memory.md)
-
-
-

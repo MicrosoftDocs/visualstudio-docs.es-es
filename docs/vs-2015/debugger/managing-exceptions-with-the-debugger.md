@@ -1,14 +1,9 @@
 ---
 title: Administración de excepciones con el depurador | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.exceptions
 - vs.debug.exceptions.find
@@ -37,13 +32,13 @@ ms.assetid: 43a77fa8-37d0-4c98-a334-0134dbca4ece
 caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: bdb648e7a29b3ed5d9a444e203ddbdcd6b0e73dc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 2a8bc2e1f4c78e32db6fa5e09ec50bdd182f4fa6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51769996"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040969"
 ---
 # <a name="managing-exceptions-with-the-debugger"></a>Administración de excepciones con el depurador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,11 +47,11 @@ Una excepción es una indicación de estado de error que se produce mientras se 
   
  Cuando se produce una excepción, el depurador escribe un mensaje en la ventana Salida. La ejecución se puede interrumpir en los casos siguientes:  
   
--   Cuando se produce una excepción y no se controla.  
+- Cuando se produce una excepción y no se controla.  
   
--   Cuando el depurador está configurado para interrumpir de inmediato la ejecución cuando se produce una excepción, antes de que se invoque ningún controlador.  
+- Cuando el depurador está configurado para interrumpir de inmediato la ejecución cuando se produce una excepción, antes de que se invoque ningún controlador.  
   
--   Si se ha establecido [Just My Code](../debugger/just-my-code.md)y el depurador está configurado para interrumpir la ejecución en cualquier excepción que no esté controlada en el código del usuario.  
+- Si se ha establecido [Just My Code](../debugger/just-my-code.md)y el depurador está configurado para interrumpir la ejecución en cualquier excepción que no esté controlada en el código del usuario.  
   
 > [!NOTE]
 >  ASP.NET tiene un controlador de excepciones de nivel superior que muestra las páginas de error en un explorador. No interrumpe la ejecución a menos que **Solo mi código** esté activado. Para obtener un ejemplo, consulta [Setting the debugger to continue on user-unhandled exceptions](../debugger/managing-exceptions-with-the-debugger.md#BKMK_UserUnhandled) a continuación.  
@@ -103,7 +98,7 @@ Una excepción es una indicación de estado de error que se produce mientras se 
    goodbye  
    ```  
   
-    Sin embargo, no muestra la línea `here`.  
+    Sin embargo, no muestra la línea `here` .  
   
 2. Una aplicación de consola de C# hace referencia a una biblioteca de clases con una clase que tiene dos métodos, uno que produce una excepción y la controla, y otro que produce la misma excepción y no la controla:  
   
@@ -146,7 +141,7 @@ Una excepción es una indicación de estado de error que se produce mientras se 
   
    ![Restaurar valores predeterminados en la configuración de excepciones](../debugger/media/restoredefaultexceptions.png "RestoreDefaultExceptions")  
   
-###  <a name="BKMK_UserUnhandled"></a> Configurar el depurador para continuar en las excepciones no controladas de usuario  
+### <a name="BKMK_UserUnhandled"></a> Configurar el depurador para continuar en las excepciones no controladas de usuario  
  Si está depurando código .NET o JavaScript con [Just My Code](../debugger/just-my-code.md), puede indicar al depurador que no interrumpa la ejecución en excepciones que no se controlan en el código de usuario, pero que sí se controlan en otro lugar.  
   
 1. En la ventana **Configuración de excepciones** , abra el menú contextual de una ventana con el botón derecho y, a continuación, seleccione **Mostrar columnas**. (Si ha desactivado **Solo mi código**, no verá este comando).  
@@ -188,13 +183,8 @@ public class GenericException<T> : Exception
   
 ## <a name="see-also"></a>Vea también  
  [Continuar la ejecución después de una excepción](../debugger/continuing-execution-after-an-exception.md)   
- [Cómo: examinar el código del sistema después de una excepción](../debugger/how-to-examine-system-code-after-an-exception.md)   
- [Cómo: utilizar comprobaciones nativas en tiempo de ejecución](../debugger/how-to-use-native-run-time-checks.md)   
+ [Cómo: Examinar el código del sistema después de una excepción](../debugger/how-to-examine-system-code-after-an-exception.md)   
+ [Cómo: Uso de comprobaciones nativas en tiempo de ejecución](../debugger/how-to-use-native-run-time-checks.md)   
  [Uso de tiempo de ejecución comprueba sin la biblioteca de tiempo de ejecución de C](../debugger/using-run-time-checks-without-the-c-run-time-library.md)   
  [Asistente de excepciones](http://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb)   
  [Conceptos básicos del depurador](../debugger/debugger-basics.md)
-
-
-
-
-

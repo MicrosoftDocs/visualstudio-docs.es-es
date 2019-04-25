@@ -1,23 +1,20 @@
 ---
 title: Establecer una imagen de fondo en un diagrama | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: e334a24c-8521-4072-b50f-e59158dde145
 caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: fd9d5ca21dbe1b0444c650a127fc0184dfb640f1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 28e2358b92080bd56cfda9d395f87e5c188da221
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49240557"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062924"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>Establecer una imagen de fondo en un diagrama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,21 +25,21 @@ En el SDK de visualización y modelado de [!INCLUDE[vsprvs](../includes/vsprvs-m
   
 #### <a name="to-set-a-background-image-for-a-generated-designer"></a>Para establecer una imagen de fondo para un diseñador generado  
   
-1.  Copie el archivo de imagen que quiere usar como fondo del diagrama en el directorio Dsl\Resources para el proyecto actual.  
+1. Copie el archivo de imagen que quiere usar como fondo del diagrama en el directorio Dsl\Resources para el proyecto actual.  
   
-2.  En **el Explorador de soluciones**, haga clic en la carpeta Dsl\Resources, elija **agregar**y, a continuación, haga clic en **elemento existente**.  
+2. En **el Explorador de soluciones**, haga clic en la carpeta Dsl\Resources, elija **agregar**y, a continuación, haga clic en **elemento existente**.  
   
-3.  En el **Agregar elemento existente** cuadro de diálogo, vaya a la carpeta Dsl\Resources.  
+3. En el **Agregar elemento existente** cuadro de diálogo, vaya a la carpeta Dsl\Resources.  
   
-4.  En el **archivos de tipo** lista, haga clic en **archivos de imagen**.  
+4. En el **archivos de tipo** lista, haga clic en **archivos de imagen**.  
   
-5.  Haga clic en el archivo de imagen que ha copiado en el directorio y, a continuación, haga clic en **agregar**.  
+5. Haga clic en el archivo de imagen que ha copiado en el directorio y, a continuación, haga clic en **agregar**.  
   
-6.  Haga clic en Dsl y haga clic en **propiedades** para abrir las propiedades del proyecto de Dsl.  
+6. Haga clic en Dsl y haga clic en **propiedades** para abrir las propiedades del proyecto de Dsl.  
   
-7.  En el **recursos** , haga clic **este proyecto no contiene un archivo de recursos predeterminado. Haga clic aquí para crear uno.**  
+7. En el **recursos** , haga clic **este proyecto no contiene un archivo de recursos predeterminado. Haga clic aquí para crear uno.**  
   
-8.  Agregue el archivo de imagen al archivo de recursos arrastrando la imagen desde **el Explorador de soluciones** en la ventana de recursos.  
+8. Agregue el archivo de imagen al archivo de recursos arrastrando la imagen desde **el Explorador de soluciones** en la ventana de recursos.  
   
 9. Abra el menú Archivo y haga clic en la opción para guardar las propiedades del proyecto.  
   
@@ -112,6 +109,3 @@ En el SDK de visualización y modelado de [!INCLUDE[vsprvs](../includes/vsprvs-m
  [Personalizar campos de imagen y texto](../modeling/customizing-text-and-image-fields.md)   
  [Navegar y actualizar un modelo en el código de programa](../modeling/navigating-and-updating-a-model-in-program-code.md)   
  [Escribir código para personalizar lenguajes específicos de dominio](../modeling/writing-code-to-customise-a-domain-specific-language.md)
-
-
-

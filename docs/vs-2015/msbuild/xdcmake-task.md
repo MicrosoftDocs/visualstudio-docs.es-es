@@ -1,14 +1,9 @@
 ---
 title: Tarea XDCMake | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - vc.task.xdcmake
 dev_langs:
@@ -24,18 +19,17 @@ ms.assetid: a7de9c64-903a-4a02-85f3-f37672270f25
 caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: caf3803edff01e6ffe650f18aaccef99fc50728f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 0d306ec78087ed53ceca44b15f2e184397217650
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49204885"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661963"
 ---
 # <a name="xdcmake-task"></a>XDCMake (Tarea)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Incluye la herramienta Documentación XML (xdcmake.exe), que combina archivos de comentarios de documento XML (.xdc) en un archivo .xml.  
   
  Se crea un archivo .xdc cuando proporciona comentarios de documentación en el código fuente de Visual C++ y compila mediante la opción del compilador [/doc](http://msdn.microsoft.com/library/b54f7e2c-f28f-4f46-9ed6-0db09be2cc63). Para más información, vea [Referencia de XDCMake](http://msdn.microsoft.com/library/14e65747-d000-4343-854b-8393bf01cbac), [Páginas de propiedades de la herramienta Generador de documentos XML](http://msdn.microsoft.com/library/645912b5-197a-4c36-ba58-64df09444ca0) y la opción de ayuda de la línea de comandos (**/?**) de xdcmake.exe.  
@@ -60,6 +54,3 @@ Incluye la herramienta Documentación XML (xdcmake.exe), que combina archivos de
   
 ## <a name="see-also"></a>Vea también  
  [Referencia de tareas](../msbuild/msbuild-task-reference.md)
-
-
-

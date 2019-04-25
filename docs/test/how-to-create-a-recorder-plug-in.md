@@ -7,14 +7,13 @@ helpviewer_keywords:
 ms.assetid: 6fe13be1-aeb5-4927-9bff-35950e194da9
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: d047298a263e707c2f4e09475d2f6510a586a4f2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: e86f026ec4d4133635ba5cf9d6c37970abe6e139
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53945826"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415906"
 ---
 # <a name="how-to-create-a-recorder-plug-in"></a>Procedimiento Crear un complemento de grabadora
 
@@ -36,34 +35,24 @@ En los procedimientos siguientes se describe cómo crear el código rudimentario
 
 1.  Abra una solución que contenga el proyecto de prueba de carga y rendimiento web con la prueba de rendimiento web para la que desee crear un complemento de grabadora.
 
-2.  En el **Explorador de soluciones**, haga clic con el botón derecho en la solución, seleccione **Agregar** y luego elija **Nuevo proyecto**.
+2.  Agregue a la solución un nuevo proyecto **Biblioteca de clases**.
 
-     Aparecerá el cuadro de diálogo **Agregar nuevo proyecto**.
-
-3.  En **Plantillas instaladas**, seleccione **Visual C#**.
-
-4.  En la lista de plantillas, seleccione **Biblioteca de clases**.
-
-5.  En el cuadro de texto **Nombre**, escriba un nombre para el complemento de grabación.
-
-     La biblioteca de clases se agrega al **Explorador de soluciones** y la nueva clase se abre en el **Editor de código**.
-
-6.  En el **Explorador de soluciones**, en la carpeta de proyecto de la nueva biblioteca de clases, haga clic con el botón derecho en la carpeta **Referencias** y seleccione **Agregar referencia**.
+3.  En el **Explorador de soluciones**, en la carpeta de proyecto de la nueva biblioteca de clases, haga clic con el botón derecho en la carpeta **Referencias** y seleccione **Agregar referencia**.
 
     > [!TIP]
     > Un ejemplo de carpeta de proyecto de nueva biblioteca de clases es **RecorderPlugins**.
 
      Aparecerá el cuadro de diálogo **Agregar referencia**.
 
-7.  Seleccione la pestaña **.NET**.
+4.  Seleccione la pestaña **.NET**.
 
-8.  Desplácese hacia abajo, seleccione **Microsoft.VisualStudio.QualityTools.WebTestFramework** y, luego, elija **Aceptar**.
+5.  Desplácese hacia abajo, seleccione **Microsoft.VisualStudio.QualityTools.WebTestFramework** y, luego, elija **Aceptar**.
 
      **Microsoft.VisualStudio.QualityTools.WebTestFramework** se agrega a la carpeta **Referencias** del **Explorador de soluciones**.
 
-9. Escriba el código del complemento de grabadora. En primer lugar, cree una clase pública derivada de <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin>.
+6. Escriba el código del complemento de grabadora. En primer lugar, cree una clase pública derivada de <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin>.
 
-10. Invalide el método <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin.PostWebTestRecording*> .
+7. Invalide el método <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRecorderPlugin.PostWebTestRecording*> .
 
     ```csharp
     public class Class1 : WebTestRecorderPlugin
@@ -80,11 +69,11 @@ En los procedimientos siguientes se describe cómo crear el código rudimentario
     > [!NOTE]
     > Si modifica la prueba de rendimiento web, también necesitará establecer la propiedad <xref:Microsoft.VisualStudio.TestTools.WebTesting.PostWebTestRecordingEventArgs.RecordedWebTestModified*> en true: `e.RecordedWebTestModified = true;`
 
-11. Agregue más código según lo que desee que el complemento de grabadora ejecute después de que se produzca la grabación web. Por ejemplo, puede agregar código para administrar la correlación personalizada como se muestra en el ejemplo siguiente. También puede crear un complemento de grabadora para tareas como convertir comentarios en transacciones o agregar reglas de validación a la prueba de rendimiento web.
+8. Agregue más código según lo que desee que el complemento de grabadora ejecute después de que se produzca la grabación web. Por ejemplo, puede agregar código para administrar la correlación personalizada como se muestra en el ejemplo siguiente. También puede crear un complemento de grabadora para tareas como convertir comentarios en transacciones o agregar reglas de validación a la prueba de rendimiento web.
 
-12. En el menú **Compilar**, elija **Compilar \<nombre de proyecto de biblioteca de clases>**.
+9. En el menú **Compilar**, elija **Compilar \<nombre de proyecto de biblioteca de clases>**.
 
-13. Después, debe implementar el complemento de grabadora para que se registre con Visual Studio.
+Después, implemente el complemento de grabadora para que se registre con Visual Studio.
 
 ### <a name="deploy-the-recorder-plug-in"></a>Implementar el complemento de grabadora
 
@@ -97,7 +86,7 @@ Después de compilar el complemento de grabadora, coloque el archivo DLL resulta
 > [!WARNING]
 > Después de copiar el complemento de grabadora a una de las dos ubicaciones, debe reiniciar Visual Studio para que el complemento de grabadora se registre.
 
-### <a name="to-execute-the-recorder-plug-in"></a>Para ejecutar el complemento de grabadora
+### <a name="execute-the-recorder-plug-in"></a>Ejecución del complemento de grabadora
 
 1.  Cree una nueva prueba de rendimiento web.
 
@@ -124,9 +113,7 @@ En este ejemplo se muestra cómo crear un complemento de grabadora personalizado
 > [!NOTE]
 > Al final de este tema se muestra una lista completa del código de ejemplo.
 
-**Revisión del código de ejemplo**
-
-## <a name="iterate-through-the-result-to-find-first-page-with-reportsession"></a>Recorrer en iteración el resultado para encontrar la primera página con ReportSession
+### <a name="iterate-through-the-result-to-find-first-page-with-reportsession"></a>Recorrer en iteración el resultado para encontrar la primera página con ReportSession
 
 En esta parte del ejemplo de código se recorre en iteración cada objeto grabado y se busca el cuerpo de la respuesta para ReportSession.
 
@@ -143,7 +130,7 @@ foreach (WebTestResultUnit unit in e.RecordedWebTestResult.Children)
              {
 ```
 
-## <a name="add-an-extraction-rule"></a>Agregar una regla de extracción
+### <a name="add-an-extraction-rule"></a>Agregar una regla de extracción
 
 Ahora que se ha encontrado una respuesta, necesita agregar una regla de extracción. En esta parte del ejemplo de código se crea la regla de extracción mediante la clase <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRuleReference> y, a continuación, se busca la solicitud correcta de la prueba de rendimiento web a la que se va a agregar la regla de extracción. A cada objeto de resultado se le ha agregado una nueva propiedad denominada DeclarativeWebTestItemId que se usa en el código para obtener la solicitud correcta de la prueba de rendimiento web.
 
@@ -167,7 +154,7 @@ ExtractionRuleReference ruleReference = new ExtractionRuleReference();
      }
 ```
 
-## <a name="replace-query-string-parameters"></a>Reemplazar parámetros de la cadena de consulta
+### <a name="replace-query-string-parameters"></a>Reemplazar parámetros de la cadena de consulta
 
 Ahora el código busca todos los parámetros de cadena de consulta que tienen ReportSession como nombre y cambia el valor a {{SessionId}} como se muestra en esta parte del ejemplo de código:
 

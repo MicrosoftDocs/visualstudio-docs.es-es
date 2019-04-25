@@ -7,19 +7,20 @@ ms.author: mblome
 manager: wpickett
 dev_langs:
 - CPP
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 2ed89e5210a3b8201f612887f2346b57e03cef20
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7d888204de33ba870111be08ae91bb09d09416d4
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53820243"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323712"
 ---
-# <a name="using-the-c-core-guidelines-checkers"></a>Usar los comprobadores de C++ Core Guidelines
-C++ Core Guidelines son un conjunto de directrices, reglas y procedimientos recomendados sobre cómo codificar en C++ creados por los diseñadores y expertos de C++ portátil. Visual Studio actualmente admite un subconjunto de estas reglas como parte de sus herramientas de análisis de código de C++. Los comprobadores de directrices principales se instalan de forma predeterminada en Visual Studio 2017 y son [disponible como un paquete de NuGet para Visual Studio 2015](#vs2015_corecheck).
+# <a name="use-the-c-core-guidelines-checkers"></a>Usar los comprobadores de C++ Core Guidelines
+
+C++ Core Guidelines son un conjunto de directrices, reglas y procedimientos recomendados sobre cómo codificar en C++ creados por los diseñadores y expertos de C++ portátil. Visual Studio actualmente admite un subconjunto de estas reglas como parte de sus herramientas de análisis de código de C++. Los comprobadores de directrices principales se instalan de forma predeterminada en Visual Studio 2017 y Visual Studio de 2019 y son [disponible como un paquete de NuGet para Visual Studio 2015](#vs2015_corecheck).
 
 ## <a name="the-c-core-guidelines-project"></a>El proyecto de C++ Core Guidelines
- Creado por Bjarne Stroustrup etc., C++ Core Guidelines son una guía para utilizar C++ moderno de forma segura y eficaz. Hacer hincapié en las directrices de seguridad de tipos estáticos y seguridad de recursos. Se identifican formas de eliminar o minimizar las partes más propensos a errores del lenguaje y sugieren cómo hacer que el código sea más sencillo y más eficaces de forma confiable. Estas instrucciones se mantienen por la base de C++ estándar. Para obtener más información, consulte la documentación, [C++ Core Guidelines](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines)y obtener acceso a los archivos de proyecto de la documentación de C++ Core Guidelines en [GitHub](https://github.com/isocpp/CppCoreGuidelines).
+
+Creado por Bjarne Stroustrup etc., C++ Core Guidelines son una guía para utilizar C++ moderno de forma segura y eficaz. Hacer hincapié en las directrices de seguridad de tipos estáticos y seguridad de recursos. Se identifican formas de eliminar o minimizar las partes más propensos a errores del lenguaje y sugieren cómo hacer que el código sea más sencillo y más eficaces de forma confiable. Estas instrucciones se mantienen por la base de C++ estándar. Para obtener más información, consulte la documentación, [C++ Core Guidelines](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines)y obtener acceso a los archivos de proyecto de la documentación de C++ Core Guidelines en [GitHub](https://github.com/isocpp/CppCoreGuidelines).
 
 ## <a name="enable-the-c-core-check-guidelines-in-code-analysis"></a>Habilitar las instrucciones en el análisis de código de C++ Core Check
  Puede habilitar el análisis de código en el proyecto seleccionando el **Habilitar análisis de código al compilar** casilla de verificación en la **análisis de código** sección de la **páginas de propiedades** cuadro de diálogo el proyecto.
@@ -79,7 +80,7 @@ Cuando se agregan nuevas reglas para el Comprobador de directrices principales d
 Temas de referencia para la mayoría de las reglas están bajo [comprobar referencia de C++ Core de Visual Studio](code-analysis-for-cpp-corecheck.md).
 
 A partir de Visual Studio 2017 versión 15.3, los conjuntos de reglas compatibles son:
-- **Reglas de puntero Owner** aplicar [administración de recursos comprueba relacionadas con owner<T> de C++ Core Guidelines](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
+- **Reglas de puntero Owner** aplicar [administración de recursos comprueba relacionadas con owner\<T > de C++ Core Guidelines](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
 
 - **Reglas de constantes** aplicar [relacionadas con las comprobaciones de C++ Core Guidelines](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability).
 
@@ -152,7 +153,7 @@ El compilador de Microsoft Visual C++ tiene una compatibilidad limitada con la G
 }
 ```
 
-## <a name="suppressing-analysis-by-using-command-line-options"></a>Supresión de análisis mediante las opciones de línea de comandos
+## <a name="suppress-analysis-by-using-command-line-options"></a>Suprimir análisis mediante las opciones de línea de comandos
 
 En lugar de #pragmas, puede usar las opciones de línea de comandos en la página de propiedades del archivo para suprimir las advertencias para un proyecto o un único archivo. Por ejemplo, para deshabilitar la advertencia 26400 para un archivo:
 
@@ -169,7 +170,7 @@ Puede usar la opción de línea de comandos para deshabilitar temporalmente todo
 A veces puede ser útil para realizar centrado de análisis de código y todavía uso el IDE de Visual Studio. El siguiente escenario de ejemplo puede usarse para proyectos de gran tamaño para ahorrar tiempo de compilación y para que sea más fácil para filtrar los resultados:
 
 1. En el shell de comandos establece la `esp.extension` y `esp.annotationbuildlevel` variables de entorno.
-2. Para heredar estas variables, inicie Visual Studio desde el shell de comandos.
+2. Para heredar estas variables, abra Visual Studio desde el shell de comandos.
 3. Cargar el proyecto y abra sus propiedades.
 4. Habilitar análisis de código, seleccionar los conjuntos de reglas adecuada, pero no habilita las extensiones de análisis de código.
 5. Vaya al archivo que desea analizar con el Comprobador de directrices principales de C++ y abrir sus propiedades.

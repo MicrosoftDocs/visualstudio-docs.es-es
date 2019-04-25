@@ -1,7 +1,6 @@
 ---
 title: -ProjectConfig (devenv.exe)
 ms.date: 12/10/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - /ProjectConfig Devenv switch
@@ -18,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 6b54ef59-ffed-4f62-a645-1279ede97ebf
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a199fb7656e36720a6787557e2e0746b79795fd3
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: e6127be41e4b791fa03182b65ab78c9814e16d30
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54269935"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55954223"
 ---
 # <a name="projectconfig-devenvexe"></a>/ProjectConfig (devenv.exe)
 

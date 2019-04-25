@@ -1,24 +1,23 @@
 ---
 title: Invalidaciones de Help Content Manager
 ms.date: 11/01/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 95fe6396-276b-4ee5-b03d-faacec42765f
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 30953bb5cd41722ff99e37a0820a67aba77f3eef
-ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
+ms.openlocfilehash: 4b881ee7a782d7c5f90a447c1719bb88afd1d332
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "54406133"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56314603"
 ---
 # <a name="help-content-manager-overrides"></a>Invalidaciones de Help Content Manager
 
-Puede modificar el comportamiento predeterminado del Visor de Ayuda y las características relacionadas con la Ayuda en el IDE de Visual Studio. Para especificar algunas opciones, es necesario crear un archivo [.pkgdef](https://blogs.msdn.microsoft.com/visualstudio/2009/12/18/whats-a-pkgdef-and-why/) con el fin de establecer diversos valores de la clave del Registro. Otros se establecen directamente en el Registro.
+Puede modificar el comportamiento predeterminado del Visor de Ayuda y las características relacionadas con la Ayuda en el IDE de Visual Studio. Para especificar algunas opciones, es necesario crear un archivo [.pkgdef](https://devblogs.microsoft.com/visualstudio/whats-a-pkgdef-and-why/) con el fin de establecer diversos valores de la clave del Registro. Otros se establecen directamente en el Registro.
 
 ## <a name="how-to-control-help-viewer-behavior-by-using-a-pkgdef-file"></a>Cómo controlar el comportamiento del Visor de Ayuda mediante un archivo .pkgdef
 

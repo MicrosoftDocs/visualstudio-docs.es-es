@@ -1,7 +1,6 @@
 ---
 title: Agregar nuevo elemento (Comando)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - project.addnewitem
@@ -11,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 63b7df32-db83-463b-bbe7-7ff011fe5298
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c094e30c9491783733e49901fb297c36c1e94f9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2bfede96c889a22b181d46cb85e49147bb2f41aa
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53952477"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55945090"
 ---
 # <a name="add-new-item-command"></a>Agregar nuevo elemento (Comando)
 Agrega un nuevo elemento de solución (como un archivo .htm, .css o .txt o un conjunto de marcos) a la solución actual y lo abre.

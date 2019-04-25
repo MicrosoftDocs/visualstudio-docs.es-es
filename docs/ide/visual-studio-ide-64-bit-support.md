@@ -1,7 +1,6 @@
 ---
 title: Compatibilidad de 64 bits
 ms.date: 02/21/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - 64-bit applications [C++]
@@ -9,15 +8,15 @@ helpviewer_keywords:
 - 64-bit programming [C++]
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d8f7755b1c6d1b2aefbc39d20eec9b0432391e7d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2f625718266d9a8ffa779975d8bc78c2bc560835
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53844111"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62581625"
 ---
 # <a name="visual-studio-ide-64-bit-support"></a>Compatibilidad de 64 bits del IDE de Visual Studio
 

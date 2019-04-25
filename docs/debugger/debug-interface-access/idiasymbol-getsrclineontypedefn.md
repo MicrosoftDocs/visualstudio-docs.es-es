@@ -7,33 +7,34 @@ dev_langs:
 ms.assetid: ad554d18-9988-4b64-ad71-e7594c266e94
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f0a185a04f1cbcfb6b8c53256d23e7beac22f50
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cd81117c11eb42dbccf22e55ee5e294ad9c3c96a
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53911046"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56613224"
 ---
 # <a name="idiasymbolgetsrclineontypedefn"></a>IDiaSymbol::getSrcLineOnTypeDefn
-Recupera el número de archivo y la línea de código fuente que indican dónde se define un tipo definido por el usuario especificado.  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```C++  
-HRESULT getSrcLineOnTypeDefn(  
-   IDiaLineNumber **ppResult);  
-```  
-  
-#### <a name="parameters"></a>Parámetros  
- `ppResult`  
- [out] Un `IDiaLineNumber` objeto que contiene el número de archivo y la línea de código fuente donde definido por el usuario.  
-  
-## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
-  
-## <a name="see-also"></a>Vea también  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
- [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)
+Recupera el número de archivo y la línea de código fuente que indican dónde se define un tipo definido por el usuario especificado.
+
+## <a name="syntax"></a>Sintaxis
+
+```C++
+HRESULT getSrcLineOnTypeDefn(
+   IDiaLineNumber **ppResult);
+```
+
+#### <a name="parameters"></a>Parámetros
+ `ppResult`
+
+[out] Un `IDiaLineNumber` objeto que contiene el número de archivo y la línea de código fuente donde definido por el usuario.
+
+## <a name="return-value"></a>Valor devuelto
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.
+
+## <a name="see-also"></a>Vea también
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+- [IDiaLineNumber](../../debugger/debug-interface-access/idialinenumber.md)

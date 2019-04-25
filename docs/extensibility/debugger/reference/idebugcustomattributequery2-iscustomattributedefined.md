@@ -1,7 +1,7 @@
 ---
 title: IDebugCustomAttributeQuery2::IsCustomAttributeDefined | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugCustomAttributeQuery2::IsCustomAttributeDefined
 helpviewer_keywords:
@@ -9,42 +9,43 @@ helpviewer_keywords:
 ms.assetid: 5c07cc52-6d2d-42df-9d76-9f1f769641db
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4e5340f3a8bacdb8ac9c3cdd8be21c09aa1274ac
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6695753fa1b071f8623b079dbe4e56e68e9dfad4
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53841452"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56678753"
 ---
 # <a name="idebugcustomattributequery2iscustomattributedefined"></a>IDebugCustomAttributeQuery2::IsCustomAttributeDefined
-Determina si existe un atributo personalizado por su nombre.  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```cpp  
-HRESULT IsCustomAttributeDefined(   
-   LPCOLESTR pszCustomAttributeName  
-);  
-```  
-  
-```csharp  
-int IsCustomAttributeDefined(  
-   [In] string pszCustomAttributeName  
-);  
-```  
-  
-#### <a name="parameters"></a>Parámetros  
- `pszCustomAttributeName`  
- [in] Una cadena que contiene el nombre del atributo personalizado para buscar.  
-  
-## <a name="return-value"></a>Valor devuelto  
- Devuelve que S_OK si el atributo personalizado se define en este campo, en caso contrario, devuelve S_FALSE.  
-  
-## <a name="remarks"></a>Comentarios  
- Para obtener los bytes del atributo asociados con el atributo personalizado, llame a la [GetCustomAttributeByName](../../../extensibility/debugger/reference/idebugcustomattributequery2-getcustomattributebyname.md) método.  
-  
-## <a name="see-also"></a>Vea también  
- [IDebugCustomAttributeQuery2](../../../extensibility/debugger/reference/idebugcustomattributequery2.md)
+Determina si existe un atributo personalizado por su nombre.
+
+## <a name="syntax"></a>Sintaxis
+
+```cpp
+HRESULT IsCustomAttributeDefined( 
+   LPCOLESTR pszCustomAttributeName
+);
+```
+
+```csharp
+int IsCustomAttributeDefined(
+   [In] string pszCustomAttributeName
+);
+```
+
+#### <a name="parameters"></a>Parámetros
+ `pszCustomAttributeName`
+
+ [in] Una cadena que contiene el nombre del atributo personalizado para buscar.
+
+## <a name="return-value"></a>Valor devuelto
+ Devuelve que S_OK si el atributo personalizado se define en este campo, en caso contrario, devuelve S_FALSE.
+
+## <a name="remarks"></a>Comentarios
+ Para obtener los bytes del atributo asociados con el atributo personalizado, llame a la [GetCustomAttributeByName](../../../extensibility/debugger/reference/idebugcustomattributequery2-getcustomattributebyname.md) método.
+
+## <a name="see-also"></a>Vea también
+- [IDebugCustomAttributeQuery2](../../../extensibility/debugger/reference/idebugcustomattributequery2.md)

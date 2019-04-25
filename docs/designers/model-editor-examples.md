@@ -1,20 +1,19 @@
 ---
 title: Ejemplos del Editor de modelos
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: dd0f4155-b4f9-4f16-b0fd-3f4cd4c80d5a
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e48af4d2693bc5185f37e479adb693a9ad1813ed
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a4fd7bf21c214abfab535f954eb404280234ccb6
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53946034"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55942419"
 ---
 # <a name="model-editor-examples"></a>Ejemplos del Editor de modelos
 

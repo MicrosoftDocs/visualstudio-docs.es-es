@@ -14,69 +14,66 @@ helpviewer_keywords:
 ms.assetid: b273afff-b500-4e97-8cfd-31f39fa64a51
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e932b5a49559e77b9d7231d969f8ee78e2b4ec6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fc410948f3869de5ca3059cba703e5381f93d7eb
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53820285"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56603589"
 ---
 # <a name="parameter-element"></a>Elemento Parameter
-Contiene información sobre un parámetro específico para una tarea que se genera mediante `UsingTask``TaskFactory`.  El nombre del elemento es el nombre del parámetro.  Para más información, consulte [Elemento UsingTask (MSBuild)](../msbuild/usingtask-element-msbuild.md).  
+Contiene información sobre un parámetro específico para una tarea que se genera mediante `UsingTask``TaskFactory`.  El nombre del elemento es el nombre del parámetro.  Para más información, consulte [Elemento UsingTask (MSBuild)](../msbuild/usingtask-element-msbuild.md).
 
- \<Project>  
- \<UsingTask>  
- \<ParameterGroup>  
- \<Parameter>  
+ \<Project> \<UsingTask> \<ParameterGroup> \<Parameter>
 
-## <a name="syntax"></a>Sintaxis  
+## <a name="syntax"></a>Sintaxis
 
-```xml  
-<ParameterGroup ParameterType="SystemType"  
-    Output="true/false"  
-    Required="true/false" />  
-```  
+```xml
+<ParameterGroup ParameterType="SystemType"
+    Output="true/false"
+    Required="true/false" />
+```
 
-## <a name="attributes-and-elements"></a>Atributos y elementos  
- En las siguientes secciones se describen los atributos, los elementos secundarios y los elementos primarios.  
+## <a name="attributes-and-elements"></a>Atributos y elementos
+ En las siguientes secciones se describen los atributos, los elementos secundarios y los elementos primarios.
 
-### <a name="attributes"></a>Atributos  
+### <a name="attributes"></a>Atributos
 
-|Atributo|Descripción|  
-|---------------|-----------------|  
-|`ParameterType`|Atributo opcional.<br /><br /> El tipo .NET del parámetro, por ejemplo, `System.String`.|  
-|`Output`|Atributo Boolean opcional.<br /><br /> Si es `true`, este parámetro es un parámetro de salida para la tarea. De forma predeterminada, el valor es `false`.|  
-|`Required`|Atributo Boolean opcional.<br /><br /> Si es `true`, este parámetro es un parámetro necesario para la tarea. De forma predeterminada, el valor es `false`.|  
+|Atributo|Descripción|
+|---------------|-----------------|
+|`ParameterType`|Atributo opcional.<br /><br /> El tipo .NET del parámetro, por ejemplo, `System.String`.|
+|`Output`|Atributo Boolean opcional.<br /><br /> Si es `true`, este parámetro es un parámetro de salida para la tarea. De forma predeterminada, el valor es `false`.|
+|`Required`|Atributo Boolean opcional.<br /><br /> Si es `true`, este parámetro es un parámetro necesario para la tarea. De forma predeterminada, el valor es `false`.|
 
-### <a name="child-elements"></a>Elementos secundarios  
- Ninguno.  
+### <a name="child-elements"></a>Elementos secundarios
+ Ninguno.
 
-### <a name="parent-elements"></a>Elementos primarios  
+### <a name="parent-elements"></a>Elementos primarios
 
-|Elemento|Descripción|  
-|-------------|-----------------|  
-|[ParameterGroup](../msbuild/parametergroup-element.md)|Contiene una lista opcional de parámetros que estarán presentes en la tarea generada por `UsingTask` `TaskFactory`.|  
+|Elemento|Descripción|
+|-------------|-----------------|
+|[ParameterGroup](../msbuild/parametergroup-element.md)|Contiene una lista opcional de parámetros que estarán presentes en la tarea generada por `UsingTask` `TaskFactory`.|
 
-## <a name="example"></a>Ejemplo  
- El ejemplo siguiente muestra cómo usar el elemento `Parameter`.  
+## <a name="example"></a>Ejemplo
+ El ejemplo siguiente muestra cómo usar el elemento `Parameter`.
 
-```xml  
-<UsingTask TaskName="MyTask" AssemblyName="My.Assembly" TaskFactory="MyTaskFactory">  
-       <ParameterGroup>  
-              <Parameter1 ParameterType="System.String" Required="False" Output="False"/>  
-              <Parameter2 ParameterType="System.Int" Required="True" Output="False"/>  
-             ...  
-</ParameterGroup>  
-       <TaskBody Evaluate="true">  
-      ... Task factory-specific data ...  
-       </TaskBody>  
-</UsingTask>  
-```  
+```xml
+<UsingTask TaskName="MyTask" AssemblyName="My.Assembly" TaskFactory="MyTaskFactory">
+       <ParameterGroup>
+              <Parameter1 ParameterType="System.String" Required="False" Output="False"/>
+              <Parameter2 ParameterType="System.Int" Required="True" Output="False"/>
+             ...
+</ParameterGroup>
+       <TaskBody Evaluate="true">
+      ... Task factory-specific data ...
+       </TaskBody>
+</UsingTask>
+```
 
-## <a name="see-also"></a>Vea también  
- [Tareas](../msbuild/msbuild-tasks.md)   
- [Referencia de tareas](../msbuild/msbuild-task-reference.md)   
- [Referencia de esquema de archivo de proyecto](../msbuild/msbuild-project-file-schema-reference.md)
+## <a name="see-also"></a>Vea también
+- [Tareas](../msbuild/msbuild-tasks.md)
+- [Referencia de tareas](../msbuild/msbuild-task-reference.md)
+- [Referencia de esquema de archivo de proyecto](../msbuild/msbuild-project-file-schema-reference.md)

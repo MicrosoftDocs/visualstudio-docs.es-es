@@ -5,16 +5,15 @@ ms.topic: reference
 ms.assetid: 3ced8bda-210e-4caf-9d8f-96cdbba19251
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: db36f6e15a219109fa60ffaed13a01890833ea82
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9c198518fca543eb9275afd918a640275f797b19
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53910862"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55952624"
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-listed-twice"></a>No se puede crear una asociación &lt;nombre de asociación&gt;; la propiedad aparece dos veces.
 
@@ -38,4 +37,4 @@ La propiedad mencionada en el mensaje aparece más de una vez en las **Propiedad
 
 - [Mensajes de Object Relational Designer](../data-tools/o-r-designer-messages.md)
 - [LINQ to SQL tools en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) (Herramientas LINQ to SQL en Visual Studio)
-- [Cómo: Crear una asociación entre clases LINQ to SQL (Object Relational Designer)](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)
+- [Cómo: crear una asociación entre clases LINQ to SQL (Object Relational Designer)](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)

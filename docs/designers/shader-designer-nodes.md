@@ -1,20 +1,19 @@
 ---
 title: Nodos del Diseñador de sombras
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: f5192fbd-c78f-40a8-a4d4-443209610268
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 77af1e3edbe1a8ced088dd7c8c8b1afb2ae677cb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9d5e27f6cc244580ac4f3c72724dd6fdb6d09999
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986029"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55928275"
 ---
 # <a name="shader-designer-nodes"></a>Nodos del Diseñador de sombras
 Los artículos de esta sección de la documentación contienen información sobre los distintos nodos del Diseñador de sombras que puede usar para crear efectos gráficos.

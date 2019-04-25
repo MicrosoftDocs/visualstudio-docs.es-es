@@ -1,14 +1,9 @@
 ---
 title: Cuadro de diálogo Opciones del editor de texto | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Outlining
 - VS.ToolsOptionsPages.Text_Editor.Visual_JSharp.Miscellaneous
@@ -25,22 +20,21 @@ ms.assetid: 90d4e522-6391-4571-927d-b466a9766342
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 939438c2506a95c98005144dde395028d18cc481
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 82c314870acfa3cbb836a7570d62a6f0c5ac8884
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49260240"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649074"
 ---
 # <a name="text-editor-options-dialog-box"></a>Opciones del editor de texto (Cuadro de diálogo)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Las opciones del editor indicadas en el cuadro de diálogo **Opciones** proporcionan maneras de personalizar la apariencia y el comportamiento del editor.  
   
 ## <a name="in-this-section"></a>En esta sección  
- [Cómo: Cambiar las fuentes y los colores del editor](../../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)  
+ [Cómo: Cambio de fuentes y colores del editor](../../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)  
  Explica cómo cambiar las fuentes y los colores del editor.  
   
  [Cómo: Administrar el ajuste de línea en el editor](../../ide/reference/how-to-manage-word-wrap-in-the-editor.md)  
@@ -97,6 +91,3 @@ Las opciones del editor indicadas en el cuadro de diálogo **Opciones** proporci
 ## <a name="related-sections"></a>Secciones relacionadas  
  [Escribir código](../../ide/writing-code-in-the-code-and-text-editor.md)  
  Describe diferentes maneras de usar el editor de código.
-
-
-

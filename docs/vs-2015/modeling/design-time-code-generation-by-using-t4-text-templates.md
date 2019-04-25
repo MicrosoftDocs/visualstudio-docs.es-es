@@ -1,12 +1,9 @@
 ---
 title: Generación de código de tiempo de diseño mediante el uso de plantillas de texto T4 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, guidelines for code generation
 - text templates, data source model
@@ -19,13 +16,13 @@ ms.assetid: 2774b83d-1adb-4c66-a607-746e019b80c0
 caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: a302f2d4f96f7f110780feae3f76e08b440d037f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: f2bd66ca5e5cc7e5884e98ddf4d5c2ba5df15742
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49859283"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065148"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Generación de código en tiempo de diseño usando las plantillas de texto T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,17 +42,17 @@ Las plantillas de texto T4 en tiempo de diseño permiten generar código de prog
   
 #### <a name="to-create-a-design-time-t4-template-in-visual-studio"></a>Para crear una plantilla T4 en tiempo de diseño en Visual Studio  
   
-1.  Crear un [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] de proyecto o abrir uno existente.  
+1. Crear un [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] de proyecto o abrir uno existente.  
   
      Por ejemplo, en el **archivo** menú, elija **New**, **proyecto**.  
   
-2.  Agregue un archivo de plantilla de texto al proyecto y asígnele un nombre que tenga la extensión **.tt**.  
+2. Agregue un archivo de plantilla de texto al proyecto y asígnele un nombre que tenga la extensión **.tt**.  
   
      Para ello, en **el Explorador de soluciones**, en el menú contextual del proyecto, elija **agregar**, **nuevo elemento**. En el **Agregar nuevo elemento** cuadro de diálogo seleccione **plantilla de texto** desde el panel central.  
   
      Tenga en cuenta que el **Custom Tool** es propiedad del archivo **TextTemplatingFileGenerator**.  
   
-3.  Abra el archivo. Ya contendrá las siguientes directivas:  
+3. Abra el archivo. Ya contendrá las siguientes directivas:  
   
     ```  
     <#@ template hostspecific="false" language="C#" #>  
@@ -64,17 +61,17 @@ Las plantillas de texto T4 en tiempo de diseño permiten generar código de prog
   
      Si agregó la plantilla a un proyecto de [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], el atributo de lenguaje será "`VB`".  
   
-4.  Agregue el texto que desee al final del archivo. Por ejemplo:  
+4. Agregue el texto que desee al final del archivo. Por ejemplo:  
   
     ```  
     Hello, world!  
     ```  
   
-5.  Guarde el archivo.  
+5. Guarde el archivo.  
   
      Es posible que vea un **advertencia de seguridad** cuadro de mensaje que le pide que confirme que desea ejecutar la plantilla. Haga clic en **Aceptar**.  
   
-6.  En **el Explorador de soluciones**, expanda el nodo del archivo de plantilla y encontrará un archivo que tiene la extensión **.txt**. El archivo contiene el texto generado a partir de la plantilla.  
+6. En **el Explorador de soluciones**, expanda el nodo del archivo de plantilla y encontrará un archivo que tiene la extensión **.txt**. El archivo contiene el texto generado a partir de la plantilla.  
   
     > [!NOTE]
     >  Si el proyecto es un proyecto de Visual Basic, debe hacer clic en **mostrar todos los archivos** con el fin de ver el archivo de salida.  
@@ -153,9 +150,9 @@ Las plantillas de texto T4 en tiempo de diseño permiten generar código de prog
   
 #### <a name="to-generate-program-code-or-resources"></a>Para generar código de programa o recursos  
   
-1.  Cambie la directiva de salida para generar un archivo del tipo adecuado, como .cs, .vb, .resx o .xml.  
+1. Cambie la directiva de salida para generar un archivo del tipo adecuado, como .cs, .vb, .resx o .xml.  
   
-2.  Inserte el código que generará el código de solución que requiere. Por ejemplo, si desea generar tres declaraciones de campo de número entero en una clase:  
+2. Inserte el código que generará el código de solución que requiere. Por ejemplo, si desea generar tres declaraciones de campo de número entero en una clase:  
   
     ```csharp  
   
@@ -188,7 +185,7 @@ Las plantillas de texto T4 en tiempo de diseño permiten generar código de prog
   
     ```  
   
-3.  Guarde el archivo e inspeccione el archivo generado, que ahora contiene el siguiente código:  
+3. Guarde el archivo e inspeccione el archivo generado, que ahora contiene el siguiente código:  
   
     ```  
     class MyGeneratedClass {  
@@ -298,7 +295,7 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 > [!TIP]
 >  Una plantilla de texto se ejecuta en su propio dominio de aplicación y el acceso a los servicios se realiza mediante el cálculo de referencias. En este caso, GetCOMService() es más confiable que GetService().  
   
-##  <a name="Regenerating"></a> Volver a generar el código automáticamente  
+## <a name="Regenerating"></a> Volver a generar el código automáticamente  
  Normalmente, se generan varios archivos de una solución de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] con un único modelo de entrada. Cada archivo se genera a partir de su propia plantilla, pero todas las plantillas hacen referencia al mismo modelo.  
   
  Si el modelo de origen cambia, debe volver a ejecutar todas las plantillas de la solución. Para hacerlo manualmente, elija **Transformar todas las plantillas** en el **compilar** menú.  
@@ -323,25 +320,25 @@ Error("An error message");
 Warning("A warning message");  
 ```  
   
-##  <a name="Converting"></a> Convertir un archivo existente en una plantilla  
+## <a name="Converting"></a> Convertir un archivo existente en una plantilla  
  Una característica útil de las plantillas es que se parecen mucho a los archivos que generan y cuentan con algún código de programa insertado. Esto sugiere un método útil para crear una plantilla. En primer lugar cree un archivo normal como prototipo, como un [!INCLUDE[csprcs](../includes/csprcs-md.md)] de archivo y, a continuación, agregue gradualmente código de generación que modifique el archivo resultante.  
   
 #### <a name="to-convert-an-existing-file-to-a-design-time-template"></a>Para convertir un archivo existente en una plantilla en tiempo de diseño  
   
-1.  En el proyecto de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], agregue un archivo del tipo que desea generar, como un archivo `.cs`, `.vb` o `.resx`.  
+1. En el proyecto de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], agregue un archivo del tipo que desea generar, como un archivo `.cs`, `.vb` o `.resx`.  
   
-2.  Pruebe el nuevo archivo para asegurarse de que funciona.  
+2. Pruebe el nuevo archivo para asegurarse de que funciona.  
   
-3.  En el Explorador de soluciones, cambie la extensión de nombre de archivo a **.tt**.  
+3. En el Explorador de soluciones, cambie la extensión de nombre de archivo a **.tt**.  
   
-4.  Compruebe las siguientes propiedades de la **.tt** archivo:  
+4. Compruebe las siguientes propiedades de la **.tt** archivo:  
   
     |||  
     |-|-|  
     |**Herramienta personalizada =**|**TextTemplatingFileGenerator**|  
     |**Acción de compilación =**|**Ninguno**|  
   
-5.  Inserte las siguientes líneas al principio del archivo:  
+5. Inserte las siguientes líneas al principio del archivo:  
   
     ```  
     <#@ template debug="false" hostspecific="false" language="C#" #>  
@@ -352,13 +349,13 @@ Warning("A warning message");
   
      Establezca el atributo `extension` en la extensión de nombre de archivo para el tipo de archivo que desea generar, por ejemplo `.cs`, `.resx` o `.xml`.  
   
-6.  Guarde el archivo.  
+6. Guarde el archivo.  
   
      Se crea un archivo subsidiario, con la extensión especificada. Sus propiedades son correctas para el tipo de archivo. Por ejemplo, el **acción de compilación** propiedad de un archivo .cs sería **compilar**.  
   
      Compruebe que el archivo generado incluye el mismo contenido que el archivo original.  
   
-7.  Identifique una parte del archivo que desea modificar. Por ejemplo, una parte que aparece solamente bajo ciertas condiciones o una parte que se repite o donde los valores concretos varían. Inserte el código de generación. Guarde el archivo y compruebe que el archivo subsidiario se genera correctamente. Repita este paso.  
+7. Identifique una parte del archivo que desea modificar. Por ejemplo, una parte que aparece solamente bajo ciertas condiciones o una parte que se repite o donde los valores concretos varían. Inserte el código de generación. Guarde el archivo y compruebe que el archivo subsidiario se genera correctamente. Repita este paso.  
   
 ## <a name="guidelines-for-code-generation"></a>Directrices para la generación de código  
  Consulte [directrices para escribir plantillas de texto T4](../modeling/guidelines-for-writing-t4-text-templates.md).  
@@ -375,6 +372,3 @@ Warning("A warning message");
   
 ## <a name="see-also"></a>Vea también  
  [Instrucciones para escribir plantillas de texto T4](../modeling/guidelines-for-writing-t4-text-templates.md)
-
-
-

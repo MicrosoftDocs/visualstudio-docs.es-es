@@ -1,14 +1,9 @@
 ---
-title: 'CA2214: No llamar a métodos reemplazables en constructores | Microsoft Docs'
-ms.custom: ''
+title: 'CA2214: No llame a métodos reemplazables en constructores | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - DoNotCallOverridableMethodsInConstructors
 - CA2214
@@ -20,12 +15,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: b43400dbd516328e133ed6e103d4a4f2a7ccf8a3
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 0a2e107429bb48b2bf17a625e25866a19c7781b6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49921475"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58988274"
 ---
 # <a name="ca2214-do-not-call-overridable-methods-in-constructors"></a>CA2214: No llamar a métodos reemplazables en constructores
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,6 +55,3 @@ ms.locfileid: "49921475"
  **Llamar al constructor base. ¿ ** 
  **DoSomething derivado se denomina - inicializado? No**
 **derivados de llamar al constructor.**
-
-
-

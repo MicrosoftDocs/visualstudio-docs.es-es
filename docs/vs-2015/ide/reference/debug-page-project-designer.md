@@ -1,14 +1,9 @@
 ---
 title: Página Depuración, Diseñador de proyectos | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesDebug
 helpviewer_keywords:
@@ -18,18 +13,17 @@ ms.assetid: ef11eae9-df96-4e20-aabd-2678ba317140
 caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f16abf5fbf21678187a22efc9a368df7785057ab
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 611b9c02fd7aaeb4621c4e59555fae2c6dfab247
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49271367"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656952"
 ---
 # <a name="debug-page-project-designer"></a>Página Depuración, Diseñador de proyectos
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 > [!WARNING]
 >  Este tema no se aplica a las aplicaciones de la Tienda Windows. Vea [Start a debug session (VB, C#, C++ and XAML)](../../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md) (Iniciar una sesión de depuración (VB, C#, C++ y XAML)) en el Centro de desarrollo de Windows.  
   
@@ -41,10 +35,10 @@ ms.locfileid: "49271367"
  Las siguientes opciones le permiten seleccionar la configuración y la plataforma que se mostrarán o modificarán.  
   
  **Configuración**  
- Especifica qué opciones de configuración se mostrarán o modificarán. Los valores pueden ser **Depurar** (valor predeterminado), **Versión** o **Todas las configuraciones**. Para obtener más información, consulte [Configuraciones Debug y Release](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e).  
+ Especifica qué opciones de configuración se mostrarán o modificarán. Los valores pueden ser **Depurar** (valor predeterminado), **Versión** o **Todas las configuraciones**. Para obtener más información, consulte [Configuraciones Debug y Release](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
   
  **Plataforma**  
- Especifica qué configuración de plataforma se mostrará o modificará. Entre las opciones se pueden incluir **Cualquier CPU** (valor predeterminado), **x64** y **x86**. Para obtener más información, consulte [Configuraciones Debug y Release](http://msdn.microsoft.com/en-us/0440b300-0614-4511-901a-105b771b236e).  
+ Especifica qué configuración de plataforma se mostrará o modificará. Entre las opciones se pueden incluir **Cualquier CPU** (valor predeterminado), **x64** y **x86**. Para obtener más información, consulte [Configuraciones Debug y Release](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
   
 ## <a name="start-action"></a>Acción de inicio  
  **Acción de inicio** indica el elemento que se iniciará cuando se depure la aplicación: el proyecto, un programa personalizado, una dirección URL o ninguno. De forma predeterminada, el valor de esta opción es **Iniciar proyecto**. El valor de **Acción de inicio** en la página **Depurar** determina el valor de la propiedad `StartAction`.  
@@ -84,9 +78,6 @@ ms.locfileid: "49271367"
  [Depurar en Visual Studio](../../debugger/debugging-in-visual-studio.md)   
  [Configuración de proyectos para configuraciones de depuración en C#](../../debugger/project-settings-for-csharp-debug-configurations.md)   
  [Configuración de proyectos para una configuración de depuración en Visual Basic](../../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
- [Administrar propiedades de depuración](http://msdn.microsoft.com/en-us/92474d16-e7fe-4fac-9287-6bd6b3a7eb68)   
+ [Administrar propiedades de depuración](http://msdn.microsoft.com/92474d16-e7fe-4fac-9287-6bd6b3a7eb68)   
  [Cómo: Depurar una aplicación ClickOnce con permisos restringidos](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
  [Cómo: Crear y editar configuraciones](../../ide/how-to-create-and-edit-configurations.md)
-
-
-

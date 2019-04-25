@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 830e3e45-9a93-4279-a249-75b84599aefb
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 44be4be33f0aa951b00f9237903ddcbf2c415309
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3ebe0d73aa2cd4a030e99d4501c5d3d726888f64
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53893615"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56620296"
 ---
 # <a name="troubleshoot-net-framework-targeting-errors"></a>Solucionar problemas de versión de .NET Framework de destino
 En este tema se describen los errores de MSBuild que pueden producirse debido a problemas de referencia y cómo pueden resolverse esos errores.
@@ -54,4 +54,7 @@ En este tema se describen los errores de MSBuild que pueden producirse debido a 
 >  Después de cerrar y volver a abrir el proyecto, también debe volver a generarlo para garantizar que todas las referencias se resuelven correctamente.
 
 ## <a name="see-also"></a>Vea también
- [Cómo: Usar una versión de .NET Framework como destino](../ide/how-to-target-a-version-of-the-dotnet-framework.md) [.NET Framework Client Profile](/dotnet/framework/deployment/client-profile) [Información general sobre la compatibilidad con múltiples versiones de Visual Studio](../ide/visual-studio-multi-targeting-overview.md) [Compatibilidad con múltiples versiones (multi-targeting)](../msbuild/msbuild-multitargeting-overview.md)
+- [Cómo: Usar una versión de .NET Framework como destino](../ide/how-to-target-a-version-of-the-dotnet-framework.md)
+- [.NET Framework client profile](/dotnet/framework/deployment/client-profile) (Perfil de cliente de .NET Framework)
+- [Elegir una versión específica de .NET Framework](../ide/visual-studio-multi-targeting-overview.md)
+- [Compatibilidad con múltiples versiones (multi-targeting)](../msbuild/msbuild-multitargeting-overview.md)

@@ -10,15 +10,15 @@ helpviewer_keywords:
 - performance tools, enabling event trace providers
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a619820cd2c6a3a884c7279d4eb9ffc9741619d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d9734c75f078380649009d10da13ed8c926e5e16
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53863659"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56620543"
 ---
 # <a name="how-to-collect-event-tracing-for-windows-etw-data"></a>Procedimiento Recopilar datos de seguimiento de eventos para Windows (ETW)
 

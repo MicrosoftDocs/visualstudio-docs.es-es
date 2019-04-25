@@ -7,16 +7,15 @@ helpviewer_keywords:
 ms.assetid: 3a94dd07-6d17-402c-ae8f-7947143755c9
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 5fdfa625404ff934faf8e8901bf133d6bc7f873f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 04b1a894fbeb20059b79e65327ed8a7d18730e01
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968571"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55947775"
 ---
-# <a name="how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop"></a>Procedimiento Configurar el agente de pruebas para ejecutar pruebas que interactúen con el escritorio
+# <a name="how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop"></a>Filtrar Configurar el agente de pruebas para ejecutar pruebas que interactúen con el escritorio
 
 Si desea ejecutar pruebas automatizadas que interactúen con el escritorio, debe configurar el agente para que se ejecute como un proceso y no como un servicio. Por ejemplo, si desea ejecutar de forma remota una prueba de IU codificada usando un controlador de pruebas y un agente de prueba o si desea ejecutar una prueba y capturar una grabación de vídeo durante la ejecución, debe configurar el agente para que se ejecute como un proceso. Al asignar agentes a roles en la configuración de pruebas mediante Visual Studio o al asignar agentes a roles en el entorno mediante Microsoft Test Manager, debe cambiar la configuración de los agentes asignados a los roles que tengan que interactuar con el escritorio.
 

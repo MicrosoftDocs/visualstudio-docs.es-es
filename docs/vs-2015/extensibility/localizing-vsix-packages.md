@@ -1,14 +1,9 @@
 ---
 title: Adaptación de paquetes VSIX | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - localize package
 - localize extension
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 10e80b13-b39e-466c-a7c8-774a862355af
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 2f6bc666e244fed2bc2922ce4878434730a643e5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e370f48559638e8c68ea5ac8e04eca6960983475
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750588"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046091"
 ---
 # <a name="localizing-vsix-packages"></a>Adaptación de paquetes VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +33,7 @@ Puede localizar un paquete VSIX creando un archivo Extension.vsixlangpack para c
   
  Extension.vsixmanifest  
   
- [Content_Types] .xml  
+ [Content_Types].xml  
   
  es-ES  
   
@@ -58,9 +53,9 @@ Puede localizar un paquete VSIX creando un archivo Extension.vsixlangpack para c
   
 #### <a name="to-set-the-include-in-vsix-property"></a>Para establecer el archivo de inclusión en la propiedad de Vsix  
   
-1.  En **el Explorador de soluciones**, haga clic en el archivo Extension.vsixlangpack y, a continuación, haga clic en **propiedades**.  
+1. En **el Explorador de soluciones**, haga clic en el archivo Extension.vsixlangpack y, a continuación, haga clic en **propiedades**.  
   
-2.  En la cuadrícula de propiedades, haga clic en **incluir en Vsix**y establezca su valor en `true`.  
+2. En la cuadrícula de propiedades, haga clic en **incluir en Vsix**y establezca su valor en `true`.  
   
 ## <a name="example"></a>Ejemplo  
   
@@ -101,4 +96,3 @@ Puede localizar un paquete VSIX creando un archivo Extension.vsixlangpack para c
  [Elemento del paquete de idioma VSIX](../extensibility/vsixlanguagepack-element-vsix-language-pack-schema.md)   
  [Anatomía de un paquete VSIX](../extensibility/anatomy-of-a-vsix-package.md)   
  [Plantilla de proyecto de VSIX](../extensibility/vsix-project-template.md)
-

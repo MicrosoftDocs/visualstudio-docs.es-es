@@ -1,14 +1,9 @@
 ---
 title: EndTrackingContext | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 api_name:
 - EndTrackingContext
 api_location:
@@ -21,18 +16,17 @@ ms.assetid: c2c5d794-8dc8-4594-8717-70dc79a0e75d
 caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 43c871099370b1a3b94ff855f4ee4834b9627d20
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 641c67c4830f4d882d2d81cb2f00599825ae5d9f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49306584"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59667092"
 ---
 # <a name="endtrackingcontext"></a>EndTrackingContext
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Finaliza el contexto de seguimiento actual.  
   
 ## <a name="syntax"></a>Sintaxis  
@@ -42,13 +36,10 @@ HRESULT WINAPI EndTrackingContext();
 ```  
   
 ## <a name="return-value"></a>Valor devuelto  
- [HRESULT] (<!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->) con la [correcto] (<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  -->) conjunto de bits si se terminó el contexto de seguimiento.  
+ Una ([HRESULT]<!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->) con el ([correcto]<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  -->) conjunto de bits si se terminó el contexto de seguimiento.  
   
 ## <a name="requirements"></a>Requisitos  
- **Encabezado:** FileTracker.h  
+ **Encabezado**: FileTracker.h  
   
 ## <a name="see-also"></a>Vea también  
  [StartTrackingContext](../msbuild/starttrackingcontext.md)
-
-
-

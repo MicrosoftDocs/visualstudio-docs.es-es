@@ -1,25 +1,22 @@
 ---
 title: Acerca de los lenguajes específicos de dominio | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language
 ms.assetid: 29e5b6f2-ece4-4f3b-ab08-5f957418702f
 caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6cddf51705758d046ab66319d6ac6295f3a4b057
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 0ddfc51c54c04ad0d79d7ef180a027cbd253ac09
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49894526"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043512"
 ---
 # <a name="about-domain-specific-languages"></a>Acerca de los lenguajes específicos de dominio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,15 +62,15 @@ A diferencia de un lenguaje como C# o UML de uso general, un lenguaje específic
 ## <a name="aspects-of-graphical-domain-specific-development"></a>Aspectos del desarrollo gráfico específicos de dominio  
  Un lenguaje específico de dominio gráfico debe incluir las siguientes características:  
   
--   Notation  
+- Notation  
   
--   Modelo de dominio  
+- Modelo de dominio  
   
--   Generación de artefacto  
+- Generación de artefacto  
   
--   Serialización  
+- Serialización  
   
--   Integración con Visual Studio  
+- Integración con Visual Studio  
   
 ### <a name="notation"></a>Notation  
  Un lenguaje específico de dominio debe tener un conjunto relativamente pequeño de elementos que puede definirse fácilmente y extendido para representar construcciones específicas del dominio. Una notación consta de formas, que representan los elementos, y los conectores, que representan las relaciones entre elementos en una superficie de diagrama de gráficos. En [!INCLUDE[dsl](../includes/dsl-md.md)], pueden ampliar las formas y refinadas para representar los elementos de su lenguaje específico de dominio.  
@@ -95,30 +92,27 @@ A diferencia de un lenguaje como C# o UML de uso general, un lenguaje específic
 ## <a name="benefits-of-domain-specific-development"></a>Ventajas de desarrollo específico de dominio  
  Un lenguaje específico de dominio puede proporcionar las siguientes ventajas:  
   
--   Contiene construcciones que se ajuste exactamente al espacio del problema.  
+- Contiene construcciones que se ajuste exactamente al espacio del problema.  
   
      A diferencia de los lenguajes de uso general, un lenguaje específico de dominio consta de los elementos y relaciones que representan directamente la lógica del espacio del problema. Por ejemplo, una aplicación de la póliza de seguro debe incluir elementos de las directivas y las notificaciones. Un lenguaje específico de dominio resulta más fácil diseñar la aplicación y buscar y corregir los errores de lógica.  
   
--   Permite que no son desarrolladores y las personas que no conocen comprender el diseño general del dominio.  
+- Permite que no son desarrolladores y las personas que no conocen comprender el diseño general del dominio.  
   
      Mediante el uso de un lenguaje específico de dominio gráfico, puede crear una representación visual del dominio para que no sean desarrolladores puedan comprender fácilmente el diseño de la aplicación.  
   
--   Facilita la creación de un prototipo de la aplicación final.  
+- Facilita la creación de un prototipo de la aplicación final.  
   
      Los desarrolladores pueden usar el código que genera su modelo para crear una aplicación de prototipo que pueden mostrar a los clientes.  
   
 ## <a name="the-process-of-domain-specific-development"></a>El proceso de desarrollo específico de dominio  
  La mayoría de los equipos de desarrollo de software que utilizan lenguajes específicos de dominio siguen estos pasos para crear y usar sus modelos:  
   
--   El equipo distingue las partes variables del dominio de las partes que no cambia nunca.  
+- El equipo distingue las partes variables del dominio de las partes que no cambia nunca.  
   
--   Los desarrolladores escribir código para los elementos fijos y dejar los puntos de extensión para las partes variables.  
+- Los desarrolladores escribir código para los elementos fijos y dejar los puntos de extensión para las partes variables.  
   
--   El jefe de desarrollo de software o el arquitecto crea un lenguaje específico de dominio que incorpora los patrones de diseño de las partes del dominio y los puntos de extensión para las partes variables fijos.  
+- El jefe de desarrollo de software o el arquitecto crea un lenguaje específico de dominio que incorpora los patrones de diseño de las partes del dominio y los puntos de extensión para las partes variables fijos.  
   
--   El jefe de desarrollo de software o el arquitecto se implementa el lenguaje específico de dominio a los desarrolladores de las distintas aplicaciones producidos por el equipo.  
+- El jefe de desarrollo de software o el arquitecto se implementa el lenguaje específico de dominio a los desarrolladores de las distintas aplicaciones producidos por el equipo.  
   
--   Todos los desarrolladores, crea un modelo que se aplica a la aplicación específica.
-
-
-
+- Todos los desarrolladores, crea un modelo que se aplica a la aplicación específica.

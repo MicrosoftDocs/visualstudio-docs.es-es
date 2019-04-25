@@ -1,7 +1,6 @@
 ---
 title: Crear y ejecutar pruebas unitarias en código administrado
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - unit tests, walkthrough
@@ -10,16 +9,16 @@ helpviewer_keywords:
 - unit tests, running
 - unit tests, authoring
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 537059a78ccc316b7b74a8300961b57b4e6e6f95
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: d951c6171abd0e8cad42554c49a40cb42542fb62
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54269987"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415543"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Tutorial: Crear y ejecutar pruebas unitarias en código administrado
 
@@ -36,28 +35,47 @@ Para obtener información sobre cómo ejecutar pruebas desde una línea de coman
 
 ## <a name="create-a-project-to-test"></a>Crear un proyecto para pruebas
 
+::: moniker range="vs-2017"
+
 1. Abra Visual Studio.
 
 2. En el menú **Archivo**, seleccione **Nuevo** > **Proyecto**.
 
    Aparecerá el cuadro de diálogo **Nuevo proyecto** .
 
-3. En **Plantillas instaladas**, haga clic en **Visual C#**.
+3. Elija la plantilla de proyecto **Biblioteca de clases** de C#.
 
-4. En la lista de tipos de aplicación, haga clic en **Biblioteca de clases**.
+4. Asigne al proyecto el nombre **Bank** y haga clic en **Aceptar**.
 
-5. En el cuadro **Nombre** escriba **Bank** y, después, haga clic en **Aceptar**.
-
-   Se crea el nuevo proyecto Bank y se muestra en el **Explorador de soluciones** con el archivo *Class1.cs* abierto en el editor de código.
+   Se crea el proyecto Bank y se muestra en el **Explorador de soluciones** con el archivo *Class1.cs* abierto en el editor de código.
 
    > [!NOTE]
    > Si *Class1.cs* no se abre en el editor de código, haga doble clic en el archivo *Class1.cs* en el **Explorador de soluciones** para abrirlo.
 
-6. Copie el código fuente del [Proyecto de ejemplo para crear pruebas unitarias](../test/sample-project-for-creating-unit-tests.md) y reemplace el contenido original de *Class1.cs* por el código copiado.
+::: moniker-end
 
-7. Guarde el archivo como *BankAccount.cs*.
+::: moniker range=">=vs-2019"
 
-8. En el menú **Compilar** , haga clic en **Compilar solución**.
+1. Abra Visual Studio.
+
+2. En la ventana de inicio, elija **Crear un proyecto nuevo**.
+
+3. Busque la plantilla de proyecto **Biblioteca de clases** de C#, selecciónela y haga clic en **Siguiente**.
+
+4. Asigne al proyecto el nombre **Bank** y haga clic en **Crear**.
+
+   Se crea el proyecto Bank y se muestra en el **Explorador de soluciones** con el archivo *Class1.cs* abierto en el editor de código.
+
+   > [!NOTE]
+   > Si *Class1.cs* no se abre en el editor de código, haga doble clic en el archivo *Class1.cs* en el **Explorador de soluciones** para abrirlo.
+
+::: moniker-end
+
+5. Copie el código fuente del [Proyecto de ejemplo para crear pruebas unitarias](../test/sample-project-for-creating-unit-tests.md) y reemplace el contenido original de *Class1.cs* por el código copiado.
+
+6. Guarde el archivo como *BankAccount.cs*.
+
+7. En el menú **Compilar** , haga clic en **Compilar solución**.
 
 Ahora tiene un proyecto denominado Bank que contiene código fuente para realizar pruebas y las herramientas necesarias para ello. El espacio de nombres de Bank, BankAccountNS, contiene la clase pública BankAccountcuyos métodos probará en los procedimientos siguientes.
 
@@ -83,6 +101,11 @@ public void Debit(double amount)
 
 1. En el menú **Archivo**, seleccione **Agregar** > **Nuevo proyecto**.
 
+   > [!TIP]
+   > También puede hacer clic con el botón derecho en la solución en el **Explorador de soluciones** y elegir **Agregar** > **Nuevo proyecto**.
+
+::: moniker range="vs-2017"
+
 2. En el cuadro de diálogo **Nuevo proyecto**, expanda **Instalado**, expanda **Visual C#** y, después, elija **Prueba**.
 
 3. En la lista de plantillas, seleccione **Proyecto de prueba unitaria**.
@@ -90,6 +113,20 @@ public void Debit(double amount)
 4. En el cuadro **Nombre**, escriba `BankTests` y seleccione **Aceptar**.
 
    El proyecto **BankTests** se agrega a la solución **Bank**.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+2. Busque la plantilla de proyecto **Proyecto de prueba unitaria** de C#, selecciónela y haga clic en **Siguiente**.
+
+3. Dé un nombre al proyecto `BankTests`.
+
+4. Haga clic en **Crear**.
+
+   El proyecto **BankTests** se agrega a la solución **Bank**.
+
+::: moniker-end
 
 5. En el proyecto **BankTests**, agregue una referencia al proyecto **Bank**.
 

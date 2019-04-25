@@ -1,22 +1,21 @@
 ---
-title: Procedimiento Exportar una textura para usarla con aplicaciones de Direct2D o Javascipt
+title: Filtrar Exportar una textura para usarla con aplicaciones de Direct2D o Javascipt
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 241c25fe-764e-4e1b-ad32-b1377dcbb605
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aad52a3ff4849702421303bdbaa3af8d1c073d87
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a4aa53efb690faa0d31a35b9b19d0d5ee9781352
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53850851"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55940014"
 ---
-# <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps"></a>Procedimiento Exportar una textura para usarla con aplicaciones de Direct2D o Javascipt
+# <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps"></a>Filtrar Exportar una textura para usarla con aplicaciones de Direct2D o Javascipt
 
 La canalización de contenido de la imagen puede generar texturas compatibles con las convenciones de representación internas de Direct2D. Las texturas de esta clase son adecuadas para su uso en aplicaciones que usan Direct2D y en aplicaciones para UWP creadas mediante JavaScript.
 

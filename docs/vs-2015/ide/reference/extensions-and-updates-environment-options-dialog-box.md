@@ -1,32 +1,26 @@
 ---
 title: Cuadro de diálogo Extensiones y actualizaciones, Entorno, Opciones | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.ExtensionManager
 ms.assetid: c73859eb-3c33-4f39-86bf-6788387b5937
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: b0b51d3b5f61a256a440673b9770f10efecb7b0e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 16b8d2214d9f81115d183eb1b4e6765dcd33d37e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49181095"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655107"
 ---
 # <a name="extensions-and-updates-environment-options-dialog-box"></a>Extensiones y actualizaciones, Entorno, Opciones (cuadro de diálogo)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Utilice esta página para establecer las opciones de la manera en que Visual Studio realiza las actualizaciones y de cómo se actualizan y detectan las extensiones.  
   
 ### <a name="automatically-check-for-updates"></a>Comprobación automática de actualizaciones  
@@ -43,6 +37,3 @@ Utilice esta página para establecer las opciones de la manera en que Visual Stu
   
 ## <a name="see-also"></a>Vea también  
  [Opciones de entorno (Cuadro de diálogo)](../../ide/reference/environment-options-dialog-box.md)
-
-
-

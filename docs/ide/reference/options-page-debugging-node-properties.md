@@ -1,20 +1,19 @@
 ---
 title: Página de opciones, Propiedades de nodo Depuración
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 ms.assetid: 564cc8b2-0084-420e-b560-200cc5621a7e
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56b08ddcb278bb2c5f9ea4c8a5de66a184fe9fac
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0a41b9286ba35351a0dea91d87a4852319a94e93
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53859833"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983083"
 ---
 # <a name="options-page-debugging-node-properties"></a>Página de opciones, Propiedades de nodo Depuración
 En las siguientes tablas, se describen las páginas (o colecciones de propiedades) asociadas a la categoría **Depuración**, `DTE.Properties("Debugging", <Property Page>)`, del cuadro de diálogo **Opciones**.
@@ -85,5 +84,5 @@ En las siguientes tablas, se describen las páginas (o colecciones de propiedade
 - [Página de opciones, Propiedades de nodo Fuentes y colores](../../ide/reference/options-page-fonts-and-colors-node-properties.md)
 - [Página de opciones, Propiedades de nodo Editor de texto](../../ide/reference/options-page-text-editor-node-properties.md)
 - [General, Depuración, cuadro de diálogo Opciones](../../debugger/general-debugging-options-dialog-box.md)
-- [Editar y continuar, Depuración, Opciones (Cuadro de diálogo)](../../debugger/edit-and-continue.md?view=vs-2015)
+- [Edición de código y depuración continua](../../debugger/edit-and-continue.md)
 - [Just-In-Time, Depuración, Cuadro de diálogo Opciones](../../debugger/just-in-time-debugging-options-dialog-box.md)

@@ -1,27 +1,22 @@
 ---
 title: Importar un proyecto XCode | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: aa4b8161-d98f-4a1a-9db3-520133bfc82f
 caps.latest.revision: 10
 author: corob-msft
 ms.author: corob
-manager: ghogen
-ms.openlocfilehash: b0e42c167e87f19781f9544e20e7870789af4ef9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4faa2ecae7f53d29e6aad92723ca6d12e50e2812
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51754154"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652051"
 ---
 # <a name="import-an-xcode-project"></a>Importar un proyecto XCode
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Microsoft Visual C++ para desarrollo móvil multiplataforma incluye compatibilidad para mover los proyectos de XCode a Visual Studio, donde puede crear bibliotecas multiplataforma y compartir código con otros proyectos. El asistente Importar de XCode simplifica el proceso de importación de proyectos y de división del código de C++ en los destinos de XCode para usarlo como una biblioteca estática o un proyecto de código compartido. Puede administrar el código específico de iOS en Visual Studio y seguir usando XCode para realizar guiones gráficos y compilaciones. Para obtener información sobre cómo mover fácilmente código entre Visual Studio y XCode, y viceversa, vea Mover cambios entre XCode y Visual Studio.  
   
 ## <a name="using-the-import-from-xcode-wizard"></a>Uso del asistente Importar de XCode  
@@ -80,4 +75,3 @@ Microsoft Visual C++ para desarrollo móvil multiplataforma incluye compatibilid
     Para importar el proyecto de XCode mediante la configuración del asistente, haga clic en **Importar**.  
   
    El asistente Importar de XCode crea proyectos en Visual Studio que se corresponden con los destinos de proyecto de XCode seleccionados. El código que puede compartirse con otros proyectos de C++ se divide en proyectos independientes de código compartido y de biblioteca estática. El código restante se coloca en proyectos de biblioteca y aplicación de iOS que Visual Studio puede compilar de forma remota. Para más información sobre cómo mover código entre Visual Studio y XCode, vea [Sincronizar cambios entre XCode y Visual Studio](../cross-platform/sync-changes-between-xcode-and-visual-studio.md).
-

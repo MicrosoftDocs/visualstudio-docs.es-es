@@ -1,7 +1,7 @@
 ---
 title: IDebugDocumentTextEvents2::onDestroy | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugDocumentTextEvents2::OnDestroy
 helpviewer_keywords:
@@ -9,33 +9,33 @@ helpviewer_keywords:
 ms.assetid: 60e4689c-c899-4c14-9d18-96393b741e1f
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5c7e8d431b6ec3e4d06e94da28c87ff7b69968de
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ade70ce0f72d2f3b86d6f7ec95a61b4bad57b102
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53855275"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56685188"
 ---
 # <a name="idebugdocumenttextevents2ondestroy"></a>IDebugDocumentTextEvents2::onDestroy
-Indica que se ha destruido todo el documento.  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```cpp  
-HRESULT onDestroy(   
-   void   
-);  
-```  
-  
-```csharp  
-int onDestroy();  
-```  
-  
-## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
-  
-## <a name="see-also"></a>Vea también  
- [IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)
+Indica que se ha destruido todo el documento.
+
+## <a name="syntax"></a>Sintaxis
+
+```cpp
+HRESULT onDestroy( 
+   void 
+);
+```
+
+```csharp
+int onDestroy();
+```
+
+## <a name="return-value"></a>Valor devuelto
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+
+## <a name="see-also"></a>Vea también
+- [IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)

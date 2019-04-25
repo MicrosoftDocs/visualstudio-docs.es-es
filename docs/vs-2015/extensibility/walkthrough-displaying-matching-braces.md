@@ -1,28 +1,23 @@
 ---
-title: 'Tutorial: Mostrar las llaves coincidentes | Microsoft Docs'
-ms.custom: ''
+title: 'Tutorial: Mostrar las llaves coincidentes | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - brace matching
 ms.assetid: 5af08ac7-1d08-4ccf-997e-01aa6cb3d3d7
 caps.latest.revision: 28
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9795cd3c40eeff714d55f4bb95f78cf1f7f8aea9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: caaafd0143d3b09a51518ee5f54a02b06dbf10aa
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51745886"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084939"
 ---
-# <a name="walkthrough-displaying-matching-braces"></a>Tutorial: Visualización de llaves coincidentes
+# <a name="walkthrough-displaying-matching-braces"></a>Tutorial: Mostrar llaves que coincidan
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Puede implementar características basadas en lenguaje como definiendo las llaves que desee hacer coincidir y, a continuación, agregar una etiqueta de marcador de texto a las llaves coincidentes cuando el símbolo de intercalación está en una de las llaves la coincidencia de llaves. Puede definir las llaves en el contexto de un lenguaje, o puede definir su propio tipo de contenido y la extensión de nombre de archivo y aplicar las etiquetas a sólo ese tipo, o puede aplicar las etiquetas a un tipo de contenido existente (por ejemplo, "text"). El siguiente tutorial muestra cómo aplicar etiquetas para el tipo de contenido "text" la coincidencia de llaves.  
@@ -34,50 +29,50 @@ Puede implementar características basadas en lenguaje como definiendo las llave
   
 #### <a name="to-create-a-mef-project"></a>Para crear un nuevo proyecto de MEF  
   
-1.  Cree un proyecto de clasificador de editor. Asigne a la solución el nombre `BraceMatchingTest`.  
+1. Cree un proyecto de clasificador de editor. Asigne a la solución el nombre `BraceMatchingTest`.  
   
-2.  Agregar una plantilla de elemento de clasificador de Editor para el proyecto. Para obtener más información, consulte [crear una extensión con una plantilla de elementos de Editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
+2. Agregar una plantilla de elemento de clasificador de Editor para el proyecto. Para obtener más información, consulte [crear una extensión con una plantilla de elementos de Editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
   
-3.  Elimine los archivos de clase existentes.  
+3. Elimine los archivos de clase existentes.  
   
 ## <a name="implementing-a-brace-matching-tagger"></a>Implementar un etiquetador de coincidencia de llaves  
  Para obtener un efecto similar al que se usa en Visual Studio de resalte de llaves, puede implementar un etiquetador de tipo <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>. El código siguiente muestra cómo definir el etiquetador para los pares de llaves en cualquier nivel de anidamiento. En este ejemplo, la llave de pares de []. [], y {} se definen en el constructor de etiquetador, pero en una implementación del lenguaje completa se definirían los pares de llaves pertinente en la especificación del lenguaje.  
   
 #### <a name="to-implement-a-brace-matching-tagger"></a>Para implementar un etiquetador de coincidencia de llaves  
   
-1.  Agregue un archivo de clase y asígnele el nombre coincidencia de llaves.  
+1. Agregue un archivo de clase y asígnele el nombre coincidencia de llaves.  
   
-2.  Importe los siguientes espacios de nombres.  
+2. Importe los siguientes espacios de nombres.  
   
      [!code-csharp[VSSDKBraceMatchingTest#1](../snippets/csharp/VS_Snippets_VSSDK/vssdkbracematchingtest/cs/bracematching.cs#1)]
      [!code-vb[VSSDKBraceMatchingTest#1](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkbracematchingtest/vb/bracematching.vb#1)]  
   
-3.  Defina una clase `BraceMatchingTagger` que herede de <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> de tipo <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>.  
+3. Defina una clase `BraceMatchingTagger` que herede de <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> de tipo <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>.  
   
      [!code-csharp[VSSDKBraceMatchingTest#2](../snippets/csharp/VS_Snippets_VSSDK/vssdkbracematchingtest/cs/bracematching.cs#2)]
      [!code-vb[VSSDKBraceMatchingTest#2](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkbracematchingtest/vb/bracematching.vb#2)]  
   
-4.  Agregue las propiedades de la vista de texto, el búfer de origen y el punto de la instantánea actual y un conjunto de pares de llaves.  
+4. Agregue las propiedades de la vista de texto, el búfer de origen y el punto de la instantánea actual y un conjunto de pares de llaves.  
   
      [!code-csharp[VSSDKBraceMatchingTest#3](../snippets/csharp/VS_Snippets_VSSDK/vssdkbracematchingtest/cs/bracematching.cs#3)]
      [!code-vb[VSSDKBraceMatchingTest#3](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkbracematchingtest/vb/bracematching.vb#3)]  
   
-5.  En el constructor etiquetador, establezca las propiedades y suscribirse a los eventos de cambio de vista <xref:Microsoft.VisualStudio.Text.Editor.ITextCaret.PositionChanged> y <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged>. En este ejemplo, con fines ilustrativos, también se definen los pares coincidentes en el constructor.  
+5. En el constructor etiquetador, establezca las propiedades y suscribirse a los eventos de cambio de vista <xref:Microsoft.VisualStudio.Text.Editor.ITextCaret.PositionChanged> y <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged>. En este ejemplo, con fines ilustrativos, también se definen los pares coincidentes en el constructor.  
   
      [!code-csharp[VSSDKBraceMatchingTest#4](../snippets/csharp/VS_Snippets_VSSDK/vssdkbracematchingtest/cs/bracematching.cs#4)]
      [!code-vb[VSSDKBraceMatchingTest#4](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkbracematchingtest/vb/bracematching.vb#4)]  
   
-6.  Como parte de la <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> implementación, declarar un evento TagsChanged.  
+6. Como parte de la <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> implementación, declarar un evento TagsChanged.  
   
      [!code-csharp[VSSDKBraceMatchingTest#5](../snippets/csharp/VS_Snippets_VSSDK/vssdkbracematchingtest/cs/bracematching.cs#5)]
      [!code-vb[VSSDKBraceMatchingTest#5](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkbracematchingtest/vb/bracematching.vb#5)]  
   
-7.  La posición del símbolo de intercalación actual de actualización de los controladores de eventos el `CurrentChar` propiedad y generar el evento TagsChanged.  
+7. La posición del símbolo de intercalación actual de actualización de los controladores de eventos el `CurrentChar` propiedad y generar el evento TagsChanged.  
   
      [!code-csharp[VSSDKBraceMatchingTest#6](../snippets/csharp/VS_Snippets_VSSDK/vssdkbracematchingtest/cs/bracematching.cs#6)]
      [!code-vb[VSSDKBraceMatchingTest#6](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkbracematchingtest/vb/bracematching.vb#6)]  
   
-8.  Implemente el <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A> llaves de método para que coincidan con cualquiera, cuando el carácter actual es una llave de apertura o cuando el carácter anterior es una llave de cierre, al igual que en Visual Studio. Cuando se encuentra la coincidencia, este método crea una instancia de dos etiquetas, uno para la llave de apertura y otro para la llave de cierre.  
+8. Implemente el <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A> llaves de método para que coincidan con cualquiera, cuando el carácter actual es una llave de apertura o cuando el carácter anterior es una llave de cierre, al igual que en Visual Studio. Cuando se encuentra la coincidencia, este método crea una instancia de dos etiquetas, uno para la llave de apertura y otro para la llave de cierre.  
   
      [!code-csharp[VSSDKBraceMatchingTest#7](../snippets/csharp/VS_Snippets_VSSDK/vssdkbracematchingtest/cs/bracematching.cs#7)]
      [!code-vb[VSSDKBraceMatchingTest#7](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkbracematchingtest/vb/bracematching.vb#7)]  
@@ -97,12 +92,12 @@ Puede implementar características basadas en lenguaje como definiendo las llave
   
 #### <a name="to-implement-a-brace-matching-tagger-provider"></a>Para implementar un proveedor del etiquetador de llave coincidente  
   
-1.  Declarar un proveedor del etiquetador que hereda de <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider>, asígnele el nombre BraceMatchingTaggerProvider y expórtela con un <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> de "text" y un <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute> de <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>.  
+1. Declarar un proveedor del etiquetador que hereda de <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider>, asígnele el nombre BraceMatchingTaggerProvider y expórtela con un <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> de "text" y un <xref:Microsoft.VisualStudio.Text.Tagging.TagTypeAttribute> de <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>.  
   
      [!code-csharp[VSSDKBraceMatchingTest#10](../snippets/csharp/VS_Snippets_VSSDK/vssdkbracematchingtest/cs/bracematching.cs#10)]
      [!code-vb[VSSDKBraceMatchingTest#10](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkbracematchingtest/vb/bracematching.vb#10)]  
   
-2.  Implemente el <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider.CreateTagger%2A> método para crear instancias de un BraceMatchingTagger.  
+2. Implemente el <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider.CreateTagger%2A> método para crear instancias de un BraceMatchingTagger.  
   
      [!code-csharp[VSSDKBraceMatchingTest#11](../snippets/csharp/VS_Snippets_VSSDK/vssdkbracematchingtest/cs/bracematching.cs#11)]
      [!code-vb[VSSDKBraceMatchingTest#11](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkbracematchingtest/vb/bracematching.vb#11)]  
@@ -112,11 +107,11 @@ Puede implementar características basadas en lenguaje como definiendo las llave
   
 #### <a name="to-build-and-test-bracematchingtest-solution"></a>Para compilar y probar soluciones BraceMatchingTest  
   
-1.  Compile la solución.  
+1. Compile la solución.  
   
-2.  Al ejecutar este proyecto en el depurador, se crea una segunda instancia de Visual Studio.  
+2. Al ejecutar este proyecto en el depurador, se crea una segunda instancia de Visual Studio.  
   
-3.  Cree un archivo de texto y escriba algún texto que incluye llaves coincidentes.  
+3. Cree un archivo de texto y escriba algún texto que incluye llaves coincidentes.  
   
     ```  
     hello {  
@@ -127,8 +122,7 @@ Puede implementar características basadas en lenguaje como definiendo las llave
     {hello}  
     ```  
   
-4.  Al colocar el símbolo de intercalación antes de una llave de apertura, debe aparecer resaltada dicha llave y la llave de cierre correspondiente. Al colocar el cursor justo después de la llave de cierre, debe aparecer resaltada dicha llave y la llave de apertura correspondiente.  
+4. Al colocar el símbolo de intercalación antes de una llave de apertura, debe aparecer resaltada dicha llave y la llave de cierre correspondiente. Al colocar el cursor justo después de la llave de cierre, debe aparecer resaltada dicha llave y la llave de apertura correspondiente.  
   
 ## <a name="see-also"></a>Vea también  
- [Tutorial: vinculación de un tipo de contenido con una extensión de nombre de archivo](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
-
+ [Tutorial: Vinculación de un tipo de contenido a una extensión de nombre de archivo](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

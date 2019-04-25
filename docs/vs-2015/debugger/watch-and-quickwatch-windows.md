@@ -1,14 +1,9 @@
 ---
 title: Inspección e inspección rápida Windows | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.watch
 dev_langs:
@@ -28,13 +23,13 @@ ms.assetid: d5c18377-2a0e-4819-a645-407e24ccc58c
 caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: b171352475b6c0b3bc916d27ab4ba351e84be42b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d1a6167759d35dd67142e1919423df6aa380fe88
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51791685"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063535"
 ---
 # <a name="watch-and-quickwatch-windows"></a>Ventanas Inspección e Inspección rápida
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,15 +54,15 @@ static void Main(string[] args)
   
  Puede observar la variable en la ventana Inspección rápida de la manera siguiente:  
   
-1.  Establezca un punto de interrupción en la línea `a = a + b;` .  
+1. Establezca un punto de interrupción en la línea `a = a + b;` .  
   
-2.  Inicie la depuración. La ejecución se detiene en el punto de interrupción.  
+2. Inicie la depuración. La ejecución se detiene en el punto de interrupción.  
   
-3.  Abra la ventana **Inspección rápida** (haga clic con el botón secundario, elija **Depurar/Inspección rápida**, o bien **MAYÚS+F9**). Puede abrir la ventana y agregar la variable a la ventana **Expresión** y, a continuación, hacer clic en clic en **Actualizar**. Debería ver la variable en la ventana **Valores** con un valor de 2.  
+3. Abra la ventana **Inspección rápida** (haga clic con el botón secundario, elija **Depurar/Inspección rápida**, o bien **MAYÚS+F9**). Puede abrir la ventana y agregar la variable a la ventana **Expresión** y, a continuación, hacer clic en clic en **Actualizar**. Debería ver la variable en la ventana **Valores** con un valor de 2.  
   
-4.  La ventana **Inspección rápida** es una ventana de cuadro de diálogo modal, por lo que no puede continuar con la depuración mientras está abierta. Puede agregar la variable a la ventana **Inspección** haciendo clic en **Agregar inspección**.  
+4. La ventana **Inspección rápida** es una ventana de cuadro de diálogo modal, por lo que no puede continuar con la depuración mientras está abierta. Puede agregar la variable a la ventana **Inspección** haciendo clic en **Agregar inspección**.  
   
-5.  Cierre la ventana **Inspección rápida** . Ahora puede continuar con la depuración mientras observa el valor en la ventana **Inspección** .  
+5. Cierre la ventana **Inspección rápida** . Ahora puede continuar con la depuración mientras observa el valor en la ventana **Inspección** .  
   
 ## <a name="observing-variables-with-the-watch-window"></a>Observación de las variables con la ventana Inspección  
  Puede observar varias variables con la ventana **Inspección** . Por ejemplo, si tiene el siguiente código:  
@@ -102,7 +97,7 @@ static void Main(string[] args)
   
 5. Continúe la depuración.  
   
-   Debería ver los cambios en los valores de variable durante la iteración en el bucle `for`.  
+   Debería ver los cambios en los valores de variable durante la iteración en el bucle `for` .  
   
    Si está programando en código nativo, a veces puede ser necesario calificar el contexto de un nombre de variable o una expresión que contiene un nombre de variable. El contexto es la función, el archivo de código fuente y el módulo donde se encuentra una variable. Para ello, puede utilizar la sintaxis del operador de contexto. Para más información, vea Expresiones en C++.  
   
@@ -117,7 +112,7 @@ static void Main(string[] args)
   
  ![WatchExpressionError](../debugger/media/watchexpressionerror.png "WatchExpressionError")  
   
-##  <a name="bkmk_refreshWatch"></a> Actualizar valores de Inspección que no están actualizados  
+## <a name="bkmk_refreshWatch"></a> Actualizar valores de Inspección que no están actualizados  
  En determinadas circunstancias, es posible que aparezca un icono de actualización (un círculo con dos flechas o un círculo con dos líneas onduladas) cuando se evalúa una expresión en la ventana **Inspección** .  Por ejemplo, si tiene desactivada la evaluación de propiedades (**Herramientas / Opciones / Depuración / Habilitar evaluación de propiedades y otras llamadas a función implícitas**) y tiene el siguiente código:  
   
 ```csharp  
@@ -148,7 +143,7 @@ static void Main(string[] args)
   
   Si aparece un icono en forma de círculo con dos líneas onduladas que parecen hilos, la expresión no se evaluó debido a la dependencia potencial entre subprocesos. En otras palabras, la evaluación de código requiere ejecutar temporalmente otros subprocesos en la aplicación. Cuando se está en modo de interrupción, lo normal es que se detengan todos los subprocesos de la aplicación. Permitir que otros subprocesos se ejecuten temporalmente puede tener efectos inesperados en el estado de su programa y hacer que el depurador omita algunos eventos, como los puntos de interrupción o las excepciones de dichos subprocesos.  
   
-##  <a name="bkmk_sideEffects"></a> Side Effects and Expressions  
+## <a name="bkmk_sideEffects"></a> Side Effects and Expressions  
  La evaluación de algunas expresiones puede cambiar el valor de una variable o afectar de otra forma al estado del programa. Por ejemplo, la evaluación de la siguiente expresión cambia el valor de `var1`:  
   
 ```  
@@ -207,17 +202,17 @@ public class Program
   
  Puede agregar una referencia a dicho objeto `Person` en la ventana **Inspección** tal como sigue:  
   
-1.  Establezca un punto de interrupción en el código después de que se haya creado el objeto.  
+1. Establezca un punto de interrupción en el código después de que se haya creado el objeto.  
   
-2.  Inicie la depuración y, cuando se detenga la ejecución en el punto de interrupción, busque la variable en la ventana **Variables locales** , haga clic en la variable y seleccione **Crear el identificador del objeto**.  
+2. Inicie la depuración y, cuando se detenga la ejecución en el punto de interrupción, busque la variable en la ventana **Variables locales** , haga clic en la variable y seleccione **Crear el identificador del objeto**.  
   
-3.  Debería ver el símbolo **$** junto con un número en la ventana **Variables locales** . Este es el identificador del objeto.  
+3. Debería ver el símbolo **$** junto con un número en la ventana **Variables locales** . Este es el identificador del objeto.  
   
-4.  Agregue el identificador de objeto a la ventana Inspección.  
+4. Agregue el identificador de objeto a la ventana Inspección.  
   
-5.  Establezca un punto de interrupción donde desee observar el comportamiento del objeto.  En el código anterior, estaría en el método `DoSomething()` .  
+5. Establezca un punto de interrupción donde desee observar el comportamiento del objeto.  En el código anterior, estaría en el método `DoSomething()` .  
   
-6.  Continúe con la depuración y, cuando la ejecución se detenga en el método `DoSomething()` , la ventana **Inspección** mostrará el objeto `Person` .  
+6. Continúe con la depuración y, cuando la ejecución se detenga en el método `DoSomething()` , la ventana **Inspección** mostrará el objeto `Person` .  
   
 > [!NOTE]
 >  Si desea ver las propiedades del objeto, como `Person.Name` en el ejemplo anterior, debe habilitar la evaluación de propiedades.  
@@ -246,8 +241,3 @@ public class Program
   
 ## <a name="see-also"></a>Vea también  
  [Ventanas del depurador](../debugger/debugger-windows.md)
-
-
-
-
-

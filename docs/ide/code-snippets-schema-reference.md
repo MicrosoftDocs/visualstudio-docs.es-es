@@ -1,7 +1,6 @@
 ---
 title: Referencia de esquemas de fragmentos de código
-ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
+ms.date: 02/25/2019
 ms.topic: reference
 helpviewer_keywords:
 - schema reference [Visual Studio]
@@ -11,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 58a60621-725f-4763-93b7-62ea5424ef88
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55780d7e1990a9d10e504c781953cf3f95dd3dc1
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: 3a57ff548aeb566605802a0e270534df727a7c0f
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54315597"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841862"
 ---
 # <a name="code-snippets-schema-reference"></a>Referencia de esquemas de fragmentos de código
 
@@ -118,6 +117,7 @@ Hay tres atributos disponibles para el elemento Code:
    |`CPP`|Identifica un fragmento de código de C++.|
    |`XML`|Identifica un fragmento de código XML.|
    |`JavaScript`|Identifica un fragmento de código JavaScript.|
+   |`TypeScript`|Identifica un fragmento de código TypeScript.|
    |`SQL`|Identifica un fragmento de código SQL.|
    |`HTML`|Identifica un fragmento de código HTML.|
 

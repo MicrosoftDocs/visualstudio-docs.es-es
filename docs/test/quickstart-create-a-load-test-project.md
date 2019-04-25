@@ -6,14 +6,13 @@ helpviewer_keywords:
 - load testing, quickstart
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 34127eb64ffbe4f9285e5e5efb215409b6997141
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: c6703221f9db06ca8edba68a2f2bcc9b79a5d531
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968461"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415491"
 ---
 # <a name="quickstart-create-a-load-test-project"></a>Inicio rápido: Crear un proyecto de pruebas de carga
 
@@ -23,13 +22,13 @@ En este inicio rápido de 10 minutos, aprenderá a crear y ejecutar un proyecto 
 
 ## <a name="software-requirements"></a>Requisitos de software
 
-Los proyectos de prueba de carga y rendimiento web solo están disponibles en la edición Enterprise de Visual Studio.
+Los proyectos de prueba de carga y rendimiento web solo están disponibles en la **edición Enterprise** de Visual Studio.
 
 ## <a name="install-the-load-testing-component"></a>Instalar el componente de prueba de carga
 
 Si aún no tiene instalado el componente de herramientas de pruebas de carga y rendimiento web, deberá instalarlo con el Instalador de Visual Studio.
 
-1. Abra el **Instalador de Visual Studio** desde el menú **Iniciar** de Windows. También puede tener acceso a él en Visual Studio desde el cuadro de diálogo **Nuevo proyecto**, o bien seleccionando **Herramientas** > **Get Tools and Features** (Obtener herramientas y características) en la barra de menús.
+1. Abra el **Instalador de Visual Studio** desde el menú **Iniciar** de Windows. También puede tener acceso a él en Visual Studio desde el cuadro de diálogo de nuevo proyecto, o bien seleccionando **Herramientas** > **Get Tools and Features** (Obtener herramientas y características) en la barra de menús.
 
 1. En el **Instalador de Visual Studio**, elija la pestaña **Componentes individuales** y desplácese hacia abajo hasta la sección **Depuración y pruebas**. Seleccione **Herramientas de rendimiento web y pruebas de carga**.
 
@@ -43,15 +42,33 @@ Si aún no tiene instalado el componente de herramientas de pruebas de carga y r
 
 En esta sección, vamos a crear un proyecto de prueba de carga de C#. También puede crear un proyecto de prueba de carga de Visual Basic, si lo prefiere.
 
-1. Abra Visual Studio y seleccione **Archivo** > **Nuevo** > **Proyecto** en la barra de menús.
+::: moniker range="vs-2017"
+
+1. Abra Visual Studio.
+
+2. Elija **Archivo** > **Nuevo** > **Proyecto** en la barra de menús.
 
    Aparece el cuadro de diálogo **Nuevo proyecto** .
 
-1. En el cuadro de diálogo **Nuevo proyecto**, expanda **Instalado** y **Visual C#** y, después, elija la categoría **Prueba**. Elija la plantilla **Proyecto de prueba de carga y rendimiento web**.
+3. En el cuadro de diálogo **Nuevo proyecto**, expanda **Instalado** y **Visual C#** y, después, elija la categoría **Prueba**. Elija la plantilla **Proyecto de prueba de carga y rendimiento web**.
 
    ![Plantilla de proyecto de prueba de carga y rendimiento web](media/web-perf-load-test-project-template.png)
 
-1. Escriba un nombre para el proyecto si no quiere usar el predeterminado y elija **Aceptar**.
+4. Escriba un nombre para el proyecto si no quiere usar el predeterminado y elija **Aceptar**.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Abra Visual Studio.
+
+2. En la ventana de inicio, elija **Crear un proyecto nuevo**.
+
+3. En el cuadro de búsqueda de la página **Crear un proyecto**, escriba **prueba web** y seleccione la plantilla **Proyecto de prueba de carga y rendimiento web\[En desuso]** para C#. Seleccione **Siguiente**.
+
+4. Escriba un nombre para el proyecto si no quiere usar el predeterminado y elija **Crear**.
+
+::: moniker-end
 
    Visual Studio crea el proyecto y muestra los archivos en el **Explorador de soluciones**. Inicialmente, el proyecto contiene un archivo de prueba web denominado *WebTest1.webtest*.
 

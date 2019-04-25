@@ -1,14 +1,9 @@
 ---
-title: 'CA1303: No pasar literales parámetros como localizados | Microsoft Docs'
-ms.custom: ''
+title: 'CA1303: No pasar literales como localizados parámetros | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - Do not pass literals as localized parameters
 - DoNotPassLiteralsAsLocalizedParameters
@@ -21,12 +16,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: d900abe23dab4d950b5790798916fe728a44af4a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 85aadaca762983b193e42ec2469f88a429a4e532
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49886570"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111745"
 ---
 # <a name="ca1303-do-not-pass-literals-as-localized-parameters"></a>CA1303: No pasar literales como parámetros localizados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,11 +38,11 @@ ms.locfileid: "49886570"
 
  Esta advertencia se produce si una cadena literal se pasa como un valor a un parámetro o propiedad y uno o varios de los casos siguientes son verdadera:
 
--   El <xref:System.ComponentModel.LocalizableAttribute> atributo del parámetro o la propiedad se establece en true.
+- El <xref:System.ComponentModel.LocalizableAttribute> atributo del parámetro o la propiedad se establece en true.
 
--   El nombre de parámetro o la propiedad contiene "Text", "Mensaje" o "Título".
+- El nombre de parámetro o la propiedad contiene "Text", "Mensaje" o "Título".
 
--   El nombre del parámetro de cadena que se pasa a un método Console.Write o Console.WriteLine es "value" o "format".
+- El nombre del parámetro de cadena que se pasa a un método Console.Write o Console.WriteLine es "value" o "format".
 
 ## <a name="rule-description"></a>Descripción de la regla
  Literales de cadena que se incrustan en el código fuente son difíciles de localizar.
@@ -69,6 +64,3 @@ ms.locfileid: "49886570"
 
 ## <a name="see-also"></a>Vea también
  [Recursos de aplicaciones de escritorio](http://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890)
-
-
-

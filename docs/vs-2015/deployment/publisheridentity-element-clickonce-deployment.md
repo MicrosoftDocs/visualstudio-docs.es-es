@@ -1,14 +1,9 @@
 ---
 title: '&lt;publisherIdentity&gt; elemento (implementación ClickOnce) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,13 +16,13 @@ ms.assetid: 34c579db-d2f2-4b66-b9c8-47207f33d950
 caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 1d25b9ff6c4d8a3eb43d18d5c9849ba7199ffe79
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 486e0bc5059e041f02e8dac4836c5ff59b27f63e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49226946"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58988870"
 ---
 # <a name="ltpublisheridentitygt-element-clickonce-deployment"></a>&lt;publisherIdentity&gt; elemento (implementación ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,8 +43,8 @@ Contiene información sobre el editor que firmó este manifiesto de implementaci
   
 |Atributo|Descripción|  
 |---------------|-----------------|  
-|`name`|Requerido. Describe la identidad de la entidad que publicó la aplicación.|  
-|`issuerKeyHash`|Requerido. Contiene el hash SHA-1 de la clave pública del emisor del certificado.|  
+|`name`|Obligatorio. Describe la identidad de la entidad que publicó la aplicación.|  
+|`issuerKeyHash`|Obligatorio. Contiene el hash SHA-1 de la clave pública del emisor del certificado.|  
   
 #### <a name="parameters"></a>Parámetros  
   
@@ -62,6 +57,3 @@ Contiene información sobre el editor que firmó este manifiesto de implementaci
 ## <a name="requirements"></a>Requisitos  
   
 ## <a name="subhead"></a>Subtítulo
-
-
-

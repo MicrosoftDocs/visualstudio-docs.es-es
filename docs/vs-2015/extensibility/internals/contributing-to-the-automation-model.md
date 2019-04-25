@@ -1,26 +1,21 @@
 ---
 title: Contribución al modelo de automatización | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - automation [Visual Studio SDK]
 ms.assetid: 44de482d-93c8-41a4-843c-cefda995a03e
 caps.latest.revision: 19
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 53a669ed6f1ddaa9c2274371439828da24b92789
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c84ea078f9b7c1268b765111cc400f6e51b783f1
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51726975"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58998187"
 ---
 # <a name="contributing-to-the-automation-model"></a>Contribución al modelo de automatización
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -53,7 +48,7 @@ Visual Studio proporciona un conjunto de interfaces de automatización para pers
  [Provisión de automatización para código](../../extensibility/internals/providing-automation-for-code.md)  
  Explica que no es necesario crear un modelo de automatización para el código. Sin embargo, se proporciona un vínculo de este tema se proporciona información muy precisos en los modelos de código.  
   
- [Provisión de automatización para Windows](../../extensibility/internals/how-to-provide-automation-for-windows.md)  
+ [Cómo: Provisión de automatización para Windows](../../extensibility/internals/how-to-provide-automation-for-windows.md)  
  Explica que la provisión de automatización es una buena idea cada vez que se desea disponer de los objetos de automatización en una ventana, y el entorno no ya proporciona un objeto de automatización listos para usar. Analiza la automatización de las ventanas de herramientas y ventanas de documento.  
   
  [Uso del modelo de automatización](../../extensibility/internals/using-the-automation-model.md)  
@@ -67,4 +62,3 @@ Visual Studio proporciona un conjunto de interfaces de automatización para pers
  Proporciona un ejemplo de código que muestra cómo un VSPackage participa en el modelo de objetos de automatización DTE. Las listas de parámetros, valores devueltos y comentarios seleccionadas.  
   
 ## <a name="related-sections"></a>Secciones relacionadas
-

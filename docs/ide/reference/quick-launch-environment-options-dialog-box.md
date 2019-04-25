@@ -1,7 +1,6 @@
 ---
 title: Inicio rápido, Entorno, Opciones (cuadro de diálogo)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.QuickLaunch
@@ -12,43 +11,42 @@ helpviewer_keywords:
 ms.assetid: 4200f297-d065-4723-9a30-d91ff2e26c9d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3dca4a9eb34a950fe571db4da8c9c30d7f2a08b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+monikerRange: vs-2017
+ms.openlocfilehash: a67e909dc43f17e12dd63b7a8a3b2e8a4afacc5e
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53893518"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789879"
 ---
 # <a name="quick-launch-environment-options-dialog-box"></a>Inicio rápido, Entorno, Opciones (cuadro de diálogo)
 
-Puede usar **Inicio rápido** para buscar y ejecutar acciones rápidamente para los activos IDE como opciones, plantillas y menús. No puede usar **Inicio rápido** para buscar símbolos y código. El cuadro de búsqueda **Inicio rápido** está situado en la esquina superior derecha de la barra de menús y es accesible mediante las teclas Ctrl+Q. Simplemente escriba la cadena de búsqueda en el cuadro. Para buscar cadenas que contengan @, use «@@».
+Puede usar **Inicio rápido** para buscar y ejecutar acciones rápidamente para los activos IDE como opciones, plantillas y menús. No puede usar **Inicio rápido** para buscar símbolos y código. El cuadro de búsqueda **Inicio rápido** se encuentra en la esquina superior derecha de la barra de menús y es accesible si se presionan las teclas **Ctrl**+**Q**. Escriba la cadena de búsqueda en el cuadro. Para buscar cadenas que contengan @, use «@@».
 
-**Inicio rápido** está habilitado de forma predeterminada al instalar Visual Studio. En la barra de menús, puede mostrar u ocultar **Inicio rápido** mediante **Herramientas**, **Opciones**. Expanda el nodo **Entornos** y, después, elija **Inicio rápido**. Active o desactive la casilla **Habilitar Inicio rápido**. También puede habilitar o deshabilitar categorías de búsqueda en esta página.
+**Inicio rápido** está habilitado de forma predeterminada al instalar Visual Studio. En la barra de menús, puede mostrar u ocultar **Inicio rápido** mediante **Herramientas** > **Opciones**. Expanda el nodo **Entornos** y, después, elija **Inicio rápido**. Active o desactive la casilla **Habilitar Inicio rápido**. También puede habilitar o deshabilitar categorías de búsqueda en esta página.
 
 ## <a name="category-list"></a>Lista de categorías
 
-Los resultados de búsqueda de inicio rápido aparecen recogidos en cuatro categorías: **Usados más recientemente**, **Menús**, **Opciones** y **Documentos abiertos**, junto con el número de elementos de la categoría. Para desplazarse por los resultados de búsqueda por categoría, pulse las teclas Ctrl + Q para mostrar todos los resultados de la categoría. Después de que aparezca la última categoría, CTRL + Q le muestra unos pocos resultados de cada categoría. Puede usar Ctrl + Mayús + Q para desplazarse por las categorías en orden inverso. Para ver todos los resultados de búsqueda en una categoría, elija el nombre de la categoría.
+Los resultados de búsqueda de inicio rápido aparecen recogidos en cuatro categorías: **Usados más recientemente**, **Menús**, **Opciones** y **Documentos abiertos**, junto con el número de elementos de la categoría. Para desplazarse por los resultados de búsqueda por categoría, pulse las teclas **Ctrl**+**Q** para mostrar todos los resultados de la categoría. Después de que aparezca la última categoría, **Ctrl**+**Q** muestra unos pocos resultados de cada categoría. Presione **Ctrl**+**Mayús**+**Q** para navegar por las categorías en orden inverso. Para ver todos los resultados de búsqueda en una categoría, elija el nombre de la categoría.
 
 Puede utilizar los siguientes accesos directos para limitar la búsqueda a las categorías específicas.
 
 |Categoría|Acceso directo|Descripción del acceso directo|
 |--------------|--------------| - |
 |Usados más recientemente|@mru<br /><br /> Por ejemplo, `@mru font`.|Muestra hasta cinco de los elementos que ha **usado más recientemente**.|
-|Menús|@menu<br /><br /> Por ejemplo, `@menu font`.|Limita la búsqueda a los elementos de menú.|
+|Menús|@menu<br /><br /> Por ejemplo, `@menu project`.|Limita la búsqueda a los elementos de menú.|
 |Opciones|@opt<br /><br /> Por ejemplo, `@opt font`.|Limita la búsqueda a la configuración del cuadro de diálogo **Opciones**.|
-|Documentos|@doc<br /><br /> Por ejemplo, `@doc font`.|Limita la búsqueda a los nombres de archivo y rutas de acceso de documentos abiertos para los criterios de búsqueda, pero no busca el texto dentro de los propios archivos.|
+|Documentos|@doc<br /><br /> Por ejemplo, `@doc program.cs`.|Limita la búsqueda a los nombres de archivo y rutas de acceso de documentos abiertos para los criterios de búsqueda, pero no busca el texto dentro de los propios archivos.|
 
 > [!NOTE]
-> Puede cambiar las teclas de método abreviado en la página **General**, **Teclado**, en el cuadro de diálogo **Opciones**.
+> Puede cambiar las teclas de método abreviado en la página **General** > **Teclado** en el cuadro de diálogo **Opciones**.
 
 ## <a name="show-previous-results"></a>Mostrar resultados anteriores
 
 De forma predeterminada, el término de búsqueda que especifique no se conserva de una sesión de búsqueda a otra. La cadena de búsqueda se borra si busca un término. Mueva el cursor fuera del área de **Inicio rápido** y, después, regrese. Para conservar los resultados de búsqueda, vaya al cuadro de diálogo **Opciones**, seleccione **Inicio rápido** y, después, seleccione la casilla **Mostrar resultados de la búsqueda anterior cuando se active el inicio rápido** . La próxima vez que realice una búsqueda, salga del área de Inicio rápido y retroceda. Inicio rápido conservará el término de búsqueda que se utilizó por última vez y también le mostrará los resultados de búsqueda.
-
-Para conocer las últimas sugerencias y trucos para usar el **Inicio rápido**, vea el [blog de Visual Studio](http://go.microsoft.com/fwlink/?LinkId=236054).
 
 ## <a name="see-also"></a>Vea también
 

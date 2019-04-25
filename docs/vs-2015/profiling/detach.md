@@ -1,25 +1,20 @@
 ---
 title: Desasociar | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: d9d1b52c-7f28-467d-b1e0-512afc4e46c9
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 97e5e64947f2d2807e2d3e34d50827e989ea18e2
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+manager: jillfra
+ms.openlocfilehash: 1262e88055fceef0b2170c304c8ff646eea07205
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53804726"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54793079"
 ---
 # <a name="detach"></a>Desasociar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,6 +66,3 @@ VSPerfCmd.exe /Shutdown
  [Generar perfiles para aplicaciones independientes](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [Generar perfiles para aplicaciones web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [Generar perfiles de servicios](../profiling/command-line-profiling-of-services.md)
-
-
-

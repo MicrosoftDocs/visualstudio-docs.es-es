@@ -1,24 +1,19 @@
 ---
 title: Instalar marcos de prueba unitaria de terceros | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: 47893b70-46f8-49dc-84bd-ec820178f683
 caps.latest.revision: 12
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6798106eda43be42e3149160a797e6bf469f9d42
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 23d347d43918661ca65019862f476f1d636d5d06
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49900909"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117375"
 ---
 # <a name="install-third-party-unit-test-frameworks"></a>Instalar marcos de prueba unitaria de terceros
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +22,7 @@ El Explorador de pruebas de Visual Studio puede ejecutar cualquier marco de prue
   
  **Requisitos**  
   
--   Visual Studio Enterprise, Visual Studio Professional  
+- Visual Studio Enterprise, Visual Studio Professional  
   
 ## <a name="acquiring-third-party-frameworks"></a>Adquirir marcos de terceros  
  Puede descargar e instalar numerosos marcos de pruebas unitarias de terceros mediante el Administrador de extensiones de Visual Studio o desde la Galería de Visual Studio en el sitio web de MSDN. Los marcos también pueden descargarse desde otros sitios, como el sitio web del marco.  
@@ -47,7 +42,7 @@ El Explorador de pruebas de Visual Studio puede ejecutar cualquier marco de prue
 ### <a name="installing-from-the-web"></a>Instalación desde la Web  
  Si sabe qué marco le interesa, realice lo siguiente:  
   
-1. Abra la [Galería de Visual Studio](http://go.microsoft.com/fwlink/?LinkId=236267) en el sitio web de MSDN.  
+1. Abra [Visual Studio Marketplace ](https://marketplace.visualstudio.com).  
   
 2. Escriba el nombre del marco en el cuadro **Buscar**.  
   
@@ -55,7 +50,7 @@ El Explorador de pruebas de Visual Studio puede ejecutar cualquier marco de prue
   
    Para examinar una lista de los marcos junto con otras herramientas de pruebas, realice lo siguiente:  
   
-4. Abra la [Galería de Visual Studio](http://go.microsoft.com/fwlink/?LinkId=236267) en el sitio web de MSDN.  
+4. Abra [Visual Studio Marketplace ](https://marketplace.visualstudio.com).  
   
 5. Seleccione **Examinar**.  
   
@@ -65,6 +60,3 @@ El Explorador de pruebas de Visual Studio puede ejecutar cualquier marco de prue
   
 ## <a name="see-also"></a>Vea también  
  [Haga una prueba unitaria de su código](../test/unit-test-your-code.md)
-
-
-

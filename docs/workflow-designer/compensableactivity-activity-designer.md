@@ -2,21 +2,20 @@
 title: Diseñador de flujo de trabajo - Diseñador de actividad CompensableActivity
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
 f1_keywords:
 - System.Activities.Statements.CompensableActivity.UI
 ms.assetid: e0340d89-d39e-4a52-8557-13e27040d7b5
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b4194ef3d4cfbf4b4654b1695c022d715fc7d885
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cfe5a207136b44e61beff77bec8c8c7b869568b6
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53857930"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55942367"
 ---
 # <a name="compensableactivity-activity-designer"></a>Diseñador de actividad CompensableActivity Activity
 

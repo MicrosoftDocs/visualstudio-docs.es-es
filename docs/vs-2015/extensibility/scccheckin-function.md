@@ -1,14 +1,9 @@
 ---
 title: SccCheckin (función) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccCheckin
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: e3f26ac2-6163-42e1-a764-22cfea5a3bc6
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 26daf5fcd3ee4ec14b0801c828a6e536a65150d8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d8a5a91a0300f256b66970403a3431edf0fe757e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798006"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58988673"
 ---
 # <a name="scccheckin-function"></a>SccCheckin (Función)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +45,7 @@ SCCRTN SccCheckin (
  hWnd  
  [in] Identificador de la ventana del IDE que puede usar el complemento control de código fuente como un elemento primario para los cuadros de diálogo que proporciona.  
   
- n  
+ nFiles  
  [in] Número de archivos seleccionados deben registrarse.  
   
  lpFileNames  
@@ -75,7 +70,7 @@ SCCRTN SccCheckin (
 |SCC_E_ACCESSFAILURE|Hubo un problema al obtener acceso el sistema de control de código fuente, probablemente debido a problemas de red o de contención. Se recomienda un reintento.|  
 |SCC_E_NONSPECIFICERROR|Error no específico. Archivo no se protegió.|  
 |SCC_E_NOTCHECKEDOUT|El usuario no ha desprotegido el archivo, por lo que no puede protegerlo.|  
-|SCC_E_CHECKINCONFLICT|No se pudo realizar la inserción en el repositorio porque:<br /><br /> -Otro usuario ha registrado con antelación y `bAutoReconcile` era false.<br /><br /> O bien<br /><br /> -La combinación automática no es posible (por ejemplo, cuando los archivos son binarios).|  
+|SCC_E_CHECKINCONFLICT|No se pudo realizar la inserción en el repositorio porque:<br /><br /> -Otro usuario ha registrado con antelación y `bAutoReconcile` era false.<br /><br /> -o bien-<br /><br /> -La combinación automática no es posible (por ejemplo, cuando los archivos son binarios).|  
 |SCC_E_VERIFYMERGE|Archivo ha sido combinada automáticamente, pero no se ha comprobado espera de comprobación de usuario.|  
 |SCC_E_FIXMERGE|Archivo ha sido combinada automática, pero no se ha comprobado debido a un conflicto de combinación que debe resolverse manualmente.|  
 |SCC_E_NOTAUTHORIZED|El usuario no puede realizar esta operación.|  
@@ -90,4 +85,3 @@ SCCRTN SccCheckin (
   
 ## <a name="see-also"></a>Vea también  
  [Funciones de API de complemento de control de código fuente](../extensibility/source-control-plug-in-api-functions.md)
-

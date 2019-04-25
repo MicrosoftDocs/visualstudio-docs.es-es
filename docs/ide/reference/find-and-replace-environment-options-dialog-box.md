@@ -1,7 +1,6 @@
 ---
 title: Buscar y reemplazar, Entorno, Opciones (Cuadro de diálogo)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.FindReplace
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: f804d6d5-6309-46e4-8294-b83e880b5ec9
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f5305aee9e60d51fb65fe9fe1edd3dddf541a965
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7bc2d1a97676416c040c11c3b55f5adef7a0a3cc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53910985"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62790640"
 ---
 # <a name="find-and-replace-environment-options-dialog-box"></a>Buscar y reemplazar, Entorno, Opciones (Cuadro de diálogo)
 

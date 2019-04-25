@@ -5,15 +5,16 @@ ms.topic: conceptual
 ms.assetid: 9976b6fd-d052-4017-b848-35b5bf4b2f66
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3712f009262abd9590653af3f3ef4e4e81c87e84
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+monikerRange: vs-2017
+ms.openlocfilehash: 718ef14fda76df87dc4627dc518e993058896471
+ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53943582"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59584303"
 ---
 # <a name="whats-new-in-msbuild-15"></a>Novedades de MSBuild 15
 
@@ -23,7 +24,7 @@ MSBuild ahora está disponible como parte del [SDK de .NET Core](https://www.mic
 
  MSBuild ahora se instala en una carpeta bajo cada versión de Visual Studio. Por ejemplo, *C:\Archivos de programa (x86)\Microsoft Visual Studio\2017\Enterprise\MSBuild*. También puede utilizar el siguiente módulo de PowerShell para localizar MSBuild: [vssetup.powershell](https://github.com/Microsoft/vssetup.powershell).
 
- MSBuild ya no se instala en la memoria caché global de ensamblados. Para hacer referencia a MSBuild mediante programación, use paquetes NuGet.
+ MSBuild ya no se instala en la memoria caché global de ensamblados. Para hacer referencia a MSBuild mediante programación, use paquetes NuGet. Para más información, consulte [Actualización de una aplicación existente a MSBuild 15.0](../msbuild/updating-an-existing-application.md).
 
 ## <a name="changed-properties"></a>Propiedades cambiadas
 
@@ -51,4 +52,4 @@ MSBuild ahora está disponible como parte del [SDK de .NET Core](https://www.mic
 - `GetPathOfFileAbove` devuelve la ruta de acceso del archivo inmediatamente anterior a este. Es funcionalmente equivalente a llamar a `<Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), dir.props))\dir.props" />`.
 
 ## <a name="see-also"></a>Vea también
-[MSBuild](../msbuild/msbuild.md)
+- [MSBuild](../msbuild/msbuild.md)

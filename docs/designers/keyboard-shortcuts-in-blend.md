@@ -1,20 +1,19 @@
 ---
 title: Métodos abreviados de teclado en Blend
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 3a1b6830-30c2-4a36-bd14-6961f5edf9cb
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 86f60d0643c5c81a1d351d3be8ba29ee8b97ba86
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c38eaaa42ae0869ae26f0a048f69a94684b240c3
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53965965"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55953703"
 ---
 # <a name="keyboard-shortcuts-in-blend"></a>Métodos abreviados de teclado en Blend
 

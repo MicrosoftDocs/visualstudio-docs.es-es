@@ -1,20 +1,19 @@
 ---
 title: Menús contextuales en el Explorador de esquemas XML
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 ms.assetid: 42ab17ca-b8c1-40d7-beda-d033f66fe874
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a5a02169a76718d5abfd5f08bd6c03c7f7dda26
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: 4d6ab950c31bc6444eb0b8ae054d74c9a69ed466
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54270169"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526495"
 ---
 # <a name="context-menus-xml-schema-explorer"></a>Menús contextuales (Explorador de esquemas XML)
 
@@ -51,7 +50,7 @@ En la tabla siguiente se describen las opciones disponibles para un nodo de conj
 |**Mostrar todas las referencias de salida**|Busca y resalta lo siguiente:<br /><br /> -Todos los espacios de nombres especificados en los atributos de espacio de nombres de todas las instrucciones importación que no tiene el `schemaLocation` atributo.<br />-Todos los archivos especificados en el `schemaLocation` de todos los atributos de importación e incluya las instrucciones.|
 |**Mostrar tipos globales**|Busca y resalta todos los tipos globales de este archivo.|
 |**Mostrar elementos globales**|Busca y resalta todos los elementos globales de este archivo.|
-|**Vista Código**|Abre el archivo que contiene el nodo seleccionado en el Editor XML. El elemento que está seleccionado en el Explorador de esquemas XML también estará seleccionado en el Editor XML.|
+|**Vista Código**|Abre el archivo que contiene el nodo seleccionado en el editor XML. También se seleccionará el elemento seleccionado en el Explorador de esquemas XML en el editor XML.|
 |**Propiedades (ventana)**|Se abre el **propiedades** ventana (si aún no está abierto). Esta ventana muestra información sobre el nodo.|
 
 ## <a name="all-global-node-types"></a>Todos los tipos de nodo global
@@ -61,7 +60,7 @@ En la tabla siguiente se describen las opciones disponibles para un nodo de conj
 |-|-----------------|
 |**Mostrar en vista de gráfico**|Abre la vista Gráfico. Si el nodo seleccionado no está en el área de trabajo, lo agrega a esta y lo selecciona.|
 |**Mostrar en vista de modelo de contenido**|Abre la vista Modelo de contenido. Si el nodo seleccionado no está en el área de trabajo, lo agrega a esta y lo selecciona.|
-|**Vista Código**|Abre el archivo que contiene el nodo seleccionado en el Editor XML. El elemento que está seleccionado en el Explorador de esquemas XML también estará seleccionado en el Editor XML.|
+|**Vista Código**|Abre el archivo que contiene el nodo seleccionado en el editor XML. También se seleccionará el elemento seleccionado en el Explorador de esquemas XML en el editor XML.|
 |**Propiedades (ventana)**|Se abre el **propiedades** ventana (si aún no está abierto). Esta ventana muestra información sobre el nodo.|
 
 ## <a name="node-type-element"></a>Tipo de nodo: Elemento

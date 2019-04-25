@@ -2,22 +2,21 @@
 title: Configuración de aplicaciones web de Python para IIS
 description: Configuración de aplicaciones web de Python para ejecutarlas con Internet Information Services desde una máquina virtual Windows.
 ms.date: 12/06/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 4d05e4022ada575873a85279d81b094b08160b6d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 551cff18849f0e8ad9fcd6f2c1e08561291b177f
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53843364"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366398"
 ---
 # <a name="configure-python-web-apps-for-iis"></a>Configuración de aplicaciones web de Python para IIS
 
@@ -38,7 +37,7 @@ Cuando se usa un host dedicado, puede usar el entorno global de Python para ejec
 
 ## <a name="set-webconfig-to-point-to-the-python-interpreter"></a>Configuración de web.config para que apunte al intérprete de Python
 
-El archivo *web.config* de la aplicación indica al servidor web de IIS (7+) que se ejecuta en Windows el modo en que debe administrar las solicitudes de Python a través de FastCGI o HttpPlatform. Cuando se usa Visual Studio 2017, debe modificar el archivo *web.config* de manera manual. Tal como se describe en una sección posterior, Visual Studio 2015 hace modificaciones
+El archivo *web.config* de la aplicación indica al servidor web de IIS (7+) que se ejecuta en Windows el modo en que debe administrar las solicitudes de Python a través de FastCGI o HttpPlatform (recomendado). Visual Studio 2015 y versiones anteriores realizan automáticamente estas modificaciones. Al usar Visual Studio 2017, debe modificar manualmente el archivo *web.config*.
 
 ### <a name="configure-the-httpplatform-handler"></a>Configuración del controlador de HttpPlatform
 

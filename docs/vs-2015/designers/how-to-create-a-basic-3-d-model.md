@@ -1,42 +1,37 @@
 ---
-title: 'Cómo: Crear un modelo 3D básico | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Crear un modelo 3D básico | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: a0d97966-2df8-449b-a8cf-5a19684dc773
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 83d4069135adf37156457321b8ce15a254c9c27b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 834651f525ccb292f82d5cf0ab5a7068a1cf7f20
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49825497"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108313"
 ---
-# <a name="how-to-create-a-basic-3-d-model"></a>Cómo: Crear un modelo 3D básico
+# <a name="how-to-create-a-basic-3-d-model"></a>Procedimiento Crear un modelo 3D básico
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 En este documento se muestra cómo usar el Editor de modelos para crear un modelo 3D básico.  
   
  Este documento muestra estas actividades:  
   
--   Agregar objetos a una escena  
+- Agregar objetos a una escena  
   
--   Selección de caras y bordes  
+- Selección de caras y bordes  
   
--   Traducir selecciones  
+- Traducir selecciones  
   
--   Uso de las herramientas **Subdividir cara** y **Extruir cara**  
+- Uso de las herramientas **Subdividir cara** y **Extruir cara**  
   
--   Uso del comando **Triangular**  
+- Uso del comando **Triangular**  
   
 ## <a name="creating-a-basic-3-d-model"></a>Creación de un modelo 3D básico  
  Puede usar el Editor de modelos para crear y modificar modelos 3D y escenas para su juego o aplicación. Los pasos siguientes muestran cómo usar el Editor de modelos para crear un modelo 3D simplificado de una casa. Un modelo simplificado puede usarse como sustituto de activos de arte finales que se siguen creando, como una malla para la detección de colisiones o como un modelo de nivel bajo de detalle que se usará cuando el objeto que representa se encuentra demasiado lejos para beneficiarse de una representación más detallada.  
@@ -79,12 +74,9 @@ En este documento se muestra cómo usar el Editor de modelos para crear un model
   
    ![El modelo completado de la casa simplificada](../designers/media/gfx-model-demo-house-final.png "gfx_model_demo_house_final")  
   
-   Como paso siguiente, puede aplicar un sombreador a este modelo 3D. Para más información, vea [Cómo: aplicar un sombreador a un modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).  
+   Como paso siguiente, puede aplicar un sombreador a este modelo 3D. Para obtener información, vea [Cómo: Aplicar un sombreador a un modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md).  
   
 ## <a name="see-also"></a>Vea también  
- [Cómo: Modelar un terreno en 3D](../designers/how-to-model-3-d-terrain.md)   
+ [Cómo: Modelo terreno en 3D](../designers/how-to-model-3-d-terrain.md)   
  [Editor de modelos](../designers/model-editor.md)   
  [Diseñador de sombras](../designers/shader-designer.md)
-
-
-

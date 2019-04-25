@@ -1,14 +1,9 @@
 ---
 title: Crear soluciones y proyectos | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.openprojectfromweb
 - vs.newproject
@@ -22,13 +17,13 @@ ms.assetid: 836f8ca0-3fc9-4f4b-9090-45f2e4d2e9c8
 caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 336fb41ee6a4c90e7065187b2805aefe9e6e6df7
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: d91263dc0f66c048e308505e461c8b1536b77a06
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49893707"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109821"
 ---
 # <a name="creating-solutions-and-projects"></a>Creating Solutions and Projects
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +31,7 @@ ms.locfileid: "49893707"
 Los proyectos son los contenedores lógicos de todo lo necesario para compilar la aplicación. Cuando se crea un proyecto eligiendo **Archivo &#124; Nuevo &#124; Proyecto** desde el menú principal, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] crea una solución que lo contiene. Después puede agregar otros proyectos nuevos o existentes a la solución si fuese necesario. Puede crear proyectos a partir de archivos de código existentes, así como proyectos temporales (solo .NET) que se eliminarán cuando ya no los necesite.  
   
 > [!NOTE]
->  Las descripciones de este tema se basan en Visual Studio Community. Los cuadros de diálogo y los comandos de menú que se ven pueden diferir de los aquí descritos, en función de la configuración o la edición de Visual Studio. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Las descripciones de este tema se basan en Visual Studio Community. Los cuadros de diálogo y los comandos de menú que se ven pueden diferir de los aquí descritos, en función de la configuración o la edición de Visual Studio. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="create-a-project-from-an-installed-project-template"></a>Crear un proyecto a partir de una plantilla de proyecto instalada  
  **Archivo &#124; Nuevo &#124; Proyecto** en el menú principal para que aparezca el cuadro de diálogo Nuevo proyecto. En el panel izquierdo en **Instalado &#124; Plantillas**, elija el lenguaje de programación y la plataforma o la tecnología y, después, elija una de las plantillas disponibles en el panel central.  
@@ -67,7 +62,7 @@ Los proyectos son los contenedores lógicos de todo lo necesario para compilar l
 ## <a name="adding-single-files-at-the-solution-level"></a>Agregar archivos individuales al nivel de solución  
  A veces, puede tener un archivo al que hagan referencia varios proyectos, o que contenga texto o datos varios que, lógicamente, pertenezcan al nivel de solución en lugar de a un proyecto determinado.  Para agregar un solo elemento a una solución:  
   
-1.  Haga clic con el botón derecho en el nodo de solución en **Explorador de soluciones** y pulse **Agregar &#124; Nuevo elemento** o **Agregar &#124; Elemento existente**.  
+1. Haga clic con el botón derecho en el nodo de solución en **Explorador de soluciones** y pulse **Agregar &#124; Nuevo elemento** o **Agregar &#124; Elemento existente**.  
   
 ## <a name="creating-empty-solutions"></a>Crear soluciones vacías  
  Aunque un proyecto debe residir en una solución, puede crear una solución que no tenga proyectos.  
@@ -92,15 +87,12 @@ Los proyectos son los contenedores lógicos de todo lo necesario para compilar l
   
 ##### <a name="to-delete-a-solution"></a>Para eliminar una solución  
   
-1.  En el **Explorador de soluciones**, haga clic con el botón secundario en la solución que desea eliminar y seleccione **Abrir carpeta en el Explorador de archivos**.  
+1. En el **Explorador de soluciones**, haga clic con el botón secundario en la solución que desea eliminar y seleccione **Abrir carpeta en el Explorador de archivos**.  
   
-2.  Suba un nivel en el Explorador de archivos.  
+2. Suba un nivel en el Explorador de archivos.  
   
-3.  Seleccione el directorio que contiene la solución y presione Supr.  
+3. Seleccione el directorio que contiene la solución y presione Supr.  
   
 ## <a name="see-also"></a>Vea también  
  [Soluciones y proyectos](../ide/solutions-and-projects-in-visual-studio.md)   
- [Cómo: Crear soluciones de varios proyectos](http://msdn.microsoft.com/en-us/02ecd6dd-0114-46fe-b335-ba9c5e3020d6)
-
-
-
+ [Cómo: Crear soluciones de varios proyectos](http://msdn.microsoft.com/02ecd6dd-0114-46fe-b335-ba9c5e3020d6)

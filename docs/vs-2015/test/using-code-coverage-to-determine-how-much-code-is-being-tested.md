@@ -1,26 +1,21 @@
 ---
 title: Uso de cobertura de código para determinar la cantidad de código que se está probando | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 helpviewer_keywords:
 - code coverage
 ms.assetid: 800fc739-acd2-4242-84cb-1d83b4d82cf9
 caps.latest.revision: 38
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: adeca654f14fd068c7ce1cb042e57dbc3891cbf4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 9af0a3dc7c08a415f320ce3560cdfc23c462d4c7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49834063"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087526"
 ---
 # <a name="using-code-coverage-to-determine-how-much-code-is-being-tested"></a>Usar cobertura de código para determinar la cantidad de código que se está probando
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,17 +30,17 @@ Para determinar qué proporción de código del proyecto se está probando realm
   
  **Requisitos**  
   
--   Visual Studio Enterprise  
+- Visual Studio Enterprise  
   
 ### <a name="to-analyze-code-coverage-on-unit-tests-in-test-explorer"></a>Para analizar la cobertura de código en pruebas unitarias en el Explorador de pruebas  
   
-1.  En el menú **Prueba**, elija **Analizar cobertura de código**.  
+1. En el menú **Prueba**, elija **Analizar cobertura de código**.  
   
-2.  Para ver qué líneas se han ejecutado, elija ![Show Code Coverage Coloring Icon] (Mostrar icono de colores en cobertura de código)(../test/media/codecoverage-showcoloringicon.png "CodeCoverage-ShowColoringIcon")**Show Code Coverage Coloring**.  
+2. Para ver qué líneas se han ejecutado, elija ![Show Code Coverage Coloring Icon] (Mostrar icono de colores en cobertura de código)(../test/media/codecoverage-showcoloringicon.png "CodeCoverage-ShowColoringIcon")**Show Code Coverage Coloring**.  
   
-     Para modificar los colores o utilizar la negrita, elija **Herramientas**, **Opciones**, **Entorno**, **Fuentes y colores**, **Mostrar valores para: Editor de texto**. En **Mostrar los elementos**, ajuste los elementos de cobertura.  
+     Para modificar los colores o utilizar la negrita, elija **herramientas**, **opciones**, **entorno**, **fuentes y colores**, **mostrar configuración para: Editor de texto**. En **Mostrar los elementos**, ajuste los elementos de cobertura.  
   
-3.  Si los resultados muestran una cobertura baja, investigue qué partes del código no se están ensayando y escriba más pruebas para abarcarlas. Los equipos de desarrollo normalmente aspiran a una cobertura de código de un 80 %. En algunas situaciones, una cobertura menor es aceptable. Por ejemplo, una cobertura menor es aceptable cuando el código se genera a partir de una plantilla estándar.  
+3. Si los resultados muestran una cobertura baja, investigue qué partes del código no se están ensayando y escriba más pruebas para abarcarlas. Los equipos de desarrollo normalmente aspiran a una cobertura de código de un 80 %. En algunas situaciones, una cobertura menor es aceptable. Por ejemplo, una cobertura menor es aceptable cuando el código se genera a partir de una plantilla estándar.  
   
 > [!TIP]
 >  Para obtener resultados precisos:  
@@ -53,7 +48,7 @@ Para determinar qué proporción de código del proyecto se está probando realm
 > - Asegúrese de que la optimización del compilador está desactivada.  
 > 
 >   Si está trabajando con código no administrado (nativo), utilice una compilación de depuración.  
->   -   Asegúrese de que está generando los archivos .pdb (símbolo) para cada ensamblado.  
+>   - Asegúrese de que está generando los archivos .pdb (símbolo) para cada ensamblado.  
 > 
 >   Si no obtiene los resultados esperados, consulte [Solución de problemas de cobertura de código](../test/troubleshooting-code-coverage.md). . No olvide ejecutar la cobertura de código de nuevo después de actualizar el código. Los resultados de cobertura y color de código no se actualizan automáticamente después de modificar el código o al ejecutar pruebas.  
   
@@ -71,15 +66,15 @@ Para determinar qué proporción de código del proyecto se está probando realm
   
  Se pueden fusionar mediante combinación los resultados de varias ejecuciones, por ejemplo de las ejecuciones que utilizan distintos datos de prueba.  
   
--   **Para ver un conjunto anterior de resultados**, selecciónelo en el menú desplegable. El menú muestra una lista temporal que se borra cuando se abre una nueva solución.  
+- **Para ver un conjunto anterior de resultados**, selecciónelo en el menú desplegable. El menú muestra una lista temporal que se borra cuando se abre una nueva solución.  
   
--   **Para ver los resultados de una sesión anterior**, elija **Importar resultados de la cobertura de código**, navegue hasta la carpeta TestResults de la solución e importe un archivo .coverage.  
+- **Para ver los resultados de una sesión anterior**, elija **Importar resultados de la cobertura de código**, navegue hasta la carpeta TestResults de la solución e importe un archivo .coverage.  
   
      El color de cobertura puede ser incorrecto si el código fuente ha cambiado desde que se generó el archivo .coverage.  
   
--   **Para crear resultados legibles como texto**, elija **Exportar resultados de la cobertura de código**. Esto genera un archivo .coveragexml legible que se puede procesar con otras herramientas o enviar por correo fácilmente.  
+- **Para crear resultados legibles como texto**, elija **Exportar resultados de la cobertura de código**. Esto genera un archivo .coveragexml legible que se puede procesar con otras herramientas o enviar por correo fácilmente.  
   
--   **Para enviar resultados a otra persona**, envíe un archivo .coverage o un archivo exportado .coveragexml. Después pueden importar el archivo. Si tienen la misma versión de código fuente, pueden ver el color de cobertura.  
+- **Para enviar resultados a otra persona**, envíe un archivo .coverage o un archivo exportado .coveragexml. Después pueden importar el archivo. Si tienen la misma versión de código fuente, pueden ver el color de cobertura.  
   
 ## <a name="merging-results-from-different-runs"></a>Combinar resultados de diferentes ejecuciones  
  En algunas situaciones, se utilizarán diferentes bloques de código, en función de los datos de prueba. Por consiguiente, es posible que se deseen combinar los resultados de varias series de pruebas.  
@@ -92,11 +87,11 @@ Para determinar qué proporción de código del proyecto se está probando realm
   
 ### <a name="limitations-in-merging"></a>Limitaciones de la combinación  
   
--   Si se combinan datos de cobertura de distintas versiones del código, los resultados se muestran por separado, pero no se combinan. Para obtener resultados combinados totalmente, utilice la misma compilación del código, cambiando únicamente los datos de prueba.  
+- Si se combinan datos de cobertura de distintas versiones del código, los resultados se muestran por separado, pero no se combinan. Para obtener resultados combinados totalmente, utilice la misma compilación del código, cambiando únicamente los datos de prueba.  
   
--   Si se fusiona mediante combinación un archivo de resultados que se ha exportado y después se ha importado, se pueden ver únicamente los resultados por líneas, no por bloques. Utilice el comando **Agregar o quitar columnas** para mostrar los datos de línea.  
+- Si se fusiona mediante combinación un archivo de resultados que se ha exportado y después se ha importado, se pueden ver únicamente los resultados por líneas, no por bloques. Utilice el comando **Agregar o quitar columnas** para mostrar los datos de línea.  
   
--   Si se fusionan mediante combinación los resultados de pruebas de un proyecto ASP.NET, los resultados de pruebas separadas se muestran, pero no se combinan. Esto se aplica solo a los artefactos de ASP.NET: los resultados para cualquier otro ensamblado se combinan.  
+- Si se fusionan mediante combinación los resultados de pruebas de un proyecto ASP.NET, los resultados de pruebas separadas se muestran, pero no se combinan. Esto se aplica solo a los artefactos de ASP.NET: los resultados para cualquier otro ensamblado se combinan.  
   
 ## <a name="excluding-elements-from-the-code-coverage-results"></a>Excluir elementos de los resultados de la cobertura de código  
  Puede que se desee excluir elementos concretos del código de las puntuaciones de cobertura, por ejemplo si el código se genera a partir de una plantilla de texto. Agregue el atributo `System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage` a cualquiera de los elementos de código: clase, struct, método, propiedad, establecedor o captador de propiedad, evento. Observe que excluir una clase no excluye sus clases derivadas.  
@@ -230,19 +225,19 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
   
  `ExcludeSourceFromCodeCoverage(` *ExclusionName* `, L"` *SourceFilePath* `");`  
   
--   *ExclusionName* es cualquier hombre único.  
+- *ExclusionName* es cualquier hombre único.  
   
--   *FunctionName* es un nombre de función completo. Puede contener comodines. Por ejemplo, para excluir todas las funciones de una clase, escriba `MyNamespace::MyClass::*`  
+- *FunctionName* es un nombre de función completo. Puede contener comodines. Por ejemplo, para excluir todas las funciones de una clase, escriba `MyNamespace::MyClass::*`  
   
--   *SourceFilePath* es la ruta de acceso UNC o local de un archivo .cpp. Puede contener comodines. En el siguiente ejemplo se excluyen todos los archivos de un directorio concreto: `\\MyComputer\Source\UnitTests\*.cpp`  
+- *SourceFilePath* es la ruta de acceso UNC o local de un archivo .cpp. Puede contener comodines. En el siguiente ejemplo se excluyen todos los archivos de un directorio concreto: `\\MyComputer\Source\UnitTests\*.cpp`  
   
--   `#include <CodeCoverage\CodeCoverage.h>`  
+- `#include <CodeCoverage\CodeCoverage.h>`  
   
--   Coloque llamadas a macros de exclusión en el espacio de nombres global, no dentro de ningún espacio de nombres o clase.  
+- Coloque llamadas a macros de exclusión en el espacio de nombres global, no dentro de ningún espacio de nombres o clase.  
   
--   Se pueden colocar las exclusiones en el archivo de código de pruebas unitarias o en el archivo de código de aplicación.  
+- Se pueden colocar las exclusiones en el archivo de código de pruebas unitarias o en el archivo de código de aplicación.  
   
--   Las exclusiones se deben compilar como código no administrado (nativo), estableciendo la opción del compilador o mediante `#pragma managed(off)`.  
+- Las exclusiones se deben compilar como código no administrado (nativo), estableciendo la opción del compilador o mediante `#pragma managed(off)`.  
   
 > [!NOTE]
 >  Para excluir funciones en el código de C++/CLI, aplique el atributo `[System::Diagnostics::CodeAnalysis::ExcludeFromCodeCoverage]` a la función. Este el mismo que para C#.  
@@ -261,7 +256,7 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
   
     Si tiene más de una definición de origen de la prueba, repita este paso para cada una.  
   
-   - <em>Pero no hay ningún campo denominado **tipo de archivo de configuración de ejecución</em>*. *  
+   - <em>Pero no hay ningún campo denominado **Tipo de archivo de parámetros de ejecución</em>*.*  
   
       En **Pruebas automatizadas**, seleccione **Ensamblado de prueba** y elija los puntos suspensivos **[...]** al final de la línea. En el cuadro de diálogo **Agregar o editar serie de pruebas**, en **Ejecutor de pruebas**, elija **Ejecutor de pruebas de Visual Studio**.  
   
@@ -272,11 +267,11 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 ## <a name="analyzing-code-coverage-in-a-command-line"></a>Analizar la cobertura del código en una línea de comandos  
  Para ejecutar pruebas desde la línea de comandos, utilice vstest.console.exe. La cobertura de código es una opción de esta utilidad. Para obtener más información, vea [Opciones de la línea de comandos para VSTest.Console.exe](http://msdn.microsoft.com/library/52e1689d-b1a8-4589-bd98-99a55acd0a11).  
   
-1.  Abra el símbolo del sistema de Visual Studio Developer:  
+1. Abra el símbolo del sistema de Visual Studio Developer:  
   
      En el menú **Inicio** de Windows, elija **Todos los programas**, **Microsoft Visual Studio**, **Visual Studio Tools**, **Símbolo del sistema para desarrolladores**.  
   
-2.  Ejecute:  
+2. Ejecute:  
   
      `vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage`  
   
@@ -286,12 +281,9 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 ## <a name="external-resources"></a>Recursos externos  
   
 ### <a name="guidance"></a>Orientación  
- [Pruebas de entrega continua con Visual Studio 2012. Capítulo 2: Pruebas unitarias: Prueba del interior](http://go.microsoft.com/fwlink/?LinkID=255188)  
+ [Pruebas para entrega continua con Visual Studio 2012 – capítulo 2: Pruebas unitarias: Prueba del interior](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
 ## <a name="see-also"></a>Vea también  
  [Personalizar el análisis de cobertura de código](../test/customizing-code-coverage-analysis.md)   
  [Solución de problemas de cobertura de código](../test/troubleshooting-code-coverage.md)   
  [Haga una prueba unitaria de su código](../test/unit-test-your-code.md)
-
-
-

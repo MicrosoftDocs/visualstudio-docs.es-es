@@ -1,26 +1,21 @@
 ---
 title: Las decisiones de diseño del Control de origen | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], design decisions
 ms.assetid: 5f60ec1a-5a74-4362-8293-817a4dd73872
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: a0932d0029ee924d900dead6b80c3ad2d7e555a0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 89d125dc52340e8528ee9692d5de00784632e6f2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51726078"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047920"
 ---
 # <a name="source-control-design-decisions"></a>Decisiones de diseño del control de código fuente
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,15 +30,14 @@ Las siguientes decisiones de diseño deben considerarse para los proyectos al im
 ## <a name="will-the-project-include-special-files"></a>¿El proyecto incluye archivos especiales?  
  Otra decisión de diseño importante es que si la estructura del proyecto usa archivos especiales. Archivos especiales están ocultos que subyacen a los archivos que son cuadros de diálogo visible en el Explorador de soluciones y en la protección y desprotección. Si usa archivos especiales, siga estas instrucciones:  
   
-1.  No asocie archivos especiales con el nodo raíz del proyecto, es decir, con el proyecto propio archivo. El archivo de proyecto debe ser un único archivo.  
+1. No asocie archivos especiales con el nodo raíz del proyecto, es decir, con el proyecto propio archivo. El archivo de proyecto debe ser un único archivo.  
   
-2.  Cuando se agrega archivos especiales, eliminados o cambiado el nombre de un proyecto, adecuado <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2> se deben activar eventos con el conjunto de marca que indica los archivos son archivos especiales. Estos eventos se lo llama el entorno en respuesta al proyecto una llamada a la correspondiente <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> métodos.  
+2. Cuando se agrega archivos especiales, eliminados o cambiado el nombre de un proyecto, adecuado <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2> se deben activar eventos con el conjunto de marca que indica los archivos son archivos especiales. Estos eventos se lo llama el entorno en respuesta al proyecto una llamada a la correspondiente <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> métodos.  
   
-3.  Cuando llama su editor o proyecto <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> para un archivo, los archivos especiales asociados con ese archivo no se desprotege automáticamente. Pase los archivos especiales en junto con el archivo principal. El entorno se detecte la relación entre todos los archivos que se pasan y ocultar adecuadamente los archivos especiales en la interfaz de usuario de desprotección.  
+3. Cuando llama su editor o proyecto <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> para un archivo, los archivos especiales asociados con ese archivo no se desprotege automáticamente. Pase los archivos especiales en junto con el archivo principal. El entorno se detecte la relación entre todos los archivos que se pasan y ocultar adecuadamente los archivos especiales en la interfaz de usuario de desprotección.  
   
 ## <a name="see-also"></a>Vea también  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2>   
  [Compatibilidad con control de código fuente](../../extensibility/internals/supporting-source-control.md)
-

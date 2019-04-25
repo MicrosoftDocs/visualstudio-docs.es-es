@@ -1,22 +1,21 @@
 ---
 title: Editor de imágenes
 ms.date: 08/10/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.graphics.designer.imageeditor
 - vs.graphics.imageeditor
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d6842a8661dba851fd4f2c73334e89f8cdfe7a1d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9783029eab9597624be459fe88b51a495328b5be
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53899724"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55938194"
 ---
 # <a name="image-editor"></a>Editor de imágenes
 

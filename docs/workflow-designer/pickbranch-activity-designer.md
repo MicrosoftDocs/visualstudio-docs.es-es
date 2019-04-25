@@ -2,21 +2,20 @@
 title: Diseñador de flujo de trabajo - Diseñador de actividad PickBranch
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
 f1_keywords:
 - System.Activities.Statements.PickBranch.UI
 ms.assetid: f523ad47-bbc0-4cda-a35c-41e67c4ba081
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 86948845f2537f0785daeebbc349292891a7a3e2
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: c6c452cb4fd5b8a343473204c2b2bee614383ebb
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54269870"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55922061"
 ---
 # <a name="pickbranch-activity-designer"></a>Diseñador de actividades PickBranch
 

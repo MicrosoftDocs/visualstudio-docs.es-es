@@ -1,7 +1,6 @@
 ---
 title: Editor de modelos
 ms.date: 04/12/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.graphics.designer.3dscene
@@ -9,15 +8,15 @@ f1_keywords:
 ms.assetid: 5edf1a30-9307-43c3-9b8b-831217be0104
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bf26cf8f8d0e47c257d35acbe6e7af29e1416a69
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 13e19cb22740ff5b8dbd42b5cc5f769a211f6f04
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53833049"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55908834"
 ---
 # <a name="model-editor"></a>Editor de modelos
 

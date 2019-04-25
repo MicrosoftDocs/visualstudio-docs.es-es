@@ -1,28 +1,23 @@
 ---
-title: 'Tutorial: Crear un Editor básico y registrar un tipo de archivo del Editor | Microsoft Docs'
-ms.custom: ''
+title: 'Tutorial: Crear un Editor de núcleo y registrar un tipo de archivo del Editor | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - walkthrough
 ms.assetid: 24d2bffd-a35c-46db-8515-fd60b884b7fb
 caps.latest.revision: 30
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 1573709c7ef42e51454ca65103a6faeda78dcc1b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9e900fa7d7bb65d5f55faab00c779247114278eb
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51778714"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58996273"
 ---
-# <a name="walkthrough-creating-a-core-editor-and-registering-an-editor-file-type"></a>Tutorial: Crear un Editor básico y registrar un tipo de archivo del Editor
+# <a name="walkthrough-creating-a-core-editor-and-registering-an-editor-file-type"></a>Tutorial: Crear un Editor de núcleo y registrar un tipo de archivo del Editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 En este tutorial se muestra cómo crear un VSPackage que se inicia el [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] se carga el editor de núcleo cuando un archivo que tiene la extensión de nombre de archivo .myext.  
@@ -41,7 +36,7 @@ En este tutorial se muestra cómo crear un VSPackage que se inicia el [!INCLUDE[
   
 ### <a name="to-create-the-vspackage"></a>Para crear el VSPackage  
   
--   Iniciar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] y cree un [!INCLUDE[csprcs](../includes/csprcs-md.md)] VSPackage llamado `MyPackage`, tal y como se describe en [Tutorial: crear un VSPackage del comando de menú](http://msdn.microsoft.com/en-us/d699c149-5d1e-47ff-94c7-e1222af02c32).  
+-   Iniciar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] y cree un [!INCLUDE[csprcs](../includes/csprcs-md.md)] VSPackage llamado `MyPackage`, tal y como se describe en [Tutorial: Crear un VSPackage del comando de menú](http://msdn.microsoft.com/d699c149-5d1e-47ff-94c7-e1222af02c32).  
   
 ### <a name="to-add-the-editor-factory"></a>Para agregar el generador de editores  
   
@@ -403,4 +398,3 @@ En este tutorial se muestra cómo crear un VSPackage que se inicia el [!INCLUDE[
 ## <a name="see-also"></a>Vea también  
  [En el Editor básico](../extensibility/inside-the-core-editor.md)   
  [Creación de instancias del editor principal mediante la API heredada](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md)
-

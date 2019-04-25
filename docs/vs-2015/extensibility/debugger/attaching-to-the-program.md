@@ -1,26 +1,21 @@
 ---
 title: Asociar al programa | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, attaching to programs
 ms.assetid: 9a3f5b83-60b5-4ef0-91fe-a432105bd066
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8c16c13b4dec412fa44be5cbfbbdd8494b805545
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f6c8aa5d32d579183b0bb42a9152232377423435
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51777947"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088696"
 ---
 # <a name="attaching-to-the-program"></a>Asociación al programa
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -50,16 +45,16 @@ Después de haber registrado sus programas con el puerto adecuado, debe asociar 
   
   Después de la `IDebugEngine2::Attach` se llama al método, siga estos pasos en la implementación de la `IDebugEngine2::Attach` método:  
   
-1.  Enviar una [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) objeto event para el SDM. Para obtener más información, consulte [enviar eventos](../../extensibility/debugger/sending-events.md).  
+1. Enviar una [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) objeto event para el SDM. Para obtener más información, consulte [enviar eventos](../../extensibility/debugger/sending-events.md).  
   
-2.  Llame a la [GetProgramId](../../extensibility/debugger/reference/idebugprogram2-getprogramid.md) método en el [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) objeto que se pasó a la `IDebugEngine2::Attach` método.  
+2. Llame a la [GetProgramId](../../extensibility/debugger/reference/idebugprogram2-getprogramid.md) método en el [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) objeto que se pasó a la `IDebugEngine2::Attach` método.  
   
      Esto devuelve un `GUID` que se usa para identificar el programa. El `GUID` deben almacenarse en el objeto que representa la variable local del programa a la DE y se debe devolver cuando la `IDebugProgram2::GetProgramId` se llama al método en el `IDebugProgram2` interfaz.  
   
     > [!NOTE]
     >  Si implementa el `IDebugProgramNodeAttach2` interfaz, el programa `GUID` se pasa a la `IDebugProgramNodeAttach2::OnAttach` método. Esto `GUID` se usa para el programa `GUID` devuelto por la `IDebugProgram2::GetProgramId` método.  
   
-3.  Enviar una [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) objeto de evento para notificar el SDM que local `IDebugProgram2` objeto se creó para representar el programa a la DE. Para obtener más información, consulte [enviar eventos](../../extensibility/debugger/sending-events.md).  
+3. Enviar una [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) objeto de evento para notificar el SDM que local `IDebugProgram2` objeto se creó para representar el programa a la DE. Para obtener más información, consulte [enviar eventos](../../extensibility/debugger/sending-events.md).  
   
     > [!NOTE]
     >  Esto no es el mismo `IDebugProgram2` objeto que se pasó a la `IDebugEngine2::Attach` método. Anteriormente pasado `IDebugProgram2` objeto es reconocido por el puerto solo y es un objeto independiente.  
@@ -77,4 +72,3 @@ Después de haber registrado sus programas con el puerto adecuado, debe asociar 
  [IDebugProgramEx2](../../extensibility/debugger/reference/idebugprogramex2.md)   
  [Adjuntar](../../extensibility/debugger/reference/idebugprogramex2-attach.md)   
  [Asociar](../../extensibility/debugger/reference/idebugengine2-attach.md)
-

@@ -1,14 +1,9 @@
 ---
 title: Cuadro de herramientas | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vs.toolbox.general
 - vs.toolbox
@@ -20,18 +15,17 @@ ms.assetid: b754dad3-1f32-464f-8b9f-065e17e0bc22
 caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 8c12fe819d46eae073367d10c50deec9ee7b4c26
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 98670f99779804cec87bc4afc03ab7d126024378
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49241480"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105622"
 ---
 # <a name="toolbox"></a>Cuadro de herramientas
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 El **Cuadro de herramientas** muestra iconos para controles y otros elementos que puede agregar a proyectos de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Para abrir el **Cuadro de herramientas**, vaya al menú **Ver** y haga clic en **Cuadro de herramientas**. Puede acoplar el **Cuadro de herramientas** y anclarlo abierto o establecerlo en **Ocultar automáticamente**.  
   
  Los iconos del **Cuadro de herramientas** se pueden arrastrar a la vista de diseño o pegar en un editor de código. Cualquier acción agrega el código básico para crear una instancia del elemento **Cuadro de herramientas** en el archivo de proyecto activo.  
@@ -39,25 +33,22 @@ El **Cuadro de herramientas** muestra iconos para controles y otros elementos qu
  El **Cuadro de herramientas** solo muestra los elementos que son adecuados para el tipo de archivo con el que usted está trabajando. Puede buscar en el Cuadro de herramientas para filtrar más los elementos que aparecen. Si su proyecto requiere un control que no es compatible con el Perfil de cliente, puede configurar su proyecto para que afecte al marco editando las propiedades del proyecto.  
   
 > [!NOTE]
->  Es posible que el equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Es posible que el equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="help-on-toolbox-tabs"></a>Ayuda acerca de las pestañas del Cuadro de herramientas  
  Los siguientes documentos proporcionan más información sobre pestañas específicas del **Cuadro de herramientas**.  
   
--   [Cuadro de herramientas, Datos (Pestaña)](http://msdn.microsoft.com/library/8a41dyt7\(v=vs.110\))  
+- [Cuadro de herramientas, Datos (Pestaña)](http://msdn.microsoft.com/library/8a41dyt7\(v=vs.110\))  
   
--   [Cuadro de herramientas, Componentes (Pestaña)](http://msdn.microsoft.com/library/kb1cz7z9\(v=vs.110\))  
+- [Cuadro de herramientas, Componentes (Pestaña)](http://msdn.microsoft.com/library/kb1cz7z9\(v=vs.110\))  
   
--   [Cuadro de herramientas, HTML (Pestaña)](http://msdn.microsoft.com/library/w9ss7h1a\(v=vs.110\))  
+- [Cuadro de herramientas, HTML (Pestaña)](http://msdn.microsoft.com/library/w9ss7h1a\(v=vs.110\))  
   
--   [Cuadro de herramientas, Datos (Pestaña)](http://msdn.microsoft.com/library/8a41dyt7\(v=vs.120\))  
+- [Cuadro de herramientas, Datos (Pestaña)](http://msdn.microsoft.com/library/8a41dyt7\(v=vs.120\))  
   
--   [Cuadro de herramientas, Componentes (Pestaña)](http://msdn.microsoft.com/library/kb1cz7z9\(v=vs.120\))  
+- [Cuadro de herramientas, Componentes (Pestaña)](http://msdn.microsoft.com/library/kb1cz7z9\(v=vs.120\))  
   
--   [Cuadro de herramientas, HTML (Pestaña)](http://msdn.microsoft.com/library/w9ss7h1a\(v=vs.120\))  
+- [Cuadro de herramientas, HTML (Pestaña)](http://msdn.microsoft.com/library/w9ss7h1a\(v=vs.120\))  
   
 ## <a name="see-also"></a>Vea también  
  [Usar el cuadro de herramientas](../../ide/using-the-toolbox.md)
-
-
-

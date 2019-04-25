@@ -1,26 +1,21 @@
 ---
 title: Información general sobre la integración de Control de origen | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], about source control
 ms.assetid: 3a46e4eb-e677-49c3-8647-d927d035a19a
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 2c4961f7c67fe8d135b97cbcb137d32b2de44214
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4e2761958cd60721ccf05a14ec54d3e365572ea1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51761527"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116191"
 ---
 # <a name="source-control-integration-overview"></a>Información general de la integración del control de código fuente
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -39,7 +34,7 @@ Esta sección comparan las dos maneras de integrar en el control de código fuen
   
 1. Crear un archivo DLL que implementa las funciones especificadas en [de complementos de Control de código fuente](../../extensibility/source-control-plug-ins.md).  
   
-2. Registrar la DLL mediante la realización de las entradas del Registro adecuados (se describe en [Cómo: instalar un complemento de Control de código fuente](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)).  
+2. Registrar la DLL mediante la realización de las entradas del Registro adecuados (se describe en [Cómo: Instalar un complemento de Control de código fuente](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)).  
   
 3. Crear una aplicación auxiliar de la interfaz de usuario y la presentación cuando se lo solicite el paquete de adaptador de Control de código fuente (el componente de Visual Studio que controla la funcionalidad de control de código fuente a través de los complementos de control de código fuente)  
   
@@ -47,19 +42,19 @@ Esta sección comparan las dos maneras de integrar en el control de código fuen
   
 ### <a name="drawbacks-to-implementing-a-source-control-plug-in"></a>Inconvenientes para implementar un complemento de Control de código fuente  
   
--   Para las características avanzadas, el usuario puede ver dos estilos diferentes de las interfaces, dando lugar a confusión posible.  
+- Para las características avanzadas, el usuario puede ver dos estilos diferentes de las interfaces, dando lugar a confusión posible.  
   
--   El complemento de control de código fuente se limita al modelo de control de código fuente implicado en la API de complemento de Control de código fuente.  
+- El complemento de control de código fuente se limita al modelo de control de código fuente implicado en la API de complemento de Control de código fuente.  
   
--   La API de complemento de Control de origen puede ser demasiado restrictiva para algunos escenarios de control de código fuente.  
+- La API de complemento de Control de origen puede ser demasiado restrictiva para algunos escenarios de control de código fuente.  
   
 ### <a name="advantages-to-implementing-a-source-control-plug-in"></a>Ventajas de implementar un complemento de Control de código fuente  
   
--   Visual Studio proporciona toda la interfaz de usuario para todas las operaciones de control de código fuente básicos para que el complemento de control de origen no tiene que implementar la interfaz de usuario potencialmente complejo.  
+- Visual Studio proporciona toda la interfaz de usuario para todas las operaciones de control de código fuente básicos para que el complemento de control de origen no tiene que implementar la interfaz de usuario potencialmente complejo.  
   
--   Debido a la API estricto, el complemento de control de código fuente puede interactuar fácilmente con programas de control de origen externo para proporcionar funcionalidad más extensa; Visual Studio no le importa demasiado mucho cómo se consigue la funcionalidad de control de código fuente, solo que se lleva a cabo según la API de complemento de Control de código fuente.  
+- Debido a la API estricto, el complemento de control de código fuente puede interactuar fácilmente con programas de control de origen externo para proporcionar funcionalidad más extensa; Visual Studio no le importa demasiado mucho cómo se consigue la funcionalidad de control de código fuente, solo que se lleva a cabo según la API de complemento de Control de código fuente.  
   
--   Es más fácil de implementar un complemento que un VSPackage de control de código fuente de control de código fuente.  
+- Es más fácil de implementar un complemento que un VSPackage de control de código fuente de control de código fuente.  
   
 ## <a name="source-control-vspackage"></a>VSPackage de Control de código fuente  
  [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] permite una integración profunda en Visual Studio con control total sobre la funcionalidad de control de código fuente y de reemplazo completo de la interfaz de usuario de control de origen proporcionada por Visual Studio. Un control de código fuente VSPackage está registrado con Visual Studio y proporciona la funcionalidad de control de código fuente. Aunque varios VSPackages de control de código fuente se puede registrar con Visual Studio, solo uno de ellos puede estar activo en cualquier momento. Un VSPackage de control de código fuente tiene control total sobre la funcionalidad de control de código fuente y la apariencia de Visual Studio cuando está activo. Todos los otro VSPackages que se puede registrar en el sistema de control de código fuente están inactiva y no mostrará ninguna interfaz de usuario en absoluto.  
@@ -68,21 +63,20 @@ Esta sección comparan las dos maneras de integrar en el control de código fuen
   
 ### <a name="drawbacks-to-implementing-a-source-control-vspackage"></a>Inconvenientes de la implementación de un VSPackage de Control de código fuente  
   
--   El VSPackage debe implementar un número de interfaces complejas para una integración correcta con Visual Studio.  
+- El VSPackage debe implementar un número de interfaces complejas para una integración correcta con Visual Studio.  
   
--   El VSPackage debe proporcionar toda la interfaz de usuario necesario para el control de código fuente; Visual Studio no proporcionará ninguna asistencia en esta área.  
+- El VSPackage debe proporcionar toda la interfaz de usuario necesario para el control de código fuente; Visual Studio no proporcionará ninguna asistencia en esta área.  
   
--   Un control de código fuente VSPackage está estrechamente vinculado a Visual Studio y no puede funcionar con programas independientes, por lo que no se puede compartir fácilmente la funcionalidad con una versión del programa de control de origen externa.  
+- Un control de código fuente VSPackage está estrechamente vinculado a Visual Studio y no puede funcionar con programas independientes, por lo que no se puede compartir fácilmente la funcionalidad con una versión del programa de control de origen externa.  
   
 ### <a name="advantages-to-implementing-a-source-control-vspackage"></a>Ventajas de implementar un VSPackage de Control de código fuente  
   
--   Dado que el VSPackage tiene funcionalidad y control total sobre el control de código fuente de la interfaz de usuario, se presenta al usuario con una interfaz transparente para el control de código fuente.  
+- Dado que el VSPackage tiene funcionalidad y control total sobre el control de código fuente de la interfaz de usuario, se presenta al usuario con una interfaz transparente para el control de código fuente.  
   
--   El VSPackage no se limita a un modelo de control de código fuente concreto.  
+- El VSPackage no se limita a un modelo de control de código fuente concreto.  
   
 ## <a name="see-also"></a>Vea también  
  [Control de código fuente](../../extensibility/internals/source-control.md)   
  [Creación de un Control de código fuente complemento](../../extensibility/internals/creating-a-source-control-plug-in.md)   
  [Creación de un VSPackage de Control de código fuente](../../extensibility/internals/creating-a-source-control-vspackage.md)   
  [Novedades del control de código fuente](../../extensibility/internals/what-s-new-in-source-control.md)
-

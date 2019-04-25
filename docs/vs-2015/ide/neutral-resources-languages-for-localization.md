@@ -1,14 +1,9 @@
 ---
 title: Idiomas de los recursos neutros para la localización | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - localization [Visual Studio], resources
 - NeutralResourcesLanguageAttribute class
@@ -20,13 +15,13 @@ ms.assetid: ef064995-3b84-4698-a708-9689b7723533
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 45fadacc75b2772ba32d7cb0d796c972076b81ef
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: da39ed9373daaa1dbef21ad36931ce97ea1f1e1b
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49256705"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54764778"
 ---
 # <a name="neutral-resources-languages-for-localization"></a>Idiomas de los recursos neutros para la localización
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,4 +47,3 @@ La clase <xref:System.Resources.NeutralResourcesLanguageAttribute> especifica la
  [Organización jerárquica de recursos para la localización](../ide/hierarchical-organization-of-resources-for-localization.md)   
  [Localizar aplicaciones](../ide/localizing-applications.md)   
  [Globalizar y localizar aplicaciones](../ide/globalizing-and-localizing-applications.md)
-

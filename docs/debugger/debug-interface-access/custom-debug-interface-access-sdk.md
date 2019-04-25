@@ -9,27 +9,27 @@ helpviewer_keywords:
 ms.assetid: a219fc83-d2a8-4bc5-b7e1-bfafeb247f16
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aaa6934fbed6780fb9a8a3be6685dbb7bcf0fbc8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 15e0d58c49a66416371c7e66e12f469e6d224c91
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53834365"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56637170"
 ---
 # <a name="custom-debug-interface-access-sdk"></a>Personalizado (Debug Interface Access SDK)
-Algunos compiladores introducen símbolos que no se identifican mediante cualquiera de los tipos de símbolo estándar de léxico. Estos símbolos se identifican mediante un `SymTagCustom` etiqueta.  
-  
-## <a name="properties"></a>Propiedades  
- En la tabla siguiente muestra las propiedades que son válidas para este tipo de símbolo.  
-  
-|Propiedad.|Tipo de datos|Descripción|  
-|--------------|---------------|-----------------|  
-|[IDiaSymbol::get_dataBytes](../../debugger/debug-interface-access/idiasymbol-get-databytes.md)|`BYTE`|Matriz de datos asociadas con el símbolo.|  
-|[IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|Id. de índice de símbolo.|  
-|[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|Devuelve `SymTagCustom` (uno de los [SymTagEnum (enumeración)](../../debugger/debug-interface-access/symtagenum.md) valores).|  
-  
-## <a name="see-also"></a>Vea también  
- [Jerarquía léxica de tipos de símbolos](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)
+Algunos compiladores introducen símbolos que no se identifican mediante cualquiera de los tipos de símbolo estándar de léxico. Estos símbolos se identifican mediante un `SymTagCustom` etiqueta.
+
+## <a name="properties"></a>Propiedades
+ En la tabla siguiente muestra las propiedades que son válidas para este tipo de símbolo.
+
+|Propiedad.|Tipo de datos|Descripción|
+|--------------|---------------|-----------------|
+|[IDiaSymbol::get_dataBytes](../../debugger/debug-interface-access/idiasymbol-get-databytes.md)|`BYTE`|Matriz de datos asociadas con el símbolo.|
+|[IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|Id. de índice de símbolo.|
+|[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|Devuelve `SymTagCustom` (uno de los [SymTagEnum (enumeración)](../../debugger/debug-interface-access/symtagenum.md) valores).|
+
+## <a name="see-also"></a>Vea también
+- [Jerarquía léxica de tipos de símbolos](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)

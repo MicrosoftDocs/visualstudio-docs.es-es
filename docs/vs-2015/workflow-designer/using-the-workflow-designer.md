@@ -1,11 +1,8 @@
 ---
 title: Mediante el Diseñador de flujo de trabajo | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - Workflow Designer [WFD], using
@@ -14,13 +11,13 @@ ms.assetid: 991a942f-29bc-4868-9299-ed80c5665ab5
 caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 124df9e4f4728af8621685a3c285b50bf064f14a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 6e60c314a6886831758f403402958cfe97c4a4fc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49184150"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58998664"
 ---
 # <a name="using-the-workflow-designer"></a>Utilizar el Diseñador de flujo de trabajo
 En esta sección se ofrecen detalles sobre cómo crear actividades y proyectos de flujo de trabajo nuevos mediante diseñadores integrados y el editor de expresiones que hospedan algunos de los diseñadores de actividades.  

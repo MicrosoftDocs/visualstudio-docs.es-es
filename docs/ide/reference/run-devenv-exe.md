@@ -1,7 +1,6 @@
 ---
 title: -Run (devenv.exe)
 ms.date: 12/10/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - /Run Devenv
@@ -13,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: b1f22f9d-39a5-4918-8a2a-4b5c1e872665
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: db6653bf0b44d186ad30f3d1dffa367db7fe354b
-ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.openlocfilehash: 22c56e3dc4272fd927cc060f5a5a9972e5b8e6ca
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54227478"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55914505"
 ---
 # <a name="run-devenvexe"></a>/Run (devenv.exe)
 

@@ -11,15 +11,15 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], adding to worksheets
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bf375b49525349cf28fb4b9dd1651ddadbf59360
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 67c12843d00bf8d5af51fa7af3175077527afa58
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53850065"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079154"
 ---
 # <a name="how-to-populate-worksheets-with-data-from-a-database"></a>Procedimiento Rellenar hojas de cálculo con datos de una base de datos
 
@@ -35,17 +35,17 @@ En el siguiente ejemplo se muestra cómo agregar controles enlazados a datos en 
 
 ### <a name="to-populate-a-worksheet-with-data-from-a-database"></a>Para rellenar una hoja de cálculo con datos de una base de datos
 
-1.  Abra un proyecto de nivel de documento de Excel en Visual Studio, con la hoja de cálculo abierta en el diseñador.
+1. Abra un proyecto de nivel de documento de Excel en Visual Studio, con la hoja de cálculo abierta en el diseñador.
 
-2.  Abra la ventana **Orígenes de datos** y cree un origen de datos para su proyecto. Para obtener más información, consulte [agregar nuevas conexiones](../data-tools/add-new-connections.md).
+2. Abra la ventana **Orígenes de datos** y cree un origen de datos para su proyecto. Para obtener más información, consulte [agregar nuevas conexiones](../data-tools/add-new-connections.md).
 
-3.  Arrastre el campo o la tabla que desee desde la **orígenes de datos** ventana a la hoja de cálculo.
+3. Arrastre el campo o la tabla que desee desde la **orígenes de datos** ventana a la hoja de cálculo.
 
 En la hoja de cálculo, se crea uno de los controles siguientes:
 
--   Si arrastra un campo, un <xref:Microsoft.Office.Tools.Excel.NamedRange> control se crea en la hoja de cálculo. Para obtener más información, consulte [control NamedRange](../vsto/namedrange-control.md).
+- Si arrastra un campo, un <xref:Microsoft.Office.Tools.Excel.NamedRange> control se crea en la hoja de cálculo. Para obtener más información, consulte [control NamedRange](../vsto/namedrange-control.md).
 
--   Si arrastra una tabla, un <xref:Microsoft.Office.Tools.Excel.ListObject> control se crea en la hoja de cálculo. Para obtener más información, consulte [control ListObject](../vsto/listobject-control.md).
+- Si arrastra una tabla, un <xref:Microsoft.Office.Tools.Excel.ListObject> control se crea en la hoja de cálculo. Para obtener más información, consulte [control ListObject](../vsto/listobject-control.md).
 
 Puede agregar un control diferente, seleccione la tabla o el campo en el **orígenes de datos** ventana y, a continuación, elige un control diferente de la lista desplegable.
 
@@ -53,19 +53,19 @@ Puede agregar un control diferente, seleccione la tabla o el campo en el **oríg
 
 Además del control, se agregan automáticamente al proyecto los siguientes objetos relacionados con los datos:
 
--   Un conjunto de datos con tipo que encapsula las tablas de datos de la base de datos a las que se haya conectado. Para obtener más información, consulte [herramientas de conjunto de datos en Visual Studio](../data-tools/dataset-tools-in-visual-studio.md).
+- Un conjunto de datos con tipo que encapsula las tablas de datos de la base de datos a las que se haya conectado. Para obtener más información, consulte [herramientas de conjunto de datos en Visual Studio](../data-tools/dataset-tools-in-visual-studio.md).
 
--   Un <xref:System.Windows.Forms.BindingSource> que conecta el control al conjunto de datos con tipo. Para obtener más información, consulte [información general del componente BindingSource](/dotnet/framework/winforms/controls/bindingsource-component-overview).
+- Un <xref:System.Windows.Forms.BindingSource> que conecta el control al conjunto de datos con tipo. Para obtener más información, consulte [información general del componente BindingSource](/dotnet/framework/winforms/controls/bindingsource-component-overview).
 
--   Un TableAdapter que se conecta el conjunto de datos con tipo a la base de datos. Para obtener más información, consulte [información general sobre TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview).
+- Un TableAdapter que se conecta el conjunto de datos con tipo a la base de datos. Para obtener más información, consulte [información general sobre TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview).
 
--   TableAdapterManager, que se usa para coordinar los adaptadores de tabla en el conjunto de datos para habilitar las actualizaciones jerárquicas. Para obtener más información, consulte [actualización jerárquica](../data-tools/hierarchical-update.md) y [TableAdapterManager referencia](../data-tools/fill-datasets-by-using-tableadapters.md#tableadaptermanager-reference).
+- TableAdapterManager, que se usa para coordinar los adaptadores de tabla en el conjunto de datos para habilitar las actualizaciones jerárquicas. Para obtener más información, consulte [actualización jerárquica](../data-tools/hierarchical-update.md) y [TableAdapterManager referencia](../data-tools/fill-datasets-by-using-tableadapters.md#tableadaptermanager-reference).
 
 Al ejecutar el proyecto, el control muestra el primer registro del origen de datos. Puede usar el <xref:System.Windows.Forms.BindingSource> para permitir a los usuarios desplazarse por los registros.
 
 ### <a name="to-scroll-through-the-records"></a>Para desplazarse por los registros
 
--   Use métodos <xref:System.Windows.Forms.BindingSource>, como <xref:System.Windows.Forms.BindingSource.MoveNext%2A> y <xref:System.Windows.Forms.BindingSource.MovePrevious%2A>.
+- Use métodos <xref:System.Windows.Forms.BindingSource>, como <xref:System.Windows.Forms.BindingSource.MoveNext%2A> y <xref:System.Windows.Forms.BindingSource.MovePrevious%2A>.
 
 Para obtener información acerca de cómo enviar las actualizaciones a la base de datos y el conjunto de datos con tipo, vea [Cómo: Actualizar un origen de datos con datos de un control host](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md).
 

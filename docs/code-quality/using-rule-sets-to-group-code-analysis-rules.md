@@ -1,7 +1,6 @@
 ---
 title: Conjuntos de reglas de análisis de código
 ms.date: 04/02/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.rulesets.learnmore
@@ -9,21 +8,21 @@ helpviewer_keywords:
 - code analysis, rule sets
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8dc70348ef2fe5826339bd58e1db17574449ff6c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c95b442835289265d197b6806c6d87fa051f2c1b
+ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53885160"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58515238"
 ---
 # <a name="use-rule-sets-to-group-code-analysis-rules"></a>Usar conjuntos de reglas para agrupar reglas de análisis de código
 
-Al configurar el análisis de código en Visual Studio, puede elegir entre una lista de integrados *conjuntos de reglas*. Un conjunto de reglas se aplica a un proyecto y es una agrupación de código reglas de análisis que identifican problemas concretos y condiciones específicas para ese proyecto. Por ejemplo, puede aplicar un conjunto de reglas está diseñado para examinar el código para las API disponibles públicamente o simplemente el mínimo recomendado reglas. También puede aplicar un conjunto de reglas que incluye todas las reglas.
+Al configurar el análisis de código en Visual Studio, puede elegir entre una lista de integrados *conjuntos de reglas*. Un conjunto de reglas es una agrupación de reglas de análisis de código que identifican problemas concretos y condiciones específicas para ese proyecto. Por ejemplo, puede aplicar un conjunto de reglas que se ha diseñado para examinar el código para las API disponibles públicamente. También puede aplicar un conjunto de reglas que incluye todas las reglas disponibles.
 
-Puede personalizar un conjunto de reglas mediante la adición o eliminación de reglas, o cambiando los niveles de gravedad de regla aparezca como advertencias o errores en el **lista de errores**. Los conjuntos de reglas personalizados pueden satisfacer una necesidad de su entorno de desarrollo determinado. Al personalizar un conjunto de reglas, el editor de conjunto de reglas proporciona búsqueda y las herramientas para ayudarle en el proceso de filtrado.
+Puede personalizar un conjunto de reglas mediante la adición o eliminación de reglas o cambiando los niveles de gravedad de regla aparezca como advertencias o errores en el **lista de errores**. Los conjuntos de reglas personalizados pueden satisfacer una necesidad de su entorno de desarrollo determinado. Al personalizar un conjunto de reglas, el editor de conjunto de reglas proporciona búsqueda y las herramientas para ayudarle en el proceso de filtrado.
 
 Conjuntos de reglas que están disponibles para [análisis estático de código administrado](how-to-configure-code-analysis-for-a-managed-code-project.md), [análisis de código C++](using-rule-sets-to-specify-the-cpp-rules-to-run.md), y [analizadores de Roslyn](analyzer-rule-sets.md).
 

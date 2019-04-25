@@ -1,12 +1,9 @@
 ---
 title: Propiedades de atributos de UML de diagramas de clases | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.teamarch.logicalclassdiagram.attribute.properties
 helpviewer_keywords:
@@ -15,13 +12,13 @@ ms.assetid: ba01e064-7424-4e72-98fa-42fa1c30e153
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 0129242593596ea7e3875db2a748045c50863c4c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 24575f125c07a016bef4742e010cbdd51f6c75e9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817365"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59647939"
 ---
 # <a name="properties-of-attributes-on-uml-class-diagrams"></a>Propiedades de los atributos de diagramas de clases de UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +51,6 @@ En un diagrama de clases de lenguaje unificado de modelado (UML), se pueden agre
 
  Para ver las propiedades de un atributo, haga clic en él con el botón derecho y luego haga clic en **Propiedades**.  
 
-
 |   **Property**    | **Predetermiado**  |                                                                                                                                                                                                         Descripción                                                                                                                                                                                                          |
 |-------------------|--------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Valor predeterminado** |   (vacío)    |                                                                                                                                                                               El valor del atributo cuando se crean instancias del clasificador.                                                                                                                                                                                |
@@ -72,11 +68,8 @@ En un diagrama de clases de lenguaje unificado de modelado (UML), se pueden agre
 |   **Es único**   |    False     |                                                                                                                                                                Si es True, no hay ningún valor duplicado en la colección. Para un valor de **Multiplicity** mayor que 1.                                                                                                                                                                |
 
 ## <a name="see-also"></a>Vea también  
- [Diagramas de clases UML: referencia](../modeling/uml-class-diagrams-reference.md)   
+ [Diagrama de clases de UML: Referencia](../modeling/uml-class-diagrams-reference.md)   
  [Propiedades de tipos en diagramas de clases UML](../modeling/properties-of-types-on-uml-class-diagrams.md)   
  [Propiedades de las operaciones de diagramas de clases UML](../modeling/properties-of-operations-on-uml-class-diagrams.md)   
- [Diagramas de clases UML: instrucciones](../modeling/uml-class-diagrams-guidelines.md)   
- [Diagramas de clases de UML: instrucciones](../modeling/uml-class-diagrams-guidelines.md)
-
-
-
+ [Diagrama de clases de UML: Directrices](../modeling/uml-class-diagrams-guidelines.md)   
+ [Diagrama de clases de UML: directrices](../modeling/uml-class-diagrams-guidelines.md)

@@ -1,22 +1,21 @@
 ---
 title: Ventana interactiva (REPL) de Python
 description: Uso de la ventana interactiva (REPL) para el desarrollo rápido de código de Python en Visual Studio.
-ms.date: 10/29/2018
-ms.prod: visual-studio-dev15
+ms.date: 02/11/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d092feee3327af0f7ee7c439eb4c9fc1e74e9138
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bc813868f3284ad81849e3a03d864de65d9f54ed
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53835652"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59365932"
 ---
 # <a name="work-with-the-python-interactive-window"></a>Uso de la ventana interactiva de Python
 
@@ -31,15 +30,11 @@ Visual Studio tiene una serie de modos de REPL de Python entre los que se puede 
 | Estándar | REPL predeterminado, que habla directamente con Python | Edición estándar (multilínea, etc.). | Sí, mediante `$attach` | No |
 | Depuración | REPL predeterminado, que habla directamente con el proceso de Python depurado | Edición estándar | Solo depuración | No |
 | IPython | REPL habla con el back-end de IPython | Comandos de IPython, ventajas de PyLab | No | Sí, insertado en REPL |
-| IPython sin PyLab | REPL habla con el back-end de IPython | IPython estándar | No | Sí, ventana independiente | 
+| IPython sin PyLab | REPL habla con el back-end de IPython | IPython estándar | No | Sí, ventana independiente |
 
 En este artículo se describen los modos de REPL **Estándar** y **Depurar**. Para obtener más información sobre los modos de IPython, vea [Uso de IPython en la ventana interactiva](interactive-repl-ipython.md).
 
-Para obtener un tutorial detallado con ejemplos, incluidas las interacciones con el editor como **Ctrl**+**Entrar**, vea [Paso 3 del tutorial: Uso de la ventana interactiva de REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md). 
-
-|   |   |
-|---|---|
-| ![icono de cámara de película para vídeo](../install/media/video-icon.png "Ver un vídeo") | [Consulte un vídeo (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Python-Interactive-Window-gJYKY5LWE_4605918567) en la ventana **interactiva** (2 minutos 22 segundos).|
+Para obtener un tutorial detallado con ejemplos, incluidas las interacciones con el editor como **Ctrl**+**Entrar**, vea [Paso 3 del tutorial: Uso de la ventana interactiva de REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md).
 
 ## <a name="open-an-interactive-window"></a>Apertura de una ventana interactiva
 
@@ -61,7 +56,7 @@ Por último, puede seleccionar código en el archivo y usar el comando [**Enviar
 
 ## <a name="interactive-window-options"></a>Opciones de la ventana interactiva
 
-Puede controlar varios aspectos de la ventana **interactiva** mediante **Herramientas** > **Opciones** > **Herramientas de Python** > **Ventanas interactivas** (vea [Opciones](python-support-options-and-settings-in-visual-studio.md)):
+Puede controlar varios aspectos de la ventana **interactiva** mediante **Herramientas** > **Opciones** > **Python** > **Ventanas interactivas** (consulte [Opciones](python-support-options-and-settings-in-visual-studio.md)):
 
 ![Opciones de la ventana interactiva de Python](media/options-interactive-windows.png)
 
@@ -126,4 +121,4 @@ Visual Studio también detecta celdas de código que comienzan con comentarios c
 
 La ventana **interactiva** incluye IntelliSense basándose en los objetos activos, a diferencia del editor de código, en el que IntelliSense se basa exclusivamente en el análisis de código fuente. Estas sugerencias son más correctas en la ventana **interactiva**, sobre todo, con el código generado de forma dinámica. El inconveniente es que las funciones con efectos secundarios (como los mensajes de registro) pueden afectar a su experiencia de desarrollo.
 
-Si este comportamiento es un problema, cambie la configuración en **Herramientas** > **Opciones** > **Herramientas de Python** > **Ventanas interactivas** en el grupo **Modo de finalización**, como se describe en [Opciones: Opciones de las ventanas interactivas](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options).
+Si este comportamiento es un problema, cambie la configuración en **Herramientas** > **Opciones** > **Python** > **Ventanas Interactivas** en el grupo **Modo de finalización**, como se describe en [Opciones: Opciones de las ventanas interactivas](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options).

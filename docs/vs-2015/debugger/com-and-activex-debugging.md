@@ -1,14 +1,9 @@
 ---
 title: Depurar COM y ActiveX | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.com
 dev_langs:
@@ -26,13 +21,13 @@ ms.assetid: 3260b2a7-3239-493d-9271-aedf705c13c7
 caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 1c71aa59e62d9ac8530f34f42e15737a52b0fad6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ec2230511b9a058f1c35ce0c34dbe93a69317f4f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51771499"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58988791"
 ---
 # <a name="com-and-activex-debugging"></a>Depurar COM y ActiveX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +38,7 @@ Esta sección proporciona sugerencias sobre cómo depurar aplicaciones COM y con
  [Depuración de servidores y contenedores COM](../debugger/com-server-and-container-debugging.md)  
  Se realizan consideraciones especiales sobre depuración de aplicaciones COM. Los aspectos tratados son: depurar un servidor COM y un contenedor mediante dos proyectos dentro de la misma solución, realizar la traza en llamadas que traspasan los límites de un proceso, establecer puntos de interrupción en funciones de devolución de llamada y ejecutar instrucciones paso a paso entre y dentro de contenedores y servidores.  
   
- [Cómo: Depurar un control ActiveX](../debugger/how-to-debug-an-activex-control.md)  
+ [Cómo: Depuración de un control ActiveX](../debugger/how-to-debug-an-activex-control.md)  
  Contiene información sobre depuración de controles ActiveX. Esta información incluye: especificar un contenedor para la sesión de depuración para ver cómo se ejecuta el código del control ActiveX, depurar un control ActiveX enlazado a datos, simular un contenedor particular y ejecutar instrucciones paso a paso en el código del contenedor.  
   
  [Herramientas de depuración COM](../debugger/com-debugging-tools.md)  
@@ -58,6 +53,3 @@ Esta sección proporciona sugerencias sobre cómo depurar aplicaciones COM y con
  [Introducción a COM](http://msdn.microsoft.com/library/120735d9-db71-4ad3-a730-ce576ea2354e)   
  [Controles ActiveX](http://msdn.microsoft.com/library/52aaec4d-3889-402e-b57d-758078f8ac57)   
  [Aplicaciones de servidor SDI](../debugger/sdi-server-applications.md)
-
-
-

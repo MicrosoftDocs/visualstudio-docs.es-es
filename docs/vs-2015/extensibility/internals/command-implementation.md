@@ -1,26 +1,21 @@
 ---
 title: Implementación de comandos | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - commands, implementation
 ms.assetid: c782175c-cce4-4bd0-8374-4a897ceb1b3d
 caps.latest.revision: 25
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: be1bcecb740fb0c375d0f461639a8b0d5e40669a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a208fabd3d205793763698cde0f6fe367c7bb8b5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51765201"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067838"
 ---
 # <a name="command-implementation"></a>Implementación de comandos
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -74,23 +69,23 @@ if ( null != mcs )
   
 - Si su implementación de cualquiera de estos métodos reconoce el GUID y el comando y, después, el método debe establecer el campo de marcadores de comando de todos los comandos (en el `prgCmds` parámetro) mediante el uso de las marcas siguientes:  
   
-  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Si se admite el comando.  
+  - <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Si se admite el comando.  
   
-  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Si el comando no debe estar visible.  
+  - <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Si el comando no debe estar visible.  
   
-  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Si el comando se alterna y parece que se han comprobado.  
+  - <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Si el comando se alterna y parece que se han comprobado.  
   
-  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Si el comando está habilitado.  
+  - <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Si el comando está habilitado.  
   
-  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Si se debe ocultar el comando si ésta aparece en un menú contextual.  
+  - <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Si se debe ocultar el comando si ésta aparece en un menú contextual.  
   
-  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Si el comando es un controlador de menú y no está habilitado, pero su lista del menú desplegable no está vacía y sigue estando disponible. (Rara vez se usa esta marca).  
+  - <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Si el comando es un controlador de menú y no está habilitado, pero su lista del menú desplegable no está vacía y sigue estando disponible. (Rara vez se usa esta marca).  
   
 - Si el comando se definió en el archivo .vsct con el `TextChanges` marca, establezca los parámetros siguientes:  
   
-  -   Establecer el `rgwz` elemento de la `pCmdText` parámetro para el nuevo texto del comando.  
+  - Establecer el `rgwz` elemento de la `pCmdText` parámetro para el nuevo texto del comando.  
   
-  -   Establecer el `cwActual` elemento de la `pCmdText` parámetro para el tamaño de la cadena de comandos.  
+  - Establecer el `cwActual` elemento de la `pCmdText` parámetro para el tamaño de la cadena de comandos.  
   
   Además, asegúrese de que el contexto actual no es una función de automatización, a menos que el comando está diseñado específicamente para controlar las funciones de automatización.  
   
@@ -144,4 +139,3 @@ public int Exec(ref Guid pguidCmdGroup, uint nCmdID, uint nCmdexecopt, IntPtr pv
   
 ## <a name="see-also"></a>Vea también  
  [Adición de elementos de la interfaz de usuario por VSPackages](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
-

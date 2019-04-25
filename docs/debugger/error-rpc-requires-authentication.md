@@ -1,5 +1,5 @@
 ---
-title: 'Error: RPC requiere autenticación | Microsoft Docs'
+title: 'Error: RPC requiere autenticación | Documentos de Microsoft'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -11,25 +11,25 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 66f319ba24a52a99994e693774aa9e7c0db7757e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: c473916a6b689984f234736eb8b763056fc002d9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53874412"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092011"
 ---
 # <a name="error-rpc-requires-authentication"></a>Error: RPC requiere autenticación
-El depurador de Visual Studio no se puede conectar al equipo remoto. Hay una directiva de RPC habilitada en el equipo local que evita la depuración remota.  
-  
-### <a name="to-correct-this-error"></a>Para corregir este error  
-  
-1.  Ejecute `\` *windir*`\system32\regedt32.exe`  
-  
-2.  Busque y elimine `HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows NT\RPC\RestrictRemoteClients`.  
-  
-3.  Reinicie el equipo para que el cambio del Registro surta efecto.  
-  
-4.  Si el problema persiste, póngase en contacto con su administrador de dominio sobre la **configuración del equipo > plantillas administrativas > sistema > llamada a procedimiento remoto > restricciones para los clientes RPC no autenticadas** directiva de grupo configuración de.
+El depurador de Visual Studio no se puede conectar al equipo remoto. Hay una directiva de RPC habilitada en el equipo local que evita la depuración remota.
+
+### <a name="to-correct-this-error"></a>Para corregir este error
+
+1. Ejecute `\` *windir*`\system32\regedt32.exe`
+
+2. Busque y elimine `HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows NT\RPC\RestrictRemoteClients`.
+
+3. Reinicie el equipo para que el cambio del Registro surta efecto.
+
+4. Si el problema persiste, póngase en contacto con su administrador de dominio sobre la **configuración del equipo > plantillas administrativas > sistema > llamada a procedimiento remoto > restricciones para los clientes RPC no autenticadas** directiva de grupo configuración de.

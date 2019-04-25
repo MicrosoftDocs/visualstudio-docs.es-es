@@ -1,22 +1,21 @@
 ---
 title: Opciones, Editor de texto, U-SQL, IntelliSense
 ms.date: 01/17/2019
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.U-SQL.IntelliSense
 - VS.ToolsOptionsPages.Text_Editor.HQL.IntelliSense
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 163be3ef80a103c2d9a398a443fd562d7aa07d8f
-ms.sourcegitcommit: d0b02affd24e66efed924c197824f35f823e3240
+ms.openlocfilehash: d915019775b1eeb1a1f091bb389e5d5aa8e21e8c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/21/2019
-ms.locfileid: "54418060"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62778204"
 ---
 # <a name="options-text-editor-u-sql-intellisense"></a>Opciones, Editor de texto, U-SQL, IntelliSense
 

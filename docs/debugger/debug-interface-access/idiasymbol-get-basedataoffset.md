@@ -7,32 +7,33 @@ dev_langs:
 ms.assetid: bb2ff5ed-9293-4c37-9741-654058b571c5
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0db92804ac10a011bcb7697da5e8899406295acb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 33967e2e3fd241bae772e1ec208f42f7c9ac7419
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53923892"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56632035"
 ---
 # <a name="idiasymbolgetbasedataoffset"></a>IDiaSymbol::get_baseDataOffset
-Recupera el desplazamiento de base de datos.  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```C++  
-HRESULT get_baseDataOffset(   
-   DWORD* pRetVal);  
-```  
-  
-#### <a name="parameters"></a>Parámetros  
- `pRetVal`  
- [out] Un puntero a un `DWORD` que contiene el desplazamiento de base de datos.  
-  
-## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
-  
-## <a name="see-also"></a>Vea también  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+Recupera el desplazamiento de base de datos.
+
+## <a name="syntax"></a>Sintaxis
+
+```C++
+HRESULT get_baseDataOffset(
+   DWORD* pRetVal);
+```
+
+#### <a name="parameters"></a>Parámetros
+ `pRetVal`
+
+[out] Un puntero a un `DWORD` que contiene el desplazamiento de base de datos.
+
+## <a name="return-value"></a>Valor devuelto
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.
+
+## <a name="see-also"></a>Vea también
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

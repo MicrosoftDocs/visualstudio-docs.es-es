@@ -1,7 +1,6 @@
 ---
 title: Ir a archivo, ir a símbolo, ir a línea
 ms.date: 08/14/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - code editor, go to
@@ -10,19 +9,19 @@ helpviewer_keywords:
 - go to
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ac8ccada5b515c2af99607fe27ad059fbf00c021
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 588bc57dc2cda1030e9e1b8d1f989b2cc2d31662
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986367"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57222497"
 ---
 # <a name="find-code-using-go-to-commands"></a>Buscar código mediante comandos Ir a
 
-Los comandos **Ir a** de Visual Studio realizan una búsqueda centrada en su código para ayudarle a encontrar rápidamente elementos específicos. Puede ir a una línea, tipo, símbolo, archivo o miembro específicos desde una interfaz sencilla y unificada. Esta característica existe en Visual Studio 2017 y versiones posteriores.
+Los comandos **Ir a** de Visual Studio realizan una búsqueda centrada en su código para ayudarle a encontrar rápidamente elementos específicos. Puede ir a una línea, tipo, símbolo, archivo o miembro específicos desde una interfaz sencilla y unificada.
 
 ## <a name="how-to-use-it"></a>Cómo se usa
 
@@ -57,7 +56,7 @@ Prefijo | Iconos | Acceso directo | Descripción
 :-: | - | - | -
 :| ![Icono de línea](media/gotoall-line-icon.png) | **Ctrl**+**G** | Ir al número de línea especificado
 f| ![Icono de archivos](media/gotoall-files-icon.png) | **Ctrl**+**1**, **Ctrl**+**F** | Ir al archivo especificado
-c| ![Icono de archivos recientes](media/gotoall-recent-files-icon.png) | **Ctrl**+**1**, **Ctrl**+**R** | Ir al archivo especificado que haya visitado recientemente
+r| ![Icono de archivos recientes](media/gotoall-recent-files-icon.png) | **Ctrl**+**1**, **Ctrl**+**R** | Ir al archivo especificado que haya visitado recientemente
 m| ![Icono de tipos](media/gotoall-types-icon.png) | **Ctrl**+**1**, **Ctrl**+**T** | Ir al tipo especificado
 m| ![Icono de miembros](media/gotoall-members-icon.png) | **Ctrl**+**1**, **Ctrl**+**M** | Ir al miembro especificado
 \#| ![Icono de símbolos](media/gotoall-symbols-icon.png) | **Ctrl**+**1**, **Ctrl**+**S** | Ir al símbolo especificado

@@ -1,7 +1,6 @@
 ---
 title: Selector de fragmentos de código
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - vs.expansionpicker
@@ -11,15 +10,15 @@ helpviewer_keywords:
 - code snippets, Code Snippet Picker
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 03503c2ea708dd9093e4ee7b3490879724c3f7d2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 84a93ed9cac1c3f352b3e658f28da4b492612338
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53887651"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55948308"
 ---
 # <a name="code-snippet-picker"></a>Selector de fragmentos de código
 

@@ -5,16 +5,15 @@ ms.topic: conceptual
 ms.assetid: e7ca32f1-50b3-48af-ad92-ceafd749296a
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: bda01cec76629bd69d0e3773d99da0b34773f4ff
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
-ms.translationtype: MTE95
+ms.openlocfilehash: dc2b1c25f9b4cf9bc777eefd0c95985a534799b5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53868519"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058141"
 ---
 # <a name="how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-or-designer"></a>Procedimiento Crear métodos DataContext asignados a funciones y procedimientos almacenados (Object Relational Designer)
 
@@ -34,17 +33,17 @@ Puede crear <xref:System.Data.Linq.DataContext> métodos arrastrando procedimien
 
 ### <a name="to-create-datacontext-methods-that-return-automatically-generated-types"></a>Para crear métodos de DataContext que devuelvan tipos generados automáticamente
 
-1.  En **Explorador de servidores** o **Database Explorer**, expanda el **Stored Procedures** nodo de la base de datos con el que está trabajando.
+1. En **Explorador de servidores** o **Database Explorer**, expanda el **Stored Procedures** nodo de la base de datos con el que está trabajando.
 
-2.  Busque el procedimiento almacenado que desee y arrástrelo hasta un área vacía de la **Object Relational Designer**.
+2. Busque el procedimiento almacenado que desee y arrástrelo hasta un área vacía de la **Object Relational Designer**.
 
      El método <xref:System.Data.Linq.DataContext> se crea con un tipo de valor devuelto generado automáticamente y aparece en el panel **Métodos**.
 
 ### <a name="to-create-datacontext-methods-that-have-the-return-type-of-an-entity-class"></a>Para crear métodos de DataContext con el tipo de valor devuelto de una clase de entidad
 
-1.  En **Explorador de servidores** o **Database Explorer**, expanda el **Stored Procedures** nodo de la base de datos con el que está trabajando.
+1. En **Explorador de servidores** o **Database Explorer**, expanda el **Stored Procedures** nodo de la base de datos con el que está trabajando.
 
-2.  Busque el procedimiento almacenado que desee y arrástrelo hasta una clase de entidad existente en el **Object Relational Designer**.
+2. Busque el procedimiento almacenado que desee y arrástrelo hasta una clase de entidad existente en el **Object Relational Designer**.
 
      El método <xref:System.Data.Linq.DataContext> se crea con el tipo de valor devuelto de la clase de entidad seleccionada y aparece en el panel **Métodos**.
 

@@ -1,20 +1,19 @@
 ---
 title: Vista Modelo de contenido del Diseñador de esquemas XML
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 ms.assetid: e8db7c7d-31cf-479e-9dcc-299759891795
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1717908c5d8cd6ee2afab672ca3438d358a5758b
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: b5f275683309d630f147940e97f924496af79179
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54270107"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074823"
 ---
 # <a name="content-model-view"></a>Vista Modelo de contenido
 
@@ -36,7 +35,7 @@ Cuando se selecciona un nodo en el **área de trabajo** panel, se agrega a la su
 
 El modelo de contenido de un nodo se representa con un árbol gráfico que puede expandirse, en el que los elementos y atributos aparecen como nodos del árbol. De forma predeterminada, solo se expande un nivel. Otra información, como los compositores, los nombres de tipo, los grupos y otros contenedores se coloca en una barra vertical (cuando se expande) junto con los elementos y atributos que encierran. Al hacer doble clic en una barra vertical, se vuelve horizontal y el árbol se contrae. Al hacer doble clic en una barra horizontal, se vuelve vertical y el árbol se expande. Al seleccionar la barra vertical selecciona todos los nodos en el contenedor. Los expansores aparecen a la derecha de un nodo si se puede expandir o contraer un elemento.
 
-Si la superficie de diseño está en blanco, el Editor XML, el **Explorador de esquemas XML**, y se muestran la marca de agua. El *marca de agua* es una lista de vínculos a todas las vistas de diseñador XSD. Si el conjunto de esquemas tiene errores, se mostrará el texto siguiente al final de la lista: "Usar la lista de errores para ver y corregir los errores en el conjunto".
+Si la superficie de diseño está en blanco, el editor XML, el **Explorador de esquemas XML**, y se muestran la marca de agua. El *marca de agua* es una lista de vínculos a todas las vistas de diseñador XSD. Si el conjunto de esquemas tiene errores, se mostrará el texto siguiente al final de la lista: "Usar la lista de errores para ver y corregir los errores en el conjunto".
 
 ## <a name="breadcrumb-bar"></a>Barra de ruta de navegación
 
@@ -53,7 +52,7 @@ Cuando haga clic en un elemento en la superficie de diseño o **área de trabajo
 |**Generar XML de ejemplo**|Disponible solo para los elementos globales. Genera un archivo XML de ejemplo para el elemento global.|
 |**Mostrar documentación**|Muestra u oculta el contenido del nodo Anotación/Documentación.|
 |**Exportar diagrama como imagen**|Guarda la superficie de diseño en un archivo XPS.|
-|**Vista Código**|Abre el archivo que contiene el nodo seleccionado en el Editor XML. El elemento seleccionado en el **Explorador de esquemas XML** también está seleccionado en el Editor XML.|
+|**Vista Código**|Abre el archivo que contiene el nodo seleccionado en el editor XML. El elemento seleccionado en el **Explorador de esquemas XML** también está seleccionado en el editor XML.|
 |**Propiedades (ventana)**|Se abre el **propiedades** ventana (si aún no está abierto). Esta ventana muestra información sobre el nodo.|
 
 En la tabla siguiente se describe las opciones que están disponibles para el **área de trabajo** panel.
@@ -67,7 +66,7 @@ En la tabla siguiente se describe las opciones que están disponibles para el **
 |**Quitar todo salvo la selección del área de trabajo**|Quita los nodos que no están seleccionados del área de trabajo y de la superficie de diseño.|
 |**Generar XML de ejemplo**|Disponible solo para los elementos globales. Genera un archivo XML de ejemplo para el elemento global.|
 |**Seleccionar todo**|Selecciona todos los nodos en el **área de trabajo** panel.|
-|**Vista Código**|Abre el archivo que contiene el nodo seleccionado en el Editor XML. El elemento seleccionado en el **Explorador de esquemas XML** también está seleccionado en el Editor XML.|
+|**Vista Código**|Abre el archivo que contiene el nodo seleccionado en el editor XML. El elemento seleccionado en el **Explorador de esquemas XML** también está seleccionado en el editor XML.|
 |**Propiedades (ventana)**|Se abre el **propiedades** ventana (si aún no está abierto). Esta ventana muestra información sobre el nodo.|
 
 ## <a name="properties-window"></a>Propiedades (ventana)
@@ -98,13 +97,13 @@ Puede desplazar la superficie de diseño mediante el uso de las barras de despla
 
 La capacidad de deshacer/rehacer está habilitada en la vista Modelo de contenido para las siguientes acciones:
 
--   Agregar un nodo único arrastrándolo y colocándolo.
+- Agregar un nodo único arrastrándolo y colocándolo.
 
--   Agregar varios nodos desde la ventana de resultados de la búsqueda del Explorador de esquemas.
+- Agregar varios nodos desde la ventana de resultados de la búsqueda del Explorador de esquemas.
 
--   Agregar nodos desde la vista Inicio.
+- Agregar nodos desde la vista Inicio.
 
--   Eliminar uno o varios nodos.
+- Eliminar uno o varios nodos.
 
 ## <a name="zoom"></a>Zoom
 
@@ -112,17 +111,17 @@ Zoom está disponible en la esquina inferior derecha de la vista de modelo de co
 
 El zoom se puede controlar de las maneras siguientes:
 
--   Si mantiene presionada la **Ctrl** las ruedas clave y girando el mouse cuando se mantiene el mouse sobre la superficie de la vista modelo de contenido.
+- Si mantiene presionada la **Ctrl** las ruedas clave y girando el mouse cuando se mantiene el mouse sobre la superficie de la vista modelo de contenido.
 
--   Usando el control deslizante. El control deslizante muestra el nivel de zoom actual.
+- Usando el control deslizante. El control deslizante muestra el nivel de zoom actual.
 
 El control deslizante de Zoom es opaco al seleccionarla, mantenga el mouse sobre él o usar **Ctrl** con la rueda del mouse para hacer zoom; en el resto del tiempo, es transparente.
 
 ## <a name="xml-editor-integration"></a>Integración del editor XML
 
-Puede cambiar entre la **diseñador XSD** y el Editor XML mediante el menú contextual (contexto).
+Puede cambiar entre la **diseñador XSD** y el editor XML mediante el menú contextual (contexto).
 
-Si realiza cambios en el esquema especificado en el Editor XML se sincronizan los cambios en la vista de modelo de contenido. Para obtener más información, consulte [integración con el editor XML](../xml-tools/integration-with-xml-editor.md).
+Si realiza cambios en el esquema especificado en el editor XML se sincronizan los cambios en la vista de modelo de contenido. Para obtener más información, consulte [integración con el editor XML](../xml-tools/integration-with-xml-editor.md).
 
 ## <a name="see-also"></a>Vea también
 

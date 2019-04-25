@@ -1,25 +1,20 @@
 ---
 title: Pruebas unitarias de un archivo DLL de Visual C++ para una aplicación de la Tienda | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: 24afc90a-8774-4699-ab01-6602a7e6feb2
 caps.latest.revision: 15
 author: alexhomer1
 ms.author: gewarren
-manager: robinr
-ms.openlocfilehash: e3cce1fcda4ccc9a4e61b5a02d719e1ceaa1d77d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 716e6141d9f5ae76773a47b81ae54f5d7b70a9ec
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49816500"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104192"
 ---
 # <a name="unit-testing-a-visual-c-dll-for-store-apps"></a>Pruebas unitarias de un archivo DLL de Visual C++ para una aplicación de la Tienda
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +25,7 @@ Este tema describe una manera de crear pruebas unitarias para una DLL de C++ par
   
  En este tema también se crea una solución única de Visual Studio y proyectos independientes para las pruebas unitarias y el DLL que desees probar. También puede incluir las pruebas unitarias directamente en el proyecto DLL o puede crear soluciones independientes para las pruebas unitarias y el archivo .DLL. Consulte [Agregar pruebas unitarias a aplicaciones C++ existentes](../test/unit-testing-existing-cpp-applications-with-test-explorer.md) para obtener sugerencias sobre qué estructura usar.  
   
-##  <a name="BKMK_In_this_topic"></a> En este tema  
+## <a name="BKMK_In_this_topic"></a> En este tema  
  Este tema le indicará cómo realizar las siguientes tareas:  
   
  [Crear la solución y el proyecto de prueba unitaria](#BKMK_Create_the_solution_and_the_unit_test_project)  
@@ -47,35 +42,35 @@ Este tema describe una manera de crear pruebas unitarias para una DLL de C++ par
   
  [Refactorizar el código sin cambiar las pruebas](#BKMK_Refactor_the_code_without_changing_tests)  
   
-##  <a name="BKMK_Create_the_solution_and_the_unit_test_project"></a> Crear la solución y el proyecto de prueba unitaria  
+## <a name="BKMK_Create_the_solution_and_the_unit_test_project"></a> Crear la solución y el proyecto de prueba unitaria  
   
-1.  En el menú **Archivo**, elija **Nuevo** y después **Nuevo proyecto**.  
+1. En el menú **Archivo**, elija **Nuevo** y después **Nuevo proyecto**.  
   
-2.  En el diálogo Nuevo proyecto, expanda **Instalado**, expanda **Visual C++** y elija **Windows Store**. Después elija **Biblioteca de pruebas unitarias (aplicaciones de la Tienda Windows)** en la lista de plantillas de proyecto.  
+2. En el diálogo Nuevo proyecto, expanda **Instalado**, expanda **Visual C++** y elija **Windows Store**. Después elija **Biblioteca de pruebas unitarias (aplicaciones de la Tienda Windows)** en la lista de plantillas de proyecto.  
   
      ![Crear una biblioteca de pruebas unitarias de C++](../test/media/ute-cpp-windows-unittestlib-create.png "UTE_Cpp_windows_UnitTestLib_Create")  
   
-3.  Asigne al proyecto el nombre `RooterLibTests`, especifique la ubicación, asigne a la solución el nombre `RooterLib` y asegúrese de que esté activada la opción **Crear directorio para la solución**.  
+3. Asigne al proyecto el nombre `RooterLibTests`, especifique la ubicación, asigne a la solución el nombre `RooterLib` y asegúrese de que esté activada la opción **Crear directorio para la solución**.  
   
      ![Especifique la ubicación y el nombre de solución y proyecto](../test/media/ute-cpp-windows-unittestlib-createspecs.png "UTE_Cpp_windows_UnitTestLib_CreateSpecs")  
   
-4.  En el nuevo proyecto, abra **unittest1.cpp**.  
+4. En el nuevo proyecto, abra **unittest1.cpp**.  
   
      ![unittest1.cpp](../test/media/ute-cpp-windows-unittest1-cpp.png "UTE_Cpp_windows_unittest1_cpp")  
   
      Tenga en cuenta lo siguiente:  
   
-    -   Cada prueba se define mediante `TEST_METHOD(YourTestName){...}`.  
+    - Cada prueba se define mediante `TEST_METHOD(YourTestName){...}`.  
   
          No es necesario escribir una firma de función convencional. La firma se crea mediante la macro TEST_METHOD. La macro genera una función de la instancia que devuelve void. También genera una función estática que devuelve información sobre el método de prueba. Esta información permite al Explorador de pruebas encontrar el método.  
   
-    -   Los métodos de prueba se agrupan en clases mediante el uso de `TEST_CLASS(YourClassName){...}`.  
+    - Los métodos de prueba se agrupan en clases mediante el uso de `TEST_CLASS(YourClassName){...}`.  
   
          Cuando se ejecutan las pruebas, se crea una instancia de cada clase de prueba. Se llama a los métodos de prueba en un orden no especificado. Puede definir métodos especiales que se invocan antes y después de cada módulo, clase o método. Para obtener más información, consulte [Usar Microsoft.VisualStudio.TestTools.CppUnitTestFramework](../test/using-microsoft-visualstudio-testtools-cppunittestframework.md) en MSDN Library.  
   
-##  <a name="BKMK_Verify_that_the_tests_run_in_Test_Explorer"></a> Compruebe que las pruebas se ejecutan en el Explorador de pruebas  
+## <a name="BKMK_Verify_that_the_tests_run_in_Test_Explorer"></a> Compruebe que las pruebas se ejecutan en el Explorador de pruebas  
   
-1.  Inserte código de prueba:  
+1. Inserte código de prueba:  
   
     ```cpp  
     TEST_METHOD(TestMethod1)  
@@ -86,21 +81,21 @@ Este tema describe una manera de crear pruebas unitarias para una DLL de C++ par
   
      Tenga en cuenta que la clase `Assert` proporciona varios métodos estáticos que puede usar para comprobar los resultados de los métodos de prueba.  
   
-2.  En el menú **Prueba**, elija **Ejecutar** y después **Ejecutar todas**.  
+2. En el menú **Prueba**, elija **Ejecutar** y después **Ejecutar todas**.  
   
      El proyecto de prueba se compila y ejecuta. Aparece la ventana Explorador de pruebas y la prueba se muestra debajo de **Pruebas superadas**. El panel Resumen de la parte inferior de la ventana proporciona detalles adicionales sobre la prueba seleccionada.  
   
      ![Explorador de pruebas](../test/media/ute-cpp-testexplorer-testmethod1.png "UTE_Cpp_TestExplorer_TestMethod1")  
   
-##  <a name="BKMK_Add_the_DLL_project_to_the_solution"></a> Agregar el proyecto DLL a la solución  
+## <a name="BKMK_Add_the_DLL_project_to_the_solution"></a> Agregar el proyecto DLL a la solución  
   
-1.  En el Explorador de soluciones, elija el nombre de la solución. En el menú contextual, elija **Agregar** y después **Agregar nuevo proyecto**.  
+1. En el Explorador de soluciones, elija el nombre de la solución. En el menú contextual, elija **Agregar** y después **Agregar nuevo proyecto**.  
   
      ![Cree el proyecto RooterLib](../test/media/ute-cpp-windows-rooterlib-create.png "UTE_Cpp_windows_RooterLib_Create")  
   
-2.  En el cuadro de diálogo **Agregar nuevo proyecto**, elija **DLL (aplicaciones de la Tienda Windows)**.  
+2. En el cuadro de diálogo **Agregar nuevo proyecto**, elija **DLL (aplicaciones de la Tienda Windows)**.  
   
-3.  Agregue el siguiente código al archivo **RooterLib.h**:  
+3. Agregue el siguiente código al archivo **RooterLib.h**:  
   
     ```cpp  
     // The following ifdef block is the standard way of creating macros which make exporting   
@@ -126,17 +121,17 @@ Este tema describe una manera de crear pruebas unitarias para una DLL de C++ par
   
      La clase `CRooterLib` declara un constructor y el método de perito de `SqareRoot`.  
   
-4.  Agregue el símbolo ROOTERLIB_EXPORTS a la línea de comandos.  
+4. Agregue el símbolo ROOTERLIB_EXPORTS a la línea de comandos.  
   
-    1.  En el Explorador de soluciones, seleccione el proyecto **RooterLib** y elija **Propiedades** en el menú contextual.  
+    1. En el Explorador de soluciones, seleccione el proyecto **RooterLib** y elija **Propiedades** en el menú contextual.  
   
          ![Agregue una definición de símbolo de preprocesador](../test/media/ute-cpp-windows-addpreprocessorsymbol.png "UTE_Cpp_windows_AddPreprocessorSymbol")  
   
-    2.  En el cuadro de diálogo Página de propiedades de RooterLib, expanda **Propiedades de configuración**, después expanda **C++** y seleccione **Preprocesador**.  
+    2. En el cuadro de diálogo Página de propiedades de RooterLib, expanda **Propiedades de configuración**, después expanda **C++** y seleccione **Preprocesador**.  
   
-    3.  Seleccione **\<Editar...>** en la lista **Definiciones de preprocesador** y agregue `ROOTERLIB_EXPORTS` en el cuadro de diálogo Definiciones de preprocesador.  
+    3. Seleccione **\<Editar...>** en la lista **Definiciones de preprocesador** y agregue `ROOTERLIB_EXPORTS` en el cuadro de diálogo Definiciones de preprocesador.  
   
-5.  Agregue las implementaciones mínimas de las funciones declaradas. Abra **RooterLib.cpp** y agregue el siguiente código:  
+5. Agregue las implementaciones mínimas de las funciones declaradas. Abra **RooterLib.cpp** y agregue el siguiente código:  
   
     ```  
     // constructor  
@@ -152,23 +147,23 @@ Este tema describe una manera de crear pruebas unitarias para una DLL de C++ par
   
     ```  
   
-##  <a name="BKMK_Couple_the_test_project_to_the_dll_project"></a> Acoplar el proyecto de prueba al proyecto DLL  
+## <a name="BKMK_Couple_the_test_project_to_the_dll_project"></a> Acoplar el proyecto de prueba al proyecto DLL  
   
 1. Agregue RooterLib al proyecto RooterLibTests.  
   
-   1.  En el Explorador de soluciones, seleccione el proyecto **RooterLibTests** y elija **Referencias...** en el menú contextual.  
+   1. En el Explorador de soluciones, seleccione el proyecto **RooterLibTests** y elija **Referencias...** en el menú contextual.  
   
-   2.  En el cuadro de diálogo Propiedades del proyecto RooterLib, expanda **Propiedades comunes** y elija **Marco de trabajo y referencias**.  
+   2. En el cuadro de diálogo Propiedades del proyecto RooterLib, expanda **Propiedades comunes** y elija **Marco de trabajo y referencias**.  
   
-   3.  Elija **Agregar nueva referencia....**  
+   3. Elija **Agregar nueva referencia....**  
   
-   4.  En el cuadro de diálogo **Agregar referencia**, expanda **Solución** y seleccione **Proyectos**. Después, seleccione el elemento **RouterLib**.  
+   4. En el cuadro de diálogo **Agregar referencia**, expanda **Solución** y seleccione **Proyectos**. Después, seleccione el elemento **RouterLib**.  
   
 2. Incluya el archivo de encabezado RooterLib en **unittest1.cpp**.  
   
-   1.  Abra **unittest1.cpp**.  
+   1. Abra **unittest1.cpp**.  
   
-   2.  Agregue este código debajo de la línea `#include "CppUnitTest.h"`:  
+   2. Agregue este código debajo de la línea `#include "CppUnitTest.h"`:  
   
        ```cpp  
        #include "..\RooterLib\RooterLib.h"  
@@ -205,9 +200,9 @@ Este tema describe una manera de crear pruebas unitarias para una DLL de C++ par
   
    Ha configurado la prueba y los proyectos de código, y ha verificado que puede ejecutar las pruebas que ejecutan funciones en el proyecto de código. Ahora puede empezar a escribir pruebas y código reales.  
   
-##  <a name="BKMK_Iteratively_augment_the_tests_and_make_them_pass"></a> Aumentar las pruebas de forma interactiva y comprobar si se superan  
+## <a name="BKMK_Iteratively_augment_the_tests_and_make_them_pass"></a> Aumentar las pruebas de forma interactiva y comprobar si se superan  
   
-1.  Agregue una nueva prueba:  
+1. Agregue una nueva prueba:  
   
     ```  
     TEST_METHOD(RangeTest)  
@@ -229,16 +224,16 @@ Este tema describe una manera de crear pruebas unitarias para una DLL de C++ par
     >   
     >  Cuando los usuarios cambien los requisitos, deshabilite las pruebas que ya no son correctas. Escriba nuevas pruebas y hágalas funcionar una a una de la misma manera incremental.  
   
-2.  En el Explorador de pruebas, elija **Ejecutar todas**.  
+2. En el Explorador de pruebas, elija **Ejecutar todas**.  
   
-3.  La prueba sufre un error.  
+3. La prueba sufre un error.  
   
      ![Se produce un error en RangeTest](../test/media/ute-cpp-testexplorer-rangetest-fail.png "UTE_Cpp_TestExplorer_RangeTest_Fail")  
   
     > [!TIP]
     >  Compruebe que todas las pruebas producen un error inmediatamente después de escribirlas. Esto ayuda a evitar el error habitual de escribir una prueba que nunca falla.  
   
-4.  Mejora el código objeto de prueba para que la nueva prueba se supere. Agregue lo siguiente a **RooterLib.cpp**:  
+4. Mejora el código objeto de prueba para que la nueva prueba se supere. Agregue lo siguiente a **RooterLib.cpp**:  
   
     ```cpp  
     #include <math.h>  
@@ -259,14 +254,14 @@ Este tema describe una manera de crear pruebas unitarias para una DLL de C++ par
   
     ```  
   
-5.  Compile la solución y, en el Explorador de pruebas, elija **Ejecutar todo**.  
+5. Compile la solución y, en el Explorador de pruebas, elija **Ejecutar todo**.  
   
      Ambas pruebas quedan superadas.  
   
 > [!TIP]
 >  Desarrolle código agregando pruebas una a una. Asegúrese de que se pasan todas las pruebas después de cada iteración.  
   
-##  <a name="BKMK_Debug_a_failing_test"></a> Depurar una prueba fallida  
+## <a name="BKMK_Debug_a_failing_test"></a> Depurar una prueba fallida  
   
 1. Agregue otra prueba a **unittest1.cpp**:  
   
@@ -308,13 +303,13 @@ Este tema describe una manera de crear pruebas unitarias para una DLL de C++ par
   
 3. Para ver por qué se produce el error, revise la función:  
   
-   1.  Establece un punto de interrupción al principio de la función `SquareRoot`.  
+   1. Establece un punto de interrupción al principio de la función `SquareRoot`.  
   
-   2.  En el menú contextual de la prueba no superada, elija **Depurar pruebas seleccionadas**.  
+   2. En el menú contextual de la prueba no superada, elija **Depurar pruebas seleccionadas**.  
   
         Cuando la ejecución se detiene en el punto de interrupción, revise paso a paso el código.  
   
-   3.  Agregue código a **RooterLib.cpp** para capturar la excepción:  
+   3. Agregue código a **RooterLib.cpp** para capturar la excepción:  
   
        ```  
        #include <stdexcept>  
@@ -330,15 +325,15 @@ Este tema describe una manera de crear pruebas unitarias para una DLL de C++ par
   
        ```  
   
-   1.  En el Explorador de pruebas, elija **Ejecutar todas** para probar el método corregido y asegúrese de que no se haya introducido una regresión.  
+   1. En el Explorador de pruebas, elija **Ejecutar todas** para probar el método corregido y asegúrese de que no se haya introducido una regresión.  
   
    Ahora, todas las pruebas pasan.  
   
    ![Todas las pruebas pasan](../test/media/ute-ult-alltestspass.png "UTE_ULT_AllTestsPass")  
   
-##  <a name="BKMK_Refactor_the_code_without_changing_tests"></a> Refactorizar el código sin cambiar las pruebas  
+## <a name="BKMK_Refactor_the_code_without_changing_tests"></a> Refactorizar el código sin cambiar las pruebas  
   
-1.  Simplifique el cálculo central de la función `SquareRoot`:  
+1. Simplifique el cálculo central de la función `SquareRoot`:  
   
     ```  
     // old code  
@@ -348,12 +343,9 @@ Este tema describe una manera de crear pruebas unitarias para una DLL de C++ par
   
     ```  
   
-2.  Elija **Ejecutar todas** para probar el método refactorizado y asegúrese de que no haya introducido una regresión.  
+2. Elija **Ejecutar todas** para probar el método refactorizado y asegúrese de que no haya introducido una regresión.  
   
     > [!TIP]
     >  Un conjunto estable de pruebas unitarias correctas proporciona la confianza de que no se han introducido errores al cambiar el código.  
     >   
     >  Mantenga la refactorización separada de los demás cambios.
-
-
-

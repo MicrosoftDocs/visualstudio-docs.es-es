@@ -1,7 +1,6 @@
 ---
-title: Procedimiento Mostrar las direcciones URL como vínculos en el editor
+title: Filtrar Mostrar las direcciones URL como vínculos en el editor
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - URLs, opening
@@ -10,17 +9,17 @@ helpviewer_keywords:
 ms.assetid: 7c673953-476e-4897-9c2d-1fc15556c172
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e1fb0958006a94fd558beb08aea95b8cf3cd317
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7d05dd3a6c6797bbd563a45e93df76ec16f1e36b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53833557"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55949634"
 ---
-# <a name="how-to-display-urls-as-links-in-the-editor"></a>Procedimiento Mostrar las direcciones URL como vínculos en el editor
+# <a name="how-to-display-urls-as-links-in-the-editor"></a>Filtrar Mostrar las direcciones URL como vínculos en el editor
 
 Puede elegir que el editor de código trate los localizadores uniformes de recursos (direcciones URL) en el código como vínculos activos. Cuando use esta característica, las direcciones URL:
 

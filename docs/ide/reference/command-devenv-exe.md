@@ -1,7 +1,6 @@
 ---
 title: -Command (devenv.exe)
 ms.date: 12/10/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - Devenv, /Command switch
@@ -10,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 13c20cd6-f09d-400a-8b7b-ecc266a32cef
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dfc52c66fd56f2d3d7954584804cfd4e3e75ee24
-ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.openlocfilehash: 6daa21f9db7eef9a651577ad829d884dccf353dc
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54227959"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56717525"
 ---
 # <a name="command-devenvexe"></a>/Command (devenv.exe)
 
@@ -32,13 +31,19 @@ devenv /Command CommandName
 
 ## <a name="arguments"></a>Argumentos
 
-- *CommandName*
+*CommandName*
 
-  Obligatorio. Nombre completo de un comando de Visual Studio o su alias, delimitado por comillas dobles. Para obtener más información sobre la sintaxis de comandos y de alias, consulte [Comandos de Visual Studio](../../ide/reference/visual-studio-commands.md).
+Obligatorio. Nombre completo de un comando de Visual Studio o su alias, delimitado por comillas dobles. Para obtener más información sobre la sintaxis de comandos y de alias, consulte [Comandos de Visual Studio](../../ide/reference/visual-studio-commands.md).
 
 ## <a name="remarks"></a>Comentarios
 
-Una vez completado el inicio, el IDE ejecuta el comando indicado. Si usa este modificador, en el IDE no se mostrará la página de inicio de Visual Studio al iniciar la aplicación.
+Una vez completado el inicio, el IDE ejecuta el comando indicado.
+
+::: moniker range="vs-2017"
+
+Si se usa este modificador, el IDE no muestra la página principal al iniciarse.
+
+::: moniker-end
 
 Si un complemento muestra un comando, puede utilizar este modificador para iniciar el complemento desde la línea de comandos. Para obtener más información, vea [Cómo: Control Add-Ins By Using the Add-In Manager](/previous-versions/xwdatdwh(v=vs.140)) (Control de los complementos mediante el Administrador de complementos).
 

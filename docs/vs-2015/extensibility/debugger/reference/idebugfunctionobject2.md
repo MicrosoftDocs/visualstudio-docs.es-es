@@ -1,26 +1,21 @@
 ---
 title: IDebugFunctionObject2 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - IDebugFunctionObject2 interface
 ms.assetid: 56b2fdff-146d-4138-a34c-59a9c65a3ddd
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 110b9890e36f8a0100d2cd38b23f445f48cd1cbd
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ba0ec3092943c0e0cb5593f020926c705cc0eb0a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51770540"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60037970"
 ---
 # <a name="idebugfunctionobject2"></a>IDebugFunctionObject2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -42,11 +37,11 @@ IDebugFunctionObject2 : IUnknown
 ## <a name="notes-for-callers"></a>Notas para los llamadores  
  Métodos de esta interfaz aplazan los de **IDebugFunctionObject** de las maneras siguientes:  
   
--   El **IDebugEvaluate** método toma marcadores.  
+- El **IDebugEvaluate** método toma marcadores.  
   
--   El **CreateObject** método adopta las marcas y un tiempo de espera.  
+- El **CreateObject** método adopta las marcas y un tiempo de espera.  
   
--   El **CreateStringObjectWithLength** método toma una longitud.  
+- El **CreateStringObjectWithLength** método toma una longitud.  
   
 ## <a name="methods"></a>Métodos  
  Esta interfaz implementa los métodos siguientes:  
@@ -60,7 +55,6 @@ IDebugFunctionObject2 : IUnknown
 ## <a name="requirements"></a>Requisitos  
  Encabezado: Ee.h  
   
- Namespace: Microsoft.VisualStudio.Debugger.Interop  
+ Espacio de nombres:  Microsoft.VisualStudio.Debugger.Interop  
   
  Ensamblado: Microsoft.VisualStudio.Debugger.Interop.dll
-

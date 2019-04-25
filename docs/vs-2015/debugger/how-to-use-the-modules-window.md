@@ -1,14 +1,9 @@
 ---
-title: 'Cómo: utilizar la ventana módulos | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Utilice la ventana módulos | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.modules
 dev_langs:
@@ -31,15 +26,15 @@ ms.assetid: d840fdca-b035-4452-b652-72580c831896
 caps.latest.revision: 41
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: fea513b7593e260b5f5fb71e40ced98a1f8cc279
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2f332ef1a52ae49e51025614745fc1b5c4a44e07
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764408"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078296"
 ---
-# <a name="how-to-use-the-modules-window"></a>Cómo: Utilizar la ventana Módulos
+# <a name="how-to-use-the-modules-window"></a>Procedimiento Utilice la ventana módulos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 NOTA]
@@ -49,13 +44,13 @@ NOTA]
   
 ### <a name="to-display-the-modules-window-in-break-mode-or-in-run-mode"></a>Para mostrar la ventana Módulos en modo de interrupción o modo de ejecución  
   
--   En el **depurar** menú, elija **Windows**y, a continuación, haga clic en **módulos**.  
+- En el **depurar** menú, elija **Windows**y, a continuación, haga clic en **módulos**.  
   
-     De forma predeterminada, el **módulos** ventana ordena los módulos por orden de carga. No obstante, puede ordenarlos por columnas.  
+     De forma predeterminada, la ventana **Módulos** ordena los módulos por orden de carga. No obstante, puede ordenarlos por columnas.  
   
 ### <a name="to-sort-by-any-column"></a>Para ordenarlos por columnas  
   
--   Haga clic en el botón situado en la parte superior de la columna.  
+- Haga clic en el botón situado en la parte superior de la columna.  
   
      Puede cargar los símbolos o especificar una ruta de acceso de símbolos desde la **módulos** ventana mediante el menú contextual.  
   
@@ -64,30 +59,25 @@ NOTA]
   
 #### <a name="to-load-symbols-manually"></a>Para cargar símbolos manualmente  
   
-1.  En el **módulos** ventana, haga un módulo para el que no han cargado los símbolos.  
+1. En el **módulos** ventana, haga un módulo para el que no han cargado los símbolos.  
   
-2.  Seleccione **cargar símbolos desde** y, a continuación, haga clic en **servidores de símbolos de Microsoft** o **ruta de acceso de símbolos**.  
+2. Seleccione **cargar símbolos desde** y, a continuación, haga clic en **servidores de símbolos de Microsoft** o **ruta de acceso de símbolos**.  
   
 #### <a name="to-change-symbol-load-settings"></a>Para cambiar la configuración de carga de símbolos  
   
-1.  En el **módulos** ventana, haga clic en cualquier módulo.  
+1. En la ventana **Módulos**, haga clic con el botón derecho en cualquier módulo.  
   
-2.  Haga clic en **Lores**.  
+2. Haga clic en **Lores**.  
   
      Ahora puede cambiar la configuración de carga de símbolos, como se describe en [especificar ubicaciones de símbolos y el comportamiento de carga](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md#BKMK_Specify_symbol_locations_and_loading_behavior). Los cambios no surten efecto hasta que se reinicie la sesión de depuración.  
   
 #### <a name="to-change-symbol-load-behavior-for-a-specific-module"></a>Para cambiar el comportamiento de carga de símbolos para un módulo específico  
   
-1.  En el **módulos** ventana, haga clic en el módulo.  
+1. En la ventana **Módulos**, haga clic con el botón derecho en el módulo.  
   
-2.  Seleccione **configuración de carga de símbolos automática** y, a continuación, haga clic en **cargar siempre manualmente** o **predeterminado**. Los cambios no surten efecto hasta que se reinicie la sesión de depuración.  
+2. Seleccione **configuración de carga de símbolos automática** y, a continuación, haga clic en **cargar siempre manualmente** o **predeterminado**. Los cambios no surten efecto hasta que se reinicie la sesión de depuración.  
   
 ## <a name="see-also"></a>Vea también  
- [Interrumpir la ejecución](http://msdn.microsoft.com/en-us/30fc4643-f337-4651-b1ff-f2de2c098d40)   
- [Visualización de datos en el depurador](../debugger/viewing-data-in-the-debugger.md)   
+ [Interrumpir la ejecución](http://msdn.microsoft.com/30fc4643-f337-4651-b1ff-f2de2c098d40)   
+ [Ver datos en el depurador](../debugger/viewing-data-in-the-debugger.md)   
  [Especificar archivos de código fuente y símbolos (.pdb)](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
-
-
-
-
-

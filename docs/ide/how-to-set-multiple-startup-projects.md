@@ -1,24 +1,23 @@
 ---
-title: Procedimiento Establecimiento de varios proyectos de inicio
+title: Filtrar Establecimiento de varios proyectos de inicio
 ms.date: 06/21/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - startup projects, setting multiple startup projects
 ms.assetid: 6131eb80-8745-4eb9-bdab-433e69b41651
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed02ad99172809816ebacf2459036253a04c6c6c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 988bc52cbf163c4b7e0f4c8d821a769f21df0413
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53842198"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55938207"
 ---
-# <a name="how-to-set-multiple-startup-projects"></a>Procedimiento Establecimiento de varios proyectos de inicio
+# <a name="how-to-set-multiple-startup-projects"></a>Filtrar Establecimiento de varios proyectos de inicio
 
 Visual Studio permite especificar cómo se ejecuta más de un proyecto cuando se inicia el depurador.
 

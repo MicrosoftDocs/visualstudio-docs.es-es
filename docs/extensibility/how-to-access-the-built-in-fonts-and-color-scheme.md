@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6905845e-e88e-4805-adcf-21da39108ec7
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f1e579ab9e42ffd7448e3c0dbe62766c058e6f01
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 58d5fd0bfe1c8d5f5896d365a7b0ecfdb8da25b3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53874607"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068228"
 ---
 # <a name="how-to-access-the-built-in-fonts-and-color-ccheme"></a>Procedimiento Obtener acceso a las fuentes integradas y ccheme de color
 El entorno de desarrollo integrado (IDE) de Visual Studio tiene un esquema de fuentes y colores que está asociado a la ventana del editor. Puede tener acceso a este esquema a través de la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> interfaz.
@@ -34,32 +34,32 @@ El entorno de desarrollo integrado (IDE) de Visual Studio tiene un esquema de fu
 
 ## <a name="to-define-a-category-using-built-in-fonts-and-colors"></a>Para definir una categoría de uso de colores y fuentes integradas
 
-1.  Cree un GUID arbitrario.
+1. Cree un GUID arbitrario.
 
      Este GUID se utiliza para identificar de forma exclusiva una categoría. Se vuelve a utilizar en esta categoría especificación de colores y fuentes de forma predeterminada del IDE.
 
     > [!NOTE]
     >  Cuando se recuperan datos de fuente y color con el <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> o de otras interfaces, los paquetes VSPackage usar este GUID para hacer referencia a información integrada.
 
-2.  Nombre de la categoría debe agregarse a una tabla de cadenas dentro de los recursos de VSPackage (*.rc*) de archivos, por lo que se puede localizar según sea necesario cuando se muestra en el IDE.
+2. Nombre de la categoría debe agregarse a una tabla de cadenas dentro de los recursos de VSPackage (*.rc*) de archivos, por lo que se puede localizar según sea necesario cuando se muestra en el IDE.
 
      Para obtener más información, consulte [agregar o eliminar una cadena](/cpp/windows/adding-or-deleting-a-string).
 
 ### <a name="to-register-a-category-using-built-in-fonts-and-colors"></a>Para registrar una categoría de uso de colores y fuentes integradas
 
-1.  Construir un tipo especial de entrada de registro de la categoría en la siguiente ubicación:
+1. Construir un tipo especial de entrada de registro de la categoría en la siguiente ubicación:
 
-     *[HKLM\SOFTWARE\Microsoft \Visual Studio\\\<versión de Visual Studio > \FontAndColors\\\<categoría >*]
+     *[HKLM\SOFTWARE\Microsoft \Visual Studio\\\<Visual Studio version>\FontAndColors\\\<Category>*]
 
      *\<Categoría >* es el nombre no traducido de la categoría.
 
-2.  Rellenar el registro para usar la combinación de colores y fuentes estándar con cuatro valores:
+2. Rellenar el registro para usar la combinación de colores y fuentes estándar con cuatro valores:
 
-    |nombre|Tipo|Datos|Descripción|
+    |Name|Tipo|Datos|Descripción|
     |----------|----------|----------|-----------------|
     |Categoría|REG_SZ|GUID|Un GUID arbitrario que identifica una categoría que contiene el esquema de color y fuente de cotizaciones.|
     |Paquete|REG_SZ|GUID|{F5E7E71D-1401-11D1-883B-0000F87579D2}<br /><br /> Este GUID se usa por todos los VSPackages que usan las configuraciones predeterminadas de fuente y color.|
-    |NameID|REG_DWORD|Id.|El identificador de recurso de un nombre de categoría traducible en el VSPackage.|
+    |NameID|REG_DWORD|ID|El identificador de recurso de un nombre de categoría traducible en el VSPackage.|
     |ToolWindowPackage|REG_SZ|GUID|El GUID del VSPackage que implementa el <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> interfaz.|
 
 ### <a name="to-initiate-the-use-of-system-provided-fonts-and-colors"></a>Para iniciar el uso de colores y fuentes proporcionados por el sistema

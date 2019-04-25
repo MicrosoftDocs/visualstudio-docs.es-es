@@ -1,7 +1,6 @@
 ---
 title: Crear modelos para la aplicación
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.teamarch.common.commentlink.properties
@@ -19,15 +18,15 @@ helpviewer_keywords:
 - software, modeling
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f608246af6311c03f4ed5ee31d4588ce2aa1a7ea
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 79d116cfb7c9b6514032aa12d916b21b38ae94b3
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942689"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55942627"
 ---
 # <a name="create-models-for-your-app"></a>Crear modelos para la aplicación
 
@@ -45,7 +44,7 @@ Para visualizar la arquitectura de un sistema o código existente, cree los diag
 
 ## <a name="related-tasks"></a>Tareas relacionadas
 
-|**Tema**|**Task**|
+|**Topic**|**Task**|
 |-|-|
 |[Visualizar el código](../modeling/visualize-code.md)|Cree mapas de código y diagramas de dependencia para adquirir una mejor comprensión del código desconocido.|
 |[Requisitos del usuario de modelos](../modeling/model-user-requirements.md)|Usar modelos para aclarar y transmitir las necesidades del usuario.|

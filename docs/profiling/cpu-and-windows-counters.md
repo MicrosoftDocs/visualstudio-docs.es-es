@@ -9,15 +9,15 @@ helpviewer_keywords:
 - CPU counters in Profiling Tools
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ddf173f39accb0bb9d2907349c82accdd4f21b40
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 37025177c026d0b6578644ca5765a6878be984ea
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53912641"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56625691"
 ---
 # <a name="cpu-and-windows-counters"></a>Contadores de Windows y de CPU
 
@@ -129,7 +129,7 @@ Mediante la herramienta de línea de comandos [VSPerfCmd](../profiling/vsperfcmd
 
 ## <a name="see-also"></a>Vea también
 
-[Información general](../profiling/overviews-performance-tools.md)  
-[Cómo: Elegir eventos de muestreo](../profiling/how-to-choose-sampling-events.md)  
-[Cómo: Recopilar datos de contadores de CPU](../profiling/how-to-collect-cpu-counter-data.md)  
-[Cómo: Recopilar datos de contadores de Windows](../profiling/how-to-collect-windows-counter-data.md)
+[Información general](../profiling/overviews-performance-tools.md)
+[ Elegir eventos de muestreo](../profiling/how-to-choose-sampling-events.md)
+[ Recopilar datos de contadores de CPU](../profiling/how-to-collect-cpu-counter-data.md)
+[ Recopilar datos de contadores de Windows](../profiling/how-to-collect-windows-counter-data.md)

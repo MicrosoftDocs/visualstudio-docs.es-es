@@ -1,14 +1,9 @@
 ---
 title: 'Cómo: Pasar errores por alto en las tareas | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, ignoring errors
 - ContinueOnError attribute [MSBuild]
@@ -16,18 +11,17 @@ ms.assetid: e2f1ca4f-787b-44bd-bc64-81a036025e96
 caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 72f638a17fd6d49157f13d54a6ec1deba0e2bf27
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5025cc3e9dc0e13c3ae4658d129f5d0ac94f6fd6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49891198"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062144"
 ---
 # <a name="how-to-ignore-errors-in-tasks"></a>Cómo: Pasar errores por alto en las tareas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 A veces, quiere que una compilación tolere errores en determinadas tareas. Si se produce un error en las tareas no críticas, quiere que la compilación continúe porque todavía es posible obtener el resultado esperado. Por ejemplo, si un proyecto utiliza una tarea `SendMail` para enviar un mensaje de correo electrónico después de crear cada componente, tal vez se considere aceptable que la compilación continúe hasta finalizar, aunque los servidores de correo electrónico no estén disponibles ni se puedan enviar los mensajes de estado. O bien, por ejemplo, si los archivos intermedios se suelen eliminar durante la compilación, tal vez se considere aceptable que la compilación continúe hasta finalizar, aunque no se puedan eliminar esos archivos.  
   
 ## <a name="using-the-continueonerror-attribute"></a>Usar el atributo ContinueOnError  
@@ -47,7 +41,7 @@ A veces, quiere que una compilación tolere errores en determinadas tareas. Si s
   
 #### <a name="to-ignore-an-error-in-a-task"></a>Para omitir un error en una tarea  
   
--   Utilice el atributo `ContinueOnError` de la tarea. Por ejemplo:  
+- Utilice el atributo `ContinueOnError` de la tarea. Por ejemplo:  
   
      `<Delete Files="@(Files)" ContinueOnError="WarnAndContinue"/>`  
   
@@ -74,5 +68,3 @@ A veces, quiere que una compilación tolere errores en determinadas tareas. Si s
 [MSBuild](msbuild.md)  
  [Referencia de tareas](../msbuild/msbuild-task-reference.md)   
  [Tareas](../msbuild/msbuild-tasks.md)
-
-

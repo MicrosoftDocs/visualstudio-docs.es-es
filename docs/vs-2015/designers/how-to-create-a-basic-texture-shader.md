@@ -1,25 +1,20 @@
 ---
 title: 'Cómo: Crear un sombreador de textura básico | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: 5af113fb-6415-4be0-8b23-10fddb10e80a
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 18bb4f1ad4dfc3428e8dc30958013438de22e13a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9dda948921c702367859afe32ad75a7998460587
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49898543"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048572"
 ---
 # <a name="how-to-create-a-basic-texture-shader"></a>Cómo: Crear un sombreador de textura básico
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,15 +23,15 @@ En este documento se muestra cómo usar el Diseñador de sombras y el lenguaje D
   
  Este documento muestra estas actividades:  
   
--   Quitar nodos de un gráfico de sombreador  
+- Quitar nodos de un gráfico de sombreador  
   
--   Agregar nodos a un gráfico  
+- Agregar nodos a un gráfico  
   
--   Establecer los parámetros del sombreador  
+- Establecer los parámetros del sombreador  
   
--   Establecer la visibilidad del parámetro  
+- Establecer la visibilidad del parámetro  
   
--   Conectar nodos  
+- Conectar nodos  
   
 ## <a name="creating-a-basic-texture-shader"></a>Crear un sombreador de textura básico  
  Puede implementar un sombreador básico de una sola textura escribiendo los valores de color y alfa de una muestra de textura directamente en el color de salida final.  
@@ -75,6 +70,3 @@ En este documento se muestra cómo usar el Diseñador de sombras y el lenguaje D
  [Editor de imágenes](../designers/image-editor.md)   
  [Diseñador de sombras](../designers/shader-designer.md)   
  [Nodos del Diseñador de sombras](../designers/shader-designer-nodes.md)
-
-
-

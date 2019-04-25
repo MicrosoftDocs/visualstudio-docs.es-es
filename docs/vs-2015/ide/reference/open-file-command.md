@@ -1,14 +1,9 @@
 ---
 title: Comando Abrir archivo | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - file.openfile
 helpviewer_keywords:
@@ -19,18 +14,17 @@ ms.assetid: a51a83fc-e3c6-4fa2-8882-8b7b6c0a6406
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 0b519d8defcdc4b43dd7ca84552536ca655bb348
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e870b15355da86b8654511cab932f792323446b9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49247941"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59669116"
 ---
 # <a name="open-file-command"></a>Abrir archivo (Comando)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Abre un archivo existente y le permite especificar un editor.  
   
 ## <a name="syntax"></a>Sintaxis  
@@ -41,7 +35,7 @@ File.OpenFile filename [/e:editorname]
   
 ## <a name="arguments"></a>Argumentos  
  `filename`  
- Requerido. Ruta de acceso completa o parcial y nombre del archivo que se va a abrir. Las rutas de acceso que contienen espacios deben ir entre comillas.  
+ Obligatorio. Ruta de acceso completa o parcial y nombre del archivo que se va a abrir. Las rutas de acceso que contienen espacios deben ir entre comillas.  
   
 ## <a name="switches"></a>Modificadores  
  /e:`editorname`  
@@ -71,6 +65,3 @@ File.OpenFile filename [/e:editorname]
  [Ventana Inmediato](../../ide/reference/immediate-window.md)   
  [Cuadro Buscar/Comando](../../ide/find-command-box.md)   
  [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
-
-
-

@@ -7,6 +7,8 @@ items:
     href: overview-of-python-tools-for-visual-studio.md
   - name: Un paseo por el IDE de Visual Studio
     href: visual-studio-ide.md
+  - name: Carga de trabajo Aplicaciones de ciencia de datos y de análisis
+    href: data-science-and-analytical-applications-workload.md
 - name: Instalación
   href: installing-python-support-in-visual-studio.md
   items:
@@ -19,6 +21,8 @@ items:
     maintainContext: true
   - name: Creación de un proyecto a partir de una plantilla
     href: quickstart-02-python-in-visual-studio-project-from-template.md
+  - name: Apertura y ejecución de código de Python en una carpeta
+    href: quickstart-05-python-visual-studio-open-folder.md
   - name: Creación de un proyecto a partir del código existente
     href: quickstart-01-python-in-visual-studio-project-from-existing-code.md
   - name: Creación de un proyecto a partir de un repositorio
@@ -81,7 +85,7 @@ items:
     - name: Plantilla de servicio en la nube de Azure
       href: python-azure-cloud-service-project-template.md
   - name: SDK de Azure para Python
-    href: azure-sdk-for-python.md
+    href: /python/azure/?view=azure-python
 - name: Guías de procedimientos
   items:
   - name: Administración de entornos de Python
@@ -140,9 +144,9 @@ items:
     href: python-item-templates.md
   - name: Opciones
     href: python-support-options-and-settings-in-visual-studio.md
-ms.openlocfilehash: e295581bbb60c5febc98cde837f6e498aa93d042
-ms.sourcegitcommit: a715de2ba8c703f37aa2102567b1aa2c0f05a117
+ms.openlocfilehash: f9fc649b365f43cf50ec98b5a8059985ddd666a4
+ms.sourcegitcommit: 4c7a0c2d712eb24609216577a793e912a6083eaf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53441592"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57982862"

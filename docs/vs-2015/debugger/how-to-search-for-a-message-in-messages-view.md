@@ -1,14 +1,9 @@
 ---
-title: 'Cómo: buscar un mensaje en la vista mensajes | Microsoft Docs'
-ms.custom: ''
+title: Filtrar Buscar un mensaje en la vista mensajes | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Message Search dialog box
 - Messages view
@@ -17,15 +12,15 @@ ms.assetid: 732b7ccc-54ea-41db-823b-2b96e3e4083e
 caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 08a2a08014d0927ecea29b1acb6bb36620f1a15a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 34f50b457dcc8b6db8e48e7072e8956fa78f6a7a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51802109"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58988056"
 ---
-# <a name="how-to-search-for-a-message-in-messages-view"></a>Cómo: Buscar un mensaje en la vista Mensajes
+# <a name="how-to-search-for-a-message-in-messages-view"></a>Filtrar Búsqueda de un mensaje en la vista Mensajes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Puede buscar un mensaje concreto en la vista mensajes mediante su identificador, el tipo o el Id. de mensaje como criterios de búsqueda. Cualquiera de estas, o una combinación, serán los criterios de búsqueda válida. También se puede especificar la dirección inicial de la búsqueda. Los campos en el cuadro de diálogo se cargan previamente con los atributos del mensaje seleccionado actualmente.  
@@ -58,6 +53,3 @@ Puede buscar un mensaje concreto en la vista mensajes mediante su identificador,
 6. Haga clic en **Aceptar**.  
   
    Si se encuentra un mensaje coincidente, éste se resalta en la ventana de vista de mensajes. Consulte [la vista mensajes](../debugger/messages-view.md).
-
-
-

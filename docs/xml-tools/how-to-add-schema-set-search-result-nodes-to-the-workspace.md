@@ -1,28 +1,26 @@
 ---
 title: Agregar nodos de resultados de búsqueda del conjunto de esquemas XML al área de trabajo
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: ff33b3cc-4db9-4b4e-9378-b45ed5999b18
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e9f004943474f9b1c0fb449c1aec23f70034c3a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 406eb2872a2be7127aaf2d37ee654cfe2f58ac3c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53875039"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654495"
 ---
-# <a name="how-to-add-schema-set-search-result-nodes-to-the-workspace"></a>Procedimiento Agregar nodos de resultados de búsqueda de conjunto de esquemas al área de trabajo
+# <a name="how-to-add-schema-set-search-result-nodes-to-the-workspace"></a>Procedimiento Adición de nodos de resultados de búsqueda del conjunto de esquemas al área de trabajo
 
 En este tema se explica cómo agregar nodos que están resaltados en la **Explorador de esquemas XML** como resultado de una búsqueda de palabra clave en el área de trabajo.
 
 > [!NOTE]
 > Solo los nodos globales se pueden agregar a la [área de trabajo](../xml-tools/xml-schema-designer-workspace.md).
-
 
  En este ejemplo se utiliza el ejemplo [esquema de pedido de compra](../xml-tools/sample-xsd-file-purchase-order-schema.md).
 

@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 6a7d93c2-31ea-4bae-8b29-6988a567ddf2
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1b2329b54ba90a37e0d6d5e782e66c4af923a646
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6d3fb814fa202e8a5211ab9db3cb1d71923ccac6
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53828230"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56679104"
 ---
 # <a name="language-server-protocol"></a>Protocolo de servidor de lenguaje
 

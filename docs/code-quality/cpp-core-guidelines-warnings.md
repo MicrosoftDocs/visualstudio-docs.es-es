@@ -6,19 +6,18 @@ ms.assetid: 7c83814a-f21d-4323-ad5f-13bac40d3e38
 author: mblome
 ms.author: mblome
 manager: wpickett
-ms.prod: visual-studio-dev15
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 59a26be52614baf5a8cca48f855f19432ff2af3b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 002a82143ca30e87a8e83f3e7e4b7217ab677f11
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53926283"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087929"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Usar los comprobadores de C++ Core Guidelines
 
-C++ Core Guidelines son un conjunto de directrices, reglas y procedimientos recomendados sobre cómo codificar en C++ creados por los diseñadores y expertos de C++ portátil. Visual Studio actualmente admite un subconjunto de estas reglas como parte de sus herramientas de análisis de código de C++. Los comprobadores de directrices principales se instalan de forma predeterminada en Visual Studio 2017 y son [disponible como un paquete de NuGet para Visual Studio 2015](#vs2015_corecheck).
+C++ Core Guidelines son un conjunto de directrices, reglas y procedimientos recomendados sobre cómo codificar en C++ creados por los diseñadores y expertos de C++ portátil. Visual Studio actualmente admite un subconjunto de estas reglas como parte de sus herramientas de análisis de código de C++. Los comprobadores de directrices principales se instalan de forma predeterminada en Visual Studio 2017 y Visual Studio de 2019 y son [disponible como un paquete de NuGet para Visual Studio 2015](#vs2015_corecheck).
 
 ## <a name="the-c-core-guidelines-project"></a>El proyecto de C++ Core Guidelines
 
@@ -85,18 +84,17 @@ C++ Core Guidelines sirven para ayudarle a escribir código mejor y más seguro.
 
 Cuando se agregan nuevas reglas para el Comprobador de directrices principales de C++, puede aumentar el número de advertencias que se generan para código preexistente. Puede usar conjuntos de reglas predefinidas para filtrar qué tipos de reglas para habilitar. A partir de Visual Studio 2017 versión 15.3, los conjuntos de reglas compatibles son:
 
-  - **Reglas de puntero Owner** aplicar [administración de recursos comprueba relacionadas con owner<T> de C++ Core Guidelines](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
+- **Reglas de puntero Owner** aplicar [administración de recursos comprueba relacionadas con owner\<T > de C++ Core Guidelines](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
 
-  - **Reglas de constantes** aplicar [relacionadas con las comprobaciones de C++ Core Guidelines](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability).
+- **Reglas de constantes** aplicar [relacionadas con las comprobaciones de C++ Core Guidelines](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability).
 
-  - **Reglas de puntero sin formato** aplicar [administración de recursos comprueba relacionados a raw punteros de C++ Core Guidelines](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
+- **Reglas de puntero sin formato** aplicar [administración de recursos comprueba relacionados a raw punteros de C++ Core Guidelines](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
 
-  - **Reglas de puntero único** aplicar [comprueba de administración de recursos relativas a tipos con semántica de puntero único de C++ Core Guidelines](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
+- **Reglas de puntero único** aplicar [comprueba de administración de recursos relativas a tipos con semántica de puntero único de C++ Core Guidelines](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
 
-  - **Reglas de límites** exigir la [delimita el perfil de C++ Core Guidelines](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile).
+- **Reglas de límites** exigir la [delimita el perfil de C++ Core Guidelines](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile).
 
-  - **Escriba reglas** exigir la [tipo de perfil de C++ Core Guidelines](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#prosafety-type-safety-profile).
-
+- **Escriba reglas** exigir la [tipo de perfil de C++ Core Guidelines](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#prosafety-type-safety-profile).
 
 Puede limitar las advertencias para solo uno o varios de los grupos. El **mínimo nativo** y **recomienda nativo** regla conjuntos incluyen reglas de C++ Core Check además otras comprobaciones de PREfast. Para ver los contadores a conjuntos de reglas, abra el cuadro de diálogo Propiedades del proyecto, seleccione **código Analysis\General**, abra la lista desplegable en el **conjuntos de reglas** cuadro combinado y seleccionar **elegir varios conjuntos de reglas** . Para obtener más información sobre el uso de conjuntos de reglas en Visual Studio, consulte [utilizando conjuntos de reglas para agrupar reglas de análisis de código](using-rule-sets-to-group-code-analysis-rules.md).
 
@@ -162,32 +160,33 @@ Puede usar la opción de línea de comandos para deshabilitar temporalmente todo
 
 A veces puede ser útil para realizar centrado de análisis de código y aún aprovechar el IDE de Visual Studio. A continuación es un escenario de ejemplo que puede utilizarse para proyectos grandes para ahorrar tiempo de compilación y para que sea más fácil para filtrar los resultados.
 
-1.  En el shell de comandos establece la `esp.extension` y `esp.annotationbuildlevel` variables de entorno.
-2.  Inicie Visual Studio desde el shell de comandos para heredar estas variables.
-3.  Cargar el proyecto y abra sus propiedades.
-4.  Habilitar análisis de código, seleccionar los conjuntos de reglas adecuada, pero no habilita las extensiones de análisis de código.
-5.  Vaya al archivo que desea analizar con el Comprobador de directrices principales de C++ y abrir sus propiedades.
-6.  Elija **C / C ++ \Command las opciones de línea** y agregar `/analyze:plugin EspXEngine.dll`
-7.  Deshabilitar el uso del encabezado precompilado (**C / C ++ \Precompiled encabezados**). Esto es necesario porque el motor de extensiones puede intentar leer la información interna del encabezado precompilado y si esto último se compiló con las opciones de proyecto predeterminadas, no serán compatible.
-8.  Recompile el proyecto. Deben ejecutar las comprobaciones de PREFast comunes en todos los archivos. Dado que el Comprobador de directrices principales de C++ no está habilitado de forma predeterminada, solo debe ejecutar en el archivo que está configurado para usarlo.
+1. En el shell de comandos establece la `esp.extension` y `esp.annotationbuildlevel` variables de entorno.
+2. Abra Visual Studio desde el shell de comandos para heredar estas variables.
+3. Cargar el proyecto y abra sus propiedades.
+4. Habilitar análisis de código, seleccionar los conjuntos de reglas adecuada, pero no habilita las extensiones de análisis de código.
+5. Vaya al archivo que desea analizar con el Comprobador de directrices principales de C++ y abrir sus propiedades.
+6. Elija **C / C ++ \Command las opciones de línea** y agregar `/analyze:plugin EspXEngine.dll`
+7. Deshabilitar el uso del encabezado precompilado (**C / C ++ \Precompiled encabezados**). Esto es necesario porque el motor de extensiones puede intentar leer la información interna del encabezado precompilado y si esto último se compiló con las opciones de proyecto predeterminadas, no serán compatible.
+8. Recompile el proyecto. Deben ejecutar las comprobaciones de PREFast comunes en todos los archivos. Dado que el Comprobador de directrices principales de C++ no está habilitado de forma predeterminada, solo debe ejecutar en el archivo que está configurado para usarlo.
 
 ## <a name="how-to-use-the-c-core-guidelines-checker-outside-of-visual-studio"></a>Cómo usar el Comprobador de directrices de C++ Core fuera de Visual Studio
 Puede usar las comprobaciones de C++ Core Guidelines en compilaciones automatizadas.
 
 ### <a name="msbuild"></a>MSBuild
- El Comprobador de análisis de código nativo (PREfast) se integra en el entorno de MSBuild mediante archivos de destinos personalizados. Puede usar las propiedades del proyecto para habilitarla y agregar el Comprobador de directrices principales de C++ (que se basa en PREfast):
 
- ```xml
-  <PropertyGroup>
-    <EnableCppCoreCheck>true</EnableCppCoreCheck>
-    <CodeAnalysisRuleSet>CppCoreCheckRules.ruleset</CodeAnalysisRuleSet>¬¬
-    <RunCodeAnalysis>true</RunCodeAnalysis>
-  </PropertyGroup>
+El Comprobador de análisis de código nativo (PREfast) se integra en el entorno de MSBuild mediante archivos de destinos personalizados. Puede usar las propiedades del proyecto para habilitarla y agregar el Comprobador de directrices principales de C++ (que se basa en PREfast):
+
+```xml
+<PropertyGroup>
+  <EnableCppCoreCheck>true</EnableCppCoreCheck>
+  <CodeAnalysisRuleSet>CppCoreCheckRules.ruleset</CodeAnalysisRuleSet>¬¬
+  <RunCodeAnalysis>true</RunCodeAnalysis>
+</PropertyGroup>
 ```
 
 Asegúrese de que agregar estas propiedades antes de importar el archivo Microsoft.Cpp.targets. Puede elegir conjuntos de reglas específicas o crear un conjunto de reglas personalizado o usar el conjunto de reglas predeterminado que incluye otras comprobaciones de PREfast.
 
-Puede ejecutar el Comprobador de C++ Core solo en los archivos especificados utilizando el mismo enfoque que [se ha descrito anteriormente](#coreckeck_per_file), pero con archivos de MSBuild. Se pueden establecer las variables de entorno mediante el `BuildMacro` elemento:
+Puede ejecutar el Comprobador de C++ Core solo en los archivos especificados utilizando el mismo enfoque que [se ha descrito anteriormente](#corecheck_per_file), pero con archivos de MSBuild. Se pueden establecer las variables de entorno mediante el `BuildMacro` elemento:
 
 ```xml
 <ItemGroup>
@@ -222,14 +221,16 @@ Deberá establecer algunas variables de entorno y usar las opciones de línea de
    - `/analyze:plugin EspXEngine.dll` Esta opción, carga el motor de extensiones de análisis de código en el PREfast. Este motor, a su vez, carga el Comprobador de directrices principales de C++.
 
 ## <a name="use-the-guideline-support-library"></a>Uso de la biblioteca de compatibilidad con criterio
- La biblioteca de compatibilidad de instrucciones está diseñada para ayudarle a seguir las instrucciones de núcleo. El GSL incluye las definiciones que le permiten reemplazar construcciones propensas a errores por alternativas más seguras. Por ejemplo, puede reemplazar un `T*, length` par de parámetros con el `span<T>` tipo. Está disponible en el GSL [ http://www.nuget.org/packages/Microsoft.Gsl ](http://www.nuget.org/packages/Microsoft.Gsl). La biblioteca es código abierto, por lo que puede ver los orígenes, hacer comentarios o contribuir. El proyecto puede encontrarse en [ https://github.com/Microsoft/GSL ](https://github.com/Microsoft/GSL).
 
- ## <a name="vs2015_corecheck"></a> Use las directrices de C++ Core Check en proyectos de Visual Studio 2015
-  Si usa Visual Studio 2015, los conjuntos de reglas de análisis de código de C++ Core Check no se instalan de forma predeterminada. Debe realizar algunos pasos adicionales antes de poder habilitar las herramientas de análisis de código de C++ Core Check en Visual Studio 2015. Microsoft proporciona compatibilidad para los proyectos de Visual Studio 2015 mediante un paquete de Nuget. El paquete se denomina Microsoft.CppCoreCheck, y está disponible en [ http://www.nuget.org/packages/Microsoft.CppCoreCheck ](http://www.nuget.org/packages/Microsoft.CppCoreCheck). Este paquete requiere que tenga al menos Visual Studio 2015 con Update 1 instalado.
+La biblioteca de compatibilidad de instrucciones está diseñada para ayudarle a seguir las instrucciones de núcleo. El GSL incluye las definiciones que le permiten reemplazar construcciones propensas a errores por alternativas más seguras. Por ejemplo, puede reemplazar un `T*, length` par de parámetros con el `span<T>` tipo. Está disponible en el GSL [ http://www.nuget.org/packages/Microsoft.Gsl ](http://www.nuget.org/packages/Microsoft.Gsl). La biblioteca es código abierto, por lo que puede ver los orígenes, hacer comentarios o contribuir. El proyecto puede encontrarse en [ https://github.com/Microsoft/GSL ](https://github.com/Microsoft/GSL).
 
- El paquete también instala otro paquete como una dependencia de un solo encabezado directriz soporte técnico de biblioteca (GSL). También está disponible en GitHub en el GSL [ https://github.com/Microsoft/GSL ](https://github.com/Microsoft/GSL).
+## <a name="vs2015_corecheck"></a> Use las directrices de C++ Core Check en proyectos de Visual Studio 2015
 
- Debido al modo en que se cargan las reglas de análisis de código, debe instalar el paquete Microsoft.CppCoreCheck NuGet en cada proyecto de C++ que se desea comprobar dentro de Visual Studio 2015.
+Si usa Visual Studio 2015, los conjuntos de reglas de análisis de código de C++ Core Check no se instalan de forma predeterminada. Debe realizar algunos pasos adicionales antes de poder habilitar las herramientas de análisis de código de C++ Core Check en Visual Studio 2015. Microsoft proporciona compatibilidad para los proyectos de Visual Studio 2015 mediante un paquete de Nuget. El paquete se denomina Microsoft.CppCoreCheck, y está disponible en [ http://www.nuget.org/packages/Microsoft.CppCoreCheck ](http://www.nuget.org/packages/Microsoft.CppCoreCheck). Este paquete requiere que tenga al menos Visual Studio 2015 con Update 1 instalado.
+
+El paquete también instala otro paquete como una dependencia de un solo encabezado directriz soporte técnico de biblioteca (GSL). También está disponible en GitHub en el GSL [ https://github.com/Microsoft/GSL ](https://github.com/Microsoft/GSL).
+
+Debido al modo en que se cargan las reglas de análisis de código, debe instalar el paquete Microsoft.CppCoreCheck NuGet en cada proyecto de C++ que se desea comprobar dentro de Visual Studio 2015.
 
 ### <a name="to-add-the-microsoftcppcorecheck-package-to-your-project-in-visual-studio-2015"></a>Para agregar el paquete de Microsoft.CppCoreCheck al proyecto en Visual Studio 2015
 

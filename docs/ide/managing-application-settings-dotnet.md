@@ -1,7 +1,6 @@
 ---
 title: Administración de la configuración de la aplicación (.NET)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - msvse_settingsdesigner.err.nameblank
@@ -9,15 +8,15 @@ helpviewer_keywords:
 - application settings [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e6f4340f87782573f7330705786d0e4f923eb914
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: dad84145200b09cfbddab63bd9994096d0ba3e17
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53865510"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62537323"
 ---
 # <a name="manage-application-settings-net"></a>Administración de la configuración de la aplicación (.NET)
 
@@ -85,7 +84,9 @@ Si ha cambiado parte de la configuración de ámbito de usuario durante el tiemp
 
 Se recomienda encarecidamente usar el objeto `My.Settings` y el archivo *.settings* predeterminado para acceder a la configuración. Esto se debe a que puede usar el **Diseñador de configuración** para asignar propiedades a la configuración y, además, la configuración del usuario se guarda automáticamente antes de cerrar la aplicación. Pero la aplicación de Visual Basic puede obtener acceso directamente a la configuración. En ese caso, necesita acceso a la clase `MySettings` y usar un archivo *.settings* personalizado en la raíz del proyecto. Debe guardar la configuración del usuario antes de finalizar la aplicación, igual que con una aplicación de C#; esto se explica en la sección siguiente.
 
-## <a name="access-or-change-application-settings-at-run-time-in-c"></a>Acceso a la configuración de la aplicación o modificación de ella en tiempo de ejecución en C# #
+<!-- markdownlint-disable MD003 MD020 -->
+## <a name="access-or-change-application-settings-at-run-time-in-c"></a>Acceso a la configuración de la aplicación o modificación de ella en tiempo de ejecución en C#
+<!-- markdownlint-enable MD003 MD020 -->
 
 En otros lenguajes distintos de Visual Basic, como C#, se debe tener acceso directamente a la clase `Settings`, como se muestra en el ejemplo de [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] siguiente.
 

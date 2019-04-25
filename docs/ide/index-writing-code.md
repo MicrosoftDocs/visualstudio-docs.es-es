@@ -3,22 +3,23 @@ title: Escribir y administrar código
 description: Obtenga información acerca de cómo utilizar el editor de código y otras herramientas en Visual Studio para escribir, navegar, administrar y mejorar el código.
 ms.date: 01/01/2018
 layout: LandingPage
-ms.prod: visual-studio-dev15
 ms.topic: landing-page
 author: gewarren
 ms.author: gewarren
 ms.workload:
 - multiple
-ms.openlocfilehash: 06ce24ab0e0d668f4eef524826f2bf46a6fb29a5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d18ca688c1eac02fc2b24c3f8cb0f9551e4939ae
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53855435"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323128"
 ---
 # <a name="write-and-manage-code-using-visual-studio"></a>Escritura y administración de código con Visual Studio
 
 Obtenga información acerca de cómo utilizar el editor de código y otras herramientas en Visual Studio para escribir, navegar, administrar y mejorar el código.
+
+<!-- markdownlint-disable MD033 -->
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -245,7 +246,7 @@ Cree su primera aplicación en Visual Studio.
         </a>
     </li>
     <li>
-        <a href="/visualstudio/ide/quickstart-uwp-csharp">
+        <a href="/visualstudio/get-started/csharp/tutorial-uwp">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">

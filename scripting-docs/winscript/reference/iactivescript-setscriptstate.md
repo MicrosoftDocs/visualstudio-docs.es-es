@@ -1,8 +1,7 @@
 ---
-title: 'IActiveScript:: Setscriptstate | Documentos de Microsoft'
+title: IActiveScript::SetScriptState | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 58edef17fec1d94a09b327dff626658c42a273ba
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 16a13b545ddd482f8aa143d289d46447370e23ac
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54095035"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58149515"
 ---
 # <a name="iactivescriptsetscriptstate"></a>IActiveScript::SetScriptState
 Coloca el motor de scripting en el estado especificado. Este método se pueda llamar desde subprocesos no son de base sin resultante en una llamada que no sea de base a los objetos de host o a la [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) interfaz.  
@@ -55,8 +54,8 @@ HRESULT SetScriptState(
  Para obtener más información acerca de Estados del motor de scripting, vea la sección de Estados del motor de secuencia de comandos de [motores de scripts de Windows](../../winscript/windows-script-engines.md) .  
   
 ## <a name="see-also"></a>Vea también  
- [IActiveScript:: Clone](../../winscript/reference/iactivescript-clone.md)   
- [IActiveScript:: Getscriptdispatch](../../winscript/reference/iactivescript-getscriptdispatch.md)   
- [IActiveScript:: Interruptscriptthread](../../winscript/reference/iactivescript-interruptscriptthread.md)   
- [Iactivescriptparse:: Parsescripttext](../../winscript/reference/iactivescriptparse-parsescripttext.md)   
+ [IActiveScript::Clone](../../winscript/reference/iactivescript-clone.md)   
+ [IActiveScript::GetScriptDispatch](../../winscript/reference/iactivescript-getscriptdispatch.md)   
+ [IActiveScript::InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md)   
+ [IActiveScriptParse::ParseScriptText](../../winscript/reference/iactivescriptparse-parsescripttext.md)   
  [IActiveScriptSite::GetItemInfo](../../winscript/reference/iactivescriptsite-getiteminfo.md)

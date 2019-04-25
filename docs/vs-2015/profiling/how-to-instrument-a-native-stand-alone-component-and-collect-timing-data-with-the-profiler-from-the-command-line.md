@@ -1,27 +1,22 @@
 ---
-title: 'Cómo: Instrumentar un componente nativo independiente y recopilar datos de control de tiempo con el generador de perfiles desde la línea de comandos | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Instrumentar un componente nativo independiente y recopilar datos de control de tiempo con el generador de perfiles desde la línea de comandos | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 36883074-9be8-4e90-a66f-7e87f21fcd30
 caps.latest.revision: 30
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 075d493b87203f3aacf8afb8811e3f8544882d25
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d98481630ee3f02a96ec0670404c3f9d77e5d5d2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51748407"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048832"
 ---
-# <a name="how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line"></a>Cómo: Instrumentar un componente nativo independiente y recopilar datos de control de tiempo con el generador de perfiles desde la línea de comandos
+# <a name="how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line"></a>Procedimiento Instrumentar un componente nativo independiente y recopilar datos con el Profiler desde la línea de comandos de control de tiempo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 En este tema se describe cómo utilizar las herramientas de línea de comandos de las herramientas de generación de perfiles de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para instrumentar un componente nativo, tal como un archivo .exe o .dll de C++ y para recopilar datos detallados de control de tiempo.  
@@ -61,7 +56,6 @@ En este tema se describe cómo utilizar las herramientas de línea de comandos d
    |         [/automark](../profiling/automark.md) **:** `Interval`          |                                                                                Utilizar solo con **/wincounter**. Especifica el número de milisegundos entre eventos de recopilación de contadores de rendimiento de Windows. El valor predeterminado es 500 ms.                                                                                |
    |       [/events](../profiling/events-vsperfcmd.md) **:** `Config`        |                                                                                  Especifica un evento de Seguimiento de eventos para Windows (ETW) que se va a recopilar durante la generación de perfiles. Los eventos ETW se recopilan en un archivo (.etl) independiente.                                                                                   |
 
-
 4. Inicie la aplicación de destino de la manera habitual.  
 
 ## <a name="controlling-data-collection"></a>Controlar la recolección de datos  
@@ -69,7 +63,7 @@ En este tema se describe cómo utilizar las herramientas de línea de comandos d
 
 #### <a name="to-start-and-stop-data-collection"></a>Para iniciar y detener la recolección de datos  
 
--   Los siguientes pares de opciones inician y detienen la recolección de datos. Especifique cada opción en una línea de comandos diferente. Puede activar y desactivar la recolección de datos varias veces.  
+- Los siguientes pares de opciones inician y detienen la recolección de datos. Especifique cada opción en una línea de comandos diferente. Puede activar y desactivar la recolección de datos varias veces.  
 
     |Opción|Descripción|  
     |------------|-----------------|  
@@ -82,15 +76,12 @@ En este tema se describe cómo utilizar las herramientas de línea de comandos d
 
 #### <a name="to-end-a-profiling-session"></a>Para finalizar una sesión de generación de perfiles  
 
-1.  Cierre la aplicación de destino.  
+1. Cierre la aplicación de destino.  
 
-2.  Cierre el generador de perfiles. Tipo:  
+2. Cierre el generador de perfiles. Tipo:  
 
      **VSPerfCmd /shutdown**  
 
 ## <a name="see-also"></a>Vea también  
  [Generar perfiles para aplicaciones independientes](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [Vistas de datos del método de instrumentación](../profiling/instrumentation-method-data-views.md)
-
-
-

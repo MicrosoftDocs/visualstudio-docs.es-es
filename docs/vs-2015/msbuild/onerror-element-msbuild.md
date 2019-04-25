@@ -1,14 +1,9 @@
 ---
 title: Elemento OnError (MSBuild) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#OnError
 dev_langs:
@@ -23,18 +18,17 @@ ms.assetid: 765767d3-ecb7-4cd9-ba1e-d9468964dddc
 caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 10f89d21441418ae0b5c267c0fea7e8451115afe
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 46f6907bea5954cffae92b41398717a8247350e0
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49228714"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59667253"
 ---
 # <a name="onerror-element-msbuild"></a>Elemento OnError (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Hace que uno o varios destinos se ejecuten, si el atributo `ContinueOnError` es `false` para una tarea con error.  
   
  \<Project>  
@@ -88,6 +82,3 @@ Hace que uno o varios destinos se ejecuten, si el atributo `ContinueOnError` es 
 ## <a name="see-also"></a>Vea también  
  [Referencia de esquemas de archivo del proyecto](../msbuild/msbuild-project-file-schema-reference.md)   
  [Destinos](../msbuild/msbuild-targets.md)
-
-
-

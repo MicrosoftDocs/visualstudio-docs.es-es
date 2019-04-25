@@ -1,14 +1,9 @@
 ---
-title: 'CA1811: Evitar código privado no solicitada | Microsoft Docs'
-ms.custom: ''
+title: 'CA1811: Evitar código privado no solicitada | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - AvoidUncalledPrivateCode
 - CA1811
@@ -20,12 +15,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: dbf0bf1ef21a7f41af49a272115abd84b1beabda
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 373ccaa6552079a8995d61ef09bf6e0845c299d6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49860148"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113526"
 ---
 # <a name="ca1811-avoid-uncalled-private-code"></a>CA1811: Evitar código privado al que no se llama
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,15 +35,15 @@ ms.locfileid: "49860148"
 ## <a name="cause"></a>Motivo
  Miembro privado o interno (nivel de ensamblado) no tiene llamadores en el ensamblado, no es invocado por common language runtime y no se invoca un delegado. Esta regla no comprueba los miembros siguientes:
 
--   Miembros de interfaz explícita.
+- Miembros de interfaz explícita.
 
--   Constructores estáticos.
+- Constructores estáticos.
 
--   Constructores de serialización.
+- Constructores de serialización.
 
--   Los métodos marcados con <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> o <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName>.
+- Los métodos marcados con <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> o <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName>.
 
--   Miembros que son reemplazos.
+- Miembros que son reemplazos.
 
 ## <a name="rule-description"></a>Descripción de la regla
  Esta regla puede notificar falsos positivos si producen puntos de entrada que no se identifican actualmente por la lógica de la regla. Además, un compilador puede emitir código noncallable en un ensamblado.
@@ -64,7 +59,4 @@ ms.locfileid: "49860148"
 
  [CA1801: Revisar parámetros sin utilizar](../code-quality/ca1801-review-unused-parameters.md)
 
- [CA1804: Quitar variables locales no utilizadas](../code-quality/ca1804-remove-unused-locals.md)
-
-
-
+ [CA1804: Quitar a variables locales no utilizadas](../code-quality/ca1804-remove-unused-locals.md)

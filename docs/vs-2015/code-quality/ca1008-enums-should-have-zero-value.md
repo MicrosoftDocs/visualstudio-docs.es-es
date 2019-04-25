@@ -1,14 +1,9 @@
 ---
-title: 'CA1008: Las enumeraciones deben tener un valor cero | Microsoft Docs'
-ms.custom: ''
+title: 'CA1008: Las enumeraciones deben tener el valor cero | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1008
 - EnumsShouldHaveZeroValue
@@ -20,12 +15,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 69e60b0f2ee8106b04507722f1b3094e1bbdbbc8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e9b607c3a3fd7992bf8947c003d240d3d5b1d312
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49874831"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58997881"
 ---
 # <a name="ca1008-enums-should-have-zero-value"></a>CA1008: Las enumeraciones deben tener un valor igual a cero
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,16 +56,13 @@ ms.locfileid: "49874831"
 ## <a name="related-rules"></a>Reglas relacionadas
  [CA2217: No marcar enumeraciones con FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
 
- [CA1700: No nombrar valores de enumeración como 'Reserved'](../code-quality/ca1700-do-not-name-enum-values-reserved.md)
+ [CA1700: No nombrar valores de enumeración 'Reserved'](../code-quality/ca1700-do-not-name-enum-values-reserved.md)
 
- [CA1712: No utilizar prefijos en valores de enumeración con el nombre del tipo](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)
+ [CA1712: No utilizar prefijos en valores de enumeración con el nombre de tipo](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)
 
- [CA1028: El almacenamiento de la enumeración debe ser de tipo Int32](../code-quality/ca1028-enum-storage-should-be-int32.md)
+ [CA1028: Almacenamiento de enum debe ser Int32](../code-quality/ca1028-enum-storage-should-be-int32.md)
 
  [CA1027: Marcar enumeraciones con FlagsAttribute](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
 
 ## <a name="see-also"></a>Vea también
  <xref:System.Enum?displayProperty=fullName>
-
-
-

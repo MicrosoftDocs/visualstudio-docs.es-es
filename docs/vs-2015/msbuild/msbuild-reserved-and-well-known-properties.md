@@ -1,14 +1,9 @@
 ---
 title: Propiedades reservadas y conocidas de MSBuild | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -20,18 +15,17 @@ ms.assetid: 99333e61-83c9-4804-84e3-eda297c2478d
 caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6f121701ff5d463c852f386f012fe22a7a46d43e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 19fa9c35011e42905c1f26ed34da405be61d0aba
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49225412"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649568"
 ---
 # <a name="msbuild-reserved-and-well-known-properties"></a>Propiedades reservadas y conocidas de MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] proporciona un conjunto de propiedades predefinidas que almacenan información sobre el archivo de proyecto y los archivos binarios de [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Estas propiedades se evalúan igual que otras propiedades de [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Por ejemplo, para utilizar la propiedad `MSBuildProjectFile` escribiría `$(MSBuildProjectFile)`.  
   
  MSBuild utiliza los valores de la tabla siguiente para predefinir propiedades reservadas y conocidas. Las propiedades reservadas no se pueden invalidar, pero las propiedades conocidas se pueden invalidar con propiedades del entorno, propiedades globales o propiedades que se declaran en el archivo de proyecto con el mismo nombre.  
@@ -39,7 +33,7 @@ ms.locfileid: "49225412"
 ## <a name="reserved-and-well-known-properties"></a>Propiedades reservadas y conocidas  
  En la tabla siguiente se describen las propiedades predefinidas de [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].  
   
-|Propiedad|Descripción|Reservadas o conocidas|  
+|Propiedad.|Descripción|Reservadas o conocidas|  
 |--------------|-----------------|-----------------------------|  
 |`MSBuildBinPath`|Ruta de acceso absoluta de la carpeta donde se encuentran los archivos binarios de [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] que se están utilizando actualmente (por ejemplo, C:\Windows\Microsoft.Net\Framework\\*versionNumber*). Esta propiedad es útil si necesita hacer referencia a los archivos del directorio de [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].<br /><br /> No incluya la barra diagonal inversa final en esta propiedad.|Reservada|  
 |`MSBuildExtensionsPath`|Introducida en .NET Framework 4: no hay ninguna diferencia entre los valores predeterminados de `MSBuildExtensionsPath` y de `MSBuildExtensionsPath32`. Puede establecer la variable de entorno `MSBUILDLEGACYEXTENSIONSPATH` en un valor distinto de null para habilitar el comportamiento del valor predeterminado de `MSBuildExtensionsPath` en versiones anteriores.<br /><br /> En .NET Framework 3.5 y en versiones anteriores, el valor predeterminado de `MSBuildExtensionsPath` apunta a la ruta de la subcarpeta de MSBuild bajo la carpeta \Archivos de programa\ o \Archivos de programa (x86), según el valor de bits del proceso actual. Por ejemplo, para un proceso de 32 bits en un equipo de 64 bits, esta propiedad apunta a la carpeta \Archivos de programa (x86). Para un proceso de 64 bits en un equipo de 64 bits, esta propiedad apunta a la carpeta \Archivos de programa.<br /><br /> No incluya la barra diagonal inversa final en esta propiedad.<br /><br /> Esta ubicación es un lugar útil para colocar archivos de destino personalizados. Por ejemplo, podría instalar archivos de destino en \Archivos de programa\MSBuild\MisArchivos\Northwind.targets y, a continuación, importarlos en archivos de proyecto con este código XML:<br /><br /> `<Import Project="$(MSBuildExtensionsPath)\MyFiles\Northwind.targets"/>`|Conocida|  
@@ -67,6 +61,3 @@ ms.locfileid: "49225412"
   
 ## <a name="see-also"></a>Vea también  
  [Referencia de MSBuild](../msbuild/msbuild-reference.md) [Propiedades de MSBuild](msbuild-properties1.md)
-
-
-

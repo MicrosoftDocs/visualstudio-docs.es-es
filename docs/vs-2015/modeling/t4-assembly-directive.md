@@ -1,23 +1,20 @@
 ---
 title: T4 Directiva de ensamblado | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 44949749-ce3c-4fb5-8690-a17f1564ac2f
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 97e28347ba6985d99386647219f92aac9a221398
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 9fa00e8b5aafa131a9ca64b6fdaa7cba79fcb3b2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49873583"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074221"
 ---
 # <a name="t4-assembly-directive"></a>Directiva de ensamblado T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,7 +66,7 @@ En [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] la plantilla de texto en tiempo 
   
 - El ensamblado contiene el ADSL.  
   
-##  <a name="msbuild"></a> Uso de las propiedades del proyecto de MSBuild y Visual Studio  
+## <a name="msbuild"></a> Uso de las propiedades del proyecto de MSBuild y Visual Studio  
  Las macros de Visual Studio, como $ (SolutionDir), no funcionan en MSBuild. Si desea transformar plantillas del equipo de compilación, tiene que utilizar las propiedades del proyecto.  
   
  Modifique el archivo .csproj o .vbproj para definir una propiedad de proyecto. En este ejemplo se define una propiedad denominada `myLibFolder`:  
@@ -97,6 +94,3 @@ En [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] la plantilla de texto en tiempo 
   
 ## <a name="see-also"></a>Vea también  
  [Directiva Include T4](../modeling/t4-include-directive.md)
-
-
-

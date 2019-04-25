@@ -1,14 +1,9 @@
 ---
 title: Tarea VCMessage | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - vc.task.vcmessage
 dev_langs:
@@ -24,22 +19,21 @@ ms.assetid: 956675fd-05dc-40b4-856f-616145103498
 caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: f592160aae4fc1382b36c7331175eb6ab20d3fdc
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 508d1fe33046f6051c9c5c1b8e54036e78ae7d2f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49243940"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652376"
 ---
 # <a name="vcmessage-task"></a>VCMessage (Tarea)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Registra mensajes de advertencia y de error durante una compilación.  
   
 ## <a name="remarks"></a>Comentarios  
- Esta tarea ayuda a implementar MSBuild para Visual C++ y no está diseñada para que la llame el usuario. Para obtener más información, consulta <xref:Microsoft.Build.Utilities.TaskLoggingHelper>.  
+ Esta tarea ayuda a implementar MSBuild para Visual C++ y no está diseñada para que la llame el usuario. Para obtener más información, vea <xref:Microsoft.Build.Utilities.TaskLoggingHelper>.  
   
 ## <a name="parameters"></a>Parámetros  
  En la tabla siguiente se describen los parámetros de la tarea **VCMessage**.  
@@ -52,6 +46,3 @@ Registra mensajes de advertencia y de error durante una compilación.
   
 ## <a name="see-also"></a>Vea también  
  [Referencia de tareas](../msbuild/msbuild-task-reference.md)
-
-
-

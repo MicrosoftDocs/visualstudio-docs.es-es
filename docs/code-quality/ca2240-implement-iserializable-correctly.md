@@ -1,7 +1,6 @@
 ---
 title: 'CA2240: Implementar ISerializable correctamente'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA2240
@@ -12,19 +11,19 @@ helpviewer_keywords:
 ms.assetid: cf05936d-0d6c-49ed-a1b4-220032e50b97
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CPP
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 966e92b7973ee22ce4da2be7edb1cc075c42077a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9ef3e012b3a818c60be23278fe622a40330f3b43
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53868370"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55935410"
 ---
 # <a name="ca2240-implement-iserializable-correctly"></a>CA2240: Implementar ISerializable correctamente
 
@@ -70,7 +69,7 @@ Un tipo visible externamente es asignable a la <xref:System.Runtime.Serializatio
 
 ## <a name="related-rules"></a>Reglas relacionadas
 
-- [LCA2236: Llamar a métodos de clase base en tipos ISerializable](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)
+- [CA2236: Llamar a métodos de clase base en tipos ISerializable](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)
 - [CA2229: implementar constructores de serialización](../code-quality/ca2229-implement-serialization-constructors.md)
 - [CA2238: Implementar métodos de serialización correctamente](../code-quality/ca2238-implement-serialization-methods-correctly.md)
 - [CA2235: Marcar todos los campos no serializables](../code-quality/ca2235-mark-all-non-serializable-fields.md)

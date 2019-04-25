@@ -1,7 +1,6 @@
 ---
 title: 'CA1502: Evitar una complejidad excesiva'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - AvoidExcessiveComplexity
@@ -12,19 +11,19 @@ helpviewer_keywords:
 ms.assetid: d735454b-2f8f-47ce-907d-f7a5a5391221
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CPP
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 21b623041bdf599439fd51f99354f206eb25c433
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e968cef6491e1c24d98e5f64248b5104db8c5b65
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53893161"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59232322"
 ---
 # <a name="ca1502-avoid-excessive-complexity"></a>CA1502: Evitar una complejidad excesiva
 
@@ -45,11 +44,11 @@ Un método tiene una complejidad ciclomática excesiva.
 
 complejidad ciclomática = número de bordes - el número de nodos + 1
 
-donde un nodo representa un punto de bifurcación lógica y un borde representa una línea entre los nodos.
+Un *nodo* representa un punto de bifurcación de la lógica y una *edge* representa una línea entre los nodos.
 
 La regla emite una infracción cuando la complejidad ciclomática es más de 25.
 
-Puede aprender más acerca de las métricas de código en [medir la complejidad y el mantenimiento del código administrado](../code-quality/code-metrics-values.md),
+Puede aprender más acerca de las métricas de código en [medir la complejidad del código administrado](../code-quality/code-metrics-values.md).
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
 

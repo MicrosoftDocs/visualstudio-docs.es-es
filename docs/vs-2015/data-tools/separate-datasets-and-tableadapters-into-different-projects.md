@@ -1,12 +1,9 @@
 ---
 title: Separar conjuntos de datos y TableAdapters en proyectos diferentes | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,21 +16,20 @@ ms.assetid: f66a3940-6227-46af-a930-9177f425f4fd
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 1e94c76254b14bdf82e4e7a219cbb0f35cb532f1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 9228eaec55dc936d44eeccd55e6a05559aea27e4
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49824333"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59647477"
 ---
 # <a name="separate-datasets-and-tableadapters-into-different-projects"></a>Separar conjuntos de datos y TableAdapters en proyectos diferentes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Objetos DataSet con tipo se han mejorado para que la [TableAdapters](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) y clases de conjunto de datos se pueden generar en proyectos independientes. Esto permite separar rápidamente los niveles de la aplicación y generar aplicaciones de datos con n niveles.  
   
- El siguiente procedimiento describe cómo usar el[crear y editar conjuntos de datos con tipo](../data-tools/creating-and-editing-typed-datasets.md) para generar código de conjunto de datos en un proyecto que es independiente del proyecto que contiene el texto generado `TableAdapter` código.  
+ El siguiente procedimiento describe cómo usar el Diseñador de Dataset para generar código de conjunto de datos en un proyecto que es independiente del proyecto que contiene el texto generado `TableAdapter` código.  
   
 ## <a name="separatedatasets-and-tableadapters"></a>Separatedatasets y TableAdapters  
  Al separar el código del conjunto de datos desde `TableAdapter` código, el proyecto que contiene el código del conjunto de datos debe estar ubicado en la solución actual. Si este proyecto no se encuentra en la solución actual, no estará disponible en el **DataSet Project** lista en el **propiedades** ventana.  
@@ -55,7 +51,7 @@ Objetos DataSet con tipo se han mejorado para que la [TableAdapters](http://msdn
   
 5. En el **DataSet Project** lista, seleccione el nombre del proyecto en el que desea generar el código del conjunto de datos.  
   
-    Después de seleccionar el proyecto en el que desea generar el código del conjunto de datos, el **DataSet File** propiedad se rellena con un nombre de archivo predeterminado. Puede cambiar este nombre si es necesario. Además, si desea generar el código de conjunto de datos en un directorio específico, puede establecer el **carpeta del proyecto** propiedad en el nombre de una carpeta.  
+    Después de seleccionar el proyecto en el que desea generar el código del conjunto de datos, el **DataSet File** propiedad se rellena con un nombre de archivo predeterminado. Puede cambiar este nombre si es necesario. Además, si desea generar el código del conjunto de datos en un directorio concreto, puede establecer la propiedad **Carpeta de proyecto** con el nombre de una carpeta.  
   
    > [!NOTE]
    >  Al separar conjuntos de datos y TableAdapters (estableciendo la **DataSet Project** propiedad), las clases de conjunto de datos parciales existentes en el proyecto no se moverá automáticamente. Las clases de conjunto de datos parciales existentes se deben mover manualmente al proyecto de conjunto de datos.  
@@ -75,4 +71,3 @@ Objetos DataSet con tipo se han mejorado para que la [TableAdapters](http://msdn
  [Actualización jerárquica](../data-tools/hierarchical-update.md)   
  [Obtener acceso a los datos en Visual Studio](../data-tools/accessing-data-in-visual-studio.md)   
  [ADO.NET](http://msdn.microsoft.com/library/5b96ed06-9759-4966-a797-a1d5f6ee50ca)
-

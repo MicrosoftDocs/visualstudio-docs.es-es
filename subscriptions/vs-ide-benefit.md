@@ -1,22 +1,20 @@
 ---
 title: Beneficio de IDE de Visual Studio en las suscripciones de Visual Studio | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.author: lank
+manager: lank
+ms.date: 04/03/2019
+ms.topic: conceptual
 description: Obtenga información sobre cómo descargar e instalar el IDE de Visual Studio incluido en la suscripción a Visual Studio.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: 2e721c8c944bec0741f55c05a510ef02628c6b97
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: e2ac206e85d43cff897ff97b42b4b8fccaeec906
+ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380065"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "59018147"
 ---
-# <a name="using-the-visual-studio-2017-benefit"></a>Uso de la ventaja de Visual Studio 2017
+# <a name="using-the-visual-studio-2019-benefit"></a>Uso de la ventaja de Visual Studio 2019
 
 Como suscriptor de Visual Studio, tiene acceso al IDE de Visual Studio.  La versión específica dependerá del nivel de su suscripción.  La ventaja aparecerá como un icono en la categoría Herramientas de la página [Ventajas](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) del portal de suscriptores.
 
@@ -31,7 +29,7 @@ Para descargar el IDE:
    > [!div class="mx-imgBorder"]
    > ![Icono de Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-tile.png)
 
-3. Se le redirigirá a la página Descargar resultados de Visual Studio Enterprise, en la que tendrá la oportunidad de descargar el IDE y obtener una clave de producto para activarlo. También puede solicitar una clave de producto haciendo clic en el vínculo azul **Obtener clave**, o puede solicitar una clave más adelante en la página [Claves de producto](https://my.visualstudio.com/productkeys).
+3. Se le redirigirá a la página Descargar resultados de Visual Studio, en la que tendrá la oportunidad de descargar el IDE y obtener una clave de producto para activarlo. También puede solicitar una clave de producto haciendo clic en el vínculo azul **Obtener clave**, o puede solicitar una clave más adelante en la página [Claves de producto](https://my.visualstudio.com/productkeys).
 4. En la pestaña Detalles de la página Descargar resultados:
    - Seleccione la arquitectura que quiera (x86, x64).
    - Seleccione su preferencia de idioma.
@@ -55,9 +53,12 @@ Para descargar el IDE:
 
 13. Elija el tema preferido y haga clic en **Iniciar Visual Studio**.
 
-14. Se mostrará la página de inicio.  Ya puede empezar a utilizar Visual Studio.
+14. Se abre Visual Studio. Ya puede empezar a utilizar Visual Studio.
+
+    ::: moniker range="vs-2017"
     > [!div class="mx-imgBorder"]
     > ![Comenzar a utilizar Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-start-cropped.png)
+    ::: moniker-end
 
 ## <a name="eligibility"></a>Elegibilidad
 

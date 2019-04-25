@@ -1,11 +1,8 @@
 ---
 title: RemoveFromCollection&lt;T&gt; Diseñador de actividad | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.RemoveFromCollection`1.UI
@@ -13,13 +10,13 @@ ms.assetid: 6617ba26-c8bc-4aed-b746-112bf490d288
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 341ed640666cc4501ac8917b568bf3f41b89b823
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 45a426d4703ed2a402ee7f06341e55d65ae410ab
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49170930"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58996997"
 ---
 # <a name="removefromcollectionlttgt-activity-designer"></a>RemoveFromCollection&lt;T&gt; Diseñador de actividad
 El **RemoveFromCollection\<T >** Diseñador de actividad se usa para crear y configurar un <xref:System.Activities.Statements.RemoveFromCollection%601> actividad.  
@@ -45,6 +42,6 @@ El **RemoveFromCollection\<T >** Diseñador de actividad se usa para crear y con
   
 ## <a name="see-also"></a>Vea también  
  [colección](../workflow-designer/collection-activity-designers.md)   
- [AddToCollection\<T >](../workflow-designer/addtocollection-t-activity-designer.md)   
- [ClearCollection\<T >](../workflow-designer/clearcollection-t-activity-designer.md)   
- [ExistsInCollection\<T >](../workflow-designer/existsincollection-t-activity-designer.md)
+ [AddToCollection\<T>](../workflow-designer/addtocollection-t-activity-designer.md)   
+ [ClearCollection\<T>](../workflow-designer/clearcollection-t-activity-designer.md)   
+ [ExistsInCollection\<T>](../workflow-designer/existsincollection-t-activity-designer.md)

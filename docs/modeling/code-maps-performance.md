@@ -4,22 +4,21 @@ ms.date: 05/16/2018
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a7892e8e0bc347c4a22dd1a2ae2ee4b01882d6c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 12ba03ab97da3295a93b54dfc012d10fc012fd30
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53905064"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57872393"
 ---
 # <a name="improve-performance-for-code-maps"></a>Mejorar el rendimiento de mapas de código
 
 Al generar por primera vez un mapa, Visual Studio indiza todas las dependencias que encuentra. Este proceso puede tardar algún tiempo, especialmente para soluciones de gran tamaño, pero mejora el rendimiento posterior. Si el código cambia, Visual Studio solo vuelve a crear índices para el código actualizado. Para minimizar el tiempo necesario para que la asignación de finalizar la representación, tenga en cuenta las siguientes sugerencias:
 
-- [Asigne solo las dependencias que le interesan.](#create-a-code-map-to-see-specific-dependencies)
+- Asigne solo las dependencias que le interesan.
 
 - Antes de generar el mapa de toda una solución, reduzca el ámbito de dicha solución.
 

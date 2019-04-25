@@ -1,12 +1,9 @@
 ---
 title: Enlazar controles de formularios Windows Forms a datos | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,18 +18,17 @@ ms.assetid: 0163a34a-38cb-40b9-8f38-3058a90caf21
 caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: d1d8710ef98339c0cf4b44ddd3fa41cca8676570
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: d2aefe68761d31f87d84c9215a6187c28e7b471b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49237476"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668995"
 ---
 # <a name="bind-windows-forms-controls-to-data"></a>Enlazar controles de Windows Forms a datos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Puede enlazar orígenes de datos a controles, arrastre objetos desde el **orígenes de datos** ventana en un formulario de Windows o en un control existente en un formulario. Antes de arrastrar elementos, puede establecer el tipo de control que desea enlazar. Aparecen valores diferentes dependiendo de si elige la tabla propiamente dicho o una columna individual.  También puede establecer valores personalizados. Para una tabla, "Detalles" significa que cada columna se enlaza a un control independiente.  
   
  ![Enlazar el origen de datos a DataGridView](../data-tools/media/raddata-bind-data-source-to-datagridview.png "raddata origen de datos de enlace a DataGridView")  
@@ -40,7 +36,7 @@ Puede enlazar orígenes de datos a controles, arrastre objetos desde el **oríge
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
 ## <a name="bind-to--data-in-a-datagridview-control"></a>Enlazar a datos en un control DataGridView  
- Para DataGridView, toda la tabla está enlazada a ese control único. Cuando arrastre un control DataGridView hasta el formulario, una herramienta de franja para navegar por los registros (<xref:System.Windows.Forms.BindingNavigator>) también aparece. Un [DataSet](../data-tools/dataset-tools-in-visual-studio.md), [TableAdapter](../data-tools/tableadapter-overview.md), <xref:System.Windows.Forms.BindingSource>, y <xref:System.Windows.Forms.BindingNavigator> aparecen en la Bandeja de componentes. En la ilustración siguiente, también se agrega un TableAdapterManager porque la tabla Customers tiene una relación con la tabla Orders. Estas variables se declaran en el código generado automáticamente como miembros privados en la clase de formulario. El código generado automáticamente para rellenar el control DataGridView se encuentra en el controlador de eventos form_load. El código para guardar los datos para actualizar la base de datos se encuentra en el controlador de eventos de guardar para BindingNavigator. Puede mover o modificar este código según sea necesario.  
+ Para DataGridView, toda la tabla está enlazada a ese control único. Cuando arrastre un control DataGridView hasta el formulario, una herramienta de franja para navegar por los registros (<xref:System.Windows.Forms.BindingNavigator>) también aparece. Un [DataSet](../data-tools/dataset-tools-in-visual-studio.md), TableAdapter, <xref:System.Windows.Forms.BindingSource>, y <xref:System.Windows.Forms.BindingNavigator> aparecen en la Bandeja de componentes. En la ilustración siguiente, también se agrega un TableAdapterManager porque la tabla Customers tiene una relación con la tabla Orders. Estas variables se declaran en el código generado automáticamente como miembros privados en la clase de formulario. El código generado automáticamente para rellenar el control DataGridView se encuentra en el controlador de eventos form_load. El código para guardar los datos para actualizar la base de datos se encuentra en el controlador de eventos de guardar para BindingNavigator. Puede mover o modificar este código según sea necesario.  
   
  ![GridView con BindingNavigator](../data-tools/media/raddata-gridview-with-bindingnavigator.png "raddata GridView con BindingNavigator")  
   
@@ -68,4 +64,3 @@ Puede enlazar orígenes de datos a controles, arrastre objetos desde el **oríge
   
 ## <a name="see-also"></a>Vea también  
  [Enlazar controles de Windows Forms a datos en Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
-

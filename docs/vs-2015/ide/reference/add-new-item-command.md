@@ -1,14 +1,9 @@
 ---
 title: Agregar nuevo elemento (Comando) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - project.addnewitem
 helpviewer_keywords:
@@ -18,18 +13,17 @@ ms.assetid: 63b7df32-db83-463b-bbe7-7ff011fe5298
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 866a77e148fe59d6a5d66b900982716630dd2faa
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 0ba7820bfa6df7273f170b2222d6a55e685e445e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49240232"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668137"
 ---
 # <a name="add-new-item-command"></a>Agregar nuevo elemento (Comando)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Agrega un nuevo elemento de solución (como un archivo .htm, .css o .txt o un conjunto de marcos) a la solución actual y lo abre.  
   
 ## <a name="syntax"></a>Sintaxis  
@@ -77,6 +71,3 @@ File.AddNewItem [filename] [/t:templatename] [/e:editorname]
  [Ventana Comandos](../../ide/reference/command-window.md)   
  [Cuadro Buscar/Comando](../../ide/find-command-box.md)   
  [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
-
-
-

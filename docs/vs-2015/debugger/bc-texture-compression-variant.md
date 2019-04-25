@@ -1,25 +1,20 @@
 ---
 title: Variante de compresión de textura BC | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 2d0f5305-585b-4b01-bc9a-7a32d6e991da
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 818998511a4ef8b7f10b8225e71b414edafd9769
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f0758d9eb5a003b0353ceb4fee21996d90685fa5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51736559"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111238"
 ---
 # <a name="bc-texture-compression-variant"></a>BC (Variante de compresión de textura)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,13 +31,13 @@ Habilita la compresión de bloque en todas las texturas que tengan una variante 
   
 - El objeto `D3D11_TEXTURE2D_DESC` pasado en `pDesc` describe un recurso de sombreador invariable, que es:  
   
-  -   El miembro BindFlags solo tiene el conjunto de marcadores D3D11_BIND_SHADER_RESOURCE.  
+  - El miembro BindFlags solo tiene el conjunto de marcadores D3D11_BIND_SHADER_RESOURCE.  
   
-  -   El miembro Usage se establece en D3D11_USAGE_DEFAULT o D3D11_USAGE_IMMUTABLE.  
+  - El miembro Usage se establece en D3D11_USAGE_DEFAULT o D3D11_USAGE_IMMUTABLE.  
   
-  -   El miembro CPUAccessFlags se establece en 0 (sin acceso a la CPU).  
+  - El miembro CPUAccessFlags se establece en 0 (sin acceso a la CPU).  
   
-  -   El miembro SamplerDesc tiene su miembro Count establecido en 1 (sin Suavizado de contorno de muestras múltiples [MSAA]).  
+  - El miembro SamplerDesc tiene su miembro Count establecido en 1 (sin Suavizado de contorno de muestras múltiples [MSAA]).  
   
 - Los datos iniciales se proporcionan a la llamada a `CreateTexture2D`.  
   
@@ -63,13 +58,10 @@ Habilita la compresión de bloque en todas las texturas que tengan una variante 
  Si su textura tiene un formato que no aparece en la lista, la textura no se modifica.  
   
 ## <a name="restrictions-and-limitations"></a>Restricciones y limitaciones  
- A veces, las texturas que están creadas con una variación de los formatos de imagen B8G8R8A8 o R8G8B8A8 realmente no utilizan el canal alfa, pero la variante no tiene forma alguna de saber si se utiliza o no. Para mantener la corrección en el caso que se utilice el canal alfa, la variante siempre codifica estos formatos en el formato BC3 menos eficaz. Puede ayudar a que el Análisis de Fotograma Gráfico entienda mejor el rendimiento de presentación potencial de la aplicación con esta variante utilizando una variación del formato de imagen B8G8R8X8 cuando no utiliza el canal alfa, para que la variante pueda utilizar el formato BC1 más eficaz.  
+ A veces, las texturas que están creadas con una variación de los formatos de imagen B8G8R8A8 o R8G8B8A8 realmente no utilizan el canal alfa, pero la variante no tiene forma alguna de saber si se utiliza o no. Para mantener la corrección en el caso que se utilice el canal alfa, la variante siempre codifica estos formatos en el formato BC3 menos eficaz. Puede ayudar a que el Análisis de Fotograma Gráficos entienda mejor el rendimiento de presentación potencial de la aplicación con esta variante utilizando una variación del formato de imagen B8G8R8X8 cuando no utiliza el canal alfa, para que la variante pueda utilizar el formato BC1 más eficaz.  
   
 ## <a name="example"></a>Ejemplo  
  Esta variante comprime las texturas en bloque en tiempo de ejecución antes de llamar a `CreateTexture2D`. No recomendamos este procedimiento para el código de producción, porque las texturas sin comprimir consumen más espacio de disco y porque el paso adicional puede aumentar significativamente los tiempos de carga en la aplicación, ya que la compresión basada en bloque requiere una gran cantidad de recursos técnicos para codificar. En su lugar, recomendamos que comprima las texturas sin conexión utilizando un editor o un procesador de imágenes que forme parte de la canalización integrada. Estos procedimientos reducen los requisitos de espacio en disco, eliminan la sobrecarga del tiempo de ejecución en la aplicación y proporcionan más tiempo de procesamiento para que pueda mantener la mejor calidad de imagen.  
   
 ## <a name="see-also"></a>Vea también  
  [Variante de dimensiones de textura Mitad/cuarto](../debugger/half-quarter-texture-dimensions-variant.md)
-
-
-

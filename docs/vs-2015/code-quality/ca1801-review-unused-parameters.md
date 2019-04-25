@@ -1,14 +1,9 @@
 ---
-title: 'CA1801: Revisar parámetros sin utilizar | Microsoft Docs'
-ms.custom: ''
+title: 'CA1801: Revisar parámetros sin utilizar | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - AvoidUnusedParameters
 - CA1801
@@ -21,39 +16,39 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: b0946e315aef0c333207d49eb14820d287a9b361
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0efbec121e08d026145d8762b574847fbd4a2b88
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49269690"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045647"
 ---
 # <a name="ca1801-review-unused-parameters"></a>CA1801: Revisar parámetros sin utilizar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Para obtener la documentación más reciente de Visual Studio 2017, consulte [CA1801: revisar parámetros sin utilizar](https://docs.microsoft.com/visualstudio/code-quality/ca1801-review-unused-parameters) en docs.microsoft.com.  
+Para obtener la documentación más reciente de Visual Studio, consulte [CA1801: Revisar parámetros sin utilizar](https://docs.microsoft.com/visualstudio/code-quality/ca1801-review-unused-parameters).  
   
 |||  
 |-|-|  
 |TypeName|ReviewUnusedParameters|  
 |Identificador de comprobación|CA1801|  
 |Categoría|Microsoft.Usage|  
-|Cambio problemático|No problemático: si el miembro no es visible fuera del ensamblado, independientemente del cambio que realice.<br /><br /> No problemático: si cambia el miembro para usar el parámetro dentro del cuerpo.<br /><br /> Problemático: Si quita el parámetro y está visible fuera del ensamblado.|  
+|Cambio problemático|No problemático: si el miembro no es visible fuera del ensamblado, independientemente del cambio que realice.<br /><br /> Non-problemático: si cambia el miembro para usar el parámetro dentro del cuerpo.<br /><br /> Problemático: Si quita el parámetro y está visible fuera del ensamblado.|  
   
 ## <a name="cause"></a>Motivo  
  Una firma de método incluye un parámetro que no se utiliza en el cuerpo del método. Esta regla no examina los métodos siguientes:  
   
--   Métodos que se hace referencia a un delegado.  
+- Métodos que se hace referencia a un delegado.  
   
--   Métodos que se usan como controladores de eventos.  
+- Métodos que se usan como controladores de eventos.  
   
--   Los métodos declarados con el `abstract` (`MustOverride` en Visual Basic) modificador.  
+- Los métodos declarados con el `abstract` (`MustOverride` en Visual Basic) modificador.  
   
--   Los métodos declarados con el `virtual` (`Overridable` en Visual Basic) modificador.  
+- Los métodos declarados con el `virtual` (`Overridable` en Visual Basic) modificador.  
   
--   Los métodos declarados con el `override` (`Overrides` en Visual Basic) modificador.  
+- Los métodos declarados con el `override` (`Overrides` en Visual Basic) modificador.  
   
--   Los métodos declarados con el `extern` (`Declare` instrucción en Visual Basic) modificador.  
+- Los métodos declarados con el `extern` (`Declare` instrucción en Visual Basic) modificador.  
   
 ## <a name="rule-description"></a>Descripción de la regla  
  Revise los parámetros de métodos no virtuales que no se usan en el cuerpo del método para asegurarse de que no hay exactitud en torno al error para tener acceso a ellos. Parámetros sin usar conllevan un costo de mantenimiento y rendimiento.  
@@ -72,9 +67,8 @@ Para obtener la documentación más reciente de Visual Studio 2017, consulte [CA
  [!code-csharp[FxCop.Usage.ReviewUnusedParameters#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.ReviewUnusedParameters/cs/FxCop.Usage.ReviewUnusedPerameters.cs#1)]  
   
 ## <a name="related-rules"></a>Reglas relacionadas  
- [CA1811: Evitar código privado al que no se llama](../code-quality/ca1811-avoid-uncalled-private-code.md)  
+ [CA1811: Evitar código privado fuera de lugar](../code-quality/ca1811-avoid-uncalled-private-code.md)  
   
  [CA1812: Evitar las clases internas sin instancia](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)  
   
- [CA1804: Quitar variables locales no utilizadas](../code-quality/ca1804-remove-unused-locals.md)
-
+ [CA1804: Quitar a variables locales no utilizadas](../code-quality/ca1804-remove-unused-locals.md)

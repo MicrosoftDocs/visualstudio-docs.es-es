@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Cambiar el idioma de publicación de una aplicación ClickOnce | Microsoft Docs
+title: Procedimiento Cambiar el idioma de publicación de una aplicación ClickOnce | Documentos de Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: ef5024c4-cda1-4970-bc75-32a2a10c92c3
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 21fe434c1128c9f0b81455e010872ccaa49790f2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: 7e5bf51fd416fd9ccbb2343c17412984858429da
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53871630"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115294"
 ---
 # <a name="how-to-change-the-publish-language-for-a-clickonce-application"></a>Procedimiento Cambio del idioma de publicación de una aplicación ClickOnce
 
@@ -34,17 +34,17 @@ El `Publish language` propiedad puede establecerse el **opciones de publicación
 
 ## <a name="to-change-the-publish-language"></a>Para cambiar el idioma de publicación
 
-1.  Seleccione un proyecto en el **Explorador de soluciones**y, en el menú **Proyecto** , haga clic en **Propiedades**.
+1. Seleccione un proyecto en el **Explorador de soluciones**y, en el menú **Proyecto** , haga clic en **Propiedades**.
 
-2.  Haga clic en la pestaña **Publicar**.
+2. Haga clic en la pestaña **Publicar**.
 
-3.  Haga clic en el **opciones** botón para abrir el **opciones de publicación** cuadro de diálogo.
+3. Haga clic en el **opciones** botón para abrir el **opciones de publicación** cuadro de diálogo.
 
-4.  Haga clic en **descripción**.
+4. Haga clic en **descripción**.
 
-5.  En el **opciones de publicación** diálogo cuadro, seleccione un idioma y referencia cultural de la **idioma de publicación** lista desplegable y, a continuación, haga clic en **Aceptar**.
+5. En el **opciones de publicación** diálogo cuadro, seleccione un idioma y referencia cultural de la **idioma de publicación** lista desplegable y, a continuación, haga clic en **Aceptar**.
 
 ## <a name="see-also"></a>Vea también
 
 - [Publicar aplicaciones ClickOnce](../deployment/publishing-clickonce-applications.md)
-- [Cómo: Publicación de una aplicación ClickOnce mediante el Asistente para publicación](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+- [Cómo: publicar una aplicación ClickOnce mediante el Asistente para publicación](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

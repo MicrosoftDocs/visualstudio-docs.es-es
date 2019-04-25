@@ -1,14 +1,9 @@
 ---
 title: Tarea WriteCodeFragment | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -21,18 +16,17 @@ ms.assetid: 1d2514b4-5bef-43bb-bebe-496da8ef063c
 caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 862792e14bd52d52e3dafd83b4a8784f46ce8369
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: fa9882d30a8483937f77da21bb4700d4899a68a6
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49290542"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665420"
 ---
 # <a name="writecodefragment-task"></a>WriteCodeFragment (Tarea)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Genera un archivo de código temporal a partir del fragmento de código generado especificado. No elimina el archivo.  
   
 ## <a name="parameters"></a>Parámetros  
@@ -51,6 +45,3 @@ Genera un archivo de código temporal a partir del fragmento de código generado
 ## <a name="see-also"></a>Vea también  
  [Tareas](../msbuild/msbuild-tasks.md)   
  [Referencia de tareas](../msbuild/msbuild-task-reference.md)
-
-
-

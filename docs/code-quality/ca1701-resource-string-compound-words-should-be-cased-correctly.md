@@ -1,7 +1,6 @@
 ---
 title: 'CA1701: En las palabras compuestas de la cadena de recursos se deben utilizar mayúsculas y minúsculas correctamente'
 ms.date: 03/28/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - ResourceStringCompoundWordsShouldBeCasedCorrectly
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 4ddbe09f-24b8-4c47-9373-a06f4487ca0d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e2cc74bb7d3cc15e593d465a8c8d0d55275954ff
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8fdae06137586f11de1a30a73894c46c7fb18fa6
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53841786"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55955354"
 ---
 # <a name="ca1701-resource-string-compound-words-should-be-cased-correctly"></a>CA1701: En las palabras compuestas de la cadena de recursos se deben utilizar mayúsculas y minúsculas correctamente
 

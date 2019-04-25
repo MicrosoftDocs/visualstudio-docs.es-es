@@ -1,14 +1,9 @@
 ---
-title: Capturar información de gráficos | Documentos de Microsoft
-ms.custom: ''
+title: Captura de información de gráficos | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.frame
 - vs.graphics.capturewindow
@@ -17,13 +12,13 @@ ms.assetid: 187ce86e-e340-4f6c-8937-8e8f1027a17f
 caps.latest.revision: 44
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a099254acd572b3fcbb437f8933c81f3d6bd45b9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d0b98d57500ad2115abfcbd229d29009afdda059
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51799839"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114238"
 ---
 # <a name="capturing-graphics-information"></a>Capturar información de gráficos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +43,7 @@ Capture información de gráficos desde la aplicación basada en Direct3D para q
 - En el teclado, presione Imprimir pantalla.  
   
   > [!NOTE]
-  >  Mientras se ejecuta una aplicación en **diagnóstico de gráficos**, solo se puede usar la tecla Impr Pant para capturar un fotograma de información de gráficos; no realiza su función normal. Esto es así hasta que deja de capturar información de gráficos, generalmente deteniendo la depuración o saliendo normalmente de la aplicación, incluso si otra aplicación tiene el foco.  
+  >  Mientras se ejecuta una aplicación en **Diagnóstico de gráficos**, la tecla Imprimir pantalla solo se puede utilizar para capturar un fotograma de información de gráficos, es decir, no funciona como lo hace normalmente. Esto es así hasta que deja de capturar información de gráficos, generalmente deteniendo la depuración o saliendo normalmente de la aplicación, incluso si otra aplicación tiene el foco.  
   
 - En la interfaz de captura de Visual Studio, elija el **Capturar fotograma** situado encima de la **sesión de diagnóstico** escala de tiempo, o elija el gran **Capturar fotograma** botón situada debajo de la **fotogramas por segundo** calle y a la derecha de los fotogramas capturados anteriormente. En la imagen siguiente, están resaltados los dos botones.  
   
@@ -65,20 +60,20 @@ Capture información de gráficos desde la aplicación basada en Direct3D para q
   
 ##### <a name="to-configure-graphics-diagnostics-capture-options"></a>Para configurar las opciones de captura de diagnóstico de gráficos  
   
-1.  En la barra de menús, elija Herramientas y Opciones. Aparecerá el cuadro de diálogo Opciones.  
+1. En la barra de menús, elija Herramientas y Opciones. Aparecerá el cuadro de diálogo Opciones.  
   
-2.  En la lista de categorías de las opciones de la izquierda, elija Diagnóstico de gráficos y, a continuación, configure las opciones de diagnóstico de gráficos que quiera.  
+2. En la lista de categorías de las opciones de la izquierda, elija Diagnóstico de gráficos y, a continuación, configure las opciones de diagnóstico de gráficos que quiera.  
   
-     **Recopilar pilas de llamadas durante la captura (ralentiza la captura)**  
-     Active esta casilla para recopilar pilas de llamadas. Las pilas de llamadas no se recopilan de forma predeterminada. Para capturar las pilas de llamadas, asegúrese de que el **recopilar pilas de llamadas durante la captura (ralentiza la captura** se establece checkbox para habilitar la recopilación y, a continuación, establecer el **para los marcadores draw, dispatch, present y perf**opción (valor predeterminado) para recopilar únicamente las pilas de llamadas más importantes, o el **para todo** opción para recopilar todas las pilas de llamadas. Para detener la recopilación de pilas de llamadas más adelante, desactive la **recopilar pilas de llamadas durante la captura (ralentiza la captura** casilla de verificación.  
+     **Recopilación de pilas de llamadas durante la captura (ralentiza la captura)**  
+     Active esta casilla para recopilar pilas de llamadas. Las pilas de llamadas no se recopilan de forma predeterminada. Para capturar las pilas de llamadas, asegúrese de que esté activada la casilla **Recopilar pilas de llamadas durante la captura (ralentiza la captura)** para habilitar la recopilación y, después, establezca la opción **para los marcadores draw, dispatch, present y perf** (valor predeterminado) para recopilar únicamente las pilas de llamadas más importantes, o la opción **para todo** para recopilar todas las pilas de llamadas. Para detener la recopilación de pilas de llamadas más adelante, desactive la casilla **Recopilar pilas de llamadas durante la captura (ralentiza la captura)**.  
   
-     **Deshabilitar HUD de juego durante la captura**  
+     **Desactivación de HUD de juego durante la captura**  
      Active esta casilla para deshabilitar la superposición de HUD que suelen mostrar las aplicaciones que se ejecutan bajo el diagnóstico de gráficos. Desactívela para mostrar la superposición de HUD.  
   
-     **Capturar en modo de compatibilidad**  
+     **Captura en modo de compatibilidad**  
      Active esta casilla para capturar la información de gráficos en el modo de compatibilidad. La configuración predeterminada es la captura en modo de compatibilidad. En el modo de compatibilidad, Direct3D no informa de que la GPU admite más funciones que las definidas en el nivel de características de base. Así, se evita que la aplicación que se está capturando utilice extensiones específicas del hardware de la GPU donde se captura, y se garantiza que el registro de gráficos se pueda reproducir con cualquier GPU que admita un nivel de características igual o mayor. Desactive esta casilla para deshabilitar el modo de compatibilidad. Los registros capturados con el modo de compatibilidad deshabilitado no se reproducirán correctamente en las GPU que no admitan las mismas características adicionales que usó la aplicación durante la captura.  
   
-     **Detener captura si se encuentran errores en las capas SDK**  
+     **Detención de la captura si se encuentran errores en las capas del SDK**  
      Active esta casilla para detener la captura inmediatamente si se producen errores.  
   
 ## <a name="capturing-graphics-information-remotely"></a>Capturar información de gráficos de forma remota  
@@ -86,13 +81,10 @@ Capture información de gráficos desde la aplicación basada en Direct3D para q
   
  El modo en que configure el proyecto para la depuración remota dependerá del tipo de aplicación que esté desarrollando y del lenguaje de programación que utilice. Para obtener información acerca de cómo configurar la depuración remota para una aplicación de Windows Store, consulte [ejecución Windows Store apps en un equipo remoto](../debugger/run-windows-store-apps-on-a-remote-machine.md). Para obtener información acerca de cómo configurar la depuración remota para una aplicación de escritorio de Windows, consulte [Set Up Remote Debugging para un proyecto de Visual Studio](http://msdn.microsoft.com/library/ec332dc4-400a-498b-a0e6-c8dcf10fef8a).  
   
- Posteriormente, podrá utilizar un equipo o un dispositivo remoto para reproducir la información de los gráficos, independientemente del lugar donde se haya capturado la información. Para obtener más información, consulte [Cómo: cambiar la máquina de reproducción de diagnóstico de gráficos](../debugger/how-to-change-the-graphics-diagnostics-playback-machine.md).  
+ Posteriormente, podrá utilizar un equipo o un dispositivo remoto para reproducir la información de los gráficos, independientemente del lugar donde se haya capturado la información. Para obtener más información, vea [Cómo: Cambio de la máquina de reproducción de Diagnóstico de gráficos](../debugger/how-to-change-the-graphics-diagnostics-playback-machine.md).  
   
 ## <a name="capturing-graphics-information-from-the-command-line"></a>Captura de información de gráficos desde la línea de comandos  
- Se puede capturar información de los gráficos desde una aplicación con una herramienta de línea de comandos. Esta herramienta, DXCap.exe, puede capturar y reproducir rápidamente información de gráficos sin usar Visual Studio ni capturas de programación. En particular, puede utilizar DXCap.exe para la automatización o en un entorno de prueba. Para obtener más información sobre DXCap.exe, consulte [herramienta de captura de línea de comandos](../debugger/command-line-capture-tool.md)  
+ Se puede capturar información de los gráficos desde una aplicación con una herramienta de línea de comandos. Esta herramienta, DXCap.exe, puede capturar y reproducir rápidamente información de gráficos sin usar Visual Studio ni capturas de programación. En particular, puede utilizar DXCap.exe para la automatización o en un entorno de prueba. Para obtener más información sobre DXCap.exe, vea [Herramienta de captura de línea de comandos](../debugger/command-line-capture-tool.md).  
   
 ## <a name="see-also"></a>Vea también  
- [Tutorial: Capturar información de gráficos](../debugger/walkthrough-capturing-graphics-information.md)
-
-
-
+ [Tutorial: Captura de información de gráficos](../debugger/walkthrough-capturing-graphics-information.md)

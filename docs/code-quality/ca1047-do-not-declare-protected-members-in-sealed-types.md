@@ -1,7 +1,6 @@
 ---
 title: 'CA1047: No declarar miembros protegidos en tipos sellados'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - DoNotDeclareProtectedMembersInSealedTypes
@@ -12,18 +11,18 @@ helpviewer_keywords:
 ms.assetid: 829033b5-a9d8-4f26-a719-45494c9dd035
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: b46e64fb4092f8e0f773671ff13eb401b6b67890
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c138c05d755b05275755f96776764604997cbbcd
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53912865"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55921554"
 ---
 # <a name="ca1047-do-not-declare-protected-members-in-sealed-types"></a>CA1047: No declarar miembros protegidos en tipos sellados
 
@@ -35,7 +34,7 @@ ms.locfileid: "53912865"
 |Cambio problemático|Poco problemático|
 
 ## <a name="cause"></a>Motivo
- Es un tipo público `sealed` (`NotInheritable` en Visual basic) y declara un miembro protegido o un tipo anidado protegido. Esta regla no informa de las infracciones de <xref:System.Object.Finalize%2A> métodos, que deben seguir este patrón.
+ Es un tipo público `sealed` (`NotInheritable` en Visual Basic) y declara un miembro protegido o un tipo anidado protegido. Esta regla no informa de las infracciones de <xref:System.Object.Finalize%2A> métodos, que deben seguir este patrón.
 
 ## <a name="rule-description"></a>Descripción de la regla
  Los tipos declaran miembros protegidos para que los tipos heredados puedan obtener acceso o reemplazar el miembro. Por definición, no puede heredar de un tipo sealed, lo que significa que los métodos protegidos en tipos sellados no se puede llamar.

@@ -5,18 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - load tests, scenarios, iterations
 - load test, iterations
-- load tests, sceanrios
+- load tests, scenarios
 ms.assetid: ac480fb7-f4f7-47dc-9ae5-98be3aca4fba
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 761dbeac0f585e34851fe7e310737c536c4448a3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 6c3ebadd34988c83dbb688d3864ab88280d7a077
+ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53843429"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "56796457"
 ---
 # <a name="configure-test-iterations-in-a-load-test-scenario"></a>Configurar iteraciones de prueba en un escenario de prueba de carga
 

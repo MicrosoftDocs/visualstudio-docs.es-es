@@ -1,7 +1,6 @@
 ---
 title: Instalación de la documentación de ayuda local
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - hv_manage
@@ -21,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: efd9df4c-2e69-4c50-992c-9678a8d8cf19
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fab06fee0dadd28d6b8feb793d29fb1e22e0b00b
-ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
+ms.openlocfilehash: c3c5a07a38982175466982b34ab0e4ddedcf31be
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "54406153"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55938920"
 ---
 # <a name="install-and-manage-local-content"></a>Instalar y administrar el contenido local
 

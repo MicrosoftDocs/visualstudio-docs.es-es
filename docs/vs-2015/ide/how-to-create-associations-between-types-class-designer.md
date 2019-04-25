@@ -1,14 +1,9 @@
 ---
-title: 'Cómo: Crear asociaciones entre tipos (Diseñador de clases) | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Crear asociaciones entre tipos (Diseñador de clases) | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.associationline
 helpviewer_keywords:
@@ -21,15 +16,15 @@ ms.assetid: adccb9c8-2f8a-4086-9fa9-f70f99fb6e00
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 33b1a45d1c5dc3275ebbde8124986705bcac51ef
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 7f70b18bb2b648231e3cada312fd241375be3193
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49856800"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099850"
 ---
-# <a name="how-to-create-associations-between-types-class-designer"></a>Cómo: Crear asociaciones entre tipos (Diseñador de clases)
+# <a name="how-to-create-associations-between-types-class-designer"></a>Procedimiento Crear asociaciones entre tipos (Diseñador de clases)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 En el Diseñador de clases, las líneas de asociación muestran la forma en que se relacionan las clases en un diagrama. Una línea de asociación representa una clase que es el tipo de una propiedad o un campo de otra clase del proyecto. Las líneas de asociación se utilizan generalmente para ilustrar las relaciones más importantes entre las clases del proyecto.  
@@ -41,9 +36,9 @@ En el Diseñador de clases, las líneas de asociación muestran la forma en que 
   
 ### <a name="to-define-an-association-line-in-the-class-diagram"></a>Para definir una línea de asociación en el Diagrama de clases  
   
-1.  En el cuadro de herramientas, en el Diseñador de clases, seleccione **Asociación**.  
+1. En el cuadro de herramientas, en el Diseñador de clases, seleccione **Asociación**.  
   
-2.  Trace una línea entre las dos formas que desee vincular con una asociación.  
+2. Trace una línea entre las dos formas que desee vincular con una asociación.  
   
      Se crea una nueva propiedad en la primera clase. Esta propiedad se muestra como línea de asociación (no como propiedad dentro de un compartimiento de la forma) con un nombre predeterminado. Su tipo es la forma a la que señala la línea de asociación.  
   
@@ -53,16 +48,13 @@ En el Diseñador de clases, las líneas de asociación muestran la forma en que 
   
   \- o -  
   
-1.  Haga clic en la forma que contiene la propiedad mostrada como asociación.  
+1. Haga clic en la forma que contiene la propiedad mostrada como asociación.  
   
      La forma obtiene el foco y sus miembros aparecen en la ventana Detalles de clase y en la ventana Propiedades.  
   
-2.  En la ventana Detalles de clase o la ventana Propiedades, edite el campo de nombre de la propiedad y presione ENTRAR.  
+2. En la ventana Detalles de clase o la ventana Propiedades, edite el campo de nombre de la propiedad y presione ENTRAR.  
   
      El nombre se actualiza en la ventana **Detalles de clase**, en la línea de asociación, en la ventana Propiedades y en el código.  
   
 ## <a name="see-also"></a>Vea también  
  [Cómo: Cambiar entre notación de miembro y notación de asociación (Diseñador de clases)](../ide/how-to-change-between-member-notation-and-association-notation-class-designer.md)
-
-
-

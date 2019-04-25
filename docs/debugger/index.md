@@ -1,22 +1,24 @@
 ---
 layout: LandingPage
 title: Depuración de aplicaciones | Microsoft Docs
-description: Aprenda a usar Visual Studio 2017 para depurar aplicaciones, servicios y herramientas en el lenguaje de su elección para sus dispositivos y plataformas.
+description: Aprenda a usar Visual Studio para depurar aplicaciones, servicios y herramientas en el lenguaje de su elección para sus dispositivos y plataformas.
 ms.custom: seodec18
 ms.topic: landing-page
 ms.author: mikejo
 author: mikejo5000
-manager: douge
-ms.openlocfilehash: 79a3aa8fd2d86b7c64d719dc745138b970b92d3c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: f3bf5cc1dd11e0062ca849f16fb806fa756e2203
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53886642"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58322082"
 ---
 # <a name="debugging-in-visual-studio"></a>Depurar en Visual Studio
 
 El depurador de Visual Studio permite observar el comportamiento del programa en tiempo de ejecución y detectar problemas. El depurador trabaja con todos los lenguajes de programación de Visual Studio y sus bibliotecas asociadas. Con el depurador se puede interrumpir la ejecución del programa para examinar el código, evaluar y modificar variables, ver registros, mostrar las instrucciones creadas a partir del código fuente y observar el espacio que ocupa la aplicación en memoria.
+
+<!-- markdownlint-disable MD033 -->
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -48,25 +50,7 @@ El depurador de Visual Studio permite observar el comportamiento del programa en
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>¡Escriba código de C# con menos errores!</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="https://mva.microsoft.com/en-US/training-courses-embed/getting-started-with-visual-studio-2017-17798/Debugger-Feature-tour-of-Visual-studio-2017-sqwiwLD6D_1111787171">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/common/i_video.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Vídeo sobre el uso del depurador</h3>
+                        <h3>Herramientas y técnicas de depuración</h3>
                     </div>
                 </div>
             </div>

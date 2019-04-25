@@ -1,25 +1,26 @@
 ---
-title: Novedades de diseño
+title: Novedades de diseño en Visual Studio 2017
+titleSuffix: ''
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
-- what's new [VIsual Studio ALM], architecture and modeling
-- architecture [Visual Studio Ultimate], modeling
-- modeling software [Visual Studio ALM], What's New
+- what's new [Visual Studio], architecture and modeling
+- architecture [Visual Studio], modeling
+- modeling software [Visual Studio], What's New
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bdea0b8e24347e608ad0e1736b55e34acb4e5854
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+monikerRange: vs-2017
+ms.openlocfilehash: fb7ef710d117318d475e32f19b5ca2511b94f8bc
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53956028"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57869894"
 ---
-# <a name="whats-new-for-design-in-visual-studio"></a>Novedades de diseño en Visual Studio
+# <a name="whats-new-for-design-in-visual-studio-2017"></a>Novedades de diseño en Visual Studio 2017
 
 ## <a name="live-dependency-validation"></a>Validación de dependencias en vivo
 
@@ -39,7 +40,7 @@ El **arquitectura** menú ahora contiene un comando para crear directamente un d
 
 Ahora verá el impacto de los cambios inmediatamente en los resultados del análisis para el código de la solución actual cada vez que guarde el diagrama. No tienes que esperar más para la finalización del comando "Validar dependencias".
 
-Para obtener más información, consulte [esta entrada de blog](https://blogs.msdn.microsoft.com/devops/2016/10/07/live-architecture-dependency-validation-in-visual-studio-15-preview-5/).
+Para obtener más información, consulte [esta entrada de blog](https://devblogs.microsoft.com/devops/live-architecture-dependency-validation-in-visual-studio-15-preview-5/).
 
 ## <a name="uml-designers-have-been-removed"></a>Se han quitado los diseñadores UML
 
@@ -60,13 +61,13 @@ Sin embargo, se admiten para visualizar la arquitectura de código .NET y C++ es
 
 Si es un usuario significativa de los diseñadores de UML, aún puede usar Visual Studio 2015 o versiones anteriores, mientras se decide por una herramienta alternativa para sus necesidades UML.
 
-Para obtener más información, consulte [esta entrada de blog](https://blogs.msdn.microsoft.com/devops/2016/10/14/uml-designers-have-been-removed-layer-designer-now-supports-live-architectural-analysis/).
+Para obtener más información, consulte [esta entrada de blog](https://devblogs.microsoft.com/devops/uml-designers-have-been-removed-layer-designer-now-supports-live-architectural-analysis/).
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
 ## <a name="a-nameversionsupport-edition-support-for-architecture-and-modeling-tools"></a><a name="VersionSupport" />Compatibilidad con la edición de arquitectura y modelado de herramientas
 
-Visual Studio 2017 está disponible en varias ediciones. No todas estas proporcionan compatibilidad con la arquitectura y las herramientas de modelado. En la tabla siguiente se muestra la disponibilidad de cada herramienta.
+Visual Studio está disponible en varias ediciones. No todas estas proporcionan compatibilidad con la arquitectura y las herramientas de modelado. En la tabla siguiente se muestra la disponibilidad de cada herramienta.
 
 |**Característica**|**Edición Enterprise**|**Professional edition**|**Edición de comunidad**|
 |-|-|-|-|

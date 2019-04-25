@@ -10,14 +10,13 @@ helpviewer_keywords:
 ms.assetid: 7eb9290a-f9f6-4e41-9caa-796fcfaf0610
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 4d83dcd0d5c791089c2d699517cb75a5a3e24b33
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: c72eb3db36310efd69d18078ca43c1907697453b
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53891065"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58414975"
 ---
 # <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>Procedimiento para enlazar un controlador de pruebas o un agente de pruebas a un adaptador de red
 
@@ -56,7 +55,7 @@ Si un equipo que tiene instalado el controlador de prueba o el software del agen
 
      `net stop vsttcontroller`
 
-3.  Abra el archivo de configuración XML *QTCcontroller.exe.config* ubicado en *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\\<edition>\Common7\IDE*.
+3.  Abra el archivo de configuración XML *QTCcontroller.exe.config* que se encuentra en *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\\\<edition>\Common7\IDE*.
 
 4.  busque la etiqueta `<appSettings>`.
 
@@ -102,7 +101,7 @@ Si un equipo que tiene instalado el controlador de prueba o el software del agen
 
      **net stop vsttagent**
 
-3.  Abra el archivo de configuración XML *QTAgentService.exe.config* ubicado en *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\\<edition>\Common7\IDE*.
+3.  Abra el archivo de configuración XML *QTAgentService.exe.config* que se encuentra en *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\\\<edition>\Common7\IDE*.
 
 4.  busque la etiqueta `<appSettings>`.
 
@@ -134,5 +133,4 @@ Si un equipo que tiene instalado el controlador de prueba o el software del agen
 - [Instalar y configurar agentes de prueba](../test/lab-management/install-configure-test-agents.md)
 - [Modificar la configuración de registro de pruebas de carga](../test/modify-load-test-logging-settings.md)
 - [Configurar los puertos para los controladores de prueba y los agentes de prueba](../test/configure-ports-for-test-controllers-and-test-agents.md)
-- [Cómo: Especificar el tamaño máximo del archivo de registro](../test/how-to-specify-the-maximum-size-for-the-log-file.md)
 - [Cómo: Especificar periodos de tiempo de espera para controladores de pruebas y agentes de pruebas](../test/how-to-specify-timeout-periods-for-test-controllers-and-test-agents.md)

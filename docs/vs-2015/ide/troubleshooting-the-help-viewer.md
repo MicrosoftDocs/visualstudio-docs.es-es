@@ -1,14 +1,9 @@
 ---
 title: Solución de problemas del Visor de ayuda | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-help-viewer
+ms.topic: troubleshooting
 helpviewer_keywords:
 - troubleshooting [Help Viewer 2.0]
 - Help Viewer 2.0, troubleshooting
@@ -16,13 +11,13 @@ ms.assetid: 461a4553-064a-4142-a2d2-058658b9ba12
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a3497d46ed4c9c5a04d8f40cc3056ea282593884
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 77529ad9957694b1ea1853b3e8b1b1cc29c45e2b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49934241"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067045"
 ---
 # <a name="troubleshooting-the-help-viewer"></a>Solución de problemas del Visor de Ayuda
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,15 +32,15 @@ En este tema se describen los problemas que pueden surgir con el Visor de Ayuda.
   
 #### <a name="to-activate-windows-search-service"></a>Para activar el servicio de Windows Search  
   
-1.  Inicie el Administrador del servidor.  
+1. Inicie el Administrador del servidor.  
   
-2.  En el panel de navegación izquierdo, elija **Roles**.  
+2. En el panel de navegación izquierdo, elija **Roles**.  
   
-3.  En el panel Resumen de roles, elija **Agregar rol**.  
+3. En el panel Resumen de roles, elija **Agregar rol**.  
   
-4.  Elija el rol Servicios de archivo y después elija el botón **Siguiente**.  
+4. Elija el rol Servicios de archivo y después elija el botón **Siguiente**.  
   
-5.  Elija el servicio de rol de Windows Search.  
+5. Elija el servicio de rol de Windows Search.  
   
 ## <a name="additional-resources"></a>Recursos adicionales  
  Puede obtener más información y proporcionar comentarios sobre el Visor de Ayuda mediante los siguientes recursos:  
@@ -55,7 +50,4 @@ En este tema se describen los problemas que pueden surgir con el Visor de Ayuda.
 - Para obtener más información, consulte el [sistema de ayuda y documentación para desarrolladores de](http://go.microsoft.com/fwlink/?LinkId=232741) foro y [profesionales de la Ayuda](http://go.microsoft.com/fwlink/?LinkId=232743) blog.  
   
 ## <a name="see-also"></a>Vea también  
- [Guía del Administrador de visor 2.1 ayuda](http://go.microsoft.com/fwlink/?LinkId=243985)
-
-
-
+ [Guía del administrador del Visor de Ayuda 2.1](http://go.microsoft.com/fwlink/?LinkId=243985)

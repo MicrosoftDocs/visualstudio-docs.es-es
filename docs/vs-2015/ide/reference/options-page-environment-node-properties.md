@@ -1,14 +1,9 @@
 ---
 title: Página de opciones, Propiedades de nodo Entorno | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - automation [Visual Studio], controlling Tools Options
 - Tools Options settings, Environment node properties
@@ -16,18 +11,17 @@ ms.assetid: 26dca41f-91fc-4ca7-9103-3da402baa1d5
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 8deae718faceb1613f73e9be732706c7d5441c8f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: a5c6a2314fe1673efba27d829c1141dcfd5be1cc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49239647"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666824"
 ---
 # <a name="options-page-environment-node-properties"></a>Página de opciones, Propiedades de nodo Entorno
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 En este documento se describen las páginas (o colecciones de propiedades) asociadas a la categoría **Entorno**, `DTE.Properties("Environment", <Property Page>)`, del cuadro de diálogo **Opciones**. El título de cada subsección es la llamada que se usa para acceder a la colección Propiedades y, en la tabla de cada subsección, se muestran las propiedades que se encuentran en la colección.  
   
 ## <a name="general"></a>General  
@@ -172,6 +166,3 @@ En este documento se describen las páginas (o colecciones de propiedades) asoci
  [Página de opciones, Propiedades de nodo Fuentes y colores](../../ide/reference/options-page-fonts-and-colors-node-properties.md)   
  [Página de opciones, Propiedades de nodo Editor de texto](../../ide/reference/options-page-text-editor-node-properties.md)   
  [Opciones de entorno (Cuadro de diálogo)](../../ide/reference/environment-options-dialog-box.md)
-
-
-

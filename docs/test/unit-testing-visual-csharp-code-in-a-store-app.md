@@ -1,23 +1,22 @@
 ---
 title: Pruebas unitarias de código de Visual C#
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: 40aa7393b4b4bc03f978c2ab2fa27d660dd5f9db
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 359f2f8b078c197f12a6db09858ca7c9da5a621a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53891039"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62809643"
 ---
-# <a name="unit-testing-visual-c-code"></a>Pruebas unitarias de código de Visual C#
+# <a name="unit-test-c-code"></a>Código de C# de pruebas unitarias
 
-En este artículo se describe una forma de crear pruebas unitarias para una clase de Visual C# en una aplicación para UWP. La clase Rooter muestra las memorias imprecisas de teoría límite del cálculo mediante la implementación de una función que calcula una estimación de raíz cuadrada de un número determinado. La aplicación Maths puede utilizar esta función para mostrar a un usuario las cosas divertidas que se pueden realizar con las matemáticas.
+En este artículo se describe una forma de crear pruebas unitarias para una clase de C# en una aplicación para UWP. La clase Rooter muestra las memorias imprecisas de teoría límite del cálculo mediante la implementación de una función que calcula una estimación de raíz cuadrada de un número determinado. La aplicación Maths puede utilizar esta función para mostrar a un usuario las cosas divertidas que se pueden realizar con las matemáticas.
 
 En este artículo se muestra cómo se utilizan las pruebas unitarias como primer paso en el desarrollo. En este enfoque, primero tienes que escribir un método de prueba que compruebe un comportamiento concreto en el sistema que estés probando y, después, escribir el código que tenga que superar la prueba. Mediante la realización de cambios en el orden de los procedimientos siguientes, puedes invertir esta estrategia para escribir primero el código que deseas probar y escribe después las pruebas unitarias.
 
@@ -27,13 +26,13 @@ En este artículo también se crea una solución única de Visual Studio y proye
 
 1. En el menú **Archivo**, seleccione **Nuevo** > **Proyecto**.
 
-2. En el cuadro de diálogo **Nuevo proyecto**, expanda **Instalado** > **Visual C#** y seleccione **Windows Universal**. Después, elija **Aplicación vacía** en la lista de plantillas de proyecto.
+2. Busque la plantilla de proyecto **Aplicación vacía (Windows universal)** y selecciónela.
 
-3. Asigne al proyecto el nombre `Maths` y asegúrese de que esté seleccionado **Crear directorio para la solución**.
+3. Dé un nombre al proyecto `Maths`.
 
 4. En el **Explorador de soluciones**, seleccione el nombre de la solución, **Agregar** en el menú contextual y **Nuevo proyecto**.
 
-5. En el cuadro de diálogo **Nuevo proyecto**, expanda **Instalado**, **Visual C#** y seleccione **Windows Universal**. Después elija **Unit Test Library (Universal Windows)** (Biblioteca de pruebas unitarias [Windows Universal]) en la lista de plantillas de proyecto.
+5. Busque la plantilla de proyecto **Aplicación de prueba unitaria (Windows universal)** y selecciónela.
 
 6. Abra *UnitTest1.cs* en el editor de Visual Studio.
 

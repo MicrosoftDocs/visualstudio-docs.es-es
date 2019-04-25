@@ -18,40 +18,34 @@ helpviewer_keywords:
 ms.assetid: 7a0535f6-1cd4-4b51-ad34-f4a45b9f1ce3
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 703c00868eca2f48c06bb24cc45a533411a8147c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6cedb5e0b8dd80aadc3ee3a9507b2210811fb1bf
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53866886"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56686891"
 ---
 # <a name="debugging-preparation-c-f-and-visual-basic-project-types"></a>Preparación de la depuración: Tipos de proyectos de C#, F# y Visual Basic
-En los temas de esta sección se describe cómo se depuran los tipos de proyectos de C#, F# y [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] creados mediante las plantillas de proyecto de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
-  
- Tenga en cuenta que se han agrupado en esos tipos de proyecto que crean archivos DLL como resultado [depurar proyectos DLL](../debugger/debugging-dll-projects.md) debido a las características comunes que comparten.  
-  
-## <a name="in-this-section"></a>En esta sección  
- [Valores de propiedades recomendados](../debugger/managed-debugging-recommended-property-settings.md)  
- En esta sección se describen los valores recomendados de las propiedades relacionadas con la depuración para proyectos de C#, F# y Visual Basic.  
-  
- [Aplicaciones de Windows Forms](../debugger/debugging-preparation-windows-forms-applications.md)  
- Describe un proyecto de aplicación para Windows y proporciona instrucciones para realizar la depuración, modificar la configuración predeterminada de Debug e iniciar la aplicación fuera de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] y asociarla con el depurador.  
-  
- [Proyectos de consola](../debugger/debugging-preparation-console-projects.md)  
- Proporciona consideraciones adicionales para la depuración de aplicaciones de consola de C# o [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. Incluye: especificar argumentos de la línea de comandos, iniciar la aplicación desde el Símbolo del sistema, escribir en la Ventana de salida, y solucionar problemas de la ventana de consola.  
-  
- [Servicios de Windows](../debugger/debugging-preparation-windows-services.md)  
- Describe un servicio de Windows y proporciona un vínculo a Depurar aplicaciones de servicios de Windows.  
-  
-## <a name="related-sections"></a>Secciones relacionadas  
- [Configuración y preparación de la depuración](../debugger/debugger-settings-and-preparation.md)  
- En esta sección, se describe la preparación y la configuración que se deben realizar para depurar el programa con el depurador de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  
-  
- [Depurar código administrado](../debugger/debugging-managed-code.md)  
- Explica problemas y técnicas de depuración comunes de aplicaciones escritas en código administrado.  
-  
-## <a name="see-also"></a>Vea también  
- [Seguridad del depurador](../debugger/debugger-security.md)
+En los temas de esta sección se describe cómo se depuran los tipos de proyectos de C#, F# y [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] creados mediante las plantillas de proyecto de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+
+ Tenga en cuenta que se han agrupado en esos tipos de proyecto que crean archivos DLL como resultado [depurar proyectos DLL](../debugger/debugging-dll-projects.md) debido a las características comunes que comparten.
+
+## <a name="in-this-section"></a>En esta sección
+ [Valores de propiedad recomendados](../debugger/managed-debugging-recommended-property-settings.md) en esta sección se describe la configuración de propiedades relacionadas con la depuración recomendados para C#, F#y los proyectos de Visual Basic.
+
+ [Las aplicaciones de Windows Forms](../debugger/debugging-preparation-windows-forms-applications.md) describe un proyecto de aplicación de Windows y proporciona instrucciones para la depuración, cambiar la configuración predeterminada de Debug e iniciar la aplicación fuera de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] y asociarla con el depurador.
+
+ [Proyectos de consola](../debugger/debugging-preparation-console-projects.md) proporciona consideraciones adicionales para la depuración C# o [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] aplicaciones de consola. Incluye: especificar argumentos de la línea de comandos, iniciar la aplicación desde el Símbolo del sistema, escribir en la Ventana de salida, y solucionar problemas de la ventana de consola.
+
+ [Servicios de Windows](../debugger/debugging-preparation-windows-services.md) describe un servicio de Windows y proporciona un vínculo a depurar aplicaciones de servicios de Windows.
+
+## <a name="related-sections"></a>Secciones relacionadas
+ [Preparación y configuración del depurador](../debugger/debugger-settings-and-preparation.md) cubre la configuración y preparación que se debe realizar para depurar el programa con el [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] depurador.
+
+ [Depurar código administrado](../debugger/debugging-managed-code.md) se tratan problemas de depuración comunes y técnicas para aplicaciones escritas en código administrado.
+
+## <a name="see-also"></a>Vea también
+- [Seguridad del depurador](../debugger/debugger-security.md)

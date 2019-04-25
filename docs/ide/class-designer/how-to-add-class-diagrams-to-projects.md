@@ -1,7 +1,6 @@
 ---
 title: Procedimiento Agregar diagramas de clases a proyectos (Diseñador de clases)
 ms.date: 05/08/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - class diagrams, creating
@@ -9,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 0eac1b54-2711-4e4b-9654-a0c429c08c8f
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4df2047109ebd89b7dee621373bf30b9f55747a1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 88e4f63646883c8d48dbd62fbd03deaddff8b8e2
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53866457"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223746"
 ---
 # <a name="how-to-add-class-diagrams-to-projects"></a>Procedimiento Agregar diagramas de clases a proyectos
 
@@ -27,7 +26,7 @@ No se pueden crear diagramas de clases de proyectos que compartan código en var
 
 ## <a name="install-the-class-designer-component"></a>Instalar el componente del Diseñador de clases
 
-Si va a ejecutar Visual Studio 2017 y no ha instalado el componente del **Diseñador de clases**, siga estos pasos para instalarlo.
+Si no ha instalado el componente del **Diseñador de clases**, siga estos pasos para hacerlo.
 
 1. Abra el **Instalador de Visual Studio** desde el menú Inicio de Windows o seleccionando **Herramientas** > **Obtener herramientas y características** en la barra de menús de Visual Studio.
 

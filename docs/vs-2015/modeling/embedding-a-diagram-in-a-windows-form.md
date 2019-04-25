@@ -1,23 +1,20 @@
 ---
 title: Incrustación de un diagrama en un formulario de Windows | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: fa6cd040-7c88-4329-b9c3-2a80b312610f
 caps.latest.revision: 3
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 04ecf5bd7bfc91e03f48e624d208a5b4f29b10b7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 440b60697d4ab1e88f535b6c5ef824bc74e19c48
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292531"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068696"
 ---
 # <a name="embedding-a-diagram-in-a-windows-form"></a>Incrustar diagramas en Windows Forms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,15 +25,15 @@ Puede insertar un diagrama DSL en un Control de Windows, que aparece en el [!INC
   
 #### <a name="to-embed-a-dsl-diagram-in-a-windows-control"></a>Para incrustar un diagrama DSL en un Control de Windows  
   
-1.  Agregue un nuevo **Control de usuario** archivo al proyecto DslPackage.  
+1. Agregue un nuevo **Control de usuario** archivo al proyecto DslPackage.  
   
-2.  Agregue un control de Panel para el Control de usuario. Este panel contendrá el diagrama DSL.  
+2. Agregue un control de Panel para el Control de usuario. Este panel contendrá el diagrama DSL.  
   
      Agregue otros controles que necesite.  
   
      Establecer las propiedades de delimitador de los controles.  
   
-3.  En el Explorador de soluciones, haga clic en el archivo de control de usuario y haga clic en **ver código**. Agregue este constructor y la variable en el código:  
+3. En el Explorador de soluciones, haga clic en el archivo de control de usuario y haga clic en **ver código**. Agregue este constructor y la variable en el código:  
   
     ```csharp  
   
@@ -50,7 +47,7 @@ Puede insertar un diagrama DSL en un Control de Windows, que aparece en el [!INC
   
     ```  
   
-4.  Agregue un nuevo archivo al proyecto DslPackage, con el siguiente contenido:  
+4. Agregue un nuevo archivo al proyecto DslPackage, con el siguiente contenido:  
   
     ```  
     using System.Windows.Forms;  
@@ -74,13 +71,13 @@ Puede insertar un diagrama DSL en un Control de Windows, que aparece en el [!INC
   
     ```  
   
-5.  Para probar el DSL, presione F5 y abrir un archivo de modelo de ejemplo. El diagrama aparece dentro del control. El cuadro de herramientas y otras características funcionan con normalidad.  
+5. Para probar el DSL, presione F5 y abrir un archivo de modelo de ejemplo. El diagrama aparece dentro del control. El cuadro de herramientas y otras características funcionan con normalidad.  
   
 #### <a name="updating-the-form-using-store-events"></a>Actualizar el formulario con los eventos de Store  
   
-1.  En el Diseñador de formularios, agregue un **ListBox** denominado `listBox1`. Esto mostrará una lista de los elementos del modelo. Se conservará en synchronism con el modelo mediante *almacenar eventos*. Para obtener más información, consulte [controladores propagar los cambios fuera el modelo de evento](../modeling/event-handlers-propagate-changes-outside-the-model.md).  
+1. En el Diseñador de formularios, agregue un **ListBox** denominado `listBox1`. Esto mostrará una lista de los elementos del modelo. Se conservará en synchronism con el modelo mediante *almacenar eventos*. Para obtener más información, consulte [controladores propagar los cambios fuera el modelo de evento](../modeling/event-handlers-propagate-changes-outside-the-model.md).  
   
-2.  En el archivo de código personalizado, invalide aún más métodos a la clase DocView:  
+2. En el archivo de código personalizado, invalide aún más métodos a la clase DocView:  
   
     ```  
   
@@ -123,7 +120,7 @@ Puede insertar un diagrama DSL en un Control de Windows, que aparece en el [!INC
   
     ```  
   
-3.  En el código subyacente del control de usuario, inserte los métodos para realizar escuchas para los elementos agregados y quitados:  
+3. En el código subyacente del control de usuario, inserte los métodos para realizar escuchas para los elementos agregados y quitados:  
   
     ```  
   
@@ -152,11 +149,10 @@ Puede insertar un diagrama DSL en un Control de Windows, que aparece en el [!INC
   
     ```  
   
-4.  Para probar el DSL, presione F5 y, en la instancia experimental de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], abra un archivo de modelo de ejemplo.  
+4. Para probar el DSL, presione F5 y, en la instancia experimental de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], abra un archivo de modelo de ejemplo.  
   
      Tenga en cuenta que el cuadro de lista muestra una lista de los elementos en el modelo y que es correcta después de cualquier adición o eliminación y deshacer y rehacer.  
   
 ## <a name="see-also"></a>Vea también  
  [Navegar y actualizar un modelo en el código de programa](../modeling/navigating-and-updating-a-model-in-program-code.md)   
  [Escribir código para personalizar lenguajes específicos de dominio](../modeling/writing-code-to-customise-a-domain-specific-language.md)
-

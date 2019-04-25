@@ -1,25 +1,20 @@
 ---
 title: 0 MSAA de x-4 x-2 (variantes) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 668a6603-5082-4c78-98e6-f3dc871aa55b
 caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 8e661823a07945c22679832dc716ad2f25f4f6aa
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4b188be0a8ff3c8bac6dc8fd2b5474756a1565f3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51793781"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090035"
 ---
 # <a name="0x2x4x-msaa-variants"></a>0x/2x/4x MSAA (Variantes)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,13 +36,13 @@ Reemplaza el suavizado de contorno de muestras múltiples (MSAA) en todos los ob
   
 - El objeto `D3D11_TEXTURE2D_DESC` pasado en `pDesc` describe un objetivo de presentación, que es:  
   
-  -   El miembro BindFlags tiene el conjunto de marcadores marcador D3D11_BIND_TARGET o marcador D3D11_BIND_DEPTH_STENCIL.  
+  - El miembro BindFlags tiene el conjunto de marcadores marcador D3D11_BIND_TARGET o marcador D3D11_BIND_DEPTH_STENCIL.  
   
-  -   El miembro Usage está establecido en D3D11_USAGE_DEFAULT.  
+  - El miembro Usage está establecido en D3D11_USAGE_DEFAULT.  
   
-  -   El miembro CPUAccessFlags está establecido en 0.  
+  - El miembro CPUAccessFlags está establecido en 0.  
   
-  -   El miembro MipLevels está establecido en 1.  
+  - El miembro MipLevels está establecido en 1.  
   
 - El dispositivo admite el recuento de muestra solicitado (0, 2 o 4) y la calidad de muestreo (0) para el formato de objetivo de presentación solicitado (miembro D3D11_TEXTURE2D_DESC::Format), como determina `ID3D11Device::CheckMultisampleQualityLevels`.  
   
@@ -55,7 +50,7 @@ Reemplaza el suavizado de contorno de muestras múltiples (MSAA) en todos los ob
   
   Estas variantes también reemplazan la configuración de MSAA en todas las cadenas de intercambio utilizando `IDXGIFactory::CreateSwapChain`, `IDXGIFactory2::CreateSwapChainForHwnd`, `IDXGIFactory2::CreateSwapChainForCoreWindow`, `IDXGIFactory2::CreateSwapChainForComposition` y `ID3D11CreateDeviceAndSwapChain`.  
   
-  El siguiente efecto de estos cambios es que todas las presentaciones se realizan en un objetivo de presentación de MSAA, pero si su aplicación utiliza uno de estos objetivos de presentación o búferes de cadena de intercambio como vista de recurso de sombreador o de acceso no ordenado, se realiza un muestreo de los datos a partir de la copia sin MSAA resuelta del objetivo de presentación.  
+  El siguiente efecto de estos cambios es que todas las presentaciones se realizan en un objetivo de presentación de MSAA, pero si su aplicación utiliza uno de estos objetivos de presentación o búferes de cadena de intercambio como vista de recursos del sombreador o de acceso desordenado, se realiza un muestreo de los datos a partir de la copia sin MSAA resuelta del objetivo de presentación.  
   
 ## <a name="restrictions-and-limitations"></a>Restricciones y limitaciones  
  En Direct3D 11, las texturas MSAA están más restringidas que las texturas sin MSAA. Por ejemplo, no puede llamar a `ID3D11DeviceContext::UpdateSubresource` en una textura MSAA y se produce un error en la llamada a `ID3D11DeviceContext::CopySubresourceRegion` si el recuento y la calidad de muestra del recurso y la destinación de origen no coinciden, lo que puede ocurrir cuando esta variante reemplaza la configuración de MSAA de un recurso pero no del otro.  
@@ -83,6 +78,3 @@ chain_description.SampleDesc.Quality = 0;
   
 // Call IDXGISwapChain::CreateSwapChain or D3D11CreateDeviceAndSwapChain, etc.  
 ```
-
-
-

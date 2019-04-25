@@ -1,12 +1,9 @@
 ---
 title: Navegar y actualizar modelos de capas en el código de programa | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - layer models, navigating in program code
 - layer models, updating in program code
@@ -14,18 +11,18 @@ ms.assetid: c60edc87-33ee-4964-a954-40069f9febf3
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: ec36aa78ce5ed90098587092207806444681146a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9f5211075a1f8e58cf738b994872e7588897b2ba
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51734727"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58999747"
 ---
 # <a name="navigate-and-update-layer-models-in-program-code"></a>Navegar y actualizar modelos de capas en el código del programa
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-En este tema se describen los elementos y relaciones en los modelos de capas por los que se puede navegar y que se pueden actualizar mediante código de programa. Para obtener más información acerca de diagramas de capas desde la perspectiva del usuario, consulte [diagramas de capas: referencia](../modeling/layer-diagrams-reference.md) y [diagramas de capas: instrucciones](../modeling/layer-diagrams-guidelines.md).  
+En este tema se describen los elementos y relaciones en los modelos de capas por los que se puede navegar y que se pueden actualizar mediante código de programa. Para obtener más información acerca de diagramas de capas desde la perspectiva del usuario, consulte [diagramas de capas: Referencia](../modeling/layer-diagrams-reference.md) y [diagramas de capas: Directrices](../modeling/layer-diagrams-guidelines.md).  
   
  El modelo <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer> descrito en este tema sirve de escaparate a un modelo <xref:Microsoft.VisualStudio.GraphModel>, de naturaleza mucho más general. Si está escribiendo un [extensión de gestos o comandos de menú](../modeling/add-commands-and-gestures-to-layer-diagrams.md), utilice el `Layer` modelo. Si está escribiendo un [extensión de validación de capas](../modeling/add-custom-architecture-validation-to-layer-diagrams.md), resulta más fácil de usar el `GraphModel`.  
   
@@ -134,9 +131,6 @@ public void ... (...)
  [Agregar comandos y gestos a diagramas de capas](../modeling/add-commands-and-gestures-to-layer-diagrams.md)   
  [Agregar validación de arquitectura personalizada a diagramas de capas](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)   
  [Agregar propiedades personalizadas a diagramas de capas](../modeling/add-custom-properties-to-layer-diagrams.md)   
- [Diagramas de capas: referencia](../modeling/layer-diagrams-reference.md)   
- [Diagramas de capas: instrucciones](../modeling/layer-diagrams-guidelines.md)   
+ [Diagramas de capas: Referencia](../modeling/layer-diagrams-reference.md)   
+ [Diagramas de capas: Directrices](../modeling/layer-diagrams-guidelines.md)   
  [Ampliar modelos y diagramas UML](../modeling/extend-uml-models-and-diagrams.md)
-
-
-

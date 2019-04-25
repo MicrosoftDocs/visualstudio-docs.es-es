@@ -1,12 +1,9 @@
 ---
 title: Controladores de eventos propagan cambios fuera del modelo | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
 - Domain-Specific Language, events
@@ -14,13 +11,13 @@ ms.assetid: 0ac8d1e4-239f-4370-ba1d-3769bb38b8a5
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 7bfddc0903c520469833a0f160444202edf07c32
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 24ef57b545360cccbf75039b5f64a0f53e636dd8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49823702"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059908"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>Los controladores de eventos propagan cambios fuera del modelo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,13 +30,13 @@ En el SDK de modelado y visualización, puede definir controladores de eventos d
   
 1. Elija el tipo de evento que desea supervisar. Para obtener una lista completa, examine las propiedades de <xref:Microsoft.VisualStudio.Modeling.EventManagerDirectory>. Cada propiedad se corresponde con un tipo de evento. Usado con mayor frecuencia son tipos de evento:  
   
-   -   `ElementAdded` : se desencadena cuando un elemento de modelo, se crea el vínculo de relación, forma o conector.  
+   - `ElementAdded` : se desencadena cuando un elemento de modelo, se crea el vínculo de relación, forma o conector.  
   
-   -   La ElementPropertyChanged: se desencadena cuando el valor de un `Normal` se cambia la propiedad de dominio. El evento se desencadena únicamente si los valores nuevos y antiguos no son iguales. El evento no se puede aplicar a las propiedades de almacenamiento calculadas y personalizadas.  
+   - La ElementPropertyChanged: se desencadena cuando el valor de un `Normal` se cambia la propiedad de dominio. El evento se desencadena únicamente si los valores nuevos y antiguos no son iguales. El evento no se puede aplicar a las propiedades de almacenamiento calculadas y personalizadas.  
   
         No se puede aplicar a las propiedades de rol que se corresponden con los vínculos de relación. En su lugar, use `ElementAdded` para supervisar la relación de dominio.  
   
-   -   `ElementDeleted` : se desencadena después de un elemento de modelo, relación, forma o conector se ha eliminado. Todavía puede tener acceso a los valores de propiedad del elemento, pero no tendrá ninguna relación con otros elementos.  
+   - `ElementDeleted` : se desencadena después de un elemento de modelo, relación, forma o conector se ha eliminado. Todavía puede tener acceso a los valores de propiedad del elemento, pero no tendrá ninguna relación con otros elementos.  
   
 2. Agregue una definición de clase parcial para _Sudsl_**DocData** en un archivo de código independiente en el **DslPackage** proyecto.  
   
@@ -169,11 +166,11 @@ private static void AlbumTitleAdjuster(object sender,
   
  Si escribe un evento que se actualiza el almacén:  
   
--   Use `store.InUndoRedoOrRollback` para evitar realizar cambios en los elementos del modelo en la fase de reversión. El Administrador de transacciones todo lo establecerá en el almacén a su estado original.  
+- Use `store.InUndoRedoOrRollback` para evitar realizar cambios en los elementos del modelo en la fase de reversión. El Administrador de transacciones todo lo establecerá en el almacén a su estado original.  
   
--   Use `store.InSerializationTransaction` para evitar realizar cambios mientras se carga el modelo del archivo.  
+- Use `store.InSerializationTransaction` para evitar realizar cambios mientras se carga el modelo del archivo.  
   
--   Hará que los cambios aún más los eventos que se desencadene. Asegúrese de que se evite un bucle infinito.  
+- Hará que los cambios aún más los eventos que se desencadene. Asegúrese de que se evite un bucle infinito.  
   
 ## <a name="store-event-types"></a>Tipos de evento de Store  
  Cada tipo de evento corresponde a una colección en Store.EventManagerDirectory. Puede agregar o quitar controladores de eventos en cualquier momento, pero resulta habitual para agregarlos al cargar el documento.  
@@ -194,7 +191,4 @@ private static void AlbumTitleAdjuster(object sender,
   
 ## <a name="see-also"></a>Vea también  
  [Responder a los cambios y propagarlos](../modeling/responding-to-and-propagating-changes.md)   
- [Código de ejemplo: diagramas de circuitos](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
-
-
-
+ [Código de ejemplo: Diagramas de circuitos](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)

@@ -1,7 +1,6 @@
 ---
 title: 'CA1032: Implementar constructores de excepción estándar'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA1032
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: a8623c56-273a-4c95-8d83-95911a042be7
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c0a9439150602bdb3f84f9a82aacac39dc2e9517
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7baf13eb9125b273ad8fb1265a65eb7b053238a1
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53881236"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55922399"
 ---
 # <a name="ca1032-implement-standard-exception-constructors"></a>CA1032: Implementar constructores de excepción estándar
 

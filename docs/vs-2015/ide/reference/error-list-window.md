@@ -1,14 +1,9 @@
 ---
 title: Lista de errores (ventana) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - VS.ErrorList
 helpviewer_keywords:
@@ -20,18 +15,17 @@ ms.assetid: b7f6d45a-733b-4ad8-bc2f-737a37509e56
 caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 0ecec77428d32512ec1b5fcf3822933c1c619b7f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 9dc94abdfb35bc4537f0ba80f96f393157263e63
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49873711"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658154"
 ---
 # <a name="error-list-window"></a>Lista de errores (ventana)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 NOTA]
 >  La Lista de errores muestra información sobre un mensaje de error específico. Puede copiar el número de error o el texto de la cadena de error de la ventana de salida. Para mostrar la ventana de salida, presione Ctrl+Alt+O. Vea [Ventana de salida](../../ide/reference/output-window.md).  
   
@@ -56,21 +50,21 @@ NOTA]
   Para ordenar la lista, haga clic en cualquier encabezado de columna. Para ordenar de nuevo por otra columna, mantenga presionada la tecla MAYÚS y haga clic en otro encabezado de columna. Para seleccionar las columnas que se muestran y las que están ocultas, seleccione **Mostrar columnas** en el menú contextual. Si desea cambiar el orden en el que se muestran las columnas, arrastre cualquier encabezado de columna hacia la izquierda o la derecha.  
   
 > [!NOTE]
->  Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos aquí, en función de los valores de configuración o de edición activos. Para cambiar su configuración, haga clic en **Herramientas/Importar y exportar configuraciones**. Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos aquí, en función de los valores de configuración o de edición activos. Para cambiar su configuración, haga clic en **Herramientas/Importar y exportar configuraciones**. Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="error-list-filters"></a>Filtros de la lista de errores  
  Hay dos tipos de filtro en dos listas desplegables, una en el lado derecho de la barra de herramientas y otra a la izquierda de la barra de herramientas. La lista desplegable del lado izquierdo de la barra de herramientas especifica el conjunto de archivos de código que se va a usar (**Toda la solución**, **Documentos abiertos**, **Proyecto actual** o **Documento actual**).  
   
  Puede limitar el ámbito de búsqueda para analizar y actuar en grupos de errores. Por ejemplo, puede que desee centrarse en los errores más importantes que están impidiendo que un proyecto se compile. Entre las opciones para delimitar el ámbito se incluyen las siguientes:  
   
-1. **Documentos abiertos**: muestra los errores, las advertencias y los mensajes de los documentos abiertos.  
+1. **Documentos abiertos**: Muestra los errores, las advertencias y los mensajes de los documentos abiertos.  
   
-2. **Proyecto actual**: muestra los errores, las advertencias y los mensajes del proyecto del documento seleccionado actualmente en el **Editor** o del proyecto seleccionado en el **Explorador de soluciones**.  
+2. **Proyecto actual**: Muestra los errores, las advertencias y los mensajes del proyecto del documento seleccionado actualmente en el **Editor** o del proyecto seleccionado en **Explorador de soluciones**.  
   
    > [!NOTE]
    >  La lista filtrada de errores, advertencias y mensajes cambia si el proyecto del documento seleccionado actualmente es diferente al proyecto seleccionado en el **Explorador de soluciones**.  
   
-3. **Documento actual**: muestra los errores, las advertencias y los mensajes del documento seleccionado actualmente en el **Editor** o en el **Explorador de soluciones**.  
+3. **Documento actual**: Muestra los errores, las advertencias y los mensajes del documento seleccionado actualmente en **Editor** o **Explorador de soluciones**.  
   
    Si se aplica un filtro actualmente al resultado de la búsqueda, el nombre del filtro aparece en la barra de título de **Lista de errores**. Después, los botones **Errores**, **Advertencias** y **Mensajes** muestran el número de elementos filtrados junto con el número total de elementos, por ejemplo, los botones muestran x de y errores. Si no se aplica ningún filtro, en la barra de título solo aparece "Lista de errores”.  
   
@@ -100,6 +94,3 @@ NOTA]
   
  Línea  
  Muestra la línea en la que se produce el problema.
-
-
-

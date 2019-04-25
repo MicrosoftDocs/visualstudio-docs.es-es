@@ -6,15 +6,15 @@ helpviewer_keywords:
 - performance tools, runtime profiling control window
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c20dde749f95a24c6d83c7b6693220a5552f89fe
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b39689219b113343162aa0e814cfa68e2422f08d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53885173"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56597574"
 ---
 # <a name="how-to-limit-instrumentation-to-specific-dlls"></a>Procedimiento Limitar la instrumentación a archivos DLL específicos
 
@@ -69,5 +69,5 @@ El método de generación de perfiles de instrumentación permite limitar la rec
 
 ## <a name="see-also"></a>Vea también
 
-[Control de la recopilación de datos](../profiling/controlling-data-collection.md)  
-[Cómo: Limitar la instrumentación a funciones específicas](../profiling/how-to-limit-instrumentation-to-specific-functions.md)
+[Controlar la recopilación de datos](../profiling/controlling-data-collection.md)
+[ Limitar la instrumentación a funciones específicas](../profiling/how-to-limit-instrumentation-to-specific-functions.md)

@@ -1,30 +1,28 @@
 ---
-title: Identificadores de componente y carga de trabajo de Visual Studio Test Professional 2017
+title: Identificadores de componente y carga de trabajo de Visual Studio Test Professional
 titleSuffix: ''
 description: Uso de identificadores de componente y carga de trabajo de Visual Studio para proporcionar herramientas de pruebas integradas para evaluadores generalistas
-keywords: ''
 author: TerryGLee
 ms.author: tglee
-manager: douge
-ms.date: 11/13/2018
+manager: jillfra
+ms.date: 03/01/2019
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
-ms.service: ''
-ms.prod: visual-studio-dev15
 ms.assetid: 70c03438-8434-4921-ada0-c172519af431
-ms.workload:
-- multiple
-ms.openlocfilehash: d166a0e0c2d21b9df80cce046d81b92806e16f87
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+monikerRange: vs-2017
+ms.openlocfilehash: 354fce02944b62e1ea9ea96e66f6fa34af8616fc
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53937600"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58160305"
 ---
-# <a name="visual-studio-test-professional-2017-component-directory"></a>Directorio de componentes de Visual Studio Test Professional 2017
+# <a name="visual-studio-test-professional-component-directory"></a>Directorio de componentes de Visual Studio Test Professional
 
 Las tablas de esta página presentan los identificadores que puede usar para instalar Visual Studio mediante la línea de comandos o que puede especificar como una dependencia en un manifiesto VSIX. Tenga en cuenta que agregaremos componentes adicionales a medida que se publiquen actualizaciones de Visual Studio.
 

@@ -8,16 +8,15 @@ dev_langs:
 ms.assetid: 7b1a91cf-8b5a-4fc0-ac36-0dc2d336fa1b
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b3b51946c9fbf6ba38249c8ca7056179b58ee8a5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: ccd8bd0cb37aaa2d4bfad7ea20979987048bf862
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53852497"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050678"
 ---
 # <a name="query-datasets"></a>Consultar conjuntos de datos
 Para buscar registros específicos de un conjunto de datos, use el `FindBy` método en la tabla de datos, escribir su propia instrucción foreach para recorrer la colección de filas de la tabla, o use [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset).
@@ -34,7 +33,7 @@ Mayúsculas y minúsculas, sin embargo, pueden ser un factor en cómo interpreta
 
 #### <a name="to-find-a-row-in-a-typed-dataset-with-a-primary-key-value"></a>Para buscar una fila en un dataset con tipo con un valor de clave principal
 
--   Para buscar una fila, llame a fuertemente tipado `FindBy` método que usa la clave principal de la tabla.
+- Para buscar una fila, llame a fuertemente tipado `FindBy` método que usa la clave principal de la tabla.
 
      En el ejemplo siguiente, la `CustomerID` columna es la clave principal de la `Customers` tabla. Esto significa que el generado `FindBy` método es `FindByCustomerID`. En el ejemplo se muestra cómo asignar un determinado <xref:System.Data.DataRow> a una variable mediante el uso de generado `FindBy` método.
 
@@ -43,7 +42,7 @@ Mayúsculas y minúsculas, sin embargo, pueden ser un factor en cómo interpreta
 
 #### <a name="to-find-a-row-in-an-untyped-dataset-with-a-primary-key-value"></a>Para buscar una fila en un conjunto de datos sin tipo con un valor de clave principal
 
--   Llame a la <xref:System.Data.DataRowCollection.Find%2A> método de un <xref:System.Data.DataRowCollection> colección, pasando la clave principal como un parámetro.
+- Llame a la <xref:System.Data.DataRowCollection.Find%2A> método de un <xref:System.Data.DataRowCollection> colección, pasando la clave principal como un parámetro.
 
      El ejemplo siguiente muestra cómo declarar una nueva fila denominada `foundRow` y asignarle el valor devuelto de la <xref:System.Data.DataRowCollection.Find%2A> método. Si se encuentra la clave principal, el contenido del índice de columna 1 se muestra en un cuadro de mensaje.
 
@@ -54,7 +53,7 @@ Mayúsculas y minúsculas, sin embargo, pueden ser un factor en cómo interpreta
 
 #### <a name="to-find-rows-based-on-the-values-in-any-column"></a>Para buscar filas en función de los valores de cualquier columna
 
--   Las tablas de datos se crean con el <xref:System.Data.DataTable.Select%2A> método, que devuelve una matriz de <xref:System.Data.DataRow>s según la expresión que se pasa a la <xref:System.Data.DataTable.Select%2A> método. Para obtener más información sobre la creación de expresiones válidas, vea la sección "Sintaxis de expresión" de la página la <xref:System.Data.DataColumn.Expression%2A> propiedad.
+- Las tablas de datos se crean con el <xref:System.Data.DataTable.Select%2A> método, que devuelve una matriz de <xref:System.Data.DataRow>s según la expresión que se pasa a la <xref:System.Data.DataTable.Select%2A> método. Para obtener más información sobre la creación de expresiones válidas, vea la sección "Sintaxis de expresión" de la página la <xref:System.Data.DataColumn.Expression%2A> propiedad.
 
      El ejemplo siguiente muestra cómo usar el <xref:System.Data.DataTable.Select%2A> método de la <xref:System.Data.DataTable> localizar filas específicas.
 
@@ -73,24 +72,24 @@ Esta página ofrece ejemplos de uso de conjuntos de datos con tipo. Para obtener
 
 Ejemplos de código siguientes muestran cómo desplazarse arriba y abajo de las relaciones en conjuntos de datos con tipo. El uso de ejemplos de código escrito <xref:System.Data.DataRow>s (`NorthwindDataSet.OrdersRow`) y el generado FindBy*PrimaryKey* (`FindByCustomerID`) métodos para buscar una fila deseada y devolver los registros relacionados. Los ejemplos de compilación y ejecutan correctamente solo si tiene:
 
--   Una instancia de un conjunto de datos denominado `NorthwindDataSet` con un `Customers` tabla.
+- Una instancia de un conjunto de datos denominado `NorthwindDataSet` con un `Customers` tabla.
 
--   Un `Orders` tabla.
+- Un `Orders` tabla.
 
--   Una relación llamada `FK_Orders_Customers`relacionados con las dos tablas.
+- Una relación llamada `FK_Orders_Customers`relacionados con las dos tablas.
 
 Además, ambas tablas deben rellenarse con datos de cualquier registro que se va a devolver.
 
 #### <a name="to-return-the-child-records-of-a-selected-parent-record"></a>Para devolver los registros de un registro primario seleccionado
 
--   Llame a la <xref:System.Data.DataRow.GetChildRows%2A> método de un determinado `Customers` datos de fila y devolver una matriz de filas de la `Orders` tabla:
+- Llame a la <xref:System.Data.DataRow.GetChildRows%2A> método de un determinado `Customers` datos de fila y devolver una matriz de filas de la `Orders` tabla:
 
      [!code-csharp[VbRaddataDatasets#6](../data-tools/codesnippet/CSharp/query-datasets_4.cs)]
      [!code-vb[VbRaddataDatasets#6](../data-tools/codesnippet/VisualBasic/query-datasets_4.vb)]
 
 #### <a name="to-return-the-parent-record-of-a-selected-child-record"></a>Para devolver el registro primario de un registro secundario seleccionado
 
--   Llame a la <xref:System.Data.DataRow.GetParentRow%2A> método de un determinado `Orders` fila de datos y devolver una sola fila de la `Customers` tabla:
+- Llame a la <xref:System.Data.DataRow.GetParentRow%2A> método de un determinado `Orders` fila de datos y devolver una sola fila de la `Customers` tabla:
 
      [!code-csharp[VbRaddataDatasets#7](../data-tools/codesnippet/CSharp/query-datasets_5.cs)]
      [!code-vb[VbRaddataDatasets#7](../data-tools/codesnippet/VisualBasic/query-datasets_5.vb)]

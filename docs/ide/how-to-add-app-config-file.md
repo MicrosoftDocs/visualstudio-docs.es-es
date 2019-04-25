@@ -1,7 +1,6 @@
 ---
 title: Adición de un archivo app.config a un proyecto
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -9,17 +8,17 @@ helpviewer_keywords:
 - app.config files, adding to C# projects
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 11bc55316414298cf61a27854182f4831feb1ded
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: d7e760d952d03a31fdb633ae57c0fb670b50fcc2
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53910105"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55937300"
 ---
-# <a name="how-to-add-an-application-configuration-file-to-a-c-project"></a>Procedimiento para agregar un archivo de configuración de la aplicación a un proyecto de C#
+# <a name="how-to-add-an-application-configuration-file-to-a-c-project"></a>Filtrar para agregar un archivo de configuración de la aplicación a un proyecto de C#
 
 Al agregar un archivo de configuración de la aplicación (archivo *app.config*) a un proyecto de C#, puede personalizar el modo en que Common Language Runtime busca y carga archivos de ensamblado. Para obtener más información sobre los archivos de configuración de la aplicación, consulte [Cómo el motor en tiempo de ejecución ubica ensamblados (.NET Framework)](/dotnet/framework/deployment/how-the-runtime-locates-assemblies).
 

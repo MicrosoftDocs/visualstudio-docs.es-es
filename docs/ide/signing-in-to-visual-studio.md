@@ -3,20 +3,19 @@ title: Iniciar sesión en Visual Studio
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 12/10/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: b9531c25-e4cf-43ae-b331-a9f31a8cd171
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dccb2fb9c4fce456055b136dace7e95d02647a94
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c7568f27d9be2ff38c2d5c87cf8a950e06846db5
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53840796"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325112"
 ---
 # <a name="sign-in-to-visual-studio"></a>Iniciar sesión en Visual Studio
 
@@ -31,7 +30,7 @@ Cuando inicia sesión, obtiene una experiencia de Visual Studio más enriquecida
 
 Esta es una lista completa de lo que puede esperar y lo que puede hacer después de iniciar sesión:
 
-- **Acceso al programa Visual Studio Dev Essentials**: este programa incluye ofertas de software gratis, aprendizaje, soporte técnico y mucho más. Consulte [Visual Studio Dev Essentials](http://aka.ms/vsdevhelp) para obtener más información
+- **Acceso al programa Visual Studio Dev Essentials**: este programa incluye ofertas de software gratis, aprendizaje, soporte técnico y mucho más. Consulte [Visual Studio Dev Essentials](https://aka.ms/vsdevhelp) para obtener más información
 
 - **Sincronización de la configuración de Visual Studio**: la configuración que ha personalizado, como los enlaces de teclado, el diseño de ventana y el tema de color, se aplica inmediatamente al iniciar sesión en Visual Studio en cualquier dispositivo. Vea [Configuración sincronizada en Visual Studio](../ide/synchronized-settings-in-visual-studio.md).
 
@@ -45,7 +44,7 @@ Esta es una lista completa de lo que puede esperar y lo que puede hacer después
 
 ## <a name="how-to-sign-in-to-visual-studio"></a>Cómo iniciar sesión en Visual Studio
 
-La primera vez que inicia Visual Studio, se le pide que inicie sesión y que proporcione información de registro básica. Debe elegir una cuenta Microsoft o una cuenta profesional o educativa que mejor le represente. Si no dispone de ninguna, puede crear una cuenta de Microsoft de forma gratuita. Vea [¿Cómo suscribirse para obtener una cuenta Microsoft?](http://windows.microsoft.com/windows-live/sign-up-create-account-how)
+La primera vez que abre Visual Studio, se le pide que inicie sesión y que proporcione información de registro básica. Debe elegir una cuenta Microsoft o una cuenta profesional o educativa que mejor le represente. Si no dispone de ninguna, puede crear una cuenta de Microsoft de forma gratuita. Vea [¿Cómo suscribirse para obtener una cuenta Microsoft?](http://windows.microsoft.com/windows-live/sign-up-create-account-how)
 
 A continuación, elija la configuración de UI y el tema de color que desea usar en Visual Studio. Visual Studio recordará la configuración y la sincronizará en todos los entornos de Visual Studio en los que ha iniciado sesión. Para obtener una lista de las configuraciones sincronizadas, vea [Configuración sincronizada](../ide/synchronized-settings-in-visual-studio.md). Puede cambiar la configuración más adelante si abre el menú **Herramientas** > **Opciones** en Visual Studio.
 

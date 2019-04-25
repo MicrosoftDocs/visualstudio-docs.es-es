@@ -1,7 +1,7 @@
 ---
 title: IDebugSymbolProvider::GetAddressesFromPosition | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugSymbolProvider::GetAddressesFromPosition
 helpviewer_keywords:
@@ -9,61 +9,65 @@ helpviewer_keywords:
 ms.assetid: 1b0f02cb-8ace-4614-88f3-0e10239012b3
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 44da9f9b7585e7523a244f84e8407aa4148bef2f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8e615abb8bf4a535f88dd1df483540ac84e5ca5e
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898926"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56705221"
 ---
 # <a name="idebugsymbolprovidergetaddressesfromposition"></a>IDebugSymbolProvider::GetAddressesFromPosition
-Este método asigna una posición de documento en una matriz de direcciones de depuración.  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```cpp  
-HRESULT GetAddressesFromPosition(   
-   IDebugDocumentPosition2* pDocPos,  
-   BOOL                     fStatmentOnly,  
-   IEnumDebugAddresses**    ppEnumBegAddresses,  
-   IEnumDebugAddresses**    ppEnumEndAddresses  
-);  
-```  
-  
-```csharp  
-int GetAddressesFromPosition(   
-   IDebugDocumentPosition2  pDocPos,  
-   bool                     fStatmentOnly,  
-   out IEnumDebugAddresses  ppEnumBegAddresses,  
-   out IEnumDebugAddresses  ppEnumEndAddresses  
-);  
-```  
-  
-#### <a name="parameters"></a>Parámetros  
- `pDocPos`  
- [in] La posición del documento.  
-  
- `fStatmentOnly`  
- [in] Si es TRUE, limita las direcciones de depuración para una sola instrucción.  
-  
- `ppEnumBegAddresses`  
- [out] Devuelve un enumerador para las direcciones iniciales de depuración asociados con esta instrucción o línea.  
-  
- `ppEnumEndAddresses`  
- [out] Devuelve un [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md) enumerador para las direcciones de depuración final asociado a esta instrucción o línea.  
-  
-## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
-  
-## <a name="remarks"></a>Comentarios  
- Una posición de documento normalmente indica un intervalo de líneas de código fuente. Este método proporciona la fecha inicial y final de las direcciones de depuración asociadas con estas líneas. Algunos lenguajes permiten que las instrucciones que abarcan varias líneas, o líneas que contiene más de una instrucción. Este método proporciona una marca para limitar las direcciones de depuración para una sola instrucción.  
-  
- Es posible que una sola instrucción tener varias direcciones de depuración, como en el caso de plantillas.  
-  
-## <a name="see-also"></a>Vea también  
- [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)   
- [GetAddressesFromContext](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromcontext.md)   
- [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md)
+Este método asigna una posición de documento en una matriz de direcciones de depuración.
+
+## <a name="syntax"></a>Sintaxis
+
+```cpp
+HRESULT GetAddressesFromPosition( 
+   IDebugDocumentPosition2* pDocPos,
+   BOOL                     fStatmentOnly,
+   IEnumDebugAddresses**    ppEnumBegAddresses,
+   IEnumDebugAddresses**    ppEnumEndAddresses
+);
+```
+
+```csharp
+int GetAddressesFromPosition( 
+   IDebugDocumentPosition2  pDocPos,
+   bool                     fStatmentOnly,
+   out IEnumDebugAddresses  ppEnumBegAddresses,
+   out IEnumDebugAddresses  ppEnumEndAddresses
+);
+```
+
+#### <a name="parameters"></a>Parámetros
+ `pDocPos`
+
+ [in] La posición del documento.
+
+ `fStatmentOnly`
+
+ [in] Si es TRUE, limita las direcciones de depuración para una sola instrucción.
+
+ `ppEnumBegAddresses`
+
+ [out] Devuelve un enumerador para las direcciones iniciales de depuración asociados con esta instrucción o línea.
+
+ `ppEnumEndAddresses`
+
+ [out] Devuelve un [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md) enumerador para las direcciones de depuración final asociado a esta instrucción o línea.
+
+## <a name="return-value"></a>Valor devuelto
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+
+## <a name="remarks"></a>Comentarios
+ Una posición de documento normalmente indica un intervalo de líneas de código fuente. Este método proporciona la fecha inicial y final de las direcciones de depuración asociadas con estas líneas. Algunos lenguajes permiten que las instrucciones que abarcan varias líneas, o líneas que contiene más de una instrucción. Este método proporciona una marca para limitar las direcciones de depuración para una sola instrucción.
+
+ Es posible que una sola instrucción tener varias direcciones de depuración, como en el caso de plantillas.
+
+## <a name="see-also"></a>Vea también
+- [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)
+- [GetAddressesFromContext](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromcontext.md)
+- [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md)

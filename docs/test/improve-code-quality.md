@@ -1,22 +1,21 @@
 ---
 title: Herramientas de prueba
 ms.date: 03/16/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - testing tools [Visual Studio]
 - unit tests [Visual Studio]
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 40649e9a2ae4c5f74627e10409880924efc06a14
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7bcb75da8a21090450c18080240f76ae17c10281
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53883005"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57221585"
 ---
 # <a name="testing-tools-in-visual-studio"></a>Herramientas de prueba de Visual Studio
 
@@ -37,7 +36,7 @@ Las herramientas de prueba de Visual Studio pueden ayudarle a usted y a su equip
 - La [prueba de carga](../test/quickstart-create-a-load-test-project.md) simula la carga en una aplicación de servidor mediante la ejecución de pruebas unitarias y pruebas de rendimiento web.
 
 > [!NOTE]
-> Las pruebas unitarias están disponibles en todas las ediciones de Visual Studio. Otras herramientas de pruebas, como Live Unit Testing, IntelliTest y pruebas automatizadas de IU, solo están disponibles en la edición Visual Studio Enterprise. Para más información sobre las ediciones, vea [Comparar los IDE de Visual Studio 2017](https://visualstudio.microsoft.com/vs/compare/).
+> Las pruebas unitarias están disponibles en todas las ediciones de Visual Studio. Otras herramientas de pruebas, como Live Unit Testing, IntelliTest y pruebas automatizadas de IU, solo están disponibles en la edición Visual Studio Enterprise. Para obtener más información sobre las ediciones, vea [Comparar los IDE de Visual Studio](https://visualstudio.microsoft.com/vs/compare/).
 
 ## <a name="related-scenarios"></a>Escenarios relacionados
 

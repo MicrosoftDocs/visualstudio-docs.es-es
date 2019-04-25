@@ -8,16 +8,15 @@ helpviewer_keywords:
 ms.assetid: 3b864c75-2699-48c1-a2b4-9651f108c267
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 32cdb45a57b218645e6f9eaa84c5e198aeacc620
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: dfd565deb8336346e127e084b720f391440dc6e4
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53987646"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55928808"
 ---
-# <a name="how-to-manually-create-a-load-test-performance-report-using-microsoft-word"></a>Procedimiento para crear manualmente un informe de rendimiento de pruebas de carga con Microsoft Word
+# <a name="how-to-manually-create-a-load-test-performance-report-using-microsoft-word"></a>Filtrar para crear manualmente un informe de rendimiento de pruebas de carga con Microsoft Word
 
 Puede crear manualmente informes de prueba de carga en Microsoft Word copiando y pegando los datos de la vista de resumen de resultados de pruebas de carga y de la vista de gráficos. Los datos que se presentan en la vista de resumen y de gráficos se aplican en formato HTML cuando se copian.
 

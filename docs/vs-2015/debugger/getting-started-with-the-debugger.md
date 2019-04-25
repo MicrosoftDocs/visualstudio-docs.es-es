@@ -1,13 +1,8 @@
 ---
 title: Getting Started with the Debugger | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 dev_langs:
 - FSharp
@@ -18,21 +13,21 @@ ms.assetid: c763d706-3213-494f-b4d2-990b6e1ec456
 caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 755c4a0b66c91aa37f96d3d6f06972878ee856b8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e093abd5e836bcb7ee236979c00d574a07ecfd3d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51771609"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109529"
 ---
 # <a name="getting-started-with-the-debugger"></a>Introducción al depurador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 El depurador de Visual Studio es fácil de usar en cualquier lenguaje. Aquí le mostraremos cómo depurar un programa sencillo de C#, aunque puede aplicar los mismos pasos para programar en otros lenguajes, como C++ y JavaScript.  
   
-##  <a name="BKMK_Start_debugging_a_VS_project"></a> Depurar un proyecto básicas en C#  
- Comencemos con una sencilla aplicación de consola de C# (**archivo / nuevo / proyecto**, a continuación, seleccione **Visual C#** y, a continuación, seleccione **aplicación de consola**). Si nunca ha trabajado con Visual Studio antes, vea [Tutorial: crear una aplicación sencilla](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md). El **Main** método simplemente suma 1 a una variable entera 10 veces e imprime el resultado en la consola:  
+## <a name="BKMK_Start_debugging_a_VS_project"></a> Depurar un proyecto básicas en C#  
+ Comencemos con una sencilla aplicación de consola de C# (**archivo / nuevo / proyecto**, a continuación, seleccione **Visual C#** y, a continuación, seleccione **aplicación de consola**). Si nunca ha trabajado con Visual Studio antes, vea [Tutorial: Crear una aplicación sencilla](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md). El **Main** método simplemente suma 1 a una variable entera 10 veces e imprime el resultado en la consola:  
   
 ```csharp  
 static void Main(string[] args)  
@@ -56,7 +51,7 @@ static void Main(string[] args)
   
  Para obtener más información acerca de los puntos de interrupción, consulte [usar puntos de interrupción](../debugger/using-breakpoints.md).  
   
-##  <a name="BKMK_Inspect_Variables"></a> Inspeccionar Variables  
+## <a name="BKMK_Inspect_Variables"></a> Inspeccionar Variables  
  La depuración a menudo implica buscar las variables que no contienen los valores que espera en un momento determinado. Le mostraremos algunas de las formas que puede inspeccionar las variables.  
   
  Vuelva a comenzar la depuración. La ejecución se detiene antes de que se ejecute el código de `Console.WriteLine`. Puede hacer que se ejecute hacia adelante (haga clic en **depurar / paso Over** o **F10**). En este caso podría haber elegido **paso a paso** (**F11**) y obtener el mismo resultado; explicaremos la diferencia más adelante. La línea con la última llave de apertura del método debería aparecer ahora amarilla. Mire la ventana de la consola. Debería ver **10**.  
@@ -98,8 +93,3 @@ private static void Method1()
  Detener la depuración y vuelva a iniciar y, cuando la ejecución se interrumpe en el punto de interrupción, haga clic en **depurar / paso Over** (o **saltar** en la barra de herramientas o **F10**). La ejecución se interrumpe nuevamente en `Console.WriteLine("end");`.  
   
  Si desea obtener más información sobre la navegación por código con el depurador, vea [desplazarse por el código con el depurador](../debugger/navigating-through-code-with-the-debugger.md).
-
-
-
-
-

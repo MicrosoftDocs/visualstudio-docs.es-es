@@ -1,22 +1,21 @@
 ---
 title: Uso de código auxiliar para aislar partes de la aplicación para pruebas unitarias
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: c832853470fb4aa3adad9719ddbbe35123f04772
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 08631af916947021f37bfb3c73b821ba37e3b462
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53902768"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55932292"
 ---
 # <a name="use-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>Usar código auxiliar para aislar partes de la aplicación entre sí para las pruebas unitarias
 

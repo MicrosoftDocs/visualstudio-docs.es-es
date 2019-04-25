@@ -1,26 +1,21 @@
 ---
-title: 'Cómo: Configurar pruebas unitarias cuyo destino sea una versión anterior de .NET Framework | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Configurar pruebas unitarias cuyo destino sea una versión anterior de .NET Framework | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-test
+ms.topic: conceptual
 ms.assetid: adb6c011-5abd-41d2-8ead-08cd7579bf37
 caps.latest.revision: 14
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 978f4e3edeb83d5980d793d74cf209e8e8f7205e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: e31f0170d10e3b8088ec9860a6bb9a3ad5306b0f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49892797"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042669"
 ---
-# <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Cómo: Configurar pruebas unitarias cuyo destino sea una versión anterior de .NET Framework
+# <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Procedimiento Configurar pruebas unitarias cuyo destino sea una versión anterior de .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 De forma predeterminada, al crear un proyecto de prueba en Microsoft Visual Studio, la versión más reciente de .NET Framework se establece como destino. Además, si actualiza los proyectos de prueba desde las versiones anteriores de Visual Studio, se actualizan para tener la versión más reciente de .NET Framework. Al editar las propiedades del proyecto, puede volver a destinar explícitamente el proyecto a las versiones anteriores de .NET Framework.  
@@ -55,64 +50,64 @@ De forma predeterminada, al crear un proyecto de prueba en Microsoft Visual Stud
   
 ### <a name="re-targeting-to-a-specific-version-of-the-net-framework-for-visual-basic-unit-test-projects"></a>Cambiar el destino a una versión concreta de .NET Framework para proyectos de prueba unitaria de Visual Basic  
   
-1.  Cree un nuevo proyecto de prueba unitaria de Visual Basic. En el menú **Archivo**, elija **Nuevo** y después **Proyecto**.  
+1. Cree un nuevo proyecto de prueba unitaria de Visual Basic. En el menú **Archivo**, elija **Nuevo** y después **Proyecto**.  
   
      Aparecerá el cuadro de diálogo **Nuevo proyecto**.  
   
-2.  En **Plantillas instaladas**, expanda **Visual Basic**. Seleccione **Prueba** y después la plantilla **Proyecto de prueba**.  
+2. En **Plantillas instaladas**, expanda **Visual Basic**. Seleccione **Prueba** y después la plantilla **Proyecto de prueba**.  
   
-3.  En el cuadro de texto **Nombre**, escriba un nombre para el proyecto de Visual Basic y después elija **Aceptar**.  
+3. En el cuadro de texto **Nombre**, escriba un nombre para el proyecto de Visual Basic y después elija **Aceptar**.  
   
-4.  En el Explorador de soluciones, seleccione **Propiedades** en el menú contextual del nuevo proyecto de Visual Basic.  
+4. En el Explorador de soluciones, seleccione **Propiedades** en el menú contextual del nuevo proyecto de Visual Basic.  
   
      Se muestran las propiedades de su proyecto de prueba de Visual Basic.  
   
-5.  En la pestaña **Compilar** elija **Opciones de compilación avanzadas** tal como se muestra en la siguiente ilustración.  
+5. En la pestaña **Compilar** elija **Opciones de compilación avanzadas** tal como se muestra en la siguiente ilustración.  
   
      ![Opciones de compilación avanzadas](../test/media/howtoconfigureunittest35frameworka.png "HowToConfigureUnitTest35FrameworkA")  
   
-6.  Utilice la lista desplegable **Marco de destino (todas las configuraciones)** para cambiar el marco de destino a **.NET Framework 3.5** o una versión posterior, como se muestra en la llamada B en la siguiente ilustración. No debe especificar una versión de cliente.  
+6. Utilice la lista desplegable **Marco de destino (todas las configuraciones)** para cambiar el marco de destino a **.NET Framework 3.5** o una versión posterior, como se muestra en la llamada B en la siguiente ilustración. No debe especificar una versión de cliente.  
   
      ![Lista desplegable Marco de destino](../test/media/howtoconfigureunitest35frameworkstepb.png "HowToConfigureUniTest35FrameworkStepB")  
   
 ### <a name="re-targeting-to-a-specific-version-of-the-net-framework-for-visual-c-unit-test-projects"></a>Cambiar el destino a una versión concreta de .NET Framework para proyectos de prueba unitaria de Visual C#  
   
-1.  Cree un nuevo proyecto de prueba unitaria de Visual C#. En el menú **Archivo**, elija **Nuevo** y después **Proyecto**.  
+1. Cree un nuevo proyecto de prueba unitaria de Visual C#. En el menú **Archivo**, elija **Nuevo** y después **Proyecto**.  
   
      Aparecerá el cuadro de diálogo **Nuevo proyecto**.  
   
-2.  En **Plantillas instaladas**, expanda **Visual C#**. Seleccione **Prueba** y después la plantilla **Proyecto de prueba**.  
+2. En **Plantillas instaladas**, expanda **Visual C#**. Seleccione **Prueba** y después la plantilla **Proyecto de prueba**.  
   
-3.  En el cuadro de texto **Nombre**, escriba un nombre para el proyecto de Visual C# y después elija **Aceptar**.  
+3. En el cuadro de texto **Nombre**, escriba un nombre para el proyecto de Visual C# y después elija **Aceptar**.  
   
-4.  En el Explorador de soluciones, seleccione **Propiedades** en el menú contextual del nuevo proyecto de Visual C#.  
+4. En el Explorador de soluciones, seleccione **Propiedades** en el menú contextual del nuevo proyecto de Visual C#.  
   
      Se muestran las propiedades de su proyecto de prueba de Visual C#.  
   
-5.  En la pestaña **Aplicación** elija **Marco de destino** y después **.NET Framework 3.5** o una versión posterior de la lista desplegable para cambiar el marco de destino como se muestra en la siguiente ilustración. No debe especificar una versión de cliente.  
+5. En la pestaña **Aplicación** elija **Marco de destino** y después **.NET Framework 3.5** o una versión posterior de la lista desplegable para cambiar el marco de destino como se muestra en la siguiente ilustración. No debe especificar una versión de cliente.  
   
      ![Lista desplegable Marco de destino](../test/media/howtoconfigureunittest35frameworkcsharp.png "HowToConfigureUnitTest35FrameworkCSharp")  
   
 ### <a name="re-targeting-to-a-specific-version-of-the-net-framework-for-ccli-unit-test-projects"></a>Cambiar el destino a una versión concreta de .NET Framework para proyectos de prueba unitaria de C++/CLI  
   
-1.  Cree un nuevo proyecto de prueba unitaria de Visual C++. En el menú **Archivo**, seleccione **Nuevo** y después haga clic en **Proyecto**.  
+1. Cree un nuevo proyecto de prueba unitaria de Visual C++. En el menú **Archivo**, seleccione **Nuevo** y después haga clic en **Proyecto**.  
   
      Aparecerá el cuadro de diálogo **Nuevo proyecto**.  
   
     > [!WARNING]
     >  Para compilar pruebas unitarias de C + + /CLI para una versión anterior de .NET Framework para Visual C++, debe utilizar la versión correspondiente de Visual Studio. Por ejemplo, para tener como destino .NET Framework 3.5, debe instalar [!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)] y [!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)] Service Pack 1.  
   
-2.  En **Plantillas instaladas**, expanda **Visual C++**. Seleccione **Prueba** y después la plantilla **Proyecto de prueba**.  
+2. En **Plantillas instaladas**, expanda **Visual C++**. Seleccione **Prueba** y después la plantilla **Proyecto de prueba**.  
   
-3.  En el cuadro de texto **Nombre**, escriba un nombre para el proyecto de Visual C++ y después haga clic en **Aceptar**.  
+3. En el cuadro de texto **Nombre**, escriba un nombre para el proyecto de Visual C++ y después haga clic en **Aceptar**.  
   
-4.  En el Explorador de soluciones, elija **Descargar el proyecto** del nuevo proyecto de prueba de Visual C++.  
+4. En el Explorador de soluciones, elija **Descargar el proyecto** del nuevo proyecto de prueba de Visual C++.  
   
-5.  En el Explorador de soluciones, elija el proyecto de prueba de Visual C++ descargado y después **Editar \<nombre de proyecto>.vcxproj**.  
+5. En el Explorador de soluciones, elija el proyecto de prueba de Visual C++ descargado y después **Editar \<nombre de proyecto>.vcxproj**.  
   
      El archivo .vcxproj se abre en el editor.  
   
-6.  Establezca el `TargetFrameworkVersion` a la versión 3.5 o una versión posterior en el `PropertyGroup` con la etiqueta `"Globals"`. No debe especificar una versión de cliente:  
+6. Establezca el `TargetFrameworkVersion` a la versión 3.5 o una versión posterior en el `PropertyGroup` con la etiqueta `"Globals"`. No debe especificar una versión de cliente:  
   
     ```  
     <PropertyGroup Label="Globals">  
@@ -126,15 +121,12 @@ De forma predeterminada, al crear un proyecto de prueba en Microsoft Visual Stud
   
     ```  
   
-7.  Guarde y cierre el archivo .vcxproj.  
+7. Guarde y cierre el archivo .vcxproj.  
   
-8.  En el Explorador de soluciones, seleccione **Recargar proyecto** en el menú contextual del nuevo proyecto de Visual C++.  
+8. En el Explorador de soluciones, seleccione **Recargar proyecto** en el menú contextual del nuevo proyecto de Visual C++.  
   
 ## <a name="see-also"></a>Vea también  
- [Crear y ejecutar pruebas unitarias para código existente](http://msdn.microsoft.com/en-us/e8370b93-085b-41c9-8dec-655bd886f173)   
+ [Crear y ejecutar pruebas unitarias para código existente](http://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)   
  [Crear soluciones de SharePoint](http://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631)   
  [Compilar y depurar soluciones de SharePoint](http://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae)   
  [Configuración de compilador avanzada (Cuadro de diálogo, Visual Basic)](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)
-
-
-

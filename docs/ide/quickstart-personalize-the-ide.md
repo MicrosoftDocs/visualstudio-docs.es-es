@@ -1,37 +1,46 @@
 ---
 title: Definición del tema de color y las fuentes
 ms.date: 11/20/2017
-ms.prod: visual-studio-dev15
 ms.topic: quickstart
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b0f81c04c06d8e016ef62a41d2e3083a1daafb3a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 96234797efde518741182d93420914168e59ab2a
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53919724"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58646704"
 ---
-# <a name="quickstart-personalize-the-visual-studio-ide-and-editor"></a>Inicio rápido: Personalización del IDE y el editor de Visual Studio
+# <a name="personalize-the-visual-studio-ide-and-editor"></a>Personalización del IDE y el editor de Visual Studio
 
-En esta guía de inicio rápido de entre cinco y diez minutos se personaliza el tema de color de Visual Studio mediante la selección del tema oscuro. También se personalizarán los colores de dos tipos diferentes de texto en el editor de texto.
+En este tutorial de entre cinco y diez minutos se personaliza el tema de color de Visual Studio mediante la selección del tema oscuro. También se personalizarán los colores de dos tipos diferentes de texto en el editor de texto.
 
-Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) para instalarlo de forma gratuita.
+Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) para instalarlo de forma gratuita.
 
 ## <a name="set-the-color-theme"></a>Establecimiento del tema de color
 
-El tema de color predeterminado para la interfaz de usuario de Visual Studio 2017 se denomina **Azul**. Se va a cambiar a **Oscuro**.
+El tema de color predeterminado de la interfaz de usuario de Visual Studio se denomina **Azul**. Se va a cambiar a **Oscuro**.
 
 1. En la barra de menús, que es la fila de menús, como **Archivo** y **Editar**, elija **Herramientas** > **Opciones**.
 
 1. En la página de opciones **Entorno** > **General**, cambie la selección de **Tema de color** a **Oscuro** y, después, elija **Aceptar**.
 
-   Se cambia el tema de color de todo el entorno de desarrollo (IDE) de Visual Studio a **Oscuro**.
+   El tema de color de todo el entorno de desarrollo (IDE) de Visual Studio se cambia a **Oscuro**.
 
-   ![VS en tema oscuro](media/quickstart-personalize-dark-theme.png)
+   ::: moniker range="vs-2017"
+
+   ![Visual Studio 2017 con tema oscuro](media/quickstart-personalize-dark-theme.png)
+
+   ::: moniker-end
+
+   ::: moniker range="vs-2019"
+
+   ![Visual Studio 2019 con tema oscuro](media/vs-2019/dark-theme.png)
+
+   ::: moniker-end
 
 > [!TIP]
 > Puede instalar temas predefinidos adicionales mediante la instalación de **Visual Studio Color Theme Editor** desde [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor). Después de instalar esta herramienta, aparecerán temas de color adicionales en la lista desplegable **Tema de color**.

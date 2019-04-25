@@ -1,30 +1,24 @@
 ---
 title: Configuración de destinos y tareas | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 ms.assetid: 92814100-392a-471d-96fd-e26f637d6cc2
 caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ce147a9a393b30111f3f76f605e327b70206ad7f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e5771158e23acb399b3446e784e27825bb15d705
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49264065"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658998"
 ---
 # <a name="how-to-configure-targets-and-tasks"></a>Cómo: Configurar destinos y tareas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Las tareas de MSBuild seleccionadas se pueden establecer para ejecutarlas en el entorno de destino, independientemente del entorno del equipo de desarrollo. Por ejemplo, cuando se utiliza un equipo de 64 bits para compilar una aplicación destinada a una arquitectura de 32 bits, las tareas seleccionadas se ejecutan en un proceso de 32 bits.  
   
 > [!NOTE]
@@ -118,6 +112,3 @@ Las tareas de MSBuild seleccionadas se pueden establecer para ejecutarlas en el 
   
 ## <a name="see-also"></a>Vea también  
  [Configurar destinos y tareas](../msbuild/configuring-targets-and-tasks.md)
-
-
-

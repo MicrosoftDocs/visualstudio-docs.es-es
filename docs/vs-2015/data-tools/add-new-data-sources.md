@@ -1,12 +1,9 @@
 ---
 title: Agregar nuevos orígenes de datos | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 f1_keywords:
 - vs.datasource.datasourcefieldspicker
 dev_langs:
@@ -21,29 +18,28 @@ ms.assetid: ed28c625-bb89-4037-bfde-cfa435d182a2
 caps.latest.revision: 60
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 50a18de0fa3006e1cf95e48d50f24411347fd135
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: db550b2a99f12190cac0bde74859191c2943b2d5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279154"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102763"
 ---
 # <a name="add-new-data-sources"></a>Agregar nuevos orígenes de datos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 En el contexto de las herramientas de datos de .NET en Visual Studio, el término *origen de datos* hace referencia a objetos de .NET que se conectan a un almacén de datos y exponen los datos a una aplicación. NET. Los diseñadores de Visual Studio pueden consumir la salida del origen de datos para generar el código reutilizable que enlaza los datos a los formularios al arrastrar y colocar los objetos de base de datos desde el **orígenes de datos** ventana. Este tipo de origen de datos puede ser:  
   
--   Una clase en un modelo de Entity Framework que está asociado a algún tipo de base de datos.  
+- Una clase en un modelo de Entity Framework que está asociado a algún tipo de base de datos.  
   
--   Un conjunto de datos que está asociado a algún tipo de base de datos.  
+- Un conjunto de datos que está asociado a algún tipo de base de datos.  
   
--   Una clase que representa un servicio de red como un servicio de datos de Windows Communication Foundation (WCF) o un servicio REST.  
+- Una clase que representa un servicio de red como un servicio de datos de Windows Communication Foundation (WCF) o un servicio REST.  
   
--   Una clase que representa un servicio de SharePoint.  
+- Una clase que representa un servicio de SharePoint.  
   
--   Una clase o una colección de la solución.  
+- Una clase o una colección de la solución.  
   
 > [!NOTE]
 >  Si no usa características de enlace de datos, conjuntos de datos, Entity Framework, LINQ to SQL, WCF o SharePoint, el concepto de "data source" no es aplicable. Simplemente conéctese directamente a la base de datos mediante el uso de los objetos de SQLCommand y comunicarse directamente con la base de datos.  
@@ -81,14 +77,14 @@ En el contexto de las herramientas de datos de .NET en Visual Studio, el términ
   
  Puede crear un origen de datos de los siguientes tipos de servicios:  
   
--   Data Services de WCF. Para obtener más información, consulte [Introducción](http://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb).  
+- Data Services de WCF. Para obtener más información, consulte [Introducción](http://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb).  
   
--   Data services de WCF. Para obtener más información, consulte [servicios Windows Communication Foundation y WCF Data Services en Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md).  
+- Data services de WCF. Para obtener más información, consulte [servicios Windows Communication Foundation y WCF Data Services en Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md).  
   
--   Servicios Web.  
+- Servicios Web.  
   
     > [!NOTE]
-    >  Los elementos que aparecen en la **orígenes de datos** ventana dependen de los datos que devuelve el servicio. Algunos servicios podrían no proporcionar suficiente información para el **Asistente para configuración de origen de datos** para crear objetos enlazables. Por ejemplo, si el servicio devuelve un conjunto de datos sin tipo, no hay elementos aparecerán en el **orígenes de datos** ventana cuando se complete el asistente. Esto es porque los datasets no escritos no proporcionan un esquema y, por lo tanto, el asistente no tiene información suficiente para crear el origen de datos.  
+    >  Los elementos que aparecen en la **orígenes de datos** ventana dependen de los datos que devuelve el servicio. Algunos servicios podrían no proporcionar suficiente información para que el **Asistente para configuración de orígenes de datos** pueda crear objetos enlazables. Por ejemplo, si el servicio devuelve un conjunto de datos sin tipo, no hay elementos aparecerán en el **orígenes de datos** ventana cuando se complete el asistente. Esto es porque los datasets no escritos no proporcionan un esquema y, por lo tanto, el asistente no tiene información suficiente para crear el origen de datos.  
   
 ## <a name="data-source-for-an-object"></a>Origen de datos para un objeto  
  Puede crear un origen de datos de cualquier objeto que expone una o más propiedades públicas ejecutando el **Asistente para configuración de origen de datos** y, a continuación, seleccionando la **objeto** tipo de origen de datos. Se muestran todas las propiedades públicas de un objeto en el **orígenes de datos** ventana.   Si usa Entity Framework y ha generado un modelo, esto es donde encontrará las clases de entidad que serán los orígenes de datos para la aplicación.  
@@ -108,4 +104,3 @@ En el contexto de las herramientas de datos de .NET en Visual Studio, el términ
   
 ## <a name="see-also"></a>Vea también  
  [Visual Studio Data Tools para .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)
-

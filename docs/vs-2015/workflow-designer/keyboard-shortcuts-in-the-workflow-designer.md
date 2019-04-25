@@ -1,11 +1,8 @@
 ---
 title: Métodos abreviados en el Diseñador de flujo de trabajo de teclado | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - WFDKeyboardShortcuts.UI
@@ -13,13 +10,13 @@ ms.assetid: 9be75438-a4a3-4781-94e5-45b7ec082358
 caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 409a39dc889970ee7ad0eff3354fa43de15b7dbe
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: b1a03463d292fa1d4d980c62daa74b291d6a8cb1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49895345"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117309"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>Métodos abreviados de teclado en el Diseñador de flujo de trabajo
 A través del teclado, se puede obtener acceso a la totalidad de la funcionalidad básica de [!INCLUDE[wfd1](../includes/wfd1-md.md)].  
@@ -57,13 +54,13 @@ A través del teclado, se puede obtener acceso a la totalidad de la funcionalida
   
 - Para conectar actividades:  
   
-  1.  Seleccione la actividad desplazándose hasta ella con la tecla de tabulación.  
+  1. Seleccione la actividad desplazándose hasta ella con la tecla de tabulación.  
   
-  2.  Presione CTRL+E, tantas veces como sea necesario para desplazar el foco de teclado a la actividad de destino.  
+  2. Presione CTRL+E, tantas veces como sea necesario para desplazar el foco de teclado a la actividad de destino.  
   
-  3.  Presione CTRL+E, S para agregar la actividad de destino a la selección.  
+  3. Presione CTRL+E, S para agregar la actividad de destino a la selección.  
   
-  4.  Presione CTRL+E, F para agregar el conector desde el origen al destino.  
+  4. Presione CTRL+E, F para agregar el conector desde el origen al destino.  
   
   Notas sobre cómo conectar las actividades mediante el teclado:  
   
@@ -76,18 +73,18 @@ A través del teclado, se puede obtener acceso a la totalidad de la funcionalida
 ### <a name="expression-editing"></a>Edición de Expresiones  
  De forma predeterminada, los métodos abreviados de teclado predeterminados para la modificación de texto en [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] se aplican en el editor de expresiones de [!INCLUDE[wfd2](../includes/wfd2-md.md)], con las siguientes limitaciones:  
   
--   La reasignación de métodos abreviados de teclado para los siguientes comandos no tiene efecto alguno. Cuando edite una expresión, solo puede utilizar los métodos abreviados de teclado predeterminados para tener acceso a estos comandos.  
+- La reasignación de métodos abreviados de teclado para los siguientes comandos no tiene efecto alguno. Cuando edite una expresión, solo puede utilizar los métodos abreviados de teclado predeterminados para tener acceso a estos comandos.  
   
-    1.  Cut  
+    1. Cut  
   
-    2.  Copiar  
+    2. Copiar  
   
-    3.  Paste  
+    3. Paste  
   
-    4.  Seleccionar todo  
+    4. Seleccionar todo  
   
-    5.  Undo  
+    5. Undo  
   
-    6.  Redo  
+    6. Redo  
   
--   Para reasignar los métodos abreviados de teclado para los comandos de edición de expresiones dentro de [!INCLUDE[wfd2](../includes/wfd2-md.md)] en [!INCLUDE[vs2010](../includes/vs2010-md.md)], modifique los accesos directos en el ámbito de [!INCLUDE[wfd2](../includes/wfd2-md.md)]. Los cambios realizados en el ámbito del Editor de texto no se aplican automáticamente a [!INCLUDE[wfd2](../includes/wfd2-md.md)]. Si desea reasignar los accesos directos en ambos lugares, debe aplicar los cambios dos veces (una vez para cada ámbito).
+- Para reasignar los métodos abreviados de teclado para los comandos de edición de expresiones dentro de [!INCLUDE[wfd2](../includes/wfd2-md.md)] en [!INCLUDE[vs2010](../includes/vs2010-md.md)], modifique los accesos directos en el ámbito de [!INCLUDE[wfd2](../includes/wfd2-md.md)]. Los cambios realizados en el ámbito del Editor de texto no se aplican automáticamente a [!INCLUDE[wfd2](../includes/wfd2-md.md)]. Si desea reasignar los accesos directos en ambos lugares, debe aplicar los cambios dos veces (una vez para cada ámbito).

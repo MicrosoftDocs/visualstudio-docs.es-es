@@ -11,16 +11,15 @@ helpviewer_keywords:
 ms.assetid: 50d5c580-fbf7-408f-be70-e63ac4f4d0eb
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 733d1d3f1c105116a97d198a9bb4fa1bf1c1c2f1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: d693113db28acc456625f7c22b671006ed17038b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53885215"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096990"
 ---
 # <a name="edit-data-in-datasets"></a>Editar datos en conjuntos de datos
 Editar tablas de datos al igual que editar los datos en una tabla en cualquier base de datos. El proceso puede incluir insertar, actualizar y eliminar registros en la tabla. En un formulario enlazado a datos, puede especificar cuáles son los campos editables del usuario. En esos casos, la infraestructura de enlace de datos controla todo el seguimiento de cambios para que los cambios se puedan enviar a la base de datos más adelante. Si realiza ediciones mediante programación a los datos y tiene pensado enviar los cambios a la base de datos, debe usar los objetos y métodos que realizan el seguimiento de cambios para usted.
@@ -54,7 +53,7 @@ Si la aplicación no necesita enviar actualizaciones a un origen de datos, es po
 
 #### <a name="to-delete-records-from-a-data-table"></a>Para eliminar registros de una tabla de datos
 
--   Llame a la <xref:System.Data.DataRow.Delete%2A> método de un <xref:System.Data.DataRow>.
+- Llame a la <xref:System.Data.DataRow.Delete%2A> método de un <xref:System.Data.DataRow>.
 
      Este método no quita físicamente el registro. En su lugar, marca el registro para su eliminación.
 
@@ -71,15 +70,15 @@ Cuando se realizan cambios en los registros de un conjunto de datos, se almacena
 
 Los cambios son dos formas sometidas a seguimiento en cada fila de datos:
 
--   Cada fila de datos contiene información relacionada con su <xref:System.Data.DataRow.RowState%2A> (por ejemplo, <xref:System.Data.DataRowState.Added>, <xref:System.Data.DataRowState.Modified>, <xref:System.Data.DataRowState.Deleted>, o <xref:System.Data.DataRowState.Unchanged>).
+- Cada fila de datos contiene información relacionada con su <xref:System.Data.DataRow.RowState%2A> (por ejemplo, <xref:System.Data.DataRowState.Added>, <xref:System.Data.DataRowState.Modified>, <xref:System.Data.DataRowState.Deleted>, o <xref:System.Data.DataRowState.Unchanged>).
 
--   Cada fila de datos modificada contiene varias versiones de fila (<xref:System.Data.DataRowVersion>), la versión original (antes de que cambie) y la versión actual (después de los cambios). Durante el período de un cambio está pendiente (el tiempo cuando responda a la <xref:System.Data.DataTable.RowChanging> eventos), una tercera versión: la versión propuesta, también está disponible.
+- Cada fila de datos modificada contiene varias versiones de fila (<xref:System.Data.DataRowVersion>), la versión original (antes de que cambie) y la versión actual (después de los cambios). Durante el período de un cambio está pendiente (el tiempo cuando responda a la <xref:System.Data.DataTable.RowChanging> eventos), una tercera versión: la versión propuesta, también está disponible.
 
 El método <xref:System.Data.DataSet.HasChanges%2A> de un conjunto de datos devuelve `true` si se han realizado modificaciones en el mismo. Después de determinar que las filas modificadas existen, puede llamar al método `GetChanges` de un control <xref:System.Data.DataSet> o <xref:System.Data.DataTable> para devolver un conjunto de filas cambiadas.
 
 #### <a name="to-determine-if-changes-have-been-made-to-any-rows"></a>Para determinar si se han realizado cambios en las filas
 
--   Llame al método <xref:System.Data.DataSet.HasChanges%2A> de un conjunto de datos para comprobar si hay filas modificadas.
+- Llame al método <xref:System.Data.DataSet.HasChanges%2A> de un conjunto de datos para comprobar si hay filas modificadas.
 
 En el ejemplo siguiente, se muestra cómo comprobar el valor devuelto del método <xref:System.Data.DataSet.HasChanges%2A> para detectar si hay filas modificadas en un conjunto de datos denominado `NorthwindDataset1`:
 
@@ -91,7 +90,7 @@ También puede comprobar ver qué tipo de cambios se realizaron en un conjunto d
 
 #### <a name="to-determine-what-type-of-changes-have-been-made-to-a-row"></a>Para determinar el tipo de cambios realizados en una fila
 
--   Pase un valor <xref:System.Data.DataRowState> al método <xref:System.Data.DataSet.HasChanges%2A>.
+- Pase un valor <xref:System.Data.DataRowState> al método <xref:System.Data.DataSet.HasChanges%2A>.
 
 El ejemplo siguiente muestra cómo comprobar un conjunto de datos denominado `NorthwindDataset1` para determinar si se agregaron las nuevas filas en ella:
 
@@ -101,9 +100,9 @@ El ejemplo siguiente muestra cómo comprobar un conjunto de datos denominado `No
 ## <a name="to-locate-rows-that-have-errors"></a>Para buscar las filas con errores
 Al trabajar con columnas individuales y las filas de datos, pueden producirse errores. Puede comprobar el `HasErrors` propiedad para determinar si hay errores en un <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, o <xref:System.Data.DataRow>.
 
-1.  Compruebe el `HasErrors` propiedad para ver si hay errores en el conjunto de datos.
+1. Compruebe el `HasErrors` propiedad para ver si hay errores en el conjunto de datos.
 
-2.  Si el `HasErrors` propiedad es `true`, recorrer en iteración las colecciones de tablas y, a continuación, el a través de las filas, que se va a buscar la fila con el error.
+2. Si el `HasErrors` propiedad es `true`, recorrer en iteración las colecciones de tablas y, a continuación, el a través de las filas, que se va a buscar la fila con el error.
 
 [!code-csharp[VbRaddataEditing#23](../data-tools/codesnippet/CSharp/edit-data-in-datasets_7.cs)]
 [!code-vb[VbRaddataEditing#23](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_7.vb)]

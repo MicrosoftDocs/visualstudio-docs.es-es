@@ -1,25 +1,20 @@
 ---
 title: Argumentos de línea de comandos para Help Content Manager | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-help-viewer
+ms.topic: conceptual
 ms.assetid: 3aa9890a-1147-42ba-adea-17935d184038
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 5ac0d333f8103f6904bce517397a73cc010b1d36
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: ae1643b4a01c9bcab3878ec82b1808444cdc7712
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49873414"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54778635"
 ---
 # <a name="command-line-arguments-for-the-help-content-manager"></a>Argumentos de línea de comandos para Help Content Manager
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +50,7 @@ hlpctntmgr.exe /operation install /catalogname VisualStudio14 /locale en-us /sou
 |/catalogName|Sí|Especifica el nombre del catálogo de contenido.|  
 |/locale|No|Especifica la configuración regional del producto que se utiliza para ver y administrar el contenido de la instancia actual del Visor de Ayuda. Por ejemplo, se especifica `EN-US` para inglés (Estados Unidos).<br /><br /> Si no se especifica una configuración regional, se utiliza la del sistema operativo. Si esa configuración regional no se puede determinar, se utiliza `EN-US`.<br /><br /> Si se especifica una configuración regional no válida, se graba un mensaje de error en el registro de eventos.|  
 |/e|No|Eleva Help Content Manager a los privilegios administrativos si el usuario actual tiene credenciales administrativas.|  
-|/sourceURI|No|Especifica la dirección URL en la que se instala el contenido (API de servicio) o la ruta de acceso al archivo de instalación de contenido (.msha). La dirección URL puede apuntar al grupo de productos (nodo de nivel superior) o a los libros de productos (nodo en el nivel de hoja) en un extremo de estilo Visual Studio 2010. No es necesario incluir una barra diagonal (/) al final de la dirección URL. Si incluye una barra diagonal final, se controlará adecuadamente.<br /><br /> Se graba un mensaje de error en el registro de eventos si especifica un archivo que no se encuentra, que no es válido o no es accesible, o bien si una conexión a Internet no está disponible o se interrumpe mientras se está administrando el contenido.|  
+|/sourceURI|No|Especifica la dirección URL en la que se instala el contenido (API de servicio) o la ruta de acceso al archivo de instalación de contenido (.msha). La dirección URL puede apuntar al grupo de productos (nodo de nivel superior) o a los libros de productos (nodo en el nivel de hoja) en un punto de conexión de estilo Visual Studio 2010. No es necesario incluir una barra diagonal (/) al final de la dirección URL. Si incluye una barra diagonal final, se controlará adecuadamente.<br /><br /> Se graba un mensaje de error en el registro de eventos si especifica un archivo que no se encuentra, que no es válido o no es accesible, o bien si una conexión a Internet no está disponible o se interrumpe mientras se está administrando el contenido.|  
 |/vendor|No|Especifica el proveedor para el contenido del producto que se quitará (por ejemplo, `Microsoft`). El argumento predeterminado para este modificador es Microsoft.|  
 |/productName|No|Especifica el nombre de producto para los libros que se van a quitar. El nombre de producto se identifica en los archivos helpcontentsetup.msha o books.html que se incluye con el contenido. Puede quitar los libros de un único producto al mismo tiempo. Para quitar libros de varios productos, debe realizar varias instalaciones.|  
 |/booklist|No|Especifica los nombres de los libros que se administrarán, separados por espacios. Los valores deben coincidir con los nombres del libro tal como se indica en el disco de instalación.<br /><br /> Si no especifica este argumento, se instalarán todos los libros recomendados para el producto especificado en /sourceURI si el origen de instalación está en el formato de [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].<br /><br /> Si el nombre de un libro contiene uno o varios espacios, inclúyalo entre comillas dobles (") para delimitar la lista correctamente.<br /><br /> Los mensajes de error se registrarán si se especifica un modificador /sourceURI que no es válido o es inaccesible.|  
@@ -96,6 +91,3 @@ UpdateAlreadyRunning = 1300 – (Signals that the update didn't run because anot
 ## <a name="see-also"></a>Vea también  
  [Guía del administrador del Visor de Ayuda](../ide/help-viewer-administrator-guide.md)   
  [Invalidaciones de Help Content Manager](../ide/help-content-manager-overrides.md)
-
-
-

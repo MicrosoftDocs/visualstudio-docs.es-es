@@ -1,7 +1,6 @@
 ---
-title: Procedimiento Agregar comentarios a diagramas de clases (Diseñador de clases)
+title: Filtrar Agregar comentarios a diagramas de clases (Diseñador de clases)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.comment
@@ -12,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: d54005d5-a29d-4c4e-b153-feb6e84dd44f
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cff9069392fe3c5a3505128788458916ed78c01f
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 39b220ddc42857040a51b2308c6d4a83d931de09
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53916379"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55970548"
 ---
-# <a name="how-to-add-comments-to-class-diagrams"></a>Procedimiento Agregar comentarios a diagramas de clases
+# <a name="how-to-add-comments-to-class-diagrams"></a>Filtrar Agregar comentarios a diagramas de clases
 
 Puede usar formas de comentario para anotar diagramas de clases. Una forma de comentario tiene una propiedad, **Text**, en la que puede escribir texto. Las formas de comentario solo existen en la superficie del diagrama y no en el código.
 

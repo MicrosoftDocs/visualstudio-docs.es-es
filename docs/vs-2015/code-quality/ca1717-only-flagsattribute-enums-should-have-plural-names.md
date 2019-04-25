@@ -1,14 +1,9 @@
 ---
-title: 'CA1717: Solo las enumeraciones FlagsAttribute deberían tener nombres en plural | Microsoft Docs'
-ms.custom: ''
+title: 'CA1717: Solo las enumeraciones FlagsAttribute deberían tener nombres en plural | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1717
 - OnlyFlagsEnumsShouldHavePluralNames
@@ -20,14 +15,14 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: fd02409bd3805544effd1d53f5be2318b03fea90
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cc585c348451e0189caeabaf6269606e6b73b219
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49833452"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58989040"
 ---
-# <a name="ca1717-only-flagsattribute-enums-should-have-plural-names"></a>CA1717: Solo las enumeraciones FlagsAttribute deberían tener nombres en plural
+# <a name="ca1717-only-flagsattribute-enums-should-have-plural-names"></a>CA1717: Solo las enumeraciones FlagsAttribute deben tener nombres en plural
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -54,7 +49,7 @@ ms.locfileid: "49833452"
  Es seguro suprimir una advertencia de la regla si el nombre termina en una palabra en singular.
 
 ## <a name="related-rules"></a>Reglas relacionadas
- [CA1714: Las enumeraciones Flags deberían tener nombres en plural](../code-quality/ca1714-flags-enums-should-have-plural-names.md)
+ [CA1714: Las enumeraciones Flags deberían tener nombres en plurales](../code-quality/ca1714-flags-enums-should-have-plural-names.md)
 
  [CA1027: Marcar enumeraciones con FlagsAttribute](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
 
@@ -62,6 +57,3 @@ ms.locfileid: "49833452"
 
 ## <a name="see-also"></a>Vea también
  <xref:System.FlagsAttribute?displayProperty=fullName> [Diseño de enumeraciones](http://msdn.microsoft.com/library/dd53c952-9d9a-4736-86ff-9540e815d545)
-
-
-

@@ -1,22 +1,21 @@
 ---
-title: 'Tutorial: Compilar una aplicación'
+title: 'Tutorial: Creación de una aplicación'
 ms.date: 09/25/2017
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c23e7c7f6a6de9912a9c886f3eeba91208ae0ee6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: bcd805c420b636225bc12c31afd79d47c6732d28
+ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49942223"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "57323950"
 ---
-# <a name="walkthrough-build-an-application"></a>Tutorial: Compilar una aplicación
+# <a name="walkthrough-build-an-application"></a>Tutorial: Creación de una aplicación
 
 Cuando complete este tutorial, estará más familiarizado con varias opciones que se pueden configurar al compilar aplicaciones con Visual Studio. Creará una configuración de compilación personalizada, ocultará determinados mensajes de advertencia y aumentará la información de los resultados de la compilación para una aplicación de ejemplo.
 
@@ -26,7 +25,7 @@ Descargue el ejemplo [Introducción a la compilación de aplicaciones de WPF](ht
 
 ## <a name="create-a-custom-build-configuration"></a>Crear una configuración de compilación personalizada
 
-Cuando se crea una solución, se definen automáticamente configuraciones de compilación de depuración y de versión y sus destinos de plataforma predeterminados para la solución. Es posible personalizar estas configuraciones o crear sus propias configuraciones. Las configuraciones de compilación especifican el tipo de compilación. Las plataformas de compilación especifican el sistema operativo de destino de una aplicación para esa configuración. Para obtener más información, consulte [Descripción de las configuraciones de compilación](../ide/understanding-build-configurations.md), [Descripción de las plataformas de compilación](../ide/understanding-build-platforms.md) y [Cómo: Establecer configuraciones Debug y Release](../debugger/how-to-set-debug-and-release-configurations.md).
+Cuando se crea una solución, se definen automáticamente configuraciones de compilación de depuración y de versión y sus destinos de plataforma predeterminados para la solución. Es posible personalizar estas configuraciones o crear sus propias configuraciones. Las configuraciones de compilación especifican el tipo de compilación. Las plataformas de compilación especifican el sistema operativo de destino de una aplicación para esa configuración. Para más información, vea [Descripción de las configuraciones de compilación](../ide/understanding-build-configurations.md), [Descripción de las plataformas de compilación](../ide/understanding-build-platforms.md) y [Cómo: Establecer configuraciones Debug y Release](../debugger/how-to-set-debug-and-release-configurations.md).
 
 Puede cambiar o crear configuraciones y opciones de plataforma mediante el cuadro de diálogo **Administrador de configuración**. En este procedimiento, creará una configuración de compilación para probar.
 
@@ -100,7 +99,7 @@ Es posible ocultar temporalmente determinados mensajes de advertencia durante un
 
 1. Elija la página **Compilación** y, después, en el cuadro **Suprimir advertencias**, especifique el número de advertencia **0168**.
 
-     ![Página Compilación, Diseñador de proyectos](../ide/media/buildwalk_csharpsupresswarnings.png)
+     ![Página Compilación, Diseñador de proyectos](../ide/media/buildwalk_csharpsuppresswarnings.png)
 
      Para obtener más información, consulte [Compilar (Página, Diseñador de proyectos) (C#)](../ide/reference/build-page-project-designer-csharp.md).
 
@@ -120,7 +119,7 @@ Es posible ocultar temporalmente determinados mensajes de advertencia durante un
 
 3. En la página **Compilación**, active la casilla **Deshabilitar todas las advertencias**.
 
-     ![Página Compilar, Diseñador de proyectos](../ide/media/buildwalk_vbsupresswarnings.png)
+     ![Página Compilar, Diseñador de proyectos](../ide/media/buildwalk_vbsuppresswarnings.png)
 
      Para obtener más información, vea [Configurar advertencias en Visual Basic](../ide/configuring-warnings-in-visual-basic.md).
 
@@ -130,7 +129,7 @@ Es posible ocultar temporalmente determinados mensajes de advertencia durante un
 
    ![Ventana de salida, advertencias de compilación de Visual Basic](../ide/media/buildwalk_visualbasicbuildwarnings.png)
 
-   Para obtener más información, consulte [Cómo: Suprimir advertencias del compilador](../ide/how-to-suppress-compiler-warnings.md).
+   Para obtener más información, vea [Cómo: Suprimir advertencias del compilador](../ide/how-to-suppress-compiler-warnings.md).
 
 ## <a name="display-additional-build-details-in-the-output-window"></a>Mostrar detalles de compilación adicionales en la ventana de salida
 
@@ -162,13 +161,13 @@ Se puede cambiar la cantidad de información sobre el proceso de compilación qu
     > [!TIP]
     > Puede buscar en el contenido de la ventana **Salida** si pulsa las teclas **CTRL**+**F** para mostrar el cuadro de diálogo **Buscar**.
 
-Para obtener más información, consulte [Cómo: Ver, guardar y configurar archivos de registro de compilación](../ide/how-to-view-save-and-configure-build-log-files.md).
+Para obtener más información, vea [Cómo: Ver, guardar y configurar archivos de registro de compilación](../ide/how-to-view-save-and-configure-build-log-files.md).
 
 ## <a name="create-a-release-build"></a>Crear una compilación de versión
 
 Se puede compilar una versión de la aplicación de ejemplo optimizada para su entrega. Para la compilación de versión, especificará que el ejecutable se copie a un recurso compartido de red antes de que se inicie la compilación.
 
-Para obtener más información, consulte [Cómo: Cambiar el directorio de resultados de compilación](../ide/how-to-change-the-build-output-directory.md) y [Compilar y limpiar proyectos y soluciones en Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md).
+Para obtener más información, vea [Cómo: Cambiar el directorio de resultados de compilación](../ide/how-to-change-the-build-output-directory.md) y [Compilar y limpiar proyectos y soluciones en Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md).
 
 ### <a name="specify-a-release-build-for-visual-basic"></a>Especificar una compilación de versión para Visual Basic
 
@@ -193,7 +192,7 @@ Para obtener más información, consulte [Cómo: Cambiar el directorio de result
 
      ![Comando Compilar solución del menú Compilar](../ide/media/exploreide-buildsolution.png)
 
-### <a name="specify-a-release-build-for-c"></a>Especificar una compilación de versión para C# #
+### <a name="specify-a-release-build-for-c"></a>Especificar una compilación de versión para C\#
 
 1. Abra el **Diseñador de proyectos**.
 
@@ -224,6 +223,6 @@ Para obtener más información, consulte [Cómo: Cambiar el directorio de result
 
 ## <a name="see-also"></a>Vea también
 
-- [Tutorial: Compilar un proyecto (C++)](/cpp/ide/walkthrough-building-a-project-cpp)
-- [Información general sobre la precompilación de proyectos de aplicación web ASP.NET](http://msdn.microsoft.com/b940abbd-178d-4570-b441-52914fa7b887)
+- [Tutorial: Compilación de un proyecto (C++)](/cpp/ide/walkthrough-building-a-project-cpp)
+- [Información general sobre la precompilación de proyectos de aplicación web ASP.NET](/previous-versions/aspnet/aa983464\(v\=vs.110\))
 - [Tutorial: Usar MSBuild](../msbuild/walkthrough-using-msbuild.md)

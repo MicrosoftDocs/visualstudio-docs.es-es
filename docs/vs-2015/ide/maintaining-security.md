@@ -1,14 +1,9 @@
 ---
 title: Mantener la seguridad | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - unauthorized access
 - Baseline Security Analyzer
@@ -20,13 +15,13 @@ ms.assetid: 621d10c1-842b-4902-be60-bb9719591751
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 793ec2b6f5ccfad1ded9f8a4cc2d4e6c4b994f0f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b99db8a9e1f34bc724059ff9cbf2a065df39e78f
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49230807"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57872834"
 ---
 # <a name="maintaining-security"></a>Mantener la seguridad
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,17 +33,13 @@ Suele decirse que para obtener seguridad no hay que bajar la guardia. A pesar de
  [Seguridad, privacidad y cuentas](http://go.microsoft.com/fwlink/?LinkId=72881)  
  Obtenga ayuda con la seguridad, privacidad, y cuentas de usuario, incluida información sobre virus, contraseñas, controles parentales, firewalls y cifrado de unidades.  
   
- [Búsqueda de boletines de seguridad de Microsoft](http://go.microsoft.com/fwlink/?LinkId=110396)  
+ [Búsqueda de boletines de seguridad de Microsoft](/security-updates/)  
  Esta página facilita la búsqueda de boletines anteriores. Dirigidos a los profesionales informáticos (IT), los boletines de seguridad proporcionan información detallada relativa a las actualizaciones de seguridad.  
   
- [Guía de seguridad de Windows Server 2003](http://go.microsoft.com/fwlink/?LinkId=65300)  
- Proporciona las directrices necesarias para que los profesionales informáticos (IT) utilicen de forma segura un entorno de Windows Server 2003, a la vez que garantizan el derecho de acceso de los usuarios adecuados al contenido correcto.  
+ [Guía de seguridad de Windows Server 2003] (/previous-versions/tn-archive/cc163140(v=technet.10) proporciona las directrices necesarias para los profesionales de TI utilicen de forma segura un entorno de Windows Server 2003 garantizando el derecho de acceso al contenido correcto por las personas adecuadas.  
   
- [Procedimientos recomendados sobre la seguridad empresarial](http://go.microsoft.com/fwlink/?LinkId=72879)  
+ [Procedimientos recomendados sobre la seguridad empresarial](/previous-versions/tn-archive/cc750076%28v%3dtechnet.10%29)  
  Una colección de libros blancos que se centran en los diferentes aspectos de la seguridad de redes de empresa.  
   
- [Microsoft Baseline Security Analyzer](http://go.microsoft.com/fwlink/?LinkId=9173)  
+ [Microsoft Baseline Security Analyzer](/windows/security/threat-protection/mbsa-removal-and-guidance)  
  Microsoft Baseline Security Analyzer (MBSA) es una herramienta que permite a un usuario individual, a un usuario corporativo o a un administrador, buscar en uno o más equipos con Windows errores comunes en la configuración de seguridad.
-
-
-

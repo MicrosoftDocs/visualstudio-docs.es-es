@@ -1,7 +1,6 @@
 ---
-title: Herramientas XML
+title: Editor XML y el Diseñador de esquemas
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vb.xmldesigner
@@ -30,44 +29,53 @@ helpviewer_keywords:
 ms.assetid: 1fd5de47-2d61-4180-9539-c2c4bf9ab768
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ecbd93836cdf5b91bb9f7abb93a95499927fa0b1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a8854aee047fa961c4f0973397cfc2fe6ac6e6ad
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53872965"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57526573"
 ---
 # <a name="xml-tools-in-visual-studio"></a>Herramientas XML en Visual Studio
 
-*Extensible Markup Language (XML)* es un lenguaje de marcado que proporciona un formato para describir los datos. Esto facilita declaraciones más precisas del contenido y resultados de búsqueda más útiles en varias plataformas. Además, XML permite separar la presentación de los datos. Por ejemplo, en HTML se usan etiquetas para indicar al explorador que muestre los datos en negrita o cursiva, pero en XML las etiquetas solo se usan para describir los datos, como el nombre de la ciudad, la temperatura y la presión atmosférica. En XML, utilice las hojas de estilos como lenguaje de hojas de estilo Extensible (XSL) y hojas de estilos en cascada (CSS) para presentar los datos en un explorador. XML separa los datos de la presentación y el proceso. Esto le permite mostrar y procesar los datos como desee por medio de distintas hojas de estilo y aplicaciones.
+*Extensible Markup Language (XML)* es un lenguaje de marcado que proporciona un formato para describir los datos. XML separa los datos y asociados de su presentación mediante el uso de hojas de estilos como lenguaje de hojas de estilo Extensible (XSL) y hojas de estilos en cascada (CSS). Visual Studio incluye herramientas y características que facilitan el trabajo con XML, XSLT y esquemas XML.
 
-XML es un subconjunto de SGML optimizado para entregarse a través de Internet. Lo define World Wide Web Consortium (W3C). Esta estandarización garantiza que los datos estructurados sean uniformes e independientes de las aplicaciones o los proveedores.
+## <a name="xml-editor"></a>Editor XML
 
-XML es el núcleo de muchas características de Visual Studio y .NET Framework. La lista de artículo siguiente enumera las herramientas y características relacionadas con XML que se ofrecen en Visual Studio y .NET Framework.
+El [editor XML](xml-editor.md) se usa para editar documentos XML. Proporciona sintaxis XML completa comprobación de validación de esquemas mientras escribe, codificación en colores e IntelliSense. Cuando se proporciona un esquema o una definición de tipo de documento, IntelliSense lo utiliza para mostrar los elementos y atributos permitidos.
 
-Para obtener más información, consulte el <xref:System.Xml?displayProperty=fullName> documentación.
+Otras características son:
 
-## <a name="reference"></a>Referencia
+- Compatibilidad con fragmentos XML, incluye fragmentos generados por esquema
 
-[Microsoft.VisualStudio.XmlEditor](http://go.microsoft.com/fwlink/?LinkID=165699) expone el [Editor XML](http://go.microsoft.com/fwlink/?LinkId=228249) árbol a través de análisis [System.Xml.Linq](http://go.microsoft.com/fwlink/?LinkId=228250) para cualquier documento XML.
+- Para que los elementos se pueden expandir y contraer la esquematización de documentos
 
-[Referencia de las normas XML](https://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401) proporciona información sobre las tecnologías XML, incluidos XML, definición de tipo de documento (DTD), lenguaje de definición de esquemas XML (XSD) y XSLT.
+- La capacidad para ejecutar transformaciones XSLT y ver los resultados como texto, XML o HTML
 
-<xref:System.Xml?displayProperty=fullName> Describe las clases y otros elementos que componen el <xref:System.Xml> espacio de nombres y proporciona vínculos a información más detallada sobre cada elemento.
+- La capacidad para generar esquemas (XSD) del documento de instancia XML
 
-<xref:System.Xml.Serialization?displayProperty=fullName> Describe las clases y otros elementos que componen el <xref:System.Xml.Serialization> espacio de nombres y proporciona vínculos a información más detallada sobre cada elemento.
+- Compatibilidad con la edición de hojas de estilos XSLT, incluida la compatibilidad con IntelliSense
 
-## <a name="related-sections"></a>Secciones relacionadas
+- Explorador de esquemas XML
 
-[Document Object Model (DOM) XML](/dotnet/standard/data/xml/xml-document-object-model-dom) describe cómo el <xref:System.Xml.XmlDocument> y sus clases asociadas cumplen con las especificaciones de soporte técnico de espacio de nombres de nivel 2 y W3C Document Object Model (Core) nivel 1.
+## <a name="xml-schema-designer"></a>Diseñador de esquemas XML
 
-[Procesar datos XML con XmlReader y XmlWriter](/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc189001\(v\=vs.95\))
+El [Diseñador de esquemas XML](xml-schema-designer.md) se integra con Visual Studio y el editor XML para permitirle trabajar con esquemas de lenguaje (XSD) de definición de esquemas XML.
 
-[Transformaciones XSLT](/dotnet/standard/data/xml/xslt-transformations) describe cómo el <xref:System.Xml.Xsl.XslCompiledTransform> clase implementa la recomendación XSLT 1.0.
+## <a name="xslt-debugging"></a>Depuración de XSLT
 
-[Procesar datos XML mediante el modelo de datos XPath](/dotnet/standard/data/xml/process-xml-data-using-the-xpath-data-model) describe cómo el <xref:System.Xml.XPath.XPathNavigator> clase puede procesar datos XML almacenados en un <xref:System.Xml.XPath.XPathDocument> o un <xref:System.Xml.XmlDocument> objeto. La clase <xref:System.Xml.XPath.XPathNavigator> se basa en el modelo de datos de XQuery 1.0 y XPath 2.0 y se puede usar para navegar por los datos XML y editarlos.
+Visual Studio admite [depurar hojas de estilos XSLT](../xml-tools/debugging-xslt.md). Mediante el depurador, puede definir puntos de interrupción en una hoja de estilos XSLT, ir a una hoja de estilos XSLT a partir del código, etc.
 
-[Modelo de objetos de esquema XML (SOM)](/dotnet/standard/data/xml/xml-schema-object-model-som) describe las clases utilizadas para crear y manipular esquemas XML, proporcionando un <xref:System.Xml.Schema.XmlSchema> clase para cargar y editar un esquema.
+> [!NOTE]
+> El depurador de XSLT solo está disponible en la edición Enterprise de Visual Studio.
+
+## <a name="see-also"></a>Vea también
+
+- <xref:System.Xml?displayProperty=fullName>
+- [Transformaciones XSLT](/dotnet/standard/data/xml/xslt-transformations)
+- [Procesar datos XML mediante el modelo de datos XPath](/dotnet/standard/data/xml/process-xml-data-using-the-xpath-data-model)
+- [Document Object Model (DOM) para XML](/dotnet/standard/data/xml/xml-document-object-model-dom)
+- [Modelo de objetos de esquema XML (SOM)](/dotnet/standard/data/xml/xml-schema-object-model-som)

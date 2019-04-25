@@ -2,19 +2,18 @@
 title: Especificar como destino versiones anteriores de .NET Framework para F#
 description: Descubra cómo especificar como destino una versión anterior de .NET Framework cuando usa F# en Visual Studio.
 ms.date: 07/11/2018
-ms.prod: visual-studio-dev15
 ms.topic: troubleshooting
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4f5ef4e8b46681cc102a6678fcd4cb38f3e6f069
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3572e48328317634f036e8c1301d81c38314a21c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53888081"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62547889"
 ---
 # <a name="target-older-versions-of-net-f"></a>Especificar como destino versiones anteriores de .NET (F#)
 
@@ -54,7 +53,7 @@ Para resolver este error, puede:
 
 ### <a name="to-install-the-f-20-runtime"></a>Para instalar el runtime de F# 2.0
 
-Siga los [pasos para reparar Visual Studio 2017](../install/repair-visual-studio.md).
+Siga los [pasos para reparar Visual Studio](../install/repair-visual-studio.md).
 
 ## <a name="see-also"></a>Vea también
 

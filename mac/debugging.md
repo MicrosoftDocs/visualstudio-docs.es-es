@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-debug
 ms.assetid: BB7A084D-9AC2-48B5-8076-6C8518796BBA
-ms.openlocfilehash: e17a423e9db6826c8cc693e1c75c75bb067a19e8
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: e184daa5271497e158c68989cb43889a03a98802
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295298"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953491"
 ---
 # <a name="debugging-with-xamarin"></a>Depuración con Xamarin
 
@@ -79,10 +79,10 @@ Cuando se ha alcanzado un punto de interrupción, las herramientas de depuració
 
 Estos son los cuatro botones:
 
-*   **Reproducir**: inicia la ejecución del código hasta el siguiente punto de interrupción.
-*   **Paso a paso por procedimientos**: ejecuta la siguiente línea de código. Si la siguiente línea es una llamada a función, Paso a paso por procedimientos ejecuta la función y se detiene en la siguiente línea de código *después* de la función.
-*   **Depurar paso a paso con instrucciones**: también ejecuta la siguiente línea de código. Si la siguiente línea es una llamada de función, Depurar paso a paso con instrucciones se detendrá en la primera línea de la función, lo que le permitirá continuar con la depuración línea por línea de la función. Si la línea siguiente no es una función, se comportará igual Paso a paso por procedimientos.
-*   **Paso a paso para salir**: vuelve a la línea en la que se ha llamado a la función actual.
+* **Reproducir**: inicia la ejecución del código hasta el siguiente punto de interrupción.
+* **Paso a paso por procedimientos**: ejecuta la siguiente línea de código. Si la siguiente línea es una llamada a función, Paso a paso por procedimientos ejecuta la función y se detiene en la siguiente línea de código *después* de la función.
+* **Depurar paso a paso con instrucciones**: también ejecuta la siguiente línea de código. Si la siguiente línea es una llamada de función, Depurar paso a paso con instrucciones se detendrá en la primera línea de la función, lo que le permitirá continuar con la depuración línea por línea de la función. Si la línea siguiente no es una función, se comportará igual Paso a paso por procedimientos.
+* **Paso a paso para salir**: vuelve a la línea en la que se ha llamado a la función actual.
 
 ## <a name="debugging-monos-class-libraries"></a>Depuración de bibliotecas de clases de Mono
 

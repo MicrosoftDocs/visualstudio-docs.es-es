@@ -1,20 +1,19 @@
 ---
 title: 'Archivo XSD de muestra: Esquema simple'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: sample
 ms.assetid: f7e1dde1-b4f6-4371-add4-935b68ec77d7
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3c07e6668f7805a6ed044258b6767764e63e1b1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8f7a4cd8e01f0538e2551b4b7c1c3ad67a221667
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53922301"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55936387"
 ---
 # <a name="sample-xsd-file-simple-schema"></a>Archivo XSD de muestra: Esquema simple
 

@@ -7,28 +7,31 @@ helpviewer_keywords:
 - performance [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 f1_keywords:
 - vs.performancecenter
-ms.prod: visual-studio-dev15
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f60acd8e31f9a549406b4b8c40aacdd5327f335
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 193343c8fce810280f380b11a72b7cb6892ef18e
+ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53832627"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "57223779"
 ---
 # <a name="optimize-visual-studio-performance"></a>Optimización del rendimiento de Visual Studio
 
 Este artículo proporciona algunas sugerencias que se pueden probar en el caso de que Visual Studio se ejecute lentamente. También puede echar un vistazo a [Sugerencias y trucos de rendimiento de Visual Studio](../ide/visual-studio-performance-tips-and-tricks.md) para obtener más sugerencias para mejorar el rendimiento.
 
-## <a name="upgrade-to-visual-studio-2017-version-156-or-later"></a>Actualización a Visual Studio 2017, versión 15.6 o posterior
+## <a name="upgrade-visual-studio"></a>Actualizar Visual Studio
 
-Si actualmente usa Visual Studio 2015, descargue [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017) de forma gratuita para comprobar su mejora del rendimiento. Las soluciones se cargan dos o tres veces más rápido en Visual Studio 2017, con mejoras de rendimiento también en otras áreas. Visual Studio 2017 es compatible en paralelo con Visual Studio 2015, por lo que no pierde nada por probarlo.
+Si actualmente usa Visual Studio 2015, descargue [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) o [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) de forma gratuita para comprobar su mejora de rendimiento. Las soluciones se cargan dos o tres veces más rápido que en Visual Studio 2015, con mejoras de rendimiento también en otras áreas. Visual Studio 2017 y Visual Studio 2019 son compatibles en paralelo con Visual Studio 2015, por lo que no se pierde nada por probarlo.
 
-Si ya usa Visual Studio 2017, asegúrese de que está ejecutando la versión 15.6 o una posterior. Los datos demuestran que las soluciones se cargan dos o tres veces más rápido en la versión 15.6. Descárguela [aquí](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017).
+::: moniker range="vs-2017"
+
+Si ya usa Visual Studio 2017, asegúrese de que está ejecutando la versión 15.6 o posterior. Los datos demuestran que las soluciones se cargan dos o tres veces más rápido en la versión 15.6. Descárguela [aquí](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017).
+
+::: moniker-end
 
 ## <a name="extensions-and-tool-windows"></a>Extensiones y ventanas de herramientas
 
@@ -46,9 +49,9 @@ Además, no ejecute la solución desde una unidad USB. Cópiela en la unidad de 
 
 ## <a name="help-us-improve"></a>Ayúdenos a mejorar
 
-Sus comentarios nos ayudan a mejorar. Use la característica **Notificar un problema** para "registrar" un seguimiento y enviárnoslo. Seleccione el icono de comentarios situado junto a **Inicio rápido** o seleccione **Ayuda** > **Enviar comentarios** > **Notificar un problema** en la barra de menús. Para obtener más información, vea [Cómo notificar un problema con Visual Studio 2017](../ide/how-to-report-a-problem-with-visual-studio-2017.md).
+Sus comentarios nos ayudan a mejorar. Use la característica **Notificar un problema** para "registrar" un seguimiento y enviárnoslo. Seleccione el icono de comentarios situado junto a **Inicio rápido** o seleccione **Ayuda** > **Enviar comentarios** > **Notificar un problema** en la barra de menús. Para más información, vea [Cómo notificar un problema con Visual Studio](../ide/how-to-report-a-problem-with-visual-studio.md).
 
 ## <a name="see-also"></a>Vea también
 
 - [Sugerencias y trucos de rendimiento](../ide/visual-studio-performance-tips-and-tricks.md)
-- [Visual Studio blog - Load solutions faster with Visual Studio 2017 version 15.6](https://blogs.msdn.microsoft.com/visualstudio/2018/04/04/load-solutions-faster-with-visual-studio-2017-version-15-6/) (Blog de Visual Studio: Cargar soluciones más rápido con Visual Studio 2017 versión 15.6)
+- [Visual Studio blog - Load solutions faster with Visual Studio 2017 version 15.6](https://devblogs.microsoft.com/visualstudio/load-solutions-faster-with-visual-studio-2017-version-15-6/) (Blog de Visual Studio: Cargar soluciones más rápido con Visual Studio 2017 versión 15.6)

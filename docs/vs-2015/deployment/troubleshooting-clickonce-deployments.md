@@ -1,14 +1,9 @@
 ---
 title: Solucionar problemas en implementaciones ClickOnce | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: troubleshooting
 dev_langs:
 - VB
 - CSharp
@@ -23,13 +18,13 @@ ms.assetid: 58e90012-f68b-4852-8ae9-58e361cbcc32
 caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 20a162a8280854954a58fb0447957a3894325cea
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 26bf92a2401b0355ed149e6b9de20614969812e2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49284757"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58995717"
 ---
 # <a name="troubleshooting-clickonce-deployments"></a>Solucionar problemas en implementaciones ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,10 +33,10 @@ Este tema le ayudará a diagnosticar y resolver los problemas más comunes con [
   
  En la mayoría de los casos, un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicación se descargará en el equipo del usuario y ejecutar sin problemas. Hay algunos casos, sin embargo, donde los problemas de configuración de servidor o aplicación Web pueden producir problemas imprevistos.  
   
- [Cómo: Establecer una ubicación de archivos de registro personalizada para los errores de implementaciones ClickOnce](../deployment/how-to-set-a-custom-log-file-location-for-clickonce-deployment-errors.md)  
+ [Cómo: Establecimiento de una ubicación de archivos de registro personalizada para los errores de implementaciones ClickOnce](../deployment/how-to-set-a-custom-log-file-location-for-clickonce-deployment-errors.md)  
  Describe cómo redirigir todas [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] errores de activación en un equipo a un archivo de registro.  
   
- [Cómo: Especificar archivos de registro detallados para implementaciones ClickOnce](../deployment/how-to-specify-verbose-log-files-for-clickonce-deployments.md)  
+ [Cómo: Especificación de archivos de registro detallados para implementaciones ClickOnce](../deployment/how-to-specify-verbose-log-files-for-clickonce-deployments.md)  
  Describe cómo aumentar el detalle que [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] escribe en archivos de registro.  
   
  [Problemas de configuración de servidor y cliente en implementaciones ClickOnce](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md)  
@@ -59,6 +54,3 @@ Este tema le ayudará a diagnosticar y resolver los problemas más comunes con [
 ## <a name="see-also"></a>Vea también  
  [Manifiesto de implementación de ClickOnce](../deployment/clickonce-deployment-manifest.md)   
  [ClickOnce Application Manifest](../deployment/clickonce-application-manifest.md)
-
-
-

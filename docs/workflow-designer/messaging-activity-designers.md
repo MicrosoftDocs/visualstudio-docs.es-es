@@ -2,19 +2,18 @@
 title: 'Diseñador de flujo de trabajo: los diseñadores de actividades de mensajería'
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
 ms.assetid: 897e63cf-a42f-4edd-876f-c4ccfffaf6d6
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f414f79db83f65d10a3f7893580c587e4da2219
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1b4156c8125ad6cf3af9f5600ceb2b6c5bc21419
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53989366"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55948191"
 ---
 # <a name="messaging-activity-designers"></a>Diseñadores de actividades de mensajería
 

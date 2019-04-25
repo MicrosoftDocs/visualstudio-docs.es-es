@@ -1,14 +1,9 @@
 ---
-title: 'Cómo: depurar un archivo ejecutable que no es parte de una solución de Visual Studio | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Depurar un archivo ejecutable que no es parte de una solución de Visual Studio | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -26,15 +21,15 @@ ms.assetid: 3ea176e8-1ce5-42c4-b7a2-abe3a2765033
 caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a7fb9b0a31f078ce197851bccb1f4c85f24408a0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e913d67442d21cb1a0895721c22ede9b69363f53
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798669"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068709"
 ---
-# <a name="how-to-debug-an-executable-not-part-of-a-visual-studio-solution"></a>Cómo: Depurar un archivo ejecutable que no es parte de una solución de Visual Studio
+# <a name="how-to-debug-an-executable-not-part-of-a-visual-studio-solution"></a>Procedimiento Depurar un archivo ejecutable que no es parte de una solución de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Es posible que haya ocasiones en las que desee depurar un archivo ejecutable que no forme parte de un proyecto de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Puede tratarse de un archivo ejecutable que se haya creado fuera de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] o de un archivo ejecutable que haya recibido de otra persona.  
@@ -45,25 +40,25 @@ Es posible que haya ocasiones en las que desee depurar un archivo ejecutable que
   
 ### <a name="to-create-an-exe-project-for-an-existing-executable"></a>Para crear un proyecto .EXE para un archivo ejecutable existente  
   
-1.  En el **archivo** menú, haga clic en **abierto** y seleccione **proyecto**.  
+1. En el **archivo** menú, haga clic en **abierto** y seleccione **proyecto**.  
   
-2.  En el **Abrir proyecto** cuadro de diálogo, haga clic en la lista desplegable lista situada junto a la **nombre de archivo** cuadro y seleccione **todos los archivos de proyecto**.  
+2. En el **Abrir proyecto** cuadro de diálogo, haga clic en la lista desplegable lista situada junto a la **nombre de archivo** cuadro y seleccione **todos los archivos de proyecto**.  
   
-3.  Busque el archivo ejecutable y haga clic en **Aceptar**.  
+3. Busque el archivo ejecutable y haga clic en **Aceptar**.  
   
      De esta manera creará una solución temporal que contiene el archivo ejecutable.  
   
 ### <a name="to-import-an-executable-into-a-visual-studio-solution"></a>Para importar una archivo ejecutable a una solución de Visual Studio  
   
-1.  En el **archivo** menú, elija **Agregar proyecto**y, a continuación, haga clic en **proyecto existente**.  
+1. En el **archivo** menú, elija **Agregar proyecto**y, a continuación, haga clic en **proyecto existente**.  
   
-2.  En el **Agregar proyecto existente** cuadro de diálogo, haga clic en la lista desplegable lista situada junto a la **nombre de archivo** cuadro y seleccione **todos los archivos de proyecto**.  
+2. En el **Agregar proyecto existente** cuadro de diálogo, haga clic en la lista desplegable lista situada junto a la **nombre de archivo** cuadro y seleccione **todos los archivos de proyecto**.  
   
-3.  Busque y seleccione el archivo ejecutable.  
+3. Busque y seleccione el archivo ejecutable.  
   
-4.  Haga clic en **Aceptar**.  
+4. Haga clic en **Aceptar**.  
   
-5.  Inicie el archivo ejecutable eligiendo un comando de ejecución, como **iniciar**, desde el **depurar** menú.  
+5. Inicie el archivo ejecutable eligiendo un comando de ejecución, como **iniciar**, desde el **depurar** menú.  
   
     > [!NOTE]
     >  No todos los lenguajes de programación admiten proyectos EXE. Si necesita utilizar esta característica, instale [!INCLUDE[vcprvc](../includes/vcprvc-md.md)].  
@@ -73,7 +68,4 @@ Es posible que haya ocasiones en las que desee depurar un archivo ejecutable que
 ## <a name="see-also"></a>Vea también  
  [Preparación y configuración de la depuración](../debugger/debugger-settings-and-preparation.md)   
  [Seguridad del depurador](../debugger/debugger-security.md)   
- [DBG (archivos)](http://msdn.microsoft.com/en-us/91e449e9-8b65-4123-960f-2107cd1f1cfd)
-
-
-
+ [DBG (archivos)](http://msdn.microsoft.com/91e449e9-8b65-4123-960f-2107cd1f1cfd)

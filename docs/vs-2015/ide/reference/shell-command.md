@@ -1,14 +1,9 @@
 ---
 title: Comando Shell | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - tools.shell
 helpviewer_keywords:
@@ -23,18 +18,17 @@ ms.assetid: 737fda23-b852-45c4-a9fe-41cbce6ba70f
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 5f760e449921a45f7ad22a3d81376bca432fe24a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e901e5b34fb807a17cfc5143decc3a63b75194d7
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49242221"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650712"
 ---
 # <a name="shell-command"></a>Shell (Comando)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Inicia programas ejecutables desde [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
   
 ## <a name="syntax"></a>Sintaxis  
@@ -45,7 +39,7 @@ Tools.Shell [/command] [/output] [/dir:folder] path [args]
   
 ## <a name="arguments"></a>Argumentos  
  `path`  
- Requerido. El nombre de archivo y la ruta de acceso del archivo que se va a ejecutar o el documento que se va a abrir. Se necesita una ruta de acceso completa si el archivo especificado no está en uno de los directorios de la variable de entorno PATH.  
+ Obligatorio. El nombre de archivo y la ruta de acceso del archivo que se va a ejecutar o el documento que se va a abrir. Se necesita una ruta de acceso completa si el archivo especificado no está en uno de los directorios de la variable de entorno PATH.  
   
  `args`  
  Opcional. Argumentos que se pasan al programa invocado.  
@@ -94,6 +88,3 @@ Tools.Shell """C:\Program Files\SomeFile.exe"""
  [Ventana de salida](../../ide/reference/output-window.md)   
  [Cuadro Buscar/Comando](../../ide/find-command-box.md)   
  [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
-
-
-

@@ -1,20 +1,19 @@
 ---
 title: Insertar imágenes, vídeos y clips de audio en el Diseñador XAML
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: ff707aca-6bc5-4a2d-834b-bb6511a7b8f6
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: b0edb1f6ae895a267fc529bf0c83b3ea7fea2a2d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8ef1c82e18b99383f61ccbad298102b4db1fcb24
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53852617"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55937313"
 ---
 # <a name="insert-images-videos-and-audio-clips-in-xaml-designer"></a>Insertar imágenes, vídeos y clips de audio en el Diseñador XAML
 Las imágenes, los vídeos y los clips de audio agregan atractivo visual a la aplicación.

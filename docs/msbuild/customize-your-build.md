@@ -8,17 +8,17 @@ helpviewer_keywords:
 ms.assetid: d0bceb3b-14fb-455c-805a-63acefa4b3ed
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 858d28ac2fdc6cab32e537e86f84771e0fb53f90
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: da7b755c5b0ec72a9e1b906bdc1cd27a6dca7c0a
+ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53919565"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59584316"
 ---
-# <a name="customize-your-build-c-visual-basic"></a>Personalizar una compilación (C#, Visual Basic)
+# <a name="customize-your-build"></a>Personalizar una compilación
 
 Los proyectos de MSBuild que usan el proceso de compilación estándar (la importación de *Microsoft.Common.props* y *Microsoft.Common.targets*) tienen varios enlaces de extensibilidad que se pueden usar para personalizar el proceso de compilación.
 
@@ -160,6 +160,6 @@ Por ejemplo, se podría definir un destino nuevo para escribir un mensaje de reg
 
 ## <a name="see-also"></a>Vea también
 
-[Conceptos de MSBuild](../msbuild/msbuild-concepts.md)
+- [Conceptos de MSBuild](../msbuild/msbuild-concepts.md)
 
-[Referencia de MSBuild](../msbuild/msbuild-reference.md)
+- [Referencia de MSBuild](../msbuild/msbuild-reference.md)

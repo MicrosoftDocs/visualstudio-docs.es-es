@@ -1,7 +1,6 @@
 ---
 title: 'CA2104: No declarar tipos de referencias mutables de solo lectura'
 ms.date: 11/01/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - DoNotDeclareReadOnlyMutableReferenceTypes
@@ -12,19 +11,19 @@ helpviewer_keywords:
 ms.assetid: 81b83ee5-4db5-4be0-9f8d-90b53894ec3b
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CPP
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 3dd84a9830f5c717595f9a2b0f25ac652e931b69
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 40fdeefc2d664b80bb6e17c109349cb5912b0516
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53844215"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077711"
 ---
 # <a name="ca2104-do-not-declare-read-only-mutable-reference-types"></a>CA2104: No declarar tipos de referencias mutables de solo lectura
 
@@ -36,7 +35,7 @@ ms.locfileid: "53844215"
 |Cambio problemático|Poco problemático|
 
 > [!NOTE]
-> Regla CA2104 está obsoleto y se quitará en una versión futura de Visual Studio.
+> Regla CA2104 está obsoleto y se quitará en una versión futura de Visual Studio. No se implementará como un [analizador](roslyn-analyzers-overview.md) porque el análisis complicado que se necesita para determinar la inmutabilidad de un tipo real.
 
 ## <a name="cause"></a>Motivo
 

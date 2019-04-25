@@ -1,25 +1,22 @@
 ---
 title: Ubicación de la forma y tamaño Boundsrules | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, events
 ms.assetid: 4d08e541-fc67-4e68-bf31-30d346aa2aa0
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: cb9d9c35f5600ee98d53863780d9f54c3eed53f4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: d09be82be084767bfb2d300a1877e95456a957b4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49253726"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58996283"
 ---
 # <a name="boundsrules-constrain-shape-location-and-size"></a>Ubicación y tamaño de las reglas de restricción de formas BoundsRules
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,6 +70,3 @@ public class BarBoundsRule: BoundsRules
 ## <a name="see-also"></a>Vea también  
  <xref:Microsoft.VisualStudio.Modeling.Diagrams.BoundsRules>   
  [Responder a los cambios y propagarlos](../modeling/responding-to-and-propagating-changes.md)
-
-
-

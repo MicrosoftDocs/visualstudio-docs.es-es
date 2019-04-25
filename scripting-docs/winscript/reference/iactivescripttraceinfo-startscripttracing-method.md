@@ -2,7 +2,6 @@
 title: Método Iactivescripttraceinfo | Documentos de Microsoft
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -12,12 +11,12 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6462597f55b6b0ceee885d207572e9669a350600
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: b87971e1fd2e484aa54ff4de56ee56e00b19b1e6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54093649"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101020"
 ---
 # <a name="iactivescripttraceinfostartscripttracing-method"></a>IActiveScriptTraceInfo::StartScriptTracing (Método)
 Inicia el seguimiento de la secuencia de comandos.  
@@ -38,8 +37,8 @@ HRESULT StartScriptTracing(     [in] IActiveScriptSiteTraceInfo * pSiteTraceInfo
 ## <a name="return-value"></a>Valor devuelto  
  Los valores devueltos posibles para este método son los siguientes:  
   
-1.  S_OK: Correcto.  
+1. S_OK: Correcto.  
   
-2.  E_POINTER: `pSiteTraceInfo` es un puntero NULL.  
+2. E_POINTER: `pSiteTraceInfo` es un puntero NULL.  
   
-3.  E_NOTIMPL: Sin implementar.
+3. E_NOTIMPL: Sin implementar.

@@ -14,16 +14,15 @@ helpviewer_keywords:
 ms.assetid: 243338ef-41af-4cc5-aff7-1e830236f0ec
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c9acd074eb1d4ac73ca0f905376f22f6e2e11b08
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 6b961af0bf35bb4476f9f336fcf5298bb0bd3651
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53897729"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55951675"
 ---
 # <a name="bind-windows-forms-controls-to-data-in-visual-studio"></a>Enlazar controles de Windows Forms a datos en Visual Studio
 
@@ -32,7 +31,7 @@ Para mostrar datos a los usuarios de la aplicación, puede enlazarlos a Windows 
 ![Operación de arrastre del origen de datos](../data-tools/media/raddata-data-source-drag-operation.png)
 
 > [!TIP]
-> Si el **orígenes de datos** ventana no está visible, ábralo eligiendo **vista** > **Other Windows** > **orígenes de datos** , o bien presionar **MAYÚS**+**Alt**+**d.**. Debe tener un proyecto abierto en Visual Studio para ver el **orígenes de datos** ventana.
+> Si el **orígenes de datos** ventana no está visible, ábralo eligiendo **vista** > **Other Windows** > **orígenes de datos** , o bien presionar **MAYÚS**+**Alt**+**d**. Debe tener un proyecto abierto en Visual Studio para ver el **orígenes de datos** ventana.
 
 Antes de arrastrar elementos, puede establecer el tipo de control que desea enlazar. Aparecen valores diferentes dependiendo de si elige la tabla propiamente dicho o una columna individual.  También puede establecer valores personalizados. Para una tabla, **detalles** significa que cada columna se enlaza a un control independiente.
 

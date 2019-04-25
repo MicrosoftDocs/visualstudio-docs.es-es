@@ -1,14 +1,9 @@
 ---
-title: 'CA2140: El código transparente no debe hacer referencia a elementos críticos para la seguridad | Microsoft Docs'
-ms.custom: ''
+title: 'CA2140: El código transparente no debe hacer referencia a elementos críticos para la seguridad | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2129
 - SecurityTransparentCodeShouldNotReferenceNonpublicSecurityCriticalCode
@@ -22,12 +17,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: fb6c01fc281384aec28ae46dbb1466686626df8b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 1990e781b5793b05166c6ff5b6e9c14141ffdd69
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49892121"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058608"
 ---
 # <a name="ca2140-transparent-code-must-not-reference-security-critical-items"></a>CA2140: El código transparente no debe hacer referencia a elementos críticos para la seguridad
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,21 +37,21 @@ ms.locfileid: "49892121"
 ## <a name="cause"></a>Motivo
  Un método transparente:
 
--   controla un tipo de excepción de seguridad críticas de seguridad
+- controla un tipo de excepción de seguridad críticas de seguridad
 
--   tiene un parámetro que está marcado como un tipo crítico de seguridad
+- tiene un parámetro que está marcado como un tipo crítico de seguridad
 
--   tiene un parámetro genérico con restricciones de seguridad de crítico
+- tiene un parámetro genérico con restricciones de seguridad de crítico
 
--   tiene una variable local de un tipo crítico de seguridad
+- tiene una variable local de un tipo crítico de seguridad
 
--   hace referencia a un tipo que está marcado como de seguridad crítico
+- hace referencia a un tipo que está marcado como de seguridad crítico
 
--   llama a un método que está marcado como de seguridad crítico
+- llama a un método que está marcado como de seguridad crítico
 
--   hace referencia a un campo que está marcado como de seguridad crítico
+- hace referencia a un campo que está marcado como de seguridad crítico
 
--   Devuelve un tipo que está marcado como de seguridad crítico
+- Devuelve un tipo que está marcado como de seguridad crítico
 
 ## <a name="rule-description"></a>Descripción de la regla
  Un elemento de código que está marcado con el <xref:System.Security.SecurityCriticalAttribute> atributo es crítico para la seguridad. Un método transparente no puede utilizar un elemento crítico para la seguridad. Si un tipo transparente intenta usar un tipo crítico de seguridad un <xref:System.TypeAccessException>, <xref:System.MethodAccessException> , o <xref:System.FieldAccessException> se genera.
@@ -64,11 +59,11 @@ ms.locfileid: "49892121"
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
  Para corregir una infracción de esta regla, realice una de las siguientes acciones:
 
--   Marcar el elemento de código que usa el código crítico de seguridad con el <xref:System.Security.SecurityCriticalAttribute> atributo
+- Marcar el elemento de código que usa el código crítico de seguridad con el <xref:System.Security.SecurityCriticalAttribute> atributo
 
      \- o -
 
--   Quitar el <xref:System.Security.SecurityCriticalAttribute> atributo de los elementos de código que se marcan como seguridad crítica y márquelos con el <xref:System.Security.SecuritySafeCriticalAttribute> o <xref:System.Security.SecurityTransparentAttribute> atributo.
+- Quitar el <xref:System.Security.SecurityCriticalAttribute> atributo de los elementos de código que se marcan como seguridad crítica y márquelos con el <xref:System.Security.SecuritySafeCriticalAttribute> o <xref:System.Security.SecurityTransparentAttribute> atributo.
 
 ## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
  No suprima las advertencias de esta regla.
@@ -83,6 +78,3 @@ ms.locfileid: "49892121"
  <xref:System.Security.SecurityTransparentAttribute>
  <xref:System.Security.SecurityTreatAsSafeAttribute>
  <xref:System.Security?displayProperty=fullName>
-
-
-

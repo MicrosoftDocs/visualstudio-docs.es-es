@@ -1,25 +1,20 @@
 ---
 title: Iniciar | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: b85d0fe9-f67a-4b7c-8d48-7eecf3f2dfe9
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6c2f52a000cdf5eaa1a1ef4b9afeb141500f1911
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 83dc76e3e92a05f936d94c8cd0f6a2b9b69e4cc1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51724179"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073558"
 ---
 # <a name="start"></a>Iniciar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,13 +31,13 @@ VSPerfCmd.exe /Start:Method /Output:FileName [Options]
  `Method`  
  Debe ser una de las siguientes palabras clave:  
   
--   **TRACE**: especifica el método de instrumentación.  
+- **TRACE**: especifica el método de instrumentación.  
   
--   **SAMPLE**: especifica el método de muestreo.  
+- **SAMPLE**: especifica el método de muestreo.  
   
--   **COVERAGE**: especifica la cobertura de código.  
+- **COVERAGE**: especifica la cobertura de código.  
   
--   **CONCURRENCY**: especifica el método de contención de recursos.  
+- **CONCURRENCY**: especifica el método de contención de recursos.  
   
 ## <a name="required-options"></a>Opciones necesarias  
  La opción **Salida** debe especificarse cuando se especifica **Iniciar** en la línea de comandos.  
@@ -84,6 +79,3 @@ VSPerfCmd.exe /Launch:TestApp.exe
  [Generar perfiles para aplicaciones independientes](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [Generar perfiles para aplicaciones web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [Generar perfiles de servicios](../profiling/command-line-profiling-of-services.md)
-
-
-

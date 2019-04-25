@@ -1,29 +1,24 @@
 ---
-title: 'Cómo: Pausar y reanudar la recolección de datos de rendimiento | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Pausar y reanudar la recopilación de datos de rendimiento | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - profiling tools, remote profiling
 ms.assetid: b8e76363-65cd-424d-8173-3e2b5f54203b
 caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ebffd85a3895a47ebaaa4e9739452c862ac8c4b7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1edfb882838907503a0df106da2181c283f29d9a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798647"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054006"
 ---
-# <a name="how-to-pause-and-resume-performance-data-collection"></a>Cómo: Pausar y reanudar la recolección de datos de rendimiento
+# <a name="how-to-pause-and-resume-performance-data-collection"></a>Procedimiento Pausar y reanudar la recolección de datos de rendimiento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 En la ventana de la página de la sesión de generación de perfiles, puede controlar la recolección de datos de generación de perfiles de forma interactiva.  
@@ -37,17 +32,14 @@ En la ventana de la página de la sesión de generación de perfiles, puede cont
   
 ### <a name="to-pause--resume-or-stop-profiling"></a>Para pausar, reanudar o detener la generación de perfiles  
   
--   En la página de la sesión de generación de perfiles:  
+- En la página de la sesión de generación de perfiles:  
   
-    -   Elija **Pausar recolección** para suspender la recolección de datos.  
+    - Elija **Pausar recolección** para suspender la recolección de datos.  
   
-    -   Elija **Reanudar recolección** para reiniciar la recolección de datos después de haberla pausado.  
+    - Elija **Reanudar recolección** para reiniciar la recolección de datos después de haberla pausado.  
   
-    -   Elija **Detener generación de perfiles** para finalizar la sesión de generación de perfiles y generar informes.  
+    - Elija **Detener generación de perfiles** para finalizar la sesión de generación de perfiles y generar informes.  
   
 ## <a name="see-also"></a>Vea también  
  [Controlar la recopilación de datos](../profiling/controlling-data-collection.md)   
- [Cómo: Iniciar y finalizar la recopilación de datos de rendimiento](../profiling/how-to-start-and-end-performance-data-collection.md)
-
-
-
+ [Cómo: Inicio y finalización de la recopilación de datos de rendimiento](../profiling/how-to-start-and-end-performance-data-collection.md)

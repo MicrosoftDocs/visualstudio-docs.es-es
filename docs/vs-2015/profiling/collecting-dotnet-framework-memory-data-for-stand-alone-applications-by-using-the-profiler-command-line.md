@@ -1,25 +1,20 @@
 ---
 title: Recopilar datos de memoria de .NET Framework para aplicaciones independientes mediante la línea de comandos del generador de perfiles | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 7bce69e2-407c-4342-8516-641586968928
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: fc3a109f66a7f761cf31dc6892207a00cc484148
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 37609a2ee4b52931c8df1a95af9d494e64bb473e
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53866366"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54834137"
 ---
 # <a name="collecting-net-framework-memory-data-for-stand-alone-applications-by-using-the-profiler-command-line"></a>Recopilar datos de memoria de .NET Framework para aplicaciones independientes utilizando la línea de comandos del generador de perfiles
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,6 +52,3 @@ En esta sección se describen los procedimientos y las opciones para recopilar d
   
 ## <a name="reference"></a>Referencia  
  [Referencia de las herramientas de generación de perfiles de la línea de comandos](../profiling/command-line-profiling-tools-reference.md)
-
-
-

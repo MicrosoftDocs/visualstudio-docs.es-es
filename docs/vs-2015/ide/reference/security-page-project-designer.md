@@ -1,14 +1,9 @@
 ---
 title: Página Seguridad, Diseñador de proyectos | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesSecurity
 - vb.XBAPProjectPropertiesSecurity
@@ -23,18 +18,17 @@ ms.assetid: 641d9cd3-fa07-498a-8568-3c169bb4d3d5
 caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 967ce9221313c88b10a792f15ffaec80da99de03
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: cc6c7af3732f2f96ad53651b146898b655b68fdd
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49267818"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59647942"
 ---
 # <a name="security-page-project-designer"></a>Página Seguridad, Diseñador de proyectos
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 La página **Seguridad** del **Diseñador de proyectos** se usa para configurar las opciones de seguridad de acceso del código para las aplicaciones que se implementan con la implementación de [!INCLUDE[ndptecclick](../../includes/ndptecclick-md.md)]. Para obtener más información, vea [Code Access Security for ClickOnce Applications](../../deployment/code-access-security-for-clickonce-applications.md) (Seguridad de acceso del código para aplicaciones ClickOnce).  
   
  Para obtener acceso a la página **Seguridad**, haga clic en un nodo de proyecto en el **Explorador de soluciones** y, después, en el menú **Proyecto**, haga clic en **Propiedades**. Cuando se muestre el **Diseñador de proyectos**, haga clic en la pestaña **Seguridad**.  
@@ -46,7 +40,7 @@ La página **Seguridad** del **Diseñador de proyectos** se usa para configurar 
 > [!NOTE]
 >  Al publicar una aplicación mediante el uso del asistente para **Publicar**, esta opción se habilita automáticamente.  
   
- Cuando se selecciona esta opción, puede elegir uno de dos botones de radio: **Aplicación de plena confianza** o **Aplicación de confianza parcial**.  
+ Cuando se selecciona esta opción, existe la opción de seleccionar uno de los dos botones de radio: **Aplicación de plena confianza** o **Esta es una aplicación de confianza parcial**.  
   
  De forma predeterminada, para los proyectos de aplicación de explorador web de WPF, esta opción está activada.  
   
@@ -80,13 +74,10 @@ La página **Seguridad** del **Diseñador de proyectos** se usa para configurar 
  <xref:System.Security.Permissions.WebBrowserPermission>   
  <xref:System.Security.Permissions.MediaPermission>   
  [Seguridad de acceso del código para aplicaciones ClickOnce](../../deployment/code-access-security-for-clickonce-applications.md)   
- [Cómo: Habilitar la configuración de seguridad de ClickOnce](../../deployment/how-to-enable-clickonce-security-settings.md)   
+ [Cómo: Habilitar a la configuración de seguridad de ClickOnce](../../deployment/how-to-enable-clickonce-security-settings.md)   
  [Cómo: Establecer una zona de seguridad para una aplicación ClickOnce](../../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
  [Cómo: Establecer permisos personalizados para una aplicación ClickOnce](../../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
  [Cómo: Depurar una aplicación ClickOnce con permisos restringidos](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
  [Seguridad e implementación ClickOnce](../../deployment/clickonce-security-and-deployment.md)   
  [Referencia de propiedades del proyecto](../../ide/reference/project-properties-reference.md)   
  [Configuración de seguridad avanzada (Cuadro de diálogo)](../../ide/reference/advanced-security-settings-dialog-box.md)
-
-
-

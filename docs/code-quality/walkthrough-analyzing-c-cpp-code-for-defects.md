@@ -1,7 +1,6 @@
 ---
 title: 'Tutorial: Analizar código de C/C++ en busca de defectos'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - C/C++, code analysis
@@ -13,12 +12,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3a35bc07c9fe6478107162b625a824b6344898f1
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: acfa1e274b7c0744c2d9968682960b1cd50e0044
+ms.sourcegitcommit: 2dc924c96a6d48803c8eedc3d6781202629b41fa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53829516"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "57736930"
 ---
 # <a name="walkthrough-analyzing-cc-code-for-defects"></a>Tutorial: Analizar código de C/C++ en busca de defectos
 
@@ -66,9 +65,9 @@ Este tutorial muestra cómo analizar el código de C/C ++ en previsión de defec
 
 2. En el **lista de errores**, haga doble clic en la siguiente advertencia:
 
-     Advertencia C6230: Conversión implícita entre tipos semánticamente diferentes: usando HRESULT en un contexto booleano.
+     warning C6230: Conversión implícita entre tipos semánticamente diferentes: usando HRESULT en un contexto booleano.
 
-     El editor de código muestra la línea que produjo la advertencia en la función `bool``ProcessDomain()`. Esta advertencia indica que se está utilizando un valor de HRESULT en una instrucción 'if' donde se espera un resultado booleano.
+     El editor de código muestra la línea que produjo la advertencia en la función `bool ProcessDomain()`. Esta advertencia indica que se está utilizando un valor de HRESULT en una instrucción 'if' donde se espera un resultado booleano.
 
 3. Corregir esta advertencia mediante la macro SUCCEEDED. El código debe ser similar el código siguiente:
 
@@ -78,7 +77,7 @@ Este tutorial muestra cómo analizar el código de C/C ++ en previsión de defec
 
 4. En el **lista de errores**, haga doble clic en la siguiente advertencia:
 
-     Advertencia C6282: Operador incorrecto: asignación de constante en el contexto de la prueba. ¿Pretendía indicar ==?
+     warning C6282: Operador incorrecto: asignación de constante en el contexto de la prueba. ¿Pretendía indicar ==?
 
 5. Corregir esta advertencia mediante la comprobación de igualdad. El código debe ser similar al código siguiente:
 

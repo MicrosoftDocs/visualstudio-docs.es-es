@@ -1,27 +1,22 @@
 ---
 title: 'Vista Líneas: datos de muestreo | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Lines view
 ms.assetid: 46497249-c797-42c5-a02c-3e4bb3b4ee60
 caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c4cd360e120b9747a16234aa28c42912de4254b6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: ade498586f7d0a675ad2fe770a21435604ec57d5
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51734660"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54752543"
 ---
 # <a name="lines-view---sampling-data"></a>Vista Líneas: datos de muestreo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,6 +64,3 @@ La vista Líneas de datos de muestreo muestra los datos de rendimiento de las in
   
 ## <a name="see-also"></a>Vea también  
  [Vista Líneas: muestreo](../profiling/lines-view-dotnet-memory-sampling-data.md)
-
-
-

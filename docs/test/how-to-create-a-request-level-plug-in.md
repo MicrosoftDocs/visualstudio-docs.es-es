@@ -8,14 +8,13 @@ helpviewer_keywords:
 ms.assetid: d0b5b23c-7e94-4637-be6c-2620a5442d46
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 4d2463c9c81e963494ed6865956b6e9c36934e07
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 6aec2dfe707fb7c7cbae6a3220cedade47e0c0c5
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53988928"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415556"
 ---
 # <a name="how-to-create-a-request-level-plug-in"></a>Procedimiento para crear un complemento de nivel de solicitud
 
@@ -33,50 +32,42 @@ Puede utilizar complementos de solicitud de prueba de rendimiento web personaliz
 
 1.  En el **Explorador de soluciones**, haga clic con el botón derecho en la solución, seleccione **Agregar** y luego elija **Nuevo proyecto**.
 
-     Aparecerá el cuadro de diálogo **Agregar nuevo proyecto**.
+2. Cree un proyecto de **Biblioteca de clases**.
 
-2.  En **Plantillas instaladas**, seleccione **Visual C#**.
-
-3.  En la lista de plantillas, seleccione **Biblioteca de clases**.
-
-4.  En el cuadro de texto **Nombre**, escriba un nombre para la clase y elija **Aceptar**.
-
-     El nuevo proyecto de biblioteca de clases se agrega al **Explorador de soluciones** y la nueva clase aparece en el **Editor de código**.
-
-5.  En el **Explorador de soluciones**, haga clic con el botón derecho en la carpeta **Referencias** de la nueva biblioteca de clases y seleccione **Agregar referencia**.
+3.  En el **Explorador de soluciones**, haga clic con el botón derecho en la carpeta **Referencias** de la nueva biblioteca de clases y seleccione **Agregar referencia**.
 
      Aparecerá el cuadro de diálogo **Agregar referencia**.
 
-6.  Elija la pestaña **.NET**, desplácese hacia abajo, seleccione **Microsoft.VisualStudio.QualityTools.WebTestFramework** y, luego, elija **Aceptar**.
+4.  Elija la pestaña **.NET**, desplácese hacia abajo, seleccione **Microsoft.VisualStudio.QualityTools.WebTestFramework** y, luego, elija **Aceptar**.
 
      La referencia a **Microsoft.VisualStudio.QualityTools.WebTestFramework** se agrega a la carpeta **Referencias** del **Explorador de soluciones**.
 
-7.  En el **Explorador de soluciones**, haga clic con el botón derecho en el nodo superior del proyecto de prueba de carga y rendimiento web que contiene la prueba de carga a la que quiere agregar el complemento de prueba de solicitud de prueba de rendimiento web. Seleccione **Agregar referencia**.
+5.  En el **Explorador de soluciones**, haga clic con el botón derecho en el nodo superior del proyecto de prueba de carga y rendimiento web que contiene la prueba de carga a la que quiere agregar el complemento de prueba de solicitud de prueba de rendimiento web. Seleccione **Agregar referencia**.
 
      Aparecerá el cuadro de diálogo **Agregar referencia**.
 
-8.  Elija la pestaña **Proyectos**, seleccione el **proyecto de biblioteca de clases** y luego haga clic en **Aceptar**.
+6.  Elija la pestaña **Proyectos**, seleccione el **proyecto de biblioteca de clases** y luego haga clic en **Aceptar**.
 
-9. En el **Editor de código**, escriba el código del complemento. En primer lugar, cree una clase pública derivada de <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin>.
+7. En el **Editor de código**, escriba el código del complemento. En primer lugar, cree una clase pública derivada de <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin>.
 
-10. Implemente el código dentro de uno de los controladores de eventos <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin.PreRequest*> y <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin.PostRequest*> o en ambos. Vea una implementación del ejemplo en la sección Ejemplo siguiente.
+8. Implemente el código dentro de uno de los controladores de eventos <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin.PreRequest*> y <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin.PostRequest*> o en ambos. Vea una implementación del ejemplo en la sección Ejemplo siguiente.
 
-11. Cuando haya terminado de escribir el código, compile el nuevo proyecto.
+9. Cuando haya terminado de escribir el código, compile el nuevo proyecto.
 
-12. Abra la prueba de rendimiento web a la que desea agregar el complemento de solicitud.
+10. Abra la prueba de rendimiento web a la que desea agregar el complemento de solicitud.
 
-13. Haga clic con el botón derecho en la solicitud a la que quiere agregar el complemento de solicitud y, luego, seleccione **Agregar complemento de solicitud**.
+11. Haga clic con el botón derecho en la solicitud a la que quiere agregar el complemento de solicitud y, luego, seleccione **Agregar complemento de solicitud**.
 
      Se muestra el cuadro de diálogo **Agregar complemento de solicitudes de prueba web**.
 
-14. En **Seleccionar un complemento**, seleccione el nuevo complemento.
+12. En **Seleccionar un complemento**, seleccione el nuevo complemento.
 
-15. En el panel **Propiedades del complemento seleccionado**, establezca los valores iniciales que el complemento va a usar en tiempo de ejecución.
+13. En el panel **Propiedades del complemento seleccionado**, establezca los valores iniciales que el complemento va a usar en tiempo de ejecución.
 
     > [!NOTE]
     > Puede exponer tantas propiedades de los complementos como desee; basta con hacerlas públicas, que se puedan establecer y que tengan un tipo base como Integer, Boolean o String. También puede cambiar las propiedades del complemento de prueba de rendimiento web más tarde en la ventana Propiedades.
 
-16. Elija **Aceptar**.
+14. Elija **Aceptar**.
 
      El complemento se agrega a la carpeta **Complementos de solicitud**, que es una carpeta secundaria de la solicitud HTTP.
 
@@ -87,8 +78,8 @@ Puede utilizar complementos de solicitud de prueba de rendimiento web personaliz
     >
     > Esto ocurre si realiza cambios en el código de cualquier complemento y crea una nueva versión de DLL **(Version=0.0.0.0)**, pero el complemento sigue haciendo referencia a la versión original del complemento. Para corregir este problema, siga estos pasos:
     >
-    > 1.  En el proyecto de prueba de carga y rendimiento web, aparecerá una advertencia en las referencias. Quite y vuelva a agregar la referencia al archivo DLL del complemento.
-    > 2.  Quite el complemento de la prueba o de la ubicación apropiada y, a continuación, agréguelo de nuevo.
+    > 1. En el proyecto de prueba de carga y rendimiento web, aparecerá una advertencia en las referencias. Quite y vuelva a agregar la referencia al archivo DLL del complemento.
+    > 2. Quite el complemento de la prueba o de la ubicación apropiada y, a continuación, agréguelo de nuevo.
 
 ## <a name="example"></a>Ejemplo
 

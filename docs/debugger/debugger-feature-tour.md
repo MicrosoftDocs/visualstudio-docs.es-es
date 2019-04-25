@@ -1,23 +1,23 @@
 ---
-title: Depuración de aplicaciones con Visual Studio
+title: Primer vistazo al depurador
 description: Empiece a depurar aplicaciones mediante el depurador de Visual Studio
-ms.custom: mvc
-ms.date: 01/09/2019
+ms.custom: seoapril2019
+ms.date: 04/08/2019
 ms.topic: quickstart
 helpviewer_keywords:
 - debugger
 ms.assetid: c763d706-3213-494f-b4d2-990b6e1ec456
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6363149165c9718300eec1074fdfc006709b3d3
-ms.sourcegitcommit: 01185dadd2fa1f9a040d2a366869f1a5e1d18e0f
+ms.openlocfilehash: 78b27626c457b857f6f0ce195852922f2d5c89de
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54227894"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366775"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Primer vistazo al depurador de Visual Studio
 
@@ -27,7 +27,7 @@ Las características que se explican aquí son aplicables a C#, C++, Visual Basi
 
 ## <a name="set-a-breakpoint-and-start-the-debugger"></a>Establecer un punto de interrupción e iniciar el depurador
 
-Para depurar, tiene que iniciar la aplicación con el depurador asociado al proceso de la aplicación. **F5** (**Depurar > Iniciar depuración**) es la forma más habitual de hacerlo. Pero de momento es posible que no haya establecido ningún punto de interrupción para examinar el código de la aplicación, por lo que eso es lo que se va a hacer primero y luego se va a iniciar la depuración. Los puntos de interrupción son la característica más básica y esencial para una depuración confiable. Un punto de interrupción indica dónde Visual Studio debe suspender la ejecución de código para poder echar un vistazo a los valores de las variables o al comportamiento de la memoria, o determinar si se está ejecutando o no una bifurcación de código. 
+Para depurar, tiene que iniciar la aplicación con el depurador asociado al proceso de la aplicación. **F5** (**Depurar > Iniciar depuración**) es la forma más habitual de hacerlo. Pero de momento es posible que no haya establecido ningún punto de interrupción para examinar el código de la aplicación, por lo que eso es lo que se va a hacer primero y luego se va a iniciar la depuración. Los puntos de interrupción son la característica más básica y esencial para una depuración confiable. Un punto de interrupción indica dónde Visual Studio debe suspender la ejecución de código para poder echar un vistazo a los valores de las variables o al comportamiento de la memoria, o determinar si se está ejecutando o no una bifurcación de código.
 
 Si tiene un archivo abierto en el editor de código, puede establecer un punto de interrupción si hace clic en el margen situado a la izquierda de una línea de código.
 
@@ -77,7 +77,7 @@ En el depurador, mantenga el puntero sobre una línea de código hasta que el bo
 ![Ejecutar hasta clic](../debugger/media/dbg-tour-run-to-click-2.png "Run to click")
 
 > [!NOTE]
-> El botón **Ejecutar hasta clic** (ejecutar hasta aquí) es nuevo en [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
+> El botón **Ejecutar hasta clic** (Ejecutar hasta aquí) está disponible a partir de [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
 
 Haga clic en el botón **Ejecutar hasta clic** (ejecutar hasta aquí). El depurador avanza hasta la línea de código donde se ha hecho clic.
 
@@ -185,10 +185,10 @@ En este ejemplo, el **Asistente de excepciones** muestra una excepción `System.
 
 En este ejemplo, la llamada a `DirectoryInfo` ha producido el error en la cadena vacía almacenada en la variable `value`.
 
-El Asistente de excepciones es una característica excelente que puede ayudar a depurar errores. También se pueden hacer cosas como ver detalles de errores y agregar una inspección desde el Asistente de excepciones. O bien, si fuera necesario, se pueden cambiar las condiciones para producir la excepción concreta. Para obtener más información sobre cómo controlar las excepciones en el código, vea [Fix bugs by writing better C# code](../debugger/write-better-code-with-visual-studio.md) (Mejora de la escritura de código de C# para corregir errores).
+El Asistente de excepciones es una característica excelente que puede ayudar a depurar errores. También se pueden hacer cosas como ver detalles de errores y agregar una inspección desde el Asistente de excepciones. O bien, si fuera necesario, se pueden cambiar las condiciones para producir la excepción concreta. Para más información sobre cómo controlar las excepciones en el código, vea [Técnicas y herramientas de depuración](../debugger/write-better-code-with-visual-studio.md).
 
 > [!NOTE]
-> El Asistente de excepciones reemplaza al de [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
+> El Asistente de excepciones ha reemplazado al Asistente de excepciones a partir de [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
 
 Expanda el nodo **Configuración de excepciones** para ver más opciones para controlar este tipo de excepción sin necesidad de cambiar nada de este paseo.
 

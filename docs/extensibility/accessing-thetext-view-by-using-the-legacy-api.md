@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 8f751f72-c972-4be3-84ee-19c281e02e25
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f1878c1e3769ffaa8aedd4c4d0f26349d6f097d2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bce39d8ae736d9f7dcda8b18198053f90933b811
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53943842"
+ms.lasthandoff: 02/18/2019
+ms.locfileid: "56335511"
 ---
 # <a name="access-the-text-view-by-using-the-legacy-api"></a>Obtener acceso a la vista de texto mediante la API heredada
 Una vista de texto es una presentación del texto que se almacena en un búfer de texto. Puede tener acceso a la vista de texto mediante el uso de la API heredada tal como se muestra en la sección siguiente.
@@ -23,7 +23,7 @@ Una vista de texto es una presentación del texto que se almacena en un búfer d
 ## <a name="text-view-object"></a>Objeto de vista de texto
  Cada vista está asociado con su propio búfer de texto y la vista es una ventana en los datos en el búfer. El siguiente diagrama muestra las interfaces del objeto de vista de texto, que viene representado por clave <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>.
 
- ![Objeto de vista de texto de Visual Studio](../extensibility/media/vstextview.gif "objeto vstextview") objeto de vista de texto
+ ![Objeto de vista de texto de Visual Studio](../extensibility/media/vstextview.gif)
 
  La vista es una forma de presentar el texto en el búfer. Incluye características como ajuste de línea y la esquematización, por lo que lo que ve en la vista no es una representación exacta del texto en el búfer.
 

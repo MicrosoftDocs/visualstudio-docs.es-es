@@ -1,14 +1,9 @@
 ---
 title: Comando Reemplazar en archivos | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - edit.replaceinfiles
 helpviewer_keywords:
@@ -19,18 +14,17 @@ ms.assetid: f116066a-4f65-4f2c-94ef-12cbd8cfb598
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: eba6dfcf95c006fb05d4faaa0c370c9dba56e4e7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 8398f07cf6fa6bd2702b2d84ab0d29dcd614ed32
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49197670"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652312"
 ---
 # <a name="replace-in-files-command"></a>Reemplazar en archivos (Comando)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Reemplaza texto de los archivos mediante el uso de un subconjunto de las opciones disponibles en la pestaña **Reemplazar en archivos** de la ventana **Buscar y reemplazar**.  
   
 ## <a name="syntax"></a>Sintaxis  
@@ -43,10 +37,10 @@ Edit.ReplaceinFiles findwhat replacewith [/all] [/case]
   
 ## <a name="arguments"></a>Argumentos  
  `findwhat`  
- Requerido. Texto que debe coincidir.  
+ Obligatorio. Texto que debe coincidir.  
   
  `replacewith`  
- Requerido. Texto que va a sustituir el texto coincidente.  
+ Obligatorio. Texto que va a sustituir el texto coincidente.  
   
 ## <a name="switches"></a>Modificadores  
  /all o /a  
@@ -106,6 +100,3 @@ Edit.ReplaceinFiles findwhat replacewith [/all] [/case]
  [Cuadro Buscar/Comando](../../ide/find-command-box.md)   
  [Comandos de Visual Studio](../../ide/reference/visual-studio-commands.md)   
  [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
-
-
-

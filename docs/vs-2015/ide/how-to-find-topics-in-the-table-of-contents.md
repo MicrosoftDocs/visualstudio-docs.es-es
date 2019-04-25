@@ -1,14 +1,9 @@
 ---
-title: 'Cómo: buscar temas en la tabla de contenido | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Buscar temas en la tabla de contenido | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - hv_contents
 helpviewer_keywords:
@@ -20,15 +15,15 @@ ms.assetid: 8b98464d-2b05-4710-ad68-5647e78c6b7b
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 7805113a1d35b352c048711f7ce4aa634ad4cb5e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: e439521d9a81bc418eb403bb87ee9576605b8e66
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49292752"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055503"
 ---
-# <a name="how-to-find-topics-in-the-table-of-contents"></a>Cómo: Buscar temas en la tabla de contenido
+# <a name="how-to-find-topics-in-the-table-of-contents"></a>Procedimiento Buscar temas en la tabla de contenido
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 En la pestaña **Contenido**, puede usar la tabla de contenido (TDC) para buscar información. La tabla de contenido es una lista ampliable que contiene todos los temas en los libros instalados. Para obtener información de accesibilidad sobre cómo navegar por la TDC, vea [Teclas de método abreviado (Visor de Ayuda)](../ide/shortcut-keys-help-viewer.md).  
@@ -41,9 +36,9 @@ En la pestaña **Contenido**, puede usar la tabla de contenido (TDC) para buscar
   
 #### <a name="to-filter-the-toc"></a>Para filtrar la TDC  
   
-1.  Elija la pestaña **Contenido**.  
+1. Elija la pestaña **Contenido**.  
   
-2.  En el cuadro de texto **Filtrar contenido**, escriba un término.  
+2. En el cuadro de texto **Filtrar contenido**, escriba un término.  
   
 > [!NOTE]
 >  Si el filtro tarda mucho tiempo en ejecutarse, puede mostrar resultados más rápidamente mediante el operador de búsqueda avanzada `title:`.  
@@ -53,15 +48,12 @@ En la pestaña **Contenido**, puede usar la tabla de contenido (TDC) para buscar
   
 #### <a name="to-synchronize-the-toc-with-the-topic-window"></a>Para sincronizar la TDC con la ventana del tema  
   
-1.  Consulte un tema.  
+1. Consulte un tema.  
   
-2.  Haga clic en el **Mostrar tema en contenido** situado en la barra de herramientas o presione CTRL+s.  
+2. Haga clic en el botón **Mostrar tema en contenido** en la barra de herramientas o presione Ctrl+S.  
   
      Se abre la pestaña **Contenido** y se muestra la ubicación del tema en la TDC.  
   
 ## <a name="see-also"></a>Vea también  
  [Encontrar información](../ide/locate-information.md)   
  [Visor de Ayuda de Microsoft](../ide/microsoft-help-viewer.md)
-
-
-

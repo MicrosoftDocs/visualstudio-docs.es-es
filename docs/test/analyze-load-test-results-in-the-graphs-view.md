@@ -14,14 +14,13 @@ helpviewer_keywords:
 ms.assetid: 4a919cd8-541c-40ee-be3b-352fabc56140
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: f27689d5e3c322a539a0db5ee1f93c569cb181a5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: c48fe67c8d52f962589c9f8628ff49f12f7770c5
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53914562"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55970561"
 ---
 # <a name="analyze-load-test-results-in-the-graphs-view-of-the-load-test-analyzer"></a>Analizar los resultados de pruebas de carga en la vista Gráficos del Analizador de pruebas de carga
 

@@ -1,7 +1,6 @@
 ---
 title: Adición de parámetros de nombre a las plantillas de proyecto y de elemento
 ms.date: 01/02/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - template parameters
@@ -9,15 +8,15 @@ helpviewer_keywords:
 - Visual Studio templates, using parameters
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: fa06783acf3feaa863b788c3c0b976b0c762d0c8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: cf9a990be3f5e87180967a4f9f274ec79fbc357e
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986913"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55943342"
 ---
-# <a name="how-to-substitute-parameters-in-a-template"></a>Procedimiento Sustituir parámetros en una plantilla
+# <a name="how-to-substitute-parameters-in-a-template"></a>Filtrar Sustituir parámetros en una plantilla
 
 Los parámetros de plantilla le permiten reemplazar identificadores, como nombres de clase y espacios de nombres, cuando se crea un archivo a partir de una plantilla. Puede agregar parámetros de plantilla a una plantilla o bien crear sus propias plantillas con dichos parámetros.
 
@@ -25,7 +24,7 @@ Los parámetros de plantilla se escriben con el formato $*parámetro*$. Para obt
 
 En la sección siguiente se muestra cómo modificar una plantilla para reemplazar el nombre de un espacio de nombres con el nombre del proyecto "seguro".
 
-## <a name="to-use-a-parameter-to-replace-the-namespace-name"></a>Para usar un parámetro para reemplazar el nombre de espacio de nombres
+## <a name="example---namespace-name"></a>Ejemplo: nombre del espacio de nombres
 
 1. Inserte el parámetro en uno o varios archivos de código en la plantilla. Por ejemplo:
 

@@ -14,15 +14,15 @@ helpviewer_keywords:
 - _AssemblyName property
 author: John-Hart
 ms.author: johnhart
-manager: douge
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8fe5c77827c23f5547f8e5bd411a33b03bfd37f8
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 7b3f4038a05478d8e2d747efa700c7ece02e4827
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54349509"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56614433"
 ---
 # <a name="custom-document-properties-overview"></a>Información general sobre propiedades de documento personalizadas
 

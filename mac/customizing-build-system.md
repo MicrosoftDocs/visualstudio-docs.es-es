@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 04/14/2017
 ms.assetid: 6958B102-8527-4B40-BC65-3505DB63F9D3
-ms.openlocfilehash: 7fbd275e3e946461559db41668a749cd6631ba09
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 0c2a4590b15faa2573ccab3ff51ff5cd54e177ca
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296312"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953852"
 ---
 # <a name="customizing-the-build-system"></a>Personalización del sistema de compilación
 
@@ -66,14 +66,14 @@ Por ejemplo, el elemento PropertyGroup de una aplicación de consola sencilla po
 
 ```xml
 <PropertyGroup>
-        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-        <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-        <ProjectGuid>{E248730E-1393-43CC-9183-FFA42F63BE81}</ProjectGuid>
-        <OutputType>Exe</OutputType>
-        <RootNamespace>refactoring</RootNamespace>
-        <AssemblyName>refactoring</AssemblyName>
-        <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
-    </PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{E248730E-1393-43CC-9183-FFA42F63BE81}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>refactoring</RootNamespace>
+    <AssemblyName>refactoring</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+</PropertyGroup>
 ```
 
 Con la sintaxis `$()` se puede hacer referencia a propiedades desde expresiones. Por ejemplo, `$(Foo)` se evalúa como el valor de la propiedad `Foo`. Si no se ha establecido la propiedad, se evalúa como una cadena vacía, sin ningún error.

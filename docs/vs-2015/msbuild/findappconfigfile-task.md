@@ -1,14 +1,9 @@
 ---
 title: Tarea FindAppConfigFile | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -21,18 +16,17 @@ ms.assetid: e292de3e-7482-4426-83ce-d921061808bf
 caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 28f1178431816948f711ea44d3818ff46620ca57
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: fb9e1f3fbdc1a6f4d7c4e2c589f620f331a904ed
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49251739"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663195"
 ---
 # <a name="findappconfigfile-task"></a>FindAppConfigFile (Tarea)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Busca el archivo app.config, si hay alguno, en las listas proporcionadas.  
   
 ## <a name="parameters"></a>Parámetros  
@@ -51,6 +45,3 @@ Busca el archivo app.config, si hay alguno, en las listas proporcionadas.
 ## <a name="see-also"></a>Vea también  
  [Tareas](../msbuild/msbuild-tasks.md)   
  [Referencia de tareas](../msbuild/msbuild-task-reference.md)
-
-
-

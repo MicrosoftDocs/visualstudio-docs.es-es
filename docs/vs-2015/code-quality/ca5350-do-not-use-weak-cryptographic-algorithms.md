@@ -1,26 +1,21 @@
 ---
-title: 'CA5350: No Use algoritmos criptográficos no seguros | Microsoft Docs'
-ms.custom: ''
+title: 'CA5350: No Use algoritmos criptográficos no seguros | Documentos de Microsoft'
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 ms.assetid: 4c51bb8a-fcfa-46aa-ab61-634be84c4a7a
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c22c10467c620d41e0cc73ab763a260f278f8a34
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 0f1aee9fb3790a5ba7b766eba22f2ec6420dacfd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49234232"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041774"
 ---
-# <a name="ca5350-do-not-use-weak-cryptographic-algorithms"></a>CA5350: No use algoritmos criptográficos no seguros
+# <a name="ca5350-do-not-use-weak-cryptographic-algorithms"></a>CA5350: No usar algoritmos criptográficos no seguros
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||  
@@ -46,9 +41,9 @@ ms.locfileid: "49234232"
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones  
  Use opciones de criptografía más segura:  
   
--   Para el cifrado TripleDES, use el cifrado <xref:System.Security.Cryptography.Aes> .  
+- Para el cifrado TripleDES, use el cifrado <xref:System.Security.Cryptography.Aes> .  
   
--   Para las funciones hash SHA1 o RIPEMD160, use los de la familia [SHA-2](https://msdn.microsoft.com/en-us/library/windows/desktop/aa382459.aspx) (por ejemplo, <xref:System.Security.Cryptography.SHA512>, <xref:System.Security.Cryptography.SHA384>y <xref:System.Security.Cryptography.SHA256>).  
+- Para las funciones hash SHA1 o RIPEMD160, use los de la familia [SHA-2](https://msdn.microsoft.com/library/windows/desktop/aa382459.aspx) (por ejemplo, <xref:System.Security.Cryptography.SHA512>, <xref:System.Security.Cryptography.SHA384>y <xref:System.Security.Cryptography.SHA256>).  
   
 ## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias  
  Suprima una advertencia de esta regla cuando el nivel de protección necesario para los datos no requiera una garantía de seguridad.  

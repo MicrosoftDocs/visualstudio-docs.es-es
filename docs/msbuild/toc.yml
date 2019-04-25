@@ -2,6 +2,8 @@ items:
 - name: MsBuild
   href: msbuild.md
   items:
+  - name: Novedades de MSBuild 16.0
+    href: whats-new-msbuild-16-0.md
   - name: Novedades de MSBuild 15.0
     href: what-s-new-in-msbuild-15-0.md
   - name: Conceptos de MSBuild
@@ -246,7 +248,7 @@ items:
           href: xdcmake-task.md
         - name: XSD (tarea)
           href: xsd-task.md
-      - name: Base de tarea (Clase)
+      - name: Task Base (Clase)
         href: task-base-class.md
       - name: TaskExtension (Clase base)
         href: taskextension-base-class.md
@@ -310,6 +312,8 @@ items:
         href: generatetrustinfo-task.md
       - name: GetAssemblyIdentity (Tarea)
         href: getassemblyidentity-task.md
+      - name: Tarea GetFileHash
+        href: getfilehash-task.md
       - name: GetFrameworkPath (Tarea)
         href: getframeworkpath-task.md
       - name: GetFrameworkSdkPath (Tarea)
@@ -362,6 +366,8 @@ items:
         href: updatemanifest-task.md
       - name: Vbc (Tarea)
         href: vbc-task.md
+      - name: Tarea VerifyFileHash
+        href: verifyfilehash-task.md
       - name: Warning (Tarea)
         href: warning-task.md
       - name: WriteCodeFragment (Tarea)
@@ -429,9 +435,9 @@ items:
       href: updating-an-existing-application.md
   - name: Glosario de MSBuild
     href: msbuild-glossary.md
-ms.openlocfilehash: f5b1a327a1f7ebb2d654c74ef04159f0a1f6ba4c
-ms.sourcegitcommit: 935e341a02dba1c2aa3b6e89469388aa6e626f7f
+ms.openlocfilehash: f05970702d32b15fb27add1adf8dca28a25c4b13
+ms.sourcegitcommit: 4c7a0c2d712eb24609216577a793e912a6083eaf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53684618"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57983044"

@@ -1,23 +1,24 @@
 ---
 layout: LandingPage
 title: Implementación de aplicaciones | Microsoft Docs
-description: Obtenga información sobre cómo usar Visual Studio 2017 para implementar aplicaciones, servicios y componentes.
+description: Obtenga información sobre cómo usar Visual Studio para implementar aplicaciones, servicios y componentes.
 ms.custom: seodec18
 ms.topic: landing-page
-ms.prod: visual-studio-dev15
 ms.author: mikejo
 author: mikejo5000
-manager: douge
-ms.openlocfilehash: 875549bcc1158542fe19da05711a6d39bb4efb25
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: b1ffebc17d7915c7845a27cc2864623fa2f2d263
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53893463"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58325021"
 ---
 # <a name="deployment-in-visual-studio"></a>Implementación en Visual Studio
 
 Visual Studio proporciona diferentes herramientas para ayudarle a implementar sus aplicaciones.
+
+<!-- markdownlint-disable MD033 -->
 
 <h2>Experimente la implementación de Visual Studio con guías de inicio rápido de 5 minutos</h2>
 
@@ -83,7 +84,7 @@ Visual Studio proporciona diferentes herramientas para ayudarle a implementar su
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="Deploy to Azure App Service">
+                            <img src="https://docs.microsoft.com/media/logos/logo_azure.svg" alt="Deploy to Azure App Service">
                         </div>
                     </div>
                     <div class="cardText">
@@ -101,7 +102,7 @@ Visual Studio proporciona diferentes herramientas para ayudarle a implementar su
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="Deploy to Azure App Service">
+                            <img src="https://docs.microsoft.com/media/logos/logo_azure.svg" alt="Deploy to Azure App Service">
                         </div>
                     </div>
                     <div class="cardText">
@@ -124,7 +125,7 @@ Visual Studio proporciona diferentes herramientas para ayudarle a implementar su
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/logos/logo_net.svg" alt="Deploy ASP.NET to Azure">
+                            <img src="https://docs.microsoft.com/media/logos/logo_azure.svg" alt="Deploy ASP.NET to Azure">
                         </div>
                     </div>
                     <div class="cardText">
@@ -160,7 +161,7 @@ Visual Studio proporciona diferentes herramientas para ayudarle a implementar su
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/logos/logo_net.svg" alt="Deploy a .NET core app">
+                            <img src="https://docs.microsoft.com/media/logos/logo_NETcore.svg" alt="Deploy a .NET core app">
                         </div>
                     </div>
                     <div class="cardText">
@@ -196,7 +197,7 @@ Visual Studio proporciona diferentes herramientas para ayudarle a implementar su
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/logos/logo_net.svg" alt="Import publish settings and deploy to Azure App Service">
+                            <img src="https://docs.microsoft.com/media/logos/logo_azure.svg" alt="Import publish settings and deploy to Azure App Service">
                         </div>
                     </div>
                     <div class="cardText">
@@ -254,7 +255,7 @@ Visual Studio proporciona diferentes herramientas para ayudarle a implementar su
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Implementación de una aplicación de escritorio con ClickOnce</h3>
+                        <h3>Implementación de una aplicación de escritorio con ClickOnce (C#)</h3>
                     </div>
                 </div>
             </div>
@@ -262,17 +263,35 @@ Visual Studio proporciona diferentes herramientas para ayudarle a implementar su
         </a>
     </li>
     <li>
-        <a href="/cpp/ide/deployment-in-visual-cpp">
+        <a href="/cpp/ide/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/media/common/i_learn-about.svg" alt="Learn about deployment in Visual C++">
+                            <img src="https://docs.microsoft.com/media/logos/logo_Cplusplus.svg" alt="Learn about deployment in Visual C++">
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Información sobre implementación en Visual C++</h3>
+                        <h3>Implementación de una aplicación C/C++</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
+        <a href="/cpp/ide/clickonce-deployment-for-visual-cpp-applications">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/media/logos/logo_Cplusplus.svg" alt="Learn about deployment in Visual C++">
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Implementación de una aplicación C++/CLR</h3>
                     </div>
                 </div>
             </div>

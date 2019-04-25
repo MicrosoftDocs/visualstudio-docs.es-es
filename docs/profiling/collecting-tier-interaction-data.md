@@ -11,15 +11,15 @@ helpviewer_keywords:
 - ADO.NET performance profiling
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f2c18ba6cb7360be904d491f29195eea7add6c3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fcdab1fcb776a729d00a143dfc318053b74c5cf5
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53819918"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56600121"
 ---
 # <a name="collect-tier-interaction-data"></a>Recopilar datos de interacción de capas
 

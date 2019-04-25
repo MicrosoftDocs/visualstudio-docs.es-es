@@ -9,15 +9,15 @@ dev_langs:
 ms.assetid: d0c311c9-9eb9-42c5-ba07-25604362cd28
 author: corob-msft
 ms.author: corob
-manager: douge
+manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: cbc9e2b0016fde990e2fbd6d79b083907ced5060
-ms.sourcegitcommit: 71218ffc33da325cc1b886f69ff2ca50d44f5f33
+ms.openlocfilehash: 990f14d76eabbf1b7ef252234a8625c66ffcdcba
+ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48881090"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58897587"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>Instalar y configurar herramientas para compilar con iOS
 
@@ -70,7 +70,7 @@ Para instalar y usar el agente remoto para desarrollar código para iOS, primero
 
 Cuando se instala Visual C++ para el desarrollo móvil multiplataforma, Visual Studio puede comunicarse con [vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988), un agente remoto que se ejecuta en el equipo Mac para transferir archivos, compilar y ejecutar la aplicación de iOS, así como para enviar comandos de depuración.
 
-Antes de instalar el agente remoto, asegúrese de que se cumplen los [Requisitos previos](#Prerequisites) y de que se ha instalado [Visual C++ para el desarrollo móvil multiplataforma](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md#install-the-tools).
+Antes de instalar el agente remoto, asegúrese de que se cumplen los [Requisitos previos](#prerequisites) y de que se ha instalado [Visual C++ para el desarrollo móvil multiplataforma](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md#install-the-tools).
 
 ###  <a name="DownloadInstall"></a> Para descargar e instalar el agente remoto
 

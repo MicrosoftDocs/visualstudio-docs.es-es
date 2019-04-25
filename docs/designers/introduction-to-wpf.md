@@ -1,23 +1,22 @@
 ---
 title: Introducción a WPF
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: b8d7cf43-d1f2-4f3d-adb0-4f3a6428edc0
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - csharp
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: cb2e835a3dac2f85de806e876bc8801d7b1d0dd3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bc943fe059850b024a5067d36bcc14d258ca5565
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53955297"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56635077"
 ---
 # <a name="wpf-overview"></a>Información general sobre WPF
 

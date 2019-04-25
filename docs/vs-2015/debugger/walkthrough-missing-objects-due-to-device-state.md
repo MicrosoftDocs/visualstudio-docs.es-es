@@ -1,25 +1,20 @@
 ---
 title: 'Tutorial: Objetos ausentes debido al estado del dispositivo | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 1b0d2bbd-0729-4aa5-8308-70c5bf1468c5
 caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 5c0ad6017dd6ff660dfbd47977e1a53346cf6c55
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 51fb019d428ed7196818c96e759c0abc8f8e68c7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51773735"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58998730"
 ---
 # <a name="walkthrough-missing-objects-due-to-device-state"></a>Tutorial: Objetos ausentes debido al estado del dispositivo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -113,6 +108,3 @@ En este tutorial se muestra cómo usar el Diagnóstico de gráficos de [!INCLUDE
    Después de determinar que la causa del problema de representación podría ser una función de profundidad mal configurada, puede usar esta información junto con su conocimiento del código para buscar el lugar en que se estableció incorrectamente la función de profundidad y, a continuación, corregirlo. Si no está familiarizado con el código, podría buscar el problema siguiendo las pistas que ha recopilado mientras depuraba; por ejemplo, basándose en la **Descripción de la galería de símbolos de profundidad** de este escenario, puede buscar en el código palabras como "depth" o "GREATER". Después de corregir el código, vuelva a compilarlo y ejecute de nuevo la aplicación para comprobar que se ha resuelto el problema de representación:  
   
    ![Una vez corregido el problema de aplicación](../debugger/media/vsg-walkthru1-finalview.png "vsg_walkthru1_finalview")
-
-
-

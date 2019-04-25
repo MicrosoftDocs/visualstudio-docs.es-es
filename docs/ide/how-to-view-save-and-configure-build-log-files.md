@@ -1,25 +1,30 @@
 ---
-title: 'Cómo: Ver, guardar y configurar archivos de registro de compilación | Microsoft Docs'
+title: Procedimiento Visualización, guardado y configuración de archivos de registro de compilación | Microsoft Docs
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 ms.assetid: 75d38b76-26d6-4f43-bbe7-cbacd7cc81e7
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b745a9e74fd4016db60883b06091a33c6d30d52
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e0185e8879718e068cd624559087db9369d7e190
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49860674"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789931"
 ---
-# <a name="how-to-view-save-and-configure-build-log-files"></a>Cómo: Ver, guardar y configurar archivos de registro de compilación
+# <a name="how-to-view-save-and-configure-build-log-files"></a>Procedimiento Visualización, guardado y configuración de archivos de registro de compilación
 
-Después de compilar un proyecto en el IDE de Visual Studio, puede ver información sobre la compilación en la ventana **Salida**. Con esta información puede, por ejemplo, solucionar un error de compilación. En el caso de los proyectos de C++, también puede ver la misma información en un archivo *.txt* que se crea y se guarda automáticamente. Si se trata de proyectos de código administrado, puede copiar y pegar la información de la ventana **Salida** en un archivo *.txt* y guardarlo donde quiera. También puede usar el IDE para especificar qué tipo de información quiere ver para cada compilación.
+Después de compilar un proyecto en el IDE de Visual Studio, puede ver información sobre la compilación en la ventana **Salida**. Con esta información puede, por ejemplo, solucionar un error de compilación. 
+
+  - En el caso de los proyectos de C++, también puede ver la misma información en un archivo *.txt* que se crea y se guarda automáticamente. 
+
+  - En los proyectos de código administrado, puede hacer clic en la ventana de salida de la compilación y presionar **Ctrl**+**S**. Visual Studio le pregunta en qué ubicación quiere guardar la información de la ventana **Salida** en un archivo *.txt*. 
+  
+También puede usar el IDE para especificar qué tipo de información quiere ver para cada compilación.
 
 Si compila un proyecto mediante MSBuild, puede crear un archivo *.txt* para guardar la información de la compilación. Para obtener más información, vea [Obtener registros de compilación](../msbuild/obtaining-build-logs-with-msbuild.md).
 
@@ -31,9 +36,11 @@ Si compila un proyecto mediante MSBuild, puede crear un archivo *.txt* para guar
 
 1.  En la barra de menús, elija **Compilar** > **Compilar solución**.
 
-2.  En la ventana **Salida**, resalte la información de la compilación y, después, cópiela en el **Portapapeles**.
+2.  En la ventana **Salida**, haga clic en cualquier parte del texto.
 
-3.  Abra un editor de texto, como el **Bloc de notas**, pegue la información en el archivo y guárdelo.
+3.  Presione **Ctrl**+**S**.
+
+   Visual Studio le preguntará en qué ubicación guardar la salida de la compilación.
 
 ## <a name="to-change-the-amount-of-information-included-in-the-build-log"></a>Para cambiar el volumen de información incluida en el registro de compilación
 
@@ -54,7 +61,7 @@ Si compila un proyecto mediante MSBuild, puede crear un archivo *.txt* para guar
      Para obtener más información, vea [Cuadro de diálogo Opciones, Proyectos y soluciones, Compilar y ejecutar](../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md) y <xref:Microsoft.Build.Framework.LoggerVerbosity>.
 
     > [!IMPORTANT]
-    > Debe recompilar el proyecto para que los cambios surtan efecto en la ventana **Salida** (todos los proyectos) y el archivo *<ProjectName>.txt* (solo para proyectos de C++).
+    > Debe recompilar el proyecto para que los cambios surtan efecto en la ventana **Salida** (todos los proyectos) y el archivo *\<NombreDelProyecto>.txt*.txt (solo para proyectos de C++).
 
 ## <a name="see-also"></a>Vea también
 

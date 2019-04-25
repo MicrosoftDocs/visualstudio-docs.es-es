@@ -1,35 +1,29 @@
 ---
 title: Buscar el conjunto de esquemas | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: ec1395e0-d03c-4130-810d-f2db656937bd
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 885797e319652aaf9573b0c171318506518f82df
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 1d388db50ae935ef85b720177bd31c832a353d31
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49204209"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080571"
 ---
 # <a name="searching-the-schema-set"></a>Buscar en el conjunto de esquemas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 El Explorador de esquemas XML permite buscar en el conjunto de esquemas de las maneras siguientes:  
   
--   Búsqueda de palabra clave.  
+- Búsqueda de palabra clave.  
   
--   Búsqueda específica del esquema.  
+- Búsqueda específica del esquema.  
   
 ## <a name="keyword-search"></a>Búsqueda de palabra clave  
  Realizar búsquedas de palabras clave escribiendo una subcadena en la **conjunto de esquemas de búsqueda** cuadro de texto de la barra de herramientas del explorador de esquemas XML.  
@@ -38,11 +32,11 @@ El Explorador de esquemas XML permite buscar en el conjunto de esquemas de las m
   
  El Explorador de esquemas XML busca en el conjunto de esquemas lo siguiente:  
   
--   Cualquier atributo `name` o `ref` que coincida con la palabra clave especificada. Esto permite buscar elementos, atributos, tipos, etc. por nombre.  
+- Cualquier atributo `name` o `ref` que coincida con la palabra clave especificada. Esto permite buscar elementos, atributos, tipos, etc. por nombre.  
   
--   Los atributos `schemaLocation` de las instrucciones include.  
+- Los atributos `schemaLocation` de las instrucciones include.  
   
--   Los atributos `namespace` de las instrucciones import.  
+- Los atributos `namespace` de las instrucciones import.  
   
 ## <a name="schema-specific-search"></a>Búsqueda específica del esquema  
  El Explorador de esquemas XML también incluye buscadores integrados a los que se tiene acceso mediante el menú contextual del explorador. Para obtener más información acerca de los menús contextuales disponibles, consulte [menús contextuales](../xml-tools/context-menus-xml-schema-explorer.md). También puede realizar una búsqueda específica del esquema de la vista inicio; Para obtener más información, vea la sección "esquema Detalles del conjunto" en el [vista inicio](../xml-tools/start-view.md) tema.  
@@ -59,6 +53,3 @@ El Explorador de esquemas XML permite buscar en el conjunto de esquemas de las m
   
 ## <a name="see-also"></a>Vea también  
  [Explorador de esquemas XML](../xml-tools/xml-schema-explorer.md)
-
-
-

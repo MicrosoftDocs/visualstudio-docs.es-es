@@ -1,32 +1,26 @@
 ---
 title: Resolución de ensamblados en tiempo de diseño | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - msbuild
 ms.assetid: 20dae076-733e-49c1-a2e9-b336757ae21d
 caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: cc10169ac07efdeded41a9bb2990bdc206a17435
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 920e7222b3b425cbb13c962ff8c2e1e2fc551bd8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49224658"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657108"
 ---
 # <a name="resolving-assemblies-at-design-time"></a>Resolver ensamblados en tiempo de diseño
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Cuando se agrega una referencia a un ensamblado mediante la pestaña .NET del cuadro de diálogo Agregar referencia, la referencia señala a un ensamblado de referencia intermedio, es decir, un ensamblado que contiene toda la información de firma y de tipos, pero que no contiene código necesariamente. La pestaña .NET hace una lista de los ensamblados de referencia que corresponden a los ensamblados en tiempo de ejecución en .NET Framework. Además, hace una lista de los ensamblados de referencia que corresponden a los ensamblados en tiempo de ejecución de las carpetas AssemblyFoldersEx que utilizan otros fabricantes.  
   
 ## <a name="multi-targeting"></a>Compatibilidad con múltiples versiones (multi-targeting)  
@@ -47,6 +41,3 @@ Cuando se agrega una referencia a un ensamblado mediante la pestaña .NET del cu
   
 ## <a name="see-also"></a>Vea también  
  [Conceptos avanzados](../msbuild/msbuild-advanced-concepts.md)
-
-
-

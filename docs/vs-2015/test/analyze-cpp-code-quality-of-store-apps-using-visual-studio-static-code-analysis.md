@@ -1,8 +1,8 @@
 ---
-title: Aplicaciones de C++ código estático análisis Store
+title: C++aplicaciones de Store de análisis de código estático
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.technology: vs-ide-general
+ms.technology: vs-ide-test
 ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.propertypages.native.express
@@ -10,13 +10,13 @@ ms.assetid: c5355e43-a37c-4686-a969-18e3dfc59a9c
 caps.latest.revision: 15
 author: alexhomer1
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 2382ad7d73069ce66e57e685a05f4319cc8986d0
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
-ms.translationtype: MTE95
+manager: jillfra
+ms.openlocfilehash: a8ea5d8a8120f8b78ec41ee7dbaf0221a549f15c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53064159"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103880"
 ---
 # <a name="analyze-c-code-quality-of-store-apps-using-visual-studio-static-code-analysis"></a>Analizar la calidad del código de C++ de las aplicaciones de la Tienda utilizando análisis de código estático de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
 > [!NOTE]
 > En Visual Studio Ultimate, Visual Studio Premium y Visual Studio Professional, puede usar la funcionalidad completa de las herramientas de análisis de código. Consulte [Analizar la calidad de la aplicación mediante herramientas de análisis del código](http://msdn.microsoft.com/library/dd264897.aspx) en la MSDN Library.
 
-##  <a name="BKMK_Run"></a> Ejecutar análisis de código
+## <a name="BKMK_Run"></a> Ejecutar análisis de código
  Para ejecutar un análisis de código en la solución de Visual Studio:
 
 - En el menú **Compilar**, elija **Ejecutar análisis de código en la solución**.
@@ -43,7 +43,7 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
 
    ![Ventana de análisis de código](../test/media/ca-cpp-collapsed.png "CA_CPP_Collapsed")
 
-##  <a name="BKMK_Analyze"></a> Analizar y resolver advertencias del análisis de código
+## <a name="BKMK_Analyze"></a> Analizar y resolver advertencias del análisis de código
  Para analizar una advertencia concreta, elija el título en la ventana Análisis de código. La advertencia se expande para mostrar información detallada sobre el problema. Cuando sea posible, el análisis de código mostrará el número de línea y la lógica del análisis que ha provocado la advertencia.
 
  ![Advertencia de análisis de código expandido](../test/media/ca-cpp-expanded-callout.png "CA_CPP_Expanded_Callout")
@@ -57,7 +57,7 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
 > [!TIP]
 >  Puedes repetir el análisis de código desde la ventana Análisis de código. Elija el botón **Analizar** y después elija el ámbito del análisis. Puedes repetir el análisis en toda la solución o en el proyecto seleccionado.
 
-##  <a name="BKMK_Suppress"></a> Suprimir las advertencias de análisis de código
+## <a name="BKMK_Suppress"></a> Suprimir las advertencias de análisis de código
  A veces, uno decide no corregir una advertencia del análisis de código. Puede ser que para resolverla se necesita un esfuerzo de codificación excesivo en proporción con la probabilidad de que el problema surja en las implementaciones reales del código. O puede que consideres que el análisis que ha dado lugar a la advertencia no es apropiado para ese contexto concreto. Puedes suprimir advertencias individuales de modo que ya no aparezcan en la ventana Análisis de código.
 
  Para suprimir una advertencia:
@@ -70,14 +70,13 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
 
    Al suprimir un mensaje se inserta un identificador `#pragma(warning:`*WarningId*`)` que suprime la advertencia en la línea de código.
 
-##  <a name="BKMK_Search"></a> Buscar y filtrar resultados del análisis de código
+## <a name="BKMK_Search"></a> Buscar y filtrar resultados del análisis de código
  Puedes buscar en las listas largas de mensajes de advertencia y filtrar las advertencias en las soluciones de varios proyectos.
 
  ![Buscar y filtrar la ventana de análisis de código](../test/media/ca-searchfilter.png "CA_SearchFilter")
 
-##  <a name="Warnings"></a> Advertencias de análisis de código de C++
+## <a name="Warnings"></a> Advertencias de análisis de código de C++
  El análisis de código produce las advertencias siguientes para código de C++:
-
 
 |                                      Regla                                      |                                                  Descripción                                                  |
 |--------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
@@ -128,13 +127,12 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
 |                       [C6516](../code-quality/c6516.md)                        |                                          No hay propiedades del atributo                                           |
 |                       [C6517](../code-quality/c6517.md)                        |                                       Tamaño válido en búfer no legible                                       |
 |                       [C6518](../code-quality/c6518.md)                        |                                     Tamaño de escritura en búfer no modificable                                      |
-| [C6519](http://msdn.microsoft.com/2b6326b0-0539-4d26-8fb1-720114933232)  |                  Anotación no válida: el valor de la propiedad 'NeedsRelease' debe ser Yes o No                   |
 | [C6521](http://msdn.microsoft.com/e98d0ae3-6f13-47b2-9a15-15d4055af9ef)  |                                        Desreferenciación de cadena de tamaño no válida                                        |
 |                       [C6522](../code-quality/c6522.md)                        |                                           Tipo de cadena de tamaño no válido                                            |
 | [C6523](http://msdn.microsoft.com/11397a31-b224-46b0-afb7-d49ca576a3bb)  |                                         Parámetro de cadena de tamaño no válido                                         |
 |                       [C6525](../code-quality/c6525.md)                        |                                   Cadena de tamaño no válida, ubicación inaccesible                                    |
 | [C6526](http://msdn.microsoft.com/59c590c7-0098-4166-a1ac-87f324596002)  |                                        Tipo de búfer de cadena de tamaño no válido                                        |
-|                       [C6527](../code-quality/c6527.md)                        |              Anotación no válida: La propiedad 'NeedsRelease' no se puede usar en valores de tipo void               |
+|                       [C6527](../code-quality/c6527.md)                        |              Anotación no válida: Propiedad 'NeedsRelease' no puede usarse en los valores de tipo void               |
 |                       [C6530](../code-quality/c6530.md)                        |                                       Estilo de cadena de formato no reconocido                                        |
 |                       [C6540](../code-quality/c6540.md)                        | El uso de anotaciones de atributo en esta función invalidará todas las anotaciones __declspec existentes  |
 |                       [C6551](../code-quality/c6551.md)                        |                              Especificación de tamaño no válido: no se puede analizar la expresión                              |
@@ -194,7 +192,6 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
 |                      [C28254](../code-quality/c28254.md)                       |                               dynamic_cast<>() no se admite en anotaciones                                |
 |                      [C28262](../code-quality/c28262.md)                       |                    Se encontró un error de sintaxis de anotación en la función, para la anotación                     |
 |                      [C28263](../code-quality/c28263.md)                       |                 Se encontró un error de sintaxis en una anotación condicional para la anotación intrínseca                 |
-| [C28264](http://msdn.microsoft.com/bf6ea983-a06e-4752-a042-747a7dbf338c) |                                    Los valores de listas de resultados deben ser constantes.                                     |
 |                      [C28267](../code-quality/c28267.md)                       |                    Se encontró un error de sintaxis de anotaciones en la función.                    |
 |                      [C28272](../code-quality/c28272.md)                       |      La anotación del parámetro de la función, al examinar su incoherencia con la declaración de la función      |
 |                      [C28273](../code-quality/c28273.md)                       |                    Para la función, las pistas son incoherentes con la declaración de la función                     |

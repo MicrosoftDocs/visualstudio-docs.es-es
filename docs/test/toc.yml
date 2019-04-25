@@ -52,7 +52,7 @@ items:
     href: configure-unit-tests-by-using-a-dot-runsettings-file.md
   - name: Escribir pruebas unitarias para código administrado
     items:
-    - name: 'Tutorial: Crear y ejecutar pruebas unitarias para código administrado'
+    - name: 'Tutorial: Crear y ejecutar pruebas unitarias en código administrado'
       href: walkthrough-creating-and-running-unit-tests-for-managed-code.md
     - name: 'Inicio rápido: Desarrollo controlado por pruebas con el Explorador de pruebas'
       href: quick-start-test-driven-development-with-test-explorer.md
@@ -72,7 +72,7 @@ items:
     - name: Crear una prueba unitaria controlada por datos
       href: how-to-create-a-data-driven-unit-test.md
       items:
-      - name: 'Tutorial: Usar un archivo de configuración para definir un origen de datos'
+      - name: 'Tutorial: Uso de un archivo de configuración para definir un origen de datos'
         href: walkthrough-using-a-configuration-file-to-define-a-data-source.md
     - name: Pruebas unitarias para métodos genéricos
       href: unit-tests-for-generic-methods.md
@@ -93,7 +93,7 @@ items:
       href: how-to-use-ctest-for-cpp.md
     - name: Escribir pruebas unitarias para archivos DLL de C/C++
       href: how-to-write-unit-tests-for-cpp-dlls.md
-    - name: 'Tutorial: Escritura de pruebas unitarias para archivos DLL de C++'
+    - name: 'Tutorial: Escribir pruebas unitarias para DLL de C++'
       href: walkthrough-writing-unit-tests-for-cpp-dlls.md
     - name: Marco de pruebas unitarias de Microsoft para la referencia de API de C++
       href: microsoft-visualstudio-testtools-cppunittestframework-api-reference.md
@@ -112,8 +112,6 @@ items:
       href: customizing-code-coverage-analysis.md
     - name: Solucionar problemas de cobertura de código
       href: troubleshooting-code-coverage.md
-  - name: Usar emuladores para aislar las pruebas unitarias para aplicaciones de SharePoint 2010
-    href: using-emulators-to-isolate-unit-tests-for-sharepoint-2010-applications.md
 - name: Live Unit Testing
   href: live-unit-testing-intro.md
   items:
@@ -121,13 +119,13 @@ items:
     href: live-unit-testing-whats-new.md
   - name: Introducción a Live Unit Testing
     href: live-unit-testing-start.md
-  - name: Usar Live Unit Testing en Visual Studio 2017 Enterprise Edition
+  - name: Usar Live Unit Testing en Enterprise Edition
     href: live-unit-testing.md
   - name: Preguntas más frecuentes sobre Live Unit Testing
     href: live-unit-testing-faq.md
 - name: Rendimiento web y pruebas de carga
   items:
-  - name: 'Inicio rápido: Crear un proyecto de prueba de carga'
+  - name: 'Inicio rápido: Crear un proyecto de pruebas de carga'
     href: quickstart-create-a-load-test-project.md
   - name: Configurar pruebas de carga
     href: edit-load-tests.md
@@ -339,8 +337,6 @@ items:
     href: set-a-unique-automation-property-for-windows-store-controls-for-testing.md
   - name: Usar controles HTML5 en pruebas automatizadas de IU
     href: using-html5-controls-in-coded-ui-tests.md
-  - name: Probar aplicaciones de SharePoint 2010 con pruebas automatizadas de IU
-    href: testing-sharepoint-2010-applications-with-coded-ui-tests.md
   - name: Crear una prueba automatizada de IU controlada por datos
     href: creating-a-data-driven-coded-ui-test.md
   - name: Esperar eventos concretos durante la reproducción
@@ -370,9 +366,9 @@ items:
     href: lab-management/use-build-or-rm-instead-of-lab-management.md
   - name: Instalar agentes y controladores de pruebas
     href: lab-management/install-configure-test-agents.md
-ms.openlocfilehash: 3035030458d8d0a3914952d606ca775ad33a62fc
-ms.sourcegitcommit: a811f6a194ccd40d844e74e618d847df87c85c16
+ms.openlocfilehash: d63258d61d94ca52208b89267b92743e95d3664c
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "52621518"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58416284"

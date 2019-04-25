@@ -2,7 +2,6 @@
 title: Servicios y productos de Microsoft para mejorar la accesibilidad
 description: Obtenga más información sobre los productos y servicios de Microsoft que pueden mejorar la accesibilidad a nuestros sistemas operativos, programas y aplicaciones para que cualquier persona pueda usarlos, incluidas las que presentan alguna discapacidad.
 ms.date: 08/22/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - TTY/TDD services
@@ -17,20 +16,20 @@ helpviewer_keywords:
 ms.assetid: ef3c6247-9f59-4ef4-aa8b-a8922b3e0943
 author: TerryGLee
 ms.author: tglee
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e209e609caf073a7360bad3d0991a6fbd873989
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 02b35ff8325c6cb155d54a2ada6bf6f7d63dc341
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53886324"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56318633"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Servicios y productos de Microsoft para mejorar la accesibilidad
 
 > [!TIP]
-> Para obtener más información sobre las actualizaciones de accesibilidad recientes en Visual Studio, vea la entrada de blog [Accessibility improvements in Visual Studio 2017 version 15.3](https://blogs.msdn.microsoft.com/visualstudio/2017/08/14/accessibility-improvements-in-visual-studio-2017-version-15-3/) (Mejoras de accesibilidad en Visual Studio 2017 versión 15.3).
+> Para obtener más información sobre las actualizaciones de accesibilidad recientes en Visual Studio, vea la entrada de blog [Accessibility improvements in Visual Studio 2017 version 15.3](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/) (Mejoras de accesibilidad en Visual Studio 2017 versión 15.3).
 
 Microsoft ha asumido el compromiso de facilitar el acceso de todos los usuarios a sus productos y servicios. En los temas siguientes se proporciona información acerca de las características, los productos y los servicios que permiten a Microsoft Windows ser más accesible para las personas con discapacidades:
 

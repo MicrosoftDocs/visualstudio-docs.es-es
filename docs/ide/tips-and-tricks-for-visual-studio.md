@@ -1,19 +1,18 @@
 ---
 title: Métodos abreviados de teclado
 ms.date: 11/02/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d821d736bc73dbc64c947396ead683f59c4be0b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c96842dde4219bcdab3d7ccfd1616f8b44e733bf
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53897818"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790373"
 ---
 # <a name="keyboard-shortcuts-for-visual-studio"></a>Métodos abreviados de teclado de Visual Studio
 
@@ -52,8 +51,8 @@ En Visual Studio se puede navegar más fácilmente gracias a los accesos directo
 |-|-|
 |Búsqueda en el Explorador de soluciones|**Ctrl**+**;**|
 |Colocar el foco en el cuadro de búsqueda de cualquier ventana de herramientas|**Alt**+**`** cuando la ventana de herramientas tiene el foco|
-|Inicio rápido|**Ctrl**+**Q**|
-|Acotar resultados de Inicio rápido|- @opt Opciones<br />- @cmd Comandos<br />- @mru Usados más recientemente<br />- @doc Documentos abiertos|
+|Cuadro de búsqueda|**Ctrl**+**Q**|
+|Resultados del ámbito del cuadro de búsqueda|- @opt Opciones<br />- @cmd Comandos<br />- @mru Usados más recientemente<br />- @doc Documentos abiertos|
 |Buscar en opciones de herramientas|**Ctrl**+**E**|
 
 ## <a name="editor-find"></a>Búsqueda en el editor
@@ -73,7 +72,7 @@ En Visual Studio se puede navegar más fácilmente gracias a los accesos directo
 
 ##  <a name="BKMK_CodeEditor"></a> Editor de código
 
-|Comando|Acceso directo|Disponibilidad de versión|
+|Comando|Acceso directo|Cuando se especifica|
 |-|-|-|
 |Ir a todo|**Ctrl**+**T**|
 |Ir a archivos recientes|**Ctrl**+**T**,**R**|

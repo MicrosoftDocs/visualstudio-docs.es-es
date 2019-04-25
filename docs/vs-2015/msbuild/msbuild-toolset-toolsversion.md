@@ -1,14 +1,9 @@
 ---
 title: Conjunto de herramientas de MSBuild (ToolsVersion) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 helpviewer_keywords:
 - MSBuild, multitargeting
 - targeting a specific .NET framework [MSBuild]
@@ -18,18 +13,17 @@ ms.assetid: 40040ee7-4620-4043-a6d8-ccba921421d1
 caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: bd516501acfc7690c12a253adc5da6cf163b5592
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 192fdd737816d2239b15530e2d5c03d73f82e0d5
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49851834"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657511"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>Conjunto de herramientas de MSBuild (ToolsVersion)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 MSBuild usa un conjunto de herramientas de tareas, destinos y herramientas para compilar una aplicación. Normalmente, un conjunto de herramientas de MSBuild incluye un archivo microsoft.common.tasks, un archivo microsoft.common.targets y compiladores como csc.exe y vbc.exe. La mayoría de los conjuntos de herramientas se pueden usar para compilar aplicaciones correspondientes a más de una versión de .NET Framework y a más de una plataforma de sistema. Sin embargo, el conjunto de herramientas de MSBuild 2.0 solo se puede usar para las aplicaciones de .NET Framework 2.0.  
   
 ## <a name="toolsversion-attribute"></a>Atributo ToolsVersion  
@@ -77,7 +71,7 @@ MSBuild usa un conjunto de herramientas de tareas, destinos y herramientas para 
   
 - Mediante los métodos de la clase <xref:Microsoft.Build.Utilities.ToolLocationHelper>  
   
-  Las propiedades del conjunto de herramientas especifican las rutas de acceso de las herramientas. MSBuild usa el valor del atributo `ToolsVersion` del archivo de proyecto para encontrar la clave del Registro correspondiente, y después utiliza la información de dicha clave para establecer las propiedades del conjunto de herramientas. Por ejemplo, si `ToolsVersion` tiene el valor `12.0`, MSBuild establece las propiedades del conjunto de herramientas en función de esta clave del Registro: HKLM\Software\Microsoft\MSBuild\ToolsVersions\12.0.  
+  Las propiedades del conjunto de herramientas especifican las rutas de acceso de las herramientas. MSBuild usa el valor del atributo `ToolsVersion` del archivo de proyecto para encontrar la clave del Registro correspondiente, y después utiliza la información de dicha clave para establecer las propiedades del conjunto de herramientas. Por ejemplo, si `ToolsVersion` tiene el valor `12.0`, MSBuild establece las propiedades del conjunto de herramientas conforme a esta clave del Registro: HKLM\Software\Microsoft\MSBuild\ToolsVersions\12.0.  
   
   Estas son las propiedades del conjunto de herramientas:  
   
@@ -124,6 +118,3 @@ MSBuild usa un conjunto de herramientas de tareas, destinos y herramientas para 
 ## <a name="see-also"></a>Vea también  
  [Configuraciones de conjuntos de herramientas estándar y personalizados](../msbuild/standard-and-custom-toolset-configurations.md)   
  [Compatibilidad con múltiples versiones (multi-targeting)](../msbuild/msbuild-multitargeting-overview.md)
-
-
-

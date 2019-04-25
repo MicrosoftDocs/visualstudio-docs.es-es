@@ -1,22 +1,21 @@
 ---
 title: Plantillas de aplicación web para Python
 description: Visual Studio proporciona plantillas para aplicaciones web Python con las plataformas Bottle, Flask y Django; la compatibilidad incluye configuraciones de depuración y la publicación en Azure App Service.
-ms.date: 10/29/2018
-ms.prod: visual-studio-dev15
+ms.date: 01/28/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 29730f6dfa2d220759a5e563305e4e0cbb9675c2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 952c4d9ab82275ff7b1550a3704e89b93c6260a3
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53850627"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366593"
 ---
 # <a name="python-web-application-project-templates"></a>Plantillas de proyecto de aplicación web para Python
 

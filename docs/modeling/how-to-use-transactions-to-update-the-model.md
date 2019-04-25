@@ -4,16 +4,15 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: f42c7a384b4f46864e4c79d386cd82ca39949a61
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 9a7514e3ff0c876a669f514a7e17bb02b73c19c2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53938347"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075030"
 ---
 # <a name="how-to-use-transactions-to-update-the-model"></a>Procedimiento Usar transacciones para actualizar el modelo
 Las transacciones Asegúrese de que los cambios realizados en el almacén se tratan como un grupo. Los cambios que se agrupan pueden ser confirmados o revertidos como una sola unidad.
@@ -58,9 +57,9 @@ catch (Exception ex)
 ## <a name="rolling-back-a-transaction"></a>Deshacer una transacción
  Para asegurarse de que permanece en el Store o se revierte a su estado anterior a la transacción, puede utilizar cualquiera de estas tácticas:
 
-1.  Generar una excepción que no se captura dentro del ámbito de la transacción.
+1. Generar una excepción que no se captura dentro del ámbito de la transacción.
 
-2.  Revertir explícitamente la transacción:
+2. Revertir explícitamente la transacción:
 
     ```csharp
     this.Store.TransactionManager.CurrentTransaction.Rollback();

@@ -1,22 +1,21 @@
 ---
 title: REPL de IPython (ventana interactiva)
 description: Use la ventana interactiva de Visual Studio en modo de IPython para tener un entorno de desarrollo interactivo fácil de usar con características de computación paralela interactiva.
-ms.date: 10/29/2018
-ms.prod: visual-studio-dev15
+ms.date: 01/28/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c38c9263792cb62e60b13e0671c943435320436b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8b4510ed738fdd2b33389ab4242dbde86cffff8c
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53821996"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366515"
 ---
 # <a name="use-ipython-in-the-interactive-window"></a>Uso de IPython en la ventana interactiva
 
@@ -42,7 +41,7 @@ Para este tutorial, debe tener instalado el entorno de [Anaconda](https://www.co
    ```python
    import matplotlib.pyplot as plt
    import numpy as np
-  
+
    x = np.linspace(0, 5, 10)
    y = x ** 2
    plt.plot(x, y, 'r', x, x ** 3, 'g', x, x ** 4, 'b')

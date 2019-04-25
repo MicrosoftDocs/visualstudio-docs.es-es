@@ -1,14 +1,9 @@
 ---
 title: Tarea XmlPeek | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -21,18 +16,17 @@ ms.assetid: 19196031-a3bc-41b5-9c4a-f2572630e179
 caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c6ad86c061d089b7cedaf040082fe9f51ae26120
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: d82deb9c363c1a1bd587cc9a6e48c5d6bf2138bd
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289775"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666499"
 ---
 # <a name="xmlpeek-task"></a>XmlPeek (Tarea)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Devuelve valores conforme a lo que especifica una consulta XPath de un archivo XML.  
   
 ## <a name="parameters"></a>Parámetros  
@@ -52,6 +46,3 @@ Devuelve valores conforme a lo que especifica una consulta XPath de un archivo X
 ## <a name="see-also"></a>Vea también  
  [Tareas](../msbuild/msbuild-tasks.md)   
  [Referencia de tareas](../msbuild/msbuild-task-reference.md)
-
-
-

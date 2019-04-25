@@ -1,22 +1,21 @@
 ---
-title: Procedimiento Crear y modificar niveles de MIP
+title: Filtrar Crear y modificar niveles de MIP
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: f64d4369-2307-4175-a39a-2e45506f7fa1
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56463df627a0e20624403ec4e1369569795d71fc
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ee24cd3dac57f3daca340eabacdbf05f20d35156
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53874425"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55923049"
 ---
-# <a name="how-to-create-and-modify-mip-levels"></a>Procedimiento Crear y modificar niveles de MIP
+# <a name="how-to-create-and-modify-mip-levels"></a>Filtrar Crear y modificar niveles de MIP
 En este documento se muestra cómo usar el **Editor de imágenes** para generar y modificar *niveles de MIP* con nivel de detalle (LoD) del espacio de textura.
 
 ## <a name="generating-mip-levels"></a>Generar niveles de MIP

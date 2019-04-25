@@ -1,7 +1,6 @@
 ---
 title: 'CA1057: Las sobrecargas URI de cadena llaman a sobrecargas System.Uri'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA1057
@@ -12,19 +11,19 @@ helpviewer_keywords:
 ms.assetid: ef1e983e-9ca7-404b-82d7-65740ba0ce20
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CPP
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: cc113abf5fc1f0d47b37643c404dffade26d0899
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: cd22a228f0963e2bdc87df284402d119a0353c68
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53891195"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55922540"
 ---
 # <a name="ca1057-string-uri-overloads-call-systemuri-overloads"></a>CA1057: Las sobrecargas URI de cadena llaman a sobrecargas System.Uri
 

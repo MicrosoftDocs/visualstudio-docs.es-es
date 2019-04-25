@@ -5,20 +5,21 @@ layout: LandingPage
 ms.date: 01/01/2018
 author: gewarren
 ms.author: gewarren
-ms.prod: visual-studio-dev15
 ms.topic: landing-page
 ms.workload:
 - data-storage
-ms.openlocfilehash: 854cb5287aef6500e80d34fbccac8b343da73fc9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a31d151b22e65449c15537b0f9a29c268b5e9787
+ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53890555"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58323245"
 ---
 # <a name="use-data-tools-in-visual-studio-to-develop-data-solutions"></a>Uso de herramientas de datos en Visual Studio para desarrollar soluciones de datos
 
 Obtenga información sobre cómo usar las herramientas de datos en Visual Studio para desarrollar y probar soluciones de datos mediante SQL Server, Azure Data Lake o Hadoop.
+
+<!-- markdownlint-disable MD033 -->
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -124,7 +125,7 @@ Obtenga información sobre cómo usar las herramientas de datos en Visual Studio
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <p><Access data in Visual Studio></p>
+                        <p>Acceder a datos en Visual Studio</p>
                     </div>
                 </div>
             </div>

@@ -2,21 +2,20 @@
 title: Diseñador de flujo de trabajo - Diseñador de actividades Receive
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
 f1_keywords:
 - System.ServiceModel.Activities.Receive.UI
 ms.assetid: f58d3c70-944d-4bb4-90a7-e68c103caddc
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 86c2d67d3922679096a3b3980a928a234515b78e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: bcab59a631b1dbf9c85c7bff2454a42e97accff8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53859002"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649227"
 ---
 # <a name="receive-activity-designer"></a>Diseñador de actividades Receive
 
@@ -38,7 +37,6 @@ Como alternativa, el **ReceiveAndSendReply** Diseñador de plantilla en el **men
 
 En la tabla siguiente se muestran las propiedades <xref:System.ServiceModel.Activities.Receive> y se describe cómo se utilizan en el diseñador. Estas propiedades se pueden editar en cuadrícula de propiedades o en la superficie del Diseñador de flujo de trabajo. La única propiedad obligatoria es <xref:System.ServiceModel.Activities.Receive.OperationName%2A>.
 
-
 | Nombre de la propiedad | Obligatorio | Uso |
 |-|----------|-|
 | <xref:System.Activities.Activity.DisplayName%2A> | False | Especifica el nombre descriptivo de la actividad <xref:System.ServiceModel.Activities.Receive>. El valor predeterminado es Receive.<br /><br /> Aunque no es obligatorio utilizar un valor no predeterminado para la propiedad <xref:System.Activities.Activity.DisplayName%2A> descriptiva, se recomienza utilizar uno. |
@@ -52,7 +50,7 @@ En la tabla siguiente se muestran las propiedades <xref:System.ServiceModel.Acti
 | <xref:System.ServiceModel.Activities.Receive.KnownTypes%2A> | False | Especifica una colección de tipos conocidos para la operación de servicio implementada por esta actividad <xref:System.ServiceModel.Activities.Receive>. Esta propiedad se puede utilizar junto con el conjunto de propiedades <xref:System.ServiceModel.Activities.Receive.SerializerOption%2A> para <xref:System.Runtime.Serialization.DataContractSerializer>. Se ignorará si se usa <xref:System.Xml.Serialization.XmlSerializer>.<br /><br /> Seleccione el botón de puntos suspensivos junto a la **KnownTypes** campo en la cuadrícula de propiedades para mostrar el **Editor de la colección de tipo** cuadro de diálogo con el que puede agregar los tipos pertinentes. Para obtener más información sobre el uso de este cuadro, vea el [cuadro de diálogo del Editor de colección de tipo](../workflow-designer/type-collection-editor-dialog-box.md) tema. |
 | <xref:System.ServiceModel.Activities.Receive.ProtectionLevel%2A> | False | Especifica la enumeración <xref:System.Net.Security.ProtectionLevel> para el mensaje.<br /><br /> 1. <xref:System.Net.Security.ProtectionLevel> significa que sólo la autenticación.<br />2. <xref:System.Net.Security.ProtectionLevel> significa firmar datos para ayudar a garantizar la integridad de los datos transmitidos.<br />3. <xref:System.Net.Security.ProtectionLevel> significa cifrar y firmar datos para ayudar a garantizar la confidencialidad e integridad de los datos transmitidos. |
 | <xref:System.ServiceModel.Activities.Receive.SerializerOption%2A> | False | Especifica el tipo de serializador que se va a utilizar para la operación de servicio que implementa la actividad <xref:System.ServiceModel.Activities.Receive>. El valor predeterminado es <xref:System.Runtime.Serialization.DataContractSerializer>, que serializa y deserializa una instancia de un tipo en una secuencia o en un documento XML que utilice un contrato de datos que se haya proporcionado. Se puede utilizar también <xref:System.Xml.Serialization.XmlSerializer> si se requiere un mayor control de XML. |
-| <xref:System.ServiceModel.Activities.Receive.Action%2A> | False | Especifica el encabezado de acción del mensaje. Si no se establece explícitamente, su valor predeterminado es: https://tempuri.org/{service espacio de nombres de contrato} / {nombre de contrato de servicio} / {nombre de la operación}. |
+| <xref:System.ServiceModel.Activities.Receive.Action%2A> | False | Especifica el encabezado de acción del mensaje. Si no se establece explícitamente, su valor predeterminado es: `https://tempuri.org/{service contract namespace}/{service contract name}/{operation name}`. |
 
 ## <a name="see-also"></a>Vea también
 

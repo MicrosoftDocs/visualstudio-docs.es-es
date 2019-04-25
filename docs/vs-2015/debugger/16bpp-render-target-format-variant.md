@@ -1,25 +1,20 @@
 ---
 title: Variante de formato de destino de representación de 16 BPP | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 24b22ad9-5ad0-4161-809a-9b518eb924bf
 caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: bf00bf536e5f1ee140a818ee59c66703906860f0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7b315c7ab9bb10d039e81ba26b1beb9c4447a205
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51727634"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112382"
 ---
 # <a name="16bpp-render-target-format-variant"></a>16bpp (Representar variante de formato de destino)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,11 +37,11 @@ Establece el formato de píxeles en DXGI_FORMAT_B5G6R5_UNORM para todos los obje
 ## <a name="remarks"></a>Comentarios  
  El formato de objetivo de presentación se restablece a DXGI_FORMAT_B5G6R5_UNORM en cada llamada a `ID3D11Device::CreateTexture2D` que crea un objetivo de presentación. En concreto, el formato se reemplaza cuando el objeto D3D11_TEXTURE2D_DESC pasado a pDesc describe un objetivo de presentación, que es:  
   
--   El miembro BindFlags tiene el conjunto de marcadores D3D11_BIND_REDNER_TARGET.  
+- El miembro BindFlags tiene el conjunto de marcadores D3D11_BIND_REDNER_TARGET.  
   
--   El miembro BindFlags tiene el conjunto de marcadores D3D11_BIND_DEPTH_STENCIL borrado.  
+- El miembro BindFlags tiene el conjunto de marcadores D3D11_BIND_DEPTH_STENCIL borrado.  
   
--   El miembro Usage está establecido en D3D11_USAGE_DEFAULT.  
+- El miembro Usage está establecido en D3D11_USAGE_DEFAULT.  
   
 ## <a name="restrictions-and-limitations"></a>Restricciones y limitaciones  
  Como el formato B5G6R5 no tiene ningún canal alfa, el contenido alfa no se conserva con esta variante. Si la presentación de su aplicación requiere un canal alfa en el objetivo de presentación, no puede simplemente cambiar al formato B5G6R5.  
@@ -61,6 +56,3 @@ target_description.BindFlags = D3D11_BIND_RENDER_TARGET;
 target_description.Format = DXGI_FORMAT_B5G6R5_UNORM;  
 d3d_device->CreateTexture2D(&target_description, nullptr, &render_target);  
 ```
-
-
-

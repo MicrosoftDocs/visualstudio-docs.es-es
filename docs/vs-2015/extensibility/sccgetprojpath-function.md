@@ -1,14 +1,9 @@
 ---
 title: SccGetProjPath (función) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccGetProjPath
 helpviewer_keywords:
@@ -16,24 +11,24 @@ helpviewer_keywords:
 ms.assetid: 1079847e-d45f-4cb8-9d92-1e01ce5d08f6
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 978316cd9c953217a3e59a7ecd1b047cab12734b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4c7a4af5928f1d7b803e882c1826e451982389bc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51752591"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093935"
 ---
 # <a name="sccgetprojpath-function"></a>SccGetProjPath (Función)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Esta función pide al usuario una ruta de acceso del proyecto, que es una cadena que solo es significativa para el complemento de control de código fuente. Se llama cuando el usuario es:  
   
--   Crear un nuevo proyecto  
+- Crear un nuevo proyecto  
   
--   Agregar un proyecto existente al control de versiones  
+- Agregar un proyecto existente al control de versiones  
   
--   Intenta encontrar un proyecto existente de control de versión  
+- Intenta encontrar un proyecto existente de control de versión  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -115,4 +110,3 @@ SCCRTN SccGetProjPath (
 ## <a name="see-also"></a>Vea también  
  [Funciones de API de complemento de Control de código fuente](../extensibility/source-control-plug-in-api-functions.md)   
  [SccOpenProject](../extensibility/sccopenproject-function.md)
-

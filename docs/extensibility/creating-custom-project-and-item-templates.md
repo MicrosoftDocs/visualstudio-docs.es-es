@@ -1,19 +1,19 @@
 ---
 title: Creación de plantillas de elementos y proyectos personalizadas | Microsoft Docs
-ms.date: 11/04/2016
+ms.date: 3/16/2019
 ms.topic: conceptual
 ms.assetid: 586da5dc-f678-402b-afd0-0332959fd7a6
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d8864c7b3e5bd43de58032daf88a947cd4082c0e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 01af6001bd116fd2b523668eddbdc68d2dd5beab
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53822338"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58194475"
 ---
 # <a name="create-custom-project-and-item-templates"></a>Crear plantillas de proyecto y elemento personalizadas
 
@@ -30,37 +30,37 @@ Para escenarios de creación de la plantilla básica, debe usar el **Exportar pl
 
 ## <a name="create-a-project-template"></a>Crear una plantilla de proyecto
 
-1.  Cree un proyecto de plantilla de proyecto. Puede encontrar la plantilla de proyecto en el **nuevo proyecto** cuadro de diálogo, en Visual Basic o Visual C# *extensibilidad* carpeta.
+1. Cree un proyecto de plantilla de proyecto. Puede encontrar la plantilla de proyecto en el **nuevo proyecto** cuadro de diálogo, buscando "plantilla de proyecto" y seleccionando el C# o versión de Visual Basic.
 
      La plantilla genera un archivo de clase, un icono, un *.vstemplate* de archivos, un archivo de proyecto editable denominado *ProjectTemplate.vbproj* o *ProjectTemplate.csproj*y algunos los archivos que normalmente se generan por otros tipos de proyecto, este tipo una *resources.resx* archivo, un *AssemblyInfo* archivo y un *.settings* archivo. Cada archivo de código contiene las sustituciones de parámetros comunes donde corresponda.
 
-2.  Agregar y quitar elementos del proyecto según sea necesario para el proyecto. No quite el archivo de proyecto puede editar el *AssemblyInfo* archivo, o el *.vstemplate* archivo.
+2. Agregar y quitar elementos del proyecto según sea necesario para el proyecto. No quite el archivo de proyecto puede editar el *AssemblyInfo* archivo, o el *.vstemplate* archivo.
 
-3.  Actualización de la *.vstemplate* archivo para reflejar las adiciones y eliminaciones. El [proyecto](../extensibility/project-element-visual-studio-templates.md) elemento debe contener un [ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md) (elemento) para cada archivo que se incluirán en la plantilla.
+3. Actualización de la *.vstemplate* archivo para reflejar las adiciones y eliminaciones. El [proyecto](../extensibility/project-element-visual-studio-templates.md) elemento debe contener un [ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md) (elemento) para cada archivo que se incluirán en la plantilla.
 
-4.  Modificar los archivos de código y otros contenidos de cara al usuario y agregue las sustituciones de parámetros apropiado.
+4. Modificar los archivos de código y otros contenidos de cara al usuario y agregue las sustituciones de parámetros apropiado.
 
-5.  Modificar el contenido generado según sea necesario.
+5. Modificar el contenido generado según sea necesario.
 
-6.  Compile el proyecto.
+6. Compile el proyecto.
 
      Visual Studio crea un *.zip* archivo que contiene la plantilla. No se ha implementado y no está disponible en la instancia experimental.
 
 ## <a name="create-an-item-template"></a>Crear una plantilla de elemento
 
-1.  Cree un proyecto de plantilla de elemento.
+1. Cree un proyecto de plantilla de elemento.
 
      La plantilla genera un archivo de clase, un icono, un *.vstemplate* archivo y un *AssemblyInfo* archivo. El archivo de clase contiene algunas sustituciones de parámetros comunes.
 
-2.  Agregar y quitar elementos del proyecto según sea necesario para el proyecto.
+2. Agregar y quitar elementos del proyecto según sea necesario para el proyecto.
 
-3.  Actualización de la *.vstemplate* archivo para reflejar las adiciones y eliminaciones. El [proyecto](../extensibility/project-element-visual-studio-templates.md) elemento debe contener un [ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md) (elemento) para cada archivo que se incluirán en la plantilla.
+3. Actualización de la *.vstemplate* archivo para reflejar las adiciones y eliminaciones. El [proyecto](../extensibility/project-element-visual-studio-templates.md) elemento debe contener un [ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md) (elemento) para cada archivo que se incluirán en la plantilla.
 
-4.  Modificar los archivos de código y otros contenidos de cara al usuario y agregue las sustituciones de parámetros apropiado.
+4. Modificar los archivos de código y otros contenidos de cara al usuario y agregue las sustituciones de parámetros apropiado.
 
-5.  Modificar el contenido generado según sea necesario.
+5. Modificar el contenido generado según sea necesario.
 
-6.  Compile el proyecto.
+6. Compile el proyecto.
 
      Visual Studio crea un archivo comprimido que contiene la plantilla. No se ha implementado y no está disponible en la instancia experimental.
 
@@ -68,21 +68,21 @@ Para escenarios de creación de la plantilla básica, debe usar el **Exportar pl
 
 ### <a name="to-deploy-the-project-or-item-template"></a>Para implementar la plantilla de proyecto o elemento
 
-1.  Crear un proyecto de VSIX. Para obtener más información, consulte [plantilla de proyecto VSIX](../extensibility/vsix-project-template.md).
+1. Crear un proyecto de VSIX. Para obtener más información, consulte [plantilla de proyecto VSIX](../extensibility/vsix-project-template.md).
 
-2.  Establezca el proyecto VSIX como proyecto de inicio. En el **el Explorador de soluciones**, seleccione el nodo del proyecto VSIX, contextual y seleccione **establecer como proyecto de inicio**.
+2. Establezca el proyecto VSIX como proyecto de inicio. En el **el Explorador de soluciones**, seleccione el nodo del proyecto VSIX, contextual y seleccione **establecer como proyecto de inicio**.
 
-3.  Establezca el proyecto de plantilla de proyecto como un recurso del proyecto VSIX. Abra el *.vsixmanifest* archivo. Vaya a la **activos** ficha y haga clic en **New**.
+3. Establezca el proyecto de plantilla de proyecto como un recurso del proyecto VSIX. Abra el *.vsixmanifest* archivo. Vaya a la **activos** ficha y haga clic en **New**.
 
-    1.  Establecer el **tipo** campo **Microsoft.VisualStudio.ProjectTemplate** o **Microsoft.VisualStudio.ItemTemplate**.
+    1. Establecer el **tipo** campo **Microsoft.VisualStudio.ProjectTemplate** o **Microsoft.VisualStudio.ItemTemplate**.
 
-    2.  Para el origen, seleccione el **un proyecto de la solución actual** opción y, a continuación, seleccione el proyecto que contiene la plantilla.
+    2. Para el origen, seleccione el **un proyecto de la solución actual** opción y, a continuación, seleccione el proyecto que contiene la plantilla.
 
-4.  Compile la solución y presione **F5**. Aparece la instancia experimental.
+4. Compile la solución y presione **F5**. Aparece la instancia experimental.
 
-5.  Para un proyecto de plantilla de proyecto, verá la plantilla de proyecto aparecen en la **nuevo proyecto** diálogo (**archivo** > **New**  >  **Proyecto**), en el nodo de Visual Basic o Visual C#. Para un proyecto de plantilla de elemento, debería ver la plantilla de elemento aparece en el **Agregar nuevo elemento** cuadro de diálogo. Para ver el **Agregar nuevo elemento** cuadro de diálogo, desde el **el Explorador de soluciones**, seleccione el nodo del proyecto y haga clic en **agregar** > **nuevo elemento**).
+5. Para un proyecto de plantilla de proyecto, verá la plantilla de proyecto aparecen en la **nuevo proyecto** diálogo (**archivo** > **New**  >  **Proyecto**), en el nodo de Visual Basic o Visual C#. Para un proyecto de plantilla de elemento, debería ver la plantilla de elemento aparece en el **Agregar nuevo elemento** cuadro de diálogo. Para ver el **Agregar nuevo elemento** cuadro de diálogo, desde el **el Explorador de soluciones**, seleccione el nodo del proyecto y haga clic en **agregar** > **nuevo elemento**).
 
 ## <a name="see-also"></a>Vea también
 
-[Referencia de plantillas de Visual Studio](../ide/creating-project-and-item-templates.md)
-[paquetes de NuGet en plantillas de Visual Studio](/nuget/visual-studio-extensibility/visual-studio-templates)
+- [Referencia de plantillas de Visual Studio](../ide/creating-project-and-item-templates.md)
+- [Paquetes NuGet en plantillas de Visual Studio](/nuget/visual-studio-extensibility/visual-studio-templates)

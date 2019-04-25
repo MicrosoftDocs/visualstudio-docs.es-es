@@ -2,7 +2,6 @@
 title: IDebugDocumentTextExternalAuthor (interfaz) | Documentos de Microsoft
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,12 +13,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eb7b09beb38fcdfb2a139fa385119cf9f76d77ae
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 60fb0d68d8052990fcc1783f86d0213b714dbfc9
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54344233"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58144711"
 ---
 # <a name="idebugdocumenttextexternalauthor-interface"></a>IDebugDocumentTextExternalAuthor (Interfaz)
 Permite que los editores externos para modificarlo de forma segura documentos basados en archivos depurador notificando el documento cuando se cambia el archivo de origen.  

@@ -1,25 +1,20 @@
 ---
 title: Nodos del Diseñador de sombras | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: f5192fbd-c78f-40a8-a4d4-443209610268
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f41d1d3d934ecd85ac36d24d704db561d42faa97
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: cde6b6a44649f3a9e100a0ff10e3dda21f2d6f3c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49293506"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096288"
 ---
 # <a name="shader-designer-nodes"></a>Nodos del Diseñador de sombras
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,15 +30,15 @@ Los artículos de esta sección de la documentación contienen información sobr
 ### <a name="promotion-of-inputs"></a>Promoción de entradas  
  Dado que en última instancia el Diseñador de sombras debe generar código fuente HLSL para que el efecto se pueda usar en un juego o aplicación, los nodos del Diseñador de sombras están sujetos a las reglas de promoción de tipos que se usan en HLSL. Como el hardware gráfico funciona principalmente sobre valores de punto flotante, no es habitual la promoción entre tipos diferentes, por ejemplo, de `int` a `float` o de `float` a `double`. En su lugar, como el hardware gráfico usa la misma operación en varios fragmentos de información a la vez, puede producirse un tipo de promoción diferente en la que la entrada más corta de varias entradas se alarga para que coincida con el tamaño de la entrada más larga. La forma en que se alargue depende del tipo de la entrada y también de la propia operación:  
   
--   **Si el tipo más pequeño es un valor escalar, entonces:**  
+- **Si el tipo más pequeño es un valor escalar, entonces:**  
   
      el valor de la expresión escalar se replica en un vector que es del mismo tamaño que la entrada más grande. Por ejemplo, la entrada escalar 5,0 se convierte en el vector (5,0, 5,0, 5,0) cuando la entrada más grande de la operación es un vector de tres elementos, sea cual sea la operación.  
   
--   **Si el tipo más pequeño es un vector y la operación es de multiplicación (\*, /, %, etc.), entonces:**  
+- **Si el tipo más pequeño es un vector y la operación es de multiplicación (\*, /, %, etc.), entonces:**  
   
      el valor del vector se copia en los elementos iniciales de un vector del mismo tamaño que la entrada más grande, y los elementos finales se establecen en 1,0. Por ejemplo, la entrada de vector (5,0, 5,0) se convierte en el vector (5,0, 5,0, 1,0, 1,0) cuando se multiplica por un vector de cuatro elementos. Esto conserva el tercer y cuarto elemento de la salida mediante el uso de la identidad de multiplicación, 1,0.  
   
--   **Si el tipo más pequeño es un vector y la operación es de suma (+, -, etc.), entonces:**  
+- **Si el tipo más pequeño es un vector y la operación es de suma (+, -, etc.), entonces:**  
   
      el valor del vector se copia en los elementos iniciales de un vector del mismo tamaño que la entrada más grande, y los elementos finales se establecen en 0,0. Por ejemplo, la entrada de vector (5,0, 5,0) se convierte en el vector (5,0, 5,0, 0,0, 0,0) cuando se suma a un vector de cuatro elementos. Esto conserva el tercer y cuarto elemento de la salida mediante el uso de la identidad de suma, 0,0.  
   
@@ -57,6 +52,3 @@ Los artículos de esta sección de la documentación contienen información sobr
 |[Nodos matemáticos](../designers/math-nodes.md)|Describe los nodos que se pueden usar para realizar operaciones algebraicas, lógicas, trigonométricas y otras operaciones matemáticas que se asignan directamente a las instrucciones de HLSL.|  
 |[Nodos de utilidad](../designers/utility-nodes.md)|Describe los nodos que se pueden usar para realizar operaciones de iluminación y otras operaciones comunes que no se asignan directamente a las instrucciones de HLSL.|  
 |[Nodos de filtro](../designers/filter-nodes.md)|Describe los nodos que se pueden usar para realizar el filtrado de textura y de color.|
-
-
-

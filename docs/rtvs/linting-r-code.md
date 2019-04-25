@@ -2,21 +2,20 @@
 title: Linting de código de R
 description: Describe cómo trabajar con la compatibilidad con detección de errores integrada en Visual Studio para R, incluidas las opciones de linter correspondientes.
 ms.date: 07/02/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.toolsoptionspages.text_editor.r.lint
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 7cbbf0e727269baa0a9e199574afcfee1d8ee687
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: aecf9d95fb8a3b2cda659e2694bff145424e150b
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53886687"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55920475"
 ---
 # <a name="lint-r-code-in-visual-studio"></a>Detectar errores de código en Visual Studio
 

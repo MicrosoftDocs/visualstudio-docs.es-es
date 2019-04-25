@@ -1,30 +1,24 @@
 ---
-title: 'Archivo XSD de ejemplo: Esquema de pedido de compra | Microsoft Docs'
-ms.custom: ''
+title: 'Archivo XSD de muestra: Esquema de pedido de compra | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: f92b63b5-ec61-43b5-ae1e-63432a7a7e30
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 6b421c1e7113bbabaea8cfd21659926053a009e7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: d3a699ed1eecfbd41e40a84d185e4d1d7d45fa59
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49272303"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650751"
 ---
-# <a name="sample-xsd-file-purchase-order-schema"></a>Archivo XSD de ejemplo: esquema de pedido de compra
+# <a name="sample-xsd-file-purchase-order-schema"></a>Archivo XSD de muestra: Esquema de pedido de compra
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 El archivo XSD siguiente se usa en numerosos ejemplos de la documentación del Diseñador de esquemas XSD. Este archivo es un esquema de pedido de compra.  
   
 ```xml  
@@ -94,6 +88,3 @@ El archivo XSD siguiente se usa en numerosos ejemplos de la documentación del D
   </xsd:complexType>  
 </xsd:schema>  
 ```
-
-
-

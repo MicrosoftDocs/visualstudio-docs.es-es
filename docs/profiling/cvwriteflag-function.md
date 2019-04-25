@@ -15,78 +15,73 @@ helpviewer_keywords:
 ms.assetid: ee9da1e2-7b34-4cba-81e2-215d25d32e4d
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1122b662bd9f23bb88f368c02432584c3bbfffe2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3a5a388c8f838f182d2f1f3d3f56f84b8fbf10e6
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53819541"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56596872"
 ---
 # <a name="cvwriteflag-function"></a>Función CvWriteFlag
-Escribe una marca en el archivo de seguimiento del visualizador de simultaneidad.  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```C  
-HRESULT CvWriteFlagExW(  
-    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,  
-    _In_ CV_IMPORTANCE level,  
-    _In_ int category,  
-    _In_ PCWSTR pMessage,  
-    ...  
-    );  
-  
-HRESULT CvWriteFlagExA(  
-    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,  
-    _In_ CV_IMPORTANCE level,  
-    _In_ int category,  
-    _In_ PCSTR pMessage,  
-    ...  
-    );  
-  
-HRESULT CvWriteFlagExVW(  
-    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,  
-    _In_ CV_IMPORTANCE level,  
-    _In_ int category,  
-    _In_ PCWSTR pMessage,  
-    _In_ va_list argList);  
-  
-HRESULT CvWriteFlagExVA(  
-    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,  
-    _In_ CV_IMPORTANCE level,  
-    _In_ int category,  
-    _In_ PCSTR pMessage,  
-    _In_ va_list argList);  
-```  
-  
-#### <a name="parameters"></a>Parámetros  
- `argList`  
- Lista de argumentos.  
-  
- `category`  
- Categoría.  
-  
- `level`  
- Nivel de importancia.  
-  
- `pMarkerSeries`  
- Contexto de la serie de marcador válido. No puede ser nulo.  
-  
- `pMessage`  
- Cadena de formato de mensaje. No puede ser nulo.  
-  
-## <a name="return-value"></a>Valor devuelto  
- S_OK cuando el mensaje se ha escrito correctamente. Código de error en caso de que se hayan producido errores. Utilice macros SUCCEEDED/FAILED para comprobar si existe una condición de error.  
-  
-## <a name="requirements"></a>Requisitos  
- **Encabezado:** *cvmarkers.h*  
-  
- **Unicode:** CvWriteFlagExW, CvWriteFlagExVW  
-  
- <strong>ANSI:</strong>CvWriteFlagExA, CvWriteFlagExVA  
-  
-## <a name="see-also"></a>Vea también  
- [Referencia de la biblioteca C++](../profiling/cpp-library-reference.md)
+Escribe una marca en el archivo de seguimiento del visualizador de simultaneidad.
+
+## <a name="syntax"></a>Sintaxis
+
+```C
+HRESULT CvWriteFlagExW(
+    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,
+    _In_ CV_IMPORTANCE level,
+    _In_ int category,
+    _In_ PCWSTR pMessage,
+    ...
+    );
+
+HRESULT CvWriteFlagExA(
+    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,
+    _In_ CV_IMPORTANCE level,
+    _In_ int category,
+    _In_ PCSTR pMessage,
+    ...
+    );
+
+HRESULT CvWriteFlagExVW(
+    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,
+    _In_ CV_IMPORTANCE level,
+    _In_ int category,
+    _In_ PCWSTR pMessage,
+    _In_ va_list argList);
+
+HRESULT CvWriteFlagExVA(
+    _In_reads_bytes_(16) PCV_MARKERSERIES pMarkerSeries,
+    _In_ CV_IMPORTANCE level,
+    _In_ int category,
+    _In_ PCSTR pMessage,
+    _In_ va_list argList);
+```
+
+#### <a name="parameters"></a>Parámetros
+ `argList` Lista de argumentos.
+
+ `category` Categoría.
+
+ `level` Nivel de importancia.
+
+ `pMarkerSeries` Contexto de la serie de marcador válido. No puede ser nulo.
+
+ `pMessage` Cadena de formato de mensaje. No puede ser nulo.
+
+## <a name="return-value"></a>Valor devuelto
+ S_OK cuando el mensaje se ha escrito correctamente. Código de error en caso de que se hayan producido errores. Utilice macros SUCCEEDED/FAILED para comprobar si existe una condición de error.
+
+## <a name="requirements"></a>Requisitos
+ **Encabezado:** *cvmarkers.h*
+
+ **Unicode:** CvWriteFlagExW, CvWriteFlagExVW
+
+ <strong>ANSI:</strong>CvWriteFlagExA, CvWriteFlagExVA
+
+## <a name="see-also"></a>Vea también
+- [Referencia de la biblioteca C++](../profiling/cpp-library-reference.md)

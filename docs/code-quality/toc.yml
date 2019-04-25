@@ -28,16 +28,24 @@
   items:
     - name: Análisis de código para código administrado
       items:
-        - name: Preguntas frecuentes sobre los analizadores de FxCop
-          href: fxcop-analyzers-faq.md
-        - name: Migrar desde FxCop
-          href: fxcop-analyzers.yml
+        - name: Analizadores de FxCop
           items:
-            - name: Instalar analizadores de FxCop
+            - name: Preguntas más frecuentes
+              href: fxcop-analyzers-faq.md
+            - name: Instalar
               href: install-fxcop-analyzers.md
+            - name: Configurar
+              href: configure-fxcop-analyzers.md
+              items:
+                - name: Opciones de configuración
+                  href: fxcop-analyzer-options.md
+            - name: Migración desde el análisis de código estático
+              href: fxcop-analyzers.yml
+        - name: Preguntas más frecuentes sobre analizadores
+          href: analyzers-faq.md
         - name: Instalar analizadores de Roslyn
           href: install-roslyn-analyzers.md
-        - name: Configurar y usar analizadores de Roslyn
+        - name: Uso y configuración de analizadores de Roslyn
           href: use-roslyn-analyzers.md
         - name: Habilitar análisis de código automático
           href: how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md
@@ -313,7 +321,7 @@
               href: ca1309-use-ordinal-stringcomparison.md
             - name: 'CA2101: Especificar serialización de argumentos de cadena P-Invoke'
               href: ca2101-specify-marshaling-for-p-invoke-string-arguments.md
-        - name: advertencias de interoperabilidad
+        - name: Advertencias de interoperabilidad
           href: interoperability-warnings.md
           items:
             - name: 'CA1400: Deben existir puntos de entrada P-Invoke'
@@ -348,7 +356,7 @@
               href: ca1414-mark-boolean-p-invoke-arguments-with-marshalas.md
             - name: 'CA1415: Declarar elementos P-Invoke correctamente'
               href: ca1415-declare-p-invokes-correctly.md
-        - name: advertencias de mantenimiento
+        - name: Advertencias de mantenimiento
           href: maintainability-warnings.md
           items:
             - name: 'CA1500: Los nombres de las variables no deben coincidir con los nombres de los campos'
@@ -363,14 +371,14 @@
               href: ca1505-avoid-unmaintainable-code.md
             - name: 'CA1506: Evitar el acoplamiento excesivo de clases'
               href: ca1506-avoid-excessive-class-coupling.md
-        - name: advertencias de movilidad
+        - name: Advertencias de movilidad
           href: mobility-warnings.md
           items:
             - name: 'CA1600: No utilizar la prioridad del proceso inactiva'
               href: ca1600-do-not-use-idle-process-priority.md
             - name: 'CA1601: No utilizar temporizadores que impidan los cambios de estado de energía'
               href: ca1601-do-not-use-timers-that-prevent-power-state-changes.md
-        - name: advertencias de nomenclatura
+        - name: Advertencias de nomenclatura
           href: naming-warnings.md
           items:
             - name: 'CA1700: No nombrar valores de enumeración como ''Reserved'''
@@ -419,7 +427,7 @@
               href: ca1724-type-names-should-not-match-namespaces.md
             - name: 'CA1726: Utilizar términos preferidos'
               href: ca1726-use-preferred-terms.md
-        - name: advertencias de rendimiento
+        - name: Advertencias de rendimiento
           href: performance-warnings.md
           items:
             - name: 'CA1800: No convertir innecesariamente'
@@ -454,7 +462,7 @@
               href: ca1823-avoid-unused-private-fields.md
             - name: 'CA1824: Marcar los ensamblados con NeutralResourcesLanguageAttribute'
               href: ca1824-mark-assemblies-with-neutralresourceslanguageattribute.md
-        - name: advertencias de portabilidad
+        - name: Advertencias de portabilidad
           href: portability-warnings.md
           items:
             - name: 'CA1900: Los campos de tipo de valor deben ser portátiles'
@@ -463,7 +471,7 @@
               href: ca1901-p-invoke-declarations-should-be-portable.md
             - name: 'CA1903: Usar solo API de la versión de .NET Framework de destino'
               href: ca1903-use-only-api-from-targeted-framework.md
-        - name: advertencias de confiabilidad
+        - name: Advertencias de confiabilidad
           href: reliability-warnings.md
           items:
             - name: 'CA2000: Desechar objetos antes de perder el ámbito'
@@ -478,6 +486,8 @@
               href: ca2004-remove-calls-to-gc-keepalive.md
             - name: 'CA2006: Utilizar SafeHandle para encapsular recursos nativos'
               href: ca2006-use-safehandle-to-encapsulate-native-resources.md
+            - name: 'CA2007: No esperar una tarea directamente'
+              href: ca2007-do-not-directly-await-task.md
         - name: Advertencias de seguridad
           href: security-warnings.md
           items:
@@ -571,6 +581,36 @@
               href: ca5122-p-invoke-declarations-should-not-be-safe-critical.md
             - name: 'CA2153: Evitar el control de excepciones de estado dañadas'
               href: ca2153-avoid-handling-corrupted-state-exceptions.md
+            - name: 'CA2300: No usar el deserializador no seguro BinaryFormatter'
+              href: ca2300-do-not-use-insecure-deserializer-binaryformatter.md
+            - name: 'CA2301: No llamar a BinaryFormatter.Deserialize sin establecer primero BinaryFormatter.Binder'
+              href: ca2301-do-not-call-binaryformatter-deserialize-without-first-setting-binaryformatter-binder.md
+            - name: 'CA2302: Asegurarse de que BinaryFormatter.Binder está establecido antes de llamar a BinaryFormatter.Deserialize'
+              href: ca2302-ensure-binaryformatter-binder-is-set-before-calling-binaryformatter-deserialize.md
+            - name: 'CA3001: Revisión de código en busca de vulnerabilidades de inyección de SQL'
+              href: ca3001-review-code-for-sql-injection-vulnerabilities.md
+            - name: 'CA3002: Revisión de código en busca de vulnerabilidades de XSS'
+              href: ca3002-review-code-for-xss-vulnerabilities.md
+            - name: 'CA3003: Revisión de código en busca de vulnerabilidades de inyección de rutas de acceso a archivos'
+              href: ca3003-review-code-for-file-path-injection-vulnerabilities.md
+            - name: 'CA3004: Revisión de código en busca de vulnerabilidades de divulgación de información'
+              href: ca3004-review-code-for-information-disclosure-vulnerabilities.md
+            - name: 'CA3005: Revisión de código en busca de vulnerabilidades de inyección de LDAP'
+              href: ca3005-review-code-for-ldap-injection-vulnerabilities.md
+            - name: 'CA3006: Revisión de código en busca de vulnerabilidades de inyección de comandos de procesos'
+              href: ca3006-review-code-for-process-command-injection-vulnerabilities.md
+            - name: 'CA3007: Revisión de código en busca de vulnerabilidades de redireccionamiento abierto'
+              href: ca3007-review-code-for-open-redirect-vulnerabilities.md
+            - name: 'CA3008: Revisión de código en busca de vulnerabilidades de inyección de XPath'
+              href: ca3008-review-code-for-xpath-injection-vulnerabilities.md
+            - name: 'CA3009: Revisión de código en busca de vulnerabilidades de inyección de XML'
+              href: ca3009-review-code-for-xml-injection-vulnerabilities.md
+            - name: 'CA3010: Revisión de código en busca de vulnerabilidades de inyección de XAML'
+              href: ca3010-review-code-for-xaml-injection-vulnerabilities.md
+            - name: 'CA3011: Revisión de código en busca de vulnerabilidades de inyección de DLL'
+              href: ca3011-review-code-for-dll-injection-vulnerabilities.md
+            - name: 'CA3012: Revisión de código en busca de vulnerabilidades de inyección de expresiones regulares'
+              href: ca3012-review-code-for-regex-injection-vulnerabilities.md
             - name: 'CA3075: Procesamiento no seguro de DTD'
               href: ca3075-insecure-dtd-processing.md
             - name: 'CA3076: Ejecución del script XSLT no segura'
@@ -579,7 +619,7 @@
               href: ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader.md
             - name: 'CA3147: Marcar los controladores de verbo con ValidateAntiForgeryToken'
               href: ca3147-mark-verb-handlers-with-validateantiforgerytoken.md
-        - name: advertencias de uso
+        - name: Advertencias de uso
           href: usage-warnings.md
           items:
             - name: 'CA1801: Revisar parámetros sin utilizar'

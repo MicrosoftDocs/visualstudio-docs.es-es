@@ -1,27 +1,22 @@
 ---
 title: Implementación especializada de control | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - deploying applications [Visual Studio SDK]
 - specialized deployment
 ms.assetid: de068b6a-e806-45f0-9dec-2458fbb486f7
 caps.latest.revision: 33
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 236acfbad0d5c49710f4c7eb8b20a7572b209212
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3c69c7732079b5cb85932d6d71cd797166b744d4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51736767"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054812"
 ---
 # <a name="handling-specialized-deployment"></a>Control de implementación especializada
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -52,7 +47,7 @@ Una implementación es una operación opcional para los proyectos. Un proyecto W
   
 #### <a name="to-handle-a-specialized-deployment-by-a-subtype-project"></a>Para administrar una implementación especializada en un proyecto de subtipo  
   
--   Implemente el <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.AdviseDeployStatusCallback%2A> método para registrar el entorno para recibir notificaciones de eventos de estado de implementación.  
+- Implemente el <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.AdviseDeployStatusCallback%2A> método para registrar el entorno para recibir notificaciones de eventos de estado de implementación.  
   
     ```vb  
     Private adviseSink As Microsoft.VisualStudio.Shell.EventSinkCollection = New Microsoft.VisualStudio.Shell.EventSinkCollection()  
@@ -83,7 +78,7 @@ Una implementación es una operación opcional para los proyectos. Un proyecto W
   
     ```  
   
--   Implemente el <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.UnadviseDeployStatusCallback%2A> método para cancelar el registro del entorno para recibir notificaciones de eventos de estado de implementación.  
+- Implemente el <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.UnadviseDeployStatusCallback%2A> método para cancelar el registro del entorno para recibir notificaciones de eventos de estado de implementación.  
   
     ```vb  
     Public Function UnadviseDeployStatusCallback(ByVal dwCookie As UInteger) As Integer  
@@ -101,7 +96,7 @@ Una implementación es una operación opcional para los proyectos. Un proyecto W
   
     ```  
   
--   Implemente el <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Commit%2A> método para realizar la operación de confirmación específica para su aplicación.  Este método se utiliza principalmente para la implementación de base de datos.  
+- Implemente el <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Commit%2A> método para realizar la operación de confirmación específica para su aplicación.  Este método se utiliza principalmente para la implementación de base de datos.  
   
     ```vb  
     Public Function Commit(ByVal dwReserved As UInteger) As Integer  
@@ -119,7 +114,7 @@ Una implementación es una operación opcional para los proyectos. Un proyecto W
   
     ```  
   
--   Implemente el <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Rollback%2A> método para realizar una operación de reversión. Cuando se llama a este método, el proyecto de implementación debe hacer lo que corresponda para revertir los cambios y restaurar el estado del proyecto. Este método se utiliza principalmente para la implementación de base de datos.  
+- Implemente el <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Rollback%2A> método para realizar una operación de reversión. Cuando se llama a este método, el proyecto de implementación debe hacer lo que corresponda para revertir los cambios y restaurar el estado del proyecto. Este método se utiliza principalmente para la implementación de base de datos.  
   
     ```vb  
     Public Function Commit(ByVal dwReserved As UInteger) As Integer  
@@ -137,7 +132,7 @@ Una implementación es una operación opcional para los proyectos. Un proyecto W
   
     ```  
   
--   Implemente el <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStartDeploy%2A> método para determinar si un proyecto se puede iniciar una operación de implementación.  
+- Implemente el <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStartDeploy%2A> método para determinar si un proyecto se puede iniciar una operación de implementación.  
   
     ```vb  
     Public Function QueryStartDeploy(ByVal dwOptions As UInteger, ByVal pfSupported As Integer(), ByVal pfReady As Integer()) As Integer  
@@ -170,7 +165,7 @@ Una implementación es una operación opcional para los proyectos. Un proyecto W
   
     ```  
   
--   Implemente el <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStatusDeploy%2A> método para determinar si una operación de implementación se ha completado correctamente.  
+- Implemente el <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStatusDeploy%2A> método para determinar si una operación de implementación se ha completado correctamente.  
   
     ```vb  
     Public Function QueryStatusDeploy(ByRef pfDeployDone As Integer) As Integer  
@@ -193,7 +188,7 @@ Una implementación es una operación opcional para los proyectos. Un proyecto W
   
     ```  
   
--   Implemente el <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StartDeploy%2A> método para comenzar una operación de implementación en un subproceso independiente. Coloque el código específico para la implementación de su aplicación dentro de la `Deploy` método.  
+- Implemente el <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StartDeploy%2A> método para comenzar una operación de implementación en un subproceso independiente. Coloque el código específico para la implementación de su aplicación dentro de la `Deploy` método.  
   
     ```vb  
     Public Function StartDeploy(ByVal pIVsOutputWindowPane As IVsOutputWindowPane, ByVal dwOptions As UInteger) As Integer  
@@ -250,7 +245,7 @@ Una implementación es una operación opcional para los proyectos. Un proyecto W
   
     ```  
   
--   Implemente el <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StopDeploy%2A> método para detener una operación de implementación. Este método se llama cuando el usuario presiona el **cancelar** botón durante el proceso de implementación.  
+- Implemente el <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StopDeploy%2A> método para detener una operación de implementación. Este método se llama cuando el usuario presiona el **cancelar** botón durante el proceso de implementación.  
   
     ```vb  
     Public Function StopDeploy(ByVal fSync As Integer) As Integer  
@@ -300,4 +295,3 @@ Una implementación es una operación opcional para los proyectos. Un proyecto W
   
 ## <a name="see-also"></a>Vea también  
  [Subtipos de proyecto](../../extensibility/internals/project-subtypes.md)
-

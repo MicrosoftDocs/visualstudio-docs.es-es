@@ -1,14 +1,9 @@
 ---
 title: Referencia de la línea de comandos de MSBuild | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -22,18 +17,17 @@ ms.assetid: edaa65ec-ab8a-42a1-84cb-d76d5b2f4584
 caps.latest.revision: 61
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3a1827166829686801743ccc98156a0009e50dc3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 8d40bfefb1f89496b538612dfa1819cc6d65c76c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49245913"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663446"
 ---
 # <a name="msbuild-command-line-reference"></a>Referencia de la línea de comandos de MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Si usa MSBuild.exe para compilar un proyecto o archivo de solución, puede incluir varios modificadores para especificar distintos aspectos del proceso.  
   
 ## <a name="syntax"></a>Sintaxis  
@@ -59,10 +53,10 @@ MSBuild.exe [Switches] [ProjectFile]
 |/noautoresponse|/noautorsp|No incluye automáticamente ningún archivo MSBuild.rsp.|  
 |/nodeReuse:`value`|/nr:`value`|Habilita o deshabilita la reutilización de los nodos de MSBuild. Puede especificar los siguientes valores:<br /><br /> -   **True**. Los nodos permanecen al finalizar la compilación de modo que las compilaciones subsiguientes puedan usarlos (valor predeterminado).<br />-   **False**. Los nodos no se conservan después finalizar la compilación.<br /><br /> Un nodo corresponde a un proyecto que se está ejecutando. Si incluye el modificador **/maxcpucount**, se podrán ejecutar varios nodos simultáneamente.|  
 |/nologo||No muestra la pancarta de inicio ni el mensaje de copyright.|  
-|/preprocess[:`filepath`]|/pp[:`filepath`]|Crea un solo archivo de proyecto agregado alineando todos los archivos que se importarían durante una compilación, con sus límites marcados. Puede usar este modificador para determinar con mayor facilidad qué archivos se van a importar, desde dónde y cuáles contribuirán a la compilación. Si se usa este modificador, el proyecto no se compila.<br /><br /> Si especifica el parámetro `filepath`, el archivo de proyecto agregado se genera en el archivo. En caso contrario, los resultados aparecen en la ventana de la consola.<br /><br /> Para obtener información sobre cómo usar el elemento `Import` para insertar un archivo del proyecto en otro archivo del proyecto, consulte [Elemento Import (MSBuild)](../msbuild/import-element-msbuild.md) y [Cómo: Usar el mismo destino en varios archivos del proyecto](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md).|  
+|/preprocess[:`filepath`]|/pp[:`filepath`]|Crea un solo archivo de proyecto agregado alineando todos los archivos que se importarían durante una compilación, con sus límites marcados. Puede usar este modificador para determinar con mayor facilidad qué archivos se van a importar, desde dónde y cuáles contribuirán a la compilación. Si se usa este modificador, el proyecto no se compila.<br /><br /> Si especifica el parámetro `filepath`, el archivo de proyecto agregado se genera en el archivo. En caso contrario, los resultados aparecen en la ventana de la consola.<br /><br /> Para obtener información sobre cómo usar el `Import` elemento para insertar un archivo de proyecto en otro archivo de proyecto, vea [elemento Import (MSBuild)](../msbuild/import-element-msbuild.md) y [Cómo: Usar el mismo destino en varios archivos de proyecto](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md).|  
 |/property:`name`=`value`|/p:`name`=`value`|Establece o invalida las propiedades en el nivel de proyecto especificadas, donde `name` es el nombre de la propiedad y `value` es el valor de propiedad. Especifique cada propiedad por separado, o use un punto y coma o una coma para separar varias propiedades, como se muestra en el ejemplo siguiente:<br /><br /> `/property:WarningLevel=2;OutDir=bin\Debug`|  
-|/target:`targets`|/t:`targets`|Compila los destinos especificados en el proyecto. Especifique cada destino por separado, o use un punto y coma o una coma para separar varios destinos, como se muestra en el ejemplo siguiente:<br /><br /> `/target:Resources;Compile`<br /><br /> Si especifica destinos usando este modificador, estos se ejecutarán en lugar de los especificados en el atributo `DefaultTargets` del archivo de proyecto. Para obtener más información, vea [Orden de compilación de destinos](../msbuild/target-build-order.md) y [Cómo: Especificar qué destino utilizar primero al compilar](../msbuild/how-to-specify-which-target-to-build-first.md).<br /><br /> Un destino es un grupo de tareas. Para obtener más información, consulte [Destinos](../msbuild/msbuild-targets.md).|  
-|/toolsversion:`version`|/tv:`version`|Especifica la versión del conjunto de herramientas que se va a usar para compilar el proyecto, como se muestra en el ejemplo siguiente: `/toolsversion:3.5`<br /><br /> Con este modificador, puede compilar un proyecto y especificar una versión diferente de la especificada en el [elemento Project (MSBuild)](../msbuild/project-element-msbuild.md). Para obtener más información, vea [Invalidar la configuración de ToolsVersion](../msbuild/overriding-toolsversion-settings.md).<br /><br /> En MSBuild 4.5, puede especificar los valores siguientes para `version`: 2.0, 3.5 y 4.0. Si especifica 4.0, la propiedad de compilación `VisualStudioVersion` especifica el subconjunto de herramientas que se va a usar. Para obtener más información, vea la sección de subconjuntos de herramientas de [Conjunto de herramientas (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md).<br /><br /> Un conjunto de herramientas consta de tareas, destinos y herramientas que se utilizan para compilar una aplicación. Las herramientas incluyen compiladores como csc.exe y vbc.exe. Para obtener más información sobre los conjuntos de herramientas, vea [Conjunto de herramientas (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md), [Configuraciones de conjuntos de herramientas estándar y personalizados](../msbuild/standard-and-custom-toolset-configurations.md) y [Compatibilidad con múltiples versiones (multi-targeting)](../msbuild/msbuild-multitargeting-overview.md). **Nota**: La versión del conjunto de herramientas no es la misma que la plataforma de destino, que es la versión de .NET Framework para la que se compila un proyecto. Para obtener más información, vea [Versión de .NET Framework de destino y plataforma de destino](../msbuild/msbuild-target-framework-and-target-platform.md).|  
+|/target:`targets`|/t:`targets`|Compila los destinos especificados en el proyecto. Especifique cada destino por separado, o use un punto y coma o una coma para separar varios destinos, como se muestra en el ejemplo siguiente:<br /><br /> `/target:Resources;Compile`<br /><br /> Si especifica destinos usando este modificador, estos se ejecutarán en lugar de los especificados en el atributo `DefaultTargets` del archivo de proyecto. Para obtener más información, consulte [orden de compilación de destino](../msbuild/target-build-order.md) y [Cómo: Especificar qué destino utilizar primero al compilar](../msbuild/how-to-specify-which-target-to-build-first.md).<br /><br /> Un destino es un grupo de tareas. Para obtener más información, consulte [Destinos](../msbuild/msbuild-targets.md).|  
+|/toolsversion:`version`|/tv:`version`|Especifica la versión del conjunto de herramientas que se va a usar para compilar el proyecto, como se muestra en el ejemplo siguiente: `/toolsversion:3.5`<br /><br /> Con este modificador, puede compilar un proyecto y especificar una versión diferente de la especificada en el [elemento Project (MSBuild)](../msbuild/project-element-msbuild.md). Para obtener más información, vea [Invalidar la configuración de ToolsVersion](../msbuild/overriding-toolsversion-settings.md).<br /><br /> En MSBuild 4.5, puede especificar los valores siguientes para `version`: 2.0, 3.5 y 4.0. Si especifica 4.0, la propiedad de compilación `VisualStudioVersion` especifica el subconjunto de herramientas que se va a usar. Para obtener más información, vea la sección de subconjuntos de herramientas de [Conjunto de herramientas (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md).<br /><br /> Un conjunto de herramientas consta de tareas, destinos y herramientas que se utilizan para compilar una aplicación. Las herramientas incluyen compiladores como csc.exe y vbc.exe. Para obtener más información sobre los conjuntos de herramientas, vea [Conjunto de herramientas (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md), [Configuraciones de conjuntos de herramientas estándar y personalizados](../msbuild/standard-and-custom-toolset-configurations.md) y [Compatibilidad con múltiples versiones (multi-targeting)](../msbuild/msbuild-multitargeting-overview.md). **Nota:**  La versión del conjunto de herramientas no es la misma que la plataforma de destino, que es la versión de .NET Framework para la que se compila un proyecto. Para obtener más información, vea [Versión de .NET Framework de destino y plataforma de destino](../msbuild/msbuild-target-framework-and-target-platform.md).|  
 |/validate:[`schema`]|/val[`schema`]|Valida el archivo de proyecto y, si la validación es correcta, lo compila.<br /><br /> Si no especifica `schema`, el proyecto se valida con el esquema predeterminado.<br /><br /> Si especifica `schema`, el proyecto se valida con el esquema especificado.<br /><br /> El valor siguiente muestra un ejemplo: `/validate:MyExtendedBuildSchema.xsd`|  
 |/verbosity:`level`|/v:`level`|Especifica la cantidad de información que se va a mostrar en el registro de compilación. Cada registrador muestra eventos en función del nivel de detalle establecido para él.<br /><br /> Puede especificar los niveles de detalles siguientes: `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]` y `diag[nostic]`.<br /><br /> El valor siguiente muestra un ejemplo: `/verbosity:quiet`|  
 |/version|/ver|Muestra solo la información de versión. El proyecto no se compila.|  
@@ -97,6 +91,3 @@ msbuild SlnFolders.sln /t:NotInSolutionfolder:Rebuild;NewFolder\InSolutionFolder
 ## <a name="see-also"></a>Vea también  
  [Referencia de MSBuild](../msbuild/msbuild-reference.md)   
  [Propiedades comunes de proyectos de MSBuild](../msbuild/common-msbuild-project-properties.md)
-
-
-

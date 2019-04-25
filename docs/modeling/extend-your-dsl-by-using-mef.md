@@ -4,16 +4,15 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 6e6c790677ea49ad784e7ff5d48326a1d5e216ad
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 40b62719fb00910e4eef183f960e1a1d4ea9a4a4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986172"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084250"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>Ampliar DSL mediante MEF
 
@@ -25,7 +24,7 @@ Para obtener más información acerca de MEF, vea [Managed Extensibility Framewo
 
 ### <a name="to-enable-your-dsl-to-be-extended-by-mef"></a>Para habilitar su DSL sea ampliada por MEF
 
-1.  Cree una carpeta nueva denominada **MefExtension** dentro de la **DslPackage** proyecto. Agregue los siguientes archivos en ella:
+1. Cree una carpeta nueva denominada **MefExtension** dentro de la **DslPackage** proyecto. Agregue los siguientes archivos en ella:
 
      Nombre de archivo: `CommandExtensionVSCT.tt`
 
@@ -73,7 +72,7 @@ Para obtener más información acerca de MEF, vea [Managed Extensibility Framewo
     <#@ include file="DslPackage\PackageExtensionEnablement.tt" #>
     ```
 
-2.  Cree una carpeta nueva denominada **MefExtension** dentro de la **Dsl** proyecto. Agregue los siguientes archivos en ella:
+2. Cree una carpeta nueva denominada **MefExtension** dentro de la **Dsl** proyecto. Agregue los siguientes archivos en ella:
 
      Nombre de archivo: `DesignerExtensionMetaDataAttribute.tt`
 
@@ -96,7 +95,7 @@ Para obtener más información acerca de MEF, vea [Managed Extensibility Framewo
     <#@ include file="Dsl\GestureExtensionController.tt" #>
     ```
 
-3.  Agregue la siguiente línea al archivo existente que se denomina **Dslpackage\commands**:
+3. Agregue la siguiente línea al archivo existente que se denomina **Dslpackage\commands**:
 
     ```xml
     <Include href="MefExtension\CommandExtensionVSCT.vsct"/>
@@ -104,29 +103,29 @@ Para obtener más información acerca de MEF, vea [Managed Extensibility Framewo
 
     Inserte la línea después de la existente `<Include>` directiva.
 
-4.  Abra *DslDefinition.dsl*.
+4. Abra *DslDefinition.dsl*.
 
-5.  En el Explorador de DSL, seleccione **Editor\Validation**.
+5. En el Explorador de DSL, seleccione **Editor\Validation**.
 
-6.  En la ventana Propiedades, asegúrese de que al menos una de las propiedades con nombre **usa** es `true`.
+6. En la ventana Propiedades, asegúrese de que al menos una de las propiedades con nombre **usa** es `true`.
 
-7.  En el **el Explorador de soluciones** barra de herramientas, haga clic en **Transformar todas las plantillas**.
+7. En el **el Explorador de soluciones** barra de herramientas, haga clic en **Transformar todas las plantillas**.
 
      Archivos secundarios aparecen debajo de cada uno de los archivos que ha agregado.
 
-8.  Compile y ejecute la solución para comprobar que sigue funcionando.
+8. Compile y ejecute la solución para comprobar que sigue funcionando.
 
 Su DSL ya está habilitado de MEF. Puede escribir comandos de menú, los controladores de gestos y restricciones de validación como extensiones MEF. Puede escribir estas extensiones en la solución DSL, junto con otro código personalizado. Además, usted u otros desarrolladores pueden escribir extensiones de Visual Studio independientes que amplían su DSL.
 
-## <a name="creating-an-extension-for-a-mef-enabled-dsl"></a>Creación de una extensión para un DSL MEF habilitado
+## <a name="create-an-extension-for-a-mef-enabled-dsl"></a>Crear una extensión para un DSL MEF habilitado
 
 Si tiene acceso a un DSL habilitado MEF creado por usted u otra persona, puede escribir las extensiones para él. Las extensiones se pueden usar para agregar las restricciones de validación, los controladores de gestos o comandos de menú. Para crear estas extensiones, use una solución de extensión (VSIX) de Visual Studio. La solución tiene dos partes: un proyecto de biblioteca de clases que se compila el ensamblado de código y un proyecto VSIX que los paquetes del ensamblado.
 
-#### <a name="to-create-a-dsl-extension-vsix"></a>Para crear una extensión VSIX de DSL
+### <a name="to-create-a-dsl-extension-vsix"></a>Para crear una extensión VSIX de DSL
 
-1. Cree un nuevo proyecto de biblioteca de clases. Para ello, en el **nuevo proyecto** cuadro de diálogo, seleccione **Visual Basic** o **Visual C#** y, a continuación, seleccione **biblioteca de clases**.
+1. Cree un proyecto de **Biblioteca de clases**.
 
-2. En el nuevo proyecto de biblioteca de clases, agregue una referencia al ensamblado del DSL.
+2. En el nuevo proyecto, agregue una referencia al ensamblado del DSL.
 
    - Normalmente, este ensamblado tiene un nombre que termina con ". DSL.dll".
 
@@ -136,19 +135,19 @@ Si tiene acceso a un DSL habilitado MEF creado por usted u otra persona, puede e
 
 3. Agregue referencias a los ensamblados de .NET siguientes:
 
-   -   Microsoft.VisualStudio.Modeling.Sdk.11.0.dll
+   - Microsoft.VisualStudio.Modeling.Sdk.11.0.dll
 
-   -   Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0.dll
+   - Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0.dll
 
-   -   Microsoft.VisualStudio.Modeling.Sdk.Shell.11.0.dll
+   - Microsoft.VisualStudio.Modeling.Sdk.Shell.11.0.dll
 
-   -   System.ComponentModel.Composition.dll
+   - System.ComponentModel.Composition.dll
 
-   -   System.Windows.Forms.dll
+   - System.Windows.Forms.dll
 
-4. Cree un proyecto VSIX en la misma solución. Para ello, en el **nuevo proyecto** cuadro de diálogo, expanda **Visual Basic** o **Visual C#**, haga clic en **extensibilidad**y, a continuación, seleccione  **Proyecto de VSIX**.
+4. Cree un nuevo **proyecto VSIX** proyecto.
 
-5. En el Explorador de soluciones, haga clic en el proyecto VSIX y, a continuación, haga clic en **establecer como proyecto de inicio**.
+5. En **el Explorador de soluciones**, haga clic en el proyecto VSIX y elija **establecer como proyecto de inicio**.
 
 6. En el nuevo proyecto, abra **source.extension.vsixmanifest**.
 
@@ -377,5 +376,5 @@ namespace MefExtension
 
 - [Suministro de extensiones de Visual Studio](../extensibility/shipping-visual-studio-extensions.md)
 - [Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index)
-- [Cómo: Agregar un controlador de arrastrar y colocar](../modeling/how-to-add-a-drag-and-drop-handler.md)
+- [Cómo: Agregar un controlador para arrastrar y colocar](../modeling/how-to-add-a-drag-and-drop-handler.md)
 - [La validación en los lenguajes específicos de dominio](../modeling/validation-in-a-domain-specific-language.md)

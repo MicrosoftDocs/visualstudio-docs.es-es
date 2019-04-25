@@ -1,14 +1,9 @@
 ---
-title: 'Cómo: Establecer permisos | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Establecer permisos | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - profiling, setting permissions
 - security [Visual Studio ALM], setting permissions
@@ -19,15 +14,15 @@ ms.assetid: 69f27896-8f46-4ef3-bfb7-726d95304f3a
 caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 2bfbcb15d9dae16dd7d65ac00ad7c5b17600fa9d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d44ae7d3eb4c01434e2a8b6f2cf7c0391c749ad7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51792904"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114579"
 ---
-# <a name="how-to-set-permissions"></a>Cómo: Establecer permisos
+# <a name="how-to-set-permissions"></a>Procedimiento Establecer permisos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Este tema describe cómo un administrador de un equipo concede los permisos de seguridad necesarios para la generación de perfiles a un usuario o grupo que no tiene permisos de administrador en ese equipo.  
@@ -47,25 +42,25 @@ Este tema describe cómo un administrador de un equipo concede los permisos de s
   
 ### <a name="to-create-a-user-account-that-has-user-permissions"></a>Para crear una cuenta de usuario que tenga permisos de usuario  
   
-1.  Haga clic con el botón derecho en **Mi equipo** y después haga clic en **Administrar**.  
+1. Haga clic con el botón derecho en **Mi equipo** y después haga clic en **Administrar**.  
   
      Se abre la ventana **Administración de equipos**.  
   
-2.  Expandir **Grupos y usuarios locales**.  
+2. Expandir **Grupos y usuarios locales**.  
   
-3.  Haga clic con el botón derecho en la carpeta **Usuarios** y después haga clic en **Nuevo usuario**.  
+3. Haga clic con el botón derecho en la carpeta **Usuarios** y después haga clic en **Nuevo usuario**.  
   
      Aparece el cuadro de diálogo **New usuario**.  
   
-4.  Complete los campos de este cuadro de diálogo con la información de la cuenta de usuario que está creando. Especifique una contraseña. Si lo desea, active la casilla que exige al usuario cambiar la contraseña en el siguiente inicio de sesión.  
+4. Complete los campos de este cuadro de diálogo con la información de la cuenta de usuario que está creando. Especifique una contraseña. Si lo desea, active la casilla que exige al usuario cambiar la contraseña en el siguiente inicio de sesión.  
   
-5.  Haga clic en **Crear** y después en **Cerrar**.  
+5. Haga clic en **Crear** y después en **Cerrar**.  
   
      El nuevo usuario aparece en el grupo Usuarios, un grupo de usuarios que no tienen permisos de administrador.  
   
 ### <a name="to-grant-access-to-shared-project-files"></a>Para conceder acceso a archivos compartidos del proyecto  
   
-1.  En el Explorador de Windows (o Explorador de archivos), busque la raíz del árbol de carpetas para los archivos de proyecto utilizados por este usuario y compartidos por el equipo del proyecto.  
+1. En el Explorador de Windows (o Explorador de archivos), busque la raíz del árbol de carpetas para los archivos de proyecto utilizados por este usuario y compartidos por el equipo del proyecto.  
   
      La ruta de acceso de esta carpeta puede ser similar a la siguiente:  
   
@@ -73,17 +68,17 @@ Este tema describe cómo un administrador de un equipo concede los permisos de s
     D:\ourProject  
     ```  
   
-2.  Haga clic con el botón derecho en la carpeta y después haga clic en **Propiedades**.  
+2. Haga clic con el botón derecho en la carpeta y después haga clic en **Propiedades**.  
   
      Aparece el cuadro de diálogo **\<Nombre de carpeta > Propiedades**.  
   
-3.  Haga clic en la pestaña **Seguridad** .  
+3. Haga clic en la pestaña **Seguridad** .  
   
-4.  Haga clic en el nombre de la cuenta de usuario en el cuadro **Grupo o nombres de usuario**.  
+4. Haga clic en el nombre de la cuenta de usuario en el cuadro **Grupo o nombres de usuario**.  
   
-5.  En el cuadro **Permisos para \<nombre de usuario >**, seleccione la casilla **Control total**.  
+5. En el cuadro **Permisos para \<nombre de usuario >**, seleccione la casilla **Control total**.  
   
-6.  Haga clic en **Aceptar**.  
+6. Haga clic en **Aceptar**.  
   
      Esto concede permisos al usuario para el árbol de carpetas compartidas que comienza con la carpeta seleccionada en el paso 5.  
   
@@ -117,11 +112,11 @@ Este tema describe cómo un administrador de un equipo concede los permisos de s
   
     Este comando concede a la cuenta de \<nombre de usuario > o \<nombre del grupo> acceso a las herramientas de generación de perfiles. La opción \<right> determina la funcionalidad de generación de perfiles a la que el usuario puede tener acceso. La opción \<right> puede ser uno o varios de los siguientes valores:  
   
-   -   FullAccess: permite el acceso a todos los métodos de generación de perfiles, incluyendo la recopilación de datos de rendimiento de servicios, muestreo y generación de perfiles entre sesiones.  
+   - FullAccess: permite el acceso a todos los métodos de generación de perfiles, incluyendo la recopilación de datos de rendimiento de servicios, muestreo y generación de perfiles entre sesiones.  
   
-   -   SampleProfiling: permite el acceso a los métodos de generación de perfiles de muestra.  
+   - SampleProfiling: permite el acceso a los métodos de generación de perfiles de muestra.  
   
-   -   CrossSession: permite al acceso a la generación de perfiles entre sesiones que se requiere para los servicios de generación de perfiles.  
+   - CrossSession: permite al acceso a la generación de perfiles entre sesiones que se requiere para los servicios de generación de perfiles.  
   
 5. (Opcional) Para conservar los resultados de cualquiera de los pasos anteriores después de reiniciar el equipo, ejecute el siguiente comando:  
   
@@ -135,6 +130,3 @@ Este tema describe cómo un administrador de un equipo concede los permisos de s
  [Configurar sesiones de rendimiento](../profiling/configuring-performance-sessions.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [Generar perfiles y seguridad en Windows Vista](../profiling/profiling-and-windows-vista-security.md)
-
-
-

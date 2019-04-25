@@ -5,15 +5,15 @@ ms.topic: conceptual
 ms.assetid: 0e384ea1-4d9e-4307-8884-6e183900732c
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 12555b48550d252ce125ac437c1e30d5ae22fae9
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0ba49e1ab3e25e3f22a9ca8642673aa0a62869f6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53914613"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114774"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Colores y estilos para Visual Studio
 
@@ -85,7 +85,7 @@ A veces, desea permitir que el usuario final personalizar la interfaz de usuario
 
 ![Herramientas &gt; cuadro de diálogo Opciones](../../extensibility/ux-guidelines/media/0301-a_toolsoptionsdialog.png "0301 a_ToolsOptionsDialog")<br />Herramientas &gt; cuadro de diálogo Opciones
 
-##  <a name="BKMK_TheVSColorService"></a> El servicio VSColor
+## <a name="BKMK_TheVSColorService"></a> El servicio VSColor
 
 Visual Studio proporciona un servicio de color de entorno, también denominado el servicio VSColor o el servicio de color de shell. Este servicio permite enlazar los valores de color los elementos de la interfaz de usuario a un conjunto que contiene los colores para cada tema de colores de nombre y valor. El servicio VSColor debe usarse para todos los elementos de interfaz de usuario, por lo que los colores automáticamente cambian para reflejar el tema seleccionado por el usuario actual y para que la interfaz de usuario enlazada al servicio de color de entorno integrarán con nuevos temas en futuras versiones de Visual Studio.
 
@@ -112,7 +112,6 @@ IVsUIShell2::GetVSSysColorEx(VSSYSCOLOR dwSysColIndex, DWORD *pdwRGBval)
 En el archivo vsshell80.idl, la enumeración del explorador `__VSSYSCOLOREX` tiene shell color constantes. Para ello, pase como el valor de índice cualquiera de los valores de la `enum __VSSYSCOLOREX` documentadas en MSDN o un índice normal número que el sistema de Windows API, `GetSysColor`, acepta. Esto recibe el valor RGB del color que debe usarse en el segundo parámetro.
 
 Si almacena un lápiz o un pincel con un nuevo color, deberá `AdviseBroadcastMessages` (fuera de Visual Studio shell) y escuchar `WM_SYSCOLORCHANGE` y `WM_THEMECHANGED` mensajes.
-
 
 Para acceder al servicio de color en código nativo, podrá realizar una llamada similar a esta:
 
@@ -268,7 +267,7 @@ protected override void Dispose(bool disposing)
 }
 ```
 
-##  <a name="BKMK_ChoosingHighContrastColors"></a> Selección de colores de contraste alto
+## <a name="BKMK_ChoosingHighContrastColors"></a> Selección de colores de contraste alto
 
 ### <a name="overview"></a>Información general
 
@@ -328,10 +327,10 @@ Muchos elementos comunes de la interfaz de usuario ya tienen definido de colores
 | MenuText | -Borde del menú lista desplegable<br />: Marcas de verificación<br />-Glifos menú<br />-Texto del menú lista desplegable<br />-Borde del icono seleccionado |
 | Barra de desplazamiento | -Desplazarse barra y fondo de la flecha, todos los Estados de la barra de desplazamiento |
 | Ventana | Ocultar automáticamente el fondo de pestaña<br />-Menú de barras y fondo del estante de comandos<br />-Borde de documento, para las pestañas abiertas y provisionales y de fondo de ficha de ventana de documento sin foco o no seleccionado<br />-Fondo de barra de título de ventana de herramientas sin foco<br />-Fondo de pestaña de la ventana de herramientas, ambos seleccionado y no seleccionado |
-| Marco de ventana | : Borde IDE |
+| WindowFrame | : Borde IDE |
 | WindowText | -Primer plano de pestaña ocultación automática<br />-Primer plano de ficha de ventana de herramienta seleccionada<br />-Pestaña de ventana de documento sin foco y de primer plano de la pestaña provisional seleccionado o sin foco<br />-Árbol predeterminado de primer plano de vista y al mantener el mouse sobre un glifo no seleccionado<br />: Borde de ficha seleccionada de ventana de herramientas<br />-La barra de desplazamiento glifo, borde y fondo de miniatura |
 
-##  <a name="BKMK_ExposingColorsForEndUsers"></a> Exposición de colores para los usuarios finales
+## <a name="BKMK_ExposingColorsForEndUsers"></a> Exposición de colores para los usuarios finales
 
 ### <a name="overview"></a>Información general
 
@@ -359,7 +358,7 @@ Construir un tipo especial de entrada de registro de la categoría bajo `[HKLM\S
 
 Llenar el registro con dos valores:
 
-| nombre | Tipo | Datos | Descripción |
+| Name | Tipo | Datos | Descripción |
 | --- | --- | --- | --- |
 | Categoría | REG_SZ | GUID | Crea un GUID para identificar la categoría |
 | Paquete | REG_SZ | GUID | El GUID del servicio de VSPackage que admite la categoría |
@@ -372,7 +371,7 @@ Construir un tipo especial de entrada de registro de la categoría bajo `[HKLM\S
 
 Llenar el registro con dos valores:
 
-| nombre | Tipo | Datos | Descripción |
+| Name | Tipo | Datos | Descripción |
 |--- | --- | --- | --- |
 | Categoría | REG_SZ | GUID | Crea un GUID para identificar la categoría |
 | Paquete | REG_SZ | GUID | El GUID del servicio de VSPackage que admite la categoría |

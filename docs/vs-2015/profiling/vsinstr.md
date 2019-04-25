@@ -1,14 +1,9 @@
 ---
 title: VSInstr | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - performance tools, instrumentation
 - instrumentation, VSInstr tool
@@ -22,13 +17,13 @@ ms.assetid: 7b1334f7-f9b0-4a82-a145-d0607bfa8467
 caps.latest.revision: 49
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d905a7a6fa99afa0e7d43409ca1d7b53e7fbd9b0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 09562c3372a6dd933d3656f1b2f7ccf7ca68109d
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51773332"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54771041"
 ---
 # <a name="vsinstr"></a>VSInstr
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,6 +64,3 @@ VSInstr [/U] filename [/options]
  [VSPerfReport](../profiling/vsperfreport.md)   
  [Advertencias de VSInstr](../profiling/vsinstr-warnings.md)   
  [Vistas de informes de rendimiento](../profiling/performance-report-views.md)
-
-
-

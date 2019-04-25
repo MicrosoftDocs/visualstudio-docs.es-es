@@ -2,21 +2,20 @@
 title: Diseñador de flujo de trabajo - Diseñador de actividades DoWhile
 ms.date: 11/04/2016
 ms.topic: reference
-ms.prod: visual-studio-dev15
 f1_keywords:
 - System.Activities.Statements.DoWhile.UI
 ms.assetid: 948deb35-d72f-462b-bea6-4b119c10a148
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bc96d44a38a0cf8a1865de236b9f7ef473c960a7
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a0069d352897d2d98288988d549d9733a39b2c35
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53960435"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55918369"
 ---
 # <a name="dowhile-activity-designer"></a>Diseñador de actividades DoWhile
 

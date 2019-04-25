@@ -1,14 +1,9 @@
 ---
 title: 'Vista Módulos: datos de muestreo | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Modules view
 - sampling profiling method,Modules view
@@ -16,13 +11,13 @@ ms.assetid: 816f5633-65d7-41e5-aee1-033628d4e2df
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a885ca96ce58be7448f5b9b814457b38e08a1233
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 04c714576a0207d4168f20a241d6f0c7dd29298c
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51742486"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54784462"
 ---
 # <a name="modules-view---sampling-data"></a>Vista Módulos: datos de muestreo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,6 +47,3 @@ La vista Módulos de datos de muestro muestra datos de rendimiento agrupados por
  [Vista Módulos: muestreo](../profiling/modules-view-dotnet-memory-sampling-data.md)   
  [Vista Módulos: instrumentación](../profiling/modules-view-dotnet-memory-instrumentation-data.md)   
  [Vista Módulos](../profiling/modules-view-instrumentation-data.md)
-
-
-

@@ -11,15 +11,15 @@ helpviewer_keywords:
 - profiling tools, using windows counters
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fc551fd84197e936ef0f6069ecbc4beaecdf25a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 730345edb42ff3d14608bdcce91bc7b97c4bb478
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53961379"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56640940"
 ---
 # <a name="how-to-collect-windows-counter-data"></a>Procedimiento Recopilar datos de contadores de Windows
 
@@ -48,6 +48,6 @@ Los contadores de Windows son contadores de rendimiento del sistema que se puede
 
 ## <a name="see-also"></a>Vea también
 
-[Configuración de sesiones de rendimiento](../profiling/configuring-performance-sessions.md)  
-[Propiedades de las sesiones de rendimiento](../profiling/performance-session-properties.md)  
+[Configurar sesiones de rendimiento](../profiling/configuring-performance-sessions.md)
+[Propiedades de las sesiones de rendimiento](../profiling/performance-session-properties.md)
 [Contadores de Windows y de CPU](../profiling/cpu-and-windows-counters.md)

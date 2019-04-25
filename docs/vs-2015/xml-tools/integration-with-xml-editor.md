@@ -1,30 +1,24 @@
 ---
 title: Integración con el Editor XML | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 43d7a8e6-bd94-4407-a800-15a145c74223
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 81cf6b3cb58ceeb118b6e3cc181d417104c40cb0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 350b97385ab03daca80cc86d4f672dfec07222aa
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49895410"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654027"
 ---
 # <a name="integration-with-xml-editor"></a>Integración con el Editor XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 El Diseñador de esquemas XML está integrado con el Editor XML. Si modifica un archivo XSD en el Editor XML, el cambio se reflejará en el [Explorador de esquemas XML](../xml-tools/xml-schema-explorer.md). Si tiene la [vista gráfico](../xml-tools/graph-view.md) o [vista modelo de contenido](../xml-tools/content-model-view.md) abierto, el cambio también se reflejará allí. Puede navegar entre el Diseñador de esquemas XML y el Editor XML de las maneras siguientes:  
   
 - En el Editor de XML, haga clic en un nodo y seleccione **mostrar en Explorador de esquemas XML**.  
@@ -41,6 +35,3 @@ El Diseñador de esquemas XML está integrado con el Editor XML. Si modifica un 
   
 ## <a name="see-also"></a>Vea también  
  [Explorador de esquemas XML](../xml-tools/xml-schema-explorer.md)
-
-
-

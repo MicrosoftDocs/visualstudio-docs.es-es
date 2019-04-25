@@ -2,22 +2,22 @@
 title: Medición del rendimiento con herramientas de generación de perfiles
 description: Eche un vistazo breve a las distintas herramientas de diagnóstico disponibles en Visual Studio.
 ms.custom: mvc
-ms.date: 05/18/2017
+ms.date: 05/18/2018
 ms.topic: quickstart
 helpviewer_keywords:
 - diagnostic tools
 ms.assetid: d2ee0301-ea78-43d8-851a-71b7b2043d73
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9cfa2bcb98e686c04af359900a3c925686659df5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: af87464f8fb49ca68ecf8c442a099c71b9df5b69
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53880317"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790815"
 ---
 # <a name="quickstart-first-look-at-profiling-tools"></a>Inicio rápido: Un primer vistazo a las herramientas de generación de perfiles
 
@@ -119,6 +119,7 @@ Si elige un período de tiempo en los gráficos y selecciona **Ver detalles**, a
 
 También puede usar los gráficos para determinar si hay cuellos de botella de rendimiento relacionados con la CPU o con la GPU.
 
+::: moniker range="vs-2017"
 ## <a name="analyze-performance-javascript-uwp"></a>Análisis de rendimiento (JavaScript UWP)
 
 En el caso de las aplicaciones UWP, puede usar la herramienta Memoria de JavaScript y la herramienta Capacidad de respuesta de la IU HTML.
@@ -130,6 +131,7 @@ La herramienta Memoria de JavaScript es similar a la herramienta Uso de memoria 
 Para diagnosticar la capacidad de respuesta de la interfaz de usuario, el tiempo de carga lento y las actualizaciones visuales lentas en aplicaciones UWP, use la herramienta Capacidad de respuesta de la IU HTML. El uso es similar al de la herramienta Escala de tiempo de la aplicación para otros tipos de aplicaciones. Para obtener más información, vea [HTML UI responsiveness](../profiling/html-ui-responsiveness.md) (Capacidad de respuesta de IU HTML).
 
 ![Herramienta de generación de perfiles de respuesta de UI de HTML](../profiling/media/diaghtmlresp.png "Diagnóstico de respuesta de HTML")
+::: moniker-end
 
 ## <a name="analyze-network-usage-uwp"></a>Análisis del uso de la red (UWP)
 
@@ -149,22 +151,22 @@ Si necesita características que no están actualmente presentes en las herramie
 
 ![Herramienta de Explorador de rendimiento](../profiling/media/prof-tour-performance-explorer.png "Explorador de rendimiento")
 
-## <a name="which-tool-should-i-use"></a>¿Qué herramienta debo usar?  
+## <a name="which-tool-should-i-use"></a>¿Qué herramienta debo usar?
 
 En esta tabla se muestra una lista de las distintas herramientas que ofrece Visual Studio y los tipos de proyecto con los que las puede usar:
-  
-|Herramienta de rendimiento|Escritorio de Windows|UWP|ASP.NET/ASP.NET Core| 
-|----------------------|---------------------|-------------|-------------|  
+
+|Herramienta de rendimiento|Escritorio de Windows|UWP|ASP.NET/ASP.NET Core|
+|----------------------|---------------------|-------------|-------------|
 |[Uso de CPU](../profiling/cpu-usage.md)|sí|sí|sí|
-|[Uso de memoria](../profiling/memory-usage.md)|sí|sí|sí| 
-|[Uso de GPU](../debugger/gpu-usage.md)|sí|sí|no| 
+|[Uso de memoria](../profiling/memory-usage.md)|sí|sí|sí|
+|[Uso de GPU](../debugger/gpu-usage.md)|sí|sí|no|
 |[Escala de tiempo de la aplicación](../profiling/application-timeline.md)|sí|sí|No|
 |[Sugerencias de rendimiento](../profiling/perftips.md)|sí|sí para XAML, no para HTML|sí|
 |[Explorador de rendimiento](../profiling/performance-explorer.md)|sí|No|sí|
 |[IntelliTrace](../debugger/intellitrace.md)|Solo .NET con Visual Studio Enterprise|Solo .NET con Visual Studio Enterprise|Solo .NET con Visual Studio Enterprise|
 |[Uso de red](../profiling/network-usage.md)|No|sí|No|
-|[HTML UI responsiveness](../profiling/html-ui-responsiveness.md)|No|sí para HTML, no para XAML|No| 
+|[HTML UI responsiveness](../profiling/html-ui-responsiveness.md)|No|sí para HTML, no para XAML|No|
 |[Memoria de JavaScript](../profiling/javascript-memory.md)|No|sí para HTML, no para XAML|No|
 
-## <a name="see-also"></a>Vea también  
- [Depurar en Visual Studio](/visualstudio/debugger/debugger-feature-tour)
+## <a name="see-also"></a>Vea también
+- [Depurar en Visual Studio](/visualstudio/debugger/debugger-feature-tour)

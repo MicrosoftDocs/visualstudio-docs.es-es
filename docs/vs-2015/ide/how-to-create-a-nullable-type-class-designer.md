@@ -1,14 +1,9 @@
 ---
-title: 'Cómo: Crear un tipo que acepta valores NULL (Diseñador de clases) | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Crear un tipo que acepta valores null (Diseñador de clases) | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - nullable types, Class Designer
 - Class Designer [Visual Studio], nullable types
@@ -16,15 +11,15 @@ ms.assetid: 84673a89-3f6d-4668-919e-1c0f56182fe5
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: ab5bfe3068f79bceb02352b47de4beb08da75c85
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 3d5e74a4384cff0a68764ffe09a37ab28460d58b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49941950"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058504"
 ---
-# <a name="how-to-create-a-nullable-type-class-designer"></a>Cómo: Crear un tipo que acepta valores NULL (Diseñador de clases)
+# <a name="how-to-create-a-nullable-type-class-designer"></a>Procedimiento Crear un tipo que acepta valores NULL en el Diseñador de clases
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Determinados tipos de valor no siempre tienen (o necesitan) un valor definido. Esto es habitual en las bases de datos, donde es posible que algunos campos no tengan asignado ningún valor. Por ejemplo, se podría asignar un valor nulo a un campo de base de datos para indicar que aún no se le ha asignado ningún valor.  
@@ -47,17 +42,17 @@ Determinados tipos de valor no siempre tienen (o necesitan) un valor definido. E
   
 ### <a name="to-add-a-nullable-type-by-using-the-class-designer"></a>Para agregar un tipo que acepta valores NULL mediante el Diseñador de clases  
   
-1.  En el Diagrama de clases, expanda una clase existente o cree una nueva clase.  
+1. En el Diagrama de clases, expanda una clase existente o cree una nueva clase.  
   
-2.  Para agregar una clase al proyecto, en el menú **Diagrama de clases**, haga clic en **Agregar** y luego en **Agregar clase**.  
+2. Para agregar una clase al proyecto, en el menú **Diagrama de clases**, haga clic en **Agregar** y luego en **Agregar clase**.  
   
-3.  Para expandir la forma de clase, en el menú **Diagrama de clases**, haga clic en **Expandir**.  
+3. Para expandir la forma de clase, en el menú **Diagrama de clases**, haga clic en **Expandir**.  
   
-4.  Seleccione la forma de clase. En el menú **Diagrama de clases**, haga clic en **Agregar** y luego en **Campo**. Un nuevo campo con el nombre predeterminado **Campo** aparecerá en la forma de clase y también en la ventana **Detalles de clase**.  
+4. Seleccione la forma de clase. En el menú **Diagrama de clases**, haga clic en **Agregar** y luego en **Campo**. Un nuevo campo con el nombre predeterminado **Campo** aparecerá en la forma de clase y también en la ventana **Detalles de clase**.  
   
-5.  En la columna **Nombre** de la ventana **Detalles de clase** (o en la propia forma de clase), cambie el nombre del nuevo campo por un nombre válido y significativo.  
+5. En la columna **Nombre** de la ventana **Detalles de clase** (o en la propia forma de clase), cambie el nombre del nuevo campo por un nombre válido y significativo.  
   
-6.  En la columna **Tipo** de la ventana **Detalles de clase**, declare el tipo como un tipo que acepta valores NULL, como se muestra en el código siguiente:  
+6. En la columna **Tipo** de la ventana **Detalles de clase**, declare el tipo como un tipo que acepta valores NULL, como se muestra en el código siguiente:  
   
     ```csharp  
     // Declare a nullable type in Visual C#:  
@@ -76,22 +71,19 @@ Determinados tipos de valor no siempre tienen (o necesitan) un valor definido. E
   
 ### <a name="to-add-a-nullable-type-by-using-the-code-editor"></a>Para agregar un tipo que acepta valores NULL mediante el Editor de código  
   
-1.  Agregue una clase al proyecto. Seleccione el nodo de proyecto en el **Explorador de soluciones** y, en el menú **Proyecto**, haga clic en **Agregar clase**.  
+1. Agregue una clase al proyecto. Seleccione el nodo de proyecto en el **Explorador de soluciones** y, en el menú **Proyecto**, haga clic en **Agregar clase**.  
   
-2.  En el archivo .cs o .vb de la nueva clase, agregue uno o más tipos que aceptan valores NULL en la nueva clase para la declaración de clase.  
+2. En el archivo .cs o .vb de la nueva clase, agregue uno o más tipos que aceptan valores NULL en la nueva clase para la declaración de clase.  
   
-3.  En Vista de clases, arrastre el icono de la nueva clase a la superficie de diseño Diseñador de clases. Aparece una forma de clase en el diagrama de clases.  
+3. En Vista de clases, arrastre el icono de la nueva clase a la superficie de diseño Diseñador de clases. Aparece una forma de clase en el diagrama de clases.  
   
-4.  Expanda los detalles de la forma de clase y mueva el puntero del mouse sobre los miembros de la clase. La información sobre herramientas muestra la declaración de cada miembro.  
+4. Expanda los detalles de la forma de clase y mueva el puntero del mouse sobre los miembros de la clase. La información sobre herramientas muestra la declaración de cada miembro.  
   
-5.  Haga clic con el botón derecho en la forma de clase y haga clic en **Detalles de clase**. Puede ver o modificar las propiedades del nuevo tipo en la ventana **Detalles de clase**.  
+5. Haga clic con el botón derecho en la forma de clase y haga clic en **Detalles de clase**. Puede ver o modificar las propiedades del nuevo tipo en la ventana **Detalles de clase**.  
   
 ## <a name="see-also"></a>Vea también  
  <xref:System.Nullable%601>   
  [Tipos que aceptan valores NULL](http://msdn.microsoft.com/library/e473cb01-28ca-42be-9cea-f717055d72c6)   
  [Utilizar tipos que aceptan valores NULL](http://msdn.microsoft.com/library/0bacbe72-ce15-4b14-83e1-9c14e6380c28)   
- [Cómo: Identificar tipos que aceptan valores NULL](http://msdn.microsoft.com/library/d4b67ee2-66e8-40c1-ae9d-545d32c71387)   
+ [Cómo: Identificar un tipo que acepta valores null](http://msdn.microsoft.com/library/d4b67ee2-66e8-40c1-ae9d-545d32c71387)   
  [Tipos de valor que aceptan valores NULL](http://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6)
-
-
-

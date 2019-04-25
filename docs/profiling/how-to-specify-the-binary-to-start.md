@@ -10,15 +10,15 @@ helpviewer_keywords:
 - performance sessions, launching
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c569b9e285e4865b8ef637443acdf6026b0fec9c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a03bf203e5078bdbdf6327ec7bda186613a25c03
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53868474"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56622662"
 ---
 # <a name="how-to-specify-the-binary-to-start"></a>Procedimiento Especificar el binario de inicio
 

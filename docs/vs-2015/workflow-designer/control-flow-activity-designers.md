@@ -1,23 +1,20 @@
 ---
 title: Los diseñadores de actividades de flujo de control | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 ms.assetid: ba74af23-5398-4e62-bd90-c50612e3bfef
 caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: e852bfa5b392c6ffa758678fa83dabd8a8c97f54
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 25f8db1f6d14692538fe7f61ed2f9dbd37e0bd29
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303620"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59002773"
 ---
 # <a name="control-flow-activity-designers"></a>Diseñadores de actividades de flujos de control
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] incluye varias actividades proporcionadas por el sistema que puede utilizar cuando cree flujos de trabajo. En esta sección se incluyen las actividades proporcionadas por el sistema que se utilizan para controlar el flujo dentro de un flujo de trabajo. Los siguientes temas describen estas actividades y ofrecen orientación sobre cómo utilizarlas.  
@@ -26,7 +23,7 @@ ms.locfileid: "49303620"
  [DoWhile](../workflow-designer/dowhile-activity-designer.md)  
  Ejecuta la actividad contenida en el cuerpo de al menos una vez, hasta que una condición especificada se evalúa como **true**.  
   
- [ForEach\<T >](http://msdn.microsoft.com/en-us/a680cddd-2760-497a-b27b-c023fcbc6f33)  
+ [ForEach\<T>](foreach-t-activity-designer.md)  
  Ejecuta la actividad que se incluye en el cuerpo para cada elemento en una colección especificada.  
   
  [If](../workflow-designer/if-activity-designer.md)  
@@ -35,7 +32,7 @@ ms.locfileid: "49303620"
  [Parallel](../workflow-designer/parallel-activity-designer.md)  
  Ejecuta una colección de actividades secundarias simultáneamente.  
   
- [ParallelForEach\<T >](../workflow-designer/parallelforeach-t-activity-designer.md)  
+ [ParallelForEach\<T>](../workflow-designer/parallelforeach-t-activity-designer.md)  
  Enumera los elementos de una colección y ejecuta una instrucción incrustada para cada elemento de la colección en paralelo.  
   
  [Pick](../workflow-designer/pick-activity-designer.md)  
@@ -47,7 +44,7 @@ ms.locfileid: "49303620"
  [Sequence](../workflow-designer/sequence-activity-designer.md)  
  Contiene una colección ordenada de actividades secundarias que ejecuta por orden.  
   
- [Conmutador\<T >](http://msdn.microsoft.com/en-us/ce1aa634-c4db-4475-a1c8-a88478a57212)  
+ [Switch\<T>](switch-t-activity-designer.md)  
  Evalúa una expresión especificada y ejecuta la actividad desde una colección de actividades cuya clave asociada se corresponde con el valor que se ha obtenido a partir de la evaluación.  
   
  [While](../workflow-designer/while-activity-designer.md)  

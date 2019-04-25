@@ -2,21 +2,20 @@
 title: Medición del rendimiento del código de Python
 description: Use el generador de perfiles de Visual Studio para comprobar el rendimiento del código de Python al usar intérpretes basados en CPython.
 ms.date: 11/12/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
-manager: douge
+author: JoshuaPartlow
+ms.author: joshuapa
+manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 30fb65214db1eda64ef9b39f74d1bb534ba6af91
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: e31286a9b0ea3852ad1fe788d4ff6c4c66e7e4f0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53929729"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62784288"
 ---
 # <a name="profile-python-code"></a>Generación de perfiles de código de Python
 
@@ -32,12 +31,8 @@ Al seleccionar **Aceptar**, el generador de perfiles se ejecuta y abre un inform
 
 ![Informe de rendimiento de generación de perfiles](media/profiling-results.png)
 
-|   |   |
-|---|---|
-| ![icono de cámara de película para vídeo](../install/media/video-icon.png "Ver un vídeo") | [Eche un vistazo a un vídeo (Microsoft Virtual Academy)](https://mva.microsoft.com/en-US/training-courses-embed/python-tools-for-visual-studio-2017-18121/Video-Profiling-Python-s6FoC6LWE_1005918567) para ver una demostración de la generación de perfiles de Python (3 m 00 s).|
-
 > [!Note]
-> En la actualidad, Visual Studio solo admite este nivel de generación de perfiles para toda la aplicación, pero sí desea sus comentarios sobre las funcionalidades futuras. Use el botón [**Comentarios sobre el producto**](#feedback) en la parte inferior de esta página.
+> En la actualidad, Visual Studio solo admite este nivel de generación de perfiles para toda la aplicación, pero sí desea sus comentarios sobre las funcionalidades futuras. Use el botón **Comentarios sobre el producto** que está en la parte inferior de esta página.
 
 ## <a name="profiling-for-ironpython"></a>Generación de perfiles para IronPython
 

@@ -2,19 +2,18 @@
 title: Sugerir una característica
 description: Describe cuáles son las sugerencias que hay en la Comunidad de desarrolladores, cómo hacer una sugerencia y cómo Microsoft utiliza las sugerencias en la hoja de ruta de Visual Studio.
 ms.date: 12/17/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: seaniyer
 ms.author: seiyer
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 60fce2b9fb14ffcb0975b91991595d1a4a429cb2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 4da08c2a7fed28b7f4ca75770682673bf58e30c3
+ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53910586"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56316086"
 ---
 # <a name="overview-suggest-a-feature"></a>Información general: Sugerencia de una característica
 
@@ -130,4 +129,4 @@ El tiempo de respuesta depende del estado en el que se encuentran sus comentario
 
 ## <a name="see-also"></a>Vea también
 
-- Blog de Visual Studio [Introducing 'Suggest a Feature' in Developer Community](https://blogs.msdn.microsoft.com/visualstudio/2018/10/09/introducing-suggest-a-feature-in-developer-community/?utm_source=vs_developer_news&utm_medium=referral) (Incorporación de "Sugerir una característica" a la Comunidad de desarrolladores)
+- Blog de Visual Studio [Introducing 'Suggest a Feature' in Developer Community](https://devblogs.microsoft.com/visualstudio/introducing-suggest-a-feature-in-developer-community/?utm_source=vs_developer_news&utm_medium=referral) (Incorporación de "Sugerir una característica" a la Comunidad de desarrolladores)

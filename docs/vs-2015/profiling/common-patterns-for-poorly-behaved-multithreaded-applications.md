@@ -1,14 +1,9 @@
 ---
 title: Modelos comunes para aplicaciones multiproceso con comportamiento deficiente | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.cv.threads.tools.gallery
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 00d10629-e20f-4d6d-8643-c59a3879812e
 caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 1e0dfcb9408c67acc754f687903b4be2d13f9ff4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f2c1a799663d33e61977c5416ad199bce8bce545
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51755820"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050120"
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>Modelos comunes para aplicaciones multiproceso con comportamiento deficiente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +32,7 @@ El visualizador de simultaneidad ayuda a los desarrolladores a visualizar el com
   
  Como se muestra en la siguiente ilustración, el visualizador de simultaneidad también puede exponer este síntoma en la vista Uso de CPU, donde, a pesar de la presencia de varios subprocesos, la aplicación consume solo un núcleo lógico.  
   
- Para obtener más información, consulte "Patrón de rendimiento 1: identificar la contención de bloqueo" en el blog de Hazim Shafi [Herramientas de rendimiento en paralelo para Windows](http://go.microsoft.com/fwlink/?LinkID=160569) en el sitio web del blog de MSDN.  
+ Para obtener más información, consulte "patrón de rendimiento 1: Identificar la contención de bloqueo"en de Hazim Shafi [paralelo herramientas de rendimiento para Windows](http://go.microsoft.com/fwlink/?LinkID=160569) blog en el sitio Web de blog MSDN.  
   
  ![Contención de bloqueo](../profiling/media/lockcontention-2.png "LockContention_2")  
   
@@ -57,9 +52,9 @@ El visualizador de simultaneidad ayuda a los desarrolladores a visualizar el com
   
  Debe plantearse lo siguiente al evaluar este problema:  
   
--   El sistema global puede presentar una suscripción excesiva. Tenga en cuenta que otros procesos del sistema pueden estar adelantándose a los subprocesos. Al hacer una pausa sobre un segmento de adelantamiento en la vista Subprocesos, se muestra información sobre herramientas en que se identifican el subproceso y el proceso que adelantó el subproceso. Este proceso no es necesariamente el que se ejecutó durante todo el tiempo que el proceso se adelantó, pero proporciona una sugerencia sobre lo que creó la presión de adelantamiento sobre el proceso.  
+- El sistema global puede presentar una suscripción excesiva. Tenga en cuenta que otros procesos del sistema pueden estar adelantándose a los subprocesos. Al hacer una pausa sobre un segmento de adelantamiento en la vista Subprocesos, se muestra información sobre herramientas en que se identifican el subproceso y el proceso que adelantó el subproceso. Este proceso no es necesariamente el que se ejecutó durante todo el tiempo que el proceso se adelantó, pero proporciona una sugerencia sobre lo que creó la presión de adelantamiento sobre el proceso.  
   
--   Evalúe cómo el proceso determina el número apropiado de subprocesos para su ejecución durante esta fase de trabajo. Si el proceso calcula directamente el número de subprocesos paralelos activos, considere la posibilidad de modificar ese algoritmo para representar mejor el número de núcleos lógicos disponibles en el sistema. Si utiliza el Runtime de simultaneidad, la biblioteca TPL o PLINQ, estas bibliotecas se encargan de calcular el número de subprocesos.  
+- Evalúe cómo el proceso determina el número apropiado de subprocesos para su ejecución durante esta fase de trabajo. Si el proceso calcula directamente el número de subprocesos paralelos activos, considere la posibilidad de modificar ese algoritmo para representar mejor el número de núcleos lógicos disponibles en el sistema. Si utiliza el Runtime de simultaneidad, la biblioteca TPL o PLINQ, estas bibliotecas se encargan de calcular el número de subprocesos.  
   
 ## <a name="inefficient-io"></a>E/S ineficaz  
  ![E/S ineficaz](../profiling/media/inefficient-io.png "Inefficient_IO")  
@@ -73,6 +68,3 @@ El visualizador de simultaneidad ayuda a los desarrolladores a visualizar el com
   
 ## <a name="see-also"></a>Vea también  
  [Vista de subprocesos](../profiling/threads-view-parallel-performance.md)
-
-
-

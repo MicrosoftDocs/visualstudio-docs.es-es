@@ -1,19 +1,18 @@
 ---
 title: Usar diferentes exploradores web con las pruebas de IU codificadas
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 77af6795e8c00a9226c54ee8d9c0de09c9154065
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 822ce0a2f0e8632706a4a1551cc53aafb23563ed
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986146"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983041"
 ---
 # <a name="use-different-web-browsers-with-coded-ui-tests"></a>Usar diferentes exploradores web con las pruebas automatizadas de IU
 
@@ -25,13 +24,13 @@ En primer lugar, instale los [componentes Selenium para pruebas automatizadas de
 
 ## <a name="whats-supported-across-all-web-browsers"></a>¿Qué se admite en todos los exploradores web?
 
--   [Agregar código personalizado para controlar características](https://blogs.msdn.microsoft.com/devops/2012/12/09/coded-ui-test-configuring-search-properties-while-recording-on-internet-explorer/) como propiedades, búsqueda y objetos Waiter de reproducción
+-   [Agregar código personalizado para controlar características](https://devblogs.microsoft.com/devops/coded-ui-test-configuring-search-properties-while-recording-on-internet-explorer/) como propiedades, búsqueda y objetos Waiter de reproducción
 
 -   Elementos emergentes y cuadros de diálogo
 
--   [Ejecutar JavaScript básico sin tipo de valor devuelto](https://blogs.msdn.microsoft.com/devops/2013/01/18/introducing-javascript-execution-on-internetexplorer-and-crossbrowser-in-coded-ui-test/)
+-   [Ejecutar JavaScript básico sin tipo de valor devuelto](https://devblogs.microsoft.com/devops/introducing-javascript-execution-on-internetexplorer-and-crossbrowser-in-coded-ui-test/)
 
--   Resistencia de búsqueda (mediante coincidencia inteligente) y [mejoras de rendimiento](https://blogs.msdn.microsoft.com/devops/2012/01/31/guidelines-on-improving-performance-of-coded-ui-test-playback/)
+-   Resistencia de búsqueda (mediante coincidencia inteligente) y [mejoras de rendimiento](https://devblogs.microsoft.com/devops/guidelines-on-improving-performance-of-coded-ui-test-playback/)
 
 ## <a name="why-should-i-use-coded-ui-tests-across-multiple-web-browser-types"></a>¿Por qué se deben usar pruebas de IU codificadas en varios tipos de explorador web?
 
@@ -52,11 +51,23 @@ Al probar la aplicación web en varios tipos de explorador web, se emula mejor l
 
 ### <a name="install-selenium-components"></a>Instalar componentes Selenium
 
-1.  En el menú **Herramientas** , elija **Extensiones y actualizaciones**.
+::: moniker range="vs-2017"
 
-2.  En el cuadro de diálogo **Extensiones y actualizaciones**, busque `Selenium components for Cross Browser Testing`.
+1. En el menú **Herramientas** , elija **Extensiones y actualizaciones**.
 
-3.  Resalte la extensión y seleccione **Descargar**.
+2. En el cuadro de diálogo **Extensiones y actualizaciones**, busque `Selenium components for Cross Browser Testing`.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. En el menú **Extensiones**, elija **Administrar extensiones**.
+
+2. En el cuadro de diálogo **Administrar extensiones**, busque `Selenium components for Cross Browser Testing`.
+
+::: moniker-end
+
+3. Resalte la extensión y seleccione **Descargar**.
 
     > [!TIP]
     > También puede descargar los componentes Selenium para pruebas automatizadas de IU en distintos exploradores [aquí](https://marketplace.visualstudio.com/items?itemName=AtinBansal.SeleniumcomponentsforCodedUICrossBrowserTesting).

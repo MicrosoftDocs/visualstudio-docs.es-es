@@ -1,26 +1,21 @@
 ---
 title: Información general sobre soluciones | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - solutions, about solutions
 ms.assetid: 3b21e3a1-170a-4485-941e-6b04b7b27886
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 7d9eb36da433575710ae7f24da85e4a1a0970b79
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8daa7922b1f1ba7cb90cca9a77a6db14977c7518
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51781067"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077620"
 ---
 # <a name="solutions-overview"></a>Información general sobre soluciones
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,9 +37,9 @@ Una solución es una agrupación de uno o varios proyectos que funcionan conjunt
   
 3. Si se carga un paquete VSPackage, el entorno llama a `QueryInterface` para <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage> interfaz para la interfaz que requiere el VSPackage.  
   
-   1.  Al leer desde un archivo .sln, el entorno llama a `QueryInterface` para `IVsPersistSolutionProps`.  
+   1. Al leer desde un archivo .sln, el entorno llama a `QueryInterface` para `IVsPersistSolutionProps`.  
   
-   2.  Al leer desde un archivo .suo, el entorno llama a `QueryInterface` para `IVsPersistSolutionOpts`.  
+   2. Al leer desde un archivo .suo, el entorno llama a `QueryInterface` para `IVsPersistSolutionOpts`.  
   
    Información específica sobre el uso de estos archivos puede encontrarse en [solución (. Los archivos sln)](../../extensibility/internals/solution-dot-sln-file.md) y [opciones de usuario de la solución (. Archivo suo)](../../extensibility/internals/solution-user-options-dot-suo-file.md).  
   
@@ -56,4 +51,3 @@ Una solución es una agrupación de uno o varios proyectos que funcionan conjunt
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence>
-

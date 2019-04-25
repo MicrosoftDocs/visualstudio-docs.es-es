@@ -1,19 +1,18 @@
 ---
 title: Incorporación de un parámetro a una acción rápida de método
 ms.date: 09/28/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: da435d5bf4e0b7239b984263838c275d3b5c9ab3
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3e1461afe5c4d6026f8532896ba837e971fed652
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53920224"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55934359"
 ---
 # <a name="add-a-parameter-to-a-method-using-a-quick-action"></a>Incorporación de un parámetro a un método mediante una acción rápida
 

@@ -1,27 +1,22 @@
 ---
 title: Enumerar variables locales | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], enumerating locals
 - expression evaluation, enumerating locals
 ms.assetid: 254a88e7-d3a7-447a-bd0c-8985e73d85cf
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 96ccce43408b61309b7170d06bed7f62d0c82718
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4da225417724f1de39f25a1527bdf980f3d369cd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51747943"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039204"
 ---
 # <a name="enumerating-locals"></a>Enumeración de variables locales
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,19 +28,19 @@ ms.locfileid: "51747943"
   
  Esta implementación de `IDebugProperty2::EnumChildren` realiza las siguientes tareas:  
   
-1.  Garantiza que esto representa un método.  
+1. Garantiza que esto representa un método.  
   
-2.  Usa el `guidFilter` argumento para determinar qué método debe llamar en el [IDebugMethodField](../../extensibility/debugger/reference/idebugmethodfield.md) objeto. Si `guidFilter` es igual a:  
+2. Usa el `guidFilter` argumento para determinar qué método debe llamar en el [IDebugMethodField](../../extensibility/debugger/reference/idebugmethodfield.md) objeto. Si `guidFilter` es igual a:  
   
-    1.  `guidFilterLocals`, llame a [EnumLocals](../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md) para obtener un [IEnumDebugFields](../../extensibility/debugger/reference/ienumdebugfields.md) objeto.  
+    1. `guidFilterLocals`, llame a [EnumLocals](../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md) para obtener un [IEnumDebugFields](../../extensibility/debugger/reference/ienumdebugfields.md) objeto.  
   
-    2.  `guidFilterArgs`, llame a [EnumArguments](../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md) para obtener un `IEnumDebugFields` objeto.  
+    2. `guidFilterArgs`, llame a [EnumArguments](../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md) para obtener un `IEnumDebugFields` objeto.  
   
-    3.  `guidFilterLocalsPlusArgs`, sintetizar una enumeración que combina los resultados de `IDebugMethodField::EnumLocals` y `IDebugMethodField::EnumArguments`. Esta síntesis está representada por la clase `CEnumMethodField`.  
+    3. `guidFilterLocalsPlusArgs`, sintetizar una enumeración que combina los resultados de `IDebugMethodField::EnumLocals` y `IDebugMethodField::EnumArguments`. Esta síntesis está representada por la clase `CEnumMethodField`.  
   
-3.  Crea una instancia de una clase (llamado `CEnumPropertyInfo` en este ejemplo) que implementa el `IEnumDebugPropertyInfo2` interfaz y contiene el `IEnumDebugFields` objeto.  
+3. Crea una instancia de una clase (llamado `CEnumPropertyInfo` en este ejemplo) que implementa el `IEnumDebugPropertyInfo2` interfaz y contiene el `IEnumDebugFields` objeto.  
   
-4.  Devuelve el `IEnumDebugProperty2Info2` interfaz desde el `CEnumPropertyInfo` objeto.  
+4. Devuelve el `IEnumDebugProperty2Info2` interfaz desde el `CEnumPropertyInfo` objeto.  
   
 ## <a name="managed-code"></a>Código administrado  
  En este ejemplo se muestra una implementación de `IDebugProperty2::EnumChildren` en código administrado.  
@@ -256,4 +251,3 @@ STDMETHODIMP CFieldProperty::EnumChildren(
  [Implementación de ejemplo de variables locales](../../extensibility/debugger/sample-implementation-of-locals.md)   
  [Implementación de GetMethodProperty](../../extensibility/debugger/implementing-getmethodproperty.md)   
  [Contexto de evaluación](../../extensibility/debugger/evaluation-context.md)
-

@@ -1,7 +1,6 @@
 ---
 title: Teclas de método abreviado (Visor de Ayuda)
 ms.date: 11/02/2017
-ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - shortcut keys [Help Viewer]
@@ -9,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: ec14c85d-7efb-441c-a46b-bee34a227e39
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 05c6dc160fc15973b8b2b7efff57bce4fef8ba36
-ms.sourcegitcommit: 75e02ed88a1ace6e8265fd4e3a82a1bc78f3adca
+ms.openlocfilehash: 5da8de5c392862c196fa03a69806ffb877af881c
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "54406043"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55939429"
 ---
 # <a name="shortcut-keys-in-help-viewer"></a>Teclas de método abreviado en el Visor de Ayuda
 

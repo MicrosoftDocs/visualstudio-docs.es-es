@@ -1,24 +1,23 @@
 ---
-title: Procedimiento Exigir código de mantenimiento con una directiva de protección de análisis de código
+title: Filtrar Exigir código de mantenimiento con una directiva de protección de análisis de código
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, check-in policies
 ms.assetid: d1b3b04f-4dd9-40e6-b2d4-b414d33fb647
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d31e52ab2f158b73a0076414b6d18e0b7421b04
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7139c952b40957a564fcd4074b1c931817dfb851
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53825722"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55911227"
 ---
-# <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Procedimiento Exigir código mantenible con una directiva de protección de análisis de código
+# <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Filtrar Exigir código mantenible con una directiva de protección de análisis de código
 
 Los desarrolladores pueden usar la herramienta de métricas de código para medir la complejidad y el mantenimiento de su código, pero no se puede invocar las métricas del código como parte de una directiva de protección. Sin embargo, puede habilitar las reglas de análisis de código que comprueben el cumplimiento de su código con los estándares de las métricas de código y aplicar las reglas mediante las directivas de protección. Para obtener más información acerca de las métricas de código, vea [valores de métricas de código](../code-quality/code-metrics-values.md).
 

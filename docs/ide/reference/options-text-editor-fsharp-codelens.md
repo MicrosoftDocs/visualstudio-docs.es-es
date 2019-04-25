@@ -1,21 +1,20 @@
 ---
 title: Opciones, Editor de texto, F#, CodeLens
 ms.date: 01/16/2019
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
-- VS.ToolsOptionsPages.Text_Editor.FSharp.CodeLens
+- VS.ToolsOptionsPages.Text_Editor.F%2523.CodeLens
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d2d59c79bbaa1acde0cfb973a6973052c5a8182a
-ms.sourcegitcommit: 8bfabab73b39b3b3e68a3e8dc225515e8b310fed
+ms.openlocfilehash: 0799b06331fd83614b578c171e5f100d651f4952
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54398420"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55923296"
 ---
 # <a name="options-text-editor-f-codelens"></a>Opciones, Editor de texto, F#, CodeLens
 

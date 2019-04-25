@@ -1,14 +1,9 @@
 ---
 title: Actualizar proyectos | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - upgrading VSPackages
 - upgrading applications, strategies
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: e01cb44a-8105-4cf4-8223-dfae65f8597a
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: a3f045d947f968655923df16de8c02aafc12a34b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7e97e21b2d08d7398a4372ac31cda63b5cfb9fe9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51783771"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100604"
 ---
 # <a name="upgrading-projects"></a>Actualización de proyectos
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,9 +27,9 @@ Los cambios en el modelo de proyecto desde una versión de [!INCLUDE[vsprvs](../
 ## <a name="upgrade-strategies"></a>Estrategias de actualización  
  Para admitir una actualización, la implementación de sistema de proyecto debe definir e implementar una estrategia de actualización. Para determinar la estrategia, puede elegir admitir la copia de seguridad paralelo (SxS), copia de seguridad o ambos.  
   
--   Copia de seguridad de SxS significa que un proyecto de sólo copia los archivos que se deben actualizar en su lugar, agrega un sufijo de nombre de archivo adecuado, por ejemplo, ".old".  
+- Copia de seguridad de SxS significa que un proyecto de sólo copia los archivos que se deben actualizar en su lugar, agrega un sufijo de nombre de archivo adecuado, por ejemplo, ".old".  
   
--   Copia de seguridad significa que un proyecto copia todos los elementos de proyecto en una ubicación de copia de seguridad proporcionada por el usuario. A continuación, se actualizan los archivos correspondientes en la ubicación del proyecto original.  
+- Copia de seguridad significa que un proyecto copia todos los elementos de proyecto en una ubicación de copia de seguridad proporcionada por el usuario. A continuación, se actualizan los archivos correspondientes en la ubicación del proyecto original.  
   
 ## <a name="how-upgrade-works"></a>Cómo funcionan las actualizaciones  
  Cuando una solución creada en una versión anterior de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] se abre en una versión más reciente, las comprobaciones IDE que la solución de archivo para determinar si debe actualizarse. Si la actualización es necesaria, el **Asistente para actualización** se inicia automáticamente para guiar al usuario a través del proceso de actualización.  
@@ -64,4 +59,3 @@ Los cambios en el modelo de proyecto desde una versión de [!INCLUDE[vsprvs](../
  [Proyectos](../../extensibility/internals/projects.md)   
  [Actualizar proyectos personalizados](../../misc/upgrading-custom-projects.md)   
  [Actualizar elementos de proyecto](../../misc/upgrading-project-items.md)
-

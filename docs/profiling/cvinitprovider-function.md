@@ -9,40 +9,38 @@ helpviewer_keywords:
 ms.assetid: ba1863ad-e35f-4d34-a2f2-5e68957d1915
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 171537a752818e31ba6a3e7e185fd02017dcb967
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a97be63cd782397e984fd8dbce7da844efa07540
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53967714"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56626848"
 ---
 # <a name="cvinitprovider-function"></a>Función CvInitProvider
-Inicializa el proveedor de marcadores. Se debe llamar antes que cualquier otra función del SDK del visualizador de simultaneidad.  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```C  
-HRESULT CvInitProvider(  
-   _In_ const GUID* pGuid,  
-   _Out_ PCV_PROVIDER* ppProvider  
-);  
-```  
-  
-#### <a name="parameters"></a>Parámetros  
- `pGuid`  
- Guid del proveedor. No puede ser nulo.  
-  
- `ppProvider`  
- Dirección de una variable de salida que almacenará el contexto del proveedor. No puede ser nulo.  
-  
-## <a name="return-value"></a>Valor devuelto  
- S_OK cuando el proveedor se inicializa correctamente, o código de error en caso de que se hayan producido errores. Utilice macros SUCCEEDED/FAILED para comprobar si existe una condición de error.  
-  
-## <a name="requirements"></a>Requisitos  
- **Encabezado:** *cvmarkers.h*  
-  
-## <a name="see-also"></a>Vea también  
- [Referencia de la biblioteca C++](../profiling/cpp-library-reference.md)
+Inicializa el proveedor de marcadores. Se debe llamar antes que cualquier otra función del SDK del visualizador de simultaneidad.
+
+## <a name="syntax"></a>Sintaxis
+
+```C
+HRESULT CvInitProvider(
+   _In_ const GUID* pGuid,
+   _Out_ PCV_PROVIDER* ppProvider
+);
+```
+
+#### <a name="parameters"></a>Parámetros
+ `pGuid` Guid del proveedor. No puede ser nulo.
+
+ `ppProvider` Dirección de una variable de salida que almacenará el contexto del proveedor. No puede ser nulo.
+
+## <a name="return-value"></a>Valor devuelto
+ S_OK cuando el proveedor se inicializa correctamente, o código de error en caso de que se hayan producido errores. Utilice macros SUCCEEDED/FAILED para comprobar si existe una condición de error.
+
+## <a name="requirements"></a>Requisitos
+ **Encabezado:** *cvmarkers.h*
+
+## <a name="see-also"></a>Vea también
+- [Referencia de la biblioteca C++](../profiling/cpp-library-reference.md)

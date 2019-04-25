@@ -1,20 +1,19 @@
 ---
 title: Nodos de constante
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 ms.assetid: 2c798a50-a2d7-459b-9879-ad4ad8290c9b
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 22a3fc46a60ee004ae102cade120f1ab54149416
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: af585d77176e52442d5eee37f3d16fcbafd31ef9
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53905934"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55910810"
 ---
 # <a name="constant-nodes"></a>Nodos de constante
 

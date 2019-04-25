@@ -2,19 +2,18 @@
 title: Proyectos R de ejemplo
 description: Índice de una colección de ejemplos para empezar a trabajar con R y Visual Studio.
 ms.date: 01/24/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
-manager: douge
+manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 80553e54489b5c887facca57f3491fd81fd8d24b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: adcc5ce422cdd06e641408b3506fb751a4c730d1
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53837464"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56840888"
 ---
 # <a name="r-tools-for-visual-studio-sample-projects"></a>Proyectos de ejemplo de Herramientas de R para Visual Studio
 
@@ -48,7 +47,7 @@ Como con todos los ejemplos, abra el archivo, coloque el cursor en la parte supe
 
     ![Ejemplo de trazado de prueba comparativa](media/samples-mro-benchmark-plot.png)
 
-- `Bike_Rental_Estimation_with_MRS` crea un modelo de predicción de demanda de bicicletas de alquiler basándose en un conjunto de datos históricos con ML Server. 
+- `Bike_Rental_Estimation_with_MRS` crea un modelo de predicción de demanda de bicicletas de alquiler basándose en un conjunto de datos históricos con ML Server.
 
 - `Data_Exploration` contiene tres scripts:
 
@@ -59,14 +58,14 @@ Como con todos los ejemplos, abra el archivo, coloque el cursor en la parte supe
       ![Resultado del uso de ggplot2. Ejemplos de R](media/samples-3d-interactive.png)
 
 - `Datasets` contiene tres archivos *.csv* usados por otros ejemplos
-- `Flight_Delays_Prediction_with_R` y `Flight_Delays_Prediction_with_MRS` muestran cómo predecir retrasos de vuelos con R, el aprendizaje automático y los datos históricos de puntualidad y meteorología. 
+- `Flight_Delays_Prediction_with_R` y `Flight_Delays_Prediction_with_MRS` muestran cómo predecir retrasos de vuelos con R, el aprendizaje automático y los datos históricos de puntualidad y meteorología.
 - `Machine learning` contiene tres ejemplos para aprender a predecir retrasos de vuelos, precios de alojamientos y alquileres de bicicletas. Conjuntamente, estos ejemplos ilustran cómo se aplica R y Microsoft ML Server a problemas del mundo real. También muestran cómo usar varios modelos de aprendizaje automático populares e implementarlos como un servicio web de Azure mediante un área de trabajo de [aprendizaje automático de Azure](https://azure.microsoft.com/services/machine-learning/).
 
 - `R_MRO_MRS_Comparison` es una comparación de seis partes en la que se muestran las similitudes y diferencias de R, Microsoft R Open y Microsoft ML Server con comandos, sintaxis, construcciones y rendimiento.
 
 ## <a name="whats-special-about-microsoft-r-open-and-microsoft-ml-server"></a>¿Qué diferencia hay entre Microsoft R Open y Microsoft ML Server?
 
-[Microsoft R Open](http://aka.ms/rtvs-r-open), la distribución de Microsoft de R, se diferencia de [CRAN R](https://cran.r-project.org/) en dos aspectos importantes:
+[Microsoft R Open](https://aka.ms/rtvs-r-open), la distribución de Microsoft de R, se diferencia de [CRAN R](https://cran.r-project.org/) en dos aspectos importantes:
 
 1. [Mejor rendimiento de cálculo](https://mran.revolutionanalytics.com/rro/#intelmkl1) cuando se usa con bibliotecas [Intel Math Kernel Library](https://software.intel.com/intel-mkl). Las bibliotecas se pueden descargar de forma gratuita desde Microsoft para su uso con Microsoft R Open.
 
@@ -82,7 +81,7 @@ La siguiente comparación muestra que MLS y MRO con MKL tienen un rendimiento de
 
 ![Comparación de MLS y MRO con MKL y R y MRO sin MKL](media/samples-speed-comparison.png)
 
-Para obtener una comparación técnica de R con MRO y MLS, vea [la explicación detallada de Lixun Zhang](http://htmlpreview.github.io/? https://github.com/lixzhang/R-MRO-MRS/blob/master/Introduction_to_MRO_and_MRS.html) sobre el tema.
+Para obtener una comparación técnica de R con MRO y MLS, vea [la explicación detallada de Lixun Zhang](http://htmlpreview.github.io/?https://github.com/lixzhang/R-MRO-MRS/blob/master/Introduction_to_MRO_and_MRS.html) sobre el tema.
 
 En la siguiente ilustración se compara el tiempo transcurrido en segundos empleado en la creación de modelos de regresión logística para predecir retrasos en vuelos de más de 15 minutos.  El tiempo transcurrido empleado en CRAN R aumenta significativamente al agregar un número pequeño de filas, mientras que en MLS solo aumenta aproximadamente el doble. Para obtener detalles de esta prueba comparativa, consulte el ejemplo de *Benchmarks/rxGlm_benchmark.R*.
 

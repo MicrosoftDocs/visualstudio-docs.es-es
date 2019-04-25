@@ -1,20 +1,19 @@
 ---
 title: Conjunto de reglas Reglas de seguridad para código administrado
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 ms.assetid: 564aeac6-03fa-41b0-b655-88179f0ab01b
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b6ab8f106b4d87b49546a2fa62f31c893210281b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 45c51a6c5496686ef84b17341c97f00680a80bdd
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53905038"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59366047"
 ---
 # <a name="security-rules-rule-set-for-managed-code"></a>Conjunto de reglas Reglas de seguridad para código administrado
 Debe incluir el conjunto de reglas reglas de seguridad de Microsoft a maximizar el número de posibles problemas de seguridad que se notifican.
@@ -64,3 +63,18 @@ Debe incluir el conjunto de reglas reglas de seguridad de Microsoft a maximizar 
 |[CA2147](../code-quality/ca2147-transparent-methods-may-not-use-security-asserts.md)|Los métodos transparentes no pueden usar aserciones de seguridad|
 |[CA2149](../code-quality/ca2149-transparent-methods-must-not-call-into-native-code.md)|Los métodos transparentes no deben llamar a código nativo|
 |[CA2210](../code-quality/ca2210-assemblies-should-have-valid-strong-names.md)|Los ensamblados deben tener nombres seguros válidos|
+|[CA2300](ca2300-do-not-use-insecure-deserializer-binaryformatter.md)|No usar el deserializador no seguro BinaryFormatter|
+|[CA2301](ca2301-do-not-call-binaryformatter-deserialize-without-first-setting-binaryformatter-binder.md)|No llamar a BinaryFormatter.Deserialize sin establecer primero BinaryFormatter.Binder|
+|[CA2302](ca2302-ensure-binaryformatter-binder-is-set-before-calling-binaryformatter-deserialize.md)|Asegurarse de que BinaryFormatter.Binder está establecido antes de llamar a BinaryFormatter.Deserialize|
+|[CA3001](../code-quality/ca3001-review-code-for-sql-injection-vulnerabilities.md)|Revisión de código en busca de vulnerabilidades de inyección de SQL|
+|[CA3002](../code-quality/ca3002-review-code-for-xss-vulnerabilities.md)|Revisión de código en busca de vulnerabilidades de XSS|
+|[CA3003](../code-quality/ca3003-review-code-for-file-path-injection-vulnerabilities.md)|Revisión de código en busca de vulnerabilidades de inyección de rutas de acceso a archivos|
+|[CA3004](../code-quality/ca3004-review-code-for-information-disclosure-vulnerabilities.md)|Revisión de código en busca de vulnerabilidades de divulgación de información|
+|[CA3005](../code-quality/ca3005-review-code-for-ldap-injection-vulnerabilities.md)|Revisión de código en busca de vulnerabilidades de inyección de LDAP|
+|[CA3006](../code-quality/ca3006-review-code-for-process-command-injection-vulnerabilities.md)|Revisión de código en busca de vulnerabilidades de inyección de comandos de procesos|
+|[CA3007](../code-quality/ca3007-review-code-for-open-redirect-vulnerabilities.md)|Revisión de código en busca de vulnerabilidades de redireccionamiento abierto|
+|[CA3008](../code-quality/ca3008-review-code-for-xpath-injection-vulnerabilities.md)|Revisión de código en busca de vulnerabilidades de inyección de XPath|
+|[CA3009](../code-quality/ca3009-review-code-for-xml-injection-vulnerabilities.md)|Revisión de código en busca de vulnerabilidades de inyección de XML|
+|[CA3010](../code-quality/ca3010-review-code-for-xaml-injection-vulnerabilities.md)|Revisión de código en busca de vulnerabilidades de inyección de XAML|
+|[CA3011](../code-quality/ca3011-review-code-for-dll-injection-vulnerabilities.md)|Revisión de código en busca de vulnerabilidades de inyección de DLL|
+|[CA3012](../code-quality/ca3012-review-code-for-regex-injection-vulnerabilities.md)|Revisión de código en busca de vulnerabilidades de inyección de expresiones regulares|

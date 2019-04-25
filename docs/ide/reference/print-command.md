@@ -1,7 +1,6 @@
 ---
-title: Imprimir (Comando)
+title: Debug.Print
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - debug.print
@@ -12,49 +11,52 @@ helpviewer_keywords:
 ms.assetid: 0412d381-590a-483f-bab4-6e1cca095645
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31f604d6df45cb22d18401b5925867d5ab0e02b8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: df609011250cebc097d3d356242302dbe41f8007
+ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53900891"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56953562"
 ---
 # <a name="print-command"></a>Imprimir (Comando)
+
 Evalúa una expresión o muestra el texto especificado.
 
 ## <a name="syntax"></a>Sintaxis
 
 ```cmd
-Debug.Print text
+>Debug.Print text
 ```
 
 ## <a name="arguments"></a>Argumentos
- `text`
 
- Obligatorio. La expresión para evaluar o el texto para mostrar.
+`text`
+
+Obligatorio. La expresión para evaluar o el texto para mostrar.
 
 ## <a name="remarks"></a>Comentarios
- Puede usar el signo de interrogación (?) como un alias para este comando. Por lo tanto, por ejemplo, el comando
+
+Puede usar el signo de interrogación (?) como un alias para este comando. Por lo tanto, por ejemplo, el comando
 
 ```cmd
 >Debug.Print expA
 ```
 
- también se puede escribir
+también se puede escribir como
 
 ```cmd
->? expA
+? expA
 ```
 
- Ambas versiones de este comando devolverán el valor actual de la expresión `expA`.
+Ambas versiones de este comando devuelven el valor actual de la expresión `expA`.
 
 ## <a name="example"></a>Ejemplo
 
 ```cmd
->Debug.Print varA
+>Debug.Print DateTime.Now.Day
 ```
 
 ## <a name="see-also"></a>Vea también

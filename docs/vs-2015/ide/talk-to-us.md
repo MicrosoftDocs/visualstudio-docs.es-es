@@ -1,12 +1,8 @@
 ---
 title: Hable con nosotros | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - product support [Visual Studio]
 - Help [Visual Studio], product support
@@ -14,20 +10,18 @@ ms.assetid: e0846d4d-2ce1-48e3-b219-674ff070bf4e
 caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: d046603919c0639427b29cb23cdfa6f8ea74337c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: b91eeff74df839836a380db3d2005c7823494581
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289840"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657610"
 ---
 # <a name="talk-to-us"></a>Talk to Us
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Para obtener la documentación más reciente de Visual Studio 2017, consulte [hable con nosotros](https://docs.microsoft.com/visualstudio/ide/talk-to-us) en docs.microsoft.com.  
-
-  
+Para obtener la documentación más reciente de Visual Studio, consulte [hable con nosotros](https://docs.microsoft.com/visualstudio/ide/talk-to-us).  
 
 Si tiene ideas sobre cómo mejorar nuestra documentación, nos interesan. No podemos responder personalmente, pero nos aseguraremos de hacer llegar sus comentarios a la persona adecuada.  
   
@@ -35,7 +29,7 @@ Si tiene ideas sobre cómo mejorar nuestra documentación, nos interesan. No pod
  Utilice el botón de comentarios (**¿Le resultó útil esta página?**) situado en la parte inferior de la página. Encontrará este botón en todas las páginas de MSDN. Si está buscando una respuesta y no la encuentra, díganos qué información está buscando.  
   
 ## <a name="i-would-like-to-report-a-problem-with-visual-studio"></a>Me gustaría notificar un problema con Visual Studio  
- Si está experimentando problemas con Visual Studio, como bloqueos, un rendimiento bajo, un comportamiento inesperado y así sucesivamente, notifique el problema nosotros haciendo clic en el icono de comentarios situado junto a **inicio rápido**, o eligiendo  **Ayudar a &#124; enviar comentarios &#124; notificar un problema** en el menú principal. Para obtener más información, consulte [cómo notificar un problema con Visual Studio](../ide/how-to-report-a-problem-with-visual-studio-2015.md).  
+ Si está experimentando problemas con Visual Studio, como bloqueos, un rendimiento bajo, un comportamiento inesperado y así sucesivamente, notifique el problema nosotros haciendo clic en el icono de comentarios situado junto a **inicio rápido**, o eligiendo  **Ayudar a &#124; enviar comentarios &#124; notificar un problema** en el menú principal. Para más información, vea [Cómo notificar un problema con Visual Studio](../ide/how-to-report-a-problem-with-visual-studio-2015.md).  
   
 ## <a name="i-want-to-make-a-suggestion-about-visual-studio-features"></a>Quiero hacer una sugerencia relacionada con las características de Visual Studio  
  Si hay algo que podamos mejorar, háganoslo saber. Elija **Ofrecer una sugerencia** para sugerir una característica o cambiar al equipo de Visual Studio. Su sugerencia se publicará automáticamente en [UserVoice](https://visualstudio.uservoice.com) y otros usuarios podrán votarla.  

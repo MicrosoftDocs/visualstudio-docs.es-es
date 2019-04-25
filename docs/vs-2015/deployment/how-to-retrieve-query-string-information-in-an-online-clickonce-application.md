@@ -1,14 +1,9 @@
 ---
-title: 'Cómo: recuperar información de la cadena de consulta en una aplicación ClickOnce en línea | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Recuperar información de la cadena de consulta en una aplicación ClickOnce en línea | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,15 +15,15 @@ ms.assetid: 48ce098a-a075-481b-a5f5-c8ba11f63120
 caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 78b4edd85d47087033cc20189f2c9edc4d7fcd34
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 7b4d5e914566cc019a3882ed53923f84ecdddf85
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49278933"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069541"
 ---
-# <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>Cómo: Recuperar información de la cadena de consulta de una aplicación ClickOnce en línea
+# <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>Procedimiento Recuperar información de la cadena de consulta de una aplicación ClickOnce en línea
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 La *cadena de consulta* es la parte de una dirección URL que empieza con un signo de interrogación de cierre (?) y que contiene información arbitraria con el formato *nombre=valor*. Supongamos que tiene una aplicación [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] denominada `WindowsApp1` que hospeda en `servername`, y quiere pasar un valor para la variable `username` cuando se inicia la aplicación. La dirección URL podría tener el aspecto siguiente:  
@@ -47,33 +42,33 @@ La *cadena de consulta* es la parte de una dirección URL que empieza con un sig
 > [!NOTE]
 >  Antes de tomar la decisión de habilitar esta característica, consulte la sección "Seguridad" más adelante en este tema.  
   
- Para obtener información sobre cómo crear un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] implementación mediante Mage.exe o MageUI.exe, vea [Tutorial: implementar manualmente una aplicación ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
+ Para obtener información sobre cómo crear un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] implementación mediante Mage.exe o MageUI.exe, vea [Tutorial: Implementar manualmente una aplicación ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
   
 > [!NOTE]
 >  A partir de .NET Framework 3.5 SP1, es posible pasar argumentos de línea de comandos a una aplicación [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] sin conexión. Si quiere proporcionar argumentos a la aplicación, puede pasar parámetros al archivo de acceso directo con la extensión .APPREF-MS.  
   
 ### <a name="to-obtain-query-string-information-from-a-clickonce-application"></a>Para obtener información de la cadena de consulta de una aplicación ClickOnce  
   
-1.  Coloque el código siguiente en su proyecto. Para que este código funcione, deberá tener una referencia a System.Web y agregar instrucciones `using` o `Imports` para System.Web, System.Collections.Specialized y System.Deployment.Application.  
+1. Coloque el código siguiente en su proyecto. Para que este código funcione, deberá tener una referencia a System.Web y agregar instrucciones `using` o `Imports` para System.Web, System.Collections.Specialized y System.Deployment.Application.  
   
      [!code-csharp[ClickOnceQueryString#1](../snippets/csharp/VS_Snippets_Winforms/ClickOnceQueryString/CS/Form1.cs#1)]
      [!code-vb[ClickOnceQueryString#1](../snippets/visualbasic/VS_Snippets_Winforms/ClickOnceQueryString/VB/Form1.vb#1)]  
   
-2.  Llame a la función definida previamente para recuperar una propiedad <xref:System.Collections.DictionaryBase.Dictionary%2A> de los parámetros de cadena de consulta, indexados por nombre.  
+2. Llame a la función definida previamente para recuperar una propiedad <xref:System.Collections.DictionaryBase.Dictionary%2A> de los parámetros de cadena de consulta, indexados por nombre.  
   
 ### <a name="to-enable-query-string-passing-in-a-clickonce-application-with-mageuiexe"></a>Para habilitar que se pase una cadena de consulta en una aplicación ClickOnce con MageUI.exe  
   
-1.  Abra el símbolo del sistema de .NET y escriba:  
+1. Abra el símbolo del sistema de .NET y escriba:  
   
     ```  
     MageUI  
     ```  
   
-2.  En el menú **Archivo** , seleccione **Abrir**y abra el manifiesto de implementación para su aplicación [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] , que es el archivo que acaba con la extensión `.application` .  
+2. En el menú **Archivo** , seleccione **Abrir**y abra el manifiesto de implementación para su aplicación [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] , que es el archivo que acaba con la extensión `.application` .  
   
-3.  Seleccione el panel **Opciones de implementación** en la ventana de navegación de la izquierda y active la casilla **Permitir que se pasen los parámetros de la dirección URL a la aplicación** .  
+3. Seleccione el panel **Opciones de implementación** en la ventana de navegación de la izquierda y active la casilla **Permitir que se pasen los parámetros de la dirección URL a la aplicación** .  
   
-4.  En el menú **Archivo** , seleccione **Guardar**.  
+4. En el menú **Archivo** , seleccione **Guardar**.  
   
 > [!NOTE]
 >  También puede habilitar que se pase una cadena de consulta en [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]. Active la casilla **Permitir que se pasen los parámetros de la dirección URL a la aplicación** . Para ello, abra **Propiedades del proyecto**, seleccione la pestaña **Publicar** , haga clic en el botón **Opciones** y, después, seleccione **Manifiestos**.  
@@ -88,6 +83,3 @@ La *cadena de consulta* es la parte de una dirección URL que empieza con un sig
   
 ## <a name="see-also"></a>Vea también  
  [Proteger las aplicaciones ClickOnce](../deployment/securing-clickonce-applications.md)
-
-
-

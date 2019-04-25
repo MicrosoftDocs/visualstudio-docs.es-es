@@ -8,16 +8,15 @@ dev_langs:
 ms.assetid: 61107da9-7fa3-4dba-b101-ae46536f52c4
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: a9e73fe476dbe323289e7ebe90508aec695b6bd2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
-ms.translationtype: MTE95
+ms.openlocfilehash: ce3658f93df11b83f89e89931d03f35b0fa801a1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53942559"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070243"
 ---
 # <a name="how-to-add-validation-to-entity-classes"></a>Procedimiento Agregar validación a clases de entidad
 *Validar* las clases de entidad es el proceso de confirmar que los valores especificados en los objetos de datos cumplen las restricciones en el esquema de un objeto, además de las reglas establecidas para la aplicación. Se recomienda validar los datos antes de enviar las actualizaciones a la base de datos subyacente para reducir los errores. De este modo, también se reduce el número de viajes de ida y vuelta entre una aplicación y la base de datos.
@@ -34,23 +33,23 @@ ms.locfileid: "53942559"
 
 ### <a name="to-validate-data-during-a-columns-value-change"></a>Para validar los datos mientras se modifican los valores de una columna
 
-1.  Abra o cree un nuevo archivo LINQ to SQL Classes (**.dbml** archivo) en el **Object Relational Designer**. (Haga doble clic en el archivo **.dbml** en el **Explorador de soluciones**).
+1. Abra o cree un nuevo archivo LINQ to SQL Classes (**.dbml** archivo) en el **Object Relational Designer**. (Haga doble clic en el archivo **.dbml** en el **Explorador de soluciones**).
 
-2.  En **Object Relational Designer**, haga clic con el botón derecho del mouse en la clase para la que desee agregar validación y, a continuación, haga clic en **Ver código**.
+2. En **Object Relational Designer**, haga clic con el botón derecho del mouse en la clase para la que desee agregar validación y, a continuación, haga clic en **Ver código**.
 
      El Editor de código se abre con una clase parcial para la clase de entidad seleccionada.
 
-3.  Coloque el cursor en la clase parcial.
+3. Coloque el cursor en la clase parcial.
 
-4.  Para proyectos de Visual Basic:
+4. Para proyectos de Visual Basic:
 
-    1.  Expanda la lista **Nombre de método**.
+    1. Expanda la lista **Nombre de método**.
 
-    2.  Busque el método **OnNOMBREDECOLUMNAChanging** para la columna a la que desee agregar validación.
+    2. Busque el método **OnNOMBREDECOLUMNAChanging** para la columna a la que desee agregar validación.
 
-    3.  Se agrega a la clase parcial un método `OnCOLUMNNAMEChanging`.
+    3. Se agrega a la clase parcial un método `OnCOLUMNNAMEChanging`.
 
-    4.  Agregue el código siguiente para comprobar, en primer lugar, que se ha especificado un valor y, a continuación, para asegurar que el valor especificado para la columna es aceptable para la aplicación. El argumento `value` contiene el valor propuesto, por lo que debe agregar la lógica para confirmar que es un valor válido:
+    4. Agregue el código siguiente para comprobar, en primer lugar, que se ha especificado un valor y, a continuación, para asegurar que el valor especificado para la columna es aceptable para la aplicación. El argumento `value` contiene el valor propuesto, por lo que debe agregar la lógica para confirmar que es un valor válido:
 
         ```vb
         If value.HasValue Then
@@ -80,23 +79,23 @@ ms.locfileid: "53942559"
 
 ### <a name="to-validate-data-during-an-update-to-an-entity-class"></a>Para validar datos durante la actualización de una clase de entidad
 
-1.  Abra o cree un nuevo archivo LINQ to SQL Classes (**.dbml** archivo) en el **Object Relational Designer**. (Haga doble clic en el archivo **.dbml** en el **Explorador de soluciones**).
+1. Abra o cree un nuevo archivo LINQ to SQL Classes (**.dbml** archivo) en el **Object Relational Designer**. (Haga doble clic en el archivo **.dbml** en el **Explorador de soluciones**).
 
-2.  Haga clic con el botón derecho del mouse en un área vacía de **Object Relational Designer** y, a continuación, haga clic en **Ver código**.
+2. Haga clic con el botón derecho del mouse en un área vacía de **Object Relational Designer** y, a continuación, haga clic en **Ver código**.
 
      El Editor de código se abre con una clase parcial para `DataContext`.
 
-3.  Coloque el cursor en la clase parcial para `DataContext`.
+3. Coloque el cursor en la clase parcial para `DataContext`.
 
-4.  Para proyectos de Visual Basic:
+4. Para proyectos de Visual Basic:
 
-    1.  Expanda la lista **Nombre de método**.
+    1. Expanda la lista **Nombre de método**.
 
-    2.  Haga clic en **UpdateNOMBREDECLASEDEENTIDAD**.
+    2. Haga clic en **UpdateNOMBREDECLASEDEENTIDAD**.
 
-    3.  Se agrega a la clase parcial un método `UpdateENTITYCLASSNAME`.
+    3. Se agrega a la clase parcial un método `UpdateENTITYCLASSNAME`.
 
-    4.  Obtenga acceso a los valores de la columna mediante el argumento `instance`, como se muestra en el código siguiente:
+    4. Obtenga acceso a los valores de la columna mediante el argumento `instance`, como se muestra en el código siguiente:
 
         ```vb
         If (instance.COLUMNNAME = x) And (instance.COLUMNNAME = y) Then

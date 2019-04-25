@@ -1,14 +1,9 @@
 ---
 title: SccQueryInfo (función) | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccQueryInfo
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 3973d336-a9b7-41a2-a4e6-bb8184a96aaf
 caps.latest.revision: 19
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: a7093f712ab520502e36094ec571c0ee1a3ded18
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f951e7ef29fbba7225997276b31bd9f32731efc8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51785084"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108443"
 ---
 # <a name="sccqueryinfo-function"></a>SccQueryInfo (Función)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +39,7 @@ SCCRTN SccQueryInfo(
  pvContext  
  [in] La estructura de contexto de complemento de control de origen.  
   
- n  
+ nFiles  
  [in] Número de archivos especificados en el `lpFileNames` matriz y la longitud de la `lpStatus` matriz.  
   
  lpFileNames  
@@ -70,15 +65,14 @@ SCCRTN SccQueryInfo(
   
  Al usar esta función para desproteger archivos, tenga en cuenta lo siguiente `MSSCCI` requisitos de estado:  
   
--   `SCC_STATUS_OUTBYUSER` se establece cuando el usuario actual ha desprotegido el archivo.  
+- `SCC_STATUS_OUTBYUSER` se establece cuando el usuario actual ha desprotegido el archivo.  
   
--   `SCC_STATUS_CHECKEDOUT` no se puede establecer a menos que `SCC_STATUS_OUTBYUSER` está establecido.  
+- `SCC_STATUS_CHECKEDOUT` no se puede establecer a menos que `SCC_STATUS_OUTBYUSER` está establecido.  
   
--   `SCC_STATUS_CHECKEDOUT` solo se establece cuando el archivo está desprotegido en el directorio de trabajo designado.  
+- `SCC_STATUS_CHECKEDOUT` solo se establece cuando el archivo está desprotegido en el directorio de trabajo designado.  
   
--   Si el archivo está desprotegido por el usuario actual en un directorio que no sea el directorio de trabajo, `SCC_STATUS_OUTBYUSER` está establecida pero `SCC_STATUS_CHECKEDOUT` no es.  
+- Si el archivo está desprotegido por el usuario actual en un directorio que no sea el directorio de trabajo, `SCC_STATUS_OUTBYUSER` está establecida pero `SCC_STATUS_CHECKEDOUT` no es.  
   
 ## <a name="see-also"></a>Vea también  
  [Funciones de API de complemento de Control de código fuente](../extensibility/source-control-plug-in-api-functions.md)   
  [Código de estado de archivo](../extensibility/file-status-code-enumerator.md)
-

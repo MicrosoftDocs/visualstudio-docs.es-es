@@ -1,21 +1,17 @@
 ---
 title: Compilador de colores de VSIX | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 99395da7-ec34-491d-9baa-0590d23283ce
 caps.latest.revision: 7
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 19ca749b3ddd2190fd667ddb6c96c2a88c557999
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e1607ec4863c7e2b21cd69dd57ca4203e3cf4dbf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51788438"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063678"
 ---
 # <a name="vsix-color-compiler"></a>Compilador de colores de VSIX
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -57,14 +53,14 @@ La herramienta de compilador de Color de extensión de Visual Studio es una apli
 |||  
 |-|-|  
 |**Attribute**|**Definición**|  
-|nombre|[Obligatorio] El nombre del tema|  
+|Name|[Obligatorio] El nombre del tema|  
 |GUID|[Obligatorio] GUID del tema (debe coincidir con el formato de GUID)|  
   
  Al crear colores personalizados para Visual Studio, los colores deben definirse para los temas siguientes. Si ningún colores existen para un tema concreto, Visual Studio intenta cargar los colores que faltan desde el tema claro.  
   
 |||  
 |-|-|  
-|**Nombre del tema**|**GUID de tema**|  
+|**Nombre del tema**|**Theme GUID**|  
 |Claro|{de3dbbcd-f642-433c-8353-8f1df4370aba}|  
 |Oscuro|{1ded0138-47ce-435e-84ef-9ec1f439b749}|  
 |Azul|{a4d6a176-b948-4b29-8c66-53c97a1ed7d0}|  
@@ -83,7 +79,7 @@ La herramienta de compilador de Color de extensión de Visual Studio es una apli
 |||  
 |-|-|  
 |**Attribute**|**Definición**|  
-|nombre|[Obligatorio] El nombre de la categoría|  
+|Name|[Obligatorio] El nombre de la categoría|  
 |GUID|[Obligatorio] GUID de la categoría (debe coincidir con el formato de GUID)|  
   
  **Color**  
@@ -100,7 +96,7 @@ La herramienta de compilador de Color de extensión de Visual Studio es una apli
 |||  
 |-|-|  
 |**Attribute**|**Definición**|  
-|nombre|[Obligatorio] El nombre del color|  
+|Name|[Obligatorio] El nombre del color|  
   
  **En segundo plano o primer plano**  
   
@@ -114,8 +110,8 @@ La herramienta de compilador de Color de extensión de Visual Studio es una apli
 |||  
 |-|-|  
 |**Attribute**|**Definición**|  
-|Tipo|[Obligatorio] El tipo del color. Puede ser uno de los siguientes:<br /><br /> *CT_INVALID:* el color no es válida o no.<br /><br /> *CT_RAW:* un valor ARGB sin formato.<br /><br /> *CT_COLORINDEX:* NO USE.<br /><br /> *CT_SYSCOLOR:* un color de sistema de Windows en SysColor.<br /><br /> *CT_VSCOLOR:* un color de Visual Studio en __VSSYSCOLOREX.<br /><br /> *CT_AUTOMATIC:* color automático.<br /><br /> *CT_TRACK_FOREGROUND:* NO USE.<br /><br /> *CT_TRACK_BACKGROUND:* NO USE.|  
-|Origen|[Obligatorio] El valor del color representado en formato hexadecimal|  
+|Tipo|[Obligatorio] El tipo del color. Puede ser uno de los siguientes:<br /><br /> *CT_INVALID:* El color no es válida o no.<br /><br /> *CT_RAW:* Valor sin formato ARGB.<br /><br /> *CT_COLORINDEX:* NO USE.<br /><br /> *CT_SYSCOLOR:* Un color del sistema de Windows desde SysColor.<br /><br /> *CT_VSCOLOR:* Un color de Visual Studio en __VSSYSCOLOREX.<br /><br /> *CT_AUTOMATIC:* El color automático.<br /><br /> *CT_TRACK_FOREGROUND:* NO USE.<br /><br /> *CT_TRACK_BACKGROUND:* NO USE.|  
+|Source|[Obligatorio] El valor del color representado en formato hexadecimal|  
   
  Todos los valores admitidos por la enumeración __VSCOLORTYPE son compatibles con el esquema en el atributo de tipo. Sin embargo, se recomienda que use solo CT_RAW y CT_SYSCOLOR.  
   
@@ -146,22 +142,22 @@ La herramienta de compilador de Color de extensión de Visual Studio es una apli
 |-|-|-|  
 |**Nombre del conmutador**|**Notas**|**Obligatorio u opcional**|  
 |Sin nombre (archivo .xml)|Esto es el primer parámetro sin nombre y es la ruta de acceso al archivo XML para convertir.|Obligatorio|  
-|Sin nombre (archivo .pkgdef)|Esto es el segundo parámetro sin nombre y es la ruta de acceso de salida para el archivo .pkgdef generado.<br /><br /> Valor predeterminado: \<nombre del archivo XML > .pkgdef|Optional|  
+|Sin nombre (archivo .pkgdef)|Esto es el segundo parámetro sin nombre y es la ruta de acceso de salida para el archivo .pkgdef generado.<br /><br /> Predeterminado: \<Nombre del archivo XML > .pkgdef|Optional|  
 |/noLogo|Al establecer esta marca detiene la información de producto y copyright de impresión.|Optional|  
 |/?|Imprimir información de ayuda.|Optional|  
 |/help|Imprimir información de ayuda.|Optional|  
   
  **Ejemplos**  
   
--   VsixColorCompiler D:\xml\colors.xml D:\pkgdef\colors.pkgdef  
+- VsixColorCompiler D:\xml\colors.xml D:\pkgdef\colors.pkgdef  
   
--   /NoLogo VsixColorCompiler D:\xml\colors.xml  
+- VsixColorCompiler D:\xml\colors.xml /noLogo  
   
 ## <a name="notes"></a>Notas  
   
--   Esta herramienta requiere que se ha instalado la versión más reciente del tiempo de ejecución de VC ++.  
+- Esta herramienta requiere que se ha instalado la versión más reciente del tiempo de ejecución de VC ++.  
   
--   Solo los archivos solo se admiten. No se admite la conversión de forma masiva a través de rutas de carpeta.  
+- Solo los archivos solo se admiten. No se admite la conversión de forma masiva a través de rutas de carpeta.  
   
 ## <a name="sample-output"></a>Resultados de ejemplo  
  El archivo .pkgdef generado por la herramienta será similar a la siguiente claves:  
@@ -173,4 +169,3 @@ La herramienta de compilador de Color de extensión de Visual Studio es una apli
 [$RootKey$\Themes\{de3dbbcd-f642-433c-8353-8f1df4370aba}\TreeView]  
 "Data"=hex:38,00,00,00,0b,00,00,00,01,00,00,00,8e,f0,ec,92,13,8b,f4,4c,99,e9,ae,26,92,38,21,85,01,00,00,00,0a,00,00,00,42,61,63,6b,67,72,6f,75,6e,64,01,f5,f5,f5,ff,01,1e,1e,1e,ff  
 ```
-

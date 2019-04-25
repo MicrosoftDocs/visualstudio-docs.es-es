@@ -1,7 +1,6 @@
 ---
 title: 'CA2227: Las propiedades de la colección deben ser de solo lectura'
 ms.date: 09/28/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA2227
@@ -12,19 +11,19 @@ helpviewer_keywords:
 ms.assetid: 26967aaf-6fbe-438a-b4d3-ac579b5dc0f9
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 085bf631a444dc3b6dc64dba4ef10d111f6492bb
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 8a6ced277aa442450418ce55f4e1db56ad5d8af1
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53949068"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55926247"
 ---
 # <a name="ca2227-collection-properties-should-be-read-only"></a>CA2227: Las propiedades de la colección deben ser de solo lectura
 

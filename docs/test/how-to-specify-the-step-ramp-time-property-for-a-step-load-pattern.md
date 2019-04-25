@@ -7,16 +7,15 @@ helpviewer_keywords:
 ms.assetid: 4a69e857-f93b-4907-9a01-fd1b66291205
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
-ms.openlocfilehash: 4338ba11116ce8077cff8e15a6bb8093214917d8
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 9240a4129e7a58443ca0efaaa7ee1e27da96dcad
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53925763"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55916718"
 ---
-# <a name="how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern"></a>Procedimiento Especificar la propiedad Tiempo de rampa de paso de un modelo de carga por pasos
+# <a name="how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern"></a>Filtrar Especificar la propiedad Tiempo de rampa de paso de un modelo de carga por pasos
 
 Después de crear la prueba de carga con el **Asistente para prueba de carga nueva**, puede usar el **Editor de pruebas de carga** para cambiar las propiedades de los escenarios de modo que satisfagan las necesidades y los objetivos de la prueba. Para obtener más información, vea [Tutorial: Creación y ejecución de una prueba de carga](../test/walkthrough-create-and-run-a-load-test.md).
 

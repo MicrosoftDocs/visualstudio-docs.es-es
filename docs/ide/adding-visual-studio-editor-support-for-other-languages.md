@@ -13,16 +13,15 @@ helpviewer_keywords:
 ms.assetid: d78c43ee-4ef2-42e5-984e-d137de4e7e92
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 79a6432da32733b5cdc45e9f191c866b7fce1c02
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3c87339e26e5b08fbcbdcde94d43c9f0009e1a22
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53968315"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232423"
 ---
 # <a name="add-visual-studio-editor-support-for-other-languages"></a>Agregar compatibilidad con otros lenguajes en el editor de Visual Studio
 
@@ -47,27 +46,27 @@ Visual Studio actualmente ofrece compatibilidad con el uso de colores para la si
 
 Además del uso de colores para la sintaxis y la finalización de instrucciones básicas, Visual Studio tiene una característica denominada [Navegar a](https://blogs.msdn.microsoft.com/benwilli/2015/04/09/visual-studio-tip-3-use-navigate-to/). Esta característica permite buscar rápidamente archivos de código, rutas de acceso de archivo y símbolos de código. Visual Studio ofrece compatibilidad con Navegar a para los idiomas siguientes.
 
--   Ir
+- Ir
 
--   Java
+- Java
 
--   JavaScript
+- JavaScript
 
--   PHP
+- PHP
 
--   TypeScript
+- TypeScript
 
--   Visual Basic
+- Visual Basic
 
--   Visual C++
+- Visual C++
 
--   C#
+- C#
 
 Todos estos tipos de archivo tienen las características que se han descrito anteriormente, aunque todavía no se haya instalado la compatibilidad con un idioma determinado. La instalación de compatibilidad especializada con algunos lenguajes puede proporcionar compatibilidad con lenguajes adicionales, como IntelliSense u otras características de lenguaje avanzadas, como las bombillas.
 
 ## <a name="add-support-for-non-supported-languages"></a>Agregar compatibilidad con idiomas no admitidos
 
-Visual Studio 2015 Update 1 y versiones posteriores proporcionan compatibilidad de lenguaje en el editor mediante el uso de [gramáticas TextMate](https://manual.macromates.com/en/language_grammars). Si su lenguaje de programación favorito no se admite actualmente en el editor de Visual Studio, busque en primer lugar en la Web, ya que es posible que exista un lote de TextMate para el lenguaje. Si no encuentra ninguno, puede agregar usted mismo compatibilidad con él en Visual Studio 2015 Update 1 o versiones posteriores. Para ello, cree un modelo de lote de TextMate para gramáticas del lenguaje y fragmentos de código.
+Visual Studio proporciona compatibilidad de lenguaje en el editor mediante [gramáticas TextMate](https://manual.macromates.com/en/language_grammars). Si su lenguaje de programación favorito no se admite actualmente en el editor de Visual Studio, busque en primer lugar en la Web, ya que es posible que exista un lote de TextMate para el lenguaje. Si no encuentra ninguno, puede agregar usted mismo compatibilidad con él mediante la creación de un modelo de lote de TextMate para gramáticas del lenguaje y fragmentos de código.
 
 Agregue todas las gramáticas TextMate nuevas para Visual Studio en la carpeta siguiente:
 
@@ -81,11 +80,14 @@ En esta ruta de acceso base, agregue las carpetas siguientes si se aplican a su 
 |*\Syntaxes*|Carpeta de la gramática. Contiene los archivos .*json* de la gramática para el lenguaje, como *Matlab.json*.|
 |*\Snippets*|Carpeta de fragmentos de código. Contiene fragmentos de código para el lenguaje.|
 
-En Windows, *%userprofile%* se resuelve como la ruta de acceso *c:\Usuarios\\\<nombre de usuario>*. Si la carpeta de extensiones no existe en el sistema, debe crearla. Si la carpeta ya existe, estará oculta.
+En Windows, *%userprofile%* se resuelve como la ruta de acceso *c:\Usuarios\\\<nombre de usuario>*. Si la carpeta *Extensiones* no existe en el sistema, debe crearla. Si la carpeta ya existe, estará oculta.
 
-Para obtener más información sobre cómo crear gramáticas TextMate, vea [TextMate - Introduction to Language Grammars: How to add source code syntax highlighting embedded in HTML](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) (TextMate - Introducción a las gramáticas de lenguaje: Cómo agregar resaltado de sintaxis de código fuente insertada en HTML) y [Notes on how to create a Language Grammar and Custom Theme for a Textmate Bundle](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle) (Notas sobre cómo crear una gramática de lenguaje y un tema personalizado para un lote de TextMate).
+> [!TIP]
+> Si tiene cualquier archivo abierto en el editor, debe cerrarlo y volver a abrirlo para ver el resaltado de la sintaxis después de agregar las gramáticas de TextMate.
+
+Para obtener más información sobre cómo crear gramáticas TextMate, vea [TextMate – Introduction to Language Grammars](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) (TextMate. Introducción a las gramáticas de lenguaje) y [Notes on how to create a Language Grammar and Custom Theme for a Textmate Bundle](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle) (Notas sobre cómo crear una gramática de lenguaje y un tema personalizado para un lote de Textmate).
 
 ## <a name="see-also"></a>Vea también
 
-- [Tutorial: Creación de un fragmento de código](../ide/walkthrough-creating-a-code-snippet.md)
+- [Tutorial: Crear un fragmento de código](../ide/walkthrough-creating-a-code-snippet.md)
 - [Tutorial: Mostrar la finalización de instrucciones](../extensibility/walkthrough-displaying-statement-completion.md)

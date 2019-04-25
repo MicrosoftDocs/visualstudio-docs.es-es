@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 822cbb8d-7ab4-40ee-bd12-44016ebcce81
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 785e47a337eb33eb9416705a4c2c647a99f611d7
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.openlocfilehash: 3979138944671ff2809f4f73beb0a28b222ec5ff
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54204526"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053200"
 ---
 # <a name="inside-the-editor"></a>Dentro del editor
 
@@ -202,19 +202,19 @@ Da formato a la vista de texto uno <xref:Microsoft.VisualStudio.Text.ITextSnapsh
 
 Las características del editor están diseñadas para que la definición de la característica es independiente de su implementación. El editor incluye estas características:
 
--   Las etiquetas y clasificadores
+- Las etiquetas y clasificadores
 
--   Elementos gráficos
+- Elementos gráficos
 
--   Proyección
+- Proyección
 
--   esquematizar
+- esquematizar
 
--   Enlaces del mouse y la clave
+- Enlaces del mouse y la clave
 
--   Las operaciones y primitivas
+- Las operaciones y primitivas
 
--   IntelliSense
+- IntelliSense
 
 ### <a name="tags-and-classifiers"></a>Las etiquetas y clasificadores
 
@@ -262,7 +262,7 @@ Elementos gráficos incrustados son gráficos que forman parte de la vista de te
 
 Elementos gráficos emergentes son gráficos que aparecen en una ventana pequeña encima de la vista de texto, por ejemplo, información sobre herramientas.
 
-###  <a name="projection"></a> Proyección
+### <a name="projection"></a> Proyección
 
 Proyección es una técnica para construir un tipo de búfer de texto que no almacena realmente el texto, pero en su lugar, combina el texto de otros búferes de texto diferente. Por ejemplo, puede usarse un búfer de proyección para concatenar el texto de los otros dos búferes y presentará el resultado como si se encuentra en un solo búfer, o para ocultar partes del texto en un búfer. Un búfer de proyección puede actuar como un búfer de origen a otro búfer de proyección. Para reorganizar el texto de muchas maneras diferentes, se puede construir un conjunto de búferes que se relacionan mediante la proyección. (Un conjunto de este tipo es también se denomina un *gráfico de búfer*.) La característica de esquematización del texto de Visual Studio se implementa mediante el uso de un búfer de proyección para ocultar el texto contraído y el editor de Visual Studio para las páginas ASP.NET usa proyección para admitir incrustados lenguajes como Visual Basic y C#.
 

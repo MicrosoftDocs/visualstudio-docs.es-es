@@ -1,5 +1,6 @@
 ---
 title: Novedades del depurador de Visual Studio 2017 | Microsoft Docs
+titleSuffix: ''
 ms.date: 01/22/2018
 ms.topic: conceptual
 dev_langs:
@@ -15,21 +16,22 @@ helpviewer_keywords:
 ms.assetid: 2aed9caa-2384-4e49-8595-82d8b06cf271
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fbc48fdc93feebf2f78b6d11ae2b7cc744c46f98
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+monikerRange: vs-2017
+ms.openlocfilehash: 9c6f2eb4be56be8cf5e25c3238a91819df3bc574
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54269740"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57867624"
 ---
-# <a name="whats-new-for-the-debugger-in-includevsdev15miscincludesvsdev15mdmd"></a>Novedades del depurador de [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
+# <a name="whats-new-for-the-debugger-in-visual-studio-2017"></a>Novedades del depurador de Visual Studio 2017
 
 El depurador incluye estas nuevas características:
 
-- Novedad de la versión 15.5: el **Depurador de instantáneas** toma una instantánea de las aplicaciones en producción cuando se ejecuta el código que le interesa. Para indicar al depurador que tome una instantánea, establezca puntos de acoplamiento y puntos de registro en el código. El depurador le permite ver exactamente qué salió mal, sin afectar el tráfico de la aplicación de producción. El Depurador de instantáneas puede permitirle disminuir considerablemente el tiempo que tarda en resolver los problemas que se producen en los entornos de producción.
+- Novedades de la versión 15.5, el **Snapshot Debugger** toma una instantánea de sus aplicaciones en producción cuando se ejecuta el código que le interesen. Para indicar al depurador que tome una instantánea, establezca puntos de acoplamiento y puntos de registro en el código. El depurador le permite ver exactamente qué salió mal, sin afectar el tráfico de la aplicación de producción. El Depurador de instantáneas puede permitirle disminuir considerablemente el tiempo que tarda en resolver los problemas que se producen en los entornos de producción.
 
     La colección de instantáneas está disponible para las siguientes aplicaciones web que se ejecutan en Azure App Service:
 
@@ -38,7 +40,7 @@ El depurador incluye estas nuevas características:
 
     Para obtener más información, vea [Depurar aplicaciones de ASP.NET Azure activas con el depurador de instantáneas](../debugger/debug-live-azure-applications.md).
 
-- Novedades de la versión 15.5 de Visual Studio Enterprise, **step-back de IntelliTrace** automáticamente toma una instantánea de la aplicación en cada punto de interrupción y el depurador de evento de paso. Las instantáneas registradas le permiten volver a puntos de interrupción anteriores y ver el estado de la aplicación tal y como estaba en un momento anterior. La característica step-back de IntelliTrace puede permitirle ahorrar tiempo cuando desea ver el estado anterior de la aplicación, pero no desea reiniciar la depuración ni volver a crear el estado de aplicación que se desea.
+- Novedades de la versión 15.5 de Visual Studio Enterprise solo, **step-back de IntelliTrace** automáticamente toma una instantánea de la aplicación en cada punto de interrupción y el depurador de evento de paso. Las instantáneas registradas le permiten volver a puntos de interrupción anteriores y ver el estado de la aplicación tal y como estaba en un momento anterior. La característica step-back de IntelliTrace puede permitirle ahorrar tiempo cuando desea ver el estado anterior de la aplicación, pero no desea reiniciar la depuración ni volver a crear el estado de aplicación que se desea.
 
     Para poder navegar y ver las instantáneas, use los botones **Retroceder paso a paso** y **Avanzar paso a paso** en la barra de herramientas de depuración. Estos botones permiten navegar por los eventos que aparecen en la pestaña **Eventos** en la ventana **Herramientas de diagnóstico**.
 
@@ -66,7 +68,7 @@ El depurador incluye estas nuevas características:
 
     ![Búsqueda en asociar al proceso](../debugger/media/dbg-attach-to-process-search.png "DbgAttachToProcessSearch")
 
-Para obtener más información sobre estas nuevas características, consulte el [notas de la versión [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] ](/visualstudio/releasenotes/vs2017-relnotes#debuggingdiag).
+Para obtener más información sobre estas nuevas características, consulte el [notas de la versión [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] ](/visualstudio/releasenotes/vs2017-relnotes).
 
 ## <a name="see-also"></a>Vea también
 

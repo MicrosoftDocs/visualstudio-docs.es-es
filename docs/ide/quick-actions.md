@@ -1,22 +1,21 @@
 ---
 title: Acciones rápidas, bombillas y destornilladores
 ms.date: 03/28/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: cad90eeea8f4fccb3a331fc3c41d072e03dca80c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1a08e54025ac0826b88a3d3fcee299beef245d13
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53904674"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57867042"
 ---
 # <a name="quick-actions"></a>Acciones rápidas
 
@@ -25,8 +24,11 @@ Las acciones rápidas le permiten refactorizar, generar o modificar el código d
 Las acciones rápidas pueden utilizarse para:
 
 - Aplicar una revisión de código para una infracción de regla del [analizador de código](../code-quality/roslyn-analyzers-overview.md).
-- [Suprimir](../code-quality/use-roslyn-analyzers.md) una infracción de regla del analizador de código.
+
+- [Suprimir](../code-quality/use-roslyn-analyzers.md#suppress-violations) una infracción de regla del analizador de código.
+
 - Aplicar una refactorización (por ejemplo, [insertar una variable temporal](../ide/reference/inline-temporary-variable.md)).
+
 - Generar código (por ejemplo, [introducir una variable local](../ide/reference/introduce-local-variable.md)).
 
 > [!NOTE]
@@ -34,7 +36,7 @@ Las acciones rápidas pueden utilizarse para:
 
 Las acciones rápidas se pueden aplicar con los iconos de bombilla ![icono de bombilla](media/light-bulb-icon.png) o de destornillador ![icono de destornillador](media/screwdriver-icon.png) o presionando **Ctrl**+**.** cuando el cursor está en una línea de código para la que está disponible una acción. Verá una bombilla de error ![icono de bombilla de error](media/error-light-bulb-icon.png) si hay un subrayado ondulado de color rojo que indica un error. Visual Studio tiene una corrección disponible para ese error.
 
-Para cualquier lenguaje, un tercero puede proporcionar diagnósticos y sugerencias, por ejemplo, como parte de un SDK, y las bombillas de Visual Studio se encienden siguiendo esas reglas.
+Para cualquier lenguaje, un tercero puede proporcionar diagnósticos y sugerencias, por ejemplo, como parte de un SDK, y las bombillas de Visual Studio aparecen en función de esas reglas.
 
 ## <a name="icons"></a>Iconos
 
@@ -42,17 +44,17 @@ El icono que aparece cuando hay una acción rápida disponible da una indicació
 
 ## <a name="to-see-a-light-bulb-or-screwdriver"></a>Para ver una bombilla o un destornillador
 
-- Si hay una corrección disponible, aparecerán bombillas espontáneamente cuando mantenga el cursor en la ubicación de un error.
+Si hay disponible una corrección, las bombillas aparecen:
+
+- Cuando mantiene el mouse sobre la ubicación de un error
 
    ![Bombilla con el desplazamiento del mouse](../ide/media/vs2015_lightbulb_hover.png)
 
-- Las bombillas y los destornilladores aparecen en el margen izquierdo del editor cuando mueve el acento circunflejo a una línea de código para la que hay una acción rápida disponible.
+- En el margen izquierdo del editor cuando se mueve el símbolo de inserción (cursor) en la línea de código aplicable
 
-- Presione **Ctrl**+**.** en cualquier parte de una línea para ver una lista de acciones rápidas y refactorizaciones disponibles.
+También puede presionar **Ctrl**+**.** en cualquier parte de una línea para ver una lista de acciones rápidas y refactorizaciones disponibles.
 
-## <a name="to-see-potential-fixes"></a>Para ver posibles correcciones
-
-Seleccione la flecha abajo situada junto a la bombilla o el vínculo **Mostrar posibles correcciones** para mostrar una lista de acciones rápidas disponibles.
+Para ver posibles correcciones, seleccione la flecha abajo que aparece junto a la bombilla o el vínculo **Mostrar posibles correcciones**. Aparece una lista de las acciones rápidas disponibles.
 
 ![Bombilla expandida](../ide/media/vs2015_lightbulb_hover_expanded.png)
 

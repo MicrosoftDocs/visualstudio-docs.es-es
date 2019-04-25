@@ -1,32 +1,31 @@
 ---
 title: Consejos para mejorar el rendimiento
 ms.date: 08/14/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bdc20f22fc535028cb67939fed9c9472ed081428
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7fccae7d42d9e8f99c78fd55f74466e2f83e5dfa
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53956899"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57868235"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Sugerencias y trucos de rendimiento de Visual Studio
 
 Las recomendaciones de rendimiento de Visual Studio están previstas para situaciones de memoria insuficiente, que se pueden plantear en algunos casos. En estas situaciones, puede optimizar determinadas características de Visual Studio que puede que no esté usando. Las sugerencias siguientes no están planteadas como recomendaciones generales.
 
 > [!NOTE]
-> Si tiene dificultades para usar el producto debido a problemas de memoria, háganoslo saber a través de la herramienta de [comentarios](../ide/how-to-report-a-problem-with-visual-studio-2017.md).
+> Si tiene dificultades para usar el producto debido a problemas de memoria, háganoslo saber a través de la herramienta de [comentarios](../ide/how-to-report-a-problem-with-visual-studio.md).
 
 ## <a name="use-a-64-bit-os"></a>Uso de un sistema operativo de 64 bits
 
 Si actualiza el sistema desde una versión de Windows de 32 bits a una de 64 bits, se amplía la cantidad de memoria virtual disponible para Visual Studio de 2 GB a 4 GB. Esto permite a Visual Studio gestionar cargas de trabajo considerablemente mayores, aunque sea un proceso de 32 bits.
 
-Para obtener más información, vea [Memory limits](/windows/desktop/Memory/memory-limits-for-windows-releases#memory_limits) (Límites de memoria) y [Using /LARGEADDRESSAWARE on 64-bit Windows](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/) (Uso de /LARGEADDRESSAWARE en Windows de 64 bits).
+Para obtener más información, vea [Memory limits](/windows/desktop/Memory/memory-limits-for-windows-releases) (Límites de memoria) y [Using /LARGEADDRESSAWARE on 64-bit Windows](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/) (Uso de /LARGEADDRESSAWARE en Windows de 64 bits).
 
 ## <a name="disable-automatic-file-restore"></a>Desactivación de la restauración automática de archivos
 
@@ -42,9 +41,9 @@ Si deshabilita la restauración automática de archivos, puede acceder a archivo
 
 - Para la función general **Ir a**, seleccione **Edición** > **Ir a** > **Ir a todo**, o bien presione **Ctrl**+**T**.
 
-- En Visual Studio 2017 versión 15.8 y posteriores, puede saltar a la última ubicación de edición en una solución mediante **Edición** > **Ir a** > **Ir a última ubicación de edición**, o bien presionando **Ctrl**+**Mayús**+**Retroceso**.
+- Vaya a la última ubicación de edición de una solución mediante **Edición** > **Ir a** > **Ir a última ubicación de edición**, o bien presione **Ctrl**+**Mayús**+**Retroceso**.
 
-- En Visual Studio 2017 versión 15.8 y posteriores, use **Ir a archivo reciente** para ver una lista de archivos visitados recientemente en una solución. Seleccione **Edición** > **Ir a** > **Ir a archivo reciente**, o bien presione **Ctrl**+**1**, **Ctrl**+**R**.
+- Use **Ir a archivo reciente** para ver una lista de archivos visitados recientemente en una solución. Seleccione **Edición** > **Ir a** > **Ir a archivo reciente**, o bien presione **Ctrl**+**1**, **Ctrl**+**R**.
 
 ## <a name="configure-debugging-options"></a>Configuración de opciones de depuración
 
@@ -106,7 +105,17 @@ Para más información sobre las consideraciones de rendimiento de .NET Compiler
 
     Las extensiones son componentes de software adicionales agregados a Visual Studio para proporcionar nueva funcionalidad o extender la funcionalidad existente. Las extensiones suelen ser una fuente de problemas de recursos de memoria. Si experimenta problemas de recursos de memoria, intente deshabilitar extensiones de una en una para ver cómo repercuten en el escenario o el flujo de trabajo.
 
+   ::: moniker range="vs-2017"
+
     Para deshabilitar extensiones, vaya a **Herramientas** > **Extensiones y actualizaciones** y deshabilite una extensión determinada.
+
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2019"
+
+    Para deshabilitar extensiones, vaya a **Extensiones** > **Administrar extensiones** y deshabilite una extensión determinada.
+
+   ::: moniker-end
 
 - **Deshabilite el diseñador XAML**
 
@@ -131,4 +140,4 @@ Para obtener una descripción detallada del recolector de elementos no utilizado
 ## <a name="see-also"></a>Vea también
 
 - [Optimización del rendimiento de Visual Studio](../ide/optimize-visual-studio-performance.md)
-- [Load solutions faster (Visual Studio blog)](https://blogs.msdn.microsoft.com/visualstudio/2018/04/04/load-solutions-faster-with-visual-studio-2017-version-15-6/) [Carga más rápida de las soluciones (blog de Visual Studio)]
+- [Load solutions faster (Visual Studio blog)](https://devblogs.microsoft.com/visualstudio/load-solutions-faster-with-visual-studio-2017-version-15-6/) [Carga más rápida de las soluciones (blog de Visual Studio)]

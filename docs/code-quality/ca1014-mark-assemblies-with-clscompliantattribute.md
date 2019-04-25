@@ -1,7 +1,6 @@
 ---
 title: 'CA1014: Marcar los ensamblados con CLSCompliantAttribute'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA1014
@@ -12,19 +11,19 @@ helpviewer_keywords:
 ms.assetid: 4fe57449-cf45-4745-bcd2-6345f1ed266d
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 dev_langs:
 - CPP
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 273eee55db6ea9c8cbd57573da1ec82a804a21d2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 0ea7c0d4b9c1d8edea3c2d96f04114db47f3b0d7
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53940036"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55911005"
 ---
 # <a name="ca1014-mark-assemblies-with-clscompliantattribute"></a>CA1014: Marcar los ensamblados con CLSCompliantAttribute
 

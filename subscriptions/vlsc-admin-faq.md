@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 03/13/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Preguntas más frecuentes sobre la migración de la administración del Centro de servicios de licencias por volumen
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: e4bc2902c819f4e677127d4c2c857ed1fb5dc015
-ms.sourcegitcommit: 4667e6ad223642bc4ac525f57281482c9894daf4
+ms.openlocfilehash: 43b5ff7aeddf5ba1d938709e9f395f50395d0f3d
+ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36297550"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58897665"
 ---
 # <a name="visual-studio-subscriptions-administration-migration"></a>Migración de la administración de suscripciones de Visual Studio
 
@@ -38,7 +36,7 @@ Esto es una transición masiva y se llevará a cabo en fases hasta que todos los
 No es necesario que su organización se suscriba a Azure AD, pero puede hacerlo en cualquier momento. Si decide incorporarse a Azure AD, puede hacerlo sin coste alguno mediante el nivel gratuito de Azure AD. Con Azure Active Directory, va a proteger a su organización con mayor seguridad, control y fiabilidad a largo plazo. Sin embargo, si no está listo para Azure AD, podrá seguir usando sus cuentas de Microsoft (MSA), tal como hace hoy en día.
 
 ### <a name="how-do-i-know-when-my-organization-will-be-migrated"></a>¿Cómo puedo saber cuándo habrá migrado mi organización?
-Los contactos principales y los encargados de los avisos recibirán un correo electrónico nuestro para invitarlos a completar el proceso de incorporación una semana antes de que su organización migre. Los administradores de suscripciones también recibirán un correo electrónico para informarlos de que nos hemos puesto en contacto con los contactos principales y los encargados de los avisos y de que hemos proporcionado información sobre cómo ayudar a garantizar una incorporación correcta. Obtenga información sobre cómo [buscar los contactos principales y los encargados de los avisos de su organización](#How-do-I-find-out-who-my-Primary-or-Notices-Contact-is?).
+Los contactos principales y los encargados de los avisos recibirán un correo electrónico nuestro para invitarlos a completar el proceso de incorporación una semana antes de que su organización migre. Los administradores de suscripciones también recibirán un correo electrónico para informarlos de que nos hemos puesto en contacto con los contactos principales y los encargados de los avisos y de que hemos proporcionado información sobre cómo ayudar a garantizar una incorporación correcta. Obtenga información sobre cómo [buscar los contactos principales y los encargados de los avisos de su organización](#how-do-i-find-out-who-my-primary-or-notices-contact-is).
 
 ### <a name="is-onboarding-different-from-migration"></a>¿Es diferente la incorporación de la migración?
 Sí.  Hay dos fases en este proceso. Configurar (o incorporar) su organización antes de la migración garantiza que no se produzca ninguna interrupción en su trabajo como administrador. Una vez que migremos la información de su organización, podrá administrar las suscripciones de Visual Studio en el portal nuevo. Si los contactos principales o los encargados de los avisos no se incorporan antes de la migración, los administradores de suscripciones quedarán bloqueados y no podrán administrar las suscripciones hasta que complete el proceso de incorporación.
@@ -46,21 +44,21 @@ Sí.  Hay dos fases en este proceso. Configurar (o incorporar) su organización 
 ### <a name="what-is-the-onboarding-process"></a>¿Qué es el proceso de incorporación?
 Se envía un correo electrónico a los contactos principales y los encargados de los avisos para invitarlos a completar el proceso de incorporación.
 A continuación se ofrecen instrucciones sobre el proceso.
-1.  **Búsqueda de PCN e inicio de sesión:**
+1. **Búsqueda de PCN e inicio de sesión:**
 
-    a.  En el correo electrónico, los contactos principales y los encargados de los avisos encontrarán un vínculo único y los tres últimos dígitos de su número de cliente público (PCN).*
+    a. En el correo electrónico, los contactos principales y los encargados de los avisos encontrarán un vínculo único y los tres últimos dígitos de su número de cliente público (PCN).*
 
-    b.  Para obtener el PCN entero, el contacto principal deberá iniciar sesión en VLSC (a continuación, encontrará instrucciones para buscar el PCN).
+    b. Para obtener el PCN entero, el contacto principal deberá iniciar sesión en VLSC (a continuación, encontrará instrucciones para buscar el PCN).
 
-    c.  Tras obtener el PCN, tendrá que seleccionar su vínculo único. Seguidamente, se le pedirá que inicie sesión. Podrá iniciar sesión con una cuenta profesional o educativa, si la organización se encuentra en Azure AD, o una cuenta Microsoft (MSA), si la organización no está en Azure AD.
+    c. Tras obtener el PCN, tendrá que seleccionar su vínculo único. Seguidamente, se le pedirá que inicie sesión. Podrá iniciar sesión con una cuenta profesional o educativa, si la organización se encuentra en Azure AD, o una cuenta Microsoft (MSA), si la organización no está en Azure AD.
 
-    d.  Después, se le solicitará que especifique el PCN.
+    d. Después, se le solicitará que especifique el PCN.
 
-2.  **Configuración de los administradores:**
+2. **Configuración de los administradores:**
 
     Después de especificar el PCN, se le dirigirá a la página en que podrá agregar a superadministradores y administradores (conocidos anteriormente como administradores de suscripciones). Lo ideal es que esto se realice antes de la fecha de migración de su organización para que no tenga ninguna interrupción en la administración de sus suscripciones.
 
-3.  **Acceso al nuevo portal de administración de suscripciones:** cuando se haya migrado la organización, se enviarán correos electrónicos a los superadministradores y administradores para invitarlos a acceder al portal nuevo y comenzar a administrar suscripciones.
+3. **Acceso al nuevo portal de administración de suscripciones:** cuando se haya migrado la organización, se enviarán correos electrónicos a los superadministradores y administradores en los que se les invitará a acceder al nuevo portal para administrar las suscripciones.
 
 > [!NOTE]
 > Si los contactos principales o los encargados de los avisos reciben más de un correo electrónico, significa que tienen más de un PCN. Tendrán que completar el proceso mediante el vínculo único del PCN al que se haga referencia en cada correo electrónico.
@@ -77,10 +75,10 @@ Los contactos principales y los encargados de los avisos de su organización rec
 Continuará administrando suscripciones a través de VLSC hasta que reciba el correo electrónico de Suscripciones de Visual Studio para informarlo de que su organización ha migrado y está lista para que se administre en el portal nuevo.
 
 ### <a name="where-can-i-locate-my-organizations-public-customer-number-pcn-or-authorization-number"></a>¿Dónde puedo encontrar el número de cliente público (PCN) o el número de autorización de mi organización?
-Inicie sesión en el [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) y siga la ruta de acceso siguiente: **Suscripciones** > **Suscripciones de Visual Studio**. El PCN se encuentra debajo de **Contrato / Resultados del número de cliente público**. En este [artículo de ayuda](find-pcn.md), puede obtener instrucciones paso a paso sobre cómo localizar el PCN.
+Inicie sesión en [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) y desplácese a la ruta de acceso siguiente: **Suscripciones** > **Suscripciones de Visual Studio**. El PCN se encuentra debajo de **Contrato / Resultados del número de cliente público**. En este [artículo de ayuda](find-pcn.md), puede obtener instrucciones paso a paso sobre cómo localizar el PCN.
 
 ### <a name="how-do-i-find-out-who-my-primary-or-notices-contact-is"></a>¿Cómo averiguo quién es mi contacto principal o el encargado de los avisos?
-Inicie sesión en el [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) y siga la ruta de acceso siguiente: **Licencias > Resumen de la relación** Seleccione su **id. de licencia > Contactos**. En este [artículo de ayuda](find-primary-contact.md), puede obtener instrucciones paso a paso sobre cómo buscar el contacto principal o el encargado de los avisos.
+Inicie sesión en [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) y desplácese a la ruta de acceso siguiente: **Licencias > Resumen de relaciones**. Seleccione su **Id. de licencia > Contactos**. En este [artículo de ayuda](find-primary-contact.md), puede obtener instrucciones paso a paso sobre cómo buscar el contacto principal o el encargado de los avisos.
 
 ### <a name="what-if-my-primary-or-notices-contact-is-gone-no-longer-with-the-company-or-not-available-to-complete-onboarding"></a>¿Qué ocurre si mi contacto principal o el encargado de los avisos ya no está, ya no forma parte de la empresa o no está disponible para completar la incorporación?
 Deberá [ponerse en contacto con el Equipo de Soporte Técnico](https://visualstudio.microsoft.com/subscriptions/support/#talktous) y proporcionar el correo electrónico que utilizó en el VLSC para administrar suscripciones. Una vez comprobado, el Equipo de Soporte Técnico podrá ayudarlo en el proceso de incorporación.

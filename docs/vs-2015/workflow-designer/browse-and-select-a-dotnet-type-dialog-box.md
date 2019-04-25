@@ -1,11 +1,8 @@
 ---
 title: Examinar y seleccionar un cuadro de diálogo de tipo de .NET | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - TypeBrowser.UI
@@ -14,24 +11,24 @@ ms.assetid: 864b60b6-a070-4e5c-aa5b-a25341b57ea6
 caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 1bff5fccfbd4998e477043188c955e3446a45d69
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: b4c02c7dbce09383b5fc3cb1fd7f5eec6e9116b1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49192541"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079842"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>Examinar y seleccionar un cuadro de diálogo de tipo .NET
 En el **propiedades** diseñadores como el Diseñador de variables, cuando se selecciona, los cuadros de diálogo o ventana **buscar tipos...** en una lista de tipos de datos, es el **examinar y seleccionar un tipo .NET** cuadro de diálogo (denominada en forma abreviada como "tipo de explorador"). En este cuadro de diálogo, puede escoger un tipo en una vista de árbol de ensamblados y proyectos.  
   
  Este cuadro de diálogo se emplea en varios escenarios de usuario, lo cual incluye lo siguiente:  
   
--   Cuando se establece el tipo de una variable o argumento.  
+- Cuando se establece el tipo de una variable o argumento.  
   
--   Cuando se selecciona un tipo para una actividad genérica.  
+- Cuando se selecciona un tipo para una actividad genérica.  
   
--   Cuando se agrega una instrucción catch en la actividad <xref:System.Activities.Statements.TryCatch>.  
+- Cuando se agrega una instrucción catch en la actividad <xref:System.Activities.Statements.TryCatch>.  
   
 > [!NOTE]
 >  El explorador de tipo puede mostrar tipos de matrices escalonadas Visual Basic de matriz, pero no tipos de matrices multidimensionales. Consulte [matrices escalonadas](http://go.microsoft.com/fwlink/?LinkId=195226) y [matrices multidimensionales](http://go.microsoft.com/fwlink/?LinkId=195227) para obtener más información.  
@@ -40,19 +37,19 @@ En el **propiedades** diseñadores como el Diseñador de variables, cuando se se
   
 #### <a name="to-select-a-value-or-reference-type-from-the-type-browser"></a>Para seleccionar un tipo de valor y de referencia en el explorador de tipo  
   
-1.  En el **nombre de tipo** , escriba el nombre del tipo que desea usar.  
+1. En el **nombre de tipo** , escriba el nombre del tipo que desea usar.  
   
-2.  Realice una de las siguientes acciones:  
+2. Realice una de las siguientes acciones:  
   
-    -   Cuando aparezca el nombre del tipo que se va a usar en el árbol en el **nombre de tipo** cuadro, haga doble clic en el tipo para seleccionarlo.  
+    - Cuando aparezca el nombre del tipo que se va a usar en el árbol en el **nombre de tipo** cuadro, haga doble clic en el tipo para seleccionarlo.  
   
-    -   Escriba los caracteres suficientes en el **nombre de tipo** cuadro para identificar de forma única el tipo que desea usar y, a continuación, presione ENTRAR para seleccionar el tipo  
+    - Escriba los caracteres suficientes en el **nombre de tipo** cuadro para identificar de forma única el tipo que desea usar y, a continuación, presione ENTRAR para seleccionar el tipo  
   
 #### <a name="to-select-a-generic-type-from-the-type-browser"></a>Para seleccionar un tipo genérico en el explorador de tipo  
   
-1.  En el **nombre de tipo** cuadro, escriba el nombre del tipo que desea usar.  
+1. En el **nombre de tipo** cuadro, escriba el nombre del tipo que desea usar.  
   
-2.  Cuando aparezca el nombre del tipo que se va a usar en el árbol en el **nombre de tipo** cuadro, haga clic en el tipo para seleccionarla y hacer que los cuadros de lista desplegable aparezca.  
+2. Cuando aparezca el nombre del tipo que se va a usar en el árbol en el **nombre de tipo** cuadro, haga clic en el tipo para seleccionarla y hacer que los cuadros de lista desplegable aparezca.  
   
      Seleccione el tipo que desea usar para cerrar el genérico en los cuadros de lista desplegable y, a continuación, haga clic en **Aceptar**.  
   
@@ -66,9 +63,9 @@ En el **propiedades** diseñadores como el Diseñador de variables, cuando se se
   
  Por ejemplo:  
   
-1.  Escriba **operación** coincide con <xref:System.OperationCanceledException> pero no <xref:System.InvalidOperationException>. Para buscar coincidencias con <xref:System.InvalidOperationException>, comience a escribir System.I o Invalid.  
+1. Escriba **operación** coincide con <xref:System.OperationCanceledException> pero no <xref:System.InvalidOperationException>. Para buscar coincidencias con <xref:System.InvalidOperationException>, comience a escribir System.I o Invalid.  
   
-2.  Escriba **genérico** coincide con <xref:System.GenericUriParser> pero no con los tipos en el <xref:System.Collections.Generic> espacio de nombres. Para buscar tipos en el espacio de nombres <xref:System.Collections.Generic>, escriba el nombre completo del espacio de nombres.  
+2. Escriba **genérico** coincide con <xref:System.GenericUriParser> pero no con los tipos en el <xref:System.Collections.Generic> espacio de nombres. Para buscar tipos en el espacio de nombres <xref:System.Collections.Generic>, escriba el nombre completo del espacio de nombres.  
   
 ## <a name="selecting-a-service-contract-using-the-type-browser-dialog"></a>Seleccionar un contrato de servicio usando el cuadro de diálogo de explorador de tipo  
  Al seleccionar un tipo de contrato de servicio, el explorador de tipo muestra únicamente los tipos que tienen el atributo <xref:System.ServiceModel.ServiceContractAttribute>.  

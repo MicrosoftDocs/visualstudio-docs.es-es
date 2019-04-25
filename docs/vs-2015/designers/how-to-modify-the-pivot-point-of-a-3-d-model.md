@@ -1,34 +1,29 @@
 ---
-title: 'Cómo: Modificar el punto de pivote de un modelo 3D | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Modificar el punto de pivote de un modelo 3D | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: c20b4ec8-29f5-4ca5-bc39-d4548ca6f573
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: beba04bab85b3fd09aafb195039ad6e34106e293
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: f63c271e096793a03616356b9eb7229e4f823fbd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49850534"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071790"
 ---
-# <a name="how-to-modify-the-pivot-point-of-a-3-d-model"></a>Cómo: Modificar el punto de pivote de un modelo 3D
+# <a name="how-to-modify-the-pivot-point-of-a-3-d-model"></a>Procedimiento Modificar el punto de pivote de un modelo 3D
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 En este documento se muestra cómo usar el Editor de modelos para modificar el *punto de pivote* de un modelo 3D. El punto de pivote es el punto en el espacio que define el centro matemático del objeto para la rotación y la escala.  
   
  Este documento muestra esta actividad:  
   
--   Modificar el punto de pivote de un objeto  
+- Modificar el punto de pivote de un objeto  
   
 ## <a name="modifying-the-pivot-point-of-a-3-d-model"></a>Modificar el punto de pivote de un modelo 3D  
  Puede volver a definir el origen de un modelo 3D modificando el punto de pivote.  
@@ -57,6 +52,3 @@ En este documento se muestra cómo usar el Editor de modelos para modificar el *
 ## <a name="see-also"></a>Vea también  
  [Cómo: Crear un modelo 3D básico](../designers/how-to-create-a-basic-3-d-model.md)   
  [Editor de modelos](../designers/model-editor.md)
-
-
-

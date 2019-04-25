@@ -1,32 +1,26 @@
 ---
 title: Compilaciones incrementales | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - msbuild, incremental builds
 ms.assetid: 325e28c7-4838-4e3f-b672-4586adc7500c
 caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 187761ce813081877434c2a7c3a570059bc556ee
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: eb11467d8d59e7af11741d7719da2858ac1a784c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812327"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654040"
 ---
 # <a name="incremental-builds"></a>Compilaciones incrementales
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Las compilaciones incrementales son compilaciones que se optimizan para que no se ejecuten los destinos que tienen archivos de salida que están actualizados con respecto a sus archivos de entrada correspondientes. Un elemento de destino puede tener un atributo `Inputs`, que indica qué elementos el destino espera como entrada, y un atributo `Outputs`, que indica qué elementos genera como salida. MSBuild intenta buscar una asignación 1 a 1 entre los valores de estos atributos. Si existe una asignación 1 a 1, MSBuild compara la marca de tiempo de cada elemento de entrada con la marca de tiempo de su elemento de salida correspondiente. Los archivos de salida que no tienen ninguna asignación 1 a 1 se comparan con todos los archivos de entrada. Un elemento se considera actualizado si su archivo de salida tiene una antigüedad igual o inferior a la de su archivo o archivos de entrada.  
   
  Si todos los elementos de salida están actualizados, MSBuild omite el destino. Esta *compilación incremental* del destino puede mejorar significativamente la velocidad de compilación. Si solo están actualizados algunos archivos, MSBuild ejecuta el destino pero omite los elementos actualizados, actualizando de ese modo todos los elementos. Esto se conoce como *compilación incremental parcial*.  
@@ -89,6 +83,3 @@ Las compilaciones incrementales son compilaciones que se optimizan para que no s
   
 ## <a name="see-also"></a>Vea también  
  [Destinos](../msbuild/msbuild-targets.md)
-
-
-

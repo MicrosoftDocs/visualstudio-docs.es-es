@@ -1,7 +1,6 @@
 ---
 title: -Project (devenv.exe)
 ms.date: 12/10/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 helpviewer_keywords:
 - /Project Devenv switch
@@ -14,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 8b07859c-3439-436d-9b9a-a8ee744eee30
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1706d8dade02bd7f247d7f2ce163955615a3b0f3
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: 5fe7ec9fe8734d17868bee6a108d447729e4167f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54269191"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55970704"
 ---
 # <a name="project-devenvexe"></a>/Project (devenv.exe)
 

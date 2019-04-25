@@ -1,14 +1,9 @@
 ---
 title: Depuración de aplicaciones de ASP.NET y AJAX | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -23,22 +18,22 @@ ms.assetid: 9d531913-541b-47b8-864d-138021fca0c6
 caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d3a600059f29d7e0034e4e64239798c32d721a1f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2547c9edb501ac8536b06548ab23a5262515ca78
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51785936"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116789"
 ---
 # <a name="debugging-aspnet-and-ajax-applications"></a>Depurar aplicaciones de ASP.NET y AJAX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Depurar las aplicaciones web [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] es similar a depurar un Windows Form o cualquier otra aplicación para Windows porque ambos tipos de aplicación implican controles y eventos. No obstante, hay también diferencias básicas entre ambos tipos de aplicación:  
   
--   El seguimiento del estado es más complejo en una aplicación Web.  
+- El seguimiento del estado es más complejo en una aplicación Web.  
   
--   En una aplicación para Windows, el código que se va a depurar está principalmente en una única ubicación; en una aplicación web, el código puede estar en el cliente y en el servidor. Mientras que el código [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] se encuentra por completo en el servidor, también podría haber código de JavaScript o de [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] en el cliente.  
+- En una aplicación para Windows, el código que se va a depurar está principalmente en una única ubicación; en una aplicación web, el código puede estar en el cliente y en el servidor. Mientras que el código [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] se encuentra por completo en el servidor, también podría haber código de JavaScript o de [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] en el cliente.  
   
 ## <a name="in-this-section"></a>En esta sección  
  [Preparar la depuración en ASP.NET](../debugger/preparing-to-debug-aspnet.md)  
@@ -62,6 +57,3 @@ Depurar las aplicaciones web [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] es
  [Depurar script y aplicaciones web](../debugger/debugging-web-applications-and-script.md)   
  [Preparación y configuración de la depuración](../debugger/debugger-settings-and-preparation.md)   
  [Conceptos básicos del depurador](../debugger/debugger-basics.md)
-
-
-

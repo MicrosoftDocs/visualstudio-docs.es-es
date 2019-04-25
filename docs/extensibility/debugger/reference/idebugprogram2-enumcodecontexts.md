@@ -1,7 +1,7 @@
 ---
 title: IDebugProgram2::EnumCodeContexts | Documentos de Microsoft
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - IDebugProgram2::EnumCodeContexts
 helpviewer_keywords:
@@ -9,49 +9,51 @@ helpviewer_keywords:
 ms.assetid: 478e06a2-07bb-4841-8887-deab0f42ebd0
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ccdbc4fa46e88278e3d3db6e65bff70d7c31c1c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 77d92a65b77cbec94a6c74852393627af6763bad
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53841085"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56685396"
 ---
 # <a name="idebugprogram2enumcodecontexts"></a>IDebugProgram2::EnumCodeContexts
-Recupera una lista de los contextos de código para una posición determinada en un archivo de origen.  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```cpp  
-HRESULT EnumCodeContexts(   
-   IDebugDocumentPosition2*  pDocPos,  
-   IEnumDebugCodeContexts2** ppEnum  
-);  
-```  
-  
-```csharp  
-int EnumCodeContexts(   
-   IDebugDocumentPosition2     pDocPos,  
-   out IEnumDebugCodeContexts2 ppEnum  
-);  
-```  
-  
-#### <a name="parameters"></a>Parámetros  
- `pDocPos`  
- [in] Un [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md) objeto que representa una posición abstracta en un archivo de origen que se sabe que el IDE.  
-  
- `ppEnum`  
- [out] Devuelve un [IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md) objeto que contiene una lista de los contextos de código.  
-  
-## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
-  
-## <a name="remarks"></a>Comentarios  
- Este método permite la depuración de la sesión manager (SDM) o el IDE para asignar una posición de archivo de origen en una posición de código. Más de un contexto de código se devuelve si el origen genera varios bloques de código (por ejemplo, las plantillas de C++).  
-  
-## <a name="see-also"></a>Vea también  
- [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   
- [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)   
- [IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md)
+Recupera una lista de los contextos de código para una posición determinada en un archivo de origen.
+
+## <a name="syntax"></a>Sintaxis
+
+```cpp
+HRESULT EnumCodeContexts( 
+   IDebugDocumentPosition2*  pDocPos,
+   IEnumDebugCodeContexts2** ppEnum
+);
+```
+
+```csharp
+int EnumCodeContexts( 
+   IDebugDocumentPosition2     pDocPos,
+   out IEnumDebugCodeContexts2 ppEnum
+);
+```
+
+#### <a name="parameters"></a>Parámetros
+ `pDocPos`
+
+ [in] Un [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md) objeto que representa una posición abstracta en un archivo de origen que se sabe que el IDE.
+
+ `ppEnum`
+
+ [out] Devuelve un [IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md) objeto que contiene una lista de los contextos de código.
+
+## <a name="return-value"></a>Valor devuelto
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+
+## <a name="remarks"></a>Comentarios
+ Este método permite la depuración de la sesión manager (SDM) o el IDE para asignar una posición de archivo de origen en una posición de código. Más de un contexto de código se devuelve si el origen genera varios bloques de código (por ejemplo, las plantillas de C++).
+
+## <a name="see-also"></a>Vea también
+- [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
+- [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)
+- [IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md)

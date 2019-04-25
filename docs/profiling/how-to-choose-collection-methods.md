@@ -8,15 +8,15 @@ helpviewer_keywords:
 - performance collection methods
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8502f37e02fb668905dec2b548aba9229e8e7051
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 344af8760dad3c66c32590b7d2d665bef833e583
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53833282"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56638522"
 ---
 # <a name="how-to-choose-collection-methods"></a>Procedimiento Elegir métodos de recopilación
 
@@ -91,6 +91,6 @@ Puede utilizar propiedad de la sesión de rendimiento **Método** para especific
 
 ## <a name="see-also"></a>Vea también
 
-[Configuración de sesiones de rendimiento](../profiling/configuring-performance-sessions.md)  
-[Introducción a los valores de datos de muestreo](../profiling/understanding-sampling-data-values.md)  
+[Configurar sesiones de rendimiento](../profiling/configuring-performance-sessions.md)
+[Introducción a los valores de datos de muestreo](../profiling/understanding-sampling-data-values.md)
 [Propiedades de las sesiones de rendimiento](../profiling/performance-session-properties.md)

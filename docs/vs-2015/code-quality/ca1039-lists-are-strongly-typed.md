@@ -1,14 +1,9 @@
 ---
 title: 'CA1039: Las listas están fuertemente tipadas | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1039
 - ListsAreStronglyTyped
@@ -20,12 +15,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 681c1ada7600743c0a548f8a774dada6863f7d0d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 3fb1a6255539ded989c5ad9638fc961d606a19f7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49853420"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097120"
 ---
 # <a name="ca1039-lists-are-strongly-typed"></a>CA1039: Las listas están fuertemente tipadas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,17 +35,17 @@ ms.locfileid: "49853420"
 ## <a name="cause"></a>Motivo
  Tipo de público o protegido implementa <xref:System.Collections.IList?displayProperty=fullName> pero no proporciona un método fuertemente tipado para uno o varios de los siguientes:
 
--   IList.Item
+- IList.Item
 
--   IList.Add
+- IList.Add
 
--   IList.Contains
+- IList.Contains
 
--   IList.IndexOf
+- IList.IndexOf
 
--   IList.Insert
+- IList.Insert
 
--   IList.Remove
+- IList.Remove
 
 ## <a name="rule-description"></a>Descripción de la regla
  Esta regla requiere <xref:System.Collections.IList> miembros de las implementaciones proporcionen fuertemente tipados para que los usuarios no deben convertir los argumentos en el <xref:System.Object?displayProperty=fullName> escriba cuando utilicen la funcionalidad proporcionada por la interfaz. El <xref:System.Collections.IList> interfaz se implementa mediante colecciones de objetos que se pueden acceder por índice. Esta regla supone que el tipo que implementa <xref:System.Collections.IList> hace esto para administrar una colección de instancias de un tipo que es más fuerte que <xref:System.Object>.
@@ -80,6 +75,3 @@ ms.locfileid: "49853420"
  <xref:System.Collections.IEnumerable?displayProperty=fullName>
  <xref:System.Collections.IList?displayProperty=fullName>
  <xref:System.Object?displayProperty=fullName>
-
-
-

@@ -1,7 +1,6 @@
 ---
-title: Procedimiento Crear asociaciones entre tipos (Diseñador de clases)
+title: Filtrar Crear asociaciones entre tipos (Diseñador de clases)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.associationline
@@ -14,17 +13,17 @@ helpviewer_keywords:
 ms.assetid: adccb9c8-2f8a-4086-9fa9-f70f99fb6e00
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 77f957e112835c138a84accbdc7070f1217fc963
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 723d1565dae55852829daf0038201d0c8685b3ce
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53916606"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55927050"
 ---
-# <a name="how-to-create-associations-between-types-in-class-designer"></a>Procedimiento Crear asociaciones entre tipos en Diseñador de clases
+# <a name="how-to-create-associations-between-types-in-class-designer"></a>Filtrar Crear asociaciones entre tipos en Diseñador de clases
 
 En el **Diseñador de clases**, las líneas de asociación muestran la forma en que se relacionan las clases de un diagrama. Una línea de asociación representa una clase que es el tipo de una propiedad o un campo de otra clase del proyecto. Las líneas de asociación se utilizan generalmente para ilustrar las relaciones más importantes entre las clases del proyecto.
 

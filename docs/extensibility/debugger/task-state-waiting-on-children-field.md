@@ -7,33 +7,33 @@ helpviewer_keywords:
 ms.assetid: 6f26b098-84ad-4f6e-ba27-6136581ba630
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a12652ccd999e7ec1c8a3e87fe1af12c9d91201
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: fc3d8bc5d7a4b859ef8ff57c8661a05d7cf48901
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53924499"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56702712"
 ---
 # <a name="taskstatewaitingonchildren-field"></a>TASK_STATE_WAITING_ON_CHILDREN (campo)
-La tarea ha terminado de ejecutar a su delegado e implícita está esperando completar las tareas secundarias asociadas.  
-  
- **Espacio de nombres:** <xref:System.Threading.Tasks?displayProperty=fullName>  
-  
- **Ensamblado:** mscorlib (en *mscorlib.dll*)  
-  
- Dado que no se puede obtener acceso a este miembro interno de .NET Framework, la sintaxis siguiente se proporciona el lenguaje intermedio en común (CIL).  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```csharp  
-.field static assembly literal int32 TASK_STATE_WAITING_ON_CHILDREN = int32(0x01000000)  
-```  
-  
-## <a name="remarks"></a>Comentarios  
- Si el [m_stateFlags](../../extensibility/debugger/m-stateflags-field.md) campo contiene este valor, el <xref:System.Threading.Tasks.Task.Status%2A> propiedad devuelve <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName>.  
-  
-## <a name="see-also"></a>Vea también  
- [Clase de tarea: miembros internos](../../extensibility/debugger/task-class-internal-members.md)
+La tarea ha terminado de ejecutar a su delegado e implícita está esperando completar las tareas secundarias asociadas.
+
+ **Espacio de nombres:** <xref:System.Threading.Tasks?displayProperty=fullName>
+
+ **Ensamblado:** mscorlib (en *mscorlib.dll*)
+
+ Dado que no se puede obtener acceso a este miembro interno de .NET Framework, la sintaxis siguiente se proporciona el lenguaje intermedio en común (CIL).
+
+## <a name="syntax"></a>Sintaxis
+
+```csharp
+.field static assembly literal int32 TASK_STATE_WAITING_ON_CHILDREN = int32(0x01000000)
+```
+
+## <a name="remarks"></a>Comentarios
+ Si el [m_stateFlags](../../extensibility/debugger/m-stateflags-field.md) campo contiene este valor, el <xref:System.Threading.Tasks.Task.Status%2A> propiedad devuelve <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName>.
+
+## <a name="see-also"></a>Vea también
+- [Clase de tarea: miembros internos](../../extensibility/debugger/task-class-internal-members.md)

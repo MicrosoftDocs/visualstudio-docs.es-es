@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 02/12/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Obtenga información sobre las ventajas incluidas en su suscripción de Visual Studio
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: a3fb7fd86a5a875c16072792d9d82737b5f19160
-ms.sourcegitcommit: 1ab675a872848c81a44d6b4bd3a49958fe673c56
+ms.openlocfilehash: c7616bc468aad5b4753fb3a05652f976bae6299b
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44282227"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56839713"
 ---
 # <a name="benefits-included-in-your-visual-studio-subscription"></a>Ventajas incluidas en su suscripción de Visual Studio
 
@@ -45,4 +43,3 @@ Como suscriptor de Visual Studio, también tendrá acceso a diversos tipos de so
 > La suscripción también puede incluir acceso a descargas de software.  Para más información sobre las descargas, así como las descargas que se incluyen con su suscripción, visite [https://my.visualstudio.com/downloads](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs).
 
 Para más información sobre las ventajas que se incluyen en su suscripción, consulte la [página de precios de Visual Studio](https://visualstudio.microsoft.com/vs/pricing/).  La información sobre las ventajas específicas, incluido qué suscripciones las incluyen, está disponible en el tema **Uso de beneficios para los suscriptores** a continuación.
-

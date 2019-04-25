@@ -9,15 +9,15 @@ helpviewer_keywords:
 - Diagnostics Tools, CPU Usage
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 594c6660c306faef635d14f60f1d717a04678db5
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b21e9b1735f7d6e631d25cecb2923662625400c0
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53837399"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56634063"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet"></a>Inicio rápido: Analizar datos de uso de la CPU en Visual Studio (ASP.NET)
 
@@ -87,8 +87,8 @@ Para ejecutar las herramientas de generación de perfiles con el depurador se re
             {
                 m_totalIterations += iters;
             }
-            // we're just spinning here  
-            // and using Random to frustrate compiler optimizations  
+            // we're just spinning here
+            // and using Random to frustrate compiler optimizations
             for (var i = 0; i < iters; i++)
             {
                 result = rand.Next();
@@ -153,8 +153,8 @@ Para ejecutar las herramientas de generación de perfiles con el depurador se re
     }
     ```
 
-##  <a name="step-1-collect-profiling-data"></a>Paso 1: Recopilar datos de generación de perfiles 
-  
+##  <a name="step-1-collect-profiling-data"></a>Paso 1: Recopilar datos de generación de perfiles
+
 1.  En primer lugar, establezca un punto de interrupción en la aplicación en esta línea de código en el constructor `Simple`:
 
     `for (int i = 0; i < 200; i++)`
@@ -167,7 +167,7 @@ Para ejecutar las herramientas de generación de perfiles con el depurador se re
 
     > [!TIP]
     > Al establecer dos puntos de interrupción, puede limitar la recopilación de datos a las partes del código que quiere analizar.
-  
+
 1.  La ventana **Herramientas de diagnóstico** ya es visible, a menos que se haya desactivado. Para que la ventana se vuelva a mostrar, haga clic en **Depurar** > **Windows** > **Mostrar Herramientas de diagnóstico**.
 
 1.  Haga clic en **Depurar** > **Iniciar depuración** (o en **Inicio** en la barra de herramientas, o presione **F5**).
@@ -189,7 +189,7 @@ Para ejecutar las herramientas de generación de perfiles con el depurador se re
      Ahora tiene los datos de rendimiento de la aplicación específicamente para la región de código que se ejecuta entre los dos puntos de interrupción.
 
      El generador de perfiles empieza a preparar los datos de subproceso. Espere a que finalice.
-  
+
      La herramienta Uso de CPU muestra el informe en la pestaña **Uso de CPU**.
 
      En este punto, puede empezar a analizar los datos.
@@ -207,7 +207,7 @@ Se recomienda que, para empezar a analizar los datos, examine la lista de funcio
 
 2. En la lista de funciones, haga doble clic en la función `MyProfilingApp_MVC.Models.ServerClass::GetNumber`.
 
-    Al hacer doble clic en la función, se abre la vista **Llamador y destinatario** en el panel de la izquierda. 
+    Al hacer doble clic en la función, se abre la vista **Llamador y destinatario** en el panel de la izquierda.
 
     ![Vista Llamador de herramientas de diagnóstico](../profiling/media/quickstart-cpu-usage-caller-callee-aspnet.png)
 
@@ -226,7 +226,7 @@ Se recomienda que, para empezar a analizar los datos, examine la lista de funcio
 - [Analizar el uso de la CPU](../profiling/cpu-usage.md) para obtener información más detallada sobre la herramienta de uso de CPU.
 - Analizar el uso de la CPU sin un depurador adjunto o tomando una aplicación en ejecución como destino. Para más información, vea [Recopilar datos de generación de perfiles sin depurar](../profiling/running-profiling-tools-with-or-without-the-debugger.md#collect-profiling-data-without-debugging) en [Ejecutar herramientas de generación de perfiles con o sin el depurador](../profiling/running-profiling-tools-with-or-without-the-debugger.md).
 
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Vea también
 
- [Generación de perfiles en Visual Studio](../profiling/index.md)  
- [Primer vistazo a la generación de perfiles](../profiling/profiling-feature-tour.md)
+- [Generación de perfiles en Visual Studio](../profiling/index.md)
+- [Primer vistazo a la generación de perfiles](../profiling/profiling-feature-tour.md)

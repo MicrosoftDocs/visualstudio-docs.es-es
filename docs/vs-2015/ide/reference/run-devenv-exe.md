@@ -1,14 +1,9 @@
 ---
 title: -Run (devenv.exe) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 helpviewer_keywords:
 - /run Devenv
 - run Devenv switch
@@ -20,18 +15,17 @@ ms.assetid: b1f22f9d-39a5-4918-8a2a-4b5c1e872665
 caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 9fb26412d6abb2c438088bf42bef620d5c8bb2d4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 68e5dcc5ff2e78fe87bbaad639c93f5532ea74fe
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49257551"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065680"
 ---
 # <a name="run-devenvexe"></a>/Run (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Compila y ejecuta el proyecto o la solución especificados.  
   
 ## <a name="syntax"></a>Sintaxis  
@@ -42,17 +36,17 @@ devenv {/run|/r} {SolutionName|ProjectName}
   
 ## <a name="arguments"></a>Argumentos  
  `SolutionName`  
- Requerido. Ruta de acceso completa y nombre de un archivo de solución.  
+ Obligatorio. Ruta de acceso completa y nombre de un archivo de solución.  
   
  `ProjectName`  
- Requerido. Ruta de acceso completa y nombre de un archivo de proyecto.  
+ Obligatorio. Ruta de acceso completa y nombre de un archivo de proyecto.  
   
 ## <a name="remarks"></a>Comentarios  
  Compila y ejecuta el proyecto o solución especificados según los ajustes indicados para la configuración de soluciones activas. Este modificador inicia el entorno de desarrollo integrado (IDE) y lo deja activo después de que el proyecto o la solución hayan acabado de ejecutarse.  
   
--   Escriba las cadenas que incluyen espacios entre comillas dobles.  
+- Escriba las cadenas que incluyen espacios entre comillas dobles.  
   
--   Se puede mostrar información de resumen, incluidos los errores, en la ventana **Comandos** o en cualquier archivo de registro especificado con el modificador `/out`.  
+- Se puede mostrar información de resumen, incluidos los errores, en la ventana **Comandos** o en cualquier archivo de registro especificado con el modificador `/out`.  
   
 ## <a name="example"></a>Ejemplo  
  En este ejemplo se ejecuta la solución `MySolution` con la configuración de implementación activa.  
@@ -67,6 +61,3 @@ devenv /run "C:\Documents and Settings\someuser\My Documents\Visual Studio\Proje
  [/Build (devenv.exe)](../../ide/reference/build-devenv-exe.md)   
  [/Rebuild (devenv.exe)](../../ide/reference/rebuild-devenv-exe.md)   
  [/Out (devenv.exe)](../../ide/reference/out-devenv-exe.md)
-
-
-

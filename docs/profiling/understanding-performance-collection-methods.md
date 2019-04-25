@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Profiling Tools, profiling methods
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bde4e313b9baf4975f5bff247fac248f3a090ea
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 018c71be69efa7b68f08cb0d320633b82be9832d
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53825794"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56635090"
 ---
 # <a name="understand-performance-collection-methods"></a>Descripción de los métodos de recopilación de rendimiento
 
@@ -131,5 +131,5 @@ Datos de interacción de capas recopilados por las Herramientas de generación d
 
 ## <a name="see-also"></a>Vea también
 
-[Cómo: Recopilar datos de rendimiento de un sitio web](../profiling/how-to-collect-performance-data-for-a-web-site.md)  
-[Guía básica para la generación de perfiles de rendimiento](../profiling/beginners-guide-to-performance-profiling.md)
+[Cómo: Recopilar datos de rendimiento de un sitio web](../profiling/how-to-collect-performance-data-for-a-web-site.md)
+[Medición del rendimiento de aplicaciones mediante el análisis de uso de CPU](../profiling/beginners-guide-to-performance-profiling.md)

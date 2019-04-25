@@ -1,76 +1,274 @@
 ---
-title: Métodos abreviados de teclado comunes del editor de código fuente
-description: En este artículo se describen algunos métodos abreviados de teclado comunes en el editor de código fuente de Visual Studio para Mac
-author: conceptdev
-ms.author: crdun
-ms.date: 11/06/2018
+title: Métodos abreviados de teclado predeterminados de Visual Studio para Mac
+description: En este artículo se muestran los métodos abreviados de teclado predeterminados de Visual Studio para Mac
+ms.date: 03/14/2019
+author: bytesguy
+ms.author: adhartle
 ms.assetid: 48E06A61-7294-4EC8-A09D-1763C32AD910
-ms.openlocfilehash: 2ac2a98223e86a564ff6ce733e11767a918bc55b
-ms.sourcegitcommit: 54c65f81a138fc1e8ff1826f7bd9dcec710618cc
+ms.openlocfilehash: a19c63b2ce32095a3af4aa4586b8ab0d604a14dc
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51948795"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58157859"
 ---
-# <a name="common-keyboard-shortcuts-in-visual-studio-for-mac"></a>Métodos abreviados de teclado comunes de Visual Studio para Mac
+# <a name="default-keyboard-shortcuts-in-visual-studio-for-mac"></a>Métodos abreviados de teclado predeterminados de Visual Studio para Mac
 
-## <a name="show-code-generation-window"></a>Ventana Mostrar preferencias de generación de código
+Para información sobre la accesibilidad de teclado, consulte [Uso de la navegación mediante el teclado](~/accessibility.md#how-to-use-keyboard-navigation).
 
-Este comando genera código de forma contextual:
+Puede acceder a una variedad de comandos de Visual Studio para Mac si usa el método abreviado de teclado correspondiente. En este documento se muestran los métodos abreviados predeterminados para el esquema de enlace de teclado de **Visual Studio**. Para más información sobre cómo cambiar el esquema de enlace de teclado, consulte [Personalización del IDE](~/customizing-the-ide.md#key-bindings). También puede personalizar los métodos abreviados de un comando con el elemento de menú **Visual Studio para Mac** > **Preferencias** y eligiendo **Entorno** > **Enlaces de teclado** en la ventana **Preferencias**.
 
-`⌘ + 1`
+> [!TIP]
+> Los métodos abreviados de teclado que se muestran en este documento y las preferencias de enlaces de teclado de Visual Studio para Mac se presentan con los símbolos comúnmente usados en macOS. Si no está seguro de lo que significa un símbolo, revise la [tabla de búsqueda de los símbolos de teclas de macOS](#macos-key-symbols-lookup).
 
-![Aparece un panel con opciones para generar código relacionado con el símbolo seleccionado](media/keyboard-shortcuts-image8.png)
+## <a name="code-navigation"></a>Navegación por el código
 
-## <a name="search-files-symbols-and-commands"></a>Buscar en archivos, símbolos y comandos
+|Comandos|Métodos abreviados de teclado|
+|-|-|
+|Buscar referencias|**⇧⌘R**, **F12**|
+|Ir a declaración|**⌘D**, **F12**|
+|Error siguiente|**⌥⇧⇟**, **⇧⌘F12**|
+|Siguiente problema del archivo|**⌥⇟**|
+|Error anterior|**⌥⇧⇞**|
+|Problema anterior del archivo|**⌥⇞**|
 
-`control + .`
+## <a name="debug"></a>Depuración
 
-## <a name="autocomplete"></a>Autocompletar
+|Comandos|Métodos abreviados de teclado|
+|-|-|
+|Habilitar o deshabilitar punto de interrupción|**⌥⌘/**, **⌘F9**|
+|Pausar|**⌥⌘P**, **⌥⌘L5**|
+|Quitar|**⇧⌘F9**|
+|Ejecutar hasta el cursor|**⌘F10**|
+|Establecer instrucción siguiente|**⇧⌘F10**|
+|Mostrar la instrucción siguiente|**⌥\***|
+|Paso a paso por instrucciones|**⇧⌘I**, **⌘F11**|
+|Paso a paso para salir|**⇧⌘U**, **⇧⌘F11**|
+|Paso a paso por procedimientos|**⇧⌘O**, **F10**|
+|Alternar punto de interrupción|**⌘\\**, **F9**|
+|Ver puntos de interrupción|**⌥⌘B**|
 
-`control + /`
+## <a name="designer"></a>Diseñador
 
-## <a name="quick-fixes-and-actions"></a>Correcciones y acciones rápidas
+|Comandos|Métodos abreviados de teclado|
+|-|-|
+|Cambiar entre archivos relacionados|**⌃⌘↑**|
 
-Muestra acciones de contexto de [refactorización](refactoring.md):
+## <a name="edit"></a>Editar
 
-`option + enter`
+|Comandos|Métodos abreviados de teclado|
+|-|-|
+|Modo de edición de restricciones|**⌘E**|
+|Copiar|**⌘C**|
+|Cut|**⌘X**|
+|Eliminar|**⌘⌫**|
+|Dar formato al documento|**⌃I**|
+|Aplicar sangría a la selección|**⌘]**|
+|Paste|**⌘V**|
+|Preferencias|**⌘,**|
+|Redo|**⇧⌘Z**|
+|Cambiar nombre|**⌘R**, **F2**|
+|Seleccionar todo|**⌘A**|
+|Mostrar generación de código|**⌘I**|
+|Alternar todos los plegados de código|**⌥⇧⌘↑**|
+|Alternar definiciones|**⌥⇧⌘↓**|
+|Alternar plegado|**⌥⇧⌘←**|
+|Alternar comentario de línea|**⌘/**|
+|Undo|**⌘Z**|
+|Quitar sangría a la selección|**⌘[**|
+|Actualizar marco desde restricciones|**⇧⌘R**|
 
-![Muestra acciones de contexto](media/keyboard-shortcuts-image9.png)
+## <a name="f-integration"></a>Integración de F#
 
-## <a name="find-in-files"></a>Buscar en archivos
+|Comandos|Métodos abreviados de teclado|
+|-|-|
+|Borrar F# interactivo|**⌃⌥C**|
+|F# interactivo|**⌃⌥F**|
+|Reiniciar F# interactivo|**⌃⌥R**|
+|Enviar línea a F# interactivo|**⌃⌥L**|
+|Enviar referencias a F# interactivo|**⌃⌥P**|
+|Enviar selección a F# interactivo|**⌃⏎**|
 
-`⌘ + shift + F`
+## <a name="file"></a>Archivo
 
-## <a name="file-switcher"></a>Modificador de archivos
+|Comandos|Métodos abreviados de teclado|
+|-|-|
+|Cerrar todo|**⇧⌘W**|
+|Cerrar archivo|**⌘W**|
+|Cerrar área de trabajo|**⌥⌘W**|
+|Nuevo archivo|**⌘N**|
+|Nueva solución|**⇧⌘N**|
+|Abrir|**⌘O**|
+|Imprimir|**⌘P**|
+|Salir|**⌘Q**|
+|Reversión|**⌘U**|
+|Guardar|**⌘S**|
+|Guardar todo|**⇧⌘S**|
 
-Permite cambiar rápidamente entre archivos:
+## <a name="help"></a>Ayuda
 
-`control + tab`
+|Comandos|Métodos abreviados de teclado|
+|-|-|
+|Documentación de la API|**⌥⌘?**|
+|Referencia de API de Unity|**⌘'**|
 
-## <a name="move-lines-around-in-editor"></a>Mover líneas en el editor
+## <a name="other"></a>Otros
 
-`alt + up/down`
+|Comandos|Métodos abreviados de teclado|
+|-|-|
+|Implementar mensajes de Unity|**⇧⌘M**|
+|Inspeccionar|**⌥⌘I**|
 
-Use el comando **Alt + Arriba** para subir la línea actual o las líneas seleccionadas y **Alt + Abajo** para bajar las líneas. Si el complemento de lenguaje lo admite, se vuelve a aplicar sangría a las líneas para que coincidan con el contexto al entrar y salir del ámbito.
+## <a name="project"></a>Proyecto
 
-## <a name="word-navigation"></a>Navegación de palabras
+|Comandos|Métodos abreviados de teclado|
+|-|-|
+|Agregar archivos|**⌥⌘A**|
+|Compilar|**⌘K**, **⇧F6**|
+|Compilar todo|**⌘B**, **F6**|
+|Limpiar|**⇧⌘K**|
+|Volver a compilar|**⌃⌘K**|
+|Recompilar todo|**⌃⌘B**|
+|Iniciar depuración|**⌘⏎**, **F5**|
+|Iniciar sin depurar|**⌥⌘⏎**, **⌃F5**|
+|Detener|**⇧⌘⏎**, **⇧F5**|
 
-Mueve el símbolo de intercalación a la palabra siguiente o anterior:
+## <a name="refactoring"></a>Refactorización
 
-`option + left/right`
+|Comandos|Métodos abreviados de teclado|
+|-|-|
+|Importar símbolo|**⌃⌥␣**|
+|Corrección rápida|**⌥⏎**|
 
-## <a name="line-navigation"></a>Navegación de líneas
+## <a name="search"></a>Buscar
 
-Mueve el símbolo de intercalación al principio o al final de la línea:
+|Comandos|Métodos abreviados de teclado|
+|-|-|
+|Comando|**⇧⌘P**|
+|Buscar en archivos|**⇧⌘F**|
+|Buscar siguiente|**⌘G**, **F3**|
+|Buscar siguiente coincidencia con la selección|**⌘E**, **⌘F3**|
+|Buscar anterior|**⇧⌘G**, **⇧F3**|
+|Buscar anterior coincidencia con la selección|**⇧⌘F3**|
+|Find|**⌘F**|
+|Ir al archivo|**⇧⌘D**|
+|Ir a la línea|**⌘L**|
+|Ir al tipo|**⇧⌘T**|
+|Navegar a|**⌘.**|
+|Reemplazar en archivos|**⌥⇧⌘F**|
+|Sustituya|**⌥⌘F**|
 
-`⌘ + left/right`
+## <a name="text-editor"></a>Editor de texto
 
-## <a name="expands-the-selection"></a>Expande la selección
+|Comandos|Métodos abreviados de teclado|
+|-|-|
+|Palabra completa|**⌃␣**|
+|Eliminar carácter de la izquierda|**⌃H**|
+|Eliminar la subpalabra siguiente|**⌃⌦**|
+|Eliminar la palabra siguiente|**⌥⌦**|
+|Eliminar la subpalabra anterior|**⌃⌫**|
+|Eliminar la palabra anterior|**⌥⌫**|
+|Eliminar carácter de la derecha|**⌃D**|
+|Eliminar hasta el final de la línea|**⌃K**|
+|Abreviatura dinámica|**⌃/**|
+|Expandir selección|**⌥⇧↓**|
+|Expandir selección|**⌥⇧↑**|
+|Expandir selección hasta el final del documento|**⇧⌘↓**, **⇧⌘↘**|
+|Expandir selección hasta el principio del documento|**⇧⌘↑**, **⇧⌘↖**|
+|Expandir selección hasta el final de la línea|**⇧↘**, **⇧⌘→**|
+|Expandir selección hasta el principio de la línea|**⇧↖**, **⇧⌘←**|
+|Expandir selección hasta la siguiente línea|**⇧↓**|
+|Expandir selección hasta la siguiente palabra|**⌥⇧→**|
+|Expandir selección una página hacia abajo|**⇧⇟**|
+|Expandir selección una página hacia arriba|**⇧⇞**|
+|Expandir selección hasta la línea anterior|**⇧↑**|
+|Expandir selección hasta la palabra anterior|**⌥⇧←**|
+|Expandir selección hacia la izquierda|**⇧←**|
+|Expandir selección hacia la derecha|**⇧→**|
+|Buscar símbolo de inserción|**⌘\|**|
+|Retroceder un carácter a la izquierda|**⌃B**|
+|Avanzar un carácter a la derecha|**⌃F**|
+|Ir al principio del documento|**⌘↑**|
+|Ir al principio de la línea|**⌘←**, **⌃A**|
+|Ir al final del documento|**⌘↓**|
+|Ir al final de la línea|**⌘→**, **⌃E**|
+|Ir a llave coincidente|**⇧⌘\\**|
+|Ir a la línea siguiente|**⌃N**|
+|Ir a la palabra siguiente|**⌥→**|
+|Ir a la línea anterior|**⌃P**|
+|Ir a la palabra anterior|**⌥←**|
+|Insertar salto de línea después del símbolo de inserción|**⌃O**|
+|Mover el símbolo de inserción al final de la línea e insertar una nueva|**⇧⏎**|
+|Mover hacia abajo la línea o la selección|**⌥↓**|
+|Mover hacia arriba la línea o la selección|**⌥↑**|
+|Ir a siguiente uso|**⌃⌥⌘↓**|
+|Ir al uso anterior|**⌃⌥⌘↑**|
+|Mostrar lista de parámetros|**⌃⇧␣**|
+|Mostrar información rápida|**⌘F1**|
+|Mostrar ámbitos|**⌥⇧⌘P**|
+|Transponer caracteres|**⌃T**|
+|Encapsular con &lt;div&gt;|**⌥⇧W**|
 
-Expande la selección de miembros de palabra, subexpresiones, instrucción y línea de una forma lógica:
+## <a name="view"></a>Ver
 
-`alt + shift + up` para seleccionar y `alt + shift + down` para anular la selección
+|Comandos|Métodos abreviados de teclado|
+|-|-|
+|Centrar y enfocar documento|**⌃L**|
+|Enfocar documento|**F7**|
+|Pantalla completa|**⌃⌘F**|
+|Ir al cuaderno siguiente|**⌥⌘→**|
+|Ir al cuaderno anterior|**⌥⌘←**|
+|Navegar hacia atrás|**⌃⌘←**|
+|Navegar hacia adelante|**⌃⌘→**|
+|Tamaño normal|**⌘0**|
+|Una columna de editor|**⌥⌘1**|
+|Mostrar siguiente|**⌥⌘↓**, **F8**|
+|Mostrar anterior|**⌥⌘↑**, **⇧F8**|
+|Dos columnas de editor|**⌥⌘2**|
+|Acercar|**⌘+**, **⌘=**|
+|Alejar|**⌘-**, **⌘_**|
+
+## <a name="window"></a>Ventana
+
+|Comandos|Métodos abreviados de teclado|
+|-|-|
+|Activar 1|**⌘1**|
+|Activar 2|**⌘2**|
+|Activar 3|**⌘3**|
+|Activar 4|**⌘4**|
+|Activar 5|**⌘5**|
+|Activar 6|**⌘6**|
+|Activar 7|**⌘7**|
+|Activar 8|**⌘8**|
+|Activar 9|**⌘9**|
+|Ocultar otros|**⌥⌘H**|
+|Ocultar Visual Studio|**⌘H**|
+|Minimizar|**⌘M**|
+|Documento siguiente|**⌘}**, **⌘F6**|
+|Documento anterior|**⌘{**, **⇧⌘F6**|
+|Cambiar al documento siguiente|**⌃⇥**|
+|Cambiar al relleno siguiente|**⌃⌥⇥**|
+|Cambiar al documento anterior|**⌃⇧⇥**|
+|Cambiar al relleno anterior|**⌃⌥⇧⇥**|
+
+## <a name="macos-key-symbols-lookup"></a>Búsqueda de los símbolos de teclas de macOS
+
+|Símbolo|Key|
+|-|-|
+|⌘|**Comando** (**cmd**)|
+|⌥|**Opción** (**alt**)|
+|⇧|**Mayús**|
+|⌃|**Control** (**ctrl**)
+|⇞|**Retroceder página** (**Re. pág.**)|
+|⇟|**Avanzar página** (**Av. pág.**)|
+|⌫|**Borrar** (**Retroceso**)|
+|⌦|**Borrar hacia adelante**|
+|⏎|**Return**|
+|←→↑↓|**Teclas de dirección**|
+|↖|**Página principal**|
+|↘|**Fin**|
+|␣|**Barra espaciadora**|
+|⇥|**Tabulación**|
 
 ## <a name="see-also"></a>Vea también
 

@@ -8,33 +8,32 @@ ms.topic: conceptual
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: e8c42bd40528dfe8567219bdc2bc4a8d216e7c6b
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 3d6e3479fe27c5d88b58f096ab5405d75c6c98e3
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53899761"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857845"
 ---
 # <a name="develop-javascript-and-typescript-code-in-visual-studio-without-solutions-or-projects"></a>Desarrollar código de JavaScript y TypeScript en Visual Studio sin proyectos ni soluciones
 
-Visual Studio 2017 incluye la capacidad de [desarrollar código sin proyectos ni soluciones](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md), lo que permite abrir una carpeta de código y empezar a trabajar de inmediato con compatibilidad de editor enriquecido, como IntelliSense, búsqueda, refactorización, depuración, etc.
-Además de estas características, Herramientas de Node.js para Visual Studio permite compilar archivos de TypeScript, administrar paquetes de npm y ejecutar scripts de npm.
+A partir de Visual Studio 2017, se puede [desarrollar código sin proyectos ni soluciones](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md), lo que permite abrir una carpeta de código y empezar de inmediato a trabajar con un editor enriquecido, como IntelliSense, búsqueda, refactorización, depuración, etc. Además de estas características, Herramientas de Node.js para Visual Studio permite compilar archivos de TypeScript, administrar paquetes de npm y ejecutar scripts de npm.
 
-Para empezar, seleccione **Abrir carpeta** en la página de inicio que aparece cuando se abre Visual Studio, o bien, puede seleccionar **Archivo** > **Abrir** > **Carpeta** en la barra de herramientas. El Explorador de soluciones muestra todos los archivos de la carpeta; puede abrir cualquiera de ellos para comenzar a editar. En segundo plano, Visual Studio indexa los archivos para habilitar las características de npm, compilación y depuración.
+Para empezar, haga clic en **Archivo** > **Abrir** > **Carpeta** en la barra de herramientas. El Explorador de soluciones muestra todos los archivos de la carpeta; puede abrir cualquiera de ellos para comenzar a editar. En segundo plano, Visual Studio indexa los archivos para habilitar las características de npm, compilación y depuración.
 
 > [!IMPORTANT]
-> Muchas de las características descritas en este artículo, incluida la integración con npm, requieren Visual Studio 2017 versión 15.8.
+> Muchas de las características descritas en este artículo, incluida la integración de npm, requieren Visual Studio 2017 versión 15.8 o versiones posteriores.
 
 ## <a name="npm-integration"></a>Integración con npm
 
-Si la carpeta que abre contiene un archivo *package.json*, puede hacer clic con el botón derecho en *package.json* para mostrar un menú contextual (menú emergente) específico de npm. 
+Si la carpeta que abre contiene un archivo *package.json*, puede hacer clic con el botón derecho en *package.json* para mostrar un menú contextual (menú emergente) específico de npm.
 
-![Menú de npm en el Explorador de soluciones](../javascript/media/solution-explorer-npm-ctx.png) 
+![Menú de npm en el Explorador de soluciones](../javascript/media/solution-explorer-npm-ctx.png)
 
 En el menú contextual, puede administrar los paquetes instalados por npm de la misma forma que [administra paquetes de npm](npm-package-management.md) cuando usa un archivo de proyecto.
 
@@ -43,7 +42,8 @@ Además, el menú también permite ejecutar los scripts definidos en el elemento
 ## <a name="build-and-debug"></a>Compilación y depuración
 
 ### <a name="packagejson"></a>package.json
-Si el archivo *package.json* de la carpeta especifica un elemento `main`, el comando **Depurar** estará disponible en el menú contextual de *package.json*. Al hacer clic en él se inicia *node.exe* con el script especificado como argumento.
+Si el archivo *package.json* de la carpeta especifica un elemento `main`, el comando **Depurar** estará disponible en el menú contextual de *package.json*.
+Al hacer clic en él se inicia *node.exe* con el script especificado como argumento.
 
 ### <a name="javascript-files"></a>Archivos de JavaScript
 Puede depurar archivos de JavaScript si hace clic con el botón derecho en un archivo y selecciona **Depurar** en el menú contextual. Esto inicia *node.exe* con ese archivo de JavaScript como argumento.

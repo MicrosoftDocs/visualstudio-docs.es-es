@@ -1,28 +1,23 @@
 ---
-title: 'Cómo: abrir editores para documentos abiertos | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Apertura de editores para documentos abiertos | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], opening for open documents
 ms.assetid: 1a0fa49c-efa4-4dcc-bdc0-299b7052acdc
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 4bb21def7e9d283c287c375bd9b8b4cc6bd30c3c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ae6e565e026ca49825a7b00a82e4e5c62a2f6c3c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750978"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092336"
 ---
-# <a name="how-to-open-editors-for-open-documents"></a>Cómo: abrir editores para documentos abiertos
+# <a name="how-to-open-editors-for-open-documents"></a>Procedimiento Abrir editores para documentos abiertos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Antes de que un proyecto abre una ventana de documento, el proyecto en primer lugar debe determinar si el archivo ya está abierto en la ventana de documento para otro editor. El archivo puede ser cualquier abierto en un editor específico del proyecto, o uno de los editores estándares registrado con [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
@@ -53,14 +48,13 @@ Antes de que un proyecto abre una ventana de documento, el proyecto en primer lu
   
 #### <a name="to-open-a-standard-editor-for-an-open-file"></a>Para abrir un editor estándar para un archivo abierto  
   
-1.  Llame a <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>.  
+1. Llame a <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>.  
   
      Este método primero comprueba que el documento no está ya abierto mediante una llamada a <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A>. Si el documento ya está abierto, a continuación, se vuelve a exponerse su ventana del editor.  
   
-2.  Si el documento no está abierto, a continuación, complete los pasos de [Cómo: abrir editores estándar](../extensibility/how-to-open-standard-editors.md).  
+2. Si el documento no está abierto, a continuación, complete los pasos de [Cómo: Apertura de editores estándar](../extensibility/how-to-open-standard-editors.md).  
   
 ## <a name="see-also"></a>Vea también  
  [Abrir y guardar elementos de proyecto](../extensibility/internals/opening-and-saving-project-items.md)   
- [Cómo: abrir editores específicos del proyecto](../extensibility/how-to-open-project-specific-editors.md)   
- [Apertura de editores estándar](../extensibility/how-to-open-standard-editors.md)
-
+ [Cómo: Abrir editores específicos del proyecto](../extensibility/how-to-open-project-specific-editors.md)   
+ [Cómo: Abrir editores estándar](../extensibility/how-to-open-standard-editors.md)

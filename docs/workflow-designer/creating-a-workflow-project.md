@@ -2,22 +2,21 @@
 title: Crear un proyecto de Workflow Foundation
 ms.date: 06/25/2018
 ms.topic: conceptual
-ms.prod: visual-studio-dev15
 helpviewer_keywords:
 - Workflow Designer, creating a workflow project
 - creating a workflow project
 ms.assetid: 235a125e-ebe7-4a98-bf77-86c8558728fb
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0856ff93beef602d02defb58f90f69898a121f2c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 15c02312d5c257f13b9c0394790bc8a2611d7972
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53943358"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58414763"
 ---
 # <a name="workflow-project-templates"></a>Plantillas de proyecto de flujo de trabajo
 
@@ -35,22 +34,16 @@ Visual Studio proporciona cuatro plantillas de proyecto de flujo de trabajo dife
 
 - Biblioteca del Diseñador de actividad
 
-Para obtener acceso a estas plantillas, instale primero el **Windows Workflow Foundation** componente de Visual Studio 2017. Para obtener instrucciones detalladas, consulte [instalar Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation).
+Para obtener acceso a estas plantillas, instale primero el **Windows Workflow Foundation** componente de Visual Studio. Para obtener instrucciones detalladas, consulte [instalar Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation).
 
-1. Una vez instalado el **Windows Workflow Foundation** componente, abra el **nuevo proyecto** cuadro de diálogo seleccionando **archivo** > **New**  >  **Proyecto**.
+1. Una vez instalado el **Windows Workflow Foundation** componente, seleccione **archivo** > **New** > **proyecto**.
 
-1. En el panel izquierdo, seleccione el **Visual C#** > **flujo de trabajo** categoría (o **Visual Basic** > **deflujodetrabajo**si prefiere Visual Basic).
+1. Busque y seleccione una plantilla de proyecto de flujo de trabajo, por ejemplo, el **aplicación de consola de flujos de trabajo** plantilla.
 
-1. En el panel central, seleccione una plantilla de proyecto, como **aplicación de consola de flujos de trabajo**.
-
-1. En el **nombre** , escriba un nombre descriptivo para el proyecto para que sea fácil de identificar.
-
-1. En el **ubicación** cuadro, escriba el directorio en el que desea guardar el proyecto o seleccione **examinar** para desplazarse hasta él.
-
-1. En el **solución** cuadro, escriba el nombre para la nueva solución. Seleccione **Aceptar** para crear la aplicación.
+1. Continúe con crear el proyecto.
 
    > [!NOTE]
-   > Si desea agregar un nuevo proyecto a una solución existente, ábrala en Visual Studio, haga clic en la solución en **el Explorador de soluciones**y seleccione **agregar** > **nuevo Proyecto** para abrir el **nuevo proyecto** cuadro de diálogo.
+   > Si desea agregar un nuevo proyecto a una solución existente, ábrala en Visual Studio, haga clic en la solución en **el Explorador de soluciones**y seleccione **agregar** > **nuevo Proyecto**.
 
 ## <a name="workflow-console-app"></a>Aplicación de consola de flujo de trabajo
 

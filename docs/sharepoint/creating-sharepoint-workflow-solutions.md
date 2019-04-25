@@ -15,17 +15,17 @@ dev_langs:
 helpviewer_keywords:
 - SharePoint development in Visual Studio, workflows
 - workflows [SharePoint development in Visual Studio]
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b0a1e4d1e3aa548d51225ac50dacf78b73e1efae
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 756b1b1171c18fe435d318d5fb4bccf278aecc58
+ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53820509"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "54874073"
 ---
 # <a name="create-sharepoint-workflow-solutions"></a>Crear soluciones de flujo de trabajo de SharePoint
 
@@ -79,7 +79,7 @@ Para obtener más información acerca de SharePoint, vea [Microsoft SharePoint P
 
   Las actividades se clasifican en las siguientes fichas en la **cuadro de herramientas**:
 
-- **Flujo de trabajo de SharePoint**
+- **SharePoint Workflow**
 
 - **Windows Workflow v3.0**
 

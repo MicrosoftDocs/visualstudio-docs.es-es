@@ -1,14 +1,9 @@
 ---
 title: Operación de compilación | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -18,13 +13,13 @@ ms.assetid: c798eb2b-664a-41ec-ae90-5e9d292507ca
 caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 8fd4620fcd2a1ff6f8c1b167035bf4032da176eb
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 579ac6a70b379364870425e78cee41ac0840a214
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51810337"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58995979"
 ---
 # <a name="compiland"></a>Compiland
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -49,6 +44,3 @@ Hay un `SymTagCompiland` para cada operación de compilación vinculado con el a
  [CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)   
  [CompilandEnv](../../debugger/debug-interface-access/compilandenv.md)   
  [Jerarquía léxica de tipos de símbolos](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)
-
-
-

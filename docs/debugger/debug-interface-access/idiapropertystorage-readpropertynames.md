@@ -9,44 +9,47 @@ helpviewer_keywords:
 ms.assetid: f8bcab77-afca-4a8f-8710-697842f8a518
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 07c9c5d129305d8c3128a081abe8079321043a57
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 7492e0eee0523fd102ecd057d075f2672bf3b25b
+ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53918958"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56695848"
 ---
 # <a name="idiapropertystoragereadpropertynames"></a>IDiaPropertyStorage::ReadPropertyNames
-Recupera correspondiente para los nombres de cadena según identificadores de propiedad.  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```C++  
-HRESULT ReadPropertyNames (  
-   ULONG         cpropid,  
-   PROPID const* rgpropid,  
-   BSTR*         rglpwstrName  
-);  
-```  
-  
-#### <a name="parameters"></a>Parámetros  
- `cpropid`  
- [in] Número de identificadores de propiedad en `rgpropid`.  
-  
- `rgpropid`  
- [in] Matriz de identificadores de propiedad que se va a obtener los nombres (`PROPID` se define en el archivo WTypes.h como un `ULONG`).  
-  
- `rglpwstrName`  
- [in, out] Matriz de nombres de propiedad para los identificadores de propiedad especificado. La matriz debe estar previamente asignada para contener el número solicitado de nombres de propiedad y debe ser capaz de contener al menos `cpropid``BSTR` cadenas.  
-  
-## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
-  
-## <a name="remarks"></a>Comentarios  
- Los nombres de propiedad devuelta deben ser liberados (mediante una llamada a la `SysFreeString` función) cuando ya no son necesarios.  
-  
-## <a name="see-also"></a>Vea también  
- [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)
+Recupera correspondiente para los nombres de cadena según identificadores de propiedad.
+
+## <a name="syntax"></a>Sintaxis
+
+```C++
+HRESULT ReadPropertyNames (
+   ULONG         cpropid,
+   PROPID const* rgpropid,
+   BSTR*         rglpwstrName
+);
+```
+
+#### <a name="parameters"></a>Parámetros
+ `cpropid`
+
+[in] Número de identificadores de propiedad en `rgpropid`.
+
+ `rgpropid`
+
+[in] Matriz de identificadores de propiedad que se va a obtener los nombres (`PROPID` se define en el archivo WTypes.h como un `ULONG`).
+
+ `rglpwstrName`
+
+[in, out] Matriz de nombres de propiedad para los identificadores de propiedad especificado. La matriz debe estar previamente asignada para contener el número solicitado de nombres de propiedad y debe ser capaz de contener al menos `cpropid``BSTR` cadenas.
+
+## <a name="return-value"></a>Valor devuelto
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+
+## <a name="remarks"></a>Comentarios
+ Los nombres de propiedad devuelta deben ser liberados (mediante una llamada a la `SysFreeString` función) cuando ya no son necesarios.
+
+## <a name="see-also"></a>Vea también
+- [IDiaPropertyStorage](../../debugger/debug-interface-access/idiapropertystorage.md)

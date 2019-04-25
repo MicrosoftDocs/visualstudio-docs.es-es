@@ -1,19 +1,18 @@
 ---
 title: Solución de problemas de carga de plantillas de proyecto y de elemento
 ms.date: 01/02/2018
-ms.prod: visual-studio-dev15
 ms.topic: troubleshooting
 helpviewer_keywords:
 - templates [Visual Studio], troubleshooting
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 4908716ce5f984aef6dbd3d482a26e1aeb94623d
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+manager: jillfra
+ms.openlocfilehash: 70782646a52a5bca5741a864eee1f965941bb34b
+ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53890922"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58415569"
 ---
 # <a name="how-to-troubleshoot-templates"></a>Procedimiento Solucionar problemas de plantillas
 
@@ -21,7 +20,17 @@ Si una plantilla no se puede cargar en el entorno de desarrollo, hay varias mane
 
 ## <a name="validate-the-vstemplate-file"></a>Validación del archivo vstemplate
 
+::: moniker range="vs-2017"
+
 Si el archivo *vstemplate* en una plantilla no cumple el esquema de plantilla de Visual Studio, la plantilla podría no aparecer en el cuadro de diálogo **Nuevo proyecto**.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Si el archivo *vstemplate* de una plantilla no cumple el esquema de plantilla de Visual Studio, es posible que la plantilla no aparezca en el cuadro de diálogo en que se creen los proyectos.
+
+::: moniker-end
 
 ### <a name="to-validate-the-vstemplate-file"></a>Para validar el archivo vstemplate
 

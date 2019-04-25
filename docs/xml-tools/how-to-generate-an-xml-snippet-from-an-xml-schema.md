@@ -1,81 +1,80 @@
 ---
 title: Procedimiento Generar un fragmento de código XML a partir de un esquema XML
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 ms.assetid: 2c128d2a-aaa6-4814-aa95-e07056afe338
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31e1805a38d51315c4f0753f363334d1df37ece6
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b2c3aad870112b580078f2dbb849f9ee1a771ed0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53864730"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041006"
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Procedimiento Generar un fragmento XML desde un esquema XML
 
-Con el Editor XML es posible generar fragmentos de código XML a partir de un esquema de lenguaje de definición de esquema XML (XSD). Por ejemplo, durante la creación de un archivo XML, mientras se coloca junto al nombre del elemento, puede presionar **ficha** para rellenar el elemento con los datos XML generados a partir de la información de esquema de ese elemento.
+El editor XML tiene la capacidad de generar fragmentos XML desde un esquema (XSD) del lenguaje de definición de esquemas XML. Por ejemplo, durante la creación de un archivo XML, mientras se coloca junto al nombre del elemento, puede presionar **ficha** para rellenar el elemento con los datos XML generados a partir de la información de esquema de ese elemento.
 
 Esta característica solamente está disponible en elementos. Además, se aplican las siguientes reglas:
 
--   El elemento debe tener asociado un tipo de esquema, es decir, el elemento debe ser válido de acuerdo con algún esquema asociado. El tipo de esquema no puede ser abstracto y debe contener los atributos y/o elementos secundarios necesarios.
+- El elemento debe tener asociado un tipo de esquema, es decir, el elemento debe ser válido de acuerdo con algún esquema asociado. El tipo de esquema no puede ser abstracto y debe contener los atributos y/o elementos secundarios necesarios.
 
--   El elemento actual del editor debe estar vacío, sin atributos. Por ejemplo, todo lo siguiente es válido:
+- El elemento actual del editor debe estar vacío, sin atributos. Por ejemplo, todo lo siguiente es válido:
 
-    -   `<Account`
+    - `<Account`
 
-    -   `<Account>`
+    - `<Account>`
 
-    -   `<Account></Account>`
+    - `<Account></Account>`
 
--   El cursor debe estar situado inmediatamente a la derecha del nombre del elemento.
+- El cursor debe estar situado inmediatamente a la derecha del nombre del elemento.
 
 El fragmento generado contiene todos los atributos y elementos necesarios. Si `minOccurs` es mayor que uno, en el fragmento se incluye el número mínimo de instancias necesarias de ese elemento, hasta un máximo de 100 instancias. Todos los valores fijos hallados en el esquema dan como resultado valores fijos en el fragmento de código. Los elementos `xsd:any` y `xsd:anyAttribute` se omiten y, como consecuencia, no se construyen más fragmentos.
 
 Los valores predeterminados se generan e indican como valores editables. Si el esquema especifica un valor predeterminado, se utiliza este valor predeterminado. No obstante, si el valor predeterminado del esquema es una cadena vacía, el editor genera los valores predeterminados de la siguiente manera:
 
--   Si el tipo de esquema contiene facetas de enumeración, por medio directo o indirecto de cualquiera de los miembros de un tipo de unión, el primer valor enumerado hallado en el modelo de objeto de esquema se utiliza como predeterminado.
+- Si el tipo de esquema contiene facetas de enumeración, por medio directo o indirecto de cualquiera de los miembros de un tipo de unión, el primer valor enumerado hallado en el modelo de objeto de esquema se utiliza como predeterminado.
 
--   Si el tipo de esquema es un tipo atómico, el editor obtiene el tipo atómico e inserta el nombre de dicho tipo. En un tipo simple derivado, se utiliza el tipo simple base. En un tipo de lista, el tipo atómico es el `itemType`. En una unión, el tipo atómico es el tipo atómico del primer `memberType`.
+- Si el tipo de esquema es un tipo atómico, el editor obtiene el tipo atómico e inserta el nombre de dicho tipo. En un tipo simple derivado, se utiliza el tipo simple base. En un tipo de lista, el tipo atómico es el `itemType`. En una unión, el tipo atómico es el tipo atómico del primer `memberType`.
 
 ## <a name="example"></a>Ejemplo
 
- Los pasos descritos en esta sección muestran cómo usar el fragmento XML generados por esquema, característica del Editor XML.
+ Los pasos descritos en esta sección muestran cómo utilizar la característica de fragmento de código generados por esquema XML del editor XML.
 
 > [!NOTE]
 > Antes de comenzar estos procedimientos, guarde el archivo de esquema en el equipo local.
 
 ### <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>Para crear un nuevo archivo XML y asociarlo con un esquema XML
 
-1.  En el **archivo** menú, elija **New**y haga clic en **archivo**.
+1. En el **archivo** menú, elija **New**y haga clic en **archivo**.
 
-2.  Seleccione **archivo XML** en el **plantillas** panel y haga clic en **abierto**.
+2. Seleccione **archivo XML** en el **plantillas** panel y haga clic en **abierto**.
 
      Se abre un nuevo archivo en el editor. El archivo contiene una declaración XML predeterminada, `<?xml version="1.0" encoding="utf-8">`.
 
-3.  En la ventana Propiedades del documento, haga clic en el botón Examinar (**...** ) en el **esquemas** campo.
+3. En la ventana Propiedades del documento, haga clic en el botón Examinar (**...** ) en el **esquemas** campo.
 
      El **esquemas XSD** se muestra el cuadro de diálogo.
 
-4.  Haga clic en **Agregar**.
+4. Haga clic en **Agregar**.
 
      El **Abrir esquema XSD** se muestra el cuadro de diálogo.
 
-5.  Seleccione el archivo de esquema y haga clic en **abierto**.
+5. Seleccione el archivo de esquema y haga clic en **abierto**.
 
-6.  Haga clic en **Aceptar**.
+6. Haga clic en **Aceptar**.
 
      El esquema XML está ahora asociado con el documento XML.
 
 ### <a name="to-generate-an-xml-snippet"></a>Para generar un fragmento de código XML
 
-1.  Escriba `<` en el panel del editor.
+1. Escriba `<` en el panel del editor.
 
-2.  La lista de miembros muestra los elementos posibles:
+2. La lista de miembros muestra los elementos posibles:
 
      **!--** para agregar un comentario.
 
@@ -85,11 +84,11 @@ Los valores predeterminados se generan e indican como valores editables. Si el e
 
      **Póngase en contacto con** para agregar el elemento raíz.
 
-3.  Seleccione **póngase en contacto con** en la lista de miembros y presione **ENTRAR**.
+3. Seleccione **póngase en contacto con** en la lista de miembros y presione **ENTRAR**.
 
      El editor agrega la etiqueta de apertura `<Contact` y coloca el cursor después del nombre del elemento.
 
-4.  Presione **ficha** para generar datos XML para el `Contact` elemento según su información de esquema.
+4. Presione **ficha** para generar datos XML para el `Contact` elemento según su información de esquema.
 
 ## <a name="input"></a>Entrada
 

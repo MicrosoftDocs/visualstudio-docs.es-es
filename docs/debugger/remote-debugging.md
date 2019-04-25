@@ -18,22 +18,22 @@ helpviewer_keywords:
 ms.assetid: 5a94ad64-100d-43ca-9779-16cb5af86f97
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6053c240fbdfb12840e162f70c88356918eca238
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
-ms.translationtype: MTE95
+ms.openlocfilehash: 8161623b35dd626e59cdb0ed387ece6a104429a1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54269961"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047587"
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 Puede depurar una aplicación de Visual Studio que se ha implementado en un equipo diferente. Para ello, use el depurador remoto de Visual Studio
 
 Para obtener instrucciones sobre la depuración remota, vea estos temas.
 
-|Escenario|Vínculo|
+|Escenario|Link|
 |-|-|-|
 |Azure App Service|[Depurador de instantáneas](../debugger/debug-live-azure-applications.md) o [depuración remota de ASP.NET en Azure](../debugger/remote-debugging-azure.md)|
 |Máquina virtual de Azure|[Depuración remota de ASP.NET en Azure](../debugger/remote-debugging-azure.md)|
@@ -57,11 +57,22 @@ Si simplemente desea descargar e instalar al depurador remoto y no necesita toda
 
 Puede encontrar el depurador remoto (*msvsmon.exe*) en un equipo con Visual Studio Community, Professional o Enterprise ya instalado. En algunos escenarios, la manera más fácil de configurar la depuración remota es ejecutar al depurador remoto (msvsmon.exe) desde un recurso compartido de archivos. Para conocer las limitaciones de uso, consulte la página de Ayuda del depurador remoto (**Ayuda > uso** en el depurador remoto).
 
-1. Buscar *msvsmon.exe* en el directorio que coincida con su versión de Visual Studio. Para Visual Studio Enterprise 2017:
+1. Buscar *msvsmon.exe* en el directorio que coincida con su versión de Visual Studio:
 
-      *Programa archivos (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x86\msvsmon.exe*
+   ::: moniker range=">=vs-2019"
 
-      *Programa archivos (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x64\msvsmon.exe*
+   *Programa archivos (x86) \Microsoft Visual Studio\2019\Enterprise\Common7\IDE\Remote Debugger\x86\msvsmon.exe*
+
+   *Programa archivos (x86) \Microsoft Visual Studio\2019\Enterprise\Common7\IDE\Remote Debugger\x64\msvsmon.exe*
+
+   ::: moniker-end
+   ::: moniker range="vs-2017"
+
+   *Programa archivos (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x86\msvsmon.exe*
+
+   *Programa archivos (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\Remote Debugger\x64\msvsmon.exe*
+
+   ::: moniker-end
 
 2. Recurso compartido de la **Remote Debugger** carpeta en el equipo de Visual Studio.
 
@@ -77,21 +88,21 @@ Puede encontrar el depurador remoto (*msvsmon.exe*) en un equipo con Visual Stud
 ### <a name="configure_msvsmon"></a> Configuración del depurador remoto
 Puede cambiar algunos aspectos de la configuración del depurador remoto tras iniciarlo por primera vez.
 
--   Si necesita agregar permisos para otros usuarios se conecten al depurador remoto, elija **Herramientas > permisos**. Debe tener privilegios de administrador para conceder o denegar permisos.
+- Si necesita agregar permisos para otros usuarios se conecten al depurador remoto, elija **Herramientas > permisos**. Debe tener privilegios de administrador para conceder o denegar permisos.
 
      > [!IMPORTANT]
      > Puede ejecutar al depurador remoto bajo una cuenta de usuario que difiere de la cuenta de usuario que está usando en el equipo de Visual Studio, pero debe agregar la cuenta de usuario diferente a los permisos del depurador remoto.
 
      Como alternativa, puede iniciar el depurador remoto desde la línea de comandos con el **/ allow \<username >** parámetro: **msvsmon /Allow \< username@computer>**.
 
--   Si necesita cambiar el modo de autenticación o el número de puerto o especificar un valor de tiempo de espera para las herramientas remotas: elija **Herramientas > opciones**.
+- Si necesita cambiar el modo de autenticación o el número de puerto o especificar un valor de tiempo de espera para las herramientas remotas: elija **Herramientas > opciones**.
 
      Para obtener una lista de los números de puerto que usa de forma predeterminada, consulte [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md).
 
      > [!WARNING]
      >  Puede elegir ejecutar las herramientas remotas en el Modo sin autenticación, aunque se recomienda no usar este modo. No hay ninguna seguridad de red cuando se ejecuta en este modo. Elija el modo sin autenticación solo si está seguro de que la red no presenta riesgos de tráfico malintencionado u hostil.
 
-##  <a name="bkmk_configureService"></a> (Opcional) Configurar al depurador remoto como servicio
+## <a name="bkmk_configureService"></a> (Opcional) Configurar al depurador remoto como servicio
 Para la depuración en ASP.NET y otros entornos de servidor, debe ejecutar al depurador remoto como administrador o, si desea que siempre en ejecución, ejecute al depurador remoto como un servicio.
 
  Si desea configurar al depurador remoto como un servicio, siga estos pasos.

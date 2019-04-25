@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 72e1d0f3-eef1-455e-b803-96827f030f50
 author: gregvanl
 ms.author: gregvanl
-manager: douge
+manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c66665fa927cbd1f7c2f704467750c6c943eb467
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b1bd68e9d647f9a44eaa8b975995f2d7de3d9640
+ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53898195"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55014021"
 ---
 # <a name="wizard-vsz-file"></a>Archivo de asistente (.Vsz)
 

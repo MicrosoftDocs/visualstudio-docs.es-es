@@ -1,7 +1,6 @@
 ---
 title: 'CA1716: Los identificadores no deben coincidir con palabras clave'
-ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - IdentifiersShouldNotMatchKeywords
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 900cc8a1-1089-4069-a4ce-10b109ac4fab
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d27fdd455d019532b47bc531f9f7377bacd6572e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 279bcf3aecc2a637a7a36c2041ed63a72017a800
+ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53828633"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57867737"
 ---
 # <a name="ca1716-identifiers-should-not-match-keywords"></a>CA1716: Los identificadores no deben coincidir con palabras clave
 
@@ -33,7 +32,9 @@ ms.locfileid: "53828633"
 
 ## <a name="cause"></a>Motivo
 
-Un nombre de un espacio de nombres, un tipo o miembro virtual o de interfaz coincide con una palabra clave reservada en un lenguaje de programación.
+El nombre de un espacio de nombres, tipo, o virtual o miembro de interfaz que coincida con una palabra clave reservada en un lenguaje de programación.
+
+De forma predeterminada, esta regla solo se examina visible externamente espacios de nombres, tipos y miembros, pero se trata de [configurable](#configurability).
 
 ## <a name="rule-description"></a>Descripción de la regla
 
@@ -42,12 +43,10 @@ Los identificadores para los espacios de nombres, tipos y virtual y los miembros
 Esta regla comprueba las palabras clave en los idiomas siguientes:
 
 - Visual Basic
-
 - C#
-
 - C++/CLI
 
-Comparación entre mayúsculas y minúsculas se utiliza para [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] comparación distingue mayúsculas de minúsculas y palabras clave se usa para los demás idiomas.
+Comparación entre mayúsculas y minúsculas se utiliza para las palabras clave de Visual Basic, y se usa la comparación distingue mayúsculas de minúsculas para los demás idiomas.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
 
@@ -55,4 +54,14 @@ Seleccione un nombre que no aparece en la lista de palabras clave.
 
 ## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
 
-Puede suprimir una advertencia de esta regla si están convencidos de que el identificador no confundirá a los usuarios de la API, y que la biblioteca se puede usar en todos los idiomas disponibles en .NET Framework.
+Puede suprimir una advertencia de esta regla si está convencido de que el identificador de no confundir a los usuarios de la API, y que la biblioteca se puede usar en todos los idiomas disponibles en. NET.
+
+## <a name="configurability"></a>Capacidad de configuración
+
+Si ejecuta esta regla de [analizadores de FxCop](install-fxcop-analyzers.md) (y no a través de análisis de código estático), puede configurar qué partes de su código base para ejecutar esta regla en, en función de su accesibilidad. Por ejemplo, para especificar que debe ejecutarse la regla sólo con respecto a la superficie de API no públicos, agregue el siguiente par clave-valor a un archivo .editorconfig en el proyecto:
+
+```
+dotnet_code_quality.ca1716.api_surface = private, internal
+```
+
+Puede configurar esta opción para simplemente esta regla, para todas las reglas o para todas las reglas de esta categoría (convenciones de nomenclatura). Para obtener más información, consulte [analizadores de FxCop configurar](configure-fxcop-analyzers.md).

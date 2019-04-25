@@ -9,33 +9,36 @@ helpviewer_keywords:
 ms.assetid: f4cea2e1-08dc-47ac-aba2-3b8c338e607f
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d6b4f6fecabe7947e59a235dbb71e9f5e0803b10
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: a5e39778a2d503470629f6c8b7c9243b9dc69cf3
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53955482"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504086"
 ---
 # <a name="quickstart-debug-with-c-or-visual-basic-using-the-visual-studio-debugger"></a>Inicio rápido: Depurar con C# o Visual Basic mediante el depurador de Visual Studio
 
 El depurador de Visual Studio proporciona muchas características de gran eficacia para ayudar a depurar aplicaciones. En este tema se proporciona una forma rápida de obtener información sobre las características básicas.
 
-## <a name="create-a-new-project"></a>Crear un proyecto nuevo 
+## <a name="create-a-new-project"></a>Crear un proyecto nuevo
 
-1. En Visual Studio, seleccione **Archivo > Nuevo proyecto**.
+1. Abra Visual Studio y cree un nuevo proyecto.
 
-2. En **Visual C#** o **Visual Basic**, elija **.NET Core** y, después, en el panel central, elija **Aplicación de consola (.NET Core)**.
+    ::: moniker range=">=vs-2019"
+    Presione **Esc** para cerrar la ventana de inicio. Presione **Ctrl + Q** para abrir el cuadro de búsqueda, escriba **consola**, elija **Plantillas** y luego, **Create new Console App (.NET Core) project** (Crear proyecto de aplicación de consola [.NET Core]). En el cuadro de diálogo que se abre, elija **Crear**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    En la barra de menús superior, seleccione **Archivo** > **Nuevo** > **Proyecto**. En el panel izquierdo del cuadro de diálogo **Nuevo proyecto**, en **Visual C#**, elija **.NET Core** y luego, en el panel central, **Aplicación de consola (.NET Core)**. Luego escriba un nombre como **MyDbgApp** y haga clic en **Aceptar**.
+    ::: moniker-end
 
-     Si no ve la plantilla de proyecto **Aplicación de consola (.NET Core)**, haga clic en el vínculo **Abrir el instalador de Visual Studio** en el panel izquierdo del cuadro de diálogo **Nuevo proyecto**. Se iniciará el Instalador de Visual Studio. Elija la carga de trabajo **Desarrollo de escritorio de .NET** y **.NET Core** y luego **Modificar**.
-
-3. Escriba un nombre como **MyDbgApp** y haga clic en **Aceptar**.
+     Si no ve la plantilla de proyecto **Aplicación de consola (.NET Core)**, vaya a **Herramientas** > **Obtener herramientas y características…** y se abrirá el instalador de Visual Studio. Elija la carga de trabajo **Desarrollo de escritorio de .NET** y **.NET Core** y luego **Modificar**.
 
     Visual Studio crea el proyecto.
 
-4. En *Program.cs* o *Module1.vb*, reemplace el código siguiente
+1. En *Program.cs* o *Module1.vb*, reemplace el código siguiente
 
     ```csharp
     class Program
@@ -142,7 +145,7 @@ Un *punto de interrupción* es un marcador que indica en qué punto debe Visual 
 
 ## <a name="navigate-code"></a>Navegación en el código
 
-Hay distintos comandos para indicar al depurador que continúe. Aquí se muestra un útil comando de navegación de código que es nuevo en Visual Studio 2017.
+Hay distintos comandos para indicar al depurador que continúe. Aquí se muestra un comando de navegación de código muy útil disponible a partir de Visual Studio 2017.
 
 Mientras la ejecución está detenida en el punto de interrupción, mantenga el puntero sobre la instrucción `c1.AddLast(20)` hasta que aparezca el botón verde **Run to click** (Ejecutar hasta clic) ![Ejecutar hasta clic](../debugger/media/dbg-tour-run-to-click.png "RunToClick") y luego presione el botón **Ejecutar hasta clic**.
 
@@ -158,7 +161,7 @@ Los comandos de teclado habituales usados para ejecutar el código paso a paso s
 
     ![Visualización de una información sobre datos](../debugger/media/dbg-qs-data-tip-csharp.png "View a datatip")
 
-    La información sobre datos muestra el valor actual de la variable `c1` y permite inspeccionar sus propiedades. Al depurar, si ve un valor que no esperaba, probablemente tenga un error en las líneas de código anteriores o de llamada. 
+    La información sobre datos muestra el valor actual de la variable `c1` y permite inspeccionar sus propiedades. Al depurar, si ve un valor que no esperaba, probablemente tenga un error en las líneas de código anteriores o de llamada.
 
 2. Expanda la información sobre datos para ver los valores de propiedad actuales del objeto `c1`.
 
@@ -183,4 +186,4 @@ Para obtener más información sobre el uso de Editar y continuar y las limitaci
 En este tutorial, ha aprendido a iniciar el depurador, a ejecutar el código paso a paso y a inspeccionar variables. Puede ser que le interese analizar las características del depurador con más detenimiento, así como consultar los vínculos disponibles con más información.
 
 > [!div class="nextstepaction"]
-> [Guía de características del depurador](../debugger/debugger-feature-tour.md)
+> [Primer vistazo al depurador](../debugger/debugger-feature-tour.md)

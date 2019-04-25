@@ -1,22 +1,21 @@
 ---
 title: Tutorial analizar código administrado en previsión de defectos de código | Microsoft Docs
 ms.date: 01/29/2018
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis [Visual Studio]
 - managed code, analyzing
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d9b4631b320138d045e910c612c1fa4558a07e56
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+ms.openlocfilehash: 3097e52f99f044257b8eaf634455bdf19978d0c3
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54269229"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55952847"
 ---
 # <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>Tutorial: Análisis de código administrado en previsión de defectos de código
 

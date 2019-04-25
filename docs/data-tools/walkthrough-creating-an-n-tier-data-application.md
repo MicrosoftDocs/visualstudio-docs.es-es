@@ -11,16 +11,15 @@ helpviewer_keywords:
 ms.assetid: d15e4d31-2839-48d9-9e0e-2e73404d82a2
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.prod: visual-studio-dev15
+manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2e224ae331b1fba42d06973777b50e84bf1f7e8b
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
-ms.translationtype: MTE95
+ms.openlocfilehash: 471f0e9b97293bd70457a8f41cb7efddd6acf6c1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53924272"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091829"
 ---
 # <a name="walkthrough-create-an-n-tier-data-application"></a>Tutorial: Crear una aplicación de datos de n niveles
 Las aplicaciones de datos con *n niveles* son aplicaciones que acceden a datos y que están separadas en varias capas lógicas o *niveles*. Al separar los componentes de la aplicación en estos niveles individuales, se aumenta la facilidad de mantenimiento y la escalabilidad de la aplicación. Esto se consigue mediante una integración más sencilla de nuevas tecnologías, que se pueden aplicar a un solo nivel sin necesidad de volver a diseñar la solución completa. Una arquitectura típica con n niveles incluye un nivel de presentación, un nivel intermedio y una capa de datos. El nivel intermedio incluye normalmente una capa de acceso a datos, una capa de la lógica empresarial y componentes compartidos, tales como autenticación y validación. La capa de datos incluye una base de datos relacional. Las aplicaciones con n niveles normalmente almacenan la información confidencial en la capa de acceso a datos del nivel intermedio para aislar esa información de los usuarios finales que obtienen acceso al nivel de presentación. Para obtener más información, consulte [Introducción a las aplicaciones de datos con N niveles](../data-tools/n-tier-data-applications-overview.md).
@@ -31,25 +30,25 @@ Este tutorial muestra cómo separar el código de conjunto de datos y `TableAdap
 
 Durante este tutorial, realice los pasos siguientes:
 
--   Cree una nueva solución de n niveles que contiene varios proyectos.
+- Cree una nueva solución de n niveles que contiene varios proyectos.
 
--   Agregar dos proyectos de bibliotecas de clases a la solución con n niveles.
+- Agregar dos proyectos de bibliotecas de clases a la solución con n niveles.
 
--   Cree un conjunto de datos con tipo mediante el **Asistente para configuración de orígenes de datos**.
+- Cree un conjunto de datos con tipo mediante el **Asistente para configuración de orígenes de datos**.
 
--   Separar generado [TableAdapters](create-and-configure-tableadapters.md) y el código del conjunto de datos en proyectos discretos.
+- Separar generado [TableAdapters](create-and-configure-tableadapters.md) y el código del conjunto de datos en proyectos discretos.
 
--   Crear un servicio de Windows Communication Foundation (WCF) para realizar llamadas al nivel de acceso a datos.
+- Crear un servicio de Windows Communication Foundation (WCF) para realizar llamadas al nivel de acceso a datos.
 
--   Crear funciones en el servicio para recuperar datos del nivel de acceso a datos.
+- Crear funciones en el servicio para recuperar datos del nivel de acceso a datos.
 
--   Crear una aplicación de Windows Forms que actúe como nivel de presentación.
+- Crear una aplicación de Windows Forms que actúe como nivel de presentación.
 
--   Crear controles de formularios Windows Forms enlazados al origen de datos.
+- Crear controles de formularios Windows Forms enlazados al origen de datos.
 
--   Escribir código para rellenar las tablas de datos.
+- Escribir código para rellenar las tablas de datos.
 
-![vínculo a vídeo](../data-tools/media/playvideo.gif) para una versión en vídeo de este tema, consulte [vídeo sobre cómo: Creación de una aplicación de datos de n niveles
+![vínculo a vídeo](../data-tools/media/playvideo.gif) para una versión en vídeo de este tema, consulte [vídeo sobre cómo: Crear una aplicación de datos con n niveles](http://go.microsoft.com/fwlink/?LinkId=115188).
 
 ## <a name="prerequisites"></a>Requisitos previos
 En este tutorial usa SQL Server Express LocalDB y la base de datos de ejemplo Northwind.
@@ -123,7 +122,7 @@ En este tutorial usa SQL Server Express LocalDB y la base de datos de ejemplo No
 
      Si una conexión de datos a la base de datos de ejemplo Northwind está disponible en la lista desplegable, selecciónela.
 
-     o bien
+     -o bien-
 
      Seleccione **nueva conexión** para abrir el **Agregar conexión** cuadro de diálogo.
 
@@ -285,7 +284,7 @@ Este tutorial muestra cómo obtener acceso a la capa de acceso a datos mediante 
 5. En el menú **Compilar** , haga clic en **Compilar solución**.
 
 ## <a name="create-a-presentation-tier-to-display-data-from-the-data-service"></a>Crear un nivel de presentación para mostrar los datos del servicio de datos
- Ahora que la solución contiene el servicio de datos que tiene métodos que llaman a los datos de nivel de acceso a, cree otro proyecto que llama al servicio de datos y presentar los datos a los usuarios. Para este tutorial, cree una aplicación de Windows Forms; éste es el nivel de presentación de la aplicación con n niveles.
+ Ahora que la solución contiene el servicio de datos que tiene métodos que llaman a los datos de nivel de acceso a, cree otro proyecto que llama al servicio de datos y presentar los datos a los usuarios. Para este tutorial, cree una aplicación de formularios Windows Forms; éste es el nivel de presentación de la aplicación con n niveles.
 
 ### <a name="to-create-the-presentation-tier-project"></a>Para crear el proyecto de nivel de presentación
 
@@ -302,7 +301,7 @@ También estableceremos la **PresentationTier** proyecto para que sea el proyect
 
 ### <a name="to-set-the-new-presentation-tier-project-as-the-startup-project"></a>Para establecer el nuevo proyecto de nivel de presentación como proyecto de inicio
 
--   En el **Explorador de soluciones**, haga clic con el botón derecho en **PresentationTier** y después haga clic en **Establecer como proyecto de inicio**.
+- En el **Explorador de soluciones**, haga clic con el botón derecho en **PresentationTier** y después haga clic en **Establecer como proyecto de inicio**.
 
 ## <a name="add-references-to-the-presentation-tier"></a>Agregar referencias al nivel de presentación
  La aplicación cliente PresentationTier requiere una referencia de servicio al servicio de datos para poder acceder a los métodos del servicio. Además, se requiere una referencia al conjunto de datos para que el servicio WCF pueda compartir los tipos. Hasta que habilite el tipo de uso compartido a través del servicio de datos, código agregado a la clase parcial del conjunto de datos no está disponible para el nivel de presentación. Como normalmente se agrega código, como el código de validación para la fila y columna, cambiar los eventos de una tabla de datos, es probable que quiera obtener acceso a este código desde el cliente.
@@ -362,7 +361,7 @@ También estableceremos la **PresentationTier** proyecto para que sea el proyect
 El valor predeterminado de `maxReceivedMessageSize` no es lo suficientemente grande como para contener los datos recuperados de la `Customers` y `Orders` tablas. En los pasos siguientes, deberá aumentar el valor por 6553600. Cambiar el valor en el cliente, que actualiza automáticamente la referencia de servicio.
 
 > [!NOTE]
-> El tamaño predeterminado más bajo está pensado para limitar la exposición a ataques por denegación de servicio (DOS). Para obtener más información, vea <xref:System.ServiceModel.WSHttpBindingBase.MaxReceivedMessageSize%2A>.
+> El tamaño predeterminado más bajo está pensado para limitar la exposición a ataques por denegación de servicio (DOS). Para obtener más información, consulta <xref:System.ServiceModel.WSHttpBindingBase.MaxReceivedMessageSize%2A>.
 
 ### <a name="to-increase-the-maxreceivedmessagesize-value"></a>Para aumentar el valor de maxReceivedMessageSize
 
@@ -376,9 +375,9 @@ Ejecute la aplicación presionando **F5**. Los datos de la `Customers` y `Orders
 ## <a name="next-steps"></a>Pasos siguientes
  En función de los requisitos de la aplicación, hay varios pasos que es posible que desee realizar después de guardar los datos relacionados en la aplicación basada en Windows. Por ejemplo, a continuación se indican algunas de las mejoras que podría realizar en esta aplicación:
 
--   Agregar validación al conjunto de datos.
+- Agregar validación al conjunto de datos.
 
--   Agregar métodos adicionales al servicio para actualizar los datos de nuevo en la base de datos.
+- Agregar métodos adicionales al servicio para actualizar los datos de nuevo en la base de datos.
 
 ## <a name="see-also"></a>Vea también
 

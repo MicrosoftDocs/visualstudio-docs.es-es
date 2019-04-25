@@ -2,19 +2,18 @@
 title: Reglas de anidamiento de archivos para el Explorador de soluciones
 ms.date: 05/25/2018
 ms.topic: conceptual
-ms.prod: visual-studio-dev15
 helpviewer_keywords:
 - file nesting
 - Solution Explorer, file nesting
 author: angelosp
 ms.author: angelpe
-manager: douge
-ms.openlocfilehash: d4e2767b5b4286dbf57cca6a3b1445cae55fe1a5
-ms.sourcegitcommit: 38db86369af19e174b0aba59ba1918a5c4fe4a61
+manager: jillfra
+ms.openlocfilehash: 58e727c6335dd391abab4f50a110d361a658e00a
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54269286"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55955991"
 ---
 # <a name="customize-file-nesting-in-solution-explorer"></a>Personalizar el anidamiento de archivos en el Explorador de soluciones
 

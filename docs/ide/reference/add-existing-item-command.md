@@ -1,7 +1,6 @@
 ---
 title: Agregar elemento existente (Comando)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - project.addexistingitem
@@ -11,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 41f56131-d4c7-4f81-83b7-bdac713ea870
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd74b6af128ee8b624c022cbbf72c5de4edc7997
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b8ab2ce6e9f1260172bf0ffbf0aede9138a5115f
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53873994"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55951571"
 ---
 # <a name="add-existing-item-command"></a>Agregar elemento existente (Comando)
 Agrega un archivo existente a la solución actual y lo abre.

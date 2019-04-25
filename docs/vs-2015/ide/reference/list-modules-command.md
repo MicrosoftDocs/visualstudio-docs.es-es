@@ -1,14 +1,9 @@
 ---
 title: Comando Mostrar módulos | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - debug.listmodules
 helpviewer_keywords:
@@ -19,18 +14,17 @@ ms.assetid: 3cb73774-6ac0-43b2-b781-75ed47175bfd
 caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 97a269fd5ed0e30e648e2dade210ab0238c8d759
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 7d24b081c20b5874d6daa57832136023ac678c0f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49246704"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649738"
 ---
 # <a name="list-modules-command"></a>Mostrar módulos (Comando)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Enumera los módulos del proceso actual.  
   
 ## <a name="syntax"></a>Sintaxis  
@@ -82,6 +76,3 @@ Debug.ListModules /Address:yes /Name:yes /Order:no /Path:no /Process:no /SymbolF
  [Comandos de Visual Studio](../../ide/reference/visual-studio-commands.md)   
  [Ventana Comandos](../../ide/reference/command-window.md)   
  [Cómo: Usar la ventana Módulos](../../debugger/how-to-use-the-modules-window.md)
-
-
-

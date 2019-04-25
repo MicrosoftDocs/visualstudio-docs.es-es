@@ -1,14 +1,9 @@
 ---
 title: Operadores de búsqueda avanzada en expresiones de búsqueda | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - Help Viewer 2.0, searching for keywords
 - Help Viewer 2.0, searching code
@@ -20,13 +15,13 @@ ms.assetid: 0cdc1746-8481-45ec-9c53-d0d89cdcbd5e
 caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 706d6d89d46a1e5db4f94c2e7d5e35ace73e1bac
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 9c2b8df3878f67207b22127881722aedd8caae8e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49178007"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54775579"
 ---
 # <a name="advanced-search-operators-in-search-expressions"></a>operadores de búsqueda avanzada en expresiones de búsqueda
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +33,7 @@ Mediante el uso de operadores de búsqueda avanzada, puede refinar la búsqueda 
   
 |Para buscar|Usar|Ejemplo|Resultado|  
 |-------------------|---------|-------------|------------|  
-|Un término en el título del tema|title:|title:binaryreader|Temas que contienen "binaryreader" en sus títulos.|  
+|Un término en el título del tema|title:|title:binaryreader|Temas que contienen "binaryreader" en los títulos.|  
 |Un término en un ejemplo de código|code:|code:readdouble|Temas que contienen "readdouble" en un ejemplo de código.|  
 |Un término en un ejemplo de un lenguaje de programación específico|code:vb:|code:vb:string|Temas que contienen "string" en un ejemplo de Visual Basic.|  
 |Un tema que está asociado a una palabra clave de índice específica|keyword:|keyword:readbyte|Temas que están asociados con la palabra clave de índice "readbyte".|  
@@ -48,7 +43,7 @@ Mediante el uso de operadores de búsqueda avanzada, puede refinar la búsqueda 
 |Lenguaje de programación|Usar|  
 |--------------------------|---------|  
 |Visual Basic|code:vb<br /><br /> o<br /><br /> code:visualbasic|  
-|C#|code:c#<br /><br /> o<br /><br /> code:csharp|  
+|C#|code:C#<br /><br /> o<br /><br /> code:csharp|  
 |C++|code:cpp<br /><br /> o<br /><br /> code:c++<br /><br /> o<br /><br /> code:cplusplus|  
 |F#|code:f#<br /><br /> o<br /><br /> code:fsharp|  
 |JavaScript|code:javascript<br /><br /> o<br /><br /> code:js|  
@@ -57,6 +52,3 @@ Mediante el uso de operadores de búsqueda avanzada, puede refinar la búsqueda 
 ## <a name="see-also"></a>Vea también  
  [Operadores lógicos en expresiones de búsqueda](../ide/logical-operators-in-search-expressions.md)   
  [Sugerencias para la búsqueda de texto completo](../ide/full-text-search-tips.md)
-
-
-

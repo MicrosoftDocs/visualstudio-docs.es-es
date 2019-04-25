@@ -1,14 +1,9 @@
 ---
 title: SccWillCreateSccFile (función) | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccWillCreateSccFile
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 0d7542f0-4351-41b3-b24c-960ab99c05a1
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: b61e6c1c0cccd90b65142220bde5d595ef98f99b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: cb0df475098a0fb0675327cece6dd9c643a0c4d7
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51759725"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58997121"
 ---
 # <a name="sccwillcreatesccfile-function"></a>SccWillCreateSccFile (Función)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +39,7 @@ SCCRTN SccWillCreateSccFile(
  pContext  
  [in] El puntero de contexto de complemento de control de código fuente.  
   
- n  
+ nFiles  
  [in] El número de nombres de archivo incluidos en el `lpFileNames` de matriz, así como la longitud de la `pbSccFiles` matriz.  
   
  lpFileNames  
@@ -68,4 +63,3 @@ SCCRTN SccWillCreateSccFile(
 ## <a name="see-also"></a>Vea también  
  [Funciones de API de complemento de Control de código fuente](../extensibility/source-control-plug-in-api-functions.md)   
  [Archivo MSSCCPRJ.SCC](../extensibility/mssccprj-scc-file.md)
-

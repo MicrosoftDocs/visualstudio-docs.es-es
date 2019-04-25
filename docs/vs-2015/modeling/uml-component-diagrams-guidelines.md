@@ -1,12 +1,9 @@
 ---
-title: 'Diagramas de componentes UML: Instrucciones | Microsoft Docs'
-ms.custom: ''
+title: 'Diagramas de componentes UML: Instrucciones | Documentos de Microsoft'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML diagrams, component
 - diagrams - modeling, component
@@ -17,15 +14,15 @@ ms.assetid: 6c1bdd60-369e-477e-83ed-7f6fe75c9f0b
 caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 7400bac1fa6dcbf086718e54d18288b8ab80f1b0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0b4a5e7e626e7cf9510047f0b016ff80ea8203e1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51801484"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056788"
 ---
-# <a name="uml-component-diagrams-guidelines"></a>Diagramas de componentes de UML: Instrucciones
+# <a name="uml-component-diagrams-guidelines"></a>Diagramas de componentes UML: Instrucciones
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 En Visual Studio, puede dibujar un *diagrama de componentes* para mostrar la estructura de un sistema de software. Para una demostración en vídeo, consulte [diseñar la estructura física mediante diagramas de componentes](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-6-Designing-a-Projects-Physical-Structure/).  
@@ -44,17 +41,17 @@ En Visual Studio, puede dibujar un *diagrama de componentes* para mostrar la est
   
   Puede utilizar un diagrama de componentes para representar el diseño con independencia del lenguaje o plataforma que el diseño utiliza o va a utilizar.  
   
-##  <a name="OtherDiagrams"></a> Relación con otros diagramas  
+## <a name="OtherDiagrams"></a> Relación con otros diagramas  
  Puede utilizar un diagrama de componentes junto con otros diagramas.  
   
 |Otro diagrama|Ayuda a debatir y transmitir los siguientes aspectos del diseño|  
 |-------------------|--------------------------------------------------------------------|  
-|Diagrama de secuencia UML|-Las interacciones entre los componentes del sistema<br />-Las interacciones entre los elementos dentro de un componente.<br /><br /> Para obtener más información, consulte [diagramas de secuencia UML: instrucciones](../modeling/uml-sequence-diagrams-guidelines.md).|  
-|Diagrama de clases de UML|-Las interfaces de un componente. El diagrama de clases permite detallar los métodos de la interfaz.<br />-Los datos enviados en los parámetros a través de interfaces de los componentes.<br /><br /> Para obtener más información, consulte [diagramas de clases UML: instrucciones](../modeling/uml-class-diagrams-guidelines.md).|  
-|Diagramas de actividades|-El procesamiento interno efectuado por un componente en respuesta a los mensajes entrantes.<br /><br /> Para obtener más información, consulte [diagramas de actividades UML: instrucciones](../modeling/uml-activity-diagrams-guidelines.md).|  
+|Diagrama de secuencia UML|-Las interacciones entre los componentes del sistema<br />-Las interacciones entre los elementos dentro de un componente.<br /><br /> Para obtener más información, consulte [diagramas de secuencia UML: Directrices](../modeling/uml-sequence-diagrams-guidelines.md).|  
+|Diagrama de clases de UML|-Las interfaces de un componente. El diagrama de clases permite detallar los métodos de la interfaz.<br />-Los datos enviados en los parámetros a través de interfaces de los componentes.<br /><br /> Para más información, vea [Diagramas de clases de UML: Directrices](../modeling/uml-class-diagrams-guidelines.md).|  
+|Diagramas de actividades|-El procesamiento interno efectuado por un componente en respuesta a los mensajes entrantes.<br /><br /> Para obtener más información, consulte [diagramas de actividades UML: Directrices](../modeling/uml-activity-diagrams-guidelines.md).|  
 |Diagramas de capas|-Los niveles arquitectónicos lógicos para los componentes.<br /><br /> Para obtener más información, consulte [diagramas de capas: referencia](../modeling/layer-diagrams-reference.md).|  
   
-##  <a name="Basics"></a> Pasos básicos para dibujar diagramas de componentes  
+## <a name="Basics"></a> Pasos básicos para dibujar diagramas de componentes  
  Para obtener información de referencia sobre los elementos de diagramas de componentes, consulte [diagramas de componentes UML: referencia](../modeling/uml-component-diagrams-reference.md).  
   
  Para obtener más información sobre cómo usar diagramas de componentes en el proceso de diseño, vea [modelar la arquitectura de la aplicación](../modeling/model-your-app-s-architecture.md).  
@@ -64,13 +61,13 @@ En Visual Studio, puede dibujar un *diagrama de componentes* para mostrar la est
   
 #### <a name="to-create-a-component-diagram"></a>Para crear un diagrama de componentes  
   
-1.  En el **arquitectura** menú, haga clic en **nuevo UML o diagrama de capas**.  
+1. En el **arquitectura** menú, haga clic en **nuevo UML o diagrama de capas**.  
   
-2.  En **plantillas**, haga clic en **diagrama de componentes UML**.  
+2. En **plantillas**, haga clic en **diagrama de componentes UML**.  
   
-3.  Especifique un nombre para el diagrama.  
+3. Especifique un nombre para el diagrama.  
   
-4.  En **agregar a proyecto de modelado**, seleccione un proyecto de modelado existente de la solución, o **crear un nuevo proyecto de modelado**y, a continuación, haga clic en **Aceptar**...  
+4. En **agregar a proyecto de modelado**, seleccione un proyecto de modelado existente de la solución, o **crear un nuevo proyecto de modelado**y, a continuación, haga clic en **Aceptar**...  
   
      Aparece un nuevo diagrama de componentes con UML **diagrama de componentes** cuadro de herramientas. El cuadro de herramientas contiene las relaciones y elementos necesarios.  
   
@@ -83,25 +80,25 @@ En Visual Studio, puede dibujar un *diagrama de componentes* para mostrar la est
   
 ##### <a name="to-create-components"></a>Para crear componentes  
   
-1.  Haga clic en **componente** en el cuadro de herramientas y, a continuación, haga clic en una parte en blanco del diagrama.  
+1. Haga clic en **componente** en el cuadro de herramientas y, a continuación, haga clic en una parte en blanco del diagrama.  
   
      \- o -  
   
      Copie y pegue un componente existente.  
   
-    1.  Busque un componente existente en un diagrama o en **Explorador de modelos UML**.  
+    1. Busque un componente existente en un diagrama o en **Explorador de modelos UML**.  
   
-    2.  Haga clic en el componente y, a continuación, haga clic en **copia**.  
+    2. Haga clic en el componente y, a continuación, haga clic en **copia**.  
   
-    3.  Abra el diagrama en el que desea que aparezca el componente copiado.  
+    3. Abra el diagrama en el que desea que aparezca el componente copiado.  
   
-    4.  Haga clic en una parte en blanco del diagrama y, a continuación, haga clic en **pegar**.  
+    4. Haga clic en una parte en blanco del diagrama y, a continuación, haga clic en **pegar**.  
   
          Aparece una copia del componente con un nombre nuevo.  
   
-2.  Haga clic en el nombre del componente para cambiarlo.  
+2. Haga clic en el nombre del componente para cambiarlo.  
   
-3.  Haga clic en el botón de contenido adicional 5) si desea ver exclusivamente el encabezado del componente.  
+3. Haga clic en el botón de contenido adicional 5) si desea ver exclusivamente el encabezado del componente.  
   
 ### <a name="showing-the-ports-of-a-component"></a>Mostrar los puertos de un componente  
  Un *puerto* (2, 3) representa un grupo de mensajes o llamadas de operación que tienen como origen o destino un componente. El grupo se describe mediante una interfaz, que define el tipo de puerto. Un puerto puede proporcionar o necesitar una interfaz.  
@@ -147,24 +144,24 @@ En Visual Studio, puede dibujar un *diagrama de componentes* para mostrar la est
   
 ##### <a name="to-add-a-port-for-an-existing-interface-to-a-component"></a>Para agregar un puerto de una interfaz existente a un componente  
   
--   Busque la interfaz en **Explorador de modelos UML** y, a continuación, arrástrelo hasta el componente.  
+- Busque la interfaz en **Explorador de modelos UML** y, a continuación, arrástrelo hasta el componente.  
   
-     O bien  
+     -o bien-  
   
--   Copie y pegue una referencia a una interfaz desde un diagrama.  
+- Copie y pegue una referencia a una interfaz desde un diagrama.  
   
-    1.  En un diagrama de clases o un diagrama de componentes, haga clic en la interfaz y, a continuación, haga clic en **copia**.  
+    1. En un diagrama de clases o un diagrama de componentes, haga clic en la interfaz y, a continuación, haga clic en **copia**.  
   
-    2.  En el diagrama de componentes, haga clic en el componente y, a continuación, haga clic en **Pegar referencia**.  
+    2. En el diagrama de componentes, haga clic en el componente y, a continuación, haga clic en **Pegar referencia**.  
   
          En el componente aparece una interfaz proporcionada. Cerca aparece una etiqueta de acción.  
   
         > [!NOTE]
         >  Si usas **pegar** en lugar de **Pegar referencia**, se creará una nueva interfaz que tiene un nombre nuevo.  
   
-    3.  Si desea crear una interfaz necesaria, haga clic en la etiqueta de acción y, a continuación, haga clic en **convertir en Required Interface**.  
+    3. Si desea crear una interfaz necesaria, haga clic en la etiqueta de acción y, a continuación, haga clic en **convertir en Required Interface**.  
   
-##  <a name="Parts"></a> Mostrar los elementos internos de un componente  
+## <a name="Parts"></a> Mostrar los elementos internos de un componente  
  ![Diagrama de componentes mostrando elementos internos](../modeling/media/uml-compshowing.png "UML_CompShowing")  
   
  Puede incluir elementos (3) en un componente (1) para mostrar que está formado de componentes más pequeños que interactúan entre sí.  
@@ -183,9 +180,9 @@ En Visual Studio, puede dibujar un *diagrama de componentes* para mostrar la est
   
 #### <a name="to-add-parts-to-a-component"></a>Para agregar elementos a un componente  
   
-1.  Cree un elemento para cada unidad funcional principal que cree que forma parte del componente primario.  
+1. Cree un elemento para cada unidad funcional principal que cree que forma parte del componente primario.  
   
-    1.  Haga clic en **componente** en el cuadro de herramientas y, a continuación, haga clic dentro del componente primario (1).  
+    1. Haga clic en **componente** en el cuadro de herramientas y, a continuación, haga clic dentro del componente primario (1).  
   
          Aparece un nuevo elemento (3) dentro del componente primario.  
   
@@ -205,9 +202,9 @@ En Visual Studio, puede dibujar un *diagrama de componentes* para mostrar la est
   
          Aparece un nuevo elemento (3) dentro del componente primario. Su tipo es el componente que copió.  
   
-    2.  Haga clic en el nombre del nuevo componente para cambiarlo. Su tipo no se puede modificar.  
+    2. Haga clic en el nombre del nuevo componente para cambiarlo. Su tipo no se puede modificar.  
   
-    3.  Puede agregar interfaces proporcionadas y necesarias (4, 5) al nuevo elemento. Haga clic en el **Provided Interface** o **Required Interface** herramienta y, a continuación, haga clic en la parte.  
+    3. Puede agregar interfaces proporcionadas y necesarias (4, 5) al nuevo elemento. Haga clic en el **Provided Interface** o **Required Interface** herramienta y, a continuación, haga clic en la parte.  
   
          \- o -  
   
@@ -215,15 +212,15 @@ En Visual Studio, puede dibujar un *diagrama de componentes* para mostrar la est
   
          Las interfaces se agregan al tipo del elemento y aparecen en el propio elemento. El componente primario ajusta su tamaño, si es necesario.  
   
-2.  Conecte los elementos entre sí.  
+2. Conecte los elementos entre sí.  
   
-    -   Use la **dependencia** herramienta para conectar los puertos de distintos elementos (6).  
+    - Use la **dependencia** herramienta para conectar los puertos de distintos elementos (6).  
   
-3.  Conecte los puertos a los puertos del componente primario:  
+3. Conecte los puertos a los puertos del componente primario:  
   
-    1.  Cree uno o varios puertos (7) en el componente primario. Haga clic en **Required Interface** o **Provided Interface** en el cuadro de herramientas y, a continuación, haga clic en el componente primario.  
+    1. Cree uno o varios puertos (7) en el componente primario. Haga clic en **Required Interface** o **Provided Interface** en el cuadro de herramientas y, a continuación, haga clic en el componente primario.  
   
-    2.  Cree delegados (9) del puerto en uno o varios elementos. Haga clic en el **delegación** herramienta, a continuación, un puerto en el componente primario y, a continuación, un puerto de un elemento. A través de este mismo mecanismo, puede conectar puertos que proporcionan o necesitan interfaces.  
+    2. Cree delegados (9) del puerto en uno o varios elementos. Haga clic en el **delegación** herramienta, a continuación, un puerto en el componente primario y, a continuación, un puerto de un elemento. A través de este mismo mecanismo, puede conectar puertos que proporcionan o necesitan interfaces.  
   
 ### <a name="showing-the-parts-of-a-part"></a>Mostrar los elementos que conforman un elemento  
  Después de descomponer un componente en elementos, puede descomponer cada uno de los tipos de elementos en sus propios elementos internos.  
@@ -232,13 +229,13 @@ En Visual Studio, puede dibujar un *diagrama de componentes* para mostrar la est
   
 ##### <a name="to-place-a-parts-type-on-a-diagram"></a>Para situar un tipo de elemento en un diagrama  
   
-1.  Especifique el nombre completo del tipo de elemento.  
+1. Especifique el nombre completo del tipo de elemento.  
   
      Haga clic en el elemento y, a continuación, haga clic en **propiedades**.  
   
      El nombre del tipo aparece en el **tipo** campo de la ventana Propiedades.  
   
-2.  Busque el tipo del elemento en **Explorador de modelos UML**.  
+2. Busque el tipo del elemento en **Explorador de modelos UML**.  
   
      Haga clic en **vista**, apunte a **Other Windows**y, a continuación, haga clic en **Explorador de modelos UML**.  
   
@@ -248,9 +245,9 @@ En Visual Studio, puede dibujar un *diagrama de componentes* para mostrar la est
   
      Si lo desea, puede cambiar su nombre aquí.  
   
-3.  Abra o cree otro diagrama de componentes.  
+3. Abra o cree otro diagrama de componentes.  
   
-4.  Arrastre el tipo del Explorador de modelo UML al diagrama.  
+4. Arrastre el tipo del Explorador de modelo UML al diagrama.  
   
      En el diagrama aparece una vista del tipo como componente.  
   
@@ -258,7 +255,7 @@ En Visual Studio, puede dibujar un *diagrama de componentes* para mostrar la est
   
      Ahora puede agregar otros elementos.  
   
-##  <a name="Designing"></a> Diseñar el componente  
+## <a name="Designing"></a> Diseñar el componente  
   
 ### <a name="describing-how-the-parts-collaborate"></a>Describir cómo colaboran los elementos  
  Puede dibujar un diagrama de secuencia para mostrar el modo en que los elementos trabajan juntos en respuesta a un mensaje que llega al componente primario.  
@@ -277,23 +274,23 @@ En Visual Studio, puede dibujar un *diagrama de componentes* para mostrar la est
   
 ##### <a name="to-draw-a-sequence-diagram-that-shows-collaboration-between-parts"></a>Para dibujar un diagrama de secuencia en el que se muestre la colaboración entre los elementos  
   
-1.  Cree un nuevo diagrama de secuencia.  
+1. Cree un nuevo diagrama de secuencia.  
   
-     Para obtener más información, consulte [diagramas de secuencia UML: instrucciones](../modeling/uml-sequence-diagrams-guidelines.md).  
+     Para obtener más información, consulte [diagramas de secuencia UML: Directrices](../modeling/uml-sequence-diagrams-guidelines.md).  
   
-2.  Cree una línea de vida en un componente externo, usuario, dispositivo u otro actor (1) que envíe mensajes a este componente.  
+2. Cree una línea de vida en un componente externo, usuario, dispositivo u otro actor (1) que envíe mensajes a este componente.  
   
      Puede establecer el **Actor** propiedad de esta línea de vida en true para indicar que es externa al componente en cuestión. Sobre la línea de vida aparece un dibujo esquemático.  
   
-3.  Cree una línea de vida en la interfaz proporcionada (2) de este componente al que el actor seleccionado envía mensajes.  
+3. Cree una línea de vida en la interfaz proporcionada (2) de este componente al que el actor seleccionado envía mensajes.  
   
-4.  Cree una línea de vida en cada elemento (3) del componente.  
+4. Cree una línea de vida en cada elemento (3) del componente.  
   
-5.  Cree una línea de vida en cada interfaz necesaria (4) del componente.  
+5. Cree una línea de vida en cada interfaz necesaria (4) del componente.  
   
-6.  Dibuje mensajes procedentes del actor externo (5). Muestre cómo se pasa el mensaje a los elementos y cómo estos elementos colaboran para responder al mensaje.  
+6. Dibuje mensajes procedentes del actor externo (5). Muestre cómo se pasa el mensaje a los elementos y cómo estos elementos colaboran para responder al mensaje.  
   
-7.  Siempre que sea necesario, muestre los mensajes enviados a una interfaz necesaria (6). No muestre los detalles de la ejecución del mensaje.  
+7. Siempre que sea necesario, muestre los mensajes enviados a una interfaz necesaria (6). No muestre los detalles de la ejecución del mensaje.  
   
 ### <a name="is-the-component-more-than-its-parts"></a>¿Es el componente mayor que la suma de sus partes?  
  En algunos casos, un componente no es más que un nombre que se asigna a una colección de elementos. Los elementos realizan todo el trabajo y no hay ningún código ni ningún otro artefacto en tiempo de ejecución que represente al componente.  
@@ -301,7 +298,7 @@ En Visual Studio, puede dibujar un *diagrama de componentes* para mostrar la est
  Puede indicar en el modelo estableciendo el **Is Indirectly Instantiated** propiedad del componente. En este caso, todas las interfaces del componente deben estar en los puertos, con delegaciones en los elementos internos.  
   
 ### <a name="describing-the-process-inside-each-part"></a>Describir el proceso que tiene lugar en cada elemento  
- Puede utilizar diagramas de actividades para mostrar cómo un componente procesa cada mensaje entrante. Para obtener más información, consulte [diagramas de actividades UML: instrucciones](../modeling/uml-activity-diagrams-guidelines.md).  
+ Puede utilizar diagramas de actividades para mostrar cómo un componente procesa cada mensaje entrante. Para obtener más información, consulte [diagramas de actividades UML: Directrices](../modeling/uml-activity-diagrams-guidelines.md).  
   
  ![Diagrama de actividades con búfer de datos](../modeling/media/uml-compdescribingproc.png "UML_CompDescribingProc")  
   
@@ -312,11 +309,11 @@ En Visual Studio, puede dibujar un *diagrama de componentes* para mostrar la est
 ### <a name="defining-data-and-classes"></a>Definir datos y clases  
  Puede utilizar un diagrama de clases de UML para describir en detalle el contenido de:  
   
--   Las interfaces de los componentes. Cuando se agrega un puerto que requiere o proporciona interfaces a un componente, aparece una interfaz en el Explorador de modelos UML. Puede arrastrarla o copiarla en un diagrama de clases UML para mostrar sus atributos y operaciones, y las relaciones con otras interfaces.  
+- Las interfaces de los componentes. Cuando se agrega un puerto que requiere o proporciona interfaces a un componente, aparece una interfaz en el Explorador de modelos UML. Puede arrastrarla o copiarla en un diagrama de clases UML para mostrar sus atributos y operaciones, y las relaciones con otras interfaces.  
   
--   Los datos que se pasan en los parámetros de las operaciones de las interfaces.  
+- Los datos que se pasan en los parámetros de las operaciones de las interfaces.  
   
--   Los datos almacenados en los componentes, por ejemplo, tal y como se muestran en los flujos de objetos de los diagramas de actividades.  
+- Los datos almacenados en los componentes, por ejemplo, tal y como se muestran en los flujos de objetos de los diagramas de actividades.  
   
 ### <a name="general-dependencies-between-components"></a>Dependencias generales entre componentes  
  Puede utilizar un diagrama de componentes para mostrar exclusivamente los elementos principales del diseño y sus interdependencias.  
@@ -337,12 +334,9 @@ En Visual Studio, puede dibujar un *diagrama de componentes* para mostrar la est
   
 ## <a name="see-also"></a>Vea también  
  [Editar modelos y diagramas UML](../modeling/edit-uml-models-and-diagrams.md)   
- [Diagramas de componentes UML: referencia](../modeling/uml-component-diagrams-reference.md)   
- [Diagramas de secuencia UML: referencia](../modeling/uml-sequence-diagrams-reference.md)   
- [Diagramas de casos de uso UML: referencia](../modeling/uml-use-case-diagrams-reference.md)   
- [Diagramas de clases UML: referencia](../modeling/uml-class-diagrams-reference.md)   
- [Diagramas de componentes UML: referencia](../modeling/uml-component-diagrams-reference.md)   
+ [Diagramas de componentes UML: Referencia](../modeling/uml-component-diagrams-reference.md)   
+ [Diagramas de secuencia de UML: Referencia](../modeling/uml-sequence-diagrams-reference.md)   
+ [Diagramas de casos de uso UML: Referencia](../modeling/uml-use-case-diagrams-reference.md)   
+ [Diagrama de clases de UML: Referencia](../modeling/uml-class-diagrams-reference.md)   
+ [Diagramas de componentes UML: Referencia](../modeling/uml-component-diagrams-reference.md)   
  [Vídeo: Diseñar la estructura física mediante diagramas de componentes](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-6-Designing-a-Projects-Physical-Structure/)
-
-
-

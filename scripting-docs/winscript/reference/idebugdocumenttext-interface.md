@@ -2,7 +2,6 @@
 title: IDebugDocumentText (interfaz) | Documentos de Microsoft
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,12 +13,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 763678b08c22fe34ec6ffebbe670fb8b50af6576
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 8878e1ce6e9ad05fc94b134a2e71847b67d578d2
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54344400"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58151731"
 ---
 # <a name="idebugdocumenttext-interface"></a>IDebugDocumentText (Interfaz)
 Proporciona acceso a una versión de solo texto del documento de depuración. Esta interfaz usa las siguientes convenciones:  

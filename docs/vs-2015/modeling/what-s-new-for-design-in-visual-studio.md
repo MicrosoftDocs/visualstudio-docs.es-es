@@ -1,31 +1,26 @@
 ---
-title: ¿Qué&#39;Novedades de diseño en Visual Studio | Documentos de Microsoft
-ms.custom: ''
+title: ¿Qué&#39;s nuevo para el diseño
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-techdebt
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
-- what's new [VIsual Studio ALM], architecture and modeling
+- what's new [VIsual Studio], architecture and modeling
 - architecture [Visual Studio Ultimate], modeling
-- modeling software [Visual Studio ALM], What's New
+- modeling software [Visual Studio], What's New
 ms.assetid: 36ab5c17-6dc0-4075-a28e-a0fa49b11260
 caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: ee504d0054c52649d48676451168e7dea171b6af
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 148da7602d8198a4c85e2a7fbee2107b4e9662d1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51771288"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039064"
 ---
-# <a name="whats-new-for-design-in-visual-studio"></a>Novedades de diseño en Visual Studio
+# <a name="whats-new-for-design-in-visual-studio-in-visual-studio-2015"></a>Novedades de diseño en Visual Studio en Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 Esta versión de Visual Studio incluye las siguientes mejoras para ayudarle a comprender y diseñar mejor el código.
 
@@ -51,7 +46,7 @@ Esta versión de Visual Studio incluye las siguientes mejoras para ayudarle a co
 
 - **Obtención más rápida de mapas de código reactivos**. Las operaciones de arrastrar y colocar producen un resultado inmediato y los vínculos entre los nodos se crean mucho más rápidamente, sin que ello afecte a las operaciones posteriores iniciadas por el usuario, como la expansión de un nodo o la solicitud de más nodos. Al crear mapas de código sin compilar la solución, todos los casos extremos y problemáticos—por ejemplo, cuando no se compilan los ensamblados— ahora se procesan.
 
-- **Omitir la recompilación de la solución.** Mejora el rendimiento en la creación y edición de diagramas.
+- **Omisión de la recompilación de la solución**. Mejora el rendimiento en la creación y edición de diagramas.
 
 - **Filtrado de grupos y nodos de elementos de código**. Ordene rápidamente los mapas: muestre u oculte elementos de código por categoría y agrupe elementos de código por carpetas de solución, ensamblados, espacios de nombres, carpetas de proyecto y tipos.
 
@@ -61,7 +56,7 @@ Esta versión de Visual Studio incluye las siguientes mejoras para ayudarle a co
 
   Vea [Map dependencies across your solutions](../modeling/map-dependencies-across-your-solutions.md).
 
-  **Otros cambios de diseño y modelado en esta versión:**
+  **Otros cambios de diseño y modelado incluidos en esta versión:**
 
 - **Diagramas de capas**. Actualice estos diagramas mediante la Vista de clases y el Explorador de objetos. A fin de cumplir los requisitos de diseño de software, use diagramas de capas para describir las dependencias deseadas para el software. Mantenga la coherencia del código con este diseño mediante la búsqueda de código que no cumpla estas restricciones y la validación de código futuro con esta línea base.
 
@@ -69,7 +64,7 @@ Esta versión de Visual Studio incluye las siguientes mejoras para ayudarle a co
 
 - **Explorador de arquitectura**. El Explorador de arquitectura ya no se puede usar para crear diagramas. Pero se puede seguir usando el Explorador de soluciones.
 
-##  <a name="VersionSupport"></a> Compatibilidad con la edición de arquitectura y modelado de herramientas
+## <a name="VersionSupport"></a> Compatibilidad con la edición de arquitectura y modelado de herramientas
 
 Visual Studio 2015 está disponible en varias ediciones. No todas estas proporcionan compatibilidad con la arquitectura y las herramientas de modelado. En la tabla siguiente se muestra la disponibilidad de cada herramienta.
 

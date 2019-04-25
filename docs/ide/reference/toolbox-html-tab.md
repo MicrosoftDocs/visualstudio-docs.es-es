@@ -1,7 +1,6 @@
 ---
 title: Cuadro de herramientas, HTML (Pestaña)
 ms.date: 06/21/2017
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - vs.toolbox.html
@@ -11,15 +10,15 @@ helpviewer_keywords:
 - HTML tab in Toolbox
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e2f51ce6b1aee945bb368f3206d136bf7f4d1565
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 420a65fb8b91495c5fbba228e190b5589019c99f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53862931"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62576980"
 ---
 # <a name="toolbox-html-tab"></a>Cuadro de herramientas, HTML (Pestaña)
 

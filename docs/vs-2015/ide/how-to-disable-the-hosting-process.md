@@ -1,14 +1,9 @@
 ---
 title: 'Cómo: Deshabilitar el proceso de hospedaje | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 helpviewer_keywords:
 - hosting process, disabling
 - vshost.exe, disabling the hosting process
@@ -16,13 +11,13 @@ ms.assetid: 9157488d-737f-454b-8d8d-36f99de38bb0
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4251e5aac5042b610ed32f95a13ba5d6ffb9d4eb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 92e4fb1ae7cf7acf387eb9387284534eb55c1066
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49848494"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040020"
 ---
 # <a name="how-to-disable-the-hosting-process"></a>Cómo: Deshabilitar el proceso de alojamiento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,16 +38,13 @@ Las llamadas a ciertas API pueden verse afectadas cuando se habilita el proceso 
   
    En general, cuando se deshabilita el proceso de hospedaje:  
   
--   Aumenta el tiempo necesario para empezar a depurar las aplicaciones de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].  
+- Aumenta el tiempo necesario para empezar a depurar las aplicaciones de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].  
   
--   No está disponible la evaluación de expresiones en tiempo de diseño.  
+- No está disponible la evaluación de expresiones en tiempo de diseño.  
   
--   No está disponible la depuración de confianza parcial.  
+- No está disponible la depuración de confianza parcial.  
   
 ## <a name="see-also"></a>Vea también  
  [Depuración y proceso de hospedaje](../debugger/debugging-and-the-hosting-process.md)   
  [Proceso de alojamiento (vshost.exe)](../ide/hosting-process-vshost-exe.md)   
- [Versiones de compilación durante el desarrollo de una aplicación](http://msdn.microsoft.com/en-us/c9497d62-3b7b-4449-88e8-cf27acc9efe6)
-
-
-
+ [Versiones de compilación durante el desarrollo de una aplicación](http://msdn.microsoft.com/c9497d62-3b7b-4449-88e8-cf27acc9efe6)

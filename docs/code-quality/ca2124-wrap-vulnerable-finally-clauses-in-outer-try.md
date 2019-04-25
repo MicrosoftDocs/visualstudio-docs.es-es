@@ -1,7 +1,6 @@
 ---
 title: 'CA2124: Incluir cláusulas finally vulnerables en un bloque try externo'
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - CA2124
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 82efd224-9e60-4b88-a0f5-dfabcc49a254
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a15c5019dd5f3084ff250015e8a9725f4dbf971
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 1c35a15e9ce1468edd2882396192a27a3fcc2c86
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53829295"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55970353"
 ---
 # <a name="ca2124-wrap-vulnerable-finally-clauses-in-outer-try"></a>CA2124: Incluir cláusulas finally vulnerables en un bloque try externo
 

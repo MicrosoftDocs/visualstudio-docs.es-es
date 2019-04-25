@@ -8,20 +8,20 @@ dev_langs:
 helpviewer_keywords:
 - application pages [SharePoint development in Visual Studio], developing
 - application pages [SharePoint development in Visual Studio], creating
-author: TerryGLee
-ms.author: tglee
-manager: douge
+author: John-Hart
+ms.author: johnhart
+manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 22f53a59119ed10055decdd5c055edf378838c72
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 749ec5f7f7bd68911accb33e4e8631b42de8e630
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53867844"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56630904"
 ---
 # <a name="walkthrough-create-a-sharepoint-application-page"></a>Tutorial: Crear una página de aplicación de SharePoint
- 
+
 Una página de aplicación es una forma especializada de una página ASP.NET. Las páginas de aplicación incluyen contenido que se combina con una página principal de SharePoint. Para obtener más información, consulte [crear páginas de aplicación para SharePoint](../sharepoint/creating-application-pages-for-sharepoint.md).
 
 En este tutorial se muestra cómo crear una página de aplicación y depurarla utilizando un sitio de SharePoint local. Esta página muestra todos los elementos que cada usuario ha creado o modificado en todos los sitios de la granja de servidores.
@@ -153,5 +153,5 @@ Puede aprender más sobre cómo diseñar el contenido de la página de SharePoin
 
 ## <a name="see-also"></a>Vea también
 
-[Cómo: Crear una página de aplicación](../sharepoint/how-to-create-an-application-page.md)  
-[Tipo de página _layouts de aplicaciones](http://go.microsoft.com/fwlink/?LinkID=169274)
+[Cómo: Crear una página de aplicación](../sharepoint/how-to-create-an-application-page.md)
+[_layouts página tipo de aplicación](http://go.microsoft.com/fwlink/?LinkID=169274)

@@ -1,14 +1,9 @@
 ---
 title: Tarea FindUnderPath | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#FindUnderPath
 dev_langs:
@@ -23,18 +18,17 @@ ms.assetid: 3c6d58b0-36e8-47aa-bfca-b73dd2045d91
 caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: a6ff04bad3f2f8c18175c8e96647fa1217c44725
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 1c679352fb8db81379ab93e800efa9f631773c36
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49198541"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666616"
 ---
 # <a name="findunderpath-task"></a>FindUnderPath (Tarea)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Determina qué elementos de la colección de elementos especificada tienen rutas de acceso que están en la carpeta especificada o en sus subcarpetas.  
   
 ## <a name="parameters"></a>Parámetros  
@@ -85,6 +79,3 @@ Determina qué elementos de la colección de elementos especificada tienen rutas
  [Referencia de tareas](../msbuild/msbuild-task-reference.md)   
  [Tareas](../msbuild/msbuild-tasks.md)   
  [Conceptos de MSBuild](../msbuild/msbuild-concepts.md)
-
-
-

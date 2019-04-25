@@ -1,14 +1,9 @@
 ---
 title: CommandPlacements (elemento) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - CommandPlacements
 helpviewer_keywords:
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: 78a5724a-3b9f-4c78-9c0d-8faa3924f81c
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 18c165f978ab43909d484ff13edd1d7d2ddd0f60
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: dbe65cc38bd14d859507d795ce32657f53ca8b44
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782068"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58999681"
 ---
 # <a name="commandplacements-element"></a>CommandPlacements (Elemento)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,4 +72,3 @@ El elemento CommandPlacements agrupa elementos CommandPlacement y otras agrupaci
 ## <a name="see-also"></a>Vea también  
  [CommandPlacement (elemento)](../extensibility/commandplacement-element.md)   
  [Archivos de tabla de comandos de Visual Studio (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
-

@@ -1,26 +1,22 @@
 ---
 title: Especificar eventos de compilación personalizados
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
 ms.technology: vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - build events, customizing
 ms.assetid: 69e935a5-e208-4bcd-865c-3e5f9b047ca8
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 650a0501de3f2c3728c068be13dc096361f9a54f
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
-ms.translationtype: MTE95
+manager: jillfra
+ms.openlocfilehash: 1e99ee6c9570f3bb73bc70f230f31e153a8a0da1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "53893557"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054162"
 ---
 # <a name="specifying-custom-build-events-in-visual-studio"></a>Especificar eventos de compilación personalizados en Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,30 +25,30 @@ Mediante la especificación de un evento de compilación personalizado, puede ej
 
  Para obtener información específica acerca del lenguaje de programación que está usando, consulte los temas siguientes:
 
--   Visual Basic--[Cómo: Especificar eventos de compilación (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md).
+- Visual Basic--[Cómo: Especificar eventos de compilación (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md).
 
--   Visual C# y F#--[Cómo: Especificar eventos de compilación (C#)](../ide/how-to-specify-build-events-csharp.md)
+- Visual C# y F#--[Cómo: Especificar eventos de compilación (C#)](../ide/how-to-specify-build-events-csharp.md).
 
--   Visual C++: [Especificar eventos de compilación](http://msdn.microsoft.com/library/788a6c18-2dbe-4a49-8cd6-86c1ad7a95cc).
+- Visual C++: [Especificar eventos de compilación](http://msdn.microsoft.com/library/788a6c18-2dbe-4a49-8cd6-86c1ad7a95cc).
 
 ## <a name="syntax"></a>Sintaxis
  Los eventos de compilación siguen la misma sintaxis que los comandos de DOS, pero puede usar macros para crear eventos más fácilmente. Para obtener una lista de las macros disponibles, vea [Línea de comandos del evento anterior/posterior a la compilación (Cuadro de diálogo)](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md).
 
  Para obtener mejores resultados, siga estas sugerencias de formato:
 
--   Agregue una instrucción `call` antes de todos los eventos de compilación que ejecutan archivos .bat.
+- Agregue una instrucción `call` antes de todos los eventos de compilación que ejecutan archivos .bat.
 
      Ejemplo: `call C:\MyFile.bat`
 
      Ejemplo: `call C:\MyFile.bat call C:\MyFile2.bat`
 
--   Escriba las rutas de acceso entre comillas.
+- Escriba las rutas de acceso entre comillas.
 
      Ejemplo (para [!INCLUDE[win8](../includes/win8-md.md)]): "%ProgramFiles(x86)%\Microsoft SDKs\Windows\v8.0A\Bin\NETFX 4.0 Tools\gacutil.exe" -if "$(TargetPath)"
 
--   Separe varios comandos mediante saltos de línea.
+- Separe varios comandos mediante saltos de línea.
 
--   Incluya caracteres comodín según sea necesario.
+- Incluya caracteres comodín según sea necesario.
 
      Ejemplo: `for %I in (*.txt *.doc *.html) do copy %I c:\`*mydirectory*`\`
 
@@ -60,4 +56,4 @@ Mediante la especificación de un evento de compilación personalizado, puede ej
     >  `%I` en el código anterior debe ser `%%I` en scripts por lotes.
 
 ## <a name="see-also"></a>Vea también
- [Compilar y generar](../ide/compiling-and-building-in-visual-studio.md) [anterior a la compilación Event/Post-build Event Command Line Dialog Box](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md) [caracteres especiales de MSBuild](../msbuild/msbuild-special-characters.md) [Tutorial: Compilación de una aplicación.
+ [Compilar y generar](../ide/compiling-and-building-in-visual-studio.md) [anterior a la compilación Event/Post-build Event Command Line Dialog Box](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md) [caracteres especiales de MSBuild](../msbuild/msbuild-special-characters.md) [Tutorial: Compilación de una aplicación](../ide/walkthrough-building-an-application.md)

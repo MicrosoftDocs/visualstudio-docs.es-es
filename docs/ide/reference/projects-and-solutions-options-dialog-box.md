@@ -1,7 +1,6 @@
 ---
 title: Proyectos y soluciones, Cuadro de diálogo Opciones
 ms.date: 07/14/2017
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Projects.General
@@ -12,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 2801f24e-a138-488a-ae3c-e1f99a678ac0
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 466df9ad82ef4bdc4b4cb3d699b53c0568f3b08a
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 21d101ff4cd8503935fceb72b5350a6ce0e1ce2e
+ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53926318"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58355479"
 ---
 # <a name="projects-and-solutions-page-options-dialog-box"></a>Página Proyectos y soluciones, Cuadro de diálogo Opciones
 
@@ -50,9 +49,13 @@ Si no está activada, los comandos del menú **Compilar**, como **Compilar soluc
 
 Cuando se selecciona, la solución y todos los comandos que se aplican a soluciones siempre se muestran en el IDE. Cuando está desactivada, todos los proyectos se crean como proyectos independientes y no ve la solución en el Explorador de soluciones ni en los comandos que se aplican a las soluciones en el IDE si la solución solo contiene un proyecto.
 
+::: moniker range="vs-2017"
+
 ### <a name="save-new-projects-when-created"></a>Guardar nuevos proyectos al crearlos
 
 Si está activada, puede especificar una ubicación para el proyecto en el cuadro de diálogo **Nuevo proyecto**. Cuando está desactivada, todos los proyectos nuevos se crean como proyectos temporales. Cuando se trabaja con proyectos temporales, puede crear y experimentar con un proyecto sin tener que especificar una ubicación de disco.
+
+::: moniker-end
 
 ### <a name="warn-user-when-the-project-location-is-not-trusted"></a>Advertir al usuario cuando la ubicación del proyecto no sea de confianza
 
@@ -72,7 +75,7 @@ Cuando se selecciona, Visual Studio muestra un cuadro de mensaje de confirmació
 
 ### <a name="reopen-documents-on-solution-load"></a>Volver a abrir documentos en la carga de la solución
 
-**Novedad en Visual Studio 2017 (versión 15.8, versión preliminar 2 y posteriores)**
+**Presentado en Visual Studio 2017 versión 15.8**
 
 Cuando se selecciona, los documentos que estaban abiertos la última vez que se cerró esta solución se abren automáticamente al abrir la solución.
 
@@ -88,11 +91,11 @@ Especifica la ubicación predeterminada donde Visual Studio crea las nuevas carp
 
 ### <a name="user-project-templates-location"></a>Ubicación de plantillas de proyecto de usuario
 
-Especifica la ubicación predeterminada que usa el cuadro de diálogo **Nuevo proyecto** para crear la lista de **Mis plantillas**. Para obtener más información, vea [Cómo: Buscar y organizar plantillas](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
+Especifica la ubicación predeterminada que se usa para buscar plantillas de proyecto creadas por el usuario. Para obtener más información, vea [Cómo: Buscar y organizar plantillas](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
 ### <a name="user-item-templates-location"></a>Ubicación de plantillas de elemento de usuario
 
-Especifica la ubicación predeterminada que usa el cuadro de diálogo **Agregar nuevo elemento** para crear la lista de **Mis plantillas**. Para obtener más información, vea [Cómo: Buscar y organizar plantillas](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
+Especifica la ubicación predeterminada que se usa para buscar plantillas de elemento creadas por el usuario. Para obtener más información, vea [Cómo: Buscar y organizar plantillas](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
 ## <a name="see-also"></a>Vea también
 

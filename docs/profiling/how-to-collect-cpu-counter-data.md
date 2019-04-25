@@ -9,15 +9,15 @@ helpviewer_keywords:
 - performance tools, portable CPU counters
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab80ba010a91df11efac21366a812015defa3b23
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c607263c6b6f6472258aaeab1c3187efaf30a120
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53897240"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56642747"
 ---
 # <a name="how-to-collect-cpu-counter-data"></a>Procedimiento Recopilar datos de contadores de CPU
 
@@ -60,7 +60,7 @@ Se producen dos tipos de eventos de contador de CPU:
 
 ## <a name="see-also"></a>Vea también
 
-[Configuración de sesiones de rendimiento](../profiling/configuring-performance-sessions.md)  
-[Propiedades de las sesiones de rendimiento](../profiling/performance-session-properties.md)  
-[Contadores de Windows y de CPU](../profiling/cpu-and-windows-counters.md)  
-[Cómo: Elegir eventos de muestreo](../profiling/how-to-choose-sampling-events.md)
+[Configurar sesiones de rendimiento](../profiling/configuring-performance-sessions.md)
+[Propiedades de las sesiones de rendimiento](../profiling/performance-session-properties.md)
+[Contadores de Windows y de CPU](../profiling/cpu-and-windows-counters.md)
+[ Elegir eventos de muestreo](../profiling/how-to-choose-sampling-events.md)

@@ -1,13 +1,8 @@
 ---
-title: Introducción a Visual C# y Visual Basic | Documentos de Microsoft
-ms.custom: ''
+title: Introducción a Visual C# y Visual Basic | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-general
 ms.topic: conceptual
 helpviewer_keywords:
 - C# tutorial
@@ -20,13 +15,13 @@ ms.assetid: d57bb19f-58d6-48cc-96cb-ab1c540a25d0
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 747b36d69bfbd0a70c6df67e57174b3baf623543
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 65e766193838060d4c856b6a530a688ef8cd2d1b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49253778"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54788286"
 ---
 # <a name="getting-started-with-visual-c-and-visual-basic"></a>Introducción a Visual C# y Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,6 +42,3 @@ Tanto si está empezando a utilizar Visual C# como Microsoft Visual Basic, este 
   
  [Tutorial 3: Crear un juego de formar parejas](../ide/tutorial-3-create-a-matching-game.md)  
  Compile un juego de formar parejas en el que el jugador debe buscar las coincidencias entre pares de iconos ocultos. Aprenda a contener objetos en un objeto `List`, utilizar un bucle `foreach`, llevar la cuenta del estado de un formulario mediante variables de referencia, compilar un controlador de eventos que se puede utilizar con varios objetos, y hacer que un temporizador se desencadene una sola vez cuando se ha iniciado.
-
-
-

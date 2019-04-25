@@ -1,24 +1,19 @@
 ---
 title: CA5351 No Use algoritmos criptográficos rotos | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 ms.assetid: 483f51b3-e186-4433-b48e-5ca24a9a9c94
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 7067d1d08be6de121986c60ead67086a11548ea8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 71f92543b73eddb26f82e787f5c81f53d3aeddb8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49889820"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102671"
 ---
 # <a name="ca5351-do-not-use-broken-cryptographic-algorithms"></a>CA5351 No use algoritmos criptográficos rotos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,9 +47,9 @@ ms.locfileid: "49889820"
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones  
  Use opciones de criptografía más segura:  
   
--   Para MD5, use valores hash de la familia [SHA-2](https://msdn.microsoft.com/en-us/library/windows/desktop/aa382459.aspx) (por ejemplo, <xref:System.Security.Cryptography.SHA512>, <xref:System.Security.Cryptography.SHA384>y <xref:System.Security.Cryptography.SHA256>).  
+- Para MD5, use valores hash de la familia [SHA-2](https://msdn.microsoft.com/library/windows/desktop/aa382459.aspx) (por ejemplo, <xref:System.Security.Cryptography.SHA512>, <xref:System.Security.Cryptography.SHA384>y <xref:System.Security.Cryptography.SHA256>).  
   
--   Para DES y RC2, use el cifrado <xref:System.Security.Cryptography.Aes> .  
+- Para DES y RC2, use el cifrado <xref:System.Security.Cryptography.Aes> .  
   
 ## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias  
  No suprima una advertencia de esta regla a menos que la haya revisado un experto criptográfico.  

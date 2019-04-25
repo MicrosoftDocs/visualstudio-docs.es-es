@@ -1,14 +1,9 @@
 ---
 title: Elemento ProjectExtensions (MSBuild) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#ProjectExtensions
 dev_langs:
@@ -23,18 +18,17 @@ ms.assetid: f95f312f-ff92-41eb-9469-ad99e236a307
 caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 41b3ed5fc742f95cde3c834e5d8612daafef5d6d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 0afc4f73ed287f753acf87bd0b112e6f5303e996
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49189116"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654898"
 ---
 # <a name="projectextensions-element-msbuild"></a>Elemento ProjectExtensions (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Permite que los archivos del proyecto [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] contengan información no relativa a [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] omitirá cualquier contenido de un elemento `ProjectExtensions`.  
   
  \<Project>  
@@ -84,5 +78,3 @@ Permite que los archivos del proyecto [!INCLUDE[vstecmsbuild](../includes/vstecm
 ## <a name="see-also"></a>Vea también  
  [Referencia de esquemas de archivo del proyecto](../msbuild/msbuild-project-file-schema-reference.md)  
  [MSBuild](msbuild.md)
-
-

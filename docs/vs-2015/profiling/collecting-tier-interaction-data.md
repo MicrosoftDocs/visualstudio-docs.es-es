@@ -1,14 +1,9 @@
 ---
 title: Recopilar datos de interacción de capas | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.performance.property.tierinteraction
 helpviewer_keywords:
@@ -20,13 +15,13 @@ ms.assetid: 47a944c2-3098-497c-8fc7-e1f43d750bbc
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 31e2d46992b48b987966bac7d7dc68787f4016c2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: a20266c870316be9b6be67e661d13eb4e6fdbaee
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51761186"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047230"
 ---
 # <a name="collecting-tier-interaction-data"></a>Recopilar datos de interacción de capas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,14 +42,11 @@ La generación de perfiles de interacción de capas proporciona información adi
   
 ### <a name="to-add-tier-interaction-data-to-a-profiling-run-by-using-the-performance-session-property-pages"></a>Para agregar datos de interacción de capas a una ejecución de generación de perfiles utilizando las páginas de propiedades de la sesión de rendimiento  
   
-1.  En el Explorador de rendimiento, elija **Propiedades** en el menú contextual.  
+1. En el Explorador de rendimiento, elija **Propiedades** en el menú contextual.  
   
-2.  Seleccione la página **Interacciones de capas** y, a continuación, active la casilla **Habilitar la generación de perfiles de interacción de capas**.  
+2. Seleccione la página **Interacciones de capas** y, a continuación, active la casilla **Habilitar la generación de perfiles de interacción de capas**.  
   
-3.  En el Explorador de rendimiento, seleccione el nodo **Destinos** y, después, especifique el proyecto, el archivo ejecutable o el sitio web cuyo perfil desea generar.  
+3. En el Explorador de rendimiento, seleccione el nodo **Destinos** y, después, especifique el proyecto, el archivo ejecutable o el sitio web cuyo perfil desea generar.  
   
 ## <a name="see-also"></a>Vea también  
  [Vista Interacciones de capas](../profiling/tier-interactions-view.md)
-
-
-

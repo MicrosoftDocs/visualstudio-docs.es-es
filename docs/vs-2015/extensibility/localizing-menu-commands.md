@@ -1,14 +1,9 @@
 ---
 title: Localización de los comandos de menú | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - localize
 - localization
@@ -19,13 +14,13 @@ helpviewer_keywords:
 ms.assetid: b04ee0f6-82ea-47e6-853a-72382267d6da
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6b16771e4d47416f09774ce2f4765de9d6023e94
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 681a529b33fc2342168ba1fbe1df57746dc8bd7d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51753892"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101709"
 ---
 # <a name="localizing-menu-commands"></a>Adaptación de comandos de menú
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -83,19 +78,19 @@ Puede proporcionar el texto localizado para el menú y barra de herramientas de 
 ## <a name="localizing-other-text-resources"></a>Localización de otros recursos de texto  
  Recursos de texto que no sean los nombres de comando se definen en archivos de recursos (.resx).  
   
-1.  Cambie el nombre VSPackage.resx VSPackage.en-US.resx.  
+1. Cambie el nombre VSPackage.resx VSPackage.en-US.resx.  
   
-2.  Realice una copia del archivo VSPackage.en-US.resx para cada idioma localizado.  
+2. Realice una copia del archivo VSPackage.en-US.resx para cada idioma localizado.  
   
      Nombre de cada copia de VSPackage. *Configuración regional*.resx, donde *configuración regional* es un nombre de referencia cultural determinada.  
   
-3.  Cambie el nombre Resources.resx Resources.en-US.resx.  
+3. Cambie el nombre Resources.resx Resources.en-US.resx.  
   
-4.  Realice una copia del archivo Resources.en-US.resx para cada idioma localizado.  
+4. Realice una copia del archivo Resources.en-US.resx para cada idioma localizado.  
   
      Nombre de cada copia de recursos. *Configuración regional*.resx, donde *configuración regional* es un nombre de referencia cultural determinada.  
   
-5.  Abra cada archivo .resx para modificar los valores de cadena según corresponda para el lenguaje determinado y la referencia cultural. En el ejemplo siguiente se muestra la definición de recurso traducido de la barra de título de una ventana de herramientas.  
+5. Abra cada archivo .resx para modificar los valores de cadena según corresponda para el lenguaje determinado y la referencia cultural. En el ejemplo siguiente se muestra la definición de recurso traducido de la barra de título de una ventana de herramientas.  
   
      [Resources.en-US.resx]  
   
@@ -117,9 +112,9 @@ Puede proporcionar el texto localizado para el menú y barra de herramientas de 
 ## <a name="incorporating-localized-resources-into-the-project"></a>Incorporar recursos localizados del proyecto  
  Debe modificar el archivo assemblyinfo.cs y el archivo de proyecto para incorporar los recursos localizados.  
   
-1.  Desde el **propiedades** nodo **el Explorador de soluciones**, abra assemblyinfo.cs o assemblyinfo.vb en el editor.  
+1. Desde el **propiedades** nodo **el Explorador de soluciones**, abra assemblyinfo.cs o assemblyinfo.vb en el editor.  
   
-2.  Agregue la siguiente entrada.  
+2. Agregue la siguiente entrada.  
   
     ```csharp  
     [assembly: NeutralResourcesLanguage("en-US", UltimateResourceFallbackLocation.Satellite)]  
@@ -127,13 +122,13 @@ Puede proporcionar el texto localizado para el menú y barra de herramientas de 
   
      Esto establece el inglés de Estados Unidos como idioma predeterminado.  
   
-3.  Descargue el proyecto.  
+3. Descargue el proyecto.  
   
-4.  Abra el archivo de proyecto en el editor.  
+4. Abra el archivo de proyecto en el editor.  
   
-5.  Busque el `ItemGroup` elemento que contiene `EmbeddedResource` elementos.  
+5. Busque el `ItemGroup` elemento que contiene `EmbeddedResource` elementos.  
   
-6.  En el `EmbeddedResource` elemento que llama a VSPackage.en-US.resx, reemplace el `ManifestResourceName` elemento con un `LogicalName` elemento, se establece en `VSPackage.en-US.Resources`, como se indica a continuación.  
+6. En el `EmbeddedResource` elemento que llama a VSPackage.en-US.resx, reemplace el `ManifestResourceName` elemento con un `LogicalName` elemento, se establece en `VSPackage.en-US.Resources`, como se indica a continuación.  
   
     ```xml  
     <EmbeddedResource Include="VSPackage.en-US.resx">  
@@ -142,9 +137,9 @@ Puede proporcionar el texto localizado para el menú y barra de herramientas de 
     </EmbeddedResource>  
     ```  
   
-7.  Para cada idioma localizado, copie el `EmbeddedResource` (elemento) para VsPackage.en-US y establezca el **Include** atributo y **LogicalName** elemento de la copia a la configuración regional de destino, como se muestra en la siguiente ejemplo.  
+7. Para cada idioma localizado, copie el `EmbeddedResource` (elemento) para VsPackage.en-US y establezca el **Include** atributo y **LogicalName** elemento de la copia a la configuración regional de destino, como se muestra en la siguiente ejemplo.  
   
-8.  A cada localizado `VSCTCompile` elemento, agregue un `ResourceName` elemento al que apunta a `Menus.ctmenu`, como se muestra en el ejemplo siguiente.  
+8. A cada localizado `VSCTCompile` elemento, agregue un `ResourceName` elemento al que apunta a `Menus.ctmenu`, como se muestra en el ejemplo siguiente.  
   
     ```xml  
     <ItemGroup>  
@@ -164,4 +159,3 @@ Puede proporcionar el texto localizado para el menú y barra de herramientas de 
  [Ampliación de menús y comandos](../extensibility/extending-menus-and-commands.md)   
  [MenuCommands frente a OleMenuCommands](../misc/menucommands-vs-olemenucommands.md)   
  [Globalización y localización](http://msdn.microsoft.com/library/9a59696b-d89b-45bd-946d-c75da4732d02)
-

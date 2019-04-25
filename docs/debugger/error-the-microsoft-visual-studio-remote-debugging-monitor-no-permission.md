@@ -1,9 +1,9 @@
 ---
-title: 'Error: El Monitor de depuración remota de Microsoft Visual Studio del equipo remoto no tiene permiso para conectarse con este equipo'
+title: 'Error: El Monitor de depuración remota de Microsoft Visual Studio del equipo remoto no tiene permiso para conectarse a este equipo.'
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 11/04/2016
-ms.topic: reference
+ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.error.access_denied_oncallback
 dev_langs:
@@ -16,33 +16,35 @@ helpviewer_keywords:
 - remote debugging, Windows version error
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4bd5a9ef53940164c7d83dff0159af4c69f61010
-ms.sourcegitcommit: 708f77071c73c95d212645b00fa943d45d35361b
+ms.openlocfilehash: ac6e632927878988f8a3ff86d63fea080a45bd6d
+ms.sourcegitcommit: 01334abf36d7e0774329050d34b3a819979c95a2
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53053437"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55852993"
 ---
-# <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-on-the-remote-computer-does-not-have-permission-to-connect-to-this-computer"></a>Error: El Monitor de depuración remota de Microsoft Visual Studio del equipo remoto no tiene permiso para conectarse con este equipo
-Este error aparece cuando el usuario que intenta ejecutar el Monitor de depuración remota de Visual Studio (msvsmon) no tiene una cuenta en el equipo local.  
-  
-### <a name="to-fix-this-problem"></a>Para corregir este problema  
-  
-- Agregue una cuenta de usuario al equipo host del depurador de Visual Studio, con el mismo nombre y contraseña que la cuenta de usuario que ejecuta msvsmon en el equipo remoto  
-  
-   \- o -  
-  
-- Ejecute msvsmon como un usuario que tiene permiso para llamar en el equipo local. Esto indica que el usuario debe ser un usuario de dominio y administrador en el equipo de msvsmon. Puede especificar la cuenta de usuario para ejecutar msvsmon de dos maneras:  
-  
-  - Haga clic con el botón derecho en el icono de msvsmon y elija **Ejecutar como** en el menú contextual  
-  
-    \- o -  
-  
-  - En el símbolo del sistema, ejecute `runas.exe`.  
-  
-## <a name="see-also"></a>Vea también  
- [Errores de la depuración remota y sus soluciones](../debugger/remote-debugging-errors-and-troubleshooting.md)   
- [Remote Debugging](../debugger/remote-debugging.md)
+# <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-on-the-remote-computer-does-not-have-permission-to-connect-to-this-computer"></a>Error: El Monitor de depuración remota de Microsoft Visual Studio del equipo remoto no tiene permiso para conectarse a este equipo.
+
+Este error aparece cuando el usuario que intenta ejecutar el Monitor de depuración remota de Visual Studio (msvsmon) no tiene una cuenta en el equipo local.
+
+## <a name="to-fix-this-problem"></a>Para corregir este problema
+
+- Agregue una cuenta de usuario al equipo host del depurador de Visual Studio, con el mismo nombre y contraseña que la cuenta de usuario que ejecuta msvsmon en el equipo remoto
+
+   \- o -
+
+- Ejecute msvsmon como un usuario que tiene permiso para llamar en el equipo local. Esto indica que el usuario debe ser un usuario de dominio y administrador en el equipo de msvsmon. Puede especificar la cuenta de usuario para ejecutar msvsmon de dos maneras:
+
+  - Haga clic con el botón derecho en el icono de msvsmon y elija **Ejecutar como** en el menú contextual
+
+    \- o -
+
+  - En el símbolo del sistema, ejecute `runas.exe`.
+
+## <a name="see-also"></a>Vea también
+
+- [Errores de la depuración remota y sus soluciones](../debugger/remote-debugging-errors-and-troubleshooting.md)
+- [Remote Debugging](../debugger/remote-debugging.md)

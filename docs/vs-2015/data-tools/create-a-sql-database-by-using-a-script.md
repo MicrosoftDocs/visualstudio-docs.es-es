@@ -1,12 +1,9 @@
 ---
 title: Crear una base de datos SQL mediante una secuencia de comandos | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,46 +13,45 @@ ms.assetid: 36f913c0-f5a7-4831-83a0-baba721ac95c
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 13816c499002f8eaf81067aba8d1854d06a41445
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: fd0bf5c0e95b4c859dc2d6470ab6f922041b20ba
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49266596"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049885"
 ---
 # <a name="create-a-sql-database-by-using-a-script"></a>Crear una base de datos SQL mediante una secuencia de comandos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 En este tutorial, use Visual Studio para crear una base de datos pequeño que contiene el código de ejemplo para [crear una aplicación de datos sencilla mediante ADO.NET](../data-tools/create-a-simple-data-application-by-using-adonet.md).  
   
  **En este tema**  
   
--   [Crear un script que contiene un esquema de base de datos](../data-tools/create-a-sql-database-by-using-a-script.md#CreateScript)  
+- [Crear un script que contiene un esquema de base de datos](../data-tools/create-a-sql-database-by-using-a-script.md#CreateScript)  
   
--   [Crear un proyecto de base de datos e importar un esquema](../data-tools/create-a-sql-database-by-using-a-script.md#CreateProject)  
+- [Crear un proyecto de base de datos e importar un esquema](../data-tools/create-a-sql-database-by-using-a-script.md#CreateProject)  
   
--   [Implementar la base de datos](../data-tools/create-a-sql-database-by-using-a-script.md#DeployDatabase)  
+- [Implementar la base de datos](../data-tools/create-a-sql-database-by-using-a-script.md#DeployDatabase)  
   
 ## <a name="prerequisites"></a>Requisitos previos  
  Para completar este tutorial, debe tener SQL Server Express LocalDB o en otra base de datos SQL, instalado.  
   
-##  <a name="CreateScript"></a> Crear un script que contiene un esquema de base de datos  
+## <a name="CreateScript"></a> Crear un script que contiene un esquema de base de datos  
   
 #### <a name="to-create-a-script-from-which-you-can-import-a-schema"></a>Para crear un script desde el que puede importar un esquema  
   
-1.  En [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], en la barra de menús, seleccione **archivo** > **New** > **archivo**.  
+1. En [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], en la barra de menús, seleccione **archivo** > **New** > **archivo**.  
   
      El **nuevo archivo** aparece el cuadro de diálogo.  
   
-2.  En el **categorías** lista, seleccione **General**.  
+2. En el **categorías** lista, seleccione **General**.  
   
-3.  En el **plantillas** lista, seleccione **archivo Sql**y, a continuación, seleccione el **abierto** botón.  
+3. En el **plantillas** lista, seleccione **archivo Sql**y, a continuación, seleccione el **abierto** botón.  
   
      Se abrirá el editor de Transact-SQL.  
   
-4.  Copie el siguiente código Transact-SQL y, a continuación, péguelo en el editor de Transact-SQL.  
+4. Copie el siguiente código Transact-SQL y, a continuación, péguelo en el editor de Transact-SQL.  
   
     ```  
     PRINT N'Creating Sales...';  
@@ -217,34 +213,34 @@ En este tutorial, use Visual Studio para crear una base de datos pequeño que co
     GO  
     ```  
   
-5.  En la barra de menús, seleccione **archivo** > **Guardar SqlQuery_1.sql como**.  
+5. En la barra de menús, seleccione **archivo** > **Guardar SqlQuery_1.sql como**.  
   
      El **Guardar archivo como** aparece el cuadro de diálogo.  
   
-6.  En el **nombre de archivo** , escriba `SampleImportScript.sql`, tenga en cuenta la ubicación donde podrá guardar el archivo y, a continuación, seleccione el **guardar** botón.  
+6. En el **nombre de archivo** , escriba `SampleImportScript.sql`, tenga en cuenta la ubicación donde podrá guardar el archivo y, a continuación, seleccione el **guardar** botón.  
   
-7.  En la barra de menús, seleccione **archivo** > **Cerrar solución**.  
+7. En la barra de menús, seleccione **Archivo** > **Cerrar solución**.  
   
      A continuación, cree un proyecto de base de datos y, a continuación, importar el esquema de la secuencia de comandos que ha creado.  
   
-##  <a name="CreateProject"></a> Crear un proyecto de base de datos e importar un esquema  
+## <a name="CreateProject"></a> Crear un proyecto de base de datos e importar un esquema  
   
 #### <a name="to-create-a-database-project"></a>Para crear un proyecto de base de datos  
   
-1.  En la barra de menús, seleccione **Archivo** > **Nuevo** > **Proyecto**.  
+1. En la barra de menús, seleccione **Archivo** > **Nuevo** > **Proyecto**.  
   
      Aparecerá el cuadro de diálogo **Nuevo proyecto** .  
   
-2.  En **instalado**, expanda el **plantillas** nodo, expanda el **otros lenguajes** nodo, seleccione el **SQL Server** categoría y, a continuación, Seleccione el **el proyecto de base de datos de SQL Server** plantilla.  
+2. En **instalado**, expanda el **plantillas** nodo, expanda el **otros lenguajes** nodo, seleccione el **SQL Server** categoría y, a continuación, Seleccione el **el proyecto de base de datos de SQL Server** plantilla.  
   
     > [!NOTE]
     >  El **otros lenguajes** nodo no aparece en todas las instalaciones de Visual Studio.  
   
-3.  En el **nombre** , escriba `Small Database`.  
+3. En el **nombre** , escriba `Small Database`.  
   
-4.  Seleccione el **crear directorio para la solución** casilla de verificación si aún no está seleccionado.  
+4. Seleccione el **crear directorio para la solución** casilla de verificación si aún no está seleccionado.  
   
-5.  Desactive el **agregar al control de código fuente** casilla de verificación si aún no está desactivada y, a continuación, seleccione el **Aceptar** botón.  
+5. Desactive el **agregar al control de código fuente** casilla de verificación si aún no está desactivada y, a continuación, seleccione el **Aceptar** botón.  
   
      El proyecto de base de datos se crea y aparece en **el Explorador de soluciones**.  
   
@@ -252,28 +248,27 @@ En este tutorial, use Visual Studio para crear una base de datos pequeño que co
   
 #### <a name="to-import-a-database-schema-from-a-script"></a>Para importar un esquema de base de datos de una secuencia de comandos  
   
-1.  En la barra de menús, seleccione **proyecto** > **importación** > **Script**.  
+1. En la barra de menús, seleccione **proyecto** > **importación** > **Script**.  
   
-2.  En el **bienvenida** , revise el texto y, a continuación, seleccione el **siguiente** botón.  
+2. En el **bienvenida** , revise el texto y, a continuación, seleccione el **siguiente** botón.  
   
-3.  Seleccione el **único archivo** botón de opción y, a continuación, seleccione el **examinar** botón.  
+3. Seleccione el **único archivo** botón de opción y, a continuación, seleccione el **examinar** botón.  
   
      El **importar SQL Script** aparece el cuadro de diálogo.  
   
-4.  Abra la carpeta donde guardó el archivo SampleImportScript.sql, seleccione el archivo y, a continuación, seleccione el **abierto** botón.  
+4. Abra la carpeta donde guardó el archivo SampleImportScript.sql, seleccione el archivo y, a continuación, seleccione el **abierto** botón.  
   
-5.  Seleccione el **finalizar** botón para cerrar el **importar SQL Script** cuadro de diálogo.  
+5. Seleccione el **finalizar** botón para cerrar el **importar SQL Script** cuadro de diálogo.  
   
      Se importa el script y los objetos que define la secuencia de comandos se agregan a su proyecto de base de datos.  
   
-6.  Revise el resumen y, a continuación, haga clic en el **finalizar** botón para cerrar el **importar archivo de Script SQL** cuadro de diálogo.  
+6. Revise el resumen y, a continuación, haga clic en el **finalizar** botón para cerrar el **importar archivo de Script SQL** cuadro de diálogo.  
   
-7.  En **el Explorador de soluciones**, expanda ventas, Scripts y seguridad de las carpetas del proyecto y compruebe que contienen los archivos .sql.  
+7. En **el Explorador de soluciones**, expanda ventas, Scripts y seguridad de las carpetas del proyecto y compruebe que contienen los archivos .sql.  
   
-8.  En **Explorador de objetos de SQL Server**, compruebe que la base de datos aparece bajo el **proyectos** nodo.  
+8. En **Explorador de objetos de SQL Server**, compruebe que la base de datos aparece bajo el **proyectos** nodo.  
   
      En este momento, la base de datos contiene solo los objetos del sistema, como tablas y procedimientos almacenados. Después de implementar la base de datos, contendrá las tablas de usuario y procedimientos almacenados que definen las secuencias de comandos.  
   
-##  <a name="DeployDatabase"></a> Implementar la base de datos  
+## <a name="DeployDatabase"></a> Implementar la base de datos  
  Cuando presiona el **F5** clave, implementar (o publicar) la base de datos a una base de datos LocalDB de forma predeterminada. Puede implementar la base de datos a una ubicación diferente, abra la página de propiedades para el proyecto, seleccionando la **depurar** ficha y, a continuación, cambiar la cadena de conexión.
-

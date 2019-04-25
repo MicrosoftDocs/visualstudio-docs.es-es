@@ -1,22 +1,21 @@
 ---
 title: Referencia de las opciones de Cuentas
 ms.date: 12/10/2018
-ms.prod: visual-studio-dev15
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.RoamingSettings
 ms.assetid: 3cfe09d2-1120-46e8-b882-f7056acb778b
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: db54590e6fa53caab56844947e5a699326dd99d2
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: c27950e104b6064bdaf3b8b4a8fe4a760fa4e677
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53846878"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55938077"
 ---
 # <a name="accounts-environment-options-dialog-box"></a>Cuentas, Entorno, Opciones (Cuadro de diálogo)
 

@@ -1,14 +1,9 @@
 ---
 title: Otros cuadros de diálogo | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - dialog boxes, Spy++
 - Spy++ dialog boxes
@@ -16,13 +11,13 @@ ms.assetid: 81710456-2600-4468-a448-3fb21c7bda82
 caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3083eb3e5dab3deece46e9b93db29acd860a1d19
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0178b9f79daa8ddec51d468cb22f3104c26b7f41
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51772929"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58998761"
 ---
 # <a name="other-dialog-boxes"></a>Otros cuadros de diálogo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,6 +40,3 @@ Estos cuadros de diálogo muestran información acerca del programa de Spy ++.
   
  [Vistas de Spy++](../debugger/spy-increment-views.md)  
  Explica las vistas de árbol de Spy ++ de windows, los mensajes, los procesos y subprocesos.
-
-
-

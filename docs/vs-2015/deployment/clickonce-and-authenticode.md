@@ -1,14 +1,9 @@
 ---
 title: ClickOnce y Authenticode | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -23,13 +18,13 @@ ms.assetid: ab5b6712-f32a-4e33-842f-e88ab4818ccf
 caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: df3d87e240476aa02f5129f2238a1df55eb3be79
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 0732a5f867b357bddf3ff9f9d83bcfd7dd1f0573
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289490"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089086"
 ---
 # <a name="clickonce-and-authenticode"></a>ClickOnce y Authenticode
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,11 +40,11 @@ Authenticode * es una tecnología de Microsoft que usa criptografía estándar d
   
  Puede obtener un certificado de firma de código de tres maneras:  
   
--   Comprar un certificado a un proveedor de certificados.  
+- Comprar un certificado a un proveedor de certificados.  
   
--   Recibir un certificado de un grupo de su organización que se encargue de crear certificados digitales.  
+- Recibir un certificado de un grupo de su organización que se encargue de crear certificados digitales.  
   
--   Generar su propio certificado con MakeCert.exe, que se incluye con [!INCLUDE[winsdklong](../includes/winsdklong-md.md)].  
+- Generar su propio certificado con MakeCert.exe, que se incluye con [!INCLUDE[winsdklong](../includes/winsdklong-md.md)].  
   
 ### <a name="how-using-certificate-authorities-helps-users"></a>Cómo ayuda a los usuarios el uso de entidades de certificación  
  Un certificado generado con la utilidad MakeCert.exe se suele denominar *SelfCert* o *certificado de prueba*. Este tipo de certificado funciona igual que un archivo .snk en .NET Framework. Consta solo de un par de claves criptográficas pública y privada y no contiene información comprobable del publicador. Puede usar los certificados SelfCert para implementar aplicaciones [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] de gran confianza en una intranet. Pero cuando estas aplicaciones se ejecutan en un equipo cliente, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] las identificará como procedentes de un editor desconocido. De forma predeterminada, las aplicaciones [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] firmadas con SelfCert e implementadas a través de Internet no pueden usar la implementación de aplicaciones de confianza.  
@@ -61,26 +56,23 @@ Authenticode * es una tecnología de Microsoft que usa criptografía estándar d
 ### <a name="timestamps"></a>Marcas de tiempo  
  Los certificados usados para firmar aplicaciones [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] caducan una vez transcurrido un período determinado, que suele ser de doce meses. Para no tener que volver a firmar constantemente las aplicaciones con certificados nuevos, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] admite las marcas de tiempo. Al firmar una aplicación con una marca de tiempo, su certificado se seguirá aceptando incluso cuando haya caducado, siempre y cuando la marca de tiempo sea válida. De esta forma, las aplicaciones [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] que tengan certificados caducados y marcas de tiempo válidas se podrán descargar y ejecutar. Asimismo, las aplicaciones instaladas con certificados caducados podrán seguir descargando e instalando actualizaciones.  
   
- Para incluir una marca de tiempo en un servidor de aplicaciones, debe haber disponible un servidor de marca de tiempo. Para obtener información sobre cómo seleccionar un servidor de marca de tiempo, consulte [How to: Sign Application and Deployment Manifests](../ide/how-to-sign-application-and-deployment-manifests.md).  
+ Para incluir una marca de tiempo en un servidor de aplicaciones, debe haber disponible un servidor de marca de tiempo. Para obtener información sobre cómo seleccionar un servidor de marca de tiempo, vea [Cómo: Firmar aplicaciones y manifiestos de implementación](../ide/how-to-sign-application-and-deployment-manifests.md).  
   
 ### <a name="updating-expired-certificates"></a>Actualizar certificados expirados  
  En las versiones anteriores de .NET Framework, la actualización de una aplicación cuyo certificado ha expirado podía hacer que la aplicación dejara de funcionar. Para resolver este problema, use uno de los métodos siguientes:  
   
--   Actualice .NET Framework a la versión 2.0 SP1 o a una versión posterior en Windows XP, o a la versión 3.5 o posterior en Windows Vista.  
+- Actualice .NET Framework a la versión 2.0 SP1 o a una versión posterior en Windows XP, o a la versión 3.5 o posterior en Windows Vista.  
   
--   Desinstale la aplicación e instale una versión nueva con un certificado válido.  
+- Desinstale la aplicación e instale una versión nueva con un certificado válido.  
   
--   Cree un ensamblado de línea de comandos que actualice el certificado. En el [artículo de soporte técnico de Microsoft 925521](http://go.microsoft.com/fwlink/?LinkId=179454)encontrará información detallada sobre este proceso.  
+- Cree un ensamblado de línea de comandos que actualice el certificado. En el [artículo de soporte técnico de Microsoft 925521](http://go.microsoft.com/fwlink/?LinkId=179454)encontrará información detallada sobre este proceso.  
   
 ### <a name="storing-certificates"></a>Almacenar certificados  
   
--   Puede almacenar los certificados como un archivo .pfx en el sistema de archivos o en un contenedor de claves. Un usuario de un dominio de Windows puede tener un determinado número de contenedores de claves. De forma predeterminada, MakeCert.exe almacenará los certificados en el contenedor de claves personales, a menos que especifique que se guarden en un archivo .pfx. Mage.exe y MageUI.exe, las herramientas de [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] que sirven para crear implementaciones de [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] , le permiten usar certificados almacenados en cualquier modo.  
+- Puede almacenar los certificados como un archivo .pfx en el sistema de archivos o en un contenedor de claves. Un usuario de un dominio de Windows puede tener un determinado número de contenedores de claves. De forma predeterminada, MakeCert.exe almacenará los certificados en el contenedor de claves personales, a menos que especifique que se guarden en un archivo .pfx. Mage.exe y MageUI.exe, las herramientas de [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] que sirven para crear implementaciones de [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] , le permiten usar certificados almacenados en cualquier modo.  
   
 ## <a name="see-also"></a>Vea también  
  [Seguridad e implementación ClickOnce](../deployment/clickonce-security-and-deployment.md)   
  [Proteger las aplicaciones ClickOnce](../deployment/securing-clickonce-applications.md)   
  [Introducción a la implementación de aplicaciones de confianza](../deployment/trusted-application-deployment-overview.md)   
  [Mage.exe (Herramienta de generación y edición de manifiestos)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)
-
-
-

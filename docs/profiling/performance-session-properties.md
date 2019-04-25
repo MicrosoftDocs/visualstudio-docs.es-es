@@ -8,15 +8,15 @@ helpviewer_keywords:
 - performance tools, performance session properties
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a6cf897d0181717439f7ae3ac6afccb469b06f0
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 77da53856e0562d036fade431dd0deba0376fe9f
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53961918"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56624976"
 ---
 # <a name="performance-session-properties"></a>Propiedades de las sesiones de rendimiento
 
@@ -38,7 +38,7 @@ Para obtener más información, consulte:
 
 [Recopilación de datos referentes a la asignación y duración de memoria de .NET](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)
 
- [Cómo: Establecer opciones de nombre de archivo de datos de rendimiento](../profiling/how-to-set-performance-data-file-name-options.md)
+- [Cómo: Establecer opciones de nombre de archivo de datos de rendimiento](../profiling/how-to-set-performance-data-file-name-options.md)
 
 ## <a name="launch"></a>Launch
 
@@ -111,6 +111,6 @@ Para obtener más información, consulte:
 
 ## <a name="see-also"></a>Vea también
 
-[Información general](../profiling/overviews-performance-tools.md)  
-[Configuración de sesiones de rendimiento](../profiling/configuring-performance-sessions.md)  
-[Control de la recopilación de datos](../profiling/controlling-data-collection.md)
+[Información general](../profiling/overviews-performance-tools.md)
+[Configurar sesiones de rendimiento](../profiling/configuring-performance-sessions.md)
+[Controlar la recopilación de datos](../profiling/controlling-data-collection.md)

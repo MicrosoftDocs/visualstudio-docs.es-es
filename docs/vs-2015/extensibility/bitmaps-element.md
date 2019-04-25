@@ -1,27 +1,22 @@
 ---
 title: Elemento de mapas de bits | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - VSCT XML schema elements, Bitmaps
 - Bitmaps element (VSCT XML schema)
 ms.assetid: 74652e1b-fcfa-421b-aa9f-fbc081d3b476
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 7ec55d7e7336837db5758fb49079238a84e99d28
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 50e0a57c53587d56cacc91faa8bc40b9e221b318
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51773462"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58988394"
 ---
 # <a name="bitmaps-element"></a>Bitmaps (Elemento)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,4 +67,3 @@ Grupos [elemento de mapa de bits](../extensibility/bitmap-element.md) elementos.
 ## <a name="see-also"></a>Vea también  
  [Cómo VSPackages agregar elementos de la interfaz de usuario](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [Comandos, menús y barras de herramientas](../extensibility/internals/commands-menus-and-toolbars.md)
-

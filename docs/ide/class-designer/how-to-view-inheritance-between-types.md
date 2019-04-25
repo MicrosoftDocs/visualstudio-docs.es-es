@@ -1,7 +1,6 @@
 ---
-title: Procedimiento Ver la herencia entre tipos (Diseñador de clases)
+title: Filtrar Ver la herencia entre tipos (Diseñador de clases)
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.classdesigner.AssociationTypeNotFoundError
@@ -12,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: ea3f0ada-f53b-4fb1-9fb5-908286f5ec3e
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9da919b2a3ead6ab48d199e9370c799afb9f9a65
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: b23a676e4028e8f06f26ccc985ca22b85f56ac95
+ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53925438"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "55907865"
 ---
-# <a name="how-to-view-inheritance-between-types-in-class-designer"></a>Procedimiento Ver la herencia entre tipos en el Diseñador de clases
+# <a name="how-to-view-inheritance-between-types-in-class-designer"></a>Filtrar Ver la herencia entre tipos en el Diseñador de clases
 
 Si existe, la relación de herencia entre un tipo base y sus tipos derivados se puede buscar en un diagrama de clases del **Diseñador de clases**. Para crear una relación de herencia entre dos tipos si no existe ninguna, vea [Cómo: Crear herencia entre tipos](how-to-create-inheritance-between-types.md).
 

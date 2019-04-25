@@ -1,14 +1,9 @@
 ---
-title: 'CA1901: Las declaraciones P / Invoke deben ser portátiles | Microsoft Docs'
-ms.custom: ''
+title: 'CA1901: Las declaraciones P / Invoke deben ser portátiles | Documentos de Microsoft'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1901
 - PInvokeDeclarationsShouldBePortable
@@ -20,12 +15,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a44e439ecafaa2e89df8cc93c131dbf2abe2dc30
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ccbbc3178a9f65c15d11a27dee1a625cca729240
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49948140"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053954"
 ---
 # <a name="ca1901-pinvoke-declarations-should-be-portable"></a>CA1901: Las declaraciones P/Invoke deben ser portátiles
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,9 +38,9 @@ ms.locfileid: "49948140"
 ## <a name="rule-description"></a>Descripción de la regla
  Cualquiera de los siguientes escenarios infringe esta regla se produce:
 
--   El valor devuelto o parámetro se escribe como un entero de tamaño fijo cuando se debe escribir como un `IntPtr`.
+- El valor devuelto o parámetro se escribe como un entero de tamaño fijo cuando se debe escribir como un `IntPtr`.
 
--   El valor devuelto o parámetro que se escribe como un `IntPtr` cuando debe escribirse como un entero de tamaño fijo.
+- El valor devuelto o parámetro que se escribe como un `IntPtr` cuando debe escribirse como un entero de tamaño fijo.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
  Puede corregir esta infracción usando `IntPtr` o `UIntPtr` para representar los identificadores en lugar de `Int32` o `UInt32`.
@@ -85,6 +80,3 @@ internal class NativeMethods{
 
 ## <a name="see-also"></a>Vea también
  [Portability Warnings](../code-quality/portability-warnings.md)
-
-
-

@@ -1,14 +1,9 @@
 ---
-title: 'Cómo: Seleccionar los archivos que se van a compilar | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Seleccionar los archivos que se van a compilar | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, wildcards
 - MSBuild, including files
@@ -17,18 +12,17 @@ ms.assetid: f5ff182f-7b3a-46fb-9335-37df54cfb8eb
 caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 7b8eeb62b8a5091743345c1a5c136bc2fa87269c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 5a45720c739087c2caf43314cbcbc8aea162534c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223813"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064848"
 ---
-# <a name="how-to-select-the-files-to-build"></a>Cómo: Seleccionar los archivos que se van a compilar
+# <a name="how-to-select-the-files-to-build"></a>Procedimiento Seleccionar los archivos que se van a compilar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Cuando se compila un proyecto que contiene varios archivos, se puede enumerar cada archivo en el archivo de proyecto de forma independiente, o bien usar comodines para incluir todos los archivos de un directorio o un conjunto anidado de directorios.  
   
 ## <a name="specifying-inputs"></a>Especificar entradas  
@@ -38,7 +32,7 @@ Cuando se compila un proyecto que contiene varios archivos, se puede enumerar ca
   
 #### <a name="to-declare-items-individually"></a>Para declarar elementos individualmente  
   
--   Use atributos `Include` similares a los siguientes:  
+- Use atributos `Include` similares a los siguientes:  
   
      `<CSFile Include="form1.cs"/>`  
   
@@ -51,7 +45,7 @@ Cuando se compila un proyecto que contiene varios archivos, se puede enumerar ca
   
 #### <a name="to-declare-multiple-items"></a>Para declarar varios elementos  
   
--   Use atributos `Include` similares a los siguientes:  
+- Use atributos `Include` similares a los siguientes:  
   
      `<CSFile Include="form1.cs;form2.cs"/>`  
   
@@ -72,19 +66,19 @@ Cuando se compila un proyecto que contiene varios archivos, se puede enumerar ca
   
 #### <a name="to-include-all-jpg-files-in-the-images-directory-and-subdirectories"></a>Para incluir todos los archivos .jpg del directorio Images y subdirectorios  
   
--   Use el atributo `Include` siguiente:  
+- Use el atributo `Include` siguiente:  
   
      `Include="Images\**\*.jpg"`  
   
 #### <a name="to-include-all-jpg-files-starting-with-img"></a>Para incluir todos los archivos .jpg que comiencen con "img"  
   
--   Use el atributo `Include` siguiente:  
+- Use el atributo `Include` siguiente:  
   
      `Include="Images\**\img*.jpg"`  
   
 #### <a name="to-include-all-files-in-directories-with-names-ending-in-jpgs"></a>Para incluir todos los archivos de los directorios con nombres que terminen en "jpgs"  
   
--   Use uno de los siguientes atributos `Include`:  
+- Use uno de los siguientes atributos `Include`:  
   
      `Include="Images\**\*jpgs\*.*"`  
   
@@ -97,7 +91,7 @@ Cuando se compila un proyecto que contiene varios archivos, se puede enumerar ca
   
 #### <a name="to-use-all-visual-c-or-visual-basic-files-as-inputs"></a>Para usar todos los archivos de Visual C# o Visual Basic como entradas  
   
--   Use atributos `Include` similares a los siguientes:  
+- Use atributos `Include` similares a los siguientes:  
   
      `<CSC Sources="@(CSFile)">...</CSC>`  
   
@@ -181,6 +175,3 @@ Cuando se compila un proyecto que contiene varios archivos, se puede enumerar ca
 ## <a name="see-also"></a>Vea también  
  [Cómo: Excluir archivos de la compilación](../msbuild/how-to-exclude-files-from-the-build.md)   
  [Elementos](../msbuild/msbuild-items.md)
-
-
-

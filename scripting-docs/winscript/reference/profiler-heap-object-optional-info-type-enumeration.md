@@ -2,7 +2,6 @@
 title: PROFILER_HEAP_OBJECT_OPTIONAL_INFO_TYPE (enumeración) | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -12,12 +11,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3a97d3074d2d82b99f61c4bc880e5a362c024d33
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 0a56b05c572ec5d91914dd046bfdfa39224a07de
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54095960"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58157742"
 ---
 # <a name="profilerheapobjectoptionalinfotype-enumeration"></a>PROFILER_HEAP_OBJECT_OPTIONAL_INFO_TYPE (Enumeración)
 Representa distintos tipos de información opcional. Utilizado en [PROFILER_HEAP_OBJECT_OPTIONAL_INFO (estructura)](../../winscript/reference/profiler-heap-object-optional-info-structure.md).  
@@ -34,12 +33,12 @@ typedef [v1_enum] enum {    PROFILER_HEAP_OBJECT_OPTIONAL_INFO_PROTOTYPE        
 |------------|-----------|-----------------|  
 |PROFILER_HEAP_OBJECT_OPTIONAL_INFO_PROTOTYPE|0x00000001|Información sobre el montón prototipo del objeto.|  
 |PROFILER_HEAP_OBJECT_OPTIONAL_INFO_FUNCTION_NAME|0x00000002|Información sobre el nombre de la función del objeto de montón.|  
-|PROFILER_HEAP_OBJECT_OPTIONAL_INFO_SCOPE_LIST|0 x 00000003|Información sobre el objeto de montón [PROFILER_HEAP_OBJECT_SCOPE_LIST (estructura)](../../winscript/reference/profiler-heap-object-scope-list-structure.md).|  
+|PROFILER_HEAP_OBJECT_OPTIONAL_INFO_SCOPE_LIST|0x00000003|Información sobre el objeto de montón [PROFILER_HEAP_OBJECT_SCOPE_LIST (estructura)](../../winscript/reference/profiler-heap-object-scope-list-structure.md).|  
 |PROFILER_HEAP_OBJECT_OPTIONAL_INFO_INTERNAL_PROPERTY|0x00000004|Información acerca de la propiedad interna del objeto de montón.|  
-|PROFILER_HEAP_OBJECT_OPTIONAL_INFO_NAME_PROPERTIES|0 x 00000005|Información acerca de las propiedades de nombre del objeto de montón.|  
-|PROFILER_HEAP_OBJECT_OPTIONAL_INFO_INDEX_PROPERTIES|0 x 00000006|Información sobre las propiedades del índice del objeto de montón.|  
-|PROFILER_HEAP_OBJECT_OPTIONAL_INFO_ELEMENT_ATTRIBUTES_SIZE|0 x 00000007|El tamaño de los atributos que están asociados con un elemento DOM.|  
+|PROFILER_HEAP_OBJECT_OPTIONAL_INFO_NAME_PROPERTIES|0x00000005|Información acerca de las propiedades de nombre del objeto de montón.|  
+|PROFILER_HEAP_OBJECT_OPTIONAL_INFO_INDEX_PROPERTIES|0x00000006|Información sobre las propiedades del índice del objeto de montón.|  
+|PROFILER_HEAP_OBJECT_OPTIONAL_INFO_ELEMENT_ATTRIBUTES_SIZE|0x00000007|El tamaño de los atributos que están asociados con un elemento DOM.|  
 |PROFILER_HEAP_OBJECT_OPTIONAL_INFO_ELEMENT_TEXT_CHILDREN_SIZE|0x00000008|El tamaño de cualquier texto que está asociado a un elemento DOM.|  
-|PROFILER_HEAP_OBJECT_OPTIONAL_INFO_RELATIONSHIPS|0 x 00000009|Información acerca de las relaciones del objeto de montón.|  
+|PROFILER_HEAP_OBJECT_OPTIONAL_INFO_RELATIONSHIPS|0x00000009|Información acerca de las relaciones del objeto de montón.|  
 |ROFILER_HEAP_OBJECT_OPTIONAL_INFO_WINRTEVENTS|0x0000000A|Información acerca de los eventos de Windows en tiempo de ejecución del objeto de montón.|  
 |PROFILER_HEAP_OBJECT_OPTIONAL_INFO_MAX_VALUE|PROFILER_HEAP_OBJECT_OPTIONAL_INFO_WINRTEVENTS|El valor máximo de esta enumeración.|

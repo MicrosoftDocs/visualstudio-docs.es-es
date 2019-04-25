@@ -4,17 +4,15 @@ author: evanwindom
 ms.author: jaunger
 manager: evelynp
 ms.date: 12/19/2018
-ms.topic: Get-Started-Article
+ms.topic: conceptual
 description: Obtenga información sobre el beneficio de LinkedIn Learning incluido como parte de una suscripción a LinkedIn Premium incluida en suscripciones seleccionadas de Visual Studio.
-ms.prod: vs-subscription
-ms.technology: vs-subscriptions
 searchscope: VS Subscription
-ms.openlocfilehash: fc77d1ebe0fe96c55000123e4bf040a35a37b619
-ms.sourcegitcommit: 8c4267540c0ac39664f6902c423516f408f3cbd4
+ms.openlocfilehash: 2f1e465be1d9c81235af1bad723f827a0f04147c
+ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380227"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56841554"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Beneficio de LinkedIn Learning en suscripciones de Visual Studio
 
@@ -113,7 +111,7 @@ Para activar la suscripción LinkedIn Premium y el beneficio LinkedIn Learning:
 
 ## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 ### <a name="q-if-i-renew-my-subscription-does-my-linkedin-learning-benefit-also-renew"></a>P: Si renuevo la suscripción, ¿también se renueva mi beneficio de LinkedIn Learning?
-A:  No, la oferta de LinkedIn Learning solo está disponible para nuevos suscriptores.
+R:  No, la oferta de LinkedIn Learning solo está disponible para nuevos suscriptores.
 
 ## <a name="support-resources"></a>Recursos de soporte técnico
 -  ¿Necesita ayuda con LinkedIn Learning?  Consulte estos recursos:

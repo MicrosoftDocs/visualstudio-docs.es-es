@@ -2,7 +2,6 @@
 title: IActiveScriptStats (interfaz) | Documentos de Microsoft
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,12 +13,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: da69920ca78ad47e283fa8f99a28d037edbbe44d
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: e7a0e1e616fdee2dac58c8a5a1d24ed120b28bc2
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54350146"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58152566"
 ---
 # <a name="iactivescriptstats-interface"></a>IActiveScriptStats (Interfaz)
 Permite a un host consultar las estadísticas de un script en ejecución. El host puede utilizar esta información para determinar si script tardó demasiado tiempo en completarse.  

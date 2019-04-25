@@ -1,14 +1,9 @@
 ---
 title: Tarea FormatUrl | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 dev_langs:
 - VB
 - CSharp
@@ -21,18 +16,17 @@ ms.assetid: 81114b67-520f-43b5-8891-224f68a78516
 caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 8355c56365c99a3bc91b3b9afc19ee34b034d367
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: bb870bcc3c4297d5d1b403176f931f75e418d423
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49253947"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651480"
 ---
 # <a name="formaturl-task"></a>FormatUrl (Tarea)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Convierte una dirección URL en un formato de dirección URL correcto.  
   
 ## <a name="parameters"></a>Parámetros  
@@ -49,6 +43,3 @@ Convierte una dirección URL en un formato de dirección URL correcto.
 ## <a name="see-also"></a>Vea también  
  [Tareas](../msbuild/msbuild-tasks.md)   
  [Referencia de tareas](../msbuild/msbuild-task-reference.md)
-
-
-

@@ -1,27 +1,22 @@
 ---
 title: 'Vista Árbol de llamadas: datos de muestreo de memoria de .NET | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Call Tree view
 ms.assetid: fbb6cb60-420b-4ca9-8306-2494f7d321fe
 caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: b6667d0e0ad76210434f40eaf89e4790430ffb0e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 7ed0d8a2ccf8e33b493ddcb71f9ce3a794a06862
+ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51758605"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "54787670"
 ---
 # <a name="call-tree-view---net-memory-sampling-data"></a>Vista Árbol de llamadas: datos de muestreo de memoria de .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,6 +57,3 @@ La vista Árbol de llamadas muestra las rutas de acceso de ejecución de funcion
  [Vista Árbol de llamadas: instrumentación](../profiling/call-tree-view-dotnet-memory-instrumentation-data.md)   
  [Vista Árbol de llamadas](../profiling/call-tree-view-sampling-data.md)   
  [Vista Árbol de llamadas](../profiling/call-tree-view-instrumentation-data.md)
-
-
-

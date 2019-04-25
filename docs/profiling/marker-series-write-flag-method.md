@@ -9,58 +9,55 @@ helpviewer_keywords:
 ms.assetid: ca07f388-e5d5-46fd-b991-fe6e9029a68f
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ba32b08de607f28a32cedf4050c4b4db439c1a39
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: f09cca9bd1e3babccb0debc369881a0efa00fa0b
+ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53840504"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "56625119"
 ---
 # <a name="markerserieswriteflag-method"></a>Método marker_series::write_flag
-Escribe una marca en el archivo de seguimiento del visualizador de simultaneidad.  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```cpp  
-void write_flag(  
-   _In_ LPCTSTR _Format,  
-   ...  
-);  
-void write_flag(  
-   marker_importance _Importance,  
-   _In_ LPCTSTR _Format,  
-   ...  
-);  
-void write_flag(  
-   int _Category,  
-   _In_ LPCTSTR _Format,  
-   ...  
-);  
-void write_flag(  
-   marker_importance _Importance,  
-   int _Category,  
-   _In_ LPCTSTR _Format,  
-   ...  
-);  
-```  
-  
-#### <a name="parameters"></a>Parámetros  
- `_Format`  
- Una cadena de formato compuesto que contiene texto combinado con cero o más elementos de formato, que corresponden a objetos de la lista de argumentos.  
-  
- `_Importance`  
- Nivel de importancia.  
-  
- `_Category`  
- Categoría.  
-  
-## <a name="requirements"></a>Requisitos  
- **Encabezado:** *cvmarkersobj.h*  
-  
- **Espacio de nombres**: Concurrency::diagnostic  
-  
-## <a name="see-also"></a>Vea también  
- [Clase marker_series](../profiling/marker-series-class.md)
+Escribe una marca en el archivo de seguimiento del visualizador de simultaneidad.
+
+## <a name="syntax"></a>Sintaxis
+
+```cpp
+void write_flag(
+   _In_ LPCTSTR _Format,
+   ...
+);
+void write_flag(
+   marker_importance _Importance,
+   _In_ LPCTSTR _Format,
+   ...
+);
+void write_flag(
+   int _Category,
+   _In_ LPCTSTR _Format,
+   ...
+);
+void write_flag(
+   marker_importance _Importance,
+   int _Category,
+   _In_ LPCTSTR _Format,
+   ...
+);
+```
+
+#### <a name="parameters"></a>Parámetros
+ `_Format` Una cadena de formato compuesto que contiene texto combinado con cero o más elementos de formato, que corresponden a objetos de la lista de argumentos.
+
+ `_Importance` Nivel de importancia.
+
+ `_Category` Categoría.
+
+## <a name="requirements"></a>Requisitos
+ **Encabezado:** *cvmarkersobj.h*
+
+ **Espacio de nombres**: Concurrency::diagnostic
+
+## <a name="see-also"></a>Vea también
+- [Clase marker_series](../profiling/marker-series-class.md)

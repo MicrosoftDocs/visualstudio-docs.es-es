@@ -1,26 +1,21 @@
 ---
 title: Importaciones del Editor | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - services
 ms.assetid: 8d096de3-33b4-427a-a122-4aeff8a72da0
 caps.latest.revision: 20
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8f82815871f59dfcf4d384157a9461388e96d05e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 461687e5d1e9570ea2e03610f838f6114fbc7643
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51759027"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58996405"
 ---
 # <a name="editor-imports"></a>Importaciones del editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,15 +44,15 @@ internal IEditorOptionsFactoryService m_editorOptions = null;
   
  Para obtener más ejemplos del uso de las importaciones, vea los siguientes tutoriales:  
   
- [Tutorial: creación de un glifo de margen](../extensibility/walkthrough-creating-a-margin-glyph.md)  
+ [Tutorial: Creación de un glifo de margen](../extensibility/walkthrough-creating-a-margin-glyph.md)  
   
- [Tutorial: personalización de la vista de texto](../extensibility/walkthrough-customizing-the-text-view.md)  
+ [Tutorial: Personalizar la vista de texto](../extensibility/walkthrough-customizing-the-text-view.md)  
   
- [Tutorial: destacado de texto](../extensibility/walkthrough-highlighting-text.md)  
+ [Tutorial: Resaltar texto](../extensibility/walkthrough-highlighting-text.md)  
   
- [Tutorial: visualización de información sobre herramientas de QuickInfo](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
+ [Tutorial: Mostrar información rápida](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
   
- [Tutorial: visualización de la ayuda de firma](../extensibility/walkthrough-displaying-signature-help.md)  
+ [Tutorial: Mostrar la Ayuda de firma](../extensibility/walkthrough-displaying-signature-help.md)  
   
  [Tutorial: Mostrar la finalización de instrucciones](../extensibility/walkthrough-displaying-statement-completion.md)  
   
@@ -71,7 +66,7 @@ internal IEditorOptionsFactoryService m_editorOptions = null;
 internal SVsServiceProvider ServiceProvider = null;   
 ```  
   
- Consulte [Tutorial: acceso al objeto DTE desde una extensión del Editor](../extensibility/walkthrough-accessing-the-dte-object-from-an-editor-extension.md) para obtener más información.  
+ Vea [Tutorial: Acceso al objeto DTE desde una extensión del Editor](../extensibility/walkthrough-accessing-the-dte-object-from-an-editor-extension.md) para obtener más información.  
   
 ## <a name="services"></a>Servicios  
  Editor de servicios es generalmente sola entidades que proporcionan un servicio y se comparten entre varios componentes.  
@@ -129,4 +124,3 @@ internal SVsServiceProvider ServiceProvider = null;
   
 ## <a name="see-also"></a>Vea también  
  [Servicio de lenguaje y puntos de extensión del editor](../extensibility/language-service-and-editor-extension-points.md)
-

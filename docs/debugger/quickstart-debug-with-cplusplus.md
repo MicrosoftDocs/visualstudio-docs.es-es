@@ -9,33 +9,36 @@ helpviewer_keywords:
 ms.assetid: 639e430b-6d2d-46bd-b738-8c60dfb384f1
 author: mikejo5000
 ms.author: mikejo
-manager: douge
+manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 015dc86890c6d60cf7326a554aa419ac0fe1645c
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: ac95fc54b410700f3ce28f3ace6192787400d64b
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986484"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504216"
 ---
 # <a name="quickstart-debug-with-c-using-the-visual-studio-debugger"></a>Inicio rápido: Depurar con C++ mediante el depurador de Visual Studio
 
 El depurador de Visual Studio proporciona muchas características de gran eficacia para ayudar a depurar aplicaciones. En este tema se proporciona una forma rápida de obtener información sobre las características básicas.
 
-## <a name="create-a-new-project"></a>Crear un proyecto nuevo 
+## <a name="create-a-new-project"></a>Crear un proyecto nuevo
 
-1. En Visual Studio, seleccione **Archivo > Nuevo proyecto**.
+1. Abra Visual Studio y cree un proyecto.
 
-2. Bajo **Visual C++**, seleccione **Escritorio de Windows** y, después, elija **Aplicación de consola Windows** en el panel central.
+    ::: moniker range=">=vs-2019"
+    Presione **Esc** para cerrar la ventana de inicio. Presione **Ctrl + Q** para abrir el cuadro de búsqueda, escriba **c++**, elija **Plantillas** y luego, **Crear proyecto de aplicación de consola**. En el cuadro de diálogo que se abre, elija **Crear**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    En la barra de menús superior, seleccione **Archivo** > **Nuevo** > **Proyecto**. En el panel izquierdo del cuadro de diálogo **Nuevo proyecto**, en **Visual C++**, elija **Escritorio de Windows** y luego, en el panel central, **Aplicación de consola Windows**. Luego escriba un nombre como **MyDbgApp** y haga clic en **Aceptar**.
+    ::: moniker-end
 
-    Si no ve la plantilla de proyecto **Aplicación de consola Windows**, haga clic en el vínculo **Abrir el instalador de Visual Studio** en el panel izquierdo del cuadro de diálogo **Nuevo proyecto**. Se iniciará el Instalador de Visual Studio. Seleccione la carga de trabajo **Desarrollo para el escritorio con C++** y, luego, elija **Modificar**.
-
-3. Escriba un nombre como **MyDbgApp** y haga clic en **Aceptar**.
+    Si no ve la plantilla de proyecto **Aplicación de consola Windows**, vaya a **Herramientas** > **Obtener herramientas y características…** y se abrirá el Instalador de Visual Studio. Se iniciará el Instalador de Visual Studio. Seleccione la carga de trabajo **Desarrollo para el escritorio con C++** y, luego, elija **Modificar**.
 
     Visual Studio crea el proyecto.
 
-4. En MyDbgApp.cpp, reemplace el código siguiente
+1. En MyDbgApp.cpp, reemplace el código siguiente
 
     ```c++
     int main()
@@ -47,7 +50,7 @@ El depurador de Visual Studio proporciona muchas características de gran eficac
     con este código (no quite `#include "stdafx.h"`):
 
     ```c++
-    #include <list>  
+    #include <list>
     #include <iostream>
 
     using namespace std;
@@ -90,11 +93,11 @@ Un *punto de interrupción* es un marcador que indica en qué punto debe Visual 
     > [!TIP]
     > Si tiene un punto de interrupción en un bucle o recursión, o si tiene muchos puntos de interrupción que ejecuta paso a paso con frecuencia, use un [punto de interrupción condicional](../debugger/using-breakpoints.md#BKMK_Specify_a_breakpoint_condition_using_a_code_expression) para asegurarse de que el código se suspende ÚNICAMENTE cuando se cumplen determinadas condiciones. Un punto de interrupción condicional ahorra tiempo y además puede facilitar la depuración de problemas que son difíciles de reproducir.
 
-    Al intentar depurar errores relacionados con la memoria en C++, también puede usar puntos de interrupción para inspeccionar valores de dirección (busque NULL) y números de referencia. 
+    Al intentar depurar errores relacionados con la memoria en C++, también puede usar puntos de interrupción para inspeccionar valores de dirección (busque NULL) y números de referencia.
 
 ## <a name="navigate-code"></a>Navegación en el código
 
-Hay distintos comandos para indicar al depurador que continúe. Aquí se muestra un útil comando de navegación de código que es nuevo en Visual Studio 2017.
+Hay distintos comandos para indicar al depurador que continúe. Aquí se muestra un comando de navegación de código muy útil disponible a partir de Visual Studio 2017.
 
 Mientras la ejecución está detenida en el punto de interrupción, mantenga el puntero sobre la instrucción `c1.push_back(20)` hasta que aparezca el botón verde **Run to click** (Ejecutar hasta clic) ![Ejecutar hasta clic](../debugger/media/dbg-tour-run-to-click.png "RunToClick") y luego presione el botón **Ejecutar hasta clic**.
 
@@ -110,7 +113,7 @@ Los comandos de teclado habituales usados para ejecutar el código paso a paso s
 
     ![Visualización de una información sobre datos](../debugger/media/dbg-qs-data-tip.png "View a datatip")
 
-    La información sobre datos muestra el valor actual de la variable `c1` y permite inspeccionar sus propiedades. Al depurar, si ve un valor que no esperaba, probablemente tenga un error en las líneas de código anteriores o de llamada. 
+    La información sobre datos muestra el valor actual de la variable `c1` y permite inspeccionar sus propiedades. Al depurar, si ve un valor que no esperaba, probablemente tenga un error en las líneas de código anteriores o de llamada.
 
 2. Expanda la información sobre datos para ver los valores de propiedad actuales del objeto `c1`.
 
@@ -135,4 +138,4 @@ Para obtener más información sobre el uso de Editar y continuar y las limitaci
 En este tutorial, ha aprendido a iniciar el depurador, a ejecutar el código paso a paso y a inspeccionar variables. Puede ser que le interese analizar las características del depurador con más detenimiento, así como consultar los vínculos disponibles con más información.
 
 > [!div class="nextstepaction"]
-> [Guía de características del depurador](../debugger/debugger-feature-tour.md)
+> [Primer vistazo al depurador](../debugger/debugger-feature-tour.md)

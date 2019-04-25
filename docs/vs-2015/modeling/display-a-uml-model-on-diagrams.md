@@ -1,56 +1,53 @@
 ---
 title: Mostrar un modelo UML en diagramas | Documentos de Microsoft
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML API
 ms.assetid: adf1f1f2-2ad9-4ade-82de-c6a5194ab471
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: fd30d626d6500f7bf904350133ea33f2b2a25ac5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 31181cd3dd70d3767bce65fe338d8dc152ec311c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51757310"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042358"
 ---
 # <a name="display-a-uml-model-on-diagrams"></a>Mostrar un modelo UML en diagramas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 En el código de programa de una extensión de Visual Studio puede controlar el modo en que los elementos del modelo se muestran en los diagramas. Para ver qué versiones de Visual Studio admiten esta característica, vea [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
- En este tema:  
- -   [Para mostrar un elemento en un diagrama](#Display)  
+En este tema:  
+- [Para mostrar un elemento en un diagrama](#Display)  
   
--   [Obtener acceso a las formas que representan un elemento](#GetShapes)  
+- [Obtener acceso a las formas que representan un elemento](#GetShapes)  
   
--   [Mover y cambiar el tamaño de las formas](#Moving)  
+- [Mover y cambiar el tamaño de las formas](#Moving)  
   
--   [Para quitar una forma de un diagrama](#Removing)  
+- [Para quitar una forma de un diagrama](#Removing)  
   
--   [Abrir y crear diagramas](#Opening)  
+- [Abrir y crear diagramas](#Opening)  
   
--   [Ejemplo: Comando para alinear formas](#AlignCommand)  
+- [Ejemplo: Comando para alinear formas](#AlignCommand)  
   
-##  <a name="Display"></a> Para mostrar un elemento en un diagrama  
+## <a name="Display"></a> Para mostrar un elemento en un diagrama  
  Cuando se crea un elemento como un caso de uso o una acción, el usuario puede verlo en el Explorador de modelos UML, pero no siempre aparece automáticamente en un diagrama. En algunos casos, hay que escribir código para que se muestre. En la tabla siguiente se resumen las opciones.  
   
 |Tipo de elemento|Por ejemplo|Requisitos del código para su visualización|  
 |---------------------|-----------------|-------------------------------------|  
-|Clasificador|`Class`<br /><br /> `Component`<br /><br /> `Actor`<br /><br /> `Use Case`|Cree formas asociadas en diagramas especificados. Puede crear todas las formas que desee para cada clasificador.<br /><br /> `diagram.Display<modelElementType>`<br /><br /> `(modelElement, parentShape,`<br /><br /> `xPosition , yPosition);`<br /><br /> Establezca `parentShape` en `null` para una forma en el nivel superior del diagrama.<br /><br /> Para mostrar una forma dentro de otra:<br /><br /> `IShape<IUseCase> usecaseShape =`<br /><br /> `useCaseDiagram.Display`<br /><br /> `(useCase,`<br /><br /> `subsystemShape,`<br /><br /> `subsystemShape.XPosition + 5,`<br /><br /> `subsystemShape.YPosition + 5);` **Nota:** si ejecuta una operación Display dentro de un **ILinkedUndo** transacción, el método devuelve a veces no `IShape`. Sin embargo, la forma se crea correctamente y puede obtenerse acceso a ella mediante `IElement.Shapes().`|  
+|Clasificador|`Class`<br /><br /> `Component`<br /><br /> `Actor`<br /><br /> `Use Case`|Cree formas asociadas en diagramas especificados. Puede crear todas las formas que desee para cada clasificador.<br /><br /> `diagram.Display<modelElementType>`<br /><br /> `(modelElement, parentShape,`<br /><br /> `xPosition , yPosition);`<br /><br /> Establezca `parentShape` en `null` para una forma en el nivel superior del diagrama.<br /><br /> Para mostrar una forma dentro de otra:<br /><br /> `IShape<IUseCase> usecaseShape =`<br /><br /> `useCaseDiagram.Display`<br /><br /> `(useCase,`<br /><br /> `subsystemShape,`<br /><br /> `subsystemShape.XPosition + 5,`<br /><br /> `subsystemShape.YPosition + 5);` **Nota:**  Si ejecuta una operación Display dentro de un **ILinkedUndo** transacción, el método devuelve a veces no `IShape`. Sin embargo, la forma se crea correctamente y puede obtenerse acceso a ella mediante `IElement.Shapes().`|  
 |Elemento secundario del clasificador|Atributo, operación,<br /><br /> Elemento, puerto|Automático: no es necesario código.<br /><br /> Se muestra como parte del elemento primario.|  
 |Comportamiento|Interacción (secuencia)<br /><br /> Actividad|Enlace el comportamiento a un diagrama adecuado.<br /><br /> Un comportamiento no puede enlazarse a más de un diagrama a la vez.<br /><br /> Por ejemplo:<br /><br /> `sequenceDiagram.Bind(interaction);`<br /><br /> `activityDiagram.Bind(activity);`|  
 |Elemento secundario del comportamiento|Líneas de vida, mensajes, acciones, nodos de objeto|Automático: no es necesario código.<br /><br /> Se muestra si el elemento primario está enlazado a un diagrama.|  
 |Relación|Asociación, generalización, flujo, dependencia|Automático: no es necesario código.<br /><br /> Se muestra en los diagramas en los que aparecen los dos extremos.|  
   
-##  <a name="GetShapes"></a> Obtener acceso a las formas que representan un elemento  
+## <a name="GetShapes"></a> Obtener acceso a las formas que representan un elemento  
  La forma que representa un elemento pertenece a los tipos siguientes:  
   
  `IShape`  
@@ -71,7 +68,7 @@ En el código de programa de una extensión de Visual Studio puede controlar el 
 |`IShape iShape = ...;`<br /><br /> `IShape<IClass> classShape = iShape.ToIShape<IClass>();`<br /><br /> `IClass aClass = classShape.Element;`|Conversión de un tipo genérico `IShape` a un `IShape<IElement>` fuertemente tipado.|  
 |`IShape<IClassifier> classifierShape;`<br /><br /> `IShape<IUseCase> usecaseShape =`<br /><br /> `classifierShape.ToIShape<IUseCase>();`|Conversión de una forma de tipo parametrizada en otra forma.|  
   
-##  <a name="Moving"></a> Mover y cambiar el tamaño de las formas  
+## <a name="Moving"></a> Mover y cambiar el tamaño de las formas  
   
 |||  
 |-|-|  
@@ -80,7 +77,7 @@ En el código de programa de una extensión de Visual Studio puede controlar el 
   
  Para obtener un ejemplo, vea [definir un comando de alineación](#AlignCommand).  
   
-##  <a name="Removing"></a> Para quitar una forma de un diagrama  
+## <a name="Removing"></a> Para quitar una forma de un diagrama  
  Las formas de algunos tipos de elementos se pueden eliminar sin tener que eliminar el elemento.  
   
 |Elemento de modelo|Para quitar la forma|  
@@ -89,7 +86,7 @@ En el código de programa de una extensión de Visual Studio puede controlar el 
 |Un comportamiento: interacción o actividad|Se puede eliminar el diagrama del proyecto. Use `IDiagram.FileName` para obtener la ruta de acceso.<br /><br /> Esto no elimina el comportamiento del modelo.|  
 |Cualquier otra forma|No se puede eliminar explícitamente otras formas de un diagrama. La forma desaparecerá automáticamente si el elemento se elimina del modelo, o si la forma primaria se quita del diagrama.|  
   
-##  <a name="Opening"></a> Abrir y crear diagramas  
+## <a name="Opening"></a> Abrir y crear diagramas  
   
 ### <a name="to-access-the-users-current-diagram-from-a-command-or-gesture-extension"></a>Para obtener acceso al diagrama actual del usuario desde una extensión de gestos o comandos  
  Declare esta propiedad importada en su clase:  
@@ -165,7 +162,7 @@ foreach (ProjectItem item in project.ProjectItems)
 IModelStore modelStore = (project as IModelingProject).Store;  
 ```  
   
-##  <a name="AlignCommand"></a> Ejemplo: Comando para alinear formas  
+## <a name="AlignCommand"></a> Ejemplo: Comando para alinear formas  
  El código siguiente implementa un comando de menú que alinea las formas perfectamente. Primero, el usuario debe colocar dos o más formas de modo que queden más o menos alineadas, ya sea vertical u horizontalmente. A continuación se puede usar el comando de alineación para alinear sus centros.  
   
  Para que el comando esté disponible, agregue este código a un proyecto de comando de menú y, después, implemente la extensión resultante a los usuarios. Para obtener más información, consulte [definir un comando de menú en un diagrama de modelado](../modeling/define-a-menu-command-on-a-modeling-diagram.md).  
@@ -386,6 +383,3 @@ namespace AlignCommand
  [Navegar por el modelo UML](../modeling/navigate-the-uml-model.md)   
  [Ejemplo: Alinear formas en un comando de menú de diagrama](http://go.microsoft.com/fwlink/?LinkId=213809)   
  [Ejemplo: Creación de elementos, formas y estereotipos](http://go.microsoft.com/fwlink/?LinkId=213811)
-
-
-

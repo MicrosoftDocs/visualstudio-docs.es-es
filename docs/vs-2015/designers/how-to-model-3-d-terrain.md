@@ -1,42 +1,37 @@
 ---
-title: 'Cómo: Modelar un terreno en 3D | Microsoft Docs'
-ms.custom: ''
+title: Procedimiento Modelar un terreno en 3D | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-designers
+ms.topic: conceptual
 ms.assetid: f779b1fd-82a9-4a11-8ab7-c1c9caabc883
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: fae94fe5e7474580f8867f531fc41d0ce6781cf8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 3c9d088be89e2cf963df65a0163713c297615121
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49940520"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097484"
 ---
-# <a name="how-to-model-3-d-terrain"></a>Cómo: Modelar un terreno en 3D
+# <a name="how-to-model-3-d-terrain"></a>Procedimiento Modelo terreno en 3D
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 En este documento se muestra cómo usar el Editor de modelos para crear un modelo de terreno en 3D.  
   
  Este documento muestra estas actividades:  
   
--   Agregar objetos a una escena  
+- Agregar objetos a una escena  
   
--   Selección de caras y puntos  
+- Selección de caras y puntos  
   
--   Trasladar selecciones  
+- Trasladar selecciones  
   
--   Usar la herramienta **Subdividir cara**  
+- Usar la herramienta **Subdividir cara**  
   
--   Enmarcar un objeto en la superficie de diseño  
+- Enmarcar un objeto en la superficie de diseño  
   
 ## <a name="creating-a-3-d-terrain-model"></a>Crear un modelo de terreno en 3D  
  Puede crear un terreno en 3D subdividiendo un plano para crear caras adicionales y después manipulando los vértices para crear características de terreno interesantes.  
@@ -77,6 +72,3 @@ En este documento se muestra cómo usar el Editor de modelos para crear un model
   
 ## <a name="see-also"></a>Vea también  
  [Editor de modelos](../designers/model-editor.md)
-
-
-

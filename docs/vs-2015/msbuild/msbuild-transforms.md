@@ -1,14 +1,9 @@
 ---
 title: Transformaciones de MSBuild | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: msbuild
+ms.topic: reference
 helpviewer_keywords:
 - MSBuild, transforms
 - transforms [MSBuild]
@@ -16,18 +11,17 @@ ms.assetid: d0bcfc3c-14fa-455e-805c-63ccffa4a3bf
 caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ce1d0b63518fb48636fca38b2788eea2d0c189a8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: aaebcb9bf5edb5fda6938d364b3f96dc8823576f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49223711"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653494"
 ---
 # <a name="msbuild-transforms"></a>Transformaciones de MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Una transformación es una conversión unívoca de una lista de elementos en otra. Además de permitir que un proyecto convierta listas de elementos, una transformación permite que un destino identifique una asignación directa entre sus entradas y salidas. En este tema, se explican las transformaciones y cómo las usa [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] para compilar proyectos de manera más eficaz.  
   
 ## <a name="transform-modifiers"></a>Modificadores de transformación  
@@ -60,7 +54,7 @@ Una transformación es una conversión unívoca de una lista de elementos en otr
 ## <a name="dependency-analysis"></a>Análisis de dependencias  
  Las transformaciones garantizan una asignación unívoca entre la lista de elementos transformada y la lista de elementos original. Por tanto, si un destino crea salidas que son transformaciones de las entradas, [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] puede analizar las marcas de tiempo de las entradas y salidas, y decidir si quiere omitir, compilar o recompilar parcialmente un destino.  
   
- En la [tarea de copia](../msbuild/copy-task.md) del ejemplo siguiente, todos los archivos de la lista de elementos `BuiltAssemblies` se asignan a un archivo en la carpeta de destino de la tarea, que se especifica mediante una transformación en el atributo `Outputs`. Si cambia un archivo en la lista de elementos `BuiltAssemblies`, la tarea `Copy` se ejecutará solo para el archivo modificado y se omitirán todos los demás archivos. Para más información sobre los análisis de dependencias y cómo usar las transformaciones, vea [Cómo: Compilar versiones incrementalmente](../msbuild/how-to-build-incrementally.md).  
+ En la [tarea de copia](../msbuild/copy-task.md) del ejemplo siguiente, todos los archivos de la lista de elementos `BuiltAssemblies` se asignan a un archivo en la carpeta de destino de la tarea, que se especifica mediante una transformación en el atributo `Outputs`. Si cambia un archivo en la lista de elementos `BuiltAssemblies`, la tarea `Copy` se ejecutará solo para el archivo modificado y se omitirán todos los demás archivos. Para obtener más información sobre el análisis de dependencias y el uso de transformaciones, vea [Cómo: Compilar versiones incrementalmente](../msbuild/how-to-build-incrementally.md).  
   
 ```  
 <Target Name="CopyOutputs"  
@@ -117,7 +111,4 @@ extension: .xsd
 ## <a name="see-also"></a>Vea también  
  [Conceptos de MSBuild](../msbuild/msbuild-concepts.md)   
  [Referencia de MSBuild](../msbuild/msbuild-reference.md)   
- [Cómo: Compilar de forma incremental](../msbuild/how-to-build-incrementally.md)
-
-
-
+ [Cómo: Compilar versiones incrementalmente](../msbuild/how-to-build-incrementally.md)

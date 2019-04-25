@@ -1,20 +1,19 @@
 ---
 title: Vista Inicio del Diseñador de esquemas XML
 ms.date: 11/04/2016
-ms.prod: visual-studio-dev15
 ms.topic: reference
 ms.assetid: f25e7a2f-7469-4279-b2f4-ee2dfd4d3af1
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae65e494c20808123841143155e02d91c41b858e
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 2758dd6425e2bfb4505a1ee9e61d4966e3ba90b6
+ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53857911"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57525162"
 ---
 # <a name="start-view"></a>Vista Inicio
 
@@ -26,7 +25,7 @@ La vista inicio contiene dos secciones principales, el *marca de agua* y **detal
 
 ## <a name="watermark"></a>Marca de agua
 
-El panel de la marca de agua contiene una lista de vínculos a todas las vistas de diseñador XSD, el Editor XML, y **Explorador de esquemas XML**. Si el conjunto de esquemas tiene errores, se mostrará el texto siguiente al final de la lista: "Usar la lista de errores para ver y corregir los errores en el conjunto".
+El panel de la marca de agua contiene una lista de vínculos a todas las vistas de diseñador XSD, el editor XML, y **Explorador de esquemas XML**. Si el conjunto de esquemas tiene errores, se mostrará el texto siguiente al final de la lista: "Usar la lista de errores para ver y corregir los errores en el conjunto".
 
 ## <a name="schema-set-details"></a>Detalles del conjunto de esquemas
 
@@ -42,9 +41,9 @@ Los siguientes botones están habilitados en la barra de herramientas del Diseñ
 
 |Opción|Descripción|
 |-|-----------------|
-|**Mostrar vista inicio**|Cambia a la vista Inicio. Esta vista puede obtenerse mediante el método abreviado de teclado: **CTRL**+**1**.|
-|**Mostrar vista modelo de contenido**|Cambia a la vista Modelo de contenido. Esta vista puede obtenerse mediante el método abreviado de teclado: **CTRL**+**2**.|
-|**Mostrar vista Gráfico**|Cambia a la vista Gráfico. Esta vista puede obtenerse mediante el método abreviado de teclado: **CTRL**+**3**.|
+|**Mostrar vista inicio**|Cambia a la vista Inicio. Esta vista puede obtenerse mediante el método abreviado de teclado: **Ctrl**+**1**.|
+|**Mostrar vista modelo de contenido**|Cambia a la vista Modelo de contenido. Esta vista puede obtenerse mediante el método abreviado de teclado: **Ctrl**+**2**.|
+|**Mostrar vista Gráfico**|Cambia a la vista Gráfico. Esta vista puede obtenerse mediante el método abreviado de teclado: **Ctrl**+**3**.|
 
 ## <a name="see-also"></a>Vea también
 

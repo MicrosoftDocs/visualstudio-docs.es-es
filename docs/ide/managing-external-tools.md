@@ -1,7 +1,6 @@
 ---
 title: Administrar herramientas externas
 ms.date: 11/20/2017
-ms.prod: visual-studio-dev15
 ms.topic: conceptual
 f1_keywords:
 - vs.externaltools
@@ -9,15 +8,15 @@ helpviewer_keywords:
 - external tools [Visual Studio]
 author: gewarren
 ms.author: gewarren
-manager: douge
+manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f918ad272683de5316467d1027e098c1ead91a6
-ms.sourcegitcommit: 73861cd0ea92e50a3be1ad2a0ff0a7b07b057a1c
+ms.openlocfilehash: 3562ed9ebf2d62ab002ac227486218c8c38ad337
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54154068"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57983798"
 ---
 # <a name="manage-external-tools"></a>Administrar herramientas externas
 
@@ -25,13 +24,24 @@ Se puede llamar a herramientas externas desde Visual Studio mediante el menú **
 
 ## <a name="tools-available-on-the-tools-menu"></a>Herramientas disponibles en el menú Herramientas
 
-El **Herramientas** menú contiene varios comandos integrados, como:
+El menú **Herramientas** contiene varios comandos integrados, como:
+
+::: moniker range="vs-2017"
 
 * **Extensiones y actualizaciones** para [administrar Extensiones de Visual Studio](finding-and-using-visual-studio-extensions.md)
 * **Administrador de fragmentos de código** para [organizar fragmentos de código](code-snippets.md)
-* **PreEmptive Protection - Dotfuscator** para iniciar [Dotfuscator Community Edition (CE)](dotfuscator/index.md) si está [instalado](dotfuscator/install.md)
 * **Personalizar** para [personalizar menús y barras de herramientas](how-to-customize-menus-and-toolbars-in-visual-studio.md)
 * **Opciones** para [establecer varias opciones diferentes para el IDE de Visual Studio y otras herramientas](reference/options-dialog-box-visual-studio.md)
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+* **Administrador de fragmentos de código** para [organizar fragmentos de código](code-snippets.md)
+* **Personalizar** para [personalizar menús y barras de herramientas](how-to-customize-menus-and-toolbars-in-visual-studio.md)
+* **Opciones** para [establecer varias opciones diferentes para el IDE de Visual Studio y otras herramientas](reference/options-dialog-box-visual-studio.md)
+
+::: moniker-end
 
 ## <a name="add-new-tools-to-the-tools-menu"></a>Agregar nuevas herramientas al menú Herramientas
 

@@ -1,14 +1,9 @@
 ---
 title: Escribir código en el editor de código y texto | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.texteditor
 dev_langs:
@@ -64,13 +59,13 @@ ms.assetid: cb53ab9a-5b76-4759-b9e8-7bf32298ecbe
 caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: bd12cfee50db7dd085fee6c0591dfff3f579e640
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: a949f920fe956d1b0b3e7e9522d1b82e26a60168
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49838691"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077828"
 ---
 # <a name="writing-code-in-the-code-and-text-editor"></a>Escribir código en el editor de código y texto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -127,17 +122,17 @@ El editor de Visual Studio proporciona muchas características que le facilitan 
 
  ![Botones de navegación hacia adelante y atrás](../ide/media/vs2015-nav-buttons.png "VS2015_Nav_buttons")  
 
- También puede utilizar la barra de desplazamiento mejorada en una ventana de código para obtener una visión global de su código. En el modo de asignación, puede obtener vistas previas del código al mover el cursor hacia arriba y hacia abajo por la barra de desplazamiento. Para obtener más información, vea [Cómo: Hacer un seguimiento del código personalizando la barra de desplazamiento](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md).  
+ También puede utilizar la barra de desplazamiento mejorada en una ventana de código para obtener una visión global de su código. En el modo de mapa, puede obtener vistas previas del código al mover el cursor hacia arriba y hacia abajo de la barra de desplazamiento, para obtener más información, vea [Cómo: Seguimiento del código personalizando la barra de desplazamiento](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md).  
 
  Los siguientes comandos son métodos específicos para navegar por código :  
 
 |||  
 |-|-|  
-|Ir a \<número de línea>|(**Editar/Ir a** o CTRL + G): mover a un número de línea específico en el documento activo.|  
-|Navegar a|(**Editar/Navegar a** o CTRL +,): busca un símbolo o un archivo en la solución activa. Le ayuda a elegir un buen conjunto de resultados coincidentes de una consulta. Puede buscar palabras clave incluidas en un símbolo utilizando mayúsculas y minúsculas Camel y caracteres de subrayado para dividir dicho símbolo en palabras clave.|  
-|Buscar todas las referencias|(Menú contextual): busca todas las referencias al elemento seleccionado en la solución.|  
-|Ir a definición|(Menú contextual o F12): busca la definición del elemento seleccionado.|  
-|Ver la definición|(Menú contextual o Alt+F12): busca la definición del elemento seleccionado y lo muestra en una ventana emergente. Para obtener más información, vea [Cómo: Ver y editar código mediante Definición de Peek (Alt+F12)](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md).|  
+|Ir a \<número de línea>|(**Editar/ir a** o CTRL + G): Mover a un número de línea específico en el documento activo.|  
+|Navegar a|(**Editar/navegar a** o CTRL +,): Busca un símbolo o un archivo de la solución activa. Le ayuda a elegir un buen conjunto de resultados coincidentes de una consulta. Puede buscar palabras clave incluidas en un símbolo utilizando mayúsculas y minúsculas Camel y caracteres de subrayado para dividir dicho símbolo en palabras clave.|  
+|Buscar todas las referencias|(menú contextual): Busca todas las referencias al elemento seleccionado en la solución.|  
+|Ir a definición|(menú contextual o F12): Busca la definición del elemento seleccionado.|  
+|Definición de Peek|(menú contextual o Alt + F12): Busca la definición del elemento seleccionado y lo muestra en una ventana emergente. Para obtener más información, vea [Cómo: Ver y editar código mediante definición de Peek (ALT+F12)](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md).|  
 |Método siguiente, Método anterior|(**Editar/Método siguiente, Método anterior**) En los archivos de código de Visual Basic, utilice estos comandos para mover el punto de inserción hasta otros métodos.|  
 |Resaltado de referencia|Al hacer clic en un símbolo en el código fuente, se resaltan todas las instancias de ese símbolo en el documento. Los símbolos resaltados pueden incluir declaraciones y referencias, así como muchos otros símbolos que pueda devolver la función **Buscar todas las referencias** . Estos incluyen los nombres de clases, objetos, variables, métodos y propiedades. En el código de Visual Basic, también se resaltan las palabras clave de muchas estructuras de control. Para desplazarse al siguiente símbolo resaltado o al anterior, presione respectivamente CTRL + MAYÚS + flecha abajo o CTRL + MAYÚS + flecha arriba. Puede cambiar el color de resaltado en **Herramientas/Opciones/Entorno/Fuentes y colores/Referencia resaltada**.|  
 |Buscar información relacionada con el código|Puede encontrar información relativa a determinado código, como los cambios realizados y quién los realizó, referencias, errores, elementos de trabajo, revisiones de código y estado de prueba unitaria cuando use CodeLens en el editor de código. CodeLens funciona como una pantalla de aviso cuando se utiliza Visual Studio Enterprise con Team Foundation Server. Vea [Buscar cambios en el código y otro historial](../ide/find-code-changes-and-other-history-with-codelens.md).|  
@@ -161,7 +156,7 @@ El editor de Visual Studio proporciona muchas características que le facilitan 
   En una clase parcial, los miembros definidos fuera del archivo de código actual pueden mostrarse en gris.  
 
 ## <a name="find-code-using-navigate-to"></a>Buscar código con Navegar a
-Comando "Navegar a" de Visual Studio realiza una búsqueda centrada en el código que le ayudarán a encontrar rápidamente elementos especificados en los archivos de código, rutas de archivo y símbolos de código. A diferencia de otras búsquedas de texto como Buscar o Buscar en archivos, Navegar a limita la búsqueda a áreas donde se encuentra el código real, como archivos, formularios y módulos de código. Por ejemplo, si busca una cadena en una aplicación web de ASP.NET con Buscar o Buscar en archivos en toda la solución, puede obtener varios resultados, incluidas instancias de la cadena en los comentarios de código. Mediante el uso de navegar a, sin embargo, es posible que solo se obtiene una sola función, se omitirá todas las instancias de la cadena en la sección Comentarios del código.
+El comando "Navegar a" de Visual Studio realiza una búsqueda centrada en el código para ayudarle a encontrar rápidamente elementos específicos en archivos de código, rutas de archivo y símbolos de código. A diferencia de otras búsquedas de texto como Buscar o Buscar en archivos, Navegar a limita la búsqueda a áreas donde se encuentra el código real, como archivos, formularios y módulos de código. Por ejemplo, si busca una cadena en una aplicación web de ASP.NET con Buscar o Buscar en archivos en toda la solución, puede obtener varios resultados, incluidas instancias de la cadena en los comentarios de código. Mediante el uso de navegar a, sin embargo, es posible que solo se obtiene una sola función, se omitirá todas las instancias de la cadena en la sección Comentarios del código.
 
 ### <a name="navigate-code-using-navigate-to"></a>Navegar por el código con Navegar a
 
@@ -176,10 +171,9 @@ Comando "Navegar a" de Visual Studio realiza una búsqueda centrada en el códig
     A medida que escribe, los resultados aparecen en una lista desplegable debajo del cuadro de texto.
 1. Para ir a un elemento, púlselo en la lista.
 
-
 ### <a name="filter-your-search"></a>Filtrar la búsqueda
 
-Para limitar la búsqueda solo a los símbolos de código, comience la consulta Navegar a con un carácter "@". Por ejemplo, si busca `@application`, Navegar a muestra, por ejemplo, solo clases que tengan la palabra "aplicación" en ellas.
+Para limitar la búsqueda solo los símbolos de código, comience la consulta navegar a con un "\@" caracteres. Por ejemplo, si busca `@application`, Navegar a muestra, por ejemplo, solo clases que tengan la palabra "aplicación" en ellas.
 
 Si usa intercalación de mayúsculas y minúsculas en el código, puede buscar elementos de código más rápido al escribir solo las letras en mayúscula del nombre del elemento de código. Por ejemplo, si su código tiene un componente denominado `ViewSwitcher`, puede buscarlo escribiendo solo las letras mayúsculas del nombre (`"VS"`) en la ventana Navegar a.
 
@@ -188,53 +182,51 @@ Si usa intercalación de mayúsculas y minúsculas en el código, puede buscar e
 Esta característica es especialmente útil si el código tiene nombres largos.
 
 ## <a name="customize-the-editor"></a>Personalizar el editor  
- **Importar y exportar configuraciones**: puede compartir las configuraciones con otro desarrollador, hacer que sus configuraciones cumplan con un estándar o volver a la configuración predeterminada de Visual Studio usando el **Asistente para importar y exportar configuraciones** en el menú **Herramientas** . Puede cambiar la configuración general o la configuración específica del proyecto y el lenguaje.  
+ **Importar y exportar configuraciones**: Puede compartir las configuraciones con otro desarrollador, hacer que sus configuraciones cumplan con un estándar o volver a la configuración predeterminada de Visual Studio mediante el uso de la **importar y exportar configuraciones** en el **herramientas** menú. Puede cambiar la configuración general o la configuración específica del proyecto y el lenguaje.  
 
- **Asignación de teclado**: puede definir nuevas teclas de acceso rápido o volver a definir las existentes en la configuración Herramientas/Opciones/Entorno/Teclado. Para obtener más información sobre las teclas de acceso rápido, vea [Métodos abreviados de teclado predeterminados](../ide/default-keyboard-shortcuts-in-visual-studio.md).  
+ **Asignación de teclado**: Puede definir teclas de acceso rápido nuevas o redefinir las existentes en la configuración herramientas/opciones/entorno/teclado. Para obtener más información sobre las teclas de acceso rápido, vea [Métodos abreviados de teclado predeterminados](../ide/default-keyboard-shortcuts-in-visual-studio.md).  
 
  Para obtener información acerca de las opciones del editor específicas de los lenguajes, consulte:  
 
--   [Configuración de Visual Basic](http://msdn.microsoft.com/library/2712b3b1-18f2-430c-ae91-28468bbf5f32)  
+- [Configuración de Visual Basic](http://msdn.microsoft.com/library/2712b3b1-18f2-430c-ae91-28468bbf5f32)  
 
--   [Usar el entorno de desarrollo de Visual C#](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)  
+- [Usar el entorno de desarrollo de Visual C#](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)  
 
--   [Opciones, editor de texto, JavaScript, formato](../ide/reference/options-text-editor-javascript-formatting.md)  
+- [Opciones, editor de texto, JavaScript, formato](../ide/reference/options-text-editor-javascript-formatting.md)  
 
 ## <a name="in-this-section"></a>En esta sección  
 
--   [Buscar y reemplazar texto](../ide/finding-and-replacing-text.md)  
+- [Buscar y reemplazar texto](../ide/finding-and-replacing-text.md)  
 
--   [Codificaciones y saltos de línea](../ide/encodings-and-line-breaks.md)  
+- [Codificaciones y saltos de línea](../ide/encodings-and-line-breaks.md)  
 
--   [Esquematización](../ide/outlining.md)  
+- [Esquematización](../ide/outlining.md)  
 
--   [Refactorización](../ide/refactoring-in-visual-studio.md)  
+- [Refactorización](../ide/refactoring-in-visual-studio.md)  
 
--   [Sugerencias de productividad](../ide/productivity-tips-for-visual-studio.md)  
+- [Sugerencias de productividad](../ide/productivity-tips-for-visual-studio.md)  
 
--   [Usar IntelliSense](../ide/using-intellisense.md)  
+- [Usar IntelliSense](../ide/using-intellisense.md)  
 
--   [Personalizar el editor](../ide/customizing-the-editor.md)  
+- [Personalizar el editor](../ide/customizing-the-editor.md)  
 
--   [Cómo: Hacer un seguimiento del código personalizando la barra de desplazamiento](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md)  
+- [Cómo: Seguimiento del código personalizando la barra de desplazamiento](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md)  
 
--   [Cómo: Ver y editar código mediante Definición de Peek (Alt+F12)](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)  
+- [Cómo: Ver y editar código mediante Ver la definición (Alt+F12)](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)  
 
--   [Realizar acciones rápidas con las bombillas](../ide/perform-quick-actions-with-light-bulbs.md)  
+- [Realizar acciones rápidas con las bombillas](../ide/perform-quick-actions-with-light-bulbs.md)  
 
--   [Fragmentos de código](../ide/code-snippets.md)  
+- [Fragmentos de código](../ide/code-snippets.md)  
 
--   [Usar el cuadro de herramientas](../ide/using-the-toolbox.md)  
+- [Usar el cuadro de herramientas](../ide/using-the-toolbox.md)  
 
--   [Ver la estructura del código](../ide/viewing-the-structure-of-code.md)  
+- [Ver la estructura del código](../ide/viewing-the-structure-of-code.md)  
 
--   [Establecer marcadores en el código](../ide/setting-bookmarks-in-code.md)  
+- [Establecer marcadores en el código](../ide/setting-bookmarks-in-code.md)  
 
--   [Usar la Lista de tareas](../ide/using-the-task-list.md)  
+- [Usar la Lista de tareas](../ide/using-the-task-list.md)  
 
--   [Buscar cambios en el código y otro historial](../ide/find-code-changes-and-other-history-with-codelens.md)  
+- [Buscar cambios en el código y otro historial](../ide/find-code-changes-and-other-history-with-codelens.md)  
 
 ## <a name="see-also"></a>Vea también  
  [IDE de Visual Studio](../ide/visual-studio-ide.md)
-
-
