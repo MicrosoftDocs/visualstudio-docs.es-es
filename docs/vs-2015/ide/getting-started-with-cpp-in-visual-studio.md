@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 264fcea4b04b1777a455199789ed1bb9c3757f7c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: ae373742c114129c99e7b3444393e12c6c4dd8dd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758247"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057828"
 ---
 # <a name="getting-started-with-c-in-visual-studio"></a>Introducción a C++ en Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Tras completar este tutorial, estará familiarizado con muchas de las herramient
 
  [Compilar una versión de lanzamiento de la aplicación](../ide/getting-started-with-cpp-in-visual-studio.md#BKMK_BuildRelease)
 
-##  <a name="BKMK_Configure"></a> Iniciar sesión en Visual Studio
+## <a name="BKMK_Configure"></a> Iniciar sesión en Visual Studio
  Al iniciar Visual Studio por primera vez, tendrá la oportunidad de iniciar sesión con una cuenta de Microsoft como Live o Outlook. El inicio de sesión permite sincronizar su configuración en todos los dispositivos. Para obtener más información, vea [Signing in to Visual Studio](../ide/signing-in-to-visual-studio.md)
 
  Figura 1: IDE de Visual Studio
@@ -42,7 +42,7 @@ Tras completar este tutorial, estará familiarizado con muchas de las herramient
 
  Después de abrir Visual Studio, puede ver las tres partes básicas del IDE: ventanas de herramientas, menús y barras de herramientas, así como el espacio de la ventana principal. Las ventanas de herramientas se acoplan a los lados izquierdo y derecho de la ventana de la aplicación, con **Inicio rápido**, la barra de menús y la barra de herramientas estándar en la parte superior. El centro de la ventana de la aplicación contiene la **Página principal**. Cuando se abre una solución o un proyecto, los editores y diseñadores aparecen en este espacio. Cuando desarrolle una aplicación, pasará la mayor parte del tiempo en esta área central.
 
-##  <a name="BKMK_CreateApp"></a> Crear una aplicación sencilla
+## <a name="BKMK_CreateApp"></a> Crear una aplicación sencilla
  Cuando cree una aplicación en Visual Studio, cree primero un proyecto y una solución. Para este ejemplo, creará una aplicación de consola de Windows.
 
 #### <a name="to-create-a-console-app"></a>Para crear una aplicación de consola
@@ -65,12 +65,12 @@ Tras completar este tutorial, estará familiarizado con muchas de las herramient
 
    ![Archivos para la solución en el Explorador de soluciones](../ide/media/c-ide-solutioncontents.png "C++IDE_SolutionContents")
 
-##  <a name="BKMK_AddCode"></a> Agregar código a la aplicación
+## <a name="BKMK_AddCode"></a> Agregar código a la aplicación
  A continuación, agregará código para mostrar la palabra "Hola" en la ventana de la consola.
 
 #### <a name="to-display-hello-in-the-console-window"></a>Para mostrar “Hola” en la ventana de la consola
 
-1.  En el archivo GreetingsConsoleApp.cpp, escriba una línea en blanco antes de la línea `return 0;` y, después, escriba el código siguiente:
+1. En el archivo GreetingsConsoleApp.cpp, escriba una línea en blanco antes de la línea `return 0;` y, después, escriba el código siguiente:
 
     ```
     cout << "Hello\n";
@@ -84,7 +84,7 @@ Tras completar este tutorial, estará familiarizado con muchas de las herramient
 
      [cout](http://msdn.microsoft.com/library/d87db6c3-e4e1-4d09-9ec5-458f55018257) se incluye en el archivo de encabezado \<iostream\>.
 
-2.  Para incluir el encabezado iostream, escriba el código siguiente después de `#include "stdafx.h"`:
+2. Para incluir el encabezado iostream, escriba el código siguiente después de `#include "stdafx.h"`:
 
     ```
     #include \<iostream\>
@@ -95,16 +95,16 @@ Tras completar este tutorial, estará familiarizado con muchas de las herramient
 
      La línea ondulada roja bajo `cout` desaparece cuando se corrige el error.
 
-3.  Guarde los cambios en el archivo.
+3. Guarde los cambios en el archivo.
 
      ![Código que corrige un error de cout](../ide/media/c-ide-coutfix.png "C++IDE_CoutFix")
 
-##  <a name="BKMK_DebugTest"></a> Depurar y probar la aplicación
+## <a name="BKMK_DebugTest"></a> Depurar y probar la aplicación
  Puede depurar GreetingsConsoleApp para ver si aparece la palabra "Hola" en la ventana de consola.
 
 #### <a name="to-debug-the-application"></a>Para depurar la aplicación
 
--   Inicie el depurador.
+- Inicie el depurador.
 
      ![Comando Iniciar depuración del menú Depurar](../ide/media/exploreide-startdebugging.png "ExploreIDE-StartDebugging")
 
@@ -128,7 +128,7 @@ Tras completar este tutorial, estará familiarizado con muchas de las herramient
 
    Para obtener más información, vea [Preparación de la depuración: proyectos de consola](../debugger/debugging-preparation-console-projects.md).
 
-##  <a name="BKMK_BuildRelease"></a> Compilar una versión de lanzamiento de la aplicación
+## <a name="BKMK_BuildRelease"></a> Compilar una versión de lanzamiento de la aplicación
  Ahora que ha comprobado que todo funciona, puede preparar una versión de lanzamiento de la aplicación.
 
 #### <a name="to-clean-the-solution-files-and-build-a-release-version"></a>Para limpiar los archivos de solución y crear una versión de lanzamiento
@@ -148,4 +148,4 @@ Tras completar este tutorial, estará familiarizado con muchas de las herramient
    ¡Enhorabuena por completar este tutorial! Si desea explorar más ejemplos, vea [Visual Studio Samples](../ide/visual-studio-samples.md).
 
 ## <a name="see-also"></a>Vea también
- [Tutorial: Crear una aplicación sencilla](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md) [sugerencias de productividad](../ide/productivity-tips-for-visual-studio.md) [ejemplos de Visual Studio](../ide/visual-studio-samples.md) [comience a desarrollar con Visual Studio](../ide/get-started-developing-with-visual-studio.md)
+ [Tutorial: Crear una aplicación sencilla](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md) [Sugerencias de productividad](../ide/productivity-tips-for-visual-studio.md) [Ejemplos de Visual Studio](../ide/visual-studio-samples.md) [Introducción al desarrollo con Visual Studio](../ide/get-started-developing-with-visual-studio.md)

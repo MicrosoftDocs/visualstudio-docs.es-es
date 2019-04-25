@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: Restaurar miniprogramas de refactorización de C# | Microsoft Docs'
+title: 'Procedimiento: Restauración de fragmentos de código de refactorización en C# | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -12,12 +12,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c9ebd6b96a24b10601257d5eefc58014ef7058c9
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 9f81514db881ad26a5fa827b0bde11df2467f23d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54782601"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050817"
 ---
 # <a name="how-to-restore-c-refactoring-snippets"></a>Cómo: Restaurar miniprogramas de refactorización de C#
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,23 +30,23 @@ Las operaciones de refactorización de C# dependen de fragmentos de código situ
   
 ### <a name="to-verify-c-refactoring-snippets-are-available-through-the-code-snippet-manager"></a>Para comprobar que los miniprogramas de refactorización de C# están disponibles a través del Administrador de fragmentos de código  
   
-1.  En el menú **Herramientas**, seleccione **Code Snippet Manager** (Administrador de fragmentos de código).  
+1. En el menú **Herramientas**, seleccione **Code Snippet Manager** (Administrador de fragmentos de código).  
   
-2.  En el cuadro de diálogo **Code Snippet Manager** (Administrador de fragmentos de código), seleccione **Visual C#** en la lista desplegable **Lenguaje**.  
+2. En el cuadro de diálogo **Code Snippet Manager** (Administrador de fragmentos de código), seleccione **Visual C#** en la lista desplegable **Lenguaje**.  
   
      Debería aparecer una carpeta **Refactorización** en la lista de carpetas de la vista de árbol.  
   
 ### <a name="to-restore-refactoring-see-comment-in-code-snippet-manager"></a>Para restaurar la refactorización, consulte el comentario en el Administrador de fragmentos de código  
   
-1.  Si la carpeta **Refactorización** no aparece en la lista de carpetas de la vista de árbol del Administrador de fragmentos de código, use este procedimiento para volver a agregar los fragmentos de refactorización en el Administrador de fragmentos de código.  
+1. Si la carpeta **Refactorización** no aparece en la lista de carpetas de la vista de árbol del Administrador de fragmentos de código, use este procedimiento para volver a agregar los fragmentos de refactorización en el Administrador de fragmentos de código.  
   
-2.  En el menú **Herramientas**, seleccione **Code Snippet Manager** (Administrador de fragmentos de código).  
+2. En el menú **Herramientas**, seleccione **Code Snippet Manager** (Administrador de fragmentos de código).  
   
-3.  En el cuadro de diálogo **Code Snippet Manager** (Administrador de fragmentos de código), seleccione **Visual C#** en la lista desplegable **Lenguaje**.  
+3. En el cuadro de diálogo **Code Snippet Manager** (Administrador de fragmentos de código), seleccione **Visual C#** en la lista desplegable **Lenguaje**.  
   
-4.  Haga clic en **Agregar**. Aparece el cuadro de diálogo **Directorio de fragmentos de código**, que le permite buscar y especificar el directorio para volver a agregar en el Administrador de fragmentos de código.  
+4. Haga clic en **Agregar**. Aparece el cuadro de diálogo **Directorio de fragmentos de código**, que le permite buscar y especificar el directorio para volver a agregar en el Administrador de fragmentos de código.  
   
-5.  Busque la carpeta **Refactorización**, cuya ruta de acceso del directorio es la siguiente:  
+5. Busque la carpeta **Refactorización**, cuya ruta de acceso del directorio es la siguiente:  
   
      *Directorio de instalación*\Microsoft Visual Studio 14.0\VC#\Snippets\\*ID_de_lenguaje*\Refactoring  
   
@@ -54,7 +54,7 @@ Las operaciones de refactorización de C# dependen de fragmentos de código situ
   
      C:\Archivos de programa\Microsoft Visual Studio 14.0\VC#\Snippets\1033\Refactoring.  
   
-6.  Haga clic en **Abrir** en el cuadro de diálogo **Directorio de fragmentos de código** y, después, haga clic en **Aceptar** en el Administrador de fragmentos de código.  
+6. Haga clic en **Abrir** en el cuadro de diálogo **Directorio de fragmentos de código** y, después, haga clic en **Aceptar** en el Administrador de fragmentos de código.  
   
 ## <a name="see-also"></a>Vea también  
  [Fragmentos de código de Visual C#](../ide/visual-csharp-code-snippets.md)   

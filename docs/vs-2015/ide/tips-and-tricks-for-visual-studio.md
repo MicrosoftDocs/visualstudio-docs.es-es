@@ -9,36 +9,36 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6eb3e77c8d84f7603828c39b637bb49a8310a269
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 24c876edafaee848a050099fdb031f4637436f22
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54771184"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096574"
 ---
 # <a name="tips-and-tricks-for-visual-studio"></a>Sugerencias y trucos de Visual Studio
 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-En Visual Studio se puede navegar más fácilmente gracias a los accesos directos que se indican en este tema. Para obtener más información, consulte [métodos abreviados de teclado en Visual Studio](default-keyboard-shortcuts-in-visual-studio.md). Para obtener información sobre cómo optimizar Visual Studio para la accesibilidad, vea [Sugerencias y trucos de accesibilidad](../ide/reference/accessibility-tips-and-tricks.md).
+En Visual Studio se puede navegar más fácilmente gracias a los accesos directos que se indican en este tema. Para más información, consulte [Métodos abreviados de teclado de Visual Studio](default-keyboard-shortcuts-in-visual-studio.md). Para obtener información sobre cómo optimizar Visual Studio para la accesibilidad, vea [Sugerencias y trucos de accesibilidad](../ide/reference/accessibility-tips-and-tricks.md).
 
--   [Administración de ventanas](../ide/tips-and-tricks-for-visual-studio.md#BKMK_WindowMgmt)
+- [Administración de ventanas](../ide/tips-and-tricks-for-visual-studio.md#BKMK_WindowMgmt)
 
--   [Accesos directos de ventanas](../ide/tips-and-tricks-for-visual-studio.md#BKMK_WindowShortcuts)
+- [Accesos directos de ventanas](../ide/tips-and-tricks-for-visual-studio.md#BKMK_WindowShortcuts)
 
--   [Búsqueda en Visual Studio](../ide/tips-and-tricks-for-visual-studio.md#BKMK_Search)
+- [Búsqueda en Visual Studio](../ide/tips-and-tricks-for-visual-studio.md#BKMK_Search)
 
--   [Búsqueda en el editor](../ide/tips-and-tricks-for-visual-studio.md#BKMK_EditorFind)
+- [Búsqueda en el editor](../ide/tips-and-tricks-for-visual-studio.md#BKMK_EditorFind)
 
--   [Editor de código](../ide/tips-and-tricks-for-visual-studio.md#BKMK_CodeEditor)
+- [Editor de código](../ide/tips-and-tricks-for-visual-studio.md#BKMK_CodeEditor)
 
--   [Barras de herramientas](../ide/tips-and-tricks-for-visual-studio.md#BKMK_Toolbars)
+- [Barras de herramientas](../ide/tips-and-tricks-for-visual-studio.md#BKMK_Toolbars)
 
--   [Depuración](../ide/tips-and-tricks-for-visual-studio.md#BKMK_Debugging)
+- [Depuración](../ide/tips-and-tricks-for-visual-studio.md#BKMK_Debugging)
 
--   [Administración del ciclo de vida de las aplicaciones](../ide/tips-and-tricks-for-visual-studio.md#BKMK_ALM)
+- [Administración del ciclo de vida de las aplicaciones](../ide/tips-and-tricks-for-visual-studio.md#BKMK_ALM)
 
-##  <a name="BKMK_WindowMgmt"></a> Administración de ventanas
+## <a name="BKMK_WindowMgmt"></a> Administración de ventanas
 
 |||
 |-|-|
@@ -49,7 +49,7 @@ En Visual Studio se puede navegar más fácilmente gracias a los accesos directo
 |Mostrar la lista de archivos abiertos|Ctrl+Alt+Abajo|
 |Mostrar todas las ventanas flotantes|Ctrl+Mayús+M|
 
-##  <a name="BKMK_WindowShortcuts"></a> Accesos directos de ventanas
+## <a name="BKMK_WindowShortcuts"></a> Accesos directos de ventanas
 
 |||
 |-|-|
@@ -59,7 +59,7 @@ En Visual Studio se puede navegar más fácilmente gracias a los accesos directo
 |Iniciar nueva instancia|Win+Mayús+n|
 |Cambiar entre ventanas|Win+n|
 
-##  <a name="BKMK_Search"></a> Búsqueda en Visual Studio
+## <a name="BKMK_Search"></a> Búsqueda en Visual Studio
 
 |||
 |-|-|
@@ -69,7 +69,7 @@ En Visual Studio se puede navegar más fácilmente gracias a los accesos directo
 |Acotar resultados de Inicio rápido|- @opt Opciones<br />- @cmd Comandos<br />- @mru Usados más recientemente<br />- @doc Documentos abiertos|
 |Buscar en opciones de herramientas|Ctrl+T|
 
-##  <a name="BKMK_EditorFind"></a> Búsqueda en el editor
+## <a name="BKMK_EditorFind"></a> Búsqueda en el editor
 
 |||
 |-|-|
@@ -84,7 +84,7 @@ En Visual Studio se puede navegar más fácilmente gracias a los accesos directo
 |Buscar en archivos|Ctrl+Mayús+F|
 |Reemplazar en archivos|Ctrl+Mayús+H|
 
-##  <a name="BKMK_CodeEditor"></a> Editor de código
+## <a name="BKMK_CodeEditor"></a> Editor de código
 
 |||
 |-|-|
@@ -109,7 +109,7 @@ En Visual Studio se puede navegar más fácilmente gracias a los accesos directo
 |Navegar entre varios resultados de Peek|F8 y Mayús+F8|
 |Alternar entre la ventana del editor de código y la ventana Definición de Peek|Mayús+Esc|
 
-##  <a name="BKMK_Toolbars"></a> Barras de herramientas
+## <a name="BKMK_Toolbars"></a> Barras de herramientas
 
 |||
 |-|-|
@@ -118,7 +118,7 @@ En Visual Studio se puede navegar más fácilmente gracias a los accesos directo
 |Modo de comando del cuadro de texto de búsqueda|Escribir “>”|
 |Crear nuevo alias|Comando >alias NewAlias|
 
-##  <a name="BKMK_Debugging"></a> Depuración
+## <a name="BKMK_Debugging"></a> Depuración
 
 |||
 |-|-|
@@ -137,7 +137,7 @@ En Visual Studio se puede navegar más fácilmente gracias a los accesos directo
 |Borrar búfer de la ventana Inmediato|>cls|
 |Imprimir valor de la ventana Inmediato|?varname|
 
-##  <a name="BKMK_ALM"></a> Administración del ciclo de vida de las aplicaciones
+## <a name="BKMK_ALM"></a> Administración del ciclo de vida de las aplicaciones
 
 Vea [Métodos abreviados de teclado: Visual Studio Online, portal web de TFS y Team Explorer](/azure/devops/project/navigation/keyboard-shortcuts?view=vsts).
 

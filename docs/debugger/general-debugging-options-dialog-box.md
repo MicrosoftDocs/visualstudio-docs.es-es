@@ -22,10 +22,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 29b730bacd589e7b42b9f87086eda91d9e199622
-ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
-ms.translationtype: MT
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/11/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59504424"
 ---
 # <a name="general-debugging-options"></a>Opciones generales de depuración
@@ -48,7 +48,7 @@ Puede establecer las siguientes **General** opciones:
 
 En condiciones de 2 y 3, a veces detecta la excepción mediante código administrado en `mscorlib` en lugar de por common language runtime. Esta opción no afecta a la interrupción en excepciones detectadas por `mscorlib`.
 
-**Habilitar la depuración de nivel de dirección**: Habilita las características avanzadas para la depuración en el nivel de dirección (ventana Desensamblado, ventana **Registros** y puntos de interrupción de dirección).
+**Habilitar la depuración de nivel de dirección**: Habilita las características avanzadas para la depuración en el nivel de dirección (ventana **Desensamblado**, ventana **Registros** y puntos de interrupción de dirección).
 
 - **Mostrar desensamblado si el código fuente no está disponible**:   Muestra automáticamente el **desensamblado** ventana cuando se depura código para el que el origen está disponible.
 
@@ -93,7 +93,7 @@ En condiciones de 2 y 3, a veces detecta la excepción mediante código administ
 
 **Es necesario que los archivos de código fuente coincidan con la versión original**: Indica al depurador que compruebe que un archivo de código fuente coincide con la versión del código fuente utilizada para compilar el archivo ejecutable que se está depurando. Cuando la versión no coincide, se le pedirá que busque un origen correspondiente. Si no se encuentra este archivo, el código fuente no se mostrará durante la depuración.
 
-**Redirigir el texto de la ventana de salida a la ventana Inmediato**: Envía a la ventana **Inmediato** todos los mensajes del depurador que normalmente irían a la ventana Salida.
+**Redirigir el texto de la ventana de salida a la ventana Inmediato**: Envía a la ventana **Inmediato** todos los mensajes del depurador que normalmente irían a la ventana **Salida**.
 
 **Mostrar la estructura de los objetos en ventanas de variables**: Desactiva todas las personalizaciones de vistas de estructuras de objetos. Para obtener más información acerca de las personalizaciones de vistas, consulte [crear vistas personalizadas de objetos administrados](../debugger/create-custom-views-of-dot-managed-objects.md).
 

@@ -1,5 +1,5 @@
 ---
-title: Los permisos de usuario | Microsoft Docs
+title: Establecimiento de permisos | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d37e20154b3471e26f170c8437369493764935fc
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 6e30fd7500c0f9dd216b630ea79ebfb79c964fab
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54775877"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101891"
 ---
 # <a name="user-permissions-and-visual-studio"></a>Permisos de usuario y Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,19 +56,19 @@ Por motivos de seguridad, debe ejecutar Visual Studio como un usuario normal sie
 
 #### <a name="to-run-visual-studio-with-administrative-permissions-on-includewin8includeswin8-mdmd-includewin81includeswin81-mdmd-includewinserver8includeswinserver8-mdmd-or-includewinblueserver2includeswinblue-server-2-mdmd"></a>Para ejecutar Visual Studio con permisos administrativos en [!INCLUDE[win8](../includes/win8-md.md)], [!INCLUDE[win81](../includes/win81-md.md)], [!INCLUDE[winserver8](../includes/winserver8-md.md)] o [!INCLUDE[winblue_server_2](../includes/winblue-server-2-md.md)]
 
-1.  En la pantalla **Inicio**, escriba **Visual Studio**. Debe ver la versión o las versiones de Visual Studio que ha instalado.
+1. En la pantalla **Inicio**, escriba **Visual Studio**. Debe ver la versión o las versiones de Visual Studio que ha instalado.
 
-2.  Seleccione la versión de Visual Studio que desea iniciar y, a continuación, abra el menú contextual (aparece en la parte inferior de la pantalla). Elija **Ejecutar como administrador**.
+2. Seleccione la versión de Visual Studio que desea iniciar y, a continuación, abra el menú contextual (aparece en la parte inferior de la pantalla). Elija **Ejecutar como administrador**.
 
      Cuando se inicia Visual Studio, aparece **(Administrador)** después del nombre de producto en la barra de título.
 
 #### <a name="to-run-visual-studio-with-administrative-permissions-on-includewin7includeswin7-mdmd-or-includewinsvr08r2includeswinsvr08-r2-mdmd"></a>Para ejecutar Visual Studio con permisos administrativos en [!INCLUDE[win7](../includes/win7-md.md)] o [!INCLUDE[winsvr08_r2](../includes/winsvr08-r2-md.md)]
 
-1.  En el menú **Inicio**, elija **Todos los programas**.
+1. En el menú **Inicio**, elija **Todos los programas**.
 
-2.  En la carpeta **Microsoft Visual Studio** *versión*, seleccione **Visual Studio** *versión*, abra el menú contextual y después elija **Ejecutar como administrador**.
+2. En la carpeta **Microsoft Visual Studio** *versión*, seleccione **Visual Studio** *versión*, abra el menú contextual y después elija **Ejecutar como administrador**.
 
      Cuando se inicia Visual Studio, aparece **(Administrador)** después del nombre de producto en la barra de título.
 
 ## <a name="see-also"></a>Vea también
- [Portar, migrar y actualizar proyectos de Visual Studio](../porting/porting-migrating-and-upgrading-visual-studio-projects.md) [instalación de Visual Studio 2015](../install/install-visual-studio-2015.md)
+ [Portar, migrar y actualizar proyectos de Visual Studio](../porting/porting-migrating-and-upgrading-visual-studio-projects.md) [Instalar Visual Studio 2015](../install/install-visual-studio-2015.md)
