@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: 15b8a91c0b29b71b85ee5f82dc3b8d662c80549e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909159"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62581178"
 ---
 # <a name="welcome-to-r-tools-for-visual-studio"></a>Presentación de Herramientas de R para Visual Studio
 

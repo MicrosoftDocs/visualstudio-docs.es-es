@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d366ed403eba6fbfab4aec22f4542ee5362962f2
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923244"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62540616"
 ---
 # <a name="my-extensions-page-project-designer-visual-basic"></a>Extensiones My (Página, Diseñador de proyectos) (Visual Basic)
 Use la página **Extensiones My** del **Diseñador de proyectos** para administrar las extensiones de espacio de nombres `My` del proyecto. Las extensiones de espacio de nombres `My`permiten personalizar el espacio de nombres `My` para agregar sus propios miembros personalizados. Para obtener información sobre cómo crear extensiones personalizadas de espacio de nombres `My`, vea [Extending the My Namespace in Visual Basic](/dotnet/visual-basic/developing-apps/customizing-extending-my/extending-the-my-namespace) (Extender el espacio de nombres My en Visual Basic).

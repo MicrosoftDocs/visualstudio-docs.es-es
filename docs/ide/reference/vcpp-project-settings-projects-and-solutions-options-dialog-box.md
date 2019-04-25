@@ -18,21 +18,21 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dd44ef0a239f85078856c785ea4b5e2e6050b46e
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 2d3f81659930f75cda3c4ec0873837f7486e8b60
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194890"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62789330"
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>Configuración de proyecto de VC++, Proyectos y soluciones, Opciones (Cuadro de diálogo)
 Este cuadro de diálogo le permite definir la configuración del proyecto y la compilación de [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] relacionada con el registro, el rendimiento y los tipos de archivos auxiliares.
 
 ### <a name="to-access-this-dialog-box"></a>Para obtener acceso a este cuadro de diálogo
 
-1.  En el menú **Herramientas** , haga clic en **Opciones**.
+1. En el menú **Herramientas** , haga clic en **Opciones**.
 
-2.  Seleccione **Proyectos y soluciones** y **Configuración de proyecto de VC++**.
+2. Seleccione **Proyectos y soluciones** y **Configuración de proyecto de VC++**.
 
 ## <a name="build-logging"></a>Registro de compilación
  **Sí**

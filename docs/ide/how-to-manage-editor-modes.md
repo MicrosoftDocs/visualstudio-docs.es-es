@@ -24,14 +24,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b441543079ab3369beddcd95999809e075b3bb2b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 57987b67a2fa081ebaa577f10de478b5fd250aca
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907151"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62429787"
 ---
-# <a name="how-to-manage-editor-modes"></a>Filtrar Administrar los modos del editor
+# <a name="how-to-manage-editor-modes"></a>Procedimiento Administrar los modos del editor
 
 Puede mostrar el editor de código de Visual Studio en varios modos de visualización.
 
@@ -42,21 +42,21 @@ Puede mostrar el editor de código de Visual Studio en varios modos de visualiza
 
 Puede decidir ocultar todas las ventanas de herramientas y ver solo las ventanas de documento habilitando el modo **Pantalla completa**.
 
--   Presione **Alt**+**Mayús**+**Entrar** para entrar o salir del modo **Pantalla completa**.
+- Presione **Alt**+**Mayús**+**Entrar** para entrar o salir del modo **Pantalla completa**.
 
      O bien
 
--   Ejecute el comando `View.Fullscreen` en la ventana **Comandos**.
+- Ejecute el comando `View.Fullscreen` en la ventana **Comandos**.
 
 ## <a name="enable-virtual-space-mode"></a>Habilitar el modo de espacio virtual
 
 En el modo de **espacio virtual**, los espacios se insertan al final de cada línea de código. Seleccione esta opción para colocar los comentarios en una posición coherente al lado del código.
 
-1.  Seleccione **Opciones** en el menú **Herramientas**.
+1. Seleccione **Opciones** en el menú **Herramientas**.
 
-2.  Expanda la carpeta **Editor de texto** y pulse **Todos los lenguajes** para establecer esta opción globalmente, o pulse una carpeta de lenguaje específica. Por ejemplo, para activar los números de línea solo en Visual Basic, elija el nodo **Básico** > **Editor de texto**.
+2. Expanda la carpeta **Editor de texto** y pulse **Todos los lenguajes** para establecer esta opción globalmente, o pulse una carpeta de lenguaje específica. Por ejemplo, para activar los números de línea solo en Visual Basic, elija el nodo **Básico** > **Editor de texto**.
 
-3.  Seleccione las opciones **General** y en **Configuración**, seleccione **Habilitar espacio virtual**.
+3. Seleccione las opciones **General** y en **Configuración**, seleccione **Habilitar espacio virtual**.
 
     > [!NOTE]
     > **Espacio virtual** está habilitado en el modo **Selección de columnas**. Cuando el modo **Espacio virtual** no está habilitado, el punto de inserción se mueve desde el final de una línea directamente al primer carácter de la siguiente.

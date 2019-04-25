@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 33b36c648a0ab1c7df9d4f358d729e7f6b96212f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597483"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62778002"
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>Cuadro de diálogo Configuración avanzada (Visualizador de simultaneidad)
 Mediante el cuadro de diálogo **Opciones avanzadas** del Visualizador de simultaneidad, puede controlar cómo se recopilan los seguimientos.  El cuadro de diálogo tiene pestañas para los símbolos, Solo mi código, almacenamiento en búfer, filtrado, eventos de CLR, marcadores, proveedores y archivos.

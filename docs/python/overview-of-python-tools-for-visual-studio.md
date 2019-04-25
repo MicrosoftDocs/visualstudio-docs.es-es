@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2c6e17b0556b324e0dde6fe188b9d21efb542778
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.openlocfilehash: 8bcc0be91892494a81dd42f141da9c77329767cb
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366882"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62785241"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Trabajar con Python en Visual Studio en Windows
 
@@ -98,7 +98,7 @@ Visual Studio lo ayuda a administrar la complejidad de un proyecto a medida que 
 
 Las plantillas de proyecto y elemento automatizan el proceso de configuración de distintos tipos de proyectos y archivos, le permiten ahorrar tiempo y evitan que tenga que administrar detalles complejos y propensos a errores. Visual Studio proporciona plantillas para web, Azure, ciencia de datos, consola y otros tipos de proyectos, junto con las plantillas para archivos, como clases de Python, pruebas unitarias, configuración web de Azure, HTML e incluso aplicaciones Django.
 
-[![PPlantillas de elementos y proyectos de Python en Visual Studio](media/project-and-item-templates.png)](media/project-and-item-templates.png#lightbox)
+[![Plantillas de elementos y proyectos de Python en Visual Studio](media/project-and-item-templates.png)](media/project-and-item-templates.png#lightbox)
 
 Para obtener más información:
 
@@ -130,7 +130,7 @@ Para obtener más información:
 
 La generación de perfiles examina cómo se invierte el tiempo en la aplicación. Visual Studio admite la generación de perfiles con intérpretes basados en CPython e incluye la capacidad de comparar el rendimiento entre diferentes ejecuciones de generación de perfiles.
 
-[![VResultados del generador de perfiles de Visual Studio para un proyecto de Python](media/profiling-results.png)](media/profiling-results.png#lightbox)
+[![Resultados del generador de perfiles de Visual Studio para un proyecto de Python](media/profiling-results.png)](media/profiling-results.png#lightbox)
 
 Para obtener más información:
 
@@ -199,7 +199,6 @@ Visual Studio 2015 y las versiones anteriores están disponibles en [visualstudi
 
 <br/>
 
-
 |         Sistema de proyectos         |   2017+   |   2015   | 2013 Comm | 2013 Escritorio | 2013 Web | 2013 Pro+ |      2012 Pro+       | 2010 SP1 Pro+ |
 |--------------------------------|----------|----------|-----------|--------------|----------|-----------|----------------------|---------------|
 | Nuevo proyecto a partir de código existente | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  |       &#10004;       |   &#10004;    |
@@ -208,7 +207,6 @@ Visual Studio 2015 y las versiones anteriores están disponibles en [visualstudi
 |        Integración con Git         | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;<sup>1</sup> |   &#10007;    |
 
 <br/>
-
 
 |           Editar            |   2017+   |   2015   | 2013 Comm | 2013 Escritorio | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
 |------------------------------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|
@@ -230,14 +228,12 @@ Visual Studio 2015 y las versiones anteriores están disponibles en [visualstudi
 
 <br/>
 
-
 |     Ventana interactiva     |   2017+   |   2015   | 2013 Comm | 2013 Escritorio | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
 |----------------------------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|
 |     Ventana interactiva     | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
 | IPython con gráficos insertados | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
 
 <br/>
-
 
 |               Escritorio               |   2017+   |   2015   | 2013 Comm | 2013 Escritorio | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
 |-------------------------------------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|
@@ -247,7 +243,6 @@ Visual Studio 2015 y las versiones anteriores están disponibles en [visualstudi
 
 <br/>
 
-
 |         Web         |   2017+   |   2015   | 2013 Comm | 2013 Escritorio | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
 |---------------------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|
 | Proyecto web de Django  | &#10004; | &#10004; | &#10004;  |   &#10007;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
@@ -256,7 +251,6 @@ Visual Studio 2015 y las versiones anteriores están disponibles en [visualstudi
 | Proyecto web genérico | &#10004; | &#10004; | &#10004;  |   &#10007;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
 
 <br/>
-
 
 |         Azure          |   2017+   |   2015   | 2013 Comm | 2013 Escritorio |       2013 Web       |      2013 Pro+       |      2012 Pro+       |    2010 SP1 Pro+     |
 |------------------------|----------|----------|-----------|--------------|----------------------|----------------------|----------------------|----------------------|
@@ -269,7 +263,6 @@ Visual Studio 2015 y las versiones anteriores están disponibles en [visualstudi
 
 <br/>
 
-
 |           Plantillas de Django           |   2017+   |   2015   | 2013 Comm | 2013 Escritorio |       2013 Web       |      2013 Pro+       | 2012 Pro+ | 2010 SP1 Pro+ |
 |--------------------------------------|----------|----------|-----------|--------------|----------------------|----------------------|-----------|---------------|
 |              Depuración               | &#10004; | &#10004; | &#10004;  |   &#10007;   |       &#10004;       |       &#10004;       | &#10004;  |   &#10004;    |
@@ -277,7 +270,6 @@ Visual Studio 2015 y las versiones anteriores están disponibles en [visualstudi
 | Autocompletar para CSS y JavaScript | &#10004; | &#10004; | &#10004;  |   &#10007;   | &#10004;<sup>5</sup> | &#10004;<sup>5</sup> | &#10007;  |   &#10007;    |
 
 <br/>
-
 
 |                  Depuración                  |   2017+   |   2015   | 2013 Comm | 2013 Escritorio | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
 |---------------------------------------------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|
@@ -292,13 +284,11 @@ Visual Studio 2015 y las versiones anteriores están disponibles en [visualstudi
 
 <a name="matrix-profiling"></a>
 
-
 | Generación de perfiles |   2017+   |   2015   | 2013 Comm | 2013 Escritorio | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
 |-----------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|
 | Generación de perfiles | &#10004; | &#10004; | &#10004;  |   &#10007;   | &#10007; | &#10004;  | &#10004;  |   &#10004;    |
 
 <br/>
-
 
 |     Prueba      |   2017+   |   2015   | 2013 Comm | 2013 Escritorio | 2013 Web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
 |---------------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|

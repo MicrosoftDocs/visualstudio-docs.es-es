@@ -10,11 +10,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 7cdce20fd1640d4bfa43b442b1ed5cad40dc452f
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366572"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62536794"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Creación y administración de entornos de Python en Visual Studio
 

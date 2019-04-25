@@ -15,11 +15,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: a38909eb0917b3ad5b02d5e953c17c950c7c819e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54782856"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62539197"
 ---
 # <a name="code-analysis-for-managed-code-overview"></a>Análisis de código para obtener información general de código administrado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,11 +60,11 @@ En el análisis de código administrado se analizan los ensamblados administrado
   
 - Se ejecutó un análisis de código como parte de la compilación más reciente.  
   
-  Para conseguirlo, se especifican las directivas de inserción en el repositorio. Para más información, vea [Mejorar la calidad del código con directivas de protección de equipo](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md).  
+  Para conseguirlo, se especifican las directivas de protección. Para más información, vea [Mejorar la calidad del código con directivas de protección de equipo](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md).  
   
 ## <a name="team-build-integration"></a>Integración de Team Build  
  Puede utilizar las características integradas del sistema de generación para ejecutar la herramienta de análisis como parte del proceso de generación. Para obtener más información, consulte [Compilar la aplicación](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692).  
   
-## <a name="see-also"></a>Otras referencias  
+## <a name="see-also"></a>Vea también  
  [Usar conjuntos de reglas para agrupar reglas de análisis de código](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)   
  [Cómo: Habilitar y deshabilitar el análisis de código automático](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)

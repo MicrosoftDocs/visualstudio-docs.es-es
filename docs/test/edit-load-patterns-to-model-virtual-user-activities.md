@@ -10,12 +10,12 @@ ms.assetid: 0ba0363b-7f50-4bde-a919-0e3bce7bc115
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4a2c368f15da44bdc965d2176f290c2a796f4347
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 299cca5249872b1be7f20cf4fca8c0dcd563794c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55956420"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62784251"
 ---
 # <a name="edit-load-patterns-to-model-virtual-user-activities"></a>Editar los modelos de carga para modelar las actividades de usuarios virtuales
 
@@ -46,7 +46,6 @@ El modelo de carga es un componente de un escenario. Los escenarios, junto con s
 
 > [!NOTE]
 > Si la duración total de la prueba es inferior al tiempo necesario para llegar paso a paso a la carga máxima de usuarios, la prueba se detiene cuando se agota la duración y no alcanza el objetivo de **Recuento máximo de usuarios**.
-
 
  Puede utilizar el objetivo por pasos para aumentar la carga hasta que el servidor llegue a un punto en que el rendimiento disminuye de manera considerable. A medida que aumente la carga, el servidor se quedará finalmente sin recursos. La carga por pasos resulta una buena forma de determinar el número de usuarios con el que esto ocurre. Con la carga por pasos, también tiene que supervisar atentamente los recursos de agente para asegurarse de que los agentes pueden generar la carga deseada.
 
@@ -84,7 +83,7 @@ El modelo de carga es un componente de un escenario. Los escenarios, junto con s
 |-|--------------|-|
 |Contador de rendimiento|Categoría|Procesador|
 |Contador de rendimiento|Equipo|ContosoServer1|
-|Contador de rendimiento|Contador|% de tiempo de procesador|
+|Contador de rendimiento|Contador|% tiempo de procesador|
 |Contador de rendimiento|Instancia|_Total|
 |Intervalo de destino para el contador de rendimiento|Valor máximo|90|
 |Intervalo de destino para el contador de rendimiento|Valor mínimo|70|
@@ -122,36 +121,34 @@ El modelo de carga es un componente de un escenario. Los escenarios, junto con s
 > [!NOTE]
 > Para obtener una lista completa de las propiedades de los escenarios de pruebas de carga y sus descripciones, consulte [Propiedades de los escenarios de prueba de carga](../test/load-test-scenario-properties.md).
 
-
  Un modelo de carga especifica el número de usuarios virtuales activos durante una prueba de carga y la velocidad con que se agregan nuevos usuarios. Puede elegir entre las tres tramas disponibles: la de pasos, la constante y la basada en objetivos. Para más información, consulte [Specify the number of virtual users with load patterns in a load test scenario](../test/edit-load-patterns-to-model-virtual-user-activities.md) (Especificar el número de usuarios virtuales con modelos de carga en un escenario de prueba de carga).
 
 > [!NOTE]
 > También puede cambiar las propiedades de carga mediante programación usando un complemento de prueba de carga. Para obtener más información, vea [Cómo: Crear un complemento de prueba de carga](../test/how-to-create-a-load-test-plug-in.md).
 
-
 ### <a name="to-change-the-load-pattern"></a>Para cambiar el modelo de carga
 
-1.  Abra una prueba de carga.
+1. Abra una prueba de carga.
 
-2.  En el **Editor de pruebas de carga**, en la carpeta *Escenarios*, expanda el escenario cuyo modelo de carga quiere editar y elija el modelo de carga del escenario.
+2. En el **Editor de pruebas de carga**, en la carpeta *Escenarios*, expanda el escenario cuyo modelo de carga quiere editar y elija el modelo de carga del escenario.
 
     > [!NOTE]
     > El texto del nodo Modelo de carga, tal y como se muestra en el árbol de escenarios de la prueba de carga, refleja el perfil de carga que eligió al crear la prueba de carga. Puede ser **Perfil de carga constante** o **Perfil de carga por pasos**.
 
-3.  Presione **F4** para abrir la ventana **Propiedades**.
+3. Presione **F4** para abrir la ventana **Propiedades**.
 
      Las categorías **Modelo de carga** y **Parámetros** se muestran en la ventana **Propiedades**.
 
-4.  (Opcional) Cambie la propiedad **Modelo** en la categoría **Modelo de carga**.
+4. (Opcional) Cambie la propiedad **Modelo** en la categoría **Modelo de carga**.
 
      Las opciones para la propiedad **Modelo** son **Paso**, **Constante** y **Basado en objetivos**. Para más información sobre los tipos de modelos de carga, consulte [Specifying the Number of Virtual Users with Load Patterns in a Load Test Scenario](../test/edit-load-patterns-to-model-virtual-user-activities.md) (Especificar el número de usuarios virtuales con modelos de carga en un escenario de prueba de carga).
 
-5.  (Opcional) En la categoría **Parámetros**, cambie los valores.
+5. (Opcional) En la categoría **Parámetros**, cambie los valores.
 
     > [!NOTE]
     > Los valores que puede establecer para **Parámetros** difieren según el valor que se haya seleccionado para la propiedad **Modelo**.
 
-6.  Cuando haya terminado de cambiar las propiedades, elija **Guardar** en el menú **Archivo**. Entonces podrá ejecutar la prueba de carga con el nuevo modelo de carga.
+6. Cuando haya terminado de cambiar las propiedades, elija **Guardar** en el menú **Archivo**. Entonces podrá ejecutar la prueba de carga con el nuevo modelo de carga.
 
 ## <a name="see-also"></a>Vea también
 

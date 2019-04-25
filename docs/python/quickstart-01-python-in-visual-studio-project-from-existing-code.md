@@ -11,11 +11,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 8fbbd8c49ecc367a0dd01d9ab775735b93174fe6
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59365111"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62429085"
 ---
 # <a name="quickstart-create-a-python-project-from-existing-code"></a>Inicio rápido: Creación de un proyecto de Python a partir del código existente
 
@@ -35,6 +35,6 @@ Si quiere, ejecute el programa presionando **Ctrl**+**F5** or seleccionando **De
 
 ## <a name="see-also"></a>Vea también
 
-- [Identificación manual de un intérprete de Python existente](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)
+- [Manually identifying an existing Python interpreter](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment) (Identificación manual de un intérprete de Python existente)
 - [Instalación de la compatibilidad con Python en Visual Studio 2015 y versiones anteriores](installing-python-support-in-visual-studio.md)
 - [Ubicaciones de instalación](installing-python-support-in-visual-studio.md#install-locations)

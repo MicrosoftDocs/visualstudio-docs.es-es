@@ -20,11 +20,11 @@ helpviewer_keywords:
 - asset compatibility
 - projects, conversion
 ms.openlocfilehash: e2c51174f14cbfd550bde32192f9db52b1744365
-ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/15/2019
-ms.locfileid: "59584589"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62779254"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio"></a>Referencia de migración y actualización de proyectos para Visual Studio 
 
