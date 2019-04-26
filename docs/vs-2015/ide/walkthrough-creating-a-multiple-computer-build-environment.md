@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 40e2e4f3882a6bd3b3f7ce9b70aec45f244377d1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: f0967f50c9dce325ff1595fec9d50138aa0a8d74
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044308"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438141"
 ---
 # <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>Tutorial: Crear un entorno de compilación para varios equipos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -93,7 +93,7 @@ Se puede crear un entorno de compilación dentro de la organización si se insta
   Tenga en cuenta que el nombre de la carpeta Archivos de programa depende del sistema operativo instalado. En un equipo x86, el nombre es \Archivos de programa\\, mientras que en un equipo x64 es \Archivos de programa (x86)\\. Con independencia de la arquitectura del sistema, este tutorial hace referencia a la carpeta Archivos de programa como %ProgramFiles%.  
   
 > [!NOTE]
->  En el equipo de compilación, todos los archivos pertinentes deben estar en la misma unidad; sin embargo, la letra de esa unidad puede ser diferente que la de la unidad donde está instalado Visual Studio en el equipo host. En cualquier caso, debe tener en cuenta la ubicación de los archivos cuando cree entradas del Registro como se describe más adelante en este documento.  
+> En el equipo de compilación, todos los archivos pertinentes deben estar en la misma unidad; sin embargo, la letra de esa unidad puede ser diferente que la de la unidad donde está instalado Visual Studio en el equipo host. En cualquier caso, debe tener en cuenta la ubicación de los archivos cuando cree entradas del Registro como se describe más adelante en este documento.  
   
 #### <a name="to-copy-the-windows-sdk-files-to-the-build-computer"></a>Para copiar los archivos de Windows SDK en el equipo de compilación  
   
@@ -223,7 +223,7 @@ Se puede crear un entorno de compilación dentro de la organización si se insta
 1. Identifique la carpeta primaria para las entradas del Registro. Todas las entradas del Registro se crean bajo la misma clave primaria. En un equipo x86, la clave primaria es HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\. En un equipo x64, la clave primaria es HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\. Con independencia de la arquitectura del sistema, en este tutorial se hace referencia a la clave primaria como %RegistryRoot%.  
   
    > [!NOTE]
-   >  Si la arquitectura del equipo host es distinta de la del equipo de compilación, asegúrese de utilizar la clave primaria adecuada en cada equipo. Esto es especialmente importante si desea automatizar el proceso de exportación.  
+   > Si la arquitectura del equipo host es distinta de la del equipo de compilación, asegúrese de utilizar la clave primaria adecuada en cada equipo. Esto es especialmente importante si desea automatizar el proceso de exportación.  
    >   
    >  Además, si en el equipo de compilación usa otra letra de unidad que en el equipo host, asegúrese de cambiar los valores de las entradas del Registro para que coincidan.  
   
@@ -334,7 +334,7 @@ Se puede crear un entorno de compilación dentro de la organización si se insta
      **gacutil -i \<file>**  
   
     > [!NOTE]
-    >  Puede que sea necesario reiniciar el sistema para que un ensamblado se instale totalmente en la GAC.  
+    > Puede que sea necesario reiniciar el sistema para que un ensamblado se instale totalmente en la GAC.  
   
 ## <a name="BuildingProjects"></a> Compilar proyectos  
  Puede utilizar Team Foundation Build para compilar proyectos y soluciones de [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] o puede compilarlos en la línea de comandos. Cuando se utiliza Team Foundation Build para compilar proyectos, invoca el ejecutable de MSBuild correspondiente a la arquitectura del sistema.  En la línea de comandos, puede utilizar MSBuild de 32 bits o MSBuild 64 bits, y puede elegir la arquitectura de MSBuild estableciendo la variable de entorno PATH o invocando directamente el archivo ejecutable de MSBuild específico de la arquitectura.  
@@ -346,17 +346,17 @@ Se puede crear un entorno de compilación dentro de la organización si se insta
  Para más información sobre cómo usar MSBuild en la línea de comandos, vea [Referencia de la línea de comandos](../msbuild/msbuild-command-line-reference.md).  
   
 > [!NOTE]
->  Para compilar proyectos de [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], debe utilizar el Conjunto de herramientas de la plataforma "v110". Si no desea editar los archivos de proyecto de [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], puede establecer el Conjunto de herramientas de la plataforma mediante este argumento de la línea de comandos:  
+> Para compilar proyectos de [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], debe utilizar el Conjunto de herramientas de la plataforma "v110". Si no desea editar los archivos de proyecto de [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], puede establecer el Conjunto de herramientas de la plataforma mediante este argumento de la línea de comandos:  
 >   
->  **msbuild** *solution.sln* **/p:PlatformToolset=v110**  
+> **msbuild** *solution.sln* **/p:PlatformToolset=v110**  
   
 ## <a name="CreatingForSourceControl"></a> Crear el entorno de compilación para que se pueda proteger en el control de código fuente  
  Puede crear un entorno de compilación que se pueda implementar en varios equipos y no requiera almacenar archivos en la GAC ni modificar configuraciones del Registro. Los pasos siguientes son simplemente una forma de realizarlo. Adapte estos pasos a las características únicas de su entorno de compilación.  
   
 > [!NOTE]
->  Debe deshabilitar la compilación incremental de modo que tracker.exe no produzca ningún error durante una compilación. Para deshabilitar la compilación incremental, establezca este parámetro de compilación:  
+> Debe deshabilitar la compilación incremental de modo que tracker.exe no produzca ningún error durante una compilación. Para deshabilitar la compilación incremental, establezca este parámetro de compilación:  
 >   
->  **msbuild** *solution.sln* **/p:TrackFileAccess=false**  
+> **msbuild** *solution.sln* **/p:TrackFileAccess=false**  
   
 #### <a name="to-create-a-build-environment-that-can-be-checked-into-source-control"></a>Para crear un entorno de compilación que se pueda proteger en el control de código fuente  
   

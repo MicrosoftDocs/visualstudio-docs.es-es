@@ -13,12 +13,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 61b20ea728cd0b714ba61dfa7aef1893a91cfaca
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 894378d6648139b7ec2b587eb0066a5725af7a71
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758379"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443727"
 ---
 # <a name="manage-channels"></a>Administrar canales
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ En la **vista Subprocesos** del visualizador de simultaneidad, puede organizar l
 ## <a name="sort-by"></a>Ordenar por  
  Puede utilizar el control de ordenación para ordenar los subprocesos según criterios diferentes, según el nivel de zoom actual. Esto es especialmente útil cuando se busca un patrón determinado. Puede ordenar por estos criterios:  
   
-|Criterios|de esquema JSON|  
+|Criterios|Definición|  
 |--------------|----------------|  
 |Hora de inicio|Ordena los subprocesos por sus horas de inicio. Este es el orden predeterminado.|  
 |Hora de finalización|Ordena los subprocesos por sus horas de finalización.|  
@@ -50,7 +50,7 @@ En la **vista Subprocesos** del visualizador de simultaneidad, puede organizar l
  Elija este control cuando desee ocultar canales. Por ejemplo, si un subproceso está al cien por ciento de sincronización durante la vida de su proceso administrado, puede ocultarlo mientras analiza otros subprocesos.  
   
 > [!NOTE]
->  Ocultar un subproceso también lo quita de la hora de cálculo, que se muestra en la leyenda activa y en los informes de perfil.  
+> Ocultar un subproceso también lo quita de la hora de cálculo, que se muestra en la leyenda activa y en los informes de perfil.  
   
 ## <a name="show-all-channels"></a>Mostrar todos los canales  
  Este control está activado cuando se ocultan uno o más canales. Si lo elige, todos los elementos ocultos se muestran y se devuelven a los cálculos de tiempo.  

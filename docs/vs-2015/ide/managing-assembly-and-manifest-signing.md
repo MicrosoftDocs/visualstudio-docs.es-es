@@ -14,12 +14,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 63a2e1b98baa61ef0a83c1de65653dd2e57a8b2c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: d3f842d45df1525cb3f736019eeec52dd65b67aa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54755469"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443737"
 ---
 # <a name="managing-assembly-and-manifest-signing"></a>Administrar la firma de ensamblados y manifiestos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ La firma de nombre seguro ofrece una identidad única a un componente de softwar
  Especifique un archivo de clave. Si decide crear un nuevo archivo de clave, tenga en cuenta que los nuevos archivos de clave se crean siempre en el formato .pfx. Necesita un nombre y una contraseña para el nuevo archivo.  
   
 > [!WARNING]
->  Siempre debe proteger el archivo de clave con una contraseña para evitar que otra persona lo use. También puede proteger las claves mediante proveedores o almacenes de certificados.  
+> Siempre debe proteger el archivo de clave con una contraseña para evitar que otra persona lo use. También puede proteger las claves mediante proveedores o almacenes de certificados.  
   
  También puede señalar a una clave que ya ha creado. Para obtener más información sobre la creación de claves, consulte [Cómo: Crear un par de claves privada y pública](http://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114).  
   

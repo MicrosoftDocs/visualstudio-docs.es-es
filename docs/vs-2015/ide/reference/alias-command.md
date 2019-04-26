@@ -17,12 +17,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 49b9f88dd00321e00f5c64dad3616cd5a0ddb51a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 00c77675b1a2300468c7848facf498ac3816e136
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654287"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437204"
 ---
 # <a name="alias-command"></a>Alias (Comando)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "59654287"
 Crea un nuevo alias para un comando completo, un comando completo con argumentos u otro alias.  
   
 > [!TIP]
->  Si se escribe `>alias` sin argumentos, se muestra la lista actual de alias y sus definiciones.  
+> Si se escribe `>alias` sin argumentos, se muestra la lista actual de alias y sus definiciones.  
   
 ## <a name="syntax"></a>Sintaxis  
   

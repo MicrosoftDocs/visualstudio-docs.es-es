@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e5771158e23acb399b3446e784e27825bb15d705
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: c8ef52638858160822fcc271a53513b130afc3f4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658998"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440051"
 ---
 # <a name="how-to-configure-targets-and-tasks"></a>Cómo: Configurar destinos y tareas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,16 +22,16 @@ ms.locfileid: "59658998"
 Las tareas de MSBuild seleccionadas se pueden establecer para ejecutarlas en el entorno de destino, independientemente del entorno del equipo de desarrollo. Por ejemplo, cuando se utiliza un equipo de 64 bits para compilar una aplicación destinada a una arquitectura de 32 bits, las tareas seleccionadas se ejecutan en un proceso de 32 bits.  
   
 > [!NOTE]
->  Si una tarea de compilación se escribe en un lenguaje .NET, como Visual C# o Visual Basic, y no utiliza recursos o herramientas nativos, se ejecutará en cualquier contexto de destino sin adaptación.  
+> Si una tarea de compilación se escribe en un lenguaje .NET, como Visual C# o Visual Basic, y no utiliza recursos o herramientas nativos, se ejecutará en cualquier contexto de destino sin adaptación.  
   
 ## <a name="usingtask-attributes-and-task-parameters"></a>Atributos UsingTask y parámetros de tareas  
  Los siguientes atributos de `UsingTask` afectan a todas las operaciones de una tarea en un proceso de compilación determinado:  
   
--   El atributo de `Runtime`, si está presente, establece la versión de Common Language Runtime (CLR), y puede tomar cualquiera de estos valores: `CLR2`, `CLR4`, `CurrentRuntime` o `*` (cualquier tiempo de ejecución).  
+- El atributo de `Runtime`, si está presente, establece la versión de Common Language Runtime (CLR), y puede tomar cualquiera de estos valores: `CLR2`, `CLR4`, `CurrentRuntime` o `*` (cualquier tiempo de ejecución).  
   
--   El atributo de `Architecture`, si está presente, establece la plataforma y el valor de bits, y puede tomar cualquiera de estos valores: `x86`, `x64`, `CurrentArchitecture` o `*` (cualquier arquitectura).  
+- El atributo de `Architecture`, si está presente, establece la plataforma y el valor de bits, y puede tomar cualquiera de estos valores: `x86`, `x64`, `CurrentArchitecture` o `*` (cualquier arquitectura).  
   
--   El atributo de `TaskFactory`, si está presente, establece el generador de tareas que crea y ejecuta la instancia de tarea, y únicamente toma el valor `TaskHostFactory`. Para obtener más información, vea la sección Generadores de tareas más adelante en este documento.  
+- El atributo de `TaskFactory`, si está presente, establece el generador de tareas que crea y ejecuta la instancia de tarea, y únicamente toma el valor `TaskHostFactory`. Para obtener más información, vea la sección Generadores de tareas más adelante en este documento.  
   
 ```  
 <UsingTask TaskName="SimpleTask"   
@@ -53,7 +53,7 @@ Las tareas de MSBuild seleccionadas se pueden establecer para ejecutarlas en el 
  Antes de que MSBuild ejecute una tarea, busca un valor `UsingTask` coincidente que tenga el mismo contexto de destino.  Los parámetros que se especifican en `UsingTask` pero no en la tarea correspondiente se consideran coincidentes.  Los parámetros que se especifican en la tarea pero no en el valor `UsingTask` correspondiente también se consideran coincidentes. Si no se especifican valores de parámetros no se especifican en `UsingTask` o la tarea, los valores se establecen de manera predeterminada en `*` (cualquier parámetro).  
   
 > [!WARNING]
->  Si existe más de un `UsingTask` y todos tienen atributos `TaskName`, `Runtime` y `Architecture` coincidentes, el último que se evalúe reemplaza a los demás.  
+> Si existe más de un `UsingTask` y todos tienen atributos `TaskName`, `Runtime` y `Architecture` coincidentes, el último que se evalúe reemplaza a los demás.  
   
  Si se definen parámetros en la tarea, MSBuild intenta encontrar un valor `UsingTask` que coincida con estos parámetros o, al menos, que no esté en conflicto con ellos.  Más de un `UsingTask` puede especificar el contexto de destino de la misma tarea.  Por ejemplo, una tarea que tiene archivos ejecutables diferentes para entornos de destino diferentes podría parecerse a esta:  
   
@@ -103,12 +103,12 @@ Las tareas de MSBuild seleccionadas se pueden establecer para ejecutarlas en el 
  A diferencia de otros parámetros de tarea, `MSBuildRuntime` y `MSBuildArchitecture` no son evidentes para la propia tarea.  Para escribir una tarea que tenga en cuenta el contexto en el que se ejecuta, debe probar el contexto mediante una llamada a .NET Framework o bien debe usar propiedades de compilación para pasar información de contexto a través de otros parámetros de tarea.  
   
 > [!NOTE]
->  Es posible establecer atributos `UsingTask` desde las propiedades del conjunto de herramientas y del entorno.  
+> Es posible establecer atributos `UsingTask` desde las propiedades del conjunto de herramientas y del entorno.  
   
  Los parámetros `MSBuildRuntime` y `MSBuildArchitecture` proporcionan la manera más flexible de establecer el contexto de destino, pero también la manera más limitada en cuanto al ámbito.  Por un lado, dado que se establecen en la propia instancia de tarea y no se evalúan hasta que la tarea está a punto de ejecutarse, pueden derivar su valor del ámbito completo de propiedades disponibles en tiempo de evaluación y tiempo de compilación.  Por otro lado, estos parámetros solo se aplican a una instancia determinada de una tarea en un destino determinado.  
   
 > [!NOTE]
->  Los parámetros de tarea se evalúan en el contexto del nodo primario, no en el contexto del host de la tarea. Las variables de entorno dependientes del tiempo de ejecución o de la arquitectura (por ejemplo, la ubicación de Archivos de programa) se evaluarán como el valor que coincide con el nodo primario.  Pero si la tarea lee directamente la misma variable de entorno, se evaluará correctamente en el contexto del host de la tarea.  
+> Los parámetros de tarea se evalúan en el contexto del nodo primario, no en el contexto del host de la tarea. Las variables de entorno dependientes del tiempo de ejecución o de la arquitectura (por ejemplo, la ubicación de Archivos de programa) se evaluarán como el valor que coincide con el nodo primario.  Pero si la tarea lee directamente la misma variable de entorno, se evaluará correctamente en el contexto del host de la tarea.  
   
 ## <a name="see-also"></a>Vea también  
  [Configurar destinos y tareas](../msbuild/configuring-targets-and-tasks.md)

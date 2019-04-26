@@ -12,12 +12,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 77f57eeda2f193170f4cd4f8b09d92989962e7fd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: ad081a4d6954d402aa295a94edae3f5bdf50ef4c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061598"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445623"
 ---
 # <a name="walkthrough-creating-an-inline-task"></a>Tutorial: Crear una tarea insertada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -104,7 +104,7 @@ Las tareas de MSBuild se crean normalmente compilando una clase que implementa l
     `Hello, world!`  
   
    > [!NOTE]
-   >  Si no ve el mensaje de saludo, intente guardar de nuevo el archivo del proyecto y, a continuación, ejecute la tarea Hello.  
+   > Si no ve el mensaje de saludo, intente guardar de nuevo el archivo del proyecto y, a continuación, ejecute la tarea Hello.  
   
    Puede cambiar el archivo del proyecto y ver rápidamente los resultados alternando entre el editor de código y la **ventana del símbolo del sistema**.  
   
