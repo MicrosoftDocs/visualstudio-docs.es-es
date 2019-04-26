@@ -1,18 +1,11 @@
-items:
 - name: Docs
   tocHref: /
   topicHref: /
   items:
-  - name: Programa para la mejora
-    tocHref: /visualstudio/
-    topicHref: /visualstudio/
-    items:
-    - name: Herramientas de contenedor de Visual Studio
-      tocHref: /visualstudio/containers
-      topicHref: /visualstudio/containers/
-ms.openlocfilehash: aa2e6ebfef9bf6fe4ca789e7cb63340d5a0da237
-ms.sourcegitcommit: 0f7411c1a47d996907a028e920b73b53c2098c9f
-ms.translationtype: HT
-ms.contentlocale: es-ES
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55701258"
+    - name: Programa para la mejora
+      tocHref: /visualstudio/
+      topicHref: /visualstudio/
+      items:
+        - name: Herramientas de contenedor de Visual Studio
+          tocHref: /visualstudio/containers
+          topicHref: /visualstudio/containers/

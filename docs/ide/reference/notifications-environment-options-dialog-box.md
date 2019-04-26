@@ -12,11 +12,11 @@ ms.workload:
 - multiple
 monikerRange: vs-2017
 ms.openlocfilehash: 702e1dfa14874691b72ce42e21cf6057f56d8394
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58789436"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62989876"
 ---
 # <a name="notifications-environment-options-dialog-box"></a>Notificaciones, Entorno, Opciones (cuadro de diálogo)
 

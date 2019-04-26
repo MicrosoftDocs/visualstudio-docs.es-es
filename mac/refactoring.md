@@ -7,11 +7,11 @@ ms.date: 03/29/2019
 ms.assetid: C7782BF3-016F-4B41-8A81-85FC540A1A8F
 ms.custom: video
 ms.openlocfilehash: 48e290fddd1c4b7c95ac5e76cb6cf5908247e6f6
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856520"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62937929"
 ---
 # <a name="refactoring"></a>Refactorización
 
@@ -95,5 +95,5 @@ Si hace clic en el círculo situado en la parte superior, puede iterar cada suge
 
 ## <a name="see-also"></a>Vea también
 
-- [Acciones rápidas (Visual Studio en Windows)](/visualstudio/ide/quick-actions)
-- [Refactorización de código (Visual Studio en Windows)](/visualstudio/ide/refactoring-in-visual-studio)
+- [Acciones rápidas (Visual Studio en Windows)](/visualstudio/ide/quick-actions)
+- [Refactorizar código (Visual Studio en Windows)](/visualstudio/ide/refactoring-in-visual-studio)

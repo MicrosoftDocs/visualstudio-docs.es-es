@@ -11,11 +11,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 4678e3508c16b38fec2a10cdeb79bc499eaf15fd
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366502"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62959977"
 ---
 # <a name="debug-your-python-code"></a>Depurar el código de Python
 
@@ -24,8 +24,8 @@ Visual Studio proporciona una experiencia de depuración completa para Python, l
 Vea también los siguientes artículos de depuración específicos para distintos escenarios:
 
 - [Depuración remota de Linux](debugging-python-code-on-remote-linux-machines.md)
-- [Depuración en modo mixto Python/C++](debugging-mixed-mode-c-cpp-python-in-visual-studio.md)
-- [Símbolos de depuración en modo mixto](debugging-symbols-for-mixed-mode-c-cpp-python.md)
+- [Mixed-mode Python/C++ debugging](debugging-mixed-mode-c-cpp-python-in-visual-studio.md) (Depuración en modo mixto Python/C++)
+- [Symbols for mixed-mode debugging](debugging-symbols-for-mixed-mode-c-cpp-python.md) (Símbolos de depuración en modo mixto)
 
 <a name="debugging-without-a-project"></a>
 
@@ -68,8 +68,8 @@ Una vez detenido en un punto de interrupción, hay varias maneras de recorrer el
 
 | Característica | Pulsación de tecla | Descripción |
 | --- | --- | --- |
-| **Continuar** | **F5** | Ejecuta código hasta que se alcanza el punto de interrupción siguiente. |
-| **Paso a paso por instrucciones** | **F11** | Ejecuta la instrucción siguiente y se detiene. Si la siguiente instrucción es una llamada a una función, el depurador se detiene en la primera línea de la función que se va a invocar. |
+| **Continue** | **F5** | Ejecuta código hasta que se alcanza el punto de interrupción siguiente. |
+| **Depurar paso a paso por instrucciones** | **F11** | Ejecuta la instrucción siguiente y se detiene. Si la siguiente instrucción es una llamada a una función, el depurador se detiene en la primera línea de la función que se va a invocar. |
 | **Paso a paso por procedimientos** | **F10** | Ejecuta la siguiente instrucción, como realizar una llamada a una función (mediante la ejecución de todo su código) y aplicar cualquier valor devuelto. Esta acción permite omitir con facilidad aquellas funciones que no necesita depurar. |
 | **Paso a paso para salir** | **Mayús**+**F11** | Ejecuta el código hasta el final de la función actual y después pasa a la instrucción de llamada.  Este comando resulta útil cuando no necesita depurar el resto de la función actual. |
 | **Ejecutar hasta el cursor** | **Ctrl**+**F10** | Ejecuta código hasta la ubicación del operador exponencial en el editor. Este comando le permite saltar fácilmente un segmento de código que no necesita depurar. |
@@ -134,10 +134,10 @@ De forma predeterminada, el depurador inicia el programa con el selector de Pyth
 
 | Opción | Descripción |
 | --- | --- |
-| **Selector de Python estándar** | Utiliza código de depuración escrito en Portable Python que es compatible con CPython, IronPython y variantes, como Stackless Python. Proporciona la mejor experiencia de depuración de código Python puro. Al realizar una asociación a un proceso *python.exe* en ejecución, se usa este iniciador. Este selector también proporciona [depuración en modo mixto](debugging-mixed-mode-c-cpp-python-in-visual-studio.md) para CPython, que permite cambiar sin problemas entre los códigos C/C++ y Python. |
-| **Selector web** | Inicia el explorador predeterminado para la selección y habilita la depuración de plantillas. Vea la sección de [depuración de plantillas web](python-web-application-project-templates.md#debugging) para obtener más información. |
-| **Selector web Django** | Idéntico al selector web y se muestra solo para la compatibilidad con versiones anteriores. |
-| **Selector de IronPython (.NET)** | Usa el depurador de .NET, que solo funciona con IronPython, pero permite cambiar entre cualquier proyecto en lenguaje .NET, incluidos C# y VB. Este selector se usa para establecer una asociación con un proceso .NET en ejecución que hospeda IronPython. |
+| **Iniciador de Python estándar** | Utiliza código de depuración escrito en Portable Python que es compatible con CPython, IronPython y variantes, como Stackless Python. Proporciona la mejor experiencia de depuración de código Python puro. Al realizar una asociación a un proceso *python.exe* en ejecución, se usa este iniciador. Este selector también proporciona [depuración en modo mixto](debugging-mixed-mode-c-cpp-python-in-visual-studio.md) para CPython, que permite cambiar sin problemas entre los códigos C/C++ y Python. |
+| **Iniciador web** | Inicia el explorador predeterminado para la selección y habilita la depuración de plantillas. Vea la sección de [depuración de plantillas web](python-web-application-project-templates.md#debugging) para obtener más información. |
+| **Iniciador web de Django** | Idéntico al selector web y se muestra solo para la compatibilidad con versiones anteriores. |
+| **Iniciador de IronPython (.NET)** | Usa el depurador de .NET, que solo funciona con IronPython, pero permite cambiar entre cualquier proyecto en lenguaje .NET, incluidos C# y VB. Este selector se usa para establecer una asociación con un proceso .NET en ejecución que hospeda IronPython. |
 
 ### <a name="run-options-search-paths-startup-arguments-and-environment-variables"></a>Opciones de ejecución (rutas de búsqueda, argumentos de inicio y variables de entorno)
 
@@ -146,7 +146,7 @@ De forma predeterminada, el depurador inicia el programa con el selector de Pyth
 | **Rutas de búsqueda** | Estos valores coinciden con lo que se muestra en el nodo **Rutas de búsqueda** del proyecto en el **Explorador de soluciones**. Puede modificar este valor aquí, pero es más fácil usar el **Explorador de soluciones**, ya que permite examinar las carpetas y convierte automáticamente las rutas de acceso a un formato relativo. |
 | **Argumentos de script** | Estos argumentos se agregan al comando que se ha usado para iniciar el script, y aparecen después del nombre de archivo del script. El primer elemento aquí está disponible para el script como `sys.argv[1]`, el segundo como `sys.argv[2]`, y así sucesivamente. |
 | **Argumentos del intérprete** | Estos argumentos se agregan a la línea de comandos del iniciador antes del nombre del script. Los argumentos comunes aquí son `-W ...` para controlar advertencias, `-O` para optimizar ligeramente el programa y `-u` para utilizar E/S no almacenada en el búfer. Los usuarios de IronPython probablemente usen este campo para pasar opciones `-X`, como `-X:Frames` o `-X:MTA`. |
-| **Ruta de acceso del intérprete** | Reemplaza la ruta de acceso asociada con el entorno actual. El valor puede resultar útil para iniciar el script con un intérprete no estándar. |
+| **Ruta del intérprete** | Reemplaza la ruta de acceso asociada con el entorno actual. El valor puede resultar útil para iniciar el script con un intérprete no estándar. |
 | **Variables de entorno** | En este cuadro de texto de varias líneas, agregue entradas con el formato \<NAME>=\<VALUE>. Como esta opción se aplica al final, por encima de cualquier variable de entorno global existente y, después, `PYTHONPATH` se establece según la configuración de **Rutas de búsqueda**, puede usarse para reemplazar manualmente cualquiera de esas otras variables. |
 
 ## <a name="immediate-and-interactive-windows"></a>Ventanas inmediatas e interactivas

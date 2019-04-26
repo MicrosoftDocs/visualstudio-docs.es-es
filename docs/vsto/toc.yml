@@ -1,865 +1,858 @@
-items:
 - name: Desarrollo de Office y SharePoint en Visual Studio
   href: office-and-sharepoint-development-in-visual-studio.md
   items:
-  - name: Crear complementos de VSTO para Office
-    href: create-vsto-add-ins-for-office-by-using-visual-studio.md
-    items:
-    - name: Introducción
-      href: getting-started-office-development-in-visual-studio.md
+    - name: Crear complementos de VSTO para Office
+      href: create-vsto-add-ins-for-office-by-using-visual-studio.md
       items:
-      - name: Información general sobre el desarrollo de soluciones de Office
-        href: office-solutions-development-overview-vsto.md
-      - name: Cambios en el diseño de proyectos de Office destinados a .NET Framework 4 o .NET Framework 4.5
-        href: changes-to-the-design-of-office-projects-that-target-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md
-      - name: Características disponibles por aplicación y tipo de proyecto de Office
-        href: features-available-by-office-application-and-project-type.md
-      - name: Configurar un equipo para desarrollar soluciones de Office
-        href: configuring-a-computer-to-develop-office-solutions.md
-        items:
-        - name: Configurar un equipo para desarrollar soluciones de Office
-          href: how-to-configure-a-computer-to-develop-office-solutions.md
-        - name: Instalar el runtime redistribuible de Visual Studio Tools para Office
-          href: how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md
-        - name: Instalar ensamblados de interoperabilidad primarios de Office
-          href: how-to-install-office-primary-interop-assemblies.md
-      - name: Introducción a la programación de personalizaciones de nivel de documento para Excel
-        href: getting-started-programming-document-level-customizations-for-excel.md
-      - name: Introducción a la programación de personalizaciones de nivel de documento para Word
-        href: getting-started-programming-document-level-customizations-for-word.md
-      - name: Getting Started Programming VSTO Add-ins
-        href: getting-started-programming-vsto-add-ins.md
-      - name: Comparación de soluciones de VBA y Office en Visual Studio
-        href: vba-and-office-solutions-in-visual-studio-compared.md
-      - name: Tareas comunes en la programación de Office
-        href: common-tasks-in-office-programming.md
-      - name: Recursos adicionales para desarrollar soluciones de Office
-        href: additional-resources-for-developing-office-solutions.md
-    - name: Actualizar y migrar soluciones de Office
-      href: upgrading-and-migrating-office-solutions.md
-      items:
-      - name: Migrar soluciones de Office a .NET Framework 4 o posterior
-        href: migrating-office-solutions-to-the-dotnet-framework-4-or-later.md
-        items:
-        - name: Cambios necesarios para ejecutar proyectos de Office
-          href: required-changes-to-run-office-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md
-        - name: Actualizar proyectos de Excel y Word
-          href: updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md
-        - name: Actualizar las personalizaciones de la Cinta en los proyectos de Office
-          href: /visualstudio/vsto/update-ribbon-customizations-in-office-projects-to-migrate-to-dotnet-framework-4-or-4-5
-        - name: Actualizar las áreas del formulario en los proyectos de Outlook
-          href: updating-form-regions-in-outlook-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md
-    - name: Arquitectura de las soluciones de Office en Visual Studio
-      href: architecture-of-office-solutions-in-visual-studio.md
-      items:
-      - name: Arquitectura de las personalizaciones de nivel de documento
-        href: architecture-of-document-level-customizations.md
-      - name: Arquitectura de complementos de VSTO
-        href: architecture-of-vsto-add-ins.md
-      - name: Información general sobre el Motor en tiempo de ejecución de Microsoft Visual Studio Tools para Office
-        href: visual-studio-tools-for-office-runtime-overview.md
-        items:
-        - name: Escenarios de instalación del Motor en runtime de Microsoft Visual Studio Tools para Office
-          href: visual-studio-tools-for-office-runtime-installation-scenarios.md
-        - name: Ensamblados en el Motor en tiempo de ejecución de Microsoft Visual Studio Tools para Office
-          href: assemblies-in-the-visual-studio-tools-for-office-runtime.md
-      - name: Entradas del registro para complementos de VSTO
-        href: registry-entries-for-vsto-add-ins.md
-      - name: Custom Document Properties Overview
-        href: custom-document-properties-overview.md
-    - name: Diseñar y crear soluciones de Office
-      href: designing-and-creating-office-solutions.md
-      items:
-      - name: Información general sobre las plantillas de Office Project
-        href: office-project-templates-overview.md
-      - name: Crear proyectos de Office en Visual Studio
-        href: how-to-create-office-projects-in-visual-studio.md
-      - name: Ejecutar soluciones en diferentes versiones de Microsoft Office
-        href: running-solutions-in-different-versions-of-microsoft-office.md
-      - name: Proyectos de Office en el entorno de Visual Studio
-        href: office-projects-in-the-visual-studio-environment.md
-      - name: Propiedades de los proyectos de Office
-        href: properties-in-office-projects.md
-      - name: Manifiestos de implementación y aplicación en soluciones de Office
-        href: application-and-deployment-manifests-in-office-solutions.md
-      - name: Usar como destino aplicaciones de Office mediante los ensamblados de interoperabilidad primarios
-        href: how-to-target-office-applications-through-primary-interop-assemblies.md
-      - name: Establecer la información de configuración de una solución de Office
-        href: how-to-set-up-configuration-information-for-an-office-solution.md
-      - name: Usar la funcionalidad de Office dentro de Visual Studio
-        href: using-office-functionality-inside-of-visual-studio.md
-        items:
-        - name: Protección de documentos en soluciones de nivel de documento
-          href: document-protection-in-document-level-solutions.md
-        - name: Información general sobre la administración de permisos sobre la información y las extensiones de código administrado
-          href: information-rights-management-and-managed-code-extensions-overview.md
-        - name: Permitir que el código se ejecute en documentos con permisos restringidos
-          href: how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md
-        - name: Protección mediante contraseña en documentos de Office
-          href: password-protection-on-office-documents.md
-        - name: Abrir soluciones de Office sin ejecutar código
-          href: how-to-open-office-solutions-without-running-code.md
-    - name: Desarrollar soluciones de Office
-      href: developing-office-solutions.md
-      items:
-      - name: Escribir código en soluciones de Office
-        href: writing-code-in-office-solutions.md
-        items:
-        - name: Parámetros opcionales en las soluciones de Office
-          href: optional-parameters-in-office-solutions.md
-        - name: Enlace en tiempo de ejecución en las soluciones de Office
-          href: late-binding-in-office-solutions.md
-        - name: Acceso global a objetos en los proyectos de Office
-          href: global-access-to-objects-in-office-projects.md
-        - name: Eventos de los proyectos de Office
-          href: events-in-office-projects.md
-        - name: Crear controladores de eventos en proyectos de Office
-          href: how-to-create-event-handlers-in-office-projects.md
-        - name: Desarrollo en colaboración de las soluciones de Office
-          href: collaborative-development-of-office-solutions.md
-      - name: Programar complementos de VSTO
-        href: programming-vsto-add-ins.md
-        items:
-        - name: Mejorar el rendimiento de un complemento de VSTO
-          href: improving-the-performance-of-a-vsto-add-in.md
-        - name: Extender documentos de Word y libros de Excel en complementos de VSTO en tiempo de ejecución
-          href: extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md
-        - name: Llamar a código en complementos de VSTO desde otras soluciones de Office
-          href: calling-code-in-vsto-add-ins-from-other-office-solutions.md
-        - name: 'Tutorial: Llamar a código en un complemento VSTO desde VBA'
-          href: walkthrough-calling-code-in-a-vsto-add-in-from-vba.md
-        - name: Personalizar características de la interfaz de usuario mediante interfaces de extensibilidad
-          href: customizing-ui-features-by-using-extensibility-interfaces.md
-      - name: Programar personalizaciones de nivel de documento
-        href: programming-document-level-customizations.md
-        items:
-        - name: Combinar personalizaciones de VBA y de nivel de documento
-          href: combining-vba-and-document-level-customizations.md
+        - name: Introducción
+          href: getting-started-office-development-in-visual-studio.md
           items:
-          - name: Exponer código para VBA en un proyecto de Visual Basic
-            href: how-to-expose-code-to-vba-in-a-visual-basic-project.md
-          - name: Exponer código para VBA en un proyecto de Visual C#
-            href: how-to-expose-code-to-vba-in-a-visual-csharp-project.md
-          - name: 'Tutorial: Llamar a código de VBA en un proyecto de Visual Basic'
-            href: walkthrough-calling-code-from-vba-in-a-visual-basic-project.md
-          - name: 'Tutorial: Llamar a código de VBA en un proyecto de Visual C#'
-            href: walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md
-        - name: Administrar documentos en un servidor mediante la clase ServerDocument
-          href: managing-documents-on-a-server-by-using-the-serverdocument-class.md
+            - name: Información general sobre el desarrollo de soluciones de Office
+              href: office-solutions-development-overview-vsto.md
+            - name: Cambios en el diseño de proyectos de Office destinados a .NET Framework 4 o .NET Framework 4.5
+              href: changes-to-the-design-of-office-projects-that-target-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md
+            - name: Características disponibles por aplicación y tipo de proyecto de Office
+              href: features-available-by-office-application-and-project-type.md
+            - name: Configurar un equipo para desarrollar soluciones de Office
+              href: configuring-a-computer-to-develop-office-solutions.md
+              items:
+                - name: Configurar un equipo para desarrollar soluciones de Office
+                  href: how-to-configure-a-computer-to-develop-office-solutions.md
+                - name: Instalar el runtime redistribuible de Visual Studio Tools para Office
+                  href: how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md
+                - name: Instalar ensamblados de interoperabilidad primarios de Office
+                  href: how-to-install-office-primary-interop-assemblies.md
+            - name: Introducción a la programación de personalizaciones de nivel de documento para Excel
+              href: getting-started-programming-document-level-customizations-for-excel.md
+            - name: Introducción a la programación de personalizaciones de nivel de documento para Word
+              href: getting-started-programming-document-level-customizations-for-word.md
+            - name: Getting Started Programming VSTO Add-ins
+              href: getting-started-programming-vsto-add-ins.md
+            - name: Comparación de soluciones de VBA y Office en Visual Studio
+              href: vba-and-office-solutions-in-visual-studio-compared.md
+            - name: Tareas comunes en la programación de Office
+              href: common-tasks-in-office-programming.md
+            - name: Recursos adicionales para desarrollar soluciones de Office
+              href: additional-resources-for-developing-office-solutions.md
+        - name: Actualizar y migrar soluciones de Office
+          href: upgrading-and-migrating-office-solutions.md
           items:
-          - name: Quitar extensiones de código administrado de documentos
-            href: how-to-remove-managed-code-extensions-from-documents.md
-          - name: Asociar extensiones de código administrado a documentos
-            href: how-to-attach-managed-code-extensions-to-documents.md
-      - name: Personalización de la interfaz de usuario de Office
-        href: office-ui-customization.md
-        items:
-        - name: Controles en documentos de Office
-          href: controls-on-office-documents.md
+            - name: Migrar soluciones de Office a .NET Framework 4 o posterior
+              href: migrating-office-solutions-to-the-dotnet-framework-4-or-later.md
+              items:
+                - name: Cambios necesarios para ejecutar proyectos de Office
+                  href: required-changes-to-run-office-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md
+                - name: Actualizar proyectos de Excel y Word
+                  href: updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md
+                - name: Actualizar las personalizaciones de la Cinta en los proyectos de Office
+                  href: /visualstudio/vsto/update-ribbon-customizations-in-office-projects-to-migrate-to-dotnet-framework-4-or-4-5
+                - name: Actualizar las áreas del formulario en los proyectos de Outlook
+                  href: updating-form-regions-in-outlook-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md
+        - name: Arquitectura de las soluciones de Office en Visual Studio
+          href: architecture-of-office-solutions-in-visual-studio.md
           items:
-          - name: Información general sobre elementos y controles Host
-            href: host-items-and-host-controls-overview.md
-          - name: Limitaciones de programación de elementos y controles Host
-            href: programmatic-limitations-of-host-items-and-host-controls.md
-          - name: Información general sobre controles de formularios Windows Forms en documentos de Office
-            href: windows-forms-controls-on-office-documents-overview.md
-            items:
-            - name: Limitaciones de los controles de formularios Windows Forms en los documentos de Office
-              href: limitations-of-windows-forms-controls-on-office-documents.md
-            - name: Agregar controles de Windows Forms a documentos de Office
-              href: how-to-add-windows-forms-controls-to-office-documents.md
-            - name: 'Tutorial: Cambiar el formato de un documento mediante controles CheckBox'
-              href: walkthrough-changing-document-formatting-using-checkbox-controls.md
-            - name: 'Tutorial: Cambiar el formato de una hoja de cálculo mediante controles CheckBox'
-              href: walkthrough-changing-worksheet-formatting-using-checkbox-controls.md
-            - name: 'Tutorial: Mostrar texto en un cuadro de texto en un documento mediante un botón'
-              href: walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md
-            - name: 'Tutorial: Mostrar texto en un cuadro de texto en una hoja de cálculo mediante un botón'
-              href: walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md
-            - name: 'Tutorial: Actualizar un gráfico en un documento mediante botones de radio'
-              href: walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md
-            - name: 'Tutorial: Actualizar un gráfico en una hoja de cálculo mediante botones de radio'
-              href: walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons.md
-            - name: Cambiar el tamaño de controles en celdas de hojas de cálculo
-              href: how-to-resize-controls-within-worksheet-cells.md
-            - name: Ocultar controles en hojas de cálculo al imprimir
-              href: how-to-hide-controls-on-worksheets-when-printing.md
-          - name: Agregar controles a documentos de Office en tiempo de ejecución
-            href: adding-controls-to-office-documents-at-run-time.md
-            items:
-            - name: Guardar controles dinámicos en documentos de Office
-              href: persisting-dynamic-controls-in-office-documents.md
-        - name: Información general sobre la cinta de opciones
-          href: ribbon-overview.md
+            - name: Arquitectura de las personalizaciones de nivel de documento
+              href: architecture-of-document-level-customizations.md
+            - name: Arquitectura de complementos de VSTO
+              href: architecture-of-vsto-add-ins.md
+            - name: Información general sobre el Motor en tiempo de ejecución de Microsoft Visual Studio Tools para Office
+              href: visual-studio-tools-for-office-runtime-overview.md
+              items:
+                - name: Escenarios de instalación del Motor en tiempo de ejecución de Microsoft Visual Studio Tools para Office
+                  href: visual-studio-tools-for-office-runtime-installation-scenarios.md
+                - name: Ensamblados en el Motor en tiempo de ejecución de Microsoft Visual Studio Tools para Office
+                  href: assemblies-in-the-visual-studio-tools-for-office-runtime.md
+            - name: Entradas del registro para complementos de VSTO
+              href: registry-entries-for-vsto-add-ins.md
+            - name: Custom Document Properties Overview
+              href: custom-document-properties-overview.md
+        - name: Diseñar y crear soluciones de Office
+          href: designing-and-creating-office-solutions.md
           items:
-          - name: Iniciarse en la personalización de la cinta
-            href: how-to-get-started-customizing-the-ribbon.md
-          - name: Diseñador de la cinta de opciones
-            href: ribbon-designer.md
-          - name: 'Tutorial: Crear una ficha personalizada usando el diseñador de la cinta de opciones'
-            href: walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md
-          - name: Información general sobre el modelo de objetos para la cinta de opciones
-            href: ribbon-object-model-overview.md
-          - name: 'Tutorial: Actualizar los controles de una cinta en tiempo de ejecución'
-            href: walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md
-          - name: Personalizar una cinta de opciones para Outlook
-            href: customizing-a-ribbon-for-outlook.md
-          - name: Personalizar una Cinta para InfoPath
-            href: customizing-a-ribbon-for-infopath.md
-          - name: Obtener acceso a la cinta de opciones en tiempo de ejecución
-            href: accessing-the-ribbon-at-run-time.md
-          - name: Cambiar la posición de una pestaña en la cinta
-            href: how-to-change-the-position-of-a-tab-on-the-ribbon.md
-          - name: Personalizar una pestaña integrada
-            href: how-to-customize-a-built-in-tab.md
-          - name: Agregar controles en la vista Backstage
-            href: how-to-add-controls-to-the-backstage-view.md
-          - name: Agregar un selector de cuadro de diálogo a un grupo de la cinta
-            href: how-to-add-a-dialog-box-launcher-to-a-ribbon-group.md
-          - name: Exportar una cinta desde el diseñador de la cinta a XML de la cinta
-            href: how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md
-          - name: XML de la cinta de opciones
-            href: ribbon-xml.md
-          - name: 'Tutorial: Crear una pestaña personalizada mediante XML de la cinta'
-            href: walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md
-        - name: Información general sobre paneles de acciones
-          href: actions-pane-overview.md
+            - name: Información general sobre las plantillas de Office Project
+              href: office-project-templates-overview.md
+            - name: Crear proyectos de Office en Visual Studio
+              href: how-to-create-office-projects-in-visual-studio.md
+            - name: Ejecutar soluciones en diferentes versiones de Microsoft Office
+              href: running-solutions-in-different-versions-of-microsoft-office.md
+            - name: Proyectos de Office en el entorno de Visual Studio
+              href: office-projects-in-the-visual-studio-environment.md
+            - name: Propiedades de los proyectos de Office
+              href: properties-in-office-projects.md
+            - name: Manifiestos de implementación y aplicación en soluciones de Office
+              href: application-and-deployment-manifests-in-office-solutions.md
+            - name: Usar como destino aplicaciones de Office mediante los ensamblados de interoperabilidad primarios
+              href: how-to-target-office-applications-through-primary-interop-assemblies.md
+            - name: Establecer la información de configuración de una solución de Office
+              href: how-to-set-up-configuration-information-for-an-office-solution.md
+            - name: Usar la funcionalidad de Office dentro de Visual Studio
+              href: using-office-functionality-inside-of-visual-studio.md
+              items:
+                - name: Protección de documentos en soluciones de nivel de documento
+                  href: document-protection-in-document-level-solutions.md
+                - name: Información general sobre la administración de permisos sobre la información y las extensiones de código administrado
+                  href: information-rights-management-and-managed-code-extensions-overview.md
+                - name: Permitir que el código se ejecute en documentos con permisos restringidos
+                  href: how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md
+                - name: Protección mediante contraseña en documentos de Office
+                  href: password-protection-on-office-documents.md
+                - name: Abrir soluciones de Office sin ejecutar código
+                  href: how-to-open-office-solutions-without-running-code.md
+        - name: Desarrollar soluciones de Office
+          href: developing-office-solutions.md
           items:
-          - name: Agregar un panel de acciones a documentos de Word o libros de Excel
-            href: how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md
-          - name: Administrar el diseño de controles en paneles de acciones
-            href: how-to-manage-control-layout-on-actions-panes.md
-          - name: 'Tutorial: Enlazar datos a controles en un panel de acciones de Word'
-            href: walkthrough-binding-data-to-controls-on-a-word-actions-pane.md
-          - name: 'Tutorial: Enlazar datos a controles en un panel de acciones de Excel'
-            href: walkthrough-binding-data-to-controls-on-an-excel-actions-pane.md
-          - name: 'Tutorial: Insertar texto en un documento desde un panel de acciones'
-            href: walkthrough-inserting-text-into-a-document-from-an-actions-pane.md
-        - name: Paneles de tareas personalizados
-          href: custom-task-panes.md
+            - name: Escribir código en soluciones de Office
+              href: writing-code-in-office-solutions.md
+              items:
+                - name: Parámetros opcionales en las soluciones de Office
+                  href: optional-parameters-in-office-solutions.md
+                - name: Enlace en tiempo de ejecución en las soluciones de Office
+                  href: late-binding-in-office-solutions.md
+                - name: Acceso global a objetos en los proyectos de Office
+                  href: global-access-to-objects-in-office-projects.md
+                - name: Eventos de los proyectos de Office
+                  href: events-in-office-projects.md
+                - name: Crear controladores de eventos en proyectos de Office
+                  href: how-to-create-event-handlers-in-office-projects.md
+                - name: Desarrollo en colaboración de las soluciones de Office
+                  href: collaborative-development-of-office-solutions.md
+            - name: Programar complementos de VSTO
+              href: programming-vsto-add-ins.md
+              items:
+                - name: Mejorar el rendimiento de un complemento de VSTO
+                  href: improving-the-performance-of-a-vsto-add-in.md
+                - name: Extender documentos de Word y libros de Excel en complementos de VSTO en tiempo de ejecución
+                  href: extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md
+                - name: Llamar a código en complementos de VSTO desde otras soluciones de Office
+                  href: calling-code-in-vsto-add-ins-from-other-office-solutions.md
+                - name: 'Tutorial: Llamar a código en un complemento VSTO desde VBA'
+                  href: walkthrough-calling-code-in-a-vsto-add-in-from-vba.md
+                - name: Personalizar características de la interfaz de usuario mediante interfaces de extensibilidad
+                  href: customizing-ui-features-by-using-extensibility-interfaces.md
+            - name: Programar personalizaciones de nivel de documento
+              href: programming-document-level-customizations.md
+              items:
+                - name: Combinar personalizaciones de VBA y de nivel de documento
+                  href: combining-vba-and-document-level-customizations.md
+                  items:
+                    - name: Exponer código para VBA en un proyecto de Visual Basic
+                      href: how-to-expose-code-to-vba-in-a-visual-basic-project.md
+                    - name: 'Exponer código para VBA en un proyecto de Visual C#'
+                      href: how-to-expose-code-to-vba-in-a-visual-csharp-project.md
+                    - name: 'Tutorial: Llamar a código de VBA en un proyecto de Visual Basic'
+                      href: walkthrough-calling-code-from-vba-in-a-visual-basic-project.md
+                    - name: 'Tutorial: Llamar a código de VBA en un proyecto de Visual C#'
+                      href: walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md
+                - name: Administrar documentos en un servidor mediante la clase ServerDocument
+                  href: managing-documents-on-a-server-by-using-the-serverdocument-class.md
+                  items:
+                    - name: Quitar extensiones de código administrado de documentos
+                      href: how-to-remove-managed-code-extensions-from-documents.md
+                    - name: Asociar extensiones de código administrado a documentos
+                      href: how-to-attach-managed-code-extensions-to-documents.md
+            - name: Personalización de la interfaz de usuario de Office
+              href: office-ui-customization.md
+              items:
+                - name: Controles en documentos de Office
+                  href: controls-on-office-documents.md
+                  items:
+                    - name: Información general sobre elementos y controles Host
+                      href: host-items-and-host-controls-overview.md
+                    - name: Limitaciones de programación de elementos y controles Host
+                      href: programmatic-limitations-of-host-items-and-host-controls.md
+                    - name: Información general sobre controles de formularios Windows Forms en documentos de Office
+                      href: windows-forms-controls-on-office-documents-overview.md
+                      items:
+                        - name: Limitaciones de los controles de formularios Windows Forms en los documentos de Office
+                          href: limitations-of-windows-forms-controls-on-office-documents.md
+                        - name: Agregar controles de Windows Forms a documentos de Office
+                          href: how-to-add-windows-forms-controls-to-office-documents.md
+                        - name: 'Tutorial: Cambiar el formato de un documento mediante controles CheckBox'
+                          href: walkthrough-changing-document-formatting-using-checkbox-controls.md
+                        - name: 'Tutorial: Cambiar el formato de una hoja de cálculo mediante controles CheckBox'
+                          href: walkthrough-changing-worksheet-formatting-using-checkbox-controls.md
+                        - name: 'Tutorial: Mostrar texto en un cuadro de texto en un documento mediante un botón'
+                          href: walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md
+                        - name: 'Tutorial: Mostrar texto en un cuadro de texto en una hoja de cálculo mediante un botón'
+                          href: walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md
+                        - name: 'Tutorial: Actualizar un gráfico en un documento mediante botones de radio'
+                          href: walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md
+                        - name: 'Tutorial: Actualizar un gráfico en una hoja de cálculo mediante botones de radio'
+                          href: walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons.md
+                        - name: Cambiar el tamaño de controles en celdas de hojas de cálculo
+                          href: how-to-resize-controls-within-worksheet-cells.md
+                        - name: Ocultar controles en hojas de cálculo al imprimir
+                          href: how-to-hide-controls-on-worksheets-when-printing.md
+                    - name: Agregar controles a documentos de Office en tiempo de ejecución
+                      href: adding-controls-to-office-documents-at-run-time.md
+                      items:
+                        - name: Guardar controles dinámicos en documentos de Office
+                          href: persisting-dynamic-controls-in-office-documents.md
+                - name: Información general sobre la cinta de opciones
+                  href: ribbon-overview.md
+                  items:
+                    - name: Iniciarse en la personalización de la cinta
+                      href: how-to-get-started-customizing-the-ribbon.md
+                    - name: Diseñador de la cinta de opciones
+                      href: ribbon-designer.md
+                    - name: 'Tutorial: Crear una ficha personalizada usando el diseñador de la cinta de opciones'
+                      href: walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md
+                    - name: Información general sobre el modelo de objetos para la cinta de opciones
+                      href: ribbon-object-model-overview.md
+                    - name: 'Tutorial: Actualizar los controles de una cinta en tiempo de ejecución'
+                      href: walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md
+                    - name: Personalizar una cinta de opciones para Outlook
+                      href: customizing-a-ribbon-for-outlook.md
+                    - name: Personalizar una Cinta para InfoPath
+                      href: customizing-a-ribbon-for-infopath.md
+                    - name: Obtener acceso a la cinta de opciones en tiempo de ejecución
+                      href: accessing-the-ribbon-at-run-time.md
+                    - name: Cambiar la posición de una pestaña en la cinta
+                      href: how-to-change-the-position-of-a-tab-on-the-ribbon.md
+                    - name: Personalizar una pestaña integrada
+                      href: how-to-customize-a-built-in-tab.md
+                    - name: Agregar controles en la vista Backstage
+                      href: how-to-add-controls-to-the-backstage-view.md
+                    - name: Agregar un selector de cuadro de diálogo a un grupo de la cinta
+                      href: how-to-add-a-dialog-box-launcher-to-a-ribbon-group.md
+                    - name: Exportar una cinta desde el diseñador de la cinta a XML de la cinta
+                      href: how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md
+                    - name: XML de la cinta de opciones
+                      href: ribbon-xml.md
+                    - name: 'Tutorial: Crear una pestaña personalizada mediante XML de la cinta'
+                      href: walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md
+                - name: Información general sobre paneles de acciones
+                  href: actions-pane-overview.md
+                  items:
+                    - name: Agregar un panel de acciones a documentos de Word o libros de Excel
+                      href: how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md
+                    - name: Administrar el diseño de controles en paneles de acciones
+                      href: how-to-manage-control-layout-on-actions-panes.md
+                    - name: 'Tutorial: Enlazar datos a controles en un panel de acciones de Word'
+                      href: walkthrough-binding-data-to-controls-on-a-word-actions-pane.md
+                    - name: 'Tutorial: Enlazar datos a controles en un panel de acciones de Excel'
+                      href: walkthrough-binding-data-to-controls-on-an-excel-actions-pane.md
+                    - name: 'Tutorial: Insertar texto en un documento desde un panel de acciones'
+                      href: walkthrough-inserting-text-into-a-document-from-an-actions-pane.md
+                - name: Paneles de tareas personalizados
+                  href: custom-task-panes.md
+                  items:
+                    - name: Agregar un panel de tareas personalizado a una aplicación
+                      href: how-to-add-a-custom-task-pane-to-an-application.md
+                    - name: 'Tutorial: Automatizar una aplicación desde un panel de tareas personalizado'
+                      href: walkthrough-automating-an-application-from-a-custom-task-pane.md
+                    - name: 'Tutorial: Sincronizar un panel de tareas personalizado con un botón de la cinta de opciones'
+                      href: walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md
+                    - name: 'Tutorial: Mostrar paneles de tareas personalizados con mensajes de correo electrónico en Outlook'
+                      href: walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md
+                - name: Usar controles de WPF en soluciones de Office
+                  href: using-wpf-controls-in-office-solutions.md
+                - name: Mostrar la pestaña Programador en la cinta
+                  href: how-to-show-the-developer-tab-on-the-ribbon.md
+                - name: Mostrar errores de la interfaz de usuario de un complemento
+                  href: how-to-show-add-in-user-interface-errors.md
+                - name: Agregar comandos a menús contextuales
+                  href: how-to-add-commands-to-shortcut-menus.md
+                - name: 'Tutorial: Recopilar datos con Windows Forms'
+                  href: walkthrough-collecting-data-using-a-windows-form.md
+            - name: Datos en las soluciones de Office
+              href: data-in-office-solutions.md
+              items:
+                - name: Enlazar datos a controles en soluciones de Office
+                  href: binding-data-to-controls-in-office-solutions.md
+                  items:
+                    - name: Rellenar hojas de cálculo con datos de una base de datos
+                      href: how-to-populate-worksheets-with-data-from-a-database.md
+                    - name: Rellenar documentos con datos de una base de datos
+                      href: how-to-populate-documents-with-data-from-a-database.md
+                    - name: Rellenar documentos con datos de servicios
+                      href: how-to-populate-documents-with-data-from-services.md
+                    - name: 'Tutorial: Enlazar a datos desde un servicio en un proyecto de complemento VSTO'
+                      href: walkthrough-binding-to-data-from-a-service-in-a-vsto-add-in-project.md
+                    - name: Rellenar documentos con datos de objetos
+                      href: how-to-populate-documents-with-data-from-objects.md
+                    - name: Desplazarse por los registros de una base de datos en una hoja de cálculo
+                      href: how-to-scroll-through-database-records-in-a-worksheet.md
+                    - name: Actualizar un origen de datos con datos de un control host
+                      href: how-to-update-a-data-source-with-data-from-a-host-control.md
+                    - name: 'Tutorial: Enlace datos simple en un proyecto en el nivel del documento'
+                      href: walkthrough-simple-data-binding-in-a-document-level-project.md
+                    - name: 'Tutorial: Enlace datos complejo en un proyecto en el nivel del documento'
+                      href: walkthrough-complex-data-binding-in-a-document-level-project.md
+                    - name: 'Tutorial: Enlace de datos simple en un proyecto de complemento VSTO'
+                      href: walkthrough-simple-data-binding-in-vsto-add-in-project.md
+                    - name: 'Tutorial: Enlace de datos complejo en un proyecto de complemento VSTO'
+                      href: walkthrough-complex-data-binding-in-vsto-add-in-project.md
+                - name: Custom XML Parts Overview
+                  href: custom-xml-parts-overview.md
+                  items:
+                    - name: Agregar elementos XML personalizados a personalizaciones de nivel de documento
+                      href: how-to-add-custom-xml-parts-to-document-level-customizations.md
+                    - name: Agregar elementos XML personalizados a documentos mediante complementos VSTO
+                      href: how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md
+                - name: Datos almacenados en caché en las personalizaciones de nivel de documento
+                  href: cached-data-in-document-level-customizations.md
+                  items:
+                    - name: Almacenar datos en caché
+                      href: caching-data.md
+                      items:
+                        - name: Almacenar datos en la memoria caché para uso sin conexión o en un servidor
+                          href: how-to-cache-data-for-use-offline-or-on-a-server.md
+                        - name: Almacenar en caché un origen de datos de un documento de Office mediante programación
+                          href: how-to-programmatically-cache-a-data-source-in-an-office-document.md
+                        - name: Almacenar datos en caché en un documento protegido por contraseña
+                          href: how-to-cache-data-in-a-password-protected-document.md
+                        - name: 'Tutorial: Crear una relación maestro-detalle mediante un conjunto de datos almacenado en caché'
+                          href: walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md
+                    - name: Acceso a datos de documentos en el servidor
+                      href: accessing-data-in-documents-on-the-server.md
+                      items:
+                        - name: 'Tutorial: Insertar datos en un libro en un servidor'
+                          href: walkthrough-inserting-data-into-a-workbook-on-a-server.md
+                        - name: 'Tutorial: Recuperar datos almacenados en caché desde un libro en un servidor'
+                          href: walkthrough-retrieving-cached-data-from-a-workbook-on-a-server.md
+                        - name: 'Tutorial: Cambiar los datos almacenados en caché de un libro en un servidor'
+                          href: walkthrough-changing-cached-data-in-a-workbook-on-a-server.md
+                - name: Esquemas y datos XML en personalizaciones de nivel de documento
+                  href: xml-schemas-and-data-in-document-level-customizations.md
+                  items:
+                    - name: Asignar esquemas a documentos de Word en Visual Studio
+                      href: how-to-map-schemas-to-word-documents-inside-visual-studio.md
+                    - name: Asignar esquemas a hojas de cálculo en Visual Studio
+                      href: how-to-map-schemas-to-worksheets-inside-visual-studio.md
+                - name: Información general sobre el uso de archivos de bases de datos locales en soluciones de Office
+                  href: using-local-database-files-in-office-solutions-overview.md
+            - name: Cómo el autoguardado afecta a las soluciones de Office
+              href: how-autosave-impacts-office-solutions.md
+            - name: Solución de problemas de soluciones de Office
+              href: troubleshooting-office-solutions.md
+              items:
+                - name: Solucionar problemas de errores de las soluciones de Office
+                  href: troubleshooting-errors-in-office-solutions.md
+                - name: Volver a habilitar un complemento de VSTO que se ha deshabilitado
+                  href: how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md
+                - name: Soporte técnico adicional para errores de soluciones de Office
+                  href: additional-support-for-errors-in-office-solutions.md
+            - name: 'Procedimientos recomendados de desarrollo para complementos COM, VSTO y VBA en Office'
+              href: development-best-practices-for-com-vsto-and-vba-add-ins-in-office.md
+            - name: Compatibilidad del subprocesamiento en Office
+              href: threading-support-in-office.md
+            - name: Leer y escribir en propiedades de un documento
+              href: how-to-read-from-and-write-to-document-properties.md
+            - name: Crear y modificar propiedades personalizadas para documentos
+              href: how-to-create-and-modify-custom-document-properties.md
+            - name: Usar como destino la interfaz de usuario multilingüe de Office
+              href: how-to-target-the-office-multilingual-user-interface.md
+            - name: Accesibilidad en proyectos de Office
+              href: accessibility-in-office-projects.md
+        - name: Soluciones de Excel
+          href: excel-solutions.md
           items:
-          - name: Agregar un panel de tareas personalizado a una aplicación
-            href: how-to-add-a-custom-task-pane-to-an-application.md
-          - name: 'Tutorial: Automatizar una aplicación desde un panel de tareas personalizado'
-            href: walkthrough-automating-an-application-from-a-custom-task-pane.md
-          - name: 'Tutorial: Sincronizar un panel de tareas personalizado con un botón de la cinta de opciones'
-            href: walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md
-          - name: 'Tutorial: Mostrar paneles de tareas personalizados con mensajes de correo electrónico en Outlook'
-            href: walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md
-        - name: Usar controles de WPF en soluciones de Office
-          href: using-wpf-controls-in-office-solutions.md
-        - name: Mostrar la pestaña Programador en la cinta
-          href: how-to-show-the-developer-tab-on-the-ribbon.md
-        - name: Mostrar errores de la interfaz de usuario de un complemento
-          href: how-to-show-add-in-user-interface-errors.md
-        - name: Agregar comandos a menús contextuales
-          href: how-to-add-commands-to-shortcut-menus.md
-        - name: 'Tutorial: Recopilar datos con Windows Forms'
-          href: walkthrough-collecting-data-using-a-windows-form.md
-      - name: Datos en las soluciones de Office
-        href: data-in-office-solutions.md
-        items:
-        - name: Enlazar datos a controles en soluciones de Office
-          href: binding-data-to-controls-in-office-solutions.md
+            - name: Excel Object Model Overview
+              href: excel-object-model-overview.md
+              items:
+                - name: Trabajar con libros
+                  href: working-with-workbooks.md
+                  items:
+                    - name: Crear nuevos libros mediante programación
+                      href: how-to-programmatically-create-new-workbooks.md
+                    - name: Abrir libros mediante programación
+                      href: how-to-programmatically-open-workbooks.md
+                    - name: Cerrar libros mediante programación
+                      href: how-to-programmatically-close-workbooks.md
+                    - name: Guardar libros mediante programación
+                      href: how-to-programmatically-save-workbooks.md
+                    - name: Proteger libros mediante programación
+                      href: how-to-programmatically-protect-workbooks.md
+                    - name: Mostrar los archivos de libro usados recientemente mediante programación
+                      href: how-to-programmatically-list-recently-used-workbook-files.md
+                    - name: Abrir archivos de texto como libros mediante programación
+                      href: how-to-programmatically-open-text-files-as-workbooks.md
+                - name: Trabajar con hojas de cálculo
+                  href: working-with-worksheets.md
+                  items:
+                    - name: Agregar nuevas hojas de cálculo a libros mediante programación
+                      href: how-to-programmatically-add-new-worksheets-to-workbooks.md
+                    - name: Copiar hojas de cálculo mediante programación
+                      href: how-to-programmatically-copy-worksheets.md
+                    - name: Eliminar hojas de cálculo de libros mediante programación
+                      href: how-to-programmatically-delete-worksheets-from-workbooks.md
+                    - name: Seleccionar hojas de cálculo mediante programación
+                      href: how-to-programmatically-select-worksheets.md
+                    - name: Mostrar todas las hojas de cálculo de un libro mediante programación
+                      href: how-to-programmatically-list-all-worksheets-in-a-workbook.md
+                    - name: Imprimir hojas de cálculo mediante programación
+                      href: how-to-programmatically-print-worksheets.md
+                    - name: Mover hojas de cálculo dentro de libros mediante programación
+                      href: how-to-programmatically-move-worksheets-within-workbooks.md
+                    - name: Ocultar hojas de cálculo mediante programación
+                      href: how-to-programmatically-hide-worksheets.md
+                    - name: Proteger hojas de cálculo mediante programación
+                      href: how-to-programmatically-protect-worksheets.md
+                    - name: Desproteger hojas de cálculo mediante programación
+                      href: how-to-programmatically-remove-protection-from-worksheets.md
+                    - name: Agregar y eliminar comentarios en una hoja de cálculo mediante programación
+                      href: how-to-programmatically-add-and-delete-worksheet-comments.md
+                    - name: Mostrar los comentarios de las hojas de cálculo mediante programación
+                      href: how-to-programmatically-display-worksheet-comments.md
+                    - name: Agrupar filas de una hoja de cálculo mediante programación
+                      href: how-to-programmatically-group-rows-in-a-worksheet.md
+                    - name: Cambiar el formato en filas de hojas de cálculo que contienen celdas seleccionadas mediante programación
+                      href: how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells.md
+                    - name: Copiar datos y formato entre hojas de cálculo mediante programación
+                      href: how-to-programmatically-copy-data-and-formatting-across-worksheets.md
+                    - name: Revisar la ortografía en hojas de cálculo mediante programación
+                      href: how-to-programmatically-check-spelling-in-worksheets.md
+                    - name: Ordenar datos en hojas de cálculo mediante programación
+                      href: how-to-programmatically-sort-data-in-worksheets.md
+                - name: Trabajar con rangos
+                  href: working-with-ranges.md
+                  items:
+                    - name: Hacer referencia a rangos de hojas de cálculo en el código mediante programación
+                      href: how-to-programmatically-refer-to-worksheet-ranges-in-code.md
+                    - name: Rellenar rangos automáticamente con datos que cambian de forma incremental mediante programación
+                      href: how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data.md
+                    - name: Almacenar y recuperar valores de fecha en rangos de Excel mediante programación
+                      href: how-to-programmatically-store-and-retrieve-date-values-in-excel-ranges.md
+                    - name: Aplicar estilos a rangos de libros mediante programación
+                      href: how-to-programmatically-apply-styles-to-ranges-in-workbooks.md
+                    - name: Buscar texto en rangos de hojas de cálculo mediante programación
+                      href: how-to-programmatically-search-for-text-in-worksheet-ranges.md
+                    - name: Aplicar color a rangos de Excel mediante programación
+                      href: how-to-programmatically-apply-color-to-excel-ranges.md
+                    - name: Ejecutar cálculos de Excel mediante programación
+                      href: how-to-programmatically-run-excel-calculations-programmatically.md
+                    - name: Mostrar una cadena en la celda de una hoja de cálculo mediante programación
+                      href: how-to-programmatically-display-a-string-in-a-worksheet-cell.md
+            - name: Automatizar Excel usando objetos extendidos
+              href: automating-excel-by-using-extended-objects.md
+              items:
+                - name: Elemento host Workbook
+                  href: workbook-host-item.md
+                - name: Elemento host Worksheet
+                  href: worksheet-host-item.md
+                - name: Chart Control
+                  href: chart-control.md
+                - name: ListObject (control)
+                  href: listobject-control.md
+                - name: NamedRange (control)
+                  href: namedrange-control.md
+                - name: XmlMappedRange (Control)
+                  href: xmlmappedrange-control.md
+                - name: Agregar controles Chart a hojas de cálculo
+                  href: how-to-add-chart-controls-to-worksheets.md
+                - name: Agregar controles ListObject a hojas de cálculo
+                  href: how-to-add-listobject-controls-to-worksheets.md
+                - name: Agregar controles NamedRange a hojas de cálculo
+                  href: how-to-add-namedrange-controls-to-worksheets.md
+                - name: Agregar controles XMLMappedRange a hojas de cálculo
+                  href: how-to-add-xmlmappedrange-controls-to-worksheets.md
+                - name: Cambiar el tamaño de los controles NamedRange
+                  href: how-to-resize-namedrange-controls.md
+                - name: Cambiar el tamaño de los controles ListObject
+                  href: how-to-resize-listobject-controls.md
+                - name: Validar datos cuando se agrega una fila nueva a un control ListObject
+                  href: how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control.md
+                - name: Asignar columnas ListObject a datos
+                  href: how-to-map-listobject-columns-to-data.md
+                - name: Rellenar controles ListObject con datos
+                  href: how-to-fill-listobject-controls-with-data.md
+                - name: 'Tutorial: Programar basándose en los eventos de un control NamedRange'
+                  href: walkthrough-programming-against-events-of-a-namedrange-control.md
+            - name: Descripción de co-autoría y complementos
+              href: understanding-coauthoring-and-addins.md
+            - name: Globalización y localización de las soluciones de Excel
+              href: globalization-and-localization-of-excel-solutions.md
+            - name: Usar controles de formularios Windows Forms en hojas de cálculo de Excel
+              href: using-windows-forms-controls-on-excel-worksheets.md
+            - name: 'Tutorial: Crear la primera personalización en el nivel de documento de Excel'
+              href: walkthrough-creating-your-first-document-level-customization-for-excel.md
+            - name: 'Tutorial: Crear el primer complemento VSTO de Excel'
+              href: walkthrough-creating-your-first-vsto-add-in-for-excel.md
+            - name: 'Tutorial: Agregar controles a una hoja de cálculo en tiempo de ejecución en un proyecto de complemento VSTO'
+              href: walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md
+        - name: Soluciones de InfoPath
+          href: infopath-solutions.md
+        - name: Soluciones de Outlook
+          href: outlook-solutions.md
           items:
-          - name: Rellenar hojas de cálculo con datos de una base de datos
-            href: how-to-populate-worksheets-with-data-from-a-database.md
-          - name: Rellenar documentos con datos de una base de datos
-            href: how-to-populate-documents-with-data-from-a-database.md
-          - name: Rellenar documentos con datos de servicios
-            href: how-to-populate-documents-with-data-from-services.md
-          - name: 'Tutorial: Enlazar a datos desde un servicio en un proyecto de complemento VSTO'
-            href: walkthrough-binding-to-data-from-a-service-in-a-vsto-add-in-project.md
-          - name: Rellenar documentos con datos de objetos
-            href: how-to-populate-documents-with-data-from-objects.md
-          - name: Desplazarse por los registros de una base de datos en una hoja de cálculo
-            href: how-to-scroll-through-database-records-in-a-worksheet.md
-          - name: Actualizar un origen de datos con datos de un control host
-            href: how-to-update-a-data-source-with-data-from-a-host-control.md
-          - name: 'Tutorial: Enlace datos simple en un proyecto en el nivel del documento'
-            href: walkthrough-simple-data-binding-in-a-document-level-project.md
-          - name: 'Tutorial: Enlace datos complejo en un proyecto en el nivel del documento'
-            href: walkthrough-complex-data-binding-in-a-document-level-project.md
-          - name: 'Tutorial: Enlace de datos simple en un proyecto de complemento VSTO'
-            href: walkthrough-simple-data-binding-in-vsto-add-in-project.md
-          - name: 'Tutorial: Enlace de datos complejo en un proyecto de complemento VSTO'
-            href: walkthrough-complex-data-binding-in-vsto-add-in-project.md
-        - name: Custom XML Parts Overview
-          href: custom-xml-parts-overview.md
+            - name: Información general sobre el modelo de objetos de Outlook
+              href: outlook-object-model-overview.md
+              items:
+                - name: Trabajar con contactos
+                  href: working-with-contact-items.md
+                  items:
+                    - name: Acceder a los contactos de Outlook mediante programación
+                      href: how-to-programmatically-access-outlook-contacts.md
+                    - name: Buscar un contacto específico mediante programación
+                      href: how-to-programmatically-search-for-a-specific-contact.md
+                    - name: Agregar una entrada a los contactos de Outlook mediante programación
+                      href: how-to-programmatically-add-an-entry-to-outlook-contacts.md
+                    - name: Buscar una dirección de correo electrónico en los contactos mediante programación
+                      href: how-to-programmatically-search-for-an-e-mail-address-in-contacts.md
+                    - name: Eliminar contactos de Outlook mediante programación
+                      href: how-to-programmatically-delete-outlook-contacts.md
+                - name: Trabajar con elementos de correo
+                  href: working-with-mail-items.md
+                  items:
+                    - name: Crear un elemento de correo electrónico mediante programación
+                      href: how-to-programmatically-create-an-e-mail-item.md
+                    - name: Enviar correo electrónico mediante programación
+                      href: how-to-programmatically-send-e-mail-programmatically.md
+                    - name: Realizar acciones al recibir un mensaje de correo electrónico mediante programación
+                      href: how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md
+                    - name: Guardar datos adjuntos de elementos de correo electrónico de Outlook mediante programación
+                      href: how-to-programmatically-save-attachments-from-outlook-e-mail-items.md
+                    - name: Adjuntar archivos a elementos de correo electrónico de Outlook mediante programación
+                      href: how-to-programmatically-attach-files-to-outlook-e-mail-items.md
+                    - name: Recuperar mensajes sin leer de la Bandeja de entrada mediante programación
+                      href: how-to-programmatically-retrieve-unread-messages-from-the-inbox.md
+                - name: Trabajar con carpetas
+                  href: working-with-folders.md
+                  items:
+                    - name: Buscar en una carpeta específica mediante programación
+                      href: how-to-programmatically-search-within-a-specific-folder.md
+                    - name: Recuperar una carpeta por nombre mediante programación
+                      href: how-to-programmatically-retrieve-a-folder-by-name.md
+                    - name: Asociar una página web a una carpeta de Outlook mediante programación
+                      href: how-to-programmatically-associate-a-web-page-with-an-outlook-folder.md
+                    - name: Crear elementos de carpeta personalizados mediante programación
+                      href: how-to-programmatically-create-custom-folder-items.md
+                    - name: Mover elementos en Outlook mediante programación
+                      href: how-to-programmatically-move-items-in-outlook.md
+                - name: Trabajar con elementos del calendario
+                  href: working-with-calendar-items.md
+                  items:
+                    - name: Crear citas mediante programación
+                      href: how-to-programmatically-create-appointments.md
+                    - name: Eliminar citas mediante programación
+                      href: how-to-programmatically-delete-appointments.md
+                    - name: Crear un calendario personalizado mediante programación
+                      href: how-to-programmatically-create-a-custom-calendar.md
+                    - name: Crear una convocatoria de reunión mediante programación
+                      href: how-to-programmatically-create-a-meeting-request.md
+                - name: Determinar el elemento actual de Outlook mediante programación
+                  href: how-to-programmatically-determine-the-current-outlook-item.md
+            - name: Creating Outlook Form Regions
+              href: creating-outlook-form-regions.md
+              items:
+                - name: Instrucciones para crear áreas de formulario de Outlook
+                  href: guidelines-for-creating-outlook-form-regions.md
+                - name: Agregar un área de formulario a un proyecto de complemento de Outlook
+                  href: how-to-add-a-form-region-to-an-outlook-add-in-project.md
+                - name: Asociar un área de formulario a una clase de mensaje de Outlook
+                  href: associating-a-form-region-with-an-outlook-message-class.md
+                - name: 'Tutorial: Diseñar un área de formulario de Outlook'
+                  href: walkthrough-designing-an-outlook-form-region.md
+                - name: 'Tutorial: Importar un área de formulario diseñada en Outlook'
+                  href: walkthrough-importing-a-form-region-that-is-designed-in-outlook.md
+                - name: Obtener acceso a un área de formulario en tiempo de ejecución
+                  href: accessing-a-form-region-at-run-time.md
+                - name: Evitar que Outlook muestre un área de formulario
+                  href: how-to-prevent-outlook-from-displaying-a-form-region.md
+                - name: Acciones personalizadas en áreas de formulario de Outlook
+                  href: custom-actions-in-outlook-form-regions.md
+            - name: 'Tutorial: Crear el primer complemento VSTO de Outlook'
+              href: walkthrough-creating-your-first-vsto-add-in-for-outlook.md
+        - name: Soluciones de PowerPoint
+          href: powerpoint-solutions.md
           items:
-          - name: Agregar elementos XML personalizados a personalizaciones de nivel de documento
-            href: how-to-add-custom-xml-parts-to-document-level-customizations.md
-          - name: Agregar elementos XML personalizados a documentos mediante complementos VSTO
-            href: how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md
-        - name: Datos almacenados en caché en las personalizaciones de nivel de documento
-          href: cached-data-in-document-level-customizations.md
+            - name: 'Tutorial: Crear el primer complemento VSTO de PowerPoint'
+              href: walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md
+        - name: Soluciones de Project
+          href: project-solutions.md
           items:
-          - name: Almacenar datos en caché
-            href: caching-data.md
-            items:
-            - name: Almacenar datos en la memoria caché para uso sin conexión o en un servidor
-              href: how-to-cache-data-for-use-offline-or-on-a-server.md
-            - name: Almacenar en caché un origen de datos de un documento de Office mediante programación
-              href: how-to-programmatically-cache-a-data-source-in-an-office-document.md
-            - name: Almacenar datos en caché en un documento protegido por contraseña
-              href: how-to-cache-data-in-a-password-protected-document.md
-            - name: 'Tutorial: Crear una relación maestro-detalle mediante un conjunto de datos almacenado en caché'
-              href: walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md
-          - name: Acceso a datos de documentos en el servidor
-            href: accessing-data-in-documents-on-the-server.md
-            items:
-            - name: 'Tutorial: Insertar datos en un libro en un servidor'
-              href: walkthrough-inserting-data-into-a-workbook-on-a-server.md
-            - name: 'Tutorial: Recuperar datos almacenados en caché desde un libro en un servidor'
-              href: walkthrough-retrieving-cached-data-from-a-workbook-on-a-server.md
-            - name: 'Tutorial: Cambiar los datos almacenados en caché de un libro en un servidor'
-              href: walkthrough-changing-cached-data-in-a-workbook-on-a-server.md
-        - name: Esquemas y datos XML en personalizaciones de nivel de documento
-          href: xml-schemas-and-data-in-document-level-customizations.md
+            - name: 'Tutorial: Crear el primer complemento VSTO de Project'
+              href: walkthrough-creating-your-first-vsto-add-in-for-project.md
+        - name: Soluciones de Visio
+          href: visio-solutions.md
           items:
-          - name: Asignar esquemas a documentos de Word en Visual Studio
-            href: how-to-map-schemas-to-word-documents-inside-visual-studio.md
-          - name: Asignar esquemas a hojas de cálculo en Visual Studio
-            href: how-to-map-schemas-to-worksheets-inside-visual-studio.md
-        - name: Información general sobre el uso de archivos de bases de datos locales en soluciones de Office
-          href: using-local-database-files-in-office-solutions-overview.md
-      - name: Cómo el autoguardado afecta a las soluciones de Office
-        href: how-autosave-impacts-office-solutions.md
-      - name: Solución de problemas de soluciones de Office
-        href: troubleshooting-office-solutions.md
-        items:
-        - name: Solucionar problemas de errores de las soluciones de Office
-          href: troubleshooting-errors-in-office-solutions.md
-        - name: Volver a habilitar un complemento de VSTO que se ha deshabilitado
-          href: how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md
-        - name: Soporte técnico adicional para errores de soluciones de Office
-          href: additional-support-for-errors-in-office-solutions.md
-      - name: Procedimientos recomendados de desarrollo para complementos COM, VSTO y VBA en Office
-        href: development-best-practices-for-com-vsto-and-vba-add-ins-in-office.md
-      - name: Compatibilidad del subprocesamiento en Office
-        href: threading-support-in-office.md
-      - name: Leer y escribir en propiedades de un documento
-        href: how-to-read-from-and-write-to-document-properties.md
-      - name: Crear y modificar propiedades personalizadas para documentos
-        href: how-to-create-and-modify-custom-document-properties.md
-      - name: Usar como destino la interfaz de usuario multilingüe de Office
-        href: how-to-target-the-office-multilingual-user-interface.md
-      - name: Accesibilidad en proyectos de Office
-        href: accessibility-in-office-projects.md
-    - name: Soluciones de Excel
-      href: excel-solutions.md
-      items:
-      - name: Excel Object Model Overview
-        href: excel-object-model-overview.md
-        items:
-        - name: Trabajar con libros
-          href: working-with-workbooks.md
+            - name: Información general sobre el modelo de objetos de Visio
+              href: visio-object-model-overview.md
+            - name: Trabajar con documentos de Visio
+              href: working-with-visio-documents.md
+              items:
+                - name: Crear nuevos documentos de Visio mediante programación
+                  href: how-to-programmatically-create-new-visio-documents.md
+                - name: Abrir documentos de Visio mediante programación
+                  href: how-to-programmatically-open-visio-documents.md
+                - name: Cerrar documentos de Visio mediante programación
+                  href: how-to-programmatically-close-visio-documents.md
+                - name: Guardar documentos de Visio mediante programación
+                  href: how-to-programmatically-save-visio-documents.md
+                - name: Imprimir documentos de Visio mediante programación
+                  href: how-to-programmatically-print-visio-documents.md
+            - name: Trabajar con formas de Visio
+              href: working-with-visio-shapes.md
+              items:
+                - name: Agregar formas a un documento de Visio mediante programación
+                  href: how-to-programmatically-add-shapes-to-a-visio-document.md
+                - name: Copiar y pegar formas en un documento de Visio mediante programación
+                  href: how-to-programmatically-copy-and-paste-shapes-in-a-visio-document.md
+        - name: Soluciones de Word
+          href: word-solutions.md
           items:
-          - name: Crear nuevos libros mediante programación
-            href: how-to-programmatically-create-new-workbooks.md
-          - name: Abrir libros mediante programación
-            href: how-to-programmatically-open-workbooks.md
-          - name: Cerrar libros mediante programación
-            href: how-to-programmatically-close-workbooks.md
-          - name: Guardar libros mediante programación
-            href: how-to-programmatically-save-workbooks.md
-          - name: Proteger libros mediante programación
-            href: how-to-programmatically-protect-workbooks.md
-          - name: Mostrar los archivos de libro usados recientemente mediante programación
-            href: how-to-programmatically-list-recently-used-workbook-files.md
-          - name: Abrir archivos de texto como libros mediante programación
-            href: how-to-programmatically-open-text-files-as-workbooks.md
-        - name: Trabajar con hojas de cálculo
-          href: working-with-worksheets.md
+            - name: Información general acerca del modelo de objetos de Word
+              href: word-object-model-overview.md
+              items:
+                - name: Trabajar con documentos
+                  href: working-with-documents.md
+                  items:
+                    - name: Crear nuevos documentos mediante programación
+                      href: how-to-programmatically-create-new-documents.md
+                    - name: Abrir documentos existentes mediante programación
+                      href: how-to-programmatically-open-existing-documents.md
+                    - name: Cerrar documentos mediante programación
+                      href: how-to-programmatically-close-documents.md
+                    - name: Guardar documentos mediante programación
+                      href: how-to-programmatically-save-documents.md
+                    - name: Imprimir documentos mediante programación
+                      href: how-to-programmatically-print-documents.md
+                    - name: Mostrar documentos en Vista previa de impresión mediante programación
+                      href: how-to-programmatically-display-documents-in-print-preview.md
+                    - name: Usar cuadros de diálogo integrados en Word mediante programación
+                      href: how-to-programmatically-use-built-in-dialog-boxes-in-word.md
+                    - name: Usar cuadros de diálogo de Word en modo oculto mediante programación
+                      href: how-to-programmatically-use-word-dialog-boxes-in-hidden-mode.md
+                    - name: Agregar imágenes y Word Art a documentos mediante programación
+                      href: how-to-programmatically-add-pictures-and-word-art-to-documents.md
+                    - name: Proteger documentos y partes de documentos mediante programación
+                      href: how-to-programmatically-protect-documents-and-parts-of-documents.md
+                    - name: Revisar la ortografía en documentos mediante programación
+                      href: how-to-programmatically-check-spelling-in-documents.md
+                    - name: Agregar encabezados y pies de página a documentos mediante programación
+                      href: how-to-programmatically-add-headers-and-footers-to-documents.md
+                    - name: Quitar todos los comentarios de documentos mediante programación
+                      href: how-to-programmatically-remove-all-comments-from-documents.md
+                - name: Trabajar con texto en documentos
+                  href: working-with-text-in-documents.md
+                  items:
+                    - name: Definir y seleccionar rangos en documentos mediante programación
+                      href: how-to-programmatically-define-and-select-ranges-in-documents.md
+                    - name: Recuperar los caracteres inicial y final de los rangos mediante programación
+                      href: how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md
+                    - name: Excluir marcas de párrafo al crear rangos mediante programación
+                      href: how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md
+                    - name: Ampliar rangos en documentos mediante programación
+                      href: how-to-programmatically-extend-ranges-in-documents.md
+                    - name: Restablecer rangos en documentos de Word mediante programación
+                      href: how-to-programmatically-reset-ranges-in-word-documents.md
+                    - name: Contraer rangos o selecciones en documentos mediante programación
+                      href: how-to-programmatically-collapse-ranges-or-selections-in-documents.md
+                    - name: Insertar texto en documentos de Word mediante programación
+                      href: how-to-programmatically-insert-text-into-word-documents.md
+                    - name: Dar formato al texto en documentos mediante programación
+                      href: how-to-programmatically-format-text-in-documents.md
+                    - name: Actualizar texto de marcador mediante programación
+                      href: how-to-programmatically-update-bookmark-text.md
+                    - name: Buscar y reemplazar texto en documentos mediante programación
+                      href: how-to-programmatically-search-for-and-replace-text-in-documents.md
+                    - name: Establecer opciones de búsqueda en Word mediante programación
+                      href: how-to-programmatically-set-search-options-in-word.md
+                    - name: Recorrer los elementos encontrados en documentos mediante programación
+                      href: how-to-programmatically-loop-through-found-items-in-documents.md
+                    - name: Restaurar selecciones después de realizar búsquedas mediante programación
+                      href: how-to-programmatically-restore-selections-after-searches.md
+                    - name: Contar caracteres en documentos mediante programación
+                      href: how-to-programmatically-count-characters-in-documents.md
+                    - name: Ocultar texto en documentos mediante programación
+                      href: how-to-programmatically-hide-text-in-documents.md
+                    - name: Agregar comentarios al texto en documentos mediante programación
+                      href: how-to-programmatically-add-comments-to-text-in-documents.md
+                - name: Trabajar con tablas
+                  href: working-with-tables.md
+                  items:
+                    - name: Crear tablas de Word mediante programación
+                      href: how-to-programmatically-create-word-tables.md
+                    - name: Rellenar tablas de Word con propiedades de documento mediante programación
+                      href: how-to-programmatically-populate-word-tables-with-document-properties.md
+                    - name: Agregar filas y columnas a tablas de Word mediante programación
+                      href: how-to-programmatically-add-rows-and-columns-to-word-tables.md
+                    - name: Agregar texto y formato a celdas de tablas de Word mediante programación
+                      href: how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md
+            - name: Automatizar Word con objetos extendidos
+              href: automating-word-by-using-extended-objects.md
+              items:
+                - name: Elemento host Document
+                  href: document-host-item.md
+                - name: Controles de contenido
+                  href: content-controls.md
+                - name: Bookmark (control)
+                  href: bookmark-control.md
+                - name: XMLNode (Control)
+                  href: xmlnode-control.md
+                - name: XMLNodes (Control)
+                  href: xmlnodes-control.md
+                - name: Agregar controles de contenido a documentos de Word
+                  href: how-to-add-content-controls-to-word-documents.md
+                - name: Agregar controles Bookmark a documentos de Word
+                  href: how-to-add-bookmark-controls-to-word-documents.md
+                - name: Agregar controles XMLNode a documentos de Word
+                  href: how-to-add-xmlnode-controls-to-word-documents.md
+                - name: Agregar controles XMLNodes a documentos de Word
+                  href: how-to-add-xmlnodes-controls-to-word-documents.md
+                - name: Proteger partes de documentos mediante controles de contenido
+                  href: how-to-protect-parts-of-documents-by-using-content-controls.md
+                - name: Cambiar el tamaño de los controles Bookmark
+                  href: how-to-resize-bookmark-controls.md
+                - name: 'Tutorial: Crear una plantilla mediante controles de contenido'
+                  href: walkthrough-creating-a-template-by-using-content-controls.md
+                - name: 'Tutorial: Enlazar controles de contenido a elementos XML personalizados'
+                  href: walkthrough-binding-content-controls-to-custom-xml-parts.md
+                - name: 'Tutorial: Crear menús contextuales para marcadores'
+                  href: walkthrough-creating-shortcut-menus-for-bookmarks.md
+            - name: 'Tutorial: Crear la primera personalización en el nivel de documento de Word'
+              href: walkthrough-creating-your-first-document-level-customization-for-word.md
+            - name: 'Tutorial: Crear el primer complemento VSTO de Word'
+              href: walkthrough-creating-your-first-vsto-add-in-for-word.md
+            - name: 'Tutorial: Agregar controles a un documento en tiempo de ejecución en un complemento VSTO'
+              href: walkthrough-adding-controls-to-a-document-at-run-time-in-a-vsto-add-in.md
+        - name: Compilar soluciones de Office
+          href: building-office-solutions.md
+        - name: Depurar proyectos de Office
+          href: debugging-office-projects.md
+        - name: Asegurar las soluciones de Office
+          href: securing-office-solutions.md
           items:
-          - name: Agregar nuevas hojas de cálculo a libros mediante programación
-            href: how-to-programmatically-add-new-worksheets-to-workbooks.md
-          - name: Copiar hojas de cálculo mediante programación
-            href: how-to-programmatically-copy-worksheets.md
-          - name: Eliminar hojas de cálculo de libros mediante programación
-            href: how-to-programmatically-delete-worksheets-from-workbooks.md
-          - name: Seleccionar hojas de cálculo mediante programación
-            href: how-to-programmatically-select-worksheets.md
-          - name: Mostrar todas las hojas de cálculo de un libro mediante programación
-            href: how-to-programmatically-list-all-worksheets-in-a-workbook.md
-          - name: Imprimir hojas de cálculo mediante programación
-            href: how-to-programmatically-print-worksheets.md
-          - name: Mover hojas de cálculo dentro de libros mediante programación
-            href: how-to-programmatically-move-worksheets-within-workbooks.md
-          - name: Ocultar hojas de cálculo mediante programación
-            href: how-to-programmatically-hide-worksheets.md
-          - name: Proteger hojas de cálculo mediante programación
-            href: how-to-programmatically-protect-worksheets.md
-          - name: Desproteger hojas de cálculo mediante programación
-            href: how-to-programmatically-remove-protection-from-worksheets.md
-          - name: Agregar y eliminar comentarios en una hoja de cálculo mediante programación
-            href: how-to-programmatically-add-and-delete-worksheet-comments.md
-          - name: Mostrar los comentarios de las hojas de cálculo mediante programación
-            href: how-to-programmatically-display-worksheet-comments.md
-          - name: Agrupar filas de una hoja de cálculo mediante programación
-            href: how-to-programmatically-group-rows-in-a-worksheet.md
-          - name: Cambiar el formato en filas de hojas de cálculo que contienen celdas seleccionadas mediante programación
-            href: how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells.md
-          - name: Copiar datos y formato entre hojas de cálculo mediante programación
-            href: how-to-programmatically-copy-data-and-formatting-across-worksheets.md
-          - name: Revisar la ortografía en hojas de cálculo mediante programación
-            href: how-to-programmatically-check-spelling-in-worksheets.md
-          - name: Ordenar datos en hojas de cálculo mediante programación
-            href: how-to-programmatically-sort-data-in-worksheets.md
-        - name: Trabajar con rangos
-          href: working-with-ranges.md
+            - name: Otorgar confianza a las soluciones de Office
+              href: granting-trust-to-office-solutions.md
+            - name: Granting Trust to Documents
+              href: granting-trust-to-documents.md
+            - name: Implementación segura
+              href: secure-deployment.md
+            - name: Otorgar confianza a las soluciones de Office mediante listas de inclusión
+              href: trusting-office-solutions-by-using-inclusion-lists.md
+            - name: Configurar la seguridad de la lista de inclusión
+              href: how-to-configure-inclusion-list-security.md
+            - name: Consideraciones de seguridad específicas para soluciones de Office
+              href: specific-security-considerations-for-office-solutions.md
+            - name: Firmar soluciones de Office
+              href: how-to-sign-office-solutions.md
+            - name: Solucionar problemas de seguridad de soluciones de Office
+              href: troubleshooting-office-solution-security.md
+        - name: Implementar una solución de Office
+          href: deploying-an-office-solution.md
           items:
-          - name: Hacer referencia a rangos de hojas de cálculo en el código mediante programación
-            href: how-to-programmatically-refer-to-worksheet-ranges-in-code.md
-          - name: Rellenar rangos automáticamente con datos que cambian de forma incremental mediante programación
-            href: how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data.md
-          - name: Almacenar y recuperar valores de fecha en rangos de Excel mediante programación
-            href: how-to-programmatically-store-and-retrieve-date-values-in-excel-ranges.md
-          - name: Aplicar estilos a rangos de libros mediante programación
-            href: how-to-programmatically-apply-styles-to-ranges-in-workbooks.md
-          - name: Buscar texto en rangos de hojas de cálculo mediante programación
-            href: how-to-programmatically-search-for-text-in-worksheet-ranges.md
-          - name: Aplicar color a rangos de Excel mediante programación
-            href: how-to-programmatically-apply-color-to-excel-ranges.md
-          - name: Ejecutar cálculos de Excel mediante programación
-            href: how-to-programmatically-run-excel-calculations-programmatically.md
-          - name: Mostrar una cadena en la celda de una hoja de cálculo mediante programación
-            href: how-to-programmatically-display-a-string-in-a-worksheet-cell.md
-      - name: Automatizar Excel usando objetos extendidos
-        href: automating-excel-by-using-extended-objects.md
-        items:
-        - name: Elemento host Workbook
-          href: workbook-host-item.md
-        - name: Elemento host Worksheet
-          href: worksheet-host-item.md
-        - name: Chart Control
-          href: chart-control.md
-        - name: ListObject (control)
-          href: listobject-control.md
-        - name: NamedRange (control)
-          href: namedrange-control.md
-        - name: XmlMappedRange (Control)
-          href: xmlmappedrange-control.md
-        - name: Agregar controles Chart a hojas de cálculo
-          href: how-to-add-chart-controls-to-worksheets.md
-        - name: Agregar controles ListObject a hojas de cálculo
-          href: how-to-add-listobject-controls-to-worksheets.md
-        - name: Agregar controles NamedRange a hojas de cálculo
-          href: how-to-add-namedrange-controls-to-worksheets.md
-        - name: Agregar controles XMLMappedRange a hojas de cálculo
-          href: how-to-add-xmlmappedrange-controls-to-worksheets.md
-        - name: Cambiar el tamaño de los controles NamedRange
-          href: how-to-resize-namedrange-controls.md
-        - name: Cambiar el tamaño de los controles ListObject
-          href: how-to-resize-listobject-controls.md
-        - name: Validar datos cuando se agrega una fila nueva a un control ListObject
-          href: how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control.md
-        - name: Asignar columnas ListObject a datos
-          href: how-to-map-listobject-columns-to-data.md
-        - name: Rellenar controles ListObject con datos
-          href: how-to-fill-listobject-controls-with-data.md
-        - name: 'Tutorial: Programar basándose en los eventos de un control NamedRange'
-          href: walkthrough-programming-against-events-of-a-namedrange-control.md
-      - name: Descripción de co-autoría y complementos
-        href: understanding-coauthoring-and-addins.md
-      - name: Globalización y localización de las soluciones de Excel
-        href: globalization-and-localization-of-excel-solutions.md
-      - name: Usar controles de formularios Windows Forms en hojas de cálculo de Excel
-        href: using-windows-forms-controls-on-excel-worksheets.md
-      - name: 'Tutorial: Crear la primera personalización en el nivel de documento de Excel'
-        href: walkthrough-creating-your-first-document-level-customization-for-excel.md
-      - name: 'Tutorial: Crear el primer complemento VSTO de Excel'
-        href: walkthrough-creating-your-first-vsto-add-in-for-excel.md
-      - name: 'Tutorial: Agregar controles a una hoja de cálculo en tiempo de ejecución en un proyecto de complemento VSTO'
-        href: walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md
-    - name: Soluciones de InfoPath
-      href: infopath-solutions.md
-    - name: Soluciones de Outlook
-      href: outlook-solutions.md
-      items:
-      - name: Información general sobre el modelo de objetos de Outlook
-        href: outlook-object-model-overview.md
-        items:
-        - name: Trabajar con contactos
-          href: working-with-contact-items.md
+            - name: Implementar una solución de Office mediante ClickOnce
+              href: deploying-an-office-solution-by-using-clickonce.md
+            - name: Implementar una solución de Office mediante Windows Installer
+              href: deploying-an-office-solution-by-using-windows-installer.md
+            - name: Solucionar problemas de implementación de las soluciones de Office
+              href: troubleshooting-office-solution-deployment.md
+              items:
+                - name: Registro de eventos para soluciones de Office
+                  href: event-logging-for-office-solutions.md
+        - name: Ejemplos y tutoriales
+          href: office-development-samples-and-walkthroughs.md
           items:
-          - name: Acceder a los contactos de Outlook mediante programación
-            href: how-to-programmatically-access-outlook-contacts.md
-          - name: Buscar un contacto específico mediante programación
-            href: how-to-programmatically-search-for-a-specific-contact.md
-          - name: Agregar una entrada a los contactos de Outlook mediante programación
-            href: how-to-programmatically-add-an-entry-to-outlook-contacts.md
-          - name: Buscar una dirección de correo electrónico en los contactos mediante programación
-            href: how-to-programmatically-search-for-an-e-mail-address-in-contacts.md
-          - name: Eliminar contactos de Outlook mediante programación
-            href: how-to-programmatically-delete-outlook-contacts.md
-        - name: Trabajar con elementos de correo
-          href: working-with-mail-items.md
+            - name: Ejemplos de desarrollo de Office
+              href: office-development-samples.md
+            - name: Tutoriales para Word
+              href: walkthroughs-using-word.md
+            - name: Tutoriales para Excel
+              href: walkthroughs-using-excel.md
+            - name: Los datos en los tutoriales de soluciones de Office
+              href: data-in-office-solutions-walkthroughs.md
+            - name: Tutoriales de personalización de la interfaz de usuario de Office
+              href: office-ui-customization-walkthroughs.md
+            - name: Tutoriales de seguridad e implementación
+              href: security-and-deployment-walkthroughs.md
+        - name: Referencia general (desarrollo de Office en Visual Studio)
+          href: general-reference-office-development-in-visual-studio.md
           items:
-          - name: Crear un elemento de correo electrónico mediante programación
-            href: how-to-programmatically-create-an-e-mail-item.md
-          - name: Enviar correo electrónico mediante programación
-            href: how-to-programmatically-send-e-mail-programmatically.md
-          - name: Realizar acciones al recibir un mensaje de correo electrónico mediante programación
-            href: how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md
-          - name: Guardar datos adjuntos de elementos de correo electrónico de Outlook mediante programación
-            href: how-to-programmatically-save-attachments-from-outlook-e-mail-items.md
-          - name: Adjuntar archivos a elementos de correo electrónico de Outlook mediante programación
-            href: how-to-programmatically-attach-files-to-outlook-e-mail-items.md
-          - name: Recuperar mensajes sin leer de la Bandeja de entrada mediante programación
-            href: how-to-programmatically-retrieve-unread-messages-from-the-inbox.md
-        - name: Trabajar con carpetas
-          href: working-with-folders.md
+            - name: ensamblados de interoperabilidad primarios de Office
+              href: office-primary-interop-assemblies.md
+            - name: Manifiestos de aplicación para soluciones de Office
+              href: application-manifests-for-office-solutions.md
+              items:
+                - name: <customHostSpecified> (Elemento)
+                  href: customhostspecified-element-office-development-in-visual-studio.md
+                - name: <addin> (Elemento)
+                  href: addin-element-office-development-in-visual-studio.md
+                - name: <entryPointsCollection> (Elemento)
+                  href: entrypointscollection-element-office-development-in-visual-studio.md
+                - name: <entryPoints> (Elemento)
+                  href: entrypoints-element-office-development-in-visual-studio.md
+                - name: <entryPoint> (Elemento)
+                  href: entrypoint-element-office-development-in-visual-studio.md
+                - name: <update> (Elemento)
+                  href: update-element-office-development-in-visual-studio.md
+                - name: <postActions> (Elemento)
+                  href: postactions-element-office-development-in-visual-studio.md
+                - name: <postAction> (Elemento)
+                  href: postaction-element-office-development-in-visual-studio.md
+                - name: <postActionData> (Elemento)
+                  href: postactiondata-element-office-development-in-visual-studio.md
+                - name: <application> (Elemento)
+                  href: application-element-office-development-in-visual-studio.md
+                - name: <customizations> (Elemento)
+                  href: customizations-element-office-development-in-visual-studio.md
+                - name: <customization> (Elemento)
+                  href: customization-element-office-development-in-visual-studio.md
+                - name: <document> (Elemento)
+                  href: document-element-office-development-in-visual-studio.md
+                - name: <appAddin> (Elemento)
+                  href: appaddin-element-office-development-in-visual-studio.md
+                - name: <friendlyName> (Elemento)
+                  href: friendlyname-element-office-development-in-visual-studio.md
+                - name: <description> Elemento
+                  href: description-element-office-development-in-visual-studio.md
+                - name: <formRegions> (Elemento)
+                  href: formregions-element-office-development-in-visual-studio.md
+                - name: <formRegion> (Elemento)
+                  href: formregion-element-office-development-in-visual-studio.md
+                - name: <vstoRuntime> (Elemento)
+                  href: vstoruntime-element-office-development-in-visual-studio.md
+            - name: Manifiestos de implementación para soluciones de Office
+              href: deployment-manifests-for-office-solutions.md
+            - name: Referencia de interfaz de usuario (desarrollo de Office en Visual Studio)
+              href: user-interface-reference-office-development-in-visual-studio.md
+              items:
+                - name: 'Teclado de Microsoft Office Word, Configuración de teclado de Microsoft Office, cuadro de diálogo Opciones'
+                  href: microsoft-office-word-keyboard-microsoft-office-keyboard-settings-options-dialog-box.md
+                - name: 'Teclado de Microsoft Office Excel, Configuración de teclado de Microsoft Office, cuadro de diálogo Opciones'
+                  href: microsoft-office-excel-keyboard-microsoft-office-keyboard-settings-options-dialog-box.md
+                - name: 'Actualización de proyecto, cuadro de diálogo Opciones'
+                  href: project-upgrade-options-dialog-box.md
+                - name: 'Publicar (página), Diseñador de proyectos (Desarrollo de Office en Visual Studio)'
+                  href: publish-page-project-designer-office-development-in-visual-studio.md
+                - name: Asistente para publicación (Desarrollo de Office en Visual Studio)
+                  href: publish-wizard-office-development-in-visual-studio.md
+            - name: Mensajes de error (Desarrollo de Office en Visual Studio)
+              href: error-messages-office-development-in-visual-studio.md
+              items:
+                - name: Microsoft Office no está instalado en este equipo
+                  href: microsoft-office-is-not-installed-on-this-computer.md
+                - name: El libro usado para crear este proyecto contiene controles ActiveX que el diseñador no puede cargar
+                  href: the-workbook-used-to-create-this-project-contains-activex-controls-that-the-designer-cannot-load.md
+                - name: Una o varias propiedades del archivo .ofs no son válidas para la clase de mensaje seleccionada
+                  href: one-or-more-properties-in-the-dot-ofs-file-are-not-valid-for-the-message-class-selected.md
+                - name: Habilitar el acceso a VBA para crear o abrir un proyecto de Visual Studio Tools para Microsoft Office System
+                  href: enable-access-to-vba-to-create-or-open-a-visual-studio-tools-for-office-system-project.md
+        - name: Referencia administrada (desarrollo de Office en Visual Studio)
+          href: managed-reference-office-development-in-visual-studio.md
+        - name: Referencia de la API administrada (desarrollo de Office en Visual Studio)
+          href: unmanaged-api-reference-office-development-in-visual-studio.md
           items:
-          - name: Buscar en una carpeta específica mediante programación
-            href: how-to-programmatically-search-within-a-specific-folder.md
-          - name: Recuperar una carpeta por nombre mediante programación
-            href: how-to-programmatically-retrieve-a-folder-by-name.md
-          - name: Asociar una página web a una carpeta de Outlook mediante programación
-            href: how-to-programmatically-associate-a-web-page-with-an-outlook-folder.md
-          - name: Crear elementos de carpeta personalizados mediante programación
-            href: how-to-programmatically-create-custom-folder-items.md
-          - name: Mover elementos en Outlook mediante programación
-            href: how-to-programmatically-move-items-in-outlook.md
-        - name: Trabajar con elementos del calendario
-          href: working-with-calendar-items.md
-          items:
-          - name: Crear citas mediante programación
-            href: how-to-programmatically-create-appointments.md
-          - name: Eliminar citas mediante programación
-            href: how-to-programmatically-delete-appointments.md
-          - name: Crear un calendario personalizado mediante programación
-            href: how-to-programmatically-create-a-custom-calendar.md
-          - name: Crear una convocatoria de reunión mediante programación
-            href: how-to-programmatically-create-a-meeting-request.md
-        - name: Determinar el elemento actual de Outlook mediante programación
-          href: how-to-programmatically-determine-the-current-outlook-item.md
-      - name: Creating Outlook Form Regions
-        href: creating-outlook-form-regions.md
-        items:
-        - name: Instrucciones para crear áreas de formulario de Outlook
-          href: guidelines-for-creating-outlook-form-regions.md
-        - name: Agregar un área de formulario a un proyecto de complemento de Outlook
-          href: how-to-add-a-form-region-to-an-outlook-add-in-project.md
-        - name: Asociar un área de formulario a una clase de mensaje de Outlook
-          href: associating-a-form-region-with-an-outlook-message-class.md
-        - name: 'Tutorial: Diseñar un área de formulario de Outlook'
-          href: walkthrough-designing-an-outlook-form-region.md
-        - name: 'Tutorial: Importar un área de formulario diseñada en Outlook'
-          href: walkthrough-importing-a-form-region-that-is-designed-in-outlook.md
-        - name: Obtener acceso a un área de formulario en tiempo de ejecución
-          href: accessing-a-form-region-at-run-time.md
-        - name: Evitar que Outlook muestre un área de formulario
-          href: how-to-prevent-outlook-from-displaying-a-form-region.md
-        - name: Acciones personalizadas en áreas de formulario de Outlook
-          href: custom-actions-in-outlook-form-regions.md
-      - name: 'Tutorial: Crear el primer complemento VSTO de Outlook'
-        href: walkthrough-creating-your-first-vsto-add-in-for-outlook.md
-    - name: Soluciones de PowerPoint
-      href: powerpoint-solutions.md
-      items:
-      - name: 'Tutorial: Crear el primer complemento VSTO de PowerPoint'
-        href: walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md
-    - name: Soluciones de Project
-      href: project-solutions.md
-      items:
-      - name: 'Tutorial: Crear el primer complemento VSTO de Project'
-        href: walkthrough-creating-your-first-vsto-add-in-for-project.md
-    - name: Soluciones de Visio
-      href: visio-solutions.md
-      items:
-      - name: Información general sobre el modelo de objetos de Visio
-        href: visio-object-model-overview.md
-      - name: Trabajar con documentos de Visio
-        href: working-with-visio-documents.md
-        items:
-        - name: Crear nuevos documentos de Visio mediante programación
-          href: how-to-programmatically-create-new-visio-documents.md
-        - name: Abrir documentos de Visio mediante programación
-          href: how-to-programmatically-open-visio-documents.md
-        - name: Cerrar documentos de Visio mediante programación
-          href: how-to-programmatically-close-visio-documents.md
-        - name: Guardar documentos de Visio mediante programación
-          href: how-to-programmatically-save-visio-documents.md
-        - name: Imprimir documentos de Visio mediante programación
-          href: how-to-programmatically-print-visio-documents.md
-      - name: Trabajar con formas de Visio
-        href: working-with-visio-shapes.md
-        items:
-        - name: Agregar formas a un documento de Visio mediante programación
-          href: how-to-programmatically-add-shapes-to-a-visio-document.md
-        - name: Copiar y pegar formas en un documento de Visio mediante programación
-          href: how-to-programmatically-copy-and-paste-shapes-in-a-visio-document.md
-    - name: Soluciones de Word
-      href: word-solutions.md
-      items:
-      - name: Información general acerca del modelo de objetos de Word
-        href: word-object-model-overview.md
-        items:
-        - name: Trabajar con documentos
-          href: working-with-documents.md
-          items:
-          - name: Crear nuevos documentos mediante programación
-            href: how-to-programmatically-create-new-documents.md
-          - name: Abrir documentos existentes mediante programación
-            href: how-to-programmatically-open-existing-documents.md
-          - name: Cerrar documentos mediante programación
-            href: how-to-programmatically-close-documents.md
-          - name: Guardar documentos mediante programación
-            href: how-to-programmatically-save-documents.md
-          - name: Imprimir documentos mediante programación
-            href: how-to-programmatically-print-documents.md
-          - name: Mostrar documentos en Vista previa de impresión mediante programación
-            href: how-to-programmatically-display-documents-in-print-preview.md
-          - name: Usar cuadros de diálogo integrados en Word mediante programación
-            href: how-to-programmatically-use-built-in-dialog-boxes-in-word.md
-          - name: Usar cuadros de diálogo de Word en modo oculto mediante programación
-            href: how-to-programmatically-use-word-dialog-boxes-in-hidden-mode.md
-          - name: Agregar imágenes y Word Art a documentos mediante programación
-            href: how-to-programmatically-add-pictures-and-word-art-to-documents.md
-          - name: Proteger documentos y partes de documentos mediante programación
-            href: how-to-programmatically-protect-documents-and-parts-of-documents.md
-          - name: Revisar la ortografía en documentos mediante programación
-            href: how-to-programmatically-check-spelling-in-documents.md
-          - name: Agregar encabezados y pies de página a documentos mediante programación
-            href: how-to-programmatically-add-headers-and-footers-to-documents.md
-          - name: Quitar todos los comentarios de documentos mediante programación
-            href: how-to-programmatically-remove-all-comments-from-documents.md
-        - name: Trabajar con texto en documentos
-          href: working-with-text-in-documents.md
-          items:
-          - name: Definir y seleccionar rangos en documentos mediante programación
-            href: how-to-programmatically-define-and-select-ranges-in-documents.md
-          - name: Recuperar los caracteres inicial y final de los rangos mediante programación
-            href: how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md
-          - name: Excluir marcas de párrafo al crear rangos mediante programación
-            href: how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md
-          - name: Ampliar rangos en documentos mediante programación
-            href: how-to-programmatically-extend-ranges-in-documents.md
-          - name: Restablecer rangos en documentos de Word mediante programación
-            href: how-to-programmatically-reset-ranges-in-word-documents.md
-          - name: Contraer rangos o selecciones en documentos mediante programación
-            href: how-to-programmatically-collapse-ranges-or-selections-in-documents.md
-          - name: Insertar texto en documentos de Word mediante programación
-            href: how-to-programmatically-insert-text-into-word-documents.md
-          - name: Dar formato al texto en documentos mediante programación
-            href: how-to-programmatically-format-text-in-documents.md
-          - name: Actualizar texto de marcador mediante programación
-            href: how-to-programmatically-update-bookmark-text.md
-          - name: Buscar y reemplazar texto en documentos mediante programación
-            href: how-to-programmatically-search-for-and-replace-text-in-documents.md
-          - name: Establecer opciones de búsqueda en Word mediante programación
-            href: how-to-programmatically-set-search-options-in-word.md
-          - name: Recorrer los elementos encontrados en documentos mediante programación
-            href: how-to-programmatically-loop-through-found-items-in-documents.md
-          - name: Restaurar selecciones después de realizar búsquedas mediante programación
-            href: how-to-programmatically-restore-selections-after-searches.md
-          - name: Contar caracteres en documentos mediante programación
-            href: how-to-programmatically-count-characters-in-documents.md
-          - name: Ocultar texto en documentos mediante programación
-            href: how-to-programmatically-hide-text-in-documents.md
-          - name: Agregar comentarios al texto en documentos mediante programación
-            href: how-to-programmatically-add-comments-to-text-in-documents.md
-        - name: Trabajar con tablas
-          href: working-with-tables.md
-          items:
-          - name: Crear tablas de Word mediante programación
-            href: how-to-programmatically-create-word-tables.md
-          - name: Rellenar tablas de Word con propiedades de documento mediante programación
-            href: how-to-programmatically-populate-word-tables-with-document-properties.md
-          - name: Agregar filas y columnas a tablas de Word mediante programación
-            href: how-to-programmatically-add-rows-and-columns-to-word-tables.md
-          - name: Agregar texto y formato a celdas de tablas de Word mediante programación
-            href: how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md
-      - name: Automatizar Word con objetos extendidos
-        href: automating-word-by-using-extended-objects.md
-        items:
-        - name: Elemento host Document
-          href: document-host-item.md
-        - name: Controles de contenido
-          href: content-controls.md
-        - name: Bookmark (control)
-          href: bookmark-control.md
-        - name: XMLNode (Control)
-          href: xmlnode-control.md
-        - name: XMLNodes (Control)
-          href: xmlnodes-control.md
-        - name: Agregar controles de contenido a documentos de Word
-          href: how-to-add-content-controls-to-word-documents.md
-        - name: Agregar controles Bookmark a documentos de Word
-          href: how-to-add-bookmark-controls-to-word-documents.md
-        - name: Agregar controles XMLNode a documentos de Word
-          href: how-to-add-xmlnode-controls-to-word-documents.md
-        - name: Agregar controles XMLNodes a documentos de Word
-          href: how-to-add-xmlnodes-controls-to-word-documents.md
-        - name: Proteger partes de documentos mediante controles de contenido
-          href: how-to-protect-parts-of-documents-by-using-content-controls.md
-        - name: Cambiar el tamaño de los controles Bookmark
-          href: how-to-resize-bookmark-controls.md
-        - name: 'Tutorial: Crear una plantilla mediante controles de contenido'
-          href: walkthrough-creating-a-template-by-using-content-controls.md
-        - name: 'Tutorial: Enlazar controles de contenido a elementos XML personalizados'
-          href: walkthrough-binding-content-controls-to-custom-xml-parts.md
-        - name: 'Tutorial: Crear menús contextuales para marcadores'
-          href: walkthrough-creating-shortcut-menus-for-bookmarks.md
-      - name: 'Tutorial: Crear la primera personalización en el nivel de documento de Word'
-        href: walkthrough-creating-your-first-document-level-customization-for-word.md
-      - name: 'Tutorial: Crear el primer complemento VSTO de Word'
-        href: walkthrough-creating-your-first-vsto-add-in-for-word.md
-      - name: 'Tutorial: Agregar controles a un documento en tiempo de ejecución en un complemento VSTO'
-        href: walkthrough-adding-controls-to-a-document-at-run-time-in-a-vsto-add-in.md
-    - name: Compilar soluciones de Office
-      href: building-office-solutions.md
-    - name: Depurar proyectos de Office
-      href: debugging-office-projects.md
-    - name: Asegurar las soluciones de Office
-      href: securing-office-solutions.md
-      items:
-      - name: Otorgar confianza a las soluciones de Office
-        href: granting-trust-to-office-solutions.md
-      - name: Granting Trust to Documents
-        href: granting-trust-to-documents.md
-      - name: Implementación segura
-        href: secure-deployment.md
-      - name: Otorgar confianza a las soluciones de Office mediante listas de inclusión
-        href: trusting-office-solutions-by-using-inclusion-lists.md
-      - name: Configurar la seguridad de la lista de inclusión
-        href: how-to-configure-inclusion-list-security.md
-      - name: Consideraciones de seguridad específicas para soluciones de Office
-        href: specific-security-considerations-for-office-solutions.md
-      - name: Firmar soluciones de Office
-        href: how-to-sign-office-solutions.md
-      - name: Solucionar problemas de seguridad de soluciones de Office
-        href: troubleshooting-office-solution-security.md
-    - name: Implementar una solución de Office
-      href: deploying-an-office-solution.md
-      items:
-      - name: Implementar una solución de Office mediante ClickOnce
-        href: deploying-an-office-solution-by-using-clickonce.md
-      - name: Implementar una solución de Office mediante Windows Installer
-        href: deploying-an-office-solution-by-using-windows-installer.md
-      - name: Solucionar problemas de implementación de las soluciones de Office
-        href: troubleshooting-office-solution-deployment.md
-        items:
-        - name: Registro de eventos para soluciones de Office
-          href: event-logging-for-office-solutions.md
-    - name: Ejemplos y tutoriales
-      href: office-development-samples-and-walkthroughs.md
-      items:
-      - name: Ejemplos de desarrollo de Office
-        href: office-development-samples.md
-      - name: Tutoriales para Word
-        href: walkthroughs-using-word.md
-      - name: Tutoriales para Excel
-        href: walkthroughs-using-excel.md
-      - name: Los datos en los tutoriales de soluciones de Office
-        href: data-in-office-solutions-walkthroughs.md
-      - name: Tutoriales de personalización de la interfaz de usuario de Office
-        href: office-ui-customization-walkthroughs.md
-      - name: Tutoriales de seguridad e implementación
-        href: security-and-deployment-walkthroughs.md
-    - name: Referencia general (desarrollo de Office en Visual Studio)
-      href: general-reference-office-development-in-visual-studio.md
-      items:
-      - name: ensamblados de interoperabilidad primarios de Office
-        href: office-primary-interop-assemblies.md
-      - name: Manifiestos de aplicación para soluciones de Office
-        href: application-manifests-for-office-solutions.md
-        items:
-        - name: <customHostSpecified> (Elemento)
-          href: customhostspecified-element-office-development-in-visual-studio.md
-        - name: <addin> (Elemento)
-          href: addin-element-office-development-in-visual-studio.md
-        - name: <entryPointsCollection> (Elemento)
-          href: entrypointscollection-element-office-development-in-visual-studio.md
-        - name: <entryPoints> (Elemento)
-          href: entrypoints-element-office-development-in-visual-studio.md
-        - name: <entryPoint> (Elemento)
-          href: entrypoint-element-office-development-in-visual-studio.md
-        - name: <update> (Elemento)
-          href: update-element-office-development-in-visual-studio.md
-        - name: <postActions> (Elemento)
-          href: postactions-element-office-development-in-visual-studio.md
-        - name: <postAction> (Elemento)
-          href: postaction-element-office-development-in-visual-studio.md
-        - name: <postActionData> (Elemento)
-          href: postactiondata-element-office-development-in-visual-studio.md
-        - name: <application> (Elemento)
-          href: application-element-office-development-in-visual-studio.md
-        - name: <customizations> (Elemento)
-          href: customizations-element-office-development-in-visual-studio.md
-        - name: <customization> (Elemento)
-          href: customization-element-office-development-in-visual-studio.md
-        - name: <document> (Elemento)
-          href: document-element-office-development-in-visual-studio.md
-        - name: <appAddin> (Elemento)
-          href: appaddin-element-office-development-in-visual-studio.md
-        - name: <friendlyName> (Elemento)
-          href: friendlyname-element-office-development-in-visual-studio.md
-        - name: <description> Elemento
-          href: description-element-office-development-in-visual-studio.md
-        - name: <formRegions> (Elemento)
-          href: formregions-element-office-development-in-visual-studio.md
-        - name: <formRegion> (Elemento)
-          href: formregion-element-office-development-in-visual-studio.md
-        - name: <vstoRuntime> (Elemento)
-          href: vstoruntime-element-office-development-in-visual-studio.md
-      - name: Manifiestos de implementación para soluciones de Office
-        href: deployment-manifests-for-office-solutions.md
-      - name: Referencia de interfaz de usuario (desarrollo de Office en Visual Studio)
-        href: user-interface-reference-office-development-in-visual-studio.md
-        items:
-        - name: Teclado de Microsoft Office Word, Configuración de teclado de Microsoft Office, cuadro de diálogo Opciones
-          href: microsoft-office-word-keyboard-microsoft-office-keyboard-settings-options-dialog-box.md
-        - name: Teclado de Microsoft Office Excel, Configuración de teclado de Microsoft Office, cuadro de diálogo Opciones
-          href: microsoft-office-excel-keyboard-microsoft-office-keyboard-settings-options-dialog-box.md
-        - name: Actualización de proyecto, cuadro de diálogo Opciones
-          href: project-upgrade-options-dialog-box.md
-        - name: Publicar (página), Diseñador de proyectos (Desarrollo de Office en Visual Studio)
-          href: publish-page-project-designer-office-development-in-visual-studio.md
-        - name: Asistente para publicación (Desarrollo de Office en Visual Studio)
-          href: publish-wizard-office-development-in-visual-studio.md
-      - name: Mensajes de error (Desarrollo de Office en Visual Studio)
-        href: error-messages-office-development-in-visual-studio.md
-        items:
-        - name: Microsoft Office no está instalado en este equipo
-          href: microsoft-office-is-not-installed-on-this-computer.md
-        - name: El libro usado para crear este proyecto contiene controles ActiveX que el diseñador no puede cargar
-          href: the-workbook-used-to-create-this-project-contains-activex-controls-that-the-designer-cannot-load.md
-        - name: Una o varias propiedades del archivo .ofs no son válidas para la clase de mensaje seleccionada
-          href: one-or-more-properties-in-the-dot-ofs-file-are-not-valid-for-the-message-class-selected.md
-        - name: Habilitar el acceso a VBA para crear o abrir un proyecto de Visual Studio Tools para Microsoft Office System
-          href: enable-access-to-vba-to-create-or-open-a-visual-studio-tools-for-office-system-project.md
-    - name: Referencia administrada (desarrollo de Office en Visual Studio)
-      href: managed-reference-office-development-in-visual-studio.md
-    - name: Referencia de la API administrada (desarrollo de Office en Visual Studio)
-      href: unmanaged-api-reference-office-development-in-visual-studio.md
-      items:
-      - name: EnsureVSTOComponent (función)
-        href: ensurevstocomponent-function.md
-      - name: GetValidCompatibleFramework (función)
-        href: getvalidcompatibleframework-function.md
-      - name: GetVstoSolutionMetadata (función)
-        href: getvstosolutionmetadata-function.md
-      - name: interfaz IManagedAddin
-        href: imanagedaddin-interface.md
-        items:
-        - name: Load (Método)
-          href: imanagedaddin-load.md
-        - name: método Unload
-          href: imanagedaddin-unload.md
-      - name: IWefDebuggingSupport (Interfaz)
-        href: iwefdebuggingsupport-interface.md
-        items:
-        - name: GetAutoInsertExtensions (Método)
-          href: getautoinsertextensions-method.md
-        - name: SetWefProcessId (Método)
-          href: setwefprocessid-method.md
-  - name: Desarrollo de SharePoint en Visual Studio
-    href: ../sharepoint/toc.yml
-ms.openlocfilehash: d5857df04001e0a664e8ea5a0d4d83a4079931ca
-ms.sourcegitcommit: 159ed9d4f56cdc1dff2fd19d9dffafe77e46cd4e
-ms.translationtype: HT
-ms.contentlocale: es-ES
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53740291"
+            - name: EnsureVSTOComponent (función)
+              href: ensurevstocomponent-function.md
+            - name: GetValidCompatibleFramework (función)
+              href: getvalidcompatibleframework-function.md
+            - name: GetVstoSolutionMetadata (función)
+              href: getvstosolutionmetadata-function.md
+            - name: interfaz IManagedAddin
+              href: imanagedaddin-interface.md
+              items:
+                - name: Load (Método)
+                  href: imanagedaddin-load.md
+                - name: método Unload
+                  href: imanagedaddin-unload.md
+            - name: IWefDebuggingSupport (Interfaz)
+              href: iwefdebuggingsupport-interface.md
+              items:
+                - name: GetAutoInsertExtensions (Método)
+                  href: getautoinsertextensions-method.md
+                - name: SetWefProcessId (Método)
+                  href: setwefprocessid-method.md
+    - name: Desarrollo de SharePoint en Visual Studio
+      href: ../sharepoint/toc.yml

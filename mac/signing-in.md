@@ -6,11 +6,11 @@ ms.author: crdun
 ms.date: 04/02/2019
 ms.assetid: E4CFD03C-03AF-48CA-B409-6DB1CA45E991
 ms.openlocfilehash: fe3b3ce45f72028e6081a849a9b10cad7a9916b5
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857468"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62963638"
 ---
 # <a name="sign-in-to-visual-studio-for-mac"></a>Iniciar sesión en Visual Studio para Mac
 
@@ -48,5 +48,5 @@ Para agregar cuentas de usuario adicionales, elija el menú **Visual Studio > C
 
 ## <a name="see-also"></a>Vea también
 
-- [Inicio de sesión en Visual Studio (en Windows)](/visualstudio/ide/signing-in-to-visual-studio)
-- [Trabajo con varias cuentas de usuario (Visual Studio en Windows)](/visualstudio/ide/work-with-multiple-user-accounts)
+- [Iniciar sesión en Visual Studio (en Windows)](/visualstudio/ide/signing-in-to-visual-studio)
+- [Trabajar con varias cuentas de usuario (Visual Studio en Windows)](/visualstudio/ide/work-with-multiple-user-accounts)

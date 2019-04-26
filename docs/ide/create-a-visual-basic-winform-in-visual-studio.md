@@ -13,12 +13,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 511305bd335bfb982590db2c52c35fabbfc7b841
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 4619a56bfe052a1fb191af8edfd1cef8b376617b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856492"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62976815"
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-visual-basic"></a>Creación de una aplicación de Windows Forms en Visual Studio con Visual Basic
 
@@ -26,7 +26,7 @@ En esta breve introducción al entorno de desarrollo integrado de Visual Studio,
 
 ::: moniker range="vs-2017"
 
-Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) para instalarlo de forma gratuita.
+Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) para instalarlo de forma gratuita.
 
 ::: moniker-end
 
@@ -154,5 +154,5 @@ Ya hemos agregado un control de botón para crear una acción, así que ahora va
 
 ## <a name="see-also"></a>Vea también
 
-* [Inicio rápido: Creación de una aplicación de consola en Visual Studio con Visual Basic](quickstart-visual-basic-console.md)
-* [Más información sobre IntelliSense de Visual Basic](visual-basic-specific-intellisense.md)
+* [Inicio rápido: Creación de una aplicación de consola en Visual Studio con Visual Basic](quickstart-visual-basic-console.md)
+* [Más información sobre IntelliSense de Visual Basic](visual-basic-specific-intellisense.md)

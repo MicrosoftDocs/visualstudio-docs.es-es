@@ -8,11 +8,11 @@ ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 26A0DE31-2FBF-4E1B-99FB-083111AA1680
 ms.openlocfilehash: 3775e3fc4f391ea075a939a877fdab23f1eec1d2
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857507"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62983449"
 ---
 # <a name="creating-and-editing-a-custom-editorconfig-file"></a>Crear y editar un archivo EditorConfig personalizado
 
@@ -150,4 +150,4 @@ root = true
 
 ## <a name="see-also"></a>Vea también
 
-- [Create custom editor settings with EditorConfig (Visual Studio on Windows) (Creación de opciones de configuración del editor personalizadas con EditorConfig [Visual Studio en Windows])](/visualstudio/ide/create-portable-custom-editor-options)
+- [Crear opciones de configuración del editor personalizadas y portátiles con EditorConfig (Visual Studio en Windows)](/visualstudio/ide/create-portable-custom-editor-options)

@@ -11,12 +11,12 @@ ms.assetid: 7eb9290a-f9f6-4e41-9caa-796fcfaf0610
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c72eb3db36310efd69d18078ca43c1907697453b
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: dfcbac0bb9188826804ba13884f0f57962dddeab
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58414975"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979336"
 ---
 # <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>Procedimiento para enlazar un controlador de pruebas o un agente de pruebas a un adaptador de red
 
@@ -35,19 +35,19 @@ Si un equipo que tiene instalado el controlador de prueba o el software del agen
 
 ### <a name="to-obtain-the-ip-addresses-of-the-network-adapters"></a>Para obtener las direcciones IP de los adaptadores de red
 
-1.  En Microsoft Windows, elija **Inicio**, elija el cuadro **Iniciar búsqueda**, escriba **cmd** y, a continuación, presione **Entrar**.
+1. En Microsoft Windows, elija **Inicio**, elija el cuadro **Iniciar búsqueda**, escriba **cmd** y, a continuación, presione **Entrar**.
 
-2.  Escriba **ipconfig /all**.
+2. Escriba **ipconfig /all**.
 
      Se muestran las direcciones IP de los adaptadores de red. Anote la dirección IP del adaptador de red al que desee enlazar el controlador.
 
 ### <a name="to-bind-a-network-adapter-to-a-test-controller"></a>Para enlazar un adaptador de red a un controlador de pruebas, siga estos pasos:
 
-1.  En Microsoft Windows, elija **Inicio**, elija el cuadro **Iniciar búsqueda**, escriba **services.msc** y, a continuación, presione **Entrar**.
+1. En Microsoft Windows, elija **Inicio**, elija el cuadro **Iniciar búsqueda**, escriba **services.msc** y, a continuación, presione **Entrar**.
 
      Se mostrará el cuadro de diálogo **Servicios**.
 
-2.  En el panel de resultados, bajo la columna **Nombre**, haga clic con el botón derecho en el servicio **Visual Studio Test Controller** y, a continuación, elija **Detener**.
+2. En el panel de resultados, bajo la columna **Nombre**, haga clic con el botón derecho en el servicio **Visual Studio Test Controller** y, a continuación, elija **Detener**.
 
      o bien
 
@@ -55,9 +55,9 @@ Si un equipo que tiene instalado el controlador de prueba o el software del agen
 
      `net stop vsttcontroller`
 
-3.  Abra el archivo de configuración XML *QTCcontroller.exe.config* que se encuentra en *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\\\<edition>\Common7\IDE*.
+3. Abra el archivo de configuración XML *QTCcontroller.exe.config* que se encuentra en *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\\\<edition>\Common7\IDE*.
 
-4.  busque la etiqueta `<appSettings>`.
+4. busque la etiqueta `<appSettings>`.
 
     ```xml
     <appSettings>
@@ -71,14 +71,14 @@ Si un equipo que tiene instalado el controlador de prueba o el software del agen
     </appSettings>
     ```
 
-5.  Agregue la clave `BindTo` para especificar qué adaptador de red se va a usar en la sección `<appSettings>`.
+5. Agregue la clave `BindTo` para especificar qué adaptador de red se va a usar en la sección `<appSettings>`.
 
     ```xml
             <add key="BindTo" value="<YOUR IP ADDRESS>"/>
     </appSettings>
     ```
 
-6.  Inicie el servicio de controlador de pruebas. Para ello, ejecute el comando siguiente en un símbolo del sistema:
+6. Inicie el servicio de controlador de pruebas. Para ello, ejecute el comando siguiente en un símbolo del sistema:
 
     `net start vsttcontroller`
 
@@ -89,11 +89,11 @@ Si un equipo que tiene instalado el controlador de prueba o el software del agen
 
 ### <a name="to-bind-a-network-interface-card-to-a-test-agent"></a>Para enlazar una tarjeta de interfaz de red a un agente de prueba, siga estos pasos:
 
-1.  En Microsoft Windows, elija **Inicio**, elija el cuadro **Iniciar búsqueda**, escriba **services.msc** y, a continuación, presione **Entrar**.
+1. En Microsoft Windows, elija **Inicio**, elija el cuadro **Iniciar búsqueda**, escriba **services.msc** y, a continuación, presione **Entrar**.
 
     Se mostrará el cuadro de diálogo **Servicios**.
 
-2.  En el panel de resultados, bajo la columna **Nombre**, haga clic con el botón derecho en el servicio **Visual Studio Test Agent** y, a continuación, elija **Detener**.
+2. En el panel de resultados, bajo la columna **Nombre**, haga clic con el botón derecho en el servicio **Visual Studio Test Agent** y, a continuación, elija **Detener**.
 
      o bien
 
@@ -101,9 +101,9 @@ Si un equipo que tiene instalado el controlador de prueba o el software del agen
 
      **net stop vsttagent**
 
-3.  Abra el archivo de configuración XML *QTAgentService.exe.config* que se encuentra en *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\\\<edition>\Common7\IDE*.
+3. Abra el archivo de configuración XML *QTAgentService.exe.config* que se encuentra en *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\\\<edition>\Common7\IDE*.
 
-4.  busque la etiqueta `<appSettings>`.
+4. busque la etiqueta `<appSettings>`.
 
     ```xml
     <appSettings>
@@ -117,14 +117,14 @@ Si un equipo que tiene instalado el controlador de prueba o el software del agen
     </appSettings>  </appSettings>
     ```
 
-5.  Agregue la clave `BindTo` para especificar qué adaptador de red se va a usar en la sección `<appSettings>`.
+5. Agregue la clave `BindTo` para especificar qué adaptador de red se va a usar en la sección `<appSettings>`.
 
     ```xml
             <add key="BindTo" value="<YOUR IP ADDRESS>"/>
     </appSettings>
     ```
 
-6.  Inicie el servicio de agente de prueba. Para ello, ejecute el comando siguiente en un símbolo del sistema:
+6. Inicie el servicio de agente de prueba. Para ello, ejecute el comando siguiente en un símbolo del sistema:
 
     `net start vsttagent`
 

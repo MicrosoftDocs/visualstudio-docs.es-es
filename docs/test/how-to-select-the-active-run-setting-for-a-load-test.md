@@ -8,14 +8,14 @@ ms.assetid: ed6ff546-acfa-4dd8-b3a2-6e7455930ca4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 768695338f77943e44d5e1883ce5da9d9a6bc307
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 12582aa4c1aa41aa0a38f652cf4841ba1f9953e1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55916692"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949950"
 ---
-# <a name="how-to-select-the-active-run-setting-for-a-load-test"></a>Filtrar para seleccionar el parámetro de ejecución activo de una prueba de carga
+# <a name="how-to-select-the-active-run-setting-for-a-load-test"></a>Procedimiento para seleccionar el parámetro de ejecución activo de una prueba de carga
 
 Después de crear la prueba de carga con el **Asistente para prueba de carga nueva**, puede usar el **Editor de pruebas de carga** para cambiar las propiedades de los escenarios de modo que satisfagan las necesidades y los objetivos de la prueba.
 
@@ -32,11 +32,11 @@ En el **Editor de pruebas de carga**, el parámetro de ejecución activo se iden
 
 ## <a name="select-the-active-run-setting"></a>Seleccionar el parámetro de ejecución activo
 
-1.  Abra una prueba de carga.
+1. Abra una prueba de carga.
 
-2.  Expanda la carpeta **Parámetros de ejecución**.
+2. Expanda la carpeta **Parámetros de ejecución**.
 
-3.  Haga clic con el botón derecho en el nodo de configuración de ejecución que desee activar y, a continuación, elija **Establecer como activa**.
+3. Haga clic con el botón derecho en el nodo de configuración de ejecución que desee activar y, a continuación, elija **Establecer como activa**.
 
      En el **Editor de pruebas de carga**, el nodo de parámetro de ejecución afectado se actualiza con el sufijo "[Active]".
 

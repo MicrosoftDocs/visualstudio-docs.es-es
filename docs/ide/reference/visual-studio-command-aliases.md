@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4ee8a41a6e72123a678cdf4be278a247cc3fa55e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928860"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62789127"
 ---
 # <a name="visual-studio-command-aliases"></a>Visual Studio Command Aliases
 
@@ -39,7 +39,7 @@ La tabla siguiente contiene una lista de los alias de comando de Visual Studio p
 |[Inspección rápida (Comando)](../../ide/reference/quick-watch-command.md)|??|Debug.Quickwatch|
 |Agregar nuevo proyecto|AddProj|File.AddNewProject|
 |[Alias (Comando)](../../ide/reference/alias-command.md)|Alias|Tools.Alias|
-|Ventana Automático|Automático|Debug.Autos|
+|Ventana Automático|Autos|Debug.Autos|
 |ventana Puntos de interrupción|bl|Debug.Breakpoints|
 |Alternar punto de interrupción|bp|Debug.ToggleBreakPoint|
 |Ventana Pila de llamadas|CallStack|Debug.CallStack|
@@ -115,10 +115,10 @@ La tabla siguiente contiene una lista de los alias de comando de Visual Studio p
 |Mosaico horizontal|TileH|Window.TileHorizontally|
 |Mosaico vertical|TileV|Window.TileVertically|
 |Alternar marcador|ToggleBook|Edit.ToggleBookmark|
-|Ventana Cuadro de herramientas|toolbox|View.Toolbox|
+|Ventana Cuadro de herramientas|cuadro de herramientas|View.Toolbox|
 |[Mostrar desensamblador (comando)](../../ide/reference/list-disassembly-command.md)|u|Debug.ListDisassembly|
 |Poner en mayúsculas|Ucase|Edit.MakeUppercase|
-|Deshacer|undo|Edit.Undo|
+|Undo|undo|Edit.Undo|
 |Quitar tabulación a la selección|Untabify|Edit.UntabifySelection|
 |Ventana Inspección|Watch|Debug.WatchN|
 |Alternar ajuste de línea|WordWrap|Edit.ToggleWordWrap|

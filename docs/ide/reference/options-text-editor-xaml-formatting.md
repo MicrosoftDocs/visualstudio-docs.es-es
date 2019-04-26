@@ -29,12 +29,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: f92dc12dfb9e9f8fb1ec3d3910edf7102342f69b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3ed364d9c8995a93acb0de8002bafefd603c2d71
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55920397"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62969259"
 ---
 # <a name="options-text-editor-xaml-formatting"></a>Opciones, editor de texto, XAML, formato
 
@@ -44,13 +44,13 @@ Use la página de propiedades **Formato** para especificar cómo se aplica forma
 
 El formato automático puede producirse al detectarse cualquiera de los siguientes eventos.
 
--   Al finalizar una etiqueta de cierre o sencilla.
+- Al finalizar una etiqueta de cierre o sencilla.
 
--   Al finalizar una etiqueta de inicio.
+- Al finalizar una etiqueta de inicio.
 
--   Al pegar desde el Portapapeles.
+- Al pegar desde el Portapapeles.
 
--   Al aplicar formato a los comandos de teclado.
+- Al aplicar formato a los comandos de teclado.
 
 Puede especificar qué eventos desencadenan el formato automático.
 
@@ -146,7 +146,6 @@ No se quitan las líneas vacías del contenido del elemento.
 
 ```xml
 <Grid>
-
 
 <Button Name="button1">Hello</Button>
 

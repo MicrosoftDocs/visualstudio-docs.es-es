@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Información detallada sobre qué suscripciones se ofrecen, las reglas que se aplican y cuántas suscripciones se ofrecen en MPN.
 searchscope: VS Subscription
-ms.openlocfilehash: b9445b3b990698b273145ab8791e03ee6690570b
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: c7e58cd53ccbab31e90f2fc73a07b1011473777e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843174"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62945406"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Suscripciones de Visual Studio ofrecidas a partners de Microsoft Partner Network (MPN)
 Los partners que hayan obtenido una competencia o que hayan adquirido el Action Pack en MPN pueden optar a usar suscripciones de Visual Studio. Estas suscripciones se proporcionan con licencia por usuario y son válidas solo si están asignadas a un determinado nombre de usuario que trabaja en la compañía asociada.
@@ -43,7 +43,6 @@ Independientemente de cuántas competencias obtenga un partner, el número de su
 | Ventaja máxima para partners con competencias solo Silver                   | Ventaja máxima para partners con al menos una competencia Gold               |
 |------------------------------------------------------------------------------|------------------------------------------------------------------------------|
 | 25 suscripciones de Visual Studio Enterprise por país; 75 en todo el mundo          | 50 suscripciones de Visual Studio Enterprise por país; 150 en todo el mundo         |
-
 
 ## <a name="subscriptions-for-partners-purchasing-the-action-pack"></a>Suscripciones para partners que adquieren el Action Pack
 Los partners con una competencia no pueden adquirir el Action Pack. Solo se puede adquirir un Action Pack por partner.

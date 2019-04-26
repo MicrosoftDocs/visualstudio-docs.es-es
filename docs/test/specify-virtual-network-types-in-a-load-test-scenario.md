@@ -12,12 +12,12 @@ ms.assetid: 3c4f7874-081a-4ec4-9510-4d6d7d863a11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 896a493701f0fff2c5ecf6057831e9092cd28a1d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8444fa5910658ab92643b2110483efc059560674
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925506"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62990658"
 ---
 # <a name="specify-virtual-network-types-in-a-load-test-scenario"></a>Especificar tipos de redes virtuales en un escenario de prueba de carga
 
@@ -41,17 +41,17 @@ Para más información, consulte [Control de combinaciones](../test/specify-virt
 
 Visual Studio usa emulación de red verdadera basada en software para todos los tipos de pruebas, incluidas las pruebas de carga. La emulación de red verdadera simula las condiciones de la red por manipulación directa de los paquetes de red. El emulador de red verdadera puede emular el comportamiento de las redes cableadas e inalámbricas utilizando un vínculo físico confiable, como Ethernet. En la emulación de red verdadera se incorporan los siguientes atributos de red:
 
--   Tiempo de ida y vuelta por la red (latencia)
+- Tiempo de ida y vuelta por la red (latencia)
 
--   Cantidad de ancho de banda disponible
+- Cantidad de ancho de banda disponible
 
--   Comportamiento de puesta en cola
+- Comportamiento de puesta en cola
 
--   Pérdida de paquetes
+- Pérdida de paquetes
 
--   Reordenación de paquetes
+- Reordenación de paquetes
 
--   Propagaciones de errores.
+- Propagaciones de errores.
 
 La emulación de red verdadera también proporciona flexibilidad en el filtrado de paquetes de red en función de las direcciones IP o de protocolos como TCP, UDP e ICMP.
 
@@ -59,30 +59,30 @@ Los desarrolladores y evaluadores de aplicaciones basados en red pueden utilizar
 
 ## <a name="to-add-new-networks-to-a-scenario"></a>Para agregar nuevas redes a un escenario
 
-1.  Durante el proceso de especificación de la combinación de redes para un escenario, elija **Agregar**.
+1. Durante el proceso de especificación de la combinación de redes para un escenario, elija **Agregar**.
 
      Se agregará una nueva entrada de red a la cuadrícula.
 
     > [!NOTE]
     > Para mostrar el cuadro de diálogo **Editar combinación de redes**, haga clic con el botón derecho en un escenario existente y, luego, elija **Editar combinación de redes**.
 
-2.  En la columna **Tipo de red**, elija la flecha de la nueva entrada. Elija el tipo de red que desea.
+2. En la columna **Tipo de red**, elija la flecha de la nueva entrada. Elija el tipo de red que desea.
 
-3.  (Opcional) Ajuste el control de combinación para especificar la distribución de pruebas. Para más información, consulte [Control de combinaciones](../test/specify-virtual-network-types-in-a-load-test-scenario.md).
+3. (Opcional) Ajuste el control de combinación para especificar la distribución de pruebas. Para más información, consulte [Control de combinaciones](../test/specify-virtual-network-types-in-a-load-test-scenario.md).
 
-4.  Cuando haya terminado de agregar redes, elija **Aceptar**.
+4. Cuando haya terminado de agregar redes, elija **Aceptar**.
 
 ## <a name="to-remove-networks-from-a-scenario"></a>Para quitar redes de un escenario
 
-1.  Abra una prueba de carga.
+1. Abra una prueba de carga.
 
-2.  Haga clic con el botón derecho en el escenario del que quiere quitar una red y elija **Editar combinación de redes**. Aparecerá el cuadro de diálogo **Editar combinación de redes**.
+2. Haga clic con el botón derecho en el escenario del que quiere quitar una red y elija **Editar combinación de redes**. Aparecerá el cuadro de diálogo **Editar combinación de redes**.
 
-3.  Seleccione la red en la cuadrícula y, luego, elija **Quitar**.
+3. Seleccione la red en la cuadrícula y, luego, elija **Quitar**.
 
-4.  (Opcional) Ajuste el control de combinación para especificar la distribución de pruebas. Para más información, consulte [Control de combinaciones](../test/specify-virtual-network-types-in-a-load-test-scenario.md).
+4. (Opcional) Ajuste el control de combinación para especificar la distribución de pruebas. Para más información, consulte [Control de combinaciones](../test/specify-virtual-network-types-in-a-load-test-scenario.md).
 
-5.  Cuando termine de quitar redes, elija **Aceptar**.
+5. Cuando termine de quitar redes, elija **Aceptar**.
 
 ## <a name="about-the-mix-control"></a>Control de combinaciones
 

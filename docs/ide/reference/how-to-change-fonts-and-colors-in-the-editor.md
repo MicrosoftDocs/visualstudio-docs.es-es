@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b4fba419605dd332346885dbf93460c1a4e53c9d
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: f0ebc1e4707b0240791524cb0b6b4ba75be897cd
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223187"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62789597"
 ---
 # <a name="how-to-change-fonts-and-colors-for-the-editor-in-visual-studio"></a>Procedimiento Cambiar las fuentes y los colores del editor de Visual Studio
 
@@ -33,20 +33,20 @@ Puede cambiar la fuente predeterminada, ajustar el tamaño de fuente y cambiar l
 
 ## <a name="change-the-default-font-face-size-and-colors"></a>Cambiar la fuente predeterminada, el tamaño y los colores
 
-1.  Seleccione **Opciones** del menú **Herramientas** y, en la carpeta **Entorno**, seleccione **Fuentes y colores**.
+1. Seleccione **Opciones** del menú **Herramientas** y, en la carpeta **Entorno**, seleccione **Fuentes y colores**.
 
      Se abre [Fuentes y colores, Entorno, Opciones (Cuadro de diálogo)](../../ide/reference/fonts-and-colors-environment-options-dialog-box.md).
 
-2.  En **Mostrar configuración para**, seleccione **Editor de texto**.
+2. En **Mostrar configuración para**, seleccione **Editor de texto**.
 
-3.  Modifique las opciones **Fuente** y **Tamaño** para cambiar el nombre de fuente y el tamaño de todos los elementos de texto en todos los editores.
+3. Modifique las opciones **Fuente** y **Tamaño** para cambiar el nombre de fuente y el tamaño de todos los elementos de texto en todos los editores.
 
-4.  Seleccione el elemento apropiado en **Mostrar elementos** y, después, modifique las opciones **Primer plano del elemento** y **Fondo del elemento**.
+4. Seleccione el elemento apropiado en **Mostrar elementos** y, después, modifique las opciones **Primer plano del elemento** y **Fondo del elemento**.
 
     > [!TIP]
     > Haga clic en **Usar predeterminadas** para restablecer las opciones predeterminadas.
 
-5.  Haga clic en **Aceptar**.
+5. Haga clic en **Aceptar**.
 
 ## <a name="see-also"></a>Vea también
 

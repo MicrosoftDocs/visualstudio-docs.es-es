@@ -2041,7 +2041,7 @@
               href: unmanaged-address-physical.md
             - name: UNMANAGED_ADDRESS_THIS_RELATIVE
               href: unmanaged-address-this-relative.md
-        - name: Aplicaciones auxiliares de SDK para la depuración
+        - name: Asistentes de SDK para la depuración
           href: sdk-helpers-for-debugging.md
     - name: Glosario del depurador de Visual Studio
       href: visual-studio-debugger-glossary.md

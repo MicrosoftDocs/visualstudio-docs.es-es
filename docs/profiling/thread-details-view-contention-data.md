@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b778157b8e664280746f4d07423bfd67357a485
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 76adb2a5355800889939afd41075c261270b02aa
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56646270"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62968060"
 ---
 # <a name="thread-details-view---contention-data"></a>Vista Detalles del subproceso: datos de contención
 La vista Detalles del subproceso presenta un gráfico de escala de tiempo de los eventos de bloqueo en el subproceso seleccionado de una ejecución de generación de perfiles originados por las contenciones sobre recursos. Un evento de bloqueo se produce cuando el subproceso se ve obligado a suspender la ejecución porque otro subproceso ha bloqueado el acceso a un recurso.
@@ -28,19 +28,19 @@ La vista Detalles del subproceso presenta un gráfico de escala de tiempo de los
 
 #### <a name="to-zoom-in-on-a-timeline-segment"></a>Para acercar un segmento de la escala de tiempo
 
--   Haga clic y arrastre el puntero del mouse para seleccionar un área de la escala de tiempo.
+- Haga clic y arrastre el puntero del mouse para seleccionar un área de la escala de tiempo.
 
      Al soltar el mouse, la vista amplía el segmento de tiempo seleccionado. Puede repetir el proceso para ampliar con mayor detalle. El cuadro de desplazamiento de la barra de desplazamiento temporal representa el tamaño relativo del segmento de tiempo que se muestra en la vista.
 
 #### <a name="to-zoom-out-on-a-timeline"></a>Para alejar una escala de tiempo
 
--   Haga clic en **Alejar** para volver al nivel de zoom anterior.
+- Haga clic en **Alejar** para volver al nivel de zoom anterior.
 
--   Haga clic en **Restablecer zoom** para mostrar la escala de tiempo completa en la vista.
+- Haga clic en **Restablecer zoom** para mostrar la escala de tiempo completa en la vista.
 
 #### <a name="to-view-the-call-stack-of-an-event"></a>Para ver la pila de llamadas de un evento
 
--   En el gráfico de escala de tiempo, haga clic en la barra vertical que representa el evento.
+- En el gráfico de escala de tiempo, haga clic en la barra vertical que representa el evento.
 
 #### <a name="to-view-or-edit-the-source-code-of-a-function-in-the-call-stack"></a>Para ver o editar el código fuente de una función en la pila de llamadas
 
@@ -50,12 +50,12 @@ La vista Detalles del subproceso presenta un gráfico de escala de tiempo de los
 
 #### <a name="to-view-the-contention-events-of-a-resource-in-all-threads-in-the-profiling-run"></a>Para ver los eventos de contención de un recurso en todos los subprocesos de la ejecución de generación de perfiles
 
--   En el gráfico de escala de tiempo, haga clic en el nombre o identificador del recurso.
+- En el gráfico de escala de tiempo, haga clic en el nombre o identificador del recurso.
 
      Aparece la [vista Detalles de recursos](../profiling/resource-details-view-contention-data.md) para el recurso seleccionado.
 
 #### <a name="to-view-the-thread-contention-data-in-the-processes-window"></a>Para ver los datos de contención del subproceso en la ventana Procesos
 
--   En el gráfico de escala de tiempo, haga clic en **Total**.
+- En el gráfico de escala de tiempo, haga clic en **Total**.
 
      Aparece la [Vista Proceso](../profiling/process-view-contention-data.md) con el subproceso seleccionado.

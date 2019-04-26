@@ -12,15 +12,15 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 93771033dd83ae988340ed355066992990f22f50
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366840"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62961862"
 ---
 # <a name="step-6-use-the-polls-django-web-project-template"></a>Paso 6: Uso de la plantilla de proyecto web de Django de sondeos
 
-**Paso anterior: [Autenticación de los usuarios en Django](learn-django-in-visual-studio-step-05-django-authentication.md)**
+**Paso anterior: [Autenticación de usuarios en Django](learn-django-in-visual-studio-step-05-django-authentication.md)**
 
 Ahora que conoce la plantilla "Proyecto web de Django" de Visual Studio, podemos analizar la tercera plantilla de Django, "Proyecto web de Django de sondeos", que se basa en el mismo código base y demuestra el trabajo con una base de datos.
 

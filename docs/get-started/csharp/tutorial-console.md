@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: e35e3815ebb0fb4c8ed4aca376f519d9720a01b7
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 80b5021af7047725f4b8cb31f55bcbfea800cf93
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856786"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62971787"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Tutorial: Creación de una aplicación de consola de C# sencilla en Visual Studio
 
@@ -28,7 +28,7 @@ En este tutorial para C#, usará Visual Studio para crear y ejecutar una aplicac
 
 ::: moniker range="vs-2017"
 
-Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) para instalarlo de forma gratuita.
+Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) para instalarlo de forma gratuita.
 
 ::: moniker-end
 
@@ -597,9 +597,9 @@ namespace Calculator
 Enhorabuena por completar este tutorial. Para más información, continúe con los tutoriales siguientes.
 
 > [!div class="nextstepaction"]
-> [Continuar con más tutoriales de C#](/dotnet/csharp/tutorials/)
+> [Continuar con más tutoriales de C#](/dotnet/csharp/tutorials/)
 
 ## <a name="see-also"></a>Vea también
 
 * [IntelliSense para C#](../../ide/visual-csharp-intellisense.md)
-* [Más información sobre la depuración de código de C# con Visual Studio](tutorial-debugger.md)
+* [Información sobre cómo depurar código de C# con Visual Studio](tutorial-debugger.md)

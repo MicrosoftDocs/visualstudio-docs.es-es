@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: cae9138c881115651ebd9e862e912ff10da20d2f
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 54ebc36f9dd18010e07403c3b9692b62b2380d99
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416414"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62976324"
 ---
 # <a name="walkthrough-create-edit-and-maintain-a-coded-ui-test"></a>Tutorial: Crear, editar y mantener una prueba automatizada de IU
 
@@ -85,21 +85,21 @@ En este tutorial aprenderá a crear, editar y mantener una prueba automatizada d
 
 ### <a name="run-the-wpf-app"></a>Ejecutar la aplicación WPF
 
-1.  En el menú **Depurar**, seleccione **Iniciar depuración** o presione **F5**.
+1. En el menú **Depurar**, seleccione **Iniciar depuración** o presione **F5**.
 
-2.  Observe que el control de casilla está deshabilitado. Elija **Iniciar**.
+2. Observe que el control de casilla está deshabilitado. Elija **Iniciar**.
 
      En unos segundos, la barra de progreso debería ser 100% completado.
 
-3.  Ahora puede seleccionar el control de casilla.
+3. Ahora puede seleccionar el control de casilla.
 
-4.  Cierre SimpleWPFApp.
+4. Cierre SimpleWPFApp.
 
 ## <a name="create-a-shortcut-to-the-wpf-app"></a>Crear un acceso directo a la aplicación de WPF
 
-1.  Busque la aplicación SimpleWPFApp que creó anteriormente.
+1. Busque la aplicación SimpleWPFApp que creó anteriormente.
 
-2.  Cree un acceso directo en el escritorio a la aplicación SimpleWPFApp. Haga clic con el botón derecho en *SimpleWPFApp.exe* y elija **Copiar**. En el escritorio, haga clic con el botón derecho y elija **Pegar acceso directo**.
+2. Cree un acceso directo en el escritorio a la aplicación SimpleWPFApp. Haga clic con el botón derecho en *SimpleWPFApp.exe* y elija **Copiar**. En el escritorio, haga clic con el botón derecho y elija **Pegar acceso directo**.
 
     > [!TIP]
     > Un acceso directo a la aplicación facilita el poder agregar o modificar pruebas automatizadas de IU para la aplicación porque permite iniciar la aplicación rápidamente.
@@ -166,31 +166,31 @@ En este tutorial aprenderá a crear, editar y mantener una prueba automatizada d
 
 ## <a name="edit-and-rerun-the-coded-ui-test"></a>Editar y volver a ejecutar la prueba automatizada de IU
 
-1.  En la ventana **Explorador de pruebas**, seleccione la prueba con errores en la sección **Seguimiento de la pila** y elija el primer vínculo a **UIMap.SimpleAppTest()**.
+1. En la ventana **Explorador de pruebas**, seleccione la prueba con errores en la sección **Seguimiento de la pila** y elija el primer vínculo a **UIMap.SimpleAppTest()**.
 
-2.  Se abre el archivo *UIMap.Designer.cs* con el punto de error resaltado en el código:
+2. Se abre el archivo *UIMap.Designer.cs* con el punto de error resaltado en el código:
 
     ```csharp
     // Select 'CheckBox' check box
     uICheckBoxCheckBox.Checked = this.SimpleAppTestParams.UICheckBoxCheckBoxChecked;
     ```
 
-3.  Para corregir este problema, puede hacer que la prueba de IU codificada espere a que el control CheckBox esté habilitado antes de continuar en esta línea utilizando el método `WaitForControlEnabled()`.
+3. Para corregir este problema, puede hacer que la prueba de IU codificada espere a que el control CheckBox esté habilitado antes de continuar en esta línea utilizando el método `WaitForControlEnabled()`.
 
     > [!WARNING]
     > No modifique el archivo *UIMap.Designer.cs*. Cualquier cambio que se realice en el código se sobrescribirá cada vez que se genere código mediante **UIMap - Generador de pruebas automatizadas de IU**. Si tiene que modificar un método grabado, cópielo en el archivo *UIMap.cs* y cámbiele el nombre. El archivo *UIMap.cs* se puede usar para invalidar métodos y propiedades en el archivo *UIMapDesigner.cs*. Debe quitar la referencia al método original en el archivo *CodedUITest.cs* y reemplazarlo por el nombre del método cuyo nombre ha cambiado.
 
-4.  En el **Explorador de soluciones**, busque *UIMap.uitest* en el proyecto de prueba automatizada de IU.
+4. En el **Explorador de soluciones**, busque *UIMap.uitest* en el proyecto de prueba automatizada de IU.
 
-5.  Abra el menú contextual para *UIMap.uitest* y elija **Abrir**.
+5. Abra el menú contextual para *UIMap.uitest* y elija **Abrir**.
 
      La prueba de IU codificada se abre en el editor. Ahora puede ver y modificar la prueba de IU codificada.
 
-6.  En el panel **Acción de IU**, seleccione el método de prueba (SimpleAppTest) que quiere mover al archivo *UIMap.cs* o *UIMap.vb*. Si se mueve el método a otro archivo, se podrá agregar código personalizado que no se sobrescribirá cuando se vuelva a compilar el código de prueba.
+6. En el panel **Acción de IU**, seleccione el método de prueba (SimpleAppTest) que quiere mover al archivo *UIMap.cs* o *UIMap.vb*. Si se mueve el método a otro archivo, se podrá agregar código personalizado que no se sobrescribirá cuando se vuelva a compilar el código de prueba.
 
-7.  Elija el botón **Mover código** de la barra de herramientas del **Editor de pruebas automatizadas de IU**.
+7. Elija el botón **Mover código** de la barra de herramientas del **Editor de pruebas automatizadas de IU**.
 
-8.  Se abrirá el cuadro de diálogo Microsoft Visual Studio. Le advierte de que el método se va a mover del archivo *UIMap.uitest* al archivo *UIMap.cs* y ya no podrá modificarlo en el Editor de pruebas automatizadas de IU. Elija **Sí**.
+8. Se abrirá el cuadro de diálogo Microsoft Visual Studio. Le advierte de que el método se va a mover del archivo *UIMap.uitest* al archivo *UIMap.cs* y ya no podrá modificarlo en el Editor de pruebas automatizadas de IU. Elija **Sí**.
 
      El método de prueba se quita del archivo *UIMap.uitest* y ya no se muestra en el panel de acciones de la interfaz de usuario. Para editar el archivo de prueba que se ha movido, abra el archivo *UIMap.cs* en el **Explorador de soluciones**.
 
@@ -239,17 +239,17 @@ En este tutorial aprenderá a crear, editar y mantener una prueba automatizada d
 
 ## <a name="refactor-a-control-in-simplewpfapp"></a>Refactorizar un control en SimpleWPFApp
 
-1.  En el archivo *MainWindow.xaml*, en el diseñador, seleccione el control de botón.
+1. En el archivo *MainWindow.xaml*, en el diseñador, seleccione el control de botón.
 
-2.  En la parte superior de la ventana **Propiedades**, cambie el valor de la propiedad **Nombre** de **button1** a **buttonA**.
+2. En la parte superior de la ventana **Propiedades**, cambie el valor de la propiedad **Nombre** de **button1** a **buttonA**.
 
-3.  En el menú **Compilar** , elija **Compilar solución**.
+3. En el menú **Compilar** , elija **Compilar solución**.
 
-4.  En el **Explorador de pruebas**, ejecute **CodedUITestMethod1**.
+4. En el **Explorador de pruebas**, ejecute **CodedUITestMethod1**.
 
      La prueba no se supera porque la prueba de IU codificada no puede localizar el control de botón que se asignó originalmente en UIMap como button1. La refactorización puede impactar las pruebas de IU codificadas de esta manera.
 
-5.  En el **Explorador de pruebas**, en la sección **Seguimiento de la pila**, elija el primer vínculo al lado de **UIMpa.ModifiedSimpleAppTest()**.
+5. En el **Explorador de pruebas**, en la sección **Seguimiento de la pila**, elija el primer vínculo al lado de **UIMpa.ModifiedSimpleAppTest()**.
 
      Se abrirá el archivo *UIMap.cs*. El punto de error se resalta en el código:
 
@@ -264,29 +264,29 @@ En este tutorial aprenderá a crear, editar y mantener una prueba automatizada d
 
 ## <a name="map-refactored-control-rerun-the-test"></a>Asignar el control refactorizado y volver a ejecutar la prueba
 
-1.  En el archivo *CodedUITest1.cs*, en el método **CodedUITestMethod1()**, haga clic con el botón derecho, seleccione **Generar código para prueba automatizada de IU** y, después, elija **Usar generador de pruebas automatizadas de IU**.
+1. En el archivo *CodedUITest1.cs*, en el método **CodedUITestMethod1()**, haga clic con el botón derecho, seleccione **Generar código para prueba automatizada de IU** y, después, elija **Usar generador de pruebas automatizadas de IU**.
 
      Aparecerá **UIMap – Generador de pruebas automatizadas de IU**.
 
-2.  Use el acceso directo en el escritorio que creó anteriormente; ejecute la aplicación SimpleWPFApp que creó anteriormente.
+2. Use el acceso directo en el escritorio que creó anteriormente; ejecute la aplicación SimpleWPFApp que creó anteriormente.
 
-3.  En el cuadro de diálogo **UIMap – Generador de pruebas automatizadas de IU**, arrastre la herramienta en forma de cruz hacia el botón **Inicio** en SimpleWPFApp.
+3. En el cuadro de diálogo **UIMap – Generador de pruebas automatizadas de IU**, arrastre la herramienta en forma de cruz hacia el botón **Inicio** en SimpleWPFApp.
 
      El botón **Inicio** se encuentra en un cuadro azul. El **Generador de pruebas automatizadas de IU** tarda unos segundos en procesar los datos del control seleccionado y mostrar las propiedades del control. Observe que el valor de **AutomationUId** es **buttonA**.
 
-4.  En las propiedades para el control, elija la flecha de la esquina superior izquierda para expandir la asignación de controles de IU. Observe que **UIStartButton1** está seleccionado.
+4. En las propiedades para el control, elija la flecha de la esquina superior izquierda para expandir la asignación de controles de IU. Observe que **UIStartButton1** está seleccionado.
 
-5.  En la barra de herramientas, elija **Agregar control a la asignación de controles de IU**.
+5. En la barra de herramientas, elija **Agregar control a la asignación de controles de IU**.
 
      El estado en la parte inferior de la ventana comprueba la acción mostrando **El control seleccionado se ha agregado a la asignación de controles de IU**.
 
-6.  En el cuadro de diálogo **UIMap - Generador de pruebas automatizadas de IU**, elija **Generar código**.
+6. En el cuadro de diálogo **UIMap - Generador de pruebas automatizadas de IU**, elija **Generar código**.
 
      El cuadro de diálogo **Generador de pruebas automatizadas de IU - Generar código** aparece con una nota que indica que no se requiere ningún nuevo método y ese código únicamente se generará para los cambios a la asignación de controles de IU.
 
-7.  Elija **Generar**.
+7. Elija **Generar**.
 
-8.  Cierre SimpleWPFApp.
+8. Cierre SimpleWPFApp.
 
 9. Cierre **UIMap - Generador de pruebas automatizadas de IU**.
 

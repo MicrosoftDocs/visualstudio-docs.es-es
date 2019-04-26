@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 88ede32645c9fc761c476e9f4d45ddf11a7577a3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970743"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62934627"
 ---
 # <a name="set-current-thread-command"></a>Establecer subproceso actual (Comando)
 Establece el subproceso especificado como el subproceso actual.
