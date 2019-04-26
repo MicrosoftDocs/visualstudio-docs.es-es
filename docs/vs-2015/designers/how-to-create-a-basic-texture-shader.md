@@ -9,12 +9,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9dda948921c702367859afe32ad75a7998460587
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: dce20d3e1833659ebfec2e84e6bff7f86dff844e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048572"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438431"
 ---
 # <a name="how-to-create-a-basic-texture-shader"></a>Cómo: Crear un sombreador de textura básico
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ En este documento se muestra cómo usar el Diseñador de sombras y el lenguaje D
    La ilustración siguiente muestra el gráfico de sombreador completo y una vista previa del sombreador aplicado a un cubo.  
   
 > [!NOTE]
->  En esta ilustración, se usó un plano como la forma de vista previa y se especificó una textura para demostrar mejor el efecto del sombreador.  
+> En esta ilustración, se usó un plano como la forma de vista previa y se especificó una textura para demostrar mejor el efecto del sombreador.  
   
  ![Gráfico de sombreador y vista previa de su efecto](../designers/media/digit-texture-effect.png "Digit-Texture-Effect")  
   

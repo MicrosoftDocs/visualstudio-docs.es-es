@@ -11,12 +11,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f60f952b5784b0901c89f0c1f846ac39e6212a6b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: c375a015576202ff8e5d0f9815d534a81aa7b185
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660157"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441099"
 ---
 # <a name="accessibility-tips-and-tricks"></a>Sugerencias y trucos de accesibilidad
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "59660157"
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] incluye características de accesibilidad integradas que permiten trabajar con facilidad desde el teclado y usar lectores de pantalla u otros dispositivos de tecnología de asistencia. En este tema se incluyen algunas sugerencias con el fin de hacer [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] accesible, así como algunas combinaciones de teclas de método abreviado útiles.  
   
 > [!NOTE]
->  Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="save-your-ide-settings"></a>Guardar la configuración del IDE  
  Puede personalizar la experiencia del IDE si guarda el diseño de ventanas, el esquema de asignación de teclado y otras preferencias. Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  

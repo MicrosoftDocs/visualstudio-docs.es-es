@@ -17,12 +17,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3c83ebc4b2a58976f8848f4576d8b30ad7778db2
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 491d6c044b22a89e8ea61a78d5dd70e0a348b893
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650439"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441449"
 ---
 # <a name="command-window"></a>Ventana Comandos
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ La ventana **Comandos** se usa para ejecutar comandos o alias directamente en el
 |Desplazar hacia abajo la ventana.|Contenido de la ventana Comandos|FLECHA ABAJO o CTRL+FLECHA ABAJO|  
   
 > [!TIP]
->  Puede copiar todo o una parte del comando anterior en la línea de entrada desplazándose hasta él, resaltando todo o una parte de este y, después, presionando ENTRAR.  
+> Puede copiar todo o una parte del comando anterior en la línea de entrada desplazándose hasta él, resaltando todo o una parte de este y, después, presionando ENTRAR.  
   
 ## <a name="mark-mode"></a>Modo Marcar  
  Cuando hace clic en cualquier línea anterior de la ventana **Comandos**, cambia automáticamente al modo Marcar. Esto le permite seleccionar, editar y copiar el texto de los comandos anteriores como lo haría en cualquier editor de texto, y pegarlo en la línea actual.  
@@ -104,7 +104,7 @@ Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
 - `var[1-3]+` y `oldpar` son parámetros  
   
   > [!NOTE]
-  >  Cualquier comando, parámetro, modificador o valor que contenga espacios debe tener comillas dobles a cada lado.  
+  > Cualquier comando, parámetro, modificador o valor que contenga espacios debe tener comillas dobles a cada lado.  
   
   La posición de los modificadores y parámetros puede intercambiarse de manera libre en la línea de comandos con la excepción del comando [Shell](../../ide/reference/shell-command.md), que necesita sus modificadores y parámetros en un orden específico.  
   

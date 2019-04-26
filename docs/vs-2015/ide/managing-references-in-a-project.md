@@ -23,12 +23,12 @@ caps.latest.revision: 55
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e344fa63a9778d0db45ceeb0e313faa4c6448241
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: e4ac17ba5bc828e7974ced9519728aa5de15db94
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057101"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424538"
 ---
 # <a name="managing-references-in-a-project"></a>Administrar referencias en un proyecto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,10 +68,10 @@ Antes de escribir código en un componente externo o en un servicio conectado, e
 2. Vaya al sitio del proveedor del SDK de extensión no compatible e instale la versión del SDK de extensión con dependencias que son compatibles con la versión de la plataforma a la que está destinada su proyecto.  
   
     > [!NOTE]
-    >  Una forma de averiguar si un SDK de extensión tiene dependencias de otros SDK de extensión consiste en realizar los siguientes pasos: reinicie Visual Studio, cree un nuevo proyecto de la Tienda Windows en C#, haga clic con el botón derecho en el proyecto y elija **Agregar referencia**, vaya a la pestaña **Windows** y luego a la subpestaña **Extensiones** , seleccione el SDK de extensión y fíjese en el panel derecho del **Administrador de referencias**. Si tiene dependencias, se mostrarán allí.  
+    > Una forma de averiguar si un SDK de extensión tiene dependencias de otros SDK de extensión consiste en realizar los siguientes pasos: reinicie Visual Studio, cree un nuevo proyecto de la Tienda Windows en C#, haga clic con el botón derecho en el proyecto y elija **Agregar referencia**, vaya a la pestaña **Windows** y luego a la subpestaña **Extensiones** , seleccione el SDK de extensión y fíjese en el panel derecho del **Administrador de referencias**. Si tiene dependencias, se mostrarán allí.  
   
     > [!IMPORTANT]
-    >  Si el proyecto tiene como destino Windows 10 y el SDK de extensión instalado anteriormente tiene una dependencia del paquete en tiempo de ejecución de Microsoft Visual C++, la versión de dicho paquete que es compatible con Windows 10 es v14.0 y se instala con Visual Studio 2015.  
+    > Si el proyecto tiene como destino Windows 10 y el SDK de extensión instalado anteriormente tiene una dependencia del paquete en tiempo de ejecución de Microsoft Visual C++, la versión de dicho paquete que es compatible con Windows 10 es v14.0 y se instala con Visual Studio 2015.  
   
 3. Si el SDK de extensión que instaló en el paso anterior tiene dependencias de otros SDK de extensión, vaya a los sitios web de los proveedores de las dependencias e instale las versiones de estas dependencias que sean compatibles con la versión de la plataforma a la que está destinada su proyecto.  
   
@@ -89,9 +89,9 @@ Antes de escribir código en un componente externo o en un servicio conectado, e
 - Otros directorios del proyecto de la misma solución. (Puede encontrar estos ensamblados en la pestaña **Proyectos** ).  
   
 > [!NOTE]
->  Todos los proyectos contienen una referencia implícita a mscorlib. Los proyectos de Visual Basic contienen una referencia implícita a `Microsoft.VisualBasic`.  
+> Todos los proyectos contienen una referencia implícita a mscorlib. Los proyectos de Visual Basic contienen una referencia implícita a `Microsoft.VisualBasic`.  
 >   
->  Todos los proyectos de Visual Studio contienen una referencia implícita a `System.Core`, aun cuando `System.Core` se quite de la lista de referencias.  
+> Todos los proyectos de Visual Studio contienen una referencia implícita a `System.Core`, aun cuando `System.Core` se quite de la lista de referencias.  
   
 ## <a name="references-to-shared-components-at-run-time"></a>Referencias a componentes compartidos en tiempo de ejecución  
  En tiempo de ejecución, los componentes deben estar en la ruta de acceso de salida del proyecto o en la [Global Assembly Cache](http://msdn.microsoft.com/library/cf5eacd0-d3ec-4879-b6da-5fd5e4372202) (GAC). Si el proyecto contiene una referencia a un objeto que no está en una de estas ubicaciones, debe copiar la referencia a la ruta de acceso de salida del proyecto al compilar el proyecto. La propiedad <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> indica si es necesario realizar esta copia. Si el valor es **True**, la referencia se copia al directorio del proyecto al compilar el proyecto. Si el valor es **False**, la referencia no se copia.  
@@ -111,7 +111,7 @@ Antes de escribir código en un componente externo o en un servicio conectado, e
  Si tiene un proyecto que genera un ensamblado, debe hacer referencia al proyecto y no usar una referencia de archivo (ver abajo). La ventaja de una referencia de proyecto a proyecto es que crea una dependencia entre los proyectos en el sistema de compilación. El proyecto dependiente se compilará si ha cambiado desde la última vez que se compiló el proyecto que hace referencia. Una referencia a un archivo no crea una dependencia de compilación, por lo que es posible compilar el proyecto que hace referencia sin compilar el proyecto dependiente y la referencia puede quedar obsoleta. (Es decir, el proyecto puede hacer referencia a una versión previamente compilada del proyecto). Esto puede dar lugar a varias versiones de un solo archivo DLL que se requiere en el directorio bin, lo cual no es posible. Si se produce este conflicto, verá el mensaje [Advertencia: la dependencia "archivo" del proyecto "proyecto" no se puede copiar en el directorio de ejecución porque sobrescribiría la referencia "archivo"](../misc/warning-the-dependency-file-in-project-project-cannot-be-copied.md). Para obtener más información, consulte [Solucionar problemas de referencias rotas](../ide/troubleshooting-broken-references.md) y [Cómo: Crear y quitar dependencias del proyecto](../ide/how-to-create-and-remove-project-dependencies.md).  
   
 > [!NOTE]
->  Se crea una referencia de archivo en lugar de una referencia entre proyectos si la versión de destino de .NET Framework de un proyecto es la versión 4.5, y la del otro proyecto es la versión 2, 3, 3.5 o 4.0.  
+> Se crea una referencia de archivo en lugar de una referencia entre proyectos si la versión de destino de .NET Framework de un proyecto es la versión 4.5, y la del otro proyecto es la versión 2, 3, 3.5 o 4.0.  
   
 ## <a name="file-references"></a>Referencias de archivo  
  Las referencias de archivo son referencias directas a ensamblados fuera del contexto de un proyecto de Visual Studio. Puede crearlas en la pestaña **Examinar** del **Administrador de referencias**. Use una referencia de archivo cuando solo tenga un ensamblado o un componente, y no disponga del proyecto que lo crea como salida.  

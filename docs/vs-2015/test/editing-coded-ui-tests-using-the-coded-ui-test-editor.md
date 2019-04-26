@@ -12,12 +12,12 @@ ms.assetid: 76435c4b-593e-43a3-a9fe-709a7f9f5e0f
 caps.latest.revision: 42
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e25ce519510f9b003784806bf6055b19c11ba285
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 21acd0970415db23da330ece46131cde72cd706a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54793768"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60118011"
 ---
 # <a name="editing-coded-ui-tests-using-the-coded-ui-test-editor"></a>Editar pruebas de IU codificadas mediante el editor de pruebas de IU codificadas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,28 +26,28 @@ el Editor de pruebas de IU codificadas permite modificar fácilmente este tipo d
   
  **Requisitos**  
   
--   Visual Studio Enterprise  
+- Visual Studio Enterprise  
   
 ## <a name="why-should-i-do-this"></a>¿Por qué debo hacerlo?  
  El uso del editor de pruebas de IU codificadas es más rápido y eficaz que editar el código en los métodos de pruebas de IU codificadas con el editor de código. Con el editor de pruebas de IU codificadas puede usar la barra de herramientas y los menús contextuales para ubicar y modificar rápidamente los valores de propiedad asociados a acciones y controles de la interfaz de usuario. Por ejemplo, puede usar la barra de herramientas del editor de pruebas de IU codificadas para llevar a cabo los siguientes comandos:  
   
  ![Editor de pruebas de IU](../test/media/uitesteditor.png "UITestEditor")  
   
-1.  [Buscar](../ide/finding-and-replacing-text.md) le ayuda a localizar las acciones y los controles de la interfaz de usuario.  
+1. [Buscar](../ide/finding-and-replacing-text.md) le ayuda a localizar las acciones y los controles de la interfaz de usuario.  
   
-2.  [Eliminar](#CodedUITestEditor_DeleteUIActions) quita las acciones no deseadas de la interfaz de usuario.  
+2. [Eliminar](#CodedUITestEditor_DeleteUIActions) quita las acciones no deseadas de la interfaz de usuario.  
   
-3.  **Cambiar nombre** cambia los nombres de los controles y los métodos de prueba.  
+3. **Cambiar nombre** cambia los nombres de los controles y los métodos de prueba.  
   
-4.  **Propiedades** abre la ventana Propiedades del elemento seleccionado.  
+4. **Propiedades** abre la ventana Propiedades del elemento seleccionado.  
   
-5.  [Dividir en un método nuevo](#CodedUITestEditor_SplitMethods) permite modularizar las acciones de la interfaz de usuario.  
+5. [Dividir en un método nuevo](#CodedUITestEditor_SplitMethods) permite modularizar las acciones de la interfaz de usuario.  
   
-6.  [Mover código](#CodedUITestEditor_MoveMethods) agrega código personalizado a los métodos de prueba.  
+6. [Mover código](#CodedUITestEditor_MoveMethods) agrega código personalizado a los métodos de prueba.  
   
-7.  [Insertar retraso antes](#CodedUITestEditor_InsertDelay) agrega una pausa en milisegundos antes de una acción de interfaz de usuario.  
+7. [Insertar retraso antes](#CodedUITestEditor_InsertDelay) agrega una pausa en milisegundos antes de una acción de interfaz de usuario.  
   
-8.  [Buscar control de IU](#CodedUITestEditor_LocateUIControl) identifica la ubicación del control en la interfaz de usuario de la aplicación sometida a prueba.  
+8. [Buscar control de IU](#CodedUITestEditor_LocateUIControl) identifica la ubicación del control en la interfaz de usuario de la aplicación sometida a prueba.  
   
 9. [Localizar todos](#CodedUITestEditor_LocateDecendants) le ayuda a comprobar la propiedad del control y los cambios importantes efectuados en los controles de la aplicación.  
   
@@ -67,7 +67,7 @@ el Editor de pruebas de IU codificadas permite modificar fácilmente este tipo d
  *No veo* el editor de pruebas de IU codificadas.  
  Posiblemente usa una versión de Visual Studio Enterprise anterior a la 2012. El editor de pruebas de IU codificadas también estaba disponible en el Feature Pack 2 de Visual Studio 2010 con una suscripción a MSDN. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Microsoft Visual Studio 2010 Feature Pack 2](http://go.microsoft.com/fwlink/?LinkID=204119).  
   
-##  <a name="CodedUITestEditor_EditActionAndControlProperties"></a> Modificar las propiedades de las acciones de la interfaz de usuario y sus propiedades de control correspondientes  
+## <a name="CodedUITestEditor_EditActionAndControlProperties"></a> Modificar las propiedades de las acciones de la interfaz de usuario y sus propiedades de control correspondientes  
  Con el editor de pruebas de IU codificadas puede localizar y ver rápidamente todas las acciones de la interfaz de usuario en los métodos de prueba. Al seleccionar la acción de la interfaz de usuario en el editor, se resalta automáticamente el control correspondiente. Del mismo modo, si selecciona un control, se resaltan las acciones de la interfaz de usuario asociadas. Al seleccionar una acción de la interfaz de usuario o un control, es muy sencillo usar la ventana Propiedades para modificar las propiedades correspondientes.  
   
  ![Propiedades de acción de IU](../test/media/codeduiedituiaction.png "CodedUIEditUIAction")  
@@ -89,24 +89,24 @@ Editar las propiedades de los controles
  *¿Qué más debería saber?*  
  **Sugerencias**  
   
--   ![Sugerencia](../test/media/tip.png "Sugerencia") Si no se muestra la ventana Propiedades, mantenga pulsada la tecla **Alt** mientras presiona **ENTRAR** o, como alternativa, presione **F4**.  
+- ![Sugerencia](../test/media/tip.png "Sugerencia") Si no se muestra la ventana Propiedades, mantenga pulsada la tecla **Alt** mientras presiona **ENTRAR** o, como alternativa, presione **F4**.  
   
--   ![Sugerencia](../test/media/tip.png "Sugerencia") Para deshacer los cambios realizados en las propiedades, seleccione **Deshacer** en el menú **Editar** o presione Ctrl+Z.  
+- ![Sugerencia](../test/media/tip.png "Sugerencia") Para deshacer los cambios realizados en las propiedades, seleccione **Deshacer** en el menú **Editar** o presione Ctrl+Z.  
   
--   ![Sugerencia](../test/media/tip.png "Sugerencia") Puede usar el botón **Buscar** de la barra de herramientas del editor de pruebas automatizadas de IU para abrir la herramienta Buscar y reemplazar en Visual Studio. Después puede usar el control Buscar para localizar una acción de la interfaz de usuario en el editor de pruebas de IU codificadas. Por ejemplo, puede intentar buscar "Hacer clic en el botón 'Inicio de sesión'". Esto puede ser útil en las pruebas de gran tamaño. Tenga en cuenta que no puede usar la funcionalidad de reemplazo en la herramienta Buscar y reemplazar del editor de pruebas de IU codificadas. Para más información, vea el control Buscar en [Buscar y reemplazar texto](../ide/finding-and-replacing-text.md).  
+- ![Sugerencia](../test/media/tip.png "Sugerencia") Puede usar el botón **Buscar** de la barra de herramientas del editor de pruebas automatizadas de IU para abrir la herramienta Buscar y reemplazar en Visual Studio. Después puede usar el control Buscar para localizar una acción de la interfaz de usuario en el editor de pruebas de IU codificadas. Por ejemplo, puede intentar buscar "Hacer clic en el botón 'Inicio de sesión'". Esto puede ser útil en las pruebas de gran tamaño. Tenga en cuenta que no puede usar la funcionalidad de reemplazo en la herramienta Buscar y reemplazar del editor de pruebas de IU codificadas. Para más información, vea el control Buscar en [Buscar y reemplazar texto](../ide/finding-and-replacing-text.md).  
   
--   ![Sugerencia](../test/media/tip.png "Sugerencia") En ocasiones puede ser difícil visualizar dónde se ubican los controles en la interfaz de usuario de la aplicación sometida a prueba. Una de las capacidades del editor de pruebas de IU codificadas es que puede seleccionar un control de la asignación de controles de IU y ver su ubicación en la aplicación sometida a prueba. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Buscar un control de interfaz de usuario en la aplicación sometida a prueba](#CodedUITestEditor_LocateUIControl), que se encuentra en un apartado posterior de este tema.  
+- ![Sugerencia](../test/media/tip.png "Sugerencia") En ocasiones puede ser difícil visualizar dónde se ubican los controles en la interfaz de usuario de la aplicación sometida a prueba. Una de las capacidades del editor de pruebas de IU codificadas es que puede seleccionar un control de la asignación de controles de IU y ver su ubicación en la aplicación sometida a prueba. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Buscar un control de interfaz de usuario en la aplicación sometida a prueba](#CodedUITestEditor_LocateUIControl), que se encuentra en un apartado posterior de este tema.  
   
--   ![Sugerencia](../test/media/tip.png "Sugerencia") Es posible que sea necesario expandir el control de contenedor que contiene el control que quiere editar. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Buscar un control y sus descendientes](#CodedUITestEditor_LocateDecendants), que se encuentra en un apartado posterior de este tema.  
+- ![Sugerencia](../test/media/tip.png "Sugerencia") Es posible que sea necesario expandir el control de contenedor que contiene el control que quiere editar. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Buscar un control y sus descendientes](#CodedUITestEditor_LocateDecendants), que se encuentra en un apartado posterior de este tema.  
   
-##  <a name="CodedUITestEditor_DeleteUIActions"></a> Eliminar acciones de IU no deseadas  
+## <a name="CodedUITestEditor_DeleteUIActions"></a> Eliminar acciones de IU no deseadas  
  Puede quitar fácilmente las acciones de interfaz de usuario no deseadas en la prueba de IU codificada.  
   
  ![Eliminar acción de IU](../test/media/codeduideleteuiaction.png "CodedUIDeleteUIAction")  
   
  En el panel **Acción de IU** , expanda el método de prueba que contiene la acción de la interfaz de usuario que desea eliminar. Abra el menú contextual de la acción de la interfaz de usuario y elija **Eliminar**.  
   
-##  <a name="CodedUITestEditor_SplitMethods"></a> Dividir un método de prueba en dos métodos independientes  
+## <a name="CodedUITestEditor_SplitMethods"></a> Dividir un método de prueba en dos métodos independientes  
  Puede dividir un método de prueba para refinar o modularizar las acciones de la interfaz de usuario. Por ejemplo, la prueba podría tener un solo método de prueba con acciones de la interfaz de usuario en dos controles de contenedor. Las acciones de la interfaz de usuario podrían estar más modularizadas en dos métodos que se corresponden con un contenedor.  
   
  ![Dividir un método de prueba](../test/media/codeduitestsplitmethod1.png "CodedUITestSplitMethod1")  
@@ -120,7 +120,7 @@ Editar las propiedades de los controles
  *¿Qué más debería saber?*  
  **Problemas importantes**  
   
-- ![Icono Precaución](../test/media/caution.gif "precaución") **Advertencia:** Si divide un método, debe modificar todos los códigos que llamen al método existente para llamar también al método nuevo que va a crear, en el caso de que quiera seguir incluyendo dichas acciones de interfaz de usuario. Al dividir un método se abre un cuadro de diálogo de Microsoft Visual Studio. Le advierte que debe modificar cualquier código que llame al método existente para llamar también al método nuevo que va a crear. Elija **Sí**.  
+- ![Icono Precaución](../test/media/caution.gif "precaución") **advertencia:** Si divide un método, debe modificar todos los códigos que llamen al método existente para llamar también al método nuevo que va a crear, en el caso de que quiera seguir incluyendo dichas acciones de interfaz de usuario. Al dividir un método se abre un cuadro de diálogo de Microsoft Visual Studio. Le advierte que debe modificar cualquier código que llame al método existente para llamar también al método nuevo que va a crear. Elija **Sí**.  
   
   **Sugerencias**  
   
@@ -128,13 +128,13 @@ Editar las propiedades de los controles
   
 - ![Sugerencia](../test/media/tip.png "Sugerencia") Puede cambiar el nombre del método nuevo. Selecciónelo desde el panel Acciones de la interfaz de usuario y elija el botón **Cambiar nombre** de la barra de herramientas del editor de pruebas de IU codificadas.  
   
-   o bien  
+   -o bien-  
   
    Abra el menú contextual del nuevo método de prueba y elija **Cambiar nombre**.  
   
    Se abrirá el cuadro de diálogo Microsoft Visual Studio. Le advierte que debe modificar todos los códigos que hagan referencia al método. Elija **Sí**.  
   
-##  <a name="CodedUITestEditor_MoveMethods"></a> Mover un método de prueba al archivo UIMap para facilitar la personalización  
+## <a name="CodedUITestEditor_MoveMethods"></a> Mover un método de prueba al archivo UIMap para facilitar la personalización  
  Si determina que uno de los métodos de prueba de la prueba de la interfaz de usuario codificada requiere un código personalizado, debe moverlo al archivo UIMap.cs o UIMap.vb. De lo contrario, el código se sobrescribirá cada vez que se vuelva a compilar la prueba de IU codificada. Si no mueve el método, el código personalizado se sobrescribirá cada vez que se vuelva a compilar la prueba.  
   
  En el panel **Acción de IU** , seleccione el método de prueba que quiere mover al archivo UIMap.cs o UIMap.vb para facilitar la funcionalidad de código personalizado que no se sobrescribirá cuando se vuelva a compilar el código de prueba. Después, elija el botón **Mover código** , situado en la barra de herramientas del editor de pruebas de IU codificadas, o abra el menú contextual del método de prueba y elija **Mover código**. El método de prueba se quita del archivo UIMap.uitest y ya no se muestra en el panel de acciones de la interfaz de usuario. Para editar el archivo de prueba que ha movido, abra el archivo UIMap.cs o UIMap.vb desde el Explorador de soluciones.  
@@ -144,13 +144,13 @@ Editar las propiedades de los controles
  *¿Qué más debería saber?*  
  **Problemas importantes**  
   
-- ![Icono Precaución](../test/media/caution.gif "precaución") **Advertencia:** Una vez que haya movido un método, ya no puede modificarlo con el editor de pruebas automatizadas de IU. Debe agregar el código personalizado y mantenerlo con el Editor de código. Al mover un método se abre un cuadro de diálogo de Microsoft Visual Studio. Advierte de que el método se va a mover del archivo UIMap.uitest al archivo UIMap.cs o UIMap.vb y ya no podrá modificarlo en el editor de pruebas de IU codificadas. Elija **Sí**.  
+- ![Icono Precaución](../test/media/caution.gif "precaución") **advertencia:** Una vez que haya movido un método, ya no puede modificarlo con el editor de pruebas automatizadas de IU. Debe agregar el código personalizado y mantenerlo con el Editor de código. Al mover un método se abre un cuadro de diálogo de Microsoft Visual Studio. Advierte de que el método se va a mover del archivo UIMap.uitest al archivo UIMap.cs o UIMap.vb y ya no podrá modificarlo en el editor de pruebas de IU codificadas. Elija **Sí**.  
   
   **Sugerencias**  
   
 - ![Sugerencia](../test/media/tip.png "Sugerencia") Para deshacer el movimiento, seleccione **Deshacer** en el menú **Editar** o presione Ctrl+Z. Después también debe quitar el código manualmente desde el archivo UIMap.cs o UIMap.vb.  
   
-##  <a name="CodedUITestEditor_LocateUIControl"></a> Buscar un control de interfaz de usuario en la aplicación sometida a prueba  
+## <a name="CodedUITestEditor_LocateUIControl"></a> Buscar un control de interfaz de usuario en la aplicación sometida a prueba  
  En ocasiones puede ser difícil visualizar dónde se ubican los controles en la interfaz de usuario de la aplicación sometida a prueba. Una de las capacidades del editor de pruebas de IU codificadas es que puede seleccionar un control de la asignación de controles de IU y ver su ubicación en la aplicación sometida a prueba. También se puede usar la característica **Buscar control de IU** de la aplicación sometida a prueba para comprobar las modificaciones de propiedades de búsqueda que haya efectuado en un control.  
   
  ![Buscar control de IU](../test/media/codeduilocatecontrol.png "CodedUILocateControl")  
@@ -162,13 +162,13 @@ Editar las propiedades de los controles
  *¿Qué más debería saber?*  
  **Problemas importantes**  
   
-- ![Icono Precaución](../test/media/caution.gif "precaución") **Advertencia:** Antes de buscar un control de interfaz de usuario, compruebe que se esté ejecutando la aplicación asociada a la prueba.  
+- ![Icono Precaución](../test/media/caution.gif "precaución") **advertencia:** Antes de buscar un control de interfaz de usuario, compruebe que se está ejecutando la aplicación asociada a la prueba.  
   
   **Sugerencias**  
   
 - ![Sugerencia](../test/media/tip.png "Sugerencias") Como alternativa, puede usar la opción **Buscar todos** para comprobar que se puedan buscar correctamente todos los controles de un contenedor. Esta opción se describe en la siguiente sección.  
   
-##  <a name="CodedUITestEditor_LocateDecendants"></a> Buscar un control y sus descendientes  
+## <a name="CodedUITestEditor_LocateDecendants"></a> Buscar un control y sus descendientes  
  Puede comprobar que todos los controles de un contenedor se pueden buscar correctamente en la interfaz de usuario de la aplicación sometida a prueba. Esto puede resultar útil para comprobar los cambios en las propiedades de búsqueda que haya hecho en el contenedor. Además, si ha habido cambios significativos en la interfaz de usuario de la aplicación sometida a prueba, puede validar que las propiedades de búsqueda existentes del control sigan siendo correctas.  
   
  ![Buscar todos los controles descendientes](../test/media/codeduilocateall.png "CodedUILocateAll")  
@@ -180,9 +180,9 @@ Editar las propiedades de los controles
  *¿Qué más debería saber?*  
  **Problemas importantes**  
   
--   ![Icono Precaución](../test/media/caution.gif "precaución") **Advertencia:** Antes de buscar los controles de interfaz de usuario, compruebe que se esté ejecutando la aplicación asociada a la prueba.  
+- ![Icono Precaución](../test/media/caution.gif "precaución") **advertencia:** Antes de buscar los controles de interfaz de usuario, compruebe que se está ejecutando la aplicación asociada a la prueba.  
   
-##  <a name="CodedUITestEditor_InsertDelay"></a> Insertar un retraso antes de una acción de IU  
+## <a name="CodedUITestEditor_InsertDelay"></a> Insertar un retraso antes de una acción de IU  
  A veces, es posible que quiera que la prueba espere a que se produzcan ciertos eventos, como que se muestre una ventana, que se oculte la barra de progreso, etc. Con el editor de pruebas de IU codificadas puede hacerlo; para ello, inserte un retraso antes de una acción de la interfaz de usuario. Puede especificar el intervalo de retraso (en segundos).  
   
  ![Insertar retraso antes de una acción de IU](../test/media/codeduidelay.png "CodedUIDelay")  
@@ -205,7 +205,7 @@ Editar las propiedades de los controles
 ## <a name="external-resources"></a>Recursos externos  
   
 ### <a name="guidance"></a>Orientación  
- [Pruebas de entrega continua con Visual Studio 2012. Capítulo 2: Pruebas unitarias: Prueba del interior](http://go.microsoft.com/fwlink/?LinkID=255188)  
+ [Pruebas para entrega continua con Visual Studio 2012 – capítulo 2: Pruebas unitarias: Prueba del interior](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
 ### <a name="faq"></a>Preguntas más frecuentes  
  [Preguntas más frecuentes sobre las pruebas de IU codificadas - 1](http://go.microsoft.com/fwlink/?LinkID=230576)  
@@ -219,5 +219,5 @@ Editar las propiedades de los controles
  [Usar UI Automation para probar el código](../test/use-ui-automation-to-test-your-code.md)   
  [Crear pruebas de IU codificadas](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
  [Crear una prueba automatizada de IU controlada por datos](../test/creating-a-data-driven-coded-ui-test.md)   
- [Generar una prueba automatizada de IU a partir de la grabación de acciones existente](http://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497)   
- [Tutorial: Crear, modificar y mantener una prueba de IU codificada](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
+ [Generar una prueba de IU codificada a partir de la grabación de acciones existente](http://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497)   
+ [Tutorial: Crear, editar y mantener una prueba automatizada de IU](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)

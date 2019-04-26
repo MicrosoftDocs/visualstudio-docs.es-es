@@ -25,12 +25,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 93fd3bcff6fa16a4fb28521c58ff2caad6edafbb
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: efbdccf4d5774322b42a517831b22186103347b1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59667916"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430898"
 ---
 # <a name="mt-task"></a>MT (Tarea)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Incluye la herramienta Manifiesto de Microsoft (mt.exe). Para obtener más infor
  En la siguiente tabla se describen los parámetros de la tarea **MT**. La mayoría de los parámetros de tarea, así como algunos conjuntos de parámetros, corresponden a una opción de línea de comandos.  
   
 > [!NOTE]
->  La documentación de mt.exe usa un guion (**-**) como prefijo para las opciones de línea de comandos, pero en este tema se usa una barra diagonal (**/**). Se aceptan ambos prefijos.  
+> La documentación de mt.exe usa un guion (**-**) como prefijo para las opciones de línea de comandos, pero en este tema se usa una barra diagonal (**/**). Se aceptan ambos prefijos.  
   
 |Parámetro|Descripción|  
 |---------------|-----------------|  

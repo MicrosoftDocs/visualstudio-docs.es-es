@@ -19,12 +19,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a39a2ef42463bd781f6bb8a24e3cfbc10b937b90
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 74c08f7ee338a38267ba0b259fbd8cb207b64d71
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056073"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432309"
 ---
 # <a name="identifying-and-customizing-keyboard-shortcuts-in-visual-studio"></a>Identificar y personalizar métodos abreviados de teclado en Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ Puede identificar los métodos abreviados de teclado de los comandos de Visual S
   Si un método abreviado se asigna a un comando en el contexto Global y no a otros contextos, el método abreviado invocará siempre ese comando. Pero se puede asignar un método abreviado a un comando en el contexto Global y otro comando distinto en un contexto específico. Si utiliza ese método abreviado en el contexto específico, el método abreviado invoca el comando del contexto concreto, no el del contexto Global.
 
 > [!NOTE]
->  La configuración y edición de Visual Studio podría cambiar los nombres y las ubicaciones de los comandos de menú y las opciones que aparecen en los cuadros de diálogo. Este tema se basa en la **configuración general de desarrollo**.
+> La configuración y edición de Visual Studio podría cambiar los nombres y las ubicaciones de los comandos de menú y las opciones que aparecen en los cuadros de diálogo. Este tema se basa en la **configuración general de desarrollo**.
 
 ## <a name="bkmk_identify"></a> Identificar un método abreviado de teclado
 
@@ -91,12 +91,12 @@ Puede identificar los métodos abreviados de teclado de los comandos de Visual S
      Por ejemplo, puede elegir **Global** si quiere que el método abreviado funcione en todos los contextos. Puede usar cualquier método abreviado que no esté asignado (como Global) en otro editor. De lo contrario, el editor reemplaza el método abreviado.
 
     > [!NOTE]
-    >  No se pueden asignar las siguientes teclas a un método abreviado de teclado en **Global**: Imp Pant/Pet Sis, Bloq Despl, Pausa/Inter, Tab, Bloq Mayús, Ins, Inicio, Fin, Re Pág, Av Pág, la tecla del logotipo de Windows, la tecla de aplicación, cualquiera de las teclas de dirección o ENTRAR; Bloq Num o Supr en el teclado numérico; o CTRL+Alt+Supr.
+    > No se pueden asignar las siguientes teclas a un método abreviado de teclado en **Global**: Imp Pant/Pet Sis, Bloq Despl, Pausa/Inter, Tab, Bloq Mayús, Ins, Inicio, Fin, Re Pág, Av Pág, la tecla del logotipo de Windows, la tecla de aplicación, cualquiera de las teclas de dirección o ENTRAR; Bloq Num o Supr en el teclado numérico; o CTRL+Alt+Supr.
 
 6. En el cuadro **Presionar teclas de método abreviado**, especifique el método abreviado que quiere usar.
 
     > [!NOTE]
-    >  Puede crear un método abreviado que combine una letra con la tecla Alt, Ctrl o ambas. También puede crear un método abreviado que combine la tecla Mayús y una letra con la tecla Alt, Ctrl o ambas.
+    > Puede crear un método abreviado que combine una letra con la tecla Alt, Ctrl o ambas. También puede crear un método abreviado que combine la tecla Mayús y una letra con la tecla Alt, Ctrl o ambas.
 
      Si un método abreviado ya está asignado a otro comando, aparece en el cuadro **El método abreviado lo utiliza actualmente**. En ese caso, elija la tecla Retroceso para eliminar ese método abreviado antes de probar con otro.
 
@@ -105,7 +105,7 @@ Puede identificar los métodos abreviados de teclado de los comandos de Visual S
 7. Elija el botón **Asignar**.
 
     > [!NOTE]
-    >  Si especifica un método abreviado diferente para un comando, elija el botón **Asignar** y luego el botón **Cancelar**. El cuadro de diálogo se cierra, pero el cambio no se revierte.
+    > Si especifica un método abreviado diferente para un comando, elija el botón **Asignar** y luego el botón **Cancelar**. El cuadro de diálogo se cierra, pero el cambio no se revierte.
 
 ## <a name="bkmk_transfer"></a> Compartir métodos abreviados de teclado personalizados
  Puede compartir los métodos abreviados de teclado personalizados exportándolos a un archivo y proporcionando el archivo a otras personas para que puedan importar los datos.

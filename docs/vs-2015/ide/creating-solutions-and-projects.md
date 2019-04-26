@@ -18,12 +18,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d91263dc0f66c048e308505e461c8b1536b77a06
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 7fd6d8c63d8b0b56af20ac1211802524336d06bc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109821"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437574"
 ---
 # <a name="creating-solutions-and-projects"></a>Creating Solutions and Projects
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "60109821"
 Los proyectos son los contenedores lógicos de todo lo necesario para compilar la aplicación. Cuando se crea un proyecto eligiendo **Archivo &#124; Nuevo &#124; Proyecto** desde el menú principal, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] crea una solución que lo contiene. Después puede agregar otros proyectos nuevos o existentes a la solución si fuese necesario. Puede crear proyectos a partir de archivos de código existentes, así como proyectos temporales (solo .NET) que se eliminarán cuando ya no los necesite.  
   
 > [!NOTE]
->  Las descripciones de este tema se basan en Visual Studio Community. Los cuadros de diálogo y los comandos de menú que se ven pueden diferir de los aquí descritos, en función de la configuración o la edición de Visual Studio. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Las descripciones de este tema se basan en Visual Studio Community. Los cuadros de diálogo y los comandos de menú que se ven pueden diferir de los aquí descritos, en función de la configuración o la edición de Visual Studio. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="create-a-project-from-an-installed-project-template"></a>Crear un proyecto a partir de una plantilla de proyecto instalada  
  **Archivo &#124; Nuevo &#124; Proyecto** en el menú principal para que aparezca el cuadro de diálogo Nuevo proyecto. En el panel izquierdo en **Instalado &#124; Plantillas**, elija el lenguaje de programación y la plataforma o la tecnología y, después, elija una de las plantillas disponibles en el panel central.  
@@ -42,7 +42,7 @@ Los proyectos son los contenedores lógicos de todo lo necesario para compilar l
  Si tiene una colección de archivos de origen separados, puede crear fácilmente un proyecto que los contenga. Elija **Archivo &#124; Nuevo &#124; Proyecto a partir de código existente** para iniciar el **Asistente para crear proyectos a partir de archivos de código existentes** y siga las indicaciones.  
   
 > [!TIP]
->  Esta opción funciona mejor con recopilaciones de archivos relativamente simples.  
+> Esta opción funciona mejor con recopilaciones de archivos relativamente simples.  
   
 ## <a name="create-a-temporary-project-c-and-visual-basic"></a>Crear un proyecto temporal (C# y Visual Basic)  
  Cuando se trabaja con proyectos temporales, puede crear y experimentar con un proyecto .NET sin especificar una ubicación de disco. Al crear un proyecto, basta con seleccionar un tipo de proyecto y una plantilla y especificar un nombre en el cuadro de diálogo **Nuevo proyecto** . Cuando trabaje con el proyecto temporal, podrá guardarlo o descartarlo en cualquier momento.  
@@ -83,7 +83,7 @@ Los proyectos son los contenedores lógicos de todo lo necesario para compilar l
  Es posible eliminar una solución de forma permanente, pero sin usar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Antes de eliminar una solución, mueva cualquier proyecto que podría desear utilizar de nuevo en otra solución. A continuación, use el Explorador de archivos para eliminar el directorio que contiene los archivos de solución .sln y .suo.  
   
 > [!NOTE]
->  El archivo .suo es un archivo oculto que no aparece en la configuración predeterminada del Explorador de archivos.  
+> El archivo .suo es un archivo oculto que no aparece en la configuración predeterminada del Explorador de archivos.  
   
 ##### <a name="to-delete-a-solution"></a>Para eliminar una solución  
   

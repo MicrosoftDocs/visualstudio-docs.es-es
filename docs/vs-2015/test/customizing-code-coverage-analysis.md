@@ -8,12 +8,12 @@ ms.assetid: f6337c35-acae-4c5f-b5d9-ac5ff687ef18
 caps.latest.revision: 18
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 70e74c1c4d5b8cc93f4afaeebc74f5fc0579a692
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 404192923d25e3eccc0bb40064569bec3e6c6cec
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54768040"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059258"
 ---
 # <a name="customizing-code-coverage-analysis"></a>Personalizar el análisis de cobertura de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -183,11 +183,11 @@ De forma predeterminada, la herramienta de cobertura de código de Visual Studio
 ### <a name="to-customize-run-settings-in-a-command-line-test"></a>Para personalizar la configuración de ejecución en una prueba de la línea de comandos  
  Para ejecutar pruebas desde la línea de comandos, utilice vstest.console.exe. El archivo de configuración es un parámetro de esta utilidad. Para más información, vea [Usar VSTest.Console desde la línea de comandos](http://msdn.microsoft.com/library/852812d8-b3bb-407e-bc43-04d511fcb27a).  
   
-1.  Abra el símbolo del sistema de Visual Studio Developer:  
+1. Abra el símbolo del sistema de Visual Studio Developer:  
   
      En Windows, elija **Inicio**, **Todos los programas**, **Microsoft Visual Studio**, **Visual Studio Tools** y **Símbolo del sistema para desarrolladores**.  
   
-2.  Ejecute:  
+2. Ejecute:  
   
      `vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage /Settings:CodeCoverage.runsettings`  
   
@@ -202,13 +202,13 @@ De forma predeterminada, la herramienta de cobertura de código de Visual Studio
   
 3. En la página **Proceso**, expanda **Pruebas automatizadas**, **Origen de la prueba**, **Parámetros de ejecución**. Seleccione el archivo **.runsettings**.  
   
-   - <em>Pero aparece **Ensamblado de prueba</em>* en lugar de **Origen de la prueba**. Cuando intento establecer el campo **Parámetros de ejecución**, solo puedo seleccionar los archivos .testsettings.*  
+   - <em>Pero aparece **Ensamblado de prueba</em>* en lugar de **Origen de la prueba**. Cuando intento establecer el campo Parámetros de ejecución**, solo puedo seleccionar los archivos .testsettings.*  
   
       En **Pruebas automatizadas**, seleccione **Ensamblado de prueba** y haga clic en **[…]** al final de la línea. En el cuadro de diálogo **Agregar o editar serie de pruebas**, establezca **Ejecutor de pruebas** en **Ejecutor de pruebas de Visual Studio**.  
   
    Los resultados están visibles en la sección de resumen del informe de compilación.  
   
-##  <a name="sample"></a> Archivo de ejemplo .runsettings  
+## <a name="sample"></a> Archivo de ejemplo .runsettings  
  Copie el código y edítelo para satisfacer sus propias necesidades. Este es el archivo .runsettings predeterminado.  
   
  (Para otros usos del archivo .runsettings, vea [Configurar pruebas unitarias con un archivo .runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md)).  

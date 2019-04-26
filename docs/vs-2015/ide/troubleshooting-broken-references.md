@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ed23ea566bb27eaa8a315473fdf5345764ad5384
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 45a3f55e826133ce0fd55764e216824810ae45c4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113955"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443272"
 ---
 # <a name="troubleshooting-broken-references"></a>Troubleshooting Broken References
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Si la aplicación intenta usar una referencia rota, se genera un error de excepc
   A continuación se ofrecen soluciones a estos problemas.  
   
 > [!NOTE]
->  Se hace referencia a los archivos de los ensamblados mediante rutas de acceso absolutas en el archivo del proyecto. Por tanto, es posible que a los usuarios que trabajan en un entorno de varios desarrolladores les falte un ensamblado al que se hace referencia en su entorno local. Para evitar estos errores, en estos casos es mejor agregar referencias entre proyectos. Para obtener más información, consulte [Cómo: Agregar o quitar referencias utilizando el cuadro de diálogo Agregar referencia](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9) y [Programar con ensamblados](http://msdn.microsoft.com/library/25918b15-701d-42c7-95fc-c290d08648d6).  
+> Se hace referencia a los archivos de los ensamblados mediante rutas de acceso absolutas en el archivo del proyecto. Por tanto, es posible que a los usuarios que trabajan en un entorno de varios desarrolladores les falte un ensamblado al que se hace referencia en su entorno local. Para evitar estos errores, en estos casos es mejor agregar referencias entre proyectos. Para obtener más información, consulte [Cómo: Agregar o quitar referencias utilizando el cuadro de diálogo Agregar referencia](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9) y [Programar con ensamblados](http://msdn.microsoft.com/library/25918b15-701d-42c7-95fc-c290d08648d6).  
   
 ## <a name="reference-path-is-incorrect"></a>La ruta de acceso de referencia es incorrecta  
  Si los proyectos se comparten en equipos diferentes, es posible que no se encuentren algunas referencias cuando un componente se encuentra en un directorio diferente en cada equipo. Las referencias se almacenan con el nombre del archivo de componente (por ejemplo, MyComponent). Cuando se agrega una referencia a un proyecto, la ubicación de la carpeta del archivo de componente (por ejemplo, C:\MyComponents\\) se anexa a la propiedad del proyecto **ReferencePath**.  
@@ -50,7 +50,7 @@ Si la aplicación intenta usar una referencia rota, se genera un error de excepc
  Para corregir este problema, puede eliminar la referencia rota y después reemplazarla mediante el cuadro de diálogo Agregar referencia. Otra solución es usar el elemento **Reference Path** (Ruta de acceso de referencia) en las páginas de propiedades del proyecto y modificar las carpetas de la lista para que apunten a las ubicaciones correctas. La propiedad **Reference Path** se guarda para cada usuario en cada equipo. Por tanto, si modifica la ruta de acceso de referencia, esto no afecta a otros usuarios del proyecto.  
   
 > [!TIP]
->  Las referencias entre proyectos no tienen estos problemas. Por este motivo, úselas en lugar de las referencias de archivo, si es posible.  
+> Las referencias entre proyectos no tienen estos problemas. Por este motivo, úselas en lugar de las referencias de archivo, si es posible.  
   
 #### <a name="to-fix-a-broken-project-reference-by-correcting-the-reference-path"></a>Para reparar una referencia de proyecto rota mediante la corrección de la ruta de acceso de referencia  
   

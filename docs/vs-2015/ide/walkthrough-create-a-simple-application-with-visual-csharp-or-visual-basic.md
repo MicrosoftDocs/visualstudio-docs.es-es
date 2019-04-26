@@ -9,12 +9,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5286f79f55f2a09122fb551911162bd609ce3bb2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: b278e05ec19bc550d8c8c8c1258514cf63cd5f9f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040564"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436829"
 ---
 # <a name="walkthrough-create-a-simple-application-with-visual-c-or-visual-basic"></a>Tutorial: Crear una aplicación sencilla con Visual C# o Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Tras completar este tutorial, estará familiarizado con muchas de las herramient
  [Depurar y probar la aplicación](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md#BKMK_DebugTest)  
   
 > [!NOTE]
->  Este tutorial se basa en Visual Studio Professional, que proporciona la plantilla de aplicación WPF en la que creará el proyecto de este tutorial. Visual Studio Express para escritorio de Windows también proporciona esa plantilla, pero no así Visual Studio Express para Windows y Visual Studio Express para Web. Para obtener información preliminar sobre cómo usar Visual Studio Express para Windows, visite el [Centro de desarrollo de software para aplicaciones de la Tienda Windows](http://msdn.microsoft.com/windows/apps/br229519). Para obtener información preliminar sobre cómo usar Visual Studio Express para Web, consulte [Get Started with ASP.NET](http://www.asp.net/get-started)(Introducción a ASP.NET). Asimismo la edición de Visual Studio y la configuración que utilice determinan los nombres y las ubicaciones de algunos elementos de la interfaz de usuario. Consulte [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Este tutorial se basa en Visual Studio Professional, que proporciona la plantilla de aplicación WPF en la que creará el proyecto de este tutorial. Visual Studio Express para escritorio de Windows también proporciona esa plantilla, pero no así Visual Studio Express para Windows y Visual Studio Express para Web. Para obtener información preliminar sobre cómo usar Visual Studio Express para Windows, visite el [Centro de desarrollo de software para aplicaciones de la Tienda Windows](http://msdn.microsoft.com/windows/apps/br229519). Para obtener información preliminar sobre cómo usar Visual Studio Express para Web, consulte [Get Started with ASP.NET](http://www.asp.net/get-started)(Introducción a ASP.NET). Asimismo la edición de Visual Studio y la configuración que utilice determinan los nombres y las ubicaciones de algunos elementos de la interfaz de usuario. Consulte [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="BKMK_ConfigureIDE"></a> Configurar el IDE  
  Al iniciar Visual Studio por primera vez, Visual Studio le pedirá que inicie sesión con una cuenta de servicio de Microsoft (MSA). [Inicio de sesión en Visual Studio](http://blogs.msdn.com/b/visualstudio/archive/2013/06/28/welcome-sign-in-to-visual-studio.aspx). No es necesario iniciar sesión y puede hacerlo más tarde.  
@@ -109,7 +109,7 @@ Tras completar este tutorial, estará familiarizado con muchas de las herramient
     El**Explorador de soluciones** muestra que el nombre del archivo es ahora Greetings.xaml y, si expande el nodo MainWindow.xaml (poniendo el foco en el nodo y presionando la tecla flecha derecha), verá que el nombre de MainWindow.xaml.vb o MainWindow.xaml.cs es ahora Greetings.xaml.vb o Greetings.xaml.cs. Este archivo de código está anidado bajo el nodo del archivo .xaml para mostrar que están muy relacionados entre sí.  
   
    > [!WARNING]
-   >  Este cambio produce un error que aprenderá a depurar y corregir en un paso posterior.  
+   > Este cambio produce un error que aprenderá a depurar y corregir en un paso posterior.  
   
 2. En el **Explorador de soluciones**, abra Greetings.xaml en la vista del diseñador (presionando la tecla Entrar mientras el nodo tiene el foco) y seleccione la barra de título de la ventana con el mouse.  
   
