@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7873d54ecdf3ce96ab64d94e9b1864c7ef2904b0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 33dfcd989a71785918cf4d121e2a2624654a5101
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088267"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63405664"
 ---
 # <a name="how-to-display-line-numbers-in-the-editor"></a>Cómo: Mostrar los números de línea en el editor
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "60088267"
 Puede mostrar u ocultar la numeración de las líneas del código.  
   
 > [!NOTE]
->  Los cuadros de diálogo y los comandos de menú que aparecen pueden ser distintos a los aquí descritos, en función de los valores de configuración activos. Para cambiar su configuración, abra **Herramientas / Importar y exportar configuraciones**. Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Los cuadros de diálogo y los comandos de menú que aparecen pueden ser distintos a los aquí descritos, en función de los valores de configuración activos. Para cambiar su configuración, abra **Herramientas / Importar y exportar configuraciones**. Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="display-line-numbers-in-code"></a>Para mostrar los números de línea en el código  
  Los números de línea no se agregan al código; solo sirven de referencia. Si quiere imprimir los números de línea, en el cuadro de diálogo **Imprimir**, active la casilla **Incluir números de línea**.  
@@ -39,7 +39,7 @@ Puede mostrar u ocultar la numeración de las líneas del código.
 2. ![Opciones para mostrar números de línea en el editor](../../ide/reference/media/vs-displaylinenumbers.png "VS_DisplayLineNumbers")  
   
 > [!NOTE]
->  Según el lenguaje o los valores de configuración, puede que tenga que activar la casilla **Mostrar todas las configuraciones** en el cuadro de diálogo **Opciones** para ver el subnodo **Todos los lenguajes**.  
+> Según el lenguaje o los valores de configuración, puede que tenga que activar la casilla **Mostrar todas las configuraciones** en el cuadro de diálogo **Opciones** para ver el subnodo **Todos los lenguajes**.  
   
 ## <a name="see-also"></a>Vea también  
  [Personalizar el editor](../../ide/customizing-the-editor.md)   

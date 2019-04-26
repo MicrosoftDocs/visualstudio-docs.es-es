@@ -14,12 +14,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3fc21eb85c46d74fabc777147b14575babd9be8b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 861ce1cf40dd5c56c043399387ef51fa3b4efee2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113019"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412258"
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer"></a>Métodos abreviados de teclado y de mouse en el diagrama de clases y la ventana de detalles de clase (Diseñador de clases)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -92,7 +92,7 @@ Puede usar el teclado junto con el mouse para llevar a cabo acciones de navegaci
 ## <a name="KeyboardClassDetails"></a> Usar el teclado en la ventana Detalles de clase  
   
 > [!NOTE]
->  Se han elegido los siguientes enlaces de teclado para imitar la experiencia de escritura de código.  
+> Se han elegido los siguientes enlaces de teclado para imitar la experiencia de escritura de código.  
   
  Use las siguientes teclas para navegar por la ventana Detalles de clase:  
   
@@ -106,7 +106,7 @@ Puede usar el teclado junto con el mouse para llevar a cabo acciones de navegaci
 |Ctrl+Tab|Cambiar a otra ventana del documento. Por ejemplo, cambia de la ventana Detalles de clase a un archivo de código abierto.|  
 |ESC (Escape)|Si ha empezado a escribir texto en un campo, ESC actúa como tecla «deshacer» y restablece el contenido del campo a su valor anterior. Si la ventana Detalles de clase tiene el foco general sin que ninguna celda concreta tenga el foco, la tecla ESC quita el foco de la ventana Detalles de clase.|  
 |Flecha arriba y flecha abajo|Estas teclas mueven el cursor fila a fila, verticalmente, en la cuadrícula de la ventana Detalles de clase.|  
-| Flecha izquierda|Si el cursor está en la columna Nombre, al presionar la flecha izquierda se contrae el nodo actual de la jerarquía (si está abierto).|  
+|Flecha izquierda|Si el cursor está en la columna Nombre, al presionar la flecha izquierda se contrae el nodo actual de la jerarquía (si está abierto).|  
 |Flecha derecha|Si el cursor está en la columna Nombre, al presionar la flecha derecha se expande el nodo actual de la jerarquía (si está contraído).|  
   
 ## <a name="see-also"></a>Vea también  

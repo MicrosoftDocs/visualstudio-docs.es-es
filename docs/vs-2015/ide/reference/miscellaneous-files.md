@@ -21,12 +21,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: aadb6b0212f760ab16efd677e02e1d922ae52e12
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 266db8199160f58c62b7587f55029cff2bb26c29
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658503"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441701"
 ---
 # <a name="miscellaneous-files"></a>Archivos varios
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Tal vez desee usar los editores de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md
  La carpeta Archivos varios representa los archivos en forma de vínculos. Aunque esta carpeta no forme parte de la solución, cuando abra una solución, algunos o todos los archivos de esta carpeta que se abrieron la última vez que se cerró la solución volverán a abrirse, en función de los valores asignados a la carpeta.  
   
 > [!NOTE]
->  Algunos de los archivos que no aparecen en la carpeta Archivos varios son archivos que no se pueden modificar en el IDE, como los archivos .zip y .doc. El IDE no realizará el seguimiento de los archivos que sólo se pueden modificar con un editor externo.  
+> Algunos de los archivos que no aparecen en la carpeta Archivos varios son archivos que no se pueden modificar en el IDE, como los archivos .zip y .doc. El IDE no realizará el seguimiento de los archivos que sólo se pueden modificar con un editor externo.  
   
 ## <a name="commands-available-in-the-ide"></a>Comandos disponibles en el IDE  
  Los menús, las barras de herramientas y los comandos que contienen varían en función del formato del archivo que abra. Cuando abra un archivo de texto, por ejemplo, aparecerá la barra de herramientas correspondiente al Editor de texto y sus comandos quedarán disponibles. Si después abre un archivo de esquema XML, aparecerá la barra de herramientas del mismo nombre. Mientras edita el esquema XML, no podrá disponer de los comandos de barra de herramientas del Editor de textos (o de la propia barra de herramientas). El esquema XML es la ventana activa y, como tal, tiene un contexto de selección actual. Cuando cambie de un archivo de proyecto a un archivo de la carpeta de archivos varios, desaparecerán todos los comando relacionados con el proyecto y sólo permanecerán aquellos que estén directamente relacionados con los archivos de la carpeta de archivos varios.  

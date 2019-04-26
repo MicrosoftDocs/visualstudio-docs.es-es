@@ -10,12 +10,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 05153b7829281684ff9f27f2b5ac708903982b57
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 0e1fc8e9bcb6f70a2665303eb6cac353a3f87bd9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60072557"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435097"
 ---
 # <a name="how-to-unlock-visual-studio"></a>Cómo desbloquear Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Visual Studio se puede probar de forma gratuita durante 30 días. Si desea exten
 2. Escriba las credenciales de la cuenta (Microsoft, profesional o educativa). Visual Studio encontrará la suscripción a MSDN o a Visual Studio Team Services que está asociada con su cuenta.
 
 > [!IMPORTANT]
->  Visual Studio busca automáticamente las suscripciones en línea asociadas al conectarse a una cuenta de Visual Studio Team Services desde la ventana de herramientas de Team Explorer. Al conectarse a una cuenta de Visual Studio Team Services, puede iniciar sesión con la cuenta Microsoft o con la cuenta profesional o educativa. Si existe una suscripción en línea para esa cuenta de usuario, Visual Studio desbloqueará automáticamente el IDE.
+> Visual Studio busca automáticamente las suscripciones en línea asociadas al conectarse a una cuenta de Visual Studio Team Services desde la ventana de herramientas de Team Explorer. Al conectarse a una cuenta de Visual Studio Team Services, puede iniciar sesión con la cuenta Microsoft o con la cuenta profesional o educativa. Si existe una suscripción en línea para esa cuenta de usuario, Visual Studio desbloqueará automáticamente el IDE.
 
 ## <a name="to-unlock-visual-studio-with-a-product-key"></a>Para desbloquear Visual Studio con una clave de producto
 
@@ -43,7 +43,7 @@ Visual Studio se puede probar de forma gratuita durante 30 días. Si desea exten
 2. Escriba la clave de producto en el espacio para ello.
 
 > [!TIP]
->  Las versiones preliminares de Visual Studio no tienen claves de producto. Para poder usar esas versiones preliminares, debe iniciar sesión en el IDE.
+> Las versiones preliminares de Visual Studio no tienen claves de producto. Para poder usar esas versiones preliminares, debe iniciar sesión en el IDE.
 
 ## <a name="addressing-license-problem-states"></a>Resolución de problemas de estado de licencia
 
@@ -63,7 +63,7 @@ Visual Studio se puede probar de forma gratuita durante 30 días. Si desea exten
    Si no vuelve a introducir sus credenciales, el token irá quedando poco a poco obsoleto. Cuando esto sucede, el cuadro de diálogo Configuración de la cuenta muestra el número de días que quedan antes de la expiración definitiva del token. Si el token expira, habrá que introducir de nuevo las credenciales de esta cuenta o licencia con el otro método anterior para poder continuar usando Visual Studio.
 
 > [!IMPORTANT]
->  Si trabaja con Visual Studio durante largos períodos en entornos con poco o ningún acceso a Internet, use una clave de producto para desbloquear Visual Studio con el fin de evitar la interrupción.
+> Si trabaja con Visual Studio durante largos períodos en entornos con poco o ningún acceso a Internet, use una clave de producto para desbloquear Visual Studio con el fin de evitar la interrupción.
 
 ### <a name="updating-expired-licenses"></a>Actualizar licencias caducadas
  Si su suscripción ha expirado por completo y ya no tiene derechos de acceso a Visual Studio, debe:

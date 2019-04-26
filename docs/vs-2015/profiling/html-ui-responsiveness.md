@@ -20,12 +20,12 @@ caps.latest.revision: 52
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bf70ab2477d135486f09b60ef143bd2569c87298
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 91e2c0f91d3234dd9f96a29cc914ae9e4d3847b6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070373"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438384"
 ---
 # <a name="html-ui-responsiveness"></a>Capacidad de respuesta de IU HTML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -90,7 +90,7 @@ En este tema se describe cómo aislar los problemas de rendimiento en sus aplica
 4. Opcionalmente, agregue marcas de usuario al código mediante [Marcar código para el análisis](#ProfileMark).  
   
     > [!TIP]
-    >  Las marcas de usuario pueden ayudarte a identificar el problema de capacidad de respuesta mientras ves los datos del generador de perfiles. Por ejemplo, puedes agregar una marca de usuario al principio y al final de una sección de código que genera un problema de capacidad de respuesta.  
+    > Las marcas de usuario pueden ayudarte a identificar el problema de capacidad de respuesta mientras ves los datos del generador de perfiles. Por ejemplo, puedes agregar una marca de usuario al principio y al final de una sección de código que genera un problema de capacidad de respuesta.  
   
 5. Ejecuta el generador de perfiles de la capacidad de respuesta de la IU siguiendo las instrucciones de la sección anterior.  
   
@@ -127,7 +127,7 @@ En este tema se describe cómo aislar los problemas de rendimiento en sus aplica
     - Otros eventos especificados en [Profiler event reference](#ProfilerEvents).  
   
     > [!TIP]
-    >  La mayor parte de la información útil del generador de perfiles aparece en el gráfico de detalles de la escala de tiempo.  
+    > La mayor parte de la información útil del generador de perfiles aparece en el gráfico de detalles de la escala de tiempo.  
   
 12. Selecciona un área en el gráfico de uso de CPU o de rendimiento visual (FPS) y elige **Acercar** (el botón o menú contextual) para obtener información más detallada. La escala de tiempo para el gráfico cambia para mostrar solo el período de tiempo seleccionado.  
   
@@ -153,7 +153,7 @@ if (performance && performance.mark) {
  La descripción del evento aparece como información sobre herramientas al colocar el puntero del mouse sobre la marca de usuario. Puedes agregar todas las marcas de usuario que necesites.  
   
 > [!NOTE]
->  `console.timeStamp`, un comando de Chrome, aparece también como marca de usuario.  
+> `console.timeStamp`, un comando de Chrome, aparece también como marca de usuario.  
   
  En la ilustración siguiente se muestra la regla de diagnósticos con una única marca de usuario y la información sobre herramientas.  
   
@@ -198,7 +198,7 @@ if (performance.mark && performance.measure) {
  El gráfico de uso de CPU muestra la cantidad de tiempo empleado en todos los subprocesos de la aplicación, agrupando valores de uso de CPU de una o más CPU en un único valor de porcentaje. El valor de uso de CPU puede superar el cien por cien si se utilizan varias CPU.  
   
 > [!NOTE]
->  La utilización de GPU no aparece en el gráfico.  
+> La utilización de GPU no aparece en el gráfico.  
   
  En este ejemplo se muestra el aspecto del gráfico de uso de CPU:  
   
@@ -243,7 +243,7 @@ if (performance.mark && performance.measure) {
  El gráfico muestra el trabajo del subproceso de interfaz de usuario y el trabajo en subprocesos de segundo plano que pueden acarrear actualizaciones visuales lentas. El gráfico no muestra el trabajo de JavaScript JIT, el trabajo asincrónico de GPU, el trabajo realizado fuera del proceso de host (como el trabajo de RuntimeBroker.exe y dwm.exe) ni el trabajo de las áreas de Windows en tiempo de ejecución que aún no se han instrumentado para la generación de perfiles (como la E/S de disco).  
   
 > [!TIP]
->  Cuando se produce un evento en un subproceso de segundo plano, el identificador del subproceso aparece entre corchetes junto al nombre del evento.  
+> Cuando se produce un evento en un subproceso de segundo plano, el identificador del subproceso aparece entre corchetes junto al nombre del evento.  
   
  En este ejemplo se muestra el aspecto del gráfico de detalles de la escala de tiempo cuando se selecciona el agente de escucha de eventos para un evento clic de DOM:  
   
@@ -274,7 +274,7 @@ if (performance.mark && performance.measure) {
     - Para los temporizadores, los agentes de escucha de eventos (eventos DOM), los eventos de diseño y las devoluciones de llamada de fotogramas de animación, aparece un resumen codificado por colores del evento seleccionado y todos sus elementos secundarios en la sección **Resumen de tiempo inclusivo** (el anillo codificado por colores). Cada segmento codificado por colores de la imagen representa un tipo de evento. La información sobre herramientas proporciona el nombre del tipo de evento.  
   
     > [!TIP]
-    >  El gráfico de detalles de la escala de tiempo y el **Resumen de tiempo inclusivo** pueden ayudarte a identificar áreas que deben optimizarse. Si alguna de estas vistas muestra un gran número de pequeñas tareas, el evento puede ser un posible candidato para optimización. Por ejemplo, una aplicación puede estar actualizando elementos DOM con frecuencia, lo que produce un gran número de eventos de diseño y de análisis de código HTML. Podrías optimizar el rendimiento procesando este trabajo por lotes.  
+    > El gráfico de detalles de la escala de tiempo y el **Resumen de tiempo inclusivo** pueden ayudarte a identificar áreas que deben optimizarse. Si alguna de estas vistas muestra un gran número de pequeñas tareas, el evento puede ser un posible candidato para optimización. Por ejemplo, una aplicación puede estar actualizando elementos DOM con frecuencia, lo que produce un gran número de eventos de diseño y de análisis de código HTML. Podrías optimizar el rendimiento procesando este trabajo por lotes.  
   
 ### <a name="FilterTimelineDetails"></a> Filtrar detalles de la escala de tiempo  
  Puedes filtrar la vista de detalles de escala de tiempo de un evento concreto si seleccionas **Filtro para evento** en el menú contextual de ese evento. Cuando eliges esta opción, el ámbito de la escala de tiempo y la cuadrícula se ajusta al evento seleccionado. La selección del gráfico de uso de CPU también limita su ámbito a ese evento específico.  
@@ -293,7 +293,7 @@ if (performance.mark && performance.measure) {
  Para filtrar la actividad de subproceso de la interfaz de usuario, desactive la opción **Actividad de IU** .  
   
 > [!TIP]
->  Desactive esta opción y seleccione la opción Tráfico de red para investigar los problemas relacionados con la latencia de red.  
+> Desactive esta opción y seleccione la opción Tráfico de red para investigar los problemas relacionados con la latencia de red.  
   
  Para filtrar las medidas de usuario, desactive la opción **Medidas de usuario** . Las medidas de usuario son eventos de nivel superior sin elementos secundarios.  
   

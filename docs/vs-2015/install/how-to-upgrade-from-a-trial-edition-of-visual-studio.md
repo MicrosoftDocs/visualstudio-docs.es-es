@@ -9,12 +9,12 @@ caps.latest.revision: 28
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: c4d1e6436d8f0fdeb80ad0e0c8a2631ba338d50c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 35c81dd879866d6a707e58add4a4fa94a254a918
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069905"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433026"
 ---
 # <a name="how-to-upgrade-from-a-trial-edition-of-visual-studio"></a>Cómo: Actualizar de versiones de prueba de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Puede evaluar la versión preliminar de Visual Studio durante 14 días sin regis
  Por ejemplo, si descarga y usa [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] durante 10 días y, a continuación, lo registra, puede utilizarlo durante 80 días más. Para seguir usando el producto después de 90 días, debe proporcionar una clave de producto válida, o bien iniciar sesión en Visual Studio con una cuenta de Microsoft o una cuenta profesional que está asociada a una suscripción de MSDN o de Visual Studio Online. Para información sobre cómo buscar u obtener una clave de producto, consulte [Cómo: Encontrar la clave de producto de Visual Studio](../install/how-to-locate-the-visual-studio-product-key.md) y [Cómo comprar Visual Studio](http://www.visualstudio.com/products/how-to-buy-vs).
 
 > [!IMPORTANT]
->  El período de prueba para las versiones de lanzamiento de las ediciones Express de Visual Studio también es de 30 días. Para ampliar indefinidamente el período de prueba de las ediciones Express de Visual Studio, inicie sesión en Visual Studio o registre el producto.
+> El período de prueba para las versiones de lanzamiento de las ediciones Express de Visual Studio también es de 30 días. Para ampliar indefinidamente el período de prueba de las ediciones Express de Visual Studio, inicie sesión en Visual Studio o registre el producto.
 
  Antes de realizar la actualización, se recomienda que descargue y examine el documento [Notas del producto de Visual Studio y licencias de MSDN](http://www.microsoft.com/download/details.aspx?id=13350) en el sitio web de Microsoft. Para obtener ayuda adicional, vea [Soporte técnico para Visual Studio](http://support.microsoft.com/ph/1117/en-us).
 
@@ -41,7 +41,7 @@ Puede evaluar la versión preliminar de Visual Studio durante 14 días sin regis
 4. Escriba una clave del producto válida y elija el botón **Aplicar**.
 
     > [!NOTE]
-    >  El acceso a Internet es necesario para registrar y desbloquear cualquier edición de Visual Studio. Una vez registrado Visual Studio, la conexión a Internet es opcional.
+    > El acceso a Internet es necesario para registrar y desbloquear cualquier edición de Visual Studio. Una vez registrado Visual Studio, la conexión a Internet es opcional.
 
 ## <a name="see-also"></a>Vea también
  [Instalar Visual Studio](../install/install-visual-studio-2015.md) [Iniciar sesión en Visual Studio](../ide/signing-in-to-visual-studio.md) [Cómo: Encontrar la clave de producto de Visual Studio](../install/how-to-locate-the-visual-studio-product-key.md) [Localizar o cambiar la clave del producto para Team Foundation Server](http://msdn.microsoft.com/library/64f29927-b520-4c9f-b633-bcb527e562cd) [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)

@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c5a6e0ae31068144cb7de5ff83ac562db8f833d9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 1063a94ad2ff08942ec191e9162b4b2d506bb048
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045145"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403460"
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>Trabajar con elementos en el Diseñador XAML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -94,7 +94,7 @@ Para agregar elementos (controles, distribuciones y formas) a una aplicación, p
      Cuando se abre el control Adorner de margen y el margen opuesto no está establecido, el margen opuesto se establece en el valor correcto de acuerdo con la ubicación del elemento en la mesa de trabajo. Para los márgenes opuestos, como **Izquierdo** y **Derecho**, siempre se establece al menos una propiedad.  
   
     > [!IMPORTANT]
-    >  Los elementos incluidos dentro de algunos contenedores de distribución, como <xref:Windows.UI.Xaml.Controls.Canvas>, no tienen adornos del margen. Los elementos incluidos dentro de <xref:Windows.UI.Xaml.Controls.StackPanel> tienen adornos del margen para los márgenes izquierdo y derecho o para los márgenes superior e inferior, en función de la orientación de `StackPanel`.  
+    > Los elementos incluidos dentro de algunos contenedores de distribución, como <xref:Windows.UI.Xaml.Controls.Canvas>, no tienen adornos del margen. Los elementos incluidos dentro de <xref:Windows.UI.Xaml.Controls.StackPanel> tienen adornos del margen para los márgenes izquierdo y derecho o para los márgenes superior e inferior, en función de la orientación de `StackPanel`.  
   
 ## <a name="grouping-and-ungrouping-elements"></a>Agrupar y desagrupar elementos  
  Al agrupar dos o más elementos en XAML Designer se crea un nuevo contenedor de distribución y esos elementos quedan colocados en ese contenedor. Cuando se colocan dos o más elementos juntos en un contenedor de diseño, se podrá seleccionar, mover y transformar fácilmente el grupo como si los elementos de este fuesen un único elemento. La agrupación también permite identificar elementos que están relacionados entre sí de alguna manera, como los botones que constituyen un elemento de navegación. Cuando se desagrupan elementos, simplemente se elimina el contenedor de diseño que los contiene.  
@@ -106,7 +106,7 @@ Para agregar elementos (controles, distribuciones y formas) a una aplicación, p
 2. Haga clic con el botón derecho en los elementos seleccionados, seleccione **Agrupar en** y, después, haga clic en el tipo de contenedor de diseño en el que quiera incluir el grupo.  
   
     > [!TIP]
-    >  Si selecciona <xref:Windows.UI.Xaml.Controls.Viewbox>, <xref:Windows.UI.Xaml.Controls.Border> o <xref:Windows.UI.Xaml.Controls.ScrollViewer> para agrupar los elementos, estos se colocan en un nuevo panel <xref:Windows.UI.Xaml.Controls.Grid> dentro de <xref:Windows.UI.Xaml.Controls.Viewbox>, <xref:Windows.UI.Xaml.Controls.Border> o <xref:Windows.UI.Xaml.Controls.ScrollViewer>. Si desagrupas elementos en uno de estos contenedores de distribución, solo se elimina <xref:Windows.UI.Xaml.Controls.Viewbox>, <xref:Windows.UI.Xaml.Controls.Border> o <xref:Windows.UI.Xaml.Controls.ScrollViewer> y se mantiene el panel <xref:Windows.UI.Xaml.Controls.Grid>. Para eliminar el panel `Grid`, vuelve a desagrupar los elementos.  
+    > Si selecciona <xref:Windows.UI.Xaml.Controls.Viewbox>, <xref:Windows.UI.Xaml.Controls.Border> o <xref:Windows.UI.Xaml.Controls.ScrollViewer> para agrupar los elementos, estos se colocan en un nuevo panel <xref:Windows.UI.Xaml.Controls.Grid> dentro de <xref:Windows.UI.Xaml.Controls.Viewbox>, <xref:Windows.UI.Xaml.Controls.Border> o <xref:Windows.UI.Xaml.Controls.ScrollViewer>. Si desagrupas elementos en uno de estos contenedores de distribución, solo se elimina <xref:Windows.UI.Xaml.Controls.Viewbox>, <xref:Windows.UI.Xaml.Controls.Border> o <xref:Windows.UI.Xaml.Controls.ScrollViewer> y se mantiene el panel <xref:Windows.UI.Xaml.Controls.Grid>. Para eliminar el panel `Grid`, vuelve a desagrupar los elementos.  
   
 #### <a name="to-ungroup-elements-and-delete-the-layout"></a>Para desagrupar elementos y eliminar el diseño  
   

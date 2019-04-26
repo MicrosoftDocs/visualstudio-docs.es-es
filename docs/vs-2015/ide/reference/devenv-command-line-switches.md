@@ -21,12 +21,12 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4eadb8c9553873f43ad9435ad43fae00f57affcb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 0cb2d42db65c5eb77aae324d2c10c25010eb8b8f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050717"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444736"
 ---
 # <a name="devenv-command-line-switches"></a>Modificadores de línea de comandos para Devenv
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,10 +34,10 @@ ms.locfileid: "60050717"
 Devenv permite establecer diversas opciones para el entorno de desarrollo integrado (IDE), así como compilar, depurar e implementar proyectos, desde la línea de comandos. Utilice estos modificadores para ejecutar el IDE desde un script o un archivo .bat (por ejemplo, un script de compilación nocturna) o para iniciar el IDE con una configuración determinada.  
   
 > [!NOTE]
->  Para las tareas relacionadas con la compilación, se recomienda usar MSBuild en lugar de devenv. Para obtener más información, vea [Referencia de la línea de comandos](../../msbuild/msbuild-command-line-reference.md).  
+> Para las tareas relacionadas con la compilación, se recomienda usar MSBuild en lugar de devenv. Para obtener más información, vea [Referencia de la línea de comandos](../../msbuild/msbuild-command-line-reference.md).  
   
 > [!NOTE]
->  Debe ejecutar devenv como administrador para poder usar los modificadores [/Setup (devenv.exe)](../../ide/reference/setup-devenv-exe.md) e [/InstallVSTemplates (devenv.exe)](../../ide/reference/installvstemplates-devenv-exe.md).  
+> Debe ejecutar devenv como administrador para poder usar los modificadores [/Setup (devenv.exe)](../../ide/reference/setup-devenv-exe.md) e [/InstallVSTemplates (devenv.exe)](../../ide/reference/installvstemplates-devenv-exe.md).  
   
 ## <a name="devenv-switch-syntax"></a>Sintaxis de los modificadores de devenv  
  De forma predeterminada, los comandos devenv pasan modificadores a la utilidad devenv.com.  
@@ -57,7 +57,7 @@ Devenv permite establecer diversas opciones para el entorno de desarrollo integr
 - Cuando se indica un nombre de archivo de proyecto en lugar de un nombre de archivo de solución, un comando `devenv` buscará en la carpeta primaria del archivo de proyecto un archivo de solución que tenga el mismo nombre. Por ejemplo, el comando `devenv /build myproject1.vbproj` buscará en la carpeta primaria un archivo de solución denominado "myproject1.sln".  
   
     > [!NOTE]
-    >  En su carpeta primaria debe haber un archivo de solución, y solamente uno, que haga referencia a este proyecto. Si la carpeta primaria no contiene ningún archivo de solución que hace referencia a este proyecto, o si contiene dos o más archivos de solución que hacen referencia a él, se creará en ella un archivo de solución temporal con el nombre de este proyecto y que haga referencia a él.  
+    > En su carpeta primaria debe haber un archivo de solución, y solamente uno, que haga referencia a este proyecto. Si la carpeta primaria no contiene ningún archivo de solución que hace referencia a este proyecto, o si contiene dos o más archivos de solución que hacen referencia a él, se creará en ella un archivo de solución temporal con el nombre de este proyecto y que haga referencia a él.  
   
 - Si las rutas de acceso y los nombres de archivo contienen espacios en blanco, deben incluirse entre comillas dobles (""). Por ejemplo, "c:\project a\\".  
   
