@@ -16,12 +16,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8c2ad1e97302a822bacc2fbbc983002626adb78a
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 67eb54d06297458915edfe34718948b085c6e86b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758174"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416827"
 ---
 # <a name="how-to-find-topics-in-the-index"></a>Cómo: Buscar temas en el índice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ El índice contiene una lista de palabras clave asociadas a los temas del conten
       Elija el botón de filtro cerca de la parte superior de la pestaña para mostrar todas las entradas que contienen el texto especificado o solo las que comienzan con dicho texto.  
   
      > [!NOTE]
-     >  Cuando el botón del filtro aparezca en un fondo más oscuro con un borde, las entradas deben contener el texto especificado. Si el fondo y el borde no aparecen, las entradas deben comenzar con el texto especificado.  
+     > Cuando el botón del filtro aparezca en un fondo más oscuro con un borde, las entradas deben contener el texto especificado. Si el fondo y el borde no aparecen, las entradas deben comenzar con el texto especificado.  
   
    - Desplácese por el índice y elija una palabra clave.  
   

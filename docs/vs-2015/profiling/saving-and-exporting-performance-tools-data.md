@@ -11,12 +11,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c599419d40dc1de2fa2e4ff4b41dd50f762f57fa
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 3be6d5d732e5cbb2050c68ac8c7db722c3f709f2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60073792"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428105"
 ---
 # <a name="saving-and-exporting-performance-tools-data"></a>Guardar y exportar datos de herramientas de rendimiento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ En este tema se describe cómo guardar y exportar archivos de datos de rendimien
  Puede exportar una o más vistas de informe desde un archivo .vsp o un archivo de datos de generación de perfiles .vsps como un archivo XML o delimitado por comas. Puede filtrar los datos en la ventana de vista de informe antes de exportar, o bien puede exportar vistas de informe del archivo de datos completo desde la ventana del **Explorador de rendimiento** .  
   
 > [!NOTE]
->  También puede copiar y pegar filas seleccionadas de la ventana de vista de informe como valores separados por tabulaciones.  
+> También puede copiar y pegar filas seleccionadas de la ventana de vista de informe como valores separados por tabulaciones.  
   
 #### <a name="to-export-performance-reports-from-the-performance-explorer-window"></a>Para exportar un informe de rendimiento desde la ventana del Explorador de rendimiento  
   

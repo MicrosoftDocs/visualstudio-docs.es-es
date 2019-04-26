@@ -13,12 +13,12 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 81bb2392a4ea6d9860cdcf2beeadcfe4e6ec7940
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: fd8732a914581b39566bac88fe73698850893f77
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091621"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434271"
 ---
 # <a name="performance-report-overview"></a>Información general sobre el informe de rendimiento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,9 +26,9 @@ ms.locfileid: "60091621"
 Puede ver los datos de generación de perfiles de una sesión de rendimiento en la ventana **Informe de rendimiento** del entorno de desarrollo integrado (IDE) de Visual Studio Team System Development Edition. Los datos de generación de perfiles se guardan en archivos .vsp y .vsps. Las ventanas de la vista Informe permiten ver y analizar problemas de rendimiento de la aplicación.  
   
 > [!CAUTION]
->  Un archivo de datos de generación de perfiles contiene información confidencial, como el nombre del equipo, la versión del sistema operativo, las rutas de acceso de archivo, información de la memoria y otros datos de configuración del equipo. Se debe mantener un control estricto sobre la distribución de los datos, tanto en su formato nativo .vsp como cuando se exporta a un archivo .csv o .xml.  
+> Un archivo de datos de generación de perfiles contiene información confidencial, como el nombre del equipo, la versión del sistema operativo, las rutas de acceso de archivo, información de la memoria y otros datos de configuración del equipo. Se debe mantener un control estricto sobre la distribución de los datos, tanto en su formato nativo .vsp como cuando se exporta a un archivo .csv o .xml.  
 >   
->  Si se recopilan datos de seguimiento de eventos como parte de la sesión de rendimiento, puede aparecer información adicional en el archivo de registro de seguimiento de eventos (.etl). Esta información incluye su nombre de usuario y dominio, por lo tanto, se debe mantener un control estricto sobre la distribución del archivo de registro.  
+> Si se recopilan datos de seguimiento de eventos como parte de la sesión de rendimiento, puede aparecer información adicional en el archivo de registro de seguimiento de eventos (.etl). Esta información incluye su nombre de usuario y dominio, por lo tanto, se debe mantener un control estricto sobre la distribución del archivo de registro.  
   
 ## <a name="performance-report-window"></a>Ventana Informe de rendimiento  
  La ventana Informe de rendimiento es una ventana de herramientas que se utiliza para ver, administrar y filtrar los datos de rendimiento, e incluye un control de consulta personalizable.  

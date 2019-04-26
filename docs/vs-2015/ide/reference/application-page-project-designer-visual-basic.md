@@ -15,12 +15,12 @@ caps.latest.revision: 68
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d2484d0fc921d8a5bb42c8e89306a57c3ab6c11d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 4c4e034659298cfa4aa67023767bd4c90ac745c9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670386"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433768"
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Application Page, Project Designer (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Use la página **Aplicación** del Diseñador de proyectos para especificar la c
  Si desactiva el **espacio de nombres raíz**, puede especificar la estructura del espacio de nombres del proyecto en el código.  
   
 > [!NOTE]
->  Si usa la palabra clave Global en una [Instrucción de espacio de nombres](http://msdn.microsoft.com/library/a31fbd95-9ace-4c3d-bbb1-51222a2272b2), puede definir un espacio de nombres fuera del espacio de nombres raíz del proyecto. Si desactiva el **espacio de nombres raíz**, `Global` se convierte en el espacio de nombres de nivel superior, lo que elimina la necesidad de la palabra clave `Global` en una instrucción `Namespace`. Para obtener más información, vea "Palabra clave Global en las instrucciones de espacio de nombres" en [Espacios de nombres en Visual Basic](http://msdn.microsoft.com/library/cffac744-ab8c-4f1f-ba50-732c22ab4b88).  
+> Si usa la palabra clave Global en una [Instrucción de espacio de nombres](http://msdn.microsoft.com/library/a31fbd95-9ace-4c3d-bbb1-51222a2272b2), puede definir un espacio de nombres fuera del espacio de nombres raíz del proyecto. Si desactiva el **espacio de nombres raíz**, `Global` se convierte en el espacio de nombres de nivel superior, lo que elimina la necesidad de la palabra clave `Global` en una instrucción `Namespace`. Para obtener más información, vea "Palabra clave Global en las instrucciones de espacio de nombres" en [Espacios de nombres en Visual Basic](http://msdn.microsoft.com/library/cffac744-ab8c-4f1f-ba50-732c22ab4b88).  
   
  Para obtener información sobre cómo crear espacios de nombres en su código, vea [Namespace (Instrucción)](http://msdn.microsoft.com/library/a31fbd95-9ace-4c3d-bbb1-51222a2272b2).  
   
@@ -57,7 +57,7 @@ Use la página **Aplicación** del Diseñador de proyectos para especificar la c
  El valor predeterminado coincide con la plataforma de destino que ha especificado en el cuadro de diálogo **Nuevo proyecto**.  
   
 > [!NOTE]
->  Los paquetes de requisitos previos que se muestran en el [cuadro de diálogo Requisitos previos](../../ide/reference/prerequisites-dialog-box.md) se establecen automáticamente la primera vez que abre el cuadro de diálogo. Si posteriormente cambia la plataforma de destino del proyecto, debe especificar manualmente los requisitos previos para que coincidan con la nueva plataforma de destino.  
+> Los paquetes de requisitos previos que se muestran en el [cuadro de diálogo Requisitos previos](../../ide/reference/prerequisites-dialog-box.md) se establecen automáticamente la primera vez que abre el cuadro de diálogo. Si posteriormente cambia la plataforma de destino del proyecto, debe especificar manualmente los requisitos previos para que coincidan con la nueva plataforma de destino.  
   
  Para obtener más información, vea [Cómo: Usar como destino una versión de .NET Framework](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) e [Información general sobre la compatibilidad con múltiples versiones (multi-targeting) en Visual Studio](../../ide/visual-studio-multi-targeting-overview.md).  
   
@@ -69,7 +69,7 @@ Use la página **Aplicación** del Diseñador de proyectos para especificar la c
  Si especifica la opción **Archivo WinMD**, los tipos se pueden proyectar en cualquier lenguaje de programación de Windows Runtime. Al empaquetar la salida del proyecto como un archivo WinMD, puede codificar una aplicación en varios lenguajes y que el código interopere como si lo escribiera todo en el mismo lenguaje. Puede usar la opción **Archivo WinMD** para las soluciones destinadas a las bibliotecas de Windows Runtime, incluidas las aplicaciones de [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)]. Para obtener más información, vea [Crear componentes de Windows Runtime en C# y Visual Basic](http://go.microsoft.com/fwlink/?LinkId=231895).  
   
 > [!NOTE]
->  Windows Runtime puede proyectar tipos, de manera que aparezcan como objetos nativos en cualquier lenguaje que los use. Por ejemplo, las aplicaciones de JavaScript que interactúan con Windows Runtime lo usan como un conjunto de objetos JavaScript y las aplicaciones de C# usan la biblioteca como una colección de objetos. NET. Al empaquetar la salida del proyecto como un archivo WinMD, puede aprovechar la misma tecnología que usa Windows Runtime.  
+> Windows Runtime puede proyectar tipos, de manera que aparezcan como objetos nativos en cualquier lenguaje que los use. Por ejemplo, las aplicaciones de JavaScript que interactúan con Windows Runtime lo usan como un conjunto de objetos JavaScript y las aplicaciones de C# usan la biblioteca como una colección de objetos. NET. Al empaquetar la salida del proyecto como un archivo WinMD, puede aprovechar la misma tecnología que usa Windows Runtime.  
   
  Para obtener más información sobre la propiedad **Tipo de aplicación**, vea [/target (Visual Basic)](http://msdn.microsoft.com/library/e0954147-548b-461f-9c4b-a8f88845616c). Para obtener información sobre cómo tener acceso a esa propiedad mediante programación, vea <xref:VSLangProj.ProjectProperties.OutputType%2A>.  
   

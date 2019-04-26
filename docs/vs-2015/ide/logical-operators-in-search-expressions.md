@@ -12,12 +12,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 66d6aa6a11ef0ce308c5ba2b089aaa8170b6441f
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 30a33a434540fded8daab0628d0bd6dd7fb0ff38
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54760075"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412266"
 ---
 # <a name="logical-operators-in-search-expressions"></a>Operadores lógicos en expresiones de búsqueda
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "54760075"
 Con los operadores lógicos puede restringir la búsqueda de contenido mediante la creación de expresiones de búsqueda más complejas a partir de expresiones más sencillas. Como se muestra en la tabla siguiente, los operadores lógicos especifican cómo se deben combinar varios términos de búsqueda en una consulta de búsqueda.  
   
 > [!IMPORTANT]
->  Debe escribir los operadores lógicos con todas las letras en mayúsculas para que el motor de búsqueda los reconozca.  
+> Debe escribir los operadores lógicos con todas las letras en mayúsculas para que el motor de búsqueda los reconozca.  
   
 |Para buscar|Usar|Ejemplo|Resultado|  
 |-------------------|---------|-------------|------------|  

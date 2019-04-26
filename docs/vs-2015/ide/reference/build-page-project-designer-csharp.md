@@ -14,12 +14,12 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 256ceb2e1a40d41798ea8dd38757b447221fab16
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 99fb00ded29b9d0764f04d5062a7ee971954fbf7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658362"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433764"
 ---
 # <a name="build-page-project-designer-c"></a>Compilar (Página, Diseñador de proyectos) (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Use la página **Compilar** del **Diseñador de proyectos** para especificar las
  Las siguientes opciones le permiten seleccionar la configuración y la plataforma que se mostrarán o modificarán.  
   
 > [!NOTE]
->  Con las configuraciones de compilación simplificadas, el sistema del proyecto determina si se debe compilar una versión de lanzamiento o depuración. Por tanto, estas opciones no se muestran. Para obtener más información, consulte [Configuraciones Debug y Release](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
+> Con las configuraciones de compilación simplificadas, el sistema del proyecto determina si se debe compilar una versión de lanzamiento o depuración. Por tanto, estas opciones no se muestran. Para obtener más información, consulte [Configuraciones Debug y Release](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
   
  **Configuración**  
  Especifica qué opciones de configuración se mostrarán o modificarán. Los valores pueden ser **(Depurar) activa** (es el valor predeterminado), **Depuración**, **Lanzamiento** o **Todas las configuraciones**.  

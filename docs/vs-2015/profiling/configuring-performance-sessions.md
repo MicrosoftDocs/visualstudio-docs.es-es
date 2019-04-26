@@ -14,12 +14,12 @@ caps.latest.revision: 41
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c479a2c62d40b52c085f56b424cf3151e93f487c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: d67801cedded1ccf66544e21257866feda828e31
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54774701"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434329"
 ---
 # <a name="configuring-performance-sessions"></a>Configurar sesiones de rendimiento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "54774701"
 Mediante el uso de las herramientas de generación de perfiles de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], puede recopilar una gran variedad de datos de rendimiento para un gran número de tipos de aplicaciones. En esta sección se muestra cómo utilizar las propiedades del Asistente de rendimiento, las propiedades de la sesión de rendimiento y el binario de destino para configurar las herramientas de generación de perfiles para recopilar los datos que le interesen. Las propiedades de configuración de las herramientas de generación de perfiles también pueden emplearse para controlar la cantidad de datos recopilados en una ejecución de generación de perfiles. Para obtener más información, consulte [Controlar la recolección de datos](../profiling/controlling-data-collection.md).  
   
 > [!NOTE]
->  En muchos casos, utilizar las propiedades predeterminadas del Asistente de rendimiento es una forma eficaz de recopilar datos de generación de perfiles. Para obtener más información, consulte [Guía básica para la generación de perfiles de rendimiento](../profiling/beginners-guide-to-performance-profiling.md) e [Introducción](../profiling/getting-started-with-performance-tools.md).  
+> En muchos casos, utilizar las propiedades predeterminadas del Asistente de rendimiento es una forma eficaz de recopilar datos de generación de perfiles. Para obtener más información, consulte [Guía básica para la generación de perfiles de rendimiento](../profiling/beginners-guide-to-performance-profiling.md) e [Introducción](../profiling/getting-started-with-performance-tools.md).  
   
 ## <a name="common-tasks"></a>Tareas comunes  
   

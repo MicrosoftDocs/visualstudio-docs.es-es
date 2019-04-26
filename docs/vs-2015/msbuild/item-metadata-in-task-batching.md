@@ -14,12 +14,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 862e89ad775d28669ed21e3fe2d292aefb363a91
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 15a6eeea6ebf75513419cc763b2e29a6b6264391
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668201"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436792"
 ---
 # <a name="item-metadata-in-task-batching"></a>Metadatos de elementos en el procesamiento por lotes de tareas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -86,7 +86,7 @@ ms.locfileid: "59668201"
  [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] puede dividir varias listas de elementos en lotes basándose en los mismos metadatos. Esto facilita la división de diferentes listas de elementos en lotes para compilar varios ensamblados. Por ejemplo, se puede dividir una lista de elementos de archivos .cs en un lote de aplicación y un lote de ensamblado, y dividir una lista de elementos de archivos de recursos en un lote de aplicación y un lote de ensamblado. A continuación, se puede utilizar el procesamiento por lotes para pasar estas listas de elementos a una misma tarea y compilar la aplicación y el ensamblado.  
   
 > [!NOTE]
->  Si una lista de elementos pasada a una tarea no contiene ningún elemento con los metadatos a los que se hace referencia, todos los elementos de esa lista se pasan a todos los lotes.  
+> Si una lista de elementos pasada a una tarea no contiene ningún elemento con los metadatos a los que se hace referencia, todos los elementos de esa lista se pasan a todos los lotes.  
   
  En el ejemplo siguiente, se muestra cómo dividir varias listas de elementos en lotes basándose en los metadatos de los elementos. Las listas de elementos `ExampColl` y `ExampColl2` se han dividido en tres lotes cada una, basándose en los metadatos del elemento `Number`. La presencia de `%(Number)` en el atributo `Text` indica a [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] que se debe realizar un procesamiento por lotes. Las listas de elementos `ExampColl` y `ExampColl2` se dividen en tres lotes según los metadatos de `Number` y cada lote se pasa a la tarea por separado.  
   

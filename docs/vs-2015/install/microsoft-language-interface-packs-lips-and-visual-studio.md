@@ -18,12 +18,12 @@ caps.latest.revision: 28
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: ff4faf3fdd6bd4b9398e3448a63e4c6061d79cfb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 503f97d1530f8d22184f42a2452046782a997c18
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096509"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432996"
 ---
 # <a name="microsoft-language-interface-packs-lips-and-visual-studio"></a>Paquetes de interfaz de idioma (LIP) de Microsoft y Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Con un paquete de interfaz de idiomas (LIP) de Windows, puede instalar una versi
  Visual Studio usa un paquete de idioma unificado. Para instalar más de una versión de idioma de estos productos, debe instalar primero un producto de idioma completo y después instalar uno o más paquetes de idioma.
 
 > [!NOTE]
->  Visual Studio no es compatible con la instalación de varias versiones de idioma del producto de idioma completo en el mismo equipo. Después de instalar un producto de idioma completo, deberá agregar las versiones de idioma mediante los paquetes de idioma. Todavía puede instalar varios productos de idioma completos de las ediciones Express en el mismo equipo.
+> Visual Studio no es compatible con la instalación de varias versiones de idioma del producto de idioma completo en el mismo equipo. Después de instalar un producto de idioma completo, deberá agregar las versiones de idioma mediante los paquetes de idioma. Todavía puede instalar varios productos de idioma completos de las ediciones Express en el mismo equipo.
 
 ### <a name="support-for-code-pages"></a>Compatibilidad con páginas de códigos
  Algunas Visual Studio Tools no muestran el texto correctamente si el texto contiene caracteres que no se encuentran en la página de códigos actual. En su lugar, aparecen signos de interrogación o texto dañado. Las siguientes herramientas o áreas se ven afectadas:
@@ -76,7 +76,7 @@ Con un paquete de interfaz de idiomas (LIP) de Windows, puede instalar una versi
 1. Haga clic en **Iniciar** y en **Panel de control** y, a continuación, abra **Configuración regional y de idioma** (o **Región** en [!INCLUDE[win8](../includes/win8-md.md)]).
 
     > [!NOTE]
-    >  Para poder llevar a cabo estos pasos, debe ser administrador del equipo.
+    > Para poder llevar a cabo estos pasos, debe ser administrador del equipo.
 
 2. Haga clic en la pestaña **Opciones avanzadas**.
 
@@ -88,7 +88,7 @@ Con un paquete de interfaz de idiomas (LIP) de Windows, puede instalar una versi
  Al instalar varias versiones de idioma de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] en el mismo equipo, la interfaz de usuario de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] cambia de forma predeterminada a **Igual que en Microsoft Windows**. Este valor indica que [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] mostrará el texto de la interfaz de usuario en el idioma de la interfaz de usuario del sistema operativo.
 
 > [!NOTE]
->  Si en Visual Studio se define la configuración **Igual que en Microsoft Windows** y no está instalado el correspondiente paquete de idioma de Visual Studio, utilizará el idioma que se haya configurado en la primera instalación.
+> Si en Visual Studio se define la configuración **Igual que en Microsoft Windows** y no está instalado el correspondiente paquete de idioma de Visual Studio, utilizará el idioma que se haya configurado en la primera instalación.
 
 #### <a name="to-set-the-language-that-is-used-for-the-ui-text-in-visual-studio"></a>Para establecer el idioma que se usa para el texto de la interfaz de usuario de Visual Studio
 
