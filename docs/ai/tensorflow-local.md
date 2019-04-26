@@ -11,11 +11,11 @@ ms.devlang: python
 ms.workload:
 - multiple
 ms.openlocfilehash: 26668247bf993da3eb3f2803abaf9288e566ffee
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842866"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62555468"
 ---
 # <a name="train-a-tensorflow-model-locally"></a>Entrenar un modelo de TensorFlow localmente
 

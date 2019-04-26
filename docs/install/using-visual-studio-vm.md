@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 669d239aa7c26a99774ce12cdd3e1b43c5d7ccb7
-ms.sourcegitcommit: 40393347a36779230d128f2355a911632a8d458e
+ms.openlocfilehash: 41619e780d02f20fc21bd2b51cc0b0a3eede90fd
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58866723"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62951506"
 ---
 # <a id="top"> </a> Imágenes de Visual Studio en Azure
 
@@ -77,13 +77,13 @@ Si las imágenes no incluyen la característica de Visual Studio que necesita, e
 
 Azure ofrece una amplia gama de tamaños de máquina virtual. Dado que Visual Studio es una eficaz aplicación multiproceso, es recomendable que la máquina tenga un tamaño que pueda incluir al menos dos procesadores y 7 GB de memoria. Le recomendamos los siguientes tamaños de máquina virtual para las imágenes de Visual Studio:
 
-   * Standard_D2_v3
-   * Standard_D2s_v3
-   * Standard_D4_v3
-   * Standard_D4s_v3
-   * Standard_D2_v2
-   * Standard_D2S_v2
-   * Standard_D3_v2
+* Standard_D2_v3
+* Standard_D2s_v3
+* Standard_D4_v3
+* Standard_D4s_v3
+* Standard_D2_v2
+* Standard_D2S_v2
+* Standard_D3_v2
 
 Para más información sobre los tamaños de máquina más recientes, consulte [Tamaños de las máquinas virtuales Windows en Azure](/azure/virtual-machines/windows/sizes).
 
@@ -105,7 +105,7 @@ Un resumen rápido: use la herramienta de preparación del sistema (Sysprep) y a
 
 ![Captura de una imagen mediante la interfaz de usuario de Azure Portal.](media/capture-vm.png)
 
-*(Figura 1) Captura de una imagen mediante la interfaz de usuario de Azure Portal.*
+*(Figura 1) Captura de una imagen mediante la interfaz de usuario de Azure Portal.*
 
 Para obtener más información, consulte [Captura de una imagen administrada de una máquina virtual generalizada en Azure](/azure/virtual-machines/windows/capture-image-resource).
 
@@ -121,5 +121,5 @@ Además, puede que las tecnologías o las tareas de desarrollo requieran mayor e
 
 Ahora que ya está informado sobre las imágenes preconfiguradas de Visual Studio, el siguiente paso es crear una máquina virtual:
 
-* [Creación de una máquina virtual en Azure Portal](/azure/virtual-machines/windows/quick-create-portal)
-* [Información general sobre Windows Virtual Machines](/azure/virtual-machines/windows/overview)
+* [Creación de una máquina virtual en Azure Portal](/azure/virtual-machines/windows/quick-create-portal)
+* [Información general sobre las máquinas virtuales Windows](/azure/virtual-machines/windows/overview)

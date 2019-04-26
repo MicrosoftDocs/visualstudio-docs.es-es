@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d5e27f6cc244580ac4f3c72724dd6fdb6d09999
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 7bd7282a0826f10a0438f95164600419e0784a2a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928275"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62844235"
 ---
 # <a name="shader-designer-nodes"></a>Nodos del Diseñador de sombras
 Los artículos de esta sección de la documentación contienen información sobre los distintos nodos del Diseñador de sombras que puede usar para crear efectos gráficos.
@@ -27,15 +27,15 @@ Los artículos de esta sección de la documentación contienen información sobr
 ### <a name="promotion-of-inputs"></a>Promoción de entradas
  Dado que en última instancia el Diseñador de sombras debe generar código fuente HLSL para que el efecto se pueda usar en un juego o aplicación, los nodos del Diseñador de sombras están sujetos a las reglas de promoción de tipos que se usan en HLSL. Como el hardware gráfico funciona principalmente sobre valores de punto flotante, no es habitual la promoción entre tipos diferentes, por ejemplo, de `int` a `float` o de `float` a `double`. En su lugar, como el hardware gráfico usa la misma operación en varios fragmentos de información a la vez, puede producirse un tipo de promoción diferente en la que la entrada más corta de varias entradas se alarga para que coincida con el tamaño de la entrada más larga. La forma en que se alargue depende del tipo de la entrada y también de la propia operación:
 
--   **Si el tipo más pequeño es un valor escalar, entonces:**
+- **Si el tipo más pequeño es un valor escalar, entonces:**
 
      el valor de la expresión escalar se replica en un vector que es del mismo tamaño que la entrada más grande. Por ejemplo, la entrada escalar 5,0 se convierte en el vector (5,0, 5,0, 5,0) cuando la entrada más grande de la operación es un vector de tres elementos, sea cual sea la operación.
 
--   **Si el tipo más pequeño es un vector y la operación es de multiplicación (\*, /, %, etc.), entonces:**
+- **Si el tipo más pequeño es un vector y la operación es de multiplicación (\*, /, %, etc.), entonces:**
 
      el valor del vector se copia en los elementos iniciales de un vector del mismo tamaño que la entrada más grande, y los elementos finales se establecen en 1,0. Por ejemplo, la entrada de vector (5,0, 5,0) se convierte en el vector (5,0, 5,0, 1,0, 1,0) cuando se multiplica por un vector de cuatro elementos. Esto conserva el tercer y cuarto elemento de la salida mediante el uso de la identidad de multiplicación, 1,0.
 
--   **Si el tipo más pequeño es un vector y la operación es de suma (+, -, etc.), entonces:**
+- **Si el tipo más pequeño es un vector y la operación es de suma (+, -, etc.), entonces:**
 
      el valor del vector se copia en los elementos iniciales de un vector del mismo tamaño que la entrada más grande, y los elementos finales se establecen en 0,0. Por ejemplo, la entrada de vector (5,0, 5,0) se convierte en el vector (5,0, 5,0, 0,0, 0,0) cuando se suma a un vector de cuatro elementos. Esto conserva el tercer y cuarto elemento de la salida mediante el uso de la identidad de suma, 0,0.
 

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 88903c1370219976bca6e8418c3254d048db51d2
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: e9dc571576346aa246452cdebf0a147468d6dfea
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324726"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62549338"
 ---
 # <a name="how-to-specify-build-events-visual-basic"></a>Procedimiento Especificación de eventos de compilación (Visual Basic)
 
@@ -34,13 +34,13 @@ Los eventos de compilación se especifican en el cuadro de diálogo **Eventos de
 
 ### <a name="to-specify-a-build-event"></a>Para especificar un evento de compilación
 
-1.  Seleccione un proyecto en el **Explorador de soluciones**y, en el menú **Proyecto** , haga clic en **Propiedades**.
+1. Seleccione un proyecto en el **Explorador de soluciones**y, en el menú **Proyecto** , haga clic en **Propiedades**.
 
-2.  Haga clic en la pestaña **Compilar**.
+2. Haga clic en la pestaña **Compilar**.
 
-3.  Haga clic en el botón **Eventos de compilación** para abrir el cuadro de diálogo **Eventos de compilación**.
+3. Haga clic en el botón **Eventos de compilación** para abrir el cuadro de diálogo **Eventos de compilación**.
 
-4.  Escriba los argumentos de línea de comandos para la acción anterior o posterior a la compilación y después haga clic en **Aceptar**.
+4. Escriba los argumentos de línea de comandos para la acción anterior o posterior a la compilación y después haga clic en **Aceptar**.
 
     > [!NOTE]
     > Agregue una instrucción `call` antes de todos los comandos posteriores a la compilación que ejecutan archivos *.bat*. Por ejemplo: `call C:\MyFile.bat` o `call C:\MyFile.bat call C:\MyFile2.bat`.
@@ -125,14 +125,14 @@ En el procedimiento siguiente se muestra cómo establecer la versión de sistema
 
 ### <a name="to-invoke-a-post-build-event-to-change-the-application-manifest"></a>Para invocar un evento posterior a la compilación para cambiar el manifiesto de aplicación
 
-1.  Cree una aplicación Windows para que se publique el proyecto. En el menú **Archivo**, haga clic en **Nuevo** y después haga clic en **Proyecto**.
+1. Cree una aplicación Windows para que se publique el proyecto. En el menú **Archivo**, haga clic en **Nuevo** y después haga clic en **Proyecto**.
 
-2.  En el cuadro de diálogo **Nuevo proyecto**, en el nodo **Visual Basic**, seleccione **Escritorio de Windows** y, después, la plantilla **Aplicación de Windows Forms**. Dé un nombre al proyecto `VBWinApp`.
-3.  Con el proyecto seleccionado en el **Explorador de soluciones** y, en el menú **Proyecto**, haga clic en **Propiedades**.
+2. En el cuadro de diálogo **Nuevo proyecto**, en el nodo **Visual Basic**, seleccione **Escritorio de Windows** y, después, la plantilla **Aplicación de Windows Forms**. Dé un nombre al proyecto `VBWinApp`.
+3. Con el proyecto seleccionado en el **Explorador de soluciones** y, en el menú **Proyecto**, haga clic en **Propiedades**.
 
-4.  En el **Diseñador de proyectos**, vaya a la página **Publicar** y establezca **Ubicación de publicación** en *C:\TEMP*.
+4. En el **Diseñador de proyectos**, vaya a la página **Publicar** y establezca **Ubicación de publicación** en *C:\TEMP*.
 
-5.  Publique el proyecto haciendo clic en **Publicar ahora**.
+5. Publique el proyecto haciendo clic en **Publicar ahora**.
 
      El archivo de manifiesto se compilará y se ubicará en *C:\TEMP\VBWinApp_1_0_0_0\VBWinApp.exe.manifest*. Para ver el manifiesto, haga clic con el botón derecho en el archivo, haga clic en **Abrir con**, seleccione **Select the program from a list** (Seleccionar el programa de la lista) y, después, haga clic en **Bloc de notas**.
 
@@ -142,9 +142,9 @@ En el procedimiento siguiente se muestra cómo establecer la versión de sistema
     <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />
     ```
 
-6.  En el **Diseñador de proyectos**, vaya a la pestaña **Compilar** y haga clic en el botón **Eventos de compilación** para abrir el cuadro de diálogo **Eventos de compilación**.
+6. En el **Diseñador de proyectos**, vaya a la pestaña **Compilar** y haga clic en el botón **Eventos de compilación** para abrir el cuadro de diálogo **Eventos de compilación**.
 
-7.  En el cuadro **Línea de comandos del evento posterior a la compilación**, escriba el comando siguiente:
+7. En el cuadro **Línea de comandos del evento posterior a la compilación**, escriba el comando siguiente:
 
      `C:\TEMP\ChangeOSVersionVB.exe "$(TargetPath).manifest" 5.1.2600.0`
 
@@ -152,7 +152,7 @@ En el procedimiento siguiente se muestra cómo establecer la versión de sistema
 
      La macro `$(TargetPath)` expresa la ruta de acceso completa del ejecutable que se está creando. Por tanto, *$(TargetPath).manifest* especificará el manifiesto de aplicación creado en el directorio *bin*. La publicación copiará este manifiesto en la ubicación de publicación que ha establecido anteriormente.
 
-8.  Vuelva a publicar el proyecto. Vaya a la página **Publicar** y haga clic en **Publicar ahora**.
+8. Vuelva a publicar el proyecto. Vaya a la página **Publicar** y haga clic en **Publicar ahora**.
 
      Vea el manifiesto de nuevo. Para ver el manifiesto, vaya al directorio de publicación, haga clic con el botón derecho en el archivo, haga clic en **Abrir con**, seleccione **Select the program from a list** (Seleccionar el programa de la lista) y, después, haga clic en **Bloc de notas**.
 

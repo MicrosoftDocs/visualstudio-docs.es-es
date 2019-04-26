@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c0f21042a7b49780dae3a46ec5a1f284dc0430a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0b1480bab2f52383a8ca3a5b0ac22fd56acb5e01
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56646504"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435626"
 ---
 # <a name="manage-channels"></a>Administrar canales
 En la **vista Subprocesos** del visualizador de simultaneidad, puede organizar los canales de su proceso para así poder examinar modelos concretos. Para ordenar los canales, desplácelos hacia arriba o abajo y ocúltelos o muéstrelos.
@@ -25,7 +25,7 @@ En la **vista Subprocesos** del visualizador de simultaneidad, puede organizar l
 ## <a name="sort-by"></a>Ordenar por
  Puede utilizar el control de ordenación para ordenar los subprocesos según criterios diferentes, según el nivel de zoom actual. Esto es especialmente útil cuando se busca un patrón determinado. Puede ordenar por estos criterios:
 
-|Criterios|de esquema JSON|
+|Criterios|Definición|
 |--------------|----------------|
 |Hora de inicio|Ordena los subprocesos por sus horas de inicio. Este es el orden predeterminado.|
 |Hora de finalización|Ordena los subprocesos por sus horas de finalización.|
@@ -47,7 +47,7 @@ En la **vista Subprocesos** del visualizador de simultaneidad, puede organizar l
  Elija este control cuando desee ocultar canales. Por ejemplo, si un subproceso está al cien por ciento de sincronización durante la vida de su proceso administrado, puede ocultarlo mientras analiza otros subprocesos.
 
 > [!NOTE]
->  Ocultar un subproceso también lo quita de la hora de cálculo, que se muestra en la leyenda activa y en los informes de perfil.
+> Ocultar un subproceso también lo quita de la hora de cálculo, que se muestra en la leyenda activa y en los informes de perfil.
 
 ## <a name="show-all-channels"></a>Mostrar todos los canales
  Este control está activado cuando se ocultan uno o más canales. Si lo elige, todos los elementos ocultos se muestran y se devuelven a los cálculos de tiempo.

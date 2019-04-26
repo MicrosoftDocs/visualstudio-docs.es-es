@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 61b9cb5bfc1b310bf7947c51fa3ba718db824fce
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 5b1b6817b31272bf01c92e77ff5b04dfff35f6ad
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57868219"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428126"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>Tutorial: Uso de las API del generador de perfiles
 
@@ -39,8 +39,6 @@ En el tutorial se usa una aplicación de C# para mostrar cómo usar las API de l
 
  Para el código administrado, las API del generador de perfiles se encuentran en *Microsoft.VisualStudio.Profiler.dll*. Este archivo DLL se encuentra en el directorio *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools*. La carpeta relativa a las aplicaciones de 64 bits se encuentra en *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64*. Para obtener más información, vea <xref:Microsoft.VisualStudio.Profiler>.
 
-
-
 ## <a name="prerequisites"></a>Requisitos previos
  En este tutorial se da por supuesto que la elección del entorno de desarrollo está configurada para admitir la depuración y el muestreo. En los temas siguientes se proporciona una introducción de estos requisitos previos:
 
@@ -62,12 +60,12 @@ DataCollection.CurrentId);
 
 #### <a name="to-create-the-code-to-profile"></a>Para crear el código para generar perfiles
 
-1.  Cree un nuevo proyecto de C# en Visual Studio, o use una compilación de línea de comandos, según sus preferencias.
+1. Cree un nuevo proyecto de C# en Visual Studio, o use una compilación de línea de comandos, según sus preferencias.
 
     > [!NOTE]
-    >  La compilación debe hacer referencia a la biblioteca *Microsoft.VisualStudio.Profiler.dll*, que está en el directorio *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools*.
+    > La compilación debe hacer referencia a la biblioteca *Microsoft.VisualStudio.Profiler.dll*, que está en el directorio *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools*.
 
-2.  Copie y pegue el código siguiente en el proyecto:
+2. Copie y pegue el código siguiente en el proyecto:
 
     ```csharp
     using System;
@@ -150,23 +148,23 @@ DataCollection.CurrentId);
 
 #### <a name="to-collect-and-view-data-at-the-command-line"></a>Para recopilar y ver los datos en la línea de comandos
 
-1.  Compile una versión de depuración del código de ejemplo que creó en el procedimiento "Crear el código para generar perfiles", anteriormente en este tutorial.
+1. Compile una versión de depuración del código de ejemplo que creó en el procedimiento "Crear el código para generar perfiles", anteriormente en este tutorial.
 
-2.  Para generar perfiles de una aplicación administrada, escriba el comando siguiente para establecer las variables de entorno adecuadas:
+2. Para generar perfiles de una aplicación administrada, escriba el comando siguiente para establecer las variables de entorno adecuadas:
 
      **VsPerfCLREnv /traceon**
 
-3.  Escriba el comando siguiente: **VSInstr \<nombreDeArchivo>.exe**
+3. Escriba el comando siguiente: **VSInstr \<nombreDeArchivo>.exe**
 
-4.  Escriba el comando siguiente: **VSPerfCmd /start:trace /output:\<nombreDeArchivo>.vsp**
+4. Escriba el comando siguiente: **VSPerfCmd /start:trace /output:\<nombreDeArchivo>.vsp**
 
-5.  Escriba el comando siguiente: **VSPerfCmd /globaloff**
+5. Escriba el comando siguiente: **VSPerfCmd /globaloff**
 
-6.  Ejecute el programa.
+6. Ejecute el programa.
 
-7.  Escriba el comando siguiente: **VSPerfCmd /shutdown**
+7. Escriba el comando siguiente: **VSPerfCmd /shutdown**
 
-8.  Escriba el comando siguiente: **VSPerfReport /calltrace:\<nombreDeArchivo>.vsp**
+8. Escriba el comando siguiente: **VSPerfReport /calltrace:\<nombreDeArchivo>.vsp**
 
      Se crea un archivo .*csv* en el directorio actual con los datos de rendimiento resultantes.
 

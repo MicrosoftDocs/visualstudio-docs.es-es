@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8fd4e411fdb9b49a67f5fbddb27d2a0102cdc755
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56632828"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62794422"
 ---
 # <a name="performance-report-views"></a>Vistas de informes de rendimiento
 Esta sección proporciona información de referencia para los informes y vistas de las Herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Las vistas de archivos de datos de generación de perfiles se muestran en el entorno de desarrollo integrado (IDE) de [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. La herramienta de línea de comandos de [VSPerfReport](../profiling/vsperfreport.md) genera los informes.

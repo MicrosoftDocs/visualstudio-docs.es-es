@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da7b755c5b0ec72a9e1b906bdc1cd27a6dca7c0a
-ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
+ms.openlocfilehash: 2bb6b2d6e7ae3504415f59aeef1fddb8d9f98865
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/15/2019
-ms.locfileid: "59584316"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62778106"
 ---
 # <a name="customize-your-build"></a>Personalizar una compilación
 
@@ -51,6 +51,7 @@ Por ejemplo, si quisiera permitir que todos sus proyectos tuvieran acceso a la n
     </PropertyGroup>
    </Project>
    ```
+
 3. Ejecutar MSBuild. Las importaciones existentes del proyecto de *Microsoft.Common.props* y *Microsoft.Common.targets* encuentran el archivo y lo importan.
 
 ### <a name="search-scope"></a>Ámbito de búsqueda

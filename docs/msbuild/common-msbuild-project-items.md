@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43844fc1e8ffed9853f287f82e79d9859b774755
-ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
+ms.openlocfilehash: 54288f345276a019bf8fd6987a9e138c53c8a9e2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58897691"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62569894"
 ---
 # <a name="common-msbuild-project-items"></a>Elementos comunes de proyectos de MSBuild
 En [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], un elemento es una referencia con nombre a uno o varios archivos. Los elementos contienen metadatos como nombres de archivo, rutas de acceso y números de versión. Todos los tipos de proyecto de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] tienen varios elementos en común. Estos elementos se definen en el archivo *Microsoft.Build.CommonTypes.xsd*.
@@ -81,7 +81,6 @@ En [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 ### <a name="compile"></a>Compile
  Representa los archivos de código fuente para el compilador.
 
-
 | Nombre de metadatos de elementos | Descripción |
 |-----------------------| - |
 | DependentUpon | Cadena opcional. Especifica el archivo del que depende este archivo para compilarse correctamente. |
@@ -92,7 +91,6 @@ En [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 
 ### <a name="embeddedresource"></a>EmbeddedResource
  Representa los recursos que se van a incrustar en el ensamblado generado.
-
 
 | Nombre de metadatos de elementos | Descripción |
 |-----------------------| - |
@@ -108,7 +106,6 @@ En [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 ### <a name="content"></a>Contenido
  Representa archivos que no están compilados en el proyecto pero que podrían incrustarse o publicarse junto con él.
 
-
 | Nombre de metadatos de elementos | Descripción |
 |-----------------------| - |
 | DependentUpon | Cadena opcional. Especifica el archivo del que depende este archivo para compilarse correctamente. |
@@ -123,7 +120,6 @@ En [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 
 ### <a name="none"></a>Ninguna
  Representa archivos que no deberían tener ningún rol en el proceso de compilación.
-
 
 | Nombre de metadatos de elementos | Descripción |
 |-----------------------| - |

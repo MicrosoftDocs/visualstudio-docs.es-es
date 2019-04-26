@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bed026b76ae99509dd2abb77b11b46c14b1d3aae
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d7f9edfb6b0c10a37aade6a9d37a5689e587890d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928756"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438113"
 ---
 # <a name="command-window"></a>Ventana Comandos
 La ventana **Comandos** se usa para ejecutar comandos o alias directamente en el entorno de desarrollo integrado (IDE) de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Puede ejecutar comandos de menú y comandos que no aparecen en ningún menú. Para mostrar la ventana **Comandos**, pulse **Otras ventanas** desde el menú **Ver** y seleccione **Ventana Comandos**.
@@ -61,7 +61,6 @@ La ventana **Comandos** se usa para ejecutar comandos o alias directamente en el
 > [!TIP]
 > Puede copiar todo o una parte del comando anterior en la línea de entrada desplazándose hasta él, resaltando todo o una parte de este y, después, presionando ENTRAR.
 
-
 ## <a name="mark-mode"></a>Modo Marcar
  Cuando hace clic en cualquier línea anterior de la ventana **Comandos**, cambia automáticamente al modo Marcar. Esto le permite seleccionar, editar y copiar el texto de los comandos anteriores como lo haría en cualquier editor de texto, y pegarlo en la línea actual.
 
@@ -81,16 +80,16 @@ Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
 
  En este ejemplo,
 
--   `Edit.ReplaceInFiles` es el comando
+- `Edit.ReplaceInFiles` es el comando
 
--   `/case` y `/pattern:regex` son modificadores (comienzan por el carácter de barra diagonal [/])
+- `/case` y `/pattern:regex` son modificadores (comienzan por el carácter de barra diagonal [/])
 
--   `regex` es el valor del modificador `/pattern`; el modificador `/case` no tiene valor
+- `regex` es el valor del modificador `/pattern`; el modificador `/case` no tiene valor
 
--   `var[1-3]+` y `oldpar` son parámetros
+- `var[1-3]+` y `oldpar` son parámetros
 
     > [!NOTE]
-    >  Cualquier comando, parámetro, modificador o valor que contenga espacios debe tener comillas dobles a cada lado.
+    > Cualquier comando, parámetro, modificador o valor que contenga espacios debe tener comillas dobles a cada lado.
 
 La posición de los modificadores y parámetros puede intercambiarse de manera libre en la línea de comandos con la excepción del comando [Shell](../../ide/reference/shell-command.md), que necesita sus modificadores y parámetros en un orden específico.
 

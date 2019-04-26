@@ -8,18 +8,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: d3e3b1d646b16a50251c97d3268faaa4775d4664
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 172f4a367aa520ebd0fac62d25007713c47e5801
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56638755"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386277"
 ---
 # <a name="how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line"></a>Procedimiento Instrumentar una aplicación web ASP.NET compilada dinámicamente y recopilar datos de memoria mediante la línea de comandos del generador de perfiles
 En este tema se explica cómo usar las herramientas de línea de comandos de las Herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para recopilar datos detallados de asignación de memoria y de duración de objetos de .NET para una aplicación web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] compilada dinámicamente mediante el método de generación de perfiles de instrumentación.
 
 > [!NOTE]
->  Para obtener la ruta de acceso a las herramientas de generación de perfiles, vea [Especificar la ruta de acceso a las herramientas de línea de comandos](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). En equipos de 64 bits, están disponibles las dos versiones de las herramientas, la de 64 bits y la de 32 bits. Para utilizar las herramientas de línea de comandos del generador de perfiles, debe agregar la ruta de acceso de las herramientas a la variable de entorno PATH de la ventana Símbolo del sistema o agregarla al propio comando.
+> Para obtener la ruta de acceso a las herramientas de generación de perfiles, vea [Especificar la ruta de acceso a las herramientas de línea de comandos](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). En equipos de 64 bits, están disponibles las dos versiones de las herramientas, la de 64 bits y la de 32 bits. Para utilizar las herramientas de línea de comandos del generador de perfiles, debe agregar la ruta de acceso de las herramientas a la variable de entorno PATH de la ventana Símbolo del sistema o agregarla al propio comando.
 
  Para recopilar datos de rendimiento de una aplicación web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], debe modificar el archivo *web.config* de la aplicación de destino para permitir que la herramienta [VSInstr.exe](../profiling/vsinstr.md) instrumente los archivos de aplicación compilados dinámicamente. Luego use la herramienta [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) para configurar el servidor que hospeda la aplicación web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] y habilite la generación de perfiles de memoria de .NET mediante el establecimiento de las variables de entorno adecuadas; por último, reinicie el equipo.
 
@@ -31,11 +31,11 @@ En este tema se explica cómo usar las herramientas de línea de comandos de las
 
 #### <a name="to-configure-the-aspnet-web-application-and-the-web-server"></a>Para configurar la aplicación web ASP.NET y el servidor web
 
-1.  Modifique el archivo *web.config* de la aplicación de destino. Vea [Cómo: Modificar archivos Web.config para instrumentar y generar perfiles de aplicaciones web ASP.NET compiladas dinámicamente](../profiling/how-to-modify-web-config-files-to-instrument-dynamically-compiled-aspnet-apps.md).
+1. Modifique el archivo *web.config* de la aplicación de destino. Vea [Cómo: Modificar archivos Web.config para instrumentar y generar perfiles de aplicaciones web ASP.NET compiladas dinámicamente](../profiling/how-to-modify-web-config-files-to-instrument-dynamically-compiled-aspnet-apps.md).
 
-2.  Abra una ventana del símbolo del sistema en el equipo que hospeda la aplicación web.
+2. Abra una ventana del símbolo del sistema en el equipo que hospeda la aplicación web.
 
-3.  Inicialice las variables del entorno de generación de perfiles. Tipo:
+3. Inicialice las variables del entorno de generación de perfiles. Tipo:
 
      **VSPerfClrEnv /globaltracegc**
 
@@ -43,11 +43,11 @@ En este tema se explica cómo usar las herramientas de línea de comandos de las
 
      **VSPerfClrEnv /globaltracegclife**
 
-    -   **/globaltracegc** habilita la recopilación de datos de asignación de memoria.
+    - **/globaltracegc** habilita la recopilación de datos de asignación de memoria.
 
-    -   **/globaltracegclife** habilita la recopilación tanto de datos de asignación de memoria como de datos de duración de objetos.
+    - **/globaltracegclife** habilita la recopilación tanto de datos de asignación de memoria como de datos de duración de objetos.
 
-4.  Reinicie el equipo.
+4. Reinicie el equipo.
 
 ## <a name="run-the-profiling-session"></a>Ejecutar la sesión de generación de perfiles
 
@@ -64,7 +64,7 @@ En este tema se explica cómo usar las herramientas de línea de comandos de las
      Puede usar cualquiera de las siguientes opciones con la opción **/start:trace**.
 
    > [!NOTE]
-   >  Normalmente, las opciones **/user** y **/crosssession** son necesarias para aplicaciones ASP.NET.
+   > Normalmente, las opciones **/user** y **/crosssession** son necesarias para aplicaciones ASP.NET.
 
    | Opción | Descripción |
    | - | - |
@@ -76,7 +76,6 @@ En este tema se explica cómo usar las herramientas de línea de comandos de las
    | [/automark](../profiling/automark.md) **:** `Interval` | Utilizar solo con **/wincounter**. Especifica el número de milisegundos entre eventos de recopilación de contadores de rendimiento de Windows. El valor predeterminado es 500 ms. |
    | [/events](../profiling/events-vsperfcmd.md) **:** `Config` | Especifica un evento de Seguimiento de eventos para Windows (ETW) que se va a recopilar durante la generación de perfiles. Los eventos ETW se recopilan en un archivo *.etl* independiente. |
 
-
 2. Inicie la aplicación web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] de la manera habitual.
 
 ## <a name="control-data-collection"></a>Controlar la recopilación de datos
@@ -84,7 +83,7 @@ En este tema se explica cómo usar las herramientas de línea de comandos de las
 
 #### <a name="to-start-and-stop-data-collection"></a>Para iniciar y detener la recolección de datos
 
--   Los siguientes pares de opciones inician y detienen la recolección de datos. Especifique cada opción en una línea de comandos diferente. Puede activar y desactivar la recolección de datos varias veces.
+- Los siguientes pares de opciones inician y detienen la recolección de datos. Especifique cada opción en una línea de comandos diferente. Puede activar y desactivar la recolección de datos varias veces.
 
     |Opción|Descripción|
     |------------|-----------------|
@@ -92,7 +91,7 @@ En este tema se explica cómo usar las herramientas de línea de comandos de las
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Inicia (**/processon**) o detiene (**/processoff**) la recolección de datos para el proceso especificado por el identificador de proceso (`PID`).|
     |[/threadon](../profiling/threadon-and-threadoff.md) **:** `TID` [/threadoff](../profiling/threadon-and-threadoff.md) **:** `TID`|Inicia (**/threadon**) o detiene (**/threadoff**) la recopilación de datos para el subproceso especificado por el identificador de subproceso (`TID`).|
 
--   También puede utilizar la opción [/mark](../profiling/mark.md) de **VSPerfCmd.exe** para insertar una marca de generación de perfiles en el archivo de datos. El comando **/mark** agrega un identificador, una marca de tiempo y una cadena de texto opcional definida por el usuario. Las marcas se pueden utilizar para filtrar los datos que se muestran en las vistas de informes y datos del generador de perfiles.
+- También puede utilizar la opción [/mark](../profiling/mark.md) de **VSPerfCmd.exe** para insertar una marca de generación de perfiles en el archivo de datos. El comando **/mark** agrega un identificador, una marca de tiempo y una cadena de texto opcional definida por el usuario. Las marcas se pueden utilizar para filtrar los datos que se muestran en las vistas de informes y datos del generador de perfiles.
 
 ## <a name="end-the-profiling-session"></a>Finalización de la sesión de generación de perfiles
  Para finalizar una sesión de generación de perfiles, cierre la aplicación web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] de destino, detenga Internet Information Services (IIS) para detener el proceso de generación de perfiles y, luego, apague el generador de perfiles. Por último, reinicie IIS.
@@ -118,13 +117,13 @@ En este tema se explica cómo usar las herramientas de línea de comandos de las
 
 #### <a name="to-restore-the-application-and-computer-configuration"></a>Para restaurar la configuración del equipo y la aplicación
 
-1.  Reemplace el archivo *web.config* por una copia del archivo original.
+1. Reemplace el archivo *web.config* por una copia del archivo original.
 
-2.  (Opcional). Borre las variables del entorno de generación de perfiles. Tipo:
+2. (Opcional). Borre las variables del entorno de generación de perfiles. Tipo:
 
      **VSPerfCmd /globaloff**
 
-3.  Reinicie el equipo.
+3. Reinicie el equipo.
 
 ## <a name="see-also"></a>Vea también
 - [Generación de perfiles de aplicaciones web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)

@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: Obtenga información sobre cómo los administradores de suscripciones pueden tener acceso al portal de administración y administrar las suscripciones adquiridas a través de Licencias por volumen (VL)
 searchscope: VS Subscription
 ms.openlocfilehash: 6c8a68a1a25e99018e7f41fedbfc9d01b191e2e7
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953265"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62428045"
 ---
 # <a name="accessing-the-portal-and-managing-administrators---for-subscriptions-acquired-through-volume-licensing-vl"></a>Acceso al portal y gestión de administradores para las suscripciones adquiridas a través de Licencias por volumen (VL)
 

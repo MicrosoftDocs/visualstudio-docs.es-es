@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a7ea9c2efd6a204932e24de0ef250ba143b8b34
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: aa331fea595c2143dd3ab47aa562fbd61277f81f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925467"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62817793"
 ---
 # <a name="options-text-editor-basic-visual-basic-advanced"></a>Opciones, Editor de texto, Básico (Visual Basic), Avanzado
 La página de propiedades **Opciones específicas de VB**, en la carpeta **Básico** de la carpeta **Editor de texto** del cuadro de diálogo **Opciones** (menú **Herramientas**) incluye las propiedades siguientes:
@@ -50,7 +50,6 @@ La página de propiedades **Opciones específicas de VB**, en la carpeta **Bási
    Cuando se seleccionan estas opciones, una [acción rápida](../quick-actions.md) se encuentra disponible para instalar un paquete NuGet y agregar una directiva `using` para tipos sin referencia.
 
    ![Acción rápida para instalar el paquete NuGet en Visual Studio](media/nuget-lightbulb.png)
-
 
 ## <a name="highlighting"></a>Resaltado
 
@@ -82,19 +81,19 @@ Cuando se selecciona esta opción, aparecen líneas verticales en el editor que 
 
 **Lista descriptiva (nuevo formato) de código** El editor de texto vuelve a dar formato al código según corresponda. Cuando se selecciona esta opción, el editor de código hará lo siguiente:
 
--   Alinear el código hasta la posición de tabulación correcta
+- Alinear el código hasta la posición de tabulación correcta
 
--   Aplicar un uso correcto de las mayúsculas y las minúsculas en las palabras clave, las variables y los objetos
+- Aplicar un uso correcto de las mayúsculas y las minúsculas en las palabras clave, las variables y los objetos
 
--   Agregar el elemento `Then` que falta en una instrucción `If...Then`
+- Agregar el elemento `Then` que falta en una instrucción `If...Then`
 
--   Agregar paréntesis a las llamadas de función
+- Agregar paréntesis a las llamadas de función
 
--   Agregar las comillas de cierre que faltan en cadenas
+- Agregar las comillas de cierre que faltan en cadenas
 
--   Cambiar el formato de una notación exponencial
+- Cambiar el formato de una notación exponencial
 
--   Cambiar el formato de fechas
+- Cambiar el formato de fechas
 
 **Inserción automática de construcciones End**
 

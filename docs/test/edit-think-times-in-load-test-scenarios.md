@@ -10,12 +10,12 @@ ms.assetid: 8e03bee5-ab7b-4b40-9497-9dbe91ccb90e
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bb5227c4b5f771747a43a7f0f12e0125b125604e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e19e1cb4f9b49c40923d96b177ceb4d6c31b746f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943381"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62783342"
 ---
 # <a name="edit-think-times-to-simulate-website-human-interaction-delays-in-load-tests-scenarios"></a>Modificación de los tiempos de reflexión de usuario para simular los retrasos de la interacción humana en un sitio web en escenarios de pruebas de carga
 
@@ -48,13 +48,13 @@ Se utilizan los tiempos de reflexión, pero modificados según una curva normal.
 
 ### <a name="to-change-a-think-profile-in-a-load-test-scenario"></a>Para cambiar un perfil de reflexión en un escenario de prueba de carga
 
-1.  En el proyecto de prueba de carga y de rendimiento web, abra una prueba de carga.
+1. En el proyecto de prueba de carga y de rendimiento web, abra una prueba de carga.
 
-2.  En el **Editor de pruebas de carga**, elija el nodo del escenario cuyo **Perfil de reflexión** quiere cambiar. El **Perfil de reflexión de usuario** se muestra en la ventana **Propiedades**. Presione **F4** para abrir la ventana **Propiedades**.
+2. En el **Editor de pruebas de carga**, elija el nodo del escenario cuyo **Perfil de reflexión** quiere cambiar. El **Perfil de reflexión de usuario** se muestra en la ventana **Propiedades**. Presione **F4** para abrir la ventana **Propiedades**.
 
-3.  Cambie la propiedad **Perfil de reflexión de usuario** en la ventana **Propiedades**.
+3. Cambie la propiedad **Perfil de reflexión de usuario** en la ventana **Propiedades**.
 
-4.  Cuando haya terminado de cambiar las propiedades, elija **Guardar** en el menú **Archivo**. Entonces podrá ejecutar la prueba de carga con el nuevo perfil de reflexión.
+4. Cuando haya terminado de cambiar las propiedades, elija **Guardar** en el menú **Archivo**. Entonces podrá ejecutar la prueba de carga con el nuevo perfil de reflexión.
 
 ## <a name="see-also"></a>Vea también
 

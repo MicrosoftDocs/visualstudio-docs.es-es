@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 86ed8346a27a02eb7e04c1f7a9fa361b0e03431a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935074"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62785961"
 ---
 # <a name="load-test-scenario-properties"></a>Propiedades de los escenarios de pruebas de carga
 
@@ -24,13 +24,13 @@ Cambie la configuración de las propiedades de los escenarios de prueba de carga
 
 ## <a name="general"></a>General
 
-|Propiedad.|de esquema JSON|
+|Propiedad.|Definición|
 |-|----------------|
 |**Name**|Nombre del escenario.|
 
 ## <a name="mix"></a>Combinación
 
-|Propiedad.|de esquema JSON|
+|Propiedad.|Definición|
 |-|----------------|
 |**Combinación de exploradores**|Especifica la combinación de exploradores web para la prueba de carga. Puede especificar tipos de explorador web diferentes y su distribución de la carga.<br /><br />Haga clic en el botón de puntos suspensivos **(…)** para abrir el cuadro de diálogo **Editar combinación de exploradores** y use **Agregar** y **Quitar** para seleccionar los tipos de exploradores web de la prueba de carga.<br /><br />Para obtener más información, vea [Especificar tipos de exploradores web](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).|
 |**Combinación de redes**|Especifica la combinación de redes para la prueba de carga. Puede especificar qué tipos de red incluir y su distribución de carga.<br /><br />Haga clic en el botón de puntos suspensivos **(…)** para abrir el cuadro de diálogo **Editar combinación de redes** y use **Agregar** y **Quitar** para seleccionar los tipos de redes de la prueba de carga.<br /><br />Para obtener más información, vea [Especificar tipos de redes virtuales en un escenario de prueba de carga](../test/specify-virtual-network-types-in-a-load-test-scenario.md).|
@@ -39,7 +39,7 @@ Cambie la configuración de las propiedades de los escenarios de prueba de carga
 
 ## <a name="options"></a>Opciones
 
-|Propiedad.|de esquema JSON|
+|Propiedad.|Definición|
 |-|----------------|
 |**Agentes que se usarán**|Especifica los agentes que se quieren usar en el escenario si la prueba de carga se ejecuta de forma remota. Por ejemplo, puede especificar un conjunto específico de agentes para mantener la coherencia al analizar las tendencias de rendimiento. Además, los agentes pueden estar distribuidos geográficamente, de forma que haya una afinidad entre los scripts que ejecutan y dónde se encuentra el agente.<br /><br />Los agentes deben estar separados por comas, por ejemplo, "**Agent1, Agent2, Agent3**". Al dejar la propiedad en blanco se indica que el escenario debería utilizar todos los agentes disponibles.<br /><br />Para obtener más información, vea [Cómo: Especificar los agentes de pruebas que se van a usar](../test/how-to-specify-test-agents-to-use-in-load-test-scenarios.md).|
 |**Aplicar distribución a intervalo de velocidad**|Valor booleano que se usa para especificar si se quieren aplicar retrasos de distribución típicos en el modelo de combinación de pruebas de la velocidad del usuario. Esta propiedad solo se aplica si la propiedad **Tipo de combinación de pruebas** está establecida en **A partir de la velocidad del usuario**.<br /><br />Para obtener más información, vea [Cómo: Aplicar distribución a intervalo de velocidad](../test/how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md)|
@@ -48,9 +48,9 @@ Cambie la configuración de las propiedades de los escenarios de prueba de carga
 |**Porcentaje de nuevos usuarios**|Valor numérico que especifica el porcentaje de nuevos usuarios o primeros visitantes en el escenario.<br /><br />Para obtener más información, vea [Cómo: Especificar el porcentaje de usuarios virtuales que usan datos de caché web](../test/how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data.md).|
 |**Perfil de reflexión de usuario**|Especifica si el escenario va a usar **Distribución normal** o si el perfil de reflexión está **Activado** o **Desactivado**.<br /><br />Para obtener más información, vea [Modificar los tiempos de reflexión para simular los retrasos de la interacción humana en un sitio web en escenarios de pruebas de carga](../test/edit-think-times-in-load-test-scenarios.md).|
 
-## <a name="timing"></a>Intervalos
+## <a name="timing"></a>Control de tiempo
 
-|Propiedad.|de esquema JSON|
+|Propiedad.|Definición|
 |-|----------------|
 |**Retrasar hora de inicio**|Un valor que indica cuántas horas, minutos y segundos se retrasa el inicio del escenario después de iniciar la prueba de carga. Si la propiedad **Deshabilitar durante el calentamiento** está establecida en **True**, la cantidad de tiempo de espera se aplica después del período de preparación.<br /><br />Para más información, consulte [Configurar el retraso de la hora de inicio del escenario](../test/configure-scenario-start-delays.md).|
 |**Deshabilitar durante el calentamiento**|Valor booleano que se usa para especificar si el escenario se debe ejecutar o no durante el valor de tiempo de la propiedad **Deshabilitar durante el calentamiento** especificado en el parámetro de ejecución de la prueba de carga.<br /><br />Para obtener más información sobre las propiedades de los parámetros de ejecución de pruebas de carga, vea [Propiedades de los parámetros de ejecución de las pruebas de carga](../test/load-test-run-settings-properties.md).<br /><br />Para más información, consulte [Configurar el retraso de la hora de inicio del escenario](../test/configure-scenario-start-delays.md).|

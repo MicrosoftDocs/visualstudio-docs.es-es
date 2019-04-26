@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e3a77797cb519294c16329a432cf742746293c13
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: a8d3e78e4bd49c36174280c62ca8f24cdbd7f648
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983408"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440033"
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>Configuraciones de conjuntos de herramientas estándar y personalizados
 Un conjunto de herramientas de MSBuild contiene referencias a tareas, destinos y herramientas que puede usar para compilar un proyecto de aplicación. MSBuild incluye un conjunto de herramientas estándar, pero también puede crear conjuntos de herramientas personalizados. Para obtener información sobre cómo especificar un conjunto de herramientas, consulte [Conjunto de herramientas (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)
@@ -68,7 +68,7 @@ Visual Studio 2017 y versiones posteriores no usan una clave del Registro para l
  La propiedad de compilación `VisualStudioVersion` indica si un subconjunto de herramientas se activa. Por ejemplo, un valor de `VisualStudioVersion` de "12.0" especifica el subconjunto de herramientas de MSBuild 12.0. Para obtener más información, vea la sección de subconjuntos de herramientas de [Conjunto de herramientas (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md).
 
 > [!NOTE]
->  Se recomienda no cambiar esta configuración. No obstante, puede agregar sus propios valores y especificar las definiciones del conjunto de herramientas personalizado para todos los equipos, como se describe en la sección siguiente.
+> Se recomienda no cambiar esta configuración. No obstante, puede agregar sus propios valores y especificar las definiciones del conjunto de herramientas personalizado para todos los equipos, como se describe en la sección siguiente.
 
 ## <a name="custom-toolset-definitions"></a>Definiciones de conjuntos de herramientas personalizados
  Cuando un conjunto de herramientas estándar no cumple sus requisitos de compilación, puede crear un conjunto de herramientas personalizado. Por ejemplo, puede tener un escenario de laboratorio de compilación en el que necesite un sistema independiente para compilar proyectos de [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]. Mediante un conjunto de herramientas personalizado, puede asignar valores personalizados al atributo `ToolsVersion` al crear proyectos o ejecutar *MSBuild.exe*. De este modo, también podrá usar la propiedad `$(MSBuildToolsPath)` para importar los archivos *.targets* de ese directorio, así como para definir sus propias propiedades de conjunto de herramientas personalizado que puede usar en cualquier proyecto que utilice ese conjunto de herramientas.
@@ -97,12 +97,12 @@ Visual Studio 2017 y versiones posteriores no usan una clave del Registro para l
 ```
 
 > [!NOTE]
->  Para que se lea correctamente, `<configSections>` debe ser la primera subsección de la sección `<configuration>`.
+> Para que se lea correctamente, `<configSections>` debe ser la primera subsección de la sección `<configuration>`.
 
  `ToolsetConfigurationSection` es una sección de configuración personalizada que puede usar cualquier host de MSBuild para la configuración personalizada. Si utiliza un conjunto de herramientas personalizado, un host no tiene que hacer nada para inicializar el motor de compilación excepto proporcionar las entradas del archivo de configuración. Al definir las entradas del Registro, puede especificar conjuntos de herramientas para todos los equipos que se aplican a *MSBuild.exe*, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] y todos los hosts de MSBuild.
 
 > [!NOTE]
->  Si un archivo de configuración define los valores de un elemento `ToolsVersion` ya definido en el Registro, las dos definiciones no se combinan. La definición del archivo de configuración tiene prioridad y los valores del Registro para ese elemento `ToolsVersion` se omiten.
+> Si un archivo de configuración define los valores de un elemento `ToolsVersion` ya definido en el Registro, las dos definiciones no se combinan. La definición del archivo de configuración tiene prioridad y los valores del Registro para ese elemento `ToolsVersion` se omiten.
 
  Las propiedades siguientes son específicas del valor de `ToolsVersion` que se usa en los proyectos:
 

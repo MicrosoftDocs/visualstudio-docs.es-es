@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 78fe110ee6abf70d091f9d7c1f67b56608f82c27
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 742b2b1660b5a1776edca0a4b64c56222cd1c163
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57982992"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62777644"
 ---
 # <a name="xsd-task"></a>XSD (tarea)
 Encapsula la herramienta de definición de esquema XML (*xsd.exe*), que genera archivos de esquema o clase desde un origen.
@@ -36,13 +36,13 @@ Encapsula la herramienta de definición de esquema XML (*xsd.exe*), que genera a
 ## <a name="parameters"></a>Parámetros
  En la siguiente tabla se describen los parámetros de la tarea **XSD**.
 
--   **AdditionalOptions**
+- **AdditionalOptions**
 
      Parámetro **String** opcional.
 
      Una lista de opciones especificada en la línea de comando. Por ejemplo, /\<option1> /\<option2> /\<option#>. Utilice este parámetro para especificar opciones que no están representadas por ningún otro parámetro de tarea **XSD**.
 
--   **GenerateFromSchema**
+- **GenerateFromSchema**
 
      Parámetro **String** opcional.
 
@@ -50,11 +50,11 @@ Encapsula la herramienta de definición de esquema XML (*xsd.exe*), que genera a
 
      Especifique uno de los valores siguientes, cada uno de los cuales corresponde a una opción XSD.
 
-    -   **classes** - **/classes**
+    - **classes** - **/classes**
 
-    -   **dataset** - **/dataset**
+    - **dataset** - **/dataset**
 
--   **Idioma**
+- **Idioma**
 
      Parámetro **String** opcional.
 
@@ -62,25 +62,25 @@ Encapsula la herramienta de definición de esquema XML (*xsd.exe*), que genera a
 
      Elija entre **CS** (C#, que es el valor predeterminado), **VB** (Visual Basic) o **JS** (JScript). También se puede especificar un nombre completo para una clase que implemente `System.CodeDom.Compiler.CodeDomProvider Class`.
 
--   **Namespace**
+- **Namespace**
 
      Parámetro **String** opcional.
 
      Especifica el espacio de nombres del motor en tiempo de ejecución para los tipos generados.
 
--   **Sources**
+- **Sources**
 
      Parámetro `ITaskItem[]` requerido.
 
      Define una matriz de elementos de archivo origen de MSBuild que las tareas pueden consumir y emitir.
 
--   **SuppressStartupBanner**
+- **SuppressStartupBanner**
 
      Parámetro **Boolean** opcional.
 
      Si es `true`, evita que se muestre el copyright y el mensaje de número de versión cuando la tarea se inicia. 
 
--   **TrackerLogDirectory**
+- **TrackerLogDirectory**
 
      Parámetro **String** opcional.
 

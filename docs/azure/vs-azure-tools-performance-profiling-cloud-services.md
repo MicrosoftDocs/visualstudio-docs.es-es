@@ -9,11 +9,11 @@ ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: mikejo
 ms.openlocfilehash: fd436a6b7e38c8f76de5d113c326e194e4011155
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323206"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62427421"
 ---
 # <a name="testing-the-performance-of-a-cloud-service"></a>Probar el rendimiento de un servicio en la nube
 ## <a name="overview"></a>Información general

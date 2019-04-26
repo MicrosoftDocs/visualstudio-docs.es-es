@@ -15,23 +15,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 28f0c1ad2026a23833f777a7a40dffc76e3a379c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e95e532e97253fc8ba338e27879d80dd9d664118
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56632698"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62420110"
 ---
 # <a name="summary-view"></a>Vista Resumen
 En la vista Resumen se muestra información sobre las funciones o los objetos más exigentes en una generación de perfiles. Esta vista proporciona un gráfico de escala de tiempo y dos o más listas de las funciones o los objetos más exigentes según las métricas de rendimiento del método de generación de perfiles. Los datos de esta vista dependen del método de generación de perfiles utilizado (muestreo, instrumentación o simultaneidad) y de si se ha recopilado la asignación de memoria de .NET.
 
  Para todas las vistas Resumen, salvo la de datos de simultaneidad, el gráfico de escala de tiempo de la vista Resumen muestra la utilización del procesador (CPU) de la aplicación de la que se generan perfiles durante el tiempo en que se ha producido la generación de perfiles.
 
--   Si especifica un segmento de tiempo en el gráfico, puede volver a analizar los datos para ese segmento o acercar la presentación de la escala de tiempo al segmento especificado. Para obtener más información, vea [Cómo: Filtrar vistas de informe desde la escala de tiempo de resumen](../profiling/how-to-filter-report-views-from-the-summary-timeline.md)
+- Si especifica un segmento de tiempo en el gráfico, puede volver a analizar los datos para ese segmento o acercar la presentación de la escala de tiempo al segmento especificado. Para obtener más información, vea [Cómo: Filtrar vistas de informe desde la escala de tiempo de resumen](../profiling/how-to-filter-report-views-from-the-summary-timeline.md)
 
--   Puede hacer clic en una función en una lista de la vista Resumen para abrir la vista Detalles de la función. También puede hacer clic con el botón derecho en la función para acceder a otras opciones de vista.
+- Puede hacer clic en una función en una lista de la vista Resumen para abrir la vista Detalles de la función. También puede hacer clic con el botón derecho en la función para acceder a otras opciones de vista.
 
--   Para modificar el número de elementos que aparecen en las listas de la vista Resumen, abra el menú **Herramientas**, elija **Opciones** y, a continuación, haga clic en **Herramientas de rendimiento**. En **Configuración general**, modifique el valor **Número de funciones de la vista Resumen**.
+- Para modificar el número de elementos que aparecen en las listas de la vista Resumen, abra el menú **Herramientas**, elija **Opciones** y, a continuación, haga clic en **Herramientas de rendimiento**. En **Configuración general**, modifique el valor **Número de funciones de la vista Resumen**.
 
 ## <a name="notifications-links"></a>Vínculos de notificaciones
  Puede hacer clic en los vínculos de la lista de notificaciones para establecer opciones de presentación para el informe. La lista está situada a la derecha del gráfico de escala de tiempo.
@@ -43,7 +43,6 @@ En la vista Resumen se muestra información sobre las funciones o los objetos m�
 
 ## <a name="report"></a>Informe
  Puede hacer clic en los vínculos de la lista del informe para abrir vistas diferentes y para comparar, guardar o filtrar el informe. La lista está situada a la derecha del gráfico de escala de tiempo.
-
 
 | | |
 |----------------------------| - |

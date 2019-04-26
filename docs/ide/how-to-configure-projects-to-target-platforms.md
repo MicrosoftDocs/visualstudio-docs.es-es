@@ -1,5 +1,5 @@
 ---
-title: Filtrar Configuración de proyectos para plataformas de destino
+title: Procedimiento Configuración de proyectos para plataformas de destino
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
 ms.topic: conceptual
@@ -18,14 +18,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee7c0ee30ebe5a424439aab8e06c18c10fc679bf
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a014e4210f1c94637564e5db86846ed2ade29468
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942120"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438187"
 ---
-# <a name="how-to-configure-projects-to-target-platforms"></a>Filtrar Configuración de proyectos para plataformas de destino
+# <a name="how-to-configure-projects-to-target-platforms"></a>Procedimiento Configuración de proyectos para plataformas de destino
 
 Visual Studio permite configurar las aplicaciones para distintas plataformas de destino, incluidas las de 64 bits. Para más información sobre la compatibilidad con plataformas de 64 bits en Visual Studio, vea [Aplicaciones de 64 bits](/dotnet/framework/64-bit-apps).
 
@@ -35,20 +35,20 @@ El **Administrador de configuración** proporciona una forma de agregar rápidam
 
 ### <a name="to-configure-a-project-to-target-a-64-bit-platform"></a>Para configurar un proyecto para una plataforma de destino de 64 bits
 
-1.  En la barra de menús, elija **Compilar** > **Administrador de configuración**.
+1. En la barra de menús, elija **Compilar** > **Administrador de configuración**.
 
-2.  En la lista **Plataforma de soluciones activas**, elija una plataforma de 64 bits para la solución de destino y luego elija el botón **Cerrar**.
+2. En la lista **Plataforma de soluciones activas**, elija una plataforma de 64 bits para la solución de destino y luego elija el botón **Cerrar**.
 
-    1.  Si la plataforma que quiere no aparece en la lista **Plataforma de soluciones activas**, seleccione **Nueva**.
+    1. Si la plataforma que quiere no aparece en la lista **Plataforma de soluciones activas**, seleccione **Nueva**.
 
          Aparecerá el cuadro de diálogo **Nueva plataforma de solución**.
 
-    2.  En la lista **Escriba o seleccione la nueva plataforma**, elija **x64**.
+    2. En la lista **Escriba o seleccione la nueva plataforma**, elija **x64**.
 
         > [!NOTE]
-        >  Si asigna un nuevo nombre a la configuración, es posible que tenga que modificar la configuración del **Diseñador de proyectos** para seleccionar la plataforma correcta como destino.
+        > Si asigna un nuevo nombre a la configuración, es posible que tenga que modificar la configuración del **Diseñador de proyectos** para seleccionar la plataforma correcta como destino.
 
-    3.  Si quiere copiar la configuración de una configuración de plataforma actual, selecciónela y luego elija el botón **Aceptar**.
+    3. Si quiere copiar la configuración de una configuración de plataforma actual, selecciónela y luego elija el botón **Aceptar**.
 
 Se actualizarán las propiedades de todos los proyectos que tienen como destino la plataforma de 64 bits y la próxima compilación del proyecto se optimizará para plataformas de 64 bits.
 

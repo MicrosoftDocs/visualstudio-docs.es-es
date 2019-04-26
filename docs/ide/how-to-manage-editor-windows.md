@@ -1,5 +1,5 @@
 ---
-title: Filtrar Administrar las ventanas del editor
+title: Procedimiento Administrar las ventanas del editor
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,14 +13,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 90c762e07ac57da0b9abf41c8eb99cdcdbb57922
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: be0c11509dc72baf8ab34cf2ef850fec352a9877
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949270"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62429020"
 ---
-# <a name="how-to-manage-editor-windows"></a>Filtrar Administrar las ventanas del editor
+# <a name="how-to-manage-editor-windows"></a>Procedimiento Administrar las ventanas del editor
 
 Puede trabajar con código en varias ubicaciones a la vez. Para ello, divida una ventana del editor o abra varias instancias de ventanas del editor.
 
@@ -33,9 +33,9 @@ Una instancia de una ventana del editor se puede dividir en dos vistas independi
 
 ### <a name="to-split-a-pane"></a>Para dividir un panel
 
-1.  Haga clic en la ventana del editor para que pase al primer plano.
+1. Haga clic en la ventana del editor para que pase al primer plano.
 
-2.  En el menú **Ventana**, seleccione **Dividir**.
+2. En el menú **Ventana**, seleccione **Dividir**.
 
      El área de edición se divide en dos paneles separados por una barra divisora. Puede desplazar estos paneles de forma independiente para ver y editar distintas partes del documento activo al mismo tiempo. Los cambios realizados en un panel se reflejarán en el otro.
 
@@ -44,7 +44,7 @@ Una instancia de una ventana del editor se puede dividir en dos vistas independi
 
 ### <a name="to-return-to-single-pane-view"></a>Para volver a la vista de panel único
 
--   En el menú **Ventana**, seleccione **Quitar división**.
+- En el menú **Ventana**, seleccione **Quitar división**.
 
 ## <a name="create-new-windows"></a>Crear nuevas ventanas
 

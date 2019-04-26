@@ -11,14 +11,14 @@ ms.assetid: 716c2af5-8737-4d31-956f-a0273f7c5c0c
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7bc496c4f6a445ffd43e992302457bdb92f3239a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 477ab8ce86188af9a3db03b92e1ea0f574d8a6a3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949868"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949931"
 ---
-# <a name="how-to-export-load-test-results-from-a-repository"></a>Filtrar para exportar resultados de pruebas de carga desde un repositorio
+# <a name="how-to-export-load-test-results-from-a-repository"></a>Procedimiento para exportar resultados de pruebas de carga desde un repositorio
 
 Cuando se ejecutan pruebas de carga, cualquier información recolectada durante una ejecución se almacena en el repositorio de resultados de pruebas de carga. El repositorio de resultados de pruebas de carga contiene datos de los contadores de rendimiento e información acerca de los errores que se hayan producido. Para obtener más información, vea [Administrar resultados de pruebas de carga en el repositorio de resultados de pruebas de carga](../test/manage-load-test-results-in-the-load-test-results-repository.md).
 
@@ -28,25 +28,25 @@ Puede administrar los resultados de pruebas de carga desde el Editor de pruebas 
 
 ## <a name="to-export-results-from-a-repository"></a>Para exportar resultados de un repositorio
 
-1.  En un proyecto de prueba de carga y rendimiento web, abra una prueba de carga.
+1. En un proyecto de prueba de carga y rendimiento web, abra una prueba de carga.
 
-2.  En la barra de herramientas insertada, elija **Abrir y administrar resultados**.
+2. En la barra de herramientas insertada, elija **Abrir y administrar resultados**.
 
      Se muestra el cuadro de diálogo **Abrir y administrar resultados de pruebas de carga**.
 
-3.  En **Escriba un nombre de controlador para buscar resultados de pruebas de carga**, seleccione un controlador. Seleccione **\<Local - Sin controlador>** para acceder a los resultados almacenados en local.
+3. En **Escriba un nombre de controlador para buscar resultados de pruebas de carga**, seleccione un controlador. Seleccione **\<Local - Sin controlador>** para acceder a los resultados almacenados en local.
 
-4.  En **Mostrar resultados para la siguiente prueba de carga**, seleccione la prueba de carga cuyos resultados quiere ver. Seleccione **\<Mostrar resultados de todas las pruebas>** para ver todos los resultados de todas las pruebas.
+4. En **Mostrar resultados para la siguiente prueba de carga**, seleccione la prueba de carga cuyos resultados quiere ver. Seleccione **\<Mostrar resultados de todas las pruebas>** para ver todos los resultados de todas las pruebas.
 
      Si hay resultados de pruebas de carga disponibles, aparecen en la lista **Resultados de pruebas de carga**. Las columnas son **Hora**, **Duración**, **Usuario**, **Resultado**, **Prueba** y **Descripción**. **Prueba** contiene el nombre de la prueba y **Descripción** incluye la descripción opcional que se ha agregado antes de ejecutar la prueba. La columna **Descripción** muestra las descripciones breves que se han escrito en los **Comentarios de análisis** de este resultado de prueba.
 
-5.  En la lista **Resultados de pruebas de carga**, elija un resultado. Puede usar las teclas **Mayús**, **Ctrl** o ambas para seleccionar varios resultados y exportarlos a un único archivo.
+5. En la lista **Resultados de pruebas de carga**, elija un resultado. Puede usar las teclas **Mayús**, **Ctrl** o ambas para seleccionar varios resultados y exportarlos a un único archivo.
 
-6.  Elija **Exportar**.
+6. Elija **Exportar**.
 
      Aparecerá el cuadro de diálogo **Exportar resultados de la prueba de carga**.
 
-7.  Escriba un nombre en el cuadro **Nombre de archivo** y, luego, elija **Guardar**.
+7. Escriba un nombre en el cuadro **Nombre de archivo** y, luego, elija **Guardar**.
 
      Los resultados se exportan a un archivo de almacenamiento.
 

@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a668e64f6b8a10cf22e08575ca9c2df385131666
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d42087b023718cd31528a2e5d60e2a43e34097c4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930472"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62792223"
 ---
 # <a name="advanced-build-settings-dialog-box-c"></a>Configuración de compilación avanzada (Cuadro de diálogo, C#)
 
@@ -75,7 +75,7 @@ Especifica el tipo de información de depuración generado por el compilador. Pa
 
    Permite depurar el código fuente cuando el programa se inicia en el depurador, pero solo mostrará el ensamblador cuando el programa que se ejecuta está asociado al depurador.
 
--  **portable**
+- **portable**
 
    Genera un archivo .PDB, un archivo de símbolos portátil no específico de plataforma que proporciona a otras herramientas, especialmente depuradores, información sobre qué se encuentra en el archivo ejecutable principal y cómo se ha generado. Vea [PDB portátil](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/portable_pdb.md) para obtener más información.
 

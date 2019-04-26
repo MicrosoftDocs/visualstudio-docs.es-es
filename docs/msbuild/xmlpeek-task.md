@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 19b8273617955092519bf16f0aa5b3fbea86218a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645074"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62777826"
 ---
 # <a name="xmlpeek-task"></a>XmlPeek (tarea)
 Devuelve valores conforme a lo que especifica una consulta XPath de un archivo XML.

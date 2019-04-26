@@ -9,12 +9,12 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fe18719e55a59abfcbde35195ed499fe9882c6c
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 623aa21e94ff25b8190bae82ca836ed16f64bcaa
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58146076"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62548448"
 ---
 # <a name="installation"></a>Instalación
 
@@ -87,6 +87,7 @@ La propia instalación de los marcos de aprendizaje profundo se basa en PIP.
 Luego, debemos comprobar que Python 3.5 se ha instalado correctamente y actualizar PIP a la versión más reciente ejecutando los siguientes comandos en un terminal:
 
 - **Windows**
+
     ```cmd
     C:\Users\test>python -V
     Python 3.5.4
@@ -98,6 +99,7 @@ Luego, debemos comprobar que Python 3.5 se ha instalado correctamente y actualiz
     ```
 
 - **macOS**
+
     ```bash
     MyMac:~ test$ python3.5 -V
     Python 3.5.4
@@ -159,10 +161,13 @@ Vaya [aquí](https://caffe2.ai/docs/getting-started.html) para crearlo a partir 
 Para instalar MXNet, ejecute el siguiente comando en un terminal:
 
 - Con GPU
+
     ```bash
     pip3.5 install mxnet-cu80==0.12.0
     ```
+
 - Sin GPU
+
     ```bash
     pip3.5 install mxnet==0.12.0
     ```

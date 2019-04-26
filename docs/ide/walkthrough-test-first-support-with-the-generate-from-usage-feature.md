@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d4862bc9d4dc43549a1b0d5050035dbb8dd407b
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 3085e2f9b27d587f26fd93db06bc837527a78ff1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355635"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432033"
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>Tutorial: Desarrollo basado en pruebas previas con la característica de generación a partir del uso
 
@@ -50,13 +50,13 @@ En este tema se muestra cómo usar la característica [Generar a partir del uso]
 
 ### <a name="add-a-reference-to-the-class-library-project"></a>Agregar una referencia al proyecto de biblioteca de clases
 
-1.  En el **Explorador de soluciones**, en el proyecto de prueba unitaria, haga clic con el botón derecho en la entrada **Referencias** y elija **Agregar referencia**.
+1. En el **Explorador de soluciones**, en el proyecto de prueba unitaria, haga clic con el botón derecho en la entrada **Referencias** y elija **Agregar referencia**.
 
-2.  En el cuadro de diálogo **Administrador de referencias**, seleccione **Proyectos** y, después, seleccione el proyecto de biblioteca de clases.
+2. En el cuadro de diálogo **Administrador de referencias**, seleccione **Proyectos** y, después, seleccione el proyecto de biblioteca de clases.
 
-3.  Elija **Aceptar** para cerrar el cuadro de diálogo **Administrador de referencias**.
+3. Elija **Aceptar** para cerrar el cuadro de diálogo **Administrador de referencias**.
 
-4.  Guarde la solución. Ahora ya está listo para empezar a escribir pruebas.
+4. Guarde la solución. Ahora ya está listo para empezar a escribir pruebas.
 
 ### <a name="generate-a-new-class-from-a-unit-test"></a>Generar una nueva clase de una prueba unitaria
 
@@ -65,7 +65,7 @@ En este tema se muestra cómo usar la característica [Generar a partir del uso]
 2. Busque la declaración de la clase `UnitTest1` y cambie su nombre a `AutomobileTest`.
 
    > [!NOTE]
-   >  IntelliSense proporciona ahora dos alternativas para la finalización de instrucciones de IntelliSense: el *modo de finalización* y el *modo de sugerencia*. Use el modo de sugerencia para situaciones en que se usan clases y miembros antes de definirlos. Cuando se abre una ventana de **IntelliSense**, puede presionar **CTRL**+**Alt**+**Barra espaciadora** para alternar entre el modo de finalización y el modo de sugerencia. Vea [Usar IntelliSense](../ide/using-intellisense.md) para obtener más información. El modo de sugerencia le ayudará cuando escriba `Automobile` en el paso siguiente.
+   > IntelliSense proporciona ahora dos alternativas para la finalización de instrucciones de IntelliSense: el *modo de finalización* y el *modo de sugerencia*. Use el modo de sugerencia para situaciones en que se usan clases y miembros antes de definirlos. Cuando se abre una ventana de **IntelliSense**, puede presionar **CTRL**+**Alt**+**Barra espaciadora** para alternar entre el modo de finalización y el modo de sugerencia. Vea [Usar IntelliSense](../ide/using-intellisense.md) para obtener más información. El modo de sugerencia le ayudará cuando escriba `Automobile` en el paso siguiente.
 
 3. Busque el método `TestMethod1()` y cambie su nombre a `DefaultAutomobileIsInitializedCorrectly()`. En este método, cree una instancia de una clase denominada `Automobile`, como se muestra en las siguientes capturas de pantalla. Aparece un subrayado ondulado, que indica un error en tiempo de compilación, y una bombilla de error de [Acciones rápidas](../ide/quick-actions.md) en el margen izquierdo o directamente debajo de la línea ondulada si se sitúa el cursor encima.
 
@@ -107,12 +107,11 @@ Ahora vamos a crear un método de prueba que generará un código auxiliar de co
      [!code-csharp[VbTDDWalkthrough#2](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_2.cs)]
      [!code-vb[VbTDDWalkthrough#2](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_2.vb)]
 
-2.  Haga clic en la bombilla de error de **Acciones rápidas** situada debajo de la línea roja ondulada y, luego, haga clic en **Generar constructor en "Automobile"**.
+2. Haga clic en la bombilla de error de **Acciones rápidas** situada debajo de la línea roja ondulada y, luego, haga clic en **Generar constructor en "Automobile"**.
 
      En el archivo de clase `Automobile` , observe que el nuevo constructor ha examinado los nombres de las variables locales que se usan en la llamada al constructor, ha encontrado propiedades que tienen los mismos nombres en la clase `Automobile` y el código proporcionado en el cuerpo del constructor para almacenar los valores de argumento en las propiedades `Model` y `TopSpeed` .
 
-
-3.  Después de generar el nuevo constructor, aparece un subrayado ondulado bajo la llamada al constructor predeterminado en `DefaultAutomobileIsInitializedCorrectly`. El mensaje de error indica que la clase `Automobile` no tiene ningún constructor que no tome ningún argumento. Para generar un constructor predeterminado explícito que no tenga parámetros, haga clic en la bombilla de error de **Acciones rápidas** y, luego, en **Generar constructor en "Automobile"**.
+3. Después de generar el nuevo constructor, aparece un subrayado ondulado bajo la llamada al constructor predeterminado en `DefaultAutomobileIsInitializedCorrectly`. El mensaje de error indica que la clase `Automobile` no tiene ningún constructor que no tome ningún argumento. Para generar un constructor predeterminado explícito que no tenga parámetros, haga clic en la bombilla de error de **Acciones rápidas** y, luego, en **Generar constructor en "Automobile"**.
 
 ### <a name="generate-a-stub-for-a-method"></a>Generar un código auxiliar para un método
 Suponga que la especificación indica que un nuevo `Automobile` se puede poner en estado de `IsRunning` si sus propiedades `Model` y `TopSpeed` se establecen en un valor distinto de los valores predeterminados.
@@ -122,15 +121,15 @@ Suponga que la especificación indica que un nuevo `Automobile` se puede poner e
      [!code-csharp[VbTDDWalkthrough#3](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_3.cs)]
      [!code-vb[VbTDDWalkthrough#3](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_3.vb)]
 
-2.  Haga clic en la bombilla de error de **Acciones rápidas** de la llamada al método `myAuto.Start` y luego en **Generar método "Automobile.Start"**.
+2. Haga clic en la bombilla de error de **Acciones rápidas** de la llamada al método `myAuto.Start` y luego en **Generar método "Automobile.Start"**.
 
-3.  Haga clic en la bombilla **Acciones rápidas** de la propiedad `IsRunning` y, luego, haga clic en **Generar propiedad "Automobile.IsRunning"**.
+3. Haga clic en la bombilla **Acciones rápidas** de la propiedad `IsRunning` y, luego, haga clic en **Generar propiedad "Automobile.IsRunning"**.
 
      La clase `Automobile` ahora contiene un método denominado `Start()` y una propiedad denominada `IsRunning`.
 
 ### <a name="run-the-tests"></a>Ejecutar las pruebas
 
-1.  En el menú **Prueba**, elija **Ejecutar** > **Todas las pruebas**.
+1. En el menú **Prueba**, elija **Ejecutar** > **Todas las pruebas**.
 
      Los comandos **Ejecutar** > **Todas las pruebas** ejecutan todas las pruebas en todos los marcos de pruebas escritos para la solución actual. En este caso, hay dos pruebas y ambas finalizan con errores, como se esperaba. La prueba `DefaultAutomobileIsInitializedCorrectly` produce un error porque la condición `Assert.IsTrue` devuelve `False`. La prueba `AutomobileWithModelNameCanStart` produce un error porque el método `Start` de la clase `Automobile` emite una excepción.
 
@@ -138,16 +137,16 @@ Suponga que la especificación indica que un nuevo `Automobile` se puede poner e
 
      ![Resultados de pruebas no superados](../ide/media/testsfailed.png)
 
-2.  En la ventana **Resultados de pruebas**, haga doble clic en cada fila de resultados de pruebas para ir a la ubicación de cada prueba.
+2. En la ventana **Resultados de pruebas**, haga doble clic en cada fila de resultados de pruebas para ir a la ubicación de cada prueba.
 
 ### <a name="implement-the-source-code"></a>Implementar el código fuente
 
-1.  Agregue el siguiente código al constructor predeterminado hasta que las propiedades `Model`, `TopSpeed` y `IsRunning` se inicialicen con sus valores predeterminados correctos de `"Not specified"`, `-1` y `False` (o `false` para C#).
+1. Agregue el siguiente código al constructor predeterminado hasta que las propiedades `Model`, `TopSpeed` y `IsRunning` se inicialicen con sus valores predeterminados correctos de `"Not specified"`, `-1` y `False` (o `false` para C#).
 
      [!code-csharp[VbTDDWalkthrough#5](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_5.cs)]
      [!code-vb[VbTDDWalkthrough#5](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_5.vb)]
 
-2.  Cuando se llama al método `Start` , se debe establecer la marca `IsRunning` en true solo si las propiedades `Model` o `TopSpeed` se establecen en un valor distinto de su valor predeterminado. Quite `NotImplementedException` del cuerpo del método y agregue el código siguiente.
+2. Cuando se llama al método `Start` , se debe establecer la marca `IsRunning` en true solo si las propiedades `Model` o `TopSpeed` se establecen en un valor distinto de su valor predeterminado. Quite `NotImplementedException` del cuerpo del método y agregue el código siguiente.
 
      [!code-csharp[VbTDDWalkthrough#6](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_6.cs)]
      [!code-vb[VbTDDWalkthrough#6](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_6.vb)]

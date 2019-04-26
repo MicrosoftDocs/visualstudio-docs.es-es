@@ -13,18 +13,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f74c55cf6b21b67cf0f1ab8b1f862f84964e3eae
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4a36486816d9b6bdc160616b893c6d7a79dfad58
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600225"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63405780"
 ---
 # <a name="configure-performance-sessions"></a>Configurar sesiones de rendimiento
 Mediante el uso de las herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], puede recopilar una gran variedad de datos de rendimiento para un gran número de tipos de aplicaciones. En esta sección se muestra cómo utilizar las propiedades del Asistente de rendimiento, las propiedades de la sesión de rendimiento y el binario de destino para configurar las herramientas de generación de perfiles para recopilar los datos que le interesen. Las propiedades de configuración de las herramientas de generación de perfiles también pueden emplearse para controlar la cantidad de datos recopilados en una ejecución de generación de perfiles. Para más información, vea [Control de la recopilación de datos](../profiling/controlling-data-collection.md).
 
 > [!NOTE]
->  En muchos casos, utilizar las propiedades predeterminadas del Asistente de rendimiento es una forma eficaz de recopilar datos de generación de perfiles. Para más información, vea [Guía básica para la generación de perfiles de rendimiento](../profiling/beginners-guide-to-performance-profiling.md) e [Introducción](../profiling/getting-started-with-performance-tools.md).
+> En muchos casos, utilizar las propiedades predeterminadas del Asistente de rendimiento es una forma eficaz de recopilar datos de generación de perfiles. Para más información, vea [Guía básica para la generación de perfiles de rendimiento](../profiling/beginners-guide-to-performance-profiling.md) e [Introducción](../profiling/getting-started-with-performance-tools.md).
 
 ## <a name="common-tasks"></a>Tareas comunes
 

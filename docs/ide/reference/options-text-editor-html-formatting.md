@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f90e6c4bb3759adb46bf827580cc94dc4a8ed71f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 69a8d3f1b84bd59cec9e13bf50eb8eaa46795cdf
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927183"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62779024"
 ---
 # <a name="options-text-editor-html-web-forms-formatting"></a>Opciones, Editor de texto, HTML (formularios Web Forms), formato
 
@@ -41,7 +41,6 @@ Estas opciones especifican el modo en que se usan las mayúsculas y minúsculas 
 |**Minúsculas**|Los nombres de los elementos se cambian a minúsculas.|
 |**Definición de ensamblado**|El uso de mayúsculas y minúsculas viene determinado por el modo en que se define el elemento en la clase del tipo correspondiente.|
 
-
 **Etiqueta de cliente, atributos de cliente**
 
 Estas opciones especifican si el formato automático cambia los nombres de los atributos y propiedades HTML a mayúsculas o minúsculas, o si los deja tal como se escribieron.
@@ -51,7 +50,6 @@ Estas opciones especifican si el formato automático cambia los nombres de los a
 |**Tal y como se escriba**|El uso de mayúsculas y minúsculas en el atributo es exactamente como lo escribe.|
 |**Mayúsculas**|Los nombres de los atributos cambian a mayúsculas.|
 |**Minúsculas**|Los nombres de los atributos cambian a minúsculas.|
-
 
 ## <a name="automatic-formatting-options"></a>Opciones de formato automático
 
@@ -65,7 +63,6 @@ Estas opciones hacen que el Editor de vistas de código fuente agregue o quite s
 - **Insertar comillas de valores de atributos al escribir**
 
    Cuando se selecciona esta opción, el editor coloca automáticamente los atributos entre comillas cuando se escriben (por ejemplo: ID="Select1"). Desactive esta opción si prefiere insertar las comillas manualmente.
-
 
    > [!NOTE]
    > Tanto si se selecciona esta opción como si no, todas las comillas existentes en el código de marcado se conservan; las comillas nunca se eliminan.

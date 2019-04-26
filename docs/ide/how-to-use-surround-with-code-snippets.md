@@ -11,13 +11,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0bf279502c52c47a68ea7eb5fb5c193e7d31e4d6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952273"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62428214"
 ---
-# <a name="how-to-use-surround-with-code-snippets"></a>Filtrar Usar fragmentos de código envolventes
+# <a name="how-to-use-surround-with-code-snippets"></a>Procedimiento Usar fragmentos de código envolventes
 
 Los siguientes procedimientos describen cómo usar fragmentos de código envolventes. Los fragmentos de código envolventes están disponibles de tres maneras: mediante un método abreviado de teclado, desde del menú **Edición** y mediante el menú contextual.
 

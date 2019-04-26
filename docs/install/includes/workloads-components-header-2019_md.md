@@ -6,11 +6,11 @@ ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
 ms.openlocfilehash: ad7ed11ec45bc8e8ab1bc6ce1eeda624cf2f2639
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58051971"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62553789"
 ---
 Al establecer las dependencias del manifiesto de VSIX, debe especificar solo identificadores de componentes. Use las tablas de esta página para determinar las dependencias de componente mínimas. En algunos casos, esto podría significar que se especifique solo un componente de una carga de trabajo. En otros escenarios, puede significar que especifique varios componentes de una sola carga de trabajo o varios componentes de varias cargas de trabajo. Para obtener más información, vea la página [Cómo: Migrar proyectos de extensibilidad a Visual Studio](../../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md).
 

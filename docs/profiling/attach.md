@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c5c734d4d0b12bea1e13ac216700be5f85ed088
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f080957774b33ca00787f061708426a62bd7768f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627342"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440297"
 ---
 # <a name="attach"></a>Attach
 La opción **Attach** de *VSPerfCmd.exe* comienza la generación de perfiles de muestra del proceso en ejecución que especifica el id. de proceso (PID).
@@ -21,7 +21,7 @@ La opción **Attach** de *VSPerfCmd.exe* comienza la generación de perfiles de 
  Para usar la opción **Attach**, debe especificar el método **Sample** en la opción Start.
 
 > [!NOTE]
->  Si la opción **Start** se ha especificado con la opción **CrossSession**, en cualquier llamada a **VSPerfCmd /Attach** o a **VSPerfCmd /Detach** también se debe especificar **CrossSession**.
+> Si la opción **Start** se ha especificado con la opción **CrossSession**, en cualquier llamada a **VSPerfCmd /Attach** o a **VSPerfCmd /Detach** también se debe especificar **CrossSession**.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -50,13 +50,13 @@ VSPerfCmd.exe /Attach:ProcessID [Options]
 
  **Timer**[**:**`Cycles`]**PF**[**:**`Events`]**Sys**[<strong>:</strong>Events]**Counter**[**:**`Name`,`Reload`,`FriendlyName`] Especifica el número y tipo del intervalo de muestreo.
 
--   **Timer**: muestrea cada `Cycles` ciclos de reloj de procesador. Si no se especifica `Cycles`, se usan 10 000 000 ciclos.
+- **Timer**: muestrea cada `Cycles` ciclos de reloj de procesador. Si no se especifica `Cycles`, se usan 10 000 000 ciclos.
 
--   **PF**: muestrea cada `Events` errores de página. Si no se especifica `Events`, se usan 10 errores de página.
+- **PF**: muestrea cada `Events` errores de página. Si no se especifica `Events`, se usan 10 errores de página.
 
--   **Sys**: muestrea cada `Events` llamadas al sistema operativo. Si no se especifica `Events`, se usan 10 llamadas del sistema.
+- **Sys**: muestrea cada `Events` llamadas al sistema operativo. Si no se especifica `Events`, se usan 10 llamadas del sistema.
 
--   **Counter**: muestrea cada número `Reload` del contador de rendimiento de la CPU que especifica `Name`. Opcionalmente, `FriendlyName` puede especificar una cadena que se usará como el encabezado de columna en los informes del generador de perfiles.
+- **Counter**: muestrea cada número `Reload` del contador de rendimiento de la CPU que especifica `Name`. Opcionalmente, `FriendlyName` puede especificar una cadena que se usará como el encabezado de columna en los informes del generador de perfiles.
 
 ## <a name="example"></a>Ejemplo
  En este ejemplo se muestra cómo adjuntar a una instancia en ejecución de una aplicación con el id. de proceso 12345.

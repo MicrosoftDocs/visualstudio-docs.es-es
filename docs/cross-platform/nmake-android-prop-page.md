@@ -19,11 +19,11 @@ f1_keywords:
 ms.workload:
 - xplat-cplusplus
 ms.openlocfilehash: ba13da583e5ea5dd6cc625e165902bbf6c408f28
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54949239"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62815719"
 ---
 # <a name="nmake-properties-android-c"></a>Propiedades de NMake (C++ para Android)
 

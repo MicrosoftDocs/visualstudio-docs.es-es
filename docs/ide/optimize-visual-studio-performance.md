@@ -12,12 +12,12 @@ f1_keywords:
 - vs.performancecenter
 ms.workload:
 - multiple
-ms.openlocfilehash: 193343c8fce810280f380b11a72b7cb6892ef18e
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: bdc605b614fab5b11c2efc8466480ebf49a1fee7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223779"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62569854"
 ---
 # <a name="optimize-visual-studio-performance"></a>Optimización del rendimiento de Visual Studio
 
@@ -25,11 +25,11 @@ Este artículo proporciona algunas sugerencias que se pueden probar en el caso d
 
 ## <a name="upgrade-visual-studio"></a>Actualizar Visual Studio
 
-Si actualmente usa Visual Studio 2015, descargue [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) o [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) de forma gratuita para comprobar su mejora de rendimiento. Las soluciones se cargan dos o tres veces más rápido que en Visual Studio 2015, con mejoras de rendimiento también en otras áreas. Visual Studio 2017 y Visual Studio 2019 son compatibles en paralelo con Visual Studio 2015, por lo que no se pierde nada por probarlo.
+Si actualmente usa Visual Studio 2015, descargue [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) o [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) de forma gratuita para comprobar su mejora de rendimiento. Las soluciones se cargan dos o tres veces más rápido que en Visual Studio 2015, con mejoras de rendimiento también en otras áreas. Visual Studio 2017 y Visual Studio 2019 son compatibles en paralelo con Visual Studio 2015, por lo que no se pierde nada por probarlo.
 
 ::: moniker range="vs-2017"
 
-Si ya usa Visual Studio 2017, asegúrese de que está ejecutando la versión 15.6 o posterior. Los datos demuestran que las soluciones se cargan dos o tres veces más rápido en la versión 15.6. Descárguela [aquí](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017).
+Si ya usa Visual Studio 2017, asegúrese de que está ejecutando la versión 15.6 o posterior. Los datos demuestran que las soluciones se cargan dos o tres veces más rápido en la versión 15.6. Descárguela [aquí](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download).
 
 ::: moniker-end
 

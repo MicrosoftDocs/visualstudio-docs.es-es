@@ -8,11 +8,11 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 ms.openlocfilehash: 57003538072c372ce877c40db76922d6eed7397d
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840823"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62433817"
 ---
 # <a name="create-an-ai-project-from-existing-code"></a>Crear un proyecto de IA a partir de código existente
 
