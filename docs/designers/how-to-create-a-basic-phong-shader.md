@@ -1,5 +1,5 @@
 ---
-title: Filtrar Crear un sombreador Phong básico
+title: Procedimiento Crear un sombreador Phong básico
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c7c69da8-142b-4d3b-9be9-4be0d5970b25
@@ -9,13 +9,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 131afbaf4fcbdf5456a6276a36c551a47b663eec
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926144"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62897790"
 ---
-# <a name="how-to-create-a-basic-phong-shader"></a>Filtrar Crear un sombreador Phong básico
+# <a name="how-to-create-a-basic-phong-shader"></a>Procedimiento Crear un sombreador Phong básico
 
 En este artículo se muestra cómo usar el Diseñador de sombras y el lenguaje DGSL (Directed Graph Shader Language) para crear un sombreador de iluminación que implementa el modelo de iluminación Phong clásico.
 

@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bc629f44ed39fb07459916f07ef430f87b00e14a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2e0efd4b4f9fb301f5bcba4a12857647a8d911f1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918889"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62899341"
 ---
 # <a name="draw-shapes-and-paths"></a>Dibujar formas y trazados
 
@@ -21,7 +21,7 @@ En el Diseñador XAML, una *forma* es exactamente lo que esperaría. por ejemplo
 
 Las formas y los trazados usan gráficos vectoriales, por lo que se adaptan bien a pantallas de alta resolución. Si quiere obtener más información sobre los gráficos vectoriales, consulte [What are Vector Graphics](https://www.youtube.com/watch?v=MoCSwF0n-io) (¿Qué son los gráficos vectoriales) o [vector graphics](http://www.webopedia.com/TERM/V/vector_graphics.html)(Gráficos vectoriales).
 
-##  <a name="Shape"></a> Dibujar una forma
+## <a name="Shape"></a> Dibujar una forma
  Las formas se encuentran en el panel **Activos** .
 
  ![Categoría Formas en el panel Activos](../designers/media/b4_shapes_assetspanel.png)
@@ -30,7 +30,7 @@ Las formas y los trazados usan gráficos vectoriales, por lo que se adaptan bien
 
  ![Handles](../designers/media/84261e83-3091-4490-ab58-4218b188439e.png)
 
-##  <a name="Path"></a> Dibujar un trazado
+## <a name="Path"></a> Dibujar un trazado
  Un trazado se compone de varias líneas y curvas conectadas. Utilice un trazado para crear formas interesantes que no están disponibles en el panel **Activos** .
 
  Los trazados se pueden dibujar con una línea, una pluma o un lápiz, herramientas que se encuentran en el panel **Herramientas** .
@@ -80,12 +80,12 @@ Las formas y los trazados usan gráficos vectoriales, por lo que se adaptan bien
 
  Use la herramienta **Selección** ![Herramienta Selección](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png) para seleccionar el trazado. Use la herramienta **Pluma** ![Herramienta Lápiz](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png) para hacer clic en cualquier lugar del trazado en el que quiera agregar el punto.
 
-##  <a name="Convert"></a> Convertir una forma en un trazado
+## <a name="Convert"></a> Convertir una forma en un trazado
  Para modificar una forma de la misma forma que se modifica un trazado, convierta la forma en un trazado.
 
  **Vea un vídeo corto:** ![Configurar las características instaladas](../designers/media/bldadminconsoleinitialconfigicon.png) [Trabajo con trazados: Convertir una forma en un trazado](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147).
 
-##  <a name="Combine"></a> Combinar trazados
+## <a name="Combine"></a> Combinar trazados
  Los trazados y las formas se pueden combinar en un único trazado.
 
  ![Combinar trazados](../designers/media/2df17a5d-a338-4ef4-96c5-dae51cc1ca8a.png)
@@ -98,7 +98,7 @@ Las formas y los trazados usan gráficos vectoriales, por lo que se adaptan bien
 
  **Vea un vídeo corto:** ![Configurar las características instaladas](../designers/media/bldadminconsoleinitialconfigicon.png) [Trabajo con trazados: Combinar trazados](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195).
 
-##  <a name="Compound"></a> Crear un trazado compuesto
+## <a name="Compound"></a> Crear un trazado compuesto
  Cuando se crea un trazado compuesto, las partes en intersección de los trazados se restan del resultado final y el trazado resultante adopta las propiedades visuales del trazado situado al fondo.
 
  Una vez creados, los trazados compuestos se pueden separar en cualquier momento.
@@ -107,7 +107,7 @@ Las formas y los trazados usan gráficos vectoriales, por lo que se adaptan bien
 
  **Vea un vídeo corto:** ![Configurar las características instaladas](../designers/media/bldadminconsoleinitialconfigicon.png) [Trabajo con trazados: Crear un trazado compuesto](https://www.youtube.com/watch?v=Io5bC0-nH6Q).
 
-##  <a name="Clipping"></a> Crear un trazado de recorte
+## <a name="Clipping"></a> Crear un trazado de recorte
  Un trazado de recorte es un trazado o forma que se aplica a otro objeto, ocultando así las partes del objeto con máscara que sobresalen del trazado de recorte.
 
  ![Trazado de recorte](../designers/media/22471e98-a841-4f39-a3ef-36090cf5a625.png)

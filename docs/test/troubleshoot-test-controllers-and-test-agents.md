@@ -11,12 +11,12 @@ ms.assetid: 77329348-3a5d-43de-b6cb-90f93296a081
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: be34e52df0442e071e666da5e66eb31f041d2941
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3ca2a69fc0f5777c34857f6f3da0c7faabcd81ce
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922178"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62990548"
 ---
 # <a name="strategies-for-troubleshooting-test-controllers-and-test-agents-in-load-tests"></a>Estrategias para solucionar problemas de controladores de pruebas y agentes de pruebas en pruebas de carga
 
@@ -24,7 +24,7 @@ En este artículo se tratan algunos problemas comunes que pueden aparecer cuando
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-##  <a name="unable-to-collect-performance-counters-on-test-agent-computer"></a>No se pueden recopilar contadores de rendimiento en el equipo de agente de pruebas
+## <a name="unable-to-collect-performance-counters-on-test-agent-computer"></a>No se pueden recopilar contadores de rendimiento en el equipo de agente de pruebas
 
 Al ejecutar una prueba de carga, puede recibir errores al intentar conectarse a un equipo de agente de prueba y recopilar los contadores de rendimiento. El servicio de registro remoto es el servicio responsable de proporcionar los datos del contador de rendimiento a un equipo remoto. En algunos sistemas operativos, el servicio Registro remoto no se inicia automáticamente. Para corregir este problema, inicie manualmente el servicio Registro remoto.
 
@@ -39,11 +39,11 @@ Puede controlar el nivel de registro de un equipo de controlador de pruebas. Res
 
 ### <a name="to-set-the-logging-level-on-a-test-controller-computer"></a>Para establecer el nivel del registro de un equipo de controlador de pruebas
 
-1.  Detenga el servicio de controlador de pruebas. En un símbolo del sistema, escriba `net stop vsttcontroller`.
+1. Detenga el servicio de controlador de pruebas. En un símbolo del sistema, escriba `net stop vsttcontroller`.
 
-2.  Abra el archivo *QTController.exe.config*. Este archivo se encuentra en el directorio de instalación del controlador.
+2. Abra el archivo *QTController.exe.config*. Este archivo se encuentra en el directorio de instalación del controlador.
 
-3.  Edite la entrada del modificador `EqtTraceLevel` de la sección de diagnósticos del sistema del archivo. Su código debería ser similar a este:
+3. Edite la entrada del modificador `EqtTraceLevel` de la sección de diagnósticos del sistema del archivo. Su código debería ser similar a este:
 
     ```xml
     <system.diagnostics>
@@ -64,23 +64,23 @@ Puede controlar el nivel de registro de un equipo de controlador de pruebas. Res
     </system.diagnostics>
     ```
 
-4.  Guarde el archivo.
+4. Guarde el archivo.
 
-5.  Inicie el servicio del controlador. En un símbolo del sistema, escriba `net start vsttcontroller`.
+5. Inicie el servicio del controlador. En un símbolo del sistema, escriba `net start vsttcontroller`.
 
 Este proceso se aplica al controlador de pruebas, y al servicio y al proceso del agente de prueba. Al diagnosticar los problemas, es útil habilitar el registro en los tres procesos. El procedimiento para establecer el nivel de registro es el mismo para los tres procesos, tal y como se especificó anteriormente para el controlador de pruebas. Para establecer los niveles de registro del servicio del agente de prueba y del proceso del agente, use los siguientes archivos de configuración:
 
--   *QTController.exe.config* Servicio del controlador.
+- *QTController.exe.config* Servicio del controlador.
 
--   *QTAgentService.exe.config* Servicio del agente.
+- *QTAgentService.exe.config* Servicio del agente.
 
--   *QTDCAgent(32).exe.config* Proceso del adaptador de datos del agente para arquitectura de 32 bits.
+- *QTDCAgent(32).exe.config* Proceso del adaptador de datos del agente para arquitectura de 32 bits.
 
--   *QTDCAgent(64).exe.config* Proceso del adaptador de datos del agente para arquitectura de 64 bits.
+- *QTDCAgent(64).exe.config* Proceso del adaptador de datos del agente para arquitectura de 64 bits.
 
--   *QTAgent(32).exe.config* Proceso de prueba del agente para arquitectura de 32 bits.
+- *QTAgent(32).exe.config* Proceso de prueba del agente para arquitectura de 32 bits.
 
--   *QTAgent(64).exe.config* Proceso de prueba del agente para arquitectura de 64 bits.
+- *QTAgent(64).exe.config* Proceso de prueba del agente para arquitectura de 64 bits.
 
 ## <a name="bind-a-test-controller-to-a-network-adapter"></a>Enlazar un controlador de pruebas a un adaptador de red
 
@@ -97,25 +97,25 @@ Para corregir este error, debe enlazar el controlador de pruebas a uno de los ad
 
 ### <a name="to-obtain-the-ip-address-of-the-network-adapter"></a>Para obtener la dirección IP del adaptador de red
 
-1.  Elija **Inicio** y, luego, **Ejecutar**.
+1. Elija **Inicio** y, luego, **Ejecutar**.
 
      Se muestra el cuadro de diálogo **Ejecutar**.
 
-2.  Escriba `cmd` y, luego, elija **Aceptar**.
+2. Escriba `cmd` y, luego, elija **Aceptar**.
 
      Se abrirá un símbolo del sistema.
 
-3.  Escriba `ipconfig /all`.
+3. Escriba `ipconfig /all`.
 
      Se muestran las direcciones IP de los adaptadores de red. Anote la dirección IP del adaptador de red al que desee enlazar el controlador.
 
 ### <a name="to-bind-a-test-controller-to-a-network-adapter"></a>Para enlazar un controlador de pruebas a un adaptador de red
 
-1.  Detenga el servicio de controlador de pruebas. En un símbolo del sistema, escriba `net stop vsttcontroller`.
+1. Detenga el servicio de controlador de pruebas. En un símbolo del sistema, escriba `net stop vsttcontroller`.
 
-2.  Abra el archivo *QTController.exe.config*. Este archivo se encuentra en *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
+2. Abra el archivo *QTController.exe.config*. Este archivo se encuentra en *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
 
-3.  Agregue una entrada para la propiedad `BindTo` a la configuración de la aplicación. Especifique la dirección IP del adaptador de red al que desee enlazar el controlador. Su código debería ser similar a este:
+3. Agregue una entrada para la propiedad `BindTo` a la configuración de la aplicación. Especifique la dirección IP del adaptador de red al que desee enlazar el controlador. Su código debería ser similar a este:
 
     ```xml
     <appSettings>
@@ -129,13 +129,13 @@ Para corregir este error, debe enlazar el controlador de pruebas a uno de los ad
     </appSettings>
     ```
 
-4.  Guarde el archivo.
+4. Guarde el archivo.
 
-5.  Inicie el servicio de controlador de pruebas. En un símbolo del sistema, escriba `net start vsttcontroller`.
+5. Inicie el servicio de controlador de pruebas. En un símbolo del sistema, escriba `net start vsttcontroller`.
 
 ### <a name="to-connect-a-test-agent-to-a-bound-controller"></a>Para conectar un agente de prueba a un controlador enlazado
 
--   Vuelva a ejecutar el proceso de instalación del agente de prueba. Esta vez, especifique la dirección IP del controlador de pruebas en lugar de su nombre.
+- Vuelva a ejecutar el proceso de instalación del agente de prueba. Esta vez, especifique la dirección IP del controlador de pruebas en lugar de su nombre.
 
 Este proceso se aplica al controlador de pruebas, y al servicio y al proceso del agente de prueba. El valor de la propiedad `BindTo` se debe establecer para cada proceso que se ejecute en un equipo que tenga más de un adaptador de red. El procedimiento para establecer la propiedad `BindTo` es el mismo para los tres procesos, tal y como se especificó anteriormente para el controlador de pruebas. Para establecer los niveles de registro del servicio del agente de pruebas y el proceso del agente de pruebas, use los archivos de configuración que se especifican en [Establecer el nivel del registro en un equipo de controlador de pruebas](#set-the-logging-level-on-a-test-controller-computer).
 

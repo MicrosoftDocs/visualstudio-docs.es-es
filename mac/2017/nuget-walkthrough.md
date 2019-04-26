@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 04/14/2017
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
 ms.custom: video
-ms.openlocfilehash: 59ee47f8971278e1be9714e8ee4e70911f612d52
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.openlocfilehash: 8b67296dc4ad77977ce6ba0399e9d9b4207e2c7f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58569307"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62989140"
 ---
 # <a name="include-a-nuget-package-in-your-project"></a>Incluir un paquete NuGet en el proyecto
 
@@ -77,9 +77,9 @@ Haga clic con el botón derecho en **Paquetes** para acceder al menú contextual
 
 ![Menú Paquetes](media/nuget-walkthrough-PackagesMenu.png)
 
-*   **Agregar paquetes**: abre la ventana para agregar más paquetes al proyecto.
-*   **Actualizar**: comprueba el servidor de origen de cada paquete y descarga las versiones más recientes.
-*   **Restaurar**: descarga todos los paquetes que faltan (sin actualizar los paquetes existentes a versiones más recientes).
+* **Agregar paquetes**: abre la ventana para agregar más paquetes al proyecto.
+* **Actualizar**: comprueba el servidor de origen de cada paquete y descarga las versiones más recientes.
+* **Restaurar**: descarga todos los paquetes que faltan (sin actualizar los paquetes existentes a versiones más recientes).
 
 Las opciones Actualizar y Restaurar también están disponibles en el nivel de solución y afectan a todos los proyectos de esta.
 
@@ -87,9 +87,9 @@ También puede hacer clic con el botón derecho en paquetes individuales para ac
 
 ![Menú Paquetes](media/nuget-walkthrough-PackageMenu.png)
 
-*   **Número de versión**: el número de versión es un elemento de menú deshabilitado que solo se proporciona con fines informativos.
-*   **Actualizar**: comprueba el servidor de origen y descarga una versión más reciente (si la hubiera).
-*   **Quitar**: quita el paquete de este proyecto y quita los ensamblados correspondientes de las referencias del proyecto.
+* **Número de versión**: el número de versión es un elemento de menú deshabilitado que solo se proporciona con fines informativos.
+* **Actualizar**: comprueba el servidor de origen y descarga una versión más reciente (si la hubiera).
+* **Quitar**: quita el paquete de este proyecto y quita los ensamblados correspondientes de las referencias del proyecto.
 
 ## <a name="adding-package-sources"></a>Adición de orígenes de paquetes
 

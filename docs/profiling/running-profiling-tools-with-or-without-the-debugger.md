@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 63215d6350a4922ed416c8c48f006cd23c9e0728
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 273dc6770f2928ed65d6a473b7f1986bc353687e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323729"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62999373"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>Ejecutar herramientas de generación de perfiles con o sin el depurador
 
@@ -33,7 +33,7 @@ Para ayudarle a decidir qué herramientas y resultados debe utilizar, tenga en c
 - El propio depurador cambia los tiempos de rendimiento ya que realiza operaciones de depurador necesarias como interceptar excepciones y modular eventos de carga.
 - Los números de rendimiento de la compilación de versión en las herramientas de **Generador de perfiles de rendimiento** son más precisos y exactos. Los resultados de la herramienta integrada del depurador son más útiles si se comparan con otras medidas relacionadas con la depuración.
 
-##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Recopilar datos de generación de perfiles durante la depuración
+## <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Recopilar datos de generación de perfiles durante la depuración
 
 Al comenzar la depuración en Visual Studio seleccionando **Depurar** > **Iniciar depuración** o presionando **F5**, la ventana **Herramientas de diagnóstico** aparece de forma predeterminada. Para abrirla manualmente, seleccione **Depurar** > **Ventanas** > **Mostrar herramientas de diagnóstico**. En la ventana **Herramientas de diagnóstico** se muestra información sobre el uso de CPU, la memoria de proceso y los eventos.
 

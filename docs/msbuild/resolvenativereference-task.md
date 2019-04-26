@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0f18549fece2db8a4a758dee17f6b4b1283d97e4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56617761"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62996618"
 ---
 # <a name="resolvenativereference-task"></a>ResolveNativeReference (tarea)
 Resuelve las referencias nativas. Implementa la clase <xref:Microsoft.Build.Tasks.ResolveNativeReference>. Esta clase admite la infraestructura de .NET Framework, que no está diseñada para utilizarse directamente desde el código.

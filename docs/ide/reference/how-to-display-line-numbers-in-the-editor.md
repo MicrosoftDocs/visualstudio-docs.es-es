@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cd3c5d9c1d17bd8a0dae4969c7203902747a8c8b
-ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58647159"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62789778"
 ---
 # <a name="how-to-display-line-numbers-in-the-editor"></a>Procedimiento Visualización de los números de línea en el editor
 

@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2fb6897d9dd603b5a86a6774336d64f51a6bb5d6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0cb6b6d7969742f4cd1c155e800464a6f645649d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908626"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62892910"
 ---
 # <a name="use-3d-assets-in-your-game-or-app"></a>Usar recursos en 3D en un juego o una aplicación
 
@@ -34,9 +34,9 @@ Para poder implementar los recursos 3D como parte de la compilación, Visual Stu
 
 ### <a name="to-add-the-build-customizations-to-your-project"></a>Para agregar las personalizaciones de compilación al proyecto
 
-1.  En el **Explorador de soluciones**, abra el menú contextual del proyecto y luego elija **Dependencias de compilación** > **Compilar personalizaciones**. Aparece el cuadro de diálogo **Archivos de personalizaciones de compilación de Visual C++**.
+1. En el **Explorador de soluciones**, abra el menú contextual del proyecto y luego elija **Dependencias de compilación** > **Compilar personalizaciones**. Aparece el cuadro de diálogo **Archivos de personalizaciones de compilación de Visual C++**.
 
-2.  En **Archivos de personalizaciones de compilación disponibles**, active las casillas correspondientes a los tipos de recursos que quiere usar en el proyecto, como se describe en la siguiente tabla:
+2. En **Archivos de personalizaciones de compilación disponibles**, active las casillas correspondientes a los tipos de recursos que quiere usar en el proyecto, como se describe en la siguiente tabla:
 
     |Tipo de activo|Nombre de personalización de compilación|
     |----------------| - |
@@ -44,23 +44,23 @@ Para poder implementar los recursos 3D como parte de la compilación, Visual Stu
     |Modelos 3D|**MeshContentTask(.targets, .props)**|
     |Sombreadores|**ShaderGraphContentTask(.targets, .props)**|
 
-3.  Elija el botón **Aceptar** .
+3. Elija el botón **Aceptar** .
 
 ## <a name="include-assets-in-your-build"></a>Incluir recursos en la compilación
  Ahora que el proyecto sabe cuáles son las diferentes clases de recursos 3D que desea usar, el paso siguiente consiste en indicarle qué archivos son recursos 3D y qué clases de recursos son.
 
 ### <a name="to-add-an-asset-to-your-build"></a>Para agregar un activo a la compilación
 
-1.  En el **Explorador de soluciones**, en el proyecto, abra el menú contextual de un recurso y, después, elija **Propiedades**. Aparece el cuadro de diálogo **Página de propiedades** del recurso.
+1. En el **Explorador de soluciones**, en el proyecto, abra el menú contextual de un recurso y, después, elija **Propiedades**. Aparece el cuadro de diálogo **Página de propiedades** del recurso.
 
-2.  Asegúrese de que las propiedades **Configuración** y **Plataforma** estén establecidas en los valores a los que quiere que se apliquen los cambios.
+2. Asegúrese de que las propiedades **Configuración** y **Plataforma** estén establecidas en los valores a los que quiere que se apliquen los cambios.
 
-3.  En **Propiedades de configuración**, elija **General** y, en la cuadrícula de propiedades, en **General**, establezca la propiedad **Tipo de elemento** en el tipo de elemento de canalización de contenido adecuado. Por ejemplo, para un archivo de imagen o de textura, elija **Canalización de contenido de la imagen**.
+3. En **Propiedades de configuración**, elija **General** y, en la cuadrícula de propiedades, en **General**, establezca la propiedad **Tipo de elemento** en el tipo de elemento de canalización de contenido adecuado. Por ejemplo, para un archivo de imagen o de textura, elija **Canalización de contenido de la imagen**.
 
     > [!IMPORTANT]
     > De forma predeterminada, Visual Studio supone que muchas clases de archivos de imagen se deben categorizar mediante el tipo de elemento **Imagen** que está integrado en Visual Studio. Por tanto, debe cambiar la propiedad **Tipo de elemento** de cada imagen que quiera que procese la canalización de contenido de la imagen. Otros tipos de archivos de código fuente de canalización de contenido para los modelos 3D y los gráficos del sombreador visual toman el valor predeterminado del **Tipo de elemento** correcto.
 
-4.  Elija el botón **Aceptar** .
+4. Elija el botón **Aceptar** .
 
 Estos son los tres tipos de elemento de canalización de contenido y los tipos de archivo de código fuente y de salida asociados.
 
@@ -76,13 +76,13 @@ Se pueden establecer las propiedades de la canalización de contenido de cada ar
 
 ### <a name="to-configure-content-pipeline-properties"></a>Para configurar las propiedades de la canalización de contenido
 
-1.  En el **Explorador de soluciones**, en el proyecto, abra el menú contextual del archivo de recursos y, después, elija **Propiedades**. Aparece el cuadro de diálogo **Página de propiedades** del recurso.
+1. En el **Explorador de soluciones**, en el proyecto, abra el menú contextual del archivo de recursos y, después, elija **Propiedades**. Aparece el cuadro de diálogo **Página de propiedades** del recurso.
 
-2.  Asegúrese de que las propiedades **Configuración** y **Plataforma** se establecen en los valores a los que quiere que se apliquen los cambios.
+2. Asegúrese de que las propiedades **Configuración** y **Plataforma** se establecen en los valores a los que quiere que se apliquen los cambios.
 
-3.  En **Propiedades de configuración**, elija el nodo de canalización de contenido (por ejemplo, **Canalización de contenido de la imagen** para los recursos de textura e imagen) y, después, establezca las propiedades en los valores adecuados en la cuadrícula de propiedades. Por ejemplo, para generar los mapas MIP para un recurso de textura en tiempo de compilación, establezca la propiedad **Generar Mips** en **Sí**.
+3. En **Propiedades de configuración**, elija el nodo de canalización de contenido (por ejemplo, **Canalización de contenido de la imagen** para los recursos de textura e imagen) y, después, establezca las propiedades en los valores adecuados en la cuadrícula de propiedades. Por ejemplo, para generar los mapas MIP para un recurso de textura en tiempo de compilación, establezca la propiedad **Generar Mips** en **Sí**.
 
-4.  Elija el botón **Aceptar** .
+4. Elija el botón **Aceptar** .
 
 ### <a name="image-content-pipeline-configuration"></a>Configuración de la canalización de contenido de imagen
 

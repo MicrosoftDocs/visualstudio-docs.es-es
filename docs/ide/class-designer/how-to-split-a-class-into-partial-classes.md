@@ -1,5 +1,5 @@
 ---
-title: Filtrar Dividir una clase en clases parciales en el Diseñador de clases
+title: Procedimiento Dividir una clase en clases parciales en el Diseñador de clases
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,13 +15,13 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 32ac7dc37787a91504988fc43636d49d2b3c9ce0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924037"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975156"
 ---
-# <a name="how-to-split-a-class-into-partial-classes-in-class-designer"></a>Filtrar Dividir una clase en clases parciales en el Diseñador de clases
+# <a name="how-to-split-a-class-into-partial-classes-in-class-designer"></a>Procedimiento Dividir una clase en clases parciales en el Diseñador de clases
 
 Puede usar la palabra clave `partial` (`Partial` en Visual Basic) para dividir la declaración de una clase o estructura entre varias declaraciones. Puede usar tantas declaraciones parciales como quiera.
 

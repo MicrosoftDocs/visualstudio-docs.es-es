@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 99bbb6ba880ace8b21ae6b6009ee84cffee79485
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56618736"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62856034"
 ---
 # <a name="logging-in-msbuild"></a>Registro de MSBuild
 El registro proporciona una manera de supervisar el progreso de una compilación. El registro captura los eventos, los mensajes, las advertencias y los errores de compilación en un archivo de registro.

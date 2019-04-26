@@ -11,14 +11,14 @@ ms.assetid: 02b6716f-569e-4961-938a-e790a0c74b5c
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0cac9e52c74b9dc830fa801005a22f0123ee2e41
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ce5b03c7973a2b6dd9766f200528ae71cf6e4cfa
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926559"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979320"
 ---
-# <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>Filtrar para recopilar datos de IntelliTrace para ayudar a depurar problemas difíciles
+# <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>Procedimiento para recopilar datos de IntelliTrace para ayudar a depurar problemas difíciles
 
 Puede configurar el adaptador de datos de diagnóstico de IntelliTrace de modo que recopile información específica de seguimiento de diagnóstico en Visual Studio. Las pruebas pueden usar este adaptador, la prueba puede obtener los eventos de diagnóstico significativos de la aplicación de forma que un desarrollador pueda usarlos después para seguir paso a paso el código y detectar la causa de un error. El adaptador de datos de diagnóstico de IntelliTrace se puede utilizar para pruebas manuales o automatizadas.
 
@@ -51,11 +51,11 @@ Antes de seguir los pasos que se describen en este procedimiento, debe abrir la 
 
 ### <a name="to-configure-the-data-to-collect-with-the-intellitrace-diagnostic-data-adapter"></a>Para configurar los datos que se van a recopilar con el adaptador de datos de diagnóstico de IntelliTrace, siga estos pasos:
 
-1.  Seleccione el rol que se usará para recopilar los datos de IntelliTrace.
+1. Seleccione el rol que se usará para recopilar los datos de IntelliTrace.
 
-2.  Seleccione **IntelliTrace**.
+2. Seleccione **IntelliTrace**.
 
-3.  Si va a agregar IntelliTrace para un rol de cliente web o para una aplicación web ASP.NET, también deberá seleccionar **ASP.NET Client Proxy for IntelliTrace and Test Impact** (ASP.NET Client Proxy for IntelliTrace and Test Impacto en las pruebas).
+3. Si va a agregar IntelliTrace para un rol de cliente web o para una aplicación web ASP.NET, también deberá seleccionar **ASP.NET Client Proxy for IntelliTrace and Test Impact** (ASP.NET Client Proxy for IntelliTrace and Test Impacto en las pruebas).
 
      Este proxy permite recopilar información sobre las llamadas HTTP de un cliente a un servidor web para los adaptadores de datos de diagnóstico de IntelliTrace y de impacto en las pruebas.
 
@@ -64,22 +64,22 @@ Antes de seguir los pasos que se describen en este procedimiento, debe abrir la 
     >
     > **runas /user:domain\name /profile cmd.exe**
 
-4.  Elija **Configurar** para **IntelliTrace** a fin de modificar los valores predeterminados de IntelliTrace.
+4. Elija **Configurar** para **IntelliTrace** a fin de modificar los valores predeterminados de IntelliTrace.
 
      Se mostrará el cuadro de diálogo para configurar los datos que se van a recopilar.
 
     > [!WARNING]
     > Si habilita la recopilación de los datos de IntelliTrace, no funcionará la recopilación de los datos de cobertura de código.
 
-5.  Elija la pestaña **General**. Seleccione **Solo eventos de IntelliTrace** para que se registren los eventos de diagnóstico significativos con un impacto mínimo en el rendimiento durante las pruebas.
+5. Elija la pestaña **General**. Seleccione **Solo eventos de IntelliTrace** para que se registren los eventos de diagnóstico significativos con un impacto mínimo en el rendimiento durante las pruebas.
 
      o bien
 
      Seleccione **Información de llamadas y eventos de IntelliTrace** para registrar los eventos de diagnóstico y la traza de los métodos con información de las llamadas. Este nivel de traza podría afectar al rendimiento durante la ejecución de las pruebas.
 
-6.  Si quiere recopilar datos de una aplicación ASP.NET que se ejecuta en Internet Information Services, seleccione **Recopilar datos de aplicaciones ASP.NET que se ejecutan en Internet Information Services**. Establezca y configure el agente de prueba en el rol de servidor web. Vea [Instalar y configurar agentes de prueba](../test/lab-management/install-configure-test-agents.md).
+6. Si quiere recopilar datos de una aplicación ASP.NET que se ejecuta en Internet Information Services, seleccione **Recopilar datos de aplicaciones ASP.NET que se ejecutan en Internet Information Services**. Establezca y configure el agente de prueba en el rol de servidor web. Vea [Instalar y configurar agentes de prueba](../test/lab-management/install-configure-test-agents.md).
 
-7.  Elija la pestaña **Módulos**. Seleccione **Recopilar datos de todos los módulos excepto los siguientes** y use **Agregar** para agregarlos a la lista de módulos, o bien haga clic en **Quitar** para quitar un módulo. Esta opción permite incluir todos los módulos que se ejecutan en el sistema excepto los módulos especificados.
+7. Elija la pestaña **Módulos**. Seleccione **Recopilar datos de todos los módulos excepto los siguientes** y use **Agregar** para agregarlos a la lista de módulos, o bien haga clic en **Quitar** para quitar un módulo. Esta opción permite incluir todos los módulos que se ejecutan en el sistema excepto los módulos especificados.
 
      o bien
 
@@ -88,7 +88,7 @@ Antes de seguir los pasos que se describen en este procedimiento, debe abrir la 
     > [!NOTE]
     > Si es posible, seleccione los procesos concretos que desea supervisar. Esto se recomienda para un rendimiento óptimo.
 
-8.  Elija la pestaña **Procesos**. Seleccione **Recopilar datos de todos los procesos excepto los siguientes** y haga clic en **Agregar** para agregarlos a la lista de procesos, o bien haga clic en el botón **Quitar** para quitar un proceso. Esta opción permite incluir todos los procesos que se ejecutan en el sistema excepto los procesos especificados.
+8. Elija la pestaña **Procesos**. Seleccione **Recopilar datos de todos los procesos excepto los siguientes** y haga clic en **Agregar** para agregarlos a la lista de procesos, o bien haga clic en el botón **Quitar** para quitar un proceso. Esta opción permite incluir todos los procesos que se ejecutan en el sistema excepto los procesos especificados.
 
      o bien
 
@@ -96,7 +96,7 @@ Antes de seguir los pasos que se describen en este procedimiento, debe abrir la 
 
 9. (Opcional) Elija la pestaña **Eventos de IntelliTrace**. Active o desactive cada una de las categorías de evento de IntelliTrace que desee incluir o excluir al recopilar los eventos de diagnóstico.
 
-10. (Opcional) Expanda cada categoría de evento de IntelliTrace y active o desactive cada uno de los eventos que desee incluir o excluir de los eventos de IntelliTrace.
+10. (Opcional) Expanda cada categoría de eventos de IntelliTrace y active o desactive cada uno de los eventos que desee incluir o excluir de los eventos de IntelliTrace.
 
 11. (Opcional) Elija la pestaña **Opciones avanzadas**. Luego, elija la flecha situada junto a **Cantidad máxima de espacio en disco para el registro** y seleccione el tamaño máximo que quiera habilitar para el archivo de IntelliTrace.
 

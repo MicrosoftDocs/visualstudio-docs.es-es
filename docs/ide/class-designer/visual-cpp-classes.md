@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aea3dd9c4821b3c06839c746111c131eedcfa455
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b8312e0db76dd3ce064172116aecd82daab56e90
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939117"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975052"
 ---
 # <a name="visual-c-classes-in-class-designer"></a>Clases de Visual C++ en el Diseñador de clases
 
@@ -128,7 +128,6 @@ Para más información sobre las clases anónimas, vea [Tipos de clase anónima]
 ## <a name="template-classes"></a>Clases de plantillas
 
 El **Diseñador de clases** admite la visualización de clases de plantillas. Se admiten las declaraciones anidadas. En la tabla siguiente se muestran algunas declaraciones típicas.
-
 
 | elemento Code | Vista Diseñador de clases |
 | - | - |

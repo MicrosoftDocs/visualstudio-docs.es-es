@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 822ce0a2f0e8632706a4a1551cc53aafb23563ed
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 2e397d587032bb6a8c125d38c10000e6a496c2d2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983041"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62973024"
 ---
 # <a name="use-different-web-browsers-with-coded-ui-tests"></a>Usar diferentes exploradores web con las pruebas automatizadas de IU
 
@@ -24,13 +24,13 @@ En primer lugar, instale los [componentes Selenium para pruebas automatizadas de
 
 ## <a name="whats-supported-across-all-web-browsers"></a>¿Qué se admite en todos los exploradores web?
 
--   [Agregar código personalizado para controlar características](https://devblogs.microsoft.com/devops/coded-ui-test-configuring-search-properties-while-recording-on-internet-explorer/) como propiedades, búsqueda y objetos Waiter de reproducción
+- [Agregar código personalizado para controlar características](https://devblogs.microsoft.com/devops/coded-ui-test-configuring-search-properties-while-recording-on-internet-explorer/) como propiedades, búsqueda y objetos Waiter de reproducción
 
--   Elementos emergentes y cuadros de diálogo
+- Elementos emergentes y cuadros de diálogo
 
--   [Ejecutar JavaScript básico sin tipo de valor devuelto](https://devblogs.microsoft.com/devops/introducing-javascript-execution-on-internetexplorer-and-crossbrowser-in-coded-ui-test/)
+- [Ejecutar JavaScript básico sin tipo de valor devuelto](https://devblogs.microsoft.com/devops/introducing-javascript-execution-on-internetexplorer-and-crossbrowser-in-coded-ui-test/)
 
--   Resistencia de búsqueda (mediante coincidencia inteligente) y [mejoras de rendimiento](https://devblogs.microsoft.com/devops/guidelines-on-improving-performance-of-coded-ui-test-playback/)
+- Resistencia de búsqueda (mediante coincidencia inteligente) y [mejoras de rendimiento](https://devblogs.microsoft.com/devops/guidelines-on-improving-performance-of-coded-ui-test-playback/)
 
 ## <a name="why-should-i-use-coded-ui-tests-across-multiple-web-browser-types"></a>¿Por qué se deben usar pruebas de IU codificadas en varios tipos de explorador web?
 
@@ -78,17 +78,17 @@ Para obtener más información sobre cómo crear y usar pruebas automatizadas de
 
 Para habilitar la depuración de la aplicación web, debe completar las opciones de configuración siguientes:
 
-1.  Habilitar Solo mi código:
+1. Habilitar Solo mi código:
 
-    1.  En el menú **Herramientas**, seleccione **Opciones** y, después, **Depuración**.
+    1. En el menú **Herramientas**, seleccione **Opciones** y, después, **Depuración**.
 
-    2.  Seleccione **Habilitar Solo mi código**.
+    2. Seleccione **Habilitar Solo mi código**.
 
-2.  Deshabilitar excepciones de CLR:
+2. Deshabilitar excepciones de CLR:
 
-    1.  En el menú **Depurar**, seleccione **Excepciones**.
+    1. En el menú **Depurar**, seleccione **Excepciones**.
 
-    2.  Para **Common Language Runtime Exceptions** (Excepciones de Common Language Runtime), desactive **No controlada por el usuario**.
+    2. Para **Common Language Runtime Exceptions** (Excepciones de Common Language Runtime), desactive **No controlada por el usuario**.
 
 Si no ve la opción para cambiar `BrowserWindow.CurrentBrowser` en la prueba automatizada de IU, puede que esté usando una versión de Visual Studio que no admite las pruebas automatizadas de IU con varios exploradores web. Para usar estas pruebas automatizadas de IU, debe utilizar la edición Visual Studio Enterprise.
 

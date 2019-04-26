@@ -12,15 +12,15 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 734a192a00ee0c509ed16e71a8629837155888ae
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366151"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62957065"
 ---
 # <a name="step-5-use-the-polls-flask-web-project-template"></a>Paso 5: Uso de la plantilla de proyecto web de sondeos de Flask
 
-**Paso anterior: [Usar la plantilla de proyecto web completa de Flask](learn-flask-visual-studio-step-04-full-flask-project-template.md)**
+**Paso anterior: [Uso de la plantilla de proyecto web completa de Flask](learn-flask-visual-studio-step-04-full-flask-project-template.md)**
 
 Ahora que conoce la plantilla "Proyecto web de Flask" de Visual Studio, podemos analizar la tercera plantilla de Flask, "Proyecto web de Flask de sondeos", que se basa en el mismo código base.
 

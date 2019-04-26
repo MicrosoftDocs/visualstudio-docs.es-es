@@ -8,26 +8,26 @@ ms.assetid: 0c86918b-cd63-4468-8f49-6d547a1276dc
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cdaa86e2eb7562f4a3347c942e193da22a9e256e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c378cea12ba749ee9131d13130fdbb7def84ea66
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948841"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62823020"
 ---
 # <a name="collect-diagnostic-information-using-test-settings"></a>Recopilar información de diagnóstico con la configuración de pruebas
 
 Puede usar la *configuración de pruebas* de Visual Studio para recopilar datos adicionales al ejecutar las pruebas. Por ejemplo, quizás desee crear una grabación de vídeo al ejecutar la prueba. Hay adaptadores de datos de diagnóstico para:
 
--   Recopilar cada paso de acción de la interfaz de usuario en formato de texto
+- Recopilar cada paso de acción de la interfaz de usuario en formato de texto
 
--   Grabar cada acción de la interfaz de usuario para reproducirla
+- Grabar cada acción de la interfaz de usuario para reproducirla
 
--   Recopilar información del sistema
+- Recopilar información del sistema
 
--   Recopilar datos de registro de eventos
+- Recopilar datos de registro de eventos
 
--   Recopilar datos de IntelliTrace para ayudar a aislar errores no reproducibles
+- Recopilar datos de IntelliTrace para ayudar a aislar errores no reproducibles
 
 Los adaptadores de datos de diagnóstico también pueden usarse para cambiar el comportamiento de una máquina de prueba. Por ejemplo, con una configuración de pruebas en Visual Studio, puede emular diferentes cuellos de botella de la topología de red para evaluar el rendimiento de la aplicación de su equipo.
 
@@ -35,7 +35,7 @@ Los adaptadores de datos de diagnóstico también pueden usarse para cambiar el 
 
 ## <a name="use-test-settings-with-visual-studio"></a>Usar la configuración de pruebas con Visual Studio
 
-Puede agregar, configurar y seleccionar la configuración de pruebas que se usará para ejecutar pruebas unitarias, de IU programada, rendimiento web o carga mediante Visual Studio. Para ejecutar las pruebas, recopilar datos o afectar a una máquina de prueba de forma remota, debe especificar el controlador de pruebas que se usará en la configuración de pruebas. El controlador de pruebas tendrá agentes que se pueden usar para cada rol en la configuración de pruebas.
+Puede agregar, configurar y seleccionar la configuración de pruebas que se usará para ejecutar pruebas unitarias, de IU codificada, rendimiento web o carga mediante Visual Studio. Para ejecutar las pruebas, recopilar datos o afectar a una máquina de prueba de forma remota, debe especificar el controlador de pruebas que se usará en la configuración de pruebas. El controlador de pruebas tendrá agentes que se pueden usar para cada rol en la configuración de pruebas.
 
 ## <a name="diagnostic-data-adapter-details"></a>Detalles de adaptador de datos de diagnóstico
 

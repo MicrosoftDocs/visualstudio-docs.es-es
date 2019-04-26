@@ -8,14 +8,14 @@ ms.assetid: 4a69e857-f93b-4907-9a01-fd1b66291205
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9240a4129e7a58443ca0efaaa7ee1e27da96dcad
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f3353b6c46520dde1134c7ccff835b215b2d0ef8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55916718"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62821096"
 ---
-# <a name="how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern"></a>Filtrar Especificar la propiedad Tiempo de rampa de paso de un modelo de carga por pasos
+# <a name="how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern"></a>Procedimiento Especificar la propiedad Tiempo de rampa de paso de un modelo de carga por pasos
 
 Después de crear la prueba de carga con el **Asistente para prueba de carga nueva**, puede usar el **Editor de pruebas de carga** para cambiar las propiedades de los escenarios de modo que satisfagan las necesidades y los objetivos de la prueba. Para obtener más información, vea [Tutorial: Creación y ejecución de una prueba de carga](../test/walkthrough-create-and-run-a-load-test.md).
 
@@ -30,15 +30,15 @@ La propiedad **Tiempo de rampa de paso** solo se usa con un modelo de carga de p
 
 Los modelos de carga por pasos se usan para aumentar la carga en el servidor o los servidores mientras se ejecuta la prueba de carga, de forma que se vea cómo varía el rendimiento a medida que aumenta la carga de usuarios. Por ejemplo, para observar el rendimiento del servidor o los servidores cuando aumenta la carga de usuarios a 2000, ejecute una prueba de carga de 10 horas utilizando un modelo de carga por pasos con las siguientes propiedades:
 
--   Recuento inicial de usuarios: 100
+- Recuento inicial de usuarios: 100
 
--   Recuento máximo de usuarios: 2000
+- Recuento máximo de usuarios: 2000
 
--   Duración del paso (segundos): 1800
+- Duración del paso (segundos): 1800
 
--   Tiempo de rampa de paso (segundos): 20
+- Tiempo de rampa de paso (segundos): 20
 
--   Recuento de usuarios por pasos: 100
+- Recuento de usuarios por pasos: 100
 
 Estas configuraciones hacen que la prueba de carga se ejecute durante 30 minutos (1800 segundos) con cargas de 100, 200, 300 y hasta 2000 usuarios.
 
@@ -49,24 +49,24 @@ La propiedad **Tiempo de rampa de paso** permite que el aumento de un paso al si
 
 ## <a name="to-edit-the-step-ramp-time-property-for-a-step-load-pattern"></a>Para editar la propiedad Tiempo de rampa de paso de un modelo de carga por pasos
 
-1.  Abra una prueba de carga.
+1. Abra una prueba de carga.
 
      Aparece el **Editor de pruebas de carga**. Se mostrará el árbol de la prueba de carga.
 
-2.  En la carpeta **Escenarios** del árbol de prueba de carga, abra el nodo del escenario para el que quiere especificar el tiempo de rampa de paso.
+2. En la carpeta **Escenarios** del árbol de prueba de carga, abra el nodo del escenario para el que quiere especificar el tiempo de rampa de paso.
 
-3.  Seleccione el nodo **Modelo de carga de pasos**.
+3. Seleccione el nodo **Modelo de carga de pasos**.
 
     > [!NOTE]
     > El modelo de carga para el escenario debe ser un modelo de carga de pasos. Si no es así, el modelo de carga mostrará el tipo de modelo de carga que está asociado al escenario. Para obtener más información, vea [Modificar modelos de carga para modelar las actividades de usuarios virtuales](../test/edit-load-patterns-to-model-virtual-user-activities.md).
 
-4.  En el menú **Ver**, seleccione la ventana **Propiedades**.
+4. En el menú **Ver**, seleccione la ventana **Propiedades**.
 
      Las categorías y propiedades del escenario se muestran en la ventana **Propiedades**.
 
-5.  Establezca el valor de la propiedad **Tiempo de rampa de paso** al escribir un número para los segundos que lleva en cada paso agregar gradualmente a los usuarios especificados en la propiedad **Recuento de usuarios por pasos**.
+5. Establezca el valor de la propiedad **Tiempo de rampa de paso** al escribir un número para los segundos que lleva en cada paso agregar gradualmente a los usuarios especificados en la propiedad **Recuento de usuarios por pasos**.
 
-6.  Cuando haya terminado de cambiar la propiedad, elija **Guardar** en el menú **Archivo**. Luego, puede ejecutar la prueba de carga con el nuevo valor de **Tiempo de rampa de paso**.
+6. Cuando haya terminado de cambiar la propiedad, elija **Guardar** en el menú **Archivo**. Luego, puede ejecutar la prueba de carga con el nuevo valor de **Tiempo de rampa de paso**.
 
 ## <a name="see-also"></a>Vea también
 

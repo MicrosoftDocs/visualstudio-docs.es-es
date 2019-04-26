@@ -11,11 +11,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: b111d3b0fe2f4af9098186aff3ef661045215473
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366281"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62959519"
 ---
 # <a name="edit-python-code"></a>Editar código de Python
 
@@ -76,7 +76,7 @@ Al escribir @ se inicia un decorador y se muestran todos los posibles decoradore
 
 ### <a name="type-hints"></a>Sugerencias de escritura
 
-*Visual Studio 2017 versión 15.7 y posteriores.*
+*Visual Studio 2017, versión 15.7 y posteriores*
 
 "Sugerencias de escritura" en Python 3.5 + ([PEP 484](https://www.python.org/dev/peps/pep-0484/) (python.org) es una sintaxis de anotación de funciones y clases que indica los tipos de argumentos, valores devueltos y atributos de clase. IntelliSense muestra sugerencias de tipo cuando mantiene el mouse sobre las llamadas a funciones, argumentos y variables que tengan dichas anotaciones.
 

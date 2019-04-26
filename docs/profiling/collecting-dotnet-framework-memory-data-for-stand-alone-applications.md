@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 98aae9471e0479a4b32b578bfd9da913237ea095
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2c6bf3fb1d2fa5815c361110689efb0cfc248e57
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637482"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949038"
 ---
 # <a name="collect-net-framework-memory-data-by-using-the-profiler-command-line"></a>Recopilar datos de memoria de .NET Framework mediante la línea de comandos del generador de perfiles
 
@@ -37,7 +37,6 @@ En esta sección se describen los procedimientos y las opciones para recopilar d
 |**Generar perfiles mediante el método de instrumentación**|-   [Recopilación de datos de control de tiempo detallados mediante la instrumentación](../profiling/collecting-detailed-timing-data-for-a-stand-alone-application.md)|
 |**Generar perfiles de actividad de subprocesos y contención de recursos**|-   [Recopilación de datos de simultaneidad](../profiling/collecting-concurrency-data-for-stand-alone-applications.md)|
 |**Agregar datos de interacción de capas**|-   [Recopilación de datos de interacción de capas](../profiling/adding-tier-interaction-data-from-the-command-line.md)|
-
 
 ### <a name="profile-net-memory-data"></a>Generar perfiles de datos de memoria de .NET
 

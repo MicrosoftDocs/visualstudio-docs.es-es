@@ -1,5 +1,5 @@
 ---
-title: Filtrar Cambiar el directorio de salida de compilación
+title: Procedimiento Cambiar el directorio de salida de compilación
 ms.date: 11/04/2016
 ms.technology: vs-ide-compile
 ms.topic: conceptual
@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f254c29f2951484869b814f13d1a346080fab07
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6ea7cae6dd709e407a5c1a9832092586d217689b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911538"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62824235"
 ---
-# <a name="how-to-change-the-build-output-directory"></a>Filtrar Cambiar el directorio de salida de compilación
+# <a name="how-to-change-the-build-output-directory"></a>Procedimiento Cambiar el directorio de salida de compilación
 
 Puede especificar la ubicación de salida por configuración (para debug, release o ambos) generada por el proyecto.
 
@@ -27,11 +27,11 @@ Puede especificar la ubicación de salida por configuración (para debug, releas
 
 ## <a name="change-the-build-output-directory"></a>Cambiar el directorio de salida de compilación
 
-1.  En la barra de menús, elija **Proyecto** > **\<NombreDeAplicación>Propiedades**. En el **Explorador de soluciones**, también puede hacer clic con el botón derecho en el nodo del proyecto y seleccionar **Propiedades**.
+1. En la barra de menús, elija **Proyecto** > **\<NombreDeAplicación>Propiedades**. En el **Explorador de soluciones**, también puede hacer clic con el botón derecho en el nodo del proyecto y seleccionar **Propiedades**.
 
-2.  Si tiene un proyecto de Visual Basic, seleccione la pestaña **Compilar** . Si tiene un proyecto de C#, seleccione la pestaña **Compilar**. Si tiene un proyecto de C++ o JavaScript, seleccione la pestaña **General** .
+2. Si tiene un proyecto de Visual Basic, seleccione la pestaña **Compilar** . Si tiene un proyecto de C#, seleccione la pestaña **Compilar**. Si tiene un proyecto de C++ o JavaScript, seleccione la pestaña **General** .
 
-3.  En la lista desplegable de configuración de la parte superior, elija la configuración cuya ubicación de archivo de resultados desea cambiar (debug, release o todas).
+3. En la lista desplegable de configuración de la parte superior, elija la configuración cuya ubicación de archivo de resultados desea cambiar (debug, release o todas).
 
      Busque la entrada de la ruta de acceso de la salida (**Ruta de acceso de salida de la compilación** en Visual Basic, **Directorio de salida** en Visual C++ y **Ruta de acceso de salida** en JavaScript y C#). Especifique un nuevo directorio de resultados de la compilación relativo al directorio del proyecto.
 

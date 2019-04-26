@@ -14,11 +14,11 @@ ms.workload:
 - multiple
 monikerRange: vs-2017
 ms.openlocfilehash: 8fcd01198877ef06eb398ce99fe467deb923546c
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59232475"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62999218"
 ---
 # <a name="whats-new-in-profiling-tools-in-includevsdev15miscincludesvsdev15mdmd"></a>Novedades de las herramientas de generación de perfiles en [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]
 
@@ -36,5 +36,5 @@ La herramienta de uso de CPU tiene [nuevas visualizaciones](../profiling/Beginne
 
 ## <a name="see-also"></a>Vea también
 
-- [Generación de perfiles en Visual Studio](../profiling/index.md)
-- [Un primer vistazo a las herramientas de generación de perfiles](../profiling/profiling-feature-tour.md)
+- [Profile in Visual Studio](../profiling/index.md) (Generación de perfiles en Visual Studio)
+- [Primer vistazo a la generación de perfiles](../profiling/profiling-feature-tour.md)

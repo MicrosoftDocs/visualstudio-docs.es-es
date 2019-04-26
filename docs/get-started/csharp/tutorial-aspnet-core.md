@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 11f2849a2cf36564104d3250bdbad66ac69a0b40
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 191be9ea5433351f6f89366cc2240d8b0801e54b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856572"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62972101"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>Tutorial: Introducción a C# y ASP.NET Core en Visual Studio
 
@@ -33,7 +33,7 @@ En este tutorial para el desarrollo de C# con ASP.NET Core mediante Visual Studi
 
 ::: moniker range="vs-2017"
 
-Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) para instalarlo de forma gratuita.
+Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) para instalarlo de forma gratuita.
 
 ::: moniker-end
 
@@ -222,6 +222,7 @@ Esta solución sigue el modelo de diseño **Razor Page**. La diferencia con el m
      Message = String.Format("Your directory is {0}.", directory);
      }
     ```
+
 1. Observe que aparecerán dos caracteres de subrayado ondulados en **Environment** y **String**. Los caracteres de subrayado ondulados aparecen porque estos tipos están fuera del ámbito.
 
    ![Errores marcados con caracteres de subrayado ondulados en el método OnGet](media/csharp-aspnet-razor-add-new-on-get-method.png)
@@ -267,4 +268,4 @@ Enhorabuena por completar este tutorial. Esperamos que haya aprendido un poco so
 
 ## <a name="see-also"></a>Vea también
 
-[Publicar una aplicación web en Azure App Service mediante Visual Studio](../../deployment/quickstart-deploy-to-azure.md)
+[Publicar una aplicación web en Azure App Service mediante Visual Studio](../../deployment/quickstart-deploy-to-azure.md)

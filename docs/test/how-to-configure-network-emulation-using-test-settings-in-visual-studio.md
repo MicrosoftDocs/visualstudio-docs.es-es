@@ -8,14 +8,14 @@ ms.assetid: ff275cfb-5df9-4710-9a91-9caabaaad34f
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 52f9732bda3bf7ae6628ad834ee49210f739efca
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c4738caa4fac8596db5b92c6cafa1c0f370e0363
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946683"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979411"
 ---
-# <a name="how-to-configure-network-emulation-using-test-settings-in-visual-studio"></a>Filtrar para configurar la emulación de red mediante la configuración de pruebas en Visual Studio
+# <a name="how-to-configure-network-emulation-using-test-settings-in-visual-studio"></a>Procedimiento para configurar la emulación de red mediante la configuración de pruebas en Visual Studio
 
 Puede configurar el adaptador de datos de diagnóstico para probar la aplicación en varios entornos de red desde Visual Studio. También puede configurarlo para probar una carga de red artificial, o cuello de botella, durante la ejecución de las pruebas.
 
@@ -60,25 +60,25 @@ Antes de seguir los pasos de este procedimiento, debe abrir la configuración de
 
 ### <a name="to-configure-network-emulation-for-your-test-settings"></a>Para configurar la emulación de red para la configuración de pruebas
 
-1.  Seleccione el rol que se va a usar para emular una red concreta.
+1. Seleccione el rol que se va a usar para emular una red concreta.
 
     > [!NOTE]
     > Solo tiene que configurar el adaptador de Emulación de red en el rol del cliente o el rol de servidor. No tiene que utilizar el adaptador en ambos roles. El adaptador emula ruido de la red que afecta a la comunicación entre ambos roles, para que no tenga que utilizarlo en ambos. A menos que sea necesario, debería elegir un rol de cliente para que el adaptador de Emulación de red evite la sobrecarga adicional en el rol de servidor.
 
-2.  Seleccione **Emulación de red** y, luego, elija **Configurar**.
+2. Seleccione **Emulación de red** y, luego, elija **Configurar**.
 
      Se abrirá el cuadro de diálogo para configurar la emulación de red.
 
-3.  Elija la flecha situada junto a **Seleccione el perfil de red que desea usar** y seleccione el tipo de red que quiere emular durante la ejecución de una prueba (por ejemplo, **Cable-DSL de 768 Kbps**).
+3. Elija la flecha situada junto a **Seleccione el perfil de red que desea usar** y seleccione el tipo de red que quiere emular durante la ejecución de una prueba (por ejemplo, **Cable-DSL de 768 Kbps**).
 
     > [!WARNING]
     > Si ejecuta las pruebas en una red real que es más lenta que la red objeto de la emulación, la prueba se ejecutará a la velocidad de la red más lenta. La emulación solo puede reducir y no aumentar la velocidad del entorno de red.
 
-4.  Si incluye el adaptador de datos de diagnóstico de emulación de red en la configuración de pruebas y piensa usarlo en la máquina local, debe enlazar también el controlador de emulación de red a uno de los adaptadores de red de su máquina. El controlador de emulación de red es necesario para que el adaptador de datos de diagnóstico de emulación de red funcione. El controlador de emulación de red se instala y enlaza al adaptador de dos maneras:
+4. Si incluye el adaptador de datos de diagnóstico de emulación de red en la configuración de pruebas y piensa usarlo en la máquina local, debe enlazar también el controlador de emulación de red a uno de los adaptadores de red de su máquina. El controlador de emulación de red es necesario para que el adaptador de datos de diagnóstico de emulación de red funcione. El controlador de emulación de red se instala y enlaza al adaptador de dos maneras:
 
-    -   **Controlador de emulación de red instalado con Microsoft Visual Studio Test Agent:** Microsoft Visual Studio Test Agent se puede usar tanto en equipos remotos como en equipos locales. Cuando se instala Visual Studio Test Agent, el proceso de instalación incluye un paso de configuración que enlaza el controlador de emulación de red a su tarjeta de red. Para obtener más información, vea [Instalar y configurar agentes de prueba](../test/lab-management/install-configure-test-agents.md).
+    - **Controlador de emulación de red instalado con Microsoft Visual Studio Test Agent:** Microsoft Visual Studio Test Agent se puede usar tanto en equipos remotos como en equipos locales. Cuando se instala Visual Studio Test Agent, el proceso de instalación incluye un paso de configuración que enlaza el controlador de emulación de red a su tarjeta de red. Para obtener más información, vea [Instalar y configurar agentes de prueba](../test/lab-management/install-configure-test-agents.md).
 
-    -   **Controlador de emulación de red instalado con Microsoft Visual Studio Test Professional:** la primera vez que use la emulación de red, se le pedirá que enlace el controlador de emulación de red a una tarjeta de red.
+    - **Controlador de emulación de red instalado con Microsoft Visual Studio Test Professional:** la primera vez que use la emulación de red, se le pedirá que enlace el controlador de emulación de red a una tarjeta de red.
 
     > [!TIP]
     > También puede instalar el controlador de emulación de red desde la línea de comandos en la máquina local sin instalar el agente de prueba de Visual Studio usando el siguiente comando: **VSTestConfig NETWORKEMULATION /install**

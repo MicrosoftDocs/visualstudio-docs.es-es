@@ -15,12 +15,12 @@ dev_langs:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3f26dc7fd69c5190f5ba56985ef2509ddbf87866
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c39518c03d1a599dbe9eecac3d609343b7394313
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919916"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62822606"
 ---
 # <a name="code-a-custom-validation-rule-for-a-web-performance-test"></a>Codificar una regla de validación personalizada para una prueba de rendimiento web
 
@@ -33,24 +33,24 @@ Puede crear sus propias reglas de validación. Para ello, derive su propia clase
 
 ## <a name="to-create-custom-validation-rules"></a>Para crear reglas de validación personalizadas
 
-1.  Abra un proyecto de prueba que contenga una prueba de rendimiento web.
+1. Abra un proyecto de prueba que contenga una prueba de rendimiento web.
 
-2.  (Opcional) Cree un proyecto de bibliotecas de clases independiente para almacenar su regla de validación.
+2. (Opcional) Cree un proyecto de bibliotecas de clases independiente para almacenar su regla de validación.
 
     > [!IMPORTANT]
     > Puede crear la clase en el mismo proyecto donde están sus pruebas. No obstante, si desea volver a usar la regla, es mejor crear un proyecto de biblioteca de clases diferente para almacenar la regla. Si crea un proyecto independiente, debe completar los pasos opcionales de este procedimiento.
 
-3.  (Opcional) En el proyecto de bibliotecas de clases, agregue una referencia al archivo DLL Microsoft.VisualStudio.QualityTools.WebTestFramework.
+3. (Opcional) En el proyecto de bibliotecas de clases, agregue una referencia al archivo DLL Microsoft.VisualStudio.QualityTools.WebTestFramework.
 
-4.  Cree una clase que se derive de la clase <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule>. Implemente los miembros <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule.Validate*> y <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule.RuleName*>.
+4. Cree una clase que se derive de la clase <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule>. Implemente los miembros <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule.Validate*> y <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule.RuleName*>.
 
-5.  (Opcional) Compile el nuevo proyecto de biblioteca de clases.
+5. (Opcional) Compile el nuevo proyecto de biblioteca de clases.
 
-6.  (Opcional) En el Proyecto de prueba, agregue una referencia al proyecto de bibliotecas de clases que contiene la regla de validación personalizada.
+6. (Opcional) En el Proyecto de prueba, agregue una referencia al proyecto de bibliotecas de clases que contiene la regla de validación personalizada.
 
-7.  En el Proyecto de prueba, abra una prueba de rendimiento web en el **Editor de pruebas de rendimiento web**.
+7. En el Proyecto de prueba, abra una prueba de rendimiento web en el **Editor de pruebas de rendimiento web**.
 
-8.  Para agregar la regla de validación personalizada a una solicitud de prueba de rendimiento web, haga clic con el botón derecho en una solicitud y seleccione **Agregar regla de validación**.
+8. Para agregar la regla de validación personalizada a una solicitud de prueba de rendimiento web, haga clic con el botón derecho en una solicitud y seleccione **Agregar regla de validación**.
 
      Aparecerá el cuadro de diálogo **Agregar regla de validación**. Verá su regla de validación personalizada en la lista **Seleccione una regla**, junto con las reglas de validación predefinidas. Seleccione su regla de validación personalizada y, a continuación, elija **Aceptar**.
 

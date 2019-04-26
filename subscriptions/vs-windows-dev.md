@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Obtenga información sobre la cuenta de desarrollador de Windows que se incluye con la suscripción de Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 25f948a0a855655da45b8c11fd955a06d14e5cf7
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: a497db64345cffe4f87e768a83816489ebd4c21a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843690"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62978737"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Cuenta de desarrollador de Windows en suscripciones de Visual Studio
 
@@ -60,10 +60,8 @@ Se recomienda crear una ventana "privada" del explorador para este proceso.  Por
 
 <sup>1</sup>  *Incluye:  No para reventa (NFR), FTE, Visual Studio Industry Partner (VSIP), BizSpark, MCT Software & Services Developer. Excluye:  Microsoft Partner Network (MPN), Imagine, Most Valuable Professional (MVP), Regional Director (RD), MCT Software & Services.*
 
-
 > [!NOTE]
 > Microsoft ya no ofrece suscripciones anuales ni de Visual Studio Professional ni de Visual Studio Enterprise en las suscripciones de nube. Esto no supone cambio alguno en la experiencia actual de los clientes y ni en su capacidad para renovar, aumentar, reducir o cancelar las suscripciones. Conviene que los clientes nuevos vayan a [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) para explorar las diferentes opciones de compra de Visual Studio.
-
 
 ¿No sabe con seguridad qué suscripción usa?  Conéctese a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas las suscripciones asignadas a su dirección de correo electrónico. Si no ve todas las suscripciones, es posible que haya una o varias asignadas a una dirección de correo electrónico diferente.  Debe iniciar sesión con esa dirección de correo electrónico para ver esas suscripciones.
 

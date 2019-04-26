@@ -7,12 +7,12 @@ ms.date: 01/02/2018
 ms.topic: conceptual
 description: Puede producirse un error en el inicio de sesión si se utilizan alias o nombres descriptivos
 searchscope: VS Subscription
-ms.openlocfilehash: f0b18aca4c6188c23998c8a87f86359895198b95
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: ac3f9df365e0b7924b615c2ae8cbb70d93d04948
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58195156"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946189"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>Posible error en el inicio de sesión en suscripciones de Visual Studio al utilizar alias
 
@@ -51,7 +51,6 @@ Siga estos pasos para agregar un nuevo suscriptor con una cuenta de directorio.
     > [!div class="mx-imgBorder"]
     > ![Menú de suscripciones](_img//vlsc/vlsc-subscriptions.png)
 
-
 3. Haga clic en el **Número de contrato** asociado a la suscripción de Visual Studio.
 
     > [!div class="mx-imgBorder"]
@@ -82,21 +81,23 @@ Siga estos pasos para actualizar un suscriptor existente añadiéndole una cuent
 
 Dado que el correo electrónico de bienvenida no llegará correctamente al suscriptor, copie y pegue el siguiente mensaje en un correo electrónico y envíelo al suscriptor. Sustituya las palabras entre % por la información pertinente de cada suscriptor.
 
------------ Copiar a partir de aquí (Ctrl+C) -----------
+```
+----------- Copy Below (Ctrl+C) -----------
 
-Estimado %Nombre del suscriptor%:
+Hello %SUBSCRIBER NAME%
 
-Se le ha asignado una suscripción de Visual Studio. Visite https://my.visualstudio.com e inicie sesión con su dirección %DIRECCIÓN DE DIRECTORIO% para activar la suscripción y poder acceder a ella.
+You have been assigned a Visual Studio subscription. Please visit https://my.visualstudio.com, and log in with your %DIRECTORY ADDRESS% address to activate and access your subscription.
 
-Si tiene problemas, póngase en contacto con el equipo de soporte técnico (https://visualstudio.microsoft.com/subscriptions/support/)).
+If you’re having trouble, please contact the support team (https://visualstudio.microsoft.com/subscriptions/support/).
 
-En la parte inferior de la página, seleccione lo siguiente:
-   - Cuentas, Suscripciones y Soporte de facturación
-   - En Problema, elija Subscription sign in support (Soporte para inicio de sesión en suscripción).
-   - Elija el País correspondiente.
-   - Seleccione la opción deseada de Soporte técnico asistido.
+At the bottom of the page, select the following:
+   - Accounts, Subscriptions, and Billing Support
+   - From Issue, choose Subscription sign in support
+   - Choose the appropriate Country
+   - Select the desired Assisted Support option
 
------------ Fin de la copia -----------
+----------- End Copy -----------
+```
 
 ## <a name="defining-a-work-or-school-account-as-a-personal-account"></a>Definición de una cuenta profesional o educativa como cuenta personal
 
@@ -127,35 +128,37 @@ Una vez que se asigna una suscripción al suscriptor, este recibirá un correo e
 
 En el escenario descrito anteriormente, el suscriptor recibirá un "correo electrónico de bienvenida", pero debido al uso de alias es posible que no pueda iniciar sesión.  Puede usar el siguiente texto para informar a los suscriptores de los pasos anteriores y recomendar las opciones de soporte técnico si fuera necesario.  Sustituya las palabras entre % por la información pertinente de cada suscriptor.
 
------------ Copiar a partir de aquí (Ctrl+C) -----------
+```
+----------- Copy Below (Ctrl+C) -----------
 
-Estimado %Nombre del suscriptor%:
+Hello %SUBSCRIBER NAME%
 
-Se le ha asignado una suscripción de Visual Studio, y es posible que se le haya dirigido a https://my.visualstudio.com para que inicie sesión a partir del correo electrónico de bienvenida.  Si bien este es el sitio web correcto para aprovechar los beneficios, nuestra organización requiere que realice algunos pasos adicionales para tener acceso al sitio.  Siga estas instrucciones para crear una "cuenta Microsoft" asociada a nuestra dirección de correo electrónico corporativo.  Una vez completados estos pasos, usará su dirección de correo electrónico para tener acceso a los beneficios de la suscripción.
-1. Visite https://my.visualstudio.com
+You have been assigned a Visual Studio subscription, and may have been directed to log into https://my.visualstudio.com based on your Welcome email.  While this is the correct website for consuming benefits, our organization requires you to take a few extra steps before you can access the site.  Please follow the below instructions to help you create a “Microsoft Account” that is tied to our corporate email address.  Once these steps are completed, you will use your email address to access the Subscription benefits.
+1. Visit https://my.visualstudio.com
 
-2. Haga clic en Crear nueva cuenta de Microsoft en el lado derecho.
+2. Click Create new Microsoft Account on the right hand side
 
-3. Complete el formulario:
-   - Use su dirección de correo electrónico corporativo en el cuadro someone@example.com.
-   - Escriba una contraseña.
-   - Seleccione sus preferencias promocionales.
-   - Haga clic en Siguiente.
+3. Complete the Form:
+   - Use your corporate email address in the someone@example.com box
+   - Enter a password
+   - Select your promotional preference
+   - Click Next
 
-4. Complete los pasos de validación de la cuenta.
+4. Complete the account validation steps
 
-5. Si fuera necesario, complete el perfil de Visual Studio.
+5. If necessary, complete the Visual Studio profile
 
-6. Ahora debería ver los beneficios.
+6. You should now see your benefits
 
-Nota:  Al visitar https://my.visualstudio.com en el futuro, es posible que se le solicite que seleccione la cuenta que quiere utilizar (por ejemplo, "Cuenta profesional o educativa" o "Cuenta personal").  Después de seguir los pasos anteriores, debe utilizar la opción "Cuenta personal".
+Note:  When visiting https://my.visualstudio.com in the future, you may be prompted to select which account you’d like to use (e.g. “Work or School Account” or “Personal Account”).  After following the steps above, you will need to leverage the “Personal Account” option.
 
-Si tiene problemas, póngase en contacto con el equipo de soporte técnico (https://visualstudio.microsoft.com/subscriptions/support/)).
+If you’re having trouble, please contact the support team (https://visualstudio.microsoft.com/subscriptions/support/).
 
-En la parte inferior de la página, seleccione lo siguiente:
-   - Cuentas, Suscripciones y Soporte de facturación
-   - En Problema, elija Subscription sign in support (Soporte para inicio de sesión en suscripción).
-   - Elija el País correspondiente.
-   - Seleccione la opción deseada de Soporte técnico asistido.
+At the bottom of the page, select the following:
+   - Accounts, Subscriptions, and Billing Support
+   - From Issue, choose Subscription sign in support
+   - Choose the appropriate Country
+   - Select the desired Assisted Support option
 
------------ Fin de la copia -----------
+----------- End Copy -----------
+```

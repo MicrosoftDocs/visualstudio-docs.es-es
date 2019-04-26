@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 28718a213e42f3db8c4beee5d45666044148601d
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355362"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946913"
 ---
 # <a name="how-to-specify-build-events-c"></a>Procedimiento Especificación de eventos de compilación (C#)
 

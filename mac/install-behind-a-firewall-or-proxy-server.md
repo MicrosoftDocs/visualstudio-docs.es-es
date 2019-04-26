@@ -7,11 +7,11 @@ author: asb3993
 ms.author: amburns
 ms.date: 10/23/2018
 ms.openlocfilehash: bf12f8803fbdbbf1de31899501c31545a09d6b09
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856546"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62982868"
 ---
 # <a name="install-and-use-visual-studio-for-mac-behind-a-firewall-or-proxy-server"></a>Instalación y uso de Visual Studio para Mac detrás de un firewall o servidor proxy
 
@@ -90,4 +90,4 @@ Para asegurarse de que tiene acceso a cada característica que necesita en Visua
 ## <a name="see-also"></a>Vea también
 
 - [Instalación y uso de Visual Studio y de servicios de Azure detrás de un firewall o servidor proxy](/visualstudio/install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server)
-- [Solución de problemas de errores relacionados con la red al instalar o usar Visual Studio](/visualstudio/install/troubleshooting-network-related-errors-in-visual-studio)
+- [Solución de problemas de errores relacionados con la red al instalar o usar Visual Studio](/visualstudio/install/troubleshooting-network-related-errors-in-visual-studio)

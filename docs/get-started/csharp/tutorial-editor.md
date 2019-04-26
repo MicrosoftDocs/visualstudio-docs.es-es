@@ -12,19 +12,30 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: e828d5eaf090aa47e82ed41cf5c6acb9301dd142
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 5abd287533f2489346b41cdbae5526ed946aa746
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323349"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62971074"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Aprender a usar el editor de código
 
 En esta introducción de 10 minutos al editor de código, se agrega código a un archivo para ver algunas de las formas en que Visual Studio hace que escribir y comprender el código (así como desplazarse por él) sea más fácil.
 
+::: moniker range="vs-2017"
+
 > [!TIP]
-> Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) para instalarlo de forma gratuita.
+> Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) para instalarlo de forma gratuita.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+> [!TIP]
+> Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) para instalarlo de forma gratuita.
+
+::: moniker-end
 
 En este artículo se da por hecho que ya está familiarizado con C#. Si no lo está, le aconsejamos que antes eche un vistazo a un tutorial del tipo [Introducción a C# y ASP.NET Core en Visual Studio](tutorial-aspnet-core.md).
 

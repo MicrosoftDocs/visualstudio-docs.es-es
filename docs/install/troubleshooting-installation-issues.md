@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 5de7976af32601b6df188162aef0e129789a5147
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 5ea7b0c934dfeeee6825c558868388a65a8bdcd2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857390"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62997445"
 ---
 # <a name="troubleshoot-visual-studio-installation-and-upgrade-issues"></a>Solución de problemas de instalación y actualización de Visual Studio
 
@@ -62,7 +62,7 @@ El programa previo del instalador de Visual Studio es un ejecutable mínimo de p
 
 1. Cierre el instalador de Visual Studio.
 2. Elimine el directorio del instalador de Visual Studio. Normalmente, el directorio es `C:\Program Files (x86)\Microsoft Visual Studio\Installer`.
-3. Ejecute al programa previo del instalador de Visual Studio. Puede encontrar el programa previo en su carpeta de descargas con un nombre de archivo que sigue un patrón `vs_[Visual Studio edition]__*.exe`. Si no encuentra esa aplicación, puede descargar el programa previo; para ello, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) y haga clic en **Descargar** en su edición de Visual Studio. Entonces, ejecute el ejecutable para restablecer sus metadatos de instalación.
+3. Ejecute al programa previo del instalador de Visual Studio. Puede encontrar el programa previo en su carpeta de descargas con un nombre de archivo que sigue un patrón `vs_[Visual Studio edition]__*.exe`. Si no encuentra esa aplicación, puede descargar el programa previo; para ello, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) y haga clic en **Descargar** en su edición de Visual Studio. Entonces, ejecute el ejecutable para restablecer sus metadatos de instalación.
 4. Intente instalar o actualizar de nuevo Visual Studio. Si el Instalador sigue dando error, vaya al paso siguiente.
 
 ::: moniker-end
@@ -84,7 +84,7 @@ En algunas situaciones, como las relacionadas con los archivos dañados, los pro
 
 1. Recopile sus registros de configuración. Vea [Cómo obtener los registros de instalación de Visual Studio](#how-to-get-visual-studio-installation-logs) para más información.
 2. Abra el instalador de Visual Studio y luego haga clic en **Notificar un problema** para abrir la herramienta de comentarios de Visual Studio.
-![Puede desplazarse con la tecla de tabulación hasta el botón Proporcionar comentarios para abrir la herramienta de comentarios.](media/report-a-problem.png)
+![Puede desplazarse con la tecla de tabulación hasta el botón Proporcionar comentarios para abrir la herramienta de comentarios](media/report-a-problem.png).
 3. Asigne un título a su informe de problema y proporcione los detalles pertinentes. Haga clic en **Siguiente** para ir a la sección **Datos adjuntos** y luego adjunte el archivo de registro generado (normalmente, el archivo está en `%TEMP%\vslogs.zip`).
 4. Haga clic en **Siguiente** para revisar el informe del problema y luego haga clic en **Enviar**.
 
@@ -94,7 +94,7 @@ En algunas situaciones, como las relacionadas con los archivos dañados, los pro
 
 1. Recopile sus registros de configuración. Vea [Cómo obtener los registros de instalación de Visual Studio](#how-to-get-visual-studio-installation-logs) para más información.
 2. Abra el instalador de Visual Studio y luego haga clic en **Notificar un problema** para abrir la herramienta de comentarios de Visual Studio.
-![Puede desplazarse con la tecla de tabulación hasta el botón Proporcionar comentarios para abrir la herramienta de comentarios.](media/vs-2019/vs-installer-report-problem.png)
+![Puede desplazarse con la tecla de tabulación hasta el botón Proporcionar comentarios para abrir la herramienta de comentarios](media/vs-2019/vs-installer-report-problem.png).
 3. Asigne un título a su informe de problema y proporcione los detalles pertinentes. Haga clic en **Siguiente** para ir a la sección **Datos adjuntos** y luego adjunte el archivo de registro generado (normalmente, el archivo está en `%TEMP%\vslogs.zip`).
 4. Haga clic en **Siguiente** para revisar el informe del problema y luego haga clic en **Enviar**.
 

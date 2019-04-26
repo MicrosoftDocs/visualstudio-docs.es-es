@@ -14,40 +14,40 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: dc5c4b68b5713ba8831d840decea7f2ea25704f4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 58b7348a1bd46b426339effbe259e6f5058c769b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55931447"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979245"
 ---
-# <a name="how-to-create-a-data-driven-unit-test"></a>Filtrar Creación de una prueba unitaria controlada por datos
+# <a name="how-to-create-a-data-driven-unit-test"></a>Procedimiento Creación de una prueba unitaria controlada por datos
 
 Mediante el marco de pruebas unitarias de Microsoft para código administrado, puede configurar un método de prueba unitaria para recuperar los valores utilizados en el método de prueba de un origen de datos. El método se ejecuta correctamente para cada fila del origen de datos, lo que facilita probar una variedad de entrada mediante el uso de un único método.
 
 Crear una prueba unitaria controlada por datos implica los siguientes pasos:
 
-1.  Crear un origen de datos que contiene los valores que se utilizan en el método de prueba. El origen de datos puede ser cualquier tipo que está registrado en el equipo que ejecuta la prueba.
+1. Crear un origen de datos que contiene los valores que se utilizan en el método de prueba. El origen de datos puede ser cualquier tipo que está registrado en el equipo que ejecuta la prueba.
 
-2.  Agregue un campo privado <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> y una propiedad pública `TestContext` a la clase de prueba.
+2. Agregue un campo privado <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> y una propiedad pública `TestContext` a la clase de prueba.
 
-3.  Cree un método de prueba unitaria y agréguele un atributo <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>.
+3. Cree un método de prueba unitaria y agréguele un atributo <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>.
 
-4.  Use la propiedad de indexador <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DataRow%2A> para recuperar los valores que se usan en una prueba.
+4. Use la propiedad de indexador <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DataRow%2A> para recuperar los valores que se usan en una prueba.
 
 ## <a name="the-method-under-test"></a>Método sometido a prueba
 
 Por ejemplo, supongamos que ha creado:
 
-1.  Una solución denominada `MyBank` que acepta y procesa las transacciones para diferentes tipos de cuentas.
+1. Una solución denominada `MyBank` que acepta y procesa las transacciones para diferentes tipos de cuentas.
 
-2.  Un proyecto en `MyBank` llamado `BankDb` que administra las transacciones para las cuentas.
+2. Un proyecto en `MyBank` llamado `BankDb` que administra las transacciones para las cuentas.
 
-3.  Una clase denominada `Maths` en el `DbBank` proyecto que realiza las funciones matemáticas para asegurarse de que cualquier transacción es una ventaja para el banco.
+3. Una clase denominada `Maths` en el `DbBank` proyecto que realiza las funciones matemáticas para asegurarse de que cualquier transacción es una ventaja para el banco.
 
-4.  Un proyecto de prueba unitaria denominado `BankDbTests` para probar el comportamiento del componente `BankDb`.
+4. Un proyecto de prueba unitaria denominado `BankDbTests` para probar el comportamiento del componente `BankDb`.
 
-5.  Una clase unitaria de denominada `MathsTests` para probar el comportamiento de la clase `Maths`.
+5. Una clase unitaria de denominada `MathsTests` para probar el comportamiento de la clase `Maths`.
 
 Probaremos un método en `Maths` que agrega dos enteros mediante un bucle:
 

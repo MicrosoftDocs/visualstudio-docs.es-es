@@ -1,5 +1,5 @@
 ---
-title: Filtrar Ver los tipos existentes (Diseñador de clases)
+title: Procedimiento Ver los tipos existentes (Diseñador de clases)
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -14,14 +14,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: caeab08d6032bd8c88d35a62da56e3dc8015da9a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ef2882fec8d213c38a2e125d4e3f0c3f22d1d581
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923917"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975169"
 ---
-# <a name="how-to-view-existing-types-in-class-designer"></a>Filtrar Ver los tipos existentes en el Diseñador de clases
+# <a name="how-to-view-existing-types-in-class-designer"></a>Procedimiento Ver los tipos existentes en el Diseñador de clases
 
 Para ver un tipo existente y sus miembros, agregue su forma a un diagrama de clases.
 
@@ -31,9 +31,9 @@ Para diseñar nuevos tipos en diagramas de clases, vea [Cómo: Crear tipos con e
 
 ## <a name="to-see-types-in-a-project-on-a-class-diagram"></a>Para ver los tipos de un proyecto en un diagrama de clase
 
-1.  Desde un proyecto en el **Explorador de soluciones**, abra un archivo de diagrama de clases (.cd) existente. O bien, si no existe ningún diagrama de clase, agregue uno nuevo al proyecto. Vea [Cómo: Agregar diagramas de clases a proyectos](how-to-add-class-diagrams-to-projects.md).
+1. Desde un proyecto en el **Explorador de soluciones**, abra un archivo de diagrama de clases (.cd) existente. O bien, si no existe ningún diagrama de clase, agregue uno nuevo al proyecto. Vea [Cómo: Agregar diagramas de clases a proyectos](how-to-add-class-diagrams-to-projects.md).
 
-2.  Desde el proyecto, en el **Explorador de soluciones**, arrastre un archivo de código fuente hasta el diagrama de clases.
+2. Desde el proyecto, en el **Explorador de soluciones**, arrastre un archivo de código fuente hasta el diagrama de clases.
 
     > [!NOTE]
     > Si la solución tiene un proyecto que comparte código en varias aplicaciones, puede arrastrar archivos o código a un diagrama de clases únicamente de estos orígenes:

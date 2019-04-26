@@ -8,13 +8,13 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 085e2fe029daf246f6883e6856ddff6a9bacccdc
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55929146"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62790126"
 ---
-# <a name="how-to-insert-xml-comments-for-documentation-generation"></a>Filtrar para insertar comentarios XML para la generación de documentación
+# <a name="how-to-insert-xml-comments-for-documentation-generation"></a>Procedimiento para insertar comentarios XML para la generación de documentación
 
 Visual Studio ayuda a documentar elementos de código (como las clases y los métodos) generando automáticamente la estructura de comentarios de documentación XML estándar. En tiempo de compilación, puede generar un archivo XML que contenga los comentarios de documentación.
 

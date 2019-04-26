@@ -7,22 +7,22 @@ manager: jillfra
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: f5ab27f8f10cb7221ce85bd29df13e446253b8a8
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 14f2b1e5267bd5c9ce35375c6cf6438406aa3e80
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324914"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62970362"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Usar el marco de pruebas unitarias de Microsoft para C++ en Visual Studio
 
 El marco de pruebas unitarias de Microsoft para C++ se incluye de forma predeterminada en la carga de trabajo de **desarrollo para el escritorio con C++**.
 
-##  <a name="separate_project"></a>Para escribir pruebas unitarias en un proyecto independiente
+## <a name="separate_project"></a>Para escribir pruebas unitarias en un proyecto independiente
 
 Normalmente, el código de prueba hay que ejecutarlo en su propio proyecto, en la misma solución que el código que quiere probar. Para instalar y configurar un nuevo proyecto de prueba, vea [Escribir pruebas unitarias para C/C++](writing-unit-tests-for-c-cpp.md).
 
-##  <a name="same_project"></a> Para escribir pruebas unitarias en el mismo proyecto
+## <a name="same_project"></a> Para escribir pruebas unitarias en el mismo proyecto
 
 En algunos casos (por ejemplo, al probar funciones no exportadas en una DLL), puede que tenga que crear las pruebas en el mismo proyecto que el programa que quiere probar. Para escribir pruebas unitarias en el mismo proyecto:
 
@@ -32,16 +32,14 @@ En algunos casos (por ejemplo, al probar funciones no exportadas en una DLL), pu
 
    2. Haga clic en la flecha abajo en las siguientes filas y elija **\<Edit>**:
 
-
       | Directorio | Propiedad. |
       |-| - |
       | **Directorios de archivos de inclusión** | **$(VCInstallDir)UnitTest\include;$(IncludePath)** |
       | **Directorios de archivos de bibliotecas** | **$(VCInstallDir)UnitTest\lib;$(LibraryPath)** |
 
-
 2. Agregue el archivo de prueba unitaria de C++:
 
-   -   Haga clic con el botón derecho en el nodo de proyecto en el **Explorador de soluciones** y elija **Agregar** > **Nuevo elemento** > **Prueba unitaria de C++**.
+   - Haga clic con el botón derecho en el nodo de proyecto en el **Explorador de soluciones** y elija **Agregar** > **Nuevo elemento** > **Prueba unitaria de C++**.
 
 ## <a name="write-the-tests"></a>Escribir las pruebas
 

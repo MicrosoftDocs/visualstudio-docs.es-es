@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a0ecdd051ecc44cb3205ca8793653bf31a63abd2
-ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/15/2019
-ms.locfileid: "59584563"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62570305"
 ---
 # <a name="common-msbuild-project-properties"></a>Propiedades comunes de proyectos de MSBuild
 En la tabla siguiente se enumeran las propiedades usadas con frecuencia definidas en los archivos de proyecto de Visual Studio o incluidas en archivos *.targets* que proporciona MSBuild.

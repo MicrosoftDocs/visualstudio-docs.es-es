@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 88a2aaf448362c8e35156f39d86236e66deed571
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643124"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62931333"
 ---
 # <a name="msbuild-command-line-reference"></a>Referencia de la línea de comandos de MSBuild
 Si usa *MSBuild.exe* para compilar un archivo de proyecto o solución, puede incluir varios modificadores para especificar distintos aspectos del proceso.

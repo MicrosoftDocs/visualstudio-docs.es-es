@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a64256f44e9de5bbfd9e65dd6410b9911aaf5075
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59232689"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62997670"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>Actualización de Visual Studio a la versión más reciente
 
@@ -262,7 +262,7 @@ Puede buscar una actualización y, a continuación, instalarla mediante la barra
 
 ## <a name="see-also"></a>Vea también
 
-* [Actualización de una instalación basada en red de Visual Studio](update-a-network-installation-of-visual-studio.md)
-* [Actualizar Visual Studio para Mac](/visualstudio/mac/update)
+* [Actualizar una instalación basada en red de Visual Studio](update-a-network-installation-of-visual-studio.md)
+* [Actualización de Visual Studio para Mac](/visualstudio/mac/update)
 * [Modificar Visual Studio](modify-visual-studio.md)
 * [Desinstalar Visual Studio](uninstall-visual-studio.md)
