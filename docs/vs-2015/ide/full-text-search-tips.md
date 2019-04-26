@@ -15,11 +15,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 686bf7962e164e718f007a44c83febfc8f49418d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108378"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62584688"
 ---
 # <a name="full-text-search-tips"></a>Sugerencias para la búsqueda de texto completo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
