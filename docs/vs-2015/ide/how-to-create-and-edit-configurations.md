@@ -19,12 +19,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2c507bb2ea6fa231b2b3f3d92cebb3ca78bb4eb5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: b76ad8ed6e0cc8bdf60a2053dd11106b5e03a7d1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071205"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422902"
 ---
 # <a name="how-to-create-and-edit-configurations"></a>Cómo: Crear y editar configuraciones
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Se pueden crear configuraciones de compilación para una solución. Por ejemplo,
 - En el **Explorador de soluciones**, abra el menú contextual de la solución y, después, pulse **Administrador de configuración**.  
   
   > [!NOTE]
-  >  Si el comando **Administrador de configuración** no aparece en el menú contextual, busque bajo el menú **Compilar** en la barra de menús. Si tampoco aparece allí, en la barra de menús, pulse **Herramientas**, **Opciones**; después, en el panel izquierdo del cuadro de diálogo **Opciones**, expanda **Proyectos y soluciones**, **General** y, en el panel derecho, active la casilla **Mostrar configuraciones de compilación avanzadas**.  
+  > Si el comando **Administrador de configuración** no aparece en el menú contextual, busque bajo el menú **Compilar** en la barra de menús. Si tampoco aparece allí, en la barra de menús, pulse **Herramientas**, **Opciones**; después, en el panel izquierdo del cuadro de diálogo **Opciones**, expanda **Proyectos y soluciones**, **General** y, en el panel derecho, active la casilla **Mostrar configuraciones de compilación avanzadas**.  
   
    En el cuadro de diálogo **Administrador de configuración**, puede usar la lista desplegable **Configuración de soluciones activas** para seleccionar una configuración de compilación para toda la solución, modificar una configuración existente o crear una nueva configuración. Puede usar la lista desplegable **Plataforma de soluciones activas** para seleccionar la plataforma de destino de la configuración, modificar una plataforma existente o agregar una nueva plataforma. El panel **Contextos del proyecto** enumera los proyectos de la solución. Para cada proyecto, puede seleccionar una configuración y una plataforma específicas del proyecto, modificar las existentes, o crear una nueva configuración o agregar una nueva plataforma. También puede activar casillas que indican si cada proyecto se incluye o no cuando se utiliza la configuración para toda la solución al compilar o implementar la solución.  
   

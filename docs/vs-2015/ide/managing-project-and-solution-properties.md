@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f3e9ff4acbfd6df1980a3882311b3d3c4611e064
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: dd20552a72775723c4ad006708ce1fb7f18d4181
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758126"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424631"
 ---
 # <a name="managing-project-and-solution-properties"></a>Administrar propiedades de soluciones y proyectos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Los proyectos tienen propiedades que controlan muchos aspectos de la compilació
  ![Nodo de propiedades en el árbol del Explorador de soluciones](../ide/media/vs2015-props-se.png "VS2015_Props_SE")  
   
 > [!TIP]
->  Las soluciones tienen algunas propiedades, al igual que los elementos de proyecto; estas propiedades son accesibles desde la [ventana Propiedades](../ide/reference/properties-window.md), no desde el **Diseñador de proyectos**.  
+> Las soluciones tienen algunas propiedades, al igual que los elementos de proyecto; estas propiedades son accesibles desde la [ventana Propiedades](../ide/reference/properties-window.md), no desde el **Diseñador de proyectos**.  
   
 ## <a name="project-properties"></a>Propiedades del proyecto  
  Las propiedades del proyecto se organizan en grupos. Cada grupo tiene su propia página de propiedades y las páginas pueden ser diferentes según el lenguaje y el tipo de proyecto.  

@@ -15,12 +15,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 974aceecd7c95d5a7b3f8a46d5dcbdfb15f37961
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 305a19ed08c58d6858c95a3f1109cdf4877d848f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661769"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437179"
 ---
 # <a name="find-and-replace-environment-options-dialog-box"></a>Buscar y reemplazar, Entorno, Opciones (Cuadro de diálogo)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "59661769"
 Use esta página del cuadro de diálogo **Opciones** para controlar los cuadros de mensaje y otros aspectos de una operación de buscar y reemplazar. Puede tener acceso a este cuadro de diálogo desde el menú **Herramientas** haciendo clic en **Opciones**, expandiendo **Entorno** y, después, haciendo clic en **Buscar y reemplazar**. Si esta página no aparece en la lista, en el cuadro de diálogo **Opciones**, seleccione **Mostrar todas las configuraciones**.  
   
 > [!NOTE]
->  Las opciones disponibles en los cuadros de diálogo, así como los nombres y las ubicaciones de los comandos de menú que se ven, podrían diferir de lo que se describe en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Las opciones disponibles en los cuadros de diálogo, así como los nombres y las ubicaciones de los comandos de menú que se ven, podrían diferir de lo que se describe en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="uielement-list"></a>Lista de UIElement  
  **Mostrar mensajes informativos**  
@@ -39,7 +39,7 @@ Use esta página del cuadro de diálogo **Opciones** para controlar los cuadros 
  Cuando haya desactivado la opción **Mostrar siempre este mensaje** en algunos, pero no todos, los mensajes informativos de **Buscar y reemplazar**, la casilla **Mostrar mensajes informativos** aparece rellena pero no seleccionada. Para restaurar todos los mensajes de **Buscar y reemplazar** opcionales, desactive esta opción y, después, selecciónela de nuevo.  
   
 > [!NOTE]
->  Esta opción no afecta a ningún mensaje informativo de **Buscar y reemplazar** que no muestre la opción **Mostrar siempre este mensaje**.  
+> Esta opción no afecta a ningún mensaje informativo de **Buscar y reemplazar** que no muestre la opción **Mostrar siempre este mensaje**.  
   
  **Mostrar mensajes de advertencia**  
  Seleccione esta opción para mostrar todos los mensajes de precaución de Buscar y reemplazar que tengan la opción **Mostrar siempre este mensaje**. Por ejemplo, si ha elegido no mostrar el mensaje de advertencia **Reemplazar todo** que aparece cuando intenta realizar reemplazos en archivos que no están abiertos en estos momentos para su edición, al seleccionar esta opción provocaría que este mensaje de advertencia aparezca de nuevo cuando intente Reemplazar todo.  
@@ -49,7 +49,7 @@ Use esta página del cuadro de diálogo **Opciones** para controlar los cuadros 
  Cuando haya desactivado la opción **Mostrar siempre este mensaje** en algunos, pero no todos, los mensajes de advertencia de **Buscar y reemplazar**, la casilla **Mostrar mensajes de advertencia** aparece rellena pero no seleccionada. Para restaurar todos los mensajes de **Buscar y reemplazar** opcionales, desactive esta opción y, después, selecciónela de nuevo.  
   
 > [!NOTE]
->  Esta opción no afecta a ningún mensaje de advertencia de **Buscar y reemplazar** que no muestre la opción **Mostrar siempre este mensaje**.  
+> Esta opción no afecta a ningún mensaje de advertencia de **Buscar y reemplazar** que no muestre la opción **Mostrar siempre este mensaje**.  
   
  **Rellenar automáticamente el cuadro de diálogo Buscar con texto del editor**  
  Seleccione esta opción para pegar el texto en cualquier lado del punto de inserción del editor actual en el campo **Buscar** cuando selecciona cualquier vista de la ventana **Buscar y reemplazar** desde el menú **Edición**. Desactive esta opción para usar el último patrón de búsqueda de la búsqueda anterior como la cadena **Buscar**.  

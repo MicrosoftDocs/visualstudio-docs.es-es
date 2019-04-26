@@ -15,12 +15,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7387f2bc55d00695e85df3b023914e8d6fe9696d
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: afee2c56a7f29d50f46c7cbb734bc0297223845c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54768090"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446689"
 ---
 # <a name="vsperfclrenv"></a>VSPerfCLREnv
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,12 +34,12 @@ VsPerfCLREnv [/option]
  La opción que elija depende de cuál de los tres tipos de generación de perfiles utilice: muestreo, instrumentación o global. Es necesaria una opción independiente para incluir datos de interacción de capas en los datos de generación de perfiles. La sintaxis de cada opción se describe en las siguientes tablas.  
   
 > [!NOTE]
->  Cuando haya terminado de generar de perfiles, ejecute **VSPerfCLREnv** con la opción **/off** o **/globaloff** para eliminar las variables de entorno necesarias para la generación de perfiles. Para obtener más información, consulte Opciones de VSPerfCLREnv para eliminar la configuración del entorno.  
+> Cuando haya terminado de generar de perfiles, ejecute **VSPerfCLREnv** con la opción **/off** o **/globaloff** para eliminar las variables de entorno necesarias para la generación de perfiles. Para obtener más información, consulte Opciones de VSPerfCLREnv para eliminar la configuración del entorno.  
   
  **Opciones de VSPerfCLREnv para incluir datos de interacción de capas**  
   
 > [!WARNING]
->  La generación de perfiles de interacción de capas se puede recopilar usando [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] o [!INCLUDE[vs_pro_current_short](../includes/vs-pro-current-short-md.md)]. Sin embargo, los datos de generación de perfiles de interacción de capas solo se pueden ver en [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] y [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)].  
+> La generación de perfiles de interacción de capas se puede recopilar usando [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] o [!INCLUDE[vs_pro_current_short](../includes/vs-pro-current-short-md.md)]. Sin embargo, los datos de generación de perfiles de interacción de capas solo se pueden ver en [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] y [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)].  
   
  La generación de perfiles de interacción de capas proporciona información adicional sobre las consultas ADO.NET en aplicaciones de varios niveles. Los datos se recopilan solamente para las llamadas a funciones sincrónicas. Los datos de interacción se pueden agregar a cualquier proceso de generación de perfiles mediante cualquier método de generación de perfiles.  
   

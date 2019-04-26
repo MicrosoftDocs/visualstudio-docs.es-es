@@ -17,12 +17,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0b0587f6c1c5d7577d8fddffb73db31f09248fae
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: a5d7339ac0e79ac318dcf3913be97bec6847ec69
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075654"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430544"
 ---
 # <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>Cómo: Administrar configuraciones de compilación a las que se han aplicado opciones del desarrollador de Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ De manera predeterminada, todas las opciones de configuración de compilación a
 2. Expanda **Proyectos y soluciones** y haga clic en **General**.  
   
     > [!NOTE]
-    >  El nodo **General** es visible incluso si la opción **Mostrar todas las configuraciones** no está activada. Si quiere ver cada opción disponible, haga clic en **Mostrar todas las configuraciones**.  
+    > El nodo **General** es visible incluso si la opción **Mostrar todas las configuraciones** no está activada. Si quiere ver cada opción disponible, haga clic en **Mostrar todas las configuraciones**.  
   
 3. Haga clic en **Mostrar configuraciones de compilación avanzadas**.  
   

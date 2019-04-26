@@ -11,12 +11,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f7144f435c61bcf6cab03b55482962e55b02407e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 9591875b525d44e343f8326b7f5a145b04b57cff
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58996475"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071167"
 ---
 # <a name="define-validation-constraints-for-uml-models"></a>Definir restricciones de validación para modelos UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,9 +42,9 @@ Puede definir restricciones de validación que prueben si el modelo cumple una c
 ## <a name="defining-a-validation-extension"></a>Definir extensiones de validación  
  Para crear una extensión de validación para un diseñador UML, se debe crear una clase que defina las restricciones de validación e incrustarla en una extensión de integración de Visual Studio (VSIX). Las extensiones VSIX actúan como contenedores que instalan la restricción. Hay dos métodos alternativos de definir una extensión de validación:  
   
--   **Crear una extensión de validación en VSIX propio utilizando una plantilla de proyecto.** Este es el método más rápido. Utilícelo si no desea combinar las restricciones de validación con otros tipos de extensiones, como comandos de menú, elementos de cuadro de herramientas personalizados o controladores de gestos. Puede definir varias restricciones en una clase.  
+- **Crear una extensión de validación en VSIX propio utilizando una plantilla de proyecto.** Este es el método más rápido. Utilícelo si no desea combinar las restricciones de validación con otros tipos de extensiones, como comandos de menú, elementos de cuadro de herramientas personalizados o controladores de gestos. Puede definir varias restricciones en una clase.  
   
--   **Crear clases de validación diferente y proyectos VSIX.** Use este método si desea combinar varios tipos de extensiones en la misma VSIX. Por ejemplo, si el comando de menú espera que el modelo respete restricciones concretas, podría incrustarlo en la misma VSIX como método de validación.  
+- **Crear clases de validación diferente y proyectos VSIX.** Use este método si desea combinar varios tipos de extensiones en la misma VSIX. Por ejemplo, si el comando de menú espera que el modelo respete restricciones concretas, podría incrustarlo en la misma VSIX como método de validación.  
   
 #### <a name="to-create-a-validation-extension-in-its-own-vsix"></a>Para crear una extensión de validación en una VSIX propia  
   
@@ -81,29 +81,29 @@ using Microsoft.VisualStudio.Uml.Classes;
   
 #### <a name="to-create-a-separate-validation-constraint-in-a-class-library-project"></a>Para crear una restricción de validación independiente en un proyecto de biblioteca de clases  
   
-1.  Cree un proyecto de biblioteca de clases, ya sea agregándolo a una solución VSIX existente o creando una nueva solución.  
+1. Cree un proyecto de biblioteca de clases, ya sea agregándolo a una solución VSIX existente o creando una nueva solución.  
   
-    1.  En el menú **Archivo** , elija **Nuevo**, **Proyecto**.  
+    1. En el menú **Archivo** , elija **Nuevo**, **Proyecto**.  
   
-    2.  En **Plantillas instaladas**, expanda **Visual C#** o **Visual Basic**y, a continuación, en la columna central, elija **Biblioteca de clases**.  
+    2. En **Plantillas instaladas**, expanda **Visual C#** o **Visual Basic**y, a continuación, en la columna central, elija **Biblioteca de clases**.  
   
-2.  A menos que la solución ya contenga uno, cree un proyecto VSIX:  
+2. A menos que la solución ya contenga uno, cree un proyecto VSIX:  
   
-    1.  En el **Explorador de soluciones**, en el menú contextual de la solución, elija  **Agregar**, **Nuevo proyecto**.  
+    1. En el **Explorador de soluciones**, en el menú contextual de la solución, elija  **Agregar**, **Nuevo proyecto**.  
   
-    2.  En **Plantillas instaladas**, expanda **Visual C#** o **Visual Basic**y, a continuación, elija **Extensibilidad**. En la columna central, haga clic en **Proyecto VSIX**.  
+    2. En **Plantillas instaladas**, expanda **Visual C#** o **Visual Basic**y, a continuación, elija **Extensibilidad**. En la columna central, haga clic en **Proyecto VSIX**.  
   
-3.  Establezca el proyecto VSIX como proyecto de inicio de la solución.  
+3. Establezca el proyecto VSIX como proyecto de inicio de la solución.  
   
-    -   En el Explorador de soluciones, en el menú contextual del proyecto VSIX, elija **Establecer como proyecto de inicio**.  
+    - En el Explorador de soluciones, en el menú contextual del proyecto VSIX, elija **Establecer como proyecto de inicio**.  
   
-4.  En **source.extension.vsixmanifest**, en **Contenido**, agregue el proyecto de biblioteca de clases como componente MEF:  
+4. En **source.extension.vsixmanifest**, en **Contenido**, agregue el proyecto de biblioteca de clases como componente MEF:  
   
-    1.  En la pestaña **Metadatos** , establezca un nombre para VSIX.  
+    1. En la pestaña **Metadatos** , establezca un nombre para VSIX.  
   
-    2.  En la pestaña **Destinos de instalación** , establezca las versiones de Visual Studio como destinos.  
+    2. En la pestaña **Destinos de instalación** , establezca las versiones de Visual Studio como destinos.  
   
-    3.  En la pestaña **Activos** , elija **Nuevo**y, en el cuadro de diálogo, establezca:  
+    3. En la pestaña **Activos** , elija **Nuevo**y, en el cuadro de diálogo, establezca:  
   
          **Tipo** = **Componente MEF**  
   
@@ -113,9 +113,9 @@ using Microsoft.VisualStudio.Uml.Classes;
   
 #### <a name="to-define-the-validation-class"></a>Para definir la clase Validación  
   
-1.  No necesita este procedimiento si ha creado una clase de validación con una VSIX propia a partir de la plantilla de proyecto de validación.  
+1. No necesita este procedimiento si ha creado una clase de validación con una VSIX propia a partir de la plantilla de proyecto de validación.  
   
-2.  En el proyecto de validación de clases, agregue referencias a los ensamblados de [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)] siguientes:  
+2. En el proyecto de validación de clases, agregue referencias a los ensamblados de [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)] siguientes:  
   
      `Microsoft.VisualStudio.Modeling.Sdk.[version]`  
   
@@ -125,11 +125,11 @@ using Microsoft.VisualStudio.Uml.Classes;
   
      `System.ComponentModel.Composition`  
   
-3.  Agregue un archivo al proyecto de biblioteca de clases con código similar al siguiente ejemplo.  
+3. Agregue un archivo al proyecto de biblioteca de clases con código similar al siguiente ejemplo.  
   
-    -   Cada restricción de validación está incluida dentro de un método que se marca con un atributo concreto. El método acepta un parámetro de un tipo de elemento del modelo. Cuando se invoca la validación, el marco de validación aplicará cada método de validación a cada elemento del modelo que se ajuste a su tipo de parámetro.  
+    - Cada restricción de validación está incluida dentro de un método que se marca con un atributo concreto. El método acepta un parámetro de un tipo de elemento del modelo. Cuando se invoca la validación, el marco de validación aplicará cada método de validación a cada elemento del modelo que se ajuste a su tipo de parámetro.  
   
-    -   Puede situar estos métodos en cualquier clase y espacio de nombres. Cámbielos según sus preferencias.  
+    - Puede situar estos métodos en cualquier clase y espacio de nombres. Cámbielos según sus preferencias.  
   
     ```  
     using System.Collections.Generic;  
@@ -178,48 +178,48 @@ using Microsoft.VisualStudio.Uml.Classes;
     }  
     ```  
   
-##  <a name="Executing"></a> Ejecutar una restricción de validación  
+## <a name="Executing"></a> Ejecutar una restricción de validación  
  A efectos de prueba, ejecute los métodos de validación en modo de depuración.  
   
 #### <a name="to-test-the-validation-constraint"></a>Para probar la restricción de validación  
   
-1.  Presione **F5**o, en el menú **Depurar** , elija **Iniciar depuración**.  
+1. Presione **F5**o, en el menú **Depurar** , elija **Iniciar depuración**.  
   
      Se iniciará una instancia experimental de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
   
      **Solución de problemas de**: Si un nuevo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] no se inicia:  
   
-    -   Si tiene más de un proyecto, asegúrese de que el proyecto VSIX está configurado como proyecto de inicio de la solución.  
+    - Si tiene más de un proyecto, asegúrese de que el proyecto VSIX está configurado como proyecto de inicio de la solución.  
   
-    -   En el Explorador de soluciones, en el menú contextual del proyecto de inicio o único, elija **Propiedades**. En el editor de propiedades del proyecto, seleccione la pestaña **Depurar** . Asegúrese de que la cadena del campo Programa externo de inicio** es el nombre de ruta de acceso completo de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], normalmente:  
+    - En el Explorador de soluciones, en el menú contextual del proyecto de inicio o único, elija **Propiedades**. En el editor de propiedades del proyecto, seleccione la pestaña **Depurar** . Asegúrese de que la cadena del campo **Programa externo de inicio** es el nombre de ruta de acceso completo de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], normalmente:  
   
          `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`  
   
-2.  En la instancia experimental de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], abra o cree un proyecto de modelado, y abra o cree un diagrama de modelado.  
+2. En la instancia experimental de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], abra o cree un proyecto de modelado, y abra o cree un diagrama de modelado.  
   
-3.  Para configurar una prueba para la restricción de ejemplo indicada en la sección anterior:  
+3. Para configurar una prueba para la restricción de ejemplo indicada en la sección anterior:  
   
-    1.  Abra un diagrama de clases.  
+    1. Abra un diagrama de clases.  
   
-    2.  Cree una clase y agregue dos atributos que tengan el mismo nombre.  
+    2. Cree una clase y agregue dos atributos que tengan el mismo nombre.  
   
-4.  En el menú contextual en cualquier parte del diagrama, elija **Validar**.  
+4. En el menú contextual en cualquier parte del diagrama, elija **Validar**.  
   
-5.  Cualquier error del modelo se notificará en la ventana de errores.  
+5. Cualquier error del modelo se notificará en la ventana de errores.  
   
-6.  Haga doble clic en el informe de errores. Si los elementos mencionados en el informe están visibles en la pantalla, aparecerán resaltados.  
+6. Haga doble clic en el informe de errores. Si los elementos mencionados en el informe están visibles en la pantalla, aparecerán resaltados.  
   
      **Solución de problemas de**: Si el **validar** comando no aparece en el menú, asegúrese de que:  
   
-    -   El proyecto de validación aparece como un componente MEF en la pestaña **Activos** de **source.extensions.manifest** del proyecto VSIX.  
+    - El proyecto de validación aparece como un componente MEF en la pestaña **Activos** de **source.extensions.manifest** del proyecto VSIX.  
   
-    -   Los atributos `Export` y `ValidationMethod` correctos están adjuntados a los métodos de validación.  
+    - Los atributos `Export` y `ValidationMethod` correctos están adjuntados a los métodos de validación.  
   
-    -   `ValidationCategories.Menu` se incluye en el argumento para el `ValidationMethod` atributo y se compone de otros valores mediante el operador lógico OR (&#124;).  
+    - `ValidationCategories.Menu` se incluye en el argumento para el `ValidationMethod` atributo y se compone de otros valores mediante el operador lógico OR (&#124;).  
   
-    -   Los parámetros de todos los atributos `Import` y `Export` son válidos.  
+    - Los parámetros de todos los atributos `Import` y `Export` son válidos.  
   
-##  <a name="Implementing"></a> Evaluar la restricción  
+## <a name="Implementing"></a> Evaluar la restricción  
  El método de validación debe determinar si la restricción de validación que desea aplicar es true o false. Si es true, no debería hacer nada. Si es false, debería notificar un error utilizando los métodos proporcionados por el parámetro `ValidationContext` .  
   
 > [!NOTE]
@@ -349,7 +349,7 @@ IUseCase useCase = useCaseShape.Element;
 context.LogError(... , usecase);  
 ```  
   
-###  <a name="ContextCache"></a> Coordinar varias validaciones  
+### <a name="ContextCache"></a> Coordinar varias validaciones  
  Cuando se invoca la validación, por ejemplo, a través de un usuario desde un menú de diagrama, cada método de validación se aplica a cada elemento del modelo. Esto significa que, en una única invocación del marco de validación, el mismo método se puede aplicar muchas veces a distintos elementos.  
   
  Esto presenta un problema para las validaciones que se encargan de las relaciones entre elementos. Puede escribir una validación que se inicie, por ejemplo, en un caso de uso y recorra las relaciones de **include** para comprobar que no hay ningún bucle. Sin embargo, cuando el método se aplica a cada caso de uso de un modelo que tiene muchos vínculos **include** , es probable que procese repetidamente las mismas áreas del modelo.  
@@ -363,26 +363,26 @@ context.LogError(... , usecase);
 |`context.GetValue<T>(name)`|Obtiene un valor.|  
 |`Context.GetValue<T>()`|Obtiene un valor del tipo especificado.|  
   
-##  <a name="Installing"></a> Instalar y desinstalar una extensión  
+## <a name="Installing"></a> Instalar y desinstalar una extensión  
  Puede instalar una extensión de [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] en su propio equipo y en otros equipos.  
   
 #### <a name="to-install-an-extension"></a>Para instalar una extensión  
   
-1.  En el equipo, busque el archivo **.vsix** compilado en el proyecto VSIX.  
+1. En el equipo, busque el archivo **.vsix** compilado en el proyecto VSIX.  
   
-    1.  En el **Explorador de soluciones**, en el menú contextual del proyecto VSIX, elija **Abrir carpeta en el Explorador de Windows**.  
+    1. En el **Explorador de soluciones**, en el menú contextual del proyecto VSIX, elija **Abrir carpeta en el Explorador de Windows**.  
   
-    2.  Busque el archivo **bin\\\*\\**_convertirá_**.vsix**  
+    2. Busque el archivo **bin\\\*\\**_convertirá_**.vsix**  
   
-2.  Copie el archivo **.vsix** en el equipo de destino en el que desea instalar la extensión. Puede tratarse de su propio equipo o de otro.  
+2. Copie el archivo **.vsix** en el equipo de destino en el que desea instalar la extensión. Puede tratarse de su propio equipo o de otro.  
   
-    -   El equipo de destino debe tener una de las ediciones de [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] que especificó en **source.extension.vsixmanifest**.  
+    - El equipo de destino debe tener una de las ediciones de [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] que especificó en **source.extension.vsixmanifest**.  
   
-3.  En el equipo de destino, abra el archivo **.vsix** .  
+3. En el equipo de destino, abra el archivo **.vsix** .  
   
      El**Instalador de extensiones de Visual Studio** se abre e instala la extensión.  
   
-4.  Inicie o reinicie [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].  
+4. Inicie o reinicie [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].  
   
 #### <a name="to-uninstall-an-extension"></a>Para desinstalar una extensión  
   
@@ -396,7 +396,7 @@ context.LogError(... , usecase);
   
    *% LocalAppData %* **\Microsoft\VisualStudio\\\Extensions [versión]**  
   
-##  <a name="Example"></a> Ejemplo  
+## <a name="Example"></a> Ejemplo  
  En este ejemplo se buscan bucles en la relación de dependencia entre los elementos.  
   
  La validación se ejecutará al guardar y a través del comando del menú de validación.  

@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d688e737593ab4eaaeddfe0edcae57c99be4f8ad
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 35c5b1275ced5eb7f2fee85c0592be2b5ed94533
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663734"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419762"
 ---
 # <a name="toolbox-html-tab"></a>Cuadro de herramientas, HTML (Pestaña)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,9 +31,9 @@ La pestaña **HTML** del cuadro de herramientas proporciona componentes que resu
   
 ## <a name="tasks"></a>Tareas  
   
--   [Cómo: Administrar la ventana Cuadro de herramientas](http://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2)  
+- [Cómo: Administrar la ventana Cuadro de herramientas](http://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2)  
   
--   [Cómo: Manipular las fichas del cuadro de herramientas](http://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db)  
+- [Cómo: Manipular las fichas del cuadro de herramientas](http://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db)  
   
 ## <a name="ui-elements"></a>Elementos de interfaz de usuario  
  Las siguientes herramientas están disponibles de manera predeterminada en la pestaña HTML.  
@@ -96,7 +96,7 @@ La pestaña **HTML** del cuadro de herramientas proporciona componentes que resu
  Para obtener más información, consulte [HTML Input Controls](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de) (Controles de entrada HTML), [Sintaxis declarativa del control de servidor HtmlInputText](http://msdn.microsoft.com/87060d90-a11c-434d-9fc9-b03a8487041e), [TextBox Web Server Control Overview](http://msdn.microsoft.com/library/ab354bc1-f23a-48fc-93d8-d4d7c1b7396f) (Información general del control del servidor web TextBox), <xref:System.Web.UI.HtmlControls.HtmlInputText> y <xref:System.Web.UI.WebControls.TextBox>.  
   
 > [!IMPORTANT]
->  Se recomienda que valide todos los datos proporcionados por el usuario. Para obtener más información, consulte [Validar la información especificada por el usuario en ASP.NET Web Pages](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
+> Se recomienda que valide todos los datos proporcionados por el usuario. Para obtener más información, consulte [Validar la información especificada por el usuario en ASP.NET Web Pages](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
   
  **Input (File)**  
  ![Campo Archivo de página HTML](../../ide/reference/media/vxfilefield.gif "vxFilefield")  
@@ -112,7 +112,7 @@ La pestaña **HTML** del cuadro de herramientas proporciona componentes que resu
  Para obtener más información, consulte [HTML Input Controls](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de) (Controles de entrada HTML), [Sintaxis declarativa del control de servidor HtmlInputFile](http://msdn.microsoft.com/a817b4a0-056f-4c17-a696-b9fdcde43db6) y <xref:System.Web.UI.HtmlControls.HtmlInputFile>.  
   
 > [!IMPORTANT]
->  Se recomienda que valide todos los datos proporcionados por el usuario. Para obtener más información, consulte [Validar la información especificada por el usuario en ASP.NET Web Pages](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
+> Se recomienda que valide todos los datos proporcionados por el usuario. Para obtener más información, consulte [Validar la información especificada por el usuario en ASP.NET Web Pages](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
   
  **Input (Password)**  
  ![Campo Contraseña de Visual Studio](../../ide/reference/media/vxpassword.gif "vxPassword")  
@@ -128,7 +128,7 @@ La pestaña **HTML** del cuadro de herramientas proporciona componentes que resu
  Para obtener más información, consulte [Controles de entrada HTML](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [Sintaxis declarativa del control de servidor HtmlInputPassword](http://msdn.microsoft.com/df703dd0-1624-4e5a-a547-c97f2f331b9f), [Cómo: Establecer un control TextBox de servidor Web para escribir contraseñas](http://msdn.microsoft.com/library/5b5069f3-64a1-435a-aee6-da263f4e6310) y [Tutorial: Validar los datos introducidos por el usuario en una página de formularios Web Forms](http://msdn.microsoft.com/library/7141d6ba-34f3-410b-b5cd-2102a24cb436).  
   
 > [!IMPORTANT]
->  Si la aplicación transmite nombres de usuario y contraseñas, debe configurar su sitio web para que use la capa de sockets seguros (SSL) para cifrar la transmisión. Para obtener más información, consulte "Securing Connections with SSL" (Proteger conexiones con SSL) en la [IIS Operations Guide](http://go.microsoft.com/fwlink/?linkid=47856) (Guía de operaciones de IIS). Además, se recomienda que valide todos los datos proporcionados por el usuario. Para obtener más información, consulte [Validar la información especificada por el usuario en ASP.NET Web Pages](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
+> Si la aplicación transmite nombres de usuario y contraseñas, debe configurar su sitio web para que use la capa de sockets seguros (SSL) para cifrar la transmisión. Para obtener más información, consulte "Securing Connections with SSL" (Proteger conexiones con SSL) en la [IIS Operations Guide](http://go.microsoft.com/fwlink/?linkid=47856) (Guía de operaciones de IIS). Además, se recomienda que valide todos los datos proporcionados por el usuario. Para obtener más información, consulte [Validar la información especificada por el usuario en ASP.NET Web Pages](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
   
  **Input (Check box)**  
  ![Opción de casilla del cuadro de herramientas de página web HTML](../../ide/reference/media/vxcheckbox.gif "vxCheckbox")  
@@ -183,7 +183,7 @@ La pestaña **HTML** del cuadro de herramientas proporciona componentes que resu
  Para obtener más información, consulte [Sintaxis declarativa del control de servidor HtmlTextArea](http://msdn.microsoft.com/5a103ffa-235b-4452-ba2b-a4fb8ba8cb87), <xref:System.Web.UI.HtmlControls.HtmlTextArea> y <xref:System.Web.UI.WebControls.TextBox>.  
   
 > [!IMPORTANT]
->  Se recomienda que valide todos los datos proporcionados por el usuario. Para obtener más información, consulte [Validar la información especificada por el usuario en ASP.NET Web Pages](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
+> Se recomienda que valide todos los datos proporcionados por el usuario. Para obtener más información, consulte [Validar la información especificada por el usuario en ASP.NET Web Pages](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
   
  **Table**  
  ![Captura de pantalla de HTMLpageToolbarTable](../../ide/reference/media/vxtable.gif "vxTable")  

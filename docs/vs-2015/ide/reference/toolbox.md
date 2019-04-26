@@ -16,12 +16,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 98670f99779804cec87bc4afc03ab7d126024378
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 47f0567b07f12d17d721881c98c670ad74800190
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105622"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419741"
 ---
 # <a name="toolbox"></a>Cuadro de herramientas
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ El **Cuadro de herramientas** muestra iconos para controles y otros elementos qu
  El **Cuadro de herramientas** solo muestra los elementos que son adecuados para el tipo de archivo con el que usted está trabajando. Puede buscar en el Cuadro de herramientas para filtrar más los elementos que aparecen. Si su proyecto requiere un control que no es compatible con el Perfil de cliente, puede configurar su proyecto para que afecte al marco editando las propiedades del proyecto.  
   
 > [!NOTE]
->  Es posible que el equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Es posible que el equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="help-on-toolbox-tabs"></a>Ayuda acerca de las pestañas del Cuadro de herramientas  
  Los siguientes documentos proporcionan más información sobre pestañas específicas del **Cuadro de herramientas**.  

@@ -19,12 +19,12 @@ caps.latest.revision: 108
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: bdb3973502d57ef326d0e13b1ddc43d0e9c89c87
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 0554302f408547ea08c886bc3b458efdf7ddd412
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654703"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046608"
 ---
 # <a name="porting-migrating-and-upgrading-visual-studio-projects"></a>Portar, migrar y actualizar proyectos de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Cuando considere la posibilidad de cambiar a una versión más reciente de Visua
 
  Si usa [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] junto con [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)],[!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] o Visual Studio 2010 SP1, puede crear y modificar proyectos y archivos en cualquiera de las versiones. Puede transferir proyectos y archivos entre las distintas versiones siempre y cuando no agregue características incompatibles con una de las versiones.
 
-##  <a name="project"></a> Proyectos
+## <a name="project"></a> Proyectos
  En la lista siguiente se describe la compatibilidad de [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] y [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] con proyectos creados en [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] o Visual Studio 2010 SP1. Use esta lista para determinar si puede abrir un proyecto tal cual en [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)], [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] o Visual Studio 2010 SP1, o si tiene que modificarlo para garantizar la compatibilidad.
 
 |Tipo de proyecto|Compatibilidad|
@@ -66,7 +66,7 @@ Cuando considere la posibilidad de cambiar a una versión más reciente de Visua
 |SketchFlow|Si permite que Visual Studio actualice el proyecto a WPF 4.5/Silverlight 5, puede abrirlo en [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] y [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)].|
 |Base de datos [!INCLUDE[ssKatmai_exp](../includes/sskatmai-exp-md.md)]|Puede abrir el proyecto en [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]y Visual Studio 2010 SP1. Si tiene un archivo de base de datos (.mdf) creado en una versión anterior de SQL Server, debe actualizarlo a [!INCLUDE[sql_Denali_long](../includes/sql-denali-long-md.md)] antes de poder utilizarlo con SQL Server Express LocalDB, pero la base de datos ya no es compatible con versiones anteriores de SQL Server. Si no realiza la actualización, puede continuar trabajando con la base de datos en [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] si instala y usa [!INCLUDE[ssKatmai_exp](../includes/sskatmai-exp-md.md)] en el mismo equipo. Para obtener más información, vea [Actualizar archivos .mdf](../data-tools/upgrade-dot-mdf-files.md).|
 |[!INCLUDE[sskatmai_r2](../includes/sskatmai-r2-md.md)] Express|Si [!INCLUDE[sskatmai_r2](../includes/sskatmai-r2-md.md)] Express está instalado en los equipos que ejecutan [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]y Visual Studio 2010 SP1, puede abrir el proyecto en las tres versiones.|
-|Proyecto de informe de SQL Server|Puede abrir el proyecto en [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] y [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]. Solo para el modo local (es decir, cuando no esté conectado a SQL Server), no obtendrá la experiencia en tiempo de diseño para los controles asociados al visor de [!INCLUDE[vs2010](../includes/vs2010-md.md)], pero el proyecto funcionará correctamente en tiempo de ejecución. **Precaución:** Si agrega una característica específica de [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], el esquema del informe se actualizará automáticamente y ya no podrá abrir el proyecto en [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].|
+|Proyecto de informe de SQL Server|Puede abrir el proyecto en [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] y [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]. Solo para el modo local (es decir, cuando no esté conectado a SQL Server), no obtendrá la experiencia en tiempo de diseño para los controles asociados al visor de [!INCLUDE[vs2010](../includes/vs2010-md.md)], pero el proyecto funcionará correctamente en tiempo de ejecución. **Advertencia:**  Si agrega una característica específica de [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], el esquema del informe se actualizará automáticamente y ya no podrá abrir el proyecto en [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].|
 |Pruebas unitarias|Puede usar [!INCLUDE[TCMext](../includes/tcmext-md.md)] en [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]y Visual Studio 2010 SP1 para abrir pruebas creadas en cualquiera de estas versiones.|
 |Visual C++|Puede utilizar [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] para abrir un proyecto de C++ creado en [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] o Visual Studio 2010 SP1. Si desea utilizar el entorno de compilación de [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] para compilar un proyecto creado en [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], debe tener ambas versiones de Visual Studio instaladas en el mismo equipo. Para obtener más información, vea [Cómo: Actualizar proyectos de Visual C++ a Visual Studio 2015](../porting/how-to-upgrade-visual-cpp-projects-to-visual-studio-2015.md) y [Guía de migración y actualización de Visual C++](http://msdn.microsoft.com/library/f5fbcc3d-aa72-41a6-ad9a-a706af2166fb).|
 |Web de Visual Studio 2010|Si permite que Visual Studio actualice el proyecto automáticamente, puede abrirlo en [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]y Visual Studio 2010 SP1.|
@@ -74,7 +74,7 @@ Cuando considere la posibilidad de cambiar a una versión más reciente de Visua
 |Visual Studio 2010 Visual Database Tools|Puede abrir este proyecto en [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]y Visual Studio 2010 SP1.|
 |Visual Studio Lab Management|Puede usar [!INCLUDE[TCMext](../includes/tcmext-md.md)], [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]y Visual Studio 2010 SP1 para abrir entornos creados en cualquiera de estas versiones. Sin embargo, la versión de Microsoft Test Manager debe coincidir con la versión de Team Foundation Server para poder crear entornos.|
 |Macro de Visual Studio|Este proyecto no se puede abrir en [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] porque no admite el tipo de proyecto.|
-|Visual Studio SDK/VSIX|Después de actualizar un proyecto de Visual Studio SDK a [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], no se puede abrir en [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]. Para obtener más información, consulte la página [Migrar proyectos de extensibilidad de Visual Studio 2015](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md).|
+|Visual Studio SDK/VSIX|Después de actualizar un proyecto de Visual Studio SDK a [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], no se puede abrir en [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]. Para obtener más información, vea [Cómo: migrar proyectos de extensibilidad a Visual Studio 2015](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md).|
 |Microsoft Azure Tools para Visual Studio|Si utiliza Microsoft Azure Tools para Visual Studio versión 2.1, puede abrir el proyecto en [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]y Visual Studio 2010 SP1. En el caso de proyectos que tienen como destino versiones anteriores, si permite que Visual Studio actualice el proyecto a la versión 2.1, puede abrirlo en [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]y Visual Studio 2010 SP1.|
 |Windows Communication Foundation, Windows Presentation Foundation|Puede abrir este proyecto en [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]y Visual Studio 2010 SP1.|
 |Windows Mobile|Este proyecto no se puede abrir en [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] porque no admite el tipo de proyecto.|
@@ -89,7 +89,7 @@ Cuando considere la posibilidad de cambiar a una versión más reciente de Visua
 
 - Si intenta abrir un proyecto que no se admite en [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] o [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] y para el que no está instalada la versión asociada de Visual Studio, puede aparecer un mensaje que indica que el tipo de proyecto no se admite y el tipo de proyecto puede aparecer en el cuadro de diálogo **Revisar cambios de proyecto y solución** , en **Proyectos no admitidos**. Para resolver este problema, abra la página Programas y características del **Panel de control**de Windows, seleccione **Visual Studio**y elija **Cambiar**, **Reparar**. Después puede instalar la versión que falta.
 
-- Si intenta abrir un proyecto para una aplicación de escritorio en [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)], se produce un error y se muestra uno de estos mensajes: "Esta edición de Visual Studio solo admite aplicaciones de [!INCLUDE[win81](../includes/win81-md.md)] " o "Este proyecto no es compatible con la edición actual de Visual Studio". [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] está restringido al desarrollo, prueba e implementación de aplicaciones de la Tienda Windows diseñadas para Windows 8.1. Para abrir un proyecto de aplicación de escritorio, debe usar una edición de Visual Studio que admita ese tipo de proyecto.
+- Si intenta abrir un proyecto para una aplicación de escritorio en [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)], se produce un error y se muestra uno de estos mensajes: "Esta edición de Visual Studio solo admite aplicaciones [!INCLUDE[win81](../includes/win81-md.md)]" o "Este proyecto no es compatible con la edición actual de Visual Studio". [!INCLUDE[vs_dev12_expwin](../includes/vs-dev12-expwin-md.md)] está restringido al desarrollo, prueba e implementación de aplicaciones de la Tienda Windows diseñadas para Windows 8.1. Para abrir un proyecto de aplicación de escritorio, debe usar una edición de Visual Studio que admita ese tipo de proyecto.
 
    Para obtener más información sobre las ediciones de Visual Studio, vea [Productos de Microsoft Visual Studio](https://visualstudio.microsoft.com/products/).
 
@@ -101,7 +101,7 @@ Cuando considere la posibilidad de cambiar a una versión más reciente de Visua
 
   Para obtener información adicional sobre la solución de problemas, vea el artículo de KB sobre [Compatibilidad de Visual Studio 2013](http://support.microsoft.com/kb/2863286) .
 
-##  <a name="file"></a> Archivos
+## <a name="file"></a> Archivos
  En la lista siguiente se identifica si [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] admite cada tipo de archivo, si el archivo se puede abrir en [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] y Visual Studio 2010 SP1, y si hay que realizar cambios en el archivo para garantizar su compatibilidad.
 
 |Tipo de archivo|Compatibilidad|
@@ -121,7 +121,7 @@ Cuando considere la posibilidad de cambiar a una versión más reciente de Visua
 |Archivos de registro de IntelliTrace de [!INCLUDE[vs2010](../includes/vs2010-md.md)]|Puede abrir estos archivos en [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]y Visual Studio 2010 SP1.|
 |Archivos del Analizador de memoria de JavaScript (.diagsession)|Los archivos creados por versiones anteriores de Visual Studio se pueden ver en [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]. Sin embargo, según la información recopilada, puede que los archivos creados en [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] no se abran en [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] o Visual Studio 2010 SP1.|
 
-##  <a name="integration"></a> Activos de integración
+## <a name="integration"></a> Activos de integración
  Puede encontrar problemas de compatibilidad si usa clientes y servidores de distintas versiones de Visual Studio Team Foundation Server.
 
 |Tipo de integración|Compatibilidad|

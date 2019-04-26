@@ -13,12 +13,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 04392545b5b5c352a35b9a3d523f0c6ff5d98b01
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: c1fb81261f52fa5aaf73c30579332779ae5bfa17
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54787081"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443181"
 ---
 # <a name="visual-c-classes-in-class-designer"></a>Clase de Visual C++ en el Diseñador de clases
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "54787081"
 El Diseñador de clases admite las clases de C++ y visualiza las clases nativas de C++ igual que las formas de clase de Visual Basic y Visual C#, con la diferencia de que las clases de C++ pueden tener varias relaciones de herencia. Puede expandir la forma de clase para que muestre más campos y métodos de la clase o contraerla para ahorrar espacio.  
   
 > [!NOTE]
->  El Diseñador de clases no admite las uniones (un tipo especial de clase en la que la memoria asignada solo es la cantidad necesaria para el miembro de datos más grande de la unión).  
+> El Diseñador de clases no admite las uniones (un tipo especial de clase en la que la memoria asignada solo es la cantidad necesaria para el miembro de datos más grande de la unión).  
   
 ## <a name="simple-inheritance"></a>Herencia simple  
  Cuando se arrastra más de una clase a un diagrama de clases y las clases tienen una relación de herencia de clase, se conectan mediante una flecha. La flecha apunta en la dirección de la clase base. Por ejemplo, cuando las clases siguientes se muestran en un diagrama de clases, se conectan mediante una flecha que apunta de B a A:  
@@ -52,7 +52,7 @@ class Penguin : public Bird, public Swimmer {};
  Si hace clic con el botón derecho en una forma de clase y, después, hace clic en **Mostrar clases base**, se muestran las clases base de la clase seleccionada.  
   
 > [!NOTE]
->  No se admite el comando **Mostrar clases derivadas** para el código de C++. Para mostrar las clases derivadas, vaya a Vista de clases, expanda el nodo de tipo, expanda la subcarpeta **Tipos derivados** y arrastre esos tipos al diagrama de clases.  
+> No se admite el comando **Mostrar clases derivadas** para el código de C++. Para mostrar las clases derivadas, vaya a Vista de clases, expanda el nodo de tipo, expanda la subcarpeta **Tipos derivados** y arrastre esos tipos al diagrama de clases.  
   
  Para más información sobre la herencia de varias clases, vea [(NO ESTÁ EN LA COMPILACIÓN) Herencia múltiple](http://msdn.microsoft.com/3b74185e-2beb-4e29-8684-441e51d2a2ca) y [Varias clases base](http://msdn.microsoft.com/library/a30c69fe-401c-4a87-96a0-e0da70c7c740).  
   
