@@ -12,12 +12,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c01514a1f3a27c5e155bd9c3c5e0dc72e6dec0fe
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: cc0a254f13c4689dd6526646ddd2ff30b6094411
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650582"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432986"
 ---
 # <a name="options-text-editor-javascript-intellisense"></a>Opciones, editor de texto, JavaScript, IntelliSense
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ Utilice la página **IntelliSense** del cuadro de diálogo **Opciones** para mod
  Cuando se activa esta casilla, y si tiene un archivo JavaScript abierto fuera del contexto de un proyecto, Visual Studio descargará los archivos JavaScript remotos a los que se hace referencia en el archivo con el fin de proporcionar la información de IntelliSense. Si se selecciona esta opción, los archivos se descargarán cuando se incluyan como referencia en el archivo JavaScript.  
   
 > [!NOTE]
->  En los proyectos web, los archivos remotos a los que se hace referencia en el proyecto se descargan de forma predeterminada.  
+> En los proyectos web, los archivos remotos a los que se hace referencia en el proyecto se descargan de forma predeterminada.  
   
 ## <a name="statement-completion"></a>Finalización de instrucciones  
  Puede utilizar estas opciones para cambiar el comportamiento de la finalización de instrucciones de IntelliSense.  
@@ -74,7 +74,7 @@ Utilice la página **IntelliSense** del cuadro de diálogo **Opciones** para mod
   Esta opción especifica el orden en que los archivos se cargan en el contexto del servicio de lenguaje. Puede configurar el orden utilizando los botones **Quitar**, **Subir**y **Bajar** . Para que IntelliSense funcione correctamente, un archivo que depende de otro se debe cargar después del otro archivo.  
   
 > [!CAUTION]
->  Si un objeto se define incondicionalmente en dos o más referencias implícitas, la última referencia de esta lista se utilizará para definir el objeto.  
+> Si un objeto se define incondicionalmente en dos o más referencias implícitas, la última referencia de esta lista se utilizará para definir el objeto.  
   
  **Agregar una referencia al grupo**  
  Esta opción permite agregar archivos adicionales de IntelliSense .js buscando los archivos correspondientes.  

@@ -13,12 +13,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e2fd0e329e6cf3434348fba1d3282921ee8c1f57
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 0d685dc39f5e07840a5995f7fe67988840c3f50a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114800"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441656"
 ---
 # <a name="threads-view-parallel-performance"></a>Vista de subprocesos (rendimiento paralelo)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -97,7 +97,7 @@ Vista de subprocesos es la vista más detallada y con más características del 
  Cuando se selecciona un punto en un segmento de ejecución, el visualizador de simultaneidad busca ese punto en el tiempo en la pila de llamadas correspondiente y después muestra un símbolo de intercalación negro sobre el punto seleccionado en el segmento de ejecución y muestra la propia pila de llamadas en la pestaña **Pila actual**. Puede seleccionar varios puntos en el segmento de ejecución.  
   
 > [!NOTE]
->  Es posible que el visualizador de simultaneidad no pueda resolver una selección en un segmento de ejecución. Normalmente, esto ocurre cuando la duración del segmento es inferior a un milisegundo.  
+> Es posible que el visualizador de simultaneidad no pueda resolver una selección en un segmento de ejecución. Normalmente, esto ocurre cuando la duración del segmento es inferior a un milisegundo.  
   
  Para obtener un perfil de ejecución para todos los subprocesos habilitados (no ocultos) en el intervalo de tiempo seleccionado, elija el botón **Ejecución** en la leyenda activa.  
   

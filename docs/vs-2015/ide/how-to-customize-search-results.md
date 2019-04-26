@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 35fa2825d9fbb4b6a34d813c812bde1bc465f14f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: d7add45e5dc2aac66eaf023eabcf2a1f7cdf189e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108391"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416845"
 ---
 # <a name="how-to-customize-search-results"></a>Cómo: Personalizar los resultados de la búsqueda
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Puede personalizar el modo en que los resultados de la búsqueda aparecen en la 
  La documentación puede incluir contenido en un idioma distinto del inglés. Puede restringir los resultados de la búsqueda para que solo se muestre contenido en un idioma determinado. También puede incluir cualquier contenido en inglés que coincida con la consulta de búsqueda.  
   
 > [!WARNING]
->  Esta característica está habilitada solo si el idioma principal del contenido instalado no es el inglés.  
+> Esta característica está habilitada solo si el idioma principal del contenido instalado no es el inglés.  
   
 #### <a name="to-include-english-content-alongside-content-in-another-language"></a>Para incluir contenido en inglés junto con contenido en otro idioma  
   
