@@ -10,14 +10,14 @@ ms.assetid: e61c49f3-3161-45b1-9220-08b5459065a2
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4d835660995e92df1f6aca94ae9b9b3ccebb5d87
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ed1bd922b390d5b6e90c68b08683e1b9bdb46f32
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970769"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62821253"
 ---
-# <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>Filtrar para ver el tiempo de respuesta de la página web en una prueba de carga mediante el Analizador de pruebas de carga
+# <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>Procedimiento para ver el tiempo de respuesta de la página web en una prueba de carga mediante el Analizador de pruebas de carga
 
 El tiempo que tarda cada página web en cargarse se conoce como *tiempo de respuesta*. Al crear una prueba de rendimiento web, puede establecer un objetivo de tiempo de respuesta para cada solicitud de página web de la prueba de rendimiento web.
 
@@ -25,15 +25,15 @@ El tiempo que tarda cada página web en cargarse se conoce como *tiempo de respu
 
 Si ejecuta una prueba de rendimiento web en condiciones de carga en una prueba de carga, podrá analizar la información siguiente de cada página:
 
--   El tiempo medio de respuesta de la página.
+- El tiempo medio de respuesta de la página.
 
--   El porcentaje de iteraciones de la prueba que cumplen el tiempo de respuesta objetivo de la página.
+- El porcentaje de iteraciones de la prueba que cumplen el tiempo de respuesta objetivo de la página.
 
--   Puede analizar los tiempos de respuesta de la página web mediante las vistas Tablas o Gráficos del **Analizador de pruebas de carga**:
+- Puede analizar los tiempos de respuesta de la página web mediante las vistas Tablas o Gráficos del **Analizador de pruebas de carga**:
 
--   Análisis de los tiempos de respuesta de la página web en la vista Tablas
+- Análisis de los tiempos de respuesta de la página web en la vista Tablas
 
--   Análisis de los tiempos de respuesta de la página web en la vista Gráficos
+- Análisis de los tiempos de respuesta de la página web en la vista Gráficos
 
 ## <a name="view-response-time-data-in-a-table"></a>Ver datos de tiempo de respuesta en una tabla
 
