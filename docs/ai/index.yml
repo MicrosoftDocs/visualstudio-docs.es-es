@@ -1,10 +1,4 @@
 ### YamlMime:YamlDocument
-ms.openlocfilehash: d5e59a74d67bd7dc6afed622863f4e501fe95bee
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: HT
-ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924219"
 documentType: LandingData
 title: Visual Studio Tools para IA
 metadata:
@@ -18,32 +12,32 @@ metadata:
   ms.topic: landing-page
   ms.date: 10-25-2017
 abstract:
-  description: Visual Studio Tools para IA es un entorno de desarrollo integrado que se ha diseñado para compilar, probar e implementar soluciones de aprendizaje profundo. En los inicios rápidos, los tutoriales y las muestras que le ofrecemos, encontrará información sobre cómo usar Visual Studio Tools para IA.
+  description: 'Visual Studio Tools para IA es un entorno de desarrollo integrado que se ha diseñado para compilar, probar e implementar soluciones de aprendizaje profundo. En los inicios rápidos, los tutoriales y las muestras que le ofrecemos, encontrará información sobre cómo usar Visual Studio Tools para IA.'
 sections:
-- title: Inicios rápidos de cinco minutos
-  items:
-  - type: paragraph
-    text: 'Obtenga información sobre cómo ejecutar la solución de aprendizaje profundo con:'
-  - type: list
-    style: icon48
+  - title: Inicios rápidos de cinco minutos
     items:
-    - image:
-        src: media/Tensorflow_logo.png
-      text: TensorFlow y Python
-      href: tensorflow-local.md
-- title: Tutoriales detallados
-  items:
-  - type: paragraph
-    text: 'Obtenga información sobre cómo compilar una solución de aprendizaje profundo:'
-  - type: list
-    style: ordered
+      - type: paragraph
+        text: 'Obtenga información sobre cómo ejecutar la solución de aprendizaje profundo con:'
+      - type: list
+        style: icon48
+        items:
+          - image:
+              src: media/Tensorflow_logo.png
+            text: TensorFlow y Python
+            href: tensorflow-local.md
+  - title: Tutoriales detallados
     items:
-    - html: <a href="/visualstudio/ai/tensorflow-vm">Entrenar un modelo de TensorFlow en la nube</a>
-- title: Muestras
-  items:
-  - type: list
-    style: unordered
-    className: spaced noBullet
+      - type: paragraph
+        text: 'Obtenga información sobre cómo compilar una solución de aprendizaje profundo:'
+      - type: list
+        style: ordered
+        items:
+          - html: <a href="/visualstudio/ai/tensorflow-vm">Entrenar un modelo de TensorFlow en la nube</a>
+  - title: Muestras
     items:
-    - html: <a href="https://github.com/Microsoft/samples-for-ai">Repositorio de muestras</a>
-    - html: <a href="https://gallery.cortanaintelligence.com/projects">Galería de Machine Learning</a>
+      - type: list
+        style: unordered
+        className: spaced noBullet
+        items:
+          - html: '<a href="https://github.com/Microsoft/samples-for-ai">Repositorio de muestras</a>'
+          - html: '<a href="https://gallery.cortanaintelligence.com/projects">Galería de Machine Learning</a>'

@@ -8,26 +8,26 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d9a442c976538ae47a3ea95795ebb82ca2cbb5f2
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 72f1df430da25b480d812e89c4ea0c765995d530
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55920436"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63405981"
 ---
 # <a name="accessibility-products-and-services-blend"></a>Productos y servicios de accesibilidad (Blend)
 Microsoft ha asumido el compromiso de facilitar el acceso de todos los usuarios a sus productos y servicios. Las siguientes secciones proporcionan información acerca de las características, productos y servicios que permiten a Microsoft Windows ser más accesible para las personas con discapacidades:
 
--   Características de accesibilidad de Windows
+- Características de accesibilidad de Windows
 
--   Documentación en formatos alternativos
+- Documentación en formatos alternativos
 
--   Servicio al cliente para personas con dificultades auditivas
+- Servicio al cliente para personas con dificultades auditivas
 
--   Para obtener más información
+- Para obtener más información
 
 > [!NOTE]
->  La información de esta sección sólo se aplica a los usuarios que obtengan la licencia de los productos Microsoft en Estados Unidos. Si adquirió este producto fuera de Estados Unidos, puede usar la tarjeta de información de subsidiaria que se adjunta con el paquete de software o puede visitar el [Sitio de accesibilidad de Microsoft](http://go.microsoft.com/fwlink/?LinkID=75069) para obtener una lista de los números de teléfono y las direcciones de los servicios de atención al cliente de Microsoft. Puede ponerse en contacto con la subsidiaria para averiguar si el tipo de productos y servicios que se describen en esta sección están disponibles en su área. Recuerde que los productos localizados no pueden adquirirse en los Estados Unidos. La información sobre accesibilidad está disponible en otros idiomas, incluido japonés y francés.
+> La información de esta sección sólo se aplica a los usuarios que obtengan la licencia de los productos Microsoft en Estados Unidos. Si adquirió este producto fuera de Estados Unidos, puede usar la tarjeta de información de subsidiaria que se adjunta con el paquete de software o puede visitar el [Sitio de accesibilidad de Microsoft](http://go.microsoft.com/fwlink/?LinkID=75069) para obtener una lista de los números de teléfono y las direcciones de los servicios de atención al cliente de Microsoft. Puede ponerse en contacto con la subsidiaria para averiguar si el tipo de productos y servicios que se describen en esta sección están disponibles en su área. Recuerde que los productos localizados no pueden adquirirse en los Estados Unidos. La información sobre accesibilidad está disponible en otros idiomas, incluido japonés y francés.
 
 ## <a name="accessibility-features-of-windows"></a>Características de accesibilidad de Windows
  El sistema operativo Windows tiene muchas características de accesibilidad integradas que son útiles para personas que tienen dificultades para escribir o utilizar un mouse, son ciegas o tienen poca visión, o son sordas o tienen dificultades auditivas. Las características se instalan durante la instalación. Para obtener más información sobre estas características, vea la Ayuda de Windows y el [Sitio de accesibilidad de Microsoft](http://go.microsoft.com/fwlink/?LinkID=75069).

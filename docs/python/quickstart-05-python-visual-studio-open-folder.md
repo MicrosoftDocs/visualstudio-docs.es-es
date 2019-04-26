@@ -12,11 +12,11 @@ ms.workload:
 - data-science
 monikerRange: '>= vs-2019'
 ms.openlocfilehash: ab234d9482cf9cbab49c15167ea45aff9ac2c7e6
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366125"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62431157"
 ---
 # <a name="quickstart-open-and-run-python-code-in-a-folder"></a>Inicio rápido: Apertura y ejecución de código de Python en una carpeta
 
@@ -113,4 +113,4 @@ En tales casos, también debe agregar una línea al archivo JSON de configuraci�
 
 - [Inicio rápido: Creación de un proyecto de Python a partir del código existente](quickstart-01-python-in-visual-studio-project-from-existing-code.md)
 - [Inicio rápido: Creación de un proyecto de Python a partir de un repositorio](quickstart-03-python-in-visual-studio-project-from-repository.md)
-- [Identificación manual de un intérprete de Python existente](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)
+- [Manually identifying an existing Python interpreter](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment) (Identificación manual de un intérprete de Python existente)

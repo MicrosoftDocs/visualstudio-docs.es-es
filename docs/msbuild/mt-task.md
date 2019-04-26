@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4916f51c3044bbd0a6cb8f8dd283c741a216c015
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7afdf40c660a7433c51d2fa1130ef5f2cca616bd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56654476"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437836"
 ---
 # <a name="mt-task"></a>MT (tarea)
 Incluye la herramienta Manifiesto de Microsoft *mt.exe*. Para más información, consulte [Mt.exe](https://docs.microsoft.com/windows/desktop/SbsCs/mt-exe).
@@ -38,7 +38,7 @@ Incluye la herramienta Manifiesto de Microsoft *mt.exe*. Para más información,
  En la siguiente tabla se describen los parámetros de la tarea **MT**. La mayoría de los parámetros de tarea, así como algunos conjuntos de parámetros, corresponden a una opción de línea de comandos.
 
 > [!NOTE]
->  La documentación de *mt.exe* usa un guion (**-**) como prefijo para las opciones de línea de comandos, pero en este tema se usa una barra diagonal (**/**). Se aceptan ambos prefijos.
+> La documentación de *mt.exe* usa un guion (**-**) como prefijo para las opciones de línea de comandos, pero en este tema se usa una barra diagonal (**/**). Se aceptan ambos prefijos.
 
 |Parámetro|Descripción|
 |---------------|-----------------|

@@ -8,12 +8,12 @@ ms.assetid: E2C9420F-A5D5-4472-9020-2B63FB27A133
 ms.technology: vs-unity-tools
 ms.workload:
 - unity
-ms.openlocfilehash: 054bf2fc68efdcfe78e57996948af32040b532df
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 82556ea0ed043c11cb9098383daf912ff17372ef
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954042"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62818439"
 ---
 # <a name="using-net-4x-in-unity"></a>Uso de .NET 4.x en Unity
 
@@ -24,7 +24,7 @@ Con el lanzamiento de Unity 2017.1, Unity introdujo una versión experimental de
 ## <a name="prerequisites"></a>Requisitos previos
 
 * [Unity 2017.1 o superior](https://unity3d.com/) (2018.2 recomendado)
-* [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)
+* [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)
 
 ## <a name="enabling-the-net-4x-scripting-runtime-in-unity"></a>Habilitar el runtime de scripting de .NET 4.x en Unity
 

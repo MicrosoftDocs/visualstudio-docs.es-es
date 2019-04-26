@@ -4,17 +4,19 @@ description: Aprenda a instalar y a configurar roles para Azure Cloud Services c
 author: ghogen
 manager: jillfra
 assetId: d397ef87-64e5-401a-aad5-7f83f1022e16
-ms.custom: seodec18
+ms.prod: visual-studio-dev14
+ms.technology: vs-azure
+ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 06914374169d3d6dab6dd5a489461c11ddbc66aa
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 86a86a097bc5e9d3cd567502ec94aae3cbafd324
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953893"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62552451"
 ---
 # <a name="configure-azure-cloud-service-roles-with-visual-studio"></a>Configuración de los roles para un servicio de Azure con Visual Studio
 Un servicio en la nube de Azure puede tener uno o más roles web o de trabajo. Para cada rol, debe definir cómo se configura ese rol y cómo se ejecuta. Para obtener más información sobre los roles en servicios en la nube, vea el vídeo [Introducción a Azure Cloud Services](https://channel9.msdn.com/Series/Windows-Azure-Cloud-Services-Tutorials/Introduction-to-Windows-Azure-Cloud-Services).
@@ -48,6 +50,8 @@ Puede configurar un servicio en la nube de Azure desde el Explorador de solucion
 
     > [!IMPORTANT]
     > Si elige una configuración de servicio específica, algunas propiedades están deshabilitadas porque solo se pueden establecer para todas las configuraciones. Para modificar estas propiedades, debe seleccionar **Todas las configuraciones**.
+    >
+    >
 
     ![Lista Configuración del servicio para un servicio en la nube de Azure](./media/vs-azure-tools-configure-roles-for-cloud-service/cloud-service-service-configuration-property.png)
 
@@ -255,7 +259,7 @@ En el código siguiente se muestra un ejemplo de cómo escribir un archivo de te
 
 Para ver el archivo creado por el código de la sección anterior, siga estos pasos:
 
-1.  En el área de notificación de Windows, haga clic con el botón derecho en el icono de Azure y, en el menú contextual, seleccione **Show Compute Emulator UI** (Mostrar la interfaz de usuario del emulador de proceso).
+1. En el área de notificación de Windows, haga clic con el botón derecho en el icono de Azure y, en el menú contextual, seleccione **Show Compute Emulator UI** (Mostrar la interfaz de usuario del emulador de proceso).
 
     ![Mostrar el emulador de proceso de Azure](./media/vs-azure-tools-configure-roles-for-cloud-service/show-compute-emulator.png)
 

@@ -23,11 +23,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a69649a7babacb0fe08b483380214f17f2e582f8
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603357"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974662"
 ---
 # <a name="rc-task"></a>RC (tarea)
 Incluye la herramienta Compilador de recursos de Microsoft Windows *rc.exe*. La tarea **RC** compila recursos, como cursores, iconos, iconos, mapas de bits, cuadros de diálogo y fuentes, en un archivo de recursos (*.res*). Para más información, consulte [Compilador de recursos](https://docs.microsoft.com/windows/desktop/menurc/resource-compiler).

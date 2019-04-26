@@ -9,11 +9,11 @@ ms.author: mikejo
 author: mikejo5000
 manager: jillfra
 ms.openlocfilehash: 4ba823e113167bbd78eaf6ac6fe71110866715f5
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58325047"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62561096"
 ---
 # <a name="javascript-in-visual-studio"></a>JavaScript en Visual Studio
 

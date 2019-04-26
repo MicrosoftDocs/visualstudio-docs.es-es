@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: dc3a49c586b7a8f5a67d6c1a3a77d00772698389
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955871"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62793424"
 ---
 # <a name="develop-with-visual-f-in-visual-studio"></a>Desarrollar con Visual F# en Visual Studio
 
@@ -65,7 +65,7 @@ El **Diseñador de proyectos** consta de varias páginas de propiedades de proye
 |Eventos de compilación|[Eventos de compilación (Página, Diseñador de proyectos)](reference/build-events-page-project-designer-csharp.md)|Permite especificar comandos que se van a ejecutar antes o después de una compilación.|
 |Depuración|[Página Depuración, Diseñador de proyectos](reference/debug-page-project-designer.md)|Permite controlar cómo se ejecuta la aplicación durante la depuración. Esto incluye qué comandos se van a usar y cuál es el directorio de inicio de la aplicación, así como los modos de depuración especiales que quiera habilitar, como código nativo y SQL.|
 |Paquete (solo SDK de .NET)|N/D|Permite definir metadatos de paquete NuGet al publicar como paquete NuGet.|
-|Rutas de acceso de referencias|[Administración de referencias en un proyecto](managing-references-in-a-project.md)|Permite especificar dónde buscar los ensamblados de los que depende el código.|
+|Rutas de referencia|[Administración de referencias en un proyecto](managing-references-in-a-project.md)|Permite especificar dónde buscar los ensamblados de los que depende el código.|
 |Recursos (solo SDK de .NET)|N/D|Permite generar y administrar un archivo de recursos predeterminado.|
 
 ### <a name="f-specific-settings"></a>Propiedades específicas de F#

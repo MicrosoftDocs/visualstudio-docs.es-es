@@ -14,12 +14,12 @@ dev_langs:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f5c1a065d30f3925ba5c567d562d0138de8c5953
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: a6f1c524b879d5d5476491a8979d86449f3d43c0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57869281"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63002568"
 ---
 # <a name="generate-and-run-a-coded-web-performance-test"></a>Generar y ejecutar una prueba de rendimiento web codificada
 
@@ -29,13 +29,13 @@ Las pruebas de rendimiento web se graban al examinar la aplicación web. Las pru
 
 ## <a name="generate-a-coded-web-performance-test"></a>Generar una prueba de rendimiento web codificada
 
-1.  Si no ha creado una prueba de rendimiento web, vea [Grabar una prueba de rendimiento web](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-web-performance-and-load-test-project).
+1. Si no ha creado una prueba de rendimiento web, vea [Grabar una prueba de rendimiento web](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-web-performance-and-load-test-project).
 
-2.  Genere la prueba codificada.
+2. Genere la prueba codificada.
 
      ![Generar una prueba de rendimiento web codificada](../test/media/web_test_coded_generate.png)
 
-3.  Asigne un nombre a la prueba.
+3. Asigne un nombre a la prueba.
 
      ![Escribir un nombre para la prueba de rendimiento web codificada](../test/media/web_test_coded_generate_nametest.png)
 
@@ -47,7 +47,7 @@ Las pruebas de rendimiento web se graban al examinar la aplicación web. Las pru
 
      Puede ver en el código que el método GetRequestEnumerator() de C# o el método Run() de Visual Basic contienen todas las reglas de validación y las solicitudes web que estaban en la prueba recodificada.
 
-4.  Para ver cómo se agrega un código sencillo, desplácese hacia abajo hasta el final del método y, después del código de la última solicitud web, agregue el siguiente código:
+4. Para ver cómo se agrega un código sencillo, desplácese hacia abajo hasta el final del método y, después del código de la última solicitud web, agregue el siguiente código:
 
     ```c#
     if (DateTime.Today.DayOfWeek == DayOfWeek.Wednesday)
@@ -72,9 +72,9 @@ Las pruebas de rendimiento web se graban al examinar la aplicación web. Las pru
     End If
     ```
 
-5.  Compile la solución para comprobar que el código personalizado se compila.
+5. Compile la solución para comprobar que el código personalizado se compila.
 
-6.  Ejecute la prueba.
+6. Ejecute la prueba.
 
      ![Ejecutar la prueba de rendimiento web codificada](../test/media/web_test_coded_generate_run.png)
 

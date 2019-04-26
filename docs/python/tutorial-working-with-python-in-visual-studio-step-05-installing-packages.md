@@ -12,19 +12,19 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: bf38def7be9607868df8f9c116266632ffcad710
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59365202"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62831237"
 ---
 # <a name="step-5-install-packages-in-your-python-environment"></a>Paso 5: Instalación de paquetes en el entorno de Python
 
-**Paso anterior: [Ejecutar código en el depurador](tutorial-working-with-python-in-visual-studio-step-04-debugging.md)**
+**Paso anterior: [Ejecución de código en el depurador](tutorial-working-with-python-in-visual-studio-step-04-debugging.md)**
 
 La comunidad de desarrolladores de Python ha generado miles de paquetes útiles que puede incorporar a sus proyectos. Visual Studio proporciona una interfaz de usuario para administrar paquetes en los entornos de Python.
 
-1. Seleccione el comando de menú **Vista** > **Otras ventanas** > **Entornos de Python** . La ventana **Entornos de Python** se abre como un elemento del mismo nivel para el **Explorador de soluciones** y muestra los distintos entornos disponibles. La lista incluye los entornos que ha instalado mediante el instalador de Visual Studio y los que ha instalado por separado. El entorno en negrita es el entorno predeterminado que se usa para los nuevos proyectos.
+1. Seleccione el comando de menú **Vista** > **Otras ventanas** > **Entornos de Python**. La ventana **Entornos de Python** se abre como un elemento del mismo nivel para el **Explorador de soluciones** y muestra los distintos entornos disponibles. La lista incluye los entornos que ha instalado mediante el instalador de Visual Studio y los que ha instalado por separado. El entorno en negrita es el entorno predeterminado que se usa para los nuevos proyectos.
 
    ![Ventana Python Environments (Entornos de Python)](media/environments/environments-default-view-blue.png)
 

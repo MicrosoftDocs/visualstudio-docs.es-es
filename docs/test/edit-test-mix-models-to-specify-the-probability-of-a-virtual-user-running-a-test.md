@@ -9,12 +9,12 @@ ms.assetid: e3b7d952-9012-400a-8131-3444390a6066
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 411e0a83b180014ffb3a896887c3798d57ffc635
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 51bfc7a9061cbc17d766f1174593907bfbf762ec
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55938012"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62785846"
 ---
 # <a name="edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test"></a>Edición de modelos de combinación de pruebas para especificar la probabilidad de que un usuario virtual ejecute una prueba
 
@@ -26,13 +26,13 @@ El *modelo de combinación de pruebas* especifica la probabilidad de que un usua
 
 Puede especificar una de las siguientes opciones de modelo de combinación de pruebas para el escenario de la prueba de carga:
 
--   **A partir del número total de pruebas:** determina la prueba unitaria o de rendimiento web que se va a ejecutar cuando un usuario virtual inicia una iteración de prueba. Al final de la prueba de carga, el número de veces que se ha ejecutado una prueba determinada coincide con la distribución de pruebas asignada. Use este modelo de combinación de pruebas cuando base la combinación de pruebas en porcentajes de transacciones en un registro de IIS o en datos de producción.
+- **A partir del número total de pruebas:** determina la prueba unitaria o de rendimiento web que se va a ejecutar cuando un usuario virtual inicia una iteración de prueba. Al final de la prueba de carga, el número de veces que se ha ejecutado una prueba determinada coincide con la distribución de pruebas asignada. Use este modelo de combinación de pruebas cuando base la combinación de pruebas en porcentajes de transacciones en un registro de IIS o en datos de producción.
 
--   **A partir del número de usuarios virtuales:** determina el porcentaje de usuarios virtuales que ejecutarán una prueba unitaria o de rendimiento web determinada. En cualquier punto de la prueba de carga, el número de usuarios que ejecutan una prueba determinada coincide con la distribución asignada. Use este modelo de combinación de pruebas cuando base la combinación de pruebas en el porcentaje de usuarios que ejecutan una prueba determinada.
+- **A partir del número de usuarios virtuales:** determina el porcentaje de usuarios virtuales que ejecutarán una prueba unitaria o de rendimiento web determinada. En cualquier punto de la prueba de carga, el número de usuarios que ejecutan una prueba determinada coincide con la distribución asignada. Use este modelo de combinación de pruebas cuando base la combinación de pruebas en el porcentaje de usuarios que ejecutan una prueba determinada.
 
--   **A partir de la velocidad del usuario:** durante la prueba de carga, cada prueba unitaria o de rendimiento web se ejecuta un número determinado de veces por usuario y por hora. Use este modelo de combinación de pruebas cuando desee que los usuarios virtuales ejecuten pruebas a una determinada velocidad durante la prueba de carga.
+- **A partir de la velocidad del usuario:** durante la prueba de carga, cada prueba unitaria o de rendimiento web se ejecuta un número determinado de veces por usuario y por hora. Use este modelo de combinación de pruebas cuando desee que los usuarios virtuales ejecuten pruebas a una determinada velocidad durante la prueba de carga.
 
--   **A partir del orden secuencial:** cada usuario virtual ejecuta las pruebas unitarias o de rendimiento web en el mismo orden en que se definen en el escenario. El usuario virtual seguirá recorriendo las pruebas en este orden hasta que se complete la prueba de carga.
+- **A partir del orden secuencial:** cada usuario virtual ejecuta las pruebas unitarias o de rendimiento web en el mismo orden en que se definen en el escenario. El usuario virtual seguirá recorriendo las pruebas en este orden hasta que se complete la prueba de carga.
 
 ## <a name="tasks"></a>Tareas
 
@@ -53,27 +53,27 @@ Con el **Editor de pruebas de carga**, puede cambiar el modelo de combinación d
 
 ### <a name="to-change-the-test-mix-model"></a>Para cambiar el modelo de combinación de pruebas
 
-1.  Abra una prueba de carga.
+1. Abra una prueba de carga.
 
      Aparece el **Editor de pruebas de carga**. Se mostrará el árbol de la prueba de carga.
 
-2.  En la carpeta *Escenarios* del árbol de la prueba de carga, elija el nodo del escenario en el que quiere especificar el número máximo de iteraciones de prueba.
+2. En la carpeta *Escenarios* del árbol de la prueba de carga, elija el nodo del escenario en el que quiere especificar el número máximo de iteraciones de prueba.
 
-3.  En el menú **Ver**, seleccione la ventana **Propiedades**.
+3. En el menú **Ver**, seleccione la ventana **Propiedades**.
 
      Se muestran las categorías y propiedades del escenario.
 
-4.  En la propiedad **Tipo de combinación de pruebas**, elija el botón de puntos suspensivos (**…**).
+4. En la propiedad **Tipo de combinación de pruebas**, elija el botón de puntos suspensivos (**…**).
 
      Aparecerá el cuadro de diálogo **Editar combinación de pruebas**.
 
-5.  Elija la lista desplegable de **Modelo de combinación de pruebas** y seleccione el modelo de combinación de pruebas que quiere usar para el escenario.
+5. Elija la lista desplegable de **Modelo de combinación de pruebas** y seleccione el modelo de combinación de pruebas que quiere usar para el escenario.
 
-6.  (Opcional) Modifique la combinación de pruebas con los botones **Agregar**, **Quitar** y **Distribuir** y los controles deslizantes de distribución. Para más información, consulte [Editar la combinación de pruebas para especificar qué pruebas incluir en un escenario de prueba de carga](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).
+6. (Opcional) Modifique la combinación de pruebas con los botones **Agregar**, **Quitar** y **Distribuir** y los controles deslizantes de distribución. Para más información, consulte [Editar la combinación de pruebas para especificar qué pruebas incluir en un escenario de prueba de carga](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).
 
-7.  (Opcional) Especifique una prueba de rendimiento web y unitaria para inicializar o finalizar con las casillas y la selección de las pruebas deseadas. Para más información, consulte [Emular el uso real esperado de una aplicación o un sitio web](../test/emulate-real-world-usage-of-a-web-site-in-a-load-test-using-test-mix-models.md).
+7. (Opcional) Especifique una prueba de rendimiento web y unitaria para inicializar o finalizar con las casillas y la selección de las pruebas deseadas. Para más información, consulte [Emular el uso real esperado de una aplicación o un sitio web](../test/emulate-real-world-usage-of-a-web-site-in-a-load-test-using-test-mix-models.md).
 
-8.  Elija **Aceptar**.
+8. Elija **Aceptar**.
 
      La ventana **Propiedades** muestra el nuevo modelo de combinación de pruebas para la propiedad **Tipo de combinación de pruebas**.
 

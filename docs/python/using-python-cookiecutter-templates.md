@@ -11,11 +11,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: eeea19b1d2ff4a4d24f27280a48b9ae673406908
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366320"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62832198"
 ---
 # <a name="use-the-cookiecutter-extension"></a>Uso de la extensión Cookiecutter
 
@@ -38,9 +38,9 @@ La página de inicio de Cookiecutter muestra una lista de plantillas para elegir
 | Agrupar | Descripción |
 | --- | --- |
 | **Instalado** | Plantillas que se han instalado en el equipo local. Cuando se usa una plantilla en línea, su repositorio se clona automáticamente en una subcarpeta de *~/.cookiecutters*. Puede eliminar una plantilla instalada seleccionada presionando **Suprimir**. |
-| **Se recomienda** | Plantillas cargadas desde la fuente recomendada. Microsoft mantiene la fuente predeterminada. Consulte [Opciones de Cookiecutter](#cookiecutter-options) a continuación para más información sobre cómo personalizar la fuente. |
+| **Recomendado** | Plantillas cargadas desde la fuente recomendada. Microsoft mantiene la fuente predeterminada. Consulte [Opciones de Cookiecutter](#cookiecutter-options) a continuación para más información sobre cómo personalizar la fuente. |
 | **GitHub** | Resultados de búsqueda de GitHub de la palabra clave cookiecutter. Los resultados de GitHub vuelven paginados; si hay más resultados disponibles, aparece **Load More** (Cargar más) al final de la lista. |
-| **Personalizados** | Cuando se especifica una ubicación personalizada en el cuadro de búsqueda, aparece en este grupo. Puede escribir una ruta de acceso completa al repositorio de GitHub, o la ruta de acceso completa a una carpeta de su disco local. |
+| **Custom** | Cuando se especifica una ubicación personalizada en el cuadro de búsqueda, aparece en este grupo. Puede escribir una ruta de acceso completa al repositorio de GitHub, o la ruta de acceso completa a una carpeta de su disco local. |
 
 ### <a name="cloning"></a>Clonación
 
@@ -81,8 +81,8 @@ Las opciones de Cookiecutter están disponibles en **Tools** > **Options** > **C
 
 | Opción | Descripción |
 | --- | --- |
-| **URL de fuente recomendada** | La ubicación de la fuente de plantillas recomendadas. Puede ser una dirección URL o una ruta de acceso a un archivo local. Deje en blanco la dirección URL para usar la fuente protegida por Microsoft predeterminada. La fuente proporciona una sencilla lista de ubicaciones de plantillas, separadas por nuevas líneas. Para solicitar cambios en la fuente protegida, realice una solicitud de extracción contra [el origen de GitHub](https://github.com/Microsoft/PTVS/blob/master/Python/Product/Cookiecutter/CookiecutterFeed.txt). |
-| **Show Help (Mostrar ayuda)** | Controla la visibilidad de la barra de información de ayuda en la parte superior de la ventana de Cookiecutter. |
+| **Recommended Feed URL** (URL de fuente recomendada) | La ubicación de la fuente de plantillas recomendadas. Puede ser una dirección URL o una ruta de acceso a un archivo local. Deje en blanco la dirección URL para usar la fuente protegida por Microsoft predeterminada. La fuente proporciona una sencilla lista de ubicaciones de plantillas, separadas por nuevas líneas. Para solicitar cambios en la fuente protegida, realice una solicitud de extracción contra [el origen de GitHub](https://github.com/Microsoft/PTVS/blob/master/Python/Product/Cookiecutter/CookiecutterFeed.txt). |
+| **Show Help** (Mostrar ayuda) | Controla la visibilidad de la barra de información de ayuda en la parte superior de la ventana de Cookiecutter. |
 
 ## <a name="optimize-cookiecutter-templates-for-visual-studio"></a>Optimización de plantillas de Cookiecutter para Visual Studio
 

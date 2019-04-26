@@ -4,17 +4,19 @@ description: Aprenda a actualizar proyectos de Azure en Visual Studio a la versi
 author: ghogen
 manager: jillfra
 assetId: 1d64070a-078d-468a-87f4-e6715de6475f
+ms.prod: visual-studio-dev14
+ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/18/2016
 ms.author: ghogen
 ms.openlocfilehash: e007e7a3f3e8ddeb62167a04debfe879dad1778c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908080"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62427967"
 ---
 # <a name="how-to-upgrade-projects-to-the-current-version-of-the-azure-tools-for-visual-studio"></a>Actualización de proyectos a la versión actual de Azure Tools para Visual Studio
 ## <a name="overview"></a>Información general
@@ -32,13 +34,13 @@ Si un proyecto se actualiza automáticamente o se especifica que se desea actual
 
 > [!IMPORTANT]
 > En el caso de los proyectos de F#, debe actualizar manualmente las referencias a los ensamblados de Azure para que hagan referencia a las versiones más recientes de dichos ensamblados.
->
->
+> 
+> 
 
 ### <a name="how-to-upgrade-an-azure-project-to-the-current-release"></a>Actualización de un proyecto de Azure a la versión actual
 1. Instale la versión actual de Azure Tools en la instalación de Visual Studio que desea usar para el proyecto actualizado y, a continuación, abra el proyecto que desea actualizar. Si el proyecto se creó con una versión de Azure Tools anterior a la 1.6 (noviembre de 2011), el proyecto se actualiza automáticamente a la versión actual. Si el proyecto se creó con la versión de noviembre de 2011 y esa versión todavía está instalada, el proyecto se abre en dicha versión.
 2. En el Explorador de soluciones, abra el menú contextual del nodo del proyecto, elija **Propiedades**, y, a continuación, elija la pestaña **Aplicación** del cuadro de diálogo que aparece.
-
+   
     La pestaña **Aplicación** muestra la versión de las herramientas asociada con el proyecto. Si aparece la versión actual de Azure Tools, significa que el proyecto ya se actualizó. Si ha instalado una versión de las herramientas más reciente que la que se muestra en la pestaña, aparece un botón **Actualizar** .
 3. Elija el botón **Actualizar** para actualizar un proyecto a la versión actual de las herramientas.
 4. Compile el proyecto y, a continuación, solucione los errores que produzcan los cambios en la API. Para obtener información acerca de cómo modificar el código de la nueva versión, consulte la documentación de la API específica.

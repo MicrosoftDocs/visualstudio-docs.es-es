@@ -11,11 +11,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: c093dad1364fd5209f51c8e87e3fb99b3c1d3c4a
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366463"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62430343"
 ---
 # <a name="python-item-templates"></a>Plantillas de elementos de Python
 
@@ -48,6 +48,6 @@ En la tabla siguiente se explica brevemente el efecto de cada plantilla de eleme
 
 ## <a name="see-also"></a>Vea también
 
-- [Proyectos de Python: plantillas de proyecto](managing-python-projects-in-visual-studio.md#project-templates)
+- [Proyectos de Python - Plantillas de proyecto](managing-python-projects-in-visual-studio.md#project-templates)
 - [Plantillas de proyecto web de Python](python-web-application-project-templates.md)
 - [Publicación en Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)

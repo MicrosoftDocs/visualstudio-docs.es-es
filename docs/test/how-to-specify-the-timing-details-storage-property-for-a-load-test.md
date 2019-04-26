@@ -9,14 +9,14 @@ ms.assetid: 867a9c21-0909-4963-bc02-d41e9393008c
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 94d996dbd069c258522418b9ca0be14bf54df156
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ec6ca0e39a7816d99377bc13e1274cbc96a663ea
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948698"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62970648"
 ---
-# <a name="how-to-specify-the-timing-details-storage-property-for-a-load-test-run-setting"></a>Filtrar para especificar la propiedad Almacenamiento de detalles de tiempo de los parámetros de ejecución de una prueba de carga
+# <a name="how-to-specify-the-timing-details-storage-property-for-a-load-test-run-setting"></a>Procedimiento para especificar la propiedad Almacenamiento de detalles de tiempo de los parámetros de ejecución de una prueba de carga
 
 Después de crear la prueba de carga con el **Asistente para prueba de carga nueva**, puede usar el **Editor de pruebas de carga** para cambiar la configuración de modo que satisfaga las necesidades y los objetivos de la prueba.
 
@@ -47,15 +47,15 @@ Puede editar el valor de la propiedad **Almacenamiento de detalles de tiempo** d
 
 ## <a name="to-configure-the-timing-details-storage-property-in-a-load-test"></a>Para configurar la propiedad Almacenamiento de detalles de tiempo en una prueba de carga
 
-1.  Abra una prueba de carga en el Editor de prueba de carga.
+1. Abra una prueba de carga en el Editor de prueba de carga.
 
-2.  Expanda el nodo **Parámetros de ejecución** de la prueba de carga.
+2. Expanda el nodo **Parámetros de ejecución** de la prueba de carga.
 
-3.  Elija el parámetro de ejecución que quiera configurar, por ejemplo, **Run Settings1[Active]**.
+3. Elija el parámetro de ejecución que quiera configurar, por ejemplo, **Run Settings1[Active]**.
 
-4.  Abra la ventana **Propiedades**. En el menú **Ver**, seleccione la ventana **Propiedades**.
+4. Abra la ventana **Propiedades**. En el menú **Ver**, seleccione la ventana **Propiedades**.
 
-5.  En la categoría **Resultados**, elija la propiedad **Almacenamiento de detalles de tiempo** y seleccione **Todos los detalles individuales**.
+5. En la categoría **Resultados**, elija la propiedad **Almacenamiento de detalles de tiempo** y seleccione **Todos los detalles individuales**.
 
      Después de haber configurado el valor **Todos los detalles individuales** de la propiedad **Almacenamiento de detalles de tiempo**, puede ejecutar la prueba de carga y ver el **Diagrama de actividad del usuario virtual**. Para obtener más información, vea [Cómo: Analizar lo que hacen los usuarios virtuales durante una prueba de carga](../test/how-to-analyze-virtual-user-activity-during-a-load-test.md).
 

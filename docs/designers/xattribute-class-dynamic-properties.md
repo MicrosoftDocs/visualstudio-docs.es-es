@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7dc7a0cf5ee5f9c67fed4e9cae5da8e80688076c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55933098"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62843945"
 ---
 # <a name="xattribute-class-dynamic-properties"></a>Propiedades dinámicas de la clase XAttribute
 

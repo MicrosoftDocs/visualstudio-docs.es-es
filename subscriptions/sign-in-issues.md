@@ -7,12 +7,12 @@ ms.date: 11/07/2018
 ms.topic: conceptual
 description: Obtenga información sobre los problemas que pueden surgir al iniciar sesión en suscripciones de Visual Studio
 searchscope: VS Subscription
-ms.openlocfilehash: 0073ec4193190e56fb5147b5da56898e1a289fd5
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: ebdca1a8b38fd6ecbe895524da9c090be0620894
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840953"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63008068"
 ---
 # <a name="issues-signing-in-to-visual-studio-subscriptions"></a>Problemas al iniciar sesión en las suscripciones de Visual Studio
 Para usar su suscripción de Visual Studio, primero debe iniciar sesión.  Según la suscripción, es posible que la configurase con una cuenta Microsoft (MSA) o una identidad de Azure Active Directory (AAD).  En este artículo se describen algunos de los problemas que pueden surgir al iniciar sesión en su suscripción.
@@ -55,7 +55,6 @@ Si elimina una o más identidades (MSA o AAD) asociadas con su suscripción, la 
 Para evitar impactos en su acceso a la suscripción, use una de estas técnicas.
 - Implemente un sistema de administración de identidad único, ya sea MSA o AAD, pero no ambos.
 - Asocie las identidades de AAD y MSA a través de los inquilinos.
-
 
 ## <a name="next-steps"></a>Pasos siguientes
 - Obtenga información sobre cómo [vincular cuentas de MSA y AAD](/azure/active-directory/b2b/add-users-administrator) en AAD.

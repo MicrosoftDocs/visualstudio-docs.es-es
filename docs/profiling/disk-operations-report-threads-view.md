@@ -12,35 +12,35 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c890ac9dbd3b542a400fc2a5b6db7ee2eb8f5db2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 69cbef53bcca74cceba4f9409b578fca45a58806
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56613861"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62970075"
 ---
 # <a name="disk-operations-report-threads-view"></a>Informe de operaciones de disco (Vista de subprocesos)
 En el informe de operaciones de disco se muestran las operaciones de E/S de disco en los canales de disco.
 
  Para cada acceso de disco que se produce en nombre del proceso del que se está generando el perfil en la ventana de tiempo actualmente visible, se notifica la información siguiente:
 
--   El nombre y el PID del proceso que realiza el acceso al disco
+- El nombre y el PID del proceso que realiza el acceso al disco
 
--   El identificador del subproceso que tiene acceso el disco
+- El identificador del subproceso que tiene acceso el disco
 
--   El nombre del archivo al que se ha accedido
+- El nombre del archivo al que se ha accedido
 
--   El número de lecturas por archivo
+- El número de lecturas por archivo
 
--   El número de bytes leídos
+- El número de bytes leídos
 
--   La latencia de lectura, en milisegundos
+- La latencia de lectura, en milisegundos
 
--   El número de escrituras
+- El número de escrituras
 
--   El número de bytes escritos
+- El número de bytes escritos
 
--   La latencia de escritura, en milisegundos
+- La latencia de escritura, en milisegundos
 
 ## <a name="see-also"></a>Vea también
 - [Vista de subprocesos](../profiling/threads-view-parallel-performance.md)

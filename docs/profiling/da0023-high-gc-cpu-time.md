@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0150ed3f40d4e8fb61cc6054a37c30ae0ffc0d1a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4ad7a7df2a536df0ac3e9bc391f08ef5d0fcd830
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608414"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444103"
 ---
 # <a name="da0023-high-gc-cpu-time"></a>DA0023: Mucho tiempo de CPU de GC
 
@@ -42,7 +42,7 @@ ms.locfileid: "56608414"
  Esta regla se desencadena cuando la cantidad de tiempo que se invierte en la recolección de elementos no utilizados es considerable en comparación con el tiempo total de procesamiento de la aplicación.
 
 > [!NOTE]
->  Cuando la proporción de tiempo que se invierte en la recolección de elementos no utilizados es excesiva en comparación con el tiempo total de procesamiento de la aplicación, se desencadena la advertencia [DA0024: Tiempo excesivo de CPU de GC](../profiling/da0024-excessive-gc-cpu-time.md) en lugar de esta regla.
+> Cuando la proporción de tiempo que se invierte en la recolección de elementos no utilizados es excesiva en comparación con el tiempo total de procesamiento de la aplicación, se desencadena la advertencia [DA0024: Tiempo excesivo de CPU de GC](../profiling/da0024-excessive-gc-cpu-time.md) en lugar de esta regla.
 
 ## <a name="how-to-investigate-a-warning"></a>Cómo investigar una advertencia
  Haga doble clic en el mensaje en la ventana Lista de errores para navegar a la [vista Marcas](../profiling/marks-view.md) de los datos de generación de perfiles. Busque la columna **Memoria CLR de .NET\\% de tiempo del GC**. Determine si hay fases concretas de ejecución del programa en que la sobrecarga de la recolección de elementos no utilizados de memoria administrada sea mayor que en otras. Compare los valores de % de tiempo del GC con la tasa de recolección de elementos no utilizados notificada en los valores **N.º de colecciones de gen. 0**, **N.º de colecciones de gen. 1** y **N.º de colecciones de gen. 2**.

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5756047dc88dc01e044787cd5e3a71456e3e85c9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0d7640b4f846dd4fa5a9f8b16ead7019ca3ba821
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56625015"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430937"
 ---
 # <a name="markprofile"></a>MarkProfile
 El método `MarkProfile` inserta una marca de perfil en el archivo .*vsp*. La generación de perfiles para el subproceso que contiene la función `MarkProfile` debe estar activada (ON) para que se inserte la marca.
@@ -52,7 +52,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI MarkProfile( long lMarker );
  El estado de generación de perfiles del subproceso que contiene la función de perfil de marcas debe estar activado cuando se inserten marcas o comentarios con el comando Mark o con las funciones de la API (CommentMarkAtProfile, CommentMarkProfile o MarkProfile).
 
 > [!IMPORTANT]
->  El método MarkProfile solo se debe utilizar con la generación de perfiles de instrumentación.
+> El método MarkProfile solo se debe utilizar con la generación de perfiles de instrumentación.
 
 ## <a name="net-framework-equivalent"></a>Equivalente de .NET Framework
  *Microsoft.VisualStudio.Profiler.dll*

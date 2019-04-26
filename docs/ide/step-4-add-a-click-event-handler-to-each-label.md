@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9159ccec69bd6e8cad0290b092f38434b495fc6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8bdc4c106ff8d6f1740fb53e0e3552f64b069fb5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954579"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949101"
 ---
 # <a name="step-4-add-a-click-event-handler-to-each-label"></a>Paso 4: Agregar un controlador de eventos Click a cada etiqueta
 
@@ -29,17 +29,17 @@ El juego de formar parejas funciona como sigue:
 
 ## <a name="to-add-a-click-event-handler-to-each-label"></a>Para agregar un controlador de eventos Click a cada etiqueta
 
-1.  Abra el formulario en el **Diseñador de Windows Forms**. En el **Explorador de soluciones**, elija *Form1.cs* o *Form1.vb*. En la barra de menús, elija **Ver** > **Diseñador**.
+1. Abra el formulario en el **Diseñador de Windows Forms**. En el **Explorador de soluciones**, elija *Form1.cs* o *Form1.vb*. En la barra de menús, elija **Ver** > **Diseñador**.
 
-2.  Elija el primer control de etiqueta para seleccionarlo. A continuación, mantenga presionada la tecla **CTRL** mientras elige cada una de las otras etiquetas para seleccionarlas. Asegúrese de que todas las etiquetas están seleccionadas.
+2. Elija el primer control de etiqueta para seleccionarlo. A continuación, mantenga presionada la tecla **CTRL** mientras elige cada una de las otras etiquetas para seleccionarlas. Asegúrese de que todas las etiquetas están seleccionadas.
 
-3.  Elija el botón **Eventos** en la barra de herramientas de la ventana **Propiedades** para ver la página **Eventos** en la ventana **Propiedades**. Desplácese hacia abajo hasta el evento **Click** y escriba **label_Click** en el cuadro, como se muestra en la siguiente ilustración.
+3. Elija el botón **Eventos** en la barra de herramientas de la ventana **Propiedades** para ver la página **Eventos** en la ventana **Propiedades**. Desplácese hacia abajo hasta el evento **Click** y escriba **label_Click** en el cuadro, como se muestra en la siguiente ilustración.
 
      ![Ventana Propiedades mostrando el evento Click](../ide/media/express_labelclick.png)
 
-4.  Presione la tecla **ENTRAR**. El IDE agrega al código un controlador de eventos `Click` denominado `label_Click()` y lo enlaza a cada una de las etiquetas del formulario.
+4. Presione la tecla **ENTRAR**. El IDE agrega al código un controlador de eventos `Click` denominado `label_Click()` y lo enlaza a cada una de las etiquetas del formulario.
 
-5.  Rellene el resto del código como se indica a continuación:
+5. Rellene el resto del código como se indica a continuación:
 
      [!code-csharp[VbExpressTutorial4Step2_3_4#4](../ide/codesnippet/CSharp/step-4-add-a-click-event-handler-to-each-label_1.cs)]
      [!code-vb[VbExpressTutorial4Step2_3_4#4](../ide/codesnippet/VisualBasic/step-4-add-a-click-event-handler-to-each-label_1.vb)]
@@ -52,10 +52,10 @@ El juego de formar parejas funciona como sigue:
 
      Este método comprueba primero si `clickedLabel` se convirtió (mediante conversión de tipos) correctamente de un objeto en un control Label. Si no, tiene un valor `null` (C#) o `Nothing` (Visual Basic) y no es preciso ejecutar el resto del código del método. Luego, el método comprueba el color del texto de la etiqueta elegida mediante la propiedad **ForeColor** de la etiqueta. Si el color del texto de la etiqueta es negro, significa que el icono ya se ha elegido y el método ha terminado. (Eso es lo que hace la instrucción `return`: indica al programa que deje de ejecutar el método). Si no, el icono no se ha elegido, por lo que el programa cambia el color del texto de la etiqueta a negro.
 
-6.  En la barra de menús, elija **Archivo** > **Guardar todo** para guardar el progreso y, a continuación, en la barra de menús, elija **Depurar** > **Iniciar depuración** para ejecutar el programa. Debería ver un formulario vacío con un fondo azul. Al elegir cualquiera de las celdas del formulario, uno de los iconos debería hacerse visible. Siga eligiendo distintas partes del formulario. A medida que elija los iconos, estos deberían mostrarse.
+6. En la barra de menús, elija **Archivo** > **Guardar todo** para guardar el progreso y, a continuación, en la barra de menús, elija **Depurar** > **Iniciar depuración** para ejecutar el programa. Debería ver un formulario vacío con un fondo azul. Al elegir cualquiera de las celdas del formulario, uno de los iconos debería hacerse visible. Siga eligiendo distintas partes del formulario. A medida que elija los iconos, estos deberían mostrarse.
 
 ## <a name="to-continue-or-review"></a>Para continuar o revisar
 
--   Para ir al siguiente paso del tutorial, vea [Paso 5: Agregar referencias a etiquetas](../ide/step-5-add-label-references.md).
+- Para ir al siguiente paso del tutorial, vea [Paso 5: Agregar referencias a etiquetas](../ide/step-5-add-label-references.md).
 
--   Para volver al paso anterior del tutorial, vea [Paso 3: Asignar un icono aleatorio a cada etiqueta](../ide/step-3-assign-a-random-icon-to-each-label.md).
+- Para volver al paso anterior del tutorial, vea [Paso 3: Asignar un icono aleatorio a cada etiqueta](../ide/step-3-assign-a-random-icon-to-each-label.md).

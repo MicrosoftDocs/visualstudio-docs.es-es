@@ -11,11 +11,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 647548a59c965b6feacb994efa041ecd5b6c6b91
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908818"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62786174"
 ---
 # <a name="edit-load-test-scenarios"></a>Edición de escenarios de prueba de carga
 
@@ -33,7 +33,7 @@ Las opciones y los valores de configuración iniciales que se especifican al cre
 
 Los escenarios contienen los componentes siguientes:
 
-|Término|de esquema JSON|
+|Término|Definición|
 |-|-|
 |Combinación de exploradores|Simula que los usuarios virtuales acceden a un sitio web a través de diversos exploradores web.|
 |Modelo de carga|Especifica el número de usuarios virtuales que están activos durante una prueba de carga y la tasa con que se inician nuevos usuarios. Por ejemplo: de pasos, constante y basada en objetivos.|

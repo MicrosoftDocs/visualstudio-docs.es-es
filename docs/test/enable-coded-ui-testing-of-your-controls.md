@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: c1a2d2a60b6875cf4257c0b5bfb3e09c27865c17
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6f4ec35c79bd71351d830428cce39b41b7308cf7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943394"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62783658"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>Habilitación de pruebas automatizadas de IU en los controles
 
@@ -37,7 +37,7 @@ El generador de pruebas de IU codificadas captura información acerca de los con
 
  ![CUIT&#95;Accesible](../test/media/cuit_accessible.png)
 
-1.  Implemente una clase que se derive de <xref:System.Windows.Forms.Control.ControlAccessibleObject> y reemplace la propiedad <xref:System.Windows.Forms.Control.AccessibilityObject%2A> para devolver un objeto de la clase.
+1. Implemente una clase que se derive de <xref:System.Windows.Forms.Control.ControlAccessibleObject> y reemplace la propiedad <xref:System.Windows.Forms.Control.AccessibilityObject%2A> para devolver un objeto de la clase.
 
     ```csharp
     public partial class ChartControl : UserControl
@@ -62,11 +62,11 @@ El generador de pruebas de IU codificadas captura información acerca de los con
     }
     ```
 
-2.  Reemplace las propiedades y métodos <xref:System.Windows.Forms.AccessibleObject.Role%2A>, <xref:System.Windows.Forms.AccessibleObject.State%2A>, <xref:System.Windows.Forms.AccessibleObject.GetChild%2A> y <xref:System.Windows.Forms.AccessibleObject.GetChildCount%2A> del objeto accesible.
+2. Reemplace las propiedades y métodos <xref:System.Windows.Forms.AccessibleObject.Role%2A>, <xref:System.Windows.Forms.AccessibleObject.State%2A>, <xref:System.Windows.Forms.AccessibleObject.GetChild%2A> y <xref:System.Windows.Forms.AccessibleObject.GetChildCount%2A> del objeto accesible.
 
-3.  Implemente otro objeto de accesibilidad para el control secundario y reemplace la propiedad <xref:System.Windows.Forms.Control.AccessibilityObject%2A> del control secundario para devolver el objeto de accesibilidad.
+3. Implemente otro objeto de accesibilidad para el control secundario y reemplace la propiedad <xref:System.Windows.Forms.Control.AccessibilityObject%2A> del control secundario para devolver el objeto de accesibilidad.
 
-4.  Reemplace las propiedades y métodos <xref:System.Windows.Forms.AccessibleObject.Bounds%2A>, <xref:System.Windows.Forms.AccessibleObject.Name%2A>, <xref:System.Windows.Forms.AccessibleObject.Parent%2A>, <xref:System.Windows.Forms.AccessibleObject.Role%2A>, <xref:System.Windows.Forms.AccessibleObject.State%2A>, <xref:System.Windows.Forms.AccessibleObject.Navigate%2A> y <xref:System.Windows.Forms.AccessibleObject.Select%2A> del objeto de accesibilidad del control secundario.
+4. Reemplace las propiedades y métodos <xref:System.Windows.Forms.AccessibleObject.Bounds%2A>, <xref:System.Windows.Forms.AccessibleObject.Name%2A>, <xref:System.Windows.Forms.AccessibleObject.Parent%2A>, <xref:System.Windows.Forms.AccessibleObject.Role%2A>, <xref:System.Windows.Forms.AccessibleObject.State%2A>, <xref:System.Windows.Forms.AccessibleObject.Navigate%2A> y <xref:System.Windows.Forms.AccessibleObject.Select%2A> del objeto de accesibilidad del control secundario.
 
 > [!NOTE]
 > Este tema comienza con el ejemplo de accesibilidad en <xref:System.Windows.Forms.AccessibleObject> y, a continuación, se basa en este para compilar los procedimientos restantes. Si desea crear una versión operativa del ejemplo de accesibilidad, cree una aplicación de consola y reemplace el código en *Program.cs* por el código de ejemplo. Agregue referencias a Accesibilidad, System.Drawing y System.Windows.Forms. Cambie **Incrustar tipos de interoperabilidad** para la Accesibilidad a **False** para eliminar una advertencia de compilación. Puede cambiar el tipo de salida del proyecto de **Aplicación de consola** a **Aplicación Windows** de modo que no aparezca una ventana de consola al ejecutar la aplicación.
@@ -182,19 +182,19 @@ El proveedor de propiedades y el filtro de acción se implementan en un paquete 
 
 ### <a name="to-debug-your-property-provider-or-action-filter"></a>Para depurar el proveedor de propiedades o filtro de acción
 
-1.  Compile la versión de depuración del paquete de extensión y copie los archivos *.dll* y *.pdb* en *%ProgramFiles%\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages*.
+1. Compile la versión de depuración del paquete de extensión y copie los archivos *.dll* y *.pdb* en *%ProgramFiles%\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages*.
 
-2.  Ejecute la aplicación (no en el depurador).
+2. Ejecute la aplicación (no en el depurador).
 
-3.  Ejecute el generador de pruebas de IU codificadas.
+3. Ejecute el generador de pruebas de IU codificadas.
 
      `codedUITestBuilder.exe  /standalone`
 
-4.  Asocie el depurador al proceso codedUITestBuilder.
+4. Asocie el depurador al proceso codedUITestBuilder.
 
-5.  Establezca puntos de interrupción en el código.
+5. Establezca puntos de interrupción en el código.
 
-6.  En el generador de pruebas de IU codificadas, cree aserciones para ejecutar el proveedor de propiedades y registre acciones para usar los filtros de acción.
+6. En el generador de pruebas de IU codificadas, cree aserciones para ejecutar el proveedor de propiedades y registre acciones para usar los filtros de acción.
 
 ## <a name="see-also"></a>Vea también
 

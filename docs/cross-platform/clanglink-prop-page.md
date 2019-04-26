@@ -33,11 +33,11 @@ f1_keywords:
 ms.workload:
 - xplat-cplusplus
 ms.openlocfilehash: 16dcb7ff5925f341fc78b57f1d9a4f011a27d576
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55016803"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62815782"
 ---
 # <a name="clang-linker-properties-android-c"></a>Propiedades del enlazador de Clang (C++ para Android)
 

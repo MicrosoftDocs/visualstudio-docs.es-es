@@ -8,11 +8,11 @@ ms.author: mikejo
 author: mikejo5000
 manager: jillfra
 ms.openlocfilehash: b1ffebc17d7915c7845a27cc2864623fa2f2d263
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58325021"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62898459"
 ---
 # <a name="deployment-in-visual-studio"></a>Implementación en Visual Studio
 

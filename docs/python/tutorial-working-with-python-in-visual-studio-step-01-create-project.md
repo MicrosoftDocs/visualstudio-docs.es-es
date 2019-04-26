@@ -12,11 +12,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: ed4fdbfe7090a66d955461f2c3a394f6fb661c5a
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366294"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62430749"
 ---
 # <a name="tutorial-work-with-python-in-visual-studio"></a>Tutorial: Uso de Python en Visual Studio
 
@@ -71,7 +71,7 @@ En este tutorial, empezará con un proyecto simple que contiene un único archiv
 ## <a name="next-step"></a>Paso siguiente
 
 > [!div class="nextstepaction"]
-> [Escritura y ejecución de código](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)
+> [Escribir y ejecutar código](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)
 
 ## <a name="go-deeper"></a>Profundizar un poco más
 

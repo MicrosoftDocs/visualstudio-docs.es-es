@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Obtenga información sobre cómo aprovechar la ventaja Chat de asesoramiento de Azure incluida en las suscripciones de Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: e353878d7e911bb38dce80470e77a65f3be85c88
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 03e55b29cea867d438ef0536a2db7ee9c4f47e36
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841023"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62809120"
 ---
 # <a name="azure-advisory-chat"></a>Chat de asesoramiento de Azure
 
@@ -49,14 +49,13 @@ El empleo de Chat de asesoramiento de Azure es sencillo.
 > [!NOTE]
 > Microsoft ya no ofrece suscripciones anuales ni de Visual Studio Professional ni de Visual Studio Enterprise en las suscripciones de nube. Esto no supone cambio alguno en la experiencia actual de los clientes y ni en su capacidad para renovar, aumentar, reducir o cancelar las suscripciones. Conviene que los clientes nuevos vayan a [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) para explorar las diferentes opciones de compra de Visual Studio.
 
-
 ¿No sabe con seguridad qué suscripción usa?  Conéctese a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas las suscripciones asignadas a su dirección de correo electrónico. Si no ve todas las suscripciones, es posible que haya una o varias asignadas a una dirección de correo electrónico diferente.  Debe iniciar sesión con esa dirección de correo electrónico para ver esas suscripciones.
 
 ## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
 ### <a name="q--what-is-the-difference-between-azure-advisory-chat-and-azure-advisor"></a>P:  ¿Cuál es la diferencia entre el chat de asesoramiento de Azure y Azure Advisor?
--  R:  El chat de asesoramiento Azure es un servicio de chat en tiempo real que le ayudará con preguntas acerca de Azure. [Azure Advisor](/azure/advisor/advisor-overview) es un consultor personalizado en la nube que le ayudará a seguir los procedimientos recomendados para optimizar las implementaciones de Azure. Analiza la telemetría de uso y la configuración de recursos y, a continuación, recomienda soluciones que le ayudarán a mejorar la rentabilidad, el rendimiento, la alta disponibilidad y la seguridad de los recursos de Azure.
+- R:  El chat de asesoramiento Azure es un servicio de chat en tiempo real que le ayudará con preguntas acerca de Azure. [Azure Advisor](/azure/advisor/advisor-overview) es un consultor personalizado en la nube que le ayudará a seguir los procedimientos recomendados para optimizar las implementaciones de Azure. Analiza la telemetría de uso y la configuración de recursos y, a continuación, recomienda soluciones que le ayudarán a mejorar la rentabilidad, el rendimiento, la alta disponibilidad y la seguridad de los recursos de Azure.
 
 ## <a name="support-resources"></a>Recursos de soporte técnico
--  Para obtener ayuda con las ventas, las suscripciones, las cuentas y la facturación para suscripciones de Visual Studio, póngase en contacto con el [soporte para suscripciones](https://visualstudio.microsoft.com/subscriptions/support/) de Visual Studio.
--  ¿Tiene alguna pregunta sobre el IDE de Visual Studio, Azure DevOps Services u otros productos o servicios de Visual Studio?  Visite el [soporte técnico de Visual Studio](https://visualstudio.microsoft.com/support/).
+- Para obtener ayuda con las ventas, las suscripciones, las cuentas y la facturación para suscripciones de Visual Studio, póngase en contacto con el [soporte para suscripciones](https://visualstudio.microsoft.com/subscriptions/support/) de Visual Studio.
+- ¿Tiene alguna pregunta sobre el IDE de Visual Studio, Azure DevOps Services u otros productos o servicios de Visual Studio?  Visite el [soporte técnico de Visual Studio](https://visualstudio.microsoft.com/support/).

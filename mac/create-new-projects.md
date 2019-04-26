@@ -6,11 +6,11 @@ ms.author: crdun
 ms.date: 04/02/2019
 ms.assetid: 5880BB10-0A12-47E2-8A82-7A2D59C4D579
 ms.openlocfilehash: ae69c71b3b70e950bc0b58b1c34335f3a52529df
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856478"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62983614"
 ---
 # <a name="creating-new-projects-and-solutions"></a>Creación de nuevos proyectos y soluciones
 
@@ -40,4 +40,4 @@ Puede filtrar esta lista con el cuadro Filtrar o quitar elementos individuales d
 
 ## <a name="see-also"></a>Vea también
 
-- [Crear soluciones y proyectos (Visual Studio en Windows)](/visualstudio/ide/creating-solutions-and-projects)
+- [Crear soluciones y proyectos (Visual Studio en Windows)](/visualstudio/ide/creating-solutions-and-projects)

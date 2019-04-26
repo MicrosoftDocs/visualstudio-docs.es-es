@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dcce2a7a505c5ac5aa1db3232055f8b37b7e64ee
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628953"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62794408"
 ---
 # <a name="overviews-performance-tools"></a>Información general (herramientas de rendimiento)
 Esta sección proporciona información sobre los conceptos y la terminología relacionados con las herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], herramientas que le sirven para medir las características de rendimiento de una aplicación en desarrollo.

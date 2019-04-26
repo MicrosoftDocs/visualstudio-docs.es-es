@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 9b31859d677ab69108ad5e2681890a8c4a88f854
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0263afa4eeb9094802fe6272380b6b53106da4a2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911214"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62810215"
 ---
 # <a name="set-up-remote-workspaces"></a>Configurar áreas de trabajo remotas
 
@@ -96,14 +96,19 @@ Para emitir un certificado autofirmado usted mismo:
 
 1. Use SSH o inicie sesión en el equipo con Linux.
 2. Instale el paquete `ssl-cert`:
+
     ```sh
     sudo apt-get install ssl-cert
     ```
+
 3. Ejecute `make-ssl-cert` para generar el certificado SSL autofirmado predeterminado:
+
     ```sh
     sudo make-ssl-cert generate-default-snakeoil --force-overwrite
     ```
+
 4. Convierta la clave y los archivos PEM generados a PFX. El archivo PFX generado debería estar en la carpeta principal:
+
     ```sh
     openssl pkcs12 -export -out ~/ssl-cert-snakeoil.pfx -inkey /etc/ssl/private/ssl-cert-snakeoil.key -in /etc/ssl/certs/ssl-cert-snakeoil.pem -password pass:SnakeOil
     ```

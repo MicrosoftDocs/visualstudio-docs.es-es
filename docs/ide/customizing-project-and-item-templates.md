@@ -9,11 +9,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 7e80bf422906c2b89e75462938d736fd3a0e5a41
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919331"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62978151"
 ---
 # <a name="customize-project-and-item-templates"></a>Personalización de plantillas de proyectos y elementos
 

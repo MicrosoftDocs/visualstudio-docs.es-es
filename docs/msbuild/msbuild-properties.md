@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c194531c5436549efa06ca93e987e55739276926
-ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
+ms.openlocfilehash: e476876234c31009d219af30fbe3c9d1e55f3d96
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58515212"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443595"
 ---
 # <a name="msbuild-properties"></a>propiedades de MSBuild
 Las propiedades son pares nombre-valor que se pueden utilizar para configurar compilaciones. Las propiedades son útiles para pasar valores a tareas, evaluar condiciones y almacenar valores a los que se hará referencia en el archivo del proyecto.
@@ -54,7 +54,7 @@ Las propiedades son pares nombre-valor que se pueden utilizar para configurar co
  Para obtener el valor actual de las variables de entorno desde una herramienta generada, use las [Funciones de propiedad](../msbuild/property-functions.md) System.Environment.GetEnvironmentVariable. Sin embargo, el método preferido es usar el parámetro de tarea <xref:Microsoft.Build.Utilities.ToolTask.EnvironmentVariables%2A>. Las propiedades de entorno establecidas en esta matriz de cadenas se pueden pasar a la herramienta generada sin afectar a las variables de entorno del sistema.
 
 > [!TIP]
->  No todas las variables de entorno se leen para convertirse en propiedades iniciales. Las variables de entorno cuyo nombre no sea un nombre de propiedad de MSBuild válido, como "386", se omiten.
+> No todas las variables de entorno se leen para convertirse en propiedades iniciales. Las variables de entorno cuyo nombre no sea un nombre de propiedad de MSBuild válido, como "386", se omiten.
 
  Para obtener más información, vea [Cómo: Usar variables de entorno al compilar](../msbuild/how-to-use-environment-variables-in-a-build.md).
 
@@ -108,11 +108,11 @@ msbuild.exe MyProj.proj -p:Configuration=DEBUG
 ## <a name="create-properties-during-execution"></a>Crear propiedades durante la ejecución
  A las propiedades ubicadas fuera de los elementos `Target` se les asignan valores durante la fase de evaluación de una compilación. En la siguiente fase de la ejecución, se pueden crear o modificar propiedades como se indica a continuación:
 
--   Cualquier tarea puede emitir una propiedad. Para emitir una propiedad, el elemento [Task](../msbuild/task-element-msbuild.md) debe tener un elemento [Output](../msbuild/output-element-msbuild.md) secundario que tenga un atributo `PropertyName`.
+- Cualquier tarea puede emitir una propiedad. Para emitir una propiedad, el elemento [Task](../msbuild/task-element-msbuild.md) debe tener un elemento [Output](../msbuild/output-element-msbuild.md) secundario que tenga un atributo `PropertyName`.
 
--   La tarea [CreateProperty](../msbuild/createproperty-task.md) puede emitir una propiedad. (en desuso).
+- La tarea [CreateProperty](../msbuild/createproperty-task.md) puede emitir una propiedad. (en desuso).
 
--   A partir de .NET Framework 3.5, los elementos `Target` pueden contener elementos `PropertyGroup` que pueden contener declaraciones de propiedad.
+- A partir de .NET Framework 3.5, los elementos `Target` pueden contener elementos `PropertyGroup` que pueden contener declaraciones de propiedad.
 
 ## <a name="store-xml-in-properties"></a>Almacenar XML en propiedades
  Las propiedades pueden contener código XML arbitrario, que puede ayudar a pasar valores a las tareas o a mostrar información de registro. En el ejemplo siguiente se muestra la propiedad `ConfigTemplate`, que tiene un valor que contiene código XML y referencias a otras propiedades. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] reemplaza dichas referencias con los respectivos valores de propiedad. Los valores de propiedad se asignan en el orden en que aparecen. Por consiguiente, en este ejemplo, `$(MySupportedVersion)`, `$(MyRequiredVersion)`y `$(MySafeMode)` ya deben haberse definido.

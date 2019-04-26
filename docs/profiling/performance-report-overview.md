@@ -12,20 +12,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26cc1d8c0063d23b20c6c0a8938a67793a2a1532
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 04abc2de21469b696df1365b001b60b9b3ba5e8c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56632880"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432017"
 ---
 # <a name="performance-report-overview"></a>Información general sobre el informe de rendimiento
 Puede ver los datos de generación de perfiles de una sesión de rendimiento en la ventana **Informe de rendimiento** del entorno de desarrollo integrado (IDE) de Visual Studio Team System Development Edition. Los datos de generación de perfiles se guardan en archivos .vsp y .vsps. Las ventanas de la vista Informe permiten ver y analizar problemas de rendimiento de la aplicación.
 
 > [!CAUTION]
->  Un archivo de datos de generación de perfiles contiene información confidencial, como el nombre del equipo, la versión del sistema operativo, las rutas de acceso de archivo, información de la memoria y otros datos de configuración del equipo. Se debe mantener un control estricto sobre la distribución de los datos, tanto en su formato nativo .*vsp* como cuando se exportan a un archivo .*csv* o .*xml*.
+> Un archivo de datos de generación de perfiles contiene información confidencial, como el nombre del equipo, la versión del sistema operativo, las rutas de acceso de archivo, información de la memoria y otros datos de configuración del equipo. Se debe mantener un control estricto sobre la distribución de los datos, tanto en su formato nativo .*vsp* como cuando se exportan a un archivo .*csv* o .*xml*.
 >
->  Si se recopilan datos de seguimiento de eventos como parte de la sesión de rendimiento, puede aparecer información adicional en el archivo de registro de seguimiento de eventos (.*etl*). Esta información incluye su nombre de usuario y dominio, por lo tanto, se debe mantener un control estricto sobre la distribución del archivo de registro.
+> Si se recopilan datos de seguimiento de eventos como parte de la sesión de rendimiento, puede aparecer información adicional en el archivo de registro de seguimiento de eventos (.*etl*). Esta información incluye su nombre de usuario y dominio, por lo tanto, se debe mantener un control estricto sobre la distribución del archivo de registro.
 
 ## <a name="performance-report-window"></a>Ventana Informe de rendimiento
  La ventana Informe de rendimiento es una ventana de herramientas que se utiliza para ver, administrar y filtrar los datos de rendimiento, e incluye un control de consulta personalizable.
@@ -79,19 +79,19 @@ Puede ver los datos de generación de perfiles de una sesión de rendimiento en 
 ## <a name="customizable-filter-control"></a>Control de filtro personalizable
  El control de filtro personalizable tiene las siguientes opciones:
 
--   **Importar filtro**: recupera una consulta personalizada guardada previamente.
+- **Importar filtro**: recupera una consulta personalizada guardada previamente.
 
--   **Exportar filtro**: guarda la consulta personalizada en la ubicación especificada.
+- **Exportar filtro**: guarda la consulta personalizada en la ubicación especificada.
 
--   **Ejecutar consulta**: ejecuta la consulta como se muestra en el control de consultas personalizadas.
+- **Ejecutar consulta**: ejecuta la consulta como se muestra en el control de consultas personalizadas.
 
--   **Detener consulta**: detiene la ejecución de una consulta. Este botón no está disponible si no se está ejecutando ninguna consulta.
+- **Detener consulta**: detiene la ejecución de una consulta. Este botón no está disponible si no se está ejecutando ninguna consulta.
 
--   **Mostrar consulta**: muestra u oculta el control de consultas personalizadas.
+- **Mostrar consulta**: muestra u oculta el control de consultas personalizadas.
 
--   **Guardar analizado**: guarda el informe junto con su análisis actual como un archivo .vsps.
+- **Guardar analizado**: guarda el informe junto con su análisis actual como un archivo .vsps.
 
--   **Exportar**: guarda el informe actual en un archivo con formato .CSV o .XML, con opciones para guardar las diferentes vistas.
+- **Exportar**: guarda el informe actual en un archivo con formato .CSV o .XML, con opciones para guardar las diferentes vistas.
 
 ## <a name="see-also"></a>Vea también
 - [Análisis de datos de herramientas de rendimiento](../profiling/analyzing-performance-tools-data.md)

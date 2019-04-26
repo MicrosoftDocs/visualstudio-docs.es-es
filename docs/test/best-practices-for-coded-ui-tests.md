@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eed883703b333fc39039e9c063aeabbbc1709810
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6ebd05843e5a80f95a6eb30809440e6e5a188d0e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924492"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62822981"
 ---
 # <a name="best-practices-for-coded-ui-tests"></a>Procedimientos recomendados para las pruebas de IU codificadas
 
@@ -26,29 +26,29 @@ En este tema se describen algunas recomendaciones para el desarrollo de pruebas 
 
 Utilice las siguientes directrices para crear una prueba de IU codificada flexible.
 
--   Use el **Generador de pruebas automatizadas de IU** siempre que sea posible.
+- Use el **Generador de pruebas automatizadas de IU** siempre que sea posible.
 
--   No modifique directamente el archivo *UIMap.Designer.cs*. Si lo hace, se sobrescribirán los cambios en el archivo.
+- No modifique directamente el archivo *UIMap.Designer.cs*. Si lo hace, se sobrescribirán los cambios en el archivo.
 
--   Cree la prueba como una secuencia de métodos grabados. Para obtener más información sobre cómo registrar un método, vea [Crear pruebas automatizadas de IU](../test/use-ui-automation-to-test-your-code.md).
+- Cree la prueba como una secuencia de métodos grabados. Para obtener más información sobre cómo registrar un método, vea [Crear pruebas automatizadas de IU](../test/use-ui-automation-to-test-your-code.md).
 
--   Cada método grabado debe actuar en una sola página, formulario o cuadro de diálogo. Cree un nuevo método de prueba para cada nueva página, formulario o cuadro de diálogo.
+- Cada método grabado debe actuar en una sola página, formulario o cuadro de diálogo. Cree un nuevo método de prueba para cada nueva página, formulario o cuadro de diálogo.
 
--   Cuando cree un método, utilice un nombre de método descriptivo en lugar del nombre predeterminado. Un nombre descriptivo ayuda a identificar el propósito del método.
+- Cuando cree un método, utilice un nombre de método descriptivo en lugar del nombre predeterminado. Un nombre descriptivo ayuda a identificar el propósito del método.
 
--   Siempre que sea posible, limite cada método grabado a 10 acciones o menos. Este enfoque modular facilita la sustitución de un método si cambia la IU.
+- Siempre que sea posible, limite cada método grabado a 10 acciones o menos. Este enfoque modular facilita la sustitución de un método si cambia la IU.
 
--   Cree todas las aserciones con el **Generador de pruebas automatizadas de IU**, que agrega automáticamente un método de aserción al archivo *UIMap.Designer.cs*.
+- Cree todas las aserciones con el **Generador de pruebas automatizadas de IU**, que agrega automáticamente un método de aserción al archivo *UIMap.Designer.cs*.
 
--   Si cambia la interfaz de usuario (UI), vuelva a grabar los métodos de prueba o los métodos de aserción, o vuelva a grabar las secciones afectadas de un método de prueba existente.
+- Si cambia la interfaz de usuario (UI), vuelva a grabar los métodos de prueba o los métodos de aserción, o vuelva a grabar las secciones afectadas de un método de prueba existente.
 
--   Crear un archivo <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> para cada módulo en la aplicación sometida a prueba. Para obtener más información, vea [Probar una aplicación grande con varios mapas de IU](../test/testing-a-large-application-with-multiple-ui-maps.md).
+- Crear un archivo <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> para cada módulo en la aplicación sometida a prueba. Para obtener más información, vea [Probar una aplicación grande con varios mapas de IU](../test/testing-a-large-application-with-multiple-ui-maps.md).
 
--   En la aplicación sometida a prueba, utilice nombres descriptivos al crear los controles de IU. Esto proporciona más significado y facilidad de uso a los nombres de control generados automáticamente.
+- En la aplicación sometida a prueba, utilice nombres descriptivos al crear los controles de IU. Esto proporciona más significado y facilidad de uso a los nombres de control generados automáticamente.
 
--   Si está creando las aserciones mediante codificación con la API, cree un método para cada aserción en la parte de la clase <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> que está en el archivo *UIMap.cs*. Para ejecutar la aserción, llame a este método desde el método de prueba.
+- Si está creando las aserciones mediante codificación con la API, cree un método para cada aserción en la parte de la clase <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> que está en el archivo *UIMap.cs*. Para ejecutar la aserción, llame a este método desde el método de prueba.
 
--   Si está codificando directamente con la API, utilice en el código las propiedades y los métodos de las clases generadas en el archivo *UIMap.Designer.cs* siempre que pueda. Estas clases hacen que el trabajo sea más fácil y más fiable, y le ayudarán a ser más productivo.
+- Si está codificando directamente con la API, utilice en el código las propiedades y los métodos de las clases generadas en el archivo *UIMap.Designer.cs* siempre que pueda. Estas clases hacen que el trabajo sea más fácil y más fiable, y le ayudarán a ser más productivo.
 
 Las pruebas de IU codificadas se adaptan automáticamente a los numerosos cambios en la interfaz de usuario. Si, por ejemplo, un elemento de la IU ha cambiado de posición o color, la prueba de IU codificada seguirá encontrando el elemento correcto, por lo general.
 
@@ -58,15 +58,15 @@ Durante la ejecución de una prueba, el marco de pruebas utiliza un conjunto de 
 
 Las interfaces de usuario cambian frecuentemente durante el desarrollo. Estas son algunas maneras de reducir el impacto de estos cambios:
 
--   Busque el método registrado que hace referencia a este control y use el **Generador de pruebas automatizadas de IU** para volver a registrar las acciones de este método. Puede utilizar el propio nombre del método para sobrescribir las acciones existentes.
+- Busque el método registrado que hace referencia a este control y use el **Generador de pruebas automatizadas de IU** para volver a registrar las acciones de este método. Puede utilizar el propio nombre del método para sobrescribir las acciones existentes.
 
--   Si un control tiene una aserción que ya no es válida:
+- Si un control tiene una aserción que ya no es válida:
 
-    -   Elimine el método que contiene la aserción.
+    - Elimine el método que contiene la aserción.
 
-    -   Quite la llamada a este método desde el método de prueba.
+    - Quite la llamada a este método desde el método de prueba.
 
-    -   Agregue una aserción nueva arrastrando el botón de cruz hasta el control de la IU, abra la asignación de IU y agregue la nueva aserción.
+    - Agregue una aserción nueva arrastrando el botón de cruz hasta el control de la IU, abra la asignación de IU y agregue la nueva aserción.
 
 Para obtener más información sobre cómo registrar pruebas automatizadas de IU, vea [Usar la automatización de IU para probar el código](../test/use-ui-automation-to-test-your-code.md).
 

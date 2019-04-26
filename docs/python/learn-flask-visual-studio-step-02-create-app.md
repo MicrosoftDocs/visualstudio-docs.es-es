@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2526a6bcf6dc03379c22e38fb646acba450a9ec5
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.openlocfilehash: 188865b715c7c071222f7132c6f9bdd9b3dc596a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366606"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62961772"
 ---
 # <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>Paso 2: Creación de una aplicación de Flask con vistas y plantillas de página
 
@@ -77,6 +77,7 @@ En el código creado por la plantilla "Proyecto web de Flask en blanco" tiene un
 
         app.run(HOST, PORT)
     ```
+
 6. La estructura del proyecto debe parecerse a la siguiente imagen:
 
     ![Estructura del proyecto después de refactorizar el código](media/flask/step02-project-structure.png)
@@ -215,7 +216,7 @@ Respuesta: Sí, se pueden usar subcarpetas y luego hacer referencia a la ruta de
 ## <a name="next-steps"></a>Pasos siguientes
 
 > [!div class="nextstepaction"]
-> [Proporcionar archivos estáticos, agregar páginas y usar la herencia de plantilla](learn-flask-visual-studio-step-03-serve-static-files-add-pages.md)
+> [Atender archivos estáticos, agregar páginas y usar la herencia de plantilla](learn-flask-visual-studio-step-03-serve-static-files-add-pages.md)
 
 ## <a name="go-deeper"></a>Profundizar un poco más
 

@@ -9,14 +9,14 @@ ms.assetid: 3b864c75-2699-48c1-a2b4-9651f108c267
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dfd565deb8336346e127e084b720f391440dc6e4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a82479fabda0cd64e977af01f87492563a02853f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928808"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950077"
 ---
-# <a name="how-to-manually-create-a-load-test-performance-report-using-microsoft-word"></a>Filtrar para crear manualmente un informe de rendimiento de pruebas de carga con Microsoft Word
+# <a name="how-to-manually-create-a-load-test-performance-report-using-microsoft-word"></a>Procedimiento para crear manualmente un informe de rendimiento de pruebas de carga con Microsoft Word
 
 Puede crear manualmente informes de prueba de carga en Microsoft Word copiando y pegando los datos de la vista de resumen de resultados de pruebas de carga y de la vista de gráficos. Los datos que se presentan en la vista de resumen y de gráficos se aplican en formato HTML cuando se copian.
 
@@ -30,27 +30,27 @@ Puede crear manualmente informes de prueba de carga en Microsoft Word copiando y
 
 ## <a name="copy-summary-view-data"></a>Copiar datos de la vista Resumen
 
-1.  En **Resultados de pruebas de carga**, si no se muestra la vista de resumen, haga clic en **Resumen** en la barra de herramientas.
+1. En **Resultados de pruebas de carga**, si no se muestra la vista de resumen, haga clic en **Resumen** en la barra de herramientas.
 
-2.  En la vista de resumen, haga clic con el botón derecho y seleccione **Seleccionar todo**.
+2. En la vista de resumen, haga clic con el botón derecho y seleccione **Seleccionar todo**.
 
-3.  En la vista de resumen, haga clic con el botón derecho y seleccione **Copiar**. Esto presenta los datos de la vista de resumen en formato HTML en el portapapeles.
+3. En la vista de resumen, haga clic con el botón derecho y seleccione **Copiar**. Esto presenta los datos de la vista de resumen en formato HTML en el portapapeles.
 
-4.  En Microsoft Word, pegue los datos de la vista de resumen en la ubicación deseada.
+4. En Microsoft Word, pegue los datos de la vista de resumen en la ubicación deseada.
 
-5.  Ahora puede modificar, dar formato y eliminar aspectos del contenido copiado para satisfacer las necesidades del informe de errores.
+5. Ahora puede modificar, dar formato y eliminar aspectos del contenido copiado para satisfacer las necesidades del informe de errores.
 
 ## <a name="copy-graph-view-data"></a>Copiar datos de la vista del gráfico
 
-1.  En **Resultados de pruebas de carga**, si no se muestra la vista de gráfico, elija **Gráficos** en la barra de herramientas.
+1. En **Resultados de pruebas de carga**, si no se muestra la vista de gráfico, elija **Gráficos** en la barra de herramientas.
 
-2.  (Opcional) Haga zoom en el gráfico concreto que desea copiar en el documento de Microsoft Word, como se muestra en la siguiente ilustración. Para obtener más información, vea [Cómo: Acercar una región del gráfico](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
+2. (Opcional) Haga zoom en el gráfico concreto que desea copiar en el documento de Microsoft Word, como se muestra en la siguiente ilustración. Para obtener más información, vea [Cómo: Acercar una región del gráfico](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
 
      ![Control de zoom de la vista de gráficos](../test/media/ltest_zoomcontrol.png)
 
-3.  En el gráfico que desea copiar en el documento de Microsoft Word, haga clic con el botón derecho y seleccione **Copiar**.
+3. En el gráfico que desea copiar en el documento de Microsoft Word, haga clic con el botón derecho y seleccione **Copiar**.
 
-4.  En Microsoft Word, pegue el gráfico y los datos de la tabla asociados en la ubicación deseada.
+4. En Microsoft Word, pegue el gráfico y los datos de la tabla asociados en la ubicación deseada.
 
     > [!WARNING]
     > No puede copiar el gráfico de un escritorio remoto y pegarlo en otro equipo, porque se copiará solo la información de la tabla asociada al gráfico y no la imagen del gráfico. La imagen del gráfico está almacenada en el directorio temporal de la máquina de la que se copió; la segunda máquina no puede desreferenciar ese directorio.

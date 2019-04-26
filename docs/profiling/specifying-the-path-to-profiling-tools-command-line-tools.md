@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 03b11b478ef441dc7a09902a7185bfdf45e20dc3
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 48ac65ef8fb7a67783a3c9c5a9652accf86821fc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57868955"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979840"
 ---
 # <a name="specify-the-path-to-profiling-tools-command-line-tools"></a>Especificar la ruta de acceso a las herramientas de línea de comandos de las Herramientas de generación de perfiles
 
@@ -34,21 +34,21 @@ La ruta de acceso a las herramientas de línea de comandos de las herramientas d
 En los equipos de 64 bits, especifique la ruta de acceso según la plataforma de destino de la aplicación para la que se genera el perfil.
 
 ::: moniker range=">=vs-2019"
--   En las aplicaciones de 32 bits, el directorio de herramientas de generador de perfiles predeterminado es:
+- En las aplicaciones de 32 bits, el directorio de herramientas de generador de perfiles predeterminado es:
 
      (nativo) *Microsoft Visual Studio\2019\Team Tools\Performance Tools\PerfSDK* (managed) *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools*
 
--   En las aplicaciones de 64 bits, el directorio de herramientas de generador de perfiles predeterminado es:
+- En las aplicaciones de 64 bits, el directorio de herramientas de generador de perfiles predeterminado es:
 
      (nativo) *Microsoft Visual Studio\2019\Team Tools\Performance Tools\x64\PerfSDK* (managed) *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64*
 ::: moniker-end
 
 ::: moniker range="vs-2017"
--   En las aplicaciones de 32 bits, el directorio de herramientas de generador de perfiles predeterminado es:
+- En las aplicaciones de 32 bits, el directorio de herramientas de generador de perfiles predeterminado es:
 
      (nativo) *Microsoft Visual Studio\2017\Team Tools\Performance Tools\PerfSDK* (managed) *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools*
 
--   En las aplicaciones de 64 bits, el directorio de herramientas de generador de perfiles predeterminado es:
+- En las aplicaciones de 64 bits, el directorio de herramientas de generador de perfiles predeterminado es:
 
      (nativo) *Microsoft Visual Studio\2017\Team Tools\Performance Tools\x64\PerfSDK* (managed) *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64*
 ::: moniker-end

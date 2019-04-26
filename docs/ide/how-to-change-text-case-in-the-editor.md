@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 04922b703fd2c1158a98fc4574ad217cccd5016e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a2c0a6f7c2203e7b3a37f974d916010dbe70b31f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907456"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62824222"
 ---
-# <a name="how-to-change-text-case-in-the-editor"></a>Filtrar para cambiar las mayúsculas y minúsculas en el editor
+# <a name="how-to-change-text-case-in-the-editor"></a>Procedimiento para cambiar las mayúsculas y minúsculas en el editor
 
 Puede usar comandos de menú o métodos abreviados de teclado para convertir las mayúsculas y minúsculas del texto seleccionado todas a mayúsculas o todas a minúsculas.
 
@@ -27,11 +27,11 @@ Puede usar comandos de menú o métodos abreviados de teclado para convertir las
 
 ## <a name="to-switch-text-to-upper-case"></a>Para cambiar texto a mayúsculas
 
-1.  Seleccione el texto que quiere convertir.
+1. Seleccione el texto que quiere convertir.
 
-2.  En el menú **Edición**, seleccione **Opciones avanzadas**.
+2. En el menú **Edición**, seleccione **Opciones avanzadas**.
 
-3.  Para convertir todo el texto a mayúsculas, elija **Poner en mayúsculas** o presione **Ctrl**+**Mayús**+**U**.
+3. Para convertir todo el texto a mayúsculas, elija **Poner en mayúsculas** o presione **Ctrl**+**Mayús**+**U**.
 
     o
 

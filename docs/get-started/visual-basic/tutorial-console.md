@@ -14,12 +14,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: f394ea2775eede3424e4d6995a8e2065c5d986ef
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 234a2d1070a39c0f9d9dbf5b0ae706b02b660abf
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857598"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62972530"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>Tutorial: Introducción a Visual Basic en Visual Studio
 
@@ -27,7 +27,7 @@ En este tutorial para Visual Basic (VB), podrá usar Visual Studio para crear y 
 
 ::: moniker range="vs-2017"
 
-Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) para instalarlo de forma gratuita.
+Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) para instalarlo de forma gratuita.
 
 ::: moniker-end
 
@@ -262,10 +262,10 @@ Una aplicación de consola toma la entrada y muestra la salida en una ventana de
 Enhorabuena por completar este tutorial. Para más información, continúe con el tutorial siguiente.
 
 > [!div class="nextstepaction"]
-> [Creación de una biblioteca con Visual Basic y el SDK de .NET Core en Visual Studio](/dotnet/core/tutorials/vb-library-with-visual-studio)
+> [Creación de una biblioteca con Visual Basic y el SDK de .NET Core en Visual Studio](/dotnet/core/tutorials/vb-library-with-visual-studio)
 
 ## <a name="see-also"></a>Vea también
 
-* [Tutoriales sobre el lenguaje Visual Basic](/dotnet/visual-basic/walkthroughs)
-* [Referencia del lenguaje Visual Basic](/dotnet/visual-basic/language-reference/index)
+* [Tutoriales del lenguaje Visual Basic](/dotnet/visual-basic/walkthroughs)
+* [Referencia del lenguaje Visual Basic](/dotnet/visual-basic/language-reference/index)
 * [Archivos de código de IntelliSense para Visual Basic](../../ide/visual-basic-specific-intellisense.md)

@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b8edb5fd4b7df44528461d5078e78fd315c0c40b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 941bf3329b0724e19048afa6c93a9a9c3762d1c6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55931460"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430740"
 ---
 # <a name="step-3-set-your-form-properties"></a>Paso 3: Establecer las propiedades del formulario
 Después, se usa la ventana **Propiedades** para cambiar la apariencia del formulario.
@@ -27,7 +27,7 @@ Después, se usa la ventana **Propiedades** para cambiar la apariencia del formu
 2. Elija cualquier parte del formulario **Form1** para seleccionarlo. Examine la ventana **Propiedades**, que ahora debería mostrar las propiedades del formulario. Los formularios tienen varias propiedades. Por ejemplo, puede establecer el color del primero plano y del fondo, el texto de título que aparece en la parte superior del formulario, el tamaño del formulario y otras propiedades.
 
    > [!NOTE]
-   >  Si la ventana **Propiedades** no aparece, detenga el programa eligiendo el botón cuadrado **Detener depuración** de la barra de herramientas o simplemente cierre la ventana. Si se detiene el programa y aún no ve la ventana **Propiedades**, en la barra de menús, elija **Ver** > **Ventana Propiedades**.
+   > Si la ventana **Propiedades** no aparece, detenga el programa eligiendo el botón cuadrado **Detener depuración** de la barra de herramientas o simplemente cierre la ventana. Si se detiene el programa y aún no ve la ventana **Propiedades**, en la barra de menús, elija **Ver** > **Ventana Propiedades**.
 
 3. Una vez seleccionado el formulario, busque la propiedad **Texto** en la ventana **Propiedades**. En función del orden de la lista, puede que deba desplazarse hacia abajo. Elija **Texto**, escriba **Visor de imágenes** y elija **Entrar**.  Ahora, el formulario debería tener el texto **Visor de imágenes** en la barra de título y la ventana **Propiedades** debería parecerse a la siguiente.
 
@@ -35,7 +35,7 @@ Después, se usa la ventana **Propiedades** para cambiar la apariencia del formu
    **Properties** window
 
    > [!NOTE]
-   >  Las propiedades se pueden ordenar en vistas **por categorías** o **alfabéticamente**. Puede alternar entre estas dos vistas con los botones de la ventana **Propiedades**. En este tutorial, resulta más fácil encontrar las propiedades en la vista **alfabética**.
+   > Las propiedades se pueden ordenar en vistas **por categorías** o **alfabéticamente**. Puede alternar entre estas dos vistas con los botones de la ventana **Propiedades**. En este tutorial, resulta más fácil encontrar las propiedades en la vista **alfabética**.
 
 4. Vuelva al **Diseñador de Windows Forms**. Elija el controlador de arrastre inferior derecho del formulario, que es el cuadradito blanco que aparece en el vértice inferior derecho del formulario y tiene el siguiente aspecto.
 
@@ -60,14 +60,14 @@ Después, se usa la ventana **Propiedades** para cambiar la apariencia del formu
 
 7. Antes de ir al paso siguiente, detenga el programa, porque el IDE no le permitirá cambiarlo mientras está en ejecución. Recuerde que puede utilizar cualquiera de los métodos siguientes para detener el programa.
 
-   -   En la barra de herramientas, elija el botón **Detener depuración**.
+   - En la barra de herramientas, elija el botón **Detener depuración**.
 
-   -   En la barra de menús, seleccione **Depurar** > **Detener depuración**.
+   - En la barra de menús, seleccione **Depurar** > **Detener depuración**.
 
-   -   Elija el botón **X** de la esquina superior derecha de la ventana **Form1**.
+   - Elija el botón **X** de la esquina superior derecha de la ventana **Form1**.
 
 ## <a name="to-continue-or-review"></a>Para continuar o revisar
 
--   Para ir al siguiente paso del tutorial, vea [Paso 4: Diseñar un formulario con un control TableLayoutPanel](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md).
+- Para ir al siguiente paso del tutorial, vea [Paso 4: Diseñar un formulario con un control TableLayoutPanel](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md).
 
--   Para volver al paso anterior del tutorial, vea [Paso 2: Ejecutar el programa](../ide/step-2-run-your-program.md).
+- Para volver al paso anterior del tutorial, vea [Paso 2: Ejecutar el programa](../ide/step-2-run-your-program.md).

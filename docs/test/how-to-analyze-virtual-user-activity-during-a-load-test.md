@@ -8,14 +8,14 @@ ms.assetid: 8bda19b3-91c1-4daf-b6c7-09108bddadff
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 384e742a4d9e61133f2f3b2cdcf713057704317a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: dadc35d09ad70986f728104396502f13a06c0995
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55917498"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979424"
 ---
-# <a name="how-to-analyze-what-virtual-users-are-doing-during-a-load-test-using-the-virtual-user-activity-chart"></a>Filtrar para analizar lo que hacen los usuarios virtuales durante una prueba de carga mediante el diagrama de actividad de usuarios virtuales
+# <a name="how-to-analyze-what-virtual-users-are-doing-during-a-load-test-using-the-virtual-user-activity-chart"></a>Procedimiento para analizar lo que hacen los usuarios virtuales durante una prueba de carga mediante el diagrama de actividad de usuarios virtuales
 
 Vea ver la actividad de usuario virtual que está asociada a la prueba de carga mediante el **Diagrama de actividad del usuario virtual**. Cada fila del diagrama representa un usuario virtual individual. El **Diagrama de actividad del usuario virtual** muestra exactamente qué estaba ejecutando cada usuario virtual durante la prueba. Puede ver patrones de actividad de los usuarios, modelos de carga, poner en correlación pruebas con errores o lentas y ver solicitudes con otra actividad de usuarios virtuales. El **Diagrama de actividad del usuario virtual** solamente está disponible cuando una prueba de carga termina de ejecutarse.
 
@@ -25,9 +25,9 @@ Los siguientes procedimientos muestran cómo ver el **Diagrama de actividad del 
 
 ## <a name="to-view-the-virtual-user-activity-chart-in-your-load-test-results"></a>Para ver el Diagrama de actividad del usuario virtual en los resultados de pruebas de carga
 
-1.  Para ver los datos de usuario virtual, primero debe configurar el valor **Todos los detalles individuales** de la propiedad **Almacenamiento de detalles de tiempo** que está asociada a la prueba de carga. Después, ejecute la prueba de carga.
+1. Para ver los datos de usuario virtual, primero debe configurar el valor **Todos los detalles individuales** de la propiedad **Almacenamiento de detalles de tiempo** que está asociada a la prueba de carga. Después, ejecute la prueba de carga.
 
-2.  Una vez que se ejecuta la prueba de carga, se muestra la página de resumen de los resultados de pruebas. Elija el botón **Detalles de usuario** de la barra de herramientas.
+2. Una vez que se ejecuta la prueba de carga, se muestra la página de resumen de los resultados de pruebas. Elija el botón **Detalles de usuario** de la barra de herramientas.
 
      o bien
 

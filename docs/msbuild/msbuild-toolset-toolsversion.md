@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a2c05d029e2a46aba736288fd794af12206c80e
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 9250382284fffbc3f1761f8143903327fa845832
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983876"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436858"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>Conjunto de herramientas de MSBuild (ToolsVersion)
 
@@ -82,46 +82,46 @@ MSBuild usa un conjunto de herramientas de tareas, destinos y herramientas para 
 
 MSBuild proporciona dos maneras de tener acceso al conjunto de herramientas:
 
--   Mediante las propiedades del conjunto de herramientas
+- Mediante las propiedades del conjunto de herramientas
 
--   Mediante los métodos de la clase <xref:Microsoft.Build.Utilities.ToolLocationHelper>
+- Mediante los métodos de la clase <xref:Microsoft.Build.Utilities.ToolLocationHelper>
 
 Las propiedades del conjunto de herramientas especifican las rutas de acceso de las herramientas. A partir de Visual Studio 2017, MSBuild deja de tener una ubicación fija. Se encuentra de forma predeterminada en la carpeta *MSBuild\15.0\Bin* correspondiente a la ubicación de instalación de Visual Studio. En versiones anteriores, MSBuild usa el valor del atributo `ToolsVersion` del archivo de proyecto para encontrar la clave del Registro correspondiente y, después, usa la información de dicha clave para establecer las propiedades del conjunto de herramientas. Por ejemplo, si `ToolsVersion` tiene el valor `12.0`, MSBuild establece las propiedades del conjunto de herramientas conforme a esta clave del Registro: **HKLM\Software\Microsoft\MSBuild\ToolsVersions\12.0**.
 
  Estas son las propiedades del conjunto de herramientas:
 
--   `MSBuildToolsPath` especifica la ruta de acceso de los archivos binarios de MSBuild.
+- `MSBuildToolsPath` especifica la ruta de acceso de los archivos binarios de MSBuild.
 
--   `SDK40ToolsPath` especifica la ruta de acceso de las herramientas administradas adicionales para MSBuild 4.x (que podría ser 4.0 o 4.5).
+- `SDK40ToolsPath` especifica la ruta de acceso de las herramientas administradas adicionales para MSBuild 4.x (que podría ser 4.0 o 4.5).
 
--   `SDK35ToolsPath` especifica la ruta de acceso de las herramientas administradas adicionales para MSBuild 3,5.
+- `SDK35ToolsPath` especifica la ruta de acceso de las herramientas administradas adicionales para MSBuild 3,5.
 
 Como alternativa, puede determinar el conjunto de herramientas mediante programación llamando a los métodos de la clase <xref:Microsoft.Build.Utilities.ToolLocationHelper>. La clase contiene estos métodos:
 
--   <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFramework%2A> devuelve la ruta de acceso de la carpeta de .NET Framework.
+- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFramework%2A> devuelve la ruta de acceso de la carpeta de .NET Framework.
 
--   <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkFile%2A> devuelve la ruta de acceso de un archivo de la carpeta .NET Framework.
+- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkFile%2A> devuelve la ruta de acceso de un archivo de la carpeta .NET Framework.
 
--   <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkSdk%2A> devuelve la ruta de acceso de la carpeta de las herramientas administradas.
+- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkSdk%2A> devuelve la ruta de acceso de la carpeta de las herramientas administradas.
 
--   <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkSdkFile%2A> devuelve la ruta de acceso de un archivo, que normalmente se encuentra en la carpeta de las herramientas administradas.
+- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToDotNetFrameworkSdkFile%2A> devuelve la ruta de acceso de un archivo, que normalmente se encuentra en la carpeta de las herramientas administradas.
 
--   <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToBuildTools%2A> devuelve la ruta de acceso de las herramientas de compilación.
+- <xref:Microsoft.Build.Utilities.ToolLocationHelper.GetPathToBuildTools%2A> devuelve la ruta de acceso de las herramientas de compilación.
 
 ### <a name="sub-toolsets"></a>Subconjuntos de herramientas
 
  En las versiones de MSBuild anteriores a 15.0, MSBuild usa una clave del registro para especificar la ruta de acceso de las herramientas básicas. Si la clave tiene una subclave, MSBuild la usa para especificar la ruta de acceso de un subconjunto de herramientas que contiene herramientas adicionales. En este caso, el conjunto de herramientas se define mediante la combinación de las definiciones de propiedades especificadas en ambas claves.
 
 > [!NOTE]
->  Si hay un conflicto entre los nombres de propiedades del conjunto de herramientas, el valor definido para la ruta de acceso de la subclave reemplaza al valor definido para la ruta de acceso de la clave raíz.
+> Si hay un conflicto entre los nombres de propiedades del conjunto de herramientas, el valor definido para la ruta de acceso de la subclave reemplaza al valor definido para la ruta de acceso de la clave raíz.
 
  Los subconjuntos de herramientas se activan si se define la propiedad de compilación `VisualStudioVersion`. Esta propiedad puede tener uno de estos valores:
 
--   "10.0" especifica el subconjunto de herramientas de .NET Framework 4
+- "10.0" especifica el subconjunto de herramientas de .NET Framework 4
 
--   "11.0" especifica el subconjunto de herramientas de .NET Framework 4.5
+- "11.0" especifica el subconjunto de herramientas de .NET Framework 4.5
 
--   "12.0" especifica el subconjunto de herramientas de .NET Framework 4.5.1
+- "12.0" especifica el subconjunto de herramientas de .NET Framework 4.5.1
 
 Los subconjuntos de herramientas 10.0 y 11.0 deben usarse con ToolsVersion 4.0. En versiones posteriores, la versión del subconjunto de herramientas y ToolsVersion deben coincidir.
 

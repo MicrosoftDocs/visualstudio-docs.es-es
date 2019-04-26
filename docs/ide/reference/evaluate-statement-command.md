@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c7eff96d1b413ea10b1274eb7d7938148727acbc
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953060"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62790881"
 ---
 # <a name="evaluate-statement-command"></a>Evaluar instrucción (Comando)
 

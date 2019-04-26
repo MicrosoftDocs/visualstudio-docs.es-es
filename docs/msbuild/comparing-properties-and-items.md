@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70d86074dabc4365d1d0336f191beada215f4dc1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 3cc0cdb635c90275289f96c55ae68976ffc5edc9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640641"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62569685"
 ---
 # <a name="compare-properties-and-items"></a>Comparación de propiedades y elementos
 Las propiedades y elementos de MSBuild se utilizan para pasar información a las tareas, evaluar condiciones y almacenar valores a los que se puede hacer referencia en el archivo del proyecto.
@@ -86,7 +86,6 @@ Durante la fase de evaluación de una compilación, los archivos importados se i
 - Las definiciones de elementos se definen y modifican en el orden en que aparecen.
 
 - Los elementos se definen y modifican en el orden en que aparecen.
-
 
 Durante la fase de ejecución de una compilación, las propiedades y los elementos que se definen dentro de los destinos se evalúan conjuntamente en una sola fase en el orden en que aparecen.
 

@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fd5729f85e16dd5651c630771ac5c30fba73dbf1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55938910"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62962017"
 ---
 # <a name="customize-the-editor"></a>Personalización del editor
 

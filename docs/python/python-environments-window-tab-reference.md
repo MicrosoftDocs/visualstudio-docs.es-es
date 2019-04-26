@@ -11,17 +11,17 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 578f73aabfb8b5a4c8336c8611f634b8947c8885
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366528"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62785090"
 ---
 # <a name="python-environments-window-tabs-reference"></a>Referencia de pestañas de la ventana Entorno de Python
 
 Para abrir la ventana **Entornos de Python**:
 
-- Seleccione el comando de menú **Vista** > **Otras ventanas** > **Entornos de Python** .
+- Seleccione el comando de menú **Vista** > **Otras ventanas** > **Entornos de Python**.
 - Haga clic con el botón derecho en el nodo **Entornos de Python** de un proyecto en el **Explorador de soluciones** y seleccione **View All Python Environments** (Ver todos los entornos de Python).
 
 Si expande la ventana **Entornos de Python** con un ancho suficiente, estas opciones se muestran como pestañas, lo cual puede resultarle más cómodo. Para mayor claridad, en este artículo las pestañas se muestran en la vista expandida.
@@ -78,17 +78,17 @@ Si está disponible, la pestaña **Configurar** contiene detalles como se descri
 | Campo | Descripción |
 | --- | --- |
 | **Descripción** | Nombre que se va a dar al entorno. |
-| **Ruta de acceso de prefijo** | Ubicación de la carpeta base del intérprete. Si rellena este valor y hace clic en **Detección automática**, Visual Studio intentará rellenar los demás campos automáticamente. |
-| **Ruta del intérprete** | Ruta de acceso al ejecutable del intérprete, normalmente la ruta de acceso de prefijo seguida de **python.exe**. |
-| **Intérprete en ventana** | Ruta de acceso al ejecutable que no es de consola, normalmente la ruta de acceso de prefijo seguida de **pythonw.exe**. |
-| **Ruta de acceso a la biblioteca**<br/>(si está disponible) | Especifica la raíz de la biblioteca estándar, pero este valor se puede omitir si Visual Studio es capaz de solicitar una ruta de acceso más precisa desde el intérprete. |
+| **Prefix path** (Ruta de acceso de prefijo) | Ubicación de la carpeta base del intérprete. Si rellena este valor y hace clic en **Detección automática**, Visual Studio intentará rellenar los demás campos automáticamente. |
+| **Interpreter path** (Ruta de acceso del intérprete) | Ruta de acceso al ejecutable del intérprete, normalmente la ruta de acceso de prefijo seguida de **python.exe**. |
+| **Windowed interpreter** (Intérprete en ventanas) | Ruta de acceso al ejecutable que no es de consola, normalmente la ruta de acceso de prefijo seguida de **pythonw.exe**. |
+| **Library path** (Ruta de acceso a la biblioteca)<br/>(si está disponible) | Especifica la raíz de la biblioteca estándar, pero este valor se puede omitir si Visual Studio es capaz de solicitar una ruta de acceso más precisa desde el intérprete. |
 | **Versión de lenguaje** | Se selecciona en el menú desplegable. |
 | **Arquitectura** | Normalmente se detecta y rellena automáticamente; de lo contrario especifica **32** o **64 bits**. |
-| **Variable de entorno de ruta de acceso** | Variable de entorno que el intérprete usa para encontrar rutas de acceso de búsqueda. Visual Studio cambia el valor de la variable al iniciar Python para que contenga las rutas de búsqueda del proyecto. Normalmente, esta propiedad se debe establecer en **PYTHONPATH**, pero algunos intérpretes utilizan un valor diferente. |
+| **Path environment variable** (Variable de entorno de ruta de acceso) | Variable de entorno que el intérprete usa para encontrar rutas de acceso de búsqueda. Visual Studio cambia el valor de la variable al iniciar Python para que contenga las rutas de búsqueda del proyecto. Normalmente, esta propiedad se debe establecer en **PYTHONPATH**, pero algunos intérpretes utilizan un valor diferente. |
 
 ## <a name="packages-tab"></a>Pestaña Paquetes
 
-*También se etiqueta como "pip" en versiones anteriores.*
+*También se etiqueta como "pip" en versiones anteriores*
 
 Administra los paquetes instalados en el entorno con pip (la pestaña **Paquetes (PyPI)**) o conda (la pestaña **Paquetes (Conda)** para entornos en la versión 15.7 y posteriores de Visual Studio 2017). En esta pestaña también se pueden buscar e instalar paquetes nuevos, incluidas sus dependencias.
 

@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 07212350ab95c3f9ee3d00fb2ac33768964555e8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8721d85c7fb3aba513a15fe276adbb2b17496351
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935607"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62990497"
 ---
 # <a name="troubleshoot-code-coverage"></a>Solucionar problemas de cobertura de código
 
@@ -43,9 +43,9 @@ Resolución: en el Explorador de pruebas, elija **Ejecutar todas** para comproba
 
 Cuando se modifican y se vuelven a ejecutar las pruebas, todavía puede estar visible un resultado de cobertura de código anterior, incluido el color del código de esa ejecución anterior.
 
-1.  Ejecute Analizar cobertura de código.
+1. Ejecute Analizar cobertura de código.
 
-2.  Asegúrese de que ha seleccionado el conjunto de resultados más reciente en la ventana de **resultados de cobertura de código**.
+2. Asegúrese de que ha seleccionado el conjunto de resultados más reciente en la ventana de **resultados de cobertura de código**.
 
 ### <a name="pdb-symbol-files-are-unavailable"></a>Los archivos .pdb (símbolo) no están disponibles
 
@@ -91,17 +91,17 @@ Explicación: se pueden ejecutar las pruebas unitarias con un archivo *.runsetti
 
 Resolución: hay dos posibles tipos de errores que se indican a continuación.
 
--   **Error de XML**
+- **Error de XML**
 
      Abra el archivo *.runsettings* en el editor XML de Visual Studio. Busque las indicaciones del error.
 
--   **Error de expresión regular**
+- **Error de expresión regular**
 
      Cada cadena del archivo es una expresión regular. Revise cada una de ellas en busca de errores y, en particular, busque:
 
-    -   Paréntesis no coincidentes (...) o paréntesis sin escape \\(...\\). Si desea asociar un paréntesis en la cadena de búsqueda, debe indicar su secuencia de escape. Por ejemplo, para hacer coincidir una función, use: `.*MyFunction\(double\)`
+    - Paréntesis no coincidentes (...) o paréntesis sin escape \\(...\\). Si desea asociar un paréntesis en la cadena de búsqueda, debe indicar su secuencia de escape. Por ejemplo, para hacer coincidir una función, use: `.*MyFunction\(double\)`
 
-    -   Asterisco o signo más al principio de una expresión. Para asociar cualquier cadena de caracteres, use un punto seguido de un asterisco: `.*`
+    - Asterisco o signo más al principio de una expresión. Para asociar cualquier cadena de caracteres, use un punto seguido de un asterisco: `.*`
 
 ### <a name="custom-runsettings-file-with-incorrect-exclusions"></a>Archivo .runsettings personalizado con exclusiones incorrectas
 

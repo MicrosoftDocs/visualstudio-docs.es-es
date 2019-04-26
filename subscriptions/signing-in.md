@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: Cómo iniciar sesión en la suscripción de Visual Studio
 searchscope: VS Subscription
 ms.openlocfilehash: 231b60eb6f46185060d5c9a75bbfc9a54751100a
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842018"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007708"
 ---
 # <a name="signing-in-to-your-visual-studio-subscription"></a>Inicio de sesión en la suscripción de Visual Studio
 

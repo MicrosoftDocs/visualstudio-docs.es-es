@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2df391440e8fe175b86a37cd02d0aec8fee372e6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e16b11d2c54c500bc2b4e7d52e0bc5a46492ab5e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603175"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446560"
 ---
 # <a name="how-to-exclude-files-from-the-build"></a>Procedimiento Excluir archivos de la compilación
 En un archivo de proyecto puede utilizar comodines para incluir todos los archivos de un directorio o un conjunto de directorios anidado como entradas para una compilación. Sin embargo, puede haber un archivo en el directorio o un directorio en el conjunto anidado de directorios que no quiera incluir como entrada para una compilación. Puede excluir explícitamente ese archivo o directorio de la lista de entradas. También puede haber un archivo en un proyecto que solo quiera incluir bajo determinadas condiciones. Se pueden declarar explícitamente las condiciones para incluir un archivo en una compilación.
@@ -36,7 +36,7 @@ En un archivo de proyecto puede utilizar comodines para incluir todos los archiv
 
 #### <a name="to-include-all-cs-or-vb-files-except-form2"></a>Para incluir todos los archivos *.cs* o *.vb* excepto *Form2*
 
--   Utilice uno de los siguientes atributos `Include` y `Exclude`:
+- Utilice uno de los siguientes atributos `Include` y `Exclude`:
 
     ```xml
     <CSFile Include="*.cs" Exclude="Form2.cs"/>
@@ -50,7 +50,7 @@ En un archivo de proyecto puede utilizar comodines para incluir todos los archiv
 
 #### <a name="to-include-all-cs-or-vb-files-except-form2-and-form3"></a>Para incluir todos los archivos *.cs* o *.vb* excepto *Form2* y *Form3*
 
--   Utilice uno de los siguientes atributos `Include` y `Exclude`:
+- Utilice uno de los siguientes atributos `Include` y `Exclude`:
 
     ```xml
     <CSFile Include="*.cs" Exclude="Form2.cs;Form3.cs"/>
@@ -64,7 +64,7 @@ En un archivo de proyecto puede utilizar comodines para incluir todos los archiv
 
 #### <a name="to-include-all-jpg-files-in-subdirectories-of-the-images-directory-except-those-in-the-version2-directory"></a>Para incluir todos los archivos *.jpg* de los subdirectorios del directorio *Images*, excepto los del directorio *Version2*
 
--   Utilice los siguientes atributos `Include` y `Exclude`:
+- Utilice los siguientes atributos `Include` y `Exclude`:
 
     ```xml
     <JPGFile
@@ -73,14 +73,14 @@ En un archivo de proyecto puede utilizar comodines para incluir todos los archiv
     ```
 
     > [!NOTE]
-    >  Debe especificar la ruta de acceso de ambos atributos. Si utiliza una ruta de acceso absoluta para especificar ubicaciones de archivos en el atributo `Include`, también debe utilizar una ruta de acceso absoluta en el atributo `Exclude`; si utiliza una ruta de acceso relativa en el atributo `Include`, también debe utilizar una ruta de acceso relativa en el atributo `Exclude`.
+    > Debe especificar la ruta de acceso de ambos atributos. Si utiliza una ruta de acceso absoluta para especificar ubicaciones de archivos en el atributo `Include`, también debe utilizar una ruta de acceso absoluta en el atributo `Exclude`; si utiliza una ruta de acceso relativa en el atributo `Include`, también debe utilizar una ruta de acceso relativa en el atributo `Exclude`.
 
 ## <a name="use-conditions-to-exclude-a-file-or-directory-from-the-inputs-for-a-build"></a>Usar condiciones para excluir un archivo o un directorio de las entradas de una compilación
  Si hay elementos que quiere incluir, por ejemplo, en una compilación de depuración, pero no en una compilación de versión, puede utilizar el atributo `Condition` para especificar las condiciones en las que se va a incluir el elemento.
 
 #### <a name="to-include-the-file-formulavb-only-in-release-builds"></a>Para incluir el archivo *Formula.vb* solo en compilaciones de versión
 
--   Utilice un atributo `Condition` similar al siguiente:
+- Utilice un atributo `Condition` similar al siguiente:
 
     ```xml
     <Compile
@@ -100,7 +100,7 @@ En un archivo de proyecto puede utilizar comodines para incluir todos los archiv
     </PropertyGroup>
 
     <ItemGroup>
-        <CSFile Include="*.cs Exclude="Form2.cs"/>
+        <CSFile Include="*.cs" Exclude="Form2.cs"/>
 
         <Reference Include="System.dll"/>
         <Reference Include="System.Data.dll"/>

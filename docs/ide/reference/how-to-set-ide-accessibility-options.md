@@ -1,5 +1,5 @@
 ---
-title: Filtrar Establecimiento de opciones de accesibilidad de IDE
+title: Procedimiento Establecimiento de opciones de accesibilidad de IDE
 description: Obtenga información sobre cómo establecer las opciones de accesibilidad en Visual Studio para que el entorno de desarrollo integrado (IDE) sea más fácil de usar para todos, incluidos los usuarios con problemas de visión para leer y con limitaciones para escribir.
 ms.date: 08/22/2017
 ms.topic: conceptual
@@ -11,14 +11,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5763178ecf30cc0c946c8810770ba2948383a715
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: a69f821a27d6fed4fe478122344d1a7afbc8f8c7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317190"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62789805"
 ---
-# <a name="how-to-set-ide-accessibility-options"></a>Filtrar Establecimiento de opciones de accesibilidad de IDE
+# <a name="how-to-set-ide-accessibility-options"></a>Procedimiento Establecimiento de opciones de accesibilidad de IDE
 
 > [!TIP]
 > Para más información sobre las actualizaciones de accesibilidad recientes, vea la entrada de blog [Accessibility improvements in Visual Studio 2017 version 15.3](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/) (Mejoras de accesibilidad en Visual Studio 2017 versión 15.3).
@@ -46,11 +46,11 @@ Además, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] admite los
 
 #### <a name="to-change-the-size-of-text-in-text-based-tool-windows-and-editors"></a>Para cambiar el tamaño del texto en las ventanas de herramientas basadas en texto y en los editores
 
-1.  En el menú **Herramientas** , elija **Opciones**.
+1. En el menú **Herramientas** , elija **Opciones**.
 
-2.  Pulse **Fuentes y colores** en la carpeta **Entorno**.
+2. Pulse **Fuentes y colores** en la carpeta **Entorno**.
 
-3.  Seleccione una opción en el menú desplegable **Mostrar configuración para**.
+3. Seleccione una opción en el menú desplegable **Mostrar configuración para**.
 
      Para cambiar el tamaño de fuente del texto en un editor, pulse **Editor de texto**.
 
@@ -60,16 +60,16 @@ Además, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] admite los
 
      Para cambiar el tamaño de fuente del texto en elementos emergentes de finalización de instrucciones, pulse **Finalización de instrucciones**.
 
-4.  Desde **Mostrar elementos**, seleccione **Texto sin formato**.
+4. Desde **Mostrar elementos**, seleccione **Texto sin formato**.
 
-5.  En **Fuente**, seleccione un nuevo tipo de fuente.
+5. En **Fuente**, seleccione un nuevo tipo de fuente.
 
-6.  En **Tamaño**, seleccione un nuevo tamaño de fuente.
+6. En **Tamaño**, seleccione un nuevo tamaño de fuente.
 
     > [!NOTE]
     > Para restablecer el tamaño de texto para las ventanas de herramientas basadas en texto y los editores, pulse **Usar valores predeterminados**.
 
-7.  Elija **Aceptar**.
+7. Elija **Aceptar**.
 
 ### <a name="change-the-colors-that-are-used-in-the-ide"></a>Cambio de los colores que se usan en el IDE
 
@@ -80,17 +80,17 @@ Además, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] admite los
 
 #### <a name="to-change-the-color-of-items-in-the-editor"></a>Para cambiar el color de elementos en el editor
 
-1.  En el menú **Herramientas** , elija **Opciones**.
+1. En el menú **Herramientas** , elija **Opciones**.
 
-2.  En la carpeta **Entorno**, seleccione **Fuentes y colores**.
+2. En la carpeta **Entorno**, seleccione **Fuentes y colores**.
 
-3.  En **Mostrar configuración para**, seleccione **Editor de texto**.
+3. En **Mostrar configuración para**, seleccione **Editor de texto**.
 
-4.  Desde **Mostrar elementos**, seleccione un elemento cuya visualización necesita cambiar, como **Texto sin formato**, **Margen del indicador**, **Espacio en blanco visible**, **Nombre del atributo HTML** o **Atributo XML**.
+4. Desde **Mostrar elementos**, seleccione un elemento cuya visualización necesita cambiar, como **Texto sin formato**, **Margen del indicador**, **Espacio en blanco visible**, **Nombre del atributo HTML** o **Atributo XML**.
 
-5.  Seleccione la configuración de pantalla en las siguientes opciones: **Primer plano del elemento**, **Fondo del elemento** y **Negrita**.
+5. Seleccione la configuración de pantalla en las siguientes opciones: **Primer plano del elemento**, **Fondo del elemento** y **Negrita**.
 
-6.  Elija **Aceptar**.
+6. Elija **Aceptar**.
 
 ## <a name="toolbars"></a>Barras de herramientas
 
@@ -98,23 +98,23 @@ Además, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] admite los
 
 ### <a name="to-assign-text-to-toolbar-buttons"></a>Para asignar texto a los botones de la barra de herramientas
 
-1.  En el menú **Herramientas**, pulse **Personalizar**.
+1. En el menú **Herramientas**, pulse **Personalizar**.
 
-2.  En el cuadro de diálogo **Personalizar**, seleccione la pestaña **Comandos**.
+2. En el cuadro de diálogo **Personalizar**, seleccione la pestaña **Comandos**.
 
-3.  Seleccione **Barra de herramientas** y, después, pulse el nombre de la barra de herramientas que contiene el botón para el que intenta mostrar el texto.
+3. Seleccione **Barra de herramientas** y, después, pulse el nombre de la barra de herramientas que contiene el botón para el que intenta mostrar el texto.
 
-4.  En la lista, seleccione el comando que intenta cambiar.
+4. En la lista, seleccione el comando que intenta cambiar.
 
-5.  Pulse **Modificar selección**.
+5. Pulse **Modificar selección**.
 
-6.  Pulse **Imagen y texto**.
+6. Pulse **Imagen y texto**.
 
 ### <a name="to-modify-the-displayed-text-in-a-button"></a>Para modificar el texto mostrado en un botón
 
-1.  Vuelva a seleccionar **Modificar selección**.
+1. Vuelva a seleccionar **Modificar selección**.
 
-2.  Junto a **Nombre**, inserte un nuevo título para el botón seleccionado.
+2. Junto a **Nombre**, inserte un nuevo título para el botón seleccionado.
 
 ## <a name="see-also"></a>Vea también
 

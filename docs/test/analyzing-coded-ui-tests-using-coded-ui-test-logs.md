@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 85be4e713a4cf2581200da7589a1001e6510459d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a5ce4f298039d6d86f8c4855d1f139b6be1d1175
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948555"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62822750"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Análisis de pruebas automatizadas de IU mediante los registros de pruebas automatizadas de IU
 
@@ -60,26 +60,26 @@ En función de su escenario, use uno de los siguientes métodos para habilitar e
 
 Cuando ejecute una prueba automatizada de IU una vez realizadas las modificaciones en el archivo *QTAgent32.exe.config*, verá que hay un vínculo de salida en los resultados del **Explorador de pruebas**. Los archivos de registro no solo se generan cuando la prueba produzca un error, sino también para las pruebas correctas cuando el nivel de seguimiento sea "detallado".
 
-1.  En el menú **Prueba**, seleccione **Ventanas** y después elija **Explorador de pruebas**.
+1. En el menú **Prueba**, seleccione **Ventanas** y después elija **Explorador de pruebas**.
 
-2.  En el menú **Compilar** , elija **Compilar solución**.
+2. En el menú **Compilar** , elija **Compilar solución**.
 
-3.  En el **Explorador de pruebas**, seleccione la prueba automatizada de IU que quiera ejecutar, abra el menú contextual y después elija **Ejecutar pruebas seleccionadas**.
+3. En el **Explorador de pruebas**, seleccione la prueba automatizada de IU que quiera ejecutar, abra el menú contextual y después elija **Ejecutar pruebas seleccionadas**.
 
      Las pruebas automatizadas se ejecutan e indican si se superan o no.
 
     > [!TIP]
     > Para ver el **Explorador de pruebas**, elija **Prueba** > **Ventanas** y, después, seleccione **Explorador de pruebas**.
 
-4.  Elija el vínculo **Resultado** en el **Explorador de pruebas**.
+4. Elija el vínculo **Resultado** en el **Explorador de pruebas**.
 
      ![Vínculo de resultados del Explorador de pruebas](../test/media/cuit_htmlactionlog1.png)
 
      Con esto se muestra la salida de la prueba, que incluye un vínculo al registro de acciones.
 
-     ![Vínculos de salida y resultados de prueba de IU programada](../test/media/cuit_htmlactionlog2.png)
+     ![Vínculos de salida y resultados de prueba de IU codificada](../test/media/cuit_htmlactionlog2.png)
 
-5.  Elija el vínculo *UITestActionLog.html*.
+5. Elija el vínculo *UITestActionLog.html*.
 
      El registro se muestra en el explorador web.
 

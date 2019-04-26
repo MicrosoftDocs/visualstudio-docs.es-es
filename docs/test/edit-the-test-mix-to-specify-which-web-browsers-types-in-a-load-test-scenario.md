@@ -11,12 +11,12 @@ ms.assetid: 47f981d9-3038-45cc-a486-82b9daf9a9a1
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ed7c90e292b2ed77eeae4096e967f10068664659
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4da3fc51593cc877e09ca6f46db70303186b293e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955568"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62783840"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario"></a>Edición de la combinación de pruebas para especificar tipos de exploradores web en un escenario de prueba de carga
 
@@ -34,34 +34,34 @@ Después de especificar una combinación de exploradores web, puede agregarle y 
 
 ### <a name="to-add-new-browsers-to-a-scenario"></a>Para agregar nuevos exploradores a un escenario
 
-1.  Cuando vaya a especificar la combinación de exploradores para un escenario, elija **Agregar**.
+1. Cuando vaya a especificar la combinación de exploradores para un escenario, elija **Agregar**.
 
      Se agregará una nueva entrada de explorador a la cuadrícula.
 
     > [!NOTE]
     > Para mostrar el cuadro de diálogo **Editar combinación de exploradores**, haga clic con el botón derecho en un escenario existente y, luego, elija **Editar combinación de exploradores**.
 
-2.  En la columna **Tipo de explorador**, elija la flecha que corresponde a la nueva entrada y elija el tipo de explorador deseado.
+2. En la columna **Tipo de explorador**, elija la flecha que corresponde a la nueva entrada y elija el tipo de explorador deseado.
 
-3.  (Opcional) Ajuste el control de combinación para especificar la distribución de pruebas.
+3. (Opcional) Ajuste el control de combinación para especificar la distribución de pruebas.
 
-4.  Cuando haya terminado de agregar exploradores, elija **Aceptar**.
+4. Cuando haya terminado de agregar exploradores, elija **Aceptar**.
 
-##  <a name="remove-browsers-from-a-scenario"></a>Quitar exploradores de un escenario
+## <a name="remove-browsers-from-a-scenario"></a>Quitar exploradores de un escenario
 
 ### <a name="to-remove-browsers-from-a-scenario"></a>Para quitar exploradores de un escenario
 
-1.  Abra una prueba de carga.
+1. Abra una prueba de carga.
 
-2.  Haga clic con el botón derecho en el escenario del que quiere quitar un explorador y, luego, elija **Editar combinación de exploradores**.
+2. Haga clic con el botón derecho en el escenario del que quiere quitar un explorador y, luego, elija **Editar combinación de exploradores**.
 
      Se abre el cuadro de diálogo **Editar combinación de exploradores**.
 
-3.  Seleccione el explorador en la cuadrícula y, luego, elija **Quitar**.
+3. Seleccione el explorador en la cuadrícula y, luego, elija **Quitar**.
 
-4.  (Opcional) Ajuste el control de combinación para especificar la distribución de pruebas.
+4. (Opcional) Ajuste el control de combinación para especificar la distribución de pruebas.
 
-5.  Cuando haya terminado de quitar exploradores, elija **Aceptar**.
+5. Cuando haya terminado de quitar exploradores, elija **Aceptar**.
 
 ## <a name="about-the-mix-control"></a>Control de combinaciones
 

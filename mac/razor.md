@@ -8,11 +8,11 @@ ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: F898CB6E-05ED-44CD-8DB6-427B2592CCC6
 ms.openlocfilehash: f4c572fffb819affbbe74f05b95e270f8bbaa285
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51293400"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62936954"
 ---
 # <a name="razor-support"></a>Compatibilidad con Razor
 
@@ -22,7 +22,7 @@ Visual Studio para Mac es compatible con la edición de Razor, lo que incluye In
 
 ## <a name="getting-started-with-razor-in-visual-studio-for-mac"></a>Introducción a Razor en Visual Studio para Mac
 
-Hay dos opciones que debe tener en cuenta al comenzar con Razor en Visual Studio para Mac: las páginas de Razor en ASP.NET Core y ASP.NET Core MVC. Para ver tutoriales y obtener más información sobre estas opciones, visite una de las guías siguientes:
+Hay dos opciones que debe tener en cuenta al comenzar con Razor en Visual Studio para Mac: Razor Pages en ASP.NET Core y ASP.NET Core MVC. Para ver tutoriales y obtener más información sobre estas opciones, visite una de las guías siguientes:
 
 - [Introducción a las páginas de Razor en ASP.NET Core en macOS con Visual Studio para Mac](/aspnet/core/tutorials/razor-pages-mac/razor-pages-start?view=aspnetcore-2.1)
 - [Introducción a ASP.NET Core MVC y Visual Studio para Mac](/aspnet/core/tutorials/first-mvc-app-mac/start-mvc?view=aspnetcore-2.1)

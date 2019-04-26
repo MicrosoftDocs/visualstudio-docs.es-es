@@ -12,11 +12,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 3f6464986cb94ffa3ab3cc9264ab818112046ea9
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366801"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63002816"
 ---
 # <a name="step-4-run-code-in-the-debugger"></a>Paso 4: Ejecución de código en el depurador
 
@@ -101,7 +101,7 @@ Además de administrar proyectos, ofrecer una experiencia de edición enriquecid
 ## <a name="next-step"></a>Paso siguiente
 
 > [!div class="nextstepaction"]
-> [Instalación de paquetes en el entorno de Python](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)
+> [Instalar paquetes en un entorno de Python](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)
 
 ## <a name="go-deeper"></a>Profundizar un poco más
 

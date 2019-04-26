@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 70b61dff4ebe7486c2e04e4fd3061cd4110feca1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55938402"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62952040"
 ---
 # <a name="set-radix-command"></a>Establecer base (Comando)
 Establece o devuelve la base numérica que se ha usado para mostrar valores enteros.

@@ -13,17 +13,17 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: 0c0d13603a2575a826a53bf145fd1f0218571243
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957603"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62892864"
 ---
 # <a name="walkthrough-bind-to-data-in-xaml-designer"></a>Tutorial: Enlace a datos en el Diseñador XAML
 
-En el Diseñador de XAML, puede establecer las propiedades de enlace de datos mediante el uso de la mesa de trabajo y la ventana Propiedades. En el ejemplo de este tutorial se muestra cómo enlazar datos a un control. En concreto, el tutorial muestra cómo crear una clase simple de carro de la compra que tenga una propiedad [DependencyProperty](/uwp/api/Windows.UI.Xaml.DependencyProperty) denominada `ItemCount` y luego enlazar la propiedad `ItemCount` a la propiedad **Text** de un control [TextBlock](/uwp/api/Windows.UI.Xaml.Controls.TextBlock).
+En el diseñador XAML, puedes establecer las propiedades de enlace de datos con la mesa de trabajo y la ventana Propiedades. En el ejemplo de este tutorial se muestra cómo enlazar datos a un control. En concreto, el tutorial muestra cómo crear una clase simple de carro de la compra que tenga una propiedad [DependencyProperty](/uwp/api/Windows.UI.Xaml.DependencyProperty) denominada `ItemCount` y luego enlazar la propiedad `ItemCount` a la propiedad **Text** de un control [TextBlock](/uwp/api/Windows.UI.Xaml.Controls.TextBlock).
 
-## <a name="to-create-a-class-to-use-as-a-data-source"></a>Crear una clase que se va a usar como origen de datos
+## <a name="to-create-a-class-to-use-as-a-data-source"></a>Para crear una clase con el fin de usarla como origen de datos
 
 1. En el menú **Archivo**, seleccione **Nuevo** > **Proyecto**.
 
@@ -31,7 +31,7 @@ En el Diseñador de XAML, puede establecer las propiedades de enlace de datos me
 
 1. Asigne un nombre al proyecto **BindingTest** y después elija el botón **Aceptar**.
 
-1. Abra el archivo **MainWindow.xaml.cs** (o **MainWindow.xaml.vb**) y agregue el código siguiente. En C#, agregue el código en el espacio de nombres `BindingTest` (antes del paréntesis de cierre final del archivo). En Visual Basic, agregue simplemente la nueva clase.
+1. Abra el archivo **MainWindow.xaml.cs** (o **MainWindow.xaml.vb**) y agregue el código siguiente. En C#, agrega el código en el espacio de nombres `BindingTest` (antes del paréntesis de cierre final del archivo). En Visual Basic, simplemente agrega la nueva clase.
 
    ```csharp
    public class ShoppingCart : DependencyObject
@@ -69,7 +69,7 @@ En el Diseñador de XAML, puede establecer las propiedades de enlace de datos me
 
 1. En el menú **Archivo**, elija **Compilar** > **Compilar solución**.
 
-## <a name="to-bind-the-itemcount-property-to-a-textblock-control"></a>Enlazar la propiedad ItemCount a un control TextBlock
+## <a name="to-bind-the-itemcount-property-to-a-textblock-control"></a>Para enlazar la propiedad ItemCount a un control TextBlock
 
 1. En el Explorador de soluciones, abra el menú contextual de **MainWindow.xaml** y elija **Diseñador de vistas**.
 
@@ -85,7 +85,7 @@ En el Diseñador de XAML, puede establecer las propiedades de enlace de datos me
 
 1. En el **cuadro de herramientas**, elija un control `TextBlock` para agregar al formulario.
 
-1. Con el control `TextBlock` seleccionado, en la ventana Propiedades, elija el marcador de propiedad situado a la derecha de la propiedad **Text** y después elija **Crear enlace de datos**. (el marcador de propiedad parece un pequeño cuadro).
+1. Con el control `TextBlock` seleccionado, en la ventana Propiedades, elija el marcador de propiedad situado a la derecha de la propiedad **Text** y después elija **Crear enlace de datos**. (El marcador de propiedad tiene el aspecto de un cuadro pequeño).
 
 1. En el cuadro de diálogo Crear enlace de datos, en el cuadro **Ruta de acceso**, seleccione la propiedad **ItemCount: (int32)** y después elija el botón **Aceptar**.
 
@@ -95,7 +95,7 @@ En el Diseñador de XAML, puede establecer las propiedades de enlace de datos me
 
 1. Presione **F5** para ejecutar la aplicación.
 
-     El control `TextBlock` debe mostrar el valor predeterminado 0 como texto.
+     El control `TextBlock` debe mostrar el valor predeterminado de 0 como texto.
 
 ## <a name="see-also"></a>Vea también
 

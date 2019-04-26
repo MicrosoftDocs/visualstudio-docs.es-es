@@ -11,12 +11,12 @@ caps.latest.revision: 56
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ed5232ed8f0033e5953f14b8e4a9aa08abcb316c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: d36b2cb0c4e8e7ddf9016302c9efcfae0710097c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54805657"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62568361"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>Información general sobre las herramientas de los lenguajes específicos de dominio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,13 +25,13 @@ Las Herramientas del lenguaje específico de dominio (herramientas DSL), que se 
   
  En Herramientas DSL se incluyen estas herramientas:  
   
--   Asistente de proyectos que usa plantillas de solución diferentes con las que podrá empezar a desarrollar su lenguaje específico de dominio de manera sencilla.  
+- Asistente de proyectos que usa plantillas de solución diferentes con las que podrá empezar a desarrollar su lenguaje específico de dominio de manera sencilla.  
   
--   Diseñador gráfico para crear y editar la definición de lenguaje específico de dominio.  
+- Diseñador gráfico para crear y editar la definición de lenguaje específico de dominio.  
   
--   Motor de validación que garantiza que la definición de lenguaje específico de dominio es correcta y muestra errores y advertencias si hay problemas.  
+- Motor de validación que garantiza que la definición de lenguaje específico de dominio es correcta y muestra errores y advertencias si hay problemas.  
   
--   Generador de código que toma una definición de lenguaje específico de dominio como entrada y genera código fuente como salida.  
+- Generador de código que toma una definición de lenguaje específico de dominio como entrada y genera código fuente como salida.  
   
 ## <a name="the-dsl-tools-solution"></a>Solución de Herramientas DSL  
  El Asistente de diseñador específico de dominio proporciona estas plantillas de solución:  

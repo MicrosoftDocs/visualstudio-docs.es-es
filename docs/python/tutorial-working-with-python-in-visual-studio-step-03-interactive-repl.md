@@ -12,15 +12,15 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 14015c01b487bfe7963d36154ff2dc9b599d7c49
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366827"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62430890"
 ---
 # <a name="step-3-use-the-interactive-repl-window"></a>Paso 3: Uso de la ventana interactiva de REPL
 
-**Paso anterior: [Escribir y ejecutar código](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)**
+**Paso anterior: [Escritura y ejecución de código](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)**
 
 La ventana **interactiva** de Visual Studio para Python proporciona una experiencia de lectura-evaluación-impresión-repetición (REPL) que reduce considerablemente el ciclo habitual de edición-compilación-depuración. La ventana **interactiva** proporciona todas las funciones de la experiencia de REPL de la línea de comandos de Python. También resulta muy fácil intercambiar el código con archivos de código fuente en el editor de Visual Studio, que en otros casos es complicado con la línea de comandos.
 
@@ -93,9 +93,9 @@ La ventana **interactiva** de Visual Studio para Python proporciona una experien
 ## <a name="next-step"></a>Paso siguiente
 
 > [!div class="nextstepaction"]
-> [Ejecución de código en el depurador](tutorial-working-with-python-in-visual-studio-step-04-debugging.md)
+> [Ejecutar código en el depurador](tutorial-working-with-python-in-visual-studio-step-04-debugging.md)
 
 ## <a name="go-deeper"></a>Profundizar un poco más
 
 - [Uso de la ventana interactiva](python-interactive-repl-in-visual-studio.md)
-- [Uso de IPython en la ventana interactiva (REPL)](interactive-repl-ipython.md)
+- [Uso de IPython en la ventana interactiva](interactive-repl-ipython.md)

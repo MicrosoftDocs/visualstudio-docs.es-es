@@ -13,25 +13,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 72a634bd83a55d4e646874cce5546e2a7310afb2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 3b88268ba0ed8b1c324eda08ec3db969e088f279
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56617852"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62539259"
 ---
 # <a name="how-to-serialize-symbol-information"></a>Procedimiento Serializar la información de símbolos
 Puede serializar símbolos que debe tener para analizar la aplicación. La serialización de símbolos agrega símbolos al archivo .*vsp*. Al agregar información de símbolos al archivo .*vsp*, otros usuarios pueden analizar un informe de rendimiento sin tener acceso a los símbolos originales. Si no se serializan los símbolos, debe tener archivos .*exe* y .*pdb* originales instrumentados para analizar el archivo .*vsp*.
 
 ### <a name="to-automatically-serialize-symbol-information"></a>Para serializar información de símbolos automáticamente
 
-1.  En el menú **Herramientas** , haga clic en **Opciones**.
+1. En el menú **Herramientas** , haga clic en **Opciones**.
 
      Se mostrará el cuadro de diálogo **Opciones**.
 
-2.  Haga clic en **Herramientas de rendimiento**.
+2. Haga clic en **Herramientas de rendimiento**.
 
-3.  En **Configuración general**, seleccione **Serializar información de símbolos automáticamente**.
+3. En **Configuración general**, seleccione **Serializar información de símbolos automáticamente**.
 
 ## <a name="see-also"></a>Vea también
 - [Configuración de sesiones de rendimiento](../profiling/configuring-performance-sessions.md)

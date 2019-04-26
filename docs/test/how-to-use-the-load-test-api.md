@@ -10,14 +10,14 @@ ms.assetid: e15567bc-1f21-4feb-b81d-f17ba35cfde5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 73c99d4a7d1ff15b8cbd1cff8a4fd18d8f41bccc
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 47707e0430d51a754f7e458ebf68e08124c1e7b5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954847"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62821501"
 ---
-# <a name="how-to-use-the-load-test-api"></a>Filtrar para usar la API de pruebas de carga
+# <a name="how-to-use-the-load-test-api"></a>Procedimiento para usar la API de pruebas de carga
 
 Visual Studio admite complementos de pruebas de carga que puedan controlar o mejorar una prueba de carga. Los complementos de pruebas de carga son clases definidas por el usuario que implementan la interfaz <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin> situada en el espacio de nombres <xref:Microsoft.VisualStudio.TestTools.LoadTesting>. Los complementos de pruebas de carga permiten un control personalizado de las pruebas de carga, por ejemplo, para anular una prueba de carga cuando se alcanza un valor de contador o un umbral de error. Utilice las propiedades de la clase <xref:Microsoft.VisualStudio.TestTools.LoadTesting.LoadTest> para obtener o establecer parámetros de prueba de carga a partir del código definido por el usuario. Utilice los eventos de la clase <xref:Microsoft.VisualStudio.TestTools.LoadTesting.LoadTest> para asociar delegados para notificaciones cuando la prueba de carga se esté ejecutando.
 
@@ -30,27 +30,27 @@ También se pueden crear complementos para pruebas de rendimiento web. Para obte
 
 ## <a name="to-use-the-loadtesting-namespace"></a>Para usar el espacio de nombres LoadTesting
 
-1.  Abra un proyecto de prueba de carga y rendimiento web que contenga una prueba de carga.
+1. Abra un proyecto de prueba de carga y rendimiento web que contenga una prueba de carga.
 
-2.  Agregue un proyecto de biblioteca de clases de Visual C# o Visual Basic a la solución de prueba.
+2. Agregue un proyecto de biblioteca de clases de Visual C# o Visual Basic a la solución de prueba.
 
-3.  Agregue una referencia en el proyecto de prueba de carga y rendimiento web para el proyecto de biblioteca de clases.
+3. Agregue una referencia en el proyecto de prueba de carga y rendimiento web para el proyecto de biblioteca de clases.
 
-4.  Agregue una referencia a la DLL Microsoft.VisualStudio.QualityTools.LoadTestFramework en el proyecto Biblioteca de clases.
+4. Agregue una referencia a la DLL Microsoft.VisualStudio.QualityTools.LoadTestFramework en el proyecto Biblioteca de clases.
 
-5.  En el archivo de clase ubicado en el proyecto de biblioteca de clases, agregue una instrucción `using` para el espacio de nombres <xref:Microsoft.VisualStudio.TestTools.LoadTesting>.
+5. En el archivo de clase ubicado en el proyecto de biblioteca de clases, agregue una instrucción `using` para el espacio de nombres <xref:Microsoft.VisualStudio.TestTools.LoadTesting>.
 
-6.  Cree una nueva clase pública que implemente la interfaz <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin>.
+6. Cree una nueva clase pública que implemente la interfaz <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin>.
 
-7.  Compile el proyecto.
+7. Compile el proyecto.
 
-8.  Agregue el nuevo complemento de prueba de carga mediante el Editor de prueba de carga:
+8. Agregue el nuevo complemento de prueba de carga mediante el Editor de prueba de carga:
 
-    1.  Haga clic con el botón derecho en el nodo raíz de la prueba de carga y, luego, elija **Agregar complemento de prueba de carga**.
+    1. Haga clic con el botón derecho en el nodo raíz de la prueba de carga y, luego, elija **Agregar complemento de prueba de carga**.
 
-    2.  Aparecerá el cuadro de diálogo **Agregar complemento de prueba de carga**.
+    2. Aparecerá el cuadro de diálogo **Agregar complemento de prueba de carga**.
 
-    3.  En el panel **Propiedades del complemento seleccionado**, establezca los valores iniciales que el complemento va a usar en tiempo de ejecución.
+    3. En el panel **Propiedades del complemento seleccionado**, establezca los valores iniciales que el complemento va a usar en tiempo de ejecución.
 
         > [!NOTE]
         > Puede exponer tantas propiedades como desee de sus complementos. Basta con hacerlas públicas, que se puedan establecer y que tengan un tipo base como Integer, Boolean o String. También puede editar las propiedades del complemento de pruebas de carga posteriormente desde la ventana **Propiedades**.

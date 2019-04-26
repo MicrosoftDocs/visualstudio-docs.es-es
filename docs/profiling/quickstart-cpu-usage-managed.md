@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b77ae405463496c5de703947de9b4429218d2435
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 58ab671014f2745bbc577e50d9e8051df72091c9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54935688"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967967"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-managed-code"></a>Inicio rápido: Análisis de datos de uso de la CPU en Visual Studio (código administrado)
 
@@ -160,9 +160,9 @@ Para ejecutar las herramientas de generación de perfiles con el depurador se re
     > [!NOTE]
     > En Visual Basic, asegúrese de que el objeto de inicio se establece en `Sub Main` (**Propiedades** > **Aplicaciones** > **Objeto de inicio**).
 
-##  <a name="step-1-collect-profiling-data"></a>Paso 1: Recopilar datos de generación de perfiles
+## <a name="step-1-collect-profiling-data"></a>Paso 1: Recopilar datos de generación de perfiles
 
-1.  En primer lugar, establezca un punto de interrupción en la aplicación en esta línea de código en la función `Main`:
+1. En primer lugar, establezca un punto de interrupción en la aplicación en esta línea de código en la función `Main`:
 
     `for (int i = 0; i < 200; i++)`
 
@@ -172,20 +172,20 @@ Para ejecutar las herramientas de generación de perfiles con el depurador se re
 
     Para establecer un punto de interrupción, haga clic en el margen interno a la izquierda de la línea de código.
 
-2.  Después, establezca un segundo punto de interrupción en la llave de cierre al final de la función `Main`:
+2. Después, establezca un segundo punto de interrupción en la llave de cierre al final de la función `Main`:
 
      ![Establecer puntos de interrupción para la generación de perfiles](../profiling/media/quickstart-cpu-usage-breakpoints.png "Establecer puntos de interrupción para la generación de perfiles")
 
     > [!TIP]
     > Al establecer dos puntos de interrupción, puede limitar la recopilación de datos a las partes del código que quiere analizar.
 
-3.  La ventana **Herramientas de diagnóstico** ya es visible, a menos que se haya desactivado. Para que la ventana se vuelva a mostrar, haga clic en **Depurar** > **Windows** > **Mostrar Herramientas de diagnóstico**.
+3. La ventana **Herramientas de diagnóstico** ya es visible, a menos que se haya desactivado. Para que la ventana se vuelva a mostrar, haga clic en **Depurar** > **Windows** > **Mostrar Herramientas de diagnóstico**.
 
-4.  Haga clic en **Depurar** > **Iniciar depuración** (o en **Inicio** en la barra de herramientas, o presione **F5**).
+4. Haga clic en **Depurar** > **Iniciar depuración** (o en **Inicio** en la barra de herramientas, o presione **F5**).
 
      Cuando la aplicación termine de cargarse, se muestra la vista **Resumen** de las Herramientas de diagnóstico.
 
-5.  Mientras el depurador está en pausa, habilite la recopilación de datos de uso de la CPU mediante la selección de **Registrar perfil CPU** y, después, abra la pestaña **Uso de CPU**.
+5. Mientras el depurador está en pausa, habilite la recopilación de datos de uso de la CPU mediante la selección de **Registrar perfil CPU** y, después, abra la pestaña **Uso de CPU**.
 
      ![Herramientas de diagnóstico para habilitar la generación de perfiles de CPU](../profiling/media/quickstart-cpu-usage-summary.png "Herramientas de diagnóstico para habilitar la generación de perfiles de CPU")
 
@@ -193,7 +193,7 @@ Para ejecutar las herramientas de generación de perfiles con el depurador se re
 
      Al seleccionar **Registrar perfil CPU**, Visual Studio iniciará la grabación de las funciones y cuánto tiempo se tardan en ejecutar, y también proporciona un gráfico de escala de tiempo que se puede usar para centrarse en segmentos específicos de la sesión de muestreo. Estos datos recopilados solo se pueden ver cuando la aplicación se detiene en un punto de interrupción.
 
-6.  Presione **F5** para ejecutar la aplicación hasta el segundo punto de interrupción.
+6. Presione **F5** para ejecutar la aplicación hasta el segundo punto de interrupción.
 
      Ahora tiene los datos de rendimiento de la aplicación específicamente para la región de código que se ejecuta entre los dos puntos de interrupción.
 

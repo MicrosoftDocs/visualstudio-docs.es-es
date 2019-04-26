@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3d0f24dc1afa875183f03e15e46cc2331f27cbf0
-ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58647328"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62996839"
 ---
 # <a name="options-dialog-box-projects-and-solutions--build-and-run"></a>Cuadro de diálogo Opciones: Proyectos y soluciones \> Compilar y ejecutar
 

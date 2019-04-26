@@ -12,11 +12,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: fda68b9e5bffbd1afab3389a0d8d624312a8de3f
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366437"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62430071"
 ---
 # <a name="step-2-write-and-run-code"></a>Paso 2: Escritura y ejecución de código
 
@@ -89,11 +89,11 @@ Aunque el **Explorador de soluciones** es donde se administran los archivos del 
 ## <a name="next-step"></a>Paso siguiente
 
 > [!div class="nextstepaction"]
-> [Uso de la ventana interactiva de REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)
+> [Usar la ventana interactiva de REPL](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)
 
 ## <a name="go-deeper"></a>Profundizar un poco más
 
 - [Editar código](editing-python-code-in-visual-studio.md)
 - [Código de formato](formatting-python-code.md)
-- [Refactorizar código](refactoring-python-code.md)
+- [Refactorización de código](refactoring-python-code.md)
 - [Usar PyLint](linting-python-code.md)

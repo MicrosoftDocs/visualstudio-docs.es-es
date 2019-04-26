@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6ac35f506aadfcceebcbcf0dd4f6ec5b6dc33107
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616929"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62552868"
 ---
 # <a name="create-basic-profiling-reports-from-the-command-line"></a>Creación de informes básicos de generación de perfiles desde la línea de comandos
 En este artículo se describen los comandos básicos de VSPerfReport que generan informes de valores separados por comas (.*csv*) a partir de un archivo de datos de generación de perfiles .*vsp* o .*vsps*. Para una descripción de todas las opciones de informes, vea [VSPerfReport](../profiling/vsperfreport.md).

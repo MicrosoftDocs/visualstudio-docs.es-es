@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9eea69dc4d2931f66d4c6769667e23bdfb4eecf1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55938299"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62934527"
 ---
 # <a name="set-current-stack-frame-command"></a>Establecer marco de pila actual (Comando)
 Le permite establecer un marco de pila determinado.

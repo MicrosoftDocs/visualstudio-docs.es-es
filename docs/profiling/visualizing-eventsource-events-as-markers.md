@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be9ca24aa60e03c14bed607196d5d40a3d8f1c58
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: bd6339b3f55b4a4c9a1e2c90ff3183a36f16c178
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639819"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422094"
 ---
 # <a name="visualize-eventsource-events-as-markers"></a>Visualizar eventos EventSource como marcadores
 El visualizador de simultaneidad puede mostrar eventos EventSource como marcadores, y puede controlar cómo se muestran los marcadores. Para ver los marcadores de EventSource, registre el GUID del proveedor de ETW mediante el cuadro de diálogo [Configuración avanzada](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md). El visualizador de simultaneidad tiene convenciones predeterminadas para representar eventos de EventSource como [marcadores de marca](../profiling/flag-markers.md), [marcadores de intervalo](../profiling/span-markers.md) y [marcadores de mensaje](../profiling/message-markers.md). Puede personalizar cómo se muestran los eventos EventSource agregando campos personalizados a los eventos. Para obtener más información sobre los marcadores, consulte [Marcadores del visualizador de simultaneidad](../profiling/concurrency-visualizer-markers.md). Para obtener más información sobre eventos EventSource, consulte <xref:System.Diagnostics.Tracing>.
@@ -23,11 +23,11 @@ El visualizador de simultaneidad puede mostrar eventos EventSource como marcador
 
 ### <a name="marker-type"></a>Tipo de marcador
 
-1.  Los eventos que tienen un [Opcode](/windows/desktop/WES/eventmanifestschema-opcodetype-complextype) win:Start orwin:Stop se tratan como el principio o el final de un intervalo, respectivamente.  Los intervalos anidados o superpuestos no se pueden mostrar. Los pares de eventos que comienzan en un subproceso y acaban en otro no se pueden mostrar.
+1. Los eventos que tienen un [Opcode](/windows/desktop/WES/eventmanifestschema-opcodetype-complextype) win:Start orwin:Stop se tratan como el principio o el final de un intervalo, respectivamente.  Los intervalos anidados o superpuestos no se pueden mostrar. Los pares de eventos que comienzan en un subproceso y acaban en otro no se pueden mostrar.
 
-2.  Un evento cuyo código de operación no es win:Start ni win:Stop se trata como una marca de marcador a menos que su [Level](/windows/desktop/WES/defining-severity-levels) (campo de EVENT_RECORD.EVENT_HEADER.EVENT_DESCRIPTOR) sea win:Verbose o superior.
+2. Un evento cuyo código de operación no es win:Start ni win:Stop se trata como una marca de marcador a menos que su [Level](/windows/desktop/WES/defining-severity-levels) (campo de EVENT_RECORD.EVENT_HEADER.EVENT_DESCRIPTOR) sea win:Verbose o superior.
 
-3.  En los demás casos, el evento se trata como un mensaje.
+3. En los demás casos, el evento se trata como un mensaje.
 
 ### <a name="importance"></a>Importancia
  La siguiente tabla define cómo se asigna el nivel de evento a la importancia de marcador.
@@ -91,7 +91,7 @@ El visualizador de simultaneidad puede mostrar eventos EventSource como marcador
  Utilice el campo cvSpanId, un número entero, para hacer coincidir los pares de eventos. El valor para cada par de eventos de inicio y detención que representan un intervalo debe ser único. Normalmente, para código simultáneo esto requiere el uso de primitivos de sincronización, como <xref:System.Threading.Interlocked.Exchange%2A>, para garantizar que la clave (el valor que se usa para CvSpanID) es correcta.
 
 > [!NOTE]
->  Para usar SpanID para anidar intervalos, permita que se superpongan en el mismo subproceso o no permita que se inicien en un subproceso terminen en otro.
+> Para usar SpanID para anidar intervalos, permita que se superpongan en el mismo subproceso o no permita que se inicien en un subproceso terminen en otro.
 
 ## <a name="see-also"></a>Vea también
 - [Marcadores del Visualizador de simultaneidad](../profiling/concurrency-visualizer-markers.md)

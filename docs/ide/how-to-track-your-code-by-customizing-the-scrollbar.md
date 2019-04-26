@@ -8,13 +8,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 77f7db396b814eb9163c055b8fadb8793432acee
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948361"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62548362"
 ---
-# <a name="how-to-customize-the-scroll-bar"></a>Filtrar Personalizar la barra de desplazamiento
+# <a name="how-to-customize-the-scroll-bar"></a>Procedimiento Personalizar la barra de desplazamiento
 
 Al trabajar con archivos de código largo, puede ser difícil llevar la cuenta de todo lo que está en el archivo. Puede personalizar la barra de desplazamiento del editor de código para tener una visión general de lo que sucede en el código.
 
@@ -26,7 +26,7 @@ Puede seleccionar si la barra de desplazamiento muestra anotaciones como cambios
 
    2. Seleccione **Mostrar anotaciones en la barra de desplazamiento vertical** y seleccione las anotaciones que quiere ver. Las anotaciones disponibles son:
 
-      - trabajando
+      - cambios
       - marcas
       - errores
       - posición del símbolo de intercalación

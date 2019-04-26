@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8dffcc3bd007f27ba9912f909990a206ec6458a
-ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
+ms.openlocfilehash: f474adad6d1aaef728c59942fcae17595cd75032
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58268642"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62824248"
 ---
 # <a name="how-to-create-and-edit-configurations"></a>Procedimiento Creación y edición de configuraciones
 
@@ -54,69 +54,69 @@ Para obtener más información sobre la configuración de la página propiedades
 
 ## <a name="create-a-project-configuration"></a>Creación de una configuración de proyecto
 
-1.  Abra el cuadro de diálogo **Administrador de configuración**.
+1. Abra el cuadro de diálogo **Administrador de configuración**.
 
-2.  Seleccione un proyecto en la columna **Proyecto**.
+2. Seleccione un proyecto en la columna **Proyecto**.
 
-3.  En la lista desplegable **Configuración** de ese proyecto, pulse **Nueva**.
+3. En la lista desplegable **Configuración** de ese proyecto, pulse **Nueva**.
 
      Se abre el cuadro de diálogo **Nueva configuración del proyecto**.
 
-4.  En el cuadro **Nombre**, escriba un nombre para la nueva configuración.
+4. En el cuadro **Nombre**, escriba un nombre para la nueva configuración.
 
-5.  Para usar las opciones de propiedad de una configuración de proyecto existente, en la lista desplegable **Copiar configuración de**, pulse una configuración.
+5. Para usar las opciones de propiedad de una configuración de proyecto existente, en la lista desplegable **Copiar configuración de**, pulse una configuración.
 
-6.  Para crear una configuración para toda la solución al mismo tiempo, active la casilla **Crear nueva configuración de solución**.
+6. Para crear una configuración para toda la solución al mismo tiempo, active la casilla **Crear nueva configuración de solución**.
 
 ## <a name="rename-a-project-configuration"></a>Cambio del nombre de una configuración de proyecto
 
-1.  Abra el cuadro de diálogo **Administrador de configuración**.
+1. Abra el cuadro de diálogo **Administrador de configuración**.
 
-2.  En la columna **Proyecto**, seleccione el proyecto cuyo nombre de configuración del proyecto quiere cambiar.
+2. En la columna **Proyecto**, seleccione el proyecto cuyo nombre de configuración del proyecto quiere cambiar.
 
-3.  En la lista desplegable **Configuración** de ese proyecto, pulse **Editar**.
+3. En la lista desplegable **Configuración** de ese proyecto, pulse **Editar**.
 
      Se abre el cuadro de diálogo **Editar configuraciones del proyecto**.
 
-4.  Seleccione el nombre de la configuración del proyecto que desea cambiar.
+4. Seleccione el nombre de la configuración del proyecto que desea cambiar.
 
-5.  Seleccione **Cambiar nombre** y escriba un nuevo nombre.
+5. Seleccione **Cambiar nombre** y escriba un nuevo nombre.
 
 ## <a name="create-and-modify-solution-wide-build-configurations"></a>Crear y modificar configuraciones de compilación para toda la solución
 
 ### <a name="to-create-a-solution-wide-build-configuration"></a>Para crear una configuración de compilación para toda la solución
 
-1.  Abra el cuadro de diálogo **Administrador de configuración**.
+1. Abra el cuadro de diálogo **Administrador de configuración**.
 
-2.  En la lista desplegable **Configuración de soluciones activas**, pulse **Nueva**.
+2. En la lista desplegable **Configuración de soluciones activas**, pulse **Nueva**.
 
      Se abre el cuadro de diálogo **Nueva configuración de la solución**.
 
-3.  En el cuadro de texto **Nombre**, escriba el nombre de la nueva configuración.
+3. En el cuadro de texto **Nombre**, escriba el nombre de la nueva configuración.
 
-4.  Para usar las opciones de una configuración de solución existente, en la lista desplegable **Copiar configuración de**, pulse una configuración.
+4. Para usar las opciones de una configuración de solución existente, en la lista desplegable **Copiar configuración de**, pulse una configuración.
 
-5.  Si quiere crear configuraciones de proyecto al mismo tiempo, active la casilla **Crear nuevas configuraciones de proyecto**.
+5. Si quiere crear configuraciones de proyecto al mismo tiempo, active la casilla **Crear nuevas configuraciones de proyecto**.
 
 ### <a name="to-rename-a-solution-wide-build-configuration"></a>Para cambiar el nombre de una configuración de compilación para toda la solución
 
-1.  Abra el cuadro de diálogo **Administrador de configuración**.
+1. Abra el cuadro de diálogo **Administrador de configuración**.
 
-2.  En la lista desplegable **Configuración de soluciones activas**, pulse **Editar**.
+2. En la lista desplegable **Configuración de soluciones activas**, pulse **Editar**.
 
      Se abre el cuadro de diálogo **Editar configuraciones de soluciones**.
 
-3.  Seleccione el nombre de la configuración de soluciones que desea cambiar.
+3. Seleccione el nombre de la configuración de soluciones que desea cambiar.
 
-4.  Seleccione **Cambiar nombre** y escriba un nuevo nombre.
+4. Seleccione **Cambiar nombre** y escriba un nuevo nombre.
 
 ### <a name="to-modify-a-solution-wide-build-configuration"></a>Para modificar una configuración de compilación en toda la solución
 
-1.  Abra el cuadro de diálogo **Administrador de configuración**.
+1. Abra el cuadro de diálogo **Administrador de configuración**.
 
-2.  En la lista desplegable **Configuración de soluciones activas**, seleccione la configuración que quiera.
+2. En la lista desplegable **Configuración de soluciones activas**, seleccione la configuración que quiera.
 
-3.  En el panel **Contextos del proyecto**, seleccione para cada proyecto la **Configuración** y la **Plataforma** que quiera, y seleccione si quiere que sea de **Compilación** o **Implementación**.
+3. En el panel **Contextos del proyecto**, seleccione para cada proyecto la **Configuración** y la **Plataforma** que quiera, y seleccione si quiere que sea de **Compilación** o **Implementación**.
 
 ## <a name="see-also"></a>Vea también
 

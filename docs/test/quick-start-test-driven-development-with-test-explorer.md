@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 2ba4b896a5cea964a4df6392a7c1963f8df00d31
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: cd80739f887a42c62af55bc06cfb65704f4755ef
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415608"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63002162"
 ---
 # <a name="quickstart-test-driven-development-with-test-explorer"></a>Inicio rápido: Desarrollo controlado por pruebas con el Explorador de pruebas
 
@@ -57,7 +57,6 @@ El Explorador de pruebas reemplaza las ventanas de prueba unitaria que se encont
 > [!IMPORTANT]
 > Los resultados que se muestran son para la ejecución más reciente. La barra de resultados coloreados presenta solo los resultados de las pruebas ejecutadas. Por ejemplo, si se ejecutan varias pruebas y alguna de ellas produce un error y, a continuación, se ejecutan solo las pruebas que se completan correctamente, la barra de resultados mostrará todo en color verde.
 
-
 > [!NOTE]
 > Si no aparece ninguna prueba, asegúrese de haber instalado un adaptador para conectar el Explorador de pruebas al marco de pruebas que se está usando. Para más información, vea [Instalar marcos de prueba unitaria de terceros](install-third-party-unit-test-frameworks.md).
 
@@ -95,15 +94,15 @@ En este tutorial se muestra cómo desarrollar un método probado en C# con el ma
 
 4. Genere el método a partir de la prueba.
 
-   1.  Coloque el cursor en `Rooter` y, después, en el menú contextual, elija **Generar** > **Nuevo tipo**.
+   1. Coloque el cursor en `Rooter` y, después, en el menú contextual, elija **Generar** > **Nuevo tipo**.
 
-   2.  En el cuadro de diálogo **Generar nuevo tipo** , establezca **Proyecto** en el proyecto de biblioteca de clases. En este ejemplo, es `MyMath`.
+   2. En el cuadro de diálogo **Generar nuevo tipo** , establezca **Proyecto** en el proyecto de biblioteca de clases. En este ejemplo, es `MyMath`.
 
-   3.  Coloque el cursor en `SquareRoot` y, después, en el menú contextual, elija **Generar** > **Código auxiliar de método**.
+   3. Coloque el cursor en `SquareRoot` y, después, en el menú contextual, elija **Generar** > **Código auxiliar de método**.
 
 5. Ejecute la prueba unitaria.
 
-   1.  En el menú **Prueba**, elija **Ejecutar pruebas unitarias** > **Todas las pruebas**.
+   1. En el menú **Prueba**, elija **Ejecutar pruebas unitarias** > **Todas las pruebas**.
 
         La solución se compila y se ejecuta.
 
@@ -123,7 +122,7 @@ En este tutorial se muestra cómo desarrollar un método probado en C# con el ma
 
 #### <a name="after-every-change-make-all-the-tests-pass"></a>Después de cada cambio, haga que todas las pruebas se completen correctamente
 
-1.  En *MyMath\Rooter.cs*, mejore el código de `SquareRoot`:
+1. En *MyMath\Rooter.cs*, mejore el código de `SquareRoot`:
 
     ```csharp
     public double SquareRoot(double input)
@@ -132,7 +131,7 @@ En este tutorial se muestra cómo desarrollar un método probado en C# con el ma
      }
     ```
 
-2.  En el Explorador de pruebas, elija **Ejecutar todas**.
+2. En el Explorador de pruebas, elija **Ejecutar todas**.
 
      El código se compila y se ejecuta la prueba.
 
@@ -142,7 +141,7 @@ En este tutorial se muestra cómo desarrollar un método probado en C# con el ma
 
 #### <a name="add-tests-to-extend-the-range-of-inputs"></a>Agregar pruebas para ampliar el intervalo de entradas
 
-1.  Para mejorar su confianza en que el código funcione en todos los casos, agregue pruebas para in intervalo más amplio de valores de entrada.
+1. Para mejorar su confianza en que el código funcione en todos los casos, agregue pruebas para in intervalo más amplio de valores de entrada.
 
     > [!TIP]
     > Evite modificar las pruebas existentes que se completan correctamente. En su lugar, agregue nuevas pruebas. Cambie las pruebas existentes solo si cambian los requisitos de usuario. Esta directiva ayuda a garantizar que no se pierda la función existente mientras se trabaja para ampliar el código.
@@ -173,13 +172,13 @@ En este tutorial se muestra cómo desarrollar un método probado en C# con el ma
     }
     ```
 
-2.  En el Explorador de pruebas, elija **Ejecutar todas**.
+2. En el Explorador de pruebas, elija **Ejecutar todas**.
 
      La nueva prueba no se supera, aunque la primera aún se completa correctamente.
 
      Para encontrar el punto de error, seleccione la prueba que no se completa correctamente y, en la parte inferior del Explorador de pruebas, seleccione el elemento superior del **Seguimiento de la pila**.
 
-3.  Inspeccione el método que se está probando para ver qué puede ser incorrecto. En la clase `MyMath.Rooter` , reescriba el código:
+3. Inspeccione el método que se está probando para ver qué puede ser incorrecto. En la clase `MyMath.Rooter` , reescriba el código:
 
     ```csharp
     public double SquareRoot(double input)
@@ -195,13 +194,13 @@ En este tutorial se muestra cómo desarrollar un método probado en C# con el ma
     }
     ```
 
-4.  En el Explorador de pruebas, elija **Ejecutar todas**.
+4. En el Explorador de pruebas, elija **Ejecutar todas**.
 
      Ahora ambas pruebas se completan correctamente.
 
 #### <a name="add-tests-for-exceptional-cases"></a>Agregue pruebas para casos excepcionales
 
-1.  Agregue una prueba para entradas negativas:
+1. Agregue una prueba para entradas negativas:
 
     ```csharp
     [TestMethod]
@@ -220,15 +219,15 @@ En este tutorial se muestra cómo desarrollar un método probado en C# con el ma
      }
     ```
 
-2.  En el Explorador de pruebas, elija **Ejecutar todas**.
+2. En el Explorador de pruebas, elija **Ejecutar todas**.
 
      El método en prueba entra en bucle y debe cancelarse manualmente.
 
-3.  Elija **Cancelar**.
+3. Elija **Cancelar**.
 
      La prueba se para después de 10 segundos.
 
-4.  Corrija el código del método:
+4. Corrija el código del método:
 
     ```csharp
 
@@ -241,13 +240,13 @@ En este tutorial se muestra cómo desarrollar un método probado en C# con el ma
     ...
     ```
 
-5.  En el Explorador de pruebas, elija **Ejecutar todas**.
+5. En el Explorador de pruebas, elija **Ejecutar todas**.
 
      Todas las pruebas se completan correctamente.
 
 #### <a name="refactor-without-changing-tests"></a>Refactorizar sin cambiar las pruebas
 
-1.  Simplifique el código, pero no cambie las pruebas.
+1. Simplifique el código, pero no cambie las pruebas.
 
     > [!TIP]
     > Una *refactorización* es un cambio que está pensado para que el código se ejecute mejor o para hacer que el código sea más fácil de entender. No está pensado para alterar el comportamiento del código y, por tanto, no se cambian las pruebas.
@@ -276,7 +275,7 @@ En este tutorial se muestra cómo desarrollar un método probado en C# con el ma
     }
     ```
 
-2.  Elija **Ejecutar todas**.
+2. Elija **Ejecutar todas**.
 
      Todas las pruebas se completan correctamente.
 

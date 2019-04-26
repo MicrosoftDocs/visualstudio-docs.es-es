@@ -12,12 +12,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 990f14d76eabbf1b7ef252234a8625c66ffcdcba
-ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
+ms.openlocfilehash: 1bc67385a69f7f96288074afd4c7e5f9cefe8805
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58897587"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62818511"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>Instalar y configurar herramientas para compilar con iOS
 
@@ -66,13 +66,13 @@ Para instalar y usar el agente remoto para desarrollar código para iOS, primero
 
    `sudo npm install -g npm@latest`
 
-##  <a name="Install"></a> Instalar al agente remoto para iOS
+## <a name="Install"></a> Instalar al agente remoto para iOS
 
 Cuando se instala Visual C++ para el desarrollo móvil multiplataforma, Visual Studio puede comunicarse con [vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988), un agente remoto que se ejecuta en el equipo Mac para transferir archivos, compilar y ejecutar la aplicación de iOS, así como para enviar comandos de depuración.
 
 Antes de instalar el agente remoto, asegúrese de que se cumplen los [Requisitos previos](#prerequisites) y de que se ha instalado [Visual C++ para el desarrollo móvil multiplataforma](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md#install-the-tools).
 
-###  <a name="DownloadInstall"></a> Para descargar e instalar el agente remoto
+### <a name="DownloadInstall"></a> Para descargar e instalar el agente remoto
 
 - Desde la aplicación Terminal del Mac, escriba:
 
@@ -87,11 +87,11 @@ Antes de instalar el agente remoto, asegúrese de que se cumplen los [Requisitos
 
 Si ha actualizado a una nueva versión de Visual Studio, deberá actualizar también a la versión actual del agente remoto. Para actualizar el agente remoto, repita los pasos para descargar e instalar el agente remoto.
 
-##  <a name="Start"></a> Iniciar el agente remoto
+## <a name="Start"></a> Iniciar el agente remoto
 
 El agente remoto debe estar ejecutándose para que Visual Studio pueda compilar y ejecutar el código de iOS. Visual Studio se debe emparejar con el agente remoto para que puedan comunicarse. De forma predeterminada, el agente remoto se ejecuta en modo de conexión segura, que requiere un código PIN para emparejarse con Visual Studio.
 
-###  <a name="RemoteAgentStartServer"></a> Para iniciar el agente remoto
+### <a name="RemoteAgentStartServer"></a> Para iniciar el agente remoto
 
 - Desde la aplicación Terminal del Mac, escriba:
 
@@ -127,7 +127,7 @@ Una vez iniciado el agente remoto, puede usarlo desde Visual Studio hasta que lo
 
 - En la ventana de Terminal en la que se esté ejecutando vcremote, escriba **Control**+**C**.
 
-##  <a name="ConfigureVS"></a> Configurar el agente remoto en Visual Studio
+## <a name="ConfigureVS"></a> Configurar el agente remoto en Visual Studio
 
 Para conectar con el agente remoto desde Visual Studio, debe especificar la configuración remota en las opciones de Visual Studio.
 
@@ -164,7 +164,7 @@ Para conectar con el agente remoto desde Visual Studio, debe especificar la conf
 
 Visual Studio usa la misma información para conectar con el agente remoto en su equipo Mac cada vez que lo use. No necesitará emparejar Visual Studio con el agente remoto de nuevo a menos que genere un nuevo certificado de seguridad en su equipo Mac o que cambie su nombre de host o dirección IP.
 
-##  <a name="GeneratePIN"></a> Generate a new security PIN
+## <a name="GeneratePIN"></a> Generate a new security PIN
 
 Al iniciar el agente remoto por primera vez, el PIN generado se valida durante un tiempo limitado (10 minutos de forma predeterminada). Si no empareja Visual Studio con el agente remoto antes de que expire el tiempo, deberá generar un nuevo PIN.
 
@@ -178,7 +178,7 @@ Al iniciar el agente remoto por primera vez, el PIN generado se valida durante u
 
    El agente remoto genera un nuevo PIN temporal. Para emparejar Visual Studio usando el nuevo PIN, repita los pasos descritos en [Configurar el agente remoto en Visual Studio](#ConfigureVS).
 
-##  <a name="GenerateCert"></a> Generar un nuevo certificado de servidor
+## <a name="GenerateCert"></a> Generar un nuevo certificado de servidor
 
 Por motivos de seguridad, los certificados de servidor que emparejan Visual Studio con el agente remoto están asociados a la dirección IP o el nombre de host de su equipo Mac. Si estos valores cambian, deberá generar un nuevo certificado de servidor y volver a configurar después Visual Studio con los nuevos valores.
 
@@ -200,7 +200,7 @@ Por motivos de seguridad, los certificados de servidor que emparejan Visual Stud
 
 1. Para emparejar Visual Studio usando el nuevo PIN, repita los pasos descritos en [Configurar el agente remoto en Visual Studio](#ConfigureVS).
 
-##  <a name="ConfigureMac"></a> Configure the remote agent on the Mac
+## <a name="ConfigureMac"></a> Configure the remote agent on the Mac
 
 Puede configurar el agente remoto usando varias opciones de línea de comando. Así, puede especificar el puerto para escuchar las solicitudes de compilación y especificar el número máximo de compilaciones que mantener en el sistema de archivos. El límite predeterminado es de 10 compilaciones. El agente remoto quitará las compilaciones que excedan este valor máximo al apagar el equipo.
 

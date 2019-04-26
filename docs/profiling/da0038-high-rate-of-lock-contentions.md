@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 79ab09f43d5c665067786fc502137902eee846d4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ba95cde967f428717be852dad785233eb96cb290
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56654144"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444885"
 ---
 # <a name="da0038-high-rate-of-lock-contentions"></a>DA0038: Alta frecuencia de contenciones de bloqueo
 
@@ -46,7 +46,7 @@ ms.locfileid: "56654144"
  Esta regla se desencadena cuando las mediciones tomadas durante una generación de perfiles indican que hay una cantidad excesivamente alta de contención de bloqueo. Las contenciones de bloqueo retrasan la ejecución de subprocesos que están esperando para adquirir el bloqueo. Deberían investigarse incluso las cantidades bastante pequeñas de contención de bloqueo en pruebas unitarias o en pruebas de carga que se ejecuten en hardware de gama baja.
 
 > [!NOTE]
->  Cuando la frecuencia de contenciones de bloqueo notificadas en los datos de generación de perfiles es excesivamente alta, se desencadena el mensaje de advertencia [DA0039: Frecuencia muy alta de contenciones de bloqueo](../profiling/da0039-very-high-rate-of-lock-contentions.md) en lugar de este mensaje informativo.
+> Cuando la frecuencia de contenciones de bloqueo notificadas en los datos de generación de perfiles es excesivamente alta, se desencadena el mensaje de advertencia [DA0039: Frecuencia muy alta de contenciones de bloqueo](../profiling/da0039-very-high-rate-of-lock-contentions.md) en lugar de este mensaje informativo.
 
 ## <a name="how-to-investigate-a-warning"></a>Cómo investigar una advertencia
  Haga doble clic en el mensaje para navegar a la vista [Marcas](../profiling/marks-view.md) de los datos de generación de perfiles.  Busque la columna **LocksAndThreads de .NET CLR\Tasa de contención por segundo**. Determine si hay fases concretas de ejecución del programa en que la contención de bloqueo sea mayor que en otras.

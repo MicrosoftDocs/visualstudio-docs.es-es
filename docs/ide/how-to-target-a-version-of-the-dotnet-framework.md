@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: ba8bdcade321c3660e89ab6b7cf6e0b79471b393
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355401"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62548665"
 ---
 # <a name="how-to-target-a-version-of-the-net-framework"></a>Procedimiento Uso de una versión de .NET Framework como destino
 

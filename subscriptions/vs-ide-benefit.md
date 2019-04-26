@@ -7,17 +7,16 @@ ms.date: 04/03/2019
 ms.topic: conceptual
 description: Obtenga información sobre cómo descargar e instalar el IDE de Visual Studio incluido en la suscripción a Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: e2ac206e85d43cff897ff97b42b4b8fccaeec906
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.openlocfilehash: af721e567e451c50533d0e476ec01acfa4022a53
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018147"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420812"
 ---
 # <a name="using-the-visual-studio-2019-benefit"></a>Uso de la ventaja de Visual Studio 2019
 
 Como suscriptor de Visual Studio, tiene acceso al IDE de Visual Studio.  La versión específica dependerá del nivel de su suscripción.  La ventaja aparecerá como un icono en la categoría Herramientas de la página [Ventajas](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) del portal de suscriptores.
-
 
 ## <a name="activation-steps"></a>Pasos para la activación
 
@@ -56,8 +55,10 @@ Para descargar el IDE:
 14. Se abre Visual Studio. Ya puede empezar a utilizar Visual Studio.
 
     ::: moniker range="vs-2017"
+
     > [!div class="mx-imgBorder"]
     > ![Comenzar a utilizar Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-start-cropped.png)
+
     ::: moniker-end
 
 ## <a name="eligibility"></a>Elegibilidad
@@ -75,12 +76,10 @@ Para descargar el IDE:
 > [!NOTE]
 > Microsoft ya no ofrece suscripciones anuales ni de Visual Studio Professional ni de Visual Studio Enterprise en las suscripciones de nube. Esto no supone cambio alguno en la experiencia actual de los clientes y ni en su capacidad para renovar, aumentar, reducir o cancelar las suscripciones. Conviene que los clientes nuevos vayan a [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) para explorar las diferentes opciones de compra de Visual Studio.
 
-
 ¿No sabe con seguridad qué suscripción usa?  Conéctese a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas las suscripciones asignadas a su dirección de correo electrónico. Si no ve todas las suscripciones, es posible que haya una o varias asignadas a una dirección de correo electrónico diferente.  Debe iniciar sesión con esa dirección de correo electrónico para ver esas suscripciones.
 
-
 ## <a name="support-resources"></a>Recursos de soporte técnico
--  Si necesita ayuda con el IDE de Visual Studio, consulte estos recursos:
+- Si necesita ayuda con el IDE de Visual Studio, consulte estos recursos:
     - Soporte técnico: [https://visualstudio.microsoft.com/support/](https://visualstudio.microsoft.com/support/)
     - [Documentación](/visualstudio/)
--  Para obtener ayuda con las ventas, las suscripciones, las cuentas y la facturación para suscripciones de Visual Studio, póngase en contacto con el [soporte para suscripciones](https://visualstudio.microsoft.com/subscriptions/support/) de Visual Studio.
+- Para obtener ayuda con las ventas, las suscripciones, las cuentas y la facturación para suscripciones de Visual Studio, póngase en contacto con el [soporte para suscripciones](https://visualstudio.microsoft.com/subscriptions/support/) de Visual Studio.

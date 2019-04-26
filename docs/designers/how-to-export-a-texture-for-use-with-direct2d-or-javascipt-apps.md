@@ -1,5 +1,5 @@
 ---
-title: Filtrar Exportar una textura para usarla con aplicaciones de Direct2D o Javascipt
+title: Procedimiento Exportar una textura para usarla con aplicaciones de Direct2D o Javascipt
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 241c25fe-764e-4e1b-ad32-b1377dcbb605
@@ -8,44 +8,44 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a4aa53efb690faa0d31a35b9b19d0d5ee9781352
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 803129ea758a6648c0caa8303e1d191c0e8a74f5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55940014"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62844389"
 ---
-# <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps"></a>Filtrar Exportar una textura para usarla con aplicaciones de Direct2D o Javascipt
+# <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps"></a>Procedimiento Exportar una textura para usarla con aplicaciones de Direct2D o Javascipt
 
 La canalización de contenido de la imagen puede generar texturas compatibles con las convenciones de representación internas de Direct2D. Las texturas de esta clase son adecuadas para su uso en aplicaciones que usan Direct2D y en aplicaciones para UWP creadas mediante JavaScript.
 
 Este documento muestra estas actividades:
 
--   Configurar la imagen de origen para que se procese mediante la canalización de contenido de la imagen.
+- Configurar la imagen de origen para que se procese mediante la canalización de contenido de la imagen.
 
--   Configurar la canalización de contenido de la imagen para generar una textura que se pueda usar en una aplicación de Direct2D o JavaScript.
+- Configurar la canalización de contenido de la imagen para generar una textura que se pueda usar en una aplicación de Direct2D o JavaScript.
 
-    -   Generar un archivo *.dds* comprimido en bloques.
+    - Generar un archivo *.dds* comprimido en bloques.
 
-    -   Generar valores alfa premultiplicados.
+    - Generar valores alfa premultiplicados.
 
-    -   Deshabilitar la generación de mapa MIP.
+    - Deshabilitar la generación de mapa MIP.
 
 ## <a name="rendering-conventions-in-direct2d"></a>Representación de convenciones en Direct2D
 
 Las texturas que se usan en el contexto de Direct2D deben cumplir estas convenciones de representación internas de Direct2D:
 
--   Direct2D implementa transparencia y translucidez mediante valores alfa premultiplicados. Las texturas usadas con Direct2D deben contener alfa premultiplicado, aunque la textura no use transparencia o translucidez. Para obtener más información sobre el valor alfa previamente multiplicado, vea [Cómo: Exportar una textura que tiene valores alfa previamente multiplicados](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md).
+- Direct2D implementa transparencia y translucidez mediante valores alfa premultiplicados. Las texturas usadas con Direct2D deben contener alfa premultiplicado, aunque la textura no use transparencia o translucidez. Para obtener más información sobre el valor alfa previamente multiplicado, vea [Cómo: Exportar una textura que tiene valores alfa previamente multiplicados](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md).
 
--   La textura se debe proporcionar en formato *.dds*, usando uno de estos formatos de compresión de bloques:
+- La textura se debe proporcionar en formato *.dds*, usando uno de estos formatos de compresión de bloques:
 
-    -   Compresión BC1_UNORM
+    - Compresión BC1_UNORM
 
-    -   Compresión BC2_UNORM
+    - Compresión BC2_UNORM
 
-    -   Compresión BC3_UNORM
+    - Compresión BC3_UNORM
 
--   No se admiten los mapas MIP.
+- No se admiten los mapas MIP.
 
 ### <a name="to-create-a-texture-thats-compatible-with-direct2d-rendering-conventions"></a>Para crear una textura compatible con las convenciones de representación de Direct2D
 

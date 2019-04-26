@@ -16,11 +16,11 @@ ms.workload:
 - dotnet
 - cplusplus
 ms.openlocfilehash: d1fefda9d8d639bf8d360bbd6b869b75b7dae903
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856507"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62847915"
 ---
 # <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>Tutorial: Depuración de C# y C++ en la misma sesión de depuración
 
@@ -50,7 +50,7 @@ Si tiene Visual Studio instalado, pero no las cargas de trabajo que necesita, se
 
 ## <a name="create-a-simple-native-dll"></a>Crear una DLL nativa simple
 
-**Para crear los archivos del proyecto DLL:**
+**Para crear los archivos del proyecto de DLL:**
 
 1. Abra Visual Studio y cree un proyecto.
 
@@ -106,7 +106,7 @@ Si tiene Visual Studio instalado, pero no las cargas de trabajo que necesita, se
 
 1. Seleccione **Archivo** > **Guardar todo** o presione **Ctrl**+**Mayús**+**S** para guardar los archivos.
 
-**Para configurar y compilar el proyecto DLL:**
+**Para configurar y compilar el proyecto de DLL:**
 
 1. En la barra de herramientas de Visual Studio, seleccione la opción **Depurar** y la plataforma **x86** o **x64**. Si la aplicación que realiza la llamada va a ser .NET Core, que siempre se ejecuta en modo de 64 bits, seleccione **x64** como plataforma.
 

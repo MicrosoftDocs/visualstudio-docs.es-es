@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: dd28e0f2455e1a6ed866d879ec347082e9302c3a
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: e16261020a737651fc79c3fb3eb1da6a539cee34
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790438"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62777261"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>Análisis del uso de energía en las aplicaciones para UWP
 
@@ -88,18 +88,18 @@ if (performance && performance.mark) {
 
 ## <a name="collect-energy-profile-data-for-your-app"></a>Recopilar datos del perfil de energía para la aplicación
 
-1.  En el menú **Depurar** , elija **Iniciar diagnóstico sin depurar**.
+1. En el menú **Depurar** , elija **Iniciar diagnóstico sin depurar**.
 
      ![Elegir Consumo de energía en el concentrador de diagnósticos](../profiling/media/energyprof_diagnosticshub.png "ENERGYPROF_DiagnosticsHub")
 
-2.  Elija **Consumo de energía** y, a continuación, **Iniciar**.
+2. Elija **Consumo de energía** y, a continuación, **Iniciar**.
 
     > [!NOTE]
     > Al iniciar el generador de perfiles **Consumo de energía**, es posible que vea una ventana **Control de cuentas de usuario** que solicite su permiso para ejecutar *VsEtwCollector.exe*. Elija **Sí**.
 
-3.  Ejecute la aplicación para recopilar datos.
+3. Ejecute la aplicación para recopilar datos.
 
-4.  Para detener la generación de perfiles, vuelve a Visual Studio (Alt + Tab) y elige **Detener colección** en la página del concentrador de diagnósticos.
+4. Para detener la generación de perfiles, vuelve a Visual Studio (Alt + Tab) y elige **Detener colección** en la página del concentrador de diagnósticos.
 
      ![Detener la recopilación de datos](../profiling/media/xamlprof_stopcollection.png "XAMLProf_StopCollection")
 

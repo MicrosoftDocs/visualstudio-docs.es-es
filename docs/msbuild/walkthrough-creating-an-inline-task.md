@@ -11,48 +11,48 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cad3d554ff62c3d9a3d295efbf10fde403176b94
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 322c8d4b766619a6404a315fb83298bf5416fba4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597272"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445323"
 ---
 # <a name="walkthrough-create-an-inline-task"></a>Tutorial: Creación de una tarea insertada
 Las tareas de MSBuild se crean normalmente compilando una clase que implementa la interfaz <xref:Microsoft.Build.Framework.ITask>. A partir de .NET Framework versión 4, se pueden crear tareas insertadas en el archivo del proyecto. No es necesario crear un ensamblado independiente para hospedar la tarea. Para más información, vea [Tareas insertadas](../msbuild/msbuild-inline-tasks.md).
 
  En este tutorial se muestra la forma de crear y ejecutar estas tareas insertadas:
 
--   Una tarea que no tiene parámetros de entrada o de salida.
+- Una tarea que no tiene parámetros de entrada o de salida.
 
--   Una tarea que tiene un parámetro de entrada y no tiene parámetros de salida.
+- Una tarea que tiene un parámetro de entrada y no tiene parámetros de salida.
 
--   Una tarea que tiene dos parámetros de entrada y un parámetro de salida que devuelve una propiedad de MSBuild.
+- Una tarea que tiene dos parámetros de entrada y un parámetro de salida que devuelve una propiedad de MSBuild.
 
--   Una tarea que tiene dos parámetros de entrada y un parámetro de salida que devuelve un elemento de MSBuild.
+- Una tarea que tiene dos parámetros de entrada y un parámetro de salida que devuelve un elemento de MSBuild.
 
 Para crear y ejecutar las tareas, utilice Visual Studio y la **ventana del símbolo del sistema de Visual Studio**, del modo siguiente:
 
-1.   Cree un archivo del proyecto de MSBuild utilizando Visual Studio.
+1. Cree un archivo del proyecto de MSBuild utilizando Visual Studio.
 
-2.   Modifique el archivo del proyecto en Visual Studio para crear la tarea insertada.
+2. Modifique el archivo del proyecto en Visual Studio para crear la tarea insertada.
 
-3.   Utilice la **ventana del símbolo del sistema** para compilar el proyecto y examinar los resultados.
+3. Utilice la **ventana del símbolo del sistema** para compilar el proyecto y examinar los resultados.
 
 ## <a name="create-and-modify-an-msbuild-project"></a>Creación y modificación de un proyecto de MSBuild
  El sistema de proyectos de Visual Studio se basa en MSBuild. Por consiguiente, puede crear un archivo del proyecto de compilación utilizando Visual Studio. En esta sección, creará un archivo del proyecto de Visual C#. (En su lugar, puede crear un archivo del proyecto de Visual Basic. En el contexto de este tutorial, la diferencia entre los dos archivos del proyecto es menor).
 
 #### <a name="to-create-and-modify-a-project-file"></a>Para crear y modificar un archivo de proyecto
 
-1.  En el menú **Archivo** de Visual Studio, haga clic en **Nuevo** y, a continuación, **Proyecto**.
+1. En el menú **Archivo** de Visual Studio, haga clic en **Nuevo** y, a continuación, **Proyecto**.
 
-2.  En el cuadro de diálogo **Nuevo proyecto**, seleccione el tipo de proyecto de **Visual C#** y, a continuación, seleccione la plantilla **Aplicación de Windows Forms**. En el cuadro **Nombre** , escriba `InlineTasks`. Escriba una **ubicación** para la solución, por ejemplo, *D:\\*. Asegúrese de que la casilla **Crear directorio para la solución** esté activada, la opción **Agregar al control de código fuente** esté desactivada y el **Nombre de la solución** sea **InlineTasks**.
+2. En el cuadro de diálogo **Nuevo proyecto**, seleccione el tipo de proyecto de **Visual C#** y, a continuación, seleccione la plantilla **Aplicación de Windows Forms**. En el cuadro **Nombre** , escriba `InlineTasks`. Escriba una **ubicación** para la solución, por ejemplo, *D:\\*. Asegúrese de que la casilla **Crear directorio para la solución** esté activada, la opción **Agregar al control de código fuente** esté desactivada y el **Nombre de la solución** sea **InlineTasks**.
 
-3.  Haga clic en **Aceptar** para crear el archivo del proyecto.
+3. Haga clic en **Aceptar** para crear el archivo del proyecto.
 
-3.  En el **Explorador de soluciones**, haga clic con el botón derecho en el nodo de proyecto **InlineTasks** y, a continuación, haga clic en **Descargar el proyecto**.
+3. En el **Explorador de soluciones**, haga clic con el botón derecho en el nodo de proyecto **InlineTasks** y, a continuación, haga clic en **Descargar el proyecto**.
 
-4.  Haga clic con el botón derecho de nuevo en el nodo del proyecto y, a continuación, haga clic en **Edit InlineTasks.csproj** (Editar InlineTasks.csproj).
+4. Haga clic con el botón derecho de nuevo en el nodo del proyecto y, a continuación, haga clic en **Edit InlineTasks.csproj** (Editar InlineTasks.csproj).
 
      El archivo del proyecto aparece en el editor de código.
 
@@ -103,7 +103,7 @@ Para crear y ejecutar las tareas, utilice Visual Studio y la **ventana del símb
     `Hello, world!`
 
    > [!NOTE]
-   >  Si no ve el mensaje de saludo, intente guardar de nuevo el archivo del proyecto y, a continuación, ejecute la tarea Hello.
+   > Si no ve el mensaje de saludo, intente guardar de nuevo el archivo del proyecto y, a continuación, ejecute la tarea Hello.
 
    Puede cambiar el archivo del proyecto y ver rápidamente los resultados alternando entre el editor de código y la **ventana del símbolo del sistema**.
 

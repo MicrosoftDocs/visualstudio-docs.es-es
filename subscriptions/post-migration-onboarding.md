@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: Obtenga información sobre cómo incorporar correctamente su organización para suscripciones de Visual Studio después de migrar al portal de administración.
 searchscope: VS Subscription
 ms.openlocfilehash: 3b12f5ad2d4f83759c6247f3498eb3da9d376991
-ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58897613"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63008270"
 ---
 # <a name="onboard-to-the-visual-studio-subscriptions-administration-portal-after-your-organization-is-migrated"></a>Incorporación al Portal de administración de suscripciones de Visual Studio después de migrar la organización
 
@@ -54,4 +54,4 @@ Si su contacto principal completó el proceso de incorporación y las credencial
 
 Si el contacto principal completó la incorporación, pero no lo agregó como usuario y sus credenciales no aparecían anteriormente en el VLSC, verá la siguiente notificación. Llegue a su [contacto principal](find-primary-contact.md) para tener acceso al portal.
 > [!div class="mx-imgBorder"]
-> ![Captura de pantalla del Portal de administración de suscripciones de Visual Studio, con la notificación "No le encontramos"](_img/post-migration-onboarding/cant-find-you.png)
+> ![Captura de pantalla del Portal de administración de suscripciones de Visual Studio, con la notificación "no podemos encontrarle"](_img/post-migration-onboarding/cant-find-you.png)

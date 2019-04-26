@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 50ebaad52473eaccb39d8253e9af5fbb9f4a3cbf
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: bc22f9dcbe348f46ae624e5c06706d328633e784
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596743"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62846075"
 ---
 # <a name="debug-or-disable-project-code-in-xaml-designer"></a>Depuración o deshabilitación de código de proyecto en el Diseñador XAML
 
@@ -21,13 +21,13 @@ En muchos casos, las excepciones no controladas del Diseñador **XAML** pueden d
 
 El código del proyecto incluye:
 
--   Controles personalizados y controles de usuario
+- Controles personalizados y controles de usuario
 
--   Bibliotecas de clases
+- Bibliotecas de clases
 
--   Convertidores de valores
+- Convertidores de valores
 
--   Enlaces con datos en tiempo de diseño generados a partir de código del proyecto
+- Enlaces con datos en tiempo de diseño generados a partir de código del proyecto
 
 Cuando se deshabilita el código del proyecto, Visual Studio muestra marcadores de posición. Por ejemplo, Visual Studio muestra el nombre de la propiedad para un enlace donde los datos ya no están disponibles o un marcador de posición para un control que ya no se ejecuta.
 
@@ -35,43 +35,43 @@ Cuando se deshabilita el código del proyecto, Visual Studio muestra marcadores 
 
 ## <a name="to-determine-if-project-code-is-causing-an-exception"></a>Para determinar si el código del proyecto está provocando una excepción
 
-1.  En el cuadro de diálogo de excepción no controlada, elija el vínculo **Haga clic aquí para recargar el diseñador** .
+1. En el cuadro de diálogo de excepción no controlada, elija el vínculo **Haga clic aquí para recargar el diseñador** .
 
-2.  En la barra de menús, elija **Depurar** > **Iniciar depuración** para compilar y ejecutar la aplicación.
+2. En la barra de menús, elija **Depurar** > **Iniciar depuración** para compilar y ejecutar la aplicación.
 
      Si la aplicación se compila y se ejecuta correctamente, la excepción en tiempo de diseño puede deberse a que su código de proyecto se está ejecutando en el diseñador.
 
 ## <a name="to-debug-project-code-running-in-the-designer"></a>Para depurar código de proyecto que se ejecuta en el diseñador
 
-1.  En el cuadro de diálogo de excepción no controlada, elija el vínculo **Haga clic aquí para deshabilitar la ejecución de código del proyecto y volver a cargar el diseñador** .
+1. En el cuadro de diálogo de excepción no controlada, elija el vínculo **Haga clic aquí para deshabilitar la ejecución de código del proyecto y volver a cargar el diseñador** .
 
-2.  En el Administrador de tareas de Windows, elija el botón **Finalizar tarea** para cerrar todas las instancias del Diseñador de XAML de Visual Studio que se estén ejecutando actualmente.
+2. En el Administrador de tareas de Windows, elija el botón **Finalizar tarea** para cerrar todas las instancias del Diseñador de XAML de Visual Studio que se estén ejecutando actualmente.
 
      ![Instancias del diseñador de XAML en el Administrador de tareas](../designers/media/xaml_taskmanager.png)
 
-3.  En Visual Studio, abra la página XAML, que contiene el código o el control que desea depurar.
+3. En Visual Studio, abra la página XAML, que contiene el código o el control que desea depurar.
 
-4.  Abra una nueva instancia de Visual Studio, y luego abra una segunda instancia del proyecto.
+4. Abra una nueva instancia de Visual Studio, y luego abra una segunda instancia del proyecto.
 
-5.  Establezca un punto de interrupción en el código del proyecto.
+5. Establezca un punto de interrupción en el código del proyecto.
 
-6.  En la nueva instancia de Visual Studio, en la barra de menús, elija **Depurar** > **Asociar al proceso**.
+6. En la nueva instancia de Visual Studio, en la barra de menús, elija **Depurar** > **Asociar al proceso**.
 
-7.  En el cuadro de diálogo **Asociar al proceso** , en la lista **Procesos disponibles** , elija **XDesProc.exe**y luego seleccione el botón **Asociar** .
+7. En el cuadro de diálogo **Asociar al proceso** , en la lista **Procesos disponibles** , elija **XDesProc.exe**y luego seleccione el botón **Asociar** .
 
      ![El proceso del diseñador de XAML](../designers/media/xaml_attach.png)
 
      Este es el proceso para el Diseñador XAML en la primera instancia de Visual Studio.
 
-8.  En la primera instancia de Visual Studio, en la barra de menús, elija **Depurar** > **Iniciar depuración**.
+8. En la primera instancia de Visual Studio, en la barra de menús, elija **Depurar** > **Iniciar depuración**.
 
      Ahora puede entrar en el código que se ejecuta en el diseñador.
 
 ## <a name="to-disable-project-code-in-the-designer"></a>Para deshabilitar el código del proyecto en el diseñador
 
--   En el cuadro de diálogo de excepción no controlada, elija el vínculo **Haga clic aquí para deshabilitar la ejecución de código del proyecto y volver a cargar el diseñador** .
+- En el cuadro de diálogo de excepción no controlada, elija el vínculo **Haga clic aquí para deshabilitar la ejecución de código del proyecto y volver a cargar el diseñador** .
 
--   Como alternativa, en la barra de herramientas en el **Diseñador XAML**, haga clic en el botón **Deshabilitar código de proyecto**.
+- Como alternativa, en la barra de herramientas en el **Diseñador XAML**, haga clic en el botón **Deshabilitar código de proyecto**.
 
      ![Botón para deshabilitar el código de proyecto](../designers/media/xaml_disablecode.png)
 
@@ -80,7 +80,7 @@ Cuando se deshabilita el código del proyecto, Visual Studio muestra marcadores 
     > [!NOTE]
     > Para proyectos destinados a procesadores X64 o ARM, Visual Studio no puede ejecutar el código del proyecto en el diseñador, por lo que el botón **Deshabilitar código de proyecto** está deshabilitado en el diseñador.
 
--   Cualquiera de las opciones hace que el diseñador se vuelva a cargar, y luego deshabilita todo el código para el proyecto asociado.
+- Cualquiera de las opciones hace que el diseñador se vuelva a cargar, y luego deshabilita todo el código para el proyecto asociado.
 
     > [!NOTE]
     > Deshabilitar el código del proyecto puede provocar una pérdida de datos en tiempo de diseño. Una alternativa es depurar el código que se ejecuta en el diseñador.

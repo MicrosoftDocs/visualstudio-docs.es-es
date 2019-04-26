@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ca466163ed7e6bd610b5041d3731bdc2d43c6e16
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b90a80ffb958fb08a39a4f3b7f4350aa80d830d2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55912812"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62788757"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>Administrar controladores de pruebas y agentes de pruebas
 
@@ -184,27 +184,27 @@ Si quiere registrar el controlador de pruebas con la colección de proyectos de 
 
 En el momento de agregar roles para la aplicación a la configuración de pruebas de Visual Studio, podrá agregar propiedades de agente para cada uno de los roles. Esto determina qué agentes de prueba están disponibles para este rol. Cuando se ejecutan las pruebas mediante esta configuración de pruebas, el controlador de pruebas seleccionado para la configuración de pruebas determina la disponibilidad de los agentes necesarios. A continuación se describen los casos que se pueden dar cuando se determina la disponibilidad de los agentes:
 
--   No hay ningún agente disponible para el rol que debe ejecutar las pruebas. No se pueden ejecutar las pruebas. Podrá realizar una de las siguientes acciones y, a continuación, ejecutar de nuevo las pruebas:
+- No hay ningún agente disponible para el rol que debe ejecutar las pruebas. No se pueden ejecutar las pruebas. Podrá realizar una de las siguientes acciones y, a continuación, ejecutar de nuevo las pruebas:
 
-    -   Podrá esperar a que haya un agente disponible para este rol a fin de ejecutar las pruebas.
+    - Podrá esperar a que haya un agente disponible para este rol a fin de ejecutar las pruebas.
 
-    -   Si hay algún agente sin conexión que se pueda utilizar para este rol, podrá reiniciar el agente de modo que esté disponible.
+    - Si hay algún agente sin conexión que se pueda utilizar para este rol, podrá reiniciar el agente de modo que esté disponible.
 
-    -   Podrá agregar al controlador de pruebas otro agente con las propiedades correctas para ese rol.
+    - Podrá agregar al controlador de pruebas otro agente con las propiedades correctas para ese rol.
 
-    -   Podrá cambiar las propiedades de agente para este rol en la configuración de pruebas para habilitar otros agentes que desee utilizar.
+    - Podrá cambiar las propiedades de agente para este rol en la configuración de pruebas para habilitar otros agentes que desee utilizar.
 
--   No hay ningún agente disponible para uno o varios roles que ejecutan los adaptadores de datos de diagnóstico. Se pueden ejecutar las pruebas, pero no se puede ejecutar el adaptador de datos de diagnóstico. Podrá ejecutar las pruebas sin adaptador de datos de diagnóstico o podrá realizar una de las siguientes acciones y ejecutar de nuevo las pruebas:
+- No hay ningún agente disponible para uno o varios roles que ejecutan los adaptadores de datos de diagnóstico. Se pueden ejecutar las pruebas, pero no se puede ejecutar el adaptador de datos de diagnóstico. Podrá ejecutar las pruebas sin adaptador de datos de diagnóstico o podrá realizar una de las siguientes acciones y ejecutar de nuevo las pruebas:
 
-    -   Podrá esperar a que haya un agente disponible para estos roles.
+    - Podrá esperar a que haya un agente disponible para estos roles.
 
-    -   Si hay algún agente sin conexión que se pueda usar para este rol, deberá cambiar su estado a En línea desde **Administrar controlador de pruebas** en el menú **Prueba**. Además, es posible que tenga que reiniciar el agente si ha estado desconectado del controlador.
+    - Si hay algún agente sin conexión que se pueda usar para este rol, deberá cambiar su estado a En línea desde **Administrar controlador de pruebas** en el menú **Prueba**. Además, es posible que tenga que reiniciar el agente si ha estado desconectado del controlador.
 
-    -   Compruebe que los agentes que necesite para esta ejecución de pruebas no estén ejecutando pruebas. Podrá comprobar el estado de cualquier agente desde **Administrar controlador de pruebas** en el menú **Prueba**.
+    - Compruebe que los agentes que necesite para esta ejecución de pruebas no estén ejecutando pruebas. Podrá comprobar el estado de cualquier agente desde **Administrar controlador de pruebas** en el menú **Prueba**.
 
-    -   Podrá agregar al controlador de pruebas otro agente con las propiedades correctas para el rol.
+    - Podrá agregar al controlador de pruebas otro agente con las propiedades correctas para el rol.
 
-    -   Podrá cambiar las propiedades de agente para el rol en la configuración de pruebas para habilitar otros agentes que desee utilizar.
+    - Podrá cambiar las propiedades de agente para el rol en la configuración de pruebas para habilitar otros agentes que desee utilizar.
 
 ## <a name="load-tests-from-delay-signed-assemblies"></a>Cargar pruebas de ensamblados con firma retardada
 

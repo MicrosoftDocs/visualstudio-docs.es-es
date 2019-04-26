@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c96842dde4219bcdab3d7ccfd1616f8b44e733bf
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: b985d4609c40c36d15a5ba8dea0a57aff06b2941
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790373"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950337"
 ---
 # <a name="keyboard-shortcuts-for-visual-studio"></a>Métodos abreviados de teclado de Visual Studio
 
@@ -70,7 +70,7 @@ En Visual Studio se puede navegar más fácilmente gracias a los accesos directo
 |Buscar en archivos|**Ctrl**+**Mayús**+**F**|
 |Reemplazar en archivos|**Ctrl**+**Mayús**+**H**|
 
-##  <a name="BKMK_CodeEditor"></a> Editor de código
+## <a name="BKMK_CodeEditor"></a> Editor de código
 
 |Comando|Acceso directo|Cuando se especifica|
 |-|-|-|

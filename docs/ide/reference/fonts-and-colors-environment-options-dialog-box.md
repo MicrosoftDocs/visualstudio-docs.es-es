@@ -25,12 +25,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b48c86c74b724dc6df5d5935f1340f6de0fc9185
-ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
+ms.openlocfilehash: b1576af2511f3bd24c26a64c1667c6b466bedd1e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58647471"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62790213"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Fuentes y colores, Entorno, Opciones (Cuadro de diálogo)
 
@@ -42,26 +42,26 @@ Los cambios de combinaciones de colores no surten efecto durante la sesión en l
 
 Enumera todos los elementos de la interfaz de usuario para los que puede cambiar las combinaciones de fuentes y colores. Después de seleccionar un elemento de esta lista, puede personalizar la configuración de color para el elemento seleccionado en **Elementos para mostrar**.
 
--   **Editor de texto**
+- **Editor de texto**
 
      Los cambios realizados en la configuración de visualización de estilo, tamaño y color para el Editor de texto afectan a la apariencia del texto en el editor de texto predeterminado. Esta configuración no afectará a los documentos abiertos en un editor de texto fuera del IDE
 
--   **Impresora**
+- **Impresora**
 
      Los cambios realizados en la configuración de visualización de estilo, tamaño y color para la Impresora afectan a la apariencia del texto en documentos impresos.
 
     > [!NOTE]
     > Según sea necesario, puede seleccionar una fuente predeterminada para imprimir distinta a la que se usa para mostrar en el editor de texto. Esto puede ser útil cuando imprima código que contiene caracteres tanto de un solo byte como de doble byte.
 
--   **Finalización de instrucciones**
+- **Finalización de instrucciones**
 
      Cambia el estilo de fuente y el tamaño del texto que aparece en los elementos emergentes de finalización de instrucciones del editor.
 
--   **Información sobre herramientas del editor**
+- **Información sobre herramientas del editor**
 
      Cambia el estilo de fuente y el tamaño del texto que aparece en Información sobre herramientas que se muestra en el editor.
 
--   **Fuente del entorno**
+- **Fuente del entorno**
 
      Cambia el estilo y el tamaño de la fuente de todos los elementos de la interfaz de usuario del IDE que aún no tienen una opción independiente en **Mostrar valores para**.
 
@@ -71,7 +71,7 @@ Enumera todos los elementos de la interfaz de usuario para los que puede cambiar
 
      ::: moniker-end
 
--   **[Todas las ventanas de herramientas de texto]**
+- **[Todas las ventanas de herramientas de texto]**
 
      Los cambios realizados en la configuración de visualización de estilo, tamaño y color para este elemento afectan a la apariencia del texto en ventanas de herramientas que tengan paneles de resultados en el IDE. Por ejemplo, la ventana de salida, la ventana de comandos, la ventana inmediata, etc.
 

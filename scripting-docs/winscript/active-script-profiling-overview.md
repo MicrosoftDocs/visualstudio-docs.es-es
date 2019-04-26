@@ -13,21 +13,21 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d03ab4df7a41fe6513a18446d26e33e9856d1183
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 777d20ecb51b09b282f88dc08464727b9ff2a945
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58149619"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432975"
 ---
 # <a name="active-script-profiling-overview"></a>Información general acerca de la generación de perfiles de Active Script
 [Active Script Profiler (Interfaces)](../winscript/reference/active-script-profiler-interfaces.md) permite generar perfiles de un motor de scripting. La generación de perfiles de Active Script consta de las partes siguientes:  
   
--   Motor de lenguaje  
+- Motor de lenguaje  
   
--   administrador de flujos de trabajo  
+- administrador de flujos de trabajo  
   
--   generador de perfiles  
+- generador de perfiles  
   
 ## <a name="language-engine"></a>Motor de lenguaje  
  El motor de lenguaje ejecuta el script. Proporciona diversos métodos que permiten generar el perfil del código de script a medida que se ejecuta. Cuando se habilita la generación de perfiles, el motor de lenguaje toma como argumento el identificador de clase (CLSID) del objeto COM del generador de perfiles. Crea una instancia del objeto COM del generador de perfiles y, después, llama al generador de perfiles cuando se producen varios eventos.  
@@ -35,7 +35,7 @@ ms.locfileid: "58149619"
  El motor de lenguaje implementa [IActiveScriptProfilerControl (Interfaz)](../winscript/reference/iactivescriptprofilercontrol-interface.md).  
   
 > [!NOTE]
->  El entorno de ejecución del lenguaje [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] verifica la variable de entorno JS_PROFILER en creación para determinar si se debe habilitar la generación de perfiles. Si esta variable se establece en el CLSID del generador de perfiles, el entorno de ejecución del lenguaje crea una instancia del objeto COM del generador de perfiles mediante el valor de la variable para determinar qué generador de perfiles se debe crear.  
+> El entorno de ejecución del lenguaje [!INCLUDE[javascript](../javascript/includes/javascript-md.md)] verifica la variable de entorno JS_PROFILER en creación para determinar si se debe habilitar la generación de perfiles. Si esta variable se establece en el CLSID del generador de perfiles, el entorno de ejecución del lenguaje crea una instancia del objeto COM del generador de perfiles mediante el valor de la variable para determinar qué generador de perfiles se debe crear.  
   
 ## <a name="host"></a>administrador de flujos de trabajo  
  El host crea el motor de lenguaje y le proporciona los scripts que se deben ejecutar. Un host inteligente también proporciona al documento el contexto que un depurador o un generador de perfiles puede utilizar para ofrecerle mejor información cuando esté depurando o generando perfiles.  

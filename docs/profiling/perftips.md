@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b924cb02f46a0857c21903bed9200ed4ef79b6db
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0713ae13038991ec65dcbebe350c9085f7d6a94a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640862"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62797945"
 ---
 # <a name="perftips"></a>Sugerencias de rendimiento
 Los *PerfTips* del depurador de Visual Studio y las **Herramientas de diagnóstico** integradas del depurador le ayudan a supervisar y analizar el rendimiento de la aplicación durante la depuración.
@@ -32,27 +32,27 @@ Los *PerfTips* del depurador de Visual Studio y las **Herramientas de diagnósti
 
  ![DiagnosticTools Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")
 
--   La escala de tiempo **Eventos de interrupción** marca los puntos de interrupción que se alcanzaron en la sesión de depuración. Haga clic en un evento para seleccionarlo en la lista de detalles del **Depurador** .
+- La escala de tiempo **Eventos de interrupción** marca los puntos de interrupción que se alcanzaron en la sesión de depuración. Haga clic en un evento para seleccionarlo en la lista de detalles del **Depurador** .
 
--   El gráfico **Uso de CPU** muestra el cambio en el uso de CPU en todos los núcleos de procesador en la sesión de depuración.
+- El gráfico **Uso de CPU** muestra el cambio en el uso de CPU en todos los núcleos de procesador en la sesión de depuración.
 
--   La lista **Eventos** del panel de detalles **Depurador** incluye elementos para cada evento de interrupción.
+- La lista **Eventos** del panel de detalles **Depurador** incluye elementos para cada evento de interrupción.
 
--   La columna **Duración** de un evento de interrupción muestra el tiempo transcurrido entre el evento y el punto de interrupción anterior.
+- La columna **Duración** de un evento de interrupción muestra el tiempo transcurrido entre el evento y el punto de interrupción anterior.
 
 ## <a name="turn-perftips-on-or-off"></a>Activar o desactivar las sugerencias de rendimiento
  Para habilitar o deshabilitar las sugerencias de rendimiento:
 
-1.  En el menú **Depurar** , elija **Opciones**.
+1. En el menú **Depurar** , elija **Opciones**.
 
-2.  Active o desactive **Mostrar la sugerencia de rendimiento transcurrida durante la depuración**.
+2. Active o desactive **Mostrar la sugerencia de rendimiento transcurrida durante la depuración**.
 
 ## <a name="turn-the-diagnostic-tools-window-on-or-off"></a>Activar o desactivar la ventana Herramientas de diagnóstico
  Para habilitar o deshabilitar la ventana Herramientas de diagnóstico:
 
-1.  En el menú **Depurar** , elija **Opciones**.
+1. En el menú **Depurar** , elija **Opciones**.
 
-2.  Active o desactive **Habilitar herramientas de diagnóstico durante la depuración**.
+2. Active o desactive **Habilitar herramientas de diagnóstico durante la depuración**.
 
 ## <a name="see-also"></a>Vea también
 - [Generación de perfiles en Visual Studio](../profiling/index.md)

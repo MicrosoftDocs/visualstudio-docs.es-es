@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: abe8be0804877b4836a766f2c4fec37321534b5f
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 342d3288d647018af7faf42ab3e669bb8a62594f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318594"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62793162"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Características de accesibilidad de Visual Studio
 
@@ -26,15 +26,15 @@ ms.locfileid: "56318594"
 
 Además de las características y utilidades de accesibilidad de Windows, las características siguientes hacen que Visual Studio sea más accesible para personas con discapacidades:
 
--   Botón de barra de herramientas y ampliación de texto
+- Botón de barra de herramientas y ampliación de texto
 
--   Opciones de tamaño de texto en los editores
+- Opciones de tamaño de texto en los editores
 
--   Personalización de colores en los editores
+- Personalización de colores en los editores
 
--   Personalización de métodos abreviados de teclado
+- Personalización de métodos abreviados de teclado
 
--   Función Autocompletar para métodos y parámetros
+- Función Autocompletar para métodos y parámetros
 
 > [!NOTE]
 > Este tema se aplica a Visual Studio para Windows. En el caso de Visual Studio para Mac, vea [Accesibilidad de Visual Studio para Mac](/visualstudio/mac/accessibility).
@@ -44,15 +44,15 @@ Además de las características y utilidades de accesibilidad de Windows, las ca
 
 Para obtener más información, vea los temas siguientes:
 
--   [Cómo: Establecer opciones de accesibilidad del IDE](../../ide/reference/how-to-set-ide-accessibility-options.md)
+- [Cómo: Establecer opciones de accesibilidad del IDE](../../ide/reference/how-to-set-ide-accessibility-options.md)
 
--   [Cómo: Uso exclusivo del teclado](../../ide/reference/how-to-use-the-keyboard-exclusively.md)
+- [Cómo: Uso exclusivo del teclado](../../ide/reference/how-to-use-the-keyboard-exclusively.md)
 
--   [Métodos abreviados de teclado predeterminados](../../ide/default-keyboard-shortcuts-in-visual-studio.md)
+- [Métodos abreviados de teclado predeterminados](../../ide/default-keyboard-shortcuts-in-visual-studio.md)
 
--   [Sugerencias y trucos de accesibilidad](../../ide/reference/accessibility-tips-and-tricks.md)
+- [Sugerencias y trucos de accesibilidad](../../ide/reference/accessibility-tips-and-tricks.md)
 
--   [Cómo: Cambiar las fuentes y los colores](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+- [Cómo: Cambiar las fuentes y los colores](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
 
 ## <a name="see-also"></a>Vea también
 

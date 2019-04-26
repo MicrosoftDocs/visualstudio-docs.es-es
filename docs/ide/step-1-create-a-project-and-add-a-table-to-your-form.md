@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f1c651c27fac6036aa2abcbd3e86b5f46cc9f02
-ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
+ms.openlocfilehash: 0bac96a61a5c071a01f1584911ba41cd84e87da7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58647497"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979567"
 ---
 # <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>Paso 1: Crear un proyecto y agregar una tabla a un formulario
 
@@ -47,9 +47,9 @@ El primer paso para crear un juego de formar parejas es crear el proyecto y agre
 
 4. En la ventana **Propiedades**, defina las propiedades del formulario siguientes.
 
-   1.  Cambie la propiedad **Text** del formulario de **Form1** a **Matching Game**. Este texto aparece en la parte superior de la ventana de juego.
+   1. Cambie la propiedad **Text** del formulario de **Form1** a **Matching Game**. Este texto aparece en la parte superior de la ventana de juego.
 
-   2.  Establezca el tamaño del formulario en 550 píxeles de ancho por 550 píxeles de alto. Puede realizar esta operación estableciendo la propiedad **Tamaño** en **550, 550** o arrastrando la esquina del formulario hasta que vea el tamaño correcto en la esquina inferior derecha del entorno de desarrollo integrado (IDE).
+   2. Establezca el tamaño del formulario en 550 píxeles de ancho por 550 píxeles de alto. Puede realizar esta operación estableciendo la propiedad **Tamaño** en **550, 550** o arrastrando la esquina del formulario hasta que vea el tamaño correcto en la esquina inferior derecha del entorno de desarrollo integrado (IDE).
 
 5. Muestre el cuadro de herramientas pulsando la pestaña **Cuadro de herramientas** en el lado izquierdo del IDE.
 
@@ -76,19 +76,19 @@ El primer paso para crear un juego de formar parejas es crear el proyecto y agre
 
     Con el control TableLayoutPanel seleccionado, abra el cuadro de herramientas y agregue un control <xref:System.Windows.Forms.Label> (situado en la categoría **Controles comunes**) a la celda superior izquierda de TableLayoutPanel. Ahora, el control Label debería estar seleccionado en el IDE. Establezca las siguientes propiedades para el control.
 
-   1.  Asegúrese de que la propiedad **BackColor** de la etiqueta esté establecida en **CornflowerBlue**.
+   1. Asegúrese de que la propiedad **BackColor** de la etiqueta esté establecida en **CornflowerBlue**.
 
-   2.  Establezca la propiedad **AutoSize** en **False**.
+   2. Establezca la propiedad **AutoSize** en **False**.
 
-   3.  Establezca la propiedad **Dock** en **Fill**.
+   3. Establezca la propiedad **Dock** en **Fill**.
 
-   4.  Establezca la propiedad **TextAlign** en **MiddleCenter** pulsando el botón de lista desplegable que se encuentra al lado de la propiedad y pulsando el botón central. De esta forma, se asegurará de que el icono aparezca en el centro de la celda.
+   4. Establezca la propiedad **TextAlign** en **MiddleCenter** pulsando el botón de lista desplegable que se encuentra al lado de la propiedad y pulsando el botón central. De esta forma, se asegurará de que el icono aparezca en el centro de la celda.
 
-   5.  Pulse la propiedad **Font**. Debe aparecer un botón de puntos suspensivos (**…**).
+   5. Pulse la propiedad **Font**. Debe aparecer un botón de puntos suspensivos (**…**).
 
-   6.  Pulse el botón de puntos suspensivos y establezca el valor de **Fuente** en **Webdings**, **Estilo de fuente** en **Negrita** y **Tamaño** en **48**.
+   6. Pulse el botón de puntos suspensivos y establezca el valor de **Fuente** en **Webdings**, **Estilo de fuente** en **Negrita** y **Tamaño** en **48**.
 
-   7.  Establezca la propiedad **Text** de la etiqueta en la letra **c**.
+   7. Establezca la propiedad **Text** de la etiqueta en la letra **c**.
 
         La celda superior izquierda de TableLayoutPanel debería contener ahora un cuadro negro centrado sobre un fondo azul.
 
@@ -106,6 +106,6 @@ El primer paso para crear un juego de formar parejas es crear el proyecto y agre
 
 ## <a name="to-continue-or-review"></a>Para continuar o revisar
 
--   Para ir al siguiente paso del tutorial, vea [Paso 2: Agregar un objeto aleatorio y una lista de iconos](../ide/step-2-add-a-random-object-and-a-list-of-icons.md).
+- Para ir al siguiente paso del tutorial, vea [Paso 2: Agregar un objeto aleatorio y una lista de iconos](../ide/step-2-add-a-random-object-and-a-list-of-icons.md).
 
--   Para volver al tema de información general, vea [Tutorial 3: Crear un juego de formar parejas](../ide/tutorial-3-create-a-matching-game.md).
+- Para volver al tema de información general, vea [Tutorial 3: Crear un juego de formar parejas](../ide/tutorial-3-create-a-matching-game.md).

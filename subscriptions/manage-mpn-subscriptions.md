@@ -7,12 +7,12 @@ ms.date: 12/11/2017
 ms.topic: conceptual
 description: Cómo asignar las suscripciones de Visual Studio a los usuarios finales, para partners MPN.
 searchscope: VS Subscription
-ms.openlocfilehash: 9b9d7aa6095b6d5147482b139fdfe43378ad346c
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 8a0a0f3b6b093c023a8a0129c34d16aa75fffdaf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842488"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412399"
 ---
 # <a name="managing-visual-studio-subscriptions-offered-through-the-microsoft-partner-network-mpn"></a>Administrar las suscripciones de Visual Studio ofrecidas a través de Microsoft Partner Network (MPN)
 
@@ -42,7 +42,6 @@ Suscriptor de Microsoft Action Pack y suscripciones de Visual Studio
     - Correo electrónico del contacto
 13. El inicio de sesión ahora está completo, y el suscriptor debe tener acceso a los beneficios
 
-
 ### <a name="competency-partners"></a>Socios de la competencia
 1. Seleccionar **Requisitos y activos**
 2. Seleccionar **Privilegios**
@@ -66,7 +65,7 @@ Suscriptor de Microsoft Action Pack y suscripciones de Visual Studio
 
 > [!NOTE]
 > Se requiere el rol Contacto técnico para las suscripciones de Visual Studio.
->     - Pág. 8: Assigning Visual Studio subscriptions for Competency Partners (Asignación de suscripciones de Visual Studio a asociados de la competencia)
+> - Pág. 8: Assigning Visual Studio subscriptions for Competency Partners (Asignación de suscripciones de Visual Studio a asociados de la competencia)
 
 ## <a name="need-help"></a>¿Necesita ayuda?
 Los suscriptores y los administradores de programas deben trabajar directamente con el equipo de soporte técnico de Microsoft Partner Network para resolver los problemas de acceso a las suscripciones por parte de los suscriptores. Visite la página de [soporte técnico para socios](https://partner.microsoft.com/support) para obtener ayuda (Se necesitan sus credenciales de inicio de sesión de MPN).

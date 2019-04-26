@@ -10,11 +10,11 @@ ms.workload:
 - multiple
 monikerRange: vs-2017
 ms.openlocfilehash: 718ef14fda76df87dc4627dc518e993058896471
-ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/15/2019
-ms.locfileid: "59584303"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62777989"
 ---
 # <a name="whats-new-in-msbuild-15"></a>Novedades de MSBuild 15
 

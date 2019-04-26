@@ -7,17 +7,16 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Vea cómo activar la suscripción de Parasoft Virtualize/SOA Test Professional que se incluye con la suscripción de Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 89b079f9f797db58eb0afc887a70cdc78c48d886
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: c5b17bd0509ebca05f49ec5a411ea632676e6342
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56844118"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62947329"
 ---
 # <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Parasoft Virtualize/SOAtest Professional Desktop en suscripciones de Visual Studio
 
 Realice pruebas antes y más a menudo.  Simule y pruebe el comportamiento de aplicaciones y sistemas en proceso de desarrollo no disponibles.  La ventaja incluye una suscripción gratuita de seis meses.  Una vez transcurridos los seis meses de la suscripción, tendrá derecho a un descuento del 25 % sobre el precio de una suscripción anual.
-
 
 ## <a name="activation-steps"></a>Pasos para la activación
 
@@ -30,7 +29,6 @@ Realice pruebas antes y más a menudo.  Simule y pruebe el comportamiento de apl
 3. Se le redirigirá al sitio web de Parasoft, donde podrá crear una cuenta.  Simplemente especifique su información de contacto y haga clic en **Enviar**.
    > [!div class="mx-imgBorder"]
    > ![Creación de cuenta de la ventaja Parasoft](_img/vs-parasoft/vs-parasoft-account-cropped.png)
-
 
 4. Cuando haya creado la cuenta, verá una notificación en la que se le indicará que se le ha enviado un correo electrónico con las instrucciones de descarga.  (Recuerde comprobar las carpetas de spam o de correo no deseado si no ve el correo electrónico en la Bandeja de entrada).
 
@@ -83,14 +81,12 @@ Realice pruebas antes y más a menudo.  Simule y pruebe el comportamiento de apl
 
 <sup>1</sup>  *Incluye: Microsoft Partner Network (Enterprise).  Excluye:  No para reventa (NFR), Visual Studio Industry Partner (VSIP), FTE, MCT Software & Services Developer, BizSpark, Imagine, Most Valuable Professional (MVP), Regional Director (RD).  MCT Software & Services.*
 
-
 > [!NOTE]
 > Microsoft ya no ofrece suscripciones anuales ni de Visual Studio Professional ni de Visual Studio Enterprise en las suscripciones de nube. Esto no supone cambio alguno en la experiencia actual de los clientes y ni en su capacidad para renovar, aumentar, reducir o cancelar las suscripciones. Conviene que los clientes nuevos vayan a [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) para explorar las diferentes opciones de compra de Visual Studio.
 
-
 ## <a name="support-resources"></a>Recursos de soporte técnico
--  ¿Necesita ayuda con los productos de Parasoft?  Consulte estos recursos:
+- ¿Necesita ayuda con los productos de Parasoft?  Consulte estos recursos:
     - Soporte técnico: https://www.parasoft.com/support/
     - Centro de recursos de Parasoft: https://www.parasoft.com/resources/
--  Para obtener ayuda con las ventas, las suscripciones, las cuentas y la facturación para suscripciones de Visual Studio, póngase en contacto con el [soporte para suscripciones](https://visualstudio.microsoft.com/subscriptions/support/) de Visual Studio.
--  ¿Tiene alguna pregunta sobre el IDE de Visual Studio, Azure DevOps Services u otros productos o servicios de Visual Studio?  Visite el [soporte técnico de Visual Studio](https://visualstudio.microsoft.com/support/).
+- Para obtener ayuda con las ventas, las suscripciones, las cuentas y la facturación para suscripciones de Visual Studio, póngase en contacto con el [soporte para suscripciones](https://visualstudio.microsoft.com/subscriptions/support/) de Visual Studio.
+- ¿Tiene alguna pregunta sobre el IDE de Visual Studio, Azure DevOps Services u otros productos o servicios de Visual Studio?  Visite el [soporte técnico de Visual Studio](https://visualstudio.microsoft.com/support/).

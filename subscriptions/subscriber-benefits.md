@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: Obtenga información sobre las ventajas incluidas en su suscripción de Visual Studio
 searchscope: VS Subscription
 ms.openlocfilehash: c7616bc468aad5b4753fb3a05652f976bae6299b
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56839713"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62427798"
 ---
 # <a name="benefits-included-in-your-visual-studio-subscription"></a>Ventajas incluidas en su suscripción de Visual Studio
 
@@ -32,7 +32,7 @@ Para ayudarle a mejorar de forma continua sus habilidades y a mantenerse al día
 - Diseño de soluciones de base de datos para SQL Server de Microsoft Virtual Academy
 - LinkedIn Learning permite el acceso a personas, información y conocimientos que necesita para sobresalir.
 
-## <a name="support"></a>Compatibilidad
+## <a name="support"></a>Soporte técnico
 Como suscriptor de Visual Studio, también tendrá acceso a diversos tipos de soporte técnico en caso de que tenga alguna pregunta o necesite asistencia técnica.
 - Las suscripciones pagadas incluyen el acceso a incidentes de soporte técnico profesional para resolver problemas con herramientas y aplicaciones que se ejecutan en entornos de desarrollo o prueba.
 - ¿Necesita información de producto o documentación técnica?  Obtenga ayuda inmediata del servicio de Chat de soporte técnico.

@@ -8,24 +8,24 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c79f70129a21ab28c653ecfbef5e00a8050d9b0
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 6a310a1b92d5e4558e097cf82501960bf6a9a535
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323470"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62824712"
 ---
 # <a name="command-line-arguments-for-the-help-content-manager"></a>Argumentos de línea de comandos para Help Content Manager
 
 Se puede especificar cómo implementar y administrar el contenido de la Ayuda local mediante los argumentos de la línea de comandos de Help Content Manager (*HlpCtntMgr.exe*). Los scripts de esta herramienta de la línea de comandos se deben ejecutar con permisos de administrador y no se pueden ejecutar como servicio. Con esta herramienta se pueden realizar las siguientes tareas:
 
--   Agregar o actualizar el contenido de la Ayuda local desde un disco o desde la nube.
+- Agregar o actualizar el contenido de la Ayuda local desde un disco o desde la nube.
 
--   Quitar el contenido de Ayuda local.
+- Quitar el contenido de Ayuda local.
 
--   Mover el almacén de contenido de Ayuda local.
+- Mover el almacén de contenido de Ayuda local.
 
--   Agregar, actualizar, quitar o mover el contenido de Ayuda local de forma silenciosa.
+- Agregar, actualizar, quitar o mover el contenido de Ayuda local de forma silenciosa.
 
 Sintaxis:
 

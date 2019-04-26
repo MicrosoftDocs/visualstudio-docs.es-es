@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ca207f06640d5ef2df02d966b733d3065c80fce6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939010"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975693"
 ---
 # <a name="microsoft-help-viewer"></a>Visor de Ayuda de Microsoft
 
@@ -73,7 +73,7 @@ La lista de contenido muestra qué libros puede instalar o ya instaló, si hay d
 > [!NOTE]
 > La funcionalidad de la pestaña **Administrar contenido** puede diferir si el administrador del Visor de Ayuda desactiva estas características o si no tiene acceso a Internet.
 
-### <a name="toolbar-buttons"></a>Botones de barra de herramientas
+### <a name="toolbar-buttons"></a>Botones de la barra de herramientas
 
 La barra de herramientas de la ventana **Visor de Ayuda** contiene los siguientes botones:
 

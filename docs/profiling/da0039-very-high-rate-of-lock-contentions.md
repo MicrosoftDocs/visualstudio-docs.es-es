@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ebc8e008152936da9d1d8fee86e99e54d15ce09c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f441cb5e6f8febf374a9ea024db9bec95960e11b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639029"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444863"
 ---
 # <a name="da0039-very-high-rate-of-lock-contentions"></a>DA0039: Frecuencia muy alta de contenciones de bloqueo
 
@@ -46,7 +46,7 @@ ms.locfileid: "56639029"
  Esta regla se desencadena cuando las mediciones tomadas durante una generación de perfiles indican que hay una cantidad excesivamente alta de contención de bloqueo. Las contenciones de bloqueo retrasan la ejecución de subprocesos que están esperando para adquirir el bloqueo. Deberían investigarse incluso las cantidades bastante pequeñas de contención de bloqueo en pruebas unitarias o en pruebas de carga que se ejecuten en hardware de gama baja.
 
 > [!NOTE]
->  Cuando la frecuencia de contenciones de bloqueo notificadas en los datos de generación de perfiles es considerable pero no excesiva, se desencadena el mensaje informativo [DA0038: Frecuencia alta de contenciones de bloqueo](../profiling/da0038-high-rate-of-lock-contentions.md) en lugar de este mensaje de advertencia.
+> Cuando la frecuencia de contenciones de bloqueo notificadas en los datos de generación de perfiles es considerable pero no excesiva, se desencadena el mensaje informativo [DA0038: Frecuencia alta de contenciones de bloqueo](../profiling/da0038-high-rate-of-lock-contentions.md) en lugar de este mensaje de advertencia.
 
 ## <a name="how-to-investigate-a-warning"></a>Cómo investigar una advertencia
  Haga doble clic en el mensaje para navegar a la vista [Marcas](../profiling/marks-view.md) de los datos de generación de perfiles.  Busque la columna **LocksAndThreads de .NET CLR\Tasa de contención por segundo**. Determine si hay fases concretas de ejecución del programa en que la contención de bloqueo sea mayor que en otras.

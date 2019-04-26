@@ -6,11 +6,11 @@ description: Explore la familia de productos de Visual Studio.
 ms.topic: landing-page
 searchScope: []
 ms.openlocfilehash: 77d03ae304886be2e6c588ccea1c6e8be97efb15
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59017997"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62777455"
 ---
 <!-- markdownlint-disable MD033 -->
 <div id="main" class="v2">

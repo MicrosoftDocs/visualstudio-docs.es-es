@@ -8,30 +8,30 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3985d8a11118097a4d1d97b95340702d1ed23209
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 60770dfa64c1a648d2a7ae56b38d66fe39e46183
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56642786"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445736"
 ---
 # <a name="msbuild-multitargeting-overview"></a>Introducción a la compatibilidad con múltiples versiones (multi-targeting) de MSBuild
 Con MSBuild, puede compilar una aplicación para que se ejecute en cualquiera de las versiones de .NET Framework, y en cualquiera de las plataformas del sistema. Por ejemplo, puede compilar una aplicación para que se ejecute en .NET Framework 2.0 en una plataforma de 32 bits y compilar esa misma aplicación para que se ejecute en .NET Framework 4.5 en una plataforma de 64 bits.
 
 > [!IMPORTANT]
->  A pesar del nombre "compatibilidad con múltiples versiones", un proyecto solo puede tener como destino una versión de Framework y una plataforma al mismo tiempo.
+> A pesar del nombre "compatibilidad con múltiples versiones", un proyecto solo puede tener como destino una versión de Framework y una plataforma al mismo tiempo.
 
  Estas son algunas de las características de los destinos de MSBuild:
 
--   Puede desarrollar una aplicación que tenga como destino una versión anterior de .NET Framework, por ejemplo, las versiones 2.0, 3.5 o 4.
+- Puede desarrollar una aplicación que tenga como destino una versión anterior de .NET Framework, por ejemplo, las versiones 2.0, 3.5 o 4.
 
--   Puede tener como destino un marco distinto de .NET Framework, por ejemplo, Silverlight.
+- Puede tener como destino un marco distinto de .NET Framework, por ejemplo, Silverlight.
 
--   Puede tener como destino un *perfil de Framework*, que es un subconjunto predefinido de un marco de trabajo de destino.
+- Puede tener como destino un *perfil de Framework*, que es un subconjunto predefinido de un marco de trabajo de destino.
 
--   Si se publica algún Service Pack para la versión actual de .NET Framework, podría utilizarlo como destino.
+- Si se publica algún Service Pack para la versión actual de .NET Framework, podría utilizarlo como destino.
 
--   La compatibilidad con múltiples versiones de MSBuild garantiza que una aplicación utilice solo la funcionalidad que está disponible en el marco y plataforma de destino.
+- La compatibilidad con múltiples versiones de MSBuild garantiza que una aplicación utilice solo la funcionalidad que está disponible en el marco y plataforma de destino.
 
 ## <a name="target-framework-and-platform"></a>Marco y plataforma de destino
  Una *plataforma de destino* es la versión de .NET Framework para la que se compila un proyecto, y una *plataforma de destino* es la plataforma del sistema para la que se compila el proyecto.  Por ejemplo, puede que desee diseñar una aplicación de .NET Framework 2.0 para que se ejecute en una plataforma de 32 bits compatible con la familia de procesadores 802x86 (x86). La combinación de la plataforma de destino y la plataforma de destino se denomina *contexto de destino*. Para obtener más información, vea [Versión de .NET Framework de destino y plataforma de destino](../msbuild/msbuild-target-framework-and-target-platform.md).

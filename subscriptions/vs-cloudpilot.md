@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Obtenga información sobre la ventaja de CloudPilot disponible en las suscripciones de Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 5368bc386b7ee4ff1fa709fcc038ddb7a7a0c13d
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: f251073337c862e0d96fb3550b163da29ce8f42e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842564"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62948426"
 ---
 # <a name="the-cloudpilot-benefit-in-visual-studio-subscriptions"></a>Ventaja de CloudPilot para suscripciones de Visual Studio
 
@@ -44,18 +44,17 @@ CloudPilot, de UnifyCloud, está diseñado para ayudar a los desarrolladores a t
    > [!NOTE]
    > Las activaciones de la ventaja de CloudPilot están limitadas a diez por organización, que se canjean a partir de cualquier combinación de suscripciones de Visual Studio Enterprise o Visual Studio Professional.  Si ya se han consumido las diez activaciones de su organización, no podrá activar la ventaja de CloudPilot y recibirá un correo electrónico de UnifyCloud con información más detallada.
 
- 0. A continuación, verá una página de producto diseñada para familiarizarse con CloudPilot.  Haga clic en **Navegar a CloudPilot**, en la esquina superior derecha, para ir al portal de CloudPilot.
+0. A continuación, verá una página de producto diseñada para familiarizarse con CloudPilot.  Haga clic en **Navegar a CloudPilot**, en la esquina superior derecha, para ir al portal de CloudPilot.
 
     > [!div class="mx-imgBorder"]
     > ![Página del producto de CloudPilot](_img/vs-cloudpilot/vs-cloudpilot-navigate.png)
 
-0.  Ya está.  Podrá ver el portal de CloudPilot y empezar a usar su suscripción de CloudPilot, así como transferir sus aplicaciones a Microsoft Azure.
+0. Ya está.  Podrá ver el portal de CloudPilot y empezar a usar su suscripción de CloudPilot, así como transferir sus aplicaciones a Microsoft Azure.
 
-0.  Una vez que la cuenta se haya creado correctamente, recibirá un correo electrónico del equipo de soporte técnico de UnifyCloud VSS para confirmar la creación correcta de su cuenta.
+0. Una vez que la cuenta se haya creado correctamente, recibirá un correo electrónico del equipo de soporte técnico de UnifyCloud VSS para confirmar la creación correcta de su cuenta.
 
     > [!div class="mx-imgBorder"]
     > ![Correo electrónico de confirmación de CloudPilot](_img/vs-cloudpilot/vs-cloudpilot-email.png)
-
 
 ## <a name="eligibility"></a>Elegibilidad
 
@@ -69,25 +68,21 @@ CloudPilot, de UnifyCloud, está diseñado para ayudar a los desarrolladores a t
 | Visual Studio Enterprise (estándar)  | NFR<sup>1</sup> |No disponible  | N/D |
 | Visual Studio Enterprise, Visual Studio Professional (de nube mensual) | Azure | No disponible | N/D |
 
-
-
 <sup>1</sup>  *Incluye:  No para reventa (NFR), FTE, Most Valuable Professional (MVP), Regional Director (RD), Microsoft Partner Network (MPN), Visual Studio Industry Partner (VSIP), Microsoft Certified Trainer, BizSpark, Imagine*
-
 
 > [!NOTE]
 > Microsoft ya no ofrece suscripciones anuales ni de Visual Studio Professional ni de Visual Studio Enterprise en las suscripciones de nube. Esto no supone cambio alguno en la experiencia actual de los clientes y ni en su capacidad para renovar, aumentar, reducir o cancelar las suscripciones. Conviene que los clientes nuevos vayan a [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) para explorar las diferentes opciones de compra de Visual Studio.
 
-
 ¿No sabe con seguridad qué suscripción usa?  Conéctese a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas las suscripciones asignadas a su dirección de correo electrónico. Si no ve todas las suscripciones, es posible que haya una o varias asignadas a una dirección de correo electrónico diferente.  Debe iniciar sesión con esa dirección de correo electrónico para ver esas suscripciones.
 
 ## <a name="support-resources"></a>Recursos de soporte técnico
--  ¿Necesita ayuda con el uso de CloudPilot?  Consulte estos recursos:
+- ¿Necesita ayuda con el uso de CloudPilot?  Consulte estos recursos:
     - Para consultas sobre productos UnifyCloud, [póngase en contacto con UnifyCloud](https://www.unifycloud.com/contacts/).
     - [Manual del usuario de CloudPilot](https://www.cloudatlasinc.com/cloudpilot/doc/CloudPilot-User-Manual.pdf )
     - [Enviar una solicitud de soporte técnico](https://support.datacamp.com/hc/requests/new)
 
--  Para obtener ayuda con las ventas, las suscripciones, las cuentas y la facturación para suscripciones de Visual Studio, póngase en contacto con el [soporte para suscripciones](https://visualstudio.microsoft.com/subscriptions/support/) de Visual Studio.
--  ¿Tiene alguna pregunta sobre el IDE de Visual Studio, Azure DevOps Services u otros productos o servicios de Visual Studio?  Visite el [soporte técnico de Visual Studio](https://visualstudio.microsoft.com/support/).
+- Para obtener ayuda con las ventas, las suscripciones, las cuentas y la facturación para suscripciones de Visual Studio, póngase en contacto con el [soporte para suscripciones](https://visualstudio.microsoft.com/subscriptions/support/) de Visual Studio.
+- ¿Tiene alguna pregunta sobre el IDE de Visual Studio, Azure DevOps Services u otros productos o servicios de Visual Studio?  Visite el [soporte técnico de Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="next-steps"></a>Pasos siguientes
 

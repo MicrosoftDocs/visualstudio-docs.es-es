@@ -12,11 +12,11 @@ manager: wpickett
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 9f4705b6326a3a2968084ecbd1bd385954528017
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924102"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62817770"
 ---
 # <a name="options-text-editor-cc-view"></a>Opciones, editor de texto, C/C++ y visualización
 

@@ -1,27 +1,31 @@
 ---
 title: Publish-WebApplicationVM | Microsoft Docs
 description: Obtenga información para implementar una aplicación web en una máquina virtual. Este script crea los recursos necesarios en su suscripción de Azure si no existen.
+services: visual-studio-online
 author: ghogen
-manager: jillfra
+manager: douge
 assetId: de4cec95-f73f-44d9-babd-9f47f2633cdb
+ms.prod: visual-studio-dev15
+ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
-ms.date: 11/11/2016
-ms.author: ghogen
+origin.date: 11/11/2016
+ms.date: 09/10/2018
+ms.author: v-junlch
 ms.openlocfilehash: 8b4b7a05de87ab8b70046b51fe9f256f05d3aee5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948071"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62572290"
 ---
 # <a name="publish-webapplicationvm-windows-powershell-script"></a>Publish-WebApplicationVM (script de Windows PowerShell)
 Implementa una aplicación web en una máquina virtual. El script crea los recursos necesarios en su suscripción de Azure si no existen.
 
 ```
 Publish-WebApplicationVM
-–Configuration <configuration>
+-Configuration <configuration>
 -SubscriptionName <subscriptionName>
 -WebDeployPackage <packageName>
 -VMPassword @{Name = "name"; Password = "password")
@@ -118,7 +122,7 @@ El archivo de configuración JSON especifica los detalles de lo que va a impleme
         "cloudService": {
             "name": "myvmname",
             "affinityGroup": "",
-            "location": "West US",
+            "location": "China North",
             "virtualNetwork": "",
             "subnet": "",
             "availabilitySet": "",
@@ -180,3 +184,6 @@ El archivo de configuración JSON especifica los detalles de lo que va a impleme
 ```
 
 Puede editar el archivo de configuración de JSON para cambiar lo que se aprovisiona. Se necesitan una máquina virtual y un servicio en la nube, pero la sección de la base de datos es opcional.
+
+
+<!-- Update_Description: update metedata properties -->

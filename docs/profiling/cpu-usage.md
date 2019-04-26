@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4843f1e49e705e42a58afa8a882018463ce46f7b
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.openlocfilehash: 351247f50560896d53267fcf8d7f4a66a81b9461
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366762"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62553626"
 ---
 # <a name="analyze-cpu-usage"></a>Analizar el uso de CPU
 
@@ -31,7 +31,7 @@ Por lo general, el equipo local replica mejor la ejecución de aplicaciones inst
 >[!NOTE]
 >Se requiere Windows 7 o posterior para usar el [Generador de perfiles de rendimiento](../profiling/profiling-feature-tour.md).
 
-##  <a name="collect-cpu-usage-data"></a>Recopilar datos de Uso de CPU
+## <a name="collect-cpu-usage-data"></a>Recopilar datos de Uso de CPU
 
 1. En el proyecto de Visual Studio, establezca la configuración de soluciones en **Versión** y elija **Equipo local** como el destino de implementación.
 
@@ -51,7 +51,6 @@ Por lo general, el equipo local replica mejor la ejecución de aplicaciones inst
 
    ![Informe de uso de CPU](../profiling/media/cpu_use_wt_report.png "CPU Usage report")
 
-
 ## <a name="analyze-the-cpu-usage-report"></a>Analizar el informe de Uso de CPU
 
 El informe de diagnóstico se ordena por el **Total de CPU**, de mayor a menor. Puede cambiar el criterio de ordenación o la columna de ordenación seleccionando los encabezados de columna. Use la lista desplegable **Filtro** para seleccionar o anular la selección de subprocesos para mostrar, y use el cuadro **Búsqueda** para buscar un subproceso o un nodo concreto.
@@ -60,19 +59,19 @@ El informe de diagnóstico se ordena por el **Total de CPU**, de mayor a menor. 
 A partir de Visual Studio 2019, puede hacer clic en los botones **Expandir ruta de acceso activa** y **Mostrar ruta de acceso activa** para ver las llamadas de función que usan el porcentaje más alto de CPU en la vista de árbol de las llamadas.
 ::: moniker-end
 
-###  <a name="BKMK_Call_tree_data_columns"></a> Columnas de datos de uso de CPU
+### <a name="BKMK_Call_tree_data_columns"></a> Columnas de datos de uso de CPU
 
 |||
 |-|-|
 |**Total de CPU [unidad, porcentaje]**|![% total de ecuación de datos](../profiling/media/cpu_use_wt_totalpercentequation.png "CPU_USE_WT_TotalPercentEquation")<br /><br /> Los milisegundos y el porcentaje de CPU que usaron las llamadas a la función y las funciones llamadas por la función en el intervalo de tiempo seleccionado. Esto no es lo mismo que el gráfico de línea cronológica **Utilización de CPU**, que compara la actividad total de CPU en un intervalo de tiempo con el total de CPU disponible.|
 |**CPU propia [unidad, porcentaje]**|![% de autoecuación](../profiling/media/cpu_use_wt_selflpercentequation.png "CPU_USE_WT_SelflPercentEquation")<br /><br /> Los milisegundos y el porcentaje de CPU que usaron las llamadas a la función en el intervalo de tiempo seleccionado, sin incluir las funciones llamadas por la función.|
-|**Module**|El nombre del módulo que contiene la función.
+|**Módulo**|El nombre del módulo que contiene la función.
 
-###  <a name="BKMK_The_CPU_Usage_call_tree"></a> Árbol de llamadas de Uso de CPU
+### <a name="BKMK_The_CPU_Usage_call_tree"></a> Árbol de llamadas de Uso de CPU
 
 Para ver el árbol de llamadas, seleccione el nodo primario en el informe. La página **Uso de CPU** se abre para la vista **Llamador y destinatario**. En la lista desplegable **Vista actual** seleccione **Árbol de llamadas**.
 
-####  <a name="BKMK_Call_tree_structure"></a> Estructura del árbol de llamadas
+#### <a name="BKMK_Call_tree_structure"></a> Estructura del árbol de llamadas
 
 ::: moniker range=">=vs-2019"
 ![Estructura del árbol de llamadas](../profiling/media/vs-2019/cpu-use-wt-getmaxnumbercalltree-annotated.png "Call tree structure")
@@ -88,7 +87,7 @@ Para ver el árbol de llamadas, seleccione el nodo primario en el informe. La p�
 |![Paso 3](../profiling/media/procguid_3.png "ProcGuid_3")|Los elementos secundarios del nodo de segundo nivel son los métodos de código de usuario y las rutinas asíncronas llamados o creados por el sistema de segundo nivel y el código de Framework.|
 |![Paso 4](../profiling/media/procguid_4.png "ProcGuid_4")|Los nodos secundarios de un método contienen datos únicamente de las llamadas del método principal. Cuando está deshabilitada la opción **Mostrar código externo** , los métodos de aplicación también pueden contener un nodo **[Código externo]** .|
 
-####  <a name="BKMK_External_Code"></a> Código externo
+#### <a name="BKMK_External_Code"></a> Código externo
 
 Las funciones del sistema y del marco que ejecuta el código se llaman *código externo*. Las funciones de código externo inician y detienen la aplicación, dibujan la interfaz de usuario, controlan los subprocesos y proporcionan otros servicios de bajo nivel a la aplicación. En la mayoría de los casos no le interesará el código externo, por lo que el árbol de llamadas de Uso de CPU reúne las funciones externas de un método de usuario en un nodo **[Código externo]**.
 
@@ -109,7 +108,7 @@ Para encontrar un nombre de función que está buscando, use el cuadro de búsqu
 ![Buscar código externo anidado](../profiling/media/cpu_use_wt_showexternalcodetoowide_found.png "Search for nested external code")
 ::: moniker-end
 
-###  <a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a> Funciones asincrónicas en el árbol de llamadas de Uso de CPU
+### <a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a> Funciones asincrónicas en el árbol de llamadas de Uso de CPU
 
  Cuando el compilador encuentra un método asincrónico, crea una clase oculta para controlar la ejecución del método. Conceptualmente, la clase es una máquina de estados. La clase tiene funciones generadas por el compilador que llaman asincrónicamente a los métodos originales, las devoluciones de llamada, el programador y los iteradores necesarios para ejecutarlos. Cuando un método principal llama al método original, el compilador quita al método del contexto de ejecución del elemento principal y ejecuta los métodos de la clase oculta en el contexto del código del sistema y Framework que controla la ejecución de la aplicación. A menudo, aunque no siempre, los métodos asincrónicos se ejecutan en uno o varios subprocesos diferentes. Este código aparece en el árbol de llamadas de **Uso de CPU** como elementos secundarios del nodo **[Código externo]** que se encuentra justo debajo del nodo superior del árbol.
 

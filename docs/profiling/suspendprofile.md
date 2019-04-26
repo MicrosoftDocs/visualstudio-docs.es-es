@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 85b05c5d6b477fffdb56377fe4a8d13dda6219cc
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614615"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62422996"
 ---
 # <a name="suspendprofile"></a>SuspendProfile
 El método `SuspendProfile` incrementa el contador de suspensiones y reanudaciones para el nivel de generación de perfiles especificado.

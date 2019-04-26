@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: af585d77176e52442d5eee37f3d16fcbafd31ef9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55910810"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62897741"
 ---
 # <a name="constant-nodes"></a>Nodos de constante
 

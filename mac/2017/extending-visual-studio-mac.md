@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 04/14/2017
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
-ms.openlocfilehash: 8212039cd4f83cd9ea2b53a1050f32ed5dbad367
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.openlocfilehash: 3465ef29ca732cd26c03919082052d8b26a83ba1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58568597"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62998197"
 ---
 # <a name="extending-visual-studio-for-mac"></a>Extender Visual Studio para Mac
 
@@ -81,10 +81,10 @@ Las extensiones de comando se definen mediante la adición de entradas al punto 
 
 El nodo de extensión contiene un atributo de ruta de acceso que especifica el punto de extensión al que se conecta, en este caso, `/MonoDevelop/Ide/Commands/Edit`. Además, actúa como nodo primario para el comando. El nodo de comando tiene los atributos siguientes:
 
-*   **id**: especifica el identificador de este comando. Los identificadores de comando deben declararse como miembros de enumeración y se usan para conectar Commands a CommandItems.
-*   **_label**: texto que se mostrará en los menús.
-*   **_description**: texto que se mostrará como una información sobre herramientas para los botones de la barra de herramientas.
-*   **defaultHandler**: especifica la clase `CommandHandler` que activa el comando.
+* **id**: especifica el identificador de este comando. Los identificadores de comando deben declararse como miembros de enumeración y se usan para conectar Commands a CommandItems.
+* **_label**: texto que se mostrará en los menús.
+* **_description**: texto que se mostrará como una información sobre herramientas para los botones de la barra de herramientas.
+* **defaultHandler**: especifica la clase `CommandHandler` que activa el comando.
 
 <!--To invoke the command from the Edit Menu, the walkthrough creates a CommandItem extension that plugs into the `/MonoDevelop/Ide/MainMenu/Edit` extension point:-->
 
@@ -137,27 +137,27 @@ Esto enlaza Command y CommandItem y, cuando en el **menú Edición** se seleccio
 
 Para obtener información sobre el ámbito de las áreas disponibles para el desarrollo, vea [Extension Tree Reference](http://monodevelop.com/Developers/Articles/Extension_Tree_Reference) (Referencia del árbol de extensión) y [API Overview](http://monodevelop.com/Developers/Articles/API_Overview) (Introducción a la API). Al compilar paquetes de extensión avanzados, vea también los [artículos para desarrolladores](http://monodevelop.com/Developers/Articles). A continuación se muestra una lista parcial de las áreas que se pueden personalizar:
 
-*   Paneles
-*   Esquemas de enlace del teclado
-*   Directivas
-*   Formateadores de código
-*   Formatos de archivos de proyecto
-*   Paneles de preferencias
-*   Paneles de opciones
-*   Protocolos del depurador
-*   Visualizadores del depurador
-*   Diseños del área de trabajo
-*   Nodos de árbol del panel de soluciones
-*   Márgenes del editor de código fuente
-*   Motores de prueba unitaria
-*   Generadores de código
-*   Fragmentos de código
-*   Versiones de .NET Framework de destino
-*   Tiempo de ejecución de destino
-*   Back-end de VCS
-*   Refactorización
-*   Controladores de ejecución
-*   Resalte de sintaxis
+* Paneles
+* Esquemas de enlace del teclado
+* Directivas
+* Formateadores de código
+* Formatos de archivos de proyecto
+* Paneles de preferencias
+* Paneles de opciones
+* Protocolos del depurador
+* Visualizadores del depurador
+* Diseños del área de trabajo
+* Nodos de árbol del panel de soluciones
+* Márgenes del editor de código fuente
+* Motores de prueba unitaria
+* Generadores de código
+* Fragmentos de código
+* Versiones de .NET Framework de destino
+* Tiempo de ejecución de destino
+* Back-end de VCS
+* Refactorización
+* Controladores de ejecución
+* Resalte de sintaxis
 
 ## <a name="additional-information"></a>Información adicional
 
