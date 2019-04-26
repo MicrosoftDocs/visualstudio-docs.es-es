@@ -24,12 +24,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c549beaf58e64d8026b3f6bd39a3b69922d6b7f6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: a5ad9c363a590ef692bdcd1d8c00727d55113b97
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097419"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412356"
 ---
 # <a name="install-and-manage-local-content"></a>Instalar y administrar el contenido local
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ Con el Visor de Ayuda de Microsoft, puede agregar, quitar, actualizar y mover el
 1. En la pestaña **Administrar contenido**, pulse el botón de opción **Disco**.  
   
     > [!NOTE]
-    >  La opción **Disco** no estará disponible si el administrador impide modificar el origen de instalación del contenido. Para obtener más información, vea la [Guía del administrador del Visor de Ayuda](../ide/help-viewer-administrator-guide.md).  
+    > La opción **Disco** no estará disponible si el administrador impide modificar el origen de instalación del contenido. Para obtener más información, vea la [Guía del administrador del Visor de Ayuda](../ide/help-viewer-administrator-guide.md).  
   
 2. Realice uno de estos pasos:  
   
@@ -60,7 +60,7 @@ Con el Visor de Ayuda de Microsoft, puede agregar, quitar, actualizar y mover el
  Puede ver temas sin conexión a Internet si descarga e instala el contenido en el equipo local.  
   
 > [!IMPORTANT]
->  Para instalar contenido, debe iniciar sesión con una cuenta que tenga permisos administrativos.  
+> Para instalar contenido, debe iniciar sesión con una cuenta que tenga permisos administrativos.  
   
  Si se establece el IDE de Visual Studio en un idioma distinto del inglés, puede instalar contenido en inglés, el contenido localizado o ambos. En cambio, el contenido no aparecerá si instala solo la versión en inglés y la casilla **Incluir contenido en inglés en todas las pestañas de navegación y solicitudes de F1** en el cuadro de diálogo **Opciones del Visor** está desactivada.  
   
@@ -80,7 +80,7 @@ Con el Visor de Ayuda de Microsoft, puede agregar, quitar, actualizar y mover el
  Puede ahorrar espacio en disco mediante la eliminación de contenido no deseado de su equipo.  
   
 > [!IMPORTANT]
->  Debe tener permisos administrativos para quitar contenido.  
+> Debe tener permisos administrativos para quitar contenido.  
   
  No aparecerá ningún contenido si el IDE de Visual Studio está en un idioma distinto del inglés, quita el contenido localizado y la casilla **Incluir contenido en inglés en todas las pestañas de navegación y las solicitudes de F1** del cuadro de diálogo **Opciones del Visor** está desactivada.  
   
@@ -100,7 +100,7 @@ Con el Visor de Ayuda de Microsoft, puede agregar, quitar, actualizar y mover el
  La barra de estado indica cuándo hay disponibles actualizaciones para el contenido instalado.  
   
 > [!IMPORTANT]
->  Si quiere que el Visor de Ayuda busque automáticamente actualizaciones en línea, debe abrir el cuadro de diálogo **Opciones del Visor** y, después, seleccione la casilla **Conectarse para comprobar actualizaciones de contenido**.  
+> Si quiere que el Visor de Ayuda busque automáticamente actualizaciones en línea, debe abrir el cuadro de diálogo **Opciones del Visor** y, después, seleccione la casilla **Conectarse para comprobar actualizaciones de contenido**.  
   
 #### <a name="to-update-local-content"></a>Para actualizar el contenido local  
   
@@ -112,7 +112,7 @@ Con el Visor de Ayuda de Microsoft, puede agregar, quitar, actualizar y mover el
  Puede ahorrar espacio en disco moviendo contenido instalado en el equipo local a un recurso compartido de red o a otra partición en el equipo local.  
   
 > [!IMPORTANT]
->  Para mover el contenido, debe iniciar sesión con una cuenta que tenga permisos administrativos.  
+> Para mover el contenido, debe iniciar sesión con una cuenta que tenga permisos administrativos.  
   
 #### <a name="to-move-local-content"></a>Para mover contenido local  
   

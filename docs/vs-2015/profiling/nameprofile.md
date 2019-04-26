@@ -12,12 +12,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 15dcdbec1407dc646e26f7419e2dd80cec869725
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 1c2134c38a3910a5dd1308990b0788002a7ded2d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54752267"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441911"
 ---
 # <a name="nameprofile"></a>NameProfile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,7 +84,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
  Si especifica un proceso o subproceso distinto del actual, debe asegurarse de que se ha inicializado y empezó a ejecutarse antes de asignarle el nombre. En caso contrario, se produce un error en el método NameProfile.  
   
 > [!IMPORTANT]
->  Las funciones CreateProcess() y CreateThread() de la API pueden devolver un valor antes de que se inicialice el subproceso o el proceso.  
+> Las funciones CreateProcess() y CreateThread() de la API pueden devolver un valor antes de que se inicialice el subproceso o el proceso.  
   
 ## <a name="net-framework-equivalent"></a>Equivalente de .NET Framework  
  Microsoft.VisualStudio.Profiler.dll  
