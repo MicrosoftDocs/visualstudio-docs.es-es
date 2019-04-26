@@ -18,19 +18,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 548943b9d203cf84773385f6b12d70dcb246b708
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7da05a71d5de4a8f1ec6ef5fbb27a2e74220a1ef
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56607361"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62993246"
 ---
 # <a name="sgen-task"></a>SGen (tarea)
 Crea un ensamblado de serialización XML para los tipos del ensamblado especificado. Esta tarea ajusta la herramienta Generador de serializador XML (*Sgen.exe*). Para más información, consulte [Herramienta Generador de serializador XML (Sgen.exe)](/dotnet/framework/serialization/xml-serializer-generator-tool-sgen-exe).
 
 ## <a name="parameters"></a>Parámetros
  En la siguiente tabla se describen los parámetros de la tarea `SGen` .
-
 
 | Parámetro | Descripción |
 |-----------------------------| - |

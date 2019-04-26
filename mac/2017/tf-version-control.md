@@ -8,11 +8,11 @@ ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
 ms.openlocfilehash: 1d560e3fd383e3db19c664bf027470c8da224fd2
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857806"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62987425"
 ---
 # <a name="connecting-to-team-foundation-version-control"></a>Conectarse a Control de versiones de Team Foundation
 
@@ -189,4 +189,4 @@ Al intentar [crear una nueva área de trabajo](#creating-a-new-workspace), debe 
 
 ## <a name="see-also"></a>Vea también
 
-- [Develop and share your code in TFVC using Visual Studio (on Windows) (Desarrollo y uso compartido del código en TFVC con Visual Studio [en Windows])](/azure/devops/repos/tfvc/share-your-code-in-tfvc-vs)
+- [Develop and share your code in TFVC using Visual Studio (on Windows)](/azure/devops/repos/tfvc/share-your-code-in-tfvc-vs) (Desarrollar y compartir el código en TFVC con Visual Studio (en Windows))

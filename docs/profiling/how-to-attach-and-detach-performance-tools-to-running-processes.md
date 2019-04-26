@@ -17,18 +17,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f56121354e9c6e508ab591d306f7e210f6963694
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 181bcf665ce905bff20f98be19d4a789cfe530c2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603592"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431567"
 ---
 # <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>Procedimiento Asociar y desasociar las herramientas de rendimiento en los procesos en ejecución
 El generador de perfiles puede utilizarse para asociar o desasociar un proceso en ejecución a fin de facilitar el muestreo y la recolección de los datos de rendimiento. Puede utilizar este método para generar perfiles de un proceso cuando quiera evitar que se recopilen datos sobre el tiempo de carga de la aplicación o supervisar el rendimiento de un proceso después de que alcance un estado determinado.
 
 > [!NOTE]
->  Los pasos siguientes se aplican a asociar y desasociar procesos desde el entorno de desarrollo integrado (IDE) de [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. Para obtener información sobre cómo utilizar las herramientas de la línea de comandos, vea [Generación de perfiles desde la línea de comandos](../profiling/using-the-profiling-tools-from-the-command-line.md). Para obtener información sobre cómo generar perfiles para servicios, vea [Generar perfiles para servicios](../profiling/command-line-profiling-of-services.md).
+> Los pasos siguientes se aplican a asociar y desasociar procesos desde el entorno de desarrollo integrado (IDE) de [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. Para obtener información sobre cómo utilizar las herramientas de la línea de comandos, vea [Generación de perfiles desde la línea de comandos](../profiling/using-the-profiling-tools-from-the-command-line.md). Para obtener información sobre cómo generar perfiles para servicios, vea [Generar perfiles para servicios](../profiling/command-line-profiling-of-services.md).
 
  Los procesos que están disponibles para generar perfiles dependen de los permisos de acceso de usuario establecidos por un administrador del equipo. Por ejemplo, una cuenta de usuario puede tener permiso para cualquiera de las siguientes acciones:
 
@@ -42,23 +42,23 @@ El generador de perfiles puede utilizarse para asociar o desasociar un proceso e
 
 ### <a name="to-attach-to-a-running-process"></a>Para asociar a un proceso en ejecución
 
-1.  En el menú **Depurar**, vaya a **Generador de perfiles**, a **Explorador de rendimiento** y después haga clic en **Adjuntar**.
+1. En el menú **Depurar**, vaya a **Generador de perfiles**, a **Explorador de rendimiento** y después haga clic en **Adjuntar**.
 
      Se muestra el cuadro de diálogo **Asociar generador de perfiles al proceso**.
 
-2.  Haga clic en el nombre del proceso al que quiera asociar.
+2. Haga clic en el nombre del proceso al que quiera asociar.
 
-3.  Haga clic en **Asociar**.
+3. Haga clic en **Asociar**.
 
 ### <a name="to-detach-from-a-running-process"></a>Desasociar de un proceso en ejecución
 
-1.  En el menú **Depurar**, vaya a **Generador de perfiles**, a **Explorador de rendimiento** y después haga clic en **Desasociar**.
+1. En el menú **Depurar**, vaya a **Generador de perfiles**, a **Explorador de rendimiento** y después haga clic en **Desasociar**.
 
      Se muestra el cuadro de diálogo **Asociar generador de perfiles al proceso**.
 
-2.  Haga clic en el nombre de la imagen que quiera desasociar.
+2. Haga clic en el nombre de la imagen que quiera desasociar.
 
-3.  Haga clic en **Desasociar**.
+3. Haga clic en **Desasociar**.
 
 ## <a name="see-also"></a>Vea también
 - [Control de la recopilación de datos](../profiling/controlling-data-collection.md)

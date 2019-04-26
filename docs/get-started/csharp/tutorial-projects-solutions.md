@@ -11,19 +11,19 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 68fdb7169bc87979cac56480664bfdbeab748c51
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 652c9480103b902a40635661f597768980244035
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323482"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62971046"
 ---
 # <a name="learn-about-projects-and-solutions-using-c"></a>Información sobre proyectos y soluciones con C\#
 
 En este artículo introductorio se explica qué significa crear una *solución* y un *proyecto* en Visual Studio. Una solución es un contenedor que se usa para organizar uno o más proyectos de código relacionados, por ejemplo, un proyecto de biblioteca de clases y un proyecto de prueba correspondiente. Echaremos un vistazo a las propiedades de un proyecto y a algunos de los archivos que puede contener. También se crea una referencia de un proyecto a otro.
 
 > [!TIP]
-> Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) para instalarlo de forma gratuita.
+> Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) para instalarlo de forma gratuita.
 
 Se crean una solución y un proyecto desde cero como ejercicio educativo para comprender el concepto de proyecto. Cuando use Visual Studio, es probable que emplee alguna de las distintas *plantillas* de proyecto que Visual Studio ofrece al crear un nuevo proyecto.
 

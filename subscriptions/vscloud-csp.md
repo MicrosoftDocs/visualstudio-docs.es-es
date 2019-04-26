@@ -7,12 +7,12 @@ ms.date: 03/15/2018
 ms.topic: conceptual
 description: Información para proveedores de soluciones en la nube sobre cómo comprar y administrar suscripciones de nube de Visual Studio para sus clientes.
 searchscope: VS Subscription
-ms.openlocfilehash: 59d61e687c061fffd2cc0a2b537364ca8b966271
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 6f5c760ad67fb92367f971b973f3af0ed6d41785
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323586"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62978515"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>Adquirir y administrar suscripciones de nube de Visual Studio para los clientes
 
@@ -20,10 +20,8 @@ Los partners que participen en el programa [Proveedor de soluciones en la nube (
 
 [Comparación de las opciones de suscripción de nube](https://visualstudio.microsoft.com/vs/pricing)
 
-
 > [!NOTE]
 > Microsoft ya no ofrece suscripciones anuales ni de Visual Studio Professional ni de Visual Studio Enterprise en las suscripciones de nube. Esto no supone cambio alguno en la experiencia actual de los clientes y ni en su capacidad para renovar, aumentar, reducir o cancelar las suscripciones. Conviene que los clientes nuevos vayan a [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) para explorar las diferentes opciones de compra de Visual Studio.
-
 
 ## <a name="prerequisites"></a>Requisitos previos
 
@@ -84,7 +82,6 @@ Así es como hay que interpretar lo que aparece en esta hoja de cálculo:
 |-------------------|------------------------|---------------------------------------|-------------------------------------------------|
 | Programa para la mejora     | Empresa             |  Suscripción                         | Suscripción mensual de Visual Studio Enterprise   |
 | Programa para la mejora     | Profesional           |  Suscripción                         | Suscripción mensual de Visual Studio Professional |
-
 
 Ofrecemos un descuento del 5 % por la sexta unidad que se adquiera (para un mismo cliente) cada mes de cada suscripción de Visual Studio. Es por eso que aparecen dos filas por cada opción de suscripción. Una fila muestra un "valor mínimo" de 0, lo que debe interpretarse como el precio base de las primeras cinco unidades. La otra fila muestra un "valor mínimo" de 5, por lo que este es el precio con el 5 % de descuento que se aplica desde la sexta unidad en adelante.
 

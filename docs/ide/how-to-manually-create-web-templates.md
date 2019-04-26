@@ -11,13 +11,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 9af528cf92d4909bbe5c7d4ac114aa830e96162c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55938221"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946900"
 ---
-# <a name="how-to-manually-create-web-templates"></a>Filtrar para crear plantillas web manualmente
+# <a name="how-to-manually-create-web-templates"></a>Procedimiento para crear plantillas web manualmente
 
 La creación de una plantilla web es diferente de la creación de otros tipos de plantillas. Dado que las plantillas de proyecto web aparecen en el cuadro de diálogo **Agregar nuevo sitio web** y los elementos de proyecto web se clasifican por lenguaje de programación, el archivo *vstemplate* debe especificar la plantilla como una plantilla web e identificar el lenguaje de programación.
 

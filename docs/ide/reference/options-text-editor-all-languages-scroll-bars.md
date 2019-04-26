@@ -33,11 +33,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a753574e883872780446929f7c2349b0d726c71a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925961"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62817589"
 ---
 # <a name="options-text-editor-all-languages-scroll-bars"></a>Opciones, Editor de texto, Todos los idiomas, Barras de desplazamiento
 Este cuadro de diálogo le permite cambiar el comportamiento predeterminado de la barra de desplazamiento del Editor de código. Para mostrar estas opciones, seleccione **Opciones** desde el menú **Herramientas**. En la carpeta **Editor de texto**, expanda la subcarpeta **Todos los idiomas** y después seleccione **Barras de desplazamiento**.
@@ -59,7 +59,7 @@ Cuando está seleccionada, muestra una barra de desplazamiento vertical que le p
 
 Seleccione si la barra de desplazamiento vertical muestra las siguientes anotaciones:
 
-- trabajando
+- cambios
 - marcas
 - errores
 - posición del símbolo de intercalación

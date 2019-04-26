@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 915a46a1f201dab55edb0b0b091c003d6b449049
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 1e59e1bd618cfeb28b93d073997ef451357ee8d0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57873459"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62830791"
 ---
 # <a name="analyze-memory-usage-without-the-debugger"></a>Análisis del uso de memoria sin el depurador
 
@@ -56,13 +56,13 @@ Una aplicación usa un gran número de objetos, y es posible que quiera concentr
 
 Para recopilar instantáneas, elija **Tomar instantánea** cuando quiera capturar los datos de memoria.
 
-###  <a name="BKMK_Close_a_monitoring_session"></a> Cerrar la sesión de diagnóstico
+### <a name="BKMK_Close_a_monitoring_session"></a> Cerrar la sesión de diagnóstico
 
 Para detener una sesión de supervisión sin crear un informe, simplemente cierre la ventana de diagnóstico. Para generar un informe cuando haya terminado de recopilar o haya tomado instantáneas, haga clic en **Detener recopilación**.
 
 ![Detener recopilación](../profiling/media/memuse__stopcollection.png "Stop Collection")
 
-##  <a name="memory-usage-reports"></a>Informes de uso de memoria
+## <a name="memory-usage-reports"></a>Informes de uso de memoria
 
 Una vez detenida la recopilación de datos, la herramienta **Uso de memoria** detiene la aplicación y muestra la página de información general **Uso de memoria**.
 
@@ -103,7 +103,7 @@ En el informe de instantáneas:
 
 - En el árbol **Tipos a los que se hace referencia** u **Objetos a los que se hace referencia** se muestran los objetos a los que hace referencia el tipo o instancia seleccionado.
 
-###  <a name="BKMK_Report_tree_filters_"></a> Filtros de árbol de informes
+### <a name="BKMK_Report_tree_filters_"></a> Filtros de árbol de informes
 
 Muchos tipos de aplicaciones no son muy interesantes para los desarrolladores de aplicaciones. Los filtros de informe de instantáneas pueden ocultar la mayoría de estos tipos en los árboles **Montón administrado** y **Rutas de acceso a la raíz**.
 
@@ -123,7 +123,7 @@ Muchos tipos de aplicaciones no son muy interesantes para los desarrolladores de
 
 Ambos vínculos abren el mismo informe. La única diferencia es el orden de inicio del árbol **Montón administrado**. El vínculo de tamaño ordena el informe por la columna **Tamaño inclusivo (bytes)**. El vínculo Objetos ordena el informe por la columna **Recuento**. Puede cambiar la columna por la que se ordena o el orden después de abrir el informe.
 
-###  <a name="BKMK_Managed_Heap_tree__Snapshot_details_"></a> Árbol Montón administrado (informes de detalles de instantánea)
+### <a name="BKMK_Managed_Heap_tree__Snapshot_details_"></a> Árbol Montón administrado (informes de detalles de instantánea)
  El árbol **Montón administrado** enumera los tipos de objetos retenidos en memoria. Expanda un nombre de tipo para ver las diez mayores instancias del tipo, ordenadas por tamaño. Haga clic en un tipo o una instancia para mostrar los árboles **Rutas de acceso al nodo raíz** y **Objetos a los que se hace referencia** para el elemento seleccionado.
 
  ![Árbol Montón administrado](../profiling/media/memuse__snapshotdetails_managedheaptree.png "Managed Heap tree")
@@ -138,14 +138,14 @@ El árbol **Montón administrado** en un informe de detalles de instantánea tie
 |**Tamaño inclusivo (bytes)**|El tamaño de las instancias del tipo o el tamaño de una única instancia, incluso el tamaño de los objetos incluidos.|
 |**Módulo**|El módulo que contiene este objeto.|
 
-###  <a name="BKMK_Paths_to_Root_tree__Snapshot_details_"></a> Rutas de acceso al árbol raíz (informes de detalles de instantánea)
+### <a name="BKMK_Paths_to_Root_tree__Snapshot_details_"></a> Rutas de acceso al árbol raíz (informes de detalles de instantánea)
 El árbol **Ruta de acceso al nodo raíz** muestra la cadena de objetos que hace referencia a un tipo o una instancia. El recolector de elementos no utilizados de .NET Framework borra un objeto de la memoria únicamente si todas las referencias a él se han liberado.
 
 Para un tipo en el árbol **Rutas de acceso al nodo raíz**, el número de objetos que contienen referencias a ese tipo se muestra en la columna **Recuento de referencias**.
 
 ![Árbol Rutas de acceso al nodo raíz para los tipos](../profiling/media/memuse_snapshotdetails_type_pathstoroottree.png "Paths to Root tree for types")
 
-###  <a name="BKMK_Referenced_Objects_tree__Snapshot_details_"></a> Árboles Tipos a los que se referencia u Objetos a los que se hace referencia (informes de detalles de instantánea)
+### <a name="BKMK_Referenced_Objects_tree__Snapshot_details_"></a> Árboles Tipos a los que se referencia u Objetos a los que se hace referencia (informes de detalles de instantánea)
 En el árbol **Tipos a los que se hace referencia** u **Objetos a los que se hace referencia** se muestran los objetos a los que hace referencia el tipo o instancia seleccionado.
 
 ![Árbol de objetos a los que se hace referencia para instancias](../profiling/media/memuse_snapshotdetails_referencedobjects_instance.png "Referenced Objects tree for instances")
@@ -168,7 +168,7 @@ Ambos vínculos abren el mismo informe. La única diferencia es el orden de inic
 
  ![Vínculos a un informe de diferencias en un panel de instantánea](../profiling/media/memuse_snapshotview_snapshotdifflinks.png "Links to difference report in a snapshot pane")
 
-###  <a name="BKMK_Managed_Heap_tree__Snapshot_diff_"></a> Árbol Montón administrado (informes de diferencias de instantánea)
+### <a name="BKMK_Managed_Heap_tree__Snapshot_diff_"></a> Árbol Montón administrado (informes de diferencias de instantánea)
 
  El árbol **Montón administrado** enumera los tipos de objetos retenidos en memoria. Puede expandir un nombre de tipo para ver las diez mayores instancias del tipo, ordenadas por tamaño. Haga clic en un tipo o una instancia para mostrar los árboles **Rutas de acceso al nodo raíz** y **Objetos a los que se hace referencia** para el elemento seleccionado.
 
@@ -187,7 +187,7 @@ El árbol **Montón administrado** en un informe de diferencias de instantánea 
 |**Diferencia de tamaño inclusivo (bytes)**|Para un tipo, la diferencia en el tamaño de todas las instancias del tipo entre la instantánea principal y la anterior, incluyendo el tamaño de objetos en los objetos. Para una instancia el campo está en blanco.|
 |**Módulo**|El módulo que contiene este objeto.|
 
-###  <a name="BKMK_Paths_to_Root_tree__Snapshot_diff_"></a> Árbol Rutas de acceso al nodo raíz (informes de diferencias de instantánea)
+### <a name="BKMK_Paths_to_Root_tree__Snapshot_diff_"></a> Árbol Rutas de acceso al nodo raíz (informes de diferencias de instantánea)
 
 El árbol **Ruta de acceso al nodo raíz** muestra la cadena de objetos que hace referencia a un tipo o una instancia. El recolector de elementos no utilizados de .NET Framework borra un objeto de la memoria únicamente si todas las referencias a él se han liberado.
 
@@ -195,7 +195,7 @@ Para un tipo en el árbol **Rutas de acceso al nodo raíz**, el número de objet
 
  ![Árbol Rutas de acceso al nodo raíz en un informe de diferencias](../profiling/media/memuse_snapshotdiff_pathstoroot_instance_all.png "Paths To Root tree in a diff report")
 
-###  <a name="BKMK_Referenced_Objects_tree__Snapshot_diff_"></a> Árboles Tipos a los que se referencia u Objetos a los que se hace referencia (informes de diferencias de instantánea)
+### <a name="BKMK_Referenced_Objects_tree__Snapshot_diff_"></a> Árboles Tipos a los que se referencia u Objetos a los que se hace referencia (informes de diferencias de instantánea)
 
 En el árbol **Tipos a los que se hace referencia** u **Objetos a los que se hace referencia** se muestran los objetos a los que hace referencia el tipo o instancia seleccionado.
 

@@ -8,24 +8,24 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c93ddfc85e318a2095f757c6131b151a5414c884
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4ececa58d04ea7cfebe6178faae724038e353f06
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55956940"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62821634"
 ---
 # <a name="tutorial-2-create-a-timed-math-quiz"></a>Tutorial 2: Crear una prueba matemática cronometrada
 
 En este tutorial, se compila un juego de prueba matemática en el que el jugador debe responder a cuatro problemas aritméticos aleatorios en un tiempo especificado. Aprenderá a:
 
--   Generar números aleatorios mediante la clase <xref:System.Random>.
+- Generar números aleatorios mediante la clase <xref:System.Random>.
 
--   Generar eventos que se producirán en un momento concreto con un control <xref:System.Windows.Forms.Timer>.
+- Generar eventos que se producirán en un momento concreto con un control <xref:System.Windows.Forms.Timer>.
 
--   Controlar el flujo del programa con instrucciones `if else`.
+- Controlar el flujo del programa con instrucciones `if else`.
 
--   Realizar operaciones aritméticas básicas en el código.
+- Realizar operaciones aritméticas básicas en el código.
 
 Cuando termine, la prueba matemática se parecerá a la siguiente imagen, pero tendrá otros números:
 

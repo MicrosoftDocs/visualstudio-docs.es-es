@@ -23,12 +23,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3c5a07a38982175466982b34ab0e4ddedcf31be
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5576d1a7f66e11056240702f81e2f55edf65f5a0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55938920"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62824314"
 ---
 # <a name="install-and-manage-local-content"></a>Instalar y administrar el contenido local
 
@@ -42,18 +42,18 @@ De forma predeterminada, el Visor de Ayuda instala contenido mediante el uso de 
 
 ### <a name="to-change-the-content-installation-source"></a>Para cambiar el origen de instalación del contenido
 
-1.  En la pestaña **Administrar contenido**, pulse el botón de opción **Disco**.
+1. En la pestaña **Administrar contenido**, pulse el botón de opción **Disco**.
 
     > [!NOTE]
     > La opción **Disco** no está disponible si el administrador impide modificar el origen de instalación del contenido. Para obtener más información, vea la [Guía del administrador del Visor de Ayuda](../help-viewer/administrator-guide.md).
 
-2.  Realice uno de estos pasos:
+2. Realice uno de estos pasos:
 
-    -   Escriba la ruta de un archivo *.msha* o la dirección URL de un punto de conexión de servicio.
+    - Escriba la ruta de un archivo *.msha* o la dirección URL de un punto de conexión de servicio.
 
-    -   Elija el botón Examinar (**...**) para desplazarse hasta un archivo *.msha*.
+    - Elija el botón Examinar (**...**) para desplazarse hasta un archivo *.msha*.
 
-    -   En la lista, seleccione la entrada que se usó más recientemente.
+    - En la lista, seleccione la entrada que se usó más recientemente.
 
 ## <a name="download-and-install-content-locally"></a>Descargar e instalar contenido localmente
 
@@ -67,13 +67,13 @@ Si descarga e instala el contenido en el equipo local, puede ver temas sin conex
 
 ### <a name="to-download-and-install-content"></a>Para descargar e instalar contenido
 
-1.  Pulse la pestaña **Administrar contenido**.
+1. Pulse la pestaña **Administrar contenido**.
 
-2.  En la lista de contenido, pulse el vínculo **Agregar** junto al libro o libros que quiere descargar e instalar.
+2. En la lista de contenido, pulse el vínculo **Agregar** junto al libro o libros que quiere descargar e instalar.
 
      El libro se agrega a la lista **Cambios pendientes** y el tamaño estimado del libro o libros que ha especificado aparece debajo de esa lista. Dado que algunos libros comparten temas, el tamaño total de la descarga de varios libros podría ser menor que el resultado de la suma de los tamaños de todos los libros que especificó.
 
-3.  Pulse el botón **Actualizar**.
+3. Pulse el botón **Actualizar**.
 
      El libro o libros que especificó se instalan junto con todas las actualizaciones de los libros que ya existen en el equipo. Los tiempos de instalación varían, pero puede ver el progreso en la barra de estado.
 
@@ -89,13 +89,13 @@ Puede ahorrar espacio en disco mediante la eliminación de contenido no deseado 
 
 ### <a name="to-remove-content"></a>Para quitar contenido
 
-1.  Pulse la pestaña **Administrar contenido**.
+1. Pulse la pestaña **Administrar contenido**.
 
-2.  En la lista de contenido, pulse el vínculo **Quitar** junto al libro o libros que quiere quitar.
+2. En la lista de contenido, pulse el vínculo **Quitar** junto al libro o libros que quiere quitar.
 
      El libro se agrega a la lista de **Cambios pendientes**.
 
-3.  Pulse el botón **Actualizar**.
+3. Pulse el botón **Actualizar**.
 
      El libro o libros que especificó se quitan de su equipo.
 
@@ -121,13 +121,13 @@ Puede ahorrar espacio en disco moviendo contenido instalado en el equipo local a
 
 ### <a name="to-move-local-content"></a>Para mover contenido local
 
-1.  En la pestaña **Administrar contenido**, pulse el botón **Mover** en **Ruta de acceso del almacén local**.
+1. En la pestaña **Administrar contenido**, pulse el botón **Mover** en **Ruta de acceso del almacén local**.
 
      Se abre el cuadro de diálogo **Mover contenido**.
 
-2.  En el cuadro de texto **Para**, escriba una ubicación diferente para el contenido y, después, pulse el botón **Aceptar**.
+2. En el cuadro de texto **Para**, escriba una ubicación diferente para el contenido y, después, pulse el botón **Aceptar**.
 
-3.  Pulse el botón **Cerrar** cuando el contenido se termine de mover.
+3. Pulse el botón **Cerrar** cuando el contenido se termine de mover.
 
 ## <a name="see-also"></a>Vea también
 

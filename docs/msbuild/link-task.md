@@ -30,12 +30,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55d84dc8aed00cf037efc8b35efa13fa712092c7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 58691d5c6a7f44361d40a50898395ed1200a06c6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627160"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62817641"
 ---
 # <a name="link-task"></a>Vincular tarea
 Incluye la herramienta del enlazador de Visual C++, *link.exe*. La herramienta del enlazador vincula bibliotecas y archivos de objeto de formato de archivo de objeto común (COFF) para crear un archivo ejecutable (*.exe*) o una biblioteca de vínculos dinámicos (DLL). Para obtener más información, vea [Opciones del enlazador](/cpp/build/reference/linker-options).
@@ -43,7 +43,7 @@ Incluye la herramienta del enlazador de Visual C++, *link.exe*. La herramienta d
 ## <a name="parameters"></a>Parámetros
  A continuación se describen los parámetros de la tarea **Link**. La mayoría de los parámetros de tarea, así como algunos conjuntos de parámetros, corresponden a una opción de línea de comandos.
 
--   **AdditionalDependencies**
+- **AdditionalDependencies**
 
      Parámetro **String[]** opcional.
 
@@ -51,7 +51,7 @@ Incluye la herramienta del enlazador de Visual C++, *link.exe*. La herramienta d
 
      Para obtener más información, vea [Archivos de entrada de LINK](/cpp/build/reference/link-input-files).
 
--   **AdditionalLibraryDirectories**
+- **AdditionalLibraryDirectories**
 
      Parámetro **String[]** opcional.
 
@@ -59,7 +59,7 @@ Incluye la herramienta del enlazador de Visual C++, *link.exe*. La herramienta d
 
      Para obtener más información, consulte [/LIBPATH (Directorios de bibliotecas adicionales)](/cpp/build/reference/libpath-additional-libpath).
 
--   **AdditionalManifestDependencies**
+- **AdditionalManifestDependencies**
 
      Parámetro **String[]** opcional.
 
@@ -67,7 +67,7 @@ Incluye la herramienta del enlazador de Visual C++, *link.exe*. La herramienta d
 
      Para obtener más información, vea [/MANIFESTDEPENDENCY (Especificar las dependencias del manifiesto)](/cpp/build/reference/manifestdependency-specify-manifest-dependencies). Vea también [Publisher configuration files](https://docs.microsoft.com/windows/desktop/SbsCs/publisher-configuration-files) (Archivos de configuración del publicador).
 
--   **AdditionalOptions**
+- **AdditionalOptions**
 
      Parámetro **String** opcional.
 
@@ -75,7 +75,7 @@ Incluye la herramienta del enlazador de Visual C++, *link.exe*. La herramienta d
 
      Para obtener más información, vea [Opciones del enlazador](/cpp/build/reference/linker-options).
 
--   **AddModuleNamesToAssembly**
+- **AddModuleNamesToAssembly**
 
      Parámetro **String[]** opcional.
 
@@ -83,7 +83,7 @@ Incluye la herramienta del enlazador de Visual C++, *link.exe*. La herramienta d
 
      Para obtener más información, vea [/ASSEMBLYMODULE (Agregar un módulo MSIL al ensamblado)](/cpp/build/reference/assemblymodule-add-a-msil-module-to-the-assembly).
 
--   **AllowIsolation**
+- **AllowIsolation**
 
      Parámetro **Boolean** opcional.
 
@@ -91,7 +91,7 @@ Incluye la herramienta del enlazador de Visual C++, *link.exe*. La herramienta d
 
      Para obtener más información, vea [/ALLOWISOLATION (Manifestar bucle)](/cpp/build/reference/allowisolation-manifest-lookup).
 
--   **AssemblyDebug**
+- **AssemblyDebug**
 
      Parámetro **Boolean** opcional.
 
@@ -99,7 +99,7 @@ Incluye la herramienta del enlazador de Visual C++, *link.exe*. La herramienta d
 
      Para obtener más información, consulte [/ASSEMBLYDEBUG (Agregar DebuggableAttribute)](/cpp/build/reference/assemblydebug-add-debuggableattribute).
 
--   **AssemblyLinkResource**
+- **AssemblyLinkResource**
 
      Parámetro **String[]** opcional.
 
@@ -107,13 +107,13 @@ Incluye la herramienta del enlazador de Visual C++, *link.exe*. La herramienta d
 
      Para obtener más información, vea [/ASSEMBLYLINKRESOURCE (Vincular a recursos de .NET Framework)](/cpp/build/reference/assemblylinkresource-link-to-dotnet-framework-resource).
 
--   **AttributeFileTracking**
+- **AttributeFileTracking**
 
      Parámetro **Boolean** implícito.
 
      Permite un seguimiento más a fondo de los archivos para capturar el comportamiento incremental del vínculo. Siempre devuelve `true`.
 
--   **BaseAddress**
+- **BaseAddress**
 
      Parámetro **String** opcional.
 
@@ -121,7 +121,7 @@ Incluye la herramienta del enlazador de Visual C++, *link.exe*. La herramienta d
 
      Para obtener más información, vea [/BASE (Dirección base)](/cpp/build/reference/base-base-address).
 
--   **BuildingInIDE**
+- **BuildingInIDE**
 
      Parámetro **Boolean** opcional.
 
@@ -129,7 +129,7 @@ Incluye la herramienta del enlazador de Visual C++, *link.exe*. La herramienta d
 
      Este parámetro no tiene ninguna opción del enlazador equivalente.
 
--   **CLRImageType**
+- **CLRImageType**
 
      Parámetro **String** opcional.
 
@@ -137,17 +137,17 @@ Incluye la herramienta del enlazador de Visual C++, *link.exe*. La herramienta d
 
      Especifique uno de los valores siguientes, cada uno de los cuales corresponde a una opción del enlazador.
 
-    -   **Default** - *\<none>*
+    - **Default** - *\<none>*
 
-    -   **ForceIJWImage** - **/CLRIMAGETYPE:IJW**
+    - **ForceIJWImage** - **/CLRIMAGETYPE:IJW**
 
-    -   **ForcePureILImage** - **/CLRIMAGETYPE:PURE**
+    - **ForcePureILImage** - **/CLRIMAGETYPE:PURE**
 
-    -   **ForceSafeILImage** - **/CLRIMAGETYPE:SAFE**
+    - **ForceSafeILImage** - **/CLRIMAGETYPE:SAFE**
 
     Para obtener más información, vea [/CLRIMAGETYPE (Especificar tipo de imagen CLR)](/cpp/build/reference/clrimagetype-specify-type-of-clr-image).
 
--   **CLRSupportLastError**
+- **CLRSupportLastError**
 
      Parámetro **String** opcional.
 
@@ -155,15 +155,15 @@ Incluye la herramienta del enlazador de Visual C++, *link.exe*. La herramienta d
 
      Especifique uno de los valores siguientes, cada uno de los cuales corresponde a una opción del enlazador.
 
-    -   **Enabled** - **/CLRSupportLastError**
+    - **Enabled** - **/CLRSupportLastError**
 
-    -   **Disabled** - **/CLRSupportLastError:NO**
+    - **Disabled** - **/CLRSupportLastError:NO**
 
-    -   **SystemDlls** - **/CLRSupportLastError:SYSTEMDLL**
+    - **SystemDlls** - **/CLRSupportLastError:SYSTEMDLL**
 
     Para obtener más información, vea [/CLRSUPPORTLASTERROR (Conservar el último código de error para las llamadas a PInvoke)](/cpp/build/reference/clrsupportlasterror-preserve-last-error-code-for-pinvoke-calls).
 
--   **CLRThreadAttribute**
+- **CLRThreadAttribute**
 
      Parámetro **String** opcional.
 
@@ -171,15 +171,15 @@ Incluye la herramienta del enlazador de Visual C++, *link.exe*. La herramienta d
 
      Especifique uno de los valores siguientes, cada uno de los cuales corresponde a una opción del enlazador.
 
-    -   **DefaultThreadingAttribute** - **/CLRTHREADATTRIBUTE:NONE**
+    - **DefaultThreadingAttribute** - **/CLRTHREADATTRIBUTE:NONE**
 
-    -   **MTAThreadingAttribute** - **/CLRTHREADATTRIBUTE:MTA**
+    - **MTAThreadingAttribute** - **/CLRTHREADATTRIBUTE:MTA**
 
-    -   **STAThreadingAttribute** - **/CLRTHREADATTRIBUTE:STA**
+    - **STAThreadingAttribute** - **/CLRTHREADATTRIBUTE:STA**
 
     Para obtener más información, vea [/CLRTHREADATTRIBUTE (Establecer el atributo de subproceso de CLR)](/cpp/build/reference/clrthreadattribute-set-clr-thread-attribute).
 
--   **CLRUnmanagedCodeCheck**
+- **CLRUnmanagedCodeCheck**
 
      Parámetro **Boolean** opcional.
 
@@ -187,7 +187,7 @@ Incluye la herramienta del enlazador de Visual C++, *link.exe*. La herramienta d
 
     Para obtener más información, vea [/CLRUNMANAGEDCODECHECK (quite SuppressUnmanagedCodeSecurityAttribute)](/cpp/build/reference/clrunmanagedcodecheck-add-suppressunmanagedcodesecurityattribute).
 
--   **CreateHotpatchableImage**
+- **CreateHotpatchableImage**
 
      Parámetro **String** opcional.
 
@@ -195,17 +195,17 @@ Incluye la herramienta del enlazador de Visual C++, *link.exe*. La herramienta d
 
      Especifique uno de los valores siguientes, que corresponde a una opción del enlazador.
 
-    -   **Enabled** - **/FUNCTIONPADMIN**
+    - **Enabled** - **/FUNCTIONPADMIN**
 
-    -   **X86Image** - **/FUNCTIONPADMIN:5**
+    - **X86Image** - **/FUNCTIONPADMIN:5**
 
-    -   **X64Image** - **/FUNCTIONPADMIN:6**
+    - **X64Image** - **/FUNCTIONPADMIN:6**
 
-    -   **ItaniumImage** - **/FUNCTIONPADMIN:16**
+    - **ItaniumImage** - **/FUNCTIONPADMIN:16**
 
     Para obtener más información, vea [/FUNCTIONPADMIN (Crear una imagen a la que se puede aplicar una revisión reciente)](/cpp/build/reference/functionpadmin-create-hotpatchable-image).
 
--   **DataExecutionPrevention**
+- **DataExecutionPrevention**
 
      Parámetro **Boolean** opcional.
 
@@ -213,7 +213,7 @@ Incluye la herramienta del enlazador de Visual C++, *link.exe*. La herramienta d
 
      Para obtener más información, consulte [/NXCOMPAT (Compatible con Prevención de ejecución de datos)](/cpp/build/reference/nxcompat-compatible-with-data-execution-prevention).
 
--   **DelayLoadDLLs**
+- **DelayLoadDLLs**
 
      Parámetro **String[]** opcional.
 
@@ -221,7 +221,7 @@ Incluye la herramienta del enlazador de Visual C++, *link.exe*. La herramienta d
 
      Para obtener más información, vea [/DELAYLOAD (Retrasar importación de carga)](/cpp/build/reference/delayload-delay-load-import).
 
--   **DelaySign**
+- **DelaySign**
 
      Parámetro **Boolean** opcional.
 
@@ -229,7 +229,7 @@ Incluye la herramienta del enlazador de Visual C++, *link.exe*. La herramienta d
 
      Para obtener más información, vea [/DELAYSIGN (Firmar parcialmente un ensamblado)](/cpp/build/reference/delaysign-partially-sign-an-assembly).
 
--   **Driver**
+- **Driver**
 
      Parámetro **String** opcional.
 
@@ -237,17 +237,17 @@ Incluye la herramienta del enlazador de Visual C++, *link.exe*. La herramienta d
 
      Especifique uno de los valores siguientes, cada uno de los cuales corresponde a una opción del enlazador.
 
-    -   **NotSet** - *\<none>*
+    - **NotSet** - *\<none>*
 
-    -   **Driver** - **/Driver**
+    - **Driver** - **/Driver**
 
-    -   **UpOnly** - **/DRIVER:UPONLY**
+    - **UpOnly** - **/DRIVER:UPONLY**
 
-    -   **WDM** -   **/DRIVER: WDM**
+    - **WDM** -   **/DRIVER: WDM**
 
     Para obtener más información, vea [/DRIVER (Controlador de modo kernel de Windows NT)](/cpp/build/reference/driver-windows-nt-kernel-mode-driver).
 
--   **EmbedManagedResourceFile**
+- **EmbedManagedResourceFile**
 
      Parámetro **String[]** opcional.
 
@@ -255,7 +255,7 @@ Incluye la herramienta del enlazador de Visual C++, *link.exe*. La herramienta d
 
      Para obtener más información, vea [/ASSEMBLYRESOURCE (Incrustar un recurso administrado)](/cpp/build/reference/assemblyresource-embed-a-managed-resource).
 
--   **EnableCOMDATFolding**
+- **EnableCOMDATFolding**
 
      Parámetro **Boolean** opcional.
 
@@ -263,7 +263,7 @@ Incluye la herramienta del enlazador de Visual C++, *link.exe*. La herramienta d
 
      Para obtener más información, consulte el argumento `ICF[= iterations]` de [/OPT (Optimizaciones)](/cpp/build/reference/opt-optimizations).
 
--   **EnableUAC**
+- **EnableUAC**
 
      Parámetro **Boolean** opcional.
 
@@ -271,7 +271,7 @@ Incluye la herramienta del enlazador de Visual C++, *link.exe*. La herramienta d
 
      Para obtener más información, consulte [/MANIFESTUAC (Insertar información de UAC en el manifiesto)](/cpp/build/reference/manifestuac-embeds-uac-information-in-manifest).
 
--   **EntryPointSymbol**
+- **EntryPointSymbol**
 
      Parámetro **String** opcional.
 
@@ -279,7 +279,7 @@ Incluye la herramienta del enlazador de Visual C++, *link.exe*. La herramienta d
 
      Para obtener más información, vea [/ENTRY (Símbolo de punto de entrada)](/cpp/build/reference/entry-entry-point-symbol).
 
--   **FixedBaseAddress**
+- **FixedBaseAddress**
 
      Parámetro **Boolean** opcional.
 
@@ -287,7 +287,7 @@ Incluye la herramienta del enlazador de Visual C++, *link.exe*. La herramienta d
 
      Para obtener más información, vea [/FIXED (Dirección base fija)](/cpp/build/reference/fixed-fixed-base-address).
 
--   **ForceFileOutput**
+- **ForceFileOutput**
 
      Parámetro **String** opcional.
 
@@ -295,15 +295,15 @@ Incluye la herramienta del enlazador de Visual C++, *link.exe*. La herramienta d
 
      Especifique uno de los valores siguientes, cada uno de los cuales corresponde a una opción de línea de comandos.
 
-    -   **Enabled** - **/FORCE**
+    - **Enabled** - **/FORCE**
 
-    -   **MultiplyDefinedSymbolOnly** - **/FORCE:MULTIPLE**
+    - **MultiplyDefinedSymbolOnly** - **/FORCE:MULTIPLE**
 
-    -   **UndefinedSymbolOnly** - **/FORCE:UNRESOLVED**
+    - **UndefinedSymbolOnly** - **/FORCE:UNRESOLVED**
 
     Para obtener más información, vea [/FORCE (Forzar resultados de archivo)](/cpp/build/reference/force-force-file-output).
 
--   **ForceSymbolReferences**
+- **ForceSymbolReferences**
 
      Parámetro **String[]** opcional.
 
@@ -311,7 +311,7 @@ Incluye la herramienta del enlazador de Visual C++, *link.exe*. La herramienta d
 
      Para obtener más información, vea [/INCLUDE (Forzar referencias de símbolos)](/cpp/build/reference/include-force-symbol-references).
 
--   **FunctionOrder**
+- **FunctionOrder**
 
      Parámetro **String** opcional.
 
@@ -319,7 +319,7 @@ Incluye la herramienta del enlazador de Visual C++, *link.exe*. La herramienta d
 
      Para obtener más información, vea [/ORDER (Colocar las funciones en orden)](/cpp/build/reference/order-put-functions-in-order).
 
--   **GenerateDebugInformation**
+- **GenerateDebugInformation**
 
      Parámetro **Boolean** opcional.
 
@@ -327,7 +327,7 @@ Incluye la herramienta del enlazador de Visual C++, *link.exe*. La herramienta d
 
      Para obtener más información, vea [/DEBUG (Generar información de depuración)](/cpp/build/reference/debug-generate-debug-info).
 
--   **GenerateManifest**
+- **GenerateManifest**
 
      Parámetro **Boolean** opcional.
 
@@ -335,7 +335,7 @@ Incluye la herramienta del enlazador de Visual C++, *link.exe*. La herramienta d
 
      Para obtener más información, vea [/MANIFEST (Crear el manifiesto del ensamblado simultáneo)](/cpp/build/reference/manifest-create-side-by-side-assembly-manifest).
 
--   **GenerateMapFile**
+- **GenerateMapFile**
 
      Parámetro **Boolean** opcional.
 
@@ -343,7 +343,7 @@ Incluye la herramienta del enlazador de Visual C++, *link.exe*. La herramienta d
 
      Para obtener más información, vea [/MAP (Generar archivo de asignaciones)](/cpp/build/reference/map-generate-mapfile).
 
--   **HeapCommitSize**
+- **HeapCommitSize**
 
      Parámetro **String** opcional.
 
@@ -351,7 +351,7 @@ Incluye la herramienta del enlazador de Visual C++, *link.exe*. La herramienta d
 
      Para obtener más información, vea el argumento `commit` en [/HEAP (Establecer el tamaño del montón)](/cpp/build/reference/heap-set-heap-size). Consulte también el parámetro **HeapReserveSize**.
 
--   **HeapReserveSize**
+- **HeapReserveSize**
 
      Parámetro **String** opcional.
 
@@ -359,7 +359,7 @@ Incluye la herramienta del enlazador de Visual C++, *link.exe*. La herramienta d
 
      Para obtener más información, vea el argumento `reserve` en [/HEAP (Establecer el tamaño del montón)](/cpp/build/reference/heap-set-heap-size). Consulte también el parámetro **HeapCommitSize** en esta tabla.
 
--   **IgnoreAllDefaultLibraries**
+- **IgnoreAllDefaultLibraries**
 
      Parámetro **Boolean** opcional.
 
@@ -367,7 +367,7 @@ Incluye la herramienta del enlazador de Visual C++, *link.exe*. La herramienta d
 
      Para obtener más información, vea [/NODEFAULTLIB (Omitir bibliotecas)](/cpp/build/reference/nodefaultlib-ignore-libraries).
 
--   **IgnoreEmbeddedIDL**
+- **IgnoreEmbeddedIDL**
 
      Parámetro **Boolean** opcional.
 
@@ -375,7 +375,7 @@ Incluye la herramienta del enlazador de Visual C++, *link.exe*. La herramienta d
 
      Para obtener más información, vea [/IGNOREIDL (No procesar atributos en MIDL)](/cpp/build/reference/ignoreidl-don-t-process-attributes-into-midl).
 
--   **IgnoreImportLibrary**
+- **IgnoreImportLibrary**
 
      Parámetro **Boolean** opcional.
 
@@ -383,7 +383,7 @@ Incluye la herramienta del enlazador de Visual C++, *link.exe*. La herramienta d
 
      Este parámetro no se corresponde con ninguna opción del enlazador.
 
--   **IgnoreSpecificDefaultLibraries**
+- **IgnoreSpecificDefaultLibraries**
 
      Parámetro **String[]** opcional.
 
@@ -391,7 +391,7 @@ Incluye la herramienta del enlazador de Visual C++, *link.exe*. La herramienta d
 
      Para obtener más información, vea [/NODEFAULTLIB (Omitir bibliotecas)](/cpp/build/reference/nodefaultlib-ignore-libraries).
 
--   **ImageHasSafeExceptionHandlers**
+- **ImageHasSafeExceptionHandlers**
 
      Parámetro **Boolean** opcional.
 
@@ -399,13 +399,13 @@ Incluye la herramienta del enlazador de Visual C++, *link.exe*. La herramienta d
 
      Para obtener más información, vea [/SAFESEH (La imagen tiene controladores de excepciones seguros)](/cpp/build/reference/safeseh-image-has-safe-exception-handlers).
 
--   **ImportLibrary**
+- **ImportLibrary**
 
      Nombre de la biblioteca de importación especificada por el usuario que reemplaza el nombre de biblioteca predeterminado.
 
      Para obtener más información, vea [/IMPLIB (Asignar nombre a la biblioteca de importación)](/cpp/build/reference/implib-name-import-library).
 
--   **KeyContainer**
+- **KeyContainer**
 
      Parámetro **String** opcional.
 
@@ -413,7 +413,7 @@ Incluye la herramienta del enlazador de Visual C++, *link.exe*. La herramienta d
 
      Para obtener más información, vea [/KEYCONTAINER (Especificar un contenedor de claves para firmar un ensamblado)](/cpp/build/reference/keycontainer-specify-a-key-container-to-sign-an-assembly). Consulte también el parámetro **KeyFile** en esta tabla.
 
--   **KeyFile**
+- **KeyFile**
 
      Parámetro **String** opcional.
 
@@ -421,7 +421,7 @@ Incluye la herramienta del enlazador de Visual C++, *link.exe*. La herramienta d
 
      Para obtener más información, vea [/KEYFILE (Especificar una clave o un par de claves para firmar un ensamblado)](/cpp/build/reference/keyfile-specify-key-or-key-pair-to-sign-an-assembly). Consulte también el parámetro **KeyContainer**.
 
--   **LargeAddressAware**
+- **LargeAddressAware**
 
      Parámetro **Boolean** opcional.
 
@@ -429,7 +429,7 @@ Incluye la herramienta del enlazador de Visual C++, *link.exe*. La herramienta d
 
      Para obtener más información, vea [/LARGEADDRESSAWARE (Procesar direcciones largas)](/cpp/build/reference/largeaddressaware-handle-large-addresses).
 
--   **LinkDLL**
+- **LinkDLL**
 
      Parámetro **Boolean** opcional.
 
@@ -437,7 +437,7 @@ Incluye la herramienta del enlazador de Visual C++, *link.exe*. La herramienta d
 
      Para obtener más información, consulte [/DLL (compilar un archivo DLL)](/cpp/build/reference/dll-build-a-dll).
 
--   **LinkErrorReporting**
+- **LinkErrorReporting**
 
      Parámetro **String** opcional.
 
@@ -445,17 +445,17 @@ Incluye la herramienta del enlazador de Visual C++, *link.exe*. La herramienta d
 
      Especifique uno de los valores siguientes, cada uno de los cuales corresponde a una opción de línea de comandos.
 
-    -   **NoErrorReport** - **/ERRORREPORT:NONE**
+    - **NoErrorReport** - **/ERRORREPORT:NONE**
 
-    -   **PromptImmediately** - **/ERRORREPORT:PROMPT**
+    - **PromptImmediately** - **/ERRORREPORT:PROMPT**
 
-    -   **QueueForNextLogin** - **/ERRORREPORT:QUEUE**
+    - **QueueForNextLogin** - **/ERRORREPORT:QUEUE**
 
-    -   **SendErrorReport** - **/ERRORREPORT:SEND**
+    - **SendErrorReport** - **/ERRORREPORT:SEND**
 
     Para obtener más información, vea [/ERRORREPORT (Informar de los errores del compilador)](/cpp/build/reference/errorreport-report-internal-linker-errors).
 
--   **LinkIncremental**
+- **LinkIncremental**
 
      Parámetro **Boolean** opcional.
 
@@ -463,7 +463,7 @@ Incluye la herramienta del enlazador de Visual C++, *link.exe*. La herramienta d
 
      Para obtener más información, vea [/INCREMENTAL (Vincular de forma incremental)](/cpp/build/reference/incremental-link-incrementally).
 
--   **LinkLibraryDependencies**
+- **LinkLibraryDependencies**
 
      Parámetro **Boolean** opcional.
 
@@ -471,7 +471,7 @@ Incluye la herramienta del enlazador de Visual C++, *link.exe*. La herramienta d
 
      Este parámetro no se corresponde con ninguna opción del enlazador.
 
--   **LinkStatus**
+- **LinkStatus**
 
      Parámetro **Boolean** opcional.
 
@@ -479,7 +479,7 @@ Incluye la herramienta del enlazador de Visual C++, *link.exe*. La herramienta d
 
      Para obtener más información, vea el argumento `STATUS` de [/LTCG (Generación de código en tiempo de enlace)](/cpp/build/reference/ltcg-link-time-code-generation).
 
--   **LinkTimeCodeGeneration**
+- **LinkTimeCodeGeneration**
 
      Parámetro **String** opcional.
 
@@ -487,21 +487,21 @@ Incluye la herramienta del enlazador de Visual C++, *link.exe*. La herramienta d
 
      Especifique uno de los valores siguientes, cada uno de los cuales corresponde a una opción de línea de comandos.
 
-    -   **Default** - *\<none>*
+    - **Default** - *\<none>*
 
-    -   **UseLinkTimeCodeGeneration** - **LTCG**
+    - **UseLinkTimeCodeGeneration** - **LTCG**
 
-    -   **PGInstrument** - **/LTCG:PGInstrument**
+    - **PGInstrument** - **/LTCG:PGInstrument**
 
-    -   **PGOptimization** - **/LTCG:PGOptimize**
+    - **PGOptimization** - **/LTCG:PGOptimize**
 
-    -   **PGUpdate**
+    - **PGUpdate**
 
          \- **/LTCG:PGUpdate**
 
     Para obtener más información, vea [/LTCG (Generación de código en tiempo de enlace)](/cpp/build/reference/ltcg-link-time-code-generation).
 
--   **ManifestFile**
+- **ManifestFile**
 
      Parámetro **String** opcional.
 
@@ -509,7 +509,7 @@ Incluye la herramienta del enlazador de Visual C++, *link.exe*. La herramienta d
 
      Para obtener más información, vea [/MANIFESTFILE (Nombre del archivo de manifiesto)](/cpp/build/reference/manifestfile-name-manifest-file).
 
--   **MapExports**
+- **MapExports**
 
      Parámetro **Boolean** opcional.
 
@@ -517,13 +517,13 @@ Incluye la herramienta del enlazador de Visual C++, *link.exe*. La herramienta d
 
      Para obtener más información, vea el argumento `EXPORTS` de [/MAPINFO (Incluir información en el archivo de asignaciones)](/cpp/build/reference/mapinfo-include-information-in-mapfile).
 
--   **MapFileName**
+- **MapFileName**
 
      Parámetro **String** opcional.
 
      Cambia el nombre de archivo de asignación predeterminado por el nombre de archivo especificado.
 
--   **MergedIDLBaseFileName**
+- **MergedIDLBaseFileName**
 
      Parámetro **String** opcional.
 
@@ -531,7 +531,7 @@ Incluye la herramienta del enlazador de Visual C++, *link.exe*. La herramienta d
 
      Para obtener más información, vea [/IDLOUT (Dar nombre a los archivos de resultados de MIDL)](/cpp/build/reference/idlout-name-midl-output-files).
 
--   **MergeSections**
+- **MergeSections**
 
      Parámetro **String** opcional.
 
@@ -539,7 +539,7 @@ Incluye la herramienta del enlazador de Visual C++, *link.exe*. La herramienta d
 
      Para obtener más información, vea [/MERGE (Combinar secciones)](/cpp/build/reference/merge-combine-sections).
 
--   **MidlCommandFile**
+- **MidlCommandFile**
 
      Parámetro **String** opcional.
 
@@ -547,13 +547,13 @@ Incluye la herramienta del enlazador de Visual C++, *link.exe*. La herramienta d
 
      Para obtener más información, vea [/MIDL (Especificar las opciones de la línea de comandos de MIDL)](/cpp/build/reference/midl-specify-midl-command-line-options).
 
--   **MinimumRequiredVersion**
+- **MinimumRequiredVersion**
 
      Parámetro **String** opcional.
 
      Especifica la versión mínima requerida del subsistema. Los argumentos son números decimales comprendidos en el intervalo de 0 a 65535.
 
--   **ModuleDefinitionFile**
+- **ModuleDefinitionFile**
 
      Parámetro **String** opcional.
 
@@ -561,7 +561,7 @@ Incluye la herramienta del enlazador de Visual C++, *link.exe*. La herramienta d
 
      Para obtener más información, vea [/DEF (Especificar un archivo de definición de módulos)](/cpp/build/reference/def-specify-module-definition-file).
 
--   **MSDOSStubFileName**
+- **MSDOSStubFileName**
 
      Parámetro **String** opcional.
 
@@ -569,7 +569,7 @@ Incluye la herramienta del enlazador de Visual C++, *link.exe*. La herramienta d
 
      Para obtener más información, vea [/STUB (Nombre del archivo de código auxiliar de MS-DOS)](/cpp/build/reference/stub-ms-dos-stub-file-name).
 
--   **NoEntryPoint**
+- **NoEntryPoint**
 
      Parámetro **Boolean** opcional.
 
@@ -577,13 +577,13 @@ Incluye la herramienta del enlazador de Visual C++, *link.exe*. La herramienta d
 
      Para obtener más información, vea [/NOENTRY (Sin punto de entrada)](/cpp/build/reference/noentry-no-entry-point).
 
--   **ObjectFiles**
+- **ObjectFiles**
 
      Parámetro **String[]** implícito.
 
      Especifica los archivos objeto vinculados.
 
--   **OptimizeReferences**
+- **OptimizeReferences**
 
      Parámetro **Boolean** opcional.
 
@@ -591,7 +591,7 @@ Incluye la herramienta del enlazador de Visual C++, *link.exe*. La herramienta d
 
      Para obtener más información, consulte el argumento `REF` en [/OPT (Optimizaciones)](/cpp/build/reference/opt-optimizations).
 
--   **OutputFile**
+- **OutputFile**
 
      Parámetro **String** opcional.
 
@@ -599,19 +599,19 @@ Incluye la herramienta del enlazador de Visual C++, *link.exe*. La herramienta d
 
      Para obtener más información, vea [/OUT (Nombre del archivo de resultados)](/cpp/build/reference/out-output-file-name).
 
--   **PerUserRedirection**
+- **PerUserRedirection**
 
      Parámetro **Boolean** opcional.
 
      Si `true`, y la opción Registrar resultados está activada, hace que las escrituras en la clave del registro **HKEY_CLASSES_ROOT** se redirijan a **HKEY_CURRENT_USER**.
 
--   **PreprocessOutput**
+- **PreprocessOutput**
 
      Parámetro `ITaskItem[]` opcional.
 
      Define una matriz de elementos de elementos de salida del preprocesador que las tareas pueden consumir y emitir.
 
--   **PreventDllBinding**
+- **PreventDllBinding**
 
      Parámetro **Boolean** opcional.
 
@@ -619,7 +619,7 @@ Incluye la herramienta del enlazador de Visual C++, *link.exe*. La herramienta d
 
      Para obtener más información, vea [/ALLOWBIND (Evitar el enlace de archivos DLL)](/cpp/build/reference/allowbind-prevent-dll-binding).
 
--   **Profile**
+- **Profile**
 
      Parámetro **Boolean** opcional.
 
@@ -627,7 +627,7 @@ Incluye la herramienta del enlazador de Visual C++, *link.exe*. La herramienta d
 
      Para obtener más información, vea [/PROFILE (Generador de perfiles de Herramientas de rendimiento)](/cpp/build/reference/profile-performance-tools-profiler).
 
--   **ProfileGuidedDatabase**
+- **ProfileGuidedDatabase**
 
      Parámetro **String** opcional.
 
@@ -635,7 +635,7 @@ Incluye la herramienta del enlazador de Visual C++, *link.exe*. La herramienta d
 
      Para obtener más información, vea [/PGD (Especificar la base de datos para las optimizaciones guiadas por perfiles)](/cpp/build/reference/pgd-specify-database-for-profile-guided-optimizations).
 
--   **ProgramDatabaseFile**
+- **ProgramDatabaseFile**
 
      Parámetro **String** opcional.
 
@@ -643,7 +643,7 @@ Incluye la herramienta del enlazador de Visual C++, *link.exe*. La herramienta d
 
      Para obtener más información, vea [/PDB (Utilizar la base de datos de programa)](/cpp/build/reference/pdb-use-program-database).
 
--   **RandomizedBaseAddress**
+- **RandomizedBaseAddress**
 
      Parámetro **Boolean** opcional.
 
@@ -651,13 +651,13 @@ Incluye la herramienta del enlazador de Visual C++, *link.exe*. La herramienta d
 
      Para obtener más información, consulte [/DYNAMICBASE (utilizar selección aleatoria del diseño del espacio de direcciones)](/cpp/build/reference/dynamicbase-use-address-space-layout-randomization).
 
--   **RegisterOutput**
+- **RegisterOutput**
 
      Parámetro **Boolean** opcional.
 
      Si `true`, registra la salida principal de esta compilación.
 
--   **SectionAlignment**
+- **SectionAlignment**
 
      Parámetro **Integer** opcional.
 
@@ -665,7 +665,7 @@ Incluye la herramienta del enlazador de Visual C++, *link.exe*. La herramienta d
 
      Para obtener más información, vea [/ALIGN (Alineación de sección)](/cpp/build/reference/align-section-alignment).
 
--   **SetChecksum**
+- **SetChecksum**
 
      Parámetro **Boolean** opcional.
 
@@ -673,7 +673,7 @@ Incluye la herramienta del enlazador de Visual C++, *link.exe*. La herramienta d
 
      Para obtener más información, vea [/RELEASE (Establecer la suma de comprobación)](/cpp/build/reference/release-set-the-checksum).
 
--   **ShowProgress**
+- **ShowProgress**
 
      Parámetro **String** opcional.
 
@@ -681,29 +681,29 @@ Incluye la herramienta del enlazador de Visual C++, *link.exe*. La herramienta d
 
      Especifique uno de los valores siguientes, cada uno de los cuales corresponde a una opción de línea de comandos.
 
-    -   **NotSet** - *\<none>*
+    - **NotSet** - *\<none>*
 
-    -   **LinkVerbose** - **/VERBOSE**
+    - **LinkVerbose** - **/VERBOSE**
 
-    -   **LinkVerboseLib** - **/VERBOSE:Lib**
+    - **LinkVerboseLib** - **/VERBOSE:Lib**
 
-    -   **LinkVerboseICF** - **/VERBOSE:ICF**
+    - **LinkVerboseICF** - **/VERBOSE:ICF**
 
-    -   **LinkVerboseREF** - **/VERBOSE:REF**
+    - **LinkVerboseREF** - **/VERBOSE:REF**
 
-    -   **LinkVerboseSAFESEH** - **/VERBOSE:SAFESEH**
+    - **LinkVerboseSAFESEH** - **/VERBOSE:SAFESEH**
 
-    -   **LinkVerboseCLR** - **/VERBOSE:CLR**
+    - **LinkVerboseCLR** - **/VERBOSE:CLR**
 
     Para obtener más información, vea [/VERBOSE (Mostrar mensajes de progreso)](/cpp/build/reference/verbose-print-progress-messages).
 
--   **Sources**
+- **Sources**
 
      Parámetro `ITaskItem[]` requerido.
 
      Define una matriz de elementos de archivo origen de MSBuild que las tareas pueden consumir y emitir.
 
--   **SpecifySectionAttributes**
+- **SpecifySectionAttributes**
 
      Parámetro **String** opcional.
 
@@ -711,7 +711,7 @@ Incluye la herramienta del enlazador de Visual C++, *link.exe*. La herramienta d
 
      Para obtener más información, vea [/SECTION (Especificar los atributos de la sección)](/cpp/build/reference/section-specify-section-attributes).
 
--   **StackCommitSize**
+- **StackCommitSize**
 
      Parámetro **String** opcional.
 
@@ -719,7 +719,7 @@ Incluye la herramienta del enlazador de Visual C++, *link.exe*. La herramienta d
 
      Para obtener más información, vea el argumento `commit` de [/STACK (Asignaciones de la pila)](/cpp/build/reference/stack-stack-allocations).
 
--   **StackReserveSize**
+- **StackReserveSize**
 
      Parámetro **String** opcional.
 
@@ -727,7 +727,7 @@ Incluye la herramienta del enlazador de Visual C++, *link.exe*. La herramienta d
 
      Para obtener más información, vea el argumento `reserve` de [/STACK (Asignaciones de la pila)](/cpp/build/reference/stack-stack-allocations).
 
--   **StripPrivateSymbols**
+- **StripPrivateSymbols**
 
      Parámetro **String** opcional.
 
@@ -735,7 +735,7 @@ Incluye la herramienta del enlazador de Visual C++, *link.exe*. La herramienta d
 
      Para obtener más información, vea [/PDBSTRIPPED (Quitar símbolos privados)](/cpp/build/reference/pdbstripped-strip-private-symbols).
 
--   **SubSystem**
+- **SubSystem**
 
      Parámetro **String** opcional.
 
@@ -743,29 +743,29 @@ Incluye la herramienta del enlazador de Visual C++, *link.exe*. La herramienta d
 
      Especifique uno de los valores siguientes, cada uno de los cuales corresponde a una opción de línea de comandos.
 
-    -   **NotSet** - *\<none>*
+    - **NotSet** - *\<none>*
 
-    -   **Console** - **/SUBSYSTEM:CONSOLE**
+    - **Console** - **/SUBSYSTEM:CONSOLE**
 
-    -   **Windows** - **/SUBSYSTEM:WINDOWS**
+    - **Windows** - **/SUBSYSTEM:WINDOWS**
 
-    -   **Native** - **/SUBSYSTEM:NATIVE**
+    - **Native** - **/SUBSYSTEM:NATIVE**
 
-    -   **EFI Application** - **/SUBSYSTEM:EFI_APPLICATION**
+    - **EFI Application** - **/SUBSYSTEM:EFI_APPLICATION**
 
-    -   **EFI Boot Service Driver** - **/SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER**
+    - **EFI Boot Service Driver** - **/SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER**
 
-    -   **EFI ROM** - **/SUBSYSTEM:EFI_ROM**
+    - **EFI ROM** - **/SUBSYSTEM:EFI_ROM**
 
-    -   **EFI Runtime** - **/SUBSYSTEM:EFI_RUNTIME_DRIVER**
+    - **EFI Runtime** - **/SUBSYSTEM:EFI_RUNTIME_DRIVER**
 
-    -   **WindowsCE** - **/SUBSYSTEM:WINDOWSCE**
+    - **WindowsCE** - **/SUBSYSTEM:WINDOWSCE**
 
-    -   **POSIX** - **/SUBSYSTEM:POSIX**
+    - **POSIX** - **/SUBSYSTEM:POSIX**
 
     Para obtener más información, vea [/SUBSYSTEM (Especificar subsistema)](/cpp/build/reference/subsystem-specify-subsystem).
 
--   **SupportNobindOfDelayLoadedDLL**
+- **SupportNobindOfDelayLoadedDLL**
 
      Parámetro **Boolean** opcional.
 
@@ -773,7 +773,7 @@ Incluye la herramienta del enlazador de Visual C++, *link.exe*. La herramienta d
 
      Para obtener más información, vea el argumento `NOBIND` de [/DELAY (Configuración de las importaciones de carga retrasada)](/cpp/build/reference/delay-delay-load-import-settings).
 
--   **SupportUnloadOfDelayLoadedDLL**
+- **SupportUnloadOfDelayLoadedDLL**
 
      Parámetro **Boolean** opcional.
 
@@ -781,7 +781,7 @@ Incluye la herramienta del enlazador de Visual C++, *link.exe*. La herramienta d
 
      Para obtener más información, vea el argumento `UNLOAD` de [/DELAY (Configuración de las importaciones de carga retrasada)](/cpp/build/reference/delay-delay-load-import-settings).
 
--   **SuppressStartupBanner**
+- **SuppressStartupBanner**
 
      Parámetro **Boolean** opcional.
 
@@ -789,7 +789,7 @@ Incluye la herramienta del enlazador de Visual C++, *link.exe*. La herramienta d
 
      Para obtener más información, vea [/NOLOGO (Suprimir el titular de inicio) (Enlazador)](/cpp/build/reference/nologo-suppress-startup-banner-linker).
 
--   **SwapRunFromCD**
+- **SwapRunFromCD**
 
      Parámetro **Boolean** opcional.
 
@@ -797,7 +797,7 @@ Incluye la herramienta del enlazador de Visual C++, *link.exe*. La herramienta d
 
      Para obtener más información, vea el argumento `CD` de [/SWAPRUN (Cargar resultados del enlazador en el archivo de intercambio)](/cpp/build/reference/swaprun-load-linker-output-to-swap-file). Consulte también el parámetro **SwapRunFromNET**.
 
--   **SwapRunFromNET**
+- **SwapRunFromNET**
 
      Parámetro **Boolean** opcional.
 
@@ -805,7 +805,7 @@ Incluye la herramienta del enlazador de Visual C++, *link.exe*. La herramienta d
 
      Para obtener más información, vea el argumento `NET` de [/SWAPRUN (Cargar resultados del enlazador en el archivo de intercambio)](/cpp/build/reference/swaprun-load-linker-output-to-swap-file). Consulte también el parámetro **SwapRunFromCD** en esta tabla.
 
--   **TargetMachine**
+- **TargetMachine**
 
      Parámetro **String** opcional.
 
@@ -813,33 +813,33 @@ Incluye la herramienta del enlazador de Visual C++, *link.exe*. La herramienta d
 
      Especifique uno de los valores siguientes, cada uno de los cuales corresponde a una opción de línea de comandos.
 
-    -   **NotSet** - *\<none>*
+    - **NotSet** - *\<none>*
 
-    -   **MachineARM** - **/MACHINE:ARM**
+    - **MachineARM** - **/MACHINE:ARM**
 
-    -   **MachineEBC** - **/MACHINE:EBC**
+    - **MachineEBC** - **/MACHINE:EBC**
 
-    -   **MachineIA64** - **/MACHINE:IA64**
+    - **MachineIA64** - **/MACHINE:IA64**
 
-    -   **MachineMIPS** - **/MACHINE:MIPS**
+    - **MachineMIPS** - **/MACHINE:MIPS**
 
-    -   **MachineMIPS16** - **/MACHINE:MIPS16**
+    - **MachineMIPS16** - **/MACHINE:MIPS16**
 
-    -   **MachineMIPSFPU** - **/MACHINE:MIPSFPU**
+    - **MachineMIPSFPU** - **/MACHINE:MIPSFPU**
 
-    -   **MachineMIPSFPU16** - **/MACHINE:MIPSFPU16**
+    - **MachineMIPSFPU16** - **/MACHINE:MIPSFPU16**
 
-    -   **MachineSH4** - **/MACHINE:SH4**
+    - **MachineSH4** - **/MACHINE:SH4**
 
-    -   **MachineTHUMB** - **/MACHINE:THUMB**
+    - **MachineTHUMB** - **/MACHINE:THUMB**
 
-    -   **MachineX64** - **/MACHINE:X64**
+    - **MachineX64** - **/MACHINE:X64**
 
-    -   **MachineX86** - **/MACHINE:X86**
+    - **MachineX86** - **/MACHINE:X86**
 
     Para obtener más información, vea [/MACHINE (Especificar la plataforma de destino)](/cpp/build/reference/machine-specify-target-platform).
 
--   **TerminalServerAware**
+- **TerminalServerAware**
 
      Parámetro **Boolean** opcional.
 
@@ -847,13 +847,13 @@ Incluye la herramienta del enlazador de Visual C++, *link.exe*. La herramienta d
 
      Para obtener más información, vea [/TSAWARE (Crear una aplicación que reconozca Terminal Server)](/cpp/build/reference/tsaware-create-terminal-server-aware-application).
 
--   **TrackerLogDirectory**
+- **TrackerLogDirectory**
 
      Parámetro **String** opcional.
 
      Especifica el directorio del registro de seguimiento.
 
--   **TreatLinkerWarningAsErrors**
+- **TreatLinkerWarningAsErrors**
 
      Parámetro **Boolean** opcional.
 
@@ -861,7 +861,7 @@ Incluye la herramienta del enlazador de Visual C++, *link.exe*. La herramienta d
 
      Para obtener más información, vea [/WX (Tratar advertencias del enlazador como errores)](/cpp/build/reference/wx-treat-linker-warnings-as-errors).
 
--   **TurnOffAssemblyGeneration**
+- **TurnOffAssemblyGeneration**
 
      Parámetro **Boolean** opcional.
 
@@ -869,7 +869,7 @@ Incluye la herramienta del enlazador de Visual C++, *link.exe*. La herramienta d
 
      Para obtener más información, vea [/NOASSEMBLY (Crear un módulo MSIL)](/cpp/build/reference/noassembly-create-a-msil-module).
 
--   **TypeLibraryFile**
+- **TypeLibraryFile**
 
      Parámetro **String** opcional.
 
@@ -877,7 +877,7 @@ Incluye la herramienta del enlazador de Visual C++, *link.exe*. La herramienta d
 
      Para obtener más información, vea [/TLBOUT (Dar nombre a un archivo .TLB)](/cpp/build/reference/tlbout-name-dot-tlb-file).
 
--   **TypeLibraryResourceID**
+- **TypeLibraryResourceID**
 
      Parámetro **Integer** opcional.
 
@@ -885,7 +885,7 @@ Incluye la herramienta del enlazador de Visual C++, *link.exe*. La herramienta d
 
      Para obtener más información, vea [/TLBID (Especificar un identificador de recursos para una biblioteca de tipos)](/cpp/build/reference/tlbid-specify-resource-id-for-typelib).
 
--   **UACExecutionLevel**
+- **UACExecutionLevel**
 
      Parámetro **String** opcional.
 
@@ -893,15 +893,15 @@ Incluye la herramienta del enlazador de Visual C++, *link.exe*. La herramienta d
 
      Especifique uno de los valores siguientes, cada uno de los cuales corresponde a una opción de línea de comandos.
 
-    -   **AsInvoker** - `level='asInvoker'`
+    - **AsInvoker** - `level='asInvoker'`
 
-    -   **HighestAvailable** - `level='highestAvailable'`
+    - **HighestAvailable** - `level='highestAvailable'`
 
-    -   **RequireAdministrator** - `level='requireAdministrator'`
+    - **RequireAdministrator** - `level='requireAdministrator'`
 
     Para obtener más información, consulte el argumento `level` de [/MANIFESTUAC (insertar información de UAC en el manifiesto)](/cpp/build/reference/manifestuac-embeds-uac-information-in-manifest).
 
--   **UACUIAccess**
+- **UACUIAccess**
 
      Parámetro **Boolean** opcional.
 
@@ -909,13 +909,13 @@ Incluye la herramienta del enlazador de Visual C++, *link.exe*. La herramienta d
 
      Para obtener más información, consulte el argumento `uiAccess` de [/MANIFESTUAC (insertar información de UAC en el manifiesto)](/cpp/build/reference/manifestuac-embeds-uac-information-in-manifest).
 
--   **UseLibraryDependencyInputs**
+- **UseLibraryDependencyInputs**
 
      Parámetro **Boolean** opcional.
 
      Si `true`, se utilizan las entradas a la herramienta bibliotecario en lugar del propio archivo de biblioteca cuando se vinculan resultados de biblioteca de dependencias del proyecto.
 
--   **Versión**
+- **Versión**
 
      Parámetro **String** opcional.
 

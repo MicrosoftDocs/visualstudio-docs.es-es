@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Obtenga información sobre la ventaja de Office 365 que se incluye en algunas suscripciones de Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 6d6fdcbe7ae5bb5182f7c123120d632a4221f642
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 9f3df6923101bf5b8b4a2592460e96b57416c1c8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841083"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62947730"
 ---
 # <a name="office-365-pro-plus-in-visual-studio-subscriptions"></a>Office 365 Pro Plus en suscripciones de Visual Studio
 
@@ -48,7 +48,6 @@ Siga estos pasos para descargar y activar Office 365 Pro Plus:
 
 Si planea desarrollar aplicaciones para Office, querrá activar su [suscripción de Office Developer](vs-office-dev.md)
 
-
 ## <a name="eligibility"></a>Elegibilidad
 
 | Nivel de suscripción                                                 |     Canales                                            | Prestación                                                          | ¿Renovable?    |
@@ -63,14 +62,12 @@ Si planea desarrollar aplicaciones para Office, querrá activar su [suscripción
 
 <sup>1</sup>  *Incluye:  No para reventa (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT Software & Services Developer, BizSpark, Most Valuable Professional (MVP), Regional Director (RD), MCT Software & Services, Imagine, Microsoft Partner Network.*
 
-
 > [!NOTE]
 > Microsoft ya no ofrece suscripciones anuales ni de Visual Studio Professional ni de Visual Studio Enterprise en las suscripciones de nube. Esto no supone cambio alguno en la experiencia actual de los clientes y ni en su capacidad para renovar, aumentar, reducir o cancelar las suscripciones. Conviene que los clientes nuevos vayan a [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) para explorar las diferentes opciones de compra de Visual Studio.
-
 
 ¿No sabe con seguridad qué suscripción usa?  Conéctese a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas las suscripciones asignadas a su dirección de correo electrónico. Si no ve todas las suscripciones, es posible que haya una o varias asignadas a una dirección de correo electrónico diferente.  Debe iniciar sesión con esa dirección de correo electrónico para ver esas suscripciones.
 
 ## <a name="support-resources"></a>Recursos de soporte técnico
--  Para obtener soporte técnico con cualquier componente de EMS, visite https://support.microsoft.com/allproducts y seleccione el producto.
--  Para obtener ayuda con las ventas, las suscripciones, las cuentas y la facturación para suscripciones de Visual Studio, póngase en contacto con el [soporte para suscripciones](https://visualstudio.microsoft.com/subscriptions/support/) de Visual Studio.
--  ¿Tiene alguna pregunta sobre el IDE de Visual Studio, Azure DevOps u otros productos o servicios de Visual Studio?  Visite el [soporte técnico de Visual Studio](https://visualstudio.microsoft.com/support/).
+- Para obtener soporte técnico con cualquier componente de EMS, visite https://support.microsoft.com/allproducts y seleccione el producto.
+- Para obtener ayuda con las ventas, las suscripciones, las cuentas y la facturación para suscripciones de Visual Studio, póngase en contacto con el [soporte para suscripciones](https://visualstudio.microsoft.com/subscriptions/support/) de Visual Studio.
+- ¿Tiene alguna pregunta sobre el IDE de Visual Studio, Azure DevOps u otros productos o servicios de Visual Studio?  Visite el [soporte técnico de Visual Studio](https://visualstudio.microsoft.com/support/).

@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 02/15/2018
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
-ms.openlocfilehash: 17067e9b19a36f198a6653f0c354e6ce3004eaeb
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: ca216f3f2a65e1c17e2ab8cc1ca17f6f707afb79
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317353"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62938473"
 ---
 # <a name="set-up-a-git-repository"></a>Configurar un repositorio Git
 
@@ -44,7 +44,7 @@ Para configurar un repositorio Git, ejecute los siguientes pasos:
 
 Si dispone de un proyecto que _aún no está_ en control de versiones, siga estos pasos para configurarlo en Git:
 
-1.  Seleccione el nombre de la solución en el Panel de solución de Visual Studio para Mac.
+1. Seleccione el nombre de la solución en el Panel de solución de Visual Studio para Mac.
 
 2. En la barra de menús, seleccione **Control de versiones > Publicar en control de versiones** para mostrar el cuadro de diálogo **Seleccionar repositorio**:
 

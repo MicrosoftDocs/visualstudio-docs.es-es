@@ -7,12 +7,12 @@ ms.date: 03/24/2019
 ms.topic: conceptual
 description: Más información sobre cómo consultar el número máximo de suscripciones asignadas en el portal de administración
 searchscope: VS Subscription
-ms.openlocfilehash: cdeddc7bbd62c88096e61753351f3609197d3c72
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.openlocfilehash: c263c610b140d3662cb17ba9f2c3d3f1a1907ab7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58572757"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62965445"
 ---
 # <a name="using-the-maximum-usage-feature-to-track-the-number-of-assigned-subscriptions"></a>Uso de la característica Uso máximo para realizar un seguimiento del número de suscripciones asignadas
 
@@ -32,7 +32,7 @@ Para consultar el número máximo de suscripciones asignadas a cualquier contrat
     > [!div class="mx-imgBorder"]
     > ![Resumen de uso máximo](_img/maximum-usage/maximum-usage-summary.png)
 
-4.  Para ver el número máximo de suscripciones asignadas a toda la duración del contrato, haga clic en la pestaña **Full-Term** (Período completo).
+4. Para ver el número máximo de suscripciones asignadas a toda la duración del contrato, haga clic en la pestaña **Full-Term** (Período completo).
 
 ## <a name="viewing-assignment-history"></a>Visualización del historial de asignaciones
 

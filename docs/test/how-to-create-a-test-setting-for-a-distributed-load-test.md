@@ -8,14 +8,14 @@ ms.assetid: b63d4b71-3b74-4872-b2d1-f0bd1a9a8544
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9f8cb4c3c2cba9f7734aa50c95f28bb6cef6bcba
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1e55e4fd2e67c07110fcd3351e492ec94ccc47fa
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928886"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950246"
 ---
-# <a name="how-to-create-a-test-setting-for-a-distributed-load-test"></a>Filtrar Crear una configuración de pruebas para una prueba de carga distribuida
+# <a name="how-to-create-a-test-setting-for-a-distributed-load-test"></a>Procedimiento Crear una configuración de pruebas para una prueba de carga distribuida
 
 Establezca la *configuración de pruebas* de sus pruebas de carga para que pueda distribuir dichas pruebas entre varias máquinas por medio de agentes de prueba y controladores de pruebas. También puede establecer la configuración de pruebas para usar *adaptadores de datos de diagnóstico*, que especifican los tipos de datos que se van a recopilar o cómo afectan a los equipos de pruebas cuando se ejecutan las pruebas de carga desde Visual Studio.
 
@@ -25,11 +25,11 @@ Por ejemplo, puede usar el adaptador de datos de diagnóstico de Generador de pe
 
 La configuración de pruebas para Visual Studio se almacena en un archivo. La configuración de pruebas define la siguiente información sobre cada rol:
 
--   Conjunto de roles que se requieren para la aplicación objeto de la prueba
+- Conjunto de roles que se requieren para la aplicación objeto de la prueba
 
--   Rol que se va a usar para realizar las pruebas
+- Rol que se va a usar para realizar las pruebas
 
--   Adaptadores de datos de diagnóstico que se van a usar para cada rol
+- Adaptadores de datos de diagnóstico que se van a usar para cada rol
 
 Cuando se ejecutan pruebas, se selecciona la configuración de pruebas que se va a usar como configuración activa según los requisitos para la ejecución de pruebas en cuestión. El archivo de la configuración de pruebas se almacena como parte de la solución. El nombre de archivo tiene la extensión *.testsettings*.
 
@@ -43,33 +43,33 @@ Siga estos procedimientos con el fin de crear y quitar de una solución una conf
 
 ### <a name="to-add-a-test-settings-for-a-distributed-load-test"></a>Para agregar una configuración de pruebas para una prueba de carga distribuida
 
-1.  En el **Explorador de soluciones**, haga clic con el botón derecho en **Elementos de la solución**, elija **Agregar** y luego **Nuevo elemento**.
+1. En el **Explorador de soluciones**, haga clic con el botón derecho en **Elementos de la solución**, elija **Agregar** y luego **Nuevo elemento**.
 
      Aparecerá el cuadro de diálogo **Agregar nuevo elemento**.
 
-2.  En el panel **Plantillas instaladas**, elija **Configuración de pruebas**.
+2. En el panel **Plantillas instaladas**, elija **Configuración de pruebas**.
 
-3.  (Opcional) En el cuadro **Nombre**, cambie el nombre del archivo de la configuración de pruebas.
+3. (Opcional) En el cuadro **Nombre**, cambie el nombre del archivo de la configuración de pruebas.
 
-4.  Haga clic en **Agregar**.
+4. Haga clic en **Agregar**.
 
      El nuevo archivo de la configuración de pruebas aparece en el **Explorador de soluciones**, en la carpeta **Elementos de la solución**.
 
     > [!NOTE]
     > La lista de configuraciones de pruebas que se muestra en Visual Studio Enterprise procede de la lista de archivos de configuración de pruebas de la carpeta **Elementos de la solución**. Por ejemplo, se muestran los archivos de configuración de pruebas en la carpeta **Elementos de la solución** cuando se usa la opción **Seleccionar configuración de pruebas activa** en el menú **Prueba**. Esto significa que, si se mueve un archivo de configuración de pruebas a otra ubicación de la jerarquía de la solución, ya no podrá usarse como configuración de pruebas en el entorno de desarrollo integrado de Visual Studio.
 
-5.  Se muestra el cuadro de diálogo **Configuración de pruebas**. La página **General** está seleccionada.
+5. Se muestra el cuadro de diálogo **Configuración de pruebas**. La página **General** está seleccionada.
 
      Ahora, puede modificar y guardar los valores de la configuración de pruebas.
 
     > [!NOTE]
     > Cada configuración de pruebas que se crea aparece como una opción para las opciones **Seleccionar configuración de pruebas activa** y **Editar configuraciones de pruebas** del menú **Prueba**.
 
-6.  En **Nombre**, escriba el nombre de la configuración de pruebas.
+6. En **Nombre**, escriba el nombre de la configuración de pruebas.
 
-7.  (Opcional) Bajo **Descripción**, escriba una descripción de la configuración de pruebas de modo que otros miembros del equipo sepan para qué sirve.
+7. (Opcional) Bajo **Descripción**, escriba una descripción de la configuración de pruebas de modo que otros miembros del equipo sepan para qué sirve.
 
-8.  (Opcional) Para seleccionar el esquema de nombre predeterminado para las ejecuciones de pruebas, seleccione **Esquema de nombre predeterminado**. Para definir un esquema de nombre propio, seleccione **Esquema definido por el usuario** y, después, escriba el texto que quiera en **Texto de prefijo**. Para anexar la marca de fecha y hora al nombre de la ejecución de pruebas, seleccione **Anexar marca de fecha y hora**.
+8. (Opcional) Para seleccionar el esquema de nombre predeterminado para las ejecuciones de pruebas, seleccione **Esquema de nombre predeterminado**. Para definir un esquema de nombre propio, seleccione **Esquema definido por el usuario** y, después, escriba el texto que quiera en **Texto de prefijo**. Para anexar la marca de fecha y hora al nombre de la ejecución de pruebas, seleccione **Anexar marca de fecha y hora**.
 
 9. Elija **Roles**.
 
@@ -154,27 +154,27 @@ Siga estos procedimientos con el fin de crear y quitar de una solución una conf
 
      Aparecerá la página **Scripts de instalación y limpieza**.
 
-    1.  Escriba la ubicación del archivo de script en **Script de configuración** o elija los puntos suspensivos (**…**) para buscar el script de configuración.
+    1. Escriba la ubicación del archivo de script en **Script de configuración** o elija los puntos suspensivos (**…**) para buscar el script de configuración.
 
-    2.  Escriba la ubicación del archivo de script en **Script de limpieza** o elija los puntos suspensivos (**…**) para buscar el script de limpieza.
+    2. Escriba la ubicación del archivo de script en **Script de limpieza** o elija los puntos suspensivos (**…**) para buscar el script de limpieza.
 
 24. Para ejecutar las pruebas con un host diferente, elija **Hosts**.
 
-    1.  En **Tipo de host**, compruebe que está seleccionado **Predeterminado**.
+    1. En **Tipo de host**, compruebe que está seleccionado **Predeterminado**.
 
         > [!NOTE]
         > No se admite **ASP.NET** en **Tipo de host** en las pruebas de carga.
 
-    2.  Use la lista desplegable **Ejecutar pruebas en procesos de 32 bits o 64 bits** para seleccionar si quiere que las pruebas unitarias y de rendimiento web de la prueba de carga se ejecuten como procesos de 32 bits o de 64 bits.
+    2. Use la lista desplegable **Ejecutar pruebas en procesos de 32 bits o 64 bits** para seleccionar si quiere que las pruebas unitarias y de rendimiento web de la prueba de carga se ejecuten como procesos de 32 bits o de 64 bits.
 
         > [!NOTE]
         > Para obtener la máxima flexibilidad, debe compilar los proyectos de prueba de carga y rendimiento web con la configuración **Any CPU** (Cualquier CPU). Después, se pueden ejecutar en ambos agentes de 32 y 64 bits. Compilar proyectos de prueba de carga y rendimiento web con la configuración de **64 bits** no proporciona ninguna ventaja.
 
 25. (Opcional) Para limitar el tiempo de cada serie de pruebas y de cada prueba individual, elija **Tiempos de espera de la prueba**.
 
-    1.  Para anular una ejecución de pruebas cuando se supere un límite de tiempo, seleccione **Anular una ejecución de pruebas si su tiempo de ejecución total supera** y, después, escriba un valor para este límite.
+    1. Para anular una ejecución de pruebas cuando se supere un límite de tiempo, seleccione **Anular una ejecución de pruebas si su tiempo de ejecución total supera** y, después, escriba un valor para este límite.
 
-    2.  Para que se produzca un error en una prueba individual cuando se supere un límite de tiempo, seleccione **Marcar una prueba individual como con errores si su tiempo de ejecución supera** y, después, escriba un valor para este límite.
+    2. Para que se produzca un error en una prueba individual cuando se supere un límite de tiempo, seleccione **Marcar una prueba individual como con errores si su tiempo de ejecución supera** y, después, escriba un valor para este límite.
 
 26. Omita **Prueba unitaria**. Las pruebas de carga no usan estas configuraciones.
 

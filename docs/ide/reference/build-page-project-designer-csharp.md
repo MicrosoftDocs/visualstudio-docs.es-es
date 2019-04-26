@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 330c8bb033a167b03f62cf4fda95a58ea08ccd92
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f9aa586f5036c4aa2c321f2dda8333ad4342e165
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922152"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62791674"
 ---
 # <a name="build-page-project-designer-c"></a>Compilar (Página, Diseñador de proyectos) (C#)
 Use la página **Compilar** del **Diseñador de proyectos** para especificar las propiedades de configuración de compilación del proyecto. Esta página se aplica solo a proyectos de [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)].
@@ -56,12 +56,11 @@ Si ejecuta una aplicación como una aplicación de 64 bits, el tamaño del punte
 
 Esta casilla solo está disponible si se cumplen todas las condiciones siguientes:
 
--   En **Compilar página**, la lista **Destino de la plataforma** está establecida en **Cualquier CPU**.
+- En **Compilar página**, la lista **Destino de la plataforma** está establecida en **Cualquier CPU**.
 
--   En la **Página de aplicación**, la lista **Tipo de salida** especifica que el proyecto es una aplicación.
+- En la **Página de aplicación**, la lista **Tipo de salida** especifica que el proyecto es una aplicación.
 
--   En la **Página de aplicación**, la lista **Marco de trabajo de destino** especifica .NET Framework 4.5.
-
+- En la **Página de aplicación**, la lista **Marco de trabajo de destino** especifica .NET Framework 4.5.
 
 **Permitir código no seguro** Permite la compilación de código en el que se usa la palabra clave [unsafe](/dotnet/csharp/language-reference/keywords/unsafe). Para obtener más información, consulte [/unsafe (Opciones del compilador de C#)](/dotnet/csharp/language-reference/compiler-options/unsafe-compiler-option).
 

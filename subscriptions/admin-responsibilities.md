@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: Conozca cuáles son las responsabilidades de los administradores de suscripciones.
 searchscope: VS Subscription
 ms.openlocfilehash: 98806d2927c2a4dd6ff597ac12b9580d40ccaad7
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954485"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62945841"
 ---
 # <a name="overview-of-administrator-responsibilities"></a>Introducción a las responsabilidades del administrador
 Como administrador, tiene la capacidad de administrar suscripciones para su organización.  El rol de administrador también conlleva responsabilidades para asegurarse de que las suscripciones se administran de acuerdo con los términos de licencia. En este artículo se describen las responsabilidades, ventajas y limitaciones del rol de administrador.

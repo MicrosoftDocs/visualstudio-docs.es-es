@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 38c621a09c6a000c9e3c7e52caa99569f7e5d781
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957766"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62821719"
 ---
 # <a name="intellisense-in-visual-studio"></a>IntelliSense en Visual Studio
 
@@ -52,7 +52,7 @@ El parámetro en negrita indica el siguiente parámetro requerido a medida que e
 
 ![Información de parámetros](../ide/media/vs2015_param_info.png)
 
-Cuando se anotan funciones y parámetros con comentarios de documentación XML, los comentarios se muestran como Información de parámetros. Para obtener más información, vea [Proporcionar comentarios del código XML](reference/generate-xml-documentation-comments.md).
+Cuando se agregan funciones y parámetros con comentarios de documentación XML, los comentarios se muestran como Información de parámetros. Para obtener más información, vea [Proporcionar comentarios del código XML](reference/generate-xml-documentation-comments.md).
 
 Para invocar manualmente la información de parámetros, elija **Edición** > **IntelliSense** > **Información de parámetros**, presione **CTRL**+**MAYÚS**+**Barra espaciadora** o seleccione el botón **Información de parámetros** de la barra de herramientas del editor.
 

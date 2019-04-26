@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 05ef65668edc9b008d95492605f967e467aa34b0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ae861814a7219bfca1d6a074316910d459fc9999
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55951883"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62973190"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>Usar controles HTML5 en pruebas automatizadas de IU
 
@@ -22,7 +22,7 @@ Las pruebas de IU codificadas proporcionan soporte para algunos de los controles
 
  **Requisitos**
 
--   Visual Studio Enterprise
+- Visual Studio Enterprise
 
 > [!WARNING]
 > En versiones anteriores a Internet Explorer 10, era posible ejecutar pruebas de IU codificadas en un nivel de privilegios más alto en comparación con el del proceso de Internet Explorer. Al ejecutar pruebas de IU codificadas en Internet Explorer 10, tanto la prueba de IU codificada como el proceso de Internet Explorer deben estar en el mismo nivel de privilegios. Esto se debe a las características de AppContainer más seguras de Internet Explorer 10.
@@ -53,7 +53,6 @@ Vea [HTMLAudioElement](https://developer.mozilla.org/docs/Web/API/HTMLAudioEleme
 
 > [!NOTE]
 > La cantidad de tiempo para buscar y pausar puede ser significativa. Durante la reproducción, la prueba de IU codificada esperará hasta el momento especificado en `(TimeSpan)` antes de pausar el audio. Si por alguna circunstancia especial transcurre el tiempo especificado antes de que se alcance el comando Pausa, se iniciará una excepción.
-
 
 ## <a name="video-control"></a>Control de vídeo
  **Control Vídeo**: Las acciones del control Vídeo de HTML5 se graban y se reproducen correctamente.

@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cc571c40dfcc1074b157b850c8b6f3f5e4649563
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 98163080c44a46330a4ba792f2ddde680c75b074
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924518"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62990051"
 ---
 # <a name="shell-command"></a>Shell (Comando)
 Inicia programas ejecutables desde [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
@@ -64,7 +64,6 @@ Tools.Shell [/command] [/output] [/dir:folder] path [args]
 > [!CAUTION]
 > Si el argumento `path` proporciona la ruta de acceso de directorio, así como el nombre de archivo, debe incluir la ruta de acceso completa entre comillas literales ("""), como en el siguiente ejemplo:
 
-
 ```cmd
 Tools.Shell """C:\Program Files\SomeFile.exe"""
 ```
@@ -77,7 +76,6 @@ Tools.Shell """C:\Program Files\SomeFile.exe"""
 
 > [!CAUTION]
 > Si no se coloca la cadena de ruta de acceso entre comillas literales ("""), Windows usará solo la parte de la cadena hasta el primer espacio. Por ejemplo, si la cadena de ruta de acceso anterior no se hubiera colocado correctamente entre comillas, Windows buscaría un archivo denominado "Program" que se encuentra en el directorio raíz C:\. Si un archivo ejecutable C:\Program.exe estuviera disponible, incluso uno instalado por una manipulación ilícita, Windows intentaría ejecutar ese programa en lugar del programa "C:\Archivos de programa\SomeFile.exe" deseado.
-
 
 ## <a name="example"></a>Ejemplo
  El siguiente comando usa xcopy.exe para copiar el archivo `MyText.txt` en la carpeta `Text`. La salida de xcopy.exe se muestra tanto en la **ventana Comandos** como en la ventana de **salida**.

@@ -1,5 +1,5 @@
 ---
-title: Filtrar para eliminar los resultados de pruebas de carga de un repositorio
+title: Procedimiento para eliminar los resultados de pruebas de carga de un repositorio
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,14 +13,14 @@ ms.assetid: c2afe36b-d061-4f0e-9580-c18569ec08f9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5e351ccaa6dddcf4773169a1e0a3f8e074002f2d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f37edcadb1d8800cb784771f9cc4f93d885bea65
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936127"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950012"
 ---
-# <a name="how-to-delete-load-test-results-from-a-repository"></a>Filtrar para eliminar los resultados de pruebas de carga de un repositorio
+# <a name="how-to-delete-load-test-results-from-a-repository"></a>Procedimiento para eliminar los resultados de pruebas de carga de un repositorio
 
 Cuando se ejecutan pruebas de carga, cualquier información recolectada durante una ejecución se almacena en el repositorio de resultados de pruebas de carga. El repositorio de resultados de pruebas de carga contiene datos de los contadores de rendimiento e información acerca de los errores que se hayan producido. Para obtener más información, vea [Administrar resultados de pruebas de carga en el repositorio de resultados de pruebas de carga](../test/manage-load-test-results-in-the-load-test-results-repository.md).
 
@@ -30,21 +30,21 @@ Puede administrar los resultados de pruebas de carga desde el Editor de pruebas 
 
 ## <a name="to-delete-results-from-a-repository"></a>Para eliminar resultados de un repositorio
 
-1.  En un proyecto de prueba de carga y rendimiento web, abra una prueba de carga.
+1. En un proyecto de prueba de carga y rendimiento web, abra una prueba de carga.
 
-2.  En la barra de herramientas insertada, elija **Abrir y administrar resultados**.
+2. En la barra de herramientas insertada, elija **Abrir y administrar resultados**.
 
      Se muestra el cuadro de diálogo **Abrir y administrar resultados de pruebas de carga**.
 
-3.  En **Escriba un nombre de controlador para buscar resultados de pruebas de carga**, seleccione un controlador. Seleccione **\<Local - Sin controlador>** para acceder a los resultados almacenados en local.
+3. En **Escriba un nombre de controlador para buscar resultados de pruebas de carga**, seleccione un controlador. Seleccione **\<Local - Sin controlador>** para acceder a los resultados almacenados en local.
 
-4.  En **Mostrar resultados para la siguiente prueba de carga**, seleccione la prueba de carga cuyos resultados quiere ver. Seleccione **\<Mostrar resultados de todas las pruebas>** para ver todos los resultados de todas las pruebas.
+4. En **Mostrar resultados para la siguiente prueba de carga**, seleccione la prueba de carga cuyos resultados quiere ver. Seleccione **\<Mostrar resultados de todas las pruebas>** para ver todos los resultados de todas las pruebas.
 
      Si hay resultados de pruebas de carga disponibles, aparecen en la lista **Resultados de pruebas de carga**. Las columnas son **Hora**, **Duración**, **Usuario**, **Resultado**, **Prueba** y **Descripción**. **Prueba** contiene el nombre de la prueba y **Descripción** incluye la descripción opcional que se ha agregado antes de ejecutar la prueba. La columna **Descripción** muestra las descripciones breves que se han escrito en los **Comentarios de análisis** de este resultado de prueba.
 
-5.  En la lista **Resultados de pruebas de carga**, elija un resultado. Puede usar las teclas **Mayús**, **Ctrl** o ambas para seleccionar más de un resultado.
+5. En la lista **Resultados de pruebas de carga**, elija un resultado. Puede usar las teclas **Mayús**, **Ctrl** o ambas para seleccionar más de un resultado.
 
-6.  Elija **Quitar**.
+6. Elija **Quitar**.
 
      Los resultados se quitan del repositorio.
 

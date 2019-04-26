@@ -7,12 +7,12 @@ ms.date: 07/02/2018
 ms.topic: conceptual
 description: Obtenga información sobre la migración de licencias Open y Open License al portal de administración de suscripciones de Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: a2f3ed6db9b8e0ce0dce645bfbbb715b89fe1f04
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 0e3ad14f48aaa461b7c70507cd4501067eacc789
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843200"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62821736"
 ---
 # <a name="open-and-open-license-migration-to-the-new-visual-studio-subscriptions-administration-portal"></a>Migración de licencias Open y Open License al nuevo portal de administración de suscripciones de Visual Studio
 
@@ -38,7 +38,6 @@ Para administrar las suscripciones en el [Portal de administración de suscripci
 
 - Para que los socios administren las suscripciones en nombre de los clientes, tendrán que registrarse en el portal de administración. Aquí se explican las distintas formas de acceder (similar al proceso de agregar-abrir).
 
-
 ## <a name="existing-partners-adding-a-new-license"></a>Socios existentes que agregan una nueva licencia
 
 Esto se aplica a los socios que ya tienen acceso al [Portal de administración de suscripciones de Visual Studio](https://manage.visualstudio.com), pero han realizado un pedido de Open License con suscripciones de Visual Studio que necesitan administrar.
@@ -48,7 +47,6 @@ Esto se aplica a los socios que ya tienen acceso al [Portal de administración d
 - Selecciona la lista desplegable de contrato y se desplaza hasta el final donde hay una opción para **+New Open License** (+Nueva Open License).
 
 - En el panel emergente, el socio escribe el número de autorización, el número de licencia, la dirección de correo electrónico del cliente indicada en el contrato, activa la casilla y hace clic en **Enviar**.
-
 
 > [!NOTE]
 > El cliente recibirá un correo de notificación que informa de que se ha agregado un socio a la licencia Open. Puede optar por quitar el acceso del socio.
@@ -67,7 +65,6 @@ Esto se aplica a los nuevos socios que realizan pedidos de licencia Open, pero s
 
 - El socio podrá administrar suscripciones para esa licencia Open.
 
-
 > [!NOTE]
 > El cliente recibirá un correo de notificación que informa de que se ha agregado un socio a la licencia Open. Puede optar por quitar el acceso del socio.
 
@@ -80,7 +77,6 @@ Este escenario se aplica a los nuevos socios que ya han realizado pedidos de Ope
 - Recibe un error que indica que no es un usuario reconocido.
 
 - El socio asociado deberá seleccionar la opción de registro **OLP Partners** (Socios de OLP) y escribir el número de autorización, número de licencia y dirección de correo electrónico de cliente usada en el pedido. Después deberá activar la casilla y hacer clic en **Enviar**.
-
 
 > [!NOTE]
 > El cliente recibirá un correo de notificación que informa de que se ha agregado un socio a la licencia Open. Puede optar por quitar el acceso del socio.

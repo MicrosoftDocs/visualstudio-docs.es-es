@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b04897304bc90d35bcf9fd5e61f5329ce922ea91
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924661"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62948340"
 ---
 # <a name="options-page-text-editor-node-properties"></a>Página de opciones, Propiedades de nodo Editor de texto
 En este documento, se describen algunas páginas (o colecciones de propiedades) asociadas a la categoría **Editor de texto**, `DTE.Properties("TextEditor", <Property Page>)`, del cuadro de diálogo **Opciones**. El título de cada subsección es la llamada que se usa para obtener acceso a la colección `Properties` y, en la tabla de cada subsección, se muestran las propiedades que se encuentran en la colección.

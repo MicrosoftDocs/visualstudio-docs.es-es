@@ -8,18 +8,28 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e7c78ac8b3f6d25d601ae11bdcbb1aed4214cb8c
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: da6c19341a1e1ab37b38ae4f5379ee5aaace5b87
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790906"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62954363"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>Inicio rápido: Primer vistazo al IDE de Visual Studio
 
 En esta introducción al entorno de desarrollo integrado (IDE) de Visual Studio, de 5 a 10 minutos de duración, pasaremos por algunas de las ventanas, menús y otras funciones de la interfaz de usuario.
 
-Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) para instalarlo de forma gratuita.
+::: moniker range="vs-2017"
+
+Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) para instalarlo de forma gratuita.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) para instalarlo de forma gratuita.
+
+::: moniker-end
 
 ::: moniker range="vs-2017"
 

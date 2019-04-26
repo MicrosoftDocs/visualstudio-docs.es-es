@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3411d3e9960235f7fbd948e82cf9498377746b7d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 862f2ca7da96e7d084d2af7bfa53a5640bed22d8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55938766"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950539"
 ---
 # <a name="signing-page-project-designer"></a>Página Firma, Diseñador de proyectos
 Use la página **Firma** del **Diseñador de proyectos** para firmar los manifiestos de aplicación e implementación y también para firmar el ensamblado (firma con nombre seguro).
@@ -93,7 +93,6 @@ Use la página **Firma** del **Diseñador de proyectos** para firmar los manifie
 
 > [!NOTE]
 > Al firmar un ensamblado, es posible que no siempre tenga acceso a una clave privada. Por ejemplo, una organización podría tener un par de claves muy bien guardado al que los desarrolladores no tuvieran acceso cada día. La clave pública podría estar disponible, pero el acceso a la clave privada estaría restringido a algunas personas. En tal caso, podría usar la *firma retardada* o la *firma parcial* para proporcionar la clave pública, retrasando la adición de la clave privada hasta la entrega del ensamblado.
-
 
 ## <a name="see-also"></a>Vea también
 

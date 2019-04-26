@@ -24,11 +24,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4904f7bb57430fc71ab6875d39a18c5bfb0c2fe0
-ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58268622"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975395"
 ---
 # <a name="customize-window-layouts-in-visual-studio"></a>Personalizar los diseños de ventana de Visual Studio
 

@@ -8,22 +8,22 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 1fa232ccefed20608ec2391f591ac0a8a6f31fe2
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1c3d0e7d30778580ac09bfd4476e44280c775a2c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55931343"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62844047"
 ---
 # <a name="work-with-elements-in-xaml-designer"></a>Trabajar con elementos en el Diseñador XAML
 
-Puede agregar elementos (controles, diseños y formas) a la aplicación en XAML, en el código o mediante el Diseñador XAML. En este tema se describe cómo trabajar con elementos en el Diseñador XAML en Visual Studio o Blend para Visual Studio.
+Para agregar elementos (controles, distribuciones y formas) a una aplicación, puedes usar XAML, código o XAML Designer. En este tema se describe cómo trabajar con elementos en el Diseñador XAML en Visual Studio o Blend para Visual Studio.
 
 ## <a name="add-an-element-to-a-layout"></a>Adición de un elemento a un diseño
 
 El *diseño* es el proceso de ajustar el tamaño de los elementos y colocarlos en una interfaz de usuario. Para colocar elementos visuales, debe colocarlos en un [Panel](/uwp/api/Windows.UI.Xaml.Controls.Panel) de diseño. `Panel` tiene una propiedad secundaria, que es una colección de tipos [FrameworkElement](/uwp/api/Windows.UI.Xaml.FrameworkElement). Se pueden usar distintos elementos secundarios de `Panel`, como [Canvas](/uwp/api/Windows.UI.Xaml.Controls.Canvas), [StackPanel](/uwp/api/Windows.UI.Xaml.Controls.StackPanel) y [Grid](/uwp/api/Windows.UI.Xaml.Controls.Grid), para que actúen como contenedores de diseño y para colocar y organizar los elementos en una página.
 
-De forma predeterminada, un panel `Grid` sirve como contenedor de diseño de nivel superior dentro de una página o formulario. Puede agregar paneles de diseño, controles u otros elementos en el diseño de página de nivel superior.
+De forma predeterminada, un panel `Grid` sirve como contenedor de diseño de nivel superior dentro de una página o formulario. Puedes agregar paneles de diseño, controles u otros elementos en el diseño de página de nivel superior.
 
 Para agregar un elemento a un diseño en el Diseñador XAML, realice una de estas acciones:
 
@@ -35,7 +35,7 @@ Para agregar un elemento a un diseño en el Diseñador XAML, realice una de esta
 
 ## <a name="change-the-layering-order-of-elements"></a>Cambio del orden de distribución en capas de los elementos
 
-Cuando hay dos elementos en la mesa de trabajo del Diseñador XAML, un elemento aparecerá delante del otro según el orden de distribución en capas. En la parte inferior de la lista de elementos de la ventana Esquema del documento se encuentra el elemento que se sitúa en primer plano (excepto cuando se establece la propiedad **ZIndex** de un elemento). Cuando se inserta un elemento en una página, un formulario o un contenedor de diseño, el elemento se coloca automáticamente delante de los demás elementos en el elemento de contenedor activo. Para cambiar el orden de los elementos, puede usar los comandos de **Ordenar** o arrastrar los elementos en el árbol de objetos de la ventana Esquema del documento.
+Cuando haya dos elementos en la mesa de trabajo en XAML Designer, aparecerá un elemento delante del otro en el orden de distribución en capas. En la parte inferior de la lista de elementos de la ventana Esquema del documento se encuentra el elemento que se sitúa en primer plano (excepto cuando se establece la propiedad **ZIndex** de un elemento). Cuando se inserta un elemento en una página, un formulario o un contenedor de diseño, el elemento se coloca automáticamente delante de los demás elementos en el elemento de contenedor activo. Para cambiar el orden de los elementos, puede usar los comandos de **Ordenar** o arrastrar los elementos en el árbol de objetos de la ventana Esquema del documento.
 
 Para cambiar el orden de distribución en capas, realice una de estas acciones:
 
@@ -61,11 +61,11 @@ Una *guía de alineación* es una indicación visual que ayuda a alinear un elem
 
 Para alinear dos o más elementos mediante los comandos de menú:
 
-1.  Seleccione los elementos que desee alinear. Puede seleccionar varios elementos si mantiene presionada la tecla **Ctrl** mientras los selecciona.
+1. Selecciona los elementos que desees alinear. Puede seleccionar varios elementos si mantiene presionada la tecla **Ctrl** mientras los selecciona.
 
-2.  Seleccione una de las propiedades siguientes en **HorizontalAlignment** en la sección **Diseño** de la ventana Propiedades: **Izquierda**, **Centro**, **Derecha** o **Ajustar**.
+2. Seleccione una de las propiedades siguientes en **HorizontalAlignment** en la sección **Diseño** de la ventana Propiedades: **Izquierda**, **Centro**, **Derecha** o **Ajustar**.
 
-3.  Seleccione una de las propiedades siguientes en **VerticalAlignment** en la sección **Diseño** de la ventana Propiedades: **Superior**, **Centro**, **Inferior** o **Ajustar**.
+3. Seleccione una de las propiedades siguientes en **VerticalAlignment** en la sección **Diseño** de la ventana Propiedades: **Superior**, **Centro**, **Inferior** o **Ajustar**.
 
 Para alinear dos o más elementos mediante guías de alineación, en el Diseñador XAML, en un diseño que contenga al menos dos elementos, arrastre o cambie el tamaño de uno de los elementos de modo que el borde se alinee con otro elemento.
 
@@ -73,41 +73,41 @@ Cuando los bordes estén alineados, aparecerá un *límite de alineación* para 
 
 ## <a name="change-an-elements-margins"></a>Cambio de los márgenes de un elemento
 
-Los márgenes del Diseñador XAML determinan cuánto espacio vacío hay alrededor de un elemento en la mesa de trabajo. Por ejemplo, los márgenes especifican la cantidad de espacio entre los bordes exteriores de un elemento y los límites de un panel `Grid` que contiene el elemento. Los márgenes también especifican la cantidad de espacio entre los elementos que están contenidos en un `StackPanel`.
+En XAML Designer, los márgenes determinan la cantidad de espacio vacío que hay alrededor de un elemento en la mesa de trabajo. Por ejemplo, los márgenes especifican la cantidad de espacio entre los bordes exteriores de un elemento y los límites de un panel de `Grid` que contiene el elemento. Los márgenes también especifican la cantidad de espacio que hay entre los objetos que están contenidos en un `StackPanel`.
 
 Para cambiar los márgenes de un elemento en la ventana Propiedades:
 
-1.  Seleccione el elemento cuyos márgenes desea cambiar.
+1. Selecciona el elemento cuyos márgenes deseas cambiar.
 
-2.  En **Diseño**, en la ventana Propiedades, cambie el valor (en píxeles o unidades independientes del dispositivo, que tienen un tamaño aproximado de 1/96 de pulgada) de cualquiera de las propiedades de **Margen** (**Superior**, **Izquierdo**, **Derecho** o **Inferior**).
+2. En **Diseño**, en la ventana Propiedades, cambie el valor (en píxeles o unidades independientes del dispositivo, que tienen un tamaño aproximado de 1/96 de pulgada) de cualquiera de las propiedades de **Margen** (**Superior**, **Izquierdo**, **Derecho** o **Inferior**).
 
 En la mesa de trabajo, para cambiar los márgenes de un elemento con respecto a su contenedor de diseño, haga clic en los *adornos de margen* que aparecen alrededor del elemento cuando el elemento esté seleccionado y se encuentre dentro de un contenedor de diseño. Para obtener una ilustración que muestra los adornos de margen, vea [Crear una IU con el Diseñador XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md).
 
-Si el control Adorner de margen está abierto, ya sea vertical u horizontalmente, el margen no está establecido. Si el control Adorner de margen está cerrado, ese margen está establecido.
+Si el adorno del margen está abierto, ya sea vertical u horizontalmente, el margen no está establecido. Si el adorno del margen está cerrado, ese margen está establecido.
 
-Cuando se abre un adorno del margen y el margen opuesto no se establece, este último quedará establecido según el valor correcto de acuerdo con la ubicación del elemento en la mesa de trabajo. Para los márgenes opuestos, como **Izquierdo** y **Derecho**, siempre se establece al menos una propiedad.
+Cuando se abre el control Adorner de margen y el margen opuesto no está establecido, el margen opuesto se establece en el valor correcto de acuerdo con la ubicación del elemento en la mesa de trabajo. Para los márgenes opuestos, como **Izquierdo** y **Derecho**, siempre se establece al menos una propiedad.
 
 > [!IMPORTANT]
-> Los elementos incluidos dentro de algunos contenedores de diseño, como <xref:Windows.UI.Xaml.Controls.Canvas>, no tienen controles Adorner de margen. Los elementos incluidos dentro de un <xref:Windows.UI.Xaml.Controls.StackPanel> tienen controles Adorner de margen para los márgenes izquierdo y derecho o para los márgenes superior e inferior, según la orientación del `StackPanel`.
+> Los elementos incluidos dentro de algunos contenedores de distribución, como <xref:Windows.UI.Xaml.Controls.Canvas>, no tienen adornos del margen. Los elementos incluidos dentro de <xref:Windows.UI.Xaml.Controls.StackPanel> tienen adornos del margen para los márgenes izquierdo y derecho o para los márgenes superior e inferior, en función de la orientación de `StackPanel`.
 
 ## <a name="group-and-ungroup-elements"></a>Agrupación y desagrupación de elementos
 
-La acción de agrupar dos o más elementos en el Diseñador XAML crea un nuevo contenedor de diseño y coloca los elementos dentro de ese contenedor. La colocación de dos o más elementos juntos en un contenedor de diseño permite seleccionar, mover y transformar fácilmente el grupo como si sus elementos fuesen un único elemento. La agrupación permite además identificar elementos que están relacionados entre sí de alguna manera, como los botones que constituyen un elemento de navegación. Cuando se desagrupan los elementos, simplemente se elimina el contenedor de diseño que los contiene.
+Al agrupar dos o más elementos en XAML Designer se crea un nuevo contenedor de distribución y esos elementos quedan colocados en ese contenedor. Cuando se colocan dos o más elementos juntos en un contenedor de diseño, se podrá seleccionar, mover y transformar fácilmente el grupo como si los elementos de este fuesen un único elemento. La agrupación también permite identificar elementos que están relacionados entre sí de alguna manera, como los botones que constituyen un elemento de navegación. Cuando se desagrupan elementos, simplemente se elimina el contenedor de diseño que los contiene.
 
 Para agrupar elementos en un nuevo contenedor de diseño:
 
-1. Seleccione los elementos que desee agrupar. (Para seleccionar varios elementos, mantenga presionada la tecla **Ctrl** mientras hace clic en ellos).
+1. Selecciona los elementos que desees agrupar. (Para seleccionar varios elementos, mantenga presionada la tecla **Ctrl** mientras hace clic en ellos).
 
 2. Haga clic con el botón derecho en los elementos seleccionados, seleccione **Agrupar en** y, después, haga clic en el tipo de contenedor de diseño en el que quiera incluir el grupo.
 
     > [!TIP]
-    > Si selecciona <xref:Windows.UI.Xaml.Controls.Viewbox>, <xref:Windows.UI.Xaml.Controls.Border> o <xref:Windows.UI.Xaml.Controls.ScrollViewer> para agrupar los elementos, estos se colocan en un nuevo panel <xref:Windows.UI.Xaml.Controls.Grid> dentro de <xref:Windows.UI.Xaml.Controls.Viewbox>, <xref:Windows.UI.Xaml.Controls.Border> o <xref:Windows.UI.Xaml.Controls.ScrollViewer>. Si desagrupa los elementos de uno de estos contenedores de diseño, solo se elimina <xref:Windows.UI.Xaml.Controls.Viewbox>, <xref:Windows.UI.Xaml.Controls.Border> o <xref:Windows.UI.Xaml.Controls.ScrollViewer>, y se conserva el panel <xref:Windows.UI.Xaml.Controls.Grid>. Para eliminar el panel `Grid`, desagrupe los elementos de nuevo.
+    > Si selecciona <xref:Windows.UI.Xaml.Controls.Viewbox>, <xref:Windows.UI.Xaml.Controls.Border> o <xref:Windows.UI.Xaml.Controls.ScrollViewer> para agrupar los elementos, estos se colocan en un nuevo panel <xref:Windows.UI.Xaml.Controls.Grid> dentro de <xref:Windows.UI.Xaml.Controls.Viewbox>, <xref:Windows.UI.Xaml.Controls.Border> o <xref:Windows.UI.Xaml.Controls.ScrollViewer>. Si desagrupas elementos en uno de estos contenedores de distribución, solo se elimina <xref:Windows.UI.Xaml.Controls.Viewbox>, <xref:Windows.UI.Xaml.Controls.Border> o <xref:Windows.UI.Xaml.Controls.ScrollViewer> y se mantiene el panel <xref:Windows.UI.Xaml.Controls.Grid>. Para eliminar el panel `Grid`, vuelve a desagrupar los elementos.
 
 Para desagrupar elementos y eliminar el diseño, haga clic con el botón derecho en el grupo que quiere desagrupar y elija **Desagrupar**. También puede agrupar o desagrupar elementos haciendo clic con el botón derecho en los elementos seleccionados en la ventana Esquema del documento y haciendo clic en **Agrupar en** o **Desagrupar**.
 
 ## <a name="reset-the-element-layout"></a>Restablecimiento del diseño de un elemento
 
-Puede restaurar los valores predeterminados de las propiedades de diseño específicas de un elemento mediante el comando Restablecer diseño. Con este comando, puede restablecer el margen, la alineación, el ancho, el alto y el tamaño de un elemento, ya sea de forma individual o colectiva.
+Puede restaurar los valores predeterminados de las propiedades de diseño específicas de un elemento mediante el comando Restablecer diseño. Con este comando puedes restablecer el margen, la alineación, el ancho, el alto y el tamaño de un elemento, ya sea de forma individual o colectiva.
 
 Para restablecer el diseño de un elemento, haga clic con el botón derecho en el elemento en la ventana Esquema del documento o en la mesa de trabajo y elija **Diseño** > **Restablecer** *NombreDeLaPropiedad*, donde *NombreDeLaPropiedad* es la propiedad que quiere restablecer (o elija **Diseño** > **Restablecer todo** para restablecer todas las propiedades de diseño del elemento).
 

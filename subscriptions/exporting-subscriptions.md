@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: Obtenga información sobre cómo exportar una lista de suscriptores y los detalles de sus asignaciones de suscripciones.
 searchscope: VS Subscription
 ms.openlocfilehash: 7e2db1c0de036441801aa56ae1956d0a10719798
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56844034"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62945865"
 ---
 # <a name="exporting-subscription-information"></a>Exportar la información de suscripción
 

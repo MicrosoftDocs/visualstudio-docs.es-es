@@ -9,12 +9,12 @@ ms.assetid: b7fae849-0538-40d1-ab35-2bb3a0fe4393
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 25e44e9b05a34cbcd245debc87dfbe23c5772a3c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 87161a4d58411f5f1bbe0347d093a39f17742bd6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948932"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62785741"
 ---
 # <a name="emulate-expected-real-world-usage-of-a-website-or-application-in-a-load-test-using-a-test-mix-model"></a>Emulación del uso real esperado de una aplicación o un sitio web en una prueba de carga mediante un modelo de combinación de pruebas
 
@@ -28,18 +28,18 @@ Mediante el Editor de prueba de carga o el asistente para modelo de combinación
 
 Puede especificar una de las siguientes opciones de modelo de combinación de pruebas para el escenario de la prueba de carga:
 
--   **A partir del número total de pruebas:** determina la prueba unitaria o de rendimiento web que se va a ejecutar cuando un usuario virtual inicia una iteración de prueba. Al final de la prueba de carga, el número de veces que se ha ejecutado una prueba determinada coincide con la distribución de pruebas asignada. Use este modelo de combinación de pruebas cuando base la combinación de pruebas en porcentajes de transacciones en un registro de IIS o en datos de producción. Para más información, consulte [Porcentaje basado en las pruebas iniciadas](#BasedOnTestsStarted).
+- **A partir del número total de pruebas:** determina la prueba unitaria o de rendimiento web que se va a ejecutar cuando un usuario virtual inicia una iteración de prueba. Al final de la prueba de carga, el número de veces que se ha ejecutado una prueba determinada coincide con la distribución de pruebas asignada. Use este modelo de combinación de pruebas cuando base la combinación de pruebas en porcentajes de transacciones en un registro de IIS o en datos de producción. Para más información, consulte [Porcentaje basado en las pruebas iniciadas](#BasedOnTestsStarted).
 
--   **A partir del número de usuarios virtuales:** determina el porcentaje de usuarios virtuales que ejecutarán una prueba unitaria o de rendimiento web determinada. En cualquier punto de la prueba de carga, el número de usuarios que ejecutan una prueba determinada coincide con la distribución asignada. Use este modelo de combinación de pruebas cuando base la combinación de pruebas en el porcentaje de usuarios que ejecutan una prueba determinada. Para obtener más información, vea [Porcentaje basado en usuarios virtuales](#PercentageBasedonVirtualUsers).
+- **A partir del número de usuarios virtuales:** determina el porcentaje de usuarios virtuales que ejecutarán una prueba unitaria o de rendimiento web determinada. En cualquier punto de la prueba de carga, el número de usuarios que ejecutan una prueba determinada coincide con la distribución asignada. Use este modelo de combinación de pruebas cuando base la combinación de pruebas en el porcentaje de usuarios que ejecutan una prueba determinada. Para obtener más información, vea [Porcentaje basado en usuarios virtuales](#PercentageBasedonVirtualUsers).
 
--   **A partir de la velocidad del usuario:** durante la prueba de carga, cada prueba unitaria o de rendimiento web se ejecuta un número determinado de veces por usuario y por hora. Use este modelo de combinación de pruebas cuando desee que los usuarios virtuales ejecuten pruebas a una determinada velocidad durante la prueba de carga. Para obtener más información, vea [Combinación de pruebas a un ritmo regulado](#PacingTestMix).
+- **A partir de la velocidad del usuario:** durante la prueba de carga, cada prueba unitaria o de rendimiento web se ejecuta un número determinado de veces por usuario y por hora. Use este modelo de combinación de pruebas cuando desee que los usuarios virtuales ejecuten pruebas a una determinada velocidad durante la prueba de carga. Para obtener más información, vea [Combinación de pruebas a un ritmo regulado](#PacingTestMix).
 
     > [!TIP]
     > ¿Cuándo debe elegir **Porcentaje de combinación de pruebas** y **Porcentaje basado en usuarios virtuales**? La diferencia entre estas dos opciones es importante cuando algunas pruebas de la combinación de pruebas tienen una duración mucho mayor que otras. En esta situación, probablemente debería elegir **Porcentaje basado en usuarios virtuales**. Esta opción ayuda a evitar una ejecución de pruebas en la que haya muchas probabilidades de que demasiados usuarios ejecuten pruebas de larga duración. Pero si todas las pruebas tienen una duración similar, es más seguro elegir **Porcentaje de combinación de pruebas**.
 
--   **A partir del orden secuencial:** cada usuario virtual ejecuta las pruebas unitarias o de rendimiento web en el mismo orden en que se definen en el escenario. El usuario virtual seguirá recorriendo las pruebas en este orden hasta que se complete la prueba de carga. Para más información, consulte [Orden secuencial](#SequentialOrder).
+- **A partir del orden secuencial:** cada usuario virtual ejecuta las pruebas unitarias o de rendimiento web en el mismo orden en que se definen en el escenario. El usuario virtual seguirá recorriendo las pruebas en este orden hasta que se complete la prueba de carga. Para más información, consulte [Orden secuencial](#SequentialOrder).
 
-###  <a name="BasedOnTestsStarted"></a> Porcentaje basado en las pruebas iniciadas
+### <a name="BasedOnTestsStarted"></a> Porcentaje basado en las pruebas iniciadas
  Para cada prueba de la combinación, puede especificar un porcentaje que determine la frecuencia con la que la prueba se selecciona como la siguiente prueba que se va a ejecutar. Por ejemplo, podría asignar los valores de porcentaje siguientes a tres pruebas:
 
 - PruebaA (50%)
@@ -50,10 +50,10 @@ Puede especificar una de las siguientes opciones de modelo de combinación de pr
 
   Si utiliza estos valores, la siguiente prueba que se inicia se basa en los porcentajes asignados. Para ello no se tiene en cuenta el número de usuarios virtuales que ejecutan actualmente cada prueba.
 
-###  <a name="PercentageBasedonVirtualUsers"></a> Porcentaje basado en los usuarios virtuales
+### <a name="PercentageBasedonVirtualUsers"></a> Porcentaje basado en los usuarios virtuales
  Este modelo de combinación de pruebas determina el porcentaje de usuarios virtuales que ejecutarán una prueba determinada. Si utiliza este modelo de combinación de pruebas, la siguiente prueba que se inicia no se basa sólo en los porcentajes asignados, sino también en el porcentaje de usuarios virtuales que ejecutan actualmente una determinada prueba. En cualquier punto de la prueba de carga, el número de usuarios que ejecutan una determinada prueba coincide de la forma más precisa posible con la distribución asignada.
 
-###  <a name="PacingTestMix"></a> Combinación de pruebas a un ritmo regulado
+### <a name="PacingTestMix"></a> Combinación de pruebas a un ritmo regulado
  Si especifica una combinación de pruebas a un ritmo regulado, definirá una frecuencia de ejecución de pruebas para cada usuario virtual y prueba de la combinación de pruebas. Para cada prueba, esta frecuencia se expresa como ejecución de las pruebas por usuario virtual y hora. Por ejemplo, podría asignar la siguiente combinación de pruebas a ritmo regulado para las pruebas siguientes:
 
 - PruebaA: 4 pruebas por usuario y por hora
@@ -79,7 +79,7 @@ Puede especificar una de las siguientes opciones de modelo de combinación de pr
 
   Para obtener más información, vea [Cómo: Aplicar distribución a intervalo de velocidad en un modelo de combinación de pruebas basado en el ritmo del usuario](../test/how-to-apply-distribution-to-pacing-delay-when-using-a-user-pace-test-mix-model.md).
 
-###  <a name="SequentialOrder"></a> Orden secuencial
+### <a name="SequentialOrder"></a> Orden secuencial
  Al seleccionar la opción Por orden de pruebas secuencial permite a los usuarios virtuales ejecutar todas las pruebas del escenario en el orden con que se definieron las pruebas.
 
 ## <a name="test-iterations-property"></a>Propiedad de iteraciones de prueba

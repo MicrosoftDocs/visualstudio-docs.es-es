@@ -11,16 +11,16 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3c583ee2dd652a81410a756a5297e570afb20f76
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.openlocfilehash: 9f4c165f3e882cea71ee4aaff9f2358c27ce6a2b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366450"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62957322"
 ---
 # <a name="step-4-use-the-full-flask-web-project-template"></a>Paso 4: Uso de la plantilla de proyecto web completa de Flask
 
-**Paso anterior: [Atender archivos estáticos, agregar páginas y usar la herencia de plantilla](learn-flask-visual-studio-step-03-serve-static-files-add-pages.md)**
+**Paso anterior: [Proporcionar archivos estáticos, agregar páginas y usar la herencia de plantilla](learn-flask-visual-studio-step-03-serve-static-files-add-pages.md)**
 
 Ahora que ha explorado los conceptos básicos de Flask mediante la creación de una aplicación a partir de la plantilla "Proyecto web de Flask en blanco" en Visual Studio, podrá comprender fácilmente la aplicación más completa que se genera mediante la plantilla "Proyecto web de Flask".
 
@@ -169,6 +169,7 @@ El archivo *\_\_init\_\_.py* de la aplicación contiene una línea para
 ```python
 app.jinja_env.add_extension('pyjade.ext.jinja.PyJadeExtension')
 ```
+
 En la carpeta *templates* se ven archivos *.jade* en lugar de plantillas *.html* y las vistas de *views.py* hacen referencia a estos archivos en sus llamadas a `flask.render_template`. En caso contrario, el código de las vistas es el mismo.
 
 Si abre uno de los archivos *.jade*, puede ver la expresión más concisa de una plantilla. Por ejemplo, este es el contenido de *templates/layout.jade* tal como lo ha creado la plantilla "Proyecto web de Flask/Jade":

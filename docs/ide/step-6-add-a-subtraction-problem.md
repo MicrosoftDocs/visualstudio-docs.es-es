@@ -8,27 +8,27 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1aa69501dac4a74c154a07c9cdc86df50959fc13
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6eb94423150a8a3a43183020ee87d52494355aed
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55917394"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62996653"
 ---
 # <a name="step-6-add-a-subtraction-problem"></a>Paso 6: Agregar un problema de resta
 En la sexta parte de este tutorial, agregará un problema de resta y aprenderá a realizar las tareas siguientes:
 
--   Almacenar los valores de resta.
+- Almacenar los valores de resta.
 
--   Generar números aleatorios para el problema (y asegurarse de que la respuesta esté comprendida entre 0 y 100).
+- Generar números aleatorios para el problema (y asegurarse de que la respuesta esté comprendida entre 0 y 100).
 
--   Actualizar el método que comprueba las respuestas para que compruebe también el nuevo problema de resta.
+- Actualizar el método que comprueba las respuestas para que compruebe también el nuevo problema de resta.
 
--   Actualizar el controlador eventos <xref:System.Windows.Forms.Timer.Tick> del temporizador para que rellene la respuesta correcta cuando se agote el tiempo.
+- Actualizar el controlador eventos <xref:System.Windows.Forms.Timer.Tick> del temporizador para que rellene la respuesta correcta cuando se agote el tiempo.
 
 ## <a name="to-add-a-subtraction-problem"></a>Para agregar un problema de resta
 
-1.  Agregue al formulario dos variables de entero para el problema de resta (sitúelas entre las variables de entero del problema de suma y el temporizador). El código debe tener este aspecto.
+1. Agregue al formulario dos variables de entero para el problema de resta (sitúelas entre las variables de entero del problema de suma y el temporizador). El código debe tener este aspecto.
 
      [!code-vb[VbExpressTutorial3Step5_6#12](../ide/codesnippet/VisualBasic/step-6-add-a-subtraction-problem_1.vb)]
      [!code-csharp[VbExpressTutorial3Step5_6#12](../ide/codesnippet/CSharp/step-6-add-a-subtraction-problem_1.cs)]
@@ -37,7 +37,7 @@ En la sexta parte de este tutorial, agregará un problema de resta y aprenderá 
 
      A continuación, modificará el método `StartTheQuiz()` para proporcionar los valores aleatorios del problema de resta.
 
-2.  Agregue el código siguiente después del comentario "Fill in the subtraction problem" (Rellenar el problema de resta).
+2. Agregue el código siguiente después del comentario "Fill in the subtraction problem" (Rellenar el problema de resta).
 
      [!code-vb[VbExpressTutorial3Step5_6#13](../ide/codesnippet/VisualBasic/step-6-add-a-subtraction-problem_2.vb)]
      [!code-csharp[VbExpressTutorial3Step5_6#13](../ide/codesnippet/CSharp/step-6-add-a-subtraction-problem_2.cs)]
@@ -58,19 +58,19 @@ En la sexta parte de este tutorial, agregará un problema de resta y aprenderá 
 
      En este caso, desea elegir la última sobrecarga, ya que puede especificar los valores mínimo y máximo.
 
-3.  Modifique el método `CheckTheAnswer()` para que compruebe si la respuesta de la resta es correcta.
+3. Modifique el método `CheckTheAnswer()` para que compruebe si la respuesta de la resta es correcta.
 
      [!code-vb[VbExpressTutorial3Step5_6#14](../ide/codesnippet/VisualBasic/step-6-add-a-subtraction-problem_4.vb)]
      [!code-csharp[VbExpressTutorial3Step5_6#14](../ide/codesnippet/CSharp/step-6-add-a-subtraction-problem_4.cs)]
 
      In Visual C#, `&&` es el operador `logical and`. En Visual Basic, el operador equivalente es `AndAlso`. Estos operadores indican "Si la suma de addend1 y addend2 es igual al valor de la suma NumericUpDown, y si el minuendo menos el sustraendo es igual al valor de la diferencia NumericUpDown". El método `CheckTheAnswer()` devuelve `true` solo si las respuestas a los problemas de suma y resta son correctos.
 
-4.  Reemplace la última parte del controlador del evento Tick del temporizador por el código siguiente para que rellene la respuesta correcta cuando se agote el tiempo.
+4. Reemplace la última parte del controlador del evento Tick del temporizador por el código siguiente para que rellene la respuesta correcta cuando se agote el tiempo.
 
      [!code-vb[VbExpressTutorial3Step5_6#22](../ide/codesnippet/VisualBasic/step-6-add-a-subtraction-problem_5.vb)]
      [!code-csharp[VbExpressTutorial3Step5_6#22](../ide/codesnippet/CSharp/step-6-add-a-subtraction-problem_5.cs)]
 
-5.  Guarde y ejecute el código.
+5. Guarde y ejecute el código.
 
      El programa incluye un problema de resta, como se muestra en la ilustración siguiente:
 
@@ -79,6 +79,6 @@ En la sexta parte de este tutorial, agregará un problema de resta y aprenderá 
 
 ## <a name="to-continue-or-review"></a>Para continuar o revisar
 
--   Para ir al siguiente paso del tutorial, vea [Paso 7: Agregar problemas de multiplicación y división](../ide/step-7-add-multiplication-and-division-problems.md).
+- Para ir al siguiente paso del tutorial, vea [Paso 7: Agregar problemas de multiplicación y división](../ide/step-7-add-multiplication-and-division-problems.md).
 
--   Para volver al paso anterior del tutorial, vea [Paso 5: Agregar controladores de eventos Enter para los controles NumericUpDown](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md).
+- Para volver al paso anterior del tutorial, vea [Paso 5: Agregar controladores de eventos Enter para los controles NumericUpDown](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md).

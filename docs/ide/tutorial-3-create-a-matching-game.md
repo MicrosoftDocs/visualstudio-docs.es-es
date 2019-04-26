@@ -8,26 +8,26 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 799f5bfaad3433bebeca54367c91fefc34e05a21
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 151b9be68b82f2b9fdcb20cd105890914333a2b6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928496"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62821536"
 ---
 # <a name="tutorial-3-create-a-matching-game"></a>Tutorial 3: Crear un juego de formar parejas
 
 En este tutorial, compilará un juego de formar parejas en el que el jugador debe buscar las coincidencias entre pares de iconos ocultos. Aprenderá a:
 
--   Almacenar objetos, como iconos, en un objeto <xref:System.Collections.Generic.List%601>.
+- Almacenar objetos, como iconos, en un objeto <xref:System.Collections.Generic.List%601>.
 
--   Usar un bucle `foreach` en Visual C# o un bucle de `For Each` en Visual Basic para recorrer en iteración los elementos de una lista.
+- Usar un bucle `foreach` en Visual C# o un bucle de `For Each` en Visual Basic para recorrer en iteración los elementos de una lista.
 
--   Realizar un seguimiento del estado de un formulario mediante variables de referencia.
+- Realizar un seguimiento del estado de un formulario mediante variables de referencia.
 
--   Crear un controlador de eventos que responda a eventos que se puedan usar con varios objetos.
+- Crear un controlador de eventos que responda a eventos que se puedan usar con varios objetos.
 
--   Crear un temporizador para la cuenta atrás y desencadenar un evento una y solo una vez después de iniciarse.
+- Crear un temporizador para la cuenta atrás y desencadenar un evento una y solo una vez después de iniciarse.
 
 Cuando termine este tutorial, el programa se parecerá al de la ilustración siguiente:
 

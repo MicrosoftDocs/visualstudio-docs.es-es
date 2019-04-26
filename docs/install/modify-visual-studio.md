@@ -19,11 +19,11 @@ ms.workload:
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.openlocfilehash: a08a14d8d07248efdcac759852a38777745e9a51
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58789723"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62951605"
 ---
 # <a name="modify-visual-studio-by-adding-or-removing-workloads-and-components"></a>Modificación de Visual Studio mediante la incorporación o la eliminación de cargas de trabajo y componentes
 
@@ -86,7 +86,7 @@ Esta es la manera de hacerlo.
      ![Apertura del Instalador de Visual Studio](media/vs2019-visual-studio-installer.png "Apertura del Instalador de Visual Studio")
 
      > [!NOTE]
-     > También encontrará el Instalador de Visual Studio en la siguiente ubicación:
+     > También pude encontrar el instalador de Visual Studio en la siguiente ubicación:
      >
      > `C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe`
 

@@ -22,11 +22,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 98e54e8e1bec7502e7401dc6a13a639e92c1a881
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55941314"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62823046"
 ---
 # <a name="analyze-load-test-results-and-errors-in-the-tables-view-of-the-load-test-analyzer"></a>Analizar los errores y resultados de pruebas de carga en la vista Tablas del Analizador de pruebas de carga
 

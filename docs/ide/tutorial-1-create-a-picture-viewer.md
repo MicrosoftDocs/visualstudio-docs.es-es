@@ -8,30 +8,30 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ad05083fa8cb1310e9be0b0dabb8333cb840a466
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 46ce6f92acb7ed6e92af07729a14720d3a8421a8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55941496"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62821823"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>Tutorial 1: Crear un visor de imágenes
 
 En este tutorial, compilará un programa que carga una imagen de un archivo y la muestra en una ventana. Aprenderá a usar el **Diseñador de Windows Forms** para arrastrar controles como botones y cuadros de imagen en el formulario, establecer sus propiedades y usar los contenedores para cambiar el tamaño del formulario de manera fluida. También empezará a escribir código. Aprenderá a:
 
--   Cree un nuevo proyecto.
+- Cree un nuevo proyecto.
 
--   Probar (depurar) una aplicación.
+- Probar (depurar) una aplicación.
 
--   Agregar controles básicos, como casillas y botones, a un formulario.
+- Agregar controles básicos, como casillas y botones, a un formulario.
 
--   Colocar controles en un formulario mediante los diseños.
+- Colocar controles en un formulario mediante los diseños.
 
--   Agregar los cuadros de diálogo **Abrir archivo** y **Color** a un formulario.
+- Agregar los cuadros de diálogo **Abrir archivo** y **Color** a un formulario.
 
--   Escribir código mediante IntelliSense y fragmentos de código.
+- Escribir código mediante IntelliSense y fragmentos de código.
 
--   Escribir métodos de control de eventos.
+- Escribir métodos de control de eventos.
 
 Cuando termine, el programa se parecerá al de la ilustración siguiente:
 

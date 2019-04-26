@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 747922bf52bee18b20aeba95f7d549c890afceea
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599316"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62972439"
 ---
 # <a name="profilecurrentid"></a>PROFILE_CURRENTID
 PROFILE_CURRENTID devuelve el seudotoken del identificador de subproceso o de proceso en una llamada a las funciones NameProfile, StartProfile, StopProfile, SuspendProfile y ResumeProfile. Se usa para hacer que la función opere en el subproceso o proceso actual, en lugar de en uno indicado de forma concreta.

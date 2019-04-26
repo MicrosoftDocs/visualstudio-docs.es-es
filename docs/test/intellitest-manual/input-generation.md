@@ -10,11 +10,11 @@ ms.workload:
 - multiple
 author: gewarren
 ms.openlocfilehash: 8634f1852d10a1935b3ee55b6e80ad9503923fe9
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323547"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62550219"
 ---
 # <a name="input-generation-using-dynamic-symbolic-execution"></a>Generación de entradas con la ejecución simbólica dinámica
 

@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7e0d9db4660936629c1e9dd6a5b7ff9704a7e7e8
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636481"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62814103"
 ---
 # <a name="resumeprofile"></a>ResumeProfile
 El método `ResumeProfile` reduce el contador de suspensiones y reanudaciones para el nivel de generación de perfiles especificado.

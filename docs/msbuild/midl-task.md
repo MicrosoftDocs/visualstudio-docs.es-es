@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0cb6698ac7652eab416523418458fa0c8b820097
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 301ca4ee88368b9134bbbcd2dc41435590becaed
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56618164"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62817576"
 ---
 # <a name="midl-task"></a>MIDL (tarea)
 Incluye la herramienta de compilación Lenguaje de definición de interfaz de Microsoft (MIDL), *midl.exe*. Para obtener más información, vea [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Referencia de la línea de comandos de MIDL).
@@ -39,7 +39,7 @@ Incluye la herramienta de compilación Lenguaje de definición de interfaz de Mi
 ## <a name="parameters"></a>Parámetros
  A continuación se describen los parámetros de la tarea **MIDL**. La mayoría de los parámetros de tarea, así como algunos conjuntos de parámetros, corresponden a una opción de línea de comandos.
 
--   **AdditionalIncludeDirectories**
+- **AdditionalIncludeDirectories**
 
      Parámetro **String[]** opcional.
 
@@ -47,7 +47,7 @@ Incluye la herramienta de compilación Lenguaje de definición de interfaz de Mi
 
      Para obtener más información, vea la opción **/I** en [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Referencia de la línea de comandos de MIDL).
 
--   **AdditionalOptions**
+- **AdditionalOptions**
 
      Parámetro **String** opcional.
 
@@ -55,7 +55,7 @@ Incluye la herramienta de compilación Lenguaje de definición de interfaz de Mi
 
      Para obtener más información, vea [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Referencia de la línea de comandos de MIDL).
 
--   **ApplicationConfigurationMode**
+- **ApplicationConfigurationMode**
 
      Parámetro **Boolean** opcional.
 
@@ -63,7 +63,7 @@ Incluye la herramienta de compilación Lenguaje de definición de interfaz de Mi
 
      Para obtener más información, vea la opción **/app_config** en [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Referencia de la línea de comandos de MIDL).
 
--   **ClientStubFile**
+- **ClientStubFile**
 
      Parámetro **String** opcional.
 
@@ -71,7 +71,7 @@ Incluye la herramienta de compilación Lenguaje de definición de interfaz de Mi
 
      Para obtener más información, vea la opción **/cstub** en [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Referencia de la línea de comandos de MIDL). Consulte también el parámetro **ServerStubFile** en esta tabla.
 
--   **CPreprocessOptions**
+- **CPreprocessOptions**
 
      Parámetro **String** opcional.
 
@@ -79,7 +79,7 @@ Incluye la herramienta de compilación Lenguaje de definición de interfaz de Mi
 
      Para obtener más información, vea la opción **/cpp_opt** en [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Referencia de la línea de comandos de MIDL).
 
--   **DefaultCharType**
+- **DefaultCharType**
 
      Parámetro **String** opcional.
 
@@ -95,7 +95,7 @@ Incluye la herramienta de compilación Lenguaje de definición de interfaz de Mi
 
      Para obtener más información, vea la opción **/char** en [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Referencia de la línea de comandos de MIDL).
 
--   **DllDataFileName**
+- **DllDataFileName**
 
      Parámetro **String** opcional.
 
@@ -103,7 +103,7 @@ Incluye la herramienta de compilación Lenguaje de definición de interfaz de Mi
 
      Para obtener más información, vea la opción **/dlldata** en [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Referencia de la línea de comandos de MIDL).
 
--   **EnableErrorChecks**
+- **EnableErrorChecks**
 
      Parámetro **String** opcional.
 
@@ -119,7 +119,7 @@ Incluye la herramienta de compilación Lenguaje de definición de interfaz de Mi
 
      Para obtener más información, vea la opción **/error** en [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Referencia de la línea de comandos de MIDL).
 
--   **ErrorCheckAllocations**
+- **ErrorCheckAllocations**
 
      Parámetro **Boolean** opcional.
 
@@ -127,7 +127,7 @@ Incluye la herramienta de compilación Lenguaje de definición de interfaz de Mi
 
      Para obtener más información, vea la opción **/error allocation** en [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Referencia de la línea de comandos de MIDL).
 
--   **ErrorCheckBounds**
+- **ErrorCheckBounds**
 
      Parámetro **Boolean** opcional.
 
@@ -135,7 +135,7 @@ Incluye la herramienta de compilación Lenguaje de definición de interfaz de Mi
 
      Para obtener más información, vea la opción **/error bounds_check** en [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Referencia de la línea de comandos de MIDL).
 
--   **ErrorCheckEnumRange**
+- **ErrorCheckEnumRange**
 
      Parámetro **Boolean** opcional.
 
@@ -143,7 +143,7 @@ Incluye la herramienta de compilación Lenguaje de definición de interfaz de Mi
 
      Para obtener más información, vea la opción **/error enum** en la ayuda de la línea de comandos (**/?**) de *midl.exe*.
 
--   **ErrorCheckRefPointers**
+- **ErrorCheckRefPointers**
 
      Parámetro **Boolean** opcional.
 
@@ -151,7 +151,7 @@ Incluye la herramienta de compilación Lenguaje de definición de interfaz de Mi
 
      Para obtener más información, vea la opción **/error ref** en [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Referencia de la línea de comandos de MIDL).
 
--   **ErrorCheckStubData**
+- **ErrorCheckStubData**
 
      Parámetro **Boolean** opcional.
 
@@ -159,7 +159,7 @@ Incluye la herramienta de compilación Lenguaje de definición de interfaz de Mi
 
      Para obtener más información, vea la opción **/error stub_data** en [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Referencia de la línea de comandos de MIDL).
 
--   **GenerateClientFiles**
+- **GenerateClientFiles**
 
      Parámetro **String** opcional.
 
@@ -174,7 +174,7 @@ Incluye la herramienta de compilación Lenguaje de definición de interfaz de Mi
 
      Para obtener más información, vea la opción **/client** en [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Referencia de la línea de comandos de MIDL).
 
--   **GenerateServerFiles**
+- **GenerateServerFiles**
 
      Parámetro **String** opcional.
 
@@ -189,7 +189,7 @@ Incluye la herramienta de compilación Lenguaje de definición de interfaz de Mi
 
      Para obtener más información, vea la opción **/server** en [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Referencia de la línea de comandos de MIDL).
 
--   **GenerateStublessProxies**
+- **GenerateStublessProxies**
 
      Parámetro **Boolean** opcional.
 
@@ -197,7 +197,7 @@ Incluye la herramienta de compilación Lenguaje de definición de interfaz de Mi
 
      Para obtener más información, vea la opción **/Oicf** en [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Referencia de la línea de comandos de MIDL).
 
--   **GenerateTypeLibrary**
+- **GenerateTypeLibrary**
 
      Parámetro **Boolean** opcional.
 
@@ -205,7 +205,7 @@ Incluye la herramienta de compilación Lenguaje de definición de interfaz de Mi
 
      Para obtener más información, vea la opción **/notlb** en [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Referencia de la línea de comandos de MIDL).
 
--   **HeaderFileName**
+- **HeaderFileName**
 
      Parámetro **String** opcional.
 
@@ -213,7 +213,7 @@ Incluye la herramienta de compilación Lenguaje de definición de interfaz de Mi
 
      Para obtener más información, vea la opción **/h** o **/header** en [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Referencia de la línea de comandos de MIDL).
 
--   **IgnoreStandardIncludePath**
+- **IgnoreStandardIncludePath**
 
      Parámetro **Boolean** opcional.
 
@@ -221,7 +221,7 @@ Incluye la herramienta de compilación Lenguaje de definición de interfaz de Mi
 
      Para obtener más información, vea la opción **/no_def_idir** en [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Referencia de la línea de comandos de MIDL).
 
--   **InterfaceIdentifierFileName**
+- **InterfaceIdentifierFileName**
 
      Parámetro **String** opcional.
 
@@ -229,7 +229,7 @@ Incluye la herramienta de compilación Lenguaje de definición de interfaz de Mi
 
      Para obtener más información, vea la opción **/iid** en [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Referencia de la línea de comandos de MIDL).
 
--   **LocaleID**
+- **LocaleID**
 
      Parámetro **int** opcional.
 
@@ -237,7 +237,7 @@ Incluye la herramienta de compilación Lenguaje de definición de interfaz de Mi
 
      Para obtener más información, vea la opción **/lcid** en [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Referencia de la línea de comandos de MIDL). Además, vea [Locale identifiers](https://docs.microsoft.com/windows/desktop/intl/locale-identifiers) (Identificadores de configuración regional).
 
--   **MkTypLibCompatible**
+- **MkTypLibCompatible**
 
      Parámetro **Boolean** opcional.
 
@@ -245,7 +245,7 @@ Incluye la herramienta de compilación Lenguaje de definición de interfaz de Mi
 
      Para obtener más información, vea la opción **/mktyplib203** en [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Referencia de la línea de comandos de MIDL). Además, vea [ODL file syntax](/previous-versions/windows/desktop/automat/odl-file-syntax) (Sintaxis de archivos ODL) en el sitio web de MSDN.
 
--   **OutputDirectory**
+- **OutputDirectory**
 
      Parámetro **String** opcional.
 
@@ -253,7 +253,7 @@ Incluye la herramienta de compilación Lenguaje de definición de interfaz de Mi
 
      Para obtener más información, vea la opción **/out** en [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Referencia de la línea de comandos de MIDL).
 
--   **PreprocessorDefinitions**
+- **PreprocessorDefinitions**
 
      Parámetro **String[]** opcional.
 
@@ -261,7 +261,7 @@ Incluye la herramienta de compilación Lenguaje de definición de interfaz de Mi
 
      Para obtener más información, vea la opción **/D** en [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Referencia de la línea de comandos de MIDL). Consulte también el parámetro **UndefinePreprocessorDefinitions** en esta tabla.
 
--   **ProxyFileName**
+- **ProxyFileName**
 
      Parámetro **String** opcional.
 
@@ -269,7 +269,7 @@ Incluye la herramienta de compilación Lenguaje de definición de interfaz de Mi
 
      Para obtener más información, vea la opción **/proxy** en [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Referencia de la línea de comandos de MIDL).
 
--   **RedirectOutputAndErrors**
+- **RedirectOutputAndErrors**
 
      Parámetro **String** opcional.
 
@@ -277,7 +277,7 @@ Incluye la herramienta de compilación Lenguaje de definición de interfaz de Mi
 
      Para obtener más información, vea la opción **/o** en [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Referencia de la línea de comandos de MIDL).
 
--   **ServerStubFile**
+- **ServerStubFile**
 
      Parámetro **String** opcional.
 
@@ -285,13 +285,13 @@ Incluye la herramienta de compilación Lenguaje de definición de interfaz de Mi
 
      Para obtener más información, vea la opción **/sstub** en [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Referencia de la línea de comandos de MIDL). Consulte también el parámetro **ClientStubFile** en esta tabla.
 
--   **Source**
+- **Source**
 
      Parámetro `ITaskItem[]` requerido.
 
      Especifica una lista de archivos de código fuente, separados por espacios.
 
--   **StructMemberAlignment**
+- **StructMemberAlignment**
 
      Parámetro **String** opcional.
 
@@ -309,7 +309,7 @@ Incluye la herramienta de compilación Lenguaje de definición de interfaz de Mi
 
      Para obtener más información, vea la opción **/Zp** en [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Referencia de la línea de comandos de MIDL). La opción **/Zp** es equivalente a la opción **/pack** y a la antigua opción **/align**.
 
--   **SuppressCompilerWarnings**
+- **SuppressCompilerWarnings**
 
      Parámetro **Boolean** opcional.
 
@@ -317,7 +317,7 @@ Incluye la herramienta de compilación Lenguaje de definición de interfaz de Mi
 
      Para obtener más información, vea la opción **/no_warn** en [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Referencia de la línea de comandos de MIDL).
 
--   **SuppressStartupBanner**
+- **SuppressStartupBanner**
 
      Parámetro `Boolean` opcional.
 
@@ -325,7 +325,7 @@ Incluye la herramienta de compilación Lenguaje de definición de interfaz de Mi
 
      Para obtener más información, vea la opción **/nologo** en [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Referencia de la línea de comandos de MIDL).
 
--   **TargetEnvironment**
+- **TargetEnvironment**
 
      Parámetro **String** opcional.
 
@@ -342,13 +342,13 @@ Incluye la herramienta de compilación Lenguaje de definición de interfaz de Mi
 
      Para obtener más información, vea la opción **/env** en [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Referencia de la línea de comandos de MIDL).
 
--   **TrackerLogDirectory**
+- **TrackerLogDirectory**
 
      Parámetro `String` opcional.
 
      Especifica el directorio intermedio en que se almacenan los registros de seguimiento para esta tarea.
 
--   **TypeLibFormat**
+- **TypeLibFormat**
 
      Parámetro **String** opcional.
 
@@ -363,7 +363,7 @@ Incluye la herramienta de compilación Lenguaje de definición de interfaz de Mi
 
      Para obtener más información, vea las opciones **/newtlb** y **/oldtlb** en [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Referencia de la línea de comandos de MIDL).
 
--   **TypeLibraryName**
+- **TypeLibraryName**
 
      Parámetro **String** opcional.
 
@@ -371,7 +371,7 @@ Incluye la herramienta de compilación Lenguaje de definición de interfaz de Mi
 
      Para obtener más información, vea la opción **/tlb** en [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Referencia de la línea de comandos de MIDL).
 
--   **UndefinePreprocessorDefinitions**
+- **UndefinePreprocessorDefinitions**
 
      Parámetro **String[]** opcional.
 
@@ -379,7 +379,7 @@ Incluye la herramienta de compilación Lenguaje de definición de interfaz de Mi
 
      Para obtener más información, vea la opción **/U** en [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Referencia de la línea de comandos de MIDL). Consulte también el parámetro **PreprocessorDefinitions** en esta tabla.
 
--   **ValidateAllParameters**
+- **ValidateAllParameters**
 
      Parámetro `Boolean` opcional.
 
@@ -387,7 +387,7 @@ Incluye la herramienta de compilación Lenguaje de definición de interfaz de Mi
 
      Para obtener más información, vea las opciones **/robust** y **/no_robust** en [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Referencia de la línea de comandos de MIDL).
 
--   **WarnAsError**
+- **WarnAsError**
 
      Parámetro `Boolean` opcional.
 
@@ -397,7 +397,7 @@ Incluye la herramienta de compilación Lenguaje de definición de interfaz de Mi
 
      Para obtener más información, vea las opciones **/WX** en [MIDL command-line reference](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference) (Referencia de la línea de comandos de MIDL). Consulte también el parámetro **WarningLevel** en esta tabla.
 
--   **WarningLevel**
+- **WarningLevel**
 
      Parámetro **String** opcional.
 

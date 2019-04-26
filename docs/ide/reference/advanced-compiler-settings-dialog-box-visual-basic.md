@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 87a7924a8a1239da61553c50dc7c7ba8cea547d2
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c8aec1862424be0182e99285ac3772cc9c4bb19f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918330"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62792236"
 ---
 # <a name="advanced-compiler-settings-dialog-box-visual-basic"></a>Configuración de compilador avanzada (Cuadro de diálogo, Visual Basic)
 
@@ -25,13 +25,13 @@ Use el cuadro de diálogo **Configuración de compilación avanzada** del **Dise
 
 ## <a name="to-access-this-dialog-box"></a>Para obtener acceso a este cuadro de diálogo
 
-1.  En el **Explorador de soluciones**, elija el nodo de proyecto (no el nodo **Solución**).
+1. En el **Explorador de soluciones**, elija el nodo de proyecto (no el nodo **Solución**).
 
-2.  En el menú **Proyecto**, haga clic en **Propiedades**. Cuando se muestre el **Diseñador de proyectos**, haga clic en la pestaña **Compilar**.
+2. En el menú **Proyecto**, haga clic en **Propiedades**. Cuando se muestre el **Diseñador de proyectos**, haga clic en la pestaña **Compilar**.
 
-3.  En la [página Compilación, Diseñador de proyectos (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md), seleccione **Configuración** y **Plataforma**. En las configuraciones de compilación simplificadas, no se muestran las listas **Configuración** y **Plataforma**. Para obtener más información, vea [Cómo: Establecer configuraciones Debug y Release](../../debugger/how-to-set-debug-and-release-configurations.md).
+3. En la [página Compilación, Diseñador de proyectos (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md), seleccione **Configuración** y **Plataforma**. En las configuraciones de compilación simplificadas, no se muestran las listas **Configuración** y **Plataforma**. Para obtener más información, vea [Cómo: Establecer configuraciones Debug y Release](../../debugger/how-to-set-debug-and-release-configurations.md).
 
-4.  Haga clic en **Opciones de compilación avanzadas**.
+4. Haga clic en **Opciones de compilación avanzadas**.
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 

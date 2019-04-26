@@ -1,5 +1,5 @@
 ---
-title: Filtrar Especificar un icono de aplicación (Visual Basic, C#)
+title: Procedimiento Especificar un icono de aplicación (Visual Basic, C#)
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,13 +12,13 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: f2903821c0e0843de43f68d67cc64c344ab95e02
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924583"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62547785"
 ---
-# <a name="how-to-specify-an-application-icon-visual-basic-c"></a>Filtrar Especificar un icono de aplicación (Visual Basic, C#)
+# <a name="how-to-specify-an-application-icon-visual-basic-c"></a>Procedimiento Especificar un icono de aplicación (Visual Basic, C#)
 
 La propiedad `Icon` de un proyecto especifica el archivo de icono (*.ico*) que se mostrará para la aplicación compilada en el **Explorador de archivos** y en la barra de tareas de Windows.
 

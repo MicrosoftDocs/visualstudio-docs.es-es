@@ -13,11 +13,11 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: 9030fd2ae85d12760d6f6a12be54492f3c14e12b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911279"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62791323"
 ---
 # <a name="encapsulate-a-field-refactoring"></a>Refactorización de encapsulamiento de un campo
 

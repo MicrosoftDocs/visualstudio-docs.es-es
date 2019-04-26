@@ -12,12 +12,12 @@ ms.assetid: 27806972-1b15-4388-833d-6d0632816f1f
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9d1fd2a1adcc339cb3b1d6f0aabc7db5a86973ab
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 71686e160fd808b2df3d399b50206bed2a6869e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415855"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979271"
 ---
 # <a name="how-to-create-a-load-test-plug-in"></a>Procedimiento Crear un complemento de prueba de carga
 
@@ -28,7 +28,9 @@ Puede crear un complemento de prueba de carga para ejecutar el código en distin
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
+<!-- markdownlint-disable MD003 MD020 -->
 ## <a name="to-create-a-load-test-plug-in-in-c"></a>Para crear un complemento de pruebas de carga de C#
+<!-- markdownlint-enable MD003 MD020 -->
 
 1. Abra un proyecto de prueba de carga y rendimiento web que contenga una prueba de rendimiento web.
 
@@ -94,7 +96,6 @@ El código siguiente muestra un complemento de prueba de carga que ejecuta códi
 > [!NOTE]
 > El siguiente código requiere que se agregue una referencia a System.Windows.Forms.
 
-
 ```csharp
 using System;
 using Microsoft.VisualStudio.TestTools.LoadTesting;
@@ -140,21 +141,21 @@ namespace LoadTestPluginTest
 
 Hay ocho eventos asociados a una prueba de carga, que pueden controlarse en el complemento de prueba de carga para que ejecuten código personalizado con la prueba. A continuación se muestra una lista de los eventos que proporcionan acceso a los distintos períodos de la ejecución de la prueba de carga:
 
--   <xref:Microsoft.VisualStudio.TestTools.LoadTesting.LoadTest.LoadTestStarting>
+- <xref:Microsoft.VisualStudio.TestTools.LoadTesting.LoadTest.LoadTestStarting>
 
--   <xref:Microsoft.VisualStudio.TestTools.LoadTesting.LoadTest.LoadTestFinished>
+- <xref:Microsoft.VisualStudio.TestTools.LoadTesting.LoadTest.LoadTestFinished>
 
--   <xref:Microsoft.VisualStudio.TestTools.LoadTesting.LoadTest.LoadTestWarmupComplete>
+- <xref:Microsoft.VisualStudio.TestTools.LoadTesting.LoadTest.LoadTestWarmupComplete>
 
--   <xref:Microsoft.VisualStudio.TestTools.LoadTesting.LoadTest.TestStarting>
+- <xref:Microsoft.VisualStudio.TestTools.LoadTesting.LoadTest.TestStarting>
 
--   <xref:Microsoft.VisualStudio.TestTools.LoadTesting.LoadTest.TestFinished>
+- <xref:Microsoft.VisualStudio.TestTools.LoadTesting.LoadTest.TestFinished>
 
--   <xref:Microsoft.VisualStudio.TestTools.LoadTesting.LoadTest.ThresholdExceeded>
+- <xref:Microsoft.VisualStudio.TestTools.LoadTesting.LoadTest.ThresholdExceeded>
 
--   <xref:Microsoft.VisualStudio.TestTools.LoadTesting.LoadTest.Heartbeat>
+- <xref:Microsoft.VisualStudio.TestTools.LoadTesting.LoadTest.Heartbeat>
 
--   <xref:Microsoft.VisualStudio.TestTools.LoadTesting.LoadTest.LoadTestAborted>
+- <xref:Microsoft.VisualStudio.TestTools.LoadTesting.LoadTest.LoadTestAborted>
 
 ## <a name="see-also"></a>Vea también
 

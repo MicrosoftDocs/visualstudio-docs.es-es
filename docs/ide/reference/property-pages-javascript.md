@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 80f7c2d941852303771df1998a21c076265fdb93
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c1f725c239df2ffc9683676c4c20a86ce12f873e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55929497"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62969025"
 ---
 # <a name="property-pages-javascript"></a>Página de propiedades, JavaScript
 Las **Páginas de propiedades** proporcionan acceso a la configuración del proyecto. Puede usar las páginas que aparecen en las **páginas Propiedades** para cambiar las propiedades del proyecto.
@@ -49,7 +49,6 @@ Las siguientes páginas y opciones aparecen en las **páginas Propiedades**.
 > [!NOTE]
 > Algunas opciones solo están disponibles en aplicaciones para UWP.
 
-
  **Ruta de acceso de salida**
 
  Especifica la ubicación de los archivos de salida para la configuración del proyecto. La ruta de acceso es relativa. Si escribe una ruta de acceso absoluta, se guarda la ruta de acceso absoluta en el proyecto. La ruta de acceso predeterminada es bin\Debug.
@@ -66,16 +65,15 @@ Las siguientes páginas y opciones aparecen en las **páginas Propiedades**.
 > [!NOTE]
 > Algunas opciones solo están disponibles en aplicaciones para UWP.
 
-
  **Depurador para iniciar**
 
  Especifica el host predeterminado para el depurador.
 
--   Seleccione **Equipo Local** para iniciar la aplicación en el equipo host de Visual Studio. Para obtener más información, vea [Ejecutar aplicaciones en el equipo local](../../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md).
+- Seleccione **Equipo Local** para iniciar la aplicación en el equipo host de Visual Studio. Para obtener más información, vea [Ejecutar aplicaciones en el equipo local](../../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md).
 
--   Seleccione **Simulador** para iniciar la aplicación en el simulador. Para obtener más información, vea [Ejecutar aplicaciones en el simulador](../../debugger/run-windows-store-apps-in-the-simulator.md).
+- Seleccione **Simulador** para iniciar la aplicación en el simulador. Para obtener más información, vea [Ejecutar aplicaciones en el simulador](../../debugger/run-windows-store-apps-in-the-simulator.md).
 
--   Seleccione **Equipo remoto** para iniciar la aplicación en un equipo remoto. Para obtener más información, vea [Ejecutar aplicaciones en un equipo remoto](../../debugger/run-windows-store-apps-on-a-remote-machine.md).
+- Seleccione **Equipo remoto** para iniciar la aplicación en un equipo remoto. Para obtener más información, vea [Ejecutar aplicaciones en un equipo remoto](../../debugger/run-windows-store-apps-on-a-remote-machine.md).
 
 **Iniciar aplicación**
 

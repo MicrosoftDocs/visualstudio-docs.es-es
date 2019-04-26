@@ -7,12 +7,12 @@ ms.date: 01/25/2019
 ms.topic: conceptual
 description: Obtenga información sobre la suscripción de aprendizaje de Pluralsight incluida en la suscripción de Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 23d8b7185ebcaa982b18e9087050f9da5d7f6e7f
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: f0028d8dffb70e38ef818a8de7945b22f9664328
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841645"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62947559"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Ventajas de aprendizaje de Pluralsight en las suscripciones de Visual Studio
 
@@ -21,7 +21,6 @@ Mejore sus aptitudes con cursos creados por expertos, rutas de aprendizaje, medi
 En la tabla siguiente se detallan los beneficios de la suscripción de Pluralsight disponibles para cada tipo de suscripción de Visual Studio.  Algunos suscriptores también podrán aprovechar los cursos limitados una vez que expire la suscripción de acceso al catálogo completo. Pluralsight le guiará por el proceso para cuando expire la suscripción al catálogo completo.
 
  Según el tipo de suscripción que tengan, no todos los suscriptores que hayan usado anteriormente una suscripción de Pluralsight proporcionada a través de una suscripción de Visual Studio podrán canjear nuevas ofertas de ventajas de Pluralsight. En caso de que no pueda canjear más beneficios de formación de Pluralsight, recibirá una notificación cuando intente activar el beneficio en el sitio web de Pluralsight.
-
 
 ## <a name="activation-steps"></a>Pasos para la activación
 1. Para activar la suscripción, conéctese a [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) y haga clic en el vínculo **Obtener código** en el icono del beneficio Pluralsight, que se encuentra en la sección Desarrollo profesional.
@@ -84,7 +83,6 @@ En la tabla siguiente se detallan los beneficios de la suscripción de Pluralsig
 > [!NOTE]
 > Microsoft ya no ofrece suscripciones anuales ni de Visual Studio Professional ni de Visual Studio Enterprise en las suscripciones de nube. Esto no supone cambio alguno en la experiencia actual de los clientes y ni en su capacidad para renovar, aumentar, reducir o cancelar las suscripciones. Conviene que los clientes nuevos vayan a [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) para explorar las diferentes opciones de compra de Visual Studio.
 
-
 ¿No sabe con seguridad qué suscripción usa?  Conéctese a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas las suscripciones asignadas a su dirección de correo electrónico. Si no ve todas las suscripciones, es posible que haya una o varias asignadas a una dirección de correo electrónico diferente.  Debe iniciar sesión con esa dirección de correo electrónico para ver esas suscripciones.
 
 ## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
@@ -101,14 +99,13 @@ R: Sí, como suscriptor de Visual Studio obtiene acceso a canales expertos como 
 
 •   James Montemagno (Mobility): [http://go.pluralsight.com/james-montemagno](http://go.pluralsight.com/james-montemagno)
 
-
 ### <a name="q-what-happens-when-my-pluralsight-subscription-runs-out"></a>P: ¿Qué ocurre cuando se agote mi suscripción a Pluralsight?
 R:  Al final de su suscripción gratuita de Pluralsight, puede comprar una suscripción directamente desde Pluralsight.  Póngase en contacto con [Pluralsight](http://www.pluralsight.com) para obtener toda la información.
 
 ## <a name="support-resources"></a>Recursos de soporte técnico
--  El [centro de ayuda de Pluralsight](https://help.pluralsight.com/help) proporciona asistencia para la realización de los cursos de Pluralsight o el uso del sitio web de Pluralsight.
--  Para obtener ayuda con las ventas, las suscripciones, las cuentas y la facturación para suscripciones de Visual Studio, póngase en contacto con el [soporte para suscripciones](https://visualstudio.microsoft.com/subscriptions/support/) de Visual Studio.
--  ¿Tiene alguna pregunta sobre el IDE de Visual Studio, Azure DevOps Services u otros productos o servicios de Visual Studio?  Visite el [soporte técnico de Visual Studio](https://visualstudio.microsoft.com/support/).
+- El [centro de ayuda de Pluralsight](https://help.pluralsight.com/help) proporciona asistencia para la realización de los cursos de Pluralsight o el uso del sitio web de Pluralsight.
+- Para obtener ayuda con las ventas, las suscripciones, las cuentas y la facturación para suscripciones de Visual Studio, póngase en contacto con el [soporte para suscripciones](https://visualstudio.microsoft.com/subscriptions/support/) de Visual Studio.
+- ¿Tiene alguna pregunta sobre el IDE de Visual Studio, Azure DevOps Services u otros productos o servicios de Visual Studio?  Visite el [soporte técnico de Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="next-steps"></a>Pasos siguientes
 Una vez que haya creado la cuenta, tendrá todo listo para iniciar el aprendizaje.  Visite [https://www.pluralsight.com](http://www.pluralsight.com) y pulse **Iniciar sesión** en la esquina superior derecha de la página para iniciar un nuevo curso, o vuelva a un curso que ya se ha iniciado.

@@ -12,12 +12,12 @@ ms.assetid: 57ed43ae-4e67-4139-8aec-3e9fceb0a745
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 75b117540f389b0ddf1e4c5dc2d48d385749b767
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 322b7d2baeca80f076c33879b52a650f31f8872b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950882"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62822809"
 ---
 # <a name="assign-roles-to-a-test-controller-and-test-agent"></a>Asignar roles a un controlador de pruebas y a un agente de pruebas
 
@@ -27,21 +27,21 @@ En este tutorial, se muestra cómo crear y configurar un entorno de prueba que u
 
 ## <a name="prerequisites"></a>Requisitos previos
 
--   Crear pruebas unitarias o pruebas de IU codificada para ejecutarlas con la configuración de pruebas.
+- Crear pruebas unitarias o pruebas de IU codificada para ejecutarlas con la configuración de pruebas.
 
--   Instalar un controlador de pruebas y agentes de prueba. Para más información sobre cómo instalar un controlador de pruebas y agentes de pruebas, vea [Instalar agentes y controladores de pruebas](../test/lab-management/install-configure-test-agents.md).
+- Instalar un controlador de pruebas y agentes de prueba. Para más información sobre cómo instalar un controlador de pruebas y agentes de pruebas, vea [Instalar agentes y controladores de pruebas](../test/lab-management/install-configure-test-agents.md).
 
 ## <a name="to-create-and-configure-a-test-setting"></a>Para crear y configurar una configuración de pruebas
 
-1.  En el **Explorador de soluciones**, haga clic con el botón derecho en **Elementos de la solución**, señale **Agregar** y, después, elija **Nuevo elemento**.
+1. En el **Explorador de soluciones**, haga clic con el botón derecho en **Elementos de la solución**, señale **Agregar** y, después, elija **Nuevo elemento**.
 
      Aparecerá el cuadro de diálogo **Agregar nuevo elemento**.
 
-2.  En el panel **Plantillas instaladas**, elija **Configuración de pruebas**.
+2. En el panel **Plantillas instaladas**, elija **Configuración de pruebas**.
 
-3.  En el cuadro **Nombre**, escriba **TestSettingDistributedTestWalkthrough**.
+3. En el cuadro **Nombre**, escriba **TestSettingDistributedTestWalkthrough**.
 
-4.  Haga clic en **Agregar**.
+4. Haga clic en **Agregar**.
 
      El nuevo archivo *TestSettingDistributedTestWalkthrough.testsettings* de prueba aparece en el **Explorador de soluciones**, bajo la carpeta **Elementos de la solución**.
 
@@ -52,53 +52,53 @@ En este tutorial, se muestra cómo crear y configurar un entorno de prueba que u
     > [!NOTE]
     > Cada configuración de pruebas que se crea aparece como una opción para las opciones **Seleccionar configuración de pruebas activa** y **Editar configuraciones de pruebas** del menú **Prueba**.
 
-5.  En **Nombre**, escriba el nombre de la configuración de pruebas.
+5. En **Nombre**, escriba el nombre de la configuración de pruebas.
 
-6.  En **Descripción**, escriba **Configuración de prueba distribuida**.
+6. En **Descripción**, escriba **Configuración de prueba distribuida**.
 
-7.  Deje **Esquema de nombre predeterminado** seleccionado.
+7. Deje **Esquema de nombre predeterminado** seleccionado.
 
 ## <a name="to-assign-roles-to-a-test-controller-and-test-agents"></a>Para asignar roles a un controlador de pruebas y agentes de prueba
 
-1.  Elija **Roles**.
+1. Elija **Roles**.
 
      Se mostrará la página **Roles**.
 
-2.  Para ejecutar la prueba de rendimiento remotamente, use la lista desplegable **Método de ejecución de las pruebas** y seleccione **Ejecución remota**.
+2. Para ejecutar la prueba de rendimiento remotamente, use la lista desplegable **Método de ejecución de las pruebas** y seleccione **Ejecución remota**.
 
-3.  En la lista desplegable **Controlador**, escriba el nombre de equipo del [controlador de pruebas](../test/lab-management/install-configure-test-agents.md).
+3. En la lista desplegable **Controlador**, escriba el nombre de equipo del [controlador de pruebas](../test/lab-management/install-configure-test-agents.md).
 
     > [!NOTE]
     > Si es la primera vez que agrega un controlador, no se mostrará ningún controlador en la lista desplegable. Esta lista se rellena con controladores anteriores especificados en otras configuraciones de pruebas.
 
-4.  En **Roles**, elija **Agregar**.
+4. En **Roles**, elija **Agregar**.
 
-5.  En la fila resaltada bajo la columna **Nombre**, escriba **Prueba distribuida**.
+5. En la fila resaltada bajo la columna **Nombre**, escriba **Prueba distribuida**.
 
 ## <a name="to-assign-a-diagnostic-and-data-adapter-to-your-test-setting"></a>Para asignar un adaptador de datos y de diagnóstico a la configuración de pruebas
 
-1.  Elija **Datos y diagnósticos**.
+1. Elija **Datos y diagnósticos**.
 
      Se mostrará la página **Datos y diagnósticos**.
 
-2.  En **Rol**, compruebe que el rol **Prueba distribuida** está seleccionado.
+2. En **Rol**, compruebe que el rol **Prueba distribuida** está seleccionado.
 
-3.  En **Datos y diagnóstico para el rol seleccionado**, seleccione los adaptadores **IntelliTrace** y **System Information**.
+3. En **Datos y diagnóstico para el rol seleccionado**, seleccione los adaptadores **IntelliTrace** y **System Information**.
 
      Para más información sobre estos adaptadores y otros adaptadores que se pueden usar en una configuración de pruebas, vea [Configuración de pruebas unitarias](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md).
 
-4.  Elija **Hosts**.
+4. Elija **Hosts**.
 
-5.  (Opcional) Si la máquina se está ejecutando en una versión de 64 bits de Microsoft Windows y ha compilado la prueba con la configuración **Cualquier CPU**, use la lista desplegable **Ejecutar pruebas en procesos de 32 bits o 64 bits** y seleccione **Ejecutar pruebas en proceso de 64 bits en un equipo de 64 bits**.
+5. (Opcional) Si la máquina se está ejecutando en una versión de 64 bits de Microsoft Windows y ha compilado la prueba con la configuración **Cualquier CPU**, use la lista desplegable **Ejecutar pruebas en procesos de 32 bits o 64 bits** y seleccione **Ejecutar pruebas en proceso de 64 bits en un equipo de 64 bits**.
 
     > [!TIP]
     > Para tener una flexibilidad máxima, compile los proyectos de prueba con la configuración **Cualquier CPU**. Después, se pueden ejecutar en ambos agentes de 32 y 64 bits. No supone ninguna ventaja compilar los proyectos de prueba con la configuración de **64 bits**.
 
-6.  Para guardar la nueva configuración de pruebas, elija **Aplicar**.
+6. Para guardar la nueva configuración de pruebas, elija **Aplicar**.
 
-7.  Elija **Cerrar**.
+7. Elija **Cerrar**.
 
-8.  En el menú Probar, seleccione **Seleccionar configuración de pruebas activa** y, luego, elija **TestSettingDistributedTestWalkthrough.testsettings**.
+8. En el menú Probar, seleccione **Seleccionar configuración de pruebas activa** y, luego, elija **TestSettingDistributedTestWalkthrough.testsettings**.
 
 9. Ejecute la prueba como de costumbre.
 

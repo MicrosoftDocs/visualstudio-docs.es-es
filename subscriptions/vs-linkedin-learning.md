@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Obtenga información sobre el beneficio de LinkedIn Learning incluido como parte de una suscripción a LinkedIn Premium incluida en suscripciones seleccionadas de Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 2f1e465be1d9c81235af1bad723f827a0f04147c
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: b6d60a5bedb960c2302a8823d1248b36849c604d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841554"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62948688"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Beneficio de LinkedIn Learning en suscripciones de Visual Studio
 
@@ -28,7 +28,6 @@ Para activar la suscripción LinkedIn Premium y el beneficio LinkedIn Learning:
 2. Busque el icono de LinkedIn Learning en la categoría de educación y haga clic en el vínculo **Obtener código**.
    > [!div class="mx-imgBorder"]
    > ![Icono de la ventaja de LinkedIn Learning](_img/vs-linkedin/vs-linkedin-3-month-tile.png)
-
 
 3. Si ya tiene una cuenta de LinkedIn y ha iniciado sesión automáticamente, se le dirigirá inmediatamente a la página de activación de la prestación LinkedIn Learning.  Si tiene una cuenta de LinkedIn, pero no ha iniciado sesión automáticamente, solo tiene que escribir su nombre de usuario y contraseña y, después, hacer clic en **Iniciar sesión**.  Vaya a [este paso](#activate-your-offer) para activar la oferta.
 
@@ -80,7 +79,6 @@ Para activar la suscripción LinkedIn Premium y el beneficio LinkedIn Learning:
    > [!div class="mx-imgBorder"]
    > ![Activación de LinkedIn Learning](_img/vs-linkedin/vs-linkedin-Activate1.png)
 
-
 16. Puede empezar a explorar las aptitudes que le interesen.  Realice selecciones en la lista de recomendaciones, busque otras aptitudes o haga clic en **Omitir** para continuar sin elegir aptitudes.
    > [!div class="mx-imgBorder"]
    > ![Aptitudes en LinkedIn Learning](_img/vs-linkedin/vs-linkedin-skills.png)
@@ -97,15 +95,13 @@ Para activar la suscripción LinkedIn Premium y el beneficio LinkedIn Learning:
 | Visual Studio Professional (estándar) | Licencia por volumen, Azure, venta directa                                       | 3 meses                                                            |No.  Disponible solo para nuevos suscriptores         |
 | Visual Studio Test Professional (estándar)                         | Licencia por volumen, venta directa                                              | 3 meses                                             |  No.  Disponible solo para nuevos suscriptores         |
 | Plataformas MSDN (estándar)                                          | Licencia por volumen, venta directa                                              | 3 meses                                              | No.  Disponible solo para nuevos suscriptores         |
-| Visual Studio Dev Essentials | NA  | 3 meses |No.  Disponible solo para nuevos suscriptores |
+| Visual Studio Dev Essentials | NA  | No disponible |NA|
 | Visual Studio Enterprise, Visual Studio Professional (de nube mensual) | Azure                                       | No disponible                                                           |NA|
 
 <sup>1</sup>  *Incluye:  No para reventa (NFR), Visual Studio Industry Partner (VSIP).  Excluye:  Microsoft Partner Network (MPN), FTE, MCT Software & Services Developer, BizSpark, Imagine, Most Valuable Professional (MVP), Regional Director (RD).  MCT Software & Services.*
 
-
 > [!NOTE]
 > Microsoft ya no ofrece suscripciones anuales ni de Visual Studio Professional ni de Visual Studio Enterprise en las suscripciones de nube. Esto no supone cambio alguno en la experiencia actual de los clientes y ni en su capacidad para renovar, aumentar, reducir o cancelar las suscripciones. Conviene que los clientes nuevos vayan a [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) para explorar las diferentes opciones de compra de Visual Studio.
-
 
 ¿No sabe con seguridad qué suscripción usa?  Conéctese a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas las suscripciones asignadas a su dirección de correo electrónico. Si no ve todas las suscripciones, es posible que haya una o varias asignadas a una dirección de correo electrónico diferente.  Debe iniciar sesión con esa dirección de correo electrónico para ver esas suscripciones.
 
@@ -114,8 +110,8 @@ Para activar la suscripción LinkedIn Premium y el beneficio LinkedIn Learning:
 R:  No, la oferta de LinkedIn Learning solo está disponible para nuevos suscriptores.
 
 ## <a name="support-resources"></a>Recursos de soporte técnico
--  ¿Necesita ayuda con LinkedIn Learning?  Consulte estos recursos:
+- ¿Necesita ayuda con LinkedIn Learning?  Consulte estos recursos:
     - Ayuda con el [uso de LinkedIn Learning](https://www.linkedin.com/help/learning).
     - Ayuda con preguntas generales sobre [LinkedIn](https://www.linkedin.com/help/linkedin), como la creación de cuentas y perfiles y el mantenimiento de la red.
--  Para obtener ayuda con las ventas, las suscripciones, las cuentas y la facturación para suscripciones de Visual Studio, póngase en contacto con el [soporte para suscripciones](https://visualstudio.microsoft.com/subscriptions/support/) de Visual Studio.
--  ¿Tiene alguna pregunta sobre el IDE de Visual Studio, Azure DevOps Services u otros productos o servicios de Visual Studio?  Visite el [soporte técnico de Visual Studio](https://visualstudio.microsoft.com/support/).
+- Para obtener ayuda con las ventas, las suscripciones, las cuentas y la facturación para suscripciones de Visual Studio, póngase en contacto con el [soporte para suscripciones](https://visualstudio.microsoft.com/subscriptions/support/) de Visual Studio.
+- ¿Tiene alguna pregunta sobre el IDE de Visual Studio, Azure DevOps Services u otros productos o servicios de Visual Studio?  Visite el [soporte técnico de Visual Studio](https://visualstudio.microsoft.com/support/).

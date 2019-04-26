@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 928e77c5c28b76570525b8ea9037cd0d0cef7f99
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: a3925fcac62dfee9f448bd826dc7948f8b08d498
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857572"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62944136"
 ---
 # <a name="tutorial-open-a-project-from-a-repo"></a>Tutorial: Abrir un proyecto desde un repositorio
 
@@ -27,7 +27,7 @@ En este tutorial, usará Visual Studio para conectarse por primera vez a un repo
 
 ::: moniker range="vs-2017"
 
-Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) para instalarlo de forma gratuita.
+Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) para instalarlo de forma gratuita.
 
 ::: moniker-end
 
@@ -177,13 +177,13 @@ Vea la animación siguiente para comprobar el trabajo que ha realizado en la sec
 
 Si está listo para codificar con Visual Studio, explore en profundidad cualquiera de los siguientes tutoriales específicos del lenguaje:
 
-- [Tutoriales de Visual Studio | **C#**](./csharp/index.yml)
-- [Tutoriales de Visual Studio | **Visual Basic**](./visual-basic/index.yml)
-- [Tutoriales de Visual Studio | **C++**](/cpp/get-started/)
-- [Tutoriales de Visual Studio | **Python**](/visualstudio/python/)
-- [Tutoriales de Visual Studio | **JavaScript**, **TypeScript** y **Node.js**](/visualstudio/javascript/)
+- [Tutoriales de Visual Studio | **C#**](./csharp/index.yml)
+- [Tutoriales de Visual Studio | **Visual Basic**](./visual-basic/index.yml)
+- [Tutoriales de Visual Studio | **C++**](/cpp/get-started/)
+- [Tutoriales de Visual Studio | **Python**](/visualstudio/python/)
+- [Tutoriales de Visual Studio | **JavaScript**, **TypeScript** y **Node.js**](/visualstudio/javascript/)
 
 ## <a name="see-also"></a>Vea también
 
-- [Azure DevOps Services: Get started with Azure Repos and Visual Studio (Azure DevOps Services: Introducción a Azure Repos y Visual Studio)](/azure/devops/repos/git/gitquickstart/)
-- [Microsoft Learn: Introducción a Azure DevOps](/learn/modules/get-started-with-devops/)
+- [Azure DevOps Services: Get started with Azure Repos and Visual Studio](/azure/devops/repos/git/gitquickstart/) (Azure DevOps Services: Introducción a Azure Repos y Visual Studio)
+- [Microsoft Learn: Introducción a Azure DevOps](/learn/modules/get-started-with-devops/)

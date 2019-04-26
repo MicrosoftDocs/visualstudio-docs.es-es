@@ -7,12 +7,12 @@ ms.date: 10/03/2017
 ms.topic: conceptual
 description: Sepa cómo obtener y administrar las claves de producto en las suscripciones de Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 9a1163aecab9f9330f1464704d0aa97018e51d6b
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 74d13602dd27669233cd40ebdd2f5e165c09079a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953906"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977737"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Uso de claves de producto en suscripciones de Visual Studio
 
@@ -53,7 +53,6 @@ Algunas claves se proporcionan de manera automática, como las claves "estática
 
 Según cuál sea el producto, hay disponibles diversos tipos de clave.
 
-
 ### <a name="product-key-types"></a>Tipos de clave de producto
 
 |    Tipo de clave           |    Descripción                                                                                                                                                                                                           |
@@ -74,7 +73,6 @@ Puede reclamar una clave en la página de descarga del producto, o bien buscar l
 
 ### <a name="claiming-product-keys"></a>Reclamación de claves de producto
 Solo los suscriptores con suscripciones activas pueden descargar productos y reclamar claves de producto.  Puede exportar las claves reclamadas desde la página [Claves de producto](https://my.visualstudio.com/productkeys) mientras su suscripción esté activa.
-
 
 Para reclamar una clave de producto:
 1. Inicie sesión en su suscripción de Visual Studio.  Debe iniciar sesión para descargar productos o reclamar claves de producto.
