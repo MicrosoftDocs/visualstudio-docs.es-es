@@ -17,11 +17,11 @@ ms.workload:
 - aspnet
 - dotnetcore
 ms.openlocfilehash: 5e9cc4f579b5913d5be3030828cad1a799efcd72
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58859392"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62840451"
 ---
 # <a name="step-2-create-your-first-aspnet-core-web-app"></a>Paso 2: Creación de la primera aplicación web de ASP.NET Core
 
@@ -122,4 +122,4 @@ En el vídeo siguiente, aprenderá a agregar compatibilidad con datos a la aplic
 
 ## <a name="see-also"></a>Vea también
 
-- [Tutorial: Creación de una aplicación web de páginas de Razor con ASP.NET Core](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1)
+- [Tutorial: Creación de una aplicación web de páginas de Razor con ASP.NETCore](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1)

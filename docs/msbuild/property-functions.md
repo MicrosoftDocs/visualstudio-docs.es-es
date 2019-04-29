@@ -10,18 +10,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d7e8c3bab691eeaf71383aef3315b51173492f7
-ms.sourcegitcommit: 2dc924c96a6d48803c8eedc3d6781202629b41fa
+ms.openlocfilehash: c94b33fad50cb5e271615629641ea7307f669255
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57737032"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62788547"
 ---
 # <a name="property-functions"></a>Funciones de propiedad
 
 En .NET Framework versiones 4 y 4.5, se pueden usar funciones de propiedad para evaluar los scripts de MSBuild. Las funciones de propiedad se pueden usar siempre que aparezcan propiedades. A diferencia de las tareas, las funciones de propiedad se pueden usar fuera de los destinos, y se evalúan antes de que se ejecute ningún destino.
 
  Se puede leer la hora del sistema, comparar cadenas, buscar coincidencias de expresiones regulares y realizar otras acciones en el script de compilación sin usar tareas de MSBuild. MSBuild intentará convertir la cadena en números y los números en cadena, y realizar otras conversiones que sean necesarias.
+ 
+Los valores de cadena devueltos por las funciones de propiedad tienen [caracteres especiales](msbuild-special-characters.md) con secuencia de escape. Si quiere que el valor se considere como si se hubiese implementado directamente en el archivo del proyecto, use `$([MSBuild]::Unescape())` para quitar las secuencias de escape de los caracteres especiales.
 
 ## <a name="property-function-syntax"></a>Sintaxis de las funciones de propiedad
 
@@ -175,7 +177,7 @@ Esta es una lista de las funciones de propiedad de MSBuild:
 |string MakeRelative(string basePath, string path)|Hace que `path` sea relativo a `basePath`. `basePath` debe ser un directorio absoluto. Si `path` no puede ser relativo, se devuelve textualmente. Similar a `Uri.MakeRelativeUri`.|
 |string ValueOrDefault(string conditionValue, string defaultValue)|Devuelve la cadena en el parámetro "defaultValue" solo si el parámetro "conditionValue" está vacío. De lo contrario, devuelve el valor conditionValue.|
 
-##  <a name="nested-property-functions"></a>Funciones de propiedad anidadas
+## <a name="nested-property-functions"></a>Funciones de propiedad anidadas
 
 Puede combinar funciones de propiedad para formar funciones más complejas, como muestra el siguiente ejemplo.
 
@@ -265,7 +267,7 @@ De forma predeterminada, una aplicación de 32 bits que se ejecuta en WOW64 acce
 
 Están disponibles las siguientes vistas del Registro:
 
-|Vista del Registro|de esquema JSON|
+|Vista del Registro|Definición|
 |-------------------|----------------|
 |RegistryView.Registry32|La vista del Registro para aplicaciones de 32 bits.|
 |RegistryView.Registry64|La vista del Registro para aplicaciones de 64 bits.|

@@ -7,18 +7,22 @@ ms.date: 11/03/2018
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
-ms.openlocfilehash: 1a3d95176af41bbf7803144995888b12abeeea3a
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 3fe365b56d35202e7755e93219eeaf45f51509d2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856682"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62998102"
 ---
 # <a name="install-visual-studio-2017-for-mac"></a>Instalación de Visual Studio 2017 para Mac
 
 > [!NOTE]
-> Visual Studio 2019 para Mac está [ya disponible](installation.md?view=vsmac-2019).
+> Visual Studio 2019 para Mac está [ya disponible](installation.md?view=vsmac-2019). Las versiones anteriores de Visual Studio para Mac, consulte la [página de descargas](https://my.visualstudio.com/Downloads?q=Visual%20Studio%202017%20for%20Mac) de Visual Studio.
 
+## <a name="downgrading-from-visual-studio-2019-for-mac"></a>¿Está cambiando a una versión anterior desde Visual Studio 2019 para Mac?
+
+Para obtener la mejor experiencia, antes de cambiar a una versión anterior debe asegurarse de [desinstalar](uninstall.md) Visual Studio 2019 para Mac. Si tiene problemas que provocan la descarga, no olvide de [notificarnos el problema](report-a-problem.md).
+ 
 ## <a name="requirements"></a>Requisitos
 
 Para empezar a desarrollar aplicaciones multiplataforma nativas al descargar Visual Studio para Mac, hay un par de componentes que debe instalar y configurar como preparación.
@@ -31,7 +35,7 @@ Para trabajar con iOS en Visual Studio, necesita los siguientes elementos:
 
 ## <a name="install"></a>Instalar
 
-1. Descargar Visual Studio para Mac desde [https://visualstudio.microsoft.com/](https://visualstudio.microsoft.com/)
+1. Descargue Visual Studio para Mac desde [my.visualstudio.com](https://my.visualstudio.com/Downloads?q=Visual%20Studio%202017%20for%20Mac)
 
 2. Una vez descargado el paquete del instalador, haga clic en el archivo **VisualStudioForMacInstaller.dmg** para montar el instalador y luego haga doble clic en el logotipo para ejecutarlo, como se muestra en la imagen siguiente:
 
@@ -96,7 +100,7 @@ Para instalar Visual Studio para Mac detrás de un firewall, es necesario que de
 
 Configure la red de modo que permita el acceso a las ubicaciones siguientes:
 
-- [Puntos de conexión de Visual Studio](/visualstudio/install/install-visual-studio-behind-a-firewall-or-proxy-server)
+- [Puntos de conexión de Visual Studio](/visualstudio/install/install-visual-studio-behind-a-firewall-or-proxy-server)
 
 ## <a name="next-steps"></a>Pasos siguientes
 
@@ -109,7 +113,7 @@ La instalación de Visual Studio para Mac le permite empezar a escribir código 
 
 ### <a name="android"></a>Android
 
-1. [Uso de Android SDK Manager de Xamarin](https://developer.xamarin.com/guides/android/getting_started/installation/android-sdk/?ide=xs)
+1. [Uso del administrador de Android SDK de Xamarin](https://developer.xamarin.com/guides/android/getting_started/installation/android-sdk/?ide=xs)
 2. [Emulador de Android SDK](https://developer.xamarin.com/guides/android/getting_started/installation/android-emulator/)
 4. [Configurar el dispositivo para el desarrollo](https://developer.xamarin.com/guides/android/getting_started/installation/set_up_device_for_development/)
 
@@ -123,4 +127,4 @@ Para otras cargas de trabajo, consulte la página [Cargas de trabajo](/visualstu
 
 ## <a name="see-also"></a>Vea también
 
-- [Instalación de Visual Studio 2017 (en Windows)](/visualstudio/install/install-visual-studio)
+- [Instalación de Visual Studio 2017 (en Windows)](/visualstudio/install/install-visual-studio)

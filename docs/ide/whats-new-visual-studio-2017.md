@@ -18,12 +18,12 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: fea8aeac90a974fc6b1cb89d9419c0652c184796
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: eabfb7ffd365ab377bc80997138a4f3368db488d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857819"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62583547"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Novedades de Visual Studio 2017
 
@@ -32,7 +32,7 @@ ms.locfileid: "58857819"
 ¿Quiere actualizar desde una versión anterior de Visual Studio? Esto es lo que Visual Studio 2017 puede ofrecerle: Productividad incomparable para cualquier desarrollador, aplicación y plataforma. Use Visual Studio 2017 para desarrollar aplicaciones para Android, iOS, Windows, Linux, la Web y la nube. Escriba código con rapidez, depure y emita diagnósticos con facilidad, ejecute pruebas con frecuencia y publique con confianza. También puede ampliar y personalizar Visual Studio si crea sus propias extensiones. Use el control de versiones, actúe con agilidad y colabore de manera eficiente con esta versión.
 
 >[!div class="button"]
->[Descargue Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
+>[Descarga de Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)
 
 Este es un resumen general de los cambios que hemos realizado desde la versión anterior, Visual Studio 2015:
 
@@ -371,9 +371,11 @@ Actualizamos Visual Studio 2017 a menudo con nuevas características que pueden 
 
 ¿Quiere saber más sobre lo que se está preparando de Visual Studio 2017? Vea la página [Guía básica de Visual Studio](/visualstudio/productinfo/vs2018-roadmap).
 
+Y no olvide de revisar la versión más reciente, [Visual Studio 2019](whats-new-visual-studio-2019.md).
+
 ## <a name="contact-us"></a>Póngase en contacto con nosotros
 
- ¿Por qué enviar comentarios al equipo de Visual Studio? Porque tomamos los comentarios de los clientes muy en serio. Estos impulsan muchas de nuestras acciones.
+¿Por qué enviar comentarios al equipo de Visual Studio? Porque tomamos los comentarios de los clientes muy en serio. Estos impulsan muchas de nuestras acciones.
 
 Si quiere realizar sugerencias sobre cómo podemos mejorar Visual Studio u obtener más información sobre las opciones de soporte técnico de los productos, vea la página [Hable con nosotros](talk-to-us.md).
 
@@ -383,10 +385,10 @@ Si quiere realizar sugerencias sobre cómo podemos mejorar Visual Studio u obten
 
 ## <a name="see-also"></a>Vea también
 
-* [Notas de la versión de Visual Studio 2017](/visualstudio/releasenotes/vs2017-relnotes)
+* [Notas de la versión de Visual Studio 2017](/visualstudio/releasenotes/vs2017-relnotes)
 * [Novedades de Visual Studio 2017 SDK](/visualstudio/extensibility/what-s-new-in-the-visual-studio-2017-sdk)
-* [Novedades de Visual C++](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
+* [Novedades de Visual C++](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
 * [Novedades de C#](/dotnet/csharp/whats-new)
-* [Novedades de Team Foundation Server](/tfs/server/whats-new?view=vsts)
-* [Novedades de Visual Studio para Mac](https://visualstudio.microsoft.com/vs/visual-studio-mac/)
+* [Novedades de Team Foundation Server](/tfs/server/whats-new?view=vsts)
+* [Novedades de Visual Studio para Mac](https://visualstudio.microsoft.com/vs/visual-studio-mac/)
 * [Novedades de Visual Studio 2019](whats-new-visual-studio-2019.md)

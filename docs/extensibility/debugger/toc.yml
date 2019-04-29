@@ -73,7 +73,7 @@
           href: expression-evaluation-in-break-mode.md
         - name: Control de excepciones (Visual Studio SDK)
           href: exception-handling-visual-studio-sdk.md
-    - name: 'Cómo: Depurar un motor de depuración personalizado'
+    - name: Cómo Depurar un motor de depuración personalizado
       href: how-to-debug-a-custom-debug-engine.md
 - name: Introducción a la extensibilidad del depurador
   href: getting-started-with-debugger-extensibility.md

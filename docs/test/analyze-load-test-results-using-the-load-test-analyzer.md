@@ -10,12 +10,12 @@ ms.assetid: 8a4ba300-425d-447c-91d9-c53f4345feee
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: de44dde72e339a2afe4caff779e3468ae2b8601e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 197df09d54500e16ca4f904662693bdfc983f7b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942900"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62822812"
 ---
 # <a name="analyze-load-test-results-using-the-load-test-analyzer"></a>Analizar los resultados de pruebas de carga con el Analizador de pruebas de carga
 
@@ -25,11 +25,11 @@ Busque cuellos de botella, identifique errores y mida las mejoras de la aplicaci
 
 Analice los resultados de pruebas de carga de estas formas:
 
--   Supervisar una prueba de carga cuando se está ejecutando.
+- Supervisar una prueba de carga cuando se está ejecutando.
 
--   Analizar una prueba de carga finalizada.
+- Analizar una prueba de carga finalizada.
 
--   Ver los resultados de una prueba de carga anterior.
+- Ver los resultados de una prueba de carga anterior.
 
 También puede crear informes que comparen dos o más informes de análisis de tendencias para compartirlos con las partes interesadas. Vea [Informar de los resultados de las pruebas de carga para las comparaciones de pruebas o los análisis de tendencias](../test/compare-load-test-results.md).
 
