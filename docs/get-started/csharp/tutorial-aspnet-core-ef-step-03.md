@@ -17,17 +17,17 @@ ms.workload:
 - aspnet
 - dotnetcore
 ms.openlocfilehash: c1d95d7621a97a36fdf737e7d3dd4f8baf713645
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018186"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62553944"
 ---
 # <a name="step-3-work-with-data-using-entity-framework"></a>Paso 3: Trabajo con datos mediante Entity Framework
 
 Siga estos pasos para empezar a trabajar con datos mediante Entity Framework Core en su aplicación web de ASP.NET Core.
 
-_Vea este vídeo y siga el tutorial para agregar datos a su primera aplicación de ASP.NET Core._
+_Vea este vídeo y siga el tutorial para agregar datos a su primera aplicación de ASP.NET Core._
 
 > [!VIDEO https://www.youtube.com/embed/dulJCwNrqhM]
 
@@ -122,9 +122,9 @@ Eso es todo lo que necesita para empezar a trabajar con datos en una aplicación
 
 En el vídeo siguiente, obtendrá información sobre cómo agregar compatibilidad con la API web a la aplicación.
 
-[Paso 4: Exposición de una API web desde la aplicación de ASP.NET Core](tutorial-aspnet-core-ef-step-04.md)
+[Paso 4: Exposición de una API web desde la aplicación de ASP.NET Core](tutorial-aspnet-core-ef-step-04.md)
 
 ## <a name="see-also"></a>Vea también
 
-- [Razor Pages con Entity Framework Core en ASP.NET Core](/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.1&tabs=visual-studio)
-- [Razor Pages en ASP.NET Core con EF Core](/aspnet/core/data/?view=aspnetcore-2.1)
+- [Razor Pages con Entity Framework Core en ASP.NET Core](/aspnet/core/data/ef-rp/intro?view=aspnetcore-2.1&tabs=visual-studio)
+- [Razor Pages en ASP.NET Core con EF Core](/aspnet/core/data/?view=aspnetcore-2.1)

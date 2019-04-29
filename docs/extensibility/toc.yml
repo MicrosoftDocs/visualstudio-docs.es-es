@@ -105,7 +105,7 @@
       href: subscribing-to-an-event.md
     - name: Ampliación de la ventana de salida
       href: extending-the-output-window.md
-    - name: 'Ampliación de las ventana Propiedades, Lista de tareas, Salida y Opciones'
+    - name: 'Ampliación de las propiedades, la lista de tareas, la salida y las ventanas de opciones'
       href: extending-the-properties-task-list-output-and-options-windows.md
     - name: Creación y administración de cuadros de diálogo modales
       href: creating-and-managing-modal-dialog-boxes.md
@@ -191,6 +191,8 @@
               href: how-to-open-standard-editors.md
             - name: Abrir editores para documentos abiertos
               href: how-to-open-editors-for-open-documents.md
+        - name: Guía de migración de extensibilidad del Diseñador XAML
+          href: xaml-designer-extensibility-migration.md
 - name: Ampliación de proyectos
   href: extending-projects.md
   items:
@@ -217,7 +219,7 @@
       href: extending-the-solution-explorer-filter.md
     - name: Administración de la carga de proyectos en una solución
       href: managing-project-loading-in-a-solution.md
-- name: Creación de plantillas de proyectos y de elementos personalizadas
+- name: Creación de plantillas de proyecto y de elemento personalizadas
   href: creating-custom-project-and-item-templates.md
   items:
     - name: Actualización de plantillas de proyecto y elemento para Visual Studio 2017 personalizadas
@@ -425,11 +427,11 @@
       href: ux-guidelines/evaluation-tools-for-visual-studio.md
     - name: Compatibilidad con reconocimiento de monitor
       href: ux-guidelines/per-monitor-awareness-extenders.md
-- name: Solución de problemas de PPP
+- name: Solución de problemas de DPI
   href: addressing-dpi-issues2.md
 - name: Catálogo y servicio de imágenes
   href: image-service-and-catalog.md
-- name: Uso y prestación de servicios
+- name: Uso y proporción de servicios
   href: using-and-providing-services.md
   items:
     - name: Obtener un servicio
@@ -463,7 +465,7 @@
       href: troubleshooting-vspackages.md
 - name: Shell (integrado o aislado)
   href: 'https://vspartner.com/pages/vsshells'
-- name: Suministro de extensiones de Visual Studio
+- name: Envío de extensiones de Visual Studio
   href: shipping-visual-studio-extensions.md
   items:
     - name: Plantilla de proyecto de VSIX

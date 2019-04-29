@@ -9,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 59e8206bd1110a06c8b94b71ac9da8253a3a4b25
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: f27e09cd66c05a10648205850a9547d7b191d2de
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416311"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62787587"
 ---
 # <a name="get-started-with-live-unit-testing-in-visual-studio"></a>Comenzar a utilizar Live Unit Testing en Visual Studio
 
@@ -34,7 +34,7 @@ La solución completa de Visual Basic puede descargarse desde el repositorio [Mi
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-Este tutorial exige la instalación previa de Visual Studio Enterprise Edition con la carga de trabajo de .NET Core 2.0.
+Este tutorial exige la instalación previa de Visual Studio Enterprise con la carga de trabajo de .NET Core 2.0.
 
 ## <a name="create-the-solution-and-the-class-library-project"></a>Creación de la solución y del proyecto de biblioteca de clases
 
@@ -94,11 +94,11 @@ Ahora que ha creado la solución, podrá crear una biblioteca de clases denomina
 
    `StringLibrary` tiene tres métodos estáticos:
 
-      - `StartsWithUpper` devuelve `true` si una cadena comienza por una letra mayúscula; en caso contrario, devuelve `false`.
+   - `StartsWithUpper` devuelve `true` si una cadena comienza por una letra mayúscula; en caso contrario, devuelve `false`.
 
-      - `StartsWithLower` devuelve `true` si una cadena comienza por una letra minúscula; en caso contrario, devuelve `false`.
+   - `StartsWithLower` devuelve `true` si una cadena comienza por una letra minúscula; en caso contrario, devuelve `false`.
 
-      - `HasEmbeddedSpaces` devuelve `true` si una cadena contiene un espacio en blanco insertado; en caso contrario, devuelve `false`.
+   - `HasEmbeddedSpaces` devuelve `true` si una cadena contiene un espacio en blanco insertado; en caso contrario, devuelve `false`.
 
 6. Seleccione **Compilar** > **Compilar solución** en el menú de nivel superior de Visual Studio. Visual Studio compilará correctamente la biblioteca.
 
@@ -140,11 +140,11 @@ Ahora que ha creado la solución, podrá crear una biblioteca de clases denomina
 
    `StringLibrary` tiene tres métodos estáticos:
 
-      - `StartsWithUpper` devuelve `true` si una cadena comienza por una letra mayúscula; en caso contrario, devuelve `false`.
+   - `StartsWithUpper` devuelve `true` si una cadena comienza por una letra mayúscula; en caso contrario, devuelve `false`.
 
-      - `StartsWithLower` devuelve `true` si una cadena comienza por una letra minúscula; en caso contrario, devuelve `false`.
+   - `StartsWithLower` devuelve `true` si una cadena comienza por una letra minúscula; en caso contrario, devuelve `false`.
 
-      - `HasEmbeddedSpaces` devuelve `true` si una cadena contiene un espacio en blanco insertado; en caso contrario, devuelve `false`.
+   - `HasEmbeddedSpaces` devuelve `true` si una cadena contiene un espacio en blanco insertado; en caso contrario, devuelve `false`.
 
 6. En el **Explorador de soluciones**, haga clic con el botón derecho en el proyecto StringLibrary y seleccione **Propiedades**. En la pestaña **Aplicación**, elimine el texto del cuadro de texto **Espacio de nombres raíz**, como se muestra en la figura siguiente. El espacio de nombres raíz se define mediante la [instrucción Namespace](/dotnet/visual-basic/language-reference/statements/namespace-statement) en el código fuente.
 

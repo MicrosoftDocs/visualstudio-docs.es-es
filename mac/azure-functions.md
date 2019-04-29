@@ -7,12 +7,12 @@ ms.date: 04/02/2019
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
-ms.openlocfilehash: ac0786e9b52a149fe8067c41aaabe61ad9fd5c87
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: db25a9cbc647e399da86781d155a7b55d8e3802e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857248"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62984979"
 ---
 # <a name="introduction-to-azure-functions"></a>Introducción a Azure Functions
 
@@ -102,7 +102,7 @@ Puede usar el procedimiento anterior para agregar más funciones a su proyecto d
 
     |Parámetro  |Descripción  |
     |---------|---------|
-    |**Nombre de App Service**|Un nombre único global que identifica la nueva instancia de Function App.|
+    |**Nombre de App Service**|Un nombre único global que identifica la nueva instancia de Function App.|
     |**Suscripción**|La suscripción de Azure que se va a usar.|
     |**[Grupo de recursos](/azure/azure-resource-manager/resource-group-overview)**|Nombre del grupo de recursos en el que se va a crear la instancia de Function App. Elija **+** para crear un nuevo grupo de recursos.|
     |**[Plan de servicio](/azure/azure-functions/functions-scale)**|Elija un plan existente o cree un plan personalizado. Elija una ubicación en una región cerca de usted o cerca de otros servicios a los que acceda la función.|
@@ -147,9 +147,7 @@ Hay un valor importante que es posible que tenga que configurar: `FUNCTIONS_EXTE
     - Http POST CRUD
     - Desencadenador HTTP con parámetros
 
-
 - **Temporizador**: ejecutar una limpieza u otras tareas de lote en una programación predefinida. Esta plantilla tiene dos campos: un nombre y una programación, que es una expresión de CRON de seis campos. Para obtener más información, vea la página [Cree una función en Azure que se desencadena mediante un temporizador](/azure/azure-functions/functions-create-scheduled-function)
-
 
 - **Desencadenador de cola**: se trata de una función que responderá a los mensajes a medida que llegan a la cola de Azure Storage. Además del nombre de la función, esta plantilla toma una **ruta de acceso** (el nombre de la cola desde la que se leerá el mensaje) y una cuenta de almacenamiento **Conexión** (el nombre de la configuración de la aplicación que contiene la cadena de conexión de la cuenta de almacenamiento). Para obtener más información, vea la página [Crear una función desencadenada por Azure Queue Storage](/azure/azure-functions/functions-create-storage-queue-triggered-function).
 

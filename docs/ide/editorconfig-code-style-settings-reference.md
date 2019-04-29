@@ -16,12 +16,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: e06421955089a378cd20399280d066cc27bfe03f
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.openlocfilehash: 3cdd9f0b46c578f713b7f2af2940f4d7742df19a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59232806"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62557221"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>Configuración de la convención de codificación de .NET para EditorConfig
 
@@ -70,7 +70,7 @@ Gravedad | Efecto
 En la siguiente lista se muestra la configuración de estilo de código de idioma permitida:
 
 - Configuración del estilo de código de .NET
-    - ["Esto". y "Me."](#this_and_me)
+    - [Los calificadores "This." y "Me."](#this_and_me)
         - dotnet\_style\_qualification\_for_field
         - dotnet\_style\_qualification\_for_property
         - dotnet\_style\_qualification\_for_method
@@ -113,7 +113,7 @@ En la siguiente lista se muestra la configuración de estilo de código de idiom
         - csharp\_style\_expression\_bodied_properties
         - csharp\_style\_expression\_bodied_indexers
         - csharp\_style\_expression\_bodied_accessors
-    - [Detección de patrones](#pattern_matching)
+    - [Coincidencia de patrones](#pattern_matching)
         - csharp\_style\_pattern\_matching\_over\_is\_with\_cast_check
         - csharp\_style\_pattern\_matching\_over\_as\_with\_null_check
     - [Declaraciones de variables insertadas](#inlined_variable_declarations)
@@ -329,13 +329,14 @@ En la tabla siguiente se muestran los nombres e identificadores de las reglas, l
 
 **dotnet\_style\_require\_accessibility_modifiers**
 
-Esta regla no acepta un valor **true** o **false**; en su lugar, acepta un valor de la tabla siguiente:
+Esta regla acepta un valor de la tabla siguiente:
 
 | Valor | Descripción |
 | ----- |:----------- |
 | always | Prefiere que los modificadores de accesibilidad se especifiquen. |
-| for\_non\_interface_members | Prefiere que los modificadores de accesibilidad se declaren, excepto para los miembros de la interfaz pública. Esto equivale a **always** y se ha agregado para las pruebas futuras si C# agrega métodos de interfaz predeterminados. |
+| for\_non\_interface_members | Prefiere que los modificadores de accesibilidad se declaren, excepto para los miembros de la interfaz pública. (Esto equivale a **always** y se ha agregado para las pruebas futuras si C# agrega métodos de interfaz predeterminados). |
 | never | No se prefiere que se especifiquen los modificadores de accesibilidad |
+| omit_if_default | Se prefiere que se especifiquen los modificadores de accesibilidad, excepto si se trata del modificador predeterminado |
 
 Ejemplos de código:
 
@@ -748,8 +749,6 @@ If Object.ReferenceEquals(value, Nothing)
     Return
 End If
 ```
-
-
 
 **dotnet\_style\_prefer\_conditional\_expression\_over_assignment**
 
@@ -1391,7 +1390,7 @@ Se especifica **true** (se prefiere este estilo) o **false** (no se prefiere est
 En la lista siguiente se muestran las reglas de convención de formato disponibles en Visual Studio:
 
 - Configuración de formato de .NET
-    - [Organizar instrucciones Using](#usings)
+    - [Organización de instrucciones Using](#usings)
         - dotnet_sort_system_directives_first
         - dotnet_separate_import_directive_groups
 - Configuración de formato de C#
@@ -2359,6 +2358,6 @@ visual_basic_preferred_modifier_order = Partial,Default,Private,Protected,Public
 ## <a name="see-also"></a>Vea también
 
 - [Acciones rápidas](../ide/quick-actions.md)
-- [Convenciones de nomenclatura .NET para EditorConfig](../ide/editorconfig-naming-conventions.md)
+- [Convenciones de nomenclatura de .NET para EditorConfig](../ide/editorconfig-naming-conventions.md)
 - [Crear opciones del editor personalizadas y portátiles](../ide/create-portable-custom-editor-options.md)
-- [Archivo .editorconfig de .NET Compiler Platform](https://github.com/dotnet/roslyn/blob/master/.editorconfig)
+- [Archivo .editorconfig de la plataforma de compilación .NET](https://github.com/dotnet/roslyn/blob/master/.editorconfig)

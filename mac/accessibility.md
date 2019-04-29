@@ -3,78 +3,74 @@ title: Accesibilidad
 description: Este artículo presenta las características de accesibilidad de Visual Studio para Mac y cómo pueden habilitarse.
 author: conceptdev
 ms.author: crdun
-ms.date: 08/15/2017
+ms.date: 04/17/2019
 ms.assetid: 2C4AAC2E-3B4A-4496-8BE0-1F5A7F81D1CA
-ms.openlocfilehash: f90f5fca9d68ed00162fd746ddf291343c8d51f7
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 383f9fb46341eec78fa2daa59bba31dde89ac437
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296351"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62985291"
 ---
 # <a name="accessibility"></a>Accesibilidad
 
-Además de las características y utilidades de macOS, Visual Studio para Mac tiene las características siguientes, por lo que es más accesible para personas con discapacidades:
+Visual Studio para Mac tiene las características de accesibilidad siguientes, con las que es más accesible para personas con capacidades diferentes:
 
 - Ampliación de texto de los paneles de soluciones y de editores
 - Opciones de tamaño de texto en los editores
 - Personalización de colores en los editores
+- Navegación mediante teclado
 - Personalización de métodos abreviados de teclado
 - Completado de código para métodos y parámetros
 
+Además de estas características, Apple ofrece una serie de herramientas para ayudar a los usuarios con necesidades especiales, como VoiceOver y Dictado.
+
 Para más información acerca de las características de accesibilidad de macOS, consulte el [sitio web de Apple](https://www.apple.com/accessibility/mac/).
 
-## <a name="using-accessibility-features-in-visual-studio-for-mac"></a>Uso de las características de accesibilidad de Visual Studio para Mac
+## <a name="enabling-macos-assistive-technologies-in-visual-studio-for-mac"></a>Habilitación de las tecnologías de asistencias de macOS en Visual Studio para Mac
 
-De forma predeterminada, las características de accesibilidad de Visual Studio para Mac están desactivadas. Para habilitarlas, siga estos pasos:
+La compatibilidad de Visual Studio para Mac con las tecnologías de asistencia de macOS está deshabilitada de manera predeterminada. Para habilitar, siga estos pasos:
 
-1. Vaya a **Visual Studio > Preferencias > Otros > Accesibilidad**.
+1. Vaya a **Visual Studio (menú) > Preferencias > Otros > Accesibilidad**
 
-2. Active la casilla **Enable Accessibility** (Habilitar accesibilidad), como se muestra en el diagrama siguiente:
+2. Active la casilla **Habilitar accesibilidad**:
 
-    ![Casilla para habilitar la accesibilidad](media/accessibility-image1.png)
+   ![Casilla de preferencias de accesibilidad](media/accessibility-preferences.png)
 
-3. Presione el botón **Reinicie Visual Studio** para que las características de accesibilidad surtan efecto.
+3. Seleccione el botón **Reiniciar Visual Studio** para reiniciar Visual Studio y habilitar la compatibilidad con las tecnologías de asistencia de Apple.
 
-Como alternativa, puede usar la línea de comandos para habilitar las características de accesibilidad. Para ello, especifique el comando siguiente en el terminal:
+## <a name="how-to-use-keyboard-navigation"></a>Procedimiento Uso de la navegación mediante el teclado
 
-```bash
-defaults write com.microsoft.visual-studio com.monodevelop.AccessibilityEnabled 1
-```
+La compatibilidad con navegación mediante el teclado está integrada directamente en macOS pero, para tener la experiencia más completa posible, debe establecer que macOS navegue por **Todos los controles**:
 
-Después de activar la accesibilidad, debe reiniciar Visual Studio.
+![Todos los controles de teclado en las preferencias del sistema](media/accessibility-preferences-keyboard.png)
 
-## <a name="how-to-use-keyboard-navigation"></a>Uso de la navegación mediante el teclado
-
-Se puede habilitar la navegación mediante el teclado mediante el establecimiento de la opción de acceso de teclado completo en **Preferencias del sistema > Teclado > Accesos directos** en **Todos los controles**:
-
-![Panel de preferencias del sistema en macOS](media/accessibility-image2.png)
-
-Si se establece el acceso de teclado completo, se activa en el rectángulo de foco. Después, se pueden seleccionar los controles mediante:
+Establecer **Acceso de teclado completo** en **Todos los controles** permite navegar por todos los controles de una ventana o cuadro de diálogo. Después, se pueden seleccionar los controles mediante:
 
 - Presione la tecla tabulador para avanzar por los controles
 - Presione Mayús-Tab para retroceder por los controles
-- Teclas de dirección para desplazarse entre los controles en la dirección de las flechas.
+- Teclas de dirección para desplazarse entre los controles en la dirección de las flechas
+- Control tabulador para salir de los cuadros de áreas de texto
+- Al presionar la barra espaciadora se activa el control actualmente en el foco
 
-Al presionar la barra espaciadora, se activa el control con el foco.
+## <a name="how-to-enable-and-use-voiceover"></a>Procedimiento Habilitación y uso de VoiceOver
 
-## <a name="how-to-enable-and-use-voice-over"></a>Habilitación y utilización de VoiceOver
+Para habilitar o deshabilitar VoiceOver, presione **&#8984; + F5**
 
-Para activar o desactivar VoiceOver, presione **Cmd + F5**
+Los comandos de VoiceOver aparecen en esta guía como **VO+*tecla***, donde **VO** se refiere al modificador establecido en la aplicación **Utilidad VoiceOver**. El modificador predeterminado es **Ctrl + Alt**. Por ejemplo, dependiendo del modificador de VoiceOver que use, **VO + M** significará **Ctrl + Alt + M**. Para no extendernos demasiado, las teclas de dirección se mencionarán como **Izquierda** y **Derecha**, etc.
 
-Para navegar por los comandos de VoiceOver de la interfaz de usuario, use los comandos siguientes:
+Para navegar en la interfaz de usuario de Visual Studio para Mac, use estas combinaciones de teclas:
 
-- Nueva el cursor de VoiceOver entre los controles: **Ctrl + Alt + tecla de dirección izquierda/tecla de dirección derecha**
+- **VO + Derecha / Izquierda**: Navegación entre los elementos de la interfaz de usuario
+    - VoiceOver anunciará la etiqueta y el tipo de control y explicará cómo interactuar con él.
+- **VO + Mayús + Abajo / Arriba**: Entrada o salida de un elemento
+    - Una vez dentro de un elemento, se puede usar **VO + Izquierda / Derecha** para navegar alrededor de los elementos que están dentro.
+- **VO + Espacio**: Selección o interacción con un control
+- **VO + M**: Interacción con la barra de menús de Visual Studio para Mac
 
-   VoiceOver lee el nombre de los controles, algunos detalles sobre ellos y lo que se puede hacer con ellos.
+Para más información sobre el uso de VoiceOver y una lista completa de los comandos, consulte estas guías:
 
-- Especifique los grupos y controles (por ejemplo, Panel de solución, el cuadro de herramientas y otros paneles): **Ctrl + Alt + Mayús + flecha abajo**
-
-   Cuando esté dentro de un control, puede usar **Ctrl + Alt + Teclas de dirección** para desplazarse por él.
-
-Para más información sobre el uso de VoiceOver en macOS, consulte las guías siguientes:
-
-- [Getting Started with VoiceOver](https://help.apple.com/voiceover/info/guide/10.12/) (Introducción a VoiceOver)
+- [Apple VoiceOver Getting Started Guide](https://support.apple.com/en-us/guide/voiceover-guide/welcome/web) (Guía de introducción a Apple VoiceOver)
 - [VoiceOver commands in macOS](http://lab.dotjay.com/notes/voiceover-commands/) (Comandos de VoiceOver en macOS)
 
 ## <a name="see-also"></a>Vea también

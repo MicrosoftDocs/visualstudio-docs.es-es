@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5421599d2ffa006a445e0410088671d8897cc52
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d62f999f485acaba168a50d404f2b5cbb272ef14
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923257"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62821083"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Usar expresiones regulares en Visual Studio
 
@@ -61,12 +61,12 @@ A continuación se muestran algunos ejemplos:
 |Coincidir con un límite de palabras|\b (fuera de una clase de caracteres `\b` especifica un límite de palabras y dentro de una clase de caracteres `\b` un retroceso).|`\bin` coincide con "in" en "inside", pero no con "pinto".|
 |Coincidir con un salto de línea (es decir, con un retorno de carro seguido de una nueva línea).|\r?\n|`End\r?\nBegin` coincide con "End" y "Begin" solo cuando "End" es la última cadena en una línea y "Begin" es la primera cadena en la línea siguiente.|
 |Coincidir con cualquier carácter alfanumérico|\w|`a\wd` coincide con "add" y "a1d", pero no con "a d".|
-|Coincidir con cualquier carácter de espacio en blanco|(?([^\r\n])\s)|`Public\sInterface` coincide con la frase "Public Interface".|
+|Coincidir con cualquier carácter de espacio en blanco|\s|`Public\sInterface` coincide con la frase "Public Interface".|
 |Coincidir con cualquier carácter numérico|\d|`\d` coincide con "3" en "3456", "2" en "23" y "1" en "1".|
 |Coincidir con un carácter Unicode|\uXXXX donde XXXX especifica el valor del carácter Unicode.|`\u0065` coincide con el carácter "e".|
 |Coincidir con un identificador|\b[\_\w-[0-9]][\_\w]*\b|Coincide con "type1", pero no con "&type1" ni "#define".|
 |Coincidir con una cadena entre comillas|((\\".+?\\")&#124;('.+?'))|Coincide con cualquier cadena entre comillas simples o dobles.|
-|Coincidir con un número hexadecimal|\b0[xX]([0-9a-fA-F]\)\b|Coincide con “0xc67f”, pero no con “0xc67fc67f”.|
+|Coincidir con un número hexadecimal|\b0[xX]([0-9a-fA-F]+\)\b|Coincide con "0xc67f", pero no con "0xc67g".|
 |Coincidir con enteros y decimales|\b[0-9]*\\.\*[0-9]+\b|Coincide con “1.333”.|
 
 > [!TIP]

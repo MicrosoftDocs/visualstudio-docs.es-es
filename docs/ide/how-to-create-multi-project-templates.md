@@ -1,6 +1,6 @@
 ---
 title: Crear plantillas de varios proyectos
-ms.date: 01/02/2018
+ms.date: 04/17/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio templates, creating multi-project
@@ -9,12 +9,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 01bd8101aa1e62e65c83d4da40af4eb624338a89
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.openlocfilehash: f24a7c0d07c804ca45bb31058061cda714ef6a51
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59232637"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62430502"
 ---
 # <a name="how-to-create-multi-project-templates"></a>Procedimiento Crear plantillas de varios proyectos
 
@@ -67,6 +67,19 @@ El archivo raíz *vstemplate* de una plantilla de varios proyectos difiere de un
         </ProjectCollection>
     </TemplateContent>
     ```
+
+> [!TIP]
+> Si solo quiere que la plantilla de varios proyectos aparezca en el cuadro de diálogo del proyecto nuevo y no en los proyectos individuales que contiene, marque las plantillas internas como [ocultas](../extensibility/hidden-element-visual-studio-templates.md). Por ejemplo:
+>
+> ```xml
+> <VSTemplate Type="Project" ... >
+>     <TemplateData>
+>         ...
+>         <Hidden>true</Hidden>
+>     </TemplateData>
+>     ...
+> </VSTemplate>
+> ```
 
 ## <a name="create-a-multi-project-template-from-an-existing-solution"></a>crear una plantilla de varios proyectos a partir de una solución existente
 
@@ -175,8 +188,8 @@ En este ejemplo se usa el elemento **SolutionFolder** para dividir los proyectos
 
 ## <a name="see-also"></a>Vea también
 
-- [Creación de plantillas de proyectos y elementos](../ide/creating-project-and-item-templates.md)
-- [Procedimiento Crear plantillas de proyecto](../ide/how-to-create-project-templates.md)
-- [Referencia de esquema de plantilla de Visual Studio (extensibilidad)](../extensibility/visual-studio-template-schema-reference.md)
-- [SolutionFolder (elemento, plantillas de Visual Studio)](../extensibility/solutionfolder-element-visual-studio-templates.md)
-- [ProjectTemplateLink (elemento, plantillas de Visual Studio)](../extensibility/projecttemplatelink-element-visual-studio-templates.md)
+- [Crear plantillas para proyectos y elementos](../ide/creating-project-and-item-templates.md)
+- [Cómo: Crear plantillas de proyecto](../ide/how-to-create-project-templates.md)
+- [Referencia de esquema de plantilla de Visual Studio (Extensibilidad)](../extensibility/visual-studio-template-schema-reference.md)
+- [Elemento SolutionFolder (plantillas de Visual Studio)](../extensibility/solutionfolder-element-visual-studio-templates.md)
+- [Elemento ProjectTemplateLink (plantillas de Visual Studio)](../extensibility/projecttemplatelink-element-visual-studio-templates.md)

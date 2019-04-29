@@ -11,12 +11,12 @@ ms.assetid: 63f4bd42-3cfb-4eee-af68-e8334976539e
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0a0d656aea42fff774e5e9c58068eff7039cfe79
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 54f9c7b982f1774c79d7cd1e7c0affa29dfbb65d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936959"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62823447"
 ---
 # <a name="analyzing-load-test-virtual-user-activity-in-the-details-view-of-the-load-test-analyzer"></a>Análisis de la actividad de usuario virtual de prueba de carga en la vista Detalles del Analizador de pruebas de carga
 
@@ -45,11 +45,11 @@ La vista **Detalles** muestra el **Diagrama de actividad del usuario virtual**, 
 
  El panel Resultados del filtro está visible en el **Diagrama de actividad del usuario virtual**. El panel Resultados del filtro puede filtrar por lo siguiente:
 
--   **Mostrar solo resultados con registros** Muestra únicamente los resultados de pruebas que tienen registros de prueba asociados.
+- **Mostrar solo resultados con registros** Muestra únicamente los resultados de pruebas que tienen registros de prueba asociados.
 
--   **Mostrar resultados correctos** Muestra los resultados correctos.
+- **Mostrar resultados correctos** Muestra los resultados correctos.
 
--   **Mostrar resultados con errores** Muestra los resultados con errores que pueden ayudar en la depuración.
+- **Mostrar resultados con errores** Muestra los resultados con errores que pueden ayudar en la depuración.
 
 ## <a name="tasks"></a>Tareas
 

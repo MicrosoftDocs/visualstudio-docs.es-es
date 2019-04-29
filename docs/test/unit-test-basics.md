@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df0d6c25bad57550fcfc9ce475dcc9da488f195f
-ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
+ms.openlocfilehash: 7a464103d38a9ba0d2215f53a593809b6136aa3d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58647419"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62990281"
 ---
 # <a name="unit-test-basics"></a>Conceptos básicos de las pruebas unitarias
 
@@ -82,9 +82,12 @@ En general, es más rápido generar el proyecto de prueba unitaria y los código
 
 ### <a name="generate-unit-test-project-and-unit-test-stubs"></a>Generar el proyecto de prueba unitaria y los códigos auxiliares correspondientes
 
-1. En la ventana del editor de código, haga clic con el botón derecho y seleccione **Crear pruebas unitarias** en el menú contextual.
+1. En la ventana del editor de código, haga clic con el botón derecho y seleccione [**Crear pruebas unitarias**](create-unit-tests-menu.md) en el menú contextual.
 
-    ![Desde la ventana del editor, vea el menú contextual](../test/media/createunittestsrightclick.png)
+   ![Desde la ventana del editor, vea el menú contextual](../test/media/createunittestsrightclick.png)
+
+   > [!NOTE]
+   > El comando de menú **Crear pruebas unitarias** solo está disponible en el caso de código administrado que tiene como destino .NET Framework (pero no .NET Core).
 
 2. Haga clic en **Aceptar** para aceptar los valores predeterminados al crear las pruebas unitarias o cambiar los valores usados para crear las pruebas unitarias y el proyecto que las engloba, y asignarles un nombre. Puede seleccionar el código que se agrega de forma predeterminada a los métodos de prueba unitaria.
 
@@ -127,17 +130,17 @@ Un proyecto de prueba unitaria suele reflejar la estructura de un solo proyecto 
 
    Para crear la referencia al proyecto de código:
 
-   1.  Seleccione el proyecto en el **Explorador de soluciones**.
+   1. Seleccione el proyecto en el **Explorador de soluciones**.
 
-   2.  En el menú **Proyecto** , elija **Agregar referencia**.
+   2. En el menú **Proyecto** , elija **Agregar referencia**.
 
-   3.  En el cuadro de diálogo **Administrador de referencias**, abra el nodo **Solución** y elija **Proyectos**. Seleccione el nombre del proyecto de código y cierre el cuadro de diálogo.
+   3. En el cuadro de diálogo **Administrador de referencias**, abra el nodo **Solución** y elija **Proyectos**. Seleccione el nombre del proyecto de código y cierre el cuadro de diálogo.
 
 Cada proyecto de prueba unitaria contiene clases que reflejan los nombres de las clases en el proyecto de código. En nuestro ejemplo, el proyecto `AccountsTests` contendría las clases siguientes:
 
--   La clase`AccountInfoTests` contiene los métodos de prueba unitaria para la clase `AccountInfo` del proyecto `Accounts` .
+- La clase`AccountInfoTests` contiene los métodos de prueba unitaria para la clase `AccountInfo` del proyecto `Accounts` .
 
--   La clase`CheckingAccountTests` contiene los métodos de prueba unitaria para la clase `CheckingAccount` .
+- La clase`CheckingAccountTests` contiene los métodos de prueba unitaria para la clase `CheckingAccount` .
 
 ## <a name="write-your-tests"></a>Escribir las pruebas
 
@@ -185,11 +188,11 @@ Observe que `Withdraw_ValidAmount_ChangesBalance` usa una instrucción `Assert` 
 
 Para obtener más información sobre los marcos de pruebas unitarias de Microsoft, consulte uno de los temas siguientes:
 
--   [Haga una prueba unitaria de su código](unit-test-your-code.md)
+- [Haga una prueba unitaria de su código](unit-test-your-code.md)
 
--   [Escribir pruebas unitarias para C/C++](writing-unit-tests-for-c-cpp.md)
+- [Escribir pruebas unitarias para C/C++](writing-unit-tests-for-c-cpp.md)
 
--   [Usar el marco de trabajo MSTest en pruebas unitarias](using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md)
+- [Usar el marco de trabajo MSTest en pruebas unitarias](using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md)
 
 ## <a name="set-timeouts-for-unit-tests"></a>Establecer tiempos de espera de conexión para las pruebas unitarias
 
@@ -260,12 +263,12 @@ Para más información, vea [Ejecutar pruebas unitarias con el Explorador de pru
 
 **R:** Use el **Explorador de pruebas** para iniciar una sesión de depuración de las pruebas. La ejecución paso a paso del código con el depurador de Visual Studio permite avanzar y retroceder sin problemas entre las pruebas unitarias y el proyecto objeto de prueba. Para iniciar la depuración:
 
-1.  En el editor de Visual Studio, establezca un punto de interrupción en uno o varios métodos de prueba que desee depurar.
+1. En el editor de Visual Studio, establezca un punto de interrupción en uno o varios métodos de prueba que desee depurar.
 
     > [!NOTE]
     > Dado que los métodos de prueba se pueden ejecutar en cualquier orden, establezca puntos de interrupción en todos los métodos de prueba que desee depurar.
 
-2.  En el **Explorador de pruebas**, seleccione los métodos de prueba y después elija **Depurar pruebas seleccionadas** en el menú contextual.
+2. En el **Explorador de pruebas**, seleccione los métodos de prueba y después elija **Depurar pruebas seleccionadas** en el menú contextual.
 
 Más información sobre la [depuración de pruebas unitarias](../debugger/debugger-feature-tour.md).
 
@@ -327,9 +330,9 @@ Más información sobre [cobertura de código](../test/using-code-coverage-to-de
 
 Microsoft Fakes usa dos enfoques para crear las clases de sustitución de dependencias externas:
 
-1.  Los*códigos auxiliares* generan clases de sustitución derivadas de la interfaz primaria de la clase de dependencia de destino. Los métodos de código auxiliar se pueden sustituir por métodos virtuales públicos de la clase de destino.
+1. Los*códigos auxiliares* generan clases de sustitución derivadas de la interfaz primaria de la clase de dependencia de destino. Los métodos de código auxiliar se pueden sustituir por métodos virtuales públicos de la clase de destino.
 
-2.  Las*correcciones de compatibilidad (shim)* usan la instrumentación del runtime para desviar las llamadas a un método de destino a un método shim de sustitución para métodos no virtuales.
+2. Las*correcciones de compatibilidad (shim)* usan la instrumentación del runtime para desviar las llamadas a un método de destino a un método shim de sustitución para métodos no virtuales.
 
 En ambos enfoques, use los delegados generados de las llamadas al método de dependencia para especificar el comportamiento deseado en el método de prueba.
 
