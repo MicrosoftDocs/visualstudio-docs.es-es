@@ -11,11 +11,11 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: db77f93fd7f6af16b5358b75b6ffcd5927430653
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089164"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62549174"
 ---
 # <a name="how-to-clear-the-undo-stack"></a>Procedimiento Borrar la pila de deshacer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,4 +45,4 @@ El siguiente procedimiento a continuación explica cómo borrar la pila de desha
     ```  
   
 ## <a name="see-also"></a>Vea también  
- [Cómo: Implementar la administración de deshacer](../extensibility/how-to-implement-undo-management.md)
+ [Cómo: Implementar la administración de la fase de reversión](../extensibility/how-to-implement-undo-management.md)

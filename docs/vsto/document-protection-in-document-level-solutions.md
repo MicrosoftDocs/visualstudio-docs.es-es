@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: b6cc01c6506c4a3fca85029a8dcaf08607427ea4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596716"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62956210"
 ---
 # <a name="document-protection-in-document-level-solutions"></a>Protección de documentos en soluciones de nivel de documento
   Puede usar las características de protección de Microsoft Office Word y Microsoft Office Excel en los proyectos de nivel de documento. Estas características impiden que los usuarios no autorizados puedan realizar cambios en elementos protegidos de un documento.

@@ -9,13 +9,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e4a56249c0a87b2516dc233818208f7c7c4b696e
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526222"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63002058"
 ---
-# <a name="how-to-use-xml-snippets"></a>Filtrar Utilizar fragmentos XML
+# <a name="how-to-use-xml-snippets"></a>Procedimiento Uso de fragmentos XML
 
 Puede invocar fragmentos XML mediante el uso de los dos comandos siguientes en el menú contextual del editor XML. El **Insertar fragmento de código** comando inserta el fragmento XML en la posición del cursor. El **rodear con** comando encapsula el fragmento XML alrededor del texto seleccionado. Cada fragmento XML tiene designados tipos de fragmentos. Los tipos de fragmentos determinan si el fragmento de código está disponible con la **Insertar fragmento de código** comando, el **rodear con** comando, o ambos.
 
@@ -98,7 +98,7 @@ Los procedimientos siguientes describen cómo tener acceso a la **rodear con** c
 
 3. Seleccione un fragmento de la lista con el mouse o escribiendo el nombre del fragmento de código y presionar **ficha** o **ENTRAR**.
 
-## <a name="use-xml-snippets"></a>Utilizar fragmentos XML
+## <a name="use-xml-snippets"></a>Uso de fragmentos XML
 
 Una vez elegido un fragmento XML, el texto del fragmento de código se inserta automáticamente en la posición del cursor. Todos los campos editables del fragmento se resaltan y el primero de estos campos se selecciona automáticamente. Al campo actualmente seleccionado se le aplica la conversión boxing.
 

@@ -1,5 +1,5 @@
 ---
-title: Filtrar Establecer las propiedades de análisis de código de proyectos de C/C++
+title: Procedimiento Establecer las propiedades de análisis de código de proyectos de C/C++
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -19,13 +19,13 @@ manager: wpickett
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 11eb9701c900284ee8021f908263bc5f27ab8206
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55917345"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62815848"
 ---
-# <a name="how-to-set-code-analysis-properties-for-cc-projects"></a>Filtrar Establecer las propiedades de análisis de código de proyectos de C/C++
+# <a name="how-to-set-code-analysis-properties-for-cc-projects"></a>Procedimiento Establecer las propiedades de análisis de código de proyectos de C/C++
 Puede configurar las reglas que usa la herramienta de análisis de código para analizar el código en cada configuración del proyecto. Además, puede dirigir el análisis de código para suprimir las advertencias de código generado y agregado al proyecto mediante una herramienta de terceros.
 
 ## <a name="code-analysis-property-page"></a>Página de propiedades de análisis de código

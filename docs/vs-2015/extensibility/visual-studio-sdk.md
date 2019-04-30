@@ -15,11 +15,11 @@ caps.latest.revision: 57
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0c338648ebb69874781906c0eabff670e5158be8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050912"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62538803"
 ---
 # <a name="visual-studio-sdk"></a>Visual Studio SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,7 +78,7 @@ El SDK de Visual Studio le ayuda a ampliar las características de Visual Studio
 ## <a name="see-also"></a>Vea también  
  [Creación de una extensión con un comando de menú](../extensibility/creating-an-extension-with-a-menu-command.md)   
  [Cómo: Migrar proyectos de extensibilidad a Visual Studio 2015](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md)   
- [PREGUNTAS MÁS FRECUENTES: Conversión de complementos en extensiones de VSPackage](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md)   
+ [Preguntas más frecuentes: Conversión de complementos en extensiones de VSPackage](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md)   
  [Administración de varios subprocesos en código administrado](../extensibility/managing-multiple-threads-in-managed-code.md)   
  [Ampliación de menús y comandos](../extensibility/extending-menus-and-commands.md)   
  [Agregar comandos a barras de herramientas](../extensibility/adding-commands-to-toolbars.md)   

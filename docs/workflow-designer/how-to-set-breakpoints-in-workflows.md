@@ -9,13 +9,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7503d0b0bee201a9617e90966c9f75ac6333f228
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908444"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949530"
 ---
-# <a name="how-to-set-breakpoints-in-workflows"></a>Filtrar Establecer puntos de interrupción en los flujos de trabajo
+# <a name="how-to-set-breakpoints-in-workflows"></a>Procedimiento Establecer puntos de interrupción en los flujos de trabajo
 
 Cuando se usa el Diseñador de flujo de trabajo, puede establecer puntos de interrupción en los flujos de trabajo gráficas como lo haría en el código de Visual Basic o C#. Como es de esperar, la ejecución del flujo de trabajo se detiene en cada punto de interrupción que se establece.
 

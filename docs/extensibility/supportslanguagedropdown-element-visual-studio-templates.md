@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: f8f94036a20d6c1b6963b39aa3d2b13e17a6e256
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56678078"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62799851"
 ---
 # <a name="supportslanguagedropdown-element-visual-studio-templates"></a>SupportsLanguageDropDown (Elemento, Plantillas de Visual Studio)
 Especifica si la plantilla de elemento Web es idéntica para varios idiomas y si el **lenguaje** opción está habilitada en el **Agregar nuevo elemento** cuadro de diálogo.

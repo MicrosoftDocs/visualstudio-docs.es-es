@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 6ec548ff629663e647d2d153ff87caa4edb1dd21
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086083"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007144"
 ---
 # <a name="invalid-character-javascript"></a>Carácter no válido (JavaScript)
 Se compone de un identificador utilizando un carácter (o caracteres) que no reconoce como válido por la [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] compilador. Los caracteres válidos use las siguientes reglas:  

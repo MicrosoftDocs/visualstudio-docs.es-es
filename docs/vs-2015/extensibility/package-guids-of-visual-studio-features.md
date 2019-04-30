@@ -12,11 +12,11 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8601b4f072c206ab19fdcb4a7248e79784af934a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58995554"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62546818"
 ---
 # <a name="package-guids-of-visual-studio-features"></a>GUID del paquete de características de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Puede usar el siguientes GUID en el archivo .pkgundef de la aplicación de shell
 ||Paquete de compilación de soluciones de Visual Studio|{282BD676-8B5B-11D0-8A34-00A0C91E2ACD}|
 ||Paquete de administración de texto|{F5E7E720-1401-11d1-883B-0000F87579D2}|
 ||Paquete de VsSettings de Visual Studio|{F74C5077-D848-4630-80C9-B00E68A1CA0C}|
-|Ayuda|Paquete de la Ayuda de Visual Studio|{4A791146-19E4-11D3-B86B-00C04F79F802}|
+|Help|Paquete de la Ayuda de Visual Studio|{4A791146-19E4-11D3-B86B-00C04F79F802}|
 |Lista de tareas, lista de errores|ErrorListPackage|{4A9B7E50-AA16-11D0-A8C5-00A0C921A4D2}|
 |Esquema de clase|Paquete de esquema de clase|{21AF45B0-FFA5-11D0-G63F-00A0C922E851}|
 |Instalador de controles de cuadro de herramientas|Paquete del instalador de controles de cuadro de herramientas|{2C298B35-07DA-45F1-96A3-BE55D91C8d7A}|

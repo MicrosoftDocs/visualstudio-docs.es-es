@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 143ab857af7c48f711e47910df07b6c58d07bc31
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60058803"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967512"
 ---
 # <a name="how-to-add-a-feature-to-sharepoint-solutions"></a>Procedimiento Agregar una característica a las soluciones de SharePoint
   Cuando se crea una solución de SharePoint, una de las características y un paquete se agregan a la solución. Puede agregar más elementos de característica para organizar los diferentes tipos de archivos de SharePoint.

@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 663bc7a2add5e436cb7b0166387d6e3638087a1a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653780"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62432166"
 ---
 # <a name="tool-window-display-configuration"></a>Configuración de pantalla de ventana de herramienta
 Cuando registra un VSPackage una ventana de herramientas, la posición predeterminada, tamaño, estilo de acoplamiento y otra información de visibilidad se especifica en los valores opcionales. Para obtener más información sobre el registro de la ventana de herramienta, consulte [herramienta de Windows en el registro](../extensibility/tool-windows-in-the-registry.md)

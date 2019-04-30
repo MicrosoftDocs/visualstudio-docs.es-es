@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 48b69b90c8ede6bfba4d388f547742de6d92cd7f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048416"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62981254"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-powerpoint"></a>Tutorial: Crear el primer complemento VSTO para PowerPoint
   En este tutorial se muestra cómo crear un complemento VSTO para Microsoft Office PowerPoint. Las características que cree en este tipo de solución estarán disponibles para la propia aplicación, con independencia de qué presentaciones están abiertas. Para obtener más información, consulte [información general sobre el desarrollo de soluciones de Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).

@@ -8,11 +8,11 @@ manager: wpickett
 ms.workload:
 - multiple
 ms.openlocfilehash: 28d17301d81ee5b206feb0c3afefba35e50615cd
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55940586"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62560038"
 ---
 # <a name="best-practices-and-examples-sal"></a>Procedimientos recomendados y ejemplos (SAL)
 Estas son algunas formas de sacar el máximo fuera del lenguaje de anotación de código (SAL) de origen y evitar algunos problemas comunes.
@@ -238,7 +238,7 @@ En este ejemplo, `_Out_opt_` indica que el puntero puede ser NULL como parte de 
 
 ## <a name="see-also"></a>Vea también
 
-[Utilizar anotaciones SAL para reducir defectos de código de c/c ++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
+[Utilizar anotaciones SAL para reducir C /C++ defectos del código](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
 [comprender SAL](../code-quality/understanding-sal.md)
 [anotar parámetros de función y valores devueltos](../code-quality/annotating-function-parameters-and-return-values.md) 
  [Anotar el comportamiento de la función](../code-quality/annotating-function-behavior.md)

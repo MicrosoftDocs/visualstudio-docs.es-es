@@ -22,11 +22,11 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 303c19e8cb02b7c9db78d922f0591cb7ab5f3ed3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089320"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62566808"
 ---
 # <a name="hierarchical-update"></a>Actualización jerárquica
 

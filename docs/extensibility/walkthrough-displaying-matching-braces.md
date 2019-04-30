@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ae1b0f45d119b759d6618630a65353eff4415c78
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086538"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62796000"
 ---
 # <a name="walkthrough-display-matching-braces"></a>Tutorial: Mostrar las llaves coincidentes
 Implementar las características de lenguaje, como definiendo las llaves que desee hacer coincidir, y agregar una etiqueta de marcador de texto a las llaves coincidentes cuando el símbolo de intercalación está en una de las llaves la coincidencia de llaves. Puede definir las llaves en el contexto de un idioma, definir su propia extensión de nombre de archivo y el tipo de contenido y aplicar las etiquetas simplemente que escriba o aplican las etiquetas a un tipo de contenido existente (por ejemplo, "text"). El siguiente tutorial muestra cómo aplicar etiquetas para el tipo de contenido "text" la coincidencia de llaves.
