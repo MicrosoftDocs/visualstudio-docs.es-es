@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: e8a103316a292c444a35b8c819968d98cda777b6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56678129"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62871808"
 ---
 # <a name="idebugport2getportrequest"></a>IDebugPort2::GetPortRequest
 Obtiene la descripción de un puerto que se había utilizado previamente para crear el puerto (si está disponible).

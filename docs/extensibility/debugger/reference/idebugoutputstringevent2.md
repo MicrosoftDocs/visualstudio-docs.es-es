@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: dfce52f89e75c8e9e697a3fa5ad4184c3d1fa42b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721994"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62872517"
 ---
 # <a name="idebugoutputstringevent2"></a>IDebugOutputStringEvent2
 Esta interfaz es enviada por el motor de depuración (DE) para el Administrador de depuración de la sesión (SDM) para generar una cadena.

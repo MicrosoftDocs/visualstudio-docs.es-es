@@ -11,11 +11,11 @@ ms.assetid: a4f17068-c563-45a8-bbbf-4203ea99e9d2
 caps.latest.revision: 34
 manager: jillfra
 ms.openlocfilehash: bde7742bc9165413abcf98bfb475c19ec0e45f51
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58986821"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62838768"
 ---
 # <a name="managed-vspackages"></a>VSPackages administrado
 Los siguientes temas explican cómo crear un VSPackage. Un VSPackage es un módulo de software que amplía la [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] el entorno de desarrollo integrado (IDE), ya que proporciona elementos de interfaz de usuario, servicios, proyectos, editores y diseñadores. Para obtener más información, consulte [VSPackages](../extensibility/internals/vspackages.md).  

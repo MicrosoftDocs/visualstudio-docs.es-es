@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d4a21f07d4fd4fe055ebee4d6c7d5cd1faed0a3b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616331"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62853281"
 ---
 # <a name="vtableshape"></a>VTableShape
 El [VTable](../../debugger/debug-interface-access/vtable.md) símbolo tiene un símbolo de secundarios de la clase identificado por el `SymTagVTableShape` etiqueta.
@@ -26,7 +26,7 @@ El [VTable](../../debugger/debug-interface-access/vtable.md) símbolo tiene un s
 ## <a name="properties"></a>Propiedades
  La siguiente tabla muestra propiedades adicionales de válido para este tipo de símbolo.
 
-|Propiedad.|Tipo de datos|Descripción|
+|Propiedad|Tipo de datos|Descripción|
 |--------------|---------------|-----------------|
 |[IDiaSymbol::get_constType](../../debugger/debug-interface-access/idiasymbol-get-consttype.md)|`BOOL`|`TRUE` Si la clase de la tabla VTable está marcada como una constante.|
 |[IDiaSymbol::get_count](../../debugger/debug-interface-access/idiasymbol-get-count.md)|`DWORD`|Número de entradas en la tabla VTable.|

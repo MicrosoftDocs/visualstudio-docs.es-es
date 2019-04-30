@@ -1,5 +1,5 @@
 ---
-title: Tabla de objetos gráficos | Microsoft Docs
+title: Tabla de objetos gráficos | Documentos de Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 20a78d7bb3e27ddfd0a5a248436b5c5392558410
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56713456"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62848417"
 ---
 # <a name="graphics-object-table"></a>Tabla de objetos gráficos
 La Tabla de objetos gráficos en el análisis de gráficos de Visual Studio le ayuda a comprender los objetos de Direct3D que admiten un fotograma de su juego o aplicación.
@@ -40,7 +40,7 @@ La Tabla de objetos gráficos en el análisis de gráficos de Visual Studio le a
 |------------|-----------------|
 |**Identificador**|Identificador de objeto.|
 |**Name**|Información específica de la aplicación que se ha establecido en el objeto mediante la función `SetPrivateData` de Direct3D (normalmente para proporcionar información de identificación adicional sobre un objeto).|
-|**Type**|Tipo del objeto.|
+|**Tipo**|Tipo del objeto.|
 |**Active**|Muestra "*" para un objeto que se estableció en D3D10Device o D3D11DeviceContext durante el fotograma capturado.<br /><br /> Esto corresponde a los objetos que se muestran como texto gris, pero proporciona una entrada de columna que se puede utilizar como ayuda para ordenar la tabla de objetos.|
 |**Size**|Tamaño del objeto en bytes.|
 |**Format**|Formato del objeto. Por ejemplo, el formato de un objeto de textura o el modelo de sombreador de un objeto de sombreador.|

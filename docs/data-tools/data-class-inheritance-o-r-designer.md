@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: a8df3d39e44bf1d40f3abfd4d6218d2c9a72b690
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935685"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62567811"
 ---
 # <a name="data-class-inheritance-or-designer"></a>Herencia de clases de datos (Object Relational Designer)
 
@@ -27,7 +27,7 @@ Al configurar la herencia en clases de entidad mediante el [!INCLUDE[vs_ordesign
 
 En la tabla siguiente se muestran las propiedades de herencia y sus descripciones:
 
-|Propiedad.|Descripción|
+|Propiedad|Descripción|
 |--------------|-----------------|
 |**Propiedad Discriminator**|La propiedad (asignada a la columna) que determina a qué clase pertenece el registro actual.|
 |**Valor de discriminador de clase base**|Valor (en la columna designada como la **propiedad Discriminator**) que determina que un registro es de la clase base.|
@@ -39,11 +39,11 @@ La creación de un modelo de objetos que use la herencia y que corresponda a dat
 |Tema|Descripción|
 |-----------|-----------------|
 |[Cómo: Configurar la herencia mediante Object Relational Designer](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md)|Describe cómo configurar las clases de entidad que usan la herencia de tabla única mediante el uso de la **Object Relational Designer**.|
-|[Tutorial: Creación de clases LINQ to SQL mediante la herencia de tabla única (Object Relational Designer)](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md)|Proporciona instrucciones paso a paso sobre cómo configurar las clases de entidad que usan la herencia de tabla única mediante el uso de la **Object Relational Designer**.|
+|[Tutorial: Creación de clases de LINQ to SQL mediante la herencia de tabla única (Object Relational Designer)](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md)|Proporciona instrucciones paso a paso sobre cómo configurar las clases de entidad que usan la herencia de tabla única mediante el uso de la **Object Relational Designer**.|
 
 ## <a name="see-also"></a>Vea también
 
 - [LINQ to SQL tools en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) (Herramientas LINQ to SQL en Visual Studio)
-- [Walkthrough: Creating LINQ to SQL classes (O-R Designer)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md) (Tutorial: Crear clases de LINQ to SQL [Object Relational Designer])
-- [Tutorial: Creación de clases LINQ to SQL mediante la herencia de tabla única (Object Relational Designer)](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md)
+- [Tutorial: Creación de LINQ a las clases SQL (Object Relational Designer)](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
+- [Tutorial: Creación de clases de LINQ to SQL mediante la herencia de tabla única (Object Relational Designer)](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md)
 - [Introducción](/dotnet/framework/data/adonet/sql/linq/getting-started)

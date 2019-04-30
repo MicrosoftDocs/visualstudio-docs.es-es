@@ -1,5 +1,5 @@
 ---
-title: Filtrar Registrar tipos de archivo del Editor | Documentos de Microsoft
+title: Procedimiento Registrar tipos de archivo del Editor | Documentos de Microsoft
 ms.date: 03/22/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,13 +11,13 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8f4aad26418c61ea450d697e294203b7f844577f
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57324161"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62862932"
 ---
-# <a name="how-to-register-editor-file-types"></a>Filtrar Registrar tipos de archivo del editor
+# <a name="how-to-register-editor-file-types"></a>Procedimiento Registrar tipos de archivo del editor
 Es la manera más fácil para registrar los tipos de archivo del editor mediante el uso de los atributos de registro proporcionados como parte de la [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] clases de managed package framework (MPF). Si está implementando el paquete en el modo nativo [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], también puede escribir un script de registro que registra el editor y las extensiones asociadas.
 
 ## <a name="registration-using-mpf-classes"></a>Registro de uso de clases MPF

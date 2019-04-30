@@ -8,11 +8,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 70c4cd238b6e5d31eced6a35ff0c7d24ab85a280
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907898"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63003108"
 ---
 # <a name="share-code-maps"></a>Compartir mapas de código
 
@@ -22,7 +22,7 @@ Puede guardar los mapas de código como parte de un proyecto de Visual Studio, c
 
 Guarde el mapa desde el menú **Archivo** .
 
-O bien
+-o bien-
 
 Para guardar el mapa como parte de un proyecto específico, en la barra de herramientas del mapa, elija **Share** > **mover \<CodeMapName > .dgml en**y, a continuación, elija el proyecto donde desea guardar el mapa.
 

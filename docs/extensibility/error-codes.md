@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 2e3dc26b8dd2e17e201cf760db68d0faf7e231ed
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56688031"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62863972"
 ---
 # <a name="error-codes"></a>Códigos de error
 Cuando una función de la API de complemento de Control de origen devuelve un error, se espera a ser uno de los siguientes códigos de error. Todos los errores son negativos, son positivos, advertencias o los códigos de error informativo y correcta es 0.

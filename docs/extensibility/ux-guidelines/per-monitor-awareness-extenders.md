@@ -17,11 +17,11 @@ ms.topic: reference
 ms.workload:
 - multiple
 ms.openlocfilehash: 44938c5753491521702867398a514f770cf831fb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099395"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62793646"
 ---
 # <a name="per-monitor-awareness-support-for-visual-studio-extenders"></a>Compatibilidad con reconocimiento de Monitor para que los extensores de Visual Studio
 Las versiones anteriores a Visual Studio de 2019 tenían su contexto de reconocimiento de PPP establecido en el sistema tenga en cuenta, en lugar de tener en cuenta DPI (PMA) por monitor. Que se ejecuta en el reconocimiento del sistema dieron lugar a un objeto visual degradado experiencia (p. ej. borrosas fuentes o iconos) cada vez que Visual Studio tenía que procesar en varios monitores con factores de escala diferentes o remota en equipos con configuraciones de pantalla diferentes, por ejemplo, (que son distintas Windows escalado).

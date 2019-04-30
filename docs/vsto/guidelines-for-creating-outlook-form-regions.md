@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: d48a3ad24d094d0ebc822b572f2521eaefae5356
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039927"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62826501"
 ---
 # <a name="guidelines-to-create-outlook-form-regions"></a>Directrices para crear áreas de formulario de Outlook
   La siguiente información puede ayudarle a optimizar las áreas del formulario y a evitar posibles problemas:

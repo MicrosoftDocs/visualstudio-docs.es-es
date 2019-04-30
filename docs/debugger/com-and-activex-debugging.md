@@ -1,5 +1,5 @@
 ---
-title: Depurar COM y ActiveX | Microsoft Docs
+title: Depurar COM y ActiveX | Documentos de Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -22,11 +22,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b37522fec0438278f8cf063637132b146b3d3748
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609121"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62563912"
 ---
 # <a name="com-and-activex-debugging"></a>Depurar COM y ActiveX
 Esta sección proporciona sugerencias sobre cómo depurar aplicaciones COM y controles ActiveX.
@@ -34,7 +34,7 @@ Esta sección proporciona sugerencias sobre cómo depurar aplicaciones COM y con
 ## <a name="in-this-section"></a>En esta sección
  [Servidor COM y un contenedor de depuración](../debugger/com-server-and-container-debugging.md) realizan consideraciones especiales sobre depuración de aplicaciones COM. Los aspectos tratados son: depurar un servidor COM y un contenedor mediante dos proyectos dentro de la misma solución, realizar la traza en llamadas que traspasan los límites de un proceso, establecer puntos de interrupción en funciones de devolución de llamada y ejecutar instrucciones paso a paso entre y dentro de contenedores y servidores.
 
- [Cómo: depurar un ActiveX Control](../debugger/how-to-debug-an-activex-control.md) contiene información sobre la depuración de controles ActiveX. Esta información incluye: especificar un contenedor para la sesión de depuración para ver cómo se ejecuta el código del control ActiveX, depurar un control ActiveX enlazado a datos, simular un contenedor particular y ejecutar instrucciones paso a paso en el código del contenedor.
+ [Cómo: Depurar un ActiveX Control](../debugger/how-to-debug-an-activex-control.md) contiene información sobre la depuración de controles ActiveX. Esta información incluye: especificar un contenedor para la sesión de depuración para ver cómo se ejecuta el código del control ActiveX, depurar un control ActiveX enlazado a datos, simular un contenedor particular y ejecutar instrucciones paso a paso en el código del contenedor.
 
  [Herramientas de depuración COM](../debugger/com-debugging-tools.md) muestra los visores y aplicaciones de ejemplo que pueden ser útiles para depurar la aplicación COM.
 

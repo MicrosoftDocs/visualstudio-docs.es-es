@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0f4b08c10fa0d9aa4dea2a58d7e219371baf13ac
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55912201"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62797387"
 ---
 # <a name="ca1700-do-not-name-enum-values-39reserved39"></a>CA1700: No nombrar valores de enumeración &#39;reservado&#39;
 

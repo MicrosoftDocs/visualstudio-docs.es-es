@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: caf2d0e63db724c8eb3c1e72c79a109548af8f9c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056021"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62556858"
 ---
 # <a name="how-to-add-a-custom-property"></a>Procedimiento Agregar una propiedad personalizada
   Puede agregar propiedades personalizadas al modelo mediante el **Editor de propiedades**. Puede tener acceso a estas propiedades en el código para recuperar información como cadenas de conexión y otros datos en tiempo de ejecución.

@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cdef5a6d8ff725155fce84450b2d6494705de03a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55938805"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62825209"
 ---
 # <a name="troubleshooting-quality-tools"></a>Solucionar problemas de las herramientas de calidad
 

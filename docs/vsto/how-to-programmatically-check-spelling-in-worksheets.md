@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: feb284657932a0c20cd785b14db5e2b3de9366f1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60090854"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62575574"
 ---
 # <a name="how-to-programmatically-check-spelling-in-worksheets"></a>Procedimiento Revisar la ortografía en hojas de cálculo mediante programación
   Puede comprobar la ortografía en una hoja de cálculo mediante programación. El cuadro de diálogo **Ortografía** aparece automáticamente si hay palabras mal escritas en la hoja de cálculo.

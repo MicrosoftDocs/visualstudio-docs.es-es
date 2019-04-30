@@ -20,11 +20,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: baa86408ca681d65266cb5dae3fe2bf9fca8f97c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797069"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62584612"
 ---
 # <a name="hierarchical-organization-of-resources-for-localization"></a>Organización jerárquica de recursos para la localización
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,4 +55,4 @@ En Visual Studio, los recursos adaptados (datos como cadenas e imágenes adecuad
  [Localizar aplicaciones](../ide/localizing-applications.md)   
  [Globalizar y localizar aplicaciones](../ide/globalizing-and-localizing-applications.md)   
  [Cómo: Establecer la referencia cultural y la referencia cultural de interfaz de usuario para la globalización de formularios Windows Forms](http://msdn.microsoft.com/694e049f-0b91-474a-9789-d35124f248f0)   
- [Cómo: establecer la referencia cultural y la referencia cultural de la interfaz de usuario para la globalización de páginas web de ASP.NET](http://msdn.microsoft.com/library/76091f86-f967-4687-a40f-de87bd8cc9a0)
+ [Cómo: Establecer la referencia cultural y la referencia cultural de interfaz de usuario para la globalización de páginas Web de ASP.NET](http://msdn.microsoft.com/library/76091f86-f967-4687-a40f-de87bd8cc9a0)

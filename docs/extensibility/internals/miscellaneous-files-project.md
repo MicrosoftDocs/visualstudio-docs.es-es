@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3a1d0530d6a7a759bfab557be1a3d80fcfc9df78
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56630826"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62860090"
 ---
 # <a name="miscellaneous-files-project"></a>Proyecto de archivos varios
 Cuando un usuario abre elementos del proyecto, el IDE asigna al proyecto archivos varios los elementos que no son miembros de los proyectos de una solución.
@@ -39,7 +39,7 @@ Cuando un usuario abre elementos del proyecto, el IDE asigna al proyecto archivo
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument>
 - <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY>
-- [Cómo: Abrir editores específicos del proyecto](../../extensibility/how-to-open-project-specific-editors.md)
+- [Cómo: Abrir editores específicos de proyecto](../../extensibility/how-to-open-project-specific-editors.md)
 - [Cómo: Abrir editores estándar](../../extensibility/how-to-open-standard-editors.md)
 - [Adición de plantillas de proyecto y de elementos de proyecto](../../extensibility/internals/adding-project-and-project-item-templates.md)
 - [Adición de plantillas de proyecto y de elementos de proyecto](../../extensibility/internals/adding-project-and-project-item-templates.md)

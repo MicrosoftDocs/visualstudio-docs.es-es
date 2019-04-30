@@ -18,11 +18,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f2e5b19c26ff800b5edabd3bf21f57b21ed06bae
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083424"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62431828"
 ---
 # <a name="error-unable-to-connect-to-sql-server-on-remote-machine"></a>Error: No se puede conectar a SQL Server en el equipo remoto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

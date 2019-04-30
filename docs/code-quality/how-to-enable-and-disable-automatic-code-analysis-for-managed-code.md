@@ -8,13 +8,13 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 4878c25021d87e91f6a575d11a876d7aac2455d5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918135"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62816248"
 ---
-# <a name="how-to-enable-and-disable-automatic-code-analysis-for-managed-code"></a>Filtrar Habilitar y deshabilitar el análisis de código automático para código administrado
+# <a name="how-to-enable-and-disable-automatic-code-analysis-for-managed-code"></a>Procedimiento Habilitar y deshabilitar el análisis de código automático para código administrado
 
 Puede configurar el análisis de código (estático) para ejecutar después de cada compilación de un proyecto de código administrado. Puede establecer propiedades de análisis para cada configuración de compilación de código diferente, por ejemplo, debug y release.
 

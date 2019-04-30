@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 312c304855a450a648b000b8306b80ade969c785
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525822"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62807992"
 ---
 # <a name="xml-editor-intellisense-features"></a>Características de IntelliSense del editor XML
 
@@ -111,7 +111,7 @@ Las características IntelliSense y finalización automática están habilitadas
 
 El **inserción automática** sección de la **varios** página controla el comportamiento siguiente:
 
-|nombre|Descripción|
+|Name|Descripción|
 |-|-----------------|
 |Etiquetas de cierre|Inserta etiquetas de cierre en nuevos elementos.|
 |Comillas de atributos|Inserta comillas de valor de atributo cuando se escribe un nuevo nombre de atributo.|
@@ -129,4 +129,4 @@ El **inserción automática** sección de la **varios** página controla el comp
 
 - [Editor XML](../xml-tools/xml-editor.md)
 - [Usar IntelliSense](../ide/using-intellisense.md)
-- [Tutorial: Usar XSLT IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md)
+- [Tutorial: Uso de XSLT IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md)

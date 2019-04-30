@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 411679a03daf27046fdcede7ff48e76212bbd2fd
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58158924"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62557951"
 ---
 # <a name="ijsdebugprocess-interface"></a>IJsDebugProcess (Interfaz)
 Proporciona rutinas para inspeccionar y controlar el proceso de destino.  

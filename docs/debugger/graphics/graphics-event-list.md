@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6af97740302d5e7053323b54ef11cbf1a279dd94
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066785"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62848863"
 ---
 # <a name="graphics-event-list"></a>Lista de eventos gráficos
 Use la lista de eventos gráficos del Analizador de gráficos de Visual Studio para explorar los eventos Direct3D que se registraron mientras se presentaba un fotograma de su juego o aplicación.
@@ -107,7 +107,7 @@ Esta ventana le permite ver el historial del elemento seleccionado en la lista d
 
 | Columna | Descripción |
 |-----------| - |
-| **Type** | Muestra el tipo de la entrada, normalmente *crear*, *lectura* y *escribir*. |
+| **Tipo** | Muestra el tipo de la entrada, normalmente *crear*, *lectura* y *escribir*. |
 | **Vista** | Muestra una vista en miniatura del recurso en ese momento.  Haga doble clic en la miniatura para abrir una vista de detalles del recurso en ese momento. |
 | **Event** | Se muestra la llamada de método que se produjeron que generó el evento.  Cualquier historial adicional en los elementos individuales se puede ver seleccionando el icono de inspección ![icono inspección](media/gfx_watch.png) en la línea adecuada.  Además, cualquier elemento que se dibuja en el texto azul, tales como `m_commandList` en la captura de pantalla anterior, se puede seleccionar para obtener más detalles. |
 
