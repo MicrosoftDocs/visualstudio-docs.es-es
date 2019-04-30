@@ -1,5 +1,5 @@
 ---
-title: Windows Vista | Microsoft Docs
+title: Windows Vista | Documentos de Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fef652cbaa83fde61f098fb8fcef9558473fe19a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689556"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62900869"
 ---
 # <a name="windows-view"></a>Vista Ventanas
 Cuando abra por primera vez Spy ++, vista de Windows muestra un árbol de todas las ventanas y controles en el sistema. Se muestran el nombre de identificador y la clase de ventana. La ventana del escritorio actual está en la parte superior del árbol. Todas las demás ventanas son elementos secundarios del escritorio y se muestran según la jerarquía de ventana estándar. Las ventanas relacionadas aparecen en las listas pueden expandir con una sangría debajo de sus elementos primarios.
@@ -31,11 +31,11 @@ Cuando abra por primera vez Spy ++, vista de Windows muestra un árbol de todas 
  Cuando la vista de Windows tiene el foco, puede usar la herramienta de búsqueda en el [cuadro de diálogo Buscar ventana](../debugger/window-search-dialog-box.md) para mostrar información de cualquier ventana abierta en el sistema.
 
 ## <a name="in-this-section"></a>En esta sección
- [Cómo: usar la herramienta de búsqueda](../debugger/how-to-use-the-finder-tool.md) muestra cómo esta herramienta examina las ventanas para las propiedades o los mensajes.
+ [Cómo: Utilice la herramienta de búsqueda](../debugger/how-to-use-the-finder-tool.md) muestra cómo esta herramienta examina las ventanas para las propiedades o los mensajes.
 
- [Cómo: buscar una ventana de Windows Vista](../debugger/how-to-search-for-a-window-in-windows-view.md) explica cómo buscar una ventana específica en la vista de Windows.
+ [Cómo: Buscar una ventana de Windows Vista](../debugger/how-to-search-for-a-window-in-windows-view.md) explica cómo buscar una ventana específica en la vista de Windows.
 
- [Cómo: mostrar propiedades de la ventana](../debugger/how-to-display-window-properties.md) m procedimientos para abrir el cuadro de diálogo Propiedades de la ventana.
+ [Cómo: Mostrar propiedades de ventana](../debugger/how-to-display-window-properties.md) m procedimientos para abrir el cuadro de diálogo Propiedades de la ventana.
 
 ## <a name="related-sections"></a>Secciones relacionadas
  [Vistas de Spy ++](../debugger/spy-increment-views.md) explica las vistas de árbol de Spy ++ de windows, los mensajes, los procesos y subprocesos.

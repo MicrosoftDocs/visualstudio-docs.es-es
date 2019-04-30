@@ -13,13 +13,13 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: ed0f8a873655180ef2464b5b31c631dbd7d2d4ad
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621245"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967714"
 ---
-# <a name="how-to-programmatically-add-an-entry-to-outlook-contacts"></a>Filtrar Agregar una entrada a los contactos de Outlook mediante programación
+# <a name="how-to-programmatically-add-an-entry-to-outlook-contacts"></a>Procedimiento Agregar una entrada a los contactos de Outlook mediante programación
   En este ejemplo se crea un contacto nuevo y escribe datos en el nuevo contacto.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]

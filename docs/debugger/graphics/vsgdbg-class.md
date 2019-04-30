@@ -1,5 +1,5 @@
 ---
-title: VsgDbg (clase) | Microsoft Docs
+title: VsgDbg (clase) | Documentos de Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 6722263c-ccef-40c7-a0ae-87a863fbab00
@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4051a02de6a046621e62c21b4d2399b5a2703cb8
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56714808"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62895197"
 ---
 # <a name="vsgdbg-class"></a>VsgDbg (Clase)
 Representa una interfaz para el control mediante programación del componente de aplicación de diagnóstico de gráficos.
@@ -29,14 +29,14 @@ class VsgDbg;
 
 ### <a name="public-constructors"></a>Constructores públicos
 
-|nombre|Descripción|
+|Name|Descripción|
 |----------|-----------------|
 |[VsgDbg::VsgDbg (Constructor)](vsgdbg-vsgdbg-constructor.md)|Construye una instancia de la clase `VsgDbg` y prepara opcionalmente el componente de aplicación de diagnóstico de gráficos para capturar y grabar activamente información de gráficos.|
 |[VsgDbg::~VsgDbg (Destructor)](vsgdbg-tilde-vsgdbg-destructor.md)|Destruye una instancia de la clase `VsgDbg`.|
 
 ### <a name="public-methods"></a>Métodos públicos
 
-|nombre|Descripción|
+|Name|Descripción|
 |----------|-----------------|
 |[AddMessage](addmessage.md)|Agrega un mensaje personalizado al HUD (pantalla de visualización frontal) de diagnóstico de gráficos.|
 |[BeginCapture](begincapture.md)|Inicia un intervalo de captura que finalizará con `EndCapture`.|

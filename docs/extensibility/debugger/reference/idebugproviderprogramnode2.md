@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: bb717363266b95397ea749e7465b07df75f60da2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721854"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62916427"
 ---
 # <a name="idebugproviderprogramnode2"></a>IDebugProviderProgramNode2
 Esta interfaz calcula las referencias de las interfaces relacionadas con el programa a través de los límites del proceso.

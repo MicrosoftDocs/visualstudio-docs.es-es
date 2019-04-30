@@ -14,13 +14,13 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 159708bfad49e6a4a303363c6a0e9dd83b23d8e7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56632022"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62961265"
 ---
-# <a name="how-to-set-up-configuration-information-for-an-office-solution"></a>Filtrar Configurar la información de configuración para una solución de Office
+# <a name="how-to-set-up-configuration-information-for-an-office-solution"></a>Procedimiento Configurar la información de configuración para una solución de Office
   Puede usar los archivos de configuración para configurar las opciones que son específicas de las soluciones de Office. Puede especificar la configuración de directiva de enlace de ensamblados, objetos de comunicación remota, depuración y la configuración de seguimiento.
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]

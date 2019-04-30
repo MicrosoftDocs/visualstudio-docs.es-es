@@ -21,11 +21,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 960ecd2680585602b2c026b00b36bf7d93b8021d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631775"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62900236"
 ---
 # <a name="create-bootstrapper-packages"></a>Crear paquetes de programa previo
 El programa de instalación es un instalador genérico que se puede configurar para detectar e instalar componentes redistribuibles, como archivos de Windows Installer (*.msi*) y programas ejecutables. El instalador también se conoce como programa previo. Se programa mediante un conjunto de manifiestos XML que especifican los metadatos que administrarán la instalación del componente.  Cada componente redistribuible o requisito previo, que aparece en el **requisitos previos** cuadro de diálogo de ClickOnce es un paquete de programa previo. Un paquete de programa previo es un grupo de directorios y archivos que contienen archivos de manifiesto que describen cómo se debe instalar el requisito previo.
@@ -33,13 +33,13 @@ El programa de instalación es un instalador genérico que se puede configurar p
 El programa previo detecta primero si los requisitos previos están ya instalados. Si no lo están, el programa previo muestra el contrato de licencia. Después de que el usuario acepta los contratos de licencia, comienza la instalación de los requisitos previos. Si se detectan todos los requisitos previos, el programa previo inicia el instalador de la aplicación.
 
 ## <a name="create-custom-bootstrapper-packages"></a>Crear paquetes de programa previo personalizado
-Puede generar los manifiestos de programa previo mediante el Editor XML en Visual Studio. Para ver un ejemplo de cómo crear un paquete de arranque, consulte [Tutorial: crear un arranque personalizado con un aviso de privacidad](../deployment/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md).
+Puede generar los manifiestos de programa previo mediante el Editor XML en Visual Studio. Para ver un ejemplo de cómo crear un paquete de arranque, consulte [Tutorial: Crear un arranque personalizado con un aviso de privacidad](../deployment/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md).
 
 Para crear un paquete de arranque, se debe crear un manifiesto de producto y, para cada versión localizada de un componente, un manifiesto del paquete.
 
-* El manifiesto del producto, *product.xml*, contiene los metadatos de lenguaje neutro para el paquete. Contiene los metadatos comunes a todas las versiones localizadas del componente redistribuible.  Para crear este archivo, consulte [Cómo: crear un manifiesto de producto](../deployment/how-to-create-a-product-manifest.md).
+* El manifiesto del producto, *product.xml*, contiene los metadatos de lenguaje neutro para el paquete. Contiene los metadatos comunes a todas las versiones localizadas del componente redistribuible.  Para crear este archivo, consulte [Cómo: Crear un manifiesto de producto](../deployment/how-to-create-a-product-manifest.md).
 
-* El manifiesto del paquete, *package.xml*, contiene metadatos específicos del idioma; normalmente contiene mensajes de error localizado. Un componente debe tener al menos un manifiesto del paquete por cada versión localizada de ese componente. Para crear este archivo, consulte [Cómo: crear un manifiesto del paquete](../deployment/how-to-create-a-package-manifest.md).
+* El manifiesto del paquete, *package.xml*, contiene metadatos específicos del idioma; normalmente contiene mensajes de error localizado. Un componente debe tener al menos un manifiesto del paquete por cada versión localizada de ese componente. Para crear este archivo, consulte [Cómo: Crear un manifiesto del paquete](../deployment/how-to-create-a-package-manifest.md).
 
 Una vez creados estos archivos, coloque el archivo del manifiesto del producto en una carpeta con el nombre del programa previo personalizado. El archivo del manifiesto del paquete va en una carpeta con el nombre de la configuración regional. Por ejemplo, si el archivo del manifiesto del paquete es para la redistribución en inglés, coloque el archivo en una carpeta llamada en. Repita este proceso para cada configuración regional, como ja para japonés y de para alemán. El paquete del programa previo personalizado final podría tener la siguiente estructura de carpetas.
 
@@ -58,7 +58,7 @@ Una vez creados estos archivos, coloque el archivo del manifiesto del producto e
         package.xml
     ```
 
-A continuación, copie los archivos redistribuibles en la ubicación de carpeta de programa previo. Para obtener más información, consulte [Cómo: crear un paquete de arranque localizado](../deployment/how-to-create-a-localized-bootstrapper-package.md).
+A continuación, copie los archivos redistribuibles en la ubicación de carpeta de programa previo. Para obtener más información, vea [Cómo: Crear un paquete de programa previo localizado](../deployment/how-to-create-a-localized-bootstrapper-package.md).
 
     *\Program Files\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages*
 
@@ -80,7 +80,7 @@ Una vez copiados estos archivos en la carpeta del programa previo, el paquete de
 
 La tabla siguiente muestra las propiedades que el programa previo rellena automáticamente.
 
-|Propiedad.|Descripción|
+|Propiedad|Descripción|
 |--------------|-----------------|
 |ApplicationName|El nombre de la aplicación.|
 |ProcessorArchitecture|El procesador y los bits por palabra de la plataforma de destino de un ejecutable. Los valores son los siguientes:<br /><br /> -   Intel<br />-   IA64<br />-   AMD64|
@@ -95,7 +95,7 @@ Puede evitar que los archivos redistribuibles se implementen en proyectos de ins
 
 `%ProgramFiles%\Microsoft.NET\RedistList`
 
-La lista de redistribuibles es un archivo XML cuyo nombre debe seguir el formato siguiente: *\<Nombre de la compañía>.\<Nombre del componente.RedistList.xml*. Por ejemplo, si el componente se llama Datawidgets y ha sido creado por Acme, use *Acme.DataWidgets.RedistList.xml*. El siguiente podría ser un ejemplo del contenido de la lista de redistribuibles:
+La lista de redistribuibles es un archivo XML cuyo nombre debe seguir el formato siguiente: *\<Nombre de la compañía >. \<Nombre de componente >. RedistList.xml*. Por ejemplo, si el componente se llama Datawidgets y ha sido creado por Acme, use *Acme.DataWidgets.RedistList.xml*. El siguiente podría ser un ejemplo del contenido de la lista de redistribuibles:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>

@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7b877d7370396db4653ff9af81a5654f2d357522
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56692728"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62912782"
 ---
 # <a name="taskstatefaulted-field"></a>TASK_STATE_FAULTED (campo)
 La tarea se completó debido a una excepción no controlada.

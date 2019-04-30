@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ccb14705b4d799e1f7fa6de4728ee8f7fc7b3fb4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56706644"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62912668"
 ---
 # <a name="define-element"></a>Definir el elemento
 Define un par de nombre y valor de símbolo. Este símbolo se puede evaluar mediante atributos condicionales. Para obtener más información, consulte [atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md). Vea también el [Symbols (elemento)](../extensibility/symbols-element.md).
@@ -34,7 +34,7 @@ Define un par de nombre y valor de símbolo. Este símbolo se puede evaluar medi
 
 |Atributo|Descripción|
 |---------------|-----------------|
-|name|Obligatorio. El nombre del símbolo:<br /><br /> name="Mode"|
+|NAME|Obligatorio. El nombre del símbolo:<br /><br /> name="Mode"|
 |value|Obligatorio. El valor del símbolo:<br /><br /> value="Standard"|
 |Condición|Opcional. Para obtener más información, consulte [atributos condicionales](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 

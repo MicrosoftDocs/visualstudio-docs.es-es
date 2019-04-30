@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a3f8fea6457e6763fb5b4752d348a0ea906481a9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608749"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62908537"
 ---
 # <a name="source-control-vspackage-architecture"></a>Arquitectura de VSPackage de control de código fuente
 Un paquete de control de código fuente es un paquete VSPackage que usa los servicios que la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE proporciona. En cambio, un paquete de control de código fuente proporciona su funcionalidad como un servicio de control de código fuente. Además, un paquete de control de código fuente es una alternativa más versátil que el complemento para la integración de control de código fuente en un control de código fuente [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].

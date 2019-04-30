@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a2e05b47563c62f34e4a01c945a45d5c7ec069ee
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612236"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909490"
 ---
 # <a name="nesting-projects"></a>Anidamiento de proyectos
 Los desarrolladores de aplicaciones empresariales que utilizan el paquete de VS cómodamente pueden agrupar tipos parecidos de proyectos juntos en [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] utilizando *proyecto anidamiento*. Por ejemplo, el proyecto de plantilla de la empresa usa proyectos anidados para proyectos de grupo de categorías. Proyectos de Business fachada, los proyectos de la interfaz de usuario Web etc. se agrupan en una categoría.
@@ -33,12 +33,12 @@ Los desarrolladores de aplicaciones empresariales que utilizan el paquete de VS 
  ![Anidar los proyectos de solución](../../extensibility/internals/media/vsnestedprojects.gif "vsNestedProjects") ejemplo de los proyectos anidados
 
 ## <a name="see-also"></a>Vea también
-- [Cómo: Implementación de proyectos anidados](../../extensibility/internals/how-to-implement-nested-projects.md)
+- [Cómo: Implementar proyectos anidados](../../extensibility/internals/how-to-implement-nested-projects.md)
 - [Consideraciones para descargar y volver a cargar proyectos anidados](../../extensibility/internals/considerations-for-unloading-and-reloading-nested-projects.md)
 - [Compatibilidad del Asistente para proyectos anidados](../../extensibility/internals/wizard-support-for-nested-projects.md)
 - [Registro de plantillas para proyectos y elementos](../../extensibility/internals/registering-project-and-item-templates.md)
 - [Implementación del control de comandos para proyectos anidados](../../extensibility/internals/implementing-command-handling-for-nested-projects.md)
 - [Filtrado del cuadro de diálogo AddItem para proyectos anidados](../../extensibility/internals/filtering-the-additem-dialog-box-for-nested-projects.md)
-- [Lista de comprobación: Creación de nuevos tipos de proyecto](../../extensibility/internals/checklist-creating-new-project-types.md)
+- [Lista de comprobación: Creación de tipos de proyectos](../../extensibility/internals/checklist-creating-new-project-types.md)
 - [Parámetros de contexto](../../extensibility/internals/context-parameters.md)
 - [Archivos de asistentes (.Vsz)](../../extensibility/internals/wizard-dot-vsz-file.md)

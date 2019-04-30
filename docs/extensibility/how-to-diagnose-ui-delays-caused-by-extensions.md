@@ -7,13 +7,13 @@ ms.author: pozandev
 manager: jillfra
 ms.workload: multiple
 ms.openlocfilehash: 00266fd8fbc881707652247e08b093ca4b15a88d
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324349"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62912077"
 ---
-# <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>Filtrar Diagnosticar retrasos de la interfaz de usuario causados por las extensiones
+# <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>Procedimiento Diagnosticar retrasos de la interfaz de usuario causados por las extensiones
 
 Cuando la interfaz de usuario deja de responder, Visual Studio examina la pila de llamadas del subproceso de interfaz de usuario, comenzando por la hoja y dirigiéndose a la base. Si Visual Studio determina que un marco de pila de llamadas pertenece a un módulo que forma parte de una extensión habilitada e instalada, muestra una notificación.
 
