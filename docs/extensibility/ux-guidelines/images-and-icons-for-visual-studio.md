@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: d57c06cbc465537e0ac523c8133a718369b5ea69
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087799"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62802021"
 ---
 # <a name="images-and-icons-for-visual-studio"></a>Imágenes e iconos para Visual Studio
 ## <a name="BKMK_ImageUseInVisualStudio"></a> Uso de imágenes en Visual Studio
@@ -422,7 +422,7 @@ ms.locfileid: "60087799"
 
 |Mónaco||||
 |------------|-|-|-|
-|![Icono de archivos de Monaco](../../extensibility/ux-guidelines/media/0405-57_monacofiles.png "0405 57_MonacoFiles")<br />Archivos|![Icono de Git de Monaco](../../extensibility/ux-guidelines/media/0405-58_monacogit.png "0405 58_MonacoGit")<br />Git|![Icono de búsqueda de Monaco](../../extensibility/ux-guidelines/media/0405-59_monacosearch.png "0405 59_MonacoSearch")<br />Buscar|![Icono de texto de Monaco](../../extensibility/ux-guidelines/media/0405-60_monacotext.png "0405 60_MonacoText")<br />Texto|
+|![Icono de archivos de Monaco](../../extensibility/ux-guidelines/media/0405-57_monacofiles.png "0405 57_MonacoFiles")<br />Archivos|![Icono de Git de Monaco](../../extensibility/ux-guidelines/media/0405-58_monacogit.png "0405 58_MonacoGit")<br />Git|![Icono de búsqueda de Monaco](../../extensibility/ux-guidelines/media/0405-59_monacosearch.png "0405 59_MonacoSearch")<br />Buscar|![Icono de texto de Monaco](../../extensibility/ux-guidelines/media/0405-60_monacotext.png "0405 60_MonacoText")<br />Text|
 
 |F12|||
 |---------|-|-|

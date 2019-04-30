@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 536919d4db8b13f12af1f3277daa0c148fd57916
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56709712"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62802736"
 ---
 # <a name="sccinitialize-function"></a>SccInitialize (Función)
 Esta función inicializa el complemento de control de código fuente y proporciona capacidades y los límites para el entorno de desarrollo integrado (IDE).

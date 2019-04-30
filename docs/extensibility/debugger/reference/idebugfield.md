@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a036f6d08c6f88a30f8a8c9ab6d0d2e847065854
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56682925"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62873937"
 ---
 # <a name="idebugfield"></a>IDebugField
 Esta interfaz representa un campo, es decir, una descripción de un símbolo o el tipo.

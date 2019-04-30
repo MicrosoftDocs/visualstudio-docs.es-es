@@ -11,11 +11,11 @@ ms.assetid: 3b052047-f6db-46dd-b3bf-da1c348ee410
 caps.latest.revision: 33
 manager: jillfra
 ms.openlocfilehash: ba4b166cc409dd2c50c258a9b82ee34c22e9b084
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054773"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62838689"
 ---
 # <a name="managing-the-toolbox"></a>Managing the Toolbox
 [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] permite un VSPackage como, por ejemplo, un editor o diseñador, para administrar la pertenencia y la apariencia del **Cuadro de herramientas**.  

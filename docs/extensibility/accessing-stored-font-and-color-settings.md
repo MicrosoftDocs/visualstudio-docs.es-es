@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: c270c67d21c023310df5b25c015afa754787a33f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60093562"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62843883"
 ---
 # <a name="access-stored-font-and-color-settings"></a>Acceso a la configuración de fuente y color almacenada
 

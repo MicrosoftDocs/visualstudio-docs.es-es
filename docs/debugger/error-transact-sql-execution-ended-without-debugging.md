@@ -1,5 +1,5 @@
 ---
-title: 'Error: Ejecución de Transact-SQL finalizó sin depuración | Microsoft Docs'
+title: 'Error: Ejecución de Transact-SQL finalizó sin depuración | Documentos de Microsoft'
 ms.date: 11/08/2018
 ms.topic: troubleshooting
 f1_keywords:
@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 71d1f14bef8eb69fa6c6fc4d9c3f669826079c99
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722348"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62850167"
 ---
 # <a name="error-transact-sql-execution-ended-without-debugging"></a>Error: La ejecución de Transact-SQL finalizó sin depuración
 
@@ -40,7 +40,7 @@ Existen dos cuentas:
 
   Para corregir este error, es posible que necesite:
 
-  - Comprobar la configuración de los permisos. Para obtener más información, consulte [Cómo: establecer permisos de SQL Server para la depuración](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414).
+  - Comprobar la configuración de los permisos. Para obtener más información, vea [Cómo: Establecer permisos de SQL Server para la depuración](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414).
 
   - Asegurarse de que la depuración de SQL esté correctamente configurada.
 
@@ -49,6 +49,6 @@ Existen dos cuentas:
 ## <a name="see-also"></a>Vea también
 
 - [Configurar la depuración de SQL](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100))
-- [Cómo: establecer permisos de SQL Server para la depuración](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414)
+- [Cómo: Establecer permisos de SQL Server para la depuración](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414)
 - [Configuración y preparación de la depuración](../debugger/debugger-settings-and-preparation.md)
 - [Remote Debugging](../debugger/remote-debugging.md)

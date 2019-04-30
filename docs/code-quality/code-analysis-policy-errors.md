@@ -13,15 +13,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 103a48172665875c3615ce57b90dc77beeb6b5c4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55921567"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62806308"
 ---
 # <a name="code-analysis-policy-errors"></a>Errores de las directivas de análisis de código
 
-Los errores siguientes se producen si la directiva de análisis de código no se cumple en el momento de la inserción en el repositorio:
+Los errores siguientes se producen si la directiva de análisis de código no se cumple en el momento de la protección:
 
 **La configuración de análisis de código para uno o varios proyectos no es compatible con la directiva de análisis de código.**
 

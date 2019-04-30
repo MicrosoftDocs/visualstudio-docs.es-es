@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 6e60c314a6886831758f403402958cfe97c4a4fc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58998664"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62855417"
 ---
 # <a name="using-the-workflow-designer"></a>Utilizar el Diseñador de flujo de trabajo
 En esta sección se ofrecen detalles sobre cómo crear actividades y proyectos de flujo de trabajo nuevos mediante diseñadores integrados y el editor de expresiones que hospedan algunos de los diseñadores de actividades.  

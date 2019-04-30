@@ -26,11 +26,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: caaf36e286f1bdc664ebdbb10e3baf7ed28183e7
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57870525"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62849861"
 ---
 # <a name="format-specifiers-in-c-in-the-visual-studio-debugger"></a>Especificadores de formato en C# en el depurador de Visual Studio
 Puede cambiar el formato en el que se muestra un valor en el **inspección** ventana mediante el uso de especificadores de formato. También puede usar especificadores de formato en el **inmediato** ventana, el **comando** ventana, en [puntos de seguimiento](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)y en las ventanas de código fuente. Si hace una pausa en una expresión de esas ventanas, el resultado aparecerá en un [información sobre datos](../debugger/view-data-values-in-data-tips-in-the-code-editor.md) en la visualización del formato especificado.

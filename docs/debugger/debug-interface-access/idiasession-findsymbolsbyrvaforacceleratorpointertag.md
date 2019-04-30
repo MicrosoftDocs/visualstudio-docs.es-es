@@ -1,5 +1,5 @@
 ---
-title: IDiaSession::findSymbolsByRVAForAcceleratorPointerTag | Microsoft Docs
+title: IDiaSession::findSymbolsByRVAForAcceleratorPointerTag | Documentos de Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5bcf399dcf80cb574b6018dde5ffa44e72a4c988
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56623936"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62839217"
 ---
 # <a name="idiasessionfindsymbolsbyrvaforacceleratorpointertag"></a>IDiaSession::findSymbolsByRVAForAcceleratorPointerTag
 Dado un valor de la etiqueta correspondiente, este método devuelve una enumeración de los símbolos que se encuentran en una función de código auxiliar del Acelerador primario especificado en una dirección virtual relativa especificada.

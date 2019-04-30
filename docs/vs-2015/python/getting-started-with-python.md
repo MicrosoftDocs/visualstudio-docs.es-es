@@ -10,11 +10,11 @@ author: kraigb
 ms.author: kraigb
 manager: jillfra
 ms.openlocfilehash: 9c18ae2731d92e6d128d13e7687bac77ae76dc8a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59648461"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62575655"
 ---
 # <a name="getting-started-with-python"></a>Introducción a Python
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -96,4 +96,4 @@ Se recomienda obtener IPython y las bibliotecas informáticas científicas (matp
 [Introducción a PTVS: Edición de código](../python/getting-started-with-ptvs-editing-code.md)
 [Introducción a PTVS: Depuración](../python/getting-started-with-ptvs-debugging.md)
 [Introducción a PTVS: Python interactivo](../python/getting-started-with-ptvs-interactive-python.md)
-[Introducción a PTVS: Creación de un sitio Web en Azure](../python/getting-started-with-ptvs-building-a-website-in-azure.md)
+[Introducción a PTVS: Creación de un sitio web en Azure](../python/getting-started-with-ptvs-building-a-website-in-azure.md)

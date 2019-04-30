@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9b58fcf55741975a776e222b2845ae50774e7fc9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645516"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62832920"
 ---
 # <a name="idiasessionsymbolbyid"></a>IDiaSession::symbolById
 Recupera un símbolo por su identificador único.

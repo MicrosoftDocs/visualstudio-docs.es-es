@@ -1,5 +1,5 @@
 ---
-title: Filtrar Crear un átomo fuentes de distribución para una galería privada | Documentos de Microsoft
+title: Procedimiento Crear un átomo fuentes de distribución para una galería privada | Documentos de Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 094bff5c761a45e936f14f79587b4846d3838610
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722413"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62862997"
 ---
 # <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>Procedimiento Crear una fuente Atom para una galería privada
-Puede crear un átomo (RSS) de la fuente en una ubicación de la intranet que contiene las extensiones y agrega la fuente a **extensiones y actualizaciones** como una galería privada. Para obtener más información, consulte [galerías privadas](../extensibility/private-galleries.md).
+Puede crear un átomo (RSS) de la fuente en una ubicación de la intranet que contiene las extensiones y agrega la fuente a **extensiones y actualizaciones** como una galería privada. Para más información, consulte [Private galleries](../extensibility/private-galleries.md) (Galerías privadas).
 
 ## <a name="create-an-atom-feed"></a>Crear una fuente Atom
  Para crear una fuente como una galería privada Atom, primero recopilar sus extensiones (*.vsix* archivos) en una carpeta. Si desea que se puede organizarlos en subcarpetas. También necesitará los siguientes recursos:

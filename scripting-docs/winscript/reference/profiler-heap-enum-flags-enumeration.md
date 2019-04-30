@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: d613ed3bcb4699f20d521f08b6c34d55d8363ba4
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58152790"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62830362"
 ---
 # <a name="profilerheapenumflags-enumeration"></a>PROFILER_HEAP_ENUM_FLAGS (Enumeración)
 Marcas que representan si se expone información adicional sobre un objeto de montón al que se apunta en una relación de objeto. Utilizado en el [EnumHeap2](../../winscript/reference/iactivescriptprofilercontrol5-enumheap2-method.md) método.  

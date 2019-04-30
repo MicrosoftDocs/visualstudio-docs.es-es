@@ -34,11 +34,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b83cb026bec6d33490517e5703a042b4a8e2434c
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428705"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62846676"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Administración de excepciones con el depurador de Visual Studio
 
@@ -100,7 +100,7 @@ Si selecciona una excepción en el **configuración de excepciones** ventana, la
 
   pero no muestra la `here` línea.
 
-- Un C# aplicación de consola hace referencia a una biblioteca de clases con una clase que tiene dos métodos. Un método produce una excepción y controla, mientras que un segundo método produce la misma excepción pero no la controla.
+- Una aplicación de consola de C# hace referencia a una biblioteca de clases con una clase que tiene dos métodos. Un método produce una excepción y controla, mientras que un segundo método produce la misma excepción pero no la controla.
 
   ```csharp
   public class Class1
@@ -223,7 +223,7 @@ Para agregar excepciones condicionales:
 ## <a name="see-also"></a>Vea también
 
 - [Continuación de la ejecución después de una excepción](../debugger/continuing-execution-after-an-exception.md)<br/>
-- [Análisis del código del sistema después de una excepción](../debugger/how-to-examine-system-code-after-an-exception.md)<br/>
-- [Uso de comprobaciones nativas en tiempo de ejecución](../debugger/how-to-use-native-run-time-checks.md)<br/>
+- [Cómo: examinar el código del sistema después de una excepción](../debugger/how-to-examine-system-code-after-an-exception.md)<br/>
+- [Cómo: usar comprobaciones nativas en tiempo de ejecución](../debugger/how-to-use-native-run-time-checks.md)<br/>
 - [Usar comprobaciones en tiempo de ejecución sin la biblioteca en tiempo de ejecución de C](../debugger/using-run-time-checks-without-the-c-run-time-library.md)<br/>
 - [Primer vistazo al depurador](../debugger/debugger-feature-tour.md)

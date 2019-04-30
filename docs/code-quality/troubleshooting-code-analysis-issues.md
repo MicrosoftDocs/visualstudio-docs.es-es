@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 936428b82e721a1df6003a4bb0eecefe5b696b4c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080004"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62825356"
 ---
 # <a name="troubleshooting-code-analysis-issues"></a>Solucionar problemas de análisis de código
 Este tema contiene información para solucionar los siguientes problemas de análisis de código de Visual Studio.

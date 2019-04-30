@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: f55c67fbad80b05431ed13439584d3a94fa88c65
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078309"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62856463"
 ---
 # <a name="locationfield-element-visual-studio-project-templates"></a>LocationField (elemento) (plantillas de proyecto de Visual Studio)
 Especifica si el **ubicación** cuadro de texto en el **nuevo proyecto** cuadro de diálogo está habilitado, deshabilitado u oculto para la plantilla de proyecto.

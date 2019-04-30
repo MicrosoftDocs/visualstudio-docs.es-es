@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: fe1d3b39e07862192082eb4950bd268dfcebd175
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702803"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62863031"
 ---
 # <a name="guidsymbol-element"></a>GuidSymbol (elemento)
 El `GuidSymbol` elemento contiene el GUID del par GUID: ID que representa un menú, grupo o comando. El Id. de procede de un `IDSymbol` elemento en el `GuidSymbol` elemento. El `GuidSymbol` elemento tiene un `name` atributo que proporciona un nombre descriptivo para el GUID, que se encuentra en la `value` atributo.
@@ -37,7 +37,7 @@ El `GuidSymbol` elemento contiene el GUID del par GUID: ID que representa un men
 
 |Atributo|Descripción|
 |---------------|-----------------|
-|name|Obligatorio. Nombre del símbolo GUID.|
+|NAME|Obligatorio. Nombre del símbolo GUID.|
 |value|Obligatorio. GUID del símbolo GUID.|
 
 ### <a name="child-elements"></a>Elementos secundarios

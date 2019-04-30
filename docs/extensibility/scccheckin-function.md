@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 178cebb974147a95aac35ebabe484dc4a7777407
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689465"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62803002"
 ---
 # <a name="scccheckin-function"></a>SccCheckin (función)
 Esta función comprueba en los archivos anteriormente desprotegidos para el sistema de control de código fuente, almacenar los cambios y crear una nueva versión. Esta función se invoca con un recuento y una matriz de nombres de los archivos que se comprobará.
@@ -75,7 +75,7 @@ SCCRTN SccCheckin (
 |SCC_E_ACCESSFAILURE|Hubo un problema al obtener acceso el sistema de control de código fuente, probablemente debido a problemas de red o de contención. Se recomienda un reintento.|
 |SCC_E_NONSPECIFICERROR|Error no específico. Archivo no se protegió.|
 |SCC_E_NOTCHECKEDOUT|El usuario no ha desprotegido el archivo, por lo que no puede protegerlo.|
-|SCC_E_CHECKINCONFLICT|No se pudo realizar la inserción en el repositorio porque:<br /><br /> -Otro usuario ha registrado con antelación y `bAutoReconcile` era false.<br /><br /> O bien<br /><br /> -La combinación automática no es posible (por ejemplo, cuando los archivos son binarios).|
+|SCC_E_CHECKINCONFLICT|No se pudo realizar la inserción en el repositorio porque:<br /><br /> -Otro usuario ha registrado con antelación y `bAutoReconcile` era false.<br /><br /> -o bien-<br /><br /> -La combinación automática no es posible (por ejemplo, cuando los archivos son binarios).|
 |SCC_E_VERIFYMERGE|Archivo ha sido combinada automáticamente, pero no se ha comprobado espera de comprobación de usuario.|
 |SCC_E_FIXMERGE|Archivo ha sido combinada automática, pero no se ha comprobado debido a un conflicto de combinación que debe resolverse manualmente.|
 |SCC_E_NOTAUTHORIZED|El usuario no puede realizar esta operación.|

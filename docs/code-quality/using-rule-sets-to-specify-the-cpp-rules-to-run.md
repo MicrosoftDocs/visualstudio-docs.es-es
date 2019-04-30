@@ -8,11 +8,11 @@ manager: wpickett
 ms.workload:
 - cplusplus
 ms.openlocfilehash: d4d7dfc1f010b860653edbe14fa7af9050bddba4
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323658"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62820378"
 ---
 # <a name="use-rule-sets-to-specify-the-c-rules-to-run"></a>Usar conjuntos de reglas para especificar las reglas de C++ en ejecución
 

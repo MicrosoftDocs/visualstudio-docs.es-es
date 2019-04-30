@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: e6b1feac19be5f6506227b60515df70d9a737a2a
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58155987"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62840293"
 ---
 # <a name="scriptepropagate-error-code"></a>SCRIPT_E_PROPAGATE (Código de error)
 Un error de script se propaga al llamador, que podría estar en un subproceso diferente. El host debe pasar el código de error al llamador.  

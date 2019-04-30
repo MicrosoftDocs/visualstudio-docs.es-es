@@ -1,5 +1,5 @@
 ---
-title: 'Error: El proceso de destino se cerró con el código &#39;código&#39; al evaluar la función &#39;función&#39; | Microsoft Docs'
+title: 'Error: El proceso de destino se cerró con el código &#39;código&#39; al evaluar la función &#39;función&#39; | Documentos de Microsoft'
 ms.date: 4/06/2018
 ms.topic: troubleshooting
 f1_keywords:
@@ -10,15 +10,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 75d82b6011a0dfa7f2c388e7d5f39a9ebabcd663
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56698175"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62850823"
 ---
 # <a name="error-the-target-process-exited-with-code-39code39-while-evaluating-the-function-39function39"></a>Error: El proceso de destino se cerró con el código &#39;código&#39; al evaluar la función &#39;(función)&#39;
 
-Mensaje de texto completo: el proceso de destino se cerró con el código "code" al evaluar la función 'función'.
+Texto completo del mensaje: El proceso de destino terminó con código "code" al evaluar la función 'función'.
 
 Para que sea más fácil de inspeccionar el estado de objetos. NET, el depurador forzará automáticamente el proceso depurado se ejecute código adicional (normalmente, los métodos de captador de propiedad y `ToString` funciones). En la mayoría de los escenarios, estas funciones se completan correctamente o producen excepciones que se pueden detectar el depurador. Sin embargo, hay algunas circunstancias en que las excepciones no se puede detectar porque cruzar los límites del kernel, requieren el suministro de mensajes de usuario o son irrecuperables. Como un resultado, un captador de propiedad o método ToString que ejecuta código que explícitamente se finaliza el proceso (por ejemplo, llamadas `ExitProcess()`) o se produce una excepción no controlada que no se puede detectar (por ejemplo, `StackOverflowException`) finalizará el proceso depurado y finalizar la sesión de depuración. Si aparece este mensaje de error, esto ha sucedido.
 
@@ -28,16 +28,16 @@ Un motivo habitual para este problema es que cuando el depurador se evalúa como
 
 Hay dos soluciones posibles para este problema.
 
-### <a name="solution-1-prevent-the-debugger-from-calling-the-getter-property-or-tostring-method"></a>Solución de #1: Impedir que al depurador de la llamada a la propiedad de captador o ToString (método) 
+### <a name="solution-1-prevent-the-debugger-from-calling-the-getter-property-or-tostring-method"></a>Solución 1 #: Evitar que al depurador de la llamada a la propiedad de captador o ToString (método) 
 
 El mensaje de error le indicará el nombre de la función que el depurador intentó llamar a. Con el nombre de la función, puede intentar volver a evaluar esa función desde el **inmediato** ventana para depurar la evaluación. Es posible depurar al evaluar desde el **inmediato** ventana porque, a diferencia de las evaluaciones implícitas desde el **automático/variables locales/inspección** windows, el depurador se interrumpe en excepciones no controladas.
 
 Si se puede modificar esta función, puede impedir que el depurador de una llamada del captador de propiedad o `ToString` método. Pruebe una de las siguientes acciones:
 
 * Cambiar el método a algún otro tipo de código además de un captador de propiedad o método ToString y el problema desaparecerán.
-    o bien
+    -o bien-
 * (Para `ToString`) definir una `DebuggerDisplay` atributo en el tipo y puede tener el depurador evaluar algo distinto `ToString`.
-    o bien
+    -o bien-
 * (Para un captador de propiedad) Coloque el `[System.Diagnostics.DebuggerBrowsable(DebuggerBrowsableState.Never)]` atributo en la propiedad. Esto puede ser útil si tiene un método que debe permanecer en una propiedad por motivos de compatibilidad de API, pero debe ser realmente un método.
 
 Si no se puede modificar este método, puede interrumpir el proceso de destino en una instrucción alternativa e intente de nuevo la evaluación.

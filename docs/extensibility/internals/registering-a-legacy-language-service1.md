@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 72d82bca64870c65efaeaa58077b90cecf073be5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56653897"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62859392"
 ---
 # <a name="registering-a-legacy-language-service"></a>Registrar un servicio de lenguaje heredado
 En managed package framework (MPF), el servicio de lenguaje es ofrecido por un VSPackage (consulte [VSPackages](../../extensibility/internals/vspackages.md)) y se registra con [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] mediante la adición de entradas y claves del registro. Este proceso de registro se realiza en parcialmente durante la instalación y parcialmente en tiempo de ejecución.

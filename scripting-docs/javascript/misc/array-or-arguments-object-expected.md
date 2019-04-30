@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 403972bfc7a8f6c061713dba4138ef6ccb08444a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097276"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62817994"
 ---
 # <a name="array-or-arguments-object-expected"></a>Se esperaba un objeto de argumentos o matriz
 No se proporcionó una matriz como argumento. Este error se aplica a la **Function.prototype.apply** solo método. Si se especifica, el segundo argumento a esta función debe ser un `Array` objeto o una **argumentos** objeto.  

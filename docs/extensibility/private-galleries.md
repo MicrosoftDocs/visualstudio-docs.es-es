@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 027181d16024964d5487be2b3eb0b4ca261f98e0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079232"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62433607"
 ---
 # <a name="private-galleries"></a>Galerías privadas
 Puede compartir los controles, plantillas y herramientas que desarrolla publicándolas en un *Galería privada* en la intranet de su organización, como se indica a continuación:

@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: ce8d963d56a6ad79562db22ab0e59885730c24b1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58997057"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62858429"
 ---
 # <a name="using-the-activity-designers"></a>Utilizar los diseñadores de actividades
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] incluye varias actividades proporcionadas por el sistema que puede utilizar cuando cree actividades y flujos de trabajo. En esta sección se describen las categorías de las actividades proporcionadas por el sistema y los diseñadores correspondientes que están disponibles. Los temas de las actividades individuales y sus diseñadores respectivos dentro de cada una de estas categorías describen lo que hacen estas actividades y proporcionan orientación sobre cómo utilizarlas.  

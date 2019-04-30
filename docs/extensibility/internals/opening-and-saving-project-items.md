@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7ca83cb6d2913e0c0a91f4a6e874640ae57c7708
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602434"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62860012"
 ---
 # <a name="opening-and-saving-project-items"></a>Apertura y guardado de elementos de proyecto
 Cuando se agrega un nuevo tipo de proyecto, debe administrar la apertura y el almacenamiento de los archivos de proyectos en el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] el entorno de desarrollo integrado (IDE). Los temas siguientes describen los diferentes enfoques para abrir y guardar archivos.
@@ -31,7 +31,7 @@ Cuando se agrega un nuevo tipo de proyecto, debe administrar la apertura y el al
 
  Proporciona una explicación detallada, paso a paso de cómo el IDE controla la **abrir con** comando, solicitar la apertura de un archivo que tiene algunas opciones de editores estándar.
 
-- [Cómo: Abrir editores específicos del proyecto](../../extensibility/how-to-open-project-specific-editors.md)
+- [Cómo: Abrir editores específicos de proyecto](../../extensibility/how-to-open-project-specific-editors.md)
 
  Proporciona instrucciones paso a paso para especificar que los archivos de un tipo determinado en el proyecto deben abrirse con un editor específico del proyecto.
 

@@ -1,5 +1,5 @@
 ---
-title: Ubicaciones de símbolos | Microsoft Docs
+title: Ubicaciones de símbolos | Documentos de Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3cc8ed99cad2fb0806c7072b1b2f494aa60e967c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56607894"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62854766"
 ---
 # <a name="symbol-locations"></a>Symbol Locations
 La mayoría de los símbolos con una ubicación definida dentro del archivo de imagen. Se especifica la ubicación de un símbolo con un valor de la [LocationType (enumeración)](../../debugger/debug-interface-access/locationtype.md) enumeración. El símbolo puede admitir propiedades adicionales según su ubicación.
