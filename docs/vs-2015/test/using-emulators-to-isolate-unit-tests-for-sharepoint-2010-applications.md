@@ -8,12 +8,12 @@ ms.assetid: b681164c-c87a-4bd7-be48-ed77e1578471
 caps.latest.revision: 17
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: badf8d53a73c86bac9422fd2bb7e1f073dd291eb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 689ff79fb35f7b84c976fed85e4af10a8e252f3c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108274"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445871"
 ---
 # <a name="using-emulators-to-isolate-unit-tests-for-sharepoint-2010-applications"></a>Usar emuladores para aislar las pruebas unitarias para las aplicaciones de SharePoint 2010
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -340,7 +340,7 @@ public string GetAppointmentsForToday(string listName, SPWeb web)
  Debajo se indica una modificación de un método de prueba existente, `GetAppointmentsForTodayReturnsOnlyTodaysAppointments`, que implementa un delegado de Fakes. Los cambios necesarios se mencionan en los comentarios:  
   
 > [!IMPORTANT]
->  Los métodos de prueba que crean explícitamente correcciones de compatibilidad (shim) de Fakes producen una excepción `ShimNotSupported` cuando se ejecuta la prueba en el contexto `EmulationMode.Passthrough`. Para evitar este problema, use una variable para establecer el valor `EmulationMode` y ajustar cualquier código de Fakes a una instrucción `if` que prueba el valor.  
+> Los métodos de prueba que crean explícitamente correcciones de compatibilidad (shim) de Fakes producen una excepción `ShimNotSupported` cuando se ejecuta la prueba en el contexto `EmulationMode.Passthrough`. Para evitar este problema, use una variable para establecer el valor `EmulationMode` y ajustar cualquier código de Fakes a una instrucción `if` que prueba el valor.  
   
 ```csharp  
 // class level field to set emulation mode  

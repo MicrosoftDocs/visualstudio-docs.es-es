@@ -22,12 +22,12 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 395e2a6233c1b6187d9089459cb8f267c4c3c904
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d4d2218337153418ef201ee7896eeb095c4778fb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079913"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424919"
 ---
 # <a name="upgrade-mdf-files"></a>Actualizar archivos .mdf
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,10 +47,10 @@ En este tema se describe las opciones para actualizar el archivo de base de dato
   También se le pedirá que actualice un archivo de base de datos que se creó a través de una versión anterior de SQL Server Express o LocalDB si la versión del archivo no es compatible con la instancia de SQL Server Express o LocalDB instalada actualmente. Para resolver el problema, Visual Studio le pedirá que actualice el archivo.  
   
 > [!IMPORTANT]
->  Se recomienda realizar copias de seguridad del archivo de base de datos antes de que la actualización.  
+> Se recomienda realizar copias de seguridad del archivo de base de datos antes de que la actualización.  
   
 > [!WARNING]
->  Si actualiza un archivo .mdf que se creó en LocalDB 2014 (V12) de 32 bits a LocalDB 2016 (V13), no podrá volver a abrir el archivo en la versión de 32 bits de LocalDB.  En Update 2, LocalDB V13 es solo de 64 bits.  
+> Si actualiza un archivo .mdf que se creó en LocalDB 2014 (V12) de 32 bits a LocalDB 2016 (V13), no podrá volver a abrir el archivo en la versión de 32 bits de LocalDB.  En Update 2, LocalDB V13 es solo de 64 bits.  
   
  Antes de actualizar una base de datos, tenga en cuenta los siguientes criterios:  
   

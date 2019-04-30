@@ -11,12 +11,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1c346cc488966448cc1b77b624c80fe602555840
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3e391e21ac16bdbee9fc2881b264f964a4b28cc0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088800"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433220"
 ---
 # <a name="customizing-the-properties-window"></a>Personalizar la ventana Propiedades
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ Puede personalizar la apariencia y comportamiento de la ventana Propiedades de s
  Para reenviar una propiedad, defina un descriptor de tipos de dominio. Si tiene una relación de dominio entre dos clases de dominio, puede utilizar un descriptor de tipos de dominio para establecer una propiedad de dominio en la primera clase en el valor de una propiedad de dominio en la segunda clase de dominio. Por ejemplo, si tiene una relación entre un **libro** la clase de dominio y un **autor** la clase de dominio, puede utilizar un descriptor de tipos de dominio para realizar la **nombre** propiedad de un Del libro **autor** aparecen en la ventana Propiedades cuando el usuario selecciona el libro.  
   
 > [!NOTE]
->  Reenvío de la propiedad afecta a solo la ventana Propiedades cuando el usuario está editando un modelo. No se define una propiedad de dominio en la clase receptora. Si desea obtener acceso a la propiedad de dominio reenviados en otras partes de la definición de DSL o en el código de programa, debe tener acceso al elemento de reenvío.  
+> Reenvío de la propiedad afecta a solo la ventana Propiedades cuando el usuario está editando un modelo. No se define una propiedad de dominio en la clase receptora. Si desea obtener acceso a la propiedad de dominio reenviados en otras partes de la definición de DSL o en el código de programa, debe tener acceso al elemento de reenvío.  
   
  El siguiente procedimiento se da por supuesto que ha creado un DSL. Los primeros pasos resumen los requisitos previos.  
   
@@ -121,7 +121,7 @@ Puede personalizar la apariencia y comportamiento de la ventana Propiedades de s
         Aparece una nueva entrada en el **tipos de dominio** nodo.  
   
        > [!WARNING]
-       >  El elemento de menú no está en el nodo raíz DSL, la **tipos de dominio** nodo.  
+       > El elemento de menú no está en el nodo raíz DSL, la **tipos de dominio** nodo.  
   
    2. En la ventana Propiedades, establezca el nombre y el espacio de nombres del nuevo tipo.  
   
@@ -182,7 +182,7 @@ Puede personalizar la apariencia y comportamiento de la ventana Propiedades de s
   También puede proporcionar una representación gráfica del valor de la propiedad que se mostrará en la cuadrícula de propiedades. Para ello, invalide `GetPaintValueSupported`, y `PaintValue`.  Para obtener más información, consulta <xref:System.Drawing.Design.UITypeEditor>.  
   
 > [!NOTE]
->  Agregue el código en un archivo de código independiente en el **Dsl** proyecto.  
+> Agregue el código en un archivo de código independiente en el **Dsl** proyecto.  
   
  Por ejemplo:  
   
@@ -214,7 +214,7 @@ internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor
  Puede proporcionar una lista de valores para un usuario elegir.  
   
 > [!NOTE]
->  Esta técnica proporciona una lista de valores que pueden cambiar en tiempo de ejecución. Si desea proporcionar una lista que no cambia, en su lugar, considere el uso de un tipo enumerado como el tipo de la propiedad de dominio.  
+> Esta técnica proporciona una lista de valores que pueden cambiar en tiempo de ejecución. Si desea proporcionar una lista que no cambia, en su lugar, considere el uso de un tipo enumerado como el tipo de la propiedad de dominio.  
   
  Para definir una lista de valores estándar, a la propiedad de dominio se agrega un atributo CLR que tiene el formato siguiente:  
   

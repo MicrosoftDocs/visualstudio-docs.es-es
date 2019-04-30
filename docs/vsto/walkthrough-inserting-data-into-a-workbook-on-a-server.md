@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4b68e2f01cae577c7d0913e448aa832b586aa22b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: daf5251aa32f4101bfba21d053d72abceef1eb15
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071699"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440844"
 ---
 # <a name="walkthrough-insert-data-into-a-workbook-on-a-server"></a>Tutorial: Insertar datos en un libro en un servidor
   Este tutorial muestra cómo insertar datos en un conjunto de datos que se almacena en caché en un libro de Microsoft Office Excel sin iniciar Excel, mediante el <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> clase.
@@ -43,7 +43,7 @@ ms.locfileid: "60071699"
   Aunque en este tutorial se da por supuesto que se está ejecutando el código en el equipo de desarrollo, el código que se muestran en este tutorial puede usarse en un servidor que no tienen Excel instalado.
 
 > [!NOTE]
->  Es posible que el equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Para más información, vea [Personalizar el IDE de Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Es posible que el equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Para más información, vea [Personalizar el IDE de Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="prerequisites"></a>Requisitos previos
  Necesita los componentes siguientes para completar este tutorial:
@@ -251,7 +251,7 @@ ms.locfileid: "60071699"
    - Un <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> objeto va a utilizar para tener acceso a la caché de datos en el libro.
 
      > [!NOTE]
-     >  El código siguiente se da por supuesto que está usando un libro que tiene el *.xlsx* la extensión de archivo. Si el libro en el proyecto tiene una extensión de archivo diferente, modifique la ruta de acceso según sea necesario.
+     > El código siguiente se da por supuesto que está usando un libro que tiene el *.xlsx* la extensión de archivo. Si el libro en el proyecto tiene una extensión de archivo diferente, modifique la ruta de acceso según sea necesario.
 
      [!code-csharp[Trin_CachedDataWalkthroughs#3](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#3)]
      [!code-vb[Trin_CachedDataWalkthroughs#3](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#3)]

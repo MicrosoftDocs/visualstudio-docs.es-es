@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 453952f52561a761ab4cf01825d07aa97595d0c2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 15659cc8061601776e3a3197a49f14e2c824aa7b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080207"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420425"
 ---
 # <a name="implementing-syntax-coloring"></a>Implementación de colores de la sintaxis
 Cuando el servicio de lenguaje proporciona la coloración de sintaxis, el analizador convierte una línea de texto en una matriz de elementos coloreables y devuelve los tipos de token correspondientes a estos elementos coloreables. El analizador debe devolver tipos de token que pertenecen a una lista de elementos coloreables. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] cada elemento coloreable se muestra en la ventana de código según los atributos asignados por el objeto de Coloreador para el tipo de token adecuado.
@@ -27,7 +27,7 @@ Cuando el servicio de lenguaje proporciona la coloración de sintaxis, el analiz
  Servicios de lenguaje heredado se implementan como parte de un paquete VSPackage, pero la forma más reciente para implementar características de servicio de lenguaje es usar las extensiones MEF. Para obtener más información acerca de la nueva forma de implementar los colores de sintaxis, vea [Tutorial: Resaltar texto](../../extensibility/walkthrough-highlighting-text.md).
 
 > [!NOTE]
->  Se recomienda que comience a usar el nuevo editor de API tan pronto como sea posible. Esto mejorará el rendimiento de su servicio de lenguaje y le permiten aprovechar las nuevas características del editor.
+> Se recomienda que comience a usar el nuevo editor de API tan pronto como sea posible. Esto mejorará el rendimiento de su servicio de lenguaje y le permiten aprovechar las nuevas características del editor.
 
 ## <a name="steps-followed-by-an-editor-to-colorize-text"></a>Pasos seguidos por un Editor para colorear el texto
 

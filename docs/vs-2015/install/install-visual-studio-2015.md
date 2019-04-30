@@ -19,12 +19,12 @@ caps.latest.revision: 183
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 8e6f39e420981615f391103c6cee431f930190bf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 677a72f0378c62f2ca65515ec563069f22b9ff09
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60118102"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433018"
 ---
 # <a name="install-visual-studio-2015"></a>Instalación de Visual Studio 2015
 
@@ -53,7 +53,7 @@ Antes de profundizar en los detalles, se muestra a continuación una lista de lo
  Entre los componentes personalizados se incluye Visual C++, Visual F#, SQL Server Data Tools, herramientas y SDK móviles multiplataforma y SDK y extensiones. Puede instalar cualquiera de los componentes personalizados más adelante si no los selecciona durante la configuración inicial.
 
 > [!NOTE]
->  Una instalación personalizada incluye automáticamente los componentes que se encuentran en una instalación predeterminada.
+> Una instalación personalizada incluye automáticamente los componentes que se encuentran en una instalación predeterminada.
 
  La lista completa de componentes personalizados es la siguiente:
 
@@ -70,7 +70,7 @@ Antes de profundizar en los detalles, se muestra a continuación una lista de lo
  Puede instalar Visual Studio mediante el uso de medios de instalación (DVD), mediante el uso de su servicio de suscripción de Visual Studio desde el [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20enterprise%202015) sitio Web, mediante la descarga un instalador web desde el [Visual Studio Descargas de](http://go.microsoft.com/fwlink/?LinkId=517106) sitio Web, o mediante la creación de un diseño de instalación sin conexión (consulte la [crear una sin conexión instalación de Visual Studio](../install/create-an-offline-installation-of-visual-studio.md) página para obtener más detalles).
 
 > [!IMPORTANT]
->  Necesita credenciales de administrador para instalar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Sin embargo, no las necesita para usar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] después de su instalación.
+> Necesita credenciales de administrador para instalar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Sin embargo, no las necesita para usar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] después de su instalación.
 
  La cuenta de administrador local debe tener los siguientes privilegios habilitados para instalar todos los componentes en Visual Studio.
 

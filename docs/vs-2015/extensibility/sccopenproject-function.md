@@ -12,12 +12,12 @@ ms.assetid: d609510b-660a-46d7-b93d-2406df20434d
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0c89c98203306b287a3d4a3eb45ef673146a42b6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: af2b33d31d813533d833e4a5c15a3b562bc2e94e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58988921"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446789"
 ---
 # <a name="sccopenproject-function"></a>SccOpenProject (Función)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -88,14 +88,14 @@ SCCRTN SccOpenProject (
  El IDE puede pasar un nombre de usuario (`lpUser`), o simplemente puede pasar un puntero a una cadena vacía. Si hay un nombre de usuario, el complemento de control de origen debe usar de forma predeterminada. Sin embargo, si se ha pasado ningún nombre, o si el error de inicio de sesión con el nombre especificado, el complemento debe pedir al usuario que inicie sesión y devolverá el nombre válido de `lpUser` cuando recibe un inicio de sesión válido`.` porque el complemento puede cambiar la cadena de nombre de usuario , el IDE siempre se asignará un búfer de tamaño (`SCC_USER_LEN`+ 1 o SCC_USER_SIZE, que incluye espacio para el terminador nulo).  
   
 > [!NOTE]
->  La primera acción en el IDE es posible que deba realizar puede ser una llamada a la `SccOpenProject` función o el [SccGetProjPath](../extensibility/sccgetprojpath-function.md). Por este motivo, ambos tienen un idénticos `lpUser` parámetro.  
+> La primera acción en el IDE es posible que deba realizar puede ser una llamada a la `SccOpenProject` función o el [SccGetProjPath](../extensibility/sccgetprojpath-function.md). Por este motivo, ambos tienen un idénticos `lpUser` parámetro.  
   
  `lpAuxProjPath` y`lpProjName` se leen desde el archivo de solución, o se devuelven en una llamada a la `SccGetProjPath` función. Estos parámetros contienen las cadenas que el complemento de control de código fuente que se asocia con el proyecto y sólo son significativos para el complemento. Si ninguna de esas cadenas están en el archivo de solución y no se solicita al usuario examinar (que devolvería una cadena a través de la `SccGetProjPath` función), el IDE pasa cadenas vacías para ambos `lpAuxProjPath` y `lpProjName`y espera que estos valores para actualizarse por el complemento cuando se devuelve esta función.  
   
  `lpTextOutProc` es un puntero a una función de devolución de llamada proporcionada por el IDE para el complemento con el fin de mostrar la salida de resultado del comando de control de origen. Esta función de devolución de llamada se describe detalladamente en [LPTEXTOUTPROC](../extensibility/lptextoutproc.md).  
   
 > [!NOTE]
->  Si el complemento de control de código fuente tenga intención de sacar partido de esto, ha establecido la `SCC_CAP_TEXTOUT` marca en el [SccInitialize](../extensibility/sccinitialize-function.md). Si no se ha establecido esa marca, o si el IDE no admite esta característica, `lpTextOutProc` será `NULL`.  
+> Si el complemento de control de código fuente tenga intención de sacar partido de esto, ha establecido la `SCC_CAP_TEXTOUT` marca en el [SccInitialize](../extensibility/sccinitialize-function.md). Si no se ha establecido esa marca, o si el IDE no admite esta característica, `lpTextOutProc` será `NULL`.  
   
  El `dwFlags` parámetro controla el resultado en caso de que el proyecto está abierto actualmente no existe. Consta de dos marcadores de bits, `SCC_OP_CREATEIFNEW` y `SCC_OP_SILENTOPEN`. Si el proyecto está abierto ya existe, la función simplemente se abre el proyecto y devuelve `SCC_OK`. Si el proyecto no existe y si el `SCC_OP_CREATEIFNEW` indicador está activado, puede crear el proyecto en el sistema de control de código fuente, ábralo y devolver el complemento de control de código fuente `SCC_OK`. Si el proyecto no existe y si el `SCC_OP_CREATEIFNEW` marca está desactivada, el complemento debe, a continuación, busque el `SCC_OP_SILENTOPEN` marca. Si no está en esa marca, el complemento puede solicitar al usuario un nombre de proyecto. Si ese indicador está activado, el complemento debe devolver simplemente `SCC_E_UNKNOWNPROJECT`.  
   
@@ -105,7 +105,7 @@ SCCRTN SccOpenProject (
  Si el control de origen al complemento establece el `SCC_CAP_REENTRANT` bit en `SccInitialize`, a continuación, la secuencia de la sesión anterior puede repetirse muchas veces en paralelo. Diferentes `pvContext` estructuras realizar un seguimiento de las sesiones diferentes, donde cada `pvContext` está asociado con un proyecto abierto a la vez. Según el`pvContext` parámetro, el complemento puede determinar qué proyecto se hace referencia en cualquier llamada determinada. Si la capacidad de bits `SCC_CAP_REENTRANT` no está establecida, nonreentrant complementos de control de código fuente están limitados en su capacidad para trabajar con varios proyectos.  
   
 > [!NOTE]
->  El `SCC_CAP_REENTRANT` bits se introdujeron en la versión 1.1 de la API de complemento de Control de código fuente. No se ha establecido o se omite en la versión 1.0 y se supone que todas las versiones 1.0 complementos código fuente control nonreentrant.  
+> El `SCC_CAP_REENTRANT` bits se introdujeron en la versión 1.1 de la API de complemento de Control de código fuente. No se ha establecido o se omite en la versión 1.0 y se supone que todas las versiones 1.0 complementos código fuente control nonreentrant.  
   
 ## <a name="see-also"></a>Vea también  
  [Funciones de API de complemento de Control de código fuente](../extensibility/source-control-plug-in-api-functions.md)   

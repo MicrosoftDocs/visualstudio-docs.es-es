@@ -11,12 +11,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d7d37db61f49db19d952cf5b45699b604a91e090
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 4282b865bbe85a70e1565e17987600da5c7960e5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54752918"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444052"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Utilidad de línea de comandos Visualizador de simultaneidad (CVCollectionCmd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "54752918"
 Se puede usar la utilidad de la línea de comandos (CVCollectionCmd.exe) del Visualizador de simultaneidad para recopilar seguimientos de la línea de comandos de manera que los pueda ver en el Visualizador de simultaneidad para Visual Studio. Las herramientas se pueden usar en equipos que no tengan instalado Visual Studio.  
   
 > [!NOTE]
->  Desde Visual Studio 2013, el Visualizador de simultaneidad es una extensión opcional. (Anteriormente se incluía en Visual Studio.) Puede descargar las [Herramientas de recolección del visualizador de simultaneidad para Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=49103) desde el Centro de descarga.  
+> Desde Visual Studio 2013, el Visualizador de simultaneidad es una extensión opcional. (Anteriormente se incluía en Visual Studio.) Puede descargar las [Herramientas de recolección del visualizador de simultaneidad para Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=49103) desde el Centro de descarga.  
   
 ## <a name="download-the-concurrency-visualizer-command-line-utility"></a>Descarga de la utilidad de línea de comandos del Visualizador de simultaneidad  
  Para descargar e instalar la utilidad de línea de comandos, vaya a [Herramientas de recolección del visualizador de simultaneidad para Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=49103) y siga las instrucciones. De forma predeterminada, CVCollectionCmd.exe se instala en %ProgramFiles%\Microsoft Concurrency Visualizer Collection Tools\ (%ProgramFiles(x86)%\Microsoft Concurrency Visualizer Collection Tools\ en equipos x64).  
@@ -57,7 +57,7 @@ Se puede usar la utilidad de la línea de comandos (CVCollectionCmd.exe) del Vis
  Si utiliza CVCollectionCmd para recopilar seguimientos y desea personalizar las opciones de configuración, use un archivo de configuración para especificarlos.  
   
 > [!NOTE]
->  Si utiliza Visual Studio para recopilar seguimientos, no modifique directamente el archivo de configuración.  En su lugar, use el cuadro de diálogo [Configuración avanzada](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) para modificar la configuración.  
+> Si utiliza Visual Studio para recopilar seguimientos, no modifique directamente el archivo de configuración.  En su lugar, use el cuadro de diálogo [Configuración avanzada](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) para modificar la configuración.  
   
  Para modificar la configuración de la recolección, cree un archivo de configuración en la máquina donde se ejecutará la utilidad CVCollectionCmd. Puede crear el archivo de configuración desde cero o copiar el archivo de configuración en el equipo que tiene Visual Studio instalado y modificarlo. El archivo se denomina `UserConfig.xml` y se encuentra en la carpeta **Local AppData** . Cuando ejecute la utilidad, use la opción Config con el comando Launch, Attach o Analyze.  En el parámetro asociado a la opción Config, especifique la ruta de acceso del archivo de configuración.  
   
@@ -76,7 +76,7 @@ Se puede usar la utilidad de la línea de comandos (CVCollectionCmd.exe) del Vis
 |MarkerProvider|Especifica un proveedor de marcadores único.|Debe contener estos elementos:<br /><br /> -   Level<br />-   GUID<br />-   Name<br /><br /> Puede contener estos elementos:<br /><br /> -   Categories<br />-   IsEnabled|  
 |Nivel|Establece el nivel de importancia de un MarkerProvider.|-   Low<br />-   Normal<br />-   High<br />-   Critical<br />-   Everything|  
 |GUID|Identificador único global del proveedor de marcadores ETW.|Un GUID.|  
-|nombre|Especifica la descripción del proveedor de marcadores.|Una cadena.|  
+|Name|Especifica la descripción del proveedor de marcadores.|Una cadena.|  
 |Categorías|Especifica las categorías recopiladas por el proveedor de marcadores.|Cadena delimitada por comas de números o intervalos de números.|  
 |IsEnabled|Establece un valor que determina si el proveedor de marcadores está habilitado para la recolección.|-   True<br />-   False|  
 |FilterConfig|Especifica la lista de opciones de configuración de los eventos ETW que se filtran de la recolección.|Puede contener estos elementos:<br /><br /> -   CollectClrEvents<br />-   ClrCollectionOptions<br />-   CollectSampleEvents<br />-   CollectGpuEvents<br />-   CollectFileIO|  

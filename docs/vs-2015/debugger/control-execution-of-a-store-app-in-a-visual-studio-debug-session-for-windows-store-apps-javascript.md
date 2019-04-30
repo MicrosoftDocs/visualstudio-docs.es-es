@@ -14,12 +14,12 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c23bbb74a4f166ebe33cc45f40f42f9847316d30
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9238bd4f42291af23a1279c9caa83f1039c8f249
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043302"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437759"
 ---
 # <a name="control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript"></a>Controlar la ejecución de una aplicación de la Tienda en una sesión de depuración de Visual Studio para aplicaciones de la Tienda Windows (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,9 +33,9 @@ En este inicio rápido se muestra cómo navegar en el depurador de Visual Studio
  **Métodos abreviados de teclado del depurador.** La navegación en el depurador de Visual Studio está optimizada para el mouse y el teclado. Muchos de los pasos de este tema incluyen la tecla de aceleración o la tecla de método abreviado del teclado en un comentario entre paréntesis. Por ejemplo, (teclado: F5) indica que la tecla F5 inicia o continúa la ejecución del depurador.
 
 > [!NOTE]
->  **Patrón de módulo**
+> **Patrón de módulo**
 >
->  A menudo, las aplicaciones de la Tienda Windows usan el *patrón de módulo* de JavaScript para encapsular datos y funciones en una página. El patrón de módulo usa una única clausura, anónima y autoejecutable, para separar la funcionalidad de la página del espacio de nombres global. En este tema, llamamos a esa función el *módulo*.
+> A menudo, las aplicaciones de la Tienda Windows usan el *patrón de módulo* de JavaScript para encapsular datos y funciones en una página. El patrón de módulo usa una única clausura, anónima y autoejecutable, para separar la funcionalidad de la página del espacio de nombres global. En este tema, llamamos a esa función el *módulo*.
 
 ## <a name="in-this-topic"></a>En este tema
  Aprenderá a realizar lo siguiente:

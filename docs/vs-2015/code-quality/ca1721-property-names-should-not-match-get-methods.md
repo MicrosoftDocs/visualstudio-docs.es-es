@@ -15,12 +15,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c9a3dcf6566267cebdfeecb91f57bf139be46de2
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MT
+ms.openlocfilehash: 94d120a7656fc9270543ceeb57063124764c4bca
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "59001962"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431199"
 ---
 # <a name="ca1721-property-names-should-not-match-get-methods"></a>CA1721: Los nombres de propiedades no deben coincidir con los métodos get
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ ms.locfileid: "59001962"
  No suprima las advertencias de esta regla.
 
 > [!NOTE]
->  Si se produce el método Get implementando IExtenderProvider (interfaz), se puede excluir esta advertencia.
+> Si se produce el método Get implementando IExtenderProvider (interfaz), se puede excluir esta advertencia.
 
 ## <a name="example"></a>Ejemplo
  El ejemplo siguiente contiene un método y propiedad que infringen esta regla.

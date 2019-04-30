@@ -14,12 +14,12 @@ caps.latest.revision: 64
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a3ff96a68d66c95d4f1302ba2f419c873e8f077d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8fd8188ef0efbe540e086ca6ce284a49b71444ed
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050217"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433377"
 ---
 # <a name="create-layer-diagrams-from-your-code"></a>Crear diagramas de capas a partir del código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,9 +34,9 @@ Para visualizar la arquitectura de alto nivel, la lógica de su sistema de softw
  Antes de poder crear un diagrama de capas, asegúrese de que la solución tenga un proyecto de modelado. Consulte [crear modelos de proyectos y diagramas UML](../modeling/create-uml-modeling-projects-and-diagrams.md).  
   
 > [!IMPORTANT]
->  No agregue, arrastre ni copie un diagrama de capas de un proyecto de modelado a otro, ni a otro lugar de la solución. Esto conserva las referencias del diagrama original, aunque se cambie el diagrama. Esto también impide que la validación de capas se haga correctamente y es posible que cause otros problemas, como la pérdida de elementos u otros errores al intentar abrir el diagrama.  
+> No agregue, arrastre ni copie un diagrama de capas de un proyecto de modelado a otro, ni a otro lugar de la solución. Esto conserva las referencias del diagrama original, aunque se cambie el diagrama. Esto también impide que la validación de capas se haga correctamente y es posible que cause otros problemas, como la pérdida de elementos u otros errores al intentar abrir el diagrama.  
 >   
->  En su lugar, agregue un nuevo diagrama de capas al proyecto de modelado. Copie los elementos del diagrama de origen en el nuevo diagrama. Guarde el proyecto de modelado y el nuevo diagrama de capas.  
+> En su lugar, agregue un nuevo diagrama de capas al proyecto de modelado. Copie los elementos del diagrama de origen en el nuevo diagrama. Guarde el proyecto de modelado y el nuevo diagrama de capas.  
   
 #### <a name="to-add-a-new-layer-diagram-to-a-modeling-project"></a>Para agregar un nuevo diagrama de capas a un proyecto de modelado  
   
@@ -53,7 +53,7 @@ Para visualizar la arquitectura de alto nivel, la lógica de su sistema de softw
      Elija **crear un nuevo proyecto de modelado** para agregar un nuevo proyecto de modelado a la solución.  
   
     > [!NOTE]
-    >  Los diagramas de capas solo pueden existir dentro de un proyecto de modelado. Sin embargo, puede vincularlos a elementos en cualquier parte de la solución.  
+    > Los diagramas de capas solo pueden existir dentro de un proyecto de modelado. Sin embargo, puede vincularlos a elementos en cualquier parte de la solución.  
   
 5. Asegúrese de guardar tanto el proyecto de modelado como el diagrama de capas.  
   
@@ -106,7 +106,7 @@ Para visualizar la arquitectura de alto nivel, la lógica de su sistema de softw
  Una dependencia existe cuando un artefacto que está asociado a una capa tiene una referencia a un artefacto que está asociado a otra capa. Por ejemplo, una clase de una capa declara una variable que tiene una clase en otra capa. Puede realizar ingeniería inversa de las dependencias existentes en los artefactos vinculados a las capas del diagrama.  
   
 > [!NOTE]
->  No se puede realizar ingeniería inversa en las dependencias de ciertos tipos de artefactos. Por ejemplo, no se va a realizar ingeniería inversa en ninguna dependencia que tenga como origen o destino una capa vinculada a un archivo de texto. Para ver qué artefactos tienen dependencias que puede realizar ingeniería inversa, abra el menú contextual para una o varias capas y, a continuación, elija **ver vínculos**. En **Explorador de capas**, examine el **admite validación** columna. Las dependencias no será de ingeniería inversa para los artefactos para el que esta columna muestra **False**.  
+> No se puede realizar ingeniería inversa en las dependencias de ciertos tipos de artefactos. Por ejemplo, no se va a realizar ingeniería inversa en ninguna dependencia que tenga como origen o destino una capa vinculada a un archivo de texto. Para ver qué artefactos tienen dependencias que puede realizar ingeniería inversa, abra el menú contextual para una o varias capas y, a continuación, elija **ver vínculos**. En **Explorador de capas**, examine el **admite validación** columna. Las dependencias no será de ingeniería inversa para los artefactos para el que esta columna muestra **False**.  
   
 - Seleccione una o varias capas, abra el menú contextual de una capa seleccionada y, a continuación, elija **generar dependencias**.  
   

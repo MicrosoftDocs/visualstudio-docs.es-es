@@ -18,12 +18,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ca7a85bf7ace1f9aeb0e47e031cda5f793df2331
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fa8fbfd8837fb35617b79089fffd11ea3b8d2e93
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046323"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444535"
 ---
 # <a name="refactoring-c"></a>Refactorización (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ La refactorización es el proceso de mejorar el código una vez que se ha escrit
  Si el compilador no tiene una descripción completa del programa, y es posible que el motor de refactorización no pueda actualizar todas las referencias adecuadas, se muestra el cuadro de diálogo de advertencia. Este cuadro de diálogo de advertencia también proporciona una oportunidad para obtener una vista previa del código en el **vista previa de cambios** cuadro de diálogo antes de confirmar los cambios.  
   
 > [!NOTE]
->  Si un método contiene un error de sintaxis (lo que significa que el IDE con un subrayado ondulado rojo), el motor de refactorización no actualizará todas las referencias a un elemento dentro de ese método. El ejemplo siguiente muestra este comportamiento.  
+> Si un método contiene un error de sintaxis (lo que significa que el IDE con un subrayado ondulado rojo), el motor de refactorización no actualizará todas las referencias a un elemento dentro de ese método. El ejemplo siguiente muestra este comportamiento.  
   
  De forma predeterminada, si ejecuta cambia de una operación de refactorización sin vista previa de referencia y se detecta un error de compilación en el programa, a continuación, el entorno de desarrollo muestra este cuadro de diálogo de advertencia.  
   

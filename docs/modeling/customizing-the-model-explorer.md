@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 745fea2ebaba478d9c405ab51db607e5eb025cc7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 65ada4a061fd928a074c9fcdb24fab60a277c457
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60058011"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445841"
 ---
 # <a name="customizing-the-model-explorer"></a>Personalizar el Explorador de modelos
 Puede cambiar la apariencia y comportamiento del explorador para el Diseñador de lenguaje específico de dominio como sigue:
@@ -59,7 +59,7 @@ Puede cambiar la apariencia y comportamiento del explorador para el Diseñador d
     El explorador debería mostrar tres **Actor** nodos que tengan su icono.
 
 > [!NOTE]
->  Si ha establecido un icono de nodo para cualquier elemento que se muestra en el explorador generado, todos los nodos del explorador mostrará el icono. Si no se ha establecido ningún icono, los nodos mostrará el icono predeterminado.
+> Si ha establecido un icono de nodo para cualquier elemento que se muestra en el explorador generado, todos los nodos del explorador mostrará el icono. Si no se ha establecido ningún icono, los nodos mostrará el icono predeterminado.
 
 ## <a name="changing-the-name-displayed-on-an-explorer-node"></a>Cambiar el nombre mostrado en un nodo del explorador
  Puede cambiar cómo se muestran los nombres de los elementos del modelo en el explorador. El siguiente procedimiento muestra cómo mostrar el nombre de la **tarea** que hace referencia un **comentario** en el nodo de comentario.

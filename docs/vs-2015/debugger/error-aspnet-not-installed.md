@@ -21,12 +21,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e60fe59b4d515f37593175f0b76d1562f170abfb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2198ed401f714353be2dd18846dd527cc433e695
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059104"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447312"
 ---
 # <a name="error-aspnet-not-installed"></a>Error: ASP.NET no está instalado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ Este error se produce si [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] no est
      donde *versión* representa el número de versión de .NET Framework instalada en el equipo, por ejemplo, v1.0.370. Puede determinar la versión de .NET framework consultando el `\WINDOWS\Microsoft.NET\Framework` directory.  
   
     > [!NOTE]
-    >  En Windows Server 2003, puede instalar [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] mediante el subprograma **Agregar o quitar programas** del Panel de control.  
+    > En Windows Server 2003, puede instalar [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] mediante el subprograma **Agregar o quitar programas** del Panel de control.  
   
 ## <a name="see-also"></a>Vea también  
  [Depurar aplicaciones web: errores y solución de problemas](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

@@ -11,12 +11,12 @@ caps.latest.revision: 44
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b91f89bc6c3db52526c8c5e64549b08310a17313
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 920b15d1cd4f7ed0ec11614a50f5dd32e050995a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045889"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432407"
 ---
 # <a name="add-custom-architecture-validation-to-layer-diagrams"></a>Agregar validación de arquitectura personalizada a diagramas de capas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,12 +26,12 @@ En Visual Studio, los usuarios pueden validar el código fuente en un proyecto c
  Cuando el usuario selecciona el comando **Validar arquitectura** en un diagrama de capas, se invoca el método de validación estándar, seguido de cualquier extensión de validación que se haya instalado.  
   
 > [!NOTE]
->  La validación en un diagrama de capas no es lo mismo que la validación en diagramas UML. En un diagrama de capas, el propósito principal es comparar el diagrama con el código de programa de otras partes de la solución.  
+> La validación en un diagrama de capas no es lo mismo que la validación en diagramas UML. En un diagrama de capas, el propósito principal es comparar el diagrama con el código de programa de otras partes de la solución.  
   
  Puede empaquetar la extensión de validación de capas en una extensión de integración de Visual Studio (VSIX), que puede distribuir a otros usuarios de Visual Studio. Puede colocar el validador en VSIX por sí solo o puede combinarlo en el mismo VSIX con otras extensiones. Debe escribir el código del validador en su propio proyecto de Visual Studio, no en el mismo proyecto que otras extensiones.  
   
 > [!WARNING]
->  Después de haber creado un proyecto de validación, copie el [código de ejemplo](#example) que aparece al final de este tema y después, edítelo, en función de sus necesidades.  
+> Después de haber creado un proyecto de validación, copie el [código de ejemplo](#example) que aparece al final de este tema y después, edítelo, en función de sus necesidades.  
   
 ## <a name="requirements"></a>Requisitos  
  Vea [Requisitos](../modeling/extend-layer-diagrams.md#prereqs).  
@@ -48,7 +48,7 @@ En Visual Studio, los usuarios pueden validar el código fuente en un proyecto c
     La plantilla crea un proyecto que contiene un pequeño ejemplo.  
   
    > [!WARNING]
-   >  A makethe plantilla funcione correctamente:  
+   > A makethe plantilla funcione correctamente:  
    > 
    > - Edite las llamadas a `LogValidationError` para quitar los argumentos opcionales `errorSourceNodes` y `errorTargetNodes`.  
    >   - Si usa propiedades personalizadas, aplique la actualización mencionada en [agregar propiedades personalizadas a diagramas de capas](../modeling/add-custom-properties-to-layer-diagrams.md).  
@@ -58,7 +58,7 @@ En Visual Studio, los usuarios pueden validar el código fuente en un proyecto c
 4. Para probar la extensión, vea [Depurar la validación de capas](#debugging).  
   
    > [!NOTE]
-   >  Solo se llamará al método en circunstancias concretas y los puntos de interrupción no funcionarán automáticamente. Para obtener más información, vea [Depurar la validación de capas](#debugging).  
+   > Solo se llamará al método en circunstancias concretas y los puntos de interrupción no funcionarán automáticamente. Para obtener más información, vea [Depurar la validación de capas](#debugging).  
   
 5. Para instalar la extensión en la instancia principal de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]o en otro equipo, busque el archivo **.vsix** en *bin\\*. Cópielo en el equipo donde desea instalarlo y, a continuación, haga doble clic en él. Para desinstalarla, use **Extensiones y actualizaciones** en el menú **Herramientas** .  
   
@@ -115,7 +115,7 @@ En Visual Studio, los usuarios pueden validar el código fuente en un proyecto c
 7. Para probar la extensión, vea [Depurar la validación de capas](#debugging).  
   
     > [!NOTE]
-    >  Solo se llamará al método en circunstancias concretas y los puntos de interrupción no funcionarán automáticamente. Para obtener más información, vea [Depurar la validación de capas](#debugging).  
+    > Solo se llamará al método en circunstancias concretas y los puntos de interrupción no funcionarán automáticamente. Para obtener más información, vea [Depurar la validación de capas](#debugging).  
   
 8. Para instalar VSIX en la instancia principal de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]o en otro equipo, busque el archivo **.vsix** en el directorio **bin** del proyecto de VSIX. Cópielo en el equipo donde desea instalar VSIX. En el Explorador de Windows, haga doble clic en el archivo VSIX. (Explorador de archivos in Windows 8).  
   
@@ -147,7 +147,7 @@ En Visual Studio, los usuarios pueden validar el código fuente en un proyecto c
 - Al detectar un error, puede notificarlo mediante `LogValidationError()`.  
   
   > [!WARNING]
-  >  No use los parámetros opcionales de `LogValidationError`.  
+  > No use los parámetros opcionales de `LogValidationError`.  
   
   Cuando el usuario invoca el comando de menú **Validar arquitectura** , el sistema en tiempo de ejecución de capas analiza las capas y sus artefactos para generar un gráfico. El gráfico tiene cuatro partes:  
   
@@ -162,7 +162,7 @@ En Visual Studio, los usuarios pueden validar el código fuente en un proyecto c
   Cuando se ha construido el gráfico, se llama al método de validación estándar. Una vez completado, se llama en un orden no especificado a los métodos de validación de extensiones instalados. El gráfico se pasa a cada método de `ValidateArchitecture` , que puede examinar el gráfico y notificar los errores que encuentre.  
   
 > [!NOTE]
->  Esto no es igual que el proceso de validación que se aplica a los diagramas UML y no es igual que el proceso de validación que se puede usar en los lenguajes específicos del dominio.  
+> Esto no es igual que el proceso de validación que se aplica a los diagramas UML y no es igual que el proceso de validación que se puede usar en los lenguajes específicos del dominio.  
   
  Los métodos de validación no deben cambiar el modelo de capas ni el código que se valida.  
   

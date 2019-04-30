@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Implementar manualmente una aplicación ClickOnce | Microsoft Docs'
+title: 'Tutorial: Implementar manualmente una aplicación ClickOnce | Documentos de Microsoft'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39d482b6e2b0e2cdd9fce553a1cb11b1b27e9467
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 60173bd8a48b067757bbccfad42a2feaf5633082
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628109"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63405793"
 ---
 # <a name="walkthrough-manually-deploy-a-clickonce-application"></a>Tutorial: Implementar manualmente una aplicación ClickOnce
 Si no se puede usar Visual Studio para implementar su [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación, o si necesita usar características avanzadas de implementación, como la implementación de aplicaciones de confianza, debe usar el *Mage.exe* herramienta de línea de comandos para crear su [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifiestos. En este tutorial se describe cómo crear un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implementación mediante el uso de la versión de línea de comandos (*Mage.exe*) o la versión gráfica (*MageUI.exe*) de la generación de manifiestos y Herramienta de edición.
@@ -43,7 +43,7 @@ Si no se puede usar Visual Studio para implementar su [!INCLUDE[ndptecclick](../
 
 - Determinar cómo se distribuirá la implementación.
 
-   Las opciones de distribución incluyen: Web, recurso compartido de archivos o CD. Para obtener más información, consulta [ClickOnce Security and Deployment](../deployment/clickonce-security-and-deployment.md).
+   Las opciones de distribución se incluyen: Web, recurso compartido de archivos o CD. Para obtener más información, consulta [ClickOnce Security and Deployment](../deployment/clickonce-security-and-deployment.md).
 
 - Determinar si la aplicación requiere un nivel elevado de confianza.
 
@@ -54,7 +54,7 @@ Si no se puede usar Visual Studio para implementar su [!INCLUDE[ndptecclick](../
    Debe firmar la implementación con un certificado Authenticode. Puede generar un certificado de prueba mediante el uso de Visual Studio, *MageUI.exe*, o *MakeCert.exe* y *Pvk2Pfx.exe* herramientas, o bien puede obtener un certificado de un certificado Entidad emisora (CA). Si decide usar la implementación de aplicaciones de confianza, también debe realizar una instalación única del certificado en todos los equipos cliente. Para obtener más información, consulta [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).
 
   > [!NOTE]
-  >  También puede firmar la implementación con un certificado CNG que puede obtener de una entidad de certificación.
+  > También puede firmar la implementación con un certificado CNG que puede obtener de una entidad de certificación.
 
 - Asegúrese de que la aplicación no tiene un manifiesto con información de UAC.
 
@@ -73,7 +73,7 @@ Si no se puede usar Visual Studio para implementar su [!INCLUDE[ndptecclick](../
 2. En el directorio de implementación que acaba de crear, cree un subdirectorio de versión. Si se trata de la primera vez que va a implementar la aplicación, el nombre del subdirectorio de versión **1.0.0.0**.
 
    > [!NOTE]
-   >  La versión de la implementación puede ser distinta de la versión de la aplicación.
+   > La versión de la implementación puede ser distinta de la versión de la aplicación.
 
 3. Copie todos los archivos de aplicación en el subdirectorio de versión, incluidos los archivos ejecutables, ensamblados, recursos y archivos de datos. Si es necesario, puede crear subdirectorios adicionales que contienen archivos adicionales.
 
@@ -86,7 +86,7 @@ Si no se puede usar Visual Studio para implementar su [!INCLUDE[ndptecclick](../
    ```
 
    > [!NOTE]
-   >  No olvide incluir el punto (.) después de la `-FromDirectory` opción, que indica el directorio actual. Si no incluye el punto, debe especificar la ruta de acceso a los archivos de aplicación.
+   > No olvide incluir el punto (.) después de la `-FromDirectory` opción, que indica el directorio actual. Si no incluye el punto, debe especificar la ruta de acceso a los archivos de aplicación.
 
 6. Inicie sesión en el manifiesto de aplicación con el certificado Authenticode. Reemplace *mycert.pfx* con la ruta de acceso al archivo de certificado. Reemplace *passwd* con la contraseña para el archivo de certificado.
 
@@ -121,7 +121,7 @@ Si no se puede usar Visual Studio para implementar su [!INCLUDE[ndptecclick](../
 2. En el directorio de implementación que acaba de crear, cree un subdirectorio de versión. Si se trata de la primera vez que va a implementar la aplicación, el nombre del subdirectorio de versión **1.0.0.0**.
 
    > [!NOTE]
-   >  La versión de la implementación probablemente es distinta de la versión de la aplicación.
+   > La versión de la implementación probablemente es distinta de la versión de la aplicación.
 
 3. Copie todos los archivos de aplicación en el subdirectorio de versión, incluidos los archivos ejecutables, ensamblados, recursos y archivos de datos. Si es necesario, puede crear subdirectorios adicionales que contienen archivos adicionales.
 
@@ -149,7 +149,7 @@ Si no se puede usar Visual Studio para implementar su [!INCLUDE[ndptecclick](../
 
 13. Si tiene un certificado almacenado como un archivo en el sistema de archivos, use el **firmar con archivo de certificado** opción y seleccione el certificado en el sistema de archivos mediante el uso de los puntos suspensivos (**...** ) botón. A continuación, escriba la contraseña del certificado.
 
-     o bien
+     -o bien-
 
      Si el certificado se guarda en un almacén de certificados accesible desde el equipo, seleccione el **firmar con certificado almacenado** opción y seleccione el certificado de la lista proporcionada.
 
@@ -177,7 +177,7 @@ Si no se puede usar Visual Studio para implementar su [!INCLUDE[ndptecclick](../
 
 25. Si tiene un certificado almacenado como un archivo en el sistema de archivos, use el **firmar con archivo de certificado** opción y seleccione el certificado en el sistema de archivos mediante el uso de los puntos suspensivos (**...** ) botón. A continuación, escriba la contraseña del certificado.
 
-     o bien
+     -o bien-
 
      Si el certificado se guarda en un almacén de certificados accesible desde el equipo, seleccione el **firmar con certificado almacenado** opción y seleccione el certificado de la lista proporcionada.
 

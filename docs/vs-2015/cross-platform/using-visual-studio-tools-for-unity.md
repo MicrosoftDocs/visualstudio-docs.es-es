@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: eed341b5ae43f52e7df35d820012e760166e096f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cd05f5ebad1a07e818e377b90aeb5e137f296cd9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60073437"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443360"
 ---
 # <a name="using-visual-studio-tools-for-unity"></a>Uso de Visual Studio Tools para Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -117,7 +117,7 @@ En esta sección aprenderá a utilizar las características de productividad e i
      ![Este icono muestra que VSTU está conectado a Unity.](../cross-platform/media/vstu-connection-connected.png "vstu_connection_connected")  
   
 > [!TIP]
->  Si el icono con forma de enchufe muestra una marca de verificación, ya está conectado a una instancia de Unity.  
+> Si el icono con forma de enchufe muestra una marca de verificación, ya está conectado a una instancia de Unity.  
   
  En el cuadro de diálogo **Seleccionar instancia de Unity** se muestra información sobre cada instancia de Unity a la que puede conectarse.  
   
@@ -136,7 +136,7 @@ En esta sección aprenderá a utilizar las características de productividad e i
  El número de puerto del socket UDP a través del cual se está comunicando esta instancia de Unity.  
   
 > [!IMPORTANT]
->  Puesto que Visual Studio Tools para de Unity y la instancia de Unity se están comunicando a través de un socket de red UDP, el firewall podría preguntarle al respecto. Si esto sucede, tendrá que autorizar la conexión para que VSTU y Unity puedan comunicarse.  
+> Puesto que Visual Studio Tools para de Unity y la instancia de Unity se están comunicando a través de un socket de red UDP, el firewall podría preguntarle al respecto. Si esto sucede, tendrá que autorizar la conexión para que VSTU y Unity puedan comunicarse.  
   
 ### <a name="debugging-your-project-in-a-unity-player"></a> Depuración del proyecto en un Reproductor de Unity  
  Puede conectar Visual Studio Tools para Unity directamente a la aplicación de Unity que se está ejecutando en un reproductor independiente si no está ejecutando el Editor de Unity o para depurar problemas específicos de la plataforma.  
@@ -154,7 +154,7 @@ En esta sección aprenderá a utilizar las características de productividad e i
 - En el menú contextual del Reproductor web de Unity, seleccione **Canal de versión** y asegúrese de que esté habilitada la opción **Desarrollo**.  
   
   > [!IMPORTANT]
-  >  En Unity 4.2 y versiones posteriores, el elemento de menú contextual **Canal de versión** solo está disponible en el menú contextual del Reproductor web cuando se pulsa la tecla **Alt** al abrirse el menú contextual. Si el Reproductor de Web se ejecuta en Mac OS X, pulse la tecla **Opción** en su lugar.  
+  > En Unity 4.2 y versiones posteriores, el elemento de menú contextual **Canal de versión** solo está disponible en el menú contextual del Reproductor web cuando se pulsa la tecla **Alt** al abrirse el menú contextual. Si el Reproductor de Web se ejecuta en Mac OS X, pulse la tecla **Opción** en su lugar.  
   
   Por último, asegúrese de que está conectado a la instancia de Unity que desea depurar. Para obtener información sobre cómo hacerlo, vea la sección [Conectar Visual Studio a Unity](#connecting-visual-studio-to-unity).  
   
@@ -162,7 +162,7 @@ En esta sección aprenderá a utilizar las características de productividad e i
  Muchos desarrolladores de Unity están escribiendo componentes de código como archivos DLL externos para que la funcionalidad que desarrollan pueda compartirse fácilmente con otros proyectos. Visual Studio Tools para Unity facilita la depuración sin problemas del código de estos archivos DLL con otro código de su proyecto de Unity.  
   
 > [!NOTE]
->  En este momento, Visual Studio Tools para Unity solo admite archivos DLL administrados. No admite la depuración de archivos DLL de código nativo, como los escritos en C++.  
+> En este momento, Visual Studio Tools para Unity solo admite archivos DLL administrados. No admite la depuración de archivos DLL de código nativo, como los escritos en C++.  
   
  Tenga en cuenta que el escenario descrito aquí supone que tiene el código fuente, es decir, que está desarrollando o reutilizando su propio código o que tiene el código fuente de una biblioteca de terceros y planea implementarlo en su proyecto de Unity como un archivo DLL. Este escenario no describe la depuración de un archivo DLL del que usted no dispone el código fuente.  
   

@@ -19,12 +19,12 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 400e16918f01697eecce2af608ba89e041ca6449
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c7cd8a48092c39048d52a7ebe9cd27163ba32110
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065394"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424789"
 ---
 # <a name="walkthrough-displaying-related-data-in-a-wpf-application"></a>Tutorial: Mostrar datos relacionados en una aplicación WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -167,7 +167,7 @@ En este tutorial, creará una aplicación WPF que muestra los datos de tablas de
 1. En el **orígenes de datos** ventana, busque la **SalesOrderDetails** nodo que es un elemento secundario de la **SalesOrderHeaders** nodo.  
   
    > [!NOTE]
-   >  También hay un **SalesOrderDetails** nodo del mismo nivel de la **SalesOrderHeaders** nodo. Asegúrese de que selecciona el nodo secundario de la **SalesOrderHeaders** nodo.  
+   > También hay un **SalesOrderDetails** nodo del mismo nivel de la **SalesOrderHeaders** nodo. Asegúrese de que selecciona el nodo secundario de la **SalesOrderHeaders** nodo.  
   
 2. Expanda el elemento secundario **SalesOrderDetails** nodo.  
   

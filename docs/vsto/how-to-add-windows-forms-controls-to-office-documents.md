@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 849bffa36050970e164083f7bb90353f18cff01a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9241cb34ca380b2efe0b3c2ceb7f5d11376bef2f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60047116"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427489"
 ---
 # <a name="how-to-add-windows-forms-controls-to-office-documents"></a>Procedimiento Agregar controles de formularios Windows Forms a documentos de Office
   Puede agregar controles de Windows Forms a documentos de Microsoft Office Excel y Microsoft Office Word en tiempo de diseño en proyectos de nivel de documento. En tiempo de ejecución, puede agregar controles en personalizaciones de nivel de documento y complementos de VSTO. Por ejemplo, puede agregar un control <xref:Microsoft.Office.Tools.Excel.Controls.ComboBox> a la hoja de cálculo para que los usuarios puedan seleccionar una de las opciones de una lista.
@@ -49,7 +49,7 @@ ms.locfileid: "60047116"
 2. En el **controles comunes** pestaña de la **cuadro de herramientas**, haga clic en el control que desea agregar y arrástrelo al documento.
 
     > [!NOTE]
-    >  Cuando seleccione un control en Excel, verá **=EMBED("WinForms.Control.Host","")** en la **Barra de fórmulas**. Este texto es necesario y no se debe eliminar.
+    > Cuando seleccione un control en Excel, verá **=EMBED("WinForms.Control.Host","")** en la **Barra de fórmulas**. Este texto es necesario y no se debe eliminar.
 
 ### <a name="to-draw-a-windows-forms-control-on-the-document"></a>Para dibujar un control de Windows Forms en el documento
 
@@ -62,7 +62,7 @@ ms.locfileid: "60047116"
      El control se agregará al documento con la ubicación y el tamaño especificados.
 
     > [!NOTE]
-    >  Cuando se selecciona un control en Excel, verá **=EMBED("WinForms.Control.Host","")** en el **barra de fórmulas**. Este texto es necesario y no se debe eliminar.
+    > Cuando se selecciona un control en Excel, verá **=EMBED("WinForms.Control.Host","")** en el **barra de fórmulas**. Este texto es necesario y no se debe eliminar.
 
 ### <a name="to-add-a-windows-forms-control-to-the-document-by-single-clicking-the-control"></a>Para agregar un control de Windows Forms mediante un clic en el control
 
@@ -75,7 +75,7 @@ ms.locfileid: "60047116"
      El control se agrega al documento con el tamaño predeterminado.
 
     > [!NOTE]
-    >  Cuando seleccione un control en Excel, verá **=EMBED("WinForms.Control.Host","")** en la **Barra de fórmulas**. Este texto es necesario y no se debe eliminar.
+    > Cuando seleccione un control en Excel, verá **=EMBED("WinForms.Control.Host","")** en la **Barra de fórmulas**. Este texto es necesario y no se debe eliminar.
 
 ### <a name="to-add-a-windows-forms-control-to-the-document-by-double-clicking-the-control"></a>Para agregar un control de Windows Forms al documento mediante un doble clic en el control
 
@@ -86,7 +86,7 @@ ms.locfileid: "60047116"
      El control se agrega al documento en el centro del documento o del panel activo.
 
     > [!NOTE]
-    >  Cuando seleccione un control en Excel, verá **=EMBED("WinForms.Control.Host","")** en la **Barra de fórmulas**. Este texto es necesario y no se debe eliminar.
+    > Cuando seleccione un control en Excel, verá **=EMBED("WinForms.Control.Host","")** en la **Barra de fórmulas**. Este texto es necesario y no se debe eliminar.
 
 ### <a name="to-add-a-windows-forms-control-to-the-document-by-pressing-the-enter-key"></a>Para agregar un control de Windows Forms al documento presionando la tecla ENTRAR
 
@@ -97,7 +97,7 @@ ms.locfileid: "60047116"
      El control se agrega al documento en el centro del documento o del panel activo.
 
     > [!NOTE]
-    >  Cuando seleccione un control en Excel, verá **=EMBED("WinForms.Control.Host","")** en la **Barra de fórmulas**. Este texto es necesario y no se debe eliminar.
+    > Cuando seleccione un control en Excel, verá **=EMBED("WinForms.Control.Host","")** en la **Barra de fórmulas**. Este texto es necesario y no se debe eliminar.
 
 ## <a name="runtimedoclevel"></a> Agregar controles en tiempo de ejecución en los proyectos de nivel de documento
  Puede agregar mediante programación controles de formularios Windows Forms a un documento en tiempo de ejecución. En Word, use los métodos de la propiedad <xref:Microsoft.Office.Tools.Word.DocumentBase.Controls%2A> de la clase `ThisDocument`. En Excel, use los métodos de la <xref:Microsoft.Office.Tools.Excel.WorksheetBase.Controls%2A> propiedad de un `Sheet` *n* clase. Cada método tiene varias sobrecargas que permiten especificar la ubicación del control de maneras diferentes.
@@ -125,7 +125,7 @@ ms.locfileid: "60047116"
 1. Usar un método que tiene el nombre Add\<*clase control*> (donde *clase del control* es el nombre de clase del control de Windows Forms que desea agregar, como <xref:Microsoft.Office.Tools.Word.ControlExtensions.AddButton%2A>).
 
     > [!NOTE]
-    >  En el complemento de VSTO, los proyectos que tienen como destino el [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o versiones posteriores, debe agregar una referencia a la *Microsoft.Office.Tools.Excel.v4.0.Utilities.dll* o *Microsoft.Office.Tools.Word.v4.0.Utilities.dll* ensamblado antes de poder acceder el agregar\<*clase control*> métodos.
+    > En el complemento de VSTO, los proyectos que tienen como destino el [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o versiones posteriores, debe agregar una referencia a la *Microsoft.Office.Tools.Excel.v4.0.Utilities.dll* o *Microsoft.Office.Tools.Word.v4.0.Utilities.dll* ensamblado antes de poder acceder el agregar\<*clase control*> métodos.
 
      En el siguiente ejemplo de código se muestra cómo agregar un <xref:Microsoft.Office.Tools.Word.Controls.Button> al primer párrafo del documento activo usando un complemento de VSTO de Word.
 

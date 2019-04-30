@@ -9,12 +9,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 318caec1f96bc0b69a6fe9540231608a8636e107
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 07e5c91038013f51199212a3215490bbfdf34257
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099506"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442623"
 ---
 # <a name="step-2-create-a-random-addition-problem"></a>Paso 2: creación de un problema de suma aleatoria
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60099506"
 En la segunda parte del tutorial, agregará problemas de matemáticas basados en números aleatorios para crear una prueba desafiante. También puede crear un método denominado `StartTheQuiz()` que establezca los problemas e inicie el temporizador de cuenta atrás. Más adelante en este tutorial, agregará los problemas de resta, multiplicación y división.  
   
 > [!NOTE]
->  Este tema forma parte de una serie de tutoriales sobre conceptos de codificación básicos. Para obtener información general sobre el tutorial, vea [Tutorial 2: Crear una prueba matemática cronometrada](../ide/tutorial-2-create-a-timed-math-quiz.md).  
+> Este tema forma parte de una serie de tutoriales sobre conceptos de codificación básicos. Para obtener información general sobre el tutorial, vea [Tutorial 2: Crear una prueba matemática cronometrada](../ide/tutorial-2-create-a-timed-math-quiz.md).  
   
 ### <a name="to-create-a-random-addition-problem"></a>Para crear un problema de suma aleatoria  
   
@@ -46,7 +46,7 @@ En la segunda parte del tutorial, agregará problemas de matemáticas basados en
 4. Agregue dos variables de entero al formulario y asígneles los nombres **addend1** y **addend2**.  
   
     > [!NOTE]
-    >  Una variable de entero se conoce como int en C# o integer en Visual Basic. Este tipo de variable almacena un número positivo o negativo comprendido entre -2147483648 y 2147483647, y solo puede almacenar números enteros, no decimales.  
+    > Una variable de entero se conoce como int en C# o integer en Visual Basic. Este tipo de variable almacena un número positivo o negativo comprendido entre -2147483648 y 2147483647, y solo puede almacenar números enteros, no decimales.  
   
      Para agregar una variable de entero se utiliza una sintaxis similar a la que usó para agregar el objeto `Random`, tal y como se muestra en el código siguiente.  
   
@@ -66,7 +66,7 @@ Método Next
      Cuando escribe un punto después de un objeto, IntelliSense muestra una lista de los miembros del objeto, como las propiedades, métodos y eventos.  
   
     > [!NOTE]
-    >  Cuando use el método `Next()` con el objeto `Random`, por ejemplo cuando llame a `randomizer.Next(50)`, obtendrá un número aleatorio menor que 50 (del 0 al 49). En este ejemplo, se llamó a `randomizer.Next(51)`. Se ha utilizado 51 y no 50 para que los dos números aleatorios sumen una respuesta que esté comprendida entre 0 y 100. Si pasa 50 al método `Next()`, este elige un número del 0 al 49, de modo que la respuesta mayor posible es 98, y no 100. Después de ejecutarse las dos primeras instrucciones del método, cada una de las dos variables de entero, `addend1` y `addend2`, contiene un número aleatorio del 0 al 50. Esta captura de pantalla muestra el código de Visual C#, pero IntelliSense funciona de la misma manera con Visual Basic.  
+    > Cuando use el método `Next()` con el objeto `Random`, por ejemplo cuando llame a `randomizer.Next(50)`, obtendrá un número aleatorio menor que 50 (del 0 al 49). En este ejemplo, se llamó a `randomizer.Next(51)`. Se ha utilizado 51 y no 50 para que los dos números aleatorios sumen una respuesta que esté comprendida entre 0 y 100. Si pasa 50 al método `Next()`, este elige un número del 0 al 49, de modo que la respuesta mayor posible es 98, y no 100. Después de ejecutarse las dos primeras instrucciones del método, cada una de las dos variables de entero, `addend1` y `addend2`, contiene un número aleatorio del 0 al 50. Esta captura de pantalla muestra el código de Visual C#, pero IntelliSense funciona de la misma manera con Visual Basic.  
   
      Fijémonos con más atención en estas instrucciones.  
   
