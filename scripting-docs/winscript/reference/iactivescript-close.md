@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 53b71471ada55751de301391fdcc70387c1bb6c2
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58157054"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62935684"
 ---
 # <a name="iactivescriptclose"></a>IActiveScript::Close
 Hace que el motor de scripting abandonar cualquier script cargado actualmente, pierden su estado y liberar los punteros de interfaz que tiene a otros objetos, escribir, por tanto, un estado cerrado. Receptores de eventos, el texto de secuencia de comandos ejecutada inmediatamente y llamadas de macro que ya están en curso se completan antes de los cambios de estado (use [IActiveScript:: Interruptscriptthread](../../winscript/reference/iactivescript-interruptscriptthread.md) para cancelar un subproceso en ejecución del script). Este método debe llamarse por el host crear antes de que se libere la interfaz para evitar problemas de la referencia circular.  

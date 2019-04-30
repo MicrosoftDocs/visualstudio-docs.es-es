@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8418faf7fb4eb55a0b20a33aaaa2909e07ff7a78
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909612"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949862"
 ---
 # <a name="confirm-activity-designer"></a>Diseñador de actividades Confirm
 

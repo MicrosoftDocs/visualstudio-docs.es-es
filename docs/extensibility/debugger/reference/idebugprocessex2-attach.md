@@ -1,51 +1,52 @@
 ---
 title: IDebugProcessEx2::Attach | Microsoft Docs
-ms.date: 11/04/2016
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
 ms.topic: reference
 f1_keywords:
 - IDebugProcessEx2::Attach
 helpviewer_keywords:
 - IDebugProcessEx2::Attach method
 ms.assetid: f3334ed7-39bf-4d02-a338-36f567b9b287
-author: gregvanl
+caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.workload:
-- vssdk
 ms.openlocfilehash: 0a39f674744d0b1e97e815d33c2d9564f4a39c0d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56698617"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62917586"
 ---
 # <a name="idebugprocessex2attach"></a>IDebugProcessEx2::Attach
-Este método informa al proceso que una sesión es ahora el proceso de depuración.
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-## <a name="syntax"></a>Sintaxis
-
-```cpp
-HRESULT Attach( 
-   IDebugSession2* pSession
-);
-```
-
-```csharp
-int Attach(
-   IDebugSession2 pSession
-);
-```
-
-#### <a name="parameters"></a>Parámetros
- `pSession`
-
- [in] Un valor que identifica de forma única la sesión que se asocia a este proceso.
-
-## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
-
-## <a name="remarks"></a>Comentarios
- La interfaz pasa `pSession` se trata solo como una cookie, un valor que identifica el Administrador de depuración de sesión asocia a este proceso; ninguno de los métodos en la interfaz proporcionado son funcional.
-
-## <a name="see-also"></a>Vea también
-- [IDebugProcessEx2](../../../extensibility/debugger/reference/idebugprocessex2.md)
+Este método informa al proceso que una sesión es ahora el proceso de depuración.  
+  
+## <a name="syntax"></a>Sintaxis  
+  
+```cpp#  
+HRESULT Attach(   
+   IDebugSession2* pSession  
+);  
+```  
+  
+```csharp  
+int Attach(  
+   IDebugSession2 pSession  
+);  
+```  
+  
+#### <a name="parameters"></a>Parámetros  
+ `pSession`  
+ [in] Un valor que identifica de forma única la sesión que se asocia a este proceso.  
+  
+## <a name="return-value"></a>Valor devuelto  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+  
+## <a name="remarks"></a>Comentarios  
+ La interfaz pasa `pSession` se trata solo como una cookie, un valor que identifica el Administrador de depuración de sesión asocia a este proceso; ninguno de los métodos en la interfaz proporcionado son funcional.  
+  
+## <a name="see-also"></a>Vea también  
+ [IDebugProcessEx2](../../../extensibility/debugger/reference/idebugprocessex2.md)

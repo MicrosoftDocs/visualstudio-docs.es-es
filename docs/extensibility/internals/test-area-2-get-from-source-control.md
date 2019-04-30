@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 0d7942aa658208143aea3c3ae3a09eb677568f17
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60067188"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62908914"
 ---
 # <a name="test-area-2-get-from-source-control"></a>Área de prueba 2: Obtención desde el control de código fuente
 Esta área de prueba trata los casos de prueba para recuperar los elementos del almacén de versiones mediante el comando Get. Estos casos de prueba se pueden aplicar a ambos local y a los proyectos Web.

@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 0ab98719f13ed787947a5e1d8a06d2080718eb0e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614835"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62907556"
 ---
 # <a name="what39s-new-in-the-source-control-plug-in-api-version-12"></a>¿Qué&#39;s nuevo en el origen de controlar la API del complemento versión 1.2
 En esta sección destaca la funcionalidad de control de código fuente avanzados en la API de complemento de Control de origen de la versión 1.2. A continuación enumeran las nuevas características en la versión 1.2:

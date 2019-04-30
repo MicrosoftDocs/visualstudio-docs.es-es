@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 5b100ccac042aeed3ed8211c56fc1129311d850b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723180"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62889858"
 ---
 # <a name="expression-evaluation-visual-studio-debugging-sdk"></a>Evaluación de expresiones (depuración de SDK de Visual Studio)
 Modo de interrupción, el IDE debe evaluar las expresiones simples que implican varias variables de programa. Para llevar a cabo su evaluación, el motor de depuración (DE) debe analizar y evaluar una expresión que se escriban en una de las ventanas del IDE.

@@ -12,11 +12,11 @@ author: steved0x
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 9cb5185bdef35d383e92082160e9f4b1dda5451f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58997266"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62937102"
 ---
 # <a name="state-activity-designer"></a>Diseñador de actividad State
 <xref:System.Activities.Statements.State> representa un estado en el que una máquina de estados puede estar.  

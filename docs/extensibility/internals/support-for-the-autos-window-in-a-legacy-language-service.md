@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7fdff9237ef30884d5bfaad424edfffec62a8f58
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56613263"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62908416"
 ---
 # <a name="support-for-the-autos-window-in-a-legacy-language-service"></a>Compatibilidad con la ventana Automático en un servicio de lenguaje heredado
 El **automático** ventana muestra expresiones como las variables y parámetros que están en ámbito cuando el programa que se está depurando está en pausa (ya sea debido a un punto de interrupción o una excepción). Las expresiones pueden incluir variables locales o globales y los parámetros que se han cambiado en el ámbito local. El **automático** ventana también puede incluir las creaciones de instancias de una clase, estructura o algún otro tipo. Todo lo que un evaluador de expresiones puede evaluar potencialmente puede mostrarse en el **automático** ventana.

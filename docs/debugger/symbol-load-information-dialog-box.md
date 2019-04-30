@@ -1,5 +1,5 @@
 ---
-title: Cuadro de diálogo de información de carga de símbolos | Microsoft Docs
+title: Cuadro de diálogo de información de carga de símbolos | Documentos de Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5606101d4c4a790db57f2a5b051bc128ea50c684
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702764"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62901933"
 ---
 # <a name="symbol-load-information-dialog-box"></a>Información de carga de símbolos (Cuadro de diálogo)
 El cuadro de diálogo **Información de carga de símbolos** se abre al hacer clic con el botón derecho en la ventana **Módulos** y elegir **Información de carga de símbolos**.

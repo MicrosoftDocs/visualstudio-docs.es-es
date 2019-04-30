@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ce283e5cbab30b612a02ec447113ad11e206a7f3
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59655379"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62895875"
 ---
 # <a name="graphics-frame-validation"></a>Validación de fotogramas de gráficos
 <!-- VERSIONLESS -->
@@ -28,7 +28,7 @@ Haga clic en el **ejecutar validación** situado en la esquina superior izquierd
 | **Columna** | **Descripción** |
 |------------| - |
 | Id. de evento | Id. que se asigna a una entrada en el [lista de eventos](graphics-event-list.md) ventana. |
-| Gravedad | Daños, Error, advertencia, información o mensajes. |
+| Severity | Daños, Error, advertencia, información o mensajes. |
 | Categoría | Aplicación definida, vario, inicialización, limpieza, compilación, creación de estado, configuración de estado, obteniendo el estado, ejecución, manipulación de recursos, sombreador, redundante o sin usar. |
 | Mensaje | El mensaje asociado al evento. |
 | evento | El evento asociado al error o advertencia. |

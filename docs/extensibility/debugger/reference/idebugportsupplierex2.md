@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a87ec52c3c7929d32da2b568b8e2735efc6319d8
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56701412"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62917939"
 ---
 # <a name="idebugportsupplierex2"></a>IDebugPortSupplierEx2
 Proporciona compatibilidad para un proveedor de puerto seleccionar e interactuar con un servidor de núcleo.

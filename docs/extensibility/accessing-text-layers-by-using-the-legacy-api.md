@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a0ba962ba4c18773b5c85480bce62ab728cab307
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095235"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62892240"
 ---
 # <a name="access-text-layers-by-using-the-legacy-api"></a>Niveles de acceso a texto mediante el uso de la API heredada
 Una capa de texto suele encapsula algún aspecto del diseño de texto. Por ejemplo, una capa de "una función de una vez" oculta el texto antes y después de una función que contiene el símbolo de intercalación (punto de inserción de texto).

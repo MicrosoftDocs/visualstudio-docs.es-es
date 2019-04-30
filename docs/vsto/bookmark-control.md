@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 00271d77cb5b172fbbbf02682eb7e23c6246ca23
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064016"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62939403"
 ---
 # <a name="bookmark-control"></a>Bookmark (control)
   El control <xref:Microsoft.Office.Tools.Word.Bookmark> es un marcador que tiene un nombre único, expone eventos y se puede enlazar a datos. El marcador se puede usar como marcador de posición para marcar un elemento o una ubicación en un documento de Microsoft Office Word. El control <xref:Microsoft.Office.Tools.Word.Bookmark> s una combinación de un objeto <xref:Microsoft.Office.Interop.Word.Bookmark> y un objeto <xref:Microsoft.Office.Interop.Word.Range> .
@@ -59,7 +59,7 @@ ms.locfileid: "60064016"
 
  En la tabla siguiente se muestra cómo dos marcadores superpuestos comparten se comparte entre dos marcadores superpuestos:
 
-|Marcador|Texto|
+|Marcador|Text|
 |--------------|----------|
 |Marcadores superpuestos|[this is {sample] text.}|
 |Bookmark1|This is sample|
@@ -67,7 +67,7 @@ ms.locfileid: "60064016"
 
  Si asigna el nuevo texto "This is replacement." al marcador Bookmark1, los marcadores no se superponen y Bookmark2 conservará solo el texto que no era originalmente parte del marcador Bookmark1.
 
-|Marcador|Texto|
+|Marcador|Text|
 |--------------|----------|
 |Dos marcadores independientes|[this is replacement]{ text.}|
 |Bookmark1|This is replacement|
@@ -77,7 +77,7 @@ Si cambia el texto de un marcador que contiene otro marcador, el marcador intern
 
 En la tabla siguiente se muestra cómo dos marcadores superpuestos comparten comparten un marcador que se encuentra en otro marcador:
 
-|Marcador|Texto|
+|Marcador|Text|
 |--------------|----------|
 |Marcadores superpuestos|[this is {sample} text.]|
 |Bookmark1|This is sample text.|
@@ -85,7 +85,7 @@ En la tabla siguiente se muestra cómo dos marcadores superpuestos comparten com
 
  Si asigna el nuevo texto "This is replacement." al marcador Bookmark1, los marcadores ya no se superpondrán y Bookmark2 se convertirá en un marcador vacío situado al final de Bookmark1.
 
-|Marcador|Texto|
+|Marcador|Text|
 |--------------|----------|
 |Dos marcadores independientes|[es sustituto].{}|
 |Bookmark1|This is replacement.|

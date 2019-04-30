@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8a243033bf5831952d83fdf688302651e02b76b7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54988147"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62903034"
 ---
 # <a name="how-to-unblock-the-download-of-the-remote-tools-on-windows-server"></a>Procedimiento Desbloquear la descarga de las herramientas remotas en Windows Server
 

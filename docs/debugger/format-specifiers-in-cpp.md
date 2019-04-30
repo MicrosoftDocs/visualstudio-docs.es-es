@@ -25,13 +25,13 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 8e6be79bc38e9283493bf5b7428a21c17cf9d3e0
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57870598"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62896625"
 ---
-# <a name="format-specifiers-for-c-in-the-visual-studio-debugger"></a>Especificadores de formato de C++ en el depurador de Visual Studio
+# <a name="format-specifiers-for-c-in-the-visual-studio-debugger"></a>Para los especificadores de formato C++ en el depurador de Visual Studio
 Puede cambiar el formato en el que se muestra un valor en el **inspección**, **automático**, y **variables locales** windows mediante el uso de especificadores de formato.
 
 También puede usar especificadores de formato en el **inmediato** ventana, el **comando** ventana, en [puntos de seguimiento](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)e incluso en las ventanas de código fuente. Si hace una pausa en una expresión de esas ventanas, el resultado aparece en un [información sobre datos](../debugger/view-data-values-in-data-tips-in-the-code-editor.md). La visualización de información sobre datos refleja el especificador de formato.
@@ -62,7 +62,7 @@ Puede ver y seleccionar de una lista de especificadores de formato disponibles m
 ::: moniker-end
 
 ## <a name="BKMK_Visual_Studio_2012_format_specifiers"></a> Especificadores de formato
-Las tablas siguientes describen los especificadores de formato que puede usar en Visual Studio. Solo se admiten los especificadores en negrita para el nuevo depurador y no para la depuración de interoperabilidad con C++ / c++ / CLI.
+Las tablas siguientes describen los especificadores de formato que puede usar en Visual Studio. Solo se admiten los especificadores en negrita para el nuevo depurador y no para la depuración de interoperabilidad con C++/CLI.
 
 ::: moniker range=">= vs-2019" 
 
@@ -167,7 +167,7 @@ Los especificadores en **negrita** solo son compatibles con la depuración nativ
 |wm|Números de mensajes de Windows|0x0010|WM_CLOSE|
 |!|sin formato, omite cualquier personalización de la vista de tipo de datos|\<representación personalizada>|4|
 
-### <a name="BKMK_Format_specifiers_memory_locations_in_interop_debugging_and_C___edit_and_continue"></a> Dar formato a los especificadores para ubicaciones de memoria de depuración de interoperabilidad con C++ / c++ / CLI
+### <a name="BKMK_Format_specifiers_memory_locations_in_interop_debugging_and_C___edit_and_continue"></a> Para las ubicaciones de memoria de depuración de interoperabilidad con los especificadores de formato C++/CLI
 La siguiente tabla describe los símbolos de formato utilizados para las ubicaciones de memoria. Puede utilizar un especificador de ubicación de memoria con cualquier valor o expresión que se evalúe como una ubicación.
 
 |Símbolo|Formato|Valor de inspección original|Valor mostrado|

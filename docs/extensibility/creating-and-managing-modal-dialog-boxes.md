@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: dfd0fb71aaca9cb3de2d7cc6d3b6229042a4e7fa
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318412"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62926411"
 ---
 # <a name="create-and-manage-modal-dialog-boxes"></a>Crear y administrar cuadros de diálogo modales
 Cuando se crea un cuadro de diálogo modal en Visual Studio, debe asegurarse de que la ventana primaria del cuadro de diálogo está deshabilitada mientras se muestra el cuadro de diálogo y luego volver a habilitar la ventana primaria cuando se cierra el cuadro de diálogo. Si no lo hace, recibirá el error: *Microsoft Visual Studio no se puede cerrar porque un cuadro de diálogo modal está activo. Cierre el cuadro de diálogo activo e inténtelo de nuevo*

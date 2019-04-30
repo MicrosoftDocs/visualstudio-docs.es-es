@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3cc905e359d7bcb2946d627ebcb3c28067233fa0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603162"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62910341"
 ---
 # <a name="expose-events-in-the-visual-studio-sdk"></a>Exponer eventos en el SDK de Visual Studio
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] permite obtener eventos mediante la automatización. Se recomienda que origen de eventos para los proyectos y elementos de proyecto.
@@ -52,7 +52,7 @@ ms.locfileid: "56603162"
 
  **AutomationProjectItemEvents** = devuelve el `AutomationProjectItemsEvents` objeto.
 
-|nombre|Tipo|Intervalo|Descripción|
+|Name|Tipo|Intervalo|Descripción|
 |----------|----------|-----------|-----------------|
 |Predeterminado (@)|REG_SZ|sin usar|Sin usar. Puede usar el campo de datos para la documentación.|
 |*AutomationProjectsEvents*|REG_SZ|Nombre de su objeto de evento.|Solo el nombre de clave es relevante. Puede usar el campo de datos para la documentación.<br /><br /> Este ejemplo se incluye en el proyecto básico de ejemplo.|

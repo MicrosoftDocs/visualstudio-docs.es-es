@@ -1,5 +1,5 @@
 ---
-title: Filtrar Obtener un servicio | Documentos de Microsoft
+title: Procedimiento Obtener un servicio | Documentos de Microsoft
 ms.date: 3/16/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,13 +11,13 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 027057ff5c6f8d33038329a8e6029dcb4eeac477
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194313"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62911874"
 ---
-# <a name="how-to-get-a-service"></a>Filtrar Obtener un servicio
+# <a name="how-to-get-a-service"></a>Procedimiento Obtener un servicio
 
 A menudo necesitará obtener servicios de Visual Studio para tener acceso a características diferentes. En general, un servicio de Visual Studio proporciona una o más interfaces que puede usar. Puede obtener la mayoría de los servicios desde un VSPackage.
 

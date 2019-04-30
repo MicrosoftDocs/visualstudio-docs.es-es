@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2f31ebeb18790ddf76c42585868aea8a04547bfb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041072"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62928407"
 ---
 # <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>Procedimiento Firma de archivos de instalación con SignTool.exe (ClickOnce)
 Puede usar *SignTool.exe* para firmar un programa de instalación (*setup.exe*). Este proceso ayuda a garantizar que no se instalen archivos alterados en los equipos de los usuarios finales.

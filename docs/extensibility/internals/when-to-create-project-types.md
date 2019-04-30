@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: eaf8982afb01ee07eb8c2d672f351c6e917620a6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094429"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62907593"
 ---
 # <a name="when-to-create-project-types"></a>Momento para la creación de tipos de proyecto
 Crear un nuevo tipo de proyecto proporciona una base para personalizar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para los usuarios. Sin embargo, crear un nuevo tipo de proyecto no es necesario para todos los [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] personalizaciones. Las instrucciones siguientes le ayudarán a determinar si un nuevo tipo de proyecto es necesario para su escenario.
@@ -59,5 +59,5 @@ Crear un nuevo tipo de proyecto proporciona una base para personalizar [!INCLUDE
 
 ## <a name="see-also"></a>Vea también
 - [Editores y documentos Windows](https://msdn.microsoft.com/library/603625e1-62b6-413a-bc44-089346e166bc)
-- [Lista de comprobación: Creación de nuevos tipos de proyecto](../../extensibility/internals/checklist-creating-new-project-types.md)
+- [Lista de comprobación: Creación de tipos de proyectos](../../extensibility/internals/checklist-creating-new-project-types.md)
 - [Jerarquías en Visual Studio](../../extensibility/internals/hierarchies-in-visual-studio.md)

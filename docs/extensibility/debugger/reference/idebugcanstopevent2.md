@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 012440e03208fab6bc2cde8814781f7b3a64f79d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56682107"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62923004"
 ---
 # <a name="idebugcanstopevent2"></a>IDebugCanStopEvent2
 Esta interfaz se usa para formular al administrador de depuración de la sesión (SDM) si se debe detener en la ubicación actual del código.
