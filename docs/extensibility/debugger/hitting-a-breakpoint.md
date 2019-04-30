@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1286af8222703028d5a8a1bd2dbb0d990ca7e30c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041098"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62889910"
 ---
 # <a name="hit-a-breakpoint"></a>Llegar a un punto de interrupción
 La siguiente sección describe el proceso cuando el motor de depuración (DE) alcanza un punto de interrupción mientras se está ejecutando o la ejecución paso a paso:

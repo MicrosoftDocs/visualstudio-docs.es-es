@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 651f981117cdd9b9cfb26aae61bbd4e2747e921d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55018376"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62900391"
 ---
 # <a name="clickonce-deployment-samples-and-walkthroughs"></a>Ejemplos y tutoriales de implementación de ClickOnce
 Esta sección contiene aplicaciones de ejemplo, código de ejemplo y tutoriales paso a paso que muestran la sintaxis, estructura y técnicas que se utilizan para implementar aplicaciones de Windows Forms, WPF y consola.

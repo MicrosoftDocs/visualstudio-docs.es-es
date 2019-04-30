@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 0437363dd7d45b95a04a9e58edd45229f14b4c93
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56695224"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62925367"
 ---
 # <a name="parallel-extension-internals-for-the-net-framework"></a>Parámetros internos de extensiones paralelas para .NET Framework
 Esta sección describen los tipos internos, métodos y campos de clases que le ayudarán a implementan a un depurador personalizado para las extensiones paralelas para .NET Framework.
@@ -37,4 +37,4 @@ Esta sección describen los tipos internos, métodos y campos de clases que le a
 - <xref:System.Threading.Tasks.Task?displayProperty=fullName>
 - <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName>
 - [Extensibilidad del depurador de Visual Studio](../../extensibility/debugger/visual-studio-debugger-extensibility.md)
-- [Programación en paralelo](/dotnet/standard/parallel-programming/index)
+- [Programación en paralelo en .NET](/dotnet/standard/parallel-programming/index)

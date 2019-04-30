@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 6fc64250732ee36cf12c0fb0203ab22a20991975
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58154626"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62990891"
 ---
 # <a name="idebugapplicationgetcurrentthread"></a>IDebugApplication::GetCurrentThread
 Devuelve el subproceso asociado al subproceso que se está ejecutando.  

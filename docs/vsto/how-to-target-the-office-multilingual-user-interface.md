@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c495f8a83b58c53404056befd2227b295c3324d5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063990"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62961144"
 ---
 # <a name="how-to-target-the-office-multilingual-user-interface"></a>Procedimiento Destino de la interfaz de usuario multilingüe de Office
   La interfaz de usuario multilingüe (MUI) es una característica de Microsoft Office que proporciona al usuario final la capacidad de cambiar el idioma de la interfaz de usuario (UI). Por ejemplo, un usuario final, trabajando con una interfaz de usuario inglés puede cambiar el idioma de la interfaz de usuario en español.

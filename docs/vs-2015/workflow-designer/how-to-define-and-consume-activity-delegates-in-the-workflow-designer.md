@@ -1,5 +1,5 @@
 ---
-title: Filtrar Definir y consumir delegados de actividad en el Diseñador de flujo de trabajo | Documentos de Microsoft
+title: Procedimiento Definir y consumir delegados de actividad en el Diseñador de flujo de trabajo | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -10,13 +10,13 @@ author: steved0x
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 37adb6cf6462887010b1c06c7d5af4a539203b15
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58999600"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974584"
 ---
-# <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>Filtrar Definir y usar delegados de actividad en el Diseñador de flujo de trabajo
+# <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>Procedimiento Definir y usar delegados de actividad en el Diseñador de flujo de trabajo
 [!INCLUDE[net_v45](../includes/net-v45-md.md)] incluye un nuevo diseñador estándar para la actividad <xref:System.Activities.Statements.InvokeDelegate>. Este diseñador se puede usar para asignar delegados a la actividad que se derivan de <xref:System.Activities.ActivityDelegate>, como <xref:System.Activities.ActivityAction> o <xref:System.Activities.ActivityFunc%601>.  
   
 ### <a name="define-an-activity-delegate"></a>Definir un delegado de actividad  

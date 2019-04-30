@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 226056f139e45f432d757aff8f8774b013742de3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076817"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946607"
 ---
 # <a name="cannot-assign-to-a-function-result"></a>No se puede asignar al resultado de una función
 Se intentó asignar un valor a un resultado de la función. El resultado de una función puede asignarse a una variable, pero no se puede usar como una variable. Si desea asignar un nuevo valor a la propia función, omitir los paréntesis (operador de llamada de función). El ejemplo siguiente muestra una situación en la que se genera este error.  

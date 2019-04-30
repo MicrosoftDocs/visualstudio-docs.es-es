@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: bc78eaa5b08232bcb506f50584e36c505be3d36f
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843638"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63006394"
 ---
 # <a name="setter-functions-must-have-one-argument"></a>Las funciones setter deben tener un argumento
 1051: Las funciones setter deben tener un argumento  

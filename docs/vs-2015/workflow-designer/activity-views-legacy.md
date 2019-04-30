@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 62b3c9185226512ff28c8d028cd0ba7d33b0f12f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58996097"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977453"
 ---
 # <a name="activity-views-legacy"></a>Vistas de actividad (Heredado)
 Muchas de las actividades proporcionadas por [!INCLUDE[wf](../includes/wf-md.md)], a partir de las que se crean flujos de trabajo, disponen de varias vistas de diseño en [!INCLUDE[wfd1](../includes/wfd1-md.md)] heredado. Al arrastrar un diseñador de actividad de la **cuadro de herramientas** a la superficie de diseño y, a partir de entonces cada vez que seleccione la actividad, puede cambiar entre las vistas de diseño diferentes mediante el uso del **deflujodetrabajo**menú o hacer clic en la actividad seleccionada. Además, si mueve el puntero sobre el nombre de una actividad seleccionada, aparece un conjunto desplegable de pestañas, que puede utilizar para pasar de una vista a otra.  

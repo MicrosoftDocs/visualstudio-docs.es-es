@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 596f9357a8553bf6c39140a6948d8ae3085c3210
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58147688"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62991135"
 ---
 # <a name="iapplicationdebuggeruibringdocumentcontexttotop"></a>IApplicationDebuggerUI::BringDocumentContextToTop
 Pone la ventana que contiene el contexto del documento especificado en la parte superior de la interfaz de usuario del depurador y se desplaza a la ventana para el contexto.  

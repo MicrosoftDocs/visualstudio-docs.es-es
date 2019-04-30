@@ -1,5 +1,5 @@
 ---
-title: Datos (Debug Interface Access SDK) | Microsoft Docs
+title: Datos (Debug Interface Access SDK) | Documentos de Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6f0cf6e4f02d8a80f74d0edb46e188b41bfb425c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644502"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62554953"
 ---
 # <a name="data-debug-interface-access-sdk"></a>Datos (Debug Interface Access SDK)
 Todas las variables, como parámetros, variables locales, las variables globales y los miembros de clase, se identifican mediante `SymTagData` símbolos. Valores constantes (`LocIsConstant`) también se identifican con este tipo.
@@ -28,7 +28,7 @@ Todas las variables, como parámetros, variables locales, las variables globales
 ## <a name="properties"></a>Propiedades
  En la tabla siguiente muestra las propiedades que son válidas para este tipo de símbolo.
 
-|Propiedad.|Tipo de datos|Descripción|
+|Propiedad|Tipo de datos|Descripción|
 |--------------|---------------|-----------------|
 |[IDiaSymbol::get_access](../../debugger/debug-interface-access/idiasymbol-get-access.md)|`DWORD`|Si un campo, a continuación, uno de los valores de la [CV_access_e (enumeración)](../../debugger/debug-interface-access/cv-access-e.md).|
 |[IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)|`DWORD`|Parte del ajuste de ubicación; Para obtener más información, consulte el [LocationType (enumeración)](../../debugger/debug-interface-access/locationtype.md).|

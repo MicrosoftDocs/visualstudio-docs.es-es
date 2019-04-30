@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: b73a28e9a3f0fb5a3b5aa618296fe5a44b88cff2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58998875"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62976575"
 ---
 # <a name="transaction-activity-designers"></a>Diseñadores de actividades de transacciones
 Los diseñadores de actividades de transacciones se utilizan para crear y configurar actividades transaccionales como compensar y confirmar. Los temas que se incluyen en esta sección y que se enumeran en la siguiente tabla ofrecen orientación sobre cómo utilizar los diseñadores de actividades y de plantillas de [!INCLUDE[wfd2](../includes/wfd2-md.md)].  

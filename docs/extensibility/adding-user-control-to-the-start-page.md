@@ -14,11 +14,11 @@ ms.workload:
 - vssdk
 monikerRange: vs-2017
 ms.openlocfilehash: 5a5e8d752122432e27d7b6845f6d144856746387
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56703245"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62891820"
 ---
 # <a name="add-user-control-to-the-start-page"></a>Agregar control de usuario a la página de inicio
 

@@ -42,11 +42,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 65f3a3abfe7e49872c7131a247d74612200bf42a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091023"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62978063"
 ---
 # <a name="office-projects-in-the-visual-studio-environment"></a>Proyectos de Office en el entorno de Visual Studio
   Los proyectos de Microsoft Office tienen una experiencia de desarrollo que es similar a otros tipos de proyectos en Visual Studio, como los proyectos de Windows Forms. Al crear o abrir un proyecto de Office, los elementos del proyecto aparecen en el **Explorador de soluciones**. Para los proyectos en el nivel de documento, el documento (es decir, el documento de Word o el libro de Excel) se abre en Visual Studio y se comporta como un diseñador visual.

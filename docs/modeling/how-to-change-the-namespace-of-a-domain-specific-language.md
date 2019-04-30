@@ -1,5 +1,5 @@
 ---
-title: Filtrar Cambiar el espacio de nombres de un lenguaje específico de dominio
+title: Procedimiento Cambiar el espacio de nombres de un lenguaje específico de dominio
 ms.date: 10/31/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,13 +10,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 16fec4cf6150fe0711812d9fabe57fc667e36eef
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949198"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62993507"
 ---
-# <a name="how-to-change-the-namespace-of-a-domain-specific-language"></a>Filtrar Cambiar el espacio de nombres de un lenguaje específico de dominio
+# <a name="how-to-change-the-namespace-of-a-domain-specific-language"></a>Procedimiento Cambiar el espacio de nombres de un lenguaje específico de dominio
 
 Puede cambiar el espacio de nombres de un lenguaje específico de dominio. Realice el cambio en el **DSL Explorer**, en las propiedades del proyecto de paquete de Dsl y en la información de ensamblado.
 

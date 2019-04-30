@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 32b3fddd13bd16ac2c846f02f54596ec846374b9
-ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59537496"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62929989"
 ---
 # <a name="create-custom-views-of-data-in-the-visual-studio-debugger-c-visual-basic-c"></a>Crear vistas personalizadas de los datos en el depurador de Visual Studio (C#, Visual Basic, C++)
 

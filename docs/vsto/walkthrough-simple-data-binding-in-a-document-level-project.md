@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: f3b573842aee5f00f161213cf3e01dfcc4c8ba93
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066654"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62981067"
 ---
 # <a name="walkthrough-simple-data-binding-in-a-document-level-project"></a>Tutorial: Enlace de datos simple en un proyecto de nivel de documento
   Este tutorial muestra los aspectos básicos del enlace de datos en un proyecto de nivel de documento. Un único campo de datos en una base de datos de SQL Server está enlazado a un rango con nombre en Microsoft Office Excel. El tutorial también muestra cómo agregar controles que permiten desplazarse por todos los registros de la tabla.

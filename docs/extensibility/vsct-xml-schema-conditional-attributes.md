@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 73e48cfb0a30ca71592879c8276ef1be76cb973f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680303"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62953146"
 ---
 # <a name="vsct-xml-schema-conditional-attributes"></a>Atributos condicionales de esquema XML de VSCT
 Puede aplicar atributos condicionales para todas las listas y elementos. Expresiones de expansión de símbolos y operadores lógicos se evalúan como true o false. Si es true, el elemento o la lista asociada se incluye en la salida resultante.
@@ -30,7 +30,7 @@ Puede aplicar atributos condicionales para todas las listas y elementos. Expresi
 ## <a name="operators"></a>Operadores
  Utilice los siguientes operadores para evaluar expresiones condicionales.
 
-|Operador|de esquema JSON|
+|Operador|Definición|
 |--------------|----------------|
 |(,)|Agrupar|
 |!|NOT lógico|

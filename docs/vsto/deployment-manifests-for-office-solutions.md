@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 3c96f0d87f5a49add1f0e8cebb61bab9659277e6
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54866875"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62972400"
 ---
 # <a name="deployment-manifests-for-office-solutions"></a>Manifiestos de implementación para soluciones de Office
   Un manifiesto de implementación es un archivo XML que describe la configuración de implementación de una solución de Office e identifica la versión actual de la aplicación.

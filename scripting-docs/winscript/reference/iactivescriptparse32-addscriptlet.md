@@ -11,11 +11,11 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 ms.openlocfilehash: b5a680eea5f5695d3a7253b9cf722af6ebf537c6
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54089549"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62954898"
 ---
 # <a name="iactivescriptparse32addscriptlet"></a>IActiveScriptParse32::AddScriptlet
 Agrega un scriptlet de código a la secuencia de comandos. Este método se usa en entornos donde el estado persistente del script es imbricado con el documento de host y el host es responsable de restaurar la secuencia de comandos, en lugar de mediante un `IPersist*` interfaz. Los principales ejemplos son lenguajes de scripting de HTML que permiten scriptlets de código incrustado en el documento HTML que se adjuntará a eventos intrínsecos (por ejemplo, ONCLICK="button1.text='Exit'").  

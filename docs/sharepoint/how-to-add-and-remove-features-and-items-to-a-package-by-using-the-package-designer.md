@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 654773f5a5e46960f8c015cc6f731e16332fcdd7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094325"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62966983"
 ---
 # <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer"></a>Procedimiento Agregar y quitar características y elementos de un paquete mediante el Diseñador de paquetes
   Cuando se crea una solución de SharePoint, Visual Studio agrega las características de SharePoint predeterminado para el paquete de la solución. Antes de la implementación final, puede agregar y quitar elementos de proyecto de SharePoint y las características para modificar el paquete de SharePoint.

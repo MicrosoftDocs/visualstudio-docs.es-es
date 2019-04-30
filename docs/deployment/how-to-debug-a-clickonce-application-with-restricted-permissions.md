@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4072cef2a47db1177a8ee7b630bd8febccc5e0b6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049588"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62898742"
 ---
 # <a name="how-to-debug-a-clickonce-application-with-restricted-permissions"></a>Procedimiento Depuración de una aplicación ClickOnce con permisos restringidos
 Como desarrollador, probablemente esté ejecutando su equipo de desarrollo con permisos de plena confianza, por lo que no verá las mismas excepciones de seguridad al depurar una aplicación ClickOnce que las que podría ver el usuario final al ejecutarlo con permisos restringidos.

@@ -8,14 +8,14 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: c455f36d17b761fe02b7d78e96fbf2c4582d490d
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
-ms.translationtype: MT
+ms.openlocfilehash: 25f844acefed50b5bb35e3b1d8c6a570e11ca194
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415816"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949529"
 ---
-# <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>Filtrar Definir y usar delegados de actividad en el Diseñador de flujo de trabajo
+# <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>Procedimiento Definir y usar delegados de actividad en el Diseñador de flujo de trabajo
 
 .NET framework 4.5 incluye un diseñador de out-of-box para el <xref:System.Activities.Statements.InvokeDelegate> actividad. Este diseñador se puede usar para asignar delegados a la actividad que se derivan de <xref:System.Activities.ActivityDelegate>, como <xref:System.Activities.ActivityAction> o <xref:System.Activities.ActivityFunc%601>.
 
@@ -70,17 +70,17 @@ ms.locfileid: "58415816"
 
 ## <a name="use-the-custom-activity-in-a-workflow"></a>Usar la actividad personalizada en un flujo de trabajo
 
-1.  Compile el proyecto presionando **Ctrl**+**MAYÚS**+**B**.
+1. Compile el proyecto presionando **Ctrl**+**MAYÚS**+**B**.
 
-2.  En **el Explorador de soluciones**, abra **Workflow1.xaml** en el diseñador.
+2. En **el Explorador de soluciones**, abra **Workflow1.xaml** en el diseñador.
 
-3.  Arrastre un **MyForEach** actividad desde el cuadro de herramientas a la superficie del diseñador. La actividad está en una sección del cuadro de herramientas con el mismo nombre que el proyecto.
+3. Arrastre un **MyForEach** actividad desde el cuadro de herramientas a la superficie del diseñador. La actividad está en una sección del cuadro de herramientas con el mismo nombre que el proyecto.
 
-4.  Establecer el **elementos** propiedad de la **MyForEach** actividad **new Object [] {1, "abc"}**.
+4. Establecer el **elementos** propiedad de la **MyForEach** actividad **new Object [] {1, "abc"}**.
 
-5.  Arrastre un <xref:System.Activities.Statements.WriteLine> actividad desde la **primitivas** sección del cuadro de herramientas para el **Delegate: cuerpo** sección de la **MyForEach** actividad.
+5. Arrastre un <xref:System.Activities.Statements.WriteLine> actividad desde la **primitivas** sección del cuadro de herramientas para el **Delegate: cuerpo** sección de la **MyForEach** actividad.
 
-6.  Establecer el **texto** propiedad de la <xref:System.Activities.Statements.WriteLine> actividad **Argument.ToString ()**.
+6. Establecer el **texto** propiedad de la <xref:System.Activities.Statements.WriteLine> actividad **Argument.ToString ()**.
 
 Cuando se ejecuta el flujo de trabajo, la consola muestra el siguiente resultado:
 

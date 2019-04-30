@@ -8,11 +8,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7cfe6ce02b03ed69435f8056ccd340b92f9eb5a4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046284"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62421504"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>Controlar la visibilidad de un icono o un objeto Decorator
 Un *decorator* es un icono o una línea de texto que aparece en una forma de un lenguaje específico de dominio (DSL). Puede que aparezca la decorador y desaparecen según el estado de las propiedades en el modelo. Por ejemplo, en una forma que representa a una persona, podría tener diferentes iconos que aparecen según el sexo de la persona, el número de elementos secundarios y así sucesivamente.

@@ -9,11 +9,11 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7b4ba4e98b8b2d42485a7594d5bab658e1bd6ccb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58997271"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62422492"
 ---
 # <a name="vsixlanguagepack-element-vsix-language-pack-schema"></a>Elemento VSIXLanguagePack (esquema del paquete de idioma VSIX)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

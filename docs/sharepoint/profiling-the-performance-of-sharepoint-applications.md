@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8b59a3de88403300a46b7992a2dad72e3d6b59e0
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54864142"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62563324"
 ---
 # <a name="profile-the-performance-of-sharepoint-applications"></a>Perfilar el rendimiento de las aplicaciones de SharePoint
 

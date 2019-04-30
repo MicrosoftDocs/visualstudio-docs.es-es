@@ -16,11 +16,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: a31b56b4b2d568b3bc3fd59f876f5052b9f6faff
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064003"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946373"
 ---
 # <a name="circular-reference-in-value-argument-not-supported"></a>Referencia circular en el argumento de valor no admitida
 Se ha intentado invocar `JSON.stringify` con un valor que no es válido. El `value` argumento, matriz u objeto, contiene una referencia circular.  

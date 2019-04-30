@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 0044991b330594d80422f0c6ac1d1d64b1fec237
-ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57567188"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62951161"
 ---
 # <a name="custom-actions-in-outlook-form-regions"></a>Acciones personalizadas en áreas de formulario de Outlook
   Acciones muestran los botones que permiten a los usuarios respondan a un elemento de Microsoft Office Outlook. Por ejemplo, para responder a un elemento de correo, los usuarios hacen clic los **respuesta**, **responder a todos**, o **reenviar** botones de acción. Cada una de estas acciones crea un nuevo elemento de correo y rellena los campos del elemento mediante el uso de información del elemento original.
@@ -36,7 +36,7 @@ ms.locfileid: "57567188"
 
  En la tabla siguiente se describe las propiedades que están disponibles en el **acciones personalizadas** cuadro de diálogo.
 
-|Property|Descripción|
+|Propiedad|Descripción|
 |--------------|-----------------|
 |**AddressLike**|Especifica cómo se abordará el formulario de destino.|
 |**Cuerpo**|Especifica cómo se anexa el cuerpo del elemento original en el formulario de destino.|

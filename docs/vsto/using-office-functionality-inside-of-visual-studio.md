@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c47ed9639a33ecdea3451c63b729d959f6855e5d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628668"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62982324"
 ---
 # <a name="use-office-functionality-inside-of-visual-studio"></a>Use la funcionalidad de Office en Visual Studio
   Al crear un proyecto de nivel de documento, el documento y la aplicación asociada se hospedan dentro de Visual Studio para que pueda diseñar y trabajar directamente con el documento. Cuando haya una aplicación abierta en Visual Studio de Microsoft Office, por lo general funciona según lo previsto. Sin embargo, algunas de las funcionalidades de la aplicación es diferente o inaccesible.

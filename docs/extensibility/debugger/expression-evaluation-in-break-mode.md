@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a31bc56673ec9e82206a8829aaf89328eb9198d6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069229"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62925686"
 ---
 # <a name="expression-evaluation-in-break-mode"></a>Evaluación de expresiones en modo de interrupción
 La siguiente sección describe el proceso que se produce cuando el depurador está en modo de interrupción y debe llevar a cabo la evaluación de expresiones.

@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5f13921dea810ab2185e626cc2889f339d9d174f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804019"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62537194"
 ---
 # <a name="creating-basic-profiling-reports-from-the-command-line"></a>Crear informes básicos de generación de perfiles desde la línea de comandos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ En este tema se describen los comandos básicos de VSPerfReport que generan info
 |**Módulo**|Enumera los datos de generación de perfiles de los módulos.|-   [Datos de muestreo](../profiling/modules-view-sampling-data.md)<br />-   [Datos de instrumentación](../profiling/modules-view-instrumentation-data.md)<br />-   [Datos de muestreo de memoria de .NET](../profiling/modules-view-dotnet-memory-sampling-data.md)<br />-   [Datos de instrumentación de memoria de .NET](../profiling/modules-view-dotnet-memory-instrumentation-data.md)<br />-   [Datos de contención](../profiling/modules-view-contention-data.md)|  
 |**Process**|Enumera los datos de generación de perfiles de los procesos.|-   [Vista Proceso](../profiling/process-view.md)<br />-   [Datos de contención](../profiling/process-view-contention-data.md)|  
 |**Subproceso**|Enumera los datos de generación de perfiles de los subprocesos.|-   [Vista Proceso](../profiling/process-view.md)|  
-|**Type**|Enumera los datos de asignación de la generación de perfiles por tipo.|-   [Vista Asignaciones](../profiling/dotnet-memory-allocations-view.md)|  
+|**Tipo**|Enumera los datos de asignación de la generación de perfiles por tipo.|-   [Vista Asignaciones](../profiling/dotnet-memory-allocations-view.md)|  
 |**Contention**|Contenciones de recursos.|-   [Contenciones de recursos](../profiling/resource-contentions-view-contention-data.md)|  
 |**RuleWarnings**|Enumera los problemas de las reglas de rendimiento.|- Enumera el identificador de comprobación, la descripción y la ubicación en el código fuente del problema de la regla.|  
 |**ETW**|Enumera todos los eventos de Seguimiento de eventos para Windows (ETW) recopilados en la generación de perfiles.|-   [Informe de ETW](../profiling/event-tracing-for-windows-etw-report.md)|

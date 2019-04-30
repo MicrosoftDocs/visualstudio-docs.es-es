@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b935c9c79fd618c96f44b2660c274f657f81014e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634921"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62555213"
 ---
 # <a name="compilandenv"></a>CompilandEnv
 El compilador puede incluir variables de entorno adicionales con los símbolos. Hay un `SymTagCompilandEnv` símbolo para cada una de estas variables.
@@ -25,7 +25,7 @@ El compilador puede incluir variables de entorno adicionales con los símbolos. 
 ## <a name="properties"></a>Propiedades
  En la tabla siguiente muestra las propiedades que son válidas para este tipo de símbolo.
 
-|Propiedad.|Tipo de datos|Descripción|
+|Propiedad|Tipo de datos|Descripción|
 |--------------|---------------|-----------------|
 |[IDiaSymbol::get_lexicalParent](../../debugger/debug-interface-access/idiasymbol-get-lexicalparent.md)|`IDiaSymbol*`|Símbolo de la operación de compilación principal.|
 |[IDiaSymbol::get_lexicalParentId](../../debugger/debug-interface-access/idiasymbol-get-lexicalparentid.md)|`DWORD`|Id. del símbolo léxico primario.|

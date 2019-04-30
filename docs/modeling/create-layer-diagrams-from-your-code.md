@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b9822dda92a096e3c497d468865d3ed9fd56e16d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046922"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62421198"
 ---
 # <a name="create-dependency-diagrams-from-your-code"></a>Crear diagramas de dependencia a partir del código
 

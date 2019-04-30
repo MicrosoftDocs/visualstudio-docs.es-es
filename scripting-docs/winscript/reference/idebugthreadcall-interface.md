@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 89f0fba2f5210cdcf4bb8f17443f948cb9ba1f4e
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58149528"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63004862"
 ---
 # <a name="idebugthreadcall-interface"></a>IDebugThreadCall (Interfaz)
 El `IDebugThreadCall` interfaz se implementa normalmente mediante un componente que realiza las llamadas entre subprocesos con el `IDebugThread` implementación proporcionada por el Administrador de depuración (PDM) de proceso de serialización.  

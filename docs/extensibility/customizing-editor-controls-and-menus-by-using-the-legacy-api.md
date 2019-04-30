@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: f52c0bbb87cc610b1b05ef987f43167f60292f4f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684005"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62926506"
 ---
 # <a name="customize-editor-controls-and-mmenus-by-using-the-legacy-api"></a>Personalizar controles de editor y Mmenus mediante la API heredada
 Un servicio de lenguaje o una vista de texto puede controlar los menús contextuales y los controles en el editor. Las páginas de esta sección explican cómo trabajar con estas características.

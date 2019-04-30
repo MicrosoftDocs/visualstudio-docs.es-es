@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 376dcee6f23ec2633efe1b23f77552ebf33341f2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722608"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62891842"
 ---
 # <a name="add-command-line-switches"></a>Agregar modificadores de línea de comandos
 Puede agregar modificadores de línea de comandos que se aplican a su VSPackage al *devenv.exe* se ejecuta. Use <xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute> para declarar el nombre del modificador y sus propiedades. En este ejemplo, se agrega el conmutador MySwitch para una subclase de VSPackage llamado **AddCommandSwitchPackage** sin argumentos y con el VSPackage que se cargan automáticamente.
@@ -35,7 +35,7 @@ Puede agregar modificadores de línea de comandos que se aplican a su VSPackage 
 | Argumentos | El número de argumentos para el conmutador. Puede ser "*", o una lista de argumentos. |
 | DemandLoad | Cargar el VSPackage automáticamente si se establece en 1, en caso contrario, se establece en 0. |
 | HelpString | La Ayuda de cadena o identificador de recurso de la cadena para mostrar con **devenv /?**. |
-| nombre | El conmutador. |
+| Name | El conmutador. |
 | PackageGuid | El GUID del paquete. |
 
  El primer valor de argumentos es normalmente 0 o 1. Un valor especial de ' *' puede usarse para indicar que el resto de la línea de comandos completo es el argumento. Esto puede ser útil para escenarios donde un usuario debe pasar una cadena de comandos del depurador de depuración.

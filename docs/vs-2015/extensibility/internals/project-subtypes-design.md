@@ -11,11 +11,11 @@ caps.latest.revision: 33
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0e7cd96324e5a2bbd6c9b0acf4125bc0450cfd06
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085784"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62430554"
 ---
 # <a name="project-subtypes-design"></a>Diseño de subtipos de proyecto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

@@ -1,5 +1,5 @@
 ---
-title: Vista de subprocesos | Microsoft Docs
+title: Vista de subprocesos | Documentos de Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 82c8bb229a0781f299b5fa8c3a8c73670be8c4fc
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679845"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62929941"
 ---
 # <a name="threads-view"></a>Vista de subprocesos
 La vista de subprocesos es una lista plana de todos los subprocesos asociados con windows en el sistema. Se muestran el identificador de subproceso y nombre del módulo para cada subproceso. No se incluyen los procesos, pero puede encontrar fácilmente el proceso que posee un subproceso seleccionado.

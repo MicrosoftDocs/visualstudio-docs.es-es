@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 6827d1b2b1a85d94e8ad8d5f88c505aebc3abb93
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042579"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63001229"
 ---
 # <a name="migrate-apps-to-the-universal-windows-platform-uwp"></a>Migrar aplicaciones a la Plataforma universal de Windows (UWP)
 Haga los cambios manuales necesarios en los archivos de proyecto existentes para las aplicaciones de la Tienda Windows 8.1, las aplicaciones de Windows Phone 8.1 o las aplicaciones universales de Windows creadas con Visual Studio 2015 RC, de modo que se puedan usar con Visual Studio 2015 RTM. (Si tiene una aplicación universal para Windows 8.1 con un proyecto de aplicación de Windows y un proyecto de Windows Phone, deberá seguir los pasos indicados a continuación para migrar cada proyecto).  
@@ -268,7 +268,7 @@ Haga los cambios manuales necesarios en los archivos de proyecto existentes para
   
     2. Actualice el valor del elemento ApplicationTypeRevision de 8.1 a 10.0.  
   
-    3. Cambie el valor de la \<MinimumVisualStudioVersion > elemento para: 14,  
+    3. Cambie el valor de la \<MinimumVisualStudioVersion > elemento para: 14.  
   
     4. Agregar un \<EnableDotNetNativeCompatibleProfile > elemento y establezca su valor en: true.  
   

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a002c3876eecf0f31a8d104fa235b1208af90699
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57875263"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62929132"
 ---
 # <a name="write-and-debug-running-xaml-code-with-xaml-hot-reload-in-visual-studio"></a>Escribir y depurar código XAML en ejecución con la recarga de acceso frecuente de XAML en Visual Studio
 
@@ -43,8 +43,8 @@ Los siguientes son conocidos de las limitaciones de XAML "hot" volver a cargar. 
 
 |Limitación|WPF|UWP|Notas|
 |-|-|-|-|
-|Eventos y los controles mientras se ejecuta la aplicación|No admitido|No compatibles|Vea el error: *asegurarse de error del evento*|
-|Creación de objetos de recursos en un diccionario de recursos, como las de la ventana de la página de la aplicación o *App.xaml*|No admitido|Compatible|Ejemplo: agregar un ```SolidColorBrush``` en un diccionario de recursos para su uso como un ```StaticResource```.</br>Nota: Recursos estáticos, los convertidores de tipos de estilo y otros elementos que se escriben en un diccionario de recursos pueden ser aplicado o utilizado durante el uso de recarga XAML activo. No se admite solo la creación del recurso.</br> Cambiar el diccionario de recursos ```Source``` propiedad.| 
+|Eventos y los controles mientras se ejecuta la aplicación|No admitido|No compatibles|Vea el error: *Asegúrese de evento de error*|
+|Creación de objetos de recursos en un diccionario de recursos, como las de la ventana de la página de la aplicación o *App.xaml*|No admitido|Compatible|Ejemplo: agregar un ```SolidColorBrush``` en un diccionario de recursos para su uso como un ```StaticResource```.</br>Nota: Recursos estáticos, los convertidores de tipos de estilo y otros elementos que se escriben en un diccionario de recursos pueden aplicar o usan durante el uso de recarga de acceso frecuente de XAML. No se admite solo la creación del recurso.</br> Cambiar el diccionario de recursos ```Source``` propiedad.| 
 |Adición de nuevos controles, clases, windows u otros archivos al proyecto mientras se está ejecutando la aplicación|No admitido|No admitido|Ninguna|
 |Administrar paquetes de NuGet (agregar, quitar o actualizar paquetes)|No admitido|No admitido|Ninguna|
 |Cambiar el enlace de datos que usa la extensión de marcado {x: Bind}|N/D|Compatible con Visual Studio de 2019 y versiones posteriores|No se admite en Visual Studio de 2018 o versiones anteriores|

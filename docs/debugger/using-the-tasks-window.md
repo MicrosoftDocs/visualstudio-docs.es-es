@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b32dc6372a6ce4983e9bd11e05a4a662d0ad44ba
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54993015"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62901618"
 ---
 # <a name="using-the-tasks-window-c-visual-basic-c"></a>Usar la ventana tareas (C#, Visual Basic, C++)
 
@@ -68,7 +68,7 @@ Las columnas de la ventana **Tareas** muestran la siguiente información.
  ![Menú de vista contextual en la ventana tareas](../debugger/media/parallel_tasks_contextmenu.png "Parallel_Tasks_ContextMenu")
 
 ## <a name="sorting-tasks"></a>Ordenar Tareas
- Para ordenar las tareas por columnas, haga clic en el encabezado de columna. Por ejemplo, al hacer clic en el **ID** encabezado de columna, puede ordenar las tareas por Id. de tarea: Etcétera. Para invertir el criterio de ordenación, haga clic en el encabezado de columna de nuevo. Una flecha en la columna indica el criterio y la columna de ordenación.
+ Para ordenar las tareas por columnas, haga clic en el encabezado de columna. Por ejemplo, al hacer clic en el **ID** encabezado de columna, puede ordenar las tareas por Id. de tarea: 1,2,3,4,5 y así sucesivamente. Para invertir el criterio de ordenación, haga clic en el encabezado de columna de nuevo. Una flecha en la columna indica el criterio y la columna de ordenación.
 
 ## <a name="grouping-tasks"></a>Agrupar tareas
  Puede agrupar tareas por cualquier columna en la vista de lista. Por ejemplo, haciendo clic con el botón derecho en el encabezado de columna **Estado** y **Agrupar por** > **[*estado*]**, puede agrupar todas las tareas que tienen el mismo estado. Por ejemplo, podría ver rápidamente en espera de tareas por lo que podría centrarse en ¿por qué se bloquean. También puede contraer un grupo que no es de interés durante la sesión de depuración. De la misma manera, puede agrupar por otras columnas. Se puede marcar o quitar la marca de un grupo haciendo clic en el botón del encabezado de grupo. En la siguiente ilustración se muestra la ventana **Tareas** en modo agrupado.

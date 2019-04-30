@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: f6f63db8d9c032b8e880f05d4d21e50fd56c74e2
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58147987"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62944869"
 ---
 # <a name="iperpropertybrowsing2getdisplaystring"></a>IPerPropertyBrowsing2::GetDisplayString
 Obtiene una cadena para mostrar tipos que no son visibles de forma inherente el texto devuelto es un nombre que describe la propiedad y se puede mostrar en interfaz de usuario del llamador.  
