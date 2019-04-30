@@ -1,5 +1,5 @@
 ---
-title: Cuadro de diálogo Fuente (Ayuda de Microsoft Spy ++) | Microsoft Docs
+title: Cuadro de diálogo Fuente (Ayuda de Microsoft Spy ++) | Documentos de Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1746b8419c342b5627e1c6374b2b29f08f7ee75c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691896"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62849867"
 ---
 # <a name="font-dialog-box-microsoft-spy-help"></a>Cuadro de diálogo Fuente (Ayuda de Microsoft Spy++)
 Utilice este cuadro de diálogo para configurar la fuente de caracteres utilizada en un [vistas de Spy ++](../debugger/spy-increment-views.md) ventana. Para mostrar este cuadro de diálogo, expanda el **vista** menú y elija **fuente**.

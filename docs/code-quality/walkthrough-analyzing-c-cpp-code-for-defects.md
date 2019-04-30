@@ -13,11 +13,11 @@ manager: wpickett
 ms.workload:
 - cplusplus
 ms.openlocfilehash: acfa1e274b7c0744c2d9968682960b1cd50e0044
-ms.sourcegitcommit: 2dc924c96a6d48803c8eedc3d6781202629b41fa
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57736930"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62820342"
 ---
 # <a name="walkthrough-analyzing-cc-code-for-defects"></a>Tutorial: Analizar código de C/C++ en busca de defectos
 

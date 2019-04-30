@@ -9,11 +9,11 @@ helpviewer_keywords:
 ms.assetid: 553d5e07-3e19-4aba-b490-6c7dd05fd82e
 manager: jillfra
 ms.openlocfilehash: 83d528efd499615c92db163aed4d0b8881e75fdf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086018"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62433739"
 ---
 # <a name="menucommands-vs-olemenucommands"></a>MenuCommands frente a OleMenuCommands
 Puede crear comandos de menú mediante la derivación desde <xref:System.ComponentModel.Design.MenuCommand> o desde <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> objeto y la implementación de los controladores de eventos adecuado. En la mayoría de los casos puede usar <xref:System.ComponentModel.Design.MenuCommand>, como hace la plantilla de proyecto de VSPackage, pero en ocasiones puede que deba usar <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>.

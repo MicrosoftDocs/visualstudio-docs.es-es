@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: de690ea6b077ea0c0dc7c6b65f34c68c95e41081
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60101449"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62553671"
 ---
 # <a name="visual-studio-sdk"></a>Visual Studio SDK
 El SDK de Visual Studio le ayuda a ampliar las características de Visual Studio o integrar las nuevas características en Visual Studio. Puede distribuir sus extensiones a otros usuarios, así como a Visual Studio Marketplace. Estas son algunas de las formas en que se puede ampliar Visual Studio:
@@ -76,7 +76,7 @@ El SDK de Visual Studio le ayuda a ampliar las características de Visual Studio
 ## <a name="see-also"></a>Vea también
 - [Crear una extensión con un comando de menú](../extensibility/creating-an-extension-with-a-menu-command.md)
 - [Cómo: Migrar proyectos de extensibilidad de Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md)
-- [PREGUNTAS MÁS FRECUENTES: Conversión de complementos en extensiones de VSPackage](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md)
+- [Preguntas más frecuentes: Conversión de complementos en extensiones de VSPackage](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md)
 - [Administrar varios subprocesos en código administrado](../extensibility/managing-multiple-threads-in-managed-code.md)
 - [Extender los menús y comandos](../extensibility/extending-menus-and-commands.md)
 - [Agregar comandos a barras de herramientas](../extensibility/adding-commands-to-toolbars.md)

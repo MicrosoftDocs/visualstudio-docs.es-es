@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e09f3a9dfcc6c26e9dd575f4a127884e28def1ef
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064081"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62856083"
 ---
 # <a name="t4-text-template-directives"></a>Directivas de plantilla de texto T4
 Las directivas proporcionan instrucciones al motor de transformación de plantillas de texto.

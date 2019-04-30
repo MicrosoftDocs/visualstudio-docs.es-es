@@ -25,11 +25,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 4b2bf1fc1b011b79fdd8123218a78ac91a14579b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621960"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62550506"
 ---
 # <a name="provide-packaging-and-deployment-information-in-project-items"></a>Proporcionar información de empaquetado e implementación de elementos de proyecto
   Todos los elementos de proyecto de SharePoint en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] tienen propiedades que puede usar para proporcionar datos adicionales cuando el proyecto se implementa en SharePoint. Estas propiedades son las siguientes:

@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8b61e56fcef8bbbe8e9f36a39580eae14ad582d5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645984"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62856709"
 ---
 # <a name="what39s-new-in-the-source-control-plug-in-api-version-13"></a>¿Qué&#39;s nuevo en el origen de controlar la API del complemento versión 1.3
 La API de complemento de Control de origen de la versión 1.3 presenta las siguientes funciones nuevas para proporcionar un control más avanzado.

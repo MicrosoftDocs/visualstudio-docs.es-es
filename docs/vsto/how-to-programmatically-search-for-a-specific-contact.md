@@ -1,5 +1,5 @@
 ---
-title: Filtrar Buscar un contacto específico mediante programación
+title: Procedimiento Buscar un contacto específico mediante programación
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,13 +14,13 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: feff583d28bf53f4bffc9b425d52902688b80a4b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56607166"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63000325"
 ---
-# <a name="how-to-programmatically-search-for-a-specific-contact"></a>Filtrar Buscar un contacto específico mediante programación
+# <a name="how-to-programmatically-search-for-a-specific-contact"></a>Procedimiento Buscar un contacto específico mediante programación
   En este ejemplo se busca una carpeta de contactos de Outlook para un contacto específico por nombre y apellidos. En el ejemplo se supone que existe un contacto llamado **John Evans** en la carpeta Contactos.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]

@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a75dc86a45c78f6b57d5a326c8c342eca70b26e0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55956810"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62960468"
 ---
 # <a name="access-visual-studio-or-other-hosts-from-a-text-template"></a>Acceder a Visual Studio u otros hosts desde una plantilla de texto
 

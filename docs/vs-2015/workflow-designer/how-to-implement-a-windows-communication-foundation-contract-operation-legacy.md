@@ -1,5 +1,5 @@
 ---
-title: Filtrar Implementar una operación de contrato de Windows Communication Foundation (heredado) | Documentos de Microsoft
+title: Procedimiento Implementar una operación de contrato de Windows Communication Foundation (heredado) | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-workflow-designer
@@ -10,13 +10,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 56866e084eac7dc3a3ac2a0b80baaa2533ccd285
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58997576"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62931175"
 ---
-# <a name="how-to-implement-a-windows-communication-foundation-contract-operation-legacy"></a>Filtrar Implementar una operación de contrato de Windows Communication Foundation (heredado)
+# <a name="how-to-implement-a-windows-communication-foundation-contract-operation-legacy"></a>Procedimiento Implementar una operación de contrato de Windows Communication Foundation (heredado)
 En este tema se describe cómo implementar una operación de contrato de [!INCLUDE[indigo1](../includes/indigo1-md.md)] usando [!INCLUDE[wfd1](../includes/wfd1-md.md)] heredado que tiene como destino [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
   
  Después de arrastrar un **ReceiveActivity** actividad desde el cuadro de herramientas hasta la superficie de diseño de flujo de trabajo, se creará un nuevo [!INCLUDE[indigo2](../includes/indigo2-md.md)] de contrato o importar un contrato existente e implemente las operaciones. Puede seleccionar y crear el contrato y sus operaciones a través de la [elija el cuadro de diálogo de operación (heredado)](../workflow-designer/choose-operation-dialog-box-legacy.md).  

@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 3fdf5f3ae84d1a991d67170b5f2b02114b91ee05
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58157073"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62935559"
 ---
 # <a name="iactivescriptsetscriptsite"></a>IActiveScript::SetScriptSite
 Notifica al motor de scripting de la [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) sitio de interfaz proporcionado por el host. Llame a este método antes que cualquier otro [IActiveScript](../../winscript/reference/iactivescript.md) se usa los métodos de interfaz.  

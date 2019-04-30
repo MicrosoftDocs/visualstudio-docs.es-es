@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3e17e5a88b958c1361e7f8b3db70d7599f44f766
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066200"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62858988"
 ---
 # <a name="source-control-design-decisions"></a>Decisiones de diseño del control de código fuente
 Las siguientes decisiones de diseño deben considerarse para los proyectos al implementar el control de código fuente.

@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: aa46bc95087b3defaf739cc3473c58e29a93071c
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58155935"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62935513"
 ---
 # <a name="iactivescriptinterruptscriptthread"></a>IActiveScript::InterruptScriptThread
 Interrumpe la ejecución de un subproceso en ejecución de script (un receptor de eventos, una ejecución inmediata o una llamada de macro). Este método puede usarse para terminar una secuencia de comandos que está bloqueada (por ejemplo, en un bucle infinito). Se puede llamar desde subprocesos no son de base sin resultante en una llamada que no sea de base a los objetos de host o a la [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) método.  

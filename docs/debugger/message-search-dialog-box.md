@@ -1,5 +1,5 @@
 ---
-title: Cuadro de diálogo de búsqueda de mensajes | Microsoft Docs
+title: Cuadro de diálogo de búsqueda de mensajes | Documentos de Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8fed7fe9bf9e10bf893159a11d28f991a255791c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691792"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62931295"
 ---
 # <a name="message-search-dialog-box"></a>Cuadro de diálogo Buscar mensaje
 Utilice este cuadro de diálogo para buscar y seleccionar el nodo de un mensaje concreto en [vista mensajes](../debugger/messages-view.md). Para mostrar este cuadro de diálogo, mueva el foco a una ventana de vista de mensajes. A continuación, elija **Buscar mensaje** desde el **búsqueda** menú.

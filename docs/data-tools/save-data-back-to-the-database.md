@@ -21,11 +21,11 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 31b41a9c18a9e055c9d144c7115d3673ee2e4443
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928665"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62566589"
 ---
 # <a name="save-data-back-to-the-database"></a>Guardar los datos de nuevo en la base de datos
 
@@ -47,7 +47,7 @@ Si está familiarizado con los TableAdapters, puede ir directamente a uno de est
 |[Actualizar datos mediante un TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)|Cómo realizar las actualizaciones con los TableAdapters|
 |[Actualización jerárquica](../data-tools/hierarchical-update.md)|Cómo realizar actualizaciones desde un conjunto de datos con dos o más tablas relacionadas|
 |[Tratar las excepciones de simultaneidad](../data-tools/handle-a-concurrency-exception.md)|Cómo controlar las excepciones cuando dos usuarios intentan cambiar los mismos datos en una base de datos al mismo tiempo|
-|[Procedimiento para guardar datos mediante una transacción](../data-tools/save-data-by-using-a-transaction.md)|Cómo guardar datos en una transacción utilizando el sistema. Espacio de nombres de las transacciones y un objeto TransactionScope|
+|[Cómo: Guardado de los datos mediante una transacción](../data-tools/save-data-by-using-a-transaction.md)|Cómo guardar datos en una transacción utilizando el sistema. Espacio de nombres de las transacciones y un objeto TransactionScope|
 |[Guardar datos en una transacción](../data-tools/save-data-in-a-transaction.md)|Tutorial que crea una aplicación de Windows Forms para mostrar guardar datos en una base de datos dentro de una transacción|
 |[Guardar datos en una base de datos (varias tablas)](../data-tools/save-data-to-a-database-multiple-tables.md)|Cómo editar los registros y guardar los cambios en varias tablas en la base de datos|
 |[Guardar los datos de un objeto en una base de datos](../data-tools/save-data-from-an-object-to-a-database.md)|Cómo pasar datos a partir de un objeto que no está en un conjunto de datos a una base de datos mediante el uso de un método DbDirect de TableAdapter|
@@ -279,4 +279,4 @@ En una instrucción UPDATE, deberá especificar los valores nuevos (los que se e
 - [Actualizar datos mediante un TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)
 - [Enlazar controles a los datos en Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)
 - [Validar datos](validate-data-in-datasets.md)
-- [Procedimiento para agregar, modificar y eliminar entidades (servicios de datos WCF)](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)
+- [Cómo: Agregar, modificar y eliminar entidades (WCF data services)](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)

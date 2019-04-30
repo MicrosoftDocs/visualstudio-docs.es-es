@@ -1,5 +1,5 @@
 ---
-title: Función (Debug Interface Access SDK) | Microsoft Docs
+title: Función (Debug Interface Access SDK) | Documentos de Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4d1e0af87618955c492bef68be45c8c623f41218
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634050"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62554523"
 ---
 # <a name="function-debug-interface-access-sdk"></a>Función (Debug Interface Access SDK)
 Cada función se identifica mediante un `SymTagFunction` símbolos.
@@ -25,7 +25,7 @@ Cada función se identifica mediante un `SymTagFunction` símbolos.
 ## <a name="properties"></a>Propiedades
  En la tabla siguiente muestra las propiedades que son válidas para este tipo de símbolo.
 
-|Propiedad.|`Data type`|Descripción|
+|Propiedad|`Data type`|Descripción|
 |--------------|-----------------|-----------------|
 |[IDiaSymbol::get_access](../../debugger/debug-interface-access/idiasymbol-get-access.md)|`DWORD`|Uno de los valores de la [CV_access_e (enumeración)](../../debugger/debug-interface-access/cv-access-e.md), si la función es una función miembro.|
 |[IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)|`DWORD`|Parte del ajuste de ubicación; Para obtener más información, consulte el [LocationType (enumeración)](../../debugger/debug-interface-access/locationtype.md).|

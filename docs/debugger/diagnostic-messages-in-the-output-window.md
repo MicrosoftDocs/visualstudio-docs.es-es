@@ -27,11 +27,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bb4493eb55b83b9f76d1a833ba2df359ae9683e8
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56682510"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62852146"
 ---
 # <a name="send-messages-to-the-output-window"></a>Enrutamiento de mensajes a la ventana Salida
 

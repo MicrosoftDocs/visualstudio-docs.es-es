@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5b109fd995f54ede3aa2c8a6381cb9e6296a6970
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074978"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62847515"
 ---
 # <a name="how-to-specify-debugger-settings"></a>Procedimiento Especificación de la configuración del depurador
 En [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], se pueden especificar diversas configuraciones para el comportamiento del depurador, incluidas la forma en que se muestran las variables, si se presentan ciertas advertencias, cómo se establecen los puntos de interrupción y cómo éstos afectan a la ejecución de programas. La configuración del depurador se especifica en el cuadro de diálogo **Opciones**.

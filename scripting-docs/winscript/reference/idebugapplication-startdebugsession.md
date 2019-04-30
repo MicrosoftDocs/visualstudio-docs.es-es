@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: a42fe61d67eedbe6f69350c7b5ec17726f43486e
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58145803"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62990693"
 ---
 # <a name="idebugapplicationstartdebugsession"></a>IDebugApplication::StartDebugSession
 Se inicia el entorno de desarrollo integrado de depurador predeterminado (IDE) y se adjunta una sesión de depuración para esta aplicación, si uno no está ya conectado.  

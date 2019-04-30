@@ -14,13 +14,13 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 466178015c725242b6bc4a28da1da6ded19b421f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55916801"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62820866"
 ---
-# <a name="how-to-configure-code-analysis-for-a-managed-code-project"></a>Filtrar Configurar el análisis de código de un proyecto de código administrado
+# <a name="how-to-configure-code-analysis-for-a-managed-code-project"></a>Procedimiento Configurar el análisis de código de un proyecto de código administrado
 
 En Visual Studio, puede elegir entre una lista de análisis de código [conjuntos de reglas](../code-quality/rule-set-reference.md)) para aplicar a un proyecto de código administrado. De forma predeterminada, el **reglas mínimas recomendadas de Microsoft** se selecciona el conjunto de reglas, pero puede aplicar una regla diferente establecer si lo desea. Conjuntos de reglas pueden aplicarse a uno o varios proyectos en una solución.
 

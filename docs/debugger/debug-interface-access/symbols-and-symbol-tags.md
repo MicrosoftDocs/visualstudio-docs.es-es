@@ -1,5 +1,5 @@
 ---
-title: Los símbolos y etiquetas de símbolo | Microsoft Docs
+title: Los símbolos y etiquetas de símbolo | Documentos de Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6affc24a84ef4d008ece5f95e45a11eb70f33b4e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56654001"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62854713"
 ---
 # <a name="symbols-and-symbol-tags"></a>Símbolos y etiquetas de símbolo
 Información de depuración sobre un programa compilado se almacena en el archivo de programa (.pdb) de la base de datos como los símbolos que son accesibles mediante la API del SDK de Debug Interface Access (DIA). Todos los símbolos tienen un [Get_symtag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md) y un [Get_symindexid](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md) propiedad. El `symTag` propiedad indica el tipo de símbolo definido por el [SymTagEnum (enumeración)](../../debugger/debug-interface-access/symtagenum.md) enumeración. El `symIndexId` propiedad es un `DWORD` valor que contiene el identificador único para cada instancia de un símbolo.

@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: b688e1199fefb050c05cc69784256b156e23094d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943498"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62567837"
 ---
 # <a name="could-not-retrieve-schema-information-for-database-object-object-name"></a>No se ha podido recuperar información de esquema del objeto de base de datos \<nombre de objeto>
 

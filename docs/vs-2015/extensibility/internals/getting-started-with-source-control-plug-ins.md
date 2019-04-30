@@ -12,11 +12,11 @@ caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 85aa5727f252ad75c45064d7b885e3d282da36a4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58996706"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62538166"
 ---
 # <a name="getting-started-with-source-control-plug-ins"></a>Introducción a los complementos de control de código fuente
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Para crear un control de código fuente complemento, debe crear un archivo DLL q
  Las tres versiones de la API de complemento de Control de código fuente (versiones 1.1, 1.2 y 1.3) están disponibles para los complementos de control de código fuente. La API de complemento de Control de código fuente documentados aquí es la versión 1.3. Se ha diseñado para ser totalmente compatible con los complementos de control de código fuente que se admiten las versiones 1.1 y 1.2. El [Novedades en el Control de origen complemento API versión 1.3](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-3.md) sección describen las nuevas características admitidas en la versión más reciente de la API de complemento de Control de código fuente.  
   
 ## <a name="in-this-section"></a>En esta sección  
- [Cómo: Instalar un complemento de Control de código fuente](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)  
+ [Cómo: Instalar un complemento de control de código fuente](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)  
  Describe cómo hacer que las entradas del registro necesarias para conectar un archivo DLL de control de código fuente.  
   
  [Novedades de la API del complemento de control de código fuente, versión 1.3](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-3.md)  

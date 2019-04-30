@@ -8,11 +8,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a1ea74d3c5f3fed961a956e9a55a4930d009d530
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58790230"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62432088"
 ---
 # <a name="troubleshooting-template-installation"></a>Solución de problemas de instalación de la plantilla
 

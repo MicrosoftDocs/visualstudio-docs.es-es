@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: afb73b316dd54284073c3d878fb35b4bb6090e08
-ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58647250"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62569995"
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>Crear una base de datos y agregar las tablas en Visual Studio
 
@@ -74,7 +74,7 @@ En esta sección, creará dos tablas, una clave principal en cada tabla y alguna
 
 1. En **Explorador de servidores**, expanda el **conexiones de datos** nodo y, a continuación, expanda el **SampleDatabase.mdf** nodo.
 
-2. Abra el menú contextual para **tablas**y, a continuación, seleccione **agregar nueva tabla**.
+2. Abra el menú contextual para **tablas**y, a continuación, seleccione **Agregar nueva tabla**.
 
      El **Diseñador de tablas** se abre y muestra una cuadrícula con una fila predeterminada que representa una columna única de la tabla que está creando. Al agregar filas a la cuadrícula, agregará columnas en la tabla.
 
@@ -87,7 +87,7 @@ En esta sección, creará dos tablas, una clave principal en cada tabla y alguna
     |`ContactName`|`nvarchar (50)`|True (seleccionada)|
     |`Phone`|`nvarchar (24)`|True (seleccionada)|
 
-4. Abra el menú contextual para el `CustomerID` fila y, a continuación, seleccione **establecer clave principal**.
+4. Abra el menú contextual para la fila `CustomerID` y, a continuación, seleccione **establecer clave principal**.
 
 5. Abra el menú contextual para la fila predeterminada y, a continuación, seleccione **eliminar**.
 
@@ -126,9 +126,9 @@ En esta sección, creará dos tablas, una clave principal en cada tabla y alguna
     CREATE TABLE [dbo].[Orders]
     ```
 
-4. En la esquina superior izquierda de la **Diseñador de tablas**, seleccione el **actualización** botón.
+4. En la esquina superior izquierda de la **Diseñador de tablas**, seleccione el botón **Actualizar**.
 
-5. En el **vista previa de actualizaciones de base de datos** cuadro de diálogo, seleccione el **Actualizar base de datos** botón.
+5. En el cuadro de diálogo de**vista previa de actualizaciones de base de datos**, seleccione el botón **Actualizar base de datos**.
 
     Los cambios realizados se guardarán en el archivo de base de datos local.
 
@@ -146,9 +146,9 @@ En esta sección, creará dos tablas, una clave principal en cada tabla y alguna
     CONSTRAINT [FK_Orders_Customers] FOREIGN KEY ([CustomerID]) REFERENCES [Customers]([CustomerID])
     ```
 
-4. En la esquina superior izquierda de la **Diseñador de tablas**, seleccione el **actualización** botón.
+4. En la esquina superior izquierda de la **Diseñador de tablas**, seleccione el botón **Actualizar**.
 
-5. En el **vista previa de actualizaciones de base de datos** cuadro de diálogo, seleccione el **Actualizar base de datos** botón.
+5. En el cuadro de diálogo de**vista previa de actualizaciones de base de datos**, seleccione el botón **Actualizar base de datos**.
 
     Los cambios realizados se guardarán en el archivo de base de datos local.
 
@@ -156,7 +156,7 @@ En esta sección, creará dos tablas, una clave principal en cada tabla y alguna
 
 1. En **Explorador de servidores** o **Explorador de objetos de SQL Server**, expanda el nodo de la base de datos de ejemplo.
 
-2. Abra el menú contextual para el **tablas** nodo, seleccione **actualizar**y, a continuación, expanda el **tablas** nodo.
+2. Abra el menú contextual para el **tablas** nodo, seleccione **actualizar** y, a continuación, expanda el nodo **tablas**.
 
 3. Abra el menú contextual para la tabla Customers y, a continuación, seleccione **mostrar datos de tabla**.
 
@@ -171,7 +171,7 @@ En esta sección, creará dos tablas, una clave principal en cada tabla y alguna
     > [!IMPORTANT]
     > Asegúrese de que todos los identificadores y cantidades de pedidos sean números enteros y que cada identificador de cliente coincida con el valor que especificó en la columna **CustomerID** de la tabla Clientes.
 
-7. En la barra de menús, seleccione **archivo** > **guardar todo**.
+7. En la barra de menús, seleccione **Archivo** > **Guardar todo**.
 
 ## <a name="see-also"></a>Vea también
 

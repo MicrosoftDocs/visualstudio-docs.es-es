@@ -1,5 +1,5 @@
 ---
-title: Filtrar Seleccionar los esquemas XML que se van a usar
+title: Procedimiento Seleccionar los esquemas XML que se van a usar
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: d6fda3ef-d465-4788-8514-2f2d528d658c
@@ -9,13 +9,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 41f830214b20df24587cf902e6b180e8a43a8cd3
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526677"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007411"
 ---
-# <a name="how-to-select-the-xml-schemas-to-use"></a>Procedimiento Seleccione los esquemas XML para usar
+# <a name="how-to-select-the-xml-schemas-to-use"></a>Procedimiento Selección de los esquemas XML que se van a usar
 
 El editor XML proporciona una caché de esquema que se encuentra en la *%VSInstallDir%\xml\Schemas* directory. La caché de esquema incluye esquemas XML muy conocidos que se utilizan en IntelliSense y en la validación de documentos XML.
 
@@ -40,7 +40,7 @@ Los esquemas especificados se guardan en un archivo de opciones de usuario de so
 
    - Seleccione un esquema que aparece en el **esquemas XML** cuadro de diálogo, haga clic en el **Use** columna y, a continuación, seleccione **utilizar este esquema**.
 
-     O bien
+     -o bien-
 
    - Seleccione varios esquemas que aparecen en la **esquemas XML** cuadro de diálogo y, a continuación, con el botón secundario y seleccione **utilizar este esquema**.
 

@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 653a9b589e68c326fc40a94ed0fa3ab7e49acb8b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60093804"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62567655"
 ---
 # <a name="create-relationships-between-datasets"></a>Crear relaciones entre conjuntos de datos
 Uso de tablas de conjuntos de datos que contienen datos relacionados <xref:System.Data.DataRelation> objetos para representar una relación primaria-secundaria entre las tablas y devolver los registros relacionados entre sí. Agregar tablas relacionadas a conjuntos de datos mediante el **Asistente para configuración de origen de datos**, o el **Diseñador de Dataset**, crea y configura el <xref:System.Data.DataRelation> objeto automáticamente.

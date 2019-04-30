@@ -16,11 +16,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: c908fdbf17b13b84355dff208b7f3106bfc72087
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58156416"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62830467"
 ---
 # <a name="jsdebugreadmemoryflags-enumeration"></a>Enumeración JsDebugReadMemoryFlags
 Marcas para especificar el comportamiento al leer la memoria.  
@@ -35,7 +35,7 @@ enum JsDebugReadMemoryFlags{   None = 0,   JsDebugAllowPartialRead= 0x1} JsDebug
   
 ### <a name="values"></a>Valores  
   
-|Nombre|Descripción|  
+|Name|Descripción|  
 |----------|-----------------|  
 |`JsDebugAllowPartialRead`|Indica que el llamador desea que la operación de lectura se realice correctamente si solo parte de la memoria de lectura se ha realizado correctamente. Si se establece, solo se produce un error E_JsDEBUG_INVALID_MEMORY_ADDRESS si 'Direcciones' no es válido. Si esta marca está desactivada, se generará un error E_JsDEBUG_INVALID_MEMORY_ADDRESS si cualquier parte de la memoria solicitada era ilegible.|  
 |`None`|Indica que el llamador desea el comportamiento predeterminado para ReadMemory.|  

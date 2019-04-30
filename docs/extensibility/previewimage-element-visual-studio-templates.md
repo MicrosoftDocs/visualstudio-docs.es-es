@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 15e09d7837c04c276e955f88e8b1afd670d6e948
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56687775"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62433479"
 ---
 # <a name="previewimage-element-visual-studio-templates"></a>PreviewImage (elemento) (plantillas de Visual Studio)
 Especifica la imagen de vista previa, como un nombre de archivo para la imagen de vista previa que aparece en el **nuevo proyecto** o **Agregar nuevo elemento** cuadro de diálogo.

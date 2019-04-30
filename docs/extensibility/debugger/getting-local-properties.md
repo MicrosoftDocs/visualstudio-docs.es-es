@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 040b40b5990edbfbd99c240d8b7e2d02e59c33af
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56695900"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62925636"
 ---
 # <a name="get-local-properties"></a>Obtener propiedades locales
 > [!IMPORTANT]

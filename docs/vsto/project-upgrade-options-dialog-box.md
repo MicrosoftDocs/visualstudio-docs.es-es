@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 619e64dc09858b7d29e05804e3c3c353882f90ef
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641733"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62561769"
 ---
 # <a name="project-upgrade-options-dialog-box"></a>Cuadro de diálogo de opciones de actualización, de proyecto
   Use la página **Actualizar proyecto** para especificar si Visual Studio cambia automáticamente los proyectos de complemento VSTO para que tengan como destino la versión de Office que está instalada en el equipo de desarrollo.

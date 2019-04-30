@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: c24816e84be2ef8f3460a04f689ecfda5400518e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58989187"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63000141"
 ---
 # <a name="legacy-designer-for-windows-workflow-foundation-ui-help"></a>Ayuda de la interfaz de usuario del diseñador heredado para Windows Workflow Foundation
 Esta sección contiene temas de Ayuda contextual para [!INCLUDE[wfd1](../includes/wfd1-md.md)] heredado en [!INCLUDE[vs2010](../includes/vs2010-md.md)]. Use el diseñador heredado cuando deba tener como destino [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  

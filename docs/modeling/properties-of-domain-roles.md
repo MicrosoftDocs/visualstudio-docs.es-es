@@ -8,16 +8,16 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 048116c07f30267c6beb2703c3eaa6fb4d3655f0
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415530"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62998944"
 ---
 # <a name="properties-of-domain-roles"></a>Propiedades de los roles de dominio
 Las propiedades en la tabla siguiente se asocian con un rol de dominio. Para obtener información acerca de los roles de dominio, consulte [descripción de los modelos, las clases y relaciones](../modeling/understanding-models-classes-and-relationships.md). Para obtener más información sobre cómo usar estas propiedades, vea [personalizar y ampliar lenguajes específicos de dominio](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
-|Property|Descripción|Default|
+|Propiedad|Descripción|Default|
 |-|-|-|
 |Tipo de colección|Si este rol tiene la multiplicidad de 0.. * o 1.. \*, esta propiedad personaliza el tipo genérico que se usa para almacenar la colección de vínculos.|`(none)` - <xref:Microsoft.VisualStudio.Modeling.LinkedElementCollection%601> se usa|
 |Atributos personalizados|Los atributos que especifique aquí se agregará como atributos a la clase de código generado.|< none\>|

@@ -1,5 +1,5 @@
 ---
-title: Técnicas de depuración de CRT | Microsoft Docs
+title: Técnicas de depuración de CRT | Documentos de Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 88cdc78fd739de412b4cf796d0ca7a42f9174e0a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619087"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62564041"
 ---
 # <a name="crt-debugging-techniques"></a>Técnicas de depuración de CRT
 Si está depurando un programa que utiliza la biblioteca en tiempo de ejecución de C, estas técnicas de depuración podrían resultar útiles.
@@ -56,5 +56,5 @@ Si está depurando un programa que utiliza la biblioteca en tiempo de ejecución
 
 ## <a name="related-sections"></a>Secciones relacionadas
 
-- [Depurar código nativo](../debugger/debugging-native-code.md) -describe algunos problemas de depuración comunes y técnicas para aplicaciones de C y C++.
+- [Depurar código nativo](../debugger/debugging-native-code.md) -se tratan algunos problemas comunes de depuración y técnicas para C y C++ aplicaciones.
 - [Seguridad del depurador](../debugger/debugger-security.md) -proporciona recomendaciones para una depuración más segura.
