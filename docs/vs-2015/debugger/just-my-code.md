@@ -14,12 +14,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e105ef33202781dcf3a2f82706827156e76548eb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 560ab40811bc53c97e7097e510144d62aeddfbb2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084341"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421825"
 ---
 # <a name="just-my-code"></a>Solo mi código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ Los desarrolladores que utilizan lenguajes de .NET Framework están familiarizad
  ![Habilitar Solo mi código en el cuadro de diálogo Opciones](../debugger/media/dbg-justmycode-options.png "DBG_JustMyCode_Options")  
   
 > [!NOTE]
->  El **habilitar solo mi código** configuración es una configuración global que se aplica a todos los proyectos de Visual Studio en todos los idiomas.  
+> El **habilitar solo mi código** configuración es una configuración global que se aplica a todos los proyectos de Visual Studio en todos los idiomas.  
   
 ### <a name="BKMK_Override_call_stack_filtering"></a> Invalidación de filtrado de la pila de llamadas  
  En las presentaciones de pilas de llamada, como las ventanas Pila de llamadas y Tareas, Solo mi código contrae el código que no es de usuario en un marco anotado con la etiqueta `[External Code]`. Para ver los marcos contraídos, elija **mostrar código externo** en el menú contextual de la pila de llamadas Mostrar.  
   
 > [!NOTE]
->  El **mostrar código externo** configuración se guarda en el generador de perfiles del usuario actual. Se aplica a todos los proyectos en todos los lenguajes abiertos por el usuario.  
+> El **mostrar código externo** configuración se guarda en el generador de perfiles del usuario actual. Se aplica a todos los proyectos en todos los lenguajes abiertos por el usuario.  
   
 ## <a name="BKMK__NET_Framework_Just_My_Code"></a> Solo mi código de .NET framework  
   

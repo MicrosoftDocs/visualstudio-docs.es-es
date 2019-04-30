@@ -8,12 +8,12 @@ ms.assetid: 7b866776-f2d5-4823-8d15-919f889db26f
 caps.latest.revision: 31
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c2514454f1aa1c1899c45edac80f7990d8208fdd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9e27478255ccd8f3d5c2786fdfc806fa4f5c0a15
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052095"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387016"
 ---
 # <a name="test-windows-uwp-and-81-phone-apps-with-coded-ui-tests"></a>Probar aplicaciones para UWP y Windows Phone 8.1 con pruebas automatizadas de IU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -125,7 +125,7 @@ Use este tutorial para crear pruebas de IU para aplicaciones para UWP que se eje
      En el Explorador de soluciones, abra el archivo CodedUITest1.vb. En el código del método de prueba CodedUITestMethod1(), haga clic con el botón secundario en la llamada al método de aserción que se agregó automáticamente, `Me.UIMap.AssertMethod1()` , y elija **Ir a definición**. Esto abrirá el archivo de UIMap.Designer.vb en el editor de código, de modo que pueda ver el código agregado para el método de aserción y los controles.  
   
     > [!WARNING]
-    >  No modifique directamente el archivo UIMap.designer.cs o el archivo UIMap.Designer.vb. Si lo hace, se sobrescribirán los cambios en el archivo cada vez que se genere la prueba.  
+    > No modifique directamente el archivo UIMap.designer.cs o el archivo UIMap.Designer.vb. Si lo hace, se sobrescribirán los cambios en el archivo cada vez que se genere la prueba.  
   
      **Método de aserción**  
   

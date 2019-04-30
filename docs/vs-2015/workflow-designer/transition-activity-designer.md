@@ -11,12 +11,12 @@ caps.latest.revision: 7
 author: steved0x
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 69e918eae56d35d134b9b7c3093d5f0599a12c5e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 026ee7af3c60b3832449f5f2ed996f00c75a1c87
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58987778"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435379"
 ---
 # <a name="transition-activity-designer"></a>Diseñadores de actividad de transición
 <xref:System.Activities.Statements.Transition> representa la transición entre dos estados.  
@@ -40,7 +40,7 @@ ms.locfileid: "58987778"
  Las transiciones se crean arrastrando una línea desde un estado a otro o colocando un estado sobre los triángulos que aparecen cuando se arrastra un estado a otro estado. Para crear una transición arrastrando, mantenga el mouse sobre el borde del estado de origen y arrastre una línea desde el estado de origen al estado de destino. Para crear una transición mediante colocación, arrastrar el estado de destino y mantenga el mouse sobre el estado de origen, y colóquela sobre uno de los cuatro triángulos que aparecen alrededor del estado de origen. El estado de destino puede ser un nuevo estado arrastrado desde el **cuadro de herramientas**, o un estado existente arrastrado desde el Diseñador de flujo de trabajo.  
   
 > [!NOTE]
->  Un solo estado en una máquina de estados puede tener hasta 76 transiciones creadas con el diseñador de flujo de trabajo. El límite de transiciones para un estado para los flujos de trabajo creados fuera del diseñador está limitado por los recursos del sistema.  
+> Un solo estado en una máquina de estados puede tener hasta 76 transiciones creadas con el diseñador de flujo de trabajo. El límite de transiciones para un estado para los flujos de trabajo creados fuera del diseñador está limitado por los recursos del sistema.  
   
  Las transiciones compartidas de desencadenador son el conjunto de transiciones que comparten el mismo evento desencadenador. Un desencadenador compartido permite la progresión condicional a un estado de destino basándose en la evaluación de expresiones configuradas para varias transiciones que comparten un evento desencadenador de común. Para agregar acciones adicionales a una transición y crear una transición compartida, haga clic en el círculo que indica el inicio de la transición deseada y arrástrelo hasta el estado deseado. La nueva transición compartirá un mismo desencadenador que la transición inicial, pero tendrá una condición y una acción únicas. Las transiciones compartidas también pueden crearse desde dentro del Diseñador de transición haciendo **Agregar transición de desencadenador compartida** en la parte inferior del diseñador transición y, a continuación, seleccione el estado de destino deseado el  **Estados disponibles para conectar** lista desplegable.  
   

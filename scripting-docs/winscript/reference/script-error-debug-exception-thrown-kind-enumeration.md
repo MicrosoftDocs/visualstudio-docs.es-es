@@ -11,18 +11,18 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b9dae0161e3337411a56e316e04cf467a1f05e6a
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 3be6989195eacdd4d70bd13790d55e4f6cfc769d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58155724"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443648"
 ---
 # <a name="scripterrordebugexceptionthrownkind-enumeration"></a>Enumeración SCRIPT_ERROR_DEBUG_EXCEPTION_THROWN_KIND
 Indica la clase de la excepción producida. Esta enumeración se utiliza en el [IActiveScriptErrorDebug110::GetExceptionThrownKind](../../winscript/reference/iactivescripterrordebug110-getexceptionthrownkind.md) método.  
   
 > [!IMPORTANT]
->  Estas constantes se implementan mediante PDM versión 11.0 y versiones posteriores. Se encuentra en activdbg100.h.  
+> Estas constantes se implementan mediante PDM versión 11.0 y versiones posteriores. Se encuentra en activdbg100.h.  
   
 ## <a name="syntax"></a>Sintaxis  
   

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8383e82091ec9cc62f5b08dcc89f1e1e74239030
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fd399bb0d18d4a12493530932705b938a5f6dd67
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096795"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414853"
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>Personalizar y ampliar lenguajes específicos de dominio
 Visual Studio de modelado y visualización SDK (VMSDK) proporciona varios niveles en el que puede definir las herramientas de modelado:
@@ -28,7 +28,7 @@ Visual Studio de modelado y visualización SDK (VMSDK) proporciona varios nivele
 3. Amplíe sus herramientas de modelado mediante el uso de código de programa. VMSDK está diseñado específicamente para facilitar la integración de las extensiones con el código que se genera a partir de la definición de DSL.  Para obtener más información, consulte [escribir código para personalizar un lenguaje específico de dominio](../modeling/writing-code-to-customise-a-domain-specific-language.md).
 
 > [!NOTE]
->  Si ha actualizado el archivo de definiciones de DSL, no olvide hacer clic en **Transformar todas las plantillas** en la barra de herramientas del explorador de soluciones antes de volver a generar la solución.
+> Si ha actualizado el archivo de definiciones de DSL, no olvide hacer clic en **Transformar todas las plantillas** en la barra de herramientas del explorador de soluciones antes de volver a generar la solución.
 
 ## <a name="customShapes"></a> En esta sección
 

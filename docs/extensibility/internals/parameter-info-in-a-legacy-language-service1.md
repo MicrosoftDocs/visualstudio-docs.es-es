@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0530e5547fd17e1db84e7164039b507cb4583703
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 836788e0d9d44c7da5dda44ce80f76ab91642dda
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086318"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63423968"
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>Información de parámetros en un servicio de lenguaje heredado
 La información sobre herramientas de información de parámetros IntelliSense proporciona a los usuarios con sugerencias sobre dónde se encuentra en una construcción de lenguaje.
@@ -27,7 +27,7 @@ La información sobre herramientas de información de parámetros IntelliSense p
  Servicios de lenguaje heredado se implementan como parte de un paquete VSPackage, pero la forma más reciente para implementar características de servicio de lenguaje es usar las extensiones MEF. Para obtener más información, consulte [ampliación del Editor y los servicios de lenguaje](../../extensibility/extending-the-editor-and-language-services.md).
 
 > [!NOTE]
->  Se recomienda que comience a usar el nuevo editor de API tan pronto como sea posible. Esto mejorará el rendimiento de su servicio de lenguaje y le permiten aprovechar las nuevas características del editor.
+> Se recomienda que comience a usar el nuevo editor de API tan pronto como sea posible. Esto mejorará el rendimiento de su servicio de lenguaje y le permiten aprovechar las nuevas características del editor.
 
 ## <a name="how-parameter-info-tooltips-work"></a>Cómo funciona el parámetro información sobre herramientas
  Cuando se escribe una instrucción en el editor, el VSPackage muestra una ventana pequeña información sobre herramientas que contiene la definición de la instrucción que se ha escrito. Por ejemplo, si escribe una instrucción de Microsoft Foundation Classes (MFC) (como `pMainFrame ->UpdateWindow`) y presione el paréntesis de apertura de clave para empezar a enumerar los parámetros, una sugerencia de método aparece muestra la definición de la `UpdateWindow` método.

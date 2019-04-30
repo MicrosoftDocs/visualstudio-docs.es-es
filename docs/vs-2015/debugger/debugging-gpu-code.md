@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 07e3c15fad2758de965d0e13c2b64ac3ceebd2fe
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: dc5a54b1dee2345f42abd3a00b39c11388185d03
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114137"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434876"
 ---
 # <a name="debugging-gpu-code"></a>Depurar código de GPU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Puede depurar el código de C++ que se está ejecutando en la unidad central de 
  La depuración se admite en [!INCLUDE[win7](../includes/win7-md.md)], [!INCLUDE[win8](../includes/win8-md.md)], [!INCLUDE[winsvr08_r2](../includes/winsvr08-r2-md.md)], y [!INCLUDE[winserver8](../includes/winserver8-md.md)]. Para depurar en el emulador de software, se requiere [!INCLUDE[win8](../includes/win8-md.md)] o [!INCLUDE[winserver8](../includes/winserver8-md.md)]. Para depurar en el hardware, debe instalar los controladores de su tarjeta gráfica. No todos los proveedores de hardware implementan todas las características del depurador. Vea la documentación del proveedor para conocer las limitaciones.  
   
 > [!NOTE]
->  Los proveedores de hardware independientes que deseen admitir la depuración de GPU en Visual Studio deben crear un archivo DLL que implemente la interfaz VSD3DDebug y esté diseñado para sus propios controladores.  
+> Los proveedores de hardware independientes que deseen admitir la depuración de GPU en Visual Studio deben crear un archivo DLL que implemente la interfaz VSD3DDebug y esté diseñado para sus propios controladores.  
   
 ## <a name="configuring-gpu-debugging"></a>Configurar la depuración de GPU  
  El depurador no puede interrumpir el código de CPU y el código de GPU en la misma ejecución de la aplicación. De forma predeterminada, el depurador interrumpe el código de CPU. Para depurar el código de GPU, siga uno de estos dos pasos:  

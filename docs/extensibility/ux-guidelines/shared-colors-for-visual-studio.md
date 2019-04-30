@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5ce63a9f5ab04748975521c225d207bee2b0937b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7e873250488bff50519cc12060841110325a48e8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089569"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430230"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Colores compartidos para Visual Studio
 Cuando diseña la interfaz de usuario que utiliza elementos comunes de shell de Visual Studio, o desea que el elemento de la interfaz para que sea coherente con características similares, utilice nombres de token existentes en archivos de definición de paquete para elegir y asignar colores. Esto garantiza que la interfaz de usuario mantenga la coherencia con el entorno general de Visual Studio y que se actualice automáticamente cuando se agreguen o actualicen temas.
@@ -1413,7 +1413,7 @@ Un grupo de la barra de comandos se compone de un conjunto relacionado de contro
 #### <a name="BKMK_CommandDropDown"></a> Barra de comandos desplegables
 
 > [!IMPORTANT]
->  Las listas desplegables son similares a los cuadros combinados, pero carecen de áreas de texto editable. Si la lista desplegable incluye un área de texto editable, use los tokens de color para [cuadros combinados de la barra de comandos](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandComboBox).
+> Las listas desplegables son similares a los cuadros combinados, pero carecen de áreas de texto editable. Si la lista desplegable incluye un área de texto editable, use los tokens de color para [cuadros combinados de la barra de comandos](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandComboBox).
 
 ![Lista desplegable de la barra de comandos (línea roja)](../../extensibility/ux-guidelines/media/0303-042_dropdownredline.png "0303 042_DropdownRedline")<br />Lista desplegable de la barra de comandos (límite)
 

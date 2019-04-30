@@ -13,12 +13,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 65bcae25fb18c7bbd3786a5426582bdf3d5b264b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 82a15703fdb1738d92b6b7bbeda053625bb5fdda
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58988339"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434880"
 ---
 # <a name="idiasymbolgetage"></a>IDiaSymbol::get_age
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ HRESULT get_age ( 
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o código de error.  
   
 > [!NOTE]
->  Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.  
+> Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.  
   
 ## <a name="remarks"></a>Comentarios  
  La antigüedad no corresponden necesariamente a cualquier valor de tiempo conocido; Normalmente se usa para determinar si un archivo .pdb no está sincronizado con un archivo .exe correspondiente.  

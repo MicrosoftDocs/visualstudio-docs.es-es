@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d8ce41d6532a7c389d20872c35a216a96910578
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c2ff6d38ef4fcce400888121ef12883b00bcc0c7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087774"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386705"
 ---
 # <a name="understanding-the-dsl-code"></a>Introducción al código DSL
 
@@ -131,7 +131,7 @@ Presione **F5** y experimentar si no está familiarizado con esta plantilla de s
   La clase que representa el modelo de dominio. Deriva de <xref:Microsoft.VisualStudio.Modeling.DomainModel>.
 
 > [!NOTE]
->  No es la misma que la clase raíz del modelo.
+> No es la misma que la clase raíz del modelo.
 
  Copy y Delete Closures definen qué otros elementos se deben incluir cuando se copia o se elimina un elemento. Puede controlar este comportamiento estableciendo el **Propagates Copy** y **propaga eliminar** propiedades de los roles en ambos lados de todas las relaciones. Si quiere que los valores se determinen dinámicamente, puede escribir código para invalidar los métodos de las clases Closure.
 
@@ -340,7 +340,7 @@ explorerWindow.TreeContainer.ObjectModelBrowser.SelectedNode = treeNode;
  Para personalizar este archivo, edite el archivo `.tt`.
 
 > [!WARNING]
->  Si edita el archivo .tt para incluir recursos como iconos o imágenes, asegúrese de que el recurso se incluye en la compilación de VSIX. En el Explorador de soluciones, seleccione el archivo y asegúrese de que el **incluir en VSIX** propiedad es `True`.
+> Si edita el archivo .tt para incluir recursos como iconos o imágenes, asegúrese de que el recurso se incluye en la compilación de VSIX. En el Explorador de soluciones, seleccione el archivo y asegúrese de que el **incluir en VSIX** propiedad es `True`.
 
  Este archivo controla cómo se empaqueta el DSL en una extensión de integración de Visual Studio (VSIX). Para obtener más información, vea [Implementación de soluciones de lenguaje específico de dominio](../modeling/deploying-domain-specific-language-solutions.md).
 

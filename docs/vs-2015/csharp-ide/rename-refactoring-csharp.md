@@ -16,12 +16,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 82f3d4a3ae9bc587fef038186afe9faef880571c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 971ca4e94f28016335483a03f4b0121de587f00d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114737"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439955"
 ---
 # <a name="rename-refactoring-c"></a>Cambiar el nombre de refactorización (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "60114737"
 **Cambiar el nombre** es una característica de refactorización en el entorno de desarrollo integrado (IDE) de Visual Studio que proporciona una manera fácil de cambiar el nombre de los identificadores de símbolos de código, como campos, variables locales, métodos, espacios de nombres, propiedades y tipos. **Cambiar el nombre de** puede utilizarse para cambiar los nombres en los comentarios y en las cadenas y cambiar las declaraciones y las llamadas de un identificador.  
   
 > [!NOTE]
->  Cuando se usa el Control de código fuente para Visual Studio, obtenga la versión más reciente de los orígenes antes de intentar realizar la operación de refactorización.  
+> Cuando se usa el Control de código fuente para Visual Studio, obtenga la versión más reciente de los orígenes antes de intentar realizar la operación de refactorización.  
   
  La operación de refactorización está disponible en las siguientes características de Visual Studio:  
   
@@ -116,7 +116,7 @@ ms.locfileid: "60114737"
 2. En la declaración de `MethodB`, escriba o borrarlo el identificador de método. Aparecerá un mensaje de etiqueta inteligente por debajo de este identificador.  
   
     > [!NOTE]
-    >  Sólo puede invocar la operación de refactorización con las etiquetas inteligentes en la declaración de un identificador.  
+    > Sólo puede invocar la operación de refactorización con las etiquetas inteligentes en la declaración de un identificador.  
   
 3. Escriba el método abreviado de teclado MAYÚS + ALT + F10 y, a continuación, presione la flecha abajo para mostrar el menú de etiquetas inteligentes.  
   
@@ -144,7 +144,7 @@ ms.locfileid: "60114737"
  Si **cambiar el nombre de las sobrecargas** está activada, el motor de refactorización cambia el nombre `Derived.Method(int i)` porque sobrecarga `Derived.Method()`, `Base.Method(int i)` porque se haya reemplazado por `Derived.Method(int i)`, y `Base.Method()` porque es una sobrecarga de `Base.Method(int i)`.  
   
 > [!NOTE]
->  Al cambiar el nombre de un miembro que se definió en un ensamblado de referencia, un cuadro de diálogo explica ese cambio producirá errores de compilación.  
+> Al cambiar el nombre de un miembro que se definió en un ensamblado de referencia, un cuadro de diálogo explica ese cambio producirá errores de compilación.  
   
 ## <a name="renaming-properties-of-anonymous-types"></a>Cambiar el nombre de las propiedades de tipos anónimos  
  Al cambiar el nombre de una propiedad en tipos anónimos, la operación de cambio se propagará a propiedades de otros tipos anónimos que tienen las mismas propiedades. Los ejemplos siguientes muestran este comportamiento.  

@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Crear plantillas Web manualmente | Microsoft Docs
+title: Procedimiento Crear plantillas Web manualmente | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -14,20 +14,20 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4884ef313d969ae59b8aea704490eeb2e4e5a91c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 8a505fe3428a8e16c321eee4764f8a62fff65511
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54782215"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431093"
 ---
-# <a name="how-to-manually-create-web-templates"></a>Cómo: Crear plantillas web manualmente
+# <a name="how-to-manually-create-web-templates"></a>Procedimiento Crear plantillas Web manualmente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 La creación de una plantilla web es diferente de la creación de otros tipos de plantillas. Dado que las plantillas de proyecto web aparecen en el cuadro de diálogo **Agregar nuevo sitio web** y los elementos de proyecto web se clasifican por lenguaje de programación, el archivo .vstemplate debe especificar la plantilla como una plantilla web e identificar el lenguaje de programación.  
   
 > [!NOTE]
->  Las plantillas web deben contener un archivo .webproj vacío que se especifica mediante el atributo `File` del elemento `Project`. Aunque los proyectos web no requieren archivos de proyecto, este archivo es necesario para que las plantillas web funcionen correctamente.  
+> Las plantillas web deben contener un archivo .webproj vacío que se especifica mediante el atributo `File` del elemento `Project`. Aunque los proyectos web no requieren archivos de proyecto, este archivo es necesario para que las plantillas web funcionen correctamente.  
   
 ### <a name="to-manually-create-a-web-template"></a>Para crear una plantilla web manualmente  
   

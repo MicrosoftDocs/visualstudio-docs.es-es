@@ -14,12 +14,12 @@ caps.latest.revision: 45
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 61c56636eec92f28468533b7c4d9a51e6f120363
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0588d887cc1ba36a1ebb71df933686f68be524fc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054502"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426621"
 ---
 # <a name="run-windows-store-apps-in-the-simulator"></a>Ejecutar aplicaciones de la Tienda Windows en el simulador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ El simulador de Visual Studio para aplicaciones de la Tienda Windows es una apli
  Consulte [Run Windows Phone apps in the emulator](../debugger/run-windows-phone-apps-in-the-emulator.md) para obtener información de Windows Phone.  
   
 > [!IMPORTANT]
->  El simulador de Visual Studio 2015 no incluye el botón de geolocalización. Esto se debe a que el simulador de Windows 10 no incluye la simulación de geolocalización. Si necesita realizar este tipo de simulación, puede usar el simulador de Visual Studio 2013 en Windows 8.1 o en sistemas operativos anteriores.  
+> El simulador de Visual Studio 2015 no incluye el botón de geolocalización. Esto se debe a que el simulador de Windows 10 no incluye la simulación de geolocalización. Si necesita realizar este tipo de simulación, puede usar el simulador de Visual Studio 2013 en Windows 8.1 o en sistemas operativos anteriores.  
   
 ## <a name="BKMK_Set_the_simulator_as_the_target"></a> Establecer el simulador como destino  
  Para ejecutar la aplicación de la Tienda Windows en el simulador, selecciona **Simulador** en la lista desplegable que hay junto al botón **Iniciar depuración** en la barra de herramientas **Estándar** del depurador.  
@@ -86,10 +86,10 @@ El simulador de Visual Studio para aplicaciones de la Tienda Windows es una apli
  Puedes cambiar la orientación del dispositivo entre vertical y horizontal rotándolo 90 grados en cualquier dirección.  
   
 > [!NOTE]
->  El simulador no respeta la propiedad [DisplayProperties.AutoRotationPreferences](http://go.microsoft.com/fwlink/?LinkId=249460) de un proyecto. Por ejemplo, si el proyecto establece la orientación en `Landscape`y, después, tú rotes el simulador para situarlo en orientación vertical, la imagen de la pantalla del simulador también se rotará y cambiará de tamaño. Debes probar la configuración en un dispositivo real.  
+> El simulador no respeta la propiedad [DisplayProperties.AutoRotationPreferences](http://go.microsoft.com/fwlink/?LinkId=249460) de un proyecto. Por ejemplo, si el proyecto establece la orientación en `Landscape`y, después, tú rotes el simulador para situarlo en orientación vertical, la imagen de la pantalla del simulador también se rotará y cambiará de tamaño. Debes probar la configuración en un dispositivo real.  
   
 > [!NOTE]
->  Si rotas el simulador de modo que su borde sea mayor que la pantalla en que aparece, su tamaño cambia para ajustarse automáticamente a la pantalla. Si lo vuelves a rotar, no recupera su tamaño original.  
+> Si rotas el simulador de modo que su borde sea mayor que la pantalla en que aparece, su tamaño cambia para ajustarse automáticamente a la pantalla. Si lo vuelves a rotar, no recupera su tamaño original.  
   
 ## <a name="BKMK_Change_the_simulated_screen_size_and_resolution"></a> Cambiar el tamaño y la resolución de pantalla simulados  
  Para cambiar el tamaño y la resolución de pantalla simulados, seleccione el botón **Cambiar resolución** en la paleta y seleccione otro tamaño y resolución en la lista.  
@@ -97,13 +97,13 @@ El simulador de Visual Studio para aplicaciones de la Tienda Windows es una apli
  El tamaño y la resolución de la pantalla aparecen como *Pulgadas de ancho de pantalla, ancho de píxel X alto de píxel*. Ten en cuenta que tanto el tamaño como la resolución de pantalla son simulados. Las coordenadas de ubicación del simulador se convierten a las coordenadas del tamaño y la resolución seleccionados del dispositivo.  
   
 > [!NOTE]
->  Puedes guardar versiones a escala de las imágenes de mapa de bits en tu aplicación. Windows cargará la imagen correcta para la escala actual. Para más información, vea [Diseño dinámico 101](https://msdn.microsoft.com/library/windows/apps/dn958435.aspx). Sin embargo, si cambias la resolución del simulador de modo que Windows elija otra imagen para ajustarla a la resolución, deberás detener y reiniciar la sesión de depuración para ver la nueva imagen.  
+> Puedes guardar versiones a escala de las imágenes de mapa de bits en tu aplicación. Windows cargará la imagen correcta para la escala actual. Para más información, vea [Diseño dinámico 101](https://msdn.microsoft.com/library/windows/apps/dn958435.aspx). Sin embargo, si cambias la resolución del simulador de modo que Windows elija otra imagen para ajustarla a la resolución, deberás detener y reiniciar la sesión de depuración para ver la nueva imagen.  
   
 ## <a name="BKMK_Capture_a_screenshot_of_your_app_for_submission_to_the_Microsoft_Store"></a> Realizar una captura de pantalla de la aplicación para enviarla a la Tienda Windows  
  Al enviar una aplicación a la tienda de aplicaciones de Windows, debe incluir capturas de pantalla de la aplicación.  
   
 > [!NOTE]
->  La captura de pantalla se guarda con la resolución actual del simulador. Para cambiar la resolución, elige el botón **Cambiar resolución** .  
+> La captura de pantalla se guarda con la resolución actual del simulador. Para cambiar la resolución, elige el botón **Cambiar resolución** .  
   
 - Para crear capturas de pantalla de la aplicación en el simulador, elige el botón **Capturar pantalla en el Portapapeles** .  
   

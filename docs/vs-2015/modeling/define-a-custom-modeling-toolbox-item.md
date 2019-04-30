@@ -11,12 +11,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: becc123cab729aff7d1306bb0ee13aee521444ec
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fc8bcd7a373ab6ee63e32b5873fd149001137511
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105050"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433186"
 ---
 # <a name="define-a-custom-modeling-toolbox-item"></a>Definir un elemento personalizado en un cuadro de herramientas de modelado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Para que le resulte más fácil crear un elemento o grupo de elementos conforme 
 - Un par de clases vinculadas mediante una asociación para representar el patrón Observer.  
   
 > [!NOTE]
->  Puede usar este método para crear herramientas de elemento. Es decir, puede crear herramientas que se arrastren desde el cuadro de herramientas a un diagrama. No se pueden crear herramientas de conector.  
+> Puede usar este método para crear herramientas de elemento. Es decir, puede crear herramientas que se arrastren desde el cuadro de herramientas a un diagrama. No se pueden crear herramientas de conector.  
   
 ## <a name="DefineTool"></a> Definir una herramienta de modelado personalizada  
   
@@ -136,7 +136,7 @@ Para que le resulte más fácil crear un elemento o grupo de elementos conforme 
  Puede editar el archivo de mapa de bits en Visual Studio y establecer el alto y ancho en 16 en la ventana Propiedades.  
   
 > [!NOTE]
->  Si empieza a usar un archivo .tbxinfo después de experimentar con archivos de diagrama en solitario, es posible que el cuadro de herramientas contenga la versión anterior y la versión nueva de un cuadro de herramientas. Esto también puede producirse si el nombre del archivo de diagrama se escribió incorrectamente en el archivo .tbxinfo. Si esto ocurre, en el menú contextual del cuadro de herramientas elija **Restablecer cuadro de herramientas**. Los elementos de cuadro de herramientas personalizados desaparecerán. Reinicie Visual Studio y aparecerán los elementos personalizados correctos.  
+> Si empieza a usar un archivo .tbxinfo después de experimentar con archivos de diagrama en solitario, es posible que el cuadro de herramientas contenga la versión anterior y la versión nueva de un cuadro de herramientas. Esto también puede producirse si el nombre del archivo de diagrama se escribió incorrectamente en el archivo .tbxinfo. Si esto ocurre, en el menú contextual del cuadro de herramientas elija **Restablecer cuadro de herramientas**. Los elementos de cuadro de herramientas personalizados desaparecerán. Reinicie Visual Studio y aparecerán los elementos personalizados correctos.  
   
 ## <a name="Extension"></a> Cómo distribuir elementos del cuadro de herramientas en una extensión de Visual Studio  
  Puede distribuir a otros elementos del cuadro [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] a los usuarios, empaquételos en una extensión de Visual Studio (VSIX). Puede empaquetar comandos, perfiles y otras extensiones en el mismo archivo VSIX. Para obtener más información, consulte [implementar extensiones de Visual Studio](http://go.microsoft.com/fwlink/?LinkId=160780).  
@@ -164,7 +164,7 @@ Para que le resulte más fácil crear un elemento o grupo de elementos conforme 
     - En el Explorador de soluciones, en el menú contextual del proyecto VSIX, elija **agregar**, **elemento existente**. En el cuadro de diálogo, establezca **objetos de tipo: Todos los archivos**. Busque los archivos, selecciónelos todos y, a continuación, elija **agregar**.  
   
         > [!NOTE]
-        >  En este proyecto, los archivos de diagrama no se pueden abrir en el editor de modelos.  
+        > En este proyecto, los archivos de diagrama no se pueden abrir en el editor de modelos.  
   
 5. Establezca las siguientes propiedades de todos los archivos que acaba de agregar. Puede establecer sus propiedades al mismo tiempo si los selecciona todos en el Explorador de soluciones. Tenga cuidado de no cambiar las propiedades de los demás archivos del proyecto.  
   
@@ -185,7 +185,7 @@ Para que le resulte más fácil crear un elemento o grupo de elementos conforme 
     - Tipo = `Microsoft.VisualStudio.ArchitectureTools.CustomToolboxItems`  
   
         > [!NOTE]
-        >  Esta no es una de las opciones de la lista desplegable. Debe escribirla mediante el teclado.  
+        > Esta no es una de las opciones de la lista desplegable. Debe escribirla mediante el teclado.  
   
     - **Origen** = **archivo en filesystem**.  
   

@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bf2fd868927a7e8380d5c079c2f8dc86d5385961
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 8f322d18afdb8e14ee87ae31d30dd6bdd57b07c5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628421"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431281"
 ---
 # <a name="design-a-business-data-connectivity-model"></a>Diseñar un modelo de conectividad a datos empresariales
   Puede desarrollar un modelo para el servicio de conectividad de datos profesionales (BDC) mediante la adición de métodos y las entidades a un archivo de modelo. Una entidad describe una colección de campos de datos. Por ejemplo, una entidad puede representar una tabla en una base de datos. Un método realiza una tarea, como agregar, eliminar o actualizar los datos representados por las entidades. Para obtener más información, consulte [integrar datos profesionales en SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md).
@@ -96,7 +96,7 @@ ms.locfileid: "56628421"
  También puede establecer permisos de seguridad de modelos individuales o tipos de contenido externo. Para obtener más información sobre cómo establecer los permisos de seguridad de un modelo, vea [administración del modelo BDC](http://go.microsoft.com/fwlink/?LinkID=178884). Para obtener más información sobre cómo establecer los permisos de seguridad de un tipo de contenido externo, consulte [administración del tipo de contenido externo](http://go.microsoft.com/fwlink/?LinkID=178885).
 
 > [!NOTE]
->  Use estas opciones para depurar una solución en el servidor de SharePoint local. Para obtener más información acerca de cómo configurar opciones de seguridad relacionados con el BDC en el servidor de producción de SharePoint, vea [información general sobre la seguridad de Business Data Connectivity Services](http://go.microsoft.com/fwlink/?LinkID=178886).
+> Use estas opciones para depurar una solución en el servidor de SharePoint local. Para obtener más información acerca de cómo configurar opciones de seguridad relacionados con el BDC en el servidor de producción de SharePoint, vea [información general sobre la seguridad de Business Data Connectivity Services](http://go.microsoft.com/fwlink/?LinkID=178886).
 
 ### <a name="retract-models-that-become-corrupt"></a>Retirar los modelos que se han dañado
  La primera vez que inicie al depurador, Visual Studio implementa el modelo completo en SharePoint. Para cada hora a partir de entonces, Visual Studio actualiza el modelo en SharePoint con los cambios realizados entre las distintas implementaciones.

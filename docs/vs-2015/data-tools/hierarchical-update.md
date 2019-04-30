@@ -24,12 +24,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 17eb5c1ca2ad35b7a510c5a70d3ad5c5f741c69d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 666b5acaae84a1b16c1b4bdfeb7cb1b8f4bcfb64
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063405"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386007"
 ---
 # <a name="hierarchical-update"></a>Actualización jerárquica
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ Actualización jerárquica * se refiere al proceso de guardar los datos actualiz
  Establecer el orden para realizar actualizaciones establece el orden de la persona que inserta, actualiza y elimina ese necesarias para guardar todos los datos modificados en todas las tablas de un conjunto de datos. Cuando la actualización jerárquica está habilitada, primero se realizan las inserciones, después las actualizaciones y, por último, las eliminaciones. `TableAdapterManager` proporciona una propiedad `UpdateOrder` que se puede establecer para realizar primero las actualizaciones, después las inserciones y, por último, las eliminaciones.  
   
 > [!NOTE]
->  Es importante comprender que el orden de actualización es totalmente inclusivo. Es decir, cuando se realizan actualizaciones, inserciones y eliminaciones se realizan para todas las tablas del conjunto de datos.  
+> Es importante comprender que el orden de actualización es totalmente inclusivo. Es decir, cuando se realizan actualizaciones, inserciones y eliminaciones se realizan para todas las tablas del conjunto de datos.  
   
  Para establecer el `UpdateOrder` propiedad después de arrastrar elementos desde el [ventana Orígenes de datos](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992) en un formulario, seleccione el `TableAdapterManager` en la Bandeja de componentes y, a continuación, establezca el `UpdateOrder` propiedad en el **propiedades** ventana. Para obtener más información, vea [Cómo: Establecer el orden al realizar una actualización jerárquica](http://msdn.microsoft.com/library/a0734935-78dd-4c0b-80d7-5e7925789c83).  
   
@@ -71,7 +71,7 @@ Actualización jerárquica * se refiere al proceso de guardar los datos actualiz
  Sin embargo, a veces se decide restaurar el conjunto de datos a partir de la copia de seguridad. Un ejemplo de esto puede producirse cuando se usa valores de incremento automático. Por ejemplo, si una operación de guardar la operación no es correcta, no se restablecen los valores de incremento automático en el conjunto de datos y continúa el conjunto de datos crear valores de incremento automático. Esto deja una discontinuidad en la numeración que puede no ser aceptable en la aplicación. En situaciones donde éste es un problema, `TableAdapterManager` proporciona una propiedad `BackupDataSetBeforeUpdate` que reemplaza el conjunto de datos existente con una copia de seguridad si se produce un error en la transacción.  
   
 > [!NOTE]
->  La copia de seguridad únicamente permanece en memoria mientras el `TableAdapterManager.UpdateAll` método se está ejecutando. Por lo tanto, no hay ningún acceso mediante programación a este conjunto de datos de copia de seguridad porque reemplaza el conjunto de datos original o se sale del ámbito tan pronto como el `TableAdapterManager.UpdateAll` método termina de ejecutarse.  
+> La copia de seguridad únicamente permanece en memoria mientras el `TableAdapterManager.UpdateAll` método se está ejecutando. Por lo tanto, no hay ningún acceso mediante programación a este conjunto de datos de copia de seguridad porque reemplaza el conjunto de datos original o se sale del ámbito tan pronto como el `TableAdapterManager.UpdateAll` método termina de ejecutarse.  
   
 ## <a name="modify-the-generated-save-code-to-perform-the-hierarchical-update"></a>Modificar generado código para realizar la actualización jerárquica de guardado  
  Guarde en la base de datos los cambios de las tablas de datos relacionadas del conjunto de datos; para ello, llame al método `TableAdapterManager.UpdateAll` y pase el nombre del conjunto de datos que contiene las tablas relacionadas. Por ejemplo, ejecute el método `TableAdapterManager.UpdateAll(NorthwindDataset)` para enviar las actualizaciones de todas las tablas de NorthwindDataset a la base de datos back-end.  
@@ -81,7 +81,7 @@ Actualización jerárquica * se refiere al proceso de guardar los datos actualiz
  El código de guardado generado también contiene una línea de código que llama al método `CustomersBindingSource.EndEdit`. Más concretamente, llama a la <xref:System.Windows.Forms.BindingSource.EndEdit%2A> método del primer <xref:System.Windows.Forms.BindingSource>que se agrega al formulario. En otras palabras, este código solo se genera para la primera tabla que se arrastra desde el **orígenes de datos** ventana hasta el formulario. La llamada <xref:System.Windows.Forms.BindingSource.EndEdit%2A> confirma los cambios que están en curso en los controles enlazados a datos que se estén editando en ese momento. Por lo tanto, si un control enlazado a datos aún tiene el foco y hace clic en el botón **Guardar**, todas las ediciones pendientes en ese control se confirman antes del guardado real (el método `TableAdapterManager.UpdateAll`).  
   
 > [!NOTE]
->  El Diseñador de Dataset solo agrega el `BindingSource.EndEdit` código para la primera tabla que se coloca en el formulario. Por lo tanto, tiene que agregar una línea de código para llamar al método `BindingSource.EndEdit` para cada tabla relacionada en el formulario. Para este tutorial, esto significa que tiene que agregar una llamada al método `OrdersBindingSource.EndEdit`.  
+> El Diseñador de Dataset solo agrega el `BindingSource.EndEdit` código para la primera tabla que se coloca en el formulario. Por lo tanto, tiene que agregar una línea de código para llamar al método `BindingSource.EndEdit` para cada tabla relacionada en el formulario. Para este tutorial, esto significa que tiene que agregar una llamada al método `OrdersBindingSource.EndEdit`.  
   
 #### <a name="to-update-the-code-to-commit-changes-to-the-related-tables-before-saving"></a>Para actualizar el código para confirmar los cambios en las tablas relacionadas antes de guardar  
   
@@ -95,7 +95,7 @@ Actualización jerárquica * se refiere al proceso de guardar los datos actualiz
    Además de confirmar los cambios en una tabla secundaria relacionada antes de guardar los datos en una base de datos, quizás también tenga que confirmar los registros primarios recién creados antes de agregar nuevos registros secundarios a un conjunto de datos. En otras palabras, quizás tenga que agregar el nuevo registro primario (Customer) al conjunto de datos para que las restricciones de clave externa permitan agregar nuevos registros secundarios (Orders) al conjunto de datos. Para ello, puede usar el evento `BindingSource.AddingNew` secundario.  
   
 > [!NOTE]
->  Si tiene que confirmar los nuevos registros primarios depende del tipo de control que se usa para enlazar al origen de datos. En este tutorial, se usan controles individuales para enlazar a la tabla primaria. Esto requiere que el código adicional para confirmar el nuevo registro primario. Si los registros primarios se mostraron en su lugar en un control de enlace complejo como el <xref:System.Windows.Forms.DataGridView>este adicionales <xref:System.Windows.Forms.BindingSource.EndEdit%2A> llamar a para el registro primario no sería necesario. Esto se debe a que la funcionalidad de enlace a datos subyacente del control controla la confirmación de los nuevos registros.  
+> Si tiene que confirmar los nuevos registros primarios depende del tipo de control que se usa para enlazar al origen de datos. En este tutorial, se usan controles individuales para enlazar a la tabla primaria. Esto requiere que el código adicional para confirmar el nuevo registro primario. Si los registros primarios se mostraron en su lugar en un control de enlace complejo como el <xref:System.Windows.Forms.DataGridView>este adicionales <xref:System.Windows.Forms.BindingSource.EndEdit%2A> llamar a para el registro primario no sería necesario. Esto se debe a que la funcionalidad de enlace a datos subyacente del control controla la confirmación de los nuevos registros.  
   
 #### <a name="to-add-code-to-commit-parent-records-in-the-dataset-before-adding-new-child-records"></a>Para agregar código para confirmar los registros primarios en el conjunto de datos antes de agregar registros secundarios  
   

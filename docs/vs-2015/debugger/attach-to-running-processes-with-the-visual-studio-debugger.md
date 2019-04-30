@@ -29,12 +29,12 @@ caps.latest.revision: 62
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f0ebd89937eedfc2851c3b57998ef2628f9e8904
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c7e352dcaccd328b4794389726277701014da7be
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053304"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436807"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Crear asociaciones con procesos en ejecución con el depurador de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -133,10 +133,10 @@ Para algunos tipos de aplicación (por ejemplo, las aplicaciones de Windows Stor
 |Depurar una aplicación Universal de Windows (UWP), OneCore, HoloLens o IoT que no se inició desde Visual Studio|Depurar paquete de aplicaciones instalado|N/D|Use **depurar / otros destinos de depuración / depurar paquete de la aplicación instalado** en lugar de **asociar al proceso**|
 
 > [!WARNING]
->  Para asociar a una aplicación universal de Windows escrita en JavaScript, primero debe habilitar la depuración de la aplicación. Vea [Attach the debugger](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md#BKMK_Attach_the_debugger) en el Centro de desarrollo de Windows.
+> Para asociar a una aplicación universal de Windows escrita en JavaScript, primero debe habilitar la depuración de la aplicación. Vea [Attach the debugger](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md#BKMK_Attach_the_debugger) en el Centro de desarrollo de Windows.
 
 > [!NOTE]
->  Para que el depurador se asocie al código escrito en C++, el código debe emitir `DebuggableAttribute`. Puede agregar este atributo automáticamente al código vinculando con la opción [/ASSEMBLYDEBUG](http://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982) del vinculador.
+> Para que el depurador se asocie al código escrito en C++, el código debe emitir `DebuggableAttribute`. Puede agregar este atributo automáticamente al código vinculando con la opción [/ASSEMBLYDEBUG](http://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982) del vinculador.
 
 ## <a name="what-debugger-features-can-i-use"></a>¿Qué características del depurador se debe usar?
 

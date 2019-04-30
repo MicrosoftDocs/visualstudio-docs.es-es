@@ -30,12 +30,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 49cb0af47f34abbda5bd212d8ce535e98c44d6b5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4e998b2367929f788ace5fb6a8de7fc5bb96c3e3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054578"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438774"
 ---
 # <a name="office-project-templates-overview"></a>Introducción a las plantillas de proyecto de Office
   Las Microsoft Office Developer Tools en Visual Studio incluye plantillas de proyecto para crear los siguientes tipos de soluciones de Office:
@@ -77,7 +77,7 @@ ms.locfileid: "60054578"
   Las plantillas de proyecto Plantilla de Word y Plantilla de Excel se comportan de forma idéntica a las plantillas de proyecto Documento de Word y Libro de Excel. Sin embargo, las plantillas de proyecto Plantilla de Word y Plantilla de Excel simplifican la creación de nuevas copias locales de documentos o libros de la plantilla personalizada en su solución. Las características de su solución están disponibles en el nuevo documento que el usuario crea a partir de la plantilla.
 
 > [!NOTE]
->  Las plantillas de Word que hacen referencia a extensiones de código administrado no se pueden usar como complementos VSTO globales. No se llama al ensamblado si la plantilla se carga desde el directorio de inicio de Word. Para obtener más información, consulte [limitaciones de las plantillas globales y complementos de Excel (archivos .xla)](#Limitations)
+> Las plantillas de Word que hacen referencia a extensiones de código administrado no se pueden usar como complementos VSTO globales. No se llama al ensamblado si la plantilla se carga desde el directorio de inicio de Word. Para obtener más información, consulte [limitaciones de las plantillas globales y complementos de Excel (archivos .xla)](#Limitations)
 
  Para obtener información sobre cómo empezar en estos tipos de proyecto, vea los temas siguientes:
 

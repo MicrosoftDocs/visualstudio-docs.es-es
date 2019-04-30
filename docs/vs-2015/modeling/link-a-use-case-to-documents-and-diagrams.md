@@ -14,12 +14,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 012ab6828364af155b52bc19d9a83564b2126a6b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ee7657b12741cf65583317ba87bd465e15eb02bb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088683"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440964"
 ---
 # <a name="link-a-use-case-to-documents-and-diagrams"></a>Vincular un caso de uso a documentos y diagramas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,7 +81,7 @@ Puede vincular un caso de uso de un diagrama de casos de uso a otro diagrama o d
 3. Con el nuevo artefacto seleccionado, escriba o pegue la dirección URL en el **hipervínculo** propiedad.  
   
     > [!NOTE]
-    >  Si desea proporcionar una ruta de acceso de archivo, es mejor elegir un archivo en un área de trabajo comunes (a partir de '\\\\'), o un archivo dentro de la solución de Visual Studio. Esto garantizará que la ruta de acceso del archivo seguirá siendo válida en el sistema de otro miembro del equipo o si se mueve la solución. Para agregar un documento como un documento de Word a la solución, haga clic en la solución en el Explorador de soluciones, seleccione **agregar** y, a continuación, haga clic en **elemento existente**.  
+    > Si desea proporcionar una ruta de acceso de archivo, es mejor elegir un archivo en un área de trabajo comunes (a partir de '\\\\'), o un archivo dentro de la solución de Visual Studio. Esto garantizará que la ruta de acceso del archivo seguirá siendo válida en el sistema de otro miembro del equipo o si se mueve la solución. Para agregar un documento como un documento de Word a la solución, haga clic en la solución en el Explorador de soluciones, seleccione **agregar** y, a continuación, haga clic en **elemento existente**.  
   
 ## <a name="see-also"></a>Vea también  
  [Diagramas de casos de uso UML: Referencia](../modeling/uml-use-case-diagrams-reference.md)   

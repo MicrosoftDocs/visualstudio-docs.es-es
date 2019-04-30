@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f62181909afef7f404270a085f9bbb1a5341c115
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ae44f7d4631316fc1250a79b9a8424c3731f1329
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104465"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431237"
 ---
 # <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer"></a>Procedimiento Agregar y quitar características y elementos de un paquete mediante el Explorador de empaquetado
   Para configurar un paquete para implementar características y elementos de SharePoint, puede usar el Explorador de empaquetado. Puede ajustar los elementos de proyecto de SharePoint y características en el archivo WSP.
@@ -51,7 +51,7 @@ ms.locfileid: "60104465"
     - Abra el menú contextual de una característica, elija **cortar**, abra el menú contextual para el proyecto al que desea mover la característica y, a continuación, elija **pegar**.
 
     > [!NOTE]
-    >  Utilice este procedimiento si tiene más de un proyecto de SharePoint en la solución.
+    > Utilice este procedimiento si tiene más de un proyecto de SharePoint en la solución.
 
 ## <a name="validate-a-feature-or-package"></a>Validar una característica o paquete
  Puede identificar posibles problemas en los paquetes y las características de SharePoint mediante la validación de los archivos. Errores y advertencias se muestran en la ventana de salida y la ventana Lista de errores.

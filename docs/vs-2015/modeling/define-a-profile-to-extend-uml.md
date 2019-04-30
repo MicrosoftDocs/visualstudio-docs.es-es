@@ -16,12 +16,12 @@ caps.latest.revision: 44
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 59e00fb6b4db879ed70904397ba9a54c8bc25a6f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b256971cd327098e22b243a1c171b0c9e82d32bc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069373"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433127"
 ---
 # <a name="define-a-profile-to-extend-uml"></a>Definir un perfil para ampliar UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Puede definir un *perfil UML* para personalizar los elementos del modelo estánd
   Puede distribuir sus perfiles a los miembros de su equipo. Cada miembro del equipo puede instalar su perfil. De este modo, podrán editar y crear modelos que utilicen sus estereotipos.  
   
 > [!NOTE]
->  Si aplica los estereotipos de un perfil en un modelo que está editando, y, a continuación, comparte el modelo con otras personas, estas personas deberían instalar el mismo perfil en sus equipos. De lo contrario, no podrán ver los estereotipos que ha utilizado.  
+> Si aplica los estereotipos de un perfil en un modelo que está editando, y, a continuación, comparte el modelo con otras personas, estas personas deberían instalar el mismo perfil en sus equipos. De lo contrario, no podrán ver los estereotipos que ha utilizado.  
   
  Un perfil a menudo es parte de una mayor [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] extensión. Por ejemplo, puede definir un comando que traduzca algunos elementos de un modelo al código. Puede definir un perfil que los usuarios deben aplicar a los paquetes que desean traducir. Este nuevo comando, junto con el perfil, se distribuiría en una sola extensión de [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].  
   
@@ -83,7 +83,7 @@ Puede definir un *perfil UML* para personalizar los elementos del modelo estánd
 1. Cree un proyecto de extensión de Visual Studio.  
   
    > [!NOTE]
-   >  Para utilizar este procedimiento, debe tener instalado [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)].  
+   > Para utilizar este procedimiento, debe tener instalado [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)].  
   
    1. En el menú **Archivo** , elija **Nuevo**y haga clic en **Proyecto**.  
   
@@ -194,7 +194,7 @@ Puede definir un *perfil UML* para personalizar los elementos del modelo estánd
 2. Agregue un nuevo directorio en el mismo directorio del archivo de perfil predeterminado.  
   
     > [!NOTE]
-    >  Si está compilando la extensión utilizando un proyecto de extensión de Visual Studio, utilice el Explorador de soluciones para agregar una nueva carpeta al proyecto.  
+    > Si está compilando la extensión utilizando un proyecto de extensión de Visual Studio, utilice el Explorador de soluciones para agregar una nueva carpeta al proyecto.  
   
 3. Cambie el nombre del nuevo directorio al código abreviado ISO de la referencia cultural adaptada, como `bg` para búlgaro o `fr` para francés. Debe utilizar un código de referencia cultural neutro, normalmente dos letras, y no una referencia cultural concreta como `fr-CA`. Para obtener más información sobre los códigos de referencia cultural, consulte [método CultureInfo.GetCultures](http://go.microsoft.com/fwlink/?LinkId=160782), que proporciona una lista completa de códigos de referencia cultural.  
   
@@ -211,7 +211,7 @@ Puede definir un *perfil UML* para personalizar los elementos del modelo estánd
      `de\MyProfile.profile`  
   
     > [!NOTE]
-    >  No debe insertar en `extension.vsixmanifest` una referencia a las versiones localizadas de los perfiles. Los archivos del perfil copiados deben tener el mismo nombre que el perfil de la carpeta primaria.  
+    > No debe insertar en `extension.vsixmanifest` una referencia a las versiones localizadas de los perfiles. Los archivos del perfil copiados deben tener el mismo nombre que el perfil de la carpeta primaria.  
   
 5. Edite la nueva copia del perfil y traduzca al idioma de destino todos los elementos que estarán visibles para el usuario, como los atributos `displayName`.  
   
@@ -247,7 +247,7 @@ Puede definir un *perfil UML* para personalizar los elementos del modelo estánd
 ```  
   
 > [!NOTE]
->  El atributo denominado `name` no debe contener espacios ni puntuación. El atributo `displayName`, que aparece en la interfaz de usuario, debe ser una cadena XML válida.  
+> El atributo denominado `name` no debe contener espacios ni puntuación. El atributo `displayName`, que aparece en la interfaz de usuario, debe ser una cadena XML válida.  
   
  Cada perfil contiene tres secciones principales. En orden inverso, son las siguientes:  
   
@@ -310,7 +310,7 @@ Puede definir un *perfil UML* para personalizar los elementos del modelo estánd
  El atributo `name` de `metaclassMoniker` es un vínculo a un elemento de la sección `<metaClasses>`.  
   
 > [!NOTE]
->  El nombre del moniker debe comenzar con `/yourProfileName/`, donde `yourProfileName` se define en el atributo `name` del perfil ("CSharpProfile" en este ejemplo). El moniker finaliza con el nombre de una de las entradas de la sección de metaclases.  
+> El nombre del moniker debe comenzar con `/yourProfileName/`, donde `yourProfileName` se define en el atributo `name` del perfil ("CSharpProfile" en este ejemplo). El moniker finaliza con el nombre de una de las entradas de la sección de metaclases.  
   
  En cada estereotipo se pueden mostrar cero o más propiedades que se agregan a cualquier elemento del modelo al que se aplica el estereotipo. El `<propertyType>` contiene un vínculo a uno de los tipos que se definen en el `<propertyTypes>` sección. El vínculo debe ser `<externalTypeMoniker>` para que haga referencia a `<externalType>,` o `<enumerationTypeMoniker>` para que haga referencia a `<enumerationType>`. De nuevo, el vínculo comienza con el nombre del perfil.  
   

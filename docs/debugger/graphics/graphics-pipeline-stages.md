@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0eb6cf6f460ca0cf164f6acb78b1309d2222ea39
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 042eebc6d672000aa43425a30e96a8ac41bcd8af
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089138"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388539"
 ---
 # <a name="graphics-pipeline-stages"></a>Etapas de canalización de gráficos
 La ventana Etapas de canalización de gráficos ayuda a entender cómo cada etapa de la canalización de gráficos Direct3D transforma una llamada a draw individual.
@@ -46,7 +46,7 @@ La ventana Etapas de canalización de gráficos ayuda a entender cómo cada etap
 - En la ventana **Etapas de canalización de gráficos**, busque la etapa del sombreador que se corresponde con el sombreador que desea examinar. A continuación, debajo de la imagen de vista previa, siga el vínculo del título de la etapa del sombreador. Por ejemplo, siga el vínculo **Sombreador de vértices obj:30** para ver el código fuente del sombreador de vértices.
 
     > [!TIP]
-    >  El número de objeto, **obj:30**, identifica este sombreador en toda la interfaz del Analizador de gráficos, tal como se muestra en la ventana del historial de píxeles y la tabla de objetos.
+    > El número de objeto, **obj:30**, identifica este sombreador en toda la interfaz del Analizador de gráficos, tal como se muestra en la ventana del historial de píxeles y la tabla de objetos.
 
 #### <a name="to-debug-a-shader"></a>Para depurar un sombreador
 
@@ -56,21 +56,21 @@ La ventana Etapas de canalización de gráficos ayuda a entender cómo cada etap
  La ventana Etapas de canalización muestra solamente las etapas de canalización que estaban activas durante la llamada a draw. Cada etapa de canalización de gráficos transforma la entrada de la etapa anterior y pasa el resultado a la etapa siguiente. La primera etapa (el ensamblador de entrada) toma como entrada los datos del índice y del vértice de la aplicación; la última etapa (la fusión de salida) combina los píxeles recién representados con el contenido actual del búfer de fotogramas o destino de representación como salida para generar la imagen final que se ve en pantalla.
 
 > [!NOTE]
->  En la ventana **Etapas de canalización de gráficos**, no se admiten los sombreadores de cálculo.
+> En la ventana **Etapas de canalización de gráficos**, no se admiten los sombreadores de cálculo.
 
  **Ensamblador de entrada** el ensamblador de entrada lee los datos de índice y del vértice especificados por la aplicación y los ensambla para el hardware gráfico.
 
  En la ventana Etapas de canalización, se muestra la salida del ensamblador de entrada como un modelo de tramas de alambres. Para examinar en detalle el resultado, seleccione **Ensamblador de entrada** en la ventana **Etapas de canalización de gráficos** para ver los vértices ensamblados en 3D mediante el Editor de modelos.
 
 > [!NOTE]
->  Si la semántica `POSITION` no aparece en el resultado del ensamblador de entrada, no se mostrará nada en la fase **Ensamblador de entrada**.
+> Si la semántica `POSITION` no aparece en el resultado del ensamblador de entrada, no se mostrará nada en la fase **Ensamblador de entrada**.
 
  **Sombreador de vértices** la etapa del sombreador de vértices procesa los vértices, normalmente realizando operaciones como transformaciones, máscaras e iluminación. Los sombreadores de vértices producen el mismo número de vértices que toman como entrada.
 
  En la ventana Etapas de canalización, la salida del sombreador de vértices se muestra como una imagen de tramas de alambres. Para examinar en detalle el resultado, seleccione **Sombreador de vértices** en la ventana **Etapas de canalización de gráficos** para ver los vértices procesados en el Editor de imágenes.
 
 > [!NOTE]
->  Si las semánticas `POSITION` o `SV_POSITION` no aparecen en la salida del sombreador de vértices, no se mostrará nada en la fase **Sombreador de vértices**.
+> Si las semánticas `POSITION` o `SV_POSITION` no aparecen en la salida del sombreador de vértices, no se mostrará nada en la fase **Sombreador de vértices**.
 
  **Sombreador de casco** (Direct3D 11 y Direct3D 12 solo) la etapa del sombreador de casco procesa los puntos de control que definen una superficie de orden inferior, como una línea, triángulo o cuádruple. Como resultado produce una revisión de geometría de orden superior y constantes de revisión que se pasan a la etapa de teselación de funciones fijas.
 

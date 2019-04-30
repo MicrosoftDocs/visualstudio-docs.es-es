@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fcdd4e2253652246e3d0cb3fcd829c8e5d7786bf
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
-ms.translationtype: MT
+ms.openlocfilehash: 2b3138e148ea44371c7bd9b5fb82c583cd00e832
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57869920"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436425"
 ---
 # <a name="create-sharepoint-solutions"></a>Crear soluciones de SharePoint
   Puede crear aplicaciones de SharePoint en Visual Studio como una alternativa a crearlas en SharePoint Designer. Visual Studio promueve el desarrollo rápido de SharePoint al ofrecer características como herramientas de depuración avanzadas, IntelliSense, finalización de instrucciones y plantillas de proyecto. Visual Studio también aprovecha las herramientas y los lenguajes avanzados basados en .NET Framework. Puede desarrollar proyectos de SharePoint mediante Visual Basic o Visual C# y puede desarrollar proyectos de aplicaciones para SharePoint mediante JavaScript.
@@ -25,7 +25,7 @@ ms.locfileid: "57869920"
  Para obtener información sobre SharePoint 2013 y los complementos de SharePoint, vea [SharePoint 2013](https://products.office.com/previous-versions/microsoft-sharepoint-2013) y [Crear aplicaciones para SharePoint](/sharepoint/dev/sp-add-ins/sharepoint-add-ins).
 
 > [!NOTE]
->  Descubra cómo usar el nuevo [modelo de complementos de SharePoint](/sharepoint/dev/sp-add-ins/sharepoint-add-ins) a fin de ampliar la experiencia de SharePoint para los usuarios. Estos complementos tienen una superficie muy pequeña en comparación con las soluciones de SharePoint y puede crearlos con prácticamente cualquier tecnología de programación web, como HTML5, CSS3, JavaScript y XML.
+> Descubra cómo usar el nuevo [modelo de complementos de SharePoint](/sharepoint/dev/sp-add-ins/sharepoint-add-ins) a fin de ampliar la experiencia de SharePoint para los usuarios. Estos complementos tienen una superficie muy pequeña en comparación con las soluciones de SharePoint y puede crearlos con prácticamente cualquier tecnología de programación web, como HTML5, CSS3, JavaScript y XML.
 
 |||
 |-|-|

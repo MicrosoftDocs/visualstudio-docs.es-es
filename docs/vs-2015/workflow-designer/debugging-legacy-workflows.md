@@ -13,18 +13,18 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b98c520dc96b6f3c6467bbcaf8e48d9cff8791d2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 80edcfb171e8e87c384a05b889a8fa11b1e7a723
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048741"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439191"
 ---
 # <a name="debugging-legacy-workflows"></a>Depurar flujos de trabajo heredados
 Si usa el [!INCLUDE[wfd1](../includes/wfd1-md.md)] heredado en [!INCLUDE[vs_current_long](../includes/vs-current-long-md.md)] para compilar aplicaciones [!INCLUDE[wf](../includes/wf-md.md)] que tienen como destino .NET Framework 3.0 o 3.5, puede depurar los flujos de trabajo como cualquier otro programa: establecer puntos de interrupción, adjuntar a procesos y examinar los subprocesos y la pila de llamadas. También tiene la opción de realizar la depuración de forma remota.  
   
 > [!NOTE]
->  Si varias versiones de Visual Studio se han instalado y desinstalado en el equipo, la depuración de WF3 puede provocar un error con una de las dos posibilidades siguientes:  
+> Si varias versiones de Visual Studio se han instalado y desinstalado en el equipo, la depuración de WF3 puede provocar un error con una de las dos posibilidades siguientes:  
 > 
 > - No se alcanzan los puntos de interrupción.  
 >   - Se mostrará el mensaje siguiente:  

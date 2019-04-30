@@ -22,12 +22,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1c9ea6398ca02291bb9dc11693c98336cd33b14b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d281b0ddb15a2acc455acd037c088c133c74c1f1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061999"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440981"
 ---
 # <a name="layer-diagrams-reference"></a>Diagramas de capas: Referencia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,7 +85,7 @@ En Visual Studio, puede usar un *diagrama de capas* para visualizar la arquitect
      **Explorador de capas** se abre y muestra los artefactos que están vinculados a las capas seleccionadas. **Explorador de capas** tiene una columna que muestra cada una de las propiedades de los vínculos de artefacto.  
   
     > [!NOTE]
-    >  Si no ve todas estas propiedades, expanda el **Explorador de capas** ventana.  
+    > Si no ve todas estas propiedades, expanda el **Explorador de capas** ventana.  
   
     |**Columna en el Explorador de capas**|**Descripción**|  
     |----------------------------------|---------------------|  

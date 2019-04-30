@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 09c16e55766c0239346540dfcc74b99b2ed8579b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fcc35f74625b17762656451e598d131dfe85417e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103600"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63385852"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>La validación en los lenguajes específicos de dominio
 Como autor de un lenguaje específico de dominio (DSL), puede definir restricciones de validación para comprobar que el modelo creado por el usuario tiene significado. Por ejemplo, si su DSL permite a los usuarios dibujar un árbol genealógico de personas y antepasados, podría escribir una restricción que garantice que la fecha de nacimiento de los hijos sea posterior a la de los padres.
@@ -25,7 +25,7 @@ Como autor de un lenguaje específico de dominio (DSL), puede definir restriccio
  La validación es especialmente importante si va a escribir plantillas de texto u otras herramientas que procesan los modelos de los usuarios. La validación garantiza que los modelos cumplen las condiciones previas que esas herramientas dan por hecho.
 
 > [!WARNING]
->  También puede permitir que las restricciones de validación se definan en extensiones diferentes de su DSL, junto con los controladores de gestos y los comandos de menú de la extensión. Los usuarios pueden elegir instalar estas extensiones además de su DSL. Para obtener más información, consulte [ampliar DSL mediante MEF](../modeling/extend-your-dsl-by-using-mef.md).
+> También puede permitir que las restricciones de validación se definan en extensiones diferentes de su DSL, junto con los controladores de gestos y los comandos de menú de la extensión. Los usuarios pueden elegir instalar estas extensiones además de su DSL. Para obtener más información, consulte [ampliar DSL mediante MEF](../modeling/extend-your-dsl-by-using-mef.md).
 
 ## <a name="running-validation"></a>Ejecutar la validación
  Cuando un usuario edita un modelo, es decir, una instancia de su lenguaje específico de dominio, las siguientes acciones pueden ejecutar la validación:
@@ -48,7 +48,7 @@ Como autor de un lenguaje específico de dominio (DSL), puede definir restriccio
  Cada método de validación notifica todos los errores que encuentra.
 
 > [!NOTE]
->  Los métodos de validación notifican los errores, pero no cambian el modelo. Si desea ajustar o evitar determinados cambios, consulte [alternativas a la validación](#alternatives).
+> Los métodos de validación notifican los errores, pero no cambian el modelo. Si desea ajustar o evitar determinados cambios, consulte [alternativas a la validación](#alternatives).
 
 #### <a name="to-define-a-validation-constraint"></a>Para definir una restricción de validación
 
@@ -310,7 +310,7 @@ private void TestForCircularLinks(ValidationContext context)
 ```
 
 > [!NOTE]
->  A un método se pueden asignar como prefijo tantos atributos `[ValidationMethod()]` como quiera. Puede agregar un método a las categorías tanto personalizadas como estándar.
+> A un método se pueden asignar como prefijo tantos atributos `[ValidationMethod()]` como quiera. Puede agregar un método a las categorías tanto personalizadas como estándar.
 
  Para invocar una validación personalizada:
 

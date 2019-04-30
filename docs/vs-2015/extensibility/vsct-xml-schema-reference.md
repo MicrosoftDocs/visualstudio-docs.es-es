@@ -11,12 +11,12 @@ ms.assetid: 49e7efae-e713-4762-a824-96fdaf92cdc9
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9d95275f5b4ffd91f993fc3e5a650d3d160fa2a4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: e56de828d3b357762da98cde3b9591033c6b5d19
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58998869"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441476"
 ---
 # <a name="vsct-xml-schema-reference"></a>Referencia del esquema XML de VSCT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Proporciona una tabla de elementos de esquema del compilador de tabla de comando
  Un archivo de configuración (.vsct) de la tabla de comandos basado en XML define los elementos de comando que un paquete VSPackage proporciona al entorno de desarrollo integrado (IDE). Estos elementos incluyen elementos de menú, barras de herramientas, menús y cuadros combinados.  
   
 > [!NOTE]
->  El compilador VSCT puede ejecutar un preprocesador en el archivo .vsct. Dado que normalmente es el preprocesador, que puede definir C++ incluye y macros que tienen la misma sintaxis que se usa en los archivos de C++. En el archivo .vsct se proporcionan ejemplos de este archivo que el **nuevo proyecto** asistente crea para un proyecto de VSPackage.  
+> El compilador VSCT puede ejecutar un preprocesador en el archivo .vsct. Dado que normalmente es el preprocesador, que puede definir C++ incluye y macros que tienen la misma sintaxis que se usa en los archivos de C++. En el archivo .vsct se proporcionan ejemplos de este archivo que el **nuevo proyecto** asistente crea para un proyecto de VSPackage.  
   
 ## <a name="optional-elements"></a>Elementos opcionales  
  Algunos elementos VSCT son opcionales. Si un `Parent` no se especifica el argumento, Group_Undefined:0 se pueden implícita. Si un `Icon` argumento no se especifica, se implicarse guidOfficeIcon:msotcidNoIcon. Cuando se define una tecla de método abreviado, la emulación, que no se utiliza normalmente, es opcional.  

@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 71d7dc0fc208fa3c108019f6324c3d053673e918
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 252b554542df23e2d3197dfe28100546a6d25b32
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070841"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411461"
 ---
 # <a name="t4-template-directive"></a>Directiva de plantilla T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -212,7 +212,7 @@ This is the common footer.
  También puede utilizar una clase normal escrita a mano como la clase base. La clase base debe proporcionar los métodos que usa la clase derivada.  
   
 > [!WARNING]
->  Si utiliza los atributos `inherits` y `hostspecific` juntos, especifique hostspecific="trueFromBase" en la clase derivada y host=" true" en la clase base. Esto evita una definición doble de la propiedad `Host` en el código generado.  
+> Si utiliza los atributos `inherits` y `hostspecific` juntos, especifique hostspecific="trueFromBase" en la clase derivada y host=" true" en la clase base. Esto evita una definición doble de la propiedad `Host` en el código generado.  
   
 ### <a name="inheritance-in-a-design-time-text-template"></a>Herencia en una plantilla de texto en tiempo de diseño  
  Una plantilla de texto en tiempo de diseño es un archivo para el que **Custom Tool** está establecido en **TextTemplatingFileGenerator**. La plantilla genera un archivo de salida de código o texto, que forma parte de su proyecto de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Para generar el archivo de salida, la plantilla primero se traduce en un archivo de código de programa intermedio, que normalmente no ve. El atributo `inherits` especifica la clase base para este código intermedio.  

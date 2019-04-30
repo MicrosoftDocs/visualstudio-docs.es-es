@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.assetid: 9d3186f3-07d2-441f-b33e-435e95d8a0b8
 caps.latest.revision: 11
 ms.author: brgeorge
-ms.openlocfilehash: c09419d1294d51fe0b566acc649bc3f9612acfca
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 421ff85831bb611b655de2bc35f01423b61921a2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117181"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436573"
 ---
 # <a name="shared-colors"></a>Colores compartidos
 Inserte aquí la introducción.  
@@ -31,7 +31,7 @@ Inserte aquí la introducción.
 - **Usar colores de control que son adecuados para su ubicación.** En determinados estados, algunos controles de Visual Studio no tienen colores de borde y de fondo independientes. En su lugar, toman los colores de las superficies que están detrás de ellos. Procure usar siempre los nombres de token que sean adecuados para la ubicación donde coloca el control.  
   
 > [!IMPORTANT]
->  No use los tokens que se encuentran en las categorías "Página de inicio" o "Cider".  
+> No use los tokens que se encuentran en las categorías "Página de inicio" o "Cider".  
   
 ### <a name="command-structures"></a>Estructuras de comandos  
   
@@ -240,7 +240,7 @@ No use…
 ##### <a name="BKMK_CommandComboBox"></a> Cuadro combinado  
   
 > [!IMPORTANT]
->  Los cuadros combinados son similares a las listas desplegables, pero incluyen un área de texto editable. Si la lista desplegable no incluye un área de texto editable, use los tokens de color que se encuentran en [Drop-down](../misc/shared-colors.md#BKMK_CommandDropDown).  
+> Los cuadros combinados son similares a las listas desplegables, pero incluyen un área de texto editable. Si la lista desplegable no incluye un área de texto editable, use los tokens de color que se encuentran en [Drop-down](../misc/shared-colors.md#BKMK_CommandDropDown).  
   
  ![Combo box redline](../extensibility/ux-guidelines/media/0303-029-comboboxredline.png "0303-029_ComboBoxRedline")  
   
@@ -318,7 +318,7 @@ No use…
 ##### <a name="BKMK_CommandDropDown"></a> Lista desplegable  
   
 > [!IMPORTANT]
->  Las listas desplegables son similares a los cuadros combinados, pero carecen de áreas de texto editable. Si la lista desplegable incluye un área de texto editable, use los tokens de color que se encuentran en [Combo box](../misc/shared-colors.md#BKMK_CommandComboBox).  
+> Las listas desplegables son similares a los cuadros combinados, pero carecen de áreas de texto editable. Si la lista desplegable incluye un área de texto editable, use los tokens de color que se encuentran en [Combo box](../misc/shared-colors.md#BKMK_CommandComboBox).  
   
  ![Quitar&#45;hacia abajo línea roja](../extensibility/ux-guidelines/media/0303-042-dropdownredline.png "0303 042_DropdownRedline")  
   

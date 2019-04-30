@@ -11,12 +11,12 @@ caps.latest.revision: 16
 author: erickson-doug
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: daa26ed2e893d4e11b9f2e18ef5127aafe847b96
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3f3a00a4ec5a013dc860a05ed48364178e3f23cf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108348"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442870"
 ---
 # <a name="analyze-visual-basic-and-c-code-quality-in-store-apps-using-visual-studio-static-code-analysis"></a>Analizar la calidad del código de Visual Basic y C# en las aplicaciones de las aplicaciones de la Tienda con el análisis de código estático de Visual Studio
 
@@ -27,7 +27,7 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
  La herramienta de análisis de código de Visual Studio Express examina el código para detectar una serie de defectos comunes e infracciones de las prácticas recomendadas de programación. Las advertencias del análisis de código son distintas de los errores y advertencias del compilador, porque la herramienta de análisis de código busca patrones de código concretos que, aunque son válidos, pueden crear problemas para ti o para otros usuarios del código. El análisis de código también puede encontrar defectos del código que son difíciles de detectar al hacer las pruebas. Ejecutar la herramienta de análisis de código a intervalos regulares durante el proceso de desarrollo puede mejorar la calidad de la aplicación final.
 
 > [!NOTE]
->  En Visual Studio Ultimate, Visual Studio Premium y Visual Studio Professional, puedes usar la funcionalidad completa de análisis de código. Consulte [Analizar la calidad de la aplicación mediante herramientas de análisis del código](http://msdn.microsoft.com/library/dd264897.aspx) en la MSDN Library.
+> En Visual Studio Ultimate, Visual Studio Premium y Visual Studio Professional, puedes usar la funcionalidad completa de análisis de código. Consulte [Analizar la calidad de la aplicación mediante herramientas de análisis del código](http://msdn.microsoft.com/library/dd264897.aspx) en la MSDN Library.
 
 ## <a name="in-this-topic"></a>En este tema
  Puedes obtener información sobre:
@@ -69,7 +69,7 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
  Cuando hayas entendido el problema, podrás resolverlo en el código. A continuación vuelva a ejecutar el análisis de código para asegurarse de que la advertencia ya no aparece en la ventana de análisis de código y que la corrección no genera nuevas advertencias.
 
 > [!TIP]
->  Puedes repetir el análisis de código desde la ventana Análisis de código. Haga clic en el botón **Analizar** y seleccione el ámbito de análisis. Puedes repetir el análisis en toda la solución o en el proyecto seleccionado.
+> Puedes repetir el análisis de código desde la ventana Análisis de código. Haga clic en el botón **Analizar** y seleccione el ámbito de análisis. Puedes repetir el análisis en toda la solución o en el proyecto seleccionado.
 
 ## <a name="BKMK_Suppress"></a> Suprimir las advertencias de análisis de código
  A veces, uno decide no corregir una advertencia del análisis de código. Puede ser que para resolverla se necesita un esfuerzo de codificación excesivo en proporción con la probabilidad de que el problema surja en las implementaciones reales del código. O puede que consideres que el análisis que ha dado lugar a la advertencia no es apropiado para ese contexto concreto. Puedes suprimir advertencias individuales de modo que ya no aparezcan en la ventana Análisis de código.

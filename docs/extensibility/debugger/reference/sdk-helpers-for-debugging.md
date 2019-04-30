@@ -14,18 +14,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 852992b3e7553ee07b2834d7253cd41dd46f4e8b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: e3979b7c50ee3af997924d15908556011682595d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56706410"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415910"
 ---
 # <a name="sdk-helpers-for-debugging"></a>Asistentes de SDK para la depuración
 Estas funciones y declaraciones son funciones auxiliares globales para implementar motores de depuración, los evaluadores de expresión y los proveedores de símbolos en C++.
 
 > [!NOTE]
->  Existen versiones administradas de estas funciones y declaraciones en este momento.
+> Existen versiones administradas de estas funciones y declaraciones en este momento.
 
 ## <a name="overview"></a>Información general
  En orden para motores de depuración, los evaluadores de expresión y los proveedores de símbolo que va a usar Visual Studio, debe estar registrados. Esto se realiza mediante el establecimiento de subclaves del registro y las entradas, también conocidas como "establecer la métrica". Las funciones globales siguientes están diseñadas para facilitar el proceso de actualización de estas métricas. Consulte la sección sobre las ubicaciones del registro para averiguar el diseño de cada subclave del registro que se actualiza mediante estas funciones.
@@ -237,7 +237,7 @@ HRESULT EnumMetricSections(
  Las métricas se leen y escritas en el registro, concretamente, en el `VisualStudio` subclave.
 
 > [!NOTE]
->  La mayoría de los casos, las métricas se escribirán en la clave HKEY_LOCAL_MACHINE. Sin embargo, a veces HKEY_CURRENT_USER será la clave de destino. Dbgmetric.lib controla ambas claves. Al obtener una métrica, lo busca en HKEY_CURRENT_USER primero y, después, en HKEY_LOCAL_MACHINE. Cuando se está estableciendo una métrica, un parámetro especifica qué clave de nivel superior que se usará.
+> La mayoría de los casos, las métricas se escribirán en la clave HKEY_LOCAL_MACHINE. Sin embargo, a veces HKEY_CURRENT_USER será la clave de destino. Dbgmetric.lib controla ambas claves. Al obtener una métrica, lo busca en HKEY_CURRENT_USER primero y, después, en HKEY_LOCAL_MACHINE. Cuando se está estableciendo una métrica, un parámetro especifica qué clave de nivel superior que se usará.
 
  *[clave del registro]*\
 
@@ -269,7 +269,7 @@ HRESULT EnumMetricSections(
 |*[valor de métrica]*|El valor asignado a la métrica. El tipo que el valor debe tener (cadena), números, etc. depende de la métrica.|
 
 > [!NOTE]
->  Todos los GUID se almacenan en el formato de `{GUID}`. Por ejemplo: `{123D150B-FA18-461C-B218-45B3E4589F9B}`.
+> Todos los GUID se almacenan en el formato de `{GUID}`. Por ejemplo: `{123D150B-FA18-461C-B218-45B3E4589F9B}`.
 
 ### <a name="debug-engines"></a>Motores de depuración
  La siguiente es la organización de las métricas de los motores de depuración en el registro. `Engine` es el nombre de tipo de métrica para un motor de depuración y corresponde a *[tipo de métrica]* en el subárbol del registro anterior.
@@ -348,7 +348,7 @@ HRESULT EnumMetricSections(
  La siguiente es la organización de las métricas de evaluador de expresión en el registro. `ExpressionEvaluator` es el nombre de tipo de métrica para el evaluador de expresiones y corresponde a *[tipo de métrica]*.
 
 > [!NOTE]
->  El tipo de métrica para `ExpressionEvaluator` no está definido en dbgmetric.h, ya que se supone que todos los cambios de métrica para evaluadores de expresión pasará a través de las funciones de métrica de evaluador de expresión adecuada (el diseño de la `ExpressionEvaluator` subclave es ligeramente complicado, por lo que los detalles están ocultos en dbgmetric.lib).
+> El tipo de métrica para `ExpressionEvaluator` no está definido en dbgmetric.h, ya que se supone que todos los cambios de métrica para evaluadores de expresión pasará a través de las funciones de métrica de evaluador de expresión adecuada (el diseño de la `ExpressionEvaluator` subclave es ligeramente complicado, por lo que los detalles están ocultos en dbgmetric.lib).
 
  `ExpressionEvaluator`\
 

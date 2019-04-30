@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: abbc39bece090db962b35c61cb7e77fabaea6be9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3380b9c5302ed6e8a1bf6965f5fb1f259e3a6682
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091504"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438548"
 ---
 # <a name="walkthrough-create-a-master-detail-relation-using-a-cached-dataset"></a>Tutorial: Crear a una relación de maestro/detalle con un conjunto de datos en caché
   Este tutorial muestra la creación de una relación principal-detalle en una hoja de cálculo y almacenamiento en caché los datos para que la solución se puede usar sin conexión.
@@ -36,7 +36,7 @@ ms.locfileid: "60091504"
 - Pruebe el proyecto.
 
 > [!NOTE]
->  Es posible que el equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Para más información, vea [Personalizar el IDE de Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Es posible que el equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Para más información, vea [Personalizar el IDE de Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="prerequisites"></a>Requisitos previos
  Necesita los componentes siguientes para completar este tutorial:

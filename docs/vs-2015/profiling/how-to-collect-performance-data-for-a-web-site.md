@@ -19,12 +19,12 @@ caps.latest.revision: 38
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4391f4cf989b51a49b874e6eccdcceb28f609003
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3307b5372852d6f3e269264a02fa2c90cb1acd22
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060559"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432799"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>Procedimiento Recopilar datos de rendimiento para un sitio Web
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "60060559"
 Puede usar el **Asistente de rendimiento** para recopilar datos de rendimiento de una aplicación web de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] . Puede generar perfiles de una aplicación web que esté abierta en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] o de un sitio web de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] que se encuentre en su equipo local y que no esté abierto en el IDE de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 > [!NOTE]
->  Con el **Asistente de rendimiento** puede agregar datos de generación de perfiles de interacción de capa (TIP), datos de rendimiento de JScript o ambos tipos de datos a los datos de generación de perfiles recopilados. La opción TIP recopila datos de los procesos del servidor. La generación de perfiles de JScript recopila datos de los scripts que se ejecutan en un sitio web local o remoto. En la mayoría de los casos, debe elegir solo una de las opciones.  
+> Con el **Asistente de rendimiento** puede agregar datos de generación de perfiles de interacción de capa (TIP), datos de rendimiento de JScript o ambos tipos de datos a los datos de generación de perfiles recopilados. La opción TIP recopila datos de los procesos del servidor. La generación de perfiles de JScript recopila datos de los scripts que se ejecutan en un sitio web local o remoto. En la mayoría de los casos, debe elegir solo una de las opciones.  
   
  En función de la configuración de los permisos de acceso de usuario que haya facilitado un administrador, un usuario puede o no tener permiso de seguridad para crear una sesión del generador de perfiles en el equipo que hospeda el proceso de ASP.NET. En los siguientes ejemplos se muestran las posibles diferencias existentes entre los usuarios:  
   

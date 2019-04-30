@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 213237037225b18128ab149f384466e5fab0d668
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cd50f4c80e5e67f6fb7582dc2bc22963151b42fe
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104686"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433114"
 ---
 # <a name="define-a-work-item-link-handler"></a>Definir un controlador de vínculos de elementos de trabajo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -152,7 +152,7 @@ namespace WorkItems
  Para probar, ejecute el controlador de vínculos en modo de depuración.  
   
 > [!WARNING]
->  Ya debe estar conectado al control de código fuente TFS (SCC) para crear o vincular a un elemento de trabajo. Si intenta abrir una conexión a un SCC TFS diferente, Visual Studio cierra automáticamente la solución actual. Asegúrese de que ya está conectado al SCC apropiado antes de intentar crear o vincular a un elemento de trabajo. En las versiones posteriores de Visual Studio, los comandos de menú no están disponibles si no está conectado a un SCC.  
+> Ya debe estar conectado al control de código fuente TFS (SCC) para crear o vincular a un elemento de trabajo. Si intenta abrir una conexión a un SCC TFS diferente, Visual Studio cierra automáticamente la solución actual. Asegúrese de que ya está conectado al SCC apropiado antes de intentar crear o vincular a un elemento de trabajo. En las versiones posteriores de Visual Studio, los comandos de menú no están disponibles si no está conectado a un SCC.  
   
 #### <a name="to-test-the-link-handler"></a>Para probar el controlador de vínculos  
   
@@ -221,7 +221,7 @@ public void OnWorkItemLinked
 ```  
   
 > [!NOTE]
->  Para que este ejemplo funcione, debe agregar una referencia de proyecto a `System.Drawing.dll` e importar el espacio de nombres `Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation`. Sin embargo, estas adiciones no son necesarias para otras implementaciones de `OnWorkItemLinked`.  
+> Para que este ejemplo funcione, debe agregar una referencia de proyecto a `System.Drawing.dll` e importar el espacio de nombres `Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation`. Sin embargo, estas adiciones no son necesarias para otras implementaciones de `OnWorkItemLinked`.  
   
 ### <a name="listening-for-link-removal"></a>Realizar escuchas para la eliminación de vínculos  
  `OnWorkItemRemoved` se invoca una vez inmediatamente antes de que se elimine cada vínculo de elementos de trabajo. Si se elimina un elemento del modelo, se quitarán todos sus vínculos.  

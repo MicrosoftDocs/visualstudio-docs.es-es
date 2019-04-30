@@ -14,18 +14,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 40de16290e52755ab92d09edf0c90c045ad4dc86
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 120aed577f0365c9d595916e191779793271d90d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061039"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429925"
 ---
 # <a name="test-guide-for-source-control-plug-ins"></a>Guía de pruebas para los complementos de control de código fuente
 Esta sección proporciona instrucciones para probar su complemento con control de código fuente [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Se proporciona una visión general amplia de las áreas más comunes de pruebas, así como algunas de las áreas más complicadas que pueden ser problemáticas. Esta información general no pretende ser una lista exhaustiva de casos de prueba.
 
 > [!NOTE]
->  Algunas correcciones de errores y mejoras en la versión más reciente [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE puede revelar problemas con origen control complementos existentes que previamente no han encontrado durante el uso de las versiones anteriores de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Se recomienda encarecidamente que pruebe el control de código fuente existente complemento para las áreas que se enumeran en esta sección, incluso si no hay cambios realizados al complemento desde la versión anterior de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
+> Algunas correcciones de errores y mejoras en la versión más reciente [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE puede revelar problemas con origen control complementos existentes que previamente no han encontrado durante el uso de las versiones anteriores de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Se recomienda encarecidamente que pruebe el control de código fuente existente complemento para las áreas que se enumeran en esta sección, incluso si no hay cambios realizados al complemento desde la versión anterior de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
 
 ## <a name="common-preparation"></a>Preparación comunes
  Una máquina con [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] y el complemento de control de código fuente de destino instalado, es necesario. Una segunda máquina configurada de forma similar puede utilizarse para algunas de la de apertura desde las pruebas de Control de código fuente.
@@ -51,7 +51,7 @@ Esta sección proporciona instrucciones para probar su complemento con control d
 
 ## <a name="test-areas-covered-in-this-section"></a>En esta sección tratadas de áreas de pruebas
 
-- [Área de prueba 1: Agregar a / abrir desde Control de código fuente](../../extensibility/internals/test-area-1-add-to-open-from-source-control.md)
+- [Área de prueba 1: Incorporación y apertura desde el control de código fuente](../../extensibility/internals/test-area-1-add-to-open-from-source-control.md)
 
     - Case 1a: Agregar solución al Control de código fuente
 
@@ -59,9 +59,9 @@ Esta sección proporciona instrucciones para probar su complemento con control d
 
     - Caso 1C: Agregar solución desde Control de código fuente
 
-- [Área de prueba 2: Obtener de Control de código fuente](../../extensibility/internals/test-area-2-get-from-source-control.md)
+- [Área de prueba 2: Obtención desde el control de código fuente](../../extensibility/internals/test-area-2-get-from-source-control.md)
 
-- [Área de prueba 3: Desproteger o deshacer desprotección](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)
+- [Área de prueba 3: Extracción del repositorio y cancelación de la operación](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)
 
     - Caso 3: Desproteger o deshacer desprotección
 
@@ -75,7 +75,7 @@ Esta sección proporciona instrucciones para probar su complemento con control d
 
     - Case 3e: Deshacer desprotección
 
-- [Área de prueba 4: Check-in](../../extensibility/internals/test-area-4-check-in.md)
+- [Área de prueba 4: Inserción en el repositorio](../../extensibility/internals/test-area-4-check-in.md)
 
     - Escenario 4a: Elementos modificados
 
@@ -83,7 +83,7 @@ Esta sección proporciona instrucciones para probar su complemento con control d
 
     - Caso 4 núcleos: Agregar proyectos
 
-- [Área de prueba 5: Control de código fuente de cambios](../../extensibility/internals/test-area-5-change-source-control.md)
+- [Área de prueba 5: Cambio del control de código fuente](../../extensibility/internals/test-area-5-change-source-control.md)
 
     - Case 5a: Enlazar
 
@@ -91,11 +91,11 @@ Esta sección proporciona instrucciones para probar su complemento con control d
 
     - Mayúsculas y minúsculas 5c: volver a enlazar
 
-- [Área de prueba 6: Delete](../../extensibility/internals/test-area-6-delete.md)
+- [Área de prueba 6: Eliminar](../../extensibility/internals/test-area-6-delete.md)
 
-- [Área de prueba 7: Share](../../extensibility/internals/test-area-7-share.md)
+- [Área de prueba 7: Compartir](../../extensibility/internals/test-area-7-share.md)
 
-- [Área de prueba 8: Cambio de complementos](../../extensibility/internals/test-area-8-plug-in-switching.md)
+- [Área de prueba 8: Cambio de los complementos](../../extensibility/internals/test-area-8-plug-in-switching.md)
 
     - Case 8a: Cambio automático
 

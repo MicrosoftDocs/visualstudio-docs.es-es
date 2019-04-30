@@ -11,12 +11,12 @@ ms.assetid: 6857e9c6-e44a-468a-afa4-f7c4a0b77844
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: cd23fdc3baf4afd6dde50a4310abf1b5c1841fd7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: b54250a54960f346f60c5d668755fb5d28ab376e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58997639"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430204"
 ---
 # <a name="launching-a-program"></a>Inicio de un programa
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,12 +32,12 @@ Los usuarios que desean depurar un programa pueden presionar F5 para ejecutar al
     Si no se especifica a DE, el puerto llama el sistema operativo para iniciar el programa, lo que hace que el entorno de tiempo de ejecución del programa que se cargue.  
   
    > [!NOTE]
-   >  Si a DE se usa para iniciar un programa, es probable que se adjuntará al mismo DE al programa.  
+   > Si a DE se usa para iniciar un programa, es probable que se adjuntará al mismo DE al programa.  
   
 3. Dependiendo de si el puerto o la DE inicia el programa, la DE o el entorno de tiempo de ejecución, a continuación, crea una descripción del programa o el nodo y notifica el puerto que se ejecuta el programa.  
   
    > [!NOTE]
-   >  Se recomienda que el entorno de tiempo de ejecución crea el nodo de programa, porque el nodo de programa es una representación reducida de un programa que se puede depurar. No hay ninguna necesidad de cargar una completa DE solo para crear y registrar un nodo de programa. Si se ha diseñado la DE para ejecutarse en el proceso del IDE, pero ningún IDE está realmente se está ejecutando, debe haber un componente que se puede agregar un nodo de programa al puerto.  
+   > Se recomienda que el entorno de tiempo de ejecución crea el nodo de programa, porque el nodo de programa es una representación reducida de un programa que se puede depurar. No hay ninguna necesidad de cargar una completa DE solo para crear y registrar un nodo de programa. Si se ha diseñado la DE para ejecutarse en el proceso del IDE, pero ningún IDE está realmente se está ejecutando, debe haber un componente que se puede agregar un nodo de programa al puerto.  
   
    El programa recién creado, junto con todos los demás programas, relacionados con o no relacionados, inicia o adjuntados para desde el mismo IDE, crear una sesión de depuración.  
   

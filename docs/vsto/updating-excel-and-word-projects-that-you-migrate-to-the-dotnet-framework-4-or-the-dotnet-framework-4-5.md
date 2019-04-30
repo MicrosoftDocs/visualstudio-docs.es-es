@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c1a814e71563f8b31c54fb9caaeb062a505c186e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fd80f4a72151fdebb3f0445024963a65db981e63
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087265"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436474"
 ---
 # <a name="update-excel-and-word-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Actualizar proyectos de Excel y Word migrados a .NET Framework 4 o .NET Framework 4.5
   Si tiene un proyecto de Word o Excel que use cualquiera de las siguientes características, debe modificar el código si se cambia el marco de trabajo de destino a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o una versión posterior:
@@ -48,7 +48,7 @@ ms.locfileid: "60087265"
 2. En el nodo **Propiedades** (en C#) o **Mi proyecto** (en Visual Basic), haga doble clic en el archivo de código AssemblyInfo para abrirlo en el editor de código.
 
     > [!NOTE]
-    >  Para ver el archivo de código AssemblyInfo en los proyectos de Visual Basic, haga clic en el botón **Mostrar todos los archivos** del **Explorador de soluciones** .
+    > Para ver el archivo de código AssemblyInfo en los proyectos de Visual Basic, haga clic en el botón **Mostrar todos los archivos** del **Explorador de soluciones** .
 
 3. Busque `Microsoft.Office.Tools.Excel.ExcelLocale1033Attribute` y quítelo del archivo o márquelo como comentario.
 

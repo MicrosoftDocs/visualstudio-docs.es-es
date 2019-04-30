@@ -18,12 +18,12 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 835bab46a9537a3a54d0155d9835ab11eaa4c834
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 27090998a7afa6f99da9152e1f5bb7407fed6aa0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58986892"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63423270"
 ---
 # <a name="clickonce-security-and-deployment"></a>Seguridad e implementación ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,13 +78,13 @@ ms.locfileid: "58986892"
  Se puede agregar la aplicación para el usuario **iniciar** menú y a la **agregar o quitar programas** grupo en el **Panel de Control**. A diferencia de otras tecnologías de implementación, se agrega nada a la **archivos de programa** carpeta o el registro y sin derechos administrativos son necesarios para la instalación  
   
 > [!NOTE]
->  También es posible impedir que la aplicación que se va a agregar a la **iniciar** menú y **agregar o quitar programas** grupo, en efecto lo que se comportan como una aplicación Web. Para más información, consulte el artículo [Elegir una estrategia de implementación de ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md).  
+> También es posible impedir que la aplicación que se va a agregar a la **iniciar** menú y **agregar o quitar programas** grupo, en efecto lo que se comportan como una aplicación Web. Para más información, consulte el artículo [Elegir una estrategia de implementación de ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md).  
   
 ### <a name="updating-clickonce-applications"></a>Actualizar las aplicaciones ClickOnce  
  Cuando los desarrolladores de aplicaciones crean una versión actualizada de la aplicación, genera un nuevo manifiesto de aplicación y copiar archivos en una ubicación de implementación, normalmente una carpeta del mismo nivel en la carpeta de implementación de aplicación original. El administrador actualiza el manifiesto de implementación para que apunte a la ubicación de la nueva versión de la aplicación.  
   
 > [!NOTE]
->  El **Asistente para publicación** en Visual Studio puede utilizarse para realizar estos pasos.  
+> El **Asistente para publicación** en Visual Studio puede utilizarse para realizar estos pasos.  
   
  Además de la ubicación de implementación, el manifiesto de implementación también contiene una ubicación de actualización (una página Web o red recurso compartido de archivos), donde la aplicación comprueba las versiones actualizadas. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] **Publicar** propiedades se utilizan para especificar cuándo y con qué frecuencia debe buscar actualizaciones la aplicación. Se puede especificar el comportamiento de actualización en el manifiesto de implementación, o se puede presentar como opciones del usuario en la interfaz de usuario de la aplicación por medio de la [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] API. Además, las propiedades **Publish** se pueden emplear para que las actualizaciones sean obligatorias o para deshacer la instalación y volver a una versión anterior. Para obtener más información, consulte [elegir una estrategia de actualización de ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md).  
   

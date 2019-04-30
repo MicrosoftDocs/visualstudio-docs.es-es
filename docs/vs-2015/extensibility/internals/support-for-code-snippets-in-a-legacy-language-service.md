@@ -12,12 +12,12 @@ ms.assetid: 7490325b-acee-4c2d-ac56-1cd5db1a1083
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8a96e6b10b68fc3b3275fbadb07de310c224da8c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e3fa0eaa6a0b301914f0ea908ef1222d1b342f5c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104919"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408461"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>Compatibilidad con fragmentos de código en un servicio de lenguaje heredado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Un fragmento de código es un fragmento de código que se inserta en el archivo 
  Servicios de lenguaje heredado se implementan como parte de un paquete VSPackage, pero la forma más reciente para implementar características de servicio de lenguaje es usar las extensiones MEF. Para obtener más información, consulte [Tutorial: Implementación de fragmentos de código](../../extensibility/walkthrough-implementing-code-snippets.md).  
   
 > [!NOTE]
->  Se recomienda que comience a usar el nuevo editor de API tan pronto como sea posible. Esto mejorará el rendimiento de su servicio de lenguaje y le permiten aprovechar las nuevas características del editor.  
+> Se recomienda que comience a usar el nuevo editor de API tan pronto como sea posible. Esto mejorará el rendimiento de su servicio de lenguaje y le permiten aprovechar las nuevas características del editor.  
   
 ## <a name="managed-package-framework-support-for-code-snippets"></a>Soporte técnico de marco de trabajo de paquete para fragmentos de código administrados  
  Managed package framework (MPF) admite la mayoría de las funciones de fragmento de código, de la lectura de la plantilla para insertar el fragmento de código y habilitar especial del modo de edición. Soporte técnico se administra a través de la <xref:Microsoft.VisualStudio.Package.ExpansionProvider> clase.  
@@ -395,4 +395,4 @@ namespace TestLanguagePackage
  [Características del servicio de lenguaje heredado](../../extensibility/internals/legacy-language-service-features1.md)   
  [Registrar un servicio de lenguaje heredado](../../extensibility/internals/registering-a-legacy-language-service1.md)   
  [Fragmentos de código](../../ide/code-snippets.md)   
- [Tutorial: Obtener una lista de fragmentos de código instalados (implementación heredada)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)
+ [Tutorial: Obtención de una lista de los fragmentos de código instalados (implementación heredada)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)

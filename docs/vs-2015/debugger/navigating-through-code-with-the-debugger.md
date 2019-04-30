@@ -21,12 +21,12 @@ caps.latest.revision: 47
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c690e0c009e50cbb98b6dc4f61c1dc6284443edf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f79ece781db19f2483ef1dd6cb0a81ff7cf78e06
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074341"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430978"
 ---
 # <a name="navigating-through-code-with-the-debugger"></a>Desplazarse por el código con el depurador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Familiarícese con los comandos y métodos abreviados para navegar por el códig
  Para detener en cada línea de código (cada instrucción) durante la depuración, use el **F11** método abreviado de teclado (o **depurar** / **paso a paso** en el menú).  
   
 > [!TIP]
->  Cuando se ejecuta cada línea de código, puede mantener el puntero sobre las variables para ver sus valores o usar el [variables locales](../debugger/autos-and-locals-windows.md) y [inspección](../debugger/autos-and-locals-windows.md) windows para ver sus valores cambia.  
+> Cuando se ejecuta cada línea de código, puede mantener el puntero sobre las variables para ver sus valores o usar el [variables locales](../debugger/autos-and-locals-windows.md) y [inspección](../debugger/autos-and-locals-windows.md) windows para ver sus valores cambia.  
   
  Estos son algunos detalles sobre el comportamiento de **paso a paso**:  
   
@@ -87,7 +87,7 @@ Familiarícese con los comandos y métodos abreviados para navegar por el códig
 |**Mayús+F11**|**Paso a paso para salir**|**Paso a paso fuera** continúa la ejecución de código y suspende la ejecución (el depurador se salta a través de la función actual) que devuelve la función actual.|  
   
 > [!TIP]
->  Si necesita buscar el punto de entrada en la aplicación, comience con **F10** o **F11**. Estos comandos son muy útiles cuando está intentando buscar más información acerca de su flujo de ejecución o inspeccionar el estado de la aplicación.  
+> Si necesita buscar el punto de entrada en la aplicación, comience con **F10** o **F11**. Estos comandos son muy útiles cuando está intentando buscar más información acerca de su flujo de ejecución o inspeccionar el estado de la aplicación.  
   
 ## <a name="BKMK_Break_into_code_by_using_breakpoints_or_Break_All"></a> Ejecutar hasta una ubicación específica o función  
  A menudo el método preferido de depuración de código, estos métodos son útiles cuando se sabe exactamente qué código que desea inspeccionar o al menos se sabe dónde desea iniciar la depuración.  
@@ -140,7 +140,7 @@ Familiarícese con los comandos y métodos abreviados para navegar por el códig
 - En la ventana Desensamblado, establezca el cursor en la instrucción de ensamblado que desea ejecutar a continuación, haga clic en una y elija **Establecer instrucción siguiente**.  
   
 > [!CAUTION]
->  Al establecer la siguiente instrucción, el contador del programa salta directamente a la nueva ubicación. Utilice este comando con precaución.  
+> Al establecer la siguiente instrucción, el contador del programa salta directamente a la nueva ubicación. Utilice este comando con precaución.  
 > 
 > - No se ejecutan las instrucciones entre los puntos de ejecución anteriores y nuevos.  
 >   - Si mueve el punto de ejecución hacia atrás, no se deshacen las instrucciones intermedias.  
@@ -149,7 +149,7 @@ Familiarícese con los comandos y métodos abreviados para navegar por el códig
 >   - Cuando la opción Editar y continuar está habilitada, **Establecer instrucción siguiente** genera un error si se han realizado modificaciones que Editar y continuar no puede reasignar inmediatamente. Esto puede suceder, por ejemplo, si se ha editado código en un bloque catch. Cuando ocurra, aparecerá un mensaje de error que indica que no se puede realizar la operación.  
 > 
 > [!NOTE]
->  En código administrado, no puede mover la instrucción siguiente en las situaciones siguientes:  
+> En código administrado, no puede mover la instrucción siguiente en las situaciones siguientes:  
 > 
 > - La instrucción siguiente está en un método diferente de la instrucción actual.  
 >   - La depuración se inició a través de la depuración Just-In-Time.  
@@ -166,7 +166,7 @@ Familiarícese con los comandos y métodos abreviados para navegar por el códig
  Cuando solo mi código está deshabilitada, el depurador puede ir al código que no es de usuario y código de usuario no aparece en las ventanas del depurador.  
   
 > [!NOTE]
->  Sólo mi código no se admite para los proyectos de dispositivos.  
+> Sólo mi código no se admite para los proyectos de dispositivos.  
   
  **Ir a llamadas del sistema**  
   

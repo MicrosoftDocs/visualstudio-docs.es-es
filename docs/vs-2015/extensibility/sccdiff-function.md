@@ -12,12 +12,12 @@ ms.assetid: d49bc8c5-f631-4153-9d3c-feb3564da305
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c17064d2d14fe072a4f5215ac06c9f7e38fa8e51
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: aa5ea0a269cdbfe678328dc652b4177bdc667b99
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58997105"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432463"
 ---
 # <a name="sccdiff-function"></a>SccDiff (Función)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,7 +74,7 @@ SCCRTN SccDiff(
  Como optimización del rendimiento, el complemento de control de origen puede usar una alternativa basada en una suma de comprobación o una marca de tiempo en lugar de la comparación byte a byte lo llamada para `SCC_DIFF_CONTENTS`: estas formas de comparación son obviamente más rápido pero menos confiable. No todos los sistemas de control de código fuente pueden admitir estos métodos alternativos de comparación y el complemento es posible que tenga que recurrir a una comparación de contenido. Todos los complementos código fuente control deben, como mínimo, admitir una comparación de contenido.  
   
 > [!NOTE]
->  Las marcas de diferencia rápido son mutuamente excluyentes. Es válido pasar ninguna marca, pero no es válido pasar simultáneamente más de uno. `SCC_DIFF_QUICK_DIFF`, que es una máscara que combina todas las marcas, se puede usar para probar, pero nunca se debe pasar como parámetro.  
+> Las marcas de diferencia rápido son mutuamente excluyentes. Es válido pasar ninguna marca, pero no es válido pasar simultáneamente más de uno. `SCC_DIFF_QUICK_DIFF`, que es una máscara que combina todas las marcas, se puede usar para probar, pero nunca se debe pasar como parámetro.  
   
 |`fOption`|Significado|  
 |---------------|-------------|  

@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c2d5fdd068894434c170c2525499a41c7c14b4e2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5bfd585a3185d83981d24c8dc77e62193c1363d4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095846"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442537"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Herramientas de rendimiento en aplicaciones de Windows 8 y Windows Server 2012
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60095846"
 Las características de seguridad mejoradas en Windows 8 y Windows Server 2012 requirieron cambios significativos en la forma en que las herramientas de rendimiento de Visual Studio recopilan datos en estas plataformas. Las aplicaciones de la Tienda Windows también requieren nuevas técnicas de recolección. En este tema se describen los cambios para las herramientas de rendimiento en las plataformas Windows 8 y Windows Server 2012.  
   
 > [!NOTE]
->  Las herramientas de rendimiento en otras versiones compatibles de Windows (Windows 7, Windows Server 2008 R2) no han cambiado.  
+> Las herramientas de rendimiento en otras versiones compatibles de Windows (Windows 7, Windows Server 2008 R2) no han cambiado.  
   
 ## <a name="BKMK_In_this_topic"></a> En este tema  
  [Recopilar datos de aplicaciones de la Tienda Windows desde el IDE de Visual Studio](#BKMK_Profiling_Windows_Store_apps_from_the_Visual_Studio_IDE)  
@@ -105,7 +105,7 @@ Las características de seguridad mejoradas en Windows 8 y Windows Server 2012 r
 - Copie y ejecute el programa de instalación independiente de las herramientas de generación de perfiles desde el equipo de Visual Studio. Los programas de instalación están en la carpeta *%VSInstallDir%* **\Team Tools\Performance Tools\Setups** . Elija el programa de instalación para el sistema operativo (x86/x64) del equipo remoto.  
   
 > [!NOTE]
->  Para recopilar datos de generación de perfiles TIP, debe instalar el generador de perfiles independiente del equipo de Visual Studio en el equipo remoto.  
+> Para recopilar datos de generación de perfiles TIP, debe instalar el generador de perfiles independiente del equipo de Visual Studio en el equipo remoto.  
   
  Estas características y opciones de generación de perfiles no se admiten al generar perfiles de aplicaciones de Windows 8 y Windows Server 2012 desde la línea de comandos:  
   

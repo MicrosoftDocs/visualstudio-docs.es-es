@@ -12,12 +12,12 @@ ms.assetid: 47f295b5-1ca5-4e7b-bb52-7b926b136622
 caps.latest.revision: 37
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0b7b9e352c3042e5175b7420a9d4203ca7f59e7f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c28a0520680951920ee19e91f3df098066f432dd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117146"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432124"
 ---
 # <a name="exposing-properties-to-the-properties-window"></a>Exposición de las propiedades en la ventana de propiedades
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -177,7 +177,7 @@ En este tutorial expone las propiedades públicas de un objeto para el **propied
 10. Active la casilla de verificación la **MyToolWindow** ventana. **IsChecked** en el **propiedades** ventana cambia a **True**. Desactive la casilla de verificación en la **MyToolWindow** ventana. **IsChecked** en el **propiedades** ventana cambia a **False**. Cambie el valor de **IsChecked** en el **propiedades** ventana. La casilla de verificación en la **MyToolWindow** ventana cambia para coincidir con el nuevo valor.  
   
     > [!NOTE]
-    >  Si debe desechar un objeto que se muestra en el **propiedades** (ventana), llamada `OnSelectChange` con un `null` contenedor de selección primero. Después de desechar la propiedad o el objeto, puede cambiar a un contenedor de selección que se ha actualizado <xref:Microsoft.VisualStudio.Shell.SelectionContainer.SelectableObjects%2A> y <xref:Microsoft.VisualStudio.Shell.SelectionContainer.SelectedObjects%2A> se enumeran.  
+    > Si debe desechar un objeto que se muestra en el **propiedades** (ventana), llamada `OnSelectChange` con un `null` contenedor de selección primero. Después de desechar la propiedad o el objeto, puede cambiar a un contenedor de selección que se ha actualizado <xref:Microsoft.VisualStudio.Shell.SelectionContainer.SelectableObjects%2A> y <xref:Microsoft.VisualStudio.Shell.SelectionContainer.SelectedObjects%2A> se enumeran.  
   
 ## <a name="changing-selection-lists"></a>Cambiar las listas de selección  
  En esta sección, agregue una lista de selección para una clase de propiedad básico y use la interfaz de la ventana de herramienta para elegir qué lista de selección para mostrar.  
@@ -261,7 +261,7 @@ En este tutorial expone las propiedades públicas de un objeto para el **propied
 6. Active la casilla situada en la **MyToolWindow** ventana. El **propiedades** ventana muestra el `Simple` propiedades, del objeto **SomeText** y **ReadOnly**. Desactive la casilla de verificación. Las propiedades públicas de la ventana aparecen en la **propiedades** ventana.  
   
     > [!NOTE]
-    >  El nombre para mostrar de **SomeText** es **mi texto**.  
+    > El nombre para mostrar de **SomeText** es **mi texto**.  
   
 ## <a name="best-practice"></a>Procedimiento recomendado  
  En este tutorial, <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> se implementa para que la colección de objetos seleccionables y en la colección de objetos seleccionados son la misma colección. Sólo el objeto seleccionado aparece en la lista del explorador de propiedades. Para una implementación de ISelectionContainer más completa, consulte los ejemplos de Reference.ToolWindow.  

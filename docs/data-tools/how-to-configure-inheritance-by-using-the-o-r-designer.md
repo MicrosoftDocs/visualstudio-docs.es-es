@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c57df245e897452d0bb8f3ae32d6490af9ee91fa
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8927e6140792c12f42f1822afd0e715881384f1c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063015"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402802"
 ---
 # <a name="how-to-configure-inheritance-by-using-the-or-designer"></a>Procedimiento Configurar herencia mediante Object Relational Designer
 El **Object Relational Designer** (**Object Relational Designer**) admite el concepto de herencia de tabla única normalmente implementada en los sistemas relacionales. En la herencia de tabla única, hay una sola tabla de base de datos que contiene campos tanto para la información de elementos primarios como para la información de elementos secundarios. En el caso de datos relacionales, una columna discriminadora contiene el valor que determina la clase a la que pertenece un registro cualquiera.
@@ -33,12 +33,12 @@ La creación de un modelo de objetos que use la herencia (y que corresponda a da
 4. Haga clic en **Herencia** en la pestaña **Object Relational Designer** del **Cuadro de herramientas** y, a continuación, haga clic en la subclase (la tabla cuyo nombre ha cambiado) y conéctela a la clase base.
 
     > [!NOTE]
-    >  Haga clic en el elemento **Herencia** del **Cuadro de herramientas** y suelte el botón del mouse, haga clic en la segunda copia de la clase creada en el paso 3 y haga clic en la primera clase creada en el paso 2. La flecha situada en la línea de herencia apunta a la primera clase.
+    > Haga clic en el elemento **Herencia** del **Cuadro de herramientas** y suelte el botón del mouse, haga clic en la segunda copia de la clase creada en el paso 3 y haga clic en la primera clase creada en el paso 2. La flecha situada en la línea de herencia apunta a la primera clase.
 
 5. En cada clase, elimine las propiedades de objeto que no desee que aparezcan y que no se utilicen para asociaciones. Recibe un error si intenta eliminar las propiedades del objeto utilizadas para las asociaciones: [La propiedad \<nombre de propiedad > no se puede eliminar porque participa en la asociación \<nombre de asociación >](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md).
 
     > [!NOTE]
-    >  Dado que una clase derivada hereda las propiedades definidas en su clase base, no se pueden definir las mismas columnas en cada clase. (Las columnas se implementan como propiedades.) Puede habilitar la creación de columnas en la clase derivada estableciendo el Modificador de herencia de la propiedad en la clase base. Para obtener más información, consulte [Fundamentos de la herencia (Visual Basic)](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics).
+    > Dado que una clase derivada hereda las propiedades definidas en su clase base, no se pueden definir las mismas columnas en cada clase. (Las columnas se implementan como propiedades.) Puede habilitar la creación de columnas en la clase derivada estableciendo el Modificador de herencia de la propiedad en la clase base. Para obtener más información, consulte [Fundamentos de la herencia (Visual Basic)](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics).
 
 6. Seleccione la línea de herencia en el **Object Relational Designer**.
 

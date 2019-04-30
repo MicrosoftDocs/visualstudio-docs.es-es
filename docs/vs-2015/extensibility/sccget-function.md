@@ -12,12 +12,12 @@ ms.assetid: 09a18bd2-b788-411a-9da6-067d806e46f6
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3f8317405c52850eceb816b958718835c029c6c4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2a5d5065ca427f0319174aa59e6b87d356816d4c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068306"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432432"
 ---
 # <a name="sccget-function"></a>SccGet (Función)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,7 +77,7 @@ SCCRTN SccGet(
  El `SCC_GET_ALL` marca se puede combinar con el `SCC_GET_RECURSIVE` marca para recuperar todos los archivos en los directorios dados y también todos los subdirectorios.  
   
 > [!NOTE]
->  `SCC_GET_RECURSIVE` nunca debe pasarse sin `SCC_GET_ALL`. Además, tenga en cuenta que si los directorios C:\A y C:\A\B son ambos se pasan en una recursiva, C:\A\B y todos sus subdirectorios realmente se recuperarán dos veces. Es responsabilidad del IDE, y no en el origen de control del complemento, para asegurarse de que se mantengan los duplicados, como esto fuera de la matriz.  
+> `SCC_GET_RECURSIVE` nunca debe pasarse sin `SCC_GET_ALL`. Además, tenga en cuenta que si los directorios C:\A y C:\A\B son ambos se pasan en una recursiva, C:\A\B y todos sus subdirectorios realmente se recuperarán dos veces. Es responsabilidad del IDE, y no en el origen de control del complemento, para asegurarse de que se mantengan los duplicados, como esto fuera de la matriz.  
   
  Por último, incluso si el complemento de control de un origen especificado el `SCC_CAP_GET_NOUI` marca en la inicialización, lo que indica que no tiene una interfaz de usuario para un comando Get, todavía puede llamarse mediante el IDE para recuperar los archivos de esta función. La marca simplemente significa que el IDE no muestra un elemento de menú de Get y que el complemento no es lo esperado proporcionar cualquier interfaz de usuario.  
   

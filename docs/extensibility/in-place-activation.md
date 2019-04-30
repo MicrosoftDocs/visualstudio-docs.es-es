@@ -6,12 +6,12 @@ helpviewer_keywords:
 - editors [Visual Studio SDK], custom - in-place view activation
 ms.assetid: 7d316945-06e0-4d8e-ba3a-0ef96fc75399
 manager: jillfra
-ms.openlocfilehash: 9952cc804e548896fb4dec9f6c1a447835ba251e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 284a0da3aaf0b88f7f0d2c7fc3983ca3c6aacbc6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723778"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415268"
 ---
 # <a name="in-place-activation"></a>Activación en contexto
 Si la vista del editor hospeda ActiveX u otros controles activos, debe implementar la vista del editor como un control ActiveX o como un objeto de datos de documento activo mediante el modelo de activación en contexto.
@@ -22,7 +22,7 @@ Si la vista del editor hospeda ActiveX u otros controles activos, debe implement
  Si implementa un control ActiveX, puede hospedar otros objetos incrustados. Si implementa un objeto de datos del documento, el marco de ventana restringe la capacidad de usar controles ActiveX.
 
 > [!NOTE]
->  Las interfaces <xref:Microsoft.VisualStudio.OLE.Interop.IOleDocument> y <xref:Microsoft.VisualStudio.OLE.Interop.IOleDocumentView> permiten una separación de los datos y la vista. Sin embargo, Visual Studio no admite estas características y estas interfaces se usan únicamente para representar el objeto de la vista de documento.
+> Las interfaces <xref:Microsoft.VisualStudio.OLE.Interop.IOleDocument> y <xref:Microsoft.VisualStudio.OLE.Interop.IOleDocumentView> permiten una separación de los datos y la vista. Sin embargo, Visual Studio no admite estas características y estas interfaces se usan únicamente para representar el objeto de la vista de documento.
 
  Los editores que usan el servicio <xref:Microsoft.VisualStudio.Shell.Interop.SOleComponentUIManager> pueden proporcionar integración de menús, barras de herramientas y comandos mediante la llamada a los métodos de la interfaz <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager> implementada por el servicio <xref:Microsoft.VisualStudio.Shell.Interop.SOleComponentUIManager> . Los editores también pueden ofrecer otras funciones de Visual Studio, como el seguimiento de selección y la administración de deshacer. Para obtener más información, consulte [crear editores personalizados y diseñadores](../extensibility/creating-custom-editors-and-designers.md).
 
@@ -32,7 +32,7 @@ Si la vista del editor hospeda ActiveX u otros controles activos, debe implement
  ![En&#45;colocar el Editor de activación](../extensibility/media/vsinplaceactivationeditor.gif "vsInPlaceActivationEditor") editor de activación en contexto
 
 > [!NOTE]
->  De los objetos de este dibujo, solo el objeto `CYourEditorFactory` es necesario para crear un editor estándar. Si está creando un editor personalizado, no es necesario que implemente <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> , ya que el editor tendrá probablemente su propio mecanismo de persistencia privado. Para obtener más información, consulte [crear editores personalizados y diseñadores](../extensibility/creating-custom-editors-and-designers.md).
+> De los objetos de este dibujo, solo el objeto `CYourEditorFactory` es necesario para crear un editor estándar. Si está creando un editor personalizado, no es necesario que implemente <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> , ya que el editor tendrá probablemente su propio mecanismo de persistencia privado. Para obtener más información, consulte [crear editores personalizados y diseñadores](../extensibility/creating-custom-editors-and-designers.md).
 
  Todas las interfaces implementadas para crear un editor de activación en contexto se muestran en el objeto `CYourEditorDocument` único, pero esta configuración admite solamente una vista única de los datos del documento. Para obtener más información sobre la compatibilidad con varias vistas de los datos del documento, consulte [admite varias vistas de documento](../extensibility/supporting-multiple-document-views.md).
 

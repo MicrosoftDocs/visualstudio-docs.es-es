@@ -13,12 +13,12 @@ ms.assetid: 9ed94112-0c38-49df-b728-0dd2d0d1eb47
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 29b65f5cff9e2ffbed3c66c29c61f0a7e9e50f20
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 4778603278bf07dc7b0a45544b4835d2ed2cbf8a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58999073"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438357"
 ---
 # <a name="projectitem-element-visual-studio-item-templates"></a>ProjectItem (Elemento, Plantillas de elementos de Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "58999073"
 Especifica un archivo que se incluye en la plantilla de elemento.  
   
 > [!NOTE]
->  El `ProjectItem` elemento acepta atributos diferentes dependiendo de si la plantilla es para un proyecto o un elemento. Este tema se explica el `ProjectItem` (elemento) para el elemento. Para obtener una explicación de la `ProjectItem` (elemento) para las plantillas de proyecto, vea [ProjectItem (elemento) (plantillas de proyecto de Visual Studio)](../extensibility/projectitem-element-visual-studio-project-templates.md).  
+> El `ProjectItem` elemento acepta atributos diferentes dependiendo de si la plantilla es para un proyecto o un elemento. Este tema se explica el `ProjectItem` (elemento) para el elemento. Para obtener una explicación de la `ProjectItem` (elemento) para las plantillas de proyecto, vea [ProjectItem (elemento) (plantillas de proyecto de Visual Studio)](../extensibility/projectitem-element-visual-studio-project-templates.md).  
   
  \<VSTemplate>  
  \<TemplateContent>  
