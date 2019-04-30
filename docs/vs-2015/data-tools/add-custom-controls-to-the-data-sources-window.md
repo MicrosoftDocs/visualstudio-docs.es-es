@@ -23,12 +23,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5bc50d013f64543a60d6dad63531c9963fae869c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 99bd377ac54b664424b4bd29ab2917b00dae35fa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055644"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429112"
 ---
 # <a name="add-custom-controls-to-the-data-sources-window"></a>Agregar controles personalizados a la ventana de orígenes de datos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Cuando se arrastra un elemento desde el **orígenes de datos** ventana a una sup
  Para obtener más información acerca de cómo seleccionar los controles enlazados a datos para crear elementos en el **orígenes de datos** ventana, consulte [establecer el control que se creará al arrastrar desde la ventana Orígenes de datos](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
   
 > [!NOTE]
->  Los cuadros de diálogo y los comandos de menú que se ven pueden diferir de los descritos en la Ayuda, dependiendo de los valores de configuración o de edición activos. Para cambiar la configuración, en el **herramientas** menú, seleccione **importar y exportar configuraciones**. Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Los cuadros de diálogo y los comandos de menú que se ven pueden diferir de los descritos en la Ayuda, dependiendo de los valores de configuración o de edición activos. Para cambiar la configuración, en el **herramientas** menú, seleccione **importar y exportar configuraciones**. Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="customizinglist"></a> Personalizar la lista de controles enlazables para un tipo de datos  
  Para agregar o quitar controles de la lista de controles disponibles para los elementos de la **orígenes de datos** ventana que tiene un tipo de datos específico, realice los pasos siguientes.  
@@ -66,7 +66,7 @@ Cuando se arrastra un elemento desde el **orígenes de datos** ventana a una sup
 5. En el **asociados controles** cuadro, seleccione cada control que desea que estén disponibles para el tipo de datos seleccionado o anule la selección de todos los controles que desee quitar de la lista.  
   
     > [!NOTE]
-    >  Si el control que desea seleccionar no aparece en el **asociados controles** cuadro, debe agregar el control a la lista. Para obtener más información, consulte [agregar controles a la lista de controles asociados para un tipo de datos](#addingcontrols).  
+    > Si el control que desea seleccionar no aparece en el **asociados controles** cuadro, debe agregar el control a la lista. Para obtener más información, consulte [agregar controles a la lista de controles asociados para un tipo de datos](#addingcontrols).  
   
 6. Haga clic en **Aceptar**.  
   
@@ -94,7 +94,7 @@ Cuando se arrastra un elemento desde el **orígenes de datos** ventana a una sup
 3. En el **asociados controles** cuadro, el control que acaba de agregar a la **cuadro de herramientas** debería aparecer ahora.  
   
     > [!NOTE]
-    >  Solo los controles que se encuentran dentro de la solución actual o en un ensamblado que se hace referencia se pueden agregar a la lista de controles asociados. (Los controles también deben implementar uno de los atributos de enlace de datos en la tabla anterior.) Para enlazar datos a un control personalizado que no está disponible en el **orígenes de datos** ventana, arrastre el control desde el **cuadro de herramientas** hasta la superficie de diseño y, a continuación, arrastre el elemento que se enlazará desde el **datos Orígenes** ventana al control.  
+    > Solo los controles que se encuentran dentro de la solución actual o en un ensamblado que se hace referencia se pueden agregar a la lista de controles asociados. (Los controles también deben implementar uno de los atributos de enlace de datos en la tabla anterior.) Para enlazar datos a un control personalizado que no está disponible en el **orígenes de datos** ventana, arrastre el control desde el **cuadro de herramientas** hasta la superficie de diseño y, a continuación, arrastre el elemento que se enlazará desde el **datos Orígenes** ventana al control.  
   
 ## <a name="see-also"></a>Vea también  
  [Enlazar controles a los datos en Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)

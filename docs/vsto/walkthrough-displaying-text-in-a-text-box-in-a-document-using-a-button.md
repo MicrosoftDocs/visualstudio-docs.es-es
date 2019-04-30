@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f6a9b62c62b863448bb1333b162c6706c48cd72b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1b5a4152d655dd36eb258ff6b378bf79f87123a8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071764"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443829"
 ---
 # <a name="walkthrough-display-text-in-a-text-box-in-a-document-using-a-button"></a>Tutorial: Mostrar texto en un cuadro de texto en un documento utilizando un botón
   Este tutorial muestra cómo usar los botones y cuadros de texto en una personalización de nivel de documento para Microsoft Office Word.
@@ -60,7 +60,7 @@ ms.locfileid: "60071764"
 2. Desde el **controles comunes** pestaña de la **cuadro de herramientas**, arrastre un <xref:Microsoft.Office.Tools.Word.Controls.TextBox> control al documento.
 
    > [!NOTE]
-   >  En Word, los controles se colocan de forma predeterminada en línea con el texto. Puede modificar los controles de la forma y se insertan los objetos de forma cambiando el valor predeterminado en el **editar** pestaña de la **opciones** cuadro de diálogo de Word.
+   > En Word, los controles se colocan de forma predeterminada en línea con el texto. Puede modificar los controles de la forma y se insertan los objetos de forma cambiando el valor predeterminado en el **editar** pestaña de la **opciones** cuadro de diálogo de Word.
 
 3. En el menú **Ver** , haga clic en la **Ventana Propiedades**.
 

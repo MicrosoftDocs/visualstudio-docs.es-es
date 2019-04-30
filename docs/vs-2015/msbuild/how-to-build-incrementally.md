@@ -13,12 +13,12 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4aba200bff4bc8a017756ece6576e589f33e9df6
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: c4b2e6dd825cfcf67ffffd9ace27017c8d01aa33
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662262"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431398"
 ---
 # <a name="how-to-build-incrementally"></a>Procedimiento Compilar de forma incremental
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Cuando se compila un proyecto grande, es importante que los componentes que se c
  Cuando las entradas y los resultados están especificados en un destino, puede suceder que cada resultado solo se asigne a una entrada o que no exista ninguna asignación directa entre resultados y entradas. Por ejemplo, en [Csc (Tarea)](../msbuild/csc-task.md) anterior, la salida hello.exe no se puede asignar a una única entrada porque depende de todas ellas.  
   
 > [!NOTE]
->  Un destino en el que no exista asignación directa entre entradas y resultados se compilará con más frecuencia que un destino en el que cada resultado solo se puede asignar a una entrada. Esto se debe a que [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] no puede determinar qué resultados necesitan recompilarse si algunas de las entradas han cambiado.  
+> Un destino en el que no exista asignación directa entre entradas y resultados se compilará con más frecuencia que un destino en el que cada resultado solo se puede asignar a una entrada. Esto se debe a que [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] no puede determinar qué resultados necesitan recompilarse si algunas de las entradas han cambiado.  
   
  Las tareas en las que se puede identificar una asignación directa entre resultados y entradas, como la [tarea LC](../msbuild/lc-task.md), son más adecuadas para las compilaciones incrementales que las tareas como `Csc` y [Vbc](../msbuild/vbc-task.md), que producen un ensamblado de resultados a partir de una serie de entradas.  
   
@@ -70,7 +70,7 @@ Cuando se compila un proyecto grande, es importante que los componentes que se c
   Este archivo de proyecto contiene los destinos `Convert` y `Build`. Las tareas `GenerateContentFiles` y `BuildHelp` se colocan respectivamente en los destinos `Convert` y `Build` para que se pueda compilar cada destino incrementalmente. Al usar el elemento `Output`, los resultados de la tarea `GenerateContentFiles` se colocan en la lista de elementos `ContentFile`, donde se pueden usar como entradas para la tarea `BuildHelp`. Si usa el elemento `Output` de esta manera, proporcionará automáticamente los resultados de una tarea como entradas para otra tarea y no será necesario enumerar manualmente cada elemento o las listas de elementos de cada tarea.  
   
 > [!NOTE]
->  Aunque el destino de `GenerateContentFiles` se puede compilar incrementalmente, todas las salidas de ese destino se requieren siempre como entradas para el destino de `BuildHelp`. [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] proporciona automáticamente todas las salidas de un destino como entradas para otro destino cuando se usa el elemento `Output`.  
+> Aunque el destino de `GenerateContentFiles` se puede compilar incrementalmente, todas las salidas de ese destino se requieren siempre como entradas para el destino de `BuildHelp`. [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] proporciona automáticamente todas las salidas de un destino como entradas para otro destino cuando se usa el elemento `Output`.  
   
 ```  
 <Project DefaultTargets="Build"  

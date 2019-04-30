@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0fae2dc72c44b90068212c09086c63c9e00fd2d0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 63f86011b7794ca0ddd17b890e3374327db3af0c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096548"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446935"
 ---
 # <a name="update-ribbon-customizations-in-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Actualizar las personalizaciones de cinta de opciones en proyectos de Office migrados a .NET Framework 4 o .NET Framework 4.5
   Si el proyecto contiene una personalización de cinta que se creó mediante la **cinta (diseñador Visual)** de elemento de proyecto, debe realizar los siguientes cambios en el código del proyecto si se cambia la plataforma de destino a la [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o más adelante.
@@ -75,7 +75,7 @@ ms.locfileid: "60096548"
 3. En el método `InitializeComponent`, modifique cualquier código que construya un control de la cinta para que el código use en su lugar uno de los métodos del asistente del objeto <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory>.
 
     > [!NOTE]
-    >  En los proyectos de Visual C#, debe expandir el área denominada `Component Designer generated code` para ver el método `InitializeComponent`.
+    > En los proyectos de Visual C#, debe expandir el área denominada `Component Designer generated code` para ver el método `InitializeComponent`.
 
      Por ejemplo, suponga que su archivo contiene la siguiente línea de código que crea una instancia de un <xref:Microsoft.Office.Tools.Ribbon.RibbonButton> denominado `button1` en un proyecto que tenga como destino .NET Framework 3.5.
 

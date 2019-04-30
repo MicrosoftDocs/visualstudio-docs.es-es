@@ -10,12 +10,12 @@ ms.assetid: 6b151891-c06d-40b1-9867-42298caa8492
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4695e5f866ce9161ca9f90a0f39be441f5d71a44
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a29bb95b4b3e05097f2bf095e9312fe0704c31bc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039219"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421135"
 ---
 # <a name="getting-started-with-language-service-and-editor-extensions"></a>Introducción al servicio de lenguaje y las extensiones de editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Puede usar las extensiones de editor para agregar características del servicio 
  Para empezar a escribir las extensiones de editor, use las plantillas de proyecto del editor que se instalan como parte del SDK de Visual Studio. El SDK de Visual Studio es un conjunto de herramientas que facilitan el desarrollo de extensiones de Visual Studio mediante paquetes VSPackage o mediante el uso de Managed Extensibility Framework (MEF) descargable.  
   
 > [!NOTE]
->  Para obtener más información sobre el SDK de Visual Studio, consulte [SDK de Visual Studio](../extensibility/visual-studio-sdk.md).  
+> Para obtener más información sobre el SDK de Visual Studio, consulte [SDK de Visual Studio](../extensibility/visual-studio-sdk.md).  
   
  Se recomienda que conozca los siguientes conceptos y tecnologías antes de escribir sus propias extensiones de editor.  
   
@@ -36,7 +36,7 @@ Puede usar las extensiones de editor para agregar características del servicio 
  El editor de Visual Studio usa Managed Extensibility Framework (MEF) para administrar sus componentes y extensiones. MEF también permite a los desarrolladores más fácil crear extensiones para una aplicación host como Visual Studio. En este marco de trabajo, definir una extensión según un contrato MEF y exportarlo como un componente MEF. La aplicación host administra las partes componentes encontrarlos, registrarlos y asegurándose de que se apliquen en el contexto correcto.  
   
 > [!NOTE]
->  Para obtener más información acerca de MEF en el editor, vea [Managed Extensibility Framework en el Editor de](../extensibility/managed-extensibility-framework-in-the-editor.md).  
+> Para obtener más información acerca de MEF en el editor, vea [Managed Extensibility Framework en el Editor de](../extensibility/managed-extensibility-framework-in-the-editor.md).  
   
 ## <a name="visual-studio-editor-extension-points-and-extensions"></a>Puntos de extensión del Editor de Visual Studio y extensiones  
  Puntos de extensión del Editor son componentes de MEF que puede personalizar y ampliar. En algunos casos extender el punto de extensión implementando una interfaz y exportarlo junto con los metadatos correctos. En otros casos simplemente declare una extensión y exportarlo como un tipo determinado.  
@@ -61,7 +61,7 @@ Puede usar las extensiones de editor para agregar características del servicio 
  Cuando se instala una extensión en un equipo, incluyen los archivos binarios y el manifiesto en una subcarpeta de la carpeta que se conoce a Visual Studio.  
   
 > [!WARNING]
->  No tiene que preocuparse por los detalles de los manifiestos y las ubicaciones de implementación si utiliza una de las plantillas de extensibilidad de editor que se incluyen en Visual Studio. Las plantillas contienen todo lo necesario para registrar e implementar una extensión.  
+> No tiene que preocuparse por los detalles de los manifiestos y las ubicaciones de implementación si utiliza una de las plantillas de extensibilidad de editor que se incluyen en Visual Studio. Las plantillas contienen todo lo necesario para registrar e implementar una extensión.  
   
 ## <a name="running-extensions-in-the-experimental-instance"></a>Ejecución de extensiones en la instancia Experimental  
  Puede aislar su versión de Visual Studio mientras desarrolla una extensión mediante la implementación en la siguiente carpeta experimental (en Windows Vista y Windows 7):  
@@ -84,9 +84,9 @@ Puede usar las extensiones de editor para agregar características del servicio 
   
  También puede crear editor de componentes de MEF de una extensión de paquete de Visual Studio. Vea los siguientes tutoriales para obtener más información:  
   
-- [Tutorial: Uso de un comando de Shell con una extensión del Editor](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)  
+- [Tutorial: Uso de un comando shell con una extensión del editor](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)  
   
-- [Tutorial: Uso de una tecla de método abreviado con una extensión del Editor](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)  
+- [Tutorial: Uso de una tecla de método abreviado con una extensión del editor](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)  
   
 ## <a name="see-also"></a>Vea también  
  [Servicio de lenguaje y puntos de extensión del editor](../extensibility/language-service-and-editor-extension-points.md)

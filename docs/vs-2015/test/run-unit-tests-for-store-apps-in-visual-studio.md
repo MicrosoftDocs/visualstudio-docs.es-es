@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: alexhomer1
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 309dbfcac8e5c4c38e65f8901c699dc2fa51c7a1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: bfcdb3906f405b9f7ba4650be13f4522ab559ee8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104185"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446227"
 ---
 # <a name="run-unit-tests-for-store-apps-in-visual-studio"></a>Ejecutar pruebas unitarias para aplicaciones de la Tienda en Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60104185"
 En este tema se describe cómo ejecutar pruebas unitarias con el Explorador de pruebas de Microsoft Visual Studio.
 
 > [!NOTE]
->  Los temas de esta sección describen la funcionalidad de Visual Studio Express para Windows 8. Visual Studio Community, Enterprise y Professional proporcionan características adicionales para las pruebas unitarias.
+> Los temas de esta sección describen la funcionalidad de Visual Studio Express para Windows 8. Visual Studio Community, Enterprise y Professional proporcionan características adicionales para las pruebas unitarias.
 >
 > - Use cualquier marco de pruebas unitarias de código abierto o de terceros que haya creado un adaptador complementario para el Explorador de pruebas de Microsoft. También puede analizar y mostrar información de cobertura de código para las pruebas.
 >   - Ejecute las pruebas después de cada compilación. También puede usar Microsoft Fakes, un marco de aislamiento para código administrado para centrar sus pruebas en su propio código sustituyendo el código de prueba para el sistema y la funcionalidad de terceros.
@@ -118,7 +118,7 @@ En este tema se describe cómo ejecutar pruebas unitarias con el Explorador de p
 1. En el editor de Visual Studio, establezca un punto de interrupción en uno o varios métodos de prueba que desee depurar.
 
    > [!NOTE]
-   >  Dado que los métodos de prueba se pueden ejecutar en cualquier orden, establezca puntos de interrupción en todos los métodos de prueba que desee depurar.
+   > Dado que los métodos de prueba se pueden ejecutar en cualquier orden, establezca puntos de interrupción en todos los métodos de prueba que desee depurar.
 
 2. En el Explorador de pruebas, seleccione los métodos de prueba y elija **Depurar pruebas seleccionadas** en el menú contextual.
 

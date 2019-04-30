@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9330a41d0888532640774891386011f6b8dbfc24
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0de96057326a9e4b6a64865ef34972d5542aff30
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106025"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442997"
 ---
 # <a name="directed-graph-markup-language-dgml-reference"></a>Referencia de Directed Graph Markup Language (DGML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ El formato DGML (Directed Graph Markup Language) describe la información que se
  Tenga en cuenta que algunas versiones de Visual Studio solo admiten un subconjunto de capacidades DGML, vea [compatibilidad con la versión de arquitectura y las herramientas de modelado](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 > [!NOTE]
->  Al editar un archivo .dgml, IntelliSense le ayuda a identificar los atributos disponibles para cada elemento y sus valores. Para especificar color en un atributo, use nombres para los colores comunes, como "Blue", o valores hexadecimales de ARGB, como "#ffa0b1c3". DGML emplea un pequeño subconjunto de los formatos de definición de color de Windows Presentation Foundation (WPF). Para obtener más información, consulte [clase Colors](http://go.microsoft.com/fwlink/?LinkId=182345).  
+> Al editar un archivo .dgml, IntelliSense le ayuda a identificar los atributos disponibles para cada elemento y sus valores. Para especificar color en un atributo, use nombres para los colores comunes, como "Blue", o valores hexadecimales de ARGB, como "#ffa0b1c3". DGML emplea un pequeño subconjunto de los formatos de definición de color de Windows Presentation Foundation (WPF). Para obtener más información, consulte [clase Colors](http://go.microsoft.com/fwlink/?LinkId=182345).  
   
 ## <a name="DGML"></a> Sintaxis DGML  
  En la tabla siguiente se describen los tipos de elementos que se emplean en DGML:  
@@ -70,7 +70,7 @@ El formato DGML (Directed Graph Markup Language) describe la información que se
    Este elemento opcional contiene una lista de elementos `<Node/>`, que definen nodos del mapa. Para obtener más información, vea el elemento `<Node/>`.  
   
   > [!NOTE]
-  >  Al hacer referencia a un nodo no definido en un elemento `<Link/>`, el mapa crea un elemento `<Node/>` automáticamente.  
+  > Al hacer referencia a un nodo no definido en un elemento `<Link/>`, el mapa crea un elemento `<Node/>` automáticamente.  
   
    Ejemplo:  
   
@@ -151,7 +151,7 @@ El formato DGML (Directed Graph Markup Language) describe la información que se
    Este elemento define un único vínculo que conecta un nodo de origen con un nodo de destino. Aparece dentro de la lista de elementos `<Links></Links>`.  
   
   > [!NOTE]
-  >  Si este elemento hace referencia a un nodo no definido, el documento de mapa crea automáticamente un nodo que tiene los atributos especificados, en su caso.  
+  > Si este elemento hace referencia a un nodo no definido, el documento de mapa crea automáticamente un nodo que tiene los atributos especificados, en su caso.  
   
    Este elemento debe incluir los atributos siguientes:  
   

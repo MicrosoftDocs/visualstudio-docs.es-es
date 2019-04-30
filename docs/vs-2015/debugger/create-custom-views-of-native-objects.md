@@ -16,12 +16,12 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e44e8166fb4f03f28d96203dc7efc09d3913224c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: daa4eba0949262e0bfbfa67c9b0ab3ee814558e4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086200"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440847"
 ---
 # <a name="create-custom-views-of-native-objects"></a>Crear vistas personalizadas de los objetos nativos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ El marco Natvis de Visual Studio permite personalizar la manera en que Visual St
  Natvis sustituye el archivo **autoexp.dat** usado en versiones anteriores de Visual Studio y proporciona una sintaxis XML, mejores diagnósticos, control de versiones y compatibilidad con varios archivos.  
 
 > [!NOTE]
->  No se puede usar el marco Natvis para las visualizaciones en los siguientes casos:  
+> No se puede usar el marco Natvis para las visualizaciones en los siguientes casos:  
 > 
 > - Está depurando un proyecto de escritorio de Windows de C++ con el tipo de depurador establecido en **mixto**.  
 >   - Está efectuando una depuración en modo mixto en una aplicación de escritorio de Windows en modo de compatibilidad administrado (**Herramientas / Opciones / Depuración / General / Usar modo de compatibilidad administrado**).  
@@ -304,7 +304,7 @@ El marco Natvis de Visual Studio permite personalizar la manera en que Visual St
  En la expresión `DisplayString` , `x` e `y`, que son miembros de `CPoint`, se encuentran dentro de llaves, por lo que sus valores se evalúan. La expresión también muestra cómo se puede omitir una llave con llaves dobles ( `{{` o `}}` ).  
 
 > [!NOTE]
->  El elemento `DisplayString` es el único que acepta cadenas arbitrarias y la sintaxis de llaves. Todos los demás elementos de visualización solo aceptan expresiones que evalúa el depurador.  
+> El elemento `DisplayString` es el único que acepta cadenas arbitrarias y la sintaxis de llaves. Todos los demás elementos de visualización solo aceptan expresiones que evalúa el depurador.  
 
 ### <a name="BKMK_StringView"></a> StringView  
  El elemento `StringView` define la expresión cuyo valor se va a enviar al visualizador de texto integrado. Por ejemplo, suponga que tenemos la visualización siguiente para el tipo `ATL::CStringT` :  
@@ -336,7 +336,7 @@ El marco Natvis de Visual Studio permite personalizar la manera en que Visual St
  ![Datos CStringT con visualizador StringView](../debugger/media/dbg-natvis-stringview-cstringt.png "DBG_NATVIS_StringView_CStringT")  
 
 > [!NOTE]
->  Observe que la expresión `{m_pszData,su}` incluye un especificador de formato de C++, `su` , para mostrar el valor como cadena Unicode. Vea [Format Specifiers in C++](../debugger/format-specifiers-in-cpp.md) para obtener más información.  
+> Observe que la expresión `{m_pszData,su}` incluye un especificador de formato de C++, `su` , para mostrar el valor como cadena Unicode. Vea [Format Specifiers in C++](../debugger/format-specifiers-in-cpp.md) para obtener más información.  
 
 ### <a name="BKMK_Expand"></a> Expand  
  El nodo `Expand` se utiliza para personalizar los elementos secundarios del tipo visualizado cuando el usuario los expande en las ventanas de variables. Acepta una lista de nodos secundarios que definen los elementos secundarios.  
@@ -368,7 +368,7 @@ El marco Natvis de Visual Studio permite personalizar la manera en que Visual St
  Las expresiones especificadas en los elementos `Width` y `Height` se evalúan y se muestran en la columna Valor. El depurador crea automáticamente el nodo `[Raw View]` siempre que se use una extensión personalizada. Se expande en la captura de pantalla anterior para mostrar cómo la vista sin formato del objeto es diferente de su visualización. La expansión predeterminada de Visual Studio crea un subárbol para la clase base y muestra todos los miembros de datos de la clase base como elementos secundarios.  
 
 > [!NOTE]
->  Si la expresión del elemento Item apunta a un tipo complejo, el propio nodo `Item` se puede expandir.  
+> Si la expresión del elemento Item apunta a un tipo complejo, el propio nodo `Item` se puede expandir.  
 
 #### <a name="BKMK_ArrayItems_expansion"></a> ArrayItems expansion  
  Utilice el nodo `ArrayItems` para que el depurador de Visual Studio interprete el tipo como matriz y muestre sus elementos individuales. La visualización de `std::vector` es un buen ejemplo:  

@@ -15,12 +15,12 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 94e2186fa13f7fe125457dc6f04d6d31d0bcc65d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e995d9cfd37c625c03df0b607a9dd5184bec5d08
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046128"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441460"
 ---
 # <a name="extending-javascript-intellisense"></a>Extender IntelliSense para JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ La característica de extensibilidad de IntelliSense para JavaScript le permite 
   
  Para mejorar aún más la experiencia del desarrollador, puede proporcionar información de tipos a los desarrolladores en el cuadro emergente. Puede proporcionar información de tipos mediante JavaScript [comentarios de documentación XML](../ide/xml-documentation-comments-javascript.md) en lugar de etiquetas de comentario estándar. Agregar comentarios de documentación XML mediante el uso de etiquetas de comentario de triple barra diagonal (/ / /) y un conjunto definido de elementos XML.  
   
- Como alternativa, puede proporcionar información de tipos mediante el uso de extensibilidad de IntelliSense para JavaScript. Esta característica le permite personalizar los resultados de IntelliSense al crear extensiones de JavaScript y agregarlos al contexto del script. En la extensión, que es un archivo de JavaScript, se suscribe a eventos que exponen el `intellisense` objeto del servicio de lenguaje. Extensibilidad de IntelliSense para JavaScript es la solución preferida para las bibliotecas de si un patrón de comportamiento en la biblioteca impide que el servicio de lenguaje JavaScript que proporciona el nivel deseado de la compatibilidad con IntelliSense y una alternativa a XML declarativo Comentarios de documentación también es necesario. Al personalizar los resultados de IntelliSense, puede crear una experiencia de primera clase IntelliSense, independientemente de los patrones de comportamiento que podría restringir las capacidades de predeterminada del servicio de lenguaje. Para obtener más información, consulte [finalización de instrucciones para identificadores](../ide/statement-completion-for-identifiers.md).  
+ Como alternativa, puede proporcionar información de tipos mediante el uso de extensibilidad de IntelliSense para JavaScript. Esta característica le permite personalizar los resultados de IntelliSense al crear extensiones de JavaScript y agregarlos al contexto del script. En la extensión, que es un archivo de JavaScript, se suscribe a eventos que exponen el `intellisense` objeto del servicio de lenguaje. Extensibilidad de IntelliSense para JavaScript es la solución preferida para las bibliotecas de si un patrón de comportamiento en la biblioteca impide que el servicio de lenguaje JavaScript que proporciona el nivel deseado de la compatibilidad con IntelliSense y una alternativa a XML declarativo Comentarios de documentación también es necesario. Al personalizar los resultados de IntelliSense, puede crear una experiencia de primera clase IntelliSense, independientemente de los patrones de comportamiento que podría restringir las capacidades de predeterminada del servicio de lenguaje. Para más información, consulte [Finalización de instrucciones para identificadores](../ide/statement-completion-for-identifiers.md).  
   
 ## <a name="adding-an-extension-to-the-script-context"></a>Agregar una extensión para el contexto de Script  
  Para que una extensión de IntelliSense que se ejecutará, debe agregarse al contexto de script actual. La extensión se puede agregar automáticamente al contexto del script mediante el mecanismo de detección automática, o puede agregar la extensión en el contexto de secuencia de comandos manualmente mediante el uso de grupos de referencia o la directiva de referencia.  
@@ -75,7 +75,7 @@ intellisense.addEventListener('statementcompletion', function (event) {
  Para obtener ejemplos adicionales, busque en el \\ \\ *ruta de instalación de Visual Studio*\JavaScript\References carpeta. El archivo showPlainComments.js en esta carpeta proporciona ejemplos del uso de otros eventos para proporcionar compatibilidad con IntelliSense de forma predeterminada para las etiquetas de comentario de JavaScript estándar (/ /). Al igual que underscorefilter.js, showPlainComments.js ya está disponible como una extensión de trabajo y, puede ver la información de IntelliSense resultante al usar etiquetas de comentario en el código para las variables, funciones y objetos. Para obtener ejemplos adicionales, consulte [ejemplos de código](#CodeExamples).  
   
 > [!WARNING]
->  Si modifica los archivos de extensión incluidos con Visual Studio, puede deshabilitar IntelliSense para JavaScript o la característica admitida por la extensión.  
+> Si modifica los archivos de extensión incluidos con Visual Studio, puede deshabilitar IntelliSense para JavaScript o la característica admitida por la extensión.  
   
  En el código de extensión, puede crear controladores para los siguientes tipos de eventos mediante `addEventListener`:  
   
@@ -88,7 +88,7 @@ intellisense.addEventListener('statementcompletion', function (event) {
   Para obtener ejemplos que muestran las características de IntelliSense como información rápida, información de parámetros y la finalización de instrucciones, consulte [Using IntelliSense](../ide/using-intellisense.md).  
   
 > [!NOTE]
->  En JavaScript, información rápida hace referencia en el cuadro emergente que aparece a la derecha de una lista de finalización. No se puede invocar manualmente la información rápida.  
+> En JavaScript, información rápida hace referencia en el cuadro emergente que aparece a la derecha de una lista de finalización. No se puede invocar manualmente la información rápida.  
   
 ## <a name="intellisenseObject"></a> Objeto de IntelliSense  
  En la tabla siguiente se muestra las funciones que están disponibles para el `intellisense` objeto. La `intellisense` objeto está disponible solo en tiempo de diseño.  

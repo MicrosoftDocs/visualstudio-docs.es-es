@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cf0462b4d6aac29c87d71506e3a535f21e2b91a7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 717badcc52088568ae348dbb1b712b2202cc7a72
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103412"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415558"
 ---
 # <a name="how-to-create-custom-text-markers"></a>Procedimiento Crear marcadores de texto personalizado
 Si desea crear un marcador de texto personalizado para enfatizar u organizar el código, debe realizar los pasos siguientes:
@@ -41,7 +41,7 @@ Si desea crear un marcador de texto personalizado para enfatizar u organizar el 
     `<PackageGUID>` es el GUID del VSPackage implementa el objeto de automatización.
 
    > [!NOTE]
-   >  La ruta de acceso raíz de **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\<versión >** puede reemplazarse por una raíz alternativa cuando se inicializa el shell de Visual Studio, para obtener más información, vea [Modificadores de línea de comandos](../extensibility/command-line-switches-visual-studio-sdk.md).
+   > La ruta de acceso raíz de **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\<versión >** puede reemplazarse por una raíz alternativa cuando se inicializa el shell de Visual Studio, para obtener más información, vea [Modificadores de línea de comandos](../extensibility/command-line-switches-visual-studio-sdk.md).
 
 2. Cree cuatro valores en **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\\<versión > \Text Editor\External marcadores\\\<MarkerGUID >**
 

@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dee6c5dadb1634f384fd04d67cb0701b2e972799
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9b510e7464708891db0cab23d61cb22896a74602
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049937"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446921"
 ---
 # <a name="walkthrough-program-against-events-of-a-namedrange-control"></a>Tutorial: Programar basándose en eventos de un control NamedRange
   Este tutorial muestra cómo agregar un <xref:Microsoft.Office.Tools.Excel.NamedRange> control a una hoja de cálculo de Microsoft Office Excel y programar sus eventos mediante el uso de herramientas de desarrollo de Office en Visual Studio.
@@ -37,7 +37,7 @@ ms.locfileid: "60049937"
 - Pruebe el proyecto.
 
 > [!NOTE]
->  Es posible que el equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Para más información, vea [Personalizar el IDE de Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Es posible que el equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Para más información, vea [Personalizar el IDE de Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="prerequisites"></a>Requisitos previos
  Necesita los componentes siguientes para completar este tutorial:
@@ -119,7 +119,7 @@ ms.locfileid: "60049937"
      [!code-vb[Trin_VstcoreHostControlsExcel#26](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#26)]
 
     > [!NOTE]
-    >  Dado que haga doble clic en una celda de un rango de Excel entra en modo de edición, un <xref:Microsoft.Office.Tools.Excel.NamedRange.Change> evento se produce cuando la selección se mueve fuera del intervalo, incluso si se ha producido ningún cambio en el texto.
+    > Dado que haga doble clic en una celda de un rango de Excel entra en modo de edición, un <xref:Microsoft.Office.Tools.Excel.NamedRange.Change> evento se produce cuando la selección se mueve fuera del intervalo, incluso si se ha producido ningún cambio en el texto.
 
 ## <a name="add-code-to-respond-to-the-selectionchange-event"></a>Agregue código para responder al evento SelectionChange
 
@@ -131,7 +131,7 @@ ms.locfileid: "60049937"
      [!code-vb[Trin_VstcoreHostControlsExcel#27](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#27)]
 
     > [!NOTE]
-    >  Dado que haga doble clic en una celda de un rango de Excel hace que la selección se mueva en el intervalo, un <xref:Microsoft.Office.Tools.Excel.NamedRange.SelectionChange> evento tiene lugar antes de la <xref:Microsoft.Office.Tools.Excel.NamedRange.BeforeDoubleClick> se produce el evento.
+    > Dado que haga doble clic en una celda de un rango de Excel hace que la selección se mueva en el intervalo, un <xref:Microsoft.Office.Tools.Excel.NamedRange.SelectionChange> evento tiene lugar antes de la <xref:Microsoft.Office.Tools.Excel.NamedRange.BeforeDoubleClick> se produce el evento.
 
 ## <a name="test-the-application"></a>Probar la aplicación
  Ahora puede probar el libro para comprobar ese texto que describe los eventos de un <xref:Microsoft.Office.Tools.Excel.NamedRange> control se inserta en otro rango con nombre cuando se producen los eventos.

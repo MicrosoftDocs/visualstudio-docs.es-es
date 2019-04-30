@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Depurar código optimizado | Microsoft Docs
+title: Procedimiento Depurar código optimizado | Documentos de Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 756b8859c2f13c53eb46a0d9ae9d32836997f70f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.openlocfilehash: 9b498bdb491e3a15dddf005d43435d84b837fcd0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55035931"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387744"
 ---
 # <a name="how-to-debug-optimized-code"></a>Procedimiento Depuración de código optimizado
 
@@ -77,7 +77,7 @@ ms.locfileid: "55035931"
 9. Seleccione las propiedades de configuración, C/C ++, nodo de línea de comandos de la página de propiedades del proyecto y agregue `(` [/Zo](/cpp/build/reference/zo-enhance-optimized-debugging) `)` a la **opciones adicionales** cuadro de texto.
 
     > [!WARNING]
-    >  `/Zo` requiere Visual Studio 2013 Update 3 o una versión posterior.
+    > `/Zo` requiere Visual Studio 2013 Update 3 o una versión posterior.
     >
     >  Si se agrega `/Zo`, se deshabilitará [Editar y continuar](../debugger/edit-and-continue-visual-csharp.md).
 

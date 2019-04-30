@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 226f2281af2ccdb288ff2c186da280b329a2af1f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e58471c1676ce67e96ef2c325f5ec461f54cfc9c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071881"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441983"
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>Paso 1: creación de un proyecto y adición de etiquetas al formulario
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60071881"
 Como primeros pasos para desarrollar esta prueba, creará el proyecto y agregará etiquetas, un botón y otros controles a un formulario. También establecerá las propiedades de cada control que agregue. El proyecto contendrá el formulario, los controles y (más adelante en el tutorial) el código. El botón inicia la prueba, las etiquetas muestran los problemas de la prueba y los demás controles muestran las respuestas de la prueba y el tiempo que queda para finalizarla.  
   
 > [!NOTE]
->  Este tema forma parte de una serie de tutoriales sobre conceptos de codificación básicos. Para obtener información general sobre el tutorial, vea [Tutorial 2: Crear una prueba matemática cronometrada](../ide/tutorial-2-create-a-timed-math-quiz.md).  
+> Este tema forma parte de una serie de tutoriales sobre conceptos de codificación básicos. Para obtener información general sobre el tutorial, vea [Tutorial 2: Crear una prueba matemática cronometrada](../ide/tutorial-2-create-a-timed-math-quiz.md).  
   
 ### <a name="to-create-a-project-and-set-properties-for-a-form"></a>Para crear un proyecto y establecer las propiedades de un formulario  
   
@@ -145,7 +145,7 @@ Primera fila de prueba matemática
 9. Para la cuarta fila, cambie el nombre de la primera etiqueta a **dividedLeftLabel**, cambie la propiedad **Text** de la segunda etiqueta a **÷** (signo de división), cambie el nombre de la tercera etiqueta a **dividedRightLabel** y cambie el nombre del control NumericUpDown a **quotient**.  
   
     > [!NOTE]
-    >  Puede copiar el signo de multiplicación × y el signo de división ÷ de este tutorial y pegarlos en el formulario.  
+    > Puede copiar el signo de multiplicación × y el signo de división ÷ de este tutorial y pegarlos en el formulario.  
   
 ### <a name="to-add-a-start-button-and-set-the-tab-index-order"></a>Para agregar un botón Iniciar y establecer el orden del índice de tabulación  
   
@@ -162,7 +162,7 @@ Primera fila de prueba matemática
 6. Establezca el valor de la propiedad **TabIndex** del control **startButton** en **1**.  
   
     > [!NOTE]
-    >  La propiedad **TabIndex** establece el orden de los controles cuando el usuario pulsa la tecla TAB. Para ver cómo funciona, abra cualquier cuadro de diálogo (por ejemplo, en la barra de menús, pulse **Archivo**, **Abrir**) y pulse la tecla TAB varias veces. Observe cómo se mueve el cursor de un control a otro cada vez que elige la tecla TAB. Un programador decidió el orden al crear el formulario.  
+    > La propiedad **TabIndex** establece el orden de los controles cuando el usuario pulsa la tecla TAB. Para ver cómo funciona, abra cualquier cuadro de diálogo (por ejemplo, en la barra de menús, pulse **Archivo**, **Abrir**) y pulse la tecla TAB varias veces. Observe cómo se mueve el cursor de un control a otro cada vez que elige la tecla TAB. Un programador decidió el orden al crear el formulario.  
   
 7. Establezca el valor de la propiedad **TabIndex** del control de suma NumericUpDown en **2**, del control de diferencia en **3**, del control de producto en **4** y del control de cociente en **5**.  
   

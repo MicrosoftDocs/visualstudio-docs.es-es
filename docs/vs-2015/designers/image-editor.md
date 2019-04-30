@@ -12,12 +12,12 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 08fd0d6e33de0c032ab63f013fca7ee3174b260e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: eba06da32c04fa0ac8824d3cd1c8d024d96c3091
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077386"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434408"
 ---
 # <a name="image-editor"></a>Editor de imágenes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,7 +82,7 @@ En este documento se describe cómo trabajar con el Editor de imágenes [!INCLUD
  Antes de empezar a trabajar con la imagen que acaba de crear, puede cambiar su configuración predeterminada. Por ejemplo, puede cambiar sus dimensiones o el formato de color que utiliza. Para obtener información sobre cómo configurar estas y otras propiedades de imagen, consulte [Propiedades de imagen](#ImageProperties).  
   
 > [!NOTE]
->  Antes de guardar el trabajo, asegúrese de establecer la propiedad **Formato de color** si quiere utilizar un formato de color concreto. Si el formato de archivo admite la compresión, puede ajustar los valores de compresión al guardar el archivo por primera vez o cuando elija **Guardar como**.  
+> Antes de guardar el trabajo, asegúrese de establecer la propiedad **Formato de color** si quiere utilizar un formato de color concreto. Si el formato de archivo admite la compresión, puede ajustar los valores de compresión al guardar el archivo por primera vez o cuando elija **Guardar como**.  
   
 ## <a name="working-with-the-image-editor"></a>Trabajo con el Editor de imágenes  
  En esta sección se describe cómo utilizar el Editor de imágenes para modificar texturas e imágenes.  
@@ -166,7 +166,7 @@ En este documento se describe cómo trabajar con el Editor de imágenes [!INCLUD
 |Segmento de profundidad|Segmento de profundidad actual. Solo se puede ver el primer segmento; todos los otros segmentos se pierden al guardar la imagen.|  
   
 > [!NOTE]
->  Dado que la propiedad **Girar** se aplica a todas las herramientas y regiones seleccionadas, siempre aparece en la parte inferior de la ventana **Propiedades** junto con otras propiedades de la herramienta. **Girar "x" grados** siempre se muestra porque toda la imagen se selecciona implícitamente cuando no hay ninguna otra selección o herramienta activa. Para obtener más información sobre la propiedad **Girar "x" grados**, consulte [Propiedades de la herramienta](#ToolProperties).  
+> Dado que la propiedad **Girar** se aplica a todas las herramientas y regiones seleccionadas, siempre aparece en la parte inferior de la ventana **Propiedades** junto con otras propiedades de la herramienta. **Girar "x" grados** siempre se muestra porque toda la imagen se selecciona implícitamente cuando no hay ninguna otra selección o herramienta activa. Para obtener más información sobre la propiedad **Girar "x" grados**, consulte [Propiedades de la herramienta](#ToolProperties).  
   
 #### <a name="resizing-images"></a>Cambio del tamaño de las imágenes  
  Hay dos formas de cambiar el tamaño de una imagen. En ambos casos, el Editor de imágenes utiliza la interpolación bilineal para crear un nuevo muestreo de la imagen.  

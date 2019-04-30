@@ -16,12 +16,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9bec38846f7703ff3958aa1c0fcc9a660a5e080d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: daf77a60256e59cabd176990f3642a2206a7f0d8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58997005"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444540"
 ---
 # <a name="reorder-parameters-refactoring-c"></a>Reordenar parámetros de refactorización (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,11 +31,11 @@ ms.locfileid: "58997005"
  Para realizar la `Reorder Parameters` operación, coloque el cursor en o junto a un método, indizador o delegado. Cuando el cursor está en posición, invocar el `Reorder Parameters` operación presionando el método abreviado de teclado, o haga clic en el comando en el menú contextual.  
   
 > [!NOTE]
->  No puede reordenar el primer parámetro de un método de extensión.  
+> No puede reordenar el primer parámetro de un método de extensión.  
   
 ### <a name="to-reorder-parameters"></a>Reordenar parámetros  
   
-1.  Crear una biblioteca de clases denominada `ReorderParameters`y, a continuación, reemplace `Class1` con el siguiente código de ejemplo.  
+1. Crear una biblioteca de clases denominada `ReorderParameters`y, a continuación, reemplace `Class1` con el siguiente código de ejemplo.  
   
     ```csharp  
     class ProtoClassA  
@@ -56,21 +56,21 @@ ms.locfileid: "58997005"
     }  
     ```  
   
-2.  Coloque el cursor en `MethodB`, ya sea en la declaración de método o la llamada al método.  
+2. Coloque el cursor en `MethodB`, ya sea en la declaración de método o la llamada al método.  
   
-3.  En el **refactorizar** menú, haga clic en **Reordenar parámetros**.  
+3. En el **refactorizar** menú, haga clic en **Reordenar parámetros**.  
   
      El **Reordenar parámetros** aparece el cuadro de diálogo.  
   
-4.  En el **Reordenar parámetros** cuadro de diálogo, seleccione `int i` en el **parámetros** lista y, a continuación, haga clic en el botón de abajo.  
+4. En el **Reordenar parámetros** cuadro de diálogo, seleccione `int i` en el **parámetros** lista y, a continuación, haga clic en el botón de abajo.  
   
      Como alternativa, puede arrastrar `int i` después `bool b` en el **parámetros** lista.  
   
-5.  En el **Reordenar parámetros** cuadro de diálogo, haga clic en **Aceptar**.  
+5. En el **Reordenar parámetros** cuadro de diálogo, haga clic en **Aceptar**.  
   
      Si el **vista previa de cambios de referencia** opción está seleccionada en el **Reordenar parámetros** cuadro de diálogo, el **vista previa de cambios - Reordenar parámetros** aparecerá el cuadro de diálogo. Proporciona una vista previa de los cambios en la lista de parámetros `MethodB` en la firma y la llamada al método.  
   
-    1.  Si el **vista previa de cambios - Reordenar parámetros** aparece el cuadro de diálogo, haga clic en **aplicar**.  
+    1. Si el **vista previa de cambios - Reordenar parámetros** aparece el cuadro de diálogo, haga clic en **aplicar**.  
   
          En este ejemplo, la declaración de método y todas la llamada al método sitios para `MethodB` se actualizan.  
   

@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c31fe758d9c1a9a99fb71144f93c7145ea466ad0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 3f6345e7627549c672aa28fac8cba5f6d9658a23
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621700"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435449"
 ---
 # <a name="sandboxed-solution-considerations"></a>Consideraciones sobre la solución en espacio aislado
   *Soluciones en espacio aislado* son una característica de Microsoft SharePoint 2010 que permite a los usuarios de la colección de sitio cargar sus propias soluciones de código personalizado. Una solución en espacio aislado común es a los usuarios cargar sus propios elementos Web.
@@ -34,7 +34,7 @@ ms.locfileid: "56621700"
  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] admite soluciones en espacio aislado a través de una propiedad de proyecto booleana denominadas *solución en espacio aislado*. Esta propiedad puede establecerse en cualquier momento en el proyecto, o puede especificarse cuando se crea el proyecto en el **Asistente de personalización de SharePoint**.
 
 > [!NOTE]
->  Cambiar el *solución en espacio aislado* propiedad de un proyecto después de su creación puede producir errores de validación.
+> Cambiar el *solución en espacio aislado* propiedad de un proyecto después de su creación puede producir errores de validación.
 
  La solución se considera una solución con ámbito de granja de servidores si el *solución en espacio aislado* propiedad está establecida en **false** o elegir la **implementar como solución de granja de servidores** opción. Sin embargo, la solución recibe un tratamiento diferente de una solución de granja de servidores si el *solución en espacio aislado* propiedad está establecida en **true** o elegir la **implementar como solución en espacio aislado** opción en el asistente.
 
@@ -131,7 +131,7 @@ ms.locfileid: "56621700"
 
 - Características del ámbito de granja de servidores
 
-- `HideCustomAction` (elemento)
+- Elemento `HideCustomAction`
 
 - Características del ámbito de la aplicación Web
 

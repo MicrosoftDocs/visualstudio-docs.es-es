@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 74ae6a4510efc63a633e627fdd0b165aa547b2be
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: bee99bc546eca3787db1f9cd082359afb6881d10
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041999"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421145"
 ---
 # <a name="walkthrough-my-first-wpf-desktop-application"></a>Tutorial: Mi primera aplicación de escritorio de WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ un name = "Introducción" ></a> este tutorial proporciona una introducción al d
      Tenga en cuenta que al cambiar la etiqueta `<Window` a `<NavigationWindow`, Intellisense cambiará automáticamente la etiqueta de cierre a `</NavigationWindow>` también.  
   
     > [!NOTE]
-    >  Después de cambiar la etiqueta, si la ventana **Lista de errores** está abierta, es posible que encuentre varios errores. No se preocupe, los cambios que realizará en los próximos pasos hará que desaparezcan.  
+    > Después de cambiar la etiqueta, si la ventana **Lista de errores** está abierta, es posible que encuentre varios errores. No se preocupe, los cambios que realizará en los próximos pasos hará que desaparezcan.  
   
 3. Elija las etiquetas `<Grid>` y `</Grid>` y elimínelas.  
   
@@ -307,14 +307,14 @@ un name = "Introducción" ></a> este tutorial proporciona una introducción al d
      ![Marca de agua de tutorial](../designers/media/wpf-watermark.png "WPF_watermark")  
   
     > [!NOTE]
-    >  O bien, puede crear su propia imagen y guardarla como `watermark.png`.  
+    > O bien, puede crear su propia imagen y guardarla como `watermark.png`.  
   
 2. En el **Explorador de soluciones**, abra el menú contextual del nodo **Expenselt** y elija **Agregar**, **Elemento existente**.  
   
 3. En el cuadro de diálogo **Agregar elemento existente** , busque la imagen **watermark.png** que acaba de agregar, selecciónela y, a continuación, elija el botón **Agregar** .  
   
     > [!NOTE]
-    >  Es posible que necesite expandir la lista **Tipos de archivo** y elegir **Archivos de imagen**.  
+    > Es posible que necesite expandir la lista **Tipos de archivo** y elegir **Archivos de imagen**.  
   
 4. Abra el archivo **ExpenseItHome.xaml** y agregue el siguiente código XAML justo encima de la etiqueta `</Grid>` para crear una imagen de fondo:  
   
