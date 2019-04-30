@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: cd7252605fd8c642c0bb331667543b1c67f9d95f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58987561"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62938508"
 ---
 # <a name="developing-workflow-applications-targeting-the-net-30-or-net-35-framework"></a>Desarrollar aplicaciones de flujo de trabajo que tienen como destino .NET 3.0 o .NET 3.5 Framework
 [!INCLUDE[vs2010](../includes/vs2010-md.md)] proporciona [!INCLUDE[wfd1](../includes/wfd1-md.md)] para crear aplicaciones [!INCLUDE[wf](../includes/wf-md.md)] que tienen como destino [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)]. El diseñador usa la conocida interfaz de usuario de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para la creación gráfica y la depuración de aplicaciones de flujo de trabajo.  

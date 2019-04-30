@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 73cc930e6ec21694cf6c5df8e68cbe17ca469291
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58998715"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62976971"
 ---
 # <a name="creating-legacy-workflow-projects"></a>Crear proyectos de flujo de trabajo heredados
 En esta sección se describe cómo crear proyectos de flujo de trabajo con [!INCLUDE[wfd1](../includes/wfd1-md.md)] heredado proporcionado por vs2010. El [!INCLUDE[wfd2](../includes/wfd2-md.md)] heredado que tiene como destino [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]. Contiene información acerca de cómo utilizar las plantillas del proyecto de flujo de trabajo que aparecen en la tabla siguiente.  

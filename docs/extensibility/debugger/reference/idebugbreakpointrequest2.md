@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 6a984634dbba0fc1d732fe98214a07d8d6c339d4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56698110"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62923389"
 ---
 # <a name="idebugbreakpointrequest2"></a>IDebugBreakpointRequest2
 Esta interfaz representa la información necesaria para crear y enlazar cualquier tipo de punto de interrupción.

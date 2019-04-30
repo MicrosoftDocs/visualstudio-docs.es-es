@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8fd3bb1537d0e985e91f93ea094ec546ed9a6092
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55912344"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62994431"
 ---
 # <a name="find-potential-problems-using-code-map-analyzers"></a>Buscar posibles problemas mediante analizadores de mapas de código
 
@@ -38,7 +38,7 @@ En la barra de herramientas del mapa, elija **diseño** > **analizadores**y, a c
 |-|-|
 |**Analizador de referencias circulares**|Tienen dependencias circulares entre sí. **Nota:**  Las dependencias circulares que se encuentran en el **genéricos** grupo no se muestran en el mapa al expandir el grupo.|
 |**Buscar analizador de concentradores**|Se encuentran entre el 25 % de los nodos con mayor número de conexiones.<br /><br /> **Para ocultar el resto de nodos del mapa**<br /><br /> -Abra el menú contextual del mapa, elija **avanzadas**, **seleccione**, **ocultar no seleccionados**.<br />     El mapa oculta los nodos no seleccionados y el analizador identifica los nuevos nodos como concentradores.|
-|**Analizador de nodos a los que no se hace referencia**|No tienen referencias de otros nodos. **Advertencia:**  Compruebe cada uno de estos casos antes de asumir que el código no se usa. Ciertas dependencias, como las dependencias XAML y las dependencias de tiempo de ejecución no se encuentran de forma estática en el código.|
+|**Analizador de nodos a los que no se hace referencia**|No tienen referencias de otros nodos. **Advertencia:**  Compruebe cada uno de estos casos antes de asumir que el código no se usa. Ciertas dependencias, como las dependencias XAML y las dependencias de tiempo de ejecución, no se encuentran de forma estática en el código.|
 
 Los analizadores de mapa de código continuarán ejecutándose después de aplicarlos. Si cambia el mapa, los analizadores aplicados volverán a procesar automáticamente el mapa actualizado. Para detener la ejecución de un analizador, en la barra de herramientas del mapa, elija **diseño** > **analizadores**. Desactive el analizador seleccionado.
 

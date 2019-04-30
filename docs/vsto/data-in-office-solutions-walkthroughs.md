@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 52b2efa5e5def8214736d648e2b90906fe720dbe
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56654092"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62956035"
 ---
 # <a name="data-in-office-solutions-walkthroughs"></a>Datos en los tutoriales de soluciones de Office
   En los siguientes tutoriales se muestra cómo trabajar con los datos de las personalizaciones de nivel de documento y de los complementos VSTO de Microsoft Office Word y Microsoft Office Excel.

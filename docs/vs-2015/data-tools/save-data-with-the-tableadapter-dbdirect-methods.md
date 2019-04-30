@@ -20,11 +20,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 7cba6f91dd6dc0bb826531a312dc6ca5c94b21a5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114761"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62558758"
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>Guardar datos con los métodos DBDirect de un TableAdapter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -105,7 +105,7 @@ Este tutorial proporciona instrucciones detalladas para ejecutar instrucciones S
   
 2. Establezca las propiedades **Nombre** y **Texto** en cada botón.  
   
-    |Name|Texto|  
+    |Name|Text|  
     |----------|----------|  
     |`InsertButton`|**Insertar**|  
     |`UpdateButton`|**Actualizar**|  

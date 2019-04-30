@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 03e82a8c17b33aa085b4ed64b9ba609bee183e1d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626120"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62829737"
 ---
 # <a name="basictype"></a>BasicType
 Especifica el tipo básico del símbolo.
@@ -54,13 +54,13 @@ btNoType que se especifica ningún tipo básico.
 
 es de tipo básico btVoid un `void`.
 
-es de tipo básico btChar un `char` (tipo de C o C++).
+es de tipo básico btChar un `char` (C /C++ tipo).
 
 btWChar tipo básico es un carácter de ancho (Unicode) (`WCHAR`).
 
-es de tipo básico btInt `signed int` (tipo de C o C++).
+es de tipo básico btInt `signed int` (C /C++ tipo).
 
-es de tipo básico btUInt `unsigned int` (tipo de C o C++).
+es de tipo básico btUInt `unsigned int` (C /C++ tipo).
 
 btFloat tipo básico es un número de punto flotante (`FLOAT`).
 
@@ -68,9 +68,9 @@ btBCD tipo básico es un decimal codificado en binario (`BCD`).
 
 btBool tipo básico es un valor booleano (`BOOL`).
 
-es de tipo básico btLong un `long int` (tipo de C o C++).
+es de tipo básico btLong un `long int` (C /C++ tipo).
 
-es de tipo básico btULong un `unsigned long int` (tipo de C o C++).
+es de tipo básico btULong una `unsigned long int` (C /C++ tipo).
 
 btCurrency tipo básico es la moneda.
 

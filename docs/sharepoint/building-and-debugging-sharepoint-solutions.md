@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: e91c1433fde85a9ec828a6a018bee986fdc7aa5c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56623767"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62988131"
 ---
 # <a name="build-and-debug-sharepoint-solutions"></a>Compilar y depurar soluciones de SharePoint
   En general, compilar y depurar soluciones de SharePoint es el mismo que compilar y depurar otros tipos de proyectos de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Los temas de esta sección explican las diferencias que existen entre ellos.

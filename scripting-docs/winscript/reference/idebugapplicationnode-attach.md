@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: c41d06c116c7c15ad308ce2ace837ea01d90ab1d
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58155568"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62990485"
 ---
 # <a name="idebugapplicationnodeattach"></a>IDebugApplicationNode::Attach
 Este nodo de la aplicación se agrega al árbol del proyecto especificado.  

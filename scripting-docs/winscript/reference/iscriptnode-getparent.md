@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 1c990b5ba5c3d03d319e0eeced282c92cfbb5281
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58151016"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62786861"
 ---
 # <a name="iscriptnodegetparent"></a>IScriptNode::GetParent
 Devuelve el `IScriptNode` objeto que es el elemento primario de un objeto.  

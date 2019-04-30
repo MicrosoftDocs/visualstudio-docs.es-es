@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7f60f4b9018f5b2fff9a5426c28dba40177d9ae9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56607940"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62840696"
 ---
 # <a name="interfaces-debug-interface-access-sdk"></a>Interfaces (Debug Interface Access SDK)
 Los métodos están enumerados alfabéticamente en cada interfaz en la tabla de contenido y en la página de interfaz en el orden de Vtable.

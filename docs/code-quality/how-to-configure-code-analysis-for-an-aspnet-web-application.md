@@ -10,13 +10,13 @@ manager: jillfra
 ms.workload:
 - aspnet
 ms.openlocfilehash: 51638db2cf258cc1a91c659c137c6a17811fa8c8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923844"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62820702"
 ---
-# <a name="how-to-configure-code-analysis-for-an-aspnet-web-application"></a>Filtrar Configurar el análisis de código para una aplicación web ASP.NET
+# <a name="how-to-configure-code-analysis-for-an-aspnet-web-application"></a>Procedimiento Configurar el análisis de código para una aplicación web ASP.NET
 
 En Visual Studio, puede seleccionar entre una lista de análisis de código *conjuntos de reglas* para aplicar a [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplicación web. El conjunto de reglas predeterminado es Reglas mínimas recomendadas de Microsoft. Puede seleccionar otro conjunto de reglas para aplicar al sitio web.
 

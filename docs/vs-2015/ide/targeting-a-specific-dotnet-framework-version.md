@@ -15,11 +15,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 38a12f851bb99eb553856556608aaf029c91c40d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755156"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62429241"
 ---
 # <a name="targeting-a-specific-net-framework-version"></a>Elegir una versión específica de .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ En Visual Studio, puede especificar la versión o perfil de .NET Framework que d
  [Información general sobre la compatibilidad con múltiples versiones (multi-targeting) en Visual Studio](../ide/visual-studio-multi-targeting-overview.md)  
  Proporciona información general acerca de las características de compatibilidad con múltiples versiones de Visual Studio.  
   
- [Cómo: Usar como destino una versión de .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md)  
+ [Cómo: Usar una versión de .NET Framework como destino](../ide/how-to-target-a-version-of-the-dotnet-framework.md)  
  Describe cómo especificar un [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] determinado para su proyecto de Visual Basic, Visual C# o Visual F#.  
   
 ## <a name="related-sections"></a>Secciones relacionadas  
@@ -45,5 +45,5 @@ En Visual Studio, puede especificar la versión o perfil de .NET Framework que d
  [Página de aplicación, Diseñador de proyectos (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)  
  Describe el control **Plataforma de destino** del Diseñador de proyectos para proyectos de [!INCLUDE[vbprvb](../includes/vbprvb-md.md)].  
   
- [Procedimiento para modificar plataforma de destino y el conjunto de herramientas de la plataforma](http://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)  
+ [Cómo: Modificar la plataforma de destino y el conjunto de herramientas de la plataforma](http://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)  
  Describe cómo cambiar la configuración de proyectos de Visual C++ a distintas versiones de destino de .NET Framework y utilizar diferentes conjuntos de herramientas de la plataforma.
