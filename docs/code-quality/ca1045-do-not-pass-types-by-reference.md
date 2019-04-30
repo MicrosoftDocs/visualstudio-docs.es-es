@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f64a7f7c018863e85900da2b09e018d29da4dfe
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.openlocfilehash: d5174d00593b44d51b5628851039b1d0a37753c5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922880"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387494"
 ---
 # <a name="ca1045-do-not-pass-types-by-reference"></a>CA1045: No pasar tipos por referencia
 
@@ -43,7 +43,7 @@ ms.locfileid: "55922880"
  Aunque los valores devueltos son comunes y muy utilizados, la aplicación correcta de `out` y `ref` parámetros requiere un diseño intermedio y habilidades de programación. Arquitectos de bibliotecas para un público general no debería esperar que los usuarios dominen el uso de diseño `out` o `ref` parámetros.
 
 > [!NOTE]
->  Cuando se trabaja con parámetros que son estructuras de gran tamaño, los recursos adicionales necesarios para copiar estas estructuras podrían provocar un efecto de rendimiento cuando se pasa por valor. En estos casos, podría usar `ref` o `out` parámetros.
+> Cuando se trabaja con parámetros que son estructuras de gran tamaño, los recursos adicionales necesarios para copiar estas estructuras podrían provocar un efecto de rendimiento cuando se pasa por valor. En estos casos, podría usar `ref` o `out` parámetros.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
  Para corregir una infracción de esta regla que se debe a un tipo de valor, que el método devuelve el objeto como su valor devuelto. Si el método debe devolver varios valores, vuelva a diseñar para que devuelva una única instancia de un objeto que contiene los valores.

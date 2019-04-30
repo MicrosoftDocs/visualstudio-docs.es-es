@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: ccd8bd0cb37aaa2d4bfad7ea20979987048bf862
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: bec1c878dce59ccb5444d74ba0255c9ceb705780
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050678"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402737"
 ---
 # <a name="query-datasets"></a>Consultar conjuntos de datos
 Para buscar registros específicos de un conjunto de datos, use el `FindBy` método en la tabla de datos, escribir su propia instrucción foreach para recorrer la colección de filas de la tabla, o use [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset).
@@ -25,7 +25,7 @@ Para buscar registros específicos de un conjunto de datos, use el `FindBy` mét
 Dentro de un conjunto de datos, los nombres de columna y tabla distinguen mayúsculas de minúsculas de forma predeterminada, es decir, una tabla en un conjunto de datos denominado "Customers" también se puede hacer referencia a como "customers". Esto coincide con las convenciones de nomenclatura en muchas bases de datos, incluido SQL Server. En SQL Server, el comportamiento predeterminado es que los nombres de elementos de datos no pueden distinguirse sólo por caso.
 
 > [!NOTE]
->  A diferencia de conjuntos de datos, documentos XML distinguen mayúsculas de minúsculas, por lo que los nombres de elementos de datos definidos en esquemas distinguen mayúsculas de minúsculas. Por ejemplo, el protocolo de esquema permite el esquema definir una tabla denominada "Clientes" y otra tabla denominada a "customers". Esto puede producir conflictos de nombres cuando se usa un esquema que contiene elementos que difieran solo por caso para generar una clase de conjunto de datos.
+> A diferencia de conjuntos de datos, documentos XML distinguen mayúsculas de minúsculas, por lo que los nombres de elementos de datos definidos en esquemas distinguen mayúsculas de minúsculas. Por ejemplo, el protocolo de esquema permite el esquema definir una tabla denominada "Clientes" y otra tabla denominada a "customers". Esto puede producir conflictos de nombres cuando se usa un esquema que contiene elementos que difieran solo por caso para generar una clase de conjunto de datos.
 
 Mayúsculas y minúsculas, sin embargo, pueden ser un factor en cómo interpretar los datos del conjunto de datos. Por ejemplo, si filtra los datos en una tabla de conjunto de datos, los criterios de búsqueda podrían devolver resultados diferentes dependiendo de si la comparación distingue entre mayúsculas y minúsculas. Puede controlar las mayúsculas y minúsculas de filtrado, búsqueda y ordenación mediante el establecimiento del conjunto de datos <xref:System.Data.DataSet.CaseSensitive%2A> propiedad. Todas las tablas del conjunto de datos heredan el valor de esta propiedad de forma predeterminada. (Puede invalidar esta propiedad para cada tabla individual mediante el establecimiento de la tabla <xref:System.Data.DataTable.CaseSensitive%2A> propiedad.)
 
@@ -68,7 +68,7 @@ Puede usar un <xref:System.Data.DataRelation> objeto para buscar registros relac
 Esta página ofrece ejemplos de uso de conjuntos de datos con tipo. Para obtener información sobre la navegación por relaciones en conjuntos de datos sin tipo, vea [navegar por objetos DataRelation](/dotnet/framework/data/adonet/dataset-datatable-dataview/navigating-datarelations).
 
 > [!NOTE]
->  Si está trabajando en una aplicación de Windows Forms y con las características de enlace de datos para mostrar los datos, el formulario generado por el diseñador puede proporcionar suficiente funcionalidad para la aplicación. Para obtener más información, consulte [enlazar controles a datos en Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md). En concreto, consulte [relaciones en conjuntos de datos](relationships-in-datasets.md).
+> Si está trabajando en una aplicación de Windows Forms y con las características de enlace de datos para mostrar los datos, el formulario generado por el diseñador puede proporcionar suficiente funcionalidad para la aplicación. Para obtener más información, consulte [enlazar controles a datos en Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md). En concreto, consulte [relaciones en conjuntos de datos](relationships-in-datasets.md).
 
 Ejemplos de código siguientes muestran cómo desplazarse arriba y abajo de las relaciones en conjuntos de datos con tipo. El uso de ejemplos de código escrito <xref:System.Data.DataRow>s (`NorthwindDataSet.OrdersRow`) y el generado FindBy*PrimaryKey* (`FindByCustomerID`) métodos para buscar una fila deseada y devolver los registros relacionados. Los ejemplos de compilación y ejecutan correctamente solo si tiene:
 

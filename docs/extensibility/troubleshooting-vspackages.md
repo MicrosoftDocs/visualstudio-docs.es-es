@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 64ebe3bc2d4d406d6144305b368d37613aef0158
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d89c3181757a0ed95b818ba2e73197511bf06e4d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039738"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434249"
 ---
 # <a name="troubleshooting-vspackages"></a>Solución de problemas de VSPackages
 Estos son los problemas comunes que podría tener con el paquete de VS y sugerencias para solucionar los problemas.
@@ -46,7 +46,7 @@ Estos son los problemas comunes que podría tener con el paquete de VS y sugeren
 4. Abra el **salida** ventana de la instancia de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] que no se puede cargar el VSPackage. Información sobre por qué se puede cargar el VSPackage puede mostrarse en esa ventana.
 
    > [!NOTE]
-   >  Si va a iniciar la versión experimental de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] desde el [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] el entorno de desarrollo integrado (IDE), inspeccione la **salida** ventana de ambas versiones.
+   > Si va a iniciar la versión experimental de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] desde el [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] el entorno de desarrollo integrado (IDE), inspeccione la **salida** ventana de ambas versiones.
 
 5. Examine el registro de actividad.
 
@@ -85,7 +85,7 @@ Estos son los problemas comunes que podría tener con el paquete de VS y sugeren
     4. En el **depurar** menú, haga clic en **Iniciar depuración** o presione F5.
 
         > [!NOTE]
-        >  Si está depurando un proyecto, cree o cargue una instancia existente del proyecto ahora.
+        > Si está depurando un proyecto, cree o cargue una instancia existente del proyecto ahora.
 
 2. Utilice el registro de actividad.
 

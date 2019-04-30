@@ -12,12 +12,12 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c92f5cd8f268b249e8f29ddd706860ff18b2f87c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 03c039d0059e3e5768681ece9bb547b0f4eb7783
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117829"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432757"
 ---
 # <a name="how-to-create-a-profiling-tools-call-trace-report"></a>Procedimiento Crear un informe de seguimiento de llamada de generación de perfiles de herramientas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "60117829"
 El *informe de seguimiento de llamadas* de las herramientas de generación de perfiles de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] muestra información de intervalos de cada punto de entrada y salida de las funciones de la aplicación y cada llamada a otras funciones realizadas por su función. Los informes de seguimiento de llamadas solo están disponibles para los datos de generación de perfiles si se recopilaron con el método de instrumentación.  
   
 > [!NOTE]
->  Los informes de seguimiento de llamadas no se pueden mostrar en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Debe usar la herramienta de línea de comandos **VSPerfReport** para generar un archivo XML o de valores separados por comas (.csv). Para obtener más información sobre esta herramienta, vea [VSPerfReport](../profiling/vsperfreport.md).  
+> Los informes de seguimiento de llamadas no se pueden mostrar en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Debe usar la herramienta de línea de comandos **VSPerfReport** para generar un archivo XML o de valores separados por comas (.csv). Para obtener más información sobre esta herramienta, vea [VSPerfReport](../profiling/vsperfreport.md).  
   
 ### <a name="to-create-a-call-trace-report"></a>Para crear un informe de seguimiento de llamadas  
   

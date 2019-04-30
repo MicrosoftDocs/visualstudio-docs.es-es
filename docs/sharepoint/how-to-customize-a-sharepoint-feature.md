@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e54d2dc388ca308e037fb8ff918f521ee16e9092
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e7a00f3c58f917e7355a63ebca71c74127826a2e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60067266"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429214"
 ---
 # <a name="how-to-customize-a-sharepoint-feature"></a>Procedimiento Personalizar una característica de SharePoint
   Puede crear y personalizar las características de SharePoint mediante el Diseñador de características en Visual Studio. Por ejemplo, puede establecer el ámbito de característica y agregar otras características como dependencias. De forma predeterminada, se abre el Diseñador de características cuando se agrega una nueva característica en el Explorador de soluciones o el Explorador de paquetes de SharePoint.
@@ -49,7 +49,7 @@ ms.locfileid: "60067266"
 2. Expanda las características, expanda FeatureName, expanda FeatureName.feature y, a continuación, abra el  *\<NombreDeCaracterística >. Template.XML* archivo.
 
     > [!NOTE]
-    >  Al abrir el archivo de XML de manifiesto de plantilla de función, los archivos se validan automáticamente y se pueden omitir las advertencias que aparecen en la ventana Lista de errores.
+    > Al abrir el archivo de XML de manifiesto de plantilla de función, los archivos se validan automáticamente y se pueden omitir las advertencias que aparecen en la ventana Lista de errores.
 
 ## <a name="change-the-manifest-template"></a>Cambiar la plantilla de manifiesto
  Puede cambiar el código XML para el archivo de manifiesto de característica en el Editor XML de Visual Studio o en el panel de la plantilla de manifiesto. Los cambios en el código XML se combina con el archivo de manifiesto empaquetado para la característica. Por ejemplo, desea cambiar la plantilla de manifiesto para personalizar una propiedad Feature.
@@ -70,7 +70,7 @@ ms.locfileid: "60067266"
  Puede deshabilitar el Diseñador de características y crear el *feature.xml* archivo manualmente. La primera vez que realice este procedimiento, la configuración actual en el Diseñador de características se guarda en el archivo XML de plantilla de función. A continuación, puede modificar o sobrescribir el código XML.
 
 > [!NOTE]
->  Si agrega o quita elementos de proyecto de SharePoint en el archivo XML mientras está deshabilitado el Diseñador de características, no se empaquetan estos elementos de proyecto.
+> Si agrega o quita elementos de proyecto de SharePoint en el archivo XML mientras está deshabilitado el Diseñador de características, no se empaquetan estos elementos de proyecto.
 
 #### <a name="to-overwrite-packaged-manifest-file-by-disabling-the-designer"></a>Para sobrescribir el archivo de manifiesto empaquetado deshabilitando el diseñador
 

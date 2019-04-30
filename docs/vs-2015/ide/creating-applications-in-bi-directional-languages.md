@@ -13,12 +13,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: acba0174fde52886d3be7ec6288148171fe40cca
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c45f3ac7cfec727eb0a27fc79e5fe09237e8f8c3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104985"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437592"
 ---
 # <a name="creating-applications-in-bi-directional-languages"></a>Crear aplicaciones en lenguajes bidireccionales
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "60104985"
 Puede usar Visual Studio para crear aplicaciones que muestren correctamente el texto en idiomas que se escriben de derecha a izquierda, como el árabe y el hebreo. Para algunas características, simplemente puede establecer propiedades. En otros casos, debe implementar características en el código.  
   
 > [!NOTE]
->  Para escribir y mostrar idiomas bidireccionales, debe trabajar con una versión de Windows que esté configurada con el idioma apropiado. Puede ser una versión en inglés de Windows con el paquete de idioma correspondiente instalado o la versión de Windows localizada según corresponda.  
+> Para escribir y mostrar idiomas bidireccionales, debe trabajar con una versión de Windows que esté configurada con el idioma apropiado. Puede ser una versión en inglés de Windows con el paquete de idioma correspondiente instalado o la versión de Windows localizada según corresponda.  
   
 ## <a name="types-of-application-that-support-bi-directional-languages"></a>Tipos de aplicaciones que admiten idiomas bidireccionales  
   
@@ -66,7 +66,7 @@ Puede usar Visual Studio para crear aplicaciones que muestren correctamente el t
 - Contenido de los archivos. Puede abrir o guardar archivos con codificación Unicode o con una página de código seleccionada.  
   
     > [!NOTE]
-    >  El editor de código es un caso especial. Para obtener detalles, consulte a continuación.  
+    > El editor de código es un caso especial. Para obtener detalles, consulte a continuación.  
   
 - Elementos de datos. El **Explorador de servidores** mostrará estos elementos correctamente y permitirá que los edite.  
   
@@ -79,10 +79,10 @@ Puede usar Visual Studio para crear aplicaciones que muestren correctamente el t
 - Código y texto literal. En el editor de código (que también es el editor de texto), puede usar el árabe o hebreo para asignar nombres a clases, funciones, variables, propiedades, literales de cadena, atributos, etc. En cambio, el editor no admite la lectura de derecha a izquierda; el texto siempre comienza en el margen izquierdo.  
   
     > [!TIP]
-    >  Se recomienda colocar los literales de cadena en archivos de recursos en lugar de codificarlos de forma rígida en los programas. Para obtener más información, vea [Tutorial: Adaptar formularios de Windows Forms](http://msdn.microsoft.com/9a96220d-a19b-4de0-9f48-01e5d82679e5).  
+    > Se recomienda colocar los literales de cadena en archivos de recursos en lugar de codificarlos de forma rígida en los programas. Para obtener más información, vea [Tutorial: Adaptar formularios de Windows Forms](http://msdn.microsoft.com/9a96220d-a19b-4de0-9f48-01e5d82679e5).  
   
     > [!NOTE]
-    >  Debe ser coherente en cómo hace referencia a los objetos denominados en estos idiomas. Por ejemplo, si usa kashida para designar una variable en árabe, debe usar siempre kashida cuando haga referencia a esa variable o de lo contrario se producirán errores.  
+    > Debe ser coherente en cómo hace referencia a los objetos denominados en estos idiomas. Por ejemplo, si usa kashida para designar una variable en árabe, debe usar siempre kashida cuando haga referencia a esa variable o de lo contrario se producirán errores.  
   
 - Comentarios en código. Puede crear comentarios en árabe o hebreo. También puede usar estos idiomas en la herramienta de generador de comentarios.  
   

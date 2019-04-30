@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 587d0a3fb571a0cb5934f56fca1ffa0ad34d3086
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4484ec75cf44fc60c72091fb17cce510efdb9cd4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108794"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417026"
 ---
 # <a name="how-to-create-item-templates"></a>Procedimiento Crear plantillas de elementos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ En los pasos del [primer procedimiento](#to-add-a-custom-project-item-template-t
      Los archivos de la plantilla se agregan a un archivo .zip y se copian en cualquier directorio especificado en el cuadro de diálogo. La ubicación predeterminada es la carpeta **..\Users\\<nombreDeUsuario\>\Documents\Visual Studio \<Version>\My Exported Templates\\**.  
   
     > [!WARNING]
-    >  En versiones anteriores de Visual Studio, la ubicación predeterminada era **..\Users\\<nombreDeUsuario\>\Documents\Visual Studio \<Version>\Templates\ItemTemplates**.  
+    > En versiones anteriores de Visual Studio, la ubicación predeterminada era **..\Users\\<nombreDeUsuario\>\Documents\Visual Studio \<Version>\Templates\ItemTemplates**.  
   
 ### <a name="to-enable-the-item-template-to-be-used-in-a-store-project"></a>Para permitir que la plantilla de elementos se use en un proyecto de tienda  
   

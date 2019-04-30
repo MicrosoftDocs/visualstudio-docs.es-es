@@ -14,12 +14,12 @@ ms.assetid: e6c0e636-5ec3-450e-b395-fc4bb9d75918
 caps.latest.revision: 35
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 350f0c873a0b6692d16dcbc987db32b63f68be72
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 643ffd8dc48eb6b0fc35ea035c8c599efbea85c6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58997864"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438958"
 ---
 # <a name="options-and-options-pages"></a>Opciones y páginas de opciones
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ Al hacer clic en **opciones** en el **herramientas** menú se abre el **opciones
 - <xref:System.ComponentModel.DescriptionAttribute> Determina la descripción de la opción.  
   
   > [!NOTE]
-  >  Atributos equivalentes, SRCategory, LocDisplayName y SRDescription, use los recursos de cadena para la localización y se definen en el [proyecto administrado de ejemplo](http://go.microsoft.com/fwlink/?LinkId=122774).  
+  > Atributos equivalentes, SRCategory, LocDisplayName y SRDescription, use los recursos de cadena para la localización y se definen en el [proyecto administrado de ejemplo](http://go.microsoft.com/fwlink/?LinkId=122774).  
   
   Observe el fragmento de código siguiente:  
   
@@ -86,4 +86,4 @@ Al hacer clic en **opciones** en el **herramientas** menú se abre el **opciones
  La ruta de acceso del registro de la propiedad de automatización se determina mediante la combinación <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A>, la palabra AutomationProperties y las opciones de página de categoría y el nombre. Por ejemplo, si la página de opciones tiene la categoría de My Category, el nombre de mi página de cuadrícula y el <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A>, HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp, la propiedad de automatización tiene la clave del registro, HKEY_LOCAL_MACHINE\SOFTWARE\ Página de cuadrícula de Microsoft\VisualStudio\8.0Exp\AutomationProperties\My categoría\Mi.  
   
 > [!NOTE]
->  El nombre canónico, mi página de cuadrícula Category.My, es el valor de la subclave de nombre de esta clave.
+> El nombre canónico, mi página de cuadrícula Category.My, es el valor de la subclave de nombre de esta clave.

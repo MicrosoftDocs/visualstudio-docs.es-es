@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 05dd21bbb423d75cd175f13ca945516024db01eb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: da666f237824ccae349a023611f7e7b78fdaf684
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049847"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402829"
 ---
 # <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>Procedimiento Asignación de procedimientos almacenados para realizar actualizaciones, inserciones y eliminaciones (Object Relational Designer)
 
@@ -59,7 +59,7 @@ De forma predeterminada, se proporciona la lógica para actualizar una base de d
 10. Haga clic en **Aceptar** o en **Aplicar**.
 
     > [!NOTE]
-    >  Puede seguir configurar el comportamiento para cada combinación de clase y el comportamiento, siempre haga clic en **aplicar** después de realizar cada modificación. Si cambia la clase o el comportamiento antes de hacer clic **aplicar**, un cuadro de diálogo de advertencia aparece y proporciona una oportunidad para aplicar los cambios.
+    > Puede seguir configurar el comportamiento para cada combinación de clase y el comportamiento, siempre haga clic en **aplicar** después de realizar cada modificación. Si cambia la clase o el comportamiento antes de hacer clic **aplicar**, un cuadro de diálogo de advertencia aparece y proporciona una oportunidad para aplicar los cambios.
 
 Para revertir a la lógica predeterminada del motor en tiempo de ejecución para las actualizaciones, haga clic en los puntos suspensivos junto a los comandos **Insertar**, **Actualizar** o **Eliminar** en la ventana **Propiedades** y después seleccione **Usar motor en tiempo de ejecución** en el cuadro de diálogo **Configurar comportamiento**.
 

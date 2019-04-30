@@ -12,12 +12,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c6b387acd7494396d118915f94a93ca88ec67199
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 47c7385ba54e432e42575f5b8cbae29172ddf62b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60118232"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434472"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>Cómo crear y aplicar un recurso
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ Los estilos y las plantillas de elementos del diseñador XAML se almacenan en en
    - Aplique un recurso de plantilla de control o estilo a un control. Abra el menú contextual de un control en la ventana Esquema del documento, seleccione **Editar plantilla** o **Editar plantillas adicionales**, seleccione **Aplicar recurso** y, después, seleccione el nombre de la plantilla de control en la lista que aparece.  
   
      > [!NOTE]
-     >  **Editar plantilla** se usa para aplicar plantillas de control. **Editar plantillas adicionales** se usa para aplicar otros tipos de plantilla.  
+     > **Editar plantilla** se usa para aplicar plantillas de control. **Editar plantillas adicionales** se usa para aplicar otros tipos de plantilla.  
   
      Los recursos pueden aplicarse siempre que sean compatibles. Por ejemplo, un recurso de pincel puede aplicarse a la propiedad **Foreground** de un control <xref:Windows.UI.Xaml.Controls.TextBox>.  
   

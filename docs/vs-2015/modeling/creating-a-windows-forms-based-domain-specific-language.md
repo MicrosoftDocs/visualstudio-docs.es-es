@@ -9,12 +9,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ba23da85e24dd7c1020b19b66852cad86f79a03b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b733af14e5b5124928c315ae4a87098513714214
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084783"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433336"
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>Crear lenguajes específicos de dominio basados en Windows Forms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,7 +85,7 @@ Una instancia de DSL, que muestra una interfaz de usuario del formulario de Wind
      Asígnele propiedades de dominio adicional denominadas `Size` de tipo **Int32**, y `IsOrganic` de tipo **booleano**.  
 
     > [!NOTE]
-    >  Si elimina la clase de dominio raíz y, a continuación, crear una nueva raíz, tendrá que restablecer la propiedad de la clase raíz del Editor. En **DSL Explorer**, seleccione **Editor**. A continuación, en la ventana Propiedades, establezca **clase raíz** a `Farm`.  
+    > Si elimina la clase de dominio raíz y, a continuación, crear una nueva raíz, tendrá que restablecer la propiedad de la clase raíz del Editor. En **DSL Explorer**, seleccione **Editor**. A continuación, en la ventana Propiedades, establezca **clase raíz** a `Farm`.  
 
 4. Use la **la clase de dominio denominado** herramienta para crear las clases de dominio siguientes:  
 
@@ -110,7 +110,7 @@ Una instancia de DSL, que muestra una interfaz de usuario del formulario de Wind
 10. Compilar el **Dsl** proyecto.  
 
     > [!NOTE]
-    >  En esta fase, los otros proyectos no se compilarán sin errores. Sin embargo, deseamos crear el proyecto Dsl para que su ensamblado esté disponible para el Asistente para orígenes de datos.  
+    > En esta fase, los otros proyectos no se compilarán sin errores. Sin embargo, deseamos crear el proyecto Dsl para que su ensamblado esté disponible para el Asistente para orígenes de datos.  
 
 ## <a name="updating-the-ui-project"></a>Actualización del proyecto de interfaz de usuario  
  Ahora puede crear un nuevo control de usuario que se mostrará la información que se almacena en el modelo de DSL. Para conectar el control de usuario con el modelo más sencillo es a través de enlaces de datos. El tipo de adaptador con el nombre de enlace de datos **ModelingBindingSource** está diseñado específicamente para conectar el DSL con interfaces no VMSDK.  
@@ -154,7 +154,7 @@ Una instancia de DSL, que muestra una interfaz de usuario del formulario de Wind
 6. Con el cuadro de herramientas, cree dos instancias de **DataGridView**y asígneles el nombre `AnimalGridView` y `FieldGridView`.  
 
    > [!NOTE]
-   >  Un paso alternativo es arrastrar los elementos de los animales y los campos desde la ventana Orígenes de datos hasta el control. Esta acción crea automáticamente las cuadrículas de datos y enlaces entre la vista de cuadrícula y el origen de datos. Sin embargo, este enlace no funciona correctamente para el DSL. Por lo tanto, es mejor crear cuadrículas de datos y enlaces manualmente.  
+   > Un paso alternativo es arrastrar los elementos de los animales y los campos desde la ventana Orígenes de datos hasta el control. Esta acción crea automáticamente las cuadrículas de datos y enlaces entre la vista de cuadrícula y el origen de datos. Sin embargo, este enlace no funciona correctamente para el DSL. Por lo tanto, es mejor crear cuadrículas de datos y enlaces manualmente.  
 
 7. Si el cuadro de herramientas no contiene el **ModelingBindingSource** herramienta, agréguela. En el menú contextual de la **datos** ficha, elija **elegir elementos**. En el **elegir elementos del cuadro de herramientas** cuadro de diálogo, seleccione **ModelingBindingSource** desde el **ficha .NET Framework**.  
 
@@ -227,7 +227,7 @@ Una instancia de DSL, que muestra una interfaz de usuario del formulario de Wind
      `Goat1` aparece en el **animales** vista.  
 
     > [!WARNING]
-    >  Debe usar el menú contextual en el **granja** nodo, no el **animales** nodo.  
+    > Debe usar el menú contextual en el **granja** nodo, no el **animales** nodo.  
 
 4. Seleccione el **granja** nodo raíz y ver sus propiedades.  
 

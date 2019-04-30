@@ -13,12 +13,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6211e33f8ef14687df3c70841ef61a2f25d10457
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b41f5f6a3d937f23db1039fdab5e1cf7e36960ef
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062404"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433266"
 ---
 # <a name="customizing-file-storage-and-xml-serialization"></a>Personalizar el almacenamiento de archivos y la serialización XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Cuando el usuario guarda una instancia, o *modelo*, de un lenguaje específico d
  También puede escribir código de programa para la personalización más avanzada.  
   
 > [!NOTE]
->  Si desea guardar el modelo en un formato determinado, pero no es necesario volver a cargarlo desde ese formulario, considere el uso de plantillas de texto para generar la salida del modelo, en lugar de un esquema de serialización personalizada. Para obtener más información, consulte [generar código desde un lenguaje específico de dominio](../modeling/generating-code-from-a-domain-specific-language.md).  
+> Si desea guardar el modelo en un formato determinado, pero no es necesario volver a cargarlo desde ese formulario, considere el uso de plantillas de texto para generar la salida del modelo, en lugar de un esquema de serialización personalizada. Para obtener más información, consulte [generar código desde un lenguaje específico de dominio](../modeling/generating-code-from-a-domain-specific-language.md).  
   
 ## <a name="model-and-diagram-files"></a>Archivos de diagrama y modelo  
  Normalmente, cada modelo se guarda en dos archivos:  

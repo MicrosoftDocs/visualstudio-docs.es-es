@@ -21,12 +21,12 @@ caps.latest.revision: 51
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: df11af5dee9ce510af01dab037a47a1bdd2f2880
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: baa62dc48b329cd3639c0623fccfdbe2325cf9e3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082209"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429124"
 ---
 # <a name="walkthrough-manually-deploying-a-clickonce-application"></a>Tutorial: Implementar manualmente una aplicación ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ Si no se puede usar Visual Studio para implementar su [!INCLUDE[ndptecclick](../
      Debe firmar la implementación con un certificado Authenticode. Puede generar un certificado de prueba mediante las herramientas de Visual Studio, MageUI.exe o MakeCert.exe y Pvk2Pfx.exe o puede obtener un certificado de una entidad de certificación (CA). Si decide usar la implementación de aplicaciones de confianza, también debe realizar una instalación única del certificado en todos los equipos cliente. Para obtener más información, consulta [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).  
   
     > [!NOTE]
-    >  También puede firmar la implementación con un certificado CNG que puede obtener de una entidad de certificación.  
+    > También puede firmar la implementación con un certificado CNG que puede obtener de una entidad de certificación.  
   
 - Asegúrese de que la aplicación no tiene un manifiesto con información de UAC.  
   
@@ -76,7 +76,7 @@ Si no se puede usar Visual Studio para implementar su [!INCLUDE[ndptecclick](../
 2. En el directorio de implementación que acaba de crear, cree un subdirectorio de versión. Si se trata de la primera vez que va a implementar la aplicación, el nombre del subdirectorio de versión **1.0.0.0**.  
   
     > [!NOTE]
-    >  La versión de la implementación puede ser distinta de la versión de la aplicación.  
+    > La versión de la implementación puede ser distinta de la versión de la aplicación.  
   
 3. Copie todos los archivos de aplicación en el subdirectorio de versión, incluidos los archivos ejecutables, ensamblados, recursos y archivos de datos. Si es necesario, puede crear subdirectorios adicionales que contienen archivos adicionales.  
   
@@ -89,7 +89,7 @@ Si no se puede usar Visual Studio para implementar su [!INCLUDE[ndptecclick](../
     ```  
   
     > [!NOTE]
-    >  No olvide incluir el punto (.) después de la `-FromDirectory` opción, que indica el directorio actual. Si no incluye el punto, debe especificar la ruta de acceso a los archivos de aplicación.  
+    > No olvide incluir el punto (.) después de la `-FromDirectory` opción, que indica el directorio actual. Si no incluye el punto, debe especificar la ruta de acceso a los archivos de aplicación.  
   
 6. Inicie sesión en el manifiesto de aplicación con el certificado Authenticode. Reemplace *mycert.pfx* con la ruta de acceso al archivo de certificado. Reemplace *passwd* con la contraseña para el archivo de certificado.  
   
@@ -134,7 +134,7 @@ Si no se puede usar Visual Studio para implementar su [!INCLUDE[ndptecclick](../
 2. En el directorio de implementación que acaba de crear, cree un subdirectorio de versión. Si se trata de la primera vez que va a implementar la aplicación, el nombre del subdirectorio de versión **1.0.0.0**.  
   
     > [!NOTE]
-    >  La versión de la implementación probablemente es distinta de la versión de la aplicación.  
+    > La versión de la implementación probablemente es distinta de la versión de la aplicación.  
   
 3. Copie todos los archivos de aplicación en el subdirectorio de versión, incluidos los archivos ejecutables, ensamblados, recursos y archivos de datos. Si es necesario, puede crear subdirectorios adicionales que contienen archivos adicionales.  
   

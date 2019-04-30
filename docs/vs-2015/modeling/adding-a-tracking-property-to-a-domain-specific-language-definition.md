@@ -13,12 +13,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6b2b3f87084d4bb1a64f2c43f860c7b8bcaae64c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4d53cdee5d92a92bb7405d1ecfb669e6de25a5a0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070490"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432393"
 ---
 # <a name="adding-a-tracking-property-to-a-domain-specific-language-definition"></a>Agregar una propiedad de seguimiento a una definición de lenguaje específico de dominio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -248,7 +248,7 @@ Este tutorial muestra cómo agregar una propiedad de seguimiento a un modelo de 
  Implemente el `GetCustomProperties` método del descriptor de tipo para el `ExampleModel` la clase de dominio.  
   
 > [!NOTE]
->  El código que generan las herramientas de DSL para el descriptor de tipos personalizado para `ExampleModel` llamadas `GetCustomProperties`; sin embargo, las herramientas de DSL no generan código que implementa el método.  
+> El código que generan las herramientas de DSL para el descriptor de tipos personalizado para `ExampleModel` llamadas `GetCustomProperties`; sin embargo, las herramientas de DSL no generan código que implementa el método.  
   
  Definir este método, crea el seguimiento de descriptor de propiedad para la propiedad de seguimiento de Namespace. Además, proporcionar atributos para la propiedad de seguimiento permite la **propiedades** ventana para mostrar la propiedad correctamente.  
   
@@ -344,7 +344,7 @@ Este tutorial muestra cómo agregar una propiedad de seguimiento a un modelo de 
  Implemente el `GetCustomElementsValue` método para el `ExampleModel` la clase de dominio.  
   
 > [!NOTE]
->  El código que generan las herramientas de DSL para `ExampleModel` llamadas `GetCustomElementsValue`; sin embargo, las herramientas de DSL no generan código que implementa el método.  
+> El código que generan las herramientas de DSL para `ExampleModel` llamadas `GetCustomElementsValue`; sin embargo, las herramientas de DSL no generan código que implementa el método.  
   
  Definir la `GetCustomElementsValue` método proporciona la lógica para la propiedad CustomElements calculado de `ExampleModel`. Este método cuenta el número de `ExampleElement` las clases de dominio que tienen una propiedad que tiene un valor de-usuario actualizado y devuelve una cadena que representa este número como una proporción de los elementos en total en el modelo de seguimiento de Namespace.  
   
@@ -425,7 +425,7 @@ Este tutorial muestra cómo agregar una propiedad de seguimiento a un modelo de 
  Además, agregue el almacenamiento y métodos para obtener y establecer la propiedad de almacenamiento personalizado Namespace de la `ExampleElement` la clase de dominio.  
   
 > [!NOTE]
->  El código que generan las herramientas de DSL para `ExampleModel` llama a get y establecer métodos; sin embargo, las herramientas de DSL no generan código que implementa los métodos.  
+> El código que generan las herramientas de DSL para `ExampleModel` llama a get y establecer métodos; sin embargo, las herramientas de DSL no generan código que implementa los métodos.  
   
 #### <a name="to-add-the-method-for-the-custom-type-descriptor"></a>Para agregar el método de descriptor de tipos personalizado  
   
@@ -591,7 +591,7 @@ Este tutorial muestra cómo agregar una propiedad de seguimiento a un modelo de 
  Agregue código para admitir el comportamiento posterior a la carga personalizado para la serialización XML.  
   
 > [!NOTE]
->  El código que las herramientas DSL generar llamadas la `OnPostLoadModel` y `OnPostLoadModelAndDiagram` métodos; sin embargo, las herramientas de DSL no generan código que implementa estos métodos.  
+> El código que las herramientas DSL generar llamadas la `OnPostLoadModel` y `OnPostLoadModelAndDiagram` métodos; sin embargo, las herramientas de DSL no generan código que implementa estos métodos.  
   
 #### <a name="to-add-code-to-support-the-custom-post-load-behavior"></a>Para agregar código para admitir el comportamiento posterior a la carga personalizado  
   

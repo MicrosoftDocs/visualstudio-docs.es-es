@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dc428d70e036da311d2cf3050cec9e94a13782e3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 47d53ad2579ce24f6d5fde2503a0acc98b4f7f5c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089983"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444135"
 ---
 # <a name="how-to-set-breakpoints-in-workflows"></a>Procedimiento Establecer puntos de interrupción en los flujos de trabajo
 Al utilizar [!INCLUDE[wfd1](../includes/wfd1-md.md)], puede establecer puntos de interrupción en sus flujos de trabajo gráficos del mismo modo que haría en Visual Basic o en código C#. Como es de esperar, la ejecución del flujo de trabajo se detiene en cada punto de interrupción que se establece.  
@@ -22,13 +22,13 @@ Al utilizar [!INCLUDE[wfd1](../includes/wfd1-md.md)], puede establecer puntos de
  Un punto de interrupción tiene tres estados: *Pendiente*, *enlazados*, y *Error*. Cuando se establece un punto de interrupción, está En espera y se representa mediante un icono rojo. Cuando el tiempo de ejecución haya cargado el tipo de flujo de trabajo, pasa a Enlazado. Si se especifica un formato incorrecto para el punto de interrupción, como con un nombre de actividad que no es válido, aparece una ventana de error. El punto de interrupción, de todas formas, se agrega a la ventana de punto de interrupción, pero se marca con una "x" pequeña.  
   
 > [!NOTE]
->  No se pueden establecer puntos de interrupción en los flujos de trabajo invocados.  
+> No se pueden establecer puntos de interrupción en los flujos de trabajo invocados.  
 > 
 > [!WARNING]
->  Asegúrese de seleccionar la opción **habilitar solo mi código (solo administrado)** desde el **herramientas**, **opciones**, **depuración** menú antes de depurar. Si tiene dos secuencias anidadas en otra secuencia y establezca un punto de interrupción en la primera secuencia interna, al presionar **F11** no depurar en la segunda secuencia interna si el <strong>habilitar solo mi código (solo administrado)</strong>no está seleccionada.  
+> Asegúrese de seleccionar la opción **habilitar solo mi código (solo administrado)** desde el **herramientas**, **opciones**, **depuración** menú antes de depurar. Si tiene dos secuencias anidadas en otra secuencia y establezca un punto de interrupción en la primera secuencia interna, al presionar **F11** no depurar en la segunda secuencia interna si el <strong>habilitar solo mi código (solo administrado)</strong>no está seleccionada.  
 > 
 > [!WARNING]
->  Los puntos de interrupción de un flujo de trabajo no se alcanzarán si la ruta de acceso completa a la propiedad de archivo XAML no es exacta. La ruta de acceso completa al archivo XAML no es exacta después de mover el proyecto o la solución a otra carpeta o a otro equipo. Presione CTRL+S para guardar y actualizar la ruta de acceso completa.  
+> Los puntos de interrupción de un flujo de trabajo no se alcanzarán si la ruta de acceso completa a la propiedad de archivo XAML no es exacta. La ruta de acceso completa al archivo XAML no es exacta después de mover el proyecto o la solución a otra carpeta o a otro equipo. Presione CTRL+S para guardar y actualizar la ruta de acceso completa.  
   
 ### <a name="to-set-a-breakpoint-on-an-activity-in-the-design-view"></a>Para establecer un punto de interrupción en una actividad en la vista Diseño  
   

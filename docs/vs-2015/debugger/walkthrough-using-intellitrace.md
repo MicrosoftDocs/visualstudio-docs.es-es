@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bbc2135f292197a1856eaea8d80c03d1c41adff3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 96d18ae0684dab5b6dc5c4001b93804bb13aa75e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053811"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444264"
 ---
 # <a name="walkthrough-using-intellitrace"></a>Tutorial: Uso de IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ Puede usar IntelliTrace para recopilar información sobre determinados eventos, 
 5. Inicie la depuración como de costumbre. (Presione **F5** o haga clic en **Depurar / Iniciar depuración**.  
   
     > [!TIP]
-    >  Mantenga abiertas las ventanas **Locales** y **Automático** mientras depura para ver y registrar los valores en estas ventanas.  
+    > Mantenga abiertas las ventanas **Locales** y **Automático** mientras depura para ver y registrar los valores en estas ventanas.  
   
 6. La ejecución se detiene en el punto de interrupción. Si no ve la ventana **Herramientas de diagnóstico** , haga clic en **Depurar / Ventanas / Eventos de IntelliTrace**.  
   
@@ -87,7 +87,7 @@ Puede usar IntelliTrace para recopilar información sobre determinados eventos, 
 1. Active la colección de llamadas. (En **Herramientas / Opciones / IntelliTrace / General**, elija **Eventos de IntelliTrace e información de llamadas**. IntelliTrace comenzará a recopilar esta información cuando se inicie la siguiente sesión de depuración.  
   
     > [!TIP]
-    >  Esto puede ralentizar la aplicación y aumentar el tamaño de los archivos de registro de IntelliTrace (archivos .iTrace) que guarde en el disco. Para obtener la mayoría de los datos de llamadas, pero minimizar los efectos, registre solo los datos de los módulos que le interesen. Para cambiar el tamaño máximo de los archivos .iTrace, vaya a **Herramientas / Opciones / IntelliTrace / Avanzadas**y especifique la cantidad máxima de espacio en disco. El valor predeterminado es 250 MB.  
+    > Esto puede ralentizar la aplicación y aumentar el tamaño de los archivos de registro de IntelliTrace (archivos .iTrace) que guarde en el disco. Para obtener la mayoría de los datos de llamadas, pero minimizar los efectos, registre solo los datos de los módulos que le interesen. Para cambiar el tamaño máximo de los archivos .iTrace, vaya a **Herramientas / Opciones / IntelliTrace / Avanzadas**y especifique la cantidad máxima de espacio en disco. El valor predeterminado es 250 MB.  
   
 2. Empiece a depurar la aplicación de consola de C# creada en la sección anterior. La ejecución se detiene en el punto de interrupción. Si no ve la ventana **Herramientas de diagnóstico** , haga clic en **Depurar / Ventanas / Eventos de IntelliTrace**.  
   
@@ -98,6 +98,6 @@ Puede usar IntelliTrace para recopilar información sobre determinados eventos, 
      Seleccione una de las llamadas de función y haga doble clic en ella. Debería ver los puntos de entrada y salida de función, así como las llamadas que la llamada actual realizó a otras funciones y los eventos de IntelliTrace generados por la llamada. Si no tiene la depuración histórica activada, esta acción la activa. Para obtener más información sobre la depuración histórica, vea [Historical Debugging](../debugger/historical-debugging.md).  
   
     > [!NOTE]
-    >  Algunas llamadas pueden mostrarse atenuadas. Se debe a que IntelliTrace no registró datos de los módulos correspondientes. Para ver estos datos, haga que IntelliTrace recopile datos de esos módulos. Para obtener información sobre cómo especificar módulos, consulte [las características de IntelliTrace](../debugger/intellitrace-features.md).  
+    > Algunas llamadas pueden mostrarse atenuadas. Se debe a que IntelliTrace no registró datos de los módulos correspondientes. Para ver estos datos, haga que IntelliTrace recopile datos de esos módulos. Para obtener información sobre cómo especificar módulos, consulte [las características de IntelliTrace](../debugger/intellitrace-features.md).  
   
 ## <a name="next-steps"></a>Pasos siguientes

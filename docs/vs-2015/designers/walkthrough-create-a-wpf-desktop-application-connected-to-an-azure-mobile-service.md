@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a4d4d6a8399d3d40eaefe86ed9cbb3105729f08a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 126aa1ad57aa5f8961803b8443365c208f5623ff
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60118024"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421250"
 ---
 # <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>Tutorial: Crear una aplicación de escritorio de WPF conectada a un servicio móvil de Azure
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,14 +56,14 @@ Puede usar Windows Presentation Foundation (WPF) para crear rápidamente una apl
 3. En el panel izquierdo, elija **WindowsAzure.MobileServices**y, a continuación, en el panel derecho, elija el botón **Instalar** .  
   
     > [!NOTE]
-    >  Si aparece el cuadro de diálogo **Vista previa** , revise los cambios propuestos y, a continuación, elija el botón **Aceptar** .  
+    > Si aparece el cuadro de diálogo **Vista previa** , revise los cambios propuestos y, a continuación, elija el botón **Aceptar** .  
   
 4. En el cuadro de diálogo **Aceptación de licencia** , revise los términos de la licencia y acéptelos con el botón **Acepto** .  
   
      Se agregarán las referencias necesarias al **Explorador de soluciones**.  
   
     > [!NOTE]
-    >  Si no está de acuerdo con los términos de licencia, elija el botón **No acepto** . No podrá finalizar el resto del tutorial.  
+    > Si no está de acuerdo con los términos de licencia, elija el botón **No acepto** . No podrá finalizar el resto del tutorial.  
   
 ## <a name="create-the-user-interface"></a>Crear la interfaz de usuario  
  El siguiente paso es crear la interfaz de usuario para la aplicación. Primero creará un control de usuario reutilizable que muestra un diseño estándar en paralelo de dos paneles. Podrá agregar el control de usuario a la ventana de la aplicación principal y controles para escribir y mostrar los datos para, a continuación, escribir algo de código para definir la interacción con el servicio móvil de back-end.  
@@ -288,7 +288,7 @@ Puede usar Windows Presentation Foundation (WPF) para crear rápidamente una apl
      ![MainWindow en el diseñador](../designers/media/wpfquickstart2.PNG "WPFQuickStart2")  
   
     > [!NOTE]
-    >  Conforme avance en los procedimientos siguientes, podrían aparecer errores algunos podrían aparecer errores en la **Lista de errores** si está abierta. No se preocupe, estos errores desaparecerán una vez completados los procedimientos restantes.  
+    > Conforme avance en los procedimientos siguientes, podrían aparecer errores algunos podrían aparecer errores en la **Lista de errores** si está abierta. No se preocupe, estos errores desaparecerán una vez completados los procedimientos restantes.  
   
 6. En el **Explorador de soluciones**, expanda el nodo **MainWindow.xaml** y abra el archivo **MainWindow.xaml.cs** o **MainWindow.saml.vb** .  
   
@@ -482,7 +482,7 @@ Puede usar Windows Presentation Foundation (WPF) para crear rápidamente una apl
 3. En el cuadro de diálogo **NUEVO SERVICIO MÓVIL** , elija el cuadro de texto **URL** y escriba `wpfquickstart01`.  
   
     > [!NOTE]
-    >  Puede que necesite cambiar la parte numérica de la dirección URL. Microsoft Azure requiere una dirección URL única para cada servicio móvil.  
+    > Puede que necesite cambiar la parte numérica de la dirección URL. Microsoft Azure requiere una dirección URL única para cada servicio móvil.  
   
      Esto establece la dirección URL para el servicio `https://wpfquickstart01.azure-mobile.net/`.  
   
@@ -491,7 +491,7 @@ Puede usar Windows Presentation Foundation (WPF) para crear rápidamente una apl
 5. En la lista **REGIÓN** , elija el centro de datos en el que desea implementar el servicio móvil y, a continuación, elija el botón **Siguiente** (flecha derecha).  
   
     > [!NOTE]
-    >  Para este servicio, usará la configuración predeterminada **BACK-END** , **JavaScript**.  
+    > Para este servicio, usará la configuración predeterminada **BACK-END** , **JavaScript**.  
   
 6. Si va a crear una base de datos nueva, en la página **Especificar configuración de la base de datos** , en la lista **SERVER** , elija **Nuevo servidor de bases de datos SQL**, escriba su **NOMBRE DE INICIO DE SESIÓN SQL** y la **CONTRASEÑA**y, a continuación, elija el botón **Completar** (marca de verificación).  
   

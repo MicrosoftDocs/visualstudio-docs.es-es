@@ -20,12 +20,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1fae6a503323d42d4f759a30b4db790a88079815
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: eaee3dae25f5f2e5544a2521a7bce0201b45a3e2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048403"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441151"
 ---
 # <a name="refactoring-classes-and-types-class-designer"></a>Refactorización de clases y tipos (Diseñador de clases)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "60048403"
 Al refactorizar el código, lo hace más fácil de entender y mantener, y más eficiente al cambiar su estructura interna y la manera en la que están diseñados los objetos, no su comportamiento externo. Utilice el Diseñador de clases y la ventana Detalles de clase para reducir el trabajo necesario y la posibilidad de que se introduzcan errores al refactorizar código de .NET de Visual C#, .NET de Visual Basic o C++ en el proyecto de Visual Studio.  
   
 > [!NOTE]
->  Si los archivos de un proyecto son de solo lectura, el motivo puede ser que el proyecto esté bajo el control del código fuente y no esté desprotegido, que sea un proyecto al que se hace referencia o que sus archivos estén marcados como de solo lectura en el disco. Al trabajar en un proyecto que se encuentre en uno de estos estados, se le presentarán varias formas de guardar el trabajo según el estado del proyecto. Esto se aplica a la refactorización de código y también al código que cambie de otro modo como, por ejemplo, editándolo directamente. Para obtener más información, consulte [Presentación de la información de solo lectura (Diseñador de clases)](http://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a).  
+> Si los archivos de un proyecto son de solo lectura, el motivo puede ser que el proyecto esté bajo el control del código fuente y no esté desprotegido, que sea un proyecto al que se hace referencia o que sus archivos estén marcados como de solo lectura en el disco. Al trabajar en un proyecto que se encuentre en uno de estos estados, se le presentarán varias formas de guardar el trabajo según el estado del proyecto. Esto se aplica a la refactorización de código y también al código que cambie de otro modo como, por ejemplo, editándolo directamente. Para obtener más información, consulte [Presentación de la información de solo lectura (Diseñador de clases)](http://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a).  
   
 ## <a name="common-tasks"></a>Tareas comunes  
   
@@ -65,7 +65,7 @@ Al refactorizar el código, lo hace más fácil de entender y mantener, y más e
 3. Para mover el foco fuera de la celda, presione la tecla **ENTRAR** o haga clic fuera de la celda.  
   
     > [!NOTE]
-    >  En la ventana Detalles de clase, puede cambiar el nombre de un miembro, pero no un tipo.  
+    > En la ventana Detalles de clase, puede cambiar el nombre de un miembro, pero no un tipo.  
   
 ##### <a name="to-rename-a-name-in-the-properties-window"></a>Para cambiar un nombre en la ventana Propiedades  
   

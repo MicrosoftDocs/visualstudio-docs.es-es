@@ -16,12 +16,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c1cde6d36a1244976a2cc95dd9c1d3698be40df0
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: a0ce02a76d32a967e2c7e5f06818b5838337f9b1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652623"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433674"
 ---
 # <a name="options-dialog-box--projects-and-solutions-build-and-run"></a>Cuadro de diálogo Opciones, Proyectos y soluciones, Compilar y ejecutar
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ En este cuadro de diálogo puede especificar el número máximo de proyectos de 
   
  **Al ejecutar, cuando los proyectos no estén actualizados**  
  > [!NOTE]
->  Esta lista solo se aplica a proyectos de [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)].  
+> Esta lista solo se aplica a proyectos de [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)].  
   
  De forma predeterminada, aparece un mensaje si una configuración de proyecto no está actualizada al presionar la tecla F5 o seleccionar **Depurar**, **Iniciar** en la barra de menús. Puede especificar si se debe compilar el proyecto de todos modos y si aparece el mensaje. Utilice esta opción para especificar si aparece el mensaje y cuál debería ser el comportamiento de compilación en caso de que no aparezca el mensaje.  
   
@@ -54,7 +54,7 @@ En este cuadro de diálogo puede especificar el número máximo de proyectos de 
  Si se producen errores de compilación al iniciar una compilación desde el menú **Compilar**, aparece un mensaje. Puede especificar si desea proceder a iniciar la aplicación y si aparece el mensaje cada vez que se producen errores de compilación. Utilice esta opción para especificar si aparece el mensaje y cuál debería ser el comportamiento en caso de que no aparezca el mensaje.  
   
 > [!NOTE]
->  Esta opción solo es aplicable a proyectos de [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)].  
+> Esta opción solo es aplicable a proyectos de [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)].  
   
  **Preguntar al iniciar**  
  Muestra un cuadro de mensaje cada vez que se producen errores de compilación.  
@@ -73,7 +73,7 @@ En este cuadro de diálogo puede especificar el número máximo de proyectos de 
   
  **Contenido del archivo de registro de compilación del proyecto de MSBuild**  
  > [!NOTE]
->  Esta opción solo es aplicable a proyectos de Visual C++.  
+> Esta opción solo es aplicable a proyectos de Visual C++.  
   
  Determina cuánta información se escribe en el archivo de registro de compilación, que se encuentra en \\...\\*NombreProyecto*\Debug\\*NombreProyecto*.log.  
   

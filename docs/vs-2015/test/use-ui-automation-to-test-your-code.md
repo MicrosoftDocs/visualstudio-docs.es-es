@@ -17,12 +17,12 @@ ms.assetid: ad9e3eaa-ab86-436e-95b8-dc20eb1f8b2a
 caps.latest.revision: 87
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8840c570d4de2544a5cdb4831f083e5a3598ca72
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f9a7d4288258ab3e90a7eec6ba3de7ac6892ee93
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113799"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442888"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Usar UI Automation para probar el código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -98,7 +98,7 @@ Las pruebas automatizadas que controlan la aplicación a través de la interfaz 
     **Para pausar la grabación**, por ejemplo, si tiene que encargarse del correo entrante, elija **Pausar**.
 
    > [!WARNING]
-   >  Todas las acciones realizadas en el escritorio se grabarán. Pause la grabación si está realizando acciones que puedan hacer que los datos confidenciales se incluyan en la grabación.
+   > Todas las acciones realizadas en el escritorio se grabarán. Pause la grabación si está realizando acciones que puedan hacer que los datos confidenciales se incluyan en la grabación.
 
     **Para eliminar acciones** grabadas por error, elija **Editar acciones**.
 
@@ -113,7 +113,7 @@ Las pruebas automatizadas que controlan la aplicación a través de la interfaz 
     ![Pruebas de IU codificadas dirigidas a un elemento](../test/media/codedui-1.png "CodedUI_1")
 
    > [!TIP]
-   >  Alterne entre el registro de acciones y la comprobación de valores. Genere código al final de cada secuencia de acciones o comprobaciones. Si lo desea, podrá insertar nuevas acciones y comprobaciones más adelante.
+   > Alterne entre el registro de acciones y la comprobación de valores. Genere código al final de cada secuencia de acciones o comprobaciones. Si lo desea, podrá insertar nuevas acciones y comprobaciones más adelante.
 
     Para obtener más detalles, consulte [Validar las propiedades de los controles](#VerifyingCodeUsingCUITGenerateAssertions).
 
@@ -230,7 +230,7 @@ Las pruebas automatizadas que controlan la aplicación a través de la interfaz 
   Para usar el teclado para seleccionar un control de IU, mantenga el mouse sobre el control. A continuación, mantenga presionadas las teclas **Ctrl** e **I** al mismo tiempo. Suelte las teclas. El generador de pruebas de IU codificadas registra el control.
 
 > [!WARNING]
->  Si usa Microsoft Lync, debe cerrar Lync antes de iniciar el generador de pruebas de IU codificadas. Microsoft Lync interfiere con el método abreviado del teclado **Ctrl+I**.
+> Si usa Microsoft Lync, debe cerrar Lync antes de iniciar el generador de pruebas de IU codificadas. Microsoft Lync interfiere con el método abreviado del teclado **Ctrl+I**.
 
  *No puedo grabar un movimiento del mouse sobre un control. ¿Existe alguna forma de hacerlo?*
  **Grabar manualmente eventos de mantenimiento del mouse**
@@ -255,7 +255,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
  Si es necesario, se puede configurar la asignación de teclado predeterminada de Ctrl+Mayús+R que se usa para aplicar eventos de mantenimiento del mouse en las pruebas de IU codificadas para usar diferentes teclas.
 
 > [!WARNING]
->  En circunstancias normales, no tendría que cambiar las asignaciones de teclado para los eventos de mantenimiento del mouse. Tenga cuidado al reasignar la asignación de teclado. Puede que la opción elegida ya esté en uso en otra parte dentro de Visual Studio o de la aplicación que se está probando.
+> En circunstancias normales, no tendría que cambiar las asignaciones de teclado para los eventos de mantenimiento del mouse. Tenga cuidado al reasignar la asignación de teclado. Puede que la opción elegida ya esté en uso en otra parte dentro de Visual Studio o de la aplicación que se está probando.
 
  Para cambiar las asignaciones de teclado, debe modificar el siguiente archivo de configuración:
 
@@ -356,7 +356,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
   ```
 
   > [!WARNING]
-  >  No debe editar este archivo, ya que se volverá a generar al crear más pruebas.
+  > No debe editar este archivo, ya que se volverá a generar al crear más pruebas.
 
    Puede crear versiones adaptadas de estos métodos copiándolos en UIMap.cs. Por ejemplo, puede crear una versión parametrizada a la que pueda llamarse desde un método de prueba:
 

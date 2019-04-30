@@ -9,12 +9,12 @@ helpviewer_keywords:
 ms.assetid: 10bb4f69-b259-41f0-b91a-69b04385d9a5
 caps.latest.revision: 31
 manager: jillfra
-ms.openlocfilehash: a14fcb8e81261962e8851347a54d7c8d52565d20
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 116f76324a2150413c0ae6d08bc99e114efcc50e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110445"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436514"
 ---
 # <a name="walkthrough-displaying-smarttags"></a>Tutorial: Mostrar etiquetas inteligentes
 Las etiquetas inteligentes están en desuso en beneficio de las bombillas. Vea [Tutorial: Mostrar sugerencias de bombilla](../extensibility/walkthrough-displaying-light-bulb-suggestions.md).  
@@ -24,7 +24,7 @@ Las etiquetas inteligentes están en desuso en beneficio de las bombillas. Vea [
  Aunque las etiquetas inteligentes son parte de la implementación de IntelliSense en el editor, puede implementar las etiquetas inteligentes mediante subclases de <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTag> y, luego, mediante la implementación de la interfaz de <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> y la interfaz de <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider>.  
   
 > [!NOTE]
->  Otros tipos de etiquetas pueden implementarse de forma similar.  
+> Otros tipos de etiquetas pueden implementarse de forma similar.  
   
  El siguiente tutorial muestra cómo crear una etiqueta inteligente que aparece en la palabra actual y tiene dos acciones sugeridas: **Convertir a mayúsculas** y **convertir a minúsculas**.  
   
@@ -183,4 +183,4 @@ Las etiquetas inteligentes están en desuso en beneficio de las bombillas. Vea [
 5. Al hacer clic en el botón, se deben mostrar dos acciones sugeridas: **Convertir a mayúsculas** y **convertir a minúsculas**. Si hace clic en la primera acción, todo el texto de la palabra actual se debe convertir a mayúsculas. Si hace clic en la segunda acción, todo el texto de la palabra actual se debe convertir a minúsculas.  
   
 ## <a name="see-also"></a>Vea también  
- [Tutorial: Vinculación de un tipo de contenido a una extensión de nombre de archivo](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [Tutorial: Vinculación de un tipo de contenido con una extensión de nombre de archivo](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

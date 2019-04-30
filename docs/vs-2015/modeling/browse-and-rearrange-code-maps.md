@@ -24,12 +24,12 @@ caps.latest.revision: 91
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9b9744cf6d3ff8be30d06ffa877f96940fd20a24
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ffb29ee31390c512802bfd16c7b94333d0c6c403
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055254"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433425"
 ---
 # <a name="browse-and-rearrange-code-maps"></a>Examinar y reorganizar mapas de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -103,7 +103,7 @@ Reorganice los elementos en mapas de código para facilitar su lectura y mejorar
 - Un vínculo agregado representa todas las relaciones que señalan la misma dirección entre dos grupos.  
   
 > [!TIP]
->  De forma predeterminada, el mapa muestra los vínculos entre grupos solo para los nodos seleccionados. Para cambiar este comportamiento para mostrar u ocultar vínculos agregados entre grupos, haga clic en **diseño** en el código de barra de herramientas de mapa y elija **avanzadas**, a continuación, **mostrar todos los vínculos entre grupos** o **Ocultar todos los vínculos entre grupos**. Consulte [ocultar o mostrar nodos y vínculos](#HidingShowing) para obtener más detalles.  
+> De forma predeterminada, el mapa muestra los vínculos entre grupos solo para los nodos seleccionados. Para cambiar este comportamiento para mostrar u ocultar vínculos agregados entre grupos, haga clic en **diseño** en el código de barra de herramientas de mapa y elija **avanzadas**, a continuación, **mostrar todos los vínculos entre grupos** o **Ocultar todos los vínculos entre grupos**. Consulte [ocultar o mostrar nodos y vínculos](#HidingShowing) para obtener más detalles.  
   
 |**En**|**Siga estos pasos**|  
 |------------|-----------------------------|  
@@ -118,7 +118,7 @@ Reorganice los elementos en mapas de código para facilitar su lectura y mejorar
  Al ocultar nodos, se evita que participen en algoritmos de diseño. De forma predeterminada, los vínculos entre grupos se ocultan. Los vínculos entre grupos son vínculos individuales que conectan nodos entre diferentes grupos. Cuando se contraen los grupos, el mapa agrega todos los vínculos entre grupos a los vínculos individuales que hay entre los grupos. Cuando se expande un grupo y se seleccionan los nodos que hay dentro de este, los vínculos entre grupos aparecen y muestran las dependencias que existen dentro de ese grupo.  
   
 > [!CAUTION]
->  Antes de compartir un mapa creado en Visual Studio Enterprise con los usuarios de Visual Studio Professional, asegúrese de mostrar cualquier nodo o vínculo entre grupos que quiera que otros vean. De lo contrario, esos usuarios no podrán mostrar esos elementos.  
+> Antes de compartir un mapa creado en Visual Studio Enterprise con los usuarios de Visual Studio Professional, asegúrese de mostrar cualquier nodo o vínculo entre grupos que quiera que otros vean. De lo contrario, esos usuarios no podrán mostrar esos elementos.  
   
 ### <a name="to-hide-or-show-nodes"></a>Para ocultar o mostrar nodos  
   
@@ -153,7 +153,7 @@ Reorganice los elementos en mapas de código para facilitar su lectura y mejorar
  Puede mostrar más o menos elementos de un mapa con el fin de explorar en profundidad o simplificar el mapa. También puede cambiar el nombre de los elementos y agregar comentarios a los elementos.  
   
 > [!CAUTION]
->  Antes de compartir un mapa creado mediante Visual Studio Enterprise con usuarios de Visual Professional, asegúrese de que los elementos de código que quiere que otros vean estén visibles en el mapa. De lo contrario, dichos usuarios no podrán recuperar los elementos de código eliminados.  
+> Antes de compartir un mapa creado mediante Visual Studio Enterprise con usuarios de Visual Professional, asegúrese de que los elementos de código que quiere que otros vean estén visibles en el mapa. De lo contrario, dichos usuarios no podrán recuperar los elementos de código eliminados.  
   
 ### <a name="add-a-node-for-a-code-element"></a>Agregar un nodo para un elemento de código  
   
@@ -267,7 +267,7 @@ Reorganice los elementos en mapas de código para facilitar su lectura y mejorar
 3. Si la lista no incluye la categoría o propiedad, elija **+** en el **leyenda** cuadro y luego elija **propiedad de nodo**, **categoría de nodo** , **Vincular propiedad**, o **vincular categoría**. Después, elija la propiedad o categoría. La categoría o propiedad aparece ahora en el **leyenda** cuadro.  
   
     > [!NOTE]
-    >  Para crear y asignar una categoría o propiedad a un elemento de código, puede editar el archivo del mapa .dgml; consulte [Personalizar mapas de código mediante la edición de los archivos DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).  
+    > Para crear y asignar una categoría o propiedad a un elemento de código, puede editar el archivo del mapa .dgml; consulte [Personalizar mapas de código mediante la edición de los archivos DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).  
   
 4. En el **leyenda** cuadro, haga clic en el icono situado junto a la categoría o propiedad agregada o que desee cambiar.  
   
@@ -290,7 +290,7 @@ Reorganice los elementos en mapas de código para facilitar su lectura y mejorar
     |Color o icono específico|Abra la lista de valores de la categoría o propiedad. Seleccione un color o icono.|  
   
     > [!NOTE]
-    >  Puede reorganizar, eliminar o desactivar temporalmente los estilos en el **leyenda** cuadro. Consulte [editar el cuadro leyenda](#ModifyLegend).  
+    > Puede reorganizar, eliminar o desactivar temporalmente los estilos en el **leyenda** cuadro. Consulte [editar el cuadro leyenda](#ModifyLegend).  
   
 ## <a name="ModifyLegend"></a> Editar el cuadro leyenda  
  Puede reorganizar, eliminar o desactivar temporalmente los estilos en el **leyenda** cuadro:  

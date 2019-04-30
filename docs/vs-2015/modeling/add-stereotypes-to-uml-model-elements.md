@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 092c07e9aa5f2999bcf3a28977151878123f6bfc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5bba638a595a01f17e4b7e4f8269a69cb6e466a1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043651"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430498"
 ---
 # <a name="add-stereotypes-to-uml-model-elements"></a>Agregar estereotipos a elementos del modelo UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,14 +44,14 @@ Puede agregar un estereotipo a un elemento del modelo UML para anotarlo y propor
 1. Haga clic en el elemento de modelo o una relación, ya sea en un diagrama o en **Explorador de modelos UML**y, a continuación, haga clic en **propiedades**.  
   
     > [!NOTE]
-    >  Para agregar los mismos estereotipos a varios elementos, puede seleccionar varios elementos y hacer clic con el botón secundario en uno de ellos.  
+    > Para agregar los mismos estereotipos a varios elementos, puede seleccionar varios elementos y hacer clic con el botón secundario en uno de ellos.  
   
 2. Haga clic en el **estereotipos** propiedad y seleccione los estereotipos que desea aplicar.  
   
      Los estereotipos seleccionados aparecen entre «comillas angulares» en el elemento del modelo, para casi todos los tipos de elemento y relación.  
   
     > [!NOTE]
-    >  Si no ve el **estereotipos** propiedad, o si el estereotipo que desea no aparece, compruebe que el elemento de modelo está dentro de un paquete o modelo al que se ha vinculado el perfil adecuado.  
+    > Si no ve el **estereotipos** propiedad, o si el estereotipo que desea no aparece, compruebe que el elemento de modelo está dentro de un paquete o modelo al que se ha vinculado el perfil adecuado.  
   
 3. Algunos estereotipos permiten establecer los valores de las propiedades adicionales para el elemento del modelo. Para ver estas propiedades, expanda el **estereotipos** propiedad.  
   

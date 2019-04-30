@@ -11,12 +11,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7b9d40f3627cd24aa7758a0d599eb6e5d770c9f8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: b42ecd7ad38144786ff12d5cad20c9e8a1437646
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58987369"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417551"
 ---
 # <a name="choose-operation-dialog-box-legacy"></a>Elegir operación (Cuadro de diálogo) (Heredado)
 Este tema se describe cómo usar el **elegir operación** cuadro de diálogo heredado [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Use el [!INCLUDE[wfd2](../includes/wfd2-md.md)] heredado cuando deba tener como destino [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -36,7 +36,7 @@ Este tema se describe cómo usar el **elegir operación** cuadro de diálogo her
 |**Permisos**|Pestaña que contiene el <xref:System.Workflow.Activities.OperationInfoBase.PrincipalPermissionName%2A> y las propiedades <xref:System.Workflow.Activities.OperationInfoBase.PrincipalPermissionRole%2A> de los usuarios que pueden llamar a esa operación. Por ejemplo, si solo los usuarios del grupo de administradores pueden llamar a esa operación, a continuación, se escribiría "Administradores" en el **rol** cuadro de texto.<br /><br /> Esta pestaña está habilitada para las dos operaciones creadas a través de la **ChooseOperation** cuadro de diálogo y las operaciones que se importaron a través de la **importación** botón.|  
   
 > [!NOTE]
->  El **elegir operación** cuadro de diálogo sólo muestra contratos u operaciones utilizados por otras <xref:System.Workflow.Activities.SendActivity> las actividades del flujo de trabajo. De forma similar, el **elegir operación** cuadro de diálogo de <xref:System.Workflow.Activities.ReceiveActivity> actividades sólo muestra contratos u operaciones utilizados por otras **ReceiveActivity** actividades del flujo de trabajo.  
+> El **elegir operación** cuadro de diálogo sólo muestra contratos u operaciones utilizados por otras <xref:System.Workflow.Activities.SendActivity> las actividades del flujo de trabajo. De forma similar, el **elegir operación** cuadro de diálogo de <xref:System.Workflow.Activities.ReceiveActivity> actividades sólo muestra contratos u operaciones utilizados por otras **ReceiveActivity** actividades del flujo de trabajo.  
   
 ## <a name="see-also"></a>Vea también  
  [Cómo: Implementar una operación de contrato WCF (heredado)](../workflow-designer/how-to-implement-a-windows-communication-foundation-contract-operation-legacy.md)   

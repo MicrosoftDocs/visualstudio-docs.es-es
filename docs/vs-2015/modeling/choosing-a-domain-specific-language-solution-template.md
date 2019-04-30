@@ -11,12 +11,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 943493273808afdb2dfb099ff1f44900028e4dd6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 36b821219b02fa77171d89214d8cf4813ce92303
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58999595"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433386"
 ---
 # <a name="choosing-a-domain-specific-language-solution-template"></a>Elegir una plantilla de soluciones para lenguajes específicos de dominio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Para crear una solución de lenguaje específico de dominio, elija una de las pl
  Las siguientes plantillas de solución están disponibles en el Asistente para el Diseñador de lenguaje específico de dominio.  
   
 > [!NOTE]
->  El propósito de las plantillas es proporcionar un DSL inicial. Las plantillas de diagramas de clases y componentes con nombre no son diagramas UML completos. Si desea crear un modelo UML, considere la posibilidad de las herramientas, que proporcionan un conjunto de diagramas que están integradas en torno a un único modelo de modelado UML. Son extensibles y se pueden integrar con su DSL mediante ModelBus. Para obtener más información, consulte [crear modelos para la aplicación](../modeling/create-models-for-your-app.md).  
+> El propósito de las plantillas es proporcionar un DSL inicial. Las plantillas de diagramas de clases y componentes con nombre no son diagramas UML completos. Si desea crear un modelo UML, considere la posibilidad de las herramientas, que proporcionan un conjunto de diagramas que están integradas en torno a un único modelo de modelado UML. Son extensibles y se pueden integrar con su DSL mediante ModelBus. Para obtener más información, consulte [crear modelos para la aplicación](../modeling/create-models-for-your-app.md).  
   
 |Plantilla|Características|Descripción|  
 |--------------|--------------|-----------------|  

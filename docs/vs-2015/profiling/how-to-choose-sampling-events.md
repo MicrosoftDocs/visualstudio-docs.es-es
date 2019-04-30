@@ -19,12 +19,12 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 50b9fcb98b64e36d37ec2153588dcbb388ea960b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 017414bdbf8e0e1a3a664782aab1ea44bda030c4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105505"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432832"
 ---
 # <a name="how-to-choose-sampling-events"></a>Procedimiento Elegir eventos de muestreo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ De forma predeterminada, las herramientas de generación de perfiles [!INCLUDE[v
 - Contador de rendimiento: contadores de CPU para problemas de rendimiento de bajo nivel.  
   
 > [!IMPORTANT]
->  Si recopila datos de memoria de .NET (asignaciones, duraciones de objeto o ambos) mediante el método de muestreo, se omiten todos los eventos de muestreo especificados por el usuario y se utilizan los eventos de asignación de memoria o de recolección de elementos no utilizados apropiados, o ambos, para recopilar datos.  
+> Si recopila datos de memoria de .NET (asignaciones, duraciones de objeto o ambos) mediante el método de muestreo, se omiten todos los eventos de muestreo especificados por el usuario y se utilizan los eventos de asignación de memoria o de recolección de elementos no utilizados apropiados, o ambos, para recopilar datos.  
   
 ### <a name="to-select-a-sample-event"></a>Para seleccionar un evento de muestras  
   
@@ -51,7 +51,7 @@ De forma predeterminada, las herramientas de generación de perfiles [!INCLUDE[v
 3. En la lista desplegable **Evento de muestras**, seleccione el evento de muestras que quiere utilizar para generar perfiles de la aplicación.  
   
     > [!NOTE]
-    >  Los **Contadores de rendimiento disponibles** solo están habilitados si selecciona **Contador de rendimiento** en la lista desplegable **Evento de muestras**.  
+    > Los **Contadores de rendimiento disponibles** solo están habilitados si selecciona **Contador de rendimiento** en la lista desplegable **Evento de muestras**.  
   
 4. Si selecciona **Contador de rendimiento**, seleccione un contador de CPU específico en el control de vista de árbol **Contadores de rendimiento disponibles**.  
   

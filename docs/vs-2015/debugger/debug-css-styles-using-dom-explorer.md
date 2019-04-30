@@ -20,12 +20,12 @@ caps.latest.revision: 47
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 45da81c91cf654fe41fb903314dce662beac7a23
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 05d8cafce91fa55c515457b9f44779a06586387a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042030"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63409502"
 ---
 # <a name="debug-css-styles-using-dom-explorer"></a>Depurar estilos de CSS mediante el Explorador DOM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,18 +43,18 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
 - Use la pestaña **Calculado** para ver los valores calculados de un estilo. Por ejemplo, si establece el tamaño en 1em, el valor calculado por Internet Explorer puede ser 16px. Los estilos de esta pestaña se organizan por nombre de estilo, como `height`. También puede usar esta pestaña para habilitar o deshabilitar estilos específicos, editar manualmente los valores y ver los resultados inmediatos de estos cambios.  
   
     > [!NOTE]
-    >  En Visual Studio 2013 Update 2, la información proporcionada en la pestaña **Seguimiento** se ha combinado con la pestaña **Calculado** y la pestaña **Seguimiento** se ha quitado.  
+    > En Visual Studio 2013 Update 2, la información proporcionada en la pestaña **Seguimiento** se ha combinado con la pestaña **Calculado** y la pestaña **Seguimiento** se ha quitado.  
   
 - Use la pestaña **Cambios** (solo aplicaciones de la Tienda Windows y aplicaciones de la Tienda de Windows Phone) para identificar y realizar un seguimiento de los estilos CSS que ha cambiado durante una sesión de depuración.  
   
 > [!TIP]
->  Los cambios realizados en los estilos de las pestañas **Estilos** y **Calculado** no son permanentes. Se pierden cuando se detiene la depuración. Para modificar el código fuente y recargar las páginas sin detener y reiniciar el depurador, actualiza su aplicación con el ![botón de actualización de Windows app](../debugger/media/js-refresh.png "JS_Refresh") botón (**actualizar Windows app** ) en el **depurar** barra de herramientas (solo para aplicaciones Windows Store y Windows Phone Store). Para obtener más información, consulte [actualizar una aplicación (JavaScript)](../debugger/refresh-an-app-javascript.md).  
+> Los cambios realizados en los estilos de las pestañas **Estilos** y **Calculado** no son permanentes. Se pierden cuando se detiene la depuración. Para modificar el código fuente y recargar las páginas sin detener y reiniciar el depurador, actualiza su aplicación con el ![botón de actualización de Windows app](../debugger/media/js-refresh.png "JS_Refresh") botón (**actualizar Windows app** ) en el **depurar** barra de herramientas (solo para aplicaciones Windows Store y Windows Phone Store). Para obtener más información, consulte [actualizar una aplicación (JavaScript)](../debugger/refresh-an-app-javascript.md).  
   
 ## <a name="example-of-fixing-a-css-rule"></a>Ejemplo de corrección de una regla de CSS  
  En este ejemplo se muestra cómo inspeccionar las reglas CSS y depurar un problema de estilo. En este ejemplo, digamos que quiere cambiar el color de una fuente utilizada para mostrar títulos de grupo en la plantilla Aplicación dividida de la [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] .  
   
 > [!NOTE]
->  En este ejemplo se muestra una aplicación de la Tienda Windows, pero todas las características del explorador DOM mostradas también se aplican a una aplicación de la Tienda de Windows Phone y, excepto la pestaña Cambios, a una aplicación creada con Visual Studio Tools para Apache Cordova.  
+> En este ejemplo se muestra una aplicación de la Tienda Windows, pero todas las características del explorador DOM mostradas también se aplican a una aplicación de la Tienda de Windows Phone y, excepto la pestaña Cambios, a una aplicación creada con Visual Studio Tools para Apache Cordova.  
   
 #### <a name="to-view-and-change-css-rules"></a>Para ver y cambiar las reglas CSS  
   
@@ -98,19 +98,19 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
      Cuando la aplicación finalice la carga, mire los encabezados de los elementos de lista, como **título de grupo: 1**. El color no ha cambiado, por lo que el intento de aplicar un color naranja a los títulos no ha funcionado. Averiguaremos qué ha salido mal y lo corregiremos usando las pestañas CSS en el Explorador DOM.  
   
     > [!TIP]
-    >  Cuando la aplicación aparezca en el simulador, colóquelo junto a la ventana de Visual Studio para que pueda ver inmediatamente los resultados de sus selecciones y los cambios realizados en los estilos CSS.  
+    > Cuando la aplicación aparezca en el simulador, colóquelo junto a la ventana de Visual Studio para que pueda ver inmediatamente los resultados de sus selecciones y los cambios realizados en los estilos CSS.  
   
 6. Cambie a Visual Studio y haga clic en **Seleccionar elemento** en el Explorador DOM (o presione Ctrl+B). El modo de selección se modifica para que pueda seleccionar un elemento haciendo clic en él. Además, la aplicación se sitúa en primer plano. El modo se revierte al original al hacer clic. Aquí está el botón **Seleccionar elemento** . ![Botón Seleccionar elemento en el explorador DOM](../debugger/media/js-dom-select-element-button.png "JS_DOM_Select_Element_Button")  
   
     > [!TIP]
-    >  También puede seleccionar elementos HTML directamente en el Explorador DOM. Para obtener más información sobre la selección de elementos, vea [inicio rápido: Depurar HTML y CSS](../debugger/quickstart-debug-html-and-css.md).  
+    > También puede seleccionar elementos HTML directamente en el Explorador DOM. Para obtener más información sobre la selección de elementos, vea [inicio rápido: Depurar HTML y CSS](../debugger/quickstart-debug-html-and-css.md).  
   
 7. En el simulador, mantenga el puntero sobre el título del primer elemento en la lista, **título de grupo: 1**, en el panel izquierdo de la página principal. Se resalta el título, como se muestra aquí:  
   
      ![Con el botón Seleccionar elemento](../debugger/media/js-css-select-element.png "JS_CSS_Select_Element")  
   
     > [!NOTE]
-    >  El emulador de Windows Phone solo admite en parte resaltar elementos al colocarse sobre ellos.  
+    > El emulador de Windows Phone solo admite en parte resaltar elementos al colocarse sobre ellos.  
   
 8. Haga clic en el título con contorno. El Explorador DOM selecciona automáticamente el elemento HTML correspondiente, que es parecido a este.  
   
@@ -127,12 +127,12 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
     - El selector de CSS que hemos modificado en items.css, `.itemspage .itemslist .item`, no se usa en el cálculo final del estilo (está tachado). Tampoco se usan otras apariciones del estilo de `color` .  
   
         > [!TIP]
-        >  En el caso de nombres de selector más largos, el nombre completo aparece como información sobre herramientas.  
+        > En el caso de nombres de selector más largos, el nombre completo aparece como información sobre herramientas.  
   
     - El valor calculado final de CSS, `rgba(255, 255, 255, 0.87)`, se establece específicamente para el selector de CSS siguiente: `.itemspage .itemslist .item .item-overlay .item-title`, que también está definido en items.css.  
   
         > [!TIP]
-        >  Ahora que sabemos dónde se establece el color del título, también sabemos dónde podemos cambiarlo. Sin embargo, también podemos probar los cambios en el Explorador DOM sin actualizar la aplicación, como se muestra en los pasos restantes.  
+        > Ahora que sabemos dónde se establece el color del título, también sabemos dónde podemos cambiarlo. Sin embargo, también podemos probar los cambios en el Explorador DOM sin actualizar la aplicación, como se muestra en los pasos restantes.  
   
 9. Desactive la casilla de la primera aparición de estilo de `color` , que es la que corresponde al selector `.itemspage .itemslist .item .item-overlay .item-title` . Ahora, en el simulador, verá que el color de los títulos de elemento cambia a naranja, tal como queríamos, y que el selector que modificamos en CSS, `.itemspage .itemslist .item`, ya no se reemplaza (es decir, ya no tiene el tachado de texto aplicado). A continuación se muestra la pestaña **Calculado** después de desactivar la casilla.  
   

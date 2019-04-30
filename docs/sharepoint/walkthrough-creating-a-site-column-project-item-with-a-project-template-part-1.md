@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d4dec78b368991da18c5bc0f5a673c1dca91fbfc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 34808d70a7df1bf5d030e4205de34ff3ec4d03b2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059999"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430406"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-1"></a>Tutorial: Creación de un elemento de proyecto de la columna de sitio con una plantilla de proyecto, parte 1
   Los proyectos de SharePoint son contenedores para uno o más elementos de proyecto de SharePoint. Puede extender el sistema de proyectos de SharePoint en Visual Studio si crea sus propios tipos de elemento de proyecto de SharePoint y, a continuación, los asocia a una plantilla de proyecto. En este tutorial, definirá un tipo de elemento de proyecto para crear una columna de sitio y, a continuación, creará una plantilla de proyecto que se puede usar para crear un nuevo proyecto que contenga un elemento de proyecto de columnas de sitio.
@@ -75,7 +75,7 @@ ms.locfileid: "60059999"
 4. Expanda el **Visual Basic** o **Visual C#** nodos y, a continuación, elija el **extensibilidad** nodo.
 
     > [!NOTE]
-    >  El **extensibilidad** nodo está disponible solo si instala el SDK de Visual Studio. Para obtener más información, vea la sección Requisitos previos, anteriormente en este tema.
+    > El **extensibilidad** nodo está disponible solo si instala el SDK de Visual Studio. Para obtener más información, vea la sección Requisitos previos, anteriormente en este tema.
 
 5. En la lista de plantillas de proyecto, elija **proyecto VSIX**.
 
@@ -162,7 +162,7 @@ ms.locfileid: "60059999"
 2. Crear un proyecto de SharePoint 2010 que se denomina **BaseSharePointProject**.
 
    > [!IMPORTANT]
-   >  En el **Asistente de personalización de SharePoint**, no seleccione la **implementar como solución de granja de servidores** botón de opción.
+   > En el **Asistente de personalización de SharePoint**, no seleccione la **implementar como solución de granja de servidores** botón de opción.
 
 3. Agregar un elemento de elemento vacío al proyecto y, a continuación, llame al elemento **Field1**.
 
@@ -175,7 +175,7 @@ ms.locfileid: "60059999"
 7. En el directorio que contiene el proyecto BaseSharePointProject, seleccione el archivo key.snk y, a continuación, elija el **agregar** botón.
 
    > [!NOTE]
-   >  En este tutorial, la plantilla de proyecto que se crea usa el mismo archivo key.snk para firmar cada proyecto que se crea mediante la plantilla. Para obtener información sobre cómo ampliar este ejemplo para crear un archivo key.snk diferente para cada instancia de proyecto, vea [Tutorial: Creación de un elemento de proyecto de la columna de sitio con una plantilla de proyecto, parte 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md).
+   > En este tutorial, la plantilla de proyecto que se crea usa el mismo archivo key.snk para firmar cada proyecto que se crea mediante la plantilla. Para obtener información sobre cómo ampliar este ejemplo para crear un archivo key.snk diferente para cada instancia de proyecto, vea [Tutorial: Creación de un elemento de proyecto de la columna de sitio con una plantilla de proyecto, parte 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md).
 
 8. Repita los pasos del 5 al 8 para agregar los archivos siguientes de las subcarpetas especificadas en el directorio de BaseSharePointProject:
 
@@ -654,7 +654,7 @@ ms.locfileid: "60059999"
 6. En el **tipo** elija **Microsoft.VisualStudio.ProjectTemplate**.
 
     > [!NOTE]
-    >  Este valor corresponde al elemento `ProjectTemplate` del archivo extension.vsixmanifest. Este elemento identifica la subcarpeta del paquete VSIX que contiene la plantilla de proyecto. Para obtener más información, consulte [elemento ProjectTemplate (Esquema VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393735\(v\=vs.100\)).
+    > Este valor corresponde al elemento `ProjectTemplate` del archivo extension.vsixmanifest. Este elemento identifica la subcarpeta del paquete VSIX que contiene la plantilla de proyecto. Para obtener más información, consulte [elemento ProjectTemplate (Esquema VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393735\(v\=vs.100\)).
 
 7. En el **origen** elija **un proyecto de la solución actual**.
 
@@ -667,7 +667,7 @@ ms.locfileid: "60059999"
 10. En el **tipo** elija **Microsoft.VisualStudio.MefComponent**.
 
     > [!NOTE]
-    >  Este valor corresponde al elemento `MefComponent` del archivo extension.vsixmanifest. Este elemento especifica el nombre de un ensamblado de extensión en el paquete VSIX. Para obtener más información, consulte [elemento MEFComponent (Esquema VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
+    > Este valor corresponde al elemento `MefComponent` del archivo extension.vsixmanifest. Este elemento especifica el nombre de un ensamblado de extensión en el paquete VSIX. Para obtener más información, consulte [elemento MEFComponent (Esquema VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
 
 11. En el **origen** elija **un proyecto de la solución actual**.
 
@@ -715,14 +715,14 @@ ms.locfileid: "60059999"
      Este paso especifica el sitio de SharePoint local en el equipo de desarrollo que desea usar para la depuración.
 
     > [!NOTE]
-    >  El **dirección URL del sitio** propiedad está vacía de forma predeterminada porque la plantilla de proyecto de la columna de sitio no proporciona un Asistente para la recopilación de este valor cuando se crea el proyecto. Para obtener información sobre cómo agregar un asistente que pida al desarrollador este valor y, a continuación, configura esta propiedad en el nuevo proyecto, vea [Tutorial: Creación de un elemento de proyecto de la columna de sitio con una plantilla de proyecto, parte 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md).
+    > El **dirección URL del sitio** propiedad está vacía de forma predeterminada porque la plantilla de proyecto de la columna de sitio no proporciona un Asistente para la recopilación de este valor cuando se crea el proyecto. Para obtener información sobre cómo agregar un asistente que pida al desarrollador este valor y, a continuación, configura esta propiedad en el nuevo proyecto, vea [Tutorial: Creación de un elemento de proyecto de la columna de sitio con una plantilla de proyecto, parte 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md).
 
 3. Elija la tecla **F5**.
 
      La columna de sitio se empaqueta e implementa en el sitio de SharePoint que se especifica en el **dirección URL del sitio** propiedad del proyecto. El explorador web se abre en la página predeterminada de este sitio.
 
     > [!NOTE]
-    >  Si el **depuración de scripts deshabilitada** aparece el cuadro de diálogo, elija el **Sí** botón para continuar depurando el proyecto.
+    > Si el **depuración de scripts deshabilitada** aparece el cuadro de diálogo, elija el **Sí** botón para continuar depurando el proyecto.
 
 4. En el **acciones del sitio** menú, elija **configuración del sitio**.
 

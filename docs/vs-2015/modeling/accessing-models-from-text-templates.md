@@ -11,12 +11,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1052529bb743091398b55535b231597c6609add9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9aaf89dd472435d5107e1a2b5870d1e6fc2b9631
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110497"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442880"
 ---
 # <a name="accessing-models-from-text-templates"></a>Acceso a modelos a partir de plantillas de texto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "60110497"
 Mediante el uso de plantillas de texto, puede crear archivos de informe, archivos de código fuente y otros archivos de texto que se basan en modelos de lenguaje específico de dominio. Para obtener información básica acerca de las plantillas de texto, consulte [generación de código y plantillas de texto T4](../modeling/code-generation-and-t4-text-templates.md). Las plantillas de texto funcionarán en modo experimental cuando se depura su DSL y también funcionará en un equipo en el que ha implementado el DSL.  
   
 > [!NOTE]
->  Cuando crea una solución de DSL, la plantilla de texto de ejemplo  **\*.tt** archivos se generan en el proyecto de depuración. Al cambiar los nombres de las clases de dominio, estas plantillas dejarán de funcionar. No obstante, se incluyen las directivas básicas que necesita y proporcionan ejemplos que se pueden actualizar para que coincida con su DSL.  
+> Cuando crea una solución de DSL, la plantilla de texto de ejemplo  **\*.tt** archivos se generan en el proyecto de depuración. Al cambiar los nombres de las clases de dominio, estas plantillas dejarán de funcionar. No obstante, se incluyen las directivas básicas que necesita y proporcionan ejemplos que se pueden actualizar para que coincida con su DSL.  
   
  Para obtener acceso a un modelo desde una plantilla de texto:  
   
@@ -103,7 +103,7 @@ Here is a list of elements in the model:
 ## <a name="Multiple"></a> Acceso a varios modelos desde una plantilla de texto  
   
 > [!NOTE]
->  Este método le permite leer varios modelos en la misma plantilla, pero no admite referencias de ModelBus. Para los modelos que intervinculadas por referencias de ModelBus, consulte [utilizando Visual Studio ModelBus en una plantilla de texto](../modeling/using-visual-studio-modelbus-in-a-text-template.md).  
+> Este método le permite leer varios modelos en la misma plantilla, pero no admite referencias de ModelBus. Para los modelos que intervinculadas por referencias de ModelBus, consulte [utilizando Visual Studio ModelBus en una plantilla de texto](../modeling/using-visual-studio-modelbus-in-a-text-template.md).  
   
  Si desea tener acceso a más de un modelo desde la misma plantilla de texto, debe llamar una vez el procesador de directivas personalizadas para cada modelo. Debe especificar el nombre de archivo de cada modelo en el `requires` parámetro. Debe especificar los nombres que desea usar para la clase de dominio raíz en el `provides` parámetro. Debe especificar valores diferentes para el `provides` parámetros de cada una de las llamadas de la directiva. Por ejemplo, suponga que tiene tres archivos de modelo se denomina Library.xyz, School.xyz y Work.xyz. Para acceder a ellas desde la misma plantilla de texto, debe escribir tres llamadas de directiva similares a las siguientes.  
   
@@ -114,7 +114,7 @@ Here is a list of elements in the model:
 ```  
   
 > [!NOTE]
->  Este código de ejemplo es para un idioma que se basa en la plantilla de solución de lenguaje mínimo.  
+> Este código de ejemplo es para un idioma que se basa en la plantilla de solución de lenguaje mínimo.  
   
  Para obtener acceso a los modelos en la plantilla de texto, ahora puede escribir código similar al código en el ejemplo siguiente.  
   

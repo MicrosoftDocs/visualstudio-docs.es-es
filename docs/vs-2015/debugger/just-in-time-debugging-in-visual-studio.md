@@ -16,12 +16,12 @@ caps.latest.revision: 51
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1f2d3f0bd70a4c7be82b991eb5397065fe3d4ee7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3e78e23d7e176dffef1531da1af28d318253d9d1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116178"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431443"
 ---
 # <a name="just-in-time-debugging-in-visual-studio"></a>Depuración Just-In-Time en Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -92,7 +92,7 @@ Las acciones que debe realizar cuando ve el Visual Studio Just-in-Time cuadro de
 5. Cerrar la **Editor del registro** ventana.
 
 > [!NOTE]
->  Si desea deshabilitar la depuración para una aplicación de servidor Just-In-Time y estos pasos no resuelven el problema, desactive la depuración del lado servidor en la configuración de la aplicación de IIS y vuelva a intentar.
+> Si desea deshabilitar la depuración para una aplicación de servidor Just-In-Time y estos pasos no resuelven el problema, desactive la depuración del lado servidor en la configuración de la aplicación de IIS y vuelva a intentar.
 
 #### <a name="to-enable-just-in-time-debugging-of-a-windows-form"></a>Para habilitar la depuración Just-In-Time para un Windows Form
 
@@ -140,7 +140,7 @@ static void Main(string[] args)
 ```
 
 > [!IMPORTANT]
->  Para este procedimiento para que funcione un [configuración release](../debugger/how-to-set-debug-and-release-configurations.md), deberá desactivar [solo mi código](../debugger/just-my-code.md). En Visual Studio, haga clic en **herramientas / opciones**. En el **opciones** cuadro de diálogo, seleccione **depuración**. Quitar la marca de verificación de **habilitar solo mi código**.
+> Para este procedimiento para que funcione un [configuración release](../debugger/how-to-set-debug-and-release-configurations.md), deberá desactivar [solo mi código](../debugger/just-my-code.md). En Visual Studio, haga clic en **herramientas / opciones**. En el **opciones** cuadro de diálogo, seleccione **depuración**. Quitar la marca de verificación de **habilitar solo mi código**.
 
  Compile la solución (en Visual Studio, elija **compilar o recompilar solución**). Puede elegir la depuración o la configuración de lanzamiento. Para más información sobre las configuraciones de compilación, vea [Descripción de las configuraciones de compilación](../ide/understanding-build-configurations.md).
 
@@ -157,7 +157,7 @@ static void Main(string[] args)
  Haga clic en no **cancelar**! Después de unos segundos, debería ver dos botones, **depurar** y **cerrar programa**. Haga clic en **depurar**.
 
 > [!CAUTION]
->  Si la aplicación contiene código no seguro, aparece un cuadro de diálogo con una advertencia de seguridad. Este cuadro de diálogo le permite decidir si desea continuar o no con la depuración. Antes de continuar con la depuración, decida si confía en el código. ¿Escribió el código usted mismo? ¿Confía en el codificador? Si la aplicación se ejecuta en un equipo remoto, ¿reconoce el nombre del proceso? Incluso si la aplicación se ejecuta localmente, no significa necesariamente que se pueda confiar en ella. Considere la posibilidad de código malintencionado que se ejecuta en el equipo. Si decide que el código que va a depurar es de confianza, haga clic en **depurar**. En caso contrario, haga clic en **no depurar**.
+> Si la aplicación contiene código no seguro, aparece un cuadro de diálogo con una advertencia de seguridad. Este cuadro de diálogo le permite decidir si desea continuar o no con la depuración. Antes de continuar con la depuración, decida si confía en el código. ¿Escribió el código usted mismo? ¿Confía en el codificador? Si la aplicación se ejecuta en un equipo remoto, ¿reconoce el nombre del proceso? Incluso si la aplicación se ejecuta localmente, no significa necesariamente que se pueda confiar en ella. Considere la posibilidad de código malintencionado que se ejecuta en el equipo. Si decide que el código que va a depurar es de confianza, haga clic en **depurar**. En caso contrario, haga clic en **no depurar**.
 
  El **Just In Time de Visual Studio Debugger** aparecerá la ventana:
 

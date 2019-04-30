@@ -25,12 +25,12 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: acab2df1ff39d5f245baf27642f1ab71104671a7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f816095992379748b6d1888b5df54dc5433a8306
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069788"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436966"
 ---
 # <a name="create-a-sql-database-by-using-a-designer"></a>Crear una base de datos SQL mediante un diseñador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -180,14 +180,14 @@ Puede explorar tareas básicas, como agregar tablas y columnas de definición, m
 6. Agregue datos para al menos tres pedidos.  
   
     > [!IMPORTANT]
-    >  Asegúrese de que todos los identificadores y cantidades de pedidos sean números enteros y que cada identificador de cliente coincida con el valor que especificó en la columna de la tabla Customers.  
+    > Asegúrese de que todos los identificadores y cantidades de pedidos sean números enteros y que cada identificador de cliente coincida con el valor que especificó en la columna de la tabla Customers.  
   
 7. En la barra de menús, seleccione **Archivo** > **Guardar todo**.  
   
 8. En la barra de menús, seleccione **Archivo** > **Cerrar solución**.  
   
     > [!NOTE]
-    >  Como procedimiento recomendado, puede hacer una copia de seguridad del archivo de base de datos que acaba de crear, copiándolo y luego pegando la copia en otra ubicación o dando a la copia un nombre diferente.  
+    > Como procedimiento recomendado, puede hacer una copia de seguridad del archivo de base de datos que acaba de crear, copiándolo y luego pegando la copia en otra ubicación o dando a la copia un nombre diferente.  
   
 ## <a name="next-steps"></a>Pasos siguientes  
  Ahora que tiene un archivo de base de datos local con algunos datos de ejemplo, puede completar cualquiera de los tutoriales que muestran las tareas de base de datos.

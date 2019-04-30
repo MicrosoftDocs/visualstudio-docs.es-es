@@ -19,12 +19,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ae2bb442edbeb49de25b44056263607fa4f26111
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7224dc1ddcffc203c930a3ead01c2f541af2122f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071647"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433171"
 ---
 # <a name="walkthrough-improving-ui-responsiveness-html"></a>Tutorial: Mejorar la capacidad de respuesta de la interfaz de usuario (HTML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Este tutorial le guía a través del proceso de identificar y corregir un proble
 1. En Visual Studio, cree un nuevo proyecto de JavaScript para Windows Universal. (Seleccione **Archivo / Nuevo / Proyecto**. Seleccione **JavaScript** en el panel izquierdo y seleccione **Windows**, **Windows 10**, y después **Universal** o **Windows Phone**.  
   
 2. > [!IMPORTANT]
-    >  Los resultados de diagnóstico que se muestran en este tema son para una aplicación de Windows 8.  
+    > Los resultados de diagnóstico que se muestran en este tema son para una aplicación de Windows 8.  
   
 3. Seleccione una de las plantillas de proyecto vacías del panel central, como **Aplicación vacía**.  
   

@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d030b4a59f2140b99df19e141f2d872c1e8fc394
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: a7ac9c63a8524de17541a46f4fecb9e8d9a5ff69
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616461"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63423305"
 ---
 # <a name="project-configuration-for-output"></a>Configuración del proyecto para la salida
 Cada configuración puede admitir un conjunto de procesos de compilación que generan elementos de salida, como archivos ejecutables o un recurso. Estos elementos de salida son privados para el usuario y pueden colocarse en grupos que se vinculan los tipos relacionados de salida, como archivos ejecutables (.exe, .dll o .lib) y archivos de código fuente (.idl, archivos .h).
@@ -25,7 +25,7 @@ Cada configuración puede admitir un conjunto de procesos de compilación que ge
  La construcción desarrollado implementando `IVsOutputGroup` permite que los proyectos agrupen resultados según su uso. Por ejemplo, se puede agrupar un archivo DLL con su base de datos de programa (PDB).
 
 > [!NOTE]
->  Un archivo PDB contiene información de depuración y se crea cuando se especifica la opción 'Generar información de depuración' al compilar el archivo .dll o .exe. Normalmente se genera el archivo .pdb para solo la configuración de proyecto de depuración.
+> Un archivo PDB contiene información de depuración y se crea cuando se especifica la opción 'Generar información de depuración' al compilar el archivo .dll o .exe. Normalmente se genera el archivo .pdb para solo la configuración de proyecto de depuración.
 
  El proyecto debe devolver el mismo número de grupos para cada configuración que admite, aunque el número de salidas contenida dentro de un grupo puede variar para cada configuración. Por ejemplo, Matt del proyecto DLL podría incluir mattd.dll y mattd.pdb en configuración de depuración, pero sólo incluir matt.dll en configuración de venta directa.
 
