@@ -10,12 +10,12 @@ ms.assetid: 81a58e40-7cd0-4ef4-a475-c4e1e84d6e06
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: ff021643313d267cc92d2f08afa8f41a3ce806b5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: bb8270de3635b6a9d28a6bf550b29a014d0fed9f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58999277"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432545"
 ---
 # <a name="registering-verbs-for-file-name-extensions"></a>Registro de verbos para extensiones de nombre de archivo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ La asociación de una extensión de nombre de archivo con una aplicación genera
   Siempre que sea posible, registre un verbo estándar. La opción más común es el verbo Open. Use el verbo de edición solo si hay una diferencia clara entre abrir el archivo y edite el archivo. Por ejemplo, al abrir un archivo .htm lo muestra en el explorador, mientras que la edición de un archivo .htm inicia un editor de HTML. Los verbos estándar están localizados con la configuración regional del sistema operativo.  
   
 > [!NOTE]
->  Al registrar los verbos estándar, no establezca el valor predeterminado para abrir la clave. El valor predeterminado contiene la cadena de presentación en el menú. El sistema operativo proporciona esta cadena para los verbos estándar.  
+> Al registrar los verbos estándar, no establezca el valor predeterminado para abrir la clave. El valor predeterminado contiene la cadena de presentación en el menú. El sistema operativo proporciona esta cadena para los verbos estándar.  
   
  Archivos de proyecto se deben registrar para iniciar una nueva instancia de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] cuando un usuario abre el archivo. El ejemplo siguiente muestra el registro de un verbo estándar para un [!INCLUDE[csprcs](../includes/csprcs-md.md)] proyecto.  
   
@@ -111,7 +111,7 @@ La asociación de una extensión de nombre de archivo con una aplicación genera
  El verbo predeterminado es la acción que se ejecuta cuando un usuario hace doble clic en un archivo en el Explorador de Windows. El verbo predeterminado es el verbo especificado como el valor predeterminado para HKEY_CLASSES_ROOT\\*progid*\Shell clave. Si se especifica ningún valor, el verbo predeterminado es el primer verbo especificado en HKEY_CLASSES_ROOT\\*progid*\Shell lista de claves.  
   
 > [!NOTE]
->  Si va a cambiar el verbo predeterminado para una extensión en una implementación en paralelo, considere el impacto en la instalación y desinstalación. Durante la instalación, se sobrescribe el valor predeterminado original.  
+> Si va a cambiar el verbo predeterminado para una extensión en una implementación en paralelo, considere el impacto en la instalación y desinstalación. Durante la instalación, se sobrescribe el valor predeterminado original.  
   
 ## <a name="see-also"></a>Vea también  
  [Administración de asociaciones de archivos en paralelo](../extensibility/managing-side-by-side-file-associations.md)

@@ -14,11 +14,11 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.openlocfilehash: d89dbc0b752c2b8c538ec53769c166b6edbd802f
-ms.sourcegitcommit: 1df0ae74af03bcf0244129a29fd6bd605efc9f61
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50915261"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62902899"
 ---
 1. En el equipo remoto, buscar e iniciar el **Remote Debugger** desde el **iniciar** menú. 
    

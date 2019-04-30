@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 58d5fd0bfe1c8d5f5896d365a7b0ecfdb8da25b3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 71797d3e080ad4fbbb1256914e98bc3a62f9fb01
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068228"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415511"
 ---
 # <a name="how-to-access-the-built-in-fonts-and-color-ccheme"></a>Procedimiento Obtener acceso a las fuentes integradas y ccheme de color
 El entorno de desarrollo integrado (IDE) de Visual Studio tiene un esquema de fuentes y colores que está asociado a la ventana del editor. Puede tener acceso a este esquema a través de la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> interfaz.
@@ -39,7 +39,7 @@ El entorno de desarrollo integrado (IDE) de Visual Studio tiene un esquema de fu
      Este GUID se utiliza para identificar de forma exclusiva una categoría. Se vuelve a utilizar en esta categoría especificación de colores y fuentes de forma predeterminada del IDE.
 
     > [!NOTE]
-    >  Cuando se recuperan datos de fuente y color con el <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> o de otras interfaces, los paquetes VSPackage usar este GUID para hacer referencia a información integrada.
+    > Cuando se recuperan datos de fuente y color con el <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> o de otras interfaces, los paquetes VSPackage usar este GUID para hacer referencia a información integrada.
 
 2. Nombre de la categoría debe agregarse a una tabla de cadenas dentro de los recursos de VSPackage (*.rc*) de archivos, por lo que se puede localizar según sea necesario cuando se muestra en el IDE.
 

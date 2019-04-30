@@ -9,12 +9,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d6c3410468a53b978165dfcae228b71985fcbe51
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 59259d8186803d966e79f27012e6be6c22b47dd8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117764"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414705"
 ---
 # <a name="how-to-create-a-basic-color-shader"></a>Procedimiento Crear un sombreador de color básico
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ En este documento se muestra cómo usar el Diseñador de sombras y el lenguaje D
    La ilustración siguiente muestra el gráfico de sombreador completo y una vista previa del sombreador aplicado a un cubo.  
   
 > [!NOTE]
->  En la ilustración, el color naranja se especificó para ilustrar mejor el efecto del sombreador.  
+> En la ilustración, el color naranja se especificó para ilustrar mejor el efecto del sombreador.  
   
  ![Gráfico de sombreador y su resultado en un modelo 3D](../designers/media/digit-flat-color-effect.png "Digit-Flat-Color-Effect")  
   

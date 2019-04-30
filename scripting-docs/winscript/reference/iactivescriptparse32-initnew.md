@@ -11,11 +11,11 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 ms.openlocfilehash: 685c596caa61a5cbd5042fad3a1bfb39c349c1b1
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54094697"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63009429"
 ---
 # <a name="iactivescriptparse32initnew"></a>IActiveScriptParse32::InitNew
 Inicializa el motor de scripting.  

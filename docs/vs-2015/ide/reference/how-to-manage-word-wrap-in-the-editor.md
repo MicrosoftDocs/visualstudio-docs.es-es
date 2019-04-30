@@ -13,12 +13,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 172c5b049e19700d3ce2e4ff1fe43490a2194a92
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 07dda6011b25df1cfcd4d17e46c2591f87ab7413
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088046"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437143"
 ---
 # <a name="how-to-manage-word-wrap-in-the-editor"></a>Procedimiento Administrar el ajuste en el Editor
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Puede establecer y desactivar la opción **Ajuste automático de línea**. Cuand
  Para obtener más información, vea [Cómo: Establecer opciones generales del Editor](http://msdn.microsoft.com/704e4a7b-2162-4bed-8a47-f4f6ffec98c2).  
   
 > [!NOTE]
->  Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la **Ayuda**, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la **Ayuda**, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="procedure"></a>Procedimiento  
   
@@ -49,7 +49,7 @@ Puede establecer y desactivar la opción **Ajuste automático de línea**. Cuand
 4. Seleccione la opción **Mostrar glifos visuales para ajuste de línea** si prefiere mostrar un indicador de flecha de retorno donde una línea larga se ajusta en una segunda línea. Desactive esta opción si prefiere no mostrar indicadores de flecha.  
   
     > [!NOTE]
-    >  Estas flechas de aviso no se agregan a su código: solo para fines de visualización.  
+    > Estas flechas de aviso no se agregan a su código: solo para fines de visualización.  
   
 ## <a name="see-also"></a>Vea también  
  [Personalizar el editor](../../ide/customizing-the-editor.md)   

@@ -11,18 +11,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 027dc559c33b5b8f10a4555985e8b2a5a5a416c5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 73cf7fe43dcbe15bdeedf6822c9172533e6d420b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604943"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63423070"
 ---
 # <a name="project-subtypes"></a>Subtipos de proyecto
 Subtipos de proyecto le permiten personalizar o flavor el comportamiento de los sistemas del proyecto de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Las personalizaciones incluyen guardando datos adicionales en el archivo de proyecto, agrega o filtra los elementos de la **Agregar nuevo elemento** cuadro de diálogo, controlar cómo se depura e implementados, los ensamblados y ampliando el proyecto **propiedad Páginas** cuadro de diálogo. Los paquetes VSPackage implementar subtipos de proyecto mediante agregación COM.
 
 > [!NOTE]
->  El sistema de proyectos de Visual C++ no admite subtipos de proyecto. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] usa subtipos de proyecto para implementar los proyectos de SQL Server y Smart Device.
+> El sistema de proyectos de Visual C++ no admite subtipos de proyecto. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] usa subtipos de proyecto para implementar los proyectos de SQL Server y Smart Device.
 
 ## <a name="in-this-section"></a>En esta sección
 - [Diseño de subtipos de proyecto](../../extensibility/internals/project-subtypes-design.md)

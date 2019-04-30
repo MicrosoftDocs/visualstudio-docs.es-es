@@ -13,18 +13,18 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d9bda0cc59560d90ebc0a382d858c881e7372c15
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 3df2f0c44e42cf9e2c2aa846db4b88821fd73996
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58145075"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440567"
 ---
 # <a name="idebugapplicationthread110getactivethreadrequestcount"></a>IDebugApplicationThread110::GetActiveThreadRequestCount
 Devuelve el número de solicitudes de subproceso del subproceso de PDM conmutación mecanismos que se están procesando actualmente. Normalmente, este número es 0 o 1. Sin embargo, el número puede ser mayor si una llamada de subproceso empieza a procesar pero desencadena una llamada sincrónica fuera del subproceso, o en caso contrario, suspende el subproceso y permite volver a procesar las llamadas entrantes (por ejemplo, mediante la activación de un [ IRemoteDebugApplicationEvents (interfaz)](../../winscript/reference/iremotedebugapplicationevents-interface.md) evento, que se emite en el subproceso del depurador).  
   
 > [!IMPORTANT]
->  [IDebugApplicationThread110 (interfaz)](../../winscript/reference/idebugapplicationthread110-interface.md) es implementada por PDM v11.0 y versiones posteriores. Se encuentra en activdbg100.h.  
+> [IDebugApplicationThread110 (interfaz)](../../winscript/reference/idebugapplicationthread110-interface.md) es implementada por PDM v11.0 y versiones posteriores. Se encuentra en activdbg100.h.  
   
 ## <a name="syntax"></a>Sintaxis  
   

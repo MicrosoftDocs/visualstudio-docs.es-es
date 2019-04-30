@@ -13,12 +13,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 499eeefc4b5328d1ffe021cdf28483208d162471
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MT
+ms.openlocfilehash: 3dc0c42fe5dd5bc99e806ffbc20f42aa897d4c22
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "59001943"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63423247"
 ---
 # <a name="idiasymbolgetliverangestartrelativevirtualaddress"></a>IDiaSymbol::get_liveRangeStartRelativeVirtualAddress
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ HRESULT get_liveRangeStartRelativeVirtualAddress ( 
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error. La dirección virtual relativa devuelta es el principio del intervalo en el que el símbolo es válido.  
   
 > [!NOTE]
->  Un código de error devuelto significa que el símbolo no tiene información de rango en vivo.  
+> Un código de error devuelto significa que el símbolo no tiene información de rango en vivo.  
   
 ## <a name="remarks"></a>Comentarios  
   

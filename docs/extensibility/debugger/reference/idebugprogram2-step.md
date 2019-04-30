@@ -12,18 +12,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bc54f8a01e1bd8c7a35779fdcec66bcb64d01379
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 7f841960eec9274139307f5fcc1bcaea9bb9fb8e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684278"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412864"
 ---
 # <a name="idebugprogram2step"></a>IDebugProgram2::Step
 Realiza un paso.
 
 > [!NOTE]
->  Este método está obsoleto. Use la [paso](../../../extensibility/debugger/reference/idebugprocess3-step.md) método en su lugar.
+> Este método está obsoleto. Use la [paso](../../../extensibility/debugger/reference/idebugprocess3-step.md) método en su lugar.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -63,7 +63,7 @@ int Step( 
  En caso de que no hay ninguna sincronización de subprocesos o la comunicación entre subprocesos, otros subprocesos del programa deben ejecutarse cuando un subproceso en particular es ejecución paso a paso.
 
 > [!WARNING]
->  No enviar un evento de detención o a un evento (sincrónico) inmediato [eventos](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) mientras se controla esta llamada; en caso contrario, el depurador puede dejar de responder.
+> No enviar un evento de detención o a un evento (sincrónico) inmediato [eventos](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) mientras se controla esta llamada; en caso contrario, el depurador puede dejar de responder.
 
 ## <a name="see-also"></a>Vea también
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

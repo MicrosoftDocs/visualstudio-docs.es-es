@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b5c763e18f30bec27837e248a27546df821ef33f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1b0a34505cf32e0e3fd4dc18bfeab4588856dba4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065589"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63409947"
 ---
 # <a name="attach-after-a-launch"></a>Adjuntar después de un lanzamiento
 Una vez que inicia un programa, la sesión de depuración está lista para asociar el motor de depuración (DE) a dicho programa.
@@ -28,7 +28,7 @@ Una vez que inicia un programa, la sesión de depuración está lista para asoci
 - Si tiene más sentido para configurar la comunicación entre el programa y la DE, el entorno de tiempo de ejecución crea conjuntamente la DE. Este diseño deja el SDM en un espacio de direcciones y el DE, el entorno de tiempo de ejecución y el programa juntos en otro. Este diseño es típico de una DE que se implementa con un intérprete para ejecutarse con secuencias de comandos de idiomas.
 
     > [!NOTE]
-    >  Cómo la DE se une al programa es depende de la implementación. Comunicación entre el programa y la DE es también depende de la implementación.
+    > Cómo la DE se une al programa es depende de la implementación. Comunicación entre el programa y la DE es también depende de la implementación.
 
 ## <a name="implementation"></a>Implementación
  Mediante programación, cuando el Administrador de depuración de la sesión (SDM) recibe por primera vez el [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) objeto que representa el programa se inicie, llama a la [adjuntar](../../extensibility/debugger/reference/idebugprogram2-attach.md) método y pásele un [ IDebugEventCallback2](../../extensibility/debugger/reference/idebugeventcallback2.md) objeto, que es una versión posterior se usa para pasar los eventos de depuración hasta el SDM. El `IDebugProgram2::Attach` método, a continuación, llama a la [OnAttach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) método. Para obtener más información sobre cómo el SDM recibe el `IDebugProgram2` interfaz, vea [notificación del puerto](../../extensibility/debugger/notifying-the-port.md).

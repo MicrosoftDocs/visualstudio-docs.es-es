@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d49c062540b50e442f2ac32e69ee37934c53bf2c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b29b95b9c53f18d6f97ac2455dd30aa6e26ccde4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068618"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415475"
 ---
 # <a name="how-to-implement-undo-management"></a>Procedimiento Implementar la administración de deshacer
 La interfaz principal que se usa para la administración de deshacer es <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager>, que es implementado por el entorno. Para admitir la administración de deshacer, implementar unidades de deshacer independiente (es decir, <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit>, que puede contener varios pasos individuales.
@@ -75,7 +75,7 @@ La interfaz principal que se usa para la administración de deshacer es <xref:Mi
    La `OleUndoManager` clase representa una instancia de la pila de deshacer única. Por lo tanto, hay un objeto de administrador de deshacer cada entidad de datos está realizando un seguimiento para deshacer o rehacer.
 
 > [!NOTE]
->  Mientras que el objeto de administrador de deshacer es utilizado por el editor de texto, es un componente general que no tiene proporciona compatibilidad específica del editor de texto. Si desea admitir varios niveles de deshacer o rehacer, puede utilizar este objeto para hacerlo.
+> Mientras que el objeto de administrador de deshacer es utilizado por el editor de texto, es un componente general que no tiene proporciona compatibilidad específica del editor de texto. Si desea admitir varios niveles de deshacer o rehacer, puede utilizar este objeto para hacerlo.
 
 ## <a name="see-also"></a>Vea también
 - <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager>

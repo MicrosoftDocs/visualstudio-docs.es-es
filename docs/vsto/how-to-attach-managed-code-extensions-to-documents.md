@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 18ca5e0cbf341f27454377c544e20cd2aba1388f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f56d51817491726e6011e965bfd6d68630bb0dbf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044269"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441801"
 ---
 # <a name="how-to-attach-managed-code-extensions-to-documents"></a>Procedimiento Adjuntar extensiones de código administrado a documentos
   Puede adjuntar un ensamblado de personalización a un documento existente de Microsoft Office Word o un libro de Microsoft Office Excel. El documento o libro puede estar en cualquier formato de archivo que es compatible con los proyectos de Microsoft Office y herramientas de desarrollo en Visual Studio. Para obtener más información, consulte [arquitectura de las personalizaciones de nivel de documento](../vsto/architecture-of-document-level-customizations.md).
@@ -28,7 +28,7 @@ ms.locfileid: "60044269"
  Para adjuntar una personalización a un documento de Word o Excel, use el <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.AddCustomization%2A> método de la <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> clase. Dado que la <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> clase está diseñada para ejecutarse en un equipo que no tiene instalado Microsoft Office, puede usar este método en soluciones que no están directamente relacionados con el desarrollo de Microsoft Office (por ejemplo, una consola o aplicación de Windows Forms).
 
 > [!NOTE]
->  La personalización no se cargará si el código espera que los controles que no tienen el documento especificado.
+> La personalización no se cargará si el código espera que los controles que no tienen el documento especificado.
 
  ![vínculo a vídeo](../vsto/media/playvideo.gif "vínculo al vídeo") para una demostración en vídeo relacionada, vea [¿cómo lo hago?: Adjuntar o separar un ensamblado de VSTO desde un documento de Word? ](http://go.microsoft.com/fwlink/?LinkId=136782).
 

@@ -12,12 +12,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 032e5a33c7cf70d48913739459c619b5d0302dea
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: ddd4ae3ed3a1a2a239c0efac0f25d04f589f8fa5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795517"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437539"
 ---
 # <a name="designing-classes-and-types-class-designer"></a>Diseñar clases y tipos (Diseñador de clases)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,14 +25,14 @@ ms.locfileid: "54795517"
 Con el **Diseñador de clases**, no solo puede visualizar clases y tipos, sino diseñarlos. En los temas siguientes se describe cómo hacerlo.  
   
 > [!NOTE]
->  Cuando trabaje con el Diseñador de clases, debería revisar el código que emite antes de ejecutarlo a fin de asegurarse de que es adecuado para el contexto de seguridad.  
+> Cuando trabaje con el Diseñador de clases, debería revisar el código que emite antes de ejecutarlo a fin de asegurarse de que es adecuado para el contexto de seguridad.  
   
 ## <a name="in-this-section"></a>En esta sección  
  [Cómo: Crear tipos con el Diseñador de clases](../ide/how-to-create-types-by-using-class-designer.md)  
   
  Describe cómo usar el diagrama de clases para crear un tipo.  
   
- [Cómo: Crear la herencia entre tipos (Diseñador de clases)](../ide/how-to-create-inheritance-between-types-class-designer.md)  
+ [Cómo: Crear la herencia entre tipos en el Diseñador de clases](../ide/how-to-create-inheritance-between-types-class-designer.md)  
   
  Explica cómo definir una relación de herencia entre tipos.  
   

@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 87bf42ccb44c170321f36a9fe2fa7f44e274dcfe
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 597d0a29e153659359d3a6591970750bfd4de770
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099668"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63405742"
 ---
 # <a name="walkthrough-create-a-custom-installer-for-a-clickonce-application"></a>Tutorial: Crear a un instalador personalizado para una aplicación ClickOnce
 Cualquier aplicación ClickOnce se basa en un *.exe* archivo se puede instalar en modo silencioso y actualizado mediante un instalador personalizado. Un instalador personalizado puede implementar la experiencia de usuario personalizada durante la instalación, incluidos los cuadros de diálogo personalizados para las operaciones de mantenimiento y seguridad. Para realizar operaciones de instalación, el instalador personalizado utiliza la <xref:System.Deployment.Application.InPlaceHostingManager> clase. Este tutorial muestra cómo crear a un instalador personalizado que instala silenciosamente una aplicación ClickOnce.
@@ -53,7 +53,7 @@ Cualquier aplicación ClickOnce se basa en un *.exe* archivo se puede instalar e
      Estos métodos llaman a <xref:System.Deployment.Application.InPlaceHostingManager> métodos para descargar el manifiesto de implementación, validar los permisos adecuados, pedir al usuario permiso para instalar y, a continuación, descargue e instale la aplicación en la memoria caché de ClickOnce. Un instalador personalizado puede especificar que una aplicación ClickOnce es de confianza previamente, o puede diferir la decisión de confianza para el <xref:System.Deployment.Application.InPlaceHostingManager.AssertApplicationRequirements%2A> llamada al método. Este código previamente confía en la aplicación.
 
     > [!NOTE]
-    >  Los permisos asignados previamente confiando en no pueden superar los permisos del código de instalador personalizado.
+    > Los permisos asignados previamente confiando en no pueden superar los permisos del código de instalador personalizado.
 
      [!code-vb[System.Deployment.Application.InPlaceHostingManager#1](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-installer-for-a-clickonce-application_1.vb)]
      [!code-csharp[System.Deployment.Application.InPlaceHostingManager#1](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-installer-for-a-clickonce-application_1.cs)]

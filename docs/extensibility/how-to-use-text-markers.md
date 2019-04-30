@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7575368a39aa7b6306336883327e2f7b9cafa8a8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4d87a14143bb73e3bd370a9315cea9250be07df3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109717"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415376"
 ---
 # <a name="how-to-use-text-markers"></a>Procedimiento Utilizar marcadores de texto
 Se pueden aplicar los marcadores de texto para editar un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> objeto.
@@ -27,12 +27,12 @@ Se pueden aplicar los marcadores de texto para editar un <xref:Microsoft.VisualS
 1. Obtener una instancia de la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager> clase.
 
     > [!NOTE]
-    >  El editor básico aplica automáticamente los marcadores de texto estándar a cualquier documento que está editando, y no debería ser necesario aplicar de forma explícita los marcadores de texto estándar.
+    > El editor básico aplica automáticamente los marcadores de texto estándar a cualquier documento que está editando, y no debería ser necesario aplicar de forma explícita los marcadores de texto estándar.
 
 2. Obtener un identificador de tipo de marcador de los marcadores están interesados en mediante una llamada a la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager.GetRegisteredMarkerTypeID%2A> método con el `GUID` del marcador de texto que desea trabajar con.
 
     > [!NOTE]
-    >  No utilice el `GUID` de VSPackage o del servicio que proporciona el marcador de texto.
+    > No utilice el `GUID` de VSPackage o del servicio que proporciona el marcador de texto.
 
 3. Use el identificador de tipo de marcador obtenido mediante una llamada a la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager.GetRegisteredMarkerTypeID%2A> método como parámetro al llamar a la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines.CreateLineMarker%2A> método o la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream.CreateStreamMarker%2A> método para aplicar un marcador de texto a una región determinada de texto.
 

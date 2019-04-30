@@ -13,18 +13,18 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dc6e892c00a2d86e784857f08772550897e1ec4e
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: dccd9210908922951c20378868c33b3389cbed4f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58157191"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432248"
 ---
 # <a name="idebugstackframesnifferex-interface"></a>IDebugStackFrameSnifferEx (Interfaz)
 Proporciona una manera de enumerar los marcos de pila lógicos conocidos por un componente. Motores de script normalmente implementan esta interfaz. El Administrador de depuración de proceso utiliza esta interfaz para buscar todos los marcos de pila asociada con un subproceso determinado.  
   
 > [!NOTE]
->  Esta interfaz se llama desde dentro del subproceso de interés. La implementación de interfaz debe identificar el subproceso actual y devolver un enumerador correspondiente.  
+> Esta interfaz se llama desde dentro del subproceso de interés. La implementación de interfaz debe identificar el subproceso actual y devolver un enumerador correspondiente.  
   
  Además de los métodos heredados de `IDebugStackFrameSniffer`, el `IDebugStackFrameSnifferEx` interfaz expone los métodos siguientes.  
   

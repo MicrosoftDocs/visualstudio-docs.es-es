@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 5ed07ce5ed48abfb377dde5fc4d5dc128d881b4a
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58151354"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63009203"
 ---
 # <a name="iactivescriptparseprocedure"></a>IActiveScriptParseProcedure
 Si el motor de scripts de Windows permite que el texto del código fuente para los procedimientos que se agregarán a la secuencia de comandos, implementa el `IActiveScriptParseProcedure` interfaz. Para los lenguajes de scripting interpretados que no tienen ningún entorno de creación independiente, como VBScript, esto proporciona un mecanismo alternativo (distinto de `IActiveScriptParse` o `IPersist`*) para agregar los procedimientos de script al espacio de nombres.  

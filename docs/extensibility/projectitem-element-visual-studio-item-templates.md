@@ -14,18 +14,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b1d09982b721e720301493fd062056cbf8d6cf8a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 0a853deb99314711917c9db549bc28dc447e3a32
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56687983"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434819"
 ---
 # <a name="projectitem-element-visual-studio-item-templates"></a>ProjectItem (elemento) (plantillas de elemento de Visual Studio)
 Especifica un archivo que se incluye en la plantilla de elemento.
 
 > [!NOTE]
->  El `ProjectItem` elemento acepta atributos diferentes dependiendo de si la plantilla es para un proyecto o un elemento. Este tema se explica el `ProjectItem` (elemento) para el elemento. Para obtener una explicación de la `ProjectItem` (elemento) para las plantillas de proyecto, vea [ProjectItem (elemento) (plantillas de proyecto de Visual Studio)](../extensibility/projectitem-element-visual-studio-project-templates.md).
+> El `ProjectItem` elemento acepta atributos diferentes dependiendo de si la plantilla es para un proyecto o un elemento. Este tema se explica el `ProjectItem` (elemento) para el elemento. Para obtener una explicación de la `ProjectItem` (elemento) para las plantillas de proyecto, vea [ProjectItem (elemento) (plantillas de proyecto de Visual Studio)](../extensibility/projectitem-element-visual-studio-project-templates.md).
 
  \<VSTemplate> \<TemplateContent> \<ProjectItem>
 

@@ -10,12 +10,12 @@ ms.assetid: 148b1efc-ca07-4d8e-bdfc-c723a760c620
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 2426ba49a3ef0035adc04b5b3267bedc9c51b366
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 6e81a95cffebc9e26821b9cc6157627100343452
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58986618"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63383364"
 ---
 # <a name="debug-engine"></a>Motor de depuración
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,13 +25,13 @@ Un motor de depuración (DE) funciona con el sistema operativo o intérprete par
  Por ejemplo, common language runtime (CLR) proporciona mecanismos para supervisar un programa en ejecución mediante las interfaces de ICorDebugXXX. A DE compatible con CLR usa las interfaces de ICorDebugXXX adecuadas para realizar un seguimiento de un programa de código administrado que se está depurando. Se comunica a continuación, los cambios de estado para el Administrador de sesión de depuración (SDM), que reenvía dicha información a la [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE.  
   
 > [!NOTE]
->  Un motor de depuración tiene como destino un tiempo de ejecución específico, es decir, el sistema en el que el programa que se está depurando se ejecuta. CLR es el tiempo de ejecución para código administrado y el tiempo de ejecución de Win32 es para aplicaciones nativas de Windows. Si el idioma que cree puede tener como destino uno de estos dos tiempos de ejecución, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ya suministra los motores de depuración necesarias. Lo único que debe implementar es un evaluador de expresiones.  
+> Un motor de depuración tiene como destino un tiempo de ejecución específico, es decir, el sistema en el que el programa que se está depurando se ejecuta. CLR es el tiempo de ejecución para código administrado y el tiempo de ejecución de Win32 es para aplicaciones nativas de Windows. Si el idioma que cree puede tener como destino uno de estos dos tiempos de ejecución, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ya suministra los motores de depuración necesarias. Lo único que debe implementar es un evaluador de expresiones.  
   
 ## <a name="debug-engine-operation"></a>Operación del motor de depuración  
  Los servicios de supervisión se implementan a través de las interfaces DE y pueden hacer que el paquete de depuración en la transición entre distintos modos de funcionamiento. Para obtener más información, consulte [modos operativos](../../extensibility/debugger/operational-modes.md). Normalmente hay solo una implementación DE cada entorno de tiempo de ejecución.  
   
 > [!NOTE]
->  Aunque hay otras implementaciones DE para Transact-SQL y [!INCLUDE[jsprjscript](../../includes/jsprjscript-md.md)], VBScript y [!INCLUDE[jsprjscript](../../includes/jsprjscript-md.md)] comparten una única DE.  
+> Aunque hay otras implementaciones DE para Transact-SQL y [!INCLUDE[jsprjscript](../../includes/jsprjscript-md.md)], VBScript y [!INCLUDE[jsprjscript](../../includes/jsprjscript-md.md)] comparten una única DE.  
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] depuración permite depurar motores para ejecutar de dos maneras: ya sea en el mismo proceso que la [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] de shell o en el mismo proceso que el programa de destino que se está depurando. La segunda forma normalmente se produce cuando el proceso que se está depurando es realmente un script que se ejecuta en un intérprete y el motor de depuración debe tener un conocimiento profundo del intérprete para supervisar la secuencia de comandos. Tenga en cuenta que en este caso, el intérprete es realmente un tiempo de ejecución; motores de depuración son para las implementaciones en tiempo de ejecución específica. Además, se puede dividir la implementación de un único DE a través de límites de proceso y máquinas (por ejemplo, depuración remota).  
   

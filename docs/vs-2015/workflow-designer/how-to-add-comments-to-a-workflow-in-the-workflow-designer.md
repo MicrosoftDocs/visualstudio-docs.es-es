@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: steved0x
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f826168d3b198090ba58f409f096b4b12c760c70
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 507bb70539019646f57f0aa9267573429d3fa202
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059674"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433545"
 ---
 # <a name="how-to-add-comments-to-a-workflow-in-the-workflow-designer"></a>Procedimiento Agregar comentarios a un flujo de trabajo en el Diseñador de flujo de trabajo
 Para facilitar la creación de flujos de trabajo mayores y más complicados, [!INCLUDE[net_v45](../includes/net-v45-md.md)] permite al desarrollador agregar anotaciones a los siguientes tipos de elemento en el diseñador:  
@@ -35,7 +35,7 @@ Para facilitar la creación de flujos de trabajo mayores y más complicados, [!I
 - <xref:System.Activities.Argument>  
   
 > [!IMPORTANT]
->  El contenido de una anotación se guarda como texto sin formato en el archivo XAML asociado al flujo de trabajo y podrían leerlo otras personas. Tenga cuidado al especificar información confidencial en una anotación.  
+> El contenido de una anotación se guarda como texto sin formato en el archivo XAML asociado al flujo de trabajo y podrían leerlo otras personas. Tenga cuidado al especificar información confidencial en una anotación.  
   
 ### <a name="adding-an-annotation-to-an-activity-in-the-designer"></a>Agregar una anotación a una actividad en el diseñador  
   

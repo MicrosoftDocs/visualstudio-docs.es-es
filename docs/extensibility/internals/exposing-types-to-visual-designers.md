@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 395c45b19559833549c9613278f1a4ddbb06f30a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ffd060ca442d0979c76781ae4467b28af69a42b3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104075"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415205"
 ---
 # <a name="expose-types-to-visual-designers"></a>Exponer tipos a diseñadores visuales
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] debe tener acceso a las definiciones de clase y tipo en tiempo de diseño para mostrar un diseñador visual. Las clases se cargan desde un conjunto predefinido de ensamblados que incluyen el conjunto completo de dependencias del proyecto actual (las referencias y sus dependencias). También puede ser necesario para los diseñadores visuales para tener acceso a clases y tipos que se definen en los archivos generados por herramientas personalizadas.
@@ -27,7 +27,7 @@ ms.locfileid: "60104075"
  El sistema del proyecto proporciona compatibilidad completa para el seguimiento de cambios en el archivo de salida de una herramienta personalizada, siempre que estos cambios son el resultado de ejecutar la herramienta personalizada. Cada vez que se ejecuta la herramienta personalizada, se genera un nuevo archivo PE temporal y se envían las notificaciones adecuadas a los diseñadores.
 
 > [!NOTE]
->  Como archivo ejecutable de generación de programas temporales se realiza en segundo plano, errores no se notifican al usuario si se produce un error en la compilación.
+> Como archivo ejecutable de generación de programas temporales se realiza en segundo plano, errores no se notifican al usuario si se produce un error en la compilación.
 
  Herramientas personalizadas para aprovechan las ventajas de soporte técnico de PE temporal deben seguir las reglas siguientes:
 

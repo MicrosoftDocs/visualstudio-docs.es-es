@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c2498029b5570a1576f62bcf042a7b87f856f3de
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 269ecdb67fe58a5ad2aff6af63ba6ea45647811a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076659"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412615"
 ---
 # <a name="how-to-programmatically-group-rows-in-a-worksheet"></a>Procedimiento Agrupar filas en una hoja de cálculo mediante programación
   Puede agrupar uno o más filas completas. Para crear un grupo en una hoja de cálculo, use un <xref:Microsoft.Office.Tools.Excel.NamedRange> control o un objeto nativo de rango de Excel.
@@ -43,7 +43,7 @@ ms.locfileid: "60076659"
      [!code-vb[Trin_VstcoreExcelAutomation#32](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#32)]
 
     > [!NOTE]
-    >  Para desagrupar filas, llame a la <xref:Microsoft.Office.Tools.Excel.NamedRange.Ungroup%2A> método.
+    > Para desagrupar filas, llame a la <xref:Microsoft.Office.Tools.Excel.NamedRange.Ungroup%2A> método.
 
 ## <a name="use-native-excel-ranges"></a>Utilice los rangos de Excel nativos
  El código supone que tiene tres rangos de Excel denominados `data2001`, `data2002`, y `dataAll` en una hoja de cálculo.
@@ -56,7 +56,7 @@ ms.locfileid: "60076659"
      [!code-vb[Trin_VstcoreExcelAutomation#33](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#33)]
 
     > [!NOTE]
-    >  Para desagrupar filas, llame a la <xref:Microsoft.Office.Interop.Excel.Range.Ungroup%2A> método.
+    > Para desagrupar filas, llame a la <xref:Microsoft.Office.Interop.Excel.Range.Ungroup%2A> método.
 
 ## <a name="see-also"></a>Vea también
 - [Trabajar con hojas de cálculo](../vsto/working-with-worksheets.md)

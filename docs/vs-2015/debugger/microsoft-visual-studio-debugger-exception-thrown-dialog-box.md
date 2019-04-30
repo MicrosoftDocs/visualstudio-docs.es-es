@@ -21,12 +21,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d0968c5ee67df10bad99ae31a3f0d812251ad818
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: c3fec8fd6bc00199fc2a0d5193d7f7534acca754
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58999415"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63383936"
 ---
 # <a name="microsoft-visual-studio-debugger-exception-thrown-dialog-box"></a>Depurador de Microsoft Visual Studio: se inició una excepción (cuadro de diálogo)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Se ha producido una excepción en el programa. Este cuadro de diálogo informa s
  Permite que continúe la ejecución y ofrece al controlador de excepciones una oportunidad para controlar la excepción. Esta opción no está disponible para algunos tipos de excepciones. **Continuar** permitirá que la aplicación siga adelante. En una aplicación nativa, se volverá a producir la excepción. En una aplicación administrada, hará que el programa termine o que una aplicación host controle la excepción.  
   
 > [!NOTE]
->  No es posible continuar después de una excepción no controlada en el código administrado. Si elige **Continuar** después de una excepción no controlada en código administrado, la depuración se detendrá.  
+> No es posible continuar después de una excepción no controlada en el código administrado. Si elige **Continuar** después de una excepción no controlada en código administrado, la depuración se detendrá.  
   
  **Ignorar**  
  Permite que la ejecución continúe sin invocar al controlador de excepciones. Puesto que no se invoca al controlador de excepciones, puede provocar otras consecuencias, tales como errores y excepciones adicionales. Esta opción no está disponible para algunos tipos de excepciones.  

@@ -13,18 +13,18 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1bac0c15f31f12ae48f6669bf9a0853550f8c191
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 72f545f5a48fc7b8aa3f9250b13a62ba659e94bc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58150652"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436057"
 ---
 # <a name="iactivescripterrordebug110-interface"></a>IActiveScriptErrorDebug110 (Interfaz)
 Agrega funcionalidad a la [IActiveScriptDebug (interfaz)](../../winscript/reference/iactivescriptdebug-interface.md). Esta interfaz se implementa mediante el motor de JavaScript para determinar por qué se ha producido un evento BREAKREASON_ERROR.  
   
 > [!IMPORTANT]
->  Esta interfaz se implementa mediante PDM v11.0 y versiones posteriores. Se encuentra en activdbg100.h.  
+> Esta interfaz se implementa mediante PDM v11.0 y versiones posteriores. Se encuentra en activdbg100.h.  
   
 ## <a name="methods"></a>Métodos  
  La interfaz `IActiveScriptErrorDebug110` expone los métodos siguientes.  

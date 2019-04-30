@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dcff0d559894e8d4ba322e4e8ebab71000a3809e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 45a65259c88eb9e8e946aa226eecc7cffa053552
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083561"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415604"
 ---
 # <a name="send-the-required-events"></a>Enviar los eventos necesarios
 Utilice este procedimiento para enviar los eventos necesarios.
@@ -34,7 +34,7 @@ Utilice este procedimiento para enviar los eventos necesarios.
 5. Si se inicia la aplicación que se desea depurar, envíe un [IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md) objeto event para el SDM cuando la primera instrucción de código en la arquitectura en tiempo de ejecución que se va a ejecutar. Este evento siempre es un evento de detención. Cuando a la sesión de depuración, el IDE se detiene en este evento.
 
 > [!NOTE]
->  Muchos lenguajes usan inicializadores globales o funciones externas precompiladas (desde la biblioteca de CRT o _Main) al principio de su código. Si el idioma del programa que está depurando contiene cualquiera de estos tipos de elementos antes del punto de entrada inicial, este código se ejecuta y se envía el evento de punto de entrada cuando el usuario punto de entrada, tales como **principal** o `WinMain`, es se alcanzó.
+> Muchos lenguajes usan inicializadores globales o funciones externas precompiladas (desde la biblioteca de CRT o _Main) al principio de su código. Si el idioma del programa que está depurando contiene cualquiera de estos tipos de elementos antes del punto de entrada inicial, este código se ejecuta y se envía el evento de punto de entrada cuando el usuario punto de entrada, tales como **principal** o `WinMain`, es se alcanzó.
 
 ## <a name="see-also"></a>Vea también
 - [Habilitación de un programa que se desea depurar](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)

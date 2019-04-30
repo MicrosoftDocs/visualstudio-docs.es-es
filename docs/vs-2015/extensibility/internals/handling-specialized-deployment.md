@@ -11,12 +11,12 @@ ms.assetid: de068b6a-e806-45f0-9dec-2458fbb486f7
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3c69c7732079b5cb85932d6d71cd797166b744d4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: bfd5d4d1a5a94662c2fe3fb9d406cc098014f6e6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054812"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436292"
 ---
 # <a name="handling-specialized-deployment"></a>Control de implementación especializada
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -291,7 +291,7 @@ Una implementación es una operación opcional para los proyectos. Un proyecto W
     ```  
   
 > [!NOTE]
->  Todos los ejemplos de código proporcionados en este tema forman parte de un ejemplo más extenso, [muestras de VSSDK](../../misc/vssdk-samples.md).  
+> Todos los ejemplos de código proporcionados en este tema forman parte de un ejemplo más extenso, [muestras de VSSDK](../../misc/vssdk-samples.md).  
   
 ## <a name="see-also"></a>Vea también  
  [Subtipos de proyecto](../../extensibility/internals/project-subtypes.md)

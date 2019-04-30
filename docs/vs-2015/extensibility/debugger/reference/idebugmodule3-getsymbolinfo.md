@@ -13,12 +13,12 @@ ms.assetid: dda5e8e1-6878-4aa9-9ee4-e7d0dcc11210
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a500b84f04f5f9dce37515edae71fda509a63bbb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 48dd08b8ef1a8b32497d03dc7989b32a22ee5a9c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58988644"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426355"
 ---
 # <a name="idebugmodule3getsymbolinfo"></a>IDebugModule3::GetSymbolInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ int GetSymbolInfo(
  Si el método se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
   
 > [!NOTE]
->  La cadena devuelta (en el `MODULE_SYMBOL_SEARCH_INFO` estructura) pueden estar vacíos aunque `S_OK` se devuelve. En este caso, no hubo ninguna información de búsqueda que devolver.  
+> La cadena devuelta (en el `MODULE_SYMBOL_SEARCH_INFO` estructura) pueden estar vacíos aunque `S_OK` se devuelve. En este caso, no hubo ninguna información de búsqueda que devolver.  
   
 ## <a name="remarks"></a>Comentarios  
  Si el `bstrVerboseSearchInfo` campo de la `MODULE_SYMBOL_SEARCH_INFO` estructura no está vacía y, después, contiene una lista de rutas de acceso que buscará y los resultados de la búsqueda. La lista está formateada con una ruta de acceso, seguido de puntos suspensivos ("..."), seguidos por el resultado. Si hay más de un par de resultados de la ruta de acceso, cada par se separa mediante un par de "\r\n" (carro retorno/avance de línea). El patrón tiene este aspecto:  
@@ -66,7 +66,7 @@ int GetSymbolInfo(
  En este ejemplo, este método devuelve tres rutas de acceso con tres resultados diferentes. Cada línea se termina con un par de retorno de carro/avance de línea. La salida de ejemplo sólo imprime los resultados de búsqueda como una sola cadena.  
   
 > [!NOTE]
->  Un resultado de estado es todo lo que sigue inmediatamente "..." hasta el final de la línea.  
+> Un resultado de estado es todo lo que sigue inmediatamente "..." hasta el final de la línea.  
   
 ```cpp#  
 void ShowSymbolSearchResults(IDebugModule3 *pIDebugModule3)  

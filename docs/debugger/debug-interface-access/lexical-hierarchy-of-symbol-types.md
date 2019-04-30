@@ -1,5 +1,5 @@
 ---
-title: Jerarquía léxica de tipos de símbolos | Microsoft Docs
+title: Jerarquía léxica de tipos de símbolos | Documentos de Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a92f3f8f5174717b3fe3e992706a0f16478f99df
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: f4b2e6fc0b24cc96f617e7b78c6bdcc59ddc5c0d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612808"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63399383"
 ---
 # <a name="lexical-hierarchy-of-symbol-types"></a>Jerarquía léxica de tipos de símbolos
 En la tabla siguiente se muestra los tipos de símbolos en la jerarquía de léxica.
@@ -43,7 +43,7 @@ En la tabla siguiente se muestra los tipos de símbolos en la jerarquía de léx
 |[UsingNameSpace](../../debugger/debug-interface-access/usingnamespace.md)|Especifica un `namespace`identificador.|
 
 > [!NOTE]
->  Propiedades de símbolos adicionales pueden estar disponibles según el tipo de símbolo. Estas propiedades se muestran en los temas individuales de símbolos.
+> Propiedades de símbolos adicionales pueden estar disponibles según el tipo de símbolo. Estas propiedades se muestran en los temas individuales de símbolos.
 
 ## <a name="see-also"></a>Vea también
 - [Jerarquía de clases de tipos de símbolos](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)

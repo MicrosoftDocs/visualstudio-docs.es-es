@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b989fc18ae14790b001b7eca9b403a65c0dfa9b9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 8ade5e9ac188cd6c1b721ed276e0c4e2aff71f32
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56716693"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434730"
 ---
 # <a name="restrictions-on-string-lengths"></a>Restricciones en las longitudes de cadena
 La API de complemento de Control de origen limita las longitudes de cadenas usadas en distintas funciones.
@@ -30,7 +30,7 @@ La API de complemento de Control de origen limita las longitudes de cadenas usad
 |`SCC_PRJPATH_LEN`|300|
 
 > [!NOTE]
->  La longitud no incluye el carácter final `null`. Otras constantes con un sufijo "_Tamaño" en lugar de "_LEN" incluir espacio para la terminación `null`.
+> La longitud no incluye el carácter final `null`. Otras constantes con un sufijo "_Tamaño" en lugar de "_LEN" incluir espacio para la terminación `null`.
 
 |Constante|Valor|
 |--------------|-----------|

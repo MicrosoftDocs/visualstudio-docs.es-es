@@ -15,12 +15,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8b5dc42932334b54bb46664da14af7df8dcfe131
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: bf1fd84d884068d11d15d614f5e281577bd3ce55
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050791"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433570"
 ---
 # <a name="how-to-create-a-policyactivity-rule-set-legacy"></a>Procedimiento Crear un conjunto de reglas de PolicyActivity (heredado)
 En este tema se describe cómo crear un conjunto de reglas de actividades de directiva mediante [!INCLUDE[wfd1](../includes/wfd1-md.md)] heredado que tiene como destino [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -28,7 +28,7 @@ En este tema se describe cómo crear un conjunto de reglas de actividades de dir
  Una vez que haya arrastrado un **directiva** elemento de la actividad desde la **cuadro de herramientas** a la superficie de diseño de flujo de trabajo, deseará seleccionar una regla existente o cree un nuevo conjunto de reglas para la [PolicyActivity ](http://go.microsoft.com/fwlink?LinkID=65019) actividad. Seleccione una regla existente establecida mediante el uso de la [seleccione Establecer cuadro de diálogo regla (heredado)](../workflow-designer/select-rule-set-dialog-box-legacy.md) y crear conjuntos de reglas mediante el [cuadro de diálogo de Editor de conjunto de reglas (heredado)](../workflow-designer/rule-set-editor-dialog-box-legacy.md).  
   
 > [!NOTE]
->  Puede abrir el [cuadro de diálogo de Editor de conjunto de reglas (heredado)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) cuadro de diálogo directamente haciendo doble clic en un [PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019) actividad que se encuentra en la superficie de diseño de flujo de trabajo.  
+> Puede abrir el [cuadro de diálogo de Editor de conjunto de reglas (heredado)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) cuadro de diálogo directamente haciendo doble clic en un [PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019) actividad que se encuentra en la superficie de diseño de flujo de trabajo.  
   
 ### <a name="to-select-or-create-a-rule-set-for-a-policyactivity-activity"></a>Para seleccionar o crear un conjunto de reglas para una actividad PolicyActivity  
   

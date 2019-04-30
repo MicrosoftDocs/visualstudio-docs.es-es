@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1c21b3e03eba03503c769e07ca2a2d90c24c59dc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3780558efae860ca54739a139bdffd04494a73b5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045232"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411373"
 ---
 # <a name="attach-to-the-program"></a>Adjunte al programa
 Después de haber registrado sus programas con el puerto adecuado, debe asociar al depurador al programa que desea depurar.
@@ -50,12 +50,12 @@ Después de haber registrado sus programas con el puerto adecuado, debe asociar 
      Esto devuelve un `GUID` que se usa para identificar el programa. El `GUID` deben almacenarse en el objeto que representa la variable local del programa a la DE y se debe devolver cuando la `IDebugProgram2::GetProgramId` se llama al método en el `IDebugProgram2` interfaz.
 
     > [!NOTE]
-    >  Si implementa el `IDebugProgramNodeAttach2` interfaz, el programa `GUID` se pasa a la `IDebugProgramNodeAttach2::OnAttach` método. Esto `GUID` se usa para el programa `GUID` devuelto por la `IDebugProgram2::GetProgramId` método.
+    > Si implementa el `IDebugProgramNodeAttach2` interfaz, el programa `GUID` se pasa a la `IDebugProgramNodeAttach2::OnAttach` método. Esto `GUID` se usa para el programa `GUID` devuelto por la `IDebugProgram2::GetProgramId` método.
 
 3. Enviar una [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) objeto de evento para notificar el SDM que local `IDebugProgram2` objeto se creó para representar el programa a la DE. Para obtener más información, consulte [enviar eventos](../../extensibility/debugger/sending-events.md).
 
     > [!NOTE]
-    >  Esto no es el mismo `IDebugProgram2` objeto que se pasó a la `IDebugEngine2::Attach` método. Anteriormente pasado `IDebugProgram2` objeto es reconocido por el puerto solo y es un objeto independiente.
+    > Esto no es el mismo `IDebugProgram2` objeto que se pasó a la `IDebugEngine2::Attach` método. Anteriormente pasado `IDebugProgram2` objeto es reconocido por el puerto solo y es un objeto independiente.
 
 ## <a name="see-also"></a>Vea también
 - [Adjunto basado en Inicio](../../extensibility/debugger/launch-based-attachment.md)

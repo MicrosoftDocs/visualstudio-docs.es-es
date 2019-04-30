@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 25768f44ee51ee94d456d0652ab7575def3a259d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4cd3c17a9e771ad9a1aee7526f24e3a8282f208d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057573"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443100"
 ---
 # <a name="how-to-localize-aspx-markup"></a>Procedimiento Localizar el marcado ASPX
   [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] páginas (.aspx) suelen usan los valores de cadena codificados de forma rígida. Para localizar estas cadenas, reemplácelas por expresiones que hacen referencia a los recursos localizados.
@@ -36,7 +36,7 @@ ms.locfileid: "60057573"
     2. Para agregar un archivo de recursos de **el Explorador de soluciones**, abra el menú contextual de un elemento de proyecto de SharePoint y, a continuación, elija **agregar** > **nuevo elemento**. Bajo el **Visual Basic** o **Visual C#** nodo, elija el **archivo de recursos** plantilla.
 
     > [!NOTE]
-    >  No olvide agregar los archivos de recursos a un elemento de proyecto de SharePoint para habilitar la propiedad de tipo de implementación. Esta propiedad es necesaria más adelante en este procedimiento. Si la solución no tiene un elemento de proyecto de SharePoint, puede agregar un proyecto de SharePoint vacío y su valor predeterminado de quitar *Elements.xml* archivo.
+    > No olvide agregar los archivos de recursos a un elemento de proyecto de SharePoint para habilitar la propiedad de tipo de implementación. Esta propiedad es necesaria más adelante en este procedimiento. Si la solución no tiene un elemento de proyecto de SharePoint, puede agregar un proyecto de SharePoint vacío y su valor predeterminado de quitar *Elements.xml* archivo.
 
 2. Asigne el archivo de recursos de idioma predeterminado un nombre de su elección y anéxelo con un *.resx* extensión, por ejemplo, MyAppResources.resx. Use el mismo nombre base para cada archivo de recursos localizado, pero agregue la referencia cultural [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)]. Por ejemplo, de recursos localizado en alemán nombre *MyAppResources.de-DE.resx*.
 

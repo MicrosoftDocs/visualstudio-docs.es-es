@@ -12,12 +12,12 @@ ms.assetid: 26c9ba92-e3b9-4dd2-bd5e-76b17745e308
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f80636e8dd16d372ceaf3d6032e861738d97b46c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 81279e0fdb0df6600686adc57bb1c5489e8e7aab
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58997626"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432454"
 ---
 # <a name="sccdirdiff-function"></a>SccDirDiff (Función)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,7 +80,7 @@ SCCRTN SccDirDiff(
 |SCC_DIFF_QD_TIME|Si compatibles con el complemento, en modo silencioso compara el directorio a través de su marca de tiempo o, si no se admite, recurre a SCC_DIFF_QD_CHECKSUM o SCC_DIFF_QD_CONTENTS.|  
   
 > [!NOTE]
->  Esta función utiliza los mismos marcadores de comando como el [SccDiff](../extensibility/sccdiff-function.md). Sin embargo, puede elegir un complemento de control de origen no admite la operación de "diff-rápido" para los directorios.  
+> Esta función utiliza los mismos marcadores de comando como el [SccDiff](../extensibility/sccdiff-function.md). Sin embargo, puede elegir un complemento de control de origen no admite la operación de "diff-rápido" para los directorios.  
   
 ## <a name="see-also"></a>Vea también  
  [Funciones de API de complemento de control de código fuente](../extensibility/source-control-plug-in-api-functions.md)

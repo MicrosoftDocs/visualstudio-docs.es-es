@@ -12,12 +12,12 @@ ms.assetid: ccf9d83f-c7f3-49c7-a31f-e1f22bec004c
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f1cd8e7e85b9753c3742044ae2a557cdf4637214
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b01dd370fe5e3d7a5207363c5ab7ec4f2a0254c5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084887"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388394"
 ---
 # <a name="projecttype-element-visual-studio-templates"></a>ProjectType (Elemento, Plantillas de Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "60084887"
 Clasifica la plantilla de proyecto para que aparezca en el grupo especificado en el **nuevo proyecto** o **Agregar nuevo elemento** cuadro de diálogo.  
   
 > [!WARNING]
->  Se admiten las plantillas de proyecto de C++ a partir de Visual Studio 2012. No se admiten para C++ en Visual Studio 2010 y versiones anteriores.  
+> Se admiten las plantillas de proyecto de C++ a partir de Visual Studio 2012. No se admiten para C++ en Visual Studio 2010 y versiones anteriores.  
   
  \<VSTemplate>  
  \<TemplateData>  

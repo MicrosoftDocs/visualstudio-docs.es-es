@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5a686d2a43fed0fdb8c5c1e8f21d4b35fd63f3a6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8e6f2d0da758a8897f28a22dec8adf1f8e05a36c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075667"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419460"
 ---
 # <a name="how-to-customize-a-built-in-tab"></a>Procedimiento Personalizar una pestaña integrada
   Puede agregar grupos y controles a una pestaña integrada. Una pestaña integrada es una pestaña que ya existe en la cinta de una aplicación de Microsoft Office. Por ejemplo, el **datos** ficha es una pestaña integrada en Excel. Al crear un grupo personalizado, este aparece al final de la pestaña, pero puede colocarlo en la parte que quiera de la pestaña.
@@ -26,14 +26,14 @@ ms.locfileid: "60075667"
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]
 
 > [!NOTE]
->  Puede agregar grupos a una pestaña integrada, pero no puede quitar grupos integrados de una pestaña integrada.
+> Puede agregar grupos a una pestaña integrada, pero no puede quitar grupos integrados de una pestaña integrada.
 
 ### <a name="to-add-groups-to-a-built-in-tab"></a>Para agregar grupos a una pestaña integrada
 
 1. Haga clic en el archivo de código de la cinta de opciones en **el Explorador de soluciones**y, a continuación, haga clic en **Diseñador de vistas**.
 
     > [!NOTE]
-    >  Si el archivo de código de la cinta de opciones no aparece en **el Explorador de soluciones**, debe agregar un **elemento cinta** al proyecto. Vea [Cómo: Introducción a la personalización de la cinta de opciones](../vsto/how-to-get-started-customizing-the-ribbon.md).
+    > Si el archivo de código de la cinta de opciones no aparece en **el Explorador de soluciones**, debe agregar un **elemento cinta** al proyecto. Vea [Cómo: Introducción a la personalización de la cinta de opciones](../vsto/how-to-get-started-customizing-the-ribbon.md).
 
 2. Haga clic en cualquier pestaña en el Diseñador de cinta de opciones y, a continuación, haga clic en **propiedades**.
 
@@ -48,7 +48,7 @@ ms.locfileid: "60075667"
 5. Desde el **controles de la cinta de Office** pestaña de la **cuadro de herramientas**, arrastre los grupos a la pestaña.
 
     > [!NOTE]
-    >  Los grupos integrados no aparecen en el diseñador. Por lo tanto, la única manera de determinar si está trabajando con una pestaña integrada es examinar el **ControlId** propiedad de la pestaña.
+    > Los grupos integrados no aparecen en el diseñador. Por lo tanto, la única manera de determinar si está trabajando con una pestaña integrada es examinar el **ControlId** propiedad de la pestaña.
 
 ### <a name="to-position-groups-on-a-built-in-tab"></a>Para colocar grupos en una pestaña integrada
 

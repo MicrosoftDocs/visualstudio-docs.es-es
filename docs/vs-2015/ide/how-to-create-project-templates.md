@@ -17,12 +17,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 918462bff3c2ac8dc57cb9c2c55a7d901707683c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5a43fe714028b7211904a0bb993d2964bfe612ce
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051549"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416921"
 ---
 # <a name="how-to-create-project-templates"></a>Procedimiento Crear plantillas de proyecto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Este procedimiento le permite crear una plantilla con el Asistente **Exportar pl
 1. Cree un proyecto.  
   
     > [!NOTE]
-    >  Use solo caracteres de identificador válidos al asignar un nombre al proyecto que será el origen de una plantilla. Una plantilla exportada desde un proyecto denominado con caracteres no válidos puede provocar errores de compilación en futuros proyectos basados en la plantilla. Para obtener más información sobre los caracteres de identificador válidos, vea [Nombres de elementos declarados](http://msdn.microsoft.com/library/09d8843b-c0dc-4afe-9dab-87c439a69e66).  
+    > Use solo caracteres de identificador válidos al asignar un nombre al proyecto que será el origen de una plantilla. Una plantilla exportada desde un proyecto denominado con caracteres no válidos puede provocar errores de compilación en futuros proyectos basados en la plantilla. Para obtener más información sobre los caracteres de identificador válidos, vea [Nombres de elementos declarados](http://msdn.microsoft.com/library/09d8843b-c0dc-4afe-9dab-87c439a69e66).  
   
 2. Modifique el proyecto hasta que esté listo para exportarse como una plantilla.  
   

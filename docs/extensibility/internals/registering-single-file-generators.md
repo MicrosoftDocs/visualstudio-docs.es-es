@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5f16385452fa0fa0f4e706da1856185355aa95a5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3d5d9e4cd0baa2343a68a3d86a96110c97b6cbb7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60047194"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426814"
 ---
 # <a name="registering-single-file-generators"></a>Registro de generadores de un solo archivo
 Para que estén disponibles en una herramienta personalizada [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], debe registrar tan [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] puede inicializarla y lo asocia con un tipo de proyecto determinado.
@@ -51,7 +51,7 @@ Para que estén disponibles en una herramienta personalizada [!INCLUDE[vsprvs](.
         Obligatorio. Indica si los tipos de los archivos generados por esta herramienta personalizada están disponibles para los diseñadores visuales. El valor de este parámetro debe ser (cero) 0 para tipos no están disponibles para los diseñadores visuales o 1 (uno) para los tipos disponibles para los diseñadores visuales.
 
    > [!NOTE]
-   >  Debe registrar la herramienta personalizada por separado para cada idioma para el que desea que la herramienta personalizada esté disponible.
+   > Debe registrar la herramienta personalizada por separado para cada idioma para el que desea que la herramienta personalizada esté disponible.
 
     Por ejemplo, el MSDataSetGenerator registra a sí mismo una vez para cada idioma:
 

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1f6e55c99d874bd18f0045746bbab4ac96370bc5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8f03b23076b1eea203166bb0322f05927480a278
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042412"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417172"
 ---
 # <a name="get-font-and-color-information-for-text-colorization"></a>Obtener información de fuente y color de coloración de texto
 El proceso que se representa o muestra el texto con colores de elementos de interfaz de usuario depende del tipo de proyecto, su tecnología y desarrollador de preferencias. El **fuentes y colores** página de propiedades almacena la configuración.
@@ -24,7 +24,7 @@ El proceso que se representa o muestra el texto con colores de elementos de inte
  La mayoría de las implementaciones que muestran texto con colores necesita el <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> y asociados de interfaces para la configuración de pantalla de presentación, recuperar y almacenar texto.
 
 > [!NOTE]
->  Al personalizar el editor básico (que admite el **texto EditorCategory**), se recomienda que use la tecnología de color en el servicio de lenguaje. Para obtener más información, consulte [información general de fuente y color](../extensibility/font-and-color-overview.md).
+> Al personalizar el editor básico (que admite el **texto EditorCategory**), se recomienda que use la tecnología de color en el servicio de lenguaje. Para obtener más información, consulte [información general de fuente y color](../extensibility/font-and-color-overview.md).
 
 ## <a name="get-default-font-and-color-information"></a>Obtener información de fuente y color predeterminado
  Todas las **fuentes y colores** se debe especificar la configuración de las ventanas de mostrar texto en el **elementos para mostrar** de uno **categoría**. Para obtener más información, consulte [fuentes y colores, entorno, cuadro de diálogo Opciones](../ide/reference/fonts-and-colors-environment-options-dialog-box.md).

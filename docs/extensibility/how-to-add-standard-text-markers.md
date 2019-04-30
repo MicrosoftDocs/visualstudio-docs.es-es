@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 021e5f39f3296a475795b991283e60aa518b98dc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 53aece13887fc727e7b0b1497f9546ee7a2fe63b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060090"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415508"
 ---
 # <a name="how-to-add-standard-text-markers"></a>Procedimiento Agregar marcadores de texto estándar
 Use el procedimiento siguiente para crear uno de los tipos de marcador de texto predeterminados proporcionados con la [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] editor básico.
@@ -27,7 +27,7 @@ Use el procedimiento siguiente para crear uno de los tipos de marcador de texto 
      En esta llamada al método, especifica un tipo de marcador, un intervalo de texto para crear el marcador a través y un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> interfaz. Este método, a continuación, devuelve un puntero para el marcador de texto recién creado. Tipos de marcador se toman de la <xref:Microsoft.VisualStudio.TextManager.Interop.MARKERTYPE> enumeración. Especifique un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> interfaz si desea informar de eventos de marcador.
 
     > [!NOTE]
-    >  Crear marcadores de texto en el subproceso principal de la interfaz de usuario. El editor básico se basa en el contenido del búfer de texto para crear marcadores de texto y el búfer de texto no es seguro para subprocesos.
+    > Crear marcadores de texto en el subproceso principal de la interfaz de usuario. El editor básico se basa en el contenido del búfer de texto para crear marcadores de texto y el búfer de texto no es seguro para subprocesos.
 
 ## <a name="add-a-custom-command"></a>Agregar un comando personalizado
  Implementar el `IVsTextMarkerClient` mejora la interfaz y proporcionar un puntero a él desde un marcador de comportamiento del marcador de varias maneras. En primer lugar, esto le permite proporcionar sugerencias para el marcador y ejecutar comandos. Esto también le permite recibir notificaciones de eventos para los marcadores individuales y para crear un menú contextual personalizado en el marcador. Use el procedimiento siguiente para agregar un comando personalizado en el menú contextual de marcador.

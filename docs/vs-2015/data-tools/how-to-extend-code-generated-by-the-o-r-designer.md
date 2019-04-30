@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: d8aa3ecd29180e01a7d6f254303d42ac328aceaa
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085225"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63385304"
 ---
 # <a name="how-to-extend-code-generated-by-the-or-designer"></a>Procedimiento Ampliar código generado por Object Relational Designer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

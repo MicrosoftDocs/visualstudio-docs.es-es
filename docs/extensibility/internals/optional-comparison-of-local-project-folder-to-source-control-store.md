@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5ac710fd3994dca24d8e15e3d15c18d9f456a744
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: d08cb11a49f069ab7d5f4d660253e5e85f3a87a0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614199"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422836"
 ---
 # <a name="optional-comparison-of-local-project-folder-to-source-control-store"></a>Comparación opcional de la carpeta de proyecto local con el almacén de control de código fuente
 Origen de controlar el complemento API 1.2 se lleva a cabo la comparación entre la carpeta del proyecto local y el control de código fuente mediante el uso de las funciones [SccDirQueryInfo](../../extensibility/sccdirqueryinfo-function.md) y [SccDirDiff](../../extensibility/sccdirdiff-function.md).
@@ -36,7 +36,7 @@ Origen de controlar el complemento API 1.2 se lleva a cabo la comparación entre
  El `SccDirQueryInfo` función se llama antes de `SccDirDiff` para determinar si el directorio de trabajo controlados por código fuente. El `SccDirDiff` función muestra las diferencias entre el directorio local actual y la carpeta de control de código fuente correspondiente. Este comando solicita el control de código fuente para mostrar la lista de cambios en el directorio. Un complemento de control de código fuente proporciona su propia interfaz de usuario para mostrar las diferencias.
 
 > [!NOTE]
->  Esta función utiliza los mismos marcadores de comando como [SccDiff](../../extensibility/sccdiff-function.md). Como un proveedor de complemento de control de código fuente, puede no admitir la operación de "comparación rápida" para los directorios.
+> Esta función utiliza los mismos marcadores de comando como [SccDiff](../../extensibility/sccdiff-function.md). Como un proveedor de complemento de control de código fuente, puede no admitir la operación de "comparación rápida" para los directorios.
 
 ## <a name="see-also"></a>Vea también
 - [Novedades de la API del complemento de control de código fuente, versión 1.2](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

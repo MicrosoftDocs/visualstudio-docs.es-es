@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 786c71f568bc44eeecdd44dfd91462ad00dda445
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fe706260bcb535f33a14eea2fd174ee37ea1c8aa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071192"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388375"
 ---
 # <a name="how-to-expand-and-collapse-spy-trees"></a>Procedimiento Expansión y contracción de árboles de Spy++
 Puede expandir y contraer las vistas de Windows, procesos y subprocesos utilizando dos métodos: haciendo clic en los iconos en la ventana o mediante el **árbol** menú. El + y - iconos en el árbol de actúan como lo hacen en la ventana de proyecto de Visual C++.
@@ -30,7 +30,7 @@ Puede expandir y contraer las vistas de Windows, procesos y subprocesos utilizan
 |**Contraer**|Contrae totalmente el elemento seleccionado actualmente.|
 
 > [!TIP]
->  Si expande un proceso, verá todos los subprocesos que posee el proceso. Si expande un subproceso, verá una lista de todas las ventanas que posee.
+> Si expande un proceso, verá todos los subprocesos que posee el proceso. Si expande un subproceso, verá una lista de todas las ventanas que posee.
 
 ### <a name="to-expand-or-collapse-spy-trees"></a>Para expandir o contraer árboles de Spy ++
 

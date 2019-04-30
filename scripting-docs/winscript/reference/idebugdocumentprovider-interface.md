@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 5632134c86b5aa0e3cb769a68d2d4cfd944ff35c
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58157215"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63008682"
 ---
 # <a name="idebugdocumentprovider-interface"></a>IDebugDocumentProvider (Interfaz)
 Proporciona los medios para crear instancias de un documento a petición.  

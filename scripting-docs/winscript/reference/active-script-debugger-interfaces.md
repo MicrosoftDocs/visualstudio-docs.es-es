@@ -14,18 +14,18 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6c63e20b802ff6c54ba17f8ddc55f390213e9043
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: ed8ff0361396deaaffd46f14ca1fc38869988593
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58155399"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422459"
 ---
 # <a name="active-script-debugger-interfaces"></a>Active Script Debugger (Interfaces)
 Los archivos de encabezado activdbg.h y activdbg100.h proporcionan las interfaces, enumeraciones y estructuras que se enumeran en esta sección. Son para depurar scripts.  
   
 > [!NOTE]
->  Las interfaces `IJSDebug*` e `IEnumJsStackFrames` se publicaron por primera vez en Internet Explorer 11 para depurar código nativo con scripts. El archivo de encabezado para estas interfaces es jscript9diag.h.  
+> Las interfaces `IJSDebug*` e `IEnumJsStackFrames` se publicaron por primera vez en Internet Explorer 11 para depurar código nativo con scripts. El archivo de encabezado para estas interfaces es jscript9diag.h.  
   
 ## <a name="in-this-section"></a>En esta sección  
  Las interfaces siguientes permiten la depuración independiente del lenguaje y del host:  

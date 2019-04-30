@@ -17,14 +17,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dc61db134063c1e300a2620f611d62497fffe6e1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 49f494fa2c0fb35f7d2a65dc2ccb6b6d2d761cbe
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608076"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428723"
 ---
-# <a name="how-to-add-a-finder-method"></a>Filtrar Agregar un método Finder
+# <a name="how-to-add-a-finder-method"></a>Procedimiento Agregar un método Finder
   Para habilitar el servicio de conectividad de datos profesionales (BDC) mostrar una lista de entidades en una lista o un elemento web, debe crear un *buscador* método. Un método Finder es un método especial que devuelve una colección de instancias de entidad. Para obtener más información, consulte [diseñar un modelo de conectividad de datos profesionales](../sharepoint/designing-a-business-data-connectivity-model.md).
 
 ### <a name="to-create-a-finder-method"></a>Para crear un método Finder
@@ -44,7 +44,7 @@ ms.locfileid: "56608076"
 4. Configure el descriptor de tipos como un descriptor de tipo de colección de entidades. Para obtener más información sobre cómo crear un descriptor de tipo de colección de entidades, vea [Cómo: Definir el descriptor de tipo de un parámetro](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).
 
    > [!NOTE]
-   >  No es necesario realizar este paso si ha agregado un método Finder específico a la entidad. Visual Studio utiliza el descriptor de tipos que definió en el método de buscador específico.
+   > No es necesario realizar este paso si ha agregado un método Finder específico a la entidad. Visual Studio utiliza el descriptor de tipos que definió en el método de buscador específico.
 
 5. En **el Explorador de soluciones**, abra el menú contextual del servicio archivo de código que se generó para la entidad y, a continuación, elija **ver código**. Para obtener más información sobre el archivo de código de servicio, consulte [crear un modelo de conectividad a datos empresariales](../sharepoint/creating-a-business-data-connectivity-model.md).
 
@@ -57,7 +57,7 @@ ms.locfileid: "56608076"
      El ejemplo siguiente devuelve una colección de `Contact` entidades mediante el uso de datos de la base de datos de ejemplo AdventureWorks para SQL Server.
 
    > [!NOTE]
-   >  Reemplace el valor de la `ServerName` campo con el nombre del servidor.
+   > Reemplace el valor de la `ServerName` campo con el nombre del servidor.
 
     [!code-csharp[SP_BDC#2](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#2)]
     [!code-vb[SP_BDC#2](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#2)]

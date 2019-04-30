@@ -26,12 +26,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: b0a10d720e911f80aa5ef7b4a42f521bfd9c31bd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3bee60a54576ab816c63cf60f2226ebbbaf50c44
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070418"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388488"
 ---
 # <a name="how-to-enable-and-disable-edit-and-continue-c-vb-c"></a>Procedimiento Habilitar y deshabilitar Editar y continuar (C#, VB, C++)
 
@@ -46,7 +46,7 @@ En C++ nativo, **editar y continuar** requiere el uso de la `/INCREMENTAL` opci�
 1. En **herramientas** > **opciones** > (o **depurar** > **opciones**) > **depuración**  >  **General**, seleccione **editar y continuar** en el panel derecho.
 
     > [!NOTE]
-    >  Si se habilita IntelliTrace y se recopilan eventos de IntelliTrace e información de llamadas, se deshabilita Editar y continuar. Para obtener más información, consulte [IntelliTrace](../debugger/intellitrace.md).
+    > Si se habilita IntelliTrace y se recopilan eventos de IntelliTrace e información de llamadas, se deshabilita Editar y continuar. Para obtener más información, consulte [IntelliTrace](../debugger/intellitrace.md).
 
 1. Para el código de C++, asegúrese de que **Habilitar Editar y continuar nativa** esté seleccionada y establecer las opciones adicionales:
     - **Aplicar cambios al continuar (solo nativo)**

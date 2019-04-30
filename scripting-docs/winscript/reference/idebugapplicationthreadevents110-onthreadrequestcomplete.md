@@ -13,18 +13,18 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e3afb36f430d78df4fe99856fd44cb6fda943a9d
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 5542d524506410e0a69dcb5addb6a7fe59209073
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58160503"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440460"
 ---
 # <a name="idebugapplicationthreadevents110onthreadrequestcomplete"></a>IDebugApplicationThreadEvents110::OnThreadRequestComplete
 Una llamada en el subproceso con el subproceso de PDM ha completado el cambio.  
   
 > [!IMPORTANT]
->  [IDebugApplicationThreadEvents110 (interfaz)](../../winscript/reference/idebugapplicationthreadevents110-interface.md) es implementada por PDM v11.0 y versiones posteriores. Se encuentra en activdbg100.h.  
+> [IDebugApplicationThreadEvents110 (interfaz)](../../winscript/reference/idebugapplicationthreadevents110-interface.md) es implementada por PDM v11.0 y versiones posteriores. Se encuentra en activdbg100.h.  
   
 ## <a name="syntax"></a>Sintaxis  
   

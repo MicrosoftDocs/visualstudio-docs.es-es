@@ -13,12 +13,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b40825884b3c63af6be6d8bc852a5da4805f8975
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: b6ec0d5e17b0d3527252352c2e789adfac4fa859
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58152056"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63410059"
 ---
 # <a name="iprovideexpressioncontexts-interface"></a>IProvideExpressionContexts (Interfaz)
 Proporciona una manera de enumerar los contextos de expresión que un componente determinado conoce. Motores de script normalmente implementan esta interfaz.  
@@ -26,7 +26,7 @@ Proporciona una manera de enumerar los contextos de expresión que un componente
  El Administrador de depuración del proceso usa esta interfaz para encontrar todos los contextos de expresión global asociados a un subproceso determinado.  
   
 > [!NOTE]
->  Esta interfaz se llama desde dentro del subproceso de interés. Es responsabilidad del implementador para identificar el subproceso actual y devuelve un enumerador correspondiente.  
+> Esta interfaz se llama desde dentro del subproceso de interés. Es responsabilidad del implementador para identificar el subproceso actual y devuelve un enumerador correspondiente.  
   
 ## <a name="methods"></a>Métodos  
  Además de los métodos heredados de `IUnknown`, el `IProvideExpressionContexts` interfaz expone los métodos siguientes.  

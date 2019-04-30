@@ -14,12 +14,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dbe2a9f3d46be72ae1e463da7c6173ef0571bc89
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: b52afab80bc22c03dc5ff980b937cad53869f5db
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58988181"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444406"
 ---
 # <a name="properties-of-elements-on-uml-use-case-diagrams"></a>Propiedades de los elementos de diagramas de casos de uso UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,11 +27,11 @@ ms.locfileid: "58988181"
 En un diagrama de caso de uso UML, cada elemento del diagrama tiene propiedades. Para ver las propiedades de un elemento, haga clic en el elemento en el diagrama o en **Explorador de modelos UML** y, a continuación, haga clic en **propiedades**. Las propiedades aparecen en la **propiedades** ventana.  
   
 > [!NOTE]
->  Este tema trata sobre las propiedades de los elementos de los diagramas de caso de uso UML. Para obtener más información sobre cómo leer diagramas de actividades UML, vea [diagramas de casos de uso de UML: referencia](../modeling/uml-use-case-diagrams-reference.md). Para obtener más información sobre cómo dibujar diagramas de actividades UML, vea [diagramas de casos de uso de UML: Directrices](../modeling/uml-use-case-diagrams-guidelines.md).  
+> Este tema trata sobre las propiedades de los elementos de los diagramas de caso de uso UML. Para obtener más información sobre cómo leer diagramas de actividades UML, vea [diagramas de casos de uso de UML: referencia](../modeling/uml-use-case-diagrams-reference.md). Para obtener más información sobre cómo dibujar diagramas de actividades UML, vea [diagramas de casos de uso de UML: Directrices](../modeling/uml-use-case-diagrams-guidelines.md).  
   
 ## <a name="properties-of-elements"></a>Propiedades de los elementos  
   
-|Property|Default|Elemento|Descripción|  
+|Propiedad|Default|Elemento|Descripción|  
 |--------------|-------------|-------------|-----------------|  
 |**Name**|Nombre predeterminado|Todas|Identifica el elemento.|  
 |**Nombre completo**|Paquete:: Name|Todas|Identifica de forma única el elemento. Prefijo con el nombre completo del paquete que lo contiene.|  

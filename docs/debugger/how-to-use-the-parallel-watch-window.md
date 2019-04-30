@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e41e3df54245b023a86f20921c4bfd4de74a952
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6026ab6d0d59fb3a8f945e554fda26f10d98f952
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051302"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388473"
 ---
 # <a name="set-a-watch-on-variables-in-parallel-threads-in-visual-studio-c-visual-basic-c"></a>Establece una inspección en Variables en subprocesos en paralelo en Visual Studio (C#, Visual Basic, C++)
 En la ventana Inspección paralela, puede mostrar simultáneamente los valores que contiene una expresión en varios subprocesos. Cada fila representa un subproceso que se ejecuta en una aplicación, pero un subproceso puede representarse en varias filas. Para ser más exactos, cada fila representa una llamada de función cuya signatura de función coincide con la función en el marco de pila actual. Puede ordenar, reordenar, quitar y agrupar los elementos incluidos en las columnas. Puede marcar, quitar el marcador, inmovilizar (suspender) y retomar (reanudar) los subprocesos. Las siguientes columnas se muestran en la ventana **Inspección paralela**:
@@ -34,7 +34,7 @@ En la ventana Inspección paralela, puede mostrar simultáneamente los valores q
 - Una columna configurable que puede mostrar el equipo, proceso, mosaico, tarea y subproceso.
 
   > [!TIP]
-  >  Para mostrar información de la tarea en el **inspección paralela** ventana, primero debe abrir el **tarea** ventana.
+  > Para mostrar información de la tarea en el **inspección paralela** ventana, primero debe abrir el **tarea** ventana.
 
 - El espacio en blanco *Agregar inspección* columnas, donde puede escribir expresiones para inspeccionar.
 

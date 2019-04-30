@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 29ee2b487299351b2d71a9b495257a939fb59f6c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 162f8df09b1f6ce9372a57728d653d5d3c20a551
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070152"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415729"
 ---
 # <a name="register-the-program"></a>Registrar el programa
 Después de que el motor de depuración ha adquirido un puerto, representado por un [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) interfaz, que es el paso siguiente para habilitar el programa que se desea depurar registrarlo en el puerto. Una vez registrado, el programa está disponible para la depuración en uno de los siguientes medios:
@@ -38,7 +38,7 @@ Después de que el motor de depuración ha adquirido un puerto, representado por
      El ejemplo siguiente muestra el motor de depuración, iniciar el programa y registrarlo con un puerto.
 
     > [!NOTE]
-    >  Este ejemplo de código no es la única forma de iniciar y reanudar un proceso; Este código es principalmente un ejemplo de registro de un programa con un puerto.
+    > Este ejemplo de código no es la única forma de iniciar y reanudar un proceso; Este código es principalmente un ejemplo de registro de un programa con un puerto.
 
     ```cpp
     // This is an IDebugEngineLaunch2 method.

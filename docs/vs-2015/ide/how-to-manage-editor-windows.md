@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 107b42500bbe2daed0d03d3e23e4817c9c3b3fc4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 29047f53b08472a0ff65960bfe694789f7f7cbe1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089931"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430509"
 ---
 # <a name="how-to-manage-editor-windows"></a>Procedimiento Administrar el Editor de Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "60089931"
 Puede trabajar con código en varias ubicaciones a la vez. Puede hacerlo dividiendo una ventana del editor o abriendo varias instancias de las ventanas del editor.  
   
 > [!NOTE]
->  No todas las ventanas del editor admiten varias instancias.  
+> No todas las ventanas del editor admiten varias instancias.  
   
 ## <a name="splitting-an-editor-window"></a>División de una ventana del editor  
  Una instancia de una ventana del editor se puede dividir en dos vistas independientes para facilitar la edición.  
@@ -41,7 +41,7 @@ Puede trabajar con código en varias ubicaciones a la vez. Puede hacerlo dividie
      El área de edición se divide en dos paneles separados por una barra divisora. Puede desplazar estos paneles de forma independiente para ver y editar distintas partes del documento activo al mismo tiempo. Los cambios realizados en un panel se reflejarán en el otro.  
   
     > [!TIP]
-    >  Para hacer que un panel sea mayor que otro, arrastre la barra divisora hacia arriba o hacia abajo.  
+    > Para hacer que un panel sea mayor que otro, arrastre la barra divisora hacia arriba o hacia abajo.  
   
 #### <a name="to-return-to-single-pane-view"></a>Para volver a la vista de panel único  
   

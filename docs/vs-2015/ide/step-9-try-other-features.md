@@ -9,12 +9,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 23838c7e68a3da18ba5438a2c56814d6dc27f9b8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c8a701715c0adff479fa29dbe9c9b28287031dfd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102658"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428299"
 ---
 # <a name="step-9-try-other-features"></a>Paso 9: prueba de otras características
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,22 +28,22 @@ Para aprender más, pruebe a cambiar los iconos y los colores, y agregue un temp
 - Reemplace los iconos y colores con los que prefiera.  
   
     > [!TIP]
-    >  Observe la propiedad [Forecolor](http://msdn.microsoft.com/library/system.windows.forms.control.forecolor%28v=vs.110%29.aspx) de la etiqueta.  
+    > Observe la propiedad [Forecolor](http://msdn.microsoft.com/library/system.windows.forms.control.forecolor%28v=vs.110%29.aspx) de la etiqueta.  
   
 - Agregue un temporizador de juego que mida el tiempo que necesita el jugador para ganar.  
   
     > [!TIP]
-    >  Para ello, agregue una etiqueta que muestre el tiempo transcurrido en el formulario sobre TableLayoutPanel, y agregue otro temporizador al formulario que mida el tiempo. Utilice el código para iniciar el temporizador cuando el jugador inicie el juego, y detenga el temporizador después de que coincidan los dos iconos.  
+    > Para ello, agregue una etiqueta que muestre el tiempo transcurrido en el formulario sobre TableLayoutPanel, y agregue otro temporizador al formulario que mida el tiempo. Utilice el código para iniciar el temporizador cuando el jugador inicie el juego, y detenga el temporizador después de que coincidan los dos iconos.  
   
 - Agregue un sonido para cuando el jugador encuentre una coincidencia, otro sonido para cuando destape dos iconos que no coincidan y un tercer sonido para cuando el programa vuelva a ocultar los iconos.  
   
     > [!TIP]
-    >  Para reproducir sonido, use el espacio de nombres System.media. Consulte [Play Sounds in Windows Forms App (C# .NET)](http://youtu.be/qOh4ooHg1UU) [Reproducir sonidos en la aplicación de Windows Forms (C# .NET)] o [How To Play Audio In Visual Basic](http://youtu.be/-4oPDeQrtMs) (Cómo reproducir audio en Visual Basic) para obtener más información.  
+    > Para reproducir sonido, use el espacio de nombres System.media. Consulte [Play Sounds in Windows Forms App (C# .NET)](http://youtu.be/qOh4ooHg1UU) [Reproducir sonidos en la aplicación de Windows Forms (C# .NET)] o [How To Play Audio In Visual Basic](http://youtu.be/-4oPDeQrtMs) (Cómo reproducir audio en Visual Basic) para obtener más información.  
   
 - Aumente el tamaño del tablero para complicar más el juego.  
   
     > [!TIP]
-    >  Necesitará hacer algo más que agregar filas y columnas a TableLayoutPanel: también deberá tener en cuenta el número de iconos que cree.  
+    > Necesitará hacer algo más que agregar filas y columnas a TableLayoutPanel: también deberá tener en cuenta el número de iconos que cree.  
   
 - Para que el juego sea más desafiante, oculte el primer icono si el jugador es demasiado lento al reaccionar y no elige el segundo icono antes de que pase una cantidad de tiempo concreta.  
   

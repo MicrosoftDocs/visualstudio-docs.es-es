@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da5edc8f31510fa01d2132735ede502ad7f6ad6a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.openlocfilehash: 52f04355a266f87a039b8197675c2f5377b840ee
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922607"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388312"
 ---
 # <a name="ca1053-static-holder-types-should-not-have-constructors"></a>CA1053: Los tipos titulares estáticos no deben tener constructores
 
@@ -40,7 +40,7 @@ ms.locfileid: "55922607"
  Para corregir una infracción de esta regla, quite el constructor predeterminado o hacerla privada.
 
 > [!NOTE]
->  Algunos compiladores crean automáticamente un constructor predeterminado público si el tipo no define ningún constructor. Si esto sucede con su tipo, agregue un constructor privado predeterminado para eliminar la infracción.
+> Algunos compiladores crean automáticamente un constructor predeterminado público si el tipo no define ningún constructor. Si esto sucede con su tipo, agregue un constructor privado predeterminado para eliminar la infracción.
 
 ## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
  No suprima las advertencias de esta regla. La presencia del constructor sugiere que el tipo no es un tipo estático.

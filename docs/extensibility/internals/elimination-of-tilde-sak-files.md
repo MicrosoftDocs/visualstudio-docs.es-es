@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 99d776e7d9891ca231fde4531b558de66568904f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 96704b52fb31085fad7546687a8803c85bcfbb47
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641473"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418642"
 ---
 # <a name="elimination-of-sak-files"></a>Eliminación de ~ archivos SAK
 En fuente Control complemento API 1.2, el *~ SAK* archivos han sido reemplazados por marcadores de capacidad y nuevas funciones que detectan si un origen de controlan el complemento admite el *MSSCCPRJ* de archivos y las desprotecciones compartidas.
@@ -48,7 +48,7 @@ Para los complementos que admiten las funciones avanzadas proporcionadas en la A
  **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl]DoNotCreateTemporaryFilesInSourceControl** = *dword:00000001*
 
 > [!NOTE]
->  Si se establece esta clave del registro en *DWORD: 00000000*, es equivalente a la clave es que no existe, y Visual Studio continúa realizando intentos para crear los archivos temporales. Sin embargo, si la clave del registro se establece en *DWORD: 00000001*, Visual Studio no intenta crear los archivos temporales. En su lugar, se supone que el complemento de control de origen no es compatible con la *MSSCCPRJ.SCC* de archivos y admitir desprotecciones compartidas.
+> Si se establece esta clave del registro en *DWORD: 00000000*, es equivalente a la clave es que no existe, y Visual Studio continúa realizando intentos para crear los archivos temporales. Sin embargo, si la clave del registro se establece en *DWORD: 00000001*, Visual Studio no intenta crear los archivos temporales. En su lugar, se supone que el complemento de control de origen no es compatible con la *MSSCCPRJ.SCC* de archivos y admitir desprotecciones compartidas.
 
 ## <a name="see-also"></a>Vea también
 - [Novedades de la versión 1.2 de origen Control complemento de API](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

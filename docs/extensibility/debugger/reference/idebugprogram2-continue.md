@@ -12,18 +12,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2ca9d7841671c44702b883cc8efcc23e803ea8fe
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: fd13d67917a395eb33e26a53e0db1fed7340c9c6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56693690"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412878"
 ---
 # <a name="idebugprogram2continue"></a>IDebugProgram2::Continue
 Continúa ejecutando este programa desde un estado detenido. Se conserva ningún estado de ejecución anterior (por ejemplo, un paso), y el programa comienza a ejecutarse de nuevo.
 
 > [!NOTE]
->  Este método está obsoleto. Use la [continuar](../../../extensibility/debugger/reference/idebugprocess3-continue.md) método en su lugar.
+> Este método está obsoleto. Use la [continuar](../../../extensibility/debugger/reference/idebugprocess3-continue.md) método en su lugar.
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -51,7 +51,7 @@ int Continue( 
  Este método se llama en este programa, independientemente de cuántos programas se están depurando o programa que generó el evento de detención. La implementación debe conservar el estado de ejecución anterior (por ejemplo, un paso) y continuar la ejecución como si nunca había dejado antes de completar su ejecución anterior. Es decir, si un subproceso en este programa estaba haciendo una operación de paso y se detuvo porque otro programa se detiene y, a continuación, se llama a este método, el programa debe completar la operación de pasó por alto original.
 
 > [!WARNING]
->  No enviar un evento de detención o a un evento (sincrónico) inmediato [eventos](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) mientras se controla esta llamada; en caso contrario, el depurador puede dejar de responder.
+> No enviar un evento de detención o a un evento (sincrónico) inmediato [eventos](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) mientras se controla esta llamada; en caso contrario, el depurador puede dejar de responder.
 
 ## <a name="see-also"></a>Vea también
 - [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)

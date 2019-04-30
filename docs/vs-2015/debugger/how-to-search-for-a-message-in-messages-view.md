@@ -1,5 +1,5 @@
 ---
-title: Filtrar Buscar un mensaje en la vista mensajes | Documentos de Microsoft
+title: Procedimiento Buscar un mensaje en la vista mensajes | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -13,14 +13,14 @@ caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 34f50b457dcc8b6db8e48e7072e8956fa78f6a7a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 6c89a763389abe364fe70166e63b41f932581837
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58988056"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430909"
 ---
-# <a name="how-to-search-for-a-message-in-messages-view"></a>Filtrar Búsqueda de un mensaje en la vista Mensajes
+# <a name="how-to-search-for-a-message-in-messages-view"></a>Procedimiento Búsqueda de un mensaje en la vista Mensajes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Puede buscar un mensaje concreto en la vista mensajes mediante su identificador, el tipo o el Id. de mensaje como criterios de búsqueda. Cualquiera de estas, o una combinación, serán los criterios de búsqueda válida. También se puede especificar la dirección inicial de la búsqueda. Los campos en el cuadro de diálogo se cargan previamente con los atributos del mensaje seleccionado actualmente.  
@@ -46,7 +46,7 @@ Puede buscar un mensaje concreto en la vista mensajes mediante su identificador,
 4. Borrar todos los campos que no desea especificar los valores.  
   
    > [!TIP]
-   >  Para reducir la confusión en la pantalla, seleccione el **Ocultar Spy** opción. Esta opción oculta la ventana principal de Spy ++, dejando sólo los **Buscar ventana** cuadro de diálogo visible encima de las otras aplicaciones. La ventana principal de Spy ++ se restaura al hacer clic en **Aceptar** o **cancelar**, o cuando se borra el **Ocultar Spy ++** opción.  
+   > Para reducir la confusión en la pantalla, seleccione el **Ocultar Spy** opción. Esta opción oculta la ventana principal de Spy ++, dejando sólo los **Buscar ventana** cuadro de diálogo visible encima de las otras aplicaciones. La ventana principal de Spy ++ se restaura al hacer clic en **Aceptar** o **cancelar**, o cuando se borra el **Ocultar Spy ++** opción.  
   
 5. Elija **seguridad** o **abajo** para la dirección inicial de la búsqueda.  
   

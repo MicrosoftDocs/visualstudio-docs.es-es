@@ -11,12 +11,12 @@ ms.assetid: beb8607a-4183-4ed2-9ac8-7527f11513b1
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 5d7abb72d3d577c4870030c76f87f0a41f133480
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: c0662bfe22b4c78bb754bbac2fbfdd281a4a7bce
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58988305"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408507"
 ---
 # <a name="specifying-vspackage-file-location-to-the-vs-shell"></a>Especificación de la ubicación del archivo de VSPackage en el Shell de VS
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,4 +31,4 @@ ms.locfileid: "58988305"
 |Colocar el archivo DLL en el **PublicAssemblies** directory.|Por último, el ensamblado también se puede colocar en el **PublicAssemblies** subdirectorio. Los ensamblados se encuentran en **PublicAssemblies** se detectan automáticamente y también aparecerá en el **agregar referencias** cuadro de diálogo de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].<br /><br /> Solo se deben colocar los ensamblados de VSPackage en el **PublicAssemblies** directorio si contienen los componentes que están diseñados para ser reutilizada por otros desarrolladores VSPackage administrados. La mayoría de los ensamblados no cumplen este criterio.|  
   
 > [!NOTE]
->  Usar ensamblados con nombre seguro, con signo para todos los ensamblados dependientes. Estos ensamblados también deben instalarse en su propio directorio o en la caché global de ensamblados (GAC). Esto protege contra entra en conflicto con los ensamblados que tienen el mismo nombre de archivo base, conocido como el enlace de nombre de débil.
+> Usar ensamblados con nombre seguro, con signo para todos los ensamblados dependientes. Estos ensamblados también deben instalarse en su propio directorio o en la caché global de ensamblados (GAC). Esto protege contra entra en conflicto con los ensamblados que tienen el mismo nombre de archivo base, conocido como el enlace de nombre de débil.

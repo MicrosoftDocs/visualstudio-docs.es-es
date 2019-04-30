@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e3a1340821dcbdb9e1b28192f0b798b458528f3
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: e8927785ba6ca0dbe3daf6c402be776e8c9d8288
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56646452"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63400255"
 ---
 # <a name="idiasymbolgetlexicalparent"></a>IDiaSymbol::get_lexicalParent
 Recupera una referencia al elemento primario léxico del símbolo.
@@ -39,7 +39,7 @@ HRESULT get_lexicalParent ( 
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o código de error.
 
 > [!NOTE]
->  Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.
+> Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.
 
 ## <a name="remarks"></a>Comentarios
  El elemento primario léxico de un símbolo es la función o módulo envolvente. Por ejemplo, el elemento primario léxico de un parámetro de función o variable local es la propia función mientras el léxico principal de la función es el módulo se define en.

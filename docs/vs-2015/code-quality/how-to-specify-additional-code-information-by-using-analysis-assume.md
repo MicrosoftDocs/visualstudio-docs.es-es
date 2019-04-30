@@ -1,5 +1,5 @@
 ---
-title: Filtrar Especificar información de código adicional mediante __analysis_assume | Microsoft Docs
+title: Procedimiento Especificar información de código adicional mediante __analysis_assume | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-code-analysis
@@ -13,14 +13,14 @@ caps.latest.revision: 12
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: 96f4d628d32aec9a0f7eb2d091a017edfba3d8ac
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: e130f2248ae6715b3248226c780bc162e1ff01ef
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58995344"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426638"
 ---
-# <a name="how-to-specify-additional-code-information-by-using-analysisassume"></a>Filtrar Especificar información de código adicional mediante _analysis_assume
+# <a name="how-to-specify-additional-code-information-by-using-analysisassume"></a>Procedimiento Especificar información de código adicional mediante _analysis_assume
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Puede proporcionar sugerencias a la herramienta de análisis de código para código de C o C++ que ayudan al proceso de análisis y reducir las advertencias. Para proporcionar información adicional, utilice la siguiente función:  
@@ -32,7 +32,7 @@ Puede proporcionar sugerencias a la herramienta de análisis de código para có
  La herramienta de análisis de código se da por supuesto que la condición representada por la expresión es verdadera en el punto donde aparece la función y siga siendo verdadera hasta que la expresión se modifica, por ejemplo, mediante la asignación a una variable.  
   
 > [!NOTE]
->  `__analysis_assume` no afecta a la optimización de código. Fuera de la herramienta de análisis de código, `__analysis_assume` se define como una operación inefectiva.  
+> `__analysis_assume` no afecta a la optimización de código. Fuera de la herramienta de análisis de código, `__analysis_assume` se define como una operación inefectiva.  
   
 ## <a name="example"></a>Ejemplo  
  El siguiente código utiliza `__analysis_assume` para corregir la advertencia de análisis de código [C6388](../code-quality/c6388.md):  

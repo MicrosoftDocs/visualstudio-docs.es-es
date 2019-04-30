@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e4c54c6523caf08e367f245dd92fb7b91470ae0d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: f5a760389f589dc14e8a768991323c0419dac527
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624859"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63401496"
 ---
 # <a name="idiasymbolgethassecuritychecks"></a>IDiaSymbol::get_hasSecurityChecks
 Recupera una marca que especifica si la operación de compilación o la función se ha compilado con las comprobaciones de seguridad de saturación del búfer (por ejemplo, el [/GS (comprobación de seguridad del búfer)](/cpp/build/reference/gs-buffer-security-check) modificador del compilador).
@@ -39,7 +39,7 @@ HRESULT get_hasSecurityChecks(
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.
 
 > [!NOTE]
->  Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.
+> Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.
 
 ## <a name="requirements"></a>Requisitos
 

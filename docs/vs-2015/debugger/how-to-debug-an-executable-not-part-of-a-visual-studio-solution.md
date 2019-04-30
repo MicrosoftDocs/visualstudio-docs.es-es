@@ -22,12 +22,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e913d67442d21cb1a0895721c22ede9b69363f53
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d871d469fc71beaa5c3e3323aad08eda3f546729
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068709"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434478"
 ---
 # <a name="how-to-debug-an-executable-not-part-of-a-visual-studio-solution"></a>Procedimiento Depurar un archivo ejecutable que no es parte de una solución de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ Es posible que haya ocasiones en las que desee depurar un archivo ejecutable que
 5. Inicie el archivo ejecutable eligiendo un comando de ejecución, como **iniciar**, desde el **depurar** menú.  
   
     > [!NOTE]
-    >  No todos los lenguajes de programación admiten proyectos EXE. Si necesita utilizar esta característica, instale [!INCLUDE[vcprvc](../includes/vcprvc-md.md)].  
+    > No todos los lenguajes de programación admiten proyectos EXE. Si necesita utilizar esta característica, instale [!INCLUDE[vcprvc](../includes/vcprvc-md.md)].  
   
      Cuando se depura un archivo ejecutable sin el código fuente, las características de depuración disponibles son limitadas, tanto si se asocia el depurador al archivo en ejecución como si se agrega el archivo ejecutable a una solución de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Si el archivo ejecutable se compiló sin información de depuración en un formato compatible, las características disponibles serán aún más limitadas. Si dispone del código fuente, lo más recomendable es que importe dicho código a [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] y que cree una versión de depuración del archivo ejecutable en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   

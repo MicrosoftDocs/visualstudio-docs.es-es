@@ -19,12 +19,12 @@ caps.latest.revision: 36
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 635dd8d9f7860b075de9b35e21fcf42bdad2ea1a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9ebde75fdf36c84f40ae660a24d469c36e72ceaf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078882"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386600"
 ---
 # <a name="walkthrough-creating-a-custom-installer-for-a-clickonce-application"></a>Tutorial: Crear a un instalador personalizado para una aplicación ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +56,7 @@ Cualquier aplicación ClickOnce basada en un archivo .exe se puede instalar en m
      Estos métodos llaman a <xref:System.Deployment.Application.InPlaceHostingManager> métodos para descargar el manifiesto de implementación, validar los permisos adecuados, pedir al usuario permiso para instalar y, a continuación, descargue e instale la aplicación en la memoria caché de ClickOnce. Un instalador personalizado puede especificar que una aplicación ClickOnce es de confianza previamente, o puede diferir la decisión de confianza para el <xref:System.Deployment.Application.InPlaceHostingManager.AssertApplicationRequirements%2A> llamada al método. Este código previamente confía en la aplicación.  
   
     > [!NOTE]
-    >  Los permisos asignados previamente confiando en no pueden superar los permisos del código de instalador personalizado.  
+    > Los permisos asignados previamente confiando en no pueden superar los permisos del código de instalador personalizado.  
   
      [!code-csharp[System.Deployment.Application.InPlaceHostingManager#1](../snippets/csharp/VS_Snippets_Winforms/System.Deployment.Application.InPlaceHostingManager/CS/Form1.cs#1)]
      [!code-vb[System.Deployment.Application.InPlaceHostingManager#1](../snippets/visualbasic/VS_Snippets_Winforms/System.Deployment.Application.InPlaceHostingManager/VB/Form1.vb#1)]  

@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 51e1768e23eb61a5a6463d8d48f64683987f431a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 4a831c06af503646b29f462a9e52436ce157cc86
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56707981"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434705"
 ---
 # <a name="sccbackgroundget-function"></a>SccBackgroundGet (función)
 Esta función recupera de control de código fuente cada de los archivos especificados sin interacción del usuario.
@@ -48,7 +48,7 @@ SCCRTN SccBackgroundGet(
 [in, out] Matriz de nombres de archivos que se va a recuperar.
 
 > [!NOTE]
->  Los nombres deben ser los nombres de archivo local completa.
+> Los nombres deben ser los nombres de archivo local completa.
 
  dwFlags
 

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a1a6b131e75e61e319a691a0b132bb57b7d0c227
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 856ea1e59a32a64c6a48b52c3ef1dcad9e0bbb80
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061494"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406820"
 ---
 # <a name="how-to-create-a-localized-bootstrapper-package"></a>Procedimiento Crear un paquete de programa previo localizado
 Después de crear un paquete de arranque, puede crear versiones localizadas del paquete de programa previo creando dos archivos más para cada configuración regional: archivo de términos de una licencia de software (como un *eula.rtf*) y un manifiesto del paquete (*package.xml*).
@@ -31,7 +31,7 @@ Después de crear un paquete de arranque, puede crear versiones localizadas del 
 3. Cree un manifiesto de paquete con el nombre *package.xml*, actualice las cadenas y la referencia cultural, y coloque el archivo en la carpeta nueva. Si ya ha creado un programa previo de Visual Studio en el idioma de destino, puede copiar el archivo *package.xml* de Visual Studio y modificarlo en este paso.
 
 > [!NOTE]
->  Si usa un proyecto de instalación para implementar aplicaciones, puede localizar la aplicación cambiando la propiedad **Localización**.
+> Si usa un proyecto de instalación para implementar aplicaciones, puede localizar la aplicación cambiando la propiedad **Localización**.
 
  [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 

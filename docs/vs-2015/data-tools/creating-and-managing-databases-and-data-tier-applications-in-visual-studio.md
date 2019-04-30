@@ -14,18 +14,18 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6b6ee9413a2394d0477cd1c7b1a0caf83dd6ad6d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: d6cb4a3beb12d2b33b8b13441df66116fe449d09
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651388"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431159"
 ---
 # <a name="creating-and-managing-databases-and-data-tier-applications-in-visual-studio"></a>Creación y administración de bases de datos y aplicaciones de capa de datos en Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 IMPORTANTE]
->  Los proyectos de base de datos que se incluyeron en versiones anteriores de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ahora se ofrecen en [!INCLUDE[sql_Denali_long](../includes/sql-denali-long-md.md)] herramientas. Para obtener más información, consulte [SQL Server Developer Tools](http://go.microsoft.com/fwlink/?LinkId=228126).
+> Los proyectos de base de datos que se incluyeron en versiones anteriores de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ahora se ofrecen en [!INCLUDE[sql_Denali_long](../includes/sql-denali-long-md.md)] herramientas. Para obtener más información, consulte [SQL Server Developer Tools](http://go.microsoft.com/fwlink/?LinkId=228126).
 
  Puede usar proyectos de base de datos para crear nuevas bases de datos nuevas aplicaciones de capa de datos (DAC) y para actualizar bases de datos existentes y las aplicaciones de capa de datos. Los proyectos de base de datos y los proyectos DAC permiten aplicar técnicas de administración de proyecto y control de versión a sus esfuerzos de desarrollo de base de datos de la misma manera que se aplican esas técnicas para código administrado o nativo. Puede ayudar a su equipo de desarrollo de administrar los cambios en las bases de datos y servidores de base de datos mediante la creación de un *proyecto DAC*, *proyecto de base de datos*, o un *proyecto de servidor* y colocarla bajo control de versiones. Miembros del equipo, a continuación, pueden desproteger los archivos para realizar, compilar y probar los cambios en un *entorno de desarrollo aislado*, o espacio aislado, antes de compartirlos con el equipo. Para ayudar a garantizar la calidad del código, su equipo puede finalizar y pruebe todos los cambios para una versión concreta de la base de datos en un entorno de ensayo antes de implementar los cambios en producción.
 

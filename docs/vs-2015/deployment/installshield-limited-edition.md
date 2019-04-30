@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a05aba81292fba9520defe39af6977682452b850
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ab2f063f684407c89cd3ec73cd256d0219805b66
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080636"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63409429"
 ---
 # <a name="installshield-limited-edition"></a>InstallShield Limited Edition
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60080636"
 Use InstallShield Limited Edition para crear un archivo de instalación y distribuirlo a los usuarios con el fin de que puedan instalar una aplicación o un componente de escritorio sin estar conectados a una red. InstallShield Limited Edition es gratuita para usuarios de Visual Studio Professional y Enterprise. Sustituye a la tecnología de Windows Installer, que ya no es compatible con Visual Studio. Como alternativa, puede distribuir aplicaciones y componentes usando ClickOnce, que requiere conectividad de red. Vea [ClickOnce Security and Deployment](../deployment/clickonce-security-and-deployment.md).  
   
 > [!NOTE]
->  Para continuar usando proyectos de Windows Installer creados en versiones anteriores de Visual Studio, instale la extensión de proyectos del instalador de Visual Studio. Vea [xtensión de proyectos de Visual Studio Installer](http://blogs.msdn.com/b/visualstudio/archive/2014/04/17/visual-studio-installer-projects-extension.aspx).  
+> Para continuar usando proyectos de Windows Installer creados en versiones anteriores de Visual Studio, instale la extensión de proyectos del instalador de Visual Studio. Vea [xtensión de proyectos de Visual Studio Installer](http://blogs.msdn.com/b/visualstudio/archive/2014/04/17/visual-studio-installer-projects-extension.aspx).  
   
 ### <a name="to-enable-installshield-limited-edition"></a>Para habilitar InstallShield Limited Edition  
   

@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dc6492b52cb739c49bdba9f231ebcda313a66105
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fceb6270aea9da5af1a53adf7560df7dd3702349
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068670"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418302"
 ---
 # <a name="how-to-add-a-filter-descriptor-to-a-finder-method"></a>Procedimiento Agregar un descriptor de filtro a un método Finder
   Descriptores de filtro permiten a los consumidores del modelo pasar valores a los métodos antes de ejecutarlos. Para obtener más información, consulte [diseñar un modelo de conectividad a datos empresariales](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -62,7 +62,7 @@ ms.locfileid: "60068670"
      El ejemplo siguiente devuelve los pedidos de ventas que tienen la fecha de orden especificado.
 
     > [!NOTE]
-    >  Reemplace el valor de la `ServerName` campo con el nombre del servidor.
+    > Reemplace el valor de la `ServerName` campo con el nombre del servidor.
 
      [!code-csharp[SP_BDC#11](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderservice.cs#11)]
      [!code-vb[SP_BDC#11](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderservice.vb#11)]
