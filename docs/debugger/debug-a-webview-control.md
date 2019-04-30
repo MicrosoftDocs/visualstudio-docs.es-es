@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: 726a61ae6c515d80fae13c8bfbac6a13943be6ea
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 43d545a52cbe066e4bb5002b57e9539b9a1b303c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081767"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402639"
 ---
 # <a name="debug-a-webview-control-in-a-uwp-app"></a>Depurar un control WebView en una aplicación para UWP
 
@@ -42,7 +42,7 @@ ms.locfileid: "60081767"
 4. (Opcional) En las versiones de Visual Studio que no sean Express, deshabilite la depuración justo a tiempo (JIT) eligiendo **Herramientas, Opciones, Depuración, Just-In-Time** y deshabilitando a continuación la depuración JIT para Script.
 
     > [!NOTE]
-    >  Al deshabilitar la depuración JIT, puede ocultar los cuadros de diálogo de las excepciones no controladas que se producen en algunas páginas web. En Visual Studio Express, la depuración JIT siempre está deshabilitada.
+    > Al deshabilitar la depuración JIT, puede ocultar los cuadros de diálogo de las excepciones no controladas que se producen en algunas páginas web. En Visual Studio Express, la depuración JIT siempre está deshabilitada.
 
 5. Presiona F5 para iniciar la depuración.
 
@@ -79,7 +79,7 @@ ms.locfileid: "60081767"
      ![Destino de selección en la ventana de consola JavaScript](../debugger/media/js_console_target.png "JS_Console_Target")
 
     > [!NOTE]
-    >  Con la consola, puede interactuar con un único `WebView`, `iFrame`, contrato de participación o trabajo web a la vez. Cada elemento necesita una instancia independiente del host de plataforma web (WWAHost.exe). Puede interactuar con un host a la vez.
+    > Con la consola, puede interactuar con un único `WebView`, `iFrame`, contrato de participación o trabajo web a la vez. Cada elemento necesita una instancia independiente del host de plataforma web (WWAHost.exe). Puede interactuar con un host a la vez.
 
 6. Ver y modificar las variables de la aplicación o usar los comandos de consola, como se describe en [inicio rápido: Depurar JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md) y [JavaScript Console commands](../debugger/javascript-console-commands.md).
 

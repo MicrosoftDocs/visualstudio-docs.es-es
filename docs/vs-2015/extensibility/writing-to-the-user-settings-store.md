@@ -8,12 +8,12 @@ ms.assetid: efd27f00-7fe5-45f8-9b97-371af732be97
 caps.latest.revision: 4
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 5d48535bf8e2eb0c5204be0b06701b54cc6e365b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 764d9b81297c6bbefd1f5fdf7c77e4d514bb5045
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60058179"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408497"
 ---
 # <a name="writing-to-the-user-settings-store"></a>Escritura en el almacén de configuración de usuario
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Configuración de usuario son valores grabables como las de la **herramientas / 
 3. Vaya a herramientas HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp\External\\.  
   
     > [!NOTE]
-    >  Asegúrese de que está mirando la clave que contiene \14.0Exp\ y no \14.0\\. Cuando se ejecuta la instancia experimental de Visual Studio, la configuración de usuario está en el subárbol del registro "14.0Exp".  
+    > Asegúrese de que está mirando la clave que contiene \14.0Exp\ y no \14.0\\. Cuando se ejecuta la instancia experimental de Visual Studio, la configuración de usuario está en el subárbol del registro "14.0Exp".  
   
 4. Haga clic en la subclave \External Tools\ y, a continuación, haga clic en **exportar**. Asegúrese de que **rama seleccionada** está seleccionada.  
   

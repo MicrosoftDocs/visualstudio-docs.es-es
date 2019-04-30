@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ead0db08427d6116671637f943059904555b4480
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: ef18d56bb993ee5761bb59dcf5fb0758d44f4d61
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608063"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63401375"
 ---
 # <a name="idiasymbolgetvirtualtableshape"></a>IDiaSymbol::get_virtualTableShape
 Recupera la interfaz de símbolo del tipo de la tabla virtual para un tipo definido por el usuario.
@@ -39,7 +39,7 @@ HRESULT get_virtualTableShape ( 
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o código de error.
 
 > [!NOTE]
->  Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.
+> Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.
 
 ## <a name="see-also"></a>Vea también
 - [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

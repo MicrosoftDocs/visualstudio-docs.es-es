@@ -13,12 +13,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ebfffcfbb1798422e09833faf6f5074f8f93ea5e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 1d8f5251f61b8c513c58f5165fbaecbb9d5f00f3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58996996"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437290"
 ---
 # <a name="idiasymbolgetobjectpointertype"></a>IDiaSymbol::get_objectPointerType
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ HRESULT get_objectPointerType ( 
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.  
   
 > [!NOTE]
->  Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.  
+> Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.  
   
 ## <a name="remarks"></a>Comentarios  
  Esta propiedad solo se aplica a los símbolos con un [SymTagEnum (enumeración)](../../debugger/debug-interface-access/symtagenum.md) el tipo de `SymTagFunctionType`.  

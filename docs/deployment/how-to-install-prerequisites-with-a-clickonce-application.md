@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b0535ec606722ec162804718e7ee14bdd4714f4b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 047ac897931cbb93d8a06406e300d39cd83a9fe4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077022"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406740"
 ---
 # <a name="how-to-install-prerequisites-with-a-clickonce-application"></a>Procedimiento Requisitos previos de instalación con una aplicación ClickOnce
 Todos los [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicaciones requieren que la versión correcta de .NET Framework está instalada en un equipo antes de poder ejecutar; muchas aplicaciones tienen también otros requisitos previos. Al publicar un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación, puede elegir un conjunto de componentes de requisitos previos pueden empaquetarse junto con la aplicación. Durante la instalación, se realizará una comprobación para que todos los requisitos previos determinar si ya existe; Si no se instalará antes de instalar el [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación.
@@ -29,12 +29,12 @@ Todos los [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] apli
  En lugar de empaquetar y publicar los requisitos previos, también puede especificar una ubicación de descarga de los componentes. Por ejemplo, en lugar de incluir requisitos previos con todas las aplicaciones que publique, puede usar un recurso compartido de archivos centralizado o la ubicación Web que contenga los instaladores para todos los requisitos previos, durante la instalación, se descargarán los componentes y instalada desde esa ubicación.
 
 > [!IMPORTANT]
->  Debe agregar los paquetes de instalador de requisitos previos para el equipo de desarrollo antes de publicar su primer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación. Para obtener más información, vea [Cómo: Inclusión de requisitos previos con una aplicación ClickOnce](../deployment/how-to-include-prerequisites-with-a-clickonce-application.md).
+> Debe agregar los paquetes de instalador de requisitos previos para el equipo de desarrollo antes de publicar su primer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación. Para obtener más información, vea [Cómo: Inclusión de requisitos previos con una aplicación ClickOnce](../deployment/how-to-include-prerequisites-with-a-clickonce-application.md).
 
  Requisitos previos se administran en el **requisitos previos** cuadro de diálogo, accesible desde el **publicar** panel de la **Diseñador de proyectos**.
 
 > [!NOTE]
->  Además de la lista predeterminada de requisitos previos, puede agregar sus propios componentes a la lista. Para obtener más información, consulte [crear paquetes de arranque](../deployment/creating-bootstrapper-packages.md).
+> Además de la lista predeterminada de requisitos previos, puede agregar sus propios componentes a la lista. Para obtener más información, consulte [crear paquetes de arranque](../deployment/creating-bootstrapper-packages.md).
 
 ### <a name="to-specify-prerequisites-to-install-with-a-clickonce-application"></a>Para especificar los requisitos previos para instalar con una aplicación ClickOnce
 
@@ -65,7 +65,7 @@ Todos los [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] apli
 6. Seleccione una ubicación en la lista desplegable o escriba una dirección URL, la ruta de acceso de archivo o la ubicación FTP y, a continuación, haga clic en **Aceptar.**
 
     > [!NOTE]
-    >  Debe asegurarse de que los instaladores para los componentes especificados existen en la ubicación especificada.
+    > Debe asegurarse de que los instaladores para los componentes especificados existen en la ubicación especificada.
 
 ## <a name="see-also"></a>Vea también
 - [Publicar aplicaciones ClickOnce](../deployment/publishing-clickonce-applications.md)

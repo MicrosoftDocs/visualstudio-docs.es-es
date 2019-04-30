@@ -12,12 +12,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: aaebcb9bf5edb5fda6938d364b3f96dc8823576f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 3f9a6f7985e3ebb3e77dcc605157f75e00a0842b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653494"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426031"
 ---
 # <a name="msbuild-transforms"></a>Transformaciones de MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Una transformación es una conversión unívoca de una lista de elementos en otr
 ```  
   
 > [!NOTE]
->  Puede especificar un separador personalizado para obtener una lista de elementos transformada de la misma manera que especifica un separador de una lista de elementos estándar. Por ejemplo, para separar una lista de elementos transformada mediante una coma (,) en lugar del punto y coma predeterminado (;), use el siguiente XML.  
+> Puede especificar un separador personalizado para obtener una lista de elementos transformada de la misma manera que especifica un separador de una lista de elementos estándar. Por ejemplo, para separar una lista de elementos transformada mediante una coma (,) en lugar del punto y coma predeterminado (;), use el siguiente XML.  
   
 ```  
 @(RESXFile->'Toolset\%(filename)%(extension)', ',')  
@@ -111,4 +111,4 @@ extension: .xsd
 ## <a name="see-also"></a>Vea también  
  [Conceptos de MSBuild](../msbuild/msbuild-concepts.md)   
  [Referencia de MSBuild](../msbuild/msbuild-reference.md)   
- [Cómo: Compilar versiones incrementalmente](../msbuild/how-to-build-incrementally.md)
+ [Cómo: Compilar de forma incremental](../msbuild/how-to-build-incrementally.md)

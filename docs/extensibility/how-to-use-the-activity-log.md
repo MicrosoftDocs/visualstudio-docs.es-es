@@ -11,18 +11,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b0699e3a7ad4a56f7e102ca896359290cd7dbecb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8d6aca6166486d0eda1a4a92167c0e8d6a8a2924
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053135"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415528"
 ---
 # <a name="how-to-use-the-activity-log"></a>Procedimiento Usar el registro de actividad
 Los VSPackages pueden escribir mensajes en el registro de actividad. Esta característica es especialmente útil para depurar los VSPackages en establecimientos comerciales.
 
 > [!TIP]
->  El registro de actividad está siempre activado. Visual Studio mantiene un búfer gradual de las últimas 100 entradas, así como las 10 primeras entradas, que tienen información de configuración general.
+> El registro de actividad está siempre activado. Visual Studio mantiene un búfer gradual de las últimas 100 entradas, así como las 10 primeras entradas, que tienen información de configuración general.
 
 ## <a name="to-write-an-entry-to-the-activity-log"></a>Para escribir una entrada en el registro de actividad
 

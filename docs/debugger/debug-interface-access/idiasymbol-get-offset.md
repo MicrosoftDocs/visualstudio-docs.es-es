@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a85062b2012f44e8a3d7ff2356f8c053bc28ef7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 0016ca267b3eaf2535896aab1ee58a470a192c9a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56638249"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63399451"
 ---
 # <a name="idiasymbolgetoffset"></a>IDiaSymbol::get_offset
 Recupera el desplazamiento de la posición del símbolo. Cuando utilice el [LocationType (enumeración)](../../debugger/debug-interface-access/locationtype.md) es `LocIsRegRel` o `LocIsBitField`.
@@ -39,7 +39,7 @@ HRESULT get_offset ( 
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.
 
 > [!NOTE]
->  Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.
+> Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.
 
 ## <a name="remarks"></a>Comentarios
  El desplazamiento es desde algún punto conocido determinado previamente. Por ejemplo, el desplazamiento para un `LocIsBitField` tipo de ubicación es normalmente desde el principio de la clase contenedora.

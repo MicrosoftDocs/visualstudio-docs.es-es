@@ -13,12 +13,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 71fbafb46db563c56bafb926b66b88bc39fda2ed
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5ec3cd1365826c1a06b2d0f7bd6da377c8dc4d46
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039356"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440654"
 ---
 # <a name="how-to-create-a-localized-bootstrapper-package"></a>Procedimiento Crear un paquete de arranque localizado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Después de crear un paquete de arranque, puede crear versiones localizadas del 
 3. Cree un manifiesto del paquete llamado package.xml, actualice las cadenas y la referencia cultural, y coloque el archivo en la nueva carpeta. Si ya ha creado un programa previo de Visual Studio en el idioma de destino, puede copiar el archivo package.xml de Visual Studio y modificarlo en este paso.  
   
 > [!NOTE]
->  Si usa un proyecto de instalación para implementar aplicaciones, puede localizar la aplicación cambiando la propiedad **Localización**.  
+> Si usa un proyecto de instalación para implementar aplicaciones, puede localizar la aplicación cambiando la propiedad **Localización**.  
   
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   

@@ -9,12 +9,12 @@ helpviewer_keywords:
 ms.assetid: 7d92bb6a-b9b9-4cd8-99e9-b5ee129b52a3
 caps.latest.revision: 9
 manager: jillfra
-ms.openlocfilehash: 0fa07029ee1b96f3b8f1328d654b4d5d83953142
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 77da71c6762927610900feedeeae20421a14c4d0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58998862"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432273"
 ---
 # <a name="getting-field-descriptions-from-the-properties-window"></a>Obtener descripciones de los campos de la ventana Propiedades
 En la parte inferior de la ventana **Propiedades** , un área de descripción muestra información relacionada con el campo de la propiedad seleccionada. Esta característica está activada de forma predeterminada. Si quiere ocultar el campo de descripción, haga clic con el botón derecho en la ventana **Propiedades** y haga clic en **Descripción**. Al hacerlo, también se quita la marca de verificación junto al título **Descripción** de la ventana de menú. Puede volver a mostrar el campo siguiendo los mismos pasos para volver a activar **Descripción** .  
@@ -26,7 +26,7 @@ En la parte inferior de la ventana **Propiedades** , un área de descripción mu
 1. Agregue el atributo `helpstringdll` a la instrucción de la biblioteca en la biblioteca de tipos (`typelib`).  
   
    > [!NOTE]
-   >  Este paso es opcional si la biblioteca de tipos está en un archivo de biblioteca de objetos (.olb).  
+   > Este paso es opcional si la biblioteca de tipos está en un archivo de biblioteca de objetos (.olb).  
   
 2. Especifique atributos `helpstringcontext` para las cadenas. También puede especificar atributos `helpstring` .  
   

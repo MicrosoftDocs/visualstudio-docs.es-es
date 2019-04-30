@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9b9a88aff9cd587f695ace56c44eaf9c8fcb8875
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 366416e4f18435bd01391657eb2fc4f65f8a4d62
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117205"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441780"
 ---
 # <a name="how-to-open-office-solutions-without-running-code"></a>Procedimiento Abrir soluciones de Office sin ejecutar código
   Una solución de Microsoft Office creada con las extensiones de código administrado se ejecuta incluso si la configuración de seguridad en la aplicación de Office del usuario final está establecida en High. Esto es porque la seguridad del código de ensamblado de .NET es administrado por Microsoft .NET Framework, no por Microsoft Office.
@@ -39,7 +39,7 @@ ms.locfileid: "60117205"
 - Abrir documentos y libros desde el **archivo** menú mientras mantiene presionada la **MAYÚS** clave para impedir que generar eventos de inicialización mientras se abre el documento de Word y Excel.
 
     > [!NOTE]
-    >  Si abre un documento o libro desde el **Introducción** panel de tareas, manteniendo presionada la tecla **MAYÚS** no se omite el código. Además, manteniendo presionada la tecla MAYÚS no impide que los eventos que se produce después de que el documento está abierto.
+    > Si abre un documento o libro desde el **Introducción** panel de tareas, manteniendo presionada la tecla **MAYÚS** no se omite el código. Además, manteniendo presionada la tecla MAYÚS no impide que los eventos que se produce después de que el documento está abierto.
 
      Este método es útil si desea abrir un documento para realizar cambios sin ejecutar el código y modificar primero el documento.
 

@@ -13,12 +13,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0c85690b34f0db705fe2a17e2f98d5b4f11433b3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b26a152567da3b6285653ba8e14a72bce664ce0d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044981"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434526"
 ---
 # <a name="how-to-add-an-application-configuration-file-to-a-c-project"></a>Procedimiento Agregue un archivo de configuración de aplicación a un proyecto de C#
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "60044981"
 Al agregar un archivo de configuración de la aplicación (archivo app.config) a un proyecto de C#, puede personalizar el modo en que Common Language Runtime busca y carga archivos de ensamblado. Para obtener más información acerca de los archivos de configuración de aplicación, consulte [How the Runtime Locates Assemblies](http://msdn.microsoft.com/library/772ac6f4-64d2-4cfb-92fd-58096dcd6c34).  
   
 > [!NOTE]
->  No es compatible con el Store Windows <xref:System.Configuration>. Como resultado, las aplicaciones de Store no contienen una plantilla de app.config.  
+> No es compatible con el Store Windows <xref:System.Configuration>. Como resultado, las aplicaciones de Store no contienen una plantilla de app.config.  
   
  Al compilar el proyecto, el entorno de desarrollo copia automáticamente el archivo app.config, cambia el nombre de archivo de la copia para que coincida con el archivo ejecutable y, a continuación, mueve la copia en el directorio bin.  
   

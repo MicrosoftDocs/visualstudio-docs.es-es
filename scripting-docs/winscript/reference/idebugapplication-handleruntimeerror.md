@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0a457ba0dcc6fb7f8a95a982b6dabd93f9d0207e
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: c2c9a8b15b5095ac346ba047d6668aada7647a31
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58150106"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412435"
 ---
 # <a name="idebugapplicationhandleruntimeerror"></a>IDebugApplication::HandleRuntimeError
 Hace que el subproceso actual se bloquea y envía una notificación del error para el IDE del depurador.  
@@ -66,7 +66,7 @@ HRESULT HandleRuntimeError(
  Un motor de lenguaje llama a este método en el contexto de un subproceso que produce un error de tiempo de ejecución. Este método hace que el subproceso actual se bloquea y envía una notificación de error para enviarse a la IDE del depurador. Cuando reanuda la aplicación en el IDE del depurador, este método devuelve con la acción que se realizará.  
   
 > [!NOTE]
->  Mientras se encuentra en el error de tiempo de ejecución, el motor de lenguaje puede llamarse mediante el subproceso para realizar tareas tales como enumerar los marcos de pila o evaluar expresiones.  
+> Mientras se encuentra en el error de tiempo de ejecución, el motor de lenguaje puede llamarse mediante el subproceso para realizar tareas tales como enumerar los marcos de pila o evaluar expresiones.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugApplication (interfaz)](../../winscript/reference/idebugapplication-interface.md)   

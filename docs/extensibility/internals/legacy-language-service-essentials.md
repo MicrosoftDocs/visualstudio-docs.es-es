@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 582006c7b9629911f9d403fdab6af0637eb9337c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: cf8b6c509e8a748060656f83f760fd245b852157
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661898"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418364"
 ---
 # <a name="legacy-language-service-essentials"></a>Fundamentos de servicio de lenguaje heredado
 Debe proporcionar un servicio de lenguaje para integrar un lenguaje de programación en Visual Studio. En este tema se explica las características disponibles en los servicios de lenguaje heredado.
@@ -26,7 +26,7 @@ Debe proporcionar un servicio de lenguaje para integrar un lenguaje de programac
  Servicios de lenguaje heredado se implementan como parte de un paquete VSPackage, pero la forma más reciente para implementar características de servicio de lenguaje es usar las extensiones MEF. Para obtener más información acerca de la nueva forma de implementar un servicio de lenguaje, consulte [Editor y extensiones de servicio de lenguaje](../../extensibility/editor-and-language-service-extensions.md).
 
 > [!NOTE]
->  Se recomienda que comience a usar el nuevo editor de API tan pronto como sea posible. Esto mejorará el rendimiento de su servicio de lenguaje y le permiten aprovechar las nuevas características del editor.
+> Se recomienda que comience a usar el nuevo editor de API tan pronto como sea posible. Esto mejorará el rendimiento de su servicio de lenguaje y le permiten aprovechar las nuevas características del editor.
 
  Servicios de lenguaje heredado proporcionan las siguientes características:
 

@@ -1,5 +1,5 @@
 ---
-title: Filtrar Especificar información de código adicional mediante _Analysis_assume
+title: Procedimiento Especificar información de código adicional mediante _Analysis_assume
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,14 +12,14 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: badc2159085257f25a224a29cf1163b2b702fe60
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.openlocfilehash: 25ce2a97acd248e546fdfab1a1b5c3f22e085f0c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913605"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403112"
 ---
-# <a name="how-to-specify-additional-code-information-by-using-analysisassume"></a>Filtrar Especificar información de código adicional mediante _Analysis_assume
+# <a name="how-to-specify-additional-code-information-by-using-analysisassume"></a>Procedimiento Especificar información de código adicional mediante _Analysis_assume
 Puede proporcionar sugerencias a la herramienta de análisis de código para código de C o C++ que ayudan al proceso de análisis y reducir las advertencias. Para proporcionar información adicional, utilice la siguiente función:
 
  `_Analysis_assume(`  `expr`  `)`
@@ -29,7 +29,7 @@ Puede proporcionar sugerencias a la herramienta de análisis de código para có
  La herramienta de análisis de código se da por supuesto que la condición representada por la expresión es verdadera en el punto donde aparece la función y siga siendo verdadera hasta que la expresión se modifica, por ejemplo, mediante la asignación a una variable.
 
 > [!NOTE]
->  `_Analysis_assume` no afecta a la optimización de código. Fuera de la herramienta de análisis de código, `_Analysis_assume` se define como una operación inefectiva.
+> `_Analysis_assume` no afecta a la optimización de código. Fuera de la herramienta de análisis de código, `_Analysis_assume` se define como una operación inefectiva.
 
 ## <a name="example"></a>Ejemplo
  El siguiente código utiliza `_Analysis_assume` para corregir la advertencia de análisis de código [C6388](../code-quality/c6388.md):

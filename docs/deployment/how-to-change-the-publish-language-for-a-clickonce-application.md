@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e5bf51fd416fd9ccbb2343c17412984858429da
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 88114080b8de02b3aaba52b0a48fd09d58ec5818
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60115294"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406652"
 ---
 # <a name="how-to-change-the-publish-language-for-a-clickonce-application"></a>Procedimiento Cambio del idioma de publicación de una aplicación ClickOnce
 
@@ -30,7 +30,7 @@ Al publicar un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]
 El `Publish language` propiedad puede establecerse el **opciones de publicación** cuadro de diálogo, accesible desde el **publicar** página de la **Diseñador de proyectos**.
 
 > [!NOTE]
->  Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para obtener más información, vea [Restablecer la configuración](../ide/environment-settings.md#reset-settings).
+> Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para obtener más información, vea [Restablecer la configuración](../ide/environment-settings.md#reset-settings).
 
 ## <a name="to-change-the-publish-language"></a>Para cambiar el idioma de publicación
 

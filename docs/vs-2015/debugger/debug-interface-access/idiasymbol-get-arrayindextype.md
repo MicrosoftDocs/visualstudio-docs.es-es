@@ -13,12 +13,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 641182fb3896bea9d1944aeaaaab2d68f285f95f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 7f3fd2895b0a10d04cded23af5e5953e7a1a340f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58996016"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430687"
 ---
 # <a name="idiasymbolgetarrayindextype"></a>IDiaSymbol::get_arrayIndexType
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ HRESULT get_arrayIndexType ( 
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o código de error.  
   
 > [!NOTE]
->  Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.  
+> Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.  
   
 ## <a name="remarks"></a>Comentarios  
  Algunos lenguajes pueden especificar el tipo utilizado como un índice de matriz. El símbolo devuelto por este método especifica ese tipo.  

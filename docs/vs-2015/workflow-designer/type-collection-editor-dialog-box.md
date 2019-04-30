@@ -11,18 +11,18 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8f3b536ff59c01e1be71bd0fcfb57946219cefd1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 66cd861fcf92c400e1499834ea6255df4d5cf0fa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60073078"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432348"
 ---
 # <a name="type-collection-editor-dialog-box"></a>Editor de colección de tipos (cuadro de diálogo)
 El **Editor de la colección de tipo** cuadro de diálogo se usa para agregar tipos conocidos para la **enviar** y **recepción** actividades. Este cuadro de diálogo también se usa para agregar argumentos de tipo genérico para el **InvokeMethod** actividad. Cuando se usa para la **enviar** y **recepción** actividades para agregar tipos conocidos, el **Editor de la colección de tipo** cuadro de diálogo requiere que se agreguen tipos únicos. Si se agrega un tipo duplicado y se confirma el cambio haciendo **Aceptar**, se devuelve un mensaje de error. Cuando se usa para la **InvokeMethod** actividad para agregar argumentos de tipo genérico, la **Editor de la colección de tipo** cuadro de diálogo permite la adición de tipos duplicados.  
   
 > [!NOTE]
->  [!INCLUDE[crabout](../includes/crabout-md.md)] sobre los tipos conocidos, vea [Data Contract Known Types](http://msdn.microsoft.com/library/1a0baea1-27b7-470d-9136-5bbad86c4337).  
+> [!INCLUDE[crabout](../includes/crabout-md.md)] sobre los tipos conocidos, vea [Data Contract Known Types](http://msdn.microsoft.com/library/1a0baea1-27b7-470d-9136-5bbad86c4337).  
   
  La tabla siguiente describen los elementos de interfaz de usuario de la **tipo colección** cuadro de diálogo.  
   

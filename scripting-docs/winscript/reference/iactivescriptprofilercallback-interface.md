@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b28f07318a89e0944bf23e937f174c50c1e8a82d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e8f64f187638af7f9ab4bf6b80e88fe6992c78e6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045007"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386086"
 ---
 # <a name="iactivescriptprofilercallback-interface"></a>IActiveScriptProfilerCallback (Interfaz)
 Proporciona métodos que se usan por el motor de scripting para notificar a un objeto de generador de perfiles cuando se producen eventos. Esta interfaz se implementa mediante el objeto de generador de perfiles.  
@@ -36,7 +36,7 @@ Proporciona métodos que se usan por el motor de scripting para notificar a un o
  Notificación de llamadas de función en Document Object Model (DOM) proporcionada por el [IActiveScriptProfilerCallback2 (interfaz)](../../winscript/reference/iactivescriptprofilercallback2-interface.md).  
   
 > [!NOTE]
->  Para agregar la capacidad de iniciar y detener la generación de perfiles cuando se ejecuta una secuencia de comandos, llame a los métodos siguientes. Mediante estos métodos, se puede obtener la pila de llamadas completa si [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] se ejecuta al iniciar o detener la generación de perfiles.  
+> Para agregar la capacidad de iniciar y detener la generación de perfiles cuando se ejecuta una secuencia de comandos, llame a los métodos siguientes. Mediante estos métodos, se puede obtener la pila de llamadas completa si [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] se ejecuta al iniciar o detener la generación de perfiles.  
 > 
 > - Llame a [IActiveScriptProfilerControl2::CompleteProfilerStart](../../winscript/reference/iactivescriptprofilercontrol2-completeprofilerstart.md) para notificar al generador de perfiles que ha iniciado la generación de perfiles.  
 >   - Llame a [IActiveScriptProfilerControl2::PrepareProfilerStop](../../winscript/reference/iactivescriptprofilercontrol2-prepareprofilerstop.md) para notificar al generador de perfiles que pronto dejará de generación de perfiles.  

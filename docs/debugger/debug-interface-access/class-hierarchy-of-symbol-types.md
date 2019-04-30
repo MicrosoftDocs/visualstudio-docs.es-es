@@ -1,5 +1,5 @@
 ---
-title: Jerarquía de tipos de símbolos de clases | Microsoft Docs
+title: Jerarquía de tipos de símbolos de clases | Documentos de Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 67e32d855ec6d0c172542cbdacc235f6b3e1b003
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: bc9981d324fe61cd3afe6cce4bc08d7b9b686c7f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604449"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402618"
 ---
 # <a name="class-hierarchy-of-symbol-types"></a>Jerarquía de clases de tipos de símbolos
 En la tabla siguiente describe los tipos de símbolos en la jerarquía de clases.
@@ -43,7 +43,7 @@ En la tabla siguiente describe los tipos de símbolos en la jerarquía de clases
 |[Dimensión](../../debugger/debug-interface-access/dimension.md)|Símbolo de dimensiones de la matriz.|
 
 > [!NOTE]
->  Cada símbolo puede tener propiedades que contienen información acerca de los símbolos, así como referencias a otros símbolos. Estas propiedades se muestran en los temas individuales de símbolos.
+> Cada símbolo puede tener propiedades que contienen información acerca de los símbolos, así como referencias a otros símbolos. Estas propiedades se muestran en los temas individuales de símbolos.
 
 ## <a name="see-also"></a>Vea también
 - [Enumeración CV_access_e](../../debugger/debug-interface-access/cv-access-e.md)

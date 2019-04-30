@@ -9,12 +9,12 @@ helpviewer_keywords:
 ms.assetid: 700e80a4-c1e1-4178-af53-45e86dd2c08b
 caps.latest.revision: 9
 manager: jillfra
-ms.openlocfilehash: 2d5ba5a271cd7132d9750fc0569b801022aeb932
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7b963436e9d968dd5ba3829e97d0fd0c52e49641
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117861"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443006"
 ---
 # <a name="how-to-create-a-vsct-file-from-an-existing-ctc-file"></a>Procedimiento Crear una. Archivo de Vsct desde una existente. Archivos de CTC
 Puede crear un archivo de vsct basado en XML de un archivo de origen de comando tabla .ctc existente. Al hacerlo, puede aprovechar las ventajas del nuevo basado formato del compilador de la tabla de comandos (VSCT) [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] .  
@@ -42,7 +42,7 @@ Puede crear un archivo de vsct basado en XML de un archivo de origen de comando 
      Esto crea un nuevo archivo de origen de tabla de comandos XML .vsct. Puede compilar el archivo usando el archivo Vsct.exe, el compilador VSCT, tal como lo haría con cualquier otro archivo .vsct.  
   
     > [!NOTE]
-    >  Puede mejorar la legibilidad del archivo .vsct volviendo a asignar formato a los comentarios XML.  
+    > Puede mejorar la legibilidad del archivo .vsct volviendo a asignar formato a los comentarios XML.  
   
 ## <a name="see-also"></a>Vea también  
  [Cómo: Crear una. Archivo de Vsct](../extensibility/internals/how-to-create-a-dot-vsct-file.md)   

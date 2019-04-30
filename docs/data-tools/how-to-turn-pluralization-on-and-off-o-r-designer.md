@@ -8,18 +8,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 34b25be50cee681ee9c45e446d86a6054099926b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 769d1760692cad6a6b813ece16d69f4abd3d26b1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103750"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402782"
 ---
 # <a name="how-to-turn-pluralization-on-and-off-or-designer"></a>Procedimiento Activación y desactivación de la pluralización (Object Relational Designer)
 De forma predeterminada, al arrastrar objetos de base de datos con nombres que terminan en s o es desde **Explorador de servidores** o **Database Explorer** hasta la [de LINQ to SQL tools en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md), el nombres de las clases de entidad generadas cambian de plural a singular. Este cambio se produce para representar con mayor precisión la asignación de la clase de entidad con instancias a un solo registro de datos. Por ejemplo, agregando un `Customers` la tabla a la **Object Relational Designer** da como resultado una clase de entidad denominada `Customer` porque la clase contendrá datos para un solo cliente.
 
 > [!NOTE]
->  La pluralización está activada de forma predeterminada solamente en la versión en inglés de Visual Studio.
+> La pluralización está activada de forma predeterminada solamente en la versión en inglés de Visual Studio.
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
@@ -30,7 +30,7 @@ De forma predeterminada, al arrastrar objetos de base de datos con nombres que t
 2. En el cuadro de diálogo **Opciones**, expanda **Herramientas para bases de datos**.
 
     > [!NOTE]
-    >  Seleccione **Mostrar todas las configuraciones** si el nodo **Herramientas para bases de datos** no está visible.
+    > Seleccione **Mostrar todas las configuraciones** si el nodo **Herramientas para bases de datos** no está visible.
 
 3. Haga clic en **Object Relational Designer**.
 

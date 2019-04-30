@@ -11,12 +11,12 @@ caps.latest.revision: 52
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 84f5b5de8b28062023d851e38e26930718d599e7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 0da69de4a91ebabce4af99e26195b349ef5daa60
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58997929"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411410"
 ---
 # <a name="text-template-utility-methods"></a>Métodos de utilidad de las plantillas de texto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "58997929"
 Existen varios métodos que siempre están disponibles al escribir código en un [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] plantilla de texto. Estos métodos se definen en <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>.  
   
 > [!TIP]
->  También puede usar otros métodos y los servicios proporcionados por el entorno de host en una plantilla de texto (preprocesada no) normal. Por ejemplo, puede resolver las rutas de acceso de archivo, registrar errores y obtener servicios proporcionados por [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] y cualquier carga de paquetes.  Para obtener más información, consulte [acceso a Visual Studio desde una plantilla de texto](http://msdn.microsoft.com/0556f20c-fef4-41a9-9597-53afab4ab9e4).  
+> También puede usar otros métodos y los servicios proporcionados por el entorno de host en una plantilla de texto (preprocesada no) normal. Por ejemplo, puede resolver las rutas de acceso de archivo, registrar errores y obtener servicios proporcionados por [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] y cualquier carga de paquetes.  Para obtener más información, consulte [acceso a Visual Studio desde una plantilla de texto](http://msdn.microsoft.com/0556f20c-fef4-41a9-9597-53afab4ab9e4).  
   
 ## <a name="write-methods"></a>Escribir métodos  
  Puede usar el `Write()` y `WriteLine()` métodos anexar texto dentro de un bloque de código estándar, en lugar de usar un bloque de código de expresiones. Los siguientes bloques de código de dos son funcionalmente equivalentes.  

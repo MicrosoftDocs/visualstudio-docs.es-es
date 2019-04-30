@@ -12,12 +12,12 @@ ms.assetid: 040b36d6-1f0a-4579-971c-40fbb46ade1d
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 443139194a9be59a26a812bd8026270749105a30
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d41b075111797a12d68b4aa30c23e3cbacd8058a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043765"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432103"
 ---
 # <a name="saving-a-custom-document"></a>Guardado de un documento personalizado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Guardar, guardar como y guardar todos los comandos de control para un editor per
      En el caso de un editor personalizado, la comunicación entre el objeto de datos y el proyecto es privada. Por lo tanto, se tratan los problemas de persistencia especial entre estos dos objetos.  
   
     > [!NOTE]
-    >  Si implementa su propia persistencia, no olvide llamar a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A> método para ahorrar tiempo. Este método comprueba para asegurarse de que es seguro guardar el archivo (por ejemplo, el archivo no es de solo lectura).  
+    > Si implementa su propia persistencia, no olvide llamar a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A> método para ahorrar tiempo. Este método comprueba para asegurarse de que es seguro guardar el archivo (por ejemplo, el archivo no es de solo lectura).  
   
 ## <a name="see-also"></a>Vea también  
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>   

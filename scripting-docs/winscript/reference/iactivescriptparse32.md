@@ -11,11 +11,11 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 ms.openlocfilehash: 9f44239b4e423588b8455b93b87e4084a9c7d1c4
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54347650"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63009329"
 ---
 # <a name="iactivescriptparse32"></a>IActiveScriptParse32
 Si la secuencia de comandos de Windows permite scriptlets de código de texto sin formato que se agregarán a la secuencia de comandos motor o texto de la expresión se evalúe en tiempo de ejecución, implementa el `IActiveScriptParse32` interfaz. Para los lenguajes de scripting interpretados que no tienen ningún entorno de creación independiente, como VBScript, esto proporciona un mecanismo alternativo (distinto de `IPersist*`) para obtener el código de script en el motor de scripting y adjuntar fragmentos de secuencias de comandos a varios objetos eventos.  

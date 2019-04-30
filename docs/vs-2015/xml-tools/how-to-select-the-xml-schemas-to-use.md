@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d694fe9bb614acfd80e5ec1b9f6bed166775c214
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d897fe074c0215d462ff81ccd33e7d71487b1282
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091486"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433100"
 ---
 # <a name="how-to-select-the-xml-schemas-to-use"></a>Procedimiento Seleccionar los esquemas XML que se van a usar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ El Editor XML proporciona una caché de esquemas que está ubicada en el directo
  Los esquemas especificados se guardan en el archivo oculto de opciones del usuario de la solución (.suo), junto con todas las demás propiedades de documento XML. Por tanto, no es necesario que vuelva a escribir estos valores la próxima vez que abra la solución.  
   
 > [!NOTE]
->  El editor puede realizar la validación mediante un esquema alineado o un esquema al que se haga referencia en el atributo `xsd:schemaLocation`. Para obtener más información, consulte [validación de documentos XML](../xml-tools/xml-document-validation.md).  
+> El editor puede realizar la validación mediante un esquema alineado o un esquema al que se haga referencia en el atributo `xsd:schemaLocation`. Para obtener más información, consulte [validación de documentos XML](../xml-tools/xml-document-validation.md).  
   
 ### <a name="to-select-an-xml-schema-from-the-schema-cache"></a>Para seleccionar un esquema XML de la caché de esquema  
   
@@ -71,7 +71,7 @@ El Editor XML proporciona una caché de esquemas que está ubicada en el directo
      El esquema se quita de la caché de esquema en memoria, pero no del sistema de archivos.  
   
     > [!NOTE]
-    >  Si todavía tiene una referencia al esquema a través de un `schemaLocation` atributo o una coincidencia con `targetNamespace` , a continuación, **quitar** no funcionarán en esta situación debido a la asociación automática. En este caso, se recomienda que marque el esquema como **no utilizar esquemas seleccionados** en el **usar** columna.  
+    > Si todavía tiene una referencia al esquema a través de un `schemaLocation` atributo o una coincidencia con `targetNamespace` , a continuación, **quitar** no funcionarán en esta situación debido a la asociación automática. En este caso, se recomienda que marque el esquema como **no utilizar esquemas seleccionados** en el **usar** columna.  
   
 ## <a name="see-also"></a>Vea también  
  [Schema Cache](../xml-tools/schema-cache.md)   

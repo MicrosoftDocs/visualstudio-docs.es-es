@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6971da256d638b8248e49235a4d8d3ded71dc10e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c5b97247ebf16a588e8f28b4b4e6f7c512566226
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056775"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386771"
 ---
 # <a name="how-to-create-an-association-relationship-between-linq-to-sql-classes-or-designer"></a>Procedimiento Crear una asociación (relación) entre clases LINQ to SQL (Object Relational Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ Las asociaciones entre clases de entidades en [!INCLUDE[vbtecdlinq](../includes/
  Si utiliza el **Editor de asociaciones** para crear una asociación, deberá seleccionar una clase primaria y otra secundaria. La clase primaria es la clase de entidad que contiene la clave principal y la clase secundaria es la clase de entidad que contiene la clave externa. Por ejemplo, si se crearon clases de entidad y se asignaron a las tablas Customers y Orders de Northwind, la clase Customer sería la clase primaria y Order, la secundaria.  
   
 > [!NOTE]
->  Al arrastrar las tablas de **Explorador de servidores**/**Database Explorer** hasta la [!INCLUDE[vs_ordesigner_long](../includes/vs-ordesigner-long-md.md)] ([!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]), las asociaciones se crean automáticamente en función de las existentes relaciones de clave externa en la base de datos.  
+> Al arrastrar las tablas de **Explorador de servidores**/**Database Explorer** hasta la [!INCLUDE[vs_ordesigner_long](../includes/vs-ordesigner-long-md.md)] ([!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]), las asociaciones se crean automáticamente en función de las existentes relaciones de clave externa en la base de datos.  
   
  Después de crear una asociación, al seleccionar la asociación en el Object Relational Designer, hay algunas propiedades configurables en el **propiedades** ventana. (La asociación es la línea entre las clases relacionadas). En la tabla siguiente, se proporcionan descripciones de las propiedades de una asociación.  
   

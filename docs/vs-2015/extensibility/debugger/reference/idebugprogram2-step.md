@@ -12,12 +12,12 @@ ms.assetid: e4c2ffce-9810-4088-8162-eac9ef04f2a9
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e2eec3fd22e41ce7fd49584bb65e2646428646a3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 0473cf7061cb18dad569910af5214742ba774a87
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58996767"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445780"
 ---
 # <a name="idebugprogram2step"></a>IDebugProgram2::Step
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "58996767"
 Realiza un paso.  
   
 > [!NOTE]
->  Este método está obsoleto. Use la [paso](../../../extensibility/debugger/reference/idebugprocess3-step.md) método en su lugar.  
+> Este método está obsoleto. Use la [paso](../../../extensibility/debugger/reference/idebugprocess3-step.md) método en su lugar.  
   
 ## <a name="syntax"></a>Sintaxis  
   
@@ -62,7 +62,7 @@ int Step( 
  En caso de que no hay ninguna sincronización de subprocesos o la comunicación entre subprocesos, otros subprocesos del programa deben ejecutarse cuando un subproceso en particular es ejecución paso a paso.  
   
 > [!WARNING]
->  No enviar un evento de detención o a un evento (sincrónico) inmediato [eventos](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) mientras se controla esta llamada; en caso contrario, el depurador puede dejar de responder.  
+> No enviar un evento de detención o a un evento (sincrónico) inmediato [eventos](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) mientras se controla esta llamada; en caso contrario, el depurador puede dejar de responder.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)   

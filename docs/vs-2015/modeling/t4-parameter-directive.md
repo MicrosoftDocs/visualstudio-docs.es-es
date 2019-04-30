@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c7971dc3402a344a5318fd8415404e7a45ae8485
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 3e350b353d90143a0805455b29bfe0a14aad25cb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58999592"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411598"
 ---
 # <a name="t4-parameter-directive"></a>Directiva de parámetro T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -106,4 +106,4 @@ string resultText = t.TransformText();
 ## <a name="obtaining-arguments-from-texttemplateexe"></a>Obtener argumentos de TextTemplate.exe  
   
 > [!IMPORTANT]
->  El `parameter` directiva no recupera los valores establecidos en el `–a` parámetro de la `TextTransform.exe` utilidad. Para obtener esos valores, establezca `hostSpecific="true"` en el `template` directiva y use `this.Host.ResolveParameterValue("","","argName")`.
+> El `parameter` directiva no recupera los valores establecidos en el `–a` parámetro de la `TextTransform.exe` utilidad. Para obtener esos valores, establezca `hostSpecific="true"` en el `template` directiva y use `this.Host.ResolveParameterValue("","","argName")`.

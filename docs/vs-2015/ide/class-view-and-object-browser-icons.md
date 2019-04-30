@@ -18,12 +18,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7cb80c7ad81708724750660560d65cfef722af86
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: ef14396e681f77eca469f40b2253c8a64296423d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54785054"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422839"
 ---
 # <a name="class-view-and-object-browser-icons"></a>Iconos de la Vista de clases y del Examinador de objetos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ En Vista de clases** y el **Examinador de objetos** se muestran iconos que repre
 |----------|-----------------|----------|-----------------|  
 |![Símbolo de espacio de nombres](../ide/media/vxnamespace-icon.gif "vxNamespace_Icon")|Espacio de nombres|![Símbolo de declaración](../ide/media/vxmethod-icon.gif "vxMethod_Icon")|Método o función|  
 |![Icono de clase](../ide/media/vxclass-icon.gif "vxClass_Icon")|Clase|![Símbolo de operador](../ide/media/vxoperator-icon.gif "vxOperator_Icon")|Operador|  
-|![Símbolo de círculo de interfaz](../ide/media/vxinterface-icon.gif "vxInterface_Icon")|Interfaz|![Símbolo de propiedad](../ide/media/vxproperty-icon.gif "vxProperty_Icon")|Propiedad.|  
+|![Símbolo de círculo de interfaz](../ide/media/vxinterface-icon.gif "vxInterface_Icon")|Interfaz|![Símbolo de propiedad](../ide/media/vxproperty-icon.gif "vxProperty_Icon")|Propiedad|  
 |![Símbolo de estructura](../ide/media/vxstruct-icon.gif "vxStruct_Icon")|Estructura|![Icono de campo](../ide/media/vxfield-icon.gif "vxField_Icon")|Campo o variable|  
 |![Símbolo de unión](../ide/media/vxunion-icon.gif "vxUnion_Icon")|Unión|![Símbolo de evento](../ide/media/vxevent-icon.gif "vxEvent_Icon")|evento|  
 |![Símbolo de enumeración](../ide/media/vxenum-icon.gif "vxEnum_Icon")|Enum|![Icono de constante](../ide/media/vxconstant-icon.gif "vxConstant_Icon")|Constante|  
@@ -50,7 +50,7 @@ En Vista de clases** y el **Examinador de objetos** se muestran iconos que repre
  Los siguientes iconos de señal se aplican a todos los iconos anteriores e indican su accesibilidad.  
   
 > [!NOTE]
->  Si el proyecto se incluye en una base de datos de control de código fuente, es posible que se muestren más iconos de señal para indicar el estado de control de código fuente, como registrado o modificado.  
+> Si el proyecto se incluye en una base de datos de control de código fuente, es posible que se muestren más iconos de señal para indicar el estado de control de código fuente, como registrado o modificado.  
   
 |Iconos|Descripción|  
 |----------|-----------------|  

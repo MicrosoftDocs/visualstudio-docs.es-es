@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a50328824bf6c869d6cfc1cef94af24566010e9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 9865d917e24abf58bdcf63e8abb21370f223aad2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56611263"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402315"
 ---
 # <a name="idiasymbolgetcallingconvention"></a>IDiaSymbol::get_callingConvention
 Devuelve un indicador de una convención de llamada de métodos.
@@ -39,7 +39,7 @@ HRESULT get_callingConvention ( 
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.
 
 > [!NOTE]
->  Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.
+> Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.
 
 ## <a name="requirements"></a>Requisitos
 

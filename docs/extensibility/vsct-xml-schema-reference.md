@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c2643c88eaf133d41fba7a8112f9b92150be3148
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 37b3f3105280ec384b6c180a65d2492ffd3bb02c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684642"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411106"
 ---
 # <a name="vsct-xml-schema-reference"></a>Referencia del esquema XML de VSCT
 Proporciona una tabla de elementos de esquema del compilador de tabla de comandos, con el elemento secundario permitido elementos y atributos para cada uno.
@@ -24,7 +24,7 @@ Proporciona una tabla de elementos de esquema del compilador de tabla de comando
  Un archivo de configuración (.vsct) de la tabla de comandos basado en XML define los elementos de comando que un paquete VSPackage proporciona al entorno de desarrollo integrado (IDE). Estos elementos incluyen elementos de menú, barras de herramientas, menús y cuadros combinados.
 
 > [!NOTE]
->  El compilador VSCT puede ejecutar un preprocesador en el archivo .vsct. Dado que normalmente es el preprocesador, que puede definir C++ incluye y macros que tienen la misma sintaxis que se usa en los archivos de C++. En el archivo .vsct se proporcionan ejemplos de este archivo que el **nuevo proyecto** asistente crea para un proyecto de VSPackage.
+> El compilador VSCT puede ejecutar un preprocesador en el archivo .vsct. Dado que normalmente es el preprocesador, que puede definir C++ incluye y macros que tienen la misma sintaxis que se usa en los archivos de C++. En el archivo .vsct se proporcionan ejemplos de este archivo que el **nuevo proyecto** asistente crea para un proyecto de VSPackage.
 
 ## <a name="optional-elements"></a>Elementos opcionales
  Algunos elementos VSCT son opcionales. Si un `Parent` no se especifica el argumento, Group_Undefined:0 se pueden implícita. Si un `Icon` argumento no se especifica, se implicarse guidOfficeIcon:msotcidNoIcon. Cuando se define una tecla de método abreviado, la emulación, que no se utiliza normalmente, es opcional.

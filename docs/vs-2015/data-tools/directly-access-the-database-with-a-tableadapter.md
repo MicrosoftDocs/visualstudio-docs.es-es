@@ -26,12 +26,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 079264d2687d382aa79e526d829687f2a60f6882
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 924a14cc3938420f32a1a2c25265ebe94e261b15
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106636"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431959"
 ---
 # <a name="directly-access-the-database-with-a-tableadapter"></a>Acceder directamente a la base de datos con un TableAdapter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ Además el `InsertCommand`, `UpdateCommand`, y `DeleteCommand`, los TableAdapter
 - Llamar a del TableAdapter `Insert` método, pasando los valores para cada columna como parámetros. El siguiente procedimiento usa la `Region` muestra un ejemplo de tabla en la databaseas de Northwind.  
   
     > [!NOTE]
-    >  Si no tiene una instancia disponible, cree una instancia del TableAdapter que desea usar.  
+    > Si no tiene una instancia disponible, cree una instancia del TableAdapter que desea usar.  
   
      [!code-csharp[VbRaddataSaving#15](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Class1.cs#15)]
      [!code-vb[VbRaddataSaving#15](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Class1.vb#15)]  
@@ -58,7 +58,7 @@ Además el `InsertCommand`, `UpdateCommand`, y `DeleteCommand`, los TableAdapter
 - Llamar a del TableAdapter `Update` método, pasando los valores nuevos y originales de cada columna como parámetros.  
   
     > [!NOTE]
-    >  Si no tiene una instancia disponible, cree una instancia del TableAdapter que desea usar.  
+    > Si no tiene una instancia disponible, cree una instancia del TableAdapter que desea usar.  
   
      [!code-csharp[VbRaddataSaving#18](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Class1.cs#18)]
      [!code-vb[VbRaddataSaving#18](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Class1.vb#18)]  
@@ -68,7 +68,7 @@ Además el `InsertCommand`, `UpdateCommand`, y `DeleteCommand`, los TableAdapter
 - Llamar a del TableAdapter `Delete` método, pasando los valores de cada columna como parámetros de la `Delete` método. El siguiente procedimiento usa la `Region` muestra un ejemplo de tabla en la databaseas de Northwind.  
   
     > [!NOTE]
-    >  Si no tiene una instancia disponible, cree una instancia del TableAdapter que desea usar.  
+    > Si no tiene una instancia disponible, cree una instancia del TableAdapter que desea usar.  
   
      [!code-csharp[VbRaddataSaving#21](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Class1.cs#21)]
      [!code-vb[VbRaddataSaving#21](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Class1.vb#21)]  

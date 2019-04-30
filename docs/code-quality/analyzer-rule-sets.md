@@ -1,6 +1,6 @@
 ---
 title: Conjuntos de reglas del analizador
-ms.date: 07/20/2018
+ms.date: 04/22/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - analyzers, rule sets
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da5eab1424ac6f6fe580ec0f71ec3efd6e120020
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
-ms.translationtype: MT
+ms.openlocfilehash: 32ed328cb399f0cd3e9a2a147d29fad56b845399
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867002"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387695"
 ---
 # <a name="rule-sets-for-roslyn-analyzers"></a>Conjuntos de reglas para los analizadores de Roslyn
 
@@ -25,7 +25,7 @@ Si está migrando de análisis de código estático de "FxCop" heredado para los
 
 ## <a name="use-analyzer-rule-sets"></a>Usar conjuntos de reglas del analizador
 
-Después de [instalar un paquete de NuGet analizador](install-roslyn-analyzers.md), busque la regla predefinida que se establece su *rulesets* directorio, por ejemplo *% USERPROFILE %\\.nuget\packages\ Microsoft.codequality.analyzers\<versión > \rulesets*. Desde allí, se puede arrastrar y colocar, o copiar y pegar, uno o varios de los conjuntos de reglas para el proyecto de Visual Studio en **el Explorador de soluciones**.
+Después de [instalar un paquete de NuGet analizador](install-roslyn-analyzers.md), busque la regla predefinida que se establece su *rulesets* directory. Por ejemplo, si hace referencia a la `Microsoft.CodeAnalysis.FxCopAnalyzers` analizador de paquetes, a continuación, puede encontrar su directorio de conjuntos de reglas en *% USERPROFILE %\\.nuget\packages\microsoft.codeanalysis.fxcopanalyzers\\\<versión \>\rulesets*. Desde allí, se puede arrastrar y colocar, o copiar y pegar, uno o varios de los conjuntos de reglas para el proyecto de Visual Studio en **el Explorador de soluciones**.
 
 Para crear una regla de establecer la regla activa establecida para el análisis, haga doble clic en el proyecto en **el Explorador de soluciones** y elija **propiedades**. En las páginas de propiedades del proyecto, seleccione el **análisis de código** ficha. En **ejecutar este conjunto de reglas**, seleccione **examinar**y, a continuación, seleccione el conjunto de reglas que copió en el directorio del proyecto. Ahora verá solo las infracciones de reglas para aquellas reglas que están habilitadas en el conjunto de reglas seleccionado.
 
@@ -54,7 +54,7 @@ El [Microsoft.CodeAnalysis.FxCopAnalyzers](https://www.nuget.org/packages/Micros
 
 ## <a name="see-also"></a>Vea también
 
-- [Preguntas más frecuentes de analizadores](analyzers-faq.md)
+- [Preguntas más frecuentes sobre analizadores](analyzers-faq.md)
 - [Introducción a los analizadores de .NET Compiler Platform](roslyn-analyzers-overview.md)
 - [Instalar analizadores](install-roslyn-analyzers.md)
 - [Usar los analizadores](use-roslyn-analyzers.md)

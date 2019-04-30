@@ -12,18 +12,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 67a58ab1bf508ba1b2edc7117412638de6c2231a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9c714aec9bf4bb1fa28bd04a1b5e3375f98da4dd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099551"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63410077"
 ---
 # <a name="create-a-custom-debug-engine"></a>Crear un motor de depuración personalizado
 Un motor de depuración (DE) es un componente que permite la depuración de las arquitecturas de tiempo de ejecución determinadas. Normalmente hay solo una implementación DE cada entorno de tiempo de ejecución.
 
 > [!NOTE]
->  Aunque hay otras implementaciones DE para Transact-SQL y JScript, VBScript y JScript comparten una única DE.
+> Aunque hay otras implementaciones DE para Transact-SQL y JScript, VBScript y JScript comparten una única DE.
 
  A DE funciona con el sistema de operación o intérprete para proporcionar servicios depuración como la evaluación de expresión, los puntos de interrupción y control de ejecución. Estos servicios se implementan a través de las interfaces DE y pueden hacer que al depurador en la transición entre distintos modos de funcionamiento. Para obtener más información, consulte [modos operativos](../../extensibility/debugger/operational-modes.md).
 

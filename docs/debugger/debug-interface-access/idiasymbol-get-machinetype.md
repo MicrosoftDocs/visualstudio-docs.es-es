@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 10a645ff35c903d7d315719a63f8fed34a1b6011
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 83156630aee0727502894b286f8c6823e25a5fe9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56611287"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63399264"
 ---
 # <a name="idiasymbolgetmachinetype"></a>IDiaSymbol::get_machineType
 Recupera el tipo de la CPU de destino.
@@ -39,7 +39,7 @@ HRESULT get_machineType ( 
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.
 
 > [!NOTE]
->  Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.
+> Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.
 
 ## <a name="see-also"></a>Vea también
 - [Enumeración CV_CPU_TYPE_e](../../debugger/debug-interface-access/cv-cpu-type-e.md)

@@ -13,12 +13,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: eae77a7685bbc9e8dc1613603baec9a5c93ad285
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: d40377c28e0987ac902ab8aa5cf778715eb899cd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54771074"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435847"
 ---
 # <a name="da0024-excessive-gc-cpu-time"></a>DA0024: Tiempo excesivo de CPU de GC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Id. de regla | DA0024 |
  Esta regla se desencadena cuando la cantidad de tiempo que se invierte en la recolección de elementos no utilizados es excesivamente alta en comparación con el tiempo total de procesamiento de la aplicación.  
   
 > [!NOTE]
->  Cuando la proporción de tiempo que se invierte en la recolección de elementos no utilizados es considerable, pero no excesiva, en comparación con el tiempo total de procesamiento de la aplicación, la advertencia [DA0023: Tiempo elevado de CPU de GC](../profiling/da0023-high-gc-cpu-time.md) se desencadena en lugar de esta regla.  
+> Cuando la proporción de tiempo que se invierte en la recolección de elementos no utilizados es considerable pero no excesiva en comparación con el tiempo total de procesamiento de la aplicación, se desencadena la advertencia [DA0023: Mucho tiempo de CPU de GC](../profiling/da0023-high-gc-cpu-time.md) en lugar de esta regla.  
   
 ## <a name="how-to-investigate-a-warning"></a>Cómo investigar una advertencia  
  Haga doble clic en el mensaje en la ventana Lista de errores para navegar a la [vista Marcas](../profiling/marks-view.md) de los datos de generación de perfiles. Busque la columna **Memoria CLR de .NET\\% de tiempo del GC**. Determine si hay fases concretas de ejecución del programa en que la sobrecarga de la recolección de elementos no utilizados de memoria administrada sea mayor que en otras. Compare los valores de % de tiempo del GC con la tasa de recolección de elementos no utilizados notificada en los valores **N.º de colecciones de gen. 0**, **N.º de colecciones de gen. 1** y **N.º de colecciones de gen. 2**.  

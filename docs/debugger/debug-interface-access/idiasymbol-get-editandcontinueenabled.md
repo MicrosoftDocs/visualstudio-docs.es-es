@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ba760660a6dfaf97040a296a3ce7991b7ab4555
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 5fa7521d569267d0ff070b54139fafe3befe0e96
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56606438"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63401950"
 ---
 # <a name="idiasymbolgeteditandcontinueenabled"></a>IDiaSymbol::get_editAndContinueEnabled
 Recupera una marca que indica si el módulo se compiló con la [/Z7, / Zi, /ZI (formato de la información de depuración)](/cpp/build/reference/z7-zi-zi-debug-information-format) modificador del compilador.
@@ -39,7 +39,7 @@ HRESULT get_editAndContinueEnabled ( 
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` o un código de error.
 
 > [!NOTE]
->  Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.
+> Un valor devuelto de `S_FALSE` significa que la propiedad no está disponible para el símbolo.
 
 ## <a name="requirements"></a>Requisitos
 

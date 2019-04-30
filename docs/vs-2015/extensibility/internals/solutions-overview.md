@@ -10,12 +10,12 @@ ms.assetid: 3b21e3a1-170a-4485-941e-6b04b7b27886
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8daa7922b1f1ba7cb90cca9a77a6db14977c7518
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fb3bb85ab172404262c147cce285cebaf756afc9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077620"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432078"
 ---
 # <a name="solutions-overview"></a>Información general sobre soluciones
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Una solución es una agrupación de uno o varios proyectos que funcionan conjunt
  Cualquier VSPackage puede escribir en cualquier tipo de archivo de solución. Dada la naturaleza de los archivos, hay dos interfaces diferentes implementadas para escribir en ellos. El <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps> interfaz escribe información de texto en el archivo .sln y <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts> interfaz escribe secuencias binarias en el archivo .suo.  
   
 > [!NOTE]
->  Un proyecto no tiene que escribir explícitamente una entrada para sí mismo en el archivo de solución el entorno encarga del proyecto. Por lo tanto, a menos que desee agregar contenido adicional específicamente para el archivo de solución, no es necesario registrar el VSPackage en este modo.  
+> Un proyecto no tiene que escribir explícitamente una entrada para sí mismo en el archivo de solución el entorno encarga del proyecto. Por lo tanto, a menos que desee agregar contenido adicional específicamente para el archivo de solución, no es necesario registrar el VSPackage en este modo.  
   
  Cada paquete VSPackage que admiten la persistencia de la solución usa tres interfaces, la <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence> interfaz, que es implementado por el entorno y lo llama el VSPackage, y `IVsPersistSolutionProps` y `IVsPersistSolutionOpts`, que son ambos implementados por el VSPackage. El `IVsPersistSolutionOpts` interfaz sólo debe implementarse si se se escritos por el VSPackage en el archivo .suo información privada.  
   
@@ -44,7 +44,7 @@ Una solución es una agrupación de uno o varios proyectos que funcionan conjunt
    Información específica sobre el uso de estos archivos puede encontrarse en [solución (. Los archivos sln)](../../extensibility/internals/solution-dot-sln-file.md) y [opciones de usuario de la solución (. Archivo suo)](../../extensibility/internals/solution-user-options-dot-suo-file.md).  
   
 > [!NOTE]
->  Si desea crear una nueva configuración de solución que consta de las configuraciones de dos de los proyectos y exclusión de un tercio de la compilación, deberá usar la interfaz de usuario de páginas de propiedad o la automatización. No se puede cambiar las configuraciones de administrador de compilación de soluciones y sus propiedades directamente, pero se puede manipular mediante el Administrador de compilación de soluciones el `SolutionBuild` clase a partir de DTE del modelo de automatización. Para obtener más información sobre la configuración de soluciones, consulte [configuración de la solución](../../extensibility/internals/solution-configuration.md).  
+> Si desea crear una nueva configuración de solución que consta de las configuraciones de dos de los proyectos y exclusión de un tercio de la compilación, deberá usar la interfaz de usuario de páginas de propiedad o la automatización. No se puede cambiar las configuraciones de administrador de compilación de soluciones y sus propiedades directamente, pero se puede manipular mediante el Administrador de compilación de soluciones el `SolutionBuild` clase a partir de DTE del modelo de automatización. Para obtener más información sobre la configuración de soluciones, consulte [configuración de la solución](../../extensibility/internals/solution-configuration.md).  
   
 ## <a name="see-also"></a>Vea también  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>   

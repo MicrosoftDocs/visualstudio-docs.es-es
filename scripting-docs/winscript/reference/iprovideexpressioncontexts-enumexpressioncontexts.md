@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d1e4c462780f7026329ff7a5d22c86dbb6058dc5
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 965147083bdc11a3544561fdd96cd85221ccd443
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58157755"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63410145"
 ---
 # <a name="iprovideexpressioncontextsenumexpressioncontexts"></a>IProvideExpressionContexts::EnumExpressionContexts
 Devuelve un enumerador de contextos de expresión que se conoce por este componente.  
@@ -50,7 +50,7 @@ HRESULT EnumExpressionContexts(
  El Administrador de depuración del proceso, usa este método para buscar todos los contextos de expresión global asociados a un subproceso determinado.  
   
 > [!NOTE]
->  Este método se llama desde dentro del subproceso de interés. Es responsabilidad del implementador para identificar el subproceso actual y devuelve un enumerador correspondiente.  
+> Este método se llama desde dentro del subproceso de interés. Es responsabilidad del implementador para identificar el subproceso actual y devuelve un enumerador correspondiente.  
   
 ## <a name="see-also"></a>Vea también  
  [IProvideExpressionContexts (Interfaz)](../../winscript/reference/iprovideexpressioncontexts-interface.md)

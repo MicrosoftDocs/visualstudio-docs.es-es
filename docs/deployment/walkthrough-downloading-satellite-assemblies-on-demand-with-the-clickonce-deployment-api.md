@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Descargar ensamblados satélite a petición con la API de implementación ClickOnce | Microsoft Docs'
+title: 'Tutorial: Descargar ensamblados satélite a petición con la API de implementación ClickOnce | Documentos de Microsoft'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -21,25 +21,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 515149f6e4e01c27d4076580f7fe405f3c8c5496
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 8a1aa828f0f4a84f1a8dce3055f3719a3c11520e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637547"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63405924"
 ---
 # <a name="walkthrough-download-satellite-assemblies-on-demand-with-the-clickonce-deployment-api"></a>Tutorial: Descargar ensamblados satélite a petición con la API de implementación de ClickOnce
 Las aplicaciones de Windows Forms pueden configurarse para varias referencias culturales utilizando ensamblados satélite. Un *ensamblado satélite* es un ensamblado que contiene los recursos de aplicación para una referencia cultural que no sea la referencia cultural predeterminada de la aplicación.
 
  Como se describe en [aplicaciones ClickOnce localizar](../deployment/localizing-clickonce-applications.md), puede incluir varios ensamblados satélite para varias referencias culturales en el mismo [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implementación. De forma predeterminada, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] descargará todos los ensamblados satélite en su implementación en el equipo cliente, aunque un cliente individual probablemente solo requiera un único ensamblado satélite.
 
- En este tutorial se demuestra cómo marcar los ensamblados satélite como opcionales y descargar únicamente el ensamblado que necesite un equipo cliente para la configuración de su referencia cultural actual. El siguiente procedimiento usa las herramientas disponibles en el [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. También puede realizar esta tarea mediante [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  Consulte también [Tutorial: descargar ensamblados satélite a petición con la API mediante el Diseñador de implementación de ClickOnce](/previous-versions/visualstudio/visual-studio-2012/ms366788(v=vs.110)) o [Tutorial: descargar ensamblados satélite a petición con la API de implementación de ClickOnce mediante el diseñador](/previous-versions/visualstudio/visual-studio-2013/ms366788(v=vs.120)).
+ En este tutorial se demuestra cómo marcar los ensamblados satélite como opcionales y descargar únicamente el ensamblado que necesite un equipo cliente para la configuración de su referencia cultural actual. El siguiente procedimiento usa las herramientas disponibles en el [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. También puede realizar esta tarea mediante [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  Consulte también [Tutorial: Descargar ensamblados satélite a petición con la API mediante el Diseñador de implementación de ClickOnce](/previous-versions/visualstudio/visual-studio-2012/ms366788(v=vs.110)) o [Tutorial: Descargar ensamblados satélite a petición con la API mediante el Diseñador de implementación de ClickOnce](/previous-versions/visualstudio/visual-studio-2013/ms366788(v=vs.120)).
 
 > [!NOTE]
->  Con fines de prueba, el siguiente ejemplo de código establece la referencia cultural en `ja-JP`mediante programación. Vea la sección “Pasos siguientes“ más adelante en este tema para obtener información sobre cómo ajustar este código para un entorno de producción.
+> Con fines de prueba, el siguiente ejemplo de código establece la referencia cultural en `ja-JP`mediante programación. Vea la sección “Pasos siguientes“ más adelante en este tema para obtener información sobre cómo ajustar este código para un entorno de producción.
 
 ## <a name="prerequisites"></a>Requisitos previos
- En este tema, se da por sentado que sabe agregar recursos localizados a la aplicación mediante Visual Studio. Para obtener instrucciones detalladas, consulte [Tutorial: formularios de Windows localizar](/previous-versions/visualstudio/visual-studio-2010/y99d1cd3(v=vs.100)).
+ En este tema, se da por sentado que sabe agregar recursos localizados a la aplicación mediante Visual Studio. Para obtener instrucciones detalladas, consulte [Tutorial: Adaptar formularios Windows](/previous-versions/visualstudio/visual-studio-2010/y99d1cd3(v=vs.100)).
 
 ### <a name="to-download-satellite-assemblies-on-demand"></a>Para descargar ensamblados satélite a petición
 

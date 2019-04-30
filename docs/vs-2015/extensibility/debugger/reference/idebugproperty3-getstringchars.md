@@ -12,12 +12,12 @@ ms.assetid: 832c37f3-85cb-4227-8ab2-f27a80eafe90
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0737607a8905e96e02b7189761198a7e9e3915b6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 661cf6833c292d5ff4015649d494ee3a7d04fdbb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58989292"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419881"
 ---
 # <a name="idebugproperty3getstringchars"></a>IDebugProperty3::GetStringChars
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ int GetStringChars(
  `rgString`  
  [out] Devuelve la cadena.  
   
- [Solo en C++], `rgString` es un puntero a un búfer que recibe los caracteres Unicode de la cadena. Este búfer debe ser al menos `buflen` caracteres (no bytes) de tamaño.  
+ [C++ solo], `rgString` es un puntero a un búfer que recibe los caracteres Unicode de la cadena. Este búfer debe ser al menos `buflen` caracteres (no bytes) de tamaño.  
   
  `pceltFetched`  
  [out] Donde se devuelve el número de caracteres que realmente se almacenan en el búfer. (Puede ser `NULL` en C++.)  
@@ -61,7 +61,7 @@ int GetStringChars(
  En C++, debe tener cuidado para asegurarse de que el búfer sea al menos `buflen` caracteres Unicode de longitud. Tenga en cuenta que un carácter Unicode es la longitud de 2 bytes.  
   
 > [!NOTE]
->  En C++, la cadena devuelta no incluye un carácter nulo de terminación. Si no especifica, `pceltFetched` a especificar el número de caracteres en la cadena.  
+> En C++, la cadena devuelta no incluye un carácter nulo de terminación. Si no especifica, `pceltFetched` a especificar el número de caracteres en la cadena.  
   
 ## <a name="example"></a>Ejemplo  
 <!-- TODO: review snippet reference  [!CODE [[cpp]]([cpp])]  -->  

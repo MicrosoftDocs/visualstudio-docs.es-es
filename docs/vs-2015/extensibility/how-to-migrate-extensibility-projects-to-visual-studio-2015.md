@@ -10,12 +10,12 @@ ms.assetid: 22491cdc-8f04-4e1c-8eb4-ff33798ec792
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d7c21d3755d29ec3e71a3be756778320e678ab89
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 41bf80c8ae00aa22666750de7b4b23df981c8465
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062781"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435921"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2015"></a>Procedimiento Migrar proyectos de extensibilidad a Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ ms.locfileid: "60062781"
 Aquí le mostramos cómo actualizar la extensión.  
   
 > [!IMPORTANT]
->  Si piensa mantener una versión de la solución de extensión para una versión anterior de Visual Studio, asegúrese de realizar una copia antes de que la actualización. Puede ser difícil devolver la versión actualizada a su estado anterior.  
+> Si piensa mantener una versión de la solución de extensión para una versión anterior de Visual Studio, asegúrese de realizar una copia antes de que la actualización. Puede ser difícil devolver la versión actualizada a su estado anterior.  
   
 #### <a name="to-upgrade-an-extensibility-solution"></a>Para actualizar una solución de extensibilidad  
   
@@ -54,4 +54,4 @@ Aquí le mostramos cómo actualizar la extensión.
 5. También puede cambiar al uso de la versión de NuGet de las herramientas de compilación del SDK de VS. Este paquete de NuGet es [Microsoft.VSSDK.BuildTools](http://www.nuget.org/packages/Microsoft.VSSDK.BuildTools) y una vez agregada a su proyecto se incluyen las herramientas necesarias y archivos para que pueda crear el proyecto de extensibilidad en un equipo sin instalado el SDK de VS de destino.  
   
 > [!NOTE]
->  No es necesario que actualice sus proyectos de extensibilidad existentes para usar las herramientas y ensamblados de referencia de NuGet.  Podrán seguir compilar con los ensamblados de referencia y las herramientas instaladas con el SDK de VS.
+> No es necesario que actualice sus proyectos de extensibilidad existentes para usar las herramientas y ensamblados de referencia de NuGet.  Podrán seguir compilar con los ensamblados de referencia y las herramientas instaladas con el SDK de VS.

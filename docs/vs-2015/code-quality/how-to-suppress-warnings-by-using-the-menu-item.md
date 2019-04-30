@@ -12,18 +12,18 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a8fbc314580b106f5e1e8dae5a0a78d043d3940b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5097ecb0f7458e739def275d616eb344a2a6db0d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080909"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426571"
 ---
 # <a name="how-to-suppress-warnings-by-using-the-menu-item"></a>Procedimiento Suprimir advertencias mediante el elemento de menú
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 NOTA]
->  Origen de supresión no se admite para proyectos de sitio web.  
+> Origen de supresión no se admite para proyectos de sitio web.  
   
  Puede utilizar la ventana de análisis de código para suprimir las advertencias de análisis de código. Suprimir una advertencia no es el mismo que si lo deshabilitan. Al suprimir una advertencia, se aplica solo a una instancia determinada de la infracción. Otras infracciones de la misma advertencia todavía se notificará en la ventana Lista de errores.  
   
@@ -42,4 +42,4 @@ NOTA]
      Se suprime la advertencia concreta, y la advertencia aparece en la ventana de análisis de código con un tachado.  
   
 > [!NOTE]
->  Las supresiones que no tienen un destino aparecen en el archivo de supresión global.
+> Las supresiones que no tienen un destino aparecen en el archivo de supresión global.

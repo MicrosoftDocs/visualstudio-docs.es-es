@@ -17,12 +17,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7f70b18bb2b648231e3cada312fd241375be3193
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2d152ce38c445955988ec76a2e328691eac152ca
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099850"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416950"
 ---
 # <a name="how-to-create-associations-between-types-class-designer"></a>Procedimiento Crear asociaciones entre tipos (Diseñador de clases)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ En el Diseñador de clases, las líneas de asociación muestran la forma en que 
  A pesar de que todos los campos y propiedades se pueden mostrar como asociaciones, tiene más sentido mostrar sólo los miembros importantes como asociaciones, dependiendo de lo que se desee resaltar en el diagrama. Puede mostrar los miembros menos importantes como miembros normales u ocultarlos totalmente.  
   
 > [!NOTE]
->  El Diseñador de clases sólo admite asociaciones unidireccionales.  
+> El Diseñador de clases sólo admite asociaciones unidireccionales.  
   
 ### <a name="to-define-an-association-line-in-the-class-diagram"></a>Para definir una línea de asociación en el Diagrama de clases  
   

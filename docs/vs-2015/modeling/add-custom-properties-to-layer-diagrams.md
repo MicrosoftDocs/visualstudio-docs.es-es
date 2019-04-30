@@ -11,12 +11,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7349bc8c76b749c4306f7483e807507b99a11cff
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d9db49c3aaaedde8676b4db2c5e798ad61782aed
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075212"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430517"
 ---
 # <a name="add-custom-properties-to-layer-diagrams"></a>Agregar propiedades personalizadas a diagramas de capas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Al escribir código de extensión para los diagramas de capas, puede almacenar v
  **Preparación inicial**  
   
 > [!IMPORTANT]
->  Para que las propiedades aparezcan, debe realizar el cambio siguiente en todos los equipos donde desee que las propiedades de capa sean visibles.  
+> Para que las propiedades aparezcan, debe realizar el cambio siguiente en todos los equipos donde desee que las propiedades de capa sean visibles.  
 > 
 >  1. Ejecutar el Bloc de notas mediante **ejecutar como administrador**. Abrir `%ProgramFiles%\Microsoft Visual Studio [version]\Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\extension.vsixmanifest`  
 >  

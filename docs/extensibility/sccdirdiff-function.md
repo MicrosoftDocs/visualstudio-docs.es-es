@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dbd637fa78e9290402990bdbbc237e0f431e14d7
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 2a0638b0e644242e471ff30bc58d550675089695
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691129"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434675"
 ---
 # <a name="sccdirdiff-function"></a>SccDirDiff (función)
 Esta función muestra las diferencias entre el directorio local actual en el disco de cliente y el proyecto bajo control de código fuente correspondiente.
@@ -83,7 +83,7 @@ SCCRTN SccDirDiff(
 |SCC_DIFF_QD_TIME|Si compatibles con el complemento, en modo silencioso compara el directorio a través de su marca de tiempo o, si no se admite, recurre a SCC_DIFF_QD_CHECKSUM o SCC_DIFF_QD_CONTENTS.|
 
 > [!NOTE]
->  Esta función utiliza los mismos marcadores de comando como el [SccDiff](../extensibility/sccdiff-function.md). Sin embargo, puede elegir un complemento de control de origen no admite la operación de "diff-rápido" para los directorios.
+> Esta función utiliza los mismos marcadores de comando como el [SccDiff](../extensibility/sccdiff-function.md). Sin embargo, puede elegir un complemento de control de origen no admite la operación de "diff-rápido" para los directorios.
 
 ## <a name="see-also"></a>Vea también
 - [Funciones de API de complemento de control de código fuente](../extensibility/source-control-plug-in-api-functions.md)

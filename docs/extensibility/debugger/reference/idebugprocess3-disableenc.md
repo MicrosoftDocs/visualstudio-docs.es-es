@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 39b7456d9a045331c53f8465cc7387823c734104
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 2cc26c9d2dae65d8bab0126be5a62b144ebf42b7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56688932"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63413298"
 ---
 # <a name="idebugprocess3disableenc"></a>IDebugProcess3::DisableENC
 Este método explícitamente deshabilita Editar y continuar en este proceso (y todos los programas contiene). Siempre debe devolver un proveedor de puerto personalizado `E_NOTIMPL`.
@@ -44,7 +44,7 @@ HRESULT DisableENC(
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve el código de error.
 
 > [!NOTE]
->  Siempre debe devolver un proveedor de puerto personalizado `E_NOTIMPL`.
+> Siempre debe devolver un proveedor de puerto personalizado `E_NOTIMPL`.
 
 ## <a name="remarks"></a>Comentarios
  Una vez que editar y continuar está deshabilitado para un proceso, puede volver a habilitar reiniciando el proceso.

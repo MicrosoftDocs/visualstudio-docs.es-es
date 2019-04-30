@@ -12,12 +12,12 @@ ms.assetid: 116c7324-7645-4c15-b484-7a5cdd065ef5
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a448a1149f90e07a95e2c9ea17102448f0fbd443
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 42472690431d48a9baafbb0abee27c1a07d24fcd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58987580"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428700"
 ---
 # <a name="idebugstackframe3interceptcurrentexception"></a>IDebugStackFrame3::InterceptCurrentException
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -64,7 +64,7 @@ int InterceptCurrentException(
  Cuando el depurador desea saber si se debe interceptar la excepción, llama a este método en el objeto de marco de pila actual. Este método es responsable de controlar todos los detalles de la excepción. Si el [IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md) no se implementa la interfaz o el `InterceptStackException` método devuelve un error, a continuación, el depurador continúa el procesamiento normal de la excepción.  
   
 > [!NOTE]
->  Las excepciones se pueden interceptar solo en código administrado, es decir, cuando se ejecuta el programa que se está depurando en tiempo de ejecución .NET. Por supuesto, pueden implementar los implementadores de lenguajes de terceros `InterceptStackException` en sus propios motores de depuración si así lo deciden.  
+> Las excepciones se pueden interceptar solo en código administrado, es decir, cuando se ejecuta el programa que se está depurando en tiempo de ejecución .NET. Por supuesto, pueden implementar los implementadores de lenguajes de terceros `InterceptStackException` en sus propios motores de depuración si así lo deciden.  
   
  Una vez completada la intercepción un [IDebugInterceptExceptionCompleteEvent2](../../../extensibility/debugger/reference/idebuginterceptexceptioncompleteevent2.md) se señala.  
   

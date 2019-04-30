@@ -15,12 +15,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 46a9b8ce099146b6bae853557404c7bfabbbfb6a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 0eadff91e8762349ec95c2d9f3bf5717bfecaa4a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58998228"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435034"
 ---
 # <a name="ca2115-call-gckeepalive-when-using-native-resources"></a>CA2115: Llamar a Call GC.KeepAlive cuando se utilicen recursos nativos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +56,7 @@ ms.locfileid: "58998228"
  En el ejemplo siguiente, `BadMethod` no incluye una llamada a `GC.KeepAlive` y, por tanto, infringe la regla. `GoodMethod` contiene el código corregido.
 
 > [!NOTE]
->  En este ejemplo es el pseudocódigo aunque el código se compila y ejecuta, no se desencadena la advertencia porque no se creó o se libera un recurso no administrado.
+> En este ejemplo es el pseudocódigo aunque el código se compila y ejecuta, no se desencadena la advertencia porque no se creó o se libera un recurso no administrado.
 
  [!code-csharp[FxCop.Security.IntptrAndFinalize#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.IntptrAndFinalize/cs/FxCop.Security.IntptrAndFinalize.cs#1)]
 

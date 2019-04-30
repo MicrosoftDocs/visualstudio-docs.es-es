@@ -17,12 +17,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9228eaec55dc936d44eeccd55e6a05559aea27e4
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: c90943f64166cfd5113032d14c2c66be1db858eb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59647477"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425096"
 ---
 # <a name="separate-datasets-and-tableadapters-into-different-projects"></a>Separar conjuntos de datos y TableAdapters en proyectos diferentes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Objetos DataSet con tipo se han mejorado para que la [TableAdapters](http://msdn
 1. Abra una solución que contenga un conjunto de datos (archivo .xsd).  
   
    > [!NOTE]
-   >  Si la solución no contiene el proyecto en el que desea separar el código del conjunto de datos, crear el proyecto, o agregar un proyecto existente a la solución.  
+   > Si la solución no contiene el proyecto en el que desea separar el código del conjunto de datos, crear el proyecto, o agregar un proyecto existente a la solución.  
   
 2. Haga doble clic en un archivo de conjunto de datos con tipo (archivo .xsd) en **el Explorador de soluciones** para abrir el conjunto de datos en el **Diseñador de Dataset**.  
   
@@ -54,7 +54,7 @@ Objetos DataSet con tipo se han mejorado para que la [TableAdapters](http://msdn
     Después de seleccionar el proyecto en el que desea generar el código del conjunto de datos, el **DataSet File** propiedad se rellena con un nombre de archivo predeterminado. Puede cambiar este nombre si es necesario. Además, si desea generar el código del conjunto de datos en un directorio concreto, puede establecer la propiedad **Carpeta de proyecto** con el nombre de una carpeta.  
   
    > [!NOTE]
-   >  Al separar conjuntos de datos y TableAdapters (estableciendo la **DataSet Project** propiedad), las clases de conjunto de datos parciales existentes en el proyecto no se moverá automáticamente. Las clases de conjunto de datos parciales existentes se deben mover manualmente al proyecto de conjunto de datos.  
+   > Al separar conjuntos de datos y TableAdapters (estableciendo la **DataSet Project** propiedad), las clases de conjunto de datos parciales existentes en el proyecto no se moverá automáticamente. Las clases de conjunto de datos parciales existentes se deben mover manualmente al proyecto de conjunto de datos.  
   
 6. Guarde el conjunto de datos.  
   
@@ -63,7 +63,7 @@ Objetos DataSet con tipo se han mejorado para que la [TableAdapters](http://msdn
    De forma predeterminada, después de separar el conjunto de datos y el código de `TableAdapter`, el resultado es un archivo de clase adicional en cada proyecto. El proyecto original tiene un archivo denominado DatasetName.Designer.vb (o DatasetName.Designer.cs) que contiene el `TableAdapter` código. El proyecto designado en el **Dataset Project** propiedad tiene un archivo denominado DatasetName.DataSet.Designer.vb (o DatasetName.DataSet.Designer.cs) que contiene el código del conjunto de datos.  
   
 > [!NOTE]
->  Para ver el archivo de clase generada, seleccione el conjunto de datos o `TableAdapter` proyecto. A continuación, en **el Explorador de soluciones**, seleccione **mostrar todos los archivos** .  
+> Para ver el archivo de clase generada, seleccione el conjunto de datos o `TableAdapter` proyecto. A continuación, en **el Explorador de soluciones**, seleccione **mostrar todos los archivos** .  
   
 ## <a name="see-also"></a>Vea también  
  [Introducción a las aplicaciones de datos con N niveles](../data-tools/n-tier-data-applications-overview.md)   

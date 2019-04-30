@@ -11,16 +11,16 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ea6345ef56cec8e3a7d90ed964c320f96fdbcdcd
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: db7587ad6cd12c80d21caf38e7d35289e4782da3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56711246"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411269"
 ---
 # <a name="display-locals"></a>Variables locales de presentación
 > [!IMPORTANT]
->  En Visual Studio 2015, esta forma de implementar los evaluadores de expresión está en desuso. Para obtener información sobre la implementación de evaluadores de expresión de CLR, vea [evaluadores de expresiones CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) y [ejemplo de evaluador de expresión administrado](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> En Visual Studio 2015, esta forma de implementar los evaluadores de expresión está en desuso. Para obtener información sobre la implementación de evaluadores de expresión de CLR, vea [evaluadores de expresiones CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) y [ejemplo de evaluador de expresión administrado](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
  La ejecución siempre tiene lugar dentro del contexto de un método, que también se conoce como el método contenedor o el método actual. Cuando la ejecución se detiene, Visual Studio llama al motor de depuración (DE) para obtener una lista de variables locales y los argumentos, se denominan a variables locales del método. Visual Studio muestra estas variables locales y sus valores en el **variables locales** ventana.
 
@@ -29,7 +29,7 @@ ms.locfileid: "56711246"
  Las llamadas DE [EnumChildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) para obtener un [IEnumDebugPropertyInfo2](../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) object, que se filtran para devolver solo las variables locales y enumerar para generar una lista de [DEBUG_PROPERTY_INFO](../../extensibility/debugger/reference/debug-property-info.md)estructuras. Cada estructura contiene el nombre, tipo y valor de una variable local. El tipo y valor se almacenan como cadenas con formato adecuadas para su presentación. El nombre, tipo y valor normalmente se muestran juntos en una línea de la **variables locales** ventana.
 
 > [!NOTE]
->  El **Inspección rápida** y **inspección** ventanas también muestran las variables con el mismo formato de nombre, valor y tipo. Sin embargo, esos valores se obtienen mediante una llamada a [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) en lugar de `IDebugProperty2::EnumChildren`.
+> El **Inspección rápida** y **inspección** ventanas también muestran las variables con el mismo formato de nombre, valor y tipo. Sin embargo, esos valores se obtienen mediante una llamada a [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) en lugar de `IDebugProperty2::EnumChildren`.
 
 ## <a name="in-this-section"></a>En esta sección
  [Implementación de ejemplo de variables locales](../../extensibility/debugger/sample-implementation-of-locals.md) usa ejemplos paso a paso a través del proceso de implementación de las variables locales.

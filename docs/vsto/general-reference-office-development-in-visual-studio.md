@@ -14,18 +14,18 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 70a34a4f0e9785277743d2870b23e33f848912b4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 2f1370dc0eb159b3f566e6ddcba6e1317cfb441a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641096"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427958"
 ---
 # <a name="general-reference-office-development-in-visual-studio"></a>Referencia general (desarrollo de Office en Visual Studio)
   Esta sección contiene detalles técnicos acerca de los proyectos de Microsoft Office en Visual Studio.
 
 > [!NOTE]
->  ¿Está interesado en desarrollar soluciones que amplían la experiencia de Office a través de [varias plataformas](https://dev.office.com/add-in-availability)? Visite el nuevo [modelo de complementos de Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Complementos de Office tienen una superficie pequeña en comparación con las soluciones y complementos VSTO, y puede crearlas con prácticamente cualquier tecnología, como HTML5, CSS3, JavaScript y XML de programación web.
+> ¿Está interesado en desarrollar soluciones que amplían la experiencia de Office a través de [varias plataformas](https://dev.office.com/add-in-availability)? Visite el nuevo [modelo de complementos de Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Complementos de Office tienen una superficie pequeña en comparación con las soluciones y complementos VSTO, y puede crearlas con prácticamente cualquier tecnología, como HTML5, CSS3, JavaScript y XML de programación web.
 
 ## <a name="in-this-section"></a>En esta sección
 - [Ensamblados de interoperabilidad primarios de Office](../vsto/office-primary-interop-assemblies.md)

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5a8301bb5daf0334a48078690a15b1f3d2991698
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: dcc86d8c43703b0274c5282c9f4f843f760e697c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56622805"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428905"
 ---
 # <a name="statement-completion-in-a-legacy-language-service"></a>Finalización de instrucciones en un servicio de lenguaje heredado
 Finalización de instrucciones es el proceso por el que el servicio de lenguaje ayuda a los usuarios finalizar una palabra clave del lenguaje o el elemento que se haya iniciado escribiendo en el editor básico. Este tema describe cómo funciona la finalización de instrucciones y cómo implementarlo en su servicio de lenguaje.
@@ -24,7 +24,7 @@ Finalización de instrucciones es el proceso por el que el servicio de lenguaje 
  Servicios de lenguaje heredado se implementan como parte de un paquete VSPackage, pero la forma más reciente para implementar características de servicio de lenguaje es usar las extensiones MEF. Para obtener más información acerca de la nueva forma de implementar la finalización de instrucciones, consulte [Tutorial: Mostrar la finalización de instrucciones](../../extensibility/walkthrough-displaying-statement-completion.md).
 
 > [!NOTE]
->  Se recomienda que comience a usar el nuevo editor de API tan pronto como sea posible. Esto mejorará el rendimiento de su servicio de lenguaje y le permiten aprovechar las nuevas características del editor.
+> Se recomienda que comience a usar el nuevo editor de API tan pronto como sea posible. Esto mejorará el rendimiento de su servicio de lenguaje y le permiten aprovechar las nuevas características del editor.
 
 ## <a name="implementing-statement-completion"></a>Finalización de instrucciones de implementación
  Finalización de instrucciones en el editor básico, activa una interfaz de usuario especial que interactivamente le ayuda con más facilidad y escribe rápidamente código. Ayuda de finalización de instrucciones mostrando objetos relevantes o clases cuando se necesitan, lo que evita tener que recordar los elementos específicos o tener que buscarlos en un tema de referencia de ayuda.

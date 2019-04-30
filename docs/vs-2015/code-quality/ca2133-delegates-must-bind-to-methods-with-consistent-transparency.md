@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e9fb3a7aab243465ac4412e9d3adea9152d909ee
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: a8a19a84336cc6452f663eb65429326b52268728
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58997381"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386957"
 ---
 # <a name="ca2133-delegates-must-bind-to-methods-with-consistent-transparency"></a>CA2133: Los delegados deben enlazarse a métodos con una transparencia coherente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "58997381"
 |Cambio problemático|Problemático|
 
 > [!NOTE]
->  Esta advertencia solo se aplica al código que se está ejecutando el CoreCLR (la versión de CLR que es específica de aplicaciones Web de Silverlight).
+> Esta advertencia solo se aplica al código que se está ejecutando el CoreCLR (la versión de CLR que es específica de aplicaciones Web de Silverlight).
 
 ## <a name="cause"></a>Motivo
  Esta advertencia se desencadena en un método que enlaza un delegado que está marcado con el <xref:System.Security.SecurityCriticalAttribute> a un método que es transparente o está marcado con el <xref:System.Security.SecuritySafeCriticalAttribute>. La advertencia también desencadena un método que enlaza un delegado que es transparente o crítico para la seguridad a un método crítico.

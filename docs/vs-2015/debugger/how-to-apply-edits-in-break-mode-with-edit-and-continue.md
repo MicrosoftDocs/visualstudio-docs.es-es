@@ -24,12 +24,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e26b293a5ac7326ca8f82250ec3d0da9fe96371c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5c04dc0ae6e5272d2544ad7436fa7ca516c9a022
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069931"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437357"
 ---
 # <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue"></a>Procedimiento Aplicar tareas de edición en modo de interrupción con Editar y continuar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,7 +75,7 @@ Puede utilizar la opción Editar y continuar para modificar el código en modo d
      Para obtener más información, consulte [ediciones no compatibles en Visual Basic editar y continuar](../debugger/unsupported-edits-in-visual-basic-edit-and-continue.md).  
   
     > [!NOTE]
-    >  Si intenta realizar un cambio en el código no permitido por Editar y continuar, el cambio quedará subrayado con una línea ondulada de color púrpura y aparecerá una tarea en la Lista de tareas. No podrá reanudar la ejecución del código hasta que deshaga este cambio no válido en el código.  
+    > Si intenta realizar un cambio en el código no permitido por Editar y continuar, el cambio quedará subrayado con una línea ondulada de color púrpura y aparecerá una tarea en la Lista de tareas. No podrá reanudar la ejecución del código hasta que deshaga este cambio no válido en el código.  
   
 3. En el menú **Depurar**, haga clic en **Continuar** para reanudar la ejecución.  
   

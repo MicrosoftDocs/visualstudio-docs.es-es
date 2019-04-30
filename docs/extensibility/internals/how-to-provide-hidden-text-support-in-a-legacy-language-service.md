@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e3bec39ca044b0558dfeb9603137571a61c96548
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e710f0ca097ef1808abc661e16cdff34c82bd348
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078855"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418479"
 ---
 # <a name="how-to-provide-hidden-text-support-in-a-legacy-language-service"></a>Procedimiento Proporcionar compatibilidad con texto oculto en un servicio de lenguaje heredado
 Puede crear áreas de texto oculto además de regiones de esquema. Regiones de texto oculto pueden ser controlado por el cliente o controlado por el editor y se utilizan para ocultar una región de texto completo. El editor muestra una región oculta como líneas horizontales. Un ejemplo de esto es el **solo Script** vista en el editor HTML.
@@ -35,13 +35,13 @@ Puede crear áreas de texto oculto además de regiones de esquema. Regiones de t
      Un puntero a la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> se devuelve el objeto.
 
     > [!NOTE]
-    >  Cuando se llama a `CreateHiddenTextSession`, puede especificar un cliente de texto oculto (es decir, <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextClient>). El cliente de texto oculto le avisa cuando el texto oculto o esquematización está expandida o contraída por el usuario.
+    > Cuando se llama a `CreateHiddenTextSession`, puede especificar un cliente de texto oculto (es decir, <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextClient>). El cliente de texto oculto le avisa cuando el texto oculto o esquematización está expandida o contraída por el usuario.
 
 4. Llame a <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession.AddHiddenRegions%2A> para agregar uno o más nuevo de esquema regiones a la vez, especificando la siguiente información en el `reHidReg` (<xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion>) parámetro:
 
     1. Especifique un valor de `hrtConcealed` en el `iType` miembro de la <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> estructura para indicar que va a crear una región oculta, en lugar de una región de esquema.
 
         > [!NOTE]
-        >  Cuando se ocultan ocultadas regiones, el editor muestra automáticamente las líneas en torno a las regiones ocultas para indicar su presencia.
+        > Cuando se ocultan ocultadas regiones, el editor muestra automáticamente las líneas en torno a las regiones ocultas para indicar su presencia.
 
     2. Especifique si la región está controlado por el cliente o controlado por el editor en el `dwBehavior` los miembros de la <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> estructura. La implementación de esquematización inteligente puede contener una combinación de las áreas de texto oculto y controlado por el cliente y el editor de esquema.

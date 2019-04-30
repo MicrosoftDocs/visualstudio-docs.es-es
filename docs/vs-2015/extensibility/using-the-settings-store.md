@@ -10,12 +10,12 @@ ms.assetid: 447ec08a-eca5-40b8-89b0-f98fdf3d39a4
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 87a561ed3596b98f35e26e19e2c5851534aba564
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4b6c2810a81ada06152faea06e86a27f7907a643
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094831"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430102"
 ---
 # <a name="using-the-settings-store"></a>Uso del almacén de configuración
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,6 +84,6 @@ Hay dos tipos de almacenes de configuración:
 2. Vaya a HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp_Config\InstalledProducts\\.  
   
     > [!NOTE]
-    >  Asegúrese de que está mirando la clave que contiene \14.0Exp_Config\ y no \14.0_Config\\. Cuando se ejecuta la instancia experimental de Visual Studio, opciones de configuración están en el subárbol del registro "14.0Exp_Config".  
+    > Asegúrese de que está mirando la clave que contiene \14.0Exp_Config\ y no \14.0_Config\\. Cuando se ejecuta la instancia experimental de Visual Studio, opciones de configuración están en el subárbol del registro "14.0Exp_Config".  
   
 3. Expanda el nodo \Installed Products\. Si el mensaje en los pasos anteriores es **Microsoft Windows Phone Developer Tools instalado: True**, \Installed Products\ debe contener un nodo de Microsoft Windows Phone Developer Tools. Si el mensaje es **Microsoft Windows Phone Developer Tools instalado: False**, \Installed Products\ no debe contener un nodo de Microsoft Windows Phone Developer Tools.

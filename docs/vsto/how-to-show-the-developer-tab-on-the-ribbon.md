@@ -13,24 +13,24 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2e1855c64e88cdf45715654eede780aaa20d0258
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6a9a11f42acae44c441aca8cb06a1a363fea5a73
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091426"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418855"
 ---
 # <a name="how-to-show-the-developer-tab-on-the-ribbon"></a>Procedimiento Mostrar la pestaña Programador en la cinta de opciones
   Para tener acceso a la **Developer** pestaña en la cinta de una aplicación de Office, debe configurarlo para mostrar esa pestaña, ya que no aparece de forma predeterminada. Por ejemplo, debe mostrar esa pestaña si desea agregar un <xref:Microsoft.Office.Tools.Word.GroupContentControl> a una personalización de nivel de documento para Word.
 
 > [!NOTE]
->  Esta guía se aplica únicamente a aplicaciones de Office 2010 o versiones posteriores. Si desea mostrar esta pestaña en 2007 Microsoft Office System, vea la siguiente versión de este tema [Cómo: Mostrar la pestaña Programador en la cinta de opciones](https://web.archive.org/web/20140303033431/msdn.microsoft.com/library/bb608625(v=vs.90).aspx
+> Esta guía se aplica únicamente a aplicaciones de Office 2010 o versiones posteriores. Si desea mostrar esta pestaña en 2007 Microsoft Office System, vea la siguiente versión de este tema [Cómo: Mostrar la pestaña Programador en la cinta de opciones](https://web.archive.org/web/20140303033431/msdn.microsoft.com/library/bb608625(v=vs.90).aspx
 ).
 
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]
 
 > [!NOTE]
->  No tiene acceso un **Developer** ficha.
+> No tiene acceso un **Developer** ficha.
 
 ## <a name="to-show-the-developer-tab"></a>Para mostrar la pestaña Desarrollador
 

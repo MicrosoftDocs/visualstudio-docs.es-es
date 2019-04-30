@@ -11,12 +11,12 @@ ms.assetid: 745c2337-cfff-4d02-b49c-3ca7c4945c5e
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9e39dcbcdb3fe8396c3d4d42003a7aa40b5f527a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: f980c9d14bc2d0c9728f87374828cf690737429c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58998789"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436402"
 ---
 # <a name="getting-a-port"></a>Obtención de un puerto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Un puerto representa una conexión a un equipo en el que se estén ejecutando pr
  Este fragmento de código muestra cómo usar el puerto proporcionado a [LaunchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) para registrar un nodo de programa en [ResumeProcess](../../extensibility/debugger/reference/idebugenginelaunch2-resumeprocess.md). Los parámetros no directamente relacionados con este concepto se han omitido para mayor claridad.  
   
 > [!NOTE]
->  En este ejemplo usa el puerto para iniciar y reanudar el proceso y se da por supuesto que el [IDebugPortEx2](../../extensibility/debugger/reference/idebugportex2.md) interfaz se implementa en el puerto. Esto no es la única forma de realizar estas tareas, y es posible que el puerto puede no incluso participar distinto que el programa [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) que le asignó.  
+> En este ejemplo usa el puerto para iniciar y reanudar el proceso y se da por supuesto que el [IDebugPortEx2](../../extensibility/debugger/reference/idebugportex2.md) interfaz se implementa en el puerto. Esto no es la única forma de realizar estas tareas, y es posible que el puerto puede no incluso participar distinto que el programa [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) que le asignó.  
   
 ```cpp#  
 // This is an IDebugEngineLaunch2 method.  

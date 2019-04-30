@@ -1,5 +1,5 @@
 ---
-title: Filtrar Agregar un método Finder específico | Documentos de Microsoft
+title: Procedimiento Agregar un método Finder específico | Documentos de Microsoft
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,14 +17,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e6f52caf33820b230eb00b1be2999fe7f972176f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 8fdd467f2b3a06398198f6fd8452c6a548bf0872
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56615291"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431268"
 ---
-# <a name="how-to-add-a-specific-finder-method"></a>Filtrar Agregar un método Finder específico
+# <a name="how-to-add-a-specific-finder-method"></a>Procedimiento Agregar un método Finder específico
   Puede devolver una instancia de entidad única mediante la creación de un *buscador específico* método. El servicio de conectividad de datos profesionales (BDC) ejecuta el método de buscador específico cuando un usuario elige una entidad en un elemento web de datos de negocio o una lista externa. Para obtener más información, consulte [diseñar un modelo de conectividad a datos empresariales](../sharepoint/designing-a-business-data-connectivity-model.md).
 
 ### <a name="to-create-a-specific-finder-method"></a>Para crear un método Finder específico
@@ -58,10 +58,10 @@ ms.locfileid: "56615291"
 5. Configure el descriptor de tipo del parámetro devuelto como un descriptor de tipo de entidad. Para obtener información sobre cómo crear un descriptor de tipo de entidad, vea [Cómo: Definir el descriptor de tipo de un parámetro](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).
 
    > [!NOTE]
-   >  No tiene que realizar este paso si ha agregado un método Finder para la entidad. Visual Studio utiliza el descriptor de tipos que definió en el método Finder.
+   > No tiene que realizar este paso si ha agregado un método Finder para la entidad. Visual Studio utiliza el descriptor de tipos que definió en el método Finder.
 
    > [!NOTE]
-   >  Si el campo de identificador del tipo de entidad representa un campo en una tabla de base de datos que se genera automáticamente, establezca la **de sólo lectura** propiedad del campo de identificador a **True**.
+   > Si el campo de identificador del tipo de entidad representa un campo en una tabla de base de datos que se genera automáticamente, establezca la **de sólo lectura** propiedad del campo de identificador a **True**.
 
 6. En el **detalles del método** ventana, elija la instancia de método del método.
 
@@ -80,7 +80,7 @@ ms.locfileid: "56615291"
      En el ejemplo siguiente se devuelve un contacto de la base de datos de ejemplo AdventureWorks para SQL Server.
 
      > [!NOTE]
-     >  Reemplace el valor de la `ServerName` campo con el nombre del servidor.
+     > Reemplace el valor de la `ServerName` campo con el nombre del servidor.
 
      [!code-csharp[SP_BDC#3](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#3)]
      [!code-vb[SP_BDC#3](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#3)]

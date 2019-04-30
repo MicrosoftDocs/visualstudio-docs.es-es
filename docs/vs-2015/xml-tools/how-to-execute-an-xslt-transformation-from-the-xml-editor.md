@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ec546997d5c6ff75a3ccba1e60e9fe7a4b5b7c74
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8085864ebdb73e8233322a2f91a044dec95dc126
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112603"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431050"
 ---
 # <a name="how-to-execute-an-xslt-transformation-from-the-xml-editor"></a>Procedimiento Ejecutar una transformación XSLT desde el Editor XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ El Editor XML permite asociar una hoja de estilos XSLT con un documento XML, rea
 3. Haga clic en el **ShowXSL salida** situado en la **Editor XML** barra de herramientas.  
   
     > [!NOTE]
-    >  Si no hay ninguna hoja de estilos asociada con el documento XML, un cuadro de diálogo le pide que proporcione la hoja de estilos que desea utilizar.  
+    > Si no hay ninguna hoja de estilos asociada con el documento XML, un cuadro de diálogo le pide que proporcione la hoja de estilos que desea utilizar.  
     >   
     >  El resultado de la transformación XSLT se muestra en una nueva ventana de documento.  
   
@@ -51,7 +51,7 @@ El Editor XML permite asociar una hoja de estilos XSLT con un documento XML, rea
 2. Especifique un documento XML en el **entrada** campo del documento **propiedades** ventana.  
   
     > [!NOTE]
-    >  El documento XML es el documento de entrada que se utiliza en la transformación. Si no se especifica un documento cuando se inicia la transformación XSLT, el **abrir archivo** aparece el cuadro de diálogo, y puede especificar un documento en ese momento.  
+    > El documento XML es el documento de entrada que se utiliza en la transformación. Si no se especifica un documento cuando se inicia la transformación XSLT, el **abrir archivo** aparece el cuadro de diálogo, y puede especificar un documento en ese momento.  
   
 3. Haga clic en el **ShowXSLT salida** situado en la **Editor XML** barra de herramientas.  
   

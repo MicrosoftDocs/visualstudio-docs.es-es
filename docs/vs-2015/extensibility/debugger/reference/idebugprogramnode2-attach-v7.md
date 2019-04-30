@@ -13,12 +13,12 @@ ms.assetid: b5ffc736-efc7-4ca8-964d-5536ff891b0e
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8c02973faf1d65ff8be79cd387666f35651db7bf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 08028f2b03f3ea36cc72172ca8f9de31740b49f3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58997662"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417907"
 ---
 # <a name="idebugprogramnode2attachv7"></a>IDebugProgramNode2::Attach_V7
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ int Attach_V7 ( 
 ## <a name="remarks"></a>Comentarios  
   
 > [!WARNING]
->  Como de [!INCLUDE[vsprvslong](../../../includes/vsprvslong-md.md)], este método ya no se usa y siempre debe devolver `E_NOTIMPL`. Consulte la [IDebugProgramNodeAttach2](../../../extensibility/debugger/reference/idebugprogramnodeattach2.md) interfaz para un enfoque alternativo si el nodo del programa debe indicar no se puede adjuntar a o si el nodo del programa es simplemente la configuración del programa `GUID`. En caso contrario, implemente el [adjuntar](../../../extensibility/debugger/reference/idebugengine2-attach.md) método.  
+> Como de [!INCLUDE[vsprvslong](../../../includes/vsprvslong-md.md)], este método ya no se usa y siempre debe devolver `E_NOTIMPL`. Consulte la [IDebugProgramNodeAttach2](../../../extensibility/debugger/reference/idebugprogramnodeattach2.md) interfaz para un enfoque alternativo si el nodo del programa debe indicar no se puede adjuntar a o si el nodo del programa es simplemente la configuración del programa `GUID`. En caso contrario, implemente el [adjuntar](../../../extensibility/debugger/reference/idebugengine2-attach.md) método.  
   
 ## <a name="prior-to-visual-studio-2005"></a>Antes de Visual Studio 2005  
  Este método debe implementarse solo si la DE que se ejecuta en el espacio de direcciones del programa que se está depurando. En caso contrario, este método debe devolver `S_FALSE`.  

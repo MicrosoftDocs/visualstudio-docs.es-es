@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 27e1f1b923b395121fb5671088d99421a79c45fc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 90499ae5dadac705d759270996f647b2d1a65445
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059219"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406604"
 ---
 # <a name="how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api"></a>Procedimiento Búsqueda de actualizaciones de aplicaciones mediante programación utilizando la API de implementación de ClickOnce
 ClickOnce ofrece dos maneras de actualizar una aplicación una vez que se implementa. En el primer método, puede configurar la implementación de ClickOnce para buscar automáticamente actualizaciones en determinados intervalos. En el segundo método, puede escribir código que usa el <xref:System.Deployment.Application.ApplicationDeployment> clase para comprobar si hay actualizaciones en función de un evento, como una solicitud de usuario.
@@ -30,7 +30,7 @@ ClickOnce ofrece dos maneras de actualizar una aplicación una vez que se implem
  Para actualizar una aplicación ClickOnce mediante programación, debe especificar una ubicación para las actualizaciones. Esto se conoce a veces como un proveedor de implementación. Para obtener más información sobre cómo establecer esta propiedad, vea [elegir una estrategia de actualización de ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md).
 
 > [!NOTE]
->  También puede usar la técnica descrita a continuación para implementar la aplicación desde una ubicación pero actualizarla desde otra. Para obtener más información, vea [Cómo: Especificación de una ubicación alternativa para las actualizaciones de implementación](../deployment/how-to-specify-an-alternate-location-for-deployment-updates.md).
+> También puede usar la técnica descrita a continuación para implementar la aplicación desde una ubicación pero actualizarla desde otra. Para obtener más información, vea [Cómo: Especificación de una ubicación alternativa para las actualizaciones de implementación](../deployment/how-to-specify-an-alternate-location-for-deployment-updates.md).
 
 ### <a name="to-check-for-updates-programmatically"></a>Para comprobar las actualizaciones mediante programación
 

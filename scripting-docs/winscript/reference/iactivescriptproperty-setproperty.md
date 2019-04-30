@@ -17,12 +17,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f24f63612b5d4dcb1c6a5a65e0ad38f8056cf842
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: d689b7b2a252b208ae578f9bfd95ab93777f7cc5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58159392"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63385971"
 ---
 # <a name="iactivescriptpropertysetproperty"></a>IActiveScriptProperty::SetProperty
 Establece la propiedad especificada por el parámetro.  
@@ -76,7 +76,7 @@ HRESULT SetProperty(
  Para seleccionar el conjunto de características del lenguaje que se deben admitir cuando la [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] se inicializa el motor de scripting, invocar `SetProperty` y pasar un valor que corresponde a la característica de lenguaje que se estableció para habilitarse para SCRIPTPROP_INVOKEVERSIONING. Si esta propiedad se establece en 1 (SCRIPTLANGUAGEVERSION_5_7), las características de lenguaje disponibles son los mismos que los que ha aparecido en la versión 5.7 del [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] motor de scripting. Si se establece en 2 (SCRIPTLANGUAGEVERSION_5_8), las características de lenguaje disponibles son aquellos que apareció en la versión 5.7 Además de nuevas características que se han agregado en la versión 5.8. De forma predeterminada, esta propiedad se establece en 0 (SCRIPTLANGUAGEVERSION_DEFAULT), que es equivalente al conjunto de características de lenguaje que apareció en la versión 5.7, a menos que el host admite un comportamiento predeterminado distinto. Por ejemplo, Internet Explorer 8 incluye el [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] características del lenguaje que son compatibles con la versión 5.8 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] motor de scripting de forma predeterminada cuando el modo de documento predeterminado para Internet Explorer 8 es el modo de "Estándar de Internet Explorer 8". Cambiar el modo de documento de Internet Explorer 8 a los estándares de Internet Explorer 7 o el modo de interpretación restablece el [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] motor de scripting para admitir sólo el conjunto de características de lenguaje que existían en la versión 5.7 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] motor de scripting.  
   
 > [!NOTE]
->  Se debe establecer SCRIPTPROP_INVOKEVERSIONING solo cuando el [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] se está inicializando el motor de scripting.  
+> Se debe establecer SCRIPTPROP_INVOKEVERSIONING solo cuando el [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] se está inicializando el motor de scripting.  
   
 ## <a name="example"></a>Ejemplo  
  El ejemplo siguiente muestra cómo forzar que el motor de scripting para usar la división de enteros y cómo permitir que la sobrecarga de la función de comparación.  

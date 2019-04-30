@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 595c9127aad71cac6f446f356c309809b7172d94
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 82763f78673391ab6a308ba026a6b9e53c3b474b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045492"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438827"
 ---
 # <a name="manage-documents-on-a-server-by-using-the-serverdocument-class"></a>Administrar documentos en un servidor mediante la clase ServerDocument
   Puede usar el `ServerDocument` clase en el [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] para administrar varios aspectos de las personalizaciones de nivel de documento, incluso si no están instalado Microsoft Office Word y Microsoft Office Excel. Puede realizar las siguientes tareas:
@@ -38,7 +38,7 @@ ms.locfileid: "60045492"
  Para obtener más información acerca de Visual Studio 2010 Tools para Office Runtime y las extensiones de Office para .NET Framework, vea [Visual Studio Tools para Office runtime overview](../vsto/visual-studio-tools-for-office-runtime-overview.md).
 
 > [!NOTE]
->  Si tiene una aplicación heredada que usa el `ServerDocument` clase en el `Visual Studio Tools for Office` system (versión 3.0 en tiempo de ejecución), el `Visual Studio Tools for Office` system (versión 3.0 runtime) debe instalarse en equipos que ejecutan la aplicación. El `Visual Studio 2010 Tools for Office runtime` no se puede ejecutar estas aplicaciones.
+> Si tiene una aplicación heredada que usa el `ServerDocument` clase en el `Visual Studio Tools for Office` system (versión 3.0 en tiempo de ejecución), el `Visual Studio Tools for Office` system (versión 3.0 runtime) debe instalarse en equipos que ejecutan la aplicación. El `Visual Studio 2010 Tools for Office runtime` no se puede ejecutar estas aplicaciones.
 
 ## <a name="CachedData"></a> Trabajar con datos almacenados en caché en el documento
  La `ServerDocument` clase proporciona miembros que se puede utilizar para trabajar con la caché de datos de documentos personalizados. Para obtener más información acerca de los datos almacenados en caché, consulte [almacenar en caché datos](../vsto/caching-data.md) y [tener acceso a datos de documentos en el servidor](../vsto/accessing-data-in-documents-on-the-server.md).
