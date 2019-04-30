@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 211b2cef552fb7d079ba7b403b9dafb266b400e2
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 7442eebcd566470616382367fbdaad5cce774155
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355677"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950341"
 ---
 # <a name="template-parameters"></a>Parámetros de plantilla
 
@@ -52,12 +52,12 @@ En la tabla siguiente se muestran los parámetros de plantilla reservados que se
 |clrversion|Versión actual del Common Language Runtime (CLR).|
 |ext_*|Agrega el prefijo `ext_` a cualquier parámetro para hacer referencia a las variables de la plantilla principal. Por ejemplo: `ext_safeprojectname`.|
 |guid[1-10]|GUID utilizado para reemplazar el GUID del proyecto en un archivo de proyecto. Puede especificar hasta 10 GUID únicos (por ejemplo, `guid1`).|
-|itemname|Nombre proporcionado por el usuario en el cuadro de diálogo **Agregar nuevo elemento**.|
+|itemname|El nombre del archivo en el que se usa el parámetro.|
 |machinename|Nombre del equipo actual (por ejemplo, Equipo01).|
 |projectname|Nombre especificado por el usuario al crear el proyecto.|
 |registeredorganization|Valor de la clave del Registro de HKLM\Software\Microsoft\Windows NT\CurrentVersion\RegisteredOrganization.|
 |rootnamespace|Espacio de nombres raíz del proyecto actual. Este parámetro solo se aplica a las plantillas de elementos.|
-|safeitemname|Nombre proporcionado por el usuario en el cuadro de diálogo **Agregar nuevo elemento**, tras quitar todos los caracteres no seguros y los espacios.|
+|safeitemname|Igual que `itemname`, pero con todos los caracteres no seguros y los espacios quitados.|
 |safeprojectname|Nombre especificado por el usuario al crear el proyecto, tras quitar todos los caracteres no seguros y los espacios.|
 |hora|Hora actual en el formato DD/MM/AAAA 00:00:00.|
 |SpecificSolutionName|Nombre de la solución. Cuando se activa "Crear directorio para la solución", `SpecificSolutionName` tiene el nombre de la solución. Cuando no se activa "Crear directorio para la solución", `SpecificSolutionName` está en blanco.|

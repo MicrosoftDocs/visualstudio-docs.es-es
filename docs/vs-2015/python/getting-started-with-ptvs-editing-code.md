@@ -1,5 +1,5 @@
 ---
-title: 'Introducción a PTVS: editar código | Microsoft Docs'
+title: 'Introducción a PTVS: Editar código | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-python
@@ -10,11 +10,11 @@ author: kraigb
 ms.author: kraigb
 manager: jillfra
 ms.openlocfilehash: 2e883970b4b265b1864d53ef6e1f347160e5aeb9
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758405"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62550917"
 ---
 # <a name="getting-started-with-ptvs-editing-code"></a>Introducción a PTVS: Editar código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ from math import sin
   
 ```  
   
- Durante la codificación, si usa un identificador que no está enlazado pero que puede encontrarse en las bibliotecas, PTVS ofrece una solución rápida emergente para agregar la instrucción de importación adecuada que necesita.  Por ejemplo, si lo hubiera escrito `cos`, a continuación, vería **importar de matemáticas** que ofrece.  
+ Durante la codificación, si usa un identificador que no está enlazado pero que puede encontrarse en las bibliotecas, PTVS ofrece una solución rápida emergente para agregar la instrucción de importación adecuada que necesita.  Por ejemplo, si escribió `cos`, verá que se le ofrece **importar de matemáticas**.  
   
  Puede usar un fragmento de código para generar código.  En el menú Edición, elija IntelliSense y, a continuación, Insertar fragmento de código.  Después elija Python y def.  Llame a la función `make_dot_string` y agregue un parámetro `x`.  Puede agregar aserciones en el archivo en este momento para el desarrollo controlado por pruebas, y verá que PTVS ya ofrece la nueva función en las listas de finalización.  
   

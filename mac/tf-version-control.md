@@ -8,11 +8,11 @@ ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
 ms.openlocfilehash: d98ffc8c9d864afaf0b42d029a4d65850f64d806
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366164"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62972828"
 ---
 # <a name="connecting-to-team-foundation-version-control"></a>Conectarse a Control de versiones de Team Foundation
 
@@ -58,7 +58,7 @@ La solución más sencilla es **usar HomeBrew**, que es un administrador de paqu
 
 1. Inicie la aplicación Terminal de macOS.
 1. Instale Homebrew mediante el Terminal y las instrucciones que aparecen en la [página principal de Homebrew](https://brew.sh/).
-1. Una vez instalado Homebrew, ejecute el siguiente comando desde el Terminal: `brew install tee-clc`
+1. Una vez instalado Homebrew, ejecute el siguiente comando desde el Terminal: `brew install tee-clc`.
 
 Para **instalar la TEE-CLC manualmente**:
 
@@ -273,4 +273,4 @@ Al intentar [crear una nueva área de trabajo](#creating-a-new-workspace), debe 
 
 ### <a name="see-also"></a>Vea también
 
-- [Develop and share your code in TFVC using Visual Studio (on Windows) [Desarrollar y compartir el código en TFVC con Visual Studio (en Windows)]](/azure/devops/repos/tfvc/share-your-code-in-tfvc-vs)
+- [Develop and share your code in TFVC using Visual Studio (on Windows)](/azure/devops/repos/tfvc/share-your-code-in-tfvc-vs) (Desarrollar y compartir el código en TFVC con Visual Studio (en Windows))

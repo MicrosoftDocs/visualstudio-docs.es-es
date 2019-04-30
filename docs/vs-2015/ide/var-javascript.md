@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 98bf86f807874fefe066ed2d1008e31451fbbba0
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54802666"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62558416"
 ---
 # <a name="ltvargt-javascript"></a>&lt;var&gt; (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ Especifica información de documentación para una variable.
   Opcional. Si `type` es `Number`, especifica si la variable es un entero. Establézcalo en `true` para indicar que la variable es un entero; de lo contrario, establézcalo en `false`. Visual Studio no utiliza este atributo para proporcionar información de IntelliSense.  
   
   `domElement`  
-  Opcional. Este atributo está en desuso; el atributo `type` tiene prioridad sobre este. Este atributo especifica si la variable documentada es un elemento DOM. Establézcalo en `true` para especificar que la variable es un elemento DOM; de lo contrario, establézcalo en `false`. Si el atributo `type` no se establece y `domElement` se establece en `true`, IntelliSense trata la variable documentada como `HTMLElement` al realizar la finalización de instrucciones.  
+  Opcional. Este atributo está desusado; el atributo `type` tiene prioridad sobre este. Este atributo especifica si la variable documentada es un elemento DOM. Establézcalo en `true` para especificar que la variable es un elemento DOM; de lo contrario, establézcalo en `false`. Si el atributo `type` no se establece y `domElement` se establece en `true`, IntelliSense trata la variable documentada como `HTMLElement` al realizar la finalización de instrucciones.  
   
   `mayBeNull`  
   Opcional. Especifica si la variable documentada se puede establecer en NULL. Establézcalo en `true` para indicar que la variable se puede establecer en NULL; de lo contrario, establézcalo en `false`. El valor predeterminado es `false`. Visual Studio no utiliza este atributo para proporcionar información de IntelliSense.  
@@ -61,7 +61,7 @@ Especifica información de documentación para una variable.
   Opcional. Si `type` es `Array` y `elementType` es `Number`, este atributo especifica si los elementos de la matriz son enteros. Establézcalo en `true` para indicar que los elementos de la matriz son enteros; de lo contrario, establézcalo en `false`. Visual Studio no utiliza este atributo para proporcionar información de IntelliSense.  
   
   `elementDomElement`  
-  Opcional. Este atributo está en desuso; el atributo `elementType` tiene prioridad sobre este. Si `type` es `Array`, este atributo especifica si los elementos de la matriz son elementos DOM. Establézcalo en `true` para especificar que los elementos son elementos DOM; de lo contrario, establézcalo en `false`. Si el atributo `elementType` no se establece y `elementDomElement` se establece en `true`, IntelliSense trata cada elemento de la matriz como `HTMLElement` al realizar la finalización de instrucciones.  
+  Opcional. Este atributo está desusado; el atributo `elementType` tiene prioridad sobre este. Si `type` es `Array`, este atributo especifica si los elementos de la matriz son elementos DOM. Establézcalo en `true` para especificar que los elementos son elementos DOM; de lo contrario, establézcalo en `false`. Si el atributo `elementType` no se establece y `elementDomElement` se establece en `true`, IntelliSense trata cada elemento de la matriz como `HTMLElement` al realizar la finalización de instrucciones.  
   
   `elementMayBeNull`  
   Opcional. Si `type` es `Array`, especifica si los elementos de la matriz se pueden establecer en NULL. Establézcalo en `true` para indicar que los elementos de la matriz se pueden establecer en NULL; de lo contrario, establézcalo en `false`. El valor predeterminado es `false`. Visual Studio no utiliza este atributo para proporcionar información de IntelliSense.  
@@ -70,7 +70,7 @@ Especifica información de documentación para una variable.
   Opcional. Palabra clave de la Ayuda de F1.  
   
   `locid`  
-  Opcional. Identificador de la información de localización sobre la variable. El identificador es un identificador de miembro o corresponde al valor del atributo `name` en un paquete de mensajes definido por los metadatos de OpenAjax. El tipo de identificador depende del formato especificado en el [ \<loc >](../ide/loc-javascript.md) etiqueta.  
+  Opcional. Identificador de la información de localización sobre la variable. El identificador es un identificador de miembro o corresponde al valor del atributo `name` en un paquete de mensajes definido por los metadatos de OpenAjax. El tipo de identificador depende del formato especificado en la etiqueta [\<loc>](../ide/loc-javascript.md).  
   
   `description`  
   Opcional. Descripción de la variable.  

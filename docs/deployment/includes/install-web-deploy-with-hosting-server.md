@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: 0fc18fab56f5b46ef097cdf699e4f0569dc190c9
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58342596"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62904464"
 ---
 Web Deploy 3.6 para servidores de hospedaje proporciona características de configuración adicionales que permiten la creación del archivo de configuración de publicación de la interfaz de usuario.
 
@@ -26,4 +26,4 @@ Web Deploy 3.6 para servidores de hospedaje proporciona características de conf
 
 4. (Opcional) Compruebe que Web Deploy se ejecuta correctamente abriendo **Panel de Control > Sistema y seguridad > Herramientas administrativas > Servicios** y asegúrese de que **Servicio del agente de implementación web** se está ejecutando (el nombre del servicio es diferente en las versiones anteriores).
 
-    Si el servicio del agente no se está ejecutando, inícielo. Si no está presente en absoluto, vaya a **Panel de Control > Programas > desinstalar un programa**, encontrar **Microsoft Web Deploy \<versión >**. Elija **Cambiar** la instalación y asegúrese de que elige **Se instalará en la unidad de disco duro local** para los componentes de Web Deploy. Complete los pasos de instalación de cambio.
+    Si el servicio del agente no se está ejecutando, inícielo. Si no está presente en absoluto, vaya a **Panel de Control > Programas > Desinstalar un programa** y busque **Microsoft Web Deploy \<versión>**. Elija **Cambiar** la instalación y asegúrese de que elige **Se instalará en la unidad de disco duro local** para los componentes de Web Deploy. Complete los pasos de instalación de cambio.

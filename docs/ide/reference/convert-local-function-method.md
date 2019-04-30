@@ -1,5 +1,5 @@
 ---
-title: Convertir función local en método
+title: Convertir una función local en un método
 ms.date: 02/19/2019
 ms.topic: reference
 author: kendrahavens
@@ -10,39 +10,39 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 96064b16e53081e0456ed43275acd5edf7ead468
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: a580077528c87e62f81e840ed6dee76ff1eac57f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58152959"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62968303"
 ---
-# <a name="convert-local-function-to-method"></a>Convertir función local en método
+# <a name="convert-a-local-function-to-a-method"></a>Convertir una función local en un método
 
 Esta refactorización se aplica a lo siguiente:
 
 - C#
 - Visual Basic
 
-**Qué:** Convertir una función local en un método
+**Qué:** Convertir una función local en un método.
 
 **Cuándo:** Tiene una función local que quiere definir fuera del contexto local actual.
 
-**Por qué:** Quizás quiera convertir una función local en un método para poder llamarlo fuera del contexto local. Quizás quiera convertir en un método si la función local está creciendo demasiado. La definición en un método independiente hace que el código sea más fácil de leer.
+**Por qué:** Quiere convertir una función local en un método para poder llamarlo fuera del contexto local. Puede que quiera convertir la función local en un método si esta está creciendo demasiado. Al definir la función en un método independiente, el código es más fácil de leer.
 
 ## <a name="convert-local-function-to-method-refactoring"></a>Convertir función local en refactorización de método
 
-1. Coloque el cursor en una función local.
+1. Coloque el cursor en la función local.
 
-    ![Convertir función local en método](media/convert-local-function-to-method.png)
+    ![Ejemplo de código de conversión de una función local en un método](media/convert-local-function-to-method.png)
 
 2. Presione **Ctrl**+**.** para activar el menú **Acciones rápidas y refactorizaciones**.
 
-    ![Convertir función local en corrección de código de método](media/convert-local-function-to-method-codefix.png)
+    ![Ejemplo de corrección del código de conversión de una función local en un método](media/convert-local-function-to-method-codefix.png)
 
-2. Presione **ENTRAR** para aceptar la refactorización.
+2. Presione ENTRAR para aceptar la refactorización.
 
-    ![Convertir función local en resultado de método](media/convert-local-function-to-method-result.png)
+    ![Ejemplo de resultados de la conversión de una función local en un método](media/convert-local-function-to-method-result.png)
 
 ## <a name="see-also"></a>Vea también
 

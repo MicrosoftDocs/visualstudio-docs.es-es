@@ -9,14 +9,14 @@ ms.assetid: b87fb196-9973-4512-a924-088788def4ea
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fb820ccc72e0070f947e362def1da137d19d8494
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1c884fd11c4c633164ed3283ca8d2830729e9250
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955601"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950167"
 ---
-# <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>Filtrar para crear informes de rendimiento de pruebas de carga con Microsoft Excel
+# <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>Procedimiento para crear informes de rendimiento de pruebas de carga con Microsoft Excel
 
 Puede generar informes de prueba de carga de Microsoft Excel basados en dos o más resultados de pruebas.
 
@@ -24,9 +24,9 @@ Puede generar informes de prueba de carga de Microsoft Excel basados en dos o m�
 
 Están disponibles dos informes de prueba de carga:
 
--   **Ejecutar comparación** Crea un conjunto de informes que compara los datos de dos resultados de pruebas de carga usando tablas y gráficos de barras.
+- **Ejecutar comparación** Crea un conjunto de informes que compara los datos de dos resultados de pruebas de carga usando tablas y gráficos de barras.
 
--   **Tendencia** Puede generar análisis de tendencias en dos o más resultados de pruebas de carga. Los resultados se muestran con gráficos de líneas, pero los datos están disponibles en tablas dinámicas.
+- **Tendencia** Puede generar análisis de tendencias en dos o más resultados de pruebas de carga. Los resultados se muestran con gráficos de líneas, pero los datos están disponibles en tablas dinámicas.
 
 > [!TIP]
 > También puede crear manualmente informes de Microsoft Word copiando y pegando datos de las vistas de resumen, gráficos y tablas. Vea [Cómo: Crear manualmente un informe de rendimiento de pruebas de carga con Microsoft Word](../test/how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md).

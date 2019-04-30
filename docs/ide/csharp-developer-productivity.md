@@ -10,12 +10,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 07584f9e04be805ed699676c678b2147ec3679ff
-ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
+ms.openlocfilehash: 3e1f82a58dac3b0a6f607d1de7f881c5de9e91aa
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59537629"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62973366"
 ---
 # <a name="visual-studio-productivity-guide-for-c-developers"></a>Guía de productividad de Visual Studio para desarrolladores de C#
 
@@ -154,10 +154,12 @@ Descargue la [extensión IntelliCode](https://marketplace.visualstudio.com/items
 A partir de Visual Studio 2017, hay muchas mejoras en la experiencia de prueba. Puede realizar pruebas con los marcos de pruebas MSTest v1, MSTest v2, NUnit o XUnit.
 
 - La detección de pruebas del **Explorador de pruebas** es rápida.
-- Organice las pruebas en el **Explorador de pruebas** con *ordenación jerárquica*.
-- [Live Unit Testing](../test/live-unit-testing.md) ejecuta de manera continua pruebas afectadas por el cambio en el código y actualiza los iconos del editor insertado para que el desarrollador conozca el estado de las pruebas. Incluya o excluya pruebas específicas o proyectos de prueba desde su conjunto de pruebas en directo.
 
-![Vista de jerarquía para el Explorador de pruebas en Visual Studio](../ide/media/VSGuide_Testing.png)
+- Organice las pruebas en el **Explorador de pruebas** con *ordenación jerárquica*.
+
+   ![Vista de jerarquía para el Explorador de pruebas en Visual Studio](../ide/media/VSGuide_Testing.png)
+
+- [Live Unit Testing](../test/live-unit-testing.md) ejecuta de manera continua pruebas afectadas por el cambio en el código y actualiza los iconos del editor insertado para que el desarrollador conozca el estado de las pruebas. Incluya o excluya pruebas específicas o proyectos de prueba desde su conjunto de pruebas en directo. (Solo la edición Visual Studio Enterprise).
 
 ## <a name="debugging"></a>Depuración
 
@@ -211,5 +213,5 @@ La lista siguiente incluye características de editor y productividad que aument
 | Habilitar análisis de la solución completa | Ver todos los errores de la solución en la **Lista de errores** | **Herramientas** > **Opciones** > **Editor de texto** > **C#** > **Opciones avanzadas** > **Habilitar análisis de la solución completa** |
 | Habilitar la navegación a orígenes descompilados | Permite Ir a definición en tipos y miembros de orígenes externos y usar el descompilador ILSpy para mostrar los cuerpos de método | **Herramientas** > **Opciones** > **Editor de texto** > **C#** > **Opciones avanzadas** > **Habilitar la navegación a orígenes descompilados** |
 | Modo de finalización y sugerencias | Cambia el comportamiento de finalización de IntelliSense. Los desarrolladores con conocimientos de IntelliJ tienden a usar aquí una configuración no predeterminada. | **Menú** > **Editar** > **IntelliSense** > **Alternar el modo de finalización** |
-| [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) | Muestra la información de referencia de código y el historial de cambios en el editor | **Herramientas** > **Opciones** > **Editor de texto** > **Todos los lenguajes** > **CodeLens** |
+| [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) | Muestra la información de referencia de código y el historial de cambios en el editor. (Los indicadores de CodeLens del control de código fuente no están disponibles en la edición Visual Studio Community). | **Herramientas** > **Opciones** > **Editor de texto** > **Todos los lenguajes** > **CodeLens** |
 | [Fragmentos de código](../ide/visual-csharp-code-snippets.md) | Ayudan al código auxiliar fuera del texto reutilizable común | Escriba un nombre de fragmento de código y presione **Tabulación** dos veces. |

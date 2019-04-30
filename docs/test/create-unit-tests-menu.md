@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e7eb72f104560991f1bb191e62641041879df071
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857729"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62965489"
 ---
 # <a name="create-unit-test-method-stubs-with-the-create-unit-tests-command"></a>Crear códigos auxiliares de método de pruebas unitarias con el comando Crear pruebas unitarias
 
@@ -52,5 +52,5 @@ En cambio, esta característica se aplica igualmente cuando un desarrollador com
 
 ## <a name="see-also"></a>Vea también
 
-- [Creating unit test method stubs with "Create Unit Tests" (Creación de códigos auxiliares de método de pruebas unitarias con "Crear pruebas unitarias")](https://devblogs.microsoft.com/devops/creating-unit-test-method-stubs-with-create-unit-tests/)
-- [Entradas de blog sobre pruebas unitarias](https://devblogs.microsoft.com/devops/?s=unit+testing)
+- [Crear códigos auxiliares de método de pruebas unitarias con "Crear pruebas unitarias"](https://devblogs.microsoft.com/devops/creating-unit-test-method-stubs-with-create-unit-tests/)
+- [Entradas del blog de pruebas unitarias](https://devblogs.microsoft.com/devops/?s=unit+testing)
