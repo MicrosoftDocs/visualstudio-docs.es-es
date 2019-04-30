@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a57ff548aeb566605802a0e270534df727a7c0f
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 034fd1f31b24dce2d8ecc3d805b78c35c8498d6c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841862"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974987"
 ---
 # <a name="code-snippets-schema-reference"></a>Referencia de esquemas de fragmentos de código
 
@@ -320,9 +320,6 @@ Se requiere un valor de texto. Este texto especifica el identificador único del
 
 Especifica los espacios de nombres importados utilizados por un fragmento de código de IntelliSense.
 
-> [!NOTE]
-> El elemento `Import` solo se admite para los proyectos de Visual Basic.
-
 ```xml
 <Import>
     <Namespace>... </Namespace>
@@ -340,9 +337,6 @@ Especifica los espacios de nombres importados utilizados por un fragmento de có
 ## <a name="imports-element"></a>Elemento Imports
 
 Agrupa los elementos `Import` individuales.
-
-> [!NOTE]
-> El elemento `Imports` solo se admite para los proyectos de Visual Basic.
 
 ```xml
 <Imports>
@@ -425,10 +419,7 @@ Los literales y objetos no pueden contener un elemento **ID** con un valor selec
 
 ## <a name="namespace-element"></a>Elemento Namespace
 
-Especifica el espacio de nombres que se debe importar para compilar y ejecutar el fragmento de código. Si no existe con anterioridad, el espacio de nombres especificado en el elemento `Namespace` se agrega automáticamente a una instrucción `Imports` al comienzo del código.
-
-> [!NOTE]
-> El elemento `Namespace` solo se admite para los proyectos de Visual Basic.
+Especifica el espacio de nombres que se debe importar para compilar y ejecutar el fragmento de código. Si no existe aún, el espacio de nombres especificado en el elemento `Namespace` se agrega automáticamente a una directiva `using` o a una instrucción `Imports` al comienzo del código.
 
 ```xml
 <Namespace>
@@ -569,11 +560,11 @@ Especifica la manera en que Visual Studio inserta el fragmento de código.
 
 El valor de texto debe uno de los valores siguientes.
 
--   `SurroundsWith`: permite colocar el fragmento de código alrededor de una parte de código seleccionada.
+- `SurroundsWith`: permite colocar el fragmento de código alrededor de una parte de código seleccionada.
 
--   `Expansion`: permite insertar el fragmento de código donde se encuentra el cursor.
+- `Expansion`: permite insertar el fragmento de código donde se encuentra el cursor.
 
--   `Refactoring`: especifica que el fragmento de código se usará durante la refactorización de C#. `Refactoring` no se puede usar en fragmentos de código personalizados.
+- `Refactoring`: especifica que el fragmento de código se usará durante la refactorización de C#. `Refactoring` no se puede usar en fragmentos de código personalizados.
 
 ## <a name="snippettypes-element"></a>Elemento SnippetTypes
 

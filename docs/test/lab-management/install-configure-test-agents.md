@@ -1,6 +1,6 @@
 ---
 title: Instalar agentes y controladores de pruebas
-ms.date: 10/24/2018
+ms.date: 04/17/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - configure test agents, test lab
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 04111b7a408b2378e0067ce1e3dd4e5ffd23ee48
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: c6597c47fd272beec2c82f7d4c2644291b168b5f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223031"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62965420"
 ---
 # <a name="install-test-agents-and-test-controllers"></a>Instalar agentes y controladores de pruebas
 
@@ -34,9 +34,9 @@ En la siguiente tabla se muestran los requisitos del sistema para instalar el co
 
 ## <a name="install-the-test-controller-and-test-agents"></a>Instalación del controlador de pruebas y agentes de prueba
 
-Puede descargar agentes de Visual Studio desde [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?q=agents). Busque *Agentes para Visual Studio 2017*, seleccione *Agente* o *Controlador* y elija *Descargar*. Ejecute el archivo ejecutable descargado para instalar el controlador o el agente de prueba.
+Puede descargar agentes de Visual Studio desde [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?q=agents). Busque *Agentes para Visual Studio 2019*, seleccione *Agente* o *Controlador* y elija *Descargar*. Ejecute el archivo ejecutable descargado para instalar el controlador o el agente de prueba.
 
-Puede descargar agentes de Visual Studio 2015 y Visual Studio 2013 desde la página de [descargas anterior](https://visualstudio.microsoft.com/vs/older-downloads/).
+Puede descargar agentes de Visual Studio 2017, Visual Studio 2015 y Visual Studio 2013 desde la página de [descargas anterior](https://visualstudio.microsoft.com/vs/older-downloads/).
 
 Estos instaladores están disponibles como archivos ISO para una instalación sencilla en máquinas virtuales.
 

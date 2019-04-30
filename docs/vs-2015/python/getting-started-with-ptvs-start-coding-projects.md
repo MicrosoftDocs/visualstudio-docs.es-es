@@ -10,11 +10,11 @@ author: kraigb
 ms.author: kraigb
 manager: jillfra
 ms.openlocfilehash: 28622f290d82f86bf3d18cc4f40cfcfc8e953dad
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54781074"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62537158"
 ---
 # <a name="getting-started-with-ptvs-start-coding-projects"></a>Introducción a PTVS: Comenzar a codificar (proyectos)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,4 +40,4 @@ Python Tools para Visual Studio (PTVS) le ayuda a administrar el código.
   Puede ver estas instrucciones en un breve [vídeo de YouTube](https://www.youtube.com/watch?v=KHPoVpL7zHg&list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff&index=2). 
  
 ## <a name="see-also"></a>Vea también 
- [Documentación Wiki](https://github.com/Microsoft/PTVS/wiki/Projects) [Introducción a PTVS y vídeos](https://www.youtube.com/playlist?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)
+ [Documentación de la wiki](https://github.com/Microsoft/PTVS/wiki/Projects) [Introducción y vídeos Deep Dive de PTVS](https://www.youtube.com/playlist?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)
