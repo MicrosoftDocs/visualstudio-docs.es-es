@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 0e8d4acb5bc43a174187fa74714a9ff24ef0a67c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048693"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62964487"
 ---
 # <a name="walkthrough-use-a-shortcut-key-with-an-editor-extension"></a>Tutorial: Usar una tecla de método abreviado con una extensión del editor
 Puede responder a teclas de método abreviado en la extensión del editor. El siguiente tutorial muestra cómo agregar un elemento de gráfico de vista a una vista de texto mediante una tecla de método abreviado. En este tutorial se basa en la plantilla del editor de elemento gráfico de área de visualización, y permite agregar el elemento de gráfico con el carácter +.

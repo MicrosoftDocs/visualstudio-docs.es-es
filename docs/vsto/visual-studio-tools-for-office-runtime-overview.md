@@ -27,11 +27,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: e78d20fa0c7d4d0db6db50c2cbb5cde0b79023fb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086331"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62982333"
 ---
 # <a name="visual-studio-tools-for-office-runtime-overview"></a>Visual Studio Tools para Office runtime overview
   Para ejecutar soluciones creadas mediante el uso de Microsoft Office developer tools en Visual Studio, Visual Studio 2010 Tools para Office runtime debe instalarse en equipos de usuario final. Para obtener más información, vea [Cómo: Instalar Visual Studio Tools para Office runtime redistribuible](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md). Visual Studio 2010 Tools para Office runtime consta de dos componentes principales:

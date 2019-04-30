@@ -11,11 +11,11 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 ms.openlocfilehash: 10cdff328216d06a3326dd3595ef8fc78bc9cfc9
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54348118"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62993155"
 ---
 # <a name="iactivescriptparseprocedure32"></a>IActiveScriptParseProcedure32
 Si el motor de scripts de Windows permite que el texto del código fuente para los procedimientos que se agregarán a la secuencia de comandos, implementa el `IActiveScriptParseProcedure32` interfaz. Para los lenguajes de scripting interpretados que no tienen ningún entorno de creación independiente, como VBScript, esto proporciona un mecanismo alternativo (distinto de `IActiveScriptParse32` o `IPersist`*) para agregar los procedimientos de script al espacio de nombres.  

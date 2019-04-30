@@ -1,5 +1,5 @@
 ---
-title: Filtrar Escribir una función para generar informes de errores en tiempo de ejecución | Documentos de Microsoft
+title: Procedimiento Escribir una función para generar informes de errores en tiempo de ejecución | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -22,13 +22,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2d5884ab002590f8944aa8c1134c67758a2f0c58
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58997610"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62423808"
 ---
-# <a name="how-to-write-a-run-time-error-reporting-function"></a>Filtrar Escribir una función para generar informes de errores en tiempo de ejecución
+# <a name="how-to-write-a-run-time-error-reporting-function"></a>Procedimiento Escribir una función para generar informes de errores en tiempo de ejecución
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Una función personalizada para la generación de informes de error en tiempo de ejecución debe tener la misma declaración que `_CrtDbgReportW`. Debe devolver un valor de 1 al depurador.  

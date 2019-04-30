@@ -1,5 +1,5 @@
 ---
-title: Filtrar Crear un elemento de trabajo para defectos de código administrado
+title: Procedimiento Crear un elemento de trabajo para defectos de código administrado
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,13 +11,13 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: e2e55ddf51e0c81f57c504e398c23c8e1d3f721a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55934801"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62816679"
 ---
-# <a name="how-to-create-a-work-item-for-a-managed-code-defect"></a>Filtrar Crear un elemento de trabajo para defectos de código administrado
+# <a name="how-to-create-a-work-item-for-a-managed-code-defect"></a>Procedimiento Crear un elemento de trabajo para defectos de código administrado
 
 Puede usar la característica de seguimiento de elemento de trabajo para registrar el elemento de trabajo de Visual Studio. Para usar esta característica, el proyecto debe formar parte de un proyecto de DevOps de Azure en [!INCLUDE[esprfound](../code-quality/includes/esprfound_md.md)].
 

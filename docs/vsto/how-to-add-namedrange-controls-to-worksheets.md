@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 2cc909828dc77c0f1dbe31c79255f2c93d2a95b3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066850"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62826568"
 ---
 # <a name="how-to-add-namedrange-controls-to-worksheets"></a>Procedimiento Agregar controles NamedRange a hojas de cálculo
   Puede agregar <xref:Microsoft.Office.Tools.Excel.NamedRange> controles a una hoja de cálculo de Microsoft Office Excel en tiempo de diseño y en tiempo de ejecución en los proyectos de nivel de documento.

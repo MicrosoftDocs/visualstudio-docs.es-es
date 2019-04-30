@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: f924dc1745dfe17265a750d4159f52643eb5c5ef
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60072999"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63006449"
 ---
 # <a name="syntax-error-javascript"></a>Error de sintaxis (JavaScript)
 Crea una instrucción que infringe una o varias de las reglas gramaticales de [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)].  

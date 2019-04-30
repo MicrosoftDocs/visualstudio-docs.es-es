@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: f6853d92608859e41fd7d8001ca6e350f5830504
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087006"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63006462"
 ---
 # <a name="string-expected"></a>Se esperaba una cadena
 Se intentó invocar el **String.prototype.toString** o **String.prototype.valueOf** método en un objeto de un tipo distinto `String`. El objeto de este tipo de invocación debe ser de tipo `String`.  

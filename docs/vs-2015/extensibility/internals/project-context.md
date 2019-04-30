@@ -11,11 +11,11 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d4ee4da5fdea63cf1bdd33554c72f6dac30d0334
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58996950"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62429943"
 ---
 # <a name="project-context"></a>Contexto del proyecto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

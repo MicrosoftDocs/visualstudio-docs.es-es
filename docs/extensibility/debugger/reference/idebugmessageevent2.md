@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 49224ad0018286fffd365857364bf1b37300788f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720450"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62918836"
 ---
 # <a name="idebugmessageevent2"></a>IDebugMessageEvent2
 Esta interfaz se utiliza el motor de depuración (DE) para enviar un mensaje a Visual Studio que requiere una respuesta del usuario.

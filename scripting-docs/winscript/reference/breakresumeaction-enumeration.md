@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: e5c79aacc64eb57282bf09f7e4673980396b37ea
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58154652"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62955294"
 ---
 # <a name="breakresumeaction-enumeration"></a>Enumeración BREAKRESUMEACTION
 Describe cómo continuar desde un punto de interrupción.  

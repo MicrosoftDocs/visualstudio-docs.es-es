@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: bec912596c792a67f65434062bc0d0ed11bd3fb9
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58149031"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62935710"
 ---
 # <a name="iactivescriptclone"></a>IActiveScript::Clone
 Clona el motor de scripting actual (menos cualquier estado de ejecución actual), devolviendo un motor de scripting cargado que no tenga ningún sitio en el subproceso actual. Las propiedades de este nuevo motor de scripting será idénticas a las propiedades que el motor de scripting original estaría en si se han pasado al estado inicializado.  

@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1dca1ce2504d557050adc1cb015eb7c6da056c70
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56711298"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62925699"
 ---
 # <a name="event-sources-visual-studio-sdk"></a>Orígenes de eventos (Visual Studio SDK)
 Hay dos orígenes de eventos: el motor de depuración (DE) y la sesión de depuración Manager (SDM). Eventos enviados desde una DE tengan un motor distinto de NULL, mientras que los eventos enviados desde el SDM tienen un motor NULL.

@@ -19,15 +19,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f94dcc62b829078fb8efc43ef92ddb203e1a1e32
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56709244"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62852086"
 ---
 # <a name="debugging-preparation-console-projects-c-c-visual-basic-f"></a>Preparación de la depuración: Proyectos de consola (C#, C++, Visual Basic, F#)
 
-Preparar la depuración de un proyecto de consola es similar a preparar la depuración de un proyecto para Windows, con algunas consideraciones adicionales. Para obtener más información, consulte [aplicaciones de Windows Forms](../debugger/debugging-preparation-windows-forms-applications.md), y [preparar la depuración: Aplicaciones de Windows Forms (.NET)](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/sez9z95a(v=vs.100)) Debido a la similitud de todas las aplicaciones de consola, este tema cubre los tipos de proyecto siguientes:
+Preparar la depuración de un proyecto de consola es similar a preparar la depuración de un proyecto para Windows, con algunas consideraciones adicionales. Para obtener más información, consulte [Windows Forms Applications](../debugger/debugging-preparation-windows-forms-applications.md), y [preparación de la depuración: Aplicaciones (. NET) de formularios Windows Forms](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/sez9z95a(v=vs.100)). Debido a la similitud de todas las aplicaciones de consola, este tema cubre los tipos de proyecto siguientes:
 
 - C#, Visual Basic, y F# aplicación de consola
 

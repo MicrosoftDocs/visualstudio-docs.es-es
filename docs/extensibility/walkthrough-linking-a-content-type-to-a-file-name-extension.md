@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 16f3a33ff273b62c701eae66d8fda1ff7178c5c9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042399"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62965046"
 ---
 # <a name="walkthrough-link-a-content-type-to-a-file-name-extension"></a>Tutorial: Vincular un tipo de contenido a una extensión de nombre de archivo
 Puede definir su propio tipo de contenido y una extensión de nombre de archivo un vínculo a él mediante el uso de las extensiones de Managed Extensibility Framework (MEF) del editor. En algunos casos, la extensión de nombre de archivo ya está definida por un servicio de lenguaje. Pero, para usarla con MEF, que debe seguir vincularlo a un tipo de contenido.

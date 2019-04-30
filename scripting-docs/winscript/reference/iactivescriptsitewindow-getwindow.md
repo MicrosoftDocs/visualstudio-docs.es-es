@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 7b6efa066765339375a8315695aa9c1de2f9c46b
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58154249"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62992075"
 ---
 # <a name="iactivescriptsitewindowgetwindow"></a>IActiveScriptSiteWindow::GetWindow
 Recupera el identificador de una ventana que puede actuar como el propietario de una ventana emergente que se debe mostrar el motor de scripting.  

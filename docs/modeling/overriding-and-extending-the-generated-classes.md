@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9aa4f39fb54617ae1dbf048a1e13f009c8df5185
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085634"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62814242"
 ---
 # <a name="override-and-extend-the-generated-classes"></a>Invalidar y ampliar las clases generadas
 

@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: f3454ca7c01b44dcae60156e93bffde351209cc5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099382"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62966905"
 ---
 # <a name="how-to-add-and-remove-items-to-sharepoint-features"></a>Procedimiento Agregar y quitar elementos de las características de SharePoint
   Cuando se crea una solución de SharePoint, Visual Studio agrega los elementos de proyecto de SharePoint de forma predeterminada a la característica. Antes de la implementación, puede agregar y quitar elementos de proyecto de SharePoint para modificar la funcionalidad de SharePoint.

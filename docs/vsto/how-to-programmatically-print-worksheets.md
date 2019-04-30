@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 76315f6cde5bc54385e217a8f234389a7f45e621
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084199"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62955929"
 ---
 # <a name="how-to-programmatically-print-worksheets"></a>Procedimiento Imprimir mediante programación las hojas de cálculo
   Puede imprimir cualquier hoja de cálculo de un libro.
