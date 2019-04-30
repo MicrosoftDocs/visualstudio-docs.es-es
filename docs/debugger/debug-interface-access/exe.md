@@ -1,5 +1,5 @@
 ---
-title: Exe | Microsoft Docs
+title: Exe | Documentos de Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6078f4dae6bc6fb53dfa8b612972e28edd820f72
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56654053"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62554758"
 ---
 # <a name="exe"></a>Exe
 Exe es el único símbolo pero no un léxico o clase primaria, que representa el ámbito global del archivo .exe o .dll. Hay solo un símbolo con la `SymTagExe` etiqueta por cada archivo. El [Get_globalscope](../../debugger/debug-interface-access/idiasession-get-globalscope.md) método devuelve el símbolo.
@@ -28,7 +28,7 @@ Exe es el único símbolo pero no un léxico o clase primaria, que representa el
 ## <a name="properties"></a>Propiedades
  En la tabla siguiente muestra las propiedades que son válidas para este tipo de símbolo.
 
-|Propiedad.|Tipo de datos|Descripción|
+|Propiedad|Tipo de datos|Descripción|
 |--------------|---------------|-----------------|
 |[IDiaSymbol::get_age](../../debugger/debug-interface-access/idiasymbol-get-age.md)|`DWORD`|Antigüedad del archivo ejecutable.|
 |[IDiaSymbol::get_guid](../../debugger/debug-interface-access/idiasymbol-get-guid.md)|`GUID`|`GUID` de este archivo ejecutable.|

@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 70e8caea5cb15f614f20faafc92785e9a2da8fae
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56708178"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62926047"
 ---
 # <a name="attach-directly-to-a-program"></a>Asociar directamente a un programa
 Los usuarios que desean depurar programas en un proceso que ya se está ejecutando normalmente siguen este proceso:

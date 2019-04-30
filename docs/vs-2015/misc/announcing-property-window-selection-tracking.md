@@ -14,11 +14,11 @@ ms.assetid: a7536f82-afd7-4894-9a60-84307fb92b7e
 caps.latest.revision: 13
 manager: jillfra
 ms.openlocfilehash: 6296993d3a1f5039024556f09b721daa82ca4f53
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089268"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63002457"
 ---
 # <a name="announcing-property-window-selection-tracking"></a>Anuncio del seguimiento de selección de la ventana de propiedades
 Si desea trabajar con el **propiedades** ventana o el **propiedad** páginas, por ejemplo, un formulario, texto o una selección para el que desea ver las propiedades, a continuación, debe tener un conocimiento completo de cómo se coordinar la selección. Por ejemplo, debe conocer si tienen selección única o selecciones múltiples. A continuación, deberá anunciar el tipo de selección (uno o varios) en el IDE mediante el <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> interfaz. Esta interfaz proporciona información que necesita la **propiedades** ventana.  

@@ -1,5 +1,5 @@
 ---
-title: Personalización de las comprobaciones nativas en tiempo de ejecución | Microsoft Docs
+title: Personalización de las comprobaciones nativas en tiempo de ejecución | Documentos de Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -23,11 +23,11 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 66591308c2b0c59cf310d3957131f80191cc51c3
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723596"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62905491"
 ---
 # <a name="native-run-time-checks-customization"></a>Personalización de las comprobaciones nativas en tiempo de ejecución
 Cuando se compila con **/RTC** (comprueba el tiempo de ejecución) o usar el `runtime_checks` pragma, la biblioteca de tiempo de ejecución de C proporciona comprobaciones nativas en tiempo de ejecución. En algunos casos puede ser conveniente personalizar las comprobaciones en tiempo de ejecución:
@@ -40,7 +40,7 @@ Cuando se compila con **/RTC** (comprueba el tiempo de ejecución) o usar el `ru
 
   Para personalizar la comprobación de errores en tiempo de ejecución, puede:
 
-- Escriba una función que crea un informe de error en tiempo de ejecución. Para obtener más información, consulte [Cómo: escribir una función de notificación de Error de tiempo de ejecución](../debugger/how-to-write-a-run-time-error-reporting-function.md).
+- Escriba una función que crea un informe de error en tiempo de ejecución. Para obtener más información, vea [Cómo: Escritura de una función para generar informes de errores en tiempo de ejecución](../debugger/how-to-write-a-run-time-error-reporting-function.md).
 
 - Personalizar el destino del mensaje de error.
 
@@ -55,6 +55,6 @@ Cuando se compila con **/RTC** (comprueba el tiempo de ejecución) o usar el `ru
  `_RTC_NumErrors` devuelve el número de tipos de errores detectados por las comprobaciones de errores en tiempo de ejecución. Para obtener una breve descripción de cada error, puede recorrer con un bucle desde 0 al valor devuelto `_RTC_NumErrors`, pasando el valor de la iteración a `_RTC_GetErrDesc` en cada bucle. Para obtener más información, consulte [_RTC_NumErrors](/cpp/c-runtime-library/reference/rtc-numerrors) y [_RTC_GetErrDesc](/cpp/c-runtime-library/reference/rtc-geterrdesc).
 
 ## <a name="see-also"></a>Vea también
-- [Cómo: Usar comprobaciones nativas en tiempo de ejecución](../debugger/how-to-use-native-run-time-checks.md)
+- [Cómo: Uso de comprobaciones nativas en tiempo de ejecución](../debugger/how-to-use-native-run-time-checks.md)
 - [runtime_checks](/cpp/preprocessor/runtime-checks)
 - [_CrtDbgReport, _CrtDbgReportW](/cpp/c-runtime-library/reference/crtdbgreport-crtdbgreportw)

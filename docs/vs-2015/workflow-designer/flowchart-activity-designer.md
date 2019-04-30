@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 3e89caded1b7388b79ea3232dc0a2809dc7b8222
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58997063"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62943471"
 ---
 # <a name="flowchart-activity-designer"></a>Diseñador de actividades Flowchart
 La actividad <xref:System.Activities.Statements.Flowchart> se utiliza para crear flujos de trabajo que definen y administran los controles de flujo complejos. Una clase <xref:System.Activities.Statements.Flowchart> se puede crear en código o mediante [!INCLUDE[wfd2](../includes/wfd2-md.md)]. En este tema se documenta la experiencia de uso con [!INCLUDE[wfd2](../includes/wfd2-md.md)]. El diseñador de actividades de flujos de trabajo de [!INCLUDE[wfd1](../includes/wfd1-md.md)] permite a los desarrolladores de software crear flujos de trabajo de forma natural.  

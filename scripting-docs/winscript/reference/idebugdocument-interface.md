@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: b750dc586e241aa7e969362bb58f72a3ad77f0aa
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58160451"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974493"
 ---
 # <a name="idebugdocument-interface"></a>IDebugDocument (Interfaz)
 Interfaz base para todos los documentos de depuración.  

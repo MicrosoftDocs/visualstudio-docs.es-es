@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 941ba0a890e854f449647977162183cbcac1bab8
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58193901"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62432439"
 ---
 # <a name="support-for-the-visual-studio-sdk"></a>Soporte técnico para Visual Studio SDK
 Existen varias opciones de soporte técnico para los clientes que tengan preguntas sobre cómo ampliar el entorno de desarrollo integrado (IDE) de Visual Studio.

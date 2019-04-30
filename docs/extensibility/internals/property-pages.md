@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 5df98f898c585d89c9bc493e606947f89b3206d2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614953"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909402"
 ---
 # <a name="property-pages"></a>Páginas de propiedades
 Los usuarios pueden ver y cambiar propiedades dependientes de la configuración y - independiente del proyecto con páginas de propiedades. Un **páginas de propiedades** botón está habilitado en el **propiedades** ventana o en la barra de herramientas del explorador de soluciones para los objetos que proporcionan una vista de página de propiedades del objeto seleccionado. Páginas de propiedades se crean el entorno y están disponibles para los proyectos y soluciones. Sin embargo, puede también ser disponible para elementos de proyecto que hacen usan de las propiedades dependientes de la configuración. Esta funcionalidad podría utilizarse cuando los archivos dentro de un proyecto requieren configuración del conmutador de compilador diferentes que se compila correctamente.

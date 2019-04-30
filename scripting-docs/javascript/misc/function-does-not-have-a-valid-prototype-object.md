@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 413f73a53a6d4f698219139a87c449be4c155831
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60038684"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007508"
 ---
 # <a name="function-does-not-have-a-valid-prototype-object"></a>La función no tiene un objeto prototipo válido
 Se intentó utilizar **instanceof** para determinar si un objeto se derivó de una clase de función determinada, pero se ha redefinido del objeto `prototype` propiedad como `null`, o un tipo de objeto externo (ambos denoesválido[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] objetos). Un objeto externo puede ser un objeto desde el modelo de objetos de host (por ejemplo, el documento de Internet Explorer o el objeto de ventana) o un objeto COM externo.  

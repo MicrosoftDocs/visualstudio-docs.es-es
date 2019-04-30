@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 1b0856d3832d31dd7027b2f264dd0a9cd1d657ec
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60047831"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007332"
 ---
 # <a name="common-tasks-in-office-programming"></a>Tareas comunes en la programación de Office
   Este tema está diseñado para ayudarle a encontrar las respuestas a las siguientes categorías de preguntas comunes sobre la programación de soluciones de Office mediante Visual Studio.

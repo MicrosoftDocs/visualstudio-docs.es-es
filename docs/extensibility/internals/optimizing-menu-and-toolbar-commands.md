@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 42a3fb7b44f0e21c564bc9bef26d5aa158d43091
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631515"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909338"
 ---
 # <a name="optimizing-menu-and-toolbar-commands"></a>Optimización de comandos de menú y barra de herramientas
 La adición de VSPackages y sus comandos correspondientes a [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] puede provocar una interfaz de usuario atestado. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Proporciona métodos para ayudar a minimizar la confusión de comando de la interfaz de usuario.

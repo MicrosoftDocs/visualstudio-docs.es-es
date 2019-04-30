@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 250b213fc3bc54d67f55d41c5eb3aba7e3488cd4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58996432"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62420231"
 ---
 # <a name="messaging-activity-designers"></a>Diseñadores de actividades de mensajería
 Los diseñadores de actividades de mensajería se utilizan para crear y configurar actividades de mensajería que envían y reciben mensajes de [!INCLUDE[indigo1](../includes/indigo1-md.md)] desde una aplicación [!INCLUDE[wf](../includes/wf-md.md)]. [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)] presenta cinco actividades de mensajería y [!INCLUDE[wfd1](../includes/wfd1-md.md)] proporciona dos nuevos diseñadores de plantillas que le permiten administrar la mensajería desde un flujo de trabajo. Los temas que se incluyen en esta sección y que se enumeran en la siguiente tabla ofrecen orientación sobre cómo utilizar los diseñadores de actividades y de plantillas de [!INCLUDE[wfd2](../includes/wfd2-md.md)].  

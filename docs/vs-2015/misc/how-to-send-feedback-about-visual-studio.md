@@ -1,5 +1,5 @@
 ---
-title: Filtrar Enviar comentarios | Microsoft Docs
+title: Procedimiento Enviar comentarios | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: ced6ee7cea72b0e07d10768e75409ef23c1bb869
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58988200"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62938008"
 ---
-# <a name="how-to-send-feedback-about-visual-studio"></a>Filtrar Enviar comentarios sobre Visual Studio
+# <a name="how-to-send-feedback-about-visual-studio"></a>Procedimiento Enviar comentarios sobre Visual Studio
 Este contenido se ha eliminado. Para obtener información, consulte [hable con nosotros](../ide/talk-to-us.md).

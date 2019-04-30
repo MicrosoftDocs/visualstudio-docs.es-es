@@ -8,11 +8,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a5ec2d1c471365dcd55aa33f00209c4154300e95
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078442"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62994415"
 ---
 # <a name="generate-and-configure-your-app-from-models"></a>Generar y configurar la aplicación a partir de modelos
 Puede generar o configurar partes de la aplicación a partir de un modelo.
@@ -20,7 +20,7 @@ Puede generar o configurar partes de la aplicación a partir de un modelo.
  El modelo representa los requisitos de forma más directa que el código. Al derivar el comportamiento de la aplicación directamente desde el modelo, puede responder a los cambios en los requisitos de forma mucho más rápida y confiable que actualizando el código. Aunque es necesario algún trabajo inicial para configurar la derivación, este esfuerzo queda compensado si espera que los requisitos varíen o si piensa crear diversas variantes del producto.
 
 ## <a name="generating-the-code-of-your-application-from-a-model"></a>Generar el código de la aplicación a partir de un modelo
- La forma más sencilla de generar código es usar plantillas de texto. Puede generar código en la misma solución de Visual Studio en la que guarda el modelo. Para obtener más información, consulte:
+ La forma más sencilla de generar código es usar plantillas de texto. Puede generar código en la misma solución de Visual Studio en la que guarda el modelo. Para obtener más información, vea:
 
 - [Generación de código en tiempo de diseño mediante plantillas de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
 
@@ -35,7 +35,7 @@ Puede generar o configurar partes de la aplicación a partir de un modelo.
   Pero si empieza con una aplicación existente, podría encontrarse con que es necesaria una gran cantidad de refactorización para separar los distintos comportamientos que se rigen por el modelo, de modo que puedan modificarse independientemente. Se recomienda evaluar este aspecto de la aplicación al calcular el costo del proyecto.
 
 ## <a name="configuring-your-application-from-a-model"></a>Configuración de la aplicación a partir de un modelo
- Si quiere variar el comportamiento de la aplicación en tiempo de ejecución, no podrá usar la generación de código, que crea código fuente antes de compilar la aplicación. En su lugar, puede diseñar la aplicación para leer el modelo y modificar su comportamiento en consecuencia. Para obtener más información, consulte:
+ Si quiere variar el comportamiento de la aplicación en tiempo de ejecución, no podrá usar la generación de código, que crea código fuente antes de compilar la aplicación. En su lugar, puede diseñar la aplicación para leer el modelo y modificar su comportamiento en consecuencia. Para obtener más información, vea:
 
 - [Cómo: Abrir un modelo desde un archivo en el código del programa](../modeling/how-to-open-a-model-from-file-in-program-code.md)
 

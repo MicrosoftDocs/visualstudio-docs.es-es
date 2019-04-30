@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 649db74d7bfc727868ee9d568aba811736a24cc6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681093"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62925911"
 ---
 # <a name="control-of-execution"></a>Control de ejecución
 El motor de depuración (DE) normalmente envía a uno de los siguientes eventos como el último evento de inicio:
@@ -39,11 +39,11 @@ El motor de depuración (DE) normalmente envía a uno de los siguientes eventos 
 
 5. Si el usuario elige paso a paso, otra vez, o fuera de una función, el IDE le solicita la sesión de depuración para llamar al programa `Step` método. El IDE, a continuación, pasa la unidad de paso (instrucción, instrucción o línea) y el tipo de paso (si se debe pasar a través de o fuera de la función). Cuando se completa el paso, la DE envía un evento de finalización de paso a la sesión de depuración, que es un evento de detención.
 
-    O bien
+    -o bien-
 
     Si el usuario decide seguir ejecutándose desde el puntero de instrucción actual, el IDE le solicita la sesión de depuración para llamar al programa **Execute** método. El programa reanuda la ejecución hasta que encuentra la siguiente condición de detención.
 
-    O bien
+    -o bien-
 
     Si la sesión de depuración que se va a omitir un evento de detención determinada, llama a la sesión de depuración del programa **continuar** método. Si el programa se ejecución paso a paso en o a través o fuera de una función cuando se ha encontrado la condición de detención, continúa el paso.
 

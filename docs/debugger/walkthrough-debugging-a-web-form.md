@@ -24,11 +24,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f884206ecafebbe26bfdadfaa7e95f3dbd0f389f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54948731"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62901641"
 ---
 # <a name="walkthrough-debugging-a-web-form"></a>Tutorial: Depurar un formulario web
 Los pasos de este tutorial muestran cómo depurar aplicaciones web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], también conocidas como formularios Web Forms. También muestra cómo iniciar y detener la ejecución, establecer puntos de interrupción y examinar variables en la ventana **Inspección**.
@@ -68,7 +68,7 @@ Los cuadros de diálogo y los comandos de menú que se ven pueden diferir de los
 
 11. Haga doble clic en el control de botón que colocó.
 
-     Esto le lleva a la página de códigos. Default.aspx.cs para C# o Default.aspx.vb para [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. El cursor debe estar en la función `Button1_Click` .
+     Esto le llevará a la página de códigos: Default.aspx.cs para C# o Default.aspx.vb para [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. El cursor debe estar en la función `Button1_Click` .
 
 12. Agregue a la función `Button1_Click` las siguientes líneas de código:
 

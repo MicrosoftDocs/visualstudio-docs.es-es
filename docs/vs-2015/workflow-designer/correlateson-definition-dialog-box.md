@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: fd03e1a8615e75d3f00f79eb10b7a7ff97f0eb33
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59002804"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977373"
 ---
 # <a name="correlateson-definition-dialog-box"></a>Definición CorrelatesOn (cuadro de diálogo)
 El **CorrelatesOn** cuadro de diálogo se usa en [!INCLUDE[wfd1](../includes/wfd1-md.md)] para editar el <xref:System.ServiceModel.Activities.Receive.CorrelatesOn%2A> propiedad de un <xref:System.ServiceModel.Activities.Receive> actividad. [!INCLUDE[crdefault](../includes/crdefault-md.md)] el [recepción](../workflow-designer/receive-activity-designer.md) tema.  

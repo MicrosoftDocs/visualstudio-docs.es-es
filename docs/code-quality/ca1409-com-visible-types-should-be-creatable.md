@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 05dbe964a16f838088fe8b053d59c1916daf38f7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55933733"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62546406"
 ---
 # <a name="ca1409-com-visible-types-should-be-creatable"></a>CA1409: Los tipos visibles a través de COM se deben poder crear
 

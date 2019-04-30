@@ -16,11 +16,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 597764d1e55b895c30e2b00981a7a1be53e16022
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58157430"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62968664"
 ---
 # <a name="jspropertymembers-enumeration"></a>Enumeración JS_PROPERTY_MEMBERS
 Marcas para especificar el tipo de información que se va a devolver en una solicitud de miembros de un objeto.  
@@ -35,7 +35,7 @@ enum JS_PROPERTY_MEMBERS{   JS_PROPERTY_MEMBERS_ALL = 0,   JS_PROPERTY_MEMBERS_A
   
 ### <a name="values"></a>Valores  
   
-|Nombre|Descripción|  
+|Name|Descripción|  
 |----------|-----------------|  
 |`JS_PROPERTY_MEMBERS_ALL`|Representa una solicitud para enumerar todos los miembros.|  
 |`JS_PROPERTY_MEMBERS_ARGUMENTS`|Representa una solicitud para enumerar solo los argumentos.|  

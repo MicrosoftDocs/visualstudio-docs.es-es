@@ -16,11 +16,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 9c84b64a12b1a6b61399f70b7209c86dd8d2a9a4
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58154340"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62993337"
 ---
 # <a name="iactivescriptprofilercallbackonfunctionexit"></a>IActiveScriptProfilerCallback::OnFunctionExit
 Notifica al analizador de objeto que el motor de scripting termine de ejecutar una función llamada que no es una llamada a Document Object Model (DOM).  

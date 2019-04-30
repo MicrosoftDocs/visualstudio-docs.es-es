@@ -1,5 +1,5 @@
 ---
-title: Just-In-Time, depuración, cuadro de diálogo Opciones | Microsoft Docs
+title: Just-In-Time, depuración, cuadro de diálogo Opciones | Documentos de Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -21,11 +21,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 23a285cf0ce017130a5fe76171c50082362e4856
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710479"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62905950"
 ---
 # <a name="just-in-time-debugging-options-dialog-box"></a>Just-In-Time, Depuración, Opciones (Cuadro de diálogo)
 Para obtener acceso a la página **Just-In-Time**, vaya al menú **Herramientas** y haga clic en **Opciones**. En el cuadro de diálogo **Opciones**, expanda el nodo **Depuración** y seleccione **Just-In-Time**. Esta página permite habilitar la depuración Just-In-Time para el código administrado, código nativo y scripts. Para obtener más información, vea [Depuración Just-In-Time](../debugger/just-in-time-debugging-in-visual-studio.md).
@@ -57,4 +57,4 @@ Para obtener acceso a la página **Just-In-Time**, vaya al menú **Herramientas*
 
 ## <a name="see-also"></a>Vea también
 - [Depuración, Cuadro de diálogo Opciones](../debugger/debugging-options-dialog-box.md)
-- [Cómo: Especificar la configuración del depurador](../debugger/how-to-specify-debugger-settings.md)
+- [Cómo: Especificación de la configuración del depurador](../debugger/how-to-specify-debugger-settings.md)

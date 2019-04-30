@@ -1,5 +1,5 @@
 ---
-title: Filtrar Adjuntar archivos a elementos de correo electrónico de Outlook mediante programación
+title: Procedimiento Adjuntar archivos a elementos de correo electrónico de Outlook mediante programación
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 707c3bb2b6bec9f8db1744d1f28acd4e90a45a57
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612158"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62575629"
 ---
 # <a name="how-to-programmatically-attach-files-to-outlook-email-items"></a>Procedimiento Adjuntar archivos a elementos de correo electrónico de Outlook mediante programación
   En este ejemplo se adjunta un archivo a un nuevo elemento de correo electrónico y lo envía a Armando Pinto. En el ejemplo se supone que existe una persona llamada Armando Pinto como destinatario.

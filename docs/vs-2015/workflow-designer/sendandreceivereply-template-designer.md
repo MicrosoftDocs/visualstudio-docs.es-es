@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 689f3a57dc3de9bbe63b0ef69a969cac57a639c6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104166"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62948031"
 ---
 # <a name="sendandreceivereply-template-designer"></a>Diseñador de plantillas SendAndReceiveReply
 El **SendAndReceiveReply** plantilla se usa para crear un par de preconfiguradas <xref:System.ServiceModel.Activities.Send> y <xref:System.ServiceModel.Activities.ReceiveReply> actividades dentro de un <xref:System.Activities.Statements.Sequence> actividad que se correlacionan como parte de un intercambio de mensajes de solicitud/respuesta modelo en el cliente.  

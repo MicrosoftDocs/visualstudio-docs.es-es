@@ -1,5 +1,5 @@
 ---
-title: Cuadro de diálogo Propiedades de proceso | Microsoft Docs
+title: Cuadro de diálogo Propiedades de proceso | Documentos de Microsoft
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2448659a8725c7e284e12a99d52478144ebec1b9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684863"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62903761"
 ---
 # <a name="process-properties-dialog-box"></a>Cuadro de diálogo Propiedades del proceso
 Utilice este cuadro de diálogo para obtener más información acerca de un proceso específico. Para mostrar este cuadro de diálogo, mueva el foco a un [vista procesos](../debugger/processes-view.md) ventana. Seleccione cualquier nodo de proceso en el árbol y luego elija **propiedades** desde el **vista** menú.

@@ -11,20 +11,20 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8592103bad3f6949f37a190c25633398af89a166
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56622948"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909645"
 ---
 # <a name="implementing-a-legacy-language-service"></a>Implementar un servicio de lenguaje heredado
 Para implementar un servicio de lenguaje mediante managed package framework (MPF), debe derivar una clase de la <xref:Microsoft.VisualStudio.Package.LanguageService> clase e implementar los siguientes métodos y propiedades abstractos:
 
 - El método <xref:Microsoft.VisualStudio.Package.LanguageService.GetLanguagePreferences%2A> 
 
-- El método <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A>
+- El método <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A> 
 
-- El método <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>
+- El método <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> 
 
 - La propiedad <xref:Microsoft.VisualStudio.Package.LanguageService.Name%2A>
 

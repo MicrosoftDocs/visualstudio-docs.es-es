@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 078bf457c798c0be9ac56aad1859c6750881922a
-ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "57870278"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909682"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>Dentro de Visual Studio SDK
 

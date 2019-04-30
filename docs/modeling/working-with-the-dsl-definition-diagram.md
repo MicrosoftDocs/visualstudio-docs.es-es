@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3133c3f37a7ce899575e4e6b0798ce8037b33929
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954185"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62951236"
 ---
 # <a name="working-with-the-dsl-definition-diagram"></a>Trabajar con diagramas de definición DSL
 El diagrama de un [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] definición es una herramienta importante para definir el lenguaje específico de dominio. Puede agregar elementos al modelo del dominio y definir relaciones en el diagrama, y puede modificar el diseño del diagrama para hacerlo más legible.
@@ -64,7 +64,7 @@ El diagrama de un [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] definición es
 ### <a name="bring-tree-here"></a>Bring Tree Here
  Puede consolidar el diagrama haciendo clic en una clase de dominio de marcador de posición y, a continuación, haga clic en **Traer árbol aquí**. La clase de dominio de marcador de posición se convierte en un elemento de definición y muestra los árboles de herencia y de relaciones. El elemento de definición anterior se convierte en un elemento de marcador de posición si es el destino de una relación o el elemento secundario en una relación de herencia; de lo contrario, desaparece.
 
-### <a name="split-tree"></a>Split Tree
+### <a name="split-tree"></a>Split Tree (Dividir árbol)
  Puede desglosar los árboles de herencia o de relaciones haciendo clic en la definición de clase de dominio que se muestra y, a continuación, haga clic en **dividir árbol**. El elemento de definición se convierte en un elemento de marcador de posición, y la clase de dominio de definición, junto con sus árboles de herencia y de relaciones, se muestran ahora en la parte inferior de la partición.
 
 ### <a name="show-as-class"></a>Show As Class
@@ -72,4 +72,4 @@ El diagrama de un [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] definición es
 
 ## <a name="see-also"></a>Vea también
 
-- [Glosario de las Herramientas del lenguaje específico de dominio](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Glosario de las herramientas de lenguajes específicos de dominio](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

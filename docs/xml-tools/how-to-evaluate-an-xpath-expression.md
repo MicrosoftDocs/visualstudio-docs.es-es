@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1585b54d084e3471583f9388d63f5c17e65fc3a7
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526327"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63002080"
 ---
 # <a name="evaluate-xpath-expressions"></a>Evaluar las expresiones XPath
 
@@ -28,7 +28,7 @@ Al evaluar una expresión XPath:
 > [!NOTE]
 > Depuración de XSLT solo está disponible en la edición Enterprise de Visual Studio.
 
-## <a name="evaluate-an-xpath-expression"></a>Evaluar una expresión XPath
+## <a name="evaluate-an-xpath-expression"></a>Evaluación de una expresión XPath
 
 El siguiente procedimiento usa la *debajo average.xsl* y *books.xml* archivos desde el [Tutorial: Depurar una hoja de estilos XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md#sample-files) página.
 

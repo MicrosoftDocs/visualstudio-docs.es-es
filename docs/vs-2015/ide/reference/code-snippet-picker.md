@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: a986303025460d6ca57cd3aa836a9f61f1804461
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59648840"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62423241"
 ---
 # <a name="code-snippet-picker"></a>Selector de fragmentos de código
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

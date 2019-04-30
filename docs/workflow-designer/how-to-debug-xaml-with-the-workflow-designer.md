@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: cdbf5fa21c8fcf9069db9a7348d4ed576fc342c5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065888"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949609"
 ---
 # <a name="how-to-debug-xaml-with-the-workflow-designer"></a>Procedimiento Depurar XAML con el Diseñador de flujo de trabajo
 

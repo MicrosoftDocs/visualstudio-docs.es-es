@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 0f75ffccf8aa9e3c6252583ad1cfd87baa37ba94
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041240"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62970323"
 ---
 # <a name="microsoft-office-is-not-installed-on-the-computer"></a>Microsoft Office no está instalado en el equipo
   Visual Studio no encuentra la aplicación de Microsoft Office que se corresponde al tipo de proyecto. Si está desarrollando un proyecto de complemento VSTO, significa que no se puede depurar o ejecutar el proyecto. Si intenta crear un proyecto de nivel de documento, significa que no puede crear el proyecto.

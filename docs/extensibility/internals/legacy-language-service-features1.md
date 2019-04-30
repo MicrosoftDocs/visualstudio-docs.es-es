@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: d2a1eea79b0ac2d80fb2b75043d4462e73928798
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620842"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909559"
 ---
 # <a name="legacy-language-service-features"></a>Características del servicio de lenguaje heredado
 Un servicio de lenguaje de paquetes administrados framework (MPF) puede admitir uno o más [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] características, como el resaltado de sintaxis, IntelliSense y validación de punto de interrupción. Cada característica puede implementarse independiente del resto, pero todos requieren un analizador y un escáner excepto resaltado de sintaxis, lo que requiere sólo un escáner.

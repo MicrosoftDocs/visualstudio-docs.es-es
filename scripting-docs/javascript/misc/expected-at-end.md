@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 6179d628c8da58cffa76020f04e3fd1df3396b5d
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840502"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62935307"
 ---
 # <a name="expected-end"></a>Se esperaba '\@final '
 Se ha intentado crear un bloque de código compilado condicionalmente, pero no incluía el <strong>@end</strong> instrucción al final. [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] las instrucciones se pueden compilar condicionalmente encerrándolos dentro de un <strong>@if/ @end</strong> bloque.  

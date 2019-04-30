@@ -1,5 +1,5 @@
 ---
-title: Filtrar Usar cuadros de diálogo Word en modo oculto mediante programación
+title: Procedimiento Usar cuadros de diálogo Word en modo oculto mediante programación
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: e7a422e9548fabefa2066fb439c01e382586cd36
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633686"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62961610"
 ---
 # <a name="how-to-programmatically-use-word-dialog-boxes-in-hidden-mode"></a>Procedimiento Usar cuadros de diálogo Word en modo oculto mediante programación
   Puede realizar operaciones complejas con una llamada al método mediante la invocación de los cuadros de diálogo integrados en Microsoft Office Word sin mostrarlos al usuario. Puede hacerlo mediante el uso de la <xref:Microsoft.Office.Interop.Word.Dialog.Execute%2A> método de la <xref:Microsoft.Office.Interop.Word.Dialog> objetos sin llamar a la <xref:Microsoft.Office.Interop.Word.Dialog.Display%2A> método.

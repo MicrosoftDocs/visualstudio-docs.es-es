@@ -9,13 +9,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e84b1c6303da4c0db39da1b3585a7d4548560feb
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526378"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63001939"
 ---
-# <a name="how-to-execute-an-xslt-transformation-from-the-xml-editor"></a>Filtrar Ejecutar una transformación XSLT desde el editor XML
+# <a name="how-to-execute-an-xslt-transformation-from-the-xml-editor"></a>Procedimiento Ejecución de una transformación XSLT desde el editor XML
 
 El editor XML permite asociar una hoja de estilos XSLT a un documento XML, realizar la transformación y ver la salida. El resultado de la transformación XSLT se muestra en una nueva ventana de documento.
 
@@ -31,7 +31,7 @@ Si el **salida** propiedad especifica un nombre de archivo con un. *htm* o. *HTM
 
     - Agregue una instrucción de procesamiento `xml-stylesheet` al documento XML. Por ejemplo, agregue la siguiente línea en el prólogo del documento: `<?xml-stylesheet type='text/xsl' href='filename.xsl'?>`
 
-       O bien
+       -o bien-
 
     - Agregar hoja de estilos XSLT mediante la **propiedades** ventana. Con el archivo XML abierto en el editor, haga clic en cualquier lugar en el editor y elija **propiedades**. En el **propiedades** ventana, haga clic en el **Stylesheet** campo y elija el botón Examinar (...). Seleccione la hoja de estilos XSLT y, a continuación, elija **abierto**.
 

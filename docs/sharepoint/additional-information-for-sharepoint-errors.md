@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 362eb5fd1973035e31ccd301f6cc46a748a9b2ac
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099733"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62988284"
 ---
 # <a name="additional-information-for-sharepoint-errors"></a>Información adicional para errores de SharePoint
   Puede encontrar ayuda para solucionar problemas de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] errores y advertencias en los temas y los foros públicos de la solución de problemas de herramientas de SharePoint.

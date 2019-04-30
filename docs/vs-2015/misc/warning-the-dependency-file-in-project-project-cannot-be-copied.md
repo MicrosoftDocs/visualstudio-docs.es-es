@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: d2f2a70df72f6dfcdc8946ca2f5afec9efa21a65
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059245"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62934431"
 ---
 # <a name="warning-the-dependency-39file39-in-project-39project39-cannot-be-copied-to-the-run-directory-because-it-would-overwrite-the-reference-39file39"></a>Advertencia: la dependencia &#39;archivo&#39; proyecto &#39;proyecto&#39; no se puede copiar en el directorio de ejecución porque sobrescribiría la referencia &#39;archivo.&#39;
 Existe un conflicto entre dependencias; para que la aplicación se ejecute se debería copiar más de un archivo de ensamblado distinto con el mismo nombre en el directorio bin. El directorio de ejecución puede resolver el conflicto, ya que una de las dependencias es una referencia principal.  
