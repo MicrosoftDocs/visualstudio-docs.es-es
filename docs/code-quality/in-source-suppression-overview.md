@@ -15,11 +15,11 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 6cd61304e150da63d2d461ef364e7039789c71fc
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223096"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62825831"
 ---
 # <a name="suppress-code-analysis-warnings"></a>Suprimir advertencias de análisis de código
 
@@ -27,7 +27,7 @@ A menudo resulta útil indicar que una advertencia no es aplicable. Esto indica 
 
 El <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> es un atributo condicional, que se incluye en los metadatos de IL del ensamblado de código administrado, solo si se ha definido el símbolo de compilación CODE_ANALYSIS en tiempo de compilación.
 
-En C++ / c++ / CLI, use las macros CA\_suprimir\_mensaje o CA\_GLOBAL\_SUPPRESS_MESSAGE en el archivo de encabezado para agregar el atributo.
+En C++/CLI, use las macros CA\_suprimir\_mensaje o CA\_GLOBAL\_SUPPRESS_MESSAGE en el archivo de encabezado para agregar el atributo.
 
 > [!NOTE]
 > No debe utilizar supresiones en código fuente en las compilaciones de versión para evitar que los metadatos de supresión en el origen de trasvase de registros por accidente. Además, debido al costo de procesamiento de supresión en el código fuente, puede disminuir el rendimiento de la aplicación.

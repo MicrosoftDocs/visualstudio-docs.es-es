@@ -9,13 +9,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e787ca3d2d29f04d6af27a5f36f1f84c9d0bc9f4
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526638"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62808517"
 ---
-# <a name="walkthrough-debug-an-xslt-style-sheet"></a>Tutorial: Depurar una hoja de estilos XSLT
+# <a name="walkthrough-debug-an-xslt-style-sheet"></a>Tutorial: Depuración de una hoja de estilos XSLT
 
 En este tutorial se indican los pasos para utilizar el depurador de XSLT. Éstos incluyen ver variables, definir puntos de interrupción y examinar el código. El depurador permite ejecutar código de línea a la vez.
 

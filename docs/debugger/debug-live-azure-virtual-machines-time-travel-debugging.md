@@ -14,11 +14,11 @@ ms.workload:
 - aspnet
 - azure
 ms.openlocfilehash: 3a81f6aa138b361a44a272ebda3557d27a914c64
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112362"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62854156"
 ---
 # <a name="record-and-replay-live-aspnet-apps-on-azure-virtual-machines-using-the-snapshot-debugger"></a>La grabación y reproducción de las aplicaciones ASP.NET activas en Azure virtual machines con el depurador de instantáneas
 

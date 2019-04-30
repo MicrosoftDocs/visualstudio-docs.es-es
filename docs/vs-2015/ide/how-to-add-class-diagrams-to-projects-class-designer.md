@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 09d423ab5f46f27e9dee4ce15f4b6dbec74d0124
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097757"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62584470"
 ---
 # <a name="how-to-add-class-diagrams-to-projects-class-designer"></a>Procedimiento Agregar diagramas de clases a proyectos (Diseñador de clases)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0365c253626546d824459c580fdf2be1b87ed4ed
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56642097"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62829090"
 ---
 # <a name="idiaframedatagetsystemexceptionhandling"></a>IDiaFrameData::get_systemExceptionHandling
 Recupera una marca que indica si el control de excepciones del sistema está en vigor.
@@ -41,7 +41,7 @@ HRESULT get_systemExceptionHandling ( 
 ## <a name="remarks"></a>Comentarios
  Control de excepciones del sistema más comúnmente se conoce como control de excepciones estructurado.
 
- Para determinar si el control de excepciones de C++ está en vigor, llame a la [Get_cplusplusexceptionhandling](../../debugger/debug-interface-access/idiaframedata-get-cplusplusexceptionhandling.md) método.
+ Para determinar si C++ control de excepciones está en vigor, llame a la [Get_cplusplusexceptionhandling](../../debugger/debug-interface-access/idiaframedata-get-cplusplusexceptionhandling.md) método.
 
 ## <a name="see-also"></a>Vea también
 - [IDiaFrameData](../../debugger/debug-interface-access/idiaframedata.md)

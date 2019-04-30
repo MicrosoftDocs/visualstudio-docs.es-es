@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: e54a031e69957579974e67af124b0e88a0d95abb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918174"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62816616"
 ---
 # <a name="extended-design-guidelines-rules-rule-set-for-managed-code"></a>Conjunto de reglas Reglas de directrices de diseño ampliadas para código administrado
 El conjunto de reglas reglas de directrices de diseño extendidas de Microsoft se expande en las reglas de directrices de diseño básicas para maximizar los problemas de facilidad de uso y mantenimiento que se notifican. Se pone especial énfasis en las directrices de nomenclatura. Considere incluir este conjunto de reglas si el proyecto incluye código de bibliotecas o si desea exigir los más altos estándares para escribir código fácil de mantener.

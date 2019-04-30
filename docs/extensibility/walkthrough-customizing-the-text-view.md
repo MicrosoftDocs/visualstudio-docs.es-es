@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: fc0214ed8327354dc3662f039d33d032148f9437
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083743"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62796336"
 ---
 # <a name="walkthrough-customize-the-text-view"></a>Tutorial: Personalizar la vista de texto
 Puede personalizar una vista de texto mediante la modificación de cualquiera de las siguientes propiedades en su mapa de formato del editor:

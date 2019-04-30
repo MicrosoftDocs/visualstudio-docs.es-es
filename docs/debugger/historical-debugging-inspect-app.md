@@ -1,5 +1,5 @@
 ---
-title: Inspeccionar la aplicación con depuración histórica | Microsoft Docs
+title: Inspeccionar la aplicación con depuración histórica | Documentos de Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 629b5d93-39b2-430a-b8ba-d2a47fdf2584
@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dea338f940cca0ce24cc200ed933adadb7d5643f
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227451"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62848210"
 ---
 # <a name="inspect-your-app-with-intellitrace-historical-debugging-in-visual-studio-c-visual-basic-c"></a>Inspeccionar la aplicación con depuración en Visual Studio de historial de IntelliTrace (C#, Visual Basic, C++)
 

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 460b948ea7b5bace1b91143d46a4ca2f4c823608
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043463"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62859151"
 ---
 # <a name="saving-a-standard-document"></a>Guardado de un documento estándar
 El entorno controla los guardar, guardar como y guardar todos los comandos. Cuando un usuario selecciona **guardar**, **Guardar como**, o **guardar todo** desde el **archivo** menú o se cierra la solución, lo que resulta en un  **Guardar todo**, se produce el siguiente proceso.

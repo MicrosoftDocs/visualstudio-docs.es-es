@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: eb95c5475c653e60c863ddf093d3a92e0c70cf45
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048093"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62858282"
 ---
 # <a name="test-area-3-check-outundo-checkout"></a>Área de prueba 3: Desproteger o deshacer desprotección
 Esta área de prueba de complemento de control de código fuente trata los elementos de edición y revertir desde el almacén de versiones a través de la **desproteger** y **Deshacer desprotección** comandos.

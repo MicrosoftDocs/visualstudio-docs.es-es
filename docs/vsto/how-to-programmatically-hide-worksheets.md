@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: f1fca54350900b2ed252efc324308d1168c6da53
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60101111"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62812474"
 ---
 # <a name="how-to-programmatically-hide-worksheets"></a>Procedimiento Ocultar mediante programación las hojas de cálculo
   Puede mostrar u ocultar las hojas de cálculo de un libro. Para ocultar una hoja de cálculo, use el elemento host de la hoja de cálculo o acceda a ella mediante la colección “Sheets” del libro.

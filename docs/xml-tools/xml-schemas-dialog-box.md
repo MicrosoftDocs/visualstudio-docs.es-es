@@ -11,13 +11,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f5323582bfe945bc031b9fd02fcf96bb615bcceb
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57524928"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62807950"
 ---
-# <a name="xml-schemas-dialog-box"></a>Cuadro de diálogo esquemas XML
+# <a name="xml-schemas-dialog-box"></a>Cuadro de diálogo Esquemas XML
 
 El **esquemas XML** cuadro de diálogo se usa para seleccionar qué esquemas XML esquema definición XSD (lenguaje) van a asociar a un documento XML. Podrá seleccionar un esquema de la caché de esquema o especificar un esquema que no está ubicado en la caché. Los esquemas seleccionados se consideran parte de un conjunto de esquemas. IntelliSense y la validación de documentos XML usan el conjunto de esquemas.
 

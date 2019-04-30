@@ -1,5 +1,5 @@
 ---
-title: 'Cómo: establecer un nombre de subproceso en código nativo | Microsoft Docs'
+title: Procedimiento Establecer un nombre de subproceso en código nativo | Documentos de Microsoft
 ms.date: 12/17/2018
 ms.topic: conceptual
 dev_langs:
@@ -17,13 +17,13 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: d37a028fb5af099484d81374e52cfd12af727f94
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526235"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62847543"
 ---
-# <a name="how-to-set-a-thread-name-in-native-code"></a>Cómo: Establecer un nombre de subproceso en código nativo
+# <a name="how-to-set-a-thread-name-in-native-code"></a>Procedimiento Establecer un nombre de subproceso en código nativo
 La denominación de los subprocesos es posible en cualquier edición de Visual Studio. Denominación de los subprocesos es útil para identificar los subprocesos de interés en el **subprocesos** ventana cuando se depura un proceso en ejecución. Denominado reconozca los subprocesos también pueden ser útil al realizar la depuración post-mortem a través de la inspección de volcado de bloqueo y al analizar el rendimiento de captura mediante distintas herramientas.
 
 ## <a name="ways-to-set-a-thread-name"></a>Maneras de establecer un nombre de subproceso

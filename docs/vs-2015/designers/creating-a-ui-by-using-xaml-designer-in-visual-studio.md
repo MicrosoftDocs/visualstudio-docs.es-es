@@ -15,11 +15,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: c928d9f939db96ae302620952bbb6bbdedc396a3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795174"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62580705"
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>Crear una IU con el Diseñador XAML en Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -87,9 +87,9 @@ El Diseñador XAML en Visual Studio proporciona una interfaz visual para ayudarl
 
  **Presentación** Especifica los diferentes tamaños y resoluciones de la aplicación.
 
- **Orientación** Especifica las diferentes orientaciones de la aplicación: **Horizontal** o **Vertical**.
+ **Orientación** especifica las diferentes orientaciones de la aplicación: **Horizontal** o **Vertical**.
 
- **Borde** Especifica las diferentes alineaciones de los bordes de la aplicación: **Ambos**, **Izquierdo**, **Derecho** o **Ninguno**.
+ **Borde** especifica las diferentes alineaciones de la aplicación: **Ambos**, **Izquierdo**, **Derecho** o **Ninguno**.
 
  **Contraste alto** Muestra una vista previa de la aplicación en función de la configuración de contraste seleccionada. Al establecerse en un valor distinto de **Predeterminado**, esta configuración invalidará la propiedad `RequestedTheme` establecida en App.xaml.
 

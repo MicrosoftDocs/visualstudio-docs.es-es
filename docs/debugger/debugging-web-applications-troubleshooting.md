@@ -19,19 +19,19 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9cf25518a5511c0da629c400adfe866789929ea2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56708724"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62852352"
 ---
-# <a name="debugging-web-applications-troubleshooting"></a>Depurar aplicaciones Web: solución de problemas
+# <a name="debugging-web-applications-troubleshooting"></a>Depurar aplicaciones web: Solución de problemas
 Esta sección contiene varios procedimientos habituales para la resolución de errores.
 
 ## <a name="in-this-section"></a>En esta sección
- [Cómo: comprobar la configuración de la propiedad de IIS](../debugger/how-to-verify-iis-property-settings.md) explica cómo establecer correctamente las propiedades en IIS para habilitar la depuración.
+ [Cómo: Compruebe la configuración de la propiedad de IIS](../debugger/how-to-verify-iis-property-settings.md) explica cómo establecer correctamente las propiedades en IIS para habilitar la depuración.
 
 ## <a name="related-sections"></a>Secciones relacionadas
- [Depuración de aplicaciones Web: Errores y solución de problemas](../debugger/debugging-web-applications-errors-and-troubleshooting.md) explica la resolución de problemas y errores.
+ [Depurar aplicaciones web: Errores y solución de problemas](../debugger/debugging-web-applications-errors-and-troubleshooting.md) explica la resolución de problemas y errores.
 
  [Depurar Script y aplicaciones Web](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications) información general sobre depuración de aplicaciones Web, como [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], servicios Web XML y proyectos de servidor ATL.

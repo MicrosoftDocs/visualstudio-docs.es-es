@@ -1,5 +1,5 @@
 ---
-title: Etiqueta (Debug Interface Access SDK) | Microsoft Docs
+title: Etiqueta (Debug Interface Access SDK) | Documentos de Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b445c5f8be55d5290feb1318a3b937980a3e5c06
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616240"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62834346"
 ---
 # <a name="label-debug-interface-access-sdk"></a>Etiqueta (Debug Interface Access SDK)
 Una ubicación en el código de programa se identifica mediante un `SymTagLabel` símbolos.
@@ -26,7 +26,7 @@ Una ubicación en el código de programa se identifica mediante un `SymTagLabel`
 ## <a name="properties"></a>Propiedades
  En la tabla siguiente muestra las propiedades que son válidas para este tipo de símbolo.
 
-|Propiedad.|Tipo de datos|Descripción|
+|Propiedad|Tipo de datos|Descripción|
 |--------------|---------------|-----------------|
 |[IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)|`DWORD`|Parte del ajuste de ubicación; Para obtener más información, consulte el [LocationType (enumeración)](../../debugger/debug-interface-access/locationtype.md).|
 |[IDiaSymbol::get_addressSection](../../debugger/debug-interface-access/idiasymbol-get-addresssection.md)|`DWORD`|Parte de la sección de ubicación; Para obtener más información, consulte el [LocationType (enumeración)](../../debugger/debug-interface-access/locationtype.md).|

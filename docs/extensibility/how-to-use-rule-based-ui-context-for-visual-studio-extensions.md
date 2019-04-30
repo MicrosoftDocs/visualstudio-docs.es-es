@@ -1,5 +1,5 @@
 ---
-title: Filtrar Usar el contexto de interfaz de usuario basada en reglas para extensiones de Visual Studio | Documentos de Microsoft
+title: Procedimiento Usar el contexto de interfaz de usuario basada en reglas para extensiones de Visual Studio | Documentos de Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 8dd2cd1d-d8ba-49b9-870a-45acf3a3259d
@@ -8,11 +8,11 @@ ms.author: gregvanl
 ms.workload:
 - vssdk
 ms.openlocfilehash: 4f78753afdf8d0ded233b2451db42dee73c41de0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56682198"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62861881"
 ---
 # <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>Procedimiento Use el contexto de interfaz de usuario basada en reglas para extensiones de Visual Studio
 
@@ -70,14 +70,14 @@ Contexto de la interfaz de usuario basada en reglas se puede usar de varias mane
 
    ```xml
    <VisibilityConstraints>
-       <VisibilityItem guid="guidTestPackageCmdSet" id="TestId"  context="guidTestUIContext"/>
+       <VisibilityItem guid="guidTestPackageCmdSet" id="TestId"  context="UIContextGuid"/>
    </VisibilityConstraints>
    ```
 
 4. En la sección Symbols, agregue la definición de la interfaz de usuario Solutionopening:
 
    ```xml
-   <GuidSymbol name="guidTestUIContext" value="{8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B}" />
+   <GuidSymbol name="UIContextGuid" value="{8B40D5E2-5626-42AE-99EF-3DD1EFF46E7B}" />
    ```
 
     Ahora, los comandos del menú contextual para  *\*.config* archivos será visible solo cuando el elemento seleccionado en el Explorador de soluciones es una *.config* archivo y el paquete no se cargará hasta que uno de ellos los comandos está seleccionada.

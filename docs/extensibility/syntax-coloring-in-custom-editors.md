@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: e5e627d758a1249a1e9b5e877255a67cfb255cf9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060675"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62799062"
 ---
 # <a name="syntax-coloring-in-custom-editors"></a>Colores de sintaxis en editores personalizados
 Editores visuales de SDK de entorno de Studio, incluido el editor principal, usan servicios de lenguaje para identificar elementos sintácticos específicos y mostrarlas con los colores especificados para obtener una vista de documento determinado.

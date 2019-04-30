@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f1f630c744a799183fe790e8b3067d0fc13378bc
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599082"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62853301"
 ---
 # <a name="vtable"></a>VTable
 La tabla virtual se identifica mediante el `SymTagVTable` símbolos.
@@ -26,7 +26,7 @@ La tabla virtual se identifica mediante el `SymTagVTable` símbolos.
 ## <a name="properties"></a>Propiedades
  La siguiente tabla muestra propiedades adicionales de válido para este tipo de símbolo.
 
-|Propiedad.|Tipo de datos|Descripción|
+|Propiedad|Tipo de datos|Descripción|
 |--------------|---------------|-----------------|
 |[IDiaSymbol::get_classParent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md)|`IDiaSymbol*`|Símbolo de la clase propietaria de esta tabla virtual.|
 |[IDiaSymbol::get_classParentId](../../debugger/debug-interface-access/idiasymbol-get-classparentid.md)|`DWORD`|Id. del símbolo de clase primaria.|

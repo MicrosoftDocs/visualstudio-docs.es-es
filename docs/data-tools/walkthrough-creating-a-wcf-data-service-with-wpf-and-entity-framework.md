@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 726d0f7e4254f4d9d4210d4b64627cd97c98a430
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081390"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62566062"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Tutorial: Creación de un servicio de datos de WCF con WPF y Entity Framework
 En este tutorial se muestra cómo crear un sencillo [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] que se hospeda en una aplicación web de [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] y al que se accede desde una aplicación de Windows Forms.

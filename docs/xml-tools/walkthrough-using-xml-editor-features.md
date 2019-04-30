@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2f0b4069bf1b74c15f9fcf7cdb7e488247b8548e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086382"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62808507"
 ---
 # <a name="walkthrough-use-xml-editor-features"></a>Tutorial: Uso de características del editor XML
 
@@ -96,7 +96,7 @@ En este tutorial se indican los pasos para crear un nuevo documento XML. El tuto
 
 ## <a name="to-format-the-xml-document"></a>Para dar formato al documento XML
 
-- Seleccione el **dar formato al documento** botón en la barra de herramientas del editor XML, o presione **Ctrl**+**E**,**d.**.
+- Seleccione el **dar formato al documento** botón en la barra de herramientas del editor XML, o presione **Ctrl**+**E**,**d**.
 
    ![Botón de documento de formato XML en Visual Studio](media/format-xml-document.png)
 

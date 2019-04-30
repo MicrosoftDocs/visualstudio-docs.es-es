@@ -8,11 +8,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e881ef4a016fa44bbb1e38e2bc3145fb11974c56
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087370"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62814318"
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>Implementación mediante MSI y VSIX de un DSL
 Puede instalar un idioma específico de dominio en su propio equipo o en otros equipos. Visual Studio ya debe instalarse en el equipo de destino.
@@ -90,7 +90,7 @@ Cuando se instala su DSL de este método, el usuario puede abrir un archivo DSL 
 
        - Descripción
 
-       - Versión
+       - `Version`
 
    - Haga clic en el **Editor** nodo y haga clic en la ventana Propiedades, **icono**. Establezca el valor para hacer referencia a un archivo de icono en **DslPackage\Resources**, tales como **File.ico**
 

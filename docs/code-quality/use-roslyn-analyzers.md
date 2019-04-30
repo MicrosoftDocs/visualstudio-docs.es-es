@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 56637ee7826b944d739e170faf22ae354abd8adc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080818"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62821421"
 ---
 # <a name="use-roslyn-analyzers"></a>Usar analizadores de Roslyn
 
@@ -62,7 +62,7 @@ Para cambiar la regla activa establecida para un proyecto, vaya a la **análisis
 
 Puede configurar la gravedad de las reglas del analizador, o *diagnósticos*, si se [instalar los analizadores](../code-quality/install-roslyn-analyzers.md) como un paquete de NuGet. En la siguiente tabla muestra las opciones de gravedad para el diagnóstico:
 
-|Gravedad|Comportamiento en tiempo de compilación|Comportamiento del Editor|
+|Severity|Comportamiento en tiempo de compilación|Comportamiento del Editor|
 |-|-|-|
 |Error|Las infracciones aparezcan como *errores* en el **lista de errores** en línea de comandos resultados de compilación y hacer que las compilaciones de un error.|Código que provoca el error aparece subrayado con una roja ondulada y marcada por un pequeño cuadro rojo en la barra de desplazamiento.|
 |Advertencia|Las infracciones aparezcan como *advertencias* en el **lista de errores** y en línea de comandos salida de la compilación, pero no se producirá un error en las compilaciones.|Código que provoca el error aparece subrayado con color verde ondulada y marcado por un pequeño cuadro verde en la barra de desplazamiento.|

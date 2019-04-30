@@ -20,14 +20,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32ab1bb6d4bde8f6e75fdaeb4416372cdc236318
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: aebe1faf31d53fb44cf5efddbee154018e42a365
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56699007"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62847775"
 ---
-# <a name="how-to-run-the-worker-process-under-a-user-account"></a>Cómo: Ejecutar el proceso de trabajo en una cuenta de usuario
+# <a name="how-to-run-the-worker-process-under-a-user-account"></a>Procedimiento Ejecutar un proceso de trabajo en una cuenta de usuario
 Para configurar el equipo de forma que pueda ejecutar el proceso de trabajo [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] (aspnet_wp.exe o w3wp.exe) bajo una cuenta de usuario, siga estos pasos.
 
  > [!IMPORTANT]
@@ -45,21 +45,22 @@ Para configurar el equipo de forma que pueda ejecutar el proceso de trabajo [!IN
 
 4. En [!INCLUDE[winxpsvr](../debugger/includes/winxpsvr_md.md)], IIS 6.0 está instalado de manera predeterminada. El proceso de trabajo correspondiente es w3wp.exe. Para que se ejecute en el modo de IIS 6.0 con aspnet_wp.exe como proceso de trabajo, debe seguir estos pasos:
 
-   1.  Haga clic en **Inicio**, haga clic en **Herramientas administrativas** y, a continuación, elija **Internet Information Services**.
+   1. Haga clic en **Inicio**, haga clic en **Herramientas administrativas** y, a continuación, elija **Internet Information Services**.
 
-   2.  En el cuadro de diálogo **Internet Information Services** , haga clic con el botón secundario del mouse en la carpeta **Sitios Web** y elija **Propiedades**.
+   2. En el cuadro de diálogo **Internet Information Services** , haga clic con el botón secundario del mouse en la carpeta **Sitios Web** y elija **Propiedades**.
 
-   3.  En el cuadro de diálogo **Propiedades de sitios Web** , elija **Servicio**.
+   3. En el cuadro de diálogo **Propiedades de sitios Web** , elija **Servicio**.
 
-   4.  Seleccione **Ejecutar el servicio WWW en el Modo aislado de IIS 6.0**.
+   4. Seleccione **Ejecutar el servicio WWW en el Modo aislado de IIS 6.0**.
 
-   5.  Cierre el cuadro de diálogo **Propiedades** y el **Administrador de servicios Internet**.
+   5. Cierre el cuadro de diálogo **Propiedades** y el **Administrador de servicios Internet**.
 
 5. Abra un símbolo de comandos de Windows y restablezca el servidor ejecutando:
 
    ```cmd
    iisreset
    ```
+
    o
 
    ```cmd
@@ -77,7 +78,7 @@ Para configurar el equipo de forma que pueda ejecutar el proceso de trabajo [!IN
 
     Aparecerá el cuadro de diálogo **Seleccionar usuarios, equipos o grupos** .
 
-10. Escriba el nombre del usuario en el cuadro **Escriba el nombre de objeto a seleccionar** y, a continuación, haga clic en **Aceptar**. El nombre de usuario debe seguir este formato: NombreDominio\NombreUsuario.
+10. Escriba el nombre del usuario en el cuadro **Escriba el nombre de objeto a seleccionar** y, a continuación, haga clic en **Aceptar**. El nombre de usuario debe seguir este formato: DomainName\UserName.
 
 11. En el cuadro de diálogo **Entrada de permiso para archivos temporales de ASP.NET** , dé al usuario **Control total**y, a continuación, haga clic en **Aceptar** para cerrar el cuadro de diálogo **Entrada de permiso para archivos temporales de ASP.NET** .
 
@@ -87,4 +88,4 @@ Para configurar el equipo de forma que pueda ejecutar el proceso de trabajo [!IN
 
 ## <a name="see-also"></a>Vea también
 - [Depurar aplicaciones ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)
-- [Depuración ASP.NET: requisitos del sistema](../debugger/aspnet-debugging-system-requirements.md)
+- [Depuración ASP.NET: Requisitos del sistema](../debugger/aspnet-debugging-system-requirements.md)

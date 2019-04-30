@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 97de488672ac201a418326e39535b7e7c9bd643b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55914245"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62823936"
 ---
 # <a name="properties-of-port-shapes"></a>Propiedades de las formas de puerto
 Puede usar formas de puerto que representen clases de dominio en el diseñador generado.
@@ -25,7 +25,7 @@ Puede usar formas de puerto que representen clases de dominio en el diseñador g
 
  Formas de puerto tienen las propiedades que aparecen en la tabla siguiente.
 
-|Property|Descripción|Default|
+|Propiedad|Descripción|Default|
 |-|-|-|
 |Color de relleno|El color de relleno de esta forma.|Blanco|
 |Modo de degradado de relleno|El modo de degradado de relleno de esta forma.|Horizontal|
@@ -41,7 +41,7 @@ Puede usar formas de puerto que representen clases de dominio en el diseñador g
 |No tiene Constructor personalizado|Si `True`, se proporcionará un constructor personalizado en el código fuente. Para obtener más información, consulte [invalidar y ampliar las clases generadas](../modeling/overriding-and-extending-the-generated-classes.md).|False|
 |Modificador de herencia|Describe el tipo de herencia de la clase de código de origen que se genera a partir del puerto (`none`, `abstract` o `sealed`).|ninguna|
 |Puerto base|La clase base de esta forma.|(ninguno)|
-|nombre|El nombre de esta forma.|Nombre actual|
+|Name|El nombre de esta forma.|Nombre actual|
 |Espacio de nombres|El espacio de nombres que está asociado a esta forma.|Espacio de nombres actual|
 |Tipo de información sobre herramientas|Cómo se define la información sobre herramientas (fijo, variable o ninguno). Si se ha corregido, a continuación, el valor de la `Fixed Tooltip Text` propiedad se utiliza como la información sobre herramientas; si la variable, la información sobre herramientas se define mediante código personalizado.|ninguna|
 |Notas|Notas informales que están asociadas con esta forma.|\<none>|
@@ -49,10 +49,10 @@ Puede usar formas de puerto que representen clases de dominio en el diseñador g
 |Ancho inicial|Ancho inicial de esta forma, en pulgadas.|1.5|
 |Color de relleno expuestos como propiedad<br /><br /> Modo de degradado de relleno expuestos<br /><br /> Color del contorno puede exponer como propiedad<br /><br /> Estilo de guión del contorno puede exponer como propiedad<br /><br /> Expone el grosor del contorno como propiedad<br /><br /> Expone el Color del texto|Si `True`, el usuario puede establecer la propiedad indicada de una forma. Para ello, haga clic en la definición de la forma y haga clic en **agregar expuestos**.|False|
 |Descripción|Se usa para documentar el diseñador generado.|\<none>|
-|Nombre para mostrar|El nombre que se mostrará en el diseñador generado para esta forma.|\<none>|
+|Display Name|El nombre que se mostrará en el diseñador generado para esta forma.|\<none>|
 |Texto de información sobre herramientas fija|El texto que se usa para una información sobre herramientas fija.|\<none>|
 |Help Keyword|La palabra clave que se utiliza para indizar la Ayuda F1 para esta forma.|\<none>|
 
 ## <a name="see-also"></a>Vea también
 
-- [Glosario de las Herramientas del lenguaje específico de dominio](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+- [Glosario de las herramientas de lenguajes específicos de dominio](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 48196badc0d10435760a8af7ac5029e83d9de232
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56630982"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62857480"
 ---
 # <a name="visual-studio-command-table-vsct-files"></a>Archivos de tabla de comandos de Visual Studio (.Vsct)
 Un archivo de configuración de la tabla de comandos es un archivo de texto que describe el conjunto de comandos que contiene un paquete VSPackage. El [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] comando de compilador de tabla (VSCT) compila los archivos de configuración basado en XML (archivos .vsct) en archivos de salida (.cto) de tabla de comando binary. Los archivos .cto resultante son los mismos que los que se crean mediante el compilador de tabla (CTC) del comando para compilar los archivos de configuración de CTC. Sin embargo, los archivos .vsct basado en XML tiene algunas ventajas, como un editor XML y XML IntelliSense.
@@ -28,7 +28,7 @@ Un archivo de configuración de la tabla de comandos es un archivo de texto que 
 
  Describe cómo diseñar .vsct (archivos).
 
- [Cómo: Crear una. Archivo de Vsct](../../extensibility/internals/how-to-create-a-dot-vsct-file.md)
+ [Cómo: Crear un archivo .Vsct](../../extensibility/internals/how-to-create-a-dot-vsct-file.md)
 
  Compara los métodos para crear un archivo .vsct. Describe el proceso para crear manualmente un nuevo archivo de vsct.
 

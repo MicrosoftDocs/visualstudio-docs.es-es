@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: c19b623efca921e7557a818c3915faf6ea158641
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087331"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62859718"
 ---
 # <a name="project-persistence"></a>Persistencia de un proyecto
 Persistencia es una consideración de diseño clave para el proyecto. La mayoría de los proyectos usan elementos de proyecto que representan los archivos; [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] también es compatible con los proyectos cuyos datos están basados en archivos que no sean. Se deben conservar los archivos de propiedad del proyecto y el archivo de proyecto. El IDE indica que el proyecto para guardar en sí mismo o a un elemento de proyecto.
@@ -43,5 +43,5 @@ Persistencia es una consideración de diseño clave para el proyecto. La mayorí
  Los métodos de la `IVsPersistHierarchyItem2` interfaz se usan para determinar si un elemento puede volver a cargarse y, si el elemento puede ser, al volver a cargarlo. Además, el <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.IgnoreItemFileChanges%2A> método se puede implementar para que los elementos modificados se descarta sin que se va a guardar.
 
 ## <a name="see-also"></a>Vea también
-- [Lista de comprobación: Creación de nuevos tipos de proyecto](../../extensibility/internals/checklist-creating-new-project-types.md)
+- [Lista de comprobación: Creación de tipos de proyectos](../../extensibility/internals/checklist-creating-new-project-types.md)
 - [Creación de instancias de proyecto mediante generadores de proyecto](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)

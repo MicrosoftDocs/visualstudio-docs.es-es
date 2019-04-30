@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 2153091b2b2abae05bf6f6c7856d2fa6d43f8967
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109028"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62812430"
 ---
 # <a name="how-to-programmatically-list-all-worksheets-in-a-workbook"></a>Procedimiento Mostrar todas las hojas de cálculo en un libro de mediante programación
   La clase <xref:Microsoft.Office.Interop.Excel.Workbook> proporciona un objeto <xref:Microsoft.Office.Interop.Excel.Worksheets>. Este objeto contiene una colección de todos los objetos <xref:Microsoft.Office.Interop.Excel.Worksheet> del libro.

@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c231aac3b78ddb5100cc06600059045fdc463e51
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074013"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62826750"
 ---
 # <a name="how-to-cache-data-in-a-password-protected-document"></a>Procedimiento Almacenar datos en caché en un documento protegido por contraseña
   Si agrega datos a la caché de datos en un documento o libro que está protegido con una contraseña, no se guardan los cambios realizados en los datos en caché automáticamente. Puede guardar los cambios a los datos almacenados en caché mediante el reemplazo de dos métodos en el proyecto.

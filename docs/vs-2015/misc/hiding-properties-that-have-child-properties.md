@@ -11,11 +11,11 @@ ms.assetid: 6003607e-fc19-4bf9-a299-9f6adf8e92eb
 caps.latest.revision: 13
 manager: jillfra
 ms.openlocfilehash: 1d20b865c6f07d76320a7df8402810c82869ddfb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052368"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62822391"
 ---
 # <a name="hiding-properties-that-have-child-properties"></a>Ocultar propiedades que tienen propiedades secundarias
 ¿Desea ocultar las propiedades que tienen propiedades secundarias:  

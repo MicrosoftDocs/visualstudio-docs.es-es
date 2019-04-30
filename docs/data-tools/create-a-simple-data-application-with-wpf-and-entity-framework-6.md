@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: f5d65ff675329fdc714026ce6fe04ee3bd93086f
-ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58268792"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62568683"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Crear una aplicación de datos sencilla con WPF y Entity Framework 6
 

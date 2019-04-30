@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 39ef9d059353f143c80e8956fa14f1812dc90859
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56677987"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62861855"
 ---
 # <a name="idsymbol-element"></a>IDSymbol (elemento)
 El `IDSymbol` elemento contiene el identificador del par GUID: ID que representa un menú, grupo o comando. Incluye el GUID del elemento primario `GuidSymbol` elemento. El `IDSymbol` elemento tiene un `name` atributo que proporciona un nombre descriptivo para el identificador, que se encuentra en la `value` atributo.
@@ -34,7 +34,7 @@ El `IDSymbol` elemento contiene el identificador del par GUID: ID que representa
 
 |Atributo|Descripción|
 |---------------|-----------------|
-|name|Obligatorio. Nombre del símbolo de identificador.|
+|NAME|Obligatorio. Nombre del símbolo de identificador.|
 |value|Obligatorio. Valor de identificador numérico del símbolo de identificador.|
 
 ### <a name="child-elements"></a>Elementos secundarios

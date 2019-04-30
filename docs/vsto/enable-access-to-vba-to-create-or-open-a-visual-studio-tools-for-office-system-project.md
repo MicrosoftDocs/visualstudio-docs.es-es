@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 10dc439946cb209c9a8d8e0c5ff50a7e8cfe5363
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57869323"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62797667"
 ---
 # <a name="enable-access-to-vba-to-create-or-open-a-visual-studio-tools-for-the-microsoft-office-system-project"></a>Habilitar el acceso a VBA para crear o abrir un proyecto de Visual Studio Tools para el proyecto de Microsoft Office system
 
