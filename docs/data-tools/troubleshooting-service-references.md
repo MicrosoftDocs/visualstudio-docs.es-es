@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: f0d1a9e24c965af9513b3c2645bcee35f916f436
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048598"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62565746"
 ---
 # <a name="troubleshoot-service-references"></a>Solucionar problemas de referencias de servicio
 

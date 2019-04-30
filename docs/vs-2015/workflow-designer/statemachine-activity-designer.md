@@ -13,11 +13,11 @@ author: steved0x
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 96965a2b0861e7c4df4a43e4d258afc0a48090bd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58994716"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62784550"
 ---
 # <a name="statemachine-activity-designer"></a>Diseñador de actividades StateMachine
 La actividad <xref:System.Activities.Statements.StateMachine> contiene una colección de flujos de trabajo de estados y modelos que usan el paradigma conocido de máquina de estados.  

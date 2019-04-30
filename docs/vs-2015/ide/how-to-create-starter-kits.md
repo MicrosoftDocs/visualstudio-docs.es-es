@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Crear Starter Kits | Microsoft Docs
+title: Procedimiento Crear Starter Kits | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -12,13 +12,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: fb7b601c04c73cd1f617e42c848edaf7dc65bde8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54798951"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62429371"
 ---
-# <a name="how-to-create-starter-kits"></a>Cómo: Crear Starter Kits
+# <a name="how-to-create-starter-kits"></a>Procedimiento Crear Starter Kits
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Un Starter Kit contiene código de una aplicación completa y documentación sobre cómo modificar o expandir la aplicación. Crear un Starter Kit es, en el fondo, lo mismo que crear una plantilla de proyecto normal; la única diferencia es que un Starter Kit contiene archivos de documentación que están configurados para abrirse cuando se crea un proyecto basado en el Starter Kit.  
@@ -47,7 +47,7 @@ Un Starter Kit contiene código de una aplicación completa y documentación sob
   
  Los temas siguientes contienen información sobre cómo crear plantillas.  
   
- [Cómo: Crear plantillas de proyecto](../ide/how-to-create-project-templates.md)  
+ [Cómo: crear plantillas de proyecto](../ide/how-to-create-project-templates.md)  
  Se explica cómo usar el **Asistente para exportar plantillas** para crear una plantilla.  
   
  [Cómo: Actualizar plantillas existentes](../ide/how-to-update-existing-templates.md)  

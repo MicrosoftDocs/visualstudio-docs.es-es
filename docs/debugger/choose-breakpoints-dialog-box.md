@@ -22,11 +22,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 50547507bf37eb22346bcbf3f48585c9cb0b26b6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637040"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62564787"
 ---
 # <a name="choose-breakpoints-dialog-box"></a>Cuadro de diálogo Elegir puntos de interrupción
 El cuadro de diálogo **Elegir puntos de interrupción** se abre al intentar establecer un punto de interrupción a partir de una entrada ambigua en el cuadro de diálogo **Nuevo punto de interrupción**. Un ejemplo común de entrada ambigua es el de un nombre de función sobrecargada.

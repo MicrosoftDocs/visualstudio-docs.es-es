@@ -22,11 +22,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 181596e7b76dc2288da82e731455710fde0205d8
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54964969"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62564748"
 ---
 # <a name="com-debugging-tools"></a>Herramientas de depuración COM
 
@@ -47,4 +47,4 @@ Los ejemplos ActiveX de MFC, OCLIENT y SUPERPAD también se pueden utilizar para
 - [Depurar en Visual Studio](../debugger/index.md)
 - [Primer vistazo al depurador](../debugger/debugger-feature-tour.md)
 - [Ejemplo OCLIENT: Ilustra un aplicación contenedora de edición Visual](https://msdn.microsoft.com/library/8cd5c234-9a4e-4934-8f5d-bac189ad92c4)
-- [Ejemplo SUPERPAD: Muestra un servidor de edición visual que edita texto usando CEditView](https://msdn.microsoft.com/library/7b14e975-d986-4e6a-8289-226485cfcb72)
+- [Ejemplo SUPERPAD: Muestra un servidor que edita texto usando CEditView de edición Visual](https://msdn.microsoft.com/library/7b14e975-d986-4e6a-8289-226485cfcb72)

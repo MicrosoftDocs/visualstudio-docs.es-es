@@ -11,11 +11,11 @@ ms.assetid: 408dcdef-8ef9-4644-97d2-f311cd35824f
 caps.latest.revision: 12
 manager: jillfra
 ms.openlocfilehash: a244463832ff5620efa74a2c7fd20d6d47d79e76
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117530"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62810712"
 ---
 # <a name="providing-a-custom-properties-window"></a>Proporcionar una ventana de propiedades personalizadas
 Es posible proporcionar su propia **propiedades** ventana para un sistema de proyecto dada, en lugar de ampliación del **propiedades** ventana proporcionada por el [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] el entorno de desarrollo integrado (IDE). El escenario se ha encontrado con mayor frecuencia es cuando usted implementa el objeto situado en el marco de ventana.  

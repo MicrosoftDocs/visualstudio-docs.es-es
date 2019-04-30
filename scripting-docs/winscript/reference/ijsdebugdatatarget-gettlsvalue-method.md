@@ -16,11 +16,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 458aaab05f274983fdaf69c6e702502974665403
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58157206"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62582815"
 ---
 # <a name="ijsdebugdatatargetgettlsvalue-method"></a>IJsDebugDataTarget::GetTlsValue (Método)
 Para el subproceso que se está depurando, recupera el valor en la ranura de subproceso (TLS) de almacenamiento local para el índice especificado de TLS.  

@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bfaf520658edfdcf5b80fb89f89489a47c7fffa3
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56695588"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62852687"
 ---
 # <a name="debugger-project-settings"></a>Configuración del proyecto para el depurador
 Ciertos valores de configuración del proyecto también afectan a la depuración. Estos valores determinan, por ejemplo, qué directorios consulta el depurador, el comando y los argumentos del comando utilizados para iniciar el programa y el tipo de información de depuración que se crea para el programa. Estos valores se pueden cambiar en el cuadro de diálogo **Páginas de propiedades** .
@@ -29,11 +29,11 @@ Ciertos valores de configuración del proyecto también afectan a la depuración
  En esta sección se describen las opciones disponibles y cómo establecerlas.
 
 ## <a name="in-this-section"></a>En esta sección
- [Cómo: especificar la configuración del depurador](../debugger/how-to-specify-debugger-settings.md) describe la configuración del depurador en el **opciones** cuadro de diálogo.
+ [Cómo: Especifique la configuración del depurador](../debugger/how-to-specify-debugger-settings.md) describe la configuración del depurador en el **opciones** cuadro de diálogo.
 
- [Cómo: establecer configuraciones Debug y Release](../debugger/how-to-set-debug-and-release-configurations.md) describe la **depurar** y **versión** configuración y cómo cambiar entre ellas.
+ [Cómo: Establecer configuraciones Debug y Release](../debugger/how-to-set-debug-and-release-configurations.md) describe la **depurar** y **versión** configuración y cómo cambiar entre ellas.
 
- [Configuración de proyectos para una configuración de depuración de C++](../debugger/project-settings-for-a-cpp-debug-configuration.md) muestra las propiedades disponibles en el **páginas de propiedades** cuadro de diálogo para proyectos de C o C++.
+ [Configuración de proyectos para una C++ Debug Configuration](../debugger/project-settings-for-a-cpp-debug-configuration.md) muestra las propiedades disponibles en el **páginas de propiedades** cuadro de diálogo de C o C++ proyectos.
 
  [Configuración de proyectos para C# Debug Configurations](../debugger/project-settings-for-csharp-debug-configurations.md) muestra las propiedades disponibles en el **páginas de propiedades** cuadro de diálogo C# proyectos.
 

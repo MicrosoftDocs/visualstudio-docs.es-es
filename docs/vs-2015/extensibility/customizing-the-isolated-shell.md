@@ -11,11 +11,11 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 724d4d0c4b392a362e702f33ea996df3a6fc0ad6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58997441"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62555976"
 ---
 # <a name="customizing-the-isolated-shell"></a>Personalización del Shell aislado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Puede personalizar la aplicación de shell aislado de Visual Studio cambiando di
  Puede personalizar el icono de aplicación, que es el icono que muestra el nombre de la aplicación en la barra de título de la aplicación. Copie un icono diferente en el directorio de icono. En **el Explorador de soluciones**, el icono Agregar a la carpeta de archivos de recursos. A continuación, abra el archivo VSShellStub.rc y reemplace el valor de IDI_STUBPROGRAM con el nombre del nuevo icono. Para obtener más información, consulte [Tutorial: Creando un Basic aislado la aplicación de Shell](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
   
 ##### <a name="the-command-line-logo"></a>El logotipo de la línea de comandos  
- Puede personalizar el logotipo de línea de comandos, que es el texto que aparece cuando se inicia la aplicación desde la línea de comandos, cambie el valor de la fila "CommandLineLogo" en el *SolutionName*. Archivo Application.pkgdef. Para obtener más información, consulte [Tutorial: Creación de una aplicación básica de Shell aislado](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)  
+ Puede personalizar el logotipo de línea de comandos, que es el texto que aparece cuando se inicia la aplicación desde la línea de comandos, cambie el valor de la fila "CommandLineLogo" en el *SolutionName*. Archivo Application.pkgdef. Para obtener más información, consulte [Tutorial: Creación una aplicación básica de Shell aislado](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)  
   
 ##### <a name="the-name-of-the-user-files-subfolder"></a>El nombre de la subcarpeta de archivos de usuario  
  Puede cambiar el nombre de la carpeta de la aplicación se mantiene para los archivos de usuario cambiando el valor de la fila "UserFilesSubFolderName" *SolutionName*. Archivo Application.pkgdef.  
@@ -58,7 +58,7 @@ Puede personalizar la aplicación de shell aislado de Visual Studio cambiando di
  Puede personalizar la página del explorador web, que es la página que se muestra cuando se abre la ventana del explorador web, cambiando el valor de la fila "DefaultSearchPage" en el *SolutionName*. Archivo Application.pkgdef.  
   
 ##### <a name="the-default-home-page"></a>La página principal predeterminada  
- Puede personalizar la página principal, cambie el valor de la fila "DefaultHomePage" en el *SolutionName*. Archivo Application.pkgdef. Para obtener más información, consulte [Tutorial: Creación de una aplicación básica de Shell aislado](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)  
+ Puede personalizar la página principal, cambie el valor de la fila "DefaultHomePage" en el *SolutionName*. Archivo Application.pkgdef. Para obtener más información, consulte [Tutorial: Creación una aplicación básica de Shell aislado](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)  
   
 ##### <a name="whether-or-not-to-hide-the-solution-concept"></a>Si se debe o no ocultan el concepto de solución  
  Puede especificar si desea ocultar la solución en la aplicación cambiando el valor de la fila "HideSolutionConcept" o no el *SolutionName*. Archivo Application.pkgdef. Para ocultar la solución, establezca el valor `dword:00000001`y para mostrar la solución, establezca el valor `dword:00000000`.  

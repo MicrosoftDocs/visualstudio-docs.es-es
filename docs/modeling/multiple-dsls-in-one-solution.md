@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c894ce7466c253916794495649fa65d703e6d67
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
-ms.translationtype: MT
+ms.openlocfilehash: 87d9e4ae8239994a7524cdd1da0b3cfe05ea42d5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416154"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62808189"
 ---
 # <a name="multiple-dsls-in-one-solution"></a>Varios DSL en una solución
 
@@ -40,15 +40,15 @@ Puede usar varias técnicas para integrar varios DSL. Para obtener más informac
 
 2. Combine los manifiestos VSIX de los DSL:
 
-   1.  Abra _Suproyectovsix_**\source.extension.manifest**.
+   1. Abra _Suproyectovsix_**\source.extension.manifest**.
 
-   2.  Para cada DSL, elija **agregar contenido** y agregue:
+   2. Para cada DSL, elija **agregar contenido** y agregue:
 
-       -   `Dsl*` un proyecto como un **componente MEF**
+       - `Dsl*` un proyecto como un **componente MEF**
 
-       -   `DslPackage*` un proyecto como un **componente MEF**
+       - `DslPackage*` un proyecto como un **componente MEF**
 
-       -   `DslPackage*` un proyecto como un **VS Package**
+       - `DslPackage*` un proyecto como un **VS Package**
 
 3. Compile la solución.
 

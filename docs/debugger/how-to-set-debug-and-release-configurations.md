@@ -32,11 +32,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b0bf0da5f15bbb59c2898af0dc0bfec1105cbab0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715432"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62847651"
 ---
 # <a name="set-debug-and-release-configurations-in-visual-studio"></a>Establecer configuraciones Debug y Release en Visual Studio
 
@@ -44,7 +44,7 @@ Los proyectos de Visual Studio tienen configuraciones independientes para el lan
 
 En la configuración de depuración, el programa se compile con información de depuración simbólica completa y sin optimización. La optimización complica la depuración, ya que la relación entre el código fuente y las instrucciones generadas es más compleja.
 
-La configuración de lanzamiento del programa no tiene ninguna información de depuración simbólica y está totalmente optimizada. Para código administrado y código de C++, se puede generar información de depuración en los archivos .pdb, [según las opciones del compilador](#BKMK_symbols_release) que se usan. Creación de los archivos .pdb puede ser útil si luego necesita depurar la versión de lanzamiento.
+La configuración de lanzamiento del programa no tiene ninguna información de depuración simbólica y está totalmente optimizada. Para código administrado y C++ código, se puede generar información de depuración en los archivos .pdb, [según las opciones del compilador](#BKMK_symbols_release) que se usan. Creación de los archivos .pdb puede ser útil si luego necesita depurar la versión de lanzamiento.
 
 Para más información sobre las configuraciones de compilación, vea [Descripción de las configuraciones de compilación](../ide/understanding-build-configurations.md).
 
@@ -73,7 +73,7 @@ Cada tipo de proyecto puede tener una forma diferente de la configuración de es
 
 ### <a name="generate-symbol-files-for-a-c-aspnet-or-visual-basic-project"></a>Generar archivos de símbolos para un proyecto de C#, ASP.NET o Visual Basic
 
-Para obtener información detallada sobre la configuración del proyecto para configuraciones de depuración en C# o Visual Basic, vea [configuración de proyectos para una C# configuración de depuración](../debugger/project-settings-for-csharp-debug-configurations.md) o [configuración de proyectos para una depuración de Visual Basic configuración](../debugger/project-settings-for-a-visual-basic-debug-configuration.md).
+Para obtener información detallada sobre la configuración del proyecto para configuraciones de depuración en C# o Visual Basic, vea [configuración de depuración de la configuración del proyecto de C#](../debugger/project-settings-for-csharp-debug-configurations.md) o [deconfiguracióndedepuracióndelaconfiguracióndelproyectodeVisualBasic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md).
 
 1. En el Explorador de soluciones, seleccione el proyecto.
 

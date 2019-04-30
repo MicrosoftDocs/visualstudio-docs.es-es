@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: db06efe400106260556d8eab5fd644bbfc27f0c2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645067"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62833624"
 ---
 # <a name="idiaenumframedata"></a>IDiaEnumFrameData
 Enumera los distintos elementos de datos del marco contenidos en el origen de datos.
@@ -101,7 +101,7 @@ void ShowFrameData(IDiaSession *pSession)
 ```
 
 ## <a name="requirements"></a>Requisitos
-**Encabezado:** Dia2.h
+**Encabezado**: Dia2.h
 
 **Biblioteca:** diaguids.lib
 

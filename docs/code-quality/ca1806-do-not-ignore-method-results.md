@@ -17,11 +17,11 @@ dev_langs:
 - VB
 manager: jillfra
 ms.openlocfilehash: d2a1dd9984601afa34e4aac7fa5ddc24061cf6ae
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954510"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62797055"
 ---
 # <a name="ca1806-do-not-ignore-method-results"></a>CA1806: No omitir resultados del método
 
@@ -53,7 +53,7 @@ Se omite el código de error o HRESULT puede producir un comportamiento inespera
 
  Si un método llama al método B, pero no utiliza la nueva instancia de cadena que devuelve el método B. Pase la instancia como un argumento a otro método, asigne la instancia a una variable. O quite la llamada si no es necesaria.
 
- O bien
+ -o bien-
 
  Si un método llama al método B, pero no utiliza el valor HRESULT o código de error que devuelve el método. Use el resultado en una instrucción condicional, asigne el resultado a una variable o páselo como argumento a otro método.
 

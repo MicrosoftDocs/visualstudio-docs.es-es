@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 87b484a1f8e2a116bd6cae288be7cc295c1a93e5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56711844"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62875327"
 ---
 # <a name="idebugengine2continuefromsynchronousevent"></a>IDebugEngine2::ContinueFromSynchronousEvent
 Llamado por el Administrador de depuración de la sesión (SDM) para indicar que un evento de depuración sincrónica, enviado previamente por el motor de depuración (DE) para el SDM, se ha recibido y procesado.

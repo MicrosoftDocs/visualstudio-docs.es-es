@@ -9,13 +9,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0e93155f230ee4a564116f5d1357a97923706c36
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526134"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62783498"
 ---
-# <a name="how-to-create-an-xml-schema-from-an-xml-document"></a>Filtrar Crear un esquema XML de un documento XML
+# <a name="how-to-create-an-xml-schema-from-an-xml-document"></a>Procedimiento Creación de un esquema XML a partir de un documento XML
 
 El editor XML permite crear un esquema (XSD) del lenguaje de definición de esquemas XML de un documento XML. El archivo XML determina cómo se genera el esquema de la siguiente manera:
 

@@ -1,51 +1,52 @@
 ---
 title: IEnumDebugPortSuppliers2::GetCount | Microsoft Docs
-ms.date: 11/04/2016
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
 ms.topic: reference
 f1_keywords:
 - IEnumDebugPortSuppliers2::GetCount
 helpviewer_keywords:
 - IEnumDebugPortSuppliers2::GetCount
 ms.assetid: 004f78dd-87d0-41a8-bcaa-f7fadbfeb8fc
-author: gregvanl
+caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.workload:
-- vssdk
 ms.openlocfilehash: abb44884769e000c719f720c186e00282f34ad12
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56692429"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62866667"
 ---
 # <a name="ienumdebugportsuppliers2getcount"></a>IEnumDebugPortSuppliers2::GetCount
-Devuelve el número de elementos de la enumeración.
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-## <a name="syntax"></a>Sintaxis
-
-```cpp
-HRESULT GetCount(
-   ULONG* pcelt
-);
-```
-
-```csharp
-int GetCount(
-   out uint pcelt
-);
-```
-
-#### <a name="parameters"></a>Parámetros
- `pcelt`
-
- [out] Devuelve el número de elementos de la enumeración.
-
-## <a name="return-value"></a>Valor devuelto
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
-
-## <a name="remarks"></a>Comentarios
- Este método no forma parte de la interfaz de enumeración COM habitual que especifica que solamente el `Next`, `Clone`, `Skip`, y `Reset` métodos deben implementarse.
-
-## <a name="see-also"></a>Vea también
-- [IEnumDebugPortSuppliers2](../../../extensibility/debugger/reference/ienumdebugportsuppliers2.md)
+Devuelve el número de elementos de la enumeración.  
+  
+## <a name="syntax"></a>Sintaxis  
+  
+```cpp#  
+HRESULT GetCount(  
+   ULONG* pcelt  
+);  
+```  
+  
+```csharp  
+int GetCount(  
+   out uint pcelt  
+);  
+```  
+  
+#### <a name="parameters"></a>Parámetros  
+ `pcelt`  
+ [out] Devuelve el número de elementos de la enumeración.  
+  
+## <a name="return-value"></a>Valor devuelto  
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
+  
+## <a name="remarks"></a>Comentarios  
+ Este método no forma parte de la interfaz de enumeración COM habitual que especifica que solamente el `Next`, `Clone`, `Skip`, y `Reset` métodos deben implementarse.  
+  
+## <a name="see-also"></a>Vea también  
+ [IEnumDebugPortSuppliers2](../../../extensibility/debugger/reference/ienumdebugportsuppliers2.md)

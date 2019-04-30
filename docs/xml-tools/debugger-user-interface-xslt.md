@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b25c47e6db79fe4b860b6e7c209f0fc8403d0fcd
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526017"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62838498"
 ---
 # <a name="debugger-user-interface-xslt"></a>Interfaz de usuario del depurador (XSLT)
 
@@ -33,7 +33,7 @@ Esta columna contiene los nombres de todas las variables locales del ámbito act
 
 Esta columna muestra el valor que contiene cada variable. Los nodos de atributo, instrucción de procesamiento, comentario, texto y CData muestran el valor de texto del nodo. Los nodos de espacio de nombres muestran el URI del espacio de nombres.
 
-**Type**
+**Tipo**
 
 Esta columna identifica el tipo de datos de cada variable mostrada en el **nombre** columna.
 

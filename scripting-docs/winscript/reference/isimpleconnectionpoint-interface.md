@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 0d18c8f9eef6ddb1a38473eb19984bd9cf7dbd96
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58146934"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63001502"
 ---
 # <a name="isimpleconnectionpoint-interface"></a>ISimpleConnectionPoint (Interfaz)
 Proporciona una manera sencilla de describir y enumerar los eventos se activa en un punto de conexión determinado. Esta interfaz también permite enlazar fácilmente un `IDispatch` objeto a esos eventos. Esta interfaz es implementada por el proceso de depuración Manager (PDM) y consumida por los motores de scripts.  

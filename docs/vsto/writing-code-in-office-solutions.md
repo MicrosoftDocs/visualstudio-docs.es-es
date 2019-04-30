@@ -34,11 +34,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 2c5163de342415113321b6bd2337cd75ff528f6c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076895"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62810790"
 ---
 # <a name="write-code-in-office-solutions"></a>Escribir código en soluciones de Office
   Hay algunos aspectos de la escritura de código en proyectos de Office que difieren de otros tipos de proyectos de Visual Studio. Muchas de estas diferencias están relacionadas con la forma en que los modelos de objetos de Office se exponen al código administrado. Otras diferencias están relacionadas con el diseño de los proyectos de Office.

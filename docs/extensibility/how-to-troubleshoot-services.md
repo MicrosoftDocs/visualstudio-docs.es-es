@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 681564b2148fb9554e80105c2e18b1d220bb37ea
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60111654"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62862853"
 ---
 # <a name="how-to-troubleshoot-services"></a>Procedimiento Solucionar problemas de servicios
 Hay varios problemas comunes que pueden producirse al intentar obtener un servicio:

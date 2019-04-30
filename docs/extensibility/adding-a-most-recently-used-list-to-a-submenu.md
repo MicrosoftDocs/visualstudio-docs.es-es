@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 462f59d472c6de8872394b2eadd5f33aa27bccca
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710089"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62843831"
 ---
 # <a name="add-a-most-recently-used-list-to-a-submenu"></a>Agregar que una lista a un submenú usados recientemente
 En este tutorial se basa en las demostraciones en [agregar un submenú a un menú](../extensibility/adding-a-submenu-to-a-menu.md)y se muestra cómo agregar una lista dinámica a un submenú. La lista dinámica constituye la base para la creación de una lista de usados recientemente (MRU).

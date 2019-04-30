@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: e73310d8a1cff3b640896d9bb5883cf2508bda6e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069658"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62869326"
 ---
 # <a name="idebugproperty3"></a>IDebugProperty3
 Esta interfaz proporciona compatibilidad para:

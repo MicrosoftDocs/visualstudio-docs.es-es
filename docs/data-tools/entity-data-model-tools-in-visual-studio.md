@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: d6f14dbe79e9ba0f2a8642c61a0682b25aa703f0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945838"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62567210"
 ---
 # <a name="entity-framework-tools-in-visual-studio"></a>Herramientas de Entity Framework en Visual Studio
 
@@ -44,7 +44,7 @@ Las herramientas generan o modifican una *.edmx* archivo. Esto *.edmx* archivo c
 
 ## <a name="related-topics"></a>Temas relacionados
 
-| Title | Descripción |
+| Título | Descripción |
 | - | - |
 | [ADO.NET Entity Framework](/dotnet/framework/data/adonet/ef/index) | Describe cómo usar [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] herramientas, que [!INCLUDE[adonet_ef](../data-tools/includes/adonet_ef_md.md)] proporciona para crear aplicaciones. |
 | [Entity Data Model](/dotnet/framework/data/adonet/entity-data-model) | Proporciona vínculos e información para trabajar con datos que se usan las aplicaciones basadas en [!INCLUDE[adonet_ef](../data-tools/includes/adonet_ef_md.md)]. |

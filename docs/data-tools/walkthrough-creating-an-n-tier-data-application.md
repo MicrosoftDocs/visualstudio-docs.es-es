@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 471f0e9b97293bd70457a8f41cb7efddd6acf6c1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091829"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62564811"
 ---
 # <a name="walkthrough-create-an-n-tier-data-application"></a>Tutorial: Crear una aplicación de datos de n niveles
 Las aplicaciones de datos con *n niveles* son aplicaciones que acceden a datos y que están separadas en varias capas lógicas o *niveles*. Al separar los componentes de la aplicación en estos niveles individuales, se aumenta la facilidad de mantenimiento y la escalabilidad de la aplicación. Esto se consigue mediante una integración más sencilla de nuevas tecnologías, que se pueden aplicar a un solo nivel sin necesidad de volver a diseñar la solución completa. Una arquitectura típica con n niveles incluye un nivel de presentación, un nivel intermedio y una capa de datos. El nivel intermedio incluye normalmente una capa de acceso a datos, una capa de la lógica empresarial y componentes compartidos, tales como autenticación y validación. La capa de datos incluye una base de datos relacional. Las aplicaciones con n niveles normalmente almacenan la información confidencial en la capa de acceso a datos del nivel intermedio para aislar esa información de los usuarios finales que obtienen acceso al nivel de presentación. Para obtener más información, consulte [Introducción a las aplicaciones de datos con N niveles](../data-tools/n-tier-data-applications-overview.md).
@@ -92,7 +92,7 @@ En este tutorial usa SQL Server Express LocalDB y la base de datos de ejemplo No
 
 ### <a name="to-create-a-separate-class-library-for-the-tableadapters"></a>Para crear una biblioteca de clases independiente para los TableAdapters
 
-1. Haga doble clic en la solución en **el Explorador de soluciones** y elija **agregar** > **nuevo proyecto**.
+1. Haga clic con el botón derecho en la solución en el **Explorador de soluciones** y seleccione **Agregar** > **Nuevo proyecto**.
 
 2. En el **nuevo proyecto** cuadro de diálogo, en el panel central, seleccione **biblioteca de clases**.
 
@@ -164,7 +164,7 @@ Este tutorial muestra cómo obtener acceso a la capa de acceso a datos mediante 
 
 ### <a name="to-create-a-new-wcf-service-application"></a>Para crear una nueva aplicación de servicio WCF
 
-1. Haga doble clic en la solución en **el Explorador de soluciones** y elija **agregar** > **nuevo proyecto**.
+1. Haga clic con el botón derecho en la solución en el **Explorador de soluciones** y seleccione **Agregar** > **Nuevo proyecto**.
 
 2. En el **nuevo proyecto** cuadro de diálogo, en el panel izquierdo, seleccione **WCF**. En el panel central, seleccione **biblioteca de servicios WCF**.
 
@@ -288,7 +288,7 @@ Este tutorial muestra cómo obtener acceso a la capa de acceso a datos mediante 
 
 ### <a name="to-create-the-presentation-tier-project"></a>Para crear el proyecto de nivel de presentación
 
-1. Haga doble clic en la solución en **el Explorador de soluciones** y elija **agregar** > **nuevo proyecto**.
+1. Haga clic con el botón derecho en la solución en el **Explorador de soluciones** y seleccione **Agregar** > **Nuevo proyecto**.
 
 2. En el **nuevo proyecto** cuadro de diálogo, en el panel izquierdo, seleccione **Windows Desktop**. En el panel central, seleccione **aplicación de Windows Forms**.
 

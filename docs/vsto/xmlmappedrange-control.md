@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: cde5489d970de02afbce28ab9c60c677ab199c84
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105687"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62810764"
 ---
 # <a name="xmlmappedrange-control"></a>XmlMappedRange (control)
   El <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> control es un intervalo que se crea solo cuando un elemento de esquema no es de repetición se asigna a una celda en Microsoft Office Excel. Por ejemplo, cuando el `maxOccurs` atributo de un elemento de esquema es igual a 1. Después de que Visual Studio crea el intervalo XML asignado, puede programar con él directamente sin tener que recorrer el modelo de objetos de Excel. Solo se puede eliminar un <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> control dentro de Excel cuando se quita la asignación de elemento.

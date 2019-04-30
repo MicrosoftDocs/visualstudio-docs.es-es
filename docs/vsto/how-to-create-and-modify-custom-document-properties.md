@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 7d6ef8332a5adc21e25f2a414c5b359e48cf1ba7
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194595"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62825800"
 ---
 # <a name="how-to-create-and-modify-custom-document-properties"></a>Procedimiento Crear y modificar propiedades de documento personalizadas
   Las aplicaciones de Microsoft Office enumeradas anteriormente proporcionan propiedades integradas que se almacenan con los documentos. Además, puede crear y modificar propiedades de documento personalizadas si hay información adicional que desea almacenar con el documento.

@@ -1,34 +1,37 @@
 ---
 title: Publish-WebApplicationWebSite (script de Windows PowerShell) | Microsoft Docs
 description: Aprenda a publicar un proyecto web en un sitio web de Azure. Este script crea los recursos necesarios en su suscripción de Azure si no existen.
+services: visual-studio-online
 author: ghogen
-manager: jillfra
+manager: douge
 assetId: 63cfaa2d-f04d-40dc-8677-345385c278d5
-ms.prod: visual-studio-dev14
+ms.prod: visual-studio-dev15
 ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
-ms.date: 11/11/2016
-ms.author: ghogen
+origin.date: 11/11/2016
+ms.date: 09/10/2018
+ms.author: v-junlch
 ms.openlocfilehash: 6953d8944bb8619560ade4c7b3924dc9e89d3b11
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660910"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62830529"
 ---
 # <a name="publish-webapplicationwebsite-windows-powershell-script"></a>Publicación de WebApplicationWebSite (script de Windows PowerShell)
 ## <a name="syntax"></a>Sintaxis
 Publica un proyecto web en un sitio web de Azure. El script crea los recursos necesarios en su suscripción de Azure si no existen.
 
     Publish-WebApplicationWebSite
-    –Configuration <configuration>
+    -Configuration <configuration>
     -SubscriptionName <subscriptionName>
     -WebDeployPackage <packageName>
     -DatabaseServerPassword @{Name = "name"; Password = "password"}
     -SendHostMessagesToOutput
     -Verbose
+
 
 ## <a name="configuration"></a>Configuración
 La ruta de acceso al archivo de configuración JSON que describe los detalles de la implementación.
@@ -99,7 +102,7 @@ El archivo de configuración JSON especifica los detalles de lo que va a impleme
         "environmentSettings": {
             "webSite": {
                 "name": "WebApplication10554",
-                "location": "West US"
+                "location": "China North"
             },
             "databases": [
                 {
@@ -111,7 +114,7 @@ El archivo de configuración JSON especifica los detalles de lo que va a impleme
                     "edition": "",
                     "size": "",
                     "collation": "",
-                    "location": "West US"
+                    "location": "China North"
                 }
             ]
         }
@@ -121,3 +124,6 @@ Puede editar el archivo de configuración de JSON para cambiar lo que se impleme
 
 ## <a name="next-steps"></a>Pasos siguientes
 Para obtener más información, consulte [Publish-WebApplicationVM (script de Windows PowerShell)](vs-azure-tools-publish-webapplicationvm.md)
+
+
+<!-- Update_Description: update metedata properties -->

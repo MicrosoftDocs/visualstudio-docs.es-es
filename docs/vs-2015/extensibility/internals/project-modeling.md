@@ -12,11 +12,11 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: e0edca4a45419a4a4c962ebf62b65e99c4732a12
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58999828"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62431383"
 ---
 # <a name="project-modeling"></a>Modelado de proyectos
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]

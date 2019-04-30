@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d9953190220acf572ac04b18e9018c1d45a3b2c
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MT
+ms.openlocfilehash: 59b8ed5c74d998b47ff4a187b420695eab5be035
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525753"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62807729"
 ---
 # <a name="xml-document-validation"></a>Validación de documentos XML
 
@@ -21,21 +21,21 @@ El editor XML comprueba la sintaxis XML 1.0 y también realiza la validación de
 
  Para encontrar los esquemas usados en la validación se hace coincidir el `targetNamespace` de un esquema compilado con la declaración xmlns del elemento. Los esquemas compilados se cargan desde una de las siguientes ubicaciones, mostradas en orden de prioridad:
 
--   El nombre de archivo especificado en el **esquemas** campo del documento **propiedades** ventana.
+- El nombre de archivo especificado en el **esquemas** campo del documento **propiedades** ventana.
 
--   Un esquema o DTD alineado.
+- Un esquema o DTD alineado.
 
--   Una DTD externa o un atributo `xsd:schemaLocation` y `xsd:noNamespaceSchemaLocation`
+- Una DTD externa o un atributo `xsd:schemaLocation` y `xsd:noNamespaceSchemaLocation`
 
--   Un identificador URI de espacio de nombres de esquema XDR "x-schema".
+- Un identificador URI de espacio de nombres de esquema XDR "x-schema".
 
 También es posible encontrar esquemas en estos otros lugares cuando el esquema tiene un espacio de nombres de destino que no está vacío:
 
--   Otra ventana del editor que contiene el esquema.
+- Otra ventana del editor que contiene el esquema.
 
--   Un esquema de la solución actual.
+- Un esquema de la solución actual.
 
--   Un esquema del directorio de la caché de esquema.
+- Un esquema del directorio de la caché de esquema.
 
 ## <a name="xslt-files"></a>Archivos XSLT
  Al editar un archivo XSLT, el *xslt.xsd* archivo se encuentra en la caché de esquema se utiliza para la validación. Los errores de validación se muestran con un subrayado ondulado de color azul. Los errores del compilador XSLT se muestran con un subrayado ondulado rojo.

@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c8da8b003f74b21ab0a6178742c28f85423dd2ec
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908899"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62816804"
 ---
 # <a name="design-warnings"></a>Diseñar advertencias
 Advertencias compatibles con el cumplimiento para las instrucciones de diseño de .NET Framework de diseño.
@@ -81,7 +81,7 @@ Advertencias compatibles con el cumplimiento para las instrucciones de diseño d
 | [CA1055: URI devuelven valores no deben ser cadenas](../code-quality/ca1055-uri-return-values-should-not-be-strings.md) | Esta regla supone que el método devuelve un URI. Las representaciones de cadena de identificadores URI tienen tendencia a analizar y codificar errores, por lo que pueden crear puntos vulnerables en la seguridad. La clase System.Uri proporciona estos servicios de una manera segura. |
 | [CA1056: Las propiedades URI no deben ser cadenas](../code-quality/ca1056-uri-properties-should-not-be-strings.md) | Esta regla supone que la propiedad representa un URI. Las representaciones de cadena de identificadores URI tienen tendencia a analizar y codificar errores, por lo que pueden crear puntos vulnerables en la seguridad. La clase System.Uri proporciona estos servicios de una manera segura. |
 | [CA1057: Las sobrecargas URI de cadena llaman a sobrecargas System.Uri](../code-quality/ca1057-string-uri-overloads-call-system-uri-overloads.md) | Un tipo declara sobrecargas de método que solamente se distinguen por la sustitución de un parámetro de cadena por un parámetro System.Uri. La sobrecarga que toma el parámetro de cadena no llama a la sobrecarga que toma el parámetro URI. |
-| [CA1058: Tipos no deben ampliar ciertos tipos base](../code-quality/ca1058-types-should-not-extend-certain-base-types.md) | Un tipo visible externamente extiende algunos tipos base. Utilice una de las alternativas. |
+| [CA1058: Los tipos no deben ampliar ciertos tipos base](../code-quality/ca1058-types-should-not-extend-certain-base-types.md) | Un tipo visible externamente extiende algunos tipos base. Utilice una de las alternativas. |
 | [CA1059: Los miembros no deben exponer algunos tipos concretos](../code-quality/ca1059-members-should-not-expose-certain-concrete-types.md) | Un tipo concreto es un tipo que tiene una implementación completa y, por consiguiente, se pueden crear instancias de él. Para permitir un uso extendido del miembro, reemplace el tipo concreto por la interfaz sugerida. |
 | [CA1060: Mueva P/Invokes a la clase NativeMethods](../code-quality/ca1060-move-p-invokes-to-nativemethods-class.md) | Los métodos de invocación de plataforma, como aquellos marcados con el <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> o métodos definidos utilizando la palabra clave Declare en [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], tener acceso a código no administrado. Estos métodos deben ser de la clase NativeMethods, UnsafeNativeMethods o SafeNativeMethods. |
 | [CA1061: No oculte métodos de clase base](../code-quality/ca1061-do-not-hide-base-class-methods.md) | Un método de un tipo base está oculto por un método del mismo nombre en un tipo derivado cuando la firma del parámetro del método derivado solo se diferencia por tipos derivados de manera más débil que los tipos correspondientes de la firma del parámetro del método base. |
