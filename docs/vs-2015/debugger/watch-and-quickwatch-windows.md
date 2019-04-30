@@ -24,12 +24,12 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d1a6167759d35dd67142e1919423df6aa380fe88
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c3f79e492440f98f733488afb241fa6f86e220b9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063535"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444234"
 ---
 # <a name="watch-and-quickwatch-windows"></a>Ventanas Inspección e Inspección rápida
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -162,7 +162,7 @@ var1 = var2
  Hay veces en las que es necesario observar el comportamiento de un objeto específico. Por ejemplo, puede que desee realizar el seguimiento de un objeto al que hace referencia una variable local después de que dicha variable haya dejado de estar en el ámbito del objeto. En C# y Visual Basic, puede crear identificadores de objetos para instancias específicas de tipos y usarlos en la ventana Inspección y en condiciones de interrupción. Los servicios de depuración de Common Language Runtime (CLR) generan el identificador de objeto y lo asocian al objeto.  
   
 > [!NOTE]
->  Los identificadores de objeto crean referencias débiles y no impiden que el objeto se recopile en la recolección de elementos no utilizados. Los identificadores de objeto solo son válidos para la sesión de depuración actual.  
+> Los identificadores de objeto crean referencias débiles y no impiden que el objeto se recopile en la recolección de elementos no utilizados. Los identificadores de objeto solo son válidos para la sesión de depuración actual.  
   
  En el código siguiente, un método crea un objeto `Person` usando una variable local, pero desea saber cuál es el nombre de `Person`en un método diferente:  
   
@@ -215,7 +215,7 @@ public class Program
 6. Continúe con la depuración y, cuando la ejecución se detenga en el método `DoSomething()` , la ventana **Inspección** mostrará el objeto `Person` .  
   
 > [!NOTE]
->  Si desea ver las propiedades del objeto, como `Person.Name` en el ejemplo anterior, debe habilitar la evaluación de propiedades.  
+> Si desea ver las propiedades del objeto, como `Person.Name` en el ejemplo anterior, debe habilitar la evaluación de propiedades.  
   
 ## <a name="using-registers-in-the-watch-window-c-only"></a>Uso de registros en la ventana Inspección (solo en C++)  
  Si está depurando código nativo, puede agregar nombres de registro, así como los nombres de variable mediante  **$ \<registrar nombre >** o  **@ \<registrar nombre >**.  Para obtener más información, consulta [Pseudovariables](../debugger/pseudovariables.md).  

@@ -13,12 +13,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ccf761521d43e3f5ff9d12a4af7fbae4addcddc9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f956f492c3dc690ef2edb67d9a7c75e6c0108820
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100526"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433268"
 ---
 # <a name="customizing-element-creation-and-movement"></a>Personalizar la creación y el movimiento de los elementos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,9 +72,9 @@ Puede permitir que un elemento se arrastra hasta otro, desde el cuadro de herram
    Por ejemplo, podría establecer propiedades en el elemento combinado mediante el uso de datos desde su nueva ubicación en el modelo.  
   
 > [!NOTE]
->  Si escribe código personalizado de mezcla, afecta sola combinaciones que se realizan mediante el uso de este EMD. Si hay otros EMDs que combinación el mismo tipo de objeto, o si hay otro código personalizado que crea estos objetos sin utilizar el EMD, a continuación, no afectará el código personalizado de mezcla.  
+> Si escribe código personalizado de mezcla, afecta sola combinaciones que se realizan mediante el uso de este EMD. Si hay otros EMDs que combinación el mismo tipo de objeto, o si hay otro código personalizado que crea estos objetos sin utilizar el EMD, a continuación, no afectará el código personalizado de mezcla.  
 >   
->  Si desea asegurarse de que un nuevo elemento o una nueva relación siempre se procesa el código personalizado, considere la posibilidad de definir un `AddRule` en la relación de incrustación y un `DeleteRule` en la clase de dominio del elemento. Para obtener más información, consulte [propagar cambios en el modelo de reglas de](../modeling/rules-propagate-changes-within-the-model.md).  
+> Si desea asegurarse de que un nuevo elemento o una nueva relación siempre se procesa el código personalizado, considere la posibilidad de definir un `AddRule` en la relación de incrustación y un `DeleteRule` en la clase de dominio del elemento. Para obtener más información, consulte [propagar cambios en el modelo de reglas de](../modeling/rules-propagate-changes-within-the-model.md).  
   
 ## <a name="example-defining-an-emd-without-custom-code"></a>Ejemplo: Definir una EMD sin código personalizado  
  En el siguiente ejemplo permite a los usuarios crear un elemento y un conector al mismo tiempo, arrastre desde el cuadro de herramientas a una forma existente. El ejemplo agrega una EMD a la definición de DSL. Antes de esta modificación, los usuarios pueden arrastrar herramientas al diagrama, pero no en formas existentes.  

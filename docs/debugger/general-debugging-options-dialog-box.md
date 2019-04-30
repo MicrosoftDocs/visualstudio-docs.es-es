@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29b730bacd589e7b42b9f87086eda91d9e199622
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 8579504f549cb078fee178127c7396896fce5313
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59504424"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63399360"
 ---
 # <a name="general-debugging-options"></a>Opciones generales de depuración
 
@@ -85,7 +85,7 @@ En condiciones de 2 y 3, a veces detecta la excepción mediante código administ
 **Habilitar compatibilidad con vínculos de origen**: Indica al depurador de Visual Studio para descargar los archivos de origen para *.pdb* archivos que contienen información de vínculo de origen. Para obtener más información sobre el vínculo de origen, consulte el [especificación de vinculación de código fuente](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/source_link.md).
 
 > [!IMPORTANT]
->  Como origen de vínculo descargará los archivos mediante http o https, asegúrese de que confía el *.pdb* archivo.
+> Como origen de vínculo descargará los archivos mediante http o https, asegúrese de que confía el *.pdb* archivo.
 
 - **Recurrir a la autenticación del Administrador de credenciales de GIT para todas las solicitudes de vínculos de origen**:   Cuando se habilita la compatibilidad de vínculo de origen y una solicitud de vínculo de origen se produce un error de autenticación, Visual Studio, a continuación, llama al administrador de credenciales de Git.
 

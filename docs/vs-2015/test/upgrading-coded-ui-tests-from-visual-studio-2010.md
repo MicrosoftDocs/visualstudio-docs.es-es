@@ -8,12 +8,12 @@ ms.assetid: 11232a83-73ea-46bd-bc0c-46f74f6e3a42
 caps.latest.revision: 35
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 58bfe0a2a6c337081ebb96464a701decb73cc022
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 42db6024353e3b26ddcaf6b5fa838ff791d964f4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080701"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445897"
 ---
 # <a name="upgrading-coded-ui-tests-from-visual-studio-2010"></a>Actualizar pruebas de IU codificadas desde Visual Studio 2010
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,19 +25,19 @@ Los proyectos de prueba que contienen pruebas de IU codificadas creadas en [!INC
 - Visual Studio Enterprise
 
 > [!NOTE]
->  Visual Studio incluye más de un tipo de proyecto de prueba. Si crea una nueva prueba de IU codificada, se creará en un tipo de proyecto de prueba de IU codificada. Para obtener más información, vea [Actualizar pruebas de versiones anteriores de Visual Studio](http://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52).
+> Visual Studio incluye más de un tipo de proyecto de prueba. Si crea una nueva prueba de IU codificada, se creará en un tipo de proyecto de prueba de IU codificada. Para obtener más información, vea [Actualizar pruebas de versiones anteriores de Visual Studio](http://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52).
 
 > [!WARNING]
->  Los proyectos de prueba de[!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] que contienen pruebas de IU codificadas tienen que volver a compilarse al abrir el proyecto de prueba en [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] o [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] en paralelo con [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].
+> Los proyectos de prueba de[!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] que contienen pruebas de IU codificadas tienen que volver a compilarse al abrir el proyecto de prueba en [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] o [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] en paralelo con [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].
 
 > [!WARNING]
->  Si un proyecto de prueba creado en [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] que solo contiene pruebas unitarias se abre en [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], no es posible agregarle las pruebas de IU codificadas. De forma similar, no se puede agregar una prueba de IU codificada a un proyecto de prueba unitaria creado en [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].
+> Si un proyecto de prueba creado en [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] que solo contiene pruebas unitarias se abre en [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], no es posible agregarle las pruebas de IU codificadas. De forma similar, no se puede agregar una prueba de IU codificada a un proyecto de prueba unitaria creado en [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].
 
 ## <a name="compatibility-issues-between-visual-studio-2010-and-visual-studio-2012"></a>Problemas de compatibilidad entre Visual Studio 2010 y Visual Studio 2012
  En la siguiente tabla se enumeran los problemas que hay que tener en cuenta a la hora de migrar pruebas de IU codificadas entre [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] y [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].
 
 > [!CAUTION]
->  Hay un problema conocido consistente en que las referencias de los proyectos de prueba de IU codificada no aparecen en el Explorador de soluciones. Para obtener más información, vea el archivo Léame incluido en el soporte de instalación de [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] .
+> Hay un problema conocido consistente en que las referencias de los proyectos de prueba de IU codificada no aparecen en el Explorador de soluciones. Para obtener más información, vea el archivo Léame incluido en el soporte de instalación de [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] .
 
 |Funcionalidad de IU codificada|Problema|Soluciones|
 |----------------------------|-----------|--------------|

@@ -25,12 +25,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9e6ebd09188e737e75c9e5f66ed95411e1a9453d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4ab27c27873fc0addf1dbdbdbca81613d3015cc3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106207"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445545"
 ---
 # <a name="custom-task-panes"></a>Paneles de tareas personalizados
   Los paneles de tareas son paneles de interfaz de usuario que normalmente están acoplados a un lado de una ventana en una aplicación de Microsoft Office. Los paneles de tareas personalizados proporcionan una manera de crear su propio panel de tareas y ofrecer a los usuarios una interfaz conocida para acceder a las características de la solución. Por ejemplo, la interfaz puede contener controles que ejecutan código para modificar documentos o mostrar datos de un origen de datos.
@@ -38,7 +38,7 @@ ms.locfileid: "60106207"
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
 > [!NOTE]
->  Un panel de tareas personalizado difiere del panel de acciones. El panel de acciones es parte de las personalizaciones de nivel de documento de Microsoft Office Word y Microsoft Office Excel. Para obtener más información, consulte [información general sobre el panel de acciones](../vsto/actions-pane-overview.md).
+> Un panel de tareas personalizado difiere del panel de acciones. El panel de acciones es parte de las personalizaciones de nivel de documento de Microsoft Office Word y Microsoft Office Excel. Para obtener más información, consulte [información general sobre el panel de acciones](../vsto/actions-pane-overview.md).
 
 ## <a name="benefits-of-custom-task-panes"></a>Ventajas de los paneles de tareas personalizados
  Los paneles de tareas personalizados permiten integrar características en una interfaz de usuario conocida. Puede crear un panel de tareas personalizado rápidamente con herramientas de Visual Studio.

@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 85b9d20dd67ff11f5bded7060440f2e768a205a9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 84f82ab6e5cca57a1fabd600cecc7a5ee505c150
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722868"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411128"
 ---
 # <a name="vsix-manifest-designer"></a>Diseñador de manifiestos de VSIX
 Modifica un archivo de manifiesto de paquete VSIX, que establece el comportamiento de instalación para una extensión de Visual Studio.
@@ -29,7 +29,7 @@ Modifica un archivo de manifiesto de paquete VSIX, que establece el comportamien
  Para abrir el **el Diseñador de manifiestos VSIX**, busque un *source.extension.vsixmanifest* archivo **el Explorador de soluciones**y abra el archivo. Si el archivo no contiene XML válido, no se abrirá el Diseñador de manifiestos.
 
 > [!NOTE]
->  El *source.extension.vsixmanifest* se enviaran resultado a archivo *extension.vsixmanifest* cuando se compila el paquete.
+> El *source.extension.vsixmanifest* se enviaran resultado a archivo *extension.vsixmanifest* cuando se compila el paquete.
 
 ## <a name="uielement-list"></a>Lista de UIElement
  El **el Diseñador de manifiestos VSIX** contiene cuatro secciones que corresponden a estos elementos de nivel superior del esquema:

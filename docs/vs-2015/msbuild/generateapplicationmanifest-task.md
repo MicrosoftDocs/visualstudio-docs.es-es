@@ -20,12 +20,12 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cf3c68d7f70822bbe7b085b92e64bda0b9437dfc
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 3493c487c446bb66e99bf98a7c3f5599599801fd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660988"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424129"
 ---
 # <a name="generateapplicationmanifest-task"></a>GenerateApplicationManifest (Tarea)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,10 +44,10 @@ Genera un manifiesto de aplicación de [!INCLUDE[ndptecclick](../includes/ndptec
 |`Dependencies`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Especifica una lista de elementos que define el conjunto de ensamblados dependientes para el manifiesto generado. Cada elemento puede describirse con más detalle mediante metadatos de elemento para indicar el estado de implementación adicional y el tipo de dependencia. Para obtener más información, consulte la sección "Metadatos de elementos" a continuación.|  
 |`Description`|Parámetro `String` opcional.<br /><br /> Especifica la descripción para la aplicación o componente.|  
 |`EntryPoint`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Especifica un elemento único que indica el punto de entrada para el ensamblado del manifiesto generado.<br /><br /> Para un manifiesto de aplicación de [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], este parámetro especifica el ensamblado que se inicializa cuando se ejecuta la aplicación.|  
-|`ErrorReportUrl`|(Opcional [String]<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) parámetro.<br /><br /> Especifica la dirección URL de la página web que se muestra en los cuadros de diálogo durante los informes de errores de las instalaciones ClickOnce.|  
+|`ErrorReportUrl`|Parámetro opcional [String](<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->).<br /><br /> Especifica la dirección URL de la página web que se muestra en los cuadros de diálogo durante los informes de errores de las instalaciones ClickOnce.|  
 |`FileAssociations`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Especifica una lista de uno o varios tipos de archivo asociados al manifiesto de implementación de ClickOnce.<br /><br /> Las asociaciones de archivo son válidas únicamente cuando el destino es .NET Framework 3.5 o posterior.|  
 |`Files`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Los archivos que se incluirán en el manifiesto. Especifique la ruta de acceso completa para cada archivo.|  
-|`HostInBrowser`|(Opcional) [Booleano]<!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  -->) parámetro.<br /><br /> Si es `true`, la aplicación se aloja en un explorador (como las aplicaciones de explorador web de WPF).|  
+|`HostInBrowser`|Parámetro opcional [Boolean](<!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  -->).<br /><br /> Si es `true`, la aplicación se aloja en un explorador (como las aplicaciones de explorador web de WPF).|  
 |`IconFile`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Indica el archivo de icono de la aplicación. El icono de la aplicación se expresa en el manifiesto de aplicación generado y se utiliza para el menú Inicio y el cuadro de diálogo Agregar o quitar programas. Si no se especifica esta entrada, se usa un icono predeterminado. Si la tarea va a generar un manifiesto nativo, este parámetro se omite.|  
 |`InputManifest`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem> opcional.<br /><br /> Indica un documento XML de entrada que sirve de base para el generador de manifiestos. De este modo, los datos estructurados como la seguridad de la aplicación o las definiciones personalizadas del manifiesto pueden reflejarse en el manifiesto de salida. El elemento raíz del documento XML debe ser un nodo de ensamblado en el espacio de nombres asmv1.|  
 |`IsolatedComReferences`|Parámetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Especifica los componentes COM que se aislarán en el manifiesto generado. Este parámetro permite aislar los componentes COM para la implementación de "COM sin registro". Funciona generando automáticamente un manifiesto con definiciones estándar de registro de COM. Sin embargo, los componentes COM se deben registrar en el equipo de compilación para que funcione correctamente.|  
@@ -90,10 +90,10 @@ Genera un manifiesto de aplicación de [!INCLUDE[ndptecclick](../includes/ndptec
  Esto ilustra el escenario de generación de manifiestos más sencillo posible donde los manifiestos de [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] se generan para un único programa. Un nombre e identidad predeterminados se deducen del ensamblado para el manifiesto.  
   
 > [!NOTE]
->  En el ejemplo siguiente, todos los archivos binarios de aplicación se compilan previamente para centrar la atención en aspectos de la generación del manifiesto. En este ejemplo se produce una implementación de [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] totalmente funcional.  
+> En el ejemplo siguiente, todos los archivos binarios de aplicación se compilan previamente para centrar la atención en aspectos de la generación del manifiesto. En este ejemplo se produce una implementación de [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] totalmente funcional.  
   
 > [!NOTE]
->  Para obtener más información sobre la propiedad `Thumbprint` usada en la tarea `SignFile` en este ejemplo, vea [SignFile (Tarea)](../msbuild/signfile-task.md).  
+> Para obtener más información sobre la propiedad `Thumbprint` usada en la tarea `SignFile` en este ejemplo, vea [SignFile (Tarea)](../msbuild/signfile-task.md).  
   
 ```  
 <Project DefaultTargets="Build"  
@@ -143,10 +143,10 @@ Genera un manifiesto de aplicación de [!INCLUDE[ndptecclick](../includes/ndptec
  Este ejemplo es similar al ejemplo anterior, excepto que el nombre y la identidad de los manifiestos están especificados explícitamente. Asimismo, este ejemplo se configura como una aplicación en línea en vez de como una aplicación instalada.  
   
 > [!NOTE]
->  En el ejemplo siguiente, todos los archivos binarios de aplicación se compilan previamente para centrar la atención en aspectos de la generación del manifiesto. En este ejemplo se produce una implementación de [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] totalmente funcional.  
+> En el ejemplo siguiente, todos los archivos binarios de aplicación se compilan previamente para centrar la atención en aspectos de la generación del manifiesto. En este ejemplo se produce una implementación de [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] totalmente funcional.  
   
 > [!NOTE]
->  Para obtener más información sobre la propiedad `Thumbprint` usada en la tarea `SignFile` en este ejemplo, vea [SignFile (Tarea)](../msbuild/signfile-task.md).  
+> Para obtener más información sobre la propiedad `Thumbprint` usada en la tarea `SignFile` en este ejemplo, vea [SignFile (Tarea)](../msbuild/signfile-task.md).  
   
 ```  
 <Project DefaultTargets="Build"  
@@ -201,10 +201,10 @@ Genera un manifiesto de aplicación de [!INCLUDE[ndptecclick](../includes/ndptec
  En este ejemplo se usan las tareas `GenerateApplicationManifest` y `GenerateDeploymentManifest` para generar los manifiestos de aplicación e implementación de [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] para una aplicación con varios archivos y ensamblados.  
   
 > [!NOTE]
->  En el ejemplo siguiente, todos los archivos binarios de aplicación se compilan previamente para centrar la atención en aspectos de la generación del manifiesto. En este ejemplo se produce una implementación de [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] totalmente funcional.  
+> En el ejemplo siguiente, todos los archivos binarios de aplicación se compilan previamente para centrar la atención en aspectos de la generación del manifiesto. En este ejemplo se produce una implementación de [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] totalmente funcional.  
   
 > [!NOTE]
->  Para obtener más información sobre la propiedad `Thumbprint` usada en la tarea `SignFile` en este ejemplo, vea [SignFile (Tarea)](../msbuild/signfile-task.md).  
+> Para obtener más información sobre la propiedad `Thumbprint` usada en la tarea `SignFile` en este ejemplo, vea [SignFile (Tarea)](../msbuild/signfile-task.md).  
   
 ```  
 <Project DefaultTargets="Build"  
@@ -321,7 +321,7 @@ Genera un manifiesto de aplicación de [!INCLUDE[ndptecclick](../includes/ndptec
  En este ejemplo se genera el manifiesto Test.exe., consiguiendo que la aplicación XCOPY se pueda implementar aprovechando el COM sin registro.  
   
 > [!NOTE]
->  En el ejemplo siguiente, todos los archivos binarios de aplicación se compilan previamente para centrar la atención en aspectos de la generación del manifiesto. En este ejemplo se produce una implementación de [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] totalmente funcional.  
+> En el ejemplo siguiente, todos los archivos binarios de aplicación se compilan previamente para centrar la atención en aspectos de la generación del manifiesto. En este ejemplo se produce una implementación de [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] totalmente funcional.  
   
 ```  
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  

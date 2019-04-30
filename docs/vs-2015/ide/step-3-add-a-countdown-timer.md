@@ -9,12 +9,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f0b98fa4b3182db71567d61569cddf4cfae33ec1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d95708f940bfb12f67903f41d9f030a77877008d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094830"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442611"
 ---
 # <a name="step-3-add-a-countdown-timer"></a>Paso 3: adición de un temporizador de cuenta atrás
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60094830"
 En la tercera parte de este tutorial, agregará un temporizador de cuenta atrás para el seguimiento del número de segundos que quedan para que el jugador finalice.  
   
 > [!NOTE]
->  Este tema forma parte de una serie de tutoriales sobre conceptos de codificación básicos. Para obtener información general sobre el tutorial, vea [Tutorial 2: Crear una prueba matemática cronometrada](../ide/tutorial-2-create-a-timed-math-quiz.md).  
+> Este tema forma parte de una serie de tutoriales sobre conceptos de codificación básicos. Para obtener información general sobre el tutorial, vea [Tutorial 2: Crear una prueba matemática cronometrada](../ide/tutorial-2-create-a-timed-math-quiz.md).  
   
 ### <a name="to-add-a-countdown-timer"></a>Para agregar un temporizador de cuenta atrás  
   
@@ -57,7 +57,7 @@ En la tercera parte de este tutorial, agregará un temporizador de cuenta atrás
      Hemos agregado una instrucción `if else`, que es la manera de indicar a los programas que tomen decisiones. Una instrucción `if else` tiene el siguiente aspecto.  
   
     > [!NOTE]
-    >  El ejemplo siguiente tiene solo fines ilustrativos. No lo agregue al proyecto.  
+    > El ejemplo siguiente tiene solo fines ilustrativos. No lo agregue al proyecto.  
   
     ```vb  
     If (something that your program will check) Then  

@@ -11,12 +11,12 @@ ms.assetid: f65ff67e-8c20-497a-bebf-5e2a5b5b012f
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 2ee09c334394e363d9621ddec887bd5d83726fba
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 59d25c338cb0c7406c533afeceaf3675fbd16e96
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103581"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441269"
 ---
 # <a name="syntax-coloring-in-a-legacy-language-service"></a>Colores de la sintaxis en un servicio de lenguaje heredado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "60103581"
 Modelo de Coloreador simple  
   
 > [!NOTE]
->  El servicio de color de sintaxis es independiente del general [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] mecanismo para colorear el texto. Para obtener más información sobre el general [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] mecanismo que admiten colorear, consulte [utilizar fuentes y colores](../../extensibility/using-fonts-and-colors.md).  
+> El servicio de color de sintaxis es independiente del general [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] mecanismo para colorear el texto. Para obtener más información sobre el general [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] mecanismo que admiten colorear, consulte [utilizar fuentes y colores](../../extensibility/using-fonts-and-colors.md).  
   
  Además el Coloreador, el servicio de lenguaje puede proporcionar elementos coloreables personalizados son utilizados por el editor, que proporciona elementos coloreables personalizados de publicidad. Puede hacerlo mediante la implementación de la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> interfaz en el mismo objeto que implementa el <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> interfaz. Devuelve el número de elementos coloreables personalizados cuando el editor llama a la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetItemCount%2A> método y devuelve un elemento coloreable personalizado individual cuando se llama el editor de la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A> método.  
   
@@ -51,7 +51,7 @@ Modelo de Coloreador simple
 2. El VSPackage ahora puede obtener y usar el objeto de Coloreador como sigue:  
   
     > [!NOTE]
-    >  Para obtener un lenguaje explícitamente los objetos de Coloreador del servicio no tiene VSPackages que use el editor básico. Tan pronto como una instancia del editor de núcleo Obtiene un servicio de lenguaje que corresponda, realiza todas las tareas de colores que se muestra aquí.  
+    > Para obtener un lenguaje explícitamente los objetos de Coloreador del servicio no tiene VSPackages que use el editor básico. Tan pronto como una instancia del editor de núcleo Obtiene un servicio de lenguaje que corresponda, realiza todas las tareas de colores que se muestra aquí.  
   
     1. Obtener el objeto de Coloreador del servicio de lenguaje, que implementa el `T:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer`, y <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer2> interfaces, mediante una llamada a la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetColorizer%2A> método en el servicio de lenguaje <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> objeto.  
   
@@ -62,7 +62,7 @@ Modelo de Coloreador simple
     3. Utilice la información de coloración devuelta por la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> método para mostrar el texto seleccionado.  
   
 > [!NOTE]
->  Además de utilizar un Coloreador del servicio de lenguaje, un VSPackage también puede usar el uso general [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] mecanismo de color de texto. Para obtener más información sobre este mecanismo, vea [utilizar fuentes y colores](../../extensibility/using-fonts-and-colors.md).  
+> Además de utilizar un Coloreador del servicio de lenguaje, un VSPackage también puede usar el uso general [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] mecanismo de color de texto. Para obtener más información sobre este mecanismo, vea [utilizar fuentes y colores](../../extensibility/using-fonts-and-colors.md).  
   
 ## <a name="in-this-section"></a>En esta sección  
  [Implementación de colores de la sintaxis](../../extensibility/internals/implementing-syntax-coloring.md)  

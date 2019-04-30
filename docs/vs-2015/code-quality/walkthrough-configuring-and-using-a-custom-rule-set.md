@@ -12,12 +12,12 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: da7b1f1bda7fac222d0d47c6bf2a15eaf3a8396f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fa3a91df779094e3e11722dfc7bfc03c58bcea7e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052069"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63383418"
 ---
 # <a name="walkthrough-configuring-and-using-a-custom-rule-set"></a>Tutorial: Configurar y utilizar un conjunto de reglas personalizado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,7 +70,7 @@ En este tutorial se muestra cómo usar las herramientas de análisis de código 
     En el menú archivo, haga clic en **guardar elementos seleccionados** para actualizar el archivo de proyecto con información sobre el conjunto de reglas que ha seleccionado y su configuración.  
   
    > [!TIP]
-   >  En una situación real, una buena práctica que se usará para dar prioridad a qué problemas desea dirigir con análisis de código es comenzar con la **reglas mínimas recomendadas** conjunto de reglas y corregir los problemas deseados y, a continuación, agregar de forma incremental más reglas o la regla se establece para encontrar y corregir los problemas adicionales.  
+   > En una situación real, una buena práctica que se usará para dar prioridad a qué problemas desea dirigir con análisis de código es comenzar con la **reglas mínimas recomendadas** conjunto de reglas y corregir los problemas deseados y, a continuación, agregar de forma incremental más reglas o la regla se establece para encontrar y corregir los problemas adicionales.  
   
    A continuación, agregará código a la biblioteca de clases que se usará para mostrar las infracciones de la CA1704 "Los identificadores deberían tener la ortografía correcta" regla de análisis de código. Para obtener más información, consulte [CA1704: Deben escribir correctamente los identificadores](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).  
   

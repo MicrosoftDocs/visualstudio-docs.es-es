@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d8ca2366111e0e87e8e95db66f9bdb146016adb8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 63d313534fab789c5e4e79fb644111314e054250
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040137"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445156"
 ---
 # <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>Procedimiento Migrar un lenguaje específico de dominio a una nueva versión
 Puede migrar los proyectos que definen y usar los lenguajes específicos de dominio a [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] desde la versión de [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] que se distribuyó con [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)].
@@ -53,7 +53,7 @@ Puede migrar los proyectos que definen y usar los lenguajes específicos de domi
    - Seleccione un proyecto o solución para ver una lista de cambios que hará que la herramienta.
 
        > [!NOTE]
-       >  Las casillas que aparecen junto a los nombres de carpeta no tienen ningún efecto. Debe expandir las carpetas para inspeccionar los proyectos y soluciones.
+       > Las casillas que aparecen junto a los nombres de carpeta no tienen ningún efecto. Debe expandir las carpetas para inspeccionar los proyectos y soluciones.
 
 4. Convertir los proyectos.
 
@@ -74,7 +74,7 @@ Puede migrar los proyectos que definen y usar los lenguajes específicos de domi
    2. Haga clic en el **Transformar todas las plantillas** botón en el encabezado del explorador de soluciones.
 
        > [!NOTE]
-       >  Puede realizar este paso innecesario. Para obtener más información, consulte [cómo automatizar Transformar todas las plantillas](/previous-versions/visualstudio/visual-studio-2012/ff521399\(v\=vs.110\)).
+       > Puede realizar este paso innecesario. Para obtener más información, consulte [cómo automatizar Transformar todas las plantillas](/previous-versions/visualstudio/visual-studio-2012/ff521399\(v\=vs.110\)).
 
 6. Actualice el código personalizado en los proyectos convertidos.
 

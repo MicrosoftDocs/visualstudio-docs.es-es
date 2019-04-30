@@ -1,5 +1,5 @@
 ---
-title: Filtrar Agregar un método Creator | Documentos de Microsoft
+title: Procedimiento Agregar un método Creator | Documentos de Microsoft
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,14 +17,14 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1c1596213b618ba67cd4bf1406f63c0754fd9b96
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 38312384c3e6ce51aa1b5b0b16df378286fc58b0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619321"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443583"
 ---
-# <a name="how-to-add-a-creator-method"></a>Filtrar Agregar un método Creator
+# <a name="how-to-add-a-creator-method"></a>Procedimiento Agregar un método Creator
   Un método Creator agrega nuevos datos al origen de datos de una entidad. El servicio de conectividad de datos profesionales (BDC) llama a este método cuando los usuarios elijan el **nuevo elemento** situado en la **cinta** de una lista que se basa en el modelo. Para obtener más información, consulte [diseñar un modelo de conectividad a datos empresariales](../sharepoint/designing-a-business-data-connectivity-model.md).
 
 ### <a name="to-add-a-creator-method"></a>Para agregar un método Creator
@@ -58,7 +58,7 @@ ms.locfileid: "56619321"
 5. Agregue código al método Creator que agrega datos al origen de datos. En el ejemplo siguiente se agrega un contacto a la base de datos de ejemplo AdventureWorks para SQL Server.
 
    > [!NOTE]
-   >  Reemplace el valor de la `ServerName` campo con el nombre del servidor.
+   > Reemplace el valor de la `ServerName` campo con el nombre del servidor.
 
     [!code-csharp[SP_BDC#4](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#4)]
     [!code-vb[SP_BDC#4](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#4)]

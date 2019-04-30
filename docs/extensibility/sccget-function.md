@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6b773fc52da702f2563276b4a8e51b6c3651f596
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fad29d305d3657f9ed6372769a85d84260c1e77b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044503"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434653"
 ---
 # <a name="sccget-function"></a>SccGet (función)
 Esta función recupera una copia de uno o más archivos para ver y compilar, pero no para su edición. En la mayoría de los sistemas, los archivos se etiquetan como de solo lectura.
@@ -81,7 +81,7 @@ SCCRTN SccGet(
  El `SCC_GET_ALL` marca se puede combinar con el `SCC_GET_RECURSIVE` marca para recuperar todos los archivos en los directorios dados y también todos los subdirectorios.
 
 > [!NOTE]
->  `SCC_GET_RECURSIVE` nunca debe pasarse sin `SCC_GET_ALL`. Además, tenga en cuenta que si los directorios *C:\A* y *C:\A\B* se pasan en una operación get recursiva, *C:\A\B* y dos veces en realidad se recuperarán todos sus subdirectorios. Es responsabilidad del IDE, y no en el origen de control del complemento, para asegurarse de que se mantengan los duplicados, como esto fuera de la matriz.
+> `SCC_GET_RECURSIVE` nunca debe pasarse sin `SCC_GET_ALL`. Además, tenga en cuenta que si los directorios *C:\A* y *C:\A\B* se pasan en una operación get recursiva, *C:\A\B* y dos veces en realidad se recuperarán todos sus subdirectorios. Es responsabilidad del IDE, y no en el origen de control del complemento, para asegurarse de que se mantengan los duplicados, como esto fuera de la matriz.
 
  Por último, incluso si el complemento de control de un origen especificado el `SCC_CAP_GET_NOUI` marca en la inicialización, lo que indica que no tiene una interfaz de usuario para un comando Get, todavía puede llamarse mediante el IDE para recuperar los archivos de esta función. La marca simplemente significa que el IDE no muestra un elemento de menú de Get y que el complemento no es lo esperado proporcionar cualquier interfaz de usuario.
 

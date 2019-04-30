@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 12a5f19574974ce8d3928997a6b02bbf59062d89
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0213df05e12ae69b4e24841971a518acc008599f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60101332"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419413"
 ---
 # <a name="how-to-expose-code-to-vba-in-a-visual-basic-project"></a>Procedimiento Exponer código a VBA en un proyecto de Visual Basic
   Puede exponer código en un [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] proyectos a Visual Basic para aplicaciones (VBA) si desea que los dos tipos de código para interactuar entre sí.
@@ -50,7 +50,7 @@ ms.locfileid: "60101332"
      Para obtener más información acerca de los formatos de archivo de documento que admiten macros, vea [combinar VBA y personalizaciones de nivel de documento](../vsto/combining-vba-and-document-level-customizations.md).
 
     > [!NOTE]
-    >  Esta característica no se puede utilizar en proyectos de plantilla de Word.
+    > Esta característica no se puede utilizar en proyectos de plantilla de Word.
 
 2. Asegúrese de que se puede ejecutar sin preguntar al usuario que habilite macros código VBA del documento. Puede confiar en la ejecución de código VBA si agrega la ubicación del proyecto de Office a la lista de ubicaciones de confianza en la configuración del Centro de confianza de Word o Excel.
 
@@ -65,7 +65,7 @@ ms.locfileid: "60101332"
      Después de establecer esta propiedad, Visual Studio establece automáticamente el **ReferenceAssemblyFromVbaProject** propiedad **True**.
 
     > [!NOTE]
-    >  Si el documento o libro aún no contiene código VBA o si no es de confianza para ejecutar código VBA del documento, recibirá un mensaje de error al establecer el **EnableVbaCallers** propiedad **True**. Esto se debe a que Visual Studio no puede modificar el proyecto de VBA del documento en esta situación.
+    > Si el documento o libro aún no contiene código VBA o si no es de confianza para ejecutar código VBA del documento, recibirá un mensaje de error al establecer el **EnableVbaCallers** propiedad **True**. Esto se debe a que Visual Studio no puede modificar el proyecto de VBA del documento en esta situación.
 
 5. Haga clic en **Aceptar** en el mensaje que se muestra. Este mensaje para recordarle que si agrega código VBA al libro o documento mientras se está ejecutando el proyecto desde [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], el código de VBA se perderá la próxima vez que compile el proyecto. Esto es porque el documento en la carpeta de salida de compilación se sobrescribe cada vez que compila el proyecto.
 
@@ -83,7 +83,7 @@ ms.locfileid: "60101332"
      Para obtener más información acerca de los formatos de archivo de documento que admiten macros, vea [combinar VBA y personalizaciones de nivel de documento](../vsto/combining-vba-and-document-level-customizations.md).
 
     > [!NOTE]
-    >  Esta característica no se puede utilizar en proyectos de plantilla de Word.
+    > Esta característica no se puede utilizar en proyectos de plantilla de Word.
 
 2. Asegúrese de que se puede ejecutar sin preguntar al usuario que habilite macros código VBA del documento. Puede confiar en la ejecución de código VBA si agrega la ubicación del proyecto de Office a la lista de ubicaciones de confianza en la configuración del Centro de confianza de Word o Excel.
 
@@ -109,7 +109,7 @@ ms.locfileid: "60101332"
 7. En la ventana **Propiedades** , seleccione la propiedad **ReferenceAssemblyFromVbaProject** y cambie el valor a **True**.
 
     > [!NOTE]
-    >  Si el documento o libro aún no contiene código VBA o si no es de confianza para ejecutar código VBA del documento, recibirá un mensaje de error al establecer el **ReferenceAssemblyFromVbaProject** propiedad **True** . Esto se debe a que Visual Studio no puede modificar el proyecto de VBA del documento en esta situación.
+    > Si el documento o libro aún no contiene código VBA o si no es de confianza para ejecutar código VBA del documento, recibirá un mensaje de error al establecer el **ReferenceAssemblyFromVbaProject** propiedad **True** . Esto se debe a que Visual Studio no puede modificar el proyecto de VBA del documento en esta situación.
 
 8. Haga clic en **Aceptar** en el mensaje que se muestra. Este mensaje para recordarle que si agrega código VBA al libro o documento mientras se está ejecutando el proyecto desde [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], el código de VBA se perderá la próxima vez que compile el proyecto. Esto es porque el documento en la carpeta de salida de compilación se sobrescribe cada vez que compila el proyecto.
 

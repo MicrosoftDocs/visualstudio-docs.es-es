@@ -10,12 +10,12 @@ ms.assetid: 69e8f78e-bcf1-46cb-8866-7de37d134997
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 6f2ed846e8644f5f6e391d9c850016721186021e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 0f8ac7b6cea0896c597dc46b8b5edd7072069840
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663971"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386036"
 ---
 # <a name="modifying-the-isolated-shell-by-using-the-pkgdef-file"></a>Modificación del Shell aislado mediante el uso de la. Archivo pkgdef
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ ms.locfileid: "59663971"
 El archivo .pkgdef admite opciones que puede usar para personalizar una aplicación de shell aislado. Especifica valores que se crean cuando se instala una aplicación en un equipo y que se hace referencia mediante el shell de Visual Studio cuando se inicia la aplicación. La configuración se organiza en el archivo según las claves del registro correspondiente.  
 
 > [!WARNING]
->  Tenga en cuenta que los archivos .pkgdef que no se declaran en el archivo .vsixmanifest de VSPackage no se analizan cuando se inicia Visual Studio.  
+> Tenga en cuenta que los archivos .pkgdef que no se declaran en el archivo .vsixmanifest de VSPackage no se analizan cuando se inicia Visual Studio.  
 
  El archivo .pkgdef contiene secciones que están identificadas por una clave, ya sea `[$RootKey$]` o `[$RootKey$\` *subclave*`]`, donde $RootKey$ es la clave raíz para la aplicación.  
 
@@ -53,7 +53,7 @@ El archivo .pkgdef admite opciones que puede usar para personalizar una aplicaci
  Las secciones siguientes describen los valores de registro específicos que afectan al comportamiento del shell de Visual Studio en modo aislado. También puede definir valores de registro adicionales para la aplicación en este archivo.  
 
 > [!NOTE]
->  Si no se proporciona una configuración en el archivo .pkgdef, a continuación, se realiza ninguna entrada correspondiente en el registro.  
+> Si no se proporciona una configuración en el archivo .pkgdef, a continuación, se realiza ninguna entrada correspondiente en el registro.  
 
 ## <a name="settings"></a>Configuración  
  En la tabla siguiente se describe los valores definidos en [$RootKey$].  

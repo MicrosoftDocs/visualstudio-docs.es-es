@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d6a3807dc91b129ba4b337f57e3f857e4f379581
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: b443c4530a71897d11731c023af57215eac8706a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696694"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434200"
 ---
 # <a name="using-text-markers-with-the-legacy-api"></a>Uso de marcadores de texto con la API heredada
 Un marcador de texto es un intervalo de texto en un búfer que puede afectar a la presentación flotante y el comportamiento de un área de texto. Los marcadores incluyen los puntos de interrupción, marcadores, subrayados ondulados y áreas de solo lectura. Marcadores de texto son básicamente diferentes colores de sintaxis. Color de la sintaxis es una manera rápida para comunicar la sintaxis del lenguaje que está asociada a un área de texto. Colorear la sintaxis generalmente se solicita cuando Windows se vuelve a dibujar la pantalla, cuando la velocidad es importante. Colorear la sintaxis cambia solo el color del texto. Marcadores de texto pueden cambiar muchas otras propiedades de texto. Marcadores de texto pueden "flotar" y aplicar un comportamiento especial y color.
@@ -23,16 +23,16 @@ Un marcador de texto es un intervalo de texto en un búfer que puede afectar a l
  Debido a la sobrecarga de rendimiento asociada con los marcadores de texto, no cree muchos marcadores para los búferes de texto. Cada marcador se actualiza cada vez que un usuario edita el contenido del búfer.
 
 > [!NOTE]
->  Los usuarios pueden cambiar el color de un tipo de marcador visible pero no su forma y estilo. Para obtener más información, consulte [fuentes y colores, entorno, cuadro de diálogo Opciones](../ide/reference/fonts-and-colors-environment-options-dialog-box.md).
+> Los usuarios pueden cambiar el color de un tipo de marcador visible pero no su forma y estilo. Para obtener más información, consulte [fuentes y colores, entorno, cuadro de diálogo Opciones](../ide/reference/fonts-and-colors-environment-options-dialog-box.md).
 
 ## <a name="related-topics"></a>Temas relacionados
 
 | Título | Descripción |
 | - | - |
 | [Cómo: Agregar marcadores de texto estándar](../extensibility/how-to-add-standard-text-markers.md) | Describe cómo agregar un tipo de marcador de texto estándar proporcionado por el [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] editor básico para una vista de texto. |
-| [Cómo: Implementar los marcadores de Error](../extensibility/how-to-implement-error-markers.md) | Describe cómo implementar una instancia de la [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] marcador que se usa para indicar errores mediante el uso de un subrayado ondulado rojo. |
-| [Cómo: Crear marcadores de texto personalizado](../extensibility/how-to-create-custom-text-markers.md) | Describe cómo crear y agregar un tipo de marcador de texto personalizado a una vista de texto. |
-| [Cómo: Utilizar marcadores de texto](../extensibility/how-to-use-text-markers.md) | Explica cómo agregar marcadores de texto. |
+| [Cómo: Implementar marcadores de error](../extensibility/how-to-implement-error-markers.md) | Describe cómo implementar una instancia de la [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] marcador que se usa para indicar errores mediante el uso de un subrayado ondulado rojo. |
+| [Cómo: Crear marcadores de texto personalizados](../extensibility/how-to-create-custom-text-markers.md) | Describe cómo crear y agregar un tipo de marcador de texto personalizado a una vista de texto. |
+| [Cómo: Usar marcadores de texto](../extensibility/how-to-use-text-markers.md) | Explica cómo agregar marcadores de texto. |
 | [Dentro del editor principal](../extensibility/inside-the-core-editor.md) | Se describen las características del editor de núcleo y proporciona detalles sobre cómo personalizar el editor básico. |
 | [Características del Editor](https://msdn.microsoft.com/library/bdac940d-1f14-4019-a01f-fd0bb3dc7198) | Describe las características disponibles en el [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] editor básico. |
 

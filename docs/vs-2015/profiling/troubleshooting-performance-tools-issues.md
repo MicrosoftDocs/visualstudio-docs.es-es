@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 91ccf1637d6b8a1f612031c8d59deeef8e07efc7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 575f17c641eb057dc01fb3302098bd9f8b47f9c5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077360"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431609"
 ---
 # <a name="troubleshooting-performance-tools-issues"></a>Solucionar problemas de herramientas de rendimiento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,4 +48,4 @@ Puede experimentar uno de los siguientes problemas al utilizar las herramientas 
 - Incruste la información de símbolos en el archivo de datos de generación de perfiles (.vsp). Para obtener más información, consulte [Guardar información de símbolos con archivos de datos de rendimiento](../profiling/saving-symbol-information-with-performance-data-files.md).  
   
 > [!NOTE]
->  El motor de análisis requiere que el archivo .pdb tenga la misma versión que el archivo de la aplicación compilada. Un archivo .pdb de una compilación anterior o posterior del archivo de la aplicación no funcionará.
+> El motor de análisis requiere que el archivo .pdb tenga la misma versión que el archivo de la aplicación compilada. Un archivo .pdb de una compilación anterior o posterior del archivo de la aplicación no funcionará.

@@ -11,12 +11,12 @@ ms.assetid: 08bb3375-8fef-4f4e-9efa-0d7333bab0eb
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8b4307caf3f76087867a942654b47bfe85c5011e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: eb0dac5e1282d544df9c04bf4c12303fb391739d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58987183"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436639"
 ---
 # <a name="reformatting-code-in-a-legacy-language-service"></a>Cambio de formato de código en un servicio de lenguaje heredado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "58987183"
 En [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] se puede cambiar el formato de código fuente mediante la normalización de la utilización de las sangrías y espacio en blanco. Esto puede incluir insertar o quitar espacios o tabulaciones al principio de cada línea, agregar nuevas líneas entre las líneas o reemplazar los espacios por tabulaciones o tabulaciones con espacios.  
   
 > [!NOTE]
->  **Tenga en cuenta** insertar o eliminar caracteres de nueva línea puede afectar a los marcadores como puntos de interrupción y marcadores, pero agregar o quitar espacios o tabulaciones no afecta a los marcadores.  
+> **Tenga en cuenta** insertar o eliminar caracteres de nueva línea puede afectar a los marcadores como puntos de interrupción y marcadores, pero agregar o quitar espacios o tabulaciones no afecta a los marcadores.  
   
  Los usuarios pueden iniciar una operación de formato seleccionando **la selección de formato** o **dar formato al documento** desde el **avanzadas** menú en el **editar**menú. También puede realizarse una operación de formato cuando se inserta un fragmento de código o un carácter concreto. Por ejemplo, cuando se escribe una llave de cierre en C#, lo que aparece entre la llave de apertura correspondiente y la llave de cierre se aplica sangría automáticamente al nivel adecuado.  
   

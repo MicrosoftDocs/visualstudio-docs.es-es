@@ -17,12 +17,12 @@ caps.latest.revision: 41
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 523764ae5cd787fd4b52650e894eb086ae4adb0c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7cf00897e68fc4b6858e747bd9b3a7f159bf73c1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097133"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439932"
 ---
 # <a name="aspnet-debugging-system-requirements"></a>Depuración ASP.NET: Requisitos del sistema
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ En este tema se describen los requisitos de software y seguridad de los escenari
  Si cambia el proceso de trabajo de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] para que se ejecute en su propia cuenta de usuario, no tiene porqué ser administrador en el servidor que esté ejecutando IIS.  
   
 > [!CAUTION]
->  Antes de cambiar el proceso de trabajo de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] para que se ejecute en una cuenta diferente, tenga en cuenta las posibles consecuencias de que el proceso de trabajo de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] pudiera sufrir intrusiones mientras se ejecute en dicha cuenta. Las cuentas de usuario ASPNET y NETWORK SERVICE se ejecutan con permisos mínimos, lo que reduce los posibles daños si el proceso sufre alguna intrusión. Si debe cambiar el proceso de trabajo de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] para que se ejecute en una cuenta que tenga permisos superiores, el daño puede ser mayor.  
+> Antes de cambiar el proceso de trabajo de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] para que se ejecute en una cuenta diferente, tenga en cuenta las posibles consecuencias de que el proceso de trabajo de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] pudiera sufrir intrusiones mientras se ejecute en dicha cuenta. Las cuentas de usuario ASPNET y NETWORK SERVICE se ejecutan con permisos mínimos, lo que reduce los posibles daños si el proceso sufre alguna intrusión. Si debe cambiar el proceso de trabajo de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] para que se ejecute en una cuenta que tenga permisos superiores, el daño puede ser mayor.  
   
 ## <a name="see-also"></a>Vea también  
  [Depurar aplicaciones de ASP.NET y AJAX](../debugger/debugging-aspnet-and-ajax-applications.md)   

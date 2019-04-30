@@ -12,12 +12,12 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 28f8cd324079a50a20312022ea6daaba843f8564
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1aaff1fa5d31fe22c8a0b079498ffc07a11b9a7e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100331"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446747"
 ---
 # <a name="walkthrough-creating-a-custom-text-template-host"></a>Tutorial: Crear un host de plantilla de texto personalizado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Un *plantilla de texto*<em>host</em> proporciona un entorno que permite el *moto
  Puede escribir un host personalizado si desea usar el *transformación de plantilla de texto* funcionalidad desde fuera de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] o si desea integrar esa funcionalidad en herramientas personalizadas. Para crear un host personalizado, debe crear una clase que herede de <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>. Para consultar la documentación de los métodos individuales, vea <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>.  
   
 > [!WARNING]
->  Si está escribiendo una extensión o paquete de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], considere la posibilidad de utilizar el servicio de plantillas de texto en lugar de crear su propio host. Para obtener más información, consulte [invocar la transformación de texto en una extensión de VS](../modeling/invoking-text-transformation-in-a-vs-extension.md).  
+> Si está escribiendo una extensión o paquete de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], considere la posibilidad de utilizar el servicio de plantillas de texto en lugar de crear su propio host. Para obtener más información, consulte [invocar la transformación de texto en una extensión de VS](../modeling/invoking-text-transformation-in-a-vs-extension.md).  
   
  Las tareas que se ilustran en este tutorial son las siguientes:  
   
@@ -732,7 +732,7 @@ Un *plantilla de texto*<em>host</em> proporciona un entorno que permite el *moto
 2. Agregue el siguiente código al archivo:  
   
     > [!NOTE]
-    >  El lenguaje de programación de la plantilla de texto no tiene que coincidir con el lenguaje del host personalizado.  
+    > El lenguaje de programación de la plantilla de texto no tiene que coincidir con el lenguaje del host personalizado.  
   
     ```csharp  
     Text Template Host Test  
@@ -785,7 +785,7 @@ Un *plantilla de texto*<em>host</em> proporciona un entorno que permite el *moto
      `<YOUR PATH>CustomHost\bin\Debug\CustomHost.exe`  
   
     > [!NOTE]
-    >  En lugar de escribir la dirección, puede ir al archivo CustomHost.exe en **Windows Explorer** y, a continuación, arrastre el archivo a la ventana de símbolo del sistema.  
+    > En lugar de escribir la dirección, puede ir al archivo CustomHost.exe en **Windows Explorer** y, a continuación, arrastre el archivo a la ventana de símbolo del sistema.  
   
 3. Escriba un espacio.  
   
@@ -796,7 +796,7 @@ Un *plantilla de texto*<em>host</em> proporciona un entorno que permite el *moto
      `C:\<YOUR PATH>TestTemplate.tt`  
   
     > [!NOTE]
-    >  En lugar de escribir la dirección, puede examinar el archivo TestTemplate.tt en **Windows Explorer** y, a continuación, arrastre el archivo a la ventana de símbolo del sistema.  
+    > En lugar de escribir la dirección, puede examinar el archivo TestTemplate.tt en **Windows Explorer** y, a continuación, arrastre el archivo a la ventana de símbolo del sistema.  
   
      La aplicación host personalizada se ejecuta y completa el proceso de transformación de la plantilla de texto.  
   

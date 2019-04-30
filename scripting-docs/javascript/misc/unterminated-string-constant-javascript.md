@@ -14,18 +14,18 @@ ms.assetid: 5083809e-9828-4aea-b9b0-80f46d6f3812
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 23d8f922d169cf9f52b46ac052edd6bef863a65b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c3c5f38ba41e2cadfd0a8234413c63cc96b6744a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057360"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435638"
 ---
 # <a name="unterminated-string-constant-javascript"></a>Constante de cadena sin terminar (JavaScript)
 No se terminó la constante de cadena con una comilla de cierre. Las constantes de cadena deben estar delimitadas por un par de comillas.  
   
 > [!NOTE]
->  Puede usar los pares coincidentes de las comillas simples o dobles. Las comillas dobles pueden incluirse en cadenas delimitadas por comillas simples y comillas simples puede incluirse en cadenas delimitadas por comillas dobles.  
+> Puede usar los pares coincidentes de las comillas simples o dobles. Las comillas dobles pueden incluirse en cadenas delimitadas por comillas simples y comillas simples puede incluirse en cadenas delimitadas por comillas dobles.  
   
 ### <a name="to-correct-this-error"></a>Para corregir este error  
   

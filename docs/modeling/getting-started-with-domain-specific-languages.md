@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d2710e529ea558b87527e84865717645116b6b36
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 915a6c6d06380aa67c2c79ce52598668a9b33f18
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069554"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442374"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>Introducción a los lenguajes específicos de dominio
 
@@ -294,7 +294,7 @@ Cambiar el nombre de las clases de dominio existentes y relaciones. Por ejemplo,
          Establezca su nombre, por ejemplo **Town**.
 
         > [!NOTE]
-        >  Cada clase de dominio, excepto la raíz del modelo debe ser el destino de al menos una relación de incrustación, o debe heredar de una clase que es el destino de una inserción. Por este motivo, es conveniente crear una clase de dominio mediante la herramienta de relación de incrustación con frecuencia.
+        > Cada clase de dominio, excepto la raíz del modelo debe ser el destino de al menos una relación de incrustación, o debe heredar de una clase que es el destino de una inserción. Por este motivo, es conveniente crear una clase de dominio mediante la herramienta de relación de incrustación con frecuencia.
 
     2. Agregar una propiedad de dominio a la nueva clase, por ejemplo **nombre**.
 
@@ -305,7 +305,7 @@ Cambiar el nombre de las clases de dominio existentes y relaciones. Por ejemplo,
          ![Fragmento de definición DSL: raíz de árbol genealógico](../modeling/media/familyt_root.png)
 
         > [!NOTE]
-        >  Relaciones de referencia representan las referencias cruzadas de una parte del árbol del modelo a otro.
+        > Relaciones de referencia representan las referencias cruzadas de una parte del árbol del modelo a otro.
 
 3. Agregar una forma para representar ciudades en los diagramas de modelo.
 

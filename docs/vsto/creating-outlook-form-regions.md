@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ea3f72a26938a50cddbb622565173be603436ba3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: dc0f56331c11c6c33561774d38ef79e286a4133a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092765"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445573"
 ---
 # <a name="create-outlook-form-regions"></a>Crear áreas de formulario de Outlook
   Puede usar las áreas de formulario para personalizar los formularios de Microsoft Office Outlook. Visual Studio proporciona herramientas avanzadas que facilitan el diseño, el desarrollo y la depuración de las áreas de formulario.
@@ -90,7 +90,7 @@ ms.locfileid: "60092765"
 - Un almacén de formularios de Outlook (*.ofs*) archivo.
 
     > [!NOTE]
-    >  Este archivo solo se agrega al proyecto si se importa un área de formulario diseñada en Outlook.
+    > Este archivo solo se agrega al proyecto si se importa un área de formulario diseñada en Outlook.
 
 #### <a name="form-region-factory-class"></a>Clase de generador de áreas de formulario
  El archivo de código del área de formulario contiene una clase parcial que implementa la interfaz <xref:Microsoft.Office.Tools.Outlook.IFormRegionFactory>. Se trata de la clase de generador de áreas de formulario. La clase de generador de áreas de formulario es responsable de crear nuevas instancias del área de formulario.
@@ -110,7 +110,7 @@ ms.locfileid: "60092765"
  El Diseñador de áreas de formulario ayuda a establecer el diseño y la apariencia de un área de este tipo. Puede arrastrar controles administrados a la superficie del diseñador, haga doble clic en dichos controles para abrir los controladores de eventos y establecer propiedades en el **propiedades** ventana.
 
 > [!NOTE]
->  Puede encontrar las propiedades que afectan al modo en que aparece el área de formulario en Outlook bajo el **manifiesto** nodo en el **propiedades** ventana.
+> Puede encontrar las propiedades que afectan al modo en que aparece el área de formulario en Outlook bajo el **manifiesto** nodo en el **propiedades** ventana.
 
  El Diseñador de áreas de formulario solo está disponible si selecciona **diseñar una nueva área de formulario** en el **Seleccione cómo desea crear el área de formulario** página de la **nueva área de formulario de Outlook** Asistente.
 
@@ -138,7 +138,7 @@ ms.locfileid: "60092765"
  Puede cambiar las propiedades del área de formulario en el método `InitializeManifest` de la clase de generador de áreas de formulario.
 
 > [!NOTE]
->  Para importar un área de formulario, debe estar trabajando en un proyecto destinado a la misma versión de Outlook que la que está instalada en el equipo de desarrollo. Por ejemplo, si tiene instalado Outlook 2010, la importación de un formulario región solo funcionará en un proyecto se creó mediante la **complemento de Outlook 2010** plantilla de proyecto.
+> Para importar un área de formulario, debe estar trabajando en un proyecto destinado a la misma versión de Outlook que la que está instalada en el equipo de desarrollo. Por ejemplo, si tiene instalado Outlook 2010, la importación de un formulario región solo funcionará en un proyecto se creó mediante la **complemento de Outlook 2010** plantilla de proyecto.
 
 ### <a name="update-an-imported-form-regions-design"></a>Actualizar el diseño del área de formulario importada
  Puede agregar, quitar o cambiar los controles del área de formulario. Antes de hacerlo, haga una copia de seguridad del código que haya agregado al archivo de código del área de formulario. A continuación, abra el *.ofs* archivo en Outlook, modifique el área de formulario y, a continuación, guarde los cambios. Use la **nueva área de formulario de Outlook** Asistente para importar modificado *.ofs* archivo. Luego, puede pegar el código en el nuevo archivo de código del área de formulario.

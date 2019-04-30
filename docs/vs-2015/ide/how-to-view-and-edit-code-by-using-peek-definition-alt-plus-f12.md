@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a4c170b533b1eadb60be2ec1ca5d5fe000c5b4d6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 76a45297062b42b559f07867b20bdadac79cc082
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055736"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386844"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Procedimiento Ver y editar código mediante definición de Peek (ALT+F12)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ Puede usar el comando **Ver la definición** para ver y editar código sin salir
  Se puede usar **Ver la definición** con código de C#, Visual Basic y C++. En Visual Basic, **Ver la definición** muestra un vínculo al **Examinador de objetos** para los símbolos que no tienen metadatos de definición (por ejemplo, los tipos de .NET Framework integrados).  
   
 > [!IMPORTANT]
->  No puede utilizar este comando en ninguna versión Express de Visual Studio 2013.  
+> No puede utilizar este comando en ninguna versión Express de Visual Studio 2013.  
   
 ## <a name="working-with-peek-definition"></a>Trabajar con Ver la definición  
   
@@ -76,7 +76,7 @@ Puede usar el comando **Ver la definición** para ver y editar código sin salir
     |Alternar entre la ventana del editor de código y la ventana de definición|Mayús+Esc|  
   
     > [!NOTE]
-    >  También puede usar los mismos métodos abreviados de teclado para editar código en una ventana **Ver la definición** como haría en otros lugares en Visual Studio.  
+    > También puede usar los mismos métodos abreviados de teclado para editar código en una ventana **Ver la definición** como haría en otros lugares en Visual Studio.  
   
 ## <a name="see-also"></a>Vea también  
  [Sugerencias de productividad](../ide/productivity-tips-for-visual-studio.md)

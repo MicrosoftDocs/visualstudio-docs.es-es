@@ -11,12 +11,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 20c449148b98c89f1eb64beb61588661f02ab74a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 21dc0cb7f02639ca6faa89ae4c067f21e083d6d3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60073533"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387497"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>Leer modelos y diagramas en otras ediciones de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,14 +31,14 @@ Al abrir un modelo en una versión de Visual Studio que no es compatible con la 
  Por este motivo, si desea leer un diagrama UML o un diagrama de capas, también debe tener acceso al proyecto de modelado en el que se creó. Puede hacerlo obteniendo acceso a los proyectos desde [!INCLUDE[esprscc](../includes/esprscc-md.md)] u obteniendo una copia de los archivos de proyecto.  
   
 > [!NOTE]
->  Esto no se aplica a los mapas de código ni a los diagramas de clases .NET generados a partir del código. Esos diagramas pueden verse sin necesidad de un proyecto de modelado.  
+> Esto no se aplica a los mapas de código ni a los diagramas de clases .NET generados a partir del código. Esos diagramas pueden verse sin necesidad de un proyecto de modelado.  
   
  Para leer un diagrama UML o un diagrama de capas, necesita el siguiente conjunto mínimo de archivos:  
   
 - Los dos archivos de diagrama que desea leer, por ejemplo, de diagrama **MyDiagram.classdiagram y MyDiagram.classdiagram.layout**.  
   
     > [!NOTE]
-    >  Diagramas de capas, también debe tener el archivo que se denomina _MyDiagram_**. layerdiagram.suppressions**.  
+    > Diagramas de capas, también debe tener el archivo que se denomina _MyDiagram_**. layerdiagram.suppressions**.  
   
 - El modelado del archivo de proyecto (**MyModel.modelproj**)  
   

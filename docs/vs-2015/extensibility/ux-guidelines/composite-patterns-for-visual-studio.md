@@ -8,12 +8,12 @@ ms.assetid: e48ecfb2-f4b5-4d3a-b4a2-7a4d62fa4ec0
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3d719a52535614b8cddf1c31aeb97e41c7614767
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 196fc4bddba0cfa6addb786148cd3876e1ec8260
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045088"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430010"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Patrones compuestos para Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -433,7 +433,7 @@ Patrones compuestos combinan elementos de interacción y diseño de configuracio
  El concepto clave en la selección de la lista es que está basado en la fila, lo que significa que cuando se realiza una selección toda la fila está seleccionada como una unidad. Por el contrario, las cuadrículas pueden permitir que determinadas celdas que se seleccionen sin que afecte a todos los demás aspectos de la fila. Las cuadrículas también podrían contener una jerarquía de filas anidadas (como en un control TreeGrid) que permiten todas ramas de la jerarquía se seleccionen y se anula la selección mediante la interacción con las filas primarias. Selección de listas se muestra mediante un color de resalte simple en toda la fila de datos. El foco se muestra un borde de puntos solo píxel alrededor de la fila actual de editable o celda (fila si todas las celdas son de solo lectura).
 
 > [!NOTE]
->  **Enfoque** y **selección** son conceptos diferentes. *Enfoque* es una indicación de que la interfaz de usuario del elemento que se destina para recibir entrada dirigido no explícitamente a otro objeto, mientras que *selección* se refiere al estado de inclusión de un objeto en un conjunto de objetos de los cuales posteriores las operaciones pueden tener lugar.
+> **Enfoque** y **selección** son conceptos diferentes. *Enfoque* es una indicación de que la interfaz de usuario del elemento que se destina para recibir entrada dirigido no explícitamente a otro objeto, mientras que *selección* se refiere al estado de inclusión de un objeto en un conjunto de objetos de los cuales posteriores las operaciones pueden tener lugar.
 
  Las selecciones en las listas pueden ser contiguas, separado, o la región. Cuando selecciones múltiples se permiten, contiguos y siempre debe ser compatible selección separado al soporte técnico para las selecciones de región (cuadro) son opcional. Las selecciones de región se inician y arrastrándola en el espacio en blanco del cuerpo de la lista.
 

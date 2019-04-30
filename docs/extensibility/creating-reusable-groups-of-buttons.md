@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe0d5c3dd55380587f8f5f1c6477ee8c53bf1156
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 48ab55b58eee8f6444b253c09db1eeedcc8c5692
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051666"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411358"
 ---
 # <a name="create-reusable-groups-of-buttons"></a>Creación de grupos reutilizables de botones
 Un grupo de comandos es una colección de comandos que siempre aparecen juntas en un menú o barra de herramientas. Cualquier grupo de comandos puede volver a utilizarse asignándola a los menús de primarios diferentes en la sección CommandPlacements de la *.vsct* archivo.
@@ -81,7 +81,7 @@ Un grupo de comandos es una colección de comandos que siempre aparecen juntas e
     ```
 
     > [!NOTE]
-    >  El valor del campo prioridad determina la posición del comando en el nuevo grupo de comandos. Establecen prioridades en el CommandPlacement elemento reemplazan a las establecidas en la definición de elemento. Se muestran los comandos que tienen valores de prioridad inferior antes de ejecutar comandos que tienen los valores de prioridad más altos. Se permiten valores de prioridad duplicados, pero no se puede garantizar la posición relativa de los comandos que tienen el mismo valor de prioridad porque el orden en que el **devenv /setup** comando crea la interfaz de final del registro es posible que no sea coherente.
+    > El valor del campo prioridad determina la posición del comando en el nuevo grupo de comandos. Establecen prioridades en el CommandPlacement elemento reemplazan a las establecidas en la definición de elemento. Se muestran los comandos que tienen valores de prioridad inferior antes de ejecutar comandos que tienen los valores de prioridad más altos. Se permiten valores de prioridad duplicados, pero no se puede garantizar la posición relativa de los comandos que tienen el mismo valor de prioridad porque el orden en que el **devenv /setup** comando crea la interfaz de final del registro es posible que no sea coherente.
 
 ## <a name="to-put-a-reusable-group-of-buttons-on-a-menu"></a>Poner un grupo reutilizable de botones en un menú
 

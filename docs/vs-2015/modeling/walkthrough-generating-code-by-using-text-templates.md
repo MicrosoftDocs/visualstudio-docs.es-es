@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8c374dc5cc616f58cb81a1191b095971561df9b1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 37abc4862b12ab11239b2dd8a24b8c18acab2a51
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052888"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446706"
 ---
 # <a name="walkthrough-generating-code-by-using-text-templates"></a>Tutorial: Generar código mediante plantillas de texto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ La generación de código permite producir código de programa que está fuertem
  En este proyecto de ejemplo, una plantilla lee un archivo XML de ejemplo y genera clases que corresponden a cada tipo de nodo. En el código escrito a mano, puede usar estas clases para navegar por el archivo XML. También puede ejecutar la aplicación en otros archivos que usen los mismos tipos de nodo. El propósito del archivo XML de ejemplo es proporcionar ejemplos de todos los tipos de nodo con los que quiere que trate su aplicación.  
   
 > [!NOTE]
->  La aplicación [xsd.exe](http://go.microsoft.com/fwlink/?LinkId=178765), que se incluye con [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], puede generar clases fuertemente tipadas de archivos XML. La plantilla que se muestra aquí se proporciona como ejemplo.  
+> La aplicación [xsd.exe](http://go.microsoft.com/fwlink/?LinkId=178765), que se incluye con [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], puede generar clases fuertemente tipadas de archivos XML. La plantilla que se muestra aquí se proporciona como ejemplo.  
   
  Este es el archivo de ejemplo:  
   
@@ -142,7 +142,7 @@ namespace MyProject
 2. En el cuadro de diálogo **Agregar nuevo elemento** , seleccione **Plantilla de texto** en el panel **Plantillas** .  
   
    > [!NOTE]
-   >  Asegúrese de agregar una plantilla de texto y no una plantilla de texto preprocesada.  
+   > Asegúrese de agregar una plantilla de texto y no una plantilla de texto preprocesada.  
   
 3. En la directiva de plantilla del archivo, cambie el atributo `hostspecific` a `true`.  
   

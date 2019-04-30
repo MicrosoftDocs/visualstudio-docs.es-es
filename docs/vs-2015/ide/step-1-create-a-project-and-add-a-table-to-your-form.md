@@ -9,12 +9,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bec6c539963d54bfa1d866ccc4811425bba9e3a4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 807d2b7de34acda52dd05ff8263ae3303dca61c6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068579"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441919"
 ---
 # <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>Paso 1: creación de un proyecto y adición de una tabla al formulario
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ El primer paso para crear un juego de formar parejas es crear el proyecto y agre
    1. Establezca la propiedad **BackColor** en **CornflowerBlue**. Para ello, abra el cuadro de diálogo **BackColor** pulsando la flecha de lista desplegable situada junto a la propiedad **BackColor** en la ventana **Propiedades**.  A continuación, pulse la pestaña **Web** en el cuadro de diálogo **BackColor** para ver una lista de nombres de colores disponibles.  
   
       > [!NOTE]
-      >  Los colores no están en orden alfabético, y CornflowerBlue está casi al final de la lista.  
+      > Los colores no están en orden alfabético, y CornflowerBlue está casi al final de la lista.  
   
    2. Establezca la propiedad **Dock** en **Fill**; para ello, haga clic en el botón de lista desplegable situado al lado de la propiedad y pulse el botón grande del medio. Esto expande el tamaño de la tabla de modo que cubra todo el formulario.  
   
@@ -77,12 +77,12 @@ El primer paso para crear un juego de formar parejas es crear el proyecto y agre
         La celda superior izquierda de TableLayoutPanel debería contener ahora un cuadro negro centrado sobre un fondo azul.  
   
        > [!NOTE]
-       >  La fuente Webdings es una fuente de iconos que se distribuye con el sistema operativo Windows. En el juego de formar parejas, el jugador necesita encontrar la correspondencia entre pares de iconos, de modo que se usa esta fuente para mostrar los iconos que deben coincidir. En lugar de colocar **c** en la propiedad **Text**, pruebe a escribir letras diferentes para ver qué iconos se muestran. Un signo de exclamación es una araña, una N mayúscula es un ojo y una coma es una guindilla.  
+       > La fuente Webdings es una fuente de iconos que se distribuye con el sistema operativo Windows. En el juego de formar parejas, el jugador necesita encontrar la correspondencia entre pares de iconos, de modo que se usa esta fuente para mostrar los iconos que deben coincidir. En lugar de colocar **c** en la propiedad **Text**, pruebe a escribir letras diferentes para ver qué iconos se muestran. Un signo de exclamación es una araña, una N mayúscula es un ojo y una coma es una guindilla.  
   
 8. Elija el control de etiqueta y cópielo en la celda siguiente en TableLayoutPanel. (Pulse las teclas Ctrl+C o, en la barra de menús, pulse **Editar**, **Copiar**). A continuación, péguelo. (Pulse las teclas Ctrl+V o, en la barra de menús, pulse **Editar**, **Pegar**). Una copia de la primera etiqueta aparece en la segunda celda de TableLayoutPanel. Vuelva a pegar el control; aparecerá otra etiqueta en la tercera celda. Siga pegando los controles `Label` hasta que se llenen todas las celdas.  
   
    > [!NOTE]
-   >  Si pega demasiadas veces, el IDE agrega una nueva fila a TableLayoutPanel para que haya espacio para agregar el nuevo control de etiqueta. La acción se puede deshacer. Para quitar la nueva celda, pulse las teclas Ctrl+Z o, en la barra de menús, pulse **Editar**, **Deshacer**.  
+   > Si pega demasiadas veces, el IDE agrega una nueva fila a TableLayoutPanel para que haya espacio para agregar el nuevo control de etiqueta. La acción se puede deshacer. Para quitar la nueva celda, pulse las teclas Ctrl+Z o, en la barra de menús, pulse **Editar**, **Deshacer**.  
   
     Ya tiene diseñado el formulario. Debería ser similar a la imagen siguiente.  
   

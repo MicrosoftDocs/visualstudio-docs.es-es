@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 279b9cc03b79efe2fbf9daa7457f5dce88e7a432
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 16871ba1115407e2665886d84b72594470f91287
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597873"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420624"
 ---
 # <a name="guids-and-ids-of-visual-studio-menus"></a>Menús de GUID e identificadores de Visual Studio
 En este artículo se enumera los valores GUID y el Id. de los menús y los grupos en la barra de menús de Visual Studio. Estos valores se definen en *.vsct* archivos que se instalan como parte del SDK de Visual Studio. Para obtener más información, consulte [grupos, menús y comandos definidos por el IDE](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).
@@ -32,7 +32,7 @@ En este artículo se enumera los valores GUID y el Id. de los menús y los grupo
 ## <a name="groups-on-the-visual-studio-menu-bar"></a>Grupos en la barra de menús de Visual Studio
  Para agregar un menú a la barra de menús, establezca uno de estos grupos como su elemento primario.
 
-|Agrupar|Id.|
+|Agrupar|ID|
 |-----------|--------|
 |Archivo/Editar/ver|IDG_VS_MM_FILEEDITVIEW|
 |Refactorización|IDG_VS_MM_REFACTORING:|
@@ -46,7 +46,7 @@ En este artículo se enumera los valores GUID y el Id. de los menús y los grupo
 ## <a name="menus-on-the-visual-studio-menu-bar"></a>Menús en la barra de menús de Visual Studio
  Para agregar un grupo a un menú existente de Visual Studio, establezca uno de los siguientes menús como su elemento primario. No se incluyen submenús en esta lista.
 
-|Menú|Id.|
+|Menú|ID|
 |----------|--------|
 |Archivo|IDM_VS_MENU_FILE|
 |Editar|IDM_VS_MENU_EDIT|
@@ -59,14 +59,14 @@ En este artículo se enumera los valores GUID y el Id. de los menús y los grupo
 |Ventana|IDM_VS_MENU_WINDOW|
 |AddIns|IDM_VS_MENU_ADDINS|
 |comunidad|IDM_VS_MENU_COMMUNITY|
-|Ayuda|IDM_VS_MENU_HELP|
+|Help|IDM_VS_MENU_HELP|
 
 ## <a name="groups-on-visual-studio-menus"></a>Grupos en los menús de Visual Studio
  Las listas siguientes muestran los grupos que descienden directamente desde los menús en la barra de menús de Visual Studio. Es la forma más rápida para agregar un comando a un menú de Visual Studio establecer uno de estos grupos como elemento primario. Los grupos que descienden de submenús no aparecen en esta sección.
 
 ### <a name="file-menu-groups"></a>Grupos de menús de archivo
 
-|Agrupar|Id.|
+|Agrupar|ID|
 |-----------|--------|
 |Nuevo o abrir|IDG_VS_FILE_FILE|
 |Agregar|IDG_VS_FILE_ADD|
@@ -82,7 +82,7 @@ En este artículo se enumera los valores GUID y el Id. de los menús y los grupo
 
 ### <a name="edit-menu-groups"></a>Editar grupos de menús
 
-|Agrupar|Id.|
+|Agrupar|ID|
 |-----------|--------|
 |Deshacer/rehacer|IDG_VS_EDIT_UNDOREDO|
 |Cortar/Copiar/Pegar|IDG_VS_EDIT_CUTCOPY|
@@ -95,14 +95,14 @@ En este artículo se enumera los valores GUID y el Id. de los menús y los grupo
 
 ### <a name="refactor-menu-groups"></a>Refactorizar los grupos de menús
 
-|Agrupar|Id.|
+|Agrupar|ID|
 |-----------|--------|
 |Común|IDG_REFACTORING_COMMON|
 |Avanzadas|IDG_REFACTORING_ADVANCED|
 
 ### <a name="view-menu-groups"></a>Grupos de menús de vista
 
-|Agrupar|Id.|
+|Agrupar|ID|
 |-----------|--------|
 |Código del formulario|IDG_VS_VIEW_FORMCODE|
 |Explorador|IDG_VS_VIEW_BROWSER|
@@ -123,7 +123,7 @@ En este artículo se enumera los valores GUID y el Id. de los menús y los grupo
 
 ### <a name="project-menu-groups"></a>Grupos de menús del proyecto
 
-|Agrupar|Id.|
+|Agrupar|ID|
 |-----------|--------|
 |Varios agregar|IDG_VS_PROJ_MISCADD|
 |Agregar|IDG_VS_PROJ_ADD|
@@ -135,7 +135,7 @@ En este artículo se enumera los valores GUID y el Id. de los menús y los grupo
 
 ### <a name="build-menu-groups"></a>Crear grupos de menús
 
-|Agrupar|Id.|
+|Agrupar|ID|
 |-----------|--------|
 |Soluciones|IDG_VS_BUILD_SOLUTION|
 |Selección|IDG_VS_BUILD_SELECTION|
@@ -145,7 +145,7 @@ En este artículo se enumera los valores GUID y el Id. de los menús y los grupo
 
 ### <a name="tools-menu-groups"></a>Grupos de menús de herramientas
 
-|Agrupar|Id.|
+|Agrupar|ID|
 |-----------|--------|
 |Línea de comandos|IDG_VS_TOOLS_CMDLINE|
 |Fragmentos de código|IDG_VS_TOOLS_SNIPPETS|
@@ -157,7 +157,7 @@ En este artículo se enumera los valores GUID y el Id. de los menús y los grupo
 
 ### <a name="window-menu-groups"></a>Grupos de menús de la ventana
 
-|Agrupar|Id.|
+|Agrupar|ID|
 |-----------|--------|
 |Nuevo|IDG_VS_WINDOW_NEW|
 |Acoplar o cerrar|IDG_VS_DOCKCLOSE|
@@ -168,17 +168,17 @@ En este artículo se enumera los valores GUID y el Id. de los menús y los grupo
 
 ### <a name="help-menu-groups"></a>Ayudar a los grupos de menús
 
-|Agrupar|Id.|
+|Agrupar|ID|
 |-----------|--------|
 |Muestras|IDG_VS_HELP_SAMPLES|
-|Compatibilidad|IDG_VS_HELP_SUPPORT|
+|Soporte técnico|IDG_VS_HELP_SUPPORT|
 |Acerca de|IDG_VS_HELP_ABOUT|
 
 ## <a name="submenus-of-visual-studio-menus"></a>Submenús de menús de Visual Studio
  La jerarquía siguiente muestra los submenús que están asociados con los menús en la barra de menús de Visual Studio. Dado que sólo un grupo puede tener un menú como su elemento primario, cada submenú debe descienden de un grupo en un menú, en lugar de directamente desde el menú. Para obtener más información sobre la relación entre los menús, grupos y submenús, consulte [agregar un submenú a un menú](../../extensibility/adding-a-submenu-to-a-menu.md).
 
 > [!NOTE]
->  Los nombres de los menús en la barra de menús de Visual Studio no se muestran por separado en esta jerarquía ya que se puede deducir de la convención de nomenclatura para los grupos en el IDE, como se indica a continuación: *IDG_VS_\<nombre en el menú\>_\<nombre de grupo\>*.
+> Los nombres de los menús en la barra de menús de Visual Studio no se muestran por separado en esta jerarquía ya que se puede deducir de la convención de nomenclatura para los grupos en el IDE, como se indica a continuación: *IDG_VS_\<nombre en el menú\>_\<nombre de grupo\>*.
 
 |Grupo primario|Submenú|Grupos secundarios|
 |------------------|-------------|------------------|

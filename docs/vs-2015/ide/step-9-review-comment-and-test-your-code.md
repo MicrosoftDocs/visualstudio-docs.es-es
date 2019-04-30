@@ -9,12 +9,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f601c9cc404d605d5fb0ddf7ad149a595f77ef77
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c3fec670f7516d28e20b43b0e1968782a496ef49
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059869"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428581"
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>Paso 9: revisión, comentario y prueba del código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,10 +55,10 @@ A continuación, se agrega un comentario al código. Un comentario es una nota q
      [!code-vb[VbExpressTutorial1Step9_10#1](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial1step9_10/vb/form1.vb#1)]  
   
     > [!NOTE]
-    >  El controlador de eventos Click del botón **showButton** ya está completado y funciona. Ha empezado a escribir código, comenzando por una instrucción `if`. Una instrucción `if` es la manera de ordenar al programa: "Compruebe esto y, si se cumple, realice estas acciones". En este caso, le está diciendo al programa que abra el cuadro de diálogo **Abrir archivo** y que, si el usuario selecciona un archivo y elige el botón **Aceptar**, cargue ese archivo en PictureBox.  
+    > El controlador de eventos Click del botón **showButton** ya está completado y funciona. Ha empezado a escribir código, comenzando por una instrucción `if`. Una instrucción `if` es la manera de ordenar al programa: "Compruebe esto y, si se cumple, realice estas acciones". En este caso, le está diciendo al programa que abra el cuadro de diálogo **Abrir archivo** y que, si el usuario selecciona un archivo y elige el botón **Aceptar**, cargue ese archivo en PictureBox.  
   
     > [!TIP]
-    >  El IDE se ha creado para facilitar la tarea de escribir código. Los *fragmentos de código* constituyen una manera de conseguirlo. Un fragmento de código es un acceso directo que se expande para crear un bloque pequeño de código.  
+    > El IDE se ha creado para facilitar la tarea de escribir código. Los *fragmentos de código* constituyen una manera de conseguirlo. Un fragmento de código es un acceso directo que se expande para crear un bloque pequeño de código.  
     >   
     >  Puede ver todos los fragmentos de código disponibles. En la barra de menús, elija **Herramientas**, **Administrador de fragmentos de código**. En Visual C#, el fragmento de código `if` está en **Visual C#**. En Visual Basic, los fragmentos de código `if` están en **Condicionales y bucles**, **Code Patterns** (Patrones de código). Este administrador se puede utilizar para examinar los fragmentos de código existentes o agregar los suyos propios.  
     >   
@@ -83,7 +83,7 @@ Visor de imágenes
 2. Elija el botón **Show a picture** (Mostrar una imagen) para ejecutar el código que acaba de escribir. Primero, el programa abre un cuadro de diálogo **Abrir archivo**. Compruebe que los filtros aparecen en la lista desplegable **Tipo de archivo** en la parte inferior del cuadro de diálogo. A continuación, navegue hasta una imagen y ábrala. Normalmente, encontrará imágenes de ejemplo que se distribuyen con el sistema operativo Windows en la carpeta **Mis documentos**, dentro de la carpeta **Mis imágenes\Imágenes de muestra**.  
   
     > [!NOTE]
-    >  Si no ve ninguna imagen en el cuadro de diálogo **Select a picture file** (Seleccionar un archivo de imagen), asegúrese de que el filtro "Todos los archivos (*.\*)" esté seleccionado en la lista desplegable situada en la parte inferior derecha del cuadro de diálogo.  
+    > Si no ve ninguna imagen en el cuadro de diálogo **Select a picture file** (Seleccionar un archivo de imagen), asegúrese de que el filtro "Todos los archivos (*.\*)" esté seleccionado en la lista desplegable situada en la parte inferior derecha del cuadro de diálogo.  
   
 3. Cargue una imagen y esta aparecerá en el control PictureBox. A continuación intente cambiar el tamaño del formulario arrastrando los bordes. Como el control PictureBox está acoplado dentro de un control TableLayoutPanel, que a su vez está acoplado en el formulario, el ancho del área de imagen se ajustará al ancho del formulario y el alto ocupará el 90 por ciento superior del formulario. Por eso usan los contenedores TableLayoutPanel y FlowLayoutPanel: Mantienen el tamaño del formulario correcto cuando el usuario lo modifica.  
   

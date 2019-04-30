@@ -12,12 +12,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 370f6992fb044f5bd7f3593e63afeab46c82830b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 81f2766e5c382f8beaa4cb20472da6e0e6fc94e2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60072297"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432626"
 ---
 # <a name="model-editor"></a>Editor de modelos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -157,7 +157,7 @@ En este documento se describe cómo trabajar con el Editor de modelos de [!INCLU
 2. En la ventana **Propiedades**, especifique valores para las propiedades **Giro**, **Escala** y **Traslación**.  
   
    > [!IMPORTANT]
-   >  En la propiedad **Giro**, especifique el grado de giro alrededor de cada uno de los tres ejes. Los giros se aplican en orden, de modo que asegúrese de planificar una rotación primero en términos de giro del eje X, después del eje Y y después del eje Z.  
+   > En la propiedad **Giro**, especifique el grado de giro alrededor de cada uno de los tres ejes. Los giros se aplican en orden, de modo que asegúrese de planificar una rotación primero en términos de giro del eje X, después del eje Y y después del eje Z.  
   
    Con las herramientas de modelado, se crean transformaciones con rapidez pero no con precisión. Al establecer las propiedades del objeto, se especifican transformaciones con precisión pero no con rapidez. Se recomienda utilizar las herramientas de modelado para acercarse “lo más posible” a las transformaciones que se deseen y, a continuación, ajustar los valores de propiedad.  
   

@@ -9,12 +9,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5e71debec563aa54d5232686b599f286d147b1a7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7a4af2e5cc4119c85570246e1908c111cc0b7d75
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60073012"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442630"
 ---
 # <a name="step-2-add-a-random-object-and-a-list-of-icons"></a>Paso 2: adición de un objeto aleatorio y una lista de iconos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ En este paso, creará un conjunto de símbolos para formar parejas en el juego. 
 Ventana de IntelliSense  
   
     > [!NOTE]
-    >  La ventana de Intellisense solo aparece cuando se escribe código manualmente. Si copia y pega el código, no aparece.  
+    > La ventana de Intellisense solo aparece cuando se escribe código manualmente. Si copia y pega el código, no aparece.  
   
      Es más sencillo comprender el código (y los comentarios) si se examina en secciones pequeñas. Sus programas pueden utilizar objetos `List` para realizar un seguimiento de muchos tipos de elementos distintos. Una lista puede contener números, valores true/false, texto u otros objetos. Se puede tener un objeto `List` que contiene otros objetos `List`. Los elementos en una lista se llaman *elementos* y cada lista solo contiene elementos de un tipo. Por tanto, una lista de números solo puede contener números; no se puede agregar texto a esa lista. De igual modo, tampoco se pueden agregar números a una lista de valores true/false.  
   
@@ -51,7 +51,7 @@ Ventana de IntelliSense
      Al utilizar un inicializador de colección con una instrucción `new`, una vez creado el nuevo objeto `List`, el programa lo rellena con los datos que especifique entre las llaves. En este caso, se obtiene una lista de cadenas denominadas **iconos**; la lista se inicializará para que contenga dieciséis cadenas. Cada una de esas cadenas es una letra única y todas corresponden a los iconos que se mostrarán en las etiquetas. Así que el juego tendrá un par de signos de exclamación, un par de letras N en mayúscula, un par de comas, etc. (Cuando estos caracteres se establezcan en la fuente Webdings, aparecerán en forma de símbolos, como un autobús, una bicicleta, una araña, etc.). El objeto `List` tendrá dieciséis cadenas en total, una por cada celda del panel TableLayoutPanel.  
   
     > [!NOTE]
-    >  En Visual Basic, se obtiene el mismo resultado, pero las cadenas se colocan primero en una matriz temporal, que se convierte después en un objeto `List`. Una matriz es similar a una lista, salvo que las matrices se crean con un tamaño fijo. Las listas pueden reducir y crecer según sea necesario, algo que es importante en este programa.  
+    > En Visual Basic, se obtiene el mismo resultado, pero las cadenas se colocan primero en una matriz temporal, que se convierte después en un objeto `List`. Una matriz es similar a una lista, salvo que las matrices se crean con un tamaño fijo. Las listas pueden reducir y crecer según sea necesario, algo que es importante en este programa.  
   
 ### <a name="to-continue-or-review"></a>Para continuar o revisar  
   

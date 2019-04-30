@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 04867207ee8510a99ec19dc3f32175abedb39bf9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 13a26ec22060985705f6a1b54cf691c50ae07f1a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054643"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435213"
 ---
 # <a name="how-to-search-for-topics"></a>Procedimiento Buscar temas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Puede usar la característica de búsqueda de texto completo para buscar todos l
 2. En la consulta de búsqueda, especifique qué operadores de búsqueda lógicos o avanzados se aplicarán a la búsqueda, en caso de que los haya. Para buscar en toda la ayuda disponible, no use operadores.  
   
     > [!NOTE]
-    >  En el cuadro de diálogo **Opciones del Visor**, puede especificar preferencias adicionales, como el número máximo de resultados de la búsqueda que se mostrarán en todo momento o si se debe incluir contenido en inglés si la configuración regional principal no es inglés.  
+    > En el cuadro de diálogo **Opciones del Visor**, puede especificar preferencias adicionales, como el número máximo de resultados de la búsqueda que se mostrarán en todo momento o si se debe incluir contenido en inglés si la configuración regional principal no es inglés.  
   
 3. Presione la tecla Entrar.  
   

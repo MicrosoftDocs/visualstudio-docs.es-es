@@ -11,12 +11,12 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bdb818735a19be8dc6e8a96f677072d00aae6a46
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2e2b21f69d0688f3554aec8cf751cf674c2b5e30
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055605"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411470"
 ---
 # <a name="text-template-control-blocks"></a>Bloques de control de las plantillas de texto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,11 +66,11 @@ Found another one!
 ```  
   
 > [!WARNING]
->  Utilice siempre {...} para delimitar instrucciones anidadas que contengan texto sin formato insertado. El siguiente ejemplo podría no funcionar correctamente:  
+> Utilice siempre {...} para delimitar instrucciones anidadas que contengan texto sin formato insertado. El siguiente ejemplo podría no funcionar correctamente:  
 >   
->  `<# if (ShouldPrint) #> Some text. -- WRONG`  
+> `<# if (ShouldPrint) #> Some text. -- WRONG`  
 >   
->  En su lugar, debe incluir {llaves}, como sigue:  
+> En su lugar, debe incluir {llaves}, como sigue:  
   
 ```  
   
@@ -120,7 +120,7 @@ Some text.
 ```  
   
 > [!NOTE]
->  Un bloque de control de características de clase no debe ir seguido de bloques de control estándar en el mismo archivo de plantilla. Sin embargo, esta restricción no se aplica al resultado del uso de directivas `<#@include#>`. Cada archivo incluido puede tener bloques estándar seguidos de bloques de características de clase.  
+> Un bloque de control de características de clase no debe ir seguido de bloques de control estándar en el mismo archivo de plantilla. Sin embargo, esta restricción no se aplica al resultado del uso de directivas `<#@include#>`. Cada archivo incluido puede tener bloques estándar seguidos de bloques de características de clase.  
   
  Puede crear una función que genere el resultado insertando bloques de texto y de expresiones dentro de un bloque de control de características de clase. Por ejemplo:  
   

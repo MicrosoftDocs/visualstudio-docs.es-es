@@ -13,12 +13,12 @@ ms.assetid: dd3e8a6a-b366-433e-a409-b9a9b89da89a
 caps.latest.revision: 23
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a9874379586dd077f857a58800010391da36d19f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7ff078649703eef438ff7f4b14a51e7f7d155231
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069855"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428208"
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-windows-store-apps"></a>Tutorial: Crear y ejecutar pruebas unitarias para aplicaciones de Windows Store
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "60069855"
 Visual Studio incluye compatibilidad para realizar pruebas unitarias de aplicaciones [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] administradas e incluye plantillas de biblioteca de pruebas unitarias para Visual C#, Visual Basic y Visual C++.  
   
 > [!TIP]
->  Para obtener más información sobre cómo desarrollar aplicaciones de [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] , consulte [Introducción a las aplicaciones de la Tienda Windows](http://go.microsoft.com/fwlink/?LinkID=241410).  
+> Para obtener más información sobre cómo desarrollar aplicaciones de [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] , consulte [Introducción a las aplicaciones de la Tienda Windows](http://go.microsoft.com/fwlink/?LinkID=241410).  
   
  Visual Studio proporciona la siguiente funcionalidad de pruebas unitarias:  
   
@@ -54,7 +54,7 @@ Visual Studio incluye compatibilidad para realizar pruebas unitarias de aplicaci
 2. En Plantillas, elija el lenguaje de programación en el que desea crear la prueba unitaria y, a continuación, elija la biblioteca de pruebas unitarias de [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] asociada. Por ejemplo, elija **Visual C#** y, a continuación, **Tienda Windows**. Por último, elija **Biblioteca de pruebas unitarias (aplicaciones de la Tienda Windows)**.  
   
     > [!NOTE]
-    >  Visual Studio incluye plantillas de biblioteca de pruebas unitarias para Visual C#, Visual Basic y Visual C++.  
+    > Visual Studio incluye plantillas de biblioteca de pruebas unitarias para Visual C#, Visual Basic y Visual C++.  
   
 3. (Opcional) En el cuadro de texto **Nombre** , escriba el nombre que desee usar para el proyecto de prueba unitaria de [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)].  
   
@@ -84,7 +84,7 @@ Visual Studio incluye compatibilidad para realizar pruebas unitarias de aplicaci
 3. En la lista, en **Capacidades**, seleccione las capacidades que necesita la prueba unitaria y el código para las pruebas. Por ejemplo, active la casilla **Internet** si la prueba unitaria lo necesita y el código que está probando necesita tener la capacidad de tener acceso a Internet.  
   
     > [!NOTE]
-    >  Las capacidades que seleccione deben incluir solo las capacidades necesarias para que la prueba unitaria de [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] funcione correctamente. Las capacidades no deben incluir nunca funciones que no formen parte de la aplicación de [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] que se esté probando y normalmente deben ser un subconjunto de las funciones especificadas para la aplicación de [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] que está en pruebas.  
+    > Las capacidades que seleccione deben incluir solo las capacidades necesarias para que la prueba unitaria de [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] funcione correctamente. Las capacidades no deben incluir nunca funciones que no formen parte de la aplicación de [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] que se esté probando y normalmente deben ser un subconjunto de las funciones especificadas para la aplicación de [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] que está en pruebas.  
   
      Para obtener más información sobre el diseñador de manifiestos, consulte [Configurar un paquete de la aplicación de Windows 8.1 con el diseñador de manifiestos](http://msdn.microsoft.com/library/24c58b7f-9c6d-41c3-b385-c1e8497d5b2d).  
   
@@ -111,22 +111,22 @@ Visual Studio incluye compatibilidad para realizar pruebas unitarias de aplicaci
      Ahora aparece la prueba unitaria.  
   
     > [!NOTE]
-    >  Debe compilar la solución para actualizar la lista de pruebas unitarias en el Explorador de pruebas.  
+    > Debe compilar la solución para actualizar la lista de pruebas unitarias en el Explorador de pruebas.  
   
     > [!WARNING]
-    >  Visual Studio problema conocido: Debe abrir el Explorador de pruebas antes de compilar el proyecto de prueba.  
+    > Visual Studio problema conocido: Debe abrir el Explorador de pruebas antes de compilar el proyecto de prueba.  
   
 3. En el Explorador de pruebas, elija la prueba unitaria que creó.  
   
     > [!TIP]
-    >  El Explorador de pruebas proporciona un vínculo al código fuente junto a **Origen:**.  
+    > El Explorador de pruebas proporciona un vínculo al código fuente junto a **Origen:**.  
   
 4. Elija **Ejecutar todas**.  
   
      ![Explorador de pruebas unitarias&#45; ejecutar prueba unitaria](../test/media/unit-test-win8-unittestexplorer-contextmenurun.png "Unit_Test_Win8_UnitTestExplorer_ContextMenuRun")  
   
     > [!TIP]
-    >  Puede seleccionar una o varias de las pruebas unitarias enumeradas en el Explorador, hacer clic con el botón secundario y elegir **Ejecutar pruebas seleccionadas**.  
+    > Puede seleccionar una o varias de las pruebas unitarias enumeradas en el Explorador, hacer clic con el botón secundario y elegir **Ejecutar pruebas seleccionadas**.  
     >   
     >  Además, puede elegir **Depurar pruebas seleccionadas**, **Abrir prueba**y usar la opción **Propiedades** .  
     >   

@@ -14,12 +14,12 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 234c289cd039485163aa201516c418bacaed590b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9b41d199ab634ef5eeb2a6baaef8401919870b63
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60047430"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436976"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Creación de una aplicación de datos sencilla mediante ADO.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Al crear una aplicación que manipula datos en una base de datos, se realizan ta
  En este artículo se muestra una manera sencilla de obtener datos de una base de datos de una manera muy rápida. Si la aplicación necesita modificar los datos de formas no triviales y actualizar la base de datos, debe considerar con Entity Framework y el uso de enlace de datos para sincronizar automáticamente los controles de interfaz de usuario a los cambios en los datos subyacentes.  
   
 > [!IMPORTANT]
->  Para mantener el código sencillo, no se incluye el control de excepciones listo para producción.  
+> Para mantener el código sencillo, no se incluye el control de excepciones listo para producción.  
   
  **En este tema**  
   
@@ -78,7 +78,7 @@ Al crear una aplicación que manipula datos en una base de datos, se realizan ta
 3. Para cada formulario, agregue los cuadros de texto, botones y otros controles que aparecen en las siguientes ilustraciones. Para cada control, establezca las propiedades que se describen en las tablas.  
   
    > [!NOTE]
-   >  El cuadro de grupo y los controles de etiquetas agregan claridad pero no se utilizan en el código.  
+   > El cuadro de grupo y los controles de etiquetas agregan claridad pero no se utilizan en el código.  
   
    **Formulario Navigation**  
   
@@ -135,7 +135,7 @@ Al crear una aplicación que manipula datos en una base de datos, se realizan ta
 5. En el **valor** columna, escriba la cadena de conexión (sin ninguna fuera de las comillas) y, a continuación, guarde los cambios.  
   
 > [!NOTE]
->  En una aplicación real, debe almacenar de forma segura, como se describe en la cadena de conexión [las cadenas de conexión y archivos de configuración](http://msdn.microsoft.com/library/37df2641-661e-407a-a3fb-7bf9540f01e8).  
+> En una aplicación real, debe almacenar de forma segura, como se describe en la cadena de conexión [las cadenas de conexión y archivos de configuración](http://msdn.microsoft.com/library/37df2641-661e-407a-a3fb-7bf9540f01e8).  
   
 ## <a name="BKMK_retrievetheconnectionstring"></a> Recuperar la cadena de conexión  
   

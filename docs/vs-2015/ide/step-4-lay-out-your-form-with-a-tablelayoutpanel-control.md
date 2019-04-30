@@ -9,12 +9,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f4c6b72c521b15c1087b71ddb7241268cf56d64c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5ddd76bab4d007a9476dde75f46f3f2bc77be865
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070256"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442530"
 ---
 # <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>Paso 4: diseño del formulario con un control TableLayoutPanel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Grupo de contenedores
 Control TableLayoutPanel  
   
     > [!NOTE]
-    >  Si, después de agregar el control TableLayoutPanel, aparece una ventana dentro del formulario con el título **Tareas de TableLayoutPanel**, haga clic en cualquier parte del formulario para cerrarla. Aprenderemos más cosas sobre esta ventana más adelante en el tutorial.  
+    > Si, después de agregar el control TableLayoutPanel, aparece una ventana dentro del formulario con el título **Tareas de TableLayoutPanel**, haga clic en cualquier parte del formulario para cerrarla. Aprenderemos más cosas sobre esta ventana más adelante en el tutorial.  
   
      Observe que el Cuadro de herramientas se expande para abarcar el formulario cuando se elige su pestaña, y se cierra cuando se hace clic fuera de él. Se trata de la característica Ocultar automáticamente del IDE. Puede activarlo o desactivarlo en cualquiera de las ventanas eligiendo el marcador de la esquina superior derecha de la ventana para hacer que se oculte automáticamente y que quede bloqueado en su lugar. El icono del pin tiene este aspecto.  
   
@@ -62,7 +62,7 @@ Ventana Propiedades con la opción Rellenar seleccionada
 7. Después de establecer la propiedad **Dock** de TableLayoutPanel en **Fill**, el panel rellena el formulario completo. Si vuelve a cambiar el tamaño del formulario, TableLayoutPanel permanecerá acoplado y cambiará de tamaño para ajustarse al formulario.  
   
     > [!NOTE]
-    >  TableLayoutPanel funciona como una tabla de Microsoft Office Word: Tiene filas y columnas y una celda individual puede abarcar varias filas y columnas. Cada celda puede contener un control (como un botón, una casilla o una etiqueta). Este control TableLayoutPanel va a contener un control `PictureBox` que abarcará completamente su fila superior, un control `CheckBox` en la celda inferior izquierda, y cuatro controles `Button` en la celda inferior derecha.  
+    > TableLayoutPanel funciona como una tabla de Microsoft Office Word: Tiene filas y columnas y una celda individual puede abarcar varias filas y columnas. Cada celda puede contener un control (como un botón, una casilla o una etiqueta). Este control TableLayoutPanel va a contener un control `PictureBox` que abarcará completamente su fila superior, un control `CheckBox` en la celda inferior izquierda, y cuatro controles `Button` en la celda inferior derecha.  
   
 8. Actualmente, TableLayoutPanel tiene dos filas del mismo tamaño y dos columnas del mismo tamaño. Tenemos que cambiar su tamaño de modo que la fila superior y la columna derecha sean mucho mayores. En el Diseñador de Windows Forms, seleccione TableLayoutPanel. En la esquina superior derecha, hay un botoncito triangular de color negro, con el siguiente aspecto.  
   

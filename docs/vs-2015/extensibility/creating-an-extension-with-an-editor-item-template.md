@@ -10,12 +10,12 @@ ms.assetid: fa3b993b-ab95-47fa-a38b-b788f3a5b2d8
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 56d9ea80054ec3732f62f70a582b95da32fdbe9c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 46ccdd87d44ee90c925992f4d7b997c9bbe09684
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086720"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435519"
 ---
 # <a name="creating-an-extension-with-an-editor-item-template"></a>Creación de una extensión con una plantilla de elemento de editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,7 +65,7 @@ Puede usar plantillas de elementos que se incluyen en el SDK de Visual Studio pa
  La plantilla de elemento de gráfico de área de visualización de Editor crea un elemento de gráfico de ventanilla relativa que agrega un cuadro violeta que tiene un contorno rojo a la esquina superior derecha de la ventanilla.  
   
 > [!NOTE]
->  El *ventanilla* es el área de la vista de texto que se muestra actualmente.  
+> El *ventanilla* es el área de la vista de texto que se muestra actualmente.  
   
 #### <a name="to-create-a-viewport-adornment-extension-by-using-the-editor-viewport-adornment-template"></a>Para crear una extensión de elemento gráfico de área de visualización mediante la plantilla de elemento de gráfico de área de visualización de Editor  
   

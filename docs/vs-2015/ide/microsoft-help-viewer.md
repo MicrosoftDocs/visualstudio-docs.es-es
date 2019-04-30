@@ -20,12 +20,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8572deb32ea5fab2ce8ad831deeaba783496cbc5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3a1e9a3abd6b16ae0365279a6eb9cb067bfeb225
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104335"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430853"
 ---
 # <a name="microsoft-help-viewer"></a>Visor de Ayuda de Microsoft
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "60104335"
 Puede instalar y ver el contenido de distintos productos y tecnologías en el equipo local usando el Visor de Ayuda de Microsoft.  
   
 > [!WARNING]
->  Cuando se instala Visual Studio, obtiene el Visor de Ayuda. Para empezar a leer temas de ayuda en el Visor de ayuda, en lugar de en el sitio de descarga MSDN, vaya a la **ayuda** menú en Visual Studio, seleccione **establecer preferencias de la Ayuda**y, a continuación, seleccione **iniciar en la Ayuda Visor de**. Los temas de ayuda sin conexión para una determinada versión de Visual Studio solo están disponibles tras el lanzamiento final de esa versión.  
+> Cuando se instala Visual Studio, obtiene el Visor de Ayuda. Para empezar a leer temas de ayuda en el Visor de ayuda, en lugar de en el sitio de descarga MSDN, vaya a la **ayuda** menú en Visual Studio, seleccione **establecer preferencias de la Ayuda**y, a continuación, seleccione **iniciar en la Ayuda Visor de**. Los temas de ayuda sin conexión para una determinada versión de Visual Studio solo están disponibles tras el lanzamiento final de esa versión.  
   
  Puede realizar lo siguiente:  
   

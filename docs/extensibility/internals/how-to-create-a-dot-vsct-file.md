@@ -1,5 +1,5 @@
 ---
-title: Filtrar Crear una. Archivo de Vsct | Documentos de Microsoft
+title: Procedimiento Crear una. Archivo de Vsct | Documentos de Microsoft
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,14 +10,14 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d8dd2e677cae2e54a8dff716aef72f1d6abc6b40
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 2c671467f220e61de5ca9de56a2515a2e4836020
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602811"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418465"
 ---
-# <a name="how-to-create-a-vsct-file"></a>Filtrar Crear un archivo .vsct
+# <a name="how-to-create-a-vsct-file"></a>Procedimiento Crear un archivo .vsct
 
 Hay varias maneras de crear una configuración de tabla de comandos de Visual Studio basado en XML (*.vsct*) archivo.
 
@@ -80,7 +80,7 @@ Puede crear un basado en XML *.vsct* archivo desde una tabla existente del coman
     Esta acción crea un nuevo *.vsct* archivo de origen de tabla de comandos XML. Puede compilar el archivo mediante el uso de *Vsct.exe*, el compilador VSCT, como haría con cualquier otro *.vsct* archivo.
 
    > [!NOTE]
-   >  Puede mejorar la legibilidad de la *.vsct* archivo volviendo a formatear los comentarios XML.
+   > Puede mejorar la legibilidad de la *.vsct* archivo volviendo a formatear los comentarios XML.
 
 <a name="how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file"></a>
 
@@ -90,13 +90,13 @@ Puede crear un basado en XML *.vsct* archivo desde un binario existente *.cto* a
 
 ### <a name="to-create-a-vsct-file-from-a-cto-file"></a>Para crear un archivo .vsct a partir de un archivo .cto
 
-1.  Obtenga copias de los *.cto* archivo y su correspondiente *ctsym* archivo.
+1. Obtenga copias de los *.cto* archivo y su correspondiente *ctsym* archivo.
 
-2.  Coloque los archivos en el mismo directorio que el *vsct.exe* compilador.
+2. Coloque los archivos en el mismo directorio que el *vsct.exe* compilador.
 
-3.  En el símbolo del sistema de Visual Studio, vaya al directorio que contiene el *.cto* y *ctsym* archivos.
+3. En el símbolo del sistema de Visual Studio, vaya al directorio que contiene el *.cto* y *ctsym* archivos.
 
-4.  Tipo
+4. Tipo
 
     ```
     vsct.exe <ctofilename>.cto <vsctfilename>.vsct -S<symfilename>.ctsym
@@ -111,9 +111,9 @@ Puede crear un basado en XML *.vsct* archivo desde un binario existente *.cto* a
 
 ### <a name="to-add-a-vsct-file-to-project-compilation"></a>Para agregar un archivo .vsct a la compilación del proyecto
 
-1.  Abra el archivo de proyecto en el editor. Si se carga el proyecto, primero debe descargarlo.
+1. Abra el archivo de proyecto en el editor. Si se carga el proyecto, primero debe descargarlo.
 
-2.  Agregar un [elemento ItemGroup](../../msbuild/itemgroup-element-msbuild.md) que contiene un `VSCTCompile` elemento, como se muestra en el ejemplo siguiente.
+2. Agregar un [elemento ItemGroup](../../msbuild/itemgroup-element-msbuild.md) que contiene un `VSCTCompile` elemento, como se muestra en el ejemplo siguiente.
 
     ```xml
     <ItemGroup>
@@ -126,7 +126,7 @@ Puede crear un basado en XML *.vsct* archivo desde un binario existente *.cto* a
 
      El `ResourceName` elemento siempre debe establecerse en `Menus.ctmenu`.
 
-3.  Si el proyecto contiene un *.resx* , agregue un `EmbeddedResource` elemento que contiene un `MergeWithCTO` elemento, como se muestra en el ejemplo siguiente:
+3. Si el proyecto contiene un *.resx* , agregue un `EmbeddedResource` elemento que contiene un `MergeWithCTO` elemento, como se muestra en el ejemplo siguiente:
 
     ```xml
     <EmbeddedResource Include="VSPackage.resx">
@@ -138,9 +138,9 @@ Puede crear un basado en XML *.vsct* archivo desde un binario existente *.cto* a
 
      Este marcado debe ir dentro el `ItemGroup` elemento que contiene recursos incrustados.
 
-4.  Abra el archivo de paquete, normalmente denominado  *\<ProjectName\>Package.cs* o  *\<ProjectName\>Package.vb*, en el editor.
+4. Abra el archivo de paquete, normalmente denominado  *\<ProjectName\>Package.cs* o  *\<ProjectName\>Package.vb*, en el editor.
 
-5.  Agregar un `ProvideMenuResource` atributo a la clase de paquete, tal como se muestra en el ejemplo siguiente.
+5. Agregar un `ProvideMenuResource` atributo a la clase de paquete, tal como se muestra en el ejemplo siguiente.
 
     ```csharp
     [ProvideMenuResource("Menus.ctmenu", 1)]

@@ -9,19 +9,19 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2e9cef8726ad690508948ac0a9878df1bd85c96e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: b78c409a761a98439cbbbfdf088e052eca745f32
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58987108"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444470"
 ---
 # <a name="properties-of-domain-roles"></a>Propiedades de los roles de dominio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Las propiedades en la tabla siguiente se asocian con un rol de dominio. Para obtener información acerca de los roles de dominio, consulte [descripción de los modelos, las clases y relaciones](../modeling/understanding-models-classes-and-relationships.md). Para obtener más información sobre cómo usar estas propiedades, vea [personalizar y ampliar lenguajes específicos de dominio](../modeling/customizing-and-extending-a-domain-specific-language.md).  
   
-|Property|Descripción|Default|  
+|Propiedad|Descripción|Default|  
 |--------------|-----------------|-------------|  
 |Tipo de colección|Si este rol tiene la multiplicidad de 0.. * o 1.. \*, esta propiedad personaliza el tipo genérico que se usa para almacenar la colección de vínculos.|`(none)` - <xref:Microsoft.VisualStudio.Modeling.LinkedElementCollection%601> se usa|  
 |Atributos personalizados|Los atributos que especifique aquí se agregará como atributos a la clase de código generado.|\<none>|  
@@ -43,7 +43,7 @@ Las propiedades en la tabla siguiente se asocian con un rol de dominio. Para obt
 |Propiedad nombre para mostrar|El nombre que se muestra en el diseñador generado para la propiedad de rol generado.|El valor ajustado de la propiedad de nombre de propiedad.|  
   
 > [!NOTE]
->  El valor predeterminado de un nombre para mostrar se basa en el valor de propiedad asociado al insertar espacios delante de cada carácter en mayúsculas que está precedido por un carácter en minúsculas y que no es seguido por otro carácter de letra mayúscula.  
+> El valor predeterminado de un nombre para mostrar se basa en el valor de propiedad asociado al insertar espacios delante de cada carácter en mayúsculas que está precedido por un carácter en minúsculas y que no es seguido por otro carácter de letra mayúscula.  
   
 ## <a name="see-also"></a>Vea también  
  [Propiedades de las relaciones de dominio](../modeling/properties-of-domain-relationships.md)

@@ -27,12 +27,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 39cdb98f14823b02c8d4d2b60575eddca6da0420
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 927451ed35ce4bbdfbff7531b2828b0571354f34
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055360"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445368"
 ---
 # <a name="windows-forms-controls-on-office-documents-overview"></a>Controles de Windows Forms en información general sobre documentos de Office
   Los controles de Windows Forms son objetos con los que pueden interactuar los usuarios para escribir o manipular datos. En los proyectos de nivel de documento para Microsoft Office Excel y Microsoft Office Word, puede agregar controles de formularios Windows Forms al documento o libro del proyecto en tiempo de diseño, o puede agregar estos controles mediante programación en tiempo de ejecución. Puede agregar estos controles mediante programación a cualquier documento o libro abierto en tiempo de ejecución en un complemento VSTO para Excel o Word.
@@ -109,7 +109,7 @@ En un formulario de Windows Form.
 - **Igualar espaciado vertical**
 
 > [!NOTE]
->  En proyectos de Word, estos botones están habilitados solo si los controles seleccionados no están en línea con el texto. De forma predeterminada, los controles que se agregan al documento en tiempo de diseño están en línea con el texto.
+> En proyectos de Word, estos botones están habilitados solo si los controles seleccionados no están en línea con el texto. De forma predeterminada, los controles que se agregan al documento en tiempo de diseño están en línea con el texto.
 
 ### <a name="prevent-old-data-from-appearing-in-excel-workbooks-during-loading"></a>Impedir que los datos antiguos aparezcan en los libros de Excel durante la carga
  Al agregar controles de formularios de Windows Forms a documentos u hojas de cálculo en tiempo de diseño, los controles permanecen en el documento cuando el usuario cierra el documento. Los controles agregados en tiempo de diseño también se denominan *controles estáticos*.

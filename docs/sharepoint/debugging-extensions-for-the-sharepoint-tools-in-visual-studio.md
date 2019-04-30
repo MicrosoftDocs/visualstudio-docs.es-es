@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3340c55b99f9d2507bb129eff689cc1b510843f5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e170a5ed703a9bf5aae2e73126de52ecf88e8084
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094403"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443524"
 ---
 # <a name="debug-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Depurar extensiones para las herramientas de SharePoint en Visual Studio
   Puede depurar las extensiones de las herramientas de SharePoint en la instancia experimental o en la instancia normal de Visual Studio. Si necesita solucionar problemas relacionados con el comportamiento de una extensión, también puede modificar los valores del Registro para mostrar información adicional sobre los errores y configurar el modo en que Visual Studio ejecuta los comandos de SharePoint.
@@ -102,7 +102,7 @@ ms.locfileid: "60094403"
 3. En el **procesos disponibles** elija *vssphost.exe*.
 
     > [!NOTE]
-    >  Si vssphost.exe no aparece en la lista, debe iniciar el *vssphost4.exe* procesos en la instancia de Visual Studio en el que está ejecutando la extensión. Normalmente, para ello, realizara una acción que haga que Visual Studio se conecte al sitio de SharePoint del equipo de desarrollo. Por ejemplo, Visual Studio inicia *vssphost4.exe* al expandir un nodo de conexión de sitio (es decir, un nodo que se muestra una dirección URL del sitio) bajo el **conexiones de SharePoint** nodo en el **Explorador de servidores**  ventana, o cuando se agregan ciertos elementos de proyecto de SharePoint, como **instancia de lista** o **receptor de eventos** elementos a un proyecto de SharePoint.
+    > Si vssphost.exe no aparece en la lista, debe iniciar el *vssphost4.exe* procesos en la instancia de Visual Studio en el que está ejecutando la extensión. Normalmente, para ello, realizara una acción que haga que Visual Studio se conecte al sitio de SharePoint del equipo de desarrollo. Por ejemplo, Visual Studio inicia *vssphost4.exe* al expandir un nodo de conexión de sitio (es decir, un nodo que se muestra una dirección URL del sitio) bajo el **conexiones de SharePoint** nodo en el **Explorador de servidores**  ventana, o cuando se agregan ciertos elementos de proyecto de SharePoint, como **instancia de lista** o **receptor de eventos** elementos a un proyecto de SharePoint.
 
 4. Elija la **adjuntar** botón.
 

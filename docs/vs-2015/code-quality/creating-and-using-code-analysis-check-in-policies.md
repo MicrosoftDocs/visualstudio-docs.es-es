@@ -11,12 +11,12 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 2aef2183cde96bfb5faa1bb62fa341f901dd7018
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 274aa497e004ddafee9a56b028f3001bb8deb630
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58987646"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437084"
 ---
 # <a name="creating-and-using-code-analysis-check-in-policies"></a>Crear y usar directivas de inserción en el repositorio del análisis de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Cuando se usa el Control de versiones de Team Foundation (TFVC), puede crear una
  La directiva se supera cuando la compilación local está actualizada y se ha ejecutado el análisis de código en los archivos de código fuente más recientes. Como mínimo, las reglas de análisis de código que están habilitadas en el proyecto de código deben contener las mismas reglas que las que se definen en la directiva de comprobación de proyecto de equipo. Las reglas que se han especificado como errores en la configuración del proyecto de equipo también deben especificarse como errores en el proyecto de código  
   
 > [!IMPORTANT]
->  No se puede aplicar directivas de protección de análisis de código para proyectos de sitio web. Se pueden aplicar a los proyectos de aplicación web.  
+> No se puede aplicar directivas de protección de análisis de código para proyectos de sitio web. Se pueden aplicar a los proyectos de aplicación web.  
   
  Crear directivas de protección de análisis de código mediante el uso de la configuración del proyecto de equipo de [!INCLUDE[esprscc](../includes/esprscc-md.md)]. Las directivas de protección se especifican y aplican en un proyecto de equipo, pero las ejecuciones de análisis de código se configuran y ejecutar proyectos de código individuales en equipos de desarrollo local. En esta sección se describe cómo especificar directivas análisis de código en el repositorio para un proyecto de equipo y cómo implementar directivas de análisis de código personalizado para el código administrado.  
   

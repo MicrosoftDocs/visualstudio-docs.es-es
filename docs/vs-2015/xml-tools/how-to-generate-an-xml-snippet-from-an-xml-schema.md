@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6a6c94382bd797b4c24057f623b334b2f2cd2983
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b0e1ea270511a92df96fdb4cc38367074f224060
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60115580"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431016"
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Procedimiento Generar un fragmento de código XML a partir de un esquema XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ Con el Editor XML es posible generar fragmentos de código XML a partir de un es
  Los pasos de esta sección muestran cómo utilizar la característica del Editor XML de fragmento de código XML generado por esquema.  
   
 > [!NOTE]
->  Antes de comenzar estos procedimientos, guarde el archivo de esquema en el equipo local.  
+> Antes de comenzar estos procedimientos, guarde el archivo de esquema en el equipo local.  
   
 #### <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>Para crear un nuevo archivo XML y asociarlo con un esquema XML  
   

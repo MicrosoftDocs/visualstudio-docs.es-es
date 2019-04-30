@@ -11,12 +11,12 @@ ms.assetid: d7a0f2b0-d427-4d49-9536-54edfb37c0f3
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: ccb468c5eca88207594a66d956717caf260666db
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 4adcf0f5c5770f5d3ffc0e0ed9bffdb108869c7f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58995201"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441538"
 ---
 # <a name="persisting-the-property-of-a-project-item"></a>Conservación de la propiedad de un elemento de proyecto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Es posible que desee conservar una propiedad que se agrega a un elemento de proy
   
 ### <a name="to-obtain-the-project-hierarchy-with-the-dte-object"></a>Para obtener la jerarquía del proyecto con el objeto DTE  
   
-1.  Agregue el código siguiente para el paquete de VS:  
+1. Agregue el código siguiente para el paquete de VS:  
   
     ```csharp  
     EnvDTE.DTE dte = (EnvDTE.DTE)Package.GetGlobalService(typeof(EnvDTE.DTE));  
@@ -43,7 +43,7 @@ Es posible que desee conservar una propiedad que se agrega a un elemento de proy
   
 ### <a name="to-persist-the-project-item-property-with-the-dte-object"></a>Para conservar la propiedad de elemento de proyecto con el objeto DTE  
   
-1.  Agregue el código siguiente en el código proporcionado en el método en el procedimiento anterior:  
+1. Agregue el código siguiente en el código proporcionado en el método en el procedimiento anterior:  
   
     ```csharp  
     IVsBuildPropertyStorage buildPropertyStorage =   
@@ -60,7 +60,7 @@ Es posible que desee conservar una propiedad que se agrega a un elemento de proy
   
 ### <a name="to-obtain-the-project-hierarchy-using-ivsmonitorselection"></a>Para obtener la jerarquía del proyecto mediante IVsMonitorSelection  
   
-1.  Agregue el código siguiente para el paquete de VS:  
+1. Agregue el código siguiente para el paquete de VS:  
   
     ```csharp  
     IVsHierarchy hierarchy = null;  
@@ -102,11 +102,11 @@ Es posible que desee conservar una propiedad que se agrega a un elemento de proy
     }  
     ```  
   
-2.  
+2. 
   
 ### <a name="to-persist-the-selected-project-item-property-given-the-project-hierarchy"></a>Para conservar la propiedad de elemento de proyecto seleccionado, dada la jerarquía del proyecto  
   
-1.  Agregue el código siguiente en el código proporcionado en el método en el procedimiento anterior:  
+1. Agregue el código siguiente en el código proporcionado en el método en el procedimiento anterior:  
   
     ```  
     IVsBuildPropertyStorage buildPropertyStorage =   
@@ -119,16 +119,16 @@ Es posible que desee conservar una propiedad que se agrega a un elemento de proy
   
 ### <a name="to-verify-that-the-property-is-persisted"></a>Para comprobar que se conserva la propiedad  
   
-1.  Iniciar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] y, a continuación, abra o cree una solución.  
+1. Iniciar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] y, a continuación, abra o cree una solución.  
   
-2.  Seleccione el proyecto de elemento VsPkg.cs en **el Explorador de soluciones**.  
+2. Seleccione el proyecto de elemento VsPkg.cs en **el Explorador de soluciones**.  
   
-3.  Usar un punto de interrupción o en caso contrario, determinar que se carga el paquete de VS y que se ejecuta SetItemAttribute.  
+3. Usar un punto de interrupción o en caso contrario, determinar que se carga el paquete de VS y que se ejecuta SetItemAttribute.  
   
     > [!NOTE]
-    >  Puede cargar automáticamente un VSPackage en el contexto de interfaz de usuario <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_guid>. Para obtener más información, consulte [cargar VSPackages](../extensibility/loading-vspackages.md).  
+    > Puede cargar automáticamente un VSPackage en el contexto de interfaz de usuario <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_guid>. Para obtener más información, consulte [cargar VSPackages](../extensibility/loading-vspackages.md).  
   
-4.  Cerrar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] y, a continuación, abra el archivo de proyecto en el Bloc de notas. Debería ver el \<Autor > etiqueta con el valor Tom, como sigue:  
+4. Cerrar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] y, a continuación, abra el archivo de proyecto en el Bloc de notas. Debería ver el \<Autor > etiqueta con el valor Tom, como sigue:  
   
     ```  
     <Compile Include="VsPkg.cs">  

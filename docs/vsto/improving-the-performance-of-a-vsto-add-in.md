@@ -10,12 +10,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: df17245a398c71e7ae9ce0077352f47b0b70ab9b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2add0dfced6a3b8e8263dafe133ee3a2f86637f5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071826"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420935"
 ---
 # <a name="improve-the-performance-of-a-vsto-add-in"></a>Mejorar el rendimiento de un complemento de VSTO
   Puede ofrecer a los usuarios una mejor experiencia si optimiza los complementos de VSTO que cree para las aplicaciones de Office, de modo que se inicien, se cierren, abran elementos y realicen otras tareas rápidamente. Si el complemento de VSTO es para Outlook, también puede reducir la posibilidad de que se deshabilite debido a un bajo rendimiento. Puede aumentar el rendimiento del complemento de VSTO si implementa las estrategias siguientes:
@@ -93,7 +93,7 @@ ms.locfileid: "60071826"
 - Validación de las firmas digitales de los manifiestos de implementación.
 
   > [!NOTE]
-  >  Este enfoque no es necesario si implementa su complemento VSTO en una ubicación segura en los equipos de los usuarios.
+  > Este enfoque no es necesario si implementa su complemento VSTO en una ubicación segura en los equipos de los usuarios.
 
   Para obtener más información, consulte [implementar una solución de Office mediante Windows Installer](../vsto/deploying-an-office-solution-by-using-windows-installer.md).
 
@@ -111,7 +111,7 @@ ms.locfileid: "60071826"
  Considere la posibilidad de realizar las tareas que consumen muchos recursos (por ejemplo, tareas de ejecución prolongada, conexiones de base de datos u otros tipos de llamadas de red) en un subproceso independiente. Para obtener más información, consulte [compatibilidad del subprocesamiento en Office](../vsto/threading-support-in-office.md).
 
 > [!NOTE]
->  Todo el código que llame al modelo de objetos de Office debe ejecutarse en el subproceso principal.
+> Todo el código que llame al modelo de objetos de Office debe ejecutarse en el subproceso principal.
 
 ## <a name="see-also"></a>Vea también
 

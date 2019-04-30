@@ -9,12 +9,12 @@ caps.latest.revision: 21
 author: alexhomer1
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: af4b6ba85982c926230100aac5c7a451df79b825
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4ec7d42fe5f1db8a44f17cf3dffdfd6174a58995
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100188"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445932"
 ---
 # <a name="unit-testing-visual-c-code-in-a-store-app"></a>Pruebas unitarias de código de Visual C# en una aplicación de la Tienda
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Este tema describe una forma de crear pruebas unitarias para una clase de Visual
  En este tema también se crea una solución única de Visual Studio y proyectos independientes para las pruebas unitarias y el DLL que desees probar. También puedes incluir las pruebas unitarias directamente en el proyecto DLL, o crear soluciones independientes para las pruebas unitarias y el DLL.  
   
 > [!NOTE]
->  Visual Studio Community, Enterprise y Professional proporcionan características adicionales para las pruebas unitarias.  
+> Visual Studio Community, Enterprise y Professional proporcionan características adicionales para las pruebas unitarias.  
 > 
 > - Use cualquier marco de pruebas unitarias de terceros y de código abierto que haya creado un adaptador complementario para el Explorador de pruebas de Microsoft. También puedes analizar y mostrar información de cobertura de código para las pruebas.  
 >   - Ejecute las pruebas después de cada compilación.  
@@ -211,7 +211,7 @@ Este tema describe una forma de crear pruebas unitarias para una clase de Visual
     ```  
   
     > [!TIP]
-    >  Se recomienda no cambiar las pruebas superadas. En vez de ello, agregue una nueva prueba, actualice el código para que la prueba se supere, después agregue otra prueba y así sucesivamente.  
+    > Se recomienda no cambiar las pruebas superadas. En vez de ello, agregue una nueva prueba, actualice el código para que la prueba se supere, después agregue otra prueba y así sucesivamente.  
     >   
     >  Cuando los usuarios cambien los requisitos, deshabilite las pruebas que ya no son correctas. Escriba nuevas pruebas y hágalas funcionar una a una de la misma manera incremental.  
   
@@ -222,7 +222,7 @@ Este tema describe una forma de crear pruebas unitarias para una clase de Visual
      ![Se produce un error en RangeTest](../test/media/ute-cpp-testexplorer-rangetest-fail.png "UTE_Cpp_TestExplorer_RangeTest_Fail")  
   
     > [!TIP]
-    >  Inmediatamente después de haberla escrito, comprueba que cada prueba sufre un error. Esto ayuda a evitar el error habitual de escribir una prueba que nunca falla.  
+    > Inmediatamente después de haberla escrito, comprueba que cada prueba sufre un error. Esto ayuda a evitar el error habitual de escribir una prueba que nunca falla.  
   
 4. Mejora el código objeto de prueba para que la nueva prueba se supere. Cambie la función `SqareRoot` de **Rooter.cs** a lo siguiente:  
   
@@ -247,7 +247,7 @@ Este tema describe una forma de crear pruebas unitarias para una clase de Visual
      Ahora se superan las tres pruebas.  
   
 > [!TIP]
->  Desarrolle código agregando pruebas una a una. Asegúrese de que se pasan todas las pruebas después de cada iteración.  
+> Desarrolle código agregando pruebas una a una. Asegúrese de que se pasan todas las pruebas después de cada iteración.  
   
 ## <a name="BKMK_Debug_a_failing_test"></a> Depurar una prueba fallida  
   
@@ -332,7 +332,7 @@ Este tema describe una forma de crear pruebas unitarias para una clase de Visual
 2. Elija **Ejecutar todas** para probar el método refactorizado y asegúrese de que no haya introducido una regresión.  
   
 > [!TIP]
->  Un conjunto estable de pruebas unitarias correctas proporciona la confianza de que no se han introducido errores al cambiar el código.  
+> Un conjunto estable de pruebas unitarias correctas proporciona la confianza de que no se han introducido errores al cambiar el código.  
   
  **Refactorice el código de prueba para eliminar código duplicado.**  
   
@@ -365,4 +365,4 @@ Este tema describe una forma de crear pruebas unitarias para una clase de Visual
 2. Seleccione **Ejecutar todas** para probar el método refactorizado y asegúrese de que no ha introducido un error.  
   
 > [!NOTE]
->  Para agregar un método del asistente a una clase de prueba, no debes agregar el atributo `[TestMethod]` al método. El Explorador de pruebas no registra el método que se va a ejecutar.
+> Para agregar un método del asistente a una clase de prueba, no debes agregar el atributo `[TestMethod]` al método. El Explorador de pruebas no registra el método que se va a ejecutar.

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a44a6a3474d56b1254333731d79b2172fd6143b9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5ff893f5603d3156d4ed6fe09848682ab5d04b06
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077660"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63407628"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector-c-visual-basic"></a>Usar el recopilador independiente IntelliTrace (C#, Visual Basic)
 
@@ -26,10 +26,10 @@ El **recolector independiente IntelliTrace** permite recopilar datos de diagnós
  Observe IntelliTrace en acción: [Recopilar y analizar datos de IntelliTrace en producción para la depuración (vídeo de Channel 9)](http://go.microsoft.com/fwlink/?LinkID=251851)
 
 > [!NOTE]
->  Los mismos datos de IntelliTrace se pueden recopilar también para aplicaciones web y de Sharepoint que se ejecutan en equipos remotos; para ello, hay que usar **Microsoft Monitoring Agent** en modo **Trace** .
+> Los mismos datos de IntelliTrace se pueden recopilar también para aplicaciones web y de Sharepoint que se ejecutan en equipos remotos; para ello, hay que usar **Microsoft Monitoring Agent** en modo **Trace** .
 >
->  Si el agente se ejecuta en modo **Monitor** , puede recopilar eventos relacionados con el rendimiento en los datos de IntelliTrace. El modo**Monitor** tiene un impacto en el rendimiento menos acusado que el modo **Trace** o el **recolector independiente IntelliTrace**. Microsoft Monitoring Agent sí modifica el entorno del sistema de destino cuando se instala. Consulte [mediante Microsoft Monitoring Agent](../debugger/using-the-microsoft-monitoring-agent.md).
->  El recolector independiente IntelliTrace no admite el proceso de instantáneas.
+> Si el agente se ejecuta en modo **Monitor** , puede recopilar eventos relacionados con el rendimiento en los datos de IntelliTrace. El modo**Monitor** tiene un impacto en el rendimiento menos acusado que el modo **Trace** o el **recolector independiente IntelliTrace**. Microsoft Monitoring Agent sí modifica el entorno del sistema de destino cuando se instala. Consulte [mediante Microsoft Monitoring Agent](../debugger/using-the-microsoft-monitoring-agent.md).
+> El recolector independiente IntelliTrace no admite el proceso de instantáneas.
 
  **Requisitos**
 
@@ -38,7 +38,7 @@ El **recolector independiente IntelliTrace** permite recopilar datos de diagnós
 - Visual Studio Enterprise (y no las versiones Professional o Community) el equipo de desarrollo o en otro equipo para abrir los archivos .iTrace
 
   > [!NOTE]
-  >  Procure guardar los archivos de símbolos (.pdb). Para depurar con IntelliTrace y recorrer el código, debe tener los archivos de código fuente y los archivos de símbolos correspondientes. Consulte [diagnosticar problemas después de la implementación](../debugger/diagnose-problems-after-deployment.md).
+  > Procure guardar los archivos de símbolos (.pdb). Para depurar con IntelliTrace y recorrer el código, debe tener los archivos de código fuente y los archivos de símbolos correspondientes. Consulte [diagnosticar problemas después de la implementación](../debugger/diagnose-problems-after-deployment.md).
 
   **Preguntas más frecuentes**
 
@@ -111,7 +111,7 @@ El **recolector independiente IntelliTrace** permite recopilar datos de diagnós
         `expand  /f:* IntelliTraceCollection.cab .`
 
        > [!NOTE]
-       >  El punto (**.**) hace que se conserven las subcarpetas que contienen los planes de recolección localizados.
+       > El punto (**.**) hace que se conserven las subcarpetas que contienen los planes de recolección localizados.
 
 ## <a name="ConfigurePermissionsRunningCollector"></a> Configurar permisos para el directorio de recopilador
 
@@ -216,7 +216,7 @@ El **recolector independiente IntelliTrace** permite recopilar datos de diagnós
      `Start-IntelliTraceCollection` `"` *\<ApplicationPool>* `"` *\<PathToCollectionPlan>* *\<FullPathToITraceFileDirectory>*
 
     > [!IMPORTANT]
-    >  Después de ejecutar este comando, escriba **Y** para confirmar que desea iniciar la recolección de datos.
+    > Después de ejecutar este comando, escriba **Y** para confirmar que desea iniciar la recolección de datos.
 
      Por ejemplo, para recopilar datos de una aplicación de SharePoint en el grupo de aplicaciones de **SharePoint - 80** :
 
@@ -247,7 +247,7 @@ El **recolector independiente IntelliTrace** permite recopilar datos de diagnós
      `Stop-IntelliTraceCollection` `"` *\<ApplicationPool>* `"`
 
     > [!IMPORTANT]
-    >  Después de ejecutar este comando, escriba **Y** para confirmar que desea detener la recolección de datos. De lo contrario, el recolector podría seguir recopilando de datos, el archivo .iTrace permanecerá bloqueado o es posible que el archivo no contenga datos útiles.
+    > Después de ejecutar este comando, escriba **Y** para confirmar que desea detener la recolección de datos. De lo contrario, el recolector podría seguir recopilando de datos, el archivo .iTrace permanecerá bloqueado o es posible que el archivo no contenga datos útiles.
 
 6. [Abra el archivo .iTrace en Visual Studio Enterprise.](#BKMK_View_IntelliTrace_Log_Files)
 
@@ -275,7 +275,7 @@ El **recolector independiente IntelliTrace** permite recopilar datos de diagnós
 ## <a name="BKMK_View_IntelliTrace_Log_Files"></a> Abra el archivo .iTrace en Visual Studio Enterprise.
 
 > [!NOTE]
->  Para depurar con IntelliTrace y recorrer el código, debe tener los archivos de código fuente y los archivos de símbolos correspondientes. Consulte [diagnosticar problemas después de la implementación](../debugger/diagnose-problems-after-deployment.md).
+> Para depurar con IntelliTrace y recorrer el código, debe tener los archivos de código fuente y los archivos de símbolos correspondientes. Consulte [diagnosticar problemas después de la implementación](../debugger/diagnose-problems-after-deployment.md).
 
 1. Mueva el archivo .iTrace o cópielo en un equipo con Visual Studio Enterprise (pero no a las versiones Professional o Community).
 
@@ -284,7 +284,7 @@ El **recolector independiente IntelliTrace** permite recopilar datos de diagnós
      Visual Studio muestra la página **Resumen de IntelliTrace** . En la mayoría de las secciones, puede revisar eventos u otros elementos, elegir un elemento e iniciar la depuración con IntelliTrace justo donde y cuando un evento se ha producido. Consulte [mediante datos de IntelliTrace guardado](../debugger/using-saved-intellitrace-data.md).
 
     > [!NOTE]
-    >  Para depurar con IntelliTrace y recorrer el código, debe tener los archivos de código fuente y los archivos de símbolos correspondientes en el equipo de desarrollo. Consulte [diagnosticar problemas después de la implementación](../debugger/diagnose-problems-after-deployment.md).
+    > Para depurar con IntelliTrace y recorrer el código, debe tener los archivos de código fuente y los archivos de símbolos correspondientes en el equipo de desarrollo. Consulte [diagnosticar problemas después de la implementación](../debugger/diagnose-problems-after-deployment.md).
 
 ## <a name="Minimizing"></a> ¿Cómo puedo obtener la mayoría de los datos sin ralentizar la aplicación?
  IntelliTrace puede recopilar una gran cantidad de datos, por lo que el impacto en el rendimiento de la aplicación depende de los datos que IntelliTrace recopile y el tipo de código que analice. Vea [Optimizar la recolección de IntelliTrace en servidores de producción](http://go.microsoft.com/fwlink/?LinkId=255233)

@@ -12,12 +12,12 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c629d82d208f45433564c1b36bb5aa889e402915
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: d08a7eb20c01568b3501f16348eb19afdcaefa2c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668335"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444380"
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>Configuraciones de conjuntos de herramientas estándar y personalizados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ Un conjunto de herramientas de MSBuild contiene referencias a tareas, destinos y
  La propiedad de compilación `VisualStudioVersion` indica si un subconjunto de herramientas se activa. Por ejemplo, un valor de `VisualStudioVersion` de "12.0" especifica el subconjunto de herramientas de MSBuild 12.0. Para obtener más información, vea la sección de subconjuntos de herramientas de [Conjunto de herramientas (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md).  
 
 > [!NOTE]
->  Se recomienda no cambiar esta configuración. No obstante, puede agregar sus propios valores y especificar las definiciones del conjunto de herramientas personalizado para todos los equipos, como se describe en la sección siguiente.  
+> Se recomienda no cambiar esta configuración. No obstante, puede agregar sus propios valores y especificar las definiciones del conjunto de herramientas personalizado para todos los equipos, como se describe en la sección siguiente.  
 
 ## <a name="custom-toolset-definitions"></a>Definiciones de conjuntos de herramientas personalizados  
  Cuando un conjunto de herramientas estándar no cumple sus requisitos de compilación, puede crear un conjunto de herramientas personalizado. Por ejemplo, puede tener un escenario de laboratorio de compilación en el que necesite un sistema independiente para compilar proyectos de [!INCLUDE[vcprvc](../includes/vcprvc-md.md)]. Mediante un conjunto de herramientas personalizado, puede asignar valores personalizados al atributo `ToolsVersion` al crear proyectos o ejecutar MSBuild.exe. De este modo, también podrá usar la propiedad `$(MSBuildToolsPath)` para importar los archivos .targets de ese directorio, así como para definir sus propias propiedades de conjunto de herramientas personalizadas que puede usar en cualquier proyecto que utilice ese conjunto de herramientas.  
@@ -86,12 +86,12 @@ Un conjunto de herramientas de MSBuild contiene referencias a tareas, destinos y
 ```  
 
 > [!NOTE]
->  Para que se lea correctamente, `<configSections>` debe ser la primera subsección de la sección `<configuration>`.  
+> Para que se lea correctamente, `<configSections>` debe ser la primera subsección de la sección `<configuration>`.  
 
  `ToolsetConfigurationSection` es una sección de configuración personalizada que puede usar cualquier host de MSBuild para la configuración personalizada. Si utiliza un conjunto de herramientas personalizado, un host no tiene que hacer nada para inicializar el motor de compilación excepto proporcionar las entradas del archivo de configuración. Definiendo las entradas del Registro, puede especificar conjuntos de herramientas para todos los equipos que se aplican a MSBuild.exe, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] y todos los hosts de MSBuild.  
 
 > [!NOTE]
->  Si un archivo de configuración define los valores de un elemento `ToolsVersion` ya definido en el Registro, las dos definiciones no se combinan. La definición del archivo de configuración tiene prioridad y los valores del Registro para ese elemento `ToolsVersion` se omiten.  
+> Si un archivo de configuración define los valores de un elemento `ToolsVersion` ya definido en el Registro, las dos definiciones no se combinan. La definición del archivo de configuración tiene prioridad y los valores del Registro para ese elemento `ToolsVersion` se omiten.  
 
  Las propiedades siguientes son específicas del valor de `ToolsVersion` que se usa en los proyectos:  
 

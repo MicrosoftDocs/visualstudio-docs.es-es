@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: edba26d951afb0ba2215af4c0a0eac09b1c31513
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: cbddf759841dbe9626868d6c00f42a0849d70520
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608502"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406810"
 ---
 # <a name="choose-a-clickonce-update-strategy"></a>Selección de una estrategia de actualización de ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] puede proporcionar actualizaciones automáticas de aplicaciones. Una aplicación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] lee periódicamente su archivo de manifiesto de implementación para ver si hay actualizaciones disponibles para la aplicación. En caso afirmativo, la nueva versión de la aplicación se descarga y se ejecuta. Para una mayor eficiencia, se descargan sólo los archivos que han cambiado.
@@ -31,10 +31,10 @@ ms.locfileid: "56608502"
  Además, puede determinar con qué frecuencia debe comprobar la aplicación si hay actualizaciones y puede hacer que las actualizaciones sean obligatorias.
 
 > [!NOTE]
->  Las actualizaciones de aplicaciones requieren conectividad de red. Si no hay conexión de red, la aplicación se ejecutará sin comprobar si hay actualizaciones, independientemente de la estrategia de actualización elegida.
+> Las actualizaciones de aplicaciones requieren conectividad de red. Si no hay conexión de red, la aplicación se ejecutará sin comprobar si hay actualizaciones, independientemente de la estrategia de actualización elegida.
 
 > [!NOTE]
->  En .NET Framework 2.0 y .NET Framework 3.0, siempre que la aplicación comprueba las actualizaciones, antes o después del inicio o mediante el uso de la \<xref:System.Deployment.Application > API, debe establecer `deploymentProvider` en el manifiesto de implementación. El elemento `deploymentProvider` corresponde, en Visual Studio, al campo **Ubicación de actualizaciones** del cuadro de diálogo **Actualizaciones** de la ficha **Publicar**. Esta regla es más flexible en .NET Framework 3.5. Para obtener más información, consulte [implementación ClickOnce aplicaciones para las pruebas y los servidores de producción sin Resigning](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md).
+> En .NET Framework 2.0 y .NET Framework 3.0, siempre que la aplicación comprueba las actualizaciones, antes o después del inicio o mediante el uso de la \<xref:System.Deployment.Application > API, debe establecer `deploymentProvider` en el manifiesto de implementación. El elemento `deploymentProvider` corresponde, en Visual Studio, al campo **Ubicación de actualizaciones** del cuadro de diálogo **Actualizaciones** de la ficha **Publicar**. Esta regla es más flexible en .NET Framework 3.5. Para obtener más información, consulte [implementación ClickOnce aplicaciones para las pruebas y los servidores de producción sin Resigning](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md).
 
 ## <a name="check-for-updates-after-application-startup"></a>Compruebe si hay actualizaciones después del inicio de la aplicación
  Con esta estrategia, la aplicación intentará buscar y leer en segundo plano el archivo de manifiesto de implementación mientras la aplicación se está ejecutando. Si hay una actualización disponible, la próxima vez que el usuario ejecute la aplicación, se le pedirá que descargue e instale la actualización.
@@ -76,7 +76,7 @@ ms.locfileid: "56608502"
  Puede haber ocasiones en las que desea obligar a los usuarios a ejecutar una versión actualizada de su aplicación. Por ejemplo, podría realizar un cambio en un recurso externo como un servicio Web que impediría que funcionara correctamente la versión anterior de su aplicación. En este caso, debería marcar su actualización como obligatoria e impedir que los usuarios ejecuten la versión anterior.
 
 > [!NOTE]
->  Aunque es posible obligar a que se efectúen las actualizaciones utilizando las otras estrategias de actualización, comprobar su existencia **Antes de que se inicie la aplicación** es la única manera de garantizar que no se pueda ejecutar una versión antigua. Si la actualización obligatoria se detecta al inicio, el usuario deberá aceptarla o cerrar la aplicación.
+> Aunque es posible obligar a que se efectúen las actualizaciones utilizando las otras estrategias de actualización, comprobar su existencia **Antes de que se inicie la aplicación** es la única manera de garantizar que no se pueda ejecutar una versión antigua. Si la actualización obligatoria se detecta al inicio, el usuario deberá aceptarla o cerrar la aplicación.
 
  Para marcar una actualización como obligatoria, haga clic en **Especifique la versión mínima requerida para esta aplicación** en el cuadro de diálogo **Actualizaciones de la aplicación** y después especifique la versión de publicación (**Principal**, **Secundaria**, **Compilación**, **Revisión**), que indica el número más bajo de versión de la aplicación que se puede instalar.
 
@@ -122,4 +122,4 @@ ms.locfileid: "56608502"
 - [Selección de una estrategia de implementación de ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md)
 - [Proteger aplicaciones ClickOnce](../deployment/securing-clickonce-applications.md)
 - [Cómo realiza ClickOnce actualizaciones de aplicaciones](../deployment/how-clickonce-performs-application-updates.md)
-- [Procedimientos para administrar actualizaciones de aplicaciones ClickOnce](../deployment/how-to-manage-updates-for-a-clickonce-application.md)
+- [Cómo: Administración de actualizaciones de aplicaciones ClickOnce](../deployment/how-to-manage-updates-for-a-clickonce-application.md)

@@ -20,12 +20,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 360384118f5c2d02801b63b8836800eca5e26d78
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6496d38e753d2338966916d1d7855abca77ace34
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102255"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438488"
 ---
 # <a name="how-to-debug-from-a-dll-project"></a>Procedimiento Depurar desde un proyecto DLL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Para iniciar la depuración de un proyecto DLL, es necesario especificar la apli
  Si se llama a un DLL administrado mediante código nativo y desea realizar la depuración en ambos elementos, puede especificarlo en las propiedades del proyecto. Para obtener más información, vea [Cómo: Depurar en modo mixto](../debugger/how-to-debug-in-mixed-mode.md).  
   
 > [!NOTE]
->  No se puede especificar una aplicación externa que realiza la llamada en las ediciones Express de Visual Studio. En su lugar, agregue un proyecto ejecutable a la solución, establézcalo como proyecto de inicio y llame a los métodos del archivo DLL desde el proyecto ejecutable.  
+> No se puede especificar una aplicación externa que realiza la llamada en las ediciones Express de Visual Studio. En su lugar, agregue un proyecto ejecutable a la solución, establézcalo como proyecto de inicio y llame a los métodos del archivo DLL desde el proyecto ejecutable.  
   
 ### <a name="to-specify-the-calling-application-in-a-c-project"></a>Para especificar la aplicación que realiza la llamada en un proyecto de C++  
   

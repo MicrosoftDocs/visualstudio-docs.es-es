@@ -13,12 +13,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5a45720c739087c2caf43314cbcbc8aea162534c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0968dd8914b99e8d47ef1364231059175aaf73fe
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064848"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437899"
 ---
 # <a name="how-to-select-the-files-to-build"></a>Procedimiento Seleccionar los archivos que se van a compilar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Cuando se compila un proyecto que contiene varios archivos, se puede enumerar ca
      `<VBFile Include="form1.vb"/>`  
   
     > [!NOTE]
-    >  Si los elementos de una colección de elementos no están en el mismo directorio que el archivo de proyecto, debe especificar la ruta de acceso completa o relativa del elemento. Por ejemplo: `Include="..\..\form2.cs"`.  
+    > Si los elementos de una colección de elementos no están en el mismo directorio que el archivo de proyecto, debe especificar la ruta de acceso completa o relativa del elemento. Por ejemplo: `Include="..\..\form2.cs"`.  
   
 #### <a name="to-declare-multiple-items"></a>Para declarar varios elementos  
   
@@ -100,9 +100,9 @@ Cuando se compila un proyecto que contiene varios archivos, se puede enumerar ca
      `<VBC Sources="@(VBFile)">...</VBC>`  
   
 > [!NOTE]
->  Se deben usar comodines con los elementos para especificar las entradas de una compilación. No se pueden especificar las entradas mediante el atributo `Sources` en tareas de [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] como [Csc](../msbuild/csc-task.md) o [Vbc](../msbuild/vbc-task.md). El ejemplo siguiente no es válido en un archivo de proyecto:  
+> Se deben usar comodines con los elementos para especificar las entradas de una compilación. No se pueden especificar las entradas mediante el atributo `Sources` en tareas de [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] como [Csc](../msbuild/csc-task.md) o [Vbc](../msbuild/vbc-task.md). El ejemplo siguiente no es válido en un archivo de proyecto:  
 >   
->  `<CSC Sources="*.cs">...</CSC>`  
+> `<CSC Sources="*.cs">...</CSC>`  
   
 ## <a name="example"></a>Ejemplo  
  En el ejemplo de código siguiente se muestra un proyecto que incluye todos los archivos de entrada de forma independiente.  

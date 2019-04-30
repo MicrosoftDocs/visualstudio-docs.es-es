@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: eef55dd0e5af443379b2685ccab9bd2de8074e0d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b7dee579f726a1edfc81e1f3e1ec62bf7d8beba4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066720"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437953"
 ---
 # <a name="gpu-usage"></a>Uso de GPU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ La herramienta Uso de GPU del concentrador de rendimiento y diagnóstico de Visu
 - Una GPU y un controlador compatibles con la instrumentación de intervalos necesaria.  
   
   > [!NOTE]
-  >  Para obtener más información sobre el hardware y los controladores compatibles, vea [Compatibilidad de hardware y controladores](#hwsupport) al final de este documento.  
+  > Para obtener más información sobre el hardware y los controladores compatibles, vea [Compatibilidad de hardware y controladores](#hwsupport) al final de este documento.  
   
   Para obtener más información sobre los requisitos de diagnóstico de gráficos, vea este tema de [introducción](../debugger/getting-started-with-visual-studio-graphics-diagnostics.md).  
   
@@ -47,7 +47,7 @@ La herramienta Uso de GPU del concentrador de rendimiento y diagnóstico de Visu
     ![Elija las herramientas de diagnóstico que quiere usar.](../debugger/media/gfx-diag-diagsession-tools.png "gfx_diag_diagsession_tools")  
   
    > [!NOTE]
-   >  No todas las herramientas de rendimiento y diagnóstico pueden usarse al mismo tiempo.  
+   > No todas las herramientas de rendimiento y diagnóstico pueden usarse al mismo tiempo.  
   
 3. Seleccione el botón **Iniciar** azul de la parte inferior del concentrador de rendimiento y diagnóstico para ejecutar la aplicación con las herramientas que ha seleccionado.  
   
@@ -110,7 +110,7 @@ La herramienta Uso de GPU del concentrador de rendimiento y diagnóstico de Visu
 |**Identificador de subproceso**|El identificador de subproceso del que procede el evento.|  
   
 > [!IMPORTANT]
->  Para la atribución de eventos se requiere Windows 8.1. Además, si la GPU o el controlador no son compatibles con las características de instrumentación necesarias, todos los eventos se definirán como "sin atributos". Si experimenta este problema, actualice el controlador de GPU e inténtelo de nuevo. Para obtener más información, vea [Compatibilidad de hardware y controladores](#hwsupport) más adelante.  
+> Para la atribución de eventos se requiere Windows 8.1. Además, si la GPU o el controlador no son compatibles con las características de instrumentación necesarias, todos los eventos se definirán como "sin atributos". Si experimenta este problema, actualice el controlador de GPU e inténtelo de nuevo. Para obtener más información, vea [Compatibilidad de hardware y controladores](#hwsupport) más adelante.  
   
 ## <a name="gpu-usage-settings"></a>Configuración de Uso de GPU  
  Si no desea comenzar a recopilar la información de generación de perfiles en cuanto se inicia la aplicación, puede configurar la herramienta Uso de GPU para posponer esta acción. La información de generación de perfiles puede alcanzar un tamaño considerable, por lo que esta posibilidad de retardo puede resultar interesante si sabe que las ralentizaciones en el rendimiento de la aplicación se producirán más tarde.  
@@ -126,7 +126,7 @@ La herramienta Uso de GPU del concentrador de rendimiento y diagnóstico de Visu
      ![Configure cuándo se inicia la recopilación de uso de GPU](../debugger/media/gfx-diag-gpu-usage-config.png "gfx_diag_gpu_usage_config")  
   
 > [!IMPORTANT]
->  La generación de perfiles no se puede posponer en las aplicaciones de Direct3D 12.  
+> La generación de perfiles no se puede posponer en las aplicaciones de Direct3D 12.  
   
  Si pospone la recopilación de la información de generación de perfiles con esta opción, cuando ejecute la aplicación con la herramienta Uso de GPU, aparecerá otro vínculo en la parte inferior de la ventana de esta herramienta. Para iniciar la recopilación de la información de generación de perfiles, haga clic en el vínculo **Iniciar** del mensaje **Inicie la recopilación de datos detallados adicionales del uso de GPU**.  
   

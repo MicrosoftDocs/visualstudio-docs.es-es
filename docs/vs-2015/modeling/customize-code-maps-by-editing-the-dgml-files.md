@@ -22,12 +22,12 @@ caps.latest.revision: 93
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 980b7e0f54c058650a393c35467a73d926ec6638
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c5976f2d701ecf051625c93ab6b70fb88ed15108
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088735"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433325"
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>Personalizar mapas de código mediante la edición de los archivos DGML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Para personalizar un mapa de código, puede editar el archivo .dgml (Directed Gr
  Edite el archivo .dgml del mapa de código en un editor XML o de texto. Si el mapa forma parte de la solución de Visual Studio, selecciónelo en **el Explorador de soluciones**, abra el menú contextual y elija **abrir con**, **Editor XML (texto)**.  
   
 > [!NOTE]
->  Para crear mapas de código, debe tener Visual Studio Enterprise. Cuando se edita el mapa de código en Visual Studio, los atributos y elementos de DGML que no se usan se eliminan al guardar el archivo .dgml. Visual Studio también crea automáticamente elementos de código cuando se agregan nuevos vínculos manualmente.  Al guardar el archivo .dgml, los atributos que agregara a un elemento se podrían reorganizar en orden alfabético.  
+> Para crear mapas de código, debe tener Visual Studio Enterprise. Cuando se edita el mapa de código en Visual Studio, los atributos y elementos de DGML que no se usan se eliminan al guardar el archivo .dgml. Visual Studio también crea automáticamente elementos de código cuando se agregan nuevos vínculos manualmente.  Al guardar el archivo .dgml, los atributos que agregara a un elemento se podrían reorganizar en orden alfabético.  
   
 ## <a name="OrganizeNodes"></a> Agrupar elementos de código  
  Puede agregar nuevos grupos o convertir los nodos existentes en un grupo.  
@@ -120,7 +120,7 @@ Para personalizar un mapa de código, puede editar el archivo .dgml (Directed Gr
 - Grupos de elementos de código y vínculos de acuerdo con ciertas condiciones  
   
 > [!TIP]
->  Si tiene estilos que se repiten en varios elementos de código o vínculos, tiene la opción de aplicar una categoría a dichos elementos de código o vínculos y, después, aplicar un estilo a esa categoría. Para obtener más información, consulte [asignar categorías a elementos de código y vínculos](#AssignCategories) y [asignar propiedades a elementos de código y vínculos](#AssignProperties).  
+> Si tiene estilos que se repiten en varios elementos de código o vínculos, tiene la opción de aplicar una categoría a dichos elementos de código o vínculos y, después, aplicar un estilo a esa categoría. Para obtener más información, consulte [asignar categorías a elementos de código y vínculos](#AssignCategories) y [asignar propiedades a elementos de código y vínculos](#AssignProperties).  
   
 ##### <a name="to-apply-a-custom-style-to-a-single-code-element"></a>Para aplicar un estilo personalizado a un único elemento de código  
   
@@ -558,7 +558,7 @@ Para personalizar un mapa de código, puede editar el archivo .dgml (Directed Gr
  Si desea vincular documentos o direcciones URL a elementos de código o vínculos, edite el archivo .dgml del mapa y agregue un atributo `Reference` al elemento `<Node/>` —para elementos de código— o el elemento `<Link/>` —para un vínculo—. Después, puede abrir y ver ese contenido del elemento de código o vínculo. El atributo `Reference` especifica la ruta de acceso del contenido. Puede tratarse de una ruta de acceso absoluta o de una ruta de acceso relativa a la ubicación del archivo .dgml.  
   
 > [!CAUTION]
->  Si usa rutas de acceso relativas y el archivo .dgml se mueve a otra ubicación, esas rutas ya no se resolverán. Al intentar abrir y ver el contenido vinculado, se producirá un error que indica que el contenido no se puede ver.  
+> Si usa rutas de acceso relativas y el archivo .dgml se mueve a otra ubicación, esas rutas ya no se resolverán. Al intentar abrir y ver el contenido vinculado, se producirá un error que indica que el contenido no se puede ver.  
   
  Por ejemplo, puede que quiera vincular estos elementos de código:  
   
@@ -583,7 +583,7 @@ Para personalizar un mapa de código, puede editar el archivo .dgml (Directed Gr
    - En el elemento `<Node/>` o `<Link/>`, agregue un atributo `Reference` para especificar la ubicación del elemento de código.  
   
      > [!NOTE]
-     >  Solo puede tener un atributo `Reference` por cada elemento.  
+     > Solo puede tener un atributo `Reference` por cada elemento.  
   
      Por ejemplo:  
   

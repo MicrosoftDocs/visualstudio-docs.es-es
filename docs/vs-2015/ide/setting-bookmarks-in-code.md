@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 35713751061e5a590a5a7bc9cc5fa03bccd56966
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: b9a5612a9d6fd04850134a51f62a02496deb1708
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54769309"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441931"
 ---
 # <a name="setting-bookmarks-in-code"></a>Establecer marcadores en el código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Puede utilizar marcadores para marcar líneas en el código de forma que pueda v
  Para agregar un marcador, coloque el cursor en la línea que desea marcar. Haga clic en el botón **Alternar** o presione CTRL+K. De esta forma, se agrega el marcador. Si hace clic en el botón Alternar (o presiona CTRL+K) de nuevo, se quita el marcador. También puede eliminar los marcadores haciendo clic en el botón **Eliminar** en la ventana Marcador.  
   
 > [!IMPORTANT]
->  El marcador se establece en el número de línea, no en el código. Si modifica el código, el marcador se mantiene en el número de línea y no se mueve con el código.  
+> El marcador se establece en el número de línea, no en el código. Si modifica el código, el marcador se mantiene en el número de línea y no se mueve con el código.  
   
  Puede navegar entre los marcadores mediante los botones **Marcador siguiente** y **Marcador anterior** de la ventana Marcador.  
   

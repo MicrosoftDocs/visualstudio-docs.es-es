@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68bb68160b78df4abe1b6874080c9a3ec91a3e31
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2549ad27f0f05d3425dd6625e9d48fdfab4db3a6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063431"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386064"
 ---
 # <a name="writing-a-t4-text-template"></a>Escribir una plantilla de texto T4
 Una plantilla de texto contiene el texto que se generará a partir de ella. Por ejemplo, una plantilla que crea una página web contendrá "\<html >..." y todas las demás partes estándar de una página HTML. Inserta en la plantilla son *bloques de control*, que son fragmentos de código de programa. Los bloques de control proporcionan valores variables y permiten que partes del texto sean condiciones y se repitan.
@@ -94,7 +94,7 @@ Hello!
  Puede insertar un bloque de texto en cualquier posición del código donde se podría incluir una instrucción `Write();`.
 
 > [!NOTE]
->  Al incrustar un bloque de texto dentro de una instrucción compuesta como un bucle o condicional, debe usar siempre corchetes {...} para contener el bloque de texto.
+> Al incrustar un bloque de texto dentro de una instrucción compuesta como un bucle o condicional, debe usar siempre corchetes {...} para contener el bloque de texto.
 
 ### <a name="expression-control-blocks"></a>Bloques de control de expresiones
  Un bloque de control de expresiones da como resulta una expresión y la convierte en una cadena. Esta cadena se inserta en el archivo de salida.

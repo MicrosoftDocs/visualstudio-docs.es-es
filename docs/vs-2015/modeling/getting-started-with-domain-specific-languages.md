@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 99fdded48ab720e7b5efbe0e4801926fe4c4c64a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4a13d0b648be87f1378ae74e6f321c1c369d7795
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60090620"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427062"
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>Introducción a los lenguajes específicos de dominio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,7 +79,7 @@ En este tema se explica los conceptos básicos de la definición y uso de un len
     Se genera una solución que contiene dos proyectos. Se denominan Dsl y DslPackage. Es decir, un archivo de diagrama abre DslDefinition.dsl con nombre.  
   
    > [!NOTE]
-   >  La mayoría del código que se puede ver en las carpetas en los dos proyectos se genera a partir de DslDefinition.dsl. Por este motivo, la mayoría de las modificaciones en su DSL se realizan en este archivo.  
+   > La mayoría del código que se puede ver en las carpetas en los dos proyectos se genera a partir de DslDefinition.dsl. Por este motivo, la mayoría de las modificaciones en su DSL se realizan en este archivo.  
   
    Ahora, la interfaz de usuario es similar a la imagen siguiente.  
   
@@ -104,7 +104,7 @@ En este tema se explica los conceptos básicos de la definición y uso de un len
 1. Haga clic en **Transformar todas las plantillas** en la barra de herramientas del explorador de soluciones. Esto vuelve a generar la mayoría del código fuente de DslDefinition.dsl.  
   
    > [!NOTE]
-   >  Cada vez que cambie DslDefinition.dsl, debe hacer clic en **Transformar todas las plantillas** antes de volver a generar la solución. Este paso se puede automatizar. Para obtener más información, consulte [cómo automatizar Transformar todas las plantillas](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
+   > Cada vez que cambie DslDefinition.dsl, debe hacer clic en **Transformar todas las plantillas** antes de volver a generar la solución. Este paso se puede automatizar. Para obtener más información, consulte [cómo automatizar Transformar todas las plantillas](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
   
 2. Presione F5, o en el **depurar** menú, haga clic en **Iniciar depuración**.  
   
@@ -171,7 +171,7 @@ En este tema se explica los conceptos básicos de la definición y uso de un len
    Puede agregar cualquier número de archivos de plantilla de texto a un proyecto. Cada plantilla genera un archivo de resultados.  
   
 > [!NOTE]
->  Al cambiar la definición de DSL, el código de plantilla de texto de ejemplo no funcionará, a menos que la actualice.  
+> Al cambiar la definición de DSL, el código de plantilla de texto de ejemplo no funcionará, a menos que la actualice.  
   
  Para obtener más información, consulte [generar código desde un lenguaje específico de dominio](../modeling/generating-code-from-a-domain-specific-language.md) y [escribir código para personalizar lenguajes específicos de dominio](../modeling/writing-code-to-customise-a-domain-specific-language.md).  
   
@@ -179,7 +179,7 @@ En este tema se explica los conceptos básicos de la definición y uso de un len
  Cuando desea modificar la definición de DSL, cierre la instancia experimental y actualizar la definición en el método main [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] instancia.  
   
 > [!NOTE]
->  Después de haber modificado la definición de DSL, podría perder la información de los modelos de prueba creados con versiones anteriores.  Por ejemplo, la solución de depuración contiene un archivo que se denomina Sample, que contiene algunas formas y conectores. Después de empezar a desarrollar su definición de DSL, no será visibles y se perderán cuando guarde el archivo.  
+> Después de haber modificado la definición de DSL, podría perder la información de los modelos de prueba creados con versiones anteriores.  Por ejemplo, la solución de depuración contiene un archivo que se denomina Sample, que contiene algunas formas y conectores. Después de empezar a desarrollar su definición de DSL, no será visibles y se perderán cuando guarde el archivo.  
   
  Puede realizar una amplia variedad de extensiones en su DSL. Los ejemplos siguientes le proporcionará una impresión de las posibilidades.  
   
@@ -285,7 +285,7 @@ En este tema se explica los conceptos básicos de la definición y uso de un len
          Establezca su nombre, por ejemplo **Town**.  
   
         > [!NOTE]
-        >  Cada clase de dominio, excepto la raíz del modelo debe ser el destino de al menos una relación de incrustación, o debe heredar de una clase que es el destino de una inserción. Por este motivo, es conveniente crear una clase de dominio mediante la herramienta de relación de incrustación con frecuencia.  
+        > Cada clase de dominio, excepto la raíz del modelo debe ser el destino de al menos una relación de incrustación, o debe heredar de una clase que es el destino de una inserción. Por este motivo, es conveniente crear una clase de dominio mediante la herramienta de relación de incrustación con frecuencia.  
   
     2. Agregar una propiedad de dominio a la nueva clase, por ejemplo **nombre**.  
   
@@ -296,7 +296,7 @@ En este tema se explica los conceptos básicos de la definición y uso de un len
          ![Fragmento de definición de DSL: raíz del árbol genealógico](../modeling/media/familyt-root.png "FamilyT_Root")  
   
         > [!NOTE]
-        >  Relaciones de referencia representan las referencias cruzadas de una parte del árbol del modelo a otro.  
+        > Relaciones de referencia representan las referencias cruzadas de una parte del árbol del modelo a otro.  
   
 3. Agregar una forma para representar ciudades en los diagramas de modelo.  
   

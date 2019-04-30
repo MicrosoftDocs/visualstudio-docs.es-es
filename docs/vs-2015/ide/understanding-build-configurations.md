@@ -26,12 +26,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 87e0280534eaf97fefebe54712b0f0b12e14bdac
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 684bf375568b83333ac5e4c9f88eeae00449cd42
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077282"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443261"
 ---
 # <a name="understanding-build-configurations"></a>Descripción de las configuraciones de compilación
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "60077282"
 Se pueden almacenar diferentes configuraciones de propiedades de solución y de proyecto para utilizar en distintos tipos de compilaciones. Para crear, seleccionar, modificar o eliminar una configuración, se puede usar el **Administrador de configuración**. Para abrirlo, en la barra de menús, seleccione **Compilación**, **Administrador de configuración**, o simplemente escriba **Configuración** en el cuadro **Inicio rápido**. También se puede usar la lista **Configuraciones de soluciones** de la barra de herramientas **Estándar** para seleccionar una configuración o abrir el **Administrador de configuración**.  
   
 > [!NOTE]
->  Si no se pueden encontrar los valores de configuración de soluciones en la barra de herramientas y no se puede tener acceso al **Administrador de configuración**, se puede aplicar la configuración de desarrollo de [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]. Para obtener más información, vea [Cómo: Administrar configuraciones de opciones del desarrollador de Visual Basic aplica](../ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md).  
+> Si no se pueden encontrar los valores de configuración de soluciones en la barra de herramientas y no se puede tener acceso al **Administrador de configuración**, se puede aplicar la configuración de desarrollo de [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]. Para obtener más información, vea [Cómo: Administrar configuraciones de opciones del desarrollador de Visual Basic aplica](../ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md).  
   
  De forma predeterminada, las configuraciones Debug y Release se incluyen en los proyectos creados mediante plantillas de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Una configuración Debug admite la depuración de una aplicación y una configuración Release compila una versión de la aplicación que se puede implementar. Para obtener más información, vea [Cómo: Establecimiento de configuraciones Debug y Release](../debugger/how-to-set-debug-and-release-configurations.md). También se pueden crear configuraciones de soluciones personalizadas y configuraciones de proyecto. Para obtener más información, vea [Cómo: Crear y editar configuraciones](../ide/how-to-create-and-edit-configurations.md).  
   
@@ -49,9 +49,9 @@ Se pueden almacenar diferentes configuraciones de propiedades de solución y de 
  Cada entrada del cuadro **Contextos del proyecto** de una configuración de soluciones representa un proyecto de la solución. Para cada combinación de **Configuración de soluciones activas** y de **Plataforma de soluciones activas**, se puede establecer cómo se usa cada proyecto. (Para más información sobre las plataformas de soluciones, vea [Descripción de las plataformas de compilación](../ide/understanding-build-platforms.md)).  
   
 > [!NOTE]
->  Cuando se define una nueva configuración de solución y se activa la casilla **Crear nuevas configuraciones de proyecto**, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] asigna automáticamente la nueva configuración a todos los proyectos. Del mismo modo, cuando se define una nueva plataforma de solución y se activa la casilla **Crear nuevas plataformas de proyecto**, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] asigna automáticamente la nueva plataforma a todos los proyectos. Además, si se agrega un proyecto destinado a una nueva plataforma, Visual Studio agrega esa plataforma a la lista de plataformas de la solución y la asigna a todos los proyectos.  
+> Cuando se define una nueva configuración de solución y se activa la casilla **Crear nuevas configuraciones de proyecto**, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] asigna automáticamente la nueva configuración a todos los proyectos. Del mismo modo, cuando se define una nueva plataforma de solución y se activa la casilla **Crear nuevas plataformas de proyecto**, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] asigna automáticamente la nueva plataforma a todos los proyectos. Además, si se agrega un proyecto destinado a una nueva plataforma, Visual Studio agrega esa plataforma a la lista de plataformas de la solución y la asigna a todos los proyectos.  
 >   
->  Todavía se puede modificar los valores de cada proyecto.  
+> Todavía se puede modificar los valores de cada proyecto.  
   
  La configuración de soluciones activas también proporciona contexto al IDE. Por ejemplo, si se está trabajando en un proyecto y la configuración especifica que se va a compilar para un dispositivo móvil, en el **Cuadro de herramientas** solo se muestran los elementos que se pueden usar en un proyecto de dispositivo móvil.  
   

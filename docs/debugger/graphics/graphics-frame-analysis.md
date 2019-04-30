@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c138bcdb14b1f645a68407fac320f2688250c55b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 6df598717685d3f198b61e4a750c3133e50f5a2d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56682458"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388724"
 ---
 # <a name="graphics-frame-analysis"></a>Análisis de fotograma de gráficos
 Use el Análisis de fotogramas de gráficos en el Analizador de gráficos de Visual Studio para analizar y optimizar el rendimiento de la representación de su juego o aplicación Direct3D.
@@ -111,7 +111,7 @@ Use el Análisis de fotogramas de gráficos en el Analizador de gráficos de Vis
  La información de contador de hardware ofrece una vista muy detallada del comportamiento específico de la plataforma de hardware para cada llamada a draw, que le puede ayudar a identificar la causa de los cuellos de botella en el rendimiento de manera muy precisa.
 
 > [!NOTE]
->  Cada plataforma de hardware admite contadores diferentes, no hay ninguno que sea estándar. Únicamente el fabricante de la GPU determina los contadores y lo que representan.
+> Cada plataforma de hardware admite contadores diferentes, no hay ninguno que sea estándar. Únicamente el fabricante de la GPU determina los contadores y lo que representan.
 
 ### <a name="marker-regions-and-events"></a>Regiones de marcadores y eventos
  El Análisis de fotogramas admite marcadores y grupos de eventos definidos por el usuario. Se muestran en la tabla de resumen y en las tablas de detalles.
@@ -132,13 +132,13 @@ Use el Análisis de fotogramas de gráficos en el Analizador de gráficos de Vis
 
  El Análisis de fotogramas limita el número de reintentos a 10. Si su plataforma tiene una gestión de la energía o un canalizador del reloj agresivos, es posible que el Análisis de fotogramas no se ejecute correctamente e informe de un error porque haya superado el límite de reintentos. Tal vez pueda mitigar el problema restaurando la limitación de la velocidad del reloj y la administración de energía de la plataforma de modo que sean menos agresivas, si la plataforma lo permite.
 
-##  <a name="HardwareSupport"></a> Compatibilidad de hardware
+## <a name="HardwareSupport"></a> Compatibilidad de hardware
 
 ### <a name="timestamps-and-occlusion-queries"></a>Marcas de tiempo y consultas de oclusión
  Las marcas de tiempo se admiten en todas las plataformas que admiten el Análisis de fotogramas. Las consultas de oclusión de profundidad, necesarias para el contador de píxeles ocluidos, se admiten en las plataformas que admiten el nivel de características 9.2 o superiores.
 
 > [!NOTE]
->  Aunque las marcas de tiempo se admiten en todas las plataformas que admiten el análisis de fotogramas, la precisión y la coherencia de las marcas de tiempo varía de una plataforma a otra.
+> Aunque las marcas de tiempo se admiten en todas las plataformas que admiten el análisis de fotogramas, la precisión y la coherencia de las marcas de tiempo varía de una plataforma a otra.
 
 ### <a name="gpu-counters"></a>Contadores de GPU
  La compatibilidad de los contadores de hardware de GPU depende del hardware.
@@ -150,7 +150,7 @@ Use el Análisis de fotogramas de gráficos en el Analizador de gráficos de Vis
   Ninguna otra plataforma que admita el Análisis de fotogramas recopila contadores de hardware de GPU.
 
 > [!NOTE]
->  Dado que los contadores de hardware de GPU son recursos de hardware, puede que la recopilación del conjunto completo de contadores de hardware de cada variante de representación requiera varios pases. Por esto, no se especifica el orden en el que se recopilan los contadores de la GPU.
+> Dado que los contadores de hardware de GPU son recursos de hardware, puede que la recopilación del conjunto completo de contadores de hardware de cada variante de representación requiera varios pases. Por esto, no se especifica el orden en el que se recopilan los contadores de la GPU.
 
 ## <a name="unsupported-scenarios"></a>Escenarios no admitidos
  Algunas maneras de usar el análisis de fotogramas no se admiten o simplemente son una mala idea.
@@ -159,18 +159,18 @@ Use el Análisis de fotogramas de gráficos en el Analizador de gráficos de Vis
  En el Analizador de gráficos, cuando reproduce un archivo de registro de gráficos que usa un nivel superior al que admite la máquina de reproducción, recurre a WARP automáticamente. En el Análisis de fotogramas no se recurre a WARP explícitamente y se genera un error. WARP es útil para examinar la corrección de la aplicación Direct3D, pero no para examinar su rendimiento.
 
 > [!NOTE]
->  Aunque sea importante tener en cuenta los problemas de nivel de características, puede capturar y reproducir archivos de registro de gráficos en diferentes configuraciones y dispositivos de hardware. El registro de gráficos puede reproducirse siempre que el archivo de registro no contenga ninguna API o usar niveles de características que no se admiten en la máquina de reproducción.
+> Aunque sea importante tener en cuenta los problemas de nivel de características, puede capturar y reproducir archivos de registro de gráficos en diferentes configuraciones y dispositivos de hardware. El registro de gráficos puede reproducirse siempre que el archivo de registro no contenga ninguna API o usar niveles de características que no se admiten en la máquina de reproducción.
 
 ### <a name="direct3d-10-and-lower"></a>Direct3D 10 e inferiores
  Si su aplicación llama a la API Direct3D 10, el Análisis de fotogramas no la reconocerá ni la incluirá en el perfil, aunque otras herramientas del Analizador de gráficos la reconozcan y la usen.
 
 > [!NOTE]
->  Esto se aplica solo a las llamadas de la API Direct3D que utilice, no a los niveles de características.
+> Esto se aplica solo a las llamadas de la API Direct3D que utilice, no a los niveles de características.
 
 ### <a name="warp"></a>WARP
  El Análisis de fotogramas está diseñado para perfilar y mejorar el rendimiento de la representación en hardware real. Ejecutar análisis de fotogramas en dispositivos WARP no se puede evitar, pero no es normalmente la pena dado si WARP se ejecuta en una CPU es más lento que incluso la menos GPU modernas y que el rendimiento de WARP puede variar enormemente según la CPU se ejecuta en.
 
-##  <a name="Variants"></a> Variantes
+## <a name="Variants"></a> Variantes
  Cada cambio que el Análisis de fotogramas realiza en la manera en que se representa un fotograma durante la reproducción se conoce como *variante*. Las variantes que el Análisis de fotogramas examina corresponden a cambios comunes relativamente fáciles que puede realizar para mejorar el rendimiento de la representación o la calidad visual de la aplicación, por ejemplo, reducir el tamaño de las texturas, usar compresión de textura o permitir diferentes tipos de suavizado de contorno. Las variantes reemplazan el contexto de representación y los parámetros habituales de la aplicación. A continuación, se muestra un resumen:
 
 |Variante|Descripción|
@@ -189,4 +189,4 @@ Use el Análisis de fotogramas de gráficos en el Analizador de gráficos de Vis
 |**Dimensiones de textura un cuarto**|Reduce las dimensiones de la textura en todas las texturas que no son objetivos de representación a un cuarto del tamaño original de cada dimensión. Por ejemplo, una textura de 256x128 se reduce a 64x32 elementos de textura.<br /><br /> Para obtener más información, vea [Half/Quarter Texture Dimensions Variant](half-quarter-texture-dimensions-variant.md) (Variante de dimensiones de textura media o un cuarto).|
 |**Compresión de textura BC**|Habilita la compresión de bloque en todas las texturas que tengan una variante de formato de píxel de B8G8R8X8, B8G8R8A8 o R8G8B8A8. Las variantes de formato B8G8R8X8 se comprimen mediante BC1; las variantes de formato B8G8R8A8 y R8G8B8A8 se comprimen mediante BC3.<br /><br /> Para obtener más información, vea [BC Texture Compression Variant](bc-texture-compression-variant.md) (Variante de compresión de textura BC).|
 
- El resultado de la mayoría de las variantes es prescriptivo: “reducir el tamaño de la textura a la mitad es un 25 por ciento más rápido” o “habilitar dos veces la MSAA es solo un 2 por ciento más lento”. Otras variantes pueden requerir más interpretación, por ejemplo, si la variante que cambia las dimensiones de la ventanilla a 1x1 muestra un gran aumento del rendimiento, puede indicar que la representación tiene un cuello de botella por una tasa de relleno de texturas baja; si no hay un cambio importante en el rendimiento, puede indicar que la representación tiene un cuello de botella por un procesamiento de vértice.
+ El resultado de la mayoría de las variantes es descriptivo: "reducir el tamaño de la textura a la mitad es un 25 por ciento más rápido" o "habilitar dos veces el MSAA es solo un 2 por ciento más lento". Otras variantes pueden requerir más interpretación, por ejemplo, si la variante que cambia las dimensiones de la ventanilla a 1x1 muestra un gran aumento del rendimiento, puede indicar que la representación tiene un cuello de botella por una tasa de relleno de texturas baja; si no hay un cambio importante en el rendimiento, puede indicar que la representación tiene un cuello de botella por un procesamiento de vértice.

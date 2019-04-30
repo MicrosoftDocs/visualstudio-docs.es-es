@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dbae3a1e003c0d9381b80fc24227e65a18c1c8f1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1ca692e85396b11647c507b18c95ca095b3f8072
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096561"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438755"
 ---
 # <a name="visio-object-model-overview"></a>Información general sobre el modelo de objetos de Visio
   Para desarrollar soluciones de Office para Microsoft Office Visio, puede interactuar con el modelo de objetos de Visio. Este modelo de objetos está compuesto por clases e interfaces que se proporcionan en el ensamblado de interoperabilidad primario de Visio y que se definen en el espacio de nombres `Microsoft.Office.Interop.Visio`.
@@ -67,7 +67,7 @@ ms.locfileid: "60096561"
  Todos los objetos y miembros de la referencia del modelo de objetos de VBA corresponden a tipos y miembros del ensamblado de interoperabilidad primario (PIA) de Visio. Por ejemplo, la `Document` objeto en la referencia del modelo de objetos VBA corresponde al tipo Microsoft.Office.Interop.Visio.Document en los PIA de Visio. Aunque la referencia del modelo de objetos VBA proporciona ejemplos de código para la mayoría de las propiedades, métodos y eventos, debe traducir el código VBA de esta referencia a Visual Basic o Visual C# si quiere usarlo en un proyecto de complemento de VSTO de Visio creado con Visual Studio.
 
 > [!NOTE]
->  En este momento, no hay ninguna documentación de referencia para el ensamblado de interoperabilidad primario de Visio.
+> En este momento, no hay ninguna documentación de referencia para el ensamblado de interoperabilidad primario de Visio.
 
  Para obtener ejemplos de código relacionados y herramientas adicionales para crear soluciones de Visio, vea [kit de desarrollo de software de Visio 2010](http://go.microsoft.com/fwlink/?LinkId=196501).
 

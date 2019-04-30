@@ -33,12 +33,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2d14077ff7547a1b8009ce6621c111174c582a5c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 55ef0a3528afca626c0a1cbf5c10735c9e83fcb4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095040"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443863"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Servicios de Windows Communication Foundation y servicios de datos WCF en Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -137,14 +137,14 @@ Visual Studio proporciona herramientas para trabajar con Windows Communication F
     ```
 
     > [!NOTE]
-    >  Reemplace *ServiceReference* con el espacio de nombres para la referencia de servicio y reemplace *Service1Client* con el nombre del servicio.
+    > Reemplace *ServiceReference* con el espacio de nombres para la referencia de servicio y reemplace *Service1Client* con el nombre del servicio.
 
 3. Se mostrará una lista de IntelliSense con las sobrecargas del constructor. Seleccione el `endpointConfigurationName As String` sobrecargar.
 
 4. Después de la sobrecarga, escriba `=` *ConfigurationName*, donde *ConfigurationName* es el nombre del punto de conexión que desea usar.
 
     > [!NOTE]
-    >  Si no conoce los nombres de los puntos de conexión disponibles, puede encontrarlos en el archivo app.config.
+    > Si no conoce los nombres de los puntos de conexión disponibles, puede encontrarlos en el archivo app.config.
 
 #### <a name="to-find-the-available-endpoints-for-a-wcf-service"></a>Para buscar los extremos disponibles para un servicio WCF
 
@@ -164,7 +164,7 @@ Visual Studio proporciona herramientas para trabajar con Windows Communication F
  De forma predeterminada, cuando se agrega una referencia de servicio a un proyecto está configurado para llamar a métodos de forma sincrónica. Puede cambiar el comportamiento para llamar a métodos de forma asincrónica cambiando un valor en el **configurar referencia de servicio** cuadro de diálogo.
 
 > [!NOTE]
->  Esta opción se establece en una base por servicio. Si se llama a un método para un servicio de forma asincrónica, deben llamarse todos los métodos de forma asincrónica.
+> Esta opción se establece en una base por servicio. Si se llama a un método para un servicio de forma asincrónica, deben llamarse todos los métodos de forma asincrónica.
 
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]
 

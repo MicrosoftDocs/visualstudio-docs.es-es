@@ -17,18 +17,18 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 601f20c530ec5e275139d1e70d3df58fa88cd715
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 95489464128e706e755432bee991c5481f5af8bc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58147636"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425828"
 ---
 # <a name="iapplicationdebuggercreateinstanceatdebugger"></a>IApplicationDebugger::CreateInstanceAtDebugger
 Permite la creación de objetos en el proceso del depurador al código que es fuera de proceso al depurador.  
   
 > [!IMPORTANT]
->  No se debe implementar este método, porque permite código no seguro crear objetos arbitrarios en un subproceso del depurador de confianza.  
+> No se debe implementar este método, porque permite código no seguro crear objetos arbitrarios en un subproceso del depurador de confianza.  
   
 ## <a name="syntax"></a>Sintaxis  
   

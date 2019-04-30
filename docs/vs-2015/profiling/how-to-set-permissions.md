@@ -15,12 +15,12 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d44ae7d3eb4c01434e2a8b6f2cf7c0391c749ad7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 03991f3d5900377ceca5464bf41cfb90fcae650e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114579"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440592"
 ---
 # <a name="how-to-set-permissions"></a>Procedimiento Establecer permisos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Este tema describe cómo un administrador de un equipo concede los permisos de s
   Los miembros del grupo Usuarios pueden ejecutar las herramientas de generación de perfiles si un administrador les concede acceso al controlador de software para las herramientas de generación de perfiles. En el último procedimiento, "Para conceder acceso al controlador de generación de perfiles", se describe cómo conceder acceso a ese controlador.  
   
 > [!NOTE]
->  Necesita permisos de administrador para seguir los pasos de estos procedimientos.  
+> Necesita permisos de administrador para seguir los pasos de estos procedimientos.  
   
 ### <a name="to-create-a-user-account-that-has-user-permissions"></a>Para crear una cuenta de usuario que tenga permisos de usuario  
   

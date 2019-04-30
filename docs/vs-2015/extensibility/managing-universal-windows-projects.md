@@ -8,12 +8,12 @@ ms.assetid: 47926aa1-3b41-410d-bca8-f77fc950cbe7
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8de4960548b363c99b9625553c47b2cbad2df2de
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d5e45c91e9dadb0f457e3a2ecfa2e5484fbe0e78
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063691"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412333"
 ---
 # <a name="managing-universal-windows-projects"></a>Administración de proyectos de Windows universal
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -235,7 +235,7 @@ Aplicaciones universales de Windows son aplicaciones que tienen como destino Win
     ```  
   
     > [!IMPORTANT]
-    >  Si el usuario ha abierto un proyecto de aplicación de C++ universal Windows en la instancia experimental, el código anterior produce una excepción. Se trata de un problema conocido. Para evitar la excepción, reemplace el `foreach` bloquear arriba con lo siguiente:  
+    > Si el usuario ha abierto un proyecto de aplicación de C++ universal Windows en la instancia experimental, el código anterior produce una excepción. Se trata de un problema conocido. Para evitar la excepción, reemplace el `foreach` bloquear arriba con lo siguiente:  
   
     ```csharp  
     var importingProjects = sharedAssetsProject.EnumImportingProjects();  
@@ -525,7 +525,7 @@ Aplicaciones universales de Windows son aplicaciones que tienen como destino Win
 9. Modifique el elemento compartido. No se puede modificar los elementos compartidos en un proyecto de plataforma; en su lugar, debe modificar en el proyecto compartido que sea el propietario real de estos elementos. Puede obtener el identificador del elemento correspondiente en el proyecto compartido con <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject.IsDocumentInProject%2A>, dándole la ruta de acceso completa del elemento compartido. A continuación, puede modificar el elemento compartido. El cambio se propaga a los proyectos de plataforma.  
   
     > [!IMPORTANT]
-    >  Debe averiguar si un elemento de proyecto es un elemento compartido antes de modificarlo.  
+    > Debe averiguar si un elemento de proyecto es un elemento compartido antes de modificarlo.  
   
      El método siguiente modifica el nombre de un archivo de elemento de proyecto.  
   

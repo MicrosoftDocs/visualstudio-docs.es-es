@@ -8,12 +8,12 @@ ms.assetid: 4f4b5f10-7314-4725-8c6e-e72f52eff918
 caps.latest.revision: 16
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 02c819ee0311066fb2a4e543213faaedfee5a2ad
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d532234e50177222c3165638c0d77a8bd7c1b142
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109418"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437972"
 ---
 # <a name="writing-unit-tests-for-cc-with-the-microsoft-unit-testing-framework-for-c"></a>Escribir pruebas unitarias para C/C++ con el Framework de pruebas unitarias de Microsoft para C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -247,7 +247,7 @@ En Visual Studio puede crear pruebas unitarias para código no administrado escr
     ```  
   
     > [!TIP]
-    >  Se recomienda no cambiar las pruebas superadas. En vez de ello, agregue una nueva prueba, actualice el código para que la prueba se supere, después agregue otra prueba y así sucesivamente.  
+    > Se recomienda no cambiar las pruebas superadas. En vez de ello, agregue una nueva prueba, actualice el código para que la prueba se supere, después agregue otra prueba y así sucesivamente.  
     >   
     >  Cuando los usuarios cambien los requisitos, deshabilite las pruebas que ya no son correctas. Escriba nuevas pruebas y hágalas funcionar una a una de la misma manera incremental.  
   
@@ -258,7 +258,7 @@ En Visual Studio puede crear pruebas unitarias para código no administrado escr
      ![Se produce un error en RangeTest](../test/media/ute-cpp-testexplorer-rangetest-fail.png "UTE_Cpp_TestExplorer_RangeTest_Fail")  
   
     > [!TIP]
-    >  Compruebe que todas las pruebas producen un error inmediatamente después de escribirlas. Esto ayuda a evitar el error habitual de escribir una prueba que nunca falla.  
+    > Compruebe que todas las pruebas producen un error inmediatamente después de escribirlas. Esto ayuda a evitar el error habitual de escribir una prueba que nunca falla.  
   
 3. Mejore el código en pruebas de forma que supere la nueva prueba:  
   
@@ -286,7 +286,7 @@ En Visual Studio puede crear pruebas unitarias para código no administrado escr
      ![Explorador de pruebas unitarias: prueba de intervalo superada](../test/media/utecpp12.png "UteCpp12")  
   
     > [!TIP]
-    >  Desarrolle código agregando pruebas una a una. Asegúrese de que se pasan todas las pruebas después de cada iteración.  
+    > Desarrolle código agregando pruebas una a una. Asegúrese de que se pasan todas las pruebas después de cada iteración.  
   
 ### <a name="debug"></a> Depurar una prueba fallida  
   
@@ -361,7 +361,7 @@ En Visual Studio puede crear pruebas unitarias para código no administrado escr
      ![Todas las pruebas pasan](../test/media/ute-ult-alltestspass.png "UTE_ULT_AllTestsPass")  
   
 > [!TIP]
->  Si las pruebas individuales no tienen ninguna dependencia que impida que se ejecuten en cualquier orden, active la ejecución de pruebas paralelas con el botón de alternancia ![UTE&#95;parallelicon&#45;small](../test/media/ute-parallelicon-small.png "UTE_parallelicon-small") en la barra de herramientas. Esto puede reducir considerablemente el tiempo necesario para ejecutar todas las pruebas.  
+> Si las pruebas individuales no tienen ninguna dependencia que impida que se ejecuten en cualquier orden, active la ejecución de pruebas paralelas con el botón de alternancia ![UTE&#95;parallelicon&#45;small](../test/media/ute-parallelicon-small.png "UTE_parallelicon-small") en la barra de herramientas. Esto puede reducir considerablemente el tiempo necesario para ejecutar todas las pruebas.  
   
 ### <a name="refactor"></a> Refactorizar el código sin cambiar las pruebas  
   
@@ -378,7 +378,7 @@ En Visual Studio puede crear pruebas unitarias para código no administrado escr
 2. Compile la solución y elija **Ejecutar todo**para asegurarse de que no se ha introducido un error.  
   
     > [!TIP]
-    >  Un buen conjunto de pruebas unitarias le da la seguridad de que no ha introducido errores al cambiar el código.  
+    > Un buen conjunto de pruebas unitarias le da la seguridad de que no ha introducido errores al cambiar el código.  
     >   
     >  Mantenga la refactorización separada de los demás cambios.  
   

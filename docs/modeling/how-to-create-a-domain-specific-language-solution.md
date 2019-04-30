@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b1799ac2e7124f79d10dcc8860a994e2f182ea7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0ac8a47aeca8875dabe3fdf388e9a73d68ec514e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051354"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445208"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Procedimiento Crear una solución de lenguajes específicos de dominio
 Un lenguaje específico de dominio (DSL) se crea mediante el uso de una solución de Visual Studio especializada.
@@ -63,7 +63,7 @@ Puede iniciar este procedimiento, antes de instalar estos componentes:
     El asistente crea una solución que tiene dos proyectos, que se denominan **Dsl** y **DslPackage**.
 
    > [!NOTE]
-   >  Si ve un mensaje que no le avisa para ejecutar las plantillas de texto de fuentes no confiables, haga clic en **Aceptar**. Puede establecer este mensaje no se mostrarán de nuevo.
+   > Si ve un mensaje que no le avisa para ejecutar las plantillas de texto de fuentes no confiables, haga clic en **Aceptar**. Puede establecer este mensaje no se mostrarán de nuevo.
 
 ## <a name="settings"></a> Las páginas del Asistente para el Diseñador de DSL
  Puede dejar algunos de los campos que no ha cambiado desde sus valores predeterminados. Sin embargo, asegúrese de establecer el campo de extensión de archivo.

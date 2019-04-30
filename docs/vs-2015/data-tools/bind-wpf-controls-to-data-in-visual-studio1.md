@@ -22,12 +22,12 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3546da7508767c6766b2caa0c96e6238f4cc6e90
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 16a3868f564f39d4908adf74a6b1a44ae83ebc9d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039023"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437058"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Enlace de controles de WPF a datos en Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -98,7 +98,7 @@ Para mostrar los datos a los usuarios de la aplicación, puede enlazarlos a cont
  Cuando se arrastra un objeto o propiedad desde la **orígenes de datos** ventana hasta el diseñador, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] genera [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] que crea un control enlazado a datos (o enlaza un control existente al objeto o propiedad). Sin embargo, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] no genera el código que llena de datos el objeto. Este código se debe escribir expresamente.
 
 > [!NOTE]
->  Clases personalizadas deben ser públicos y, de forma predeterminada, tiene un constructor sin parámetros. No pueden ser clases anidadas que contengan un "punto" en su sintaxis. Para obtener más información, consulte [XAML y clases personalizadas para WPF](http://msdn.microsoft.com/library/e7313137-581e-4a64-8453-d44e15a6164a).
+> Clases personalizadas deben ser públicos y, de forma predeterminada, tiene un constructor sin parámetros. No pueden ser clases anidadas que contengan un "punto" en su sintaxis. Para obtener más información, consulte [XAML y clases personalizadas para WPF](http://msdn.microsoft.com/library/e7313137-581e-4a64-8453-d44e15a6164a).
 
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] genera [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] que hace lo siguiente:
 

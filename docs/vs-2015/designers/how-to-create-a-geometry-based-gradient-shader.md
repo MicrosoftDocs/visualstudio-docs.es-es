@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8735931e761f7d511615b5be7e93e0198a6b1a45
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: eda8424aeb28231df0ae0355931989bec13a89b7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071725"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436179"
 ---
 # <a name="how-to-create-a-geometry-based-gradient-shader"></a>Procedimiento Crear un sombreador de gradiente basado en geometría
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ En este documento se muestra cómo usar el Diseñador de sombras y el lenguaje D
    La ilustración siguiente muestra el gráfico de sombreador completo y una vista previa del sombreador aplicado a una esfera.  
   
 > [!NOTE]
->  En esta ilustración, se especificó un color naranja para mostrar mejor el efecto del sombreador pero como la forma de vista previa no tiene ninguna posición en el espacio global, no se puede ver una vista previa completa del sombreador en el Diseñador de sombras. El sombreador se debe previsualizar en una escena real para demostrar el efecto completo.  
+> En esta ilustración, se especificó un color naranja para mostrar mejor el efecto del sombreador pero como la forma de vista previa no tiene ninguna posición en el espacio global, no se puede ver una vista previa completa del sombreador en el Diseñador de sombras. El sombreador se debe previsualizar en una escena real para demostrar el efecto completo.  
   
  ![Gráfico de sombreador y vista previa de su efecto](../designers/media/digit-gradient-effect-graph.png "Digit-Gradient-Effect-Graph")  
   

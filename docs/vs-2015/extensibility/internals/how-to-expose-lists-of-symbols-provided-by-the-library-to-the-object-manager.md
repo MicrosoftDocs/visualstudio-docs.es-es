@@ -14,12 +14,12 @@ ms.assetid: 19757068-bdaa-4e7e-85d6-f8ce5026a859
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: ca01f28b7f0ad7c1e4bad5ee13e6e21a5f2f7e2f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 888ffbf255816fb04d84cb72219df2cfeae73f45
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106779"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431653"
 ---
 # <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>Procedimiento Exponer listas de símbolos proporcionadas por la biblioteca al Administrador de objetos
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,9 +29,9 @@ Las herramientas de exploración de símbolos, **vista de clases**, **Examinador
  Una biblioteca puede obtener las solicitudes de datos cuando se invoca la herramienta, el nodo está expandido, o se actualice la vista. Cuando se invoca una herramienta de exploración de símbolos por primera vez, el Administrador de objetos solicita la biblioteca para proporcionar la lista de nivel superior. Cuando el usuario expande un nodo de lista, la biblioteca proporciona una lista de elementos secundarios bajo ese nodo. Cada consulta de objeto manager contiene el índice del elemento de interés. Para mostrar una lista nueva, el Administrador de objetos debe determinar cuántos elementos están en la lista, el tipo de los elementos, sus nombres, accesibilidad y otras propiedades.  
   
 > [!NOTE]
->  Los ejemplos de código administrado siguientes muestran cómo proporcionar listas de símbolos en la implementación el <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> interfaz. El Administrador de objetos llama a los métodos en esta interfaz y usa los datos obtenidos para rellenar o actualizar las herramientas de exploración de símbolos.  
+> Los ejemplos de código administrado siguientes muestran cómo proporcionar listas de símbolos en la implementación el <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> interfaz. El Administrador de objetos llama a los métodos en esta interfaz y usa los datos obtenidos para rellenar o actualizar las herramientas de exploración de símbolos.  
 >   
->  Para la implementación del proveedor de símbolos de código nativo, use el <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2> interfaz.  
+> Para la implementación del proveedor de símbolos de código nativo, use el <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2> interfaz.  
   
 ## <a name="providing-lists-of-symbols-to-the-object-manager"></a>Proporcionar listas de símbolos para el Administrador de objetos  
   

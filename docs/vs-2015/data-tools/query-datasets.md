@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c392323905676706835a94bd86fcd53e3f6b8cc7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 69ca24f45384ef650c4a692a8ec0afc079f19bac
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054786"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425372"
 ---
 # <a name="query-datasets"></a>Consultar conjuntos de datos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Para buscar registros específicos de un conjunto de datos, utilice el método F
  Dentro de un conjunto de datos, los nombres de columna y tabla distinguen mayúsculas de minúsculas de forma predeterminada, es decir, una tabla en un conjunto de datos denominado "Customers" también se puede hacer referencia a como "customers". Esto coincide con las convenciones de nomenclatura en muchas bases de datos, incluidos SQL del servidor de SQL Server, el comportamiento predeterminado es que los nombres de elementos de datos no pueden distinguirse sólo por caso.  
   
 > [!NOTE]
->  A diferencia de conjuntos de datos, documentos XML distinguen mayúsculas de minúsculas, por lo que los nombres de elementos de datos definidos en esquemas distinguen mayúsculas de minúsculas. Por ejemplo, el protocolo de esquema permite el esquema definir una tabla denominada "Clientes" y otra tabla denominada a "customers". Esto puede producir conflictos de nombres cuando se usa un esquema que contiene elementos que difieran solo por caso para generar una clase de conjunto de datos.  
+> A diferencia de conjuntos de datos, documentos XML distinguen mayúsculas de minúsculas, por lo que los nombres de elementos de datos definidos en esquemas distinguen mayúsculas de minúsculas. Por ejemplo, el protocolo de esquema permite el esquema definir una tabla denominada "Clientes" y otra tabla denominada a "customers". Esto puede producir conflictos de nombres cuando se usa un esquema que contiene elementos que difieran solo por caso para generar una clase de conjunto de datos.  
   
  Mayúsculas y minúsculas, sin embargo, pueden ser un factor en cómo interpretar los datos del conjunto de datos. Por ejemplo, si filtra los datos en una tabla de conjunto de datos, los criterios de búsqueda podrían devolver resultados diferentes dependiendo de si la comparación distingue entre mayúsculas y minúsculas. Puede controlar las mayúsculas y minúsculas de filtrado, búsqueda y ordenación mediante el establecimiento del conjunto de datos <xref:System.Data.DataSet.CaseSensitive%2A> propiedad. Todas las tablas del conjunto de datos heredan el valor de esta propiedad de forma predeterminada. (Puede invalidar esta propiedad para cada tabla individual mediante el establecimiento de la tabla <xref:System.Data.DataTable.CaseSensitive%2A> propiedad.)  
   

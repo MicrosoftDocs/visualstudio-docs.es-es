@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5c49de0af6cbb02c441489cbfa7b1d8a7b3881df
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 54d2b83fab24aa3c9deabc979782d9b82ea5c482
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061481"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442484"
 ---
 # <a name="step-7-add-dialog-components-to-your-form"></a>Paso 7: adición de componentes de cuadro de diálogo al formulario
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Para que el programa abra archivos de imagen y para elegir un color de fondo, en
 1. Elija el Diseñador de Windows Forms (Form1.cs [Diseño] o Form1.vb [Diseño]) y después abra el grupo **Cuadros de diálogo** del cuadro de herramientas.  
   
     > [!NOTE]
-    >  El grupo **Cuadros de diálogo** del Cuadro de herramientas tiene componentes que abren automáticamente muchos cuadros de diálogo de gran utilidad y que se pueden usar para abrir y guardar archivos, examinar carpetas y elegir fuentes o colores. Use dos componentes de cuadro de diálogo en este proyecto: **OpenFileDialog** y **ColorDialog**.  
+    > El grupo **Cuadros de diálogo** del Cuadro de herramientas tiene componentes que abren automáticamente muchos cuadros de diálogo de gran utilidad y que se pueden usar para abrir y guardar archivos, examinar carpetas y elegir fuentes o colores. Use dos componentes de cuadro de diálogo en este proyecto: **OpenFileDialog** y **ColorDialog**.  
   
 2. Para agregar un componente denominado **openFileDialog1** al formulario, haga doble clic en **OpenFileDialog**. Para agregar un componente denominado **colorDialog1** al formulario, haga doble clic en **ColorDialog** en el Cuadro de herramientas. (Este se utiliza en el siguiente paso del tutorial.) Debería aparecer un área en la parte inferior del Diseñador de Windows Forms (bajo el formulario del Visor de imágenes), con un icono para cada uno de los dos componentes de cuadro de diálogo agregados, tal y como se muestra en la siguiente imagen.  
   
@@ -50,7 +50,7 @@ Componentes del cuadro de diálogo
          Los valores de la propiedad **Filter** especifican las clases de tipos de archivo que se mostrarán en el cuadro de diálogo **Select a picture file** (Seleccionar un archivo de imagen).  
   
     > [!NOTE]
-    >  Para ver un ejemplo del cuadro de diálogo **Abrir archivo** en una aplicación diferente, abra el Bloc de notas o Paint y, en la barra de menús, elija **Archivo**, **Abrir**. Observe que hay una lista desplegable de **tipo de archivo** en la parte inferior. Acabamos de usar la propiedad **Filter** del componente **OpenFileDialog** para configurarlo. Observe también que las propiedades **Title** y **Filter** están en negrita en la ventana **Propiedades**. El IDE lo hace para mostrarle todas las propiedades que han cambiado respecto de sus valores predeterminados.  
+    > Para ver un ejemplo del cuadro de diálogo **Abrir archivo** en una aplicación diferente, abra el Bloc de notas o Paint y, en la barra de menús, elija **Archivo**, **Abrir**. Observe que hay una lista desplegable de **tipo de archivo** en la parte inferior. Acabamos de usar la propiedad **Filter** del componente **OpenFileDialog** para configurarlo. Observe también que las propiedades **Title** y **Filter** están en negrita en la ventana **Propiedades**. El IDE lo hace para mostrarle todas las propiedades que han cambiado respecto de sus valores predeterminados.  
   
 ### <a name="to-continue-or-review"></a>Para continuar o revisar  
   

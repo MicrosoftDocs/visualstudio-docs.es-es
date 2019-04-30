@@ -14,12 +14,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 92950247420f49c4a5295d25aec2c8697efb3534
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7cec06813890523e604234ccefdbcd7d1de31653
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069970"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444184"
 ---
 # <a name="how-to-set-breakpoints-in-workflows-legacy"></a>Procedimiento Establecer puntos de interrupción en los flujos de trabajo (heredado)
 En este tema se describe cómo establecer puntos de interrupción en aplicaciones [!INCLUDE[wf](../includes/wf-md.md)] compiladas usando [!INCLUDE[wfd1](../includes/wfd1-md.md)] heredado. Use el [!INCLUDE[wfd2](../includes/wfd2-md.md)] heredado cuando la aplicación [!INCLUDE[wf2](../includes/wf2-md.md)] deba tener como destino [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -39,7 +39,7 @@ En este tema se describe cómo establecer puntos de interrupción en aplicacione
      También puede utilizar esta opción para establecer un nuevo punto de interrupción al depurar, si el depurador se detiene en un punto de interrupción.  
   
     > [!NOTE]
-    >  No se pueden establecer puntos de interrupción en los flujos de trabajo invocados.  
+    > No se pueden establecer puntos de interrupción en los flujos de trabajo invocados.  
   
 ### <a name="to-set-a-breakpoint-using-the-new-breakpoint-option-on-the-debug-menu"></a>Para establecer un punto de interrupción utilizando la opción Nuevo punto de interrupción del menú Depurar  
   
@@ -52,7 +52,7 @@ En este tema se describe cómo establecer puntos de interrupción en aplicacione
 3. Especifique el nombre de una actividad en el **función** cuadro de texto con esta sintaxis: `QualifiedActivityId[:[FullClassName][:InstanceId]]`.  
   
     > [!NOTE]
-    >  Si lo desea, en lugar de usar el nombre de actividad en el **función** cuadro de texto, puede establecer un punto de interrupción especificando la ruta de acceso absoluta de la actividad de flujo de trabajo. Por ejemplo, suponga que tiene una solución de flujo de trabajo denominada **WorkflowConsoleApplication1** y un flujo de trabajo en la solución denominada **Workflow1** que usa una actividad denominada **Delay1**. Puede usar el nombre de actividad **Delay1** o especifique la ruta de acceso como **Delay1:WorkflowConsoleApplication1.Workflow1** o **Delay1:WorkflowConsoleApplication1.Workflow1: {} 6614886A-608E-412B-BF98-99FF1559DDDF}**.  
+    > Si lo desea, en lugar de usar el nombre de actividad en el **función** cuadro de texto, puede establecer un punto de interrupción especificando la ruta de acceso absoluta de la actividad de flujo de trabajo. Por ejemplo, suponga que tiene una solución de flujo de trabajo denominada **WorkflowConsoleApplication1** y un flujo de trabajo en la solución denominada **Workflow1** que usa una actividad denominada **Delay1**. Puede usar el nombre de actividad **Delay1** o especifique la ruta de acceso como **Delay1:WorkflowConsoleApplication1.Workflow1** o **Delay1:WorkflowConsoleApplication1.Workflow1: {} 6614886A-608E-412B-BF98-99FF1559DDDF}**.  
   
 4. Seleccione el **usar IntelliSense** casilla de verificación para comprobar el nombre de función.  
   

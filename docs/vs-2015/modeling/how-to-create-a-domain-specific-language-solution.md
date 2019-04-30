@@ -15,12 +15,12 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 57c843b7c556ac409a63d5e6c01e2699da59958b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e9afaa8fc74ef893b3b916c66907ae5d1a3af55f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099577"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441090"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Procedimiento Crear una solución de lenguajes específicos de dominio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ Un lenguaje específico de dominio (DSL) se crea mediante un especializada [!INC
        El **Asistente del Diseñador de lenguaje específico de dominio** aparece.  
   
       > [!NOTE]
-      >  Si es posible, el nombre que escriba debe ser un identificador Visual C# válido, porque podría usarse para generar el código.  
+      > Si es posible, el nombre que escriba debe ser un identificador Visual C# válido, porque podría usarse para generar el código.  
   
       ![Crear el cuadro de diálogo DSL](../modeling/media/create-dsldialog.png "Create_DSLDialog")  
   
@@ -76,7 +76,7 @@ Un lenguaje específico de dominio (DSL) se crea mediante un especializada [!INC
     El asistente crea una solución que tiene dos proyectos, que se denominan **Dsl** y **DslPackage**.  
   
    > [!NOTE]
-   >  Si ve un mensaje que no le avisa para ejecutar las plantillas de texto de fuentes no confiables, haga clic en **Aceptar**. Puede establecer este mensaje no se mostrarán de nuevo.  
+   > Si ve un mensaje que no le avisa para ejecutar las plantillas de texto de fuentes no confiables, haga clic en **Aceptar**. Puede establecer este mensaje no se mostrarán de nuevo.  
   
 ## <a name="settings"></a> Las páginas del Asistente para el Diseñador de DSL  
  Puede dejar algunos de los campos que no ha cambiado desde sus valores predeterminados. Sin embargo, asegúrese de establecer el campo de extensión de archivo.  

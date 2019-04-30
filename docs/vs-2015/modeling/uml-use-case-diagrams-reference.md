@@ -19,12 +19,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 256489e41c769452f9505f95ec64ec9aee853c67
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 45f8d742af1cd6a0ed73f3beda24e829b417e81f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58996049"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424321"
 ---
 # <a name="uml-use-case-diagrams-reference"></a>Diagramas de casos de uso UML: Referencia
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ En Visual Studio, un *diagrama de casos de uso* resume quién usa la aplicación
  Para ver qué versiones de Visual Studio admiten esta característica, vea [Compatibilidad de versiones con las herramientas de arquitectura y modelado](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 > [!NOTE]
->  En este tema se describen los elementos que están disponibles en los diagramas de casos de uso. Para obtener más información sobre cómo dibujar diagramas de casos de uso, consulte [diagramas de caso de uso de UML: Directrices](../modeling/uml-use-case-diagrams-guidelines.md). Para obtener más información acerca de cómo crear y dibujar diagramas de modelado, vea [modelos y diagramas UML editar](../modeling/edit-uml-models-and-diagrams.md).  
+> En este tema se describen los elementos que están disponibles en los diagramas de casos de uso. Para obtener más información sobre cómo dibujar diagramas de casos de uso, consulte [diagramas de caso de uso de UML: Directrices](../modeling/uml-use-case-diagrams-guidelines.md). Para obtener más información acerca de cómo crear y dibujar diagramas de modelado, vea [modelos y diagramas UML editar](../modeling/edit-uml-models-and-diagrams.md).  
   
 ## <a name="reading-use-case-diagrams"></a>Lectura de diagramas de casos de uso  
  En las tablas de las secciones siguientes se describen los elementos disponibles en un diagrama de casos de uso y sus propiedades principales. Para obtener una lista completa de propiedades, vea [propiedades de elementos de UML diagramas de casos de uso](../modeling/properties-of-elements-on-uml-use-case-diagrams.md).  

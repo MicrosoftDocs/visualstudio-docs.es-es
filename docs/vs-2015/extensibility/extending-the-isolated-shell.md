@@ -10,12 +10,12 @@ ms.assetid: 9a641d8f-211e-4486-a1b1-4a89fafe7ee8
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 65efd5a864863fb18f26d8fdfc3736423aad7aeb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ea55039de769598b26868727a93cfa11726e4838
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054097"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443923"
 ---
 # <a name="extending-the-isolated-shell"></a>Ampliación del Shell aislado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ ms.locfileid: "60054097"
 Puede extender el shell aislado de Visual Studio mediante la adición de un VSPackage, una parte del componente de Managed Extensibility Framework (MEF) o un proyecto VSIX genérico a la aplicación de shell aislado.  
   
 > [!NOTE]
->  Los pasos siguientes implican que ha creado una aplicación básica de shell aislado mediante el uso de la plantilla de proyecto de Visual Studio Shell aislado. Para obtener más información acerca de esta plantilla de proyecto, vea [Tutorial: Creando un Basic aislado la aplicación de Shell](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
+> Los pasos siguientes implican que ha creado una aplicación básica de shell aislado mediante el uso de la plantilla de proyecto de Visual Studio Shell aislado. Para obtener más información acerca de esta plantilla de proyecto, vea [Tutorial: Creando un Basic aislado la aplicación de Shell](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
   
 ## <a name="locations-for-the-visual-studio-package-project-template"></a>Ubicaciones de las plantillas de proyecto del paquete de Visual Studio  
  La plantilla de proyecto del paquete de Visual Studio puede encontrarse en tres ubicaciones diferentes en el cuadro de diálogo **Nuevo proyecto** :  
@@ -121,4 +121,4 @@ Puede extender el shell aislado de Visual Studio mediante la adición de un VSPa
 8. Compile y ejecute la solución.  
   
 ## <a name="see-also"></a>Vea también  
- [Tutorial: Creación de una aplicación básica de Shell aislado](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)
+ [Tutorial: Creación una aplicación básica de Shell aislado](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)

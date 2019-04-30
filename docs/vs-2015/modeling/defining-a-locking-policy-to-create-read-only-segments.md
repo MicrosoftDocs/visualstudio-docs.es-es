@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ed3eeb8e2907eb71a75884a19f174774055783c4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6044e9c47a0dcbc95fd1503906cbd81ac8e44526
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062248"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422652"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Definir una directiva de bloqueo para crear segmentos de solo lectura
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ La API de inmutabilidad de los [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] SDK 
  Además, como autor de un DSL, puede definir un *directiva de bloqueo.* Una directiva de bloqueo define los bloqueos que son obligatorios, no se permite o permitidos. Por ejemplo, cuando se publica un DSL, puede animar a los desarrolladores de terceros para ampliarlo con nuevos comandos. Pero también podría usar una directiva de bloqueo para impedir que modificar el estado de solo lectura de las partes especificadas del modelo.  
   
 > [!NOTE]
->  Una directiva de bloqueo puede evitarse mediante la reflexión. Proporciona un límite claro para los desarrolladores de terceros, pero no proporcionan una gran seguridad.  
+> Una directiva de bloqueo puede evitarse mediante la reflexión. Proporciona un límite claro para los desarrolladores de terceros, pero no proporcionan una gran seguridad.  
   
  Más información y ejemplos están disponibles en el [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] [SDK de visualización y modelado](http://go.microsoft.com/fwlink/?LinkId=186128) sitio Web.  
   

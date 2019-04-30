@@ -14,12 +14,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cb0502128b95716b0598b373be81519a06911f06
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 863df1da686e56a8b38c0652baf0aafab7436d08
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052810"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434350"
 ---
 # <a name="define-packages-and-namespaces"></a>Definir espacios de nombres y paquetes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,7 +80,7 @@ En Visual Studio, un *paquete* es un contenedor para las definiciones de element
 2. Haga clic con el botón secundario en un paquete o modelo al que desee agregar un nuevo paquete.  
   
    > [!NOTE]
-   >  Puede anidar un paquete dentro de otro paquete.  
+   > Puede anidar un paquete dentro de otro paquete.  
   
 3. Seleccione **agregar** y, a continuación, haga clic en **paquete**.  
   
@@ -95,7 +95,7 @@ En Visual Studio, un *paquete* es un contenedor para las definiciones de element
 - Arrastre el paquete desde el Explorador de modelos UML hasta el diagrama de clases.  
   
     > [!NOTE]
-    >  Se crea una vista del paquete en este diagrama. No necesariamente mostrará todos los elementos que contiene el paquete. Para asegurarse de que ve todo el contenido de un paquete, véalo en el Explorador de modelos UML.  
+    > Se crea una vista del paquete en este diagrama. No necesariamente mostrará todos los elementos que contiene el paquete. Para asegurarse de que ve todo el contenido de un paquete, véalo en el Explorador de modelos UML.  
   
 ## <a name="Elements"></a> Crear elementos del modelo dentro de paquetes  
  Hay cuatro maneras en que puede colocar elementos del modelo dentro de un paquete:  
@@ -123,7 +123,7 @@ En Visual Studio, un *paquete* es un contenedor para las definiciones de element
 4. Escriba un nombre para el nuevo elemento.  
   
     > [!NOTE]
-    >  El nuevo elemento no aparece en ningún diagrama. Para crear una vista del nuevo elemento, puede arrastrarlo desde el Explorador de modelos UML a un diagrama. El diagrama debe ser un tipo que mostrará este tipo de elemento.  
+    > El nuevo elemento no aparece en ningún diagrama. Para crear una vista del nuevo elemento, puede arrastrarlo desde el Explorador de modelos UML a un diagrama. El diagrama debe ser un tipo que mostrará este tipo de elemento.  
   
 #### <a name="to-create-an-element-in-a-package-on-a-uml-class-diagram"></a>Para crear un elemento en un paquete de un diagrama de clases UML  
   
@@ -173,7 +173,7 @@ En Visual Studio, un *paquete* es un contenedor para las definiciones de element
      El nombre completo del elemento cambiará para mostrar su nuevo paquete propietario.  
   
     > [!NOTE]
-    >  Si arrastra un elemento fuera de un paquete a una parte en blanco del diagrama, su paquete propietario no cambiará. Esto permite crear un diagrama que muestra los elementos de varios paquetes sin tener que mostrar los paquetes mismos.  
+    > Si arrastra un elemento fuera de un paquete a una parte en blanco del diagrama, su paquete propietario no cambiará. Esto permite crear un diagrama que muestra los elementos de varios paquetes sin tener que mostrar los paquetes mismos.  
   
 ## <a name="Pasting"></a> Pegar elementos en un paquete  
  Puede pegar un elemento en un paquete. Si pega un grupo de elementos relacionados en un paquete, también se pegarán las relaciones entre ellos.  
@@ -185,7 +185,7 @@ En Visual Studio, un *paquete* es un contenedor para las definiciones de element
 2. Haga clic en el paquete y, a continuación, haga clic en **pegar**.  
   
     > [!NOTE]
-    >  El paquete puede estar en un diagrama diferente.  
+    > El paquete puede estar en un diagrama diferente.  
   
 ## <a name="Import"></a> Importar relaciones entre paquetes  
  Puede definir una relación de importación entre paquetes, mediante el **importar** herramienta.  

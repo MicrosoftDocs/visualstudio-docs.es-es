@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 93acd8466ae90a6db4d1f25d93460e501335af50
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7d6fb66684bd51c75e655bc2403cb6a9fb5846a2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062222"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438810"
 ---
 # <a name="how-to-programmatically-protect-worksheets"></a>Procedimiento Proteger mediante programación las hojas de cálculo
   La característica de protección de Microsoft Office Excel ayuda a evitar que los usuarios y el código modifiquen los objetos de una hoja de cálculo. De forma predeterminada, todas las celdas se bloquean después de activar la protección.
@@ -30,7 +30,7 @@ ms.locfileid: "60062222"
  En las personalizaciones de nivel de documento, puede proteger hojas de cálculo usando el diseñador de Excel. También puede proteger una hoja de cálculo mediante programación en tiempo de ejecución en cualquier tipo de proyecto.
 
 > [!NOTE]
->  No puede agregar controles de Windows Forms a las áreas de una hoja de cálculo que están protegidas.
+> No puede agregar controles de Windows Forms a las áreas de una hoja de cálculo que están protegidas.
 
 ## <a name="use-the-designer"></a>Use el diseñador
 

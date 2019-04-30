@@ -17,12 +17,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f239da7816f72b9204364303113d32f5e06c4fd8
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 70d640b97bae15575689d41c38bd774507276906
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661911"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436876"
 ---
 # <a name="property-pages-javascript"></a>Página de propiedades, JavaScript
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ Las **páginas Propiedades** proporcionan acceso a la configuración del proyect
  Utilice las siguientes opciones para establecer las propiedades generales del proyecto.  
   
 > [!NOTE]
->  Algunas opciones solo están disponibles en aplicaciones de la Tienda Windows.  
+> Algunas opciones solo están disponibles en aplicaciones de la Tienda Windows.  
   
  **Ruta de acceso de salida**  
  Especifica la ubicación de los archivos de salida para la configuración del proyecto. La ruta de acceso es relativa. Si escribe una ruta de acceso absoluta, se guarda la ruta de acceso absoluta en el proyecto. La ruta de acceso predeterminada es bin\Debug.  
@@ -62,7 +62,7 @@ Las **páginas Propiedades** proporcionan acceso a la configuración del proyect
  Utilice las siguientes opciones para establecer las propiedades para depurar el comportamiento en el proyecto.  
   
 > [!NOTE]
->  Algunas opciones solo están disponibles en aplicaciones de la Tienda Windows.  
+> Algunas opciones solo están disponibles en aplicaciones de la Tienda Windows.  
   
  **Depurador para iniciar**  
  Especifica el host predeterminado para el depurador.  

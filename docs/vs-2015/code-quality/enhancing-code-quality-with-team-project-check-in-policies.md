@@ -12,12 +12,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c7b95155db18e9aa879b11cadf21b33cb0189ff9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 31859128aed64ec6a1182f085685b2e82e485f84
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103373"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437078"
 ---
 # <a name="enhancing-code-quality-with-team-project-check-in-policies"></a>Mejorar la calidad del código con directivas de protección de equipo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Cuando se usa el Control de versiones de Team Foundation (TFVC), puede crear dir
 - **Los elementos de trabajo**: Requiere que uno o varios elementos de trabajo estén asociados a la comprobación.  
   
 > [!IMPORTANT]
->  Para utilizar las directivas de protección, se debe conectar a [!INCLUDE[vststfsLong](../includes/vststfslong-md.md)].  
+> Para utilizar las directivas de protección, se debe conectar a [!INCLUDE[vststfsLong](../includes/vststfslong-md.md)].  
   
 ## <a name="common-tasks"></a>Tareas comunes  
   

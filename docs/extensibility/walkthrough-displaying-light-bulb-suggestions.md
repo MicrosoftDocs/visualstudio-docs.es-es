@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0799bdff6957e811c365fe153a722d25e306366
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 25365c5599d299189b07ec5c30124aac0004f390
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086681"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444943"
 ---
 # <a name="walkthrough-display-light-bulb-suggestions"></a>Tutorial: Mostrar sugerencias de bombilla
 Las bombillas son iconos en el editor de Visual Studio que se expanden para mostrar un conjunto de acciones, por ejemplo, soluciona los problemas identificados por los analizadores de código integrados o refactorización de código.
@@ -177,7 +177,7 @@ Las bombillas son iconos en el editor de Visual Studio que se expanden para most
 6. Implemente el <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource.GetSuggestedActions%2A> método, que devuelve una matriz de <xref:Microsoft.VisualStudio.Language.Intellisense.SuggestedActionSet> objetos que contienen las distintas <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction> objetos. Este método se llama cuando se expande la bombilla.
 
     > [!WARNING]
-    >  Debe asegurarse de que las implementaciones de `HasSuggestedActionsAsync()` y `GetSuggestedActions()` son coherente; es, si `HasSuggestedActionsAsync()` devuelve `true`, a continuación, `GetSuggestedActions()` debe tener algunas acciones para mostrar. En muchos casos, `HasSuggestedActionsAsync()` se llama justo antes `GetSuggestedActions()`, pero no siempre es el caso. Por ejemplo, si el usuario invoca la bombilla de acciones presionando (**CTRL +** .) solo `GetSuggestedActions()` se llama.
+    > Debe asegurarse de que las implementaciones de `HasSuggestedActionsAsync()` y `GetSuggestedActions()` son coherente; es, si `HasSuggestedActionsAsync()` devuelve `true`, a continuación, `GetSuggestedActions()` debe tener algunas acciones para mostrar. En muchos casos, `HasSuggestedActionsAsync()` se llama justo antes `GetSuggestedActions()`, pero no siempre es el caso. Por ejemplo, si el usuario invoca la bombilla de acciones presionando (**CTRL +** .) solo `GetSuggestedActions()` se llama.
 
     ```csharp
     public IEnumerable<SuggestedActionSet> GetSuggestedActions(ISuggestedActionCategorySet requestedActionCategories, SnapshotSpan range, CancellationToken cancellationToken)
@@ -326,7 +326,7 @@ Las bombillas son iconos en el editor de Visual Studio que se expanden para most
     ```
 
     > [!WARNING]
-    >  La acción de bombilla **Invoke** no se espera el método para mostrar la interfaz de usuario. Si la acción aparezca la nueva interfaz de usuario (por ejemplo una vista previa o selección de cuadro de diálogo), no mostrar la interfaz de usuario directamente desde el **Invoke** método pero en su lugar, programar para mostrar la interfaz de usuario después de volver de **Invoke**.
+    > La acción de bombilla **Invoke** no se espera el método para mostrar la interfaz de usuario. Si la acción aparezca la nueva interfaz de usuario (por ejemplo una vista previa o selección de cuadro de diálogo), no mostrar la interfaz de usuario directamente desde el **Invoke** método pero en su lugar, programar para mostrar la interfaz de usuario después de volver de **Invoke**.
 
 10. Para completar la implementación, agregue el `Dispose()` y `TryGetTelemetryId()` métodos.
 

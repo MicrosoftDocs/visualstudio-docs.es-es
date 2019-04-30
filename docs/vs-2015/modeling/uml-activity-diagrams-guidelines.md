@@ -15,12 +15,12 @@ caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 626be40ed9889ff7d16c07d511cbd060232412af
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 16bc3bf0f2cb7fa51a42986ee99976410ca7874a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105078"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439740"
 ---
 # <a name="uml-activity-diagrams-guidelines"></a>Diagramas de actividades UML: Instrucciones
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,7 +76,7 @@ En Visual Studio, puede dibujar un diagrama de actividades para describir un pro
      Comience colocando las actividades principales en el diagrama, conéctelas e incorpore los últimos detalles, como los nodos iniciales y finales.  
   
     > [!NOTE]
-    >  No puede arrastrar elementos existentes al diagrama desde el Explorador de modelos UML.  
+    > No puede arrastrar elementos existentes al diagrama desde el Explorador de modelos UML.  
   
 2. Para conectar los elementos, siga estos pasos:  
   
@@ -87,7 +87,7 @@ En Visual Studio, puede dibujar un diagrama de actividades para describir un pro
     3. Haga clic en el elemento de destino.  
   
         > [!NOTE]
-        >  Para usar una herramienta varias veces, haga doble clic en la herramienta en el cuadro de herramientas.  
+        > Para usar una herramienta varias veces, haga doble clic en la herramienta en el cuadro de herramientas.  
   
 #### <a name="to-move-an-activity-to-another-package"></a>Para mover una actividad a otro paquete  
   
@@ -98,7 +98,7 @@ En Visual Studio, puede dibujar un diagrama de actividades para describir un pro
 - En **Explorador de modelos UML**, haga clic en la actividad y haga clic en **cortar**. A continuación, haga clic en el paquete y haga clic en **pegar**.  
   
     > [!NOTE]
-    >  La actividad aparecerá en el Explorador de modelos UML solo cuando se agregue el primer elemento al diagrama.  
+    > La actividad aparecerá en el Explorador de modelos UML solo cuando se agregue el primer elemento al diagrama.  
   
 ## <a name="SimpleControlFlow"></a> Describir el flujo de Control  
  Un diagrama de actividades describe un proceso de negocio o un algoritmo de software como una serie de acciones. Las flechas de conector muestran cómo el control pasa secuencialmente de una acción a la siguiente. Normalmente, una acción solo se puede iniciar una vez completada la acción anterior.  
@@ -112,7 +112,7 @@ En Visual Studio, puede dibujar un diagrama de actividades para describir un pro
 - Crear un **acción** (1) para cada tarea importante realizada por un usuario, el sistema o ambos en colaboración.  
   
   > [!NOTE]
-  >  Intente describir su proceso o algoritmo con unas pocas acciones. Puede usar **llamar a acciones de comportamiento** para definir cada acción con más detalle en un diagrama diferente, como se describe en [describir actividades secundarias con acciones de comportamiento de llamada a](#Subactivities).  
+  > Intente describir su proceso o algoritmo con unas pocas acciones. Puede usar **llamar a acciones de comportamiento** para definir cada acción con más detalle en un diagrama diferente, como se describe en [describir actividades secundarias con acciones de comportamiento de llamada a](#Subactivities).  
   
 - Asegúrese de que el título de cada acción indica claramente lo que suele hacer.  
   
@@ -133,12 +133,12 @@ En Visual Studio, puede dibujar un diagrama de actividades para describir un pro
 - Use un **nodo de combinación** (5) para unir dos o más flujos alternativos que se bifurcan en un **nodo de decisión**.  
   
     > [!NOTE]
-    >  Debe usar un **nodo de combinación** para unir flujos alternativos, en lugar de unir los flujos en una acción. En el ejemplo, que no sea correcta para conectarse desde el nodo de decisión se copia directamente en **Elegir elemento del menú**. Esto se debe a que una acción no se inicia hasta que los subprocesos de control llegan a todos sus conectores de entrada. Por lo tanto, en una acción solo debe reunir flujos simultáneos. Para obtener más información, consulte [flujos simultáneos](#Concurrent).  
+    > Debe usar un **nodo de combinación** para unir flujos alternativos, en lugar de unir los flujos en una acción. En el ejemplo, que no sea correcta para conectarse desde el nodo de decisión se copia directamente en **Elegir elemento del menú**. Esto se debe a que una acción no se inicia hasta que los subprocesos de control llegan a todos sus conectores de entrada. Por lo tanto, en una acción solo debe reunir flujos simultáneos. Para obtener más información, consulte [flujos simultáneos](#Concurrent).  
   
 - Use las bifurcaciones para describir bucles, tal como se muestra en el ejemplo.  
   
     > [!NOTE]
-    >  Intente anidar los bucles de forma bien estructurada, tal como lo haría en el código del programa. Si está describiendo un proceso de negocio existente, esto podría ofrecer oportunidades para mejorarlo.  
+    > Intente anidar los bucles de forma bien estructurada, tal como lo haría en el código del programa. Si está describiendo un proceso de negocio existente, esto podría ofrecer oportunidades para mejorarlo.  
   
 ### <a name="starting-the-activity"></a>Iniciar la actividad  
  Existen dos maneras de indicar los puntos de entrada en una actividad:  
@@ -182,7 +182,7 @@ En Visual Studio, puede dibujar un diagrama de actividades para describir un pro
 - Use un **Output Pin** y un **clavija de entrada**. Este método permite describir por separado las salidas de una acción y las entradas en otra. Los terminales son como los parámetros de un programa. Los terminales representan puertos donde pueden entrar los objetos y dejar una acción.  
   
     > [!NOTE]
-    >  Para obtener información general de los elementos usados en esta sección, consulte la sección flujos de datos del tema consulte [diagramas de actividades UML: referencia](../modeling/uml-activity-diagrams-reference.md).  
+    > Para obtener información general de los elementos usados en esta sección, consulte la sección flujos de datos del tema consulte [diagramas de actividades UML: referencia](../modeling/uml-activity-diagrams-reference.md).  
   
 ### <a name="describing-data-flow-with-object-nodes"></a>Describir el flujo de datos con nodos de objeto  
  La mayoría de los flujos de control transportan datos. Por ejemplo, el flujo de salida de la acción "El cliente proporciona detalles" lleva una referencia a la dirección de envío.  
@@ -198,7 +198,7 @@ En Visual Studio, puede dibujar un diagrama de actividades para describir un pro
  Puede establecer el **tipo** del nodo de objeto en la ventana Propiedades. El tipo puede ser un tipo primitivo, como un entero, o una clase, interfaz o enumeración que definiese en un diagrama de clases. Por ejemplo, podría crear una clase Dirección de envío, con atributos como Dirección, Ciudad, etcétera, junto con una asociación con otra clase denominada Cliente. Para más información, vea [Diagramas de clases de UML: Directrices](../modeling/uml-class-diagrams-guidelines.md).  
   
 > [!NOTE]
->  Si escribe el nombre de un tipo que aún no se han definido, se agregará un elemento en **tipos sin especificar** en el Explorador de modelos UML. Si posteriormente define un tipo con ese nombre en un diagrama de clases, deberá restablecer el tipo del nodo de objeto para que haga referencia al nuevo tipo.  
+> Si escribe el nombre de un tipo que aún no se han definido, se agregará un elemento en **tipos sin especificar** en el Explorador de modelos UML. Si posteriormente define un tipo con ese nombre en un diagrama de clases, deberá restablecer el tipo del nodo de objeto para que haga referencia al nuevo tipo.  
   
 #### <a name="buffering-data-in-object-nodes"></a>Almacenar en búfer los datos de los nodos de objeto  
  Un nodo de objeto puede actuar como búfer de varios objetos. En la ilustración siguiente, el flujo de control muestra que el usuario puede recorrer el bucle [elegir más] (1) muchas veces, mientras el nodo de objeto Elementos del menú seleccionados (2) acumula las selecciones del usuario. Por último, cuando el usuario finaliza su selección, el control pasa a la acción Confirmar pedido (3), que acepta la lista completa de selecciones del búfer Elementos de menú seleccionados.  
@@ -265,7 +265,7 @@ En Visual Studio, puede dibujar un diagrama de actividades para describir un pro
 4. Establecer el **comportamiento** propiedad de la **acción del comportamiento de llamada a** para hacer referencia al diagrama del comportamiento llamado.  
   
     > [!NOTE]
-    >  El diagrama de actividad secundaria debe contener algunos elementos o el diagrama no estarán disponible en la lista desplegable para la **comportamiento** propiedad. Además, el icono de Tridente no aparecerá en su **acción del comportamiento de llamada a** hasta que se establece de forma su **comportamiento** propiedad.  
+    > El diagrama de actividad secundaria debe contener algunos elementos o el diagrama no estarán disponible en la lista desplegable para la **comportamiento** propiedad. Además, el icono de Tridente no aparecerá en su **acción del comportamiento de llamada a** hasta que se establece de forma su **comportamiento** propiedad.  
   
 5. Establecer el **Is Synchronous** propiedad de la acción para indicar si la actividad espera hasta que se complete la actividad llamada.  
   
@@ -279,7 +279,7 @@ En Visual Studio, puede dibujar un diagrama de actividades para describir un pro
 - En el diagrama de actividad secundaria, cree un **nodo de parámetros de actividad** (2) para cada terminal de entrada y salida en la acción que realiza la llamada. Asigne a cada nodo el mismo nombre que el de su terminal correspondiente.  
   
   > [!NOTE]
-  >  Un nodo de parámetros de actividad se parece a un nodo de objeto. Para comprobar qué tipo de nodo que está examinando, haga clic en el nodo y, a continuación, haga clic en **propiedades**. El tipo de nodo se muestra en el encabezado de la ventana Propiedades.  
+  > Un nodo de parámetros de actividad se parece a un nodo de objeto. Para comprobar qué tipo de nodo que está examinando, haga clic en el nodo y, a continuación, haga clic en **propiedades**. El tipo de nodo se muestra en el encabezado de la ventana Propiedades.  
   
 - En el diagrama de actividad secundaria, dibuje conectores que muestren el flujo de objetos dentro o fuera de cada nodo de parámetros de actividad.  
   

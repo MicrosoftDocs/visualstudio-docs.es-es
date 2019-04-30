@@ -126,12 +126,12 @@ caps.latest.revision: 17
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: f16859b3c879e2d3abb64105c50f8ec4934d17e5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b6d36b01ca84558d0d3d45251884e5598becfa1b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061520"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429192"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>Anotar parámetros de función y valores devueltos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -318,7 +318,7 @@ En este artículo se describe los usos típicos de las anotaciones de parámetro
   En la siguiente tabla, subcadenas adicionales se insertan en el nombre de anotación y seguir calificando el significado de la anotación.  Son varias las subcadenas `_z`, `_COM_`, `_buffer_`, `_bytebuffer_`, y `_to_`.  
   
 > [!IMPORTANT]
->  Si la interfaz que está anotando es COM, utilice el formulario de COM de estas anotaciones. No utilice las anotaciones de COM con cualquier otra interfaz de tipo.  
+> Si la interfaz que está anotando es COM, utilice el formulario de COM de estas anotaciones. No utilice las anotaciones de COM con cualquier otra interfaz de tipo.  
   
  **Las anotaciones y descripciones**  
   
@@ -474,7 +474,7 @@ En este artículo se describe los usos típicos de las anotaciones de parámetro
      El parámetro, el campo o el resultado está en el intervalo (inclusivo) desde `low` a `hi`.  Equivalente a `_Satisfies_(_Curr_ >= low && _Curr_ <= hi)` que se aplica al objeto anotado junto con las condiciones de estado previo o posterior al estado adecuados.  
   
     > [!IMPORTANT]
-    >  Aunque los nombres contienen "en" y "out", la semántica de `_In_` y `_Out_` hacer **no** se aplican a estas anotaciones.  
+    > Aunque los nombres contienen "en" y "out", la semántica de `_In_` y `_Out_` hacer **no** se aplican a estas anotaciones.  
   
 - `_Pre_equal_to_(expr)`  
   

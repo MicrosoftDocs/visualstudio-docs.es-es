@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b1219543c438c79ad1add068262d9556dd2d7ce8
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: b2f2a7c134142668613cc38cee9357e42cb95096
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58159340"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433938"
 ---
 # <a name="idebugdocumenthelperadddeferredtext"></a>IDebugDocumentHelper::AddDeferredText
 Notifica a la aplicación auxiliar que el texto dado está disponible, pero no proporciona los caracteres.  
@@ -57,7 +57,7 @@ HRESULT AddDeferredText(
  Se supone que una sola llamada a `IDebugDocumentText::GetText` puede obtener los caracteres de varias llamadas a `AddDeferredText`. Clases auxiliares también pueden pedirle más de una vez para el mismo intervalo de caracteres aplazadas.  
   
 > [!NOTE]
->  Las llamadas a `AddDeferredText` no deben combinarse con las llamadas a `AddUnicodeText` o `AddDBCSText`. Si esto ocurre, `E_FAIL` se devuelve.  
+> Las llamadas a `AddDeferredText` no deben combinarse con las llamadas a `AddUnicodeText` o `AddDBCSText`. Si esto ocurre, `E_FAIL` se devuelve.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugDocumentHelper (interfaz)](../../winscript/reference/idebugdocumenthelper-interface.md)   

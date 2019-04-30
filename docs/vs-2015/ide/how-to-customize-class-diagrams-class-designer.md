@@ -14,12 +14,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 442181aa78e539471aa35feb96ec7503e09a97ec
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 53f65b54888c254c93e72aafa00e239f95d85ddf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065836"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416855"
 ---
 # <a name="how-to-customize-class-diagrams-class-designer"></a>Procedimiento Personalizar diagramas de clases (Diseñador de clases)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Es posible cambiar la manera en que se muestra la información en los diagramas 
  Por ejemplo, se puede ajustar el nivel de zoom de un diagrama de clase completo, cambiar cómo se agrupan y ordenan determinados miembros de tipo, ocultar o mostrar relaciones, así como mover conjuntos de tipos o tipos individuales en cualquier parte del diagrama.  
   
 > [!NOTE]
->  Personalizar la manera en que las formas aparecen en el diagrama no cambia el código subyacente para los tipos representados en el diagrama.  
+> Personalizar la manera en que las formas aparecen en el diagrama no cambia el código subyacente para los tipos representados en el diagrama.  
   
  Las secciones que contienen miembros de tipo, como la sección Propiedades de una clase, se denominan compartimientos. Puede ocultar o mostrar los compartimientos y los miembros de tipo individualmente.  
   
@@ -64,7 +64,7 @@ Es posible cambiar la manera en que se muestra la información en los diagramas 
      Especifique un valor de zoom determinado. Puede usar la lista desplegable **Zoom** o escribir un nivel de zoom válido (el intervalo válido está comprendido entre el 10 % y el 400 %).  
   
     > [!NOTE]
-    >  Al cambiar el nivel de zoom, no se ve afectada la escala de la copia impresa del diagrama de clases.  
+    > Al cambiar el nivel de zoom, no se ve afectada la escala de la copia impresa del diagrama de clases.  
   
 ## <a name="CustomizeGroupingSorting"></a> Personalizar la agrupación y ordenación de los miembros de tipo  
   

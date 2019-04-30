@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b4873085a4e4508b40b866eee79e79f624f3c01d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 9f3da13858507a3ff176aaa0a44051674fd5285f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605736"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443562"
 ---
 # <a name="create-a-business-data-connectivity-model"></a>Crear un modelo de conectividad a datos empresariales
   Puede crear un modelo de conectividad de datos profesionales (BDC) o personalizar un modelo BDC existente mediante Visual Studio. Cada proyecto de SharePoint puede contener un único modelo. Para obtener más información, consulte [integrar datos profesionales en SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md).
@@ -29,7 +29,7 @@ ms.locfileid: "56605736"
  Para crear un nuevo modelo, cree un **modelo de conectividad a datos empresariales** proyecto o agregue un **modelo de conectividad a datos empresariales** elemento a una **proyecto vacío de SharePoint**.
 
 > [!NOTE]
->  Debe tener [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] instalado en el equipo.
+> Debe tener [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] instalado en el equipo.
 
  Visual Studio agrega una carpeta al proyecto. Esta carpeta tiene el nombre que especifique para la **modelo de conectividad a datos empresariales** de elemento en el **Agregar nuevo elemento** cuadro de diálogo. Si crea un nuevo **modelo de conectividad a datos empresariales** proyecto, Visual Studio asigna a la carpeta **BdcModel1**.
 
@@ -47,7 +47,7 @@ ms.locfileid: "56605736"
  Al compilar el proyecto, Visual Studio crea un ensamblado. Asegúrese de no agregar otros elementos al proyecto que agregue código al ensamblado del proyecto (por ejemplo: un **flujo de trabajo secuencial** elemento o un **elemento Web** elemento). El código para ese elemento no se ejecutará al implementar la solución porque el paquete de solución no copia el ensamblado en la caché global de ensamblados.  El paquete de solución implementa el ensamblado para el BDC sólo base de datos en SharePoint.
 
 > [!NOTE]
->  Visual Studio copia el ensamblado en ambas ubicaciones en el equipo local cuando se depura el proyecto.
+> Visual Studio copia el ensamblado en ambas ubicaciones en el equipo local cuando se depura el proyecto.
 
 ## <a name="add-an-existing-model"></a>Agregar un modelo existente
  Puede importar un modelo que se creó con otras herramientas, como SharePoint Designer. Es posible que elija importar un modelo existente al proyecto en las situaciones siguientes:

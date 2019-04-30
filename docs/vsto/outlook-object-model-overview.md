@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e329631f0bdeb79a068e4a791158f94cec3904ee
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d2ad5a5424844896541e46d2afbc158320c7e5a3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061936"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442394"
 ---
 # <a name="outlook-object-model-overview"></a>Información general sobre el modelo de objetos de Outlook
   Para desarrollar complementos de VSTO para Microsoft Office Outlook, puede interactuar con los objetos que ofrece el modelo de objetos de Outlook. El modelo de objetos de Outlook proporciona clases e interfaces que representan elementos de la interfaz de usuario. Por ejemplo, el objeto <xref:Microsoft.Office.Interop.Outlook.Application> representa toda la aplicación, el objeto <xref:Microsoft.Office.Interop.Outlook.Folder> representa una carpeta que contiene mensajes de correo electrónico u otros elementos y el objeto <xref:Microsoft.Office.Interop.Outlook.MailItem> representa un mensaje de correo electrónico.
@@ -65,7 +65,7 @@ ms.locfileid: "60061936"
   Para obtener una instancia de la <xref:Microsoft.Office.Interop.Outlook.Application> de objeto, utilice el campo de la aplicación de la `ThisAddIn` clase del proyecto. Para obtener más información, consulte [complementos VSTO de programa](../vsto/programming-vsto-add-ins.md).
 
 > [!NOTE]
->  Para ayudar a evitar las advertencias de seguridad al usar propiedades y métodos que están bloqueados por la protección del modelo de objetos de Outlook, obtenga objetos de Outlook desde el campo de la aplicación de la `ThisAddIn` clase. Para obtener más información, consulte [consideraciones de seguridad específicas para soluciones de Office](../vsto/specific-security-considerations-for-office-solutions.md).
+> Para ayudar a evitar las advertencias de seguridad al usar propiedades y métodos que están bloqueados por la protección del modelo de objetos de Outlook, obtenga objetos de Outlook desde el campo de la aplicación de la `ThisAddIn` clase. Para obtener más información, consulte [consideraciones de seguridad específicas para soluciones de Office](../vsto/specific-security-considerations-for-office-solutions.md).
 
 ### <a name="explorer-object"></a>Objeto Explorer
  El objeto <xref:Microsoft.Office.Interop.Outlook.Explorer> representa una ventana que muestra el contenido de una carpeta que contiene elementos como mensajes de correo electrónico, tareas o citas. El objeto <xref:Microsoft.Office.Interop.Outlook.Explorer> incluye métodos y propiedades que puede usar para modificar la ventana, así como eventos que se generan cuando cambia la ventana.

@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bfee8d6183a8292f5c39140ada9d4787e4f027ac
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: df1045cd0b35a2c8d4afa765167693032c6d9936
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104556"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441819"
 ---
 # <a name="excel-object-model-overview"></a>Información general sobre el modelo de objetos de Excel
   Para desarrollar soluciones que usen Microsoft Office Excel, puede interactuar con los objetos proporcionados por el modelo de objetos de Excel. Este tema presenta los objetos más importantes:
@@ -80,7 +80,7 @@ ms.locfileid: "60104556"
  El objeto <xref:Microsoft.Office.Interop.Excel.Application> de Excel representa la propia aplicación Excel. El objeto <xref:Microsoft.Office.Interop.Excel.Application> expone una gran cantidad de información acerca de la aplicación en ejecución, las opciones que se aplican a esa instancia y los objetos del usuario actual que se abren en la instancia.
 
 > [!NOTE]
->  No debería establecer la propiedad <xref:Microsoft.Office.Interop.Excel.ApplicationClass.EnableEvents%2A> del objeto <xref:Microsoft.Office.Interop.Excel.Application> en Excel como **false**. Al establecer esta propiedad como false, impide que Excel active cualquier evento, incluidos los eventos de los controles host.
+> No debería establecer la propiedad <xref:Microsoft.Office.Interop.Excel.ApplicationClass.EnableEvents%2A> del objeto <xref:Microsoft.Office.Interop.Excel.Application> en Excel como **false**. Al establecer esta propiedad como false, impide que Excel active cualquier evento, incluidos los eventos de los controles host.
 
 ### <a name="workbook-object"></a>Objeto de libro
  El objeto <xref:Microsoft.Office.Interop.Excel.Workbook> representa un único libro dentro de la aplicación Excel.

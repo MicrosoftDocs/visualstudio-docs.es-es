@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e47934dd8aa2cea7a89f6e2ca0ff777227eba745
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 391095acc1d2f541a3c497abeac5ae7248baa4e8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58144958"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446628"
 ---
 # <a name="idebugdocumenthelperaddunicodetext"></a>IDebugDocumentHelper::AddUnicodeText
 Una cadena Unicode se anexa al final de este documento.  
@@ -51,7 +51,7 @@ HRESULT AddUnicodeText(
  Este método genera `IDebugDocumentTextEvents` notificaciones.  
   
 > [!NOTE]
->  Si se llama a este método después de `AddDeferredText` se ha llamado, `E_FAIL` se devuelve.  
+> Si se llama a este método después de `AddDeferredText` se ha llamado, `E_FAIL` se devuelve.  
   
 ## <a name="see-also"></a>Vea también  
  [IDebugDocumentHelper (interfaz)](../../winscript/reference/idebugdocumenthelper-interface.md)   

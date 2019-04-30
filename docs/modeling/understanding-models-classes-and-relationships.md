@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d486ae5c056be37c0284d39fabaa6945f5c91659
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d629c0049966d0520e0e40d23b0fd41798ccf2b6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045036"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386982"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Introducción a los modelos, las clases y las relaciones
 Un lenguaje específico de dominio (DSL) se define mediante su archivo de definición de DSL, junto con cualquier código de programa personalizado que se haya escrito. La mayoría del código de programa en la solución de DSL se genera a partir de este archivo.
@@ -93,7 +93,7 @@ Un lenguaje específico de dominio (DSL) se define mediante su archivo de defini
  Cuando se guarda un modelo de archivos en formato XML, elementos incrustados están anidados dentro de sus elementos primarios, a menos que haya personalizado la serialización.
 
 > [!NOTE]
->  Incrustación no es lo mismo que herencia. Los elementos secundarios en una relación de incrustación no heredan las propiedades del elemento primario. Una inclusión es un tipo de vínculo entre elementos de modelo. La herencia es una relación entre las clases y no crea vínculos entre elementos de modelo.
+> Incrustación no es lo mismo que herencia. Los elementos secundarios en una relación de incrustación no heredan las propiedades del elemento primario. Una inclusión es un tipo de vínculo entre elementos de modelo. La herencia es una relación entre las clases y no crea vínculos entre elementos de modelo.
 
 ### <a name="embedding-rules"></a>Reglas de incrustación
  Todos los elementos de un modelo de instancia deben ser el destino de exactamente un vínculo de incrustación, excepto la raíz del modelo.

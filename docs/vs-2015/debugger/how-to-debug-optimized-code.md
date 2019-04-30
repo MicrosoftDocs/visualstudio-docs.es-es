@@ -1,5 +1,5 @@
 ---
-title: Filtrar Depurar código optimizado | Documentos de Microsoft
+title: Procedimiento Depurar código optimizado | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -23,23 +23,23 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 35a5fc722a0d7b2ececa4aaa198381cdd3390a7b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 529fd979912d1743967109a11933140b482c2caf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58997990"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435722"
 ---
-# <a name="how-to-debug-optimized-code"></a>Filtrar Depuración de código optimizado
+# <a name="how-to-debug-optimized-code"></a>Procedimiento Depuración de código optimizado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 NOTA]
->  Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija Importar y exportar configuraciones en el menú Herramientas. Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija Importar y exportar configuraciones en el menú Herramientas. Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 > [!NOTE]
->  La opción de compilador [/Zo (Mejorar la depuración optimizada)](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f) (introducida en Visual Studio Update 3) genera información de depuración más enriquecida para código optimizado (proyectos que no se compilan con la opción de compilador **/Od**. Vea [Opciones /O (Optimizar código)](http://msdn.microsoft.com/library/77997af9-5555-4b3d-aa57-6615b27d4d5d). Esto incluye compatibilidad mejorada para la depuración de las variables locales y las funciones insertadas.  
+> La opción de compilador [/Zo (Mejorar la depuración optimizada)](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f) (introducida en Visual Studio Update 3) genera información de depuración más enriquecida para código optimizado (proyectos que no se compilan con la opción de compilador **/Od**. Vea [Opciones /O (Optimizar código)](http://msdn.microsoft.com/library/77997af9-5555-4b3d-aa57-6615b27d4d5d). Esto incluye compatibilidad mejorada para la depuración de las variables locales y las funciones insertadas.  
 >   
->  [Editar y continuar](../debugger/edit-and-continue-visual-csharp.md) está deshabilitado cuando se utiliza la opción de compilador **/zo**.  
+> [Editar y continuar](../debugger/edit-and-continue-visual-csharp.md) está deshabilitado cuando se utiliza la opción de compilador **/zo**.  
   
  Cuando el compilador optimiza el código, cambia de posición y reorganiza las instrucciones. Esto produce el código compilado más eficaz. Debido a esta reorganización, el depurador no siempre puede identificar el código fuente que corresponde a un conjunto de instrucciones.  
   
@@ -80,7 +80,7 @@ NOTA]
 9. Seleccione las propiedades de configuración, C/C ++, nodo de línea de comandos de la página de propiedades del proyecto y agregue `(` [/Zo](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f) `)` a la **opciones adicionales** cuadro de texto.  
   
     > [!WARNING]
-    >  `/Zo` requiere Visual Studio 2013 Update 3 o una versión posterior.  
+    > `/Zo` requiere Visual Studio 2013 Update 3 o una versión posterior.  
     >   
     >  Si se agrega `/Zo`, se deshabilitará [Editar y continuar](../debugger/edit-and-continue-visual-csharp.md).  
   

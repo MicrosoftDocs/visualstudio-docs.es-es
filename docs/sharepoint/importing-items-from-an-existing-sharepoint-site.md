@@ -18,18 +18,18 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 206cd77ae3c648add62b17c86a4966e6174c345c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 58f4dd6df35b9101ed3cd2a45943efc8078229f8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082586"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444364"
 ---
 # <a name="import-items-from-an-existing-sharepoint-site"></a>Importar elementos de un sitio de SharePoint existente
   La plantilla de proyecto Importar paquete de solución de SharePoint permite reutilizar elementos, como tipos de contenido y campos de sitios de SharePoint existentes en una nueva [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] solución de SharePoint. Aunque puede ejecutar la mayoría de las soluciones importadas sin modificaciones, hay algunas restricciones y aspectos a tener en cuenta, sobre todo si se modifican los elementos después de importarlos.
 
 > [!NOTE]
->  Para importar flujos de trabajo reutilizables, use la plantilla de proyecto Importar flujo de trabajo reutilizable. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Pautas para importar flujos de trabajo reutilizables](../sharepoint/guidelines-for-importing-reusable-workflows.md).
+> Para importar flujos de trabajo reutilizables, use la plantilla de proyecto Importar flujo de trabajo reutilizable. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Pautas para importar flujos de trabajo reutilizables](../sharepoint/guidelines-for-importing-reusable-workflows.md).
 
 ## <a name="supported-sharepoint-solutions"></a>Soluciones de SharePoint compatibles
  [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] es totalmente compatible con la importación de soluciones creadas en [!INCLUDE[wss_14_short](../sharepoint/includes/wss-14-short-md.md)] y [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)].

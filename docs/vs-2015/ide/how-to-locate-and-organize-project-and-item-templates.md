@@ -16,12 +16,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1f4788ab9fa23049ded8107fe1d33a9419b79c00
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4b14a374214a605ec718ad60c6942752f3134edd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091244"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416724"
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>Procedimiento Localizar y organizar el proyecto y plantillas de elemento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ Los archivos de plantilla se deben colocar en una ubicación que Visual Studio r
  Las categorías de los cuadros de diálogo **Nuevo proyecto** y **Agregar nuevo elemento** reflejan las estructuras de directorios que existen en las ubicaciones de plantillas instaladas y personalizadas. Puede modificar estas estructuras de directorios para organizar las plantillas de la manera que le resulte más lógica.  
   
 > [!NOTE]
->  No puede crear una nueva categoría en el nivel del lenguaje de programación. Solo se pueden crear categorías nuevas dentro de cada lenguaje.  
+> No puede crear una nueva categoría en el nivel del lenguaje de programación. Solo se pueden crear categorías nuevas dentro de cada lenguaje.  
   
  Si las estructuras de directorios de las plantillas instaladas y personalizadas de un lenguaje en particular no son iguales (es decir, si una de las carpetas tiene directorios que no existen en la otra), el conjunto de categorías que aparecerá en el cuadro de diálogo **Nuevo proyecto** será resultado de combinar todas las categorías.  
   

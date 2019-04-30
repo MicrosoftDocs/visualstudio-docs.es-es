@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bf8c3a43cfff286e43d099258913b816491527da
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d435ff9970748e8debe5edfd15514cde4f531b86
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065657"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63389708"
 ---
 # <a name="capturing-graphics-information"></a>Capturar información de gráficos
 Capture información de gráficos desde la aplicación basada en Direct3D para que pueda usar el Analizador de gráficos de Visual Studio con el fin de diagnosticar problemas de representación y de rendimiento.
@@ -40,7 +40,7 @@ Capture información de gráficos desde la aplicación basada en Direct3D para q
 - En el teclado, presione la tecla Impr Pant.
 
   > [!NOTE]
-  >  Mientras se ejecuta una aplicación en **Diagnóstico de gráficos**, la tecla Imprimir pantalla solo se puede utilizar para capturar un fotograma de información de gráficos, es decir, no funciona como lo hace normalmente. Esto es así hasta que deja de capturar información de gráficos, generalmente deteniendo la depuración o saliendo normalmente de la aplicación, incluso si otra aplicación tiene el foco.
+  > Mientras se ejecuta una aplicación en **Diagnóstico de gráficos**, la tecla Imprimir pantalla solo se puede utilizar para capturar un fotograma de información de gráficos, es decir, no funciona como lo hace normalmente. Esto es así hasta que deja de capturar información de gráficos, generalmente deteniendo la depuración o saliendo normalmente de la aplicación, incluso si otra aplicación tiene el foco.
 
 - En la interfaz de captura de Visual Studio, elija el botón **Capturar fotograma** situado debajo de la escala de tiempo **Sesión de diagnóstico** o elija el botón grande **Capturar fotograma** situado debajo de la calle **Fotogramas por segundo** y a la derecha de los fotogramas capturados anteriormente. En la imagen siguiente, están resaltados los dos botones.
 

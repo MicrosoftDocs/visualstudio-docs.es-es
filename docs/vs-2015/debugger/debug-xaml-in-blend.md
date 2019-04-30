@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4e78caf838a6e121fbe2778e7bdee2c5c87019a4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: beea8cd3ad6ac12bef284e0d5fda9e995a8613c5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58995442"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434099"
 ---
 # <a name="debug-xaml-in-blend"></a>Depurar XAML en Blend
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Puede usar las herramientas de [!INCLUDE[blend_first](../includes/blend-first-md
  Los errores de sintaxis se producen cuando el código XAML o los archivos de código subyacente no cumplen las reglas de formato del lenguaje. La descripción del error puede ayudarte a solucionarlo. La lista especifica también el nombre del archivo y el número de línea en que se produce el error. Los errores de XAML se muestran en la pestaña **Marcado** en el panel **Resultados**.  
   
 > [!TIP]
->  XAML es un lenguaje de marcado basado en XML y sigue las reglas sintácticas de XML.  
+> XAML es un lenguaje de marcado basado en XML y sigue las reglas sintácticas de XML.  
   
  Entre las causas comunes de errores de sintaxis de XAML, figuran las siguientes:  
   

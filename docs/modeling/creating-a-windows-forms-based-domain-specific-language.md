@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5e5d1fec376a1f35a8b2214a7bde4834cc6bd9d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: eb5f395952b17b6937dc264f8bec8021e6627d45
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60101800"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438177"
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>Crear lenguajes específicos de dominio basados en Windows Forms
 Puede usar Windows Forms para mostrar el estado de un modelo de lenguaje específico de dominio (DSL), en lugar de usar un diagrama DSL. Este tema le guiará a través de enlazar un formulario de Windows a un DSL, mediante el SDK de modelado y visualización de Visual Studio.
@@ -80,7 +80,7 @@ Puede usar Windows Forms para mostrar el estado de un modelo de lenguaje especí
      Asígnele propiedades de dominio adicional denominadas `Size` de tipo **Int32**, y `IsOrganic` de tipo **booleano**.
 
     > [!NOTE]
-    >  Si elimina la clase de dominio raíz y, a continuación, crear una nueva raíz, tendrá que restablecer la propiedad de la clase raíz del Editor. En **DSL Explorer**, seleccione **Editor**. A continuación, en la ventana Propiedades, establezca **clase raíz** a `Farm`.
+    > Si elimina la clase de dominio raíz y, a continuación, crear una nueva raíz, tendrá que restablecer la propiedad de la clase raíz del Editor. En **DSL Explorer**, seleccione **Editor**. A continuación, en la ventana Propiedades, establezca **clase raíz** a `Farm`.
 
 4. Use la **la clase de dominio denominado** herramienta para crear las clases de dominio siguientes:
 
@@ -105,7 +105,7 @@ Puede usar Windows Forms para mostrar el estado de un modelo de lenguaje especí
 10. Compilar el **Dsl** proyecto.
 
     > [!NOTE]
-    >  En esta fase, los otros proyectos no se compilarán sin errores. Sin embargo, deseamos crear el proyecto Dsl para que su ensamblado esté disponible para el Asistente para orígenes de datos.
+    > En esta fase, los otros proyectos no se compilarán sin errores. Sin embargo, deseamos crear el proyecto Dsl para que su ensamblado esté disponible para el Asistente para orígenes de datos.
 
 ## <a name="updating-the-ui-project"></a>Actualización del proyecto de interfaz de usuario
  Ahora puede crear un nuevo control de usuario que se mostrará la información que se almacena en el modelo de DSL. Para conectar el control de usuario con el modelo más sencillo es a través de enlaces de datos. El tipo de adaptador con el nombre de enlace de datos **ModelingBindingSource** está diseñado específicamente para conectar el DSL con interfaces no VMSDK.
@@ -149,7 +149,7 @@ Puede usar Windows Forms para mostrar el estado de un modelo de lenguaje especí
 6. Con el cuadro de herramientas, cree dos instancias de **DataGridView**y asígneles el nombre `AnimalGridView` y `FieldGridView`.
 
    > [!NOTE]
-   >  Un paso alternativo es arrastrar los elementos de los animales y los campos desde la ventana Orígenes de datos hasta el control. Esta acción crea automáticamente las cuadrículas de datos y enlaces entre la vista de cuadrícula y el origen de datos. Sin embargo, este enlace no funciona correctamente para el DSL. Por lo tanto, es mejor crear cuadrículas de datos y enlaces manualmente.
+   > Un paso alternativo es arrastrar los elementos de los animales y los campos desde la ventana Orígenes de datos hasta el control. Esta acción crea automáticamente las cuadrículas de datos y enlaces entre la vista de cuadrícula y el origen de datos. Sin embargo, este enlace no funciona correctamente para el DSL. Por lo tanto, es mejor crear cuadrículas de datos y enlaces manualmente.
 
 7. Si el cuadro de herramientas no contiene el **ModelingBindingSource** herramienta, agréguela. En el menú contextual de la **datos** ficha, elija **elegir elementos**. En el **elegir elementos del cuadro de herramientas** cuadro de diálogo, seleccione **ModelingBindingSource** desde el **ficha .NET Framework**.
 
@@ -221,7 +221,7 @@ Puede usar Windows Forms para mostrar el estado de un modelo de lenguaje especí
      `Goat1` aparece en el **animales** vista.
 
     > [!WARNING]
-    >  Debe usar el menú contextual en el **granja** nodo, no el **animales** nodo.
+    > Debe usar el menú contextual en el **granja** nodo, no el **animales** nodo.
 
 4. Seleccione el **granja** nodo raíz y ver sus propiedades.
 

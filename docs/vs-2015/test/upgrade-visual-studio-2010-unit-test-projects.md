@@ -8,12 +8,12 @@ ms.assetid: f1502b51-d6db-4894-9fbf-4a5723e4bb1a
 caps.latest.revision: 8
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 63e6be6a6b7c3e739ab590dd9f952fbb5988176b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: c66d8ba2f630812b08358fa3557035f58266ef00
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788644"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445908"
 ---
 # <a name="upgrade-visual-studio-2010-unit-test-projects"></a>Actualizar proyectos de prueba unitaria de Visual Studio 2010
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,13 +23,13 @@ ms.locfileid: "54788644"
  [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] introduce varios cambios para las pruebas unitarias. Debido a estos cambios, es importante comprender los problemas de compatibilidad entre versiones anteriores de Visual Studio y [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]. De entre los cambios a las pruebas unitarias, uno importante es que [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] incluye más de una plantilla de proyecto de prueba, incluyendo una plantilla de proyecto de prueba unitaria. Las pruebas unitarias nuevas se agregan a la nueva plantilla de proyecto de prueba unitaria. Las pruebas unitarias también pueden incluirse en otra plantilla de proyecto de prueba nueva denominada plantilla de proyecto de prueba de IU codificada. Para obtener más información sobre las nuevas plantillas de proyectos de prueba, consulte [Actualizar pruebas de versiones anteriores de Visual Studio](http://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52). Los nuevos proyectos de prueba unitaria ya no incluyen un archivo de configuración de pruebas de forma predeterminada. Si se excluye el archivo de configuración de pruebas, se mejora el rendimiento de las pruebas unitarias. Para la compatibilidad, aún puede usar los proyectos de prueba existentes creados con Visual Studio 2010. Sin embargo, se recomienda que quite el archivo de configuración asociado al proyecto de prueba por motivos de rendimiento, a menos que necesite específicamente el archivo de configuración de pruebas. Por ejemplo, puede conservar el archivo de configuración de pruebas si las pruebas unitarias se ejecutan en un entorno distribuido o si necesita recopilar datos de diagnóstico específicos. Si tiene una necesidad similar con la nueva plantilla de proyecto de prueba unitaria o la plantilla de proyecto de pruebas de IU codificadas, también puede agregarles manualmente un archivo de configuración de pruebas.
 
 > [!NOTE]
->  Las pruebas unitarias existentes en los proyectos de prueba de [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] SP1 funcionarán sin problemas entre [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] SP1 y [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]. No se realizan cambios a los archivos de proyecto de prueba cuando se abre un proyecto de prueba de Visual Studio 2010 que contiene las pruebas unitarias en [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], o viceversa.
+> Las pruebas unitarias existentes en los proyectos de prueba de [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] SP1 funcionarán sin problemas entre [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] SP1 y [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]. No se realizan cambios a los archivos de proyecto de prueba cuando se abre un proyecto de prueba de Visual Studio 2010 que contiene las pruebas unitarias en [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], o viceversa.
 
 > [!CAUTION]
->  Visual Studio 2010 no puede abrir proyectos de C + + / CLI cuyo destino sea el conjunto de herramientas 11.0, es decir, proyectos creados en Visual Studio 2012. Esta restricción no solo se aplica a los proyectos de prueba unitaria de C++/CLI, sino también a todos los proyectos de C++ /CLI.
+> Visual Studio 2010 no puede abrir proyectos de C + + / CLI cuyo destino sea el conjunto de herramientas 11.0, es decir, proyectos creados en Visual Studio 2012. Esta restricción no solo se aplica a los proyectos de prueba unitaria de C++/CLI, sino también a todos los proyectos de C++ /CLI.
 
 > [!NOTE]
->  Puede ejecutar las nuevas pruebas unitarias usando vstest.console.exe desde la línea de comandos. Para obtener más información sobre el uso de vstest.console.exe, consulte [Opciones de línea de comandos de VSTest.Console.exe](http://msdn.microsoft.com/library/52e1689d-b1a8-4589-bd98-99a55acd0a11), o ejecute el comando mediante el modificador de ayuda: **vstest.console.exe /?**. Aún puede ejecutar las pruebas unitarias existentes mediante MStest.exe. Para obtener más información, consulte[Ejecutar pruebas automatizadas desde la línea de comandos usando MSTest](http://msdn.microsoft.com/library/39b61ad0-0055-44b5-963f-25d8a6b51581) y [Opciones de la línea de comandos para MSTest.exe](http://msdn.microsoft.com/library/8813ba7f-e790-4e92-9f91-7080508a1c36).
+> Puede ejecutar las nuevas pruebas unitarias usando vstest.console.exe desde la línea de comandos. Para obtener más información sobre el uso de vstest.console.exe, consulte [Opciones de línea de comandos de VSTest.Console.exe](http://msdn.microsoft.com/library/52e1689d-b1a8-4589-bd98-99a55acd0a11), o ejecute el comando mediante el modificador de ayuda: **vstest.console.exe /?**. Aún puede ejecutar las pruebas unitarias existentes mediante MStest.exe. Para obtener más información, consulte[Ejecutar pruebas automatizadas desde la línea de comandos usando MSTest](http://msdn.microsoft.com/library/39b61ad0-0055-44b5-963f-25d8a6b51581) y [Opciones de la línea de comandos para MSTest.exe](http://msdn.microsoft.com/library/8813ba7f-e790-4e92-9f91-7080508a1c36).
 
  Otro cambio importante es el nuevo Explorador de pruebas. En [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], algunas de las ventanas de pruebas con que puede conocer de versiones anteriores de Visual Studio han quedado en desuso, como por ejemplo la ventana Vista de pruebas. El Explorador de pruebas está diseñado para dar mejor soporte a los desarrolladores y a los equipos que incorporan las pruebas unitarias en sus prácticas de desarrollo de software. Para obtener más información, consulte [Ejecutar pruebas unitarias con el Explorador de pruebas](../test/run-unit-tests-with-test-explorer.md).
 

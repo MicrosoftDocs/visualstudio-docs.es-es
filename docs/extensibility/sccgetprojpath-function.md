@@ -12,21 +12,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d3090048482d698c1678a80f2d3066569dcc243f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: abc7ecf0bb35f61785041d03f871409bbe499854
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721808"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434594"
 ---
 # <a name="sccgetprojpath-function"></a>SccGetProjPath function
 Esta función pide al usuario una ruta de acceso del proyecto, que es una cadena que solo es significativa para el complemento de control de código fuente. Se llama cuando el usuario es:
 
--   Crear un nuevo proyecto
+- Crear un nuevo proyecto
 
--   Agregar un proyecto existente al control de versiones
+- Agregar un proyecto existente al control de versiones
 
--   Intenta encontrar un proyecto existente de control de versión
+- Intenta encontrar un proyecto existente de control de versión
 
 ## <a name="syntax"></a>Sintaxis
 
@@ -105,7 +105,7 @@ SCCRTN SccGetProjPath (
  Para `lpUser`, el IDE puede pasar un nombre de usuario, o simplemente puede pasar un puntero a una cadena vacía. Si hay un nombre de usuario, el complemento de control de origen debe usar de forma predeterminada. Sin embargo, si se ha pasado ningún nombre o error de inicio de sesión con el nombre especificado, el complemento debe solicitar al usuario para un inicio de sesión y pase el nombre nuevo en `lpUser` cuando recibe un inicio de sesión válido. Dado que el complemento puede cambiar esta cadena, el IDE siempre asignará un búfer de tamaño (`SCC_USER_LEN`+ 1).
 
 > [!NOTE]
->  La primera acción que realiza el IDE puede ser una llamada a la `SccOpenProject` función o el `SccGetProjPath` función. Por lo tanto, ambas tienen un idénticos `lpUser` parámetro, que permite el control de código fuente para iniciar sesión el usuario en cualquier momento. Incluso si el valor devuelto de la función indica un error, el complemento debe rellenar esta cadena con un nombre de inicio de sesión válido.
+> La primera acción que realiza el IDE puede ser una llamada a la `SccOpenProject` función o el `SccGetProjPath` función. Por lo tanto, ambas tienen un idénticos `lpUser` parámetro, que permite el control de código fuente para iniciar sesión el usuario en cualquier momento. Incluso si el valor devuelto de la función indica un error, el complemento debe rellenar esta cadena con un nombre de inicio de sesión válido.
 
  `lpLocalPath` es el directorio donde el usuario mantiene el proyecto. Puede ser una cadena vacía. Si no hay ningún directorio definida actualmente (como en el caso de un usuario intenta descargar un proyecto desde el sistema de control de código fuente) y `bAllowChangePath` es `TRUE`, el complemento de control de código fuente puede solicitar al usuario para la entrada o utilizar algún otro método para colocar su cadena en el propietario `lpLocalPath`. Si `bAllowChangePath` es `FALSE`, el complemento no debería cambiar la cadena, porque el usuario ya está trabajando en el directorio especificado.
 

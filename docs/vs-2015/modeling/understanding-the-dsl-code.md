@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 25c4359a5ff64a3ddd229e872aa8a52303c22bf2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fef5d4ab83d22b31b64c6e6ec509cab47a426f9b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068436"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426952"
 ---
 # <a name="understanding-the-dsl-code"></a>Introducción al código DSL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Una solución de lenguaje específico de dominio (DSL) genera una API que puede 
  Para crear la solución que es el origen de la mayoría de los ejemplos de este tema, cree un DSL desde el **modelos de componentes** plantilla de solución. Esta es una de las plantillas estándar que aparece al crear una nueva solución de DSL.  
   
 > [!NOTE]
->  La plantilla de DSL de diagramas de componentes no está relacionado con los diagramas de componentes UML que se pueden crear mediante el menú de la arquitectura en Visual Studio. En el **nuevo proyecto** cuadro de diálogo, expanda **otros tipos de proyecto\extensibilidad** y, a continuación, haga clic en **Diseñador de lenguaje específico de dominio**.  
+> La plantilla de DSL de diagramas de componentes no está relacionado con los diagramas de componentes UML que se pueden crear mediante el menú de la arquitectura en Visual Studio. En el **nuevo proyecto** cuadro de diálogo, expanda **otros tipos de proyecto\extensibilidad** y, a continuación, haga clic en **Diseñador de lenguaje específico de dominio**.  
   
  Si no está familiarizado con esta plantilla de solución, presione F5 y experimente. En concreto, tenga en cuenta que los puertos se crean arrastrando una herramienta de puerto a un componente, y que puede conectar puertos.  
   
@@ -133,7 +133,7 @@ Una solución de lenguaje específico de dominio (DSL) genera una API que puede 
   La clase que representa el modelo de dominio. Deriva de <xref:Microsoft.VisualStudio.Modeling.DomainModel>.  
   
 > [!NOTE]
->  No es la misma que la clase raíz del modelo.  
+> No es la misma que la clase raíz del modelo.  
   
  Copy y Delete Closures definen qué otros elementos se deben incluir cuando se copia o se elimina un elemento. Puede controlar este comportamiento estableciendo el **Propagates Copy** y **propaga eliminar** propiedades de los roles en ambos lados de todas las relaciones. Si quiere que los valores se determinen dinámicamente, puede escribir código para invalidar los métodos de las clases Closure. Para obtener más información, vea [Cómo: Programar el comportamiento de copiar y pegar - redirección](../misc/how-to-program-copy-and-paste-behavior-redirect.md).  
   
@@ -344,7 +344,7 @@ explorerWindow.TreeContainer.ObjectModelBrowser.SelectedNode = treeNode;
  Para personalizar este archivo, edite el archivo `.tt`.  
   
 > [!WARNING]
->  Si edita el archivo .tt para incluir recursos como iconos o imágenes, asegúrese de que el recurso se incluye en la compilación de VSIX. En el Explorador de soluciones, seleccione el archivo y asegúrese de que el **incluir en VSIX** propiedad es `True`.  
+> Si edita el archivo .tt para incluir recursos como iconos o imágenes, asegúrese de que el recurso se incluye en la compilación de VSIX. En el Explorador de soluciones, seleccione el archivo y asegúrese de que el **incluir en VSIX** propiedad es `True`.  
   
  Este archivo controla cómo se empaqueta el DSL en una extensión de integración de Visual Studio (VSIX). Para obtener más información, vea [Implementación de soluciones de lenguaje específico de dominio](../modeling/deploying-domain-specific-language-solutions.md).  
   

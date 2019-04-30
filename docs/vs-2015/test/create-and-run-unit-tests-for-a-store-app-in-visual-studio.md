@@ -11,12 +11,12 @@ caps.latest.revision: 28
 author: alexhomer1
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3c328b8522913dcb8095c09a031b2a2c80f58030
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0fc24dc76e59a04b9485a71ba4dff44e0c7ba64d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086772"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442806"
 ---
 # <a name="create-and-run-unit-tests-for-a-store-app-in-visual-studio"></a>Crear y ejecutar pruebas unitarias para una aplicación de la Tienda en Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "60086772"
 Las herramientas de prueba de unidades de Visual Studio 2012 Express para Windows 8 están diseñadas para ofrecer soporte a desarrolladores y equipos que incorporan las pruebas de unidades en sus prácticas de desarrollo de software. Las pruebas de unidades ofrecen a los desarrolladores y evaluadores un modo eficaz y fácil de mantener para buscar errores en los métodos de clases en proyectos de Visual C#, Visual Basic y Visual C++.
 
 > [!NOTE]
->  En los temas de esta sección se describe la funcionalidad de Visual Studio 2012 Express para Windows 8. Visual Studio Ultimate, VS Premium y VS Professional proporcionan características adicionales para pruebas unitarias.
+> En los temas de esta sección se describe la funcionalidad de Visual Studio 2012 Express para Windows 8. Visual Studio Ultimate, VS Premium y VS Professional proporcionan características adicionales para pruebas unitarias.
 >
 > - En VS Ultimate, VS Premium y VS Professional puede usar cualquier marco de pruebas de unidades de código abierto o de terceros que haya creado un adaptador de complementos para el Explorador de pruebas de Microsoft. También puede analizar y mostrar información de cobertura de código para las pruebas con VS Ultimate y VS Premium.
 >   - En VS Ultimate, puede ejecutar las pruebas después de cada compilación. También puede usar Microsoft Fakes, un marco de aislamiento para código administrado para centrar sus pruebas en su propio código sustituyendo el código de prueba para el sistema y la funcionalidad de terceros.

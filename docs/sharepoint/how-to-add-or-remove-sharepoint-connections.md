@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 70594f8c881289bd394f33353f237bdab71c91f1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3c094ad703727903e7109d6a748b8383e4cad7d6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077373"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435485"
 ---
 # <a name="how-to-add-or-remove-sharepoint-connections"></a>Procedimiento Agregar o quitar conexiones de SharePoint
   Explorador de servidores le permite examinar los sitios de SharePoint, así como las conexiones de datos. Sin embargo, para poder examinar el contenido de un sitio de SharePoint debe agregarlo a la **conexiones de SharePoint** nodo.
@@ -41,7 +41,7 @@ ms.locfileid: "60077373"
 3. Elija el sitio y, a continuación, en la barra de menús, elija **editar** > **eliminar**.
 
     > [!NOTE]
-    >  Este paso no elimina el sitio subyacente. elimina solo la conexión desde **Explorador de servidores**.
+    > Este paso no elimina el sitio subyacente. elimina solo la conexión desde **Explorador de servidores**.
 
 ## <a name="see-also"></a>Vea también
 - [Examinar las conexiones de SharePoint mediante el Explorador de servidores](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)

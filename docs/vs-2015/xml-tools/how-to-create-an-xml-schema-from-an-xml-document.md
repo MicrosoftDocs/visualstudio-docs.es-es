@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8e32d96451e2494816ddd5f7a66591f40f847e85
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0f12436f9f129c6fb8a0fe3a4b6c853a9e58e650
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066070"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438126"
 ---
 # <a name="how-to-create-an-xml-schema-from-an-xml-document"></a>Procedimiento Crear un esquema XML a partir de un documento XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ El Editor XML permite crear un esquema de lenguaje de definición de esquemas XM
      Los esquemas se pueden guardar en un disco, agregarse a un proyecto o descartarse.  
   
     > [!NOTE]
-    >  El **Create Schema** comando también está disponible en el menú contextual del Editor XML y, en el **XML** menú.  
+    > El **Create Schema** comando también está disponible en el menú contextual del Editor XML y, en el **XML** menú.  
   
 ## <a name="see-also"></a>Vea también  
  [Editor XML](../xml-tools/xml-editor.md)
