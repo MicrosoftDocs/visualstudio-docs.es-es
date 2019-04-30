@@ -23,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eb2f257feaa8faa6acf58c8e8763d15d08a1079e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 7a2531f1cc6352a03acf0b3d6af82c35e47c2743
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596573"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387726"
 ---
 # <a name="bdc-model-design-tools-overview"></a>Introducción a las herramientas de diseño de modelo BDC
   Puede diseñar un modelo de conectividad de datos profesionales (BDC) mediante el Diseñador de BDC, el **detalles del método de BDC** ventana y el **Explorador de BDC**.
@@ -63,13 +63,13 @@ ms.locfileid: "56596573"
  Mientras selecciona los nodos en el **Explorador de BDC**, aparecen las propiedades de cada nodo que elija en la **propiedades** ventana. Muchas de estas propiedades corresponden a atributos en el archivo de modelo. Puede buscar el modelo mediante el cuadro de búsqueda en la parte superior de la **Explorador de BDC**.
 
 > [!NOTE]
->  El **Explorador de BDC** no muestra los identificadores, propiedades personalizadas, cadenas localizadas, grupos de asociaciones, acciones, descriptores de filtro, listas de control de acción y los valores de parámetro predeterminados.
+> El **Explorador de BDC** no muestra los identificadores, propiedades personalizadas, cadenas localizadas, grupos de asociaciones, acciones, descriptores de filtro, listas de control de acción y los valores de parámetro predeterminados.
 
 ### <a name="define-type-descriptors"></a>Definir descriptores de tipo
  Use la **Explorador de BDC** para definir descriptores de tipo. El Explorador de BDC le permite definir un descriptor de tipo una vez y, a continuación, volver a usar ese descriptor de tipo en otro lugar en el modelo. Para lograr esto, copie un descriptor de tipos y péguelo en cualquier otro parámetro o descriptor de tipos.
 
 > [!NOTE]
->  Los cambios realizados en un descriptor de tipos original no afectan a las copias de ese descriptor de tipos.
+> Los cambios realizados en un descriptor de tipos original no afectan a las copias de ese descriptor de tipos.
 
  Para obtener más información, vea [Cómo: Definir el descriptor de tipo de un parámetro](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).
 

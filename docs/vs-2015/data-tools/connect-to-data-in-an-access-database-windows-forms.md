@@ -20,12 +20,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 10b4efd574dd5829e4717b168dc4e565476e9b52
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4a6909bade36dce15bfae725fbaab60f24236451
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102970"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436999"
 ---
 # <a name="connect-to-data-in-an-access-database-windows-forms"></a>Conectar a los datos en una base de datos de Access (Windows Forms)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ Puede conectarse a una base de datos de Access (un archivo .mdf o un archivo .ac
      ![Cambiar el proveedor de datos OLE DB](../data-tools/media/datachangedatasourceoledb.png "dataChangeDataSourceOLEDB")  
   
     > [!IMPORTANT]
-    >  Aunque un origen de datos de **archivo de base de datos de Microsoft Access (OLE DB)** puede parecer la opción adecuada, usar ese tipo de origen de datos solo para archivos .mdb de base de datos.  
+    > Aunque un origen de datos de **archivo de base de datos de Microsoft Access (OLE DB)** puede parecer la opción adecuada, usar ese tipo de origen de datos solo para archivos .mdb de base de datos.  
   
 8. En **proveedor OLE DB**, seleccione **Microsoft Office 12.0 Access Database Engine OLE DB Provider**.  
   
@@ -70,7 +70,7 @@ Puede conectarse a una base de datos de Access (un archivo .mdf o un archivo .ac
 9. En **nombre de archivo o servidor**, especifique la ruta de acceso y el nombre del archivo .accdb al que desea conectarse y, a continuación, seleccione **Aceptar**.  
   
     > [!NOTE]
-    >  Si el archivo de base de datos tiene un nombre de usuario y una contraseña, especificar estos recursos antes de seleccionar **Aceptar**.  
+    > Si el archivo de base de datos tiene un nombre de usuario y una contraseña, especificar estos recursos antes de seleccionar **Aceptar**.  
   
 10. Seleccione **siguiente** en el **elegir la conexión de datos** página.  
   

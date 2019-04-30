@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c2d06098d1643f4c9b5e64206cdf94362a2c97b4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8697a49c57840d358eeaa597fe984b6671958b09
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040151"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446967"
 ---
 # <a name="ribbon-overview"></a>Información general de la cinta de opciones
   La cinta de opciones es una manera de organizar comandos relacionados para que sean fáciles de encontrar. Los comandos aparecen como controles en la cinta de opciones. Los controles se organizan en *grupos* a lo largo de una franja horizontal en el borde superior de una ventana de aplicación. Los grupos relacionados se organizan en pestañas.
@@ -49,7 +49,7 @@ ms.locfileid: "60040151"
 - Agregue grupos personalizados a una pestaña personalizada o integrada.
 
   > [!NOTE]
-  >  Una pestaña integrada o un grupo es uno que ya existe en la cinta de opciones de una aplicación de Microsoft Office. Por ejemplo, el **datos** ficha es una pestaña integrada en Excel. El **conexiones** grupo es un grupo integrado en el **datos** ficha.
+  > Una pestaña integrada o un grupo es uno que ya existe en la cinta de opciones de una aplicación de Microsoft Office. Por ejemplo, el **datos** ficha es una pestaña integrada en Excel. El **conexiones** grupo es un grupo integrado en el **datos** ficha.
 
 - Agregue controles personalizados a un grupo personalizado.
 
@@ -96,7 +96,7 @@ ms.locfileid: "60040151"
 - Crear cintas de opciones para Outlook *inspectores*. Para obtener más información, consulte [personalizar una cinta de opciones para Outlook](../vsto/customizing-a-ribbon-for-outlook.md).
 
     > [!NOTE]
-    >  Un Inspector es una ventana que se abre cuando los usuarios realizan ciertas tareas, como crear un mensaje de correo electrónico.
+    > Un Inspector es una ventana que se abre cuando los usuarios realizan ciertas tareas, como crear un mensaje de correo electrónico.
 
 - Seleccione qué cinta se mostrará en tiempo de ejecución.
 
@@ -106,7 +106,7 @@ ms.locfileid: "60040151"
  Para seleccionar una cinta se mostrará en tiempo de ejecución, invalide el `CreateRibbonExtensibilityObject` método en el `ThisAddin`, `ThisWorkbook`, o `ThisDocument` clase del proyecto y devuelva la cinta que desea mostrar. En el ejemplo siguiente se comprueba el valor de un campo denominado `myCondition` y devuelve la cinta adecuada.
 
 > [!NOTE]
->  La sintaxis utilizada en este ejemplo devuelve una cinta de opciones que se creó mediante la **cinta (diseñador Visual)** elemento. La sintaxis para devolver una cinta de opciones que se crea mediante un **cinta (XML)** elemento es ligeramente diferente. Para obtener más información sobre cómo devolver un **cinta (XML)** de elemento, vea [Ribbon XML](../vsto/ribbon-xml.md).
+> La sintaxis utilizada en este ejemplo devuelve una cinta de opciones que se creó mediante la **cinta (diseñador Visual)** elemento. La sintaxis para devolver una cinta de opciones que se crea mediante un **cinta (XML)** elemento es ligeramente diferente. Para obtener más información sobre cómo devolver un **cinta (XML)** de elemento, vea [Ribbon XML](../vsto/ribbon-xml.md).
 
  Agregue el código siguiente:
 

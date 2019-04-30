@@ -20,12 +20,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a6080539a3f8b5f93a8d6fcd144dbd26dbd9eeaf
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: f12e8e50b07157f581635fcbd43dbe7863ec40f1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59667019"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436941"
 ---
 # <a name="create-a-windows-form-to-search-data"></a>Crear Windows Forms para buscar en datos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,35 +38,35 @@ Un escenario habitual de la aplicación es mostrar los datos seleccionados en un
   
  Las tareas ilustradas en este tutorial incluyen:  
   
--   Crear un nuevo proyecto de aplicación de Windows Forms.  
+- Crear un nuevo proyecto de aplicación de Windows Forms.  
   
--   Crear y configurar el origen de datos en la aplicación con el **configuración origen de datos** asistente.  
+- Crear y configurar el origen de datos en la aplicación con el **configuración origen de datos** asistente.  
   
--   Establecer el tipo de colocación de los elementos de la **orígenes de datos** ventana.  
+- Establecer el tipo de colocación de los elementos de la **orígenes de datos** ventana.  
   
--   Crear controles que muestran datos arrastrando elementos desde la ventana **Orígenes de datos** hasta un formulario.  
+- Crear controles que muestran datos arrastrando elementos desde la ventana **Orígenes de datos** hasta un formulario.  
   
--   Agregar controles para mostrar los datos en el formulario.  
+- Agregar controles para mostrar los datos en el formulario.  
   
--   Completar la **generador de criterios de búsqueda** cuadro de diálogo.  
+- Completar la **generador de criterios de búsqueda** cuadro de diálogo.  
   
--   Escribir parámetros en el formulario y ejecutar la consulta con parámetros.  
+- Escribir parámetros en el formulario y ejecutar la consulta con parámetros.  
   
 ## <a name="prerequisites"></a>Requisitos previos  
  Para completar las tareas de este tutorial, necesitará:  
   
--   Acceso a la base de datos de ejemplo Northwind.  
+- Acceso a la base de datos de ejemplo Northwind.  
   
 ## <a name="create-the-windows-application"></a>Crear la aplicación de Windows  
  El primer paso es crear un **aplicación Windows**. Asignar un nombre al proyecto es opcional en este paso, pero daremos un nombre aquí porque se ahorrará más adelante.  
   
 #### <a name="to-create-the-new-windows-application-project"></a>Para crear el nuevo proyecto de aplicación para Windows  
   
-1.  Desde el **archivo** menú, cree un nuevo proyecto.  
+1. Desde el **archivo** menú, cree un nuevo proyecto.  
   
-2.  Dé un nombre al proyecto `WindowsSearchForm`.  
+2. Dé un nombre al proyecto `WindowsSearchForm`.  
   
-3.  Seleccione **aplicación Windows** y haga clic en **Aceptar**.  
+3. Seleccione **aplicación Windows** y haga clic en **Aceptar**.  
   
      El proyecto **WindowsSearchForm** se crea y se agrega al **Explorador de soluciones**.  
   
@@ -75,25 +75,25 @@ Un escenario habitual de la aplicación es mostrar los datos seleccionados en un
   
 #### <a name="to-create-the-data-source"></a>Para crear el origen de datos  
   
-1.  En el menú **Datos** , haga clic en **Mostrar orígenes de datos**.  
+1. En el menú **Datos** , haga clic en **Mostrar orígenes de datos**.  
   
-2.  En la ventana **Orígenes de datos**, seleccione **Agregar nuevo origen de datos** para iniciar el **Asistente para configuración de orígenes de datos**.  
+2. En la ventana **Orígenes de datos**, seleccione **Agregar nuevo origen de datos** para iniciar el **Asistente para configuración de orígenes de datos**.  
   
-3.  Seleccione **Base de datos** en la página **Elegir un tipo de datos de origen** y luego haga clic en **Siguiente**.  
+3. Seleccione **Base de datos** en la página **Elegir un tipo de datos de origen** y luego haga clic en **Siguiente**.  
   
-4.  En la página **Elegir la conexión de datos** realice una de las siguientes operaciones:  
+4. En la página **Elegir la conexión de datos** realice una de las siguientes operaciones:  
   
-    -   Si una conexión de datos a la base de datos de ejemplo Northwind está disponible en la lista desplegable, selecciónela.  
+    - Si una conexión de datos a la base de datos de ejemplo Northwind está disponible en la lista desplegable, selecciónela.  
   
-    -   Seleccione **Nueva conexión** para iniciar el cuadro de diálogo **Agregar o modificar conexión**.  
+    - Seleccione **Nueva conexión** para iniciar el cuadro de diálogo **Agregar o modificar conexión**.  
   
-5.  Si su base de datos requiere una contraseña, seleccione la opción para incluir datos confidenciales y haga clic en **Siguiente**.  
+5. Si su base de datos requiere una contraseña, seleccione la opción para incluir datos confidenciales y haga clic en **Siguiente**.  
   
-6.  Haga clic en **Siguiente** en la página **Guardar la cadena de conexión en el archivo de configuración de la aplicación**.  
+6. Haga clic en **Siguiente** en la página **Guardar la cadena de conexión en el archivo de configuración de la aplicación**.  
   
-7.  Expanda el nodo **Tablas** en la página **Elija los objetos de base de datos**.  
+7. Expanda el nodo **Tablas** en la página **Elija los objetos de base de datos**.  
   
-8.  Seleccione la tabla **Customers** y, a continuación, haga clic en **Finalizar**.  
+8. Seleccione la tabla **Customers** y, a continuación, haga clic en **Finalizar**.  
   
      Se agrega al proyecto **NorthwindDataSet** y la tabla **Customers** aparece en la ventana **Orígenes de datos**.  
   
@@ -102,9 +102,9 @@ Un escenario habitual de la aplicación es mostrar los datos seleccionados en un
   
 #### <a name="to-create-data-bound-controls-on-the-form"></a>Para crear controles enlazados en el formulario  
   
-1.  Expanda el nodo **Customers** en la ventana **Orígenes de datos**.  
+1. Expanda el nodo **Customers** en la ventana **Orígenes de datos**.  
   
-2.  Arrastre el nodo **Customers** desde la ventana **Orígenes de datos** hasta el formulario.  
+2. Arrastre el nodo **Customers** desde la ventana **Orígenes de datos** hasta el formulario.  
   
      En el formulario aparecen un control <xref:System.Windows.Forms.DataGridView> y una barra de herramientas (<xref:System.Windows.Forms.BindingNavigator>) para navegar por los registros. En la bandeja de componentes aparecen [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource> y <xref:System.Windows.Forms.BindingNavigator>.  
   
@@ -113,11 +113,11 @@ Un escenario habitual de la aplicación es mostrar los datos seleccionados en un
   
 #### <a name="to-create-a-parameterized-query-and-controls-to-enter-the-parameters"></a>Para crear una consulta parametrizada y controles para escribir los parámetros  
   
-1.  Seleccione el control <xref:System.Windows.Forms.DataGridView> y, a continuación, elija **Agregar consulta** en el menú **Datos**.  
+1. Seleccione el control <xref:System.Windows.Forms.DataGridView> y, a continuación, elija **Agregar consulta** en el menú **Datos**.  
   
-2.  Tipo `FillByCity` en el **nuevo nombre de consulta** área en la **generador de criterios de búsqueda** cuadro de diálogo.  
+2. Tipo `FillByCity` en el **nuevo nombre de consulta** área en la **generador de criterios de búsqueda** cuadro de diálogo.  
   
-3.  Agregue `WHERE City = @City` a la consulta en el área **Texto de la consulta**.  
+3. Agregue `WHERE City = @City` a la consulta en el área **Texto de la consulta**.  
   
      La consulta debe ser similar a lo siguiente:  
   
@@ -128,9 +128,9 @@ Un escenario habitual de la aplicación es mostrar los datos seleccionados en un
      `WHERE City = @City`  
   
     > [!NOTE]
-    >  Orígenes de datos de Access y OLE DB utilizan el signo de interrogación ("?") para denotar los parámetros, por lo que la cláusula WHERE tendría un aspecto similar al siguiente: `WHERE City = ?`.  
+    > Orígenes de datos de Access y OLE DB utilizan el signo de interrogación ("?") para denotar los parámetros, por lo que la cláusula WHERE tendría un aspecto similar al siguiente: `WHERE City = ?`.  
   
-4.  Haga clic en **Aceptar** para cerrar el cuadro de diálogo **Generador de criterios de búsqueda**.  
+4. Haga clic en **Aceptar** para cerrar el cuadro de diálogo **Generador de criterios de búsqueda**.  
   
      **FillByCityToolStrip** se agrega al formulario.  
   
@@ -139,18 +139,18 @@ Un escenario habitual de la aplicación es mostrar los datos seleccionados en un
   
 #### <a name="to-test-the-application"></a>Para probar la aplicación  
   
-1.  Presione F5 para ejecutar la aplicación.  
+1. Presione F5 para ejecutar la aplicación.  
   
-2.  Escriba **Londres** en el cuadro de texto **Ciudad** y haga clic en **FillByCity**.  
+2. Escriba **Londres** en el cuadro de texto **Ciudad** y haga clic en **FillByCity**.  
   
      La cuadrícula de datos se rellena con los clientes que cumplen los criterios. En este ejemplo, la cuadrícula de datos muestra sólo los clientes que tienen un valor de **Londres** en su columna **Ciudad**.  
   
 ## <a name="next-steps"></a>Pasos siguientes  
  Dependiendo de los requisitos de la aplicación, existen varios pasos que se pueden realizar después de crear un formulario parametrizado. Entre las mejoras que podría realizar se incluyen:  
   
--   Agregar controles que muestran datos relacionados.  
+- Agregar controles que muestran datos relacionados.  
   
--   Modificar el conjunto de datos agregando o quitando objetos de la base de datos. Para obtener más información, vea [Crear y configurar conjuntos de datos](../data-tools/create-and-configure-datasets-in-visual-studio.md).  
+- Modificar el conjunto de datos agregando o quitando objetos de la base de datos. Para obtener más información, vea [Crear y configurar conjuntos de datos](../data-tools/create-and-configure-datasets-in-visual-studio.md).  
   
 ## <a name="see-also"></a>Vea también  
  [Enlazar controles de Windows Forms a datos en Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

@@ -13,12 +13,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e27892859dd58add2f505fa04e21faac5576a80b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 91f81036345e647820353911356c01b7c4caff99
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088761"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426550"
 ---
 # <a name="implementing-custom-code-analysis-check-in-policies-for-managed-code"></a>Implementar directivas de protección de análisis de código personalizadas para el código administrado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Un directiva de protección especifica un conjunto de reglas que los miembros de
  Para crear una regla personalizada establecido para un proyecto de equipo, primero se crea una carpeta especial para la regla de directiva de protección se establece **Explorador de Control de código fuente**. A continuación, cree el archivo de conjunto de reglas y agregue el archivo al control de versiones. Por último, especifique el conjunto de reglas como la directiva de comprobación del análisis de código del proyecto de equipo.  
   
 > [!NOTE]
->  Para crear una carpeta en un proyecto de equipo, primero debe asignar la raíz del proyecto de equipo a una ubicación en el equipo local. Para obtener más información, consulte [crear y trabajar con áreas de trabajo (antiguo)](http://msdn.microsoft.com/db4d5692-179a-44fe-ad31-0c1c900c9cb2).  
+> Para crear una carpeta en un proyecto de equipo, primero debe asignar la raíz del proyecto de equipo a una ubicación en el equipo local. Para obtener más información, consulte [crear y trabajar con áreas de trabajo (antiguo)](http://msdn.microsoft.com/db4d5692-179a-44fe-ad31-0c1c900c9cb2).  
   
 #### <a name="to-create-the-version-control-folder-for-the-check-in-policy-rule-set"></a>Para crear la carpeta de control de versiones para el conjunto de reglas de directiva de protección  
   
@@ -72,7 +72,7 @@ Un directiva de protección especifica un conjunto de reglas que los miembros de
 4. En el **en el repositorio** cuadro de diálogo, tiene la opción para agregar un comentario y, a continuación, haga clic en **proteger**.  
   
     > [!NOTE]
-    >  Si ya ha configurado una directiva de protección de análisis de código para el proyecto de equipo y ha seleccionado la **exigir la protección para que solo contenga los archivos que forman parte de la solución actual**, se desencadenará una advertencia de error de directiva. En el cuadro de diálogo de error de la directiva, seleccione **invalidar el error de directiva y continuar la protección**. Agregue un comentario necesario y, a continuación, haga clic en **Aceptar**.  
+    > Si ya ha configurado una directiva de protección de análisis de código para el proyecto de equipo y ha seleccionado la **exigir la protección para que solo contenga los archivos que forman parte de la solución actual**, se desencadenará una advertencia de error de directiva. En el cuadro de diálogo de error de la directiva, seleccione **invalidar el error de directiva y continuar la protección**. Agregue un comentario necesario y, a continuación, haga clic en **Aceptar**.  
   
 #### <a name="to-specify-the-rule-set-file-as-the-check-in-policy"></a>Para especificar la regla de conjunto de archivos como la directiva de protección  
   
@@ -91,7 +91,7 @@ Un directiva de protección especifica un conjunto de reglas que los miembros de
      **$/** `TeamProjectName` **/** `VersionControlPath`  
   
     > [!NOTE]
-    >  Puede copiar la ruta de acceso mediante uno de los siguientes procedimientos en **Explorador de Control de código fuente**:  
+    > Puede copiar la ruta de acceso mediante uno de los siguientes procedimientos en **Explorador de Control de código fuente**:  
   
     - En el **carpetas** panel, haga clic en la carpeta que contiene el archivo de conjunto de reglas. Copie la ruta de acceso de control de versiones de la carpeta que aparece en el **origen** cuadro y escriba el nombre del archivo de conjunto de reglas manualmente.  
   

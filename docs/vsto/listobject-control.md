@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1df66fcc2e7844bb05ff9a09e8fc71b6fb59ea9f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 323286555bf1ed932b85ed6da84a344787fae265
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60073637"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438786"
 ---
 # <a name="listobject-control"></a>ListObject (control)
   El control <xref:Microsoft.Office.Tools.Excel.ListObject> es una lista que expone eventos y se puede enlazar a datos. Al agregar una lista a una hoja de cálculo, Visual Studio crea un control <xref:Microsoft.Office.Tools.Excel.ListObject> que se puede programar directamente sin tener que recorrer el modelo de objetos de Microsoft Office Excel.
@@ -34,13 +34,13 @@ ms.locfileid: "60073637"
  En proyectos de nivel de documento, puede agregar controles <xref:Microsoft.Office.Tools.Excel.ListObject> a la hoja de cálculo en tiempo de diseño o en tiempo de ejecución. En proyectos de complemento VSTO, puede agregar <xref:Microsoft.Office.Tools.Excel.ListObject> controles a hojas de cálculo solo en tiempo de ejecución. Para obtener más información, vea [Cómo: Agregar controles ListObject a hojas de cálculo](../vsto/how-to-add-listobject-controls-to-worksheets.md).
 
 > [!NOTE]
->  De forma predeterminada, los objetos de lista creados de forma dinámica no se conservan en la hoja de cálculo como controles host cuando se cierra la hoja de cálculo. Para obtener más información, consulte [agregar controles a documentos de Office en tiempo de ejecución](../vsto/adding-controls-to-office-documents-at-run-time.md).
+> De forma predeterminada, los objetos de lista creados de forma dinámica no se conservan en la hoja de cálculo como controles host cuando se cierra la hoja de cálculo. Para obtener más información, consulte [agregar controles a documentos de Office en tiempo de ejecución](../vsto/adding-controls-to-office-documents-at-run-time.md).
 
 ## <a name="bind-data-to-the-control"></a>Enlazar datos al control
  Un control <xref:Microsoft.Office.Tools.Excel.ListObject> admite el enlace de datos simple y complejo. El <xref:Microsoft.Office.Tools.Excel.ListObject> control se puede enlazar a un origen de datos mediante el <xref:Microsoft.Office.Tools.Excel.ListObject.DataSource%2A> y <xref:Microsoft.Office.Tools.Excel.ListObject.DataMember%2A> propiedades en tiempo de diseño o el <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> método en tiempo de ejecución.
 
 > [!NOTE]
->  El <xref:Microsoft.Office.Tools.Excel.ListObject> se actualiza automáticamente cuando se enlaza a un origen de datos, como un <xref:System.Data.DataTable>, que genera eventos cuando cambian los datos. Si enlaza el <xref:Microsoft.Office.Tools.Excel.ListObject> a un origen de datos que no provoca eventos cuando cambian los datos, se debe llamar al método <xref:Microsoft.Office.Tools.Excel.ListObject.RefreshDataRow%2A> o <xref:Microsoft.Office.Tools.Excel.ListObject.RefreshDataRows%2A> para actualizar <xref:Microsoft.Office.Tools.Excel.ListObject>.
+> El <xref:Microsoft.Office.Tools.Excel.ListObject> se actualiza automáticamente cuando se enlaza a un origen de datos, como un <xref:System.Data.DataTable>, que genera eventos cuando cambian los datos. Si enlaza el <xref:Microsoft.Office.Tools.Excel.ListObject> a un origen de datos que no provoca eventos cuando cambian los datos, se debe llamar al método <xref:Microsoft.Office.Tools.Excel.ListObject.RefreshDataRow%2A> o <xref:Microsoft.Office.Tools.Excel.ListObject.RefreshDataRows%2A> para actualizar <xref:Microsoft.Office.Tools.Excel.ListObject>.
 
  Cuando se agrega un <xref:Microsoft.Office.Tools.Excel.ListObject> a una celda de la hoja de cálculo asignando un elemento de esquema repetitivo a esa celda, Visual Studio asigna automáticamente <xref:Microsoft.Office.Tools.Excel.ListObject> al conjunto de datos generado. Sin embargo, <xref:Microsoft.Office.Tools.Excel.ListObject> no se enlaza automáticamente a los datos. Puede tomar medidas para enlazar la <xref:Microsoft.Office.Tools.Excel.ListObject> al conjunto de datos en tiempo de diseño o en tiempo de ejecución en un proyecto de nivel de documento. Se puede enlazar mediante programación la <xref:Microsoft.Office.Tools.Excel.ListObject> al conjunto de datos en tiempo de ejecución en un complemento de VSTO.
 
@@ -49,7 +49,7 @@ ms.locfileid: "60073637"
  Puede rellenar rápidamente un control <xref:Microsoft.Office.Tools.Excel.ListObject> enlazando el <xref:Microsoft.Office.Tools.Excel.ListObject> a un origen de datos. Si edita los datos en un enlace de datos <xref:Microsoft.Office.Tools.Excel.ListObject>, los cambios también se realizan automáticamente en el origen de datos. Si desea rellenar un <xref:Microsoft.Office.Tools.Excel.ListObject> y permitir al usuario cambiar los datos de <xref:Microsoft.Office.Tools.Excel.ListObject> sin modificar el origen de datos, puede utilizar el método <xref:Microsoft.Office.Tools.Excel.ListObject.Disconnect%2A> para desasociar el <xref:Microsoft.Office.Tools.Excel.ListObject> del origen de datos. Para obtener más información, vea [Cómo: Rellenar los controles ListObject con datos](../vsto/how-to-fill-listobject-controls-with-data.md).
 
 > [!NOTE]
->  El enlace de datos no se admite en superposición de controles <xref:Microsoft.Office.Tools.Excel.ListObject> .
+> El enlace de datos no se admite en superposición de controles <xref:Microsoft.Office.Tools.Excel.ListObject> .
 
 ### <a name="improve-performance-in-listobject-controls"></a>Mejorar el rendimiento en controles ListObject
  La lectura de un archivo XML en un control <xref:Microsoft.Office.Tools.Excel.ListObject> de enlace de datos tiende a ser más lenta si se enlaza primero el control y luego se llama a <xref:System.Data.DataSet.ReadXml%2A> para rellenar el conjunto de datos. Para mejorar el rendimiento, llame a <xref:System.Data.DataSet.ReadXml%2A> antes de enlazar el control.

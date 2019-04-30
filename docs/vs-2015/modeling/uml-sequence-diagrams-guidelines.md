@@ -23,12 +23,12 @@ caps.latest.revision: 55
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a6f112224bdb2f94bdb6c4242a5ea0d273db23ec
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7ebb3108ce7a1ee43d1355494a82cc4aee37dbc7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039724"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445659"
 ---
 # <a name="uml-sequence-diagrams-guidelines"></a>Diagramas de secuencia UML: Instrucciones
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -83,7 +83,7 @@ En Visual Studio, puede dibujar un *diagrama de secuencia* para mostrar una inte
  Para obtener una lista completa de los elementos de diagramas de secuencia, vea [diagramas de secuencia UML: referencia](../modeling/uml-sequence-diagrams-reference.md).  
   
 > [!NOTE]
->  Se describen los pasos detallados para crear cualquiera de los diagramas de modelado en [modelos y diagramas UML editar](../modeling/edit-uml-models-and-diagrams.md).  
+> Se describen los pasos detallados para crear cualquiera de los diagramas de modelado en [modelos y diagramas UML editar](../modeling/edit-uml-models-and-diagrams.md).  
   
 #### <a name="to-create-a-sequence-diagram"></a>Para crear un nuevo diagrama de secuencia  
   
@@ -104,7 +104,7 @@ En Visual Studio, puede dibujar un *diagrama de secuencia* para mostrar una inte
 1. Arrastre **líneas de vida** (1) desde el **cuadro de herramientas** al diagrama para representar las instancias de clases, componentes, actores o dispositivos.  
   
     > [!NOTE]
-    >  También puede crear una línea de vida arrastrando una clase existente, interfaz, actor o componente de **Explorador de modelos UML** al diagrama. Esto crea una línea de vida que representa una instancia del tipo elegido.  
+    > También puede crear una línea de vida arrastrando una clase existente, interfaz, actor o componente de **Explorador de modelos UML** al diagrama. Esto crea una línea de vida que representa una instancia del tipo elegido.  
   
 2. Dibuje mensajes para mostrar cómo colaboran las líneas de vida para lograr un objetivo específico.  
   
@@ -115,7 +115,7 @@ En Visual Studio, puede dibujar un *diagrama de secuencia* para mostrar una inte
 3. Para mostrar un mensaje que procede de un origen de eventos desconocido (9) o que difunde a destinatarios desconocidos (10), dibuje un mensaje asincrónico desde o hacia el espacio en blanco del diagrama. Estos mensajes se denominan *encontrado mensajes* (9) y *mensajes perdidos* (10).  
   
     > [!NOTE]
-    >  Para mover un grupo de líneas de vida que han perdido o encontrado mensajes, siga estos pasos para seleccionarlas antes de moverlas: Dibujar un rectángulo alrededor de esas líneas de vida o mantenga presionada la **CTRL** mientras hace clic en cada línea de vida de clave. Si usas **seleccionar todo** o **CTRL**+**A** para seleccionar todas las líneas de vida y, a continuación, moverlos, los mensajes que se adjunta a estas líneas de vida perdidos o encontrados no se moverán. En este caso, podrá mover estos mensajes por separado.  
+    > Para mover un grupo de líneas de vida que han perdido o encontrado mensajes, siga estos pasos para seleccionarlas antes de moverlas: Dibujar un rectángulo alrededor de esas líneas de vida o mantenga presionada la **CTRL** mientras hace clic en cada línea de vida de clave. Si usas **seleccionar todo** o **CTRL**+**A** para seleccionar todas las líneas de vida y, a continuación, moverlos, los mensajes que se adjunta a estas líneas de vida perdidos o encontrados no se moverán. En este caso, podrá mover estos mensajes por separado.  
   
 4. Dibuje diagramas de secuencia para cada mensaje principal dirigido al mismo componente o sistema.  
   
@@ -136,7 +136,7 @@ En Visual Studio, puede dibujar un *diagrama de secuencia* para mostrar una inte
      Una copia del mensaje y todos sus mensajes secundarios se agrega al final de la ocurrencia de ejecución o al final de la línea de vida.  
   
     > [!NOTE]
-    >  El mensaje pegado siempre aparece al final de la ocurrencia de ejecución o línea de vida. Después de pegarlo, puede arrastrarlo hasta una posición anterior.  
+    > El mensaje pegado siempre aparece al final de la ocurrencia de ejecución o línea de vida. Después de pegarlo, puede arrastrarlo hasta una posición anterior.  
   
 #### <a name="to-display-and-edit-the-signature-text-for-a-message"></a>Para mostrar y editar el texto de la firma de un mensaje  
   
@@ -161,7 +161,7 @@ En Visual Studio, puede dibujar un *diagrama de secuencia* para mostrar una inte
 1. En **Explorador de modelos UML**, busque la interacción que muestra el diagrama de secuencia.  
   
     > [!NOTE]
-    >  La interacción no aparecerá en **Explorador de modelos UML** hasta que agregue la primera línea de vida en el diagrama de secuencia.  
+    > La interacción no aparecerá en **Explorador de modelos UML** hasta que agregue la primera línea de vida en el diagrama de secuencia.  
   
 2. Arrastre la interacción hasta el paquete.  
   
@@ -193,7 +193,7 @@ En Visual Studio, puede dibujar un *diagrama de secuencia* para mostrar una inte
  Uso de **vínculos de comentarios**, puede vincular un comentario a líneas de vida, ejecuciones, usos de interacción y fragmentos.  
   
 > [!CAUTION]
->  Cuando desee adjuntar un comentario a un punto determinado en la secuencia, vincúlelo a una ocurrencia de ejecución, uso de interacción o fragmento. No lo vincule a una línea de vida, porque en ese caso, no permanecerá adjunto en el punto correcto de la secuencia.  
+> Cuando desee adjuntar un comentario a un punto determinado en la secuencia, vincúlelo a una ocurrencia de ejecución, uso de interacción o fragmento. No lo vincule a una línea de vida, porque en ese caso, no permanecerá adjunto en el punto correcto de la secuencia.  
   
  Use un comentario para:  
   
@@ -268,7 +268,7 @@ En Visual Studio, puede dibujar un *diagrama de secuencia* para mostrar una inte
  Puede crear nuevas líneas de vida de las clases que ya definió, por ejemplo, en un diagrama de clases.  
   
 > [!NOTE]
->  Asegúrese de que tiene un diagrama de secuencia existente antes de realizar esta tarea.  
+> Asegúrese de que tiene un diagrama de secuencia existente antes de realizar esta tarea.  
   
 ##### <a name="to-create-a-lifeline-from-an-existing-type"></a>Para crear una línea de vida a partir de un tipo existente  
   
@@ -283,7 +283,7 @@ En Visual Studio, puede dibujar un *diagrama de secuencia* para mostrar una inte
      Aparece una nueva línea de vida de la instancia con nombre cuyo tipo es el tipo que arrastró.  
   
   > [!NOTE]
-  >  Puede repetir esta acción tantas veces como desee. Se crearán líneas de vida con nombres de instancia diferentes.  
+  > Puede repetir esta acción tantas veces como desee. Se crearán líneas de vida con nombres de instancia diferentes.  
   
 ##### <a name="to-change-the-type-of-a-lifeline"></a>Para cambiar el tipo de una línea de vida  
   
@@ -313,7 +313,7 @@ En Visual Studio, puede dibujar un *diagrama de secuencia* para mostrar una inte
          Si el mensaje contiene parámetros en el formulario "(parámetro: tipo)", aparecerán en la lista de parámetros de la operación de nueva.  
   
         > [!NOTE]
-        >  Debe repetir este paso si agrega nuevos mensajes en el diagrama de secuencia.  
+        > Debe repetir este paso si agrega nuevos mensajes en el diagrama de secuencia.  
   
 3. Para ver la nueva clase o interfaz en detalle, agréguela a un diagrama de componentes o de clases.  
   
@@ -366,7 +366,7 @@ En Visual Studio, puede dibujar un *diagrama de secuencia* para mostrar una inte
      Aparece un nuevo diagrama de secuencia en la solución que contiene las líneas de vida utilizadas para crear el uso de interacción.  
   
     > [!NOTE]
-    >  Solo se incluirán las líneas de vida utilizadas para crear el uso de interacción. El nuevo diagrama no incluirá las líneas de vida creadas después del  uso de interacción, aunque el uso de interacción las cubra ahora.  
+    > Solo se incluirán las líneas de vida utilizadas para crear el uso de interacción. El nuevo diagrama no incluirá las líneas de vida creadas después del  uso de interacción, aunque el uso de interacción las cubra ahora.  
   
 #### <a name="to-create-a-reusable-sequence-from-existing-messages"></a>Para crear una secuencia reutilizable a partir de mensajes existentes  
   
@@ -407,14 +407,14 @@ En Visual Studio, puede dibujar un *diagrama de secuencia* para mostrar una inte
 3. Para cambiar el nombre del grupo, haga clic en el nombre.  
   
     > [!NOTE]
-    >  Se perderá el nombre del grupo cuando expanda el grupo.  
+    > Se perderá el nombre del grupo cuando expanda el grupo.  
   
 #### <a name="to-expand-a-collapsed-group"></a>Para expandir un grupo contraído  
   
 - Haga clic en la línea de vida contraída y, a continuación, haga clic en **expandir**.  
   
     > [!NOTE]
-    >  Se perderá el nombre del grupo, junto con todos los vínculos del grupo a los comentarios o elementos de trabajo.  
+    > Se perderá el nombre del grupo, junto con todos los vínculos del grupo a los comentarios o elementos de trabajo.  
   
 ## <a name="Fragments"></a> Descripción de estructuras de Control con fragmentos  
  Puede usar fragmentos combinados (13) para definir bucles, bifurcaciones y el procesamiento simultáneo en un diagrama de secuencia. Como alternativa, considere la posibilidad de usar en su lugar un diagrama de actividad. El diagrama de actividad no es tan útil al mostrar mensajes entre actores, pero en algunos casos es mejor al mostrar bucles, bifurcaciones y simultaneidad.  
@@ -426,7 +426,7 @@ En Visual Studio, puede dibujar un *diagrama de secuencia* para mostrar una inte
 1. Seleccione un mensaje o una secuencia de mensajes que comiencen en la misma línea de vida u ocurrencia de ejecución.  
   
     > [!NOTE]
-    >  Seleccione las flechas del mensaje, no las ocurrencias de ejecución a las que apuntan los mensajes.  
+    > Seleccione las flechas del mensaje, no las ocurrencias de ejecución a las que apuntan los mensajes.  
   
 2. Haga clic en uno de los mensajes, seleccione **rodear con**y, a continuación, haga clic en el tipo de fragmento que necesite.  
   

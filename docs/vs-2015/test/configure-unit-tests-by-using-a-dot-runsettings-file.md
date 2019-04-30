@@ -8,12 +8,12 @@ ms.assetid: f7e9e4a2-5d01-4f78-b408-5be3892bd162
 caps.latest.revision: 28
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a86811bb4d87dffcf9abdacae9bca1fdac4298ee
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e01165f12bcf3b41e4ef1279d12ce99bf8f6598f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043047"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442788"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Configurar pruebas unitarias usando un archivo .runsettings
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,11 +23,11 @@ Las pruebas unitarias en Visual Studio se pueden configurar mediante un archivo 
  Si no quiere realizar ninguna configuración especial, no necesita un archivo *.runsettings. El uso más frecuente es personalizar [Cobertura de código](../test/customizing-code-coverage-analysis.md).  
   
 > [!NOTE]
->  **.runsettings y .testsettings**  
+> **.runsettings y .testsettings**  
 >   
->  Hay dos tipos de archivos para configurar las pruebas. Los archivos *.runsettings se usan para las pruebas unitarias, mientras que los archivos \*.testsettings se usan para [pruebas en entorno de laboratorio](http://msdn.microsoft.com/library/0c15317e-80c6-4317-aed3-82b8e15e3901), pruebas de rendimiento web y pruebas de carga, así como para personalizar determinados tipos de adaptadores de datos de diagnóstico como, por ejemplo, los adaptadores de IntelliTrace y de registro de eventos.  
+> Hay dos tipos de archivos para configurar las pruebas. Los archivos *.runsettings se usan para las pruebas unitarias, mientras que los archivos \*.testsettings se usan para [pruebas en entorno de laboratorio](http://msdn.microsoft.com/library/0c15317e-80c6-4317-aed3-82b8e15e3901), pruebas de rendimiento web y pruebas de carga, así como para personalizar determinados tipos de adaptadores de datos de diagnóstico como, por ejemplo, los adaptadores de IntelliTrace y de registro de eventos.  
 >   
->  En las ediciones anteriores de Visual Studio hasta la versión 2010, las pruebas unitarias también se personalizaban mediante archivos *.testsettings. Puede seguir realizando esa acción, pero las pruebas se ejecutarán más despacio que si usara las configuraciones equivalentes en un archivo \*.runsettings.  
+> En las ediciones anteriores de Visual Studio hasta la versión 2010, las pruebas unitarias también se personalizaban mediante archivos *.testsettings. Puede seguir realizando esa acción, pero las pruebas se ejecutarán más despacio que si usara las configuraciones equivalentes en un archivo \*.runsettings.  
   
 ## <a name="customizing-tests-with-a-runsettings-file"></a>Personalizar pruebas con un archivo .runsettings  
   

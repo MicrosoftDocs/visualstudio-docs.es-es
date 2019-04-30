@@ -18,12 +18,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e96d1db524d5a80a9f298fa84ca1ccf27e28fbf4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 54469f2e255ff9ea726ea1b6c13abcb55c33252d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58986671"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444111"
 ---
 # <a name="using-the-legacy-state-machine-workflow-designer"></a>Usar el diseñador de flujo de trabajo de máquina de estados heredado
 Cuando crea un nuevo proyecto de flujo de trabajo de equipo de estado en [!INCLUDE[vs2010](../includes/vs2010-md.md)] que tiene como destino el [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)], puede usar cualquiera el **aplicación de consola de flujo de trabajo de equipo de estado** o el  **Biblioteca de flujo de trabajo de equipo de estado** plantilla de proyecto heredadas. Si elige una de estas plantillas de proyecto de máquina de estados, el diseñador de máquina de estados se presenta como la interfaz de usuario del diseñador de flujo de trabajo heredada. Para obtener información acerca de las plantillas de proyecto de la máquina de Estados heredados, vea [Cómo: Crear aplicaciones de consola de flujo de trabajo de máquina de Estados (heredado)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md) y [Cómo: Crear una biblioteca de flujo de trabajo de máquina de Estados (heredado)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md).  
@@ -53,9 +53,9 @@ Cuando crea un nuevo proyecto de flujo de trabajo de equipo de estado en [!INCLU
  Al arrastrar un nuevo **StateActivity** a la superficie de diseño de flujo de trabajo, puede agregar [EventDrivenActivity](http://go.microsoft.com/fwlink?LinkID=65029), [StateInitializationActivity](http://go.microsoft.com/fwlink?LinkID=65044), [ StateFinalizationActivity](http://go.microsoft.com/fwlink?LinkID=65043), o adicional **StateActivity** actividades como actividades secundarias.  
   
 > [!CAUTION]
->  Cuando usa el Diseñador de flujo de trabajo de máquina de Estados para crear flujos de trabajo, debe supervisar la estructura del flujo de trabajo que está diseñando con la **esquema del documento** ventana de vista. La vista de la estructura del flujo de trabajo de máquina de estado en el **esquema del documento** vista ventana refleja el diseño lógico de las actividades en el archivo de marcado de flujo de trabajo. El diseño físico de las actividades de flujo de trabajo tal como aparecen en la superficie de diseño podría no reflejar el diseño lógico de las actividades del archivo de marcado del flujo de trabajo.  
+> Cuando usa el Diseñador de flujo de trabajo de máquina de Estados para crear flujos de trabajo, debe supervisar la estructura del flujo de trabajo que está diseñando con la **esquema del documento** ventana de vista. La vista de la estructura del flujo de trabajo de máquina de estado en el **esquema del documento** vista ventana refleja el diseño lógico de las actividades en el archivo de marcado de flujo de trabajo. El diseño físico de las actividades de flujo de trabajo tal como aparecen en la superficie de diseño podría no reflejar el diseño lógico de las actividades del archivo de marcado del flujo de trabajo.  
 >   
->  Para abrir el **esquema del documento** ventana, en el **vista** menú, elija **Other Windows**y, a continuación, seleccione **esquema del documento**.  
+> Para abrir el **esquema del documento** ventana, en el **vista** menú, elija **Other Windows**y, a continuación, seleccione **esquema del documento**.  
   
 ## <a name="see-also"></a>Vea también  
  [Cómo: Crear aplicaciones de consola de flujo de trabajo de máquina de Estados (heredado)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md)   

@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7069da816d8f693fc38856d1218f5f9f6284dd4c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ddeba1539cf68d53f4b9f931d2bcd18a159028fd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063613"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438694"
 ---
 # <a name="walkthrough-bind-data-to-controls-on-a-word-actions-pane"></a>Tutorial: Enlazar datos a controles en un panel de acciones de Word
   Este tutorial muestra el enlace de datos a controles en un panel de acciones de Word. Los controles muestran una relación principal-detalle entre las tablas de una base de datos de SQL Server.
@@ -38,7 +38,7 @@ ms.locfileid: "60063613"
 - Mostrar el panel de acciones cuando se abre la aplicación.
 
 > [!NOTE]
->  Es posible que el equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Para más información, vea [Personalizar el IDE de Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Es posible que el equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Para más información, vea [Personalizar el IDE de Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="prerequisites"></a>Requisitos previos
  Necesita los componentes siguientes para completar este tutorial:
@@ -78,7 +78,7 @@ ms.locfileid: "60063613"
 1. Si el **orígenes de datos** ventana no está visible, muéstrela; en la barra de menús, elija **vista** > **Other Windows**  >   **Orígenes de datos**.
 
    > [!NOTE]
-   >  Si **Mostrar orígenes de datos** no está disponible, haga clic en el documento de Word y, a continuación, volver a comprobar.
+   > Si **Mostrar orígenes de datos** no está disponible, haga clic en el documento de Word y, a continuación, volver a comprobar.
 
 2. Haga clic en **Agregar nuevo origen de datos** para iniciar el **Asistente para configuración de origen de datos**.
 
@@ -111,7 +111,7 @@ ms.locfileid: "60063613"
 4. Seleccione `SuppliersBindingNavigator` en el **componente** bandeja del sistema y presione **eliminar**. No usará el `SuppliersBindingNavigator` en este tutorial.
 
     > [!NOTE]
-    >  Eliminando el `SuppliersBindingNavigator` no quita todo el código que se generó para él. Puede quitar este código.
+    > Eliminando el `SuppliersBindingNavigator` no quita todo el código que se generó para él. Puede quitar este código.
 
 5. Mueva el cuadro combinado para que esté bajo la etiqueta y cambie la **tamaño** propiedad **171, 21**.
 

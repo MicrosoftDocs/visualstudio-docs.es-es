@@ -17,12 +17,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 82b0339bde0ffbfff77165f1626ec83767d45211
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: db33392deb16664e48c3b2d90df883294d5cfbaa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54767584"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441164"
 ---
 # <a name="outlining"></a>Esquematización
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Se puede ocultar algún código de la vista si se contrae una región de código
  Los comandos **Deshacer** y **Rehacer** del menú **Edición** afectan a estas acciones. **Copiar**, **Cortar**, **Pegar** y las operaciones de arrastrar y colocar conservan la información de esquematización, pero no el estado de la región contraíble. Por ejemplo, cuando copia una región que se contrae, la operación **Pegar** pegará el texto copiado como región expandida.  
   
 > [!CAUTION]
->  Si se cambia una región esquematizada, se puede perder la esquematización. Por ejemplo, las eliminaciones o las operaciones Buscar y reemplazar pueden borrar el final de la región.  
+> Si se cambia una región esquematizada, se puede perder la esquematización. Por ejemplo, las eliminaciones o las operaciones Buscar y reemplazar pueden borrar el final de la región.  
   
  El submenú **Edición/Esquematización** puede contener los comandos siguientes.  
   

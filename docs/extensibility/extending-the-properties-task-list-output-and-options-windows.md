@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3bf289a20f206db5aede2de01ddc2030c52b8fa
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a0e38daa68999da32c3b667a5e220c622b012667
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078387"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417233"
 ---
 # <a name="extend-the-properties-task-list-output-and-options-windows"></a>Extender las ventanas Propiedades, lista de tareas, resultados y opciones
 Puede tener acceso a cualquier ventana de herramientas en Visual Studio. En este tutorial se muestra cómo integrar información acerca de la ventana de herramientas en un nuevo **opciones** página y una nueva configuración en el **propiedades** página y también cómo se escriben en el **delistadetareas** y **salida** windows.
@@ -33,7 +33,7 @@ Puede tener acceso a cualquier ventana de herramientas en Visual Studio. En este
 1. Cree un proyecto denominado **TodoList** con la plantilla VSIX y agrega una plantilla de elemento de ventana de herramienta personalizada denominada **TodoWindow**.
 
     > [!NOTE]
-    >  Para obtener más información acerca de cómo crear una extensión con una ventana de herramientas, consulte [crear una extensión con una ventana de herramientas](../extensibility/creating-an-extension-with-a-tool-window.md).
+    > Para obtener más información acerca de cómo crear una extensión con una ventana de herramientas, consulte [crear una extensión con una ventana de herramientas](../extensibility/creating-an-extension-with-a-tool-window.md).
 
 ## <a name="set-up-the-tool-window"></a>Configuración de la ventana de herramientas
  Agregue un cuadro de texto que se va a escribir un nuevo elemento de lista de tareas, un botón para agregar el nuevo elemento a la lista y un cuadro de lista para mostrar los elementos en la lista.
@@ -41,7 +41,7 @@ Puede tener acceso a cualquier ventana de herramientas en Visual Studio. En este
 1. En *TodoWindow.xaml*, eliminar los controles de botón, cuadro de texto y StackPanel de UserControl.
 
     > [!NOTE]
-    >  Esto no elimina el **button1_Click** controlador de eventos, que volverá a usar en un paso posterior.
+    > Esto no elimina el **button1_Click** controlador de eventos, que volverá a usar en un paso posterior.
 
 2. Desde el **todos los controles de WPF** sección de la **cuadro de herramientas**, arrastre un **lienzo** control a la cuadrícula.
 

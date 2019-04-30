@@ -1,5 +1,5 @@
 ---
-title: Filtrar Buscar un subproceso en la vista subprocesos | Documentos de Microsoft
+title: Procedimiento Buscar un subproceso en la vista subprocesos | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -11,14 +11,14 @@ caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e7987b4da158572d22d609b095877f6d125512c9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: d5974bc962faf439af8de5d50bf51bad3d824647
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58995841"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439090"
 ---
-# <a name="how-to-search-for-a-thread-in-threads-view"></a>Filtrar Búsqueda de un subproceso en la vista Subprocesos
+# <a name="how-to-search-for-a-thread-in-threads-view"></a>Procedimiento Búsqueda de un subproceso en la vista Subprocesos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Puede buscar un subproceso concreto en la vista de subprocesos mediante el uso de su cadena de identificador o el módulo del subproceso como criterios de búsqueda. También puede especificar la dirección inicial de la búsqueda. Los campos en el cuadro de diálogo mostrará los atributos del subproceso seleccionado en el árbol de subproceso.  
@@ -36,7 +36,7 @@ Puede buscar un subproceso concreto en la vista de subprocesos mediante el uso d
 4. Borrar todos los campos que no desea especificar los valores.  
   
    > [!TIP]
-   >  Para buscar todos los subprocesos que pertenecen a un módulo, desactive la **subprocesos** nombre de cuadro de texto y el tipo del módulo en el **módulo** cuadro. A continuación, usar **Buscar siguiente** para continuar la búsqueda de subprocesos.  
+   > Para buscar todos los subprocesos que pertenecen a un módulo, desactive la **subprocesos** nombre de cuadro de texto y el tipo del módulo en el **módulo** cuadro. A continuación, usar **Buscar siguiente** para continuar la búsqueda de subprocesos.  
   
 5. Elija **seguridad** o **abajo** para la dirección inicial de la búsqueda.  
   

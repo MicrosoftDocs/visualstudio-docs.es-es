@@ -13,12 +13,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2545db069db73fed59c95b3b4adc576facd51bc5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b3517322087c940636be07f50a013fe79307f0b7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60067644"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446722"
 ---
 # <a name="writing-a-t4-text-template"></a>Escribir una plantilla de texto T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -100,7 +100,7 @@ Hello!
  Puede insertar un bloque de texto en cualquier posición del código donde se podría incluir una instrucción `Write();`.  
   
 > [!NOTE]
->  Al incrustar un bloque de texto dentro de una instrucción compuesta como un bucle o condicional, debe usar siempre corchetes {...} para contener el bloque de texto.  
+> Al incrustar un bloque de texto dentro de una instrucción compuesta como un bucle o condicional, debe usar siempre corchetes {...} para contener el bloque de texto.  
   
 ### <a name="expression-control-blocks"></a>Bloques de control de expresiones  
  Un bloque de control de expresiones da como resulta una expresión y la convierte en una cadena. Esta cadena se inserta en el archivo de salida.  

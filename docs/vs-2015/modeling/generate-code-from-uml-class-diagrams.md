@@ -16,12 +16,12 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 020dd35d225d8629a8061d1a74b234b62960c830
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c95a361f00e9b744aa78f443ad7c173209a5a0bd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056164"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442423"
 ---
 # <a name="generate-code-from-uml-class-diagrams"></a>Generar código a partir de diagramas de clases UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -101,7 +101,7 @@ Para generar código de Visual C# .NET a partir de diagramas de clases UML en Vi
 2. En el **propiedades** ventana, elija la flecha desplegable en el **estereotipos** propiedad y, a continuación, seleccione la casilla correspondiente al estereotipo que desea aplicar.  
 
    > [!TIP]
-   >  Si no aparecen los estereotipos de C#, habilite el perfil de C# para el modelo o para un paquete que contiene los elementos del modelo en los que está interesado. Seleccione el paquete o la raíz del modelo en **Explorador de modelos UML**. A continuación, en el **propiedades** ventana, elija **perfil**y, a continuación, habilite el perfil de C#.  
+   > Si no aparecen los estereotipos de C#, habilite el perfil de C# para el modelo o para un paquete que contiene los elementos del modelo en los que está interesado. Seleccione el paquete o la raíz del modelo en **Explorador de modelos UML**. A continuación, en el **propiedades** ventana, elija **perfil**y, a continuación, habilite el perfil de C#.  
 
 3. Expanda el **estereotipos** propiedad para ver las propiedades adicionales que se pueden establecer.  
 
@@ -144,7 +144,7 @@ Para generar código de Visual C# .NET a partir de diagramas de clases UML en Vi
  Se puede aplicar más de una plantilla a un elemento modelo. Puede generar más de un archivo a partir de cada elemento del modelo.  
 
 > [!NOTE]
->  Los enlaces adjuntos a la raíz del modelo sirven como valores predeterminados para todos los elementos del modelo. Para ver estos enlaces predeterminados, abra **Explorador de modelos UML**. Abra el menú contextual del proyecto de modelado y luego elija **configurar la generación de código**. También puede seleccionar la raíz del modelo en el Explorador de modelos UML. En la ventana Propiedades, elija **[...]**  en el **Text Template Bindings** propiedad. Los enlaces no aparecerán hasta que haya usado el **generar código** comando al menos una vez. Los enlaces de plantilla no se pueden adjuntar a un diagrama.  
+> Los enlaces adjuntos a la raíz del modelo sirven como valores predeterminados para todos los elementos del modelo. Para ver estos enlaces predeterminados, abra **Explorador de modelos UML**. Abra el menú contextual del proyecto de modelado y luego elija **configurar la generación de código**. También puede seleccionar la raíz del modelo en el Explorador de modelos UML. En la ventana Propiedades, elija **[...]**  en el **Text Template Bindings** propiedad. Los enlaces no aparecerán hasta que haya usado el **generar código** comando al menos una vez. Los enlaces de plantilla no se pueden adjuntar a un diagrama.  
 
 #### <a name="to-attach-text-template-bindings-to-a-package-or-other-model-element"></a>Para adjuntar los enlaces de plantilla de texto a un paquete u otro elemento del modelo  
 

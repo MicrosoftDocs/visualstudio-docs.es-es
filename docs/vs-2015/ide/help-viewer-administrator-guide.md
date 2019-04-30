@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 51dfdc95748690f43809244dc14ae2662d8aec39
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b00f89b60c7e884bfaf71e971722530b44a78b4e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086603"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445686"
 ---
 # <a name="help-viewer-administrator-guide"></a>Guía del administrador del Visor de Ayuda
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ El Visor de Ayuda permite administrar instalaciones locales de ayuda para los en
 - El origen predeterminado de la Ayuda seguirá siendo En línea.  
   
   > [!TIP]
-  >  Puede cambiar el origen predeterminado de la Ayuda si modifica la clave del Registro HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\14.0\help\UseOnlineHelp. Para obtener más información, vea [Invalidaciones de Help Content Manager](../ide/help-content-manager-overrides.md).  
+  > Puede cambiar el origen predeterminado de la Ayuda si modifica la clave del Registro HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\14.0\help\UseOnlineHelp. Para obtener más información, vea [Invalidaciones de Help Content Manager](../ide/help-content-manager-overrides.md).  
   
 - A los clientes se les pedirá que instalen el contenido de la Ayuda básica la primera vez que se inicia Visual Studio. Puede deshabilitar este símbolo del sistema si modifica la clave del Registro HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\14.0\Help\DisableFirstRunHelpSelection.  
   
@@ -78,7 +78,7 @@ El Visor de Ayuda permite administrar instalaciones locales de ayuda para los en
 - Los usuarios deben tener derechos de administrador para actualizar, agregar o quitar el contenido de la Ayuda local después de su instalación.  
   
   > [!TIP]
-  >  Si los usuarios no tienen derechos de administrador, es recomendable deshabilitar la pestaña Administrar contenido en el Visor de Ayuda. Para obtener más información, vea [Invalidaciones de Help Content Manager](../ide/help-content-manager-overrides.md).  
+  > Si los usuarios no tienen derechos de administrador, es recomendable deshabilitar la pestaña Administrar contenido en el Visor de Ayuda. Para obtener más información, vea [Invalidaciones de Help Content Manager](../ide/help-content-manager-overrides.md).  
   
   Advertencias:  
   

@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 3d5e74a4384cff0a68764ffe09a37ab28460d58b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60058504"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422816"
 ---
 # <a name="how-to-create-a-nullable-type-class-designer"></a>Procedimiento Crear un tipo que acepta valores NULL en el Diseñador de clases
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

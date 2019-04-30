@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 87dda9c975f35ac8b48e60acd3e692f9b3a070d4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 25b30db78706dce95188289187ce55011ce1362d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103525"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441734"
 ---
 # <a name="how-to-protect-parts-of-documents-by-using-content-controls"></a>Procedimiento Proteger elementos de documentos mediante controles de contenido
   Al proteger un elemento de un documento, se impide que los usuarios cambien o eliminen el contenido de ese elemento. Existen varios modos de proteger los elementos de un documento de Microsoft Office Word mediante los controles de contenido:
@@ -73,7 +73,7 @@ ms.locfileid: "60103525"
 - Desea proteger un área que ya contiene controles de contenido, pero el texto u otros elementos que desea proteger no se encuentran en los controles de contenido.
 
 > [!NOTE]
->  Si crea un <xref:Microsoft.Office.Tools.Word.GroupContentControl> que contiene controles de contenido insertados, estos controles no se protegerán automáticamente. Para evitar que los usuarios editen un control de contenido incrustado, utilice la **LockContents** propiedad del control.
+> Si crea un <xref:Microsoft.Office.Tools.Word.GroupContentControl> que contiene controles de contenido insertados, estos controles no se protegerán automáticamente. Para evitar que los usuarios editen un control de contenido incrustado, utilice la **LockContents** propiedad del control.
 
 ### <a name="to-protect-an-area-of-a-document-at-design-time"></a>Para proteger un área de un documento en tiempo de diseño
 
@@ -82,7 +82,7 @@ ms.locfileid: "60103525"
 2. En la cinta de opciones, haga clic en la pestaña **Desarrollador** .
 
     > [!NOTE]
-    >  Si la pestaña **Desarrollador** no está visible, primero debe mostrarla. Para obtener más información, vea [Cómo: Mostrar la pestaña Programador en la cinta de opciones](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
+    > Si la pestaña **Desarrollador** no está visible, primero debe mostrarla. Para obtener más información, vea [Cómo: Mostrar la pestaña Programador en la cinta de opciones](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
 3. En el **controles** grupo, haga clic en el **grupo** botón desplegable y, a continuación, haga clic en **grupo**.
 

@@ -17,12 +17,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9b373551444087ad8ff3789d927267a30efd5e4d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 335058a6521f10313c94cbfbdd9657348cc90963
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668917"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438076"
 ---
 # <a name="output-window"></a>Resultados (Ventana)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "59668917"
 La Ventana de **salida** puede mostrar mensajes de estado de diversas características del entorno de desarrollo integrado (IDE). Para abrir la ventana de **Salida**, en la barra de menús, elija **View/Output** (Vista/Salida) (o haga clic en CTRL + ALT + O).  
   
 > [!WARNING]
->  La Ventana de salida no aparece en el menú Ver en las ediciones Express de Visual Studio. Para activarla, use la combinación de teclas CTRL + ALT + O.  
+> La Ventana de salida no aparece en el menú Ver en las ediciones Express de Visual Studio. Para activarla, use la combinación de teclas CTRL + ALT + O.  
   
 ## <a name="toolbar"></a>Barra de herramientas  
  **Mostrar resultados desde**  

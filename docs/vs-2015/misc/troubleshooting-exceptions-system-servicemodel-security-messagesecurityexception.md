@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ce4b5671d0e10d2f524ee96494d37cb68babe72a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6852b12e8a3cbc902770a2825d12697c12fc1760
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60058881"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436547"
 ---
 # <a name="troubleshooting-exceptions-systemservicemodelsecuritymessagesecurityexception"></a>Solucionar problemas de excepciones: System.ServiceModel.Security.MessageSecurityException
 Un <xref:System.ServiceModel.Security.MessageSecurityException> excepción se produce cuando [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] determina que un mensaje no se ha protegido correctamente o ha sido alterado. El error se produce con más frecuencia cuando se cumplen todas las condiciones siguientes:  
@@ -35,7 +35,7 @@ Un <xref:System.ServiceModel.Security.MessageSecurityException> excepción se pr
  Si un usuario remoto ejecutara el sitio web mediante el servidor de desarrollo de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] y, además, trabajara con un servicio Web o un servicio WCF, puede crear un enlace de servicio personalizado o bien desactivar la seguridad NTLM.  
   
 > [!IMPORTANT]
->  No se recomienda desactivar la seguridad NTLM; además constituye una amenaza de seguridad.  
+> No se recomienda desactivar la seguridad NTLM; además constituye una amenaza de seguridad.  
   
  Si crea un servicio personalizado de enlace, la autenticación NTLM continúa proporcionando protección.  
   
@@ -74,7 +74,7 @@ Un <xref:System.ServiceModel.Security.MessageSecurityException> excepción se pr
    Puede realizar estos pasos para deshabilitar la seguridad NTLM cuando trabaje con una referencia del servicio WCF.  
   
 > [!IMPORTANT]
->  No se recomienda desactivar la seguridad NTLM; además constituye una amenaza de seguridad.  
+> No se recomienda desactivar la seguridad NTLM; además constituye una amenaza de seguridad.  
   
 #### <a name="to-turn-off-ntlm-security"></a>Desactivar la seguridad NTLM  
   

@@ -11,16 +11,16 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd3d58b61683c2b25da3e988d307effc28d61dc9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2de018cc757adba814c8705fb0f2e02e96f1c59c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60073376"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420781"
 ---
 # <a name="register-an-expression-evaluator"></a>Registrar un evaluador de expresiones
 > [!IMPORTANT]
->  En Visual Studio 2015, esta forma de implementar los evaluadores de expresión está en desuso. Para obtener información sobre la implementación de evaluadores de expresión de CLR, vea [evaluadores de expresiones CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) y [ejemplo de evaluador de expresión administrado](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> En Visual Studio 2015, esta forma de implementar los evaluadores de expresión está en desuso. Para obtener información sobre la implementación de evaluadores de expresión de CLR, vea [evaluadores de expresiones CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) y [ejemplo de evaluador de expresión administrado](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
  El evaluador de expresiones (EE) debe registrarse como un generador de clases con el entorno COM de Windows y Visual Studio. Un EE está configurado como un archivo DLL para que la se inserta en el espacio de direcciones del motor DE depuración o el espacio de direcciones de Visual Studio, dependiendo de qué entidad crea una instancia de lo EE.
 
@@ -101,7 +101,7 @@ namespace EEMC
  La DLL EE implementa el `DllRegisterServer` función registrarse a sí mismo con el entorno COM, así como Visual Studio.
 
 > [!NOTE]
->  Puede encontrar el código de registro de ejemplo de código MyCEE en el archivo *dllentry.cpp*, que se encuentra en la instalación de VSIP bajo EnVSDK\MyCPkgs\MyCEE.
+> Puede encontrar el código de registro de ejemplo de código MyCEE en el archivo *dllentry.cpp*, que se encuentra en la instalación de VSIP bajo EnVSDK\MyCPkgs\MyCEE.
 
 ### <a name="dll-server-process"></a>Proceso de servidor DLL
  Al registrar el EE, el servidor DLL:
@@ -118,7 +118,7 @@ namespace EEMC
     |`metricEngine`|`GUID`s de los motores de depuración (DE) que funcionan con este EE|
 
     > [!NOTE]
-    >  El `metricLanguage``GUID` identifica el idioma por nombre, pero es el `guidLang` argumento `SetEEMetric` que selecciona el idioma. Cuando el compilador genera el archivo de información de depuración, debe escribir adecuado `guidLang` para que la DE sepa qué EE para usar. La DE pide normalmente el proveedor de símbolos para este idioma `GUID`, que está almacenado en el archivo de información de depuración.
+    > El `metricLanguage``GUID` identifica el idioma por nombre, pero es el `guidLang` argumento `SetEEMetric` que selecciona el idioma. Cuando el compilador genera el archivo de información de depuración, debe escribir adecuado `guidLang` para que la DE sepa qué EE para usar. La DE pide normalmente el proveedor de símbolos para este idioma `GUID`, que está almacenado en el archivo de información de depuración.
 
 3. Se registra con Visual Studio mediante la creación de claves en HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*X.Y*, donde *X.Y* es la versión de Visual Studio para registrarse.
 

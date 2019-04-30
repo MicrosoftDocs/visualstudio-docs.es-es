@@ -12,12 +12,12 @@ ms.assetid: 7b5578b4-a20a-4b94-ad4c-98687ac133b9
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c99943a2f0ebd05236caf7706021cfb8ac58fa84
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 6096f89a36cdd47d2dec68af5801a94dc77acb43
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58994694"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408543"
 ---
 # <a name="outlining-in-a-legacy-language-service"></a>Esquematización en un servicio de lenguaje heredado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Esquematización hace posible contraer un programa complejo en una descripción 
  Servicios de lenguaje heredado se implementan como parte de un paquete VSPackage, pero la forma más reciente para implementar características de servicio de lenguaje es usar las extensiones MEF. Para obtener más información, consulte [Tutorial: Esquematización](../../extensibility/walkthrough-outlining.md).  
   
 > [!NOTE]
->  Se recomienda que comience a usar el nuevo editor de API tan pronto como sea posible. Esto mejorará el rendimiento de su servicio de lenguaje y le permiten aprovechar las nuevas características del editor.  
+> Se recomienda que comience a usar el nuevo editor de API tan pronto como sea posible. Esto mejorará el rendimiento de su servicio de lenguaje y le permiten aprovechar las nuevas características del editor.  
   
 ## <a name="enabling-support-for-outlining"></a>Habilitar la compatibilidad para la esquematización  
  El `AutoOutlining` entrada del registro se establece en 1 para habilitar la esquematización automática. Esquematizar automáticamente configura un análisis de todo el origen cuando se carga un archivo o se puede cambiar con el fin de identificar las regiones ocultas y mostrar los glifos de esquematización. Esquematización también puede controlarse manualmente por el usuario.  

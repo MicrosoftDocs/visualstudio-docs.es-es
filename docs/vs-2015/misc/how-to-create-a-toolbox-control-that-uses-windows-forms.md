@@ -11,18 +11,18 @@ helpviewer_keywords:
 ms.assetid: abbd3c3c-3a6e-4539-bd6c-a5891dead234
 caps.latest.revision: 12
 manager: jillfra
-ms.openlocfilehash: a2b51b8f07a1cc049e4761001bfea754b6ca1819
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 33b4d8f1932429838f701df1f6ffaaceef321c4e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105648"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442920"
 ---
 # <a name="how-to-create-a-toolbox-control-that-uses-windows-forms"></a>Procedimiento Crear un Control de cuadro de herramientas que usa Windows Forms
 La plantilla del control Toolbox de Windows Forms que se incluye en [!INCLUDE[vssdk_dev11_long](../includes/vssdk-dev11-long-md.md)] le permite crear controles de formularios Windows Forms que se agregan automáticamente a **Toolbox** cuando se instala la extensión. En este tema se muestra cómo usar la plantilla para crear un control **Toolbox** , que se puede distribuir a otros usuarios.  
   
 > [!NOTE]
->  Para obtener información sobre cómo descargar Visual Studio SDK, vea [Extensión de Visual Studio](http://go.microsoft.com/fwlink/?linkid=121964) en el sitio web de MSDN.  
+> Para obtener información sobre cómo descargar Visual Studio SDK, vea [Extensión de Visual Studio](http://go.microsoft.com/fwlink/?linkid=121964) en el sitio web de MSDN.  
   
 ## <a name="creating-a-toolbox-control"></a>Crear un control Toolbox  
  Utilice la plantilla de control Toolbox de Windows Forms para crear el proyecto y, a continuación, cree una interfaz de usuario (IU) en el diseñador.  

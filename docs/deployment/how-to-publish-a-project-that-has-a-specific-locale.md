@@ -20,18 +20,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f4b920706a6a43f52ab861d392efe4b30f28c4ca
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: aee8be6904452cc40ab68130f98cf63caf0fc7fb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056580"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406993"
 ---
 # <a name="how-to-publish-a-project-that-has-a-specific-locale"></a>Procedimiento Publicación de un proyecto con una configuración regional específica
 No es raro que una aplicación contenga componentes con diferentes configuraciones regionales. En este escenario, crearía una solución con varios proyectos para después publicar diferentes proyectos para cada configuración regional. En este procedimiento se muestra cómo usar una macro para publicar el primer proyecto en una solución usando la configuración regional 'en'. Si quiere intentar este procedimiento con una configuración regional que no sea 'en', asegúrese de establecer `localeString` de manera que coincida con la configuración regional que está usando (por ejemplo, 'de' o 'de-DE').
 
 > [!NOTE]
->  Cuando se usa esta macro, la ubicación de publicación debe ser una dirección URL o un recurso compartido UNC (Convención de nomenclatura universal) válidos. Además, Internet Information Services (IIS) debe estar instalado en el equipo. Para instalar IIS, en el menú **Inicio**, haga clic en **Panel de control**. Haga doble clic en **Agregar o quitar programas**. En **Agregar o quitar programas**, haga clic en **Agregar o quitar componentes de Windows**. En el **Asistente para componentes de Windows**, active la casilla **Internet Information Services (IIS)** en la lista **Componentes**. Haga clic en **Finalizar** para cerrar el asistente.
+> Cuando se usa esta macro, la ubicación de publicación debe ser una dirección URL o un recurso compartido UNC (Convención de nomenclatura universal) válidos. Además, Internet Information Services (IIS) debe estar instalado en el equipo. Para instalar IIS, en el menú **Inicio**, haga clic en **Panel de control**. Haga doble clic en **Agregar o quitar programas**. En **Agregar o quitar programas**, haga clic en **Agregar o quitar componentes de Windows**. En el **Asistente para componentes de Windows**, active la casilla **Internet Information Services (IIS)** en la lista **Componentes**. Haga clic en **Finalizar** para cerrar el asistente.
 
 ### <a name="to-create-the-publishing-macro"></a>Para crear la macro de publicación
 

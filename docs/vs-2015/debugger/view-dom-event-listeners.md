@@ -17,12 +17,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 12a4f736217374eefa32dda30111da5e71fbab39
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 945edb462b1ba849a3a1b9fd6797c8393b651163
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110484"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437681"
 ---
 # <a name="view-dom-event-listeners"></a>Ver agentes de escucha de eventos DOM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
  La lista en el **eventos** ficha es dinámica. Si agrega un agente de escucha de eventos mientras la aplicación se está ejecutando, el nuevo evento aparecerá en ella. Para obtener información sobre cómo agregar y quitar agentes de escucha de eventos, consulte [sugerencias para solucionar problemas relacionados con los agentes de escucha de evento](#Tips) en este tema.
 
 > [!NOTE]
->  Los agentes de escucha de eventos para los elementos de código que no son elementos DOM, como `xhr`, no aparecen en la **eventos** ficha.
+> Los agentes de escucha de eventos para los elementos de código que no son elementos DOM, como `xhr`, no aparecen en la **eventos** ficha.
 
 ## <a name="view-event-listeners-for-dom-elements"></a>Ver agentes de escucha de eventos para elementos DOM
  En este ejemplo se muestra una aplicación de la Tienda de Windows Phone. Las características del Explorador DOM descritas aquí también son compatibles con las aplicaciones de la Tienda Windows.

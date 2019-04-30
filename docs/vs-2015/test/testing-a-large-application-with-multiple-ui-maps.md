@@ -11,12 +11,12 @@ ms.assetid: 6e1ae9ec-e9b1-458a-bd96-0eb15e46f1d5
 caps.latest.revision: 24
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5a6a3247ed53b6a84feb203ce0e9b480e7f9ce5d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 18180ee3277cdff60d11c0ae35e8aa3c990764de
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60073896"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386047"
 ---
 # <a name="testing-a-large-application-with-multiple-ui-maps"></a>Probar una aplicación grande con varios mapas de IU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ En este tema se describe cómo usar pruebas de IU codificadas cuando esté proba
     Se abrirá el cuadro de diálogo **Agregar nuevo elemento**.  
   
    > [!NOTE]
-   >  Para agregar una nueva asignación de prueba de IU codificada debe estar en un proyecto de prueba de IU codificada.  
+   > Para agregar una nueva asignación de prueba de IU codificada debe estar en un proyecto de prueba de IU codificada.  
   
 3. Seleccione **Asignación de pruebas automatizadas de IU** en la lista.  
   

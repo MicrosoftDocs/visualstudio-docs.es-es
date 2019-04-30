@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 13ea06abff2237c0b9262ba01dcb243afe6c3c3a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4881604c4fe2ab85f4c32361eddb5f5bb228b3cd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063119"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430455"
 ---
 # <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>Tutorial: Una llamada al modelo de objetos de cliente de SharePoint en una extensión de explorador de servidores
   Este tutorial muestra cómo llamar al modelo de objetos de cliente de SharePoint desde una extensión para el **conexiones de SharePoint** nodo **Explorador de servidores**. Para obtener más información sobre cómo usar el modelo de objetos de cliente de SharePoint, vea [llamar a los modelos de objetos de SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).
@@ -36,7 +36,7 @@ ms.locfileid: "60063119"
 - Depurar y probar la extensión.
 
 > [!NOTE]
->  La extensión que se crea en este tutorial se parece a la extensión que se crea en [Tutorial: Extender el Explorador de servidores para mostrar elementos web](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md). En este tutorial usa el modelo de objetos de servidor de SharePoint, pero en este tutorial se lleva a cabo las mismas tareas utilizando el modelo de objetos de cliente.
+> La extensión que se crea en este tutorial se parece a la extensión que se crea en [Tutorial: Extender el Explorador de servidores para mostrar elementos web](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md). En este tutorial usa el modelo de objetos de servidor de SharePoint, pero en este tutorial se lleva a cabo las mismas tareas utilizando el modelo de objetos de cliente.
 
 ## <a name="prerequisites"></a>Requisitos previos
  Necesitará los componentes siguientes en el equipo de desarrollo para completar este tutorial:
@@ -69,7 +69,7 @@ El conocimiento de los siguientes conceptos es útil, aunque no necesario, para 
 3. En el **nuevo proyecto** cuadro de diálogo, expanda el **Visual C#** o **Visual Basic** nodos y, a continuación, elija **extensibilidad**.
 
     > [!NOTE]
-    >  El **extensibilidad** nodo está disponible solo si instala el SDK de Visual Studio. Para obtener más información, vea la sección Requisitos previos, anteriormente en este tema.
+    > El **extensibilidad** nodo está disponible solo si instala el SDK de Visual Studio. Para obtener más información, vea la sección Requisitos previos, anteriormente en este tema.
 
 4. En la parte superior del cuadro de diálogo, elija **.NET Framework 4.5** en la lista de versiones de .NET Framework.
 
@@ -161,7 +161,7 @@ El conocimiento de los siguientes conceptos es útil, aunque no necesario, para 
 1. Pegue el código siguiente en el **SiteNodeExtension** archivo de código para el **ExtensiónNodoElementoWeb** proyecto.
 
     > [!NOTE]
-    >  Tras agregar este código, el proyecto tendrá algunos errores de compilación. Estos errores desaparecerán al agregar código en pasos posteriores.
+    > Tras agregar este código, el proyecto tendrá algunos errores de compilación. Estos errores desaparecerán al agregar código en pasos posteriores.
 
      [!code-csharp[SPExtensibility.SPExplorer.WebPartNode#1](../sharepoint/codesnippet/CSharp/webpartnode/webpartnodeextension/sitenodeextension.cs#1)]
      [!code-vb[SPExtensibility.SPExplorer.WebPartNode#1](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnode.webpartnode/webpartnodeextension/sitenodeextension.vb#1)]
@@ -205,7 +205,7 @@ El conocimiento de los siguientes conceptos es útil, aunque no necesario, para 
 6. En el **Agregar nuevo activo** cuadro de diálogo el **tipo** elija **Microsoft.VisualStudio.MefComponent**.
 
     > [!NOTE]
-    >  Este valor corresponde al elemento `MefComponent` del archivo extension.vsixmanifest. Este elemento especifica el nombre de un ensamblado de extensión en el paquete VSIX. Para obtener más información, consulte [elemento MEFComponent (Esquema VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
+    > Este valor corresponde al elemento `MefComponent` del archivo extension.vsixmanifest. Este elemento especifica el nombre de un ensamblado de extensión en el paquete VSIX. Para obtener más información, consulte [elemento MEFComponent (Esquema VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
 
 7. En el **origen** elija **un proyecto de la solución actual**.
 

@@ -14,12 +14,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8b089cd468b9b4a69a22a3be31059be51e05ee24
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: ed2e8ad333121a489c450a35daf81a368cd4aba8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59648359"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444727"
 ---
 # <a name="services-page-project-designer"></a>Página Servicios, Diseñador de proyectos
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Los servicios de aplicación cliente proporcionan acceso simplificado al inicio 
  Para acceder a la página **Servicios**, seleccione un nodo de proyecto en el **Explorador de soluciones** y luego haga clic en **Propiedades** en el menú **Proyecto**. Cuando se muestre el **Diseñador de proyectos**, haga clic en la pestaña **Servicios**.  
   
 > [!NOTE]
->  Los servicios de aplicaciones cliente requieren la versión completa de .NET Framework y no son compatibles con .NET Framework Client Profile. Si la casilla **Habilitar servicios de aplicación cliente** está desactivada, compruebe que **Marco de trabajo de destino** esté establecido en .NET Framework 3.5 o posterior. Para ver el valor de **Marco de trabajo de destino** en C#, abra el Diseñador de proyectos y haga clic en la página **Aplicación**. Para ver el valor de **Marco de trabajo de destino** en Visual Basic, abra el Diseñador de proyectos, haga clic en la página **Compilar** y luego en **Opciones de compilación avanzadas**.  
+> Los servicios de aplicaciones cliente requieren la versión completa de .NET Framework y no son compatibles con .NET Framework Client Profile. Si la casilla **Habilitar servicios de aplicación cliente** está desactivada, compruebe que **Marco de trabajo de destino** esté establecido en .NET Framework 3.5 o posterior. Para ver el valor de **Marco de trabajo de destino** en C#, abra el Diseñador de proyectos y haga clic en la página **Aplicación**. Para ver el valor de **Marco de trabajo de destino** en Visual Basic, abra el Diseñador de proyectos, haga clic en la página **Compilar** y luego en **Opciones de compilación avanzadas**.  
   
 ## <a name="task-list"></a>Lista de tareas  
  [Cómo: Configurar servicios de aplicaciones cliente](http://msdn.microsoft.com/library/34a8688a-a32c-40d3-94be-c8e610c6a4e8)  

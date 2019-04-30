@@ -23,12 +23,12 @@ caps.latest.revision: 48
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c7161d8115f8cc99f830293cdf5f957a2264f5a0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8d7d4524f1839179ac253265d95f191caf1c50af
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041187"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445672"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Procedimiento Agregar o quitar referencias mediante el Administrador de referencias
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -99,7 +99,7 @@ Puede usar el cuadro de diálogo **Administrador de referencias** para agregar y
 - No se deben agregar referencias de archivos a resultados de otro proyecto de la misma solución, ya que puede provocar errores de compilación. En lugar de hacerlo, use la pestaña **Proyectos** del cuadro de diálogo **Agregar referencia** para crear referencias entre proyectos. Esto facilita el trabajo en equipo, permitiendo una mejor administración de las bibliotecas de clases creadas en los proyectos. Para más información, vea [Solucionar problemas de referencias rotas](../ide/troubleshooting-broken-references.md).  
   
 - > [!NOTE]
-    >  En Visual Studio 2015, se crea una referencia de archivo en lugar de una referencia de proyecto si la versión de destino de .NET Framework de un proyecto es la 4.5 y la versión de .NET Framework de destino del otro proyecto es la 2, la 3, la 3.5 o la 4.0.  
+    > En Visual Studio 2015, se crea una referencia de archivo en lugar de una referencia de proyecto si la versión de destino de .NET Framework de un proyecto es la 4.5 y la versión de .NET Framework de destino del otro proyecto es la 2, la 3, la 3.5 o la 4.0.  
   
 #### <a name="to-display-an-assembly-in-the-add-reference-dialog-box"></a>Para mostrar un ensamblado en el cuadro de diálogo Agregar referencia  
   
@@ -181,7 +181,7 @@ Puede usar el cuadro de diálogo **Administrador de referencias** para agregar y
  Un SDK es una colección de archivos que Visual Studio trata como un único componente. En la pestaña Extensiones, los SDK que se aplican al proyecto desde el que se ha invocado el cuadro de diálogo **Administrador de referencias** se muestran como entradas individuales. Cuando se agrega a un proyecto, todo el contenido de los SDK lo utiliza Visual Studio, de modo que el usuario no necesita realizar ninguna acción adicional para usar el contenido de los SDK en IntelliSense, cuadro de herramientas, diseñadores, Explorador de objetos, compilación, implementación, depuración y empaquetado. Para más información sobre cómo mostrar el SDK en la pestaña Extensiones, vea [Crear un Kit de desarrollo de Software](../extensibility/creating-a-software-development-kit.md).  
   
 > [!NOTE]
->  Si un proyecto hace referencia a un SDK que depende de otro SDK, Visual Studio no utilizará el segundo SDK a menos que el usuario agregue manualmente una referencia al segundo SDK. Cuando un usuario elige un SDK en la pestaña **Extensiones**, el cuadro de diálogo **Administrador de referencias** le ayuda a identificar las dependencias del SDK al mostrar no solo el nombre y la versión del SDK sino también el nombre de todas las dependencias del SDK en el panel de detalles. Si un usuario se olvida de las dependencias y solo agrega ese SDK, MSBuild pedirá al usuario que agregue las dependencias.  
+> Si un proyecto hace referencia a un SDK que depende de otro SDK, Visual Studio no utilizará el segundo SDK a menos que el usuario agregue manualmente una referencia al segundo SDK. Cuando un usuario elige un SDK en la pestaña **Extensiones**, el cuadro de diálogo **Administrador de referencias** le ayuda a identificar las dependencias del SDK al mostrar no solo el nombre y la versión del SDK sino también el nombre de todas las dependencias del SDK en el panel de detalles. Si un usuario se olvida de las dependencias y solo agrega ese SDK, MSBuild pedirá al usuario que agregue las dependencias.  
   
  Si un tipo de proyecto no admite **Extensiones**, la pestaña no aparecerá en el cuadro de diálogo **Administrador de referencias**.  
   
@@ -207,7 +207,7 @@ Puede usar el cuadro de diálogo **Administrador de referencias** para agregar y
     ```  
   
     > [!NOTE]
-    >  Si agrega la propiedad, es posible que la compilación se ejecute más lentamente.  
+    > Si agrega la propiedad, es posible que la compilación se ejecute más lentamente.  
   
 ## <a name="recent"></a>Reciente  
  Los grupos Ensamblados, COM, Windows y Examinar tienen cada uno una pestaña Recientes, que muestra una lista de los componentes que se agregaron recientemente a proyectos.  

@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 53b75732c636a551e3a000008d3ddcca2aa686cb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 966a81f7863f71296bb7b6bd307a5e3a5241c783
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60058485"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441036"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Procedimiento Modificar un comando de menú estándar en un lenguaje específico de dominio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Puede modificar el comportamiento de algunos de los comandos estándar que se de
    En este tema se explica el procedimiento.  
   
 > [!NOTE]
->  Si desea crear sus propios comandos de menú, vea [Cómo: Agregar un comando al menú contextual](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).  
+> Si desea crear sus propios comandos de menú, vea [Cómo: Agregar un comando al menú contextual](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).  
   
 ## <a name="what"></a> ¿Qué comandos puede modificar?  
   
@@ -52,7 +52,7 @@ Puede modificar el comportamiento de algunos de los comandos estándar que se de
 5. Cierre el archivo sin guardar las ediciones.  
   
     > [!NOTE]
-    >  Normalmente no debe editar los archivos que se han generado. Las ediciones se perderán la próxima vez que se generen los archivos.  
+    > Normalmente no debe editar los archivos que se han generado. Las ediciones se perderán la próxima vez que se generen los archivos.  
   
 ## <a name="extend"></a> Extender la clase de conjunto de comandos apropiada  
  Cree un nuevo archivo que contiene una declaración parcial de la clase de conjunto de comandos.  
@@ -90,7 +90,7 @@ Puede modificar el comportamiento de algunos de los comandos estándar que se de
  En el ejemplo siguiente se deshabilita el elemento de menú Delete cuando el usuario selecciona más de una forma.  
   
 > [!NOTE]
->  Este método no afecta a si el comando está disponible presionando una tecla. Por ejemplo, deshabilitar el elemento de menú Delete no impide que el comando se invoque desde la tecla Suprimir.  
+> Este método no afecta a si el comando está disponible presionando una tecla. Por ejemplo, deshabilitar el elemento de menú Delete no impide que el comando se invoque desde la tecla Suprimir.  
   
 ```  
 /// <summary>  

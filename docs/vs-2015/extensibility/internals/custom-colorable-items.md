@@ -11,12 +11,12 @@ ms.assetid: b4d0ddee-c04b-48dc-ba82-f6068570cef0
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e210d8c03d3e99cf1e37608f5b65d5a4ab0656f4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 24a4db907ec859c6075c06956f86939047379897
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58995138"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63409370"
 ---
 # <a name="custom-colorable-items"></a>Elementos coloreables personalizados
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,11 +30,11 @@ Puede reemplazar la lista de tipos para colorear, como palabras clave y los come
  Dado que el IDE controla los reemplazos de elementos coloreables en el **fuentes y colores** cuadro de diálogo, debe proporcionar solo cada elemento coloreable personalizado con un nombre. Este nombre es lo que aparece en el **mostrar elementos** lista. Los elementos coloreables aparecen en orden alfabético. Para agrupar elementos coloreables personalizados de su servicio lenguaje, puede comenzar cada nombre con el nombre del lenguaje, por ejemplo **NewLanguage - comentario** y **NewLanguage - palabra clave**.  
   
 > [!CAUTION]
->  Debe incluir el nombre del idioma en el nombre del elemento coloreable para evitar conflictos con otros nombres de elemento coloreable. Si cambia el nombre de uno de los elementos coloreables durante el desarrollo, debe restablecer la memoria caché que se creó la primera vez que se tuvo acceso a los elementos coloreables. Puede restablecer la caché con la herramienta CreateExpInstance, que se instala con el SDK de Visual Studio, normalmente en el directorio experimental  
+> Debe incluir el nombre del idioma en el nombre del elemento coloreable para evitar conflictos con otros nombres de elemento coloreable. Si cambia el nombre de uno de los elementos coloreables durante el desarrollo, debe restablecer la memoria caché que se creó la primera vez que se tuvo acceso a los elementos coloreables. Puede restablecer la caché con la herramienta CreateExpInstance, que se instala con el SDK de Visual Studio, normalmente en el directorio experimental  
 >   
->  **C:\Program archivos (x86) \Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin**  
+> **C:\Program archivos (x86) \Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin**  
 >   
->  Para restablecer la memoria caché, llame a `CreateExpInstance /Reset`. Para obtener más información sobre CreateExpInstance, consulte [CreateExpInstance Utility](../../extensibility/internals/createexpinstance-utility.md).  
+> Para restablecer la memoria caché, llame a `CreateExpInstance /Reset`. Para obtener más información sobre CreateExpInstance, consulte [CreateExpInstance Utility](../../extensibility/internals/createexpinstance-utility.md).  
   
  El primer elemento en la lista de elementos coloreables nunca se hace referencia. El primer elemento corresponde a un índice del elemento coloreable de 0, y [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] siempre proporciona los colores de texto predeterminado y atributos para ese elemento. La manera más fácil de tratar con este elemento sin referencia es proporcionar un elemento coloreable de marcador de posición en la lista como el primer elemento.  
   

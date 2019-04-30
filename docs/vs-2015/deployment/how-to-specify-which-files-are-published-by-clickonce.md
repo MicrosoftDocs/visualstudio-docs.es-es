@@ -18,12 +18,12 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5b7576faf84b564e1ea10ef9def69819e5c77fa6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e0ef4264629e40380f12fb07623bb9274547713c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046960"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441584"
 ---
 # <a name="how-to-specify-which-files-are-published-by-clickonce"></a>Procedimiento Especificar los archivos que se van a publicar mediante ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -95,7 +95,7 @@ Al publicar un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] archivos d
 4. En el **archivos de la aplicación** cuadro de diálogo, seleccione el **grupo** field para un archivo que desea incluir en el nuevo grupo.  
   
     > [!NOTE]
-    >  Los archivos deben tener la **acción de compilación** propiedad establecida en **contenido** antes de que aparezcan los nombres de archivo en el **archivos de la aplicación** cuadro de diálogo.  
+    > Los archivos deben tener la **acción de compilación** propiedad establecida en **contenido** antes de que aparezcan los nombres de archivo en el **archivos de la aplicación** cuadro de diálogo.  
   
 5. En el **grupo de descarga** campos, seleccione  **\<nuevo... >** en la lista desplegable.  
   
@@ -114,7 +114,7 @@ Al publicar un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] archivos d
 5. En el **grupo de descarga** , seleccione un grupo en la lista desplegable.  
   
     > [!NOTE]
-    >  No puede cambiar el **grupo de descarga** para los archivos que son necesarios para ejecutar la aplicación.  
+    > No puede cambiar el **grupo de descarga** para los archivos que son necesarios para ejecutar la aplicación.  
   
 ## <a name="see-also"></a>Vea también  
  [Publicar aplicaciones ClickOnce](../deployment/publishing-clickonce-applications.md)   

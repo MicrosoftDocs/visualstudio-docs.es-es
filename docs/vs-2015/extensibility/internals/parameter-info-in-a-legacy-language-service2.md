@@ -12,12 +12,12 @@ ms.assetid: a117365d-320d-4bb5-b61d-3e6457b8f6bc
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 986a392dc381b972c9e4d4bfa6dda06fe1aa878e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d1fddc99c40e2472688a25ade121c2c762ade5da
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087748"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437929"
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>Información de parámetros en un servicio de lenguaje heredado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Información de parámetros IntelliSense es el carácter (normalmente un parént
  Servicios de lenguaje heredado se implementan como parte de un paquete VSPackage, pero la forma más reciente para implementar características de servicio de lenguaje es usar las extensiones MEF. Para obtener más información, consulte [ampliación del Editor y los servicios de lenguaje](../../extensibility/extending-the-editor-and-language-services.md).  
   
 > [!NOTE]
->  Se recomienda que comience a usar el nuevo editor de API tan pronto como sea posible. Esto mejorará el rendimiento de su servicio de lenguaje y le permiten aprovechar las nuevas características del editor.  
+> Se recomienda que comience a usar el nuevo editor de API tan pronto como sea posible. Esto mejorará el rendimiento de su servicio de lenguaje y le permiten aprovechar las nuevas características del editor.  
   
 ## <a name="implementation"></a>Implementación  
  El analizador debe establecer el valor de desencadenador <xref:Microsoft.VisualStudio.Package.TokenTriggers> se establece cuando encuentra un carácter de inicio de lista de parámetros (a menudo un paréntesis de apertura). Se debe establecer un <xref:Microsoft.VisualStudio.Package.TokenTriggers> desencadenar cuando encuentra un separador de parámetro (a menudo una coma). Esto hace que una información sobre herramientas de información de parámetros para actualizarse y mostrar el siguiente parámetro en negrita. El analizador debe establecer el valor de desencadenador <xref:Microsoft.VisualStudio.Package.TokenTriggers> cuando si busca el carácter de final de lista de parámetros (a menudo un paréntesis de cierre).  
@@ -37,7 +37,7 @@ Información de parámetros IntelliSense es el carácter (normalmente un parént
  El <xref:Microsoft.VisualStudio.Package.TokenTriggers> valor desencadenador inicia una llamada a la <xref:Microsoft.VisualStudio.Package.Source.MethodTip%2A> método, que a su vez llama a la <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> analizador de método con un motivo de análisis de <xref:Microsoft.VisualStudio.Package.ParseReason>. Si el analizador determina que el identificador antes de empezar a la lista de parámetros de carácter es un nombre de método reconocido, devuelve una lista de hacer coincidir las signaturas de método en el <xref:Microsoft.VisualStudio.Package.AuthoringScope> objeto. Si se encontraron las firmas de método, se muestra la información de parámetros, información sobre herramientas con la primera firma en la lista. Esta información sobre herramientas, a continuación, se actualiza conforme se escribe más de la firma. Cuando se escribe el carácter de final de lista de parámetros, se quita la información de parámetros, información sobre herramientas de vista.  
   
 > [!NOTE]
->  Para asegurarse de que la información de parámetros, información sobre herramientas tiene el formato adecuado, debe reemplazar las propiedades en el <xref:Microsoft.VisualStudio.Package.Methods> clase para proporcionar los caracteres correspondientes. La base de <xref:Microsoft.VisualStudio.Package.Methods> se da por supuesto la clase C#-firma de método de estilo. Consulte la <xref:Microsoft.VisualStudio.Package.Methods> clase para obtener más información sobre cómo se puede hacer esto.  
+> Para asegurarse de que la información de parámetros, información sobre herramientas tiene el formato adecuado, debe reemplazar las propiedades en el <xref:Microsoft.VisualStudio.Package.Methods> clase para proporcionar los caracteres correspondientes. La base de <xref:Microsoft.VisualStudio.Package.Methods> se da por supuesto la clase C#-firma de método de estilo. Consulte la <xref:Microsoft.VisualStudio.Package.Methods> clase para obtener más información sobre cómo se puede hacer esto.  
   
 ## <a name="enabling-support-for-the-parameter-info"></a>Habilitar la compatibilidad para la información de parámetros  
  Para admitir la información sobre herramientas de información de parámetros, se debe establecer el `ShowCompletion` con el nombre de parámetro de la <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> a `true`. El servicio de lenguaje lee el valor de esta entrada del registro desde el <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCodeSense%2A> propiedad.  

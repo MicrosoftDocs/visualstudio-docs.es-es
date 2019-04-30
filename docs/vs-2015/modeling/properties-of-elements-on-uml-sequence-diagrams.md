@@ -15,12 +15,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c6de88572b685b5a432b4f73b125a464f125218b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: a6008566f71a241fb5daccab8d6a5dcb68882452
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58999493"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444410"
 ---
 # <a name="properties-of-elements-on-uml-sequence-diagrams"></a>Propiedades de los elementos de diagramas de secuencia de UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,11 +28,11 @@ ms.locfileid: "58999493"
 En un diagrama de secuencia UML, cada elemento del diagrama tiene propiedades. Para ver las propiedades de un elemento, haga clic en el elemento en el diagrama o en **Explorador de modelos UML** y, a continuación, haga clic en **propiedades**. Las propiedades aparecen en la **propiedades** ventana.  
   
 > [!NOTE]
->  Este tema trata sobre las propiedades de los elementos de los diagramas de secuencia UML. Para obtener más información sobre cómo leer diagramas de secuencia UML, vea [diagramas de secuencia UML: referencia](../modeling/uml-sequence-diagrams-reference.md). Para obtener más información sobre cómo dibujar diagramas de secuencia UML, vea [diagramas de secuencia UML: Directrices](../modeling/uml-sequence-diagrams-guidelines.md).  
+> Este tema trata sobre las propiedades de los elementos de los diagramas de secuencia UML. Para obtener más información sobre cómo leer diagramas de secuencia UML, vea [diagramas de secuencia UML: referencia](../modeling/uml-sequence-diagrams-reference.md). Para obtener más información sobre cómo dibujar diagramas de secuencia UML, vea [diagramas de secuencia UML: Directrices](../modeling/uml-sequence-diagrams-guidelines.md).  
   
 ## <a name="properties-of-elements"></a>Propiedades de los elementos  
   
-|Property|Default|Elemento|Descripción|  
+|Propiedad|Default|Elemento|Descripción|  
 |--------------|-------------|-------------|-----------------|  
 |**Name**|Nombre predeterminado|Todas|Identifica el elemento.|  
 |**Nombre completo**|Paquete:: Name|Todas|Identifica de forma única el elemento. Prefijo con el nombre completo del paquete que lo contiene.|  

@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4c270ff9a31073835d8f907547cf0f532e237b1e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c7d74b731bd1857330c40a7929d84efe40a03201
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089463"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431249"
 ---
 # <a name="how-to-add-an-entity-to-a-model"></a>Procedimiento Agregar una entidad a un modelo
   Para crear una entidad, agregue un control de la entidad desde Visual Studio **cuadro de herramientas** hasta el Diseñador de conectividad de datos profesionales (BDC).
@@ -40,7 +40,7 @@ ms.locfileid: "60089463"
      Un nuevo identificador aparece en la entidad.
 
     > [!NOTE]
-    >  Puede cambiar el nombre de la entidad y el identificador de la **propiedades** ventana.
+    > Puede cambiar el nombre de la entidad y el identificador de la **propiedades** ventana.
 
 4. Defina los campos de la entidad en una clase. Puede agregar una nueva clase al proyecto o utilizar una clase existente creada mediante otras herramientas como el Object Relational Designer (Object Relational Designer). El ejemplo siguiente muestra una clase de entidad con el nombre de contacto.
 

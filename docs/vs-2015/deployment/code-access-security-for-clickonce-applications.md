@@ -24,12 +24,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b56f926006b952b0e92a791e36bb821f3df0197d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 54160bbdfe834a1b3226f4445b862c151bcf35c3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58995444"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63423278"
 ---
 # <a name="code-access-security-for-clickonce-applications"></a>Seguridad de acceso del código para aplicaciones ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ Las aplicaciones ClickOnce se basan en .NET Framework y están sujetas a restric
 - Cuando una aplicación requiere permisos de plena confianza, puede que se pida al usuario final que conceda permisos a la aplicación. Esto significa que la aplicación no proporciona realmente una experiencia ClickOnce y el mensaje de solicitud puede resultar confuso para los usuarios menos experimentados.  
   
   > [!NOTE]
-  >  Al instalar una aplicación desde medios extraíbles, como puede ser un CD-ROM, no se realiza ninguna solicitud al usuario. Además, un administrador de red puede configurar la directiva de red para que no se realicen solicitudes a los usuarios al instalar una aplicación desde un origen de confianza. Para obtener más información, consulta [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).  
+  > Al instalar una aplicación desde medios extraíbles, como puede ser un CD-ROM, no se realiza ninguna solicitud al usuario. Además, un administrador de red puede configurar la directiva de red para que no se realicen solicitudes a los usuarios al instalar una aplicación desde un origen de confianza. Para obtener más información, consulta [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).  
   
   Para restringir los permisos de una aplicación ClickOnce, puede modificar los permisos de seguridad de acceso del código de la aplicación para que solicite la zona que mejor se adapte a los permisos que requiera la aplicación. En la mayoría de los casos, puede seleccionar la zona desde la que se implementa la aplicación. Por ejemplo, si la aplicación es una aplicación empresarial, puede usar la zona **Intranet local** . Si la aplicación es una aplicación de Internet, puede usar la zona **Internet** .  
   

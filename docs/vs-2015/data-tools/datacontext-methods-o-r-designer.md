@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 97a36c38eb0c4a96cb7182300c2f9aca6da68e8a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c5af5beb71dc2164df38180078cf7489f2da391e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042758"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431139"
 ---
 # <a name="datacontext-methods-or-designer"></a>DataContext (Métodos) (Object Relational Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ DataContext] (assetId:///T:System.Data.Linq.DataContext?qualifyHint=False & auto
  Los métodos de <xref:System.Data.Linq.DataContext> que se asignan a los procedimientos almacenados y funciones se muestran en el panel de métodos del [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. El panel de métodos es el panel en el lado de la **entidades** panel (la superficie de diseño principal). Muestra el panel de métodos todos <xref:System.Data.Linq.DataContext> métodos que ha creado mediante el [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. De forma predeterminada, el panel de métodos está vacío; Arrastre los procedimientos almacenados o funciones desde **Explorador de servidores**/**Database Explorer** hasta la [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] para crear <xref:System.Data.Linq.DataContext> métodos y rellenar el panel de métodos. Para obtener más información, vea [Cómo: Crear métodos DataContext asignados a funciones y procedimientos almacenados (Object Relational Designer)](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md).  
   
 > [!NOTE]
->  Abrir y cerrar el panel de métodos haciendo clic con el [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] y, a continuación, haga clic en **ocultar panel métodos** o **Mostrar panel métodos**, o utilice el método abreviado de teclado CTRL + 1.  
+> Abrir y cerrar el panel de métodos haciendo clic con el [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] y, a continuación, haga clic en **ocultar panel métodos** o **Mostrar panel métodos**, o utilice el método abreviado de teclado CTRL + 1.  
   
 ## <a name="two-types-of-datacontext-methods"></a>Dos tipos de métodos de DataContext  
  Los métodos de DataContext son los que se asignan a los procedimientos almacenados y funciones de la base de datos. Puede crear y agregar métodos DataContext en el panel de métodos de [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. Hay dos tipos distintos de métodos <xref:System.Data.Linq.DataContext>; los que devuelven uno o varios conjuntos de resultados y los que no:  
@@ -44,7 +44,7 @@ DataContext] (assetId:///T:System.Data.Linq.DataContext?qualifyHint=False & auto
  Cuando arrastre los procedimientos almacenados y funciones de **Explorador de servidores**/**Database Explorer** hasta la [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)], el tipo de valor devuelto de generado <xref:System.Data.Linq.DataContext> difiere del método Dependiendo de dónde colocar el elemento. Al colocar los elementos directamente en una clase de entidad existentes, crea un <xref:System.Data.Linq.DataContext> método con el tipo de valor devuelto de la clase de entidad; al colocar los elementos en un área vacía de la [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] (en cualquiera de los paneles) crea un <xref:System.Data.Linq.DataContext> método que devuelva una tipo generado automáticamente. El tipo generado automáticamente coincide con el nombre del procedimiento almacenado o de la función y sus propiedades se asignan a los campos devueltos por el procedimiento almacenado o la función.  
   
 > [!NOTE]
->  Se puede cambiar el tipo de valor devuelto de un método de <xref:System.Data.Linq.DataContext> después de agregarlo al panel de métodos. Para examinar o cambiar el tipo de valor devuelto de un método <xref:System.Data.Linq.DataContext>, selecciónelo y fíjese en la propiedad **Tipo devuelto** en la ventana **Propiedades**. Para obtener más información, vea [Cómo: Cambio del tipo de valor devuelto de un método DataContext (Object Relational Designer)](../data-tools/how-to-change-the-return-type-of-a-datacontext-method-o-r-designer.md).  
+> Se puede cambiar el tipo de valor devuelto de un método de <xref:System.Data.Linq.DataContext> después de agregarlo al panel de métodos. Para examinar o cambiar el tipo de valor devuelto de un método <xref:System.Data.Linq.DataContext>, selecciónelo y fíjese en la propiedad **Tipo devuelto** en la ventana **Propiedades**. Para obtener más información, vea [Cómo: Cambio del tipo de valor devuelto de un método DataContext (Object Relational Designer)](../data-tools/how-to-change-the-return-type-of-a-datacontext-method-o-r-designer.md).  
   
  Los objetos que se arrastran desde la base de datos a la superficie de Object Relational Designer reciben automáticamente un nombre basado en el nombre de los objetos de la base de datos. Si arrastra el mismo objeto más de una vez, se anexa un número al final del nuevo nombre para diferenciar los nombres. Cuando los nombres de objetos de la base de datos contienen espacios o caracteres no admitidos en Visual Basic o C#, el espacio o el carácter no válido se sustituye por un carácter de subrayado.  
   

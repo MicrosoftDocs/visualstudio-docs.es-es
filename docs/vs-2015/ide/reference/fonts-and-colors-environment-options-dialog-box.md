@@ -27,12 +27,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a1a66ae20065546d5a42b990d0ba0009d0657ed0
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 1cd4b57e2dccbb26c3b6ceba1be51fa5022469cb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656032"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437166"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Fuentes y colores, Entorno, Opciones (Cuadro de diálogo)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ ms.locfileid: "59656032"
 La página **Fuentes y colores** del cuadro de diálogo **Opciones** le permite establecer una combinación de colores y una fuente personalizadas para varios elementos de la interfaz de usuario del entorno de desarrollo integrado (IDE). Puede acceder a este cuadro de diálogo haciendo clic en **Herramientas / Opciones**, y,después, seleccione **Entorno / Fuentes y colores**. Si esta página no aparece en la lista, en el cuadro de diálogo **Opciones**, seleccione **Mostrar todas las configuraciones**.  
   
 > [!NOTE]
->  Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Los cambios de combinaciones de colores no surten efecto durante la sesión en la que se realizan. Puede evaluar los cambios de color abriendo otra instancia de Visual Studio y creando las condiciones en las que espera aplicar los cambios.  
   
@@ -56,7 +56,7 @@ La página **Fuentes y colores** del cuadro de diálogo **Opciones** le permite 
    Los cambios realizados en la configuración de visualización de estilo, tamaño y color para la Impresora afectan a la apariencia del texto en documentos impresos.  
   
   > [!NOTE]
-  >  Según sea necesario, puede seleccionar una fuente predeterminada para imprimir distinta a la que se usa para mostrar en el editor de texto. Esto puede ser útil cuando imprima código que contiene caracteres tanto de un solo byte como de doble byte.  
+  > Según sea necesario, puede seleccionar una fuente predeterminada para imprimir distinta a la que se usa para mostrar en el editor de texto. Esto puede ser útil cuando imprima código que contiene caracteres tanto de un solo byte como de doble byte.  
   
 - **Finalización de instrucciones**  
   
@@ -75,7 +75,7 @@ La página **Fuentes y colores** del cuadro de diálogo **Opciones** le permite 
    Los cambios realizados en la configuración de visualización de estilo, tamaño y color para este elemento afectan a la apariencia del texto en ventanas de herramientas que tengan paneles de resultados en el IDE. Por ejemplo, la ventana de salida, la ventana de comandos, la ventana inmediata, etc.  
   
   > [!NOTE]
-  >  Los cambios realizados en el texto de elementos **[Todas las ventanas de herramientas de texto]** no surten efecto durante la sesión en la que se realizan. Puede evaluar dichos cambios abriendo otra instancia de Visual Studio.  
+  > Los cambios realizados en el texto de elementos **[Todas las ventanas de herramientas de texto]** no surten efecto durante la sesión en la que se realizan. Puede evaluar dichos cambios abriendo otra instancia de Visual Studio.  
   
   **Usar valores predeterminados**  
   Restablece los valores de fuente y color del elemento de lista seleccionado en **Mostrar valores para**. El botón **Uso** aparece cuando hay otras combinaciones de visualización disponibles para seleccionarlas. Por ejemplo, puede elegir entre dos combinaciones para la impresora.  
@@ -90,7 +90,7 @@ La página **Fuentes y colores** del cuadro de diálogo **Opciones** le permite 
   Enumera los elementos de los que puede modificar el color de primer plano y de fondo.  
   
 > [!NOTE]
->  **Texto sin formato** es el elemento para mostrar predeterminado. Como tal, las propiedades asignadas a **Texto sin formato** serán reemplazadas por las propiedades asignadas a otros elementos para mostrar. Por ejemplo, si asigna el color azul al **Texto sin formato** y el color verde al **Identificador**, todos los identificadores aparecerán en verde. En este ejemplo, las propiedades del **Identificador** reemplazan las propiedades del **Texto sin formato**.  
+> **Texto sin formato** es el elemento para mostrar predeterminado. Como tal, las propiedades asignadas a **Texto sin formato** serán reemplazadas por las propiedades asignadas a otros elementos para mostrar. Por ejemplo, si asigna el color azul al **Texto sin formato** y el color verde al **Identificador**, todos los identificadores aparecerán en verde. En este ejemplo, las propiedades del **Identificador** reemplazan las propiedades del **Texto sin formato**.  
   
  Entre los elementos para mostrar se incluyen:  
   
@@ -214,7 +214,7 @@ La página **Fuentes y colores** del cuadro de diálogo **Opciones** le permite 
  Muestra el cuadro de diálogo Color para permitirle establecer un color personalizado para el elemento seleccionado en la lista Elementos para mostrar  
   
 > [!NOTE]
->  Su capacidad para definir colores personalizados puede verse limitada por la configuración de color de la pantalla de su equipo. Por ejemplo, si su equipo está configurado para mostrar 256 colores y selecciona un color personalizado en el cuadro de diálogo **Color**, el IDE tiene como valor predeterminado el **Color básico** más similar disponible y muestra el color negro en el cuadro de vista previa **Color**.  
+> Su capacidad para definir colores personalizados puede verse limitada por la configuración de color de la pantalla de su equipo. Por ejemplo, si su equipo está configurado para mostrar 256 colores y selecciona un color personalizado en el cuadro de diálogo **Color**, el IDE tiene como valor predeterminado el **Color básico** más similar disponible y muestra el color negro en el cuadro de vista previa **Color**.  
   
  **Segundo plano del elemento**  
  Proporciona una paleta de colores de la que puede seleccionar un color de fondo para el elemento seleccionado en **Elementos para mostrar**. Puesto que algunos elementos están relacionados y, por tanto, deben mantener un esquema par mostrar coherente, si cambia el color de fondo del texto también cambian los valores predeterminados para elementos como Error del compilador, Palabra clave u Operador.  

@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 5b7e3a0172a798eab9a743f446dff3d339a785b2
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58151004"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436083"
 ---
 # <a name="iactivescript"></a>IActiveScript
 Proporciona los métodos necesarios para inicializar el motor de scripting. Debe implementar el motor de scripting el `IActiveScript` interfaz.  

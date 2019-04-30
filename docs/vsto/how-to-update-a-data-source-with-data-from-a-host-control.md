@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4d1e7bfd074b0ed7f6f1bcef99acf28f478a9c51
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 24bbd859b4867225e5ec5df95d298dd04146df46
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097497"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421017"
 ---
 # <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>Procedimiento Actualizar un origen de datos con datos de un control host
   Puede enlazar un control host a un origen de datos y actualizar el origen de datos con los cambios que se realicen en los datos del control. Hay dos pasos principales en este proceso:
@@ -61,7 +61,7 @@ ms.locfileid: "60097497"
    - Para actualizar el origen de datos cuando cambia el valor de la propiedad enlazada a datos del control, establezca esta propiedad en System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged.
 
      > [!NOTE]
-     >  La opción System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged no se aplica a los controles host de Word porque Word no notificaciones no oferta de documento o control de cambios. Sin embargo, esta opción puede utilizarse para los controles de Windows Forms en documentos de Word.
+     > La opción System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged no se aplica a los controles host de Word porque Word no notificaciones no oferta de documento o control de cambios. Sin embargo, esta opción puede utilizarse para los controles de Windows Forms en documentos de Word.
 
      En el ejemplo siguiente se configura un control <xref:Microsoft.Office.Tools.Excel.NamedRange> que actualiza automáticamente el origen de datos cuando cambia el valor en el control. En este ejemplo se supone que tiene un control <xref:Microsoft.Office.Tools.Excel.NamedRange> denominado `namedRange1` con su propiedad <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> enlazada a un campo de un origen de datos.
 
@@ -85,7 +85,7 @@ ms.locfileid: "60097497"
     - Para actualizar el origen de datos cuando cambia el valor de la propiedad enlazada a datos del control, seleccione **OnPropertyChanged**.
 
         > [!NOTE]
-        >  La opción **OnPropertyChanged** no se aplica a los controles host de Word porque Word no ofrece notificaciones de cambios de documento o de control. Sin embargo, esta opción puede utilizarse para los controles de Windows Forms en documentos de Word.
+        > La opción **OnPropertyChanged** no se aplica a los controles host de Word porque Word no ofrece notificaciones de cambios de documento o de control. Sin embargo, esta opción puede utilizarse para los controles de Windows Forms en documentos de Word.
 
 6. Cierre el cuadro de diálogo **Formato y enlace de datos avanzado** .
 

@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b939640b0676ae34eedeed96c8a4b6b21a5a37e4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 6ea209b380948196ee20cc4e2085fa46fab76efc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599524"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441844"
 ---
 # <a name="design-and-create-office-solutions"></a>Diseñar y crear soluciones de Office
 
@@ -32,7 +32,7 @@ Visual Studio proporciona plantillas de proyecto que puede usar para crear vario
 > ¿Está interesado en desarrollar soluciones que amplían la experiencia de Office a través de [varias plataformas](https://dev.office.com/add-in-availability)? Visite el nuevo [modelo de complementos de Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Complementos de Office tienen una superficie pequeña en comparación con las soluciones y los complementos de VSTO, y puede crearlas con prácticamente cualquier tecnología, como HTML5, CSS3, JavaScript y XML de programación web.
 
 ## <a name="create-office-projects"></a>Crear proyectos de Office
- Antes de empezar, debe determinar los requisitos y el tipo de solución que mejor se adapta a sus necesidades. Por ejemplo, si su solución de Office debe ejecutarse cada vez que se utiliza la aplicación, un complemento de VSTO será lo que mejor se adapte a sus necesidades. Si el código está estrechamente integrado con un único documento, cree una personalización de nivel de documento. Estos tipos de proyecto están disponibles como plantillas de proyecto de Visual Studio. Para obtener más información acerca de las plantillas de proyecto de Office que se incluyen con Visual Studio, consulte [Introducción a las plantillas de proyecto de Office](../vsto/office-project-templates-overview.md). Para obtener más información sobre cómo crear proyectos de Office, vea [Cómo: Crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+ Antes de empezar, debe determinar los requisitos y el tipo de solución que mejor se adapta a sus necesidades. Por ejemplo, si su solución de Office debe ejecutarse cada vez que se utiliza la aplicación, un complemento de VSTO será lo que mejor se adapte a sus requisitos. Si el código está estrechamente integrado con un único documento, cree una personalización de nivel de documento. Estos tipos de proyecto están disponibles como plantillas de proyecto de Visual Studio. Para obtener más información acerca de las plantillas de proyecto de Office que se incluyen con Visual Studio, consulte [Introducción a las plantillas de proyecto de Office](../vsto/office-project-templates-overview.md). Para obtener más información sobre cómo crear proyectos de Office, vea [Cómo: Crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
  Los proyectos de Office tienen características y elementos de proyecto que difieren de otros tipos de proyectos de Visual Studio. Por ejemplo, cuando se crea un proyecto de nivel de documento, el documento o el libro del proyecto se puede abrir y editar en Visual Studio. Para obtener más información, consulte [proyectos de Office en el entorno de Visual Studio](../vsto/office-projects-in-the-visual-studio-environment.md).
 
@@ -47,14 +47,14 @@ Visual Studio proporciona plantillas de proyecto que puede usar para crear vario
 
   Se requiere la versión de .NET Framework que elija para el proyecto en equipos de usuarios finales para ejecutar la solución. Por ejemplo, si el proyecto está destinado el [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], el [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] es necesario en equipos de usuario final. En este ejemplo, la solución no se ejecutará si solo .NET Framework 3.5 está instalado en equipos de usuario final.
 
-  Si migra un proyecto de complemento de VSTO que tiene como destino .NET Framework 3.5, Visual Studio cambia la plataforma de destino del proyecto a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o a una versión posterior, según la versión de Office que haya instalado.
+  Si migra un proyecto de complemento de VSTO que tiene como destino .NET Framework 3.5, Visual Studio cambia el marco de trabajo de destino del proyecto a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o a una versión posterior, según la versión de Office que haya instalado.
 
   Sin embargo, una vez que Visual Studio cambie el marco de trabajo de destino, deberá modificar parte del código del proyecto si utiliza determinadas características. Para obtener más información sobre cómo cambiar la plataforma de destino, vea [Cómo: Usar una versión de .NET Framework como destino](../ide/how-to-target-a-version-of-the-dotnet-framework.md). Para obtener más información acerca de los cambios que es posible que deba realizar en el proyecto, vea [soluciones de Office de migrar a .NET Framework 4 o posterior](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md).
 
   Si Visual Studio cambia el destino es .NET Framework para el proyecto y usa ClickOnce para implementar la solución, asegúrese de que seleccione también la versión correspondiente de .NET Framework en el **requisitos previos** cuadro de diálogo. Esta selección no cambia automáticamente al cambiar la plataforma de destino del proyecto. Para obtener más información, vea [Cómo: Instalar requisitos previos en equipos de usuarios finales para ejecutar soluciones de Office](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).
 
 > [!NOTE]
->  No podrá elegir como destino la versión .NET Framework 3.5 o alguna versión anterior en proyectos de Office que cree mediante [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]. Los proyectos de Office que cree mediante [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] requieren características que se introdujeron por primera vez en [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)].
+> No podrá elegir como destino la versión .NET Framework 3.5 o alguna versión anterior en proyectos de Office que cree mediante [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]. Los proyectos de Office que cree mediante [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] requieren características que se introdujeron por primera vez en [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)].
 
 ### <a name="understand-when-the-office-pias-are-required-on-end-user-computers"></a>Comprender cuándo se requieren los PIA de Office en equipos de usuario final
  De forma predeterminada, los ensamblados de interoperabilidad primarios (PIA) de Office no es necesario para instalarse en equipos de usuario final si la **Embed Interop Types** propiedad de cada referencia de PIA de Office en el proyecto está establecida en **True**, que es el valor predeterminado. En este escenario, la información de tipo de los tipos de PIA que utiliza la solución se incrusta en el ensamblado de la solución al compilar el proyecto. En tiempo de ejecución, la información de tipo incrustada se usa en lugar de los PIA para llamar al modelo de objetos basado en COM de la aplicación de Office. Para obtener más información acerca de cómo se incrustan los tipos de PIA en la solución, vea [equivalencia de tipos y tipos de interoperabilidad incrustados](/dotnet/framework/interop/type-equivalence-and-embedded-interop-types).

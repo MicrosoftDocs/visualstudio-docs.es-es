@@ -9,12 +9,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 11b35534641ec01c9d622b35caacf2e68162e4e1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: f08045a83849bdbd5bf6fb51287a66806d3bf4d6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797358"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403497"
 ---
 # <a name="l2dbformxaml-source-code"></a>Código fuente de L2DBForm.xaml
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -87,7 +87,7 @@ Text="{Binding Path=Attribute[id].Value}"...Text="{Binding Path=Value}"
 ### <a name="description"></a>Descripción  
   
 > [!NOTE]
->  Se recomienda copiar el código siguiente en un editor de código, como el editor de código fuente de C# de Visual Studio, de forma que sea más sencillo realizar un seguimiento de los números de línea.  
+> Se recomienda copiar el código siguiente en un editor de código, como el editor de código fuente de C# de Visual Studio, de forma que sea más sencillo realizar un seguimiento de los números de línea.  
   
 ### <a name="code"></a>Código  
   
@@ -242,5 +242,5 @@ Text="{Binding Path=Attribute[id].Value}"...Text="{Binding Path=Value}"
  Para conocer el código fuente de C# de los controladores de eventos asociados con los elementos de IU de WPF, consulte [L2DBForm.xaml.cs Source Code](../designers/l2dbform-xaml-cs-source-code.md).  
   
 ## <a name="see-also"></a>Vea también  
- [Tutorial: LinqToXmlDataBinding Example](../designers/walkthrough-linqtoxmldatabinding-example.md)   
+ [Tutorial: Ejemplo de LinqToXmlDataBinding](../designers/walkthrough-linqtoxmldatabinding-example.md)   
  [L2DBForm.xaml.cs Source Code](../designers/l2dbform-xaml-cs-source-code.md)

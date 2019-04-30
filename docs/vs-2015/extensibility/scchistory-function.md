@@ -12,12 +12,12 @@ ms.assetid: a636d9d3-47c1-4b48-ac6b-bcfde19d6cf9
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 2fb579cf56d0fdf9e8c441a1393d934fcc7348d4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 8df85c03201e46768c43fb64cc41b7fa081eb91a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58988281"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446839"
 ---
 # <a name="scchistory-function"></a>SccHistory (Función)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,7 +76,7 @@ SCCRTN SccHistory(
  Tenga en cuenta que en determinadas circunstancias, puede cambiar el archivo que se examinan durante la ejecución de esta llamada. Por ejemplo, el [!INCLUDE[vsvss](../includes/vsvss-md.md)] comando history proporciona al usuario una oportunidad para obtener una versión anterior del archivo. En tal caso, el control de origen al complemento devuelve `SCC_I_RELOAD` para advertir que el IDE que deba volver a cargar el archivo.  
   
 > [!NOTE]
->  Si el complemento de control de origen no es compatible con esta función para una matriz de archivos, se puede mostrar el historial de archivos para el primer archivo.  
+> Si el complemento de control de origen no es compatible con esta función para una matriz de archivos, se puede mostrar el historial de archivos para el primer archivo.  
   
 ## <a name="see-also"></a>Vea también  
  [Funciones de API de complemento de Control de código fuente](../extensibility/source-control-plug-in-api-functions.md)   

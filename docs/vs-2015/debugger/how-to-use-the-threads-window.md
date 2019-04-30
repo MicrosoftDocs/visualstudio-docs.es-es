@@ -24,12 +24,12 @@ caps.latest.revision: 48
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fc40611a8ba5cded6d631e0f52157d4aadb45ff3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 280160127cc147cddd91a79c4290f80a311ee792
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092102"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434858"
 ---
 # <a name="how-to-use-the-threads-window"></a>Procedimiento Utilice la ventana subprocesos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -132,7 +132,7 @@ En el **subprocesos** ventana, puede examinar y trabajar con los subprocesos en 
  En código administrado, la inmovilización o la reanudación de un subproceso no cambia el recuento de suspensión. En código administrado, un subproceso inmovilizado tiene un recuento de suspensión de 1. En código nativo, un subproceso inmovilizado tiene un recuento de suspensión de 0, a menos que el subproceso se haya suspendido con una llamada a `SuspendThread`.  
   
 > [!NOTE]
->  Cuando se depura una llamada de código nativo a código administrado, el código administrado se ejecuta en el mismo subproceso físico que el código nativo que lo llama. La suspensión o la inmovilización del subproceso nativo inmoviliza también el código administrado.  
+> Cuando se depura una llamada de código nativo a código administrado, el código administrado se ejecuta en el mismo subproceso físico que el código nativo que lo llama. La suspensión o la inmovilización del subproceso nativo inmoviliza también el código administrado.  
   
 #### <a name="to-freeze-or-thaw-execution-of-a-thread"></a>Para inmovilizar o reanudar la ejecución de un subproceso  
   

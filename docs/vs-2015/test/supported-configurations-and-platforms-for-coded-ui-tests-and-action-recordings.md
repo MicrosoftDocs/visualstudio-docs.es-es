@@ -10,12 +10,12 @@ ms.assetid: 544742b5-4ec1-4d51-b941-72b2f6ff17bc
 caps.latest.revision: 108
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3337aed321d642fac5ef065d78cfd8cb1191c3a8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 880f0096f33bf08d3415b79edfb8445143e18587
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109072"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446010"
 ---
 # <a name="supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings"></a>Configuraciones y plataformas compatibles con las pruebas de IU codificadas y las grabaciones de acciones
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ ms.locfileid: "60109072"
 En la tabla siguiente se enumeran las configuraciones y plataformas compatibles con las pruebas de IU codificadas de Visual Studio Enterprise. Estas configuraciones también se aplican a las grabaciones de acciones creadas mediante [!INCLUDE[MTRlong](../includes/mtrlong-md.md)].  
   
 > [!NOTE]
->  El proceso de prueba de IU codificada debe tener los mismos privilegios que la aplicación en prueba.  
+> El proceso de prueba de IU codificada debe tener los mismos privilegios que la aplicación en prueba.  
   
  **Requisitos**  
   
@@ -39,7 +39,7 @@ En la tabla siguiente se enumeran las configuraciones y plataformas compatibles 
 |.NET|.NET 2.0, 3.0, 3.5, 4 y 4.5. **Nota:**  [!INCLUDE[TCMext](../includes/tcmext-md.md)] y Visual Studio requieren .NET 4 para funcionar. Sin embargo, se admiten las aplicaciones desarrolladas con las versiones de .NET enumeradas.|  
   
 > [!NOTE]
->  *Sincronización de la interfaz de usuario* es una característica que comprueba la reproducción en la cola de mensajes de cada control. Si un control no respondiera al evento que se le envió, el evento se envía de nuevo.  
+> *Sincronización de la interfaz de usuario* es una característica que comprueba la reproducción en la cola de mensajes de cada control. Si un control no respondiera al evento que se le envió, el evento se envía de nuevo.  
   
 ## <a name="platform-support"></a>Compatibilidad de la plataforma  
   

@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a614a90fe6388d9189d2b63e02f9bf63f83f0b7b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: e949dd566a065b266bfdbf8eae36a099fa229ef7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774183"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403413"
 ---
 # <a name="wpf-data-binding-with-linq-to-xml-overview"></a>Información general de enlace de datos WPF con LINQ to XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,12 +56,12 @@ Este tema presenta las características de enlace de datos dinámicos en el espa
   Para más información sobre el enlace de datos, consulte [Enlace de datos (WPF)](http://msdn.microsoft.com/library/90f79b97-17e7-40d1-abf0-3ba600ad1d7e).  
   
 ## <a name="dynamic-properties-in-linq-to-xml-classes"></a>Propiedades dinámicas en clases de LINQ to XML  
- La mayoría de las clases de LINQ to XML no se consideran orígenes de datos dinámicos de WPF adecuados. Parte de la información más útil está disponible a través de métodos (y no propiedades) y las propiedades de estas clases no implementan las notificaciones de cambio. Para admitir el enlace de datos de WPF, LINQ to XML expone un conjunto de *propiedades dinámicas*.  
+ La mayoría clases de LINQ to XML no se consideran como orígenes de datos dinámicos de WPF adecuados: Parte de la información más útil está disponible a través de métodos (y no propiedades) y las propiedades de estas clases no implementan las notificaciones de cambio. Para admitir el enlace de datos de WPF, LINQ to XML expone un conjunto de *propiedades dinámicas*.  
   
  Estas propiedades dinámicas son propiedades en tiempo de ejecución especiales que duplican la funcionalidad de métodos y propiedades existentes en las clases <xref:System.Xml.Linq.XAttribute> y <xref:System.Xml.Linq.XElement>. Se agregaron a esas clases solamente para permitirles actuar como orígenes de datos dinámicos de WPF. Para satisfacer esta necesidad, todas las propiedades dinámicas implementan notificaciones de cambios. En la siguiente sección se describe una referencia detallada de esas propiedades dinámicas, [Propiedades dinámicas de LINQ to XML](../designers/linq-to-xml-dynamic-properties.md).  
   
 > [!NOTE]
->  Muchas de las propiedades públicas estándar, encontradas en las diferentes clases del espacio de nombres <xref:System.Xml.Linq>, se pueden usar para el enlace de datos único. No obstante, recuerde que ni el origen ni el destino se actualizarán dinámicamente con este esquema.  
+> Muchas de las propiedades públicas estándar, encontradas en las diferentes clases del espacio de nombres <xref:System.Xml.Linq>, se pueden usar para el enlace de datos único. No obstante, recuerde que ni el origen ni el destino se actualizarán dinámicamente con este esquema.  
   
 ### <a name="accessing-dynamic-properties"></a>Acceso a propiedades dinámicas  
  No se puede tener acceso a las propiedades dinámicas de las clases <xref:System.Xml.Linq.XAttribute> y <xref:System.Xml.Linq.XElement> como propiedades estándar. Por ejemplo, en los lenguajes conformes a CLR como C#, no se puede:  

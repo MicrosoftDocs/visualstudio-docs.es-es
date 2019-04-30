@@ -12,12 +12,12 @@ ms.assetid: bbe4aa4e-b4b0-403e-b7a0-5dd6eb24e5a9
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: cb5290b607d20ef38481cfae9eaa3310857915f6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 55d4d2cae73dd77fc601ca85ab45d969fc0e4de8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58997945"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432420"
 ---
 # <a name="sccgetcommandoptions-function"></a>SccGetCommandOptions (Función)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,7 +75,7 @@ SCCRTN SccGetCommandOptions(
  Por último, cuando el usuario hace clic en **Aceptar** en el IDE **obtener** cuadro de diálogo, las llamadas IDE el [SccGet](../extensibility/sccget-function.md), pasando la estructura devuelta en `ppvOptions` que contiene el Opciones avanzadas.  
   
 > [!NOTE]
->  El comando `SCC_COMMAND_OPTIONS` se usa cuando el IDE muestra un **opciones** cuadro de diálogo que permite al usuario establece las preferencias que controlan cómo funciona la integración. Si desea que el complemento de control de origen proporcionar su propio cuadro de diálogo Preferencias, puede mostrar desde una **avanzadas** botón en el cuadro de diálogo de preferencias del IDE. El complemento es únicamente responsable de obtener y almacenar esta información; el IDE no usa ni modificarlo.  
+> El comando `SCC_COMMAND_OPTIONS` se usa cuando el IDE muestra un **opciones** cuadro de diálogo que permite al usuario establece las preferencias que controlan cómo funciona la integración. Si desea que el complemento de control de origen proporcionar su propio cuadro de diálogo Preferencias, puede mostrar desde una **avanzadas** botón en el cuadro de diálogo de preferencias del IDE. El complemento es únicamente responsable de obtener y almacenar esta información; el IDE no usa ni modificarlo.  
   
 ## <a name="see-also"></a>Vea también  
  [Funciones de API de complemento de Control de código fuente](../extensibility/source-control-plug-in-api-functions.md)   

@@ -30,12 +30,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5cee90bd16f0b7a151ca826517f081a89518ff5b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: d443a38750904df26fdfffc65104bcde31c8d6fc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060662"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437602"
 ---
 # <a name="creating-and-configuring-type-members-class-designer"></a>Crear y configurar miembros de tipo (Diseñador de clases)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ Puede agregar estos miembros a los tipos en un diagrama de clase y configurarlos
 |Módulo (solo en VB)|método, propiedad, campo, evento, constructor, constante|  
   
 > [!NOTE]
->  Haga que la declaración de la propiedad sea más concisa cuando no se requiere ninguna lógica adicional en los descriptores de acceso get y set de una propiedad usando las propiedades implementadas automáticamente (solo C#). Para mostrar la firma completa, en el menú **Diagrama de clase**, pulse **Cambiar formato de los miembros**, **Mostrar firma completa**. Para obtener más información sobre las propiedades autoimplementadas, vea [Propiedades autoimplementadas](http://msdn.microsoft.com/library/aa55fa97-ccec-431f-b5e9-5ac789fd32b7).  
+> Haga que la declaración de la propiedad sea más concisa cuando no se requiere ninguna lógica adicional en los descriptores de acceso get y set de una propiedad usando las propiedades implementadas automáticamente (solo C#). Para mostrar la firma completa, en el menú **Diagrama de clase**, pulse **Cambiar formato de los miembros**, **Mostrar firma completa**. Para obtener más información sobre las propiedades autoimplementadas, vea [Propiedades autoimplementadas](http://msdn.microsoft.com/library/aa55fa97-ccec-431f-b5e9-5ac789fd32b7).  
   
 ## <a name="common-tasks"></a>Tareas comunes  
   
@@ -85,10 +85,10 @@ Puede agregar estos miembros a los tipos en un diagrama de clase y configurarlos
 - Ventana Detalles de clase  
   
 > [!NOTE]
->  Los procedimientos de esta sección también permiten crear constructores y destructores. Tenga presente que los constructores y destructores son tipos especiales de métodos y, como tales, aparecen en el compartimiento **Métodos** de las formas del diagrama de clases y en la sección **Métodos** de la cuadrícula de la ventana Detalles de clase.  
+> Los procedimientos de esta sección también permiten crear constructores y destructores. Tenga presente que los constructores y destructores son tipos especiales de métodos y, como tales, aparecen en el compartimiento **Métodos** de las formas del diagrama de clases y en la sección **Métodos** de la cuadrícula de la ventana Detalles de clase.  
   
 > [!NOTE]
->  La única entidad que puede agregar a un delegado es un parámetro. Tenga en cuenta que el procedimiento titulado 'Para crear un miembro con la barra de herramientas de la ventana Detalles de clase' no es válido para esta operación.  
+> La única entidad que puede agregar a un delegado es un parámetro. Tenga en cuenta que el procedimiento titulado 'Para crear un miembro con la barra de herramientas de la ventana Detalles de clase' no es válido para esta operación.  
   
 #### <a name="to-create-a-member-using-class-designer"></a>Para crear un miembro con el Diseñador de clases  
   
@@ -182,7 +182,7 @@ Puede agregar estos miembros a los tipos en un diagrama de clase y configurarlos
 3. Edite los valores de los campos de la cuadrícula de la ventana Detalles de clase. Después de cada modificación, presione ENTRAR o aleje el foco del campo editado, presionando, por ejemplo, la tecla TAB. Los cambios se reflejan de inmediato en el código.  
   
     > [!NOTE]
-    >  Si desea modificar únicamente el nombre de un miembro, puede hacerlo mediante la edición en contexto.  
+    > Si desea modificar únicamente el nombre de un miembro, puede hacerlo mediante la edición en contexto.  
   
 ## <a name="AddMethodParams"></a>Agregar parámetros a métodos  
  Agregue parámetros a los métodos mediante la ventana Detalles de clase. Los parámetros se pueden configurar como necesarios u opcionales. Al proporcionar un valor para la propiedad **predeterminada opcional** de un parámetro, se indica al diseñador que genere código como parámetro opcional.  
@@ -216,10 +216,10 @@ Puede agregar estos miembros a los tipos en un diagrama de clase y configurarlos
   La ventana Propiedades muestra las mismas propiedades de parámetro que se muestran en la ventana Detalles de clase: **Nombre**, **Tipo**, **Modificador** y **Resumen**, así como la propiedad **Valor predeterminado opcional**. Al cambiar una propiedad en una ubicación, se actualiza globalmente el valor de la propiedad, incluida la presentación de su valor en la otra ubicación.  
   
 > [!NOTE]
->  Para agregar un parámetro a un delegado, vea [Crear miembros](../ide/creating-and-configuring-type-members-class-designer.md#CreateMembers).  
+> Para agregar un parámetro a un delegado, vea [Crear miembros](../ide/creating-and-configuring-type-members-class-designer.md#CreateMembers).  
   
 > [!NOTE]
->  A pesar de ser un método, un destructor no puede tener parámetros.  
+> A pesar de ser un método, un destructor no puede tener parámetros.  
   
 ### <a name="HowToAddParameterToMethod"></a>Para agregar un parámetro a un método  
   
@@ -254,7 +254,7 @@ Puede agregar estos miembros a los tipos en un diagrama de clase y configurarlos
 4. En la ventana Propiedades, escriba un valor para la propiedad **predeterminada opcional**. Al establecer la propiedad predeterminada opcional de un parámetro, ese parámetro pasa a ser opcional.  
   
     > [!NOTE]
-    >  Los parámetros opcionales deben ser los últimos parámetros en la lista de parámetros.  
+    > Los parámetros opcionales deben ser los últimos parámetros en la lista de parámetros.  
   
 ## <a name="ClassDetailsUsageNotes"></a>Notas de uso de los detalles de clase  
  Tenga en cuenta las siguientes sugerencias cuando utilice la ventana Detalles de clase.  

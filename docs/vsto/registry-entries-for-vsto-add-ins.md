@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ab8c437285a55013e2c0367865044ee12ba061ed
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: de101e33e94889a44fe9bc4e21db857763b1c9aa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071813"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447025"
 ---
 # <a name="registry-entries-for-vsto-add-ins"></a>Entradas del registro para complementos de VSTO
   Debe crear un conjunto específico de entradas del registro al implementar complementos de VSTO creados con Visual Studio. Dichas entradas del registro proporcionan información que permite que la aplicación de Microsoft Office detecte y cargue el complemento de VSTO.
@@ -33,7 +33,7 @@ ms.locfileid: "60071813"
  Para obtener más información acerca de cómo se usan las entradas de registro durante el proceso de carga de los complementos VSTO, consulte [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md).
 
 > [!NOTE]
->  En este tema, el texto *Identificador de complemento* es un identificador único para el complemento de VSTO. De forma predeterminada, el identificador es el nombre del ensamblado del complemento de VSTO.
+> En este tema, el texto *Identificador de complemento* es un identificador único para el complemento de VSTO. De forma predeterminada, el identificador es el nombre del ensamblado del complemento de VSTO.
 
 ## <a name="register-vsto-add-ins-for-the-current-user-vs-all-users"></a>Registrar complementos VSTO para el usuario actual frente a todos los usuarios
  Cuando se instala un complemento de VSTO, se puede registrar de dos formas:

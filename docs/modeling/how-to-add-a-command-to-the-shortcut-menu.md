@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70960cc92d60ebbffa34dda75557dfcb9a1a0d67
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ab220b8a21db60918462e4c060ce613171e3faad
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092726"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442364"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Procedimiento Agregar un comando al menú contextual
 
@@ -118,7 +118,7 @@ Use el método de este tema si:
 5. Reemplace `{000...000}` por un GUID que identifique los grupos y elementos de menú. Para obtener un nuevo GUID, use la **crear GUID** herramienta en el **herramientas** menú.
 
     > [!NOTE]
-    >  Para agregar más grupos o elementos de menú, puede usar el mismo GUID. Sin embargo, debe usar nuevos valores para `IDSymbols`.
+    > Para agregar más grupos o elementos de menú, puede usar el mismo GUID. Sin embargo, debe usar nuevos valores para `IDSymbols`.
 
 6. En el código que copió de este procedimiento, reemplace cada aparición de las siguientes cadenas por sus propias cadenas:
 
@@ -296,7 +296,7 @@ private const int cmdidMyContextMenuCommand = 1;
  Use el mismo valor GUID que insertó en **Commands.vsct**.
 
 > [!NOTE]
->  Si cambia la sección Symbols del archivo VSCT, debe cambiar también estas declaraciones para que coincidan. También debe incrementar el número de versión en Package.tt
+> Si cambia la sección Symbols del archivo VSCT, debe cambiar también estas declaraciones para que coincidan. También debe incrementar el número de versión en Package.tt
 
  Registre los comandos de menú como parte de este conjunto de comandos. Se llama a `GetMenuCommands()` una vez cuando el diagrama se inicializa:
 

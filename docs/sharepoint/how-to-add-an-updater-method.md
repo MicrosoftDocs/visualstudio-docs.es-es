@@ -1,5 +1,5 @@
 ---
-title: Filtrar Agregar un método Updater | Documentos de Microsoft
+title: Procedimiento Agregar un método Updater | Documentos de Microsoft
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 26b917b04314c99ba6575842b8e102113b22b469
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 8204b13aa0405d01590e4aeb0fe43a92b41c226f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596964"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431259"
 ---
 # <a name="how-to-add-an-updater-method"></a>Procedimiento Agregar un método Updater
   Puede permitir a los usuarios actualizar los datos empresariales en una lista externa de SharePoint mediante la creación de un *actualizador* método. Para obtener más información, consulte [diseñar un modelo de conectividad a datos empresariales](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -50,7 +50,7 @@ ms.locfileid: "56596964"
      Para obtener más información, consulte [diseñar un modelo de conectividad a datos empresariales](../sharepoint/designing-a-business-data-connectivity-model.md).
 
    > [!NOTE]
-   >  Si el identificador del tipo de entidad representa un campo en una tabla de base de datos que se genera automáticamente, establezca la **campo Pre-Updater** propiedad **True**.
+   > Si el identificador del tipo de entidad representa un campo en una tabla de base de datos que se genera automáticamente, establezca la **campo Pre-Updater** propiedad **True**.
 
 4. En **el Explorador de soluciones**, abra el menú contextual del servicio archivo de código que se generó para la entidad y, a continuación, elija **ver código**.
 
@@ -59,7 +59,7 @@ ms.locfileid: "56596964"
 5. Agregue código al método Update para actualizar los datos. El ejemplo siguiente actualiza la información de un contacto en la base de datos de ejemplo AdventureWorks para SQL Server.
 
    > [!NOTE]
-   >  Reemplace el valor de la `ServerName` campo con el nombre del servidor.
+   > Reemplace el valor de la `ServerName` campo con el nombre del servidor.
 
     [!code-csharp[SP_BDC#5](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#5)]
     [!code-vb[SP_BDC#5](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#5)]

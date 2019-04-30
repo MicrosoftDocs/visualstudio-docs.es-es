@@ -8,12 +8,12 @@ ms.assetid: f7c25ba7-5c9c-455b-9242-701cda56f90c
 caps.latest.revision: 43
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8df705e1e4da6a54f060de45a90aed7c41691683
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 940a7551c83ec9a195ac0d54b430115ed926abf5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061819"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428228"
 ---
 # <a name="walkthrough-creating-editing-and-maintaining-a-coded-ui-test"></a>Tutorial: Crear, modificar y mantener una prueba de IU codificada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -123,7 +123,7 @@ En este tutorial, creará una aplicación Windows Presentation Foundation (WPF) 
 2. Cree un acceso directo en el escritorio a la aplicación SimpleWPFApp. Haga clic con el botón derecho en SimpleWPFApp.exe y elija **Copiar**. En el escritorio, haga clic con el botón derecho y elija **Pegar acceso directo**.  
   
     > [!TIP]
-    >  Un acceso directo a la aplicación facilita el poder agregar o modificar pruebas de IU codificadas para la aplicación porque permite iniciar la aplicación rápidamente.  
+    > Un acceso directo a la aplicación facilita el poder agregar o modificar pruebas de IU codificadas para la aplicación porque permite iniciar la aplicación rápidamente.  
   
 3. En el Explorador de soluciones, haga clic con el botón derecho en la solución, elija **Agregar** y, a continuación, seleccione **Nuevo proyecto**.  
   
@@ -154,7 +154,7 @@ En este tutorial, creará una aplicación Windows Presentation Foundation (WPF) 
      ![Pausar la grabación](../test/media/cuit.png "CUIT_")  
   
     > [!WARNING]
-    >  Todas las acciones realizadas en el escritorio se grabarán. Pause la grabación si está realizando acciones que puedan hacer que los datos confidenciales se incluyan en la grabación.  
+    > Todas las acciones realizadas en el escritorio se grabarán. Pause la grabación si está realizando acciones que puedan hacer que los datos confidenciales se incluyan en la grabación.  
   
 9. Inicie SimpleWPFApp mediante el acceso directorio del escritorio.  
   
@@ -203,7 +203,7 @@ En este tutorial, creará una aplicación Windows Presentation Foundation (WPF) 
 3. Para corregir este problema, puede hacer que la prueba de IU codificada espere a que el control CheckBox esté habilitado antes de continuar en esta línea utilizando el método `WaitForControlEnabled()`.  
   
     > [!WARNING]
-    >  No modifique el archivo UIMap.Designer.cs. Cualquier cambio que se realice en el código del archivo UIMapDesigner.cs se sobrescribirá cada vez que se genere código mediante UIMap - Generador de pruebas de IU codificadas. Si tiene que modificar un método grabado, debe copiarlo en el archivo UIMap.cs y cambiar el nombre. El archivo UIMap.cs se puede utilizar para invalidar métodos y propiedades en el archivo UIMapDesigner.cs. Debe quitar la referencia al método original en el archivo UITest.cs el Codificado y reemplazarlo con el nombre del método cuyo nombre ha cambiado.  
+    > No modifique el archivo UIMap.Designer.cs. Cualquier cambio que se realice en el código del archivo UIMapDesigner.cs se sobrescribirá cada vez que se genere código mediante UIMap - Generador de pruebas de IU codificadas. Si tiene que modificar un método grabado, debe copiarlo en el archivo UIMap.cs y cambiar el nombre. El archivo UIMap.cs se puede utilizar para invalidar métodos y propiedades en el archivo UIMapDesigner.cs. Debe quitar la referencia al método original en el archivo UITest.cs el Codificado y reemplazarlo con el nombre del método cuyo nombre ha cambiado.  
   
 4. En el Explorador de soluciones, busque **UIMap.uitest** en el proyecto de prueba de IU codificada.  
   
@@ -224,7 +224,7 @@ En este tutorial, creará una aplicación Windows Presentation Foundation (WPF) 
      Las actualizaciones del método de prueba se guardan en el archivo UIMap.Designer.  
   
     > [!CAUTION]
-    >  Una vez que se ha movido el método, ya no puede modificarlo con el Editor de pruebas de la interfaz de usuario codificadas. Debe agregar el código personalizado y mantenerlo con el Editor de código.  
+    > Una vez que se ha movido el método, ya no puede modificarlo con el Editor de pruebas de la interfaz de usuario codificadas. Debe agregar el código personalizado y mantenerlo con el Editor de código.  
   
 10. Cambiar el método de `SimpleAppTest()` a `ModifiedSimpleAppTest()`  
   

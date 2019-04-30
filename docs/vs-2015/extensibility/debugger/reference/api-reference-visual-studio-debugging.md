@@ -10,12 +10,12 @@ ms.assetid: e4e429da-3667-41f7-9158-a8207d13e91a
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 2571054e2fc90e770aec89b22c6a0b5e52786ba7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: f3e95200cf29c8561798c858635c3864d635fb40
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58989288"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424516"
 ---
 # <a name="api-reference-visual-studio-debugging"></a>Referencia de API (depuración de Visual Studio)
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -39,10 +39,10 @@ La sección de referencia incluye información general conceptual de la API, una
 |E_ACCESSDENIED|Error de acceso general denegado.|0x80070005|  
   
 > [!NOTE]
->  Cuando un [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] depurar el método devuelve `S_OK`, se supone que todo punteros de parámetro son válidos, es decir, ninguna validación se lleva a cabo los punteros de parámetro cuando `S_OK` se devuelve.  
+> Cuando un [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] depurar el método devuelve `S_OK`, se supone que todo punteros de parámetro son válidos, es decir, ninguna validación se lleva a cabo los punteros de parámetro cuando `S_OK` se devuelve.  
   
 > [!NOTE]
->  No válido o `NULL` [parámetros out] puede provocar que el IDE se bloquee.  
+> No válido o `NULL` [parámetros out] puede provocar que el IDE se bloquee.  
   
 ## <a name="see-also"></a>Vea también  
  [Interfaces](../../../extensibility/debugger/reference/interfaces-visual-studio-debugging.md)   

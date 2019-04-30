@@ -14,12 +14,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 994b87de61aaa0b303b0b0bf8454dad716c9978f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b49b1aa1022b12dc2d409037a1241f51b469a14c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114514"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436239"
 ---
 # <a name="code-snippets-schema-reference"></a>Referencia de esquemas de fragmentos de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Los fragmentos de código de IntelliSense son piezas de código ya creado y list
  Especifica el nombre del ensamblado al que el fragmento de código hace referencia.  
   
 > [!NOTE]
->  El elemento `Assembly` solo es compatible con fragmentos de código de Visual Basic.  
+> El elemento `Assembly` solo es compatible con fragmentos de código de Visual Basic.  
   
  El valor de texto del elemento **Assembly** puede ser bien el nombre descriptivo del ensamblado, como `System.dll`, o su nombre seguro, como `System,Version=1.0.0.1,Culture=neutral,PublicKeyToken=9b35aa323c18d4fb1`.  
   
@@ -240,7 +240,7 @@ is a great color. I love Blue.
  Especifica una función que se ejecutará cuando un literal o un objeto reciba foco en Visual Studio.  
   
 > [!NOTE]
->  El elemento `Function` solo es compatible con fragmentos de código de Visual C#.  
+> El elemento `Function` solo es compatible con fragmentos de código de Visual C#.  
   
 ```xml  
 <Function>  
@@ -289,7 +289,7 @@ is a great color. I love Blue.
  Especifica una dirección URL que proporciona más información acerca de un fragmento de código.  
   
 > [!NOTE]
->  Visual Studio no utiliza el elemento `HelpUrl`. El elemento forma parte del esquema XML de fragmentos de código de IntelliSense y cualquier fragmento de código que contenga el elemento se validará, pero el valor del elemento no se utilizará nunca.  
+> Visual Studio no utiliza el elemento `HelpUrl`. El elemento forma parte del esquema XML de fragmentos de código de IntelliSense y cualquier fragmento de código que contenga el elemento se validará, pero el valor del elemento no se utilizará nunca.  
   
 ```xml  
 <HelpUrl>  
@@ -325,7 +325,7 @@ is a great color. I love Blue.
  Especifica los espacios de nombres importados utilizados por un fragmento de código de IntelliSense.  
   
 > [!NOTE]
->  El elemento `Import` solo se admite para los proyectos de Visual Basic.  
+> El elemento `Import` solo se admite para los proyectos de Visual Basic.  
   
 ```xml  
 <Import>  
@@ -346,7 +346,7 @@ is a great color. I love Blue.
  Agrupa los elementos `Import` individuales.  
   
 > [!NOTE]
->  El elemento `Imports` solo se admite para los proyectos de Visual Basic.  
+> El elemento `Imports` solo se admite para los proyectos de Visual Basic.  
   
 ```xml  
 <Imports>  
@@ -428,7 +428,7 @@ is a great color. I love Blue.
  Especifica el espacio de nombres que se debe importar para compilar y ejecutar el fragmento de código. Si no existe con anterioridad, el espacio de nombres especificado en el elemento `Namespace` se agrega automáticamente a una instrucción `Imports` al comienzo del código.  
   
 > [!NOTE]
->  El elemento `Namespace` solo se admite para los proyectos de Visual Basic.  
+> El elemento `Namespace` solo se admite para los proyectos de Visual Basic.  
   
 ```xml  
 <Namespace>  
@@ -475,7 +475,7 @@ is a great color. I love Blue.
  Especifica información sobre las referencias a ensamblados que requiere el fragmento de código.  
   
 > [!NOTE]
->  El elemento `Reference` solo se admite para los proyectos de Visual Basic.  
+> El elemento `Reference` solo se admite para los proyectos de Visual Basic.  
   
 ```xml  
 <Reference>  
@@ -497,7 +497,7 @@ is a great color. I love Blue.
  Agrupa los elementos `Reference` individuales.  
   
 > [!NOTE]
->  El elemento `References` solo se admite para los proyectos de Visual Basic.  
+> El elemento `References` solo se admite para los proyectos de Visual Basic.  
   
 ```xml  
 <References>  
@@ -517,7 +517,7 @@ is a great color. I love Blue.
  Especifica el texto de acceso directo utilizado para insertar el fragmento de código. El valor de texto de un elemento `Shortcut` sólo puede contener caracteres alfanuméricos, guiones ( - ) y caracteres de subrayado ( _ ).  
   
 > [!CAUTION]
->  _y – no son caracteres admitidos en accesos directos de fragmentos de código de C++.  
+> _y – no son caracteres admitidos en accesos directos de fragmentos de código de C++.  
   
 ```xml  
 <Shortcut>  
@@ -644,7 +644,7 @@ is a great color. I love Blue.
  Especifica una dirección URL que proporciona más información acerca del ensamblado al que se hace referencia.  
   
 > [!NOTE]
->  El elemento `Url` solo se admite para los proyectos de Visual Basic.  
+> El elemento `Url` solo se admite para los proyectos de Visual Basic.  
   
 ```xml  
 <Url>  

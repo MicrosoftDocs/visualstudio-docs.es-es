@@ -12,12 +12,12 @@ ms.assetid: ad9beac3-4f8d-4093-ad0e-6fb00444a709
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: ab746bfd3e8854fddd83f3fdde49a5d0dda397ca
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d83c90d7e94471374f0c882f3868d16c963e4490
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052797"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440082"
 ---
 # <a name="support-for-user-settings"></a>Compatibilidad con la configuración de usuario
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Un VSPackage puede definir uno o más categorías de configuración, que son gru
  Puntos de valores personalizados se crean en una entrada del registro en la siguiente ubicación: HKLM\Software\Microsoft\VisualStudio\\*\<versión >* \UserSettings\\`<CSPName>`, donde `<CSPName>` es el nombre del punto de configuración personalizado admita el VSPackage y  *\<versión >* es la versión de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], por ejemplo 8.0.  
   
 > [!NOTE]
->  La ruta de acceso raíz de HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<versión >* puede reemplazarse por una alternativa raíz cuando el [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] es el entorno de desarrollo integrado (IDE) inicializar. Para obtener más información, consulte [modificadores de línea de comandos](../../extensibility/command-line-switches-visual-studio-sdk.md).  
+> La ruta de acceso raíz de HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<versión >* puede reemplazarse por una alternativa raíz cuando el [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] es el entorno de desarrollo integrado (IDE) inicializar. Para obtener más información, consulte [modificadores de línea de comandos](../../extensibility/command-line-switches-visual-studio-sdk.md).  
   
  Se muestra la estructura de la entrada del registro:  
   

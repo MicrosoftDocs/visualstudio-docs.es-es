@@ -13,12 +13,12 @@ ms.assetid: ba237712-f8c4-4d13-854b-ab4a16afa309
 caps.latest.revision: 128
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 05fd28e6b47d74c28edc491458b73b487d282a45
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a2418df5a831416d74328e4ca926cdf8c3a721e2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60067734"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63383429"
 ---
 # <a name="welcome-to-visual-studio-2015"></a>Bienvenido a Visual Studio 2015
 [!INCLUDE[vs2017banner](includes/vs2017banner.md)]
@@ -26,9 +26,9 @@ ms.locfileid: "60067734"
 Le damos la bienvenida a Visual Studio. Tenemos todo lo que necesita para crear excelentes aplicaciones para dispositivos o aplicaciones de escritorio, ya sea para la web o en la nube. Escriba código para iOS, Android y Windows en un mismo IDE. Obtenga la magnífica característica IntelliSense, navegación sencilla por el código, compilaciones rápidas y una implementación rápida. Visual Studio aumenta la productividad y le facilita el trabajo, tanto si lo lleva a cabo por sí solo como si forma parte de un equipo.
 
 > [!NOTE]
->  Haga clic aquí para obtener las notas de la versión de [Visual Studio 2015 Update 3](https://www.visualstudio.com/news/releasenotes/vs2015-update3-vs).
+> Haga clic aquí para obtener las notas de la versión de [Visual Studio 2015 Update 3](https://www.visualstudio.com/news/releasenotes/vs2015-update3-vs).
 >
->  Haga clic aquí para obtener las notas de la versión para [Visual Studio 2017](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes).
+> Haga clic aquí para obtener las notas de la versión para [Visual Studio 2017](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes).
 
  Descargue [Comunidad de Visual Studio](http://go.microsoft.com/fwlink/?LinkId=517106) gratuitamente para empezar a codificar de inmediato. Si opta por un desarrollo multiplataforma, asegúrese de instalar los paquetes opcionales. (Puede obtener más características con [otras ediciones de Visual Studio](http://www.visualstudio.com/products/compare-visual-studio-products-vs)).
 

@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e124bb05fa42be48fc0c9054df9cb056d0680958
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 932ae7279b0bcb216d120f9ef6fb5c019e5094f5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081026"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408629"
 ---
 # <a name="using-saved-intellitrace-data-c-visual-basic-c"></a>Uso de los datos de IntelliTrace guardados (C#, Visual Basic, C++)
 
@@ -64,7 +64,7 @@ Inicie la depuración desde un archivo de registro de IntelliTrace (.iTrace) par
     - En **Pasos de reproducción**, elija el vínculo **IntelliTrace** .
 
 > [!TIP]
->  Si cerró el archivo IntelliTrace durante la depuración, puede volver a abrirlo fácilmente. Vaya al menú **Depuración** , elija **IntelliTrace**, **Mostrar resumen de registro**. También puede elegir **Mostrar resumen de registro** en la ventana de **IntelliTrace** . Esto solo está disponible durante la depuración con IntelliTrace.
+> Si cerró el archivo IntelliTrace durante la depuración, puede volver a abrirlo fácilmente. Vaya al menú **Depuración** , elija **IntelliTrace**, **Mostrar resumen de registro**. También puede elegir **Mostrar resumen de registro** en la ventana de **IntelliTrace** . Esto solo está disponible durante la depuración con IntelliTrace.
 
 ## <a name="Understand"></a> Obtener información sobre el registro de IntelliTrace
  Algunas de las secciones siguientes del archivo .iTrace solo aparecen si recopiló datos de un origen determinado, por ejemplo, desde Test Manager o desde aplicaciones de SharePoint.

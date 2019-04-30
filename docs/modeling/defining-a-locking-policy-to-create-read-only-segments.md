@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b38f81b3269d0a456c077023d23861a55ac06a4c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 22eaa971035b4b202ecb76b3f1d29e286516a69b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117194"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445834"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Definir una directiva de bloqueo para crear segmentos de solo lectura
 La API de inmutabilidad del SDK de modelado y visualización de Visual Studio permite que un programa bloquear la totalidad o parte de un modelo de lenguaje específico de dominio (DSL) para que se pueden leer pero no cambia. Podría usar esta opción de solo lectura, por ejemplo, para que un usuario puede pedir a sus compañeros para anotar y revisar un modelo DSL pero puede no puedan cambiar el original.
@@ -20,7 +20,7 @@ La API de inmutabilidad del SDK de modelado y visualización de Visual Studio pe
  Además, como autor de un DSL, puede definir un *directiva de bloqueo.* Una directiva de bloqueo define los bloqueos que son obligatorios, no se permite o permitidos. Por ejemplo, cuando se publica un DSL, puede animar a los desarrolladores de terceros para ampliarlo con nuevos comandos. Pero también podría usar una directiva de bloqueo para impedir que modificar el estado de solo lectura de las partes especificadas del modelo.
 
 > [!NOTE]
->  Una directiva de bloqueo puede evitarse mediante la reflexión. Proporciona un límite claro para los desarrolladores de terceros, pero no proporcionan una gran seguridad.
+> Una directiva de bloqueo puede evitarse mediante la reflexión. Proporciona un límite claro para los desarrolladores de terceros, pero no proporcionan una gran seguridad.
 
  Más información y ejemplos están disponibles en Visual Studio [SDK de visualización y modelado](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db) sitio Web.
 

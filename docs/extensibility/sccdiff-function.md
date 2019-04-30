@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8f9f381fbd9c6cb3f4f2128adc3910516be42962
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: ed96b7c893ba3ececb33be5dda55093b70c28659
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681665"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434691"
 ---
 # <a name="sccdiff-function"></a>SccDiff (función)
 Esta función muestra (o simplemente, opcionalmente, busca) del sistema de control de las diferencias entre el archivo actual (en el disco local) y su última versión protegida en el origen.
@@ -77,7 +77,7 @@ SCCRTN SccDiff(
  Como optimización del rendimiento, el complemento de control de origen puede usar una alternativa basada en una suma de comprobación o una marca de tiempo en lugar de la comparación byte a byte lo llamada para `SCC_DIFF_CONTENTS`: estas formas de comparación son obviamente más rápido pero menos confiable. No todos los sistemas de control de código fuente pueden admitir estos métodos alternativos de comparación y el complemento es posible que tenga que recurrir a una comparación de contenido. Todos los complementos código fuente control deben, como mínimo, admitir una comparación de contenido.
 
 > [!NOTE]
->  Las marcas de diferencia rápido son mutuamente excluyentes. Es válido pasar ninguna marca, pero no es válido pasar simultáneamente más de uno. `SCC_DIFF_QUICK_DIFF`, que es una máscara que combina todas las marcas, se puede usar para probar, pero nunca se debe pasar como parámetro.
+> Las marcas de diferencia rápido son mutuamente excluyentes. Es válido pasar ninguna marca, pero no es válido pasar simultáneamente más de uno. `SCC_DIFF_QUICK_DIFF`, que es una máscara que combina todas las marcas, se puede usar para probar, pero nunca se debe pasar como parámetro.
 
 |`fOption`|Significado|
 |---------------|-------------|

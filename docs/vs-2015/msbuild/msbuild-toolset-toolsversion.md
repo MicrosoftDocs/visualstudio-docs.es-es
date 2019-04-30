@@ -14,12 +14,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 192fdd737816d2239b15530e2d5c03d73f82e0d5
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: bd65f12c065ee1d96934c6790779c8b4ca87b393
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59657511"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426304"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>Conjunto de herramientas de MSBuild (ToolsVersion)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -97,7 +97,7 @@ MSBuild usa un conjunto de herramientas de tareas, destinos y herramientas para 
  Como se ha descrito anteriormente en este tema, MSBuild usa una clave del Registro para especificar la ruta de acceso de las herramientas básicas. Si la clave tiene una subclave, MSBuild la usa para especificar la ruta de acceso de un subconjunto de herramientas que contiene herramientas adicionales. En este caso, el conjunto de herramientas se define mediante la combinación de las definiciones de propiedades especificadas en ambas claves.  
   
 > [!NOTE]
->  Si hay un conflicto entre los nombres de propiedades del conjunto de herramientas, el valor definido para la ruta de acceso de la subclave reemplaza al valor definido para la ruta de acceso de la clave raíz.  
+> Si hay un conflicto entre los nombres de propiedades del conjunto de herramientas, el valor definido para la ruta de acceso de la subclave reemplaza al valor definido para la ruta de acceso de la clave raíz.  
   
  Los subconjuntos de herramientas se activan si se define la propiedad de compilación `VisualStudioVersion`. Esta propiedad puede tener uno de estos valores:  
   

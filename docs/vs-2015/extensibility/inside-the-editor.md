@@ -10,12 +10,12 @@ ms.assetid: 822cbb8d-7ab4-40ee-bd12-44016ebcce81
 caps.latest.revision: 32
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 83bc344cf4c99efd426066a47c240b710ef455e4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8dfc751b040bd775c3f55ff7db804c2a16d45d5f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056047"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414616"
 ---
 # <a name="inside-the-editor"></a>Dentro del editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -92,7 +92,7 @@ El editor se compone de una serie de diferentes subsistemas, que están diseñad
  Puede ver el contenido de una instantánea de texto como una secuencia de caracteres o como una secuencia de líneas. Los caracteres y líneas son que ambos indizan empezando por cero. Una instantánea de texto vacío contiene cero caracteres y una línea vacía. Una línea está delimitada por cualquier secuencia de caracteres de salto de línea Unicode válido, o por el principio o al final del búfer. Caracteres de salto de línea se representan explícitamente en la instantánea de texto y los saltos de línea en una instantánea de texto no tienen que ser el mismo.  
   
 > [!NOTE]
->  Para obtener más información sobre los caracteres de salto de línea en el editor de Visual Studio, consulte [codificaciones y saltos de línea](../ide/encodings-and-line-breaks.md).  
+> Para obtener más información sobre los caracteres de salto de línea en el editor de Visual Studio, consulte [codificaciones y saltos de línea](../ide/encodings-and-line-breaks.md).  
   
  Una línea de texto se representa mediante un <xref:Microsoft.VisualStudio.Text.ITextSnapshotLine> objeto, que puede obtenerse a partir de una instantánea de texto para un número de línea concreto o para una posición de caracteres determinada.  
   

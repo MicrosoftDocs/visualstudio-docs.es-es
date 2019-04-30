@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 34e40863883643955c4517337de5410f0745703d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: a7b9733a47b4763a0f28ee4b24b54fdfd44bf066
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58988193"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435002"
 ---
 # <a name="overriding-and-extending-the-generated-classes"></a>Invalidar y ampliar clases generadas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ La definición de DSL es una plataforma en la que puede crear un conjunto eficaz
  `} }`  
   
 > [!NOTE]
->  Para invalidar métodos en una clase generada, siempre que escriba el código en un archivo que se separa de los archivos generados. Normalmente, el archivo se encuentra en una carpeta que se denomina un valor CustomCode. Si realiza cambios en el código generado, se perderán al volver a generar el código de la definición de DSL.  
+> Para invalidar métodos en una clase generada, siempre que escriba el código en un archivo que se separa de los archivos generados. Normalmente, el archivo se encuentra en una carpeta que se denomina un valor CustomCode. Si realiza cambios en el código generado, se perderán al volver a generar el código de la definición de DSL.  
   
  Para detectar qué métodos se pueden invalidar, escriba **invalidar** en la clase, seguido por un espacio. La información sobre herramientas de IntelliSense le indicará qué métodos se pueden invalidar.  
   

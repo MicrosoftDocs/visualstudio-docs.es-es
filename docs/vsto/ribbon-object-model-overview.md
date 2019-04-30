@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5958eb6fb8fd14dd510fa87d900efa76cb6f6a87
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 83f906ad9e5ded349250fe5324076527975c9bf6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040721"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446984"
 ---
 # <a name="ribbon-object-model-overview"></a>Información general sobre el modelo de objetos de cinta de opciones
   La [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] expone un modelo de objetos fuertemente tipados que puede usar para obtener y establecer las propiedades de controles de cinta de opciones en tiempo de ejecución. Por ejemplo, dinámicamente puede rellenar los controles de menú, o mostrar y ocultar controles contextualmente. También puede agregar pestañas, grupos y controles a una cinta de opciones, pero antes de que se carga la cinta de opciones mediante la aplicación de Office. Para obtener información, consulte [establecer las propiedades que se vuelven de solo lectura](#SettingReadOnlyProperties).
@@ -130,7 +130,7 @@ ms.locfileid: "60040721"
  La siguiente tabla muestra las propiedades que solo pueden establecerse antes de que cargue la cinta de opciones.
 
 > [!NOTE]
->  Puede establecer las propiedades de los controles de menús dinámicos en cualquier momento. Esta tabla no se aplica en ese caso.
+> Puede establecer las propiedades de los controles de menús dinámicos en cualquier momento. Esta tabla no se aplica en ese caso.
 
 |Propiedad|Clase de control de la cinta de opciones|
 |--------------|--------------------------|
@@ -163,7 +163,7 @@ ms.locfileid: "60040721"
  Si tiene lógica condicional que establece cualquiera de estas propiedades en un valor diferente cuando se crean otras instancias de la cinta de opciones, este código no tendrá ningún efecto.
 
 > [!NOTE]
->  Asegúrese de que el **nombre** propiedad se establece para cada control que se agrega a una cinta de Outlook. Si agrega un control a una cinta de Outlook en tiempo de ejecución, debe establecer esta propiedad en el código. Si agrega un control a una cinta de Outlook en tiempo de diseño, se establece automáticamente la propiedad Name.
+> Asegúrese de que el **nombre** propiedad se establece para cada control que se agrega a una cinta de Outlook. Si agrega un control a una cinta de Outlook en tiempo de ejecución, debe establecer esta propiedad en el código. Si agrega un control a una cinta de Outlook en tiempo de diseño, se establece automáticamente la propiedad Name.
 
 ## <a name="ribbon-control-events"></a>Eventos de control de la cinta de opciones
  Cada clase de control contiene uno o varios eventos. En la tabla siguiente se describe estos eventos.

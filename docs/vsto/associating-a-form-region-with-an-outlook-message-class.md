@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a1b6ef478b9f3661690383623df7c89fae28bb0c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5c264048887d3a1ba77d498784dc3e6cc4384159
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063548"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440362"
 ---
 # <a name="associate-a-form-region-with-an-outlook-message-class"></a>Asociar un área de formulario a una clase de mensaje de Outlook
   Puede especificar qué elementos de Microsoft Office Outlook muestran un área de formulario al asociar el área de formulario con la clase de mensaje de cada elemento. Por ejemplo, si desea anexar un área de formulario a la parte inferior de un elemento de correo, puede asociar el área de formulario con el `IPM.Note` message (clase).
@@ -45,7 +45,7 @@ ms.locfileid: "60063548"
  También puede especificar los nombres de clases de mensaje personalizadas. Clases de mensaje personalizadas identifican los formularios personalizados que defina en Outlook.
 
 > [!NOTE]
->  Para las áreas de formulario de reemplazo y de reemplazo total, puede especificar un nuevo nombre de clase de mensaje personalizado. No es necesario usar el nombre de clase de mensaje de un formulario personalizado existente. El nombre de la clase de mensaje personalizado debe ser único. Una manera de asegurarse de que el nombre sea único es usar una convención de nomenclatura similar al siguiente: \<*NombreDeClaseDeMensajeEstándar*>.\< *Empresa*>.\< *NombreDeClaseDeMensaje*> (por ejemplo: `IPM.Note.Contoso.MyMessageClass`).
+> Para las áreas de formulario de reemplazo y de reemplazo total, puede especificar un nuevo nombre de clase de mensaje personalizado. No es necesario usar el nombre de clase de mensaje de un formulario personalizado existente. El nombre de la clase de mensaje personalizado debe ser único. Una manera de asegurarse de que el nombre sea único es usar una convención de nomenclatura similar al siguiente: \<*NombreDeClaseDeMensajeEstándar*>.\< *Empresa*>.\< *NombreDeClaseDeMensaje*> (por ejemplo: `IPM.Note.Contoso.MyMessageClass`).
 
 ## <a name="associate-a-form-region-with-an-outlook-message-class"></a>Asociar un área de formulario a una clase de mensaje de Outlook
  Hay dos formas de asociar un área de formulario a una clase de mensaje:
@@ -76,7 +76,7 @@ ms.locfileid: "60063548"
   El **nueva área de formulario de Outlook** asistente valida el formato de la entrada al hacer clic en **finalizar**.
 
 > [!NOTE]
->  El **nueva área de formulario de Outlook** asistente no comprueba que los nombres de clase de mensaje que proporciona son correctos o válidos.
+> El **nueva área de formulario de Outlook** asistente no comprueba que los nombres de clase de mensaje que proporciona son correctos o válidos.
 
  Cuando se completa el asistente, el **nueva área de formulario de Outlook** asistente aplica los atributos a la clase de áreas de formulario que contienen los nombres de clase de mensaje especificado. También puede aplicar estos atributos manualmente.
 
@@ -101,7 +101,7 @@ ms.locfileid: "60063548"
   Visual Studio valida el formato de los nombres de clase de mensaje al compilar el proyecto.
 
 > [!NOTE]
->  Visual Studio no comprueba que los nombres de clase de mensaje que proporciona son correctos o válidos.
+> Visual Studio no comprueba que los nombres de clase de mensaje que proporciona son correctos o válidos.
 
 ## <a name="see-also"></a>Vea también
 - [Obtener acceso a un área de formulario en tiempo de ejecución](../vsto/accessing-a-form-region-at-run-time.md)

@@ -11,12 +11,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9591875b525d44e343f8326b7f5a145b04b57cff
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 4107a5fb88392f9d02cca8f41b0f53d5844d9490
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071167"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422724"
 ---
 # <a name="define-validation-constraints-for-uml-models"></a>Definir restricciones de validación para modelos UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ Puede definir restricciones de validación que prueben si el modelo cumple una c
     Para obtener más información, vea [Evaluar la restricción de validación](#Implementing).  
   
    > [!IMPORTANT]
-   >  Asegúrese de que los archivos **.cs** contienen la siguiente instrucción `using` :  
+   > Asegúrese de que los archivos **.cs** contienen la siguiente instrucción `using` :  
    >   
    >  `using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Uml;`  
   
@@ -223,7 +223,7 @@ using Microsoft.VisualStudio.Uml.Classes;
  El método de validación debe determinar si la restricción de validación que desea aplicar es true o false. Si es true, no debería hacer nada. Si es false, debería notificar un error utilizando los métodos proporcionados por el parámetro `ValidationContext` .  
   
 > [!NOTE]
->  Los métodos de validación no deberían cambiar el modelo. No hay ninguna garantía de en qué momento ni en qué orden se van a ejecutar las restricciones. Si tiene que pasar información entre ejecuciones sucesivas de un método de validación en una ejecución de validación, puede utilizar la memoria caché del contexto que se describe en [Coordinar varias validaciones](#ContextCache).  
+> Los métodos de validación no deberían cambiar el modelo. No hay ninguna garantía de en qué momento ni en qué orden se van a ejecutar las restricciones. Si tiene que pasar información entre ejecuciones sucesivas de un método de validación en una ejecución de validación, puede utilizar la memoria caché del contexto que se describe en [Coordinar varias validaciones](#ContextCache).  
   
  Por ejemplo, si desea comprobar que cada tipo (clase, interfaz o enumerador) tiene un nombre de al menos tres caracteres de longitud, podría utilizar este método:  
   

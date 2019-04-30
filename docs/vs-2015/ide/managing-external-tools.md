@@ -57,12 +57,12 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ce3cfa8762c6202a7c36bd9606a0fa77ccdd94a4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d6dec053e1075865b51c14df951915308852f8a2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084046"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445426"
 ---
 # <a name="managing-external-tools"></a>Administrar herramientas externas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,7 +85,7 @@ Se puede llamar a herramientas externas desde Visual Studio. Algunas herramienta
 6. Editor de configuración del servicio WCF: Permite crear y modificar la configuración para los servicios WCF.  
   
 > [!WARNING]
->  Puede que aparezca una lista diferente de herramientas externas, según la edición de Visual Studio que tenga instalada y el perfil de configuración que haya aplicado. Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Puede que aparezca una lista diferente de herramientas externas, según la edición de Visual Studio que tenga instalada y el perfil de configuración que haya aplicado. Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="adding-new-tools"></a>Agregar nuevas herramientas  
  Puede agregar una herramienta externa al menú **Herramientas**. Abra el cuadro de diálogo **Herramientas externas**, haga clic en **Agregar** y rellene la información. Por ejemplo, la entrada siguiente hace que el Explorador de Windows se abra en el directorio del archivo que tiene abierto actualmente en Visual Studio:  
@@ -100,7 +100,7 @@ Se puede llamar a herramientas externas desde Visual Studio. Algunas herramienta
  Los siguientes argumentos son variables de Visual Studio que se asignan cuando se inicia una herramienta externa. Puede ver una lista de vínculos a herramientas externas, como el Bloc de notas o Spy++, en el menú **Herramientas**, mediante el cuadro de diálogo Herramientas externas.  
   
 > [!NOTE]
->  La barra de estado del IDE muestra las variables Línea actual y Columna actual para indicar dónde se encuentra el punto de inserción en el Editor de código activo. La variable Texto actual devuelve el texto o el código seleccionado en dicha ubicación.  
+> La barra de estado del IDE muestra las variables Línea actual y Columna actual para indicar dónde se encuentra el punto de inserción en el Editor de código activo. La variable Texto actual devuelve el texto o el código seleccionado en dicha ubicación.  
   
 |Name|Argumento|Descripción|  
 |----------|--------------|-----------------|  

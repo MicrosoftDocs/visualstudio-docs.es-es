@@ -11,12 +11,12 @@ ms.assetid: b6c82167-e2a5-4cff-8c8b-2d72e2a9092c
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e8bc80e28979a1adf86f4b0490f84cc393450521
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2386f1be805f6347fc32fba4ee8bfe57c8602329
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096144"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436903"
 ---
 # <a name="vsix-project-template"></a>Plantilla de proyecto de VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,13 +26,13 @@ Puede usar la plantilla de proyecto de VSIX para ajustar una o varias extensione
  Implementación de VSIX es compatible con los VSPackages, ensamblados, componentes MEF, plantillas de proyecto, plantillas de elementos, controles de cuadro de herramientas y tipos de extensión personalizados.  
   
 > [!NOTE]
->  Para usar proyectos VSIX, debe instalar el SDK de Visual Studio. Para obtener más información sobre el SDK de Visual Studio, consulte [SDK de Visual Studio](../extensibility/visual-studio-sdk.md).  
+> Para usar proyectos VSIX, debe instalar el SDK de Visual Studio. Para obtener más información sobre el SDK de Visual Studio, consulte [SDK de Visual Studio](../extensibility/visual-studio-sdk.md).  
   
 ## <a name="where-to-find-the-vsix-project-template"></a>Dónde encontrar la plantilla de proyecto VSIX  
  La plantilla de proyecto de VSIX está disponible en el **nuevo proyecto** cuadro de diálogo. Expanda el **Visual Basic** nodo o la **Visual C#** nodo y, a continuación, elija **extensibilidad**.  
   
 > [!TIP]
->  Debe asegurarse de que .NET Framework 4.5 o versiones posteriores, se especifica en la lista desplegable en la parte superior de la **nuevo proyecto** cuadro de diálogo.  
+> Debe asegurarse de que .NET Framework 4.5 o versiones posteriores, se especifica en la lista desplegable en la parte superior de la **nuevo proyecto** cuadro de diálogo.  
   
 ## <a name="uses-of-the-vsix-project-template"></a>Usos de la plantilla de proyecto VSIX  
  La plantilla de proyecto VSIX tiene dos usos principales:  

@@ -10,12 +10,12 @@ ms.assetid: e9f715dc-12b7-439b-bdf3-f3dc75e62f1c
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 853a3f8db3623156e000c9360981933091ef9afd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 85e466e7ebb6294a77e89040260c16fe0043e372
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106974"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437665"
 ---
 # <a name="authoring-vsct-files"></a>Creación. Archivos Vsct
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -86,7 +86,7 @@ Este documento muestra cómo crear un archivo .vsct para agregar elementos de me
     Establecer el `guid` y `id` los atributos de la `Menu` elemento y, después, establezca el `type` atributo al tipo de menú que desea. También puede establecer el `priority` atributo para establecer la posición relativa del menú en el grupo primario.  
   
    > [!NOTE]
-   >  El `priority` atributo no es aplicable a las barras de herramientas y menús contextuales.  
+   > El `priority` atributo no es aplicable a las barras de herramientas y menús contextuales.  
   
 2. Todos los comandos en el IDE de Visual Studio deben hospedarse en grupos de comandos que son elementos secundarios directos de los menús y barras de herramientas. Si va a agregar nuevos menús o barras de herramientas al IDE, estos deben contener nuevos grupos de comandos. También puede agregar grupos de comandos a menús y barras de herramientas existentes para que se pueden agrupar visualmente los comandos.  
   
@@ -99,14 +99,14 @@ Este documento muestra cómo crear un archivo .vsct para agregar elementos de me
    1. Establecer el `guid` y `id` atributos de cada uno `Button` elemento y, después, establezca el `type` atributo al tipo de botón que desee. También puede establecer el `priority` atributo para establecer la posición relativa del comando en el grupo primario.  
   
       > [!NOTE]
-      >  Use `type="button"` para los botones de las barras de herramientas y comandos de menú estándar.  
+      > Use `type="button"` para los botones de las barras de herramientas y comandos de menú estándar.  
   
    2. En el `Button` elemento, agregue un [cadenas](../../extensibility/strings-element.md) elemento que contiene un [ButtonText](../../extensibility/buttontext-element.md) elemento y un [CommandName](../../extensibility/commandname-element.md) elemento. El `ButtonText` elemento proporciona la etiqueta de texto para un elemento de menú o la información sobre herramientas para un botón de barra de herramientas. El `CommandName` elemento proporciona el nombre del comando para usar en el comando.  
   
    3. Si el comando tendrá un icono, cree un [icono](../../extensibility/icon-element.md) elemento en el `Button` y establezca su `guid` y `id` atributos a la `Bitmap` (elemento) para el icono.  
   
       > [!NOTE]
-      >  Botones de barra de herramientas deben tener iconos.  
+      > Botones de barra de herramientas deben tener iconos.  
   
       Para obtener más información, consulte [MenuCommands frente a. OleMenuCommands](../../misc/menucommands-vs-olemenucommands.md).  
   

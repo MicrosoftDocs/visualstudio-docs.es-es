@@ -12,12 +12,12 @@ ms.assetid: 27d4bbcf-99b1-498f-8b66-40002e3db0f8
 caps.latest.revision: 47
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3aa3058c20fe0d5697b56adb72769f5f6962da1e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: caccf8923a8614ceedb7198e218ca2bb14bb7ec0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086291"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444855"
 ---
 # <a name="adding-a-most-recently-used-list-to-a-submenu"></a>Adición de una lista Usados más recientemente a un submenú
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -199,7 +199,7 @@ En este tutorial se basa en las demostraciones en [agregar un submenú a un men�
 2. En el **TestMenu** menú, haga clic en **invocar comando de prueba**. Esto muestra un cuadro de mensaje que indica que el comando se ha seleccionado.  
   
     > [!NOTE]
-    >  Este paso es necesario para forzar el VSPackage para cargar y mostrar correctamente la lista MRU. Si omite este paso, no se muestra la lista MRU.  
+    > Este paso es necesario para forzar el VSPackage para cargar y mostrar correctamente la lista MRU. Si omite este paso, no se muestra la lista MRU.  
   
 3. En el **menú prueba** menú, haga clic en **submenú**. Se muestra una lista de los cuatro elementos al final del submenú, a continuación un separador. Al hacer clic en **elemento 3**, debe aparecer un cuadro de mensaje y se muestra el texto, "Selected Item 3". (Si no se muestra la lista de los cuatro elementos, asegúrese de que ha seguido las instrucciones que aparecen en el paso anterior.)  
   

@@ -22,12 +22,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c7fa5073fca476159aa756b7a5527dd1007ab66b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6159a7763176be236b925dce9fae66e5fc915682
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075810"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440402"
 ---
 # <a name="add-controls-to-office-documents-at-runtime"></a>Agregar controles a documentos de Office en tiempo de ejecución
   Puede agregar controles a un documento de Microsoft Office Word y libro de Microsoft Office Excel en tiempo de ejecución. También puede quitar en tiempo de ejecución. Los controles que agregue o quite en tiempo de ejecución se denominan *controles dinámicos*.
@@ -74,7 +74,7 @@ ms.locfileid: "60075810"
  No se puede quitar controles estáticos en tiempo de ejecución. Si intenta utilizar los métodos `Delete` o `Remove` para quitar un control estático, se producirá una <xref:Microsoft.Office.Tools.CannotRemoveControlException>.
 
 > [!NOTE]
->  No quite controles mediante programación en el controlador de eventos `Shutdown` del documento. Los elementos de la interfaz de usuario del documento ya no estarán disponibles cuando se produzca el evento `Shutdown` . Si quiere quitar controles antes de que se cierre el documento, agregue el código al controlador de eventos de otro evento, como <xref:Microsoft.Office.Tools.Word.Document.BeforeClose> o <xref:Microsoft.Office.Tools.Word.Document.BeforeSave> para Word, o <xref:Microsoft.Office.Tools.Excel.Workbook.BeforeClose>o <xref:Microsoft.Office.Tools.Excel.Workbook.BeforeSave> para Excel.
+> No quite controles mediante programación en el controlador de eventos `Shutdown` del documento. Los elementos de la interfaz de usuario del documento ya no estarán disponibles cuando se produzca el evento `Shutdown` . Si quiere quitar controles antes de que se cierre el documento, agregue el código al controlador de eventos de otro evento, como <xref:Microsoft.Office.Tools.Word.Document.BeforeClose> o <xref:Microsoft.Office.Tools.Word.Document.BeforeSave> para Word, o <xref:Microsoft.Office.Tools.Excel.Workbook.BeforeClose>o <xref:Microsoft.Office.Tools.Excel.Workbook.BeforeSave> para Excel.
 
 ## <a name="HostControls"></a> Agregar controles host a documentos
 
@@ -103,7 +103,7 @@ Si un documento se guarda y después se cierra, todos los controles host creados
  Cuando un documento se guarda y se cierra, todos los controles de formularios Windows Forms creados dinámicamente se quitan del documento. Puede agregar código a la solución para volver a crear los controles cuando se vuelva a abrir el documento. Si crea controles dinámicos de Windows Forms mediante el uso de un complemento de VSTO, los contenedores de ActiveX para los controles se dejan en el documento. Para obtener más información, consulte [Guardar controles dinámicos en documentos de Office](../vsto/persisting-dynamic-controls-in-office-documents.md).
 
 > [!NOTE]
->  Los controles de formularios Windows Forms no se puede agregar mediante programación a documentos protegidos. Si desprotege mediante programación un documento de Word o una hoja de cálculo de Excel para agregar un control, debe escribir código adicional para quitar el contenedor de ActiveX del control cuando se cierre el documento. El contenedor de ActiveX del control no se elimina automáticamente de los documentos protegidos.
+> Los controles de formularios Windows Forms no se puede agregar mediante programación a documentos protegidos. Si desprotege mediante programación un documento de Word o una hoja de cálculo de Excel para agregar un control, debe escribir código adicional para quitar el contenedor de ActiveX del control cuando se cierre el documento. El contenedor de ActiveX del control no se elimina automáticamente de los documentos protegidos.
 
 ### <a name="add-custom-controls"></a>Agregar controles personalizados
  Si quiere agregar un elemento <xref:System.Windows.Forms.Control> que no es compatible con los métodos del asistente disponibles, como un control de usuario personalizado, use los métodos siguientes:

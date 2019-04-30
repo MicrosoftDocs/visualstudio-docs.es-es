@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b464fd4e8c1748adf50e9997dbbac553288043da
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 61e71f31ce887c7e1ea9ec57b0aa3f24a45be364
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088527"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414282"
 ---
 # <a name="walkthrough-insert-text-into-a-document-from-an-actions-pane"></a>Tutorial: Insertar texto en un documento desde un panel de acciones
   Este tutorial muestra cómo crear un panel de acciones en un documento de Microsoft Office Word. El panel de acciones contiene dos controles que recopilan datos y, a continuación, envíe el texto al documento.
@@ -34,7 +34,7 @@ ms.locfileid: "60088527"
 - Mostrar el panel de acciones cuando se abre la aplicación.
 
 > [!NOTE]
->  Es posible que el equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Para más información, vea [Personalizar el IDE de Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Es posible que el equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Para más información, vea [Personalizar el IDE de Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="prerequisites"></a>Requisitos previos
  Necesita los componentes siguientes para completar este tutorial:
@@ -78,7 +78,7 @@ ms.locfileid: "60088527"
 2. Seleccione la palabra **nombre**, sin seleccionar la marca de párrafo y haga clic en **Aceptar**.
 
     > [!NOTE]
-    >  La marca de párrafo debe estar fuera del marcador. Si las marcas de párrafo no son visibles en el documento, haga clic en el **herramientas** menú, elija **herramientas de Microsoft Office Word** y, a continuación, haga clic en **opciones**. Haga clic en el **vista** pestaña y seleccione el **marcas de párrafo** casilla de verificación en la **marcas de formato** sección de la **opciones** cuadro de diálogo.
+    > La marca de párrafo debe estar fuera del marcador. Si las marcas de párrafo no son visibles en el documento, haga clic en el **herramientas** menú, elija **herramientas de Microsoft Office Word** y, a continuación, haga clic en **opciones**. Haga clic en el **vista** pestaña y seleccione el **marcas de párrafo** casilla de verificación en la **marcas de formato** sección de la **opciones** cuadro de diálogo.
 
 3. En el **propiedades** ventana, cambie el **nombre** propiedad de **Bookmark1** a **showName**.
 

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1a1e161c0559013571a2ceaa775cfe428c1345c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1ca2401333f7678b821b5c6fa68f7953a91996d0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060428"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440022"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>Propiedades calculadas y de almacenamiento personalizado
 Todas las propiedades de dominio en un lenguaje específico de dominio (DSL) se pueden mostrar al usuario en el diagrama y en el explorador del lenguaje y pueden tener acceso a código de programa. Sin embargo, las propiedades difieren de la manera en que se almacenan sus valores.
@@ -50,7 +50,7 @@ Todas las propiedades de dominio en un lenguaje específico de dominio (DSL) se 
      Se abrirá DomainRelationships.cs o Dsl\GeneratedCode\DomainClasses.cs. Por encima de la llamada de método resaltada, un comentario le solicita que proporcione una implementación de Get*Supropiedad*().
 
     > [!NOTE]
-    >  Este archivo se genera a partir de DslDefinition.dsl. Si edita este archivo, los cambios se perderán la próxima vez que se hace clic **Transformar todas las plantillas**. En su lugar, agregue el método requerido en un archivo independiente.
+    > Este archivo se genera a partir de DslDefinition.dsl. Si edita este archivo, los cambios se perderán la próxima vez que se hace clic **Transformar todas las plantillas**. En su lugar, agregue el método requerido en un archivo independiente.
 
 6. Cree o abra un archivo de clase en una carpeta independiente, por ejemplo, un valor CustomCode\\*YourDomainClass*. cs.
 

@@ -13,12 +13,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d22db963f895c4ca53a44e20bc0babd0dff49853
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fa7db2f55a89bd6c542bff0cf30ee058e339f15c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107598"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433285"
 ---
 # <a name="customizing-deletion-behavior"></a>Personalizar el comportamiento de eliminación
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,7 +77,7 @@ Normalmente, al eliminar un elemento también se eliminan los elementos relacion
  Las opciones del archivo DSL Definition (Definición de DSL) solo le permiten elegir si la eliminación se propagará al vecino inmediato. Para implementar un esquema más complejo de propagación de la eliminación, puede escribir código de programa.  
   
 > [!NOTE]
->  Para agregar código de programa a la definición de DSL, cree un archivo de código independiente en el **Dsl** del proyecto y escriba definiciones parciales para aumentar las clases en la carpeta Generated Code. Para obtener más información, consulte [escribir código para personalizar lenguajes específicos de dominio](../modeling/writing-code-to-customise-a-domain-specific-language.md).  
+> Para agregar código de programa a la definición de DSL, cree un archivo de código independiente en el **Dsl** del proyecto y escriba definiciones parciales para aumentar las clases en la carpeta Generated Code. Para obtener más información, consulte [escribir código para personalizar lenguajes específicos de dominio](../modeling/writing-code-to-customise-a-domain-specific-language.md).  
   
 ## <a name="closure"></a> Definir un cierre de eliminación  
  La operación de eliminación usa la clase _Sumodelo_**DeleteClosure** para determinar qué elementos eliminará, dada una selección inicial. Llama a `ShouldVisitRelationship()` y a `ShouldVisitRolePlayer()` repetidamente, recorriendo el gráfico de relaciones. Puede invalidar estos métodos. ShouldVisitRolePlayer incluye la identidad de un vínculo y el elemento en uno de los roles del vínculo. Debe devolver uno de los siguientes valores:  
@@ -213,7 +213,7 @@ partial class Artist
      Para obtener más información, consulte [controladores propagar los cambios fuera el modelo de evento](../modeling/event-handlers-propagate-changes-outside-the-model.md).  
   
     > [!WARNING]
-    >  Una vez eliminado un elemento, puede acceder a los valores de sus propiedades de dominio pero no puede navegar por los vínculos de relación. Sin embargo, si establece un evento de eliminación en una relación, también puede acceder a los dos elementos que eran sus encargados de rol. Por lo tanto, si quiere responder a la eliminación de un elemento de modelo pero quiere acceder a un elemento al que estaba vinculado, establezca un evento de eliminación en la relación en lugar de en la clase de dominio del elemento de modelo.  
+    > Una vez eliminado un elemento, puede acceder a los valores de sus propiedades de dominio pero no puede navegar por los vínculos de relación. Sin embargo, si establece un evento de eliminación en una relación, también puede acceder a los dos elementos que eran sus encargados de rol. Por lo tanto, si quiere responder a la eliminación de un elemento de modelo pero quiere acceder a un elemento al que estaba vinculado, establezca un evento de eliminación en la relación en lugar de en la clase de dominio del elemento de modelo.  
   
 ### <a name="example-deletion-rules"></a>Ejemplo de reglas de eliminación  
   

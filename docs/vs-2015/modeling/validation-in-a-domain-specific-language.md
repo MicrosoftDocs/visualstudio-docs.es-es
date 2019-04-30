@@ -12,12 +12,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cc3890ee8392088592aef16dcc120637da74e285
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 19ba3b3ee9e68a7329c077567136697b3acbe502
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113461"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437473"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>La validación en los lenguajes específicos de dominio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Como autor de un lenguaje específico de dominio (DSL), puede definir restriccio
  La validación es especialmente importante si escribe plantillas de texto u otras herramientas que procesan los modelos de los usuarios. La validación garantiza que los modelos cumplen las condiciones previas que esas herramientas dan por hecho.  
   
 > [!WARNING]
->  También puede permitir que las restricciones de validación se definan en extensiones diferentes de su DSL, junto con los controladores de gestos y los comandos de menú de la extensión. Los usuarios pueden elegir instalar estas extensiones además de su DSL. Para obtener más información, consulte [ampliar DSL mediante MEF](../modeling/extend-your-dsl-by-using-mef.md).  
+> También puede permitir que las restricciones de validación se definan en extensiones diferentes de su DSL, junto con los controladores de gestos y los comandos de menú de la extensión. Los usuarios pueden elegir instalar estas extensiones además de su DSL. Para obtener más información, consulte [ampliar DSL mediante MEF](../modeling/extend-your-dsl-by-using-mef.md).  
   
 ## <a name="running-validation"></a>Ejecutar la validación  
  Cuando un usuario edita un modelo, es decir, una instancia de su lenguaje específico de dominio, las siguientes acciones pueden ejecutar la validación:  
@@ -52,7 +52,7 @@ Como autor de un lenguaje específico de dominio (DSL), puede definir restriccio
  Cada método de validación notifica todos los errores que encuentra.  
   
 > [!NOTE]
->  Los métodos de validación notifican los errores, pero no cambian el modelo. Si desea ajustar o evitar determinados cambios, consulte [alternativas a la validación](#alternatives).  
+> Los métodos de validación notifican los errores, pero no cambian el modelo. Si desea ajustar o evitar determinados cambios, consulte [alternativas a la validación](#alternatives).  
   
 #### <a name="to-define-a-validation-constraint"></a>Para definir una restricción de validación  
   
@@ -320,7 +320,7 @@ private void TestForCircularLinks(ValidationContext context)
 ```  
   
 > [!NOTE]
->  A un método se pueden asignar como prefijo tantos atributos `[ValidationMethod()]` como quiera. Puede agregar un método a las categorías tanto personalizadas como estándar.  
+> A un método se pueden asignar como prefijo tantos atributos `[ValidationMethod()]` como quiera. Puede agregar un método a las categorías tanto personalizadas como estándar.  
   
  Para invocar una validación personalizada:  
   
@@ -342,7 +342,7 @@ validationController.ValidateCustom
  **Revertir la transacción si se intenta realizar un cambio no válido.** También podría definir una regla para este propósito, pero en algunos casos es posible reemplazar un controlador de propiedad **OnValueChanging()**, o para invalidar un método como `OnDeleted().` para revertir una transacción, use `this.Store.TransactionManager.CurrentTransaction.Rollback().` para obtener más información obtener información, consulte [controladores de cambio de valor de propiedad de dominio](../modeling/domain-property-value-change-handlers.md).  
   
 > [!WARNING]
->  Asegúrese de que el usuario sabe que el cambio se ha ajustado o revertido. Por ejemplo, use `System.Windows.Forms.MessageBox.Show("message").`.  
+> Asegúrese de que el usuario sabe que el cambio se ha ajustado o revertido. Por ejemplo, use `System.Windows.Forms.MessageBox.Show("message").`.  
   
 ## <a name="see-also"></a>Vea también  
  [Navegar y actualizar un modelo en el código de programa](../modeling/navigating-and-updating-a-model-in-program-code.md)   

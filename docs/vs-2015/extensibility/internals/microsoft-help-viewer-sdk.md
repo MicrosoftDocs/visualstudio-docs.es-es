@@ -8,12 +8,12 @@ ms.assetid: 620d7dcd-d462-475e-a449-fbfa06ff12c5
 caps.latest.revision: 34
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e08a443513bb6043ec2f3841067021ffc65dd92d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ba6fce72e3e27fbba9f8abdb424dabb778bd270c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099017"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440415"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>SDK del Visor de Ayuda de Microsoft
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -145,7 +145,7 @@ En este artículo contiene las siguientes tareas para los integradores del Visor
 6. Agregar vínculos de página: `<a href="ms-xhelp://?Id=ContosoTopic1">Main Topic</a>`
 
 > [!NOTE]
->  Nota: para que no es compatible con nuevos "Idioma" (ejemplo, F#, Cobol, Fortran) el código en colores en el fragmento de código será monocromo.
+> Nota: para que no es compatible con nuevos "Idioma" (ejemplo, F#, Cobol, Fortran) el código en colores en el fragmento de código será monocromo.
 
  **Tema del Visor de Ayuda de ejemplo** el código muestra cómo definir los metadatos, un fragmento de código, un área contraíble y texto específicos del idioma.
 

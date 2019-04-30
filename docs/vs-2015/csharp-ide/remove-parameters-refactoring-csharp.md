@@ -17,12 +17,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a28076b8c394818c248a5a18c7bc91d484f2c28a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 40a884fe2ae6aaf73256d8edbcbd083a193b0342
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045803"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444624"
 ---
 # <a name="remove-parameters-refactoring-c"></a>Quitar parámetros (Refactorización, C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "60045803"
  Realizar la operación de quitar parámetros, coloque primero el cursor en un método, indizador o delegado. Mientras el cursor está en posición, para invocar la quitar `Parameters` operación, haga clic en el **refactorizar** menú, utilice el método abreviado de teclado, o seleccione el comando en el menú contextual.  
   
 > [!NOTE]
->  No se puede quitar el primer parámetro en un método de extensión.  
+> No se puede quitar el primer parámetro en un método de extensión.  
   
 ### <a name="to-remove-parameters"></a>Para quitar los parámetros  
   
@@ -73,7 +73,7 @@ ms.locfileid: "60045803"
  Puede quitar los parámetros de una declaración de método o una llamada al método. Coloque el cursor en el nombre del delegado o de declaración de método y quitar los parámetros de invocación.  
   
 > [!CAUTION]
->  Quitar permite parámetros para quitar un parámetro que se hace referencia en el cuerpo de miembro, pero no quita las referencias a ese parámetro en el cuerpo del método. Esto puede producir errores de compilación en el código. Sin embargo, puede usar el **vista previa de cambios** cuadro de diálogo para revisar el código antes de ejecutar la operación de refactorización.  
+> Quitar permite parámetros para quitar un parámetro que se hace referencia en el cuerpo de miembro, pero no quita las referencias a ese parámetro en el cuerpo del método. Esto puede producir errores de compilación en el código. Sin embargo, puede usar el **vista previa de cambios** cuadro de diálogo para revisar el código antes de ejecutar la operación de refactorización.  
   
  Si se modifica un parámetro que se va a quitar durante la llamada a un método, la eliminación del parámetro también quitará la modificación. Por ejemplo, si llama un método se cambia de  
   

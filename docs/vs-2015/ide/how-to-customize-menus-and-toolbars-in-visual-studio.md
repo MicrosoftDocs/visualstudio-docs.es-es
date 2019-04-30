@@ -28,12 +28,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 69e18d2baabd7bffcf794def593022b898bcd940
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 91223021ce6f05b91d47e7b7019fb0c5c02243db
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094533"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416785"
 ---
 # <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>Procedimiento Personalización de menús y barras de herramientas en Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ ms.locfileid: "60094533"
 Puede personalizar Visual Studio no solo agregando y quitando barras de herramientas y menús de la barra de menús, sino agregando y quitando comandos de cualquier barra de herramientas o menú concreto.
 
 > [!WARNING]
->  Después de personalizar una barra de herramientas o un menú, asegúrese de que la casilla permanece seleccionada en el cuadro de diálogo **Personalizar**. De lo contrario, los cambios no se conservarán después de cerrar y volver a abrir Visual Studio.
+> Después de personalizar una barra de herramientas o un menú, asegúrese de que la casilla permanece seleccionada en el cuadro de diálogo **Personalizar**. De lo contrario, los cambios no se conservarán después de cerrar y volver a abrir Visual Studio.
 
  **En este tema:**
 
@@ -84,14 +84,14 @@ Puede personalizar Visual Studio no solo agregando y quitando barras de herramie
     - Para quitar una barra de herramientas personalizada, selecciónela en la lista **Barras de herramientas** y, después, elija el botón **Eliminar**.
 
         > [!IMPORTANT]
-        >  Puede eliminar las barras de herramientas que haya creado pero no las predeterminadas.
+        > Puede eliminar las barras de herramientas que haya creado pero no las predeterminadas.
 
     - Para mover una barra de herramientas a otra ubicación de acoplamiento, selecciónela en la lista **Barras de herramientas**, elija el botón **Modificar selección** y elija una ubicación en la lista que aparece.
 
          También puede arrastrar una barra de herramientas por el borde izquierdo para moverla a cualquier parte del área de acoplamiento principal.
 
         > [!NOTE]
-        >  Para obtener más información sobre cómo mejorar el uso y la accesibilidad de las barras de herramientas, vea [Cómo: Establecimiento de opciones de accesibilidad de IDE](../ide/reference/how-to-set-ide-accessibility-options.md).
+        > Para obtener más información sobre cómo mejorar el uso y la accesibilidad de las barras de herramientas, vea [Cómo: Establecimiento de opciones de accesibilidad de IDE](../ide/reference/how-to-set-ide-accessibility-options.md).
 
 ## <a name="bkmk_customize"></a> Personalizar un menú o una barra de herramientas
 

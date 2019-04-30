@@ -11,12 +11,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 33e9bafcba14c65f6f117319180dad7538414885
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: cea0d72488bbd18972b2a2f6d87f21dfb32481d6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670308"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439362"
 ---
 # <a name="msbuild-inline-tasks"></a>Tareas insertadas de MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,7 +67,7 @@ Las tareas de MSBuild se crean normalmente compilando una clase que implementa l
   Los elementos `Reference` y `Using` son independientes del lenguaje. Las tareas insertadas se pueden escribir en cualquiera de los lenguajes CodeDom para .NET admitidos, por ejemplo, Visual Basic o Visual C#.  
   
 > [!NOTE]
->  Los elementos contenidos en el elemento `Task` son específicos del generador de tareas, en este caso, el generador de tareas de código.  
+> Los elementos contenidos en el elemento `Task` son específicos del generador de tareas, en este caso, el generador de tareas de código.  
   
 ### <a name="code-element"></a>Elemento de código  
  El último elemento secundario que aparece dentro del elemento `Task` es el elemento `Code`. El elemento `Code` contiene o localiza el código que se desea compilar en una tarea. Lo que se incluye en el elemento `Code` depende de cómo se desea escribir la tarea.  
@@ -87,7 +87,7 @@ Las tareas de MSBuild se crean normalmente compilando una clase que implementa l
   Alternativamente, puede utilizar el atributo `Source` del elemento `Code` para especificar la ubicación de un archivo que contiene el código para la tarea. El código del archivo de código fuente debe ser del tipo especificado por el atributo `Type`. Si el atributo `Source` está presente, el valor predeterminado de `Type` es `Class`. Si `Source` no está presente, el valor predeterminado es `Fragment`.  
   
 > [!NOTE]
->  Al definir la clase de tarea en el archivo de origen, el nombre de clase debe corresponder al atributo `TaskName` del elemento [UsingTask](../msbuild/usingtask-element-msbuild.md) correspondiente.  
+> Al definir la clase de tarea en el archivo de origen, el nombre de clase debe corresponder al atributo `TaskName` del elemento [UsingTask](../msbuild/usingtask-element-msbuild.md) correspondiente.  
   
 ## <a name="hello-world"></a>Hello World  
  A continuación se muestra una tarea insertada más completa. La tarea HelloWorld muestra "Hello, world!" en el dispositivo de registro de errores predeterminado, que suele ser la consola del sistema o la ventana de **salida** de Visual Studio. El elemento `Reference` del ejemplo se incluye solamente a efectos de ilustración.  
@@ -193,4 +193,4 @@ File.WriteAllText(Path, content);
   
 ## <a name="see-also"></a>Vea también  
  [Tareas](../msbuild/msbuild-tasks.md)   
- [Tutorial: Crear una tarea insertada](../msbuild/walkthrough-creating-an-inline-task.md)
+ [Tutorial: Crear una tarea en línea](../msbuild/walkthrough-creating-an-inline-task.md)

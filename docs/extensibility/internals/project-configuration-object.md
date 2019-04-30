@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e25e2f2359cabff9a4e95a7d64d2f0846df8f49f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: d96766918f554e2b99dd8abc5faea9badaf69b5e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631749"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63423094"
 ---
 # <a name="project-configuration-object"></a>Objeto de configuración del proyecto
 El objeto de configuración de proyecto administra la presentación de información de configuración de la interfaz de usuario.
@@ -26,7 +26,7 @@ El objeto de configuración de proyecto administra la presentación de informaci
  El proveedor de configuración de proyecto administra las configuraciones de proyecto. El entorno y otros paquetes, para obtener acceso y recuperar información sobre las configuraciones de un proyecto, llame a las interfaces que se adjunta al objeto de proveedor de configuración de proyecto.
 
 > [!NOTE]
->  No se puede crear o editar archivos de configuración de la solución mediante programación. Debe usar `DTE.SolutionBuilder`. Consulte [configuración de la solución](../../extensibility/internals/solution-configuration.md) para obtener más información.
+> No se puede crear o editar archivos de configuración de la solución mediante programación. Debe usar `DTE.SolutionBuilder`. Consulte [configuración de la solución](../../extensibility/internals/solution-configuration.md) para obtener más información.
 
  Para publicar un nombre para mostrar que se usará en la configuración de la interfaz de usuario, debe implementar el proyecto <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg.get_DisplayName%2A>. El entorno llama a <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetCfgs%2A>, que devuelve una lista de `IVsCfg` punteros que puede usar para obtener los nombres para mostrar para la información de configuración y plataforma que se mostrarán en la interfaz de usuario del entorno. La configuración activa y la plataforma se determinan mediante la configuración del proyecto almacenada en la configuración de soluciones activas. El <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager.FindActiveProjectCfg%2A> método puede utilizarse para recuperar la configuración del proyecto activo.
 
@@ -35,7 +35,7 @@ El objeto de configuración de proyecto administra la presentación de informaci
  Es otra manera de proporcionar el entorno y otros proyectos con acceso a las configuraciones de proyecto para que los proyectos proporcionar una implementación de la `IVsCfgProvider2::GetCfgs` método para devolver uno o más objetos de configuración. También pueden implementar los proyectos <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2>, que hereda de `IVsProjectCfg` y, por tanto, desde `IVsCfg`, para proporcionar información específica de la configuración. <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2> es compatible con plataformas y funcionalidad para agregar, eliminar y cambiar el nombre de las configuraciones de proyecto.
 
 > [!NOTE]
->  Dado que Visual Studio ya no se limita a dos tipos de configuración, no se debe escribir código que procesa las configuraciones con suposiciones sobre el número de configuraciones, ni debe escribirse con la suposición de que un proyecto que sólo tiene una configuración es necesariamente comercial o depuración. Esto hace que el uso de <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg.get_IsReleaseOnly%2A> y <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg.get_IsDebugOnly%2A> obsoleto.
+> Dado que Visual Studio ya no se limita a dos tipos de configuración, no se debe escribir código que procesa las configuraciones con suposiciones sobre el número de configuraciones, ni debe escribirse con la suposición de que un proyecto que sólo tiene una configuración es necesariamente comercial o depuración. Esto hace que el uso de <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg.get_IsReleaseOnly%2A> y <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg.get_IsDebugOnly%2A> obsoleto.
 
  Una llamada a `QueryInterface` en el objeto devuelto desde`IVsGetCfgProvider::GetCfgProvider` recupera `IVsCfgProvider2`. Si `IVsGetCfgProvider` no se encuentra mediante una llamada a `QueryInterface` en el `IVsProject3` objeto de proyecto, puede tener acceso el objeto de proveedor de configuración mediante una llamada a `QueryInterface` en el objeto de explorador raíz de jerarquía para el objeto devuelto para `IVsHierarchy::GetProperty(VSITEM_ROOT, VSHPROPID_BrowseObject)`, o a través un puntero a devolver para el proveedor de configuración `IVsHierarchy::GetProperty(VSITEM_ROOT, VSHPROPID_ConfigurationProvider)`.
 

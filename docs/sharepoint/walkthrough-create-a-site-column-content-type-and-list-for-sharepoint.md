@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4f2c79787317c3d759322e5bd7f7beed4a43892a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e39ea4041ab9806c7ca857680af5c5c04510eba9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057737"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430700"
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>Tutorial: Crear una columna de sitio, el tipo de contenido y la lista de SharePoint
   Los procedimientos siguientes muestran cómo crear columnas de sitio de SharePoint personalizadas, o *campos*, así como un tipo de contenido que usa las columnas de sitio. También muestra cómo crear una lista que usa el nuevo tipo de contenido.
@@ -112,7 +112,7 @@ ms.locfileid: "60057737"
 6. Después el tipo de contenido aparezca el diseñador, en el **columnas** pestaña, agregue las tres columnas que ha definido anteriormente del sitio: **Nombre del paciente**, **Id. de pacientes**, y **nombre médico**. Para agregar estas columnas, elija el primer cuadro de lista en la lista de columnas de sitio en **nombre para mostrar**y, a continuación, elija cada columna de sitio en la lista de uno a la vez.
 
     > [!TIP]
-    >  Para elegir las columnas de sitio más rápidamente, filtrar la lista escribiendo las primeras letras del nombre de la columna.
+    > Para elegir las columnas de sitio más rápidamente, filtrar la lista escribiendo las primeras letras del nombre de la columna.
 
 7. Además de las tres columnas de sitio personalizada, agregue el **comentarios** columna de sitio en la lista de columnas de sitio.
 
@@ -164,7 +164,7 @@ ms.locfileid: "60057737"
      La columna de la lista personalizada se aplica solo a esta lista. Cuando se agrega una columna de lista personalizado a una lista, se crea un tipo de contenido de lista nuevo, incluidas todas las columnas agregadas en la lista y se establece como la lista predeterminada.
 
     > [!TIP]
-    >  Si elige una columna de la lista de columnas de sitio, se usa una columna de sitio existente. Sin embargo, si escribe un valor de nombre de columna sin elegir las columnas en la lista, se crea una columna de lista personalizado, incluso si ya existe una columna con el mismo nombre en la lista.
+    > Si elige una columna de la lista de columnas de sitio, se usa una columna de sitio existente. Sin embargo, si escribe un valor de nombre de columna sin elegir las columnas en la lista, se crea una columna de lista personalizado, incluso si ya existe una columna con el mismo nombre en la lista.
 
      Si lo desea, en lugar de establecer el tipo de datos de la columna de lista personalizada para **única línea de texto**, en su lugar, se pudo establecer el tipo de datos para esta columna a la búsqueda y sus valores se recuperaría de una tabla u otra lista. Para obtener información acerca de las columnas de búsqueda, vea [relaciones de lista en SharePoint 2010](http://go.microsoft.com/fwlink/?LinkId=224994) y [búsquedas y las relaciones de la lista](http://go.microsoft.com/fwlink/?LinkID=224995).
 

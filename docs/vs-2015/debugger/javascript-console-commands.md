@@ -18,12 +18,12 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: aeaba355e101bd8e48126bfa01f95668a37abe3e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 45588d06cddd919d8ff0f96329cce5f6054edd00
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081429"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431430"
 ---
 # <a name="javascript-console-commands"></a>JavaScript Console commands
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
  Si la ventana Consola JavaScript está cerrada, puedes abrirla durante la depuración en Visual Studio si eliges **Depurar** > **Ventanas** > **Consola JavaScript**.  
   
 > [!NOTE]
->  Si la ventana no está disponible durante una sesión de depuración, asegúrese de que el tipo de depurador está establecido en **Script** en las propiedades de depuración del proyecto.  
+> Si la ventana no está disponible durante una sesión de depuración, asegúrese de que el tipo de depurador está establecido en **Script** en las propiedades de depuración del proyecto.  
   
 ## <a name="console-object-commands"></a>Comandos del objeto console  
  En esta tabla se muestra la sintaxis de los comandos del objeto `console` que puedes usar en la ventana Consola JavaScript o para enviar mensajes a la consola desde el código. Este objeto tiene varias formas que te permiten diferenciar, si quieres, los mensajes informativos de los mensajes de error.  
@@ -43,7 +43,7 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
  Puedes usar la forma larga del comando `window.console.[command]` si tienes que evitar confusiones posibles con objetos locales cuyo nombre también sea console.  
   
 > [!TIP]
->  Las versiones anteriores de Visual Studio no admiten el conjunto completo de comandos. Use IntelliSense en el objeto de la consola para obtener información rápida sobre los comandos admitidos.  
+> Las versiones anteriores de Visual Studio no admiten el conjunto completo de comandos. Use IntelliSense en el objeto de la consola para obtener información rápida sobre los comandos admitidos.  
   
 |Comando|Descripción|Ejemplo|  
 |-------------|-----------------|-------------|  

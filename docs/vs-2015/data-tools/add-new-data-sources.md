@@ -19,12 +19,12 @@ caps.latest.revision: 60
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: db550b2a99f12190cac0bde74859191c2943b2d5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 77b962d9ab4594bba5be42100a46e67e1c861384
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102763"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445766"
 ---
 # <a name="add-new-data-sources"></a>Agregar nuevos orígenes de datos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ En el contexto de las herramientas de datos de .NET en Visual Studio, el términ
 - Una clase o una colección de la solución.  
   
 > [!NOTE]
->  Si no usa características de enlace de datos, conjuntos de datos, Entity Framework, LINQ to SQL, WCF o SharePoint, el concepto de "data source" no es aplicable. Simplemente conéctese directamente a la base de datos mediante el uso de los objetos de SQLCommand y comunicarse directamente con la base de datos.  
+> Si no usa características de enlace de datos, conjuntos de datos, Entity Framework, LINQ to SQL, WCF o SharePoint, el concepto de "data source" no es aplicable. Simplemente conéctese directamente a la base de datos mediante el uso de los objetos de SQLCommand y comunicarse directamente con la base de datos.  
   
  Crear y editar orígenes de datos mediante el **Asistente para configuración de origen de datos** en una aplicación Windows Forms o Windows Presentation Foundation. Para Entity Framework, primero cree las clases de entidad y, a continuación, inicie el asistente seleccionando **proyecto** > **Agregar nuevo origen de datos** (se describe con más detalle más adelante en este artículo).  
   
@@ -84,7 +84,7 @@ En el contexto de las herramientas de datos de .NET en Visual Studio, el términ
 - Servicios Web.  
   
     > [!NOTE]
-    >  Los elementos que aparecen en la **orígenes de datos** ventana dependen de los datos que devuelve el servicio. Algunos servicios podrían no proporcionar suficiente información para que el **Asistente para configuración de orígenes de datos** pueda crear objetos enlazables. Por ejemplo, si el servicio devuelve un conjunto de datos sin tipo, no hay elementos aparecerán en el **orígenes de datos** ventana cuando se complete el asistente. Esto es porque los datasets no escritos no proporcionan un esquema y, por lo tanto, el asistente no tiene información suficiente para crear el origen de datos.  
+    > Los elementos que aparecen en la **orígenes de datos** ventana dependen de los datos que devuelve el servicio. Algunos servicios podrían no proporcionar suficiente información para que el **Asistente para configuración de orígenes de datos** pueda crear objetos enlazables. Por ejemplo, si el servicio devuelve un conjunto de datos sin tipo, no hay elementos aparecerán en el **orígenes de datos** ventana cuando se complete el asistente. Esto es porque los datasets no escritos no proporcionan un esquema y, por lo tanto, el asistente no tiene información suficiente para crear el origen de datos.  
   
 ## <a name="data-source-for-an-object"></a>Origen de datos para un objeto  
  Puede crear un origen de datos de cualquier objeto que expone una o más propiedades públicas ejecutando el **Asistente para configuración de origen de datos** y, a continuación, seleccionando la **objeto** tipo de origen de datos. Se muestran todas las propiedades públicas de un objeto en el **orígenes de datos** ventana.   Si usa Entity Framework y ha generado un modelo, esto es donde encontrará las clases de entidad que serán los orígenes de datos para la aplicación.  
@@ -94,10 +94,10 @@ En el contexto de las herramientas de datos de .NET en Visual Studio, el términ
  Si desea enlazar a un objeto en un ensamblado o proyecto que no aparece en la vista de árbol, haga clic en **Agregar referencia** y usar el **Add Reference Dialog Box** para agregar una referencia al ensamblado o proyecto. Después de agregar la referencia, el ensamblado o proyecto se agrega a la vista de árbol.  
   
 > [!NOTE]
->  Es posible que deba compilar el proyecto que contiene los objetos antes de que los objetos aparecen en la vista de árbol.  
+> Es posible que deba compilar el proyecto que contiene los objetos antes de que los objetos aparecen en la vista de árbol.  
   
 > [!NOTE]
->  Para admitir el enlace de datos de arrastrar y colocar, los objetos que implementan la <xref:System.ComponentModel.ITypedList> o <xref:System.ComponentModel.IListSource> interfaz debe tener un constructor predeterminado. En caso contrario, Visual Studio no puede crear instancias del objeto de origen de datos y mostrará un error cuando se arrastra el elemento a la superficie de diseño.  
+> Para admitir el enlace de datos de arrastrar y colocar, los objetos que implementan la <xref:System.ComponentModel.ITypedList> o <xref:System.ComponentModel.IListSource> interfaz debe tener un constructor predeterminado. En caso contrario, Visual Studio no puede crear instancias del objeto de origen de datos y mostrará un error cuando se arrastra el elemento a la superficie de diseño.  
   
 ## <a name="data-source-for-a-sharepoint-list"></a>Origen de datos para obtener una lista de SharePoint  
  Puede crear un origen de datos de una lista de SharePoint ejecutando el **Asistente para configuración de origen de datos** y seleccionando el **SharePoint** tipo de origen de datos. SharePoint expone los datos a través de [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)], por lo que crear un origen de datos de SharePoint es lo mismo que crear un origen de datos de un servicio. Seleccionar el **SharePoint** de elemento en el **Asistente para configuración de origen de datos** abre el **Add Service Reference** cuadro de diálogo, donde se conecta al servicio de datos de SharePoint señalando al servidor de SharePoint.  Esto requiere el SDK de SharePoint.  

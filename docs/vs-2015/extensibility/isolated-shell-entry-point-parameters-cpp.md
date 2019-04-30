@@ -11,12 +11,12 @@ ms.assetid: 18f4b18b-2173-4afa-ba0a-42fe33e61118
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 6089c4ef32ef0d0b0bce081cef6d16bd569c0901
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9e736343212c4bf6acd833f5740b996c6c032c3f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041956"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439816"
 ---
 # <a name="isolated-shell-entry-point-parameters-c"></a>Parámetros de punto de entrada de Shell aislado (C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,7 +75,7 @@ typedef int (__cdecl *STARTFCN)(LPSTR, LPWSTR, int, GUID *, WCHAR *pszSettings);
  Para reemplazar una o más configuraciones, pase una cadena Unicode que contiene la configuración que se invalide. La cadena es una lista separada por punto y coma de pares nombre / valor. Cada par contiene el nombre de la opción para invalidar, seguido por un signo igual (=), seguido del valor que se aplicará a la configuración.  
   
 > [!NOTE]
->  No incluya espacios en blanco en las cadenas Unicode.  
+> No incluya espacios en blanco en las cadenas Unicode.  
   
  Para valores booleanos, las cadenas siguientes representan el valor true; todas las demás cadenas representan el valor false. Estas cadenas distinguen mayúsculas de minúsculas.  
   

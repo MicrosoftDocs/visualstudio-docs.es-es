@@ -13,12 +13,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 51e79850e2958ce295ab4d98f3ea191a5222a8fb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1eb0b8b58d133a26c7970071b422e0c20f42c063
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078920"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433238"
 ---
 # <a name="customizing-the-model-explorer"></a>Personalizar el Explorador de modelos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ Puede cambiar la apariencia y comportamiento del explorador para el Diseñador d
      El explorador debería mostrar tres **Actor** nodos que tengan su icono.  
   
 > [!NOTE]
->  Si ha establecido un icono de nodo para cualquier elemento que se muestra en el explorador generado, todos los nodos del explorador mostrará el icono. Si no se ha establecido ningún icono, los nodos mostrará el icono predeterminado.  
+> Si ha establecido un icono de nodo para cualquier elemento que se muestra en el explorador generado, todos los nodos del explorador mostrará el icono. Si no se ha establecido ningún icono, los nodos mostrará el icono predeterminado.  
   
 ## <a name="changing-the-name-displayed-on-an-explorer-node"></a>Cambiar el nombre mostrado en un nodo del explorador  
  Puede cambiar cómo se muestran los nombres de los elementos del modelo en el explorador. El siguiente procedimiento muestra cómo mostrar el nombre de la **tarea** que hace referencia un **comentario** en el nodo de comentario.  

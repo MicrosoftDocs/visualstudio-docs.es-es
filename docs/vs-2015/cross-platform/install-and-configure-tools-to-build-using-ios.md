@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: corob-msft
 ms.author: corob
 manager: jillfra
-ms.openlocfilehash: cdde44b5d960a3f9ef462e06b55260477a8933c0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 227d4ba765dbea3be5306f05995cc29d075e6a66
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097081"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434145"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>Install and Configure Tools to Build using iOS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "60097081"
 Puede usar Visual C++ para el desarrollo móvil multiplataforma para editar, depurar e implementar código de iOS en el simulador de iOS o en un dispositivo de iOS; sin embargo, debido a las restricciones de licencia, el código se debe compilar y ejecutar de manera remota en un equipo Mac. Para compilar y ejecutar aplicaciones de iOS con Visual Studio, debe instalar y configurar el agente remoto [vcremote](http://go.microsoft.com/fwlink/p/?LinkId=534988)en el equipo Mac. El agente remoto controla las solicitudes de compilación de Visual Studio y ejecuta la aplicación en un dispositivo de iOS conectado al equipo Mac o en el simulador de iOS del equipo Mac.  
   
 > [!NOTE]
->  Para obtener información sobre el uso de servicios Mac hospedados en la nube en lugar de en un equipo Mac, vea [Build and Simulate iOS in the Cloud](https://taco.visualstudio.com/docs/build_ios_cloud/). Las instrucciones sirven para compilar con Visual Studio Tools para Apache Cordova. Para usar las instrucciones y compilar con Visual C++ para el desarrollo móvil multiplataforma, sustituya vcremote por vs-mda-remote.  
+> Para obtener información sobre el uso de servicios Mac hospedados en la nube en lugar de en un equipo Mac, vea [Build and Simulate iOS in the Cloud](https://taco.visualstudio.com/docs/build_ios_cloud/). Las instrucciones sirven para compilar con Visual Studio Tools para Apache Cordova. Para usar las instrucciones y compilar con Visual C++ para el desarrollo móvil multiplataforma, sustituya vcremote por vs-mda-remote.  
   
  Una vez instaladas las herramientas para compilar con iOS, consulte este tema para obtener información sobre maneras rápidas de configurar y actualizar al agente remoto para el desarrollo de iOS en Visual Studio y en el equipo Mac.  
   
@@ -93,7 +93,7 @@ Puede usar Visual C++ para el desarrollo móvil multiplataforma para editar, dep
    Durante la instalación, se instalará vcremote y se activará el modo de desarrollador en su Mac. También se instalarán[Homebrew](http://brew.sh/) y dos paquetes de npm, vcremote-lib y vcremote-utils.  
   
   > [!NOTE]
-  >  Para instalar Homebrew, debe disponer de acceso sudo (administrador). Si necesita instalar vcremote sin sudo, puede instalar Homebrew manualmente en una ubicación usr/local y agregar su carpeta bin a la ruta de acceso. Para obtener más información, vea la [documentación de Homebrew](https://github.com/Homebrew/homebrew/wiki/Installation). Para habilitar manualmente el modo de desarrollador, escriba este comando en la aplicación Terminal: `DevToolsSecurity –enable`  
+  > Para instalar Homebrew, debe disponer de acceso sudo (administrador). Si necesita instalar vcremote sin sudo, puede instalar Homebrew manualmente en una ubicación usr/local y agregar su carpeta bin a la ruta de acceso. Para obtener más información, vea la [documentación de Homebrew](https://github.com/Homebrew/homebrew/wiki/Installation). Para habilitar manualmente el modo de desarrollador, escriba este comando en la aplicación Terminal: `DevToolsSecurity –enable`  
   
   Si ha actualizado a una nueva versión de Visual Studio, deberá actualizar también a la versión actual del agente remoto. Para actualizar el agente remoto, repita los pasos para descargar e instalar el agente remoto.  
   
@@ -154,7 +154,7 @@ Puede usar Visual C++ para el desarrollo móvil multiplataforma para editar, dep
 5. En los campos **Nombre de host** y **Puerto** , escriba los valores especificados por el agente remoto cuando se inició. El nombre de host puede ser el nombre DNS o dirección IP de su equipo Mac. El puerto predeterminado es 3030.  
   
    > [!NOTE]
-   >  Si no puede hacer ping al equipo Mac usando el nombre de host, puede que necesite usar la dirección IP.  
+   > Si no puede hacer ping al equipo Mac usando el nombre de host, puede que necesite usar la dirección IP.  
   
 6. Si usa el agente remoto en el modo de conexión segura predeterminado, active la casilla **Seguro** y, a continuación, escriba el valor de PIN especificado por el agente remoto en el campo **Pin** . Si usa el agente remoto en el modo de conexión no segura, desactive la casilla **Seguro** y deje el campo **Pin** en blanco.  
   

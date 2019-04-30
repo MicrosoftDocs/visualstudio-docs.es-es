@@ -16,18 +16,18 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 093016b3924d7882901a2b2c1bda060571d5bff4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: a49ad82cc6cbb2eef8a8746b2c94575925ab1ddd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56618411"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436733"
 ---
 # <a name="deploy-publish-and-upgrade-sharepoint-solution-packages"></a>Implementar, publicar y actualizar los paquetes de solución de SharePoint
   Después de desarrollar una solución de SharePoint en Visual Studio, puede implementar su archivo de paquete (.wsp) en un servidor de SharePoint local o publicarlo en un servidor de SharePoint remoto o local. Si implementa los archivos, puede personalizar cómo se implementan los archivos del paquete (.wsp).
 
 > [!NOTE]
->  Actualmente, solo las soluciones en espacio aislado pueden publicarse en servidores remotos de SharePoint. Para obtener más información, consulte [consideraciones sobre la solución en espacio aislado](../sharepoint/sandboxed-solution-considerations.md).
+> Actualmente, solo las soluciones en espacio aislado pueden publicarse en servidores remotos de SharePoint. Para obtener más información, consulte [consideraciones sobre la solución en espacio aislado](../sharepoint/sandboxed-solution-considerations.md).
 
 ## <a name="deploy-publish-and-upgrade"></a>Implementar, publicar y actualizar
  *Implementar* se refiere a copiar un archivo de solución de SharePoint creado desde un proyecto de SharePoint en Visual Studio para un host local. En una solución implementada, puede configurar los pasos de implementación, como el reciclaje del grupo de Internet Information Services (IIS), la activación de la solución después de la implementación y así sucesivamente. Para implementar, usar el **implementar** comando el **compilar** menú. Para obtener más información, vea [Cómo: Editar una configuración de implementación de SharePoint](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md) y [Cómo: Implementar y publicar una solución de SharePoint en un sitio de SharePoint Local](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md).

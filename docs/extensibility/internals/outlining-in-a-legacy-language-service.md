@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba6d709dae3b2a20332b3122585ad2060628016e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 7aa01918b8de718fc26c0dc0249615b327150020
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56601362"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422872"
 ---
 # <a name="outlining-in-a-legacy-language-service"></a>Esquematización en un servicio de lenguaje heredado
 Esquematización hace posible contraer un programa complejo en una descripción general o esquema. Por ejemplo, en C# se pueden contraer todos los métodos en una sola línea, que muestra solo la firma del método. Además, las estructuras y clases se pueden contraer para mostrar solo los nombres de las clases y estructuras. Dentro de un único método, se puede contraer una lógica compleja para mostrar el flujo general mostrando solo la primera línea de instrucciones como `foreach`, `if`, y `while`.
@@ -25,7 +25,7 @@ Esquematización hace posible contraer un programa complejo en una descripción 
  Servicios de lenguaje heredado se implementan como parte de un paquete VSPackage, pero la forma más reciente para implementar características de servicio de lenguaje es usar las extensiones MEF. Para obtener más información, consulte [Tutorial: Esquematización](../../extensibility/walkthrough-outlining.md).
 
 > [!NOTE]
->  Se recomienda que comience a usar el nuevo editor de API tan pronto como sea posible. Esto mejorará el rendimiento de su servicio de lenguaje y le permiten aprovechar las nuevas características del editor.
+> Se recomienda que comience a usar el nuevo editor de API tan pronto como sea posible. Esto mejorará el rendimiento de su servicio de lenguaje y le permiten aprovechar las nuevas características del editor.
 
 ## <a name="enabling-support-for-outlining"></a>Habilitar la compatibilidad para la esquematización
  El `AutoOutlining` entrada del registro se establece en 1 para habilitar la esquematización automática. Esquematizar automáticamente configura un análisis de todo el origen cuando se carga un archivo o se puede cambiar con el fin de identificar las regiones ocultas y mostrar los glifos de esquematización. Esquematización también puede controlarse manualmente por el usuario.

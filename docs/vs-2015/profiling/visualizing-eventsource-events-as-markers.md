@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: edce61d7f5cf8f84c021b759fdaee1c06bf68ccb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ffbd5568d35b59e262577102a9368089fdcac6be
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044927"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431116"
 ---
 # <a name="visualizing-eventsource-events-as-markers"></a>Visualizar eventos EventSource como marcadores
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -94,7 +94,7 @@ El visualizador de simultaneidad puede mostrar eventos EventSource como marcador
  Utilice el campo cvSpanId, un número entero, para hacer coincidir los pares de eventos. El valor para cada par de eventos de inicio y detención que representan un intervalo debe ser único. Normalmente, para código simultáneo esto requiere el uso de primitivos de sincronización, como <xref:System.Threading.Interlocked.Exchange%2A>, para garantizar que la clave (el valor que se usa para CvSpanID) es correcta.  
   
 > [!NOTE]
->  Para usar SpanID para anidar intervalos, permita que se superpongan en el mismo subproceso o no permita que se inicien en un subproceso terminen en otro.  
+> Para usar SpanID para anidar intervalos, permita que se superpongan en el mismo subproceso o no permita que se inicien en un subproceso terminen en otro.  
   
 ## <a name="see-also"></a>Vea también  
  [Marcadores del visualizador de simultaneidad](../profiling/concurrency-visualizer-markers.md)

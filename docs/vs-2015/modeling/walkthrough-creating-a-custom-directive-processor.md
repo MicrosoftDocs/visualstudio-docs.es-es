@@ -12,12 +12,12 @@ caps.latest.revision: 76
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8d71c820435ccf5bd131c11bc79844ac157561c7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 438dd372cc2d70ecb8d1d41602751b6ce0cdf821
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105310"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446753"
 ---
 # <a name="walkthrough-creating-a-custom-directive-processor"></a>Tutorial: Crear un procesador de directivas personalizado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -86,7 +86,7 @@ End Property
 1. En Visual Studio, cree un proyecto de biblioteca de clases de Visual C# o Visual Basic con el nombre CustomDP.  
 
     > [!NOTE]
-    >  Si desea instalar el procesador de directivas en más de un equipo, es mejor utilizar un proyecto de extensión de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] (VSIX) e incluir un archivo .pkgdef en la extensión. Para obtener más información, consulte [implementar un procesador de directivas personalizado](../modeling/deploying-a-custom-directive-processor.md).  
+    > Si desea instalar el procesador de directivas en más de un equipo, es mejor utilizar un proyecto de extensión de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] (VSIX) e incluir un archivo .pkgdef en la extensión. Para obtener más información, consulte [implementar un procesador de directivas personalizado](../modeling/deploying-a-custom-directive-processor.md).  
 
 2. Agregue referencias a estos ensamblados:  
 
@@ -619,7 +619,7 @@ End Property
  Para poder invocar una directiva desde una plantilla de texto en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], debe agregar una clave del registro para el procesador de directivas.  
 
 > [!NOTE]
->  Si desea instalar el procesador de directivas en más de un equipo, es mejor definir una extensión de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] (VSIX) que incluya un archivo .pkgdef junto con el ensamblado. Para obtener más información, consulte [implementar un procesador de directivas personalizado](../modeling/deploying-a-custom-directive-processor.md).  
+> Si desea instalar el procesador de directivas en más de un equipo, es mejor definir una extensión de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] (VSIX) que incluya un archivo .pkgdef junto con el ensamblado. Para obtener más información, consulte [implementar un procesador de directivas personalizado](../modeling/deploying-a-custom-directive-processor.md).  
 
  Las claves para los procesadores de directivas se encuentran en la siguiente ubicación del Registro:  
 
@@ -636,7 +636,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
  En esta sección, agregará una clave para el procesador de directivas personalizado en el Registro, en la misma ubicación.  
 
 > [!CAUTION]
->  Una modificación incorrecta del Registro puede provocar daños graves en el sistema. Antes de efectuar cambios en el Registro, realice una copia de seguridad de la información importante del equipo.  
+> Una modificación incorrecta del Registro puede provocar daños graves en el sistema. Antes de efectuar cambios en el Registro, realice una copia de seguridad de la información importante del equipo.  
 
 #### <a name="to-add-a-registry-key-for-the-directive-processor"></a>Para agregar una clave del Registro para el procesador de directivas  
 
@@ -649,7 +649,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 3. Agregue una nueva clave con el nombre CustomDirectiveProcessor.  
 
    > [!NOTE]
-   >  Este es el nombre que utilizará en el campo de procesador de las directivas personalizadas. Este nombre no tiene que coincidir con el nombre de la directiva, el nombre de la clase de procesador de directivas ni el espacio de nombres de procesador de directivas.  
+   > Este es el nombre que utilizará en el campo de procesador de las directivas personalizadas. Este nombre no tiene que coincidir con el nombre de la directiva, el nombre de la clase de procesador de directivas ni el espacio de nombres de procesador de directivas.  
 
 4. Agregue un nuevo valor de cadena denominado Class con un valor CustomDP.CustomDirectiveProcessor para el nombre de la nueva cadena.  
 
@@ -687,7 +687,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 1. Cree un archivo de texto denominado `DocFile.xml` con cualquier editor de texto (por ejemplo, el Bloc de notas).  
 
     > [!NOTE]
-    >  Puede crear este archivo en cualquier ubicación (por ejemplo, C:\Test\DocFile.xml).  
+    > Puede crear este archivo en cualquier ubicación (por ejemplo, C:\Test\DocFile.xml).  
 
 2. Agregue lo siguiente al archivo de texto:  
 
@@ -743,7 +743,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 4. Cambie el contenido de TestDP.tt al siguiente texto.  
 
     > [!NOTE]
-    >  No olvide reemplazar la cadena <`YOUR PATH>` con la ruta de acceso al archivo DocFile.xml.  
+    > No olvide reemplazar la cadena <`YOUR PATH>` con la ruta de acceso al archivo DocFile.xml.  
 
      El lenguaje de la plantilla de texto no tiene que coincidir con el lenguaje del procesador de directivas.  
 
@@ -830,7 +830,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
     ```  
 
     > [!NOTE]
-    >  En este ejemplo, el valor del parámetro `Processor` es `CustomDirectiveProcessor`. El valor del parámetro `Processor` debe coincidir con el nombre de la clave del Registro del procesador.  
+    > En este ejemplo, el valor del parámetro `Processor` es `CustomDirectiveProcessor`. El valor del parámetro `Processor` debe coincidir con el nombre de la clave del Registro del procesador.  
 
 5. En el menú **Archivo**, haga clic en **Guardar todo**.  
 
@@ -882,7 +882,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 1. Reemplace el código de TestDP.tt por el siguiente: El HTML se resalta. No olvide reemplazar la cadena `YOUR PATH` con la ruta de acceso al archivo DocFile.xml.  
 
     > [!NOTE]
-    >  Abrir adicional \<# y cierre #> etiquetas separan el código de instrucción de las etiquetas HTML.  
+    > Abrir adicional \<# y cierre #> etiquetas separan el código de instrucción de las etiquetas HTML.  
 
     ```csharp  
     <#@ assembly name="System.Xml" #>  

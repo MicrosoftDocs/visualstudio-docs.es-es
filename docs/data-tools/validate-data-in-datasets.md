@@ -21,12 +21,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1b7ef69d2bb7ac9390c82ffb4e17db27a49637aa
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1e9fd28a946911a019ee0a1e144e7565bac9e004
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041596"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402723"
 ---
 # <a name="validate-data-in-datasets"></a>Validar datos en conjuntos de datos
 Validación de datos es el proceso de confirmar que los valores que se especifican en los objetos de datos se ajustan a las restricciones de esquema de un conjunto de datos. El proceso de validación también confirma que estos valores están siguiendo las reglas que se han establecido para la aplicación. Es una buena práctica para validar los datos antes de enviar actualizaciones a la base de datos subyacente. Esto reduce los errores, así como el número de viajes de ida y vuelta entre una aplicación y la base de datos.
@@ -54,7 +54,7 @@ Varios eventos generados por el <xref:System.Data.DataTable> objeto cuando se pr
 De forma predeterminada, cada cambio realizado en una columna produce cuatro eventos. La primera es la <xref:System.Data.DataTable.ColumnChanging> y <xref:System.Data.DataTable.ColumnChanged> eventos para la columna que se va a cambiar. A continuación se encuentran los <xref:System.Data.DataTable.RowChanging> y <xref:System.Data.DataTable.RowChanged> eventos. Si se realizan varios cambios a la fila, los eventos se generan para cada cambio.
 
 > [!NOTE]
->  La fila de datos <xref:System.Data.DataRow.BeginEdit%2A> método desactiva el <xref:System.Data.DataTable.RowChanging> y <xref:System.Data.DataTable.RowChanged> eventos después de cada cambio de columna individual. En ese caso, el evento no se produce hasta que el <xref:System.Data.DataRow.EndEdit%2A> se ha llamado al método, cuando el <xref:System.Data.DataTable.RowChanging> y <xref:System.Data.DataTable.RowChanged> se generan eventos una sola vez. Para obtener más información, consulte [desactivar restricciones al llenar un conjunto de datos](../data-tools/turn-off-constraints-while-filling-a-dataset.md).
+> La fila de datos <xref:System.Data.DataRow.BeginEdit%2A> método desactiva el <xref:System.Data.DataTable.RowChanging> y <xref:System.Data.DataTable.RowChanged> eventos después de cada cambio de columna individual. En ese caso, el evento no se produce hasta que el <xref:System.Data.DataRow.EndEdit%2A> se ha llamado al método, cuando el <xref:System.Data.DataTable.RowChanging> y <xref:System.Data.DataTable.RowChanged> se generan eventos una sola vez. Para obtener más información, consulte [desactivar restricciones al llenar un conjunto de datos](../data-tools/turn-off-constraints-while-filling-a-dataset.md).
 
 El evento que elija depende de cómo de pormenorizado desea que la validación que se va. Si es importante detectar un error inmediatamente cuando se cambia una columna, compilar la validación mediante el uso de la <xref:System.Data.DataTable.ColumnChanging> eventos. En caso contrario, use el <xref:System.Data.DataTable.RowChanging> eventos, lo que podrían ocasionar detectar varios errores al mismo tiempo. Además, si los datos están estructurados para que se valida el valor de una columna en función del contenido de otra columna, realizar la validación durante la <xref:System.Data.DataTable.RowChanging> eventos.
 
@@ -80,7 +80,7 @@ El <xref:System.Data.DataTable.ColumnChanged>, <xref:System.Data.DataTable.RowCh
 ## <a name="validate-data-during-column-changes"></a>Validar los datos durante los cambios de columna
 
 > [!NOTE]
->  El **Diseñador de Dataset** crea una clase parcial en la validación de que se puede agregar lógica a un conjunto de datos. El conjunto de datos generado por el diseñador no eliminar o cambiar el código de la clase parcial.
+> El **Diseñador de Dataset** crea una clase parcial en la validación de que se puede agregar lógica a un conjunto de datos. El conjunto de datos generado por el diseñador no eliminar o cambiar el código de la clase parcial.
 
 Puede validar los datos cuando cambia el valor en una columna de datos respondiendo a las <xref:System.Data.DataTable.ColumnChanging> eventos. Cuando se genera, este evento pasa un argumento de evento (<xref:System.Data.DataColumnChangeEventArgs.ProposedValue%2A>) que contiene el valor propuesto para la columna actual. Según el contenido de `e.ProposedValue`, puede:
 
@@ -102,7 +102,7 @@ Puede escribir código para comprobar que cada columna que desee validar contien
 2. Haga doble clic en la barra de título de la tabla que desee validar. Esta acción crea automáticamente el controlador de eventos <xref:System.Data.DataTable.RowChanging> del control <xref:System.Data.DataTable> en el archivo de clase parcial del conjunto de datos.
 
     > [!TIP]
-    >  Haga doble clic a la izquierda del nombre de la tabla para crear el controlador de eventos que modifique la fila. Si hace doble clic en el nombre de tabla, se puede modificar.
+    > Haga doble clic a la izquierda del nombre de la tabla para crear el controlador de eventos que modifique la fila. Si hace doble clic en el nombre de tabla, se puede modificar.
 
      [!code-vb[VbRaddataValidating#3](../data-tools/codesnippet/VisualBasic/validate-data-in-datasets_1.vb)]
 
@@ -113,7 +113,7 @@ Puede escribir código para comprobar que cada columna que desee validar contien
 2. Haga doble clic en la barra de título de la tabla que desee validar. Esta acción crea un archivo de clase parcial para el control <xref:System.Data.DataTable>.
 
     > [!NOTE]
-    >  El **Diseñador de DataSet** no crea automáticamente un controlador de eventos para el evento <xref:System.Data.DataTable.RowChanging>. Tendrá que crear un método para controlar la <xref:System.Data.DataTable.RowChanging> eventos y ejecutar código para enlazar el evento en el método de inicialización de la tabla.
+    > El **Diseñador de DataSet** no crea automáticamente un controlador de eventos para el evento <xref:System.Data.DataTable.RowChanging>. Tendrá que crear un método para controlar la <xref:System.Data.DataTable.RowChanging> eventos y ejecutar código para enlazar el evento en el método de inicialización de la tabla.
 
 3. Copie el código siguiente en la clase parcial:
 
@@ -141,7 +141,7 @@ Puede escribir código para comprobar que cada columna que desee validar contien
 Cada fila de una tabla de datos tiene un <xref:System.Data.DataRow.RowState%2A> propiedad que se realiza un seguimiento de estado actual de esa fila mediante el uso de los valores de la <xref:System.Data.DataRowState> enumeración. Puede devolver las filas modificadas desde una conjunto de datos o tabla de datos mediante una llamada a la `GetChanges` método de un <xref:System.Data.DataSet> o <xref:System.Data.DataTable>. Puede comprobar que existen cambios antes de llamar a `GetChanges` mediante una llamada a la <xref:System.Data.DataSet.HasChanges%2A> método de un conjunto de datos.
 
 > [!NOTE]
->  Después de confirmar los cambios a una conjunto de datos o tabla de datos (mediante una llamada a la <xref:System.Data.DataSet.AcceptChanges%2A> método), el `GetChanges` método no devuelve ningún dato. Si la aplicación necesita procesar las filas modificadas, debe procesar los cambios antes de llamar a la `AcceptChanges` método.
+> Después de confirmar los cambios a una conjunto de datos o tabla de datos (mediante una llamada a la <xref:System.Data.DataSet.AcceptChanges%2A> método), el `GetChanges` método no devuelve ningún dato. Si la aplicación necesita procesar las filas modificadas, debe procesar los cambios antes de llamar a la `AcceptChanges` método.
 
 Una llamada a la <xref:System.Data.DataSet.GetChanges%2A> método de una conjunto de datos o tabla de datos devuelve una nueva tabla de datos o conjunto de datos que contiene solo los registros que se han cambiado. Si desea obtener registros específicos, por ejemplo, solo los registros nuevos o sólo los registros modificados, puede pasar un valor de la <xref:System.Data.DataRowState> enumeración como un parámetro a la `GetChanges` método.
 
@@ -183,7 +183,7 @@ Use el <xref:System.Data.DataRowVersion> enumeración para tener acceso a las di
 Cuando los cambios se realizan en las filas de datos, el conjunto de datos retiene tanto la versión original (<xref:System.Data.DataRowVersion.Original>) como las versiones nuevas (<xref:System.Data.DataRowVersion.Current>) de la fila. Por ejemplo, antes de llamar al método `AcceptChanges`, su aplicación puede tener acceso a las distintas versiones de un registro (según se defina en la enumeración <xref:System.Data.DataRowVersion>) y procesar los cambios según corresponda.
 
 > [!NOTE]
->  Versiones diferentes de una fila existen solo una vez que se ha editado y antes de que el `AcceptChanges` ha llamado al método. Una vez que se ha llamado al método `AcceptChanges`, las versiones actual y original son iguales.
+> Versiones diferentes de una fila existen solo una vez que se ha editado y antes de que el `AcceptChanges` ha llamado al método. Una vez que se ha llamado al método `AcceptChanges`, las versiones actual y original son iguales.
 
 Si se pasa el valor <xref:System.Data.DataRowVersion> junto con el índice de la columna (o el nombre de la columna como cadena), se devuelve el valor de la versión de fila concreta de esa columna. La columna modificada se identifica durante la <xref:System.Data.DataTable.ColumnChanging> y <xref:System.Data.DataTable.ColumnChanged> eventos. Esto es un buen momento para examinar las versiones de fila diferente para la validación. Sin embargo, si ha suspendido las restricciones temporalmente, esos eventos no se generará y deberá mediante programación es identificar las columnas que han cambiado. Para ello, recorra en iteración la colección <xref:System.Data.DataTable.Columns%2A> y compare los distintos valores de <xref:System.Data.DataRowVersion>.
 

@@ -19,12 +19,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d2aefe68761d31f87d84c9215a6187c28e7b471b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 3541dada6167bd2f0a95913d9ccc385dc3e5ccc3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668995"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439471"
 ---
 # <a name="bind-windows-forms-controls-to-data"></a>Enlazar controles de Windows Forms a datos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Puede enlazar orígenes de datos a controles, arrastre objetos desde el **oríge
  ![Enlazar el origen de datos a los detalles](../data-tools/media/raddata-bind-data-source-to-details.png "raddata origen de datos de enlace a los detalles")  
   
 > [!IMPORTANT]
->  Tenga en cuenta que en la ilustración anterior, arrastra desde la propiedad Orders de la tabla Customers, no de la tabla Orders. Enlazando con la propiedad Customer.Orders, los comandos de navegación realizados en el control DataGridView se reflejan inmediatamente en los controles de detalles. Si arrastró desde la tabla Orders, todavía se enlazaría los controles al conjunto de datos, pero no se podría no pueden sincronizar con el control DataGridView.  
+> Tenga en cuenta que en la ilustración anterior, arrastra desde la propiedad Orders de la tabla Customers, no de la tabla Orders. Enlazando con la propiedad Customer.Orders, los comandos de navegación realizados en el control DataGridView se reflejan inmediatamente en los controles de detalles. Si arrastró desde la tabla Orders, todavía se enlazaría los controles al conjunto de datos, pero no se podría no pueden sincronizar con el control DataGridView.  
   
  La siguiente ilustración muestra el valor predeterminado los controles enlazados a datos que se agregan al formulario después de que se enlaza la propiedad Orders en la tabla Customers "Detalles" en el **orígenes de datos** ventana.  
   

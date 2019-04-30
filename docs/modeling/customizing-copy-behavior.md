@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a5543805741f1c64627aee15590d61635a89b1c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fcc08f9af3452289b3e0e76fe6970e75e8f854db
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109834"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414811"
 ---
 # <a name="customizing-copy-behavior"></a>Personalizar comportamiento de copia
 En un lenguaje de específicos de dominio (DSL) creado con el SDK de modelado y visualización de Visual Studio, puede modificar lo que sucede cuando el usuario copia y pega elementos.
@@ -232,7 +232,7 @@ Vea [Cómo: Agregar un controlador de arrastrar y colocar](../modeling/how-to-ad
  Muchos aspectos del comportamiento de un DSL con respecto a copiar, pegar, creación y eliminación de objetos se rigen por una instancia de <xref:Microsoft.VisualStudio.Modeling.ElementOperations> que está acoplada al diagrama. Puede modificar el comportamiento del DSL, derive su propia clase de <xref:Microsoft.VisualStudio.Modeling.ElementOperations> e invalidar la <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.ElementOperations%2A> propiedad de la clase del diagrama.
 
 > [!TIP]
->  Para obtener más información acerca de cómo personalizar el modelo mediante el uso de código de programa, consulte [navegar y actualizar un modelo en el código de programa](../modeling/navigating-and-updating-a-model-in-program-code.md).
+> Para obtener más información acerca de cómo personalizar el modelo mediante el uso de código de programa, consulte [navegar y actualizar un modelo en el código de programa](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
  ![Diagrama de secuencia para la operación de copia](../modeling/media/dslcopyseqdiagram.png)
 

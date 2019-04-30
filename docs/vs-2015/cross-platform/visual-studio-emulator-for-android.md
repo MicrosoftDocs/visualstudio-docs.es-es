@@ -8,12 +8,12 @@ ms.assetid: 80f0104f-a4db-44dd-bd55-37bb67776c62
 caps.latest.revision: 7
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 211741a94623ede593c7f6ba9e5988cea094ae90
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a33d7928e6e2555f0cfd484059b062ae801d8633
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060532"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442090"
 ---
 # <a name="visual-studio-emulator-for-android"></a>Emulador de Visual Studio para Android
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ El Emulador de Visual Studio para Android es una aplicación de escritorio que e
  Puede desinstalar el emulador de Visual Studio para Android mediante la opción Agregar o quitar programas del Panel de control.  
   
 > [!NOTE]
->  Al desinstalar Visual Studio no se desinstalará el emulador; debe desinstalar el emulador por separado.  
+> Al desinstalar Visual Studio no se desinstalará el emulador; debe desinstalar el emulador por separado.  
   
  Cuando desinstala el Emulador de Visual Studio para Android, los adaptadores Ethernet virtuales Hyper-V que se crearon para su uso no se quitan automáticamente. Puede quitar manualmente estos adaptadores virtuales (si no están en uso); para ello, abra el Administrador de Hyper-V, seleccione una de las imágenes de disco duro virtual del emulador, seleccione la pestaña Funciones de red y seleccione **Quitar** para todos los modificadores que aparecen en esta pestaña.  
   

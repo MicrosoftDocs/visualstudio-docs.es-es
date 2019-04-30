@@ -8,12 +8,12 @@ ms.assetid: a859595f-6517-43f2-9d61-c706cb55a388
 caps.latest.revision: 25
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5289804eb85b9af4fff090f98cc97f8d2c9ec676
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d3854f4844fba3b3c1a0a519f06d59d31c4f7072
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100409"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445886"
 ---
 # <a name="using-different-web-browsers-with-coded-ui-tests"></a>Usar diferentes exploradores web con las pruebas de IU codificadas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ Las pruebas de IU codificadas pueden automatizar las pruebas para las aplicacion
  **Grabación:** Debe usar el generador de pruebas automatizadas de IU para grabar la prueba de la aplicación web mediante Internet Explorer. Puede agregar opcionalmente validación y código personalizado para los controles probados utilizando un conjunto predefinido de propiedades, como lo haría normalmente para las pruebas de IU codificadas. Para más información, vea [Usar la automatización de IU para probar el código](../test/use-ui-automation-to-test-your-code.md).  
   
 > [!NOTE]
->  No puede grabar pruebas de IU codificadas con los exploradores Google Chrome o Mozilla Firefox.  
+> No puede grabar pruebas de IU codificadas con los exploradores Google Chrome o Mozilla Firefox.  
   
  **Reproducción con Internet Explorer:** Cuando no se especifica ningún explorador explícitamente, las pruebas se ejecutan en Internet Explorer de forma predeterminada. Puede indicar explícitamente el explorador que se usará mediante el establecimiento de la propiedad **BrowserWindow.CurrentBrowser** en el código de prueba. Con Internet Explorer, esta propiedad se debe establecer en **IE** o **Internet Explorer**.  
   
@@ -76,7 +76,7 @@ Las pruebas de IU codificadas pueden automatizar las pruebas para las aplicacion
 3. Resalte la extensión y seleccione **Descargar**.  
   
    > [!TIP]
-   >  También puede descargar los componentes Selenium para pruebas automatizadas de IU en distintos exploradores [aquí](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/).  
+   > También puede descargar los componentes Selenium para pruebas automatizadas de IU en distintos exploradores [aquí](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/).  
   
    Para más información sobre cómo crear y usar pruebas automatizadas de IU, vea la sección relativa a la [creación de pruebas automatizadas de IU](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate).  
   

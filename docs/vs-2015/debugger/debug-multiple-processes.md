@@ -20,12 +20,12 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cb9ff8e31004a3b314102ad6b0e64cd72cab6467
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9a2679825d41a6360dde05e7511d607f8be69dfa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039709"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434108"
 ---
 # <a name="debug-multiple-processes"></a>Depurar varios procesos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +64,7 @@ Aquí se indica cómo iniciar procesos de depuración, intercambiar procesos, in
 - [Empezar a depurar varios procesos en una solución de Visual Studio](#BKMK_Start_debugging_multiple_processes_in_a_Visual_Studio_solution) • [cambiar el proyecto de inicio](#BKMK_Change_the_startup_project) • [iniciar un proyecto específico en una solución](#BKMK_Start_a_specific_project_in_a_solution) • [empezar varios proyectos en un solución](#BKMK_Start_multiple_projects_in_a_solution) • [asociar a un proceso](#BKMK_Attach_to_a_process) • [iniciar automáticamente un proceso en el depurador](#BKMK_Automatically_start_an_process_in_the_debugger)  
   
 > [!NOTE]
->  El depurador no se asocia automáticamente a un proceso secundario iniciado por un proceso depurado, aunque el proyecto secundario se encuentre en la misma solución. Para depurar un proceso secundario:  
+> El depurador no se asocia automáticamente a un proceso secundario iniciado por un proceso depurado, aunque el proyecto secundario se encuentre en la misma solución. Para depurar un proceso secundario:  
 > 
 > - Realice la asociación al proceso secundario una vez iniciado.  
 > 
@@ -166,7 +166,7 @@ Aquí se indica cómo iniciar procesos de depuración, intercambiar procesos, in
 ### <a name="BKMK_Break__step__and_continue_commands"></a> Comandos de interrupción, paso y continuación  
   
 > [!NOTE]
->  De forma predeterminada, los comandos de interrupción, continuación y paso del depurador afectan a todos los procesos que se depuran. Para cambiar este comportamiento, consulte [configurar el comportamiento de ejecución de varios procesos](#BKMK_Configure_the_execution_behavior_of_multiple_processes)  
+> De forma predeterminada, los comandos de interrupción, continuación y paso del depurador afectan a todos los procesos que se depuran. Para cambiar este comportamiento, consulte [configurar el comportamiento de ejecución de varios procesos](#BKMK_Configure_the_execution_behavior_of_multiple_processes)  
   
 ||||  
 |-|-|-|  
@@ -197,7 +197,7 @@ Aquí se indica cómo iniciar procesos de depuración, intercambiar procesos, in
   Por ejemplo, si inicia la depuración de un proceso de una solución de Visual Studio, asócielo a otro proceso que ya se está ejecutando y, a continuación, elija **Detener depuración**, la sesión de depuración finaliza, el proceso que se inició en Visual Studio se termina, mientras que el proceso que asoció sigue en ejecución. Puede utilizar los siguientes procedimientos para controlar la manera en que se detiene la depuración.  
   
 > [!NOTE]
->  El **interrumpir todos los procesos cuando se interrumpa uno** opción no afecta al detener la depuración o finalización y desasociación de procesos.  
+> El **interrumpir todos los procesos cuando se interrumpa uno** opción no afecta al detener la depuración o finalización y desasociación de procesos.  
   
  **Para cambiar cómo Detener depuración afecta a un proceso individual**  
   

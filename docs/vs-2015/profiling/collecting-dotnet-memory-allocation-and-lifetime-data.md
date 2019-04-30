@@ -12,12 +12,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c40c2f824518ed00dacc41094c1b567f5de248ae
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 68decc73e14f8748d8434e05e50d6d3b48612d40
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112824"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436766"
 ---
 # <a name="collecting-net-memory-allocation-and-lifetime-data"></a>Recopilar datos referentes a la asignación y duración de memoria de .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Las herramientas de generación de perfiles [!INCLUDE[vsprvs](../includes/vsprvs
 - [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
 > [!NOTE]
->  Las características de seguridad mejoradas en Windows 8 y Windows Server 2012 requirieron cambios significativos en la forma en que el generador de perfiles de Visual Studio recopila datos en estas plataformas. Las aplicaciones de la Tienda Windows también requieren nuevas técnicas de recolección. Consulte [Herramientas de rendimiento en aplicaciones de Windows 8 y Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
+> Las características de seguridad mejoradas en Windows 8 y Windows Server 2012 requirieron cambios significativos en la forma en que el generador de perfiles de Visual Studio recopila datos en estas plataformas. Las aplicaciones de la Tienda Windows también requieren nuevas técnicas de recolección. Consulte [Herramientas de rendimiento en aplicaciones de Windows 8 y Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
  Puede recopilar datos mediante el método de muestreo o de generación de perfiles de instrumentación.  
   
@@ -42,7 +42,7 @@ Las herramientas de generación de perfiles [!INCLUDE[vsprvs](../includes/vsprvs
 - Cuando utiliza el método de instrumentación, el generador de perfiles realiza el seguimiento solo de las asignaciones de memoria de .NET y de los objetos generados por los módulos instrumentados.  
   
 > [!IMPORTANT]
->  Cuando recopila datos de memoria de .NET (asignaciones, duraciones de objeto o ambos) mediante el método de muestreo, se omiten todos los eventos de muestreo especificados por el usuario y se utilizan los eventos de asignación de memoria apropiados para recopilar datos.  
+> Cuando recopila datos de memoria de .NET (asignaciones, duraciones de objeto o ambos) mediante el método de muestreo, se omiten todos los eventos de muestreo especificados por el usuario y se utilizan los eventos de asignación de memoria apropiados para recopilar datos.  
   
  Si habilita la generación de perfiles de asignación de memoria de .NET, también habilita la vista Asignación. Si habilita la generación de perfiles de datos de duración de .NET, también habilita la vista Duración de objetos. Para obtener más información, consulte [Vista Asignación](../profiling/dotnet-memory-allocations-view.md) y [Vista Duración de objetos](../profiling/object-lifetime-view.md).  
   

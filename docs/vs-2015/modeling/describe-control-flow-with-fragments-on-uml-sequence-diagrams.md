@@ -17,12 +17,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 829e219056b7c0a74226dd933ab38b8559ebd6b2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c296be2e3a00efcdf48bdd6e4442e88fc32b3695
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107091"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422534"
 ---
 # <a name="describe-control-flow-with-fragments-on-uml-sequence-diagrams"></a>Describir el flujo de control con fragmentos de diagramas de secuencia de UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ En un diagrama de secuencia UML, los *fragmentos combinados* permiten mostrar bu
  Un fragmento combinado se compone de uno o varios *operandos de interacción*, y cada uno de ellos incluye uno o varios mensajes, usos de interacción o fragmentos combinados.  
   
 > [!NOTE]
->  Este tema trata sobre los fragmentos en los diagramas de secuencia. Para obtener más información sobre cómo leer diagramas de secuencia UML, vea [diagramas de secuencia UML: referencia](../modeling/uml-sequence-diagrams-reference.md). Para obtener más información sobre cómo dibujar diagramas de secuencia UML, vea [diagramas de secuencia UML: Directrices](../modeling/uml-sequence-diagrams-guidelines.md).  
+> Este tema trata sobre los fragmentos en los diagramas de secuencia. Para obtener más información sobre cómo leer diagramas de secuencia UML, vea [diagramas de secuencia UML: referencia](../modeling/uml-sequence-diagrams-reference.md). Para obtener más información sobre cómo dibujar diagramas de secuencia UML, vea [diagramas de secuencia UML: Directrices](../modeling/uml-sequence-diagrams-guidelines.md).  
   
  ![El fragmento con dos operandos de interacción combinado](../modeling/media/uml-seqfragments.png "UML_SeqFragments")  
   
@@ -45,7 +45,7 @@ En un diagrama de secuencia UML, los *fragmentos combinados* permiten mostrar bu
 3. Puede seleccionar cada operando de interacción por separado haciendo dentro. En este ejemplo está seleccionado el operando de interacción superior, por lo que puede verse su límite. Normalmente, solo está visible la línea divisoria entre los operandos de interacción.  
   
     > [!NOTE]
-    >  Para seleccionar el operando de interacción superior, no debe pulsar demasiado cerca de la parte superior del fragmento combinado.  
+    > Para seleccionar el operando de interacción superior, no debe pulsar demasiado cerca de la parte superior del fragmento combinado.  
   
 4. Restricciones. Puede asignarle a cada operando de interacción una restricción. Esta describe la condición bajo la que se llevarán a cabo los mensajes incluidos en el operando de interacción.  
   
@@ -57,7 +57,7 @@ En un diagrama de secuencia UML, los *fragmentos combinados* permiten mostrar bu
 1. Seleccione un mensaje o una secuencia de mensajes que comiencen en la misma línea de vida u ocurrencia de ejecución.  
   
    > [!NOTE]
-   >  Si selecciona varios mensajes, deben formar una secuencia ininterrumpida.  
+   > Si selecciona varios mensajes, deben formar una secuencia ininterrumpida.  
   
 2. Haga clic con el botón derecho en uno de los mensajes, seleccione **Rodear con**y haga clic en el tipo de fragmento combinado que desee, como **Fragmento combinado alternativo**.  
   
@@ -100,7 +100,7 @@ En un diagrama de secuencia UML, los *fragmentos combinados* permiten mostrar bu
 - Haga clic con el botón derecho en el título del fragmento combinado y, a continuación, haga clic en **Propiedades**.  
   
     > [!NOTE]
-    >  Los diferentes tipos de fragmentos combinados tienen propiedades diferentes.  
+    > Los diferentes tipos de fragmentos combinados tienen propiedades diferentes.  
   
 ## <a name="KindsOfFragment"></a> Tipos de fragmentos combinados  
   

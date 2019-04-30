@@ -11,12 +11,12 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f03c7260899db9e463282e45ef5bc76badb8a483
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b6e77934f8e565800eb4a7a753df4beb3b003fbb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082807"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445582"
 ---
 # <a name="walkthrough-using-msbuild"></a>Tutorial: Uso de MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -132,7 +132,7 @@ MSBuild es la plataforma de compilación para Microsoft y Visual Studio. Este tu
  Ejecute MSBuild desde el **símbolo del sistema de Visual Studio** para compilar el destino HelloWorld definido anteriormente. Utilice el modificador de línea de comandos /target o /t para seleccionar el destino.  
   
 > [!NOTE]
->  Haremos referencia al **símbolo del sistema de Visual Studio** como la **ventana Comandos** en las secciones siguientes.  
+> Haremos referencia al **símbolo del sistema de Visual Studio** como la **ventana Comandos** en las secciones siguientes.  
   
 #### <a name="to-build-the-target"></a>Para compilar el destino  
   
@@ -154,12 +154,12 @@ MSBuild es la plataforma de compilación para Microsoft y Visual Studio. Este tu
     ```  
   
 > [!NOTE]
->  Si en su lugar ve `The target "HelloWorld" does not exist in the project`, es probable que se haya olvidado de guardar el archivo del proyecto en el editor de código. Guarde el archivo y vuelva a intentarlo.  
+> Si en su lugar ve `The target "HelloWorld" does not exist in the project`, es probable que se haya olvidado de guardar el archivo del proyecto en el editor de código. Guarde el archivo y vuelva a intentarlo.  
   
  Alternando entre el editor de código y la ventana Comandos, puede cambiar el archivo del proyecto y ver rápidamente los resultados.  
   
 > [!NOTE]
->  Si ejecuta msbuild sin el modificador de comando /t, msbuild compilará el destino proporcionado por el atributo DefaultTarget del elemento Project, en este caso "Build". Esto compila el BuildApp.exe de la aplicación de Windows Forms.  
+> Si ejecuta msbuild sin el modificador de comando /t, msbuild compilará el destino proporcionado por el atributo DefaultTarget del elemento Project, en este caso "Build". Esto compila el BuildApp.exe de la aplicación de Windows Forms.  
   
 ## <a name="build-properties"></a>Propiedades de compilación  
  Las propiedades de compilación son pares de nombre y valor que guían la compilación. Ya se han definido varias propiedades de compilación al principio del archivo del proyecto:  
@@ -227,7 +227,7 @@ $(PropertyName)
     ```  
   
 > [!NOTE]
->  Si no ve estas líneas, es probable que se haya olvidado de guardar el archivo del proyecto en el editor de código. Guarde el archivo y vuelva a intentarlo.  
+> Si no ve estas líneas, es probable que se haya olvidado de guardar el archivo del proyecto en el editor de código. Guarde el archivo y vuelva a intentarlo.  
   
 ### <a name="conditional-properties"></a>Propiedades condicionales  
  Muchas propiedades, como Configuration, se definen condicionalmente, es decir, el atributo Condition aparece en el elemento de propiedad. Las propiedades condicionales se definen o vuelven a definir solo si la condición se evalúa como "true". Observe que a las propiedades no definidas se les proporciona el valor predeterminado de una cadena vacía. Por ejemplo,  
@@ -319,7 +319,7 @@ $(PropertyName)
  Para obtener más información, consulte [Elementos](../msbuild/msbuild-items.md).  
   
 > [!NOTE]
->  Las rutas de acceso de archivo son relativas a la carpeta que contiene el archivo del proyecto de MSBuild.  
+> Las rutas de acceso de archivo son relativas a la carpeta que contiene el archivo del proyecto de MSBuild.  
   
 ## <a name="examining-item-type-values"></a>Examinar los valores de tipo de elemento  
  Para obtener los valores de un tipo de elemento, utilice la sintaxis siguiente, donde ItemType es el nombre del tipo de elemento:  

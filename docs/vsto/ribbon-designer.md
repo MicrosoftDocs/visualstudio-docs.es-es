@@ -26,12 +26,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8cc47445f9d2024f5d8a83c8f376bc0299b8ea4e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 61c81cef552c18eab5aa737b3460d539abfbdcfc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103646"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446996"
 ---
 # <a name="ribbon-designer"></a>Diseñador de la cinta de opciones
   El Diseñador de cinta es un lienzo de diseño visual. Usar el Diseñador de cinta de opciones para agregar pestañas personalizadas, grupos y controles a la cinta de opciones de una aplicación de Microsoft Office.
@@ -47,7 +47,7 @@ ms.locfileid: "60103646"
 - [Agregar controles a la vista Backstage](#CustomizingMicrosoftOfficeButton)
 
 > [!NOTE]
->  Hay algunas tareas que no se puede realizar mediante el Diseñador de cinta de opciones. Para obtener más información sobre estas tareas y cómo puede llevarlas a cabo, consulte [información general de la cinta de opciones](../vsto/ribbon-overview.md).
+> Hay algunas tareas que no se puede realizar mediante el Diseñador de cinta de opciones. Para obtener más información sobre estas tareas y cómo puede llevarlas a cabo, consulte [información general de la cinta de opciones](../vsto/ribbon-overview.md).
 
  ![vínculo a vídeo](../vsto/media/playvideo.gif "vínculo al vídeo") para una demostración en vídeo relacionada, vea [¿cómo lo hago?: ¿Usar el Diseñador de cinta para personalizar la cinta de opciones en Outlook? ](http://go.microsoft.com/fwlink/?LinkID=130312).
 

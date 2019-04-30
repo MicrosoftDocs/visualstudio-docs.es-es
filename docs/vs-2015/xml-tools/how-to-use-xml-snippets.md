@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4a6c48d878f2bacd8317878366980ecc317f7adb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ba4d98a1d6a59a35bf4aa279831036eecec99989
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055267"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440581"
 ---
 # <a name="how-to-use-xml-snippets"></a>Procedimiento Utilizar fragmentos XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Puede invocar fragmentos XML mediante los dos siguientes comandos del menú cont
  Los procedimientos siguientes describen cómo tener acceso a la **Insertar fragmento de código** comando.  
   
 > [!NOTE]
->  El **Insertar fragmento de código** comando también está disponible mediante el método abreviado de teclado (CTRL+K, luego CTRL+X).  
+> El **Insertar fragmento de código** comando también está disponible mediante el método abreviado de teclado (CTRL+K, luego CTRL+X).  
   
 #### <a name="to-insert-snippets-from-the-shortcut-menu"></a>Para insertar fragmentos desde el menú contextual  
   
@@ -60,7 +60,7 @@ Puede invocar fragmentos XML mediante los dos siguientes comandos del menú cont
 4. Presione TAB, TAB para invocar el fragmento XML.  
   
 > [!NOTE]
->  Puede haber casos en los que el fragmento XML no se llegue a invocar. Por ejemplo, si intenta insertar un elemento `xs:complexType` dentro de un nodo `xs:element`, el editor no genera un fragmento XML. Cuando un elemento `xs:complexType` se utiliza dentro de un nodo `xs:element`, no están los atributos o subelementos necesarios, así que el editor no tiene datos que insertar.  
+> Puede haber casos en los que el fragmento XML no se llegue a invocar. Por ejemplo, si intenta insertar un elemento `xs:complexType` dentro de un nodo `xs:element`, el editor no genera un fragmento XML. Cuando un elemento `xs:complexType` se utiliza dentro de un nodo `xs:element`, no están los atributos o subelementos necesarios, así que el editor no tiene datos que insertar.  
   
 #### <a name="to-insert-snippets-using-the-shortcut-name"></a>Para insertar fragmentos con el nombre de acceso directo  
   
@@ -76,7 +76,7 @@ Puede invocar fragmentos XML mediante los dos siguientes comandos del menú cont
  Los procedimientos siguientes describen cómo tener acceso a la **rodear con** comando.  
   
 > [!NOTE]
->  El **rodear con** comando también está disponible mediante el método abreviado de teclado (CTRL+K, luego CTRL+S).  
+> El **rodear con** comando también está disponible mediante el método abreviado de teclado (CTRL+K, luego CTRL+S).  
   
 #### <a name="to-use-surround-with-from-the-context-menu"></a>Para utilizar este comando desde el menú de acceso directo  
   

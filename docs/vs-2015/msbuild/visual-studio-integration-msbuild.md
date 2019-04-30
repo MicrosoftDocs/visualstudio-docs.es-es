@@ -19,12 +19,12 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 048307c6c8117a77a57da6dc20f2615ae82feb0c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e8a2bd058faa2c3ef9d17a82ad08dd3ad28842a8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117504"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445640"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Integración de Visual Studio (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +64,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 ```  
   
 > [!NOTE]
->  Algunos nombres de tipo de elemento son específicos de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], pero no se muestran en esta lista desplegable.  
+> Algunos nombres de tipo de elemento son específicos de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], pero no se muestran en esta lista desplegable.  
   
 ## <a name="in-process-compilers"></a>Compiladores activos  
  Cuando sea posible, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] intentará utilizar la versión activa del compilador de [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] con el fin de mejorar el rendimiento. (No es aplicable a [!INCLUDE[csprcs](../includes/csprcs-md.md)]). Para que esto funcione correctamente, se deben cumplir las condiciones siguientes:  

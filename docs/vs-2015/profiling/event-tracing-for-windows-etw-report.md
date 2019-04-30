@@ -12,12 +12,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5bfcb10bdbbfcb8e4b98f8d90d6652832059107d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: bc0e139644a0b3df29109c1543140e57c5378f31
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108222"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444014"
 ---
 # <a name="event-tracing-for-windows-etw-report"></a>Informe Seguimiento de eventos para Windows (ETW)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "60108222"
 El informe Seguimiento de eventos para Windows (ETW) muestra los eventos ETW registrados en una sesión de rendimiento de las Herramientas de generación de perfiles de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Los datos ETW se recopilan en un archivo binario (.etl).  
   
 > [!NOTE]
->  No se puede mostrar informes ETW en la interfaz de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+> No se puede mostrar informes ETW en la interfaz de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 - Para obtener información sobre cómo recopilar datos ETW mediante las Herramientas de generación de perfiles desde la interfaz [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], vea [Cómo: Recopilar el seguimiento de eventos para Windows (ETW) datos](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md).  
   

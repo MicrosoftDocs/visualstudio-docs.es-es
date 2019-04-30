@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1973d5d71308cc5fda6e48acfc60d256775ff2cc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 00c5266d57ae5633313465796c718d989f783ea6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089177"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406864"
 ---
 # <a name="walkthrough-create-a-custom-bootstrapper-with-a-privacy-prompt"></a>Tutorial: Creación de un arranque personalizado con un mensaje de privacidad
 Puede configurar las aplicaciones ClickOnce se actualizan automáticamente cuando estén disponibles los ensamblados con versiones más recientes de los archivos y las versiones de ensamblado. Para asegurarse de que los clientes dar su consentimiento a este comportamiento, puede mostrar un aviso de privacidad a ellos. A continuación, puede elegir si se debe conceder permiso a la aplicación se actualice automáticamente. Si la aplicación no tiene permiso para actualizar automáticamente, no se instala.
@@ -125,7 +125,7 @@ Puede configurar las aplicaciones ClickOnce se actualizan automáticamente cuand
     6. En el **objeto Startup** menú desplegable, seleccione **Module1**.
 
        > [!NOTE]
-       >  Al deshabilitar el marco de aplicación, deshabilitan características como los estilos visuales de Windows XP, los eventos de aplicación, pantalla de presentación, aplicación de instancia única y. Para obtener más información, consulte [Application Page, Project Designer (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md).
+       > Al deshabilitar el marco de aplicación, deshabilitan características como los estilos visuales de Windows XP, los eventos de aplicación, pantalla de presentación, aplicación de instancia única y. Para obtener más información, consulte [Application Page, Project Designer (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md).
 
        Visual C# sólo para programadores:
 
@@ -151,12 +151,12 @@ Puede configurar las aplicaciones ClickOnce se actualizan automáticamente cuand
 1. Cree un directorio denominado **UpdateConsentDialog** en el *%PROGRAMFILES%\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages*.
 
     > [!NOTE]
-    >  Necesita privilegios administrativos para crear esta carpeta.
+    > Necesita privilegios administrativos para crear esta carpeta.
 
 2. En el *UpdateConsentDialog* directorio, cree un subdirectorio denominado *en*.
 
     > [!NOTE]
-    >  Cree un nuevo directorio para cada configuración regional. Por ejemplo, puede agregar subdirectorios para las configuraciones regionales fr y de. Estos directorios contendría las cadenas de francés y alemán y paquetes de idioma, si es necesario.
+    > Cree un nuevo directorio para cada configuración regional. Por ejemplo, puede agregar subdirectorios para las configuraciones regionales fr y de. Estos directorios contendría las cadenas de francés y alemán y paquetes de idioma, si es necesario.
 
 #### <a name="step-2-to-create-the-productxml-manifest-file"></a>Paso 2: Para crear el archivo de manifiesto product.xml
 
@@ -221,7 +221,7 @@ Puede configurar las aplicaciones ClickOnce se actualizan automáticamente cuand
 4. Crear un documento denominado *eula.rtf* para los términos de licencia del software.
 
     > [!NOTE]
-    >  Los términos de licencia de software deben incluir información sobre licencias, garantía, responsabilidades y las leyes locales. Estos archivos deben ser específicos de la configuración regional, así que asegúrese de que el archivo se guarda en un formato que admita caracteres MBCS o UNICODE. Consulte su asesoría jurídica sobre el contenido de los términos de licencia del software.
+    > Los términos de licencia de software deben incluir información sobre licencias, garantía, responsabilidades y las leyes locales. Estos archivos deben ser específicos de la configuración regional, así que asegúrese de que el archivo se guarda en un formato que admita caracteres MBCS o UNICODE. Consulte su asesoría jurídica sobre el contenido de los términos de licencia del software.
 
 5. Guarde el documento en el subdirectorio en el *UpdateConsentDialog* directorio de arranque.
 
@@ -241,7 +241,7 @@ Puede configurar las aplicaciones ClickOnce se actualizan automáticamente cuand
 4. Seleccione **actualizar cuadro de diálogo de consentimiento**.
 
     > [!NOTE]
-    >  Es posible que deba cerrar y volver a abrir Visual Studio para ver el cuadro de diálogo de consentimiento Update en el cuadro de diálogo requisitos previos.
+    > Es posible que deba cerrar y volver a abrir Visual Studio para ver el cuadro de diálogo de consentimiento Update en el cuadro de diálogo requisitos previos.
 
 5. Haga clic en **Aceptar**.
 

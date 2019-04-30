@@ -11,12 +11,12 @@ ms.assetid: 8e16c381-03c8-404e-92ef-3614cdf3150a
 caps.latest.revision: 53
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: cc12854574f21c1d75f57bae592d6a504db9b189
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9099bc79a555f908ddda12dc9da83f015791fd86
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087578"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444827"
 ---
 # <a name="adding-a-tool-window"></a>Adición de una ventana de herramientas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ En este tutorial aprenderá a crear una ventana de herramientas e integrarla en 
 1. Cree un proyecto denominado **FirstToolWin** con la plantilla VSIX y agrega una plantilla de elemento de ventana de herramienta personalizada denominada **FirstToolWindow**.  
   
     > [!NOTE]
-    >  Para obtener más información acerca de cómo crear una extensión con una ventana de herramientas, consulte [crear una extensión con una ventana de herramientas](../extensibility/creating-an-extension-with-a-tool-window.md).  
+    > Para obtener más información acerca de cómo crear una extensión con una ventana de herramientas, consulte [crear una extensión con una ventana de herramientas](../extensibility/creating-an-extension-with-a-tool-window.md).  
   
 ## <a name="add-a-control-to-the-tool-window"></a>Agregar un Control a la ventana de herramientas  
   
@@ -264,7 +264,7 @@ public System.Windows.Controls.MediaElement MediaPlayer
      El primer parámetro con nombre es `Style` y su valor es `Tabbed`, lo que significa que la ventana será una pestaña en una ventana existente. La posición de acoplamiento especificada por el `Window` parámetro, n este caso, el GUID de la **el Explorador de soluciones**.  
   
     > [!NOTE]
-    >  Para obtener más información sobre los tipos de ventanas en el IDE, vea <xref:EnvDTE.vsWindowType>.  
+    > Para obtener más información sobre los tipos de ventanas en el IDE, vea <xref:EnvDTE.vsWindowType>.  
   
 ## <a name="testing-the-tool-window"></a>Las pruebas de la ventana de herramientas  
   

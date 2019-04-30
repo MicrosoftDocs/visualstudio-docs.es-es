@@ -1,5 +1,5 @@
 ---
-title: Filtrar Permitir que el código se ejecute detrás de documentos con permisos restringidos
+title: Procedimiento Permitir que el código se ejecute detrás de documentos con permisos restringidos
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: be5afe96af1baa615e5000a6c1a19b543f3c89c5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: a5e65c086b69a712b2df5a1a12939b41828ad198
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637664"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445333"
 ---
 # <a name="how-to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>Procedimiento Permitir que el código se ejecute detrás de documentos con permisos restringidos
   Puede usar la característica Information Rights Management (IRM) de Microsoft Office para restringir permisos a un documento o libro. De forma predeterminada, el código detrás de un documento restringido de Microsoft Office Word o un libro de Microsoft Office Excel no se permite ejecutar. Puede cambiar el valor predeterminado para que sus extensiones de código administrado pueden obtener acceso al modelo de objeto y la solución funcionará.
@@ -38,7 +38,7 @@ ms.locfileid: "56637664"
 2. Haga clic en el **archivo** pestaña, seleccione **preparar**, apunte a **restringir permisos**y, a continuación, haga clic en **acceso restringido**.
 
    > [!NOTE]
-   >  En el primer uso, deberá instalar al cliente de Windows Rights Management. Después de instalar al cliente, es posible que deba repetir los pasos.
+   > En el primer uso, deberá instalar al cliente de Windows Rights Management. Después de instalar al cliente, es posible que deba repetir los pasos.
 
 3. En el **permiso** cuadro de diálogo, seleccione **restringir permisos a este documento**y, a continuación, haga clic en **más opciones**.
 

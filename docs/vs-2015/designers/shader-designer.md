@@ -12,12 +12,12 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 67429131e87aa414957bf01847e03af44468d0ab
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 00b3a24e2e10672a2f25fdf42a3993f75c378c86
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116823"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432582"
 ---
 # <a name="shader-designer"></a>Diseñador de sombras
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,7 +84,7 @@ En este documento se describe cómo trabajar con el Diseñador de sombras de [!I
 |**Avanzadas**|Contiene comandos y opciones avanzados.<br /><br /> **Exportar**: Permite la exportación de un sombreador en varios formatos.<br /><br /> **Exportar como**: Exporta el sombreador como código fuente HLSL o como código de bytes del sombreador compilado. Para obtener más información sobre cómo exportar sombreadores, vea [Cómo: Exportar un sombreador](../designers/how-to-export-a-shader.md).<br /><br /> **Motores gráficos**: Permite la selección del representador que se usa para mostrar la superficie de diseño.<br /><br /> **Representar con D3D11**: Usa Direct3D 11 para representar la superficie de diseño de Diseñador de sombras.<br /><br /> **Representar con D3D11WARP**: Usa Windows Advanced Rasterization Platform (WARP) de Direct3D 11 para representar la superficie de diseño de Diseñador de sombras.<br /><br /> **Vista**: Permite seleccionar información adicional sobre Diseñador de sombras.<br /><br /> **Velocidad de fotogramas**: Cuando se habilita, muestra la velocidad de fotogramas actual en la esquina superior derecha de la superficie de diseño. La velocidad de fotogramas es el número de fotogramas dibujados por segundo.  Esta opción es útil cuando se habilita la opción **Modo de representación en tiempo real**.|  
   
 > [!TIP]
->  Puede hacer clic en el botón **Avanzadas** para volver a ejecutar el último comando.  
+> Puede hacer clic en el botón **Avanzadas** para volver a ejecutar el último comando.  
   
 ### <a name="working-with-nodes-and-connections"></a>Trabajar con nodos y conexiones  
  Use el modo **Seleccionar** para agregar, quitar, cambiar de posición, conectar y configurar los nodos. Aquí se muestra cómo realizar estas operaciones básicas:  

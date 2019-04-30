@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6f5b57b4246a7e047f64ca79c9a0021cbfc0766f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c7e8a28180270a5093bdeb59f45fde9e6838a6ba
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60058413"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434056"
 ---
 # <a name="step-2-run-your-program"></a>Paso 2: ejecución del programa
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ Barra de herramientas Depuración
     - Elija el botón X de la esquina superior derecha de la ventana **Form1**.  
   
     > [!NOTE]
-    >  Cuando se ejecuta un programa desde el IDE, se denomina *depuración*, ya que normalmente se hace para buscar y corregir errores del programa. Aunque este programa es pequeño y en realidad no hace nada todavía, es un programa real. Siga el mismo procedimiento para ejecutar y depurar otros programas. Para obtener más información sobre la depuración, vea [Debugger Basics](../debugger/debugger-basics.md) (Conceptos básicos del depurador).  
+    > Cuando se ejecuta un programa desde el IDE, se denomina *depuración*, ya que normalmente se hace para buscar y corregir errores del programa. Aunque este programa es pequeño y en realidad no hace nada todavía, es un programa real. Siga el mismo procedimiento para ejecutar y depurar otros programas. Para obtener más información sobre la depuración, vea [Debugger Basics](../debugger/debugger-basics.md) (Conceptos básicos del depurador).  
   
 ### <a name="to-continue-or-review"></a>Para continuar o revisar  
   

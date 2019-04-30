@@ -11,12 +11,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1c71becfb04115faefe88d5018c238ead38e4c88
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: c619ae6efd1de48319bf9c0398ee8ab4e3cd57ee
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58998839"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442953"
 ---
 # <a name="edit-uml-sequence-diagrams-by-using-the-uml-api"></a>Modificar diagramas de secuencia usando la API de UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,7 +75,7 @@ public class MySequenceDiagramCommand : ICommandExtension
  Existen dos tipos de diagramas de secuencia: aquellos que se crean manualmente en un proyecto de modelado de UML y aquellos que se generan desde el código del programa. Use la propiedad `UmlMode` para detectar de qué tipo de diagrama de secuencia dispone.  
   
 > [!NOTE]
->  Esta propiedad solo devuelve false con los diagramas de secuencia generados desde el código con Visual Studio 2013 y versiones anteriores. Esto incluye diagramas de secuencia generados por código y migrados desde VS 2013 y versiones anteriores. Esta versión de Visual Studio no admite la generación de nuevos diagramas de secuencia.  
+> Esta propiedad solo devuelve false con los diagramas de secuencia generados desde el código con Visual Studio 2013 y versiones anteriores. Esto incluye diagramas de secuencia generados por código y migrados desde VS 2013 y versiones anteriores. Esta versión de Visual Studio no admite la generación de nuevos diagramas de secuencia.  
   
  Por ejemplo, si desea crear un comando de menú que solo esté visible en diagramas de secuencia UML, el método `QueryStatus()` podría incluir la siguiente instrucción:  
   

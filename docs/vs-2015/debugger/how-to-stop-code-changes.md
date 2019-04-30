@@ -1,5 +1,5 @@
 ---
-title: Filtrar Detener cambios en el código | Documentos de Microsoft
+title: Procedimiento Detener cambios en el código | Documentos de Microsoft
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -20,20 +20,20 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ba3ee5d8ee04b4a0f2cd360d6b213c69c6f8d1bc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: cb1747341de65a5f642790410c35eee35620575e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58999245"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442715"
 ---
-# <a name="how-to-stop-code-changes"></a>Filtrar Detención de los cambios en el código
+# <a name="how-to-stop-code-changes"></a>Procedimiento Detención de los cambios en el código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Mientras Editar y continuar se encuentra en proceso de aplicar los cambios del código, puede detener la operación.  
   
 > [!CAUTION]
->  Detener los cambios de código en el código administrado puede dar lugar a resultados inesperados. La aplicación de cambios a código administrado suele ser un proceso rápido, por lo que normalmente no es necesario detener los cambios de código en el código administrado.  
+> Detener los cambios de código en el código administrado puede dar lugar a resultados inesperados. La aplicación de cambios a código administrado suele ser un proceso rápido, por lo que normalmente no es necesario detener los cambios de código en el código administrado.  
   
 ### <a name="to-stop-applying-code-changes"></a>Para detener la aplicación de los cambios en el código  
   

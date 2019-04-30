@@ -14,12 +14,12 @@ caps.latest.revision: 57
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 255843682034ab784f8271b2f454a60fdd4a77fa
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 373b5c8fd108e783123440820b38edf94a272a1d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096613"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440993"
 ---
 # <a name="layer-diagrams-guidelines"></a>Diagramas de capas: Instrucciones
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Describe la arquitectura de la aplicación en un nivel alto mediante la creació
  Los siguientes pasos proporcionan información general sobre cómo utilizar los diagramas de capas dentro del proceso de desarrollo. Las secciones posteriores de este tema describen cada paso con más detalle. Si está desarrollando un nuevo diseño, omita los pasos en los que se hace referencia al código existente.  
   
 > [!NOTE]
->  Estos pasos aparecen en un orden aproximado. Es probable que desee superponer las tareas, reorganizarlas para que se adapten a su situación particular y revisarlas al inicio de cada iteración del proyecto.  
+> Estos pasos aparecen en un orden aproximado. Es probable que desee superponer las tareas, reorganizarlas para que se adapten a su situación particular y revisarlas al inicio de cada iteración del proyecto.  
   
 1. [Crear un diagrama de capas](#Create) para toda la aplicación, o para una capa dentro de él.  
   
@@ -59,7 +59,7 @@ Describe la arquitectura de la aplicación en un nivel alto mediante la creació
  Los diagramas de capas deben crearse dentro de un proyecto de modelado. Se puede agregar un nuevo diagrama de capas a un proyecto de modelado ya existente, crear un nuevo proyecto de modelado para el diagrama de capas o bien copiar un diagrama de capas ya existente en el mismo proyecto de modelado.  
   
 > [!IMPORTANT]
->  No agregue, arrastre ni copie un diagrama de capas de un proyecto de modelado a otro, ni a otra ubicación de la solución. Un diagrama de capas que se copia de esta manera tendrá las mismas referencias que el diagrama original, incluso si se modifica. Esto impide que la validación de capas se haga correctamente y es posible que cause otros problemas, como la pérdida de elementos u otros errores al intentar abrir el diagrama.  
+> No agregue, arrastre ni copie un diagrama de capas de un proyecto de modelado a otro, ni a otra ubicación de la solución. Un diagrama de capas que se copia de esta manera tendrá las mismas referencias que el diagrama original, incluso si se modifica. Esto impide que la validación de capas se haga correctamente y es posible que cause otros problemas, como la pérdida de elementos u otros errores al intentar abrir el diagrama.  
   
  Consulte [crear diagramas de capas desde el código](../modeling/create-layer-diagrams-from-your-code.md).  
   
@@ -69,7 +69,7 @@ Describe la arquitectura de la aplicación en un nivel alto mediante la creació
  Como regla general, denomine las capas según su función, por ejemplo, "Presentación" o "Servicios." Si los artefactos tienen una estrecha interdependencia, colóquelos en la misma capa. Si los artefactos se pueden actualizar de forma independiente o usar en aplicaciones diferentes, sitúelos en capas distintas. Para obtener información sobre los patrones de capas, visite el sitio Patterns & Practices en [ http://go.microsoft.com/fwlink/?LinkId=145794 ](http://go.microsoft.com/fwlink/?LinkId=145794).  
   
 > [!TIP]
->  Existen ciertos tipos de artefactos que se pueden vincular a capas, pero que no admiten la validación con el diagrama de capas. Para ver si el artefacto admite la validación, abra **Explorador de capas** para examinar el **Supports Validation** propiedad del vínculo de artefacto. Consulte [detectar las dependencias existentes entre capas](#Generate).  
+> Existen ciertos tipos de artefactos que se pueden vincular a capas, pero que no admiten la validación con el diagrama de capas. Para ver si el artefacto admite la validación, abra **Explorador de capas** para examinar el **Supports Validation** propiedad del vínculo de artefacto. Consulte [detectar las dependencias existentes entre capas](#Generate).  
   
  Al actualizar una aplicación desconocida, también puede crear mapas de código. Estos diagramas pueden ayudarle a detectar patrones y dependencias mientras explora el código. También puede usar el Explorador de soluciones para examinar los espacios de nombres y las clases, que suelen corresponderse con las capas existentes. Asigne estos artefactos de código a las capas arrastrándolos desde el Explorador de soluciones hasta los diagramas de capas. Después, puede usar diagramas de capas, que le ayudarán a actualizar el código y mantener la coherencia con el diseño.  
   
@@ -85,7 +85,7 @@ Describe la arquitectura de la aplicación en un nivel alto mediante la creació
  Una dependencia existe cuando un artefacto que está asociado a una capa tiene una referencia a un artefacto que está asociado a otra capa. Por ejemplo, una clase de una capa declara una variable que tiene una clase en otra capa. Puede detectar las dependencias existentes aplicándoles técnicas de ingeniería inversa.  
   
 > [!NOTE]
->  No se puede realizar ingeniería inversa en las dependencias de ciertos tipos de artefactos. Por ejemplo, no se va a realizar ingeniería inversa en ninguna dependencia que tenga como origen o destino una capa vinculada a un archivo de texto. Para ver qué artefactos tienen dependencias que puede realizar ingeniería inversa, haga clic en una o varias capas y, a continuación, haga clic en **ver vínculos**. En **Explorador de capas**, examine el **admite validación** columna. Las dependencias no será de ingeniería inversa para los artefactos para el que esta columna muestra **False**.  
+> No se puede realizar ingeniería inversa en las dependencias de ciertos tipos de artefactos. Por ejemplo, no se va a realizar ingeniería inversa en ninguna dependencia que tenga como origen o destino una capa vinculada a un archivo de texto. Para ver qué artefactos tienen dependencias que puede realizar ingeniería inversa, haga clic en una o varias capas y, a continuación, haga clic en **ver vínculos**. En **Explorador de capas**, examine el **admite validación** columna. Las dependencias no será de ingeniería inversa para los artefactos para el que esta columna muestra **False**.  
   
 #### <a name="to-reverse-engineer-existing-dependencies-between-layers"></a>Para realizar ingeniería inversa de las dependencias existentes entre capas  
   
@@ -155,7 +155,7 @@ Describe la arquitectura de la aplicación en un nivel alto mediante la creació
   Para resolver estos errores, actualice el código hasta no aparezcan más errores durante la validación. Normalmente, este es un proceso iterativo. Para obtener más información acerca de estos errores, vea [validar código con diagramas de capas](../modeling/validate-code-with-layer-diagrams.md).  
   
 > [!NOTE]
->  A medida que desarrolla o refactoriza el código, es posible que tenga nuevos artefactos que deba vincular al diagrama de capas. Sin embargo, esto podría no ser necesario, por ejemplo, si tiene capas que representan espacios de nombres existentes, y el nuevo código solo agrega más material a estos espacios de nombres.  
+> A medida que desarrolla o refactoriza el código, es posible que tenga nuevos artefactos que deba vincular al diagrama de capas. Sin embargo, esto podría no ser necesario, por ejemplo, si tiene capas que representan espacios de nombres existentes, y el nuevo código solo agrega más material a estos espacios de nombres.  
   
  Durante el proceso de desarrollo, puede que desee suprimir algunos de los conflictos notificados durante la validación. Por ejemplo, es posible que desee suprimir errores de los que ya se ha ocupado o que no son pertinentes para su escenario concreto. Cuando se suprime un error, conviene registrar un elemento de trabajo en [!INCLUDE[esprfound](../includes/esprfound-md.md)]. Para llevar a cabo esta tarea, vea [validar código con diagramas de capas](../modeling/validate-code-with-layer-diagrams.md).  
   

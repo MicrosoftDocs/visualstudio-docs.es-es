@@ -21,12 +21,12 @@ caps.latest.revision: 86
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 157e605ae16167317e02e92070d859870b4709cf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0dafd91a832fd4098fb19a26750310135723216f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060156"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442976"
 ---
 # <a name="edit-uml-models-and-diagrams"></a>Editar modelos y diagramas UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,7 +81,7 @@ Puede crear y modificar un modelo UML a través de las vistas proporcionadas por
 3. En **agregar a proyecto de modelado**, seleccione un proyecto de modelado existente o seleccione **crear un nuevo proyecto de modelado**.  
   
    > [!NOTE]
-   >  Los diagramas de modelado solo pueden existir dentro de un proyecto de modelado.  
+   > Los diagramas de modelado solo pueden existir dentro de un proyecto de modelado.  
   
    También puede agregar un diagrama a un proyecto de modelado existente en el Explorador de soluciones. Haga clic en el proyecto de modelado, elija **agregar**y, a continuación, haga clic en **nuevo elemento**.  
   
@@ -97,7 +97,7 @@ Puede crear y modificar un modelo UML a través de las vistas proporcionadas por
  Hay dos tipos de herramientas: una para los elementos y otra para las relaciones. Por ejemplo, en el diagrama de clases UML del cuadro de herramientas, **clase** es una herramienta de elemento, y **asociación** es una herramienta de relación.  
   
 > [!NOTE]
->  Si desea obtener información específica para determinados tipos de diagramas, vea [crear modelos para la aplicación](../modeling/create-models-for-your-app.md).  
+> Si desea obtener información específica para determinados tipos de diagramas, vea [crear modelos para la aplicación](../modeling/create-models-for-your-app.md).  
   
 #### <a name="to-create-elements-and-relationships-in-a-uml-modeling-diagram"></a>Para crear elementos y relaciones en un diagrama de modelado UML  
   
@@ -106,14 +106,14 @@ Puede crear y modificar un modelo UML a través de las vistas proporcionadas por
     En algunos casos, puede colocar un nuevo elemento dentro de otro elemento. Por ejemplo, en un diagrama de clases UML, puede colocar una clase dentro de un paquete.  
   
    > [!NOTE]
-   >  Si no ve el cuadro de herramientas, haga clic en **cuadro de herramientas** en el **vista** menú.  
+   > Si no ve el cuadro de herramientas, haga clic en **cuadro de herramientas** en el **vista** menú.  
   
 2. Para crear una relación, haga clic en una herramienta de relación, haga clic en el elemento donde desea que inicie la relación y, a continuación, haga clic en el elemento donde desea que finalice.  
   
     Distintos tipos de relaciones pueden iniciar o finalizar en distintos tipos de elementos. Por ejemplo, en un diagrama de clases UML, una relación de asociación no puede iniciar o finalizar en un elemento de comentario.  
   
    > [!NOTE]
-   >  Para usar la misma herramienta varias veces, haga doble clic en la herramienta. Cuando haya terminado, haga clic en el **puntero** herramienta.  
+   > Para usar la misma herramienta varias veces, haga doble clic en la herramienta. Cuando haya terminado, haga clic en el **puntero** herramienta.  
   
    En algunos tipos de diagramas, también puede dibujar formas simples. Estas formas no son parte del modelo, pero puede usarlas para llamar la atención sobre los elementos del diagrama o para dividirlo en áreas diferentes.  
   
@@ -121,14 +121,14 @@ Puede crear y modificar un modelo UML a través de las vistas proporcionadas por
  Al cambiar el tamaño o color de una forma o reenrutar un conector, no hay ningún efecto en el modelo subyacente. Sin embargo, cuando al cambiar el nombre de una forma en el diagrama o en el Explorador de modelos UML, se cambia el nombre del elemento correspondiente en el Explorador de modelos UML y en cualquier otro diagrama que presente ese elemento.  
   
 > [!NOTE]
->  Hay una forma sencilla de crear nuevos elementos de cuadro de herramientas desde los que puede crear grupos de elementos o elementos con su propia elección de propiedades. Para obtener más información, consulte [definir personalizado en un elemento de cuadro de herramientas de modelado](../modeling/define-a-custom-modeling-toolbox-item.md).  
+> Hay una forma sencilla de crear nuevos elementos de cuadro de herramientas desde los que puede crear grupos de elementos o elementos con su propia elección de propiedades. Para obtener más información, consulte [definir personalizado en un elemento de cuadro de herramientas de modelado](../modeling/define-a-custom-modeling-toolbox-item.md).  
   
  En la siguiente ilustración se muestra cómo cambiar el tamaño de una forma o su nombre.  
   
  ![Ajustar un elemento de modelo](../modeling/media/uml-drawadjust1.png "UML_DrawAdjust1")  
   
 > [!TIP]
->  Los comandos integrados no incluyen un comando para alinear las formas perfectamente. Sin embargo, puede crear fácilmente su propio comando de alineación copiando el código en el ejemplo de [mostrar un modelo UML en diagramas](../modeling/display-a-uml-model-on-diagrams.md).  
+> Los comandos integrados no incluyen un comando para alinear las formas perfectamente. Sin embargo, puede crear fácilmente su propio comando de alineación copiando el código en el ejemplo de [mostrar un modelo UML en diagramas](../modeling/display-a-uml-model-on-diagrams.md).  
   
  En la siguiente ilustración se muestra cómo ajustar la ruta y la posición de un conector o de sus etiquetas.  
   
@@ -178,12 +178,12 @@ Puede crear y modificar un modelo UML a través de las vistas proporcionadas por
      En el **editar** menú, elija **buscar y reemplazar**y, a continuación, haga clic en **búsqueda rápida**.  
   
     > [!NOTE]
-    >  En el **buscar y reemplazar** cuadro de diálogo, debe dejar el **buscar en** campo establecido en **documento actual**. No se admiten las demás opciones.  
+    > En el **buscar y reemplazar** cuadro de diálogo, debe dejar el **buscar en** campo establecido en **documento actual**. No se admiten las demás opciones.  
   
 2. Escriba el texto que desea buscar y, a continuación, haga clic en **Buscar siguiente**.  
   
     > [!NOTE]
-    >  Si el texto que desea buscar está dentro de una forma contraída, la forma aparecerá resaltada. Expanda la forma y, a continuación, haga clic en **Buscar siguiente** nuevo.  
+    > Si el texto que desea buscar está dentro de una forma contraída, la forma aparecerá resaltada. Expanda la forma y, a continuación, haga clic en **Buscar siguiente** nuevo.  
   
 ## <a name="Undo"></a> Deshacer cambios en el modelo  
  Puede deshacer y rehacer los cambios realizados en el modelo y diagramas usando la **deshacer** y **rehacer** comandos en el **editar** menú.  
@@ -216,7 +216,7 @@ Puede crear y modificar un modelo UML a través de las vistas proporcionadas por
      Aparece una forma que proporciona una vista del elemento del modelo, además de las vistas en otros diagramas o en el mismo diagrama.  
   
     > [!NOTE]
-    >  El efecto es diferente cuando arrastra una clase o un componente a un diagrama de secuencia. En ese caso, se crea una nueva línea de vida cuyo tipo sea esa clase o componente. Para obtener más información, consulte [diagramas de secuencia UML: Directrices](../modeling/uml-sequence-diagrams-guidelines.md).  
+    > El efecto es diferente cuando arrastra una clase o un componente a un diagrama de secuencia. En ese caso, se crea una nueva línea de vida cuyo tipo sea esa clase o componente. Para obtener más información, consulte [diagramas de secuencia UML: Directrices](../modeling/uml-sequence-diagrams-guidelines.md).  
   
 #### <a name="to-add-a-new-view-of-a-model-element-by-using-paste-reference"></a>Para agregar una nueva vista de un elemento de modelo mediante Pegar referencia  
   
@@ -229,23 +229,23 @@ Puede crear y modificar un modelo UML a través de las vistas proporcionadas por
      Aparecerá otra vista del mismo elemento.  
   
     > [!NOTE]
-    >  Esto difiere de la **pegar** comando, que crea un nuevo elemento en el modelo. Para obtener más información, consulte [copiar elementos y grupos de elementos relacionados](#Copying).  
+    > Esto difiere de la **pegar** comando, que crea un nuevo elemento en el modelo. Para obtener más información, consulte [copiar elementos y grupos de elementos relacionados](#Copying).  
   
 > [!NOTE]
->  Si agrega a un diagrama vistas de dos elementos de modelo que ya están conectados por una relación, también aparecerá una vista de la relación en el diagrama. Para eliminar esta vista, simplemente quite uno de los elementos del diagrama o elimine la relación del modelo.  
+> Si agrega a un diagrama vistas de dos elementos de modelo que ya están conectados por una relación, también aparecerá una vista de la relación en el diagrama. Para eliminar esta vista, simplemente quite uno de los elementos del diagrama o elimine la relación del modelo.  
   
 ## <a name="Copying"></a> Copiar elementos y grupos de elementos relacionados  
  Puede copiar y pegar elementos del modelo, y puede copiar y pegar grupos de elementos junto con las relaciones entre ellos.  
   
 > [!NOTE]
->  El **pegar** y **Pegar referencia** comandos tienen efectos diferentes. **Pegar** crea nuevos elementos cuyas propiedades son similares a las de los elementos copiados. **Pegar referencia** crea nuevas vistas de los mismos elementos.  
+> El **pegar** y **Pegar referencia** comandos tienen efectos diferentes. **Pegar** crea nuevos elementos cuyas propiedades son similares a las de los elementos copiados. **Pegar referencia** crea nuevas vistas de los mismos elementos.  
   
 #### <a name="to-copy-elements-and-their-relationships"></a>Para copiar elementos y sus relaciones  
   
 1. En el diagrama con los elementos que desea copiar, seleccione uno o varios elementos.  
   
     > [!NOTE]
-    >  No puede copiar relaciones, excepto como parte de un grupo de elementos.  
+    > No puede copiar relaciones, excepto como parte de un grupo de elementos.  
   
 2. En el **editar** menú, haga clic en **copia**.  
   
@@ -260,7 +260,7 @@ Puede crear y modificar un modelo UML a través de las vistas proporcionadas por
 5. Ajuste las posiciones, los nombres y otras propiedades de los nuevos elementos y relaciones.  
   
 > [!NOTE]
->  No puede copiar un elemento de modelo de un modelo a otro, por ejemplo, si tiene dos modelos en la misma solución. Pero puede copiar elementos de un diagrama a otro.  
+> No puede copiar un elemento de modelo de un modelo a otro, por ejemplo, si tiene dos modelos en la misma solución. Pero puede copiar elementos de un diagrama a otro.  
   
 #### <a name="to-copy-an-entire-diagram"></a>Para copiar un diagrama completo  
   
@@ -276,7 +276,7 @@ Puede crear y modificar un modelo UML a través de las vistas proporcionadas por
  Por el contrario, cuando se elimina una relación de un diagrama, siempre se elimina del modelo.  
   
 > [!NOTE]
->  Ciertos tipos de elementos en un diagrama UML tienen etiquetas. Al seleccionar estos elementos dibujando un rectángulo en torno a ellos, es posible seleccionar las etiquetas, pero no los elementos que poseen esas etiquetas. No es posible eliminar un subconjunto de los elementos seleccionados de esta manera. Para seleccionar un subconjunto de estos elementos, mantenga presionada la **CTRL** mientras hace clic en cada elemento de la clave.  
+> Ciertos tipos de elementos en un diagrama UML tienen etiquetas. Al seleccionar estos elementos dibujando un rectángulo en torno a ellos, es posible seleccionar las etiquetas, pero no los elementos que poseen esas etiquetas. No es posible eliminar un subconjunto de los elementos seleccionados de esta manera. Para seleccionar un subconjunto de estos elementos, mantenga presionada la **CTRL** mientras hace clic en cada elemento de la clave.  
   
 #### <a name="to-remove-a-classifiers-view-from-a-diagram"></a>Para quitar una vista de clasificador de un diagrama  
   
@@ -303,7 +303,7 @@ Puede crear y modificar un modelo UML a través de las vistas proporcionadas por
 - Haga clic en la relación en un diagrama o en **Explorador de modelos UML**y, a continuación, haga clic en **eliminar del modelo**.  
   
     > [!CAUTION]
-    >  No se puede quitar una relación de un diagrama sin quitarla del modelo.  
+    > No se puede quitar una relación de un diagrama sin quitarla del modelo.  
   
      La relación se elimina del modelo y se elimina de todos los diagramas en los que aparece.  
   

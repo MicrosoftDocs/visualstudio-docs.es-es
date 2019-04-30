@@ -12,12 +12,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5c6743f7466f1b6d2e17c1dbf9da523c87e63e77
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0beb86e3cb939a33a6b0fab3922b2a31a88a3307
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060324"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439255"
 ---
 # <a name="how-to-change-text-case-in-the-editor"></a>Procedimiento Cambiar mayúsculas y minúsculas en el Editor de texto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "60060324"
 Puede usar comandos de menú o métodos abreviados de teclado para convertir las mayúsculas y minúsculas del texto seleccionado todas a mayúsculas o todas a minúsculas.  
   
 > [!NOTE]
->  Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la **Ayuda**, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la **Ayuda**, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="procedure"></a>Procedimiento  
   
@@ -42,7 +42,7 @@ Puede usar comandos de menú o métodos abreviados de teclado para convertir las
      Para convertir todo el texto a minúsculas, pulse **Poner en minúsculas**, o presione **CTRL**+**U**.  
   
     > [!TIP]
-    >  Para volver al formato de mayúsculas y minúsculas anterior a este cambio, seleccione **Deshacer** desde el menú **Edición**.  
+    > Para volver al formato de mayúsculas y minúsculas anterior a este cambio, seleccione **Deshacer** desde el menú **Edición**.  
   
 ## <a name="see-also"></a>Vea también  
  [Personalizar el editor](../ide/customizing-the-editor.md)   

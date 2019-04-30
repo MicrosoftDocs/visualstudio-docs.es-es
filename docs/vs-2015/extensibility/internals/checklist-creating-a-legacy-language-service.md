@@ -11,12 +11,12 @@ ms.assetid: 8b73b341-a33a-4ab5-9390-178c9e563d2d
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3df1a4e61859aee4b27dccf5360e0ae99ad5aa8b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3b79afe64aafac473d4fe5d22464998d0c2f0537
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077529"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437612"
 ---
 # <a name="checklist-creating-a-legacy-language-service"></a>Lista de comprobación: Creación de un servicio de lenguaje heredado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ La siguiente lista de comprobación resume los pasos básicos que debe seguir pa
     Los comandos que deben controlarse dependen de los servicios que se proporcionan. Para obtener más información, consulte [comandos importantes para los filtros de servicio de lenguaje](../../extensibility/internals/important-commands-for-language-service-filters.md).  
   
   > [!NOTE]
-  >  El <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter> interfaz debe implementarse en el mismo objeto que el <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfaz.  
+  > El <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter> interfaz debe implementarse en el mismo objeto que el <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfaz.  
   
 - Instrucciones completadas  
   

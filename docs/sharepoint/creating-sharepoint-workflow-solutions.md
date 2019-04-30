@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 756b1b1171c18fe435d318d5fb4bccf278aecc58
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
-ms.translationtype: MT
+ms.openlocfilehash: d78d82a51f88bfaf076b56692629e801689e103e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54874073"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443533"
 ---
 # <a name="create-sharepoint-workflow-solutions"></a>Crear soluciones de flujo de trabajo de SharePoint
 
@@ -57,7 +57,7 @@ Para obtener más información acerca de SharePoint, vea [Microsoft SharePoint P
  Después de crear el flujo de trabajo, puede modificar sus propiedades en la ventana Propiedades. Aunque la mayoría de las propiedades de flujo de trabajo se puede cambiar directamente en la ventana Propiedades, algunas requieren que haga clic en el botón de puntos suspensivos (![elipse del Diseñador de ASP.NET Mobile](../sharepoint/media/mwellipsis.gif "elipse del Diseñador de ASP.NET Mobile")) para cambiar sus valores. Este botón se reinicia el **Asistente de personalización de SharePoint**. Después de realizar la propiedad cambia el valor, elija el **finalizar** botón Finalizar de ellos.
 
 > [!NOTE]
->  El **tipo flujo de trabajo** propiedad es de solo lectura y no se puede cambiar. Si desea cambiar el tipo de flujo de trabajo, debe crear otro flujo de trabajo.
+> El **tipo flujo de trabajo** propiedad es de solo lectura y no se puede cambiar. Si desea cambiar el tipo de flujo de trabajo, debe crear otro flujo de trabajo.
 
 ## <a name="design-a-sharepoint-workflow"></a>Diseñar un flujo de trabajo de SharePoint
  Después de definir todos los pasos en el proceso empresarial, utilice el [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Diseñador de flujo de trabajo para diseñar el flujo de trabajo de SharePoint. Para abrir el diseñador, haga doble clic en Workflow1.cs o Workflow1.vb en **el Explorador de soluciones**, o abra el menú contextual de cualquiera de esos archivos y, a continuación, elija **abrir**.

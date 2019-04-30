@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 77fb772588b41460ddd68ae0a20b4593d1fda628
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 77c0a76ae326621ed00a523d8cf484b9aecb53c4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091036"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445190"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Cómo: Definir lenguajes específicos de dominio
 Para definir un lenguaje específico de dominio (DSL), crea una solución de Visual Studio desde una plantilla. La parte clave de la solución es el diagrama DSL Definition (Definición de DSL), que se almacena en DslDefinition.dsl. DSL Definition (Definición de DSL) define las clases y las formas del DSL. Después de modificar y agregar estos elementos, puede agregar código de programa para personalizar el DSL con más detalle.
@@ -106,7 +106,7 @@ Para crear un nuevo lenguaje específico de dominio, cree una nueva solución de
  Cierre la instancia experimental de Visual Studio.
 
 > [!NOTE]
->  Cuando haya modificado el DSL, ya no podrá ver las formas en el archivo de prueba Sample. Sin embargo, podrá crear nuevos elementos.
+> Cuando haya modificado el DSL, ya no podrá ver las formas en el archivo de prueba Sample. Sin embargo, podrá crear nuevos elementos.
 
 ### <a name="modifying-the-template-dsl"></a>Modificar la plantilla de DSL
  Cambie el nombre y conserve algunas o todas las clases de dominio y clases de forma en la plantilla de definición de DSL. Los nuevos nombres de clase deben ser nombres CLR válidos, sin espacios ni puntuación.
@@ -135,7 +135,7 @@ Para crear un nuevo lenguaje específico de dominio, cree una nueva solución de
   En las secciones siguientes se describe cómo construir los tipos de características DSL más útiles. Hay muchos otros patrones con los que se puede construir un DSL, pero estos son los que se usan con más frecuencia.
 
 > [!NOTE]
->  Después de agregar una característica, no olvide hacer clic en **Transformar todas las plantillas** en la barra de herramientas del explorador de soluciones antes de compilar y ejecutar su DSL.
+> Después de agregar una característica, no olvide hacer clic en **Transformar todas las plantillas** en la barra de herramientas del explorador de soluciones antes de compilar y ejecutar su DSL.
 
  La figura siguiente muestra las clases y relaciones que forman parte del DSL y que se usan como ejemplo en este tema.
 
@@ -146,7 +146,7 @@ Para crear un nuevo lenguaje específico de dominio, cree una nueva solución de
  ![Modelo de instancia de DSL generado](../modeling/media/music_instance.png)
 
 > [!NOTE]
->  Con "modelo" nos referimos a una instancia de su DSL que los usuarios crean y que normalmente se muestra como un diagrama. En este tema se explican tanto el diagrama DSL Definition (Definición de DSL) como los diagramas de modelo que aparecen cuando se usa su DSL.
+> Con "modelo" nos referimos a una instancia de su DSL que los usuarios crean y que normalmente se muestra como un diagrama. En este tema se explican tanto el diagrama DSL Definition (Definición de DSL) como los diagramas de modelo que aparecen cuando se usa su DSL.
 
 ## <a name="classes"></a> Definir clases de dominio
  Las clases de dominio representan los conceptos de su DSL. Las instancias son *elementos del modelo*. Por ejemplo, en un **MusicLibrary** DSL podría tener las clases de dominio **álbum** y **canción**.
@@ -183,7 +183,7 @@ Para crear un nuevo lenguaje específico de dominio, cree una nueva solución de
  Para obtener más información, consulte [las propiedades de las relaciones de dominio](../modeling/properties-of-domain-relationships.md) y [las propiedades de los Roles de dominio](../modeling/properties-of-domain-roles.md).
 
 > [!NOTE]
->  Incrustación no es lo mismo que herencia. En una relación de incrustación, las clases secundarias no heredan las características de sus primarias.
+> Incrustación no es lo mismo que herencia. En una relación de incrustación, las clases secundarias no heredan las características de sus primarias.
 
 ### <a name="add-domain-properties-to-each-domain-class"></a>Agregar propiedades de dominio a cada clase de dominio
  Las propiedades de dominio almacenan valores. Algunos ejemplos son: Name, Title, Publication Date.
@@ -294,7 +294,7 @@ Para crear un nuevo lenguaje específico de dominio, cree una nueva solución de
    2. Haga clic en el nodo bajo **Toolbox Tabs** que tiene el mismo nombre que su DSL, por ejemplo, MusicLibrary. Haga clic en **Agregar herramienta de elemento**.
 
        > [!NOTE]
-       >  Si hace doble clic en el **herramientas** nodo, no verá **Agregar herramienta de elemento**. En su lugar, haga clic en el nodo situado encima de él.
+       > Si hace doble clic en el **herramientas** nodo, no verá **Agregar herramienta de elemento**. En su lugar, haga clic en el nodo situado encima de él.
 
    3. En la ventana Propiedades con la nueva herramienta de elemento seleccionada, establezca **clase** a la clase de dominio que ha agregado recientemente.
 
@@ -462,7 +462,7 @@ Para crear un nuevo lenguaje específico de dominio, cree una nueva solución de
          En **propiedad Display**, seleccione la propiedad que se debe mostrar en la lista. En el ejemplo, es Title.
 
 > [!NOTE]
->  Use los campos Path (Ruta de acceso) del Decorator Map (Asignación de elemento Decorator) y los campos de Compartment Maps (Asignaciones de compartimientos) para crear relaciones más complejas entre las clases de dominio y la forma de compartimiento.
+> Use los campos Path (Ruta de acceso) del Decorator Map (Asignación de elemento Decorator) y los campos de Compartment Maps (Asignaciones de compartimientos) para crear relaciones más complejas entre las clases de dominio y la forma de compartimiento.
 
 #### <a name="to-define-a-tool-for-creating-the-shape"></a>Para definir una herramienta para crear la forma
 
@@ -473,7 +473,7 @@ Para crear un nuevo lenguaje específico de dominio, cree una nueva solución de
 3. Haga clic en el nodo bajo **Toolbox Tabs** que tiene el mismo nombre que su DSL, por ejemplo, MusicLibrary. Haga clic en **Agregar herramienta de elemento**.
 
     > [!NOTE]
-    >  Si hace doble clic en el **herramientas** nodo, no verá **Agregar herramienta de elemento**. En su lugar, haga clic en el nodo situado encima de él.
+    > Si hace doble clic en el **herramientas** nodo, no verá **Agregar herramienta de elemento**. En su lugar, haga clic en el nodo situado encima de él.
 
 4. En la ventana Propiedades con la nueva herramienta de elemento seleccionada, establezca **clase** a la clase de dominio que ha agregado recientemente.
 

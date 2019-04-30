@@ -14,12 +14,12 @@ ms.assetid: d2620e71-be9e-44c9-b5b7-03a4c8d9cf0b
 caps.latest.revision: 36
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 59ecd079b7e95d86ab85eb9e5e36fcf938f99f58
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 0309019cc36e9f81596061dbbede0f84b0b78a05
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58997058"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403581"
 ---
 # <a name="visual-studio-isolated-shell"></a>Visual Studio Shell (aislado)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,10 +31,10 @@ El shell aislado de Visual Studio le permite crear aplicaciones independientes q
  Para crear una aplicación de shell aislado, comience con un proyecto de Visual Studio Shell aislado. Este proyecto contiene todo lo que necesita para desarrollar y probar su propia aplicación de shell aislado. Cuando esté listo para escribir el programa de instalación que implemente la aplicación, debe obtener el paquete redistribuible de shell aislado de [paquete redistribuible de Microsoft Visual Studio Shell (aislado)](http://go.microsoft.com/fwlink/?LinkId=616022).  
   
 > [!NOTE]
->  Para tener acceso el paquete redistribuible de shell aislado, se le pedirá que rellene una breve encuesta de cliente.  Después de completar la encuesta, se le dirigirá a una página de Visual Studio Connect con vínculos de descarga del paquete redistribuible.  Puede encontrar los vínculos de descarga en visitas posteriores al sitio de Visual Studio Connect en el **programas &#124; VISUAL STUDIO 2015 integrado y aislado SHELL** ficha.  
+> Para tener acceso el paquete redistribuible de shell aislado, se le pedirá que rellene una breve encuesta de cliente.  Después de completar la encuesta, se le dirigirá a una página de Visual Studio Connect con vínculos de descarga del paquete redistribuible.  Puede encontrar los vínculos de descarga en visitas posteriores al sitio de Visual Studio Connect en el **programas &#124; VISUAL STUDIO 2015 integrado y aislado SHELL** ficha.  
   
 > [!NOTE]
->  Para obtener más información sobre cómo implementar una aplicación basada en shell aislada, consulte [Tutorial: Creando un Basic aislado la aplicación de Shell](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
+> Para obtener más información sobre cómo implementar una aplicación basada en shell aislada, consulte [Tutorial: Creando un Basic aislado la aplicación de Shell](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
   
 ## <a name="working-with-the-isolated-shell"></a>Trabajar con el shell aislado  
  Una aplicación de shell aislado de Visual Studio tiene acceso completo a los servicios de Visual Studio y admite la personalización de marca y personalización especial. Hay varias maneras de personalizar una aplicación de shell aislado:  

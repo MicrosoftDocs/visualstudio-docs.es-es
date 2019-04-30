@@ -9,18 +9,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 310a12b51987d9a324be24757ba3346b8b0303ee
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.openlocfilehash: 23bac93b6e5892e8a4d4680e6829240fed9a03d8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927859"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443132"
 ---
 # <a name="properties-of-domain-properties"></a>Propiedades de las propiedades de dominio
 Un *la propiedad de dominio* es una característica de un elemento de modelo que puede contener un valor. Por ejemplo, la clase de dominio `Person` podría tener las propiedades `Name` y `BirthDate`. En la definición de DSL, las propiedades de dominio se enumeran en el cuadro de clases de dominio en el diagrama, y en la clase de dominio en DSL Explorer (Explorador de DSL). Para obtener más información, consulte [cómo definir lenguajes específicos de dominio](../modeling/how-to-define-a-domain-specific-language.md).
 
 > [!NOTE]
->  La palabra "propiedad" tiene dos usos. Un *la propiedad de dominio* es una característica que se define en una clase de dominio. En cambio, tienen muchos elementos de un DSL *propiedades*, que se enumeran en la **propiedades** ventana en la definición de DSL. Por ejemplo, todas las propiedades de dominio tienen un conjunto de características, que se describen en este tema.
+> La palabra "propiedad" tiene dos usos. Un *la propiedad de dominio* es una característica que se define en una clase de dominio. En cambio, tienen muchos elementos de un DSL *propiedades*, que se enumeran en la **propiedades** ventana en la definición de DSL. Por ejemplo, todas las propiedades de dominio tienen un conjunto de características, que se describen en este tema.
 
  En tiempo de ejecución, cuando un usuario crea instancias de la clase de dominio, los valores de las propiedades de dominio se pueden ver en la ventana Properties (Propiedades), y se pueden mostrar en las formas.
 
@@ -32,7 +32,7 @@ Un *la propiedad de dominio* es una característica de un elemento de modelo que
 
   Cuando selecciona una propiedad de dominio en un diagrama o en DSL Explorer (Explorador de DSL), puede ver los siguientes elementos en la ventana Properties (Propiedades). Para obtener más información sobre cómo usar estos elementos, vea [personalizar y ampliar lenguajes específicos de dominio](../modeling/customizing-and-extending-a-domain-specific-language.md).
 
-|Property|Descripción|Valor predeterminado|
+|Propiedad|Descripción|Valor predeterminado|
 |-|-|-|
 |**Descripción**|La descripción que se usa para documentar la interfaz de usuario del diseñador generado.|\<none>|
 |**Nombre para mostrar**|Nombre que se mostrará en el diseñador generado para esta propiedad de dominio. Puede contener espacios y puntuación, por ejemplo "Título de la canción".|\<none>|

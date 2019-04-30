@@ -17,12 +17,12 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c2d8ecd09487248b4c4be05b354133c710febf30
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cfc486401792afc7d2c6295cacca843aa6c5b11b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076203"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445026"
 ---
 # <a name="securing-clickonce-applications"></a>Proteger las aplicaciones ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,7 +74,7 @@ Las aplicaciones[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] están su
  No debe pasar nunca argumentos recuperados a través de una cadena de consulta a una base de datos o a la línea de comandos sin antes comprobar los argumentos para garantizar que sean seguros. No son seguros los argumentos que incluyen caracteres de escape de línea de comandos o base de datos que pueden permitir a un usuario malintencionado manipular la aplicación mediante la ejecución de comandos arbitrarios.  
   
 > [!NOTE]
->  Los argumentos de la cadena de consulta constituyen la única forma de pasar argumentos a una aplicación [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] cuando se inicia. No se pueden pasar argumentos a una aplicación [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] desde la línea de comandos.  
+> Los argumentos de la cadena de consulta constituyen la única forma de pasar argumentos a una aplicación [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] cuando se inicia. No se pueden pasar argumentos a una aplicación [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] desde la línea de comandos.  
   
 ## <a name="deploying-obfuscated-assemblies"></a>Implementar ensamblados protegidos  
  Es posible que desee proteger su aplicación mediante Dotfuscator para impedir el uso de técnicas de ingeniería inversa en el código por parte de otras personas. Sin embargo, la protección de ensamblados no está integrada en el IDE de Visual Studio ni en el proceso de implementación ClickOnce. Por lo tanto, tendrá que encargarse de la protección fuera del proceso de implementación, posiblemente utilizando un paso posterior a la compilación. Una vez compilado el proyecto, tendría que llevar a cabo los siguientes pasos manualmente, fuera de Visual Studio:  

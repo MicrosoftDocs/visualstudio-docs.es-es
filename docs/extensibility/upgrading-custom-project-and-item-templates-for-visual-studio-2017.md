@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 7c50bb7bf6c61a8061b3817c53027a3dd6e5b29f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cb4defa206d176e57804e6d2473262568cd5edbf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102632"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434216"
 ---
 # <a name="upgrade-custom-project-and-item-templates-for-visual-studio-2017"></a>Actualizar proyectos personalizados y plantillas de elemento para Visual Studio 2017
 
@@ -53,7 +53,7 @@ Para otras ubicaciones (no de usuario), debe incluir un archivo manifest(.vstman
     3. Vuelva a abrir Visual Studio. Debería encontrar una plantilla en la ubicación esperada.
 
     > [!NOTE]
-    >  Las plantillas de proyecto de extensibilidad de Visual Studio no están disponibles cuando la clave del registro está presente. Debe eliminar la clave del registro (y vuelva a ejecutar **devenv /installvstemplates**) para usarlos.
+    > Las plantillas de proyecto de extensibilidad de Visual Studio no están disponibles cuando la clave del registro está presente. Debe eliminar la clave del registro (y vuelva a ejecutar **devenv /installvstemplates**) para usarlos.
 
 ## <a name="other-recommendations-for-deploying-project-and-item-templates"></a>Otras recomendaciones para la implementación de plantillas de proyecto y elemento
 

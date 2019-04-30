@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 94e3ccc30507ccd7995c4d4fad548fe5ff425365
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 264b7cd4d60ebc963d794e0ca06fc16fd5edc7d7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094618"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445346"
 ---
 # <a name="how-to-manage-control-layout-on-actions-panes"></a>Procedimiento Administrar el diseño de controles en paneles de acciones
   Un panel de acciones se acopla a la derecha de un documento u hoja de cálculo de forma predeterminada; Sin embargo, se puede acoplar a la izquierda, superior o inferior. Si está utilizando varios controles de usuario, puede escribir código para apilar correctamente los controles de usuario en el panel de acciones. Para obtener más información, consulte [información general sobre el panel de acciones](../vsto/actions-pane-overview.md).
@@ -29,10 +29,10 @@ ms.locfileid: "60094618"
  El orden de apilamiento de los controles depende de si el panel de acciones está acoplado vertical u horizontalmente.
 
 > [!NOTE]
->  Si el usuario cambia el tamaño del panel de acciones en tiempo de ejecución, puede establecer los controles para cambiar el tamaño con el panel de acciones. Puede utilizar la propiedad <xref:System.Windows.Forms.Control.Anchor%2A> de un control de Windows Forms para anclar los controles al panel de acciones. Para obtener más información, vea [Cómo: Delimitar controles en Windows Forms](/dotnet/framework/winforms/controls/how-to-anchor-controls-on-windows-forms).
+> Si el usuario cambia el tamaño del panel de acciones en tiempo de ejecución, puede establecer los controles para cambiar el tamaño con el panel de acciones. Puede utilizar la propiedad <xref:System.Windows.Forms.Control.Anchor%2A> de un control de Windows Forms para anclar los controles al panel de acciones. Para obtener más información, vea [Cómo: Delimitar controles en Windows Forms](/dotnet/framework/winforms/controls/how-to-anchor-controls-on-windows-forms).
 
 > [!NOTE]
->  Es posible que el equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Para más información, vea [Personalizar el IDE de Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Es posible que el equipo muestre nombres o ubicaciones diferentes para algunos de los elementos de la interfaz de usuario de Visual Studio en las siguientes instrucciones. La edición de Visual Studio que se tenga y la configuración que se utilice determinan estos elementos. Para más información, vea [Personalizar el IDE de Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="to-set-the-stack-order-of-the-actions-pane-controls"></a>Para establecer el orden de apilamiento de los controles del panel de acciones
 

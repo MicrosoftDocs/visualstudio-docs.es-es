@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d4b5fd1be29a5c22bcae371faaf7be8c6b70c4e1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c30289034c50cc6d754f54ccec3fafcd0f964d15
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057555"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437406"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>Las reglas propagan los cambios dentro del modelo
 Puede crear una regla de almacén para propagar un cambio de un elemento a otro en la visualización y el SDK de modelado (VMSDK). Cuando se produce un cambio a cualquier elemento en el Store, las reglas se programan para ejecutarse, normalmente, cuando se confirma la transacción más externa. Hay diferentes tipos de reglas para los diferentes tipos de eventos, como agregar un elemento, o eliminarlo. Puede asociar reglas a tipos específicos de elementos, formas y diagramas. Muchas características integradas se definen mediante reglas: por ejemplo, reglas garantizan que un diagrama se actualiza cuando cambia el modelo. Puede personalizar su lenguaje específico de dominio mediante la adición de sus propias reglas.
@@ -68,7 +68,7 @@ namespace ExampleNamespace
 ```
 
 > [!NOTE]
->  El código de una regla debe cambiar el estado únicamente de los elementos dentro de la Store; es decir, debe cambiar la regla solo los elementos del modelo, las relaciones, formas, conectores, diagramas o sus propiedades. Si desea propagar los cambios a los recursos fuera de la tienda, definen los eventos de Store. Para obtener más información, consulte [controladores propagar los cambios fuera el modelo de evento](../modeling/event-handlers-propagate-changes-outside-the-model.md)
+> El código de una regla debe cambiar el estado únicamente de los elementos dentro de la Store; es decir, debe cambiar la regla solo los elementos del modelo, las relaciones, formas, conectores, diagramas o sus propiedades. Si desea propagar los cambios a los recursos fuera de la tienda, definen los eventos de Store. Para obtener más información, consulte [controladores propagar los cambios fuera el modelo de evento](../modeling/event-handlers-propagate-changes-outside-the-model.md)
 
 ### <a name="to-define-a-rule"></a>Para definir una regla
 

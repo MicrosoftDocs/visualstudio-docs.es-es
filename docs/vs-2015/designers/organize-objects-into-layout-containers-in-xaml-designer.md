@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3ca6fc205585d832f4dadc5f4ce4709a71c7b6fe
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5c2aef08695d2cea04d23a343d318680bc53f44c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059206"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432599"
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>Organizar objetos en contenedores de diseño en el Diseñador XAML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Piense en qué parte de la página desea que aparezcan los objetos como imágene
  En esta página se describen los controles y los paneles de diseño y, además, se incluyen vínculos a vídeos cortos que le ayudarán a empezar a trabajar con ellos.  
   
 > [!NOTE]
->  Algunos de los vídeos pueden hacer referencia a Blend o Expression Blend, que utilizan el mismo Diseñador XAML que Visual Studio y Blend para Visual Studio.  
+> Algunos de los vídeos pueden hacer referencia a Blend o Expression Blend, que utilizan el mismo Diseñador XAML que Visual Studio y Blend para Visual Studio.  
   
 ## <a name="layout-panels"></a>Paneles de diseño  
  Para empezar su página, elija uno de estos paneles de diseño. La página puede tener más de uno. Por ejemplo, puede comenzar con un panel de diseño de **Cuadrícula** y, después, agregar un elemento **StackPanel** a un área de la **Cuadrícula**; así, podrá organizar los controles verticalmente en ese elemento.  

@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd6514ec43cd3180d808c20d5589bf18e3a9b58b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4aac1298c13cb931eba889e6323faff9b1640f8b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048210"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411034"
 ---
 # <a name="walkthrough-create-a-core-editor-and-registering-an-editor-file-type"></a>Tutorial: Crear un editor de núcleo y registrar un tipo de archivo del editor
 En este tutorial se muestra cómo crear un VSPackage que se inicia el [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] editor de núcleo cuando un archivo con el *.myext* se carga la extensión de nombre de archivo.
@@ -325,7 +325,7 @@ En este tutorial se muestra cómo crear un VSPackage que se inicia el [!INCLUDE[
 3. Abra el **VSPackage.resx** de archivos, agregar una nueva cadena, establezca el nombre en **101**y establezca el valor en `IDS_EDITORNAME`. Este paso proporciona el paquete con un identificador de recurso para tener acceso a la cadena que creó.
 
    > [!NOTE]
-   >  Si el **VSPackage.resx** archivo contiene otra cadena que el `name` atributo establecido en **101**, sustituya otro valor único, numeric, aquí y en los pasos siguientes.
+   > Si el **VSPackage.resx** archivo contiene otra cadena que el `name` atributo establecido en **101**, sustituya otro valor único, numeric, aquí y en los pasos siguientes.
 
 4. En **el Explorador de soluciones**, abra el **MyPackagePackage.cs** archivo.
 

@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c1b52628b016893353c83e998a1e395118807a31
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 1feb0dc2282dff39b3895ed0e63a0fdefeb65872
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603920"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406617"
 ---
 # <a name="access-local-and-remote-data-in-clickonce-applications"></a>Acceso a datos locales y remotos en aplicaciones ClickOnce
 La mayoría de las aplicaciones consumen o producen los datos. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ofrece diversas opciones para leer y escribir datos, tanto local como remotamente.
@@ -40,23 +40,23 @@ La mayoría de las aplicaciones consumen o producen los datos. [!INCLUDE[ndptecc
  El directorio de datos está pensado para los datos administrados de la aplicación, que son datos que la aplicación almacena y mantiene explícitamente. En cambio, todos los archivos estáticos y que no son de dependencia que no estén marcados como «datos» en el manifiesto de aplicación residirán en el directorio de la aplicación. Este directorio es donde residen los archivos ejecutables (*.exe*) y los ensamblados de la aplicación.
 
 > [!NOTE]
->  Cuando se desinstala una aplicación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] , también se quita su directorio de datos. No use nunca el directorio de datos para almacenar datos administrados del usuario final, como documentos.
+> Cuando se desinstala una aplicación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] , también se quita su directorio de datos. No use nunca el directorio de datos para almacenar datos administrados del usuario final, como documentos.
 
 #### <a name="mark-data-files-in-a-clickonce-distribution"></a>Marcar archivos de datos en una distribución de ClickOnce
- Para incluir un archivo existente en el directorio de datos, debe marcar dicho archivo como un archivo de datos en el archivo de manifiesto de aplicación de la aplicación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] . Para obtener más información, consulte [Cómo: Incluir un archivo de datos en una aplicación ClickOnce](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).
+ Para incluir un archivo existente en el directorio de datos, debe marcar dicho archivo como un archivo de datos en el archivo de manifiesto de aplicación de la aplicación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] . Para obtener más información, vea [Cómo: Inclusión de un archivo de datos en una aplicación ClickOnce](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).
 
 #### <a name="read-from-and-write-to-the-data-directory"></a>Leer y escribir en el directorio de datos
  Para leer desde el directorio de datos es necesario que la aplicación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] solicite permiso de lectura; de forma similar, la escritura en el directorio requiere permiso de escritura. La aplicación tendrá este permiso automáticamente si se configura para que se ejecute con plena confianza. Para obtener más información sobre cómo elevar los permisos de la aplicación mediante el uso de elevación de permisos o implementación de aplicaciones de confianza, consulte [aplicaciones ClickOnce Secure](../deployment/securing-clickonce-applications.md).
 
 > [!NOTE]
->  Si su organización no usa la implementación de aplicaciones de confianza y ha desactivado la elevación de permisos, los permisos de aserción generarán un error.
+> Si su organización no usa la implementación de aplicaciones de confianza y ha desactivado la elevación de permisos, los permisos de aserción generarán un error.
 
  Una vez que la aplicación tenga estos permisos, puede acceder al directorio de datos usando llamadas a métodos en clases dentro de <xref:System.IO>. Puede obtener la ruta de acceso al directorio de datos en una aplicación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] de Windows Forms usando la propiedad <xref:System.Deployment.Application.ApplicationDeployment.DataDirectory%2A> definida en la propiedad <xref:System.Deployment.Application.ApplicationDeployment.CurrentDeployment%2A> de <xref:System.Deployment.Application.ApplicationDeployment>. Esta es la manera más conveniente y recomendada de acceder a los datos. En el ejemplo de código siguiente se muestra cómo hacer esto en un archivo de texto denominado *CSV.txt* que ha incluido en la implementación como un archivo de datos.
 
  [!code-csharp[ClickOnce.OpenDataFile#1](../deployment/codesnippet/CSharp/accessing-local-and-remote-data-in-clickonce-applications_1.cs)]
  [!code-vb[ClickOnce.OpenDataFile#1](../deployment/codesnippet/VisualBasic/accessing-local-and-remote-data-in-clickonce-applications_1.vb)]
 
- Para obtener más información sobre cómo marcar archivos de la implementación como archivos de datos, consulte [Cómo: Incluir un archivo de datos en una aplicación ClickOnce](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).
+ Para obtener más información sobre cómo marcar archivos de la implementación como archivos de datos, vea [Cómo: Inclusión de un archivo de datos en una aplicación ClickOnce](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).
 
  También puede obtener la ruta de acceso del directorio de datos usando las variables correspondientes de la clase <xref:System.Windows.Forms.Application> , como <xref:System.Windows.Forms.Application.LocalUserAppDataPath%2A>.
 
@@ -109,4 +109,4 @@ La mayoría de las aplicaciones consumen o producen los datos. [!INCLUDE[ndptecc
 
 ## <a name="see-also"></a>Vea también
 
-- [Cómo: Incluir un archivo de datos en una aplicación ClickOnce](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)
+- [Cómo: Inclusión de un archivo de datos en una aplicación ClickOnce](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)

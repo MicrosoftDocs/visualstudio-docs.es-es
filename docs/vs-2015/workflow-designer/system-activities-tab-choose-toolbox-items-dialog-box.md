@@ -12,18 +12,18 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ddeffb8d6421044db0f1e7bb6db63c3fa7e2119e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 29eb905a4852bf521ebee72a498b44edbdcef8df
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58997106"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445409"
 ---
 # <a name="systemactivities-tab-choose-toolbox-items-dialog-box"></a>System.Activities (pestaña), Elegir elementos del cuadro de herramientas (cuadro de diálogo)
 Esta pestaña de la **elegir elementos del cuadro de herramientas** cuadro de diálogo muestra una lista de [!INCLUDE[wf](../includes/wf-md.md)] actividades, plantillas y elementos a su disposición. Para mostrar esta lista, seleccione **elegir elementos del cuadro de herramientas** desde el **herramientas** menús o haciendo clic con el **cuadro de herramientas** y seleccionando **elegir elementos**para mostrar el **elegir elementos del cuadro de herramientas** cuadro de diálogo y, a continuación, seleccione su **System.Activities** ficha. De fábrica, la lista contiene las actividades de flujo de trabajo desde ensamblados System.Activities, System.ServiceModel.Activities y System.Activities.Core.Presentation; Sin embargo, solo proporcionado por el sistema actividades que se muestran y las actividades agregadas a través de otros ensamblados que aparecen en la **cuadro de herramientas** están activadas de forma predeterminada. Recientemente agregó las actividades se comprueban automáticamente y aparecen en la **cuadro de herramientas** al hacer clic en **Aceptar** en el cuadro de diálogo. Además, estos elementos aparecen en la **cuadro de herramientas** en una nueva categoría que corresponde al espacio de nombres donde reside la actividad/elemento/plantilla.  
   
 > [!WARNING]
->  Si intenta agregar un ensamblado que no contenga actividades de flujo de trabajo, aparecerá un diálogo de error que indica que el ensamblado no contiene ninguna actividad.  
+> Si intenta agregar un ensamblado que no contenga actividades de flujo de trabajo, aparecerá un diálogo de error que indica que el ensamblado no contiene ninguna actividad.  
   
  Este cuadro de diálogo es independiente del proyecto y, por tanto, el **System.Activities** ficha sigue presentándose en XAML independiente o un tipo de proyecto sin flujo de trabajo.  
   

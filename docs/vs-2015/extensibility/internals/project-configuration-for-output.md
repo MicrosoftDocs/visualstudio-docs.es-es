@@ -10,12 +10,12 @@ ms.assetid: a4517f73-45af-4745-9d7f-9fddf887b636
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a2b3a4e904fa6ca45dc207c4b713577b1e29f840
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: d14435917e982328220aa6b778d081a8837f0396
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58998571"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443884"
 ---
 # <a name="project-configuration-for-output"></a>Configuración del proyecto para la salida
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Cada configuración puede admitir un conjunto de procesos de compilación que ge
  La construcción desarrollado implementando `IVsOutputGroup` permite que los proyectos agrupen resultados según su uso. Por ejemplo, se puede agrupar un archivo DLL con su base de datos de programa (PDB).  
   
 > [!NOTE]
->  Un archivo PDB contiene información de depuración y se crea cuando se especifica la opción 'Generar información de depuración' al compilar el archivo .dll o .exe. Normalmente se genera el archivo .pdb para solo la configuración de proyecto de depuración.  
+> Un archivo PDB contiene información de depuración y se crea cuando se especifica la opción 'Generar información de depuración' al compilar el archivo .dll o .exe. Normalmente se genera el archivo .pdb para solo la configuración de proyecto de depuración.  
   
  El proyecto debe devolver el mismo número de grupos para cada configuración que admite, aunque el número de salidas contenida dentro de un grupo puede variar para cada configuración. Por ejemplo, Matt del proyecto DLL podría incluir mattd.dll y mattd.pdb en configuración de depuración, pero sólo incluir matt.dll en configuración de venta directa.  
   

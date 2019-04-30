@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 55a27a8d0c5c119870e92bfbf7cff4b85f90cf99
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 84a62fc796243172c9130c8113c4e6d289ed3092
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103535"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447017"
 ---
 # <a name="publish-page-project-designer-office-development-in-visual-studio"></a>Panel publicar, Diseñador de proyectos (desarrollo de Office en Visual Studio)
   La página **Publicar** del **Diseñador de proyectos** se usa para configurar las propiedades de la implementación.
@@ -29,7 +29,7 @@ ms.locfileid: "60103535"
  Para acceder a esta página, seleccione el proyecto en el **Explorador de soluciones**y luego, en el menú **Proyecto** , elija *Propiedades de* **nombreDelProyecto**. Si no se muestra la página **Publicar** , elija la pestaña **Publicar** .
 
 > [!NOTE]
->  También puede establecer la ubicación de publicación en el **Asistente para publicación**. Para obtener más información, vea [Cómo: Publicar una solución de Office mediante ClickOnce](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8).
+> También puede establecer la ubicación de publicación en el **Asistente para publicación**. Para obtener más información, vea [Cómo: Publicar una solución de Office mediante ClickOnce](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8).
 
 ## <a name="uielement-list"></a>Lista de UIElement
  **Ubicación (sitio web, servidor ftp o ruta de acceso de archivo) de la carpeta de publicación** necesarios.

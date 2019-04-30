@@ -13,12 +13,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 19280ccd2564cdbec14a1d74ae8babb9447c05e7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e190360b4441a937e9bfa9fb317f9d07de506040
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103735"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447237"
 ---
 # <a name="idiasymbol"></a>IDiaSymbol
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ IDiaSymbol : IUnknown
  La tabla siguiente muestran los métodos de `IDiaSymbol`.  
   
 > [!NOTE]
->  Símbolos devolverá datos significativos sólo para algunos de estos métodos, según el tipo de símbolo. Si el método devuelve `S_OK`, a continuación, ese método ha devuelto datos significativos.  
+> Símbolos devolverá datos significativos sólo para algunos de estos métodos, según el tipo de símbolo. Si el método devuelve `S_OK`, a continuación, ese método ha devuelto datos significativos.  
   
 |Método|Descripción|  
 |------------|-----------------|  
@@ -264,7 +264,7 @@ IDiaSymbol : IUnknown
  En este ejemplo se muestra cómo se muestran las variables locales para una función en una determinada dirección virtual relativa. También se muestra cómo se relacionan los símbolos de tipos diferentes entre sí.  
   
 > [!NOTE]
->  `CDiaBSTR` es una clase que encapsula un `BSTR` y controla automáticamente la liberación de la cadena de la creación de instancias se sale del ámbito.  
+> `CDiaBSTR` es una clase que encapsula un `BSTR` y controla automáticamente la liberación de la cadena de la creación de instancias se sale del ámbito.  
   
 ```cpp#  
 void DumpLocalVars( DWORD rva, IDiaSession *pSession )  

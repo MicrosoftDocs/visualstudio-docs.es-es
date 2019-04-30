@@ -17,12 +17,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b1549cf23f87a56f724a0b5e56b7b59f4fa88ac2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9962bb1dbeef089d409cbe100daa37777b45e67d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105011"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425383"
 ---
 # <a name="edit-data-in-datasets"></a>Editar datos en conjuntos de datos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ Editar tablas de datos al igual que editar los datos en una tabla en cualquier b
      Este método no quita físicamente el registro. En su lugar, marca el registro para su eliminación.  
   
     > [!NOTE]
-    >  Si obtiene la propiedad count de un <xref:System.Data.DataRowCollection>, el recuento resultante incluye los registros que se han marcado para su eliminación. Para obtener un recuento exacto de registros que no están marcados para su eliminación, puede recorrer la colección observando la <xref:System.Data.DataRow.RowState%2A> propiedad de cada registro. (Los registros marcados para su eliminación tienen un <xref:System.Data.DataRow.RowState%2A> de <xref:System.Data.DataRowState>.) Como alternativa, puede crear una vista de datos de un conjunto de datos que se filtra según el estado de fila y obtener la propiedad de recuento a partir de ahí.  
+    > Si obtiene la propiedad count de un <xref:System.Data.DataRowCollection>, el recuento resultante incluye los registros que se han marcado para su eliminación. Para obtener un recuento exacto de registros que no están marcados para su eliminación, puede recorrer la colección observando la <xref:System.Data.DataRow.RowState%2A> propiedad de cada registro. (Los registros marcados para su eliminación tienen un <xref:System.Data.DataRow.RowState%2A> de <xref:System.Data.DataRowState>.) Como alternativa, puede crear una vista de datos de un conjunto de datos que se filtra según el estado de fila y obtener la propiedad de recuento a partir de ahí.  
   
      El ejemplo siguiente muestra cómo llamar a la <xref:System.Data.DataRow.Delete%2A> método para marcar la primera fila de la `Customers` como eliminado de la tabla:  
   

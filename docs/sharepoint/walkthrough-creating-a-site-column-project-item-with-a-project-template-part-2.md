@@ -11,12 +11,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8301a4ecae71bfa2b215e20dfabf73e058c48dc4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e1b6477c112de7b19b00bcd173984533f5737014
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059115"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436723"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-2"></a>Tutorial: Creación de un elemento de proyecto de la columna de sitio con una plantilla de proyecto, parte 2
   Después de definir un tipo personalizado de elemento de proyecto de SharePoint y asociarlo a una plantilla de proyecto en Visual Studio, es posible que desee proporcionar también un asistente para la plantilla. Puede usar el asistente con el fin de recopilar información de los usuarios cuando usan la plantilla para crear un nuevo proyecto que contiene el elemento de proyecto. La información que recopile puede usarse para inicializar el elemento de proyecto.
@@ -222,7 +222,7 @@ ms.locfileid: "60059115"
  Agregue XAML para definir la interfaz de usuario de la ventana del asistente y los dos controles de usuario que proporcionan la interfaz de usuario para las páginas del asistente, y agregue el código para definir el comportamiento de la ventana y los controles de usuario. El asistente que se crea es similar al asistente integrado para los proyectos de SharePoint en Visual Studio.
 
 > [!NOTE]
->  En los siguientes pasos, el proyecto tendrá algunos errores de compilación después de agregar XAML o el código al proyecto. Estos errores desaparecerán al agregar código en pasos posteriores.
+> En los siguientes pasos, el proyecto tendrá algunos errores de compilación después de agregar XAML o el código al proyecto. Estos errores desaparecerán al agregar código en pasos posteriores.
 
 #### <a name="to-create-the-wizard-window-ui"></a>Para crear la interfaz de usuario de la ventana del asistente
 
@@ -233,7 +233,7 @@ ms.locfileid: "60059115"
      [!code-xml[SPExtensibility.ProjectItem.SiteColumn#10](../sharepoint/codesnippet/Xaml/sitecolumnprojectitem/projecttemplatewizard/wizardwindow.xaml#10)]
 
     > [!NOTE]
-    >  La ventana que se crea en este XAML se deriva el <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> clase base. Cuando se agrega un cuadro de diálogo de WPF personalizado en Visual Studio, se recomienda derivar el cuadro de diálogo de esta clase para que tenga un estilo coherente con otros cuadros de diálogo de Visual Studio y para evitar los problemas de cuadro de diálogo modal que pueden producirse en caso contrario. Para obtener más información, consulte [creación y administración de los cuadros de diálogo Modal](/visualstudio/extensibility/creating-and-managing-modal-dialog-boxes).
+    > La ventana que se crea en este XAML se deriva el <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> clase base. Cuando se agrega un cuadro de diálogo de WPF personalizado en Visual Studio, se recomienda derivar el cuadro de diálogo de esta clase para que tenga un estilo coherente con otros cuadros de diálogo de Visual Studio y para evitar los problemas de cuadro de diálogo modal que pueden producirse en caso contrario. Para obtener más información, consulte [creación y administración de los cuadros de diálogo Modal](/visualstudio/extensibility/creating-and-managing-modal-dialog-boxes).
 
 3. Si está desarrollando un proyecto de Visual Basic, quite el `ProjectTemplateWizard` espacio de nombres desde el `WizardWindow` nombre de clase en el `x:Class` atributo de la `Window` elemento. Este elemento aparece en la primera línea del código XAML. Cuando haya terminado, la primera línea debe ser similar al ejemplo siguiente.
 
@@ -513,7 +513,7 @@ ms.locfileid: "60059115"
      La columna de sitio se empaqueta e implementa en el SharePoint del sitio que el **dirección URL del sitio** especifica la propiedad del proyecto. El explorador web se abre en la página predeterminada de este sitio.
 
     > [!NOTE]
-    >  Si el **depuración de scripts deshabilitada** aparece el cuadro de diálogo, elija el **Sí** botón para continuar depurando el proyecto.
+    > Si el **depuración de scripts deshabilitada** aparece el cuadro de diálogo, elija el **Sí** botón para continuar depurando el proyecto.
 
 2. En el **acciones del sitio** menú, elija **configuración del sitio**.
 
@@ -543,4 +543,4 @@ ms.locfileid: "60059115"
 - [Definir tipos de elemento de proyecto de SharePoint personalizados](../sharepoint/defining-custom-sharepoint-project-item-types.md)
 - [Creación de plantillas de elemento y plantillas de proyecto para los elementos de proyecto de SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)
 - [Referencia de esquema de plantillas de Visual Studio](/visualstudio/extensibility/visual-studio-template-schema-reference)
-- [Cómo: Usar a asistentes con plantillas de proyecto](../extensibility/how-to-use-wizards-with-project-templates.md)
+- [Cómo: Usar asistentes con plantillas de proyectos](../extensibility/how-to-use-wizards-with-project-templates.md)

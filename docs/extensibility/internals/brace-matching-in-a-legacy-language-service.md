@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: de9e1a002bf31335131e741a8ce5adc0b2219dbc
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: d83a4c3d9c070f77a6a13b28da0a57dbe6c48be0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56606633"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415359"
 ---
 # <a name="brace-matching-in-a-legacy-language-service"></a>Coincidencia de llaves en un servicio de lenguaje heredado
 Coincidencia de llaves ayuda a los desarrolladores realizar un seguimiento de elementos del lenguaje que deben ocurren juntos, como paréntesis y llaves. Cuando un desarrollador escribe una llave de cierre, se resalta la llave de apertura.
@@ -26,7 +26,7 @@ Coincidencia de llaves ayuda a los desarrolladores realizar un seguimiento de el
  Servicios de lenguaje heredado se implementan como parte de un paquete VSPackage, pero la forma más reciente para implementar características de servicio de lenguaje es usar las extensiones MEF. Para obtener más información acerca de la nueva forma de implementar la coincidencia de llaves, consulte [Tutorial: Para mostrar las llaves coincidentes](../../extensibility/walkthrough-displaying-matching-braces.md).
 
 > [!NOTE]
->  Se recomienda que comience a usar el nuevo editor de API tan pronto como sea posible. Esto mejorará el rendimiento de su servicio de lenguaje y le permiten aprovechar las nuevas características del editor.
+> Se recomienda que comience a usar el nuevo editor de API tan pronto como sea posible. Esto mejorará el rendimiento de su servicio de lenguaje y le permiten aprovechar las nuevas características del editor.
 
  El <xref:Microsoft.VisualStudio.Package.AuthoringSink> clase admite ambos pares y triplica con el <xref:Microsoft.VisualStudio.Package.AuthoringSink.MatchPair%2A> y <xref:Microsoft.VisualStudio.Package.AuthoringSink.MatchTriple%2A> métodos.
 
@@ -40,7 +40,7 @@ Coincidencia de llaves ayuda a los desarrolladores realizar un seguimiento de el
 ## <a name="enable-support-for-brace-matching"></a>Habilitar la compatibilidad con coincidencia de llaves
  El <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> atributo puede establecer el **MatchBraces**, **MatchBracesAtCaret**, y **ShowMatchingBrace** entradas del registro que establecen las propiedades correspondientes de la <xref:Microsoft.VisualStudio.Package.LanguagePreferences> clase. También se pueden establecer propiedades de la preferencia de idioma por el usuario.
 
-|Entrada del registro|Property|Descripción|
+|Entrada del registro|Propiedad|Descripción|
 |--------------------|--------------|-----------------|
 |MatchBraces|<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableMatchBraces%2A>|Habilita la coincidencia de llaves.|
 |MatchBracesAtCaret|<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableMatchBracesAtCaret%2A>|Habilita la coincidencia de llaves como el símbolo de intercalación se mueve.|

@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8667c55eed6de6b2b3c76af2ef45a5357a254516
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0ed32908212f158532e5553752ef5c0b70306fe6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60115996"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435339"
 ---
 # <a name="schema-cache"></a>Caché de esquema
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ El Editor XML proporciona una caché de esquema que está ubicada en el director
  El editor carga el directorio de la caché de esquema cuando se carga el paquete del Editor XML y está atento a los cambios durante la ejecución. Si se ha agregado un esquema, se carga automáticamente en un índice de esquemas conocidos almacenado en memoria. Si se ha quitado un esquema, se quita automáticamente del índice almacenado en memoria. Si se actualiza un esquema, se invalida automáticamente la caché almacenada en memoria de este esquema.  
 
 > [!NOTE]
->  Como el directorio de la caché de esquema es global en el equipo, aquí solo debe agregue esquemas que sean estándares y que resulten de utilidad para todos los proyectos de Visual Studio que se puedan crear en el equipo.  
+> Como el directorio de la caché de esquema es global en el equipo, aquí solo debe agregue esquemas que sean estándares y que resulten de utilidad para todos los proyectos de Visual Studio que se puedan crear en el equipo.  
 
  El Editor XML también admite un número cualquiera de archivos de catálogo de esquema en el directorio de la caché de esquema. Los catálogos de esquema pueden apuntar a otras ubicaciones de esquemas que desea que el editor siempre conozca. El archivo catalog.xsd define el formato del archivo de catálogo y se incluye en el directorio de la caché de esquema. El archivo catalog.xml es el catálogo predeterminado y contiene vínculos a otros esquemas del directorio %InstallDir%. Éste es un muestreo del archivo catalog.xml:  
 
@@ -105,7 +105,7 @@ El Editor XML proporciona una caché de esquema que está ubicada en el director
  Puede personalizar la ubicación de la caché de esquema mediante el **varios** página de opciones. Si dispone de un directorio de esquemas favoritos, se puede configurar el editor para que en su lugar utilice esos esquemas.  
 
 > [!NOTE]
->  Este cambio solo afecta al usuario actual de Visual Studio.  
+> Este cambio solo afecta al usuario actual de Visual Studio.  
 
 #### <a name="to-change-the-schema-cache-location"></a>Para cambiar la ubicación de la caché de esquema  
 

@@ -11,12 +11,12 @@ ms.assetid: f4ad4dd3-b39e-42df-ad89-d403cdf24a2b
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 702cac3c224b958a4de37b03814ecea7390ae217
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 0b37d93adbd2accb7a12fb176ab15aafc6914190
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58996551"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441520"
 ---
 # <a name="configuration-options-overview"></a>Información general de opciones de configuración
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Los proyectos de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] puede admitir v
 |MyConfig|N/D|\<Configuración de MyConfig Win64 >|  
   
 > [!NOTE]
->  No se puede crear una configuración de soluciones "MyConfig" que excluye una plataforma "Win32", a menos que el proyecto tiene como destino no es compatible con Win32.  
+> No se puede crear una configuración de soluciones "MyConfig" que excluye una plataforma "Win32", a menos que el proyecto tiene como destino no es compatible con Win32.  
   
  Cambiar la configuración activa para una solución, selecciona el conjunto de configuraciones de proyecto que se generan, ejecutar, depurar o implementar en esa solución. Por ejemplo, si cambia la configuración de soluciones activas de versión a depuración, todos los proyectos de esa solución se crean automáticamente con la configuración de los proyectos indicado en la configuración de depuración de la solución. Las configuraciones de los proyectos suelen ser también la depuración con nombre, a menos que el usuario ha realizado cambios manuales en el Administrador de configuración del entorno.  
   

@@ -18,12 +18,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 934073e5d266c2ddf645acd7dddcfb13711f92de
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: cdf7c5fe724ff4b043ca304eee3e5e0f31b0dd85
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58996388"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437706"
 ---
 # <a name="using-the-tasks-window"></a>Usar la ventana Tareas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ La ventana **Tareas** se parece a la ventana **Subprocesos**, solo que muestra i
  ![Ventana Tareas paralelas](../debugger/media/parallel-tasks-window.png "Parallel_Tasks_Window")  
   
 > [!NOTE]
->  En el código administrado, una tarea <xref:System.Threading.Tasks.Task> que tiene un estado de <xref:System.Threading.Tasks.TaskStatus>, <xref:System.Threading.Tasks.TaskStatus>, o <xref:System.Threading.Tasks.TaskStatus> podría no mostrarse en la ventana Tareas si los subprocesos administrados están en un estado de suspensión o combinación.  
+> En el código administrado, una tarea <xref:System.Threading.Tasks.Task> que tiene un estado de <xref:System.Threading.Tasks.TaskStatus>, <xref:System.Threading.Tasks.TaskStatus>, o <xref:System.Threading.Tasks.TaskStatus> podría no mostrarse en la ventana Tareas si los subprocesos administrados están en un estado de suspensión o combinación.  
   
 ## <a name="tasks-column-information"></a>Información de la columna Tareas  
  Las columnas de la ventana **Tareas** muestran la siguiente información.  

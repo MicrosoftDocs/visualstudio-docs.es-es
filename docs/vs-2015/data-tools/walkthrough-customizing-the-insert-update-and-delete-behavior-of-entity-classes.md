@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: df77c65d116bf0e44b700d15d0b810e9adf04c78
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a753ac6691e419267fdca34ed5e78a9a5b3cfdd3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112122"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424797"
 ---
 # <a name="walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes"></a>Tutorial: Personalización del comportamiento de inserción, actualización y eliminación de clases de entidad
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ El [LINQ to SQL Tools en Visual Studio](../data-tools/linq-to-sql-tools-in-visua
 2. Denomine el proyecto **UpdatingwithSProcsWalkthrough**.  
   
     > [!NOTE]
-    >  Se admite el [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] en los proyectos de [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] y de C#. Por consiguiente, cree el nuevo proyecto en uno de estos lenguajes.  
+    > Se admite el [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] en los proyectos de [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] y de C#. Por consiguiente, cree el nuevo proyecto en uno de estos lenguajes.  
   
 3. Haga clic en el **aplicación de Windows Forms** plantilla y haga clic en **Aceptar**. Para obtener más información, consulte [las aplicaciones cliente](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
@@ -89,7 +89,7 @@ El [LINQ to SQL Tools en Visual Studio](../data-tools/linq-to-sql-tools-in-visua
      Se crea una clase de entidad denominada **Customer**. Dicha clase tiene propiedades que corresponden a las columnas de la tabla Customers. La clase de entidad se denomina **Customer** (no **Customers**) porque representa a un único cliente de la tabla Customers.  
   
     > [!NOTE]
-    >  Este comportamiento de cambio de nombre se denomina *pluralización*. Se puede activar o desactivar el [cuadro de diálogo Opciones](../ide/reference/options-dialog-box-visual-studio.md). Para obtener más información, vea [Cómo: Activación y desactivación de la pluralización (Object Relational Designer)](../data-tools/how-to-turn-pluralization-on-and-off-o-r-designer.md).  
+    > Este comportamiento de cambio de nombre se denomina *pluralización*. Se puede activar o desactivar el [cuadro de diálogo Opciones](../ide/reference/options-dialog-box-visual-studio.md). Para obtener más información, vea [Cómo: Activación y desactivación de la pluralización (Object Relational Designer)](../data-tools/how-to-turn-pluralization-on-and-off-o-r-designer.md).  
   
 3. En el menú **Compilar**, haga clic en **Generar UpdatingwithSProcsWalkthrough** para crear el proyecto.  
   
@@ -102,7 +102,7 @@ El [LINQ to SQL Tools en Visual Studio](../data-tools/linq-to-sql-tools-in-visua
 7. Expanda el nodo **UpdatingwithSProcsWalkthrough** y, después, busque y seleccione la clase **Customer**.  
   
     > [!NOTE]
-    >  Si la clase **Customer** no está disponible, cierre el asistente, compile el proyecto y vuelva a ejecutar el asistente.  
+    > Si la clase **Customer** no está disponible, cierre el asistente, compile el proyecto y vuelva a ejecutar el asistente.  
   
 8. Haga clic en **Finalizar** para crear el origen de datos y agregar la clase de entidad **Customer** a la ventana **Orígenes de datos**.  
   
@@ -116,7 +116,7 @@ El [LINQ to SQL Tools en Visual Studio](../data-tools/linq-to-sql-tools-in-visua
 2. Desde el **orígenes de datos** ventana, arrastre el **cliente** nodo hasta Form1.  
   
     > [!NOTE]
-    >  Para mostrar la ventana **Orígenes de datos**, haga clic en **Mostrar orígenes de datos** en el menú **Datos**.  
+    > Para mostrar la ventana **Orígenes de datos**, haga clic en **Mostrar orígenes de datos** en el menú **Datos**.  
   
 3. Abra Form1 en el Editor de código.  
   
@@ -192,7 +192,7 @@ El [LINQ to SQL Tools en Visual Studio](../data-tools/linq-to-sql-tools-in-visua
 9. Haga clic en **Aplicar** para guardar la configuración de la clase y el comportamiento seleccionados.  
   
     > [!NOTE]
-    >  Puede continuar configurando las combinaciones de clase y comportamiento haciendo clic en **Aplicar** después de realizar cada modificación. Si cambia la clase o el comportamiento antes de hacer clic **aplicar**, que proporciona una oportunidad para aplicar cualquier cambio aparecerá un cuadro de diálogo de advertencia.  
+    > Puede continuar configurando las combinaciones de clase y comportamiento haciendo clic en **Aplicar** después de realizar cada modificación. Si cambia la clase o el comportamiento antes de hacer clic **aplicar**, que proporciona una oportunidad para aplicar cualquier cambio aparecerá un cuadro de diálogo de advertencia.  
   
 10. Seleccione **Actualizar** en la lista **Comportamiento**.  
   
@@ -205,7 +205,7 @@ El [LINQ to SQL Tools en Visual Studio](../data-tools/linq-to-sql-tools-in-visua
 13. Asigne el argumento de método **Original_CustomerID** a la propiedad de clase **CustomerID (Original)**.  
   
     > [!NOTE]
-    >  De forma predeterminada, los argumentos de método se asignarán a las propiedades de clase cuando los nombres coincidan. Si se modifican los nombres de propiedad y ya no hay coincidencia entre la tabla y la clase de entidad, puede que tenga que seleccionar la propiedad de clase equivalente para la asignación si el Object Relational Designer no puede determinar la asignación correcta. Además, si los argumentos de método no tienen propiedades de clase válidas a las que asignarse, puede establecer el valor de **Propiedades de clase** en **(Ninguno)**.  
+    > De forma predeterminada, los argumentos de método se asignarán a las propiedades de clase cuando los nombres coincidan. Si se modifican los nombres de propiedad y ya no hay coincidencia entre la tabla y la clase de entidad, puede que tenga que seleccionar la propiedad de clase equivalente para la asignación si el Object Relational Designer no puede determinar la asignación correcta. Además, si los argumentos de método no tienen propiedades de clase válidas a las que asignarse, puede establecer el valor de **Propiedades de clase** en **(Ninguno)**.  
   
 14. Haga clic en **Aplicar** para guardar la configuración de la clase y el comportamiento seleccionados.  
   
@@ -220,7 +220,7 @@ El [LINQ to SQL Tools en Visual Studio](../data-tools/linq-to-sql-tools-in-visua
 19. Haga clic en **Aceptar**.  
   
 > [!NOTE]
->  Aunque no es un asunto de este tutorial particular, vale la pena observar que [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] procesa los valores generados por la base de datos automáticamente para las columnas identidad (incremento automático), rowguidcol (GUID generado por la base de datos) y columnas de marca de tiempo durante las inserciones y actualizaciones. Los valores generados por la base de datos de otros tipos de columna producirán inesperadamente un valor nulo. Para devolver los valores generados por la base de datos, debería establecer manualmente <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> en `true`, y <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> en una de las siguientes opciones: <xref:System.Data.Linq.Mapping.AutoSync>, <xref:System.Data.Linq.Mapping.AutoSync> u <xref:System.Data.Linq.Mapping.AutoSync>.  
+> Aunque no es un asunto de este tutorial particular, vale la pena observar que [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] procesa los valores generados por la base de datos automáticamente para las columnas identidad (incremento automático), rowguidcol (GUID generado por la base de datos) y columnas de marca de tiempo durante las inserciones y actualizaciones. Los valores generados por la base de datos de otros tipos de columna producirán inesperadamente un valor nulo. Para devolver los valores generados por la base de datos, debería establecer manualmente <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> en `true`, y <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> en una de las siguientes opciones: <xref:System.Data.Linq.Mapping.AutoSync>, <xref:System.Data.Linq.Mapping.AutoSync> u <xref:System.Data.Linq.Mapping.AutoSync>.  
   
 ## <a name="testing-the-application"></a>Probar la aplicación  
  Vuelva a ejecutar la aplicación para comprobar que el procedimiento almacenado **UpdateCustomers** actualiza correctamente el registro de cliente en la base de datos.  

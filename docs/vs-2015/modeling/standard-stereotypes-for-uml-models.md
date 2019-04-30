@@ -12,12 +12,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fbd12f7579cc401284515de1f950ad2a9809dbca
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 822676baf9f0c599fd1383f1841c8f85136be879
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116594"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411747"
 ---
 # <a name="standard-stereotypes-for-uml-models"></a>Estereotipos estándar para modelos UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +56,7 @@ Puede agregar estereotipos a los elementos del modelo UML para proporcionar info
 2. En la ventana Propiedades, establezca la **perfiles** propiedad en vacío.  
   
     > [!NOTE]
-    >  Puede desvincular un perfil solo si ninguno de los elementos en el modelo o el paquete usan los estereotipos de ese perfil.  
+    > Puede desvincular un perfil solo si ninguno de los elementos en el modelo o el paquete usan los estereotipos de ese perfil.  
   
 #### <a name="to-apply-a-stereotype-to-a-model-element"></a>Para aplicar un estereotipo a un elemento del modelo  
   
@@ -67,7 +67,7 @@ Puede agregar estereotipos a los elementos del modelo UML para proporcionar info
      Los estereotipos seleccionados aparecen entre «comillas angulares» en el elemento del modelo, para casi todos los tipos de elemento.  
   
     > [!NOTE]
-    >  Si no ve el **estereotipos** propiedad, o si el estereotipo que desea no aparece, compruebe que el elemento de modelo está dentro de un paquete o modelo al que se ha vinculado el perfil adecuado.  
+    > Si no ve el **estereotipos** propiedad, o si el estereotipo que desea no aparece, compruebe que el elemento de modelo está dentro de un paquete o modelo al que se ha vinculado el perfil adecuado.  
   
 3. Algunos estereotipos permiten establecer los valores de las propiedades adicionales para el elemento del modelo. Para ver estas propiedades, expanda el **estereotipos** propiedad.  
   

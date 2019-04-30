@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 21efca0d922087281f94facfdaf04a12606bc4db
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ba106bd28db63b6215abd02ea00aff0b3c0c00e0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044598"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432230"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Implementar un procesador de directivas personalizadas
 
@@ -144,7 +144,7 @@ Hay varias maneras de crear un archivo .vsix. El siguiente procedimiento describ
 ```
 
 > [!NOTE]
->  Este atributo se coloca en la clase de paquete, no en la clase de procesador de directivas.
+> Este atributo se coloca en la clase de paquete, no en la clase de procesador de directivas.
 
  El archivo .pkgdef se generará al compilar el proyecto. Al instalar el paquete VSPackage, el archivo .pkgdef registrará el procesador de directivas.
 
@@ -156,7 +156,7 @@ Hay varias maneras de crear un archivo .vsix. El siguiente procedimiento describ
  Este método para instalar un procesador de directivas personalizado es el menos adecuado. No proporciona ninguna forma práctica de habilitar y deshabilitar el procesador de directivas, y no proporciona ningún método para distribuir el procesador de directivas a otros usuarios.
 
 > [!CAUTION]
->  Una modificación incorrecta del Registro puede provocar daños graves en el sistema. Antes de efectuar cambios en el Registro, asegúrese de realizar una copia de seguridad de la información importante del equipo.
+> Una modificación incorrecta del Registro puede provocar daños graves en el sistema. Antes de efectuar cambios en el Registro, asegúrese de realizar una copia de seguridad de la información importante del equipo.
 
 #### <a name="to-register-a-directive-processor-by-setting-a-registry-key"></a>Para registrar un procesador de directivas estableciendo una clave del Registro
 
