@@ -22,12 +22,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 003b010ed5b1e3bf442be778b6cbb7d6e35efe1f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5c1733d6d4e60aad10896dbd2fcad16406830b83
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112005"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437040"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Enlace de controles de WPF a datos en Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,7 +80,7 @@ Puede crear enlazados a datos [!INCLUDE[TLA#tla_titlewinclient](../includes/tlas
      Para seleccionar un control diferente, haga clic en la flecha desplegable situada al lado del elemento y seleccione un control. Para obtener más información, consulte [establecer el control que se creará al arrastrar desde la ventana Orígenes de datos](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
     > [!NOTE]
-    >  Si no desea mostrar una columna o propiedad concreta, expanda el elemento para mostrar sus elementos secundarios. Haga clic en la flecha desplegable situada junto a la columna o propiedad que no desea mostrar y, a continuación, haga clic en **ninguno**.
+    > Si no desea mostrar una columna o propiedad concreta, expanda el elemento para mostrar sus elementos secundarios. Haga clic en la flecha desplegable situada junto a la columna o propiedad que no desea mostrar y, a continuación, haga clic en **ninguno**.
 
 3. Arrastre el elemento hasta un contenedor válido en el diseñador, como <xref:System.Windows.Controls.Grid>. Para obtener más información acerca de los contenedores válidos, vea [WPF enlazar controles a datos en Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
 
@@ -96,7 +96,7 @@ Puede crear enlazados a datos [!INCLUDE[TLA#tla_titlewinclient](../includes/tlas
 2. Haga clic en la flecha desplegable junto al elemento y seleccione **detalles**.
 
     > [!NOTE]
-    >  Si no desea mostrar una columna o propiedad concreta, expanda el elemento para mostrar sus elementos secundarios. Haga clic en la flecha desplegable situada junto a la columna o propiedad que no desea mostrar y, a continuación, haga clic en **ninguno**.
+    > Si no desea mostrar una columna o propiedad concreta, expanda el elemento para mostrar sus elementos secundarios. Haga clic en la flecha desplegable situada junto a la columna o propiedad que no desea mostrar y, a continuación, haga clic en **ninguno**.
 
 3. Arrastre el elemento hasta un contenedor válido en el diseñador, como <xref:System.Windows.Controls.Grid>. Para obtener más información acerca de los contenedores válidos, vea [WPF enlazar controles a datos en Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
 
@@ -118,7 +118,7 @@ Puede crear enlazados a datos [!INCLUDE[TLA#tla_titlewinclient](../includes/tlas
      [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] genera [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] y código para enlazar el control a los datos. Para obtener más información, consulte [WPF enlazar controles a datos en Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
 
     > [!NOTE]
-    >  Si el control ya está enlazado a datos, el enlace de datos del control se restablece en el elemento que se arrastró hasta el control en último término.
+    > Si el control ya está enlazado a datos, el enlace de datos del control se restablece en el elemento que se arrastró hasta el control en último término.
 
 ## <a name="see-also"></a>Vea también
  [Enlazar controles WPF a datos en Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md) [crear tablas de búsqueda en aplicaciones WPF](../data-tools/create-lookup-tables-in-wpf-applications.md) [mostrar datos relacionados en aplicaciones WPF](../data-tools/display-related-data-in-wpf-applications.md) [WPF enlazar controles a un conjunto de datos](../data-tools/bind-wpf-controls-to-a-dataset.md) [WPF enlazar controles a un servicio de datos WCF](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md) [Tutorial: Mostrar datos relacionados en una aplicación WPF](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md)
