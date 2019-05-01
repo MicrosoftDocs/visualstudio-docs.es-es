@@ -13,12 +13,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ea48e1807291e935081f01e821cffafa794104f5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8de573e8d5f46988868f18114fdabb07f62690e0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075764"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443164"
 ---
 # <a name="visual-c-intellisense"></a>IntelliSense para Visual C#
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ Visual C# IntelliSense está disponible cuando se codifica en el editor y mientr
  En Visual C#, la lista de finalización incluye métodos de extensión que están en el ámbito.  
   
 > [!NOTE]
->  La lista de finalización no muestra todos los métodos de extensión para objetos <xref:System.String>.  
+> La lista de finalización no muestra todos los métodos de extensión para objetos <xref:System.String>.  
   
  Los métodos de extensión usan un icono diferente del que usan los métodos de instancia. Para obtener una lista de los iconos, vea el artículo sobre [iconos de la vista de clases y del examinador de objetos](../ide/class-view-and-object-browser-icons.md). Cuando un método de instancia y un método de extensión que tienen el mismo nombre se encuentran ambos en el ámbito, la lista de finalización muestra el icono de método de extensión.  
   
@@ -148,12 +148,12 @@ Visual C# IntelliSense está disponible cuando se codifica en el editor y mientr
  ![Generar controlador de eventos](../ide/media/vxgenerateeventhandler.gif "vxGenerateEventHandler")  
   
 > [!NOTE]
->  Si un nuevo delegado creado por IntelliSense hace referencia a un controlador de eventos existente, IntelliSense comunica esta información en la información rápida. A continuación, puede modificar la referencia. El texto estará ya seleccionado en el Editor de código. De lo contrario, el enlace de eventos automático se habrá completado en este momento.  
+> Si un nuevo delegado creado por IntelliSense hace referencia a un controlador de eventos existente, IntelliSense comunica esta información en la información rápida. A continuación, puede modificar la referencia. El texto estará ya seleccionado en el Editor de código. De lo contrario, el enlace de eventos automático se habrá completado en este momento.  
   
  Si presiona TAB, IntelliSense crea el código auxiliar de un método con la firma correcta y coloca el cursor en el cuerpo del controlador de eventos.  
   
 > [!NOTE]
->  Use el comando **Navegar hacia atrás** del menú **Ver** (CTRL+-) para volver a la instrucción de enlace de eventos.  
+> Use el comando **Navegar hacia atrás** del menú **Ver** (CTRL+-) para volver a la instrucción de enlace de eventos.  
   
  La tarea siguiente muestra cómo IntelliSense enlaza automáticamente un controlador de eventos denominado `button1_Click` a un campo de evento denominado `button1.Click`.  
   

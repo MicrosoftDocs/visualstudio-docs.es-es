@@ -16,12 +16,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6d4199b0f1daad60ea7fdcdf6405ae232a70d5b3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 20e2b63e98969241dc91a24da81d4c170ef98b47
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082599"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419723"
 ---
 # <a name="replace-in-files"></a>Reemplazar en archivos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "60082599"
 Reemplazar en archivos** permite buscar el código de un conjunto de archivos especificado para una cadena o expresión, y cambiar algunas o todas las coincidencias que se detectan. Las coincidencias encontradas y las acciones realizadas se muestran en la ventana **Resultados de la búsqueda** seleccionada en **Opciones de resultados**.  
   
 > [!NOTE]
->  Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija Importar y exportar configuraciones en el menú Herramientas. Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija Importar y exportar configuraciones en el menú Herramientas. Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Puede usar cualquiera de los métodos siguientes para mostrar **Reemplazar en archivos** en la ventana **Buscar y reemplazar**.  
   
@@ -53,7 +53,7 @@ Reemplazar en archivos** permite buscar el código de un conjunto de archivos es
  La opción elegida en la lista desplegable **Buscar en** determina si **Reemplazar en archivos** solo busca en los archivos activos actualmente o en todos los archivos almacenados en algunas carpetas. Seleccione un ámbito de búsqueda en la lista, escriba una ruta de carpeta o haga clic en el botón **Examinar (...)** para mostrar el cuadro de diálogo **Elegir carpetas de búsqueda** y seleccionar un conjunto de carpetas para buscar. También puede escribir una ruta directamente en el cuadro **Buscar en**.  
   
 > [!NOTE]
->  Si la opción **Buscar en** seleccionada conlleva buscar en un archivo que ha desprotegido desde el control de código fuente, solo se busca en la versión de ese archivo que se ha descargado en el equipo local.  
+> Si la opción **Buscar en** seleccionada conlleva buscar en un archivo que ha desprotegido desde el control de código fuente, solo se busca en la versión de ese archivo que se ha descargado en el equipo local.  
   
 ## <a name="find-options"></a>Opciones de búsqueda  
  Puede expandir o contraer la sección **Opciones de búsqueda**. Se pueden activar o desactivar las opciones siguientes:  
@@ -88,7 +88,7 @@ Reemplazar en archivos** permite buscar el código de un conjunto de archivos es
  Cuando está seleccionada, deja abiertos todos los archivos en los que se han realizado reemplazos, de manera que pueda deshacer o guardar los cambios. Las restricciones de memoria pueden limitar el número de archivos que pueden seguir abiertos después de una operación de reemplazo.  
   
 > [!CAUTION]
->  Puede usar **Deshacer** solo en los archivos que siguen abiertos para su edición. Si esta opción no está seleccionada, los archivos que todavía no se han abierto para su edición seguirán cerrados, y ninguna opción **Deshacer** estará disponible en esos archivos.  
+> Puede usar **Deshacer** solo en los archivos que siguen abiertos para su edición. Si esta opción no está seleccionada, los archivos que todavía no se han abierto para su edición seguirán cerrados, y ninguna opción **Deshacer** estará disponible en esos archivos.  
   
 ## <a name="see-also"></a>Vea también  
  [Buscar y reemplazar texto](../ide/finding-and-replacing-text.md)   
