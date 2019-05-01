@@ -15,12 +15,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cc5415452c6837fa92e1a37ca5d8dfe2a4dd40f6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cd0ba9030d658abb78605cf2e14b5afaa9678f78
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068009"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424303"
 ---
 # <a name="uml-use-case-diagrams-guidelines"></a>Diagramas de casos de uso UML: Instrucciones
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ En Visual Studio, puede dibujar un *diagrama de casos de uso* quién usa la apli
 ## <a name="BasicSteps"></a> Pasos básicos para dibujar diagramas de casos de uso  
   
 > [!NOTE]
->  Se describen los pasos detallados para crear cualquiera de los diagramas de modelado en [modelos y diagramas UML editar](../modeling/edit-uml-models-and-diagrams.md).  
+> Se describen los pasos detallados para crear cualquiera de los diagramas de modelado en [modelos y diagramas UML editar](../modeling/edit-uml-models-and-diagrams.md).  
   
 #### <a name="to-create-a-new-use-case-diagram"></a>Para crear un nuevo diagrama de casos de uso  
   
@@ -133,7 +133,7 @@ En Visual Studio, puede dibujar un *diagrama de casos de uso* quién usa la apli
  El actor especializado puede tener otros casos de uso propios que no están disponibles para el resto de actores.  
   
 > [!CAUTION]
->  No genere bucles de relaciones de generalización en los que, como resultado, un actor se generalice a sí mismo. Los bucles pueden producir errores.  
+> No genere bucles de relaciones de generalización en los que, como resultado, un actor se generalice a sí mismo. Los bucles pueden producir errores.  
   
 ### <a name="alternative-actor-icons"></a>Iconos de actores alternativos  
  Puede usar iconos personalizados para representar a un actor en lugar del dibujo estándar. Por ejemplo, puede cambiar el icono para que tenga un aspecto similar a un dispositivo, restaurante, banco, etc.  
@@ -160,7 +160,7 @@ En Visual Studio, puede dibujar un *diagrama de casos de uso* quién usa la apli
  ![Escritos unívoco con actor](../modeling/media/uml-ucguidemulti1.png "UML_UCGuideMulti1")  
   
 > [!NOTE]
->  Las multiplicidades de una asociación en un diagrama de casos de uso se ocultan si las dos **1**.  
+> Las multiplicidades de una asociación en un diagrama de casos de uso se ocultan si las dos **1**.  
   
  De forma predeterminada, cada multiplicidad es **1**. En una interpretación estricta del modelo, una multiplicidad de 1 significa que, por ejemplo, solo un cliente está implicado en el pedido de comida y que cada cliente pide exclusivamente un menú cada vez.  
   
@@ -197,7 +197,7 @@ En Visual Studio, puede dibujar un *diagrama de casos de uso* quién usa la apli
    - **\\*** para indicar que cero o más instancias de este rol participan en el vínculo.  
   
 > [!NOTE]
->  Muchos equipos no incluyen información de multiplicidad en los diagramas de casos de uso, dejando las multiplicidades con el valor predeterminado de 1. En su lugar, proporcionan la información en descripciones independientes de los casos de uso. En este caso, se ocultarán todas las multiplicidades de los diagramas de casos de uso.  
+> Muchos equipos no incluyen información de multiplicidad en los diagramas de casos de uso, dejando las multiplicidades con el valor predeterminado de 1. En su lugar, proporcionan la información en descripciones independientes de los casos de uso. En este caso, se ocultarán todas las multiplicidades de los diagramas de casos de uso.  
   
 ### <a name="using-an-actor-or-use-case-on-multiple-diagrams"></a>Usar un actor o un caso de uso en varios diagramas  
  Puede mostrar los mismos actores y casos de uso en varios diagramas. Por ejemplo:  
@@ -215,7 +215,7 @@ En Visual Studio, puede dibujar un *diagrama de casos de uso* quién usa la apli
 3. Arrastre un actor o caso de uso desde **el Explorador de modelos** al nuevo diagrama.  
   
     > [!NOTE]
-    >  Si en el nuevo diagrama se coloca un actor y un caso de uso que ya están asociados, la asociación entre ellos aparecerá automáticamente en el nuevo diagrama.   
+    > Si en el nuevo diagrama se coloca un actor y un caso de uso que ya están asociados, la asociación entre ellos aparecerá automáticamente en el nuevo diagrama.   
   
 ## <a name="Details"></a> Describir los casos de uso en detalle  
  Un caso de uso representa:  
@@ -277,7 +277,7 @@ En Visual Studio, puede dibujar un *diagrama de casos de uso* quién usa la apli
 3. Con el nuevo artefacto seleccionado, escriba o pegue la dirección URL en el **hipervínculo** propiedad.  
   
 > [!NOTE]
->  Haga doble clic en un artefacto para abrir el diagrama o documento al que está vinculado.  
+> Haga doble clic en un artefacto para abrir el diagrama o documento al que está vinculado.  
   
 ### <a name="linking-use-cases-to-work-items"></a>Vincular casos de uso a elementos de trabajo  
  Si el proyecto usa [!INCLUDE[vstsTfsRosarioLong](../includes/vststfsrosariolong-md.md)] y tiene [!INCLUDE[esprtfc](../includes/esprtfc-md.md)], puede vincular cada caso de uso a un elemento de trabajo en [!INCLUDE[esprfound](../includes/esprfound-md.md)]. Para obtener información sobre cómo establecer estos vínculos, consulte [vincular elementos de modelo y los elementos de trabajo](../modeling/link-model-elements-and-work-items.md).  
@@ -309,7 +309,7 @@ En Visual Studio, puede dibujar un *diagrama de casos de uso* quién usa la apli
  Usar un **Include** relación para mostrar que un caso de uso describe algunos de los detalles de otro. En la ilustración, **pedir una comida** incluye **pagar**, **elegir menú**, y **Elegir elemento del menú**. Cada uno de los casos de uso incluidos y más detallados constituye un paso que probablemente el actor o actores tendrán que llevar a cabo para conseguir el objetivo global del caso de uso incluyente. La flecha debe apuntar al caso de uso incluido más detallado.  
   
 > [!CAUTION]
->  No cree bucles de relaciones de inclusión en los que un caso de uso se incluya a sí mismo. Los bucles pueden producir errores.  
+> No cree bucles de relaciones de inclusión en los que un caso de uso se incluya a sí mismo. Los bucles pueden producir errores.  
   
  Los casos de uso incluidos se pueden compartir. En el ejemplo, el **pedir una comida** y **suscribirse a las revisiones** incluyen de casos de uso **pagar**.  
   
@@ -346,7 +346,7 @@ En Visual Studio, puede dibujar un *diagrama de casos de uso* quién usa la apli
  Por ejemplo, **pagar** generaliza **pagar con tarjeta de crédito** y **pagar en efectivo**.  
   
 > [!CAUTION]
->  No genere bucles de relaciones de generalización en los que, como resultado, un actor se generalice a sí mismo. Los bucles pueden producir errores.  
+> No genere bucles de relaciones de generalización en los que, como resultado, un actor se generalice a sí mismo. Los bucles pueden producir errores.  
   
  Los casos de uso especializados pueden ayudarle a representar mecanismos distintos a través de los cuales el sistema puede conseguir el mismo objetivo.  
   
@@ -374,7 +374,7 @@ En Visual Studio, puede dibujar un *diagrama de casos de uso* quién usa la apli
  ![Caso de uso que se extiende a otro](../modeling/media/uml-ucguideextend.png "UML_UCGuideExtend")  
   
 > [!CAUTION]
->  No genere bucles de relaciones de extensión en los que, como resultado, un actor se generalice a sí mismo. Los bucles pueden producir errores.  
+> No genere bucles de relaciones de extensión en los que, como resultado, un actor se generalice a sí mismo. Los bucles pueden producir errores.  
   
  Por ejemplo, el **inicio de sesión** caso de uso de un sitio Web típico puede incluir **registrar nuevo usuario** - pero solo cuando el usuario no tenga ya una cuenta.  
   
@@ -391,7 +391,7 @@ En Visual Studio, puede dibujar un *diagrama de casos de uso* quién usa la apli
    3. Haga clic en el caso de uso extendido (**inicio de sesión** en el ejemplo).  
   
        > [!NOTE]
-       >  Evite crear un bucle de relaciones de extensión en el diagrama. No es correcto que un caso de uso sea una extensión de sí mismo.  
+       > Evite crear un bucle de relaciones de extensión en el diagrama. No es correcto que un caso de uso sea una extensión de sí mismo.  
   
 3. Si ya ha creado los escenarios del caso de uso extendido, transfiera los pasos pertinentes al escenario de la extensión.  
   
@@ -425,7 +425,7 @@ En Visual Studio, puede dibujar un *diagrama de casos de uso* quién usa la apli
    Para crear un nuevo caso de uso directamente en un subsistema, haga clic en **caso de uso** en el cuadro de herramientas, a continuación, haga clic en el interior del subsistema.  
   
 > [!NOTE]
->  El **asuntos** propiedad de un caso de uso indica qué subsistema está dentro de.  
+> El **asuntos** propiedad de un caso de uso indica qué subsistema está dentro de.  
   
 ### <a name="use-cases-outside-the-system-scope"></a>Casos de uso fuera del ámbito del sistema  
  Normalmente, resulta útil incluir en el diagrama casos de uso que forman parte del negocio pero que no tienen relación con el sistema que se está desarrollando. Esto ayuda a los desarrolladores a entender el contexto de su trabajo. Por ejemplo, “Entregar menú” podría presentarse como un caso de uso en el que están implicados los actores “Restaurante” y “Cliente”, pero podría quedar fuera de la responsabilidad del sitio web de pedidos de menús.  

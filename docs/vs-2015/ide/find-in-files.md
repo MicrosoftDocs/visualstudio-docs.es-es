@@ -21,12 +21,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 430f2a55f180428c781e7a8cbe1f78d3a0355128
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: e1d9c456c22b4d3003d9435f813a4c3c1dc47881
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804364"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63383379"
 ---
 # <a name="find-in-files"></a>Buscar en archivos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ Buscar en archivos** permite buscar en un conjunto de archivos especificado. Las
    Para cancelar una operación de búsqueda, presione Ctrl+Interrumpir.  
   
 > [!NOTE]
->  La herramienta Buscar y reemplazar no busca en los directorios con el conjunto de atributos `Hidden` o `System`.  
+> La herramienta Buscar y reemplazar no busca en los directorios con el conjunto de atributos `Hidden` o `System`.  
   
 ## <a name="find-what"></a>Buscar  
  Para buscar una nueva cadena de texto o expresión, especifíquela en el cuadro. Para buscar cualquiera de las 20 cadenas que buscó más recientemente, abra la lista y elija la cadena que desea buscar. Pulse el botón **Generador de expresiones** adyacente si quiere usar una o varias expresiones regulares en la cadena de búsqueda. Para obtener más información, vea [Usar expresiones regulares en Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).  
@@ -53,10 +53,10 @@ Buscar en archivos** permite buscar en un conjunto de archivos especificado. Las
  La opción elegida en la lista desplegable **Buscar en** determina si **Buscar en archivos** solo busca en los archivos activos actualmente o en todos los archivos almacenados en algunas carpetas. Seleccione un ámbito de búsqueda en la lista o haga clic en el botón **Examinar (...)** para mostrar el cuadro de diálogo **Elegir carpetas de búsqueda** y para especificar su propio conjunto de directorios. También puede escribir una ruta directamente en el cuadro **Buscar en**.  
   
 > [!WARNING]
->  Con las opciones **Toda la solución** o **Proyecto actual** no se busca en archivos de proyecto y solución. Si desea buscar en archivos de proyecto, elija una carpeta de búsqueda.  
+> Con las opciones **Toda la solución** o **Proyecto actual** no se busca en archivos de proyecto y solución. Si desea buscar en archivos de proyecto, elija una carpeta de búsqueda.  
   
 > [!NOTE]
->  Si la opción **Buscar en** seleccionada conlleva buscar en un archivo que ha desprotegido desde el control de código fuente, solo se busca en la versión de ese archivo que se ha descargado en el equipo local.  
+> Si la opción **Buscar en** seleccionada conlleva buscar en un archivo que ha desprotegido desde el control de código fuente, solo se busca en la versión de ese archivo que se ha descargado en el equipo local.  
   
 ## <a name="include-subfolders"></a>Incluir subcarpetas  
  Especifica que se buscará en las subcarpetas de la carpeta **Buscar en**.  

@@ -1,5 +1,5 @@
 ---
-title: Filtrar Guardar mediante programación los datos adjuntos de elementos de correo electrónico de Outlook
+title: Procedimiento Guardar mediante programación los datos adjuntos de elementos de correo electrónico de Outlook
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,18 +16,18 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 413cee4a768dcf2fe1b6b82b78e213db5b1df9b6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 874f19e0ae4e752a36ce95deab669ab46bfbf038
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631125"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419513"
 ---
-# <a name="how-to-programmatically-save-attachments-from-outlook-email-items"></a>Filtrar Guardar mediante programación los datos adjuntos de elementos de correo electrónico de Outlook
+# <a name="how-to-programmatically-save-attachments-from-outlook-email-items"></a>Procedimiento Guardar mediante programación los datos adjuntos de elementos de correo electrónico de Outlook
   En este ejemplo se guardan los datos adjuntos al correo electrónico en una carpeta específica cuando el correo se recibe en la bandeja de entrada.
 
 > [!IMPORTANT]
->  En este ejemplo solo funciona si agregar una carpeta denominada **TestFileSave** en la raíz del directorio c.
+> En este ejemplo solo funciona si agregar una carpeta denominada **TestFileSave** en la raíz del directorio c.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 

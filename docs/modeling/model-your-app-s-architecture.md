@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c09e8eeed3ba5b7e2a348982444ad8faa0884e9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f5a3bed451775c7b6df1d4abb5e318d664cd803f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60047818"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436894"
 ---
 # <a name="model-your-app39s-architecture"></a>Modelar la aplicación&#39;arquitectura s
 Para ayudar a garantizar que el sistema de software o la aplicación cumple sus usuarios necesidades, puede crear modelos en Visual Studio como parte de la descripción de la estructura general y el comportamiento de su aplicación o sistema de software. A través de los modelos, también puede describir los patrones que se usan a lo largo de todo el proceso de diseño. Estos modelos le ayudan a entender la arquitectura existente, a analizar los cambios y a comunicar sus intenciones con claridad.
@@ -24,7 +24,7 @@ Para ayudar a garantizar que el sistema de software o la aplicación cumple sus 
  El propósito de un modelo es reducir las ambigüedades que se producen en las descripciones con el lenguaje natural y ayudarle a usted y a sus colegas a visualizar el diseño y a analizar diseños alternativos. El modelo debe usarse conjuntamente con otros documentos o explicaciones. Por sí mismo, un modelo no constituye una especificación completa de la arquitectura.
 
 > [!NOTE]
->  A lo largo de este tema, el término “sistema” hace referencia al software que se está desarrollando. Puede ser una colección grande de muchos componentes de hardware y software, una única aplicación o una parte de una aplicación.
+> A lo largo de este tema, el término “sistema” hace referencia al software que se está desarrollando. Puede ser una colección grande de muchos componentes de hardware y software, una única aplicación o una parte de una aplicación.
 
  La arquitectura de un sistema puede dividirse en dos áreas:
 
