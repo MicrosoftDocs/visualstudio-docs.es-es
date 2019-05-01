@@ -8,12 +8,12 @@ ms.assetid: f6337c35-acae-4c5f-b5d9-ac5ff687ef18
 caps.latest.revision: 18
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 404192923d25e3eccc0bb40064569bec3e6c6cec
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: ef0a8d1867114cd655f1e361cf0401dab6bce1a5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059258"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416641"
 ---
 # <a name="customizing-code-coverage-analysis"></a>Personalizar el análisis de cobertura de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,7 +69,7 @@ De forma predeterminada, la herramienta de cobertura de código de Visual Studio
 ```  
   
 > [!WARNING]
->  La resolución de símbolos puede tardar tiempo, especialmente al utilizar una ubicación de archivo remoto con muchos ensamblados. Por consiguiente, considere la posibilidad de copiar los archivos remotos .pdb en la misma ubicación local que los archivos binarios (.dll y .exe).  
+> La resolución de símbolos puede tardar tiempo, especialmente al utilizar una ubicación de archivo remoto con muchos ensamblados. Por consiguiente, considere la posibilidad de copiar los archivos remotos .pdb en la misma ubicación local que los archivos binarios (.dll y .exe).  
   
 ### <a name="excluding-and-including"></a>Exclusión e inclusión  
  Puede excluir los ensamblados especificados del análisis de cobertura de código. Por ejemplo:  
@@ -134,7 +134,7 @@ De forma predeterminada, la herramienta de cobertura de código de Visual Studio
 ```  
   
 > [!WARNING]
->  Si hay un error en una expresión regular, como paréntesis sin caracteres de escape o sin su correspondiente pareja, el análisis de cobertura de código no se ejecuta.  
+> Si hay un error en una expresión regular, como paréntesis sin caracteres de escape o sin su correspondiente pareja, el análisis de cobertura de código no se ejecuta.  
   
 ### <a name="other-ways-to-include-or-exclude-elements"></a>Otras maneras de incluir o excluir elementos  
  Dispone de un [ejemplo al final de este tema](#sample).  

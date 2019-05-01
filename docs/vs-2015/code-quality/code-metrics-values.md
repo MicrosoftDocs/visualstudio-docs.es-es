@@ -13,12 +13,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d5e3669ddaf9d8073038f0fa0c01c7e5a19a209d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f103a1239996e1f68fb6dae7a9f0a41f55ad858e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049568"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437100"
 ---
 # <a name="code-metrics-values"></a>Valores de métrica de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Las métricas de código son un conjunto de medidas de software que proporcionan
 - **Complejidad ciclomática** – mide la complejidad del código estructural. Se crea, calculando el número de rutas de acceso de código diferente en el flujo del programa. Un programa que tiene el flujo de control complejo requerirá más pruebas para lograr una buena cobertura de código y será más difícil de mantener.  
   
     > [!NOTE]
-    >  En algunos casos, el cálculo de la complejidad ciclomática de un método en [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] difiere de las versiones anteriores. Para obtener más información, consulte la "cambios en Visual Studio 2010 complejidad cálculos de sección de código" de [solución de problemas de las métricas de código](../code-quality/troubleshooting-code-metrics-issues.md).  
+    > En algunos casos, el cálculo de la complejidad ciclomática de un método en [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] difiere de las versiones anteriores. Para obtener más información, consulte la "cambios en Visual Studio 2010 complejidad cálculos de sección de código" de [solución de problemas de las métricas de código](../code-quality/troubleshooting-code-metrics-issues.md).  
   
 - **Profundidad de herencia** : indica el número de definiciones de clase que se extienden a la raíz de la jerarquía de clases. La profundidad la jerarquía más difícil comprender donde se definen los campos y métodos determinados podría ser o / y ha vuelto a definir.  
   

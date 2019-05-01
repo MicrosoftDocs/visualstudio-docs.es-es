@@ -12,12 +12,12 @@ ms.assetid: 76435c4b-593e-43a3-a9fe-709a7f9f5e0f
 caps.latest.revision: 42
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 21acd0970415db23da330ece46131cde72cd706a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 2cb53bfc500edbf46f277dd86e2c035461d9f9af
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60118011"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416502"
 ---
 # <a name="editing-coded-ui-tests-using-the-coded-ui-test-editor"></a>Editar pruebas de IU codificadas mediante el editor de pruebas de IU codificadas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ el Editor de pruebas de IU codificadas permite modificar fácilmente este tipo d
  En el Explorador de soluciones, abra el menú contextual de **UIMap.uitest** y elija **Abrir**. La prueba de IU codificada se abre en el editor. Ahora puede ver y editar los métodos grabados, las acciones y los controles correspondientes en la prueba de IU codificada.  
   
 > [!TIP]
->  Al seleccionar una acción de la interfaz de usuario ubicada en un método del panel **Acciones de IU** , el control correspondiente queda resaltado. También puede modificar la acción de la interfaz de usuario o las propiedades de los controles.  
+> Al seleccionar una acción de la interfaz de usuario ubicada en un método del panel **Acciones de IU** , el control correspondiente queda resaltado. También puede modificar la acción de la interfaz de usuario o las propiedades de los controles.  
   
  *No veo* el editor de pruebas de IU codificadas.  
  Posiblemente usa una versión de Visual Studio Enterprise anterior a la 2012. El editor de pruebas de IU codificadas también estaba disponible en el Feature Pack 2 de Visual Studio 2010 con una suscripción a MSDN. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Microsoft Visual Studio 2010 Feature Pack 2](http://go.microsoft.com/fwlink/?LinkID=204119).  
@@ -75,7 +75,7 @@ Editar propiedades de acción de IU
   
  Para modificar las propiedades de una acción de la interfaz de usuario, en el panel **Acción de IU** , expanda el método de prueba que contenga una acción de la interfaz de usuario de la que desee modificar las propiedades, seleccione la acción de la interfaz de usuario y, después, modifique las propiedades mediante la ventana Propiedades.  
   
- Por ejemplo, si un servidor no está disponible y tiene una acción de la interfaz de usuario asociada al explorador Web que indica **ir a página Web '<http://Contoso1/default.aspx’>**, puede cambiar la dirección URL de `‘http://Contoso2/default.aspx’`.  
+ Por ejemplo, si un servidor no está disponible y tiene una acción de la interfaz de usuario asociada al explorador Web que indica **ir a página Web '<http://Contoso1/default.aspx’>**, puede cambiar la dirección URL de `‘ http://Contoso2/default.aspx’`.  
   
  ![Propiedades de los controles](../test/media/codeduitestcontrolprop.png "CodedUITestControlProp")  
 Editar las propiedades de los controles  

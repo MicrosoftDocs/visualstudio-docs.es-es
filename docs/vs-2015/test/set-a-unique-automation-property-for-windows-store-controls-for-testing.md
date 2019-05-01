@@ -8,12 +8,12 @@ ms.assetid: 9bdd74ff-2534-4fc7-a5c3-a77bf7843037
 caps.latest.revision: 12
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6ce207776fe2f3dfe00ddc764546a370dbb53dca
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: a765896ef8b4eb645c04536105bc2284fc5c3d16
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107045"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446058"
 ---
 # <a name="set-a-unique-automation-property-for-windows-store-controls-for-testing"></a>Establecer una propiedad de Automation única para la prueba de controles de la Tienda Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,7 +80,7 @@ Si desea ejecutar pruebas de IU codificadas para la aplicación de la Tienda Win
  **Blend para Visual Studio:** Use uno de los métodos siguientes para hacerlo desde Blend para Visual Studio.  
   
 > [!NOTE]
->  Solo puede usar este método para los controles que se crean estáticamente mediante XAML.  
+> Solo puede usar este método para los controles que se crean estáticamente mediante XAML.  
   
  **Para asignar un nombre único a los controles existentes**  
   
@@ -136,7 +136,7 @@ Si desea ejecutar pruebas de IU codificadas para la aplicación de la Tienda Win
  En ambos ejemplos, debe reemplazar el método ToString () de ItemSource, como se muestra en el código siguiente. Este código se asegura de que el valor de AutomationProperties.Name está establecido y es único, porque no se puede establecer una propiedad única de automatización para cada elemento de lista enlazado a datos utilizando enlace a datos. Establecer un valor único de automatización Properties.Name es suficiente en este caso.  
   
 > [!NOTE]
->  Con este enfoque, el contenido interno del elemento de lista también se puede establecer en una cadena en la clase de empleados a través del enlace. Como se muestra en el ejemplo, al control de botón dentro de cada elemento de lista se le asigna un identificador único de automatización que es el id. de empleado.  
+> Con este enfoque, el contenido interno del elemento de lista también se puede establecer en una cadena en la clase de empleados a través del enlace. Como se muestra en el ejemplo, al control de botón dentro de cada elemento de lista se le asigna un identificador único de automatización que es el id. de empleado.  
   
 ```  
   

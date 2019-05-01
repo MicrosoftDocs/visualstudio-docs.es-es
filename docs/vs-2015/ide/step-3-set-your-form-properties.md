@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 676ea11188b7b55f3e929280d2b1c67166e37fdc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0ba03e1a5dea0ee03b1799a3afe038c867fa7d64
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60067253"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442579"
 ---
 # <a name="step-3-set-your-form-properties"></a>Paso 3: establecimiento de las propiedades del formulario
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Después, se usa la ventana **Propiedades** para cambiar la apariencia del formu
 2. Elija cualquier parte del formulario **Form1** para seleccionarlo. Examine la ventana **Propiedades**, que ahora debería mostrar las propiedades del formulario. Los formularios tienen varias propiedades. Por ejemplo, puede establecer el color del primero plano y del fondo, el texto de título que aparece en la parte superior del formulario, el tamaño del formulario y otras propiedades.  
   
    > [!NOTE]
-   >  Si la ventana **Propiedades** no aparece, detenga el programa eligiendo el botón cuadrado **Detener depuración** de la barra de herramientas o simplemente cierre la ventana. Si se detiene el programa y aún no ve la ventana **Propiedades**, en la barra de menús, elija **Ver**, **Ventana Propiedades**.  
+   > Si la ventana **Propiedades** no aparece, detenga el programa eligiendo el botón cuadrado **Detener depuración** de la barra de herramientas o simplemente cierre la ventana. Si se detiene el programa y aún no ve la ventana **Propiedades**, en la barra de menús, elija **Ver**, **Ventana Propiedades**.  
   
 3. Una vez seleccionado el formulario, busque la propiedad **Texto** en la ventana **Propiedades**. En función del orden de la lista, puede que deba desplazarse hacia abajo. Elija **Texto**, escriba **Visor de imágenes** y elija ENTRAR.  Ahora, el formulario debería tener el texto **Visor de imágenes** en la barra de título y la ventana **Propiedades** debería parecerse a la siguiente.  
   
@@ -38,7 +38,7 @@ Después, se usa la ventana **Propiedades** para cambiar la apariencia del formu
    Propiedades (ventana)  
   
    > [!NOTE]
-   >  Las propiedades se pueden ordenar en vistas por categorías o alfabética. Puede alternar entre estas dos vistas con los botones de la ventana **Propiedades**. En este tutorial, resulta más fácil encontrar las propiedades en la vista alfabética.  
+   > Las propiedades se pueden ordenar en vistas por categorías o alfabética. Puede alternar entre estas dos vistas con los botones de la ventana **Propiedades**. En este tutorial, resulta más fácil encontrar las propiedades en la vista alfabética.  
   
 4. Vuelva al Diseñador de Windows Forms. Elija el controlador de arrastre inferior derecho del formulario, que es el cuadradito blanco que aparece en el vértice inferior derecho del formulario y tiene el siguiente aspecto.  
   
