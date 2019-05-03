@@ -81,7 +81,7 @@ ms.locfileid: "63431540"
 **12345**
 **12345**
 **puntero Changing - pasado por referencia:** 
- ** 12345**
+**12345**
 **ABCDE 12345**
 **pasar por valor devuelto:**
 **ABCDE 12345**
