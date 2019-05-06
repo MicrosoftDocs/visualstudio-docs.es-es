@@ -17,7 +17,7 @@ ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 11e1d9614c4f2a512c56f84117d28363e80c6b90
 ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/22/2019
 ms.locfileid: "60048106"
@@ -73,7 +73,7 @@ ms.locfileid: "60048106"
  Este ejemplo produce el siguiente resultado:
 
  **4/6/1900 12:15:12 PM**
- ** /06/04/1900 12:15:12**
+ **/06/04/1900 12:15:12**
 ## <a name="related-rules"></a>Reglas relacionadas
  [CA1304: Especificar CultureInfo](../code-quality/ca1304-specify-cultureinfo.md)
 

@@ -17,7 +17,7 @@ ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 7de14898c5fb2bb6f8e95a2af5fd6b39a54cdb1d
 ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/22/2019
 ms.locfileid: "60082157"
@@ -72,10 +72,10 @@ ms.locfileid: "60082157"
 
  Este ejemplo produce el siguiente resultado:
 
- **A petición: Denegar la persona que llama no tiene ningún efecto a petición con el permiso validado. ** 
- **LinkDemand: Denegar la persona que llama no tiene ningún efecto en LinkDemand con el permiso validado. ** 
- **LinkDemand: Denegar la persona que llama no tiene ningún efecto con el código protegido por LinkDemand. ** 
- **LinkDemand: Este denegar no tiene ningún efecto con el código protegido por LinkDemand.**
+ **A petición: Denegar la persona que llama no tiene ningún efecto a petición con el permiso validado.**
+**LinkDemand: Denegar la persona que llama no tiene ningún efecto en LinkDemand con el permiso validado.**
+**LinkDemand: Denegar la persona que llama no tiene ningún efecto con el código protegido por LinkDemand.**
+**LinkDemand: Este denegar no tiene ningún efecto con el código protegido por LinkDemand.**
 ## <a name="see-also"></a>Vea también
  <xref:System.Security.CodeAccessPermission.PermitOnly%2A?displayProperty=fullName> <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName>
  <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName>

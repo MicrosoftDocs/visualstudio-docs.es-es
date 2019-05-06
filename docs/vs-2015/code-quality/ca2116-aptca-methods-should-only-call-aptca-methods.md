@@ -17,7 +17,7 @@ ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 916b30cf4cff357ba468faae524d6b0ca7806959
 ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "58987985"
@@ -71,8 +71,8 @@ ms.locfileid: "58987985"
 
  Este ejemplo produce el siguiente resultado:
 
- **La demanda de plena confianza: error en la solicitud. ** 
- **ClassRequiringFullTrust.DoWork llamó.**
+ **La demanda de plena confianza: error en la solicitud.**
+**ClassRequiringFullTrust.DoWork llamó.**
 ## <a name="related-rules"></a>Reglas relacionadas
  [CA2117: Los tipos APTCA solo amplían tipos base APTCA](../code-quality/ca2117-aptca-types-should-only-extend-aptca-base-types.md)
 

@@ -17,7 +17,7 @@ ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 8757b04423037d821d7b74293e508f567975da57
 ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/22/2019
 ms.locfileid: "60047937"
@@ -73,7 +73,7 @@ ms.locfileid: "60047937"
  Este ejemplo produce el siguiente resultado:
 
  **4/6/1900 12:15:12 PM**
- ** /06/04/1900 12:15:12**
+ **/06/04/1900 12:15:12**
 ## <a name="related-rules"></a>Reglas relacionadas
  [CA1305: Especificar IFormatProvider](../code-quality/ca1305-specify-iformatprovider.md)
 
