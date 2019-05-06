@@ -17,7 +17,7 @@ ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: d0ac554ebee7188e0826de9e5c1852cf3bcc33cb
 ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "58997380"
@@ -63,10 +63,10 @@ ms.locfileid: "58997380"
 
  Este ejemplo produce el siguiente resultado:
 
- **Crear una instancia de SecuredTypeWithFields. ** 
- **Campos de tipo segura: 22, 33**
-**cambiar el campo de tipo protegido... ** 
- **Campos de objeto almacenado en caché: 99, 33**
+ **Crear una instancia de SecuredTypeWithFields.**
+**Campos de tipo segura: 22, 33**
+**cambiar el campo de tipo protegido...**
+**Campos de objeto almacenado en caché: 99, 33**
 ## <a name="related-rules"></a>Reglas relacionadas
  [CA1051: No declarar campos de instancia visibles](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)
 
