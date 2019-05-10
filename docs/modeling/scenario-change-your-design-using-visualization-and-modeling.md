@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d0a24301f7571225ed1002ce4e331f29fd4d77c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7f2e31e74ba89c30cfbacc46d1b72428372191ae
+ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62824182"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65476593"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Escenario: Cambiar el diseño mediante herramientas de visualización y modelado
 
@@ -172,11 +172,11 @@ Dinner Now debe estimar el costo de satisfacer el requisito nuevo. Esto depende 
 
 |**Diagram**|**Qué describe**|
 |-|-|
-|*Diagrama de dependencias*<br /><br /> Vea:<br /><br /> - [Crear diagramas de dependencia desde el código](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Diagramas de dependencia: Referencia](../modeling/layer-diagrams-reference.md)<br />- [Diagramas de dependencia: directrices](../modeling/layer-diagrams-guidelines.md)<br />- [Validar código con diagramas de dependencia](../modeling/validate-code-with-layer-diagrams.md)|La arquitectura lógica del código.<br /><br /> Un diagrama de dependencia organiza y asigna los artefactos de una solución de Visual Studio para abstraer grupos denominados *capas*. Estas capas identifican los roles, las tareas o las funciones que realizan estos artefactos en el sistema.<br /><br /> Los diagramas de capas son útiles para describir el diseño previsto del sistema y validar el código cambiante comparándolo con ese diseño.<br /><br /> Para crear las capas, arrastre elementos desde el Explorador de soluciones, los mapas de código, la vista de clases y el examinador de objetos. Para dibujar capas nuevas, use el cuadro de herramientas o haga clic con el botón derecho en la superficie del diagrama.<br /><br /> Para ver las dependencias actuales, haga clic con el botón derecho en la superficie del diagrama de capas y, después, haga clic en **Generar dependencias**. Para especificar dependencias previstas, trace nuevas dependencias.|
+|*Diagrama de dependencias*<br /><br /> Vea:<br /><br /> - [Crear diagramas de dependencia desde el código](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Diagramas de dependencia: Referencia](../modeling/layer-diagrams-reference.md)<br />- [Diagramas de dependencia: directrices](../modeling/layer-diagrams-guidelines.md)<br />- [Validar código con diagramas de dependencia](../modeling/validate-code-with-layer-diagrams.md)|La arquitectura lógica del código.<br /><br /> Un diagrama de dependencia organiza y asigna los artefactos de una solución de Visual Studio para abstraer grupos denominados *capas*. Estas capas identifican los roles, las tareas o las funciones que realizan estos artefactos en el sistema.<br /><br /> Diagramas de dependencia son útiles para describir el diseño previsto del sistema y validar código cambiante comparándolo con ese diseño.<br /><br /> Para crear las capas, arrastre elementos desde el Explorador de soluciones, los mapas de código, la vista de clases y el examinador de objetos. Para dibujar capas nuevas, use el cuadro de herramientas o haga clic con el botón derecho en la superficie del diagrama.<br /><br /> Para ver las dependencias existentes, haga clic en la superficie del diagrama de dependencia y, a continuación, haga clic en **generar dependencias**. Para especificar dependencias previstas, trace nuevas dependencias.|
 
- Por ejemplo, el siguiente diagrama de dependencia describe las dependencias existentes entre capas y el número de artefactos que están asociados con cada capa:
+Por ejemplo, el siguiente diagrama de dependencia describe las dependencias existentes entre capas y el número de artefactos que están asociados con cada capa:
 
- ![Diagrama de la dependencia del sistema de pago integrado](../modeling/media/layer_integrated_dnlucerne.png)
+![Diagrama de la dependencia del sistema de pago integrado](../modeling/media/layer_integrated_dnlucerne.png)
 
  **Diagrama de dependencias**
 
@@ -194,7 +194,7 @@ Vea:
 
 - La mayoría de los diagramas constan de nodos que están conectados mediante líneas. Para cada tipo de diagrama, el cuadro de herramientas proporciona distintas clases de nodos y líneas.
 
-     Para abrir el cuadro de herramientas, vaya el menú **Ver** y haga clic en **Cuadro de herramientas**.
+   Para abrir el cuadro de herramientas, vaya el menú **Ver** y haga clic en **Cuadro de herramientas**.
 
 - Para crear un nodo, arrástrelo desde el cuadro de herramientas al diagrama. Hay determinados tipos de nodos que deben arrastrarse a los nodos existentes. Por ejemplo, en un diagrama de componentes, un puerto nuevo debe agregarse a un componente existente.
 
@@ -206,7 +206,7 @@ Los diagramas de modelado de Visual Studio se integran con Team Foundation Serve
 
 A medida que avanza su trabajo, los equipos actualizan los elementos de trabajo para que reflejen el tiempo que invierten en sus tareas. También supervisan y registran el estado de su trabajo con las siguientes características de Team Foundation Server:
 
-- *Informes de evolución* diarios que muestran si se completa el trabajo planeado en el tiempo esperado. También generan otros informes similares de Team Foundation Server para realizar un seguimiento del progreso de los errores.
+- Diario *informes de evolución* que muestran si se completa el trabajo planeado en el tiempo esperado. También generan otros informes similares de Team Foundation Server para realizar un seguimiento del progreso de los errores.
 
 - Una *hoja de cálculo de iteración* que usa Microsoft Excel para ayudar al equipo a supervisar y repartir la carga de trabajo entre sus miembros. Esta hoja de cálculo está vinculada a Team Foundation Server y sirve de foco de discusión durante las reuniones en las que se analizan los progresos.
 
@@ -329,7 +329,7 @@ Este mapa muestra que la clase PaymentApprover se encuentra ahora en el espacio 
 
 |**Diagram**|**Qué describe**|
 |-|-|
-|Diagrama de dependencias|La arquitectura lógica del sistema. Utilice la validación de dependencias para asegurarse de que el código mantiene la coherencia con el diseño.<br /><br /> Para ayudarle a identificar dependencys existentes o dependencys previstos, cree un mapa de código y agrupe los elementos relacionados. Para crear un diagrama de dependencia, consulte:<br /><br /> - [Crear diagramas de dependencia desde el código](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Diagramas de dependencia: directrices](../modeling/layer-diagrams-guidelines.md)|
+|Diagrama de dependencias|La arquitectura lógica del sistema. Utilice la validación de dependencias para asegurarse de que el código mantiene la coherencia con el diseño.<br /><br /> Para ayudarle a identificar las dependencias existentes o dependencias previstas, cree un mapa de código y agrupe los elementos relacionados. Para crear un diagrama de dependencia, consulte:<br /><br /> - [Crear diagramas de dependencia desde el código](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Diagramas de dependencia: directrices](../modeling/layer-diagrams-guidelines.md)|
 |Diagrama de clases (basado en código)|Las clases existentes en el código de un proyecto específico.<br /><br /> Para visualizar y modificar una clase existente en el código, use el Diseñador de clases.<br /><br /> Vea [Cómo: Agregar diagramas de clases a proyectos (Diseñador de clases)](../ide/class-designer/how-to-add-class-diagrams-to-projects.md).|
 
 ### <a name="DefineClasses"></a> Definir un glosario de tipos: Diagramas de clases
