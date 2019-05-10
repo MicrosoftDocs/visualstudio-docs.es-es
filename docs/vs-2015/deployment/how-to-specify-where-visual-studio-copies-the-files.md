@@ -17,12 +17,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5d36c5dafa37673263ab13dc46c7f02e44448fd8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8759145dd4a7647cad6e9964ae1f1c97d333b626
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441610"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226162"
 ---
 # <a name="how-to-specify-where-visual-studio-copies-the-files"></a>Procedimiento Especificar dónde Visual Studio copia los archivos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ Al publicar una aplicación mediante ClickOnce, la propiedad `Publish Location` 
 
    - Para publicar en una ruta de acceso de disco o recurso compartido de archivo, escriba la ruta de acceso mediante una ruta de acceso UNC (\\\Server\ApplicationName) o una ruta de acceso de archivo (C:\Deploy\ApplicationName).
 
-   - Para publicar en un servidor FTP, escriba la ruta de acceso con el formato ftp://ftp.microsoft.com/NombreAplicación.
+   - Para publicar en un servidor FTP, escriba la ruta de acceso con el formato de ftp:\//ftp.microsoft.com/ApplicationName.
 
      Tenga en cuenta que debe haber texto en el cuadro **Ubicación de publicación** para que el botón Examinar (**...**) funcione.
 

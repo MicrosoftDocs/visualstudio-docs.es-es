@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 67e3ac6bda70a25baf7546c709849c650372c649
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 022712c0be8dfb569ba097bc4a86f8b02de93633
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62869024"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457421"
 ---
 # <a name="idebugreference2setvalueasstring"></a>IDebugReference2::SetValueAsString
 Establece el valor de una referencia de una cadena. Reservado para un uso futuro.
@@ -40,16 +43,16 @@ int SetValueAsString ( 
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `pszValue`
+## <a name="parameters"></a>Parámetros
+ `pszValue`\
 
  [in] El valor como una cadena.
 
- `dwRadix`
+ `dwRadix`\
 
  [in] La base que se usará para dar formato a cualquier información numérica.
 
- `dwTimeout`
+ `dwTimeout`\
 
  [in] Tiempo máximo, en milisegundos para esperar antes de volver de este método. Use `INFINITE` para esperar indefinidamente.
 

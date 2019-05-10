@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb0ece36eba11b61f760552fe0559de46c1ce732
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: fa9c1805c7eaba480cd46ebc6e73ee370e3cbb22
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62864796"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460770"
 ---
 # <a name="stepkind"></a>STEPKIND
 Especifica el tipo de paso de ejecución paso a paso.
@@ -43,14 +46,18 @@ public enum enum_STEPKIND { 
 };
 ```
 
-## <a name="members"></a>Miembros
- STEP_INTO pasos en una función.
+## <a name="fields"></a>Campos
+ `STEP_INTO`\
+ Pasos en una función.
 
- STEP_OVER pasos a través de una función.
+ `STEP_OVER`\
+ Pasos a través de una función.
 
- STEP_OUT sale paso a paso una función.
+ `STEP_OUT`\
+ Sale de una función paso a paso.
 
- STEP_BACKWARDS retroceder a una función.
+ `STEP_BACKWARDS`\
+ Retroceder a una función.
 
 ## <a name="remarks"></a>Comentarios
  Se pasa como argumento a la [paso](../../../extensibility/debugger/reference/idebugprocess3-step.md) método.

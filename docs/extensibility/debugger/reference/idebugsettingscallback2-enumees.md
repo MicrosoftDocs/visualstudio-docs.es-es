@@ -10,12 +10,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05d64a568f4df1e4e1705e90ba186287c0b96a85
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 12005f27e533d491451695925253137fb172ccd6
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62916355"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457599"
 ---
 # <a name="idebugsettingscallback2enumees"></a>IDebugSettingsCallback2::EnumEEs
 Enumera los evaluadores de expresión disponibles según los identificadores de idioma y el proveedor.
@@ -40,20 +43,20 @@ public int EnumEEs(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `celtBuffer`
+## <a name="parameters"></a>Parámetros
+ `celtBuffer`\
 
  [in] Número de elementos de la `pceltEEs` búfer.
 
- `rgguidLang`
+ `rgguidLang`\
 
  [in, out] Identificador único para el lenguaje de programación.
 
- `rgguidVendor`
+ `rgguidVendor`\
 
  [in, out] Identificador único para el proveedor.
 
- `pceltEEs`
+ `pceltEEs`\
 
  [in, out] Matriz de evaluadores de expresión.
 

@@ -8,12 +8,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5b687f9fb705f8f8c8bee7ca611d618e012e8507
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+dev_langs:
+- CSharp
+- VB
+ms.openlocfilehash: 007da4e5e534ce6f9d8563011c0284432e4d9c19
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443854"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226111"
 ---
 # <a name="walkthrough-create-an-sdk-using-c-or-visual-basic"></a>Tutorial: Crear un SDK usando C# o Visual Basic
 En este tutorial, obtendrá información sobre cómo crear un SDK de biblioteca matemática simple mediante Visual C# y, a continuación, incluir el SDK como una extensión de Visual Studio (VSIX). Deberá completar los siguientes procedimientos:
@@ -28,7 +31,7 @@ En este tutorial, obtendrá información sobre cómo crear un SDK de biblioteca 
 
 ## <a name="createClassLibrary"></a> Para crear el componente de tiempo de ejecución de Windows SimpleMath
 
-1. En la barra de menús, elija **archivo** > **New** > **nuevo proyecto**.
+1. En la barra de menús, elija **Archivo** > **Nuevo** > **Proyecto**.
 
 2. En la lista de plantillas, expanda **Visual C#** o **Visual Basic**, elija el **Windows Store** nodo y, a continuación, elija el **componente de Windows en tiempo de ejecución** plantilla.
 
@@ -50,7 +53,7 @@ En este tutorial, obtendrá información sobre cómo crear un SDK de biblioteca 
 8. En el **configuración** columna, compruebe que **SimpleMath** fila se establece en **versión**y, a continuación, elija el **cerrar** botón para aceptar el cambio.
 
    > [!IMPORTANT]
-   > El SDK para el componente SimpleMath incluye sólo una configuración. Esta configuración debe ser la versión de compilación, o las aplicaciones que usan el componente no superan la certificación el[!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)].
+   > El SDK para el componente SimpleMath incluye sólo una configuración. Esta configuración debe ser la versión de compilación, o las aplicaciones que usan el componente no superan la certificación el [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)].
 
 9. En **el Explorador de soluciones**, abra el menú contextual para el **SimpleMath** nodo de proyecto y, a continuación, elija **compilar**.
 
@@ -153,7 +156,7 @@ En este tutorial, obtendrá información sobre cómo crear un SDK de biblioteca 
 
 ## <a name="createSample"></a> Para crear una aplicación de ejemplo que usa la biblioteca de clases
 
-1. En la barra de menús, elija **archivo** > **New** > **nuevo proyecto**.
+1. En la barra de menús, elija **Archivo** > **Nuevo** > **Proyecto**.
 
 2. En la lista de plantillas, expanda **Visual C#** o **Visual Basic**y, a continuación, elija el **Windows Store** nodo.
 
@@ -163,11 +166,11 @@ En este tutorial, obtendrá información sobre cómo crear un SDK de biblioteca 
 
 5. En la lista de tipos de referencia, expanda **Windows**y, a continuación, elija **extensiones**.
 
-6. En el panel de detalles, elija el **Simple SDK matemáticas** extensión.
+6. En el panel de detalles, elija el **WinRT Math Library** extensión.
 
     Aparece información adicional sobre el SDK. Puede elegir el **información más** vínculo para abrir https://msdn.microsoft.com/, tal y como se especificó en el archivo de SDKManifest.xml anteriormente en este tutorial.
 
-7. En el **Administrador de referencias** cuadro de diálogo, seleccione el **Simple SDK matemáticas** casilla de verificación y, a continuación, elija el **Aceptar** botón.
+7. En el **Administrador de referencias** cuadro de diálogo, seleccione el **biblioteca matemática de WinRT** casilla de verificación y, a continuación, elija el **Aceptar** botón.
 
 8. En la barra de menús, elija **vista** > **Examinador de objetos**.
 
@@ -181,11 +184,11 @@ En este tutorial, obtendrá información sobre cómo crear un SDK de biblioteca 
 
     ```xml
     <Page
-        x:Class="WinRTMathTestCS.MainPage"
+        x:Class="ArithmeticUI.MainPage"
         IsTabStop="False"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:local="using:WinRTMathTestCS"
+        xmlns:local="using:SimpleMath"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d">
@@ -207,11 +210,11 @@ En este tutorial, obtendrá información sobre cómo crear un SDK de biblioteca 
 
     ```xml
     <Page
-        x:Class="WinRTMathTest.MainPage"
+        x:Class="ArithmeticUI.MainPage"
         IsTabStop="False"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:local="using:WinRTMathTest"
+        xmlns:local="using:SimpleMath"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d">

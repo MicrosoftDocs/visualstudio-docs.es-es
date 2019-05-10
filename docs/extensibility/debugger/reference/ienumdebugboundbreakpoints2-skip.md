@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0636ef09afb5039c9d9c52202c2c3486c34319ef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a34decbeeaa4c0208eb803f48553fbfd18ad0eb9
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62867450"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65223463"
 ---
 # <a name="ienumdebugboundbreakpoints2skip"></a>IEnumDebugBoundBreakpoints2::Skip
 Omite el número especificado de elementos.
@@ -36,8 +39,8 @@ int Skip(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `celt`
+## <a name="parameters"></a>Parámetros
+ `celt`\
 
  [in] Número de elementos que se van a omitir.
 

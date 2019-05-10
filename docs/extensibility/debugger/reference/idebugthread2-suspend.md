@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e45cee0acab5fb2b5165e28895ab9a7dcb3ed9c1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: bd1987be34cf0f07ce5f37f074cd298a8135a4fa
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915476"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226399"
 ---
 # <a name="idebugthread2suspend"></a>IDebugThread2::Suspend
 Suspende un subproceso.
@@ -36,8 +39,8 @@ HRESULT Suspend ( 
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `pdwSuspendCount`
+## <a name="parameters"></a>Parámetros
+ `pdwSuspendCount`\
 
  [out] Devuelve el recuento de suspensión después de la operación de suspensión.
 

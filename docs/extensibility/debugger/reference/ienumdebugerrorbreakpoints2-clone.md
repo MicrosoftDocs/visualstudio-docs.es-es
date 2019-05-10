@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ce1b25c032dcdd7b2b9d1b2908904d1eaee6cd9e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 6031eaad34e38c6033de9b36c208c7dabddf6ce3
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62867295"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226605"
 ---
 # <a name="ienumdebugerrorbreakpoints2clone"></a>IEnumDebugErrorBreakpoints2::Clone
 Devuelve una copia de la enumeración actual como un objeto independiente.
@@ -36,8 +39,8 @@ int Clone(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `ppEnum`
+## <a name="parameters"></a>Parámetros
+ `ppEnum`\
 
  [out] Devuelve una copia de esta enumeración como un objeto independiente.
 

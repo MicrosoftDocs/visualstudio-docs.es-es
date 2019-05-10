@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2621b88622e99ac95533e388197e483f2925f897
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 5d6f416d284c1712f8e52b2655a74e08f6f9cfe1
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63420834"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458336"
 ---
 # <a name="symbolsearchinfofields"></a>SYMBOL_SEARCH_INFO_FIELDS
 Especifica el tipo de información de símbolos para recuperar.
@@ -42,10 +45,12 @@ public enum enum_SYMBOL_SEARCH_INFO_FIELDS
 
 ```
 
-## <a name="members"></a>Miembros
- SSIF_NONE no indica ninguna marca
+## <a name="fields"></a>Campos
+ `SSIF_NONE`\
+ No indica ninguna marca
 
- SSIF_VERBOSE_SEARCH_INFO devuelve que todas las rutas de acceso para buscar los símbolos de búsqueda
+ `SSIF_VERBOSE_SEARCH_INFO`\
+ Devuelve que todas las rutas de acceso para buscar los símbolos de búsqueda
 
 ## <a name="remarks"></a>Comentarios
  Estas marcas se pasan como un parámetro a la [GetSymbolInfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md) devuelto del método para determinar la cantidad de información.

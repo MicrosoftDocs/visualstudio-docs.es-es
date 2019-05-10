@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 43ec2c5d157832834f76834f7b93e193629b66d8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 9af7c5a7c757546b7da8fef4320be6d6cc101738
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62868392"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65224169"
 ---
 # <a name="idebugthread2cansetnextstatement"></a>IDebugThread2::CanSetNextStatement
 Determina si se puede establecer el puntero de instrucción actual en el marco de pila determinado.
@@ -38,10 +41,11 @@ int CanSetNextStatement ( 
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `pStackFrame` Reservado para uso futuro; se establece en un valor null. Si se trata de un valor null, utilice el marco de pila actual.
+## <a name="parameters"></a>Parámetros
+ `pStackFrame`\
+ Reservado para uso futuro; se establece en un valor null. Si se trata de un valor null, utilice el marco de pila actual.
 
- `pCodeContext`
+ `pCodeContext`\
 
  [in] Un [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) objeto que describe la ubicación del código va a ejecutar y su contexto.
 

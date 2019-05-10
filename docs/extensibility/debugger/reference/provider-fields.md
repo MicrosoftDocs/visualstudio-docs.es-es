@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 67c055c1cf9fffde227d4e52a9764b2559a2342b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 838a7dc0024e69335bf5c49c664bd491a6949d08
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62864803"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460921"
 ---
 # <a name="providerfields"></a>PROVIDER_FIELDS
 Especifica las propiedades asociadas con un proveedor de programa.
@@ -39,10 +42,12 @@ public enum enum_PROVIDER_FIELDS {
 };
 ```
 
-## <a name="members"></a>Miembros
- PFIELD_PROGRAM_NODES el `ProgramNodes` campo es válido.
+## <a name="fields"></a>Campos
+ `PFIELD_PROGRAM_NODES`\
+ El `ProgramNodes` campo es válido.
 
- PFIELD_IS_DEBUGGER_PRESENT el `fIsDebuggerPresent` campo es válido.
+ `PFIELD_IS_DEBUGGER_PRESENT`\
+ El `fIsDebuggerPresent` campo es válido.
 
 ## <a name="remarks"></a>Comentarios
  Estos valores se devuelven en el `Fields` miembro de la [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) estructura para indicar qué campos de la estructura se rellenaron explícitamente.

@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 568257f3ffb38329a95499815e8d7853a2fdb19f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bca2f3c93b7979413a9f0ea4dcaa5b521a362bd4
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62914752"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65225537"
 ---
 # <a name="ienumdebugerrorbreakpoints2"></a>IEnumDebugErrorBreakpoints2
 Esta interfaz enumera los puntos de interrupción de error asociados a un punto de interrupción pendiente.

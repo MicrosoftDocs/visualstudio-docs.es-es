@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 44a267b39ab630646803165a31f01b0bb4b45f47
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 2a05a903578e49b1b8ffefe0b0bb13fb693c993c
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62865815"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458087"
 ---
 # <a name="ipropertyproxyprovidergetpropertyproxy"></a>IPropertyProxyProvider::GetPropertyProxy
 Recupera la interfaz de proxy de la propiedad para el identificador del proxy especificado.
@@ -38,12 +41,12 @@ int GetPropertyProxy(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `dwID`
+## <a name="parameters"></a>Parámetros
+ `dwID`\
 
  [in] Id. del proxy de la propiedad deseada.
 
- `proxy`
+ `proxy`\
 
  [out] Devuelve un [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) objeto.
 

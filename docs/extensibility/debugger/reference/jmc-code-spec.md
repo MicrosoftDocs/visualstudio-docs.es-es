@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0fd27ee043e55b4dd43be956e41dd870be550562
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 4fe0a804922296e26846b9b477091883c742253e
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62865883"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458102"
 ---
 # <a name="jmccodespec"></a>JMC_CODE_SPEC
 Esta estructura se usa para establecer la información de JustMyCode de un módulo.
@@ -39,9 +42,11 @@ public struct JMC_CODE_SPEC {
 ```
 
 ## <a name="members"></a>Miembros
-fIsUserCode distinto de cero (`TRUE`) si el módulo es para considerarse código de usuario; de lo contrario, es cero (`FALSE`) si el módulo se tratarán como código externo y no va a depurar.
+`fIsUserCode`\
+Distinto de cero (`TRUE`) si el módulo es para considerarse código de usuario; de lo contrario, es cero (`FALSE`) si el módulo se tratarán como código externo y no va a depurar.
 
-bstrModuleName nombre del módulo en cuestión.
+`bstrModuleName`\
+Nombre del módulo en cuestión.
 
 ## <a name="remarks"></a>Comentarios
 Esta estructura se pasa como una lista de estas estructuras para el [SetJustMyCodeState](../../../extensibility/debugger/reference/idebugengine3-setjustmycodestate.md) método.

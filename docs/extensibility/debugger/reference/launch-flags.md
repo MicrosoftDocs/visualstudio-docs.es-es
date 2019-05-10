@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 302c44b3d4947baa95554966246f15175841257d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7ffdf2359b719be0fa3cf0a17ae4ed70bc36b673
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913928"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461056"
 ---
 # <a name="launchflags"></a>LAUNCH_FLAGS
 Especifica las marcas de inicio de depuración.
@@ -43,14 +46,18 @@ public enum enum_LAUNCH_FLAGS {
 };
 ```
 
-## <a name="members"></a>Miembros
-LAUNCH_DEBUG inicia el proceso de depuración.
+## <a name="fields"></a>Campos
+`LAUNCH_DEBUG`\
+Inicia el proceso de depuración.
 
-LAUNCH_NODEBUG inicia el proceso sin depurarlo.
+`LAUNCH_NODEBUG`\
+Inicia el proceso sin depurarlo.
 
-LAUNCH_ENABLE_ENC EN DESUSO, NO USE.
+`LAUNCH_ENABLE_ENC`\
+EN DESUSO, NO USE.
 
-LAUNCH_MERGE_ENV inicia el proceso y combina el entorno con el host al iniciar.
+`LAUNCH_MERGE_ENV`\
+Inicia el proceso y combina el entorno con el host al iniciar.
 
 ## <a name="remarks"></a>Comentarios
 Estos valores se pasan como argumento a la [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) método.

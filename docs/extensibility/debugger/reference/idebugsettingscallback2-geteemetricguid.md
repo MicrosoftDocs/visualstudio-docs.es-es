@@ -10,12 +10,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f2bffa499d24bc38008982c990efd19205e95f6f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 75d934b4896614655a2043e1f6ba549d72f99e2d
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62869036"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457461"
 ---
 # <a name="idebugsettingscallback2geteemetricguid"></a>IDebugSettingsCallback2::GetEEMetricGuid
 Recupera el identificador único para una métrica de evaluador de expresión dado su nombre.
@@ -40,20 +43,20 @@ HRESULT GetEEMetricGuid(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `guidLang`
+## <a name="parameters"></a>Parámetros
+ `guidLang`\
 
  [in] Identificador único del lenguaje de programación.
 
- `guidVendor`
+ `guidVendor`\
 
  [in] Identificador único del proveedor.
 
- `pszMetric`
+ `pszMetric`\
 
  [in] Nombre de la métrica.
 
- `pguidValue`
+ `pguidValue`\
 
  [out] Devuelve el identificador único de la métrica.
 

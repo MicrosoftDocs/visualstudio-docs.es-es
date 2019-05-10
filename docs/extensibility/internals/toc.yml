@@ -3,13 +3,15 @@
 - name: Visual Studio Shell
   href: visual-studio-shell.md
 - name: 'Comandos, menús y barras de herramientas'
-  href: commands-menus-and-toolbars.md
   items:
+    - name: 'Comandos, menús y barras de herramientas'
+      href: commands-menus-and-toolbars.md
     - name: Cómo VSPackages agrega elementos de la interfaz de usuario
       href: how-vspackages-add-user-interface-elements.md
     - name: Archivos de tabla de comandos de Visual Studio (.Vsct)
-      href: visual-studio-command-table-dot-vsct-files.md
       items:
+        - name: Archivos de tabla de comandos de Visual Studio (.Vsct)
+          href: visual-studio-command-table-dot-vsct-files.md
         - name: Creación de archivos .Vsct
           href: authoring-dot-vsct-files.md
         - name: Diseñar archivos de tabla de comandos XML (.Vsct)
@@ -21,8 +23,9 @@
     - name: 'Ubicación predeterminada de comando, grupo y barra de herramientas'
       href: default-command-group-and-toolbar-placement.md
     - name: 'Grupos, menús y comandos definidos por el IDE'
-      href: ide-defined-commands-menus-and-groups.md
       items:
+        - name: 'Grupos, menús y comandos definidos por el IDE'
+          href: ide-defined-commands-menus-and-groups.md
         - name: GUID e identificadores de menús de Visual Studio
           href: guids-and-ids-of-visual-studio-menus.md
         - name: GUID e identificadores de barras de herramientas de Visual Studio
@@ -30,8 +33,9 @@
         - name: GUID e identificadores de comandos de Visual Studio
           href: guids-and-ids-of-visual-studio-commands.md
     - name: Diseño de comandos
-      href: command-design.md
       items:
+        - name: Diseño de comandos
+          href: command-design.md
         - name: Implementación de comandos
           href: command-implementation.md
         - name: Disponibilidad de comandos
@@ -45,8 +49,9 @@
     - name: Puesta a disposición de comandos
       href: making-commands-available.md
     - name: Comandos y menús que usan ensamblados de interoperabilidad
-      href: commands-and-menus-that-use-interop-assemblies.md
       items:
+        - name: Comandos y menús que usan ensamblados de interoperabilidad
+          href: commands-and-menus-that-use-interop-assemblies.md
         - name: Determinación del estado de los comandos mediante ensamblados de interoperabilidad
           href: determining-command-status-by-using-interop-assemblies.md
         - name: Contratos de comandos en los ensamblados de interoperabilidad
@@ -58,8 +63,9 @@
     - name: Enrutamiento de comandos en VSPackages
       href: command-routing-in-vspackages.md
 - name: VSPackages
-  href: vspackages.md
   items:
+    - name: VSPackages
+      href: vspackages.md
     - name: Especificación de la ubicación del archivo de VSPackage en el Shell de VS
       href: specifying-vspackage-file-location-to-the-vs-shell.md
     - name: Recursos de VSPackages
@@ -69,11 +75,13 @@
     - name: Registro de VSPackages
       href: registering-vspackages.md
 - name: Ventanas de documento
-  href: document-windows.md
   items:
+    - name: Ventanas de documento
+      href: document-windows.md
     - name: Tabla de documentos en ejecución
-      href: running-document-table.md
       items:
+        - name: Tabla de documentos en ejecución
+          href: running-document-table.md
         - name: Uso de RDT_ReadLock
           href: rdt-readlock-usage.md
         - name: Persistencia y tabla de documentos en ejecución
@@ -81,22 +89,25 @@
     - name: Carga de documentos retrasada
       href: delayed-document-loading.md
 - name: Extensibilidad de servicio de lenguaje heredado
-  href: legacy-language-service-extensibility.md
   items:
+    - name: Extensibilidad de servicio de lenguaje heredado
+      href: legacy-language-service-extensibility.md
     - name: Migración de un servicio de lenguaje heredado
       href: migrating-a-legacy-language-service.md
     - name: Fundamentos de servicio de lenguaje heredado
       href: legacy-language-service-essentials.md
     - name: Desarrollo de un servicio de lenguaje heredado
-      href: developing-a-legacy-language-service.md
       items:
+        - name: Desarrollo de un servicio de lenguaje heredado
+          href: developing-a-legacy-language-service.md
         - name: Modelo de un servicio de lenguaje heredado
           href: model-of-a-legacy-language-service.md
         - name: Interfaces de servicio de lenguaje heredado
           href: legacy-language-service-interfaces.md
         - name: Intercepción de comandos del servicio de lenguaje heredado
-          href: intercepting-legacy-language-service-commands.md
           items:
+            - name: Intercepción de comandos del servicio de lenguaje heredado
+              href: intercepting-legacy-language-service-commands.md
             - name: Comandos importantes para los filtros del servicio de lenguaje
               href: important-commands-for-language-service-filters.md
         - name: Registro de un servicio de lenguaje heredado2
@@ -104,11 +115,13 @@
         - name: 'Lista de comprobación: Creación de un servicio de lenguaje heredado'
           href: checklist-creating-a-legacy-language-service.md
         - name: Características del servicio de lenguaje heredado2
-          href: legacy-language-service-features2.md
           items:
+            - name: Características del servicio de lenguaje heredado2
+              href: legacy-language-service-features2.md
             - name: Colores de la sintaxis en un servicio de lenguaje heredado
-              href: syntax-coloring-in-a-legacy-language-service.md
               items:
+                - name: Colores de la sintaxis en un servicio de lenguaje heredado
+                  href: syntax-coloring-in-a-legacy-language-service.md
                 - name: Implementación de colores de la sintaxis
                   href: implementing-syntax-coloring.md
                 - name: Usar elementos coloreables integrados
@@ -122,8 +135,9 @@
             - name: Finalización de instrucciones en un servicio de lenguaje heredado
               href: statement-completion-in-a-legacy-language-service.md
             - name: Esquematización y texto oculto en un servicio de lenguaje heredado
-              href: outlining-and-hidden-text-in-a-legacy-language-service.md
               items:
+                - name: Esquematización y texto oculto en un servicio de lenguaje heredado
+                  href: outlining-and-hidden-text-in-a-legacy-language-service.md
                 - name: Compatibilidad de la esquematización en un servicio de lenguaje heredado
                   href: how-to-support-outlining-in-a-legacy-language-service.md
                 - name: Provisión de compatibilidad con texto oculto en un servicio de lenguaje heredado
@@ -133,8 +147,9 @@
             - name: Compatibilidad del servicio de lenguaje con la depuración
               href: language-service-support-for-debugging.md
     - name: Implementación de un servicio de lenguaje heredado1
-      href: implementing-a-legacy-language-service1.md
       items:
+        - name: Implementación de un servicio de lenguaje heredado1
+          href: implementing-a-legacy-language-service1.md
         - name: Información general del servicio de lenguaje heredado
           href: legacy-language-service-overview.md
         - name: Implementación de un servicio de lenguaje heredado2
@@ -148,8 +163,9 @@
         - name: 'Tutorial: Obtención de una lista de los fragmentos de código instalados (implementación heredada)'
           href: walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md
         - name: Características del servicio de lenguaje heredado1
-          href: legacy-language-service-features1.md
           items:
+            - name: Características del servicio de lenguaje heredado1
+              href: legacy-language-service-features1.md
             - name: Coincidencia de llaves en un servicio de lenguaje heredado
               href: brace-matching-in-a-legacy-language-service.md
             - name: Comentario de código en un servicio de lenguaje heredado
@@ -179,8 +195,9 @@
             - name: Validación de puntos de interrupción en un servicio de lenguaje heredado
               href: validating-breakpoints-in-a-legacy-language-service.md
     - name: Compatibilidad con herramientas de exploración de símbolos
-      href: supporting-symbol-browsing-tools.md
       items:
+        - name: Compatibilidad con herramientas de exploración de símbolos
+          href: supporting-symbol-browsing-tools.md
         - name: Registrar una biblioteca con el Administrador de objetos
           href: how-to-register-a-library-with-the-object-manager.md
         - name: Exponer listas de símbolos proporcionadas por la biblioteca al Administrador de objetos
@@ -188,20 +205,23 @@
         - name: Identificar símbolos en una biblioteca
           href: how-to-identify-symbols-in-a-library.md
 - name: Proyectos
-  href: projects.md
   items:
+    - name: Proyectos
+      href: projects.md
     - name: 'Generación de nuevos proyectos: Aspectos técnicos (parte 1)'
       href: new-project-generation-under-the-hood-part-one.md
     - name: 'Generación de nuevos proyectos: Aspectos técnicos (parte 2)'
       href: new-project-generation-under-the-hood-part-two.md
     - name: Tipos de proyecto
-      href: project-types.md
       items:
+        - name: Tipos de proyecto
+          href: project-types.md
         - name: Conceptos básicos del tipo de proyecto
           href: project-type-essentials.md
         - name: Creación de tipos de proyecto
-          href: creating-project-types.md
           items:
+            - name: Creación de tipos de proyecto
+              href: creating-project-types.md
             - name: Decisiones de diseño del tipo de proyecto
               href: project-type-design-decisions.md
             - name: 'Lista de comprobación: Creación de nuevos tipos de proyectos'
@@ -217,8 +237,9 @@
             - name: Uso de MSBuild
               href: using-msbuild.md
         - name: Adición de plantillas de proyecto y de elementos de proyecto
-          href: adding-project-and-project-item-templates.md
           items:
+            - name: Adición de plantillas de proyecto y de elementos de proyecto
+              href: adding-project-and-project-item-templates.md
             - name: Contexto del proyecto
               href: project-context.md
             - name: Prioridad del proyecto
@@ -238,8 +259,9 @@
             - name: CATID para los objetos que se usan normalmente para ampliar proyectos
               href: catids-for-objects-that-are-typically-used-to-extend-projects.md
         - name: Apertura y guardado de elementos de proyecto
-          href: opening-and-saving-project-items.md
           items:
+            - name: Apertura y guardado de elementos de proyecto
+              href: opening-and-saving-project-items.md
             - name: Visualización de archivos mediante el comando Abrir archivo
               href: displaying-files-by-using-the-open-file-command.md
             - name: Visualización de archivos mediante el comando Abrir con
@@ -251,8 +273,9 @@
             - name: Determinación del editor que abre un archivo en un proyecto
               href: determining-which-editor-opens-a-file-in-a-project.md
         - name: Administración de opciones de configuración
-          href: managing-configuration-options.md
           items:
+            - name: Administración de opciones de configuración
+              href: managing-configuration-options.md
             - name: Información general de opciones de configuración
               href: configuration-options-overview.md
             - name: Páginas de propiedades
@@ -268,8 +291,9 @@
             - name: Configuración del proyecto para la salida
               href: project-configuration-for-output.md
         - name: Compatibilidad con control de código fuente
-          href: supporting-source-control.md
           items:
+            - name: Compatibilidad con control de código fuente
+              href: supporting-source-control.md
             - name: Modelo para paquetes de control de código fuente
               href: model-for-source-control-packages.md
             - name: Decisiones de diseño del control de código fuente
@@ -281,8 +305,9 @@
             - name: Detalles de tiempo de ejecución del control de código fuente
               href: source-control-runtime-details.md
         - name: Anidamiento de proyectos
-          href: nesting-projects.md
           items:
+            - name: Anidamiento de proyectos
+              href: nesting-projects.md
             - name: Implementar proyectos anidados
               href: how-to-implement-nested-projects.md
             - name: Consideraciones para descargar y volver a cargar proyectos anidados
@@ -296,8 +321,9 @@
         - name: Actualización de proyectos
           href: upgrading-projects.md
         - name: Arquitectura de tipos de proyecto
-          href: project-types-architecture.md
           items:
+            - name: Arquitectura de tipos de proyecto
+              href: project-types-architecture.md
             - name: Elementos de un modelo de proyecto
               href: elements-of-a-project-model.md
             - name: Componentes principales del modelo de proyecto
@@ -305,8 +331,9 @@
             - name: Momento para la creación de tipos de proyecto
               href: when-to-create-project-types.md
             - name: Jerarquías y selección
-              href: hierarchies-and-selection.md
               items:
+                - name: Jerarquías y selección
+                  href: hierarchies-and-selection.md
                 - name: Jerarquías en Visual Studio
                   href: hierarchies-in-visual-studio.md
                 - name: Selección y moneda en el IDE
@@ -316,8 +343,9 @@
                 - name: Comentarios para el usuario
                   href: feedback-to-the-user.md
     - name: Subtipos de proyecto
-      href: project-subtypes.md
       items:
+        - name: Subtipos de proyecto
+          href: project-subtypes.md
         - name: Diseño de subtipos de proyecto
           href: project-subtypes-design.md
         - name: Secuencia de inicialización de subtipos de proyecto
@@ -333,13 +361,15 @@
         - name: Contribución al cuadro de diálogo Agregar nuevo elemento
           href: contributing-to-the-add-new-item-dialog-box.md
     - name: Proyectos web
-      href: web-projects.md
       items:
+        - name: Proyectos web
+          href: web-projects.md
         - name: Conceptos básicos del proyecto web
           href: web-project-essentials.md
         - name: Compatibilidad del sitio web
-          href: web-site-support.md
           items:
+            - name: Compatibilidad del sitio web
+              href: web-site-support.md
             - name: Plantillas de compatibilidad del sitio web
               href: web-site-support-templates.md
             - name: Atributos de compatibilidad del sitio web
@@ -347,8 +377,9 @@
     - name: Control de implementación especializada
       href: handling-specialized-deployment.md
     - name: Contribución al modelo de automatización
-      href: contributing-to-the-automation-model.md
       items:
+        - name: Contribución al modelo de automatización
+          href: contributing-to-the-automation-model.md
         - name: Información general del modelo de automatización
           href: automation-model-overview.md
         - name: Provisión de automatización de VSPackages
@@ -370,15 +401,17 @@
         - name: Automatización para configuración y objetos SelectedItem
           href: automation-for-configuration-and-selecteditem-objects.md
 - name: Soluciones
-  href: solutions-overview.md
   items:
+    - name: Soluciones
+      href: solutions-overview.md
     - name: Archivo de la solución (.Sln)
       href: solution-dot-sln-file.md
     - name: Archivo de opciones de usuario de la solución (.Suo)
       href: solution-user-options-dot-suo-file.md
 - name: Extensión de propiedades
-  href: extending-properties.md
   items:
+    - name: Extensión de propiedades
+      href: extending-properties.md
     - name: Información general sobre la ventana Propiedades
       href: properties-window-overview.md
     - name: Directiva de plantilla y ventana Propiedades
@@ -394,42 +427,49 @@
     - name: Compatibilidad con las propiedades de proyecto y configuración
       href: support-for-project-and-configuration-properties.md
 - name: Opciones y páginas de opciones
-  href: options-and-options-pages.md
   items:
+    - name: Opciones y páginas de opciones
+      href: options-and-options-pages.md
     - name: Creación de páginas de opciones
       href: creating-options-pages.md
 - name: Compatibilidad con la configuración de usuario
   href: support-for-user-settings.md
 - name: Conceptos básicos del servicio
-  href: service-essentials.md
   items:
+    - name: Conceptos básicos del servicio
+      href: service-essentials.md
     - name: Lista de servicios disponibles
       href: list-of-available-services.md
 - name: Extensibilidad del depurador de Visual Studio
   href: ../debugger/toc.yml
 - name: Control de código fuente
-  href: source-control.md
   items:
+    - name: Control de código fuente
+      href: source-control.md
     - name: Conceptos básicos de la integración del control de código fuente
       href: source-control-integration-essentials.md
     - name: Información general de la integración del control de código fuente
-      href: source-control-integration-overview.md
       items:
+        - name: Información general de la integración del control de código fuente
+          href: source-control-integration-overview.md
         - name: Novedades del control de código fuente
           href: what-s-new-in-source-control.md
     - name: Creación de un complemento de control de código fuente
-      href: creating-a-source-control-plug-in.md
       items:
+        - name: Creación de un complemento de control de código fuente
+          href: creating-a-source-control-plug-in.md
         - name: Introducción a los complementos de control de código fuente
-          href: getting-started-with-source-control-plug-ins.md
           items:
+            - name: Introducción a los complementos de control de código fuente
+              href: getting-started-with-source-control-plug-ins.md
             - name: Instalar un complemento de control de código fuente
               href: how-to-install-a-source-control-plug-in.md
             - name: 'Novedades de la API del complemento de control de código fuente, versión 1.3'
               href: what-s-new-in-the-source-control-plug-in-api-version-1-3.md
             - name: 'Novedades de la API del complemento de control de código fuente, versión 1.2'
-              href: what-s-new-in-the-source-control-plug-in-api-version-1-2.md
               items:
+                - name: 'Novedades de la API del complemento de control de código fuente, versión 1.2'
+                  href: what-s-new-in-the-source-control-plug-in-api-version-1-2.md
                 - name: Eliminación de archivos ~SAK
                   href: elimination-of-tilde-sak-files.md
                 - name: Aplicación de configuración en varias conexiones de proyecto
@@ -443,8 +483,9 @@
         - name: Arquitectura de complemento de control de código fuente
           href: source-control-plug-in-architecture.md
         - name: Guía de pruebas para los complementos de control de código fuente
-          href: test-guide-for-source-control-plug-ins.md
           items:
+            - name: Guía de pruebas para los complementos de control de código fuente
+              href: test-guide-for-source-control-plug-ins.md
             - name: 'Área de prueba 1: Incorporación y apertura desde el control de código fuente'
               href: test-area-1-add-to-open-from-source-control.md
             - name: 'Área de prueba 2: Obtención desde el control de código fuente'
@@ -462,18 +503,21 @@
             - name: 'Área de prueba 8: Cambio de los complementos'
               href: test-area-8-plug-in-switching.md
     - name: Creación de un VSPackage de control de código fuente
-      href: creating-a-source-control-vspackage.md
       items:
+        - name: Creación de un VSPackage de control de código fuente
+          href: creating-a-source-control-vspackage.md
         - name: Introducción a VSPackages de control de código fuente
-          href: getting-started-with-source-control-vspackages.md
           items:
+            - name: Introducción a VSPackages de control de código fuente
+              href: getting-started-with-source-control-vspackages.md
             - name: Determinación de si se debe implementar un VSPackage de control de código fuente
               href: determining-whether-to-implement-a-source-control-vspackage.md
         - name: Arquitectura de VSPackage de control de código fuente
           href: source-control-vspackage-architecture.md
         - name: Características de VSPackage de control de código fuente
-          href: source-control-vspackage-features.md
           items:
+            - name: Características de VSPackage de control de código fuente
+              href: source-control-vspackage-features.md
             - name: Registro y selección (VSPackage de control de código fuente)
               href: registration-and-selection-source-control-vspackage.md
             - name: Editar/guardar consulta (VSPackage de control de código fuente)
@@ -483,8 +527,9 @@
             - name: Interfaz de usuario personalizada (VSPackage de control de código fuente)
               href: custom-user-interface-source-control-vspackage.md
         - name: Elementos de diseño de VSPackage de control de código fuente
-          href: source-control-vspackage-design-elements.md
           items:
+            - name: Elementos de diseño de VSPackage de control de código fuente
+              href: source-control-vspackage-design-elements.md
             - name: Estructura de VSPackage (VSPackage de control de código fuente)
               href: vspackage-structure-source-control-vspackage.md
             - name: Interfaces y servicios relacionados (VSPackage de control de código fuente)
@@ -492,8 +537,9 @@
             - name: Servicios proporcionados (VSPackage de control de código fuente)
               href: services-provided-source-control-vspackage.md
 - name: Asistentes
-  href: wizards.md
   items:
+    - name: Asistentes
+      href: wizards.md
     - name: Archivos de descripción del directorio de plantilla (.Vsdir)
       href: template-directory-description-dot-vsdir-files.md
     - name: Archivo de asistente (.Vsz)
@@ -505,8 +551,9 @@
     - name: Parámetros personalizados
       href: custom-parameters.md
 - name: Herramientas personalizadas
-  href: custom-tools.md
   items:
+    - name: Herramientas personalizadas
+      href: custom-tools.md
     - name: Implementación de generadores de un solo archivo
       href: implementing-single-file-generators.md
     - name: Registro de generadores de un solo archivo
@@ -514,11 +561,13 @@
     - name: Exposición de tipos a diseñadores visuales
       href: exposing-types-to-visual-designers.md
 - name: Utilidades VSSDK
-  href: vssdk-utilities.md
   items:
+    - name: Utilidades VSSDK
+      href: vssdk-utilities.md
     - name: Utilidad RegPkg
-      href: regpkg-utility.md
       items:
+        - name: Utilidad RegPkg
+          href: regpkg-utility.md
         - name: Solución de problemas del registro de paquete RegPkg
           href: troubleshooting-regpkg-package-registration.md
     - name: Utilidad CreatePkgDef
@@ -526,15 +575,17 @@
     - name: Utilidad CreateExpInstance
       href: createexpinstance-utility.md
     - name: Herramientas de creación de temas de color
-      href: color-theming-tools.md
       items:
+        - name: Herramientas de creación de temas de color
+          href: color-theming-tools.md
         - name: Editor de colores de VSIX
           href: vsix-color-editor.md
         - name: Compilador de colores de VSIX
           href: vsix-color-compiler.md
     - name: Herramientas de servicio de imágenes
-      href: image-service-tools.md
       items:
+        - name: Herramientas de servicio de imágenes
+          href: image-service-tools.md
         - name: Manifest from Resources
           href: manifest-from-resources.md
         - name: Manifest to Code
@@ -542,8 +593,9 @@
         - name: Visor de la biblioteca de imágenes
           href: image-library-viewer.md
 - name: Instalación de VSPackages con Windows Installer
-  href: installing-vspackages-with-windows-installer.md
   items:
+    - name: Instalación de VSPackages con Windows Installer
+      href: installing-vspackages-with-windows-installer.md
     - name: Datos básicos de Windows Installer
       href: windows-installer-basics.md
     - name: Escenarios de instalación de VSPackage

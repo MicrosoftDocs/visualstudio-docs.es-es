@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b688e1199fefb050c05cc69784256b156e23094d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f7214bfc1d4260a3baa03464d541993a264faefa
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62567837"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460656"
 ---
 # <a name="could-not-retrieve-schema-information-for-database-object-object-name"></a>No se ha podido recuperar información de esquema del objeto de base de datos \<nombre de objeto>
 
@@ -21,5 +21,4 @@ Este mensaje suele aparecer cuando un objeto del **Explorador de servidores** o 
 
 ## <a name="see-also"></a>Vea también
 
-- [Mensajes de Object Relational Designer](../data-tools/o-r-designer-messages.md)
 - [LINQ to SQL tools en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) (Herramientas LINQ to SQL en Visual Studio)

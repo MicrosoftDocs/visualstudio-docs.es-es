@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 017077717f5353fed941124d69d258beaab04e40
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 920e74b547bba97a742b68ceb057a0719d6ef700
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62823691"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65459145"
 ---
 # <a name="install-fxcop-analyzers-in-visual-studio"></a>Instalar analizadores de FxCop en Visual Studio
 
@@ -53,9 +53,9 @@ Utilice las siguientes directrices para determinar qué versión del paquete de 
 
 ## <a name="to-install-fxcop-analyzers-as-a-vsix"></a>Para instalar analizadores de FxCop como una extensión VSIX
 
-En Visual Studio 2017 versión 15.5 y versiones posterior, puede instalar el [2017 de análisis de código de Microsoft](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2017) extensión que contiene todos los analizadores de FxCop para proyectos administrados.
-
 ::: moniker range="vs-2017"
+
+En Visual Studio 2017 versión 15.5 y versiones posterior, puede instalar el [2017 de análisis de código de Microsoft](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2017) extensión que contiene todos los analizadores de FxCop para proyectos administrados.
 
 1. En Visual Studio, seleccione **herramientas** > **extensiones y actualizaciones**.
 
@@ -64,40 +64,52 @@ En Visual Studio 2017 versión 15.5 y versiones posterior, puede instalar el [20
    > [!NOTE]
    > Como alternativa, descargue la extensión directamente desde [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2017).
 
+2. Expanda **Online** en el panel izquierdo y, a continuación, seleccione **Visual Studio Marketplace**.
+
+3. En el cuadro de búsqueda, escriba "análisis de código" y busque el **2017 de análisis de código de Microsoft** extensión.
+
+   ![Extensión de Microsoft de 2017 de análisis de código](media/extensions-and-updates-code-analysis.png)
+
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
+
+El [2019 de análisis de código de Microsoft](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2019) extensión contiene todos los analizadores de FxCop para proyectos administrados. Para instalar esta extensión:
 
 1. En Visual Studio, seleccione **extensiones** > **administrar extensiones**.
 
    El **administrar extensiones** abre el cuadro de diálogo.
 
    > [!NOTE]
-   > Como alternativa, descargue la extensión directamente desde [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2017).
+   > Como alternativa, descargue la extensión directamente desde [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.MicrosoftCodeAnalysis2019).
+
+2. Expanda **Online** en el panel izquierdo y, a continuación, seleccione **Visual Studio Marketplace**.
+
+3. En el cuadro de búsqueda, escriba "análisis de código" y busque el **2019 de análisis de código de Microsoft** extensión.
+
+   ![Extensión de 2019 de análisis de código de Microsoft](media/manage-extensions-code-analysis.png)
 
 ::: moniker-end
 
-1. Expanda **Online** en el panel izquierdo y, a continuación, seleccione **Visual Studio Marketplace**.
-
-1. En el cuadro de búsqueda, escriba "análisis de código" y busque el **2017 de análisis de código de Microsoft** extensión.
-
-   ![Extensión de análisis de código de Microsoft](media/extensions-and-updates-code-analysis.png)
-
-1. Seleccione **descargar**.
+4. Seleccione **descargar**.
 
    Descargar la extensión.
 
-1. Seleccione **Aceptar** para cerrar el cuadro de diálogo y, a continuación, cierre todas las instancias de Visual Studio para iniciar el **instalador de VSIX**.
+5. Seleccione **Aceptar** para cerrar el cuadro de diálogo y, a continuación, cierre todas las instancias de Visual Studio para iniciar el **instalador de VSIX**.
 
    El **instalador de VSIX** abre el cuadro de diálogo.
 
+   ::: moniker range="vs-2017"
+
    ![Instalador de VSIX para el análisis de código de Microsoft](media/vsix-installer-code-analysis.png)
 
-1. Seleccione **modificar** para iniciar la instalación.
+   ::: moniker-end
 
-1. Después de un minuto o dos, se completa la instalación. Seleccione **Cerrar**.
+6. Seleccione **modificar** para iniciar la instalación.
 
-1. Vuelva a abrir Visual Studio.
+   Después de un minuto o dos, se completa la instalación.
+
+7. Seleccione **cerrar**, a continuación, vuelva a abrir Visual Studio.
 
 ::: moniker range="vs-2017"
 

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 421eea42c169f586657998e5d4cd57c4c797b71e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: c31d3a858af2886a27a51e22e131cb89b2234d6e
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62916909"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65459076"
 ---
 # <a name="idebugprogramnode2getengineinfo"></a>IDebugProgramNode2::GetEngineInfo
 Obtiene el nombre y el identificador del motor de depuración (DE) ejecuta un programa.
@@ -38,12 +41,12 @@ int GetEngineInfo(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `pbstrEngine`
+## <a name="parameters"></a>Parámetros
+ `pbstrEngine`\
 
  [out] Devuelve el nombre de la DE ejecutar el programa (C++-específico: Esto puede ser un puntero null que indica que el llamador no está interesado en el nombre del motor).
 
- `pguidEngine`
+ `pguidEngine`\
 
  [out] Devuelve el identificador único global de la DE ejecutar el programa (C++-específico: Esto puede ser un puntero null que indica que el llamador no está interesado en el GUID del motor).
 

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7bf31379f99c9cde8b0050b080797f3a4e70acea
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 82b2e6da51b695bdc6fd2fd031a1f9decf484daa
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62916568"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457656"
 ---
 # <a name="idebugproperty3getcustomviewerlist"></a>IDebugProperty3::GetCustomViewerList
 Obtiene una lista de visores personalizados asociados a esta propiedad.
@@ -42,20 +45,20 @@ int GetCustomViewerList(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
-`celtSkip`
+## <a name="parameters"></a>Parámetros
+`celtSkip`\
 
  [in] El número de lectores para pasarla por alto.
 
-`celtRequested`
+`celtRequested`\
 
  [in] El número de lectores para recuperar (también especifica el tamaño de la `rgViewers` matriz).
 
-`rgViewers`
+`rgViewers`\
 
  [in, out] Matriz de [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md) estructuras que deben rellenarse.
 
-`pceltFetched`
+`pceltFetched`\
 
  [out] Devuelve el número real de los visores.
 

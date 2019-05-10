@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 42a596eb8d720a273d89586427232dcf833f8595
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 55157ab9a045b404175369e9682c525929f5e624
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62864987"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460830"
 ---
 # <a name="processinfoflags"></a>PROCESS_INFO_FLAGS
 
@@ -43,15 +46,19 @@ enum enum_PROCESS_INFO_FLAGS { 
 };
 ```
 
-## <a name="members"></a>Miembros
+## <a name="fields"></a>Campos
 
-PIFLAG_SYSTEM_PROCESS indica que el proceso es un proceso del sistema.
+`PIFLAG_SYSTEM_PROCESS`\
+Indica que el proceso es un proceso del sistema.
 
-PIFLAG_DEBUGGER_ATTACHED indica que el proceso se está depurando un depurador. Puede ser un [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] depurador, o bien puede ser algún otro depurador, por ejemplo, WinDbg.
+`PIFLAG_DEBUGGER_ATTACHED`\
+Indica que el proceso se está depurando un depurador. Puede ser un [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] depurador, o bien puede ser algún otro depurador, por ejemplo, WinDbg.
 
-PIFLAG_PROCESS_STOPPED indica que el proceso se detiene. Sólo es válido si `PIFLAG_DEBUGGER_ATTACHED` también se especifica. Disponible en Visual Studio 2005 y versiones posteriores.
+`PIFLAG_PROCESS_STOPPED`\
+Indica que el proceso se detiene. Sólo es válido si `PIFLAG_DEBUGGER_ATTACHED` también se especifica. Disponible en Visual Studio 2005 y versiones posteriores.
 
-PIFLAG_PROCESS_RUNNING indica que el proceso se está ejecutando. Sólo es válido si `PIFLAG_DEBUGGER_ATTACHED` también se especifica. Disponible en Visual Studio 2005 y versiones posteriores.
+`PIFLAG_PROCESS_RUNNING`\
+Indica que se está ejecutando el proceso. Sólo es válido si `PIFLAG_DEBUGGER_ATTACHED` también se especifica. Disponible en Visual Studio 2005 y versiones posteriores.
 
 ## <a name="remarks"></a>Comentarios
 
