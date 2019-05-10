@@ -12,15 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: db9a7eae6a0a37f8bd1f530afe067f4766197591
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 76a7267690f359d960a0c5e9b6f6a1c502d5d4f1
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62914112"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461177"
 ---
 # <a name="ienumdebugthreads2"></a>IEnumDebugThreads2
-Este interfac enumera los subprocesos que se ejecutan en la sesión de depuración actual.
+Esta interfaz enumera los subprocesos que se ejecutan en la sesión de depuración actual.
 
 ## <a name="syntax"></a>Sintaxis
 

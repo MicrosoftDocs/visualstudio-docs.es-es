@@ -19,15 +19,17 @@
 - name: Guías de procedimientos
   items:
     - name: Proyectos de R
-      href: r-projects-in-visual-studio.md
       items:
+        - name: Proyectos de R
+          href: r-projects-in-visual-studio.md
         - name: Administrador de paquetes
           href: r-package-manager-in-visual-studio.md
         - name: Integración de SQL Server
           href: integrating-sql-server-with-r.md
     - name: Edición de código
-      href: editing-r-code-in-visual-studio.md
       items:
+        - name: Edición de código
+          href: editing-r-code-in-visual-studio.md
         - name: IntelliSense
           href: r-intellisense.md
         - name: Detección de errores
@@ -35,8 +37,9 @@
         - name: Fragmentos de código
           href: code-snippets-for-r.md
     - name: Áreas de trabajo (locales y remotas)
-      href: r-workspaces-in-visual-studio.md
       items:
+        - name: Áreas de trabajo (locales y remotas)
+          href: r-workspaces-in-visual-studio.md
         - name: Configuración de áreas de trabajo remotas
           href: setting-up-remote-r-workspaces.md
         - name: Servicio R remoto para Linux

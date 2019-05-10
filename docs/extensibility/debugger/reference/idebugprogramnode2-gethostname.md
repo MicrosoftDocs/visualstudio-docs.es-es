@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 19bb7f56077abd276936fe8342e74ecda6f5770a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7fcf99f290938a6f51ce1e59ac1e14966206ee5b
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62916922"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65459060"
 ---
 # <a name="idebugprogramnode2gethostname"></a>IDebugProgramNode2::GetHostName
 Obtiene el nombre del proceso que hospeda el programa.
@@ -38,12 +41,12 @@ int GetHostName (
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
-`dwHostNameType`
+## <a name="parameters"></a>Parámetros
+`dwHostNameType`\
 
  [in] Un valor de la [GETHOSTNAME_TYPE](../../../extensibility/debugger/reference/gethostname-type.md) enumeración que especifica el tipo de nombre para devolver.
 
-`pbstrHostName`
+`pbstrHostName`\
 
  [out] Devuelve el nombre del proceso de hospedaje.
 

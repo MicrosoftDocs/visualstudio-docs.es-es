@@ -21,12 +21,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 07ba2c64be0af987b82c870b89d3451b5d48d28f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5c4221783768f1e579ecad74fdfaf6e74214edfd
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62540832"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226130"
 ---
 # <a name="code-analysis-for-cc-overview"></a>Análisis de código para obtener información general de C/C++
 
@@ -50,11 +50,11 @@ C:\>cl /analyze Sample.cpp
 
 ## <a name="pragma-support"></a>compatibilidad con #pragma
 
-Puede usar el `#pragma` directiva para tratar advertencias como errores; habilitar o deshabilitar las advertencias y suprimir advertencias de líneas de código individuales. Para obtener más información, vea [Cómo: Establecer propiedades de análisis de código para los proyectos de C o C++](how-to-set-code-analysis-properties-for-c-cpp-projects.md).
+Puede usar el `#pragma` directiva para tratar advertencias como errores; habilitar o deshabilitar las advertencias y suprimir advertencias de líneas de código individuales. Para obtener más información, vea [Directives pragma y la palabra clave __pragma](https://docs.microsoft.com/cpp/preprocessor/pragma-directives-and-the-pragma-keyword).
 
 ## <a name="annotation-support"></a>Compatibilidad con la anotación
 
-Las anotaciones mejoran la precisión del análisis de código. Las anotaciones proporcionan información adicional sobre las condiciones previas y posteriores en los parámetros de función y los tipos de valor devuelto. Para obtener más información, vea [Cómo: Especificar información de código adicional mediante __analysis_assume](../code-quality/how-to-specify-additional-code-information-by-using-analysis-assume.md)
+Las anotaciones mejoran la precisión del análisis de código. Las anotaciones proporcionan información adicional sobre las condiciones previas y posteriores en los parámetros de función y los tipos de valor devuelto. Para obtener más información, consulte [utilizar anotaciones SAL para reducir C /C++ los defectos de código](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
 
 ## <a name="run-analysis-tool-as-part-of-check-in-policy"></a>Ejecución de la herramienta de análisis como parte de la directiva de inserción en el repositorio
 

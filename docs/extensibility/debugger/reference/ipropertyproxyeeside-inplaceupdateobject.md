@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8617dd6f37d7e90d23c3ed454ef56122b36f6b75
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a233a37f83ff3f75b5cf0ec103e59da91f1473bd
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913954"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458458"
 ---
 # <a name="ipropertyproxyeesideinplaceupdateobject"></a>IPropertyProxyEESide::InPlaceUpdateObject
 Actualiza los datos del objeto con el objeto de datos especificado y devuelve un nuevo objeto de datos que representa los datos del objeto nuevo.
@@ -38,12 +41,12 @@ int InPlaceUpdateObject(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `dataIn`
+## <a name="parameters"></a>Parámetros
+ `dataIn`\
 
  [in] Un [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) objeto que contiene los nuevos datos.
 
- `dataOut`
+ `dataOut`\
 
  [out] Devuelve un nuevo `IEEDataStorage` objeto que contiene los datos reemplazados.
 

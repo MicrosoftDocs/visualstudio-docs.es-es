@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 385ef2aaaadc8d1f66eaf245f06dbfd299638fa5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: f63b43c1e7e8035320c6d4c7b527e069904191a5
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62916723"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65459008"
 ---
 # <a name="idebugprogramprovider2getproviderprocessdata"></a>IDebugProgramProvider2::GetProviderProcessData
 Recupera una lista de programas en ejecución desde un proceso especificado.
@@ -44,8 +47,8 @@ int GetProviderProcessData(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `Flags`
+## <a name="parameters"></a>Parámetros
+ `Flags`\
 
  [in] Una combinación de marcas de la [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md) enumeración. Las marcas siguientes son típicas para esta llamada:
 
@@ -56,19 +59,19 @@ int GetProviderProcessData(
 |`PFLAG_ATTACHED_TO_DEBUGGEE`|Autor de llamada se adjunta a pero no se inicia el depurador.|
 |`PFLAG_GET_PROGRAM_NODES`|Llamador está solicitando una lista de nodos del programa va a devolver.|
 
- `pPort`
+ `pPort`\
 
  [in] El puerto que el proceso de llamada se ejecuta en.
 
- `processId`
+ `processId`\
 
  [in] Un [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) estructura que contiene el identificador del proceso que contiene el programa en cuestión.
 
- `EngineFilter`
+ `EngineFilter`\
 
  [in] Una matriz de GUID para los motores de depuración asignado para depurar este proceso (se utilizarán para filtrar los programas que realmente se devuelven según lo que admiten los motores proporcionados; si no hay motores se especifican, se devolverá todos los programas).
 
- `pProcess`
+ `pProcess`\
 
  [out] Un [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) estructura que se rellena con la información solicitada.
 

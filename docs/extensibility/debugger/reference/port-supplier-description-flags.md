@@ -10,12 +10,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1ca6f9dc8c2801a36cab5e90227df201f50d3d93
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 9d077c50c19a64eed7fc904a8f7986f95a75d1d1
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62864962"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460748"
 ---
 # <a name="portsupplierdescriptionflags"></a>PORT_SUPPLIER_DESCRIPTION_FLAGS
 
@@ -38,9 +41,9 @@ public enum enum_PORT_SUPPLIER_DESCRIPTION_FLAGS
 };
 ```
 
-## <a name="terms"></a>Términos
+## <a name="fields"></a>Campos
 
-`PSDFLAG_SHOW_WARNING_ICON`
+`PSDFLAG_SHOW_WARNING_ICON`\
 
 Si se selecciona, se mostrará el icono de advertencia en la interfaz de usuario.
 

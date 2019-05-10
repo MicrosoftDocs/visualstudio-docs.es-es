@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 85d965969dd6d510ce3d17936d3fd628945fb531
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6617e044979329a91acf58d33708967e635fd78a
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62868351"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226020"
 ---
 # <a name="idebugthreadnamechangedevent2"></a>IDebugThreadNameChangedEvent2
 Esta interfaz se envía por el motor de depuración (DE) el Administrador de depuración de la sesión (SDM) cuando cambia el nombre de un subproceso en el programa que se está depurando.

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 803d9569c611e3c4cd70f2c82ecd525716d8ddb3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7f6fb974bd5affc89eeacbfccace5c1e89218db5
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913532"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457925"
 ---
 # <a name="providerflags"></a>PROVIDER_FLAGS
 Especifica que las propiedades deseadas se obtienen de un proveedor de programa.
@@ -49,20 +52,27 @@ public enum enum_PROVIDER_FLAGS {
 };
 ```
 
-## <a name="members"></a>Miembros
- Marcas de PFLAG_NONE No especificadas.
+## <a name="fields"></a>Campos
+ `PFLAG_NONE`\
+ No hay marcas especificadas.
 
- Llamador de PFLAG_REMOTE_PORT desea obtener una lista de programas en un equipo diferente de [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)].
+ `PFLAG_REMOTE_PORT`\
+ Llamador desea obtener una lista de programas en un equipo diferente de [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)].
 
- PFLAG_DEBUGGEE el proceso se está depurando actualmente por esta instancia de [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)].
+ `PFLAG_DEBUGGEE`\
+ El proceso se está depurando actualmente por esta instancia de [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)].
 
- PFLAG_ATTACH_TODEBUGGEE [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] está asociado al programa que se está depurando, pero no se inicia.
+ `PFLAG_ATTACH_TODEBUGGEE`\
+ [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] se adjunta al programa que se está depurando, pero no se inicia.
 
- PFLAG_REASON_WATCH [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] supervisa los eventos.
+ `PFLAG_REASON_WATCH`\
+ [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] supervisa los eventos.
 
- PFLAG_GET_PROGRAM_NODES llamador desea el `ProgramNodes` campo de la [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) estructura.
+ `PFLAG_GET_PROGRAM_NODES`\
+ Llamador desea el `ProgramNodes` campo de la [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) estructura.
 
- PFLAG_GET_IS_DEBUGGER_PRESENT llamador desea el `fIsTheDebuggerPresent` campo de la `PROVIDER_PROCESS_DATA` estructura.
+ `PFLAG_GET_IS_DEBUGGER_PRESENT`\
+ Llamador desea el `fIsTheDebuggerPresent` campo de la `PROVIDER_PROCESS_DATA` estructura.
 
 ## <a name="remarks"></a>Comentarios
  Estas marcas se pasan a los métodos siguientes:

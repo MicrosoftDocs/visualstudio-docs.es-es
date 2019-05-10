@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b9a9d0b6ec922e010fb9800c212d4a233e8eeeb0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ac168ace54c5beb1ecaf4e664090c5cb61b332e7
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62916476"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458784"
 ---
 # <a name="idebugpropertydestroyevent2getdebugproperty"></a>IDebugPropertyDestroyEvent2::GetDebugProperty
 Obtiene la propiedad que se va a destruir.
@@ -36,8 +39,8 @@ int GetDebugProperty ( 
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `ppProperty`
+## <a name="parameters"></a>Parámetros
+ `ppProperty`\
 
  [out] Devuelve un [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) objeto que representa la propiedad que se va a destruir.
 

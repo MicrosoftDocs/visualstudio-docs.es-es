@@ -1,10 +1,9 @@
 - name: Visual Studio Tools para IA
-  href: index.yml
   items:
+    - name: Visual Studio Tools para IA
+      href: index.yml
     - name: Información general
-      items:
-        - name: Acerca de Visual Studio Tools para IA
-          href: about-ai-tools.md
+      href: about-ai-tools.md
     - name: Instalación
       href: installation.md
     - name: Guías de inicio rápido

@@ -8,21 +8,21 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c17686ab0e14e483019416560c3fa06ce6aa3206
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c56b87b46a916596a601d380254d4e4abcf093bf
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62987964"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461325"
 ---
-# <a name="xml-schema-designer"></a>Diseñador de esquemas XML
+# <a name="xml-schema-designer-overview"></a>Información general del Diseñador de esquemas XML
 
-El Diseñador de esquemas XML (Diseñador XSD) es una herramienta gráfica que permite visualizar un conjunto de esquemas en niveles diferentes de abstracción. El Diseñador XSD consta de los siguientes componentes principales:
+El Diseñador de esquemas XML (Diseñador XSD) es una herramienta gráfica que permite visualizar un conjunto de esquemas en niveles diferentes de abstracción. Los componentes principales del diseñador XSD son:
 
-- [Explorador de esquemas XML](../xml-tools/xml-schema-explorer.md) le permite examinar y navegar por el árbol de esquema XML y realizar búsquedas.
+- [Explorador de esquemas XML](../xml-tools/xml-schema-explorer.md), que le permite examinar y navegar por el árbol de esquema XML y realizar búsquedas.
 
-- El [vista inicio](../xml-tools/start-view.md) es el punto de partida para el diseñador XSD; desde esta vista, puede navegar a otras vistas del diseñador XSD y ver los detalles del conjunto de esquemas.
+- El [vista inicio](../xml-tools/start-view.md), que es el punto de lanzamiento del diseñador XSD. Desde esta vista, puede navegar a otras vistas del diseñador XSD y ver los detalles del conjunto de esquemas.
 
-- El [vista gráfico](../xml-tools/graph-view.md) le permite ver información general de un conjunto de esquemas y las relaciones entre los nodos de esquema.
+- El [vista gráfico](../xml-tools/graph-view.md), que le permite ver información general de un conjunto de esquemas y las relaciones entre los nodos de esquema.
 
-- El [vista modelo de contenido](../xml-tools/content-model-view.md) proporciona una representación gráfica de los detalles de los nodos de esquema globales y locales, incluyendo tipos simples y complejos, elementos, grupos, atributos y grupos de atributos.
+- El [vista modelo de contenido](../xml-tools/content-model-view.md), que proporciona una representación gráfica de los detalles de los nodos de esquema globales y locales, incluyendo tipos simples y complejos, elementos, grupos, atributos y grupos de atributos.

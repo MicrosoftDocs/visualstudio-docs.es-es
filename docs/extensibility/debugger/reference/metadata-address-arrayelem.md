@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2b08d3d25912123d62de9a096b810f42d1418aa6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: cb0ad7c73d2e4233ad919ffe48515bbade031fd8
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62865709"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461143"
 ---
 # <a name="metadataaddressarrayelem"></a>METADATA_ADDRESS_ARRAYELEM
 
@@ -39,15 +42,15 @@ public struct METADATA_ADDRESS_ARRAYELEM {
 }
 ```
 
-## <a name="terms"></a>Términos
+## <a name="members"></a>Miembros
 
-tokMethod
+`tokMethod`\
 
 El identificador de la matriz de este elemento es una parte de.
 
 [C++] `_mdToken` es un `typedef` para 32 bits `int`.
 
-dwIndex
+`dwIndex`\
 
 El índice de este elemento dentro de la matriz.
 

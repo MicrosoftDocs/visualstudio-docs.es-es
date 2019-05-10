@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e9d2bf87a804295a5ea8f6750ee9cd93643c53bc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a2ba039164c43ccc99b3305bb29bc4f1c98f68f7
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913015"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460648"
 ---
 # <a name="unmanagedaddressthisrelative"></a>UNMANAGED_ADDRESS_THIS_RELATIVE
 Esta estructura representa una dirección que es relativa a un `this` puntero (`Me` en Visual Basic).
@@ -40,12 +43,15 @@ public struct UNMANAGED_THIS_RELATIVE {
 }
 ```
 
-## <a name="terms"></a>Términos
- dwOffset desplazamiento de bytes desde una posición de base (por ejemplo, el inicio de una clase vtable).
+## <a name="members"></a>Miembros
+ `dwOffset`\
+ Desplazamiento de bytes desde una posición de base (por ejemplo, el inicio de una clase vtable).
 
- dwBitOffset desplazamiento de bits desde una posición de base (siempre es 0, a menos que se hace referencia a un campo de bits).
+ `dwBitOffset`\
+ Desplazamiento de bits desde una posición de base (siempre es 0, a menos que se hace referencia a un campo de bits).
 
- Número de bits que representa la dirección dwBitLength (siempre es 0, a menos que se hace referencia a un campo de bits).
+ `dwBitLength`\
+ Número de bits que representa la dirección (siempre es 0, a menos que se hace referencia a un campo de bits).
 
 ## <a name="remarks"></a>Comentarios
  Esta estructura es parte de la unión en el [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) estructura cuando la `dwKind` campo de la `DEBUG_ADDRESS_UNION` estructura está establecida en `ADDRESS_KIND_UNMANAGED_THIS_RELATIVE` (un valor de la [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) enumeración).

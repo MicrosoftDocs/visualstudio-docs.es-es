@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 50ae796a4662b51c186e6e9d69bf41771d040c8b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 381219b592ad7ed676ff940dd594450123e5d037
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62865695"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457990"
 ---
 # <a name="namematch"></a>NAME_MATCH
 Selecciona la opción mayúsculas para la coincidencia de nombres.
@@ -40,12 +43,15 @@ public enum NameMatchOptions { 
 }
 ```
 
-## <a name="members"></a>Miembros
- nmNone que se especifica ninguna opción.
+## <a name="fields"></a>Campos
+ `nmNone`\
+ No se especifican opciones.
 
- Indica que los nombres deben coincidir nmCaseSensitive distinguen mayúsculas de minúsculas.
+ `nmCaseSensitive`\
+ Indica que los nombres deben coincidir distinguen mayúsculas de minúsculas.
 
- nmCaseInsensitive indica que deben coincidir los nombres no distinguen mayúsculas de minúsculas.
+ `nmCaseInsensitive`\
+ Indica que deben coincidir los nombres no distinguen mayúsculas de minúsculas.
 
 ## <a name="remarks"></a>Comentarios
  Se pasa como argumento a los métodos siguientes:

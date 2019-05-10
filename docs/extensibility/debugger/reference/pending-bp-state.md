@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6ab1e9345cf599c4336b202d32fb71a9097fe629
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7dd77065791d36e89c43b51dd8e1494d8e69a369
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913615"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458380"
 ---
 # <a name="pendingbpstate"></a>PENDING_BP_STATE
 Especifica el estado de un punto de interrupción pendiente (un punto de interrupción que aún no se ha enlazado).
@@ -43,14 +46,18 @@ public enum enum_PENDING_BP_STATE { 
 };
 ```
 
-## <a name="members"></a>Miembros
- PBPS_NONE marcador de posición cero. Este valor no se devuelve nunca.
+## <a name="fields"></a>Campos
+ `PBPS_NONE`\
+ Marcador de posición cero. Este valor no se devuelve nunca.
 
- PBPS_DELETED indica que se ha eliminado el punto de interrupción pendiente.
+ `PBPS_DELETED`\
+ Indica que se ha eliminado el punto de interrupción pendiente.
 
- PBPS_DISABLED indica que el punto de interrupción pendiente está deshabilitada.
+ `PBPS_DISABLED`\
+ Indica que el punto de interrupción pendiente está deshabilitada.
 
- PBPS_ENABLED indica que está habilitado el punto de interrupción pendiente.
+ `PBPS_ENABLED`\
+ Indica que está habilitado el punto de interrupción pendiente.
 
 ## <a name="remarks"></a>Comentarios
  Usar como el `state` miembro de la [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md) estructura.

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: edfc3a2e5a89216a1bd50500ac29e21ed5842503
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 95a06a283b417432fd755f100f8c2e68a0325571
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62868120"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65225891"
 ---
 # <a name="ieevisualizerdataprovidergetnewobjectforvisualizer"></a>IEEVisualizerDataProvider::GetNewObjectForVisualizer
 Este método obtiene un nuevo objeto para el visualizador. Este método siempre creará un nuevo objeto desde el objeto existente.
@@ -36,8 +39,8 @@ int GetNewObjectForVisualizer(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `ppObject`
+## <a name="parameters"></a>Parámetros
+ `ppObject`\
 
  [out] El nuevo objeto.
 
