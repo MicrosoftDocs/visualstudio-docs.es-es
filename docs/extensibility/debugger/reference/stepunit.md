@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0f1d6742b28badf39a5c9273d2891c2da9a9d5f0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 4115a1d7e01558f2991503200a76dabbf81993bc
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62864872"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460997"
 ---
 # <a name="stepunit"></a>STEPUNIT
 Especifica la unidad de paso de ejecución paso a paso.
@@ -41,12 +44,15 @@ enum enum_STEPUNIT { 
 };
 ```
 
-## <a name="members"></a>Miembros
- Pasos STEP_STATEMENT por instrucción.
+## <a name="fields"></a>Campos
+ `STEP_STATEMENT`\
+ Pasos de instrucción.
 
- Pasos de STEP_LINE por línea.
+ `STEP_LINE`\
+ Pasos por línea.
 
- Pasos STEP_INSTRUCTION por instrucción.
+ `STEP_INSTRUCTION`\
+ Pasos de instrucción.
 
 ## <a name="remarks"></a>Comentarios
  Se pasa como argumento a la [paso](../../../extensibility/debugger/reference/idebugprocess3-step.md) método.

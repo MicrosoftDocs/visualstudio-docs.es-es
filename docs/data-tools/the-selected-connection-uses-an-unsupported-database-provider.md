@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e6ebdca67dd87f25111ba48c3d9baa346d00e4db
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5fab6be50a9b4c273a7bb911d8afde5cf65d7676
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62566142"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460579"
 ---
 # <a name="the-selected-connection-uses-an-unsupported-database-provider"></a>La conexión seleccionada usa un proveedor de base de datos que no se admite
 
@@ -26,5 +26,4 @@ Para corregir este error, agregue únicamente elementos de las conexiones de dat
 ## <a name="see-also"></a>Vea también
 
 - <xref:System.Data.SqlClient>
-- [Mensajes de Object Relational Designer](../data-tools/o-r-designer-messages.md)
 - [LINQ to SQL tools en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) (Herramientas LINQ to SQL en Visual Studio)

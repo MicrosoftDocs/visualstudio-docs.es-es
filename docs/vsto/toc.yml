@@ -1,12 +1,15 @@
 - name: Desarrollo de Office y SharePoint en Visual Studio
-  href: office-and-sharepoint-development-in-visual-studio.md
   items:
+    - name: Desarrollo de Office y SharePoint en Visual Studio
+      href: office-and-sharepoint-development-in-visual-studio.md
     - name: Crear complementos de VSTO para Office
-      href: create-vsto-add-ins-for-office-by-using-visual-studio.md
       items:
+        - name: Crear complementos de VSTO para Office
+          href: create-vsto-add-ins-for-office-by-using-visual-studio.md
         - name: Introducción
-          href: getting-started-office-development-in-visual-studio.md
           items:
+            - name: Introducción
+              href: getting-started-office-development-in-visual-studio.md
             - name: Información general sobre el desarrollo de soluciones de Office
               href: office-solutions-development-overview-vsto.md
             - name: Cambios en el diseño de proyectos de Office destinados a .NET Framework 4 o .NET Framework 4.5
@@ -14,8 +17,9 @@
             - name: Características disponibles por aplicación y tipo de proyecto de Office
               href: features-available-by-office-application-and-project-type.md
             - name: Configurar un equipo para desarrollar soluciones de Office
-              href: configuring-a-computer-to-develop-office-solutions.md
               items:
+                - name: Configurar un equipo para desarrollar soluciones de Office
+                  href: configuring-a-computer-to-develop-office-solutions.md
                 - name: Configurar un equipo para desarrollar soluciones de Office
                   href: how-to-configure-a-computer-to-develop-office-solutions.md
                 - name: Instalar el runtime redistribuible de Visual Studio Tools para Office
@@ -35,11 +39,13 @@
             - name: Recursos adicionales para desarrollar soluciones de Office
               href: additional-resources-for-developing-office-solutions.md
         - name: Actualizar y migrar soluciones de Office
-          href: upgrading-and-migrating-office-solutions.md
           items:
+            - name: Actualizar y migrar soluciones de Office
+              href: upgrading-and-migrating-office-solutions.md
             - name: Migrar soluciones de Office a .NET Framework 4 o posterior
-              href: migrating-office-solutions-to-the-dotnet-framework-4-or-later.md
               items:
+                - name: Migrar soluciones de Office a .NET Framework 4 o posterior
+                  href: migrating-office-solutions-to-the-dotnet-framework-4-or-later.md
                 - name: Cambios necesarios para ejecutar proyectos de Office
                   href: required-changes-to-run-office-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md
                 - name: Actualizar proyectos de Excel y Word
@@ -49,15 +55,17 @@
                 - name: Actualizar las áreas del formulario en los proyectos de Outlook
                   href: updating-form-regions-in-outlook-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md
         - name: Arquitectura de las soluciones de Office en Visual Studio
-          href: architecture-of-office-solutions-in-visual-studio.md
           items:
+            - name: Arquitectura de las soluciones de Office en Visual Studio
+              href: architecture-of-office-solutions-in-visual-studio.md
             - name: Arquitectura de las personalizaciones de nivel de documento
               href: architecture-of-document-level-customizations.md
             - name: Arquitectura de complementos de VSTO
               href: architecture-of-vsto-add-ins.md
             - name: Información general sobre el Motor en tiempo de ejecución de Microsoft Visual Studio Tools para Office
-              href: visual-studio-tools-for-office-runtime-overview.md
               items:
+                - name: Información general sobre el Motor en tiempo de ejecución de Microsoft Visual Studio Tools para Office
+                  href: visual-studio-tools-for-office-runtime-overview.md
                 - name: Escenarios de instalación del Motor en tiempo de ejecución de Microsoft Visual Studio Tools para Office
                   href: visual-studio-tools-for-office-runtime-installation-scenarios.md
                 - name: Ensamblados en el Motor en tiempo de ejecución de Microsoft Visual Studio Tools para Office
@@ -67,8 +75,9 @@
             - name: Custom Document Properties Overview
               href: custom-document-properties-overview.md
         - name: Diseñar y crear soluciones de Office
-          href: designing-and-creating-office-solutions.md
           items:
+            - name: Diseñar y crear soluciones de Office
+              href: designing-and-creating-office-solutions.md
             - name: Información general sobre las plantillas de Office Project
               href: office-project-templates-overview.md
             - name: Crear proyectos de Office en Visual Studio
@@ -86,8 +95,9 @@
             - name: Establecer la información de configuración de una solución de Office
               href: how-to-set-up-configuration-information-for-an-office-solution.md
             - name: Usar la funcionalidad de Office dentro de Visual Studio
-              href: using-office-functionality-inside-of-visual-studio.md
               items:
+                - name: Usar la funcionalidad de Office dentro de Visual Studio
+                  href: using-office-functionality-inside-of-visual-studio.md
                 - name: Protección de documentos en soluciones de nivel de documento
                   href: document-protection-in-document-level-solutions.md
                 - name: Información general sobre la administración de permisos sobre la información y las extensiones de código administrado
@@ -99,11 +109,13 @@
                 - name: Abrir soluciones de Office sin ejecutar código
                   href: how-to-open-office-solutions-without-running-code.md
         - name: Desarrollar soluciones de Office
-          href: developing-office-solutions.md
           items:
+            - name: Desarrollar soluciones de Office
+              href: developing-office-solutions.md
             - name: Escribir código en soluciones de Office
-              href: writing-code-in-office-solutions.md
               items:
+                - name: Escribir código en soluciones de Office
+                  href: writing-code-in-office-solutions.md
                 - name: Parámetros opcionales en las soluciones de Office
                   href: optional-parameters-in-office-solutions.md
                 - name: Enlace en tiempo de ejecución en las soluciones de Office
@@ -117,8 +129,9 @@
                 - name: Desarrollo en colaboración de las soluciones de Office
                   href: collaborative-development-of-office-solutions.md
             - name: Programar complementos de VSTO
-              href: programming-vsto-add-ins.md
               items:
+                - name: Programar complementos de VSTO
+                  href: programming-vsto-add-ins.md
                 - name: Mejorar el rendimiento de un complemento de VSTO
                   href: improving-the-performance-of-a-vsto-add-in.md
                 - name: Extender documentos de Word y libros de Excel en complementos de VSTO en tiempo de ejecución
@@ -130,11 +143,13 @@
                 - name: Personalizar características de la interfaz de usuario mediante interfaces de extensibilidad
                   href: customizing-ui-features-by-using-extensibility-interfaces.md
             - name: Programar personalizaciones de nivel de documento
-              href: programming-document-level-customizations.md
               items:
+                - name: Programar personalizaciones de nivel de documento
+                  href: programming-document-level-customizations.md
                 - name: Combinar personalizaciones de VBA y de nivel de documento
-                  href: combining-vba-and-document-level-customizations.md
                   items:
+                    - name: Combinar personalizaciones de VBA y de nivel de documento
+                      href: combining-vba-and-document-level-customizations.md
                     - name: Exponer código para VBA en un proyecto de Visual Basic
                       href: how-to-expose-code-to-vba-in-a-visual-basic-project.md
                     - name: 'Exponer código para VBA en un proyecto de Visual C#'
@@ -144,25 +159,29 @@
                     - name: 'Tutorial: Llamar a código de VBA en un proyecto de Visual C#'
                       href: walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md
                 - name: Administrar documentos en un servidor mediante la clase ServerDocument
-                  href: managing-documents-on-a-server-by-using-the-serverdocument-class.md
                   items:
+                    - name: Administrar documentos en un servidor mediante la clase ServerDocument
+                      href: managing-documents-on-a-server-by-using-the-serverdocument-class.md
                     - name: Quitar extensiones de código administrado de documentos
                       href: how-to-remove-managed-code-extensions-from-documents.md
                     - name: Asociar extensiones de código administrado a documentos
                       href: how-to-attach-managed-code-extensions-to-documents.md
             - name: Personalización de la interfaz de usuario de Office
-              href: office-ui-customization.md
               items:
+                - name: Personalización de la interfaz de usuario de Office
+                  href: office-ui-customization.md
                 - name: Controles en documentos de Office
-                  href: controls-on-office-documents.md
                   items:
+                    - name: Controles en documentos de Office
+                      href: controls-on-office-documents.md
                     - name: Información general sobre elementos y controles Host
                       href: host-items-and-host-controls-overview.md
                     - name: Limitaciones de programación de elementos y controles Host
                       href: programmatic-limitations-of-host-items-and-host-controls.md
                     - name: Información general sobre controles de formularios Windows Forms en documentos de Office
-                      href: windows-forms-controls-on-office-documents-overview.md
                       items:
+                        - name: Información general sobre controles de formularios Windows Forms en documentos de Office
+                          href: windows-forms-controls-on-office-documents-overview.md
                         - name: Limitaciones de los controles de formularios Windows Forms en los documentos de Office
                           href: limitations-of-windows-forms-controls-on-office-documents.md
                         - name: Agregar controles de Windows Forms a documentos de Office
@@ -184,13 +203,15 @@
                         - name: Ocultar controles en hojas de cálculo al imprimir
                           href: how-to-hide-controls-on-worksheets-when-printing.md
                     - name: Agregar controles a documentos de Office en tiempo de ejecución
-                      href: adding-controls-to-office-documents-at-run-time.md
                       items:
+                        - name: Agregar controles a documentos de Office en tiempo de ejecución
+                          href: adding-controls-to-office-documents-at-run-time.md
                         - name: Guardar controles dinámicos en documentos de Office
                           href: persisting-dynamic-controls-in-office-documents.md
                 - name: Información general sobre la cinta de opciones
-                  href: ribbon-overview.md
                   items:
+                    - name: Información general sobre la cinta de opciones
+                      href: ribbon-overview.md
                     - name: Iniciarse en la personalización de la cinta
                       href: how-to-get-started-customizing-the-ribbon.md
                     - name: Diseñador de la cinta de opciones
@@ -222,8 +243,9 @@
                     - name: 'Tutorial: Crear una pestaña personalizada mediante XML de la cinta'
                       href: walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md
                 - name: Información general sobre paneles de acciones
-                  href: actions-pane-overview.md
                   items:
+                    - name: Información general sobre paneles de acciones
+                      href: actions-pane-overview.md
                     - name: Agregar un panel de acciones a documentos de Word o libros de Excel
                       href: how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md
                     - name: Administrar el diseño de controles en paneles de acciones
@@ -235,8 +257,9 @@
                     - name: 'Tutorial: Insertar texto en un documento desde un panel de acciones'
                       href: walkthrough-inserting-text-into-a-document-from-an-actions-pane.md
                 - name: Paneles de tareas personalizados
-                  href: custom-task-panes.md
                   items:
+                    - name: Paneles de tareas personalizados
+                      href: custom-task-panes.md
                     - name: Agregar un panel de tareas personalizado a una aplicación
                       href: how-to-add-a-custom-task-pane-to-an-application.md
                     - name: 'Tutorial: Automatizar una aplicación desde un panel de tareas personalizado'
@@ -256,11 +279,13 @@
                 - name: 'Tutorial: Recopilar datos con Windows Forms'
                   href: walkthrough-collecting-data-using-a-windows-form.md
             - name: Datos en las soluciones de Office
-              href: data-in-office-solutions.md
               items:
+                - name: Datos en las soluciones de Office
+                  href: data-in-office-solutions.md
                 - name: Enlazar datos a controles en soluciones de Office
-                  href: binding-data-to-controls-in-office-solutions.md
                   items:
+                    - name: Enlazar datos a controles en soluciones de Office
+                      href: binding-data-to-controls-in-office-solutions.md
                     - name: Rellenar hojas de cálculo con datos de una base de datos
                       href: how-to-populate-worksheets-with-data-from-a-database.md
                     - name: Rellenar documentos con datos de una base de datos
@@ -284,18 +309,21 @@
                     - name: 'Tutorial: Enlace de datos complejo en un proyecto de complemento VSTO'
                       href: walkthrough-complex-data-binding-in-vsto-add-in-project.md
                 - name: Custom XML Parts Overview
-                  href: custom-xml-parts-overview.md
                   items:
+                    - name: Custom XML Parts Overview
+                      href: custom-xml-parts-overview.md
                     - name: Agregar elementos XML personalizados a personalizaciones de nivel de documento
                       href: how-to-add-custom-xml-parts-to-document-level-customizations.md
                     - name: Agregar elementos XML personalizados a documentos mediante complementos VSTO
                       href: how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md
                 - name: Datos almacenados en caché en las personalizaciones de nivel de documento
-                  href: cached-data-in-document-level-customizations.md
                   items:
+                    - name: Datos almacenados en caché en las personalizaciones de nivel de documento
+                      href: cached-data-in-document-level-customizations.md
                     - name: Almacenar datos en caché
-                      href: caching-data.md
                       items:
+                        - name: Almacenar datos en caché
+                          href: caching-data.md
                         - name: Almacenar datos en la memoria caché para uso sin conexión o en un servidor
                           href: how-to-cache-data-for-use-offline-or-on-a-server.md
                         - name: Almacenar en caché un origen de datos de un documento de Office mediante programación
@@ -305,8 +333,9 @@
                         - name: 'Tutorial: Crear una relación maestro-detalle mediante un conjunto de datos almacenado en caché'
                           href: walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md
                     - name: Acceso a datos de documentos en el servidor
-                      href: accessing-data-in-documents-on-the-server.md
                       items:
+                        - name: Acceso a datos de documentos en el servidor
+                          href: accessing-data-in-documents-on-the-server.md
                         - name: 'Tutorial: Insertar datos en un libro en un servidor'
                           href: walkthrough-inserting-data-into-a-workbook-on-a-server.md
                         - name: 'Tutorial: Recuperar datos almacenados en caché desde un libro en un servidor'
@@ -314,8 +343,9 @@
                         - name: 'Tutorial: Cambiar los datos almacenados en caché de un libro en un servidor'
                           href: walkthrough-changing-cached-data-in-a-workbook-on-a-server.md
                 - name: Esquemas y datos XML en personalizaciones de nivel de documento
-                  href: xml-schemas-and-data-in-document-level-customizations.md
                   items:
+                    - name: Esquemas y datos XML en personalizaciones de nivel de documento
+                      href: xml-schemas-and-data-in-document-level-customizations.md
                     - name: Asignar esquemas a documentos de Word en Visual Studio
                       href: how-to-map-schemas-to-word-documents-inside-visual-studio.md
                     - name: Asignar esquemas a hojas de cálculo en Visual Studio
@@ -325,8 +355,9 @@
             - name: Cómo el autoguardado afecta a las soluciones de Office
               href: how-autosave-impacts-office-solutions.md
             - name: Solución de problemas de soluciones de Office
-              href: troubleshooting-office-solutions.md
               items:
+                - name: Solución de problemas de soluciones de Office
+                  href: troubleshooting-office-solutions.md
                 - name: Solucionar problemas de errores de las soluciones de Office
                   href: troubleshooting-errors-in-office-solutions.md
                 - name: Volver a habilitar un complemento de VSTO que se ha deshabilitado
@@ -346,14 +377,17 @@
             - name: Accesibilidad en proyectos de Office
               href: accessibility-in-office-projects.md
         - name: Soluciones de Excel
-          href: excel-solutions.md
           items:
+            - name: Soluciones de Excel
+              href: excel-solutions.md
             - name: Excel Object Model Overview
-              href: excel-object-model-overview.md
               items:
+                - name: Excel Object Model Overview
+                  href: excel-object-model-overview.md
                 - name: Trabajar con libros
-                  href: working-with-workbooks.md
                   items:
+                    - name: Trabajar con libros
+                      href: working-with-workbooks.md
                     - name: Crear nuevos libros mediante programación
                       href: how-to-programmatically-create-new-workbooks.md
                     - name: Abrir libros mediante programación
@@ -369,8 +403,9 @@
                     - name: Abrir archivos de texto como libros mediante programación
                       href: how-to-programmatically-open-text-files-as-workbooks.md
                 - name: Trabajar con hojas de cálculo
-                  href: working-with-worksheets.md
                   items:
+                    - name: Trabajar con hojas de cálculo
+                      href: working-with-worksheets.md
                     - name: Agregar nuevas hojas de cálculo a libros mediante programación
                       href: how-to-programmatically-add-new-worksheets-to-workbooks.md
                     - name: Copiar hojas de cálculo mediante programación
@@ -406,8 +441,9 @@
                     - name: Ordenar datos en hojas de cálculo mediante programación
                       href: how-to-programmatically-sort-data-in-worksheets.md
                 - name: Trabajar con rangos
-                  href: working-with-ranges.md
                   items:
+                    - name: Trabajar con rangos
+                      href: working-with-ranges.md
                     - name: Hacer referencia a rangos de hojas de cálculo en el código mediante programación
                       href: how-to-programmatically-refer-to-worksheet-ranges-in-code.md
                     - name: Rellenar rangos automáticamente con datos que cambian de forma incremental mediante programación
@@ -425,8 +461,9 @@
                     - name: Mostrar una cadena en la celda de una hoja de cálculo mediante programación
                       href: how-to-programmatically-display-a-string-in-a-worksheet-cell.md
             - name: Automatizar Excel usando objetos extendidos
-              href: automating-excel-by-using-extended-objects.md
               items:
+                - name: Automatizar Excel usando objetos extendidos
+                  href: automating-excel-by-using-extended-objects.md
                 - name: Elemento host Workbook
                   href: workbook-host-item.md
                 - name: Elemento host Worksheet
@@ -474,14 +511,17 @@
         - name: Soluciones de InfoPath
           href: infopath-solutions.md
         - name: Soluciones de Outlook
-          href: outlook-solutions.md
           items:
+            - name: Soluciones de Outlook
+              href: outlook-solutions.md
             - name: Información general sobre el modelo de objetos de Outlook
-              href: outlook-object-model-overview.md
               items:
+                - name: Información general sobre el modelo de objetos de Outlook
+                  href: outlook-object-model-overview.md
                 - name: Trabajar con contactos
-                  href: working-with-contact-items.md
                   items:
+                    - name: Trabajar con contactos
+                      href: working-with-contact-items.md
                     - name: Acceder a los contactos de Outlook mediante programación
                       href: how-to-programmatically-access-outlook-contacts.md
                     - name: Buscar un contacto específico mediante programación
@@ -493,8 +533,9 @@
                     - name: Eliminar contactos de Outlook mediante programación
                       href: how-to-programmatically-delete-outlook-contacts.md
                 - name: Trabajar con elementos de correo
-                  href: working-with-mail-items.md
                   items:
+                    - name: Trabajar con elementos de correo
+                      href: working-with-mail-items.md
                     - name: Crear un elemento de correo electrónico mediante programación
                       href: how-to-programmatically-create-an-e-mail-item.md
                     - name: Enviar correo electrónico mediante programación
@@ -508,8 +549,9 @@
                     - name: Recuperar mensajes sin leer de la Bandeja de entrada mediante programación
                       href: how-to-programmatically-retrieve-unread-messages-from-the-inbox.md
                 - name: Trabajar con carpetas
-                  href: working-with-folders.md
                   items:
+                    - name: Trabajar con carpetas
+                      href: working-with-folders.md
                     - name: Buscar en una carpeta específica mediante programación
                       href: how-to-programmatically-search-within-a-specific-folder.md
                     - name: Recuperar una carpeta por nombre mediante programación
@@ -521,8 +563,9 @@
                     - name: Mover elementos en Outlook mediante programación
                       href: how-to-programmatically-move-items-in-outlook.md
                 - name: Trabajar con elementos del calendario
-                  href: working-with-calendar-items.md
                   items:
+                    - name: Trabajar con elementos del calendario
+                      href: working-with-calendar-items.md
                     - name: Crear citas mediante programación
                       href: how-to-programmatically-create-appointments.md
                     - name: Eliminar citas mediante programación
@@ -534,8 +577,9 @@
                 - name: Determinar el elemento actual de Outlook mediante programación
                   href: how-to-programmatically-determine-the-current-outlook-item.md
             - name: Creating Outlook Form Regions
-              href: creating-outlook-form-regions.md
               items:
+                - name: Creating Outlook Form Regions
+                  href: creating-outlook-form-regions.md
                 - name: Instrucciones para crear áreas de formulario de Outlook
                   href: guidelines-for-creating-outlook-form-regions.md
                 - name: Agregar un área de formulario a un proyecto de complemento de Outlook
@@ -555,23 +599,27 @@
             - name: 'Tutorial: Crear el primer complemento VSTO de Outlook'
               href: walkthrough-creating-your-first-vsto-add-in-for-outlook.md
         - name: Soluciones de PowerPoint
-          href: powerpoint-solutions.md
           items:
+            - name: Soluciones de PowerPoint
+              href: powerpoint-solutions.md
             - name: 'Tutorial: Crear el primer complemento VSTO de PowerPoint'
               href: walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md
         - name: Soluciones de Project
-          href: project-solutions.md
           items:
+            - name: Soluciones de Project
+              href: project-solutions.md
             - name: 'Tutorial: Crear el primer complemento VSTO de Project'
               href: walkthrough-creating-your-first-vsto-add-in-for-project.md
         - name: Soluciones de Visio
-          href: visio-solutions.md
           items:
+            - name: Soluciones de Visio
+              href: visio-solutions.md
             - name: Información general sobre el modelo de objetos de Visio
               href: visio-object-model-overview.md
             - name: Trabajar con documentos de Visio
-              href: working-with-visio-documents.md
               items:
+                - name: Trabajar con documentos de Visio
+                  href: working-with-visio-documents.md
                 - name: Crear nuevos documentos de Visio mediante programación
                   href: how-to-programmatically-create-new-visio-documents.md
                 - name: Abrir documentos de Visio mediante programación
@@ -583,21 +631,25 @@
                 - name: Imprimir documentos de Visio mediante programación
                   href: how-to-programmatically-print-visio-documents.md
             - name: Trabajar con formas de Visio
-              href: working-with-visio-shapes.md
               items:
+                - name: Trabajar con formas de Visio
+                  href: working-with-visio-shapes.md
                 - name: Agregar formas a un documento de Visio mediante programación
                   href: how-to-programmatically-add-shapes-to-a-visio-document.md
                 - name: Copiar y pegar formas en un documento de Visio mediante programación
                   href: how-to-programmatically-copy-and-paste-shapes-in-a-visio-document.md
         - name: Soluciones de Word
-          href: word-solutions.md
           items:
+            - name: Soluciones de Word
+              href: word-solutions.md
             - name: Información general acerca del modelo de objetos de Word
-              href: word-object-model-overview.md
               items:
+                - name: Información general acerca del modelo de objetos de Word
+                  href: word-object-model-overview.md
                 - name: Trabajar con documentos
-                  href: working-with-documents.md
                   items:
+                    - name: Trabajar con documentos
+                      href: working-with-documents.md
                     - name: Crear nuevos documentos mediante programación
                       href: how-to-programmatically-create-new-documents.md
                     - name: Abrir documentos existentes mediante programación
@@ -625,8 +677,9 @@
                     - name: Quitar todos los comentarios de documentos mediante programación
                       href: how-to-programmatically-remove-all-comments-from-documents.md
                 - name: Trabajar con texto en documentos
-                  href: working-with-text-in-documents.md
                   items:
+                    - name: Trabajar con texto en documentos
+                      href: working-with-text-in-documents.md
                     - name: Definir y seleccionar rangos en documentos mediante programación
                       href: how-to-programmatically-define-and-select-ranges-in-documents.md
                     - name: Recuperar los caracteres inicial y final de los rangos mediante programación
@@ -660,8 +713,9 @@
                     - name: Agregar comentarios al texto en documentos mediante programación
                       href: how-to-programmatically-add-comments-to-text-in-documents.md
                 - name: Trabajar con tablas
-                  href: working-with-tables.md
                   items:
+                    - name: Trabajar con tablas
+                      href: working-with-tables.md
                     - name: Crear tablas de Word mediante programación
                       href: how-to-programmatically-create-word-tables.md
                     - name: Rellenar tablas de Word con propiedades de documento mediante programación
@@ -671,8 +725,9 @@
                     - name: Agregar texto y formato a celdas de tablas de Word mediante programación
                       href: how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md
             - name: Automatizar Word con objetos extendidos
-              href: automating-word-by-using-extended-objects.md
               items:
+                - name: Automatizar Word con objetos extendidos
+                  href: automating-word-by-using-extended-objects.md
                 - name: Elemento host Document
                   href: document-host-item.md
                 - name: Controles de contenido
@@ -712,8 +767,9 @@
         - name: Depurar proyectos de Office
           href: debugging-office-projects.md
         - name: Asegurar las soluciones de Office
-          href: securing-office-solutions.md
           items:
+            - name: Asegurar las soluciones de Office
+              href: securing-office-solutions.md
             - name: Otorgar confianza a las soluciones de Office
               href: granting-trust-to-office-solutions.md
             - name: Granting Trust to Documents
@@ -731,20 +787,23 @@
             - name: Solucionar problemas de seguridad de soluciones de Office
               href: troubleshooting-office-solution-security.md
         - name: Implementar una solución de Office
-          href: deploying-an-office-solution.md
           items:
+            - name: Implementar una solución de Office
+              href: deploying-an-office-solution.md
             - name: Implementar una solución de Office mediante ClickOnce
               href: deploying-an-office-solution-by-using-clickonce.md
             - name: Implementar una solución de Office mediante Windows Installer
               href: deploying-an-office-solution-by-using-windows-installer.md
             - name: Solucionar problemas de implementación de las soluciones de Office
-              href: troubleshooting-office-solution-deployment.md
               items:
+                - name: Solucionar problemas de implementación de las soluciones de Office
+                  href: troubleshooting-office-solution-deployment.md
                 - name: Registro de eventos para soluciones de Office
                   href: event-logging-for-office-solutions.md
         - name: Ejemplos y tutoriales
-          href: office-development-samples-and-walkthroughs.md
           items:
+            - name: Ejemplos y tutoriales
+              href: office-development-samples-and-walkthroughs.md
             - name: Ejemplos de desarrollo de Office
               href: office-development-samples.md
             - name: Tutoriales para Word
@@ -758,13 +817,15 @@
             - name: Tutoriales de seguridad e implementación
               href: security-and-deployment-walkthroughs.md
         - name: Referencia general (desarrollo de Office en Visual Studio)
-          href: general-reference-office-development-in-visual-studio.md
           items:
+            - name: Referencia general (desarrollo de Office en Visual Studio)
+              href: general-reference-office-development-in-visual-studio.md
             - name: ensamblados de interoperabilidad primarios de Office
               href: office-primary-interop-assemblies.md
             - name: Manifiestos de aplicación para soluciones de Office
-              href: application-manifests-for-office-solutions.md
               items:
+                - name: Manifiestos de aplicación para soluciones de Office
+                  href: application-manifests-for-office-solutions.md
                 - name: <customHostSpecified> (Elemento)
                   href: customhostspecified-element-office-development-in-visual-studio.md
                 - name: <addin> (Elemento)
@@ -806,8 +867,9 @@
             - name: Manifiestos de implementación para soluciones de Office
               href: deployment-manifests-for-office-solutions.md
             - name: Referencia de interfaz de usuario (desarrollo de Office en Visual Studio)
-              href: user-interface-reference-office-development-in-visual-studio.md
               items:
+                - name: Referencia de interfaz de usuario (desarrollo de Office en Visual Studio)
+                  href: user-interface-reference-office-development-in-visual-studio.md
                 - name: 'Teclado de Microsoft Office Word, Configuración de teclado de Microsoft Office, cuadro de diálogo Opciones'
                   href: microsoft-office-word-keyboard-microsoft-office-keyboard-settings-options-dialog-box.md
                 - name: 'Teclado de Microsoft Office Excel, Configuración de teclado de Microsoft Office, cuadro de diálogo Opciones'
@@ -819,8 +881,9 @@
                 - name: Asistente para publicación (Desarrollo de Office en Visual Studio)
                   href: publish-wizard-office-development-in-visual-studio.md
             - name: Mensajes de error (Desarrollo de Office en Visual Studio)
-              href: error-messages-office-development-in-visual-studio.md
               items:
+                - name: Mensajes de error (Desarrollo de Office en Visual Studio)
+                  href: error-messages-office-development-in-visual-studio.md
                 - name: Microsoft Office no está instalado en este equipo
                   href: microsoft-office-is-not-installed-on-this-computer.md
                 - name: El libro usado para crear este proyecto contiene controles ActiveX que el diseñador no puede cargar
@@ -832,8 +895,9 @@
         - name: Referencia administrada (desarrollo de Office en Visual Studio)
           href: managed-reference-office-development-in-visual-studio.md
         - name: Referencia de la API administrada (desarrollo de Office en Visual Studio)
-          href: unmanaged-api-reference-office-development-in-visual-studio.md
           items:
+            - name: Referencia de la API administrada (desarrollo de Office en Visual Studio)
+              href: unmanaged-api-reference-office-development-in-visual-studio.md
             - name: EnsureVSTOComponent (función)
               href: ensurevstocomponent-function.md
             - name: GetValidCompatibleFramework (función)
@@ -841,15 +905,17 @@
             - name: GetVstoSolutionMetadata (función)
               href: getvstosolutionmetadata-function.md
             - name: interfaz IManagedAddin
-              href: imanagedaddin-interface.md
               items:
+                - name: interfaz IManagedAddin
+                  href: imanagedaddin-interface.md
                 - name: Load (Método)
                   href: imanagedaddin-load.md
                 - name: método Unload
                   href: imanagedaddin-unload.md
             - name: IWefDebuggingSupport (Interfaz)
-              href: iwefdebuggingsupport-interface.md
               items:
+                - name: IWefDebuggingSupport (Interfaz)
+                  href: iwefdebuggingsupport-interface.md
                 - name: GetAutoInsertExtensions (Método)
                   href: getautoinsertextensions-method.md
                 - name: SetWefProcessId (Método)

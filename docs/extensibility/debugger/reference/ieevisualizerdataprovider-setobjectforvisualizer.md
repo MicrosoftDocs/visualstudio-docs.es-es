@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a55328c4148aa911d86b8f2daf05ba84a50ff444
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: cd7bd4bfd113da8cfd311d1022967d8c99f915b5
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62867981"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65223945"
 ---
 # <a name="ieevisualizerdataprovidersetobjectforvisualizer"></a>IEEVisualizerDataProvider::SetObjectForVisualizer
 Este método cambia el objeto que representa el visualizador.
@@ -40,16 +43,16 @@ int SetObjectForVisualizer(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `pNewObject`
+## <a name="parameters"></a>Parámetros
+ `pNewObject`\
 
  [in] El objeto va a establecer.
 
- `error`
+ `error`\
 
  [out] Si se produjo un error al configurar el objeto, esta cadena contiene el mensaje de error.
 
- `pException`
+ `pException`\
 
  [out] Si se produjo un error, este objeto contiene la información de excepción.
 

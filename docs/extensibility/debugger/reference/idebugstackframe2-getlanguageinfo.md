@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3d0f5c17fc0dd12cf8ecb184b667880462548877
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 87cdfcaa59fabb983d85d154bca48a381ebf8819
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62868908"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457549"
 ---
 # <a name="idebugstackframe2getlanguageinfo"></a>IDebugStackFrame2::GetLanguageInfo
 Obtiene el idioma asociado a este marco de pila.
@@ -38,26 +41,26 @@ int GetLanguageInfo ( 
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `pbstrLanguage`
+## <a name="parameters"></a>Parámetros
+ `pbstrLanguage`\
 
  [out] Devuelve el nombre del lenguaje que implementa el método asociado a este marco de pila.
 
- `pguidLanguage`
+ `pguidLanguage`\
 
  [out] Devuelve el `GUID` del lenguaje. Para el [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] idiomas, por ejemplo, la siguiente puede devolver:
 
-- `guidVBScriptLang`
+-   `guidVBScriptLang`\
 
-- `guidJScriptLang`
+-   `guidJScriptLang`\
 
-- `guidCPPLang`
+-   `guidCPPLang`\
 
-- `guidVBLang`
+-   `guidVBLang`\
 
-- `guidSQLLang`
+-   `guidSQLLang`\
 
-- `guidScriptLang`
+-   `guidScriptLang`\
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

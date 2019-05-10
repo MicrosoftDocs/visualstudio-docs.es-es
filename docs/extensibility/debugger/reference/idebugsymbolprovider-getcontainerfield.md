@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9e215222b8637d97378dc9db24f995ab76123f00
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 8936ab07f4df7b2e2295fae4192bca79205429ac
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62868657"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65224149"
 ---
 # <a name="idebugsymbolprovidergetcontainerfield"></a>IDebugSymbolProvider::GetContainerField
 Este método obtiene el campo que contiene la dirección de depuración.
@@ -38,12 +41,12 @@ int GetContainerField(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `pAddress`
+## <a name="parameters"></a>Parámetros
+ `pAddress`\
 
  [in] La dirección representada por un [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interfaz.
 
- `ppContainerField`
+ `ppContainerField`\
 
  [out] Devuelve un campo de contenedor representado por un [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) interfaz.
 

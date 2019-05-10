@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c8c447ce6b202fc3ccca65c6725e9eb3e5f13ecf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8b0cd5939bf91a3f154cf28434f561ed93b1a597
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62982252"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226670"
 ---
 # <a name="use-wpf-controls-in-office-solutions"></a>Usar controles WPF en soluciones de Office
 
@@ -55,7 +55,7 @@ No puede agregar controles WPF directamente a los elementos de la interfaz de us
 
     - Para las áreas de formulario, agregue un **formulario de Outlook** al proyecto. Para obtener más información, vea [Cómo: Agregar un área de formulario a un proyecto de complemento de Outlook en](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md).
 
-    - Paneles de acciones, agregue un **Control Panel de acciones** o **Control de usuario** al proyecto. Para obtener más información, vea [Cómo: Agregar un panel de acciones a documentos de Word o libros de Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md) y [Cómo: Agregar un panel de acciones a documentos de Word o libros de Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md).
+    - Paneles de acciones, agregue un **Control Panel de acciones** o **Control de usuario** al proyecto. Para obtener más información, vea [Cómo: Agregar un panel de acciones a documentos de Word o libros de Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md).
 
     - Paneles de tareas personalizados, agregue un **Control de usuario** al proyecto. Para obtener más información, vea [Cómo: Agregar un panel de tareas personalizado a una aplicación](../vsto/how-to-add-a-custom-task-pane-to-an-application.md).
 

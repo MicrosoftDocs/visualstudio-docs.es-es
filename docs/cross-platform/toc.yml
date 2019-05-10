@@ -6,8 +6,9 @@
 - name: Visual Studio Tools para Apache Cordova
   href: /visualstudio/cross-platform/tools-for-cordova/
 - name: Visual Studio Tools para Unity
-  href: visual-studio-tools-for-unity.md
   items:
+    - name: Visual Studio Tools para Unity
+      href: visual-studio-tools-for-unity.md
     - name: Introducción a Visual Studio Tools para Unity
       href: getting-started-with-visual-studio-tools-for-unity.md
     - name: Uso de Visual Studio Tools para Unity
@@ -15,8 +16,9 @@
     - name: Usar .NET 4.x en Unity
       href: unity-scripting-upgrade.md
     - name: Programa Visual Studio Tools para Unity
-      href: programming-visual-studio-tools-for-unity.md
       items:
+        - name: Programa Visual Studio Tools para Unity
+          href: programming-visual-studio-tools-for-unity.md
         - name: Personalizar archivos de proyecto creados por VSTU
           href: customize-project-files-created-by-vstu.md
         - name: Compartir la devolución de llamada de registro de Unity con VSTU
@@ -32,11 +34,13 @@
     - name: DevOps con aplicaciones de Unity
       href: application-lifecycle-management-alm-with-unity-apps.md
 - name: Visual C++ para el desarrollo móvil multiplataforma.
-  href: visual-cpp-for-cross-platform-mobile-development.md
   items:
+    - name: Visual C++ para el desarrollo móvil multiplataforma.
+      href: visual-cpp-for-cross-platform-mobile-development.md
     - name: Instalar Visual C++ para el desarrollo móvil multiplataforma
-      href: install-visual-cpp-for-cross-platform-mobile-development.md
       items:
+        - name: Instalar Visual C++ para el desarrollo móvil multiplataforma
+          href: install-visual-cpp-for-cross-platform-mobile-development.md
         - name: Install and Configure Tools to Build using iOS
           href: install-and-configure-tools-to-build-using-ios.md
     - name: Crear una aplicación de Android Native Activity
@@ -50,8 +54,9 @@
     - name: Ejemplos de desarrollo móvil multiplataforma
       href: cross-platform-mobile-development-examples.md
     - name: Propiedades de proyectos multiplataforma de C++
-      href: cross-platform-prop-pages.md
       items:
+        - name: Propiedades de proyectos multiplataforma de C++
+          href: cross-platform-prop-pages.md
         - name: Propiedades de proyectos generales (C++ para Android)
           href: general-android-prop-page.md
         - name: Propiedades del depurador de Android
@@ -67,8 +72,9 @@
 - name: Desarrollar aplicaciones para la Plataforma universal de Windows (UWP)
   href: develop-apps-for-the-universal-windows-platform-uwp.md
 - name: Emulador de Visual Studio para Android
-  href: visual-studio-emulator-for-android.md
   items:
+    - name: Emulador de Visual Studio para Android
+      href: visual-studio-emulator-for-android.md
     - name: System requirements for the Visual Studio Emulator for Android
       href: system-requirements-for-the-visual-studio-emulator-for-android.md
     - name: Solución de problemas del emulador de Visual Studio para Android
