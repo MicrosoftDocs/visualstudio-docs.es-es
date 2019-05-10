@@ -10,12 +10,15 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 400c259cf7aac5b6f3ea4a6c196ebaa77e29289b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+f1_keywords:
+- CA2300
+- DoNotUseInsecureDeserializerBinaryFormatter
+ms.openlocfilehash: 13b50e9eba49ff3457aff41d59448f1a0dfc2ea7
+ms.sourcegitcommit: db30651dc0ce4d0b274479b23a6bd102a5559098
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545581"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65083884"
 ---
 # <a name="ca2300-do-not-use-insecure-deserializer-binaryformatter"></a>CA2300: No usar el deserializador no seguro BinaryFormatter
 
@@ -43,10 +46,10 @@ Esta regla busca <xref:System.Runtime.Serialization.Formatters.Binary.BinaryForm
   - <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer?displayProperty=nameWithType>
   - <xref:System.Web.Script.Serialization.JavaScriptSerializer?displayProperty=nameWithType> -No use nunca <xref:System.Web.Script.Serialization.SimpleTypeResolver?displayProperty=nameWithType>. Si debe utilizar a un solucionador de tipos, restringir tipos deserializados a una lista esperada.
   - <xref:System.Xml.Serialization.XmlSerializer?displayProperty=nameWithType>
-  - NewtonSoft Json.NET - Use TypeNameHandling.None. Si se debe usar otro valor para TypeNameHandling, restringir tipos deserializados a una lista con un ISerializationBinder personalizado esperada.
+  - Newtonsoft Json.NET - Use TypeNameHandling.None. Si se debe usar otro valor para TypeNameHandling, restringir tipos deserializados a una lista con un ISerializationBinder personalizado esperada.
   - Búferes de protocolo
-- Realizar la prueba de manipulaciones de datos serializados. Después de la serialización, firmar criptográficamente los datos serializados. Antes de la deserialización, validar la firma criptográfica. Impedir que la clave criptográfica que se revele y diseño para las rotaciones de clave.
-- Restringir tipos deserializados. Implementar un personalizado <xref:System.Runtime.Serialization.SerializationBinder?displayProperty=nameWithType>. Antes de deserializar con <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>, establezca el <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder> propiedad a una instancia de personalizado <xref:System.Runtime.Serialization.SerializationBinder>. En el invalidado <xref:System.Runtime.Serialization.SerializationBinder.BindToType%2A> método, si el tipo es inesperado, a continuación, produce una excepción.
+- Realizar la prueba de manipulaciones de datos serializados. Después de la serialización, firmar criptográficamente los datos serializados. Antes de la deserialización, validar la firma criptográfica. Proteger la clave criptográfica que se revele y el diseño para las rotaciones de clave.
+- Restringir tipos deserializados. Implementar un personalizado <xref:System.Runtime.Serialization.SerializationBinder?displayProperty=nameWithType>. Antes de deserializar con <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>, establezca el <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder> propiedad a una instancia de personalizado <xref:System.Runtime.Serialization.SerializationBinder>. En el invalidado <xref:System.Runtime.Serialization.SerializationBinder.BindToType%2A> método, si el tipo es inesperado, produce una excepción.
 - Si restringe los tipos deserializados, es posible que desea deshabilitar esta regla y habilitar reglas [CA2301](ca2301-do-not-call-binaryformatter-deserialize-without-first-setting-binaryformatter-binder.md) y [CA2302](ca2302-ensure-binaryformatter-binder-is-set-before-calling-binaryformatter-deserialize.md). Las reglas de [CA2301](ca2301-do-not-call-binaryformatter-deserialize-without-first-setting-binaryformatter-binder.md) y [CA2302](ca2302-ensure-binaryformatter-binder-is-set-before-calling-binaryformatter-deserialize.md) ayuda a asegurarse de que el <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder> siempre se establece la propiedad antes de deserializar.
 
 ## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 651bc4945f8acc65d5f12da5fecef7a4926ef416
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: fecff3d6a992360f2fec385e93d88a65b368db9f
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62868825"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457503"
 ---
 # <a name="idebugstackframe2enumproperties"></a>IDebugStackFrame2::EnumProperties
 Crea un enumerador para las propiedades asociadas con el marco de pila, como las variables locales.
@@ -46,28 +49,28 @@ int EnumProperties ( 
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `dwFieldSpec`
+## <a name="parameters"></a>Parámetros
+ `dwFieldSpec`\
 
  [in] Una combinación de marcas de la [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) enumeración que especifica qué campos de los enumerados [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) son estructuras que deben rellenarse.
 
- `nRadix`
+ `nRadix`\
 
  [in] La base que se usará para dar formato a cualquier información numérica.
 
- `refiid`
+ `refiid`\
 
  [in] Un GUID de un filtro usado para seleccionar qué [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) son estructuras que hay que enumerar, tales como `guidFilterLocals`.
 
- `dwTimeout`
+ `dwTimeout`\
 
  [in] Tiempo máximo, en milisegundos para esperar antes de volver de este método. Use `INFINITE` para esperar indefinidamente.
 
- `pcelt`
+ `pcelt`\
 
  [out] Devuelve el número de propiedades enumerados. Esto equivale a llamar a la [GetCount](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-getcount.md) método.
 
- `ppEnum`
+ `ppEnum`\
 
  [out] Devuelve un [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) objeto que contiene una lista de las propiedades deseadas.
 

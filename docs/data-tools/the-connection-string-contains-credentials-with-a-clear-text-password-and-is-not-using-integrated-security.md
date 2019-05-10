@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 960f5a3d51ee4bad60126c124edd6ba659ba391d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b270290c948807ff0f66d3d142312245475cd33c
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62566988"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460603"
 ---
 # <a name="the-connection-string-contains-credentials-with-a-clear-text-password-and-is-not-using-integrated-security"></a>La cadena de conexión contiene credenciales con una contraseña en texto no cifrado y no usa seguridad integrada
 
@@ -36,5 +36,4 @@ Al trabajar con conexiones de datos que incluyen información confidencial (cont
 
 ## <a name="see-also"></a>Vea también
 
-- [Mensajes de Object Relational Designer](../data-tools/o-r-designer-messages.md)
 - [LINQ to SQL tools en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) (Herramientas LINQ to SQL en Visual Studio)

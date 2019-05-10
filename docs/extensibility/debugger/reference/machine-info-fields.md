@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 61a22a1868a47fd4b54b19cf224f995897775b4f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 00f1e8ea5487a4eecb6dc9fa1f2b16d18ec3fa07
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62865789"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458060"
 ---
 # <a name="machineinfofields"></a>MACHINE_INFO_FIELDS
 Especifica qué tipo de información que se va a recuperar de una máquina concreta.
@@ -41,12 +44,15 @@ public enum enum_MACHINE_INFO_FIELDS { 
 };
 ```
 
-## <a name="members"></a>Miembros
- MCIF_NAME Initialize o usar el `bstrName` campo en la estructura.
+## <a name="fields"></a>Campos
+ `MCIF_NAME`\
+ Inicializar o usar el `bstrName` campo en la estructura.
 
- MCIF_FLAGS Initialize o usar el `Flags` campo en la estructura.
+ `MCIF_FLAGS`\
+ Inicializar o usar el `Flags` campo en la estructura.
 
- MIF_ALL Initialize o usar todos los campos de la estructura.
+ `MIF_ALL`\
+ Inicializar o usar todos los campos de la estructura.
 
 ## <a name="remarks"></a>Comentarios
  Estos valores se pasan a la [GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md) método para indicar qué miembros de la [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md) estructura deben inicializarse.

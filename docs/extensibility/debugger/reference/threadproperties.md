@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 55b3334c8bd28d3975f06aa39ca8c7fd719f1f9e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 59b0fd83202ea8a5514d1ed637404d4864bf6b57
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913358"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460723"
 ---
 # <a name="threadproperties"></a>THREADPROPERTIES
 Describe las propiedades de un subproceso.
@@ -49,19 +52,26 @@ public struct THREADPROPERTIES { 
 ```
 
 ## <a name="members"></a>Miembros
- dwFields una combinación de marcas de la [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md) enumeración, que describe qué campos de esta estructura son válidos.
+ `dwFields`\
+ Una combinación de marcas de la [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md) enumeración, que describe qué campos de esta estructura son válidos.
 
- dwThreadId el identificador de subproceso.
+ `dwThreadId`\
+ El identificador de subproceso.
 
- recuento de suspensiones dwSuspendCount el subproceso.
+ `dwSuspendCount`\
+ Recuento de suspensiones el subproceso.
 
- dwThreadState un valor de la [THREADSTATE](../../../extensibility/debugger/reference/threadstate.md) enumeración que indica el estado del subproceso de funcionamiento.
+ `dwThreadState`\
+ Un valor de la [THREADSTATE](../../../extensibility/debugger/reference/threadstate.md) enumeración que indica el estado del subproceso de funcionamiento.
 
- Una cadena que especifica la prioridad del subproceso; bstrPriority Por ejemplo, "Anterior" Normal","Normal"o"Tiempo crítico".
+ `bstrPriority`\
+ Una cadena que especifica la prioridad del subproceso; Por ejemplo, "Anterior" Normal","Normal"o"Tiempo crítico".
 
- bstName el nombre del subproceso.
+ `bstName`\
+ El nombre del subproceso.
 
- bstrLocation la ubicación del subproceso (normalmente en el marco de pila más alto), normalmente expresada como el nombre del método donde actualmente se detiene la ejecución.
+ `bstrLocation`\
+ La ubicación del subproceso (normalmente en el marco de pila más alto), normalmente expresada como el nombre del método donde actualmente se detiene la ejecución.
 
 ## <a name="remarks"></a>Comentarios
  Esta estructura se rellena mediante una llamada a la [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md) método. La información devuelta por lo que normalmente se usa para rellenar el **subprocesos** ventana.

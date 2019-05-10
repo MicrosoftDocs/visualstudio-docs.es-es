@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 04124f22ccba6700d6399be8e2727d3a928e6227
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7aee87e353cb3b69b70e78508c20a9a9c1ed5102
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62818194"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460684"
 ---
 # <a name="changing-the-return-type-of-a-datacontext-method-cannot-be-undone"></a>El cambio del tipo devuelto de un método DataContext no se puede deshacer
 
@@ -39,5 +39,4 @@ El tipo de valor devuelto de un método de <xref:System.Data.Linq.DataContext> d
 
 ## <a name="see-also"></a>Vea también
 
-- [Mensajes de Object Relational Designer](../data-tools/o-r-designer-messages.md)
 - [LINQ to SQL tools en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) (Herramientas LINQ to SQL en Visual Studio)

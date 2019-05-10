@@ -1,13 +1,15 @@
 - name: Analizar y modelar la arquitectura
-  href: analyze-and-model-your-architecture.md
   items:
+    - name: Analizar y modelar la arquitectura
+      href: analyze-and-model-your-architecture.md
     - name: "Novedades de diseño en Visual Studio\_2017"
       href: what-s-new-for-design-in-visual-studio.md
     - name: Cambiar el diseño mediante herramientas de visualización y modelado
       href: scenario-change-your-design-using-visualization-and-modeling.md
     - name: Visualizar el código
-      href: visualize-code.md
       items:
+        - name: Visualizar el código
+          href: visualize-code.md
         - name: Usar mapas de código para asignar dependencias
           href: map-dependencies-across-your-solutions.md
         - name: Compartir mapas de código
@@ -31,22 +33,25 @@
         - name: Crear diagramas de dependencia a partir del código
           href: create-layer-diagrams-from-your-code.md
     - name: Crear modelos para la aplicación
-      href: create-models-for-your-app.md
       items:
+        - name: Crear modelos para la aplicación
+          href: create-models-for-your-app.md
         - name: 'Diagramas de dependencia: Referencia'
           href: layer-diagrams-reference.md
         - name: 'Diagramas de dependencia: Instrucciones'
           href: layer-diagrams-guidelines.md
         - name: Compartir modelos y exportar diagramas
-          href: share-models-and-exporting-diagrams.md
           items:
+            - name: Compartir modelos y exportar diagramas
+              href: share-models-and-exporting-diagrams.md
             - name: Leer modelos y diagramas en otras ediciones de Visual Studio
               href: read-models-and-diagrams-in-other-visual-studio-editions.md
             - name: Exportar diagramas como imágenes
               href: export-diagrams-as-images.md
     - name: Usar modelos en el proceso de desarrollo
-      href: use-models-in-your-development-process.md
       items:
+        - name: Usar modelos en el proceso de desarrollo
+          href: use-models-in-your-development-process.md
         - name: Requisitos del usuario de modelos
           href: model-user-requirements.md
         - name: Modelar la arquitectura de la aplicación
@@ -58,15 +63,17 @@
         - name: Visual Studio Architecture Tooling Guidance
           href: visual-studio-architecture-tooling-guidance.md
     - name: Validar el sistema durante el desarrollo
-      href: validate-your-system-during-development.md
       items:
+        - name: Validar el sistema durante el desarrollo
+          href: validate-your-system-during-development.md
         - name: Desarrollar pruebas en un modelo
           href: develop-tests-from-a-model.md
         - name: Validación código con diagramas de dependencia
           href: validate-code-with-layer-diagrams.md
     - name: Ampliar diagramas de dependencia
-      href: extend-layer-diagrams.md
       items:
+        - name: Ampliar diagramas de dependencia
+          href: extend-layer-diagrams.md
         - name: Agregar comandos y gestos a diagramas de dependencia
           href: add-commands-and-gestures-to-layer-diagrams.md
         - name: Agregar validación de arquitectura personalizada a diagramas de dependencia
@@ -74,8 +81,9 @@
         - name: Agregar propiedades personalizadas a diagramas de dependencia
           href: add-custom-properties-to-layer-diagrams.md
     - name: Modelar el SDK de Visual Studio - Lenguajes específicos de dominio
-      href: modeling-sdk-for-visual-studio-domain-specific-languages.md
       items:
+        - name: Modelar el SDK de Visual Studio - Lenguajes específicos de dominio
+          href: modeling-sdk-for-visual-studio-domain-specific-languages.md
         - name: Introducción a los lenguajes específicos de dominio
           href: getting-started-with-domain-specific-languages.md
         - name: 'Introducción a los modelos, las clases y las relaciones'
@@ -83,11 +91,13 @@
         - name: 'Cómo: Definir lenguajes específicos de dominio'
           href: how-to-define-a-domain-specific-language.md
         - name: Personalizar y extender un lenguaje específico de dominio
-          href: customizing-and-extending-a-domain-specific-language.md
           items:
+            - name: Personalizar y extender un lenguaje específico de dominio
+              href: customizing-and-extending-a-domain-specific-language.md
             - name: Personalizar la presentación en el diagrama
-              href: customizing-presentation-on-the-diagram.md
               items:
+                - name: Personalizar la presentación en el diagrama
+                  href: customizing-presentation-on-the-diagram.md
                 - name: Definir formas y conectores
                   href: defining-shapes-and-connectors.md
                 - name: 'Controlar el color, el estilo de línea y otras propiedades de forma'
@@ -113,8 +123,9 @@
             - name: Sintaxis de las rutas de dominio
               href: domain-path-syntax.md
             - name: Propiedades de los elementos del modelo
-              href: properties-of-model-elements.md
               items:
+                - name: Propiedades de los elementos del modelo
+                  href: properties-of-model-elements.md
                 - name: Propiedades de las definiciones DSL
                   href: properties-of-a-dsl-definition.md
                 - name: Propiedades de las clases de dominio
@@ -144,8 +155,9 @@
             - name: Compartir clases entre DSL mediante una biblioteca DSL
               href: sharing-classes-between-dsls-by-using-a-dsl-library.md
         - name: Escribir código para personalizar un lenguaje específico de dominio
-          href: writing-code-to-customise-a-domain-specific-language.md
           items:
+            - name: Escribir código para personalizar un lenguaje específico de dominio
+              href: writing-code-to-customise-a-domain-specific-language.md
             - name: Invalidar y ampliar las clases generadas
               href: overriding-and-extending-the-generated-classes.md
             - name: Navegar por un modelo en el código del programa y actualizarlo
@@ -173,8 +185,9 @@
         - name: La validación en los lenguajes específicos de dominio
           href: validation-in-a-domain-specific-language.md
         - name: Escribir comandos y acciones de usuario
-          href: writing-user-commands-and-actions.md
           items:
+            - name: Escribir comandos y acciones de usuario
+              href: writing-user-commands-and-actions.md
             - name: Modificar un comando de menú estándar en un lenguaje específico de dominio
               href: how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md
             - name: Agregar un comando al menú contextual
@@ -186,8 +199,9 @@
             - name: Acceder a la selección actual y restringirla
               href: how-to-access-and-constrain-the-current-selection.md
         - name: Responder a cambios y propagarlos
-          href: responding-to-and-propagating-changes.md
           items:
+            - name: Responder a cambios y propagarlos
+              href: responding-to-and-propagating-changes.md
             - name: Propiedades calculadas y de almacenamiento personalizado
               href: calculated-and-custom-storage-properties.md
             - name: Controladores de los cambios de valor de propiedad de dominio
@@ -199,8 +213,9 @@
             - name: Actualizar formas y conectores para reflejar el modelo
               href: updating-shapes-and-connectors-to-reflect-the-model.md
         - name: Generar código a partir de un lenguaje específico de dominio
-          href: generating-code-from-a-domain-specific-language.md
           items:
+            - name: Generar código a partir de un lenguaje específico de dominio
+              href: generating-code-from-a-domain-specific-language.md
             - name: Acceder a modelos a partir de plantillas de texto
               href: accessing-models-from-text-templates.md
             - name: Usar Visual Studio ModelBus en una plantilla de texto
@@ -214,8 +229,9 @@
         - name: Personalizar el almacenamiento de archivos y la serialización XML
           href: customizing-file-storage-and-xml-serialization.md
         - name: Implementar soluciones de lenguajes específicos de dominio
-          href: deploying-domain-specific-language-solutions.md
           items:
+            - name: Implementar soluciones de lenguajes específicos de dominio
+              href: deploying-domain-specific-language-solutions.md
             - name: Implementación mediante MSI y VSIX de un DSL
               href: msi-and-vsix-deployment-of-a-dsl.md
             - name: Varios DSL en una solución
@@ -227,8 +243,9 @@
         - name: Crear un lenguaje específico de dominio basado en WPF
           href: creating-a-wpf-based-domain-specific-language.md
         - name: Trabajar con soluciones de lenguajes específicos de dominio
-          href: working-with-domain-specific-language-solutions.md
           items:
+            - name: Trabajar con soluciones de lenguajes específicos de dominio
+              href: working-with-domain-specific-language-solutions.md
             - name: Acerca de los lenguajes específicos de dominio
               href: about-domain-specific-languages.md
             - name: Información general sobre las herramientas de los lenguajes específicos de dominio
@@ -254,11 +271,13 @@
         - name: Referencia de API para modelar el SDK de Visual Studio
           href: api-reference-for-modeling-sdk-for-visual-studio.md
     - name: Generación de código y plantillas de texto T4
-      href: code-generation-and-t4-text-templates.md
       items:
+        - name: Generación de código y plantillas de texto T4
+          href: code-generation-and-t4-text-templates.md
         - name: Generación de código en tiempo de diseño usando las plantillas de texto T4
-          href: design-time-code-generation-by-using-t4-text-templates.md
           items:
+            - name: Generación de código en tiempo de diseño usando las plantillas de texto T4
+              href: design-time-code-generation-by-using-t4-text-templates.md
             - name: 'Tutorial: Generación de código mediante plantillas de texto'
               href: walkthrough-generating-code-by-using-text-templates.md
             - name: Generación de código en un proceso de compilación
@@ -270,11 +289,13 @@
         - name: Generación de texto en tiempo de ejecución con plantillas de texto T4
           href: run-time-text-generation-with-t4-text-templates.md
         - name: Escribir una plantilla de texto T4
-          href: writing-a-t4-text-template.md
           items:
+            - name: Escribir una plantilla de texto T4
+              href: writing-a-t4-text-template.md
             - name: Directivas de plantilla de texto T4
-              href: t4-text-template-directives.md
               items:
+                - name: Directivas de plantilla de texto T4
+                  href: t4-text-template-directives.md
                 - name: Directiva de plantilla T4
                   href: t4-template-directive.md
                 - name: Directiva de parámetro T4
@@ -296,8 +317,9 @@
             - name: Acceder a Visual Studio u otros hosts desde una plantilla de texto
               href: accessing-visual-studio-or-other-hosts-from-a-text-template.md
             - name: Usar secuencias de escape en plantillas de texto
-              href: using-escape-sequences-in-text-templates.md
               items:
+                - name: Usar secuencias de escape en plantillas de texto
+                  href: using-escape-sequences-in-text-templates.md
                 - name: Generar plantillas desde otras plantillas mediante secuencias de escape
                   href: how-to-generate-templates-from-templates-by-using-escape-sequences.md
         - name: Depurar una plantilla de texto T4
@@ -307,13 +329,15 @@
         - name: 'Cómo: ... con plantillas de texto'
           href: how-to-dot-dot-dot-with-text-templates.md
         - name: Personalizar la transformación de texto T4
-          href: customizing-t4-text-transformation.md
           items:
+            - name: Personalizar la transformación de texto T4
+              href: customizing-t4-text-transformation.md
             - name: El proceso de transformación de las plantillas de texto
               href: the-text-template-transformation-process.md
             - name: Crear procesadores de directivas personalizadas para las plantillas de texto T4
-              href: creating-custom-t4-text-template-directive-processors.md
               items:
+                - name: Crear procesadores de directivas personalizadas para las plantillas de texto T4
+                  href: creating-custom-t4-text-template-directive-processors.md
                 - name: Implementar un procesador de directivas personalizadas
                   href: deploying-a-custom-directive-processor.md
                 - name: 'Tutorial: Creación de un procesador de directivas personalizado'
@@ -321,8 +345,9 @@
             - name: Invocar la transformación de texto en una extensión de VS
               href: invoking-text-transformation-in-a-vs-extension.md
             - name: Procesar plantillas de texto mediante un host personalizado
-              href: processing-text-templates-by-using-a-custom-host.md
               items:
+                - name: Procesar plantillas de texto mediante un host personalizado
+                  href: processing-text-templates-by-using-a-custom-host.md
                 - name: 'Tutorial: Creación de un host de plantilla de texto personalizado'
                   href: walkthrough-creating-a-custom-text-template-host.md
         - name: Referencia de API para plantillas de texto T4

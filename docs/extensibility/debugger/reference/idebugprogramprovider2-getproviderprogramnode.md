@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c468745418c01b638cbc407342820b9127b460b6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 594fef8a83c01b4bad4d47fdb206d64e445ad515
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62869820"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65459016"
 ---
 # <a name="idebugprogramprovider2getproviderprogramnode"></a>IDebugProgramProvider2::GetProviderProgramNode
 Recupera el nodo de programa para un programa específico.
@@ -46,8 +49,8 @@ int GetProviderProgramNode(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `Flags`
+## <a name="parameters"></a>Parámetros
+ `Flags`\
 
  [in] Una combinación de marcas de la [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md) enumeración. Las marcas siguientes son típicas para esta llamada:
 
@@ -57,23 +60,23 @@ int GetProviderProgramNode(
 |`PFLAG_DEBUGGEE`|Autor de la llamada se está depurando (información adicional sobre el cálculo de referencias se devolverán para cada nodo).|
 |`PFLAG_ATTACHED_TO_DEBUGGEE`|Autor de llamada se adjunta a pero no se inicia el depurador.|
 
- `pPort`
+ `pPort`\
 
  [in] El puerto que el proceso de llamada se ejecuta en.
 
- `processId`
+ `processId`\
 
  [in] Un [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) estructura que contiene el identificador del proceso que contiene el programa en cuestión.
 
- `guidEngine`
+ `guidEngine`\
 
  [in] GUID del motor de depuración que el programa está asociado a (si existe).
 
- `programId`
+ `programId`\
 
  [in] Id. del programa para la que se va a obtener el nodo de programa.
 
- `ppProgramNode`
+ `ppProgramNode`\
 
  [out] Un [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) objeto que representa el nodo de programa solicitado.
 

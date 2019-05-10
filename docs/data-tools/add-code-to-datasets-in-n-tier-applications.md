@@ -1,31 +1,32 @@
 ---
-title: Agregar código a conjuntos de datos en aplicaciones de n niveles
+title: Agregue código a conjuntos de datos en aplicaciones de n niveles
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
 helpviewer_keywords:
-- n-tier applications, extending datasets
+- n-tier applications, extending DataSets
 ms.assetid: d43c2ccd-4902-43d8-b1a8-d10ca5d3210c
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: a66250c9d376962bfef2db6b563070696fd33346
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b776e75df2830b89fd1ffe9aed197e9cd1019851
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63402872"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458469"
 ---
-# <a name="add-code-to-datasets-in-n-tier-applications"></a>Agregar código a conjuntos de datos en aplicaciones de n niveles
+# <a name="add-code-to-datasets-in-n-tier-applications"></a>Agregue código a conjuntos de datos en aplicaciones de n niveles
+
 Puede ampliar la funcionalidad de un conjunto de datos mediante la creación de un archivo de clase parcial para el conjunto de datos y agregar código a ella (en lugar de agregar código a la *DatasetName*. Archivo Dataset.Designer). Las clases parciales permiten código para una clase específica que va a dividir entre varios archivos físicos. Para obtener más información, consulte [parcial](/dotnet/visual-basic/language-reference/modifiers/partial) o [clases y métodos parciales](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods).
 
 El código que define un conjunto de datos se genera cada vez que se realizan cambios en la definición del conjunto de datos (en el conjunto de datos con tipo). Este código también se genera cuando se realizan cambios durante la ejecución de cualquier asistente que modifica la configuración de un conjunto de datos. Para evitar que el código que se eliminen durante la regeneración de un conjunto de datos, agregue código al archivo de clase parcial del conjunto de datos.
 
-De forma predeterminada, después de separar el conjunto de datos y el código de TableAdapter, el resultado es un archivo de clase discretos en cada proyecto. El proyecto original tiene un archivo denominado *DatasetName.Designer.vb* (o *DatasetName.Designer.cs*) que contiene el código del TableAdapter. El proyecto designado en el **Dataset Project** propiedad tiene un archivo denominado *DatasetName.DataSet.Designer.vb* (o *DatasetName.DataSet.Designer.cs*) . Este archivo contiene el código de conjunto de datos.
+De forma predeterminada, después de separar el conjunto de datos y el código de TableAdapter, el resultado es un archivo de clase discretos en cada proyecto. El proyecto original tiene un archivo denominado *DatasetName.Designer.vb* (o *DatasetName.Designer.cs*) que contiene el código del TableAdapter. El proyecto designado en el **DataSet Project** propiedad tiene un archivo denominado *DatasetName.DataSet.Designer.vb* (o *DatasetName.DataSet.Designer.cs*) . Este archivo contiene el código de conjunto de datos.
 
 > [!NOTE]
 > Al separar conjuntos de datos y TableAdapters (estableciendo la **DataSet Project** propiedad), las clases de conjunto de datos parciales existentes en el proyecto no se moverá automáticamente. Las clases de conjunto de datos parciales existentes se deberán trasladar manualmente al proyecto de conjunto de datos.

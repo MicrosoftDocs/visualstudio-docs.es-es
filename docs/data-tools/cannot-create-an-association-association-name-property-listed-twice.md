@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9c198518fca543eb9275afd918a640275f797b19
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fcc2a7322397537c9585d0aaa2674e1d3ab3c656
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62818116"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460698"
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-listed-twice"></a>No se puede crear una asociación &lt;nombre de asociación&gt;; la propiedad aparece dos veces.
 
@@ -35,6 +35,5 @@ La propiedad mencionada en el mensaje aparece más de una vez en las **Propiedad
 
 ## <a name="see-also"></a>Vea también
 
-- [Mensajes de Object Relational Designer](../data-tools/o-r-designer-messages.md)
 - [LINQ to SQL tools en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) (Herramientas LINQ to SQL en Visual Studio)
 - [Cómo: Crear una asociación entre clases LINQ to SQL (Object Relational Designer)](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)

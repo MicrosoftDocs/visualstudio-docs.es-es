@@ -45,7 +45,7 @@ Este tutorial muestra cómo se crea un sencillo servicio de [!INCLUDE[vsindigo](
   
      En **el Explorador de soluciones**, haga doble clic en IService1.vb o IService1.cs y busque la línea siguiente:  
   
-     [! código csharp [WCFWalkthrough #4] (.. /Snippets/CSharp/VS_Snippets_VBCSharp/wcfwalkthrough/CS/IService1 (2).cs 4)] [! código vb [WCFWalkthrough #4] (.. /Snippets/VisualBasic/VS_Snippets_VBCSharp/wcfwalkthrough/VB/IService1 (2).vb 4)]  
+     [!código csharp[WCFWalkthrough#4](../Snippets/CSharp/VS_Snippets_VBCSharp/wcfwalkthrough/CS/IService1 (2).cs#4)]   [!código vb[WCFWalkthrough #4](../Snippets/VisualBasic/VS_Snippets_VBCSharp/wcfwalkthrough/VB/IService1 (2).vb#4)]  
   
      Cambiar el tipo del parámetro `value` a `String`:  
   
@@ -58,7 +58,7 @@ Este tutorial muestra cómo se crea un sencillo servicio de [!INCLUDE[vsindigo](
   
      En **el Explorador de soluciones**, haga doble clic en Service1.vb o Service1.cs y busque la línea siguiente:  
   
-     [! código csharp [WCFWalkthrough 5] (.. /Snippets/CSharp/VS_Snippets_VBCSharp/wcfwalkthrough/CS/Service1 (2).cs Nº 5)] [! código vb [WCFWalkthrough 5] (.. /Snippets/VisualBasic/VS_Snippets_VBCSharp/wcfwalkthrough/VB/Service1 (2).vb Nº 5)]  
+     [!código csharp[WCFWalkthrough#5](../Snippets/CSharp/VS_Snippets_VBCSharp/wcfwalkthrough/CS/Service1 (2).cs Nº 5)]   [!código vb[WCFWalkthrough#5](../Snippets/VisualBasic/VS_Snippets_VBCSharp/wcfwalkthrough/VB/Service1 (2).vb Nº 5)]  
   
      Cambiar el tipo del parámetro de valor a `String`:  
   

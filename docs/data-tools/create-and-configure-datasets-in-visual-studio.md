@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b71d4b8ea58cbbe36e3fe48228789d4aee02af53
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 41a7a699506853d6891c7d7b66fef4082814c06a
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62567797"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460616"
 ---
-# <a name="create-and-configure-datasets-in-visual-studio"></a>Crear y configurar conjuntos de datos en Visual Studio
+# <a name="how-to-create-and-configure-datasets-in-visual-studio"></a>Procedimiento Crear y configurar conjuntos de datos en Visual Studio
 
 Un conjunto de datos es crear un conjunto de objetos que almacenan datos de una base de datos en memoria y admite el seguimiento de cambios para habilitar, leer, actualizar y eliminar operaciones (CRUD) en los datos sin necesidad de estar siempre conectados a la base de datos. Los conjuntos de datos se diseñaron para simple *formularios sobre datos* aplicaciones empresariales. Para las aplicaciones nuevas, considere el uso de Entity Framework para almacenar y modelar los datos en memoria. Para trabajar con conjuntos de datos, debe tener conocimientos básicos sobre conceptos de base de datos.
 

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e003b74faeb7c6ed165c43380a7c4c6b0520ea0c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 341b321b529bc1359ba576cc26ec20cc99e96cb3
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62864826"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458399"
 ---
 # <a name="seekstart"></a>SEEK_START
 Especifica la posición desde la que se va a iniciar la búsqueda en una secuencia de desensamblado.
@@ -45,16 +48,21 @@ public enum enum_SEEK_START { 
 };
 ```
 
-## <a name="members"></a>Miembros
- SEEK_START_BEGIN inicia la búsqueda al principio del documento actual.
+## <a name="fields"></a>Campos
+ `SEEK_START_BEGIN`\
+ Inicia la búsqueda al principio del documento actual.
 
- SEEK_START_END inicia la búsqueda al final del documento actual.
+ `SEEK_START_END`\
+ Inicia la búsqueda al final del documento actual.
 
- SEEK_START_CURRENT inicia la búsqueda en la posición actual del documento actual.
+ `SEEK_START_CURRENT`\
+ Inicia la búsqueda en la posición actual del documento actual.
 
- SEEK_START_CODECONTEXT inicia la búsqueda en el contexto de código especificada del documento actual.
+ `SEEK_START_CODECONTEXT`\
+ Inicia la búsqueda en el contexto de código especificada del documento actual.
 
- SEEK_START_CODELOCID inicia la búsqueda en el identificador de ubicación de código dado. Los identificadores de ubicación de código se obtienen mediante una llamada a [GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md).
+ `SEEK_START_CODELOCID`\
+ Inicia la búsqueda en el identificador de ubicación de código dado. Los identificadores de ubicación de código se obtienen mediante una llamada a [GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md).
 
 ## <a name="remarks"></a>Comentarios
  Se pasa como argumento a la [Seek](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md) método.
