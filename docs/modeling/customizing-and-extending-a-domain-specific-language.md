@@ -9,38 +9,37 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd399bb0d18d4a12493530932705b938a5f6dd67
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ebbb18e37356c1ef6ccc47f18afe4736a418c0c3
+ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63414853"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65476578"
 ---
-# <a name="customizing-and-extending-a-domain-specific-language"></a>Personalizar y ampliar lenguajes específicos de dominio
+# <a name="customize-and-extend-a-domain-specific-language"></a>Personalizar y ampliar un lenguaje específico de dominio
+
 Visual Studio de modelado y visualización SDK (VMSDK) proporciona varios niveles en el que puede definir las herramientas de modelado:
 
-1. Definir lenguajes específicos de dominio (DSL) mediante el diagrama de definición de DSL. Puede crear rápidamente un DSL con una notación en forma de diagrama, un formato XML legible y las herramientas básicas que se necesitan para generar código y otros artefactos.
-
-     Para obtener más información, consulte [cómo definir lenguajes específicos de dominio](../modeling/how-to-define-a-domain-specific-language.md).
+1. Definir lenguajes específicos de dominio (DSL) mediante el diagrama de definición de DSL. Puede crear rápidamente un DSL con una notación en forma de diagrama, un formato XML legible y las herramientas básicas que se necesitan para generar código y otros artefactos. Para obtener más información, consulte [cómo definir lenguajes específicos de dominio](../modeling/how-to-define-a-domain-specific-language.md).
 
 2. Ajuste el DSL mediante el uso de características más avanzadas de la definición de DSL. Por ejemplo, puede establecer vínculos adicionales aparecen cuando el usuario crea un elemento. Estas técnicas se logran principalmente en la definición de DSL, y algunas requieren unas pocas líneas de código de programa.
 
-3. Amplíe sus herramientas de modelado mediante el uso de código de programa. VMSDK está diseñado específicamente para facilitar la integración de las extensiones con el código que se genera a partir de la definición de DSL.  Para obtener más información, consulte [escribir código para personalizar un lenguaje específico de dominio](../modeling/writing-code-to-customise-a-domain-specific-language.md).
+3. Amplíe sus herramientas de modelado mediante el uso de código de programa. VMSDK está diseñado específicamente para facilitar la integración de las extensiones con el código que se genera a partir de la definición de DSL. Para obtener más información, consulte [escribir código para personalizar un lenguaje específico de dominio](../modeling/writing-code-to-customise-a-domain-specific-language.md).
 
 > [!NOTE]
-> Si ha actualizado el archivo de definiciones de DSL, no olvide hacer clic en **Transformar todas las plantillas** en la barra de herramientas del explorador de soluciones antes de volver a generar la solución.
+> Si ha actualizado el archivo de definiciones de DSL, no olvide hacer clic en **Transformar todas las plantillas** en la barra de herramientas de **el Explorador de soluciones** antes de volver a generar la solución.
 
-## <a name="customShapes"></a> En esta sección
+## <a name="article-reference"></a>Referencia de artículo
 
 |Para lograr este efecto|En este tema, consulte|
 |-|-|
-|Permite al usuario establecer las propiedades de estilo y color de una forma.|Haga clic en la clase de forma o conector, seleccione **agregar expuestos**y haga clic en un elemento.<br /><br /> Consulte [personalizar la presentación en el diagrama](../modeling/customizing-presentation-on-the-diagram.md).|
+|Permite al usuario establecer las propiedades de estilo y color de una forma.|Haga clic en la clase de forma o conector, seleccione **agregar expuestos**y haga clic en un elemento.|
 |Las distintas clases de elemento de modelo un aspecto similares en el diagrama, compartir propiedades como el alto inicial y el ancho, el color, información sobre herramientas.|Usar la herencia entre las formas o clases de conector. Las asignaciones entre las formas derivadas y clases de dominio derivadas heredan los detalles de asignación de los elementos primarios.<br /><br /> O bien, asignar clases de dominio diferente a la misma clase shape.|
 |Los contextos de distintas formas, se muestra una clase de elemento de modelo.|Asignar más de una clase de forma a la misma clase de dominio. Cuando se compila la solución, siga el informe de errores y proporciona el código solicitado para decidir qué forma que desee usar.|
 |Color de una forma u otras características como fuente indican el estado actual.|Consulte [actualizar formas y conectores para reflejar el modelo](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md).<br /><br /> Cree una regla que actualiza las propiedades expuestas. Consulte [las reglas propagan los cambios en el modelo](../modeling/rules-propagate-changes-within-the-model.md).<br /><br /> O bien, use OnAssociatedPropertyChanged() para actualizar no exponen características como flechas de vínculo o la fuente.|
 |Icono en forma cambia para indicar el estado.|Establecer la visibilidad de la asignación de decorator en la ventana Detalles de DSL. Busque varios elementos Decorator de imagen en la misma posición. Consulte [actualizar formas y conectores para reflejar el modelo](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md).<br /><br /> O bien, invalidar `ImageField.GetDisplayImage()`. Vea el ejemplo de <xref:Microsoft.VisualStudio.Modeling.Diagrams.ImageField>.|
-|Establecer una imagen de fondo en cualquier forma|Invalidar InitializeInstanceResources() para agregar un anclado ImageField. Consulte [personalizar la presentación en el diagrama](../modeling/customizing-presentation-on-the-diagram.md).|
-|Anidar formas a cualquier profundidad|Configure una recursiva incrustación de árbol. Defina el elemento BoundsRules para contener las formas. Consulte [personalizar la presentación en el diagrama](../modeling/customizing-presentation-on-the-diagram.md).|
+|Establecer una imagen de fondo en cualquier forma|Invalidar InitializeInstanceResources() para agregar un anclado ImageField.|
+|Anidar formas a cualquier profundidad|Configure una recursiva incrustación de árbol. Defina el elemento BoundsRules para contener las formas.|
 |Adjuntar conectores en puntos fijos en límites de un elemento.|Definir elementos terminales incrustados, representados por pequeños puertos en el diagrama. Use el elemento BoundsRules para corregir los puertos en su lugar. Vea el ejemplo de diagrama de circuito en [SDK de visualización y modelado](http://go.microsoft.com/fwlink/?LinkID=186128).|
 |Campo de texto muestra un valor derivado de otros valores.|Asignar el elemento decorator de texto a una propiedad de dominio Calculated o almacenamiento personalizado. Para obtener más información, consulte [calculadas y las propiedades de almacenamiento personalizado](../modeling/calculated-and-custom-storage-properties.md).|
 |Propagar los cambios entre los elementos del modelo, o entre formas|Consulte [validación en los lenguajes específicos de dominio](../modeling/validation-in-a-domain-specific-language.md).|

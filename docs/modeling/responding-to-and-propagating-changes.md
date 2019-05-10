@@ -9,18 +9,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 375f6996c91c294dd3b630c9ab987ff4b2d6cbdb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a1d58ede1370976147b33cf1246f8b582adb3c5b
+ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62824012"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65476600"
 ---
-# <a name="responding-to-and-propagating-changes"></a>Responder a los cambios y propagarlos
+# <a name="respond-to-and-propagate-changes"></a>Responder a y propagar los cambios
+
 Cuando un elemento se crea, elimina o actualiza, puede escribir código que se propaga el cambio a otras partes del modelo o recursos externos, como archivos, bases de datos u otros componentes.
 
-## <a name="in-this-section"></a>En esta sección
- Como norma, tenga en cuenta estas técnicas en el orden siguiente:
+## <a name="reference"></a>Referencia
+
+Como norma, tenga en cuenta estas técnicas en el orden siguiente:
 
 |Técnica|Escenarios|Para obtener más información|
 |-|-|-|
@@ -34,12 +36,13 @@ Cuando un elemento se crea, elimina o actualiza, puede escribir código que se p
 |Reglas de selección|Las reglas de selección restringen específicamente el usuario puede seleccionar.|[Cómo: Acceder a la selección actual y restringirla](../modeling/how-to-access-and-constrain-the-current-selection.md)|
 |OnAssocatedPropertyChanged|Indicar estados de los elementos del modelo mediante las características de las formas y conectores como instantáneas, las puntas de flecha, color y los anchos de línea y estilo.|[Actualizar formas y conectores para reflejar el modelo](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md)|
 
-## <a name="comparing-rules-and-store-events"></a>**Comparación de las reglas y eventos de Store**
- Cambio notificadores, reglas y los eventos se ejecutan cuando se producen cambios en un modelo.
+## <a name="compare-rules-and-store-events"></a>Comparar las reglas y almacenar los eventos
 
- Normalmente, se aplican las reglas en la transacción final en el que se ha producido el cambio y los eventos se aplican después de confirmados los cambios en una transacción.
+Cambio notificadores, reglas y los eventos se ejecutan cuando se producen cambios en un modelo.
 
- Usar eventos de almacén para sincronizar el modelo con objetos fuera de Store y las reglas para mantener la coherencia en el Store.
+Normalmente, se aplican las reglas en la transacción final en el que se ha producido el cambio y los eventos se aplican después de confirmados los cambios en una transacción.
+
+Usar eventos de almacén para sincronizar el modelo con objetos fuera de Store y las reglas para mantener la coherencia en el Store.
 
 - **Crear reglas personalizadas** crear una regla personalizada como una clase derivada de una regla de abstracta. También debe notificar al marco acerca de la regla personalizada. Para obtener más información, consulte [propagar cambios en el modelo de reglas de](../modeling/rules-propagate-changes-within-the-model.md).
 

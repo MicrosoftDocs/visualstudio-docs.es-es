@@ -13,38 +13,38 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: fb7ef710d117318d475e32f19b5ca2511b94f8bc
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: dc75c7414e0fff18f76d14f8f9a4e0779a9e7a2b
+ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63386931"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65476538"
 ---
 # <a name="whats-new-for-design-in-visual-studio-2017"></a>Novedades de diseño en Visual Studio 2017
 
 ## <a name="live-dependency-validation"></a>Validación de dependencias en vivo
 
-Quitar las dependencias no deseadas es una parte importante de la administración de su deuda técnica. Validación en vivo de las dependencias es ahora se incluyen, que proporciona información precisa sobre problemas y beneficiarse totalmente de las nuevas características en la lista de errores y el editor.
+Quitar las dependencias no deseadas es una parte importante de la administración de su deuda técnica. Visual Studio proporciona la validación en vivo de las dependencias, incluidas información precisa acerca de temas, como dónde se encuentran. Activo de dependencias validación toma todas las ventajas de las nuevas características de la lista de errores y el editor.
 
 ![Validación de dependencias en vivo en acción](media/dep-validation-whatsnew-01.png)
 
-Ha cambiado la experiencia de creación para realizar la validación de dependencias que sean más reconocibles y sea más accesible cambiando la terminología de "Diagrama de capas" a "Diagrama de dependencia".
+Ha cambiado la experiencia de creación para realizar la validación de dependencias sean más reconocibles y sea más accesible. La terminología ha cambiado de "Diagrama de capas" a "Diagrama de dependencia".
 
 El **arquitectura** menú ahora contiene un comando para crear directamente un diagrama de dependencia:
 
 ![Elemento activo de dependencias en el menú de arquitectura](media/dep-validation-whatsnew-02.png)
 
-... y han cambiado los nombres de propiedad de una capa en un diagrama de dependencias y sus descripciones, para que tuvieran más sentido:
+Se han cambiado los nombres de propiedad de capa y descripciones para que tuvieran más sentido:
 
 ![Nombres de propiedad de dependencia en vivo actualizado](media/dep-validation-whatsnew-03.png)
 
-Ahora verá el impacto de los cambios inmediatamente en los resultados del análisis para el código de la solución actual cada vez que guarde el diagrama. No tienes que esperar más para la finalización del comando "Validar dependencias".
+Verá inmediatamente el impacto de los cambios en los resultados del análisis para el código de la solución actual cada vez que guarde el diagrama. No tiene que esperar la finalización de la **validar dependencias** comando.
 
 Para obtener más información, consulte [esta entrada de blog](https://devblogs.microsoft.com/devops/live-architecture-dependency-validation-in-visual-studio-15-preview-5/).
 
 ## <a name="uml-designers-have-been-removed"></a>Se han quitado los diseñadores UML
 
-Los diseñadores de UML se quitaron de esta versión de Visual Studio Enterprise.
+Se quitaron los diseñadores de UML de Visual Studio.
 
 * Diagramas de UML ahora aparecen como archivos XML
 * El Explorador de modelos UML ya no existe
@@ -57,7 +57,7 @@ Los diseñadores de UML se quitaron de esta versión de Visual Studio Enterprise
 * Ya no se admite la vinculación atrás de DSL o una capa
 * Ya no se admite la extensibilidad UML en el SDK de modelado
 
-Sin embargo, se admiten para visualizar la arquitectura de código .NET y C++ está disponible a través de [mapas de código](map-dependencies-across-your-solutions.md)y las mejoras importantes a la validación de dependencia se ha descrito anteriormente.
+Soporte técnico para visualizar la arquitectura de .NET y C++ código está disponible a través de [mapas de código](map-dependencies-across-your-solutions.md).
 
 Si es un usuario significativa de los diseñadores de UML, aún puede usar Visual Studio 2015 o versiones anteriores, mientras se decide por una herramienta alternativa para sus necesidades UML.
 
