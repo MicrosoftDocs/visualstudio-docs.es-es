@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7614b0633f6490e8c3bb6837ed89fda67575c71e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e51944c2a7b0ad72e2c03b54a61e90bb1883177d
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913708"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457976"
 ---
 # <a name="pendingbpstateflags"></a>PENDING_BP_STATE_FLAGS
 Especifica las marcas de estado de punto de interrupción pendiente.
@@ -39,10 +42,10 @@ public enum enum_PENDING_BP_STATE_FLAGS { 
 };
 ```
 
-## <a name="members"></a>Miembros
- Marcador de posición PBPSF_NONE.
+## <a name="fields"></a>Campos
+ `PBPSF_NONE` Marcador de posición.
 
- Especifica un virtualizado PBPSF_VIRTUALIZED pendiente de punto de interrupción, que se enlaza cada vez que se carga código nuevo.
+ `PBPSF_VIRTUALIZED` Especifica un virtualizado pendiente de punto de interrupción, que se enlaza cada vez que se carga código nuevo.
 
 ## <a name="remarks"></a>Comentarios
  Utilizado para la `flags` miembro de la [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md) estructura.
