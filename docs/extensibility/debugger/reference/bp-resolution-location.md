@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d6de035568e1c2aebe853d25dc5f769d233da819
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ea1e70c40846b382364067eae473ec27777b5526
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662912"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615374"
 ---
 # <a name="bpresolutionlocation"></a>BP_RESOLUTION_LOCATION
 Especifica la estructura de la ubicación de la resolución de punto de interrupción.
@@ -46,35 +49,29 @@ public struct BP_RESOLUTION_LOCATION {
 ```
 
 ## <a name="members"></a>Miembros
-`bpType` Un valor de la [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) enumeración que especifica cómo interpretar la `bpResLocation` union o `unionmemberX` miembros.
+`bpType`\
+Un valor de la [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) enumeración que especifica cómo interpretar la `bpResLocation` union o `unionmemberX` miembros.
 
-`bpResLocation.bpresCode`
+`bpResLocation.bpresCode`\
+[C++ sólo] Contiene el [BP_RESOLUTION_CODE](../../../extensibility/debugger/reference/bp-resolution-code.md) estructura si `bpType`  =  `BPT_CODE`.
 
- [C++ sólo] Contiene el [BP_RESOLUTION_CODE](../../../extensibility/debugger/reference/bp-resolution-code.md) estructura si `bpType`  =  `BPT_CODE`.
+`bpResLocation.bpresData`\
+[C++ sólo] Contiene el [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md) estructura si `bpType`  =  `BPT_DATA`.
 
-`bpResLocation.bpresData`
+`bpResLocation.unused`\
+[C++ sólo] Un marcador de posición.
 
- [C++ sólo] Contiene el [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md) estructura si `bpType`  =  `BPT_DATA`.
+`unionmember1`\
+[C# sólo] Vea la sección Comentarios para interpretar.
 
-`bpResLocation.unused`
+`unionmember2`\
+[C# sólo] Vea la sección Comentarios para interpretar.
 
- [C++ sólo] Un marcador de posición.
+`unionmember3`\
+[C# sólo] Vea la sección Comentarios para interpretar.
 
-`unionmember1`
-
- [C# sólo] Vea la sección Comentarios para interpretar.
-
-`unionmember2`
-
- [C# sólo] Vea la sección Comentarios para interpretar.
-
-`unionmember3`
-
- [C# sólo] Vea la sección Comentarios para interpretar.
-
-`unionmember4`
-
- [C# sólo] Vea la sección Comentarios para interpretar.
+`unionmember4`\
+[C# sólo] Vea la sección Comentarios para interpretar.
 
 ## <a name="remarks"></a>Comentarios
 Esta estructura es un miembro de la [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) y [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) estructuras.
