@@ -34,12 +34,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f9150a815f424c0b4a7bfe5f2e92ea7cd424ddb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a284c3630b60d5fc2211064524d87259b1f8349f
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62902168"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65614514"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Utilizar puntos de interrupción en el depurador de Visual Studio
 Los puntos de interrupción son una de las técnicas de depuración más importantes en el cuadro de herramientas de desarrollador. Establecer puntos de interrupción donde desee pausar la ejecución del depurador. Por ejemplo, es posible que desee ver el estado de las variables del código o examine la pila de llamadas en un determinado punto de interrupción. Si esta es la primera vez que intenta depurar código, le recomendamos que lea [Depuración para principiantes sin experiencia](../debugger/debugging-absolute-beginners.md) antes de continuar con este artículo.
@@ -267,7 +267,7 @@ Al seleccionar **expresión condicional**, puede elegir entre dos condiciones: *
 
 2. Inicie la depuración y cuando la ejecución se detiene en el punto de interrupción, seleccione **depurar** > **Windows** > **variables locales** o **Alt** + **4** para abrir el **variables locales** ventana.
 
-   Busque el punto de interrupción en el **variables locales** ventana, haga clic en él y seleccione **Make Object ID**.
+   Buscar la instancia de objeto específico en el **variables locales** ventana, haga clic en él y seleccione **Make Object ID**.
 
    Debería ver el símbolo **$** junto con un número en la ventana **Locales** . Este es el identificador del objeto.
 

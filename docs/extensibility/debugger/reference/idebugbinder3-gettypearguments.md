@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7cbccb155b8a96a3a7480c4e898a597e57250df4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 164b6ca7fcfa71117060e5230cc9c9b3aeeb6c61
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62923661"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65614673"
 ---
 # <a name="idebugbinder3gettypearguments"></a>IDebugBinder3::GetTypeArguments
 Este método recupera una lista de tipos de argumentos asociada a este objeto.
@@ -42,22 +45,18 @@ int GetTypeArguments(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `skip`
+## <a name="parameters"></a>Parámetros
+`skip`\
+[in] Número de campos que se omitirán antes de obtener los tipos de argumento.
 
- [in] Número de campos que se omitirán antes de obtener los tipos de argumento.
+`count`\
+[in] El número de campos de argumento que se devolverán (también especifica el tamaño de la `ppFields` matriz).
 
- `count`
+`ppFields`\
+[in, out] Una matriz de los campos que se rellena si la devolución de este método.
 
- [in] El número de campos de argumento que se devolverán (también especifica el tamaño de la `ppFields` matriz).
-
- `ppFields`
-
- [in, out] Una matriz de los campos que se rellena si la devolución de este método.
-
- `pFetched`
-
- [out] \(opcional) El número de argumento de tipo campos devueltos realmente.
+`pFetched`\
+[out] \(opcional) El número de argumento de tipo campos devueltos realmente.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
