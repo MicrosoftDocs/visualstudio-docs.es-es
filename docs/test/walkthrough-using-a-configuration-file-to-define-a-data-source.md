@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a64d6e46a674ad068c2a90eaf6b011a038d2e46e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ccb2400b209fa7902e8fde8dd7ba601e465a840d
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976210"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461461"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Tutorial: Uso de un archivo de configuración para definir un origen de datos
 
@@ -62,16 +62,16 @@ Examine el archivo *app.config*. Debe contener al menos la declaración XML y un
 
 2. En el elemento **configSections**, cree un elemento **section**.
 
-3. En el elemento **section**, agregue un atributo denominado `name` y asígnele un valor igual a `microsoft.visualstudio.testtools`. Agregue otro atributo denominado `type` y asígnele un valor de `Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a`.
+3. En el elemento **section**, agregue un atributo denominado `name` y asígnele un valor igual a `microsoft.visualstudio.testtools`. Agregue otro atributo denominado `type` y asígnele un valor de `Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions`.
 
 El elemento **section** debe ser similar a este:
 
 ```xml
-<section name="microsoft.visualstudio.testtools" type="Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"/>
+<section name="microsoft.visualstudio.testtools" type="Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection, Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions" />
 ```
 
 > [!NOTE]
-> El nombre del ensamblado debe coincidir con la compilación de Microsoft Visual Studio .NET Framework que está usando. Establezca la versión en 9.0.0.0 si usa Visual Studio .NET Framework 3.5. Si usa Visual Studio .NET Framework 2.0, establezca la versión en 8.0.0.0.
+> El nombre del ensamblado debe coincidir con la compilación de Microsoft Visual Studio .NET Framework que está usando.
 
 ## <a name="define-connection-strings"></a>Definir cadenas de conexión
 
