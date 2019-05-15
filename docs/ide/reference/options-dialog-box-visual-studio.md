@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f2b4b30607d5d0c677f7ef5e2401bc55c2398eb0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 630b9e56c0daa90fb257c7f941b35b07607ea678
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945586"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531862"
 ---
 # <a name="options-dialog-box-visual-studio"></a>Opciones (Cuadro de diálogo) (Visual Studio)
 
@@ -45,4 +45,4 @@ Al seleccionar o anular la selección de **Mostrar todas las configuraciones** s
 
 ## <a name="see-also"></a>Vea también
 
-- [Personalizar el editor](../../ide/customizing-the-editor.md)
+- [Personalizar el editor](../how-to-change-text-case-in-the-editor.md)
