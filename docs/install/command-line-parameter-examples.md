@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 4196916958de2df4f9c3a12f030b22d712e87502
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5a87b5d98d9f3b7453cf0337d529b9ef99815d92
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974246"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65614502"
 ---
 # <a name="command-line-parameter-examples-for-visual-studio-installation"></a>Ejemplos de parámetros de la línea de comandos para la instalación de Visual Studio
 
@@ -67,7 +67,21 @@ Para obtener listas de las cargas de trabajo y los componentes que puede instala
 * Se usa en scripts o archivos por lotes para esperar que el instalador de Visual Studio se complete antes de ejecutar el comando siguiente. En el caso de los archivos por lotes, una variable de entorno `%ERRORLEVEL%` contendrá el valor devuelto del comando, tal y como se indica en la página [Usar parámetros de la línea de comandos para instalar Visual Studio](use-command-line-parameters-to-install-visual-studio.md). Algunas utilidades de comandos requieren parámetros adicionales para esperar la finalización y para obtener el valor devuelto del instalador. El siguiente es un ejemplo de los parámetros adicionales que se usan con el comando de script "Start-Process" de PowerShell:
 
    ```cmd
-   $exitCode = Start-Process -FilePath vs_enterprise.exe -ArgumentList "install", "--quiet", "--wait" -Wait -PassThru
+   start /wait vs_professional.exe --installPath "C:\VS" --passive --wait > nul
+   echo %errorlevel%
+   ```
+   ```PS
+   $exitCode = Start-Process -FilePath vs_enterprise.exe -ArgumentList "--installPath", "C:\VS", "--passive", "--wait" -Wait -PassThru
+   ```
+   o
+   ```PS
+    $startInfo = New-Object System.Diagnostics.ProcessStartInfo
+    $startInfo.FileName = "vs_enterprise.exe"
+    $startInfo.Arguments = "--all --quiet --wait" 
+    $process = New-Object System.Diagnostics.Process
+    $process.StartInfo = $startInfo
+    $process.Start() 
+    $process.WaitForExit()
    ```
 
 * El primer "--wait" lo usa el Instalador de Visual Studio y el segundo "-Wait" lo usa "Start-Process" para esperar la finalización. El parámetro "-PassThru" lo usa "Start-Process" para usar el código de salida del instalador por su valor devuelto.

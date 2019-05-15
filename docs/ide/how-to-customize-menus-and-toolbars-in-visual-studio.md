@@ -27,12 +27,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4986faba52606937993af17824789ced2d600ad5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4fce2c5aed3c98cf4583e20df96c0444cc91439a
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62429304"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531966"
 ---
 # <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>Procedimiento para personalizar menús y barras de herramientas en Visual Studio
 
@@ -120,4 +120,4 @@ Puede personalizar Visual Studio no solo mediante la adición y la eliminación 
 ## <a name="see-also"></a>Vea también
 
 - [Personalizar el IDE](../ide/personalizing-the-visual-studio-ide.md)
-- [Personalizar el editor](../ide/customizing-the-editor.md)
+- [Personalizar el editor](../ide/how-to-change-text-case-in-the-editor.md)

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f263be2e26100c7b61bffca35df39b945d88a91
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: aa2c9a4585947fb7d2e21d1eea4e6613cdd33964
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62581986"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531672"
 ---
 # <a name="features-of-the-code-editor"></a>Características del editor de código
 
@@ -52,7 +52,7 @@ Puede encontrar un número de características avanzadas en el menú **Editar** 
 
 |||
 |-|-|
-|[Dar formato al documento](code-styles-and-quick-actions.md#format-document-command)|Establece la sangría adecuada de las líneas de código y mueve las llaves para separar las líneas del documento.|
+|Dar formato al documento|Establece la sangría adecuada de las líneas de código y mueve las llaves para separar las líneas del documento.|
 |Dar formato a la selección|Establece la sangría adecuada de las líneas de código y mueve las llaves para separar las líneas de la selección.|
 |Aplicar tabulación a las líneas seleccionadas|Cambia los espacios iniciales por tabulaciones en los casos que sea apropiado.|
 |No aplicar tabulación a las líneas seleccionadas|Cambia las tabulaciones iniciales por espacios. Si desea convertir todos los espacios del archivo en tabulaciones (o todas las tabulaciones en espacios), puede utilizar los comandos `Edit.ConvertSpacesToTabs` y `Edit.ConvertTabsToSpaces` . Estos comandos no aparecen en los menús de Visual Studio, pero se pueden llamar desde la ventana **Acceso rápido** o la ventana Comandos.|
@@ -84,7 +84,7 @@ Puede compartir su configuración de Visual Studio con otro desarrollador, hacer
 
 Para definir teclas de acceso rápido nuevas o redefinir las existentes, vaya a **Herramientas** > **Opciones** > **Entorno** > **Teclado**. Para más información sobre las teclas de acceso rápido, consulte [Métodos abreviados de teclado predeterminados](../ide/default-keyboard-shortcuts-in-visual-studio.md).
 
-Para más información sobre cómo personalizar el editor, consulte [Personalizar el editor](../ide/customizing-the-editor.md). Para las opciones del editor específicas de JavaScript, consulte las [opciones del editor de JavaScript](../ide/reference/options-text-editor-javascript-formatting.md).
+Para las opciones del editor específicas de JavaScript, consulte las [opciones del editor de JavaScript](../ide/reference/options-text-editor-javascript-formatting.md).
 
 ## <a name="see-also"></a>Vea también
 

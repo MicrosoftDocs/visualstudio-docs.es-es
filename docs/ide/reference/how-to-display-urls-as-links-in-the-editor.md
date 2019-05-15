@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 250f222dcc3f2645c53a97416cc379a3066c45ac
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c03d9d48ca098932a09e42116deb3ba7ee14a623
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62789610"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531656"
 ---
 # <a name="how-to-display-urls-as-links-in-the-editor"></a>Procedimiento Mostrar las direcciones URL como vínculos en el editor
 
@@ -45,6 +45,5 @@ Puede elegir que el editor de código trate los localizadores uniformes de recur
 
 ## <a name="see-also"></a>Vea también
 
-- [Personalizar el editor](../../ide/customizing-the-editor.md)
 - [Editor de texto, Opciones (cuadro de diálogo)](../../ide/reference/text-editor-options-dialog-box.md)
 - [Características del editor de código](../../ide/writing-code-in-the-code-and-text-editor.md)
