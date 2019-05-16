@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: dc5a54b1dee2345f42abd3a00b39c11388185d03
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: bb5342dc2b5da3d1192aadbbea186b5b21f179f3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434876"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691551"
 ---
 # <a name="debugging-gpu-code"></a>Depurar código de GPU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +68,7 @@ Puede depurar el código de C++ que se está ejecutando en la unidad central de 
 ## <a name="troubleshooting"></a>Solución de problemas  
   
 ### <a name="specifying-an-accelerator"></a>Especificar un acelerador  
- Los puntos de interrupción del código de GPU solo se visitan si el código se ejecuta en el acelerador [accelerator::direct3d_ref](http://msdn.microsoft.com/library/a514b1a7-3b3f-4011-be6c-f7b0d9a42663) (REF). Si no especifica un acelerador en el código, el acelerador REF se selecciona automáticamente como el **Tipo de acelerador de depuración** en las propiedades del proyecto. Si el código selecciona explícitamente un acelerador, el acelerador REF no se usará durante la depuración y los puntos de interrupción no se visitarán a menos que el hardware de GPU sea compatible con la depuración. Puede resolverlo escribiendo código para que utilice el acelerador REF durante la depuración. Para obtener más información, vea las propiedades del proyecto y [mediante objetos accelerator y accelerator_view](http://msdn.microsoft.com/library/18f0dc66-8236-4420-9f46-1a14f2c3fba1) y [configuración del proyecto para una C++ Debug Configuration](../debugger/project-settings-for-a-cpp-debug-configuration.md).  
+ Los puntos de interrupción del código de GPU solo se visitan si el código se ejecuta en el acelerador [accelerator::direct3d_ref](https://msdn.microsoft.com/library/a514b1a7-3b3f-4011-be6c-f7b0d9a42663) (REF). Si no especifica un acelerador en el código, el acelerador REF se selecciona automáticamente como el **Tipo de acelerador de depuración** en las propiedades del proyecto. Si el código selecciona explícitamente un acelerador, el acelerador REF no se usará durante la depuración y los puntos de interrupción no se visitarán a menos que el hardware de GPU sea compatible con la depuración. Puede resolverlo escribiendo código para que utilice el acelerador REF durante la depuración. Para obtener más información, vea las propiedades del proyecto y [mediante objetos accelerator y accelerator_view](https://msdn.microsoft.com/library/18f0dc66-8236-4420-9f46-1a14f2c3fba1) y [configuración del proyecto para una C++ Debug Configuration](../debugger/project-settings-for-a-cpp-debug-configuration.md).  
   
 ### <a name="conditional-breakpoints"></a>Puntos de interrupción condicionales  
  Se admiten puntos de interrupción condicionales en el código de GPU, pero no todas las expresiones se pueden evaluar en el dispositivo. Cuando una expresión no se puede evaluar en el dispositivo, se evalúa en el depurador. Es probable que el depurador se ejecute más despacio que el dispositivo.  
@@ -83,6 +83,6 @@ Puede depurar el código de C++ que se está ejecutando en la unidad central de 
  Es posible que para los cálculos de C++ AMP se supere el intervalo de tiempo predeterminado establecido por la detección de tiempo de espera de Windows y el proceso de recuperación (TDR). Cuando ocurre esto, se cancela el cálculo y se pierden los datos. Para obtener más información, vea [Control de los TDR en C++ AMP](http://go.microsoft.com/fwlink/p/?LinkId=249154).  
   
 ## <a name="see-also"></a>Vea también  
- [Tutorial: Depurar una aplicación de C++ AMP](http://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)   
+ [Tutorial: Depurar una aplicación de C++ AMP](https://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)   
  [Configuración del proyecto para una configuración de depuración de C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)   
  [Iniciar la depuración de GPU en Visual Studio](http://go.microsoft.com/fwlink/p/?LinkId=255381)

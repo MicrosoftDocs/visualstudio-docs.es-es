@@ -19,12 +19,12 @@ caps.latest.revision: 60
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 77b962d9ab4594bba5be42100a46e67e1c861384
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c9f6b7334c7032414bfd0fbf7ecf9ad48b414cb9
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445766"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701042"
 ---
 # <a name="add-new-data-sources"></a>Agregar nuevos orígenes de datos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,7 +77,7 @@ En el contexto de las herramientas de datos de .NET en Visual Studio, el términ
   
  Puede crear un origen de datos de los siguientes tipos de servicios:  
   
-- Data Services de WCF. Para obtener más información, consulte [Introducción](http://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb).  
+- Data Services de WCF. Para obtener más información, consulte [Introducción](https://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb).  
   
 - Data services de WCF. Para obtener más información, consulte [servicios Windows Communication Foundation y WCF Data Services en Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md).  
   

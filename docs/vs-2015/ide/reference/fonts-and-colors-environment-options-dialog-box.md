@@ -27,12 +27,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1cd4b57e2dccbb26c3b6ceba1be51fa5022469cb
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 84d7ee0a3e25db7c32e0f016e92dafb539757a61
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437166"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688654"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Fuentes y colores, Entorno, Opciones (Cuadro de diálogo)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ ms.locfileid: "63437166"
 La página **Fuentes y colores** del cuadro de diálogo **Opciones** le permite establecer una combinación de colores y una fuente personalizadas para varios elementos de la interfaz de usuario del entorno de desarrollo integrado (IDE). Puede acceder a este cuadro de diálogo haciendo clic en **Herramientas / Opciones**, y,después, seleccione **Entorno / Fuentes y colores**. Si esta página no aparece en la lista, en el cuadro de diálogo **Opciones**, seleccione **Mostrar todas las configuraciones**.  
   
 > [!NOTE]
-> Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Los cambios de combinaciones de colores no surten efecto durante la sesión en la que se realizan. Puede evaluar los cambios de color abriendo otra instancia de Visual Studio y creando las condiciones en las que espera aplicar los cambios.  
   

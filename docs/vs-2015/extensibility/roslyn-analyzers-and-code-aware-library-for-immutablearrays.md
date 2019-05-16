@@ -8,17 +8,17 @@ ms.assetid: 0b0afa22-3fca-4d59-908e-352464c1d903
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c15b1f335129e7c749aadefaa78ee3f9c5862baa
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 44cb171594a6d595652b3c013505927bd82f947e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "59002236"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685240"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Analizadores de Roslyn y biblioteca compatible con código para ImmutableArrays
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-El [.NET Compiler Platform](https://github.com/dotnet/roslyn) ("Roslyn") le ayuda a crear bibliotecas de código. Una biblioteca de código proporciona funcionalidad que puede usar y (analizadores de Roslyn) de las herramientas que le ayudarán a usar la biblioteca de la mejor manera o para evitar errores. Este tema muestra cómo crear un analizador de Roslyn del mundo real para detectar errores comunes al usar el [NIB: Las colecciones inmutables](http://msdn.microsoft.com/library/33f4449d-7078-450a-8d60-d9229f66bbca) paquete NuGet. El ejemplo también muestra cómo proporcionar una corrección de código para un problema de código encontrado por el analizador. Los usuarios ver las correcciones de código en la bombilla de Visual Studio la interfaz de usuario y pueden aplicar una revisión para el código automáticamente.
+El [.NET Compiler Platform](https://github.com/dotnet/roslyn) ("Roslyn") le ayuda a crear bibliotecas de código. Una biblioteca de código proporciona funcionalidad que puede usar y (analizadores de Roslyn) de las herramientas que le ayudarán a usar la biblioteca de la mejor manera o para evitar errores. Este tema muestra cómo crear un analizador de Roslyn del mundo real para detectar errores comunes al usar el [NIB: Las colecciones inmutables](https://msdn.microsoft.com/library/33f4449d-7078-450a-8d60-d9229f66bbca) paquete NuGet. El ejemplo también muestra cómo proporcionar una corrección de código para un problema de código encontrado por el analizador. Los usuarios ver las correcciones de código en la bombilla de Visual Studio la interfaz de usuario y pueden aplicar una revisión para el código automáticamente.
 
 ## <a name="getting-started"></a>Introducción
 Necesita lo siguiente para compilar este ejemplo:

@@ -13,12 +13,12 @@ caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9b403f457cead70f113609e30cebdcf1c53c1341
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6fb1355dfebaad4230c349c0c7b30ae400ecdaa1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58987750"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692170"
 ---
 # <a name="function-debug-interface-access-sdk"></a>Función (Debug Interface Access SDK)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Cada función se identifica mediante un `SymTagFunction` símbolos.
 ## <a name="properties"></a>Propiedades  
  En la tabla siguiente muestra las propiedades que son válidas para este tipo de símbolo.  
   
-|Property|`Data type`|Descripción|  
+|Propiedad|`Data type`|Descripción|  
 |--------------|-----------------|-----------------|  
 |[IDiaSymbol::get_access](../../debugger/debug-interface-access/idiasymbol-get-access.md)|`DWORD`|Uno de los valores de la [CV_access_e (enumeración)](../../debugger/debug-interface-access/cv-access-e.md), si la función es una función miembro.|  
 |[IDiaSymbol::get_addressOffset](../../debugger/debug-interface-access/idiasymbol-get-addressoffset.md)|`DWORD`|Parte del ajuste de ubicación; Para obtener más información, consulte el [LocationType (enumeración)](../../debugger/debug-interface-access/locationtype.md).|  
@@ -42,14 +42,14 @@ Cada función se identifica mediante un `SymTagFunction` símbolos.
 |[IDiaSymbol::get_hasEH](../../debugger/debug-interface-access/idiasymbol-get-haseh.md)|`BOOL`|`TRUE` Si la función contiene (solo en la versión V8.0 del SDK de DIA o posterior) del control de excepciones de estilo de C++.|  
 |[IDiaSymbol::get_hasEHa](../../debugger/debug-interface-access/idiasymbol-get-haseha.md)|`BOOL`|`TRUE` Si la función contiene el control de excepciones asincrónicas (solo en la versión V8.0 del SDK de DIA o posterior).|  
 |[IDiaSymbol::get_hasInlAsm](../../debugger/debug-interface-access/idiasymbol-get-hasinlasm.md)|`BOOL`|`TRUE` Si la función contiene código ensamblador en línea (solo en la versión V8.0 del SDK de DIA o posterior).|  
-|[IDiaSymbol::get_hasLongJump](../../debugger/debug-interface-access/idiasymbol-get-haslongjump.md)|`BOOL`|`TRUE` Si la función contiene un [longjmp](http://msdn.microsoft.com/library/0e13670a-5130-45c1-ad69-6862505b7a2f) llamar (solo en la versión V8.0 del SDK de DIA o posterior).|  
+|[IDiaSymbol::get_hasLongJump](../../debugger/debug-interface-access/idiasymbol-get-haslongjump.md)|`BOOL`|`TRUE` Si la función contiene un [longjmp](https://msdn.microsoft.com/library/0e13670a-5130-45c1-ad69-6862505b7a2f) llamar (solo en la versión V8.0 del SDK de DIA o posterior).|  
 |[IDiaSymbol::get_hasSecurityChecks](../../debugger/debug-interface-access/idiasymbol-get-hassecuritychecks.md)|`BOOL`|`TRUE` Si la función contiene comprobaciones de seguridad (solo en la versión V8.0 del SDK de DIA o posterior).|  
 |[IDiaSymbol::get_hasSEH](../../debugger/debug-interface-access/idiasymbol-get-hasseh.md)|`BOOL`|`TRUE` Si la función contiene (solo en la versión V8.0 del SDK de DIA o posterior) del control de excepciones de estilo Win32 estructurado.|  
-|[IDiaSymbol::get_hasSetJump](../../debugger/debug-interface-access/idiasymbol-get-hassetjump.md)|`BOOL`|`TRUE` Si la función contiene un [setjmp](http://msdn.microsoft.com/library/684a8b27-e8eb-455b-b4a8-733ca1cbd7d2) llamar (solo en la versión V8.0 del SDK de DIA o posterior).|  
+|[IDiaSymbol::get_hasSetJump](../../debugger/debug-interface-access/idiasymbol-get-hassetjump.md)|`BOOL`|`TRUE` Si la función contiene un [setjmp](https://msdn.microsoft.com/library/684a8b27-e8eb-455b-b4a8-733ca1cbd7d2) llamar (solo en la versión V8.0 del SDK de DIA o posterior).|  
 |[IDiaSymbol::get_interruptReturn](../../debugger/debug-interface-access/idiasymbol-get-interruptreturn.md)|`BOOL`|`TRUE` Si la función tiene un valor devuelto de interrupción (sólo en la versión V8.0 del SDK de DIA o posterior).|  
 |[IDiaSymbol::get_intro](../../debugger/debug-interface-access/idiasymbol-get-intro.md)|`BOOL`|`TRUE` Si una función virtual de introducción.|  
 |[IDiaSymbol::get_InlSpec](../../debugger/debug-interface-access/idiasymbol-get-inlspec.md)|`BOOL`|`TRUE` Si la función se ha marcado con uno de los [inline, __inline, \__forceinline](../../misc/inline-inline-forceinline.md) atributos.|  
-|[IDiaSymbol::get_isNaked](../../debugger/debug-interface-access/idiasymbol-get-isnaked.md)|`BOOL`|`TRUE` Si la función está marcada con el [naked](http://msdn.microsoft.com/library/69723241-05e1-439b-868e-20a83a16ab6d) atributo (solo en la versión V8.0 del SDK de DIA o posterior).|  
+|[IDiaSymbol::get_isNaked](../../debugger/debug-interface-access/idiasymbol-get-isnaked.md)|`BOOL`|`TRUE` Si la función está marcada con el [naked](https://msdn.microsoft.com/library/69723241-05e1-439b-868e-20a83a16ab6d) atributo (solo en la versión V8.0 del SDK de DIA o posterior).|  
 |[IDiaSymbol::get_isStatic](../../debugger/debug-interface-access/idiasymbol-get-isstatic.md)|`BOOL`|`TRUE` Si la función es estática (solo en la versión V8.0 del SDK de DIA o posterior).|  
 |[IDiaSymbol::get_length](../../debugger/debug-interface-access/idiasymbol-get-length.md)|`ULONGLONG`|Número de bytes de código de función, a partir de la ubicación.|  
 |[IDiaSymbol::get_lexicalParent](../../debugger/debug-interface-access/idiasymbol-get-lexicalparent.md)|`IDiaSymbol*`|Símbolo de la operación de compilación envolvente.|  

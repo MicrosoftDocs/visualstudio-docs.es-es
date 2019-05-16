@@ -14,12 +14,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 25ffe4f9280dfbb0b3146ebf8b3dd7b62e908814
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 039b6722ca064c64c0e0b7f7757070852e908395
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441426"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703915"
 ---
 # <a name="debug-page-project-designer"></a>Página Depuración, Diseñador de proyectos
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,10 +35,10 @@ ms.locfileid: "63441426"
  Las siguientes opciones le permiten seleccionar la configuración y la plataforma que se mostrarán o modificarán.  
   
  **Configuración**  
- Especifica qué opciones de configuración se mostrarán o modificarán. Los valores pueden ser **Depurar** (valor predeterminado), **Versión** o **Todas las configuraciones**. Para obtener más información, consulte [Configuraciones Debug y Release](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
+ Especifica qué opciones de configuración se mostrarán o modificarán. Los valores pueden ser **Depurar** (valor predeterminado), **Versión** o **Todas las configuraciones**. Para obtener más información, consulte [Configuraciones Debug y Release](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
   
  **Plataforma**  
- Especifica qué configuración de plataforma se mostrará o modificará. Entre las opciones se pueden incluir **Cualquier CPU** (valor predeterminado), **x64** y **x86**. Para obtener más información, consulte [Configuraciones Debug y Release](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
+ Especifica qué configuración de plataforma se mostrará o modificará. Entre las opciones se pueden incluir **Cualquier CPU** (valor predeterminado), **x64** y **x86**. Para obtener más información, consulte [Configuraciones Debug y Release](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
   
 ## <a name="start-action"></a>Acción de inicio  
  **Acción de inicio** indica el elemento que se iniciará cuando se depure la aplicación: el proyecto, un programa personalizado, una dirección URL o ninguno. De forma predeterminada, el valor de esta opción es **Iniciar proyecto**. El valor de **Acción de inicio** en la página **Depurar** determina el valor de la propiedad `StartAction`.  
@@ -78,6 +78,6 @@ ms.locfileid: "63441426"
  [Depurar en Visual Studio](../../debugger/debugging-in-visual-studio.md)   
  [Configuración de proyectos para configuraciones de depuración en C#](../../debugger/project-settings-for-csharp-debug-configurations.md)   
  [Configuración de proyectos para una configuración de depuración en Visual Basic](../../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
- [Administrar propiedades de depuración](http://msdn.microsoft.com/92474d16-e7fe-4fac-9287-6bd6b3a7eb68)   
+ [Administrar propiedades de depuración](https://msdn.microsoft.com/92474d16-e7fe-4fac-9287-6bd6b3a7eb68)   
  [Cómo: Depurar una aplicación ClickOnce con permisos restringidos](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
  [Cómo: Crear y editar configuraciones](../../ide/how-to-create-and-edit-configurations.md)

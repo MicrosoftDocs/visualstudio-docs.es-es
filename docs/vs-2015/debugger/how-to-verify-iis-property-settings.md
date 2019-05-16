@@ -20,12 +20,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6ab2b6981094ffbdfcd6544198179924b4e1c53a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ac2ce4f823d82d8a0d8569e15c4ba8920d91d36c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444780"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686831"
 ---
 # <a name="how-to-verify-iis-property-settings"></a>Procedimiento Comprobar los valores de configuración de la propiedad IIS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "63444780"
 Se pueden establecer las propiedades de una aplicación Web utilizando la herramienta de administración de IIS. Estas propiedades deben establecerse correctamente para que se ejecute la aplicación, por lo que la comprobación de esta configuración es a menudo un paso necesario en la solución de problemas.  
   
 > [!NOTE]
-> Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ### <a name="to-check-iis-settings-for-the-web-application"></a>Para comprobar la configuración de IIS para la aplicación Web  
   
@@ -61,7 +61,7 @@ Se pueden establecer las propiedades de una aplicación Web utilizando la herram
   
     3. Haga clic en **Aceptar** para cerrar el cuadro de diálogo **Métodos de autenticación**.  
   
-5. Para una aplicación de servidor ATL, compruebe que el verbo DEBUG está asociado con la extensión ISAPI. Para obtener más información, vea [Cómo: Asociar el verbo de depuración con la extensión](http://msdn.microsoft.com/50d261d3-4bd4-41c0-b44e-3591086f121e).  
+5. Para una aplicación de servidor ATL, compruebe que el verbo DEBUG está asociado con la extensión ISAPI. Para obtener más información, vea [Cómo: Asociar el verbo de depuración con la extensión](https://msdn.microsoft.com/50d261d3-4bd4-41c0-b44e-3591086f121e).  
   
 6. Para una aplicación de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], asegúrese de que la carpeta virtual de la aplicación tiene un nombre de aplicación configurado en **Administrador de Internet Information Services (IIS)**, **Administrador de servicios Internet** o **Internet Information Services**.  
   

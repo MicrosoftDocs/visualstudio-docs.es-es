@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e8a0b51a9fbfb009087e0cd5600d9c480c8d433b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 21ab62155cea58e196815aadb3dbb538a6c0f6c3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63386801"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684770"
 ---
 # <a name="how-to-configure-inheritance-by-using-the-or-designer"></a>Procedimiento Configurar herencia mediante Object Relational Designer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ El [!INCLUDE[vs_ordesigner_long](../includes/vs-ordesigner-long-md.md)] ([!INCLU
 5. En cada clase, elimine las propiedades de objeto que no desee que aparezcan y que no se utilicen para asociaciones. Recibirá un error si intenta eliminar las propiedades del objeto utilizadas para las asociaciones: [La propiedad \<nombre de propiedad > no se puede eliminar porque participa en la asociación \<nombre de asociación >](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md).  
   
     > [!NOTE]
-    > Dado que una clase derivada hereda las propiedades definidas en su clase base, no se pueden definir las mismas columnas en cada clase. (Las columnas se implementan como propiedades.) Puede habilitar la creación de columnas en la clase derivada estableciendo el Modificador de herencia de la propiedad en la clase base. Para obtener más información, consulte [no en la compilación: Reemplazar propiedades y métodos](http://msdn.microsoft.com/2167e8f5-1225-4b13-9ebd-02591ba90213).  
+    > Dado que una clase derivada hereda las propiedades definidas en su clase base, no se pueden definir las mismas columnas en cada clase. (Las columnas se implementan como propiedades.) Puede habilitar la creación de columnas en la clase derivada estableciendo el Modificador de herencia de la propiedad en la clase base. Para obtener más información, consulte [no en la compilación: Reemplazar propiedades y métodos](https://msdn.microsoft.com/2167e8f5-1225-4b13-9ebd-02591ba90213).  
   
 6. Seleccione la línea de herencia en el [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
   
@@ -55,10 +55,10 @@ El [!INCLUDE[vs_ordesigner_long](../includes/vs-ordesigner-long-md.md)] ([!INCLU
   
 ## <a name="see-also"></a>Vea también  
  [LINQ to SQL Tools en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
- [Tutorial: Crear clases LINQ to SQL (Object Relational Designer)](http://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)   
- [PAVE cuáles son las novedades para el desarrollo de aplicaciones de datos en Visual Studio 2012](http://msdn.microsoft.com/3d50d68f-5f44-4915-842f-6d42fce793f1)   
+ [Tutorial: Crear clases LINQ to SQL (Object Relational Designer)](https://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)   
+ [PAVE cuáles son las novedades para el desarrollo de aplicaciones de datos en Visual Studio 2012](https://msdn.microsoft.com/3d50d68f-5f44-4915-842f-6d42fce793f1)   
  [Obtener acceso a los datos en Visual Studio](../data-tools/accessing-data-in-visual-studio.md)   
- [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)   
+ [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)   
  [Tutorial: Crear clases LINQ to SQL con herencia de tabla única (Object Relational Designer)](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md)   
- [EN LA COMPILACIÓN: Herencia en Visual Basic](http://msdn.microsoft.com/e5e6e240-ed31-4657-820c-079b7c79313c)   
- [Herencia](http://msdn.microsoft.com/library/81d64ee4-50f9-4d6c-a8dc-257c348d2eea)
+ [EN LA COMPILACIÓN: Herencia en Visual Basic](https://msdn.microsoft.com/e5e6e240-ed31-4657-820c-079b7c79313c)   
+ [Herencia](https://msdn.microsoft.com/library/81d64ee4-50f9-4d6c-a8dc-257c348d2eea)

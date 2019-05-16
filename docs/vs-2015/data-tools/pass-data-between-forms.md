@@ -20,12 +20,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 27d4b1ec935444009be1f85f4c1ad95f9da91f68
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f6cee865542256906ac1685b937da0e63327a97d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425495"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694856"
 ---
 # <a name="pass-data-between-forms"></a>Pasar datos de un formulario a otro
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ En este tutorial se proporcionan instrucciones paso a paso para pasar datos de u
   
 - Crear un nuevo **aplicación Windows** proyecto.  
   
-- Crear y configurar un conjunto de datos con el [Asistente para configuración de origen de datos](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f).  
+- Crear y configurar un conjunto de datos con el [Asistente para configuración de origen de datos](https://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f).  
   
 - Seleccionar el control que se va a crear en el formulario al arrastrar elementos desde la ventana **Orígenes de datos**. Para obtener más información, consulte [establecer el control que se creará al arrastrar desde la ventana Orígenes de datos](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
   
@@ -64,7 +64,7 @@ En este tutorial se proporcionan instrucciones paso a paso para pasar datos de u
   
 2. Dé un nombre al proyecto `PassingDataBetweenForms`.  
   
-3. Seleccione **aplicación de Windows Forms**y haga clic en **Aceptar**. Para obtener más información, consulte [las aplicaciones cliente](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
+3. Seleccione **aplicación de Windows Forms**y haga clic en **Aceptar**. Para obtener más información, consulte [las aplicaciones cliente](https://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
      El proyecto **PassingDataBetweenForms** se crea y se agrega al **Explorador de soluciones**.  
   

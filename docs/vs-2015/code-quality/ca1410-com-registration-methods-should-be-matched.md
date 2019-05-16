@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 8784ef27eaf4217633c8bd52a49c9f79562e424a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: dd47aa57d128ec5f88f77036546476128aae39f5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58994887"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692071"
 ---
 # <a name="ca1410-com-registration-methods-should-be-matched"></a>CA1410: Los métodos de registro COM deben coincidir
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,4 +54,4 @@ ms.locfileid: "58994887"
  [CA1411: Métodos de registro COM no deben ser visibles](../code-quality/ca1411-com-registration-methods-should-not-be-visible.md)
 
 ## <a name="see-also"></a>Vea también
- <xref:System.Runtime.InteropServices.RegistrationServices?displayProperty=fullName> [Registrar ensamblados con COM](http://msdn.microsoft.com/library/87925795-a3ae-4833-b138-125413478551) [Regasm.exe (herramienta de registro de ensamblados)](http://msdn.microsoft.com/library/e190e342-36ef-4651-a0b4-0e8c2c0281cb)
+ <xref:System.Runtime.InteropServices.RegistrationServices?displayProperty=fullName> [Registrar ensamblados con COM](https://msdn.microsoft.com/library/87925795-a3ae-4833-b138-125413478551) [Regasm.exe (herramienta de registro de ensamblados)](https://msdn.microsoft.com/library/e190e342-36ef-4651-a0b4-0e8c2c0281cb)

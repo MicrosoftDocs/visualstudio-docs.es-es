@@ -18,17 +18,17 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: df364440f544df663eff294dfd53dcd671dea049
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: df764ac38f437be33b71e7a816709a46234f751e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58998683"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684195"
 ---
 # <a name="using-the-parallel-stacks-window"></a>Uso de la ventana Tareas paralelas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-El **pilas paralelas** ventana es útil cuando se depuran aplicaciones multithreading. Su **vista de subprocesos** muestra información de la pila de llamadas de todos los subprocesos en la aplicación. Permite navegar entre los subprocesos y marcos de pila de esos subprocesos. En código administrado, el **vista tareas** muestra pilas de llamadas de <xref:System.Threading.Tasks.Task?displayProperty=fullName> objetos. En código nativo, el **vista tareas** muestra pilas de llamadas de [grupos de tareas](http://msdn.microsoft.com/library/42f05ac3-2098-494a-ba84-737fcdcad077), [algoritmos paralelos](http://msdn.microsoft.com/library/045dca7b-4d73-4558-a44c-383b88a28473), [agentes asincrónicos](http://msdn.microsoft.com/library/6cf6ccc6-87f1-4e14-af15-ea8ba58fef1a)y [tareas ligeras](http://msdn.microsoft.com/library/9aba278c-e0c9-4ede-b7c6-fedf7a365d90).  
+El **pilas paralelas** ventana es útil cuando se depuran aplicaciones multithreading. Su **vista de subprocesos** muestra información de la pila de llamadas de todos los subprocesos en la aplicación. Permite navegar entre los subprocesos y marcos de pila de esos subprocesos. En código administrado, el **vista tareas** muestra pilas de llamadas de <xref:System.Threading.Tasks.Task?displayProperty=fullName> objetos. En código nativo, el **vista tareas** muestra pilas de llamadas de [grupos de tareas](https://msdn.microsoft.com/library/42f05ac3-2098-494a-ba84-737fcdcad077), [algoritmos paralelos](https://msdn.microsoft.com/library/045dca7b-4d73-4558-a44c-383b88a28473), [agentes asincrónicos](https://msdn.microsoft.com/library/6cf6ccc6-87f1-4e14-af15-ea8ba58fef1a)y [tareas ligeras](https://msdn.microsoft.com/library/9aba278c-e0c9-4ede-b7c6-fedf7a365d90).  
   
 ## <a name="threads-view"></a>Vista de subprocesos  
  En la siguiente ilustración se muestra un subproceso que fue de Main a A a B y después a código externo. Otros dos subprocesos se iniciaron en código externo y fueron a A, pero uno de los subprocesos continuó a B y después a código externo, y el otro subproceso continuó a C y después a un AnonymousMethod.  
@@ -121,7 +121,7 @@ El **pilas paralelas** ventana es útil cuando se depuran aplicaciones multithre
  [Tutorial: Depurar una aplicación paralela](../debugger/walkthrough-debugging-a-parallel-application.md)   
  [Conceptos básicos del depurador](../debugger/debugger-basics.md)   
  [Depurar código administrado](../debugger/debugging-managed-code.md)   
- [Parallel Programming](http://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d)  (Programación en paralelo)  
+ [Parallel Programming](https://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d)  (Programación en paralelo)  
  [Usar la ventana tareas](../debugger/using-the-tasks-window.md)   
  [Tutorial: Depurar una aplicación paralela](../debugger/walkthrough-debugging-a-parallel-application.md)   
  [Clase Task](../extensibility/debugger/task-class-internal-members.md)

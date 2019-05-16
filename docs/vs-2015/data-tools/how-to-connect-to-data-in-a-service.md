@@ -22,19 +22,19 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 62cbbd63f38e3317b03b203b3ca1cadc2a17e0c3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 22a1a991a950ba8e1a7c4c39299616641797630c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63386110"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684739"
 ---
 # <a name="how-to-connect-to-data-in-a-service"></a>Procedimiento Conexión a los datos en un servicio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Conectar la aplicación a los datos devueltos desde un servicio mediante la ejecución de la [Asistente para configuración de origen de datos](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f) y seleccionando **servicio** en el **elegir un tipo de origen de datos**página.  
+Conectar la aplicación a los datos devueltos desde un servicio mediante la ejecución de la [Asistente para configuración de origen de datos](https://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f) y seleccionando **servicio** en el **elegir un tipo de origen de datos**página.  
   
- Tras la finalización del asistente, se agrega al proyecto una referencia de servicio y esté disponible inmediatamente en el [ventana Orígenes de datos](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992).  
+ Tras la finalización del asistente, se agrega al proyecto una referencia de servicio y esté disponible inmediatamente en el [ventana Orígenes de datos](https://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992).  
   
 > [!NOTE]
 > Los elementos que aparecen en la ventana **Orígenes de datos** dependen de la información devuelta por el servicio. Algunos servicios podrían no proporcionar suficiente información para que el **Asistente para configuración de orígenes de datos** pueda crear objetos enlazables. Por ejemplo, si el servicio devuelve un conjunto de datos sin tipo, a continuación, no hay elementos aparecen en la **ventana Orígenes de datos** al finalizar el asistente. Esto es porque los datasets no escritos no proporcionan esquemas, por lo que el asistente no tiene información suficiente para crear el origen de datos.  

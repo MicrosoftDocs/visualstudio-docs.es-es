@@ -13,17 +13,17 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e68e563873054f15770415979ff7152ee7b4379c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d355a05ba2d805349a84a842a00b699d6c1ef272
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63421986"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696280"
 ---
 # <a name="idiasymbolgetisltcg"></a>IDiaSymbol::get_isLTCG
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Recupera una marca que especifica si el [Compiland](../../debugger/debug-interface-access/compiland.md) se ha vinculado con el modificador del vinculador [/LTCG (generación de código de tiempo de vínculo)](http://msdn.microsoft.com/library/788c6f52-fdb8-40c2-90af-4026ea2cf2e2), lo que contribuye en la optimización de todo el programa. Este modificador se aplica solo a código administrado.  
+Recupera una marca que especifica si el [Compiland](../../debugger/debug-interface-access/compiland.md) se ha vinculado con el modificador del vinculador [/LTCG (generación de código de tiempo de vínculo)](https://msdn.microsoft.com/library/788c6f52-fdb8-40c2-90af-4026ea2cf2e2), lo que contribuye en la optimización de todo el programa. Este modificador se aplica solo a código administrado.  
   
 ## <a name="syntax"></a>Sintaxis  
   

@@ -13,17 +13,17 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b26a152567da3b6285653ba8e14a72bce664ce0d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: bc5c8dbad4d2bb248a3183e2e73d7c2932e7bce4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434526"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65681722"
 ---
 # <a name="how-to-add-an-application-configuration-file-to-a-c-project"></a>Procedimiento Agregue un archivo de configuración de aplicación a un proyecto de C#
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Al agregar un archivo de configuración de la aplicación (archivo app.config) a un proyecto de C#, puede personalizar el modo en que Common Language Runtime busca y carga archivos de ensamblado. Para obtener más información acerca de los archivos de configuración de aplicación, consulte [How the Runtime Locates Assemblies](http://msdn.microsoft.com/library/772ac6f4-64d2-4cfb-92fd-58096dcd6c34).  
+Al agregar un archivo de configuración de la aplicación (archivo app.config) a un proyecto de C#, puede personalizar el modo en que Common Language Runtime busca y carga archivos de ensamblado. Para obtener más información acerca de los archivos de configuración de aplicación, consulte [How the Runtime Locates Assemblies](https://msdn.microsoft.com/library/772ac6f4-64d2-4cfb-92fd-58096dcd6c34).  
   
 > [!NOTE]
 > No es compatible con el Store Windows <xref:System.Configuration>. Como resultado, las aplicaciones de Store no contienen una plantilla de app.config.  
@@ -44,7 +44,7 @@ Al agregar un archivo de configuración de la aplicación (archivo app.config) a
   
 ## <a name="see-also"></a>Vea también  
  [Administrar la configuración de la aplicación (.NET)](../ide/managing-application-settings-dotnet.md)   
- [Esquema de los archivos de configuración](http://msdn.microsoft.com/library/69003d39-dc8a-460c-a6be-e6d93e690b38)   
- [Configurar aplicaciones](http://msdn.microsoft.com/library/86bd26d3-737e-4484-9782-19b17f34cd1f)   
- [Cómo: Configurar una aplicación para una versión de .NET Framework de destino](http://msdn.microsoft.com/5247b307-89ca-417b-8dd0-e8f9bd2f4717)   
+ [Esquema de los archivos de configuración](https://msdn.microsoft.com/library/69003d39-dc8a-460c-a6be-e6d93e690b38)   
+ [Configurar aplicaciones](https://msdn.microsoft.com/library/86bd26d3-737e-4484-9782-19b17f34cd1f)   
+ [Cómo: Configurar una aplicación para una versión de .NET Framework de destino](https://msdn.microsoft.com/5247b307-89ca-417b-8dd0-e8f9bd2f4717)   
  [Usar el entorno de desarrollo de Visual C#](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)

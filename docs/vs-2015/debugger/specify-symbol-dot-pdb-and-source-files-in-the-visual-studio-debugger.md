@@ -27,12 +27,12 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8e6c234b622dcc335a6fe42fd57f1f815a5fd9d9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 23c570e9d29c2288da32469b524c5e4d9125b097
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63447302"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694923"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>Especificar archivos de código fuente y símbolos (.pdb) en el depurador de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -94,10 +94,10 @@ Un archivo de base de datos de programa (.pdb), también denominado archivo de s
 
    Cuando se selecciona esta opción, se cargan las tablas de exportación de archivos DLL. La información simbólica de las tablas de exportación de archivos DLL puede resultar útil si se trabaja con mensajes de Windows, procedimientos de Windows (WindowProc), objetos COM, cálculo de referencias o cualquier archivo DLL para el que no disponga de símbolos. La lectura de la información de exportación de archivos DLL implica cierta sobrecarga. Por lo tanto, esta funcionalidad está desactivada de forma predeterminada.
 
-   Para ver los símbolos que están disponibles en la tabla de exportación de un archivo DLL, utilice `dumpbin /exports`. Los símbolos están disponibles para cualquier archivo DLL de sistema de 32 bits. Si lee el resultado de `dumpbin /exports` , podrá ver el nombre exacto de la función, incluidos los caracteres no alfanuméricos. Esto resulta útil para establecer un punto de interrupción en una función. Los nombres de función procedentes de tablas de exportación de archivos DLL pueden aparecer truncados en otras partes del depurador. Las llamadas se muestran en una lista según el orden de llamada, y la función actual (la que está anidada a mayor profundidad) aparece en la parte superior. Para obtener más información, vea [dumpbin /exports](http://msdn.microsoft.com/library/2971ab7e-4ee6-478b-9c85-cda42a4ce1bf).
+   Para ver los símbolos que están disponibles en la tabla de exportación de un archivo DLL, utilice `dumpbin /exports`. Los símbolos están disponibles para cualquier archivo DLL de sistema de 32 bits. Si lee el resultado de `dumpbin /exports` , podrá ver el nombre exacto de la función, incluidos los caracteres no alfanuméricos. Esto resulta útil para establecer un punto de interrupción en una función. Los nombres de función procedentes de tablas de exportación de archivos DLL pueden aparecer truncados en otras partes del depurador. Las llamadas se muestran en una lista según el orden de llamada, y la función actual (la que está anidada a mayor profundidad) aparece en la parte superior. Para obtener más información, vea [dumpbin /exports](https://msdn.microsoft.com/library/2971ab7e-4ee6-478b-9c85-cda42a4ce1bf).
 
 ### <a name="BKMK_Use_symbol_servers_to_find_symbol_files_not_on_your_local_machine"></a> Usar servidores de símbolos para buscar archivos de símbolos que no estén en el equipo local
- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] puede descargar archivos de símbolos de depuración de servidores de símbolos que implementan el protocolo symsrv. [Visual Studio Team Foundation Server](http://msdn.microsoft.com/library/bd6977ca-e30a-491a-a153-671d81222ce6) y las [Herramientas de depuración para Windows](http://msdn.microsoft.com/library/windows/hardware/ff551063\(v=VS.85\).aspx) son dos herramientas que pueden implementar servidores de símbolos. Especifique los servidores de símbolos que desee usar en el cuadro **Opciones** de VS.
+ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] puede descargar archivos de símbolos de depuración de servidores de símbolos que implementan el protocolo symsrv. [Visual Studio Team Foundation Server](https://msdn.microsoft.com/library/bd6977ca-e30a-491a-a153-671d81222ce6) y las [Herramientas de depuración para Windows](https://msdn.microsoft.com/library/windows/hardware/ff551063\(v=VS.85\).aspx) son dos herramientas que pueden implementar servidores de símbolos. Especifique los servidores de símbolos que desee usar en el cuadro **Opciones** de VS.
 
  Los servidores de símbolos que podría utilizar incluyen:
 
@@ -165,9 +165,9 @@ Un archivo de base de datos de programa (.pdb), también denominado archivo de s
 
  **Opciones de C++**
 
- Un archivo de base de datos de programa (.pdb) contiene información sobre el estado de la depuración y del proyecto que permite la vinculación incremental de una configuración Debug del programa. Cuando se compila con [/ZI o /Zi](http://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) (para C/C++) se crea un archivo .pdb.
+ Un archivo de base de datos de programa (.pdb) contiene información sobre el estado de la depuración y del proyecto que permite la vinculación incremental de una configuración Debug del programa. Cuando se compila con [/ZI o /Zi](https://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) (para C/C++) se crea un archivo .pdb.
 
- En [!INCLUDE[vcprvc](../includes/vcprvc-md.md)], la opción [/Fd](http://msdn.microsoft.com/library/3977a9ed-f0ac-45df-bf06-01cedd2ba85a) asigna nombre al archivo .pdb creado por el compilador. Al crear un proyecto en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] mediante los asistentes, la opción **/Fd** se establece para crear un archivo .pdb denominado *project*.pdb.
+ En [!INCLUDE[vcprvc](../includes/vcprvc-md.md)], la opción [/Fd](https://msdn.microsoft.com/library/3977a9ed-f0ac-45df-bf06-01cedd2ba85a) asigna nombre al archivo .pdb creado por el compilador. Al crear un proyecto en [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] mediante los asistentes, la opción **/Fd** se establece para crear un archivo .pdb denominado *project*.pdb.
 
  Si compila una aplicación de C/C++ mediante un archivo Make y especifica **/ZI** o **/Zi** sin **/Fd**, terminará con dos archivos .pdb:
 
@@ -183,7 +183,7 @@ Un archivo de base de datos de programa (.pdb), también denominado archivo de s
 
   **Opciones de .NET Framework**
 
-  Un archivo de base de datos de programa (.pdb) contiene información sobre el estado de la depuración y del proyecto que permite la vinculación incremental de una configuración Debug del programa. Cuando se compila con **/debug**, se crea un archivo .pdb. Puede compilar las aplicaciones con **/debug:full** o **/debug:pdbonly**. La compilación mediante **/debug:full** genera código depurable. La compilación mediante **/debug:pdbonly** genera archivos .pdb, pero no genera el atributo `DebuggableAttribute` que indica al compilador JIT que existe información de depuración disponible. Use **/debug:pdbonly** si quiere generar archivos .pdb para una compilación de versión que no quiere que sea depurable. Para obtener más información, vea [/debug (C# Compiler Options)](http://msdn.microsoft.com/library/e2b48c07-01bc-45cc-a52c-92e9085eb969) o [/debug (Visual Basic)](http://msdn.microsoft.com/library/c2b0bea5-1d5e-499f-9bd5-4f6c6b715ea2).
+  Un archivo de base de datos de programa (.pdb) contiene información sobre el estado de la depuración y del proyecto que permite la vinculación incremental de una configuración Debug del programa. Cuando se compila con **/debug**, se crea un archivo .pdb. Puede compilar las aplicaciones con **/debug:full** o **/debug:pdbonly**. La compilación mediante **/debug:full** genera código depurable. La compilación mediante **/debug:pdbonly** genera archivos .pdb, pero no genera el atributo `DebuggableAttribute` que indica al compilador JIT que existe información de depuración disponible. Use **/debug:pdbonly** si quiere generar archivos .pdb para una compilación de versión que no quiere que sea depurable. Para obtener más información, vea [/debug (C# Compiler Options)](https://msdn.microsoft.com/library/e2b48c07-01bc-45cc-a52c-92e9085eb969) o [/debug (Visual Basic)](https://msdn.microsoft.com/library/c2b0bea5-1d5e-499f-9bd5-4f6c6b715ea2).
 
   El depurador de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] utiliza la ruta de acceso al archivo .pdb en el archivo EXE o DLL para buscar el archivo proyecto.pdb. Si el depurador no encuentra el archivo .pdb en esa ubicación o si la ruta de acceso no es válida, el depurador busca en la ruta de acceso que contiene el archivo EXE y, a continuación, en las rutas de acceso de símbolos especificadas en el cuadro de diálogo **Opciones** . Esta ruta de acceso generalmente es la carpeta **Depuración** en el nodo **Símbolos** . El depurador no cargará un archivo .pdb que no coincida con el archivo ejecutable que se está depurando. Si el depurador no encuentra ningún archivo .pdb, aparecerá el cuadro de diálogo **Buscar símbolos** que permite buscar símbolos o agregar más ubicaciones a la ruta de acceso de búsqueda.
 

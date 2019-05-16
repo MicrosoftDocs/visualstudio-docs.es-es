@@ -8,12 +8,12 @@ ms.assetid: 0fa335fd-e442-448f-913f-25a19df90a93
 caps.latest.revision: 8
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ef42f7710598906310b77bd834adf04b21d6bfc2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8bbf75bfe218945453d25440c868a95675168631
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445853"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705883"
 ---
 # <a name="using-microsoftvisualstudiotesttoolsunittesting-members-in-unit-tests"></a>Usar miembros de Microsoft.VisualStudio.TestTools.UnitTesting en pruebas unitarias
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ El marco de pruebas unitarias es compatible con pruebas unitarias en [!INCLUDE[v
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceElementCollection>
 
 ## <a name="attributes-used-to-establish-a-calling-order"></a>Atributos utilizados para establecer un orden de llamada
- Un elemento de código representativo con uno de los siguientes atributos se llama en el momento que especifique. Para obtener más información, consulte [Estructura de una prueba unitaria](http://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
+ Un elemento de código representativo con uno de los siguientes atributos se llama en el momento que especifique. Para obtener más información, consulte [Estructura de una prueba unitaria](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
 
 ### <a name="for-assemblies"></a>Para los ensamblados
  Se llama a AssemblyInitialize y AssemblyCleanup inmediatamente después de que se carga el ensamblado e inmediatamente antes de que se descargue.
@@ -64,7 +64,7 @@ El marco de pruebas unitarias es compatible con pruebas unitarias en [!INCLUDE[v
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCleanupAttribute>
 
 ## <a name="attributes-used-to-identify-test-classes-and-methods"></a>Atributos utilizados para identificar clases y métodos de prueba
- Cada clase de prueba debe tener el atributo TestClass y todos los métodos de prueba deben tener el atributo TestMethod. Para obtener más información, consulte [Estructura de una prueba unitaria](http://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
+ Cada clase de prueba debe tener el atributo TestClass y todos los métodos de prueba deben tener el atributo TestMethod. Para obtener más información, consulte [Estructura de una prueba unitaria](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144).
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute>
 
@@ -118,7 +118,7 @@ El marco de pruebas unitarias es compatible con pruebas unitarias en [!INCLUDE[v
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.CssProjectStructureAttribute>
 
 ## <a name="classes-used-with-private-accessors"></a>Clases utilizadas con descriptores de acceso privados
- Como se describe en [Usar Publicize para crear un descriptor de acceso privado](http://msdn.microsoft.com/2056c6a7-6672-42a7-8f53-fead33c56deb), puede generar una prueba unitaria para un método privado. Esta generación crea una clase de descriptor de acceso privado, que crea una instancia de un objeto de la clase PrivateObject. La clase PrivateObject es una clase contenedora que utiliza la reflexión como parte del proceso de descriptor de acceso privado. La clase PrivateType es similar, pero se utiliza para llamar a métodos estáticos privados en lugar de llamar a métodos de instancia privados.
+ Como se describe en [Usar Publicize para crear un descriptor de acceso privado](https://msdn.microsoft.com/2056c6a7-6672-42a7-8f53-fead33c56deb), puede generar una prueba unitaria para un método privado. Esta generación crea una clase de descriptor de acceso privado, que crea una instancia de un objeto de la clase PrivateObject. La clase PrivateObject es una clase contenedora que utiliza la reflexión como parte del proceso de descriptor de acceso privado. La clase PrivateType es similar, pero se utiliza para llamar a métodos estáticos privados en lugar de llamar a métodos de instancia privados.
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.PrivateObject>
 

@@ -13,12 +13,12 @@ ms.assetid: b0449111-8b48-45a1-a031-ea24b765e969
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c20e0402f49b9c1d069b89bc972d8d3179f2ceb2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a6ee9f5d4a162f994cfea4fb3fe620599c1627b3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58998871"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65681315"
 ---
 # <a name="projecttemplatelink-element-visual-studio-templates"></a>ProjectTemplateLink (Elemento, Plantillas de Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ Especifica la ruta de acceso al archivo .vstemplate de un proyecto en una planti
 |Atributo|Descripción|  
 |---------------|-----------------|  
 |`ProjectName`|Atributo opcional.<br /><br /> Especifica el nombre de cada proyecto individual en una plantilla de varios proyectos. El **nuevo proyecto** cuadro de diálogo no puede asignar nombres a proyectos individuales.|  
-|`CopyParameters`|Permite que todas las variables de la plantilla de grupo principal se copien en cada una de las plantillas vinculadas.<br /><br /> Los parámetros de las plantillas vinculadas tienen un prefijo `"$ext_*$"`. Por ejemplo, si se encuentra en la plantilla del grupo primario el parámetro `$projectname$` tiene un valor **ExampleProject1**, cuando la plantilla vinculada obtiene su turno para ejecutarse, adquiere un parámetro `$ext_projectname$`, que es una copia de la `$projectname$`parámetro desde la plantilla del grupo primario.<br /><br /> Esto permite que las plantillas vinculadas compartan algunos parámetros comunes, para que estos solo se tengan que crear en la plantilla del grupo primario.<br /><br /> Este atributo es opcional y se establece de forma automática en `false` cuando no se incluye.<br /><br /> Apareció por primera vez en Visual Studio 2013 Update 2. Para hacer referencia a la versión correcta del producto, consulte [que hacen referencia a ensamblados ofrecidas en Visual Studio 2013 SDK Update 2](http://msdn.microsoft.com/42b65c3e-e42b-4c39-98c8-bea285f25ffb).|  
+|`CopyParameters`|Permite que todas las variables de la plantilla de grupo principal se copien en cada una de las plantillas vinculadas.<br /><br /> Los parámetros de las plantillas vinculadas tienen un prefijo `"$ext_*$"`. Por ejemplo, si se encuentra en la plantilla del grupo primario el parámetro `$projectname$` tiene un valor **ExampleProject1**, cuando la plantilla vinculada obtiene su turno para ejecutarse, adquiere un parámetro `$ext_projectname$`, que es una copia de la `$projectname$`parámetro desde la plantilla del grupo primario.<br /><br /> Esto permite que las plantillas vinculadas compartan algunos parámetros comunes, para que estos solo se tengan que crear en la plantilla del grupo primario.<br /><br /> Este atributo es opcional y se establece de forma automática en `false` cuando no se incluye.<br /><br /> Apareció por primera vez en Visual Studio 2013 Update 2. Para hacer referencia a la versión correcta del producto, consulte [que hacen referencia a ensamblados ofrecidas en Visual Studio 2013 SDK Update 2](https://msdn.microsoft.com/42b65c3e-e42b-4c39-98c8-bea285f25ffb).|  
   
 ### <a name="child-elements"></a>Elementos secundarios  
  Ninguno.  

@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 043db1aca02a82abe08786466f4b47213d09540d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8538b5ec8f78ac9b648e865f4c6f6c0ee07fb0b9
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62563668"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697687"
 ---
 # <a name="the-connection-property-in-the-application-settings-file-is-missing-or-incorrect"></a>Falta o no es correcta la propiedad de conexión del archivo de configuración de la aplicación
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,6 +29,6 @@ Falta o no es correcta la propiedad de conexión del archivo de configuración d
   
 ## <a name="see-also"></a>Vea también  
  [LINQ to SQL Tools en Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
- [Tutorial: Crear clases LINQ to SQL (Object Relational Designer)](http://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)   
- [NIB: Procedimiento Agregar o quitar la configuración de la aplicación](http://msdn.microsoft.com/a233965c-126d-46ab-add4-efb758f576f4)   
- [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)
+ [Tutorial: Crear clases LINQ to SQL (Object Relational Designer)](https://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)   
+ [NIB: Procedimiento Agregar o quitar la configuración de la aplicación](https://msdn.microsoft.com/a233965c-126d-46ab-add4-efb758f576f4)   
+ [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655)

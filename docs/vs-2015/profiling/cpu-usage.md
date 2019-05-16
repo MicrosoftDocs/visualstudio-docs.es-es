@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a78025bd11e56b001514f580acca18b7d21d5424
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 1a6160fb42ab3648eae9a7ea416e244b5cfabc99
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60067058"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65700908"
 ---
 # <a name="cpu-usage"></a>Uso de CPU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Si necesita investigar problemas de rendimiento de la aplicación, un buen punto
   
  Para un tutorial que analiza el rendimiento de una aplicación de la Tienda Windows, consulte [Analizar el uso de CPU en aplicaciones de la Tienda](https://msdn.microsoft.com/library/windows/apps/dn641982.aspx).  
   
- El concentrador de rendimiento y diagnósticos le ofrece muchas otras opciones para ejecutar y administrar la sesión de diagnóstico. Por ejemplo, puede ejecutar la herramienta **Uso de CPU** en equipos locales o remotos o en un simulador o emulador. Puede analizar el rendimiento de un proyecto abierto en Visual Studio, conectado a una aplicación en ejecución, o iniciar una aplicación que se instala desde la tienda Windows. Para obtener más información, consulte [ejecutar herramientas de generación de perfiles sin depurar](http://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)  
+ El concentrador de rendimiento y diagnósticos le ofrece muchas otras opciones para ejecutar y administrar la sesión de diagnóstico. Por ejemplo, puede ejecutar la herramienta **Uso de CPU** en equipos locales o remotos o en un simulador o emulador. Puede analizar el rendimiento de un proyecto abierto en Visual Studio, conectado a una aplicación en ejecución, o iniciar una aplicación que se instala desde la tienda Windows. Para obtener más información, consulte [ejecutar herramientas de generación de perfiles sin depurar](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)  
   
 ## <a name="BKMK_Collect_CPU_usage_data"></a> Recopilar datos de Uso de CPU  
   

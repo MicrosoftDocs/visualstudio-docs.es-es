@@ -16,12 +16,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: db946e2dfac035a8e0ddb5581c37e36b0406fb24
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9d604c8505612ff2c33e4b14241288358f920c2c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437791"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684829"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>No se puede conectar al Monitor de depuración remota de Microsoft Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "63437791"
 Este mensaje de error aparece cuando escribe un nombre de Monitor de depuración remota de Visual Studio no válido en el cuadro de diálogo **Asociar al proceso** . El nombre del Monitor de depuración remota es generalmente el mismo del equipo al cual intenta conectarse para llevar a cabo la depuración remota. Es posible que este mensaje aparezca debido a que el equipo remoto no existe en la red, el monitor de depuración remota no está correctamente configurado en el equipo remoto o no es posible tener acceso a este último debido a problemas de red o a la presencia de un firewall.  
   
 > [!IMPORTANT]
-> Si cree que ha recibido este mensaje debido a un error en el producto, notifique este problema a Visual Studio [Enviar una sonrisa](http://msdn.microsoft.com/library/5cc9b67a-54d0-41b0-aa8f-80dff4475a6b). Si necesita más ayuda, vea [Talk to Us](../ide/talk-to-us.md) para obtener información sobre las distintas formas de ponerse en contacto con Microsoft.  
+> Si cree que ha recibido este mensaje debido a un error en el producto, notifique este problema a Visual Studio [Enviar una sonrisa](https://msdn.microsoft.com/library/5cc9b67a-54d0-41b0-aa8f-80dff4475a6b). Si necesita más ayuda, vea [Talk to Us](../ide/talk-to-us.md) para obtener información sobre las distintas formas de ponerse en contacto con Microsoft.  
   
 ## <a name="i-got-this-message-while-i-was-debugging-locally"></a>Recibí este mensaje mientras estaba depurando localmente  
  Si recibe este mensaje mientras depura localmente, es posible que un software antivirus o firewall de terceros sea el culpable. Visual Studio es una aplicación de 32 bits, por lo que usa la versión de 64 bits del depurador remoto para depurar aplicaciones de 64 bits. Los dos procesos se comunican con la red local en el equipo local. Nada de tráfico de red sale del equipo, pero es posible que el software de seguridad de terceros bloquee la comunicación.  

@@ -15,12 +15,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: fb5df0db7bc126a585b97390ec5785662def81f9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: abf6382dfba8b8d9c3cc0ed6ccf90e929afca589
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58988287"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694972"
 ---
 # <a name="ca1402-avoid-overloads-in-com-visible-interfaces"></a>CA1402: Evitar las sobrecargas en interfaces visibles a través de COM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,4 +74,4 @@ void SomeMethod_3(int valueOne, int valueTwo);
  [CA1017: Marque los ensamblados con ComVisibleAttribute](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
 
 ## <a name="see-also"></a>Vea también
- [Interoperar con código no administrado](http://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258) [tipo de datos Long](http://msdn.microsoft.com/library/b4770c34-1804-4f8c-b512-c10b0893e516)
+ [Interoperar con código no administrado](https://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258) [tipo de datos Long](https://msdn.microsoft.com/library/b4770c34-1804-4f8c-b512-c10b0893e516)
