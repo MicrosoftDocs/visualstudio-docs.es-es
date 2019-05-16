@@ -23,12 +23,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 54cb1f67aa1738126fd78e2406c076a4fefa8823
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: d0d5818186fed4570d2b1fc7065d413e0a5a07d1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051461"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703616"
 ---
 # <a name="how-to-specify-debugger-settings"></a>Procedimiento Especificación de la configuración del depurador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,6 +49,6 @@ En [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], se pueden especificar diversas 
   
 ## <a name="see-also"></a>Vea también  
  [General, Depuración, Opciones (Cuadro de diálogo)](../debugger/general-debugging-options-dialog-box.md)   
- [Editar y continuar, Depuración, Opciones (Cuadro de diálogo)](http://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)   
+ [Editar y continuar, Depuración, Opciones (Cuadro de diálogo)](https://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)   
  [Preparación y configuración de la depuración](../debugger/debugger-settings-and-preparation.md)   
- [Macros comunes para propiedades y comandos de compilación](http://msdn.microsoft.com/library/239bd708-2ea9-4687-b264-043f1febf98b)
+ [Macros comunes para propiedades y comandos de compilación](https://msdn.microsoft.com/library/239bd708-2ea9-4687-b264-043f1febf98b)

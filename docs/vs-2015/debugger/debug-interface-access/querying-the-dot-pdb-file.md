@@ -14,17 +14,17 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3cb95da9bc6405d313aa32e208d68df4327db6f4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 9b9013d41ac4d5ca890e7cc9e09b5eb9415cb640
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087903"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691328"
 ---
 # <a name="querying-the-pdb-file"></a>Consultar el archivo .pdb
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Un archivo de base de datos de programa (extensión .pdb) es un archivo binario que contiene el tipo y la información de depuración simbólica recopilada durante el transcurso de compilar y vincular el proyecto. Se crea un archivo PDB cuando se compila un programa de C o C++ con **/Zi** o **/Zi** o un [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)], [!INCLUDE[csprcs](../../includes/csprcs-md.md)], o [!INCLUDE[jsprjscript](../../includes/jsprjscript-md.md)] programar con el **/debug** opción. Los archivos objeto contienen referencias en el archivo .pdb de la información de depuración. Para obtener más información sobre los archivos pdb, consulte [archivos PDB](http://msdn.microsoft.com/1761c84e-8c2c-4632-9649-b5f99964ed3f). Una aplicación de DIA puede usar los siguientes pasos generales para obtener más detalles sobre los distintos símbolos, objetos y elementos de datos dentro de una imagen ejecutable.  
+Un archivo de base de datos de programa (extensión .pdb) es un archivo binario que contiene el tipo y la información de depuración simbólica recopilada durante el transcurso de compilar y vincular el proyecto. Se crea un archivo PDB cuando se compila un programa de C o C++ con **/Zi** o **/Zi** o un [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)], [!INCLUDE[csprcs](../../includes/csprcs-md.md)], o [!INCLUDE[jsprjscript](../../includes/jsprjscript-md.md)] programar con el **/debug** opción. Los archivos objeto contienen referencias en el archivo .pdb de la información de depuración. Para obtener más información sobre los archivos pdb, consulte [archivos PDB](https://msdn.microsoft.com/1761c84e-8c2c-4632-9649-b5f99964ed3f). Una aplicación de DIA puede usar los siguientes pasos generales para obtener más detalles sobre los distintos símbolos, objetos y elementos de datos dentro de una imagen ejecutable.  
   
 ### <a name="to-query-the-pdb-file"></a>Para consultar el archivo .pdb  
   

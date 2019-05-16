@@ -13,22 +13,22 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 07dda6011b25df1cfcd4d17e46c2591f87ab7413
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3b24e14fe1f1d740732bdb5f9d8d32a12aab0055
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437143"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703886"
 ---
 # <a name="how-to-manage-word-wrap-in-the-editor"></a>Procedimiento Administrar el ajuste en el Editor
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Puede establecer y desactivar la opción **Ajuste automático de línea**. Cuando se establece esta opción, se muestra la parte de una línea larga que se extiende más allá del ancho actual de la ventana del editor de código en la siguiente línea. Cuando se desactiva esta opción, por ejemplo, para facilitar el uso de numeración de líneas, puede desplazarse a la derecha para ver los finales de las líneas largas.  
   
- Para obtener más información, vea [Cómo: Establecer opciones generales del Editor](http://msdn.microsoft.com/704e4a7b-2162-4bed-8a47-f4f6ffec98c2).  
+ Para obtener más información, vea [Cómo: Establecer opciones generales del Editor](https://msdn.microsoft.com/704e4a7b-2162-4bed-8a47-f4f6ffec98c2).  
   
 > [!NOTE]
-> Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la **Ayuda**, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la **Ayuda**, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="procedure"></a>Procedimiento  
   

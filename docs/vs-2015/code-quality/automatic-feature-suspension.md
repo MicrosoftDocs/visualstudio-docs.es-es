@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c2e6db11220c2cc7f14bc2f0f05912e7855646c1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 9d406d200864a3c79dcd568b3c9411a1635ce116
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045987"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704018"
 ---
 # <a name="automatic-feature-suspension"></a>Suspensión automática de la característica
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Si la memoria disponible del sistema cae a 200MB o menos, Visual Studio muestra 
 
 - Análisis de la solución completa para Visual C# y Visual Basic está deshabilitada.
 
-- [Recolección de elementos](http://msdn.microsoft.com/library/22b6cb97-0c80-4eeb-a2cf-5ed7655e37f9) se deshabilitan el modo de baja latencia (GC) para Visual C# y Visual Basic.
+- [Recolección de elementos](https://msdn.microsoft.com/library/22b6cb97-0c80-4eeb-a2cf-5ed7655e37f9) se deshabilitan el modo de baja latencia (GC) para Visual C# y Visual Basic.
 
 - Se vacían las memorias caché visuales Studio.
 
@@ -62,5 +62,5 @@ Además, también se borran las memorias caché que se utiliza para operaciones 
 ## <a name="see-also"></a>Vea también
 
 - [Cómo: Habilitar y deshabilitar el análisis de la solución completa](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md)
-- [Fundamentos de la recolección de elementos no utilizados](http://msdn.microsoft.com/library/67c5a20d-1be1-4ea7-8a9a-92b0b08658d2)
+- [Fundamentos de la recolección de elementos no utilizados](https://msdn.microsoft.com/library/67c5a20d-1be1-4ea7-8a9a-92b0b08658d2)
 - [Consideraciones de rendimiento para soluciones de gran tamaño](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions)

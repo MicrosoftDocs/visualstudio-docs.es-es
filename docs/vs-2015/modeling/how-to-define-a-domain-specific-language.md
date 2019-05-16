@@ -18,12 +18,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9df436b51619211c1f79e7176479c7466f3de427
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 863daa41820b8a08f6cd9a6af26c6169fcda97db
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441064"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697264"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Cómo: Definir lenguajes específicos de dominio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -214,7 +214,7 @@ Para definir un lenguaje específico del dominio (DSL), se crea una solución de
   
 ##### <a name="to-test-the-new-domain-classes"></a>Para probar las nuevas clases de dominio  
   
-1. **Haga clic en Transformar todas las plantillas** en la barra de herramientas del explorador de soluciones, para generar el código del Diseñador de DSL. Este paso se puede automatizar. Para obtener más información, consulte [cómo automatizar Transformar todas las plantillas](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
+1. **Haga clic en Transformar todas las plantillas** en la barra de herramientas del explorador de soluciones, para generar el código del Diseñador de DSL. Este paso se puede automatizar. Para obtener más información, consulte [cómo automatizar Transformar todas las plantillas](https://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
   
 2. **Compile y ejecute el DSL.** Presione F5 o CTRL+F5 para ejecutar una nueva instancia de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] en modo experimental. En la instancia experimental de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], abra o cree un archivo que tenga la extensión de nombre de archivo de su DSL.  
   

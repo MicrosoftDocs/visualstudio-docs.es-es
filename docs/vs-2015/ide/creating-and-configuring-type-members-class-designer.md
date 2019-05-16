@@ -30,12 +30,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d443a38750904df26fdfffc65104bcde31c8d6fc
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 93d001af54a84bdb2cd2ec00f3e8fb80174c6436
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437602"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701212"
 ---
 # <a name="creating-and-configuring-type-members-class-designer"></a>Crear y configurar miembros de tipo (Diseñador de clases)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ Puede agregar estos miembros a los tipos en un diagrama de clase y configurarlos
 |Módulo (solo en VB)|método, propiedad, campo, evento, constructor, constante|  
   
 > [!NOTE]
-> Haga que la declaración de la propiedad sea más concisa cuando no se requiere ninguna lógica adicional en los descriptores de acceso get y set de una propiedad usando las propiedades implementadas automáticamente (solo C#). Para mostrar la firma completa, en el menú **Diagrama de clase**, pulse **Cambiar formato de los miembros**, **Mostrar firma completa**. Para obtener más información sobre las propiedades autoimplementadas, vea [Propiedades autoimplementadas](http://msdn.microsoft.com/library/aa55fa97-ccec-431f-b5e9-5ac789fd32b7).  
+> Haga que la declaración de la propiedad sea más concisa cuando no se requiere ninguna lógica adicional en los descriptores de acceso get y set de una propiedad usando las propiedades implementadas automáticamente (solo C#). Para mostrar la firma completa, en el menú **Diagrama de clase**, pulse **Cambiar formato de los miembros**, **Mostrar firma completa**. Para obtener más información sobre las propiedades autoimplementadas, vea [Propiedades autoimplementadas](https://msdn.microsoft.com/library/aa55fa97-ccec-431f-b5e9-5ac789fd32b7).  
   
 ## <a name="common-tasks"></a>Tareas comunes  
   
@@ -131,7 +131,7 @@ Puede agregar estos miembros a los tipos en un diagrama de clase y configurarlos
      **Nota:** También puede usar métodos abreviados de teclado para crear miembros. Para obtener más información, vea [Métodos abreviados de teclado y de mouse en el diagrama de clases y la ventana de detalles de clase (Diseñador de clases)](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md).  
   
 ## <a name="ModifyTypeMembers"></a>Modificar miembros de tipo  
- El Diseñador de clases permite modificar los miembros de los tipos que aparecen en el diagrama. Puede modificar los miembros de cualquier tipo que aparezca en un diagrama de clases que no sean de solo lectura. [Vea [Presentación de la información de solo lectura (Diseñador de clases)](http://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a)]. Para modificar los miembros de tipo, se usa la edición en contexto en la superficie de diseño, la ventana Propiedades y la ventana Detalles de clase.  
+ El Diseñador de clases permite modificar los miembros de los tipos que aparecen en el diagrama. Puede modificar los miembros de cualquier tipo que aparezca en un diagrama de clases que no sean de solo lectura. [Vea [Presentación de la información de solo lectura (Diseñador de clases)](https://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a)]. Para modificar los miembros de tipo, se usa la edición en contexto en la superficie de diseño, la ventana Propiedades y la ventana Detalles de clase.  
   
  Todos los miembros mostrados en la ventana Detalles de clase representan los miembros de los tipos del diagrama de clases. Hay cuatro tipos de miembros: métodos, propiedades, campos y eventos.  
   
@@ -263,7 +263,7 @@ Puede agregar estos miembros a los tipos en un diagrama de clase y configurarlos
   
  Todas las celdas de la ventana Detalles de clase son modificables, con unas pocas excepciones:  
   
-- Todo el tipo es de solo lectura cuando, por ejemplo, reside en un ensamblado al que se hace referencia [vea [Mostrar información de solo lectura (Diseñador de clases)](http://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a)]. Cuando se selecciona la forma en el Diseñador de clases, la ventana Detalles de clase muestra los detalles en estado de sólo lectura.  
+- Todo el tipo es de solo lectura cuando, por ejemplo, reside en un ensamblado al que se hace referencia [vea [Mostrar información de solo lectura (Diseñador de clases)](https://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a)]. Cuando se selecciona la forma en el Diseñador de clases, la ventana Detalles de clase muestra los detalles en estado de sólo lectura.  
   
 - En el caso de los indizadores, el nombre es de sólo lectura y el resto de los datos (tipo, modificador, resumen) son modificables.  
   

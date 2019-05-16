@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0f12436f9f129c6fb8a0fe3a4b6c853a9e58e650
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a732f0c6a9758de3ebd918559203b13a56d6a0ae
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438126"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697788"
 ---
 # <a name="how-to-create-an-xml-schema-from-an-xml-document"></a>Procedimiento Crear un esquema XML a partir de un documento XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ El Editor XML permite crear un esquema de lenguaje de definición de esquemas XM
   
   Los esquemas creados se utilizan luego para proporcionar IntelliSense en el documento XML.  
   
-  Para obtener más información acerca del motor de inferencia del esquema, vea [deducción de esquema XML](http://msdn.microsoft.com/library/b18e7ffd-3c04-482d-9934-ba2f6a59b2c9).  
+  Para obtener más información acerca del motor de inferencia del esquema, vea [deducción de esquema XML](https://msdn.microsoft.com/library/b18e7ffd-3c04-482d-9934-ba2f6a59b2c9).  
   
 ### <a name="to-create-an-xml-schema"></a>Para crear un esquema XML  
   

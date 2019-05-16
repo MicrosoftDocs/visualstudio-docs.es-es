@@ -23,12 +23,12 @@ caps.latest.revision: 48
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8d7d4524f1839179ac253265d95f191caf1c50af
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 54d64fd59e71b582548aa5efade8d45a24ddb560
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445672"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701158"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Procedimiento Agregar o quitar referencias mediante el Administrador de referencias
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -94,7 +94,7 @@ Puede usar el cuadro de diálogo **Administrador de referencias** para agregar y
   
 - Un componente que utiliza [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] es incompatible con un proyecto que tiene como destino [!INCLUDE[net_v45](../includes/net-v45-md.md)].  
   
-     Al crear una nueva aplicación, algunos proyectos tienen como destino [!INCLUDE[net_v45](../includes/net-v45-md.md)] de forma predeterminada. Para obtener más información, consulte [.NET Framework Client Profile](http://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1).  
+     Al crear una nueva aplicación, algunos proyectos tienen como destino [!INCLUDE[net_v45](../includes/net-v45-md.md)] de forma predeterminada. Para obtener más información, consulte [.NET Framework Client Profile](https://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1).  
   
 - No se deben agregar referencias de archivos a resultados de otro proyecto de la misma solución, ya que puede provocar errores de compilación. En lugar de hacerlo, use la pestaña **Proyectos** del cuadro de diálogo **Agregar referencia** para crear referencias entre proyectos. Esto facilita el trabajo en equipo, permitiendo una mejor administración de las bibliotecas de clases creadas en los proyectos. Para más información, vea [Solucionar problemas de referencias rotas](../ide/troubleshooting-broken-references.md).  
   
@@ -173,7 +173,7 @@ Puede usar el cuadro de diálogo **Administrador de referencias** para agregar y
 </PropertyGroup>  
 ```  
   
- Asegúrese de activar la casilla **Windows** en este subgrupo. Debe poder utilizar elementos de Windows Runtime. Sin embargo, también conviene agregar System.Runtime, en el que Windows Runtime define algunas clases e interfaces estándar, como IEnumerable, que se utilizan en las bibliotecas de Windows Runtime. Para más información sobre cómo agregar System.Runtime, vea [Aplicaciones de escritorio administradas y Windows en tiempo de ejecución](http://msdn.microsoft.com/library/windows/apps/jj856306.aspx#consuming_standard_windows_runtime_types).  
+ Asegúrese de activar la casilla **Windows** en este subgrupo. Debe poder utilizar elementos de Windows Runtime. Sin embargo, también conviene agregar System.Runtime, en el que Windows Runtime define algunas clases e interfaces estándar, como IEnumerable, que se utilizan en las bibliotecas de Windows Runtime. Para más información sobre cómo agregar System.Runtime, vea [Aplicaciones de escritorio administradas y Windows en tiempo de ejecución](https://msdn.microsoft.com/library/windows/apps/jj856306.aspx#consuming_standard_windows_runtime_types).  
   
 ### <a name="extensions-subgroup"></a>Subgrupo Extensiones  
  El subgrupo Extensiones muestra los SDK del usuario que amplían la plataforma Windows de destino. Esta pestaña aparece únicamente para los proyectos de aplicaciones de la [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]. Los proyectos de escritorio no mostrarán esta pestaña porque solo pueden usar archivos .winmd propios.  
@@ -216,5 +216,5 @@ Puede usar el cuadro de diálogo **Administrador de referencias** para agregar y
  La barra de búsqueda del cuadro de diálogo **Administrador de referencias** funciona según la pestaña que tiene el foco. Por ejemplo, si el usuario escribe “System” en la barra de búsqueda mientras la pestaña **Solución** tiene el foco, la búsqueda no devuelve ningún resultado a menos que la solución conste de un nombre de proyecto que contenga “system”.  
   
 ## <a name="see-also"></a>Vea también  
- [NIB Cómo: Agregar o quitar referencias mediante el cuadro de diálogo Agregar referencia](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)   
+ [NIB Cómo: Agregar o quitar referencias mediante el cuadro de diálogo Agregar referencia](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)   
  [Administrar referencias en un proyecto](../ide/managing-references-in-a-project.md)

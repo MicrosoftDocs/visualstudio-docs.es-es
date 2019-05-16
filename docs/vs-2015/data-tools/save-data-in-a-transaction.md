@@ -20,12 +20,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fcac3461d0c6dc1c05671eed1ac641c7da6790ef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 08480e46ab492acb1c7ab10c8514897721708aba
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62559203"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692466"
 ---
 # <a name="save-data-in-a-transaction"></a>Guardar datos en una transacción
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,12 +44,12 @@ Este tutorial muestra cómo guardar datos en una transacción utilizando el <xre
   
 2. Denomine el proyecto **SavingDataInATransactionWalkthrough**.  
   
-3. Seleccione **aplicación Windows**y, a continuación, seleccione **Aceptar**. Para obtener más información, consulte [las aplicaciones cliente](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
+3. Seleccione **aplicación Windows**y, a continuación, seleccione **Aceptar**. Para obtener más información, consulte [las aplicaciones cliente](https://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
      Se crea el proyecto **SavingDataInATransactionWalkthrough** y se agrega al **Explorador de soluciones**.  
   
 ## <a name="create-a-database-data-source"></a>Crear un origen de datos de la base de datos  
- Este paso se usa el [Asistente para configuración de origen de datos](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f) para crear un origen de datos basado en la `Customers` y `Orders` tablas en la base de datos de ejemplo Northwind.  
+ Este paso se usa el [Asistente para configuración de origen de datos](https://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f) para crear un origen de datos basado en la `Customers` y `Orders` tablas en la base de datos de ejemplo Northwind.  
   
 #### <a name="to-create-the-data-source"></a>Para crear el origen de datos  
   

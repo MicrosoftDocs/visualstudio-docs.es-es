@@ -12,12 +12,12 @@ caps.latest.revision: 26
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: 198a848f953881af5a7ac4b042c74b368d202d06
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 022966ae483b958da6032769e219f4ab6750f330
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425885"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696437"
 ---
 # <a name="how-to-upgrade-visual-c-projects-to-visual-studio-2015"></a>Cómo: Actualizar proyectos de Visual C++ a Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,4 +54,4 @@ Cuando se abre por primera vez un proyecto de Visual C++ creado en una versión 
  Si desea seguir trabajando con un valor de PlatformToolset personalizado en [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)], el conjunto de herramientas debe estar en %ProgramFiles%\MSBuild\Microsoft.Cpp\v4.0\Platforms\Win32\PlatformToolsets\ en un equipo x86 o en %ProgramFiles (x86)%\MSBuild\Microsoft.Cpp\v4.0\Platforms\Win32\PlatformToolsets\ si se trata de un equipo x64. Para obtener información sobre cómo crear un valor de PlatformToolset personalizado, vea [Compatibilidad nativa con múltiples versiones (multi-targeting) de C++](http://go.microsoft.com/fwlink/?LinkId=248587) en el blog del equipo de Visual C++.
 
 ## <a name="see-also"></a>Vea también
- [Guía de migración y actualización de Visual C++](http://msdn.microsoft.com/library/f5fbcc3d-aa72-41a6-ad9a-a706af2166fb) [Portar, migrar y actualizar proyectos de Visual Studio](../porting/porting-migrating-and-upgrading-visual-studio-projects.md)
+ [Guía de migración y actualización de Visual C++](https://msdn.microsoft.com/library/f5fbcc3d-aa72-41a6-ad9a-a706af2166fb) [Portar, migrar y actualizar proyectos de Visual Studio](../porting/porting-migrating-and-upgrading-visual-studio-projects.md)

@@ -17,12 +17,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 70d640b97bae15575689d41c38bd774507276906
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: dc0cf5d488c81b119d5a50464ae60ef44f233d7a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436876"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701782"
 ---
 # <a name="property-pages-javascript"></a>Página de propiedades, JavaScript
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -39,10 +39,10 @@ Las **páginas Propiedades** proporcionan acceso a la configuración del proyect
  Utilice las siguientes opciones para seleccionar la configuración y la plataforma para mostrar o modificar.  
   
  **Configuración**  
- Especifica las opciones de configuración para mostrar o modificar. Los valores son **Depurar** (valor predeterminado), **Liberar**, **Todas las configuraciones** o una configuración definida por el usuario. Para obtener más información, consulte [Configuraciones Debug y Release](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
+ Especifica las opciones de configuración para mostrar o modificar. Los valores son **Depurar** (valor predeterminado), **Liberar**, **Todas las configuraciones** o una configuración definida por el usuario. Para obtener más información, consulte [Configuraciones Debug y Release](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
   
  **Plataforma**  
- Especifica la configuración de plataforma para mostrar o modificar. Los valores son **Cualquier CPU** (valor predeterminado para aplicaciones [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)]), **x64**, **ARM**, **x86** o una plataforma definida por el usuario. Para obtener más información, consulte [Configuraciones Debug y Release](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
+ Especifica la configuración de plataforma para mostrar o modificar. Los valores son **Cualquier CPU** (valor predeterminado para aplicaciones [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)]), **x64**, **ARM**, **x86** o una plataforma definida por el usuario. Para obtener más información, consulte [Configuraciones Debug y Release](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
   
 ## <a name="general-page"></a>Página general  
  Utilice las siguientes opciones para establecer las propiedades generales del proyecto.  
@@ -53,7 +53,7 @@ Las **páginas Propiedades** proporcionan acceso a la configuración del proyect
  **Ruta de acceso de salida**  
  Especifica la ubicación de los archivos de salida para la configuración del proyecto. La ruta de acceso es relativa. Si escribe una ruta de acceso absoluta, se guarda la ruta de acceso absoluta en el proyecto. La ruta de acceso predeterminada es bin\Debug.  
   
- Cuando utiliza las configuraciones de compilación simplificadas, el sistema del proyecto determina si se debe generar una depuración o versión de lanzamiento. Al hacer clic en **Depurar**, **Iniciar depuración** (o presionar F5), la compilación se coloca en la ubicación de depuración sin tener en cuenta la **Ruta de acceso de salida** que especifique. En cambio, el comando **Compilar solución** en el menú **Compilar** la coloca en la ubicación que especifique. Para habilitar configuraciones de compilación avanzadas, en la barra de menús, pulse **Herramientas**, **Opciones**. En el cuadro de diálogo **Opciones**, expanda **Proyectos y soluciones**, seleccione **General** y, después, desactive la casilla **Mostrar configuraciones de compilación avanzadas**. Esta opción permite controlar manualmente todos los valores de configuración y si se crea una versión de depuración o lanzamiento. Para obtener más información, consulte [NIB: General, proyectos y soluciones, cuadro de diálogo Opciones](http://msdn.microsoft.com/8f8e37e8-b28d-4b13-bfeb-ea4d3312aeca).  
+ Cuando utiliza las configuraciones de compilación simplificadas, el sistema del proyecto determina si se debe generar una depuración o versión de lanzamiento. Al hacer clic en **Depurar**, **Iniciar depuración** (o presionar F5), la compilación se coloca en la ubicación de depuración sin tener en cuenta la **Ruta de acceso de salida** que especifique. En cambio, el comando **Compilar solución** en el menú **Compilar** la coloca en la ubicación que especifique. Para habilitar configuraciones de compilación avanzadas, en la barra de menús, pulse **Herramientas**, **Opciones**. En el cuadro de diálogo **Opciones**, expanda **Proyectos y soluciones**, seleccione **General** y, después, desactive la casilla **Mostrar configuraciones de compilación avanzadas**. Esta opción permite controlar manualmente todos los valores de configuración y si se crea una versión de depuración o lanzamiento. Para obtener más información, consulte [NIB: General, proyectos y soluciones, cuadro de diálogo Opciones](https://msdn.microsoft.com/8f8e37e8-b28d-4b13-bfeb-ea4d3312aeca).  
   
  **Idioma predeterminado**  
  Especifica el idioma predeterminado del proyecto. La opción de idioma seleccionada en el Panel de control **Reloj, idioma y región** especifica el idioma preferido del usuario. Al especificar un idioma predeterminado para el proyecto, se asegura de que se utilizan los recursos de idioma predeterminados especificados si el idioma preferido del usuario no coincide con los recursos de idioma proporcionados en la aplicación.  

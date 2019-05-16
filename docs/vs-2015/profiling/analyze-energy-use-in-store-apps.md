@@ -14,12 +14,12 @@ caps.latest.revision: 39
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 67dd471808b938428d1c9e3f2d5b10c36f2bc914
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c2b25d0fa57659b3081b54c51b7493621423188f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435103"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697004"
 ---
 # <a name="analyze-energy-use-in-store-apps"></a>Analizar el uso de energía en las aplicaciones de la Tienda
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,12 +55,12 @@ El generador de perfiles **Consumo de energía** de Visual Studio le ayuda a ana
   
  **Agregar marcas a código de C#, Visual Basic y C++**  
   
- Para agregar una marca de usuario a código de C#, Visual Basic y C++, cree primero un objeto [Windows.Foundation.Diagnostics LoggingChannel](http://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.loggingchannel.aspx) . Después, inserte llamadas a métodos [LoggingChannel.LogMessage](http://msdn.microsoft.com/library/windows/apps/dn264210.aspx) en los puntos del código que quiera marcar. Use [LoggingLevel.Information](http://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.logginglevel.aspx) en las llamadas.  
+ Para agregar una marca de usuario a código de C#, Visual Basic y C++, cree primero un objeto [Windows.Foundation.Diagnostics LoggingChannel](https://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.loggingchannel.aspx) . Después, inserte llamadas a métodos [LoggingChannel.LogMessage](https://msdn.microsoft.com/library/windows/apps/dn264210.aspx) en los puntos del código que quiera marcar. Use [LoggingLevel.Information](https://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.logginglevel.aspx) en las llamadas.  
   
  Al ejecutarse el método, se agrega una marca de usuario a los datos de generación de perfiles junto con un mensaje.  
   
 > [!NOTE]
-> - Windows.Foundation.Diagnostics LoggingChannel implementa la interfaz [Windows.Foundation.IClosable](http://msdn.microsoft.com/library/windows/apps/windows.foundation.iclosable.aspx) (proyectada como [System.IDisposable](http://msdn.microsoft.com/library/System.IDisposable.aspx) en C# y VB). Para evitar la pérdida de recursos de sistema operativo, llame a [LoggingChannel.Close](http://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.loggingchannel.close.aspx)() (Windows.Foundation.Diagnostics.LoggingChannel.Dispose() en C# y VB) cuando haya finalizado con un canal de registro.  
+> - Windows.Foundation.Diagnostics LoggingChannel implementa la interfaz [Windows.Foundation.IClosable](https://msdn.microsoft.com/library/windows/apps/windows.foundation.iclosable.aspx) (proyectada como [System.IDisposable](https://msdn.microsoft.com/library/System.IDisposable.aspx) en C# y VB). Para evitar la pérdida de recursos de sistema operativo, llame a [LoggingChannel.Close](https://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.loggingchannel.close.aspx)() (Windows.Foundation.Diagnostics.LoggingChannel.Dispose() en C# y VB) cuando haya finalizado con un canal de registro.  
 >   - Cada canal de registro abierto debe tener un nombre único. Al intentar crear un nuevo canal de registro con el mismo nombre que un canal no desechado, se produce una excepción.  
   
  Consulte el [ejemplo de LoggingSession](http://code.msdn.microsoft.com/windowsapps/LoggingSession-Sample-ccd52336) en el Windows SDK.  
@@ -148,7 +148,7 @@ if (performance && performance.mark) {
   
 ## <a name="BKMK_Other_resources"></a> Otros recursos  
   
-- Las secciones de **estado de la conexión y administración de los costos** para [C#/VB/C++ y XAML](http://msdn.microsoft.com/0ee0b706-8432-4d49-9801-306ed90764e1) y [JavaScript y HTML](http://msdn.microsoft.com/372afa6a-1c7c-4657-967d-03a77cd8e933) en el Centro de desarrollo de Windows describen las API de Windows que proporcionan información sobre la conectividad de red que puede usar su aplicación para minimizar el costo del tráfico de red.  
+- Las secciones de **estado de la conexión y administración de los costos** para [C#/VB/C++ y XAML](https://msdn.microsoft.com/0ee0b706-8432-4d49-9801-306ed90764e1) y [JavaScript y HTML](https://msdn.microsoft.com/372afa6a-1c7c-4657-967d-03a77cd8e933) en el Centro de desarrollo de Windows describen las API de Windows que proporcionan información sobre la conectividad de red que puede usar su aplicación para minimizar el costo del tráfico de red.  
   
      El simulador de Visual Studio para la Tienda Windows te permite simular las propiedades de la conexión de datos de las API de información de red. Consulta [Run Windows Store apps in the simulator](../debugger/run-windows-store-apps-in-the-simulator.md).  
   

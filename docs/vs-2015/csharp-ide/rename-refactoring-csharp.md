@@ -16,12 +16,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 971ca4e94f28016335483a03f4b0121de587f00d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3f1c31d858fbe7a5183456bfc7fcc1e602d4e051
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439955"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686035"
 ---
 # <a name="rename-refactoring-c"></a>Cambiar el nombre de refactorización (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ ms.locfileid: "63439955"
 |-----------------|----------------------|  
 |Campo|Cambia la declaración y los usos del campo por el nombre nuevo.|  
 |variable local|Cambia la declaración y los usos de la variable en el nuevo nombre.|  
-|Método|Cambia el nombre del método y todas las referencias a ese método para el nuevo nombre. **Nota:**  Al cambiar el nombre de un método de extensión, la operación de cambio se propaga a todas las instancias del método que están en el ámbito, independientemente de si se utiliza el método de extensión como un método estático o un método de instancia. Para obtener más información, vea [Métodos de extensión](http://msdn.microsoft.com/library/175ce3ff-9bbf-4e64-8421-faeb81a0bb51).|  
+|Método|Cambia el nombre del método y todas las referencias a ese método para el nuevo nombre. **Nota:**  Al cambiar el nombre de un método de extensión, la operación de cambio se propaga a todas las instancias del método que están en el ámbito, independientemente de si se utiliza el método de extensión como un método estático o un método de instancia. Para obtener más información, vea [Métodos de extensión](https://msdn.microsoft.com/library/175ce3ff-9bbf-4e64-8421-faeb81a0bb51).|  
 |Espacio de nombres|Cambia el nombre del espacio de nombres para el nuevo nombre en la declaración, todos los `using` instrucciones y nombres completos. **Nota:**  Al cambiar el nombre de un espacio de nombres [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] también actualiza el **Default Namespace** propiedad en el **aplicación** página de la **Diseñador de proyectos**. Esta propiedad no se puede restablecer seleccionando **deshacer** desde el **editar** menú. Para restablecer la **Default Namespace** valor de propiedad, debe modificar la propiedad en el **Diseñador de proyectos**. Para obtener más información, consulte [página aplicación](../ide/reference/application-page-project-designer-csharp.md).|  
 |Propiedad|Cambia la declaración y los usos de la propiedad para el nuevo nombre.|  
 |Tipo|Cambia todas las declaraciones y todos los usos del tipo para el nuevo nombre, incluidos constructores y destructores. Para los tipos parciales, la operación de cambio se propagará a todas las partes.|  
@@ -170,4 +170,4 @@ var orderIDs =
   
 ## <a name="see-also"></a>Vea también  
  [Refactorización (C#)](../csharp-ide/refactoring-csharp.md)   
- [Tipos anónimos](http://msdn.microsoft.com/library/59c9d7a4-3b0e-475e-b620-0ab86c088e9b)
+ [Tipos anónimos](https://msdn.microsoft.com/library/59c9d7a4-3b0e-475e-b620-0ab86c088e9b)

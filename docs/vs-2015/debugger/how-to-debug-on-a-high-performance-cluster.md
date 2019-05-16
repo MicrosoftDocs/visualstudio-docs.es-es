@@ -17,12 +17,12 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4bb7245e57dedf6f94ce7766fcfae24ac930f608
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: f4487b168c3d405b2449bcfb9515e60f0ea67ed1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117556"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702692"
 ---
 # <a name="how-to-debug-on-a-high-performance-cluster"></a>Procedimiento Depuración en un clúster de alto rendimiento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ La depuración de un programa multiproceso en un clúster de alto rendimiento es
   
  Al depurar en un clúster de alto rendimiento, puede utilizar todas las ventanas de depuración de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] y las técnicas que están disponibles para la depuración remota. Sin embargo, dado que está depurando de forma remota, la ventana de la consola externa no está disponible.  
   
- Las ventanas **Procesos** y **Subprocesos** son especialmente útiles para depurar aplicaciones paralelas. Para obtener sugerencias sobre cómo usar estas ventanas, vea [Cómo: Utilice la ventana procesos](http://msdn.microsoft.com/0207ce2f-8ceb-4fe7-b2b5-4dd35b035ed7) y [Cómo: Utilice la ventana subprocesos](../debugger/how-to-use-the-threads-window.md).  
+ Las ventanas **Procesos** y **Subprocesos** son especialmente útiles para depurar aplicaciones paralelas. Para obtener sugerencias sobre cómo usar estas ventanas, vea [Cómo: Utilice la ventana procesos](https://msdn.microsoft.com/0207ce2f-8ceb-4fe7-b2b5-4dd35b035ed7) y [Cómo: Utilice la ventana subprocesos](../debugger/how-to-use-the-threads-window.md).  
   
  En los procedimientos siguientes se presentan algunas técnicas que son especialmente útiles para depurar en un clúster de alto rendimiento.  
   
@@ -103,7 +103,7 @@ La depuración de un programa multiproceso en un clúster de alto rendimiento es
 ## <a name="see-also"></a>Vea también  
  [Depuración de aplicaciones multiproceso](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [Depuración remota](../debugger/remote-debugging.md)   
- [Cómo: Utilice la ventana procesos](http://msdn.microsoft.com/0207ce2f-8ceb-4fe7-b2b5-4dd35b035ed7)   
+ [Cómo: Utilice la ventana procesos](https://msdn.microsoft.com/0207ce2f-8ceb-4fe7-b2b5-4dd35b035ed7)   
  [Cómo: Utilice la ventana subprocesos](../debugger/how-to-use-the-threads-window.md)   
- [Procesos y subprocesos](http://msdn.microsoft.com/73d87480-9af3-4d1b-baf5-397d5d876ae6)   
+ [Procesos y subprocesos](https://msdn.microsoft.com/73d87480-9af3-4d1b-baf5-397d5d876ae6)   
  [Usar puntos de interrupción](../debugger/using-breakpoints.md)

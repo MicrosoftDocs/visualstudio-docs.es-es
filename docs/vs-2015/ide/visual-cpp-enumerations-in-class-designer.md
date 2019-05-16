@@ -11,12 +11,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 209f56d8222d4cc446d15f8eedd4d89b08993c5a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b38d36c1fdc0033115f1d7a4cf18265dc1f2a3ab
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62548588"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696361"
 ---
 # <a name="visual-c-enumerations-in-class-designer"></a>Enumeraciones de Visual C++ en el Diseñador de clases
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,8 +43,8 @@ enum class CardSuit {
   
  Una forma de enumeración de C++ en un diagrama de clases se parece y funciona como una forma de estructura, salvo que en la etiqueta se muestra **Enum** o **Enum class**, es de color fucsia en lugar de azul y el borde de los márgenes superior e izquierdo está coloreado. Tanto las formas de enumeración como las formas de estructura tienen las esquinas cuadradas.  
   
- Para obtener más información sobre cómo usar el tipo `enum`, vea [Enumerations (Enumeraciones)](http://msdn.microsoft.com/library/081829db-5dca-411e-a53c-bffef315bcb3).  
+ Para obtener más información sobre cómo usar el tipo `enum`, vea [Enumerations (Enumeraciones)](https://msdn.microsoft.com/library/081829db-5dca-411e-a53c-bffef315bcb3).  
   
 ## <a name="see-also"></a>Vea también  
  [Trabajar con código de Visual C++ (Diseñador de clases)](../ide/working-with-visual-cpp-code-class-designer.md)   
- [Enumeraciones](http://msdn.microsoft.com/library/081829db-5dca-411e-a53c-bffef315bcb3)
+ [Enumeraciones](https://msdn.microsoft.com/library/081829db-5dca-411e-a53c-bffef315bcb3)

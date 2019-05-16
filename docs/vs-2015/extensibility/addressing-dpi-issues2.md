@@ -6,12 +6,12 @@ ms.assetid: 359184aa-f5b6-4b6c-99fe-104655b3a494
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 70b20a463563c54ce0b8ac81b9acab042b0389eb
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9b8bc5963ba9263d72800cc473cfa56324884ace
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443965"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699266"
 ---
 # <a name="addressing-dpi-issues"></a>Solución de problemas de PPP
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -228,7 +228,7 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.V
 ## <a name="enabling-hdpi-support-to-the-weboc"></a>Habilitar la compatibilidad con HDPI para WebOC  
  De forma predeterminada, controles WebOC (por ejemplo, el control WebBrowser en WPF o la interfaz IWebBrowser2) no habilitan la detección de HDPI y soporte técnico. El resultado será un control incrustado con el contenido de visualización es demasiado pequeño en una pantalla de alta resolución. El siguiente describe cómo habilitar la compatibilidad con valores altos de PPP en una instancia de WebOC web específica.  
   
- Implementar la interfaz IDocHostUIHandler (consulte el artículo MSDN sobre el [IDocHostUIHandler](http://msdn.microsoft.com/library/aa753260.aspx) interfaz):  
+ Implementar la interfaz IDocHostUIHandler (consulte el artículo MSDN sobre el [IDocHostUIHandler](https://msdn.microsoft.com/library/aa753260.aspx) interfaz):  
   
 ```idl  
 [ComImport, InterfaceType(ComInterfaceType.InterfaceIsIUnknown),  
@@ -307,7 +307,7 @@ public interface IDocHostUIHandler
     }   
 ```  
   
- Opcionalmente, implementa la interfaz de ICustomDoc (consulte el artículo MSDN sobre el [ICustomDoc](http://msdn.microsoft.com/library/aa753272.aspx) interfaz):  
+ Opcionalmente, implementa la interfaz de ICustomDoc (consulte el artículo MSDN sobre el [ICustomDoc](https://msdn.microsoft.com/library/aa753272.aspx) interfaz):  
   
 ```idl  
 [InterfaceType(ComInterfaceType.InterfaceIsIUnknown),  

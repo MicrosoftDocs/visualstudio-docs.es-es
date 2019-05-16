@@ -18,12 +18,12 @@ caps.latest.revision: 31
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: 194dae93e3a013da366d454582b531a2cc4ff8b6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 1fe975fedb8237762d7dadffceff22203dcb899e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096340"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696389"
 ---
 # <a name="how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades"></a>Procedimiento Solucionar problemas de actualizaciones de proyecto de Visual Studio incorrectas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,4 +57,4 @@ A veces, Visual Studio no puede convertir totalmente un proyecto de una versión
    Si desea que el proyecto se ejecute en la versión actualizada de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], debe actualizar las referencias del proyecto, así como cualquier instrucción `Imports` o `Using` que llame a las referencias. Si el proyecto se carga en el IDE, puede actualizar las referencias mediante el **Explorador de soluciones** o el cuadro de diálogo **Administrador de referencias**.
 
 ## <a name="see-also"></a>Vea también
- [/Upgrade (devenv.exe)](../ide/reference/upgrade-devenv-exe.md) [convertir a ASP.NET 4](http://msdn.microsoft.com/library/790147c6-36c1-41b5-a52d-30b9ccd2bd10)
+ [/Upgrade (devenv.exe)](../ide/reference/upgrade-devenv-exe.md) [convertir a ASP.NET 4](https://msdn.microsoft.com/library/790147c6-36c1-41b5-a52d-30b9ccd2bd10)

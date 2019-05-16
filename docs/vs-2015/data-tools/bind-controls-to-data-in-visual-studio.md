@@ -19,12 +19,12 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1d0e34075fbadcc998dba09d1b7c13a5ffacc606
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 61693f30044a8ac5888bebb519dd156ab1e9510b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62556923"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705572"
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>Enlazar controles a los datos en Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ Para mostrar los datos a los usuarios de la aplicación, puede enlazarlos a cont
 
  1. Generar el modelo mediante el **Entity Data Model** asistente, a continuación, arrastrar esos objetos al diseñador.
 
- 2. Las clases LINQ to SQL no aparecen en la ventana **Orígenes de datos**. Sin embargo, puede agregar un nuevo origen de datos de objeto basado en clases LINQ to SQL y, a continuación, arrastrar esos objetos al diseñador para crear los controles enlazados a datos. Para obtener más información, vea [Tutorial: Crear clases LINQ to SQL (Object Relational Designer)](http://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233).
+ 2. Las clases LINQ to SQL no aparecen en la ventana **Orígenes de datos**. Sin embargo, puede agregar un nuevo origen de datos de objeto basado en clases LINQ to SQL y, a continuación, arrastrar esos objetos al diseñador para crear los controles enlazados a datos. Para obtener más información, vea [Tutorial: Crear clases LINQ to SQL (Object Relational Designer)](https://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233).
 
 ## <a name="data-sources-window"></a>Ventana de orígenes de datos
  Los orígenes de datos están disponible para su proyecto como elementos en la ventana **Orígenes de datos**. Esta ventana está visible o accesible desde el **vista** menú, cuando una superficie de diseño del formulario es la ventana activa en el proyecto. Puede arrastrar elementos desde esta ventana para crear controles enlazados a los datos subyacentes y también puede configurar los orígenes de datos con el botón secundario.
@@ -71,4 +71,4 @@ Para mostrar los datos a los usuarios de la aplicación, puede enlazarlos a cont
 |Personalizar títulos para los controles.|[Personalizar el modo en que Visual Studio crea los títulos de controles enlazados a datos](../data-tools/customize-how-visual-studio-creates-captions-for-data-bound-controls.md)|
 
 ## <a name="see-also"></a>Vea también
- [Visual Studio data tools para .NET](../data-tools/visual-studio-data-tools-for-dotnet.md) [enlace de datos de Windows Forms](http://msdn.microsoft.com/library/c3826d8e-ea25-4ad4-a669-45bfb19192aa)
+ [Visual Studio data tools para .NET](../data-tools/visual-studio-data-tools-for-dotnet.md) [enlace de datos de Windows Forms](https://msdn.microsoft.com/library/c3826d8e-ea25-4ad4-a669-45bfb19192aa)

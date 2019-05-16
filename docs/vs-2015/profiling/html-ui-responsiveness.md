@@ -20,12 +20,12 @@ caps.latest.revision: 52
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 91e2c0f91d3234dd9f96a29cc914ae9e4d3847b6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: a41c0c48eea4b766a9166922b2a89dfa1740e8bd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438384"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697625"
 ---
 # <a name="html-ui-responsiveness"></a>Capacidad de respuesta de IU HTML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -324,7 +324,7 @@ if (performance.mark && performance.measure) {
   
 - **Descodificación de imágenes.** Indica el tiempo invertido en descomprimir y descodificar imágenes.  
   
-  En las categorías de script y de aplicación de estilos, el generador de perfiles de la capacidad de respuesta de la IU puede proporcionar datos procesables en el gráfico de detalles de la escala de tiempo. Si identificas algún problema de scripting, puedes ejecutar el generador de perfiles de muestreo de la CPU con el generador de perfiles de la capacidad de respuesta de la IU. Como alternativa, podrías utilizar el generador de perfiles de función de Visual Studio para obtener datos más detallados. Para más información, consulte [Análisis de datos de intervalos de funciones de JavaScript](http://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b).  
+  En las categorías de script y de aplicación de estilos, el generador de perfiles de la capacidad de respuesta de la IU puede proporcionar datos procesables en el gráfico de detalles de la escala de tiempo. Si identificas algún problema de scripting, puedes ejecutar el generador de perfiles de muestreo de la CPU con el generador de perfiles de la capacidad de respuesta de la IU. Como alternativa, podrías utilizar el generador de perfiles de función de Visual Studio para obtener datos más detallados. Para más información, consulte [Análisis de datos de intervalos de funciones de JavaScript](https://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b).  
   
   En las otras categorías de eventos, es posible que puedas identificar efectos secundarios de la plataforma que son el resultado de agregar características a la aplicación, pero en estos casos no está garantizado que puedas resolver los problemas de rendimiento específicos mediante el generador de perfiles de la capacidad de respuesta de la IU.  
   
@@ -358,9 +358,9 @@ if (performance.mark && performance.measure) {
   
 - Vea [este vídeo](http://channel9.msdn.com/Events/Build/2013/3-316) de la conferencia Build 2013 sobre el generador de perfiles de capacidad de respuesta de la interfaz de usuario.  
   
-- Lee las sugerencias para mejorar el rendimiento para las aplicaciones de la Tienda Windows compiladas para Windows que usan JavaScript. Para obtener más información, consulte [Procedimientos recomendados de rendimiento para las aplicaciones de la Tienda Windows con JavaScript](http://msdn.microsoft.com/library/windows/apps/hh465194.aspx).  
+- Lee las sugerencias para mejorar el rendimiento para las aplicaciones de la Tienda Windows compiladas para Windows que usan JavaScript. Para obtener más información, consulte [Procedimientos recomendados de rendimiento para las aplicaciones de la Tienda Windows con JavaScript](https://msdn.microsoft.com/library/windows/apps/hh465194.aspx).  
   
-- Para obtener información sobre el modelo y rendimiento de ejecución de código uniproceso, consulte [Ejecución de código](http://msdn.microsoft.com/library/windows/apps/hh781217.aspx).  
+- Para obtener información sobre el modelo y rendimiento de ejecución de código uniproceso, consulte [Ejecución de código](https://msdn.microsoft.com/library/windows/apps/hh781217.aspx).  
   
 ## <a name="see-also"></a>Vea también  
- [Analizar el rendimiento de las aplicaciones](http://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)
+ [Analizar el rendimiento de las aplicaciones](https://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)

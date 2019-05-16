@@ -11,17 +11,17 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a7a27b2744247bba78575b0387a958bda5990d8c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: c839350dd37f71d4f3368e077f4d9afe1b2bb2f4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071621"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701928"
 ---
 # <a name="walkthrough-binding-to-data-in-xaml-designer"></a>Tutorial: Enlazar a datos en el Diseñador XAML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-En el diseñador XAML, puedes establecer las propiedades de enlace de datos con la mesa de trabajo y la ventana Propiedades. En el ejemplo de este tutorial se muestra cómo enlazar datos a un control. En concreto, el tutorial muestra cómo crear una clase simple de carro de la compra que tenga una propiedad [DependencyProperty](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.dependencyproperty.aspx) denominada `ItemCount` y luego enlazar la propiedad `ItemCount` a la propiedad **Text** de un control [TextBlock](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.textblock.aspx).  
+En el diseñador XAML, puedes establecer las propiedades de enlace de datos con la mesa de trabajo y la ventana Propiedades. En el ejemplo de este tutorial se muestra cómo enlazar datos a un control. En concreto, el tutorial muestra cómo crear una clase simple de carro de la compra que tenga una propiedad [DependencyProperty](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.dependencyproperty.aspx) denominada `ItemCount` y luego enlazar la propiedad `ItemCount` a la propiedad **Text** de un control [TextBlock](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.textblock.aspx).  
   
 ### <a name="to-create-a-class-to-use-as-a-data-source"></a>Para crear una clase con el fin de usarla como origen de datos  
   
@@ -66,7 +66,7 @@ En el diseñador XAML, puedes establecer las propiedades de enlace de datos con 
     End Class  
     ```  
   
-     Este código establece un valor de 0 como el número predeterminado de elementos mediante el objeto [PropertyMetadata](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.propertymetadata.aspx).  
+     Este código establece un valor de 0 como el número predeterminado de elementos mediante el objeto [PropertyMetadata](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.propertymetadata.aspx).  
   
 5. En el menú **Archivo**, elija **Compilar**, **Compilar solución**.  
   
@@ -74,7 +74,7 @@ En el diseñador XAML, puedes establecer las propiedades de enlace de datos con 
   
 1. En el Explorador de soluciones, abra el menú contextual de MainWindow.xaml y elija **Diseñador de vistas**.  
   
-2. En el cuadro de herramientas, elija un control [Grid](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx) y agréguelo al formulario.  
+2. En el cuadro de herramientas, elija un control [Grid](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx) y agréguelo al formulario.  
   
 3. Con el control `Grid` seleccionado, en la ventana Propiedades, elija el botón **Nuevo** situado junto a la propiedad **DataContext**.  
   
@@ -100,4 +100,4 @@ En el diseñador XAML, puedes establecer las propiedades de enlace de datos con 
   
 ## <a name="see-also"></a>Vea también  
  [Crear una IU con el Diseñador XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)   
- [NIB: Agregar cuadro de diálogo de convertidor de valores](http://msdn.microsoft.com/c5f3d110-a541-4b55-8bca-928f77778af8)
+ [NIB: Agregar cuadro de diálogo de convertidor de valores](https://msdn.microsoft.com/c5f3d110-a541-4b55-8bca-928f77778af8)
