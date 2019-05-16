@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 941ba0a890e854f449647977162183cbcac1bab8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c7e65f7e01971e6cf27bfad75e1536e83b833bd3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62432439"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680788"
 ---
 # <a name="support-for-the-visual-studio-sdk"></a>Soporte técnico para Visual Studio SDK
 Existen varias opciones de soporte técnico para los clientes que tengan preguntas sobre cómo ampliar el entorno de desarrollo integrado (IDE) de Visual Studio.
@@ -45,7 +45,7 @@ Puede encontrar ejemplos de código abierto de extensiones del SDK de VS en GitH
 ## <a name="included-support"></a>Soporte técnico incluido
 
 ### <a name="visual-studio-product-support"></a>Soporte técnico de Visual Studio
- Se incluye con la compra de cierta compatibilidad [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] productos. Para obtener más información, consulte [compatibilidad de Visual Studio](http://msdn.microsoft.com/vstudio/cc136615.aspx). Microsoft mantiene un equipo de soporte técnico dedicado para responder a preguntas sobre [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] extensibilidad.
+ Se incluye con la compra de cierta compatibilidad [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] productos. Para obtener más información, consulte [compatibilidad de Visual Studio](https://msdn.microsoft.com/vstudio/cc136615.aspx). Microsoft mantiene un equipo de soporte técnico dedicado para responder a preguntas sobre [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] extensibilidad.
 
 ### <a name="msdn-subscription-support"></a>Compatibilidad con la suscripción de MSDN
  Paquetes de la suscripción de MSDN también pueden incluir cierta compatibilidad. Para obtener más información, consulte [soporte técnico para suscriptores MSDN](https://msdn.microsoft.com/subscriptions/aa718661.aspx).
@@ -67,4 +67,4 @@ Puede encontrar información acerca de las solicitudes de soporte técnico indiv
 
 ## <a name="see-also"></a>Vea también
 
-- [Hable con nosotros](../ide/talk-to-us.md)
+- [Hable con nosotros](../ide/feedback-options.md)

@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f41b6332aab272baed17e9955687c34803003d0b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9463e46a7341a7da5c4aa79ae477d6aa0ff0c6cc
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444567"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686653"
 ---
 # <a name="how-to-create-an-activity-library"></a>Procedimiento Crear una biblioteca de actividades
 Las actividades personalizadas se usan para modelar los procesos de negocio concretos de un flujo de trabajo. La plantilla Biblioteca de actividad de [!INCLUDE[vs2010](../includes/vs2010-md.md)] se ha proporcionado para que pueda crear tales actividades personalizadas visualmente mediante el uso de [!INCLUDE[wfd1](../includes/wfd1-md.md)].  
@@ -48,5 +48,5 @@ Las actividades personalizadas se usan para modelar los procesos de negocio conc
     > Solo puede tener una actividad secundaria en el cuerpo de la actividad personalizada; sin embargo, esa actividad de elemento secundario podría ser una actividad compuesta, como una actividad <xref:System.Activities.Statements.Sequence> o una actividad <xref:System.Activities.Statements.Flowchart>.  
   
 ## <a name="see-also"></a>Vea también  
- [Cómo: Crear una actividad](http://msdn.microsoft.com/library/c09b1e99-21b5-4d96-9c04-ec31db3f4436)   
+ [Cómo: Crear una actividad](https://msdn.microsoft.com/library/c09b1e99-21b5-4d96-9c04-ec31db3f4436)   
  [Crear un proyecto de flujo de trabajo](../workflow-designer/creating-a-workflow-project.md)

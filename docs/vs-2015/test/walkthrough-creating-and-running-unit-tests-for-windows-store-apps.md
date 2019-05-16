@@ -13,12 +13,12 @@ ms.assetid: dd3e8a6a-b366-433e-a409-b9a9b89da89a
 caps.latest.revision: 23
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7ff078649703eef438ff7f4b14a51e7f7d155231
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1f74502472a72416d33bcf48e473977d694e545f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63428208"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695119"
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-windows-store-apps"></a>Tutorial: Crear y ejecutar pruebas unitarias para aplicaciones de Windows Store
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -86,7 +86,7 @@ Visual Studio incluye compatibilidad para realizar pruebas unitarias de aplicaci
     > [!NOTE]
     > Las capacidades que seleccione deben incluir solo las capacidades necesarias para que la prueba unitaria de [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] funcione correctamente. Las capacidades no deben incluir nunca funciones que no formen parte de la aplicación de [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] que se esté probando y normalmente deben ser un subconjunto de las funciones especificadas para la aplicación de [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] que está en pruebas.  
   
-     Para obtener más información sobre el diseñador de manifiestos, consulte [Configurar un paquete de la aplicación de Windows 8.1 con el diseñador de manifiestos](http://msdn.microsoft.com/library/24c58b7f-9c6d-41c3-b385-c1e8497d5b2d).  
+     Para obtener más información sobre el diseñador de manifiestos, consulte [Configurar un paquete de la aplicación de Windows 8.1 con el diseñador de manifiestos](https://msdn.microsoft.com/library/24c58b7f-9c6d-41c3-b385-c1e8497d5b2d).  
   
      ![Manifiesto de pruebas unitarias](../test/media/unit-test-win8.png "Unit_Test_Win8_")  
   
@@ -149,4 +149,4 @@ Visual Studio incluye compatibilidad para realizar pruebas unitarias de aplicaci
   
 ## <a name="see-also"></a>Vea también  
  [Probar aplicaciones de la Tienda con Visual Studio](../test/testing-store-apps-with-visual-studio.md)   
- [Compilar y probar una aplicación de la Tienda Windows mediante Team Foundation Build](http://msdn.microsoft.com/library/d0ca17bb-deae-4f3d-a18d-1a99bebceaa9)
+ [Compilar y probar una aplicación de la Tienda Windows mediante Team Foundation Build](https://msdn.microsoft.com/library/d0ca17bb-deae-4f3d-a18d-1a99bebceaa9)

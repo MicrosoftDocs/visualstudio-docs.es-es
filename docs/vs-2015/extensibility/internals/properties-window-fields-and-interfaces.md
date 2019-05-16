@@ -10,12 +10,12 @@ ms.assetid: 0328f0e5-2380-4a7a-a872-b547cb775050
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 515540eee455fcf22151e336897dd5f586867a82
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b58314d64536ecf33cc5589609ee5524a9352629
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58988154"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65700823"
 ---
 # <a name="properties-window-fields-and-interfaces"></a>Interfaces y campos de la ventana Propiedades
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ El modelo de selección determinar qué información se muestra en el **propieda
   
 3. Una llamada a <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A> y pasándole los elementos de la jerarquía seleccionada en el `VSHPROPID_BrowseObject` parámetro rellena el <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> objeto.  
   
-4. Un objeto derivado de la [interfaz IDispatch](http://msdn.microsoft.com/ebbff4bc-36b2-4861-9efa-ffa45e013eb5) se devuelve para <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> para el elemento solicitado y el entorno lo encapsula en un <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> (consulte el paso siguiente). Si se produce un error en la llamada, el entorno hace que una segunda llamada a `IVsHierarchy::GetProperty`, pasándole el contenedor de selección <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> que proporcionen el elemento de la jerarquía o elementos.  
+4. Un objeto derivado de la [interfaz IDispatch](https://msdn.microsoft.com/ebbff4bc-36b2-4861-9efa-ffa45e013eb5) se devuelve para <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> para el elemento solicitado y el entorno lo encapsula en un <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> (consulte el paso siguiente). Si se produce un error en la llamada, el entorno hace que una segunda llamada a `IVsHierarchy::GetProperty`, pasándole el contenedor de selección <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> que proporcionen el elemento de la jerarquía o elementos.  
   
     El proyecto de VSPackage no crea <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> porque la ventana proporcionada por el entorno de VSPackage que implemente (por ejemplo, **el Explorador de soluciones**) construye <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> en su nombre.  
   
