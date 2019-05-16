@@ -21,12 +21,12 @@ caps.latest.revision: 37
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9f28c6e0914bd37affab72e75e8bbf3f82299c4e
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 39076459f684aafce4e800ecad6341d120aac480
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59002988"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691447"
 ---
 # <a name="debugging-managed-code"></a>Depurar código administrado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,16 +68,16 @@ En esta sección se tratan problemas y técnicas de depuración comunes para apl
  [IntelliTrace](../debugger/intellitrace.md)  
  Buscar errores más rápido y fácil grabando el historial de ejecución de la aplicación con IntelliTrace. Avanzar y retroceder por las llamadas y eventos registrados para examinar el estado de la aplicación en puntos en el tiempo clave. Depurar el código sin tener que establecer tantos puntos de interrupción o reiniciar la aplicación con tanta frecuencia. Requiere Visual Studio Ultimate.  
   
- [Seguimiento e instrumentación de aplicaciones](http://msdn.microsoft.com/library/773b6fc4-9013-4322-b728-5dec7a72e743)  
+ [Seguimiento e instrumentación de aplicaciones](https://msdn.microsoft.com/library/773b6fc4-9013-4322-b728-5dec7a72e743)  
  Describe la traza, una forma de supervisar la ejecución de una aplicación en funcionamiento, y la instrumentación, que permite colocar instrucciones de seguimiento en puntos estratégicos del código. En este tema también se proporcionan vínculos a una introducción a la instrumentación y la traza, modificadores de traza, agentes de escucha de traza, traza del código en una aplicación, adición de instrucciones de traza al código de una aplicación y compilación condicional con <xref:System.Diagnostics.Debug> y <xref:System.Diagnostics.Trace>.  
   
- [/ASSEMBLYDEBUG](http://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982)  
+ [/ASSEMBLYDEBUG](https://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982)  
  Describe una opción del vinculador que agrega <xref:System.Diagnostics.DebuggableAttribute> a código escrito con C++. Este atributo es necesario para utilizar características de depuración como la asociación con C++.  
   
- [Depurar aplicaciones de servicios de Windows](http://msdn.microsoft.com/library/63ab0800-0f05-4f1e-88e6-94c73fd920a2)  
+ [Depurar aplicaciones de servicios de Windows](https://msdn.microsoft.com/library/63ab0800-0f05-4f1e-88e6-94c73fd920a2)  
  Proporciona consideraciones sobre la depuración de aplicaciones de servicios de Windows, como la configuración, la asociación al proceso, la depuración del código del método `OnStart` y el método Main del servicio, el establecimiento de puntos de interrupción y el uso del Administrador de control de servicios para iniciar, detener, pausar y continuar el servicio.  
   
- [Depurar y generar perfiles](http://msdn.microsoft.com/library/4a04863e-2475-46f4-bc3f-3c11510c2a4b)  
+ [Depurar y generar perfiles](https://msdn.microsoft.com/library/4a04863e-2475-46f4-bc3f-3c11510c2a4b)  
  Explica la depuración de las aplicaciones de .NET Framework y los requisitos de configuración.  
   
  [Depurar scripts y aplicaciones web](../debugger/debugging-web-applications-and-script.md)  
@@ -88,6 +88,6 @@ En esta sección se tratan problemas y técnicas de depuración comunes para apl
  Proporciona vínculos a secciones más amplias de la documentación relativa a la depuración. Incluye: novedades del depurador, configuración y preparación, puntos de interrupción, control de excepciones, editar y continuar, depurar código administrado, depurar proyectos de Visual C++, depurar COM y ActiveX, depurar archivos DLL, depurar SQL y las referencias a la interfaz de usuario.  
   
 ## <a name="see-also"></a>Vea también  
- [Tutorial: Controles de depuración personalizado Windows Forms en tiempo de diseño](http://msdn.microsoft.com/library/1fd83ccd-3798-42fc-85a3-6cba99467387)   
+ [Tutorial: Controles de depuración personalizado Windows Forms en tiempo de diseño](https://msdn.microsoft.com/library/1fd83ccd-3798-42fc-85a3-6cba99467387)   
  [Seguridad del depurador](../debugger/debugger-security.md)   
  [Depurar en Visual Studio](../debugger/debugging-in-visual-studio.md)

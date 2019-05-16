@@ -12,12 +12,12 @@ ms.assetid: ef640967-8adb-4793-994d-ae1736510891
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8855d27448501abec506e3b363b41e64133c07fa
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 979ede5601f1f31ca972bb9067b626954b1296f7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431663"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695208"
 ---
 # <a name="idebugobject2"></a>IDebugObject2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ IDebugObject2 : IDebugObject
  El evaluador de expresiones implementa esta interfaz para ofrecer compatibilidad con alias y el acceso a información sobre el objeto.  
   
 ## <a name="notes-for-callers"></a>Notas para los llamadores  
- Un [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) interfaz puede obtener esta interfaz mediante [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3). Además, [GetObject](../../../extensibility/debugger/reference/idebugalias-getobject.md) devuelve esta interfaz.  
+ Un [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) interfaz puede obtener esta interfaz mediante [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3). Además, [GetObject](../../../extensibility/debugger/reference/idebugalias-getobject.md) devuelve esta interfaz.  
   
 ## <a name="methods-in-vtable-order"></a>Métodos en orden de Vtable  
  Además de los métodos en el [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) interfaz, el `IDebugObject2` interfaz implementa lo siguiente:  

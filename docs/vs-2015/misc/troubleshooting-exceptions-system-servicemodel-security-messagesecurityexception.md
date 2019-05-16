@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6852b12e8a3cbc902770a2825d12697c12fc1760
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: db8c0c092ad8bc1435f939c862cf3fa7fc52179e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436547"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65689145"
 ---
 # <a name="troubleshooting-exceptions-systemservicemodelsecuritymessagesecurityexception"></a>Solucionar problemas de excepciones: System.ServiceModel.Security.MessageSecurityException
 Un <xref:System.ServiceModel.Security.MessageSecurityException> excepción se produce cuando [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] determina que un mensaje no se ha protegido correctamente o ha sido alterado. El error se produce con más frecuencia cuando se cumplen todas las condiciones siguientes:  
@@ -86,4 +86,4 @@ Un <xref:System.ServiceModel.Security.MessageSecurityException> excepción se pr
   
 ## <a name="see-also"></a>Vea también  
  <xref:System.ServiceModel.Security.MessageSecurityException>   
- [Utilice al Asistente de excepciones](http://msdn.microsoft.com/library/e0a78c50-7318-4d54-af51-40c00aea8711)
+ [Utilice al Asistente de excepciones](https://msdn.microsoft.com/library/e0a78c50-7318-4d54-af51-40c00aea8711)

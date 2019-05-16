@@ -11,17 +11,17 @@ ms.assetid: ffc89814-a7df-44fc-aef5-dd3dfeb28a9b
 caps.latest.revision: 49
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6c93851445ff5c2c85bdfd18bf3a23270fdbc4a6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6132da236498867865717ccc7d1f470e2b990a86
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445951"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695128"
 ---
 # <a name="unit-tests-for-generic-methods"></a>Pruebas unitarias para métodos genéricos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Puede generar pruebas unitarias para métodos genéricos exactamente como lo hace para otros métodos, como se describe en [Cómo: Crear y ejecutar una prueba unitaria](http://msdn.microsoft.com/5e0f43cf-5e51-48e2-9c98-0eb9324bdc48). Las secciones siguientes proporcionan información y ejemplos de creación de pruebas unitarias para métodos genéricos.  
+Puede generar pruebas unitarias para métodos genéricos exactamente como lo hace para otros métodos, como se describe en [Cómo: Crear y ejecutar una prueba unitaria](https://msdn.microsoft.com/5e0f43cf-5e51-48e2-9c98-0eb9324bdc48). Las secciones siguientes proporcionan información y ejemplos de creación de pruebas unitarias para métodos genéricos.  
   
 ## <a name="type-arguments-and-type-constraints"></a>Argumentos de tipo y restricciones de tipo  
  Cuando [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] genera una prueba unitaria para una clase genérica, como `MyList<T>`, genera dos métodos: un asistente genérico y un método de prueba. Si `MyList<T>` tiene una o más restricciones de tipo, el argumento de tipo debe cumplir todas las restricciones de tipo. Para asegurarse de que el código genérico en prueba funciona según lo esperado para todas las entradas permitidas, el método de prueba llama al método del asistente genérico con todas las restricciones que se desean probar.  
@@ -117,7 +117,7 @@ public void SizeOfLinkedListTest()
 ```  
   
 > [!NOTE]
-> Cada vez que se ejecuta la prueba SizeOfLinkedListTest, se llama dos veces a su método TestHelper. La instrucción Assert debe evaluarse como true todas las veces para que la prueba se supere. Si se produce un error en la prueba, es posible que no quede claro si fue la llamada que especificó `<int>` o la llamada que especificó `<char>` la que provocó el error. Para encontrar la respuesta, puede examinar la pila de llamadas o establecer puntos de interrupción en el método de prueba y luego depurar mientras se ejecuta la prueba. Para obtener más información, vea [Cómo: Depurar mientras se ejecuta una prueba en una solución ASP.NET](http://msdn.microsoft.com/library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b).  
+> Cada vez que se ejecuta la prueba SizeOfLinkedListTest, se llama dos veces a su método TestHelper. La instrucción Assert debe evaluarse como true todas las veces para que la prueba se supere. Si se produce un error en la prueba, es posible que no quede claro si fue la llamada que especificó `<int>` o la llamada que especificó `<char>` la que provocó el error. Para encontrar la respuesta, puede examinar la pila de llamadas o establecer puntos de interrupción en el método de prueba y luego depurar mientras se ejecuta la prueba. Para obtener más información, vea [Cómo: Depurar mientras se ejecuta una prueba en una solución ASP.NET](https://msdn.microsoft.com/library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b).  
   
 ### <a name="TypeConstraintNotSatisfied"></a> Ejemplo 2: Usar una restricción de tipo  
  En este ejemplo se muestra una prueba unitaria para un método genérico que usa una restricción de tipo que no se cumple. La primera sección muestra código del proyecto de código en prueba. Se resalta la restricción de tipo.  
@@ -198,5 +198,5 @@ namespace ClassLibrary2
 ```  
   
 ## <a name="see-also"></a>Vea también  
- [Anatomía de una prueba unitaria](http://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144)   
+ [Anatomía de una prueba unitaria](https://msdn.microsoft.com/a03d1ee7-9999-4e7c-85df-7d9073976144)   
  [Haga una prueba unitaria de su código](../test/unit-test-your-code.md)

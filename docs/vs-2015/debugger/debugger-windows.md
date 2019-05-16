@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fc52b883388640ef0e24478a08202bd2991375fc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 78a81b2392959b968e8905ae33a6f0751e73f2ff
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58998617"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686768"
 ---
 # <a name="debugger-windows"></a>Ventanas del depurador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,8 +33,8 @@ Puede abrir la mayoría de las ventanas del depurador mientras está depurando e
 |Inspección paralela|CTR:+MAYÚS+D, (1, 2, 3, 4)|[Uso de la ventana Pilas paralelas](../debugger/using-the-parallel-stacks-window.md)|  
 |Watch|CTRL+ALT+W, (1, 2, 3, 4)|[Ventanas Inspección e Inspección rápida](../debugger/watch-and-quickwatch-windows.md)|  
 |Inspección rápida|MAYÚS+F9|[Ventanas Inspección e Inspección rápida](../debugger/watch-and-quickwatch-windows.md)|  
-|Automático|CTRL+ALT+V, A|[Ventanas de variables](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)|  
-|Locals|CTRL+ALT+V, L|[Ventanas de variables](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)|  
+|Automático|CTRL+ALT+V, A|[Ventanas de variables](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)|  
+|Locals|CTRL+ALT+V, L|[Ventanas de variables](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)|  
 |Inmediato|CTRL+ALT+I|[Ventana Inmediato](../ide/reference/immediate-window.md)|  
 |Depuración de Python interactiva|MAYÚS+ALT+I|[Introducción a PTVS: Python interactivo](../python/getting-started-with-ptvs-interactive-python.md)|  
 |Consola de JavaScript|CTRL+ALT+V, C|[Inicio rápido: Depuración de JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)|  

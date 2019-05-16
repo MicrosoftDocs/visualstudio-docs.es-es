@@ -10,12 +10,12 @@ ms.assetid: 43341928-9930-48cf-a57f-ddcc3984b787
 caps.latest.revision: 9
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e78cefa9778e2889130f865e4c61cc8a97014db7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 885f96a4e1e43fe422c6fd9cfaa414fe5871bce1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444657"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688572"
 ---
 # <a name="analyze-net-framework-memory-issues"></a>Analizar problemas de memoria de .NET Framework
 Use el analizador de memoria administrada de Visual Studio para detectar pérdidas de memoria o un uso ineficaz de esta en el código de .NET Framework. La versión mínima de .NET Framework del código de destino es .NET Framework 4.5.  
@@ -47,7 +47,7 @@ Use el analizador de memoria administrada de Visual Studio para detectar pérdid
  ![Volver al principio](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contenido](#BKMK_Contents)  
   
 ## <a name="BKMK_Identify_a_memory_issue_in_an_app"></a> Identificar un problema de memoria en una aplicación  
- El síntoma más visible de los problemas de memoria es el rendimiento de la aplicación, especialmente si empeora con el tiempo. La degradación del rendimiento de otras aplicaciones mientras se ejecuta la aplicación también puede indicar un problema de memoria. Si sospecha que un problema de memoria, use una herramienta como el Administrador de tareas o [Monitor de rendimiento de Windows](http://technet.microsoft.com/library/cc749249.aspx) para investigar en profundidad. Por ejemplo, busque un incremento del tamaño total de la memoria que no se pueda explicar como posible origen de pérdidas de memoria:  
+ El síntoma más visible de los problemas de memoria es el rendimiento de la aplicación, especialmente si empeora con el tiempo. La degradación del rendimiento de otras aplicaciones mientras se ejecuta la aplicación también puede indicar un problema de memoria. Si sospecha que un problema de memoria, use una herramienta como el Administrador de tareas o [Monitor de rendimiento de Windows](https://technet.microsoft.com/library/cc749249.aspx) para investigar en profundidad. Por ejemplo, busque un incremento del tamaño total de la memoria que no se pueda explicar como posible origen de pérdidas de memoria:  
   
  ![Crecimiento de memoria coherente en el Monitor de recursos](../misc/media/mngdmem-resourcemanagerconsistentgrowth.png "MNGDMEM_ResourceManagerConsistentGrowth")  
   
@@ -56,7 +56,7 @@ Use el analizador de memoria administrada de Visual Studio para detectar pérdid
  ![Los picos de memoria en el Administrador de recursos](../misc/media/mngdmem-resourcemanagerspikes.png "MNGDMEM_ResourceManagerSpikes")  
   
 ## <a name="BKMK_Collect_memory_snapshots"></a> Recopilar instantáneas de memoria  
- La herramienta de análisis de memoria analiza la información de *los archivos de volcado* que contienen información del montón. Puede crear archivos de volcado en Visual Studio, o puede usar una herramienta como [ProcDump](http://technet.microsoft.com/sysinternals/dd996900.aspx) desde [Windows Sysinternals](http://technet.microsoft.com/sysinternals). Consulte [¿qué es un volcado de memoria, y cómo se crea uno?](http://blogs.msdn.com/b/debugger/archive/2009/12/30/what-is-a-dump-and-how-do-i-create-one.aspx) en el blog del equipo del depurador de Visual Studio.  
+ La herramienta de análisis de memoria analiza la información de *los archivos de volcado* que contienen información del montón. Puede crear archivos de volcado en Visual Studio, o puede usar una herramienta como [ProcDump](https://technet.microsoft.com/sysinternals/dd996900.aspx) desde [Windows Sysinternals](https://technet.microsoft.com/sysinternals). Consulte [¿qué es un volcado de memoria, y cómo se crea uno?](http://blogs.msdn.com/b/debugger/archive/2009/12/30/what-is-a-dump-and-how-do-i-create-one.aspx) en el blog del equipo del depurador de Visual Studio.  
   
 > [!NOTE]
 > La mayoría de las herramientas pueden recopilar información de volcado de memoria con o sin datos completos de memoria del montón. El analizador de memoria de Visual Studio requiere información completa del montón.  

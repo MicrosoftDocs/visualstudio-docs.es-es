@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32ed328cb399f0cd3e9a2a147d29fad56b845399
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 696e6bd46c17054494be2ea0e0f2a1af4fd703d7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63387695"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675485"
 ---
 # <a name="rule-sets-for-roslyn-analyzers"></a>Conjuntos de reglas para los analizadores de Roslyn
 
@@ -25,11 +25,28 @@ Si está migrando de análisis de código estático de "FxCop" heredado para los
 
 ## <a name="use-analyzer-rule-sets"></a>Usar conjuntos de reglas del analizador
 
-Después de [instalar un paquete de NuGet analizador](install-roslyn-analyzers.md), busque la regla predefinida que se establece su *rulesets* directory. Por ejemplo, si hace referencia a la `Microsoft.CodeAnalysis.FxCopAnalyzers` analizador de paquetes, a continuación, puede encontrar su directorio de conjuntos de reglas en *% USERPROFILE %\\.nuget\packages\microsoft.codeanalysis.fxcopanalyzers\\\<versión \>\rulesets*. Desde allí, se puede arrastrar y colocar, o copiar y pegar, uno o varios de los conjuntos de reglas para el proyecto de Visual Studio en **el Explorador de soluciones**.
+Después de [instalar un paquete de NuGet analizador](install-roslyn-analyzers.md), busque la regla predefinida que se establece su *rulesets* directory. Por ejemplo, si hace referencia a la `Microsoft.CodeAnalysis.FxCopAnalyzers` paquete de analizadores, a continuación, se puede encontrar su *rulesets* directorio en *% USERPROFILE %\\.nuget\packages\microsoft.codeanalysis.fxcopanalyzers\\ \<versión\>\rulesets*. Desde allí, copiar uno o varios de los conjuntos de reglas y péguelos en el directorio que contiene el proyecto de Visual Studio o directamente en **el Explorador de soluciones**.
 
-Para crear una regla de establecer la regla activa establecida para el análisis, haga doble clic en el proyecto en **el Explorador de soluciones** y elija **propiedades**. En las páginas de propiedades del proyecto, seleccione el **análisis de código** ficha. En **ejecutar este conjunto de reglas**, seleccione **examinar**y, a continuación, seleccione el conjunto de reglas que copió en el directorio del proyecto. Ahora verá solo las infracciones de reglas para aquellas reglas que están habilitadas en el conjunto de reglas seleccionado.
+También puede [personalizar un conjunto de reglas predefinidas](how-to-create-a-custom-rule-set.md) según sus preferencias. Por ejemplo, puede cambiar la gravedad de una o varias reglas para que aparezcan las infracciones como errores o advertencias en el **lista de errores**.
 
-También puede [personalizar un conjunto de reglas predefinidas](how-to-create-a-custom-rule-set.md#create-a-custom-rule-set) según sus preferencias. Por ejemplo, puede cambiar la gravedad de una o varias reglas para que aparezcan las infracciones como errores o advertencias en el **lista de errores**.
+## <a name="set-the-active-rule-set"></a>Establecer el conjunto de reglas activo
+
+El proceso para establecer el conjunto de reglas activo es ligeramente diferente dependiendo de si tiene un proyecto de .NET Core/.NET Standard o .NET Framework.
+
+### <a name="net-core"></a>Núcleo de .NET
+
+Para crear una regla de establecer la regla activa establecida para el análisis en los proyectos de .NET Core o .NET Standard, agregar manualmente el **CodeAnalysisRuleSet** propiedad al archivo de proyecto. Por ejemplo, el código siguiente fragmento de código establece `HelloWorld.ruleset` como la regla active establecido.
+
+```xml
+<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+  ...
+  <CodeAnalysisRuleSet>HelloWorld.ruleset</CodeAnalysisRuleSet>
+</PropertyGroup>
+```
+
+### <a name="net-framework"></a>.NET Framework
+
+Para crear una regla de establecer la regla activa establecida para el análisis en los proyectos de .NET Framework, haga doble clic en el proyecto en **el Explorador de soluciones** y elija **propiedades**. En las páginas de propiedades del proyecto, seleccione el **análisis de código** ficha. En **ejecutar este conjunto de reglas**, seleccione **examinar**y, a continuación, seleccione el conjunto de reglas que copió en el directorio del proyecto. Ahora verá solo las infracciones de reglas para aquellas reglas que están habilitadas en el conjunto de reglas seleccionado.
 
 ## <a name="available-rule-sets"></a>Conjuntos de reglas disponibles
 

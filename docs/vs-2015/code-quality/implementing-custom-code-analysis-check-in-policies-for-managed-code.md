@@ -13,12 +13,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 91f81036345e647820353911356c01b7c4caff99
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f0b22eabc4df4b6ce7e8596f0c6546cb3a4c61c8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63426550"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696656"
 ---
 # <a name="implementing-custom-code-analysis-check-in-policies-for-managed-code"></a>Implementar directivas de protección de análisis de código personalizadas para el código administrado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Un directiva de protección especifica un conjunto de reglas que los miembros de
  Para crear una regla personalizada establecido para un proyecto de equipo, primero se crea una carpeta especial para la regla de directiva de protección se establece **Explorador de Control de código fuente**. A continuación, cree el archivo de conjunto de reglas y agregue el archivo al control de versiones. Por último, especifique el conjunto de reglas como la directiva de comprobación del análisis de código del proyecto de equipo.  
   
 > [!NOTE]
-> Para crear una carpeta en un proyecto de equipo, primero debe asignar la raíz del proyecto de equipo a una ubicación en el equipo local. Para obtener más información, consulte [crear y trabajar con áreas de trabajo (antiguo)](http://msdn.microsoft.com/db4d5692-179a-44fe-ad31-0c1c900c9cb2).  
+> Para crear una carpeta en un proyecto de equipo, primero debe asignar la raíz del proyecto de equipo a una ubicación en el equipo local. Para obtener más información, consulte [crear y trabajar con áreas de trabajo (antiguo)](https://msdn.microsoft.com/db4d5692-179a-44fe-ad31-0c1c900c9cb2).  
   
 #### <a name="to-create-the-version-control-folder-for-the-check-in-policy-rule-set"></a>Para crear la carpeta de control de versiones para el conjunto de reglas de directiva de protección  
   
@@ -61,7 +61,7 @@ Un directiva de protección especifica un conjunto de reglas que los miembros de
   
 1. En **Explorador de Control de código fuente**, haga clic en la nueva carpeta y, a continuación, haga clic en **agregar elementos a la carpeta**.  
   
-     Para obtener más información, consulte [usar control de versiones](http://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314).  
+     Para obtener más información, consulte [usar control de versiones](https://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314).  
   
 2. Haga clic en la regla establece el archivo que ha creado y, a continuación, haga clic en **finalizar**.  
   
