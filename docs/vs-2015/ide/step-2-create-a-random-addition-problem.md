@@ -9,12 +9,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 07e5c91038013f51199212a3215490bbfdf34257
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b36897236b71617c6eb36949d307e6b3e1d0204b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442623"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693971"
 ---
 # <a name="step-2-create-a-random-addition-problem"></a>Paso 2: creación de un problema de suma aleatoria
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ En la segunda parte del tutorial, agregará problemas de matemáticas basados en
   
      `Random` se denomina objeto. Probablemente habrá oído esta palabra antes. Obtendrá más información sobre lo que significa en programación en el siguiente tutorial. De momento, solo tiene que recordar que puede utilizar las instrucciones `new` para crear botones, etiquetas, paneles, controles OpenFileDialog, ColorDialog, SoundPlayer y Random e incluso formularios, y que estos elementos se denominan objetos. Cuando se ejecute el programa, se iniciará el formulario y el código subyacente creará un objeto `Random`, que denominará **randomizer**.  
   
-     Pronto compilaremos un método para comprobar las respuestas, de modo que la prueba debe utilizar variables para almacenar los números aleatorios que genera para cada problema. Vea [Variables en Visual Basic](http://msdn.microsoft.com/library/4cfaa06d-4ae3-4307-897b-cf599dc24caa) o [Tipos (Guía de programación de C#)](http://msdn.microsoft.com/library/f782d7cc-035e-4500-b1b1-36a9881130ad). Para utilizar correctamente las variables, debe declararlas, lo que significa que debe enumerar sus nombres y tipos de datos.  
+     Pronto compilaremos un método para comprobar las respuestas, de modo que la prueba debe utilizar variables para almacenar los números aleatorios que genera para cada problema. Vea [Variables en Visual Basic](https://msdn.microsoft.com/library/4cfaa06d-4ae3-4307-897b-cf599dc24caa) o [Tipos (Guía de programación de C#)](https://msdn.microsoft.com/library/f782d7cc-035e-4500-b1b1-36a9881130ad). Para utilizar correctamente las variables, debe declararlas, lo que significa que debe enumerar sus nombres y tipos de datos.  
   
 4. Agregue dos variables de entero al formulario y asígneles los nombres **addend1** y **addend2**.  
   

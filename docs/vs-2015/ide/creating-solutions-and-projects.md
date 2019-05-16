@@ -18,12 +18,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7fd6d8c63d8b0b56af20ac1211802524336d06bc
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 91b8edcd371a5623d09334948e1db2889f60ae11
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437574"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701143"
 ---
 # <a name="creating-solutions-and-projects"></a>Creating Solutions and Projects
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "63437574"
 Los proyectos son los contenedores lógicos de todo lo necesario para compilar la aplicación. Cuando se crea un proyecto eligiendo **Archivo &#124; Nuevo &#124; Proyecto** desde el menú principal, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] crea una solución que lo contiene. Después puede agregar otros proyectos nuevos o existentes a la solución si fuese necesario. Puede crear proyectos a partir de archivos de código existentes, así como proyectos temporales (solo .NET) que se eliminarán cuando ya no los necesite.  
   
 > [!NOTE]
-> Las descripciones de este tema se basan en Visual Studio Community. Los cuadros de diálogo y los comandos de menú que se ven pueden diferir de los aquí descritos, en función de la configuración o la edición de Visual Studio. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Las descripciones de este tema se basan en Visual Studio Community. Los cuadros de diálogo y los comandos de menú que se ven pueden diferir de los aquí descritos, en función de la configuración o la edición de Visual Studio. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="create-a-project-from-an-installed-project-template"></a>Crear un proyecto a partir de una plantilla de proyecto instalada  
  **Archivo &#124; Nuevo &#124; Proyecto** en el menú principal para que aparezca el cuadro de diálogo Nuevo proyecto. En el panel izquierdo en **Instalado &#124; Plantillas**, elija el lenguaje de programación y la plataforma o la tecnología y, después, elija una de las plantillas disponibles en el panel central.  
@@ -95,4 +95,4 @@ Los proyectos son los contenedores lógicos de todo lo necesario para compilar l
   
 ## <a name="see-also"></a>Vea también  
  [Soluciones y proyectos](../ide/solutions-and-projects-in-visual-studio.md)   
- [Cómo: Crear soluciones de varios proyectos](http://msdn.microsoft.com/02ecd6dd-0114-46fe-b335-ba9c5e3020d6)
+ [Cómo: Crear soluciones de varios proyectos](https://msdn.microsoft.com/02ecd6dd-0114-46fe-b335-ba9c5e3020d6)

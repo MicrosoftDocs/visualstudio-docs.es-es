@@ -12,12 +12,12 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a815a7ee13b415220c41189b6b060d893e8ef8e8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a1d3d9ca1af5e2c96c497e6c677051c587047097
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435143"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695378"
 ---
 # <a name="how-to-target-a-version-of-the-net-framework"></a>Procedimiento Usar una versión de .NET Framework como destino
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "63435143"
 En este documento se describe cómo se crea un proyecto que tiene como destino una versión de .NET Framework y cómo se modifica la versión de destino en un proyecto de Visual Basic, Visual C# o Visual F# existente.  
   
 > [!IMPORTANT]
-> Para obtener información sobre cómo cambiar la versión de destino para los proyectos de C++, vea [Cómo: para modificar la plataforma de destino y el conjunto de herramientas de la plataforma](http://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe).  
+> Para obtener información sobre cómo cambiar la versión de destino para los proyectos de C++, vea [Cómo: para modificar la plataforma de destino y el conjunto de herramientas de la plataforma](https://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe).  
   
  **En este tema**  
   
@@ -62,7 +62,7 @@ En este documento se describe cómo se crea un proyecto que tiene como destino u
      ![Propiedades del Explorador de soluciones de Visual Studio](../ide/media/vs-slnexplorer-properties.png "vs_slnExplorer_Properties")  
   
     > [!IMPORTANT]
-    > Para obtener información sobre cómo cambiar la versión de destino para los proyectos de C++, vea [Cómo: para modificar la plataforma de destino y el conjunto de herramientas de la plataforma](http://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe).  
+    > Para obtener información sobre cómo cambiar la versión de destino para los proyectos de C++, vea [Cómo: para modificar la plataforma de destino y el conjunto de herramientas de la plataforma](https://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe).  
   
 2. En la columna izquierda de la ventana Propiedades, elija la pestaña **Aplicación**.  
   
@@ -82,9 +82,9 @@ En este documento se describe cómo se crea un proyecto que tiene como destino u
   
 ## <a name="see-also"></a>Vea también  
  [Información general sobre la compatibilidad con múltiples versiones (multi-targeting) en Visual Studio](../ide/visual-studio-multi-targeting-overview.md)   
- [Especificar una versión de .NET Framework para sitios web](http://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76)   
+ [Especificar una versión de .NET Framework para sitios web](https://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76)   
  [Solucionar problemas de versión de .NET Framework de destino](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md)   
  [Página de aplicación, Diseñador de proyectos (C#)](../ide/reference/application-page-project-designer-csharp.md)   
  [Página de aplicación, Diseñador de proyectos (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)   
- [Configurar proyectos](http://msdn.microsoft.com/library/a1489abb-6294-4f8f-b71f-2cb126393526)   
- [Cómo: Modificar la plataforma de destino y el conjunto de herramientas de la plataforma](http://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)
+ [Configurar proyectos](https://msdn.microsoft.com/library/a1489abb-6294-4f8f-b71f-2cb126393526)   
+ [Cómo: Modificar la plataforma de destino y el conjunto de herramientas de la plataforma](https://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)

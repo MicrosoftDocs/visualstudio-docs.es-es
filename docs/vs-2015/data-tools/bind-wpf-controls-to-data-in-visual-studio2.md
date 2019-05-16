@@ -22,12 +22,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5c1733d6d4e60aad10896dbd2fcad16406830b83
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e37d17cbe67bd1e4e64e306831f38996a7f93c80
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437040"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697959"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Enlace de controles de WPF a datos en Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,7 +58,7 @@ Puede crear enlazados a datos [!INCLUDE[TLA#tla_titlewinclient](../includes/tlas
 
 #### <a name="to-create-a-control-that-is-bound-to-a-single-field-of-data"></a>Para crear un control enlazado a un único campo de datos
 
-1. En el **orígenes de datos** ventana, expanda un elemento que representa una tabla o un objeto. Busque el elemento secundario que represente la columna o propiedad de destino del enlace. Para obtener un ejemplo visual, consulte [ventana Orígenes de datos](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992).
+1. En el **orígenes de datos** ventana, expanda un elemento que representa una tabla o un objeto. Busque el elemento secundario que represente la columna o propiedad de destino del enlace. Para obtener un ejemplo visual, consulte [ventana Orígenes de datos](https://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992).
 
 2. Opcionalmente, seleccione el control que desee crear. Cada elemento de la **orígenes de datos** ventana tiene un control predeterminado que se crea al arrastrar el elemento hasta el diseñador. El control predeterminado depende del tipo de datos subyacente del elemento.
 
@@ -73,7 +73,7 @@ Puede crear enlazados a datos [!INCLUDE[TLA#tla_titlewinclient](../includes/tlas
 
 #### <a name="to-create-a-control-that-is-bound-to-multiple-fields-of-data"></a>Para crear un control enlazado a varios campos de datos
 
-1. En el **orígenes de datos** ventana, seleccione un elemento que representa una tabla u objeto. Para obtener un ejemplo visual, consulte [ventana Orígenes de datos](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992).
+1. En el **orígenes de datos** ventana, seleccione un elemento que representa una tabla u objeto. Para obtener un ejemplo visual, consulte [ventana Orígenes de datos](https://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992).
 
 2. Opcionalmente, seleccione el control que desee crear. De forma predeterminada, cada elemento en el **orígenes de datos** ventana que representa una tabla de datos o un objeto se establece para crear un <xref:System.Windows.Controls.DataGrid> (si el proyecto tiene como destino .NET Framework 4) o <xref:System.Windows.Controls.ListView> (para versiones anteriores de .NET Framework).
 
@@ -91,7 +91,7 @@ Puede crear enlazados a datos [!INCLUDE[TLA#tla_titlewinclient](../includes/tlas
 
 #### <a name="to-create-a-set-of-controls-that-are-bound-to-multiple-fields-of-data"></a>Para crear un conjunto de controles enlazados a varios campos de datos
 
-1. En el **orígenes de datos** ventana, seleccione un elemento que representa una tabla u objeto. Para obtener un ejemplo visual, consulte [ventana Orígenes de datos](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992).
+1. En el **orígenes de datos** ventana, seleccione un elemento que representa una tabla u objeto. Para obtener un ejemplo visual, consulte [ventana Orígenes de datos](https://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992).
 
 2. Haga clic en la flecha desplegable junto al elemento y seleccione **detalles**.
 

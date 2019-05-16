@@ -21,12 +21,12 @@ caps.latest.revision: 41
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 689d01c7e22cca430693a85e6dedcc7706fda41d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: fd2c7bf67b5c2e7f25b4193462883b53cda8db87
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437699"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65700106"
 ---
 # <a name="view-data-values-in-data-tips--in-the-code-editor"></a>Ver valores de datos en sugerencias de datos en el editor de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -143,6 +143,6 @@ La Información sobre datos es una manera útil de ver información sobre las va
   
 ## <a name="see-also"></a>Vea también  
  [Ver datos en el depurador](../debugger/viewing-data-in-the-debugger.md)   
- [Cómo: Utilice el cuadro de diálogo Inspección rápida](http://msdn.microsoft.com/library/ffaee1dd-e5ce-4ef2-9401-d28329398867)   
+ [Cómo: Utilice el cuadro de diálogo Inspección rápida](https://msdn.microsoft.com/library/ffaee1dd-e5ce-4ef2-9401-d28329398867)   
  [Creación de visualizadores personalizados](../debugger/create-custom-visualizers-of-data.md)   
- [Cómo: Cambiar el formato numérico de Windows del depurador](http://msdn.microsoft.com/library/cd593847-a625-411d-a430-b798346ef18f)
+ [Cómo: Cambiar el formato numérico de Windows del depurador](https://msdn.microsoft.com/library/cd593847-a625-411d-a430-b798346ef18f)

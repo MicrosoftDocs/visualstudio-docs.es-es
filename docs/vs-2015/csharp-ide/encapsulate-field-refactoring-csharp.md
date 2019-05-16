@@ -16,21 +16,21 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a2c8d54b1625a4097d6b5a0acf6555d74fe83001
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 0e2ad3b2d89db83d3b9fa38438abdbde61e72bfe
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116607"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65681386"
 ---
 # <a name="encapsulate-field-refactoring-c"></a>Encapsular campo (Refactorización, C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 El **encapsular campo** operación de refactorización le permite crear rápidamente una propiedad de un campo existente y, a continuación, actualizar sin problemas el código con referencias a la nueva propiedad.  
   
- Cuando un [campo](http://msdn.microsoft.com/library/3cbb2f61-75f8-4cce-b4ef-f5d1b3de0db7) es [pública](http://msdn.microsoft.com/library/0ae45d16-a551-4b74-9845-57208de1328e), otros objetos tendrán acceso directo a ese campo y puede modificarlo, sin ser detectados por el objeto que posee el campo. Mediante el uso de [propiedades](http://msdn.microsoft.com/library/e295a8a2-b357-4ee7-a12e-385a44146fa8) que encapsulen ese campo, se puede deshabilitar el acceso directo a los campos.  
+ Cuando un [campo](https://msdn.microsoft.com/library/3cbb2f61-75f8-4cce-b4ef-f5d1b3de0db7) es [pública](https://msdn.microsoft.com/library/0ae45d16-a551-4b74-9845-57208de1328e), otros objetos tendrán acceso directo a ese campo y puede modificarlo, sin ser detectados por el objeto que posee el campo. Mediante el uso de [propiedades](https://msdn.microsoft.com/library/e295a8a2-b357-4ee7-a12e-385a44146fa8) que encapsulen ese campo, se puede deshabilitar el acceso directo a los campos.  
   
- Para crear la nueva propiedad, el **encapsular campo** operación cambia el modificador de acceso para el campo que desea encapsular a [privada](http://msdn.microsoft.com/library/654c0bb8-e6ac-4086-bf96-7474fa6aa1c8)y, a continuación, genera [obtener](http://msdn.microsoft.com/library/a52de048-fbe0-41b0-82ec-8e4ac04d3a71)y [establecer](http://msdn.microsoft.com/library/30d7e4e5-cc2e-4635-a597-14a724879619) descriptores de acceso para ese campo. En algunos casos solo se genera un descriptor de acceso `get`, como cuando el campo se declara de solo lectura.  
+ Para crear la nueva propiedad, el **encapsular campo** operación cambia el modificador de acceso para el campo que desea encapsular a [privada](https://msdn.microsoft.com/library/654c0bb8-e6ac-4086-bf96-7474fa6aa1c8)y, a continuación, genera [obtener](https://msdn.microsoft.com/library/a52de048-fbe0-41b0-82ec-8e4ac04d3a71)y [establecer](https://msdn.microsoft.com/library/30d7e4e5-cc2e-4635-a597-14a724879619) descriptores de acceso para ese campo. En algunos casos solo se genera un descriptor de acceso `get`, como cuando el campo se declara de solo lectura.  
   
  El motor de refactorización actualiza el código con referencias a la nueva propiedad en las áreas especificadas en el **actualizar referencias** sección de la **encapsular campo** cuadro de diálogo.  
   

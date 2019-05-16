@@ -14,12 +14,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e342ec8438aeac6acd149ed93e8ce8a281a63323
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d51801c1be56504fa4bf4ed2046d463db0e99aae
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58997940"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701501"
 ---
 # <a name="properties-of-image-shapes"></a>Propiedades de las formas de imagen
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ Puede usar formas de imagen para especificar cómo aparecen las clases de domini
   
   Las formas de imagen tienen las propiedades que aparecen en la tabla siguiente.  
   
-|Property|Descripción|Default|  
+|Propiedad|Descripción|Default|  
 |--------------|-----------------|-------------|  
 |Color de relleno|El color de relleno de esta forma.|Blanco|  
 |Modo de degradado de relleno|El modo de degradado de relleno de esta forma.|Horizontal|  
@@ -75,4 +75,4 @@ Puede usar formas de imagen para especificar cómo aparecen las clases de domini
 |Imagen|La ruta de acceso al archivo de imagen que se usa para esta forma.|\<none>|  
   
 ## <a name="see-also"></a>Vea también  
- [Glosario de las Herramientas del lenguaje específico de dominio](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Glosario de las Herramientas del lenguaje específico de dominio](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

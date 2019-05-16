@@ -19,12 +19,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cdfcb6bb07f167ea1da81101ae00613a5b2fac93
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7aca98a97919a741f43c3c746d96fc8e89cb9ea6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440962"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674210"
 ---
 # <a name="link-model-elements-and-work-items"></a>Vincular elementos de modelo con elementos de trabajo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -140,7 +140,7 @@ Para realizar el seguimiento de tareas, casos de prueba, errores, requisitos, pr
 1. En **Team Explorer**, asegúrese de que esté conectado al proyecto de equipo en el que están vinculados los elementos de modelo al elemento de trabajo.  
   
     > [!NOTE]
-    > Puede utilizar Team Explorer, no Team Web Access, para ver los elementos del modelo vinculados. Asegúrese de que el área de trabajo está asignada al proyecto de modelado que contiene los diagramas o elementos de modelado. Si no cuenta con un área de trabajo, debe crearla. Consulte [Solución de problemas](#Troubleshooting) y [Crear y trabajar con áreas de trabajo](http://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a).  
+    > Puede utilizar Team Explorer, no Team Web Access, para ver los elementos del modelo vinculados. Asegúrese de que el área de trabajo está asignada al proyecto de modelado que contiene los diagramas o elementos de modelado. Si no cuenta con un área de trabajo, debe crearla. Consulte [Solución de problemas](#Troubleshooting) y [Crear y trabajar con áreas de trabajo](https://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a).  
   
 2. Abra el elemento de trabajo y elija **Vínculos**. En **Vínculo de modelo**, abra el menú contextual del elemento de modelo vinculado. Elija **Abrir elemento vinculado**.  
   
@@ -168,7 +168,7 @@ Para realizar el seguimiento de tareas, casos de prueba, errores, requisitos, pr
   
 |**Problema**|**Causa posible**|**Resolución**|  
 |---------------|------------------------|--------------------|  
-|No se encuentra el elemento de modelo que desea vincular.|El elemento podría estar en un diagrama de un proyecto de modelado que se encuentra en [!INCLUDE[esprscc](../includes/esprscc-md.md)]. Podría no tener ningún área de trabajo asignada al diagrama.|Asigne el área de trabajo al proyecto de modelado y al diagrama. Si no cuenta con un área de trabajo, debe crearla.<br /><br /> El mensaje de error que aparece para este problema contiene la ruta de acceso que puede usar para asignar el área de trabajo.<br /><br /> Consulte [Crear y trabajar con áreas de trabajo](http://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a).|  
+|No se encuentra el elemento de modelo que desea vincular.|El elemento podría estar en un diagrama de un proyecto de modelado que se encuentra en [!INCLUDE[esprscc](../includes/esprscc-md.md)]. Podría no tener ningún área de trabajo asignada al diagrama.|Asigne el área de trabajo al proyecto de modelado y al diagrama. Si no cuenta con un área de trabajo, debe crearla.<br /><br /> El mensaje de error que aparece para este problema contiene la ruta de acceso que puede usar para asignar el área de trabajo.<br /><br /> Consulte [Crear y trabajar con áreas de trabajo](https://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a).|  
 |No se encuentra el elemento de modelo vinculado.|El elemento vinculado podría estar en un diagrama que se ha movido o eliminado, o cuyo nombre ha cambiado.|1.  En el elemento de trabajo, elimine el vínculo al elemento de modelo.<br />2.  Cree un nuevo vínculo a partir del elemento de trabajo al elemento de modelo.|  
 |El elemento de trabajo no tiene los elementos de modelo vinculados que esperaba.|Un elemento de trabajo muestra un elemento de capa vinculado solo si el vínculo se creó desde el elemento de trabajo. Si su equipo no usa [!INCLUDE[esprscc](../includes/esprscc-md.md)], se usará la ruta de acceso local de los diagramas para crear los vínculos. Si el proyecto de modelado y sus diagramas están en [!INCLUDE[esprscc](../includes/esprscc-md.md)], todos los miembros del equipo que tengan acceso al proyecto pueden ver los elementos vinculados en los elementos de trabajo.|Intente actualizar el elemento de trabajo.|  
 |Al eliminar un vínculo a un elemento de modelo desde un elemento de trabajo, el vínculo del elemento de modelo al elemento de trabajo no se elimina.||Elimine el vínculo al elemento de trabajo a partir del elemento de modelo.|  

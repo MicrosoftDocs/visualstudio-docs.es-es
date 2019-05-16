@@ -8,12 +8,12 @@ ms.assetid: 4f4b5f10-7314-4725-8c6e-e72f52eff918
 caps.latest.revision: 16
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d532234e50177222c3165638c0d77a8bd7c1b142
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d238b5923c6f1377ec68717c8ed658bc74fe8e6a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437972"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695287"
 ---
 # <a name="writing-unit-tests-for-cc-with-the-microsoft-unit-testing-framework-for-c"></a>Escribir pruebas unitarias para C/C++ con el Framework de pruebas unitarias de Microsoft para C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ En Visual Studio puede crear pruebas unitarias para código no administrado escr
   
     - Use `#include` para agregar un archivo `.h` que contiene declaraciones de las funciones del archivo DLL accesibles externamente.  
   
-         El archivo `.h` debería contener declaraciones de función marcadas con `_declspec(dllimport)`. Como alternativa, puede exportar los métodos mediante un archivo DEF. Para obtener más información, consulte [Importar y exportar](http://msdn.microsoft.com/library/7c44c2aa-2117-4cec-9615-a65bfd3f8f7b).  
+         El archivo `.h` debería contener declaraciones de función marcadas con `_declspec(dllimport)`. Como alternativa, puede exportar los métodos mediante un archivo DEF. Para obtener más información, consulte [Importar y exportar](https://msdn.microsoft.com/library/7c44c2aa-2117-4cec-9615-a65bfd3f8f7b).  
   
          Las pruebas unitarias pueden acceder solo a las funciones que se exportan desde la DLL de prueba.  
   
@@ -168,7 +168,7 @@ En Visual Studio puede crear pruebas unitarias para código no administrado escr
   
      ![Nuevo proyecto de código DLL y archivo .h con macros de API](../test/media/utecpp07.png "UteCpp07")  
   
-     El declarador `__declspec(dllexport)` hace que los miembros públicos y protegidos de la clase sean visibles fuera del archivo DLL. Para obtener más información, consulta [Using dllimport and dllexport in C++ Classes](http://msdn.microsoft.com/library/8d7d1303-b9e9-47ca-96cc-67bf444a08a9).  
+     El declarador `__declspec(dllexport)` hace que los miembros públicos y protegidos de la clase sean visibles fuera del archivo DLL. Para obtener más información, consulta [Using dllimport and dllexport in C++ Classes](https://msdn.microsoft.com/library/8d7d1303-b9e9-47ca-96cc-67bf444a08a9).  
   
 4. En el archivo .cpp principal, agregue un cuerpo mínimo para la función:  
   
@@ -395,7 +395,7 @@ En Visual Studio puede crear pruebas unitarias para código no administrado escr
 ## <a name="see-also"></a>Vea también  
  [Agregar pruebas unitarias a aplicaciones C++ existentes](../test/unit-testing-existing-cpp-applications-with-test-explorer.md)   
  [Usar Microsoft.VisualStudio.TestTools.CppUnitTestFramework](../test/using-microsoft-visualstudio-testtools-cppunittestframework.md)   
- [Información general sobre la interoperabilidad de código administrado y no administrado](http://msdn.microsoft.com/library/ms973872.aspx)   
+ [Información general sobre la interoperabilidad de código administrado y no administrado](https://msdn.microsoft.com/library/ms973872.aspx)   
  [Depuración de código nativo](../debugger/debugging-native-code.md)   
- [Tutorial: Crear y utilizar una biblioteca de vínculos dinámicos (C++)](http://msdn.microsoft.com/library/3ae94848-44e7-4955-bbad-7d40f493e941)   
- [Importar y exportar](http://msdn.microsoft.com/library/7c44c2aa-2117-4cec-9615-a65bfd3f8f7b)
+ [Tutorial: Crear y utilizar una biblioteca de vínculos dinámicos (C++)](https://msdn.microsoft.com/library/3ae94848-44e7-4955-bbad-7d40f493e941)   
+ [Importar y exportar](https://msdn.microsoft.com/library/7c44c2aa-2117-4cec-9615-a65bfd3f8f7b)

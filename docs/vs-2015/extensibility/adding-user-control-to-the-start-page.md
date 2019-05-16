@@ -12,12 +12,12 @@ ms.assetid: 5b7997db-af6f-4fa9-a128-bceb42bddaf1
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 48f079d29fee5587617f95791bc6de7148741735
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 1171197ba55c2fe3fa59ccc9ca918fa0c8f9e727
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069394"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699125"
 ---
 # <a name="adding-user-control-to-the-start-page"></a>Adición de control de usuario a la página de inicio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -187,5 +187,5 @@ Este tutorial muestra cómo agregar una referencia de archivo DLL a una página 
      Debe mostrarse la página de inicio personalizada. Si desea cambiar todos los archivos, debe cerrar la instancia experimental, realice los cambios, copie y pegue los archivos modificados y, a continuación, vuelva a abrir la instancia experimental para ver los cambios.  
   
 ## <a name="see-also"></a>Vea también  
- [Controles de contenedor WPF](http://msdn.microsoft.com/a0177167-d7db-4205-9607-8ae316952566)   
- [Tutorial: Adición de XAML personalizado a la página de inicio](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)
+ [Controles de contenedor WPF](https://msdn.microsoft.com/a0177167-d7db-4205-9607-8ae316952566)   
+ [Tutorial: Agregar XAML personalizado a la página de inicio](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)

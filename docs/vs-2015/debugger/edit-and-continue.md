@@ -23,12 +23,12 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 73865d68c191d1287c1cf8a33095259bd9d659ac
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4d5b10d3e40d889ffa9e7743d65de487c2d823cf
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58987858"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698727"
 ---
 # <a name="edit-and-continue"></a>Editar y continuar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,13 +37,13 @@ Editar y continuar es una característica que ahorra tiempo y permite realizar c
   
  Esta sección contiene los siguientes temas:  
   
- [Cómo: Aplicar cambios en el código de forma explícita](http://msdn.microsoft.com/89c4fce9-a3ef-432d-a840-67840b1c4be8)  
+ [Cómo: Aplicar cambios en el código de forma explícita](https://msdn.microsoft.com/89c4fce9-a3ef-432d-a840-67840b1c4be8)  
   
  [Cómo: habilitar y deshabilitar Editar y continuar](../debugger/how-to-enable-and-disable-edit-and-continue.md)  
   
  [Cómo: detener cambios en el código](../debugger/how-to-stop-code-changes.md)  
   
- [Punto de ejecución](http://msdn.microsoft.com/dd9855a7-b536-4e76-821f-27017829b996)  
+ [Punto de ejecución](https://msdn.microsoft.com/dd9855a7-b536-4e76-821f-27017829b996)  
   
  [Edit and Continue (Visual C++)](../debugger/edit-and-continue-visual-cpp.md)  
   
@@ -55,5 +55,5 @@ Editar y continuar es una característica que ahorra tiempo y permite realizar c
   
 ## <a name="see-also"></a>Vea también  
  [Seguridad del depurador](../debugger/debugger-security.md)   
- [Editar y continuar, Depuración, Opciones (Cuadro de diálogo)](http://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)   
+ [Editar y continuar, Depuración, Opciones (Cuadro de diálogo)](https://msdn.microsoft.com/library/009d225f-ef65-463f-a146-e4c518f86103)   
  [Conceptos básicos del depurador](../debugger/debugger-basics.md)

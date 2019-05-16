@@ -23,12 +23,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ef0bda55c42d384f9e7285b445e4cb3c19144289
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d447d82815046aba6383c2467c2b44c5b7d0d0f0
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408431"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685716"
 ---
 # <a name="building-and-cleaning-projects-and-solutions-in-visual-studio"></a>Compilar y limpiar proyectos y soluciones en Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "63408431"
 Mediante los procedimientos indicados en este tema, puede compilar, recompilar o limpiar todos o algunos de los proyectos o elementos de proyecto de una solución. Para obtener un tutorial paso a paso, vea [Tutorial: Compilación de una aplicación](../ide/walkthrough-building-an-application.md).
 
 > [!NOTE]
-> La interfaz de usuario de su edición de Visual Studio podría diferir de lo que se describe en este tema, en función de su configuración activa. Para cambiar la configuración, abra el menú **Herramientas** y elija **Importar y exportar configuraciones**. Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> La interfaz de usuario de su edición de Visual Studio podría diferir de lo que se describe en este tema, en función de su configuración activa. Para cambiar la configuración, abra el menú **Herramientas** y elija **Importar y exportar configuraciones**. Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="to-build-rebuild-or-clean-an-entire-solution"></a>Para compilar, recompilar o limpiar toda la solución
 
@@ -110,4 +110,4 @@ Mediante los procedimientos indicados en este tema, puede compilar, recompilar o
     - Presione las teclas Ctrl+Interrumpir.
 
 ## <a name="see-also"></a>Vea también
- [Cómo: Ver, guardar y configurar archivos de registro de compilación](../ide/how-to-view-save-and-configure-build-log-files.md) [obtener registros de compilación](../msbuild/obtaining-build-logs-with-msbuild.md) [compilar y generar](../ide/compiling-and-building-in-visual-studio.md) [descripción de las configuraciones de compilación](../ide/understanding-build-configurations.md) [Depurar y liberar configuraciones de proyecto](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e) [C /C++ referencia de compilación](http://msdn.microsoft.com/library/100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d) [modificadores de línea de comandos para Devenv](../ide/reference/devenv-command-line-switches.md) [soluciones y proyectos](../ide/solutions-and-projects-in-visual-studio.md)
+ [Cómo: Ver, guardar y configurar archivos de registro de compilación](../ide/how-to-view-save-and-configure-build-log-files.md) [obtener registros de compilación](../msbuild/obtaining-build-logs-with-msbuild.md) [compilar y generar](../ide/compiling-and-building-in-visual-studio.md) [descripción de las configuraciones de compilación](../ide/understanding-build-configurations.md) [Depurar y liberar configuraciones de proyecto](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e) [C /C++ referencia de compilación](https://msdn.microsoft.com/library/100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d) [modificadores de línea de comandos para Devenv](../ide/reference/devenv-command-line-switches.md) [soluciones y proyectos](../ide/solutions-and-projects-in-visual-studio.md)

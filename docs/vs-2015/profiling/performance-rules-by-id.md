@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 021927c9ff109e74956507b993c1c7192d109852
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 3dd28cad3036aaca1445cba7b4531580a2a44812
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756496"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691699"
 ---
 # <a name="performance-rules-by-id"></a>Reglas de rendimiento por id.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Advertencia|Descripción|
 |[DA0006: Invalidación de Equals() para tipos de valor](../profiling/da0006-override-equals-parens-for-value-types.md)|Las llamadas al método Equals o los operadores de igualdad de un tipo de valor público constituyen una proporción considerable de los datos de generación de perfiles. Considere la posibilidad de implementar un método más eficaz.|  
 |[DA0007: Evitación de utilizar excepciones para el flujo de control](../profiling/da0007-avoid-using-exceptions-for-control-flow.md)|Se produjo una alta tasa de controladores de excepciones de .NET Framework en los datos de generación de perfiles. Puede utilizar otra lógica de flujo de control para reducir el número de excepciones que se producen.|  
 |[DA0008: Pocos ejemplos recopilados](../profiling/da0008-few-samples-collected.md)|Solo se recopiló un número reducido de ejemplos en la ejecución de generación de perfiles. Considere una ejecución más prolongada o una frecuencia de muestreo más rápida para obtener resultados más significativos.|  
-|[DA0009: % alto de tiempo de JIT](http://msdn.microsoft.com/b60c1767-515c-41d9-81c2-c70d0b7024fd)|Un porcentaje considerable del tiempo de ejecución de la aplicación se ha empleado en el compilador Just In Time (JIT).|  
+|[DA0009: % alto de tiempo de JIT](https://msdn.microsoft.com/b60c1767-515c-41d9-81c2-c70d0b7024fd)|Un porcentaje considerable del tiempo de ejecución de la aplicación se ha empleado en el compilador Just In Time (JIT).|  
 |[DA0010: Función GetHashCode que consume muchos recursos](../profiling/da0010-expensive-gethashcode.md)|Las llamadas al método GetHashCode del tipo constituyen una proporción considerable de los datos de generación de perfiles o el método asigna memoria.|  
 |[DA0011: Función CompareTo que consume muchos recursos](../profiling/da0011-expensive-compareto.md)|El método CompareTo del tipo consume muchos recursos o asigna memoria.|  
 |[DA0012: Cantidad significativa de reflexión](../profiling/da0012-significant-amount-of-reflection.md)|Las llamadas a métodos System.Reflection, como InvokeMember y GetMember, o a métodos Type, como MemberInvoke, constituyen una proporción considerable de los datos de generación de perfiles. Cuando sea posible, considere la posibilidad de reemplazar estos métodos con enlace anticipado por los métodos de ensamblados dependientes.|  

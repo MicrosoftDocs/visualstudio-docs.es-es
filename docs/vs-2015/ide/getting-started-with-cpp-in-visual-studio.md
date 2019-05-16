@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ae373742c114129c99e7b3444393e12c6c4dd8dd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b80faa2ceb48cfec933d2287b70d304564a8106a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62585116"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704447"
 ---
 # <a name="getting-started-with-c-in-visual-studio"></a>Introducción a C++ en Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,7 +82,7 @@ Tras completar este tutorial, estará familiarizado con muchas de las herramient
 
      El mensaje de error también aparece en la ventana **Lista de errores** . Para mostrar la ventana, en la barra de menús, elija **Ver**, **Lista de errores**.
 
-     [cout](http://msdn.microsoft.com/library/d87db6c3-e4e1-4d09-9ec5-458f55018257) se incluye en el archivo de encabezado \<iostream\>.
+     [cout](https://msdn.microsoft.com/library/d87db6c3-e4e1-4d09-9ec5-458f55018257) se incluye en el archivo de encabezado \<iostream\>.
 
 2. Para incluir el encabezado iostream, escriba el código siguiente después de `#include "stdafx.h"`:
 

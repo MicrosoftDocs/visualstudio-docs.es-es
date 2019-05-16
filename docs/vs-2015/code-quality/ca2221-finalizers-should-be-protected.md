@@ -15,12 +15,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 30fa3449acc209fdc89c0be8e85f82fa3795a365
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9e8deec8687e3ddb2b3d961aa9fc1e97a45c961d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58995966"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685132"
 ---
 # <a name="ca2221-finalizers-should-be-protected"></a>CA2221: Los finalizadores deben estar protegidos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,4 +81,4 @@ ms.locfileid: "58995966"
 ```
 
 ## <a name="see-also"></a>Vea también
- [Patrón de Dispose](http://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)
+ [Patrón de Dispose](https://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)

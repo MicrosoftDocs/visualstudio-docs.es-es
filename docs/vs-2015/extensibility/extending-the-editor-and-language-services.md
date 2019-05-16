@@ -10,12 +10,12 @@ ms.assetid: 8d04f8db-eda7-4b3e-b6eb-c06df104502a
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9f828e6daff97f7c0ad8b3872691f5ad424cb2f4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 085e1b5c1fbfbbaf5649966738f2864e0b72ed35
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58987149"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674780"
 ---
 # <a name="extending-the-editor-and-language-services"></a>Ampliación del editor y los servicios de lenguaje
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,20 +40,20 @@ Puede agregar características del servicio de lenguaje (por ejemplo, IntelliSen
 |[Importaciones del editor](../extensibility/editor-imports.md)|Enumera los servicios que puede importar una extensión.|  
 |[Adaptación del código heredado en el editor](../extensibility/adapting-legacy-code-to-the-editor.md)|Explica los distintos modos para adaptar el código heredado (previamente Visual Studio 2010) para ampliar el editor.|  
 |[Migración de un servicio de lenguaje heredado](../extensibility/internals/migrating-a-legacy-language-service.md)|Explica cómo migrar un servicio de lenguaje en función de VSPackage.|  
-|[Tutorial: Vinculación de un tipo de contenido a una extensión de nombre de archivo](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)|Muestra cómo vincular un tipo de contenido a una extensión de nombre de archivo.|  
+|[Tutorial: Vinculación de un tipo de contenido con una extensión de nombre de archivo](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)|Muestra cómo vincular un tipo de contenido a una extensión de nombre de archivo.|  
 |[Tutorial: Creación de un glifo de margen](../extensibility/walkthrough-creating-a-margin-glyph.md)|Muestra cómo agregar un icono a un margen.|  
 |[Tutorial: Resaltar texto](../extensibility/walkthrough-highlighting-text.md)|Se muestra cómo usar *etiquetas* para resaltar el texto.|  
 |[Tutorial: Esquematización](../extensibility/walkthrough-outlining.md)|Muestra cómo agregar la esquematización para determinados tipos de llaves.|  
-|[Tutorial: Mostrar las llaves coincidentes](../extensibility/walkthrough-displaying-matching-braces.md)|Muestra cómo se resalta las llaves coincidentes.|  
-|[Tutorial: Mostrar información rápida](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)|Muestra cómo mostrar elementos emergentes de QuickInfo que describen los elementos de código como propiedades, métodos y eventos.|  
-|[Tutorial: Mostrar la Ayuda de firma](../extensibility/walkthrough-displaying-signature-help.md)|Muestra cómo mostrar elementos emergentes que se proporcionan información sobre el número y tipos de parámetros de una firma.|  
+|[Tutorial: Mostrar llaves que coincidan](../extensibility/walkthrough-displaying-matching-braces.md)|Muestra cómo se resalta las llaves coincidentes.|  
+|[Tutorial: Mostrar información sobre herramientas de QuickInfo](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)|Muestra cómo mostrar elementos emergentes de QuickInfo que describen los elementos de código como propiedades, métodos y eventos.|  
+|[Tutorial: Mostrar ayuda de firma](../extensibility/walkthrough-displaying-signature-help.md)|Muestra cómo mostrar elementos emergentes que se proporcionan información sobre el número y tipos de parámetros de una firma.|  
 |[Tutorial: Mostrar la finalización de instrucciones](../extensibility/walkthrough-displaying-statement-completion.md)|Muestra cómo implementar la finalización de instrucciones.|  
 |[Tutorial: Implementación de fragmentos de código](../extensibility/walkthrough-implementing-code-snippets.md)|Muestra cómo implementar la expansión del fragmento de código.|  
 |[Tutorial: Mostrar sugerencias de bombilla](../extensibility/walkthrough-displaying-light-bulb-suggestions.md)|Muestra cómo mostrar las bombillas para las sugerencias de código.|  
-|[Tutorial: Uso de un comando de Shell con una extensión del Editor](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)|Muestra cómo asociar un comando de menú en un VSPackage con un componente MEF.|  
-|[Tutorial: Uso de una tecla de método abreviado con una extensión del Editor](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)|Muestra cómo asociar un menú contextual en un VSPackage con un componente MEF.|  
-|[Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)|Proporciona información acerca de Managed Extensibility Framework (MEF).|  
-|[Windows Presentation Foundation](http://msdn.microsoft.com/library/f667bd15-2134-41e9-b4af-5ced6fafab5d)|Proporciona información acerca de Windows Presentation Foundation (WPF).|  
+|[Tutorial: Uso de un comando shell con una extensión del editor](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)|Muestra cómo asociar un comando de menú en un VSPackage con un componente MEF.|  
+|[Tutorial: Uso de una tecla de método abreviado con una extensión del editor](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)|Muestra cómo asociar un menú contextual en un VSPackage con un componente MEF.|  
+|[Managed Extensibility Framework (MEF)](https://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)|Proporciona información acerca de Managed Extensibility Framework (MEF).|  
+|[Windows Presentation Foundation](https://msdn.microsoft.com/library/f667bd15-2134-41e9-b4af-5ced6fafab5d)|Proporciona información acerca de Windows Presentation Foundation (WPF).|  
   
 ## <a name="reference"></a>Referencia  
  El editor de Visual Studio incluye los siguientes espacios de nombres.  

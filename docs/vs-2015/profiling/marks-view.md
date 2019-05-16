@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fb5fb56a011355abb991d6e8da122461045af2b1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 77cf26d9746336a614b36d7dcd443b841afa06f7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62562871"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699763"
 ---
 # <a name="marks-view"></a>Vista Marcas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ En la vista Marcas se muestran eventos ETW y de muestreo que se insertaron en la
   
 ## <a name="see-also"></a>Vea también  
  [Información general sobre el informe de rendimiento](../profiling/performance-report-overview.md)   
- [< PAVE_OVER > Cómo: Configurar marcas de generación de perfiles](http://msdn.microsoft.com/library/65a23880-e5e8-4d5a-82b3-6498b9ef8975)   
- [< PAVE_OVER > Cómo: Insertar marcas en un archivo de datos de Profiler](http://msdn.microsoft.com/library/856bfc81-a60f-42e5-a9bc-71b986c1e09d)   
+ [< PAVE_OVER > Cómo: Configurar marcas de generación de perfiles](https://msdn.microsoft.com/library/65a23880-e5e8-4d5a-82b3-6498b9ef8975)   
+ [< PAVE_OVER > Cómo: Insertar marcas en un archivo de datos de Profiler](https://msdn.microsoft.com/library/856bfc81-a60f-42e5-a9bc-71b986c1e09d)   
  [Cómo: Recopilar datos de contadores de Windows](../profiling/how-to-collect-windows-counter-data.md)   
- [Control de recolección de datos (ventana)](http://msdn.microsoft.com/98d740d8-459f-4605-bf04-fb17aafaaa8f)
+ [Control de recolección de datos (ventana)](https://msdn.microsoft.com/98d740d8-459f-4605-bf04-fb17aafaaa8f)

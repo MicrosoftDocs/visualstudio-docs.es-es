@@ -13,12 +13,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 84a2449e9686f71cfd932a2bf6047ed0208da1d0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: d8e88bcf67c430bdd24c4338d92a30b6a7c10fef
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114813"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675008"
 ---
 # <a name="managing-application-settings-net"></a>Administrar la configuración de la aplicación (.NET)
 
@@ -59,7 +59,7 @@ Cuando crea una configuración con ámbito de usuario (por ejemplo, fuente prede
 >
 > Si toma la información de la cadena de conexión de un origen externo (un usuario que suministre un Id. de usuario y una contraseña, por ejemplo), debe asegurarse de que los valores que utilice para crear la cadena de conexión no contengan parámetros adicionales que modifiquen el comportamiento de la conexión.
 >
-> Plantéese utilizar la característica de configuración protegida para cifrar información confidencial en el archivo de configuración. Para obtener más información, vea [Proteger la información de conexión](http://msdn.microsoft.com/library/1471f580-bcd4-4046-bdaf-d2541ecda2f4).
+> Plantéese utilizar la característica de configuración protegida para cifrar información confidencial en el archivo de configuración. Para obtener más información, vea [Proteger la información de conexión](https://msdn.microsoft.com/library/1471f580-bcd4-4046-bdaf-d2541ecda2f4).
 
 > [!NOTE]
 > Dado que no hay ningún modelo del archivo de configuración para las bibliotecas de clases, la configuración de la aplicación no se aplica a los proyectos de la biblioteca de clases. La excepción es un proyecto de archivo DLL de Visual Studio Tools para Office, que puede tener un archivo de configuración.
@@ -74,7 +74,7 @@ El Diseñador de configuración busca primero el archivo Settings.settings cread
 
 ## <a name="accessing-or-changing-application-settings-at-run-time-in-visual-basic"></a>Obtener acceso o cambiar la configuración de la aplicación en tiempo de ejecución en Visual Basic
 
-En los proyectos de [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] , puede obtener acceso a la configuración de la aplicación en tiempo de ejecución por medio del objeto `My.Settings` . En la página **Configuración** , haga clic en el botón **Ver código** con el fin de ver el archivo Settings.vb. Settings.vb define la clase `Settings` , que le permite controlar estos eventos en la clase de configuración: <xref:System.Configuration.ApplicationSettingsBase.SettingChanging>, <xref:System.Configuration.ApplicationSettingsBase.PropertyChanged>, <xref:System.Configuration.ApplicationSettingsBase.SettingsLoaded>y <xref:System.Configuration.ApplicationSettingsBase.SettingsSaving>. Tenga en cuenta que la clase `Settings` de Settings.vb es una clase parcial, que muestra solamente el código que tiene el usuario, no toda la clase generada. Para obtener más información sobre cómo tener acceso a la configuración de la aplicación mediante el objeto `My.Settings` , vea [Accessing Application Settings](http://msdn.microsoft.com/library/e38d0cc7-247a-46ca-ba04-f2913f0adb2e).
+En los proyectos de [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] , puede obtener acceso a la configuración de la aplicación en tiempo de ejecución por medio del objeto `My.Settings` . En la página **Configuración** , haga clic en el botón **Ver código** con el fin de ver el archivo Settings.vb. Settings.vb define la clase `Settings` , que le permite controlar estos eventos en la clase de configuración: <xref:System.Configuration.ApplicationSettingsBase.SettingChanging>, <xref:System.Configuration.ApplicationSettingsBase.PropertyChanged>, <xref:System.Configuration.ApplicationSettingsBase.SettingsLoaded>y <xref:System.Configuration.ApplicationSettingsBase.SettingsSaving>. Tenga en cuenta que la clase `Settings` de Settings.vb es una clase parcial, que muestra solamente el código que tiene el usuario, no toda la clase generada. Para obtener más información sobre cómo tener acceso a la configuración de la aplicación mediante el objeto `My.Settings` , vea [Accessing Application Settings](https://msdn.microsoft.com/library/e38d0cc7-247a-46ca-ba04-f2913f0adb2e).
 
 Los valores de configuración de ámbito de usuario que el usuario cambia en tiempo de ejecución (por ejemplo, la posición de un formulario) se almacenan en un archivo user.config. Observe que los valores predeterminados se siguen guardando en app.config.
 
@@ -98,8 +98,8 @@ También debe llamar explícitamente al método `Save` de esta clase contenedora
 Properties.Settings.Default.Save();
 ```
 
-Para obtener información general sobre cómo obtener acceso a la configuración de la aplicación a través de la clase `Settings`, vea [Introducción a la configuración de la aplicación](http://msdn.microsoft.com/library/0dd8bca5-a6bf-4ac4-8eec-5725d08b38dc). Para obtener información sobre cómo recorrer en iteración la configuración, vea este [artículo del foro](http://social.msdn.microsoft.com/Forums/vstudio/40fbb470-f1e8-4a02-a4a0-9f62b54d0fc4/is-this-possible-propertiessettingsdefault?forum=csharpgeneral).
+Para obtener información general sobre cómo obtener acceso a la configuración de la aplicación a través de la clase `Settings`, vea [Introducción a la configuración de la aplicación](https://msdn.microsoft.com/library/0dd8bca5-a6bf-4ac4-8eec-5725d08b38dc). Para obtener información sobre cómo recorrer en iteración la configuración, vea este [artículo del foro](http://social.msdn.microsoft.com/Forums/vstudio/40fbb470-f1e8-4a02-a4a0-9f62b54d0fc4/is-this-possible-propertiessettingsdefault?forum=csharpgeneral).
 
 ## <a name="see-also"></a>Vea también
 
-- [Acceso a la configuración de la aplicación](http://msdn.microsoft.com/library/e38d0cc7-247a-46ca-ba04-f2913f0adb2e)
+- [Acceso a la configuración de la aplicación](https://msdn.microsoft.com/library/e38d0cc7-247a-46ca-ba04-f2913f0adb2e)

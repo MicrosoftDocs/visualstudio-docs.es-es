@@ -76,9 +76,9 @@ Después de crear un paquete de arranque, puede crear versiones localizadas del 
 
 1. Cree una carpeta con el nombre *fr*. El nombre de la carpeta debe coincidir con el nombre de la configuración regional.
 
-     En equipos de 32 bits, cree la carpeta en *\Archivos de programa\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\DotNetFX35SP1\\\*.
+     En equipos de 32 bits, cree la carpeta en *\Archivos de programa\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\DotNetFX35SP1\\*.
 
-     En equipos de 64 bits, cree la carpeta en *\Archivos de programa (86)\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\DotNetFX35SP1\\\*.
+     En equipos de 64 bits, cree la carpeta en *\Archivos de programa (86)\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\DotNetFX35SP1\\*.
 
 2. Coloque una versión localizada de los términos de licencia de software en la carpeta *fr*.
 

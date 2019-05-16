@@ -11,12 +11,12 @@ ms.assetid: a6930db5-a112-4651-8de3-e520df851f82
 caps.latest.revision: 32
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a0f3380622f20e8518eed8ea2a8071518fe4a099
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 85eed4abd07e63c2d997a6068744e91e6f1ac047
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62537438"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690918"
 ---
 # <a name="visual-studio-sdk-reference"></a>Referencia de Visual Studio SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,10 +25,10 @@ Esta sección contiene información sobre los espacios de nombres, espacios de n
   
 ## <a name="in-this-section"></a>En esta sección
 
- [Parámetros de configuración](http://msdn.microsoft.com/library/faa4ed55-66ce-4792-939f-a5b093f13a2e)  
+ [Parámetros de configuración](https://msdn.microsoft.com/library/faa4ed55-66ce-4792-939f-a5b093f13a2e)  
  Configuración de API de configuración para detectar las instancias de Visual Studio 2017.
 
- [Extensibilidad de carpeta abierta](http://msdn.microsoft.com/library/0897ae3d-6a09-4d26-90c9-7f3d0b8e5c5d)  
+ [Extensibilidad de carpeta abierta](https://msdn.microsoft.com/library/0897ae3d-6a09-4d26-90c9-7f3d0b8e5c5d)  
  Área de trabajo API para carpeta abierta en Visual Studio 2017.
  
  <xref:Microsoft.VisualStudio.TextManager.Interop>  

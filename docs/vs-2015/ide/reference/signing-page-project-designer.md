@@ -20,12 +20,12 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dd4043b34cc809af92fc5bbd1c44e322261096e9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ba55795e1f1b5f54b2a863ec0163a796111d9800
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437989"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65689466"
 ---
 # <a name="signing-page-project-designer"></a>Página Firma, Diseñador de proyectos
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -66,9 +66,9 @@ Use la página **Firma** del **Diseñador de proyectos** para firmar los manifie
   
 ## <a name="assembly-signing"></a>Firma de ensamblados  
  Casilla **Firmar el ensamblado**  
- Active esta casilla para firmar el ensamblado y crear un archivo de clave con nombre seguro. Para obtener más información sobre la firma del ensamblado mediante el **Diseñador de proyectos**, vea [Cómo: Firmar un ensamblado (Visual Studio)](http://msdn.microsoft.com/f468a7d3-234c-4353-924d-8e0ae5896564).  
+ Active esta casilla para firmar el ensamblado y crear un archivo de clave con nombre seguro. Para obtener más información sobre la firma del ensamblado mediante el **Diseñador de proyectos**, vea [Cómo: Firmar un ensamblado (Visual Studio)](https://msdn.microsoft.com/f468a7d3-234c-4353-924d-8e0ae5896564).  
   
- Esta opción usa la herramienta Al.exe proporcionada por [!INCLUDE[winsdklong](../../includes/winsdklong-md.md)] para firmar el ensamblado. Para obtener más información sobre Al.exe, vea [Cómo: Firmar un ensamblado con un nombre seguro](http://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67).  
+ Esta opción usa la herramienta Al.exe proporcionada por [!INCLUDE[winsdklong](../../includes/winsdklong-md.md)] para firmar el ensamblado. Para obtener más información sobre Al.exe, vea [Cómo: Firmar un ensamblado con un nombre seguro](https://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67).  
   
  Lista **Elija un archivo de clave de nombre seguro**  
  Permite especificar un archivo de clave con nombre seguro nuevo o existente para firmar el ensamblado. Seleccione **\<Examinar... >** para seleccionar un archivo de clave existente.  
@@ -83,7 +83,7 @@ Use la página **Firma** del **Diseñador de proyectos** para firmar los manifie
  Casilla **Retrasar firma solo**  
  Active esta casilla para habilitar la firma retardada.  
   
- Tenga en cuenta que un proyecto con firma retardada no se ejecutará y no se puede depurar. Pero puede usar [Sn.exe (Herramienta de nombre seguro)](http://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6) con la opción `-Vr` para omitir la comprobación durante el desarrollo.  
+ Tenga en cuenta que un proyecto con firma retardada no se ejecutará y no se puede depurar. Pero puede usar [Sn.exe (Herramienta de nombre seguro)](https://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6) con la opción `-Vr` para omitir la comprobación durante el desarrollo.  
   
 > [!NOTE]
 > Al firmar un ensamblado, es posible que no siempre tenga acceso a una clave privada. Por ejemplo, una organización podría tener un par de claves muy bien guardado al que los desarrolladores no tuvieran acceso cada día. La clave pública podría estar disponible, pero el acceso a la clave privada estaría restringido a algunas personas. En tal caso, podría usar la *firma retardada* o la *firma parcial* para proporcionar la clave pública, retrasando la adición de la clave privada hasta la entrega del ensamblado.  
@@ -91,8 +91,8 @@ Use la página **Firma** del **Diseñador de proyectos** para firmar los manifie
 ## <a name="see-also"></a>Vea también  
  [Referencia de propiedades del proyecto](../../ide/reference/project-properties-reference.md)   
  [Administrar la firma de ensamblados y manifiestos](../../ide/managing-assembly-and-manifest-signing.md)   
- [Firma de nombre seguro para aplicaciones administradas](http://msdn.microsoft.com/5fef3490-c519-4363-94fd-8b1ad260dab5)   
+ [Firma de nombre seguro para aplicaciones administradas](https://msdn.microsoft.com/5fef3490-c519-4363-94fd-8b1ad260dab5)   
  [Cómo: Firmar aplicaciones y manifiestos de implementación](../../ide/how-to-sign-application-and-deployment-manifests.md)   
- [Cómo: Firmar un ensamblado (Visual Studio)](http://msdn.microsoft.com/f468a7d3-234c-4353-924d-8e0ae5896564)   
- [Cómo: Firmar un ensamblado con un nombre seguro](http://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67)   
- [Ensamblados con nombre seguro](http://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)
+ [Cómo: Firmar un ensamblado (Visual Studio)](https://msdn.microsoft.com/f468a7d3-234c-4353-924d-8e0ae5896564)   
+ [Cómo: Firmar un ensamblado con un nombre seguro](https://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67)   
+ [Ensamblados con nombre seguro](https://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)

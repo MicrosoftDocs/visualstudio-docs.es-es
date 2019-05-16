@@ -8,12 +8,12 @@ ms.assetid: 57b7f502-3b04-42d9-90d5-f57772a7c757
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0747dfe89c2d8d4ceb8321f00f723f973f3ff526
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: fcbda9f8c7a98d0830c898c81471854efc3a6403
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58996906"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686140"
 ---
 # <a name="localizedname-element-vsix-language-pack-schema"></a>Elemento LocalizedName (esquema del paquete de idioma VSIX)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,4 +62,4 @@ Obligatorio. El nombre localizado de la extensión para instalarse.
 ## <a name="see-also"></a>Vea también  
  [Referencia de esquema del paquete de idioma VSX](../extensibility/vsx-language-pack-schema-reference.md)   
  [Adaptación de paquetes VSIX](../extensibility/localizing-vsix-packages.md)   
- [Referencia de esquema 1.0 de extensión VSIX](http://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)
+ [Referencia de esquema 1.0 de extensión VSIX](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)

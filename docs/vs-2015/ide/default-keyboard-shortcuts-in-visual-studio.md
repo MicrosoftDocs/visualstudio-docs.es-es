@@ -15,12 +15,12 @@ caps.latest.revision: 59
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2a0aa54cd3fa6456d2a41e5418c497b284d01547
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 129fa00681fcd3a9f3b19370bb553fcd5146e46e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095458"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701092"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Métodos abreviados de teclado predeterminados de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -1160,4 +1160,4 @@ Puede acceder más fácilmente a una serie de comandos y ventanas en Visual Stud
 |XsdDesigner.ShowStartView|Ctrl+1|
 
 ## <a name="see-also"></a>Vea también
- [Editor de imágenes para iconos](http://msdn.microsoft.com/library/586d2b8b-0348-4883-a85d-1ff0ddbf14dd) [Uso de IntelliSense](../ide/using-intellisense.md)
+ [Editor de imágenes para iconos](https://msdn.microsoft.com/library/586d2b8b-0348-4883-a85d-1ff0ddbf14dd) [Uso de IntelliSense](../ide/using-intellisense.md)

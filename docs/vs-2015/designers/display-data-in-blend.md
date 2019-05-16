@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: db5b2df99a887511351e6b5bd120968edf7c53cb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 72af15a510fffedf4986f292058377989bb20973
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080870"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695566"
 ---
 # <a name="display-data-in-blend"></a>Mostrar datos en Blend
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ Mientras personaliza el diseño de sus páginas, puede ver datos de ejemplo en e
  **Vea un vídeo corto:** ![Configurar las características instaladas](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [crear un origen de datos XML](https://www.youtube.com/watch?v=RjQueappjqk&feature=youtube_gdata).  
   
 ## <a name="LiveStore"></a> Mostrar datos en directo en una aplicación de la Tienda Windows o Windows Phone  
- Consulte [Working with data and files (XAML)](http://msdn.microsoft.com/library/windows/apps/xaml/br229562.aspx)(Cómo trabajar con datos y archivos [XAML]).  
+ Consulte [Working with data and files (XAML)](https://msdn.microsoft.com/library/windows/apps/xaml/br229562.aspx)(Cómo trabajar con datos y archivos [XAML]).  
   
 ## <a name="see-also"></a>Vea también  
  [Crear una IU con Blend para Visual Studio](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)

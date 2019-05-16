@@ -13,12 +13,12 @@ ms.assetid: c5f94b45-7249-4e1f-a53d-1d2a1c61e0ef
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 950f9c50ccaf137b21d775ceaf1bff196b1b8ac7
-ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
+ms.openlocfilehash: 5b68d443e542b6bd707aacc2b22d0efc1064152c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "59002108"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690641"
 ---
 # <a name="vstextbuffer-object"></a>VSTextBuffer (Objeto)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,4 +48,4 @@ El objeto de búfer de texto representa una secuencia de texto Unicode, que suel
 ## <a name="see-also"></a>Vea también  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>   
  <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>   
- [Edición de cifras](http://msdn.microsoft.com/f08872bd-fd9c-4e36-8cf2-a2a2622ef986)
+ [Edición de cifras](https://msdn.microsoft.com/f08872bd-fd9c-4e36-8cf2-a2a2622ef986)

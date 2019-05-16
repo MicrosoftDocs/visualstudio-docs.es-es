@@ -8,12 +8,12 @@ ms.assetid: adb6c011-5abd-41d2-8ead-08cd7579bf37
 caps.latest.revision: 14
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4e8b2c26050fd3e78e76b93e6372a03836916387
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: be8c468e8b6aac70d44485b1560a84524a4ef540
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63416343"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686418"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Procedimiento Configurar pruebas unitarias cuyo destino sea una versión anterior de .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ De forma predeterminada, al crear un proyecto de prueba en Microsoft Visual Stud
   
   **Probar aplicaciones de SharePoint**  
   
-  Las funciones enumeradas anteriormente también permiten escribir pruebas unitarias y pruebas de integración de aplicaciones de SharePoint mediante Visual Studio. [!INCLUDE[crabout](../includes/crabout-md.md)] Para obtener información sobre cómo desarrollar aplicaciones de SharePoint mediante Visual Studio, consulte [Crear soluciones de SharePoint](http://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631), [Compilar y depurar soluciones de SharePoint](http://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae) y [Comprobar y depurar código de SharePoint](http://msdn.microsoft.com/library/b5f3bce2-6a51-41b1-a292-9e384bae420c).  
+  Las funciones enumeradas anteriormente también permiten escribir pruebas unitarias y pruebas de integración de aplicaciones de SharePoint mediante Visual Studio. [!INCLUDE[crabout](../includes/crabout-md.md)] Para obtener información sobre cómo desarrollar aplicaciones de SharePoint mediante Visual Studio, consulte [Crear soluciones de SharePoint](https://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631), [Compilar y depurar soluciones de SharePoint](https://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae) y [Comprobar y depurar código de SharePoint](https://msdn.microsoft.com/library/b5f3bce2-6a51-41b1-a292-9e384bae420c).  
   
   **Limitaciones**  
   
@@ -126,7 +126,7 @@ De forma predeterminada, al crear un proyecto de prueba en Microsoft Visual Stud
 8. En el Explorador de soluciones, seleccione **Recargar proyecto** en el menú contextual del nuevo proyecto de Visual C++.  
   
 ## <a name="see-also"></a>Vea también  
- [Crear y ejecutar pruebas unitarias para código existente](http://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)   
- [Crear soluciones de SharePoint](http://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631)   
- [Compilar y depurar soluciones de SharePoint](http://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae)   
+ [Crear y ejecutar pruebas unitarias para código existente](https://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)   
+ [Crear soluciones de SharePoint](https://msdn.microsoft.com/library/4bfb1e59-97c9-4594-93f8-3068b4eb9631)   
+ [Compilar y depurar soluciones de SharePoint](https://msdn.microsoft.com/library/c9e7c9ab-4eb3-40cd-a9b9-6c2a896f70ae)   
  [Configuración de compilador avanzada (Cuadro de diálogo, Visual Basic)](../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md)

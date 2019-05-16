@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ac7d0896d501803a04da5bf9626e2b9e4716d41a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d5a40d6aa7dca8b14210ea85b8428f4d315cd70b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442647"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679540"
 ---
 # <a name="step-11-run-your-program-and-try-other-features"></a>Paso 11: ejecución del programa y prueba de otras características
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,11 +53,11 @@ Cuadro de diálogo Color
   
 ### <a name="to-continue-or-review"></a>Para continuar o revisar  
   
-- Para obtener más información sobre la programación en Visual Studio, vea [Programar los conceptos](http://msdn.microsoft.com/library/65c12cca-af4f-4017-886e-2dbc00a189d6).  
+- Para obtener más información sobre la programación en Visual Studio, vea [Programar los conceptos](https://msdn.microsoft.com/library/65c12cca-af4f-4017-886e-2dbc00a189d6).  
   
-- Para obtener más información sobre Visual Basic, vea [Desarrollo de aplicaciones con Visual Basic](http://msdn.microsoft.com/library/1e1c0c81-6d95-4167-a98b-44b1efb6d25f).  
+- Para obtener más información sobre Visual Basic, vea [Desarrollo de aplicaciones con Visual Basic](https://msdn.microsoft.com/library/1e1c0c81-6d95-4167-a98b-44b1efb6d25f).  
   
-- Para obtener más información sobre Visual C#, vea [Introducción al lenguaje C# y .NET Framework](http://msdn.microsoft.com/library/0a2dff4e-cd84-42ff-8141-e89889b24081).  
+- Para obtener más información sobre Visual C#, vea [Introducción al lenguaje C# y .NET Framework](https://msdn.microsoft.com/library/0a2dff4e-cd84-42ff-8141-e89889b24081).  
   
 - Para ir al siguiente tutorial, vea [Tutorial 2: Crear una prueba matemática cronometrada](../ide/tutorial-2-create-a-timed-math-quiz.md).  
   

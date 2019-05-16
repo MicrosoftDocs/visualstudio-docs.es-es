@@ -15,12 +15,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e2ab764b9a9f30c9e8143267cbdf14ecbb9456e8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8b833f520c574c32f90ff1ec5e20a9671184b78a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58997143"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685099"
 ---
 # <a name="ca2230-use-params-for-variable-arguments"></a>CA2230: Usar parámetros en argumentos de variable
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ ms.locfileid: "58997143"
  En C#, la `VarArgs` convención de llamada se usa cuando la lista de parámetros de un método termina con la `__arglist` palabra clave. Visual Basic no admite la `VarArgs` convención de llamada y Visual C++ permite su uso solo en código no administrado que utiliza la elipse `...` notación.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Para corregir una infracción de esta regla en C#, use el [params](http://msdn.microsoft.com/library/1690815e-b52b-4967-8380-5780aff08012) palabra clave en lugar de `__arglist`.
+ Para corregir una infracción de esta regla en C#, use el [params](https://msdn.microsoft.com/library/1690815e-b52b-4967-8380-5780aff08012) palabra clave en lugar de `__arglist`.
 
 ## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
  No suprima las advertencias de esta regla.
@@ -52,4 +52,4 @@ ms.locfileid: "58997143"
  [!code-csharp[FxCop.Usage.UseParams#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.UseParams/cs/FxCop.Usage.UseParams.cs#1)]
 
 ## <a name="see-also"></a>Vea también
- <xref:System.Reflection.CallingConventions?displayProperty=fullName> [Independencia del lenguaje y componentes independientes del lenguaje](http://msdn.microsoft.com/library/4f0b77d0-4844-464f-af73-6e06bedeafc6)
+ <xref:System.Reflection.CallingConventions?displayProperty=fullName> [Independencia del lenguaje y componentes independientes del lenguaje](https://msdn.microsoft.com/library/4f0b77d0-4844-464f-af73-6e06bedeafc6)

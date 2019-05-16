@@ -11,19 +11,19 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1a5f2b2fa8c2ff39b0a7ec3e982145567602ab10
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c668317fba69100701fac95bfa333ed7b3446488
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58989103"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701965"
 ---
 # <a name="properties-of-domain-classes"></a>Propiedades de las clases de dominio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Clases de dominio tienen las propiedades en la tabla siguiente. Para obtener información acerca de las clases de dominio, consulte [descripción de los modelos, las clases y relaciones](../modeling/understanding-models-classes-and-relationships.md). Para obtener más información sobre cómo usar estas propiedades, vea [personalizar y ampliar lenguajes específicos de dominio](../modeling/customizing-and-extending-a-domain-specific-language.md).  
   
-|Property|Descripción|Default|  
+|Propiedad|Descripción|Default|  
 |--------------|-----------------|-------------|  
 |Modificador de acceso|Nivel de acceso de la clase de dominio (`public` o `internal`).|`public`|  
 |Atributos personalizados|Se utiliza para agregar atributos a la clase de código fuente que se genera a partir de esta clase de dominio.|\<none>|  
@@ -39,4 +39,4 @@ Clases de dominio tienen las propiedades en la tabla siguiente. Para obtener inf
 |Help Keyword|La palabra clave opcional que se utiliza para indizar la Ayuda F1 para esta clase de dominio.|\<none>|  
   
 ## <a name="see-also"></a>Vea también  
- [Glosario de las Herramientas del lenguaje específico de dominio](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Glosario de las Herramientas del lenguaje específico de dominio](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

@@ -14,12 +14,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bd362c01c996dc6a32197b9acd88f11b26c034bf
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 537b3f45dcf22dcc766b9902d20bf97af24b3c9d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59655811"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675510"
 ---
 # <a name="watch-command"></a>Inspección (Comando)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -47,8 +47,8 @@ Debug.Watch[index]
   
 ## <a name="see-also"></a>Vea también  
  [Ventanas de variables locales y automáticas](../../debugger/autos-and-locals-windows.md)   
- [Cómo: Modificar un valor en una ventana de variable](http://msdn.microsoft.com/library/36f464ab-c900-4c0b-9ab3-557b3d9cdab5)   
- [Cómo: Utilizar el cuadro de diálogo Inspección rápida](http://msdn.microsoft.com/library/ffaee1dd-e5ce-4ef2-9401-d28329398867)   
+ [Cómo: Modificar un valor en una ventana de variable](https://msdn.microsoft.com/library/36f464ab-c900-4c0b-9ab3-557b3d9cdab5)   
+ [Cómo: Utilizar el cuadro de diálogo Inspección rápida](https://msdn.microsoft.com/library/ffaee1dd-e5ce-4ef2-9401-d28329398867)   
  [Comandos de Visual Studio](../../ide/reference/visual-studio-commands.md)   
  [Ventana Comandos](../../ide/reference/command-window.md)   
  [Cuadro Buscar/Comando](../../ide/find-command-box.md)   

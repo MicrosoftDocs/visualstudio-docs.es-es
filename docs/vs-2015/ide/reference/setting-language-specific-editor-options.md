@@ -13,12 +13,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 85fb8c1349590858391051b8df395c8e6a781a75
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: c17bbb0989df9bf186652335cee6f77b047854fb
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59669801"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65689484"
 ---
 # <a name="setting-language-specific-editor-options"></a>Opciones del editor específicas del lenguaje
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -44,10 +44,10 @@ ms.locfileid: "59669801"
  [Opciones, editor de texto, C#, IntelliSense](../../ide/reference/options-text-editor-csharp-intellisense.md)  
  Describe la configuración que especifica cómo se comporta la lista de finalización de IntelliSense cuando se trabaja en código de C# y J#.  
   
- [Validación, CSS, Editor de texto, Opciones (Cuadro de diálogo)](http://msdn.microsoft.com/library/5afe0808-16bb-420f-b620-7ca1a4d9f2cc)  
+ [Validación, CSS, Editor de texto, Opciones (Cuadro de diálogo)](https://msdn.microsoft.com/library/5afe0808-16bb-420f-b620-7ca1a4d9f2cc)  
  Describe la configuración de la finalización de instrucciones y de la corrección de errores en hojas de estilos en cascada (CSS).  
   
- [Validación, HTML, Editor de texto, Opciones (Cuadro de diálogo)](http://msdn.microsoft.com/library/9c24ecfe-263e-4bf1-88de-d01be3992863)  
+ [Validación, HTML, Editor de texto, Opciones (Cuadro de diálogo)](https://msdn.microsoft.com/library/9c24ecfe-263e-4bf1-88de-d01be3992863)  
  Describe la configuración para comprobar la sintaxis HTML en función del esquema seleccionado.  
   
  [Opciones, editor de texto, XAML, formato](../../ide/reference/options-text-editor-xaml-formatting.md)  
@@ -57,5 +57,5 @@ ms.locfileid: "59669801"
  [Personalizar el editor](../../ide/customizing-the-editor.md)  
  Proporciona vínculos a temas que explican muchos aspectos del editor para los que puede establecer preferencias.  
   
- [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
+ [Personalizar la configuración de desarrollo en Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
  Proporciona vínculos a temas que explican cómo personalizar la configuración, los enlaces de teclado y otras características del entorno de desarrollo integrado (IDE).

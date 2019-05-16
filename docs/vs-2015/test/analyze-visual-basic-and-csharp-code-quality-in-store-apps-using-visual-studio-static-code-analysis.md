@@ -11,12 +11,12 @@ caps.latest.revision: 16
 author: erickson-doug
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3f3a00a4ec5a013dc860a05ed48364178e3f23cf
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c59b4123a3fbc957a99da7178d0d8ec288a06708
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442870"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686549"
 ---
 # <a name="analyze-visual-basic-and-c-code-quality-in-store-apps-using-visual-studio-static-code-analysis"></a>Analizar la calidad del código de Visual Basic y C# en las aplicaciones de las aplicaciones de la Tienda con el análisis de código estático de Visual Studio
 
@@ -27,7 +27,7 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
  La herramienta de análisis de código de Visual Studio Express examina el código para detectar una serie de defectos comunes e infracciones de las prácticas recomendadas de programación. Las advertencias del análisis de código son distintas de los errores y advertencias del compilador, porque la herramienta de análisis de código busca patrones de código concretos que, aunque son válidos, pueden crear problemas para ti o para otros usuarios del código. El análisis de código también puede encontrar defectos del código que son difíciles de detectar al hacer las pruebas. Ejecutar la herramienta de análisis de código a intervalos regulares durante el proceso de desarrollo puede mejorar la calidad de la aplicación final.
 
 > [!NOTE]
-> En Visual Studio Ultimate, Visual Studio Premium y Visual Studio Professional, puedes usar la funcionalidad completa de análisis de código. Consulte [Analizar la calidad de la aplicación mediante herramientas de análisis del código](http://msdn.microsoft.com/library/dd264897.aspx) en la MSDN Library.
+> En Visual Studio Ultimate, Visual Studio Premium y Visual Studio Professional, puedes usar la funcionalidad completa de análisis de código. Consulte [Analizar la calidad de la aplicación mediante herramientas de análisis del código](https://msdn.microsoft.com/library/dd264897.aspx) en la MSDN Library.
 
 ## <a name="in-this-topic"></a>En este tema
  Puedes obtener información sobre:
@@ -98,12 +98,12 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
 ## <a name="BKMK_Warnings"></a> Advertencias de análisis de código de Visual Basic y C#
  El análisis de código produce las advertencias siguientes:
 
- [CA1001: los tipos que poseen campos descartables deben ser descartables](http://msdn.microsoft.com/library/ms182172.aspx)
+ [CA1001: los tipos que poseen campos descartables deben ser descartables](https://msdn.microsoft.com/library/ms182172.aspx)
 
- [CA1821: quitar los finalizadores vacíos](http://msdn.microsoft.com/library/bb264476.aspx)
+ [CA1821: quitar los finalizadores vacíos](https://msdn.microsoft.com/library/bb264476.aspx)
 
- [CA2213: los campos descartables deben ser descartables](http://msdn.microsoft.com/library/ms182328.aspx)
+ [CA2213: los campos descartables deben ser descartables](https://msdn.microsoft.com/library/ms182328.aspx)
 
- [CA2229: implementar constructores de serialización](http://msdn.microsoft.com/library/ms182343.aspx)
+ [CA2229: implementar constructores de serialización](https://msdn.microsoft.com/library/ms182343.aspx)
 
- [CA2231: sobrecargar el operador equals al invalidar ValueType.Equals](http://msdn.microsoft.com/library/ms182359.aspx)
+ [CA2231: sobrecargar el operador equals al invalidar ValueType.Equals](https://msdn.microsoft.com/library/ms182359.aspx)

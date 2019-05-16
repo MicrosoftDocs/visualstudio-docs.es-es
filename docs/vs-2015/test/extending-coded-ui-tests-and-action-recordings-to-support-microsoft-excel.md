@@ -8,12 +8,12 @@ ms.assetid: 6b0f72a4-70ca-4e55-b236-2ea1034fd8a7
 caps.latest.revision: 32
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 61c802ebca49c15a3a7baa785400f90621a27e9f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a85676fca972bb0d2d91f5ffd7c7cbf95bfc68c8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63416466"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686386"
 ---
 # <a name="extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel"></a>Extender las pruebas de IU codificadas y las grabaciones de acciones para la compatibilidad con Microsoft Excel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ El marco de pruebas de UI codificadas y grabaciones de acciones no admite todas 
 ### <a name="microsoft-excel-add-in-excelcodeduiaddinhelper"></a>Complemento de Microsoft Excel: ExcelCodedUIAddinHelper  
  Este proyecto incluye un complemento que se ejecuta en el proceso de Excel. Consulte [Complemento de Excel de muestra para probar la IU codificada](../test/sample-excel-add-in-for-coded-ui-testing.md) para obtener una descripción breve del proyecto de complemento.  
   
- Para obtener más información, vea [Tutorial: Crear el primer complemento VSTO para Excel](http://msdn.microsoft.com/library/a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f).  
+ Para obtener más información, vea [Tutorial: Crear el primer complemento VSTO para Excel](https://msdn.microsoft.com/library/a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f).  
   
 ### <a name="excel-ui-communication-exceluicommunicationhelper"></a>Comunicación de la interfaz de usuario de Excel: ExcelUIcommunicationHelper  
  Este proyecto incluye la interfaz de `IExcelUICommunication` y las clases de información que se usan para intercambiar datos entre el marco de trabajo de pruebas de IU codificada y Excel. Para obtener más información, consulte [Interfaz de muestra del Communicator de Excel](../test/sample-excel-communicator-interface.md).  

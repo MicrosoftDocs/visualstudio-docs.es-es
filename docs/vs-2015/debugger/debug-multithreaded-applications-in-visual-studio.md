@@ -22,12 +22,12 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8315a797aec5fcedbf33df6ca96f41879b57d971
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 8cb43c9a32f3dfd0a6383d466f7cd283acf0ab3a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054305"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691277"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>Depurar aplicaciones multiproceso en Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Un subproceso es una secuencia de instrucciones a la que el sistema operativo as
 
  Además, multithreading incluye algunos tipos de errores nuevos. Por ejemplo, a menudo dos o más subprocesos deben tener acceso al mismo recurso, pero únicamente un subproceso puede tener acceso al recurso sin ningún riesgo a la vez. Se necesita algún formulario de exclusión mutua para asegurarse de que únicamente uno subproceso está teniendo acceso al recurso a la vez. Si la exclusión mutua se realiza correctamente, puede crear un *interbloqueo* condición donde ningún subproceso puede ejecutar. Los interbloqueos pueden ser un problema especialmente grave para realizar la depuración.
 
- Visual Studio proporciona un **subprocesos** ventana, una ventana de subprocesos de GPU, una ventana Inspección paralela y otras características que facilitan la depuración multiproceso. La mejor manera de obtener información sobre las características de subprocesos es realizar los tutoriales. Vea [Tutorial: Depurar una aplicación multiproceso](../debugger/walkthrough-debugging-a-multithreaded-application.md) y [Tutorial: Depurar una aplicación de C++ AMP](http://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5).
+ Visual Studio proporciona un **subprocesos** ventana, una ventana de subprocesos de GPU, una ventana Inspección paralela y otras características que facilitan la depuración multiproceso. La mejor manera de obtener información sobre las características de subprocesos es realizar los tutoriales. Vea [Tutorial: Depurar una aplicación multiproceso](../debugger/walkthrough-debugging-a-multithreaded-application.md) y [Tutorial: Depurar una aplicación de C++ AMP](https://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5).
 
  Visual Studio también proporciona eficaces puntos de interrupción y puntos de seguimiento, que pueden resultar muy útiles para depurar aplicaciones multiproceso. Puede utilizar filtros de puntos de interrupción para colocar puntos de interrupción en subprocesos individuales. Consulte [usar puntos de interrupción](../debugger/using-breakpoints.md)
 
@@ -83,11 +83,11 @@ Un paseo guiado por las características de depuración de subprocesos, con espe
 
 - Los puntos de seguimiento le habilitan para poder seguir paso a paso ejecución de su programa sin interrupciones. Esto puede ser útil para estudiar problemas como los interbloqueos.
 
-  [Subprocesamiento](http://msdn.microsoft.com/library/7b46a7d9-c6f1-46d1-a947-ae97471bba87) Threading conceptos en [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] programación, incluido el código de ejemplo.
+  [Subprocesamiento](https://msdn.microsoft.com/library/7b46a7d9-c6f1-46d1-a947-ae97471bba87) Threading conceptos en [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] programación, incluido el código de ejemplo.
 
-  [Subprocesamiento múltiple en componentes](http://msdn.microsoft.com/library/2fc31e68-fb71-4544-b654-0ce720478779) cómo usar multithreading en [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] componentes.
+  [Subprocesamiento múltiple en componentes](https://msdn.microsoft.com/library/2fc31e68-fb71-4544-b654-0ce720478779) cómo usar multithreading en [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] componentes.
 
-  [Compatibilidad con multithreading (Visual C++) del código antiguo](http://msdn.microsoft.com/library/24425b1f-5031-4c6b-aac7-017115a40e7c) conceptos y el código de ejemplo de subprocesamiento para programadores de C++ mediante MFC.
+  [Compatibilidad con multithreading (Visual C++) del código antiguo](https://msdn.microsoft.com/library/24425b1f-5031-4c6b-aac7-017115a40e7c) conceptos y el código de ejemplo de subprocesamiento para programadores de C++ mediante MFC.
 
 ## <a name="see-also"></a>Vea también
  [Depurar procesos y subprocesos](../debugger/debug-threads-and-processes.md) [depuración remota](../debugger/remote-debugging.md)

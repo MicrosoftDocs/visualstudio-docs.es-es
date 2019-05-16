@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ec0071cb8bf990974c700ce296ebeb86b5ad8c17
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: a7b3921d9ef11ba01cad6d25f69f3a484e27c929
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045478"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698366"
 ---
 # <a name="walkthrough-building-an-application"></a>Tutorial: Creación de una aplicación
 
@@ -78,7 +78,7 @@ Usará el cuadro de diálogo **Extensiones y actualizaciones** para buscar e ins
 
 ## <a name="BKMK_CreateBuildConfig"></a> Crear una configuración de compilación personalizada
 
-Cuando se crea una solución, se definen automáticamente configuraciones de compilación de depuración y de versión y sus destinos de plataforma predeterminados para la solución. Es posible personalizar estas configuraciones o crear sus propias configuraciones. Las configuraciones de compilación especifican el tipo de compilación. Las plataformas de compilación especifican el sistema operativo de destino de una aplicación para esa configuración. Para obtener más información, consulte [Descripción de las configuraciones de compilación](../ide/understanding-build-configurations.md), [Descripción de las plataformas de compilación](../ide/understanding-build-platforms.md) y [Configuraciones Debug y Release](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).
+Cuando se crea una solución, se definen automáticamente configuraciones de compilación de depuración y de versión y sus destinos de plataforma predeterminados para la solución. Es posible personalizar estas configuraciones o crear sus propias configuraciones. Las configuraciones de compilación especifican el tipo de compilación. Las plataformas de compilación especifican el sistema operativo de destino de una aplicación para esa configuración. Para obtener más información, consulte [Descripción de las configuraciones de compilación](../ide/understanding-build-configurations.md), [Descripción de las plataformas de compilación](../ide/understanding-build-platforms.md) y [Configuraciones Debug y Release](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).
 
 Puede cambiar o crear configuraciones y opciones de plataforma mediante el cuadro de diálogo **Administrador de configuración**. En este procedimiento, creará una configuración de compilación para probar.
 
@@ -197,9 +197,9 @@ Se puede cambiar la cantidad de información sobre el proceso de compilación qu
 
     La información de compilación incluye la hora a la que se inició la compilación (situada al principio), el orden en que se procesaron los archivos y el tiempo que tardó en completarse el proceso (situado al final). Esta información también incluye la sintaxis real del compilador que Visual Studio ejecuta durante la compilación.
 
-    Por ejemplo, en la compilación de Visual C#, la opción [/nowarn](http://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83) muestra el código de advertencia, 1762, que ha especificado anteriormente en este tema, junto con otras tres advertencias.
+    Por ejemplo, en la compilación de Visual C#, la opción [/nowarn](https://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83) muestra el código de advertencia, 1762, que ha especificado anteriormente en este tema, junto con otras tres advertencias.
 
-    En la compilación de Visual Basic, [/nowarn](http://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83) no contiene advertencias concretas para excluir, por lo que no aparece ninguna advertencia.
+    En la compilación de Visual Basic, [/nowarn](https://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83) no contiene advertencias concretas para excluir, por lo que no aparece ninguna advertencia.
 
    > [!TIP]
    > Puede buscar en el contenido de la ventana **Salida** si pulsa las teclas Ctrl+F para mostrar el cuadro de diálogo **Buscar**.
@@ -264,6 +264,6 @@ Para obtener más información, vea [Cómo: Cambie el directorio de salida de co
 
 ## <a name="see-also"></a>Vea también
 
-- [Tutorial: Compilar un proyecto (C++)](http://msdn.microsoft.com/library/d459bc03-88ef-48d0-9f9a-82d17f0b6a4d)
-- [Información general sobre la precompilación de proyectos de aplicación web ASP.NET](http://msdn.microsoft.com/b940abbd-178d-4570-b441-52914fa7b887)
+- [Tutorial: Compilar un proyecto (C++)](https://msdn.microsoft.com/library/d459bc03-88ef-48d0-9f9a-82d17f0b6a4d)
+- [Información general sobre la precompilación de proyectos de aplicación web ASP.NET](https://msdn.microsoft.com/b940abbd-178d-4570-b441-52914fa7b887)
 - [Tutorial: Usar MSBuild](../msbuild/walkthrough-using-msbuild.md)

@@ -15,12 +15,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 2b5968c0ba577893bae87e67dee3aa0e8a178e41
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3dfe606e3083c937db3ba3d1e6cd49d34bace853
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58988507"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697971"
 ---
 # <a name="ca2202-do-not-dispose-objects-multiple-times"></a>CA2202: No usar Dispose varias veces en objetos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,4 +84,4 @@ finally
 ```
 
 ## <a name="see-also"></a>Vea también
- <xref:System.IDisposable?displayProperty=fullName> [Patrón de Dispose](http://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)
+ <xref:System.IDisposable?displayProperty=fullName> [Patrón de Dispose](https://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)

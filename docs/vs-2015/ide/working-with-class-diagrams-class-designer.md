@@ -16,12 +16,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b344621ea7980ce24c56a59a67edfe72f871f5ae
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c3243f43176f2d62edbc33f66ce2da85f32c26c7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443398"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698115"
 ---
 # <a name="working-with-class-diagrams-class-designer"></a>Trabajar con diagramas de clases (Diseñador de clases)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,4 +69,4 @@ Con los diagramas de clases, es más fácil comprender la estructura de clases d
 ## <a name="see-also"></a>Vea también  
  [Ver tipos y relaciones (Diseñador de clases)](../ide/viewing-types-and-relationships-class-designer.md)   
  [Cómo: Personalizar los diagramas de clases (Diseñador de clases)](../ide/how-to-customize-class-diagrams-class-designer.md)   
- [Cómo: Quitar formas de tipo de diagramas de clases (Diseñador de clases)](http://msdn.microsoft.com/ae41897d-d066-4b8c-bb9b-05436e12ff39)
+ [Cómo: Quitar formas de tipo de diagramas de clases (Diseñador de clases)](https://msdn.microsoft.com/ae41897d-d066-4b8c-bb9b-05436e12ff39)

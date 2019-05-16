@@ -16,19 +16,19 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 55b24facd3a9ec935277a42c211a64d824ed6d7f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: deb2e446ff051b52e9c34d28abfa99436c064ad6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116750"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680904"
 ---
 # <a name="extract-interface-refactoring-c"></a>Extraer interfaz (Refactorización, C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Extraer interfaz es una operación de refactorización que proporciona una manera sencilla para crear una nueva interfaz con miembros que se originan en una clase existente, estructura o interfaz.  
   
- Cuando varios clientes utilizan el mismo subconjunto de miembros de una clase, estructura o interfaz, o cuando varias clases, estructuras o interfaces tienen un subconjunto de miembros en común, puede ser útil integrar el subconjunto de miembros en una interfaz. Para obtener más información sobre el uso de interfaces, vea [Interfaces](http://msdn.microsoft.com/library/2feda177-ce11-432d-81b4-d50f5f35fd37).  
+ Cuando varios clientes utilizan el mismo subconjunto de miembros de una clase, estructura o interfaz, o cuando varias clases, estructuras o interfaces tienen un subconjunto de miembros en común, puede ser útil integrar el subconjunto de miembros en una interfaz. Para obtener más información sobre el uso de interfaces, vea [Interfaces](https://msdn.microsoft.com/library/2feda177-ce11-432d-81b4-d50f5f35fd37).  
   
  Extraer interfaz genera una interfaz en un archivo nuevo y coloca el cursor al principio del archivo nuevo. Puede especificar qué miembros se extraerán a la nueva interfaz, el nombre de la nueva interfaz y el nombre del archivo generado mediante el **Extraer interfaz** cuadro de diálogo.  
   

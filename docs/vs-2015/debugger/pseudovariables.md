@@ -18,12 +18,12 @@ caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ac9800025bd55237a4f1d19ca6f07c78c757b603
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e9ce72d69cb64b0421771324803a785546fa884f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58986833"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693766"
 ---
 # <a name="pseudovariables"></a>Pseudovariables
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ $handles
 |`$clk`|Muestra la hora en ciclos de reloj.|  
 |`$user`|Muestra una estructura con información de la cuenta que ejecuta la aplicación. Por razones de seguridad, no se muestra la información de contraseña.|  
 |`$exceptionstack`|Muestra el seguimiento de pila de excepción actual de Windows Runtime. `$ exceptionstack` solo funciona en aplicaciones de la Tienda que se ejecutan en Windows 8.1 o versiones posteriores. No se admite `$ exceptionstack` para excepciones de C++ y SHE.|  
-|`$ReturnValue`|Muestra el valor devuelto de un método de .NET Framework. Consulte [examinar los valores devueltos de llamadas de método](http://msdn.microsoft.com/library/e3245b37-8e2e-4200-ba84-133726e95f1f)|  
+|`$ReturnValue`|Muestra el valor devuelto de un método de .NET Framework. Consulte [examinar los valores devueltos de llamadas de método](https://msdn.microsoft.com/library/e3245b37-8e2e-4200-ba84-133726e95f1f)|  
   
  En C# y Visual Basic, puede utilizar las pseudovariables que se muestran en esta tabla:  
   
@@ -68,8 +68,8 @@ $handles
 |`$delete` o `$$delete`|Elimina una variable implícita que se creó en la ventana **Inmediato**. La sintaxis es `$delete,` *variable* o`$delete,` *variable*`.`|  
 |`$objectids` o `$listobjectids`|Muestra todos los identificadores de objetos activos como elementos secundarios de la expresión especificada. La sintaxis es `$objectid,` *expresión* o`$listobjectids,` *expresión*`.`|  
 |`$` *N* `#`|Muestra el objeto cuyo identificador es igual a *N*.|  
-|`$dynamic`|Muestra el nodo **Vista dinámica** especial para un objeto que implementa la interfaz `IDynamicMetaObjectProvider`. . La sintaxis es el *objeto* `$dynamic,`. Esta característica solo se aplica a código que utiliza .NET Framework versión 4. Consulte [vista dinámica](http://msdn.microsoft.com/library/4c851b17-2c12-46a0-9828-eb6ea6f5c563).|  
+|`$dynamic`|Muestra el nodo **Vista dinámica** especial para un objeto que implementa la interfaz `IDynamicMetaObjectProvider`. . La sintaxis es el *objeto* `$dynamic,`. Esta característica solo se aplica a código que utiliza .NET Framework versión 4. Consulte [vista dinámica](https://msdn.microsoft.com/library/4c851b17-2c12-46a0-9828-eb6ea6f5c563).|  
   
 ## <a name="see-also"></a>Vea también  
  [Ventanas Inspección e Inspección rápida](../debugger/watch-and-quickwatch-windows.md)   
- [Ventanas de variables](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)
+ [Ventanas de variables](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)

@@ -13,12 +13,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c1fb81261f52fa5aaf73c30579332779ae5bfa17
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 5e772d5dddcdde2306212e8a8fc48b9e39ae47a8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443181"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696400"
 ---
 # <a name="visual-c-classes-in-class-designer"></a>Clase de Visual C++ en el Diseñador de clases
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ class Penguin : public Bird, public Swimmer {};
 > [!NOTE]
 > No se admite el comando **Mostrar clases derivadas** para el código de C++. Para mostrar las clases derivadas, vaya a Vista de clases, expanda el nodo de tipo, expanda la subcarpeta **Tipos derivados** y arrastre esos tipos al diagrama de clases.  
   
- Para más información sobre la herencia de varias clases, vea [(NO ESTÁ EN LA COMPILACIÓN) Herencia múltiple](http://msdn.microsoft.com/3b74185e-2beb-4e29-8684-441e51d2a2ca) y [Varias clases base](http://msdn.microsoft.com/library/a30c69fe-401c-4a87-96a0-e0da70c7c740).  
+ Para más información sobre la herencia de varias clases, vea [(NO ESTÁ EN LA COMPILACIÓN) Herencia múltiple](https://msdn.microsoft.com/3b74185e-2beb-4e29-8684-441e51d2a2ca) y [Varias clases base](https://msdn.microsoft.com/library/a30c69fe-401c-4a87-96a0-e0da70c7c740).  
   
 ## <a name="abstract-classes"></a>Clases abstractas  
  El Diseñador de clases admite clases abstractas (también denominadas "clases base abstractas"). Se trata de clases de las que nunca se crean instancias, pero de las que se pueden derivar otras clases. Mediante un ejemplo de la anterior sección "Herencia múltiple" de este documento, puede crear instancias de la clase `Bird` como objetos individuales de la manera siguiente:  
@@ -121,7 +121,7 @@ typedef struct
   
  Las estructuras también pueden ser anónimas. El Diseñador de clases muestra las clases y las estructuras anónimas del mismo modo que muestra el tipo respectivo. Aunque puede declarar y mostrar clases y estructuras anónimas, el Diseñador de clases no usará el nombre de etiqueta que usted especifique, sino que usará el nombre que genere la Vista de clases. La clase o estructura aparece en la Vista de clases y el Diseñador de clases como un elemento denominado **__unnamed**.  
   
- Para más información sobre las clases anónimas, vea [Tipos de clase anónima](http://msdn.microsoft.com/library/9ba667b2-8c2a-4c29-82a6-fa120b9233c8).  
+ Para más información sobre las clases anónimas, vea [Tipos de clase anónima](https://msdn.microsoft.com/library/9ba667b2-8c2a-4c29-82a6-fa120b9233c8).  
   
 ## <a name="template-classes"></a>Clases de plantillas  
  El Diseñador de clases admite la visualización de clases de plantillas. Se admiten las declaraciones anidadas. En la tabla siguiente se muestran algunas declaraciones típicas.  
@@ -171,8 +171,8 @@ typedef struct
   
 ## <a name="see-also"></a>Vea también  
  [Trabajar con código de Visual C++ (Diseñador de clases)](../ide/working-with-visual-cpp-code-class-designer.md)   
- [Clases y structs](http://msdn.microsoft.com/library/516dd496-13fb-4f17-845a-e9ca45437873)   
- [Tipos de clase anónima](http://msdn.microsoft.com/library/9ba667b2-8c2a-4c29-82a6-fa120b9233c8)   
- [(NO ESTÁ EN LA COMPILACIÓN) Herencia múltiple](http://msdn.microsoft.com/3b74185e-2beb-4e29-8684-441e51d2a2ca)   
- [Varias clases base](http://msdn.microsoft.com/library/a30c69fe-401c-4a87-96a0-e0da70c7c740)   
- [Templates](http://msdn.microsoft.com/library/90fcc14a-2092-47af-9d2e-dba26d25b872) (Plantillas [C++])
+ [Clases y structs](https://msdn.microsoft.com/library/516dd496-13fb-4f17-845a-e9ca45437873)   
+ [Tipos de clase anónima](https://msdn.microsoft.com/library/9ba667b2-8c2a-4c29-82a6-fa120b9233c8)   
+ [(NO ESTÁ EN LA COMPILACIÓN) Herencia múltiple](https://msdn.microsoft.com/3b74185e-2beb-4e29-8684-441e51d2a2ca)   
+ [Varias clases base](https://msdn.microsoft.com/library/a30c69fe-401c-4a87-96a0-e0da70c7c740)   
+ [Templates](https://msdn.microsoft.com/library/90fcc14a-2092-47af-9d2e-dba26d25b872) (Plantillas [C++])

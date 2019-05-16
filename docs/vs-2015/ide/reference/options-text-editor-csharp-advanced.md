@@ -20,12 +20,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4c8b957517a7b539f74a9715b92b8a2945d3fe5c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 73148f8c3f569f3d585f6127b7ec713c766b0f8b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441377"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674252"
 ---
 # <a name="options-text-editor-c-advanced"></a>Opciones, editor de texto, C#, avanzado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "63441377"
 Use este cuadro de diálogo para modificar la configuración del formato del editor, la refactorización de código y los comentarios de documentación XML para Visual C#. Para tener acceso a este cuadro de diálogo, haga clic en **Opciones** en el menú **Herramientas**, expanda la carpeta **Editor de texto**, expanda **C#** y, después, haga clic en **Opciones avanzadas**.  
   
 > [!NOTE]
-> Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Los cuadros de diálogo y comandos de menú que se ven pueden diferir de los descritos en la Ayuda, en función de los valores de configuración o de edición activos. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="outlining"></a>esquematizar  
  Especificar el modo de esquematización al abrir los archivos  
@@ -68,7 +68,7 @@ Use este cuadro de diálogo para modificar la configuración del formato del edi
   
 ## <a name="xml-documentation-comments"></a>Comentarios de la documentación XML  
  Generar comentarios de documentación XML para ///  
- Cuando está seleccionada, inserta las etiquetas de inicio y final \<summary> automáticamente para los comentarios de documentación XML después de que escriba la introducción de comentario ///. Para obtener más información sobre la documentación XML, vea [Comentarios de documentación XML](http://msdn.microsoft.com/library/803b7f7b-7428-4725-b5db-9a6cff273199).  
+ Cuando está seleccionada, inserta las etiquetas de inicio y final \<summary> automáticamente para los comentarios de documentación XML después de que escriba la introducción de comentario ///. Para obtener más información sobre la documentación XML, vea [Comentarios de documentación XML](https://msdn.microsoft.com/library/803b7f7b-7428-4725-b5db-9a6cff273199).  
   
 ## <a name="implement-interface"></a>Implementar interfaz  
  Delimitar el código generado con #region  
@@ -79,6 +79,6 @@ Use este cuadro de diálogo para modificar la configuración del formato del edi
  Cuando está seleccionada, las directivas Using `System` aparecen antes que otras directivas Using. Para más información, vea [Organización de directivas using](../../misc/sort-usings.md).  
   
 ## <a name="see-also"></a>Vea también  
- [Comentarios de documentación XML](http://msdn.microsoft.com/library/803b7f7b-7428-4725-b5db-9a6cff273199)   
+ [Comentarios de documentación XML](https://msdn.microsoft.com/library/803b7f7b-7428-4725-b5db-9a6cff273199)   
  [Opciones del editor específicas del lenguaje](../../ide/reference/setting-language-specific-editor-options.md)   
  [IntelliSense para Visual C#](../../ide/visual-csharp-intellisense.md)

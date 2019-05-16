@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 27eeecc4330f772a2e1e8e065f927a8b17c03020
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 994b29fb4592d55a04389896ee9db8848dceda67
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064315"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695389"
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>Procedimiento Suprimir advertencias del compilador
 
@@ -106,7 +106,7 @@ Edite el archivo .vbproj del proyecto para ocultar advertencias del compilador e
 
     La ventana **Salida** ya no muestra las advertencias que ha especificado.
 
-   Para obtener más información, vea [/nowarn](http://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83).
+   Para obtener más información, vea [/nowarn](https://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83).
 
 ## <a name="see-also"></a>Vea también
 

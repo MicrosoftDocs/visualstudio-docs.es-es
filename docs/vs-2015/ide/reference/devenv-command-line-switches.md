@@ -21,12 +21,12 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0cb2d42db65c5eb77aae324d2c10c25010eb8b8f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 48632a08b3ed59d65b7a551244c295b012bef665
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444736"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690977"
 ---
 # <a name="devenv-command-line-switches"></a>Modificadores de línea de comandos para Devenv
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -76,7 +76,7 @@ Devenv permite establecer diversas opciones para el entorno de desarrollo integr
 |[/Log (devenv.exe)](../../ide/reference/log-devenv-exe.md)|Inicia [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] y registra toda la actividad en el archivo de registro.|  
 |[/Run (devenv.exe)](../../ide/reference/run-devenv-exe.md) o `/r`|Compila y ejecuta la solución especificada.|  
 |[/Runexit (devenv.exe)](../../ide/reference/runexit-devenv-exe.md)|Compila y ejecuta la solución especificada, minimiza el IDE cuando se ejecuta la solución y cierra el IDE una vez finalizada la ejecución de la solución.|  
-|[/UseEnv (devenv.exe)](../../ide/reference/useenv-devenv-exe.md)|Hace que el IDE use las variables de entorno PATH, INCLUDE y LIB para la compilación de [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] en lugar de la configuración especificada en la sección Directorios de VC++ de las opciones de **Proyectos** del cuadro de diálogo **Opciones**. Para obtener más información, vea [Establecer la ruta de acceso y las variables de entorno para compilar desde la línea de comandos](http://msdn.microsoft.com/library/99389528-deb5-43b9-b99a-03c8773ebaf4).|  
+|[/UseEnv (devenv.exe)](../../ide/reference/useenv-devenv-exe.md)|Hace que el IDE use las variables de entorno PATH, INCLUDE y LIB para la compilación de [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] en lugar de la configuración especificada en la sección Directorios de VC++ de las opciones de **Proyectos** del cuadro de diálogo **Opciones**. Para obtener más información, vea [Establecer la ruta de acceso y las variables de entorno para compilar desde la línea de comandos](https://msdn.microsoft.com/library/99389528-deb5-43b9-b99a-03c8773ebaf4).|  
 |[/Edit (devenv.exe)](../../ide/reference/edit-devenv-exe.md)|Abre los archivos especificados en una instancia en ejecución de esta aplicación. Si no hay ninguna instancia en ejecución, iniciará una nueva instancia con un diseño de ventanas simplificado.|  
 |[/ResetAddin (devenv.exe)](../../ide/reference/resetaddin-devenv-exe.md)|Inicia una instancia del IDE de Visual Studio sin cargar el complemento especificado.|  
 |[/SafeMode (devenv.exe)](../../ide/reference/safemode-devenv-exe.md)|Inicia [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] en modo seguro y solo carga el entorno y los servicios predeterminados, así como las versiones de paquetes de terceros suministradas.|  

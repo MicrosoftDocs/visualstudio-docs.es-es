@@ -19,12 +19,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 677af3ccbad28ed4eca3db2f98b82ef432b48676
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e1f2ee066e448c0c039c4288c39aa13a646bc46a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58988476"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697455"
 ---
 # <a name="measuring-complexity-and-maintainability-of-managed-code"></a>Medir la complejidad y el mantenimiento del código administrado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,12 +42,12 @@ La mayor complejidad de las aplicaciones de software moderno también aumenta la
   
  [Trabajar con datos de métricas de código](../code-quality/working-with-code-metrics-data.md)  
   
- [Cómo: Copiar resultados de métrica del código en el Portapapeles](http://msdn.microsoft.com/bce8fa29-e39c-4855-aab9-8346257657c5)  
+ [Cómo: Copiar resultados de métrica del código en el Portapapeles](https://msdn.microsoft.com/bce8fa29-e39c-4855-aab9-8346257657c5)  
   
- [Cómo: Exportar resultados de métrica de código a Excel](http://msdn.microsoft.com/affc08f3-24e5-446d-9076-bf517663e582)  
+ [Cómo: Exportar resultados de métrica de código a Excel](https://msdn.microsoft.com/affc08f3-24e5-446d-9076-bf517663e582)  
   
- [Cómo: Crear un elemento de trabajo basado en un resultado](http://msdn.microsoft.com/9016393b-b5a3-4d6b-ab6d-f80bafafc0da)  
+ [Cómo: Crear un elemento de trabajo basado en un resultado](https://msdn.microsoft.com/9016393b-b5a3-4d6b-ab6d-f80bafafc0da)  
   
 ## <a name="see-also"></a>Vea también  
  [Solucionar problemas de métricas de código](../code-quality/troubleshooting-code-metrics-issues.md)   
- [Realizar tareas comunes de desarrollo](http://msdn.microsoft.com/4cd9702a-1e21-4f2d-8e86-e1be4bc74f0b)
+ [Realizar tareas comunes de desarrollo](https://msdn.microsoft.com/4cd9702a-1e21-4f2d-8e86-e1be4bc74f0b)

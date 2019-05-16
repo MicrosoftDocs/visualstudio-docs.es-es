@@ -9,12 +9,12 @@ caps.latest.revision: 28
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 35c81dd879866d6a707e58add4a4fa94a254a918
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: a92d0ead091167437904c384b8f9afca2a3ab89c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433026"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696204"
 ---
 # <a name="how-to-upgrade-from-a-trial-edition-of-visual-studio"></a>Cómo: Actualizar de versiones de prueba de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,4 +44,4 @@ Puede evaluar la versión preliminar de Visual Studio durante 14 días sin regis
     > El acceso a Internet es necesario para registrar y desbloquear cualquier edición de Visual Studio. Una vez registrado Visual Studio, la conexión a Internet es opcional.
 
 ## <a name="see-also"></a>Vea también
- [Instalar Visual Studio](../install/install-visual-studio-2015.md) [Iniciar sesión en Visual Studio](../ide/signing-in-to-visual-studio.md) [Cómo: Encontrar la clave de producto de Visual Studio](../install/how-to-locate-the-visual-studio-product-key.md) [Localizar o cambiar la clave del producto para Team Foundation Server](http://msdn.microsoft.com/library/64f29927-b520-4c9f-b633-bcb527e562cd) [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)
+ [Instalar Visual Studio](../install/install-visual-studio-2015.md) [Iniciar sesión en Visual Studio](../ide/signing-in-to-visual-studio.md) [Cómo: Encontrar la clave de producto de Visual Studio](../install/how-to-locate-the-visual-studio-product-key.md) [Localizar o cambiar la clave del producto para Team Foundation Server](https://msdn.microsoft.com/library/64f29927-b520-4c9f-b633-bcb527e562cd) [Personalizar la configuración de desarrollo en Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)

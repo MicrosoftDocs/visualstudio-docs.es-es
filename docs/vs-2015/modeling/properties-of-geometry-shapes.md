@@ -13,12 +13,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b8d848372521baebb48cb5b3924744e88970a728
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6646f67db427e291fd62b731c31109eaab16f991
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58995608"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701628"
 ---
 # <a name="properties-of-geometry-shapes"></a>Propiedades de las formas geométricas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Puede usar formas geométricas para especificar cómo se muestran las instancias
   
  Formas geométricas tienen las propiedades que aparecen en la tabla siguiente.  
   
-|Property|Descripción|Default|  
+|Propiedad|Descripción|Default|  
 |--------------|-----------------|-------------|  
 |Color de relleno|El color de relleno de esta forma.|Blanco|  
 |Modo de degradado de relleno|El modo de degradado de relleno de esta forma (Horizontal, Vertical, Diagonal hacia delante, hacia atrás Diagonal o ninguno).|Horizontal|  
@@ -56,4 +56,4 @@ Puede usar formas geométricas para especificar cómo se muestran las instancias
 |Help Keyword|La palabra clave que se utiliza para indizar la Ayuda F1 para esta forma.|\<none>|  
   
 ## <a name="see-also"></a>Vea también  
- [Glosario de las Herramientas del lenguaje específico de dominio](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Glosario de las Herramientas del lenguaje específico de dominio](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

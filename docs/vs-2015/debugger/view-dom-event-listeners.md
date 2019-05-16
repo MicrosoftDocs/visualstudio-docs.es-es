@@ -17,12 +17,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 945edb462b1ba849a3a1b9fd6797c8393b651163
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 64d4892080aaf0cf04e4b208b1a0bdb7a7a4480d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437681"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693584"
 ---
 # <a name="view-dom-event-listeners"></a>Ver agentes de escucha de eventos DOM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,9 +76,9 @@ Se aplica a Windows y Windows Phone] (.. /Image/windows_and_phone_content.png "w
      El **eventos** pestaña muestra los agentes de escucha de eventos para cualquier elemento que desee en la lista de la jerarquía.
 
 ### <a name="Tips"></a> Sugerencias para solucionar problemas relacionados con los agentes de escucha de eventos
- En algunos escenarios de aplicación, los agentes de escucha de eventos deben quitarse explícitamente mediante [removeEventListener](http://msdn.microsoft.com/library/ie/ff975250\(v=vs.85\).aspx). Use la **eventos** ficha en el explorador DOM para comprobar si se han quitado los agentes de escucha de eventos de los elementos DOM al ejecutar código. A continuación se ofrecen algunas sugerencias para resolver este tipo de problemas:
+ En algunos escenarios de aplicación, los agentes de escucha de eventos deben quitarse explícitamente mediante [removeEventListener](https://msdn.microsoft.com/library/ie/ff975250\(v=vs.85\).aspx). Use la **eventos** ficha en el explorador DOM para comprobar si se han quitado los agentes de escucha de eventos de los elementos DOM al ejecutar código. A continuación se ofrecen algunas sugerencias para resolver este tipo de problemas:
 
-- Para las aplicaciones que usan el modelo de navegación de una página que se implementa en Visual Studio [plantillas de proyecto](http://msdn.microsoft.com/library/windows/apps/hh758331.aspx), no es normalmente necesario quitar agentes de escucha de eventos registrados para los objetos, como los elementos DOM, que forman parte de una página. En este escenario, un elemento DOM y sus agentes de escucha de eventos asociados tienen la misma vigencia y se pueden recolectar.
+- Para las aplicaciones que usan el modelo de navegación de una página que se implementa en Visual Studio [plantillas de proyecto](https://msdn.microsoft.com/library/windows/apps/hh758331.aspx), no es normalmente necesario quitar agentes de escucha de eventos registrados para los objetos, como los elementos DOM, que forman parte de una página. En este escenario, un elemento DOM y sus agentes de escucha de eventos asociados tienen la misma vigencia y se pueden recolectar.
 
 - Si la vigencia del elemento u objeto DOM es diferente a la del agente de escucha de eventos asociado, es posible que deba llamar al método `removeEventListener`. Por ejemplo, si usa el evento `window.onresize`, es posible que deba quitar el agente de escucha de eventos al salir de la página en la que controla el evento.
 

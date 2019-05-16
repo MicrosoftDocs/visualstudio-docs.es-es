@@ -13,12 +13,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 287e9362162c00a5292815ebacfb8047b2a0bb7b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7d669d01339b92c64cfe03ccb3ae897a1816aeac
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58999310"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701758"
 ---
 # <a name="properties-of-diagrams"></a>Propiedades de los diagramas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Puede establecer las propiedades que especifican cómo aparecerán los diagramas
   
  En la tabla siguiente se enumera las propiedades de los diagramas.  
   
-|Property|Descripción|Default|  
+|Propiedad|Descripción|Default|  
 |--------------|-----------------|-------------|  
 |Color de relleno|El color de relleno para el diagrama.|Blanco|  
 |Color del texto|El color del texto que se muestra en el diagrama.|Negro|  
@@ -50,4 +50,4 @@ Puede establecer las propiedades que especifican cómo aparecerán los diagramas
 |Help Keyword|La palabra clave que se utiliza para indizar la Ayuda F1 para este diagrama.|\<none>|  
   
 ## <a name="see-also"></a>Vea también  
- [Glosario de las Herramientas del lenguaje específico de dominio](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Glosario de las Herramientas del lenguaje específico de dominio](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

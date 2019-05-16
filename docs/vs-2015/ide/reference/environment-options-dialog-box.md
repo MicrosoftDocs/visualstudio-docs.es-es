@@ -12,12 +12,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dcfc73feb762ecc50412ca2dc67818e2fb60a64d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5880dbeb9f3f49f990a923fd48c27dd6167d59c8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441727"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692198"
 ---
 # <a name="environment-options-dialog-box"></a>Opciones de entorno (Cuadro de diálogo)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,12 +25,12 @@ ms.locfileid: "63441727"
 Puede usar las páginas de la carpeta **Entorno** en el cuadro de diálogo **Opciones** para establecer cómo ciertos elementos del entorno de desarrollo integrado (IDE) se muestran y se comportan. Para acceder a las páginas de Entorno, en la barra de menús, seleccione **Herramientas**, **Opciones** y, después, seleccione **Entorno**.  
   
 > [!NOTE]
-> Los cuadros de diálogo y comandos de menú que aparecen en el equipo pueden diferir de los descritos en la Ayuda, en función de los valores de configuración activos y de la edición de Visual Studio que está utilizando. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Los cuadros de diálogo y comandos de menú que aparecen en el equipo pueden diferir de los descritos en la Ayuda, en función de los valores de configuración activos y de la edición de Visual Studio que está utilizando. Para cambiar la configuración, elija la opción **Importar y exportar configuraciones** del menú **Herramientas** . Para obtener más información, consulte [Personalizar la configuración de desarrollo en Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 |Para buscar información sobre|Vea|  
 |----------------------------------|---------|  
 |Personalizar la apariencia y el comportamiento de ventanas, menús y otros elementos del IDE.|[General, Entorno, Opciones (Cuadro de diálogo)](../../ide/reference/general-environment-options-dialog-box.md)|  
-|Especificar la seguridad de los complementos.|[Seguridad de complementos, Entorno, Opciones (cuadro de diálogo)](http://msdn.microsoft.com/library/f95aa7af-70a5-4323-abe5-91bd6d264f4e)|  
+|Especificar la seguridad de los complementos.|[Seguridad de complementos, Entorno, Opciones (cuadro de diálogo)](https://msdn.microsoft.com/library/f95aa7af-70a5-4323-abe5-91bd6d264f4e)|  
 |Cambiar la configuración para guardar y restaurar archivos automáticamente.|[Autorrecuperación, Entorno, Opciones (Cuadro de diálogo)](../../ide/reference/autorecover-environment-options-dialog-box.md)|  
 |Establecer la configuración de administración y presentación de documentos que incluya el comportamiento de archivos varios.|[Documentos, Entorno, Opciones (Cuadro de diálogo)](../../ide/reference/documents-environment-options-dialog-box.md)|  
 |Personalizar cómo se producen las actualizaciones y cómo se administran las extensiones.|[Extensiones y actualizaciones, Entorno, Opciones (cuadro de diálogo)](../../ide/reference/extensions-and-updates-environment-options-dialog-box.md)|  

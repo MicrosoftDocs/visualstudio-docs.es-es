@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 40b1d2961fa0f0187d11bd87df54ff2ad3124275
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d0c258ea081e95179c507f76413ae2a5fc7d71a5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433515"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705849"
 ---
 # <a name="how-to-create-a-wcf-workflow-service-application"></a>Procedimiento Crear una aplicación de servicio de flujo de trabajo WCF
 Las aplicaciones de servicio de flujo de trabajo [!INCLUDE[indigo1](../includes/indigo1-md.md)] son servicios de comunicación distribuidos que transfieren mensajes entre clientes y ellos mismos entre límites de procesos. La implementación del contrato de servicios en el lado del servicio se efectúa mediante declaración a través de las actividades de flujo de trabajo de [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] de forma análoga a los servicios de flujo de trabajo heredados en .NET Framework 3.5.  
@@ -43,5 +43,5 @@ Las aplicaciones de servicio de flujo de trabajo [!INCLUDE[indigo1](../includes/
 8. La plantilla de proyecto crea una definición de servicio como XAML. Se abre [!INCLUDE[wfd1](../includes/wfd1-md.md)] en la vista de diseño con una actividad <xref:System.Activities.Statements.Sequence> que contiene un conjunto de actividades <xref:System.ServiceModel.Activities.Receive> y <xref:System.ServiceModel.Activities.SendReply>.  
   
 ## <a name="see-also"></a>Vea también  
- [Cómo: Crear una actividad](http://msdn.microsoft.com/library/c09b1e99-21b5-4d96-9c04-ec31db3f4436)   
+ [Cómo: Crear una actividad](https://msdn.microsoft.com/library/c09b1e99-21b5-4d96-9c04-ec31db3f4436)   
  [Crear un proyecto de flujo de trabajo](../workflow-designer/creating-a-workflow-project.md)

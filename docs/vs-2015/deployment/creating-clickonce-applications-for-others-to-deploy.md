@@ -25,12 +25,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 049d557959a53c00be461a2b0e44338216c7e3a3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ff76fe46f07ef713cb3c0e529e8029730450f2a6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58996055"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675602"
 ---
 # <a name="creating-clickonce-applications-for-others-to-deploy"></a>Crear aplicaciones ClickOnce para que las implementen terceros
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ No todos los desarrolladores que crean las implementaciones de ClickOnce plan im
 ## <a name="creating-customer-deployments-by-using-application-manifest-for-trust"></a>Creación de las implementaciones de clientes mediante el uso de manifiesto de aplicación de confianza  
  ClickOnce en .NET Framework 3.5 incluye una nueva característica que proporciona a los desarrolladores y los clientes una solución nueva para el escenario de cómo se deben firman los manifiestos. El manifiesto de aplicación ClickOnce admite un nuevo elemento denominado `<useManifestForTrust>` que permite que un desarrollador indicar que la firma digital del manifiesto de aplicación es lo que debe usarse para tomar decisiones de confianza. El programador usa las herramientas de empaquetado de ClickOnce, como Visual Studio, Mage.exe y MageUI.exe, debe incluir este elemento en el manifiesto de aplicación, así como para insertar su nombre de publicador y el nombre de la aplicación en el manifiesto.  
   
- Cuando se usa `<useManifestForTrust>`, el manifiesto de implementación no tiene que estar firmado con un certificado de Authenticode emitido por una entidad de certificación. En su lugar, pueden estar firmado con lo que se conoce como un certificado autofirmado. Un certificado autofirmado es generado por el cliente o el desarrollador mediante herramientas estándar de .NET Framework SDK y, a continuación, se aplica al manifiesto de implementación mediante el uso de las herramientas de implementación estándares de ClickOnce. Para obtener más información, consulte [Makecert.exe (Certificate Creation Tool)](http://msdn.microsoft.com/library/b0343f8e-9c41-4852-a85c-f8a0c408cf0d).  
+ Cuando se usa `<useManifestForTrust>`, el manifiesto de implementación no tiene que estar firmado con un certificado de Authenticode emitido por una entidad de certificación. En su lugar, pueden estar firmado con lo que se conoce como un certificado autofirmado. Un certificado autofirmado es generado por el cliente o el desarrollador mediante herramientas estándar de .NET Framework SDK y, a continuación, se aplica al manifiesto de implementación mediante el uso de las herramientas de implementación estándares de ClickOnce. Para obtener más información, consulte [Makecert.exe (Certificate Creation Tool)](https://msdn.microsoft.com/library/b0343f8e-9c41-4852-a85c-f8a0c408cf0d).  
   
  Usar un certificado autofirmado para el manifiesto de implementación presenta varias ventajas. Al eliminar la necesidad del cliente obtener o crear su propio certificado Authenticode, `<useManifestForTrust>` simplifica la implementación del cliente, permitiendo al desarrollador mantener su propia identidad de marca en la aplicación. El resultado es un conjunto de implementaciones con signo que son más seguras y que tienen identidades de aplicación único. Esto elimina el posible conflicto que puede producirse al implementar la misma aplicación para varios clientes.  
   

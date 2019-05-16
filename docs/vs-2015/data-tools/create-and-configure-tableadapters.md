@@ -20,12 +20,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 759cf18033adb962a6ccb97a31802963e12ba5c4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ab802e36a527952a0f0b789445bbdee8224af9d2
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431202"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705019"
 ---
 # <a name="create-and-configure-tableadapters"></a>Crear y configurar TableAdapters
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,9 +34,9 @@ Los TableAdapters comunican la aplicación con una base de datos. Se conectan a 
   
  Los TableAdapters se crean automáticamente al realizar una de las siguientes acciones:  
   
-- Ejecute el [Asistente para configuración de origen de datos](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f) y seleccione el **base de datos** o **servicio Web** tipo de origen de datos.  
+- Ejecute el [Asistente para configuración de origen de datos](https://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f) y seleccione el **base de datos** o **servicio Web** tipo de origen de datos.  
   
-- Arrastre los objetos de base de datos de [Explorador de servidores](http://msdn.microsoft.com/library/4ea29b3b-bbb2-45e4-9082-eaf635c41c4d) en el **Diseñador de Dataset**.  
+- Arrastre los objetos de base de datos de [Explorador de servidores](https://msdn.microsoft.com/library/4ea29b3b-bbb2-45e4-9082-eaf635c41c4d) en el **Diseñador de Dataset**.  
   
   Puede crear un nuevo TableAdapter y configurarlo con un origen de datos arrastrando un TableAdapter desde el cuadro de herramientas a un área vacío en el **Diseñador de Dataset** superficie.  
   

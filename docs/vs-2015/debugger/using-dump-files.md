@@ -25,12 +25,12 @@ caps.latest.revision: 56
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 11a3dc0e144ef49f6dcfbe6d8ea0c6dfbc4bca40
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 3a316006ba8983e00906e041d243d8f7c82d6277
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071777"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684297"
 ---
 # <a name="using-dump-files"></a>Uso de archivos de volcado de memoria
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,11 +76,11 @@ Archivos de volcado de memoria con o sin montones; crear un archivo de volcado d
   
 - Visual Studio puede depurar archivos de volcado de memoria de aplicaciones nativas desde dispositivos ARM. Visual Studio también puede depurar archivos de volcado de memoria de aplicaciones administradas desde dispositivos ARM pero solo en el depurador nativo.  
   
-- Para depurar [modo kernel](http://msdn.microsoft.com/library/windows/hardware/ff551880.aspx) volcar los archivos en Visual Studio 2013, descargue el [Windows 8.1 versión de depuración de las herramientas para Windows](http://msdn.microsoft.com/windows/hardware/gg463009). Consulte [depuración del Kernel en Visual Studio](http://msdn.microsoft.com/library/windows/hardware/jj149675.aspx).  
+- Para depurar [modo kernel](https://msdn.microsoft.com/library/windows/hardware/ff551880.aspx) volcar los archivos en Visual Studio 2013, descargue el [Windows 8.1 versión de depuración de las herramientas para Windows](https://msdn.microsoft.com/windows/hardware/gg463009). Consulte [depuración del Kernel en Visual Studio](https://msdn.microsoft.com/library/windows/hardware/jj149675.aspx).  
   
 - Visual Studio no puede depurar archivos de volcado guardados en el formato de volcado anterior conocido como un [volcado completo en modo usuario](/windows-hardware/drivers/debugger/user-mode-dump-files#full). Tenga en cuenta que un volcado de memoria completo en modo usuario no es igual que un volcado de memoria con montón.  
   
-- Para depurar con el [SOS.dll (extensión de depuración de SOS)](http://msdn.microsoft.com/library/9ac1b522-77ab-4cdc-852a-20fcdc9ae498) en Visual Studio, debe instalar la depuración de las herramientas de Windows que forma parte del Windows Driver Kit (WDK). Consulte [Windows 8.1 Preview: Descargue kits, bits y herramientas](http://msdn.microsoft.com/library/windows/hardware/bg127147.aspx).  
+- Para depurar con el [SOS.dll (extensión de depuración de SOS)](https://msdn.microsoft.com/library/9ac1b522-77ab-4cdc-852a-20fcdc9ae498) en Visual Studio, debe instalar la depuración de las herramientas de Windows que forma parte del Windows Driver Kit (WDK). Consulte [Windows 8.1 Preview: Descargue kits, bits y herramientas](https://msdn.microsoft.com/library/windows/hardware/bg127147.aspx).  
   
   ![Volver al principio](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contenido](#BKMK_Contents)  
   
@@ -91,7 +91,7 @@ Archivos de volcado de memoria con o sin montones; crear un archivo de volcado d
   
 - Con [depuración Just](../debugger/just-in-time-debugging-in-visual-studio.md) habilitado, puede asociar el depurador a un proceso bloqueado que se ejecuta fuera del depurador y, a continuación, guardar un archivo de volcado. Consulte [adjuntar a procesos en ejecución](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)  
   
-  También puede crear archivos de volcado de memoria con cualquier programa que admita el formato de minivolcado de Windows. Por ejemplo, el **Procdump** utilidad de línea de comandos de [Windows Sysinternals](http://technet.microsoft.com/sysinternals/default) puede crear archivos de volcado de bloqueo de proceso basados en desencadenadores o a petición. Consulte [requisitos y limitaciones](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations) en este tema para obtener más información sobre el uso de otras herramientas para crear archivos de volcado de memoria.  
+  También puede crear archivos de volcado de memoria con cualquier programa que admita el formato de minivolcado de Windows. Por ejemplo, el **Procdump** utilidad de línea de comandos de [Windows Sysinternals](https://technet.microsoft.com/sysinternals/default) puede crear archivos de volcado de bloqueo de proceso basados en desencadenadores o a petición. Consulte [requisitos y limitaciones](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations) en este tema para obtener más información sobre el uso de otras herramientas para crear archivos de volcado de memoria.  
   
   ![Volver al principio](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contenido](#BKMK_Contents)  
   

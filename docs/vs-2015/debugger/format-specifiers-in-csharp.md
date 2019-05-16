@@ -27,12 +27,12 @@ caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 47287bdc5bf0081970f4077ee8749a1ed0d71dad
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 6085ba95d3880417e517530069734052741113e2
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60118245"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65682485"
 ---
 # <a name="format-specifiers-in-c"></a>Especificadores de formato en C\#
 
@@ -64,7 +64,7 @@ La siguiente tabla muestra los especificadores de formato de C# que reconoce el 
 
 |Especificador|Formato|Valor de inspección original|Muestra|
 |---------------|------------|--------------------------|--------------|
-|ac|Fuerza la evaluación de una expresión. Esto puede resultar útil si se desactiva la evaluación implícita de propiedades y las llamadas a funciones implícitas. Vea [Side Effects and Expressions](http://msdn.microsoft.com/library/e1f8a6ea-9e19-481d-b6bd-df120ad3bf4e).|Mensaje “El usuario ha desactivado la evaluación de funciones implícita”|\<value>|
+|ac|Fuerza la evaluación de una expresión. Esto puede resultar útil si se desactiva la evaluación implícita de propiedades y las llamadas a funciones implícitas. Vea [Side Effects and Expressions](https://msdn.microsoft.com/library/e1f8a6ea-9e19-481d-b6bd-df120ad3bf4e).|Mensaje “El usuario ha desactivado la evaluación de funciones implícita”|\<value>|
 |d|Entero decimal|0x0065|101|
 |dynamic|Muestra el objeto especificado mediante un vista dinámica|Muestra todos los miembros del objeto, incluida la vista dinámica|Muestra solo la vista dinámica|
 |h|Entero hexadecimal|61541|0x0000F065|
@@ -76,4 +76,4 @@ La siguiente tabla muestra los especificadores de formato de C# que reconoce el 
 ## <a name="see-also"></a>Vea también
 
 - [Ventanas Inspección e Inspección rápida](../debugger/watch-and-quickwatch-windows.md)
-- [Ventanas de variables](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)
+- [Ventanas de variables](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)

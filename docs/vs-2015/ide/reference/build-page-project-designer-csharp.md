@@ -14,12 +14,12 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 99fb00ded29b9d0764f04d5062a7ee971954fbf7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: aa4eea56321d636efb6458b52b8ad2f271e439ce
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433764"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65673846"
 ---
 # <a name="build-page-project-designer-c"></a>Compilar (Página, Diseñador de proyectos) (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Use la página **Compilar** del **Diseñador de proyectos** para especificar las
  Las siguientes opciones le permiten seleccionar la configuración y la plataforma que se mostrarán o modificarán.  
   
 > [!NOTE]
-> Con las configuraciones de compilación simplificadas, el sistema del proyecto determina si se debe compilar una versión de lanzamiento o depuración. Por tanto, estas opciones no se muestran. Para obtener más información, consulte [Configuraciones Debug y Release](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
+> Con las configuraciones de compilación simplificadas, el sistema del proyecto determina si se debe compilar una versión de lanzamiento o depuración. Por tanto, estas opciones no se muestran. Para obtener más información, consulte [Configuraciones Debug y Release](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
   
  **Configuración**  
  Especifica qué opciones de configuración se mostrarán o modificarán. Los valores pueden ser **(Depurar) activa** (es el valor predeterminado), **Depuración**, **Lanzamiento** o **Todas las configuraciones**.  
@@ -46,7 +46,7 @@ Use la página **Compilar** del **Diseñador de proyectos** para especificar las
  Las opciones siguientes le permiten configurar varias opciones del compilador de C#.  
   
  **Símbolos de compilación condicional**  
- Especifica símbolos con los que realizar la compilación condicional. Separe los símbolos con un punto y coma (";"). Para obtener más información, consulte [/define (Opciones del compilador de C#)](http://msdn.microsoft.com/library/f17d7b4d-82d0-4133-8563-68cced1cac6e).  
+ Especifica símbolos con los que realizar la compilación condicional. Separe los símbolos con un punto y coma (";"). Para obtener más información, consulte [/define (Opciones del compilador de C#)](https://msdn.microsoft.com/library/f17d7b4d-82d0-4133-8563-68cced1cac6e).  
   
  **Definir constante DEBUG**  
  Define DEBUG como un símbolo en todos los archivos de código fuente de la aplicación. Seleccionar esta opción equivale a usar la opción de línea de comandos `/define:DEBUG`.  
@@ -57,7 +57,7 @@ Use la página **Compilar** del **Diseñador de proyectos** para especificar las
  **CPU de destino**  
  Especifica el procesador que será el destino del archivo de salida. Elija **x86** para cualquier procesador compatible con Intel de 32 bits; elija **x64** para cualquier procesador compatible con Intel de 64 bits; elija **ARM** para procesadores ARM; o elija **Cualquier CPU** para especificar que se aceptan todos los procesadores. **Cualquier CPU** es el valor predeterminado para los proyectos, ya que permite que la aplicación se ejecute en la gran mayoría del hardware.  
   
- Para obtener más información, consulte [/platform (Opciones del compilador de C#)](http://msdn.microsoft.com/library/c290ff5e-47f4-4a85-9bb3-9c2525b0be04).  
+ Para obtener más información, consulte [/platform (Opciones del compilador de C#)](https://msdn.microsoft.com/library/c290ff5e-47f4-4a85-9bb3-9c2525b0be04).  
   
  **Preferencia de 32 bits**  
  Si está seleccionada la casilla **Preferencia de 32 bits**, la aplicación se ejecuta como una aplicación de 32 bits en versiones de 32 bits y 64 bits de Windows. Si la casilla está desactivada, la aplicación se ejecutará como una aplicación de 32 bits en versiones de 32 bits de Windows y como una aplicación de 64 bits en versiones de 64 bits de Windows.  
@@ -73,22 +73,22 @@ Use la página **Compilar** del **Diseñador de proyectos** para especificar las
 - En la **Página de aplicación**, la lista **Marco de trabajo de destino** especifica .NET Framework 4.5.  
   
   **Permitir código no seguro**  
-  Permite la compilación de código en el que se usa la palabra clave [unsafe](http://msdn.microsoft.com/library/7e818009-1c6e-4b9e-b769-3728a01586a0). Para obtener más información, consulte [/unsafe (Opciones del compilador de C#)](http://msdn.microsoft.com/library/fdb77ed9-da03-45bd-bb7f-250704da1bcc).  
+  Permite la compilación de código en el que se usa la palabra clave [unsafe](https://msdn.microsoft.com/library/7e818009-1c6e-4b9e-b769-3728a01586a0). Para obtener más información, consulte [/unsafe (Opciones del compilador de C#)](https://msdn.microsoft.com/library/fdb77ed9-da03-45bd-bb7f-250704da1bcc).  
   
   **Optimizar código**  
-  Habilite o deshabilite las optimizaciones realizadas por el compilador para que el archivo de salida sea menor, más rápido y más eficaz. Para obtener más información, consulte [/optimize (Opciones del compilador de C#)](http://msdn.microsoft.com/library/6dd5b6f2-cd1d-4593-a9f4-1c2ed9404ca0).  
+  Habilite o deshabilite las optimizaciones realizadas por el compilador para que el archivo de salida sea menor, más rápido y más eficaz. Para obtener más información, consulte [/optimize (Opciones del compilador de C#)](https://msdn.microsoft.com/library/6dd5b6f2-cd1d-4593-a9f4-1c2ed9404ca0).  
   
 ## <a name="errors-and-warnings"></a>Errores y advertencias  
  Las siguientes opciones se usan para configurar las opciones de advertencia y error para el proceso de compilación.  
   
  **Nivel de advertencia**  
- Especifica el nivel que se debe mostrar para las advertencias del compilador. Para obtener más información, consulte [/warn (Opciones del compilador de C#)](http://msdn.microsoft.com/library/5f80ff59-4991-4382-9f9a-77da18446e71).  
+ Especifica el nivel que se debe mostrar para las advertencias del compilador. Para obtener más información, consulte [/warn (Opciones del compilador de C#)](https://msdn.microsoft.com/library/5f80ff59-4991-4382-9f9a-77da18446e71).  
   
  **Suprimir advertencias**  
- Bloquea la capacidad del compilador de generar una o varias advertencias. Separe varios números de advertencia con una coma o un punto y coma. Para obtener más información, consulte [/nowarn (Opciones del compilador de C#)](http://msdn.microsoft.com/library/6dcbc5e8-ae67-4566-9df3-f63cfdd9c4e4).  
+ Bloquea la capacidad del compilador de generar una o varias advertencias. Separe varios números de advertencia con una coma o un punto y coma. Para obtener más información, consulte [/nowarn (Opciones del compilador de C#)](https://msdn.microsoft.com/library/6dcbc5e8-ae67-4566-9df3-f63cfdd9c4e4).  
   
 ## <a name="treat-warnings-as-errors"></a>Tratar advertencias como errores  
- Las siguientes opciones se usan para especificar qué advertencias se tratan como errores. Seleccione una de las siguientes opciones para indicar en qué condiciones se devolverá un error cuando la compilación encuentra una advertencia. Para obtener más información, consulte [/warnaserror (Opciones del compilador de C#)](http://msdn.microsoft.com/library/04680ec3-08d6-4e2e-a274-38310e10e33c).  
+ Las siguientes opciones se usan para especificar qué advertencias se tratan como errores. Seleccione una de las siguientes opciones para indicar en qué condiciones se devolverá un error cuando la compilación encuentra una advertencia. Para obtener más información, consulte [/warnaserror (Opciones del compilador de C#)](https://msdn.microsoft.com/library/04680ec3-08d6-4e2e-a274-38310e10e33c).  
   
  **Ninguno**  
  No trata ninguna advertencia como error.  
@@ -103,22 +103,22 @@ Use la página **Compilar** del **Diseñador de proyectos** para especificar las
  Las siguientes opciones se usan para configurar las opciones de salida para el proceso de compilación.  
   
  **Ruta de acceso de salida**  
- Especifica la ubicación de los archivos de salida para la configuración de este proyecto. Escriba la ruta de acceso de salida de la compilación en este cuadro, o elija el botón **Examinar** para especificar una ruta de acceso. Tenga en cuenta que la ruta de acceso es relativa; si especifica una ruta de acceso absoluta, se guardará como relativa. La ruta de acceso predeterminada es bin\Debug o bin\Release\\. Para obtener más información, consulte [Configuraciones Debug y Release](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
+ Especifica la ubicación de los archivos de salida para la configuración de este proyecto. Escriba la ruta de acceso de salida de la compilación en este cuadro, o elija el botón **Examinar** para especificar una ruta de acceso. Tenga en cuenta que la ruta de acceso es relativa; si especifica una ruta de acceso absoluta, se guardará como relativa. La ruta de acceso predeterminada es bin\Debug o bin\Release\\. Para obtener más información, consulte [Configuraciones Debug y Release](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
   
- Con las configuraciones de compilación simplificadas, el sistema del proyecto determina si se debe compilar una versión de lanzamiento o depuración. El comando **Compilar** del menú **Depuración** (F5) colocará la compilación en la ubicación de depuración independientemente de la **Ruta de acceso de salida** que especifique. En cambio, el comando **Compilar** del menú **Compilar** la coloca en la ubicación que especifique. Para obtener más información, consulte [Configuraciones Debug y Release](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
+ Con las configuraciones de compilación simplificadas, el sistema del proyecto determina si se debe compilar una versión de lanzamiento o depuración. El comando **Compilar** del menú **Depuración** (F5) colocará la compilación en la ubicación de depuración independientemente de la **Ruta de acceso de salida** que especifique. En cambio, el comando **Compilar** del menú **Compilar** la coloca en la ubicación que especifique. Para obtener más información, consulte [Configuraciones Debug y Release](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
   
  **Archivo de documentación XML**  
- Especifica el nombre de un archivo en el que se procesarán comentarios sobre documentación. Para obtener más información, consulte [/doc (Opciones del compilador de C#)](http://msdn.microsoft.com/library/849eea59-c936-4311-bad8-d07404480f2a).  
+ Especifica el nombre de un archivo en el que se procesarán comentarios sobre documentación. Para obtener más información, consulte [/doc (Opciones del compilador de C#)](https://msdn.microsoft.com/library/849eea59-c936-4311-bad8-d07404480f2a).  
   
  **Registrar para interoperabilidad COM**  
- Indica que la aplicación administrada expondrá un objeto COM (un contenedor CCW) que permite a un objeto COM interactuar con la aplicación administrada. La propiedad **Tipo de salida** de la [página Aplicación](../../ide/reference/application-page-project-designer-visual-basic.md) del **Diseñador de proyectos** de esta aplicación debe establecerse en **Biblioteca de clases** para que la propiedad **Registrar para interoperabilidad COM** esté disponible. Para ver una clase de ejemplo que puede incluir en la aplicación de [!INCLUDE[csprcs](../../includes/csprcs-md.md)] y exponer como un objeto COM, consulte [Clase COM de ejemplo](http://msdn.microsoft.com/library/6504dea9-ad1c-4993-a794-830fec5270af).  
+ Indica que la aplicación administrada expondrá un objeto COM (un contenedor CCW) que permite a un objeto COM interactuar con la aplicación administrada. La propiedad **Tipo de salida** de la [página Aplicación](../../ide/reference/application-page-project-designer-visual-basic.md) del **Diseñador de proyectos** de esta aplicación debe establecerse en **Biblioteca de clases** para que la propiedad **Registrar para interoperabilidad COM** esté disponible. Para ver una clase de ejemplo que puede incluir en la aplicación de [!INCLUDE[csprcs](../../includes/csprcs-md.md)] y exponer como un objeto COM, consulte [Clase COM de ejemplo](https://msdn.microsoft.com/library/6504dea9-ad1c-4993-a794-830fec5270af).  
   
  **Generar ensamblados de serialización**  
- Especifica si el compilador usará la herramienta Generador de serializador XML (Sgen.exe) para crear ensamblados de serialización XML. Los ensamblados de serialización pueden mejorar el rendimiento de inicio de <xref:System.Xml.Serialization.XmlSerializer> si ha usado esa clase para serializar los tipos en el código. De manera predeterminada, esta opción se establece en **Automático**, que especifica que los ensamblados de serialización se generan solo si ha usado <xref:System.Xml.Serialization.XmlSerializer> para codificar los tipos del código en XML. **Desactivado** especifica que los ensamblados de serialización no se generan nunca, independientemente de si el código usa <xref:System.Xml.Serialization.XmlSerializer>. **Activado** especifica que siempre se generan ensamblados de serialización. Los ensamblados de serialización se denominan `TypeName`.XmlSerializers.dll. Para obtener más información, consulte [Herramienta Generador de serializador XML (Sgen.exe)](http://msdn.microsoft.com/library/cc1d1f1c-fb26-4be9-885a-3fe84c81cec6).  
+ Especifica si el compilador usará la herramienta Generador de serializador XML (Sgen.exe) para crear ensamblados de serialización XML. Los ensamblados de serialización pueden mejorar el rendimiento de inicio de <xref:System.Xml.Serialization.XmlSerializer> si ha usado esa clase para serializar los tipos en el código. De manera predeterminada, esta opción se establece en **Automático**, que especifica que los ensamblados de serialización se generan solo si ha usado <xref:System.Xml.Serialization.XmlSerializer> para codificar los tipos del código en XML. **Desactivado** especifica que los ensamblados de serialización no se generan nunca, independientemente de si el código usa <xref:System.Xml.Serialization.XmlSerializer>. **Activado** especifica que siempre se generan ensamblados de serialización. Los ensamblados de serialización se denominan `TypeName`.XmlSerializers.dll. Para obtener más información, consulte [Herramienta Generador de serializador XML (Sgen.exe)](https://msdn.microsoft.com/library/cc1d1f1c-fb26-4be9-885a-3fe84c81cec6).  
   
  **Avanzadas**  
  Haga clic para mostrar el cuadro de diálogo [Configuración de compilación avanzada (Cuadro de diálogo, C#)](../../ide/reference/advanced-build-settings-dialog-box-csharp.md).  
   
 ## <a name="see-also"></a>Vea también  
  [Referencia de propiedades del proyecto](../../ide/reference/project-properties-reference.md)   
- [Opciones del compilador de C#](http://msdn.microsoft.com/library/d3403556-1816-4546-a782-e8223a772e44)
+ [Opciones del compilador de C#](https://msdn.microsoft.com/library/d3403556-1816-4546-a782-e8223a772e44)

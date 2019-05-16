@@ -9,12 +9,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e3067b86c7474858379a26803e6809b1c21f8d21
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9811963b6130c3b0c144feee928de915a4bd9ba9
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433090"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697011"
 ---
 # <a name="how-to-start-debugging-xslt"></a>Procedimiento Comenzar a depurar XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -89,4 +89,4 @@ namespace ConsoleApplication
   
 ## <a name="see-also"></a>Vea también  
  [Tutorial: Depurar una hoja de estilos XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)   
- [Información general de ejecución paso a paso el código](http://msdn.microsoft.com/8791dac9-64d1-4bb9-b59e-8d59af1833f9)
+ [Información general de ejecución paso a paso el código](https://msdn.microsoft.com/8791dac9-64d1-4bb9-b59e-8d59af1833f9)

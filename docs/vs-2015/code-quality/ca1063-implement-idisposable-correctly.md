@@ -15,12 +15,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 822ad7bea622400bfabd5a96a42d81ed4eabf0c4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 12a854c4e43385177730ceddf045b76e2e61d342
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081403"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686896"
 ---
 # <a name="ca1063-implement-idisposable-correctly"></a>CA1063: Implementar IDisposable correctamente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ ms.locfileid: "60081403"
 
   Infracción de cualquiera de estos patrones desencadenará esta advertencia.
 
-  Cada tipo IDisposable de raíz no sellada debe proporcionar su propio método Dispose (bool) void virtual protegido. Dispose() debe llamar a Dispose (true) y Finalize debe llamar a Dispose (false). Si va a crear un tipo IDisposable de raíz no sellada, debe definir Dispose (bool) y llamarlo. Para obtener más información, consulte [limpiar recursos no administrados](http://msdn.microsoft.com/library/a17b0066-71c2-4ba4-9822-8e19332fc213) en el [instrucciones de diseño de Framework](http://msdn.microsoft.com/library/5fbcaf4f-ea2a-4d20-b0d6-e61dee202b4b) sección de la documentación de .NET Framework.
+  Cada tipo IDisposable de raíz no sellada debe proporcionar su propio método Dispose (bool) void virtual protegido. Dispose() debe llamar a Dispose (true) y Finalize debe llamar a Dispose (false). Si va a crear un tipo IDisposable de raíz no sellada, debe definir Dispose (bool) y llamarlo. Para obtener más información, consulte [limpiar recursos no administrados](https://msdn.microsoft.com/library/a17b0066-71c2-4ba4-9822-8e19332fc213) en el [instrucciones de diseño de Framework](https://msdn.microsoft.com/library/5fbcaf4f-ea2a-4d20-b0d6-e61dee202b4b) sección de la documentación de .NET Framework.
 
 ## <a name="rule-description"></a>Descripción de la regla
  Todos los tipos IDisposable deben implementar el modelo de Dispose correctamente.

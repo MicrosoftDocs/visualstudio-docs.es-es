@@ -10,12 +10,12 @@ ms.assetid: 26adc860-ee4a-4f5c-95e1-e41b207dd7e6
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 1744801b7efe591c449e74796c3c7d297dc3f982
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 5b5bc2bacb53973bd552b983b742e4f9e68fe31b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061715"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687705"
 ---
 # <a name="when-to-create-project-types"></a>Momento para la creación de tipos de proyecto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ Crear un nuevo tipo de proyecto proporciona una base para personalizar [!INCLUDE
 |Tarea|Descripción|  
 |----------|-----------------|  
 |Control de comandos|Cualquier VSPackage puede controlar los comandos.|  
-|Creación de un editor|Editores personalizados se pueden registrar. Para obtener más información, consulte [editores y documentos Windows](http://msdn.microsoft.com/603625e1-62b6-413a-bc44-089346e166bc).|  
+|Creación de un editor|Editores personalizados se pueden registrar. Para obtener más información, consulte [editores y documentos Windows](https://msdn.microsoft.com/603625e1-62b6-413a-bc44-089346e166bc).|  
 |Propietario de windows|Puede crear ventanas de herramientas y documentos sin agregar un nuevo tipo de proyecto.|  
 |Expone las propiedades en la ventana Propiedades|Todos los objetos pueden exponer propiedades.|  
   
@@ -60,6 +60,6 @@ Crear un nuevo tipo de proyecto proporciona una base para personalizar [!INCLUDE
  Subtipos de proyecto se pueden usar para extender un tipo de proyecto administrado sin tener que crear un nuevo tipo de proyecto. Subtipos de proyecto usar agregación COM para ampliar proyectos administrados, escritos en Microsoft [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] o [!INCLUDE[csprcs](../../includes/csprcs-md.md)]. Con la agregación de COM, puede reutilizar gran parte de la implementación de sistema de proyecto administrado y personalizar para un escenario determinado mediante la agregación y el uso de interfaces admitidas. Para obtener más información acerca de subtipos de proyecto, vea [subtipos de proyecto](../../extensibility/internals/project-subtypes.md).  
   
 ## <a name="see-also"></a>Vea también  
- [Editores y documentos Windows](http://msdn.microsoft.com/603625e1-62b6-413a-bc44-089346e166bc)   
+ [Editores y documentos Windows](https://msdn.microsoft.com/603625e1-62b6-413a-bc44-089346e166bc)   
  [Lista de comprobación: Creación de nuevos tipos de proyecto](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [Jerarquías en Visual Studio](../../extensibility/internals/hierarchies-in-visual-studio.md)

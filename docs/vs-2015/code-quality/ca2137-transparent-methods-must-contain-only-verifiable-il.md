@@ -11,12 +11,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 2876a70eedb1191aaed91204505286f97e00a27b
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 2803e220cd38bc03efa464bbe857ab41fff1ea52
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58996774"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696228"
 ---
 # <a name="ca2137-transparent-methods-must-contain-only-verifiable-il"></a>CA2137: Los métodos transparentes deben contener solo IL que se pueda comprobar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "58996774"
 ## <a name="rule-description"></a>Descripción de la regla
  Esta regla se desencadena en los intentos del código transparente en seguridad de ejecutar MSIL no comprobable (Lenguaje intermedio de Microsoft). Sin embargo, la regla no contiene un comprobador de IL completo y, en su lugar, utiliza la heurística para detectar la mayoría de las infracciones de comprobación MSIL.
 
- Para estar seguro de que el código solo contiene MSIL comprobable, ejecute [Peverify.exe (herramienta PEVerify)](http://msdn.microsoft.com/library/f4f46f9e-8d08-4e66-a94b-0c69c9b0bbfa) en el ensamblado. Ejecutar PEVerify con la **/ transparente** opción que limita la salida a sólo puede comprobar los métodos transparentes que provocaría un error. Si la / opción transparente no se utiliza, PEVerify también comprueba los métodos críticos que pueden contener código no comprobable.
+ Para estar seguro de que el código solo contiene MSIL comprobable, ejecute [Peverify.exe (herramienta PEVerify)](https://msdn.microsoft.com/library/f4f46f9e-8d08-4e66-a94b-0c69c9b0bbfa) en el ensamblado. Ejecutar PEVerify con la **/ transparente** opción que limita la salida a sólo puede comprobar los métodos transparentes que provocaría un error. Si la / opción transparente no se utiliza, PEVerify también comprueba los métodos críticos que pueden contener código no comprobable.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
  Para corregir una infracción de esta regla, marque el método con el <xref:System.Security.SecurityCriticalAttribute> o <xref:System.Security.SecuritySafeCriticalAttribute> de atributo o quite el código no comprobable.
