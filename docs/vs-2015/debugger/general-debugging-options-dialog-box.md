@@ -22,12 +22,12 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cf4a3b699d3854ef2a502fb1bf1d7fb2d6204acb
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2dd7d3f41790fac7a37fc3a98d728757f5bad967
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446483"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704678"
 ---
 # <a name="general-debugging-options-dialog-box"></a>General, Depuración, Opciones (Cuadro de diálogo)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,11 +43,11 @@ El**herramientas / opciones / depuración / General** página permite establecer
  **Interrumpir cuando las excepciones crucen AppDomain o los límites administrados o nativos**  
  En la depuración administrada o en modo mixto, Common Language Runtime puede capturar excepciones que atraviesen los límites del dominio de aplicación o los límites administrados o nativos, cuando se cumplen las siguientes condiciones:  
   
- 1\) cuando código nativo llama a código administrado mediante la interoperabilidad COM y el código administrado produce una excepción. Consulte [Introducción a la interoperabilidad COM](http://msdn.microsoft.com/library/8bd62e68-383d-407f-998b-29aa0ce0fd67).  
+ 1\) cuando código nativo llama a código administrado mediante la interoperabilidad COM y el código administrado produce una excepción. Consulte [Introducción a la interoperabilidad COM](https://msdn.microsoft.com/library/8bd62e68-383d-407f-998b-29aa0ce0fd67).  
   
- 2\) al código administrado que se ejecuta en el dominio de aplicación 1 llama a código administrado en el dominio de aplicación 2 y el código en el dominio de aplicación 2 produce una excepción. Consulte [programar con dominios de aplicación](http://msdn.microsoft.com/bd36055b-56bd-43eb-b4d8-820c37172131).  
+ 2\) al código administrado que se ejecuta en el dominio de aplicación 1 llama a código administrado en el dominio de aplicación 2 y el código en el dominio de aplicación 2 produce una excepción. Consulte [programar con dominios de aplicación](https://msdn.microsoft.com/bd36055b-56bd-43eb-b4d8-820c37172131).  
   
- 3\) al código llama a una función mediante la reflexión y la función produce una excepción. Consulte [reflexión](http://msdn.microsoft.com/library/d1a58e7f-fb39-4d50-bf84-e3b8f9bf9775).  
+ 3\) al código llama a una función mediante la reflexión y la función produce una excepción. Consulte [reflexión](https://msdn.microsoft.com/library/d1a58e7f-fb39-4d50-bf84-e3b8f9bf9775).  
   
  En los casos 2) y 3), el código administrado de `mscorlib` a veces detecta la excepción, en lugar de Common Language Runtime. Esta opción no afecta a la interrupción en excepciones detectadas por `mscorlib`.  
   
@@ -61,7 +61,7 @@ El**herramientas / opciones / depuración / General** página permite establecer
  Permite establecer filtros en puntos de interrupción, de manera que solo afecten a procesos, subprocesos o equipos concretos.  
   
  **Habilitar al Asistente de excepciones**  
- Solo para código administrado. Las excepciones administradas abren el cuadro de diálogo Asistente de excepciones.  Consulte [Asistente de excepciones](http://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb).  
+ Solo para código administrado. Las excepciones administradas abren el cuadro de diálogo Asistente de excepciones.  Consulte [Asistente de excepciones](https://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb).  
   
  **Desenredar la pila de llamadas en las excepciones no controladas**  
  Hace que la ventana **Pila de llamadas** revierta la pila de llamadas hasta el punto anterior en el que se produjo la excepción no controlada.  
@@ -123,7 +123,7 @@ El**herramientas / opciones / depuración / General** página permite establecer
  **Cargar exportaciones de dll**  
  Carga las tablas de exportación de archivos DLL. La información de símbolos de las tablas de exportación de archivos DLL puede resultar útil si se trabaja con mensajes de Windows, procedimientos de Windows (WindowProc), objetos COM, cálculo de referencias o cualquier archivo DLL para el que no disponga de símbolos. La lectura de la información de exportación de archivos DLL implica cierta sobrecarga. Por lo tanto, esta funcionalidad está desactivada de forma predeterminada.  
   
- Para ver los símbolos que están disponibles en la tabla de exportación de un archivo DLL, utilice `dumpbin /exports`. Los símbolos están disponibles para cualquier archivo DLL de sistema de 32 bits. Si lee el resultado de `dumpbin /exports` , podrá ver el nombre exacto de la función, incluidos los caracteres no alfanuméricos. Esto resulta útil para establecer un punto de interrupción en una función. Los nombres de función procedentes de tablas de exportación de archivos DLL pueden aparecer truncados en otras partes del depurador. Las llamadas se muestran en una lista según el orden de llamada, y la función actual (la que está anidada a mayor profundidad) aparece en la parte superior. Para obtener más información, vea [dumpbin /exports](http://msdn.microsoft.com/library/2971ab7e-4ee6-478b-9c85-cda42a4ce1bf).  
+ Para ver los símbolos que están disponibles en la tabla de exportación de un archivo DLL, utilice `dumpbin /exports`. Los símbolos están disponibles para cualquier archivo DLL de sistema de 32 bits. Si lee el resultado de `dumpbin /exports` , podrá ver el nombre exacto de la función, incluidos los caracteres no alfanuméricos. Esto resulta útil para establecer un punto de interrupción en una función. Los nombres de función procedentes de tablas de exportación de archivos DLL pueden aparecer truncados en otras partes del depurador. Las llamadas se muestran en una lista según el orden de llamada, y la función actual (la que está anidada a mayor profundidad) aparece en la parte superior. Para obtener más información, vea [dumpbin /exports](https://msdn.microsoft.com/library/2971ab7e-4ee6-478b-9c85-cda42a4ce1bf).  
   
  **Mostrar diagrama de pilas paralelas abajo a arriba**  
  Controla la dirección en la que las pilas se muestran en la ventana **Pilas paralelas**.  
@@ -164,7 +164,7 @@ El**herramientas / opciones / depuración / General** página permite establecer
   Muestra el **Live Visual Tree** comandos en una barra de herramientas en la ventana principal de la aplicación XAML que se está depurando. Esta opción se introdujo en Visual Studio 2015 Update 2.  
   
   **Habilitar herramientas de diagnóstico durante la depuración**  
-  Durante la depuración, se abre la ventana de **Herramientas de diagnóstico**. Para obtener más información, consulte [integradas del depurador de generación de perfiles](http://msdn.microsoft.com/library/a1f40370-7b61-42c2-afc4-0e13eba98859).  
+  Durante la depuración, se abre la ventana de **Herramientas de diagnóstico**. Para obtener más información, consulte [integradas del depurador de generación de perfiles](https://msdn.microsoft.com/library/a1f40370-7b61-42c2-afc4-0e13eba98859).  
   
   **Mostrar PerfTip de tiempo transcurrido durante la depuración**  
   La ventana de código muestra el tiempo transcurrido de una determinada llamada de método durante la depuración.  

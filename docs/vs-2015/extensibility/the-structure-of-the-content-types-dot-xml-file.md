@@ -13,12 +13,12 @@ ms.assetid: 9c399598-b9fa-4da7-84b5-defbf82e9335
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4117e028611c2ff64102a97579d17d72f50407e0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e94e8cd065908671446486d2ec00e167d8fb4f4e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430154"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697108"
 ---
 # <a name="the-structure-of-the-contenttypesxml-file"></a>La estructura de la Content_types] .xml archivo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -103,5 +103,5 @@ Contiene información sobre los tipos de contenido en un paquete VSIX. Visual St
   
 ## <a name="see-also"></a>Vea también  
  [Anatomía de un paquete VSIX](../extensibility/anatomy-of-a-vsix-package.md)   
- [Referencia de esquema 1.0 de extensión VSIX](http://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)   
+ [Referencia de esquema 1.0 de extensión VSIX](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)   
  [OPC: Un nuevo estándar para empaquetar sus datos](http://go.microsoft.com/fwlink/?LinkID=148207)

@@ -17,12 +17,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9962bb1dbeef089d409cbe100daa37777b45e67d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7cbc9519c86b2bf4967e567b29355eb6d8a176a4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425383"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699768"
 ---
 # <a name="edit-data-in-datasets"></a>Editar datos en conjuntos de datos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Editar tablas de datos al igual que editar los datos en una tabla en cualquier b
  [!code-vb[VbRaddataEditing#5](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb#5)]  
   
 ## <a name="to-insert-new-rows-into-a-dataset"></a>Para insertar nuevas filas en un conjunto de datos  
- Las aplicaciones que usan los controles enlazados a datos normalmente agregan nuevos registros a través de la **Agregar nuevo** situado en un [BindingNavigator Control](http://msdn.microsoft.com/library/18c1e2a5-9834-40d3-9b2e-2b545e4e769e).  
+ Las aplicaciones que usan los controles enlazados a datos normalmente agregan nuevos registros a través de la **Agregar nuevo** situado en un [BindingNavigator Control](https://msdn.microsoft.com/library/18c1e2a5-9834-40d3-9b2e-2b545e4e769e).  
   
  Para agregar manualmente los nuevos registros a un conjunto de datos, cree una nueva fila de datos llamando al método en la tabla de datos. A continuación, agregue la fila a la <xref:System.Data.DataRow> colección (<xref:System.Data.DataTable.Rows%2A>) de la <xref:System.Data.DataTable>:  
   
@@ -79,7 +79,7 @@ Editar tablas de datos al igual que editar los datos en una tabla en cualquier b
   
 - Cada fila de datos modificada contiene varias versiones de fila (<xref:System.Data.DataRowVersion>), la versión original (antes de que cambie) y la versión actual (después de los cambios). Durante el período de un cambio está pendiente (el tiempo cuando responda a la <xref:System.Data.DataTable.RowChanging> eventos), una tercera versión: la versión propuesta, también está disponible.
   
-  El método <xref:System.Data.DataSet.HasChanges%2A> de un conjunto de datos devuelve `true` si se han realizado modificaciones en el mismo. Después de determinar que las filas modificadas existen, puede llamar al método `GetChanges` de un control <xref:System.Data.DataSet> o <xref:System.Data.DataTable> para devolver un conjunto de filas cambiadas. Para obtener más información, vea [Cómo: Recuperar filas modificadas](http://msdn.microsoft.com/library/6ff0cbd0-5253-48e7-888a-144d56c2e0a9).  
+  El método <xref:System.Data.DataSet.HasChanges%2A> de un conjunto de datos devuelve `true` si se han realizado modificaciones en el mismo. Después de determinar que las filas modificadas existen, puede llamar al método `GetChanges` de un control <xref:System.Data.DataSet> o <xref:System.Data.DataTable> para devolver un conjunto de filas cambiadas. Para obtener más información, vea [Cómo: Recuperar filas modificadas](https://msdn.microsoft.com/library/6ff0cbd0-5253-48e7-888a-144d56c2e0a9).  
   
 #### <a name="to-determine-if-changes-have-been-made-to-any-rows"></a>Para determinar si se han realizado cambios en las filas  
   

@@ -12,12 +12,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7694f0f725af8a20ff3a5a01753b0669c0fd5d9f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: bfee16abf522284471baf4c8dc8b3c47468a032e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60067357"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701493"
 ---
 # <a name="compiling-and-building-in-visual-studio"></a>Compilar y generar en Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,10 +33,10 @@ Se puede utilizar Visual Studio para compilar aplicaciones y para crear ensambla
 |------------------|--------------|--------------------------|
 |Uso de el IDE|- Puede crear compilaciones más fácilmente y ejecutarlas de forma inmediata.<br />- Puede ejecutar compilaciones multiprocesador para proyectos de C# y C++.<br />- Puede personalizar algunos aspectos del sistema de compilación.|[Compilar y limpiar proyectos y soluciones en Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)|
 |Ejecutar una línea de comandos de MSBuild|- Puede compilar proyectos sin instalar Visual Studio.<br />- Puede ejecutar compilaciones multiprocesador para todos los tipos de proyecto.<br />- Puede personalizar la mayoría de las áreas del sistema de compilación.|[MSBuild](../msbuild/msbuild.md)|
-|Usar Team Foundation Build|- Puede automatizar el proceso de compilación. Por ejemplo, puede compilar uno o varios proyectos por la noche o cada vez que se proteja ese código. También puede compilar proyectos en servidores de compilación compartidos en lugar de hacerlo en el equipo de desarrollo.<br />- Puede especificar rápidamente el código que quiere compilar, las pruebas que quiere ejecutar y otras opciones frecuentes.<br />- Puede modificar el flujo de trabajo de compilación y, si es necesario, crear actividades de compilación para realizar tareas muy personalizadas.|[Compilar la aplicación](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)|
+|Usar Team Foundation Build|- Puede automatizar el proceso de compilación. Por ejemplo, puede compilar uno o varios proyectos por la noche o cada vez que se proteja ese código. También puede compilar proyectos en servidores de compilación compartidos en lugar de hacerlo en el equipo de desarrollo.<br />- Puede especificar rápidamente el código que quiere compilar, las pruebas que quiere ejecutar y otras opciones frecuentes.<br />- Puede modificar el flujo de trabajo de compilación y, si es necesario, crear actividades de compilación para realizar tareas muy personalizadas.|[Compilar la aplicación](https://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)|
 
 ## <a name="building-from-the-ide"></a>Compilar desde el IDE
- Al crear un proyecto, se definen las configuraciones de compilación predeterminadas para el mismo y se le asigna una configuración de compilación de soluciones para proporcionar contexto para las compilaciones. Las configuraciones de soluciones definen cómo se compilan y se implementan los proyectos de las soluciones. Las configuraciones de proyecto son un conjunto de propiedades de proyecto que son únicas para una plataforma y un tipo de compilación (por ejemplo, Versión Win32). Es posible editar estas configuraciones predeterminadas y crear sus propias configuraciones. Para obtener más información, consulte [Introducción al diseñador de proyectos](http://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7) y [Cómo: Modificar las propiedades del proyecto y los valores de configuración](http://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67).
+ Al crear un proyecto, se definen las configuraciones de compilación predeterminadas para el mismo y se le asigna una configuración de compilación de soluciones para proporcionar contexto para las compilaciones. Las configuraciones de soluciones definen cómo se compilan y se implementan los proyectos de las soluciones. Las configuraciones de proyecto son un conjunto de propiedades de proyecto que son únicas para una plataforma y un tipo de compilación (por ejemplo, Versión Win32). Es posible editar estas configuraciones predeterminadas y crear sus propias configuraciones. Para obtener más información, consulte [Introducción al diseñador de proyectos](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7) y [Cómo: Modificar las propiedades del proyecto y los valores de configuración](https://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67).
 
  Desde el IDE se pueden realizar las siguientes tareas adicionales:
 
@@ -53,4 +53,4 @@ Se puede utilizar Visual Studio para compilar aplicaciones y para crear ensambla
 - Mejorar el rendimiento de la compilación mediante compilaciones paralelas. Para obtener más información, vea [Compilar varios proyectos en paralelo con MSBuild](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md) o la publicación del blog [Tuning C++ build parallelism](http://blogs.msdn.com/b/msbuild/archive/2010/03/08/tuning-c-build-parallelism-in-vs2010.aspx) (Ajustar el paralelismo de compilación de C++).
 
 ## <a name="see-also"></a>Vea también
- [Tutorial: Creación de una aplicación](../ide/walkthrough-building-an-application.md) [descripción de las configuraciones de compilación](../ide/understanding-build-configurations.md) [descripción de las plataformas de compilación](../ide/understanding-build-platforms.md) [compilar proyectos de sitio Web (compilación)](http://msdn.microsoft.com/library/a9cbb88c-8fff-4c67-848b-98fbfd823193) [ Cómo: Creación y eliminación de dependencias del proyecto](../ide/how-to-create-and-remove-project-dependencies.md)
+ [Tutorial: Creación de una aplicación](../ide/walkthrough-building-an-application.md) [descripción de las configuraciones de compilación](../ide/understanding-build-configurations.md) [descripción de las plataformas de compilación](../ide/understanding-build-platforms.md) [compilar proyectos de sitio Web (compilación)](https://msdn.microsoft.com/library/a9cbb88c-8fff-4c67-848b-98fbfd823193) [ Cómo: Creación y eliminación de dependencias del proyecto](../ide/how-to-create-and-remove-project-dependencies.md)

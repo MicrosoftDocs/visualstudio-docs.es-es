@@ -30,12 +30,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 632c3027ccb8019e372abd6400dd3f2333742e05
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: ee25e9ab9145265119321053b5b8031f1b1ead80
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658115"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696026"
 ---
 # <a name="project-and-solution-file-types"></a>Tipos de archivos de proyecto y solución
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -54,11 +54,11 @@ ms.locfileid: "59658115"
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] usa varios formatos de archivo para almacenar información específica de los proyectos. Para obtener más información, vea los temas de Ayuda siguientes:  
   
  [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)]  
- [Tipos de archivos creados para proyectos de Visual C++](http://msdn.microsoft.com/library/2b0ee2e0-ae81-4185-9bb9-11da3c99a283)  
+ [Tipos de archivos creados para proyectos de Visual C++](https://msdn.microsoft.com/library/2b0ee2e0-ae81-4185-9bb9-11da3c99a283)  
   
- [Creación y administración de proyectos de Visual C++](http://msdn.microsoft.com/library/11003cd8-9046-4630-a189-a32bf3b88047)  
+ [Creación y administración de proyectos de Visual C++](https://msdn.microsoft.com/library/11003cd8-9046-4630-a189-a32bf3b88047)  
   
- [Unicode](http://msdn.microsoft.com/library/1002004b-4113-4380-bf63-e1570934b793)  
+ [Unicode](https://msdn.microsoft.com/library/1002004b-4113-4380-bf63-e1570934b793)  
   
 ## <a name="see-also"></a>Vea también  
  [Soluciones y proyectos](../../ide/solutions-and-projects-in-visual-studio.md)

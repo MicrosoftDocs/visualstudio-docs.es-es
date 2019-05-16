@@ -19,16 +19,16 @@ caps.latest.revision: 56
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6906a351a9d93e566c1a184ed237beb15cbd7b89
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 1e57b3f8db5330f7d0778ee53e552c38e8295c62
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59669346"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696409"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Uso de expresiones regulares en Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-Visual Studio usa expresiones regulares de .NET Framework para buscar y reemplazar texto. Para obtener más información sobre las expresiones regulares de .NET, consulte [Expresiones regulares de .NET Framework](http://msdn.microsoft.com/library/521b3f6d-f869-42e1-93e5-158c54a6895d).
+Visual Studio usa expresiones regulares de .NET Framework para buscar y reemplazar texto. Para obtener más información sobre las expresiones regulares de .NET, consulte [Expresiones regulares de .NET Framework](https://msdn.microsoft.com/library/521b3f6d-f869-42e1-93e5-158c54a6895d).
 
 En las versiones previas a Visual Studio 2012, se usaba una sintaxis de expresiones regulares personalizadas en las ventanas Buscar y Reemplazar. Consulte [Usar expresiones regulares en Visual Studio](https://msdn.microsoft.com/library/2k3te2cs\(v=vs.110\).aspx) para ver una explicación de cómo convertir a las versiones de .NET algunos de los símbolos de expresiones regulares personalizadas más frecuentes.
 
@@ -36,7 +36,7 @@ En las versiones previas a Visual Studio 2012, se usaba una sintaxis de expresio
 > En sistemas operativos Windows, la mayoría de las líneas terminan en “\r\n” (un retorno de carro seguido de una nueva línea). Estos caracteres no se ven, pero están presentes en el editor y se pasan al servicio de expresiones regulares de .NET.
 
 > [!TIP]
-> Para obtener información sobre las expresiones regulares que se usan en patrones de reemplazo, consulte [Sustituciones](http://msdn.microsoft.com/library/d1f52431-1c7d-4dc6-8792-6b988256892e). Para usar un grupo de captura numerado, la sintaxis es `$1` para especificar el grupo numerado y `(x)` para especificar el grupo en cuestión. Por ejemplo, la expresión regular agrupada `(\d)([a-z])` encuentra cuatro coincidencias en la siguiente cadena: **1a 2b 3c 4d**. La cadena de reemplazo `z$1` convierte esa cadena a **z1 z2 z3 z4**.
+> Para obtener información sobre las expresiones regulares que se usan en patrones de reemplazo, consulte [Sustituciones](https://msdn.microsoft.com/library/d1f52431-1c7d-4dc6-8792-6b988256892e). Para usar un grupo de captura numerado, la sintaxis es `$1` para especificar el grupo numerado y `(x)` para especificar el grupo en cuestión. Por ejemplo, la expresión regular agrupada `(\d)([a-z])` encuentra cuatro coincidencias en la siguiente cadena: **1a 2b 3c 4d**. La cadena de reemplazo `z$1` convierte esa cadena a **z1 z2 z3 z4**.
 
 ## <a name="regular-expression-examples"></a>Ejemplos de expresiones regulares
 

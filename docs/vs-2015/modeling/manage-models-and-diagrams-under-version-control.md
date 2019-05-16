@@ -11,17 +11,17 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4c29b7e3279513e2876396abd5083c3ddefa0baf
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 55142e000a22b6e45543c6fc14594a12c93f4f92
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440942"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680289"
 ---
 # <a name="manage-models-and-diagrams-under-version-control"></a>Administrar modelos y diagramas con control de versiones
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Administre distintas versiones de los diagramas y proyectos de modelado, incluidos los mapas de código (archivos .dgml), con el [control de versiones de Team Foundation o Git](http://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314); ya sea localmente con Team Foundation Server o en la nube con Visual Studio Team Services.  
+Administre distintas versiones de los diagramas y proyectos de modelado, incluidos los mapas de código (archivos .dgml), con el [control de versiones de Team Foundation o Git](https://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314); ya sea localmente con Team Foundation Server o en la nube con Visual Studio Team Services.  
   
  Para ver qué versiones de Visual Studio admiten esta característica, vea [Compatibilidad de versiones con las herramientas de arquitectura y modelado](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
@@ -77,7 +77,7 @@ Administre distintas versiones de los diagramas y proyectos de modelado, incluid
   
 - Cambiar las propiedades de relaciones que cruzan los límites del paquete.  
   
-- Si quiere saber más sobre los bloqueos de desprotección, consulte [Desproteger y editar archivos](http://msdn.microsoft.com/library/eb404d63-c448-4994-9416-3e6d50ec554a).  
+- Si quiere saber más sobre los bloqueos de desprotección, consulte [Desproteger y editar archivos](https://msdn.microsoft.com/library/eb404d63-c448-4994-9416-3e6d50ec554a).  
   
 ##### <a name="to-move-a-diagram-file-in-or-out-of-a-project-folder"></a>Para mover un archivo de diagrama dentro o fuera de una carpeta de proyecto  
   

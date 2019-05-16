@@ -19,12 +19,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: adc2347e6928a841a0a2c24d1d786be8edcbc4ac
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: d5956ad23fe22c7c36b712fac61df268586142df
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045790"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697555"
 ---
 # <a name="how-to-re-sign-application-and-deployment-manifests"></a>Procedimiento Volver a firmar manifiestos de implementación y aplicación
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Después de realizar cambios en las propiedades de implementación en el manifie
  Otro escenario donde se podrían volver a firmar los manifiestos es cuando los clientes desean firmar la aplicación y los manifiestos de implementación con su propio certificado.  
   
 ## <a name="re-signing-the-application-and-deployment-manifests"></a>Volver a firmar la aplicación y la implementación de manifiestos  
- Este procedimiento se supone que ya ha realizado cambios en el archivo de manifiesto de aplicación (.manifest). Para obtener más información, vea [Cómo: Cambiar propiedades de implementación](http://msdn.microsoft.com/66052a3a-8127-4964-8147-2477ef5d1472).  
+ Este procedimiento se supone que ya ha realizado cambios en el archivo de manifiesto de aplicación (.manifest). Para obtener más información, vea [Cómo: Cambiar propiedades de implementación](https://msdn.microsoft.com/66052a3a-8127-4964-8147-2477ef5d1472).  
   
 #### <a name="to-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>Para volver a firmar la aplicación e implementación de manifiestos con Mage.exe  
   

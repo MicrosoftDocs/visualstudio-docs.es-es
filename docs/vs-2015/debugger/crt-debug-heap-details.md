@@ -75,12 +75,12 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e43175ace465abdece5ec1f06aeda10ecddb9a14
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 158aff0f14886ea5d714c35456bf53d5768f57b8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057461"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697869"
 ---
 # <a name="crt-debug-heap-details"></a>Detalles del montón de depuración de CRT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -105,7 +105,7 @@ Este tema proporciona un examen detallado del montón de depuración de CRT.
 ## <a name="BKMK_Find_buffer_overruns_with_debug_heap"></a> Buscar saturaciones de búfer mediante el montón de depuración  
  Dos de los problemas más comunes y difíciles de tratar con los que se encuentran los programadores son la sobrescritura al final de un búfer asignado y las pérdidas de memoria (incapacidad de liberar asignaciones de memoria que ya no se necesitan). El montón de depuración proporciona herramientas eficaces para solucionar este tipo de problemas de asignación de memoria.  
   
- Las versiones de depuración de las funciones del montón llaman a las versiones base o estándar utilizadas en las versiones de lanzamiento. Cuando se solicita un bloque de memoria, el administrador del montón de depuración asigna en el montón base un bloque de memoria ligeramente mayor que el solicitado y devuelve un puntero a la parte solicitada. Por ejemplo, suponga que la aplicación contiene la llamada: `malloc( 10 )`. En una versión de lanzamiento, [malloc](http://msdn.microsoft.com/library/144fcee2-be34-4a03-bb7e-ed6d4b99eea0) llamaría a la rutina de asignación del montón base solicitaría una asignación de 10 bytes. En una compilación de depuración, sin embargo, `malloc` llamaría [_malloc_dbg](http://msdn.microsoft.com/library/c97eca51-140b-4461-8bd2-28965b49ecdb), que, a continuación, llamaría a la rutina de asignación del montón base solicitaría una asignación de 10 bytes más unos 36 bytes de memoria adicional. Todos los bloques de memoria del montón de depuración se encuentran conectados en una lista simplemente vinculada, ordenados según el momento en que fueron asignados.  
+ Las versiones de depuración de las funciones del montón llaman a las versiones base o estándar utilizadas en las versiones de lanzamiento. Cuando se solicita un bloque de memoria, el administrador del montón de depuración asigna en el montón base un bloque de memoria ligeramente mayor que el solicitado y devuelve un puntero a la parte solicitada. Por ejemplo, suponga que la aplicación contiene la llamada: `malloc( 10 )`. En una versión de lanzamiento, [malloc](https://msdn.microsoft.com/library/144fcee2-be34-4a03-bb7e-ed6d4b99eea0) llamaría a la rutina de asignación del montón base solicitaría una asignación de 10 bytes. En una compilación de depuración, sin embargo, `malloc` llamaría [_malloc_dbg](https://msdn.microsoft.com/library/c97eca51-140b-4461-8bd2-28965b49ecdb), que, a continuación, llamaría a la rutina de asignación del montón base solicitaría una asignación de 10 bytes más unos 36 bytes de memoria adicional. Todos los bloques de memoria del montón de depuración se encuentran conectados en una lista simplemente vinculada, ordenados según el momento en que fueron asignados.  
   
  La memoria adicional asignada por las rutinas del montón de depuración se utiliza para contabilizar información, para punteros que vinculan bloques de memoria de depuración entre sí y para pequeños búferes a cada lado de los datos que permiten capturar sobrescrituras en la región asignada.  
   
@@ -150,10 +150,10 @@ typedef struct _CrtMemBlockHeader
  ![Volver al principio](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contenido](#BKMK_Contents)  
   
 ## <a name="BKMK_Types_of_blocks_on_the_debug_heap"></a> Tipos de bloques en el montón de depuración  
- Cada bloque de memoria del montón de depuración se asigna a uno de entre cinco tipos de asignación. Estos tipos reciben un seguimiento y se informa de ellos de forma diferente en cuanto a detección de pérdidas e informe de estados. El tipo de un bloque se puede especificar asignándolo mediante una llamada directa a una de las funciones de asignación del montón de depuración, como [_malloc_dbg](http://msdn.microsoft.com/library/c97eca51-140b-4461-8bd2-28965b49ecdb). Los cinco tipos de bloques de memoria del montón de depuración (definidos en el miembro **nBlockUse** de la estructura **_CrtMemBlockHeader**) son los siguientes:  
+ Cada bloque de memoria del montón de depuración se asigna a uno de entre cinco tipos de asignación. Estos tipos reciben un seguimiento y se informa de ellos de forma diferente en cuanto a detección de pérdidas e informe de estados. El tipo de un bloque se puede especificar asignándolo mediante una llamada directa a una de las funciones de asignación del montón de depuración, como [_malloc_dbg](https://msdn.microsoft.com/library/c97eca51-140b-4461-8bd2-28965b49ecdb). Los cinco tipos de bloques de memoria del montón de depuración (definidos en el miembro **nBlockUse** de la estructura **_CrtMemBlockHeader**) son los siguientes:  
   
  **_NORMAL_BLOCK**  
- Una llamada a [malloc](http://msdn.microsoft.com/library/144fcee2-be34-4a03-bb7e-ed6d4b99eea0) o [calloc](http://msdn.microsoft.com/library/17bb79a1-98cf-4096-90cb-1f9365cd6829) crea un bloque Normal. Si se pretende utilizar sólo bloques de tipo Normal y no se necesitan bloques de tipo Cliente, es recomendable definir [_CRTDBG_MAP_ALLOC](http://msdn.microsoft.com/library/435242b8-caea-4063-b765-4a608200312b), que hace que todas las llamadas de asignación en el montón se asignen a sus equivalentes de depuración en el caso de versiones de depuración. Esto permite almacenar la información de nombre de archivo y número de línea para cada llamada de asignación en el encabezado de bloque correspondiente.  
+ Una llamada a [malloc](https://msdn.microsoft.com/library/144fcee2-be34-4a03-bb7e-ed6d4b99eea0) o [calloc](https://msdn.microsoft.com/library/17bb79a1-98cf-4096-90cb-1f9365cd6829) crea un bloque Normal. Si se pretende utilizar sólo bloques de tipo Normal y no se necesitan bloques de tipo Cliente, es recomendable definir [_CRTDBG_MAP_ALLOC](https://msdn.microsoft.com/library/435242b8-caea-4063-b765-4a608200312b), que hace que todas las llamadas de asignación en el montón se asignen a sus equivalentes de depuración en el caso de versiones de depuración. Esto permite almacenar la información de nombre de archivo y número de línea para cada llamada de asignación en el encabezado de bloque correspondiente.  
   
  `_CRT_BLOCK`  
  Los bloques de memoria asignados internamente por muchas de las funciones de la biblioteca en tiempo de ejecución se marcan como bloques CRT, de modo que se puedan controlar por separado. Como resultado de ello, la detección de pérdidas de memoria, así como otras operaciones, no tienen por qué verse afectadas. En una asignación de memoria, nunca se debe asignar, reasignar o liberar ningún bloque de tipo CRT.  
@@ -166,7 +166,7 @@ typedef struct _CrtMemBlockHeader
 freedbg(pbData, _CLIENT_BLOCK|(MYSUBTYPE<<16));  
 ```  
   
- Una función de enlace suministrada por el cliente para realizar un volcado de los objetos almacenados en bloques Cliente se puede instalar mediante [_CrtSetDumpClient](http://msdn.microsoft.com/library/f3dd06d0-c331-4a12-b68d-25378d112033); se llamará a esta función siempre que una función de depuración realice un volcado de un bloque Cliente. Asimismo, [_CrtDoForAllClientObjects](http://msdn.microsoft.com/library/d0fdb835-3cdc-45f1-9a21-54208e8df248) se puede utilizar para llamar a una función dada suministrada por la aplicación para cada bloque Cliente del montón de depuración.  
+ Una función de enlace suministrada por el cliente para realizar un volcado de los objetos almacenados en bloques Cliente se puede instalar mediante [_CrtSetDumpClient](https://msdn.microsoft.com/library/f3dd06d0-c331-4a12-b68d-25378d112033); se llamará a esta función siempre que una función de depuración realice un volcado de un bloque Cliente. Asimismo, [_CrtDoForAllClientObjects](https://msdn.microsoft.com/library/d0fdb835-3cdc-45f1-9a21-54208e8df248) se puede utilizar para llamar a una función dada suministrada por la aplicación para cada bloque Cliente del montón de depuración.  
   
  **_FREE_BLOCK**  
  Normalmente, los bloques que se han liberado se quitan de la lista. Para comprobar que aún no se está escribiendo en la memoria liberada, o para simular un estado de escasez de memoria, se puede optar por mantener los bloques liberados en la lista vinculada, marcados como Libres y rellenos con un valor de byte conocido (actualmente 0xDD).  
@@ -174,7 +174,7 @@ freedbg(pbData, _CLIENT_BLOCK|(MYSUBTYPE<<16));
  **_IGNORE_BLOCK**  
  Es posible desactivar las operaciones del montón de depuración durante un período de tiempo. En este período, los bloques de memoria se mantienen en la lista, pero se marcan como bloques Omitir.  
   
- Para determinar el tipo y subtipo de un bloque dado, utilice la función [_CrtReportBlockType](http://msdn.microsoft.com/library/0f4b9da7-bebb-4956-9541-b2581640ec6b) y las macros **_BLOCK_TYPE** y **_BLOCK_SUBTYPE**. Las macros se definen (en crtdbg.h) del siguiente modo:  
+ Para determinar el tipo y subtipo de un bloque dado, utilice la función [_CrtReportBlockType](https://msdn.microsoft.com/library/0f4b9da7-bebb-4956-9541-b2581640ec6b) y las macros **_BLOCK_TYPE** y **_BLOCK_SUBTYPE**. Las macros se definen (en crtdbg.h) del siguiente modo:  
   
 ```  
 #define _BLOCK_TYPE(block)          (block & 0xFFFF)  
@@ -187,10 +187,10 @@ freedbg(pbData, _CLIENT_BLOCK|(MYSUBTYPE<<16));
  El acceso a muchas de las características del montón de depuración se debe realizar desde dentro del código. En la sección siguiente se describen algunas características y cómo utilizarlas.  
   
  `_CrtCheckMemory`  
- Se puede utilizar una llamada a [_CrtCheckMemory](http://msdn.microsoft.com/library/457cc72e-60fd-4177-ab5c-6ae26a420765), por ejemplo, para comprobar la integridad del montón en cualquier punto. Esta función examina cada bloque de memoria del montón, comprueba si la información de encabezado del bloque de memoria es válida y confirma que los búferes no se hayan modificado.  
+ Se puede utilizar una llamada a [_CrtCheckMemory](https://msdn.microsoft.com/library/457cc72e-60fd-4177-ab5c-6ae26a420765), por ejemplo, para comprobar la integridad del montón en cualquier punto. Esta función examina cada bloque de memoria del montón, comprueba si la información de encabezado del bloque de memoria es válida y confirma que los búferes no se hayan modificado.  
   
  `_CrtSetDbgFlag`  
- Se puede controlar cómo el montón de depuración hace un seguimiento de las asignaciones utilizando un marcador interno, [_crtDbgFlag](http://msdn.microsoft.com/library/9e7adb47-8ab9-4e19-81d5-e2f237979973), que se puede leer y definir mediante la función [_CrtSetDbgFlag](http://msdn.microsoft.com/library/b5657ffb-6178-4cbf-9886-1af904ede94c). Cambiando este marcador, se puede indicar al montón de depuración que compruebe si existen pérdidas de memoria cuando el programa termina, e informa de las pérdidas detectadas. Análogamente, se puede especificar que los bloques de memoria liberada no se quiten de la lista vinculada para simular situaciones de escasez de memoria. Cuando se comprueba el montón, estos bloques liberados se examinan en su totalidad para asegurarse de que no se han modificado.  
+ Se puede controlar cómo el montón de depuración hace un seguimiento de las asignaciones utilizando un marcador interno, [_crtDbgFlag](https://msdn.microsoft.com/library/9e7adb47-8ab9-4e19-81d5-e2f237979973), que se puede leer y definir mediante la función [_CrtSetDbgFlag](https://msdn.microsoft.com/library/b5657ffb-6178-4cbf-9886-1af904ede94c). Cambiando este marcador, se puede indicar al montón de depuración que compruebe si existen pérdidas de memoria cuando el programa termina, e informa de las pérdidas detectadas. Análogamente, se puede especificar que los bloques de memoria liberada no se quiten de la lista vinculada para simular situaciones de escasez de memoria. Cuando se comprueba el montón, estos bloques liberados se examinan en su totalidad para asegurarse de que no se han modificado.  
   
  El marcador **_crtDbgFlag** contiene los siguientes campos de bit:  
   
@@ -306,11 +306,11 @@ typedef struct _CrtMemState
   
 |Función|Descripción|  
 |--------------|-----------------|  
-|[_CrtMemCheckpoint](http://msdn.microsoft.com/library/f1bacbaa-5a0c-498a-ac7a-b6131d83dfbc)|Guarda una instantánea del montón en una estructura **_CrtMemState** proporcionada por la aplicación.|  
-|[_CrtMemDifference](http://msdn.microsoft.com/library/0f327278-b551-482f-958b-76941f796ba4)|Compara dos estructuras de estados de memoria, guarda la diferencia entre ellas en una tercera estructura de estado y devuelve TRUE si los dos estados son diferentes.|  
-|[_CrtMemDumpStatistics](http://msdn.microsoft.com/library/27b9d731-3184-4a2d-b9a7-6566ab28a9fe)|Realiza un volcado de memoria de una estructura **_CrtMemState** dada. La estructura puede contener una instantánea del estado del montón de depuración en un momento dado, o la diferencia entre dos instantáneas.|  
-|[_CrtMemDumpAllObjectsSince](http://msdn.microsoft.com/library/c48a447a-e6bb-475c-9271-a3021182a0dc)|Realiza un volcado de memoria de información de todos los objetos asignados desde que se tomó una determinada instantánea del montón o desde el inicio de la ejecución. Cada vez que vuelca un bloque **_CLIENT_BLOCK**, llama a una función de enlace suministrada por la aplicación, si se instaló una mediante **_CrtSetDumpClient**.|  
-|[_CrtDumpMemoryLeaks](http://msdn.microsoft.com/library/71b2eab4-7f55-44e8-a55a-bfea4f32d34c)|Determina si se produjo alguna pérdida de memoria desde el inicio de la ejecución del programa; en ese caso, realiza un volcado de memoria de todos los objetos asignados. Cada vez que **_CrtDumpMemoryLeaks** vuelca un bloque **_CLIENT_BLOCK**, llama a una función de enlace suministrada por la aplicación, si se instaló una mediante **_CrtSetDumpClient**.|  
+|[_CrtMemCheckpoint](https://msdn.microsoft.com/library/f1bacbaa-5a0c-498a-ac7a-b6131d83dfbc)|Guarda una instantánea del montón en una estructura **_CrtMemState** proporcionada por la aplicación.|  
+|[_CrtMemDifference](https://msdn.microsoft.com/library/0f327278-b551-482f-958b-76941f796ba4)|Compara dos estructuras de estados de memoria, guarda la diferencia entre ellas en una tercera estructura de estado y devuelve TRUE si los dos estados son diferentes.|  
+|[_CrtMemDumpStatistics](https://msdn.microsoft.com/library/27b9d731-3184-4a2d-b9a7-6566ab28a9fe)|Realiza un volcado de memoria de una estructura **_CrtMemState** dada. La estructura puede contener una instantánea del estado del montón de depuración en un momento dado, o la diferencia entre dos instantáneas.|  
+|[_CrtMemDumpAllObjectsSince](https://msdn.microsoft.com/library/c48a447a-e6bb-475c-9271-a3021182a0dc)|Realiza un volcado de memoria de información de todos los objetos asignados desde que se tomó una determinada instantánea del montón o desde el inicio de la ejecución. Cada vez que vuelca un bloque **_CLIENT_BLOCK**, llama a una función de enlace suministrada por la aplicación, si se instaló una mediante **_CrtSetDumpClient**.|  
+|[_CrtDumpMemoryLeaks](https://msdn.microsoft.com/library/71b2eab4-7f55-44e8-a55a-bfea4f32d34c)|Determina si se produjo alguna pérdida de memoria desde el inicio de la ejecución del programa; en ese caso, realiza un volcado de memoria de todos los objetos asignados. Cada vez que **_CrtDumpMemoryLeaks** vuelca un bloque **_CLIENT_BLOCK**, llama a una función de enlace suministrada por la aplicación, si se instaló una mediante **_CrtSetDumpClient**.|  
   
  ![Volver al principio](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Contenido](#BKMK_Contents)  
   
@@ -321,7 +321,7 @@ typedef struct _CrtMemState
   
  La manera más simple de identificar la llamada de asignación incorrecta consiste en aprovechar el número de solicitud de asignación único asociado con cada bloque del montón de depuración. Cuando alguna de las funciones de volcado de memoria proporciona información sobre un bloque, este número de solicitud de asignación aparece encerrado entre llaves (por ejemplo, "{36}").  
   
- Una vez que se conoce el número de solicitud de asignación de un bloque asignado incorrectamente, se puede pasar este número a [_CrtSetBreakAlloc](http://msdn.microsoft.com/library/33bfc6af-a9ea-405b-a29f-1c2d4d9880a1) para crear un punto de interrupción. La ejecución se interrumpe justo antes de asignar el bloque y se puede realizar un seguimiento hacia atrás para determinar qué rutina fue la responsable de la llamada errónea. Para evitar tener que volver a compilar, se puede conseguir lo mismo en el depurador si se asigna a **_crtBreakAlloc** el número de solicitud de asignación que interesa.  
+ Una vez que se conoce el número de solicitud de asignación de un bloque asignado incorrectamente, se puede pasar este número a [_CrtSetBreakAlloc](https://msdn.microsoft.com/library/33bfc6af-a9ea-405b-a29f-1c2d4d9880a1) para crear un punto de interrupción. La ejecución se interrumpe justo antes de asignar el bloque y se puede realizar un seguimiento hacia atrás para determinar qué rutina fue la responsable de la llamada errónea. Para evitar tener que volver a compilar, se puede conseguir lo mismo en el depurador si se asigna a **_crtBreakAlloc** el número de solicitud de asignación que interesa.  
   
  **Crear versiones de depuración de sus rutinas de asignación**  
   

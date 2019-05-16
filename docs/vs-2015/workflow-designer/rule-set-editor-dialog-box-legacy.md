@@ -13,12 +13,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d3827ef20ae5eb67c1052b6c7f6147d736013490
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 862842bd41762b15a38254c9d5e21bf06cdca10a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438886"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703195"
 ---
 # <a name="rule-set-editor-dialog-box-legacy"></a>Editor de conjunto de reglas (Cuadro de diálogo) (Heredado)
 Este tema se describe cómo usar el **Editor de conjunto de reglas** cuadro de diálogo heredado [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Use el [!INCLUDE[wfd2](../includes/wfd2-md.md)] heredado cuando deba tener como destino [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -76,7 +76,7 @@ Este tema se describe cómo usar el **Editor de conjunto de reglas** cuadro de d
   
   La prioridad de los operadores de las expresiones sigue las reglas de prioridad de los operadores de C#.  
   
-  Para obtener más información acerca de las condiciones, consulte [usar condiciones en flujos de trabajo](http://msdn.microsoft.com/541211f5-d382-4810-894f-71f00b34fa77).  
+  Para obtener más información acerca de las condiciones, consulte [usar condiciones en flujos de trabajo](https://msdn.microsoft.com/541211f5-d382-4810-894f-71f00b34fa77).  
   
 ### <a name="halt-and-update-functions"></a>Funciones Halt y Update  
  **Acciones Then:** y **acciones Else:** expresiones admiten **Halt** y **actualización** funciones. Para usar el **Halt** de función, escriba **Halt** en un **, a continuación, acción:** o **acción Else:** cuadro de texto. El **Halt** acción hace que la ejecución del conjunto de reglas detener inmediatamente, y el control vuelve al código de llamada. Usa el **actualización** función con el encadenamiento hacia delante.  

@@ -15,12 +15,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c9e0024ae6db5af3f1cf23c07fe29fbac8e4827d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b1a360ee4ad35fd48a46f6d866912a05a584a54c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58997727"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687317"
 ---
 # <a name="ca2114-method-security-should-be-a-superset-of-type"></a>CA2114: La seguridad del método debe ser un supraconjunto del tipo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "58997727"
 |Cambio problemático|Problemático|
 
 ## <a name="cause"></a>Motivo
- Un tipo tiene seguridad declarativa y uno de sus métodos tiene seguridad declarativa para la misma acción de seguridad y la acción de seguridad no es [peticiones de vínculo](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) o [peticiones de herencias](http://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9)y los permisos comprueba el tipo no son un subconjunto de permisos comprobados por el método.
+ Un tipo tiene seguridad declarativa y uno de sus métodos tiene seguridad declarativa para la misma acción de seguridad y la acción de seguridad no es [peticiones de vínculo](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) o [peticiones de herencias](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9)y los permisos comprueba el tipo no son un subconjunto de permisos comprobados por el método.
 
 ## <a name="rule-description"></a>Descripción de la regla
  Un método no debe tener tanto un seguridad declarativa de nivel de método y el nivel de tipo para la misma acción. No se combinan las dos comprobaciones; se aplica solo a la demanda de nivel de método. Por ejemplo, si un tipo solicita permiso `X`, y uno de sus métodos solicita permiso `Y`, código no tiene que tener el permiso `X` para ejecutar el método.
@@ -62,4 +62,4 @@ ms.locfileid: "58997727"
  **[no tiene permiso de escritura (exigido por tipo)] Información Personal: 16/6/1964 12:00:00 A.M.**
  **[ningún permiso de lectura (exigido por método)] no pudo acceder a información personal: Error en la solicitud.**
 ## <a name="see-also"></a>Vea también
- [Instrucciones de codificación segura](http://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [peticiones de herencias](http://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9) [peticiones de vínculos](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) [datos y modelado](http://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)
+ [Instrucciones de codificación segura](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [peticiones de herencias](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9) [peticiones de vínculos](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) [datos y modelado](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)

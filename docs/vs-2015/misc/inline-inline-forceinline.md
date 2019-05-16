@@ -26,14 +26,14 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d142f414046a0d477cd94ae1c027f4bf6bee9518
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 92239ad987f355394f23393bc4fadeb18bae870b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838742"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65681570"
 ---
 # <a name="inline-inline-forceinline"></a>inline, __inline, __forceinline
-Este contenido se movió a [funciones insertadas](http://msdn.microsoft.com/library/355f120c-2847-4608-ac04-8dda18ffe10c)  
+Este contenido se movió a [funciones insertadas](https://msdn.microsoft.com/library/355f120c-2847-4608-ac04-8dda18ffe10c)  
   
 ## <a name="syntax"></a>Sintaxis

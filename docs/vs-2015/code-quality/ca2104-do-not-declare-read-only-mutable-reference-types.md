@@ -15,12 +15,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 03bb90b11e994ce2f823deb7e2395afc6aee7e04
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a4c6619bc5803c1b44e1c6b0516987c3110bbd30
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58995909"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687418"
 ---
 # <a name="ca2104-do-not-declare-read-only-mutable-reference-types"></a>CA2104: No declarar tipos de referencias mutables de solo lectura
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "58995909"
 ## <a name="rule-description"></a>Descripción de la regla
  Un tipo que mutable es un tipo cuyos datos de instancia se pueden modificar. La <xref:System.Text.StringBuilder?displayProperty=fullName> clase es un ejemplo de un tipo de referencia mutable. Contiene a miembros que se pueden cambiar el valor de una instancia de la clase. Un ejemplo de un tipo de referencia inmutable es el <xref:System.String?displayProperty=fullName> clase. Una vez se ha creado una instancia, su valor nunca puede cambiar.
 
- El modificador de solo lectura ([readonly](http://msdn.microsoft.com/library/2f8081f6-0de2-4903-898d-99696c48d2f4) en C#, [ReadOnly](http://msdn.microsoft.com/library/e868185d-6142-4359-a2fd-a7965cadfce8) en [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], y [const](http://msdn.microsoft.com/library/b21c0271-1ad0-40a0-b21c-5e812bba0318) en C++) en un tipo de referencia (puntero de C++) del campo impide que el campo reemplazado por una instancia diferente del tipo de referencia. Sin embargo, el modificador no impide que los datos de instancia del campo que se modifica mediante el tipo de referencia.
+ El modificador de solo lectura ([readonly](https://msdn.microsoft.com/library/2f8081f6-0de2-4903-898d-99696c48d2f4) en C#, [ReadOnly](https://msdn.microsoft.com/library/e868185d-6142-4359-a2fd-a7965cadfce8) en [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], y [const](https://msdn.microsoft.com/library/b21c0271-1ad0-40a0-b21c-5e812bba0318) en C++) en un tipo de referencia (puntero de C++) del campo impide que el campo reemplazado por una instancia diferente del tipo de referencia. Sin embargo, el modificador no impide que los datos de instancia del campo que se modifica mediante el tipo de referencia.
 
  Campos de matriz de solo lectura están exentos de esta regla, pero en su lugar, provoca una infracción de la [CA2105: Campos de matriz deben no ser de solo lectura](../code-quality/ca2105-array-fields-should-not-be-read-only.md) regla.
 

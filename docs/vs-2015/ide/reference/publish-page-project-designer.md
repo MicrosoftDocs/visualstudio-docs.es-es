@@ -18,12 +18,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7f50c5897f68e43071d4920f85f1a694cacbf655
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f135221564583d2d9726bb9fa153840b1328e96f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441306"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701827"
 ---
 # <a name="publish-page-project-designer"></a>Panel Publicar, Diseñador de proyectos
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -50,16 +50,16 @@ La página **Publicar** del **Diseñador de proyectos** se utiliza para configur
  Para las aplicaciones de explorador web de WPF, la opción **La aplicación también está disponible sin conexión** está deshabilitada porque estas aplicaciones solo están disponibles en línea.  
   
  **Archivos de aplicación**  
- Abre el cuadro de diálogo [Archivos de aplicación](http://msdn.microsoft.com/b06dff3a-b87a-4caf-996b-7a4acf8137a8), que se usa para especificar cómo y dónde se instalan los archivos individuales.  
+ Abre el cuadro de diálogo [Archivos de aplicación](https://msdn.microsoft.com/b06dff3a-b87a-4caf-996b-7a4acf8137a8), que se usa para especificar cómo y dónde se instalan los archivos individuales.  
   
  **Requisitos previos**  
  Abre el cuadro de diálogo [Requisitos previos](../../ide/reference/prerequisites-dialog-box.md), que se usa para especificar los componentes necesarios, como .NET Framework, que se instalan junto con la aplicación.  
   
  **Actualizaciones**  
- Abre el cuadro de diálogo [Actualizaciones de la aplicación](http://msdn.microsoft.com/8eca8743-8e68-4d04-bfd5-4dc0a9b2934f), que se usa para especificar el comportamiento de actualización de la aplicación. No está disponible cuando está seleccionado **La aplicación solo está disponible en línea** .  
+ Abre el cuadro de diálogo [Actualizaciones de la aplicación](https://msdn.microsoft.com/8eca8743-8e68-4d04-bfd5-4dc0a9b2934f), que se usa para especificar el comportamiento de actualización de la aplicación. No está disponible cuando está seleccionado **La aplicación solo está disponible en línea** .  
   
  **Opciones**  
- Abre el cuadro de diálogo [Opciones de publicación](http://msdn.microsoft.com/fd9baa1b-7311-4f9e-8ffb-ae50cf110592), que se usa para especificar otras opciones de publicación avanzadas.  
+ Abre el cuadro de diálogo [Opciones de publicación](https://msdn.microsoft.com/fd9baa1b-7311-4f9e-8ffb-ae50cf110592), que se usa para especificar otras opciones de publicación avanzadas.  
   
  **Versión de publicación**  
  Establece el número de versión de publicación de la aplicación. Cuando se cambia el número de versión, la aplicación se publica como una actualización. Cada parte de la versión de publicación (**Principal**, **Secundaria**, **Compilación** y **Revisión**) puede tener un valor máximo de 65 355 (<xref:System.UInt16.MaxValue>), que es el máximo que permite <xref:System.Version>.  
@@ -70,7 +70,7 @@ La página **Publicar** del **Diseñador de proyectos** se utiliza para configur
  Opcional. Si esta opción está seleccionada (valor predeterminado), la parte **Revisión** del número de versión de publicación se incrementa en uno cada vez que se publica la aplicación. Esto hace que la aplicación se publique como una actualización.  
   
  **Asistente para publicación**  
- Abre el [Asistente para publicación](http://msdn.microsoft.com/fc6abebd-13d6-48e4-a567-fbc52dad0872). Finalizar el Asistente para publicación tiene el mismo efecto que ejecutar el comando **Publicar** en el menú **Compilación** .  
+ Abre el [Asistente para publicación](https://msdn.microsoft.com/fc6abebd-13d6-48e4-a567-fbc52dad0872). Finalizar el Asistente para publicación tiene el mismo efecto que ejecutar el comando **Publicar** en el menú **Compilación** .  
   
  **Publicar ahora**  
  Publica la aplicación mediante la configuración actual. Equivalente al botón **Finalizar** del **Asistente para publicación**.  

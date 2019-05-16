@@ -29,17 +29,17 @@ caps.latest.revision: 30
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a43983846263fa49a7ff501b0d87c460990e8a37
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 6ae74c51f0f738bc596fbe5c789011630927707c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105479"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702265"
 ---
 # <a name="continuing-execution-after-an-exception"></a>Continuar la ejecución después de una excepción
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Cuando el depurador interrumpe la ejecución debido a una excepción, aparece un cuadro de diálogo. Para Visual Basic o C#, verá el [Asistente de excepciones](http://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb) cuadro de diálogo, de forma predeterminada. Para C++, verá la versión anterior **excepción** cuadro de diálogo. Si está utilizando Visual Basic o C# pero se ha deshabilitado la **Asistente de excepciones** en el **opciones** cuadro de diálogo, verá el **excepción** cuadro de diálogo.  
+Cuando el depurador interrumpe la ejecución debido a una excepción, aparece un cuadro de diálogo. Para Visual Basic o C#, verá el [Asistente de excepciones](https://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb) cuadro de diálogo, de forma predeterminada. Para C++, verá la versión anterior **excepción** cuadro de diálogo. Si está utilizando Visual Basic o C# pero se ha deshabilitado la **Asistente de excepciones** en el **opciones** cuadro de diálogo, verá el **excepción** cuadro de diálogo.  
   
  Cuando el **Asistente de excepciones** o **excepción** aparece el cuadro de diálogo, puede intentar corregir el problema que provocó la excepción.  
   

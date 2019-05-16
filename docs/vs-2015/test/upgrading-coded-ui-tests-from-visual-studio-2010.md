@@ -8,12 +8,12 @@ ms.assetid: 11232a83-73ea-46bd-bc0c-46f74f6e3a42
 caps.latest.revision: 35
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 42db6024353e3b26ddcaf6b5fa838ff791d964f4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4ab38f4fc7e0269c1073e71fae9975b240da33f2
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445897"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695097"
 ---
 # <a name="upgrading-coded-ui-tests-from-visual-studio-2010"></a>Actualizar pruebas de IU codificadas desde Visual Studio 2010
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Los proyectos de prueba que contienen pruebas de IU codificadas creadas en [!INC
 - Visual Studio Enterprise
 
 > [!NOTE]
-> Visual Studio incluye más de un tipo de proyecto de prueba. Si crea una nueva prueba de IU codificada, se creará en un tipo de proyecto de prueba de IU codificada. Para obtener más información, vea [Actualizar pruebas de versiones anteriores de Visual Studio](http://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52).
+> Visual Studio incluye más de un tipo de proyecto de prueba. Si crea una nueva prueba de IU codificada, se creará en un tipo de proyecto de prueba de IU codificada. Para obtener más información, vea [Actualizar pruebas de versiones anteriores de Visual Studio](https://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52).
 
 > [!WARNING]
 > Los proyectos de prueba de[!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] que contienen pruebas de IU codificadas tienen que volver a compilarse al abrir el proyecto de prueba en [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] o [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] en paralelo con [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].
@@ -64,4 +64,4 @@ Los proyectos de prueba que contienen pruebas de IU codificadas creadas en [!INC
 - **Pruebas de carga:** Cuando se ejecuta una prueba de carga junto con un tipo de red distinto al perfil de red de área local (LAN) en un equipo que ejecuta Windows 8, el controlador de emulación de red hace que el sistema operativo se bloquee. Para más información, vea el [Artículo de KB 2736182](http://support.microsoft.com/kb/2736182).
 
 ## <a name="see-also"></a>Vea también
- [Portar, migrar y actualizar proyectos de Visual Studio](../porting/porting-migrating-and-upgrading-visual-studio-projects.md) [actualizar pruebas de versiones anteriores de Visual Studio](http://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52) [usar UI Automation para probar el código](../test/use-ui-automation-to-test-your-code.md) [generar una Prueba de IU de grabación de acciones existente codificada](http://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497) [configuraciones y plataformas compatibles para las pruebas de IU codificadas y las grabaciones de acciones](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+ [Portar, migrar y actualizar proyectos de Visual Studio](../porting/porting-migrating-and-upgrading-visual-studio-projects.md) [actualizar pruebas de versiones anteriores de Visual Studio](https://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52) [usar UI Automation para probar el código](../test/use-ui-automation-to-test-your-code.md) [generar una Prueba de IU de grabación de acciones existente codificada](https://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497) [configuraciones y plataformas compatibles para las pruebas de IU codificadas y las grabaciones de acciones](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

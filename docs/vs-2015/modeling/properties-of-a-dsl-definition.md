@@ -11,12 +11,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 804236cadf97dda0b21cf145a4cd4c932e08b097
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 77f0a384797217440600d1ba5db0f190f4bdafa3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58998823"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685360"
 ---
 # <a name="properties-of-a-dsl-definition"></a>Propiedades de las definiciones DSL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Definen propiedades DslDefinition *lenguajes específicos de dominio* propiedade
   
  DslDefinition tiene las propiedades en la tabla siguiente:  
   
-|Property|Descripción|Default|  
+|Propiedad|Descripción|Default|  
 |--------------|-----------------|-------------|  
 |Modificador de acceso|Determina si el modificador de acceso de la clase de dominio es público o interno.|public|  
 |Atributos personalizados|Personalizado definido por los atributos de la clase de dominio.<br /><br /> **Tenga en cuenta** Use el botón Examinar para agregar un atributo.|\<none>|  
@@ -47,4 +47,4 @@ Definen propiedades DslDefinition *lenguajes específicos de dominio* propiedade
 |Revisión|La revisión incremental número de compilación para esta definición de lenguaje específico de dominio.|0|  
   
 ## <a name="see-also"></a>Vea también  
- [Glosario de las Herramientas del lenguaje específico de dominio](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Glosario de las Herramientas del lenguaje específico de dominio](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

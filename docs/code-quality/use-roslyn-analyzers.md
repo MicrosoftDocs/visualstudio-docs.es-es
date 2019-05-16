@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 56637ee7826b944d739e170faf22ae354abd8adc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7132fae3623e1ad10fb35d2b903935cdbffee12d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821421"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65676694"
 ---
 # <a name="use-roslyn-analyzers"></a>Usar analizadores de Roslyn
 
@@ -56,13 +56,13 @@ Para editar la regla activa establecida en el editor de conjunto de reglas, haga
 Para cambiar la regla activa establecida para un proyecto, vaya a la **análisis de código** ficha de propiedades de un proyecto. Seleccione el conjunto de reglas de la lista bajo **ejecutar este conjunto de reglas**. Para abrir el conjunto de reglas, seleccione **abrir**.
 
 > [!NOTE]
-> Los proyectos de .NET core y .NET Standard no admiten los comandos de menú para conjuntos de reglas **el Explorador de soluciones**, por ejemplo, **Abrir conjunto de reglas activo**. Para especificar una regla no predeterminado establecida para un proyecto .NET Core o .NET Standard, manualmente [agregar el **CodeAnalysisRuleSet** propiedad al archivo de proyecto](using-rule-sets-to-group-code-analysis-rules.md#specify-a-rule-set-for-a-project). Puede configurar las reglas incluidas en el conjunto de reglas en Visual Studio UI del editor de conjunto de reglas.
+> Los proyectos de .NET core y .NET Standard no admiten los comandos de menú para conjuntos de reglas **el Explorador de soluciones**, por ejemplo, **Abrir conjunto de reglas activo**. Para especificar una regla no predeterminado establecida para un proyecto .NET Core o .NET Standard, manualmente [agregar el **CodeAnalysisRuleSet** propiedad](using-rule-sets-to-group-code-analysis-rules.md#specify-a-rule-set-for-a-project) al archivo de proyecto. Puede configurar las reglas incluidas en el conjunto de reglas en Visual Studio UI del editor de conjunto de reglas.
 
 ## <a name="rule-severity"></a>Gravedad de las reglas
 
 Puede configurar la gravedad de las reglas del analizador, o *diagnósticos*, si se [instalar los analizadores](../code-quality/install-roslyn-analyzers.md) como un paquete de NuGet. En la siguiente tabla muestra las opciones de gravedad para el diagnóstico:
 
-|Severity|Comportamiento en tiempo de compilación|Comportamiento del Editor|
+|Gravedad|Comportamiento en tiempo de compilación|Comportamiento del Editor|
 |-|-|-|
 |Error|Las infracciones aparezcan como *errores* en el **lista de errores** en línea de comandos resultados de compilación y hacer que las compilaciones de un error.|Código que provoca el error aparece subrayado con una roja ondulada y marcada por un pequeño cuadro rojo en la barra de desplazamiento.|
 |Advertencia|Las infracciones aparezcan como *advertencias* en el **lista de errores** y en línea de comandos salida de la compilación, pero no se producirá un error en las compilaciones.|Código que provoca el error aparece subrayado con color verde ondulada y marcado por un pequeño cuadro verde en la barra de desplazamiento.|

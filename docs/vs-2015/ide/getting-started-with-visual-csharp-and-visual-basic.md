@@ -16,19 +16,19 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 65e766193838060d4c856b6a530a688ef8cd2d1b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5eec821993ec1aef2f8b2ad6ad8f5109c07d1156
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62584701"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674763"
 ---
 # <a name="getting-started-with-visual-c-and-visual-basic"></a>Introducción a Visual C# y Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Tanto si está empezando a utilizar Visual C# como Microsoft Visual Basic, este es el lugar donde comenzar. La ayuda de introducción consta de una serie de lecciones secuenciales que presentan Visual C# y Visual Basic. Diviértase y cree un software sorprendente.  
   
- Para obtener información sobre Visual C++, consulte [Recursos de Visual C++](http://msdn.microsoft.com/vstudio/hh386302.aspx).  
+ Para obtener información sobre Visual C++, consulte [Recursos de Visual C++](https://msdn.microsoft.com/vstudio/hh386302.aspx).  
   
 ## <a name="in-this-section"></a>En esta sección  
  [Tutorial: Creación de una aplicación sencilla](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)  

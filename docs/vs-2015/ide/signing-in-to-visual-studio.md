@@ -10,12 +10,12 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6e655cf78db50f4fbd590c16dfa6561cbe376b83
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 96676ee8021e09a5e7d0a9808cea1e615f58717a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083964"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679834"
 ---
 # <a name="signing-in-to-visual-studio"></a>Iniciar sesión en Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Puede personalizar y optimizar la experiencia de desarrollo en Visual Studio est
 
 - **Concede acceso a una amplia gama de ventajas** desde el programa Visual Studio Dev Essentials, como el software gratuito, el aprendizaje, el soporte técnico y mucho más Consulte [Visual Studio Dev Essentials](https://aka.ms/vsdevhelp) para obtener más información
 
-- **Sincroniza la configuración de Visual Studio** : la configuración que ha personalizado, como los enlaces de clave, el diseño de ventana y el tema de color, se aplican inmediatamente al iniciar sesión en Visual Studio en cualquier dispositivo. Vea [Configuración sincronizada en Visual Studio](http://msdn.microsoft.com/library/dn135229%28v=vs.120%29.aspx).
+- **Sincroniza la configuración de Visual Studio** : la configuración que ha personalizado, como los enlaces de clave, el diseño de ventana y el tema de color, se aplican inmediatamente al iniciar sesión en Visual Studio en cualquier dispositivo. Vea [Configuración sincronizada en Visual Studio](https://msdn.microsoft.com/library/dn135229%28v=vs.120%29.aspx).
 
 - **Desbloquea permanentemente Visual Studio Express Edition** : puede usar cualquier edición de Visual Studio Express todo el tiempo que desee, en lugar de tener un período de prueba limitado de 30 días.
 

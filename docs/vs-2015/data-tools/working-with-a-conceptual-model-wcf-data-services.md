@@ -18,12 +18,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2e22a606c720f7d6b3304f6afb297ed76390f7ea
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 92ab4afc410f08690d54488cc12d4d7be1ffb41d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62558403"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694807"
 ---
 # <a name="working-with-a-conceptual-model-wcf-data-services"></a>Trabajar con un modelo conceptual (Servicios de datos de WCF)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,8 +34,8 @@ Cuando se usa un modelo conceptual para describir los datos de una base de datos
   
 |Tema|Descripción|  
 |-----------|-----------------|  
-|[Cómo: Ejecutar consultas de servicios de datos](http://msdn.microsoft.com/library/62997821-e0c6-4c4d-9fb7-1273fb5e5d18)|Muestra cómo consultar un servicio de datos desde una aplicación de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].|  
-|[Cómo: Resultados de la consulta](http://msdn.microsoft.com/library/474ac625-8770-43ba-8320-d3315ea9530f)|Muestra cómo reducir la cantidad de datos devueltos con una consulta de servicio de datos.|  
+|[Cómo: Ejecutar consultas de servicios de datos](https://msdn.microsoft.com/library/62997821-e0c6-4c4d-9fb7-1273fb5e5d18)|Muestra cómo consultar un servicio de datos desde una aplicación de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].|  
+|[Cómo: Resultados de la consulta](https://msdn.microsoft.com/library/474ac625-8770-43ba-8320-d3315ea9530f)|Muestra cómo reducir la cantidad de datos devueltos con una consulta de servicio de datos.|  
   
  Cuando se usa un modelo conceptual, puede definir los tipos de datos válidos en el lenguaje que coincide con su dominio. Puede definir los datos válidos en el modelo, o puede agregar validación a las operaciones que se realizan en una entidad o un servicio de datos.  
   
@@ -43,15 +43,15 @@ Cuando se usa un modelo conceptual para describir los datos de una base de datos
   
 |Tema|Descripción|  
 |-----------|-----------------|  
-|[Cómo: Interceptar mensajes de servicio de datos](http://msdn.microsoft.com/library/24b9df1b-b54b-4795-a033-edf333675de6)|Muestra cómo agregar validación a una operación de servicio de datos.|  
+|[Cómo: Interceptar mensajes de servicio de datos](https://msdn.microsoft.com/library/24b9df1b-b54b-4795-a033-edf333675de6)|Muestra cómo agregar validación a una operación de servicio de datos.|  
   
  En los temas siguientes se muestra cómo crear, actualizar y eliminar datos mediante operaciones que se ejecutan en las entidades.  
   
 |Tema|Descripción|  
 |-----------|-----------------|  
-|[Cómo: Agregar, modificar y eliminar entidades](http://msdn.microsoft.com/library/a00f8933-b232-4445-95ba-adc634f055d8)|Muestra cómo crear, actualizar y eliminar los datos de entidad en un servicio de datos.|  
-|[Cómo: Definir relaciones de entidades](http://msdn.microsoft.com/library/cc255524-1534-4fae-b83c-250933d5a72b)|Muestra cómo crear o cambiar las relaciones en un servicio de datos.|  
+|[Cómo: Agregar, modificar y eliminar entidades](https://msdn.microsoft.com/library/a00f8933-b232-4445-95ba-adc634f055d8)|Muestra cómo crear, actualizar y eliminar los datos de entidad en un servicio de datos.|  
+|[Cómo: Definir relaciones de entidades](https://msdn.microsoft.com/library/cc255524-1534-4fae-b83c-250933d5a72b)|Muestra cómo crear o cambiar las relaciones en un servicio de datos.|  
   
 ## <a name="see-also"></a>Vea también  
  [Servicios de Windows Communication Foundation y WCF Data Services en Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)   
- [Consultar el servicio de datos](http://msdn.microsoft.com/library/823e9444-27aa-4f1f-be8e-0486d67f54c0)
+ [Consultar el servicio de datos](https://msdn.microsoft.com/library/823e9444-27aa-4f1f-be8e-0486d67f54c0)

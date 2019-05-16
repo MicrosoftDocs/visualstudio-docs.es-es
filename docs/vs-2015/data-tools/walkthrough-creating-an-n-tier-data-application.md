@@ -17,12 +17,12 @@ caps.latest.revision: 51
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b6c4ae0082d76b4eb9e58561daec48d196438bac
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 57a370dd8fd243deba8db9b9a928202d25c7836d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63424741"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675630"
 ---
 # <a name="walkthrough-creating-an-n-tier-data-application"></a>Tutorial: Creación de una aplicación de datos de n niveles
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ N-aplicaciones de datos de nivel * son aplicaciones que acceden a datos y se div
   
 - Cree un conjunto de datos con tipo mediante el **Asistente para configuración de orígenes de datos**.  
   
-- Separar generado [TableAdapters](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) y el código del conjunto de datos en proyectos discretos.  
+- Separar generado [TableAdapters](https://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) y el código del conjunto de datos en proyectos discretos.  
   
 - Crear un servicio de Windows Communication Foundation (WCF) para realizar llamadas al nivel de acceso a datos.  
   
@@ -381,7 +381,7 @@ N-aplicaciones de datos de nivel * son aplicaciones que acceden a datos y se div
 ## <a name="next-steps"></a>Pasos siguientes  
  En función de los requisitos de la aplicación, hay varios pasos que es posible que desee realizar después de guardar los datos relacionados en la aplicación basada en Windows. Por ejemplo, a continuación se indican algunas de las mejoras que podría realizar en esta aplicación:  
   
-- Agregar validación al conjunto de datos. Para obtener información, consulte [Tutorial: Agregar validación a una aplicación de datos con N niveles](http://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265).  
+- Agregar validación al conjunto de datos. Para obtener información, consulte [Tutorial: Agregar validación a una aplicación de datos con N niveles](https://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265).  
   
 - Agregar métodos adicionales al servicio para actualizar los datos de nuevo en la base de datos.  
   

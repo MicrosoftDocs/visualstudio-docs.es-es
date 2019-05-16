@@ -24,12 +24,12 @@ caps.latest.revision: 48
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 280160127cc147cddd91a79c4290f80a311ee792
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 835843d2328d9d17ac899fc12c97251b7e6b4659
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434858"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685318"
 ---
 # <a name="how-to-use-the-threads-window"></a>Procedimiento Utilice la ventana subprocesos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -127,7 +127,7 @@ En el **subprocesos** ventana, puede examinar y trabajar con los subprocesos en 
 ## <a name="freezing-and-thawing-threads"></a>Inmovilizar y reanudar subprocesos  
  Cuando se inmoviliza un subproceso, el sistema no iniciará su ejecución aunque haya recursos disponibles.  
   
- En código nativo, puede suspender o reanudar subprocesos mediante una llamada a las funciones de Windows `SuspendThread` y `ResumeThread` o las funciones MFC [CWinThread:: SuspendThread](http://msdn.microsoft.com/library/57189c7e-fd71-42e5-bc4b-3de7cd373d28) y [CWinThread:: ResumeThread](http://msdn.microsoft.com/library/d6f97a2f-5c9f-4ee1-b978-d74938784db5). Si se llama a `SuspendThread` o `ResumeThread`, cambia el *recuento de suspendidos*, que aparece en el **subprocesos** ventana. Sin embargo, si inmoviliza o reanuda un subproceso nativo, no cambia el recuento de suspendidos. En código nativo, un subproceso no se puede ejecutar a menos que se reanude y tenga un recuento de suspensión de cero.  
+ En código nativo, puede suspender o reanudar subprocesos mediante una llamada a las funciones de Windows `SuspendThread` y `ResumeThread` o las funciones MFC [CWinThread:: SuspendThread](https://msdn.microsoft.com/library/57189c7e-fd71-42e5-bc4b-3de7cd373d28) y [CWinThread:: ResumeThread](https://msdn.microsoft.com/library/d6f97a2f-5c9f-4ee1-b978-d74938784db5). Si se llama a `SuspendThread` o `ResumeThread`, cambia el *recuento de suspendidos*, que aparece en el **subprocesos** ventana. Sin embargo, si inmoviliza o reanuda un subproceso nativo, no cambia el recuento de suspendidos. En código nativo, un subproceso no se puede ejecutar a menos que se reanude y tenga un recuento de suspensión de cero.  
   
  En código administrado, la inmovilización o la reanudación de un subproceso no cambia el recuento de suspensión. En código administrado, un subproceso inmovilizado tiene un recuento de suspensión de 1. En código nativo, un subproceso inmovilizado tiene un recuento de suspensión de 0, a menos que el subproceso se haya suspendido con una llamada a `SuspendThread`.  
   

@@ -19,12 +19,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7cba6f91dd6dc0bb826531a312dc6ca5c94b21a5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7bc5384fcff280c8a38875878ac32051b490624f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62558758"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704175"
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>Guardar datos con los métodos DBDirect de un TableAdapter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Este tutorial proporciona instrucciones detalladas para ejecutar instrucciones S
   
 - Cree un nuevo **aplicación Windows**.  
   
-- Crear y configurar un conjunto de datos con el [Asistente para configuración de origen de datos](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f).  
+- Crear y configurar un conjunto de datos con el [Asistente para configuración de origen de datos](https://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f).  
   
 - Seleccionar el control que se va a crear en el formulario al arrastrar elementos desde la ventana **Orígenes de datos**. Para obtener más información, consulte [establecer el control que se creará al arrastrar desde la ventana Orígenes de datos](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
   
@@ -57,7 +57,7 @@ Este tutorial proporciona instrucciones detalladas para ejecutar instrucciones S
   
 2. Denomine el proyecto **TableAdapterDbDirectMethodsWalkthrough**.  
   
-3. Seleccione **aplicación Windows**y, a continuación, seleccione **Aceptar**. Para obtener más información, consulte [las aplicaciones cliente](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
+3. Seleccione **aplicación Windows**y, a continuación, seleccione **Aceptar**. Para obtener más información, consulte [las aplicaciones cliente](https://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
      Se crea el proyecto **TableAdapterDbDirectMethodsWalkthrough** y se agrega al **Explorador de soluciones**.  
   
@@ -105,7 +105,7 @@ Este tutorial proporciona instrucciones detalladas para ejecutar instrucciones S
   
 2. Establezca las propiedades **Nombre** y **Texto** en cada botón.  
   
-    |Name|Text|  
+    |Name|Texto|  
     |----------|----------|  
     |`InsertButton`|**Insertar**|  
     |`UpdateButton`|**Actualizar**|  
@@ -153,7 +153,7 @@ Este tutorial proporciona instrucciones detalladas para ejecutar instrucciones S
 ## <a name="next-steps"></a>Pasos siguientes  
  Dependiendo de los requisitos de la aplicación, hay varios pasos que se desea realizar después de crear un formulario enlazado a datos. Entre las mejoras que podría realizar se incluyen:  
   
-- Agregar funcionalidad de búsqueda al formulario. Para obtener más información, vea [Cómo: Agregar una consulta parametrizada a un Windows Forms Application](http://msdn.microsoft.com/library/13db4ad3-56b9-4a0b-b3a5-6a4ff84d4416).  
+- Agregar funcionalidad de búsqueda al formulario. Para obtener más información, vea [Cómo: Agregar una consulta parametrizada a un Windows Forms Application](https://msdn.microsoft.com/library/13db4ad3-56b9-4a0b-b3a5-6a4ff84d4416).  
   
 - Agregar otras tablas al conjunto de datos seleccionando **Configurar DataSet con el asistente** en la ventana **Orígenes de datos**. Puede agregar controles que muestren los datos relacionados arrastrando los nodos relacionados al formulario. 
   

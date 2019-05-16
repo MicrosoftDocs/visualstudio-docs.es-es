@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: e8d80e0f-6b5b-4baf-a7df-59fd808c60cd
 caps.latest.revision: 16
 manager: jillfra
-ms.openlocfilehash: 0b04692ed30e69e8904919748a6db0d0eff49f54
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5b72b2c3bd6b03d1d3f3e50135c2ddf4758a4bd9
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63002119"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65683047"
 ---
 # <a name="vspackages-and-the-managed-package-framework"></a>VSPackages y marco de trabajo de paquetes administrados
 Puede reducir el tiempo de desarrollo mediante la creación de un paquete VSPackage con el paquete administrado de clases de framework (MPF) en lugar de mediante el uso de las clases de interoperabilidad COM.  
@@ -25,7 +25,7 @@ Puede reducir el tiempo de desarrollo mediante la creación de un paquete VSPack
   
 - Use el [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] plantilla de proyecto de paquete  
   
-     Para obtener más información, vea [Tutorial: Creación de un comando de menú mediante la plantilla de paquete de Visual Studio](http://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de).  
+     Para obtener más información, vea [Tutorial: Creación de un comando de menú mediante la plantilla de paquete de Visual Studio](https://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de).  
   
 - Crear el VSPackage sin el [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] plantilla de proyecto de paquete  
   
@@ -36,7 +36,7 @@ Puede reducir el tiempo de desarrollo mediante la creación de un paquete VSPack
  Describe y se enumeran los espacios de nombres de clase MPF y archivos DLL.  
   
 ## <a name="related-sections"></a>Secciones relacionadas  
- [Tutorial: Creación de un comando de menú mediante la plantilla de paquete de Visual Studio](http://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de)  
+ [Tutorial: Creación de un comando de menú mediante la plantilla de paquete de Visual Studio](https://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de)  
  Explica cómo crear un VSPackage administrado.  
   
  [VSPackages administrado](../misc/managed-vspackages.md)  

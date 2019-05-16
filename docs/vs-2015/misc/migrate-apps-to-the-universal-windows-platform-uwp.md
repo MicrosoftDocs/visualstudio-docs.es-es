@@ -9,12 +9,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6827d1b2b1a85d94e8ad8d5f88c505aebc3abb93
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 86bc76b9b71c7b73a8d299aab41cb6e2eb37680d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63001229"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686668"
 ---
 # <a name="migrate-apps-to-the-universal-windows-platform-uwp"></a>Migrar aplicaciones a la Plataforma universal de Windows (UWP)
 Haga los cambios manuales necesarios en los archivos de proyecto existentes para las aplicaciones de la Tienda Windows 8.1, las aplicaciones de Windows Phone 8.1 o las aplicaciones universales de Windows creadas con Visual Studio 2015 RC, de modo que se puedan usar con Visual Studio 2015 RTM. (Si tiene una aplicación universal para Windows 8.1 con un proyecto de aplicación de Windows y un proyecto de Windows Phone, deberá seguir los pasos indicados a continuación para migrar cada proyecto).  
@@ -29,7 +29,7 @@ Haga los cambios manuales necesarios en los archivos de proyecto existentes para
   
 - [Cambios necesarios para los proyectos de prueba unitaria existentes de las aplicaciones universales de Windows creadas con Visual Studio 2015 RC](#MigrateUnitTest).  
   
-  Si no desea hacer todos estos cambios, obtenga información sobre cómo [migrar sus aplicaciones existentes](http://msdn.microsoft.com/library/windows/apps/xaml/mt238321.aspx) a un nuevo proyecto universal de Windows.  
+  Si no desea hacer todos estos cambios, obtenga información sobre cómo [migrar sus aplicaciones existentes](https://msdn.microsoft.com/library/windows/apps/xaml/mt238321.aspx) a un nuevo proyecto universal de Windows.  
   
 ## <a name="MigrateCSharp"></a> Migrar sus aplicaciones C# /VB Windows Store 8.1 o Windows Phone 8.1 para usar la plataforma Universal de Windows  
   
@@ -110,7 +110,7 @@ Haga los cambios manuales necesarios en los archivos de proyecto existentes para
   
     6. Agregar un \<EnableDotNetNativeCompatibleProfile > elemento y establezca su valor en: **true**.  
   
-    7. La escala de activos predeterminada para las aplicaciones universales de Windows es de 200. Si el proyecto incluye activos no escalados a 200, deberá agregar una \<UapDefaultAssetScale > elemento con el valor de la escala de los recursos a este PropertyGroup. Más información sobre [activos y escalas](http://msdn.microsoft.com/library/jj679352.aspx).  
+    7. La escala de activos predeterminada para las aplicaciones universales de Windows es de 200. Si el proyecto incluye activos no escalados a 200, deberá agregar una \<UapDefaultAssetScale > elemento con el valor de la escala de los recursos a este PropertyGroup. Más información sobre [activos y escalas](https://msdn.microsoft.com/library/jj679352.aspx).  
   
          Ahora su \<PropertyGroup > elemento debe ser similar a este ejemplo:  
   
@@ -268,11 +268,11 @@ Haga los cambios manuales necesarios en los archivos de proyecto existentes para
   
     2. Actualice el valor del elemento ApplicationTypeRevision de 8.1 a 10.0.  
   
-    3. Cambie el valor de la \<MinimumVisualStudioVersion > elemento para: 14.  
+    3. Cambie el valor de la \<MinimumVisualStudioVersion > elemento para: 14,  
   
     4. Agregar un \<EnableDotNetNativeCompatibleProfile > elemento y establezca su valor en: true.  
   
-    5. La escala de activos predeterminada para las aplicaciones universales de Windows es de 200. Si el proyecto incluye activos no escalados a 200, deberá agregar una \<UapDefaultAssetScale > elemento con el valor de la escala de los recursos a este PropertyGroup. Más información sobre [activos y escalas](http://msdn.microsoft.com/library/jj679352.aspx).  
+    5. La escala de activos predeterminada para las aplicaciones universales de Windows es de 200. Si el proyecto incluye activos no escalados a 200, deberá agregar una \<UapDefaultAssetScale > elemento con el valor de la escala de los recursos a este PropertyGroup. Más información sobre [activos y escalas](https://msdn.microsoft.com/library/jj679352.aspx).  
   
     6. Para Windows Phone proyectos solo, cambie el valor de \<ApplicationType > de Windows Phone para Windows Store.  
   
@@ -651,7 +651,7 @@ Haga los cambios manuales necesarios en los archivos de proyecto existentes para
   
 4. Buscar el \<PropertyGroup > elemento que contiene el \<TargetPlatformVersion > y \<TargetPlatformMinVersion > elementos. Cambie el valor existente de la \<TargetPlatformVersion > y \<TargetPlatformMinVersion > elementos que se va a ser la misma versión de la plataforma Universal de Windows que ha instalado.  
   
-    La escala de activos predeterminada para las aplicaciones universales de Windows es de 200. Los proyectos creados con activos de Visual Studio 2015 RC incluían escalados a 100, deberá agregar una \<UapDefaultAssetScale > elemento con un valor de 100 a este PropertyGroup. Más información sobre [activos y escalas](http://msdn.microsoft.com/library/jj679352.aspx).  
+    La escala de activos predeterminada para las aplicaciones universales de Windows es de 200. Los proyectos creados con activos de Visual Studio 2015 RC incluían escalados a 100, deberá agregar una \<UapDefaultAssetScale > elemento con un valor de 100 a este PropertyGroup. Más información sobre [activos y escalas](https://msdn.microsoft.com/library/jj679352.aspx).  
   
 5. Si agregó referencias a los SDK de extensión de UWP (por ejemplo, el SDK de Windows Mobile), deberá actualizar la versión del SDK. Por ejemplo, esto \<SDKReference > elemento:  
   
@@ -761,7 +761,7 @@ Haga los cambios manuales necesarios en los archivos de proyecto existentes para
   
      Agregar un \<EnableDotNetNativeCompatibleProfile > elemento y establezca su valor en true si el elemento no existe ya.  
   
-     La escala de activos predeterminada para las aplicaciones universales de Windows es de 200. Los proyectos creados con activos de Visual Studio 2015 RC incluían escalados a 100, deberá agregar una \<UapDefaultAssetScale > elemento con un valor de 100 a este PropertyGroup. Más información sobre [activos y escalas](http://msdn.microsoft.com/library/jj679352.aspx).  
+     La escala de activos predeterminada para las aplicaciones universales de Windows es de 200. Los proyectos creados con activos de Visual Studio 2015 RC incluían escalados a 100, deberá agregar una \<UapDefaultAssetScale > elemento con un valor de 100 a este PropertyGroup. Más información sobre [activos y escalas](https://msdn.microsoft.com/library/jj679352.aspx).  
   
      Por lo que esta \<PropertyGroup > ahora será similar al siguiente elemento:  
   

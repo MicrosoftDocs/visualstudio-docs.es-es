@@ -22,17 +22,17 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e8666f990265a1fcf9947ac5c7c18c7489a6bdb8
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 8307bc2c9efcbbab531754cd2d49fa18b04cc48a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653598"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698635"
 ---
 # <a name="cl-task"></a>CL (Tarea)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera archivos ejecutables (.exe), archivos de biblioteca de vínculos dinámicos (.dll) o archivos de módulos de códigos (.netmodule). Para obtener más información, consulte [Opciones del compilador](http://msdn.microsoft.com/library/ed3376c8-bef4-4c9a-80e9-3b5da232644c).  
+Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera archivos ejecutables (.exe), archivos de biblioteca de vínculos dinámicos (.dll) o archivos de módulos de códigos (.netmodule). Para obtener más información, consulte [Opciones del compilador](https://msdn.microsoft.com/library/ed3376c8-bef4-4c9a-80e9-3b5da232644c).  
   
 ## <a name="parameters"></a>Parámetros  
  En la siguiente tabla se describen los parámetros de la tarea **CL**. La mayoría de los parámetros de tarea, así como algunos conjuntos de parámetros, corresponden a una opción de línea de comandos.  
@@ -43,7 +43,7 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
    Agrega un directorio a la lista de directorios en que se buscan archivos de inclusión.  
   
-   Para obtener más información, consulte [/I (Directorios de inclusión adicionales)](http://msdn.microsoft.com/library/3e9add2a-5ed8-4d15-ad79-5b411e313a49).  
+   Para obtener más información, consulte [/I (Directorios de inclusión adicionales)](https://msdn.microsoft.com/library/3e9add2a-5ed8-4d15-ad79-5b411e313a49).  
   
 - **AdditionalOptions**  
   
@@ -51,13 +51,13 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
    Una lista de opciones de la línea de comandos. Por ejemplo, "/*option1* /*option2* /*option#*". Utilice este parámetro para especificar opciones de la línea de comandos que no están representadas por ningún otro parámetro de tarea.  
   
-   Para obtener más información, consulte [Opciones del compilador](http://msdn.microsoft.com/library/ed3376c8-bef4-4c9a-80e9-3b5da232644c).  
+   Para obtener más información, consulte [Opciones del compilador](https://msdn.microsoft.com/library/ed3376c8-bef4-4c9a-80e9-3b5da232644c).  
   
 - Parámetro **AdditionalUsingDirectories** Optional String[].  
   
    Especifica un directorio en que el compilador debe buscar para resolver las referencias de archivos que se pasan a la directiva **#using**.  
   
-   Para obtener más información, consulte [/AI (Especificar directorios de metadatos)](http://msdn.microsoft.com/library/fb9c1846-504c-4a3b-bb39-c8696de32f6f).  
+   Para obtener más información, consulte [/AI (Especificar directorios de metadatos)](https://msdn.microsoft.com/library/fb9c1846-504c-4a3b-bb39-c8696de32f6f).  
   
 - **AlwaysAppend**  
   
@@ -69,7 +69,7 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
    Crea un archivo de lista que contiene el código de ensamblado.  
   
-   Para obtener más información, consulte la opción **/Fa** en [/FA, /Fa (Archivo de lista)](http://msdn.microsoft.com/library/c7507d0e-c69d-44f9-b8e2-d2c398697402).  
+   Para obtener más información, consulte la opción **/Fa** en [/FA, /Fa (Archivo de lista)](https://msdn.microsoft.com/library/c7507d0e-c69d-44f9-b8e2-d2c398697402).  
   
 - **AssemblerOutput**  
   
@@ -89,13 +89,13 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
   - **All** - **/FAcs**  
   
-    Para obtener más información, consulte las opciones **/FA**, **/FAc**, **/FAs** y **/FAcs** en [/FA, /Fa (Archivo de lista)](http://msdn.microsoft.com/library/c7507d0e-c69d-44f9-b8e2-d2c398697402).  
+    Para obtener más información, consulte las opciones **/FA**, **/FAc**, **/FAs** y **/FAcs** en [/FA, /Fa (Archivo de lista)](https://msdn.microsoft.com/library/c7507d0e-c69d-44f9-b8e2-d2c398697402).  
   
 - **BasicRuntimeChecks**  
   
    Parámetro String opcional.  
   
-   Activa y desactiva la característica de comprobación de errores en tiempo de ejecución, junto con el pragma [runtime_checks](http://msdn.microsoft.com/library/ae50b43f-f88d-47ad-a2db-3389e9e7df5b).  
+   Activa y desactiva la característica de comprobación de errores en tiempo de ejecución, junto con el pragma [runtime_checks](https://msdn.microsoft.com/library/ae50b43f-f88d-47ad-a2db-3389e9e7df5b).  
   
    Especifique uno de los valores siguientes, cada uno de los cuales corresponde a una opción de línea de comandos.  
   
@@ -107,7 +107,7 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
   - **EnableFastChecks** -                          **/RTC1**  
   
-    Para obtener más información, consulte [/RTC (Comprobaciones de errores de tiempo de ejecución)](http://msdn.microsoft.com/library/9702c558-412c-4004-acd5-80761f589368).  
+    Para obtener más información, consulte [/RTC (Comprobaciones de errores de tiempo de ejecución)](https://msdn.microsoft.com/library/9702c558-412c-4004-acd5-80761f589368).  
   
 - **BrowseInformation**  
   
@@ -115,7 +115,7 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
    Si `true`, crea un archivo de información de examen.  
   
-   Para obtener más información, consulte la opción **/FR** en [/FR, /Fr (Crear archivo .Sbr)](http://msdn.microsoft.com/library/3fd8f88b-3924-4feb-9393-287036a28896).  
+   Para obtener más información, consulte la opción **/FR** en [/FR, /Fr (Crear archivo .Sbr)](https://msdn.microsoft.com/library/3fd8f88b-3924-4feb-9393-287036a28896).  
   
 - **BrowseInformationFile**  
   
@@ -123,7 +123,7 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
    Especifica un nombre de archivo para el archivo de información de examen.  
   
-   Para obtener más información, consulte el parámetro **BrowseInformation** en esta tabla y también [/FR, /Fr (Crear archivo .Sbr)](http://msdn.microsoft.com/library/3fd8f88b-3924-4feb-9393-287036a28896).  
+   Para obtener más información, consulte el parámetro **BrowseInformation** en esta tabla y también [/FR, /Fr (Crear archivo .Sbr)](https://msdn.microsoft.com/library/3fd8f88b-3924-4feb-9393-287036a28896).  
   
 - **BufferSecurityCheck**  
   
@@ -131,7 +131,7 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
    Si `true`, detecta algunas saturaciones de búfer que sobrescriben la dirección de retorno, una técnica común para aprovechar código que no impone restricciones de tamaño de búfer.  
   
-   Para obtener más información, consulte [/GS (Comprobación de seguridad del búfer)](http://msdn.microsoft.com/library/8d8a5ea1-cd5e-42e1-bc36-66e1cd7e731e).  
+   Para obtener más información, consulte [/GS (Comprobación de seguridad del búfer)](https://msdn.microsoft.com/library/8d8a5ea1-cd5e-42e1-bc36-66e1cd7e731e).  
   
 - **BuildingInIDE**  
   
@@ -153,7 +153,7 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
   - **StdCall** -                          **/Gz**  
   
-    Para obtener más información, consulte [/Gd, /Gr, /Gv, /Gz (Convención de llamada)](http://msdn.microsoft.com/library/fd3110cb-2d77-49f2-99cf-a03f9ead00a3).  
+    Para obtener más información, consulte [/Gd, /Gr, /Gv, /Gz (Convención de llamada)](https://msdn.microsoft.com/library/fd3110cb-2d77-49f2-99cf-a03f9ead00a3).  
   
 - **CompileAs**  
   
@@ -169,7 +169,7 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
   - **CompileAsCpp** - **/TP**  
   
-    Para obtener más información, consulte [/Tc, /Tp, /TC, /TP (Especificar el tipo del archivo de origen)](http://msdn.microsoft.com/library/7d9d0a65-338b-427c-8b48-fff30e2f9d2b).  
+    Para obtener más información, consulte [/Tc, /Tp, /TC, /TP (Especificar el tipo del archivo de origen)](https://msdn.microsoft.com/library/7d9d0a65-338b-427c-8b48-fff30e2f9d2b).  
   
 - **CompileAsManaged**  
   
@@ -189,7 +189,7 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
   - **OldSyntax** -   **/CLR: oldSyntax**  
   
-    Para obtener más información, consulte [/clr (Compilación de Common Language Runtime)](http://msdn.microsoft.com/library/fec5a8c0-40ec-484c-a213-8dec918c1d6c).  
+    Para obtener más información, consulte [/clr (Compilación de Common Language Runtime)](https://msdn.microsoft.com/library/fec5a8c0-40ec-484c-a213-8dec918c1d6c).  
   
 - **CreateHotpatchableImage**  
   
@@ -197,7 +197,7 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
    Si `true`, indica al compilador que prepare una imagen para *aplicar una revisión reciente*. Este parámetro garantiza que la primera instrucción de cada función sea de dos bytes, lo cual es necesario para aplicar una revisión reciente.  
   
-   Para obtener más información, consulte [/hotpatch (Crear una imagen a la que se puede aplicar una revisión reciente)](http://msdn.microsoft.com/library/aad539b6-c053-4c78-8682-853d98327798).  
+   Para obtener más información, consulte [/hotpatch (Crear una imagen a la que se puede aplicar una revisión reciente)](https://msdn.microsoft.com/library/aad539b6-c053-4c78-8682-853d98327798).  
   
 - **DebugInformationFormat**  
   
@@ -213,7 +213,7 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
   - **EditAndContinue** -   **/Zi**  
   
-    Para obtener más información, consulte [/Z7, /Zi, /ZI (Formato de la información de depuración)](http://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8).  
+    Para obtener más información, consulte [/Z7, /Zi, /ZI (Formato de la información de depuración)](https://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8).  
   
 - **DisableLanguageExtensions**  
   
@@ -221,7 +221,7 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
    Si **true**, indica al compilador que emita un error para las construcciones de lenguaje que no son compatibles con ANSI C o ANSI C++.  
   
-   Para obtener más información, consulte la opción **/Za** en [/Za, /Ze (Desactivar extensiones de lenguaje)](http://msdn.microsoft.com/library/65e49258-7161-4289-a176-7c5c0656b1a2).  
+   Para obtener más información, consulte la opción **/Za** en [/Za, /Ze (Desactivar extensiones de lenguaje)](https://msdn.microsoft.com/library/65e49258-7161-4289-a176-7c5c0656b1a2).  
   
 - **DisableSpecificWarnings**  
   
@@ -229,7 +229,7 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
    Desactiva los números de advertencia que se especifican en una lista delimitada por punto y coma.  
   
-   Para obtener más información, consulte la opción `/wd` en [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, /we, /wo, /Wv, /WX (Nivel de advertencia)](http://msdn.microsoft.com/library/d6bc7bf5-c754-4879-909c-8e3a67e2629f).  
+   Para obtener más información, consulte la opción `/wd` en [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, /we, /wo, /Wv, /WX (Nivel de advertencia)](https://msdn.microsoft.com/library/d6bc7bf5-c754-4879-909c-8e3a67e2629f).  
   
 - **EnableEnhancedInstructionSet**  
   
@@ -243,7 +243,7 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
   - **StreamingSIMDExtensions2** - **/arch:SSE2**  
   
-    Para obtener más información, consulte [/arch (x86)](http://msdn.microsoft.com/library/9dd5a75d-06e4-4674-aade-33228486078d).  
+    Para obtener más información, consulte [/arch (x86)](https://msdn.microsoft.com/library/9dd5a75d-06e4-4674-aade-33228486078d).  
   
 - **EnableFiberSafeOptimizations**  
   
@@ -251,7 +251,7 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
    Si `true`, admite la seguridad de fibras para los datos asignados mediante almacenamiento local de subprocesos estáticos, es decir, los datos asignados mediante `__declspec(thread)`.  
   
-   Para obtener más información, consulte [/GT (Admitir el almacenamiento local de subprocesos seguros para fibra)](http://msdn.microsoft.com/library/071fec79-c701-432b-9970-457344133159).  
+   Para obtener más información, consulte [/GT (Admitir el almacenamiento local de subprocesos seguros para fibra)](https://msdn.microsoft.com/library/071fec79-c701-432b-9970-457344133159).  
   
 - **EnablePREfast**  
   
@@ -259,7 +259,7 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
    Si `true`, habilita el análisis de código.  
   
-   Para obtener más información, consulte [/analize (Análisis de código)](http://msdn.microsoft.com/library/81da536a-e030-4bd4-be18-383927597d08).  
+   Para obtener más información, consulte [/analize (Análisis de código)](https://msdn.microsoft.com/library/81da536a-e030-4bd4-be18-383927597d08).  
   
 - **ErrorReporting**  
   
@@ -277,7 +277,7 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
   - **Send** - **/errorReport:send**  
   
-    Para obtener más información, consulte [/errorReport (Informar de errores de compilador interno)](http://msdn.microsoft.com/library/819828f8-b0a5-412c-9c57-bf822f17e667).  
+    Para obtener más información, consulte [/errorReport (Informar de errores de compilador interno)](https://msdn.microsoft.com/library/819828f8-b0a5-412c-9c57-bf822f17e667).  
   
 - **ExceptionHandling**  
   
@@ -295,7 +295,7 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
   - **SyncCThrow** - **/EHs**  
   
-    Para obtener más información, consulte [/EH (Modelo de control de excepciones)](http://msdn.microsoft.com/library/754b916f-d206-4472-b55a-b6f1b0f2cb4d).  
+    Para obtener más información, consulte [/EH (Modelo de control de excepciones)](https://msdn.microsoft.com/library/754b916f-d206-4472-b55a-b6f1b0f2cb4d).  
   
 - **ExpandAttributedSource**  
   
@@ -303,7 +303,7 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
    Si `true`, crea un archivo de lista con los atributos expandidos insertados en el archivo origen.  
   
-   Para obtener más información, consulte [/Fx (Combinar código insertado)](http://msdn.microsoft.com/library/14f0e301-3bab-45a3-bbdf-e7ce66f20560).  
+   Para obtener más información, consulte [/Fx (Combinar código insertado)](https://msdn.microsoft.com/library/14f0e301-3bab-45a3-bbdf-e7ce66f20560).  
   
 - **FavorSizeOrSpeed**  
   
@@ -319,7 +319,7 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
   - **Speed** - **/Ot**  
   
-    Para obtener más información, consulte [/Os, /Ot (Favorecer código pequeño, favorecer código rápido)](http://msdn.microsoft.com/library/9a340806-fa15-4308-892c-355d83cac0f2).  
+    Para obtener más información, consulte [/Os, /Ot (Favorecer código pequeño, favorecer código rápido)](https://msdn.microsoft.com/library/9a340806-fa15-4308-892c-355d83cac0f2).  
   
 - **FloatingPointExceptions**  
   
@@ -327,7 +327,7 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
    Si `true`, activa el modelo confiable de excepción de punto flotante. Las excepciones se generarán inmediatamente después de desencadenarse.  
   
-   Para obtener más información, consulte la opción **fp:except** en [/fp (Especificar comportamiento de punto flotante)](http://msdn.microsoft.com/library/10469d6b-e68b-4268-8075-d073f4f5d57e).  
+   Para obtener más información, consulte la opción **fp:except** en [/fp (Especificar comportamiento de punto flotante)](https://msdn.microsoft.com/library/10469d6b-e68b-4268-8075-d073f4f5d57e).  
   
 - **FloatingPointModel**  
   
@@ -343,15 +343,15 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
   - **Fast** - **/fp:fast**  
   
-    Para obtener más información, consulte [/fp (Especificar comportamiento de punto flotante)](http://msdn.microsoft.com/library/10469d6b-e68b-4268-8075-d073f4f5d57e).  
+    Para obtener más información, consulte [/fp (Especificar comportamiento de punto flotante)](https://msdn.microsoft.com/library/10469d6b-e68b-4268-8075-d073f4f5d57e).  
   
 - **ForceConformanceInForLoopScope**  
   
    Parámetro booleano opcional.  
   
-   Si `true`, implementa el comportamiento estándar de C++ en los bucles [for](http://msdn.microsoft.com/library/6c7d01b3-c4c1-4c6a-aa58-e2d198f33d4a) que utilizan las extensiones de Microsoft ([/Ze](http://msdn.microsoft.com/library/65e49258-7161-4289-a176-7c5c0656b1a2)).  
+   Si `true`, implementa el comportamiento estándar de C++ en los bucles [for](https://msdn.microsoft.com/library/6c7d01b3-c4c1-4c6a-aa58-e2d198f33d4a) que utilizan las extensiones de Microsoft ([/Ze](https://msdn.microsoft.com/library/65e49258-7161-4289-a176-7c5c0656b1a2)).  
   
-   Para obtener más información, consulte [/Zc:forScope (Forzar ajuste en el ámbito del bucle For)](http://msdn.microsoft.com/library/3031f02d-3b14-4ad0-869e-22b0110c3aed).  
+   Para obtener más información, consulte [/Zc:forScope (Forzar ajuste en el ámbito del bucle For)](https://msdn.microsoft.com/library/3031f02d-3b14-4ad0-869e-22b0110c3aed).  
   
 - **ForcedIncludeFiles**  
   
@@ -359,7 +359,7 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
    Hace que el preprocesador procese uno o varios archivos de encabezado especificados.  
   
-   Para obtener más información, consulte [/FI (Dar nombre al archivo de inclusión forzado)](http://msdn.microsoft.com/library/07e79577-8152-4df9-a64c-aae08c603397).  
+   Para obtener más información, consulte [/FI (Dar nombre al archivo de inclusión forzado)](https://msdn.microsoft.com/library/07e79577-8152-4df9-a64c-aae08c603397).  
   
 - **ForcedUsingFiles**  
   
@@ -367,7 +367,7 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
    Hace que el preprocesador procese uno o varios archivos **#using** especificados.  
   
-   Para obtener más información, consulte [/FU (Dar nombre al archivo #using forzado)](http://msdn.microsoft.com/library/698f8603-457f-435a-baff-5ac9243d6ca1).  
+   Para obtener más información, consulte [/FU (Dar nombre al archivo #using forzado)](https://msdn.microsoft.com/library/698f8603-457f-435a-baff-5ac9243d6ca1).  
   
 - **FunctionLevelLinking**  
   
@@ -375,7 +375,7 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
    Si `true`, permite que el compilador empaquete las funciones individuales con formato de funciones empaquetadas (COMDATs).  
   
-   Para obtener más información, consulte [/Gy (Habilitar vinculación en el nivel de función)](http://msdn.microsoft.com/library/0d3cf14c-ed7d-4ad3-b4b6-104e56f61046).  
+   Para obtener más información, consulte [/Gy (Habilitar vinculación en el nivel de función)](https://msdn.microsoft.com/library/0d3cf14c-ed7d-4ad3-b4b6-104e56f61046).  
   
 - **GenerateXMLDocumentationFiles**  
   
@@ -383,7 +383,7 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
    Si `true`, hace que el compilador procese los comentarios de documentación en archivos de código fuente y código y cree un archivo .xdc para cada archivo de código fuente que tenga comentarios de documentación.  
   
-   Para obtener más información, consulte [/doc (Procesar comentarios de documentación) (C/C ++)](http://msdn.microsoft.com/library/b54f7e2c-f28f-4f46-9ed6-0db09be2cc63). Consulte también el parámetro **XMLDocumentationFileName** en esta tabla.  
+   Para obtener más información, consulte [/doc (Procesar comentarios de documentación) (C/C ++)](https://msdn.microsoft.com/library/b54f7e2c-f28f-4f46-9ed6-0db09be2cc63). Consulte también el parámetro **XMLDocumentationFileName** en esta tabla.  
   
 - **IgnoreStandardIncludePath**  
   
@@ -391,7 +391,7 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
    Si `true`, impide que el compilador busque archivos de inclusión en los directorios especificados en las variables de entorno PATH e INCLUDE.  
   
-   Para obtener más información, consulte [/X (Omitir rutas de acceso de inclusión estándar)](http://msdn.microsoft.com/library/16bdf2cc-c8dc-46e4-bdcc-f3caeba5e1ef).  
+   Para obtener más información, consulte [/X (Omitir rutas de acceso de inclusión estándar)](https://msdn.microsoft.com/library/16bdf2cc-c8dc-46e4-bdcc-f3caeba5e1ef).  
   
 - **InlineFunctionExpansion**  
   
@@ -409,7 +409,7 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
   - **AnySuitable** - **/Ob2**  
   
-    Para obtener más información, consulte [/Ob (Expansión de funciones insertadas)](http://msdn.microsoft.com/library/f134e6df-e939-4980-a01d-47425dbc562a).  
+    Para obtener más información, consulte [/Ob (Expansión de funciones insertadas)](https://msdn.microsoft.com/library/f134e6df-e939-4980-a01d-47425dbc562a).  
   
 - **IntrinsicFunctions**  
   
@@ -417,7 +417,7 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
    Si `true`, reemplaza algunas llamadas a función con formas intrínsecas o especiales de la función que ayudarán a que la aplicación se ejecute con mayor rapidez.  
   
-   Para obtener más información, consulte [/Oi (Generar funciones intrínsecas)](http://msdn.microsoft.com/library/fa4a3bf6-0ed8-481b-91c0-add7636132b4).  
+   Para obtener más información, consulte [/Oi (Generar funciones intrínsecas)](https://msdn.microsoft.com/library/fa4a3bf6-0ed8-481b-91c0-add7636132b4).  
   
 - **MinimalRebuild**  
   
@@ -425,7 +425,7 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
    Si `true`, habilita la recompilación mínima, que determina si es necesario recompilar los archivos de origen de C++ que incluyen definiciones de clases de C++ cambiadas (almacenadas en archivos de encabezado [.h]).  
   
-   Para obtener más información, consulte [/Gm (Habilitar recompilación mínima)](http://msdn.microsoft.com/library/d8869ce0-d2ea-40eb-8dae-6d2cdb61dd59).  
+   Para obtener más información, consulte [/Gm (Habilitar recompilación mínima)](https://msdn.microsoft.com/library/d8869ce0-d2ea-40eb-8dae-6d2cdb61dd59).  
   
 - **MultiProcessorCompilation**  
   
@@ -433,7 +433,7 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
    Si `true`, utilice varios procesadores para compilar. Este parámetro crea un proceso para cada procesador efectivo en su equipo.  
   
-   Para obtener más información, consulte [/MP (Compilar con varios procesos)](http://msdn.microsoft.com/library/a932b14a-74fe-4b45-84e4-6bf53f0f5e07). Consulte también el parámetro **ProcessorNumber** en esta tabla.  
+   Para obtener más información, consulte [/MP (Compilar con varios procesos)](https://msdn.microsoft.com/library/a932b14a-74fe-4b45-84e4-6bf53f0f5e07). Consulte también el parámetro **ProcessorNumber** en esta tabla.  
   
 - **ObjectFileName**  
   
@@ -441,7 +441,7 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
    Especifica un nombre de archivo objeto (.obj) o un directorio que se utilizará en lugar del predeterminado.  
   
-   Para obtener más información, consulte [/Fo (Nombre del archivo objeto)](http://msdn.microsoft.com/library/0e6d593e-4e7f-4990-9e6e-92e1dcbcf6e6).  
+   Para obtener más información, consulte [/Fo (Nombre del archivo objeto)](https://msdn.microsoft.com/library/0e6d593e-4e7f-4990-9e6e-92e1dcbcf6e6).  
   
 - **ObjectFiles**  
   
@@ -455,7 +455,7 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
    Si `true`, omite el nombre de la biblioteca en tiempo de ejecución de C predeterminado del archivo objeto (.obj). De forma predeterminada, el compilador sitúa el nombre de la biblioteca en el archivo .obj para dirigir el enlazador hacia la biblioteca correcta.  
   
-   Para obtener más información, consulte [/Zl (Omitir nombre de biblioteca predeterminada)](http://msdn.microsoft.com/library/b27d39d0-44d6-498c-84ae-27c1326fee59).  
+   Para obtener más información, consulte [/Zl (Omitir nombre de biblioteca predeterminada)](https://msdn.microsoft.com/library/b27d39d0-44d6-498c-84ae-27c1326fee59).  
   
 - **OmitFramePointers**  
   
@@ -463,7 +463,7 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
    Si `true`, suprime la creación de punteros de marcos en la pila de llamadas.  
   
-   Para obtener más información, consulte [/Oy (Omisión de puntero de marco)](http://msdn.microsoft.com/library/c451da86-5297-4c5a-92bc-561d41379853).  
+   Para obtener más información, consulte [/Oy (Omisión de puntero de marco)](https://msdn.microsoft.com/library/c451da86-5297-4c5a-92bc-561d41379853).  
   
 - **OpenMPSupport**  
   
@@ -471,7 +471,7 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
    Si `true`, hace que el compilador procese cláusulas y directivas de OpenMP.  
   
-   Para obtener más información, consulte [/openmp (Habilitar la compatibilidad con OpenMP 2.0)](http://msdn.microsoft.com/library/9082b175-18d3-4378-86a7-c0eb95664e13).  
+   Para obtener más información, consulte [/openmp (Habilitar la compatibilidad con OpenMP 2.0)](https://msdn.microsoft.com/library/9082b175-18d3-4378-86a7-c0eb95664e13).  
   
 - **Optimization**  
   
@@ -489,7 +489,7 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
   - **Full** - **/Ox**  
   
-    Para obtener más información, consulte [/O (Opciones) (Optimizar código)](http://msdn.microsoft.com/library/77997af9-5555-4b3d-aa57-6615b27d4d5d).  
+    Para obtener más información, consulte [/O (Opciones) (Optimizar código)](https://msdn.microsoft.com/library/77997af9-5555-4b3d-aa57-6615b27d4d5d).  
   
 - **PrecompiledHeader**  
   
@@ -505,7 +505,7 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
   - **Use** - **/Yu**  
   
-    Para obtener más información, consulte [/Yc (Crear archivo de encabezado precompilado)](http://msdn.microsoft.com/library/47c2e555-b4f5-46e6-906e-ab5cf21f0678) y [/Yu (Utilizar el archivo de encabezado precompilado)](http://msdn.microsoft.com/library/24f1bd0e-b624-4296-a17e-d4b53e374e1f). Consulte también los parámetros **PrecompiledHeaderFile** y **PrecompiledHeaderOutputFile** en esta tabla.  
+    Para obtener más información, consulte [/Yc (Crear archivo de encabezado precompilado)](https://msdn.microsoft.com/library/47c2e555-b4f5-46e6-906e-ab5cf21f0678) y [/Yu (Utilizar el archivo de encabezado precompilado)](https://msdn.microsoft.com/library/24f1bd0e-b624-4296-a17e-d4b53e374e1f). Consulte también los parámetros **PrecompiledHeaderFile** y **PrecompiledHeaderOutputFile** en esta tabla.  
   
 - **PrecompiledHeaderFile**  
   
@@ -513,7 +513,7 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
    Especifica un nombre de archivo de encabezado precompilado para crear o utilizar.  
   
-   Para obtener más información, consulte [/Yc (Crear archivo de encabezado precompilado)](http://msdn.microsoft.com/library/47c2e555-b4f5-46e6-906e-ab5cf21f0678) y [/Yu (Utilizar el archivo de encabezado precompilado)](http://msdn.microsoft.com/library/24f1bd0e-b624-4296-a17e-d4b53e374e1f).  
+   Para obtener más información, consulte [/Yc (Crear archivo de encabezado precompilado)](https://msdn.microsoft.com/library/47c2e555-b4f5-46e6-906e-ab5cf21f0678) y [/Yu (Utilizar el archivo de encabezado precompilado)](https://msdn.microsoft.com/library/24f1bd0e-b624-4296-a17e-d4b53e374e1f).  
   
 - **PrecompiledHeaderOutputFile**  
   
@@ -521,7 +521,7 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
    Especifica un nombre de ruta de acceso a un encabezado precompilado en lugar de utilizar el nombre de ruta de acceso predeterminado.  
   
-   Para obtener más información, consulte [/Fp (Dar nombre al archivo .Pch)](http://msdn.microsoft.com/library/0fcd9cbd-e09f-44d3-9715-b41efb5d0be2).  
+   Para obtener más información, consulte [/Fp (Dar nombre al archivo .Pch)](https://msdn.microsoft.com/library/0fcd9cbd-e09f-44d3-9715-b41efb5d0be2).  
   
 - **PreprocessKeepComments**  
   
@@ -529,7 +529,7 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
    Si `true`, conserva los comentarios durante el preprocesamiento.  
   
-   Para obtener más información, consulte [/C (Conservar los comentarios durante el preprocesamiento)](http://msdn.microsoft.com/library/944567ca-16bc-4728-befe-d414a7787f26).  
+   Para obtener más información, consulte [/C (Conservar los comentarios durante el preprocesamiento)](https://msdn.microsoft.com/library/944567ca-16bc-4728-befe-d414a7787f26).  
   
 - **PreprocessorDefinitions**  
   
@@ -537,7 +537,7 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
    Define un símbolo de preprocesamiento para el archivo de origen.  
   
-   Para obtener más información, vea [/D (Preprocessor Definitions)](http://msdn.microsoft.com/library/b53fdda7-8da1-474f-8811-ba7cdcc66dba).  
+   Para obtener más información, vea [/D (Preprocessor Definitions)](https://msdn.microsoft.com/library/b53fdda7-8da1-474f-8811-ba7cdcc66dba).  
   
 - **PreprocessOutput**  
   
@@ -551,7 +551,7 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
    Especifica el nombre del archivo de salida en el que el parámetro **PreprocessToFile** escribe la salida preprocesada.  
   
-   Para obtener más información, consulte [/Fi (Preprocesar el nombre del archivo de salida)](http://msdn.microsoft.com/library/6d0ba983-a8b7-41ec-84f5-b4688ef8efee).  
+   Para obtener más información, consulte [/Fi (Preprocesar el nombre del archivo de salida)](https://msdn.microsoft.com/library/6d0ba983-a8b7-41ec-84f5-b4688ef8efee).  
   
 - **PreprocessSuppressLineNumbers**  
   
@@ -559,7 +559,7 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
    Si `true`, preprocesa archivos de origen de C y C++ y copia los archivos preprocesados en el dispositivo de salida estándar.  
   
-   Para obtener más información, consulte [/EP (Preprocesar para stdout sin directivas #line)](http://msdn.microsoft.com/library/6ec411ae-e33d-4ef5-956e-0054635eabea).  
+   Para obtener más información, consulte [/EP (Preprocesar para stdout sin directivas #line)](https://msdn.microsoft.com/library/6ec411ae-e33d-4ef5-956e-0054635eabea).  
   
 - **PreprocessToFile**  
   
@@ -567,7 +567,7 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
    Si `true`, preprocesa archivos de origen de C y C++ y escribe la salida preprocesada en un archivo.  
   
-   Para obtener más información, consulte [/P (Preprocesar para un archivo)](http://msdn.microsoft.com/library/123ee54f-8219-4a6f-9876-4227023d83fc).  
+   Para obtener más información, consulte [/P (Preprocesar para un archivo)](https://msdn.microsoft.com/library/123ee54f-8219-4a6f-9876-4227023d83fc).  
   
 - **ProcessorNumber**  
   
@@ -581,7 +581,7 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
    Especifica un nombre de archivo para el archivo de base de datos del programa (PDB).  
   
-   Para obtener más información, consulte [/Fd (Nombre del archivo de base de datos del programa)](http://msdn.microsoft.com/library/3977a9ed-f0ac-45df-bf06-01cedd2ba85a).  
+   Para obtener más información, consulte [/Fd (Nombre del archivo de base de datos del programa)](https://msdn.microsoft.com/library/3977a9ed-f0ac-45df-bf06-01cedd2ba85a).  
   
 - **RuntimeLibrary**  
   
@@ -599,7 +599,7 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
   - **MultiThreadedDebugDLL** - **/MDd**  
   
-    Para obtener más información, consulte [/MD, / MT, /LD (Utilizar la biblioteca en tiempo de ejecución)](http://msdn.microsoft.com/library/cf7ed652-dc3a-49b3-aab9-ad60e5395579).  
+    Para obtener más información, consulte [/MD, / MT, /LD (Utilizar la biblioteca en tiempo de ejecución)](https://msdn.microsoft.com/library/cf7ed652-dc3a-49b3-aab9-ad60e5395579).  
   
 - **RuntimeTypeInfo**  
   
@@ -607,7 +607,7 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
    Si `true`, agrega código para comprobar los tipos de objetos de C++ en tiempo de ejecución (información de tipo en tiempo de ejecución).  
   
-   Para obtener más información, consulte [/GR (Habilitar información de tipo en tiempo de ejecución)](http://msdn.microsoft.com/library/d1f9f850-dcec-49fd-96ef-e72d01148906).  
+   Para obtener más información, consulte [/GR (Habilitar información de tipo en tiempo de ejecución)](https://msdn.microsoft.com/library/d1f9f850-dcec-49fd-96ef-e72d01148906).  
   
 - **ShowIncludes**  
   
@@ -615,7 +615,7 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
    Si `true`, hace que el compilador genere una lista de los archivos de inclusión.  
   
-   Para obtener más información, consulte [/showIncludes (Enumerar archivos de inclusión)](http://msdn.microsoft.com/library/0b74b052-f594-45a6-a7c7-09e1a319547d).  
+   Para obtener más información, consulte [/showIncludes (Enumerar archivos de inclusión)](https://msdn.microsoft.com/library/0b74b052-f594-45a6-a7c7-09e1a319547d).  
   
 - **SmallerTypeCheck**  
   
@@ -623,7 +623,7 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
    Si `true`, informa de un error de tiempo de ejecución si un valor se asigna a un tipo de datos más pequeño y produce una pérdida de datos.  
   
-   Para obtener más información, consulte la opción **/RTCc** en [/RTC (Comprobaciones de errores de tiempo de ejecución)](http://msdn.microsoft.com/library/9702c558-412c-4004-acd5-80761f589368).  
+   Para obtener más información, consulte la opción **/RTCc** en [/RTC (Comprobaciones de errores de tiempo de ejecución)](https://msdn.microsoft.com/library/9702c558-412c-4004-acd5-80761f589368).  
   
 - **Sources**  
   
@@ -637,7 +637,7 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
    Si `true`, permite al compilador crear una copia de cadenas idénticas en la imagen del programa.  
   
-   Para obtener más información, consulte [/GF (Eliminar cadenas duplicadas)](http://msdn.microsoft.com/library/bb7b5d1c-8e1f-453b-9298-8fcebf37d16c).  
+   Para obtener más información, consulte [/GF (Eliminar cadenas duplicadas)](https://msdn.microsoft.com/library/bb7b5d1c-8e1f-453b-9298-8fcebf37d16c).  
   
 - **StructMemberAlignment**  
   
@@ -659,7 +659,7 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
   - **16Bytes** - **/Zp16**  
   
-    Para obtener más información, consulte [/Zp (Alineación de miembros de Struct)](http://msdn.microsoft.com/library/5242f656-ed9b-48a3-bc73-cfcf3ed2520f).  
+    Para obtener más información, consulte [/Zp (Alineación de miembros de Struct)](https://msdn.microsoft.com/library/5242f656-ed9b-48a3-bc73-cfcf3ed2520f).  
   
 - **SuppressStartupBanner**  
   
@@ -667,7 +667,7 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
    Si es `true`, evita que se muestre el copyright y el mensaje de número de versión cuando la tarea se inicia.   
   
-   Para obtener más información, consulte [/nologo (Suprimir el titular de inicio) (C/C ++)](http://msdn.microsoft.com/library/75930d8b-b11c-4db8-99e5-b52f97da0693).  
+   Para obtener más información, consulte [/nologo (Suprimir el titular de inicio) (C/C ++)](https://msdn.microsoft.com/library/75930d8b-b11c-4db8-99e5-b52f97da0693).  
   
 - **TrackerLogDirectory**  
   
@@ -683,7 +683,7 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
    Trata la lista especificada de advertencias del compilador como errores.  
   
-   Para obtener más información, consulte la opción **/we**`n` en [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, /we, /wo, /Wv, /WX (Nivel de advertencia)](http://msdn.microsoft.com/library/d6bc7bf5-c754-4879-909c-8e3a67e2629f).  
+   Para obtener más información, consulte la opción **/we**`n` en [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, /we, /wo, /Wv, /WX (Nivel de advertencia)](https://msdn.microsoft.com/library/d6bc7bf5-c754-4879-909c-8e3a67e2629f).  
   
 - **TreatWarningAsError**  
   
@@ -691,7 +691,7 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
    Si `true`, trata todas las advertencias del compilador como errores.  
   
-   Para obtener más información, consulte la opción **/WX** en [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, /we, /wo, /Wv, /WX (Nivel de advertencia)](http://msdn.microsoft.com/library/d6bc7bf5-c754-4879-909c-8e3a67e2629f).  
+   Para obtener más información, consulte la opción **/WX** en [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, /we, /wo, /Wv, /WX (Nivel de advertencia)](https://msdn.microsoft.com/library/d6bc7bf5-c754-4879-909c-8e3a67e2629f).  
   
 - **TreatWChar_tAsBuiltInType**  
   
@@ -699,7 +699,7 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
    Si `true`, trate el tipo `wchar_t` como un tipo nativo.  
   
-   Para obtener más información, vea [/Zc:wchar_t (wchar_t es un tipo nativo)](http://msdn.microsoft.com/library/b0de5a84-da72-4e5a-9a4e-541099f939e0).  
+   Para obtener más información, vea [/Zc:wchar_t (wchar_t es un tipo nativo)](https://msdn.microsoft.com/library/b0de5a84-da72-4e5a-9a4e-541099f939e0).  
   
 - **UndefineAllPreprocessorDefinitions**  
   
@@ -707,7 +707,7 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
    Si `true`, anula la definición de los símbolos específicos de Microsoft que el compilador define.  
   
-   Para obtener más información, consulte la opción **/u** en [/U, /u (Anular la definición de símbolos)](http://msdn.microsoft.com/library/7bc0474f-6d1f-419b-807d-0d8816763b2a).  
+   Para obtener más información, consulte la opción **/u** en [/U, /u (Anular la definición de símbolos)](https://msdn.microsoft.com/library/7bc0474f-6d1f-419b-807d-0d8816763b2a).  
   
 - **UndefinePreprocessorDefinitions**  
   
@@ -715,7 +715,7 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
    Especifica una lista de uno o más símbolos de preprocesador para anular la definición.  
   
-   Para obtener más información, consulte la opción **/U** en [/U, /u (Anular la definición de símbolos)](http://msdn.microsoft.com/library/7bc0474f-6d1f-419b-807d-0d8816763b2a).  
+   Para obtener más información, consulte la opción **/U** en [/U, /u (Anular la definición de símbolos)](https://msdn.microsoft.com/library/7bc0474f-6d1f-419b-807d-0d8816763b2a).  
   
 - **UseFullPaths**  
   
@@ -723,7 +723,7 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
    Si `true`, muestra la ruta de acceso completa de archivos de código fuente pasados al compilador en diagnósticos.  
   
-   Para obtener más información, consulte [/FC (Ruta de acceso completa de archivo de código fuente en diagnósticos)](http://msdn.microsoft.com/library/1f11414e-cb42-421b-be68-9d369aab036b).  
+   Para obtener más información, consulte [/FC (Ruta de acceso completa de archivo de código fuente en diagnósticos)](https://msdn.microsoft.com/library/1f11414e-cb42-421b-be68-9d369aab036b).  
   
 - **UseUnicodeForAssemblerListing**  
   
@@ -731,7 +731,7 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
    Si `true`, hace que el archivo de salida se cree en formato UTF-8.  
   
-   Para obtener más información, consulte la opción **/FAu** en [/FA, /Fa (Archivo de lista)](http://msdn.microsoft.com/library/c7507d0e-c69d-44f9-b8e2-d2c398697402).  
+   Para obtener más información, consulte la opción **/FAu** en [/FA, /Fa (Archivo de lista)](https://msdn.microsoft.com/library/c7507d0e-c69d-44f9-b8e2-d2c398697402).  
   
 - **WarningLevel**  
   
@@ -753,7 +753,7 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
   - **EnableAllWarnings** - **/Wall**  
   
-    Para obtener más información, consulte la opción **/W**_n_ en [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, /we, /wo, /Wv, /WX (Nivel de advertencia)](http://msdn.microsoft.com/library/d6bc7bf5-c754-4879-909c-8e3a67e2629f).  
+    Para obtener más información, consulte la opción **/W**_n_ en [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, /Wall, /wd, /we, /wo, /Wv, /WX (Nivel de advertencia)](https://msdn.microsoft.com/library/d6bc7bf5-c754-4879-909c-8e3a67e2629f).  
   
 - **WholeProgramOptimization**  
   
@@ -761,7 +761,7 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
    Si `true`, habilita la optimización de todo el programa.  
   
-   Para obtener más información, consulte [/GL (Optimización de todo el programa)](http://msdn.microsoft.com/library/09d51e2d-9728-4bd0-b5dc-3b8284aca1d1).  
+   Para obtener más información, consulte [/GL (Optimización de todo el programa)](https://msdn.microsoft.com/library/09d51e2d-9728-4bd0-b5dc-3b8284aca1d1).  
   
 - **XMLDocumentationFileName**  
   
@@ -769,7 +769,7 @@ Incluye la herramienta compilador de Visual C++, cl.exe. El compilador genera ar
   
    Especifica el nombre de los archivos de documentación XML generados. Este parámetro puede ser un nombre de archivo o directorio.  
   
-   Para obtener más información, consulte el argumento `name` en [/doc (Procesar comentarios de documentación) (C/C ++)](http://msdn.microsoft.com/library/b54f7e2c-f28f-4f46-9ed6-0db09be2cc63). Consulte también el parámetro **GenerateXMLDocumentationFiles** en esta tabla.  
+   Para obtener más información, consulte el argumento `name` en [/doc (Procesar comentarios de documentación) (C/C ++)](https://msdn.microsoft.com/library/b54f7e2c-f28f-4f46-9ed6-0db09be2cc63). Consulte también el parámetro **GenerateXMLDocumentationFiles** en esta tabla.  
   
 - **MinimalRebuildFromTracking**  
   

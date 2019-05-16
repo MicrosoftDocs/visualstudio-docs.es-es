@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 631979309d9ad42a25b244e8806e5a6849f8b81d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 39d233c126d35f303a30a955310859dd9a678c56
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081494"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65681376"
 ---
 # <a name="ca2002-do-not-lock-on-objects-with-weak-identity"></a>CA2002: No bloquear objetos con identidad débil
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,4 +71,4 @@ ms.locfileid: "60081494"
 
 ## <a name="see-also"></a>Vea también
  <xref:System.Threading.Monitor> <xref:System.AppDomain>
- [lock (instrucción)](http://msdn.microsoft.com/library/656da1a4-707e-4ef6-9c6e-6d13b646af42) [SyncLock (instrucción)](http://msdn.microsoft.com/library/14501703-298f-4d43-b139-c4b6366af176)
+ [lock (instrucción)](https://msdn.microsoft.com/library/656da1a4-707e-4ef6-9c6e-6d13b646af42) [SyncLock (instrucción)](https://msdn.microsoft.com/library/14501703-298f-4d43-b139-c4b6366af176)

@@ -15,12 +15,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a986303025460d6ca57cd3aa836a9f61f1804461
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 913594f47288715e0050643f365f9225810f6ded
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62423241"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65682351"
 ---
 # <a name="code-snippet-picker"></a>Selector de fragmentos de código
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -56,6 +56,6 @@ El Editor de código de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] proporci
   
 ## <a name="see-also"></a>Vea también  
  [Procedimientos recomendados para usar fragmentos de código](../../ide/best-practices-for-using-code-snippets.md)   
- [Fragmentos de código de IntelliSense de Visual Basic](http://msdn.microsoft.com/library/ffdde4c9-8141-4906-b09b-15181357a643)   
+ [Fragmentos de código de IntelliSense de Visual Basic](https://msdn.microsoft.com/library/ffdde4c9-8141-4906-b09b-15181357a643)   
  [Establecer marcadores en el código](../../ide/setting-bookmarks-in-code.md)   
  [Cómo: Usar fragmentos de código envolventes](../../ide/how-to-use-surround-with-code-snippets.md)

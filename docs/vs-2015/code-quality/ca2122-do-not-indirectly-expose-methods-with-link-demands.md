@@ -15,12 +15,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 637fa666dbaba539b39fb3537df49fbd12baef3a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e0b173378194c099b2014093104f814f3454843d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58987487"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687260"
 ---
 # <a name="ca2122-do-not-indirectly-expose-methods-with-link-demands"></a>CA2122: No exponer indirectamente métodos con peticiones de vínculos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,13 +33,13 @@ ms.locfileid: "58987487"
 |Cambio problemático|No trascendental|
 
 ## <a name="cause"></a>Motivo
- Un miembro público o protegido tiene un [peticiones de vínculo](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) y se llama a un miembro que no realiza ninguna comprobación de seguridad.
+ Un miembro público o protegido tiene un [peticiones de vínculo](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) y se llama a un miembro que no realiza ninguna comprobación de seguridad.
 
 ## <a name="rule-description"></a>Descripción de la regla
  Una solicitud de vínculo sólo comprueba los permisos del llamador inmediato. Si un miembro `X` ningún demandas de seguridad de sus llamadores y las llamadas de código protegido por una petición de vínculo, un llamador sin el permiso necesario puede utilizar `X` para tener acceso al miembro protegido.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Agregar una seguridad [datos y modelado](http://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6) o vincular a petición para el miembro de modo que ya no proporciona acceso no seguro al miembro protegido por solicitud de vínculo.
+ Agregar una seguridad [datos y modelado](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6) o vincular a petición para el miembro de modo que ya no proporciona acceso no seguro al miembro protegido por solicitud de vínculo.
 
 ## <a name="when-to-suppress-warnings"></a>Cuándo suprimir advertencias
  Para suprimir una advertencia de esta regla de forma segura, debe asegurarse de que el código no tiene acceso a las operaciones o los recursos que se pueden usar de forma destructiva sus llamadores.
@@ -58,4 +58,4 @@ ms.locfileid: "58987487"
 
  **Valor de miembro no segura: seattle.corp.contoso.com**
 ## <a name="see-also"></a>Vea también
- [Instrucciones de codificación segura](http://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [peticiones de vínculos](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) [datos y modelado](http://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)
+ [Instrucciones de codificación segura](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [peticiones de vínculos](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) [datos y modelado](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)

@@ -25,12 +25,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 38239bd431f3e66e1a694361f3727c843fbf29d3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0459168da627b8e67ad669486b70eb7758118d92
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62558468"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688203"
 ---
 # <a name="work-with-datasets-in-n-tier-applications"></a>Trabajar con conjuntos de datos en aplicaciones de n niveles
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ Las aplicaciones de datos con N niveles * son aplicaciones centradas en datos qu
  [Tutorial: Crear una aplicación de datos de n niveles](../data-tools/walkthrough-creating-an-n-tier-data-application.md)  
  Contiene instrucciones paso a paso para crear un conjunto de datos con tipo y separar el código de TableAdapter y del conjunto de datos en varios proyectos.  
   
- [Tutorial: Agregar validación a una aplicación de datos con N niveles](http://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265)  
+ [Tutorial: Agregar validación a una aplicación de datos con N niveles](https://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265)  
  Proporciona instrucciones paso a paso para agregar validación a la aplicación que se creó en el tutorial de la aplicación de datos con n niveles.  
   
 ## <a name="reference"></a>Referencia  
@@ -71,4 +71,4 @@ Las aplicaciones de datos con N niveles * son aplicaciones centradas en datos qu
 - [Actualización jerárquica](../data-tools/hierarchical-update.md)   
 - [Herramientas de conjunto de datos en Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)   
 - [Obtener acceso a los datos en Visual Studio](../data-tools/accessing-data-in-visual-studio.md)   
-- [Aplicaciones de n niveles y remotas con LINQ to SQL](http://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598)
+- [Aplicaciones de n niveles y remotas con LINQ to SQL](https://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598)

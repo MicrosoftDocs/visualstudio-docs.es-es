@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f0967f50c9dce325ff1595fec9d50138aa0a8d74
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 7969ca0a5900ae08d1aac6634f961d45bbfac564
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438141"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674157"
 ---
 # <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>Tutorial: Crear un entorno de compilación para varios equipos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -197,7 +197,7 @@ Se puede crear un entorno de compilación dentro de la organización si se insta
   
    - \Microsoft.VC110.OPENMP\vcomp110.dll  
   
-5. Copie solo los siguientes archivos de la carpeta \Debug_NonRedist\x86\ o \Debug_NonRedist\x64\ al equipo de compilación, como se describe en [Preparar un equipo de pruebas para ejecutar un archivo ejecutable de depuración](http://msdn.microsoft.com/library/f0400989-cc2e-4dce-9788-6bdbe91c6f5a). No se puede copiar ningún otro archivo.  
+5. Copie solo los siguientes archivos de la carpeta \Debug_NonRedist\x86\ o \Debug_NonRedist\x64\ al equipo de compilación, como se describe en [Preparar un equipo de pruebas para ejecutar un archivo ejecutable de depuración](https://msdn.microsoft.com/library/f0400989-cc2e-4dce-9788-6bdbe91c6f5a). No se puede copiar ningún otro archivo.  
   
    - \Microsoft.VC110.DebugCRT\msvcp110d.dll  
   
@@ -424,5 +424,5 @@ Se puede crear un entorno de compilación dentro de la organización si se insta
          Para la compilación nativa de 64 bits, apunte a MSBuild de 64 bits.  
   
 ## <a name="see-also"></a>Vea también  
- [Preparar un equipo de pruebas para ejecutar un archivo ejecutable de depuración](http://msdn.microsoft.com/library/f0400989-cc2e-4dce-9788-6bdbe91c6f5a)   
+ [Preparar un equipo de pruebas para ejecutar un archivo ejecutable de depuración](https://msdn.microsoft.com/library/f0400989-cc2e-4dce-9788-6bdbe91c6f5a)   
  [Referencia de la línea de comandos](../msbuild/msbuild-command-line-reference.md)

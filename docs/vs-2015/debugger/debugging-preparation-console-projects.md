@@ -18,17 +18,17 @@ caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 438e619be3e7650961709ef8fce8d69304d5c6ac
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5ac87f6c5ef5fcf9fc7ca5532fe7436dedb8ba97
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58998339"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691216"
 ---
 # <a name="debugging-preparation-console-projects"></a>Preparación de la depuración: Proyectos de consola
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Preparar la depuración de un proyecto de consola es similar a preparar la depuración de un proyecto para Windows, con algunas consideraciones adicionales. Para obtener más información, consulte [Windows Forms Applications](../debugger/debugging-preparation-windows-forms-applications.md), y [preparación de la depuración: Aplicaciones (. NET) de formularios Windows Forms](http://msdn.microsoft.com/a8bc54de-41a3-464d-9a12-db9bdcbc1ad5). Debido a la similitud de todas las aplicaciones de consola, este tema cubre los tipos de proyecto siguientes:  
+Preparar la depuración de un proyecto de consola es similar a preparar la depuración de un proyecto para Windows, con algunas consideraciones adicionales. Para obtener más información, consulte [Windows Forms Applications](../debugger/debugging-preparation-windows-forms-applications.md), y [preparación de la depuración: Aplicaciones (. NET) de formularios Windows Forms](https://msdn.microsoft.com/a8bc54de-41a3-464d-9a12-db9bdcbc1ad5). Debido a la similitud de todas las aplicaciones de consola, este tema cubre los tipos de proyecto siguientes:  
   
 - Aplicación de consola de C#  
   

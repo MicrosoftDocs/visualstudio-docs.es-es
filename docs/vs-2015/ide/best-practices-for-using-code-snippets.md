@@ -12,12 +12,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 60d41398a37870d8be7a55003259b7cb2b9e48db
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 48e37262c376d2c92e741152a0b3a5866e2718ad
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099629"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685668"
 ---
 # <a name="best-practices-for-using-code-snippets"></a>Procedimientos recomendados para usar fragmentos de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "60099629"
 El código de un fragmento de código muestra solo la forma más sencilla de hacer algo. Para la mayoría de las aplicaciones, el código debe modificarse para adaptarlo a la aplicación.  
   
 ## <a name="handling-exceptions"></a>Controlar las excepciones  
- Normalmente, el fragmento de código Try... Catch bloquea catch y vuelve a iniciar todas las excepciones. Es posible que esta no sea la elección correcta para su proyecto. Para cada excepción, hay varias formas de responder. Para obtener ejemplos, consulte [Cómo: Controlar una excepción mediante Try y Catch (Guía de programación de C#)](http://msdn.microsoft.com/library/ca8e3773-980e-4767-8633-7408540e9818) y [Try...Catch...Finally (instrucción)](http://msdn.microsoft.com/library/d6488026-ccb3-42b8-a810-0d97b9d6472b).  
+ Normalmente, el fragmento de código Try... Catch bloquea catch y vuelve a iniciar todas las excepciones. Es posible que esta no sea la elección correcta para su proyecto. Para cada excepción, hay varias formas de responder. Para obtener ejemplos, consulte [Cómo: Controlar una excepción mediante Try y Catch (Guía de programación de C#)](https://msdn.microsoft.com/library/ca8e3773-980e-4767-8633-7408540e9818) y [Try...Catch...Finally (instrucción)](https://msdn.microsoft.com/library/d6488026-ccb3-42b8-a810-0d97b9d6472b).  
   
 ## <a name="file-locations"></a>Ubicaciones de archivos  
  Al adaptar las ubicaciones de archivo a la aplicación, debe tener en cuenta lo siguiente:  
@@ -67,6 +67,6 @@ El código de un fragmento de código muestra solo la forma más sencilla de hac
     - El fragmento de código puede contener referencias que se agregan automáticamente al proyecto y es posible que se carguen desde cualquier lugar del sistema. Es posible que estas referencias se hayan descargado en el equipo desde el mismo sitio del que ha descargado el fragmento de código. El fragmento de código puede realizar una llamada a un método en la referencia que ejecuta código malintencionado. Para protegerse contra este tipo de ataque, revise los bloques Importaciones y Referencias del archivo de fragmentos.  
   
 ## <a name="see-also"></a>Vea también  
- [Fragmentos de código de IntelliSense de Visual Basic](http://msdn.microsoft.com/library/ffdde4c9-8141-4906-b09b-15181357a643)   
+ [Fragmentos de código de IntelliSense de Visual Basic](https://msdn.microsoft.com/library/ffdde4c9-8141-4906-b09b-15181357a643)   
  [Proteger aplicaciones](../ide/securing-applications.md)   
  [Fragmentos de código](../ide/code-snippets.md)

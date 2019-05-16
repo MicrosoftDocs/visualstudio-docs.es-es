@@ -11,12 +11,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1fcb0ae81a2f758f548f11bb9875b2275f6ebfe3
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 8710ed0a35b483601a166c4644112b1ba7e4feaf
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54782522"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705757"
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>Cuadro de diálogo Configuración avanzada (Visualizador de simultaneidad)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ Mediante el cuadro de diálogo **Opciones avanzadas** del Visualizador de simult
  De forma predeterminada, los eventos de CLR se recopilan solo cuando se genera el perfil de un proceso administrado, porque normalmente son innecesarios para procesos nativos.  En algunos casos (por ejemplo, cuando un proceso nativo hospeda CLR), es posible que tenga que recopilar los eventos de CLR para un proceso nativo.  Si es así, seleccione la casilla **Recopilar procesos nativos**.  
   
 ### <a name="disable-rundown-events"></a>Deshabilitación de eventos de detención  
- CLR genera eventos de dos proveedores: tiempo de ejecución y detención.  Si desea recopilar eventos de tiempo de ejecución CLR, pero desea evitar la recopilación de eventos de detención, active la casilla **Deshabilitar eventos de detención**.  De este modo se reduce el tamaño del archivo de seguimiento generado por la recopilación, pero algunas pilas podrían no resolverse. Para obtener más información, vea [CLR ETW Providers](http://msdn.microsoft.com/library/0beafad4-b2c8-47f4-b342-83411d57a51f) (Proveedores de ETW de CLR).  
+ CLR genera eventos de dos proveedores: tiempo de ejecución y detención.  Si desea recopilar eventos de tiempo de ejecución CLR, pero desea evitar la recopilación de eventos de detención, active la casilla **Deshabilitar eventos de detención**.  De este modo se reduce el tamaño del archivo de seguimiento generado por la recopilación, pero algunas pilas podrían no resolverse. Para obtener más información, vea [CLR ETW Providers](https://msdn.microsoft.com/library/0beafad4-b2c8-47f4-b342-83411d57a51f) (Proveedores de ETW de CLR).  
   
 ### <a name="sample-events"></a>Eventos de muestras  
  Puede usar eventos de ejemplo para recopilar pilas de llamadas que están asociadas a la ejecución de subprocesos. Estos eventos se recopilan aproximadamente una vez por milisegundo para los subprocesos que se ejecutan en el proceso actual. Si deshabilita la recopilación de eventos de ejemplo, se reduce el tamaño del seguimiento recopilado, pero no se podrán ver las pilas de llamadas que están asociadas a la ejecución de subprocesos.  

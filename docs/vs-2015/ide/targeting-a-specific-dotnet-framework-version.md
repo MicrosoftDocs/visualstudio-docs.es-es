@@ -14,12 +14,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 38a12f851bb99eb553856556608aaf029c91c40d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a11658e8cfe96da9c56b7cc1a63839510ed3c829
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62429241"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679155"
 ---
 # <a name="targeting-a-specific-net-framework-version"></a>Elegir una versión específica de .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ En Visual Studio, puede especificar la versión o perfil de .NET Framework que d
  Describe cómo especificar un [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] determinado para su proyecto de Visual Basic, Visual C# o Visual F#.  
   
 ## <a name="related-sections"></a>Secciones relacionadas  
- [Especificar una versión de .NET Framework para sitios web](http://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76)  
+ [Especificar una versión de .NET Framework para sitios web](https://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76)  
  Explica cómo utilizar esta versión de Visual Studio para desarrollar aplicaciones web que se ejecutan en versiones anteriores de .NET Framework.  
   
  [Página de aplicación, Diseñador de proyectos (C#)](../ide/reference/application-page-project-designer-csharp.md)  
@@ -45,5 +45,5 @@ En Visual Studio, puede especificar la versión o perfil de .NET Framework que d
  [Página de aplicación, Diseñador de proyectos (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)  
  Describe el control **Plataforma de destino** del Diseñador de proyectos para proyectos de [!INCLUDE[vbprvb](../includes/vbprvb-md.md)].  
   
- [Cómo: Modificar la plataforma de destino y el conjunto de herramientas de la plataforma](http://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)  
+ [Cómo: Modificar la plataforma de destino y el conjunto de herramientas de la plataforma](https://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)  
  Describe cómo cambiar la configuración de proyectos de Visual C++ a distintas versiones de destino de .NET Framework y utilizar diferentes conjuntos de herramientas de la plataforma.

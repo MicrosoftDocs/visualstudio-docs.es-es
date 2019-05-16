@@ -13,12 +13,12 @@ ms.assetid: ba237712-f8c4-4d13-854b-ab4a16afa309
 caps.latest.revision: 128
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a2418df5a831416d74328e4ca926cdf8c3a721e2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 229ce6d15d8f411a81c684d20945f4dcc9fb8957
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63383429"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695037"
 ---
 # <a name="welcome-to-visual-studio-2015"></a>Bienvenido a Visual Studio 2015
 [!INCLUDE[vs2017banner](includes/vs2017banner.md)]
@@ -56,7 +56,7 @@ Le damos la bienvenida a Visual Studio. Tenemos todo lo que necesita para crear 
 
 1. [Xamarin para Visual Studio](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md): Un código base común en C# para todos los dispositivos
 
-2. [Apache Cordova con Visual Studio](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42): Un código base común para HTML, CSS y JavaScript o Typescript
+2. [Apache Cordova con Visual Studio](https://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42): Un código base común para HTML, CSS y JavaScript o Typescript
 
 3. [Visual Studio Tools para Unity](./cross-platform/visual-studio-tools-for-unity.md): Desarrollo de juegos en 2D o 3D en C#
 
@@ -67,9 +67,9 @@ Le damos la bienvenida a Visual Studio. Tenemos todo lo que necesita para crear 
 ## <a name="connect-your-apps-to-services"></a>Conectar las aplicaciones a servicios
  Puede conectarse a estos servicios desde el principio (siempre y cuando tenga una cuenta para cada servicio):
 
-- [Servicios móviles de Azure](http://azure.microsoft.com/documentation/services/mobile-services/)
+- [Servicios móviles de Azure](https://azure.microsoft.com/documentation/services/mobile-services/)
 
-- [Almacenamiento de Azure](http://azure.microsoft.com/documentation/services/storage/)
+- [Almacenamiento de Azure](https://azure.microsoft.com/documentation/services/storage/)
 
 - Integre las API de REST de Office 365 en su aplicación para conectarse a los datos almacenados en la nube. Para obtener más información, consulte [estos ejemplos](https://github.com/OfficeDev/?utf8=%E2%9C%93&query=o365).
 
@@ -79,7 +79,7 @@ Le damos la bienvenida a Visual Studio. Tenemos todo lo que necesita para crear 
 ## <a name="build-test-and-manage-your-code"></a>Crear, probar y administrar el código
 
 ### <a name="check-in-your-code"></a>Comprobar el código
- Si trabaja en equipo, también necesitará compartir las últimas versiones del código, de modo que todo el equipo use el mismo código base. Visual Studio se integra perfectamente en Visual Studio Team Services o Team Foundation Server para proporcionar el control de versiones con Git o TFVC (Team Foundation Version Control). Use Visual Studio Team Services para almacenar el código en la nube sin necesidad de mantener un servidor local. Use Team Foundation Server si desea tener un servidor local. Cada vez que cree un proyecto de código, tendrá la opción de agregarlo al control de versiones. Obtenga información acerca de qué control de versiones de sistema es más adecuado para sus necesidades: [Utilice el control de versiones](http://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314).
+ Si trabaja en equipo, también necesitará compartir las últimas versiones del código, de modo que todo el equipo use el mismo código base. Visual Studio se integra perfectamente en Visual Studio Team Services o Team Foundation Server para proporcionar el control de versiones con Git o TFVC (Team Foundation Version Control). Use Visual Studio Team Services para almacenar el código en la nube sin necesidad de mantener un servidor local. Use Team Foundation Server si desea tener un servidor local. Cada vez que cree un proyecto de código, tendrá la opción de agregarlo al control de versiones. Obtenga información acerca de qué control de versiones de sistema es más adecuado para sus necesidades: [Utilice el control de versiones](https://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314).
 
 ### <a name="build-your-app"></a>Compilar la aplicación
  También puede [compilar la aplicación localmente](./ide/compiling-and-building-in-visual-studio.md) y asegurarse de que funciona correctamente. A continuación, use las [herramientas de depuración](./debugger/debugging-in-visual-studio.md) para corregir cualquier problema de su aplicación. También puede compilar proyectos en servidores de compilación compartidos o en la nube. Automatice el proceso de compilación para compilar el código que los desarrolladores del equipo comprobaron con el control de versiones. Por ejemplo, puede compilar uno o varios proyectos por la noche o cada vez que se proteja ese código.
@@ -87,17 +87,17 @@ Le damos la bienvenida a Visual Studio. Tenemos todo lo que necesita para crear 
 ### <a name="test-your-app"></a>Probar la aplicación
  [Cree pruebas unitarias](./test/unit-test-your-code.md) para mejorar la calidad de la aplicación. Estas pruebas se pueden ejecutar cada vez que se registre y como parte de la compilación.
 
- Planee, cree y ejecute pruebas manuales y automáticas en la aplicación. Los planes de pruebas, los conjuntos de pruebas, los casos de prueba y los resultados de las pruebas se almacenan en la nube con Visual Studio Team Services o de forma local con Team Foundation Server. Obtenga más información sobre cómo [probar la aplicación](http://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945).
+ Planee, cree y ejecute pruebas manuales y automáticas en la aplicación. Los planes de pruebas, los conjuntos de pruebas, los casos de prueba y los resultados de las pruebas se almacenan en la nube con Visual Studio Team Services o de forma local con Team Foundation Server. Obtenga más información sobre cómo [probar la aplicación](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945).
 
 ### <a name="deliver-your-teams-code-faster"></a>Proporcionar el código del equipo con mayor rapidez
- Elimine las barreras que existen entre los miembros del equipo y mejore la colaboración. Vaya más allá y automatice la publicación de la aplicación en cada fase del desarrollo hasta la producción. Supervise el rendimiento de la aplicación y su disponibilidad cuando está activada. Recopile datos de uso en tiempo real sobre el uso real de la aplicación por parte de los clientes. Vea [DevOps y administración del ciclo de vida de las aplicaciones](http://msdn.microsoft.com/library/74a1f71d-7f23-4c71-8fd7-89ede614fab6) para obtener más detalles.
+ Elimine las barreras que existen entre los miembros del equipo y mejore la colaboración. Vaya más allá y automatice la publicación de la aplicación en cada fase del desarrollo hasta la producción. Supervise el rendimiento de la aplicación y su disponibilidad cuando está activada. Recopile datos de uso en tiempo real sobre el uso real de la aplicación por parte de los clientes. Vea [DevOps y administración del ciclo de vida de las aplicaciones](https://msdn.microsoft.com/library/74a1f71d-7f23-4c71-8fd7-89ede614fab6) para obtener más detalles.
 
 ## <a name="whats-new"></a>Novedades
 
 |||||
 |-|-|-|-|
-|[Novedades de Visual Studio 2015](./what-s-new-in-visual-studio-2015.md)|[Novedades de Visual C#](http://msdn.microsoft.com/library/9f18dc26-27fa-4603-a639-b573f07a117b)|[Novedades de .NET Framework 4.6](http://msdn.microsoft.com/library/1d971dd7-10fc-4692-8dac-30ca308fc0fa)|[Novedades de ALM](http://msdn.microsoft.com/54b98a53-6083-4303-869a-8063d8fae938)|
-|[Novedades de C++](http://msdn.microsoft.com/library/1cc09fad-85a2-43c2-b022-bb99f5fe0ad7)|[Novedades de Visual Basic](http://msdn.microsoft.com/library/d7e97396-7f42-4873-a81c-4ebcc4b6ca02)|[Novedades de JavaScript](javascript/javascript-in-visual-studio.md#whats-new-in-javascript)||
+|[Novedades de Visual Studio 2015](./what-s-new-in-visual-studio-2015.md)|[Novedades de Visual C#](https://msdn.microsoft.com/library/9f18dc26-27fa-4603-a639-b573f07a117b)|[Novedades de .NET Framework 4.6](https://msdn.microsoft.com/library/1d971dd7-10fc-4692-8dac-30ca308fc0fa)|[Novedades de ALM](https://msdn.microsoft.com/54b98a53-6083-4303-869a-8063d8fae938)|
+|[Novedades de C++](https://msdn.microsoft.com/library/1cc09fad-85a2-43c2-b022-bb99f5fe0ad7)|[Novedades de Visual Basic](https://msdn.microsoft.com/library/d7e97396-7f42-4873-a81c-4ebcc4b6ca02)|[Novedades de JavaScript](javascript/javascript-in-visual-studio.md#whats-new-in-javascript)||
 |[Python](./python/getting-started-with-python.md)||||
 
 ## <a name="in-this-section"></a>En esta sección
@@ -116,18 +116,18 @@ Le damos la bienvenida a Visual Studio. Tenemos todo lo que necesita para crear 
 
 - [Desarrollo móvil multiplataforma](./cross-platform/cross-platform-mobile-development-in-visual-studio.md)
 
-- [Conceptos de programación compartida de C# y Visual Basic](http://msdn.microsoft.com/library/fa9bf5e6-07c8-4b5b-b1ae-8a22816a63c6)
+- [Conceptos de programación compartida de C# y Visual Basic](https://msdn.microsoft.com/library/fa9bf5e6-07c8-4b5b-b1ae-8a22816a63c6)
 
-- [Visual C++](http://msdn.microsoft.com/library/e8dcc44c-a3e2-4ffe-887c-fd15b18dc458)
+- [Visual C++](https://msdn.microsoft.com/library/e8dcc44c-a3e2-4ffe-887c-fd15b18dc458)
 
 - [JavaScript](./javascript/javascript-in-visual-studio.md)
 
 - [Python](./python/getting-started-with-python.md)
 
-- [Visual F#](http://msdn.microsoft.com/library/66f52f8a-a034-4c32-bb83-fa5b030faa4d)
+- [Visual F#](https://msdn.microsoft.com/library/66f52f8a-a034-4c32-bb83-fa5b030faa4d)
 
-- [Visual Studio LightSwitch](http://msdn.microsoft.com/library/2021a2cf-f684-493f-8d1b-4cdf39bc6eb3)
+- [Visual Studio LightSwitch](https://msdn.microsoft.com/library/2021a2cf-f684-493f-8d1b-4cdf39bc6eb3)
 
-- [DevOps y administración del ciclo de vida de las aplicaciones](http://msdn.microsoft.com/library/74a1f71d-7f23-4c71-8fd7-89ede614fab6)
+- [DevOps y administración del ciclo de vida de las aplicaciones](https://msdn.microsoft.com/library/74a1f71d-7f23-4c71-8fd7-89ede614fab6)
 
 - [Hable con nosotros](./ide/talk-to-us.md)

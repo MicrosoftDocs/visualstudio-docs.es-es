@@ -11,12 +11,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4282b865bbe85a70e1565e17987600da5c7960e5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5f664b1bf2af89d8c3f6e06792039571f4211236
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444052"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692742"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Utilidad de línea de comandos Visualizador de simultaneidad (CVCollectionCmd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Se puede usar la utilidad de la línea de comandos (CVCollectionCmd.exe) del Vis
   
 |Opción|Descripción|Parámetros|Valores devueltos|  
 |------------|-----------------|----------------|-------------------|  
-|Consulta|Devuelve si la recolección se puede iniciar.|Ninguna|0 si la recolección está lista para comenzar.<br /><br /> 1 si la recolección ya está en curso.<br /><br /> 2 si la recolección no está en curso, pero una o más de las sesiones de [ETW](http://msdn.microsoft.com/library/ac99a063-e2d2-40cc-b659-d23c2f783f92) necesarias ya están habilitadas.|  
+|Consulta|Devuelve si la recolección se puede iniciar.|Ninguna|0 si la recolección está lista para comenzar.<br /><br /> 1 si la recolección ya está en curso.<br /><br /> 2 si la recolección no está en curso, pero una o más de las sesiones de [ETW](https://msdn.microsoft.com/library/ac99a063-e2d2-40cc-b659-d23c2f783f92) necesarias ya están habilitadas.|  
 |Launch|Ejecuta el proceso especificado en el Visualizador de simultaneidad.|Ruta de acceso del archivo ejecutable.|0 si la ejecución se realizó correctamente.<br /><br /> 1 si se produjo un error en la ejecución porque no se pudo iniciar la aplicación de destino.<br /><br /> 13 si se produjo un error en la ejecución porque CVCollectionCmd no tenía permisos suficientes para escribir en el directorio de salida especificado.|  
 |Attach|Comienza a recopilar un seguimiento de todo el sistema; de lo contrario, se asocia a un proceso si se ha especificado uno.|Ninguno.|0 si la asociación se realizó correctamente.<br /><br /> 1 si se produjo un error en la asociación porque el proceso especificado no era válido o era ambiguo.<br /><br /> 13 si se produjo un error en la asociación porque CVCollectionCmd no tenía permisos suficientes para escribir en el directorio de salida especificado.|  
 |Desasociar|Detiene la recolección.|Ninguno.|0 si la desasociación se realizó correctamente.<br /><br /> 1 si se produjo un error en la desasociación porque la recolección no estaba actualmente en curso.<br /><br /> 2 si se produjo un error en la desasociación porque no se pudo detener la recolección.|  

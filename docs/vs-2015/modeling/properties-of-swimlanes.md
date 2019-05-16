@@ -13,12 +13,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 04dee7bad28b6176ffb9499bfcdb5ff2dddc3e8d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: dd4435ed0930a920cd36e741ac7461e6f95ba815
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58999637"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701515"
 ---
 # <a name="properties-of-swimlanes"></a>Propiedades de las calles
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Puede agregar las calles a un diagrama. Las calles dividen un diagrama en áreas
   
  Las calles tienen las propiedades que aparecen en la tabla siguiente.  
   
-|Property|Descripción|Default|  
+|Propiedad|Descripción|Default|  
 |--------------|-----------------|-------------|  
 |Color de relleno del cuerpo|El color de relleno para el cuerpo de la calle.|Blanco|  
 |Color de relleno de encabezado|El color de relleno para el encabezado del carril.|DarkGray|  
@@ -55,4 +55,4 @@ Puede agregar las calles a un diagrama. Las calles dividen un diagrama en áreas
 |Help Keyword|La palabra clave que se utiliza para indizar la Ayuda F1 para este carril.|\<none>|  
   
 ## <a name="see-also"></a>Vea también  
- [Glosario de las Herramientas del lenguaje específico de dominio](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Glosario de las Herramientas del lenguaje específico de dominio](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

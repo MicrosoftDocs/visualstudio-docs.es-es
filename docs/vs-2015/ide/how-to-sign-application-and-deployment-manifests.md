@@ -18,12 +18,12 @@ caps.latest.revision: 61
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ddeb3fa5414208c610a7a21e176d55b0b0f985b5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6dbcc6f74d39353ae38b7298851cb1bab5fb0fe0
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435190"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685425"
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>Procedimiento Firmar aplicaciones y manifiestos de implementación
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Si quiere publicar una aplicación mediante la implementación ClickOnce, los ma
   
  Firmar los manifiestos de ClickOnce es opcional para aplicaciones basadas en .exe. Para obtener más información, consulte la sección "Generar manifiestos sin firmar" de este documento.  
   
- Para obtener información sobre cómo crear archivos de clave, vea [Cómo: Creación de un par de claves privada y pública](http://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114).  
+ Para obtener información sobre cómo crear archivos de clave, vea [Cómo: Creación de un par de claves privada y pública](https://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114).  
   
 > [!NOTE]
 > [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] solo admite archivos de claves de intercambio de información personal (PFX) que tienen la extensión .pfx. En cambio, puede seleccionar otros tipos de certificados desde el almacén de certificados de Windows del usuario actual si hace clic en **Seleccionar del almacén** en la página **Firma** de las propiedades del proyecto.  
@@ -109,7 +109,7 @@ Si quiere publicar una aplicación mediante la implementación ClickOnce, los ma
 3. Publique la aplicación.  
   
 ## <a name="see-also"></a>Vea también  
- [Ensamblados con nombre seguro](http://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)   
- [Cómo: Crear un par de claves pública y privada](http://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114)   
+ [Ensamblados con nombre seguro](https://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)   
+ [Cómo: Crear un par de claves pública y privada](https://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114)   
  [Página Firma, Diseñador de proyectos](../ide/reference/signing-page-project-designer.md)   
  [Seguridad e implementación ClickOnce](../deployment/clickonce-security-and-deployment.md)

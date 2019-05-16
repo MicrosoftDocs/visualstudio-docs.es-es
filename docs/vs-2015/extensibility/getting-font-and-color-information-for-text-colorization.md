@@ -11,12 +11,12 @@ ms.assetid: d1f985bd-743e-40b7-9458-d9af53647c91
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 35372b6d228c8d1c0dbe985379b7753c0f88d311
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8724c31accb26e478c2726dfe791256994fc95ca
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440130"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696857"
 ---
 # <a name="getting-font-and-color-information-for-text-colorization"></a>Obtención de información de fuente y Color para la coloración de texto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,6 +46,6 @@ El proceso que se representa o muestra el texto con colores de elementos de inte
 ## <a name="see-also"></a>Vea también  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>   
- [Utilizar fuentes y texto](http://msdn.microsoft.com/library/d43640f3-da94-4df2-a29d-a9d021a1c069)   
- [Trabajar con colores](http://msdn.microsoft.com/library/d34ff96f-241d-494f-abdd-13811ada8cd3)   
- [GDI (interfaz de dispositivo gráfico)](http://msdn.microsoft.com/7e1d4540-bb2e-4257-8eee-eee376acba83)
+ [Utilizar fuentes y texto](https://msdn.microsoft.com/library/d43640f3-da94-4df2-a29d-a9d021a1c069)   
+ [Trabajar con colores](https://msdn.microsoft.com/library/d34ff96f-241d-494f-abdd-13811ada8cd3)   
+ [GDI (interfaz de dispositivo gráfico)](https://msdn.microsoft.com/7e1d4540-bb2e-4257-8eee-eee376acba83)

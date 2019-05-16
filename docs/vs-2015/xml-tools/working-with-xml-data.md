@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: aef35ff50080e9b596cc63915da77851b549bc3f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4c9b653451a467cc6ac7d48ad08d937f8f8462a5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438858"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703226"
 ---
 # <a name="working-with-xml-data"></a>Trabajo con datos XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,10 +58,10 @@ XML y sus tecnologías relacionadas desempeñan un papel muy importante en la fo
  [Depuración de XSLT](../xml-tools/debugging-xslt.md)  
  Describe cómo depurar hojas de estilos con el depurador de Visual Studio.  
   
- [Referencia de los estándares XML](http://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401)  
+ [Referencia de los estándares XML](https://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401)  
  Proporciona información sobre las tecnologías XML, como XML, DTD (definición de tipo de documento), XSD (lenguaje de definición de esquema XML) y XSLT.
   
- [Servicios Web XML en código administrado](http://msdn.microsoft.com/c9a7dc25-3e68-4723-bfb7-de4320830196)  
+ [Servicios Web XML en código administrado](https://msdn.microsoft.com/c9a7dc25-3e68-4723-bfb7-de4320830196)  
  Describe cómo crear e implementar servicios Web XML y cómo tener acceso a los mismos.  
   
 ## <a name="see-also"></a>Vea también  

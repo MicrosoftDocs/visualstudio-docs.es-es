@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cd24ef7e852d84d3213e024e53e325c0ba1d59fb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 884ec6cc25fd2ef415dc71055361344d79021d5e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54762084"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696373"
 ---
 # <a name="visual-c-code-snippets"></a>Fragmentos de código de Visual C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ En Visual Studio se pueden usar fragmentos de código para agregar código de us
   
 - En el menú **Editar / IntelliSense**, seleccione **Insertar fragmento de código**.  
   
-- Use las teclas de acceso rápido: **CTRL + K + X**.  
+- Use las teclas de acceso rápido: **CTRL + K + X**  
   
   Verá una lista de opciones que empiezan por **#if**. Al seleccionar **#if**, verá el código siguiente agregado al archivo:  
   
@@ -49,7 +49,7 @@ En Visual Studio se pueden usar fragmentos de código para agregar código de us
   
 2. En el menú **Editar / IntelliSense**, seleccione **Rodear con**.  
   
-3. Use las teclas de acceso rápido: **CTRL + K + S**.  
+3. Use las teclas de acceso rápido: **CTRL + K + S**  
   
    Seleccione **#if**. Verá algo parecido a esto:  
   
@@ -138,7 +138,7 @@ for (int i = length - 1; i >= 0; i--)
 }  
 ```  
   
- El fragmento de código **rfor** proporciona un bucle "for" [basado en rango](http://msdn.microsoft.com/library/5750ba1d-ba48-4236-a923-e32de8345c2d) (vínculo):  
+ El fragmento de código **rfor** proporciona un bucle "for" [basado en rango](https://msdn.microsoft.com/library/5750ba1d-ba48-4236-a923-e32de8345c2d) (vínculo):  
   
 ```cpp  
 for (auto& i : v)  

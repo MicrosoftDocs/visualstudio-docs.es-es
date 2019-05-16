@@ -13,12 +13,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: eaffdfa5a5caaa9a200f14230a67cac72af96df8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6f4502bcc439d55e36dad43add4c5b9852be21bd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435196"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685374"
 ---
 # <a name="how-to-specify-an-application-icon-visual-basic-c"></a>Procedimiento Especificar un icono de aplicación (Visual Basic, C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,4 +46,4 @@ La propiedad `Icon` de un proyecto especifica el archivo de icono (.ico) que se 
  [Página de aplicación, Diseñador de proyectos (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)   
  [Página de aplicación, Diseñador de proyectos (C#)](../ide/reference/application-page-project-designer-csharp.md)   
  [Administrar las propiedades de la aplicación](../ide/application-properties.md)  
- [Cómo: Agregar o quitar recursos](http://msdn.microsoft.com/7b77bc06-3952-4799-b029-def3f8f7f88d)
+ [Cómo: Agregar o quitar recursos](https://msdn.microsoft.com/7b77bc06-3952-4799-b029-def3f8f7f88d)

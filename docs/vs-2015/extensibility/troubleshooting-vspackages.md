@@ -11,12 +11,12 @@ ms.assetid: 274673e7-72e7-476f-a263-3411b5b874be
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: eda92d27781ec26fd33cfd82d18257015b494236
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 62c1847e9ff476e364ed99cabc4b47a970c4c4da
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430128"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695505"
 ---
 # <a name="troubleshooting-vspackages"></a>Solución de problemas de VSPackages
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -117,7 +117,7 @@ Estos son los problemas comunes que podría tener con el paquete de VS y sugeren
   
    2. Seleccione el **referencias** pestaña en el **páginas de propiedades** cuadro de diálogo y asegúrese de que todas las rutas de acceso son correctos. Como alternativa, puede usar el **Examinador de objetos** para buscar los objetos que se hace referencia.  
   
-        Para código administrado, puede usar el [Fuslogvw.exe (Visor de registro de enlaces de ensamblados)](http://msdn.microsoft.com/library/e32fa443-0778-4cc3-bf36-5c8ea297d296) para mostrar los detalles de las cargas de ensamblado con error.  
+        Para código administrado, puede usar el [Fuslogvw.exe (Visor de registro de enlaces de ensamblados)](https://msdn.microsoft.com/library/e32fa443-0778-4cc3-bf36-5c8ea297d296) para mostrar los detalles de las cargas de ensamblado con error.  
   
 2. Para código no administrado, busque el CLSID del VSPackage en el [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nodo de registro CLSID:  
   

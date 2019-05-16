@@ -11,12 +11,12 @@ ms.assetid: c088b6a2-c3ad-446b-830d-9c6f41b2934b
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 528716c4ea354ab63dc7fcab2b3f90fe2860b655
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e337e87d162ac59cc6bb45676c1411692dd1a3bb
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58995134"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675265"
 ---
 # <a name="visual-studio-debugger-extensibility"></a>Extensibilidad del depurador de Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Visual Studio incluye a un depurador de código fuente totalmente interactivas, 
   
  El [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] incluye una referencia completa a todos los [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] elementos necesarios para crear un DE nuevo. Además, hay ejemplos y tutoriales que le ayudarán a comenzar.  
   
- Para obtener un ejemplo extremo a otro de un sistema de proyectos de lenguaje con compatibilidad con la depuración, vea el [ejemplo de IronPython](http://msdn.microsoft.com/4c41695c-12c1-4670-b43b-d8d84c9e4089).  
+ Para obtener un ejemplo extremo a otro de un sistema de proyectos de lenguaje con compatibilidad con la depuración, vea el [ejemplo de IronPython](https://msdn.microsoft.com/4c41695c-12c1-4670-b43b-d8d84c9e4089).  
   
  Las secciones siguientes describen cómo ampliar el depurador mediante el [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)].  
   

@@ -16,12 +16,12 @@ caps.latest.revision: 9
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bb1b6d865063486aec91c6e3393a942b7ad4a67c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0bf0557db3fd4ecc58e81d2b88e8c700c2f3bae0
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62535298"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697401"
 ---
 # <a name="error-mixed-mode-debugging-is-supported-only-when-using-microsoft-net-framework-20-or-greater"></a>Error: El modo de depuración mixto se admite solo cuando se usa Microsoft .NET Framework 2.0 o superior
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,4 +33,4 @@ Para depurar código nativo y administrado, debe tener la versión 2.0, 3.0 de [
 - Actualice [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] a la versión 2.0, 3.0, 3.5 o 4.  
   
 ## <a name="see-also"></a>Vea también  
- [Configurar las herramientas remotas en el dispositivo](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)
+ [Configurar las herramientas remotas en el dispositivo](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)

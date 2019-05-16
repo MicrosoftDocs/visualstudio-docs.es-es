@@ -11,12 +11,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 93ef837da86056acc720abff9ad33cbf457a108f
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: bcb230532da4a0b84ea0102d86534c28afe35558
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54780849"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686220"
 ---
 # <a name="profiling-tools"></a>Herramientas de generación de perfiles
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ La generación de perfiles y las herramientas de diagnóstico le ayudan a diagno
 ## <a name="memory-usage"></a>Uso de memoria  
  ![DiagMemorySmall](../profiling/media/diagmemorysmall.png "DiagMemorySmall")  
   
- Busque pérdidas de memoria y memoria ineficaz durante la depuración con la herramienta **Uso de memoria** . La herramienta le permite realizar instantáneas del montón de memoria nativo y administrado. Puede usar esta herramienta con aplicaciones de escritorio, aplicaciones universales de Windows y aplicaciones ASP.NET. La herramienta **Uso de memoria** se puede ejecutar desde la ventana **Herramientas de diagnóstico** durante la depuración (**Depurar/Windows/Mostrar herramientas de diagnóstico**) o fuera del depurador (**Depurar/Generador de perfiles de rendimiento...**). Consulte [Uso de memoria](../profiling/memory-usage.md) y [Memory Usage without Debugging](http://msdn.microsoft.com/library/8883bc5f-df86-4f84-aa2b-a21150f499b0) (Uso de memoria sin depuración) para obtener más información.  
+ Busque pérdidas de memoria y memoria ineficaz durante la depuración con la herramienta **Uso de memoria** . La herramienta le permite realizar instantáneas del montón de memoria nativo y administrado. Puede usar esta herramienta con aplicaciones de escritorio, aplicaciones universales de Windows y aplicaciones ASP.NET. La herramienta **Uso de memoria** se puede ejecutar desde la ventana **Herramientas de diagnóstico** durante la depuración (**Depurar/Windows/Mostrar herramientas de diagnóstico**) o fuera del depurador (**Depurar/Generador de perfiles de rendimiento...**). Consulte [Uso de memoria](../profiling/memory-usage.md) y [Memory Usage without Debugging](https://msdn.microsoft.com/library/8883bc5f-df86-4f84-aa2b-a21150f499b0) (Uso de memoria sin depuración) para obtener más información.  
   
 ## <a name="cpu-usage"></a>Uso de CPU  
  ![DiagCPUSmall](../profiling/media/diagcpusmall.png "DiagCPUSmall")  

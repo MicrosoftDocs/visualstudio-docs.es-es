@@ -10,12 +10,12 @@ ms.assetid: 24d2bffd-a35c-46db-8515-fd60b884b7fb
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c791d991f797a9ccc581fa6d79b0400c17c84e0e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 14296aa335ba6710d4d9eac8e5338af7463c0aac
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442274"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687635"
 ---
 # <a name="walkthrough-creating-a-core-editor-and-registering-an-editor-file-type"></a>Tutorial: Crear un Editor de núcleo y registrar un tipo de archivo del Editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ En este tutorial se muestra cómo crear un VSPackage que se inicia el [!INCLUDE[
   
 ### <a name="to-create-the-vspackage"></a>Para crear el VSPackage  
   
-- Iniciar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] y cree un [!INCLUDE[csprcs](../includes/csprcs-md.md)] VSPackage llamado `MyPackage`, tal y como se describe en [Tutorial: Crear un VSPackage del comando de menú](http://msdn.microsoft.com/d699c149-5d1e-47ff-94c7-e1222af02c32).  
+- Iniciar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] y cree un [!INCLUDE[csprcs](../includes/csprcs-md.md)] VSPackage llamado `MyPackage`, tal y como se describe en [Tutorial: Crear un VSPackage del comando de menú](https://msdn.microsoft.com/d699c149-5d1e-47ff-94c7-e1222af02c32).  
   
 ### <a name="to-add-the-editor-factory"></a>Para agregar el generador de editores  
   

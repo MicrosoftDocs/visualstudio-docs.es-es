@@ -11,12 +11,12 @@ ms.assetid: 73ce91d8-0ab1-4a1f-bf12-4d3c49c01e13
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 60ff1f32d66daca4c37a7cfe7effb51361bb6f26
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6643c52ff8e5801c562524e99c4e3f03c00f74b9
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58988451"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687480"
 ---
 # <a name="new-project-generation-under-the-hood-part-two"></a>Generación de nuevos proyectos: Aspectos técnicos (parte 2)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ En [nueva generación de proyectos: Internamente, una parte](../../extensibility
 ## <a name="generating-the-solution-files"></a>Generar los archivos de solución  
  Elegir una plantilla de aplicación dirige [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] descomprimir y abrir el archivo .vstemplate correspondiente y para iniciar una plantilla para interpretar los comandos XML de este archivo. Estos comandos crean proyectos y elementos de proyecto en la solución nueva o existente.  
   
- La plantilla desempaqueta los archivos de origen, llama a las plantillas de elemento de la misma carpeta zip que contiene el archivo .vstemplate. La plantilla copia estos archivos en el nuevo proyecto, personalizarlos según corresponda. Para obtener información general de plantillas de proyecto y elemento, vea [NIB: Plantillas de Visual Studio](http://msdn.microsoft.com/141fccaa-d68f-4155-822b-27f35dd94041).  
+ La plantilla desempaqueta los archivos de origen, llama a las plantillas de elemento de la misma carpeta zip que contiene el archivo .vstemplate. La plantilla copia estos archivos en el nuevo proyecto, personalizarlos según corresponda. Para obtener información general de plantillas de proyecto y elemento, vea [NIB: Plantillas de Visual Studio](https://msdn.microsoft.com/141fccaa-d68f-4155-822b-27f35dd94041).  
   
 ### <a name="template-parameter-replacement"></a>Reemplazo de parámetros de plantilla  
  Cuando la plantilla copia una plantilla de elementos a un nuevo proyecto, sustituye los parámetros de plantilla con cadenas para personalizar el archivo. Un parámetro de plantilla es un símbolo (token) especial que se va precedido y seguido por un signo de dólar, por ejemplo, $date$.  
@@ -156,5 +156,5 @@ namespace Simple
 ```  
   
 ## <a name="see-also"></a>Vea también  
- [Nueva generación de proyectos: Internamente, la primera parte](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)  
+ [Generación de nuevos proyectos: Aspectos técnicos (parte 1)](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)  
  [MSBuild](../../msbuild/msbuild.md)

@@ -17,19 +17,19 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b3073f79cc58296b6952d610384d06648aa6ce3d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 6864708d3e60898b32ba07b14939a5c3e31d897e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60093480"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705141"
 ---
 # <a name="create-and-configure-datasets-in-visual-studio"></a>Crear y configurar conjuntos de datos en Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Un *dataset* es un conjunto de objetos que almacenar datos de una base de datos en memoria y admitir el seguimiento de cambios para permitir crear, leer, actualizar y eliminar operaciones (CRUD) en los datos sin necesidad de estar siempre conectados a la base de datos. Los conjuntos de datos se diseñaron para simple *formularios sobre datos* aplicaciones empresariales. Para las aplicaciones nuevas, considere el uso de Entity Framework para almacenar y modelar los datos en memoria. Para trabajar con conjuntos de datos, debe tener conocimientos básicos sobre conceptos de base de datos.
 
- Creación de un tipo <xref:System.Data.DataSet> clase en Visual Studio en tiempo de diseño mediante el uso de la **Asistente para configuración de origen de datos**. Para obtener información sobre cómo crear conjuntos de datos mediante programación, vea [creación de un conjunto de datos](http://msdn.microsoft.com/library/57629d8f-393e-4677-8b83-29ffde27f5fc).
+ Creación de un tipo <xref:System.Data.DataSet> clase en Visual Studio en tiempo de diseño mediante el uso de la **Asistente para configuración de origen de datos**. Para obtener información sobre cómo crear conjuntos de datos mediante programación, vea [creación de un conjunto de datos](https://msdn.microsoft.com/library/57629d8f-393e-4677-8b83-29ffde27f5fc).
 
 ## <a name="create-a-new-dataset-by-using-the-data-source-configuration-wizard"></a>Crear un nuevo conjunto de datos mediante el Asistente para configuración de orígenes de datos
 
@@ -90,6 +90,6 @@ Un *dataset* es un conjunto de objetos que almacenar datos de una base de datos 
 
 2. Arrastre un <xref:System.Data.DataTable> clase desde el **conjunto de datos** pestaña de la **cuadro de herramientas** hasta el **Diseñador de Dataset**.
 
-3. Agregue columnas para definir su tabla de datos. Para obtener más información, vea [Cómo: Agregar columnas a un objeto DataTable](http://msdn.microsoft.com/library/8ca21f77-b99a-47a7-a656-7cfd7a1bd9df).
+3. Agregue columnas para definir su tabla de datos. Para obtener más información, vea [Cómo: Agregar columnas a un objeto DataTable](https://msdn.microsoft.com/library/8ca21f77-b99a-47a7-a656-7cfd7a1bd9df).
 
-4. Tablas independientes necesitan implementar `Fill` lógica en tablas independientes para que puede rellenar con datos. Para obtener información sobre cómo rellenar tablas de datos independiente, consulte [llenar un DataSet desde un objeto DataAdapter](http://msdn.microsoft.com/library/3fa0ac7d-e266-4954-bfac-3fbe2f913153).
+4. Tablas independientes necesitan implementar `Fill` lógica en tablas independientes para que puede rellenar con datos. Para obtener información sobre cómo rellenar tablas de datos independiente, consulte [llenar un DataSet desde un objeto DataAdapter](https://msdn.microsoft.com/library/3fa0ac7d-e266-4954-bfac-3fbe2f913153).

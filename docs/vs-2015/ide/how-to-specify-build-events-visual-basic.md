@@ -15,12 +15,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 315a0e2f6c68a98eac8bb2c36d184ef68998e5ae
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c21b50aab30d3ce7603ab8e5f7e6582332e94628
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435134"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685400"
 ---
 # <a name="how-to-specify-build-events-visual-basic"></a>Procedimiento Especificar eventos de compilación (Visual Basic)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -165,7 +165,7 @@ Los eventos de compilación en Visual Basic se pueden usar para ejecutar scripts
     ```  
   
 ## <a name="see-also"></a>Vea también  
- [Administrar las propiedades de compilación](http://msdn.microsoft.com/94308881-f10f-4caf-a729-f1028e596a2c)   
+ [Administrar las propiedades de compilación](https://msdn.microsoft.com/94308881-f10f-4caf-a729-f1028e596a2c)   
  [Página Compilación, Diseñador de proyectos (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)   
  [Panel Publicar, Diseñador de proyectos](../ide/reference/publish-page-project-designer.md)   
  [Línea de comandos del evento anterior/posterior a la compilación (Cuadro de diálogo)](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)   

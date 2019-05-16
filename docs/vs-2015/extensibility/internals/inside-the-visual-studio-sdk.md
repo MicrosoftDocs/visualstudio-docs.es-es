@@ -12,12 +12,12 @@ ms.assetid: 9118eaa4-0453-4dc5-9e16-c7062d254869
 caps.latest.revision: 31
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3c6c7bb6d149281048d281cb7af13fe51d75ffd5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3bdc65a145b64071087d72fce9967c67cc2f8426
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443899"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687537"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>Dentro de Visual Studio SDK
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -98,7 +98,7 @@ Vista generalizada de la arquitectura de Visual Studio
  Las plantillas contienen la estructura del proyecto y los archivos básicos que son necesarios para compilar un determinado tipo de clase, biblioteca, control o aplicación. Cuando desea desarrollar software que se parece a una de las plantillas, cree un proyecto que se basa en la plantilla y, a continuación, modifique los archivos en el proyecto.  
   
 > [!NOTE]
-> Esta arquitectura de la plantilla no es compatible con [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] proyectos. Para obtener información sobre cómo crear [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] plantillas de proyecto, vea [diseñar un asistente](http://msdn.microsoft.com/library/a7c0be7e-9297-4fed-83e3-5645c896d56b).  
+> Esta arquitectura de la plantilla no es compatible con [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] proyectos. Para obtener información sobre cómo crear [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] plantillas de proyecto, vea [diseñar un asistente](https://msdn.microsoft.com/library/a7c0be7e-9297-4fed-83e3-5645c896d56b).  
   
  Para obtener más información, consulte [Agregar proyecto y plantillas de elemento de proyecto](../../extensibility/internals/adding-project-and-project-item-templates.md).  
   

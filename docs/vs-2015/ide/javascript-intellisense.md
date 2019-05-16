@@ -26,12 +26,12 @@ caps.latest.revision: 67
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 84a630a679e95d8a6848592b183749c2ace3ea86
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 4985196feb8c2ddd5996c51210e39f9e503e953f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63412304"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675174"
 ---
 # <a name="javascript-intellisense"></a>IntelliSense para JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -157,7 +157,7 @@ IntelliSense le ayuda a escribir código con mayor rapidez y menos errores, ya q
 </asp:ScriptManager>
 ```
 
- IntelliSense también admite archivos de script que se incrustan como recursos en un ensamblado en aplicaciones web ASP.NET AJAX. Para más información sobre los recursos de script insertados, consulte [Walkthrough: Embedding a JavaScript File as a Resource in an Assembly](http://msdn.microsoft.com/library/d8cb78cd-95a9-4dc6-92df-391866817e89) (Tutorial: Inserción de un archivo de JavaScript como un recurso en un ensamblado).
+ IntelliSense también admite archivos de script que se incrustan como recursos en un ensamblado en aplicaciones web ASP.NET AJAX. Para más información sobre los recursos de script insertados, consulte [Walkthrough: Embedding a JavaScript File as a Resource in an Assembly](https://msdn.microsoft.com/library/d8cb78cd-95a9-4dc6-92df-391866817e89) (Tutorial: Inserción de un archivo de JavaScript como un recurso en un ensamblado).
 
 #### <a name="ReferenceDirectives"></a> Directivas de referencia
  Con una directiva `reference`, [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] puede establecer una relación entre el script que está modificando actualmente y otros scripts. La directiva `reference` le permite incluir un archivo de script en el contexto de scripting del archivo de script actual. Esto habilita IntelliSense para poder hacer referencias, mientras programa, a las funciones, tipos y campos definidos externamente.
@@ -284,5 +284,5 @@ IntelliSense le ayuda a escribir código con mayor rapidez y menos errores, ya q
 - [Finalización de instrucciones para identificadores](../ide/statement-completion-for-identifiers.md)
 - [Comentarios de documentación XML](../ide/xml-documentation-comments-javascript.md)
 - [Acerca del modelo de objetos DHTML](http://go.microsoft.com/fwlink/?LinkID=92344)
-- [Lista de miembros](http://msdn.microsoft.com/1b9cc469-9cd4-4d42-9999-1f9479635ff8)
+- [Lista de miembros](https://msdn.microsoft.com/1b9cc469-9cd4-4d42-9999-1f9479635ff8)
 - [Atributo SRC &#124; src (propiedad)](http://go.microsoft.com/fwlink/?LinkId=92345)

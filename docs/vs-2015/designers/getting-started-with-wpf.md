@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a0137fd1eda8613d332cb07df0d87df97ff9a51a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 3e2d314455b8b392c4e2f830101dae76c40e2865
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776382"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704437"
 ---
 # <a name="getting-started-with-wpf"></a>Introducción a WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Windows Presentation Foundation (WPF) es un marco de interfaz de usuario que cre
 |-|-|  
 |Deseo comenzar de inmediato…|[Tutorial: Mi primera aplicación de escritorio WPF](../designers/walkthrough-my-first-wpf-desktop-application2.md)<br /><br /> [Tutorial: Crear una aplicación de escritorio de WPF conectada a un servicio móvil de Azure](../designers/walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service.md)|  
 |¿Cómo puedo diseñar la interfaz de usuario de la aplicación?|[Diseño de XAML en Visual Studio y Blend para Visual Studio](../designers/designing-xaml-in-visual-studio.md)|  
-|Novedades de .NET|[Información general acerca de .NET Framework](https://msdn.microsoft.com/library/zw4w595w\(v=vs.140\).aspx)<br /><br /> [Elementos esenciales de aplicaciones](http://msdn.microsoft.com/library/653da4ba-3752-4d1f-a08a-de017dc86ecc)<br /><br /> [Introducción a Visual C# y Visual Basic](https://msdn.microsoft.com/library/dd492171\(v=vs.140\).aspx)|  
+|Novedades de .NET|[Información general acerca de .NET Framework](https://msdn.microsoft.com/library/zw4w595w\(v=vs.140\).aspx)<br /><br /> [Elementos esenciales de aplicaciones](https://msdn.microsoft.com/library/653da4ba-3752-4d1f-a08a-de017dc86ecc)<br /><br /> [Introducción a Visual C# y Visual Basic](https://msdn.microsoft.com/library/dd492171\(v=vs.140\).aspx)|  
 |Más información sobre WPF...|[Introducción a WPF](../designers/introduction-to-wpf.md)<br /><br /> [Información general sobre XAML (WPF)](https://msdn.microsoft.com/library/ms752059\(v=vs.100\).aspx)<br /><br /> [Controles](https://msdn.microsoft.com/library/bb613551\(v=vs.100\).aspx)<br /><br /> [Información general sobre el enlace de datos](https://msdn.microsoft.com/library/ms752347\(v=vs.100\).aspx)<br /><br /> [Enlace de datos WPF con LINQ to XML](../designers/wpf-data-binding-with-linq-to-xml.md)|  
 |¿Es un desarrollador de Windows Forms?|[Controles de Windows Forms y controles equivalentes de WPF](https://msdn.microsoft.com/library/ms750559\(v=vs.100\).aspx)<br /><br /> [Escenarios admitidos en WPF e interoperabilidad con Windows Forms](https://msdn.microsoft.com/library/ms751797\(v=vs.100\).aspx)|  
   

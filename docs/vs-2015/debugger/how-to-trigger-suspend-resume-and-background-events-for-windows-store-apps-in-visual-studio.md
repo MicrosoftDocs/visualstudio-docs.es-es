@@ -16,12 +16,12 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ecf43708b854ebee444d2117bc32df41907118a3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d341f0550cfa3c978e94152fb792c5b73c68cc74
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442725"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685938"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio"></a>Cómo desencadenar eventos de suspensión, reanudación y en segundo plano para aplicaciones de la Tienda Windows en Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Cuando no estás depurando, la **Administración de la duración de los procesos
 
  También se describe cómo depurar **tareas en segundo plano**. Las tareas en segundo plano te permiten realizar algunas operaciones en un proceso de segundo plano, aunque la aplicación no se esté ejecutando. Puedes utilizar el depurador para poner la aplicación en modo de depuración y, sin iniciar la interfaz de usuario, iniciar y depurar la tarea en segundo plano.
 
- Para obtener más información sobre la Administración de la duración de los procesos y las tareas en segundo plano, consulta [Launching, resuming, and multitasking](http://msdn.microsoft.com/04307b1b-05af-46a6-b639-3f35e297f71b).
+ Para obtener más información sobre la Administración de la duración de los procesos y las tareas en segundo plano, consulta [Launching, resuming, and multitasking](https://msdn.microsoft.com/04307b1b-05af-46a6-b639-3f35e297f71b).
 
 ## <a name="BKMK_In_this_topic"></a> En este tema
  [Desencadenar eventos de la Administración de la duración de los procesos](#BKMK_Trigger_Process_Lifecycle_Management_events)
@@ -63,7 +63,7 @@ Cuando no estás depurando, la **Administración de la duración de los procesos
      Observa que **Suspender y apagar** cierra la aplicación y finaliza la sesión de depuración.
 
 ## <a name="BKMK_Trigger_background_tasks"></a> Desencadenar tareas en segundo plano
- Aunque no esté en ejecución, cualquier aplicación puede registrar una tarea en segundo plano para responder a determinados eventos del sistema. Las tareas en segundo plano no pueden ejecutar código que actualice directamente la interfaz de usuario. En cambio, muestran información al usuario con las actualizaciones de imágenes y distintivos, y las notificaciones. Para obtener más información, vea [Supporting your app with background tasks](http://msdn.microsoft.com/4c7bb148-eb1f-4640-865e-41f627a46e8e)
+ Aunque no esté en ejecución, cualquier aplicación puede registrar una tarea en segundo plano para responder a determinados eventos del sistema. Las tareas en segundo plano no pueden ejecutar código que actualice directamente la interfaz de usuario. En cambio, muestran información al usuario con las actualizaciones de imágenes y distintivos, y las notificaciones. Para obtener más información, vea [Supporting your app with background tasks](https://msdn.microsoft.com/4c7bb148-eb1f-4640-865e-41f627a46e8e)
 
  Desde el depurador, puedes desencadenar eventos que inician tareas en segundo plano de tu aplicación.
 
@@ -125,4 +125,4 @@ Cuando no estás depurando, la **Administración de la duración de los procesos
 4. Elige el registro **Diagnóstico** .
 
 ## <a name="see-also"></a>Vea también
- [Probar aplicaciones de Store con Visual Studio](../test/testing-store-apps-with-visual-studio.md) [depurar aplicaciones en Visual Studio](../debugger/debug-store-apps-in-visual-studio.md) [ciclo de vida de aplicación](http://msdn.microsoft.com/53cdc987-c547-49d1-a5a4-fd3f96b2259d) [Launching, resuming, procesos y tareas](http://msdn.microsoft.com/04307b1b-05af-46a6-b639-3f35e297f71b)
+ [Probar aplicaciones de Store con Visual Studio](../test/testing-store-apps-with-visual-studio.md) [depurar aplicaciones en Visual Studio](../debugger/debug-store-apps-in-visual-studio.md) [ciclo de vida de aplicación](https://msdn.microsoft.com/53cdc987-c547-49d1-a5a4-fd3f96b2259d) [Launching, resuming, procesos y tareas](https://msdn.microsoft.com/04307b1b-05af-46a6-b639-3f35e297f71b)

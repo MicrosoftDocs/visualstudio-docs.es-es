@@ -22,12 +22,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2d5fbd50ec56173d0871aa1096825eabf87cf42e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 337341547891d87b577756350cbb71e13dd230ae
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58988853"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691182"
 ---
 # <a name="debugging-errors-and-warning-dialog-boxes"></a>Cuadros de diálogo de advertencias y errores de depuración
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ A continuación, se muestran los cuadros de diálogo de advertencia y errores qu
   
  [Cuadro de diálogo No hay código fuente disponible para la ubicación actual](../debugger/no-source-available.md)  
   
- [Cuadro de diálogo No hay información simbólica](http://msdn.microsoft.com/18de4888-9cca-4059-a165-48b135fee4c9)  
+ [Cuadro de diálogo No hay información simbólica](https://msdn.microsoft.com/18de4888-9cca-4059-a165-48b135fee4c9)  
   
  [Cuadro de diálogo Resolver ambigüedad](../debugger/resolve-ambiguity-dialog-box.md)  
   
@@ -64,9 +64,9 @@ A continuación, se muestran los cuadros de diálogo de advertencia y errores qu
   
  [Errores de depuración remota](../debugger/remote-debugging-errors-and-troubleshooting.md)  
   
- [Errores de asociación](http://msdn.microsoft.com/2820d904-a068-4fcb-bbfb-bbbe5195d6ae)  
+ [Errores de asociación](https://msdn.microsoft.com/2820d904-a068-4fcb-bbfb-bbbe5195d6ae)  
   
- [Solución de problemas de la instalación de la depuración de SQL](http://msdn.microsoft.com/b3ec8303-4c0d-449c-8d19-4932c1d820a7)  
+ [Solución de problemas de la instalación de la depuración de SQL](https://msdn.microsoft.com/b3ec8303-4c0d-449c-8d19-4932c1d820a7)  
   
  [Preguntas más frecuentes sobre técnicas de depuración para Visual C++](../debugger/debugging-native-code-faqs.md)  
   

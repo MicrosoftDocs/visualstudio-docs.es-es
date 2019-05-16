@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 126aa1ad57aa5f8961803b8443365c208f5623ff
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c3f1533df24af802ae0c9950d4765ea0a0bf04da
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63421250"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693549"
 ---
 # <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>Tutorial: Crear una aplicación de escritorio de WPF conectada a un servicio móvil de Azure
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Puede usar Windows Presentation Foundation (WPF) para crear rápidamente una apl
   
 - Una cuenta activa de Microsoft Azure.  
   
-    - Puede suscribirse a una cuenta de prueba gratuita [aquí](http://azure.microsoft.com/pricing/free-trial/).  
+    - Puede suscribirse a una cuenta de prueba gratuita [aquí](https://azure.microsoft.com/pricing/free-trial/).  
   
     - Puede activar las [ventajas de suscriptor MSDN](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/?WT.mc_id=A261C142F). Su suscripción a MSDN ofrece créditos cada mes que puede usar para servicios de pago de Azure.  
   
@@ -566,7 +566,7 @@ Puede usar Windows Presentation Foundation (WPF) para crear rápidamente una apl
   
  Puede hacer la interfaz de usuario más atractiva mediante la adición de colores, formas, gráficos o incluso animaciones. Vea [Diseño de XAML en Visual Studio y Blend para Visual Studio](../designers/designing-xaml-in-visual-studio.md).  
   
- Puede conectarse a las bases de datos SQL existentes u otros orígenes de datos mediante servicios móviles de Azure. Vea [Documentación de servicios móviles](http://azure.microsoft.com/services/app-service/mobile/).  
+ Puede conectarse a las bases de datos SQL existentes u otros orígenes de datos mediante servicios móviles de Azure. Vea [Documentación de servicios móviles](https://azure.microsoft.com/services/app-service/mobile/).  
   
 ## <a name="see-also"></a>Vea también  
  [Tutorial: Mi primera aplicación de escritorio de WPF](../designers/walkthrough-my-first-wpf-desktop-application2.md)   

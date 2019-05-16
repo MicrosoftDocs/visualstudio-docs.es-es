@@ -50,12 +50,12 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cd93fdc527e38b820bc7df6387ca6f8e9078bfd6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 340fe819086d3cc18cb9c2dd6a4ca14129c6d8ad
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045334"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679873"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Soluciones y proyectos en Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,7 +75,7 @@ Cuando cree una aplicación, una solicitud, un sitio web, una aplicación web, u
  También puede crear un proyecto y plantillas de elemento personalizados. Para obtener más información, vea [Crear plantillas para proyectos y elementos en Visual Studio](../ide/creating-project-and-item-templates.md).
 
 ## <a name="creating-new-projects"></a>Crear nuevos proyectos
- La manera más fácil de crear un nuevo proyecto es empezar con una plantilla de proyecto predefinida, que consiste en un conjunto básico de archivos de código generados previamente, archivos de configuración, activos y configuraciones que permiten comenzar a crear un tipo concreto de aplicación o sitio web en un lenguaje de programación determinado. Estas plantillas son las que puede ver en el **cuadro de diálogo Nuevo proyecto** cuando selecciona **Archivo &#124; Nuevo &#124; Proyecto** o **Archivo &#124; Nuevo &#124; Sitio web** en el menú principal y navega por él. Para obtener más información, vea [Crear soluciones y proyectos](../ide/creating-solutions-and-projects.md) y [NIB: Crear proyectos a partir de plantillas](http://msdn.microsoft.com/7c36d86a-6b79-4480-8228-0f925f1204b2).
+ La manera más fácil de crear un nuevo proyecto es empezar con una plantilla de proyecto predefinida, que consiste en un conjunto básico de archivos de código generados previamente, archivos de configuración, activos y configuraciones que permiten comenzar a crear un tipo concreto de aplicación o sitio web en un lenguaje de programación determinado. Estas plantillas son las que puede ver en el **cuadro de diálogo Nuevo proyecto** cuando selecciona **Archivo &#124; Nuevo &#124; Proyecto** o **Archivo &#124; Nuevo &#124; Sitio web** en el menú principal y navega por él. Para obtener más información, vea [Crear soluciones y proyectos](../ide/creating-solutions-and-projects.md) y [NIB: Crear proyectos a partir de plantillas](https://msdn.microsoft.com/7c36d86a-6b79-4480-8228-0f925f1204b2).
 
 ## <a name="managing-projects-in-solution-explorer"></a>Administración de proyectos en el Explorador de soluciones
  Después de crear un proyecto nuevo, use el **Explorador de soluciones** para ver y administrar proyectos, soluciones y los elementos que tienen asociados. La siguiente ilustración muestra el Explorador de servidores con una solución de C# que contiene dos proyectos.

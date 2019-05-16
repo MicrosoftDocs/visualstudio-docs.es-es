@@ -11,12 +11,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 288e0e4d017302a41b3267a3ae751573ab849b64
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d9cd07ed41e39c931e67f43f1c77ff8bd56b2eb3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58987843"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701776"
 ---
 # <a name="properties-of-decorators"></a>Propiedades de los decoradores
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Los elementos Decorator son iconos, texto o expandir o contraer comillas angular
   
 ## <a name="expandcollapse-decorator"></a>Expandir o contraer el elemento Decorator  
   
-|Property|Descripción|Default|  
+|Propiedad|Descripción|Default|  
 |--------------|-----------------|-------------|  
 |DisplayName|El nombre del elemento decorator que se mostrará en el diseñador generado.|Expanda el elemento Decorator de contraer|  
 |Name|El nombre del elemento decorator.|ExpandCollapseDecorator|  
@@ -40,7 +40,7 @@ Los elementos Decorator son iconos, texto o expandir o contraer comillas angular
   
 ## <a name="icon-decorator"></a>Elemento Decorator de icono  
   
-|Property|Descripción|Default|  
+|Propiedad|Descripción|Default|  
 |--------------|-----------------|-------------|  
 |DefaultIcon|La ruta de acceso del archivo de icono o imagen que se mostrará.|\<none>|  
 |DisplayName|El nombre del elemento decorator que se mostrará en el diseñador generado.|Elemento Decorator de icono|  
@@ -54,7 +54,7 @@ Los elementos Decorator son iconos, texto o expandir o contraer comillas angular
   
 ## <a name="textdecorator"></a>TextDecorator  
   
-|Property|Descripción|Default|  
+|Propiedad|Descripción|Default|  
 |--------------|-----------------|-------------|  
 |DefaultText|El texto predeterminado que se mostrará.|Etiqueta|  
 |DisplayName|El nombre del elemento decorator que se mostrará en el diseñador generado.|Etiqueta|  
@@ -69,4 +69,4 @@ Los elementos Decorator son iconos, texto o expandir o contraer comillas angular
 |Posición|La posición predeterminada del decorador.|TargetBottom|  
   
 ## <a name="see-also"></a>Vea también  
- [Glosario de las Herramientas del lenguaje específico de dominio](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Glosario de las Herramientas del lenguaje específico de dominio](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
