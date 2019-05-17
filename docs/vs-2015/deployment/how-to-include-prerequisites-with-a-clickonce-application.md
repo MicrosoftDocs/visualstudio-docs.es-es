@@ -34,7 +34,7 @@ Para poder distribuir el software necesario con una aplicación [!INCLUDE[ndptec
   
 3. En el Bloc de notas, abra el archivo **Package.xml**.  
   
-4. Busque el **nombre** elemento que contiene **http://go.microsoft.com/fwlink**y copie la dirección URL. Incluya a la parte **LinkID**.  
+4. Busque el **nombre** elemento que contiene **http://go.microsoft.com/fwlink** y copie la dirección URL. Incluya a la parte **LinkID**.  
   
     > [!NOTE]
     > Si no hay ningún **nombre** contiene elemento **http://go.microsoft.com/fwlink**, abra el **Product.xml** de archivos en la carpeta raíz para el requisito previo y busque el **fwlink** cadena.  
