@@ -1,6 +1,6 @@
 ---
 title: 'CA2000: Desechar objetos antes de perder el ámbito'
-ms.date: 11/04/2016
+ms.date: 05/14/2019
 ms.topic: reference
 f1_keywords:
 - CA2000
@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: b986e5219c1e8d437651feebeec09eb4ca3dd5cb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 732b3d683802c50042ee40fee1549a9d247e2470
+ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545412"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65804975"
 ---
 # <a name="ca2000-dispose-objects-before-losing-scope"></a>CA2000: Desechar objetos antes de perder el ámbito
 
@@ -35,44 +35,59 @@ ms.locfileid: "62545412"
 |Cambio problemático|Poco problemático|
 
 ## <a name="cause"></a>Motivo
- Se crea un objeto local de un tipo <xref:System.IDisposable>, pero el objeto no se elimina antes de que todas las referencias al mismo estén fuera de ámbito.
+
+Un objeto local de un <xref:System.IDisposable> se crea el tipo, pero no se elimina el objeto antes de que todas las referencias al objeto están fuera del ámbito.
 
 ## <a name="rule-description"></a>Descripción de la regla
- Si un objeto que se puede eliminar (método Dispose) no se elimina de forma explícita antes de que todas las referencias a él estén fuera de ámbito, el objeto se eliminará en algún momento indeterminado cuando el recolector de elementos no utilizados ejecute el finalizador del objeto. Puesto que podría producirse un evento excepcional que impida que se ejecute el finalizador del objeto, el objeto debe eliminarse de forma explícita.
+
+Si un objeto que se puede eliminar (método Dispose) no se elimina de forma explícita antes de que todas las referencias a él estén fuera de ámbito, el objeto se eliminará en algún momento indeterminado cuando el recolector de elementos no utilizados ejecute el finalizador del objeto. Puesto que podría producirse un evento excepcional que impida que se ejecute el finalizador del objeto, el objeto debe eliminarse de forma explícita.
+
+### <a name="special-cases"></a>Casos especiales
+
+No se desencadena la regla CA2000 para objetos locales de los siguientes tipos incluso si no se elimina el objeto:
+
+- <xref:System.IO.Stream?displayProperty=nameWithType>
+- <xref:System.IO.TextReader?displayProperty=nameWithType>
+- <xref:System.IO.TextWriter?displayProperty=nameWithType>
+- <xref:System.Resources.IResourceReader?displayProperty=nameWithType>
+
+Pasar un objeto de uno de estos tipos a un constructor y, a continuación, asignarlo a un campo indican un *dispose de transferencia de la propiedad* para el tipo construido recientemente. Es decir, el tipo construido recién ahora es responsable de desechar el objeto. Si el código pasa un objeto de uno de estos tipos a un constructor, ninguna infracción de regla CA2000 ocurre incluso si no se elimina el objeto antes de todas las referencias a ella están fuera del ámbito.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Para corregir una infracción de esta regla, llame a <xref:System.IDisposable.Dispose%2A> en el objeto antes de que todas las referencias a este estén fuera de ámbito.
 
- Observe que puede usar la instrucción `using` (`Using` en [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) para ajustar objetos que implementan `IDisposable`. Los objetos que se ajustan de esta manera se eliminarán automáticamente al cerrar el bloque `using`.
+Para corregir una infracción de esta regla, llame a <xref:System.IDisposable.Dispose%2A> en el objeto antes de que todas las referencias a este estén fuera de ámbito.
 
- A continuación se indican algunas situaciones donde la instrucción using no es suficiente para proteger objetos IDisposable, lo que puede hacer que se produzca la advertencia CA2000.
+Puede usar el [ `using` instrucción](/dotnet/csharp/language-reference/keywords/using-statement) ([ `Using` ](/dotnet/visual-basic/language-reference/statements/using-statement) en Visual Basic) para ajustar objetos que implementan <xref:System.IDisposable>. Los objetos que se ajustan de esta manera se eliminan automáticamente al final de la `using` bloque. Sin embargo, las situaciones siguientes no deben o no se pueden controlar con un `using` instrucción:
 
-- Devolver un objeto descartable requiere que el objeto se construya en un bloque try/finally fuera de un bloque using.
+- Para devolver un objeto descartable, debe construir el objeto en un `try/finally` bloquear fuera de un `using` bloque.
 
-- No deben inicializarse miembros de un objeto descartable en el constructor de una instrucción using.
+- No inicializa los miembros de un objeto descartable en el constructor de un `using` instrucción.
 
-- Anidar constructores únicamente protegidos por un controlador de excepciones. Por ejemplo,
+- Cuando se anidan los constructores que están protegidos por un solo controlador de excepciones en el [parte de la adquisición de un `using` instrucción](/dotnet/csharp/language-reference/language-specification/statements#the-using-statement), puede dar lugar a un error en el constructor externo en el objeto creado por el constructor anidado nunca está cerrando. En el ejemplo siguiente, un error en la <xref:System.IO.StreamReader> constructor puede provocar la <xref:System.IO.FileStream> objeto nunca se cierre. CA2000 marcadores en este caso una infracción de la regla.
 
-    ```csharp
-    using (StreamReader sr = new StreamReader(new FileStream("C:\myfile.txt", FileMode.Create)))
-    { ... }
-    ```
+   ```csharp
+   using (StreamReader sr = new StreamReader(new FileStream("C:\myfile.txt", FileMode.Create)))
+   { ... }
+   ```
 
-     hace que se produzca CA2000 porque un error en la construcción del objeto StreamReader puede hacer que el objeto FileStream nunca se cierre.
-
-- Los objetos dinámicos deben usar un objeto de sombra para implementar el patrón Dispose de los objetos IDisposable.
+- Objetos dinámicos deben usar un objeto de sombra para implementar el patrón de dispose de <xref:System.IDisposable> objetos.
 
 ## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
- No suprima una advertencia de esta regla a menos que haya llamado a un método del objeto que llama a `Dispose`, como <xref:System.IO.Stream.Close%2A>, o si el método que generó la advertencia devuelve un objeto IDisposable que ajusta el objeto.
+
+No suprima una advertencia de esta regla a menos que:
+
+- Se ha llamado a un método en el objeto que llama a `Dispose`, como <xref:System.IO.Stream.Close%2A>
+- El método que se genera la advertencia de devuelve un <xref:System.IDisposable> objeto que encapsula el objeto
+- El método de asignación no tiene la propiedad dispose; es decir, la responsabilidad de desechar el objeto se transfiere a otro objeto o un contenedor que ha creado en el método y devuelve al llamador
 
 ## <a name="related-rules"></a>Reglas relacionadas
- [CA2213: los campos descartables deben ser descartables](../code-quality/ca2213-disposable-fields-should-be-disposed.md)
 
- [CA2202: No desechar objetos varias veces](../code-quality/ca2202-do-not-dispose-objects-multiple-times.md)
+- [CA2213: los campos descartables deben ser descartables](../code-quality/ca2213-disposable-fields-should-be-disposed.md)
+- [CA2202: No desechar objetos varias veces](../code-quality/ca2202-do-not-dispose-objects-multiple-times.md)
 
 ## <a name="example"></a>Ejemplo
 
-Si implementa un método que devuelve un objeto descartable, use un bloque try/finally sin un bloque catch para asegurarse de que el objeto se elimina. Al usar un bloque try/finally, permite la generación de excepciones en el momento del error y se asegura de que se elimine el objeto.
+Si va a implementar un método que devuelve un objeto descartable, utilice un bloque try/finally sin un bloque catch para asegurarse de que el objeto se elimina. Al usar un bloque try/finally, permite la generación de excepciones en el momento del error y se asegura de que se elimine el objeto.
 
 En el método OpenPort1, se puede producir un error en la llamada para abrir el elemento SerialPort del objeto ISerializable o en la llamada a SomeMethod. En esta implementación se desencadena una advertencia CA2000.
 
@@ -156,13 +171,14 @@ End Function
 ```
 
 ## <a name="example"></a>Ejemplo
- De forma predeterminada, el compilador de [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] comprueba el desbordamiento en todos los operadores aritméticos. Por consiguiente, cualquier operación aritmética de Visual Basic puede producir una excepción de tipo <xref:System.OverflowException>. Esto podría dar lugar a infracciones inesperadas de reglas como CA2000. Por ejemplo, la siguiente función CreateReader1 producirá una infracción de CA2000 porque el compilador de Visual Basic emite una instrucción de comprobación de desbordamiento para la suma que podría producir una excepción que provocaría que StreamReader no se eliminase.
 
- Para corregir este problema, puede deshabilitar la emisión de comprobaciones de desbordamiento mediante el compilador de Visual Basic en el proyecto o puede modificar el código como en la siguiente función CreateReader2.
+De forma predeterminada, el compilador de Visual Basic tiene todos los operadores aritméticos comprueba el desbordamiento. Por consiguiente, cualquier operación aritmética de Visual Basic puede producir una excepción de tipo <xref:System.OverflowException>. Esto podría dar lugar a infracciones inesperadas de reglas como CA2000. Por ejemplo, la siguiente función CreateReader1 producirá una infracción de CA2000 porque el compilador de Visual Basic emite una instrucción de comprobación de desbordamiento para la suma que podría producir una excepción que provocaría que StreamReader no se eliminase.
 
- Para deshabilitar la emisión de comprobaciones de desbordamiento, haga clic en el nombre del proyecto en el Explorador de soluciones y, a continuación, haga clic en **propiedades**. Haga clic en **compilar**, haga clic en **Advanced Compile Options**y, a continuación, compruebe **Quitar comprobaciones de desbordamiento con enteros**.
+Para corregir este problema, puede deshabilitar la emisión de comprobaciones de desbordamiento mediante el compilador de Visual Basic en el proyecto o puede modificar el código como en la siguiente función CreateReader2.
 
-  [!code-vb[FxCop.Reliability.CA2000.DisposeObjectsBeforeLosingScope#1](../code-quality/codesnippet/VisualBasic/ca2000-dispose-objects-before-losing-scope-vboverflow_1.vb)]
+Para deshabilitar la emisión de comprobaciones de desbordamiento, haga clic en el nombre del proyecto en el Explorador de soluciones y, a continuación, haga clic en **propiedades**. Haga clic en **compilar**, haga clic en **Advanced Compile Options**y, a continuación, compruebe **Quitar comprobaciones de desbordamiento con enteros**.
+
+[!code-vb[FxCop.Reliability.CA2000.DisposeObjectsBeforeLosingScope#1](../code-quality/codesnippet/VisualBasic/ca2000-dispose-objects-before-losing-scope-vboverflow_1.vb)]
 
 ## <a name="see-also"></a>Vea también
 
