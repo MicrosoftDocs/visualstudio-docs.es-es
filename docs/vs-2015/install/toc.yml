@@ -1,0 +1,34 @@
+- name: Instalación de Visual Studio 2015
+  items:
+    - name: Instalación de Visual Studio 2015
+      href: install-visual-studio-2015.md
+    - name: Crear una instalación sin conexión de Visual Studio
+      href: create-an-offline-installation-of-visual-studio.md
+    - name: Instalación de distintas versiones de Visual Studio en paralelo
+      href: install-visual-studio-versions-side-by-side.md
+    - name: Usar parámetros de la línea de comandos para instalar Visual Studio
+      href: use-command-line-parameters-to-install-visual-studio.md
+    - name: Desinstalar Visual Studio
+      href: uninstall-visual-studio.md
+    - name: Visual Studio Administrator Guide
+      items:
+        - name: Visual Studio Administrator Guide
+          href: visual-studio-administrator-guide.md
+        - name: "Instalar una versión específica de Visual\_Studio"
+          href: how-to-install-a-specific-release-of-visual-studio.md
+        - name: "Crear y ejecutar una instalación desatendida de Visual\_Studio"
+          href: how-to-create-and-run-an-unattended-installation-of-visual-studio.md
+        - name: Aplicación automática de claves de producto durante la implementación de Visual Studio
+          href: how-to-automatically-apply-product-keys-when-deploying-visual-studio.md
+    - name: Instalar varias versiones de idioma de Visual Studio
+      items:
+        - name: Instalar varias versiones de idioma de Visual Studio
+          href: install-multiple-language-versions-of-visual-studio.md
+        - name: Paquetes de interfaz de idioma (LIP) de Microsoft y Visual Studio
+          href: microsoft-language-interface-packs-lips-and-visual-studio.md
+    - name: "Actualizar a partir de una edición de prueba de Visual\_Studio"
+      href: how-to-upgrade-from-a-trial-edition-of-visual-studio.md
+    - name: "Encontrar la clave de producto de Visual\_Studio"
+      href: how-to-locate-the-visual-studio-product-key.md
+    - name: Excepciones de la directiva de ciclo de vida de Visual Studio
+      href: visual-studio-lifecycle-policy-exceptions.md
