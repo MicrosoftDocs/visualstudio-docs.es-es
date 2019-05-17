@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a78fc8b1351f7a614421aabb344820ddc22ece24
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 710cc8cae2b1974529be1eded6c5148eedd1211e
+ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65679445"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65805312"
 ---
 # <a name="graphics-event-list"></a>Lista de eventos gráficos
 Use la lista de eventos gráficos del Analizador de gráficos de Visual Studio para explorar los eventos Direct3D que se registraron mientras se presentaba un fotograma de su juego o aplicación.
@@ -80,10 +80,10 @@ Use la lista de eventos gráficos del Analizador de gráficos de Visual Studio p
 
 |Descripción de la API|[ID3D12CommandQueue](/windows/desktop/api/d3d12/nn-d3d12-id3d12commandqueue)|[ID3D12GraphicsCommandList](/windows/desktop/api/d3d12/nn-d3d12-id3d12graphicscommandlist)|
 |---------------------| - | - |
-|Comprobar la disponibilidad de evento definido por el usuario|[PIXGetStatus](https://msdn.microsoft.com/library/f7ebd985-fb5d-46d7-abec-099df4b9be0e)|[PIXGetStatus](https://msdn.microsoft.com/1046ac43-a0a3-42bf-bae8-14aa72fa7567)|
-|Empezar un grupo de eventos|[PIXBeginEvent](https://msdn.microsoft.com/5f51fff7-f313-4558-965b-2a443653cd7b)|[PIXBeginEvent](https://msdn.microsoft.com/4ddb3311-b9b5-449a-bbfb-7634e0d56e87)|
-|Finalizar un grupo de eventos|[PIXEndEvent](https://msdn.microsoft.com/fb526bf2-c17d-4a2a-8665-3b577a0f7fba)|[PIXEndEvent](https://msdn.microsoft.com/a3cd34a9-9dd9-40e1-ae86-0214b25ff185)|
-|Crear un marcador de eventos|[PIXSetMarker](https://msdn.microsoft.com/0caf49ed-c99d-405e-89f4-0c887b8474ad)|[PIXSetMarker](https://msdn.microsoft.com/6610e5b9-a0c5-4236-b551-b6eb9fac64c1)|
+|Comprobar la disponibilidad de evento definido por el usuario|[PIXGetStatus](/previous-versions//dn788637(v=vs.85))|[PIXGetStatus](/previous-versions//dn788637(v=vs.85))|
+|Empezar un grupo de eventos|[PIXBeginEvent](/windows/desktop/api/d3d12/nf-d3d12-id3d12commandqueue-beginevent)|[PIXBeginEvent](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist-beginevent)|
+|Finalizar un grupo de eventos|[PIXEndEvent](/windows/desktop/api/d3d12/nf-d3d12-id3d12commandqueue-endevent)|[PIXEndEvent](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist-endevent)|
+|Crear un marcador de eventos|[PIXSetMarker](/windows/desktop/api/d3d12/nf-d3d12-id3d12commandqueue-setmarker)|[PIXSetMarker](/windows/desktop/api/d3d12/nf-d3d12-id3d12graphicscommandlist-setmarker)|
 
 ### <a name="user-defined-events-in-direct3d-11-and-earlier"></a>Eventos definidos por el usuario en Direct3D 11 y versiones anteriores
  Para crear grupos y marcadores en Direct3D 11 o versiones anteriores, use las API descritas en esta sección. En la tabla siguiente se resumen las API que puede usar para las distintas versiones de Direct3D 11 y versiones anteriores de Direct3D.
