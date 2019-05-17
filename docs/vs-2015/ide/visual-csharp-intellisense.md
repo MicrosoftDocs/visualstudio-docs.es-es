@@ -13,12 +13,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8de573e8d5f46988868f18114fdabb07f62690e0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6b1af6a2900a579e7490f47f2e8ee4983310e19e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443164"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698208"
 ---
 # <a name="visual-c-intellisense"></a>IntelliSense para Visual C#
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,10 +41,10 @@ Visual C# IntelliSense está disponible cuando se codifica en el editor y mientr
   La lista de finalización en C# también es lo suficientemente inteligente como para filtrar los tokens irrelevantes y hacer una selección previa de un token en función del contexto. Para más información, vea [Listas de finalización filtradas en C#](../misc/filtered-completion-lists-in-csharp.md) y [Elementos de la lista de finalización preseleccionada en C#](../misc/pre-selected-completion-list-items-in-csharp.md).  
   
 ### <a name="CodeSnippets"></a> Fragmentos de código en listas de finalización  
- En Visual C#, la lista de finalización incluye fragmentos de código para facilitar la inserción en el programa de cuerpos de código predefinidos. Los fragmentos de código aparecen en la lista de finalización como el [elemento Shortcut (fragmentos de código Intellisense)](http://msdn.microsoft.com/052cc97a-5c70-42f8-b398-4c3adf670cfa) del fragmento de código.  Para obtener más información sobre los fragmentos de código que están disponibles en Visual C# de manera predeterminada, vea [Fragmentos de código de Visual C#](../ide/visual-csharp-code-snippets.md).  
+ En Visual C#, la lista de finalización incluye fragmentos de código para facilitar la inserción en el programa de cuerpos de código predefinidos. Los fragmentos de código aparecen en la lista de finalización como el [elemento Shortcut (fragmentos de código Intellisense)](https://msdn.microsoft.com/052cc97a-5c70-42f8-b398-4c3adf670cfa) del fragmento de código.  Para obtener más información sobre los fragmentos de código que están disponibles en Visual C# de manera predeterminada, vea [Fragmentos de código de Visual C#](../ide/visual-csharp-code-snippets.md).  
   
 ### <a name="Keywords"></a> Palabras clave de lenguaje en listas de finalización  
- En Visual C#, la lista de finalización también incluye palabras clave del lenguaje. Para obtener más información sobre las palabras claves del lenguaje C#, vea el artículo sobre [palabras clave de C#](http://msdn.microsoft.com/library/e929b0f2-4b92-4d37-8060-23d323b098ad).  
+ En Visual C#, la lista de finalización también incluye palabras clave del lenguaje. Para obtener más información sobre las palabras claves del lenguaje C#, vea el artículo sobre [palabras clave de C#](https://msdn.microsoft.com/library/e929b0f2-4b92-4d37-8060-23d323b098ad).  
   
 ### <a name="ExtensionMethods"></a> Métodos de extensión en listas de finalización  
  En Visual C#, la lista de finalización incluye métodos de extensión que están en el ámbito.  
@@ -81,7 +81,7 @@ Visual C# IntelliSense está disponible cuando se codifica en el editor y mientr
  IntelliSense recuerda los miembros que se han seleccionado recientemente en el cuadro emergente [Lista de miembros](../ide/using-intellisense.md) para autocompletar nombres de objetos. La siguiente vez que utiliza la lista de miembros, los miembros utilizados más recientemente se muestran en la parte superior. El historial de los miembros usados recientemente se borra entre cada sesión del IDE.  
   
 ## <a name="override"></a>override  
- Cuando escriba [invalidar](http://msdn.microsoft.com/library/dd1907a8-acf8-46d3-80b9-c2ca4febada8) y, luego, presione la BARRA ESPACIADORA, IntelliSense muestra todos los miembros de la clase base válidos que se pueden reemplazar en un cuadro de lista emergente. Si se escribe el tipo de valor devuelto del método después de `override`, IntelliSense mostrará solo los métodos que devuelven el mismo tipo. Cuando IntelliSense no encuentra ninguna coincidencia, mostrará todos los miembros de clase base.  
+ Cuando escriba [invalidar](https://msdn.microsoft.com/library/dd1907a8-acf8-46d3-80b9-c2ca4febada8) y, luego, presione la BARRA ESPACIADORA, IntelliSense muestra todos los miembros de la clase base válidos que se pueden reemplazar en un cuadro de lista emergente. Si se escribe el tipo de valor devuelto del método después de `override`, IntelliSense mostrará solo los métodos que devuelven el mismo tipo. Cuando IntelliSense no encuentra ninguna coincidencia, mostrará todos los miembros de clase base.  
   
 ## <a name="automatic-code-generation"></a>Generación automática de código  
   
@@ -102,7 +102,7 @@ Visual C# IntelliSense está disponible cuando se codifica en el editor y mientr
  Para ver las opciones disponibles en el IDE de Visual Studio, vaya al menú **Edición**, apunte a **IntelliSense** y, después, apunte a **Organizar instrucciones Using**. El IDE proporciona las siguientes opciones para organizar y quitar directivas `usings`:  
   
 ### <a name="implement-interface"></a>Implementar interfaz  
- IntelliSense proporciona una opción para ayudar a implementar una [interfaz](http://msdn.microsoft.com/library/7da38e81-4f99-4bc5-b07d-c986b687eeba) mientras trabaja en el Editor de código. Normalmente, para implementar una interfaz correctamente debe crear una declaración de método para cada miembro de la interfaz de su clase. Con IntelliSense, después de escribir el nombre de una interfaz en una declaración de clase, se muestra una etiqueta inteligente. La etiqueta inteligente ofrece la opción de implementar la interfaz automáticamente, mediante denominación explícita o implícita. Con la denominación explícita, las declaraciones de método llevan el nombre de la interfaz. Con la denominación implícita, las declaraciones de método no indican la interfaz a la que pertenecen. Puede tener acceso a un método de interfaz denominada explícitamente a través de una instancia de interfaz, pero no a través de una instancia de clase. Para obtener más información, vea [Implementación explícita de interfaz](http://msdn.microsoft.com/library/181c901f-0d4c-4f29-97fc-895079617bf2).  
+ IntelliSense proporciona una opción para ayudar a implementar una [interfaz](https://msdn.microsoft.com/library/7da38e81-4f99-4bc5-b07d-c986b687eeba) mientras trabaja en el Editor de código. Normalmente, para implementar una interfaz correctamente debe crear una declaración de método para cada miembro de la interfaz de su clase. Con IntelliSense, después de escribir el nombre de una interfaz en una declaración de clase, se muestra una etiqueta inteligente. La etiqueta inteligente ofrece la opción de implementar la interfaz automáticamente, mediante denominación explícita o implícita. Con la denominación explícita, las declaraciones de método llevan el nombre de la interfaz. Con la denominación implícita, las declaraciones de método no indican la interfaz a la que pertenecen. Puede tener acceso a un método de interfaz denominada explícitamente a través de una instancia de interfaz, pero no a través de una instancia de clase. Para obtener más información, vea [Implementación explícita de interfaz](https://msdn.microsoft.com/library/181c901f-0d4c-4f29-97fc-895079617bf2).  
   
  La opción Implementar interfaz generará el número mínimo de códigos auxiliares del método necesario para satisfacer la interfaz. Si una clase base implementa partes de la interfaz, esos códigos auxiliares no se volverán a generar.  
   
