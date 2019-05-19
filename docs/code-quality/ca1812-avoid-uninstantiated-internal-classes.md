@@ -1,6 +1,6 @@
 ---
 title: 'CA1812: Evitar las clases internas sin instancia'
-ms.date: 11/04/2016
+ms.date: 05/16/2019
 ms.topic: reference
 f1_keywords:
 - CA1812
@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 08d8b907e4a211b0735f07377c21dec1c0a982c9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: def22bd4aee4f64b5e14f2bbe7978a0dfa061261
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62796909"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65841446"
 ---
 # <a name="ca1812-avoid-uninstantiated-internal-classes"></a>CA1812: Evitar las clases internas sin instancia
 
@@ -32,11 +32,11 @@ ms.locfileid: "62796909"
 
 ## <a name="cause"></a>Motivo
 
-El código del ensamblado no crea una instancia del tipo del nivel de ensamblado.
+Nunca se crea una instancia de un tipo interno de (nivel de ensamblado).
 
 ## <a name="rule-description"></a>Descripción de la regla
 
-Esta regla intenta localizar una llamada a uno de los constructores del tipo y notifica una infracción si no se encuentra ninguna llamada.
+Esta regla intenta localizar una llamada a uno de los constructores del tipo e informa de una infracción si no se encuentra ninguna llamada.
 
 Esta regla no examina los siguientes tipos:
 
@@ -50,19 +50,17 @@ Esta regla no examina los siguientes tipos:
 
 - Tipos de matriz emitido por el compilador
 
-- Tipos que no pueden crearse instancias, y que definen `static` (`Shared` en Visual Basic) solo los métodos.
+- Tipos que no pueden crearse instancias, y que se definen sólo [ `static` ](/dotnet/csharp/language-reference/keywords/static) ([ `Shared` en Visual Basic](/dotnet/visual-basic/language-reference/modifiers/shared)) métodos.
 
-Si aplica <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?displayProperty=fullName> al ensamblado que se está analizando, esta regla no se producirá en todos los constructores que están marcados como `internal` porque no puede saber si un campo está en uso por otro `friend` ensamblado.
-
-Aunque no se puede evitar esta limitación en el análisis de código de Visual Studio, se producirá el FxCop independiente externo constructores internos si cada `friend` ensamblado está presente en el análisis.
+Si aplica el <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?displayProperty=fullName> al ensamblado que se está analizando, esta regla no marcará los tipos que están marcados como [ `internal` ](/dotnet/csharp/language-reference/keywords/internal) ([ `Friend` en Visual Basic](/dotnet/visual-basic/language-reference/modifiers/friend)) porque puede ser un campo usa un ensamblado de confianza.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
 
-Para corregir una infracción de esta regla, quite el tipo o agregue el código que lo utiliza. Si el tipo contiene solo los métodos estáticos, agregue uno de los siguientes al tipo para evitar que el compilador emita un constructor de instancia público predeterminado:
+Para corregir una infracción de esta regla, quite el tipo o agregue código que lo utiliza. Si el tipo contiene solo `static` agregar métodos, uno de los siguientes al tipo para evitar que el compilador emita un constructor de instancia público predeterminado:
 
 - Un constructor privado para los tipos que tienen como destino las versiones 1.0 y 1.1 de .NET Framework.
 
-- El `static` (`Shared` en Visual Basic) modificador de tipos que tienen como destino [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)].
+- El `static` modificador C# tipos que tienen como destino [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] o una versión posterior.
 
 ## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
 
@@ -70,9 +68,9 @@ Es seguro suprimir una advertencia de esta regla. Se recomienda que suprimir est
 
 - Se crea la clase a través de métodos de reflexión en tiempo de ejecución, como <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>.
 
-- La clase se crea automáticamente el tiempo de ejecución o [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Por ejemplo, las clases que implementan <xref:System.Configuration.IConfigurationSectionHandler?displayProperty=fullName> o <xref:System.Web.IHttpHandler?displayProperty=fullName>.
+- La clase se crea automáticamente el tiempo de ejecución o ASP.NET. Algunos ejemplos de clases creadas automáticamente son aquellos que implementan <xref:System.Configuration.IConfigurationSectionHandler?displayProperty=fullName> o <xref:System.Web.IHttpHandler?displayProperty=fullName>.
 
-- La clase se pasa como un parámetro de tipo genérico que tiene una nueva restricción. Por ejemplo, en el ejemplo siguiente, se producirá esta regla.
+- La clase se pasa como un parámetro de tipo que tiene un [ `new` restricción](/dotnet/csharp/language-reference/keywords/new-constraint). El ejemplo siguiente se marcarán por regla CA1812:
 
     ```csharp
     internal class MyClass
@@ -88,17 +86,13 @@ Es seguro suprimir una advertencia de esta regla. Se recomienda que suprimir est
             return new T();
         }
     }
-    // [...]
+
     MyGeneric<MyClass> mc = new MyGeneric<MyClass>();
     mc.Create();
     ```
 
-  En estas situaciones, se recomienda que suprimir esta advertencia.
-
 ## <a name="related-rules"></a>Reglas relacionadas
 
-[CA1811: Evitar código privado fuera de lugar](../code-quality/ca1811-avoid-uncalled-private-code.md)
-
-[CA1801: Revisar parámetros sin utilizar](../code-quality/ca1801-review-unused-parameters.md)
-
-[CA1804: Quitar a variables locales no utilizadas](../code-quality/ca1804-remove-unused-locals.md)
+- [CA1811: Evitar código privado fuera de lugar](../code-quality/ca1811-avoid-uncalled-private-code.md)
+- [CA1801: Revisar parámetros sin utilizar](../code-quality/ca1801-review-unused-parameters.md)
+- [CA1804: Quitar a variables locales no utilizadas](../code-quality/ca1804-remove-unused-locals.md)

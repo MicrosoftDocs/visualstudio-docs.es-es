@@ -8,12 +8,12 @@ ms.topic: include
 ms.date: 05/23/2018
 ms.author: mikejo
 ms.custom: include file
-ms.openlocfilehash: 22db75783734a695ded937d8e6b93431568acd5b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fec32bf187d629c5fd99ce27eb17a61db39d3873
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62902900"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65839720"
 ---
 En el dispositivo remoto o servidor que desee depurar en, en lugar de la máquina de Visual Studio, descargue e instale la versión correcta de las herramientas remotas de uno de los vínculos en la tabla siguiente.
 
@@ -24,7 +24,7 @@ En el dispositivo remoto o servidor que desee depurar en, en lugar de la máquin
 
 |Versión|Link|Notas|
 |-|-|-|
-|Visual Studio 2019|[Herramientas remotas](https://visualstudio.microsoft.com/downloads/?q=remote+tools#remote-tools-for-visual-studio-2019)|Es compatible con todas las versiones de Visual Studio de 2019. Descargue la versión que coincida con el sistema operativo del dispositivo (x 86, x64 o ARM64). En Windows Server, vea [desbloquear la descarga del archivo](../../debugger/remote-debugging-unblock-file-download.md) para descargar las herramientas remotas de ayuda.|
+|Visual Studio 2019|[Herramientas remotas](https://visualstudio.microsoft.com/downloads#remote-tools-for-visual-studio-2019)|Es compatible con todas las versiones de Visual Studio de 2019. Descargue la versión que coincida con el sistema operativo del dispositivo (x 86, x64 o ARM64). En Windows Server, vea [desbloquear la descarga del archivo](../../debugger/remote-debugging-unblock-file-download.md) para descargar las herramientas remotas de ayuda.|
 |Visual Studio 2017|[Herramientas remotas](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202017)|Es compatible con todas las versiones de Visual Studio 2017. Descargue la versión que coincida con el sistema operativo del dispositivo (x 86, x64 o ARM64). En Windows Server, vea [desbloquear la descarga del archivo](../../debugger/remote-debugging-unblock-file-download.md) para descargar las herramientas remotas de ayuda.|
 |Visual Studio 2015|[Herramientas remotas](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|Herramientas remotas para Visual Studio 2015 están disponibles en My.VisualStudio.com. Si se le solicite, únase a la versión gratuita [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/) programa o inicie sesión con su identificador de suscripción de Visual Studio. En Windows Server, vea [desbloquear la descarga del archivo](../../debugger/remote-debugging-unblock-file-download.md) para descargar las herramientas remotas de ayuda.|
 |Visual Studio 2013|[Herramientas remotas](/previous-versions/visualstudio/visual-studio-2013/bt727f1t(v=vs.120)#installing-the-remote-tools)|Descargar página de documentación de Visual Studio 2013|

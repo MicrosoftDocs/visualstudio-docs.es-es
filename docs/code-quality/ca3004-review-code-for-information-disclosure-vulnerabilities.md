@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 82f763d9a6b1ec27975aa80054456a6bbbaeaa2b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8e8c8c58a01b9527df472907c8b55a9d175dd91d
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541275"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65841610"
 ---
 # <a name="ca3004-review-code-for-information-disclosure-vulnerabilities"></a>CA3004: Revisión de código en busca de vulnerabilidades de divulgación de información
 
@@ -40,7 +40,7 @@ Esta regla intenta buscar un mensaje de excepción, seguimiento de la pila o rep
 > Esta regla no puede realizar un seguimiento de datos a través de ensamblados. Por ejemplo, si un ensamblado detecta una excepción y, a continuación, pasa a otro ensamblado que genera la excepción, esta regla no genera una advertencia.
 
 > [!NOTE]
-> Hay un límite configurable para profundidad esta regla analizará el flujo de datos a través de llamadas de método. Consulte [Configuration Analyzer](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) para configurar el límite de `.editorconfig` archivos.
+> Hay un límite configurable para profundidad esta regla analizará el flujo de datos a través de llamadas de método. Consulte [Configuration Analyzer](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) acerca de cómo configurar el límite en un archivo EditorConfig.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
 
@@ -77,7 +77,7 @@ public partial class WebForm : System.Web.UI.Page
 ```vb
 Imports System
 
-Partial Public Class WebForm 
+Partial Public Class WebForm
     Inherits System.Web.UI.Page
 
     Protected Sub Page_Load(sender As Object, eventArgs As EventArgs)
@@ -116,7 +116,7 @@ public partial class WebForm : System.Web.UI.Page
 ```vb
 Imports System
 
-Partial Public Class WebForm 
+Partial Public Class WebForm
     Inherits System.Web.UI.Page
 
     Protected Sub Page_Load(sender As Object, eventArgs As EventArgs)

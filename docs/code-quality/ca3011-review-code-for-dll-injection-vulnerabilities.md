@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: a6f3a2db89e35408a19cec47c971821fedf5f85a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4c9fbb4b8b11b0fce7d3e7530eef80af19b35b73
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541147"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65841029"
 ---
 # <a name="ca3011-review-code-for-dll-injection-vulnerabilities"></a>CA3011: Revisión de código en busca de vulnerabilidades de inyección de DLL
 
@@ -40,7 +40,7 @@ Esta regla intenta encontrar la entrada de una solicitud HTTP que llegue a un m�
 > Esta regla no puede realizar un seguimiento de datos a través de ensamblados. Por ejemplo, si un ensamblado lee la entrada de solicitud HTTP y, a continuación, pasa a otro ensamblado que carga un ensamblado, esta regla no genera una advertencia.
 
 > [!NOTE]
-> Hay un límite configurable para profundidad esta regla analizará el flujo de datos a través de llamadas de método. Consulte [Configuration Analyzer](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) para configurar el límite de `.editorconfig` archivos.
+> Hay un límite configurable para profundidad esta regla analizará el flujo de datos a través de llamadas de método. Consulte [Configuration Analyzer](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) acerca de cómo configurar el límite en un archivo EditorConfig.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
 

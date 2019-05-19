@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 279bcf3aecc2a637a7a36c2041ed63a72017a800
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 47bbb39cadb6a092f71ebd7b3907f34fcc2782ce
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545835"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65842048"
 ---
 # <a name="ca1716-identifiers-should-not-match-keywords"></a>CA1716: Los identificadores no deben coincidir con palabras clave
 
@@ -60,7 +60,7 @@ Puede suprimir una advertencia de esta regla si está convencido de que el ident
 
 Si ejecuta esta regla de [analizadores de FxCop](install-fxcop-analyzers.md) (y no a través de análisis de código estático), puede configurar qué partes de su código base para ejecutar esta regla en, en función de su accesibilidad. Por ejemplo, para especificar que debe ejecutarse la regla sólo con respecto a la superficie de API no públicos, agregue el siguiente par clave-valor a un archivo .editorconfig en el proyecto:
 
-```
+```ini
 dotnet_code_quality.ca1716.api_surface = private, internal
 ```
 

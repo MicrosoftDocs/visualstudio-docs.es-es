@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e66b75160df0e8ecf9d33601ee383ec71cd62c4d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5a4b80b8ede1ab2b8d858ed7378f318f2eebe5fa
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62806496"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65841535"
 ---
 # <a name="ca3008-review-code-for-xpath-injection-vulnerabilities"></a>CA3008: Revisión de código en busca de vulnerabilidades de inyección de XPath
 
@@ -32,7 +32,7 @@ Entrada de solicitud HTTP potencialmente no confiable alcanza una consulta XPath
 
 ## <a name="rule-description"></a>Descripción de la regla
 
-Al trabajar con entradas no seguras, esté atento a ataques de inyección de XPath. Construir consultas de XPath utilizando la entrada no confiable puede permitir que un atacante manipular de forma malintencionada la consulta para devolver un resultado no deseado y posiblemente revelar el contenido del XML consultado. 
+Al trabajar con entradas no seguras, esté atento a ataques de inyección de XPath. Construir consultas de XPath utilizando la entrada no confiable puede permitir que un atacante manipular de forma malintencionada la consulta para devolver un resultado no deseado y posiblemente revelar el contenido del XML consultado.
 
 Esta regla intenta encontrar la entrada de las solicitudes HTTP para llegar a una expresión XPath.
 
@@ -40,7 +40,7 @@ Esta regla intenta encontrar la entrada de las solicitudes HTTP para llegar a un
 > Esta regla no puede realizar un seguimiento de datos a través de ensamblados. Por ejemplo, si un ensamblado lee la entrada de solicitud HTTP y, a continuación, pasa a otro ensamblado que realiza una consulta XPath, esta regla no genera una advertencia.
 
 > [!NOTE]
-> Hay un límite configurable para profundidad esta regla analizará el flujo de datos a través de llamadas de método. Consulte [Configuration Analyzer](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) para configurar el límite de `.editorconfig` archivos.
+> Hay un límite configurable para profundidad esta regla analizará el flujo de datos a través de llamadas de método. Consulte [Configuration Analyzer](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) acerca de cómo configurar el límite en un archivo EditorConfig.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
 
@@ -92,7 +92,7 @@ Partial Public Class WebForm
 
     Protected Sub Page_Load(sender As Object, e As EventArgs)
         Dim operation As String = Me.Request.Form("operation")
-        
+
         ' If an attacker uses this for input:
         '     ' or 'a' = 'a
         ' Then the XPath query will be:

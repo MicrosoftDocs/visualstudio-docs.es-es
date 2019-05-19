@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: dbafb6c05a3dba72d1614d6a955e20030a50c6ea
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e60d0fad1262138b57f079485bc7455e55c7ec25
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541173"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65841342"
 ---
 # <a name="ca3007-review-code-for-open-redirect-vulnerabilities"></a>CA3007: Revisión de código en busca de vulnerabilidades de redireccionamiento abierto
 
@@ -40,7 +40,7 @@ Esta regla intenta encontrar la entrada de las solicitudes HTTP para llegar a un
 > Esta regla no puede realizar un seguimiento de datos a través de ensamblados. Por ejemplo, si un ensamblado lee la entrada de solicitud HTTP y, a continuación, pasa a otro ensamblado al que responde con una redirección de HTTP, esta regla no genera una advertencia.
 
 > [!NOTE]
-> Hay un límite configurable para profundidad esta regla analizará el flujo de datos a través de llamadas de método. Consulte [Configuration Analyzer](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) para configurar el límite de `.editorconfig` archivos.
+> Hay un límite configurable para profundidad esta regla analizará el flujo de datos a través de llamadas de método. Consulte [Configuration Analyzer](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) acerca de cómo configurar el límite en un archivo EditorConfig.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
 

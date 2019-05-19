@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e2b9c878f630d9e739efc46380ecdfc6555880be
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bf16a9edf25132aa8b58702f01563b8d7ccf109a
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546497"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65841493"
 ---
 # <a name="ca1721-property-names-should-not-match-get-methods"></a>CA1721: Los nombres de propiedades no deben coincidir con los métodos get
 
@@ -60,7 +60,7 @@ No suprima las advertencias de esta regla.
 
 Si ejecuta esta regla de [analizadores de FxCop](install-fxcop-analyzers.md) (y no a través de análisis de código estático), puede configurar qué partes de su código base para ejecutar esta regla en, en función de su accesibilidad. Por ejemplo, para especificar que debe ejecutarse la regla sólo con respecto a la superficie de API no públicos, agregue el siguiente par clave-valor a un archivo .editorconfig en el proyecto:
 
-```
+```ini
 dotnet_code_quality.ca1721.api_surface = private, internal
 ```
 
