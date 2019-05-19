@@ -9,11 +9,11 @@ ms.date: 05/23/2018
 ms.author: mikejo
 ms.custom: include file
 ms.openlocfilehash: 3fa0569739ee81ec4b2aa0eec8157068ffc949cd
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63407787"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65839752"
 ---
 1. En el **el Explorador de soluciones**, haga clic en el nodo del proyecto y seleccione **publicar** (para formularios Web Forms, **publicar aplicación Web**).
 
