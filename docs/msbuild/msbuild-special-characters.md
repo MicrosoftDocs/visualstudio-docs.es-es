@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a87013ff3a1911caa667f7ba431e408fc87a98f4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a7af1f137624c0af1fce02fde524d7fb4178cbad
+ms.sourcegitcommit: db30651dc0ce4d0b274479b23a6bd102a5559098
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63004618"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65084058"
 ---
 # <a name="msbuild-special-characters"></a>Caracteres especiales de MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] reserva algunos caracteres para usos especiales en contextos concretos. Para usar dichos caracteres literalmente en el contexto en el que están reservados, debe aplicarles secuencias de escape. Por ejemplo, un asterisco tiene un significado especial solo en los atributos `Include` y `Exclude` de una definición de elemento y en las llamadas a `CreateItem`. Si quiere que aparezca como un asterisco en uno de estos contextos, debe aplicarle una secuencia de escape. En todos los demás contextos, simplemente escriba el asterisco donde quiera que aparezca.
@@ -32,7 +32,7 @@ ms.locfileid: "63004618"
 |%|%25|Referencia a metadatos|
 |$|%24|Referencia a propiedades|
 |@|%40|Referencia a listas de elementos|
-|\'|%27|Condiciones y otras expresiones|
+|&#96;|%27|Condiciones y otras expresiones|
 |;|%3B|Separador de lista|
 |?|%3F|Carácter comodín para nombres de archivo en atributos `Include` y `Exclude`|
 |*|%2A|Carácter comodín para nombres de archivo en atributos `Include` y `Exclude`|

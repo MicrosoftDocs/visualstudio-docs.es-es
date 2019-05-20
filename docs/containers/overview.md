@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.topic: overview
 ms.date: 03/20/2019
 ms.technology: vs-azure
-ms.openlocfilehash: 4b03ccddadf954b8430b7ad9b5a4ed765fccc3f5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fbe363e8f78cba9fa46f3634e59beb22e523ddfa
+ms.sourcegitcommit: db30651dc0ce4d0b274479b23a6bd102a5559098
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825015"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65084048"
 ---
 # <a name="container-tools-in-visual-studio"></a>Herramientas de contenedor en Visual Studio
 
@@ -25,7 +25,7 @@ Las herramientas incluidas en Visual Studio para el desarrollo con contenedores 
 
 ## <a name="docker-support-in-visual-studio"></a>Compatibilidad con Docker en Visual Studio
 
-Existe compatibilidad con Docker en algunos tipos de proyectos .NET.  Está disponible para proyectos ASP.NET, proyectos ASP.NET Core y proyectos de consola de .NET Core y .NET Framework.
+La compatibilidad con Docker está disponible para proyectos ASP.NET, proyectos ASP.NET Core y proyectos de consola de .NET Core y .NET Framework.
 
 La compatibilidad con Docker en Visual Studio ha cambiado a lo largo de una serie de versiones en respuesta a las necesidades del cliente. Hay dos niveles de compatibilidad con Docker que puede agregar a un proyecto, y las opciones admitidas varían según el tipo de proyecto y la versión de Visual Studio. Con algunos tipos de proyectos admitidos, si simplemente quiere un contenedor para un único proyecto, sin usar la orquestación, puede hacerlo si agrega compatibilidad con Docker.  El siguiente nivel es la compatibilidad con la orquestación de contenedores, que agrega los archivos de compatibilidad adecuados para el orquestador determinado que elija.  
 
@@ -46,13 +46,9 @@ Con Visual Studio 2019, puede usar Docker Compose, Kubernetes y Service Fabric c
 > Si va a usar la plantilla completa del proyecto de consola de .NET Framework, al agregar compatibilidad con Docker se agrega automáticamente compatibilidad con la orquestación mediante Docker Compose.
 ::: moniker-end
 
-Los comandos **Agregar > Compatibilidad con Docker** y **Agregar > Compatibilidad con el orquestador de contenedores** se encuentran en el menú contextual del nodo de proyecto de un proyecto de ASP.NET Core en el **Explorador de soluciones**, como se muestra en la captura de pantalla siguiente:
+### <a name="adding-docker-support"></a>Adición de compatibilidad con Docker
 
-![Opción de menú Agregar compatibilidad con Docker en Visual Studio](./media/overview/add-docker-support-menu.png)
-
-### <a name="adding-docker-support-without-orchestration"></a>Agregar compatibilidad con Docker (sin orquestación)
-
-Puede agregar compatibilidad con Docker a un proyecto existente si selecciona **Agregar** > **Compatibilidad con Docker** en el **Explorador de soluciones**. También puede habilitar la compatibilidad con Docker durante la creación del proyecto si selecciona **Enable Docker Support** (Habilitar la compatibilidad con Docker) al crear un proyecto, como se muestra en la captura de pantalla siguiente:
+Puede habilitar la compatibilidad con Docker durante la creación del proyecto si selecciona **Enable Docker Support** (Habilitar la compatibilidad con Docker) al crear un proyecto, como se muestra en la captura de pantalla siguiente:
 
 ::: moniker range="vs-2017"
 ![Habilitación de la compatibilidad con Docker para una nueva aplicación web de ASP.NET Core en Visual Studio](./media/overview/enable-docker-support-visual-studio.png)
@@ -60,6 +56,13 @@ Puede agregar compatibilidad con Docker a un proyecto existente si selecciona **
 ::: moniker range=">=vs-2019"
 ![Habilitación de la compatibilidad con Docker para una nueva aplicación web de ASP.NET Core en Visual Studio](./media/overview/vs-2019/enable-docker-support-visual-studio.png)
 ::: moniker-end
+
+> [!NOTE]
+> Para los proyectos de .NET Framework (no incluye .NET Core), solo están disponibles los contenedores de Windows.
+
+Puede agregar compatibilidad con Docker a un proyecto existente si selecciona **Agregar** > **Compatibilidad con Docker** en el **Explorador de soluciones**. Los comandos **Agregar > Compatibilidad con Docker** y **Agregar > Compatibilidad con el orquestador de contenedores** se encuentran en el menú contextual del nodo de proyecto de un proyecto de ASP.NET Core en el **Explorador de soluciones**, como se muestra en la captura de pantalla siguiente:
+
+![Opción de menú Agregar compatibilidad con Docker en Visual Studio](./media/overview/add-docker-support-menu.png)
 
 Al agregar o habilitar la compatibilidad con Docker, Visual Studio agrega lo siguiente al proyecto:
 

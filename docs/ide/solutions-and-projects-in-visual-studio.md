@@ -23,12 +23,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d8373f13d3a7fc4280b383c534d0adba0b02a53
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0116a8c4fa6326a1176c132aef59a789daabffca
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979657"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461535"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Soluciones y proyectos en Visual Studio
 
@@ -67,6 +67,8 @@ En Visual Studio se usan dos tipos de archivo (*.sln* y *.suo*) para almacenar l
 La manera más fácil de crear un proyecto consiste en empezar desde una plantilla de proyecto para un tipo concreto de aplicación o sitio web. Una plantilla de proyecto consta de un conjunto básico de archivos de código generados previamente, archivos de configuración, recursos y configuraciones. Estas plantillas están disponibles en el cuadro de diálogo en que se crea un proyecto (**Archivo** > **Nuevo** > **Proyecto**). Para obtener más información, vea [Crear soluciones y proyectos](../ide/creating-solutions-and-projects.md).
 
 También puede crear un proyecto y plantillas de elemento personalizados. Para obtener más información, vea [Crear plantillas para proyectos y elementos](../ide/creating-project-and-item-templates.md).
+
+Cuando crea un proyecto, se guarda de forma predeterminada en *%USERPROFILE%\source\repos*. Puede personalizar esta ubicación en el ajuste **Ubicación del proyecto**, que encontrará en **Herramientas** > **Opciones** > **Proyectos y soluciones** > **Ubicaciones**. Para obtener más información, vea [Página Proyectos y soluciones, Cuadro de diálogo Opciones](../ide/reference/projects-and-solutions-options-dialog-box.md).
 
 ## <a name="manage-projects-in-solution-explorer"></a>Administrar proyectos en el Explorador de soluciones
 

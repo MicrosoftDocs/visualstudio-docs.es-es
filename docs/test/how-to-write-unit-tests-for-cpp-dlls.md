@@ -1,18 +1,18 @@
 ---
 title: Escritura de pruebas unitarias para archivos DLL de C++
-ms.date: 11/04/2017
+ms.date: 05/01/2019
 ms.topic: conceptual
 ms.author: mblome
-manager: jillfra
+manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 7606f9f9b521d4bc752b99ad70237ef4ac6bc30e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ecd26aeae5e0a236bf776477ab3dca0e528e8200
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821058"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226084"
 ---
 # <a name="write-unit-tests-for-c-dlls-in-visual-studio"></a>Escribir pruebas unitarias para DLL de C/C++ en Visual Studio
 
@@ -56,7 +56,17 @@ ms.locfileid: "62821058"
 
   1. Cree un proyecto de prueba unitaria nativo.
 
-      1. En el menú **Archivo**, seleccione **Nuevo** > **Proyecto** > **Visual C++** > **Prueba** > **Proyecto de prueba unitaria C++**.
+      ::: moniker range="vs-2019"
+
+      1. En el menú **Archivo**, seleccione **Nuevo** > **Proyecto**. En el cuadro de diálogo **Agregar un proyecto nuevo** establezca el valor de **Lenguaje** en C++ y escriba "prueba" en el cuadro de búsqueda. Después, elija el **proyecto de prueba unitaria de tipo nativo**.
+
+      ::: moniker-end
+
+      ::: moniker range="vs-2017"
+
+      1. En el menú **Archivo**, seleccione **Nuevo** > **Proyecto** > **Visual C++** > **Prueba** > **Proyecto de prueba unitaria de C++**.
+
+      ::: moniker-end
 
   2. En el **Explorador de soluciones**, en el menú contextual del proyecto de prueba, seleccione **Referencias**. Se abrirá la ventana de **propiedades** del proyecto.
 
@@ -80,7 +90,17 @@ ms.locfileid: "62821058"
 
   1. Cree un proyecto de prueba unitaria nativo.
 
-      1. En el menú **Archivo**, seleccione **Nuevo** > **Proyecto** > **Visual C++** > **Prueba** > **Proyecto de prueba unitaria de tipo nativo**.
+      ::: moniker range="vs-2019"
+
+      1. En el menú **Archivo**, seleccione **Nuevo** > **Proyecto**. En el cuadro de diálogo **Agregar un proyecto nuevo** establezca el valor de **Lenguaje** en C++ y escriba "prueba" en el cuadro de búsqueda. Después, elija el **proyecto de prueba unitaria de tipo nativo**.
+
+      ::: moniker-end
+      
+      ::: moniker range="vs-2017"
+
+      1. En el menú **Archivo**, seleccione **Nuevo** > **Proyecto** > **Visual C++** > **Prueba** > **Proyecto de prueba unitaria de C++**.
+
+      ::: moniker-end
 
   2. En el **Explorador de soluciones**, en el menú contextual del proyecto de prueba, seleccione **Propiedades**.
 

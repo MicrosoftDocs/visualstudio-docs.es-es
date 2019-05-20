@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 94a52d81dd5e3b15340a2d58702600388b150001
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5aa67bd32f6895e4e1dfc4e7c558bc3bc0d8001b
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62999764"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461494"
 ---
 # <a name="overview-of-microsoft-intellitest"></a>Información general de Microsoft IntelliTest
 
@@ -115,8 +115,7 @@ En ese sentido, los resultados de las llamadas a código no instrumentado o no a
 
 Además, el programa se considera indeterminista si los valores de los orígenes externos cambian al volver a ejecutar el programa. En dichos casos, IntelliTest pierde el control de la ejecución del programa y su búsqueda pasa a ser ineficaz.
 
-A veces no es evidente cuando esto sucede.
-Considere los siguientes ejemplos:
+A veces no es evidente cuando esto sucede. Considere los siguientes ejemplos:
 
 * El resultado del método **GetHashCode()** se proporciona mediante código no administrado y no es predecible.
 * La clase **System.Random** usa la hora del sistema actual para proporcionar valores aleatorios reales.

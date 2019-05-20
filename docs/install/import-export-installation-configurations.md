@@ -18,12 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: facbbf5903d683ea3a13bdd875dfe2b6c63b6367
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cd932b1748d5c400c6ab64a56b16d1b6a1458c71
+ms.sourcegitcommit: 3fe6bed9ef8fb1478106645f655c7472009ae43a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62786402"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64850748"
 ---
 # <a name="import-or-export-installation-configurations"></a>Importación o exportación de configuraciones de instalación
 
@@ -48,7 +48,7 @@ Puede elegir exportar un archivo de configuración de instalación ya sea desde 
 
    ![Exportación de configuración desde la tarjeta del producto en el instalador de Visual Studio](../install/media/vs-2019/vs-installer-export-config.png)
 
-1. Busque o escriba la ubicación donde quiere guardar el archivo .vconfig y elija **Revisar detalles**.
+1. Busque o escriba la ubicación donde quiere guardar el archivo .vsconfig y elija **Revisar detalles**.
 
    ![Exportación de configuración desde el instalador de Visual Studio](../install/media/vs-2019/export-configuration-confirmation.png)
 
@@ -62,7 +62,7 @@ Cuando esté listo para importar un archivo de configuración de instalación, s
 
 1. En la tarjeta del producto, elija el botón **Más** y seleccione **Importar configuración**.
 
-1. Busque el archivo .vconfig que quiere importar y elija **Revisar detalles**.
+1. Busque el archivo .vsconfig que quiere importar y elija **Revisar detalles**.
 
 1. Asegúrese de tener las cargas de trabajo y los componentes que desea y elija **Cerrar**.
 

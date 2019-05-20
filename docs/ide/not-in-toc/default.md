@@ -9,16 +9,16 @@ f1_keywords:
 manager: jillfra
 author: gewarren
 ms.author: gewarren
-ms.openlocfilehash: 7b4f78bb2249ef60121cfc1557bf06e696e585b8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4779c9aa27f65a3295f3a234e4f46314d7fe3b69
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55912055"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65613581"
 ---
 # <a name="f1-help"></a>Ayuda de F1
 
-Parece que no pudimos encontrar lo que buscaba y lo sentimos. [Ayúdenos a mejorar](#help-us-improve-f1).
+Parece que no pudimos encontrar lo que buscaba y lo sentimos. Si quiere ayudarnos a mejorar, déjenos un comentario; para ello, use los botones que encontrará en la parte inferior de esta página.
 
 ## <a name="cursor-position"></a>Posición del cursor
 
@@ -26,14 +26,11 @@ Si está buscando ayuda de F1 sobre una palabra clave o el nombre de una API, co
 
 ## <a name="useful-links"></a>Vínculos útiles
 
-- Para obtener información general sobre Visual Studio, vea [Introducción a Visual Studio 2017](../../get-started/visual-studio-ide.md).
-- Para obtener ayuda sobre el editor de texto de Visual Studio, vea [Características del editor de código](../../ide/writing-code-in-the-code-and-text-editor.md).
+- Busque documentación de referencia en el [Explorador de API de .NET](/dotnet/api/).
 - Para obtener ayuda de C#, vea la [Guía de C#](/dotnet/csharp/index).
 - Para obtener ayuda de Visual Basic, vea la [Guía de Visual Basic](/dotnet/visual-basic/).
 - Para obtener ayuda de F#, vea la [Guía de F#](/dotnet/fsharp/).
 - Para obtener ayuda de Python, vea [Uso de Python en Visual Studio](../../python/overview-of-python-tools-for-visual-studio.md).
 - Para obtener ayuda de C++, vea [Visual C++ en Visual Studio](/cpp/visual-cpp-in-visual-studio).
-
-## <a name="help-us-improve-f1"></a>Contribuya a mejorar la Ayuda (F1)
-
-Ayúdenos a mejorar la experiencia de Ayuda de F1. Registrar un problema de ayuda del producto, haciendo clic en el botón **Give product feedback (Proporcionar comentarios sobre el producto)** a continuación. Incluya sobre qué estaba buscando ayuda cuando presionó **F1**, por ejemplo, en qué símbolo o ventana estaba el cursor. ¡Gracias!
+- Para obtener información sobre Visual Studio, vea [Introducción a Visual Studio](../../get-started/visual-studio-ide.md).
+- Para obtener ayuda sobre el editor de texto de Visual Studio, vea [Características del editor de código](../../ide/writing-code-in-the-code-and-text-editor.md).

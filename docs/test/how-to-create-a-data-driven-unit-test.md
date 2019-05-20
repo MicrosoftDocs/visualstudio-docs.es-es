@@ -1,6 +1,6 @@
 ---
 title: Creación de una prueba unitaria controlada por datos
-ms.date: 11/04/2016
+ms.date: 05/08/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.test.testresults.unittest.datadriven
@@ -14,16 +14,16 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 58b7348a1bd46b426339effbe259e6f5058c769b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 931a9c01bf7c8854d78e1385dbbd9a27b98cfdd7
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979245"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615439"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>Procedimiento Creación de una prueba unitaria controlada por datos
 
-Mediante el marco de pruebas unitarias de Microsoft para código administrado, puede configurar un método de prueba unitaria para recuperar los valores utilizados en el método de prueba de un origen de datos. El método se ejecuta correctamente para cada fila del origen de datos, lo que facilita probar una variedad de entrada mediante el uso de un único método.
+Puede usar el marco de pruebas unitarias de Microsoft para código administrado para configurar un método de prueba unitaria a fin de recuperar valores de un origen de datos. El método se ejecuta correctamente para cada fila del origen de datos, lo que facilita probar una variedad de entrada mediante el uso de un único método.
 
 Crear una prueba unitaria controlada por datos implica los siguientes pasos:
 
@@ -43,7 +43,7 @@ Por ejemplo, supongamos que ha creado:
 
 2. Un proyecto en `MyBank` llamado `BankDb` que administra las transacciones para las cuentas.
 
-3. Una clase denominada `Maths` en el `DbBank` proyecto que realiza las funciones matemáticas para asegurarse de que cualquier transacción es una ventaja para el banco.
+3. Una clase denominada `Maths` en el `BankDb` proyecto que realiza las funciones matemáticas para asegurarse de que cualquier transacción es una ventaja para el banco.
 
 4. Un proyecto de prueba unitaria denominado `BankDbTests` para probar el comportamiento del componente `BankDb`.
 
@@ -87,6 +87,9 @@ public TestContext TestContext
 ```
 
 En el método de prueba, accede a los datos a través de la propiedad de indizador `DataRow` del `TestContext`.
+
+> [!NOTE]
+> .NET Core no es compatible con el atributo [DataSource](xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute). Si intenta acceder a los datos de prueba de esta forma desde un proyecto de prueba unitaria de .NET Core o UWP, se le mostrará un error como el siguiente: **"'TestContext' does not contain a definition for 'DataRow' and no accessible extension method 'DataRow' accepting a first argument of type 'TestContext' could be found (are you missing a using directive or an assembly reference?)"** ("'TestContext'" no contiene ninguna definición de "DataRow", y no se ha podido encontrar ningún valor "DataRow" de método de extensión accesible que acepte un primer argumento de tipo "TestContext; ¿le falta una directiva Using o una referencia de ensamblado?").
 
 ## <a name="write-the-test-method"></a>Escribir el método de prueba
 
