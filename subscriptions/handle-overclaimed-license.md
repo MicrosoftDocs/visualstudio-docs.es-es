@@ -7,14 +7,14 @@ ms.date: 02/13/2018
 ms.topic: conceptual
 description: Obtenga información sobre cómo los administradores pueden resolver el exceso de asignación de suscripciones
 searchscope: VS Subscription
-ms.openlocfilehash: 6c48bbc077c3d88e1d83f7fa860f4fc6c55fdcd1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6217dcd3cef9a65db3e45ba76f57167f47535671
+ms.sourcegitcommit: bd519d1da375e374016f94a44c295d3253f61a8c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62580024"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "64945134"
 ---
-# <a name="handling-over-claimed-subscriptions"></a>Control de "exceso de asignación" de suscripciones
+# <a name="overallocated-subscriptions"></a>Suscripciones con exceso de asignación
 
 A veces los pedidos se cambian después de haber agregado a los suscriptores, lo que puede causar que en su empresa haya más suscriptores asignados que licencias en propiedad. Cuando esto ocurre, en la pestaña Suscriptores se muestra una alerta y se proporciona más información.
 
@@ -24,8 +24,27 @@ A veces los pedidos se cambian después de haber agregado a los suscriptores, lo
 > [!div class="mx-imgBorder"]
 > ![Aviso de exceso de asignación de suscripciones](_img/over-claimed/over-claimed-alert.png)
 
-1. Para resolver el exceso de asignación de licencias, haga clic en el texto de la alerta. Se mostrará una lista filtrada de los suscriptores asignados al nivel de suscripción y la fecha de expiración del exceso de asignación. 
+## <a name="resolving-overallocated-subscriptions"></a>Resolución de suscripciones con exceso de asignación
+
+Para resolver las licencias con exceso de asignación:
+
+1. Haga clic en el texto de alerta. Se mostrará una lista filtrada de los suscriptores asignados al nivel de suscripción y la fecha de expiración del exceso de asignación. 
 
 2. Quite suscriptores según sea necesario para corregir el exceso de asignación de licencias. 
 
 3. La información general incluida en la parte izquierda de la página se actualizará para mostrar que vuelve a cumplir los requisitos, y todas las notificaciones sobre exceso de asignación desaparecerán. 
+
+## <a name="billing-and-true-up"></a>Facturación y "true-up"
+
+Si su organización tiene un contrato Enterprise (EA), los administradores pueden asignar suscripciones sin necesidad de adquirirlas y pagarlas más adelante a través de un proceso de reconciliación conocido como "true-up".  Cuando se produce un exceso de asignación, se facturará a su organización el número máximo de suscripciones asignadas a los usuarios durante el "true-up".  Esto se realiza incluso aunque ya no tenga el número máximo de suscripciones asignadas en el momento en que se lleve a cabo el "true-up".  Para obtener más información sobre cómo supervisar el uso máximo, visite el tema [Uso máximo](maximum-usage.md).
+
+> [!Important]
+> Si las suscripciones de Visual Studio con GitHub Enterprise son asignadas por administradores de suscripciones de Visual Studio y nunca se han comprado estas suscripciones, no serán visibles para los administradores de GitHub Enterprise de la organización. Para asegurarse de que las suscripciones de GitHub Enterprise sean visibles, debe realizarse una compra que incluya **como mínimo una** suscripción de Visual Studio Professional con GitHub Enterprise o de Visual Studio Enterprise con GitHub Enterprise la primera vez que se asignen las suscripciones.  
+>
+> Es responsabilidad del cliente asegurarse de que para cada suscripción de GitHub que se asigne haya una suscripción de Visual Studio con GitHub correspondiente asignada en el portal de administración para seguir cumpliendo los requisitos de licencia para esta suscripción.
+
+
+Obtenga más información sobre cómo administrar [suscripciones de Visual Studio con GitHub Enterprise](assign-github.md).
+
+## <a name="support-resources"></a>Recursos de soporte técnico
+-  Para obtener ayuda con las ventas, las suscripciones, las cuentas y la facturación para suscripciones de Visual Studio, póngase en contacto con el [soporte para suscripciones](https://visualstudio.microsoft.com/subscriptions/support/) de Visual Studio.
