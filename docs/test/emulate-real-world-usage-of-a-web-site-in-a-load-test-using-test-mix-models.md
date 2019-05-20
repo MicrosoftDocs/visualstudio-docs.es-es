@@ -9,14 +9,14 @@ ms.assetid: b7fae849-0538-40d1-ab35-2bb3a0fe4393
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 87161a4d58411f5f1bbe0347d093a39f17742bd6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1c946fa81c46af38daac469e0de7a00abafb3394
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62785741"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461582"
 ---
-# <a name="emulate-expected-real-world-usage-of-a-website-or-application-in-a-load-test-using-a-test-mix-model"></a>Emulación del uso real esperado de una aplicación o un sitio web en una prueba de carga mediante un modelo de combinación de pruebas
+# <a name="test-mix-models-overview"></a>Información general sobre los modelos de combinación de pruebas
 
 Puede usar opciones de modelos de carga para predecir de forma más precisa el uso real esperado del sitio web o la aplicación cuyas pruebas de carga está realizando. Esto es importante porque una prueba de carga que no se basa en un modelo de carga preciso puede generar resultados engañosos.
 
@@ -40,7 +40,8 @@ Puede especificar una de las siguientes opciones de modelo de combinación de pr
 - **A partir del orden secuencial:** cada usuario virtual ejecuta las pruebas unitarias o de rendimiento web en el mismo orden en que se definen en el escenario. El usuario virtual seguirá recorriendo las pruebas en este orden hasta que se complete la prueba de carga. Para más información, consulte [Orden secuencial](#SequentialOrder).
 
 ### <a name="BasedOnTestsStarted"></a> Porcentaje basado en las pruebas iniciadas
- Para cada prueba de la combinación, puede especificar un porcentaje que determine la frecuencia con la que la prueba se selecciona como la siguiente prueba que se va a ejecutar. Por ejemplo, podría asignar los valores de porcentaje siguientes a tres pruebas:
+
+Para cada prueba de la combinación, puede especificar un porcentaje que determine la frecuencia con la que la prueba se selecciona como la siguiente prueba que se va a ejecutar. Por ejemplo, podría asignar los valores de porcentaje siguientes a tres pruebas:
 
 - PruebaA (50%)
 
@@ -48,13 +49,14 @@ Puede especificar una de las siguientes opciones de modelo de combinación de pr
 
 - PruebaC (15%)
 
-  Si utiliza estos valores, la siguiente prueba que se inicia se basa en los porcentajes asignados. Para ello no se tiene en cuenta el número de usuarios virtuales que ejecutan actualmente cada prueba.
+Si utiliza estos valores, la siguiente prueba que se inicia se basa en los porcentajes asignados. Para ello no se tiene en cuenta el número de usuarios virtuales que ejecutan actualmente cada prueba.
 
 ### <a name="PercentageBasedonVirtualUsers"></a> Porcentaje basado en los usuarios virtuales
  Este modelo de combinación de pruebas determina el porcentaje de usuarios virtuales que ejecutarán una prueba determinada. Si utiliza este modelo de combinación de pruebas, la siguiente prueba que se inicia no se basa sólo en los porcentajes asignados, sino también en el porcentaje de usuarios virtuales que ejecutan actualmente una determinada prueba. En cualquier punto de la prueba de carga, el número de usuarios que ejecutan una determinada prueba coincide de la forma más precisa posible con la distribución asignada.
 
 ### <a name="PacingTestMix"></a> Combinación de pruebas a un ritmo regulado
- Si especifica una combinación de pruebas a un ritmo regulado, definirá una frecuencia de ejecución de pruebas para cada usuario virtual y prueba de la combinación de pruebas. Para cada prueba, esta frecuencia se expresa como ejecución de las pruebas por usuario virtual y hora. Por ejemplo, podría asignar la siguiente combinación de pruebas a ritmo regulado para las pruebas siguientes:
+
+Si especifica una combinación de pruebas a un ritmo regulado, definirá una frecuencia de ejecución de pruebas para cada usuario virtual y prueba de la combinación de pruebas. Para cada prueba, esta frecuencia se expresa como ejecución de las pruebas por usuario virtual y hora. Por ejemplo, podría asignar la siguiente combinación de pruebas a ritmo regulado para las pruebas siguientes:
 
 - PruebaA: 4 pruebas por usuario y por hora
 
@@ -62,9 +64,9 @@ Puede especificar una de las siguientes opciones de modelo de combinación de pr
 
 - PruebaC: 0,125 pruebas por usuario y por hora
 
-  Si utiliza el modelo de combinación de pruebas a ritmo regulado, el motor de tiempo de ejecución de pruebas de carga garantiza que la frecuencia real a la que se inician las pruebas sea menor o igual que la frecuencia especificada. Si las pruebas se ejecutan demasiado tiempo para que pueda completarse el número asignado, se devuelve un error.
+Si utiliza el modelo de combinación de pruebas a ritmo regulado, el motor de tiempo de ejecución de pruebas de carga garantiza que la frecuencia real a la que se inician las pruebas sea menor o igual que la frecuencia especificada. Si las pruebas se ejecutan demasiado tiempo para que pueda completarse el número asignado, se devuelve un error.
 
-  La opción **Tiempo de reflexión entre iteraciones de la prueba** no se aplica cuando se usa la combinación de pruebas a un ritmo regulado.
+La opción **Tiempo de reflexión entre iteraciones de la prueba** no se aplica cuando se usa la combinación de pruebas a un ritmo regulado.
 
 #### <a name="apply-distribution-to-pacing-delay"></a>Aplicar distribución a intervalo de velocidad
  El valor de la propiedad **Aplicar distribución a intervalo de velocidad** en un escenario de prueba de carga se puede establecer en true o en false:

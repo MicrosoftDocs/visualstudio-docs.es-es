@@ -1,18 +1,18 @@
 ---
 title: Usar el marco de pruebas unitarias de Microsoft para C++
-ms.date: 11/15/2017
+ms.date: 05/01/2019
 ms.topic: conceptual
 ms.author: mblome
-manager: jillfra
+manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 14f2b1e5267bd5c9ce35375c6cf6438406aa3e80
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 607956b93014fd1058f4a43ea17f6ba341752222
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970362"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461479"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Usar el marco de pruebas unitarias de Microsoft para C++ en Visual Studio
 
@@ -52,10 +52,12 @@ Use los métodos estáticos de la clase [Assert](microsoft-visualstudio-testtool
 ## <a name="run-the-tests"></a>Ejecutar las pruebas
 
 1. En el menú **Prueba**, elija **Windows** > **Explorador de pruebas**.
-2. Si ninguna de las pruebas está visible en la ventana, compile el proyecto de prueba haciendo clic con el botón derecho en el nodo correspondiente en el **Explorador de soluciones** y eligiendo **Compilar** o **Recompilar**.
 
-3. En el **Explorador de pruebas**, elija **Ejecutar todas** o seleccione las pruebas concretas que quiera ejecutar. Haga clic con el botón derecho en una prueba para ver otras opciones, como la ejecución en modo de depuración con puntos de interrupción habilitados.
-4. En la **Ventana de salida**, seleccione **Pruebas** en la lista desplegable para ver los mensajes escritos por la clase `Logger`:
+1. Si ninguna de las pruebas está visible en la ventana, compile el proyecto de prueba haciendo clic con el botón derecho en el nodo correspondiente en el **Explorador de soluciones** y eligiendo **Compilar** o **Recompilar**.
+
+1. En el **Explorador de pruebas**, elija **Ejecutar todas** o seleccione las pruebas concretas que quiera ejecutar. Haga clic con el botón derecho en una prueba para ver otras opciones, como la ejecución en modo de depuración con puntos de interrupción habilitados.
+
+1. En la **Ventana de salida**, seleccione **Pruebas** en la lista desplegable para ver los mensajes escritos por la clase `Logger`:
 
    ![Ventana de salida de C++ con mensajes de prueba](media/cpp-test-output-window.png)
 

@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Exportar una textura para usarla con aplicaciones de Direct2D o Javascipt
+title: Exportación de una textura para usarla con aplicaciones de Direct2D o Javascipt
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 241c25fe-764e-4e1b-ad32-b1377dcbb605
@@ -8,14 +8,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 803129ea758a6648c0caa8303e1d191c0e8a74f5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c878d898aa12644cc7a53ee9f12b351cd54c9d8d
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62844389"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65459203"
 ---
-# <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps"></a>Procedimiento Exportar una textura para usarla con aplicaciones de Direct2D o Javascipt
+# <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascript-apps"></a>Procedimiento Exportación de una textura para usarla con aplicaciones de Direct2D o JavaScript
 
 La canalización de contenido de la imagen puede generar texturas compatibles con las convenciones de representación internas de Direct2D. Las texturas de esta clase son adecuadas para su uso en aplicaciones que usan Direct2D y en aplicaciones para UWP creadas mediante JavaScript.
 
@@ -39,11 +39,11 @@ Las texturas que se usan en el contexto de Direct2D deben cumplir estas convenci
 
 - La textura se debe proporcionar en formato *.dds*, usando uno de estos formatos de compresión de bloques:
 
-    - Compresión BC1_UNORM
+   - Compresión BC1_UNORM
 
-    - Compresión BC2_UNORM
+   - Compresión BC2_UNORM
 
-    - Compresión BC3_UNORM
+   - Compresión BC3_UNORM
 
 - No se admiten los mapas MIP.
 

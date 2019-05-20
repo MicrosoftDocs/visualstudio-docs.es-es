@@ -7,14 +7,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fca2436b99f97e18801f8adffdc27fd348fc8123
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 889195101123e98207b0b25f05b0aa24355abc95
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62783958"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461617"
 ---
-# <a name="configure-test-agents-and-test-controllers-for-running-load-tests"></a>Configurar agentes y controladores de pruebas para ejecutar pruebas de carga
+# <a name="overview-of-test-agents-and-test-controllers-for-running-load-tests"></a>Información general sobre agentes y controladores de pruebas para ejecutar pruebas de carga
 
 Visual Studio puede generar cargas simuladas para una aplicación mediante máquinas virtuales o físicas. Dichas máquinas deben configurarse como un único controlador de pruebas y uno o varios agentes de prueba. Puede usar el controlador de pruebas y los agentes de prueba para generar más carga de la que un único equipo puede generar por sí solo.
 

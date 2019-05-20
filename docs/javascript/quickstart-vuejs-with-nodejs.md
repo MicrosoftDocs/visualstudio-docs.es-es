@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: d28126c84312c13b04de6739340d2cfb6337a066
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 28e86068b2255d1796363405c0231c1fb6bdd480
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840617"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226498"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>Inicio rápido: Uso de Visual Studio para crear la primera aplicación Vue.js
 
@@ -59,12 +59,12 @@ En primer lugar se crea un proyecto de aplicación web Vue.js.
 1. Cree un nuevo proyecto.
 
     ::: moniker range=">=vs-2019"
-    Presione **Esc** para cerrar la ventana de inicio. Presione **Ctrl + Q** para abrir el cuadro de búsqueda, escriba **Vue.js básico**, elija **Aplicación web de Vue.js básico** (JavaScript o TypeScript). En el cuadro de diálogo que se abre, elija **Crear**.
+    Presione **Esc** para cerrar la ventana de inicio. Presione **Ctrl + Q** para abrir el cuadro de búsqueda, escriba **Vue.js básico**, elija **Aplicación web de Vue.js básico** (JavaScript o TypeScript). En el cuadro de diálogo que se muestra, escriba el nombre **basic-vuejs** y después elija **Crear**.
 
     ![Plantilla Vue.js](../javascript/media/vs-2019/vuejs-template.png)
     ::: moniker-end
     ::: moniker range="vs-2017"
-    En la barra de menús superior, seleccione **Archivo** > **Nuevo** > **Proyecto**. En el panel izquierdo del cuadro de diálogo **Nuevo proyecto**, expanda **JavaScript** o **TypeScript** y elija **Node.js**. En el panel central, elija **Aplicación web de Vue.js básico** y elija **Aceptar**.
+    En la barra de menús superior, seleccione **Archivo** > **Nuevo** > **Proyecto**. En el panel izquierdo del cuadro de diálogo **Nuevo proyecto**, expanda **JavaScript** o **TypeScript** y elija **Node.js**. En el panel central, elija **Aplicación web Basic Vue.js**, escriba el nombre **basic-vuejs** y después haga clic en **Aceptar**.
 
     ![Plantilla Vue.js](../javascript/media/vuejs-template.png)
     ::: moniker-end
