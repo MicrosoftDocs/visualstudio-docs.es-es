@@ -8,12 +8,12 @@ ms.assetid: f6337c35-acae-4c5f-b5d9-ac5ff687ef18
 caps.latest.revision: 18
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ef0a8d1867114cd655f1e361cf0401dab6bce1a5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 15093cc6af6e61384c393b1c3e435df3840a2811
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63416641"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686437"
 ---
 # <a name="customizing-code-coverage-analysis"></a>Personalizar el análisis de cobertura de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -181,7 +181,7 @@ De forma predeterminada, la herramienta de cobertura de código de Visual Studio
  Elija **Prueba**, **Configuración de pruebas**, **Seleccionar archivo de configuración de pruebas** y seleccione el archivo .runsettings. El archivo aparece en el menú Configuración de pruebas, y puede seleccionarlo o cancelarlo. Mientras está seleccionado, el archivo .runsettings se aplica siempre que se use **Analizar cobertura de código**.  
   
 ### <a name="to-customize-run-settings-in-a-command-line-test"></a>Para personalizar la configuración de ejecución en una prueba de la línea de comandos  
- Para ejecutar pruebas desde la línea de comandos, utilice vstest.console.exe. El archivo de configuración es un parámetro de esta utilidad. Para más información, vea [Usar VSTest.Console desde la línea de comandos](http://msdn.microsoft.com/library/852812d8-b3bb-407e-bc43-04d511fcb27a).  
+ Para ejecutar pruebas desde la línea de comandos, utilice vstest.console.exe. El archivo de configuración es un parámetro de esta utilidad. Para más información, vea [Usar VSTest.Console desde la línea de comandos](https://msdn.microsoft.com/library/852812d8-b3bb-407e-bc43-04d511fcb27a).  
   
 1. Abra el símbolo del sistema de Visual Studio Developer:  
   
@@ -202,7 +202,7 @@ De forma predeterminada, la herramienta de cobertura de código de Visual Studio
   
 3. En la página **Proceso**, expanda **Pruebas automatizadas**, **Origen de la prueba**, **Parámetros de ejecución**. Seleccione el archivo **.runsettings**.  
   
-   - <em>Pero aparece **Ensamblado de prueba</em>* en lugar de **Origen de la prueba**. Cuando intento establecer el campo Parámetros de ejecución**, solo puedo seleccionar los archivos .testsettings.*  
+   - <em>Pero aparece **Ensamblado de prueba</em>* en lugar de **Origen de la prueba**. Cuando intento establecer el campo **Parámetros de ejecución**, solo puedo seleccionar los archivos .testsettings.*  
   
       En **Pruebas automatizadas**, seleccione **Ensamblado de prueba** y haga clic en **[…]** al final de la línea. En el cuadro de diálogo **Agregar o editar serie de pruebas**, establezca **Ejecutor de pruebas** en **Ejecutor de pruebas de Visual Studio**.  
   
@@ -237,7 +237,7 @@ Note that searching for symbols increases code coverage runtime. So keep this sm
 <!--  
 About include/exclude lists:  
 Empty "Include" clauses imply all; empty "Exclude" clauses imply none.  
-Each element in the list is a regular expression (ECMAScript syntax). See http://msdn.microsoft.com/library/2k3te2cs.aspx.  
+Each element in the list is a regular expression (ECMAScript syntax). See https://msdn.microsoft.com/library/2k3te2cs.aspx.  
 An item must first match at least one entry in the include list to be included.  
 Included items must then not match any entries in the exclude list to remain included.  
 -->  
