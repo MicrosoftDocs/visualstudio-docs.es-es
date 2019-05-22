@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Vea cómo activar el beneficio de Azure que se incluye con la suscripción de Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 2c78f4d88cf42197691fa798af115c16227bd2a1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c47012e0a06c4e4b44833b0f6727d3c7a79fd13c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62948493"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685921"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Usar Microsoft Azure en suscripciones de Visual Studio
 
@@ -102,7 +102,7 @@ Si tiene otra suscripción activa de Visual Studio a un nivel de suscripción **
 
 Si su suscripción tiene un límite de gasto y no realiza ninguna acción antes de que expire, la suscripción de Azure se deshabilitará. Para convertirla en una oferta de pago por uso y seguir utilizándola, agregue un instrumento de pago y [quite el límite de gasto](/azure/billing/billing-spending-limit/).
 
-Si no desea continuar con esta suscripción de Azure en Visual Studio, puede transferir sus recursos, como máquinas virtuales y bases de datos, a otra suscripción de Azure y [cancelar](http://azure.microsoft.com/support/cancel-account/) esta suscripción en cualquier momento.
+Si no desea continuar con esta suscripción de Azure en Visual Studio, puede transferir sus recursos, como máquinas virtuales y bases de datos, a otra suscripción de Azure y [cancelar](https://azure.microsoft.com/support/cancel-account/) esta suscripción en cualquier momento.
 
 Si cree que ha recibido este correo electrónico por error, póngase en contacto con el [Equipo de Asistencia al Cliente de Azure](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade).
 

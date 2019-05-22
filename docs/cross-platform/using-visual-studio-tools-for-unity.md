@@ -10,12 +10,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: abae34aad980d42018c217e150ea72b5896e436e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 15c4ba33dda8e1e3220d8285e35000061fedd99f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62816069"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65676729"
 ---
 # <a name="use-visual-studio-tools-for-unity"></a>Uso de Visual Studio Tools para Unity
 
@@ -202,7 +202,7 @@ Tenga en cuenta que el escenario descrito aquí supone que tiene el código fuen
 
    Los archivos PDB son necesarios para la depuración porque contienen símbolos de depuración de los archivos DLL y asignan el código del archivo DLL a su forma de código fuente. Si tiene como destino el entorno de ejecución heredado, Visual Studio Tools para Unity usará información de los archivos DLL y PDB para crear un archivo DLL.MDB, que es el formato de símbolo de depuración utilizado por el motor de scripting heredado de Unity. Si tiene como destino el entorno de ejecución nuevo y usa archivos PDB portátiles, Visual Studio Tools para Unity no intentará realizar ninguna conversión de símbolo, porque el entorno de ejecución de Unity nuevo puede consumir archivos PDB portátiles de manera nativa.
    
-   Puede encontrar más información sobre la generación de PDB [aquí](https://docs.microsoft.com/en-us/visualstudio/debugger/how-to-set-debug-and-release-configurations?view=vs-2019). Si tiene como destino el entorno de ejecución nuevo, asegúrese de que la opción "Información de depuración" esté establecida en "Portátil" para así generar de manera adecuada archivos PDB portátiles. Si tiene como destino el entorno de ejecución heredado, debe usar "Full" (Completo).
+   Puede encontrar más información sobre la generación de PDB [aquí](https://docs.microsoft.com/visualstudio/debugger/how-to-set-debug-and-release-configurations). Si tiene como destino el entorno de ejecución nuevo, asegúrese de que la opción "Información de depuración" esté establecida en "Portátil" para así generar de manera adecuada archivos PDB portátiles. Si tiene como destino el entorno de ejecución heredado, debe usar "Full" (Completo).
 
 4. Depure el código que ha creado. Ahora puede depurar el código fuente de archivos DLL junto con el código fuente del proyecto de Unity y utilizar todas las características de depuración a las que está acostumbrado, como los puntos de interrupción y ejecutar código paso a paso.
 
