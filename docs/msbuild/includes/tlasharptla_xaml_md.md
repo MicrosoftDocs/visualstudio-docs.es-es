@@ -14,10 +14,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.openlocfilehash: d0bb6e0c8deb6619b8215eb86203b58a1f7ecb72
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778319"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65847140"
 ---
 Lenguaje XAML (Extensible Application Markup Language)

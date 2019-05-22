@@ -7,12 +7,12 @@ ms.date: 10/03/2017
 ms.topic: conceptual
 description: Sepa cómo encontrar y descargar los productos de Microsoft incluidos en su suscripción de Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 5aec4ca179f5adc77a01538807ae3498c69964ae
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b0808da563ca37b675bb5f79841db25c40ecf5f7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62953751"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697780"
 ---
 # <a name="using-subscriber-downloads-in-visual-studio-subscriptions"></a>Uso de descargas de suscriptor en suscripciones de Visual Studio
 Una de sus prestaciones como suscriptor es el acceso a un amplio abanico de descargas de software.
@@ -31,7 +31,7 @@ Son varios los motivos por los que algunos productos no pueden estar disponibles
 - **Software redundante.** Las claves de producto y descargas del conjunto de aplicaciones de Office seleccionado y de los productos independientes de Office ya no están disponibles en las suscripciones que incluyen Office. Las claves de producto y descargas están disponibles para la misma versión de la serie Office más actualizada correspondiente.  Por ejemplo, si busca PowerPoint 2010, la búsqueda no arrojará ningún resultado.  Sin embargo, puede buscar Office 2010 (que es el conjunto de Office que contenía PowerPoint 2010) y descargar el conjunto.
 
 ## <a name="what-do-i-get"></a>¿Qué se obtiene?
-El número y tipo de descargas dependen del nivel de la suscripción y las inscripciones a programas.  Los usuarios con suscripciones estándar de Visual Studio Enterprise, por ejemplo, pueden tener disponibles descargas distintas a las de los usuarios que obtienen sus suscripciones a través de una suscripción al programa BizSpark o Microsoft Partner Network.  Para más información sobre qué descargas están disponibles según el nivel de suscripción, descargue la lista [Products By Benefit Level](https://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Products_by_Benefit_Level.xlsx), en la que se indican los productos por nivel de prestaciones.
+El número y tipo de descargas dependen del nivel de la suscripción y las inscripciones a programas.  Los usuarios con suscripciones estándar de Visual Studio Enterprise, por ejemplo, pueden tener disponibles descargas distintas a las de los usuarios que obtienen sus suscripciones a través de una suscripción al programa BizSpark o Microsoft Partner Network.  Para más información sobre qué descargas están disponibles según el nivel de suscripción, descargue la lista [Products By Benefit Level](http://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Visual_Studio_by_Subscription_Level.xlsx), en la que se indican los productos por nivel de prestaciones.
 
 ¿No sabe con seguridad qué suscripción usa?  Conéctese a [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas las suscripciones asignadas a su dirección de correo electrónico. Si no ve todas las suscripciones, es posible que haya una o varias asignadas a una dirección de correo electrónico diferente.  Debe iniciar sesión con esa dirección de correo electrónico para ver esas suscripciones.
 
