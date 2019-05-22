@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c94b33fad50cb5e271615629641ea7307f669255
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a92d5a593c67f54b50649a48b8f973bbfbff8958
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62788547"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694945"
 ---
 # <a name="property-functions"></a>Funciones de propiedad
 
@@ -321,8 +321,8 @@ En el ejemplo siguiente se muestra cómo usar esta función.
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 
     <PropertyGroup>
-        <Value1>$([MSBuild]::ValueOrDefault(`$(UndefinedValue)`, `a`))</Value1>
-        <Value2>$([MSBuild]::ValueOrDefault(`b`, `$(Value1)`))</Value2>
+        <Value1>$([MSBuild]::ValueOrDefault('$(UndefinedValue)', 'a'))</Value1>
+        <Value2>$([MSBuild]::ValueOrDefault('b', '$(Value1)'))</Value2>
     </PropertyGroup>
 
     <Target Name="MyTarget">
