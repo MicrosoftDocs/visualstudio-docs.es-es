@@ -16,10 +16,10 @@
   items:
     - name: Instalar Visual Studio
       href: install/install-visual-studio.md
-    - name: Cuentas
+    - name: Cuentas de personalización
       items:
         - name: Iniciar sesión en Visual Studio
-          displayName: peronalization accounts
+          displayName: personalization accounts
           href: ide/signing-in-to-visual-studio.md
         - name: Trabajar con varias cuentas de usuario
           href: ide/work-with-multiple-user-accounts.md
@@ -43,15 +43,13 @@
       href: install/update-visual-studio.md
     - name: Modificar Visual Studio
       href: install/modify-visual-studio.md
-    - name: Instalar el visor de la Ayuda
-      href: help-viewer/installation.md
     - name: Repare Visual Studio.
       href: install/repair-visual-studio.md
     - name: Desinstalar Visual Studio
       href: install/uninstall-visual-studio.md
     - name: Guía del administrador de Visual Studio
       items:
-        - name: Guía del administrador
+        - name: Información general
           href: install/visual-studio-administrator-guide.md
         - name: Usar la línea de comandos
           items:
@@ -138,6 +136,8 @@
           href: install/advanced-build-tools-container.md
         - name: Problemas conocidos de contenedores
           href: install/build-tools-container-issues.md
+    - name: Instalar el visor de la Ayuda
+      href: help-viewer/installation.md
 - name: Guías de inicio rápido
   items:
     - name: Orientación de Visual Studio

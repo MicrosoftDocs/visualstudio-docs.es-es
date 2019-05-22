@@ -101,6 +101,7 @@ f1_keywords:
 - CA1504
 - CA1505
 - CA1506
+- CA1507
 - CA1600
 - CA1601
 - CA1700
@@ -259,12 +260,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ad553cc46f9681ba5a13437960e77b221d330e36
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fabb7a7d0e13218532da40ce15d0f2661875b15e
+ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62809456"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65976171"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>Advertencias de análisis de código para código administrado por CheckId
 
@@ -277,7 +278,7 @@ En la tabla siguiente se enumeran las advertencias de análisis de código para 
 | CA1002 | [CA1002: No exponer listas genéricas](../code-quality/ca1002-do-not-expose-generic-lists.md) | System.Collections.Generic.List < (de \<(T >) >) es una colección genérica diseñada para el rendimiento, no para la herencia. Por consiguiente, List no contiene ningún miembro virtual. En su lugar, se debe exponer las colecciones genéricas diseñadas para herencia. |
 | CA1003 | [CA1003: Utilizar instancias de controlador de eventos genéricos](../code-quality/ca1003-use-generic-event-handler-instances.md) |Un tipo contiene un delegado que devuelve void cuya firma contiene dos parámetros (el primero un objeto y el segundo un tipo asignable a EventArgs), y el ensamblado que contiene tiene como destino Microsoft .NET Framework 2.0. |
 | CA1004 | [CA1004: Métodos genéricos deben proporcionar un parámetro de tipo](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md) | La inferencia es el modo en que se determina el argumento de tipo de un método genérico partiendo del tipo de argumento pasado al método, en lugar de especificar directamente el argumento de tipo. Para habilitar la inferencia, la firma de parámetro de un método genérico debe incluir un parámetro del mismo tipo que el parámetro type del método. En este caso, no es necesario especificar el argumento de tipo. Cuando se utiliza la inferencia para todos los parámetros de tipo, la sintaxis para llamar a los métodos de instancia genéricos y no genéricos es la misma; esto simplifica la capacidad de uso de los métodos genéricos. |
-| CA1005 | [CA1005: Evite parámetros excesivos en tipos genéricos](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md) | Cuantos más parámetros de tipo contenga un tipo genérico, más difícil resulta saber y recordar qué representa cada uno de ellos. Suele ser evidente con un parámetro de tipo, como en la lista\<T > y en algunos casos con dos parámetros de tipo, como en Dictionary\<TKey, TValue >. Sin embargo, si hay más de dos parámetros de tipo, la dificultad se vuelve demasiado grande para la mayoría de los usuarios. |
+| CA1005 | [CA1005: Evite parámetros excesivos en tipos genéricos](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md) | Cuantos más parámetros type contenga un tipo genérico, más difícil resulta saber y recordar qué representa cada uno de ellos. Suele ser evidente con un parámetro de tipo, como en la lista\<T > y en algunos casos con dos parámetros de tipo, como en Dictionary\<TKey, TValue >. Sin embargo, si hay más de dos parámetros de tipo, la dificultad se vuelve demasiado grande para la mayoría de los usuarios. |
 | CA1006 | [CA1006: No anidar tipos genéricos en firmas de miembro](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md) | Un argumento de tipo anidado es un argumento de tipo que también es un tipo genérico. Para llamar a un miembro cuya firma contenga un argumento de tipo anidado, el usuario debe crear instancias de un tipo genérico y pasar este tipo al constructor de un segundo tipo genérico. El procedimiento y la sintaxis necesarios para ello son complejos, por lo que es preferible evitarlo. |
 | CA1007 |[CA1007: Utilizar valores genéricos cuando sea apropiado](../code-quality/ca1007-use-generics-where-appropriate.md) | Un método visible externamente contiene un parámetro de referencia de tipo System.Object. El uso de un método genérico permite pasar al método todos los tipos, sujeto a las restricciones que puedan ser de aplicación, sin convertirlos antes al tipo del parámetro de referencia. |
 | CA1008 | [CA1008: Las enumeraciones deben tener el valor cero](../code-quality/ca1008-enums-should-have-zero-value.md) | El valor predeterminado de una enumeración no inicializada, igual que otros tipos de valor, es cero. Una enumeración con atributo y sin marcadores debería definir un miembro con el valor de cero de modo que el valor predeterminado sea un valor válido de la enumeración. Si una enumeración a la que se le haya aplicado el atributo FlagsAttribute define un miembro con valor cero, su nombre debe ser "None" para indicar que no se han establecido valores en la enumeración. |
@@ -361,7 +362,7 @@ En la tabla siguiente se enumeran las advertencias de análisis de código para 
 | CA1415 | [CA1415: Declare los elementos P/Invoke correctamente](../code-quality/ca1415-declare-p-invokes-correctly.md) | Esta regla busca declaraciones de método de invocación de sistema operativo dirigidas a funciones de [!INCLUDE[TLA2#tla_win32](../code-quality/includes/tla2sharptla_win32_md.md)] que tengan un puntero a un parámetro de estructura OVERLAPPED y el parámetro administrado correspondiente no es un puntero para una estructura System.Threading.NativeOverlapped. |
 | CA1500 | [CA1500: Los nombres de variable no deben coincidir con los nombres de campo](../code-quality/ca1500-variable-names-should-not-match-field-names.md) | Un método de instancia declara un parámetro o una variable local cuyo nombre coincide con un campo de instancia del tipo declarativo, lo que da lugar a errores. |
 | CA1501 | [CA1501: Evite una herencia excesiva](../code-quality/ca1501-avoid-excessive-inheritance.md) | Un tipo tiene más de cuatro niveles de profundidad en su jerarquía de herencia. Las jerarquías de tipos con demasiados niveles de anidación pueden resultar difíciles de seguir, comprender y mantener. |
-| CA1502 | [CA1502: Evite la excesiva complejidad](../code-quality/ca1502-avoid-excessive-complexity.md) | Esta regla mide el número de rutas de acceso independientes de forma lineal a través del método, que es determinado por el número y la complejidad de ramas condicionales. |
+| CA1502 | [CA1502: Evite la excesiva complejidad](../code-quality/ca1502-avoid-excessive-complexity.md) | Esta regla mide el número de rutas de acceso independientes de forma lineal a través del método, que es determinado por el número y la complejidad de bifurcaciones condicionales. |
 | CA1504 | [CA1504: Revise los nombres de campos erróneos](../code-quality/ca1504-review-misleading-field-names.md) | El nombre de un campo de instancia empieza por "s_" o el nombre de un campo estático de (Shared en Visual Basic) empieza por "m_". |
 | CA1505 | [CA1505: Evitar el código](../code-quality/ca1505-avoid-unmaintainable-code.md) | Un tipo o método tiene un valor del índice de mantenimiento bajo. Un índice de mantenimiento bajo indica que un tipo o método resulta probablemente difícil de mantener y se debería volver a diseñar. |
 | CA1506 |[CA1506: Evite el acoplamiento excesivo de clases](../code-quality/ca1506-avoid-excessive-class-coupling.md) | Esta regla mide el acoplamiento de clase contando el número de referencias de tipo únicas que contiene un tipo o método. |
@@ -410,7 +411,7 @@ En la tabla siguiente se enumeran las advertencias de análisis de código para 
 | CA1823 | [CA1823: Evitar los campos privados sin utilizar](../code-quality/ca1823-avoid-unused-private-fields.md) | Se detectaron campos privados a los que no parece que se tenga acceso en el ensamblado. |
 | CA1824 |[CA1824: Marque los ensamblados con NeutralResourcesLanguageAttribute](../code-quality/ca1824-mark-assemblies-with-neutralresourceslanguageattribute.md) | El atributo NeutralResourcesLanguage informa al administrador de recursos del idioma que se usa para mostrar los recursos de una referencia cultural neutra para un ensamblado. Esto mejora el rendimiento de la búsqueda del primer recurso que se carga y puede reducir el espacio de trabajo. |
 | CA1900 | [CA1900: Campos de tipo de valor deberían ser portátiles](../code-quality/ca1900-value-type-fields-should-be-portable.md) | Esta regla comprueba que las estructuras declaradas mediante un atributo de diseño explícito se alinearán correctamente cuando se calculen las referencias al código no administrado en sistemas operativos de 64 bits. |
-| CA1901 | [CA1901: Las declaraciones P/Invoke deben ser portátiles](../code-quality/ca1901-p-invoke-declarations-should-be-portable.md) | Esta regla evalúa el tamaño de cada parámetro y el valor devuelto de P/Invoke, y comprueba que el tamaño del parámetro sea correcto al calcular las referencias para su conversión en código no administrado en sistemas operativos de 32 y 64 bits. |
+| CA1901 | [CA1901: Las declaraciones P/Invoke deben ser portátiles](../code-quality/ca1901-p-invoke-declarations-should-be-portable.md) | Esta regla evalúa el tamaño de cada parámetro y el valor devuelto de P/Invoke, y comprueba que el tamaño del parámetro sea correcto al serializar para su conversión en código no administrado en sistemas operativos de 32 y 64 bits. |
 | CA1903 | [CA1903: Usar solo API de .NET framework de destino](../code-quality/ca1903-use-only-api-from-targeted-framework.md) | Un miembro o tipo utiliza un miembro o tipo que se introdujo en un Service Pack no incluido junto con la versión de .NET Framework de destino del proyecto. |
 | CA2000 | [CA2000: Eliminar objetos antes de perder el ámbito](../code-quality/ca2000-dispose-objects-before-losing-scope.md) | Dado que podría producirse un evento excepcional que evitaría que el finalizador de un objeto se ejecutase, el objeto debe estar disponible en su lugar antes de que todas las referencias a él estén fuera del ámbito. |
 | CA2001 | [CA2001: Evite llamar a métodos problemáticos](../code-quality/ca2001-avoid-calling-problematic-methods.md) | Un miembro llama a un método potencialmente peligroso o problemático. |
