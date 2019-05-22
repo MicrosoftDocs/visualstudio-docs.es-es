@@ -14,17 +14,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 74c1a5202b05b3ffe6f9b6c5b24804fb259287c4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 009422eaf9ac81af6e8f9d48732655b2528c85a0
+ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825343"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65976143"
 ---
-# <a name="reliability-warnings"></a>advertencias de confiabilidad
-Advertencias de confiabilidad admiten la confiabilidad de la biblioteca y aplicación, como el uso de memoria y subproceso correcto.
+# <a name="reliability-warnings"></a>Advertencias de confiabilidad
 
-## <a name="in-this-section"></a>En esta sección
+Advertencias de confiabilidad admiten la confiabilidad de la biblioteca y aplicación, como el uso de memoria y subproceso correcto. Las reglas de confiabilidad se incluyen:
 
 |Regla|Descripción|
 |----------|-----------------|
@@ -34,3 +33,4 @@ Advertencias de confiabilidad admiten la confiabilidad de la biblioteca y aplica
 |[CA2003: No tratar fibras como subprocesos](../code-quality/ca2003-do-not-treat-fibers-as-threads.md)|Un subproceso administrado se trata como un subproceso de Win32.|
 |[CA2004: Quite las llamadas a GC. KeepAlive](../code-quality/ca2004-remove-calls-to-gc-keepalive.md)|Si va a convertir al uso SafeHandle, quite todas las llamadas a GC. KeepAlive (objeto). En este caso, las clases no debe llamar a GC. Controla KeepAlive, suponiendo que no tienen un finalizador sino que dependen de SafeHandle para finalizar el sistema operativo para ellos.|
 |[CA2006: Utilizar SafeHandle para encapsular recursos nativos](../code-quality/ca2006-use-safehandle-to-encapsulate-native-resources.md)|El uso de IntPtr en código administrado podría indicar un posible problema para la seguridad y la confiabilidad. Todos los usos de IntPtr se deben revisar para determinar si se necesita utilizar en su lugar SafeHandle o una tecnología similar.|
+|[CA2007: No espera una tarea directamente](../code-quality/ca2007-do-not-directly-await-task.md)|Un método asincrónico [espera](/dotnet/csharp/language-reference/keywords/await) un <xref:System.Threading.Tasks.Task> directamente.|

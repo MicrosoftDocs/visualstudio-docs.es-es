@@ -8,19 +8,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: e54a031e69957579974e67af124b0e88a0d95abb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cf5b486e8298b6438b774481a839c0f6433cdbed
+ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62816616"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65975902"
 ---
 # <a name="extended-design-guidelines-rules-rule-set-for-managed-code"></a>Conjunto de reglas Reglas de directrices de diseño ampliadas para código administrado
+
 El conjunto de reglas reglas de directrices de diseño extendidas de Microsoft se expande en las reglas de directrices de diseño básicas para maximizar los problemas de facilidad de uso y mantenimiento que se notifican. Se pone especial énfasis en las directrices de nomenclatura. Considere incluir este conjunto de reglas si el proyecto incluye código de bibliotecas o si desea exigir los más altos estándares para escribir código fácil de mantener.
 
- Las reglas de directrices de diseño extendidas incluyen todas las reglas de directrices de diseño básicas de Microsoft. Las reglas de directrices de diseño básico incluye todas las reglas mínimas recomendadas de Microsoft. Para obtener más información, consulte [de conjunto de reglas de reglas de directrices de diseño básicas para código administrado](../code-quality/basic-design-guideline-rules-rule-set-for-managed-code.md) y [pravidel administra reglas recomendadas para código administrado](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)
+Las reglas de directrices de diseño extendidas incluyen todas las reglas de directrices de diseño básicas de Microsoft. Las reglas de directrices de diseño básico incluye todas las reglas mínimas recomendadas de Microsoft. Para obtener más información, consulte [de conjunto de reglas de reglas de directrices de diseño básicas para código administrado](../code-quality/basic-design-guideline-rules-rule-set-for-managed-code.md) y [pravidel administra reglas recomendadas para código administrado](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)
 
- En la tabla siguiente se describe todas las reglas en el conjunto de reglas reglas de directrices de diseño extendidas de Microsoft.
+En la tabla siguiente se describe todas las reglas en el conjunto de reglas reglas de directrices de diseño extendidas de Microsoft.
 
 |Regla|Descripción|
 |----------|-----------------|
