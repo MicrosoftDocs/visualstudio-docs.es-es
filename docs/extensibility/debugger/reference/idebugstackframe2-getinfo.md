@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1db085059b93eac4afd9f03ed17b5e267411a373
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 71bb25e93cc1a3f97e61e269270cd87a0bc36558
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458537"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66209966"
 ---
 # <a name="idebugstackframe2getinfo"></a>IDebugStackFrame2::GetInfo
 Obtiene una descripción del marco de pila.
@@ -44,17 +44,14 @@ int GetInfo ( 
 ```
 
 ## <a name="parameters"></a>Parámetros
- `dwFieldSpec`\
+`dwFieldSpec`\
+[in] Una combinación de marcas de la [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) enumeración que especifica qué campos de la `pFrameInfo` son parámetros que deben rellenarse.
 
- [in] Una combinación de marcas de la [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) enumeración que especifica qué campos de la `pFrameInfo` son parámetros que deben rellenarse.
+`nRadix`\
+[in] La base que se usará para dar formato a cualquier información numérica.
 
- `nRadix`\
-
- [in] La base que se usará para dar formato a cualquier información numérica.
-
- `pFrameInfo`\
-
- [out] Un [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) estructura que se rellena con la descripción del marco de pila.
+`pFrameInfo`\
+[out] Un [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) estructura que se rellena con la descripción del marco de pila.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

@@ -1,52 +1,53 @@
 ---
 title: IDebugProgram2::GetName | Microsoft Docs
-ms.date: 11/15/2016
-ms.prod: visual-studio-dev14
-ms.technology: vs-ide-sdk
+ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - IDebugProgram2::GetName
 helpviewer_keywords:
 - IDebugProgram2::GetName
 ms.assetid: a54cbf13-b3e3-4c9f-8b8d-13573232dfb0
-caps.latest.revision: 11
+author: gregvanl
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a9ec8a234e46fade2b58454d3f4cf8c4ff669564
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.workload:
+- vssdk
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 2f7faa4b864824a46e30f05f6465eee30f4a3e16
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62917228"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66210188"
 ---
 # <a name="idebugprogram2getname"></a>IDebugProgram2::GetName
-[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+Obtiene el nombre del programa.
 
-Obtiene el nombre del programa.  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```cpp#  
-HRESULT GetName(   
-   BSTR* pbstrName  
-);  
-```  
-  
-```csharp  
-int GetName(   
-   out string pbstrName  
-);  
-```  
-  
-#### <a name="parameters"></a>Parámetros  
- `pbstrName`  
- [out] Devuelve el nombre del programa.  
-  
-## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.  
-  
-## <a name="remarks"></a>Comentarios  
- El nombre devuelto por este método siempre es un nombre descriptivo, que se puede mostrar el usuario que describe el programa.  
-  
-## <a name="see-also"></a>Vea también  
- [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
+## <a name="syntax"></a>Sintaxis
+
+```cpp
+HRESULT GetName( 
+   BSTR* pbstrName
+);
+```
+
+```csharp
+int GetName( 
+   out string pbstrName
+);
+```
+
+## <a name="parameters"></a>Parámetros
+`pbstrName`\
+[out] Devuelve el nombre del programa.
+
+## <a name="return-value"></a>Valor devuelto
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
+
+## <a name="remarks"></a>Comentarios
+ El nombre devuelto por este método siempre es un nombre descriptivo, que se puede mostrar el usuario que describe el programa.
+
+## <a name="see-also"></a>Vea también
+- [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 21ae1d4c16ce422d2baed2bd71ab5d0aa8b92e0c
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: b087997fab72e71abf4380df6d5c03910d1a57eb
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457670"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212251"
 ---
 # <a name="idebugproperty3getstringchars"></a>IDebugProperty3::GetStringChars
 Recupera la cadena asociada a esta propiedad y lo almacena en un búfer proporcionado por el usuario.
@@ -45,18 +45,15 @@ int GetStringChars(
 
 ## <a name="parameters"></a>Parámetros
 `buflen`\
-
- [in] Número máximo de caracteres que puede contener el búfer proporcionado por el usuario.
+[in] Número máximo de caracteres que puede contener el búfer proporcionado por el usuario.
 
 `rgString`\
-
- [out] Devuelve la cadena.
+[out] Devuelve la cadena.
 
  [C++ solo], `rgString` es un puntero a un búfer que recibe los caracteres Unicode de la cadena. Este búfer debe ser al menos `buflen` caracteres (no bytes) de tamaño.
 
 `pceltFetched`\
-
- [out] Donde se devuelve el número de caracteres que realmente se almacenan en el búfer. (Puede ser `NULL` en C++.)
+[out] Donde se devuelve el número de caracteres que realmente se almacenan en el búfer. (Puede ser `NULL` en C++.)
 
 ## <a name="return-value"></a>Valor devuelto
 Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

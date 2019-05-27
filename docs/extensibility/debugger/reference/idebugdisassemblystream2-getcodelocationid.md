@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d8169d5ec4c212cbf09ff3273f0338b3e905d721
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 8aca9231f8b5024199e9ee2bc79cb2d33b31628c
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875793"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205009"
 ---
 # <a name="idebugdisassemblystream2getcodelocationid"></a>IDebugDisassemblyStream2::GetCodeLocationId
 Devuelve un identificador de ubicación de código para un contexto de código determinado.
@@ -38,14 +41,11 @@ int GetCodeLocationId( 
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `pCodeContext`
+## <a name="parameters"></a>Parámetros
+`pCodeContext`\
+[in] Un [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) objeto va a convertir en un identificador.
 
- [in] Un [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) objeto va a convertir en un identificador.
-
- `puCodeLocationId`
-
- [out] Devuelve el identificador de ubicación del código. Vea la sección Comentarios.
+`puCodeLocationId` [out] Devuelve el identificador de ubicación del código. Vea la sección Comentarios.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error. Devuelve `E_CODE_CONTEXT_OUT_OF_SCOPE` si el contexto de código es válido, pero fuera del ámbito.

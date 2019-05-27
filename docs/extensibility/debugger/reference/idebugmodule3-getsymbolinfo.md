@@ -13,12 +13,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c5fedebe6a8e411e09b527841bd0ded3854749ae
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 54aaa85909522122b97624ee7d65d4cbb0b51ddb
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62918849"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203046"
 ---
 # <a name="idebugmodule3getsymbolinfo"></a>IDebugModule3::GetSymbolInfo
 Recupera una lista de rutas de acceso que se buscan los símbolos, así como los resultados de búsqueda en cada ruta de acceso.
@@ -39,14 +42,12 @@ int GetSymbolInfo(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
-`dwFields`
+## <a name="parameters"></a>Parámetros
+`dwFields`\
+[in] Una combinación de marcas de la [SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md) enumeración que especifica qué campos de `pInfo` deben rellenarse.
 
- [in] Una combinación de marcas de la [SYMBOL_SEARCH_INFO_FIELDS](../../../extensibility/debugger/reference/symbol-search-info-fields.md) enumeración que especifica qué campos de `pInfo` deben rellenarse.
-
-`pInfo`
-
- [out] Un [MODULE_SYMBOL_SEARCH_INFO](../../../extensibility/debugger/reference/module-symbol-search-info.md) estructura cuyos miembros se va a rellenar con la información especificada. Si este es un valor null, este método devuelve `E_INVALIDARG`.
+`pInfo`\
+[out] Un [MODULE_SYMBOL_SEARCH_INFO](../../../extensibility/debugger/reference/module-symbol-search-info.md) estructura cuyos miembros se va a rellenar con la información especificada. Si este es un valor null, este método devuelve `E_INVALIDARG`.
 
 ## <a name="return-value"></a>Valor devuelto
 Si el método se realiza correctamente, devuelve `S_OK`; en caso contrario, devuelve un código de error.

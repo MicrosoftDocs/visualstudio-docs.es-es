@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e714e6b2028605eb9c820f904cedf9ed4c23eab8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 55bd03f114e56bacde5b035527a2da55d7258872
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62920398"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66200112"
 ---
 # <a name="idebugenumfieldgetvaluefromstring"></a>IDebugEnumField::GetValueFromString
 Este método devuelve el valor asociado con el nombre de una constante de enumeración.
@@ -38,14 +41,12 @@ int GetValueFromString(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `pszValue`
+## <a name="parameters"></a>Parámetros
+`pszValue`\
+[in] Cadena que especifica el nombre para el que se va a obtener el valor. Tenga en cuenta que en C++, esto es una cadena de caracteres anchos.
 
- [in] Cadena que especifica el nombre para el que se va a obtener el valor. Tenga en cuenta que en C++, esto es una cadena de caracteres anchos.
-
- `pValue`
-
- [out] Devuelve el valor numérico asociado.
+`pValue`\
+[out] Devuelve el valor numérico asociado.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE`, si el nombre no es parte de la enumeración o un código de error.

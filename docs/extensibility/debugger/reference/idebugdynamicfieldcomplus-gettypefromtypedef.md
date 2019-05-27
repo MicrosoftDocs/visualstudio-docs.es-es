@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe6226ddf0104f434dbd15c29f779a524de33422
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 89c9859bcb55fb60707ae6f77cdcf4331f24e033
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875400"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66207798"
 ---
 # <a name="idebugdynamicfieldcomplusgettypefromtypedef"></a>IDebugDynamicFieldCOMPlus::GetTypeFromTypeDef
 Recupera un tipo dado su token.
@@ -41,22 +44,18 @@ int GetTypeFromTypeDef(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `ulAppDomainID`
+## <a name="parameters"></a>Parámetros
+`ulAppDomainID`\
+[in] Identificador del dominio de aplicación.
 
- [in] Identificador del dominio de aplicación.
+`guidModule`\
+[in] Identificador único del módulo.
 
- `guidModule`
+`tokClass`\
+[in] Que representa el tipo de token.
 
- [in] Identificador único del módulo.
-
- `tokClass`
-
- [in] Que representa el tipo de token.
-
- `ppType`
-
- [out] Devuelve un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objeto que contiene el tipo.
+`ppType`\
+[out] Devuelve un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objeto que contiene el tipo.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

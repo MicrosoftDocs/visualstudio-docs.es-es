@@ -1,5 +1,5 @@
 ---
-title: 'Diseñador de flujo de trabajo: agregar parámetros y agregar cuadros de diálogo argumentos'
+title: 'Diseñador de flujo de trabajo: Agregar cuadros de diálogo parámetros de & Agregar argumentos'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: f9ad4828eb3103ebbd014420e71c23f5411d9729
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7acb273430ac2dea8bc1f95a5c9a6e5c1d45c6f5
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62993376"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177733"
 ---
 # <a name="add-parameters-and-add-arguments-dialog-boxes"></a>Cuadros de diálogo Agregar parámetros y Agregar argumentos
 
@@ -24,7 +24,7 @@ La tabla siguiente describen los elementos de interfaz de usuario de la **agrega
 |||
 |-|-|
 |**Dirección**|Especifica si el parámetro representa el flujo de datos en el método, fuera del método o ambos.|
-|**Tipo**|Nombre del tipo del nuevo parámetro.|
+|**Type**|Nombre del tipo del nuevo parámetro.|
 |**Valor**|Una expresión de Visual Basic que se usa para asignar un valor predeterminado para el nuevo parámetro|
 
 La tabla siguiente describen los elementos de interfaz de usuario de la **agregar argumentos** utilizado por el cuadro de diálogo el <xref:System.Activities.Statements.InvokeDelegate> diseñador:
@@ -33,5 +33,5 @@ La tabla siguiente describen los elementos de interfaz de usuario de la **agrega
 |-|-|
 |**Name**|Nombre del argumento.|
 |**Dirección**|Especifica si el argumento representa el flujo de datos en el delegado, fuera del delegado o ambos.|
-|**Tipo**|Nombre del tipo del nuevo argumento.|
+|**Type**|Nombre del tipo del nuevo argumento.|
 |**Valor**|El valor que se usará para esta instancia del argumento de delegado.|

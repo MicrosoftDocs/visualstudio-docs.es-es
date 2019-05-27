@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fc32ea0d07779f82bb741b99632ec16a950e5da2
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: fe8f9dafa4543148ed373295f9c694e7678491a9
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65223962"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66207166"
 ---
 # <a name="idebugsymbolprovidergetnamespacesusedataddress"></a>IDebugSymbolProvider::GetNamespacesUsedAtAddress
 Este método crea un enumerador para los espacios de nombres asociado a la dirección de depuración.
@@ -42,13 +42,11 @@ int GetNamespacesUsedAtAddress(
 ```
 
 ## <a name="parameters"></a>Parámetros
- `pAddress`\
+`pAddress`\
+[in] La dirección de depuración.
 
- [in] La dirección de depuración.
-
- `ppEnum`\
-
- [out] Devuelve un [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) enumerador para los espacios de nombres.
+`ppEnum`\
+[out] Devuelve un [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) enumerador para los espacios de nombres.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

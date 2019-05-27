@@ -14,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1225729ceb6d1a874f4ca5bedef287ababbdb962
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 12538409635675ad71ba2951297d3de90f389769
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457432"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66199732"
 ---
 # <a name="idebugsymbolproviderdirectgetcurrentmodulesinfo"></a>IDebugSymbolProviderDirect::GetCurrentModulesInfo
 Recupera información acerca de los módulos en el grupo de símbolos.
@@ -47,25 +47,20 @@ int GetCurrentModulesInfo(
 ```
 
 ## <a name="parameters"></a>Parámetros
- `pCount`\
+`pCount`\
+[in] Número de módulos de la `ppGuids` matriz.
 
- [in] Número de módulos de la `ppGuids` matriz.
+`ppGuids`\
+[in] Matriz que contiene los identificadores únicos para los módulos.
 
- `ppGuids`\
+`pADIds`\
+[in] Identificadores de los dominios de aplicación.
 
- [in] Matriz que contiene los identificadores únicos para los módulos.
+`pCurrentState`\
+[in] Estado actual del grupo de símbolos.
 
- `pADIds`\
-
- [in] Identificadores de los dominios de aplicación.
-
- `pCurrentState`\
-
- [in] Estado actual del grupo de símbolos.
-
- `ppCDModItfs`\
-
- [out] Devuelve un objeto que contiene los módulos en el grupo de símbolos.
+`ppCDModItfs`\
+[out] Devuelve un objeto que contiene los módulos en el grupo de símbolos.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

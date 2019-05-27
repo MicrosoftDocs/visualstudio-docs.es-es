@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2de204f3d95147d3250e570fa785ecccf68b4634
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 363018d13cfeee1691881f4d8b814cdd0b2dfa35
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63412773"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212348"
 ---
 # <a name="idebugprogram2getencupdate"></a>IDebugProgram2::GetENCUpdate
 Este método obtiene la actualización de editar y continuar (ENC) para este programa. Un motor de depuración siempre devuelve `E_NOTIMPL`.
@@ -36,10 +39,9 @@ int GetENCUpdate(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `ppUpdate`
-
- [out] Devuelve una interfaz interna que puede usarse para actualizar este programa.
+## <a name="parameters"></a>Parámetros
+`ppUpdate`\
+[out] Devuelve una interfaz interna que puede usarse para actualizar este programa.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

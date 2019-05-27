@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a0f9097ae2db70f3743eb703bd6c654c4e464882
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: ca6afee5cce069b212a2f1a88335d2fbce2e0427
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65224111"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66206892"
 ---
 # <a name="idebugsymbolsearchevent2getsymbolsearchinfo"></a>IDebugSymbolSearchEvent2::GetSymbolSearchInfo
 Llama a un controlador de eventos para recuperar los resultados de un proceso de carga de símbolos.
@@ -44,20 +44,17 @@ int GetSymbolSearchInfo(
 ```
 
 ## <a name="parameters"></a>Parámetros
- `pModule`\
+`pModule`\
+[out] Un objeto IDebugModule3 que representa el módulo para el que se han cargado los símbolos.
 
- [out] Un objeto IDebugModule3 que representa el módulo para el que se han cargado los símbolos.
-
- `pbstrDebugMessage`\
-
- [in, out] Devuelve una cadena que contiene los mensajes de error del módulo. Si no hay ningún error, a continuación, esta cadena solo contendrá el nombre del módulo, pero nunca está vacía.
+`pbstrDebugMessage`\
+[in, out] Devuelve una cadena que contiene los mensajes de error del módulo. Si no hay ningún error, a continuación, esta cadena solo contendrá el nombre del módulo, pero nunca está vacía.
 
 > [!NOTE]
 > [C++] `pbstrDebugMessage` no puede ser `NULL` y debe liberarse con `SysFreeString`.
 
- `pdwModuleInfoFlags`\
-
- [out] Una combinación de marcas de la [MODULE_INFO_FLAGS](../../../extensibility/debugger/reference/module-info-flags.md) enumeración que indica si se han cargado los símbolos.
+`pdwModuleInfoFlags`\
+[out] Una combinación de marcas de la [MODULE_INFO_FLAGS](../../../extensibility/debugger/reference/module-info-flags.md) enumeración que indica si se han cargado los símbolos.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

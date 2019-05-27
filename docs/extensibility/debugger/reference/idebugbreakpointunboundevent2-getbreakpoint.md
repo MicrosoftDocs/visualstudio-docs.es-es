@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 510ffebfd1bbff116b4899663baac7cf6f1087d3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 0a6dbb866e72dcdb0993b4739ba34b5fda29e403
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62923107"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66210018"
 ---
 # <a name="idebugbreakpointunboundevent2getbreakpoint"></a>IDebugBreakpointUnboundEvent2::GetBreakpoint
 Obtiene el punto de interrupción se desvinculó.
@@ -36,10 +39,9 @@ int GetBreakpoint(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
-`ppBP`
-
- [out] Devuelve un [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) objeto que representa el punto de interrupción se desvinculó.
+## <a name="parameters"></a>Parámetros
+`ppBP`\
+[out] Devuelve un [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) objeto que representa el punto de interrupción se desvinculó.
 
 ## <a name="return-value"></a>Valor devuelto
 Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

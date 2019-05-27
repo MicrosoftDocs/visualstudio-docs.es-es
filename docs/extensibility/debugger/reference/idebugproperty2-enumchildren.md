@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e7158649ee3965127b5bdeba42619eaa676cfaa0
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: aed98522d98162c13d6cfbcbc61df2a989f35434
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458922"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211632"
 ---
 # <a name="idebugproperty2enumchildren"></a>IDebugProperty2::EnumChildren
 Recupera una lista de los elementos secundarios de la propiedad.
@@ -52,33 +52,26 @@ int EnumChildren ( 
 ```
 
 ## <a name="parameters"></a>Parámetros
- `dwFields`\
+`dwFields`\
+[in] Una combinación de marcas de la [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) enumeración que especifica qué campos de los enumerados [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) son estructuras que deben rellenarse.
 
- [in] Una combinación de marcas de la [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) enumeración que especifica qué campos de los enumerados [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) son estructuras que deben rellenarse.
+`dwRadix`\
+[in] Especifica la base que se usará para dar formato a cualquier información numérica.
 
- `dwRadix`\
+`guidFilter`\
+[in] GUID del filtro utilizado con el `dwAttribFilter` y `pszNameFilter` parámetros para seleccionar qué `DEBUG_PROPERTY_INFO` son elementos secundarios van a enumerar. Por ejemplo, `guidFilterLocals` filtros para las variables locales.
 
- [in] Especifica la base que se usará para dar formato a cualquier información numérica.
+`dwAttribFilter`\
+[in] Una combinación de marcas de la [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) enumeración que especifica qué tipo de objetos para enumerar, por ejemplo `DBG_ATTRIB_METHOD` para todos los métodos que podrían ser elementos secundarios de esta propiedad. Puede usar en combinación con la `guidFilter` y `pszNameFilter` parámetros.
 
- `guidFilter`\
+`pszNameFilter`\
+[in] El nombre del filtro utilizado con el `guidFilter` y `dwAttribFilter` parámetros para seleccionar qué `DEBUG_PROPERTY_INFO` son elementos secundarios van a enumerar. Por ejemplo, establecer este parámetro en los filtros "MyX" para todos los elementos secundarios con el nombre "MyX."
 
- [in] GUID del filtro utilizado con el `dwAttribFilter` y `pszNameFilter` parámetros para seleccionar qué `DEBUG_PROPERTY_INFO` son elementos secundarios van a enumerar. Por ejemplo, `guidFilterLocals` filtros para las variables locales.
+`dwTimeout`\
+[in] Especifica el tiempo máximo, en milisegundos para esperar antes de volver de este método. Use `INFINITE` para esperar indefinidamente.
 
- `dwAttribFilter`\
-
- [in] Una combinación de marcas de la [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) enumeración que especifica qué tipo de objetos para enumerar, por ejemplo `DBG_ATTRIB_METHOD` para todos los métodos que podrían ser elementos secundarios de esta propiedad. Puede usar en combinación con la `guidFilter` y `pszNameFilter` parámetros.
-
- `pszNameFilter`\
-
- [in] El nombre del filtro utilizado con el `guidFilter` y `dwAttribFilter` parámetros para seleccionar qué `DEBUG_PROPERTY_INFO` son elementos secundarios van a enumerar. Por ejemplo, establecer este parámetro en los filtros "MyX" para todos los elementos secundarios con el nombre "MyX."
-
- `dwTimeout`\
-
- [in] Especifica el tiempo máximo, en milisegundos para esperar antes de volver de este método. Use `INFINITE` para esperar indefinidamente.
-
- `ppEnum`\
-
- [out] Devuelve un [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) objeto que contiene una lista de las propiedades secundarias.
+`ppEnum`\
+[out] Devuelve un [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) objeto que contiene una lista de las propiedades secundarias.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve el código de error.

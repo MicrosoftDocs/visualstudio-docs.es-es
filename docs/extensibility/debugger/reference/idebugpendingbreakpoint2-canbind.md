@@ -13,12 +13,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 23c0db65c257547bd57e6382e6da806a852ea367
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ff32c9368cf3b608452eaba782196a2266f49a48
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62872233"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66209713"
 ---
 # <a name="idebugpendingbreakpoint2canbind"></a>IDebugPendingBreakpoint2::CanBind
 Determina si este punto de interrupción pendiente puede enlazar a una ubicación del código.
@@ -37,10 +40,9 @@ int CanBind ( 
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `ppErrorEnum`
-
- [out] Devuelve un [IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md) objeto que contiene una lista de [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) objetos si pueden producirse errores.
+## <a name="parameters"></a>Parámetros
+`ppErrorEnum`\
+[out] Devuelve un [IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md) objeto que contiene una lista de [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) objetos si pueden producirse errores.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK.` devuelve `S_FALSE` si no se puede enlazar el punto de interrupción, en cuyo caso los errores se devuelven por el `ppErrorEnum` parámetro. De lo contrario, devuelve un código de error. Devuelve `E_BP_DELETED` si se ha eliminado el punto de interrupción.

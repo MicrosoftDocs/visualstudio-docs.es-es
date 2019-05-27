@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e54a7f38eed85ffe2757b373de1af59e1aaa126b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 5b574e28ac0b42f065bfbf056188c655797e542b
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62842722"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66209337"
 ---
 # <a name="idebugpointerobjectsetbytes"></a>IDebugPointerObject::SetBytes
 Establece el valor señalado por una serie de bytes consecutivos.
@@ -42,22 +45,18 @@ int SetBytes(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `dwStart`
+## <a name="parameters"></a>Parámetros
+`dwStart`\
+[in] Posición de desplazamiento, en bytes, desde el principio del objeto que apunta.
 
- [in] Posición de desplazamiento, en bytes, desde el principio del objeto que apunta.
+`dwCount`\
+[in] El número de bytes para establecer.
 
- `dwCount`
+`pBytes`\
+[in] Una matriz de bytes que representa el nuevo valor. Este valor se almacena en el objeto, comenzando en el desplazamiento dado.
 
- [in] El número de bytes para establecer.
-
- `pBytes`
-
- [in] Una matriz de bytes que representa el nuevo valor. Este valor se almacena en el objeto, comenzando en el desplazamiento dado.
-
- `pdwBytes`
-
- [out] Devuelve que el número de bytes establecido realmente.
+`pdwBytes`\
+[out] Devuelve que el número de bytes establecido realmente.
 
 ## <a name="return-value"></a>Valor devuelto
  Si se realiza correctamente, devuelve S_OK; en caso contrario, devuelve un código de error.

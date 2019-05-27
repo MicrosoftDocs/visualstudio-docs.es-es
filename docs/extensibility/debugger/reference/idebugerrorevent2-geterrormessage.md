@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 95b94dca9ef948a07b5c6458a9c8c53c8612eddd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 55c36c6649b8ff2b1b0bebc57012970625a964b8
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62920162"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66199939"
 ---
 # <a name="idebugerrorevent2geterrormessage"></a>IDebugErrorEvent2::GetErrorMessage
 Devuelve información que permite la construcción de un mensaje de error legibles.
@@ -46,30 +49,24 @@ int GetErrorMessage(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `pMessageType`
+## <a name="parameters"></a>Parámetros
+`pMessageType`\
+[out] Devuelve un valor de la [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md) enumeración, que describe el tipo de mensaje.
 
- [out] Devuelve un valor de la [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md) enumeración, que describe el tipo de mensaje.
+`pbstrErrorFormat`\
+[out] El formato del mensaje al usuario final (vea "Comentarios" para obtener más información).
 
- `pbstrErrorFormat`
+`hrErrorReason`\
+[out] El código de error, el mensaje se trata.
 
- [out] El formato del mensaje al usuario final (vea "Comentarios" para obtener más información).
+`pdwType`\
+[out] Gravedad del error (usar las constantes MB_XXX para `MessageBox`; por ejemplo, `MB_EXCLAMATION` o `MB_WARNING`).
 
- `hrErrorReason`
+`pbstrHelpFileName`\
+[out] Ruta de acceso a un archivo de ayuda (establecida en un valor null si no hay ningún archivo de Ayuda).
 
- [out] El código de error, el mensaje se trata.
-
- `pdwType`
-
- [out] Gravedad del error (usar las constantes MB_XXX para `MessageBox`; por ejemplo, `MB_EXCLAMATION` o `MB_WARNING`).
-
- `pbstrHelpFileName`
-
- [out] Ruta de acceso a un archivo de ayuda (establecida en un valor null si no hay ningún archivo de Ayuda).
-
- `pdwHelpId`
-
- [out] Id. del tema de ayuda para mostrar (establecida en 0 si no hay ningún tema de Ayuda).
+`pdwHelpId`\
+[out] Id. del tema de ayuda para mostrar (establecida en 0 si no hay ningún tema de Ayuda).
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

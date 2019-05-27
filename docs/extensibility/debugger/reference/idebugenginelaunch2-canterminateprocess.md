@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6b4468af7b2b0cfd08e551839a9ab9c606c25df2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: f2e1d3ada2e5bf5f906d7c458a47e32f7e59c3c5
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62920618"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212592"
 ---
 # <a name="idebugenginelaunch2canterminateprocess"></a>IDebugEngineLaunch2::CanTerminateProcess
 Determina si se puede finalizar un proceso.
@@ -36,10 +39,9 @@ int CanTerminateProcess ( 
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `pProcess`
-
- [in] Un [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) objeto que representa el proceso que se finalice.
+## <a name="parameters"></a>Parámetros
+`pProcess`\
+[in] Un [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) objeto que representa el proceso que se finalice.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error. Devuelve `S_FALSE` si el motor no puede terminar el proceso, por ejemplo, porque se denegó el acceso.

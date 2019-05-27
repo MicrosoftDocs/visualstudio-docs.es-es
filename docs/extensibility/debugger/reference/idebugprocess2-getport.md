@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 753a384d4873aa6b78b06853213c57a1d540a5e3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a7885f43d10f2644071e993697b04024fea2bc40
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62917836"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66202594"
 ---
 # <a name="idebugprocess2getport"></a>IDebugProcess2::GetPort
 Obtiene el puerto que está ejecutando el proceso.
@@ -36,10 +39,9 @@ int GetPort( 
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `ppPort`
-
- [out] Devuelve un [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) objeto que representa el puerto en el que se inició el proceso.
+## <a name="parameters"></a>Parámetros
+`ppPort`\
+[out] Devuelve un [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) objeto que representa el puerto en el que se inició el proceso.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

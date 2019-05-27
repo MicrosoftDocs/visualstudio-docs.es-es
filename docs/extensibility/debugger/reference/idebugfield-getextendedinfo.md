@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0321dfbdc719d8e155bb1ee035032e2862bb90e0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: fc37cd9cff4956d000441a632f84a6155f9b9586
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62873857"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212217"
 ---
 # <a name="idebugfieldgetextendedinfo"></a>IDebugField::GetExtendedInfo
 Este método obtiene información sobre un campo adicional.
@@ -40,23 +43,20 @@ int GetExtendedInfo(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `guidExtendedInfo`
-
- [in] Selecciona la información que se va a devolver. Los valores válidos son:
+## <a name="parameters"></a>Parámetros
+`guidExtendedInfo`\
+[in] Selecciona la información que se va a devolver. Los valores válidos son:
 
 |Valor|Descripción|
 |-----------|-----------------|
 |`guidConstantValue`|El valor como una secuencia de bytes.|
 |`guidConstantType`|El tipo como una signatura de tipo.|
 
- `prgBuffer`
+`prgBuffer`\
+[out] Devuelve la información extendida.
 
- [out] Devuelve la información extendida.
-
- `pdwLen`
-
- [in, out] Devuelve el tamaño de la información extendida, en bytes.
+`pdwLen`\
+[in, out] Devuelve el tamaño de la información extendida, en bytes.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

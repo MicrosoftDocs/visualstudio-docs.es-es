@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7b74af8b93bb3b92d4673f40c06f0d9745ffb79c
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 94a9cde9f757194a51a15e2513260f7e8e3fd490
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226199"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66199470"
 ---
 # <a name="idebugthread2setthreadname"></a>IDebugThread2::SetThreadName
 Establece el nombre del subproceso.
@@ -40,9 +40,8 @@ int SetThreadName ( 
 ```
 
 ## <a name="parameters"></a>Parámetros
- `pszName`\
-
- [in] El nombre del subproceso.
+`pszName`\
+[in] El nombre del subproceso.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
