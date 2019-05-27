@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba458d72fe12ce402129f60059347cb28b102686
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 9835275df1f332e69b13d886ab79d68588699e9d
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62876387"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205828"
 ---
 # <a name="idebugcomplussymbolprovider2loadsymbolswithcormodule"></a>IDebugComPlusSymbolProvider2::LoadSymbolsWithCorModule
 Carga los símbolos a partir de depurar el **ICorDebugModule** objeto.
@@ -47,34 +50,27 @@ int LoadSymbolsWithCorModule(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
-`ulAppDomainID`
+## <a name="parameters"></a>Parámetros
+`ulAppDomainID`\
+[in] Identificador del dominio de aplicación.
 
- [in] Identificador del dominio de aplicación.
+`guidModule`\
+[in] Identificador único del módulo.
 
-`guidModule`
+`baseAddress`\
+[in] Dirección de memoria de base.
 
- [in] Identificador único del módulo.
+`pUnkMetadataImport`\
+[in] Objeto que contiene los metadatos de símbolos de depuración.
 
-`baseAddress`
+`pUnkCorDebugModule`\
+[in] Objeto que implementa el [ICorDebugModule (interfaz)](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).
 
- [in] Dirección de memoria de base.
+`bstrModuleName`\
+[in] Nombre del módulo.
 
-`pUnkMetadataImport`
-
- [in] Objeto que contiene los metadatos de símbolos de depuración.
-
-`pUnkCorDebugModule`
-
- [in] Objeto que implementa el [ICorDebugModule (interfaz)](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).
-
-`bstrModuleName`
-
- [in] Nombre del módulo.
-
-`bstrSymSearchPath`
-
- [in] Ruta de acceso para buscar el archivo de símbolos.
+`bstrSymSearchPath`\
+[in] Ruta de acceso para buscar el archivo de símbolos.
 
 ## <a name="return-value"></a>Valor devuelto
 Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

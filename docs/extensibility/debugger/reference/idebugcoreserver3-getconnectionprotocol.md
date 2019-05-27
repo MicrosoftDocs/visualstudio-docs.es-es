@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 230712dddc3359ab69894bab15b919f997cf40a4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ea4926a62a86e2be48255c7e9a655772c3842b78
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62921862"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205507"
 ---
 # <a name="idebugcoreserver3getconnectionprotocol"></a>IDebugCoreServer3::GetConnectionProtocol
 Devuelve un valor que indica el protocolo que se usa para comunicarse entre el servidor y el paquete de depuración.
@@ -36,10 +39,9 @@ int GetConnectionProtocol(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `pProtocol`
-
- [out] Devuelve uno de los valores de la [CONNECTION_PROTOCOL](../../../extensibility/debugger/reference/connection-protocol.md) enumeración.
+## <a name="parameters"></a>Parámetros
+`pProtocol`\
+[out] Devuelve uno de los valores de la [CONNECTION_PROTOCOL](../../../extensibility/debugger/reference/connection-protocol.md) enumeración.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve el código de error.

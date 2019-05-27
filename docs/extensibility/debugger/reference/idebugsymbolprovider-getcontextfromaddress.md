@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 62c24adcc94b6dff82d3529658b563f811745c28
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: a7697f22dc6c40b9b4e3de08bf6f27f0ed459482
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226540"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66207211"
 ---
 # <a name="idebugsymbolprovidergetcontextfromaddress"></a>IDebugSymbolProvider::GetContextFromAddress
 Este método asigna una dirección de depuración en un contexto de documento.
@@ -42,13 +42,11 @@ int GetContextFromAddress(
 ```
 
 ## <a name="parameters"></a>Parámetros
- `pAddress`\
+`pAddress`\
+[in] La dirección de depuración, tal como está representada por un [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interfaz.
 
- [in] La dirección de depuración, tal como está representada por un [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interfaz.
-
- `ppDocContext`\
-
- [out] Devuelve un contexto de documento tal como está representada por un [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) interfaz.
+`ppDocContext`\
+[out] Devuelve un contexto de documento tal como está representada por un [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) interfaz.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

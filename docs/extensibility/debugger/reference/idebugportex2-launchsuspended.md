@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a8d946097d7a8f50cab65b41aaef73654dfbd18a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: d554c4906867ca28cfab295ebea80cca15dcc879
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62918317"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66209017"
 ---
 # <a name="idebugportex2launchsuspended"></a>IDebugPortEx2::LaunchSuspended
 Inicia un archivo ejecutable.
@@ -50,38 +53,30 @@ int LaunchSuspended( 
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `pszExe`
+## <a name="parameters"></a>Parámetros
+`pszExe`\
+[in] El nombre del archivo ejecutable que se iniciará. Esto puede ser una ruta de acceso completa o relativa al directorio de trabajo especificado en el `pszDir` parámetro.
 
- [in] El nombre del archivo ejecutable que se iniciará. Esto puede ser una ruta de acceso completa o relativa al directorio de trabajo especificado en el `pszDir` parámetro.
+`pszArgs`\
+[in] Los argumentos para pasar al ejecutable. Puede ser un valor null si no hay ningún argumento.
 
- `pszArgs`
+`pszDir`\
+[in] El nombre del directorio de trabajo usando el archivo ejecutable. Puede ser un valor null si no se requiere ningún directorio de trabajo.
 
- [in] Los argumentos para pasar al ejecutable. Puede ser un valor null si no hay ningún argumento.
+`bstrEnv`\
+[in] Bloque de entorno de cadenas terminadas en null, seguido de un terminador NULL adicional.
 
- `pszDir`
+`hStdInput`\
+[in] Identificador de un flujo de entrada alternativo. Puede ser 0 si no se requiere la redirección.
 
- [in] El nombre del directorio de trabajo usando el archivo ejecutable. Puede ser un valor null si no se requiere ningún directorio de trabajo.
+`hStdOutput`\
+[in] Identificador de un flujo de salida alternativos. Puede ser 0 si no se requiere la redirección.
 
- `bstrEnv`
+`hStdError`\
+[in] Identificador de un flujo de salida de error alternativa. Puede ser 0 si no se requiere la redirección.
 
- [in] Bloque de entorno de cadenas terminadas en null, seguido de un terminador NULL adicional.
-
- `hStdInput`
-
- [in] Identificador de un flujo de entrada alternativo. Puede ser 0 si no se requiere la redirección.
-
- `hStdOutput`
-
- [in] Identificador de un flujo de salida alternativos. Puede ser 0 si no se requiere la redirección.
-
- `hStdError`
-
- [in] Identificador de un flujo de salida de error alternativa. Puede ser 0 si no se requiere la redirección.
-
- `ppPortProcess`
-
- [out] Devuelve un [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) objeto que representa el proceso iniciado.
+`ppPortProcess`\
+[out] Devuelve un [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) objeto que representa el proceso iniciado.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 22d0d31530c5b0b81f3a8e622893874efecfbea5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 9ea4ac391536575397cf45be0239ce1e94268349
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62922406"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205907"
 ---
 # <a name="idebugcomplussymbolprovider2loadsymbolsfromcallback"></a>IDebugComPlusSymbolProvider2::LoadSymbolsFromCallback
 Cargas de depuración de símbolos mediante el método de devolución de llamada especificadas.
@@ -47,34 +50,27 @@ int LoadSymbolsFromCallback(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
-`ulAppDomainID`
+## <a name="parameters"></a>Parámetros
+`ulAppDomainID`\
+[in] Identificador del dominio de aplicación.
 
- [in] Identificador del dominio de aplicación.
+`guidModule`\
+[in] Identificador único del módulo.
 
-`guidModule`
+`pUnkMetadataImport`\
+[in] Objeto que contiene los metadatos de símbolos.
 
- [in] Identificador único del módulo.
+`pUnkCorDebugModule`\
+[in] Objeto que implementa el [ICorDebugModule (interfaz)](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).
 
-`pUnkMetadataImport`
+`bstrModuleName`\
+[in] Nombre del módulo.
 
- [in] Objeto que contiene los metadatos de símbolos.
+`bstrSymSearchPath`\
+[in] Ruta de acceso para buscar el archivo de símbolos.
 
-`pUnkCorDebugModule`
-
- [in] Objeto que implementa el [ICorDebugModule (interfaz)](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).
-
-`bstrModuleName`
-
- [in] Nombre del módulo.
-
-`bstrSymSearchPath`
-
- [in] Ruta de acceso para buscar el archivo de símbolos.
-
-`pCallback`
-
- [in] Objeto que representa el método de devolución de llamada.
+`pCallback`\
+[in] Objeto que representa el método de devolución de llamada.
 
 ## <a name="return-value"></a>Valor devuelto
 Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

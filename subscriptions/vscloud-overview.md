@@ -7,16 +7,16 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Consiga Visual Studio Professional o Visual Studio Enterprise mes a mes o de forma anual sin contrato a largo plazo.
 searchscope: VS Subscription
-ms.openlocfilehash: 0f20db92099dfadadf710e9f3da24846b10406ac
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5927078aaf4001f569af9aafbc57575cf92fc980
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978902"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679312"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Adquirir suscripciones de nube de Visual Studio Professional y Visual Studio Enterprise
 
-Puede adquirir [suscripciones](https://visualstudio.microsoft.com/subscriptions/) de Visual Studio Professional y Visual Studio Enterprise en [Visual Studio Marketplace](https://marketplace.visualstudio.com). Estas suscripciones se denominan **"suscripciones en la nube"**.
+Puede adquirir [suscripciones](https://visualstudio.microsoft.com/subscriptions/) de Visual Studio Professional y Visual Studio Enterprise en [Visual Studio Marketplace](https://marketplace.visualstudio.com). Estas suscripciones se denominan **"suscripciones en la nube"** .
 
 [Comparación de las ventajas y los precios de las suscripciones de nube](https://visualstudio.microsoft.com/vs/pricing/).
 
@@ -113,10 +113,10 @@ R:  Los clientes no podrán adquirir nuevas suscripciones de nube anuales de Vis
 R:  Los clientes existentes no se verán afectados. Los clientes nuevos deberán decidir entre adquirir suscripciones mensuales de Visual Studio o ir a otro canal (por ejemplo, licencias por volumen) para hacerse con una suscripción de Visual Studio.
 
 #### <a name="q-what-if-i-want-to-increase-the-number-of-subscriptions-for-my-customers"></a>P: ¿Qué ocurre si quiero aumentar el número de suscripciones de mis clientes?
-R:  El administrador sigue teniendo la posibilidad de aumentar el número de suscripciones, yendo a [https://manage.visualstudio.com](https://manage.visualstudio.com) y siguiendo las instrucciones de este artículo para incrementar el número de suscripciones.
+R: Las suscripciones anuales adquiridas durante un mes determinado se cobran inmediatamente para un año completo y son válidas durante un año completo. Por ese motivo, el administrador solo puede modificar el número de licencias del mes actual de compra (son válidas durante un año y se cobran para un año). Fuera del mes de compra ya no es posible aumentar el número de suscripciones.
 
 #### <a name="q-what-if-i-want-to-decrease-the-number-of-subscriptions-for-my-customers"></a>P: ¿Qué ocurre si quiero reducir el número de suscripciones de mis clientes?
-R:  El administrador sigue teniendo la posibilidad de reducir el número de suscripciones, yendo a [https://manage.visualstudio.com](https://manage.visualstudio.com) y siguiendo las instrucciones de este artículo para reducir el número de suscripciones.
+R:  El administrador sigue teniendo la posibilidad de reducir el número de suscripciones, yendo a [https://manage.visualstudio.com](https://manage.visualstudio.com) y siguiendo las instrucciones de este artículo para reducir el número de suscripciones. El sistema **no** genera un crédito prorrateado. Para obtener un reembolso, tiene que ponerse en contacto con el equipo de facturación de Azure.
 
 #### <a name="q-if-my-customers-cancel-their-subscriptions-will-they-be-able-to-buy-more-annual-cloud-subscriptions-later"></a>P: Si mis clientes cancelan sus suscripciones, ¿podrán adquirir más suscripciones de nube anuales más adelante?
 R:  Aunque no puedan adquirir otra suscripción de nube anual, existen otras muchas opciones para adquirir suscripciones de Visual Studio.  Obtenga más información en [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/).

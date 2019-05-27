@@ -22,7 +22,8 @@
 ## [Crear proyectos](create-new-projects.md)
 ## [Agregar y quitar elementos del proyecto](add-and-remove-project-items.md)
 ## [Administrar propiedades de soluciones y proyectos](managing-solutions-and-project-properties.md)
-## [Administrar referencias en un proyecto](managing-references-in-a-project.md)
+## Administrar referencias en un proyecto
+### [Información general](managing-references-in-a-project.md)
 ### [Tutorial: Incluir un paquete NuGet en el proyecto](nuget-walkthrough.md)
 ## [Administrar recursos de la aplicación](managing-app-resources.md)
 ## [Cómo: abrir varias soluciones o instancias](open-multiple-solutions.md)
@@ -49,7 +50,8 @@
 ## [Acciones de compilación](build-actions.md)
 ## [Cómo: Establecimiento de varios proyectos de inicio](set-startup-projects.md)
 ## [Personalizar el sistema de compilación](customizing-build-system.md)
-## [Configuraciones](configurations.md)
+## Configuraciones
+### [Descripción de las configuraciones de compilación](configurations.md)
 ### [Crear y editar configuraciones](create-and-edit-configurations.md)
 
 # Control de versiones
@@ -67,14 +69,18 @@
 
 # Cargas de trabajo
 ## [Cargas de trabajo disponibles](workloads.md)
-## [ASP.NET Core](asp-net-core.md)
+## ASP.NET Core
+### [Compatibilidad de .NET Core](net-core-support.md)
+### [Creación de la primera aplicación de ASP.NET Core](asp-net-core.md)
 ### [Razor](razor.md)
 ### [JavaScript y TypeScript](javascript.md)
-## [Azure](azure-workload.md)
+## Azure
+### [Información general](azure-workload.md)
 ### [Introducción a Azure Functions](azure-functions.md)
 ### [Tutorial: Azure Functions](azure-functions-lab.md)
 ### [Servicios conectados](connected-services.md)
-## [Desarrollo de juegos de Unity](unity-tools.md)
+## Desarrollo de juegos de Unity
+### [Desarrollo de juegos de Unity](unity-tools.md)
 ### [Configuración](setup-vsmac-tools-unity.md)
 ### [Uso de herramientas de Unity](using-vsmac-tools-unity.md)
 ### [Uso de .NET 4.x en Unity](/visualstudio/cross-platform/unity-scripting-upgrade/?context=visualstudio/mac/context)

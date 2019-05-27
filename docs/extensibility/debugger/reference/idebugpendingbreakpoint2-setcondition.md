@@ -13,12 +13,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4a67286b4732436c2a680e13e90740ca9faff299
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 9824eb198a491e537500de23b03a2f218767200d
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62842768"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66209501"
 ---
 # <a name="idebugpendingbreakpoint2setcondition"></a>IDebugPendingBreakpoint2::SetCondition
 Establece o cambia la condición asociada con el punto de interrupción pendiente.
@@ -37,10 +40,9 @@ int SetCondition( 
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `bpCondition`
-
- [in] Un [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) estructura que especifica la condición que se va a establecer.
+## <a name="parameters"></a>Parámetros
+`bpCondition`\
+[in] Un [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) estructura que especifica la condición que se va a establecer.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

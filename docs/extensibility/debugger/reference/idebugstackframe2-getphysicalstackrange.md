@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 341a4d2da740d2907172fb7761dc0c18d13d1456
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: ac507c2eac00d025a36bed3e4c3461a6b3fab2f0
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457283"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212864"
 ---
 # <a name="idebugstackframe2getphysicalstackrange"></a>IDebugStackFrame2::GetPhysicalStackRange
 Obtiene una representación de dependiente de la máquina del intervalo de direcciones físicas asociado con un marco de pila.
@@ -42,13 +42,11 @@ int GetPhysicalStackRange ( 
 ```
 
 ## <a name="parameters"></a>Parámetros
- `paddrMin`\
+`paddrMin`\
+[out] Devuelve el menor dirección física asociada con este marco de pila.
 
- [out] Devuelve el menor dirección física asociada con este marco de pila.
-
- `paddrMax`\
-
- [out] Devuelve la dirección física más alta asociada con este marco de pila.
+`paddrMax`\
+[out] Devuelve la dirección física más alta asociada con este marco de pila.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

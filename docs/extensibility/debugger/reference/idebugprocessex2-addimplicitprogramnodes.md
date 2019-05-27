@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6203b12defbe70d3807508953d85f39ff725a746
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 411b0b40d6c47f240472c82f727d955dda8df2df
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62917609"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66204093"
 ---
 # <a name="idebugprocessex2addimplicitprogramnodes"></a>IDebugProcessEx2::AddImplicitProgramNodes
 Este método agrega un nodo de programa para cada motor de depuración (DE) especificado.
@@ -40,18 +43,15 @@ int AddImplicitProgramNodes(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `guidLaunchingEngine`
+## <a name="parameters"></a>Parámetros
+`guidLaunchingEngine`\
+[in] El `GUID` de una DE que se utiliza para iniciar programas (y se supone que para agregar sus propios nodos de programa).
 
- [in] El `GUID` de una DE que se utiliza para iniciar programas (y se supone que para agregar sus propios nodos de programa).
+`rgguidSpecificEngines`\
+[in] Matriz de `GUID`s de DEs para el programa que se agregarán los nodos.
 
- `rgguidSpecificEngines`
-
- [in] Matriz de `GUID`s de DEs para el programa que se agregarán los nodos.
-
- `celtSpecificEngines`
-
- [in] El número de `GUID`s en el `rgguidSpecificEngines` matriz.
+`celtSpecificEngines`\
+[in] El número de `GUID`s en el `rgguidSpecificEngines` matriz.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

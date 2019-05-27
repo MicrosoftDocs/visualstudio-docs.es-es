@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Obtenga información sobre la ventaja de CAST Highlight disponible en las suscripciones de Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: a96b314a22bf3036167b0d7b1bb6077edee01f59
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 852327a7bcedb93a9ac7d2644ee5e9ab1e182e42
+ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62947928"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65805344"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>Ventaja de CAST Highlight para suscripciones de Visual Studio
 
@@ -52,7 +52,7 @@ Los suscriptores de Visual Studio Enterprise pueden obtener una suscripción gra
    >
    > *Actualmente estamos revisando su solicitud de activación y acceso a CAST Highlight. Nos volveremos a poner en contacto con usted en un máximo de 48 horas.*
    >
-   > *Saludos,*
+   > *Saludos,* 
    > *Greg*
 
 Tras la aprobación de su solicitud, recibirá un segundo correo electrónico en el que se le confirmará la creación correcta de su cuenta y se le solicitará que haga clic en el vínculo de activación para completar el proceso de activación.
@@ -72,7 +72,7 @@ Tras la aprobación de su solicitud, recibirá un segundo correo electrónico en
    > - Tutorial de vídeo: [Configuración de la cartera](https://www.youtube.com/watch?v=MDm8ln4vuGE)
    > - Tutorial de vídeo: [Incorporación de las aplicaciones](https://www.youtube.com/watch?v=x-7Dsn3Rmw4)
    >
-   > *Saludos,*
+   > *Saludos,* 
    > *Greg*
 
    > [!NOTE]
@@ -107,6 +107,6 @@ Tras la aprobación de su solicitud, recibirá un segundo correo electrónico en
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-Si todavía no ha activado la ventaja de Azure que se incluye con su suscripción, visite [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) y haga clic en el icono de Azure en la categoría Herramientas para configurar su suscripción de Azure y canjear los créditos gratuitos de Azure.
+Si todavía no ha activado la ventaja de Azure incluida en la suscripción, visite [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) y haga clic en el icono de Azure de la categoría Herramientas para configurar la suscripción de Azure y canjear los créditos de Azure.
 
 Y no olvide consultar la demostración, el manual del usuario y los vídeos del tutorial que se mencionan en el correo electrónico de Greg.

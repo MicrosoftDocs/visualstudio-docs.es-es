@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c8a5c9a05525c55d35bb6e0033c5c2abcacbbc97
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 6250c06315c7b4e9437ecd577f961fb3f0ee7953
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458135"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66210104"
 ---
 # <a name="ipropertyproxyeesidecreatereplacementobject"></a>IPropertyProxyEESide::CreateReplacementObject
 Crea una copia de un objeto de datos específicos del evaluador de expresiones (EE).
@@ -42,13 +42,11 @@ int CreateReplacementObject(
 ```
 
 ## <a name="parameters"></a>Parámetros
- `dataIn`\
+`dataIn`\
+[in] Un [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) objeto contiene los datos que se va a copiar.
 
- [in] Un [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) objeto contiene los datos que se va a copiar.
-
- `dataOut`\
-
- [out] Devuelve un nuevo `IEEDataStorage` objeto.
+`dataOut`\
+[out] Devuelve un nuevo `IEEDataStorage` objeto.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

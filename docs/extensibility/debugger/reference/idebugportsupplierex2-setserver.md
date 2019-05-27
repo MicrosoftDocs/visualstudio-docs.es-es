@@ -10,12 +10,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ca63b2941fc0c607af93772c21ca874b3d6b9031
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 0e92ee346a5d503c004279df84bdd8aacc429337
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62871393"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66204250"
 ---
 # <a name="idebugportsupplierex2setserver"></a>IDebugPortSupplierEx2::SetServer
 Establece el servidor principal para el proveedor del puerto.
@@ -34,8 +37,9 @@ int SetServer(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `pServer` Server Core para establecer para el proveedor del puerto.
+## <a name="parameters"></a>Parámetros
+`pServer`\
+Server Core para establecer para el proveedor del puerto.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
