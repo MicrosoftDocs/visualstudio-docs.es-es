@@ -14,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1894c5488c6d9405f8b1d84ae2cb2d497fb0542b
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 4404e714156a058db18f5284cc7adc8f4a23d1c5
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226147"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66199287"
 ---
 # <a name="idebugwindowscomputerport2getcomputerinfo"></a>IDebugWindowsComputerPort2::GetComputerInfo
 Recupera información sobre el equipo en el que el depurador en ejecución.
@@ -39,9 +39,8 @@ public int GetComputerInfo(
 ```
 
 ## <a name="parameters"></a>Parámetros
- `pInfo`\
-
- [out] Referencia a una estructura que contiene la información del equipo.
+`pInfo`\
+[out] Referencia a una estructura que contiene la información del equipo.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

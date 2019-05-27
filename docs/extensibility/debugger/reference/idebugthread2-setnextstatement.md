@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0b6aca1ef95a8ae88301181955828f08c7c38bed
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 918b61856577ae730ca72f180e614ee3982c917b
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226709"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66199488"
 ---
 # <a name="idebugthread2setnextstatement"></a>IDebugThread2::SetNextStatement
 Establece el puntero de instrucción actual en el contexto de código dado.
@@ -42,12 +42,11 @@ int SetNextStatement ( 
 ```
 
 ## <a name="parameters"></a>Parámetros
- `pStackFrame`\
- Reservado para uso futuro; se establece en un valor null.
+`pStackFrame`\
+Reservado para uso futuro; se establece en un valor null.
 
- `pCodeContext`\
-
- [in] Un [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) objeto que describe la ubicación del código va a ejecutar y su contexto.
+`pCodeContext`\
+[in] Un [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) objeto que describe la ubicación del código va a ejecutar y su contexto.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error. En la tabla siguiente se muestra otros posibles valores.

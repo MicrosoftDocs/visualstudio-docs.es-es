@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8734d97dfc8bcd7be2b12ce657071597deaea7a8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 8c374cfa79b91d70895f94be4f1c3f28c5ac4c02
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62921625"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205173"
 ---
 # <a name="idebugcustomviewerdisplayvalue"></a>IDebugCustomViewer::DisplayValue
 Este método se llama para mostrar el valor especificado.
@@ -42,22 +45,18 @@ int DisplayValue(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `hwnd`
+## <a name="parameters"></a>Parámetros
+`hwnd`\
+[in] Ventana primaria
 
- [in] Ventana primaria
+`dwID`\
+[in] Identificador de los visores personalizados que admiten más de un tipo.
 
- `dwID`
+`pHostServices`\
+[in] Reservado. Siempre se establece en null.
 
- [in] Identificador de los visores personalizados que admiten más de un tipo.
-
- `pHostServices`
-
- [in] Reservado. Siempre se establece en null.
-
- `pDebugProperty`
-
- [in] Interfaz que puede usarse para recuperar el valor que se mostrará.
+`pDebugProperty`\
+[in] Interfaz que puede usarse para recuperar el valor que se mostrará.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve el código de error.

@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ef11fcb85e061d1ecb433a0b164e2252ee5d4bd1
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 62c7dca6e93554e4ec2f173c46f3840636f0b688
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65461170"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66204149"
 ---
 # <a name="ienumdebugthreads2getcount"></a>IEnumDebugThreads2::GetCount
 Devuelve el número de elementos de la enumeración.
@@ -40,9 +40,8 @@ int GetCount(
 ```
 
 ## <a name="parameters"></a>Parámetros
- `pcelt`\
-
- [out] Devuelve el número de elementos de la enumeración.
+`pcelt`\
+[out] Devuelve el número de elementos de la enumeración.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

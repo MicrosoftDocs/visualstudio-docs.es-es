@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0711860a4a251eaa82bd7d0ef8d62e0c8d6ddb26
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: fe67fc2eb43c58cec86dabeb81cc0f2be82721ff
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65225826"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66208323"
 ---
 # <a name="ienumdebugcustomattributesclone"></a>IEnumDebugCustomAttributes::Clone
 Crea un enumerador que contiene el mismo estado de enumeración que el enumerador actual.
@@ -40,9 +40,8 @@ int Clone(
 ```
 
 ## <a name="parameters"></a>Parámetros
- `ppEnum`\
-
- [out] Devuelve una copia de esta enumeración como un objeto independiente.
+`ppEnum`\
+[out] Devuelve una copia de esta enumeración como un objeto independiente.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

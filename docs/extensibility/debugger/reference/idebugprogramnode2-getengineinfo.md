@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c31d3a858af2886a27a51e22e131cb89b2234d6e
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 7ef0ce265bc63ce9a00fd748c50a338d52294557
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65459076"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211696"
 ---
 # <a name="idebugprogramnode2getengineinfo"></a>IDebugProgramNode2::GetEngineInfo
 Obtiene el nombre y el identificador del motor de depuración (DE) ejecuta un programa.
@@ -42,13 +42,11 @@ int GetEngineInfo(
 ```
 
 ## <a name="parameters"></a>Parámetros
- `pbstrEngine`\
+`pbstrEngine`\
+[out] Devuelve el nombre de la DE ejecutar el programa (C++-específico: Esto puede ser un puntero null que indica que el llamador no está interesado en el nombre del motor).
 
- [out] Devuelve el nombre de la DE ejecutar el programa (C++-específico: Esto puede ser un puntero null que indica que el llamador no está interesado en el nombre del motor).
-
- `pguidEngine`\
-
- [out] Devuelve el identificador único global de la DE ejecutar el programa (C++-específico: Esto puede ser un puntero null que indica que el llamador no está interesado en el GUID del motor).
+`pguidEngine`\
+[out] Devuelve el identificador único global de la DE ejecutar el programa (C++-específico: Esto puede ser un puntero null que indica que el llamador no está interesado en el GUID del motor).
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

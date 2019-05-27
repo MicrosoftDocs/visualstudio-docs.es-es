@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6f29a1d77e4bb56608750c1f277fc6d58b81c255
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 694732dd5e308ed1db13d70d0f8845b32794eae3
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62921124"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66207837"
 ---
 # <a name="idebugdynamicfieldcomplusgettypefromprimitive"></a>IDebugDynamicFieldCOMPlus::GetTypeFromPrimitive
 Recupera un tipo dado su tipo primitivo.
@@ -37,14 +40,12 @@ int GetTypeFromPrimitive(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `dwCorElementType`
+## <a name="parameters"></a>Parámetros
+`dwCorElementType`\
+[in] Valor de la [CorElementType (enumeración)](/dotnet/framework/unmanaged-api/metadata/corelementtype-enumeration) que representa el tipo primitivo.
 
- [in] Valor de la [CorElementType (enumeración)](/dotnet/framework/unmanaged-api/metadata/corelementtype-enumeration) que representa el tipo primitivo.
-
- `ppType`
-
- [out] Devuelve el [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) que representa el tipo.
+`ppType`\
+[out] Devuelve el [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) que representa el tipo.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

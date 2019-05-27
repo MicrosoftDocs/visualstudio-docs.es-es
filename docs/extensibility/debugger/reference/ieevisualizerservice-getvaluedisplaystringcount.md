@@ -14,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e401e009cd4119704e72dec09614ec013aa9eee0
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: cbd7bd7655769668ce2a279150f444fd196235fb
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65223551"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212598"
 ---
 # <a name="ieevisualizerservicegetvaluedisplaystringcount"></a>IEEVisualizerService::GetValueDisplayStringCount
 Recupera el número de cadenas de valor que se muestra en la propiedad especificada o el campo.
@@ -43,17 +43,14 @@ int GetValueDisplayStringCount (
 ```
 
 ## <a name="parameters"></a>Parámetros
- `displayKind`\
+`displayKind`\
+[in] Valor de la [DisplayKind](../../../extensibility/debugger/reference/displaykind.md) enumeración.
 
- [in] Valor de la [DisplayKind](../../../extensibility/debugger/reference/displaykind.md) enumeración.
+`propertyOrField`\
+[in] Un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interfaz que representa una propiedad o campo.
 
- `propertyOrField`\
-
- [in] Un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) interfaz que representa una propiedad o campo.
-
- `pcelt`\
-
- [out] Devuelve el número de cadenas de valor para mostrar.
+`pcelt`\
+[out] Devuelve el número de cadenas de valor para mostrar.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

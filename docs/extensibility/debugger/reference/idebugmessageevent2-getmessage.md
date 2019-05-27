@@ -13,12 +13,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6214d9240b51878d175496994831d767aa83375d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 00f0a1524a6c24b21dc9a167a7df286f60f48873
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62918740"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66210367"
 ---
 # <a name="idebugmessageevent2getmessage"></a>IDebugMessageEvent2::GetMessage
 Obtiene el mensaje que se mostrará.
@@ -45,26 +48,21 @@ int GetMessage( 
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `pMessageType`
+## <a name="parameters"></a>Parámetros
+`pMessageType`\
+[out] Devuelve un valor de la [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md) enumeración que describe el tipo del mensaje.
 
- [out] Devuelve un valor de la [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md) enumeración que describe el tipo del mensaje.
+`pbstrMessage`\
+[out] Devuelve el mensaje.
 
- `pbstrMessage`
+`pdwType`\
+[out] Devuelve el tipo del mensaje, utilizando las convenciones de Win32 `MessageBox` función. Consulte la [AfxMessageBox](/cpp/mfc/reference/cstring-formatting-and-message-box-display#afxmessagebox) función para obtener más información.
 
- [out] Devuelve el mensaje.
+`pbstrHelpFileName`\
+[in, out] Devuelve el nombre de archivo de ayuda. Puede ser un null (C++) o (C#) valor vacío si no hay ningún archivo de ayuda.
 
- `pdwType`
-
- [out] Devuelve el tipo del mensaje, utilizando las convenciones de Win32 `MessageBox` función. Consulte la [AfxMessageBox](/cpp/mfc/reference/cstring-formatting-and-message-box-display#afxmessagebox) función para obtener más información.
-
- `pbstrHelpFileName`
-
- [in, out] Devuelve el nombre de archivo de ayuda. Puede ser un null (C++) o (C#) valor vacío si no hay ningún archivo de ayuda.
-
- `pdwHelpId`
-
- [in, out] Devuelve el identificador de ayuda. Puede ser 0 si no hay ninguna ayuda asociada a este mensaje.
+`pdwHelpId`\
+[in, out] Devuelve el identificador de ayuda. Puede ser 0 si no hay ninguna ayuda asociada a este mensaje.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

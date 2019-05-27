@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cbbf0d91b344f1a45eb09d480eb631ac1a159046
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 4e56553a8598bb885f6752332f795ca8fe2a7484
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875924"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205392"
 ---
 # <a name="idebugcustomattributegetattributetypefield"></a>IDebugCustomAttribute::GetAttributeTypeField
 Obtiene el tipo de clase de atributo personalizado.
@@ -36,10 +39,9 @@ int GetAttributeTypeField(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `ppCAType`
-
- [out] Devuelve el [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) objeto que representa la clase de los cuales el atributo personalizado es una instancia.
+## <a name="parameters"></a>Parámetros
+`ppCAType`\
+[out] Devuelve el [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) objeto que representa la clase de los cuales el atributo personalizado es una instancia.
 
 ## <a name="return-value"></a>Valor devuelto
  Si se realiza correctamente, devuelve S_OK; en caso contrario, devuelve un código de error.

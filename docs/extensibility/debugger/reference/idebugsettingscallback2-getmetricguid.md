@@ -13,12 +13,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 49f30f6b5bb1231f6bcbd77097454ae7a73a7a2c
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 45dadc5d3292d989163df085e00f61207940d442
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458591"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212068"
 ---
 # <a name="idebugsettingscallback2getmetricguid"></a>IDebugSettingsCallback2::GetMetricGuid
 Recupera el identificador único de una métrica dado su nombre.
@@ -44,21 +44,17 @@ private int GetMetricGuid(
 ```
 
 ## <a name="parameters"></a>Parámetros
- `pszType`\
+`pszType`\
+[in] Tipo de la métrica.
 
- [in] Tipo de la métrica.
+`guidSection`\
+[in] Identificador único de la sección.
 
- `guidSection`\
+`pszMetric`\
+[in] Nombre de la métrica.
 
- [in] Identificador único de la sección.
-
- `pszMetric`\
-
- [in] Nombre de la métrica.
-
- `pguidValue`\
-
- [out] Devuelve el identificador único de la métrica.
+`pguidValue`\
+[out] Devuelve el identificador único de la métrica.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

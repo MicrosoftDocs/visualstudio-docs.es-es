@@ -1,57 +1,58 @@
 ---
 title: IDebugEnumField::GetStringFromValue | Microsoft Docs
-ms.date: 11/15/2016
-ms.prod: visual-studio-dev14
-ms.technology: vs-ide-sdk
+ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - IDebugEnumField::GetStringFromValue
 helpviewer_keywords:
 - IDebugEnumField::GetStringFromValue method
 ms.assetid: 5f95fd0c-fdce-497f-9f54-2ad8749494e9
-caps.latest.revision: 6
+author: gregvanl
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 98d7e976e0cd37ad1397666471c89da3d47d45d3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.workload:
+- vssdk
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 25becdae62dbdda78e04404528eeb099a4914265
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62920314"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212389"
 ---
 # <a name="idebugenumfieldgetstringfromvalue"></a>IDebugEnumField::GetStringFromValue
-[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+Este método obtiene el nombre de la constante de enumeración dada su valor.
 
-Este método obtiene el nombre de la constante de enumeración dada su valor.  
-  
-## <a name="syntax"></a>Sintaxis  
-  
-```cpp#  
-HRESULT GetStringFromValue(  
-   ULONGLONG value,  
-   BSTR*     pbstrValue  
-);  
-```  
-  
-```csharp  
-int GetStringFromValue(  
-   ulong      value,  
-   out string pbstrValue  
-);  
-```  
-  
-#### <a name="parameters"></a>Parámetros  
- `value`  
- [in] El valor para el que se va a obtener el nombre de la enumeración constante.  
-  
- `pbstrValue`  
- [out] Devuelve el nombre de la constante de enumeración.  
-  
-## <a name="return-value"></a>Valor devuelto  
- Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` si el valor no tiene asociado un nombre, o devuelve un código de error.  
-  
-## <a name="remarks"></a>Comentarios  
- Si hay más de un nombre asociado con el mismo valor, se devolverá el nombre definido en la enumeración.  
-  
-## <a name="see-also"></a>Vea también  
- [IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md)
+## <a name="syntax"></a>Sintaxis
+
+```cpp
+HRESULT GetStringFromValue(
+   ULONGLONG value,
+   BSTR*     pbstrValue
+);
+```
+
+```csharp
+int GetStringFromValue(
+   ulong      value,
+   out string pbstrValue
+);
+```
+
+## <a name="parameters"></a>Parámetros
+`value`\
+[in] El valor para el que se va a obtener el nombre de la enumeración constante.
+
+`pbstrValue`\
+[out] Devuelve el nombre de la constante de enumeración.
+
+## <a name="return-value"></a>Valor devuelto
+ Si es correcto, devuelve `S_OK`; en caso contrario, devuelve `S_FALSE` si el valor no tiene asociado un nombre, o devuelve un código de error.
+
+## <a name="remarks"></a>Comentarios
+ Si hay más de un nombre asociado con el mismo valor, se devolverá el nombre definido en la enumeración.
+
+## <a name="see-also"></a>Vea también
+- [IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md)

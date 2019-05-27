@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 90d56149d4e942c8fe5206fad3ce740f510a451d
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 8ce275d0875970fe23ed20d624df6d3b94489757
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458942"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211672"
 ---
 # <a name="idebugprogrampublisher2unpublishprogram"></a>IDebugProgramPublisher2::UnpublishProgram
 Hace que un programa disponible que se desea depurar.
@@ -40,9 +40,8 @@ int UnpublishProgram(
 ```
 
 ## <a name="parameters"></a>Parámetros
- `pDebuggeeInterface`\
-
- [in] Un `IUnknown` interfaz para el programa. Este es el mismo valor proporcionado a la [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) método e identifica el programa que se va a quitar (es decir, se usa como una cookie).
+`pDebuggeeInterface`\
+[in] Un `IUnknown` interfaz para el programa. Este es el mismo valor proporcionado a la [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) método e identifica el programa que se va a quitar (es decir, se usa como una cookie).
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

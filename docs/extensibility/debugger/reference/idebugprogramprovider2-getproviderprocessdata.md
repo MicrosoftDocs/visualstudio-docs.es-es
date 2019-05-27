@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f63b43c1e7e8035320c6d4c7b527e069904191a5
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: dc0884597454cf50cb5540d61b865dfe7686c25f
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65459008"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203774"
 ---
 # <a name="idebugprogramprovider2getproviderprocessdata"></a>IDebugProgramProvider2::GetProviderProcessData
 Recupera una lista de programas en ejecución desde un proceso especificado.
@@ -48,9 +48,8 @@ int GetProviderProcessData(
 ```
 
 ## <a name="parameters"></a>Parámetros
- `Flags`\
-
- [in] Una combinación de marcas de la [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md) enumeración. Las marcas siguientes son típicas para esta llamada:
+`Flags`\
+[in] Una combinación de marcas de la [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md) enumeración. Las marcas siguientes son típicas para esta llamada:
 
 |Marcar|Descripción|
 |----------|-----------------|
@@ -59,21 +58,17 @@ int GetProviderProcessData(
 |`PFLAG_ATTACHED_TO_DEBUGGEE`|Autor de llamada se adjunta a pero no se inicia el depurador.|
 |`PFLAG_GET_PROGRAM_NODES`|Llamador está solicitando una lista de nodos del programa va a devolver.|
 
- `pPort`\
+`pPort`\
+[in] El puerto que el proceso de llamada se ejecuta en.
 
- [in] El puerto que el proceso de llamada se ejecuta en.
+`processId`\
+[in] Un [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) estructura que contiene el identificador del proceso que contiene el programa en cuestión.
 
- `processId`\
+`EngineFilter`\
+[in] Una matriz de GUID para los motores de depuración asignado para depurar este proceso (se utilizarán para filtrar los programas que realmente se devuelven según lo que admiten los motores proporcionados; si no hay motores se especifican, se devolverá todos los programas).
 
- [in] Un [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) estructura que contiene el identificador del proceso que contiene el programa en cuestión.
-
- `EngineFilter`\
-
- [in] Una matriz de GUID para los motores de depuración asignado para depurar este proceso (se utilizarán para filtrar los programas que realmente se devuelven según lo que admiten los motores proporcionados; si no hay motores se especifican, se devolverá todos los programas).
-
- `pProcess`\
-
- [out] Un [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) estructura que se rellena con la información solicitada.
+`pProcess`\
+[out] Un [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) estructura que se rellena con la información solicitada.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5bbbbf620d9a5b78c098ec593dd20c57a18d79ee
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 0f3bca55ac7306b4b67e9456cf24e9a497fda422
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62918378"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66209145"
 ---
 # <a name="idebugport2getportsupplier"></a>IDebugPort2::GetPortSupplier
 Obtiene el proveedor del puerto para este puerto.
@@ -36,10 +39,9 @@ int GetPortSupplier( 
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `ppSupplier`
-
- [out] Devuelve un [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md) objeto representa el proveedor del puerto para un puerto.
+## <a name="parameters"></a>Parámetros
+`ppSupplier`\
+[out] Devuelve un [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md) objeto representa el proveedor del puerto para un puerto.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

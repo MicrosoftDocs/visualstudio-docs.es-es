@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c56ccea9847cc23e45f9877f3d331be723293ee7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: dbaaf27222754d4a68d7de6367a2c0d7a1a8be73
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62918917"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66210627"
 ---
 # <a name="idebugmanagedobjectsetfrommanagedobject"></a>IDebugManagedObject::SetFromManagedObject
 Establece el valor de la instancia del objeto de clase de valor de la instancia de la clase de valor que se proporciona como un parámetro.
@@ -36,10 +39,9 @@ int SetFromManagedObject(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `pManagedObject`
-
- [in] Una interfaz que representa el objeto administrado que contiene el nuevo valor.
+## <a name="parameters"></a>Parámetros
+`pManagedObject`\
+[in] Una interfaz que representa el objeto administrado que contiene el nuevo valor.
 
 ## <a name="return-value"></a>Valor devuelto
  Si se realiza correctamente, devuelve S_OK; en caso contrario, devuelve un código de error.

@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e863d6af1ed78fc0fe3c4d683386826708c39708
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: b395f49a8f222edb97e43610ae625fd154d8f320
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62922465"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66206118"
 ---
 # <a name="idebugcomplussymbolproviderreplacesymbols"></a>IDebugComPlusSymbolProvider::ReplaceSymbols
 Reemplaza los símbolos de depuración actual con los de la secuencia de datos especificada.
@@ -39,18 +42,15 @@ int ReplaceSymbols(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
-`ulAppDomainID`
+## <a name="parameters"></a>Parámetros
+`ulAppDomainID`\
+[in] Identificador del dominio de aplicación.
 
- [in] Identificador del dominio de aplicación.
+`guidModule`\
+[in] Identificador único del módulo.
 
-`guidModule`
-
- [in] Identificador único del módulo.
-
-`pStream`
-
- [in] Flujo de datos que contiene los símbolos nuevo.
+`pStream`\
+[in] Flujo de datos que contiene los símbolos nuevo.
 
 ## <a name="return-value"></a>Valor devuelto
 Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

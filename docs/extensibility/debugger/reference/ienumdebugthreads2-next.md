@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 05044241a1e5b708bffaa73fedd674cea7618715
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 8b6ed3f14bb916074455590699934c6d757ed049
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458163"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66210840"
 ---
 # <a name="ienumdebugthreads2next"></a>IEnumDebugThreads2::Next
 Devuelve el siguiente conjunto de elementos de la enumeración.
@@ -44,17 +44,14 @@ int Next(
 ```
 
 ## <a name="parameters"></a>Parámetros
- `celt`\
+`celt`\
+[in] El número de elementos que se va a recuperar. También especifica el tamaño máximo de la `rgelt` matriz.
 
- [in] El número de elementos que se va a recuperar. También especifica el tamaño máximo de la `rgelt` matriz.
+`rgelt`\
+[in, out] Matriz de [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) elementos que deben rellenarse.
 
- `rgelt`\
-
- [in, out] Matriz de [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) elementos que deben rellenarse.
-
- `pceltFetched`\
-
- [out] Devuelve el número de elementos realmente devueltos en `rgelt`.
+`pceltFetched`\
+[out] Devuelve el número de elementos realmente devueltos en `rgelt`.
 
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si podrían devolverse un menor que el número solicitado de elementos; de lo contrario, devuelve un código de error.

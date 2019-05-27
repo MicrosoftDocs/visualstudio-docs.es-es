@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e6c1bf5f210d9b37b35d43a393a25b1c9df44a7e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 8a1b714856811ccd9b8e95d074cfc95740e27e5f
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875891"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205518"
 ---
 # <a name="idebugcoreserver3enableautoattach"></a>IDebugCoreServer3::EnableAutoAttach
 Habilita la asociación automática para los motores de depuración especificado.
@@ -42,22 +45,18 @@ int EnableAutoAttach(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `rgguidSpecificEngines`
+## <a name="parameters"></a>Parámetros
+`rgguidSpecificEngines`\
+[in] Matriz de GUID para cada motor de depuración que se va a marcar como asociar en automático.
 
- [in] Matriz de GUID para cada motor de depuración que se va a marcar como asociar en automático.
+`celtSpecificEngines`\
+[in] El número de motores especificado en `rgguidSpecificEngines`.
 
- `celtSpecificEngines`
+`pszStartPageUrl`\
+[in] La dirección URL de inicio a usar al adjuntar en automático.
 
- [in] El número de motores especificado en `rgguidSpecificEngines`.
-
- `pszStartPageUrl`
-
- [in] La dirección URL de inicio a usar al adjuntar en automático.
-
- `pbstrSessionID`
-
- [out] Identificador de la sesión que estaba conectado a la automática.
+`pbstrSessionID`\
+[out] Identificador de la sesión que estaba conectado a la automática.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve el código de error. Un código de error es `E_AUTO_ATTACH_NOT_REGISTERED`, lo que indica que el generador de clases auto-attach no se ha registrado.

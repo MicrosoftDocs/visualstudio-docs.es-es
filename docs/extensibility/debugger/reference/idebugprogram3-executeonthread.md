@@ -10,12 +10,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4b148c884b7844595d02549f6ef46dad46748234
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 1edd974c934aab5fe3a5c3679190af5ce6039120
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62870147"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212569"
 ---
 # <a name="idebugprogram3executeonthread"></a>IDebugProgram3::ExecuteOnThread
 Ejecuta el programa de depurador. El subproceso se devuelve para proporcionar la información del depurador en el subproceso que el usuario está viendo cuando se ejecuta el programa.
@@ -33,10 +36,9 @@ int ExecuteOnThread(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `pThread`
-
- [in] Un [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) objeto.
+## <a name="parameters"></a>Parámetros
+`pThread`\
+[in] Un [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) objeto.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

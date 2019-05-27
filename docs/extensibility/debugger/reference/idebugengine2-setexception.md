@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 288e77ce539a26764a897656c79649720be2438e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 5146b730e6e58e99c22f73bd95cd500e5450ac06
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62920931"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66207556"
 ---
 # <a name="idebugengine2setexception"></a>IDebugEngine2::SetException
 Especifica cómo el motor de depuración (DE) debe controlar una excepción determinada.
@@ -36,10 +39,9 @@ int SetException( 
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `pException`
-
- [in] Un [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) estructura que describe la excepción y cómo depurarla.
+## <a name="parameters"></a>Parámetros
+`pException`\
+[in] Un [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) estructura que describe la excepción y cómo depurarla.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

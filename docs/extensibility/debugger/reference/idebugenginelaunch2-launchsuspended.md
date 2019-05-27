@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6cfdfb05d45996e87ea749dffa89915a175d9274
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 0ad964c4f9759368d6d687386274e221bb7cf73a
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62920705"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212467"
 ---
 # <a name="idebugenginelaunch2launchsuspended"></a>IDebugEngineLaunch2::LaunchSuspended
 Este método inicia un proceso mediante el motor de depuración (DE).
@@ -60,58 +63,45 @@ int LaunchSuspended(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `pszMachine`
+## <a name="parameters"></a>Parámetros
+`pszMachine`\
+[in] El nombre de la máquina en que se va a iniciar el proceso. Use un valor null para especificar el equipo local.
 
- [in] El nombre de la máquina en que se va a iniciar el proceso. Use un valor null para especificar el equipo local.
+`pPort`\
+[in] El [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) interfaz que representa el puerto que se ejecutará el programa.
 
- `pPort`
+`pszExe`\
+[in] El nombre del archivo ejecutable que se iniciará.
 
- [in] El [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) interfaz que representa el puerto que se ejecutará el programa.
+`pszArgs`\
+[in] Los argumentos para pasar al ejecutable. Puede ser un valor null si no hay ningún argumento.
 
- `pszExe`
+`pszDir`\
+[in] El nombre del directorio de trabajo usando el archivo ejecutable. Puede ser un valor null si no se requiere ningún directorio de trabajo.
 
- [in] El nombre del archivo ejecutable que se iniciará.
+`bstrEnv`\
+[in] Bloque de entorno de cadenas terminadas en NULL, seguido de un terminador NULL adicional.
 
- `pszArgs`
+`pszOptions`\
+[in] Las opciones para el archivo ejecutable.
 
- [in] Los argumentos para pasar al ejecutable. Puede ser un valor null si no hay ningún argumento.
+`dwLaunchFlags`\
+[in] Especifica el [LAUNCH_FLAGS](../../../extensibility/debugger/reference/launch-flags.md) para una sesión.
 
- `pszDir`
+`hStdInput`\
+[in] Identificador de un flujo de entrada alternativo. Puede ser 0 si no se requiere la redirección.
 
- [in] El nombre del directorio de trabajo usando el archivo ejecutable. Puede ser un valor null si no se requiere ningún directorio de trabajo.
+`hStdOutput`\
+[in] Identificador de un flujo de salida alternativos. Puede ser 0 si no se requiere la redirección.
 
- `bstrEnv`
+`hStdError`\
+[in] Identificador de un flujo de salida de error alternativa. Puede ser 0 si no se requiere la redirección.
 
- [in] Bloque de entorno de cadenas terminadas en NULL, seguido de un terminador NULL adicional.
+`pCallback`\
+[in] El [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) objeto que recibe los eventos del depurador.
 
- `pszOptions`
-
- [in] Las opciones para el archivo ejecutable.
-
- `dwLaunchFlags`
-
- [in] Especifica el [LAUNCH_FLAGS](../../../extensibility/debugger/reference/launch-flags.md) para una sesión.
-
- `hStdInput`
-
- [in] Identificador de un flujo de entrada alternativo. Puede ser 0 si no se requiere la redirección.
-
- `hStdOutput`
-
- [in] Identificador de un flujo de salida alternativos. Puede ser 0 si no se requiere la redirección.
-
- `hStdError`
-
- [in] Identificador de un flujo de salida de error alternativa. Puede ser 0 si no se requiere la redirección.
-
- `pCallback`
-
- [in] El [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) objeto que recibe los eventos del depurador.
-
- `ppDebugProcess`
-
- [out] Devuelve el resultado [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) objeto que representa el proceso iniciado.
+`ppDebugProcess`\
+[out] Devuelve el resultado [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) objeto que representa el proceso iniciado.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
