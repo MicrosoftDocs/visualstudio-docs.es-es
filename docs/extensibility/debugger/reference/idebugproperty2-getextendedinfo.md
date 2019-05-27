@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fa66f61c7e72f1c629fe664baf2c2a5dcc9631e2
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 7d9e2ff4b853baec5da19b4c62cffe4e86102736
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458893"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211598"
 ---
 # <a name="idebugproperty2getextendedinfo"></a>IDebugProperty2::GetExtendedInfo
 Obtiene información de la propiedad extendida.
@@ -42,13 +42,11 @@ int GetExtendedInfo ( 
 ```
 
 ## <a name="parameters"></a>Parámetros
- `guidExtendedInfo`\
+`guidExtendedInfo`\
+[in] GUID que determina el tipo de información extendida que se va a recuperar. Para obtener más información, vea la sección Comentarios.
 
- [in] GUID que determina el tipo de información extendida que se va a recuperar. Para obtener más información, vea la sección Comentarios.
-
- `pExtendedInfo`\
-
- [out] Devuelve un `VARIANT` (C++) o un objeto (C#) que se puede utilizar para recuperar la información de la propiedad extendida. Por ejemplo, podría devolver este parámetro una `IUnknown` interfaz que puede consultarse para una [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md) interfaz. Para obtener más información, vea la sección Comentarios.
+`pExtendedInfo`\
+[out] Devuelve un `VARIANT` (C++) o un objeto (C#) que se puede utilizar para recuperar la información de la propiedad extendida. Por ejemplo, podría devolver este parámetro una `IUnknown` interfaz que puede consultarse para una [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md) interfaz. Para obtener más información, vea la sección Comentarios.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve el código de error. Devuelve `S_GETEXTENDEDINFO_NO_EXTENDEDINFO` si no hay ninguna información adicional para recuperar.

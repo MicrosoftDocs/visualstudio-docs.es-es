@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 27acdda0dad152bcb18c4bef304b97190444c63d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: fc51b89061dca3c0d3026b391b8d6b0106421542
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63413151"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66202346"
 ---
 # <a name="idebugprocess3getencavailablestate"></a>IDebugProcess3::GetENCAvailableState
 Este método obtiene el estado actual de editar y continuar del proceso. Siempre debe devolver un proveedor de puerto personalizado `E_NOTIMPL`.
@@ -36,10 +39,9 @@ int GetENCAvailableState(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `pReason`
-
- [out] Un valor de la [EncUnavailableReason](../../../extensibility/debugger/reference/encunavailablereason.md) enumeración.
+## <a name="parameters"></a>Parámetros
+`pReason`\
+[out] Un valor de la [EncUnavailableReason](../../../extensibility/debugger/reference/encunavailablereason.md) enumeración.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve el código de error.

@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2ac7e834b948d663ea9b537b36720864f25fe94c
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: ff2e7583577f8626ed4cd1ad71e2c5a83d30eb00
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65225963"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66199596"
 ---
 # <a name="idebugthread2getthreadid"></a>IDebugThread2::GetThreadId
 Obtiene el identificador de subproceso del sistema.
@@ -41,8 +41,7 @@ int GetThreadId (
 
 ## <a name="parameters"></a>Parámetros
 `pdwThreadId`\
-
- [out] Devuelve el identificador de subproceso del sistema.
+[out] Devuelve el identificador de subproceso del sistema.
 
 ## <a name="return-value"></a>Valor devuelto
 Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 11af4b55aeb3dbc0f03c904d2d3e29fba4f6f7bb
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 0cb8e8a82a9f8e9fbc4bc73703748dae9010a23a
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65225709"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203427"
 ---
 # <a name="ienumdebugports2skip"></a>IEnumDebugPorts2::Skip
 Omite el número especificado de elementos.
@@ -40,9 +40,8 @@ int Skip(
 ```
 
 ## <a name="parameters"></a>Parámetros
- `celt`\
-
- [in] Número de elementos que se van a omitir.
+`celt`\
+[in] Número de elementos que se van a omitir.
 
 ## <a name="return-value"></a>Valor devuelto
  Si la operación se realiza correctamente, devuelve `S_OK`. Devuelve `S_FALSE` si `celt` es mayor que el número de elementos restantes; en caso contrario, devuelve un código de error.

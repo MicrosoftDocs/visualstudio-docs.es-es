@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e5bcbfe60284cb254054e66b9e03b5e0e31ce4b1
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 87818a12945e76f68ba3b96a7f90c38640a0aa39
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65224138"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66199254"
 ---
 # <a name="ieedatastoragegetsize"></a>IEEDataStorage::GetSize
 Devuelve el número de bytes que contiene este objeto.
@@ -40,9 +40,8 @@ int GetSize(
 ```
 
 ## <a name="parameters"></a>Parámetros
- `size`\
-
- [out] El número de bytes que contiene este objeto.
+`size`\
+[out] El número de bytes que contiene este objeto.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

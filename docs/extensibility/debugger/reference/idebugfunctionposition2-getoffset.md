@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 705bda0fa8d9795b93d4633dba62d67e9f458587
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 06bb466063ccb2788aaa4e094f0c9a5e8fc705f8
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62873779"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66200658"
 ---
 # <a name="idebugfunctionposition2getoffset"></a>IDebugFunctionPosition2::GetOffset
 Recupera la posición de la función en el documento de origen.
@@ -36,10 +39,9 @@ int GetOffset(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `pPosition`
-
- [in, out] Un [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) estructura que se rellena con la posición de la función en un documento.
+## <a name="parameters"></a>Parámetros
+`pPosition`\
+[in, out] Un [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) estructura que se rellena con la posición de la función en un documento.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

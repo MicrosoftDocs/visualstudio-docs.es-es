@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0b9ce3894af04b30c0f14c8d5afce8be920b1cae
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: d3871dbcbcc28eda37c294c33538466564f84906
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62876880"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66199804"
 ---
 # <a name="idebugbreakpointevent2enumbreakpoints"></a>IDebugBreakpointEvent2::EnumBreakpoints
 Crea un enumerador para todos los puntos de interrupción que se desencadena en la ubicación actual del código.
@@ -36,10 +39,9 @@ int EnumBreakpoints(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `ppEnum`
-
- [out] Devuelve un [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) objeto que enumera todos los puntos de interrupción asociadas con la ubicación actual del código.
+## <a name="parameters"></a>Parámetros
+`ppEnum`\
+[out] Devuelve un [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) objeto que enumera todos los puntos de interrupción asociadas con la ubicación actual del código.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

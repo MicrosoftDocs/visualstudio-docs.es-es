@@ -1,7 +1,7 @@
 ---
 title: Análisis de código de FxCop y analizadores de FxCop
 ms.date: 09/06/2018
-ms.topic: overview
+ms.topic: conceptual
 helpviewer_keywords:
 - code analysis FAQ
 author: gewarren
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ab7816e7e1472101f0e84c05a4975f19e3902e27
-ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
-ms.translationtype: HT
+ms.openlocfilehash: 0415617c5e4106b72cc713f4296b48e94427e6e5
+ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65613557"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "66037257"
 ---
 # <a name="frequently-asked-questions-about-fxcop-and-fxcop-analyzers"></a>Preguntas más frecuentes acerca de FxCop y analizadores de FxCop
 
@@ -48,6 +48,10 @@ Si ha instalado los analizadores de FxCop, pero sigue apareciendo la advertencia
 ```xml
 <RunCodeAnalysis>false</RunCodeAnalysis>
 ```
+
+## <a name="which-rules-have-been-ported-to-fxcop-analyzers"></a>¿Las reglas que se han trasladado a los analizadores de FxCop?
+
+Para obtener información sobre la que se han trasladado a reglas de análisis de código estático [analizadores de FxCop](install-fxcop-analyzers.md), consulte [estado del puerto de regla de Fxcop](fxcop-rule-port-status.md).
 
 ## <a name="see-also"></a>Vea también
 

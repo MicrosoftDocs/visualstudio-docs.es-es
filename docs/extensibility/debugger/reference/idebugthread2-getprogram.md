@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 44f673690341c6a20b250f401265fe2db9fd5727
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 962a73c20e324b28a27b7cadb2459d3000fed2b7
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65224098"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66199610"
 ---
 # <a name="idebugthread2getprogram"></a>IDebugThread2::GetProgram
 Obtiene el programa en el que se está ejecutando un subproceso.
@@ -40,9 +40,8 @@ int GetProgram ( 
 ```
 
 ## <a name="parameters"></a>Parámetros
- `ppProgram`\
-
- [out] Devuelve un [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) objeto que representa el programa se está ejecutando este subproceso en.
+`ppProgram`\
+[out] Devuelve un [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) objeto que representa el programa se está ejecutando este subproceso en.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

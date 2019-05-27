@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1276a1c1a076c624ffcfd78c3b7f9d09df2a6e01
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: b354c7c31f4633fd307f54954c5d5115436097d0
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65224015"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66207348"
 ---
 # <a name="idebugsymbolprovidergetaddressesfromposition"></a>IDebugSymbolProvider::GetAddressesFromPosition
 Este método asigna una posición de documento en una matriz de direcciones de depuración.
@@ -46,21 +46,17 @@ int GetAddressesFromPosition( 
 ```
 
 ## <a name="parameters"></a>Parámetros
- `pDocPos`\
+`pDocPos`\
+[in] La posición del documento.
 
- [in] La posición del documento.
+`fStatmentOnly`\
+[in] Si es TRUE, limita las direcciones de depuración para una sola instrucción.
 
- `fStatmentOnly`\
+`ppEnumBegAddresses`\
+[out] Devuelve un enumerador para las direcciones iniciales de depuración asociados con esta instrucción o línea.
 
- [in] Si es TRUE, limita las direcciones de depuración para una sola instrucción.
-
- `ppEnumBegAddresses`\
-
- [out] Devuelve un enumerador para las direcciones iniciales de depuración asociados con esta instrucción o línea.
-
- `ppEnumEndAddresses`\
-
- [out] Devuelve un [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md) enumerador para las direcciones de depuración final asociado a esta instrucción o línea.
+`ppEnumEndAddresses`\
+[out] Devuelve un [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md) enumerador para las direcciones de depuración final asociado a esta instrucción o línea.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9dc3185b644a1045428ead9f2c9851916df3249c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: d226650592881e9e7f87a5fbf5c700dfd7d817cb
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62917037"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211147"
 ---
 # <a name="idebugprogramengines2enumpossibleengines"></a>IDebugProgramEngines2::EnumPossibleEngines
 Devuelve el GUID para todos los posibles motores de depuración (DE) que pueden depurar este programa.
@@ -40,18 +43,15 @@ int EnumPossibleEngines( 
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `celtBuffer`
+## <a name="parameters"></a>Parámetros
+`celtBuffer`\
+[in] El número de GUID de que se va a devolver. Esto también especifica el tamaño máximo de la `rgguidEngines` matriz.
 
- [in] El número de GUID de que se va a devolver. Esto también especifica el tamaño máximo de la `rgguidEngines` matriz.
+`rgguidEngines`\
+[in, out] Una matriz de GUID DE rellenarse.
 
- `rgguidEngines`
-
- [in, out] Una matriz de GUID DE rellenarse.
-
- `pceltEngines`
-
- [out] Devuelve el número real de GUID DE que se devuelven.
+`pceltEngines`\
+[out] Devuelve el número real de GUID DE que se devuelven.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error. Devuelve [C++] `HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER)` o [C#] 0x8007007A si el búfer no es suficientemente grande.

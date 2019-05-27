@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b6738c70b75ff1e2f393b59e330ce57f2232de61
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: b0721e8f8a30a8736f6d52ea61e02b9a93821a98
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62918533"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203011"
 ---
 # <a name="idebugobjectgetmanageddebugobject"></a>IDebugObject::GetManagedDebugObject
 Crea una copia del objeto administrado en el espacio de direcciones del motor de depuración.
@@ -36,10 +39,9 @@ int GetManagedDebugObject(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `ppObject`
-
- [out] Devuelve un [IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md) objeto que representa el objeto administrado recién creado.
+## <a name="parameters"></a>Parámetros
+`ppObject`\
+[out] Devuelve un [IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md) objeto que representa el objeto administrado recién creado.
 
 ## <a name="return-value"></a>Valor devuelto
  Si se realiza correctamente, devuelve S_OK; en caso contrario, devuelve un código de error. Devuelve E_FAIL si este [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) no representa una instancia de la clase de valor administrado.

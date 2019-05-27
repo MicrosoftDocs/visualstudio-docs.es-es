@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad3831fb06d23f622f85a55f5efd0a5650ca5e47
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d23a19ad42f665f471274ee75f328056dd55b17d
+ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62799030"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "66037100"
 ---
 # <a name="synchronously-autoloaded-extensions"></a>Extensiones cargadas automáticamente y sincrónicamente
 
@@ -29,7 +29,7 @@ Los usuarios pueden:
 
 - Haga clic en **no volver a mostrar este mensaje** para descartarla. Si elige esta opción también impide que todas las notificaciones futuras de forma sincrónica autocargado extensiones. Los usuarios seguirán recibiendo notificaciones otras características de Visual Studio.
 
-### <a name="performance-manager-dialog"></a>Cuadro de diálogo Administrador de rendimiento
+## <a name="performance-manager-dialog"></a>Cuadro de diálogo Administrador de rendimiento
 
 ![cuadro de diálogo de administrador de rendimiento](media/performance-manager.png)
 
@@ -39,3 +39,17 @@ Todas las extensiones que cargó sincrónicamente todos los paquetes en las sesi
 * Los usuarios pueden ponerse en contacto con sus proveedores de extensión para ver el progreso de la migración.
 
 Los autores de extensiones pueden encontrar instrucciones para migrar paquetes de carga asincrónica automática en [migrar a AsyncPackage](https://github.com/Microsoft/VSSDK-Extensibility-Samples/tree/master/AsyncPackageMigration).
+
+## <a name="specify-synchronous-autoload-settings-using-group-policy"></a>Especificar la configuración autoload sincrónica mediante la directiva de grupo
+
+A partir de Visual Studio 2019 Update 1, de forma predeterminada, la carga automática sincrónica bloques instalación de Visual Studio. Cuando se habilita la directiva de grupo, puede configurar Visual Studio para permitir autoload sincrónico en equipos individuales. Para ello, establezca una directiva basada en el Registro en la siguiente clave:
+
+**HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\VisualStudio\SynchronousAutoload**
+
+Entrada = **permitido**
+
+Value = (DWORD)
+* **0** autoload sincrónica no está permitido
+* **1** se permite autoload sincrónica
+
+Para obtener más información acerca de la configuración autoload sincrónico 2019 de Visual Studio Update 1, consulte el [comportamiento Autoload sincrónico](https://aka.ms/AA52xzw) página.

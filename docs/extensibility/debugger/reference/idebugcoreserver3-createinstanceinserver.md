@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c570c7afe8721c757bae9352f70361d5b6cf392a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: c884d9ac404aecfa2edaadb2949ce0556da01bfe
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62921993"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205580"
 ---
 # <a name="idebugcoreserver3createinstanceinserver"></a>IDebugCoreServer3::CreateInstanceInServer
 Crea una instancia de un motor de depuración en el servidor.
@@ -44,26 +47,21 @@ int CreateInstanceInServer(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `szDll`
+## <a name="parameters"></a>Parámetros
+`szDll`\
+[in] Ruta de acceso a la dll que implementa el CLSID especificado en el `clsidObject` parámetro. Si se trata de `NULL`, a continuación, COM `CoCreateInstance` se llama a la función.
 
- [in] Ruta de acceso a la dll que implementa el CLSID especificado en el `clsidObject` parámetro. Si se trata de `NULL`, a continuación, COM `CoCreateInstance` se llama a la función.
+`wLangId`\
+[in] Configuración regional del motor de depuración. Esto puede ser 0 si la [SetLocale](../../../extensibility/debugger/reference/idebugengine2-setlocale.md) no se debe llamar al método.
 
- `wLangId`
+`clsidObject`\
+[in] CLSID del motor de depuración para crear.
 
- [in] Configuración regional del motor de depuración. Esto puede ser 0 si la [SetLocale](../../../extensibility/debugger/reference/idebugengine2-setlocale.md) no se debe llamar al método.
+`riid`\
+[in] Id. de interfaz de la interfaz específica para recuperar desde el objeto de clase.
 
- `clsidObject`
-
- [in] CLSID del motor de depuración para crear.
-
- `riid`
-
- [in] Id. de interfaz de la interfaz específica para recuperar desde el objeto de clase.
-
- `ppvObject`
-
- [out] `IUnknown` interfaz desde el objeto con instancias. Convertir o calcular las referencias de este objeto en la interfaz deseada.
+`ppvObject`\
+[out] `IUnknown` interfaz desde el objeto con instancias. Convertir o calcular las referencias de este objeto en la interfaz deseada.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

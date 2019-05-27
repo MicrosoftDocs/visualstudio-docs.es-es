@@ -7,16 +7,16 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Obtenga información sobre el beneficio de Office 365 Developer incluido en su suscripción de Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 31dae1adaaa4fd500357988471718f6ea074a40c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3ae71e50ab93cbc17cdf6f4cd4e550a627b0f600
+ms.sourcegitcommit: 0ef51e3517436a85cfb85bf492722d566ce602c4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62947238"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65934591"
 ---
 # <a name="the-office-365-developer-subscription-benefit-in-visual-studio-subscriptions"></a>Beneficio de suscripción de Office 365 Developer en suscripciones de Visual Studio
 
-Los suscriptores que tengan las suscripciones seleccionadas de Visual Studio Enterprise reciben un beneficio de suscripción de Office 365 Developer.  La suscripción de Office 365 Developer permite desarrollar, probar e implementar complementos para Microsoft Office y Microsoft SharePoint.  Esta suscripción permite tener un inquilino y hasta 25 usuarios.
+Los suscriptores con suscripciones seleccionadas de Visual Studio reciben el beneficio de suscripción de Office 365 Developer.  La suscripción de Office 365 Developer permite desarrollar, probar e implementar complementos para Microsoft Office y Microsoft SharePoint.  Esta suscripción permite tener un inquilino y hasta 25 usuarios.
 
 ## <a name="activation-steps"></a>Pasos para la activación
 
@@ -67,7 +67,7 @@ Para más información sobre la suscripción de Office 365 Developer, revise las
 | Nivel de suscripción                                                 |     Canales                                            | Prestación                                                          | ¿Renovable?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (estándar)   | Licencia por volumen, Azure, venta directa, no para reventa<sup>1</sup> | Included      |  Sí          |
-| Visual Studio Professional (estándar) | Licencia por volumen, Azure, venta directa                                       | No disponible                                                            |NA         |
+| Visual Studio Professional (estándar) | Licencia por volumen, Azure, venta directa                                       | Included                                                            |Sí         |
 | Visual Studio Test Professional (estándar)                         | Licencia por volumen, venta directa                                              | No disponible                                             |  NA         |
 | Plataformas MSDN (estándar)                                          | Licencia por volumen, venta directa                                              | No disponible                                              | NA         |
 | Visual Studio Dev Essentials | NA  | No disponible |NA |

@@ -13,12 +13,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f787ad06b4e7d612007b6448287b5062ae1b0efd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a8b93aa895588f743f4cc7c6b6adfa207590936d
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62873316"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66210568"
 ---
 # <a name="idebugmemorybytes2readat"></a>IDebugMemoryBytes2::ReadAt
 Lee una secuencia de bytes, empezando en una ubicación determinada.
@@ -45,26 +48,21 @@ int ReadAt(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `pStartContext`
+## <a name="parameters"></a>Parámetros
+`pStartContext`\
+[in] El [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) objeto que especifica dónde empezar a leer los bytes.
 
- [in] El [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) objeto que especifica dónde empezar a leer los bytes.
+`dwCount`\
+[in] El número de bytes que se leen. También especifica la longitud de la `rgbMemory` matriz.
 
- `dwCount`
+`rgbMemory`\
+[in, out] Matriz que se rellena con los bytes leídos realmente.
 
- [in] El número de bytes que se leen. También especifica la longitud de la `rgbMemory` matriz.
+`pdwRead`\
+[out] Devuelve el número de bytes contiguos leídos realmente.
 
- `rgbMemory`
-
- [in, out] Matriz que se rellena con los bytes leídos realmente.
-
- `pdwRead`
-
- [out] Devuelve el número de bytes contiguos leídos realmente.
-
- `pdwUnreadable`
-
- [in, out] Devuelve el número de bytes no se puede leer. Puede ser un valor null si el cliente no está interesado en el número de bytes no se puede leer.
+`pdwUnreadable`\
+[in, out] Devuelve el número de bytes no se puede leer. Puede ser un valor null si el cliente no está interesado en el número de bytes no se puede leer.
 
 ## <a name="return-value"></a>Valor devuelto
  Si se realiza correctamente, devuelve S_OK; en caso contrario, devuelve un código de error.

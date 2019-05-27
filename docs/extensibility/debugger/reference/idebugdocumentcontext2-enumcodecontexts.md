@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dffee73c9412bd9732ca3dd80aef8b9cb6fdabfd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 71c3fda7da3b676a3a878e17192eca7ae19a5f66
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62921497"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66204710"
 ---
 # <a name="idebugdocumentcontext2enumcodecontexts"></a>IDebugDocumentContext2::EnumCodeContexts
 Recupera una lista de todos los contextos de código asociado con este contexto de documento.
@@ -36,10 +39,8 @@ int EnumCodeContexts(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
-`ppEnumCodeCxts`
-
- [out] Devuelve un [IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md) objeto que contiene una lista de contextos de código.
+## <a name="parameters"></a>Parámetros
+`ppEnumCodeCxts`\
 
 ## <a name="return-value"></a>Valor devuelto
 Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

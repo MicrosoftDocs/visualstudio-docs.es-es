@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa24dedd776a0866d5de23fbacd31b32c2d55145
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f151b722b1425024ac2abe81f6d873bf10b01628
+ms.sourcegitcommit: 0ef51e3517436a85cfb85bf492722d566ce602c4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946092"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65934496"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Ejecutar pruebas unitarias con el Explorador de pruebas
 
@@ -58,7 +58,7 @@ Según se vayan ejecutando las pruebas, se animará la **barra de superado o no 
 |![Ejecutar después de compilar](../test/media/ute_runafterbuild_btn.png)|Para ejecutar pruebas unitarias después de cada compilación local, elija **Prueba** en el menú estándar, o **Ejecutar pruebas después de compilar** en la barra de herramientas del **Explorador de pruebas**.|
 
 > [!NOTE]
-> La ejecución de pruebas unitarias después de cada compilación requiere la edición Visual Studio Enterprise.
+> La ejecución de pruebas unitarias después de cada compilación requiere Visual Studio 2017 Enterprise o Visual Studio 2019. En Visual Studio 2019 se incluyen las ediciones Community, Professional y Enterprise.
 
 ## <a name="view-test-results"></a>Ver los resultados de las pruebas
 
@@ -200,7 +200,7 @@ Con la herramienta de cobertura de código de Visual Studio se puede determinar 
 
 Para ejecutar la cobertura de código en los métodos de prueba de una solución:
 
-1. Elija **Pruebas** en el menú de Visual Studio y seleccione **Analizar cobertura de código**.
+1. Seleccione **Prueba** en la barra de menús superior y luego **Analizar cobertura de código**.
 
 2. En el submenú, elija uno de los comandos siguientes:
 

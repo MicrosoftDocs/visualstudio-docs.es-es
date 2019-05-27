@@ -1,5 +1,5 @@
 ---
-title: Depurar las infracciones de acceso cuando se ejecuta una aplicación fuera del depurador | Microsoft Docs
+title: Depurar las infracciones de acceso cuando se ejecuta la aplicación fuera del depurador
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 657d8730f923d144d0691afe921ad5eaf9337a42
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d42dd206117885a23a6c1c15c712be4dc4cd8fe2
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62895100"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177663"
 ---
 # <a name="how-can-i-debug-access-violations-when-running-my-program-outside-the-debugger"></a>Cómo depurar las infracciones de acceso cuando se ejecuta un programa fuera del depurador
 

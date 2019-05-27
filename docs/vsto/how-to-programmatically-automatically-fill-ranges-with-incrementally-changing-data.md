@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Rellenar rangos automáticamente mediante programación con datos que cambian de forma incremental
+title: Autorrellenar cambian de forma incremental los rangos de datos mediante programación
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: edb3a1bfaad8d662fb51a8527da6bef183fd05c4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a514f83d12cd00c4a7792ae0bf2483fdd916897a
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63428183"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177689"
 ---
 # <a name="how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data"></a>Procedimiento Rellenar rangos automáticamente mediante programación con datos que cambian de forma incremental
   El <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> método de la <xref:Microsoft.Office.Interop.Excel.Range> objeto le permite rellenar un rango en una hoja de cálculo con los valores automáticamente. A menudo, el <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> método se utiliza para almacenar incrementalmente valores superiores o inferiores de un intervalo. Puede especificar el comportamiento proporcionando una constante opcional de la <xref:Microsoft.Office.Interop.Excel.XlAutoFillType> enumeración.

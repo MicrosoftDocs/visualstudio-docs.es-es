@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 05f5987037e63c3c81585ba51deed72f06fd3278
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: a6791c4a88ae0440dbc6cee12e0f5b5e353e0d69
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65461084"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66198786"
 ---
 # <a name="ipropertyproxyeesideinitsourcedataprovider"></a>IPropertyProxyEESide::InitSourceDataProvider
 Inicializa los datos de origen para este objeto y devuelve un objeto que contiene los datos iniciales.
@@ -40,9 +40,8 @@ int InitSourceDataProvider(
 ```
 
 ## <a name="parameters"></a>Parámetros
- `dataOut`\
-
- [out] Devuelve un [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) objeto
+`dataOut`\
+[out] Devuelve un [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) objeto
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

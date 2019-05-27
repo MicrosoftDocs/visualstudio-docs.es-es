@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ba770dec92054f68c3cb95433d2a2c83bdb37bce
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 4b9534c144ae08a6fa5791518fea7d463819140b
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457496"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212953"
 ---
 # <a name="idebugreference2getderivedmostreference"></a>IDebugReference2::GetDerivedMostReference
 Obtiene la referencia más derivado de una referencia. Reservado para un uso futuro.
@@ -40,9 +40,8 @@ int GetDerivedMostReference( 
 ```
 
 ## <a name="parameters"></a>Parámetros
- `ppDerivedMost`\
-
- [out] Devuelve un [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) objeto que representa la propiedad más derivado.
+`ppDerivedMost`\
+[out] Devuelve un [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) objeto que representa la propiedad más derivado.
 
 ## <a name="return-value"></a>Valor devuelto
  Siempre devuelve `E_NOTIMPL`.

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2cc26c9d2dae65d8bab0126be5a62b144ebf42b7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 65f79b73eaa9b97630cc3ef3e84e1ba4198835c9
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63413298"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66202361"
 ---
 # <a name="idebugprocess3disableenc"></a>IDebugProcess3::DisableENC
 Este método explícitamente deshabilita Editar y continuar en este proceso (y todos los programas contiene). Siempre debe devolver un proveedor de puerto personalizado `E_NOTIMPL`.
@@ -35,10 +38,9 @@ HRESULT DisableENC(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `reason`
-
- [in] Un valor de la [EncUnavailableReason](../../../extensibility/debugger/reference/encunavailablereason.md) enumeración.
+## <a name="parameters"></a>Parámetros
+`reason`\
+[in] Un valor de la [EncUnavailableReason](../../../extensibility/debugger/reference/encunavailablereason.md) enumeración.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve el código de error.

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 188cc4e8b1c58a7fd8f9f1c99b8d5f544710ef8c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 02bc1245026480f97bcc21f1af086f87284022df
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875855"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205408"
 ---
 # <a name="idebugcustomattributegetattributebytes"></a>IDebugCustomAttribute::GetAttributeBytes
 Obtiene la información de atributo como un blob de bytes.
@@ -38,14 +41,12 @@ int GetAttributeBytes(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `ppBlob`
+## <a name="parameters"></a>Parámetros
+`ppBlob`\
+[in, out] Una matriz que se rellena con los bytes del atributo.
 
- [in, out] Una matriz que se rellena con los bytes del atributo.
-
- `pdwLen`
-
- [in, out] Especifica el número máximo de bytes que se devuelven en el `ppBlob` de matriz y devuelve el número de bytes escritos realmente en la matriz.
+`pdwLen`\
+[in, out] Especifica el número máximo de bytes que se devuelven en el `ppBlob` de matriz y devuelve el número de bytes escritos realmente en la matriz.
 
 ## <a name="return-value"></a>Valor devuelto
  Si se realiza correctamente, devuelve S_OK; en caso contrario, devuelve un código de error.

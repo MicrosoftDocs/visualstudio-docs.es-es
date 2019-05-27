@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3f1ef243afd607a565e2c7a8e6f557f0b9906c86
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 1e653f7f735be43f2edeb4bd3c7935d3c89a9e58
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875726"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66204746"
 ---
 # <a name="idebugdocument2getname"></a>IDebugDocument2::GetName
 Obtiene el nombre del documento en una de varias formas.
@@ -38,14 +41,12 @@ int GetName( 
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `gnType`
+## <a name="parameters"></a>Parámetros
+`gnType`\
+[in] Un valor de la [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md) enumeración que determina el tipo de nombre para devolver.
 
- [in] Un valor de la [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md) enumeración que determina el tipo de nombre para devolver.
-
- `pbstrFileName`
-
- [out] Devuelve una cadena que contiene el nombre del documento.
+`pbstrFileName`\
+[out] Devuelve una cadena que contiene el nombre del documento.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

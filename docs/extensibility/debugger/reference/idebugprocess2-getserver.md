@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33f9b513bcf336cac68af7d915880af0652b0954
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 50ed9f14c09bc4c97d35a2ed4d856b13f11705f6
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62917770"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66202426"
 ---
 # <a name="idebugprocess2getserver"></a>IDebugProcess2::GetServer
 Obtiene el servidor que se ejecuta en este proceso.
@@ -36,10 +39,9 @@ int GetServer( 
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `ppServer`
-
- [out] Devuelve un [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md) objeto que representa el servidor en el que se está ejecutando este proceso.
+## <a name="parameters"></a>Parámetros
+`ppServer`\
+[out] Devuelve un [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md) objeto que representa el servidor en el que se está ejecutando este proceso.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

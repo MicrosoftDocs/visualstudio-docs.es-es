@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 750094cef6e207ef1a77196dab53b28ebdc7838b
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: e48124f8b53c402bb8e4b352a8abb141b0da43ba
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65223660"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203687"
 ---
 # <a name="ieevisualizerservicegetcustomviewercount"></a>IEEVisualizerService::GetCustomViewerCount
 Este método obtiene el número de visualizadores de tipo disponibles desde este servicio.
@@ -40,9 +40,8 @@ int GetCustomViewerCount(
 ```
 
 ## <a name="parameters"></a>Parámetros
- `pcelt`\
-
- [out] Devuelve el número de visualizadores de tipo disponibles.
+`pcelt`\
+[out] Devuelve el número de visualizadores de tipo disponibles.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

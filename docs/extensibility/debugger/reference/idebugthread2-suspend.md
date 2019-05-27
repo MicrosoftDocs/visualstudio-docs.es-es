@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: bd1987be34cf0f07ce5f37f074cd298a8135a4fa
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: b9df2f37a6e8acb9f8e37d2fbd1a379bc4572b39
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226399"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66199463"
 ---
 # <a name="idebugthread2suspend"></a>IDebugThread2::Suspend
 Suspende un subproceso.
@@ -40,9 +40,8 @@ HRESULT Suspend ( 
 ```
 
 ## <a name="parameters"></a>Parámetros
- `pdwSuspendCount`\
-
- [out] Devuelve el recuento de suspensión después de la operación de suspensión.
+`pdwSuspendCount`\
+[out] Devuelve el recuento de suspensión después de la operación de suspensión.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

@@ -13,12 +13,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ee55c7637272da536830f00607719fae9f234b4d
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 73b5dd57a9e4c4de917e0fca744388b02345f0bb
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457570"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66208760"
 ---
 # <a name="idebugsourceservermodulegetsourceserverdata"></a>IDebugSourceServerModule::GetSourceServerData
 Recupera una matriz de información del servidor de origen.
@@ -41,12 +41,10 @@ public int GetSourceServerData(
 
 ## <a name="parameters"></a>Parámetros
 `pDataByteCount`\
-
- [out] Número de bytes en la matriz de datos.
+[out] Número de bytes en la matriz de datos.
 
 `ppData`\
-
- [out] Referencia a la matriz de datos.
+[out] Referencia a la matriz de datos.
 
 ## <a name="return-value"></a>Valor devuelto
 Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

@@ -10,12 +10,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f8340e9fd9e5f38963a9de78e2974404f600deef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 793a3072160230744ab66a5805cd99c24e20cb7c
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62917459"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66200445"
 ---
 # <a name="idebugprocesssecuritygetusername"></a>IDebugProcessSecurity::GetUserName
 Obtiene el nombre de usuario desde el proveedor del puerto.
@@ -34,10 +37,9 @@ int GetUserName (
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `pbstrUserName`
-
- [out] Una cadena que contiene el nombre de usuario.
+## <a name="parameters"></a>Parámetros
+`pbstrUserName`\
+[out] Una cadena que contiene el nombre de usuario.
 
 ## <a name="return-value"></a>Valor devuelto
  Si el método se realiza correctamente, devuelve `S_OK`. En caso contrario, devuelve un código de error.

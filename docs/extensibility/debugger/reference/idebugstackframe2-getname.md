@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ee4c292bdd80a8209d9136bac0cbc6775a2c33ac
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 9c4d95817e76020590658980a4748e9821d6deb2
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458526"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66207402"
 ---
 # <a name="idebugstackframe2getname"></a>IDebugStackFrame2::GetName
 Obtiene el nombre del marco de pila.
@@ -40,9 +40,8 @@ int GetName ( 
 ```
 
 ## <a name="parameters"></a>Parámetros
- `pbstrName`\
-
- [out] Devuelve el nombre del marco de pila.
+`pbstrName`\
+[out] Devuelve el nombre del marco de pila.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

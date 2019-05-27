@@ -231,6 +231,8 @@
               items:
                 - name: Crear plantillas de proyecto y elemento
                   href: ide/creating-project-and-item-templates.md
+                - name: Agregar etiquetas a una plantilla
+                  href: ide/template-tags.md
                 - name: Crear plantillas de proyecto
                   href: ide/how-to-create-project-templates.md
                 - name: Crear plantillas de varios proyectos

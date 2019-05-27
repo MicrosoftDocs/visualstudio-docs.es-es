@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 795404d0cae2dd5cbf4f6f913b3ba71cf3fe34a0
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 656ef6cd8bab9ed1946dd8e04a81c93aa428324e
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65223430"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66210663"
 ---
 # <a name="ienumdebugprograms2getcount"></a>IEnumDebugPrograms2::GetCount
 Devuelve el número de elementos de la enumeración.
@@ -40,9 +40,8 @@ int GetCount(
 ```
 
 ## <a name="parameters"></a>Parámetros
- `pcelt`\
-
- [out] Devuelve el número de elementos de la enumeración.
+`pcelt`\
+[out] Devuelve el número de elementos de la enumeración.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

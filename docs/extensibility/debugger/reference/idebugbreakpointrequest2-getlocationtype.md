@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ef63656e645611e13bfc6e0fcf1fb3a5cc339abc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7000e72ee69b90d873dd85689b97157e83dc6856
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62876959"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212881"
 ---
 # <a name="idebugbreakpointrequest2getlocationtype"></a>IDebugBreakpointRequest2::GetLocationType
 Obtiene el tipo de ubicación de punto de interrupción de esta solicitud de punto de interrupción.
@@ -36,10 +39,9 @@ int GetLocationType(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
-`pBPLocationType`
-
- [out] Devuelve un valor de la [BP_LOCATION_TYPE](../../../extensibility/debugger/reference/bp-location-type.md) enumeración que describe la ubicación de esta solicitud de punto de interrupción.
+## <a name="parameters"></a>Parámetros
+`pBPLocationType`\
+[out] Devuelve un valor de la [BP_LOCATION_TYPE](../../../extensibility/debugger/reference/bp-location-type.md) enumeración que describe la ubicación de esta solicitud de punto de interrupción.
 
 ## <a name="return-value"></a>Valor devuelto
 Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error. Devuelve `E_FAIL` si el `bpLocation` campo asociado [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) estructura no es válida.

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3c8cf4f3f5978744c38690681b4555f59cafd106
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: c5e6debcc761872295e21dd17023d24429870e02
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62870689"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66200429"
 ---
 # <a name="idebugprogram2attach"></a>IDebugProgram2::Attach
 Se une al programa.
@@ -36,10 +39,9 @@ int Attach( 
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `pCallback`
-
- [in] Un [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) objeto que se usará para la notificación de eventos de depuración.
+## <a name="parameters"></a>Parámetros
+`pCallback`\
+[in] Un [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) objeto que se usará para la notificación de eventos de depuración.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error. En la tabla siguiente se muestra algunos posibles códigos de error.

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5a93d909fbc8882c5864097a2a36c36749327a2d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3504ba7ec668e243b72536b940f0779a5c0b728d
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62843139"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66200872"
 ---
 # <a name="idebugexpressionevaluatorparse"></a>IDebugExpressionEvaluator::Parse
 Este método convierte una cadena de expresión en una expresión analizada.
@@ -46,30 +49,24 @@ int Parse(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `upstrExpression`
+## <a name="parameters"></a>Parámetros
+`upstrExpression`\
+[in] La cadena de expresión que se va a analizar.
 
- [in] La cadena de expresión que se va a analizar.
+`dwFlags`\
+[in] Una colección de [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) constantes que determinan cómo se puede analizar la expresión.
 
- `dwFlags`
+`nRadix`\
+[in] Base que se usará para interpretar toda la información numérica.
 
- [in] Una colección de [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) constantes que determinan cómo se puede analizar la expresión.
+`pbstrError`\
+[out] Devuelve el error como texto legible.
 
- `nRadix`
+`pichError`\
+[out] Devuelve la posición del carácter de inicio del error en la cadena de expresión.
 
- [in] Base que se usará para interpretar toda la información numérica.
-
- `pbstrError`
-
- [out] Devuelve el error como texto legible.
-
- `pichError`
-
- [out] Devuelve la posición del carácter de inicio del error en la cadena de expresión.
-
- `ppParsedExpression`
-
- [out] Devuelve la expresión analizada en un [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md) objeto.
+`ppParsedExpression`\
+[out] Devuelve la expresión analizada en un [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md) objeto.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

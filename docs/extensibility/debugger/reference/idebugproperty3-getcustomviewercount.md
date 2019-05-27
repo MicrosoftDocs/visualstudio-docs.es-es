@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0c4179b6e762d925ca918e459c5109deb6579c10
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 4e6d6ddbc87a2219711a93b54a699df3c5511ab2
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458843"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66200196"
 ---
 # <a name="idebugproperty3getcustomviewercount"></a>IDebugProperty3::GetCustomViewerCount
 Obtiene el número de visores personalizados que pueden estar disponibles para esta propiedad.
@@ -41,8 +41,7 @@ int GetCustomViewerCount(
 
 ## <a name="parameters"></a>Parámetros
 `pcelt`\
-
- [out] El número de visores personalizados disponibles para esta propiedad.
+[out] El número de visores personalizados disponibles para esta propiedad.
 
 ## <a name="return-value"></a>Valor devuelto
 Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

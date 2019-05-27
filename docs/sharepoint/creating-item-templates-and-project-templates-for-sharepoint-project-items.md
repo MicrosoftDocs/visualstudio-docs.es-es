@@ -1,5 +1,5 @@
 ---
-title: Crear elemento plantillas y plantillas de proyecto para elementos de proyecto de SharePoint | Microsoft Docs
+title: Elemento los elementos de proyecto de plantillas de proyecto y plantillas para SharePoint
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1f8332b12b05c1d5db1f09afabacbba5e8ba83e9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8f41783689e572ca823788e1a8dbcf772f07e924
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62952703"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177620"
 ---
 # <a name="create-item-templates-and-project-templates-for-sharepoint-project-items"></a>Crear plantillas de elemento y plantillas de proyecto para los elementos de proyecto de SharePoint
 
@@ -66,7 +66,7 @@ Las plantillas de elemento y plantillas de proyecto son *.zip* archivos que cont
 |Un *.vstemplate* archivo|Este archivo proporciona Visual Studio con la información necesaria para mostrar la plantilla en el **nuevo proyecto** cuadro de diálogo y crear un proyecto de la plantilla. Para obtener más información, consulte [archivos de metadatos de plantilla de Visual Studio](/previous-versions/visualstudio/visual-studio-2010/xsxc3ete\(v\=vs.100\)).|
 |Un *.csproj* o *.vbproj* archivo|Este es el archivo de proyecto. Define el contenido y valores de configuración del proyecto.|
 |*Package.package*|Este archivo define el paquete de implementación para el proyecto. Cuando usa el Diseñador de paquetes para personalizar el paquete de solución para el proyecto, Visual Studio almacena datos sobre el paquete de solución de este archivo.<br /><br /> Cuando se crea una plantilla de proyecto de SharePoint personalizada, se recomienda que incluya solo el contenido mínimo necesario en el *Package.package* archivo y que configure el paquete de soluciones mediante las API en el <xref:Microsoft.VisualStudio.SharePoint.Packages> espacio de nombres en una extensión que está asociada con la plantilla de proyecto. Si lo hace, la plantilla de proyecto está protegida de futuros cambios en la estructura de la *Package.package* archivo. Para obtener un ejemplo que muestra cómo crear un *Package.package* contenido del archivo con solo el mínimo requerido, consulte [Tutorial: Creación de un elemento de proyecto de la columna de sitio con una plantilla de proyecto, parte 1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md).<br /><br /> Si desea modificar el *Package.package* archivo directamente, puede comprobar el contenido mediante el esquema en *% archivos de programa (x86)%\Microsoft Visual Studio 11.0\Xml\Schemas\PackageModelSchema.xsd* .|
-|*Package.Template.xml*|Este archivo proporciona la base para el archivo de manifiesto de la solución (*manifest.xml*) para el paquete de solución de SharePoint (*.wsp*) que se genera a partir del proyecto. Puede agregar contenido a este archivo si desea especificar algún comportamiento que no está pensado para los usuarios de su tipo de proyecto pueden cambiar. Para obtener más información, consulte [bloques de creación: Soluciones](http://go.microsoft.com/fwlink/?LinkId=169186) y [solución esquema](http://go.microsoft.com/fwlink/?LinkId=177794).<br /><br /> Al compilar un paquete de solución del proyecto, Visual Studio combina el contenido de la *Package.package* y *Package.Template.xml* archivo de manifiesto de archivos en la solución. Para obtener más información sobre la creación de paquetes de soluciones, vea [Cómo: Crear un paquete de solución de SharePoint mediante el uso de las tareas de MSBuild](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md).|
+|*Package.Template.xml*|Este archivo proporciona la base para el archivo de manifiesto de la solución (*manifest.xml*) para el paquete de solución de SharePoint ( *.wsp*) que se genera a partir del proyecto. Puede agregar contenido a este archivo si desea especificar algún comportamiento que no está pensado para los usuarios de su tipo de proyecto pueden cambiar. Para obtener más información, consulte [bloques de creación: Soluciones](http://go.microsoft.com/fwlink/?LinkId=169186) y [solución esquema](http://go.microsoft.com/fwlink/?LinkId=177794).<br /><br /> Al compilar un paquete de solución del proyecto, Visual Studio combina el contenido de la *Package.package* y *Package.Template.xml* archivo de manifiesto de archivos en la solución. Para obtener más información sobre la creación de paquetes de soluciones, vea [Cómo: Crear un paquete de solución de SharePoint mediante el uso de las tareas de MSBuild](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md).|
 
  En la tabla siguiente se enumera los archivos opcionales que pueden incluirse en la plantilla de proyecto.
 

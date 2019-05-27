@@ -10,12 +10,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a0964c94334ca0815b4410f6858dca5502b2f8a1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: d44c0ad0cef8777623f3393172e372ea4c33782a
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62918161"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66204509"
 ---
 # <a name="idebugportpickersetsite"></a>IDebugPortPicker::SetSite
 Establece el proveedor de servicios.
@@ -34,10 +37,9 @@ public int SetSite(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `pSP`
-
- [in] Referencia a la interfaz del proveedor de servicios.
+## <a name="parameters"></a>Parámetros
+`pSP`\
+[in] Referencia a la interfaz del proveedor de servicios.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

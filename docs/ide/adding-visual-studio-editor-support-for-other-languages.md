@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c87339e26e5b08fbcbdcde94d43c9f0009e1a22
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7ae0b2f606b4fe04ad390712f48ac1e06ff9bb86
+ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975666"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65805324"
 ---
 # <a name="add-visual-studio-editor-support-for-other-languages"></a>Agregar compatibilidad con otros lenguajes en el editor de Visual Studio
 
@@ -46,21 +46,21 @@ Visual Studio actualmente ofrece compatibilidad con el uso de colores para la si
 
 Además del uso de colores para la sintaxis y la finalización de instrucciones básicas, Visual Studio tiene una característica denominada [Navegar a](https://blogs.msdn.microsoft.com/benwilli/2015/04/09/visual-studio-tip-3-use-navigate-to/). Esta característica permite buscar rápidamente archivos de código, rutas de acceso de archivo y símbolos de código. Visual Studio ofrece compatibilidad con Navegar a para los idiomas siguientes.
 
+- C#
+
+- C++
+
+- TypeScript
+
+- JavaScript
+
+- Visual Basic
+
 - Ir
 
 - Java
 
-- JavaScript
-
 - PHP
-
-- TypeScript
-
-- Visual Basic
-
-- Visual C++
-
-- C#
 
 Todos estos tipos de archivo tienen las características que se han descrito anteriormente, aunque todavía no se haya instalado la compatibilidad con un idioma determinado. La instalación de compatibilidad especializada con algunos lenguajes puede proporcionar compatibilidad con lenguajes adicionales, como IntelliSense u otras características de lenguaje avanzadas, como las bombillas.
 
@@ -76,11 +76,11 @@ En esta ruta de acceso base, agregue las carpetas siguientes si se aplican a su 
 
 |Nombre de carpeta|Descripción|
 |-----------------|-----------------|
-|\\*\<nombre del lenguaje>*|Carpeta del lenguaje. Reemplace *\<nombre del lenguaje>* por el nombre del lenguaje. Por ejemplo, *\Matlab*.|
+|\\ *\<nombre del lenguaje>*|Carpeta del lenguaje. Reemplace *\<nombre del lenguaje>* por el nombre del lenguaje. Por ejemplo, *\Matlab*.|
 |*\Syntaxes*|Carpeta de la gramática. Contiene los archivos .*json* de la gramática para el lenguaje, como *Matlab.json*.|
 |*\Snippets*|Carpeta de fragmentos de código. Contiene fragmentos de código para el lenguaje.|
 
-En Windows, *%userprofile%* se resuelve como la ruta de acceso *c:\Usuarios\\\<nombre de usuario>*. Si la carpeta *Extensiones* no existe en el sistema, debe crearla. Si la carpeta ya existe, estará oculta.
+En Windows, *%userprofile%* se resuelve como la ruta de acceso *c:\Usuarios\\\<nombre de usuario>* . Si la carpeta *Extensiones* no existe en el sistema, debe crearla. Si la carpeta ya existe, estará oculta.
 
 > [!TIP]
 > Si tiene cualquier archivo abierto en el editor, debe cerrarlo y volver a abrirlo para ver el resaltado de la sintaxis después de agregar las gramáticas de TextMate.
@@ -89,5 +89,6 @@ Para obtener más información sobre cómo crear gramáticas TextMate, vea [Text
 
 ## <a name="see-also"></a>Vea también
 
+- [Agregar una extensión del protocolo de servidor de lenguaje](../extensibility/adding-an-lsp-extension.md)
 - [Tutorial: Creación de un fragmento de código](../ide/walkthrough-creating-a-code-snippet.md)
 - [Tutorial: Mostrar la finalización de instrucciones](../extensibility/walkthrough-displaying-statement-completion.md)

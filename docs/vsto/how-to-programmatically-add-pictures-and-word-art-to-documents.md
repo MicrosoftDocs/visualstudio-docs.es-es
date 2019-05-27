@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Agregar imágenes y dibujos de Word a documentos mediante programación
+title: Agregar imágenes y dibujos de Word a documentos mediante programación
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f805153a35517c473e95beb871ae7d12a2776bd4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 63b1a72a5b332f27b6bd38d25c16ff3a5981b4fa
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967613"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177756"
 ---
 # <a name="how-to-programmatically-add-pictures-and-word-art-to-documents"></a>Procedimiento Agregar imágenes y dibujos de Word a documentos mediante programación
   Puede agregar imágenes y objetos de dibujo a los documentos en tiempo de diseño o en tiempo de ejecución. WordArt permite agregar texto decorativo a documentos de Microsoft Office Word. Estos efectos de texto especiales son objetos de dibujo que se pueden personalizar e insertar en el documento.

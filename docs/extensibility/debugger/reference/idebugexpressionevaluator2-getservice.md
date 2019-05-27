@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ac6f73e31e7e15a2ffd86e2d969f98a686fbd004
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: b775963f9ab708e92a37cda9a3ff50bc67c9b2cf
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62842937"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211758"
 ---
 # <a name="idebugexpressionevaluator2getservice"></a>IDebugExpressionEvaluator2::GetService
 Recupera un objeto de servicio según su identificador único.
@@ -37,14 +40,12 @@ int GetService (
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `uid`
+## <a name="parameters"></a>Parámetros
+`uid`\
+[in] Identificador único del servicio que se va a recuperar.
 
- [in] Identificador único del servicio que se va a recuperar.
-
- `ppService`
-
- [out] Devuelve un objeto que representa el servicio.
+`ppService`\
+[out] Devuelve un objeto que representa el servicio.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.

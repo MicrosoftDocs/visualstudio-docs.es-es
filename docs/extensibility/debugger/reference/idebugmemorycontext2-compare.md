@@ -13,12 +13,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ed8f7f778e0dfd55e9db175c4e279c92b72e427e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: f04000d3e2675f766ae343836320aa7433ade87d
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62873290"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211997"
 ---
 # <a name="idebugmemorycontext2compare"></a>IDebugMemoryContext2::Compare
 Compara cada contexto en la matriz especificada de la manera indicada por las marcas de comparación, devolviendo un índice del primer contexto que coincida con el contexto de memoria.
@@ -43,22 +46,18 @@ int Compare(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `compare`
+## <a name="parameters"></a>Parámetros
+`compare`\
+[in] Un valor de la [CONTEXT_COMPARE](../../../extensibility/debugger/reference/context-compare.md) enumeración que determina el tipo de comparación.
 
- [in] Un valor de la [CONTEXT_COMPARE](../../../extensibility/debugger/reference/context-compare.md) enumeración que determina el tipo de comparación.
+`rgpMemoryContextSet`\
+[in] Una matriz de referencias a la [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) objetos que se va a comparar.
 
- `rgpMemoryContextSet`
+`dwMemoryContextSetLen`\
+[in] El número de contextos en los `rgpMemoryContextSet` matriz.
 
- [in] Una matriz de referencias a la [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) objetos que se va a comparar.
-
- `dwMemoryContextSetLen`
-
- [in] El número de contextos en los `rgpMemoryContextSet` matriz.
-
- `pdwMemoryContext`
-
- [out] Devuelve el índice del primer contexto de memoria que satisface la comparación.
+`pdwMemoryContext`\
+[out] Devuelve el índice del primer contexto de memoria que satisface la comparación.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error. Devuelve `E_COMPARE_CANNOT_COMPARE` si no se pueden comparar los dos contextos.

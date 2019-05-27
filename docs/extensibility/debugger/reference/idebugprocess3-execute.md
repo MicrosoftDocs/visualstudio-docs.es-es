@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5f9afe4bb5087c7589415a6ae7fc143f5fd01b21
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 4b2870a50f4ab8bb0358e2e38529e996b143b7ae
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63413218"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66202379"
 ---
 # <a name="idebugprocess3execute"></a>IDebugProcess3::Execute
 Continúa la ejecución de este proceso de un estado detenido. Cualquier estado de ejecución anterior (por ejemplo, un paso) está desactivada y el proceso comienza a ejecutarse de nuevo.
@@ -39,10 +42,9 @@ int Execute(
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `pThread`
-
- [in] Un [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) objeto que representa la ejecución del subproceso.
+## <a name="parameters"></a>Parámetros
+`pThread`\
+[in] Un [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) objeto que representa la ejecución del subproceso.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve el código de error.

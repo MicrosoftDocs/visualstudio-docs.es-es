@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77d92a65b77cbec94a6c74852393627af6763bad
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 88eb307836fa2a340ec3ba99577fc0be76352958
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62917389"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66200395"
 ---
 # <a name="idebugprogram2enumcodecontexts"></a>IDebugProgram2::EnumCodeContexts
 Recupera una lista de los contextos de código para una posición determinada en un archivo de origen.
@@ -38,14 +41,11 @@ int EnumCodeContexts( 
 );
 ```
 
-#### <a name="parameters"></a>Parámetros
- `pDocPos`
+## <a name="parameters"></a>Parámetros
+`pDocPos`\
+[in] Un [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md) objeto que representa una posición abstracta en un archivo de origen que se sabe que el IDE.
 
- [in] Un [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md) objeto que representa una posición abstracta en un archivo de origen que se sabe que el IDE.
-
- `ppEnum`
-
- [out] Devuelve un [IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md) objeto que contiene una lista de los contextos de código.
+`ppEnum` [out] Devuelve un [IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md) objeto que contiene una lista de los contextos de código.
 
 ## <a name="return-value"></a>Valor devuelto
  Si es correcto, devuelve `S_OK`; en caso contrario, devuelve un código de error.
