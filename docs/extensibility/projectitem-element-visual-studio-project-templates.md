@@ -9,17 +9,17 @@ helpviewer_keywords:
 - ProjectItem element [Visual Studio project templates]
 - <ProjectItem> element [Visual Studio project templates]
 ms.assetid: 82879fbe-7756-42cd-9a07-c10edf5b4673
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1bb7766d96e142fc9208b2e102c2dc57059212d8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 09f062575cc7d0978fbacede32cfe22d0f98a71c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434807"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66335962"
 ---
 # <a name="projectitem-element-visual-studio-project-templates"></a>ProjectItem (elemento) (plantillas de proyecto de Visual Studio)
 Especifica un archivo que se incluye en la plantilla de proyecto.
@@ -92,7 +92,7 @@ Especifica un archivo que se incluye en la plantilla de proyecto.
    <ProjectItem TargetFileName="$safeprojectname$.vb">MyFile.vb</ProjectItem>
    ```
 
-2. Abra el archivo de proyecto (*.vbproj* para un [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] proyecto) en un editor de texto o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+2. Abra el archivo de proyecto ( *.vbproj* para un [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] proyecto) en un editor de texto o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
 
 3. Busque la línea en el archivo de proyecto que tiene un aspecto similar al siguiente XML:
 

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - BP_FLAGS enumeration
 ms.assetid: c45dfc74-5e7f-4f1e-a147-ab2a55dccbd0
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe346d708110cf16b85e84d61aeb25ee335c0e96
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 31f5153c3a2d0b55829a7743840fe8a791f023d0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56688438"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66319226"
 ---
 # <a name="bpflags"></a>BP_FLAGS
 Proporciona marcas opcionales que pueden utilizarse para especificar información adicional al establecer un punto de interrupción.
@@ -41,12 +44,15 @@ public enum enum_BP_FLAGS {
 };
 ```
 
-## <a name="members"></a>Miembros
-BP_FLAG_NONE se especifica ninguna marca de punto de interrupción.
+## <a name="fields"></a>Campos
+`BP_FLAG_NONE`\
+No especifica ninguna marca de punto de interrupción.
 
-BP_FLAG_MAP_DOCPOSITION especifica que el motor de depuración (DE) debe asignar el punto de interrupción con la posición del documento. Esto solo es aplicable a puntos de interrupción establecidos en archivos de origen orientado a secuencias de comandos, como las páginas Active Server (ASP).
+`BP_FLAG_MAP_DOCPOSITION`\
+Especifica que el motor de depuración (DE) debe asignar el punto de interrupción con la posición del documento. Esto solo es aplicable a puntos de interrupción establecidos en archivos de origen orientado a secuencias de comandos, como las páginas Active Server (ASP).
 
-BP_FLAG_DONT_STOP especifica que el punto de interrupción debe ser procesado por el motor de depuración, pero que el motor de depuración en última instancia, no debería detener allí (es decir, un [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md) no se debe enviar el objeto de evento). Esta marca está diseñada para su uso principalmente con puntos de seguimiento.
+`BP_FLAG_DONT_STOP`\
+Especifica que el punto de interrupción debe procesarse por el motor de depuración, pero que el motor de depuración en última instancia, no debería detener allí (es decir, un [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md) no se debe enviar el objeto de evento). Esta marca está diseñada para su uso principalmente con puntos de seguimiento.
 
 ## <a name="remarks"></a>Comentarios
 Utilizado para la `dwFlags` miembro de la [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) y [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) estructuras.

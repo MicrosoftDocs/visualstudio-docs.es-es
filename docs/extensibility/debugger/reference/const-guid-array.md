@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - CONST_GUID_ARRAY structure
 ms.assetid: bd55e7d8-372c-4c3e-9eed-28f6b415a5db
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bca2d50cc678efe3373aace28343ac3732dd00c6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 4eb1cf0a94a427363bc54b7b204f20d9447db0c0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696069"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66346517"
 ---
 # <a name="constguidarray"></a>CONST_GUID_ARRAY
 Una estructura que contiene una lista de `GUID`s.
@@ -39,9 +42,11 @@ public struct CONST_GUID_ARRAY {
 ```
 
 ## <a name="members"></a>Miembros
-Número de dwCount de `GUID`s en el `Members` matriz.
+`dwCount`\
+Número de `GUID`s en el `Members` matriz.
 
-Matriz de miembros de `GUID`s.
+`Members`\
+Matriz de `GUID`s.
 
 ## <a name="remarks"></a>Comentarios
 Esta estructura se pasa a la [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) método y se devuelve desde el [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) y [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md) métodos.

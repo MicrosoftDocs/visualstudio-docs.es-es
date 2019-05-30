@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEvent2 interface
 ms.assetid: de3d714d-96fb-4e12-b66b-a75391472153
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e70767bab6453f3c3d96b58c8be049a832dc6ad
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: f87184481c5d01e74d284b175078b67f6f2612d1
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62920193"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66310593"
 ---
 # <a name="idebugevent2"></a>IDebugEvent2
 Esta interfaz se utiliza para comunicar información de depuración importante, como detener en un punto de interrupción y la información no críticos, como un mensaje de depuración.

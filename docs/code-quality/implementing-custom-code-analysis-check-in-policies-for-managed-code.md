@@ -1,5 +1,5 @@
 ---
-title: Implementar directivas de protección de análisis de código personalizadas para el código administrado
+title: Código personalizado en comprobación de directivas de análisis para código administrado
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c32164ef319199171b75379823dc021cfd886d74
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6619e3bb988a555fba5718f609ff3a5f0584063b
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62815795"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66260838"
 ---
 # <a name="implement-custom-code-analysis-check-in-policies-for-managed-code"></a>Implementar directivas de inserción en el repositorio de análisis de código personalizadas para el código administrado
 
@@ -79,7 +79,7 @@ Para crear una regla personalizada establecido para un proyecto de DevOps de Azu
 
 3. En el **directiva de protección** lista, haga doble clic en **análisis de código**y asegúrese de que el **aplicar análisis de código para código administrado** casilla está activada.
 
-4. En el **ejecutar este conjunto de reglas** lista, haga clic en  **\<Seleccionar conjunto de reglas de Control de código fuente >**.
+4. En el **ejecutar este conjunto de reglas** lista, haga clic en  **\<Seleccionar conjunto de reglas de Control de código fuente >** .
 
 5. Escriba la ruta de acceso del archivo de conjunto de regla de directiva de protección en el control de versiones.
 
@@ -114,6 +114,6 @@ Especifique una regla de directiva de protección del proyecto se establece como
 
 6. Para omitir el código en componentes de otras empresas, seleccione el **Suprimir resultados del código generado** casilla de verificación.
 
-7. En el **ejecutar este conjunto de reglas** lista, haga clic en  **\<Examinar... >**.
+7. En el **ejecutar este conjunto de reglas** lista, haga clic en  **\<Examinar... >** .
 
 8. Especifique la versión local del archivo de conjunto de regla de directiva de protección.

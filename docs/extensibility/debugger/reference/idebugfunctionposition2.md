@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugFunctionPosition2 interface
 ms.assetid: a835f65b-91b0-48ad-8485-04534c814b1b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: faed38853aa7d0d925a3b1e598627cf1a55166d1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 19b9fbe16abec97ef29794b66cc4fe92631ca0af
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62919221"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66313253"
 ---
 # <a name="idebugfunctionposition2"></a>IDebugFunctionPosition2
 Esta interfaz representa una posición abstracta de una función en un documento de origen.

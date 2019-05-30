@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy
 ms.assetid: 741d45f5-0ea3-4614-972a-8728fe054e07
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 044bf36845be70290291b79dee255c452f56f0a0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 01ec3adf0c5d88fb3cdd6344e129c20aab9d577f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62907479"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66344102"
 ---
 # <a name="legacy-interfaces-in-the-editor"></a>Interfaces heredadas en el editor
 El editor de Visual Studio puede tener acceso desde las interfaces heredadas. El SDK de Visual Studio incluye los adaptadores que se conoce como *las correcciones de compatibilidad*, que permiten estas interfaces interactuar con el nuevo editor. No obstante, se recomienda que actualice el código heredado para usar el nuevo editor de API. El código funcionará mejor y puede usar las nuevas tecnologías como Windows Presentation Foundation (WPF) y Managed Extensibility Framework (MEF).

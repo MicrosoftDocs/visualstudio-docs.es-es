@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Agregar un publicador de confianza en un equipo cliente para aplicaciones ClickOnce | Documentos de Microsoft
+title: Agregar publicador de confianza para el equipo cliente para las aplicaciones ClickOnce
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 42fdbcb3da2e2b3c335b55ca66449d6264c2cf16
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 426096670df1099568cadc2af68ae0ff50ca71e5
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63407611"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263158"
 ---
 # <a name="how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications"></a>Procedimiento Adición de un publicador de confianza a un equipo cliente para aplicaciones ClickOnce
 Con la implementación de aplicaciones de confianza, puede configurar equipos cliente para que las aplicaciones [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] se ejecuten con un nivel superior de confianza sin preguntar al usuario. En los procedimientos siguientes se muestra cómo usar la herramienta de línea de comandos CertMgr.exe para agregar el certificado de un publicador al almacén de publicadores de confianza de un equipo cliente.
@@ -38,7 +38,7 @@ Con la implementación de aplicaciones de confianza, puede configurar equipos cl
 
 1. Obtenga un certificado digital de una CA.
 
-2. Exporte el certificado en el formato Base64 X.509 (*.cer*). Para obtener más información sobre los formatos de certificado, vea [Exportar un certificado](http://go.microsoft.com/fwlink/?LinkId=164793).
+2. Exporte el certificado en el formato Base64 X.509 ( *.cer*). Para obtener más información sobre los formatos de certificado, vea [Exportar un certificado](http://go.microsoft.com/fwlink/?LinkId=164793).
 
 3. Desde el símbolo del sistema en los equipos cliente, ejecute el comando siguiente:
 
@@ -48,7 +48,7 @@ Con la implementación de aplicaciones de confianza, puede configurar equipos cl
 
 1. Obtenga un certificado digital de una CA.
 
-2. Exporte el certificado en el formato Base64 X.509 (*.cer*). Para obtener más información sobre los formatos de certificado, consulte [Exportar un certificado](http://go.microsoft.com/fwlink/?LinkId=164793).
+2. Exporte el certificado en el formato Base64 X.509 ( *.cer*). Para obtener más información sobre los formatos de certificado, consulte [Exportar un certificado](http://go.microsoft.com/fwlink/?LinkId=164793).
 
 3. Desde el símbolo del sistema en los equipos cliente, ejecute el comando siguiente:
 

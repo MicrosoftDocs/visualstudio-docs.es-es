@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - DOCCONTEXT_COMPARE enumeration
 ms.assetid: ed947c34-b07e-4b69-8381-b6e7cb842862
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e36e9c3c0870cb81dd02f646636eeb758f1ddb62
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: f31b33eeb782e71a87103d26a3bb78175611644e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56686254"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318144"
 ---
 # <a name="doccontextcompare"></a>DOCCONTEXT_COMPARE
 Especifica los criterios para comparar dos contextos de documento.
@@ -43,14 +46,18 @@ enum enum_DOCCONTEXT_COMPARE {
 };
 ```
 
-## <a name="members"></a>Miembros
-DOCCONTEXT_EQUAL buscar el primer contexto del documento en la lista que es igual que el contexto del documento de destino.
+## <a name="fields"></a>Campos
+`DOCCONTEXT_EQUAL`\
+Busque el primer contexto del documento en la lista que es igual que el contexto del documento de destino.
 
-DOCCONTEXT_LESS_THAN buscar el primer contexto del documento en la lista que es menor que el contexto del documento de destino.
+`DOCCONTEXT_LESS_THAN`\
+Busque el primer contexto del documento en la lista que es menor que el contexto del documento de destino.
 
-DOCCONTEXT_GREATER_THAN buscar el primer contexto del documento en la lista que es mayor que el contexto del documento de destino.
+`DOCCONTEXT_GREATER_THAN`\
+Busque el primer contexto del documento en la lista que es mayor que el contexto del documento de destino.
 
-DOCCONTEXT_SAME_DOCUMENT buscar el primer contexto del documento en la lista que se encuentra en el mismo documento que el contexto del documento de destino.
+`DOCCONTEXT_SAME_DOCUMENT`\
+Busque el primer contexto del documento en la lista que se encuentra en el mismo documento que el contexto del documento de destino.
 
 ## <a name="remarks"></a>Comentarios
 Se pasa como argumento a la [comparar](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md) método.

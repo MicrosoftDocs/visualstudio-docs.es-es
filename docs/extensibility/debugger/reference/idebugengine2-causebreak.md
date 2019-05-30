@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngine2::CauseBreak
 ms.assetid: 17fe4698-b04e-4798-8412-80e0da60c387
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa0d559887019a697b820a5a6c91f80b78c6b713
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 93f9937609a09439b265946e76f0af0381d488f1
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62920960"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66330129"
 ---
 # <a name="idebugengine2causebreak"></a>IDebugEngine2::CauseBreak
 Las solicitudes de todos los programas que se está depurando por el motor de depuración (DE) para detener la ejecución de la próxima vez que uno de sus subprocesos intenta ejecutar.

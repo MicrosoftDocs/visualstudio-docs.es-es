@@ -5,17 +5,17 @@ ms.topic: reference
 helpviewer_keywords:
 - structures [Visual Studio SDK]
 ms.assetid: 9ff0a8f8-1ee6-4fdd-8b80-206436ff589b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7522e1c00598574e46e1f23622f0e051fcfb2c4e
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 2da39e0327f9a0be2cf0f61227de5ea51af03285
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65460865"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66329115"
 ---
 # <a name="structures-and-unions"></a>Estructuras y uniones
 Los siguientes son estructuras y uniones en el SDK de depuración de Visual Studio.

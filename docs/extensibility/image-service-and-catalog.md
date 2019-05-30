@@ -3,17 +3,17 @@ title: Servicio y el catálogo de imágenes | Microsoft Docs
 ms.date: 04/01/2019
 ms.topic: conceptual
 ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e76f3dfdb6ce8890387a85be474bac4d0f605777
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7a7f5aea9c0706257fdfaa383b82acd6d42ac13a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62911241"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66321548"
 ---
 # <a name="image-service-and-catalog"></a>Catálogo y servicio de imágenes
 Esta guía contiene instrucciones y procedimientos recomendados para adoptar el servicio de imágenes de Visual Studio y el catálogo de imágenes que se introdujo en Visual Studio 2015.
@@ -66,7 +66,7 @@ Esta guía contiene instrucciones y procedimientos recomendados para adoptar el 
 
   **Archivos de manifiesto de imagen**
 
-  Manifiesto de imagen (*.imagemanifest*) archivos son archivos XML que definen un conjunto de activos de imagen, los monikers que representan esos recursos y la imagen real o imágenes que representan cada activo. Manifiestos de la imagen pueden definir imágenes independientes o listas de imágenes para admitir código heredado de la interfaz de usuario. Además, hay atributos que se pueden establecer en el recurso o en las imágenes individuales detrás de cada recurso para cambiar cuándo y cómo se muestran estos activos.
+  Manifiesto de imagen ( *.imagemanifest*) archivos son archivos XML que definen un conjunto de activos de imagen, los monikers que representan esos recursos y la imagen real o imágenes que representan cada activo. Manifiestos de la imagen pueden definir imágenes independientes o listas de imágenes para admitir código heredado de la interfaz de usuario. Además, hay atributos que se pueden establecer en el recurso o en las imágenes individuales detrás de cada recurso para cambiar cuándo y cómo se muestran estos activos.
 
   **Esquema del manifiesto de imagen**
 
@@ -283,9 +283,9 @@ Esta guía contiene instrucciones y procedimientos recomendados para adoptar el 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
-- **VsDpiAwareness.h**  
+- **VsDpiAwareness.h**
 
-    - Es necesario si se usan las aplicaciones auxiliares de reconocimiento de PPP para obtener el valor de PPP actual.  
+    - Es necesario si se usan las aplicaciones auxiliares de reconocimiento de PPP para obtener el valor de PPP actual.
 
 ::: moniker-end
 
@@ -351,49 +351,49 @@ CGlobalServiceProvider::HrQueryService(SID_SVsImageService, &spImgSvc);
 
 ::: moniker range="vs-2017"
 
-```cpp  
-ImageAttributes attr = { 0 };  
-attr.StructSize      = sizeof(attributes);  
-attr.Format          = DF_Win32;  
-// IT_Bitmap for HBITMAP, IT_Icon for HICON, IT_ImageList for HIMAGELIST  
-attr.ImageType       = IT_Bitmap;  
-attr.LogicalWidth    = 16;  
-attr.LogicalHeight   = 16;  
-attr.Dpi             = VsUI::DpiHelper::GetDeviceDpiX();  
-// Desired RGBA color, if you don't use this, don't set IAF_Background below  
-attr.Background      = 0xFFFFFFFF;  
-attr.Flags           = IAF_RequiredFlags | IAF_Background;  
+```cpp
+ImageAttributes attr = { 0 };
+attr.StructSize      = sizeof(attributes);
+attr.Format          = DF_Win32;
+// IT_Bitmap for HBITMAP, IT_Icon for HICON, IT_ImageList for HIMAGELIST
+attr.ImageType       = IT_Bitmap;
+attr.LogicalWidth    = 16;
+attr.LogicalHeight   = 16;
+attr.Dpi             = VsUI::DpiHelper::GetDeviceDpiX();
+// Desired RGBA color, if you don't use this, don't set IAF_Background below
+attr.Background      = 0xFFFFFFFF;
+attr.Flags           = IAF_RequiredFlags | IAF_Background;
 
-CComPtr<IVsUIObject> spImg;  
-// Replace this KnownMoniker with your desired ImageMoniker  
-spImgSvc->GetImage(KnownMonikers::Blank, attributes, &spImg);  
-```  
+CComPtr<IVsUIObject> spImg;
+// Replace this KnownMoniker with your desired ImageMoniker
+spImgSvc->GetImage(KnownMonikers::Blank, attributes, &spImg);
+```
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-```cpp 
+```cpp
 UINT dpiX, dpiY;
 HWND hwnd = // get the HWND where the image will be displayed
 VsUI::CDpiAwareness::GetDpiForWindow(hwnd, &dpiX, &dpiY);
- 
-ImageAttributes attr = { 0 };  
-attr.StructSize      = sizeof(attributes);  
-attr.Format          = DF_Win32;  
-// IT_Bitmap for HBITMAP, IT_Icon for HICON, IT_ImageList for HIMAGELIST  
-attr.ImageType       = IT_Bitmap;  
-attr.LogicalWidth    = 16;  
-attr.LogicalHeight   = 16;  
-attr.Dpi             = dpiX;
-// Desired RGBA color, if you don't use this, don't set IAF_Background below  
-attr.Background      = 0xFFFFFFFF;  
-attr.Flags           = IAF_RequiredFlags | IAF_Background;  
 
-CComPtr<IVsUIObject> spImg;  
-// Replace this KnownMoniker with your desired ImageMoniker  
-spImgSvc->GetImage(KnownMonikers::Blank, attributes, &spImg);  
-```  
+ImageAttributes attr = { 0 };
+attr.StructSize      = sizeof(attributes);
+attr.Format          = DF_Win32;
+// IT_Bitmap for HBITMAP, IT_Icon for HICON, IT_ImageList for HIMAGELIST
+attr.ImageType       = IT_Bitmap;
+attr.LogicalWidth    = 16;
+attr.LogicalHeight   = 16;
+attr.Dpi             = dpiX;
+// Desired RGBA color, if you don't use this, don't set IAF_Background below
+attr.Background      = 0xFFFFFFFF;
+attr.Flags           = IAF_RequiredFlags | IAF_Background;
+
+CComPtr<IVsUIObject> spImg;
+// Replace this KnownMoniker with your desired ImageMoniker
+spImgSvc->GetImage(KnownMonikers::Blank, attributes, &spImg);
+```
 
 ::: moniker-end
 
@@ -418,55 +418,55 @@ IVsImageService2 imageService = (IVsImageService2)Package.GetGlobalService(typeo
 
 ::: moniker range="vs-2017"
 
-```csharp  
-ImageAttributes attributes = new ImageAttributes  
-{  
-    StructSize    = Marshal.SizeOf(typeof(ImageAttributes)),  
-    // IT_Bitmap for Bitmap, IT_Icon for Icon, IT_ImageList for ImageList  
-    ImageType     = (uint)_UIImageType.IT_Bitmap,  
-    Format        = (uint)_UIDataFormat.DF_WinForms,  
-    LogicalWidth  = 16,  
-    LogicalHeight = 16,  
-    Dpi           = (int)DpiHelper.DeviceDpiX;  
-    // Desired RGBA color, if you don't use this, don't set IAF_Background below  
-    Background    = 0xFFFFFFFF,  
-    Flags         = unchecked((uint)_ImageAttributesFlags.IAF_RequiredFlags | _ImageAttributesFlags.IAF_Background), 
-};  
+```csharp
+ImageAttributes attributes = new ImageAttributes
+{
+    StructSize    = Marshal.SizeOf(typeof(ImageAttributes)),
+    // IT_Bitmap for Bitmap, IT_Icon for Icon, IT_ImageList for ImageList
+    ImageType     = (uint)_UIImageType.IT_Bitmap,
+    Format        = (uint)_UIDataFormat.DF_WinForms,
+    LogicalWidth  = 16,
+    LogicalHeight = 16,
+    Dpi           = (int)DpiHelper.DeviceDpiX;
+    // Desired RGBA color, if you don't use this, don't set IAF_Background below
+    Background    = 0xFFFFFFFF,
+    Flags         = unchecked((uint)_ImageAttributesFlags.IAF_RequiredFlags | _ImageAttributesFlags.IAF_Background),
+};
 
-// Replace this KnownMoniker with your desired ImageMoniker  
-IVsUIObject uIObj = imageService.GetImage(KnownMonikers.Blank, attributes);  
+// Replace this KnownMoniker with your desired ImageMoniker
+IVsUIObject uIObj = imageService.GetImage(KnownMonikers.Blank, attributes);
 
-Bitmap bitmap = (Bitmap)GelUtilities.GetObjectData(uiObj); // Use this if you need a bitmap  
-// Icon icon = (Icon)GelUtilities.GetObjectData(uiObj);    // Use this if you need an icon  
-```  
+Bitmap bitmap = (Bitmap)GelUtilities.GetObjectData(uiObj); // Use this if you need a bitmap
+// Icon icon = (Icon)GelUtilities.GetObjectData(uiObj);    // Use this if you need an icon
+```
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-```csharp  
+```csharp
 Control control = // get the control where the image will be displayed
 
-ImageAttributes attributes = new ImageAttributes  
-{  
-    StructSize    = Marshal.SizeOf(typeof(ImageAttributes)),  
-    // IT_Bitmap for Bitmap, IT_Icon for Icon, IT_ImageList for ImageList  
-    ImageType     = (uint)_UIImageType.IT_Bitmap,  
-    Format        = (uint)_UIDataFormat.DF_WinForms,  
-    LogicalWidth  = 16,  
-    LogicalHeight = 16,  
-    Dpi           = (int)DpiAwareness.GetWindowDpi(control.Handle);  
-    // Desired RGBA color, if you don't use this, don't set IAF_Background below  
-    Background    = 0xFFFFFFFF,  
-    Flags         = unchecked((uint)_ImageAttributesFlags.IAF_RequiredFlags | _ImageAttributesFlags.IAF_Background),  
-};  
+ImageAttributes attributes = new ImageAttributes
+{
+    StructSize    = Marshal.SizeOf(typeof(ImageAttributes)),
+    // IT_Bitmap for Bitmap, IT_Icon for Icon, IT_ImageList for ImageList
+    ImageType     = (uint)_UIImageType.IT_Bitmap,
+    Format        = (uint)_UIDataFormat.DF_WinForms,
+    LogicalWidth  = 16,
+    LogicalHeight = 16,
+    Dpi           = (int)DpiAwareness.GetWindowDpi(control.Handle);
+    // Desired RGBA color, if you don't use this, don't set IAF_Background below
+    Background    = 0xFFFFFFFF,
+    Flags         = unchecked((uint)_ImageAttributesFlags.IAF_RequiredFlags | _ImageAttributesFlags.IAF_Background),
+};
 
-// Replace this KnownMoniker with your desired ImageMoniker  
-IVsUIObject uIObj = imageService.GetImage(KnownMonikers.Blank, attributes);  
+// Replace this KnownMoniker with your desired ImageMoniker
+IVsUIObject uIObj = imageService.GetImage(KnownMonikers.Blank, attributes);
 
-Bitmap bitmap = (Bitmap)GelUtilities.GetObjectData(uiObj); // Use this if you need a bitmap  
-// Icon icon = (Icon)GelUtilities.GetObjectData(uiObj);    // Use this if you need an icon  
-```  
+Bitmap bitmap = (Bitmap)GelUtilities.GetObjectData(uiObj); // Use this if you need a bitmap
+// Icon icon = (Icon)GelUtilities.GetObjectData(uiObj);    // Use this if you need an icon
+```
 
 ::: moniker-end
 
@@ -581,7 +581,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 [ProvideMenuResource("MyPackage.ctmenu", 1, IconMappingFilename="IconMappings.csv")]
 ```
 
- El **IconMappingFilename** es una ruta de acceso relativa con raíz implícita en $PackageFolder$ (como se muestra en el ejemplo anterior) o una ruta de acceso absoluta explícitamente cuya raíz comienza en un directorio definido por una variable de entorno, tales como *@"% UserProfile%\dir1\dir2\MyMappingFile.csv"*.
+ El **IconMappingFilename** es una ruta de acceso relativa con raíz implícita en $PackageFolder$ (como se muestra en el ejemplo anterior) o una ruta de acceso absoluta explícitamente cuya raíz comienza en un directorio definido por una variable de entorno, tales como *@"% UserProfile%\dir1\dir2\MyMappingFile.csv"* .
 
 ## <a name="how-do-i-port-a-project-system"></a>¿Cómo se puede portar un sistema de proyectos?
  **Cómo proporcionar ImageMonikers para un proyecto**
@@ -838,12 +838,12 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
         |GlyphGroupClass|GlyphItemProtected|ClassProtected|
         |GlyphGroupClass|GlyphItemPrivate|ClassPrivate|
         |GlyphGroupClass|GlyphItemShortcut|ClassShortcut|
-        |GlyphGroupConstant|GlyphItemPublic|ConstantPublic|  
-        |GlyphGroupConstant|GlyphItemInternal|ConstantInternal|  
-        |GlyphGroupConstant|GlyphItemFriend|ConstantInternal|  
-        |GlyphGroupConstant|GlyphItemProtected|ConstantProtected|  
-        |GlyphGroupConstant|GlyphItemPrivate|ConstantPrivate|  
-        |GlyphGroupConstant|GlyphItemShortcut|ConstantShortcut|  
+        |GlyphGroupConstant|GlyphItemPublic|ConstantPublic|
+        |GlyphGroupConstant|GlyphItemInternal|ConstantInternal|
+        |GlyphGroupConstant|GlyphItemFriend|ConstantInternal|
+        |GlyphGroupConstant|GlyphItemProtected|ConstantProtected|
+        |GlyphGroupConstant|GlyphItemPrivate|ConstantPrivate|
+        |GlyphGroupConstant|GlyphItemShortcut|ConstantShortcut|
         |GlyphGroupDelegate|GlyphItemPublic|DelegatePublic|
         |GlyphGroupDelegate|GlyphItemInternal|DelegateInternal|
         |GlyphGroupDelegate|GlyphItemFriend|DelegateInternal|
@@ -856,12 +856,12 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
         |GlyphGroupEnum|GlyphItemProtected|EnumerationProtected|
         |GlyphGroupEnum|GlyphItemPrivate|EnumerationPrivate|
         |GlyphGroupEnum|GlyphItemShortcut|EnumerationShortcut|
-        |GlyphGroupEnumMember|GlyphItemPublic|EnumerationItemPublic|  
-        |GlyphGroupEnumMember|GlyphItemInternal|EnumerationItemInternal|  
-        |GlyphGroupEnumMember|GlyphItemFriend|EnumerationItemInternal|  
-        |GlyphGroupEnumMember|GlyphItemProtected|EnumerationItemProtected|  
-        |GlyphGroupEnumMember|GlyphItemPrivate|EnumerationItemPrivate|  
-        |GlyphGroupEnumMember|GlyphItemShortcut|EnumerationItemShortcut|  
+        |GlyphGroupEnumMember|GlyphItemPublic|EnumerationItemPublic|
+        |GlyphGroupEnumMember|GlyphItemInternal|EnumerationItemInternal|
+        |GlyphGroupEnumMember|GlyphItemFriend|EnumerationItemInternal|
+        |GlyphGroupEnumMember|GlyphItemProtected|EnumerationItemProtected|
+        |GlyphGroupEnumMember|GlyphItemPrivate|EnumerationItemPrivate|
+        |GlyphGroupEnumMember|GlyphItemShortcut|EnumerationItemShortcut|
         |GlyphGroupEvent|GlyphItemPublic|EventPublic|
         |GlyphGroupEvent|GlyphItemInternal|EventInternal|
         |GlyphGroupEvent|GlyphItemFriend|EventInternal|

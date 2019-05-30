@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugObject::SetValue method
 ms.assetid: d652e09c-cdc1-4519-8116-d7c743f5679b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fec036357fb92563eba81c919ab32fea2e58c3b3
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: a9c6590c45027eb3dce28e2dbac182a967e87d59
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66211277"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318947"
 ---
 # <a name="idebugobjectsetvalue"></a>IDebugObject::SetValue
 Establece el valor del objeto de una serie de bytes consecutiva.

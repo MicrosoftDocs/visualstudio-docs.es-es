@@ -3,17 +3,17 @@ title: P+F Conversión de complementos en extensiones de VSPackage | Documentos 
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 3a01d333-6e31-423f-ae06-5091a4fcb7a9
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4678d79c7d2b1e19ab96502778ce51f8a3226010
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9e40d9b7ca3d942a78ef9045bc7aaa5d0f7ea74d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63417178"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66342655"
 ---
 # <a name="faq-converting-add-ins-to-vspackage-extensions"></a>P+F Conversión de complementos en extensiones de VSPackage
 Los complementos están desusados. Para realizar una nueva extensión de Visual Studio, deberá crear una extensión VSIX. Estas son las respuestas a algunas preguntas frecuentes acerca de cómo convertir un complemento de Visual Studio en una extensión VSIX.
@@ -52,7 +52,7 @@ Los complementos están desusados. Para realizar una nueva extensión de Visual 
 
    Se muestra una segunda instancia de Visual Studio. Esta segunda instancia se llama instancia experimental, y puede que no tenga la misma configuración que la instancia de Visual Studio que está usando para escribir código. La primera vez que ejecute la instancia experimental se le pedirá que inicie sesión en VS Online y especifique el tema y el perfil.
 
-   En el **herramientas** menú (en la instancia experimental) debería ver un botón denominado **My Command name**. Cuando seleccione este botón, aparecerá un mensaje: **Inside TestVSPackagePackage.MenuItemCallback()**.
+   En el **herramientas** menú (en la instancia experimental) debería ver un botón denominado **My Command name**. Cuando seleccione este botón, aparecerá un mensaje: **Inside TestVSPackagePackage.MenuItemCallback()** .
 
 ## <a name="BKMK_RunAddin"></a> ¿Cómo se puede ejecutar código de mi complemento en un VSPackage?
 

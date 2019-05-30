@@ -4,16 +4,16 @@ ms.date: 06/25/2017
 ms.topic: conceptual
 ms.assetid: 2d6cf53c-011e-4c9e-9935-417edca8c486
 author: willbrown
-ms.author: gregvanl
+ms.author: madsk
 manager: justinclareburt
 ms.workload:
 - willbrown
-ms.openlocfilehash: 1014d76473511df9b73cae371e5e5dea2364f8b2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4680adaf23abd01e72901c9a470633addbf0d924
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62862825"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66324893"
 ---
 # <a name="how-to-make-extensions-compatible-with-visual-studio-2017-and-visual-studio-2015"></a>Procedimiento Crear extensiones compatibles con Visual Studio 2017 y Visual Studio 2015
 
@@ -51,7 +51,7 @@ Se recomienda iniciar esta actualización con Visual Studio 2015, en lugar de Vi
 
 ## <a name="ensure-there-is-no-reference-to-projectjson"></a>Asegúrese de que no hay ninguna referencia de project.json
 
-Más adelante en este documento, se insertará instrucciones de importación condicional en para su **.csproj* archivo. Esto no funcionará si se almacenan las referencias de NuGet en *project.json*. Por lo tanto, se recomienda para mover todas las referencias de NuGet para la *packages.config* archivo.
+Más adelante en este documento, se insertará instrucciones de importación condicional en para su * *.csproj* archivo. Esto no funcionará si se almacenan las referencias de NuGet en *project.json*. Por lo tanto, se recomienda para mover todas las referencias de NuGet para la *packages.config* archivo.
 Si el proyecto contiene un *project.json* archivo:
 
 * Tome nota de las referencias de *project.json*.
@@ -69,7 +69,7 @@ Para asegurarse de que necesitamos agregar herramientas de compilación que nos 
 
 Para compilar e implementar un VSIXv3 en Visual Studio 2015 y 2017, necesita los siguientes paquetes NuGet:
 
-`Version` | Herramientas integradas
+Versión | Herramientas integradas
 --- | ---
 Visual Studio 2015 | Microsoft.VisualStudio.Sdk.BuildTasks.14.0
 Visual Studio 2017 | Microsoft.VSSDK.BuildTool

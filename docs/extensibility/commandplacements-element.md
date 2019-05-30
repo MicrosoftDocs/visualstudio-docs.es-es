@@ -8,17 +8,17 @@ helpviewer_keywords:
 - CommandPlacements element (VSCT XML schema)
 - VSCT XML schema elements, CommandPlacements
 ms.assetid: 78a5724a-3b9f-4c78-9c0d-8faa3924f81c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fcacd56700867682e10ead8e46cfdadcdc66b31d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bb22359c936caacef81f4c9b81993a46d47ccc0b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62926876"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66341884"
 ---
 # <a name="commandplacements-element"></a>CommandPlacements (elemento)
 El elemento CommandPlacements agrupa elementos CommandPlacement y otras agrupaciones CommandPlacements.

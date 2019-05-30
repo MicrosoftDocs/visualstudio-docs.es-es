@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugPrograms2
 ms.assetid: 7fbb8fb7-db64-4546-a364-dc668430c8af
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ac9b23c40b7481fc7520b109afc7d23864582548
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: fd50186abbf94ae294c346a5981bee14f45820fe
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65225695"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66317108"
 ---
 # <a name="ienumdebugprograms2"></a>IEnumDebugPrograms2
 Esta interfaz enumera los programas que se ejecutan en la sesión de depuración actual.

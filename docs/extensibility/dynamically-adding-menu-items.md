@@ -7,20 +7,20 @@ helpviewer_keywords:
 - menu items, adding dynamically
 - menus, adding dynamic items
 ms.assetid: d281e9c9-b289-4d64-8d0a-094bac6c333c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 18c2100341a62abd0f8f12bd4b459c7e271a15bc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 619c06d23e3bc1abfce1473627fb483612766728
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62912525"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353395"
 ---
 # <a name="dynamically-add-menu-items"></a>Agregar dinámicamente elementos de menú
-Puede agregar elementos de menú en tiempo de ejecución mediante la especificación de la `DynamicItemStart` comando marca en una definición de botón de marcador de posición en la tabla de comandos de Visual Studio (*.vsct*) archivo y, después, definir (en código) el número de elementos de menú para mostrar y los comandos de control. Cuando se carga el VSPackage, el marcador de posición se reemplaza con los elementos de menú dinámico.
+Puede agregar elementos de menú en tiempo de ejecución mediante la especificación de la `DynamicItemStart` comando marca en una definición de botón de marcador de posición en la tabla de comandos de Visual Studio ( *.vsct*) archivo y, después, definir (en código) el número de elementos de menú para mostrar y los comandos de control. Cuando se carga el VSPackage, el marcador de posición se reemplaza con los elementos de menú dinámico.
 
  Visual Studio usa las listas dinámicas en la **usados más recientemente** lista (MRU), que muestra los nombres de los documentos que se han abierto recientemente, y el **Windows** lista, que muestra los nombres de windows que están actualmente abiertas.   El `DynamicItemStart` marca en una definición de comando Especifica que el comando es un marcador de posición hasta que se abre el VSPackage. Cuando se abre el paquete VSPackage, el marcador de posición se reemplaza con 0 o más comandos que se crean en tiempo de ejecución y se agrega a la lista dinámica. Es posible que no pueda ver la posición en el menú donde aparezca la lista dinámico hasta que se abre el VSPackage.  Para rellenar la lista dinámica, Visual Studio le pide el VSPackage para buscar un comando con un identificador cuyos primeros caracteres son los mismos que el identificador del marcador de posición. Cuando Visual Studio se encuentra un comando de búsqueda de coincidencias, agrega el nombre del comando a la lista dinámica. A continuación, incrementa el identificador y busca otro comando coincidente para agregar a la lista dinámica hasta que no existen comandos dinámicos no más.
 

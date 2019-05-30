@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - DUMPTYPE enumeration
 ms.assetid: ea8160db-8732-4056-a1d7-892ef72da71e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 07525b118d2a9ee27c52c87e68dd078d0a67054c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7edb3129733aec29bb5eda64d388024bec4d5ece
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56697137"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318191"
 ---
 # <a name="dumptype"></a>DUMPTYPE
 Especifica qué parte del estado de un programa (por ejemplo, los subprocesos en ejecución, marcos de pila y dirección de la instrucción actual) para volcar.
@@ -39,10 +42,12 @@ public enum enum_DUMPTYPE {
 };
 ```
 
-## <a name="members"></a>Miembros
-DUMP_MINIDUMP especifica un volcado de memoria pequeño y compacto.
+## <a name="fields"></a>Campos
+`DUMP_MINIDUMP`\
+Especifica un volcado de memoria pequeño y compacto.
 
-DUMP_FULLDUMP especifica un volcado de memoria grande, completa.
+`DUMP_FULLDUMP`\
+Especifica un volcado de memoria grande, completa.
 
 ## <a name="remarks"></a>Comentarios
 Se pasa como argumento a la [WriteDump](../../../extensibility/debugger/reference/idebugprogram2-writedump.md) método.

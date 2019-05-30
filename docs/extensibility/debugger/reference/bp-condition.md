@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - BP_CONDITION structure
 ms.assetid: 407f87a3-2878-429b-8c65-b68feb36622a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9c37699e965698b4f5700bc1994ba25c8c0bbbd5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e20db594fcc00f641634bfaae8d5342d4b520d7f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722322"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66337422"
 ---
 # <a name="bpcondition"></a>BP_CONDITION
 Describe las condiciones en las que se desencadena un punto de interrupción.
@@ -45,15 +48,20 @@ public struct BP_CONDITION {
 ```
 
 ## <a name="members"></a>Miembros
-`pThread` El [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) objeto que representa el subproceso activo para la aplicación que contiene el punto de interrupción.
+`pThread`\
+El [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) objeto que representa el subproceso activo para la aplicación que contiene el punto de interrupción.
 
-`styleCondition` Un valor de la [BP_COND_STYLE](../../../extensibility/debugger/reference/bp-cond-style.md) enumeración que describe el estilo de esta condición de punto de interrupción.
+`styleCondition`\
+Un valor de la [BP_COND_STYLE](../../../extensibility/debugger/reference/bp-cond-style.md) enumeración que describe el estilo de esta condición de punto de interrupción.
 
-`bstrContext` La ubicación del punto de interrupción.
+`bstrContext`\
+La ubicación del punto de interrupción.
 
-`bstrCondition` La condición de activación del punto de interrupción.
+`bstrCondition`\
+La condición de activación del punto de interrupción.
 
-`nRadix` Base que se utiliza para evaluar cualquier información numérica.
+`nRadix`\
+Base que se utiliza para evaluar cualquier información numérica.
 
 ## <a name="remarks"></a>Comentarios
 Esta estructura es un miembro de la [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) y [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) estructuras.

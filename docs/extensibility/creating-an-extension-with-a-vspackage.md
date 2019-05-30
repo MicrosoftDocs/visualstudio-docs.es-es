@@ -3,17 +3,17 @@ title: Creación de una extensión con un VSPackage | Microsoft Docs
 ms.date: 3/16/2019
 ms.topic: conceptual
 ms.assetid: c0cc5e08-4897-44f2-8309-e3478f1f999e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a0d76e0055c4bae6df270a304364c80cd945f4a1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6b66aef72d9af1ef40a061d1a82d18161a416586
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62891037"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66345364"
 ---
 # <a name="create-an-extension-with-a-vspackage"></a>Crear una extensión con un VSPackage
 
@@ -27,7 +27,7 @@ A partir de Visual Studio 2015, no instale el SDK de Visual Studio desde el cent
 
 1. Cree un proyecto VSIX denominado **FirstPackage**. Puede encontrar la plantilla de proyecto VSIX en el **nuevo proyecto** diálogo buscando "vsix".
 
-2. Cuando se abre el proyecto, agregue una plantilla de elemento del paquete de Visual Studio denominada **FirstPackage**. En el **el Explorador de soluciones**, haga clic en el nodo del proyecto y seleccione **agregar** > **nuevo elemento**. En el **Agregar nuevo elemento** cuadro de diálogo, vaya a **Visual C#** > **extensibilidad** y seleccione **paquete de Visual Studio**. En el **nombre** campo en la parte inferior de la ventana, cambie el nombre de archivo de comandos para *FirstPackage.cs*.
+2. Cuando se abre el proyecto, agregue una plantilla de elemento del paquete de Visual Studio denominada **FirstPackage**. En el **el Explorador de soluciones**, haga clic en el nodo del proyecto y seleccione **agregar** > **nuevo elemento**. En el **Agregar nuevo elemento** cuadro de diálogo, vaya a **Visual C#**  > **extensibilidad** y seleccione **paquete de Visual Studio**. En el **nombre** campo en la parte inferior de la ventana, cambie el nombre de archivo de comandos para *FirstPackage.cs*.
 
 3. Compile la solución y comience la depuración.
 
@@ -76,4 +76,4 @@ En este momento, la extensión no se carga porque no hay nada que hace que vuelv
 
 3. Compile la solución y comience la depuración. Aparece la instancia experimental.
 
-4. Abra una solución en la instancia experimental. Debería ver un cuadro de mensaje que dice **primer paquete dentro de Initialize()**.
+4. Abra una solución en la instancia experimental. Debería ver un cuadro de mensaje que dice **primer paquete dentro de Initialize()** .

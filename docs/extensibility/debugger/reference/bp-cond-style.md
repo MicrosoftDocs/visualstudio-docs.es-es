@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - BP_COND_STYLE enumeration
 ms.assetid: a93b1412-f447-48a1-af9d-38f3dbb3092f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 70ab3655d27e810b3c05d0e0e81d81bc15a26950
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ded3d31f9be2d0a02a238ead4bc989cc21b4922a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56685864"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351825"
 ---
 # <a name="bpcondstyle"></a>BP_COND_STYLE
 Especifica el estilo de condición de punto de interrupción para pendientes y puntos de interrupción enlazados.
@@ -41,12 +44,15 @@ public enum enum_BP_COND_STYLE {
 };
 ```
 
-## <a name="members"></a>Miembros
-BP_COND_NONE desencadena el punto de interrupción cuando se alcanza la posición del punto de interrupción. No se especifica ninguna condición de punto de interrupción.
+## <a name="fields"></a>Campos
+`BP_COND_NONE`\
+Se desencadena el punto de interrupción cuando se alcanza la posición del punto de interrupción. No se especifica ninguna condición de punto de interrupción.
 
-BP_COND_WHEN_TRUE desencadena el punto de interrupción solo cuando la expresión condicional asociado con el punto de interrupción se evalúa como `true`.
+`BP_COND_WHEN_TRUE`\
+Se desencadena el punto de interrupción solo cuando la expresión condicional asociado con el punto de interrupción se evalúa como `true`.
 
-Se desencadena BP_COND_WHEN_CHANGED el punto de interrupción solo cuando el valor de la expresión condicional asociado con el punto de interrupción ha cambiado respecto a su evaluación anterior.
+`BP_COND_WHEN_CHANGED`\
+Se desencadena el punto de interrupción solo cuando el valor de la expresión condicional asociado con el punto de interrupción se ha cambiado respecto a su evaluación anterior.
 
 ## <a name="remarks"></a>Comentarios
 Utilizado para la `styleCondition` miembro de la [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) estructura.

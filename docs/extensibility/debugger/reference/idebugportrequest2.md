@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortRequest2 interface
 ms.assetid: 556e610d-7c4b-44a8-965a-76a9d02b601a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8e2b78986b997358d7f15c9c8c73bb4bd0f73aaf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 83f70a9fe027f004ef3829827ba8af40f7fb72e3
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62871485"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66340313"
 ---
 # <a name="idebugportrequest2"></a>IDebugPortRequest2
 Esta interfaz describe un puerto. Esta descripción se utiliza para agregar el puerto a un proveedor de puerto.

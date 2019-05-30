@@ -9,17 +9,17 @@ helpviewer_keywords:
 - templates [Visual Studio], wizards
 - IWizard interface
 ms.assetid: 47ee26cf-67b7-4ff1-8a9d-ab11a725405c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c4ff83c2d4d28b6393f7f6d03b01e35d9cc0aa4f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 366244285892820039a5a0f7950a709d170b4527
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62911386"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352042"
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>Procedimiento Usar a asistentes con plantillas de proyecto
 
@@ -210,7 +210,7 @@ En el orden de la plantilla de proyecto personalizadas utilizar al Asistente per
 
 1. Firmar el ensamblado. En el **el Explorador de soluciones**, seleccione el proyecto VSIX, contextual y seleccione **las propiedades del proyecto**.
 
-2. En el **las propiedades del proyecto** ventana, seleccione el **firma** ficha en el **firma** pestaña **firmar el ensamblado**. En el **elegir un archivo de clave de nombre seguro** campos, seleccione  **\<New >**. En el **crear clave de nombre seguro** ventana, en el **nombre de archivo de clave** , escriba **key.snk**. Desactive el **proteger mi archivo de clave con una contraseña** campo.
+2. En el **las propiedades del proyecto** ventana, seleccione el **firma** ficha en el **firma** pestaña **firmar el ensamblado**. En el **elegir un archivo de clave de nombre seguro** campos, seleccione  **\<New >** . En el **crear clave de nombre seguro** ventana, en el **nombre de archivo de clave** , escriba **key.snk**. Desactive el **proteger mi archivo de clave con una contraseña** campo.
 
 3. En el **el Explorador de soluciones**, seleccione el proyecto VSIX y busque el **propiedades** ventana.
 
@@ -218,9 +218,9 @@ En el orden de la plantilla de proyecto personalizadas utilizar al Asistente per
 
 5. Recompilar la solución.
 
-6. Ahora puede encontrar el archivo key.snk en el directorio del proyecto MyProjectWizard (*\<su ubicación de disco > \MyProjectTemplate\MyProjectWizard\key.snk*). Copia el *key.snk* archivo.
+6. Ahora puede encontrar el archivo key.snk en el directorio del proyecto MyProjectWizard ( *\<su ubicación de disco > \MyProjectTemplate\MyProjectWizard\key.snk*). Copia el *key.snk* archivo.
 
-7. Vaya al directorio de resultados y encontrar el ensamblado (*\<su ubicación de disco > \MyProjectTemplate/MyProjectWizard\bin\Debug\MyProjectWizard.dll*). Pegar la *key.snk* archivo aquí. (Esto no es absolutamente necesario, pero lo será más fácil los pasos siguientes).
+7. Vaya al directorio de resultados y encontrar el ensamblado ( *\<su ubicación de disco > \MyProjectTemplate/MyProjectWizard\bin\Debug\MyProjectWizard.dll*). Pegar la *key.snk* archivo aquí. (Esto no es absolutamente necesario, pero lo será más fácil los pasos siguientes).
 
 8. Abra una ventana de comandos y cambie al directorio en el que se ha creado el ensamblado.
 

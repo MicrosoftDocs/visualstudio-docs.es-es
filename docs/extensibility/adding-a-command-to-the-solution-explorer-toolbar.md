@@ -7,17 +7,17 @@ helpviewer_keywords:
 - buttons [Visual Studio], adding to Solution Explorer
 - Solution Explorer, adding buttons
 ms.assetid: f6411557-2f4b-4e9f-b02e-fce12a6ac7e9
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 50b782beeb0496d781bcb6e9bd15f70278c4db73
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2cb5c0a8aac049b7d5ff0e79843724b87e4999e4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63410164"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66313539"
 ---
 # <a name="add-a-command-to-the-solution-explorer-toolbar"></a>Agregar un comando a la barra de herramientas del explorador de soluciones
 En este tutorial se muestra cómo agregar un botón a la **el Explorador de soluciones** barra de herramientas.
@@ -27,7 +27,7 @@ En este tutorial se muestra cómo agregar un botón a la **el Explorador de solu
  Para obtener más información acerca de los menús, comandos de la barra de herramientas, y *.vsct* archivos, consulte [comandos, menús y barras de herramientas](../extensibility/internals/commands-menus-and-toolbars.md).
 
 > [!NOTE]
-> Utilice la tabla de comandos XML (*.vsct*) archivos en lugar de la configuración de la tabla de comandos (*.ctc*) archivos para definir la aparecen de los menús y comandos en los VSPackages. Para obtener más información, consulte [Visual Studio Command Table (. Archivos Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
+> Utilice la tabla de comandos XML ( *.vsct*) archivos en lugar de la configuración de la tabla de comandos ( *.ctc*) archivos para definir la aparecen de los menús y comandos en los VSPackages. Para obtener más información, consulte [Visual Studio Command Table (. Archivos Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
 
 ## <a name="prerequisites"></a>Requisitos previos
  A partir de Visual Studio 2015, no instale el SDK de Visual Studio desde el centro de descarga. Se incluye como una característica opcional en el programa de instalación de Visual Studio. También puede instalar el SDK de VS más adelante. Para obtener más información, consulte [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).

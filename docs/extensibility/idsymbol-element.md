@@ -6,17 +6,17 @@ helpviewer_keywords:
 - IDSymbol element (VSCT XML schema)
 - VSCT XML schema elements, IDSymbol
 ms.assetid: 760cfd20-3c06-422c-9103-98bfa1f387f8
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 39ef9d059353f143c80e8956fa14f1812dc90859
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4489be4ea24382ddaf0fcbe5e824eac3945c9cec
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62861855"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66319535"
 ---
 # <a name="idsymbol-element"></a>IDSymbol (elemento)
 El `IDSymbol` elemento contiene el identificador del par GUID: ID que representa un menú, grupo o comando. Incluye el GUID del elemento primario `GuidSymbol` elemento. El `IDSymbol` elemento tiene un `name` atributo que proporciona un nombre descriptivo para el identificador, que se encuentra en la `value` atributo.
@@ -34,7 +34,7 @@ El `IDSymbol` elemento contiene el identificador del par GUID: ID que representa
 
 |Atributo|Descripción|
 |---------------|-----------------|
-|NAME|Obligatorio. Nombre del símbolo de identificador.|
+|name|Obligatorio. Nombre del símbolo de identificador.|
 |value|Obligatorio. Valor de identificador numérico del símbolo de identificador.|
 
 ### <a name="child-elements"></a>Elementos secundarios

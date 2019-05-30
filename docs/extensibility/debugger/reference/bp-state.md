@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - BP_STATE enumeration
 ms.assetid: 08aa6a3f-3e5f-4c83-8eca-7b7b5f8e208d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4117b3cb92eef555d5ed9a6c3e829fb3302924ae
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a35ddccf1723067574942711db89cb64cc41f7b0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56709258"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350606"
 ---
 # <a name="bpstate"></a>BP_STATE
 Especifica la existencia de un punto de interrupción enlazado y también especifica si está habilitado.
@@ -43,14 +46,18 @@ public enum enum_BP_STATE {
 };
 ```
 
-## <a name="members"></a>Miembros
-BPS_NONE especifica que no existe ningún punto de interrupción.
+## <a name="fields"></a>Campos
+`BPS_NONE`\
+Especifica que no existe ningún punto de interrupción.
 
-BPS_DELETED especifica que se ha eliminado el punto de interrupción.
+`BPS_DELETED`\
+Especifica que se ha eliminado el punto de interrupción.
 
-BPS_DISABLED especifica que el punto de interrupción está deshabilitado.
+`BPS_DISABLED`\
+Especifica que el punto de interrupción está deshabilitado.
 
-BPS_ENABLED especifica que el punto de interrupción está habilitado.
+`BPS_ENABLED`\
+Especifica que el punto de interrupción está habilitado.
 
 ## <a name="remarks"></a>Comentarios
 Devuelve el [GetState](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md) método.

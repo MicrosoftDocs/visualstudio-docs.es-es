@@ -6,17 +6,17 @@ helpviewer_keywords:
 - setup, VSPackages
 - launch conditions
 ms.assetid: 0ba94acf-bf0b-4bb3-8cca-aaac1b5d6737
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c65df25645a13f58dce9ddec69acf6834a77210f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1ef76bc111fc48a717605f1beea74c4b91d0f2b4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63420703"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351643"
 ---
 # <a name="detect-system-requirements"></a>Detectar los requisitos del sistema
 Un VSPackage no puede funcionar a menos que esté instalado Visual Studio. Cuando utiliza Microsoft Windows Installer para administrar la instalación del paquete de VS, puede configurar el instalador para detectar si está instalado Visual Studio. También puede configurar para comprobar el sistema para otros requisitos, por ejemplo, una versión concreta de Windows o una cantidad determinada de RAM.
@@ -33,7 +33,7 @@ Un VSPackage no puede funcionar a menos que esté instalado Visual Studio. Cuand
 Cuando se instala una edición más reciente, las claves del registro para esa edición se agregan, así como para las ediciones anteriores. Es decir, si se instala la edición Enterprise, el **instalar** clave se establece en *1* para la empresa, así como para las ediciones Professional y Community. Por lo tanto, deberá comprobar solo la edición más reciente que necesita.
 
 > [!NOTE]
-> En la versión de 64 bits del editor del registro, se muestran las claves de 32 bits en **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\\**. Las claves de Visual Studio están bajo **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\DevDiv\vs\Servicing\\**.
+> En la versión de 64 bits del editor del registro, se muestran las claves de 32 bits en **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\\** . Las claves de Visual Studio están bajo **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\DevDiv\vs\Servicing\\** .
 
 |Producto|Key|
 |-------------|---------|

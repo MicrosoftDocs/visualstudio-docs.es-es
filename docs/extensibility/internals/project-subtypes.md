@@ -6,17 +6,17 @@ helpviewer_keywords:
 - projects [Visual Studio SDK], subtypes
 - project subtypes [Visual Studio SDK]
 ms.assetid: d235b47b-cf11-4d47-a63f-e33d9d16105d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 73cf7fe43dcbe15bdeedf6822c9172533e6d420b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: aede76a39506f74c39d9ec63ed4bb4a410d1013c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63423070"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66328104"
 ---
 # <a name="project-subtypes"></a>Subtipos de proyecto
 Subtipos de proyecto le permiten personalizar o flavor el comportamiento de los sistemas del proyecto de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Las personalizaciones incluyen guardando datos adicionales en el archivo de proyecto, agrega o filtra los elementos de la **Agregar nuevo elemento** cuadro de diálogo, controlar cómo se depura e implementados, los ensamblados y ampliando el proyecto **propiedad Páginas** cuadro de diálogo. Los paquetes VSPackage implementar subtipos de proyecto mediante agregación COM.

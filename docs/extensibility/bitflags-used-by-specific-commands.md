@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, bitflags used by specific commands
 ms.assetid: 37969977-6f7d-45c9-ba03-1306ae71f5d1
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3adf4a26563560803f820d70ef6c6d5171e791d5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 47dd3b1c75ab7ff206714509a82449d744a02952
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62891692"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66333532"
 ---
 # <a name="bitflags-used-by-specific-commands"></a>Marcadores de bits utilizados por comandos específicos
 El comportamiento de una serie de funciones en la API de complemento de Control de código fuente puede modificarse estableciendo uno o más bits en un solo valor. Estos valores se conocen como marcadores de bits. Los marcadores de bits distintos usando la API de complemento de Control de código fuente se detallan en este caso, agrupados por la función que los usa.

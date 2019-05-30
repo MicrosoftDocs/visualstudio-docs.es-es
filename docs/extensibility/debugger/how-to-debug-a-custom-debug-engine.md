@@ -6,17 +6,17 @@ helpviewer_keywords:
 - debug engines, debugging
 - debugging [Debugging SDK], custom debug engines
 ms.assetid: df27a8d6-3938-45ff-b47f-b684e80b38a0
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 255d752e09a14e784de276fbed0d86a587bc4512
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 992440dd137b5622f4c619f1f81008eb38e1ff5f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63411244"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66334829"
 ---
 # <a name="how-to-debug-a-custom-debug-engine"></a>Cómo Depurar un motor de depuración personalizado
 Un tipo de proyecto inicia el motor de depuración (DE) desde el <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A> método. Esto significa que se ha iniciado la DE bajo el control de la instancia de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] controlar el tipo de proyecto. Sin embargo, esa instancia de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] no se puede depurar la DE. Las siguientes son los pasos que le permiten depurar su personalizada DE.
@@ -43,7 +43,7 @@ Un tipo de proyecto inicia el motor de depuración (DE) desde el <xref:Microsoft
 
 7. En la primera instancia de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] (con el proyecto DE), seleccione **asociar al proceso** desde el **depurar** menú.
 
-8. En el **asociar al proceso** cuadro de diálogo, cambie el **transporte** a **remoto (nativo sólo sin autenticación)**.
+8. En el **asociar al proceso** cuadro de diálogo, cambie el **transporte** a **remoto (nativo sólo sin autenticación)** .
 
 9. Cambiar el **calificador** al nombre de la máquina (Nota: hay un historial de entradas, por lo que deberá escribir este nombre sólo una vez).
 

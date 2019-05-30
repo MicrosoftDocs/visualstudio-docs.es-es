@@ -6,17 +6,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluation
 - expression evaluation, and common language runtime
 ms.assetid: b36c1eb5-1aaf-48a6-b287-ee7a273d2b1c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e6fdbdcdf292d90fc63758c2b7d183225e63a850
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 803dbb75a5cc9ad2b4fc81310c3b564994fea734
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63411315"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351295"
 ---
 # <a name="common-language-runtime-and-expression-evaluation"></a>Evaluación de tiempo de ejecución y la expresión de lenguaje común
 > [!IMPORTANT]
@@ -29,7 +29,7 @@ ms.locfileid: "63411315"
 
  Una vez que una expresión que se ha analizado, un proveedor de símbolos (SP) se llama para evaluar cada objeto de datos. Por ejemplo, si "A" se define en más de un método, la pregunta "¿qué un signo?" se deben responder antes de que se puede comprobar el valor de A. La respuesta devuelta por el SP es algo parecido a "El tercer elemento en el marco de pila quinto" o ""la A la que está más allá del principio de la memoria estática de 50 bytes asignado a este método.
 
- Además de generar MSIL para el propio programa, los compiladores CLR también pueden generar información de depuración muy descriptivo que se escribe en una base de datos de programa (*.pdb*) archivo. Siempre que un compilador del lenguaje de propietario genera información de depuración en el mismo formato que los compiladores CLR, Service Pack de CLR es capaz de identificar que la del lenguaje denominado objetos de datos. Una vez que se ha identificado un objeto de datos con nombre, el EE usa un objeto de enlazador para asociar el objeto de datos (ni enlazarse con él) para el área de memoria que contiene el valor de ese objeto. La DE, a continuación, puede obtener o establecer un nuevo valor para el objeto de datos.
+ Además de generar MSIL para el propio programa, los compiladores CLR también pueden generar información de depuración muy descriptivo que se escribe en una base de datos de programa ( *.pdb*) archivo. Siempre que un compilador del lenguaje de propietario genera información de depuración en el mismo formato que los compiladores CLR, Service Pack de CLR es capaz de identificar que la del lenguaje denominado objetos de datos. Una vez que se ha identificado un objeto de datos con nombre, el EE usa un objeto de enlazador para asociar el objeto de datos (ni enlazarse con él) para el área de memoria que contiene el valor de ese objeto. La DE, a continuación, puede obtener o establecer un nuevo valor para el objeto de datos.
 
  Un compilador propietario puede proporcionar información de depuración mediante una llamada a CLR el `ISymbolWriter` interfaz (que se define en .NET Framework en el espacio de nombres `System.Diagnostics.SymbolStore`). Si se compila en MSIL y escribir información de depuración a través de estas interfaces, puede usar un compilador propietario el DE CLR y el SP. Esto simplifica en gran medida la integración de un lenguaje propio en el IDE de Visual Studio.
 

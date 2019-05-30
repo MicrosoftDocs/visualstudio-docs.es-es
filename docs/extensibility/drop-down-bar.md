@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - drop-down bar
 ms.assetid: 4bb621bd-72f5-43d5-916f-9f66617da049
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77fc67d50d448ef58714f4c6a8a137c86d7f9d66
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bb1501159ad0feb9facce8e2b3969f8fabfe684a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62864233"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66324295"
 ---
 # <a name="drop-down-bar"></a>Barra desplegable
 La barra desplegable se proporciona en la parte superior de la ventana de código y contiene dos listas desplegables.

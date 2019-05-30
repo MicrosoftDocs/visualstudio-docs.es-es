@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - BPRESI_FIELDS enumeration
 ms.assetid: 99f17b1e-3e67-4f85-89d6-5c6cf45c8008
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fac4c65047c51d1213d8be4352c1b8e6efc35c8e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 82a286bea92c778ab150cacdc80d79f8ac283469
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680573"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350480"
 ---
 # <a name="bpresifields"></a>BPRESI_FIELDS
 Especifica la información que se va a recuperar sobre la resolución correcta de un punto de interrupción.
@@ -43,14 +46,18 @@ public enum enum_BPRESI_FIELDS {
 };
 ```
 
-## <a name="members"></a>Miembros
-BPRESI_BPRESLOCATION Initialize o usar el `bpResLocation` campo (ubicación de la resolución de punto de interrupción) de la [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) estructura.
+## <a name="fields"></a>Campos
+`BPRESI_BPRESLOCATION`\
+Inicializar o usar el `bpResLocation` campo (ubicación de la resolución de punto de interrupción) de la [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) estructura.
 
-BPRESI_PROGRAM Initialize o usar el `pProgram` campo de la `BP_RESOLUTION_INFO` estructura.
+`BPRESI_PROGRAM`\
+Inicializar o usar el `pProgram` campo de la `BP_RESOLUTION_INFO` estructura.
 
-BPRESI_THREAD Initialize o usar el `pThread` campo de la `BP_RESOLUTION_INFO` estructura.
+`BPRESI_THREAD`\
+Inicializar o usar el `pThread` campo de la `BP_RESOLUTION_INFO` estructura.
 
-BPRESI_ALLFIELDS especifica todos los campos.
+`BPRESI_ALLFIELDS`\
+Especifica todos los campos.
 
 ## <a name="remarks"></a>Comentarios
 Pasa a la [GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md) método para indicar qué campos de la [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) estructura deben inicializarse.

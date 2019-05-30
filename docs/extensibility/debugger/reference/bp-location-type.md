@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - BP_LOCATION_TYPE structure
 ms.assetid: 0248430a-3b61-4809-87a9-e9b6bb7d1130
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1695c61a829cf1439ed773e48088430f36f8c653
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 930c3a51173f18ccdad236e285f374bd885c880c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715666"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353046"
 ---
 # <a name="bplocationtype"></a>BP_LOCATION_TYPE
 Especifica el tipo de ubicación del punto de interrupción para una solicitud de punto de interrupción.
@@ -65,36 +68,51 @@ public enum enum_BP_LOCATION_TYPE {
 };
 ```
 
-## <a name="members"></a>Miembros
-BPLT_NONE se especifica ninguna ubicación de punto de interrupción.
+## <a name="fields"></a>Campos
+`BPLT_NONE`\
+No especifica que no hay ninguna ubicación de punto de interrupción.
 
-BPLT_FILE_LINE especifica el tipo de ubicación del punto de interrupción como una línea del archivo.
+`BPLT_FILE_LINE`\
+Especifica el tipo de ubicación del punto de interrupción como una línea del archivo.
 
-BPLT_FUNC_OFFSET especifica el tipo de ubicación del punto de interrupción como un desplazamiento de función.
+`BPLT_FUNC_OFFSET`\
+Especifica el tipo de ubicación del punto de interrupción como un desplazamiento de función.
 
-BPLT_CONTEXT especifica el tipo de ubicación del punto de interrupción como contexto.
+`BPLT_CONTEXT`\
+Especifica el tipo de ubicación del punto de interrupción como contexto.
 
-BPLT_STRING especifica el tipo de ubicación del punto de interrupción como una cadena.
+`BPLT_STRING`\
+Especifica el tipo de ubicación del punto de interrupción como una cadena.
 
-BPLT_ADDRESS especifica el tipo de ubicación del punto de interrupción como una dirección.
+`BPLT_ADDRESS`\
+Especifica el tipo de ubicación del punto de interrupción como una dirección.
 
-BPLT_RESOLUTION especifica el tipo de ubicación del punto de interrupción como una resolución.
+`BPLT_RESOLUTION`\
+Especifica el tipo de ubicación del punto de interrupción como una resolución.
 
-BPLT_CODE_FILE_LINE especifica el tipo de ubicación del punto de interrupción como una línea de código fuente.
+`BPLT_CODE_FILE_LINE`\
+Especifica el tipo de ubicación del punto de interrupción como una línea de código fuente.
 
-BPLT_CODE_FUNC_OFFSET especifica el tipo de ubicación del punto de interrupción como un desplazamiento de la función de código.
+`BPLT_CODE_FUNC_OFFSET`\
+Especifica el tipo de ubicación del punto de interrupción como un desplazamiento de la función de código.
 
-BPLT_CODE_CONTEXT especifica el tipo de ubicación del punto de interrupción como un contexto de código.
+`BPLT_CODE_CONTEXT`\
+Especifica el tipo de ubicación del punto de interrupción como un contexto de código.
 
-BPLT_CODE_STRING especifica el tipo de ubicación del punto de interrupción como una cadena de código.
+`BPLT_CODE_STRING`\
+Especifica el tipo de ubicación del punto de interrupción como una cadena de código.
 
-BPLT_CODE_ADDRESS especifica el tipo de ubicación del punto de interrupción como una dirección de código.
+`BPLT_CODE_ADDRESS`\
+Especifica el tipo de ubicación del punto de interrupción como una dirección de código.
 
-BPLT_DATA_STRING especifica el tipo de ubicación del punto de interrupción como una cadena de datos.
+`BPLT_DATA_STRING`\
+Especifica el tipo de ubicación del punto de interrupción como una cadena de datos.
 
-Un poco de BPLT_TYPE_MASK especifica máscara, por lo que se puede extraer el tipo de punto de interrupción fuera el valor.
+`BPLT_TYPE_MASK`\
+Especifica una máscara de bits, por lo que se puede extraer el tipo de punto de interrupción fuera el valor.
 
-Un poco de BPLT_LOCATION_TYPE_MASK especifica máscara, por lo que se puede extraer el tipo de ubicación de punto de interrupción fuera el valor.
+`BPLT_LOCATION_TYPE_MASK`\
+Especifica una máscara de bits, por lo que se puede extraer el tipo de ubicación de punto de interrupción fuera el valor.
 
 ## <a name="remarks"></a>Comentarios
 Pasado como parámetro a la [GetLocationType](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getlocationtype.md) método.

@@ -3,19 +3,19 @@ title: Agregar una extensión del protocolo del servidor idioma | Microsoft Docs
 ms.date: 11/14/2017
 ms.topic: conceptual
 ms.assetid: 52f12785-1c51-4c2c-8228-c8e10316cd83
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9b268c0c15ce468ca40a90583c5b7310364c189
-ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
+ms.openlocfilehash: 7518a9086d5923c7b6ad71f07227b76517934b56
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65805111"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352332"
 ---
-# <a name="add-a-language-server-protocol-extension"></a>Agregar una extensión del protocolo de servidor de lenguaje
+# <a name="add-a-language-server-protocol-extension"></a>Adición de una extensión del protocolo de servidor de lenguaje
 
 El protocolo de servidor de lenguaje (LSP) es un protocolo común, en el formulario de la versión 2.0 de JSON RPC, usar para proporcionar características de servicio a varios editores de código de lenguaje. Mediante el protocolo, los desarrolladores pueden escribir un servidor único idioma para proporcionar el servicio de lenguaje características como IntelliSense, diagnósticos de errores, busque todas las referencias y así sucesivamente, para varios editores de código que admiten el LSP. Tradicionalmente, se pueden agregar servicios de lenguaje en Visual Studio mediante el uso de los archivos de gramática de TextMate para proporcionar funcionalidades básicas como resaltado de sintaxis o al escribir servicios de lenguaje personalizado que utilizan el conjunto completo de API de extensibilidad de Visual Studio para proporcionar datos enriquecidos. Con el soporte técnico de Visual Studio para LSP, hay una tercera opción.
 
@@ -139,7 +139,7 @@ El LSP no incluye la especificación sobre cómo proporcionar la coloración de 
 
 4. Haga doble clic en los archivos y seleccione **propiedades**. Cambiar el **compilar** acción a **contenido** y cambie el **incluir en VSIX** propiedad **true**.
 
-Después de completar los pasos anteriores, un *gramáticas* carpeta se agrega a la instalación del paquete en el directorio como un origen de repositorio denominado 'MyLang' ('MyLang' es simplemente un nombre para la desambiguación y puede ser cualquier cadena única). Todas las gramáticas (*.tmlanguage* archivos) y archivos de tema (*.tmtheme* archivos) en este directorio se recogen como ventas potenciales y reemplazan las gramáticas integradas proporcionadas con TextMate. Si las extensiones declarado del archivo de gramática coincide con la extensión del archivo está abierto, irá TextMate.
+Después de completar los pasos anteriores, un *gramáticas* carpeta se agrega a la instalación del paquete en el directorio como un origen de repositorio denominado 'MyLang' ('MyLang' es simplemente un nombre para la desambiguación y puede ser cualquier cadena única). Todas las gramáticas ( *.tmlanguage* archivos) y archivos de tema ( *.tmtheme* archivos) en este directorio se recogen como ventas potenciales y reemplazan las gramáticas integradas proporcionadas con TextMate. Si las extensiones declarado del archivo de gramática coincide con la extensión del archivo está abierto, irá TextMate.
 
 ## <a name="create-a-simple-language-client"></a>Crear a un cliente de un lenguaje simple
 

@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Personalización del comportamiento de inserción, actualización y eliminación de clases de entidad'
+title: Personalizar el comportamiento de inserción, actualización o eliminación de las clases de entidad
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e869ae13c9d7ec82cb4d70fb5f3c5fce355691d5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 189516fe90863d80467dc3070dcc6b44a4a492a0
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62565412"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66262919"
 ---
 # <a name="walkthrough-customize-the-insert-update-and-delete-behavior-of-entity-classes"></a>Tutorial: Personalizar el comportamiento de inserción, actualización y eliminación de las clases de entidad
 
@@ -195,7 +195,7 @@ De forma predeterminada, el botón Guardar no está habilitado y la funcionalida
 
 5. En la ventana **Propiedades**, seleccione la propiedad **Insertar**.
 
-6. Haga clic en los puntos suspensivos (**...**) junto a **Usar motor en tiempo de ejecución** para abrir el cuadro de diálogo **Configurar comportamiento**.
+6. Haga clic en los puntos suspensivos ( **...** ) junto a **Usar motor en tiempo de ejecución** para abrir el cuadro de diálogo **Configurar comportamiento**.
 
 7. Seleccione **Personalizar**.
 
@@ -214,10 +214,10 @@ De forma predeterminada, el botón Guardar no está habilitado y la funcionalida
 
      Examine la lista de **Argumentos de método** y **Propiedades de clase**, y observe que hay dos **argumentos de método** y dos **propiedades de clase** para algunas columnas de la tabla. De esta manera, resulta más fácil realizar un seguimiento de los cambios y crear instrucciones que comprueben las infracciones de simultaneidad.
 
-13. Asigne el argumento de método **Original_CustomerID** a la propiedad de clase **CustomerID (Original)**.
+13. Asigne el argumento de método **Original_CustomerID** a la propiedad de clase **CustomerID (Original)** .
 
     > [!NOTE]
-    > De forma predeterminada, los argumentos de método se asignarán a las propiedades de clase cuando los nombres coincidan. Si se modifican los nombres de propiedad y ya no hay coincidencia entre la tabla y la clase de entidad, puede que tenga que seleccionar la propiedad de clase equivalente para la asignación si el **Object Relational Designer** no puede determinar la asignación correcta. Además, si los argumentos de método no tienen propiedades de clase válidas a las que asignarse, puede establecer el valor de **Propiedades de clase** en **(Ninguno)**.
+    > De forma predeterminada, los argumentos de método se asignarán a las propiedades de clase cuando los nombres coincidan. Si se modifican los nombres de propiedad y ya no hay coincidencia entre la tabla y la clase de entidad, puede que tenga que seleccionar la propiedad de clase equivalente para la asignación si el **Object Relational Designer** no puede determinar la asignación correcta. Además, si los argumentos de método no tienen propiedades de clase válidas a las que asignarse, puede establecer el valor de **Propiedades de clase** en **(Ninguno)** .
 
 14. Haga clic en **Aplicar** para guardar la configuración de la clase y el comportamiento seleccionados.
 
@@ -227,7 +227,7 @@ De forma predeterminada, el botón Guardar no está habilitado y la funcionalida
 
 17. Seleccione el método **DeleteCustomers** en la lista **Personalizar**.
 
-18. Asigne el argumento de método **Original_CustomerID** a la propiedad de clase **CustomerID (Original)**.
+18. Asigne el argumento de método **Original_CustomerID** a la propiedad de clase **CustomerID (Original)** .
 
 19. Haga clic en **Aceptar**.
 
