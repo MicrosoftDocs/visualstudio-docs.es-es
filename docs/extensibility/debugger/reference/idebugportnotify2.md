@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPortNotify2 interface
 ms.assetid: 43278b79-bf16-4c08-bcf1-6f7f7a17feab
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2427bfbc70c992cfcd41217aec56aa94d825faae
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: e1b1934a73e096200eba1370320cc0b55eb46ac5
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62918174"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66308902"
 ---
 # <a name="idebugportnotify2"></a>IDebugPortNotify2
 Esta interfaz se registra o se anula el registro de un programa que se puede depurar con el puerto que se ejecuta.

@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Personalizar la página Web predeterminada para una aplicación ClickOnce | Microsoft Docs
+title: Personalizar la página web predeterminada para la aplicación ClickOnce
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e132ea3592f18aad9b7b96bb32e8d7b6dac712cf
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 66d304be4e2435b6ec1ecafe8aeb473b83fa1033
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406977"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263329"
 ---
 # <a name="how-to-customize-the-default-web-page-for-a-clickonce-application"></a>Procedimiento Personalización de la página web predeterminada para una aplicación ClickOnce
 Al publicar una aplicación ClickOnce en la Web, una página Web generada automáticamente y publicada junto con la aplicación. La página predeterminada contiene el nombre de la aplicación y los vínculos para instalar la aplicación, instale los requisitos previos o acceder a la Ayuda en MSDN.

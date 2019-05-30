@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess2::Attach
 ms.assetid: 40d78417-fde2-45c3-96c9-16e06bd9008d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: de41c3f611383afabfd6fe051edb8dbe83d266b4
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 24a83c13d8953e3725a5fc5a4e55153b9ade88c4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66202761"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353246"
 ---
 # <a name="idebugprocess2attach"></a>IDebugProcess2::Attach
 El Administrador de depuración de la sesión (SDM) se asocia al proceso.
