@@ -6,17 +6,17 @@ helpviewer_keywords:
 - project configurations
 - configuration options, about configuration options
 ms.assetid: f4ad4dd3-b39e-42df-ad89-d403cdf24a2b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 791c50e6839190fa3700c335896f24f0714a64bc
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b27df2b9b93276ade06f97c9e80fd0c0483ef963
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63415158"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66309997"
 ---
 # <a name="configuration-options-overview"></a>Introducción a las opciones de configuración
 Los proyectos de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] puede admitir varias configuraciones que pueden compilarse depurado, ejecución o implementadas. Una configuración es un tipo de compilación que se describe con un conjunto de propiedades, normalmente modificadores de compilador y las ubicaciones de archivo. De forma predeterminada, las nuevas soluciones contienen dos configuraciones, *depurar* y *versión*. Estas configuraciones se pueden aplicar utilizando su configuración predeterminada, o puede modificar para cumplir sus requisitos específicos de la solución o proyecto. Algunos paquetes pueden compilarse de dos maneras: como un editor de ActiveX o como un componente en contexto. Los proyectos no es necesario admitir varias configuraciones, sin embargo. Si hay solo una configuración, dicha configuración se asigna a todas las configuraciones de soluciones.
@@ -29,7 +29,7 @@ Los proyectos de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pu
 
  En la tabla siguiente se muestra la configuración de las configuraciones típicas para un proyecto. Las filas se etiquetan con nombres de configuración y las columnas con nombres de plataforma.
 
-|Nombre de configuración|Plataforma: Win32|Plataforma: Win64|
+|Nombre de la configuración|Plataforma: Win32|Plataforma: Win64|
 |------------------------|----------------------|----------------------|
 |*Depurar*|\<Configuración de Win32 de depuración >|\<Depurar opciones Win64 >|
 |*Release*|\<Configuración de Win32 de versión >|\<Configuración de Win64 versión >|

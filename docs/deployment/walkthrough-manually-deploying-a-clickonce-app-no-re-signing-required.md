@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Implementar manualmente una aplicación ClickOnce que no requiere volver a firmar y que conserve la información de marca | Microsoft Docs'
+title: Implementar manualmente ClickOnce conserva la información de personalización de aplicaciones
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 50febcb027ec51b62bdde7ea06a7112470cdc247
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 47db202d07fd88bfb5e922964caf2cdd5008c6fd
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63405834"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263427"
 ---
 # <a name="walkthrough-manually-deploy-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information"></a>Tutorial: Implementar manualmente una aplicación ClickOnce que no requiere volver a firmar y que conserve la información de personalización de marca
 Cuando creas un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación y, a continuación, asígnele a un cliente para publicar e implementar, el cliente había tradicionalmente actualizar el manifiesto de implementación y volver a firmarlo. Si bien esto sigue siendo el método preferido en la mayoría de los casos, .NET Framework 3.5 le permite crear [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] las implementaciones que los clientes pueden implementar sin tener que volver a generar un nuevo manifiesto de implementación. Para obtener más información, consulte [ClickOnce implementar aplicaciones para servidores de pruebas y producción sin nueva firma](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md).
@@ -127,7 +127,7 @@ Cuando creas un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)
 
 13. Seleccione **archivo**, **guardar** en el menú y guarde el manifiesto de aplicación. Se le pedirá que firme el manifiesto de aplicación cuando la guarde.
 
-14. Si tiene un certificado almacenado como un archivo en el sistema de archivos, use el **inicio de sesión como archivo de certificado** opción y seleccione el certificado en el sistema de archivos mediante el botón de puntos suspensivos (**...** ) botón.
+14. Si tiene un certificado almacenado como un archivo en el sistema de archivos, use el **inicio de sesión como archivo de certificado** opción y seleccione el certificado en el sistema de archivos mediante el botón de puntos suspensivos ( **...** ) botón.
 
      -o bien-
 

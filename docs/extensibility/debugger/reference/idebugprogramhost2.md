@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramHost2 interface
 ms.assetid: 2c37b3aa-97a9-4665-8709-edd917f18cb1
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dadbd74480c990c4e7317244ec225d775347a6c2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: dc7a3222b2fab85657eea1eb0203f8c8da7dd5dc
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62916867"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351217"
 ---
 # <a name="idebugprogramhost2"></a>IDebugProgramHost2
 Esta interfaz proporciona información de host (proceso) acerca de un programa.

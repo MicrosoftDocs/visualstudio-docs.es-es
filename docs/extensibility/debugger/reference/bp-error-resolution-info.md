@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - BP_ERROR_RESOLUTION_INFO structure
 ms.assetid: a6b83242-5728-4716-80f3-840c96d59c6c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d89a871abf6a62dec712ce9d9ae486496c775b8
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: dca7dcac5dc7ccf4d30d9b61165771ba464bbcf9
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691207"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351826"
 ---
 # <a name="bperrorresolutioninfo"></a>BP_ERROR_RESOLUTION_INFO
 Describe la resolución de un punto de interrupción de error, incluida la ubicación, el programa y subproceso.
@@ -47,17 +50,23 @@ public struct BP_ERROR_RESOLUTION_INFO {
 ```
 
 ## <a name="members"></a>Miembros
-`dwFields` Una combinación de valores de la [BPERESI_FIELDS](../../../extensibility/debugger/reference/bperesi-fields.md) enumeración que especifica qué campos de esta estructura se rellenan.
+`dwFields`\
+Una combinación de valores de la [BPERESI_FIELDS](../../../extensibility/debugger/reference/bperesi-fields.md) enumeración que especifica qué campos de esta estructura se rellenan.
 
-`bpResLocation` El [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) unión, que especifica la ubicación de la resolución de punto de interrupción.
+`bpResLocation`\
+El [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md) unión, que especifica la ubicación de la resolución de punto de interrupción.
 
-`pProgram` El [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) objeto que representa la aplicación en el que se produjo el error de punto de interrupción.
+`pProgram`\
+El [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) objeto que representa la aplicación en el que se produjo el error de punto de interrupción.
 
-`pThread` El [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) objeto que representa el subproceso en el que se ejecuta la aplicación que generó el error de punto de interrupción.
+`pThread`\
+El [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) objeto que representa el subproceso en el que se ejecuta la aplicación que generó el error de punto de interrupción.
 
-`bstrMessage` Una cadena que contiene cualquier advertencia o mensaje de error resultante de la resolución de este error.
+`bstrMessage`\
+Una cadena que contiene cualquier advertencia o mensaje de error resultante de la resolución de este error.
 
-`dwType` Un valor de la [BP_ERROR_TYPE](../../../extensibility/debugger/reference/bp-error-type.md) enumeración que especifica el tipo de error de punto de interrupción.
+`dwType`\
+Un valor de la [BP_ERROR_TYPE](../../../extensibility/debugger/reference/bp-error-type.md) enumeración que especifica el tipo de error de punto de interrupción.
 
 ## <a name="remarks"></a>Comentarios
 Esta estructura se devuelve desde el [GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md) método.

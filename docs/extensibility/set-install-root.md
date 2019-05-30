@@ -3,17 +3,17 @@ title: Instalación fuera de la carpeta de extensiones con VSIX v3 | Documentos 
 ms.date: 11/09/2016
 ms.topic: conceptual
 ms.assetid: 913c3745-8aa9-4260-886e-a05aecfb2225
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 09b3b23a89450bb1abac4f8ebb10d00396a251b2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0b17bc1936d077e379ff9eca7460fab1a3a37722
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62433165"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66338403"
 ---
 # <a name="installing-outside-the-extensions-folder"></a>Instalación fuera de la carpeta de extensiones
 

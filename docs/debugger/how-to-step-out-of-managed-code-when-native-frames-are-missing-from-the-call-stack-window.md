@@ -1,5 +1,5 @@
 ---
-title: Fuera del C# cuando faltan marcos nativos en la pila de llamadas de código | Microsoft Docs
+title: Fuera del C# cuando los marcos nativos no aparecen en la pila de llamadas de código
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -23,12 +23,12 @@ manager: jillfra
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 1efe109741c306d45ce7f7749193f5b638b76949
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 15169fb1cdbba554ee2066f3123ded8c60f7408f
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62846952"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263376"
 ---
 # <a name="how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window"></a>Procedimiento Salida del código administrado cuando los marcos nativos no aparecen en la ventana Pila de llamadas
 

@@ -1,5 +1,6 @@
 ---
-title: Actualizar proyectos personalizados y plantillas de elemento para Visual Studio 2017 | Documentos de Microsoft
+title: Actualizar las plantillas de proyecto y elemento personalizadas para Visual Studio 2017
+titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ad02477b-e101-4f32-aeb7-292bf95d5c2f
@@ -9,12 +10,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: cb4defa206d176e57804e6d2473262568cd5edbf
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 39dbe74c8f59171461cca04fc9015782e21fe9da
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434216"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261799"
 ---
 # <a name="upgrade-custom-project-and-item-templates-for-visual-studio-2017"></a>Actualizar proyectos personalizados y plantillas de elemento para Visual Studio 2017
 
@@ -26,7 +27,7 @@ Si desea crear una plantilla de proyecto o elemento como parte de una extensión
 
 ## <a name="template-scanning"></a>Plantilla de análisis
 
-En versiones anteriores de Visual Studio, **devenv /setup** o **devenv /installvstemplates** examina el disco local para buscar plantillas de proyecto y elemento. A partir de Visual Studio 2017, se realiza solo para la ubicación de nivel de usuario. La ubicación de nivel de usuario predeterminada es **%USERPROFILE%\Documents\\< versión de Visual Studio\>\Templates\\**. Esta ubicación se utiliza para plantillas generadas por la **proyecto** > **exportar plantillas...**  comando, si el **importar la plantilla automáticamente en Visual Studio** está seleccionada en el asistente.
+En versiones anteriores de Visual Studio, **devenv /setup** o **devenv /installvstemplates** examina el disco local para buscar plantillas de proyecto y elemento. A partir de Visual Studio 2017, se realiza solo para la ubicación de nivel de usuario. La ubicación de nivel de usuario predeterminada es **%USERPROFILE%\Documents\\< versión de Visual Studio\>\Templates\\** . Esta ubicación se utiliza para plantillas generadas por la **proyecto** > **exportar plantillas...**  comando, si el **importar la plantilla automáticamente en Visual Studio** está seleccionada en el asistente.
 
 Para otras ubicaciones (no de usuario), debe incluir un archivo manifest(.vstman) que especifica la ubicación y otras características de la plantilla. Se genera el archivo vstman junto con el archivo .vstemplate que se usa para las plantillas. Si instala la extensión con un VSIX, puede hacerlo al volver a compilar la extensión en Visual Studio 2017. Pero si usa un archivo .msi, deberá realizar los cambios manualmente. Para obtener una lista de lo que necesita hacer para que estos cambios, consulte **actualizaciones para las extensiones se instalan con una. MSI** más adelante en esta página.
 
@@ -34,7 +35,7 @@ Para otras ubicaciones (no de usuario), debe incluir un archivo manifest(.vstman
 
 1. Abra la solución en Visual Studio 2017. Se le pedirá que actualice el código. Haga clic en **Aceptar**.
 
-2. Una vez finalizada la actualización, deberá cambiar la versión de destino de la instalación. En el proyecto VSIX, abra el archivo source.extension.vsixmanifest y seleccione el **destinos de instalación** ficha. Si el **intervalo de versiones** campo es **[14.0]**, haga clic en **editar** y cámbielo para incluir Visual Studio 2017. Por ejemplo, puede establecer en **[14.0,15.0]** para instalar la extensión para Visual Studio 2015 o Visual Studio 2017, o para **[15.0]** para instalarlo solo Visual Studio 2017.
+2. Una vez finalizada la actualización, deberá cambiar la versión de destino de la instalación. En el proyecto VSIX, abra el archivo source.extension.vsixmanifest y seleccione el **destinos de instalación** ficha. Si el **intervalo de versiones** campo es **[14.0]** , haga clic en **editar** y cámbielo para incluir Visual Studio 2017. Por ejemplo, puede establecer en **[14.0,15.0]** para instalar la extensión para Visual Studio 2015 o Visual Studio 2017, o para **[15.0]** para instalarlo solo Visual Studio 2017.
 
 3. Vuelva a compilar el código.
 

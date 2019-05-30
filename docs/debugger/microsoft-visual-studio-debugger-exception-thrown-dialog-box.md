@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a684002360f59d33e61c40261afc1bfd515511e3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9fd0035ca0764f3673e07b4e3289b87773c8349b
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408523"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261333"
 ---
 # <a name="microsoft-visual-studio-debugger-exception-thrown-dialog-box"></a>Depurador de Microsoft Visual Studio: se inició una excepción (cuadro de diálogo)
 Se ha producido una excepción en el programa. Este cuadro de diálogo informa sobre la clase de excepción producida. El código necesita tratar esta excepción. Puede elegir entre las siguientes opciones para controlar la excepción:
@@ -44,4 +44,4 @@ Se ha producido una excepción en el programa. Este cuadro de diálogo informa s
 ## <a name="see-also"></a>Vea también
 - [Administración de excepciones con el depurador](../debugger/managing-exceptions-with-the-debugger.md)
 - [Procedimientos recomendados para excepciones](/dotnet/standard/exceptions/best-practices-for-exceptions)
-- [Control de excepciones](/cpp/windows/exception-handling-cpp-component-extensions)
+- [Control de excepciones](/cpp/extensions/exception-handling-cpp-component-extensions)

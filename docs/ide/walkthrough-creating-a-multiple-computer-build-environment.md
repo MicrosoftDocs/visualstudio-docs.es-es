@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d2ca4e45c83aa3291b922694ebd16df5ab7fc35e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9b6f956adee315cc8c5d229a237e953de67f9c16
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62581644"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66262938"
 ---
 # <a name="walkthrough-create-a-multiple-computer-build-environment"></a>Tutorial: Creación de un entorno de compilación para varios equipos
 
@@ -169,7 +169,7 @@ Tenga en cuenta que el nombre de la carpeta *Archivos de programa* depende del s
 
     - \Microsoft.VC110.OPENMP\vcomp110.dll
 
-5. Copie solo los siguientes archivos de la carpeta *Debug_NonRedist\x86* o *Debug_NonRedist\x64* al equipo de compilación, como se describe en [Preparar un equipo de pruebas para ejecutar un archivo ejecutable de depuración](/cpp/ide/preparing-a-test-machine-to-run-a-debug-executable). No se puede copiar ningún otro archivo.
+5. Copie solo los siguientes archivos de la carpeta *Debug_NonRedist\x86* o *Debug_NonRedist\x64* al equipo de compilación, como se describe en [Preparar un equipo de pruebas para ejecutar un archivo ejecutable de depuración](/cpp/windows/preparing-a-test-machine-to-run-a-debug-executable). No se puede copiar ningún otro archivo.
 
     - \Microsoft.VC110.DebugCRT\msvcp110d.dll
 
@@ -407,5 +407,5 @@ Puede crear un entorno de compilación que se pueda implementar en varios equipo
 
 ## <a name="see-also"></a>Vea también
 
-- [Preparar un equipo de pruebas para ejecutar un archivo ejecutable de depuración](/cpp/ide/preparing-a-test-machine-to-run-a-debug-executable)
+- [Preparar un equipo de pruebas para ejecutar un archivo ejecutable de depuración](/cpp/windows/preparing-a-test-machine-to-run-a-debug-executable)
 - [Referencia de la línea de comandos](../msbuild/msbuild-command-line-reference.md)

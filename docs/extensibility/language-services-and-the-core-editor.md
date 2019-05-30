@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - language services
 ms.assetid: e03199a6-ad5f-4075-bfba-8d36865112b7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f01784cd21bbc0a29a6216525e626a8fa992e0ba
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a27fc9ec55b301dc3355e03e2e86e968752fbbd0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62856592"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66309536"
 ---
 # <a name="language-services-and-the-core-editor"></a>Servicios de lenguaje y el editor básico
 Editores de Visual Studio están asociados con frecuencia a un servicio de lenguaje. Entre otras cosas, un servicio de lenguaje proporciona colores de sintaxis, finalización de instrucciones, IntelliSense y el formato de texto.
@@ -26,7 +26,7 @@ Editores de Visual Studio están asociados con frecuencia a un servicio de lengu
  Para obtener más información, consulte [determinar qué editor abre un archivo en un proyecto](../extensibility/internals/determining-which-editor-opens-a-file-in-a-project.md).
 
 ## <a name="language-services-and-the-core-editor"></a>Servicios de lenguaje y el editor básico
- Al implementar un servicio de lenguaje, puede controlar cómo se muestran los datos en la vista del documento. Un servicio de lenguaje proporciona información y el comportamiento que es específico de un idioma determinado, como Visual C++. Al crear un búfer de texto y determinar la extensión de nombre de archivo para el documento se abre, el búfer de texto determina el servicio de lenguaje asociado con esta extensión de nombre de archivo de una clave del registro, **HKEY_LOCAL_MACHINE\SOFTWARE\ Microsoft\Editors\\\Extensions {GUID YourLanguageService}**. El VSPackage estándar del procedimiento de carga, a continuación, carga el VSPackage y se crea una instancia de su servicio de lenguaje.
+ Al implementar un servicio de lenguaje, puede controlar cómo se muestran los datos en la vista del documento. Un servicio de lenguaje proporciona información y el comportamiento que es específico de un idioma determinado, como Visual C++. Al crear un búfer de texto y determinar la extensión de nombre de archivo para el documento se abre, el búfer de texto determina el servicio de lenguaje asociado con esta extensión de nombre de archivo de una clave del registro, **HKEY_LOCAL_MACHINE\SOFTWARE\ Microsoft\Editors\\\Extensions {GUID YourLanguageService}** . El VSPackage estándar del procedimiento de carga, a continuación, carga el VSPackage y se crea una instancia de su servicio de lenguaje.
 
  Un servicio de lenguaje básico se muestra en la siguiente ilustración.
 

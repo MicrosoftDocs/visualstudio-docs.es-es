@@ -22,12 +22,12 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2dd7d3f41790fac7a37fc3a98d728757f5bad967
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 47db517bfb75d81785e910d1dd166ac83ddb2fcb
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65704678"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261654"
 ---
 # <a name="general-debugging-options-dialog-box"></a>General, Depuración, Opciones (Cuadro de diálogo)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -164,7 +164,7 @@ El**herramientas / opciones / depuración / General** página permite establecer
   Muestra el **Live Visual Tree** comandos en una barra de herramientas en la ventana principal de la aplicación XAML que se está depurando. Esta opción se introdujo en Visual Studio 2015 Update 2.  
   
   **Habilitar herramientas de diagnóstico durante la depuración**  
-  Durante la depuración, se abre la ventana de **Herramientas de diagnóstico**. Para obtener más información, consulte [integradas del depurador de generación de perfiles](https://msdn.microsoft.com/library/a1f40370-7b61-42c2-afc4-0e13eba98859).  
+  Durante la depuración, se abre la ventana de **Herramientas de diagnóstico**. Para obtener más información, consulte [integradas del depurador de generación de perfiles](/visualstudio/profiling/running-profiling-tools-with-or-without-the-debugger).  
   
   **Mostrar PerfTip de tiempo transcurrido durante la depuración**  
   La ventana de código muestra el tiempo transcurrido de una determinada llamada de método durante la depuración.  

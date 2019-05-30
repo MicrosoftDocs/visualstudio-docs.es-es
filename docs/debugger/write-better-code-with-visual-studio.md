@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bfbcf9a63a01d391cbbc65067793d75d42899c1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8b34e23b1bc7972563d6d8d014ba0728dc637b34
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62901357"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66262133"
 ---
 # <a name="debugging-techniques-and-tools-to-help-you-write-better-code"></a>Herramientas para ayudarle a escribir código mejor y técnicas de depuración
 
@@ -294,7 +294,7 @@ Existen un par de sugerencias importantes para el control de excepciones:
     }
     ```
 
-* Para obtener información sobre las funciones desconocidas que incluir en la aplicación, expecially aquellos interactuar con datos externos (por ejemplo, una solicitud web), consulte la documentación para ver qué excepciones la función es probable que se inicie. Esto puede ser información crítica para el control de errores adecuado y para depurar su aplicación.
+* Para obtener información sobre las funciones desconocidas que incluya en la aplicación, especialmente aquellos que interactúan con datos externos (por ejemplo, una solicitud web), consulte la documentación para ver qué excepciones la función es probable que se inicie. Esto puede ser información crítica para el control de errores adecuado y para depurar su aplicación.
 
 Para la aplicación de ejemplo, corregir la `SerializationException` en el `GetJsonData` método cambiando `4o` a `40`.
 

@@ -1,5 +1,5 @@
 ---
-title: Depuración de aplicaciones de ASP.NET en vivo en Azure Virtual Machines y Azure Virtual Machine Scale Sets
+title: Depuración en vivo las máquinas virtuales de Azure de ASP.NET y los conjuntos de escalado
 description: Obtenga información sobre cómo establecer puntos de instantánea y ver las instantáneas con Snapshot Debugger.
 ms.custom: ''
 ms.date: 02/06/2019
@@ -13,12 +13,12 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 2880b8bee25a79f5f182043ffed5c50c4512d033
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 38cf8b5c2af174b026c507fc5c668f826707adf3
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63399418"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263358"
 ---
 # <a name="debug-live-aspnet-apps-on-azure-virtual-machines-and-azure-virtual-machine-scale-sets-using-the-snapshot-debugger"></a>Depuración de aplicaciones de ASP.NET en vivo en Azure Virtual Machines y Azure Virtual Machines Scale Sets con Snapshot Debugger
 
