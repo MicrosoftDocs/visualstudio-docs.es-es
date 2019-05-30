@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - FIELD_INFO_FIELDS enumeration
 ms.assetid: a69487d2-e701-4165-804a-8a011df9a3bd
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9614d3b99df71c9bfa8328478348385472f1a8fa
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 01853df78bfe731ea4b7159f7b3ebe352f3c5eaa
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710011"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66337677"
 ---
 # <a name="fieldinfofields"></a>FIELD_INFO_FIELDS
 Especifica qué información se va a recuperar sobre un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objeto.
@@ -47,14 +50,18 @@ public enum enum_FIELD_INFO_FIELDS {
 };
 ```
 
-## <a name="members"></a>Miembros
-FIF_FULLNAME Initialize o usar el `bstrFullName` campo el [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) estructura.
+## <a name="fields"></a>Campos
+`FIF_FULLNAME`\
+Inicializar o usar el `bstrFullName` campo el [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) estructura.
 
-FIF_NAME Initialize o usar el `bstrName` campo el `FIELD_INFO` estructura.
+`FIF_NAME`\
+Inicializar o usar el `bstrName` campo el `FIELD_INFO` estructura.
 
-FIF_TYPE Initialize o usar el `bstrType` campo el `FIELD_INFO` estructura.
+`FIF_TYPE`\
+Inicializar o usar el `bstrType` campo el `FIELD_INFO` estructura.
 
-FIF_MODIFIERS Initialize o usar el `bstrModifiers` campo el `FIELD_INFO` estructura.
+`FIF_MODIFIERS`\
+Inicializar o usar el `bstrModifiers` campo el `FIELD_INFO` estructura.
 
 ## <a name="remarks"></a>Comentarios
 Estos valores también se pasan como argumento a la [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md) método para especificar qué campos de la [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) estructura deben inicializarse.

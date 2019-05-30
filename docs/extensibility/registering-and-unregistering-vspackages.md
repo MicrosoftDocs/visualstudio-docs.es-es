@@ -6,17 +6,17 @@ helpviewer_keywords:
 - registration, VSPackages
 - VSPackages, registering
 ms.assetid: e25e7a46-6a55-4726-8def-ca316f553d6b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dff8223a95621f353fa57c38e91bf24b6b177f82
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 701700ba9d5c6db1e5858a2419e1b2c0fa950ae5
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62433388"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66334289"
 ---
 # <a name="register-and-unregister-vspackages"></a>Registrar y anular el registro de VSPackages
 Usar atributos para registrar un VSPackage, pero

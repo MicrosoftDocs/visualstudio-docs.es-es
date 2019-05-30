@@ -6,17 +6,17 @@ helpviewer_keywords:
 - deploy packages
 - publish extension
 ms.assetid: b6c82167-e2a5-4cff-8c8b-2d72e2a9092c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 972b0b777cda837b246de4a208337c4e369139c4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cc2600a6c72e13ba7d894dab84f0b8a171d5a43e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62953171"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322840"
 ---
 # <a name="vsix-project-template"></a>Plantilla de proyecto VSIX
 
@@ -80,7 +80,7 @@ Puede empaquetar una extensión existente o una extensión que no tenga ya VSIX 
 
 8. Compile la solución.
 
-    [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] compila un *.vsix* archivo que contiene un archivo de manifiesto de VSIX en un archivo [Content_Types]*.xml* archivo y todos los recursos de extensión que ha agregado al proyecto.
+    [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] compila un *.vsix* archivo que contiene un archivo de manifiesto de VSIX en un archivo [Content_Types] *.xml* archivo y todos los recursos de extensión que ha agregado al proyecto.
 
 ## <a name="see-also"></a>Vea también
 

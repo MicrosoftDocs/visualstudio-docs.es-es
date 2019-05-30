@@ -3,18 +3,18 @@ title: Creación de un archivo de página de inicio | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: d67e0c53-9f5a-45fb-a929-b9d2125c3c82
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 4fc12744dbf979a338cbc551a715284dffdf7385
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2b0b8c6fde31f4f4d9573381e511465e60086add
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62926385"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66336679"
 ---
 # <a name="creating-a-custom-start-page"></a>Creación de una página de inicio personalizada
 
@@ -24,7 +24,7 @@ Puede crear una página de inicio personalizada siguiendo los pasos descritos en
 
 En primer lugar, asegúrese de una página de inicio en blanco mediante la creación de un *.xaml* archivo que tiene una estructura de la etiqueta a la que Visual Studio reconocerá. A continuación, agregue el marcado y código subyacente para generar el aspecto y funcionalidad que desee.
 
-1. Cree un nuevo proyecto del tipo **aplicación WPF** (**Visual C#** > **Windows Desktop**).
+1. Cree un nuevo proyecto del tipo **aplicación WPF** (**Visual C#**  > **Windows Desktop**).
 
 2. Agregue una referencia a `Microsoft.VisualStudio.Shell.14.0`.
 

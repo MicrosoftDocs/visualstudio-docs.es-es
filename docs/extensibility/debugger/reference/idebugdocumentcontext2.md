@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDocumentContext2
 ms.assetid: 2a446c71-8100-4c09-a1cc-fd446bd74030
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3de9f48109590d6c59a46fd6451a750eecfbaa01
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: fe54a6d3e97fc40f915c42c4aa5397165416b073
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62921385"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66326647"
 ---
 # <a name="idebugdocumentcontext2"></a>IDebugDocumentContext2
 Esta interfaz representa una posición en un documento de archivo de origen.

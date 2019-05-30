@@ -6,17 +6,17 @@ helpviewer_keywords:
 - VSCT XML schema elements, Bitmaps
 - Bitmaps element (VSCT XML schema)
 ms.assetid: 74652e1b-fcfa-421b-aa9f-fbc081d3b476
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d247a0df29cb14eec6dffa5e362f23693b59cc99
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 00486f4edd68d2cc5e158d567a28f78ef12f8cd1
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62891667"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66333400"
 ---
 # <a name="bitmaps-element"></a>Bitmaps (elemento)
 Grupos [elemento de mapa de bits](../extensibility/bitmap-element.md) elementos.

@@ -3,17 +3,17 @@ title: Analizadores de Roslyn y biblioteca compatible con el código para Immuta
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0b0afa22-3fca-4d59-908e-352464c1d903
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 28ddaafc8ab4ddbaef1d7e42faedc2229664c6e6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a0c2eed45ce27fb108b0cdd0c84f64e4e253c9c1
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62433336"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66334168"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Analizadores de Roslyn y biblioteca compatible con el código para ImmutableArrays
 
@@ -131,7 +131,7 @@ Console.WriteLine("b2.Length = {0}", b2.Length);
 
 Las líneas de código con `ImmutableArray` tienen subrayados ondulados porque la necesitará obtener el paquete NuGet inmutable y agregar un `using` instrucción en el código. Presione el botón derecho del puntero en el nodo del proyecto en el **el Explorador de soluciones** y elija **administrar paquetes de NuGet**. En el Administrador de NuGet, escriba "Inmutable" en el cuadro de búsqueda y elija el elemento **System.Collections.Immutable** (no elija **Microsoft.Bcl.Immutable**) en el panel izquierdo y presione la  **Instalar** botón en el panel derecho. Instalar el paquete, agrega una referencia a las referencias del proyecto.
 
-Aún aparece un subrayado ondulado rojo debajo de `ImmutableArray`, coloque el símbolo de intercalación en ese identificador y presione **Ctrl**+**.** (punto) para mostrar el menú de la corrección sugerida y optar por agregar adecuado `using` instrucción.
+Aún aparece un subrayado ondulado rojo debajo de `ImmutableArray`, coloque el símbolo de intercalación en ese identificador y presione **Ctrl**+ **.** (punto) para mostrar el menú de la corrección sugerida y optar por agregar adecuado `using` instrucción.
 
 **Guarde y cierre** la segunda instancia de Visual Studio por ahora para ponerle en un estado limpio para continuar.
 
@@ -210,7 +210,7 @@ Quite el punto de interrupción para que pueda ver su funcionamiento del analiza
 
 Antes de comenzar, cierre la segunda instancia de Visual Studio y detener la depuración en la primera instancia de Visual Studio (donde está desarrollando el analizador).
 
-**Agregue una nueva clase.** Use el menú contextual (botón derecho del puntero) en el nodo del proyecto en el **el Explorador de soluciones** y optar por agregar un nuevo elemento. Agregue una clase denominada `BuildCodeFixProvider`. Esta clase debe derivarse de `CodeFixProvider`, y deberá usar **Ctrl**+**.** (punto) para invocar la corrección de código que agrega el valor correcto `using` instrucción. Esta clase también debe anotarse con `ExportCodeFixProvider` atributo y será necesario agregar un `using` instrucción para resolver el `LanguageNames` enum. Debe tener un archivo de clase con el código siguiente en él:
+**Agregue una nueva clase.** Use el menú contextual (botón derecho del puntero) en el nodo del proyecto en el **el Explorador de soluciones** y optar por agregar un nuevo elemento. Agregue una clase denominada `BuildCodeFixProvider`. Esta clase debe derivarse de `CodeFixProvider`, y deberá usar **Ctrl**+ **.** (punto) para invocar la corrección de código que agrega el valor correcto `using` instrucción. Esta clase también debe anotarse con `ExportCodeFixProvider` atributo y será necesario agregar un `using` instrucción para resolver el `LanguageNames` enum. Debe tener un archivo de clase con el código siguiente en él:
 
 ```csharp
 using Microsoft.CodeAnalysis;
@@ -223,7 +223,7 @@ namespace ImmutableArrayAnalyzer
     {}
 ```
 
-**Código auxiliar de los miembros derivados.** Ahora, coloque de intercalación del símbolo en el identificador `CodeFixProvider` y presione **Ctrl**+**.** (punto) para la implementación de esta clase base abstracta de código auxiliar. Esto genera una propiedad y un método.
+**Código auxiliar de los miembros derivados.** Ahora, coloque de intercalación del símbolo en el identificador `CodeFixProvider` y presione **Ctrl**+ **.** (punto) para la implementación de esta clase base abstracta de código auxiliar. Esto genera una propiedad y un método.
 
 **Implemente la propiedad.** Rellene el `FixableDiagnosticIds` la propiedad `get` cuerpo con el código siguiente:
 
@@ -244,14 +244,14 @@ var root = await context.Document
                         .GetSyntaxRootAsync(context.CancellationToken);
 ```
 
-**Busque el nodo con el problema.** Pasar en el intervalo del contexto, pero el nodo que buscar no sea el código que se debe cambiar. El diagnóstico notificado solo proporciona el intervalo para el identificador del tipo (que pertenecía el subrayado ondulado de color), pero es necesario reemplazar la expresión de creación de objetos completo, incluido el `new` palabra clave al principio y los paréntesis al final. Agregue el código siguiente al método (y usar **Ctrl**+**.** Para agregar un `using` instrucción para `ObjectCreationExpressionSyntax`):
+**Busque el nodo con el problema.** Pasar en el intervalo del contexto, pero el nodo que buscar no sea el código que se debe cambiar. El diagnóstico notificado solo proporciona el intervalo para el identificador del tipo (que pertenecía el subrayado ondulado de color), pero es necesario reemplazar la expresión de creación de objetos completo, incluido el `new` palabra clave al principio y los paréntesis al final. Agregue el código siguiente al método (y usar **Ctrl**+ **.** Para agregar un `using` instrucción para `ObjectCreationExpressionSyntax`):
 
 ```csharp
 var objectCreation = root.FindNode(context.Span)
                          .FirstAncestorOrSelf<ObjectCreationExpressionSyntax>();
 ```
 
-**Registre la corrección de código para la interfaz de usuario de bombilla.** Al registrar la corrección de código, Roslyn se conecta automáticamente a la bombilla de Visual Studio la interfaz de usuario. Los usuarios finales verán que se pueden usar **Ctrl**+**.** (punto) cuando el analizador de líneas en zigzag una incorrecta `ImmutableArray<T>` uso del constructor. Dado que el proveedor de corrección de código se ejecuta solo cuando hay un problema, puede asumir que tiene la expresión de creación de objeto que estaba buscando. Desde el parámetro de contexto, puede registrar la nueva corrección de código, agregue el código siguiente al final de `RegisterCodeFixAsync` método:
+**Registre la corrección de código para la interfaz de usuario de bombilla.** Al registrar la corrección de código, Roslyn se conecta automáticamente a la bombilla de Visual Studio la interfaz de usuario. Los usuarios finales verán que se pueden usar **Ctrl**+ **.** (punto) cuando el analizador de líneas en zigzag una incorrecta `ImmutableArray<T>` uso del constructor. Dado que el proveedor de corrección de código se ejecuta solo cuando hay un problema, puede asumir que tiene la expresión de creación de objeto que estaba buscando. Desde el parámetro de contexto, puede registrar la nueva corrección de código, agregue el código siguiente al final de `RegisterCodeFixAsync` método:
 
 ```csharp
 context.RegisterCodeFix(
@@ -262,9 +262,9 @@ context.RegisterCodeFix(
             context.Diagnostics[0]);
 ```
 
-Deberá colocar el símbolo de intercalación del editor en el identificador, `CodeAction`, a continuación, usar **Ctrl**+**.** (punto) para agregar adecuado `using` instrucción para este tipo.
+Deberá colocar el símbolo de intercalación del editor en el identificador, `CodeAction`, a continuación, usar **Ctrl**+ **.** (punto) para agregar adecuado `using` instrucción para este tipo.
 
-A continuación, colocar el símbolo de intercalación del editor en el `ChangeToImmutableArrayEmpty` identificador y uso **Ctrl**+**.** para generar este código auxiliar del método.
+A continuación, colocar el símbolo de intercalación del editor en el `ChangeToImmutableArrayEmpty` identificador y uso **Ctrl**+ **.** para generar este código auxiliar del método.
 
 Este último fragmento de código que agregó registra la corrección de código, pasando un `CodeAction` y el Id. de diagnóstico para el tipo de problema encontrado. En este ejemplo, hay solo un Id. de diagnóstico que este código proporciona correcciones para, por lo que puede pasar simplemente el primer elemento de la matriz de identificadores de diagnóstico. Cuando se crea el `CodeAction`, pasa el texto que se debe usar la interfaz de usuario de bombilla como una descripción de la corrección de código. También pasa una función que toma un CancellationToken y devuelve un nuevo documento. El nuevo documento tiene un nuevo árbol de sintaxis que incluye el código revisado que llama a `ImmutableArray.Empty`. Este fragmento de código utiliza una expresión lambda para que pueden cerrar el nodo objectCreation y documento del contexto.
 
@@ -288,7 +288,7 @@ private async Task<Document> ChangeToImmutableArrayEmpty(
 }
 ```
 
-Deberá colocar el símbolo de intercalación del editor en el `SyntaxGenerator` identificador y uso **Ctrl**+**.** (punto) para agregar adecuado `using` instrucción para este tipo.
+Deberá colocar el símbolo de intercalación del editor en el `SyntaxGenerator` identificador y uso **Ctrl**+ **.** (punto) para agregar adecuado `using` instrucción para este tipo.
 
 Este código usa `SyntaxGenerator`, que es un tipo útil para construir el nuevo código. Después de obtener un generador para el documento que tiene el problema de código, `ChangeToImmutableArrayEmpty` llamadas `MemberAccessExpression`, pasando el tipo que tiene el miembro que desea obtener acceso y pasando el nombre del miembro como una cadena.
 
@@ -296,9 +296,9 @@ A continuación, el método captura la raíz del documento, y dado que esto pued
 
 ## <a name="try-your-code-fix"></a>Pruebe la corrección de código
 
-Ahora puede presionar **F5** para ejecutar el analizador en una segunda instancia de Visual Studio. Abra el proyecto de consola que usó antes. Ahora debería ver aparecer donde es la expresión de creación de objeto nuevo para la bombilla `ImmutableArray<int>`. Si presiona **Ctrl**+**.** (punto), a continuación, verá el código de corregir, y verá una vista previa de diferencia de código generado automáticamente en la interfaz de usuario de bombilla. Roslyn crea para usted.
+Ahora puede presionar **F5** para ejecutar el analizador en una segunda instancia de Visual Studio. Abra el proyecto de consola que usó antes. Ahora debería ver aparecer donde es la expresión de creación de objeto nuevo para la bombilla `ImmutableArray<int>`. Si presiona **Ctrl**+ **.** (punto), a continuación, verá el código de corregir, y verá una vista previa de diferencia de código generado automáticamente en la interfaz de usuario de bombilla. Roslyn crea para usted.
 
-**Sugerencia de Pro:** Si inicia la segunda instancia de Visual Studio y no ve la luz con la corrección de código, es posible que deba borrar la caché de componentes de Visual Studio. Borrar la memoria caché, se fuerza a Visual Studio para volver a examinar los componentes, por lo que, a continuación, Visual Studio debe recoger el componente más reciente. En primer lugar, cierre la segunda instancia de Visual Studio. A continuación, en **Windows Explorer**, vaya a *%LOCALAPPDATA%\Microsoft\VisualStudio\16.0Roslyn\\*. (El "16.0" cambia según la versión con Visual Studio). Eliminar el subdirectorio *ComponentModelCache*.
+**Sugerencia de Pro:** Si inicia la segunda instancia de Visual Studio y no ve la luz con la corrección de código, es posible que deba borrar la caché de componentes de Visual Studio. Borrar la memoria caché, se fuerza a Visual Studio para volver a examinar los componentes, por lo que, a continuación, Visual Studio debe recoger el componente más reciente. En primer lugar, cierre la segunda instancia de Visual Studio. A continuación, en **Windows Explorer**, vaya a *%LOCALAPPDATA%\Microsoft\VisualStudio\16.0Roslyn\\* . (El "16.0" cambia según la versión con Visual Studio). Eliminar el subdirectorio *ComponentModelCache*.
 
 ## <a name="talk-video-and-finish-code-project"></a>Hable con vídeo y finalizar el proyecto de código
 

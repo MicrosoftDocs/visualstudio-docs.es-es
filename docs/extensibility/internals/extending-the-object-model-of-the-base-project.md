@@ -7,17 +7,17 @@ helpviewer_keywords:
 - project subtypes, extending automation object model
 - automation object model
 ms.assetid: 2f95cc53-dff6-476c-bacd-500fb0ff7725
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c148a675dbf4a5602ce620042d488e19127c09ca
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 607a63dc84db2811a4a2d158be07f158b849e1ad
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62909973"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66329043"
 ---
 # <a name="extend-the-object-model-of-the-base-project"></a>Extender el modelo de objetos del proyecto base
 

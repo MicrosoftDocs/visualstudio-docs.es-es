@@ -9,17 +9,17 @@ helpviewer_keywords:
 - <ProjectCollection> element [Visual Studio Templates]
 - ProjectCollection element [Visual Studio Templates]
 ms.assetid: deb27180-2035-49ed-b835-c47bb3cd2f8f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 902c2d3bf841537808317be8f196f52d23a4a64c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5fe67217acfa4c3612d1feea45b5267402955481
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62805848"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66336038"
 ---
 # <a name="projectcollection-element-visual-studio-templates"></a>ProjectCollection (elemento) (plantillas de Visual Studio)
 Especifica la organización y el contenido de las plantillas de varios proyectos.

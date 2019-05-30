@@ -6,17 +6,17 @@ helpviewer_keywords:
 - solutions, creating parent containers
 - source control plug-ins, creating parent containers
 ms.assetid: 961e68ed-2603-4479-a306-330eda2b2efa
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b9b48cb7862b23df325b35bba0cb3e197573e3c0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d50800e527c6e79100bf699172f7fc30881b3299
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62910755"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66332729"
 ---
 # <a name="create-parent-container-folders-for-solutions"></a>Crear carpetas de contenedor para las soluciones de primario
 En el origen de Control de complemento de API versión 1.2, un usuario puede especificar un destino de control de origen de raíz única para todos los proyectos web dentro de la solución. Esta raíz solo se llama a una raíz de Unified Super (SUR).

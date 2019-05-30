@@ -6,17 +6,17 @@ helpviewer_keywords:
 - installation [Visual Studio SDK], source control plug-ins
 - source control plug-ins, installing
 ms.assetid: 9e2e01d9-7beb-42b2-99b2-86995578afda
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e2835ab64d5665c00c404294ec12019d2b981654
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9de10f1aebd47093a3cc3f41343e73cefdde473a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63420527"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66334924"
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>Procedimiento Instalar un complemento de control de código fuente
 Creación de un control de código fuente complemento implica tres pasos:
@@ -64,7 +64,7 @@ Creación de un control de código fuente complemento implica tres pasos:
 
 3. Agregue la subclave, **SourceCodeControlProvider**, en el **HKEY_LOCAL_MACHINE** clave en el **SOFTWARE** subclave.
 
-    En esta subclave, la entrada del registro **ProviderRegKey** se establece en una cadena que representa la subclave que se han colocado en el registro en el paso 1. El patrón es **HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\ProviderRegKey** = *SOFTWARE\\< nombre de la compañía\>\\< nombre de producto \>*.
+    En esta subclave, la entrada del registro **ProviderRegKey** se establece en una cadena que representa la subclave que se han colocado en el registro en el paso 1. El patrón es **HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\ProviderRegKey** = *SOFTWARE\\< nombre de la compañía\>\\< nombre de producto \>* .
 
     El siguiente es el contenido de ejemplo para esta subclave.
 
@@ -77,7 +77,7 @@ Creación de un control de código fuente complemento implica tres pasos:
 
 4. Cree una subclave denominada **InstalledSCCProviders** bajo el **SourceCodeControlProvider** subclave y, a continuación, coloque una entrada en dicha subclave.
 
-    El nombre de esta entrada es el nombre legible por el usuario del proveedor (igual que el valor especificado para la entrada SCCServerName) y el valor es, una vez más, la subclave que se creó en el paso 1. El patrón es **HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders\\< nombre para mostrar\>** = *SOFTWARE\\< empresa nombre\>\\< nombre de producto\>*.
+    El nombre de esta entrada es el nombre legible por el usuario del proveedor (igual que el valor especificado para la entrada SCCServerName) y el valor es, una vez más, la subclave que se creó en el paso 1. El patrón es **HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders\\< nombre para mostrar\>**  = *SOFTWARE\\< empresa nombre\>\\< nombre de producto\>* .
 
     Por ejemplo:
 
