@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - file extensions, specifying file handlers
 ms.assetid: e3de4730-a95c-465a-b3b2-92ca85364ad7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7b56df6c315d0612d6139fcda8b94f5d1b33b12a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7a80c17fc6de0efe691b1c36e4421cb2b62cbd00
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434545"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66331788"
 ---
 # <a name="specifying-file-handlers-for-file-name-extensions"></a>Especificación de identificadores de archivo para extensiones de nombre de archivo
 Hay varias maneras de determinar la aplicación que administra un archivo que tiene una extensión de archivo determinada. Los verbos OpenWithList y OpenWithProgids son dos formas de especificar controladores de archivo bajo la entrada del registro de la extensión de archivo.
@@ -47,7 +47,7 @@ HKEY_CLASSES_ROOT\
 |--------------------|----------------------|
 |transferidas|ProductName. extension.versionMajor.versionMinor|
 
- Puede registrar las aplicaciones diferentes que pueden abrir una extensión de archivo determinada mediante la adición de ProgID con control de versiones como valores a HKEY_CLASSES_ROOT\\*\<extensión >* \OpenWithProgids clave. Esta clave del registro contiene una lista de alternativas ProgID asociados con la extensión de archivo. Las aplicaciones asociadas con el ProgID de la lista aparecen en el **abrir con**_Product Name_ submenú. Si se especifica la misma aplicación tanto en el `OpenWithList` y `OpenWithProgids` claves, el sistema operativo combina los duplicados.
+ Puede registrar las aplicaciones diferentes que pueden abrir una extensión de archivo determinada mediante la adición de ProgID con control de versiones como valores a HKEY_CLASSES_ROOT\\ *\<extensión >* \OpenWithProgids clave. Esta clave del registro contiene una lista de alternativas ProgID asociados con la extensión de archivo. Las aplicaciones asociadas con el ProgID de la lista aparecen en el **abrir con**_Product Name_ submenú. Si se especifica la misma aplicación tanto en el `OpenWithList` y `OpenWithProgids` claves, el sistema operativo combina los duplicados.
 
 > [!NOTE]
 > El `OpenWithProgids` clave solo se admite en Windows XP. Dado que otros sistemas operativos de pasar por alto esta clave, no usarlo como el registro solo para los controladores de archivo. Use esta clave para ofrecer una mejor experiencia de usuario en Windows XP.

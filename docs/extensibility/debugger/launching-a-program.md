@@ -6,17 +6,17 @@ helpviewer_keywords:
 - debug engines, launching
 - programs, launching
 ms.assetid: 6857e9c6-e44a-468a-afa4-f7c4a0b77844
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c069e082d4bd9a11278a63d33a68822e528db795
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d9488c002e78828471374b954550843e16ff0e6b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63409982"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66344081"
 ---
 # <a name="launch-a-program"></a>Iniciar un programa
 Los usuarios que desean depurar un programa pueden presionar **F5** para ejecutar el depurador desde el IDE. Esto inicia una serie de eventos producidos en última instancia en el IDE se conecta a un motor de depuración (DE), que a su vez está conectado o adjunta, al programa como se indica a continuación:

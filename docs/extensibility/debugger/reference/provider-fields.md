@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - PROVIDER_FIELDS enumeration
 ms.assetid: 39631545-2b0e-45b4-978b-d63656484b02
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 838a7dc0024e69335bf5c49c664bd491a6949d08
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 923ae0bc3ca03dabee7b5d4bca74d24c7f7d5815
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65460921"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66329367"
 ---
 # <a name="providerfields"></a>PROVIDER_FIELDS
 Especifica las propiedades asociadas con un proveedor de programa.

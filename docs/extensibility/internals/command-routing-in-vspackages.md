@@ -6,17 +6,17 @@ helpviewer_keywords:
 - commands, routing
 - command routing, Visual Studio SDK
 ms.assetid: a9c7f9ae-3594-4557-a314-8cf76f5f8772
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5749875a440a3122a06b81ae9d721e75ded6202c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a534a015f57a738ca65895002a6fec4454f0ae97
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62862022"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66342227"
 ---
 # <a name="command-routing-in-vspackages"></a>Enrutamiento de comandos en VSPackages
 Un comando se enruta en [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] según el contexto en el que se ejecuta. Se enruta desde el contexto inicial hacia el exterior para el contexto global.

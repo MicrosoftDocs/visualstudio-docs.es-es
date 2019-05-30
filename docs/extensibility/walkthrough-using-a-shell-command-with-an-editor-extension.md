@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - add a menu command
 ms.assetid: 08526848-a442-4cd4-afa1-b2eac2005adb
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0eade1bf17955bce52ea53b159f23102afb74b8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b89d4d4356245929bbd8ada7790729e78da3d15d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444917"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66328152"
 ---
 # <a name="walkthrough-use-a-shell-command-with-an-editor-extension"></a>Tutorial: Utilice un comando de shell con una extensión del editor
 Desde un VSPackage, puede agregar características como los comandos de menú en el editor. Este tutorial muestra cómo agregar un elemento de gráfico a una vista en el editor de texto mediante la invocación de un comando de menú.
@@ -38,7 +38,7 @@ Desde un VSPackage, puede agregar características como los comandos de menú en
 
 ## <a name="add-a-mef-extension-to-the-command-extension"></a>Agregar una extensión MEF a la extensión de comando
 
-1. En **el Explorador de soluciones**, haga clic en el nodo de soluciones, haga clic en **agregar**y, a continuación, haga clic en **nuevo proyecto**. En el **Agregar nuevo proyecto** cuadro de diálogo, haga clic en **extensibilidad** en **Visual C#**, a continuación, **proyecto VSIX**. Dé un nombre al proyecto `CommentAdornmentTest`.
+1. En **el Explorador de soluciones**, haga clic en el nodo de soluciones, haga clic en **agregar**y, a continuación, haga clic en **nuevo proyecto**. En el **Agregar nuevo proyecto** cuadro de diálogo, haga clic en **extensibilidad** en **Visual C#** , a continuación, **proyecto VSIX**. Dé un nombre al proyecto `CommentAdornmentTest`.
 
 2. Dado que este proyecto interactuará con el ensamblado de VSPackage con nombre seguro, se debe firmar el ensamblado. Puede volver a usar el archivo de clave que ya ha creado para el ensamblado de VSPackage.
 

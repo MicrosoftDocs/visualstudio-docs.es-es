@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - BUILT_TYPE structure
 ms.assetid: cc02c32c-0f65-4210-ad25-a9b1899066e8
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1a1ecf55b017319850f97c23d926a650c7e01680
-ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.openlocfilehash: ae5c7e1916c77e3743de63df8903e62feea4fe28
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65615340"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66327321"
 ---
 # <a name="builttype"></a>BUILT_TYPE
 Esta estructura especifica información sobre un tipo de campo que se toman de los metadatos.

@@ -3,18 +3,18 @@ title: 'Tutorial: Guardando la configuración de usuario en una página de inici
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 754b9bf3-8681-4c77-b0a4-09146a4e1d2d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 2362bda715a95e4228b6e4f882f1f8fb708667dd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 79a54867044961d972e2ded452958d2463038e7d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62964786"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318519"
 ---
 # <a name="walkthrough-save-user-settings-on-a-start-page"></a>Tutorial: Guardar la configuración de usuario en una página de inicio
 

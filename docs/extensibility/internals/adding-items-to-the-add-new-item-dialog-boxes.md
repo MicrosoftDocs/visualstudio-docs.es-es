@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Add New Item dialog box, adding items
 ms.assetid: 2f70863b-425b-4e65-86b4-d6a898e29dc7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 101bc22cd33b3438e0dc82542c20b1bb103cb617
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 61a9921103bf5954061fbb61c405ba1d36ffb782
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63418688"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66328049"
 ---
 # <a name="add-items-to-the-add-new-item-dialog-box"></a>Agregar elementos al cuadro de diálogo Agregar nuevo elemento
 El proceso para agregar elementos a la **Agregar nuevo elemento** inicia el cuadro de diálogo con las claves del registro. Como se muestra en las siguientes entradas del registro, el **AddItemTemplates** sección contiene la ruta de acceso y el nombre del directorio en los elementos que ponen a disposición de los **Agregar nuevo elemento** se colocan el cuadro de diálogo.
@@ -46,7 +46,7 @@ El proceso para agregar elementos a la **Agregar nuevo elemento** inicia el cuad
 > - [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]: {FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}
 > - [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]: {F184B08F-C81C-45F6-A57F-5ABD9991F28F}
 
- El directorio que aparece para **TemplatesDir**, que es *TEMPLATE_PATH %\\&lt;SomeProjectItems&gt;*, es el nodo en el lado izquierdo de la **agregar Nuevo elemento** árbol del cuadro de diálogo. Elementos adicionales en el árbol se basan en el subdirectorio dentro del directorio raíz. Los archivos disponibles para agregarse al proyecto son los elementos en el panel derecho de la **Agregar nuevo elemento** cuadro de diálogo.
+ El directorio que aparece para **TemplatesDir**, que es *TEMPLATE_PATH %\\&lt;SomeProjectItems&gt;* , es el nodo en el lado izquierdo de la **agregar Nuevo elemento** árbol del cuadro de diálogo. Elementos adicionales en el árbol se basan en el subdirectorio dentro del directorio raíz. Los archivos disponibles para agregarse al proyecto son los elementos en el panel derecho de la **Agregar nuevo elemento** cuadro de diálogo.
 
  Normalmente, esta carpeta contendrá los archivos de plantilla para su proyecto como una plantilla HTML o *.cpp* archivo y cualquier *.vsz* archivos para iniciar asistentes. Para controlar cómo se muestran los elementos, también puede incluir *.vsdir* los archivos para localizar los nombres de directorio y los iconos. La cadena localizada es el título que aparece en el cuadro de diálogo que representa este nodo en el **Agregar nuevo elemento** árbol del cuadro de diálogo.
 
