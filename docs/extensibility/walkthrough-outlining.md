@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - outlining
 ms.assetid: d75a44aa-265a-44d4-9c28-457f59c4ff9f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 908b2f2b7a0dc055065abd96df3eb4495ad30ce8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: df269c3018d850ed2d5ae7435b82eb4f3aee4e1a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965059"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66320625"
 ---
 # <a name="walkthrough-outlining"></a>Tutorial: esquematizar
 Configurar características basadas en lenguaje como mediante la definición de los tipos de regiones de texto que desea expandir o contraer la esquematización. Puede definir regiones en el contexto de un servicio de lenguaje, o definir su propio tipo de contenido y la extensión de nombre de archivo y la definición de la región se aplican sólo a ese tipo o aplicar las definiciones de la región a un tipo de contenido existente (por ejemplo, "text"). En este tutorial se muestra cómo definir y mostrar las regiones de esquematización.
@@ -34,9 +34,9 @@ Configurar características basadas en lenguaje como mediante la definición de 
 3. Elimine los archivos de clase existentes.
 
 ## <a name="implement-an-outlining-tagger"></a>Implementar un etiquetador de esquematización
- Las regiones de esquematización se marcan con un tipo de etiqueta (<xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag>). Esta etiqueta proporciona el estándar de comportamiento de esquematización. Puede expandir o contraer la región esquematizada. La región esquematizada está marcada por un signo más (**+**) si está contraído o un signo menos (**-**) si se expande y la región expandida es enmarcado por una línea vertical.
+ Las regiones de esquematización se marcan con un tipo de etiqueta (<xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag>). Esta etiqueta proporciona el estándar de comportamiento de esquematización. Puede expandir o contraer la región esquematizada. La región esquematizada está marcada por un signo más ( **+** ) si está contraído o un signo menos ( **-** ) si se expande y la región expandida es enmarcado por una línea vertical.
 
- Los pasos siguientes muestran cómo definir un etiquetador que crea las regiones de esquematización para todas las regiones delimitadas por corchetes (**[**,**]**).
+ Los pasos siguientes muestran cómo definir un etiquetador que crea las regiones de esquematización para todas las regiones delimitadas por corchetes ( **[** , **]** ).
 
 ### <a name="to-implement-an-outlining-tagger"></a>Para implementar un etiquetador de esquematización
 
@@ -129,7 +129,7 @@ Configurar características basadas en lenguaje como mediante la definición de 
     ]
     ```
 
-4. Debe haber una región de esquematización que incluya los corchetes. Debe ser capaz de hacer clic en el signo menos a la izquierda de los paréntesis de apertura para contraer la región de esquematización. Cuando la región se contrae, el símbolo de puntos suspensivos (*...* ) debe aparecer a la izquierda de la región contraída y un menú emergente que contiene el texto **mantenga el puntero de texto** debe aparecer al mover el puntero sobre los puntos suspensivos.
+4. Debe haber una región de esquematización que incluya los corchetes. Debe ser capaz de hacer clic en el signo menos a la izquierda de los paréntesis de apertura para contraer la región de esquematización. Cuando la región se contrae, el símbolo de puntos suspensivos ( *...* ) debe aparecer a la izquierda de la región contraída y un menú emergente que contiene el texto **mantenga el puntero de texto** debe aparecer al mover el puntero sobre los puntos suspensivos.
 
 ## <a name="see-also"></a>Vea también
 - [Tutorial: Vincular un tipo de contenido a una extensión de nombre de archivo](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

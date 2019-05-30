@@ -6,17 +6,17 @@ helpviewer_keywords:
 - font and color control [Visual Studio SDK], categories
 - custom categories
 ms.assetid: 99311a93-d642-4344-bbf9-ff6e7fa5bf7f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 124b1a1f5e6bbf0f07bf8533940820d4f5ca9247
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4eeb8af06ee4e3285e15afbb3571fb2845adef98
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63418850"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66321400"
 ---
 # <a name="implement-custom-categories-and-display-items"></a>Implementar categorías personalizadas y mostrar los elementos
 Un VSPackage puede proporcionar control de las fuentes y colores de su texto para el [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] el entorno de desarrollo integrado (IDE) a través de las categorías personalizadas y mostrar los elementos.
@@ -45,7 +45,7 @@ Un VSPackage puede proporcionar control de las fuentes y colores de su texto par
 
 ## <a name="to-create-or-identify-categories"></a>Para crear o identificar categorías
 
-- Construir un tipo especial de entrada de registro de la categoría bajo *[HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<versión de Visual Studio >*\FontAndColors\\ `<Category>`]*
+- Construir un tipo especial de entrada de registro de la categoría bajo *[HKLM\SOFTWARE\Microsoft \Visual Studio\\* \<versión de Visual Studio > *\FontAndColors\\ `<Category>`]*
 
    *\<Categoría >* es el nombre no traducido de la categoría.
 
@@ -60,7 +60,7 @@ Un VSPackage puede proporcionar control de las fuentes y colores de su texto par
 
 ## <a name="to-create-or-identify-groups"></a>Para crear o identificar grupos
 
-- Construir un tipo especial de entrada de registro de la categoría bajo *[HKLM\SOFTWARE\Microsoft \Visual Studio\\*\<versión de Visual Studio >*\FontAndColors\\*  \<grupo >*]*
+- Construir un tipo especial de entrada de registro de la categoría bajo *[HKLM\SOFTWARE\Microsoft \Visual Studio\\* \<versión de Visual Studio > *\FontAndColors\\*  \<grupo > *]*
 
    *\<grupo >* es el nombre no traducido del grupo.
 

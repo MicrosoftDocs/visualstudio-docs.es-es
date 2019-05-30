@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], design decisions
 ms.assetid: 5f60ec1a-5a74-4362-8293-817a4dd73872
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3e17e5a88b958c1361e7f8b3db70d7599f44f766
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bb09884511c8a2070e49e12d38084c12a2907b19
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62858988"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322574"
 ---
 # <a name="source-control-design-decisions"></a>Decisiones de diseño del control de código fuente
 Las siguientes decisiones de diseño deben considerarse para los proyectos al implementar el control de código fuente.

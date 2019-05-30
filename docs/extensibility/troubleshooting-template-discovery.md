@@ -2,17 +2,17 @@
 title: Solución de problemas de detección de plantillas en Visual Studio | Documentos de Microsoft
 ms.date: 01/02/2018
 ms.topic: conceptual
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a1ea74d3c5f3fed961a956e9a55a4930d009d530
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b0b6af3e24d4e563ebbbcf0a233d85a1cd038cb3
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62432088"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66316361"
 ---
 # <a name="troubleshooting-template-installation"></a>Solución de problemas de instalación de la plantilla
 
