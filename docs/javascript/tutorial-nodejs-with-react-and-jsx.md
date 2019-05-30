@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 1283b447f750c3485029085d2669215abbf65dfd
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: fc45c25dcc9de1cdf1991525401e2d53bd86cdb3
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65695982"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261988"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Tutorial: Crear una aplicación Node.js y React en Visual Studio
 
@@ -378,7 +378,7 @@ En la sección anterior se asoció el depurador al código Node.jse del lado ser
     ::: moniker range=">=vs-2019"
 
     > [!NOTE]
-    > También puede establecer la marca `--remote-debugging-port` al iniciar el explorador si selecciona **Explorar con...** > en la barra de herramientas **Depurar**, elige **Agregar** y, después, configura la marca en el campo **Argumentos**. Use un nombre descriptivo distinto para el explorador, como **Chrome con depuración**. Para obtener información detallada, vea las [notas de la versión](https://docs.microsoft.com/visualstudio/releases/2019/release-notes-preview#browser-cli-params-support).
+    > También puede establecer la marca `--remote-debugging-port` al iniciar el explorador si selecciona **Explorar con...** > en la barra de herramientas **Depurar**, elige **Agregar** y, después, configura la marca en el campo **Argumentos**. Use un nombre descriptivo distinto para el explorador, como **Chrome con depuración**. Para obtener información detallada, vea las [notas de la versión](https://docs.microsoft.com/visualstudio/releases/2019/release-notes-preview).
 
     ::: moniker-end
 

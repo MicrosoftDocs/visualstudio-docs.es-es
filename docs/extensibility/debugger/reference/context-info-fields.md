@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - CONTEXT_INFO_FIELDS enumeration
 ms.assetid: ef436bd3-738e-47e8-828c-8febce752439
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 13501c86eabd249e0e47137099862cd6db654415
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 2ed50d43061ee714f8f892e03bb164f16e2e33d9
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56706098"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66346381"
 ---
 # <a name="contextinfofields"></a>CONTEXT_INFO_FIELDS
 Especifica qué información se va a recuperar sobre un contexto de la memoria.
@@ -49,18 +52,24 @@ public enum enum_CONTEXT_INFO_FIELDS {
 };
 ```
 
-## <a name="members"></a>Miembros
-CIF_MODULEURL Initialize o usar el `bstrModuleUrl` campo de la [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) estructura.
+## <a name="fields"></a>Campos
+`CIF_MODULEURL`\
+Inicializar o usar el `bstrModuleUrl` campo de la [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) estructura.
 
-CIF_FUNCTION Initialize o usar el `bstrFunction` campo de la `CONTEXT_INFO` estructura.
+`CIF_FUNCTION`\
+Inicializar o usar el `bstrFunction` campo de la `CONTEXT_INFO` estructura.
 
-CIF_FUNCTIONOFFSET Initialize o usar el `posFunctionOffset` campo de la `CONTEXT_INFO` estructura.
+`CIF_FUNCTIONOFFSET`\
+Inicializar o usar el `posFunctionOffset` campo de la `CONTEXT_INFO` estructura.
 
-CIF_ADDRESS Initialize o usar el `bstrAddress` campo de la `CONTEXT_INFO` estructura.
+`CIF_ADDRESS`\
+Inicializar o usar el `bstrAddress` campo de la `CONTEXT_INFO` estructura.
 
-CIF_ADDRESSOFFSET Initialize o usar el `bstrAddressOffset` campo de la `CONTEXT_INFO` estructura.
+`CIF_ADDRESSOFFSET`\
+Inicializar o usar el `bstrAddressOffset` campo de la `CONTEXT_INFO` estructura.
 
-CIF_ALLFIELDS Initialize o usar todos los campos de la `CONTEXT_INFO` estructura.
+`CIF_ALLFIELDS`\
+Inicializar o usar todos los campos de la `CONTEXT_INFO` estructura.
 
 ## <a name="remarks"></a>Comentarios
 Estos valores se pasan a un parámetro a la [GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md) método para indicar qué campos de la [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) estructura deben inicializarse.

@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - text markers
 ms.assetid: 937a0b19-1216-45d5-a7ad-4fe1d6f73097
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b443c4530a71897d11731c023af57215eac8706a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b6f3662b5107d517f19b4803a37de4ebcf235bc9
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434200"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353484"
 ---
 # <a name="using-text-markers-with-the-legacy-api"></a>Uso de marcadores de texto con la API heredada
 Un marcador de texto es un intervalo de texto en un búfer que puede afectar a la presentación flotante y el comportamiento de un área de texto. Los marcadores incluyen los puntos de interrupción, marcadores, subrayados ondulados y áreas de solo lectura. Marcadores de texto son básicamente diferentes colores de sintaxis. Color de la sintaxis es una manera rápida para comunicar la sintaxis del lenguaje que está asociada a un área de texto. Colorear la sintaxis generalmente se solicita cuando Windows se vuelve a dibujar la pantalla, cuando la velocidad es importante. Colorear la sintaxis cambia solo el color del texto. Marcadores de texto pueden cambiar muchas otras propiedades de texto. Marcadores de texto pueden "flotar" y aplicar un comportamiento especial y color.
@@ -34,7 +34,7 @@ Un marcador de texto es un intervalo de texto en un búfer que puede afectar a l
 | [Cómo: Crear marcadores de texto personalizados](../extensibility/how-to-create-custom-text-markers.md) | Describe cómo crear y agregar un tipo de marcador de texto personalizado a una vista de texto. |
 | [Cómo: Usar marcadores de texto](../extensibility/how-to-use-text-markers.md) | Explica cómo agregar marcadores de texto. |
 | [Dentro del editor principal](../extensibility/inside-the-core-editor.md) | Se describen las características del editor de núcleo y proporciona detalles sobre cómo personalizar el editor básico. |
-| [Características del Editor](https://msdn.microsoft.com/library/bdac940d-1f14-4019-a01f-fd0bb3dc7198) | Describe las características disponibles en el [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] editor básico. |
+| [Características del editor](https://msdn.microsoft.com/library/bdac940d-1f14-4019-a01f-fd0bb3dc7198) | Describe las características disponibles en el [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] editor básico. |
 
 ## <a name="reference"></a>Referencia
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsPackageDefinedTextMarkerType> Proporciona un mecanismo uniforme para obtener información sobre un tipo de marcador de texto específico, si los predefinidos por el editor o registrado por un VSPackage.

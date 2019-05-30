@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, registering
 ms.assetid: 9984cd3d-d34f-4662-9ace-31766499abf5
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 25b38f008df47dd2912fef042424e4c3d42becd8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 90400a9bf750eb80e40d6558fed382e18e7824ef
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63415649"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66316053"
 ---
 # <a name="register-a-custom-debug-engine"></a>Registrar un motor de depuración personalizado
 El motor de depuración debe registrarse como un generador de clases siguientes convenciones de COM, así como registrar con Visual Studio a través de la subclave del registro de Visual Studio.

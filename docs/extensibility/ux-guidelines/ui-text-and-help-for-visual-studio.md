@@ -3,17 +3,17 @@ title: Texto de la interfaz de usuario y la Ayuda de Visual Studio | Microsoft D
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: e8747d07-6c90-46cc-b425-55b589f7e9e4
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 31fdc396d1dae372663abeb4c956bac0c9ef9b95
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7917bdd3b7a94af605b2626016c9a9a725fa2b29
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62961412"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66310791"
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>Texto de la interfaz de usuario y la Ayuda de Visual Studio
 ## <a name="BKMK_UITextAndTerminology"></a> Terminología y el texto de la interfaz de usuario
@@ -272,7 +272,7 @@ ms.locfileid: "62961412"
 
 - **Botones de Ayuda de la interfaz de usuario** (en desuso). Un indicador visible en la barra de título que proporciona acceso al tema de Ayuda de F1 relacionado.
 
-### <a name="text"></a>Text
+### <a name="text"></a>Texto
 
 #### <a name="instructional-and-supplemental-text-in-dialogs"></a>Texto informativo y adicional en los cuadros de diálogo
  En los cuadros de diálogo que admiten tareas complejas, es posible que sea necesario para proporcionar texto informativo en la interfaz de usuario, a menudo en la parte superior del cuadro de diálogo o cerca de los controles complejos. Consulte [UI texto y la terminología](../../extensibility/ux-guidelines/ui-text-and-help-for-visual-studio.md#BKMK_UITextAndTerminology) para obtener más información sobre el estilo de escritura.

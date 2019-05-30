@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Especificar información de código adicional mediante _Analysis_assume
+title: Usar _Analysis_assume para sugerencias de análisis de código
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +12,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 25ce2a97acd248e546fdfab1a1b5c3f22e085f0c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 09db0ff784c7d8fa5a9889487f6090ad9afbfea0
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63403112"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66260870"
 ---
 # <a name="how-to-specify-additional-code-information-by-using-analysisassume"></a>Procedimiento Especificar información de código adicional mediante _Analysis_assume
 Puede proporcionar sugerencias a la herramienta de análisis de código para código de C o C++ que ayudan al proceso de análisis y reducir las advertencias. Para proporcionar información adicional, utilice la siguiente función:

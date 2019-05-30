@@ -8,17 +8,17 @@ helpviewer_keywords:
 - IVsAppCommandLine::GetOption method
 - command line, switches
 ms.assetid: 8bbbd87e-76fe-4fb5-8ef9-65f5e31967cf
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 376dcee6f23ec2633efe1b23f77552ebf33341f2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: de0044544a97134380900d3e55f54c8fb34431fd
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62891842"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352334"
 ---
 # <a name="add-command-line-switches"></a>Agregar modificadores de línea de comandos
 Puede agregar modificadores de línea de comandos que se aplican a su VSPackage al *devenv.exe* se ejecuta. Use <xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute> para declarar el nombre del modificador y sus propiedades. En este ejemplo, se agrega el conmutador MySwitch para una subclase de VSPackage llamado **AddCommandSwitchPackage** sin argumentos y con el VSPackage que se cargan automáticamente.
@@ -34,7 +34,7 @@ Puede agregar modificadores de línea de comandos que se aplican a su VSPackage 
 | Parámetro | Descripción|
 | Argumentos | El número de argumentos para el conmutador. Puede ser "*", o una lista de argumentos. |
 | DemandLoad | Cargar el VSPackage automáticamente si se establece en 1, en caso contrario, se establece en 0. |
-| HelpString | La Ayuda de cadena o identificador de recurso de la cadena para mostrar con **devenv /?**. |
+| HelpString | La Ayuda de cadena o identificador de recurso de la cadena para mostrar con **devenv /?** . |
 | Name | El conmutador. |
 | PackageGuid | El GUID del paquete. |
 

@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - margin glyph
 ms.assetid: 814185db-24f9-417f-b3b1-7c5aabb42b45
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 02bc8d858f28799020b958978845c0994accd554
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6149c1e1e91848fc88e55eefbcbddf8e95db073e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62952812"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312746"
 ---
 # <a name="walkthrough-create-a-margin-glyph"></a>Tutorial: Creación de un glifo de margen
 Puede personalizar la apariencia de los márgenes del editor mediante el uso de extensiones de editor personalizado. En este tutorial se coloca un glifo personalizados en el margen del indicador cada vez que aparece la palabra "todo" en un comentario de código.

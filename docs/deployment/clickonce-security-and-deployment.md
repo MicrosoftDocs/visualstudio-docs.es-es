@@ -17,15 +17,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 86c69070a6c954ccf01581690e11237fea4e52c7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7b634b25c7bfaf71294993cc48c960508d764839
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406765"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263243"
 ---
 # <a name="clickonce-security-and-deployment"></a>Seguridad e implementación ClickOnce
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] es una tecnología de implementación que le permite crear aplicaciones de actualización automática basado en Windows que se pueden instalar y ejecutar con interacción mínima del usuario. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] proporciona compatibilidad completa para publicar y actualizar las aplicaciones implementadas con la tecnología ClickOnce si ha desarrollado sus proyectos con Visual Basic y Visual C#. Para obtener información sobre cómo implementar aplicaciones de Visual C++, vea [implementación de ClickOnce para aplicaciones de Visual C++](/cpp/ide/clickonce-deployment-for-visual-cpp-applications).
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] es una tecnología de implementación que le permite crear aplicaciones de actualización automática basado en Windows que se pueden instalar y ejecutar con interacción mínima del usuario. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] proporciona compatibilidad completa para publicar y actualizar las aplicaciones implementadas con la tecnología ClickOnce si ha desarrollado sus proyectos con Visual Basic y Visual C#. Para obtener información sobre cómo implementar aplicaciones de Visual C++, vea [implementación de ClickOnce para aplicaciones de Visual C++](/cpp/windows/clickonce-deployment-for-visual-cpp-applications).
 
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] la implementación supera tres problemas principales de implementación:
 
@@ -38,7 +38,7 @@ ms.locfileid: "63406765"
   En el pasado, estos problemas causados a veces, los desarrolladores a crear aplicaciones Web en lugar de aplicaciones basadas en Windows, tener que sacrificar una interfaz de usuario enriquecida para facilitar la instalación. Mediante el uso de las aplicaciones implementadas mediante [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], puede tener el mejor de ambas tecnologías.
 
 ## <a name="what-is-a-clickonce-application"></a>¿Qué es una aplicación ClickOnce?
- Un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación es cualquier Windows Presentation Foundation (*.xbap*), Windows Forms (*.exe*), aplicación de consola (*.exe*), o una solución de Office (*.dll*) publicada utilizando [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] tecnología. Puede publicar un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación de tres maneras diferentes: desde una página Web, desde un recurso compartido de red o desde medios, como un CD-ROM. Un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación puede ser instalada en el equipo de un usuario final y ejecutar localmente incluso cuando el equipo está sin conexión o se puede ejecutar en un modo de solo en línea sin instalar nada de forma permanente en el equipo del usuario final. Para obtener más información, consulte [elegir una estrategia de implementación de ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md).
+ Un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación es cualquier Windows Presentation Foundation ( *.xbap*), Windows Forms ( *.exe*), aplicación de consola ( *.exe*), o una solución de Office ( *.dll*) publicada utilizando [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] tecnología. Puede publicar un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación de tres maneras diferentes: desde una página Web, desde un recurso compartido de red o desde medios, como un CD-ROM. Un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación puede ser instalada en el equipo de un usuario final y ejecutar localmente incluso cuando el equipo está sin conexión o se puede ejecutar en un modo de solo en línea sin instalar nada de forma permanente en el equipo del usuario final. Para obtener más información, consulte [elegir una estrategia de implementación de ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md).
 
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] las aplicaciones se pueden actualizar automáticamente; se buscan versiones más recientes cuando estén disponibles y reemplazar automáticamente los archivos actualizados. El desarrollador puede especificar el comportamiento de actualización, y un administrador de red puede igualmente controlar las estrategias del proceso, por ejemplo, al marcar actualizaciones como obligatorias. Las actualizaciones también se revierte a una versión anterior por el usuario final o un administrador. Para obtener más información, consulte [elegir una estrategia de actualización de ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md).
 

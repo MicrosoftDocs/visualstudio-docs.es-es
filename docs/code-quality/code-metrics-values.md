@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f989e5ec028f3a296585c54eb17b54f4da7c1cf0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0b44f2a36297db3265a3904f1f76596ca6ba0e35
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62809320"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66260473"
 ---
 # <a name="code-metrics-values"></a>Valores de las métricas de código
 
@@ -28,15 +28,15 @@ Para obtener información sobre cómo generar datos de métricas de código en V
 
 En la lista siguiente se muestra el código de los resultados de las métricas que se calcula de Visual Studio:
 
-- **Índice de mantenimiento** -calcula un valor de índice entre 0 y 100 que representa su relativa facilidad de mantenimiento del código. Un valor alto significa mayor facilidad de mantenimiento. Las clasificaciones de colores, pueden utilizarse para identificar rápidamente los puntos conflictivos en el código. Una clasificación en verde entre 20 y 100 e indica que el código tiene buen mantenimiento. Una calificación amarilla es entre 10 y 19 e indica que el código es moderadamente fácil de mantener. Una clasificación de color rojo es una clasificación entre 0 y 9 e indica un mantenimiento baja.
+- **Índice de mantenimiento** -calcula un valor de índice entre 0 y 100 que representa su relativa facilidad de mantenimiento del código. Un valor alto significa mayor facilidad de mantenimiento. Las clasificaciones de colores, pueden utilizarse para identificar rápidamente los puntos conflictivos en el código. Una clasificación en verde entre 20 y 100 e indica que el código tiene buen mantenimiento. Una calificación amarilla es entre 10 y 19 e indica que el código es moderadamente fácil de mantener. Una clasificación de color rojo es una clasificación entre 0 y 9 e indica un mantenimiento baja. Para obtener más información, consulte el [intervalo del índice de mantenimiento y el significado](https://blogs.msdn.microsoft.com/codeanalysis/2007/11/20/maintainability-index-range-and-meaning/) entrada de blog.
 
-- **Complejidad ciclomática** -mide la complejidad del código estructural. Se crea, calculando el número de rutas de acceso de código diferente en el flujo del programa. Un programa que tiene el flujo de control complejo requerirá más pruebas para lograr una buena cobertura de código y será más difícil de mantener.
+- **Complejidad ciclomática** -mide la complejidad del código estructural. Se crea, calculando el número de rutas de acceso de código diferente en el flujo del programa. Un programa que tiene el flujo de control complejo requiere más pruebas para lograr una buena cobertura de código y es difícil de mantener. Para obtener más información, consulte el [entrada de Wikipedia para complejidad ciclomática](https://wikipedia.org/wiki/Cyclomatic_complexity).
 
-- **Profundidad de herencia** -indica el número de definiciones de clase que se extienden a la raíz de la jerarquía de clases. La profundidad la jerarquía más difícil comprender donde se definen los campos y métodos determinados podría ser o / y ha vuelto a definir.
+- **Profundidad de herencia** -indica el número de diferentes clases que heredan entre sí, remontándose a la clase base. Profundidad de herencia es similar a la clase en que un cambio en una clase base puede afectar a cualquiera de sus clases heredadas de acoplamiento. Cuanto mayor sea este número, mayor será la herencia y mayor será la posibilidad de que las modificaciones de la clase base dar lugar a importantes cambios. Profundidad de herencia de un valor bajo es bueno y un valor alto es incorrecto. 
 
-- **Acoplamiento de clases** -mide el acoplamiento a las clases únicas a través de parámetros, variables locales, tipos de valor devuelto, llamadas a métodos, las creaciones de instancias genérica o de plantilla, clases base, implementaciones de interfaz, los campos definidos en los tipos externos, y decoración de atributo. Buen diseño de software dicta que deben tener alta cohesión y acoplamiento bajo los tipos y métodos. El significativo acoplamiento indica un diseño que es difícil reutilizar y mantener debido a sus interdependencias en otros tipos.
+- **Acoplamiento de clases** -mide el acoplamiento a las clases únicas a través de parámetros, variables locales, tipos de valor devuelto, llamadas a métodos, las creaciones de instancias genérica o de plantilla, clases base, implementaciones de interfaz, los campos definidos en los tipos externos, y decoración de atributo. Buen diseño de software dicta que deben tener alta cohesión y acoplamiento bajo los tipos y métodos. El significativo acoplamiento indica un diseño que es difícil reutilizar y mantener debido a sus interdependencias en otros tipos. Para obtener más información, consulte el [el acoplamiento de clases](https://blogs.msdn.microsoft.com/zainnab/2011/05/25/code-metrics-class-coupling/) entrada de blog.
 
-- **Líneas de código** -indica el número aproximado de líneas del código. El recuento se basa en el código IL y, por tanto, no es el número exacto de líneas en el archivo de código fuente. Un número muy alto podría indicar que un tipo o método está intentando hacer demasiado trabajo y debe dividirse. También podría indicar que el tipo o método podría ser difícil de mantener.
+- **Líneas de código** -indica el número aproximado de líneas del código. El recuento se basa en el código IL y, por tanto, no es el número exacto de líneas en el archivo de código fuente. Un recuento alto podría indicar que un tipo o método está intentando hacer demasiado trabajo y debe dividirse. También podría indicar que el tipo o método podría ser difícil de mantener.
 
    > [!NOTE]
    > El [versión de línea de comandos](../code-quality/how-to-generate-code-metrics-data.md#command-line-code-metrics) del código herramienta métricas recuentos reales líneas de código ya que analiza el código fuente en lugar de IL.

@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Publicar una aplicación ClickOnce mediante el Asistente para publicación | Documentos de Microsoft
+title: Publicar la aplicación ClickOnce sin usar el Asistente para publicación
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2eac5778320b45b841cdff2c8d95f6a591386712
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7c3880fdc8d1d83fd36fdf09fea9e0c955b02236
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406733"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263265"
 ---
 # <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>Procedimiento Publicación de una aplicación ClickOnce mediante el Asistente para publicación
 Para que una aplicación ClickOnce esté disponible para los usuarios, debe publicarla en un recurso compartido de archivos o ruta de acceso, en un servidor FTP o en un medio extraíble. Puede publicar la aplicación con el Asistente para publicación. En la página **Publicar** del **Diseñador de proyectos** hay disponibles más propiedades relativas a la publicación. Para obtener más información, vea [Publicar aplicaciones ClickOnce](../deployment/publishing-clickonce-applications.md).
@@ -43,7 +43,7 @@ Antes de ejecutar el Asistente para publicación, debe establecer las propiedade
 
     Aparece el Asistente para publicación.
 
-3. En la página **¿Dónde desea publicar la aplicación?**, escriba una dirección válida de servidor FTP o una ruta de acceso de archivo válida con uno de los formatos mostrados y después haga clic en **Siguiente**.
+3. En la página **¿Dónde desea publicar la aplicación?** , escriba una dirección válida de servidor FTP o una ruta de acceso de archivo válida con uno de los formatos mostrados y después haga clic en **Siguiente**.
 
 4. En la página **Instalación de la aplicación**, seleccione la ubicación donde los usuarios irán para instalar la aplicación:
 
@@ -53,7 +53,7 @@ Antes de ejecutar el Asistente para publicación, debe establecer las propiedade
 
    - Si los usuarios instalarán desde medios extraíbles, haga clic en **Desde un CD-ROM o un DVD-ROM** y después haga clic en **Siguiente**.
 
-5. En la página **¿La aplicación estará disponible sin conexión?**, haga clic en la opción apropiada:
+5. En la página **¿La aplicación estará disponible sin conexión?** , haga clic en la opción apropiada:
 
    - Si quiere que la aplicación se ejecute cuando el usuario esté desconectado de la red, haga clic en **Sí, esta aplicación está disponible con o sin conexión**. Se creará un acceso directo a la aplicación en el menú **Inicio**.
 
@@ -75,14 +75,14 @@ Antes de ejecutar el Asistente para publicación, debe establecer las propiedade
 
     Aparece el Asistente para publicación.
 
-3. En la página **¿Dónde desea publicar la aplicación?**, especifique la ruta de acceso del archivo o la ubicación FTP donde se publicará la aplicación, por ejemplo, *d:\deploy*. Después, haga clic en **Siguiente** para continuar.
+3. En la página **¿Dónde desea publicar la aplicación?** , especifique la ruta de acceso del archivo o la ubicación FTP donde se publicará la aplicación, por ejemplo, *d:\deploy*. Después, haga clic en **Siguiente** para continuar.
 
 4. En la página **Instalación de la aplicación**, Haga clic en **Desde un CD-ROM o un DVD-ROM** y después haga clic en **Siguiente**.
 
    > [!NOTE]
    > Si quiere que la instalación se ejecute automáticamente cuando se inserte el CD-ROM en la unidad, abra la página **Publicar** en el **Diseñador de proyectos** y haga clic en el botón **Opciones**; después, en el asistente **Opciones de publicación**, seleccione **En las instalaciones desde CD, el programa de instalación se inicia automáticamente al insertar el CD**.
 
-5. Si distribuye su aplicación en CD-ROM, quizás quiera proporcionar actualizaciones desde un sitio web. En la página **¿Dónde buscará la aplicación las actualizaciones?**, elija una opción de actualización:
+5. Si distribuye su aplicación en CD-ROM, quizás quiera proporcionar actualizaciones desde un sitio web. En la página **¿Dónde buscará la aplicación las actualizaciones?** , elija una opción de actualización:
 
    - Si la aplicación buscará actualizaciones, haga clic en **La aplicación buscará actualizaciones en la siguiente ubicación** y escriba el nombre de la ubicación donde se publicarán las actualizaciones. Puede ser una ubicación de archivos, un sitio web o un servidor FTP.
 

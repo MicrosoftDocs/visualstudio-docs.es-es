@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - ATTACH_REASON enumeration
 ms.assetid: 159fb70b-a344-4ba6-9115-b7eaa16e228f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 11fba0944ca1b23c22caae6f0d6a4d9455099946
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 8c132b507d679fd6cec5ce7fff04362159cbc848
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56688269"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351845"
 ---
 # <a name="attachreason"></a>ATTACH_REASON
 Especifica la razón para el motor de depuración (DE) para asociar a un nodo de programa.
@@ -41,12 +44,15 @@ public enum enum_ATTACH_REASON {
 };
 ```
 
-## <a name="members"></a>Miembros
-ATTACH_REASON_AUTO adjuntar porque el proceso está actualmente en modo de depuración.
+## <a name="fields"></a>Campos
+`ATTACH_REASON_AUTO`\
+Adjuntar el proceso está en modo de depuración.
 
-ATTACH_REASON_LAUNCH adjuntar porque se ha iniciado el proceso.
+`ATTACH_REASON_LAUNCH`\
+Adjuntar porque se ha iniciado el proceso.
 
-Adjuntar ATTACH_REASON_USER debido a una solicitud de usuario.
+`ATTACH_REASON_USER`\
+Adjuntar debido a una solicitud de usuario.
 
 ## <a name="remarks"></a>Comentarios
 Estos valores se usan como un parámetro a la [adjuntar](../../../extensibility/debugger/reference/idebugengine2-attach.md) y [adjuntar](../../../extensibility/debugger/reference/idebugprogramex2-attach.md) métodos.

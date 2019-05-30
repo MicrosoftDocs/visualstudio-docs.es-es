@@ -6,17 +6,17 @@ helpviewer_keywords:
 - colorable items
 - language services, custom colorable items
 ms.assetid: b4d0ddee-c04b-48dc-ba82-f6068570cef0
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 35a3b7a82431354345c7a7b583b35891657350f3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: fd1d18a6fe142a3b405742dd9e74c1376e713687
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63415183"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312912"
 ---
 # <a name="custom-colorable-items"></a>Elementos coloreables personalizados
 Puede reemplazar la lista de tipos para colorear, como palabras clave y los comentarios, mediante la implementación de elementos coloreables personalizados como parte de su servicio de lenguaje.

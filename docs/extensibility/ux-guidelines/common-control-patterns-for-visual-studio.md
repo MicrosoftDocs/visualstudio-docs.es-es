@@ -3,17 +3,17 @@ title: Patrones de Control comunes para Visual Studio | Microsoft Docs
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: 3e893949-6398-42f1-9eab-a8d8c2b7f02d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c89babf7dc9f90b4042d917bf5843a0703628883
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: c96e3798c79fcca03052dc597270312f374f1b33
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62799481"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312298"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Patrones de Control comunes para Visual Studio
 ## <a name="BKMK_CommonControls"></a> Controles comunes
@@ -252,7 +252,7 @@ Evite los botones de comando de ventanas de herramientas, o si necesita más de 
 
 ### <a name="common-buttons"></a>Botones comunes
 
-#### <a name="text"></a>Text
+#### <a name="text"></a>Texto
 Siga las instrucciones de escritura de [UI texto y la terminología](../../extensibility/ux-guidelines/ui-text-and-help-for-visual-studio.md#BKMK_UITextAndTerminology).
 
 #### <a name="visual-style"></a>Estilo Visual
@@ -274,7 +274,7 @@ En algunos casos, se pueden usar los botones dentro de la interfaz de usuario co
 
 Cuándo se debe usar el botón corto con solo puntos suspensivos:
 
-- Si hay más de un largo **[Examinar...]**  botón en un cuadro de diálogo, como cuando se permiten varios campos para la exploración. Utilice el breve **[...]**  cada uno evitar las claves de acceso confuso creadas esta situación (**& Examinar** y **e & xaminar** en el mismo cuadro de diálogo).
+- Si hay más de un largo **[Examinar...]**  botón en un cuadro de diálogo, como cuando se permiten varios campos para la exploración. Utilice el breve **[...]**  cada uno evitar las claves de acceso confuso creadas esta situación ( **& Examinar** y **e & xaminar** en el mismo cuadro de diálogo).
 
 - En un cuadro de diálogo estrecha, o cuando no hay ningún lugar razonable para colocar el botón de largo.
 
@@ -317,7 +317,7 @@ Cambiar el tamaño de botones gráficos es el mismo que para la versión abrevia
 Los hipervínculos son adecuados para las acciones basadas en la navegación, como abrir un tema de ayuda, cuadro de diálogo modal o el asistente. Si se usa un hipervínculo para un comando, siempre debería mostrar un cambio notable y visible para la interfaz de usuario. En general, las acciones que se compromete a una acción (por ejemplo, guardar, Cancelar y eliminar) se comunican mejor mediante un botón.
 
 #### <a name="writing-style"></a>Estilo de escritura
-Siga el [orientación de escritorio de Windows para el texto de la interfaz de usuario](/windows/desktop/uxguide/text-ui). No use "Aprender más acerca de," "Saber más acerca de" o "Get help con este" frases. En su lugar, frase de texto del vínculo de ayuda en cuanto a la pregunta principal por el contenido de ayuda. Por ejemplo, "**cómo agregar un servidor en el Explorador de servidores?**"
+Siga el [orientación de escritorio de Windows para el texto de la interfaz de usuario](/windows/desktop/uxguide/text-ui). No use "Aprender más acerca de," "Saber más acerca de" o "Get help con este" frases. En su lugar, frase de texto del vínculo de ayuda en cuanto a la pregunta principal por el contenido de ayuda. Por ejemplo, "**cómo agregar un servidor en el Explorador de servidores?** "
 
 #### <a name="visual-style"></a>Estilo Visual
 

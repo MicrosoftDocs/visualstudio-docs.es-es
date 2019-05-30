@@ -1,5 +1,5 @@
 ---
-title: Desencadenador de suspensión, reanudación y en segundo plano de los eventos durante la depuración de UWP | Microsoft Docs
+title: Desencadenar eventos de suspensión/reanudación y en segundo plano cuando se depura para UWP
 ms.custom: seodec18
 ms.date: 01/16/2018
 ms.topic: conceptual
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: c0c5c6a1bfb161f8eed37cbf9c95740596977852
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: aefa6bad31b15445ab4b294f8c2e8a80e320e88c
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63388494"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263343"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>Cómo desencadenar suspender, reanudar y en segundo plano de los eventos durante la depuración de aplicaciones para UWP en Visual Studio
 Cuando no estás depurando, la **Administración de la duración de los procesos** (PLM) de Windows controla el estado de ejecución de la aplicación, es decir, inicia, suspende, reanuda y finaliza la aplicación en respuesta a las acciones del usuario y al estado del dispositivo. Mientras depuras, Windows deshabilita estos eventos de activación. En este tema se describe cómo activar estos eventos en el depurador.

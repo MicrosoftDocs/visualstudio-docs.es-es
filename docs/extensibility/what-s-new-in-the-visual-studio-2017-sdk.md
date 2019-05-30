@@ -3,17 +3,17 @@ title: ¿Qué&#39;s en el SDK de Visual Studio 2017 | Microsoft Docs
 ms.date: 10/31/2017
 ms.topic: conceptual
 ms.assetid: 9efcf0a3-dbde-4cab-8ed3-425826a48b2e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: caa7593c85351512e683f2cf93adeb3211e3e4d8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 434a04aaa8389b4b09f32778d5de63bd2a7d687f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62951196"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350794"
 ---
 # <a name="what39s-new-in-the-visual-studio-2017-sdk"></a>¿Qué&#39;s nuevo en Visual Studio 2017 SDK
 

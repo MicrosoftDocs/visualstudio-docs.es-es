@@ -6,17 +6,17 @@ helpviewer_keywords:
 - wizards, custom parameters
 - custom parameters
 ms.assetid: ba5c364b-66e6-47ea-9760-a0b70de8f0a0
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9e86c2f48365f93c924b15ae8d696d53d3f4bb16
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a879c7a842bdabff396fa2df31d0aa7326b19c50
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62861280"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312213"
 ---
 # <a name="custom-parameters"></a>Parámetros personalizados
 Parámetros personalizados controlan el funcionamiento de un asistente después de que se ha iniciado un asistente. Un relacionados *.vsz* archivo proporciona una matriz de parámetros definido por el usuario que se empaquetan en el entorno de desarrollo integrado (IDE) y se pasa al asistente como una matriz de cadenas cuando se inicia el asistente. A continuación, el asistente analiza la matriz de cadenas y usa la información para controlar la operación real del asistente. De esta manera, un asistente puede personalizar la funcionalidad según el contenido de la *.vsz* archivo.

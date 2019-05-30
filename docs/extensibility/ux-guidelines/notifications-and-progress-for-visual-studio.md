@@ -3,17 +3,17 @@ title: Notificaciones y progreso para Visual Studio | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: f0ef65e9-0f1f-45f4-9f25-6e2398691168
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a783d19136998bbc9a18daa975c1db87bda19779
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c5ca3f02c37a76e31ad76f6875110487dffefd49
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63428731"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66310886"
 ---
 # <a name="notifications-and-progress-for-visual-studio"></a>Notificaciones y progreso para Visual Studio
 ## <a name="BKMK_NotificationSystems"></a> Sistemas de notificación

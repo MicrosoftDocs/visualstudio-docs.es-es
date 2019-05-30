@@ -7,17 +7,19 @@ f1_keywords:
 helpviewer_keywords:
 - BP_LOCATION_CODE_CONTEXT structure
 ms.assetid: 37412896-021a-4f73-9bb7-4125502c2e18
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 750a98e882fce5fd5ba721de527a08f3f4624751
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+ms.openlocfilehash: 95d09c81fa12e6f06157aeb28aa6b1837f95009e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689063"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353080"
 ---
 # <a name="bplocationcodecontext"></a>BP_LOCATION_CODE_CONTEXT
 Describe la ubicación de un punto de interrupción que se enlaza directamente a una dirección en el programa que se está depurando.
@@ -31,7 +33,8 @@ typedef struct _BP_LOCATION_CODE_CONTEXT {
 ```
 
 ## <a name="members"></a>Miembros
-pCodeContext el [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) objeto que identifica la posición del punto de interrupción en el código.
+`pCodeContext`\
+El [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) objeto que identifica la posición del punto de interrupción en el código.
 
 ## <a name="remarks"></a>Comentarios
 Esta estructura es un miembro de la [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) estructura como parte de una unión.

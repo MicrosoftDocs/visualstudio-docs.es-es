@@ -3,17 +3,17 @@ title: Herramientas de evaluación para Visual Studio | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 94e0e9a3-440c-4943-ad7b-772ed742e034
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 11856141a6c3f5ca186428d67edf10fdbd35787b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 77e6dca01f728ae4a5a3f0a5f12f50ab581948c6
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62798379"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66335381"
 ---
 # <a name="evaluation-tools-for-visual-studio"></a>Herramientas de evaluación para Visual Studio
 ## <a name="craftsmanship-checklist-for-visual-studio"></a>Lista de comprobación de artesanía para Visual Studio

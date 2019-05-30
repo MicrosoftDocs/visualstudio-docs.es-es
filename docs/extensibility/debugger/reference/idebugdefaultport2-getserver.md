@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugDefaultPort2::GetServer
 ms.assetid: cacb4b74-0f39-471c-af38-54b73f5b2868
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e9210a8ee984d5725d16d646471be0f469aee92f
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 4c959c84335023a3d187808d754b44b4a0d2b950
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66205093"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351744"
 ---
 # <a name="idebugdefaultport2getserver"></a>IDebugDefaultPort2::GetServer
 Este método obtiene una interfaz para el servidor que en este puerto.

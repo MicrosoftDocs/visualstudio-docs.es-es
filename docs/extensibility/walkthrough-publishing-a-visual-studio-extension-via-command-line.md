@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Publicar una extensión de Visual Studio a través de la línea de comandos | Microsoft Docs'
+title: Publicar la extensión mediante la línea de comandos
 ms.date: 07/12/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a2d68554ed982313e631938401f855a47dd9a35a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: MT
+ms.openlocfilehash: be9585158235dadb6e415e88e42e2d324ba8fcbe
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62966271"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261669"
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension-via-command-line"></a>Tutorial: Publicación de una extensión de Visual Studio a través de la línea de comandos
 

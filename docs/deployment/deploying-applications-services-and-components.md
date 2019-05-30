@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e66eb7fc2915514b91135e8c89843a0d979abf4a
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: ae70551fdb223856774f7e2afa0d85f915f27a0c
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65845906"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261984"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>Primer vistazo a la implementación en Visual Studio
 
@@ -44,7 +44,7 @@ La implementación en una carpeta local se suele usar para las pruebas, o para i
 
     ![Elección de Publicar](../deployment/media/quickstart-publish.png)
 
-- **Escritorio de Windows**: puede publicar una aplicación de escritorio de Windows en una carpeta mediante la implementación de ClickOnce. A continuación, los usuarios podrán instalar la aplicación con un solo clic. Para más información, vea [Implementación de una aplicación de escritorio con ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# y Visual Basic). Para C++ y CLR, vea [Implementación de ClickOnce para aplicaciones de Visual C++](/cpp/ide/clickonce-deployment-for-visual-cpp-applications), o bien, para C y C ++, vea [Implementación de una aplicación de Visual C++ mediante un proyecto de instalación](/cpp/ide/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
+- **Escritorio de Windows**: puede publicar una aplicación de escritorio de Windows en una carpeta mediante la implementación de ClickOnce. A continuación, los usuarios podrán instalar la aplicación con un solo clic. Para más información, vea [Implementación de una aplicación de escritorio con ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# y Visual Basic). Para C++ y CLR, vea [Implementación de ClickOnce para aplicaciones de Visual C++](/cpp/windows/clickonce-deployment-for-visual-cpp-applications), o bien, para C y C ++, vea [Implementación de una aplicación de Visual C++ mediante un proyecto de instalación](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
 
 ## <a name="publish-to-azure"></a>Publicar en Azure
 
@@ -83,7 +83,7 @@ La implementación en una carpeta local se suele usar para las pruebas, o para i
 
     También puede implementar aplicaciones y servicios ASP.NET de más maneras. Para obtener más información, vea [Deploying ASP.NET web applications and services](http://www.asp.net/aspnet/overview/deployment) (Implementación de aplicaciones y servicios web ASP.NET).
 
-- **Escritorio de Windows**: puede publicar una aplicación de escritorio de Windows en un servidor web o en un recurso compartido de archivos de red mediante implementación de ClickOnce. A continuación, los usuarios podrán instalar la aplicación con un solo clic. Para más información, vea [Implementación de una aplicación de escritorio con ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# y Visual Basic). Para C++ y CLR, vea [Implementación de ClickOnce para aplicaciones de Visual C++](/cpp/ide/clickonce-deployment-for-visual-cpp-applications), o bien, para C y C ++, vea [Implementación de una aplicación de Visual C++ mediante un proyecto de instalación](/cpp/ide/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
+- **Escritorio de Windows**: puede publicar una aplicación de escritorio de Windows en un servidor web o en un recurso compartido de archivos de red mediante implementación de ClickOnce. A continuación, los usuarios podrán instalar la aplicación con un solo clic. Para más información, vea [Implementación de una aplicación de escritorio con ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# y Visual Basic). Para C++ y CLR, vea [Implementación de ClickOnce para aplicaciones de Visual C++](/cpp/windows/clickonce-deployment-for-visual-cpp-applications), o bien, para C y C ++, vea [Implementación de una aplicación de Visual C++ mediante un proyecto de instalación](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
 
 ## <a name="publish-to-microsoft-store"></a>Publicar en Microsoft Store
 

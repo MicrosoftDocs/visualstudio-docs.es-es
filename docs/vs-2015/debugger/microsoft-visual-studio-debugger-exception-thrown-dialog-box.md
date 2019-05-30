@@ -21,12 +21,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: eccfc06cd48513e7a72eb23bbde11188f2e50dbd
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 9062b1f3811b0b2b596cfb7fa016bca00143f332
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65696881"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261065"
 ---
 # <a name="microsoft-visual-studio-debugger-exception-thrown-dialog-box"></a>Depurador de Microsoft Visual Studio: se inició una excepción (cuadro de diálogo)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,4 +48,4 @@ Se ha producido una excepción en el programa. Este cuadro de diálogo informa s
 ## <a name="see-also"></a>Vea también  
  [Administración de excepciones con el depurador](../debugger/managing-exceptions-with-the-debugger.md)   
  [Procedimientos recomendados para excepciones](https://msdn.microsoft.com/library/f06da765-235b-427a-bfb6-47cd219af539)   
- [Control de excepciones](https://msdn.microsoft.com/library/ccb11fe8-6938-41ac-b477-a183e85865b9)
+ [Control de excepciones](/cpp/extensions/exception-handling-cpp-component-extensions)

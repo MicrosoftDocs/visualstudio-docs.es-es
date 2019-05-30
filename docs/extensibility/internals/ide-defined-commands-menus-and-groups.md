@@ -7,17 +7,17 @@ helpviewer_keywords:
 - .vsct files, environment-defined constants
 - command groups, environment-defined
 ms.assetid: 86b3af13-7163-48c6-986b-7beeedbc26cc
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 727c999e275830260ce83eac3d2d72024e89882b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5158a9d1a06ec6f08c67777e4f1ce2e4d37220e3
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62909869"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66315660"
 ---
 # <a name="ide-defined-commands-menus-and-groups"></a>Grupos, menús y comandos definidos por el IDE
 Muchos de los menús, comandos y grupos de comandos ya están definidos para su uso por el [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE. Estos comandos también están disponibles para su uso cuando se amplía [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].

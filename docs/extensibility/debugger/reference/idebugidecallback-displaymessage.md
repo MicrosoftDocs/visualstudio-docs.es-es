@@ -5,20 +5,20 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugIDECallback::DisplayMessage
 ms.assetid: c19b48ee-b370-4fce-91fe-f82bf1e63179
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: aed05d5aa73fc3be1c6e5b01f422bf4beab730c4
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 4a80fbc6e621e4cf1619aa310e5f7cd8beba47d7
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66212414"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66349063"
 ---
 # <a name="idebugidecallbackdisplaymessage"></a>IDebugIDECallback::DisplayMessage
 Envía la cadena de mensaje especificado a la ventana de salida del depurador.

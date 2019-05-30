@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IPropertyProxyEESide interface
 ms.assetid: cf227cf8-39d9-4758-8f7e-a697aebb1926
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e8a75aa089d516f112d1c758cc161891aa26e0d2
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: f6528b146ad3128dd880e594b25ebb5df88bb8f2
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65461074"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353440"
 ---
 # <a name="ipropertyproxyeeside"></a>IPropertyProxyEESide
 Esta interfaz proporciona métodos para ver los datos en el objeto asociado. Esta interfaz es parte de la compatibilidad con los visualizadores de tipo.

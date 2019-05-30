@@ -20,12 +20,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 3ec34dc0f4f2794f853b8e70670d4d3f59e7bae3
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 4833c6e8e1391028fbb034ff96967450d006356a
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65692320"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263719"
 ---
 # <a name="install-visual-studio"></a>Instalar Visual Studio
 
@@ -88,7 +88,7 @@ Antes de comenzar la instalación de Visual Studio:
 
 ::: moniker range="vs-2017"
 
-Si tiene preguntas sobre cómo ejecutar las versiones anteriores de Visual Studio en paralelo con Visual Studio 2017, vea los [detalles de compatibilidad con Visual Studio](/visualstudio/productinfo/vs2017-compatibility-vs#compatibility-with-previous-releases/).
+Si tiene preguntas sobre cómo ejecutar las versiones anteriores de Visual Studio en paralelo con Visual Studio 2017, vea los [detalles de compatibilidad con Visual Studio](/visualstudio/productinfo/vs2017-compatibility-vs#compatibility-with-previous-releases).
 
 ::: moniker-end
 

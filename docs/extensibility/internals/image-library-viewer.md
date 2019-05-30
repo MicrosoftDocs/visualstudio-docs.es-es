@@ -3,17 +3,17 @@ title: Visor del archivo de imagen | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 9d9c7fbb-ebae-4b20-9dd8-3c9070c0d0d1
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 749441e960363fe208e3ad67288180c1935db35f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1fbef0686671a504cd1a141b6f582d30043809af
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62860623"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66315697"
 ---
 # <a name="image-library-viewer"></a>Visor de la biblioteca de imágenes
 La herramienta Visor de biblioteca de imágenes de Visual Studio puede cargar y buscar los manifiestos de imagen, que permite al usuario manipularlos en la misma manera Visual Studio. El usuario puede modificar otras opciones, tamaños, PPP, contraste alto y en segundo plano. La herramienta también muestra información de carga para cada manifiesto de imagen y muestra información de origen para cada imagen en el manifiesto de imagen. Esta herramienta es útil para:

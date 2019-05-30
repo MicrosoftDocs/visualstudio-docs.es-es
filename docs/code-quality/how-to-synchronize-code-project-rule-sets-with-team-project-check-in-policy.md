@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Sincronizar conjuntos de reglas del proyecto de código con la directiva de protección del proyecto de equipo
+title: Conjuntos de reglas de proyecto de sincronización con la directiva de protección
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bd92cbb5dfee83a4a2b92729a8fde3846a5e5475
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 80d13afe27eab28c88d2513b6c8be986ab1c960a
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62815850"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66260846"
 ---
 # <a name="how-to-synchronize-code-project-rule-sets-with-an-azure-devops-project-check-in-policy"></a>Procedimiento Sincronizar conjuntos de reglas del proyecto de código con una directiva de protección de Azure DevOps Projects
 
@@ -45,7 +45,7 @@ Sincronizar la configuración de análisis de código para proyectos de código 
 
 3. Haga clic en **análisis de código**.
 
-4. En el **ejecutar este conjunto de reglas** lista, haga clic en  **\<Examinar... >**.
+4. En el **ejecutar este conjunto de reglas** lista, haga clic en  **\<Examinar... >** .
 
 5. En el **abierto** diálogo cuadro, especifique el archivo de conjunto de la regla de directiva de protección.
 
@@ -61,6 +61,6 @@ Sincronizar la configuración de análisis de código para proyectos de código 
 
 5. Abra el cuadro de diálogo de propiedades para el proyecto de código y mostrar el **análisis de código** página.
 
-6. En el **ejecutar este conjunto de reglas** lista, haga clic en  **\<Examinar... >**.
+6. En el **ejecutar este conjunto de reglas** lista, haga clic en  **\<Examinar... >** .
 
 7. En el **abierto** diálogo cuadro, especifique el archivo de conjunto de la regla.

@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 16871ba1115407e2665886d84b72594470f91287
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 9f858bec8ff025061603c72eda4ff6fc6d36549c
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63420624"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263624"
 ---
 # <a name="guids-and-ids-of-visual-studio-menus"></a>Menús de GUID e identificadores de Visual Studio
 En este artículo se enumera los valores GUID y el Id. de los menús y los grupos en la barra de menús de Visual Studio. Estos valores se definen en *.vsct* archivos que se instalan como parte del SDK de Visual Studio. Para obtener más información, consulte [grupos, menús y comandos definidos por el IDE](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).
@@ -56,6 +56,7 @@ En este artículo se enumera los valores GUID y el Id. de los menús y los grupo
 |Compilar|IDM_VS_MENU_BUILD|
 |Formato|IDM_VS_MENU_FORMAT|
 |Herramientas|IDM_VS_MENU_TOOLS|
+|Extensiones|IDM_VS_MENU_EXTENSIONS|
 |Ventana|IDM_VS_MENU_WINDOW|
 |AddIns|IDM_VS_MENU_ADDINS|
 |comunidad|IDM_VS_MENU_COMMUNITY|
@@ -178,7 +179,7 @@ En este artículo se enumera los valores GUID y el Id. de los menús y los grupo
  La jerarquía siguiente muestra los submenús que están asociados con los menús en la barra de menús de Visual Studio. Dado que sólo un grupo puede tener un menú como su elemento primario, cada submenú debe descienden de un grupo en un menú, en lugar de directamente desde el menú. Para obtener más información sobre la relación entre los menús, grupos y submenús, consulte [agregar un submenú a un menú](../../extensibility/adding-a-submenu-to-a-menu.md).
 
 > [!NOTE]
-> Los nombres de los menús en la barra de menús de Visual Studio no se muestran por separado en esta jerarquía ya que se puede deducir de la convención de nomenclatura para los grupos en el IDE, como se indica a continuación: *IDG_VS_\<nombre en el menú\>_\<nombre de grupo\>*.
+> Los nombres de los menús en la barra de menús de Visual Studio no se muestran por separado en esta jerarquía ya que se puede deducir de la convención de nomenclatura para los grupos en el IDE, como se indica a continuación: *IDG_VS_\<nombre en el menú\>_\<nombre de grupo\>* .
 
 |Grupo primario|Submenú|Grupos secundarios|
 |------------------|-------------|------------------|
