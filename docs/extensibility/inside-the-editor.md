@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - architecture
 ms.assetid: 822cbb8d-7ab4-40ee-bd12-44016ebcce81
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3979138944671ff2809f4f73beb0a28b222ec5ff
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 155d760ee546b1e35b733a00ac9a67722742f9b5
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62861770"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66340800"
 ---
 # <a name="inside-the-editor"></a>Dentro del editor
 
@@ -108,7 +108,7 @@ Un <xref:Microsoft.VisualStudio.Text.SnapshotPoint> representa una posición de 
 
 #### <a name="spans-and-normalizedspancollections"></a>Intervalos y NormalizedSpanCollections
 
-Un <xref:Microsoft.VisualStudio.Text.Span> representa un intervalo que se puede aplicar a un intervalo de texto en una instantánea de texto. Las posiciones de instantánea son de base cero, para que intervalos pueden empezar en cualquier posición incluida cero. El `End` propiedad de un intervalo es igual a la suma de sus `Start` propiedad y su `Length` propiedad. Un `Span` no incluye el carácter que se indiza por el `End` propiedad. Por ejemplo, un intervalo que tiene inicio = 5 y longitud = 3 ih = 8, e incluye los caracteres en las posiciones 5, 6 y 7. La notación de este intervalo es 5..8).
+Un <xref:Microsoft.VisualStudio.Text.Span> representa un intervalo que se puede aplicar a un intervalo de texto en una instantánea de texto. Las posiciones de instantánea son de base cero, para que intervalos pueden empezar en cualquier posición incluida cero. El `End` propiedad de un intervalo es igual a la suma de sus `Start` propiedad y su `Length` propiedad. Un `Span` no incluye el carácter que se indiza por el `End` propiedad. Por ejemplo, un intervalo que tiene inicio = 5 y longitud = 3 ih = 8, e incluye los caracteres en las posiciones 5, 6 y 7. La notación de este intervalo es [5..8).
 
 Dos intervalos forman una intersección si tienen todas las posiciones en común, incluida la posición final. Por lo tanto, la intersección de [3, 5) y [2, 7) es [3, 5) y la intersección de [3, 5) y [5, 7) es [5, 5). (Tenga en cuenta que [5, 5) es un intervalo vacío.)
 

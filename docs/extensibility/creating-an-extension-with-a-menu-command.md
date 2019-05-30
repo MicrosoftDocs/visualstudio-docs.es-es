@@ -8,17 +8,17 @@ helpviewer_keywords:
 - tutorials
 - visual studio package
 ms.assetid: f97104c8-2bcb-45c7-a3c9-85abeda8df98
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3e8e98a20fafc825af0cf9486c8a9939c02e3b5f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fb18792e2d0d357bb131af6c12e97425cd72fd05
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62891069"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66345368"
 ---
 # <a name="create-an-extension-with-a-menu-command"></a>Crear una extensión con un comando de menú
 
@@ -32,7 +32,7 @@ A partir de Visual Studio 2015, no instale el SDK de Visual Studio desde el cent
 
 1. Cree un proyecto VSIX denominado **FirstMenuCommand**. Puede encontrar la plantilla de proyecto VSIX en el **nuevo proyecto** diálogo buscando "vsix".
 
-2. Cuando se abra el proyecto, agregue una plantilla de elemento de comando personalizado denominada **FirstCommand**. En el **el Explorador de soluciones**, haga clic en el nodo del proyecto y seleccione **agregar** > **nuevo elemento**. En el **Agregar nuevo elemento** cuadro de diálogo, vaya a **Visual C#** > **extensibilidad** y seleccione **comando personalizado**. En el **nombre** campo en la parte inferior de la ventana, cambie el nombre de archivo de comandos para *FirstCommand.cs*.
+2. Cuando se abra el proyecto, agregue una plantilla de elemento de comando personalizado denominada **FirstCommand**. En el **el Explorador de soluciones**, haga clic en el nodo del proyecto y seleccione **agregar** > **nuevo elemento**. En el **Agregar nuevo elemento** cuadro de diálogo, vaya a **Visual C#**  > **extensibilidad** y seleccione **comando personalizado**. En el **nombre** campo en la parte inferior de la ventana, cambie el nombre de archivo de comandos para *FirstCommand.cs*.
 
 3. Compile la solución y comience la depuración.
 
@@ -50,7 +50,7 @@ A partir de Visual Studio 2015, no instale el SDK de Visual Studio desde el cent
 
 ::: moniker-end
 
-Ahora, vaya a la **herramientas** menú en la instancia experimental. Debería ver **FirstCommand invocar** comando. En este momento, el comando aparece un cuadro de mensaje que dice **FirstCommandPackage dentro de FirstMenuCommand.FirstCommand.MenuItemCallback()**. Veremos cómo se inicia realmente el Bloc de notas desde este comando en la sección siguiente.
+Ahora, vaya a la **herramientas** menú en la instancia experimental. Debería ver **FirstCommand invocar** comando. En este momento, el comando aparece un cuadro de mensaje que dice **FirstCommandPackage dentro de FirstMenuCommand.FirstCommand.MenuItemCallback()** . Veremos cómo se inicia realmente el Bloc de notas desde este comando en la sección siguiente.
 
 ## <a name="change-the-menu-command-handler"></a>Cambiar el controlador de comandos de menú
 

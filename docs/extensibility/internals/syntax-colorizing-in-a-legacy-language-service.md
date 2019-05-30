@@ -8,17 +8,17 @@ helpviewer_keywords:
 - syntax highlighting, supporting in language services [managed package framework]
 - language services [managed package framework], colorization
 ms.assetid: 1ca1736a-f554-42e4-a9c7-fe8c3c1717df
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab4cd40393efcf0e3b5f037d2f0818319b60c890
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: edbb7f2dca6bc0bc28a328276680dd9e273f4176
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63429906"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66331134"
 ---
 # <a name="syntax-colorizing-in-a-legacy-language-service"></a>Coloreado de sintaxis en un servicio de lenguaje heredado
 Coloración de sintaxis es una característica que hace que los diferentes elementos de un lenguaje de programación que se mostrará en un archivo de código fuente de distintos colores y estilos. Para admitir esta característica, deberá suministrar un analizador o un escáner que puede identificar los tipos de elementos léxicos o símbolos (tokens) en el archivo. Muchos lenguajes para distinguir las palabras clave, delimitadores (como paréntesis o llaves) y los comentarios, colorear ellas de maneras diferentes.
@@ -34,7 +34,7 @@ Coloración de sintaxis es una característica que hace que los diferentes eleme
  La información de color que se devuelve al editor es un índice en una lista de elementos coloreables. Cada elemento coloreable especifica un valor de color y un conjunto de atributos de fuente, como negrita o tachado. El editor proporciona un conjunto de elementos coloreables predeterminados que puede usar el servicio de lenguaje. Todo lo que necesita hacer es especificar el índice de color apropiado para cada tipo de token. Sin embargo, puede proporcionar un conjunto de elementos coloreables personalizados y los índices que se proporciona para los tokens y hacen referencia a su propia lista de elementos coloreables en lugar de la lista predeterminada. También debe establecer el `RequestStockColors` entrada del registro en 0 (o no especifique el `RequestStockColors` entrada en absoluto) para admitir los colores personalizados. Puede establecer esta entrada del registro con un parámetro con nombre para el <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> atributo definido por el usuario. Para obtener más información acerca de registrar un servicio de lenguaje y establecer sus opciones, consulte [registrar un servicio de lenguaje heredado](../../extensibility/internals/registering-a-legacy-language-service1.md).
 
 ## <a name="custom-colorable-items"></a>Elementos coloreables personalizados
- Para proporcionar sus propios elementos coloreables personalizados, debe invalidar el <xref:Microsoft.VisualStudio.Package.LanguageService.GetItemCount%2A> y <xref:Microsoft.VisualStudio.Package.LanguageService.GetColorableItem%2A> método en el <xref:Microsoft.VisualStudio.Package.LanguageService> clase. El primer método devuelve el número de elementos coloreables personalizados que admite el servicio de lenguaje y la segunda obtiene el elemento coloreable personalizado por índice. Crear la lista predeterminada de elementos coloreables personalizados. En el constructor de su servicio de lenguaje, todo lo que necesita hacer es proporcionar cada elemento coloreable con un nombre. Visual Studio controla automáticamente el caso donde el usuario selecciona un conjunto diferente de elementos coloreables. Este nombre es lo que aparece en el **fuentes y colores** página de propiedades en el **opciones** cuadro de diálogo (disponible en Visual Studio **herramientas** menú) y este nombre determina a qué color de que un usuario ha invalidado. Las opciones del usuario se almacena en una caché en el registro y accesible para el nombre del color. El **fuentes y colores** página de propiedades enumera todos los nombres de colores en orden alfabético, por lo que puede agrupar sus colores personalizados utilizando delante de cada nombre de color con el nombre del lenguaje; por ejemplo, "**TestLanguage comentarios**"y"**TestLanguage - Keyword**". O puede agrupar los elementos coloreables por tipo, "**comentario (TestLanguage)**"y"**palabra clave (TestLanguage)**". Se prefiere la agrupación por nombre de idioma.
+ Para proporcionar sus propios elementos coloreables personalizados, debe invalidar el <xref:Microsoft.VisualStudio.Package.LanguageService.GetItemCount%2A> y <xref:Microsoft.VisualStudio.Package.LanguageService.GetColorableItem%2A> método en el <xref:Microsoft.VisualStudio.Package.LanguageService> clase. El primer método devuelve el número de elementos coloreables personalizados que admite el servicio de lenguaje y la segunda obtiene el elemento coloreable personalizado por índice. Crear la lista predeterminada de elementos coloreables personalizados. En el constructor de su servicio de lenguaje, todo lo que necesita hacer es proporcionar cada elemento coloreable con un nombre. Visual Studio controla automáticamente el caso donde el usuario selecciona un conjunto diferente de elementos coloreables. Este nombre es lo que aparece en el **fuentes y colores** página de propiedades en el **opciones** cuadro de diálogo (disponible en Visual Studio **herramientas** menú) y este nombre determina a qué color de que un usuario ha invalidado. Las opciones del usuario se almacena en una caché en el registro y accesible para el nombre del color. El **fuentes y colores** página de propiedades enumera todos los nombres de colores en orden alfabético, por lo que puede agrupar sus colores personalizados utilizando delante de cada nombre de color con el nombre del lenguaje; por ejemplo, "**TestLanguage comentarios**"y"**TestLanguage - Keyword**". O puede agrupar los elementos coloreables por tipo, "**comentario (TestLanguage)** "y"**palabra clave (TestLanguage)** ". Se prefiere la agrupación por nombre de idioma.
 
 > [!CAUTION]
 > Se recomienda encarecidamente que incluyen el nombre del idioma en el nombre del elemento coloreable para evitar conflictos con otros nombres de elemento coloreable.

@@ -7,17 +7,17 @@ helpviewer_keywords:
 - project system
 - tutorial
 ms.assetid: 882a10fa-bb1c-4b01-943a-7a3c155286dd
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ced39d928b2d0d02c7008d6b44c934ccd053b09b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 19c73e47e8c07ebcf7c1124e6e59d80f76101458
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63409989"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66341656"
 ---
 # <a name="create-a-basic-project-system-part-1"></a>Crear un sistema de proyectos básico, parte 1
 En Visual Studio, los proyectos son los contenedores que los desarrolladores usan para organizar los archivos de código fuente y otros activos. Los proyectos aparecen como elementos secundarios de soluciones en la **el Explorador de soluciones**. Los proyectos permiten organizar, compilar, depurar e implementar el código fuente y crear referencias a servicios Web, bases de datos y otros recursos.
@@ -224,7 +224,7 @@ Templates
 
     Volver a generar, registra la plantilla de proyecto.
 
-   Los parámetros `defaultProjectExtension` y `possibleProjectExtensions` se establecen en la extensión de nombre de archivo de proyecto (*.myproj*). El `projectTemplatesDirectory` parámetro se establece en la ruta de acceso relativa de la *plantillas* carpeta. Durante la compilación, esta ruta de acceso se convierte en una compilación completa y agrega al registro para registrar el sistema del proyecto.
+   Los parámetros `defaultProjectExtension` y `possibleProjectExtensions` se establecen en la extensión de nombre de archivo de proyecto ( *.myproj*). El `projectTemplatesDirectory` parámetro se establece en la ruta de acceso relativa de la *plantillas* carpeta. Durante la compilación, esta ruta de acceso se convierte en una compilación completa y agrega al registro para registrar el sistema del proyecto.
 
 ## <a name="test-the-template-registration"></a>Probar el registro de plantilla
  Registro de plantilla indica a Visual Studio la ubicación de la carpeta de plantillas de proyecto para que Visual Studio puede mostrar el nombre de la plantilla y el icono en el **nuevo proyecto** cuadro de diálogo.

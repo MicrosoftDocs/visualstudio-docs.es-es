@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugContainerField interface
 ms.assetid: a8bbe061-c382-4fe9-a193-3f7d12216041
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c93113f89c11e787a23cc57dfbebcce882125091
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: d633b7e42f8c7f64a818539694837b954ea31e72
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62922291"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66332511"
 ---
 # <a name="idebugcontainerfield"></a>IDebugContainerField
 Esta interfaz representa un tipo que es un contenedor para otros tipos o los símbolos o símbolos.
