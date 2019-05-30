@@ -3,17 +3,17 @@ title: Novedades en el SDK de Visual Studio 2019 | Microsoft Docs
 ms.date: 03/29/2019
 ms.topic: conceptual
 ms.assetid: 4a07607b-0c87-4866-acd8-6d68358d6a47
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 30ab0004a492316ff9cbe11016e24b1a28dadf16
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d4be152cfb39ddea9ddaeea56464a3447be4f2c6
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444894"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66320606"
 ---
 # <a name="whats-new-in-the-visual-studio-2019-sdk"></a>Novedades del SDK de Visual Studio 2019
 

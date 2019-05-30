@@ -10,12 +10,12 @@ ms.assetid: f78c4892-8060-49c4-8ecd-4360f1b4d133
 caps.latest.revision: 39
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f565f4f8294fc7f1a467e20ad17a793dd3a09bae
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 81043cc87dd659f14ec634dc14990956a0864f9b
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097094"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263581"
 ---
 # <a name="adding-search-to-a-tool-window"></a>Adición de búsqueda a una ventana de herramientas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -139,7 +139,7 @@ Al crear o actualizar una ventana de herramientas en la extensión, puede agrega
      En la parte superior de la ventana de herramientas, aparece un control de búsqueda con un **búsqueda** marca de agua y un icono de lupa de cristal. Sin embargo, no funciona todavía búsqueda porque no se ha implementado el proceso de búsqueda.  
   
 ## <a name="to-add-the-search-implementation"></a>Para agregar la implementación de búsqueda  
- Al habilitar la búsqueda en un <xref:Microsoft.VisualStudio.Shell.ToolWindowPane>, como en el procedimiento anterior, la ventana de herramientas crea un host de búsqueda. Este host se configura y administra los procesos de búsqueda, que siempre se producen en un subproceso en segundo plano. Dado que la <xref:Microsoft.VisualStudio.Shell.ToolWindowPane> clase administra la creación de lo host de búsqueda y la configuración de seguridad de la búsqueda, sólo necesita crear una tarea de búsqueda y proporcionar el método de búsqueda. Se produce el proceso de búsqueda en un subproceso en segundo plano y se realizan llamadas al control de ventana de herramienta en el subproceso de interfaz de usuario. Por lo tanto, debe usar el <xref:Microsoft.VisualStudio.Shell.ThreadHelper.Invoke%2A> método para administrar todas las llamadas que realice en tratar con el control.  
+ Al habilitar la búsqueda en un <xref:Microsoft.VisualStudio.Shell.ToolWindowPane>, como en el procedimiento anterior, la ventana de herramientas crea un host de búsqueda. Este host se configura y administra los procesos de búsqueda, que siempre se producen en un subproceso en segundo plano. Dado que la <xref:Microsoft.VisualStudio.Shell.ToolWindowPane> clase administra la creación de lo host de búsqueda y la configuración de seguridad de la búsqueda, sólo necesita crear una tarea de búsqueda y proporcionar el método de búsqueda. Se produce el proceso de búsqueda en un subproceso en segundo plano y se realizan llamadas al control de ventana de herramienta en el subproceso de interfaz de usuario. Por lo tanto, debe usar el [ThreadHelper.Invoke*](https://msdn.microsoft.com/data/ee197798(v=vs.85)) método para administrar todas las llamadas que realice en tratar con el control.  
   
 1. En el archivo TestSearch.cs, agregue la siguiente `using` instrucciones:  
   
@@ -160,7 +160,7 @@ Al crear o actualizar una ventana de herramientas en la extensión, puede agrega
   
     - Invalida el <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.CreateSearch%2A> método para crear una tarea de búsqueda.  
   
-    - Invalida el <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.ClearSearch%2A> método para restaurar el estado del cuadro de texto. Este método se llama cuando un usuario cancela una tarea de búsqueda y cuando un usuario establece o unsets opciones o filtros. Ambos <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.CreateSearch%2A> y <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.ClearSearch%2A> se llaman en el subproceso de interfaz de usuario. Por lo tanto, no es necesario tener acceso al cuadro de texto por medio de la <xref:Microsoft.VisualStudio.Shell.ThreadHelper.Invoke%2A> método.  
+    - Invalida el <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.ClearSearch%2A> método para restaurar el estado del cuadro de texto. Este método se llama cuando un usuario cancela una tarea de búsqueda y cuando un usuario establece o unsets opciones o filtros. Ambos <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.CreateSearch%2A> y <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.ClearSearch%2A> se llaman en el subproceso de interfaz de usuario. Por lo tanto, no es necesario tener acceso al cuadro de texto por medio de la [ThreadHelper.Invoke*](https://msdn.microsoft.com/data/ee197798(v=vs.85)) método.  
   
     - Crea una clase que se denomina `TestSearchTask` que herede de <xref:Microsoft.VisualStudio.Shell.VsSearchTask>, que proporciona una implementación predeterminada de <xref:Microsoft.VisualStudio.Shell.Interop.IVsSearchTask>.  
   
@@ -532,7 +532,7 @@ Al crear o actualizar una ventana de herramientas en la extensión, puede agrega
   
 6. Elija el filtro.  
   
-     El cuadro de búsqueda contiene **líneas: "incluso"**, y aparecen los siguientes resultados:  
+     El cuadro de búsqueda contiene **líneas: "incluso"** , y aparecen los siguientes resultados:  
   
      buena 2  
   

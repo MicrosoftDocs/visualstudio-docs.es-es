@@ -3,18 +3,18 @@ title: Procedimiento Migrar proyectos de extensibilidad a Visual Studio 2017 | M
 ms.date: 11/09/2016
 ms.topic: conceptual
 ms.assetid: 8ca07b00-a3ff-40ab-b647-c0a93b55e86a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 3d55055734233a385f4a6d24f8925af2f0829fe3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 802c55844be14192ea5bd5de1870e27e2063ccad
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62863660"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66319308"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>Procedimiento Migrar proyectos de extensibilidad de Visual Studio 2017
 
@@ -31,7 +31,7 @@ Asegúrese de que la instalación incluye las cargas de trabajo siguientes:
 
 Todos los proyectos VSIX requerirán una actualización unidireccional de versión principal para Visual Studio 2017.
 
-El archivo de proyecto (por ejemplo **.csproj*) se actualizará:
+El archivo de proyecto (por ejemplo * *.csproj*) se actualizará:
 
 * Ahora establezca MinimumVisualStudioVersion - 15.0
 * OldToolsVersion (si existe previamente)-ahora está establecido en 14.0
@@ -47,7 +47,7 @@ Para actualizar las referencias a Microsoft.VSSDK.BuildTools de NuGet:
 
 * Haga doble clic en la solución y elija **administrar paquetes de NuGet para la solución**.
 * Navegue hasta la **actualizaciones** ficha.
-* Seleccione **Microsoft.VSSDK.BuildTools (última versión)**.
+* Seleccione **Microsoft.VSSDK.BuildTools (última versión)** .
 * Presione **actualización**.
 
 ![Herramientas de generación VSSDK](media/vssdk-build-tools.png)
@@ -103,7 +103,7 @@ En lugar de modificar directamente el XML del manifiesto, puede usar el nuevo **
 
    ![Agregar requisitos previos de roslyn](media/add-roslyn-prerequisite.png)
 
-* Presione **Aceptar**.
+* Haga clic en **Aceptar**.
 
 ## <a name="update-debug-settings-for-the-project"></a>Actualizar la configuración de depuración del proyecto
 

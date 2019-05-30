@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - BSTR_ARRAY structure
 ms.assetid: 48da37f7-a237-48a9-9ff9-389c1a00862c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 25897eac467fe318ac67b91db247d2fd7b6ec68a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 28b99041fd5b3804719430960b70aa347f07ddd3
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654417"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350466"
 ---
 # <a name="bstrarray"></a>BSTR_ARRAY
 Una estructura que describe una matriz de cadenas.
@@ -38,10 +41,12 @@ struct BSTR_ARRAY {
 }
 ```
 
-## <a name="terms"></a>Términos
-Número de cadenas dwCount en `Members` matriz.
+## <a name="members"></a>Miembros
+`dwCount`\
+Número de cadenas de `Members` matriz.
 
-Matriz de miembros de cadenas.
+`Members`\
+Matriz de cadenas.
 
 ## <a name="remarks"></a>Comentarios
 Esta estructura se devuelve desde el [EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md) método.

@@ -5,17 +5,17 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugProgramNameChangedEvent2 interface
 ms.assetid: be1f1cd5-0b2f-435c-a052-dca28a7c978d
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b4bbf66a7b284bbf6b5123c1c7266d032ba5001f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3b0b1ff52523a91bfa15192de56dfdc6f0f58354
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62869932"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351197"
 ---
 # <a name="idebugprogramnamechangedevent2"></a>IDebugProgramNameChangedEvent2
 Se envían desde el motor de depuración (DE) el Administrador de depuración de la sesión (SDM) cuando cambia el nombre de un programa.

@@ -10,12 +10,12 @@ ms.date: 03/06/2017
 ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
-ms.openlocfilehash: 8ce7337350ac80e1992e850eb10d0ac7297f9502
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b7e1d5e63a93f8fe1f67de920a1ccf7966d97ed6
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62963576"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263770"
 ---
 # <a name="using-emulator-express-to-run-and-debug-an-azure-cloud-service-on-a-local-machine"></a>Uso de Emulator Express para ejecutar y depurar un servicio en la nube de Azure en un sistema local
 Con Emulator Express, puede probar y depurar un servicio en la nube sin ejecutar Visual Studio como administrador. Puede establecer la configuración del proyecto para usar Emulator Express o el emulador completo, según los requisitos de su servicio en la nube. Para obtener más información sobre el emulador completo, consulte [Ejecutar una aplicación de Azure en el emulador de proceso](/azure/storage/common/storage-use-emulator).
@@ -50,4 +50,4 @@ Los siguientes problemas son limitaciones conocidas de Emulator Express:
 - Las limitaciones que se aplican al emulador de Azure Compute se aplican también a Emulator Express. Por ejemplo, no puede tener más de 50 instancias de rol por implementación. Para obtener más información sobre el emulador de Azure Compute, consulte [Ejecutar una aplicación de Azure en el emulador de proceso](http://go.microsoft.com/fwlink/p/?LinkId=623050).
 
 ## <a name="next-steps"></a>Pasos siguientes
-[Depuración de servicios en la nube de Azure](https://msdn.microsoft.com/library/azure/ee405479.aspx)
+[Depuración de servicios en la nube de Azure](vs-azure-tools-debugging-cloud-services-overview.md)

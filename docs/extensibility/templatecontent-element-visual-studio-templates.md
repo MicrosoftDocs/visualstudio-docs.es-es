@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - TemplateContent element [Visual Studio project templates]
 ms.assetid: 90ae401c-b294-49ac-98da-e0d274f5bebb
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c27f9ce239d5d82dc972186912266cea0d4f1ddf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 71911ee480daa965dfbc3df43ea2e76cf2021d08
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62432283"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66316632"
 ---
 # <a name="templatecontent-element-visual-studio-templates"></a>TemplateContent (Elemento, Plantillas de Visual Studio)
 

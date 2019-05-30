@@ -22,12 +22,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 14b573c85a6a19e2f84bcb2a6cae8b0c55768255
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 8ed493089ed215faaddc1009328ec6f8b906534f
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65675592"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66260684"
 ---
 # <a name="deploying-applications-services-and-components"></a>Implementar aplicaciones, servicios y componentes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,6 +52,6 @@ Al implementar una aplicación, servicio o componente, se distribuye para su ins
 |**Implementar una aplicación de escritorio:** Mediante el uso de la implementación de ClickOnce, puede publicar una aplicación de escritorio en un servidor web o un recurso compartido de red. A continuación, los usuarios podrán instalar la aplicación con un solo clic.|[Seguridad e implementación ClickOnce](../deployment/clickonce-security-and-deployment.md)|  
 |**Crear un programa de instalación:** Puede crear un programa de instalación mediante InstallShield Limited Edition, que es gratuito.|[InstallShield Limited Edition](../deployment/installshield-limited-edition.md)|  
 |**Mantener un programa de instalación existente:** Seguir usando un programa de instalación creado en una versión anterior de Visual Studio al instalar la extensión de proyectos de instalador de Visual Studio.|[Extensión de proyectos de instalador de Visual Studio](http://blogs.msdn.com/b/visualstudio/archive/2014/04/17/visual-studio-installer-projects-extension.aspx)<br /><br /> Aquí encontrará documentación sobre los proyectos de instalador: [Implementación del instalador de Visual Studio](https://msdn.microsoft.com/library/2kt85ked\(v=vs.100\).aspx)|  
-|**Implementar una aplicación de Visual C++:** Puede implementar el runtime de Visual C++ con una aplicación mediante el uso de la implementación central, implementación local o vinculación estática.|[Implementar aplicaciones de escritorio nativas (Visual C++)](https://msdn.microsoft.com/library/zebw5zk9.aspx)|  
+|**Implementar una aplicación de Visual C++:** Puede implementar el runtime de Visual C++ con una aplicación mediante el uso de la implementación central, implementación local o vinculación estática.|[Implementar aplicaciones de escritorio nativas (Visual C++)](/cpp/windows/deploying-native-desktop-applications-visual-cpp)|  
 |**Implementar una aplicación para pruebas:** Puede habilitar un desarrollo y pruebas más sofisticados si implementa las aplicaciones en entornos virtuales.|[Ejecutar pruebas en un entorno de laboratorio](https://msdn.microsoft.com/library/14ba54c8-a158-4a6e-b00a-b00ae960feb8)|  
 |**Instalar requisitos previos:** Puede instalar los componentes de requisitos previos para las aplicaciones de escritorio si configura un instalador genérico, lo que se conoce como programa previo.|[Requisitos previos para la implementación de aplicaciones](../deployment/application-deployment-prerequisites.md)|

@@ -7,17 +7,17 @@ helpviewer_keywords:
 - side-by-side installation
 - installation [Visual Studio SDK], side-by-side
 ms.assetid: e3128ac3-2e92-48e9-87ab-3b6c9d80e8c9
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 705fe42cf158992bb041ac9b75348f7b25945631
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 96eea3cb0abe4c0e1151b15680bbab984f9131c5
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62892276"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66321021"
 ---
 # <a name="choose-between-shared-and-versioned-vspackages"></a>Elección entre VSPackages compartidos y con control de versiones
 Las diferentes versiones de Visual Studio pueden coexistir en el mismo equipo. Los paquetes VSPackage pueden admitir cualquier combinación de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] versiones.

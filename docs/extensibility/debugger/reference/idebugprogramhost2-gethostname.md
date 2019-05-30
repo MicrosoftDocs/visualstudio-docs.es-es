@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProgramHost2::GetHostName
 ms.assetid: 48bbb089-e59a-471a-9965-24b42a8dabf3
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 26f88e6e955b83bf96b0664ffc6daba9a5430aa9
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 851905a9ca642f029444a2f6c1adfdfe543fdf70
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66203964"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351270"
 ---
 # <a name="idebugprogramhost2gethostname"></a>IDebugProgramHost2::GetHostName
 Obtiene el título, el nombre descriptivo o el nombre de archivo del proceso de hospedaje de este programa.

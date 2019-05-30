@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugFunctionObject::CreatePrimitiveObject method
 ms.assetid: 6e9dc8b6-b4e1-4abf-b6e0-e885910775bc
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ae31296d1264715c23a05ef893c159392baf245d
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: d47f3edfffadc74791d6d6b2267a37319a053d7d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66199100"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66320828"
 ---
 # <a name="idebugfunctionobjectcreateprimitiveobject"></a>IDebugFunctionObject::CreatePrimitiveObject
 Crea un objeto de datos primitivos, como un número entero simple.

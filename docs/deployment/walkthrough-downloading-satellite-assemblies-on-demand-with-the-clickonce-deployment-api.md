@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Descargar ensamblados satélite a petición con la API de implementación ClickOnce | Documentos de Microsoft'
+title: Descargar ensamblados satélite a petición con la API de implementación ClickOnce
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a1aa828f0f4a84f1a8dce3055f3719a3c11520e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 34cde3a2444525e48455e445894fd5ab1c66fab8
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63405924"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66262969"
 ---
 # <a name="walkthrough-download-satellite-assemblies-on-demand-with-the-clickonce-deployment-api"></a>Tutorial: Descargar ensamblados satélite a petición con la API de implementación de ClickOnce
 Las aplicaciones de Windows Forms pueden configurarse para varias referencias culturales utilizando ensamblados satélite. Un *ensamblado satélite* es un ensamblado que contiene los recursos de aplicación para una referencia cultural que no sea la referencia cultural predeterminada de la aplicación.
@@ -54,7 +54,7 @@ Las aplicaciones de Windows Forms pueden configurarse para varias referencias cu
 
 4. Haga clic en la ficha **Archivos** .
 
-5. Haga clic en el botón **puntos suspensivos** (**...**) y seleccione el directorio que contenga todos los ensamblados y archivos de la aplicación, incluidos los ensamblados satélite generados mediante *Resgen.exe* (el nombre de los ensamblados satélite tiene la siguiente forma: *\<isoCode\ApplicationName.resources.dll*, donde \< isoCode> es un identificador de idioma en formato RFC 1766).
+5. Haga clic en el botón **puntos suspensivos** ( **...** ) y seleccione el directorio que contenga todos los ensamblados y archivos de la aplicación, incluidos los ensamblados satélite generados mediante *Resgen.exe* (el nombre de los ensamblados satélite tiene la siguiente forma: *\<isoCode\ApplicationName.resources.dll*, donde \< isoCode> es un identificador de idioma en formato RFC 1766).
 
 6. Haga clic en **Rellenar** para agregar los archivos a la implementación.
 

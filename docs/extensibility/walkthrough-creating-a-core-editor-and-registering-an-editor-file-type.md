@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - walkthrough
 ms.assetid: 24d2bffd-a35c-46db-8515-fd60b884b7fb
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4aac1298c13cb931eba889e6323faff9b1640f8b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 80d4081a567c67b73200f4f1d0e1d6bee32871e9
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63411034"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312783"
 ---
 # <a name="walkthrough-create-a-core-editor-and-registering-an-editor-file-type"></a>Tutorial: Crear un editor de núcleo y registrar un tipo de archivo del editor
 En este tutorial se muestra cómo crear un VSPackage que se inicia el [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] editor de núcleo cuando un archivo con el *.myext* se carga la extensión de nombre de archivo.
@@ -28,7 +28,7 @@ En este tutorial se muestra cómo crear un VSPackage que se inicia el [!INCLUDE[
 
 1. En **Extensibilidad de Visual Basic**. El lenguaje predeterminado del proyecto es Visual Basic.
 
-2. En **Extensibilidad de C#**. El lenguaje predeterminado del proyecto es C#.
+2. En **Extensibilidad de C#** . El lenguaje predeterminado del proyecto es C#.
 
 3. En **Extensibilidad de Otros tipos de proyectos**. El lenguaje predeterminado del proyecto es C++.
 

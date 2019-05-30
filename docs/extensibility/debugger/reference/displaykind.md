@@ -5,17 +5,20 @@ ms.topic: reference
 helpviewer_keywords:
 - DisplayKind enumeration
 ms.assetid: 940968c5-6065-4bda-8ee6-c31597db4d71
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1bbb4af7b4269376d912ba312cfe8aacfef2e4ff
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 8c15726a3725b756e646e73804643f6b1ab36374
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56692767"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318277"
 ---
 # <a name="displaykind"></a>DisplayKind
 Enumera los valores válidos que representan los tipos de información para tomar de una [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objeto y mostrar al usuario.
@@ -41,12 +44,15 @@ public enum enum_DisplayKind
 };
 ```
 
-#### <a name="parameters"></a>Parámetros
-DisplayKind_Value el valor del campo.
+## <a name="fields"></a>Campos
+`DisplayKind_Value`\
+Valor del campo.
 
-DisplayKind_Name el nombre del campo.
+`DisplayKind_Name`\
+Nombre del campo.
 
-DisplayKind_Type el tipo de campo.
+`DisplayKind_Type`\
+Tipo de campo.
 
 ## <a name="requirements"></a>Requisitos
 Encabezado: Ee.h

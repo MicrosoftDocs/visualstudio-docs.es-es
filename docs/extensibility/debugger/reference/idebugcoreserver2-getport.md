@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugCoreServer2::GetPort
 ms.assetid: 3f5ea4a8-6085-4600-980a-9e48f8b5be56
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 578826eba2cd89ba045590ae110f57949e572064
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 59f4507f631887f8ffda37abec8b597087a0e57f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66205651"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66317804"
 ---
 # <a name="idebugcoreserver2getport"></a>IDebugCoreServer2::GetPort
 Recupera un puerto específico.
