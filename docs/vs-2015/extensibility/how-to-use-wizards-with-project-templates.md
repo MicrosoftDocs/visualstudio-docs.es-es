@@ -33,7 +33,7 @@ Visual Studio proporciona la interfaz <xref:Microsoft.VisualStudio.TemplateWizar
 ## <a name="creating-a-project-template-project-with-a-vsix-project"></a>Crear un proyecto de plantilla de proyecto con un proyecto de VSIX  
  Empezar a crear una plantilla personalizada con el proyecto plantilla de proyecto, que forma parte del SDK de Visual Studio. En este procedimiento se usará un proyecto de plantilla de proyecto de C#, pero también hay un proyecto de plantilla de proyecto de Visual Basic. A continuación, un proyecto de VSIX se agregue a la solución que contiene el proyecto de plantilla de proyecto.  
   
-1. Crear un proyecto de plantilla de proyecto de C# (en Visual Studio, **archivo / nuevo / proyecto / Visual C# / extensibilidad / plantilla de proyecto de C#**). Asígnele el nombre **MyProjectTemplate**.  
+1. Crear un proyecto de plantilla de proyecto de C# (en Visual Studio, **archivo / nuevo / proyecto / Visual C# / extensibilidad / plantilla de proyecto de C#** ). Asígnele el nombre **MyProjectTemplate**.  
   
     > [!NOTE]
     > Se le pedirá que instale el SDK de Visual Studio. Para obtener más información, consulte [instalar el SDK de Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
@@ -207,7 +207,7 @@ Visual Studio proporciona la interfaz <xref:Microsoft.VisualStudio.TemplateWizar
   
 1. Firmar el ensamblado. En el **el Explorador de soluciones**, seleccione el proyecto VSIX, contextual y seleccione **las propiedades del proyecto**.  
   
-2. En el **las propiedades del proyecto** ventana, seleccione el **firma** ficha en el **firma** pestaña **firmar el ensamblado**. En el **elegir un archivo de clave de nombre seguro** campos, seleccione  **\<New >**. En el **crear clave de nombre seguro** ventana, en el **nombre de archivo de clave** , escriba **key.snk**. Desactive el **proteger mi archivo de clave con una contraseña** campo.  
+2. En el **las propiedades del proyecto** ventana, seleccione el **firma** ficha en el **firma** pestaña **firmar el ensamblado**. En el **elegir un archivo de clave de nombre seguro** campos, seleccione  **\<New >** . En el **crear clave de nombre seguro** ventana, en el **nombre de archivo de clave** , escriba **key.snk**. Desactive el **proteger mi archivo de clave con una contraseña** campo.  
   
 3. En el **el Explorador de soluciones**, seleccione el proyecto VSIX y busque el **propiedades** ventana.  
   
@@ -215,9 +215,9 @@ Visual Studio proporciona la interfaz <xref:Microsoft.VisualStudio.TemplateWizar
   
 5. Recompilar la solución.  
   
-6. Ahora puede encontrar el archivo key.snk en el directorio del proyecto MyProjectWizard (**\<su ubicación de disco > \MyProjectTemplate\MyProjectWizard\key.snk**). Copie el archivo key.snk.  
+6. Ahora puede encontrar el archivo key.snk en el directorio del proyecto MyProjectWizard ( **\<su ubicación de disco > \MyProjectTemplate\MyProjectWizard\key.snk**). Copie el archivo key.snk.  
   
-7. Vaya al directorio de resultados y encontrar el ensamblado (**\<su ubicación de disco > \MyProjectTemplate/MyProjectWizard\bin\Debug\MyProjectWizard.dll**). Pegue el archivo key.snk aquí. (Esto no es absolutamente necesario, pero lo será más fácil los pasos siguientes).  
+7. Vaya al directorio de resultados y encontrar el ensamblado ( **\<su ubicación de disco > \MyProjectTemplate/MyProjectWizard\bin\Debug\MyProjectWizard.dll**). Pegue el archivo key.snk aquí. (Esto no es absolutamente necesario, pero lo será más fácil los pasos siguientes).  
   
 8. Abra una ventana de comandos y cambie al directorio en el que se ha creado el ensamblado.  
   

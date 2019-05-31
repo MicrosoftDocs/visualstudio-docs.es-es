@@ -61,14 +61,14 @@ La herramienta de línea de comandos **VSPerfASPNETCmd** le permite generar perf
   
  También puede utilizar la opción **/Trace** para incluir información de tiempo detallada con los datos de memoria de .NET:  
   
- **vsperfaspnetcmd /memory**[**:lifetime**] **/trace**`websiteUrl`  
+ **vsperfaspnetcmd /memory**[ **:lifetime**] **/trace**`websiteUrl`  
   
 ## <a name="to-collect-tier-interaction-data"></a>Para recopilar datos de interacción de capas  
   
 > [!WARNING]
 > Los datos de generación de perfiles de interacción de capas (TIP) se pueden recopilar usando [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] o [!INCLUDE[vs_pro_current_short](../includes/vs-pro-current-short-md.md)]. Sin embargo, los datos de generación de perfiles de interacción de capas solo se pueden ver en [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] y [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)].  
 >   
-> Para recopilar datos de TIP en Windows 8 o Windows Server 2012, debe usar la opción de instrumentación (**/trace**).  
+> Para recopilar datos de TIP en Windows 8 o Windows Server 2012, debe usar la opción de instrumentación ( **/trace**).  
   
  Para recopilar datos de interacción de capas con datos de muestreo:  
   
@@ -80,14 +80,14 @@ La herramienta de línea de comandos **VSPerfASPNETCmd** le permite generar perf
   
  Para recopilar datos de interacción de capas con datos de memoria de .NET:  
   
- **vsperfaspnetcmd /memory**[**:lifetime**] **/tip**_websiteUrl_  
+ **vsperfaspnetcmd /memory**[ **:lifetime**] **/tip**_websiteUrl_  
   
 ## <a name="UsingNoWait"></a> Utilizar la opción /NoWait  
  De forma predeterminada, el símbolo del sistema no se devuelve valores después de un comando **vsperfaspnetcmd**. Puede usar la siguiente opción de sintaxis para forzar el símbolo del sistema a devolver valores. Después, puede realizar otras operaciones en la ventana de símbolo del sistema. Para finalizar la generación de perfiles, use la opción **/shutdown** en un comando **vsperfaspnetcmd** separado.  
   
  Para iniciar la generación de perfiles:  
   
- **vsperfaspnetcmd** [*/Options*] **/nowait**_websiteUrl_  
+ **vsperfaspnetcmd** [ */Options*] **/nowait**_websiteUrl_  
   
  Para finalizar la generación de perfiles:  
   

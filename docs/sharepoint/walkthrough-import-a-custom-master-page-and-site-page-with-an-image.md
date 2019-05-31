@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Importar una página maestra personalizada y una página con una imagen de sitio | Documentos de Microsoft'
+title: Importar una página maestra personalizada & página del sitio con la imagen
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c303ab86409a082c3a6817adc526ded432ea54bf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8bd2d9054571e52bc9fbb3906bc1880bb94e407a
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62834395"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66400892"
 ---
 # <a name="walkthrough-import-a-custom-master-page-and-site-page-with-an-image"></a>Tutorial: Importar una página maestra personalizada y la página del sitio con una imagen
   Este tutorial muestra cómo importar una página maestra personalizada de SharePoint y una página de sitio que tenga una imagen en un [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] proyecto de SharePoint.
@@ -27,7 +27,7 @@ ms.locfileid: "62834395"
 
 - Crear una página maestra personalizada y una página del sitio mediante una imagen en SharePoint Designer.
 
-- Exportar una página maestra personalizada, imagen y página del sitio a una solución de SharePoint (*.wsp*) archivo.
+- Exportar una página maestra personalizada, imagen y página del sitio a una solución de SharePoint ( *.wsp*) archivo.
 
 - Importe e implemente el *.wsp* el archivo en un [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] proyecto de SharePoint con el proyecto Importar paquete de solución de SharePoint.
 
@@ -127,7 +127,7 @@ ms.locfileid: "62834395"
 6. Guarde la página del sitio actualizado.
 
 ## <a name="export-the-items-from-sharepoint"></a>Exportar los elementos de SharePoint
- Exportar los elementos de SharePoint a una solución de SharePoint (*.wsp*) archivo.
+ Exportar los elementos de SharePoint a una solución de SharePoint ( *.wsp*) archivo.
 
 #### <a name="to-export-items-from-sharepoint-designer"></a>Para exportar elementos de SharePoint Designer
 

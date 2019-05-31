@@ -35,10 +35,10 @@ Cuando se crea un visor de imagen, el primer paso consiste en crear un proyecto 
 
 2. Elija **Visual C#** o **Visual Basic** en la parte izquierda del cuadro de diálogo **Nuevo proyecto**.
 
-3. En la lista de plantillas, elija **Aplicación de Windows Forms (.NET Framework)**. Asigne un nombre al nuevo formulario **PictureViewer** y, después, pulse el botón **Aceptar**.
+3. En la lista de plantillas, elija **Aplicación de Windows Forms (.NET Framework)** . Asigne un nombre al nuevo formulario **PictureViewer** y, después, pulse el botón **Aceptar**.
 
     >[!NOTE]
-    >Si no ve la plantilla **Aplicación de Windows Forms (.NET Framework)**, use el instalador de Visual Studio para instalar la carga de trabajo **Desarrollo de escritorio de .NET**.<br/><br/>![Carga de trabajo de desarrollo de escritorio de .NET en el instalador de Visual Studio](../ide/media/dot-net-desktop-dev-workload.png)<br/><br/> Para obtener más información, vea la página [Instalación de Visual Studio](../install/install-visual-studio.md).
+    >Si no ve la plantilla **Aplicación de Windows Forms (.NET Framework)** , use el instalador de Visual Studio para instalar la carga de trabajo **Desarrollo de escritorio de .NET**.<br/><br/>![Carga de trabajo de desarrollo de escritorio de .NET en el instalador de Visual Studio](../ide/media/dot-net-desktop-dev-workload.png)<br/><br/> Para obtener más información, vea la página [Instalación de Visual Studio](../install/install-visual-studio.md).
 
 ::: moniker-end
 
@@ -57,7 +57,7 @@ Cuando se crea un visor de imagen, el primer paso consiste en crear un proyecto 
    ![Elija la plantilla Visual Basic para la Aplicación de Windows Forms (.NET Framework).](../get-started/visual-basic/media/vs-2019/vb-create-new-project-search-winforms-filtered.png)
 
    > [!NOTE]
-   > Si no ve la plantilla **Aplicación de Windows Forms (.NET Framework)**, puede instalarla desde la ventana **Crear un proyecto**. En el mensaje **¿No encuentra lo que busca?**, elija el vínculo **Instalar más herramientas y características**.
+   > Si no ve la plantilla **Aplicación de Windows Forms (.NET Framework)** , puede instalarla desde la ventana **Crear un proyecto**. En el mensaje **¿No encuentra lo que busca?** , elija el vínculo **Instalar más herramientas y características**.
    >
    > ![Vínculo "Instalar más herramientas y características" del mensaje "¿No encuentra lo que busca?" que aparece en la ventana "Crear proyecto"](../get-started/media/vs-2019/not-finding-what-looking-for.png) 
    > 
@@ -81,7 +81,7 @@ Visual Studio crea una solución para el programa. Una solución actúa como un 
 
     ::: moniker range="vs-2017"
 
-    - **Ventana principal** En esta ventana, realizará la mayor parte del trabajo, como ejecutar formularios y editar código. La ventana muestra un formulario en el **Editor de formularios**. En la parte superior de la ventana, aparecerán las pestañas **Página principal** y **Form1.cs [Diseño]**. (En Visual Basic, el nombre de la pestaña termina con *.vb* en lugar de *.cs*).
+    - **Ventana principal** En esta ventana, realizará la mayor parte del trabajo, como ejecutar formularios y editar código. La ventana muestra un formulario en el **Editor de formularios**. En la parte superior de la ventana, aparecerán las pestañas **Página principal** y **Form1.cs [Diseño]** . (En Visual Basic, el nombre de la pestaña termina con *.vb* en lugar de *.cs*).
 
     ::: moniker-end
 
@@ -96,7 +96,7 @@ Visual Studio crea una solución para el programa. Una solución actúa como un 
     - **Ventana Propiedades** En esta ventana, puede cambiar las propiedades de los elementos elegidos en las otras ventanas. Por ejemplo, si elige Form1, puede cambiar el título mediante la propiedad **Text** y el color de fondo mediante la propiedad **Backcolor**.
 
     > [!NOTE]
-    > En la línea superior del **Explorador de soluciones** se muestra **Solución "PictureViewer" (1 proyecto)**, lo que significa que Visual Studio ha creado una solución. Una solución puede contener varios proyectos, pero, por ahora, trabajará con soluciones que contengan un solo proyecto.
+    > En la línea superior del **Explorador de soluciones** se muestra **Solución "PictureViewer" (1 proyecto)** , lo que significa que Visual Studio ha creado una solución. Una solución puede contener varios proyectos, pero, por ahora, trabajará con soluciones que contengan un solo proyecto.
 
 1. En la barra de menús, pulse **Archivo** > **Guardar todo**.
 

@@ -29,15 +29,15 @@ Al publicar un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]
 
  Los archivos de un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación se administran en el **archivos de la aplicación** cuadro de diálogo, accesible desde el **publicar** página de la **Diseñador de proyectos**.
 
- Inicialmente, hay un solo grupo de archivos denominado **(obligatorio)**. Puede crear grupos de archivos adicionales y asignarles archivos. No puede cambiar el **grupo de descarga** para los archivos que son necesarios para ejecutar la aplicación. Por ejemplo, .exe de la aplicación o los archivos marcan como archivos de datos deben pertenecer a la **(obligatorio)** grupo.
+ Inicialmente, hay un solo grupo de archivos denominado **(obligatorio)** . Puede crear grupos de archivos adicionales y asignarles archivos. No puede cambiar el **grupo de descarga** para los archivos que son necesarios para ejecutar la aplicación. Por ejemplo, .exe de la aplicación o los archivos marcan como archivos de datos deben pertenecer a la **(obligatorio)** grupo.
 
- El valor predeterminado de estado de publicación tiene una etiqueta con el valor de un archivo **(Auto)**. Por ejemplo, .exe de la aplicación tiene un estado de publicación de **incluir (automático)** de forma predeterminada.
+ El valor predeterminado de estado de publicación tiene una etiqueta con el valor de un archivo **(Auto)** . Por ejemplo, .exe de la aplicación tiene un estado de publicación de **incluir (automático)** de forma predeterminada.
 
  Los archivos con la **acción de compilación** propiedad establecida en **contenido** se designan como archivos de aplicación y se marcará como incluye de forma predeterminada. Pueden incluidos, excluidos o marcados como archivos de datos. Las excepciones son los siguientes:
 
-- Archivos de datos como base de datos SQL (*.mdf* y *.mdb*) archivos y archivos XML se marcará como archivos de datos de forma predeterminada.
+- Archivos de datos como base de datos SQL ( *.mdf* y *.mdb*) archivos y archivos XML se marcará como archivos de datos de forma predeterminada.
 
-- Referencias a ensamblados (*.dll* archivos) se designan como se indica a continuación, al agregar la referencia: Si **Copy Local** es **False**, está marcada de forma predeterminada como un ensamblado de requisito previo (**requisito previo (Auto)**) que debe estar presente en la GAC antes de instalar la aplicación. Si **Copy Local** es **True**, el ensamblado está marcado como un ensamblado de aplicación de forma predeterminada (**incluir (automático)**) y se copiará en la carpeta de la aplicación durante la instalación. Una referencia COM aparecerá en el **archivos de la aplicación** cuadro de diálogo (como un *.ocx* archivo) solo si su **aislado** propiedad está establecida en **True**. De forma predeterminada, se incluirá.
+- Referencias a ensamblados ( *.dll* archivos) se designan como se indica a continuación, al agregar la referencia: Si **Copy Local** es **False**, está marcada de forma predeterminada como un ensamblado de requisito previo (**requisito previo (Auto)** ) que debe estar presente en la GAC antes de instalar la aplicación. Si **Copy Local** es **True**, el ensamblado está marcado como un ensamblado de aplicación de forma predeterminada (**incluir (automático)** ) y se copiará en la carpeta de la aplicación durante la instalación. Una referencia COM aparecerá en el **archivos de la aplicación** cuadro de diálogo (como un *.ocx* archivo) solo si su **aislado** propiedad está establecida en **True**. De forma predeterminada, se incluirá.
 
 ### <a name="to-add-files-to-the-application-files-dialog-box"></a>Para agregar archivos al cuadro de diálogo archivos de aplicación
 
@@ -77,7 +77,7 @@ Al publicar un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]
 
 3. Haga clic en el **archivos de la aplicación** botón para abrir el **archivos de la aplicación** cuadro de diálogo.
 
-4. En el **archivos de la aplicación** cuadro de diálogo, seleccione el ensamblado de aplicación (*.dll* archivo) que desea marcar como requisito previo. Tenga en cuenta que la aplicación debe tener una referencia al ensamblado de la aplicación en orden para que aparezca en la lista.
+4. En el **archivos de la aplicación** cuadro de diálogo, seleccione el ensamblado de aplicación ( *.dll* archivo) que desea marcar como requisito previo. Tenga en cuenta que la aplicación debe tener una referencia al ensamblado de la aplicación en orden para que aparezca en la lista.
 
 5. En el **estado de la publicación** campos, seleccione **requisitos previos** en la lista desplegable.
 

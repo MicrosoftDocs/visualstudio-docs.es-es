@@ -59,7 +59,7 @@ Puede migrar un servicio de lenguaje heredado a una versión posterior de Visual
   
     - En el **aplicación** , modifique **.NET framework de destino** a **4.6.1**.  
   
-    - En el **depurar** ficha la **iniciar programa externo** , escriba  **\<ruta de instalación de Visual Studio > \Common7\IDE\devenv.exe.**.  
+    - En el **depurar** ficha la **iniciar programa externo** , escriba  **\<ruta de instalación de Visual Studio > \Common7\IDE\devenv.exe.** .  
   
          En el **argumentos de línea de comandos** , escriba /**rootsuffix Exp**.  
   
@@ -105,7 +105,7 @@ Puede migrar un servicio de lenguaje heredado a una versión posterior de Visual
   
     - Guarde y cierre el archivo.  
   
-11. Compile la solución. Se implementan los archivos compilados en **%USERPROFILE%\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\MSIT\ RegExLangServ\\**.  
+11. Compile la solución. Se implementan los archivos compilados en **%USERPROFILE%\AppData\Local\Microsoft\VisualStudio\14.0Exp\Extensions\MSIT\ RegExLangServ\\** .  
   
 12. Inicie la depuración. Puede abrir una segunda instancia de Visual Studio.  
   

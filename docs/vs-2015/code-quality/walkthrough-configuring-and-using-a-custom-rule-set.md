@@ -49,9 +49,9 @@ En este tutorial se muestra cómo usar las herramientas de análisis de código 
   
 1. En el menú **Archivo** , haga clic en **Nuevo** y, a continuación, haga clic en **Proyecto**.  
   
-2. En el **nuevo proyecto** cuadro de diálogo **tipos de proyecto**, haga clic en **Visual C#**.  
+2. En el **nuevo proyecto** cuadro de diálogo **tipos de proyecto**, haga clic en **Visual C#** .  
   
-3. En **Visual C#**, seleccione **biblioteca de clases**.  
+3. En **Visual C#** , seleccione **biblioteca de clases**.  
   
 4. En el **nombre** cuadro de texto, escriba **RuleSetSample** y, a continuación, haga clic en **Aceptar**.  
   
@@ -140,7 +140,7 @@ En este tutorial se muestra cómo usar las herramientas de análisis de código 
   
 2. En el **propiedades** , haga clic **análisis de código**.  
   
-    En el **ejecutar este conjunto de reglas** la lista desplegable, haga clic en  **\<Examinar... >**. Vaya a la carpeta raíz del proyecto de código y, a continuación, seleccione **MyCustomRuleSet.ruleset**. Este es el nuevo conjunto de reglas que ha creado en el procedimiento anterior.  
+    En el **ejecutar este conjunto de reglas** la lista desplegable, haga clic en  **\<Examinar... >** . Vaya a la carpeta raíz del proyecto de código y, a continuación, seleccione **MyCustomRuleSet.ruleset**. Este es el nuevo conjunto de reglas que ha creado en el procedimiento anterior.  
   
 3. En el **archivo** menú, haga clic en **guardar** para guardar la configuración del proyecto. Ahora se puede usar el conjunto de reglas personalizado con el proyecto.  
   

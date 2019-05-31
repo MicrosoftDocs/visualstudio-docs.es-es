@@ -357,7 +357,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
   
     1. En el **Explorador de soluciones**, en el menú contextual del proyecto VSIX, elija **Abrir carpeta en el Explorador de Windows**.  
   
-    2. Busque el archivo **bin\\\*\\**_convertirá_**.vsix**  
+    2. Busque el archivo **bin\\\*\\** _convertirá_ **.vsix**  
   
 2. Copie el archivo **.vsix** en el equipo de destino en el que desea instalar la extensión. Puede tratarse de su propio equipo o de otro.  
   

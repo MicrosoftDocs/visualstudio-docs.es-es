@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Crear un Control de usuario para una página de aplicación de SharePoint o elemento Web | Documentos de Microsoft
+title: Crear el control de usuario para el elemento de página o web de aplicación de SharePoint
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 17f8acd38df810d0ea7e5c0da2293a5de31eb281
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3a88a59e9b87a193329433e5eb0625afa1428026
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446511"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401478"
 ---
 # <a name="how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part"></a>Procedimiento Crear un control de usuario para un elemento de página o web de la aplicación de SharePoint
   Puede crear controles de usuario personalizados que proporcionan funcionalidad personalizada para la solución de SharePoint, y puede reutilizar esa funcionalidad dentro del proyecto. Puede incluir controles de usuario en un elemento web o página de aplicación, agregar más controles ASP.NET y controles de SharePoint, así como definir propiedades y métodos para el control. Para obtener más información acerca de los controles de usuario, consulte [crear controles reutilizables para elementos web o páginas de aplicación](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md) y [controles de usuario y controles de servidor de SharePoint](https://blogs.msdn.microsoft.com/kaevans/2011/04/28/user-controls-and-server-controls-in-sharepoint/).
@@ -37,7 +37,7 @@ ms.locfileid: "63446511"
 
 4. En el **instalado** panel, elija el **Office/SharePoint** nodo.
 
-5. En la lista de plantillas de SharePoint, elija **Control de usuario (solución de granja de servidores únicamente)**.
+5. En la lista de plantillas de SharePoint, elija **Control de usuario (solución de granja de servidores únicamente)** .
 
     > [!NOTE]
     > Los controles de usuario funcionan solo en soluciones de granja.

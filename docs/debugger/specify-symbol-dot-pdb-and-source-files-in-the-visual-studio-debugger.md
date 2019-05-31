@@ -30,14 +30,14 @@ ms.workload:
 - multiple
 ms.openlocfilehash: c5d7d5fa0a53ead2f49f89df37943d734a1b73fb
 ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/22/2019
 ms.locfileid: "60045347"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Especificar archivos de código fuente y símbolos (.pdb) en el depurador de Visual Studio (C#, C++, Visual Basic, F#)
 
-Base de datos de programa (*.pdb*) archivos, denominados también archivos de símbolos, asignan identificadores y las instrucciones de código fuente de su proyecto a sus identificadores correspondientes y las instrucciones de compilan aplicaciones.
+Base de datos de programa ( *.pdb*) archivos, denominados también archivos de símbolos, asignan identificadores y las instrucciones de código fuente de su proyecto a sus identificadores correspondientes y las instrucciones de compilan aplicaciones.
 
 Al compilar un proyecto desde el IDE de Visual Studio con el estándar de configuración de compilación de depuración, el compilador crea los archivos de símbolos adecuados. También puede [establecer opciones de símbolo en el código](#compiler-symbol-options).
 
@@ -62,7 +62,7 @@ Cuando se depura un proyecto en el IDE de Visual Studio, el depurador carga auto
 
 El depurador también busca los archivos de símbolos en las siguientes ubicaciones:
 
-1. La ubicación especificada dentro del archivo DLL o el archivo ejecutable (*.exe*) archivo.
+1. La ubicación especificada dentro del archivo DLL o el archivo ejecutable ( *.exe*) archivo.
 
    De forma predeterminada, si se ha creado un archivo DLL o un *.exe* archivo en el equipo, el vinculador coloca la ruta de acceso completa y el nombre del asociado *.pdb* archivo en el archivo DLL o *.exe* archivo. El depurador comprueba si existe el archivo de símbolos en esa ubicación.
 
@@ -177,7 +177,7 @@ Cuando compila un proyecto desde el IDE de Visual Studio con el estándar **depu
 
   - *VC\<x>.pdb*, donde *\<x>* representa la versión de Visual C++, por ejemplo *VC11.pdb*
 
-    El *VC\<x > .pdb* archivo almacena toda información de depuración para los archivos de objeto individuales y reside en el mismo directorio que el archivo MAKE del proyecto. Cada vez que crea un archivo de objeto, el compilador de C/C ++ combina la información de depuración en *VC\<x > .pdb*. Por tanto, incluso si cada archivo de código fuente incluye archivos de encabezado comunes como  *\<windows.h >*, se almacenan las definiciones de tipo de esos encabezados solo una vez, en lugar de en todos los archivos objeto. La información insertada incluye información de tipo, pero no información de símbolo como definiciones de función.
+    El *VC\<x > .pdb* archivo almacena toda información de depuración para los archivos de objeto individuales y reside en el mismo directorio que el archivo MAKE del proyecto. Cada vez que crea un archivo de objeto, el compilador de C/C ++ combina la información de depuración en *VC\<x > .pdb*. Por tanto, incluso si cada archivo de código fuente incluye archivos de encabezado comunes como  *\<windows.h >* , se almacenan las definiciones de tipo de esos encabezados solo una vez, en lugar de en todos los archivos objeto. La información insertada incluye información de tipo, pero no información de símbolo como definiciones de función.
 
   - *\<project>.pdb*
 
@@ -236,7 +236,7 @@ Cuando esto sucede, el depurador muestra el **No se cargaron símbolos** o **No 
 **Para usar la página del documento No se cargaron símbolos para ayudar a encontrar y cargar los símbolos que faltan:**
 
 - Para cambiar la ruta de acceso de búsqueda, seleccione una ruta de acceso no seleccionada o seleccione **nueva ruta de acceso** o **nueva ruta de acceso de VSTS** y escriba o seleccione una nueva ruta de acceso. Seleccione **cargar** para buscar las rutas de acceso nuevo y cargar el archivo de símbolos si se encuentra.
-- Para invalidar cualquier opción de símbolo y reintentar las rutas de búsqueda, seleccione **examinar y buscar \<ejecutable-name >**. Se carga el archivo de símbolos si se encuentra, o **Explorador de archivos** se abre para que pueda seleccionar manualmente el archivo de símbolos.
+- Para invalidar cualquier opción de símbolo y reintentar las rutas de búsqueda, seleccione **examinar y buscar \<ejecutable-name >** . Se carga el archivo de símbolos si se encuentra, o **Explorador de archivos** se abre para que pueda seleccionar manualmente el archivo de símbolos.
 - Para abrir el **opciones** > **depuración** > **símbolos** página, seleccione **cambiar configuración de símbolos**.
 - Para mostrar el desensamblado en una nueva ventana una vez, seleccione **ver desensamblado**, o bien seleccione **cuadro de diálogo Opciones** para establecer la opción para mostrar siempre el desensamblado cuando no se encuentran los archivos de origen o de símbolos.
 - Para mostrar las ubicaciones que busca y el resultado, expanda **información de carga de símbolos**.

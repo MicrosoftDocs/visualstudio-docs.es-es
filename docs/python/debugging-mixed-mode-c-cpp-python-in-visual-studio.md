@@ -97,7 +97,7 @@ La ventana **Pila de llamadas** muestra marcos de pila nativos y de Python inter
 
 ![Pila de llamadas combinadas con depuración en modo mixto](media/mixed-mode-debugging-call-stack.png)
 
-Las transiciones aparecen como **[Código externo]**, sin especificar la dirección de la transición, siempre que la opción **Herramientas** > **Opciones** > **Depuración** > **General** > **Habilitar Solo mi código** esté establecida.
+Las transiciones aparecen como **[Código externo]** , sin especificar la dirección de la transición, siempre que la opción **Herramientas** > **Opciones** > **Depuración** > **General** > **Habilitar Solo mi código** esté establecida.
 
 Al hacer doble clic en cualquier marco de llamada se vuelve activo y se abre el código fuente adecuado, si está disponible. Si el código fuente no está disponible, el marco sigue activo y se pueden inspeccionar las variables locales.
 
@@ -107,7 +107,7 @@ Cuando se usan los comandos **Depurar paso a paso por instrucciones** (**F11**) 
 
 ### <a name="pyobject-values-view-in-native-code"></a>Vista de valores PyObject en código nativo
 
-Cuando está activo un marco nativo (C o C++), sus variables locales se muestran en la ventana **Variables locales** del depurador. En los módulos de extensión nativa de Python, muchas de estas variables son de tipo `PyObject` (que es una declaración typedef para `_object`), o algunos otros tipos de Python fundamentales (vea la lista siguiente). En la depuración en modo mixto, estos valores presentan un nodo secundario adicional con la etiqueta **[Vista de Python]**. Cuando se expande, este nodo muestra la representación de Python de la variable, idéntica a lo que vería si una variable local que hace referencia al mismo objeto estuviera presente en un marco de Python. Los elementos secundarios de este nodo son editables.
+Cuando está activo un marco nativo (C o C++), sus variables locales se muestran en la ventana **Variables locales** del depurador. En los módulos de extensión nativa de Python, muchas de estas variables son de tipo `PyObject` (que es una declaración typedef para `_object`), o algunos otros tipos de Python fundamentales (vea la lista siguiente). En la depuración en modo mixto, estos valores presentan un nodo secundario adicional con la etiqueta **[Vista de Python]** . Cuando se expande, este nodo muestra la representación de Python de la variable, idéntica a lo que vería si una variable local que hace referencia al mismo objeto estuviera presente en un marco de Python. Los elementos secundarios de este nodo son editables.
 
 ![Vista de Python en la ventana Expresiones locales](media/mixed-mode-debugging-python-view.png)
 
@@ -132,7 +132,7 @@ Tipos de C que muestran nodos **[Vista de Python]** (si está habilitada esta ca
 - `PyStringObject`
 - `PyUnicodeObject`
 
-**[Vista de Python]** no aparece automáticamente para los tipos que crea el usuario. Al crear extensiones para Python 3.x, esto no suele ser un problema, ya que cualquier objeto tiene en última instancia un campo `ob_base` de uno de los tipos anteriores, lo que hace que aparezca **[Vista de Python]**.
+**[Vista de Python]** no aparece automáticamente para los tipos que crea el usuario. Al crear extensiones para Python 3.x, esto no suele ser un problema, ya que cualquier objeto tiene en última instancia un campo `ob_base` de uno de los tipos anteriores, lo que hace que aparezca **[Vista de Python]** .
 
 Para Python 2.x, sin embargo, cada tipo de objeto declara normalmente su encabezado como una colección de campos insertados y no hay ninguna asociación entre los tipos personalizados creados y `PyObject` en el nivel de sistema de tipos en código de C o C++. Para habilitar los nodos **[Vista de Python]** para dichos tipos personalizados, edite el archivo *PythonDkm.natvis* en el [directorio de instalación de herramientas de Python](installing-python-support-in-visual-studio.md#install-locations) y agregue otro elemento en el código XML para el struct de C o la clase de C++.
 
@@ -140,7 +140,7 @@ Una opción alternativa (y mejor) es seguir [PEP 3123](https://www.python.org/de
 
 ### <a name="native-values-view-in-python-code"></a>Vista de valores nativos en el código de Python
 
-Al igual que en la sección anterior, puede habilitar una **[Vista de C++]** para valores nativos en la ventana **Variables locales** cuando un marco de Python está activo. Esta característica no está habilitada de forma predeterminada; para activarla, es necesario hacer clic con el botón derecho en la ventana **Variables locales** y cambiar la opción de menú **Python** > **Mostrar nodos de vista de C++**.
+Al igual que en la sección anterior, puede habilitar una **[Vista de C++]** para valores nativos en la ventana **Variables locales** cuando un marco de Python está activo. Esta característica no está habilitada de forma predeterminada; para activarla, es necesario hacer clic con el botón derecho en la ventana **Variables locales** y cambiar la opción de menú **Python** > **Mostrar nodos de vista de C++** .
 
 ![Habilitación de la vista de C++ en la ventana Expresiones locales](media/mixed-mode-debugging-enable-cpp-view.png)
 
@@ -150,7 +150,7 @@ El nodo **[Vista de C++]** proporciona una representación de la estructura de C
 
 Si un campo secundario de un objeto es de tipo `PyObject` o de uno de los otros tipos admitidos, tiene un nodo de representación **[Vista de Python]** (si esas representaciones están habilitadas), lo que hace que sea posible desplazarse por gráficos de objetos donde los vínculos no se exponen directamente a Python.
 
-A diferencia de los nodos **[Vista de Python]**, que usan metadatos de objetos de Python para determinar el tipo del objeto, no hay ningún mecanismo similar confiable para **[Vista de C++]**. Por lo general, dado un valor de Python (es decir, una referencia `PyObject`), no es posible determinar con seguridad qué estructura de C o C++ lo respalda de manera confiable. El depurador en modo mixto intenta adivinar ese tipo examinando los distintos campos del tipo del objeto (como la referencia a `PyTypeObject` por su campo `ob_type`) que tienen tipos de puntero de función. Si uno de esos punteros de función hace referencia a una función que se puede resolver, y esa función tiene un parámetro `self` con un tipo más específico que `PyObject*`, se asume que ese tipo es el tipo de respaldo. Por ejemplo, si `ob_type->tp_init` de un objeto dado señala a la siguiente función:
+A diferencia de los nodos **[Vista de Python]** , que usan metadatos de objetos de Python para determinar el tipo del objeto, no hay ningún mecanismo similar confiable para **[Vista de C++]** . Por lo general, dado un valor de Python (es decir, una referencia `PyObject`), no es posible determinar con seguridad qué estructura de C o C++ lo respalda de manera confiable. El depurador en modo mixto intenta adivinar ese tipo examinando los distintos campos del tipo del objeto (como la referencia a `PyTypeObject` por su campo `ob_type`) que tienen tipos de puntero de función. Si uno de esos punteros de función hace referencia a una función que se puede resolver, y esa función tiene un parámetro `self` con un tipo más específico que `PyObject*`, se asume que ese tipo es el tipo de respaldo. Por ejemplo, si `ob_type->tp_init` de un objeto dado señala a la siguiente función:
 
 ```c
 static int FobObject_init(FobObject* self, PyObject* args, PyObject* kwds) {

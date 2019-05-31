@@ -39,7 +39,7 @@ ms.locfileid: "62548379"
 ---
 # <a name="find-and-replace-text"></a>Buscar y reemplazar texto
 
-Puede buscar y reemplazar texto en el editor de Visual Studio mediante [Buscar y reemplazar](#find-and-replace-control) (**Ctrl**+**F** o **Ctrl**+**H**) o [Find/Replace in Files](#find-in-files-and-replace-in-files) (Buscar/Reemplazar en archivos) (**Ctrl**+**Mayús**+**F** o **Ctrl**+**Mayús**+**H**). También puede buscar y reemplazar solo *algunas* instancias de un patrón mediante la *[selección de varios símbolos de inserción](#multi-caret-selection)*.
+Puede buscar y reemplazar texto en el editor de Visual Studio mediante [Buscar y reemplazar](#find-and-replace-control) (**Ctrl**+**F** o **Ctrl**+**H**) o [Find/Replace in Files](#find-in-files-and-replace-in-files) (Buscar/Reemplazar en archivos) (**Ctrl**+**Mayús**+**F** o **Ctrl**+**Mayús**+**H**). También puede buscar y reemplazar solo *algunas* instancias de un patrón mediante la *[selección de varios símbolos de inserción](#multi-caret-selection)* .
 
 > [!TIP]
 > Si está cambiando el nombre de símbolos de código, como variables y métodos, es mejor que los *[refactorice](../ide/reference/rename.md)*  en lugar de usar Buscar y reemplazar. La refactorización es inteligente y entiende el ámbito, mientras que Buscar y reemplazar reemplaza de forma automática todas las instancias.
@@ -62,7 +62,7 @@ El control **Buscar y reemplazar** aparece en la esquina superior derecha de la 
 
 Puede tener acceso a las opciones de reemplazo pulsando el botón siguiente al cuadro de texto **Buscar**. Para realizar un reemplazo puntual, pulse el botón **Reemplazar siguiente** junto al cuadro de texto **Reemplazar**. Para reemplazar todas las coincidencias, pulse el botón **Reemplazar todo**.
 
-Para cambiar el color de resaltado de las coincidencias, pulse el menú **Herramientas**, seleccione **Opciones** y, después, pulse **Entorno** y **Fuentes y colores**. En la lista **Mostrar configuración para**, seleccione **Editor de texto** y, después, en la lista **Mostrar elementos**, seleccione **Buscar resaltado (Extensión)**.
+Para cambiar el color de resaltado de las coincidencias, pulse el menú **Herramientas**, seleccione **Opciones** y, después, pulse **Entorno** y **Fuentes y colores**. En la lista **Mostrar configuración para**, seleccione **Editor de texto** y, después, en la lista **Mostrar elementos**, seleccione **Buscar resaltado (Extensión)** .
 
 ### <a name="search-tool-windows"></a>Ventanas de herramientas de búsqueda
 
@@ -85,14 +85,14 @@ Cuando pulse **Buscar todo**, se abre una ventana **Buscar resultados** y se mue
 
 ### <a name="create-custom-search-folder-sets"></a>Crear conjuntos de carpetas de búsqueda personalizados
 
-Puede definir un ámbito de búsqueda pulsando el botón **Elegir carpetas de búsqueda** (parecido a **...**) junto al cuadro **Buscar en**. En el cuadro de diálogo **Elegir carpetas de búsqueda**, puede especificar un conjunto de carpetas en el que buscar, y puede guardar la especificación para que pueda volver a usarla más tarde.
+Puede definir un ámbito de búsqueda pulsando el botón **Elegir carpetas de búsqueda** (parecido a **...** ) junto al cuadro **Buscar en**. En el cuadro de diálogo **Elegir carpetas de búsqueda**, puede especificar un conjunto de carpetas en el que buscar, y puede guardar la especificación para que pueda volver a usarla más tarde.
 
 > [!TIP]
 > Si ha asignado la unidad de un equipo remoto al equipo local, puede especificar las carpetas que se van a buscar en el equipo remoto.
 
 ### <a name="create-custom-component-sets"></a>Crear conjuntos de componentes personalizados
 
-Puede definir conjuntos de componentes como su ámbito de búsqueda pulsando el botón **Editar conjunto de componentes personalizado** junto al cuadro **Buscar en**. Puede especificar componentes COM o .NET instalados, proyectos de Visual Studio que se incluyen en la solución o cualquier ensamblado o biblioteca de tipos (*.dll*, *.tlb*, *.olb*, *.exe* u *.ocx*). Para buscar referencias, seleccione el cuadro **Buscar en referencias**.
+Puede definir conjuntos de componentes como su ámbito de búsqueda pulsando el botón **Editar conjunto de componentes personalizado** junto al cuadro **Buscar en**. Puede especificar componentes COM o .NET instalados, proyectos de Visual Studio que se incluyen en la solución o cualquier ensamblado o biblioteca de tipos ( *.dll*, *.tlb*, *.olb*, *.exe* u *.ocx*). Para buscar referencias, seleccione el cuadro **Buscar en referencias**.
 
 ## <a name="multi-caret-selection"></a>Selección de varios símbolos de inserción
 
@@ -121,10 +121,10 @@ Para los comportamientos de selección de varios símbolos de inserción, use la
 |**Ctrl**+**Alt** + clic|Agregar un símbolo de inserción secundario|
 |**Ctrl**+**Alt** + doble clic|Agregar una selección de palabra secundaria|
 |**Ctrl**+**Alt** + clic + arrastrar|Agregar una selección secundaria|
-|**Mayús**+**Alt**+**.**|Agregar el siguiente texto coincidente como una selección|
-|**Ctrl**+**Mayús**+**Alt**+**,**|Agregar todo el texto coincidente como una selección|
-|**Mayús**+**Alt**+**,**|Quitar la última repetición seleccionada|
-|**Ctrl**+**Mayús**+**Alt**+**.**|Omitir la siguiente repetición coincidente|
+|**Mayús**+**Alt**+ **.**|Agregar el siguiente texto coincidente como una selección|
+|**Ctrl**+**Mayús**+**Alt**+ **,**|Agregar todo el texto coincidente como una selección|
+|**Mayús**+**Alt**+ **,**|Quitar la última repetición seleccionada|
+|**Ctrl**+**Mayús**+**Alt**+ **.**|Omitir la siguiente repetición coincidente|
 |**Alt** + clic|Agregar una selección de cuadro|
 |**Esc** o clic|Borrar todas las selecciones|
 

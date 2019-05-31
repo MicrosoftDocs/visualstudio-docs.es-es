@@ -10,14 +10,14 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9c17d5c9d6874c836954941e1fccd8ce9d9f2e3a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ccdf29e3a4cda2bf5d527a2b712878c1fbd76197
+ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62789072"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "66037578"
 ---
-# <a name="wrap-indent-and-align-parameters"></a>Encapsulado, sangría y alineación de parámetros
+# <a name="wrap-indent-and-align-parameters-or-arguments"></a>Encapsulado, sangría y alineación de parámetros o argumentos
 
 Esta refactorización se aplica a lo siguiente:
 
@@ -25,16 +25,16 @@ Esta refactorización se aplica a lo siguiente:
 
 - Visual Basic
 
-**Qué:** permite encapsular, aplicar sangría y alinear parámetros.
+**Qué:** Le permite aplicar encapsulado, sangría y alineación a parámetros o argumentos.
 
-**Cuándo:** si se tiene una llamada o declaración de método con varios parámetros.
+**Cuándo:** Tiene una llamada o declaración de método con varios parámetros o argumentos.
 
-**Por qué:** es más fácil leer una larga lista de parámetros cuando están encapsulados o con una sangría según la preferencia del usuario.
+**Por qué:** Es más fácil leer una larga lista de parámetros o argumentos cuando están encapsulados o con una sangría según la preferencia del usuario.
 
 ## <a name="how-to"></a>Procedimiento
 
 1. Coloque el cursor en una lista de parámetros.
-2. Presione **Ctrl**+**.** para activar el menú **Acciones rápidas y refactorizaciones**.
+2. Presione **Ctrl**+ **.** para activar el menú **Acciones rápidas y refactorizaciones**.
 
    ![Encapsulado, sangría y alineación de parámetros](media/wrap-parameters.png)
 

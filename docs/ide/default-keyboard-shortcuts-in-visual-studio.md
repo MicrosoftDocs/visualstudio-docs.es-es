@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e8cea36eeed3e09f1d88ad08f95f816d5206d65
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a0fb75badac32d09dff241cd4f339a89d6cc558d
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62962046"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261316"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Métodos abreviados de teclado predeterminados de Visual Studio
 
@@ -125,7 +125,8 @@ Las secciones de la siguiente tabla incluyen comandos que son globales en el sen
 |Debug.StepIntoSpecific|**Mayús+Alt+F11**|
 |Debug.StepOut|**Mayús+F11**|
 |Debug.StepOutCurrentProcess|**Ctrl+Mayús+Alt+F11**|
-|Debug.StepOver|**F10**|
+|Debug.StepOver|**F10** (al depurar: realiza una acción de paso a paso por procedimientos)|
+|Debug.StepOver|**F10** (cuando no se está depurando: inicia la depuración y se detiene en la primera línea del código de usuario)|
 |Debug.StepOverCurrentProcess|**Ctrl+Alt+F10**|
 |Debug.StopDebugging|**Mayús+F5**|
 |Debug.StopPerformanceAnalysis|**Mayús+Alt+F2**|
@@ -267,9 +268,9 @@ Las secciones de la siguiente tabla incluyen comandos que son globales en el sen
 |Project.AddNewItem|**Ctrl+Mayús+A**|
 |Project.ClassWizard|**Ctrl+Mayús+X**|
 |Project.Override|**Ctrl+Alt+Insert**|
-|Project.Previewchanges|**Alt+**, luego **Alt+C**|
-|Project.Publishselectedfiles|**Alt+**, luego **Alt+P**|
-|Project.Replaceselectedfilesfromserver|**Alt+**, luego **Alt+R**|
+|Project.Previewchanges|**Alt+** , luego **Alt+C**|
+|Project.Publishselectedfiles|**Alt+** , luego **Alt+P**|
+|Project.Replaceselectedfilesfromserver|**Alt+** , luego **Alt+R**|
 
 ### <a name="bkmk_projectContext"></a> Menús contextuales de proyectos y soluciones
 
@@ -293,9 +294,9 @@ Las secciones de la siguiente tabla incluyen comandos que son globales en el sen
 
 |Comandos|Métodos abreviados de teclado|
 |--------------| - |
-|SolutionExplorer.OpenFilesFilter|**Ctrl+[**, **O** (letra "O")<br /><br /> o<br /><br /> **Ctrl+[**, **Ctrl+O** (letra "O")|
-|SolutionExplorer.PendingChangesFilter|**Ctrl+[**, **P**<br /><br /> o<br /><br /> **Ctrl+[**, **Ctrl+P**|
-|SolutionExplorer.SyncWithActiveDocument|**Ctrl+[**, **S**<br /><br /> o<br /><br /> **Ctrl+[**, **Ctrl+S**|
+|SolutionExplorer.OpenFilesFilter|**Ctrl+[** , **O** (letra "O")<br /><br /> o<br /><br /> **Ctrl+[** , **Ctrl+O** (letra "O")|
+|SolutionExplorer.PendingChangesFilter|**Ctrl+[** , **P**<br /><br /> o<br /><br /> **Ctrl+[** , **Ctrl+P**|
+|SolutionExplorer.SyncWithActiveDocument|**Ctrl+[** , **S**<br /><br /> o<br /><br /> **Ctrl+[** , **Ctrl+S**|
 
 ### <a name="bkmk_team"></a> Equipo
 
@@ -803,7 +804,7 @@ Las secciones de la siguiente tabla incluyen comandos que son globales en el sen
 | Edit.GotoBraceExtend | **Ctrl+Mayús+]** |
 | Edit.GotoRecent | **Ctrl+T,R** |
 | Edit.GotoNextIssueinFile | **Alt+AvPág** |
-| Edit.GotoPreviousIssueinFile **Alt+RePág** |
+| Edit.GotoPreviousIssueinFile | **Alt+RePág** |
 | Edit.HideSelection | **Ctrl+M, Ctrl+H** |
 | Edit.IncreaseFilterLevel | **Alt+.** |
 | Edit.IncrementalSearch | **Ctrl+I** |

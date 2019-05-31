@@ -75,7 +75,7 @@ Para cerrar la información sobre todos los datos, en el **depurar** menú, sele
 
 ### <a name="close-all-datatips-for-a-specific-file"></a>Cierre todas las sugerencias de datos para un archivo específico
 
-Para cerrar todas las sugerencias de datos para un archivo específico, en el **depurar** menú, seleccione **borrar todos los información sobre datos anclada a \<Filename >**.
+Para cerrar todas las sugerencias de datos para un archivo específico, en el **depurar** menú, seleccione **borrar todos los información sobre datos anclada a \<Filename >** .
 
 ## <a name="expand-and-edit-information"></a>Expandir y editar información
 Con la Información sobre datos, se puede expandir una matriz, una estructura o un objeto para ver sus miembros. También se puede editar el valor de una variable de una Información sobre datos.

@@ -74,13 +74,13 @@ ms.locfileid: "58997006"
 
  Este ejemplo produce el siguiente resultado:
 
- **Puntero Changing - pasa por valor:**
+ **Puntero Changing - pasa por valor:** 
 **12345**
 **12345**
 **puntero Changing - pasado por referencia:** 
 ** 12345**
 **ABCDE 12345**
-**pasar por valor devuelto:**
+**pasar por valor devuelto:** 
 **ABCDE 12345**
 ## <a name="try-pattern-methods"></a>Pruebe los métodos de patrón
 

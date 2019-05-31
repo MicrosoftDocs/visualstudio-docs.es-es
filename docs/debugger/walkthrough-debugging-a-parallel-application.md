@@ -46,7 +46,7 @@ En este tutorial se muestra cómo utilizar las ventanas **Pilas paralelas** y **
 - Cómo trabajan las ventanas con la escala de tamaño mediante la agrupación, el zoom y otras características relacionadas.
 
 ## <a name="prerequisites"></a>Requisitos previos
- En este tutorial se da por supuesto que **solo mi código** está habilitado (está habilitado de forma predeterminada en las versiones más recientes de Visual Studio). En el menú **Herramientas**, haga clic en **Opciones**, expanda el nodo **Depuración**, seleccione **General** y, a continuación, seleccione **Habilitar Solo mi código (solo administrado)**. Si no configura esta característica, puede utilizar este tutorial, pero los resultados pueden diferir de las ilustraciones.
+ En este tutorial se da por supuesto que **solo mi código** está habilitado (está habilitado de forma predeterminada en las versiones más recientes de Visual Studio). En el menú **Herramientas**, haga clic en **Opciones**, expanda el nodo **Depuración**, seleccione **General** y, a continuación, seleccione **Habilitar Solo mi código (solo administrado)** . Si no configura esta característica, puede utilizar este tutorial, pero los resultados pueden diferir de las ilustraciones.
 
 ## <a name="c-sample"></a>Ejemplo de C#
  Si utiliza el ejemplo de C#, también se supone que Código externo está oculto. Para alternar si se muestra el código externo, haga clic con el botón derecho en el encabezado de tabla **Nombre** de la ventana **Pila de llamadas** y, a continuación, active o desactive **Mostrar código externo**. Si no configura esta característica, puede utilizar este tutorial, pero los resultados pueden diferir de las ilustraciones.
@@ -65,7 +65,7 @@ En este tutorial se muestra cómo utilizar las ventanas **Pilas paralelas** y **
 1. Abra Visual Studio y cree un nuevo proyecto.
 
     ::: moniker range=">=vs-2019"
-    Presione **Esc** para cerrar la ventana de inicio. Tipo **Ctrl + Q** para abrir el cuadro de búsqueda, escriba **consola** (o **c ++**), elija **plantillas**y, a continuación:
+    Presione **Esc** para cerrar la ventana de inicio. Tipo **Ctrl + Q** para abrir el cuadro de búsqueda, escriba **consola** (o **c ++** ), elija **plantillas**y, a continuación:
 
     - Para C# o Visual Basic, elija **crear nuevo proyecto de aplicación de consola (.NET Framework)** cualquiera C# o Visual Basic. En el cuadro de diálogo que se abre, elija **Crear**.
     - Para C++, elija **crear nuevo proyecto de aplicación de consola** para C++. En el cuadro de diálogo que se abre, elija **Crear**.
@@ -75,8 +75,8 @@ En este tutorial se muestra cómo utilizar las ventanas **Pilas paralelas** y **
     ::: moniker range="vs-2017"
     En la barra de menús superior, seleccione **Archivo** > **Nuevo** > **Proyecto**. En el panel izquierdo de la **nuevo proyecto** cuadro de diálogo, seleccione lo siguiente:
 
-    - Para un C# aplicación, en **Visual C#** , elija **Windows Desktop**y, a continuación, en el panel central, elija **aplicación de consola (.NET Framework)**.
-    - Para una aplicación de Visual Basic, en **Visual Basic**, elija **Windows Desktop**y, a continuación, en el panel central, elija **aplicación de consola (.NET Framework)**.
+    - Para un C# aplicación, en **Visual C#** , elija **Windows Desktop**y, a continuación, en el panel central, elija **aplicación de consola (.NET Framework)** .
+    - Para una aplicación de Visual Basic, en **Visual Basic**, elija **Windows Desktop**y, a continuación, en el panel central, elija **aplicación de consola (.NET Framework)** .
     - Para un C++ aplicación, en **Visual C++** , elija **Windows Desktop**,, y, a continuación, elija **aplicación de consola Windows**.
 
     A continuación, escriba un nombre o utilice el nombre predeterminado y haga clic en **Aceptar**.

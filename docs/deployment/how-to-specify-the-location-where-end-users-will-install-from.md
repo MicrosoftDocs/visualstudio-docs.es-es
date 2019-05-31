@@ -39,7 +39,7 @@ Al publicar un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]
 
 2. Haga clic en la pestaña **Publicar**.
 
-3. En el campo de dirección URL de instalación, escriba la ubicación de instalación mediante una dirección URL completa con el formato *http://www.microsoft.com/ApplicationName*, o una ruta UNC con el formato  *\\\Server\ApplicationName*.
+3. En el campo de dirección URL de instalación, escriba la ubicación de instalación mediante una dirección URL completa con el formato *http://www.microsoft.com/ApplicationName* , o una ruta UNC con el formato  *\\\Server\ApplicationName*.
 
 ## <a name="see-also"></a>Vea también
 - [Cómo: Especificación de la ubicación en la que Visual Studio copia los archivos](../deployment/how-to-specify-where-visual-studio-copies-the-files.md)

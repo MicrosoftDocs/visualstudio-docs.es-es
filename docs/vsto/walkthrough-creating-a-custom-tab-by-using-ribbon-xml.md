@@ -63,7 +63,7 @@ ms.locfileid: "63438574"
 
 1. En el menú **Proyecto** , haga clic en **Agregar nuevo elemento**.
 
-2. En el **Agregar nuevo elemento** cuadro de diálogo, seleccione **cinta (XML)**.
+2. En el **Agregar nuevo elemento** cuadro de diálogo, seleccione **cinta (XML)** .
 
 3. Cambie el nombre de la nueva cinta de opciones por **MyRibbon**y haga clic en **Agregar**.
 

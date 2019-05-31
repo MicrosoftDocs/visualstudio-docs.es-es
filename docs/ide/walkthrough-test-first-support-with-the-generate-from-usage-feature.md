@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Desarrollo basado en pruebas previas con la característica de generación a partir del uso'
+title: Desarrollo basado en pruebas previas con la característica de generación a partir del uso
 ms.date: 10/09/2017
 dev_langs:
 - VB
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3085e2f9b27d587f26fd93db06bc837527a78ff1
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 186713daa3d4c913926779f79ffc61ff488578d5
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432033"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66262852"
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>Tutorial: Desarrollo basado en pruebas previas con la característica de generación a partir del uso
 
@@ -38,7 +38,7 @@ En este tema se muestra cómo usar la característica [Generar a partir del uso]
 
 2. En el **Explorador de soluciones**, haga clic con el botón derecho en el icono de la solución de la parte superior y haga clic en **Agregar** > **Nuevo proyecto**.
 
-3. Cree un proyecto **Proyecto de prueba unitaria (.NET Framework)**.
+3. Cree un proyecto **Proyecto de prueba unitaria (.NET Framework)** .
 
    ::: moniker range="vs-2017"
 
@@ -93,7 +93,7 @@ Supongamos que la especificación del producto indica que la clase `Automobile` 
      [!code-csharp[VbTDDWalkthrough#1](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_1.cs)]
      [!code-vb[VbTDDWalkthrough#1](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_1.vb)]
 
-2. Dado que el código hace referencia a dos propiedades no definidas en `Automobile`, aparece un subrayado ondulado debajo de `Model` y `TopSpeed`. Sitúe el cursor encima de `Model`, haga clic en la bombilla de error de **Acciones rápidas** y, después, elija **Generar propiedad "Automobile.Model"**.
+2. Dado que el código hace referencia a dos propiedades no definidas en `Automobile`, aparece un subrayado ondulado debajo de `Model` y `TopSpeed`. Sitúe el cursor encima de `Model`, haga clic en la bombilla de error de **Acciones rápidas** y, después, elija **Generar propiedad "Automobile.Model"** .
 
 3. Genere código auxiliar para la propiedad `TopSpeed` de la misma manera.
 
@@ -107,11 +107,11 @@ Ahora vamos a crear un método de prueba que generará un código auxiliar de co
      [!code-csharp[VbTDDWalkthrough#2](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_2.cs)]
      [!code-vb[VbTDDWalkthrough#2](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_2.vb)]
 
-2. Haga clic en la bombilla de error de **Acciones rápidas** situada debajo de la línea roja ondulada y, luego, haga clic en **Generar constructor en "Automobile"**.
+2. Haga clic en la bombilla de error de **Acciones rápidas** situada debajo de la línea roja ondulada y, luego, haga clic en **Generar constructor en "Automobile"** .
 
      En el archivo de clase `Automobile` , observe que el nuevo constructor ha examinado los nombres de las variables locales que se usan en la llamada al constructor, ha encontrado propiedades que tienen los mismos nombres en la clase `Automobile` y el código proporcionado en el cuerpo del constructor para almacenar los valores de argumento en las propiedades `Model` y `TopSpeed` .
 
-3. Después de generar el nuevo constructor, aparece un subrayado ondulado bajo la llamada al constructor predeterminado en `DefaultAutomobileIsInitializedCorrectly`. El mensaje de error indica que la clase `Automobile` no tiene ningún constructor que no tome ningún argumento. Para generar un constructor predeterminado explícito que no tenga parámetros, haga clic en la bombilla de error de **Acciones rápidas** y, luego, en **Generar constructor en "Automobile"**.
+3. Después de generar el nuevo constructor, aparece un subrayado ondulado bajo la llamada al constructor predeterminado en `DefaultAutomobileIsInitializedCorrectly`. El mensaje de error indica que la clase `Automobile` no tiene ningún constructor que no tome ningún argumento. Para generar un constructor predeterminado explícito que no tenga parámetros, haga clic en la bombilla de error de **Acciones rápidas** y, luego, en **Generar constructor en "Automobile"** .
 
 ### <a name="generate-a-stub-for-a-method"></a>Generar un código auxiliar para un método
 Suponga que la especificación indica que un nuevo `Automobile` se puede poner en estado de `IsRunning` si sus propiedades `Model` y `TopSpeed` se establecen en un valor distinto de los valores predeterminados.
@@ -121,9 +121,9 @@ Suponga que la especificación indica que un nuevo `Automobile` se puede poner e
      [!code-csharp[VbTDDWalkthrough#3](../ide/codesnippet/CSharp/walkthrough-test-first-support-with-the-generate-from-usage-feature_3.cs)]
      [!code-vb[VbTDDWalkthrough#3](../ide/codesnippet/VisualBasic/walkthrough-test-first-support-with-the-generate-from-usage-feature_3.vb)]
 
-2. Haga clic en la bombilla de error de **Acciones rápidas** de la llamada al método `myAuto.Start` y luego en **Generar método "Automobile.Start"**.
+2. Haga clic en la bombilla de error de **Acciones rápidas** de la llamada al método `myAuto.Start` y luego en **Generar método "Automobile.Start"** .
 
-3. Haga clic en la bombilla **Acciones rápidas** de la propiedad `IsRunning` y, luego, haga clic en **Generar propiedad "Automobile.IsRunning"**.
+3. Haga clic en la bombilla **Acciones rápidas** de la propiedad `IsRunning` y, luego, haga clic en **Generar propiedad "Automobile.IsRunning"** .
 
      La clase `Automobile` ahora contiene un método denominado `Start()` y una propiedad denominada `IsRunning`.
 
