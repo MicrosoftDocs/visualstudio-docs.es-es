@@ -77,7 +77,7 @@ ms.locfileid: "65687301"
 
  Este ejemplo produce el siguiente resultado:
 
- **Cumplir en el glen turbio 2/22/2003 12:00:00 A.M.!**
+ **Cumplir en el glen turbio 2/22/2003 12:00:00 A.M.!** 
 **De prueba: soleado meadow**
 **cumple en el soleado meadow 2/22/2003 12:00:00 A.M.!**
 ## <a name="related-rules"></a>Reglas relacionadas

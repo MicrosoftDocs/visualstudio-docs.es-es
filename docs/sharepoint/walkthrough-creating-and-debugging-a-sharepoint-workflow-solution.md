@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Crear y depurar una solución de flujo de trabajo de SharePoint | Documentos de Microsoft'
+title: Crear y depurar soluciones de flujo de trabajo de SharePoint
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ad39c8b8bad373cd7892a1eeda89b149622913a7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 51682ba54d6a6ae0698ade6bb52d5972cd63111f
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430359"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401057"
 ---
 # <a name="walkthrough-create-and-debug-a-sharepoint-workflow-solution"></a>Tutorial: Crear y depurar una solución de flujo de trabajo de SharePoint
   Este tutorial muestra cómo crear una plantilla de flujo de trabajo secuencial básico. El flujo de trabajo comprueba una propiedad de una biblioteca de documentos compartidos para determinar si se ha revisado un documento. Si el documento se ha revisado, el flujo de trabajo finaliza.
@@ -57,7 +57,7 @@ ms.locfileid: "63430359"
 
 3. Elija **biblioteca** en el **herramientas de biblioteca** la cinta de opciones y, a continuación, elija el **crear columna** botón en la cinta de opciones para crear una nueva columna.
 
-4. Nombre de la columna **estado del documento**, establezca su tipo en **elección (menú para elegir)**, especifique las tres opciones siguientes y, a continuación, elija el **Aceptar** botón:
+4. Nombre de la columna **estado del documento**, establezca su tipo en **elección (menú para elegir)** , especifique las tres opciones siguientes y, a continuación, elija el **Aceptar** botón:
 
     - **Revisión necesaria**
 

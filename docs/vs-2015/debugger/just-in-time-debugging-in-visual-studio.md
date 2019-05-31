@@ -102,7 +102,7 @@ Las acciones que debe realizar cuando ve el Visual Studio Just-in-Time cuadro de
 
      Para habilitar Just-In-Time la depuración de una aplicación de Windows Forms, debe realizar los siguientes pasos adicionales:
 
-2. Establecer el `jitDebugging` valor `true` en el `system.windows.form` sección del archivo machine.config o  *\<nombre de aplicación >*. archivo exe.config:
+2. Establecer el `jitDebugging` valor `true` en el `system.windows.form` sección del archivo machine.config o  *\<nombre de aplicación >* . archivo exe.config:
 
     ```
     <configuration>
@@ -165,7 +165,7 @@ static void Main(string[] args)
 
  En **depuradores posibles**, debería ver que el **nueva instancia de Microsoft Visual Studio 2015** línea seleccionada. Si aún no está activada, selecciónela.
 
- En la parte inferior de la ventana, en **desea depurar mediante el depurador seleccionado?**, haga clic en **Sí**.
+ En la parte inferior de la ventana, en **desea depurar mediante el depurador seleccionado?** , haga clic en **Sí**.
 
  El proyecto ThrowsNullException se abre en una nueva instancia de Visual Studio, con la ejecución se detendrá en la línea que produce la excepción:
 

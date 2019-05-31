@@ -157,7 +157,7 @@ Para realizar el seguimiento de tareas, casos de prueba, errores, requisitos, pr
   
     1. Elija **Propiedades**y, después, **Elementos de trabajo** , donde aparece el número de elementos de trabajo vinculados.  
   
-    2. En la propiedad **Elementos de trabajo** , elija el botón de puntos suspensivos **[…]**.  
+    2. En la propiedad **Elementos de trabajo** , elija el botón de puntos suspensivos **[…]** .  
   
         > [!NOTE]
         > Solo aparecen los elementos de trabajo del servidor actual. Si la lista está vacía pero el número de elementos de trabajo no es cero, asegúrese de que la conexión se ha establecido con el servidor correcto en **Team Explorer**.  

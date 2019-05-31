@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4385ad73b29f1266bb368a781da11279f887942b
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 68840957a0c152add06804eac58f3d24afa1e846
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65847359"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261963"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>Convenciones de nomenclatura .NET para EditorConfig
 
@@ -25,7 +25,7 @@ Las convenciones de nomenclatura deben ordenarse de la más específica a la men
 
 Para cada convención de nomenclatura, debe especificar los símbolos a los que se aplica, un estilo de nomenclatura y una gravedad de aplicación de la convención, con las propiedades que se describen a continuación. El orden de las propiedades no es importante.
 
-Para comenzar, elija un título para la regla de nomenclatura que va a usar en cada una de las propiedades que se necesitan para describir completamente la regla. Por ejemplo, `public_members_must_be_capitalized` es un buen nombre descriptivo para una regla de nomenclatura. En las secciones siguientes se hará referencia al título que elija como **<TítuloDeLaReglaDeNomenclatura\>**.
+Para comenzar, elija un título para la regla de nomenclatura que va a usar en cada una de las propiedades que se necesitan para describir completamente la regla. Por ejemplo, `public_members_must_be_capitalized` es un buen nombre descriptivo para una regla de nomenclatura. En las secciones siguientes se hará referencia al título que elija como **<TítuloDeLaReglaDeNomenclatura\>** .
 
 ## <a name="symbols"></a>Símbolos
 
@@ -209,6 +209,6 @@ Si cierra y vuelve a abrir el archivo de código, en lugar de ver la sugerencia 
 
 ## <a name="see-also"></a>Vea también
 
+- [Roslyn naming conventions](https://github.com/dotnet/roslyn/blob/master/.editorconfig#L63) (Convenciones de nomenclatura de Roslyn)
 - [Lenguaje .NET y convenciones de formato](../ide/editorconfig-code-style-settings-reference.md)
 - [Crear opciones del editor personalizadas y portátiles](../ide/create-portable-custom-editor-options.md)
-- [Archivo .editorconfig de la plataforma de compilación .NET](https://github.com/dotnet/roslyn/blob/master/.editorconfig)

@@ -15,7 +15,7 @@ ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 26d8412318efd2292fd0f5a0f0ef52fe36c7d06c
 ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/22/2019
 ms.locfileid: "60116295"
@@ -41,7 +41,7 @@ En este tutorial, analizar un proyecto administrado en previsión de defectos de
   
 1. En el **archivo** menú de [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], haga clic en **New** y, a continuación, haga clic en **proyecto**.  
   
-2. En el **nuevo proyecto** cuadro de diálogo **tipos de proyecto**, haga clic en **Visual C#**.  
+2. En el **nuevo proyecto** cuadro de diálogo **tipos de proyecto**, haga clic en **Visual C#** .  
   
 3. En **plantillas**, seleccione **biblioteca de clases**.  
   
@@ -149,7 +149,7 @@ En este tutorial, analizar un proyecto administrado en previsión de defectos de
   
        Seleccione el **firmar el ensamblado** casilla de verificación.  
   
-       En el **elegir un archivo de clave de nombre de cadena** lista, seleccione  **\<nuevo... >**.  
+       En el **elegir un archivo de clave de nombre de cadena** lista, seleccione  **\<nuevo... >** .  
   
        El **crear clave de nombre seguro** aparece el cuadro de diálogo.  
   

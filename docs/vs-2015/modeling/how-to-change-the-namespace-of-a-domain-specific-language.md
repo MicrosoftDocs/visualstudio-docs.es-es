@@ -49,7 +49,7 @@ Puede cambiar el espacio de nombres de un lenguaje específico de dominio. Debe 
   
 10. Restablecer la instancia Experimental de Visual Studio.  
   
-    1. Eliminar **\Users\\**_{su nombre}_**\AppData\Local\Microsoft\VisualStudio\\\*Exp**  
+    1. Eliminar **\Users\\** _{su nombre}_ **\AppData\Local\Microsoft\VisualStudio\\\*Exp**  
   
     2. En el Windows **iniciar** menú, elija **todos los programas**, **Microsoft Visual Studio 2010 SDK**, **herramientas**, **restablecer el Instancia experimental**.  
   

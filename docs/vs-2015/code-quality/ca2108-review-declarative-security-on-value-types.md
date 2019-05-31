@@ -56,7 +56,7 @@ ms.locfileid: "65687368"
 
  Este ejemplo produce el siguiente resultado:
 
- **Constructor personalizado de la estructura: Error en la solicitud.**
+ **Constructor personalizado de la estructura: Error en la solicitud.** 
 **Nuevos valores SecuredTypeStructure 100 100**
 **SecuredTypeStructure 200 200 de nuevos valores**
 ## <a name="see-also"></a>Vea también

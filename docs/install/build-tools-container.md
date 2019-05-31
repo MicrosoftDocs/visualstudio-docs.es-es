@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: cd2294d3018aba3d2e7ff8a0c0737b32a05214c0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ce2fe1d40c0aeddf12a898919150a32c0c77d72e
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974259"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177634"
 ---
 # <a name="install-build-tools-into-a-container"></a>Instalar Build Tools en un contenedor
 
@@ -64,12 +64,12 @@ Visual Studio Build Tools y, en mayor medida, Visual Studio, requieren una gran 
 
 1. [Alterne el botón **Básico**](https://docs.docker.com/docker-for-windows/#edit-the-daemon-configuration-file) a **Avanzado**.
 
-1. Agregue la siguiente propiedad de matriz JSON para aumentar el espacio en disco a 120 GB (más que suficiente para Build Tools con espacio para que aumente).
+1. Agregue la siguiente propiedad de matriz JSON para aumentar el espacio en disco a 127 GB (más que suficiente para Build Tools con espacio para que aumente).
 
    ```json
    {
      "storage-opts": [
-       "size=120GB"
+       "size=127G"
      ]
    }
    ```
@@ -83,10 +83,12 @@ Visual Studio Build Tools y, en mayor medida, Visual Studio, requieren una gran 
      "debug": true,
      "experimental": true,
      "storage-opts": [
-       "size=120GB"
+       "size=127G"
      ]
    }
    ```
+
+   Consulte [Docker Engine en Windows](https://docs.microsoft.com/virtualization/windowscontainers/manage-docker/configure-docker-daemon) para obtener más sugerencias y opciones de configuración.
 
 1. Haga clic en **Aplicar**.
 
@@ -100,17 +102,17 @@ Visual Studio Build Tools y, en mayor medida, Visual Studio, requieren una gran 
 
 1. Desde un símbolo del sistema con privilegios elevados, modifique "%ProgramData%\Docker\config\daemon.json" (o lo que especificó para `dockerd --config-file`).
 
-1. Agregue la siguiente propiedad de matriz JSON para aumentar el espacio en disco a 120 GB (más que suficiente para Build Tools con espacio para que aumente).
+1. Agregue la siguiente propiedad de matriz JSON para aumentar el espacio en disco a 127 GB (más que suficiente para Build Tools con espacio para que aumente).
 
    ```json
    {
      "storage-opts": [
-       "size=120GB"
+       "size=120G"
      ]
    }
    ```
 
-   Esta propiedad se agrega a todo lo que ya tenga.
+   Esta propiedad se agrega a todo lo que ya tenga. Consulte [Docker Engine en Windows](https://docs.microsoft.com/virtualization/windowscontainers/manage-docker/configure-docker-daemon) para obtener más sugerencias y opciones de configuración.
  
 1. Guarde y cierre el archivo.
 
@@ -148,8 +150,8 @@ Guarde el Dockerfile de ejemplo siguiente en un archivo nuevo en el disco. Si el
    ```dockerfile
    # escape=`
 
-   # Use the latest Windows Server Core image with .NET Framework 4.7.1.
-   FROM microsoft/dotnet-framework:4.7.1
+   # Use the latest Windows Server Core image with .NET Framework 4.7.2.
+   FROM mcr.microsoft.com/dotnet/framework/sdk:4.7.2-windowsservercore-ltsc2019
 
    # Restore the default Windows shell for correct batch processing.
    SHELL ["cmd", "/S", "/C"]
@@ -175,11 +177,11 @@ Guarde el Dockerfile de ejemplo siguiente en un archivo nuevo en el disco. Si el
    ```
 
    > [!WARNING]
-   > Si basa la imagen directamente en microsoft/windowsservercore, puede que .NET Framework no se instale correctamente y no se indique ningún error de instalación. Es posible que el código administrado no se ejecute una vez completada la instalación. En su lugar, base la imagen en [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) o en otra versión posterior. Tenga en cuenta también que es posible que las imágenes etiquetadas con la versión 4.7.1 o posterior usen PowerShell como valor predeterminado de `SHELL`, lo que hará que las instrucciones `RUN` y `ENTRYPOINT` produzcan un error.
+   > Si basa la imagen directamente en microsoft/windowsservercore o mcr.microsoft.com/windows/servercore (consulte [Microsoft syndicates container catalog](https://azure.microsoft.com/en-us/blog/microsoft-syndicates-container-catalog/) [catálogo del contenedor de sindicatos de Microsoft]), puede que .NET Framework no se instale correctamente y no se indique ningún error de instalación. Es posible que el código administrado no se ejecute una vez completada la instalación. En su lugar, base la imagen en [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) o en otra versión posterior. Tenga en cuenta también que es posible que las imágenes etiquetadas con la versión 4.7.1 o posterior usen PowerShell como valor predeterminado de `SHELL`, lo que hará que las instrucciones `RUN` y `ENTRYPOINT` produzcan un error.
    >
    > Visual Studio 2017 versión 15.8 o cualquier versión anterior (de cualquier producto) no se instalará correctamente en mcr\.microsoft\.com\/windows\/servercore:1809 o posterior. No se mostrará ningún error.
    >
-   > Para obtener más información, vea [Problemas conocidos de contenedores](build-tools-container-issues.md).
+   > Consulte [Compatibilidad de versiones de contenedor de Windows](https://docs.microsoft.com/virtualization/windowscontainers/deploy-containers/version-compatibility) para ver qué versiones de sistema operativo del contenedor se admiten en qué versiones de sistema operativo del host, y [Problemas conocidos de contenedores](build-tools-container-issues.md) para ver los problemas conocidos.
 
    ::: moniker-end
 
@@ -188,8 +190,8 @@ Guarde el Dockerfile de ejemplo siguiente en un archivo nuevo en el disco. Si el
    ```dockerfile
    # escape=`
 
-   # Use the latest Windows Server Core image with .NET Framework 4.7.1.
-   FROM microsoft/dotnet-framework:4.7.1
+   # Use the latest Windows Server Core image with .NET Framework 4.8.
+   FROM mcr.microsoft.com/dotnet/framework/sdk:4.8-windowsservercore-ltsc2019
 
    # Restore the default Windows shell for correct batch processing.
    SHELL ["cmd", "/S", "/C"]
@@ -217,7 +219,7 @@ Guarde el Dockerfile de ejemplo siguiente en un archivo nuevo en el disco. Si el
    > [!WARNING]
    > Si basa la imagen directamente en microsoft/windowsservercore, puede que .NET Framework no se instale correctamente y no se indique ningún error de instalación. Es posible que el código administrado no se ejecute una vez completada la instalación. En su lugar, base la imagen en [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) o en otra versión posterior. Tenga en cuenta también que es posible que las imágenes etiquetadas con la versión 4.7.1 o posterior usen PowerShell como valor predeterminado de `SHELL`, lo que hará que las instrucciones `RUN` y `ENTRYPOINT` produzcan un error.
    >
-   > Para obtener más información, vea [Problemas conocidos de contenedores](build-tools-container-issues.md).
+   > Consulte [Compatibilidad de versiones de contenedor de Windows](https://docs.microsoft.com/virtualization/windowscontainers/deploy-containers/version-compatibility) para ver qué versiones de sistema operativo del contenedor se admiten en qué versiones de sistema operativo del host, y [Problemas conocidos de contenedores](build-tools-container-issues.md) para ver los problemas conocidos.
 
    ::: moniker-end
 

@@ -191,7 +191,7 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
    #endif  
    ```  
   
-    Observe que las instrucciones de comprobación de memoria están enmarcadas por bloques `#ifdef`[_DEBUG](https://msdn.microsoft.com/library/a9901568-4846-4731-a404-399d947e2e7a)/ **#endif** , de modo que solo se compilan en versiones de depuración del programa.  
+    Observe que las instrucciones de comprobación de memoria están enmarcadas por bloques `#ifdef`[_DEBUG](https://msdn.microsoft.com/library/a9901568-4846-4731-a404-399d947e2e7a)/  **#endif** , de modo que solo se compilan en versiones de depuración del programa.  
   
     Ahora que ha detectado una pérdida de memoria, puede usar otra función miembro [CMemoryState::DumpStatistics](https://msdn.microsoft.com/library/90d5f281-b92f-4725-a996-23ab94cf4b5d) , que le ayudará a buscarla.  
   
@@ -364,7 +364,7 @@ Phone #: 581-0215
 #### <a name="BKMK_Customizing_object_dumps"></a> Personalizar volcados de memoria de objetos  
  Si se deriva una clase de [CObject](https://msdn.microsoft.com/library/95e9acd3-d9eb-4ac0-b52b-ca4a501a7a3a), puede reemplazarse la función miembro `Dump` para ofrecer información adicional cuando se utiliza [DumpAllObjectsSince](https://msdn.microsoft.com/library/a7f89034-bca4-4786-88d5-1571a5425ab2) para realizar un volcado de memoria de objetos en la [Ventana de salida](../ide/reference/output-window.md).  
   
- La función `Dump` escribe una representación textual de las variables miembro del objeto en un contexto de volcado de memoria ([CDumpContext](https://msdn.microsoft.com/library/98c52b2d-14b5-48ed-b423-479a4d1c60fa)). El contexto de volcado de memoria es similar a una secuencia de E/S. Se puede utilizar el operador de anexión (**<<** para enviar datos a un `CDumpContext`.  
+ La función `Dump` escribe una representación textual de las variables miembro del objeto en un contexto de volcado de memoria ([CDumpContext](https://msdn.microsoft.com/library/98c52b2d-14b5-48ed-b423-479a4d1c60fa)). El contexto de volcado de memoria es similar a una secuencia de E/S. Se puede utilizar el operador de anexión ( **<<** para enviar datos a un `CDumpContext`.  
   
  Cuando se reemplaza la función `Dump` , primero se debería llamar a la versión de la clase base de `Dump` para realizar un volcado de memoria del contenido del objeto de la clase base. A continuación, se escribe una descripción textual y un valor descriptivo para cada variable miembro de la clase derivada.  
   
@@ -438,7 +438,7 @@ pMyPerson->Dump( afxDump );
   
    1. En el cuadro de diálogo **\<Proyecto> Páginas de propiedades**, haga clic en el botón **Administrador de configuración**.  
   
-   2. En el [cuadro de diálogo Administrador de configuración](https://msdn.microsoft.com/fa182dca-282e-4ae5-bf37-e155344ca18b), localice el proyecto en la cuadrícula. En la columna **Configuración**, seleccione **\<Nueva...>**.  
+   2. En el [cuadro de diálogo Administrador de configuración](https://msdn.microsoft.com/fa182dca-282e-4ae5-bf37-e155344ca18b), localice el proyecto en la cuadrícula. En la columna **Configuración**, seleccione **\<Nueva...>** .  
   
    3. En el [cuadro de diálogo Nueva configuración del proyecto](https://msdn.microsoft.com/cca616dc-05a6-4fe3-bdc1-40c72a66f2be), escriba un nombre para la nueva configuración, como "Depuración parcial", en el cuadro **Nombre de configuración del proyecto** .  
   
@@ -478,7 +478,7 @@ pMyPerson->Dump( afxDump );
   
    6. Haga clic en los valores de **Formato de la información de depuración** y seleccione la opción deseada (normalmente **/ZI**) para la información de depuración.  
   
-   7. Si está utilizando una aplicación generada con el Asistente para aplicaciones, o dispone de encabezados precompilados, deberá desactivar los encabezados precompilados o volver a compilarlos antes de compilar los otros módulos. Si no lo hace así, recibirá la advertencia C4650 y el mensaje de error C2855. Para desactivar los encabezados precompilados, cambie el valor de la opción **Crear o usar encabezados precompilados** en el cuadro de diálogo **\<Proyecto> Propiedades** (carpeta **Propiedades de configuración**, subcarpeta **C/C++**, categoría **Encabezados precompilados**).  
+   7. Si está utilizando una aplicación generada con el Asistente para aplicaciones, o dispone de encabezados precompilados, deberá desactivar los encabezados precompilados o volver a compilarlos antes de compilar los otros módulos. Si no lo hace así, recibirá la advertencia C4650 y el mensaje de error C2855. Para desactivar los encabezados precompilados, cambie el valor de la opción **Crear o usar encabezados precompilados** en el cuadro de diálogo **\<Proyecto> Propiedades** (carpeta **Propiedades de configuración**, subcarpeta **C/C++** , categoría **Encabezados precompilados**).  
   
 7. En el menú **Compilar** , seleccione **Compilar** para recompilar los archivos del proyecto que no estén actualizados.  
   

@@ -358,7 +358,7 @@ Sin embargo, para objetos asignados en el montón, se debe eliminar explícitame
 #### <a name="BKMK_Customizing_object_dumps"></a> Personalizar volcados de memoria de objetos
 Si se deriva una clase de [CObject](/cpp/mfc/reference/cobject-class), puede reemplazarse la función miembro `Dump` para ofrecer información adicional cuando se utiliza [DumpAllObjectsSince](/cpp/mfc/reference/cmemorystate-structure#dumpallobjectssince) para realizar un volcado de memoria de objetos en la [Ventana de salida](../ide/reference/output-window.md).
 
-La función `Dump` escribe una representación textual de las variables miembro del objeto en un contexto de volcado de memoria ([CDumpContext](/cpp/mfc/reference/cdumpcontext-class)). El contexto de volcado de memoria es similar a una secuencia de E/S. Se puede utilizar el operador de anexión (**<<** para enviar datos a un `CDumpContext`.
+La función `Dump` escribe una representación textual de las variables miembro del objeto en un contexto de volcado de memoria ([CDumpContext](/cpp/mfc/reference/cdumpcontext-class)). El contexto de volcado de memoria es similar a una secuencia de E/S. Se puede utilizar el operador de anexión ( **<<** para enviar datos a un `CDumpContext`.
 
 Cuando se reemplaza la función `Dump` , primero se debería llamar a la versión de la clase base de `Dump` para realizar un volcado de memoria del contenido del objeto de la clase base. A continuación, se escribe una descripción textual y un valor descriptivo para cada variable miembro de la clase derivada.
 
@@ -432,7 +432,7 @@ Compilar módulos seleccionados con las bibliotecas de depuración de MFC permit
 
    1. En el cuadro de diálogo **\<Proyecto> Páginas de propiedades**, haga clic en el botón **Administrador de configuración**.
 
-   2. En el [cuadro de diálogo Administrador de configuración](/previous-versions/visualstudio/visual-studio-2010/t1hy4dhz(v=vs.100)), localice el proyecto en la cuadrícula. En la columna **Configuración**, seleccione **\<Nueva...>**.
+   2. En el [cuadro de diálogo Administrador de configuración](/previous-versions/visualstudio/visual-studio-2010/t1hy4dhz(v=vs.100)), localice el proyecto en la cuadrícula. En la columna **Configuración**, seleccione **\<Nueva...>** .
 
    3. En el [cuadro de diálogo Nueva configuración del proyecto](/previous-versions/visualstudio/visual-studio-2010/0eh8w4cf(v=vs.100)), escriba un nombre para la nueva configuración, como "Depuración parcial", en el cuadro **Nombre de configuración del proyecto** .
 
@@ -472,7 +472,7 @@ Compilar módulos seleccionados con las bibliotecas de depuración de MFC permit
 
    6. Haga clic en los valores de **Formato de la información de depuración** y seleccione la opción deseada (normalmente **/ZI**) para la información de depuración.
 
-   7. Si está utilizando una aplicación generada con el Asistente para aplicaciones, o dispone de encabezados precompilados, deberá desactivar los encabezados precompilados o volver a compilarlos antes de compilar los otros módulos. Si no lo hace así, recibirá la advertencia C4650 y el mensaje de error C2855. Para desactivar los encabezados precompilados, cambie el valor de la opción **Crear o usar encabezados precompilados** en el cuadro de diálogo **\<Proyecto> Propiedades** (carpeta **Propiedades de configuración**, subcarpeta **C/C++**, categoría **Encabezados precompilados**).
+   7. Si está utilizando una aplicación generada con el Asistente para aplicaciones, o dispone de encabezados precompilados, deberá desactivar los encabezados precompilados o volver a compilarlos antes de compilar los otros módulos. Si no lo hace así, recibirá la advertencia C4650 y el mensaje de error C2855. Para desactivar los encabezados precompilados, cambie el valor de la opción **Crear o usar encabezados precompilados** en el cuadro de diálogo **\<Proyecto> Propiedades** (carpeta **Propiedades de configuración**, subcarpeta **C/C++** , categoría **Encabezados precompilados**).
 
 7. En el menú **Compilar** , seleccione **Compilar** para recompilar los archivos del proyecto que no estén actualizados.
 

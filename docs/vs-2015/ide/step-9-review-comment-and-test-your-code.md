@@ -60,7 +60,7 @@ A continuación, se agrega un comentario al código. Un comentario es una nota q
     > [!TIP]
     > El IDE se ha creado para facilitar la tarea de escribir código. Los *fragmentos de código* constituyen una manera de conseguirlo. Un fragmento de código es un acceso directo que se expande para crear un bloque pequeño de código.  
     >   
-    >  Puede ver todos los fragmentos de código disponibles. En la barra de menús, elija **Herramientas**, **Administrador de fragmentos de código**. En Visual C#, el fragmento de código `if` está en **Visual C#**. En Visual Basic, los fragmentos de código `if` están en **Condicionales y bucles**, **Code Patterns** (Patrones de código). Este administrador se puede utilizar para examinar los fragmentos de código existentes o agregar los suyos propios.  
+    >  Puede ver todos los fragmentos de código disponibles. En la barra de menús, elija **Herramientas**, **Administrador de fragmentos de código**. En Visual C#, el fragmento de código `if` está en **Visual C#** . En Visual Basic, los fragmentos de código `if` están en **Condicionales y bucles**, **Code Patterns** (Patrones de código). Este administrador se puede utilizar para examinar los fragmentos de código existentes o agregar los suyos propios.  
     >   
     >  Para activar un fragmento de código mientras está especificando el código, escríbalo y elija la tecla TAB. Muchos fragmentos de código aparecen en la ventana **IntelliSense**, motivo por el cual la tecla TAB se elige dos veces: la primera para seleccionar el fragmento de código en la ventana **IntelliSense** y la segunda para indicarle al IDE que lo use. (IntelliSense admite el fragmento de código `if`, pero no el fragmento de código `ifelse`.)  
   

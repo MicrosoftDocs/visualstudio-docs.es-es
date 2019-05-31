@@ -15,7 +15,7 @@ ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 909242aaf8dd4caaee7af75e40554aaff648df68
 ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/22/2019
 ms.locfileid: "60045660"
@@ -97,7 +97,7 @@ En [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)], [!INCLUDE[vsPreShort](.
   
 - Para contraer las reglas en todos los grupos, haga clic en **Contraer todo**.  
   
-- Para cambiar el campo que las reglas se agrupan por, seleccione el campo desde el **Group By** lista. Para mostrar las reglas desagrupadas, seleccione  **\<None >**.  
+- Para cambiar el campo que las reglas se agrupan por, seleccione el campo desde el **Group By** lista. Para mostrar las reglas desagrupadas, seleccione  **\<None >** .  
   
 - Para agregar o quitar campos en las columnas de la regla, haga clic en **opciones de columna**.  
   

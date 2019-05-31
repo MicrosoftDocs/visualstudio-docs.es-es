@@ -60,7 +60,7 @@ En este artículo incluye pasos sobre cómo configurar una configuración básic
 1. Cree una nueva aplicación de MVC ASP.NET
 
     ::: moniker range=">=vs-2019"
-    En Visual Studio 2019, escriba **Ctrl + Q** para abrir el cuadro de búsqueda, escriba **asp.net**, elija **plantillas**, a continuación, elija **crear nuevo ASP.NET Web Application (.NET Marco de trabajo)**. En el cuadro de diálogo que aparece, denomine el proyecto **MyASPApp**y, a continuación, elija **crear**. Seleccione **MVC** y elija **crear**.
+    En Visual Studio 2019, escriba **Ctrl + Q** para abrir el cuadro de búsqueda, escriba **asp.net**, elija **plantillas**, a continuación, elija **crear nuevo ASP.NET Web Application (.NET Marco de trabajo)** . En el cuadro de diálogo que aparece, denomine el proyecto **MyASPApp**y, a continuación, elija **crear**. Seleccione **MVC** y elija **crear**.
     ::: moniker-end
     ::: moniker range="vs-2017"
     Para hacer esto en Visual Studio 2017, elija **archivo > Nuevo > proyecto**, a continuación, seleccione **Visual C# > Web > aplicación Web ASP.NET**. En la sección de plantillas **ASP.NET 4.5.2** , seleccione **MVC**. Asegúrese de que **habilitar la compatibilidad con Docker** no está seleccionada y que **autenticación** está establecido en **sin autenticación**. Denomine el proyecto **MyASPApp**.)
@@ -87,7 +87,7 @@ Al descargar el software, obtendrá las solicitudes para conceder permiso para c
 
 Si desea información más detallada para instalar ASP.NET en IIS, consulte [IIS 8.0 utilizando ASP.NET 3.5 y ASP.NET 4.5](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45).
 
-1. En el panel izquierdo del administrador del servidor, seleccione **IIS**. Haga clic con el botón derecho en el servidor y seleccione **Administrador de Internet Information Services (IIS)**.
+1. En el panel izquierdo del administrador del servidor, seleccione **IIS**. Haga clic con el botón derecho en el servidor y seleccione **Administrador de Internet Information Services (IIS)** .
 
 1. Utilice el instalador de plataforma Web (WebPI) para instalar ASP.NET 4.5 (en el nodo del servidor en Windows Server 2012 R2, elija **obtener nuevos los componentes de plataforma Web** y, a continuación, busque ASP.NET)
 
@@ -144,7 +144,7 @@ Puede usar esta opción para implementar la aplicación si van a copiar la aplic
 
 1. Abra el Explorador de Windows y cree una nueva carpeta, **C:\Publish**, donde posteriormente implementará el proyecto ASP.NET.
 
-2. Si aún no está abierto, abra el **Internet Information Services (IIS) Manager**. (En el panel izquierdo del administrador del servidor, seleccione **IIS**. Haga clic con el botón derecho en el servidor y seleccione **Administrador de Internet Information Services (IIS)**.)
+2. Si aún no está abierto, abra el **Internet Information Services (IIS) Manager**. (En el panel izquierdo del administrador del servidor, seleccione **IIS**. Haga clic con el botón derecho en el servidor y seleccione **Administrador de Internet Information Services (IIS)** .)
 
 3. En **conexiones** en el panel izquierdo, vaya a **sitios**.
 
@@ -234,7 +234,7 @@ Para obtener información acerca de cómo ejecutar el depurador remoto como un s
 
 7. Haga clic en **Adjuntar**
 
-8. Abra el sitio web del equipo remoto. En un explorador, vaya a **http://\<nombre del equipo remoto>**.
+8. Abra el sitio web del equipo remoto. En un explorador, vaya a **http://\<nombre del equipo remoto>** .
 
     Debería ver la página web de ASP.NET.
 9. En la aplicación ASP.NET en ejecución, haga clic en el vínculo a la **sobre** página.

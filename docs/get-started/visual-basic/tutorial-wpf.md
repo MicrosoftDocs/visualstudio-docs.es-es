@@ -1,8 +1,8 @@
 ---
-title: 'Tutorial: Aplicación Hola mundo con Windows Presentation Foundation (WPF) en Visual Basic'
+title: Aplicación Hola mundo con WPF en Visual Basic
 description: Cree una aplicación sencilla de .NET de escritorio de Windows en Visual Basic con Visual Studio mediante el marco de interfaz de usuario de Windows Presentation Foundation (WPF).
 ms.custom: seodec18, get-started
-ms.date: 03/14/2019
+ms.date: 04/23/2019
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: conceptual
@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d1fcb7b139e374f49df84fe17b8e12ea6aa6b625
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f56482dbbe76722e8b8d55fad01d283de2dc113e
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965938"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263615"
 ---
 # <a name="tutorial-create-a-simple-application-with-visual-basic"></a>Tutorial: Creación de una aplicación sencilla con Visual Basic
 
@@ -67,7 +67,7 @@ Cuando cree una aplicación en Visual Studio, primero creará un proyecto y una 
 
      ![En la barra de menús, elija Archivo, Nuevo, Proyecto](../media/exploreide-filenewproject.png)
 
-2. En el cuadro de diálogo **Nuevo proyecto**, seleccione la categoría **Instalados** > **Visual Basic** > **Escritorio de Windows** y, luego, seleccione la plantilla **Aplicación de WPF (.NET Framework)**. Asígnele al proyecto el nombre **HelloWPFApp** y haga clic en **Aceptar**.
+2. En el cuadro de diálogo **Nuevo proyecto**, seleccione la categoría **Instalados** > **Visual Basic** > **Escritorio de Windows** y, luego, seleccione la plantilla **Aplicación de WPF (.NET Framework)** . Asígnele al proyecto el nombre **HelloWPFApp** y haga clic en **Aceptar**.
 
      ![Plantilla de aplicación de WPF en el cuadro de diálogo Nuevo proyecto de Visual Studio](media/exploreide-newproject-vb.png)
 
@@ -131,7 +131,7 @@ La ventana debería ser similar a la siguiente ilustración:
 El marcado XAML debe tener un aspecto similar al siguiente ejemplo:
 
 ```xaml
-<TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" RenderTransformOrigin="4.08,2.312" Margin="237,57,221,238"><Run Text="TextBlock"/><InlineUIContainer><TextBlock TextWrapping="Wrap" Text="TextBlock"/>
+<TextBlock HorizontalAlignment="Left" Margin="381,100,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
 ```
 
 ### <a name="customize-the-text-in-the-text-block"></a>Personalizar el texto en el bloque de texto
@@ -298,9 +298,20 @@ Ahora que ha comprobado que todo funciona, puede preparar una versión de lanzam
 
 3. Compile la solución seleccionando **Compilar** > **Compilar solución**.
 
-Enhorabuena por completar este tutorial. Puede encontrar el *.exe* creado en el directorio de soluciones y proyectos (*...\HelloWPFApp\HelloWPFApp\bin\Release*).
+Enhorabuena por completar este tutorial. Puede encontrar el *.exe* creado en el directorio de soluciones y proyectos ( *...\HelloWPFApp\HelloWPFApp\bin\Release*).
 
 ## <a name="see-also"></a>Vea también
 
-- [Novedades de Visual Studio 2017](../../ide/whats-new-visual-studio.md)
+::: moniker range="vs-2017"
+
+- [Novedades de Visual Studio 2017](../../ide/whats-new-visual-studio-2017.md)
 - [Sugerencias de productividad](../../ide/productivity-tips-for-visual-studio.md)
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+- [Novedades de Visual Studio 2019](../../ide/whats-new-visual-studio-2019.md)
+- [Sugerencias de productividad](../../ide/productivity-tips-for-visual-studio.md)
+
+::: moniker-end

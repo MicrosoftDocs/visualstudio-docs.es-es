@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Aplicación Hola mundo con Windows Presentation Foundation (WPF) en C#'
+title: Aplicación Hola mundo con WPF en C#
 description: Cree una aplicación sencilla de .NET de escritorio de Windows en C# con Visual Studio mediante el marco de interfaz de usuario de Windows Presentation Foundation (WPF).
 ms.custom: seodec18, get-started
 ms.date: 03/28/2019
@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c098aba51b4b2340ab4094971e3509af42c6c8ed
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bcff4d75361d3758321360cc051bf5040dbb61ac
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62426536"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261691"
 ---
 # <a name="tutorial-create-a-simple-application-with-c"></a>Tutorial: Crear una aplicación sencilla con C\#
 
@@ -62,7 +62,7 @@ Cuando cree una aplicación en Visual Studio, primero creará un proyecto y una 
 
      ![En la barra de menús, elija Archivo, Nuevo, Proyecto](../media/exploreide-filenewproject.png)
 
-1. En el cuadro de diálogo **Nuevo proyecto**, seleccione la categoría **Instalados** > **Visual C#** > **Escritorio de Windows** y, luego, seleccione la plantilla **Aplicación de WPF (.NET Framework)**. Asígnele al proyecto el nombre **HelloWPFApp** y haga clic en **Aceptar**.
+1. En el cuadro de diálogo **Nuevo proyecto**, seleccione la categoría **Instalados** > **Visual C#**  > **Escritorio de Windows** y, luego, seleccione la plantilla **Aplicación de WPF (.NET Framework)** . Asígnele al proyecto el nombre **HelloWPFApp** y haga clic en **Aceptar**.
 
      ![Plantilla de aplicación de WPF en el cuadro de diálogo Nuevo proyecto de Visual Studio](media/exploreide-newprojectcsharp.png)
 
@@ -308,7 +308,7 @@ Ahora que ha comprobado que todo funciona, puede preparar una versión de lanzam
 
 3. Compile la solución seleccionando **Compilar** > **Compilar solución**.
 
-Enhorabuena por completar este tutorial. Puede encontrar el *.exe* creado en el directorio de soluciones y proyectos (*...\HelloWPFApp\HelloWPFApp\bin\Release*).
+Enhorabuena por completar este tutorial. Puede encontrar el *.exe* creado en el directorio de soluciones y proyectos ( *...\HelloWPFApp\HelloWPFApp\bin\Release*).
 
 ## <a name="see-also"></a>Vea también
 

@@ -131,7 +131,7 @@ Puede ampliar su lenguaje específico de dominio (DSL) mediante el uso de Manage
   
    - Normalmente, este ensamblado tiene un nombre que termina con ". DSL.dll".  
   
-   - Si tiene acceso al proyecto de DSL, puede encontrar el archivo de ensamblado en el directorio **Dsl\bin\\\\***  
+   - Si tiene acceso al proyecto de DSL, puede encontrar el archivo de ensamblado en el directorio **Dsl\bin\\\\** *  
   
    - Si tiene acceso al archivo VSIX de DSL, puede encontrar el ensamblado cambiando la extensión de nombre de archivo del archivo VSIX para "zip". Descomprima el archivo zip.  
   
@@ -147,7 +147,7 @@ Puede ampliar su lenguaje específico de dominio (DSL) mediante el uso de Manage
   
    - System.Windows.Forms.dll  
   
-4. Cree un proyecto VSIX en la misma solución. Para ello, en el **nuevo proyecto** cuadro de diálogo, expanda **Visual Basic** o **Visual C#**, haga clic en **extensibilidad**y, a continuación, seleccione  **Proyecto de VSIX**.  
+4. Cree un proyecto VSIX en la misma solución. Para ello, en el **nuevo proyecto** cuadro de diálogo, expanda **Visual Basic** o **Visual C#** , haga clic en **extensibilidad**y, a continuación, seleccione  **Proyecto de VSIX**.  
   
 5. En el Explorador de soluciones, haga clic en el proyecto VSIX y, a continuación, haga clic en **establecer como proyecto de inicio**.  
   

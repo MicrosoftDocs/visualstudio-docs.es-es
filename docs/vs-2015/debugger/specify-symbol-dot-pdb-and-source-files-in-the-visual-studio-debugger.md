@@ -139,7 +139,7 @@ Un archivo de base de datos de programa (.pdb), también denominado archivo de s
 
 - Para cambiar las rutas de acceso de búsqueda, elija una ruta de acceso no seleccionada o elija **Nuevo** y escriba una nueva ruta de acceso. Elija **Cargar** para buscar de nuevo las rutas de acceso y cargar el archivo de símbolos si se encuentra.
 
-- Elija **Examinar y buscar**_nombre-de-ejecutable_**…** para invalidar cualquier opción de símbolo y reintentar las rutas de búsqueda. Si se encuentra el archivo de símbolos se carga, o se muestra un Explorador de archivos para que seleccione manualmente el archivo de símbolos.
+- Elija **Examinar y buscar**_nombre-de-ejecutable_ **…** para invalidar cualquier opción de símbolo y reintentar las rutas de búsqueda. Si se encuentra el archivo de símbolos se carga, o se muestra un Explorador de archivos para que seleccione manualmente el archivo de símbolos.
 
 - Elija **Cambiar configuración de símbolos ...** para mostrar la página **Depuración** / **Símbolos** del cuadro de diálogo Opciones de VS.
 

@@ -11,29 +11,30 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6622285d985d75c547428163b0b6cdaa8f699fe0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f9eee42d9e3a48f77153e5bd94f72a975ab27843
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62897590"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263390"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>Cómo crear y aplicar un recurso
+
 Los estilos y las plantillas de elementos del diseñador XAML se almacenan en entidades reutilizables denominadas recursos. Los estilos permiten establecer las propiedades de los elementos y volver a usar esos valores para lograr una apariencia coherente entre distintos elementos. Una propiedad [ControlTemplate](/uwp/api/Windows.UI.Xaml.Controls.ControlTemplate) define la apariencia de un control y también puede aplicarse como un recurso. Para obtener más información, vea [Inicio rápido: Aplicar estilos a controles](http://go.microsoft.com/fwlink/?LinkID=248239) e [Inicio rápido: Plantillas de control](http://go.microsoft.com/fwlink/?LinkID=247982).
 
- Siempre que crea un recurso a partir de una propiedad existente, [Style](/uwp/api/Windows.UI.Xaml.Style) o `ControlTemplate`, el cuadro de diálogo **Crear recurso** permite definir el recurso en el nivel de aplicación, nivel de documento o nivel de elemento. Estos niveles determinan dónde se puede usar el recurso. Por ejemplo, si define el recurso en el nivel de elemento, solo se podrá aplicar el recurso al elemento para el que lo creó. También puede almacenar el recurso en un diccionario de recursos: un archivo independiente que puede volver a usar en otro proyecto.
+Siempre que crea un recurso a partir de una propiedad existente, [Style](/uwp/api/Windows.UI.Xaml.Style) o `ControlTemplate`, el cuadro de diálogo **Crear recurso** permite definir el recurso en el nivel de aplicación, nivel de documento o nivel de elemento. Estos niveles determinan dónde se puede usar el recurso. Por ejemplo, si define el recurso en el nivel de elemento, solo se podrá aplicar el recurso al elemento para el que lo creó. También puede almacenar el recurso en un [diccionario de recursos](/windows/uwp/design/controls-and-patterns/resourcedictionary-and-xaml-resource-references): un archivo independiente que puede volver a usar en otro proyecto.
 
-### <a name="to-create-a-new-resource"></a>Para crear un recurso nuevo
+## <a name="create-a-new-resource"></a>Creación de un recurso nuevo
 
 1. Con un archivo XAML abierto en el diseñador XAML, cree un elemento o elija uno en la ventana Esquema del documento.
 
-2. En la ventana Propiedades, seleccione el marcador de propiedad (aparece como un símbolo de cuadro a la derecha de un valor de propiedad) y, después, pulse **Convertir en nuevo recurso**. Un símbolo de cuadro blanco indica un valor predeterminado y un símbolo de cuadro negro indica normalmente que se ha aplicado un recurso local.
+2. En la ventana **Propiedades**, seleccione el marcador de propiedad (aparece como un símbolo de cuadro a la derecha de un valor de propiedad) y, después, pulse **Convertir en nuevo recurso**. Un símbolo de cuadro blanco indica un valor predeterminado y un símbolo de cuadro negro indica normalmente que se ha aplicado un recurso local.
 
      Aparece el cuadro de diálogo correspondiente para crear un recurso. Este cuadro de diálogo aparece cuando se crea un recurso de pincel:
 
      ![Cuadro de diálogo Crear recurso](../designers/media/xaml_create_resource.png)
 
-3. En el cuadro **Nombre (clave)**, escriba un nombre de clave. Este es el nombre que puede usar si desea que otros elementos hagan referencia al recurso.
+3. En el cuadro **Nombre (clave)** , escriba un nombre de clave. Este es el nombre que puede usar si desea que otros elementos hagan referencia al recurso.
 
 4. En **Definir en**, seleccione la opción en la que quiere definir el recurso:
 
@@ -43,17 +44,17 @@ Los estilos y las plantillas de elementos del diseñador XAML se almacenan en en
 
     - Para que el recurso esté disponible únicamente en el elemento desde el que creó el recurso o en sus elementos secundarios, seleccione **Este documento** y, en la lista desplegable, seleccione **elemento**: **nombre**.
 
-    - Para definir el recurso en un archivo de diccionario de recursos que pueda volver a usarse en otros proyectos, haga clic en **Diccionario de recursos** y luego, en la lista desplegable, seleccione un archivo de diccionario de recursos ya existente, por ejemplo, **StandardStyles.xaml**.
+    - Para definir el recurso en un archivo de [diccionario de recursos](/windows/uwp/design/controls-and-patterns/resourcedictionary-and-xaml-resource-references) que se pueda reutilizar en otros proyectos, haga clic en **Diccionario de recursos**. A continuación, seleccione un archivo de diccionario de recursos existente, como **StandardStyles.xaml**, en la lista desplegable.
 
 5. Haga clic en el botón **Aceptar** para crear el recurso y aplicarlo al elemento a partir del cual se ha creado.
 
-### <a name="to-apply-a-resource-to-an-element-or-property"></a>Para aplicar un recurso a un elemento o propiedad
+## <a name="apply-a-resource-to-an-element-or-property"></a>Aplicación de un recurso a un elemento o propiedad
 
 1. En la ventana Esquema del documento, elija el elemento al que quiere aplicar un recurso.
 
 2. Realice una de las siguientes acciones:
 
-   - Aplique un recurso a una propiedad. En la ventana Propiedades, seleccione el marcador de propiedad al lado del valor de la propiedad, seleccione **Recurso local** o **Recurso del sistema**, y luego seleccione un recurso de los disponibles en la lista que aparece.
+   - Aplique un recurso a una propiedad. En la ventana **Propiedades**, seleccione el marcador de propiedad al lado del valor de la propiedad, seleccione **Recurso local** o **Recurso del sistema**, y luego seleccione un recurso de los disponibles en la lista que aparece.
 
       Si no ve un recurso que espera ver, es posible que el tipo de ese recurso no coincida con el tipo de la propiedad.
 
@@ -64,11 +65,11 @@ Los estilos y las plantillas de elementos del diseñador XAML se almacenan en en
 
      Puede aplicar recursos siempre que sean compatibles. Por ejemplo, puede aplicar un recurso de pincel a la propiedad **Foreground** de un control <xref:Windows.UI.Xaml.Controls.TextBox>.
 
-### <a name="to-edit-a-resource"></a>Para editar un recurso
+## <a name="edit-a-resource"></a>Edición de un recurso
 
 1. Elija un elemento en la mesa de trabajo o en la ventana Esquema del documento.
 
-2. En la ventana Propiedades, seleccione el marcador de propiedad predeterminado o local y, después, seleccione **Editar recurso** para abrir el cuadro de diálogo **Editar recurso**.
+2. En la ventana **Propiedades**, seleccione el marcador de propiedad predeterminado o local y, después, seleccione **Editar recurso** para abrir el cuadro de diálogo **Editar recurso**.
 
 3. Modifique las opciones del recurso.
 

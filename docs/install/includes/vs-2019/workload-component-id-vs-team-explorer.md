@@ -6,16 +6,16 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 04/02/2019
+ms.date: 05/21/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: 3543953495c35748d41f1eb5c8d52e66eb470285
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: d079fd5801ef17241acd64b97970edfe34859c34
+ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65848890"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "66037028"
 ---
 ## <a name="visual-studio-core-editor-included-with-visual-studio-team-explorer-2019"></a>Editor principal de Visual Studio (incluido con Visual Studio Team Explorer 2019)
 
@@ -27,7 +27,7 @@ ms.locfileid: "65848890"
 
 Id. de componente | nombre | Versión | Tipo de dependencia
 --- | --- | --- | ---
-Microsoft.VisualStudio.Component.CoreEditor | Editor de núcleo de Visual Studio | 16.0.28315.86 | Obligatorio
+Microsoft.VisualStudio.Component.CoreEditor | Editor de núcleo de Visual Studio | 16.1.28811.260 | Obligatorio
 Microsoft.VisualStudio.Component.StartPageExperiment.Cpp | Página principal de Visual Studio para usuarios de C++ | 16.0.28315.86 | Optional
 
 ## <a name="unaffiliated-components"></a>Componentes no afiliados

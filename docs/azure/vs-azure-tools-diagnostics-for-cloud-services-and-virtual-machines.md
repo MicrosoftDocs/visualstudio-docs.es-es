@@ -1,21 +1,19 @@
 ---
-title: Configuración de diagnósticos para Azure Cloud Services y máquinas virtuales | Microsoft Docs
+title: Diagnósticos para Azure Cloud Services y máquinas virtuales
 description: Aprenda a configurar el diagnóstico para depurar los servicios en la nube y las máquinas virtuales (VM) de Azure en Visual Studio.
-author: mikejo5000
+author: ghogen
 manager: jillfra
 ms.assetid: e70cd7b4-6298-43aa-adea-6fd618414c26
 ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 06/28/2018
 ms.author: mikejo
-ms.prod: visual-studio-dev14
-ms.technology: vs-azure
-ms.openlocfilehash: 45e0eca12ecde6c6ede2e290f109ef04ce2035ff
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0b212ee44809f925bb4d2d78efc972a4986602a5
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62556419"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177327"
 ---
 # <a name="set-up-diagnostics-for-azure-cloud-services-and-virtual-machines"></a>Configuración de diagnósticos para Azure Cloud Services y máquinas virtuales
 Cuando tenga que solucionar problemas de un servicio en la nube o una máquina virtual de Azure, puede usar Visual Studio para configurar más fácilmente Azure Diagnostics. Diagnostics captura los datos del sistema y los datos de registro en las máquinas virtuales y las instancias de máquina virtual que ejecutan el servicio en la nube. Los datos de Diagnostics se transfieren a la cuenta de almacenamiento que elija. Para más información sobre el registro de diagnósticos en Azure, consulte [Habilitación del registro de diagnóstico para Web Apps en Azure App Service](/azure/app-service/web-sites-enable-diagnostic-log).
@@ -91,7 +89,7 @@ En Visual Studio, puede recopilar datos de diagnóstico para roles que se ejecut
     ![Habilitar configuración y diagnóstico de Azure](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC758144.png)
 6. En este ejemplo, seleccione la opción **Plan personalizado** para que pueda personalizar los datos recopilados.
 7. El cuadro **Cuota de disco en MB** especifica la cantidad de espacio que quiere asignar en su cuenta de almacenamiento de datos de diagnóstico. Puede cambiar o aceptar el valor predeterminado.
-8. En cada pestaña de datos de diagnóstico que quiera recopilar, active su casilla **Habilitar la transferencia de \<tipo de registro\>**. Por ejemplo, si quiere recopilar registros de aplicación, en la pestaña **Registros de aplicación**, active la casilla **Habilitar la transferencia de registros de aplicación**. Además, especifique cualquier otra información requerida por cada tipo de datos de diagnóstico. Para consultar la información de configuración de cada pestaña, vea la sección **Configuración de orígenes de datos de diagnósticos** más adelante en este artículo.
+8. En cada pestaña de datos de diagnóstico que quiera recopilar, active su casilla **Habilitar la transferencia de \<tipo de registro\>** . Por ejemplo, si quiere recopilar registros de aplicación, en la pestaña **Registros de aplicación**, active la casilla **Habilitar la transferencia de registros de aplicación**. Además, especifique cualquier otra información requerida por cada tipo de datos de diagnóstico. Para consultar la información de configuración de cada pestaña, vea la sección **Configuración de orígenes de datos de diagnósticos** más adelante en este artículo.
 9. Después de habilitar la recopilación de todos los datos de diagnóstico que quiera, seleccione **Aceptar**.
 10. Abra el proyecto del servicio en la nube de Azure en Visual Studio de la manera habitual. Conforme usa la aplicación, la información de registro que habilitó se guarda en la cuenta de almacenamiento de Azure que especificó.
 
@@ -123,7 +121,7 @@ En Visual Studio, puede recopilar datos de diagnóstico para máquinas virtuales
     La pestaña **General**, que es la predeterminada, ofrece estas opciones de recopilación de datos de diagnóstico: **Solo errores**, **Toda la información** y **Plan personalizado**. La opción predeterminada **Solo errores**toma la cantidad mínima de almacenamiento porque no transfiere advertencias o mensajes de seguimiento. La opción **Toda la información** transfiere la mayoría de la información y, por tanto, es la opción más cara en términos de almacenamiento.
 7. En este ejemplo, seleccione la opción **Plan personalizado** para que pueda personalizar los datos recopilados.
 8. El cuadro **Cuota de disco en MB** especifica la cantidad de espacio que quiere asignar en su cuenta de almacenamiento de datos de diagnóstico. Puede cambiar el valor predeterminado si lo desea.
-9. En cada pestaña de datos de diagnóstico que quiera recopilar, active su casilla **Habilitar la transferencia de \<tipo de registro\>**.
+9. En cada pestaña de datos de diagnóstico que quiera recopilar, active su casilla **Habilitar la transferencia de \<tipo de registro\>** .
 
     Por ejemplo, si quiere recopilar registros de aplicación, seleccione la casilla **Habilitar la transferencia de registros de aplicación** en la pestaña **Registros de aplicación**. Además, especifique cualquier otra información requerida por cada tipo de datos de diagnóstico. Para consultar la información de configuración de cada pestaña, vea la sección **Configuración de orígenes de datos de diagnósticos** más adelante en este artículo.
 10. Después de habilitar la recopilación de todos los datos de diagnóstico que quiera, seleccione **Aceptar**.
@@ -135,14 +133,14 @@ En Visual Studio, puede recopilar datos de diagnóstico para máquinas virtuales
 Cuando habilite la recopilación de datos de diagnóstico, puede elegir exactamente qué orígenes de datos quiere recopilar y qué información se recopila. En las secciones siguientes se describen las pestañas del cuadro de diálogo **Configuración de diagnósticos** y lo que significa cada opción de configuración.
 
 ### <a name="application-logs"></a>Registros de aplicación
-Los registros de aplicación contienen información de diagnóstico generada por una aplicación web. Si quiere capturar registros de aplicación, active la casilla **Habilitar la transferencia de registros de aplicación** . Para aumentar o disminuir el intervalo entre la transferencia de registros de aplicación a la cuenta de almacenamiento, cambie el valor **Período de transferencia (min)**. También puede cambiar la cantidad de información que se captura en el registro estableciendo el valor **Nivel de registro**. Por ejemplo, seleccione **Detallado** para más información o **Crítico** para capturar solo los errores críticos. Si tiene un proveedor de diagnósticos específico que emite registros de aplicación, puede capturarlos agregando el GUID del proveedor en el cuadro **GUID de proveedor** .
+Los registros de aplicación contienen información de diagnóstico generada por una aplicación web. Si quiere capturar registros de aplicación, active la casilla **Habilitar la transferencia de registros de aplicación** . Para aumentar o disminuir el intervalo entre la transferencia de registros de aplicación a la cuenta de almacenamiento, cambie el valor **Período de transferencia (min)** . También puede cambiar la cantidad de información que se captura en el registro estableciendo el valor **Nivel de registro**. Por ejemplo, seleccione **Detallado** para más información o **Crítico** para capturar solo los errores críticos. Si tiene un proveedor de diagnósticos específico que emite registros de aplicación, puede capturarlos agregando el GUID del proveedor en el cuadro **GUID de proveedor** .
 
   ![Registros de aplicación](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC758145.png)
 
 Para más información sobre los registros de aplicación, vea [Habilitación del registro de diagnóstico para aplicaciones web en Azure App Service](/azure/app-service/web-sites-enable-diagnostic-log).
 
 ### <a name="windows-event-logs"></a>Registros de eventos de Windows
-Para capturar registros de aplicación de Windows, active la casilla **Habilitar la transferencia de registros de eventos de Windows** . Para aumentar o disminuir el intervalo entre la transferencia de registros de eventos a la cuenta de almacenamiento, cambie el valor **Período de transferencia (min)**. Active las casillas para los tipos de eventos de los que quiera realizar un seguimiento.
+Para capturar registros de aplicación de Windows, active la casilla **Habilitar la transferencia de registros de eventos de Windows** . Para aumentar o disminuir el intervalo entre la transferencia de registros de eventos a la cuenta de almacenamiento, cambie el valor **Período de transferencia (min)** . Active las casillas para los tipos de eventos de los que quiera realizar un seguimiento.
 
 ![Registros de eventos](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC796664.png)
 
@@ -158,21 +156,21 @@ Si usa Azure SDK 2.5 y quiere especificar un origen de datos personalizado, pued
 ```
 
 ### <a name="performance-counters"></a>Contadores de rendimiento
-La información del contador de rendimiento puede ayudarle a buscar cuellos de botella del sistema y a optimizar el rendimiento del sistema y de la aplicación. Para más información, vea [Crear y usar contadores de rendimiento en una aplicación de Azure](https://msdn.microsoft.com/library/azure/hh411542.aspx). Para capturar los contadores de rendimiento, active la casilla **Habilitar la transferencia de contadores de rendimiento** . Para aumentar o disminuir el intervalo entre la transferencia de registros de eventos a la cuenta de almacenamiento, cambie el valor **Período de transferencia (min)**. Active las casillas para los contadores de rendimiento de los que quiera realizar un seguimiento.
+La información del contador de rendimiento puede ayudarle a buscar cuellos de botella del sistema y a optimizar el rendimiento del sistema y de la aplicación. Para más información, vea [Crear y usar contadores de rendimiento en una aplicación de Azure](https://msdn.microsoft.com/library/azure/hh411542.aspx). Para capturar los contadores de rendimiento, active la casilla **Habilitar la transferencia de contadores de rendimiento** . Para aumentar o disminuir el intervalo entre la transferencia de registros de eventos a la cuenta de almacenamiento, cambie el valor **Período de transferencia (min)** . Active las casillas para los contadores de rendimiento de los que quiera realizar un seguimiento.
 
 ![Contadores de rendimiento](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC758147.png)
 
 Para realizar el seguimiento de un contador de rendimiento que no aparece en la lista, especifíquelo con la sintaxis sugerida. A continuación, seleccione **Agregar**. El sistema operativo de la máquina virtual determina a qué contadores de rendimiento puede realizar el seguimiento. Para más información sobre la sintaxis, vea [Especificación de una ruta de contador](https://msdn.microsoft.com/library/windows/desktop/aa373193.aspx).
 
 ### <a name="infrastructure-logs"></a>Registros de infraestructura
-Los registros de infraestructura tienen información sobre la infraestructura de diagnóstico de Azure, el módulo RemoteAccess y el módulo RemoteForwarder. Para recopilar información sobre los registros de infraestructura, active la casilla **Habilitar transferencia de registros de infraestructura**. Para aumentar o disminuir el intervalo entre la transferencia de registros de infraestructura a la cuenta de almacenamiento, cambie el valor **Período de transferencia (min)**.
+Los registros de infraestructura tienen información sobre la infraestructura de diagnóstico de Azure, el módulo RemoteAccess y el módulo RemoteForwarder. Para recopilar información sobre los registros de infraestructura, active la casilla **Habilitar transferencia de registros de infraestructura**. Para aumentar o disminuir el intervalo entre la transferencia de registros de infraestructura a la cuenta de almacenamiento, cambie el valor **Período de transferencia (min)** .
 
 ![Registros de infraestructura de diagnóstico](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC758148.png)
 
 Para más información, consulte [Recopilar datos de registro mediante Azure Diagnostics](https://msdn.microsoft.com/library/azure/gg433048.aspx).
 
 ### <a name="log-directories"></a>Directorios de registro
-Los directorios de registro tienen datos recopilados para las solicitudes de Internet Information Services (IIS), las solicitudes con error o las carpetas que elija. Para capturar los directorios de registro, active la casilla **Habilitar la transferencia de directorios de registro**. Para aumentar o disminuir el intervalo entre la transferencia de registros a la cuenta de almacenamiento, cambie el valor **Período de transferencia (min)**.
+Los directorios de registro tienen datos recopilados para las solicitudes de Internet Information Services (IIS), las solicitudes con error o las carpetas que elija. Para capturar los directorios de registro, active la casilla **Habilitar la transferencia de directorios de registro**. Para aumentar o disminuir el intervalo entre la transferencia de registros a la cuenta de almacenamiento, cambie el valor **Período de transferencia (min)** .
 
 Puede activar las casillas de los registros que quiera recopilar, como **Registros de IIS** y los registros de **Solicitud con error**. Se proporcionan nombres de contenedor de almacenamiento predeterminados, pero puede cambiar los nombres.
 
@@ -181,7 +179,7 @@ Puede capturar registros desde cualquier carpeta. Especifique la ruta de acceso 
 ![Directorios de registro](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC796665.png)
 
 ### <a name="etw-logs"></a>Registros de ETW
-Si usa [Seguimiento de eventos para Windows](https://msdn.microsoft.com/library/windows/desktop/bb968803\(v=vs.85\).aspx) (ETW) y quiere capturar registros de ETW, active la casilla **Habilitar la transferencia de registros de ETW**. Para aumentar o disminuir el intervalo entre la transferencia de registros a la cuenta de almacenamiento, cambie el valor **Período de transferencia (min)**.
+Si usa [Seguimiento de eventos para Windows](https://msdn.microsoft.com/library/windows/desktop/bb968803\(v=vs.85\).aspx) (ETW) y quiere capturar registros de ETW, active la casilla **Habilitar la transferencia de registros de ETW**. Para aumentar o disminuir el intervalo entre la transferencia de registros a la cuenta de almacenamiento, cambie el valor **Período de transferencia (min)** .
 
 Los eventos se capturan de los orígenes de eventos y manifiestos de eventos que especifique. Para especificar un origen de eventos, en la sección **Orígenes de eventos** escriba un nombre y luego seleccione **Agregar origen de evento**. De forma similar, puede especificar un manifiesto de evento en la sección **Manifiestos de eventos** y luego seleccionar **Agregar manifiesto de evento**.
 
@@ -190,7 +188,7 @@ Los eventos se capturan de los orígenes de eventos y manifiestos de eventos que
 El marco de ETW se admite en ASP.NET a través de las clases del espacio de nombres [System.Diagnostics.aspx](https://msdn.microsoft.com/library/system.diagnostics(v=vs.110)). El espacio de nombres Microsoft.WindowsAzure.Diagnostics, que se hereda de las clases estándar [System.Diagnostics.aspx](https://msdn.microsoft.com/library/system.diagnostics(v=vs.110)), permite el uso de [System.Diagnostics.aspx](https://msdn.microsoft.com/library/system.diagnostics(v=vs.110)) como plataforma de registro en el entorno de Azure. Para más información, vea [Tome el control de registro y seguimiento en Microsoft Azure](https://msdn.microsoft.com/magazine/ff714589.aspx) y [Habilitación de diagnósticos en Azure Cloud Services y máquinas virtuales](/azure/cloud-services/cloud-services-dotnet-diagnostics).
 
 ### <a name="crash-dumps"></a>Volcados de memoria
-Para capturar información sobre cuándo se bloquea una instancia de rol, active la casilla **Habilitar la transferencia de volcados de memoria**. (Puesto que ASP.NET controla la mayoría de las excepciones, normalmente solo es útil para roles de trabajo.) Para aumentar o disminuir el porcentaje del espacio de almacenamiento dedicado a los volcados de memoria, cambie el valor **Cuota de directorio (%)**. Puede cambiar el contenedor de almacenamiento donde se almacenan los volcados de memoria y seleccionar si quiere capturar un volcado **Completo** o **Mini**.
+Para capturar información sobre cuándo se bloquea una instancia de rol, active la casilla **Habilitar la transferencia de volcados de memoria**. (Puesto que ASP.NET controla la mayoría de las excepciones, normalmente solo es útil para roles de trabajo.) Para aumentar o disminuir el porcentaje del espacio de almacenamiento dedicado a los volcados de memoria, cambie el valor **Cuota de directorio (%)** . Puede cambiar el contenedor de almacenamiento donde se almacenan los volcados de memoria y seleccionar si quiere capturar un volcado **Completo** o **Mini**.
 
 En la captura de pantalla siguiente, se muestran los procesos de los que se está realizando un seguimiento actualmente. Active las casillas para los procesos que quiera capturar. Para agregar otro proceso a la lista, escriba el nombre del proceso y luego seleccione **Agregar proceso** .
 

@@ -32,15 +32,15 @@ Al publicar un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] archivos d
   
  Los archivos de un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicación se administran en el **archivos de la aplicación** cuadro de diálogo, accesible desde el **publicar** página de la **Diseñador de proyectos**.  
   
- Inicialmente, hay un solo grupo de archivos denominado **(obligatorio)**. Puede crear grupos de archivos adicionales y asignarles archivos. No puede cambiar el **grupo de descarga** para los archivos que son necesarios para ejecutar la aplicación. Por ejemplo, .exe de la aplicación o los archivos marcan como archivos de datos deben pertenecer a la **(obligatorio)** grupo.  
+ Inicialmente, hay un solo grupo de archivos denominado **(obligatorio)** . Puede crear grupos de archivos adicionales y asignarles archivos. No puede cambiar el **grupo de descarga** para los archivos que son necesarios para ejecutar la aplicación. Por ejemplo, .exe de la aplicación o los archivos marcan como archivos de datos deben pertenecer a la **(obligatorio)** grupo.  
   
- El valor predeterminado de estado de publicación tiene una etiqueta con el valor de un archivo **(Auto)**. Por ejemplo, .exe de la aplicación tiene un estado de publicación de **incluir (automático)** de forma predeterminada.  
+ El valor predeterminado de estado de publicación tiene una etiqueta con el valor de un archivo **(Auto)** . Por ejemplo, .exe de la aplicación tiene un estado de publicación de **incluir (automático)** de forma predeterminada.  
   
  Los archivos con la **acción de compilación** propiedad establecida en **contenido** se designan como archivos de aplicación y se marcará como incluye de forma predeterminada. Pueden incluidos, excluidos o marcados como archivos de datos. Las excepciones son los siguientes:  
   
 - Archivos de datos como archivos de base de datos de SQL (.mdf y .mdb) y archivos XML se marcará como archivos de datos de forma predeterminada.  
   
-- Referencias a ensamblados (archivos .dll) se designan como se indica a continuación al agregar la referencia: Si **Copy Local** es **False**, está marcada de forma predeterminada como un ensamblado de requisito previo (**requisito previo (Auto)**) que debe estar presente en la GAC antes de instalar la aplicación. Si **Copy Local** es **True**, el ensamblado está marcado como un ensamblado de aplicación de forma predeterminada (**incluir (automático)**) y se copiará en la carpeta de la aplicación durante la instalación. Una referencia COM aparecerá en el **archivos de la aplicación** de diálogo cuadro (como un archivo .ocx) solo si su **aislado** propiedad está establecida en **True**. De forma predeterminada, se incluirá.  
+- Referencias a ensamblados (archivos .dll) se designan como se indica a continuación al agregar la referencia: Si **Copy Local** es **False**, está marcada de forma predeterminada como un ensamblado de requisito previo (**requisito previo (Auto)** ) que debe estar presente en la GAC antes de instalar la aplicación. Si **Copy Local** es **True**, el ensamblado está marcado como un ensamblado de aplicación de forma predeterminada (**incluir (automático)** ) y se copiará en la carpeta de la aplicación durante la instalación. Una referencia COM aparecerá en el **archivos de la aplicación** de diálogo cuadro (como un archivo .ocx) solo si su **aislado** propiedad está establecida en **True**. De forma predeterminada, se incluirá.  
   
 ### <a name="to-add-files-to-the-application-files-dialog-box"></a>Para agregar archivos al cuadro de diálogo de archivos de aplicación  
   

@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Agregar y quitar características y elementos de un paquete mediante el Explorador de empaquetado | Documentos de Microsoft
+title: 'Explorador de empaquetado: Agregar y quitar características y elementos de paquete'
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ae44f7d4631316fc1250a79b9a8424c3731f1329
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 0f01ecb67cb82ffe325ea471ad5fb5913c8e4d28
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431237"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401561"
 ---
 # <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer"></a>Procedimiento Agregar y quitar características y elementos de un paquete mediante el Explorador de empaquetado
   Para configurar un paquete para implementar características y elementos de SharePoint, puede usar el Explorador de empaquetado. Puede ajustar los elementos de proyecto de SharePoint y características en el archivo WSP.

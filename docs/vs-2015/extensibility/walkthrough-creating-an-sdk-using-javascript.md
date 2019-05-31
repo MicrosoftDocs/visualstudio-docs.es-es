@@ -10,7 +10,7 @@ ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3e953d9051b9bc7e95dc29e02eb580c4d93fca26
 ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/22/2019
 ms.locfileid: "60066954"
@@ -33,7 +33,7 @@ En este tutorial se enseña cómo usar JavaScript para crear un simple cálculo 
   
 1. En la barra de menús, elija **Archivo**, **Nuevo**, **Proyecto**.  
   
-2. En la lista de categorías de plantillas, en **Visual C#**, seleccione **extensibilidad**y, a continuación, seleccione el **proyecto VSIX** plantilla.  
+2. En la lista de categorías de plantillas, en **Visual C#** , seleccione **extensibilidad**y, a continuación, seleccione el **proyecto VSIX** plantilla.  
   
 3. En el **nombre** texto, especifique `SimpleMathVSIX` y elija el **Aceptar** botón.  
   
@@ -98,7 +98,7 @@ En este tutorial se enseña cómo usar JavaScript para crear un simple cálculo 
   
 14. En el menú contextual para la carpeta \js\, elija **agregar**, **nuevo elemento**.  
   
-15. En **elementos de Visual C#**, seleccione el **Web** categoría y, a continuación, seleccione el **archivo JavaScript** elemento. Nombre del archivo `arithmetic.js`y, a continuación, elija el **agregar** botón.  
+15. En **elementos de Visual C#** , seleccione el **Web** categoría y, a continuación, seleccione el **archivo JavaScript** elemento. Nombre del archivo `arithmetic.js`y, a continuación, elija el **agregar** botón.  
   
 16. Inserte el código siguiente en arithmetic.js:  
   

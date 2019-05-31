@@ -65,7 +65,7 @@ Se puede crear una línea independiente de desarrollo al ramificar la rama maest
 
 Los usuarios pueden crear tantas ramas como quieran de cada repositorio, pero se recomienda que una vez que hayan terminado de usar una, se elimine para mantener el repositorio organizado.
 
-Puede ver las ramas en Visual Studio para Mac si va a **Control de versiones > Administrar ramas y orígenes remotos...**:
+Puede ver las ramas en Visual Studio para Mac si va a **Control de versiones > Administrar ramas y orígenes remotos...** :
 
 ![Vista Ramas](media/version-control-gitBranch2.png)
 

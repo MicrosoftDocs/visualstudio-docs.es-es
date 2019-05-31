@@ -1,5 +1,5 @@
 ---
-title: Asociación del generador de perfiles a una aplicación independiente de .NET Framework y recopilación de estadísticas de aplicación
+title: Asociación del generador de perfiles a la aplicación independiente de .NET Framework; obtención de estadísticas de aplicación
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1a667c259c6cd924c0ff698a47858c08d0f7cf42
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: c23fe867c3825958f1e2f1c3b7fedc3dd15d840e
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431557"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261605"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-and-collect-application-statistics-by-using-the-command-line"></a>Procedimiento Asociar el generador de perfiles a una aplicación independiente de .NET Framework y recopilar estadísticas de la aplicación mediante la línea de comandos
 En este artículo se describe cómo utilizar las herramientas de línea de comandos de las Herramientas de generación de perfiles [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para adjuntar el generador de perfiles a una aplicación independiente de .NET Framework en ejecución (cliente) y recopilar estadísticas de rendimiento mediante el método de muestreo.
@@ -38,7 +38,7 @@ En este artículo se describe cómo utilizar las herramientas de línea de coman
 
 2. Inicialice las variables del entorno de generación de perfiles. Tipo:
 
-    **VSPerfClrEnv /sampleon** [**/samplelineoff**]
+    **VSPerfClrEnv /sampleon** [ **/samplelineoff**]
 
    - La opción **/samplelineoff** deshabilita la recopilación de datos de número de línea de código fuente.
 
@@ -46,15 +46,15 @@ En este artículo se describe cómo utilizar las herramientas de línea de coman
 
     **VSPerfCmd /start:sample /output:** `OutputFile` [`Options`]
 
-   - La opción [/start](../profiling/start.md)**:sample** inicializa el generador de perfiles.
+   - La opción [/start](../profiling/start.md) **:sample** inicializa el generador de perfiles.
 
-   - La opción [/output](../profiling/output.md)**:**`OutputFile` es necesaria con **/start**. `OutputFile` especifica el nombre y la ubicación del archivo de datos de generación de perfiles (.vsp).
+   - La opción [/output](../profiling/output.md) **:** `OutputFile` es necesaria con **/start**. `OutputFile` especifica el nombre y la ubicación del archivo de datos de generación de perfiles (.vsp).
 
      Puede usar cualquiera de las opciones siguientes con la opción **/start:sample**.
 
    | Opción | Descripción |
    | - | - |
-   | [/user](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName` | Especifica el nombre de usuario y el dominio opcional de la cuenta propietaria del proceso para el que se han generado perfiles. Esta opción solamente es necesaria si la aplicación perfilada se ha iniciado como un usuario diferente del que inició la sesión. |
+   | [/user](../profiling/user-vsperfcmd.md) **:** [`Domain` **\\** ]`UserName` | Especifica el nombre de usuario y el dominio opcional de la cuenta propietaria del proceso para el que se han generado perfiles. Esta opción solamente es necesaria si la aplicación perfilada se ha iniciado como un usuario diferente del que inició la sesión. |
    | [/crosssession](../profiling/crosssession.md) | Habilita la generación de perfiles de procesos en otros inicios de sesión. **/CS** se puede especificar como una abreviatura de **/crosssession**. Esta opción es necesaria si la aplicación se ejecuta en una sesión diferente. |
    | [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath` | Especifica un contador de rendimiento de Windows que se va a recopilar durante la generación de perfiles. |
    | [/automark](../profiling/automark.md) **:** `Interval` | Utilizar solo con **/wincounter**. Especifica el número de milisegundos entre eventos de recopilación de contadores de rendimiento de Windows. El valor predeterminado es 500 ms. |
@@ -64,20 +64,20 @@ En este artículo se describe cómo utilizar las herramientas de línea de coman
 
 5. Adjunte el generador de perfiles a la aplicación de destino. Tipo:
 
-    **VSPerfCmd /attach:**{`PID`&#124;`ProcessName`} [`Sample Event`] [**/targetclr:**`Version`]
+    **VSPerfCmd /attach:** {`PID`&#124;`ProcessName`} [`Sample Event`] [ **/targetclr:** `Version`]
 
    - `PID` especifica el identificador de proceso de la aplicación de destino. `ProcessName` especifica el nombre del proceso. Tenga en cuenta que si especifica `ProcessName` y se están ejecutando varios procesos con el mismo nombre, los resultados son imprevisibles. Puede ver los identificadores de todos los procesos que se están ejecutando en el Administrador de tareas de Windows.
 
    - [/targetclr](../profiling/targetclr.md) **:** `Version` especifica la versión de Common Language Runtime (CLR) para generar perfiles cuando se carga más de una versión del runtime en una aplicación. Opcional.
 
-   - De manera predeterminada, se realiza un muestreo de los datos de rendimiento cada 10.000.000 ciclos de reloj de procesador no detenidos. Esto equivale aproximadamente a una vez cada 10 segundos en un procesador de 1 GHz. Puede especificar una de las siguientes opciones para cambiar el intervalo del ciclo de reloj, o bien especificar otro evento de muestreo.[/targetclr](../profiling/targetclr.md)**:**`Version` especifica la versión del CLR para la que generar perfiles cuando hay más de una versión del entorno de tiempo de ejecución cargada en una aplicación. Opcional.
+   - De manera predeterminada, se realiza un muestreo de los datos de rendimiento cada 10.000.000 ciclos de reloj de procesador no detenidos. Esto equivale aproximadamente a una vez cada 10 segundos en un procesador de 1 GHz. Puede especificar una de las siguientes opciones para cambiar el intervalo del ciclo de reloj, o bien especificar otro evento de muestreo.[/targetclr](../profiling/targetclr.md) **:** `Version` especifica la versión del CLR para la que generar perfiles cuando hay más de una versión del entorno de tiempo de ejecución cargada en una aplicación. Opcional.
 
    |||
    |-|-|
    |Evento de muestreo|Descripción|
    |[/timer](../profiling/timer.md) **:** `Interval`|Cambia el intervalo de muestreo por el número de ciclos de reloj no detenidos especificados mediante `Interval`.|
-   |[/pf](../profiling/pf.md) [**:**`Interval`]|Cambia el evento de muestreo a errores de página. Si se especifica `Interval`, se establece el número de errores de página entre un muestreo y otro. El valor predeterminado es 10.|
-   |[/sys](../profiling/sys-vsperfcmd.md) [**:**`Interval`]|Cambia el evento de muestreo a llamadas al sistema por parte del proceso al kernel del sistema operativo (llamadas syscall). Si se especifica `Interval`, se establece el número de llamadas entre un muestreo y otro. El valor predeterminado es 10.|
+   |[/pf](../profiling/pf.md) [ **:** `Interval`]|Cambia el evento de muestreo a errores de página. Si se especifica `Interval`, se establece el número de errores de página entre un muestreo y otro. El valor predeterminado es 10.|
+   |[/sys](../profiling/sys-vsperfcmd.md) [ **:** `Interval`]|Cambia el evento de muestreo a llamadas al sistema por parte del proceso al kernel del sistema operativo (llamadas syscall). Si se especifica `Interval`, se establece el número de llamadas entre un muestreo y otro. El valor predeterminado es 10.|
    |[/counter](../profiling/counter.md) **:** `Config`|Cambia el evento y el intervalo de muestreo por el contador de rendimiento del procesador y el intervalo especificados en `Config`.|
 
 ## <a name="control-data-collection"></a>Controlar la recopilación de datos
@@ -89,9 +89,9 @@ En este artículo se describe cómo utilizar las herramientas de línea de coman
 
     |Opción|Descripción|
     |------------|-----------------|
-    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Inicia (**/globalon**) o detiene (**/globaloff**) la recolección de datos para todos los procesos.|
-    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Inicia (**/processon**) o detiene (**/processoff**) la recopilación de datos para el proceso especificado por `PID`.|
-    |[/attach](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} [/detach](../profiling/detach.md)[**:**{`PID`&#124;`ProcName`}]|**/attach** inicia la recolección de datos para el proceso especificado por `PID` o por el nombre de proceso (ProcName). **/detach** detiene la recolección de datos para el proceso especificado o para todos los procesos si no se especifica uno.|
+    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Inicia ( **/globalon**) o detiene ( **/globaloff**) la recolección de datos para todos los procesos.|
+    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Inicia ( **/processon**) o detiene ( **/processoff**) la recopilación de datos para el proceso especificado por `PID`.|
+    |[/attach](../profiling/attach.md) **:** {`PID`&#124;`ProcName`} [/detach](../profiling/detach.md)[ **:** {`PID`&#124;`ProcName`}]|**/attach** inicia la recolección de datos para el proceso especificado por `PID` o por el nombre de proceso (ProcName). **/detach** detiene la recolección de datos para el proceso especificado o para todos los procesos si no se especifica uno.|
 
 ## <a name="end-the-profiling-session"></a>Finalización de la sesión de generación de perfiles
  Para finalizar una sesión de generación de perfiles, el generador de perfiles se debe desasociar de todos los procesos perfilados y se debe apagar explícitamente. Puede desasociar el generador de perfiles de una aplicación cuyo perfil se ha generado mediante el método de muestreo, el cierre de la aplicación o una llamada la opción **VSPerfCmd /detach**. Después, llame a la opción **VSPerfCmd /shutdown** para desactivar el generador de perfiles y cerrar el archivo de datos de generación de perfiles. El comando **VSPerfClrEnv /off** borra las variables de entorno de generación de perfiles.

@@ -39,7 +39,7 @@ ms.locfileid: "63447071"
 
 - Una ruta de acceso relativa o absoluta en el estándar de Windows de formato, como *C:\Deploy\MyApplication* o *\MyApplication*.
 
-- Una ruta de acceso de convención de nomenclatura Universal (UNC), como  *\\\ServerName\MyApplication\\*.
+- Una ruta de acceso de convención de nomenclatura Universal (UNC), como  *\\\ServerName\MyApplication\\* .
 
 - Una dirección URL de un sitio web de sitio, como http://www.microsoft.com/MyApplication.
 

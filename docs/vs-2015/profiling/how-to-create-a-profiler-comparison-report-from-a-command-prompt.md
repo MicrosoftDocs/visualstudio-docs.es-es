@@ -11,7 +11,7 @@ ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8c6dabbae5f2d3758aebe0562f99767ee6993d80
 ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "54756744"
@@ -27,12 +27,12 @@ Puede generar un informe de las Herramientas de generación de perfiles de [!INC
   
  Use la sintaxis siguiente para crear el informe de comparación:  
   
- **VSPerfReport /diff**  `VspFileName1` *VspFileName2* [**/**`Options`]  
+ **VSPerfReport /diff**  `VspFileName1` *VspFileName2* [ **/** `Options`]  
   
  Puede agregar opciones de la tabla siguiente a la línea de comandos **VSPerfReport /diff**.  
   
 |Opción|Descripción|  
 |------------|-----------------|  
-|**DiffThreshold:**[*Value*]|Omita la diferencia si está por debajo de este valor de umbral de porcentaje. Además, no aparecen nuevos datos que tengan valores por debajo de este umbral.|  
+|**DiffThreshold:** [*Value*]|Omita la diferencia si está por debajo de este valor de umbral de porcentaje. Además, no aparecen nuevos datos que tengan valores por debajo de este umbral.|  
 |**DiffTable:** *TableName*|Use esta tabla para comparar archivos. De forma predeterminada, se usa la tabla de funciones. Especifique el identificador que aparece en **VSPerfReport /querydifftables**.|  
 |**DiffColumn:** *ColumnName*|Use esta columna para comparar valores. De forma predeterminado, se usa la columna de porcentaje de muestras exclusivas. Especifique el identificador que aparece en **VSPerfReport /querydifftables**.|
