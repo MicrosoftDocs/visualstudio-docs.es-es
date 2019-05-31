@@ -27,7 +27,7 @@ Los comandos **Ir a** de Visual Studio realizan una búsqueda centrada en su có
 
 Entrada | Función
 ------------ | ---
-**Teclado** | Presione **Ctrl**+**T** o **Ctrl**+**,**
+**Teclado** | Presione **Ctrl**+**T** o **Ctrl**+ **,**
 **Mouse** | Seleccione **Editar** > **Ir a** > **Ir a Todo**
 
 Aparecerá una pequeña ventana en la parte superior derecha del editor de código.
@@ -38,7 +38,7 @@ A medida que escribe en el cuadro de texto, los resultados aparecen en una lista
 
 ![Ventana Navegar a](../ide/media/vside_navigatetowindow.png)
 
-También puede escribir un signo de interrogación (**?**) para obtener ayuda adicional.
+También puede escribir un signo de interrogación ( **?** ) para obtener ayuda adicional.
 
 ![Ayuda de Ir a todo](media/go-to-all-help.png)
 

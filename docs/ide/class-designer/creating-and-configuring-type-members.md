@@ -42,11 +42,11 @@ Puede agregar estos miembros a los tipos en un diagrama de clase y configurarlos
 
 |**Type**|**Miembros que puede contener**|
 |--------------| - |
-|Clase|método, propiedad (para C# y Visual Basic), campo, evento (para C# y Visual Basic), constructor (método), destructor (método), constante |
+|Clase|método, propiedad (para C# y Visual Basic), campo, evento (para C# y Visual Basic), constructor (método), destructor (método), constante|
 |Enum|miembro|
 |Interfaz|método, propiedad, evento (para C# y Visual Basic)|
-|Clase abstracta|método, propiedad (para C# y Visual Basic), campo, evento (para C# y Visual Basic), constructor (método), destructor (método), constante |
-|Estructura (struct en C#)|método, propiedad (para C# y Visual Basic), campo, evento (para C# y Visual Basic), constructor (método), constante |
+|Clase abstracta|método, propiedad (para C# y Visual Basic), campo, evento (para C# y Visual Basic), constructor (método), destructor (método), constante|
+|Estructura (struct en C#)|método, propiedad (para C# y Visual Basic), campo, evento (para C# y Visual Basic), constructor (método), constante|
 |delegado|parámetro|
 |Módulo (solo en VB)|método, propiedad, campo, evento, constructor, constante|
 
@@ -114,7 +114,7 @@ Puede crear un miembro con cualquiera de las herramientas siguientes:
 
      El tipo obtiene el foco y su contenido se muestra en la ventana **Detalles de clase**.
 
-2. En la ventana **Detalles de clase**, en la sección que contiene el tipo de miembro que quiere agregar, haga clic en **\<agregar miembro>**. Por ejemplo, si quiere agregar un campo, haga clic en **\<agregar campo>**.
+2. En la ventana **Detalles de clase**, en la sección que contiene el tipo de miembro que quiere agregar, haga clic en **\<agregar miembro>** . Por ejemplo, si quiere agregar un campo, haga clic en **\<agregar campo>** .
 
 3. Escriba el nombre del miembro que desee crear y presione ENTRAR.
 
@@ -223,9 +223,9 @@ La ventana **Propiedades** muestra las mismas propiedades de parámetro que la v
 
 2. En la ventana **Detalles de clase**, expanda la fila del método al que quiere agregar un parámetro.
 
-     Aparece una fila de parámetro con sangría que solo contiene el siguiente texto entre paréntesis **\<agregar parámetro>**.
+     Aparece una fila de parámetro con sangría que solo contiene el siguiente texto entre paréntesis **\<agregar parámetro>** .
 
-3. Haga clic en **\<agregar parámetro>**, escriba el nombre del nuevo parámetro y presione **Entrar**.
+3. Haga clic en **\<agregar parámetro>** , escriba el nombre del nuevo parámetro y presione **Entrar**.
 
      El nuevo parámetro se agrega al método y al código de este. Aparece en las ventanas **Detalles de clase** y Propiedades.
 
@@ -239,9 +239,9 @@ La ventana **Propiedades** muestra las mismas propiedades de parámetro que la v
 
 2. En la ventana **Detalles de clase**, expanda la fila del método al que quiere agregar un parámetro opcional.
 
-     Aparece una fila de parámetro con sangría que solo contiene el siguiente texto entre paréntesis **\<agregar parámetro>**.
+     Aparece una fila de parámetro con sangría que solo contiene el siguiente texto entre paréntesis **\<agregar parámetro>** .
 
-3. Haga clic en **\<agregar parámetro>**, escriba el nombre del nuevo parámetro y presione **Entrar**.
+3. Haga clic en **\<agregar parámetro>** , escriba el nombre del nuevo parámetro y presione **Entrar**.
 
      El nuevo parámetro se agrega al método y al código de este. Aparece en las ventanas **Detalles de clase** y Propiedades.
 

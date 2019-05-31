@@ -82,7 +82,7 @@ Un directiva de protección especifica un conjunto de reglas que los miembros de
   
 3. En el **directiva de protección** lista, haga doble clic en **análisis de código**y asegúrese de que el **aplicar análisis de código para código administrado** casilla está activada.  
   
-4. En el **ejecutar este conjunto de reglas** lista, haga clic en  **\<Seleccionar conjunto de reglas de Control de código fuente >**.  
+4. En el **ejecutar este conjunto de reglas** lista, haga clic en  **\<Seleccionar conjunto de reglas de Control de código fuente >** .  
   
 5. Escriba la ruta de acceso del archivo de conjunto de regla de directiva de protección en el control de versiones.  
   
@@ -116,6 +116,6 @@ Un directiva de protección especifica un conjunto de reglas que los miembros de
   
 6. Para omitir el código en componentes de otras empresas, seleccione el **Suprimir resultados del código generado** casilla de verificación.  
   
-7. En el **ejecutar este conjunto de reglas** lista, haga clic en  **\<Examinar... >**.  
+7. En el **ejecutar este conjunto de reglas** lista, haga clic en  **\<Examinar... >** .  
   
 8. Especifique la versión local del archivo de conjunto de regla de directiva de protección.

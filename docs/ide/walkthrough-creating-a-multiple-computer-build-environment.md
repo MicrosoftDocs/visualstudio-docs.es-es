@@ -62,7 +62,7 @@ En esta sección se explica cómo copiar los archivos, compiladores, herramienta
 - En un equipo x86, la ubicación predeterminada es *C:\Archivos de programa\Microsoft Visual Studio*
 - En un equipo x64, la ubicación predeterminada es *C:\Archivos de programa (x86)\Microsoft Visual Studio*
 
-Tenga en cuenta que el nombre de la carpeta *Archivos de programa* depende del sistema operativo instalado. En un equipo x86, el nombre es *Archivos de programa*, mientras que en un equipo x64 es *Archivos de programa (x86)*. Con independencia de la arquitectura del sistema, este tutorial hace referencia a la carpeta *Archivos de programa* como *%ProgramFiles%*.
+Tenga en cuenta que el nombre de la carpeta *Archivos de programa* depende del sistema operativo instalado. En un equipo x86, el nombre es *Archivos de programa*, mientras que en un equipo x64 es *Archivos de programa (x86)* . Con independencia de la arquitectura del sistema, este tutorial hace referencia a la carpeta *Archivos de programa* como *%ProgramFiles%* .
 
 > [!NOTE]
 > En el equipo de compilación, todos los archivos relevantes deben estar en la misma unidad, aunque la letra de esa unidad puede ser diferente a la de la unidad donde está instalado Visual Studio en el equipo host. En cualquier caso, debe tener en cuenta la ubicación de los archivos cuando cree entradas del Registro como se describe más adelante en este documento.
@@ -332,7 +332,7 @@ Puede crear un entorno de compilación que se pueda implementar en varios equipo
 
 2. Copie los directorios y los archivos como se describe en la sección [Copiar archivos del equipo host al equipo de compilación](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#copy-files-from-the-host-computer-to-the-build-computer) de este tutorial, pero péguelos en el directorio *%Depot%* recién creado. Por ejemplo, copie de *%ProgramFiles%\Windows Kits\8.0\bin* a *%Depot%\Windows Kits\8.0\bin*.
 
-3. Cuando los archivos se hayan pegado en *%Depot%*, realice estos cambios:
+3. Cuando los archivos se hayan pegado en *%Depot%* , realice estos cambios:
 
     - En %Depot%\MSBuild\Microsoft.Cpp\v4.0\v110\Microsoft.CPP.Targets, \Microsoft.Cpp.InvalidPlatforms.targets\\, \Microsoft.cppbuild.targets\\ y \Microsoft.CppCommon.targets\\, cambie cada instancia de
 

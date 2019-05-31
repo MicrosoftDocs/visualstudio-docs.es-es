@@ -109,7 +109,7 @@ Los usuarios también pueden pegar elementos en otros elementos.
 
       Puede usar la herramienta de exploración de la ruta de acceso para crear cada ruta de acceso:
 
-      1. En **mezcla de proceso mediante la creación de vínculos en rutas de acceso**, haga clic en  **\<Agregar ruta de acceso >**.
+      1. En **mezcla de proceso mediante la creación de vínculos en rutas de acceso**, haga clic en  **\<Agregar ruta de acceso >** .
 
       2. Haga clic en la flecha desplegable a la derecha del elemento de lista. Aparece una vista de árbol.
 

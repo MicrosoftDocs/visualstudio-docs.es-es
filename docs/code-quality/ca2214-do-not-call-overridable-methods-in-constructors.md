@@ -1,6 +1,6 @@
 ---
 title: 'CA2214: No llamar a métodos reemplazables en constructores'
-ms.date: 11/04/2016
+ms.date: 05/29/2016
 ms.topic: reference
 f1_keywords:
 - DoNotCallOverridableMethodsInConstructors
@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: ef2a5631247f882a70ae94877da02f576ff04a5d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8e05e6925085b27de3001c8ff62d8a3c6e69a88f
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62796710"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401312"
 ---
 # <a name="ca2214-do-not-call-overridable-methods-in-constructors"></a>CA2214: No llamar a métodos reemplazables en constructores
 
@@ -41,6 +41,9 @@ El constructor de un tipo no sellado llama a un método virtual definido en su c
 
 Cuando se llama a un método virtual, el tipo real que se ejecuta el método no está activado hasta que el tiempo de ejecución. Cuando un constructor llama a un método virtual, es posible que no haya ejecutado el constructor para la instancia que invoca el método.
 
+> [!NOTE]
+> La implementación de análisis de binarios de esta regla tiene un mensaje de diagnóstico diferente de " **\[nombre Constructor] contiene una cadena de llamadas que da como resultado una llamada a un método virtual definido por la clase. Revise la siguiente pila de llamadas para consecuencias imprevistas**". El [analizadores de FxCop](install-fxcop-analyzers.md) implementación de esta regla tiene un mensaje de diagnóstico de "**no llamar a métodos reemplazables en constructores**".
+
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
 
 Para corregir una infracción de esta regla, no llame a métodos virtuales del tipo desde dentro de los constructores del tipo.
@@ -51,7 +54,7 @@ No suprima las advertencias de esta regla. El constructor debe rediseñarse para
 
 ## <a name="example"></a>Ejemplo
 
-El ejemplo siguiente muestra el efecto de infringir esta regla. La aplicación de prueba crea una instancia de `DerivedType`, lo que hace que su clase base (`BadlyConstructedType`) ejecute el constructor. `BadlyConstructedType`de forma incorrecta, constructor llama al método virtual `DoSomething`. Como se muestra en la salida, `DerivedType.DoSomething()` ejecuta y lleva a cabo antes `DerivedType`del constructor se ejecuta.
+El ejemplo siguiente muestra el efecto de infringir esta regla. La aplicación de prueba crea una instancia de `DerivedType`, lo que hace que su clase base (`BadlyConstructedType`) ejecute el constructor. `BadlyConstructedType`de forma incorrecta, constructor llama al método virtual `DoSomething`. Como se muestra en la salida, `DerivedType.DoSomething()` se ejecuta antes que `DerivedType`del constructor se ejecuta.
 
 [!code-csharp[FxCop.Usage.CtorVirtual#1](../code-quality/codesnippet/CSharp/ca2214-do-not-call-overridable-methods-in-constructors_1.cs)]
 [!code-vb[FxCop.Usage.CtorVirtual#1](../code-quality/codesnippet/VisualBasic/ca2214-do-not-call-overridable-methods-in-constructors_1.vb)]

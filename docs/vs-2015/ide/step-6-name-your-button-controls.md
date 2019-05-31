@@ -30,7 +30,7 @@ Hay solo un control PictureBox en el formulario. Al agregarlo, el IDE lo denomin
   
 ### <a name="to-name-your-button-controls"></a>Para dar un nombre a los controles de botón  
   
-1. En el formulario, elija el botón **Cerrar** . (Si todavía están seleccionados todos los botones, elija la tecla ESC para cancelar la selección). Desplácese en la ventana **Propiedades** hasta que vea la propiedad **(Name)**. (La propiedad **(Name)** se encuentra cerca de la parte superior cuando las propiedades están por orden alfabético). Cambie el nombre a **closeButton**, como se muestra en la siguiente imagen.  
+1. En el formulario, elija el botón **Cerrar** . (Si todavía están seleccionados todos los botones, elija la tecla ESC para cancelar la selección). Desplácese en la ventana **Propiedades** hasta que vea la propiedad **(Name)** . (La propiedad **(Name)** se encuentra cerca de la parte superior cuando las propiedades están por orden alfabético). Cambie el nombre a **closeButton**, como se muestra en la siguiente imagen.  
   
      ![Ventana Propiedades con el nombre closeButton](../ide/media/express-setnameproperty.png "Express_SetNameProperty")  
 Ventana Propiedades mostrando el nombre closeButton  

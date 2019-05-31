@@ -101,7 +101,7 @@ De forma predeterminada, la herramienta de cobertura de código de Visual Studio
 ### <a name="regular-expressions"></a>Expresiones regulares  
  Los nodos de inclusión y exclusión usan expresiones regulares. Para obtener más información, vea [Usar expresiones regulares en Visual Studio](../ide/using-regular-expressions-in-visual-studio.md). Las expresiones regulares no son iguales que los caracteres comodín. En concreto:  
   
-1. **\.\\*** coincide con una cadena de caracteres cualquiera  
+1. **\.\\** * coincide con una cadena de caracteres cualquiera  
   
 2. **\\.** coincide con un punto (".")  
   

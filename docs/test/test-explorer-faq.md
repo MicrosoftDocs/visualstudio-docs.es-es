@@ -120,7 +120,7 @@ En lugar de usar las extensiones del adaptador de prueba, los proyectos deben us
 
 Los proyectos de prueba recientes de UWP especifican una propiedad de compilación de plataforma de prueba que permite un mejor rendimiento para identificar las aplicaciones de prueba. Si tiene un proyecto de prueba de UWP que se haya inicializado antes de Visual Studio versión 15.7, puede ver este error en **Salida** > **Pruebas**:
 
-**System.AggregateException: Se produjeron uno o varios errores. ---> System.InvalidOperationException: No se encontró el siguiente TestContainer {} en Microsoft.VisualStudio.TestWindow.Controller.TestContainerProvider \<GetTestContainerAsync>d__61.MoveNext()**.
+**System.AggregateException: Se produjeron uno o varios errores. ---> System.InvalidOperationException: No se encontró el siguiente TestContainer {} en Microsoft.VisualStudio.TestWindow.Controller.TestContainerProvider \<GetTestContainerAsync>d__61.MoveNext()** .
 
 Para corregir este error:
 

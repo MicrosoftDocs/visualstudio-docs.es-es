@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Implementar, publicar y actualizar soluciones de SharePoint en un servidor remoto | Documentos de Microsoft
+title: Implementar, publicar y actualizar soluciones de SharePoint de forma remota
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fdaebbc8901330236769331453501bebdd3f98a3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c8e9c46a9acaf8c70fa434514785276f9ba343d4
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62813948"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401447"
 ---
 # <a name="how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server"></a>Procedimiento Implementar, publicar y actualizar soluciones de SharePoint en un servidor remoto
   Además de implementar las soluciones de SharePoint en el sistema local, puede publicar soluciones en espacio aislado de SharePoint para sitios de SharePoint locales o sitios remotos. Las copias de proceso de publicación remota la *.wsp* archivo en el servidor de SharePoint instala la solución y, a continuación, le permite activar la solución. También puede actualizar una instalación remota de solución de SharePoint después de realizar cambios en él.
@@ -37,7 +37,7 @@ ms.locfileid: "62813948"
 
 5. Inicie sesión en el servidor remoto si se requiere autenticación de usuario.
 
-     Aparece el progreso de la publicación en Visual Studio **salida** ventana. Cuando finalice el proceso, la solución (*.wsp*) está instalado el archivo en el servidor de SharePoint remoto. Sin embargo, todavía debe activarse antes de que se puede usar en SharePoint.
+     Aparece el progreso de la publicación en Visual Studio **salida** ventana. Cuando finalice el proceso, la solución ( *.wsp*) está instalado el archivo en el servidor de SharePoint remoto. Sin embargo, todavía debe activarse antes de que se puede usar en SharePoint.
 
 6. En el **Galería de soluciones** , seleccione la aplicación de SharePoint y, a continuación, en la cinta de opciones, elija la **activar** botón.
 

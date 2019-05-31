@@ -141,7 +141,7 @@ En este tutorial le guiará por el proceso de uso de análisis de código para a
 
    1. Seleccione el **firmar el ensamblado** casilla de verificación.
 
-   1. En el **elegir un archivo de clave de nombre de cadena** lista, seleccione  **\<nuevo... >**.
+   1. En el **elegir un archivo de clave de nombre de cadena** lista, seleccione  **\<nuevo... >** .
 
       El **crear clave de nombre seguro** aparece el cuadro de diálogo.
 

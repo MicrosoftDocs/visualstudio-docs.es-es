@@ -210,7 +210,7 @@ ms.locfileid: "62981681"
 
 4. Haga clic en el botón de flecha en el **título** nuevo encabezado de columna.
 
-5. Haga clic en **(All)**.
+5. Haga clic en **(All)** .
 
      El filtrado se quita y se mostrarán todas las filas.
 

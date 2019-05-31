@@ -72,9 +72,9 @@ ms.locfileid: "65687393"
 
  Este ejemplo produce el siguiente resultado:
 
- **A petición: Denegar la persona que llama no tiene ningún efecto a petición con el permiso validado.**
-**LinkDemand: Denegar la persona que llama no tiene ningún efecto en LinkDemand con el permiso validado.**
-**LinkDemand: Denegar la persona que llama no tiene ningún efecto con el código protegido por LinkDemand.**
+ **A petición: Denegar la persona que llama no tiene ningún efecto a petición con el permiso validado.** 
+**LinkDemand: Denegar la persona que llama no tiene ningún efecto en LinkDemand con el permiso validado.** 
+**LinkDemand: Denegar la persona que llama no tiene ningún efecto con el código protegido por LinkDemand.** 
 **LinkDemand: Este denegar no tiene ningún efecto con el código protegido por LinkDemand.**
 ## <a name="see-also"></a>Vea también
  <xref:System.Security.CodeAccessPermission.PermitOnly%2A?displayProperty=fullName> <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName>

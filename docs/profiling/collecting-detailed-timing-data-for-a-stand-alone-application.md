@@ -1,5 +1,5 @@
 ---
-title: Recopilar datos detallados de tiempo para una aplicación independiente mediante la línea de comandos del generador de perfiles | Microsoft Docs
+title: 'Línea de comandos de generador de perfiles: detalle de datos de control de tiempo para una aplicación independiente'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8bae9bbdff28312c36af91af57368d6b87028d44
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 13bc632d70b3d477b70f6e947e55d5c82c6ab064
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62581345"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66262890"
 ---
 # <a name="collect-detailed-timing-data-for-a-stand-alone-application-by-using-the-profiler-command-line"></a>Recopilación de datos detallados de tiempo para una aplicación independiente mediante la línea de comandos del generador de perfiles
 En esta sección se describen los procedimientos y las opciones para recopilar datos de rendimiento detallados para un componente cliente (independiente) mediante el método de instrumentación desde la línea de comandos.

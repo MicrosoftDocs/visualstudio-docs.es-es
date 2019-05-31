@@ -1,5 +1,5 @@
 ---
-title: Información general del modelo de programación de SharePoint de extensiones | Microsoft Docs
+title: Información general del modelo de programación de SharePoint de extensiones
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c8f746c3ee084613a10b89bd492a6174ffb49012
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: dbb496b077f1ff55fda53d3325765e8e58911096
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63421283"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401783"
 ---
 # <a name="overview-of-the-programming-model-of-sharepoint-tools-extensions"></a>Información general del modelo de programación de SharePoint de extensiones
   Al crear una extensión para las herramientas de SharePoint en Visual Studio, comience por implementar una o varias de las interfaces de extensibilidad que exponen las herramientas de SharePoint. En la mayoría de los casos, usará también otros tipos proporcionados por las herramientas de SharePoint para implementar características en la extensión. En algunos escenarios, también se pueden usar tipos de otros modelos de objetos proporcionados por Visual Studio y SharePoint. Debe comprender el propósito de cada uno de estos modelos de objetos y sabe cómo usarlos entre sí para crear extensiones para las herramientas de SharePoint.
@@ -55,7 +55,7 @@ ms.locfileid: "63421283"
 - *Los modelos de objetos de servidor y cliente de SharePoint*. Use estos modelos de objetos para modificar un sitio de SharePoint o para recuperar datos de un sitio de SharePoint desde el contexto de una extensión de herramientas de SharePoint.
 
 ### <a name="sharepoint-tools-object-model"></a>Modelo de objetos de herramientas de SharePoint
- Cada extensión de herramientas de SharePoint usa los tipos del modelo de objetos de herramientas de SharePoint para definir el comportamiento básico y la funcionalidad de la extensión. Las tablas siguientes describen los espacios de nombres que se incluyen en este modelo de objetos, por el ensamblado que lo contiene.
+ Cada extensión de herramientas de SharePoint usa los tipos del modelo de objetos de herramientas de SharePoint para definir el comportamiento básico y la funcionalidad de la extensión. Las tablas siguientes describen los espacios de nombres que se incluyen en este modelo de objetos, el ensamblado que los contiene.
 
 #### <a name="microsoftvisualstudiosharepointdll"></a>Microsoft.VisualStudio.SharePoint.dll
 

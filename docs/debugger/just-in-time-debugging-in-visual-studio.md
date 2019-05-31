@@ -32,7 +32,7 @@ Si no tiene instalado Visual Studio, puede evitar deshabilitando la depuración 
 
 - Si está intentando ejecutar una aplicación web, deshabilite la depuración de script:
 
-  En Windows **Panel de Control** > **red e Internet** > **opciones de Internet**, seleccione **Disable (depuración de script Internet Explorer)** y **Deshabilitar depuración de scripts (otros)**. La configuración y los pasos exactos depende de la versión de Windows y el explorador.
+  En Windows **Panel de Control** > **red e Internet** > **opciones de Internet**, seleccione **Disable (depuración de script Internet Explorer)** y **Deshabilitar depuración de scripts (otros)** . La configuración y los pasos exactos depende de la versión de Windows y el explorador.
 
   ![Las opciones de Internet de JIT](../debugger/media/jitinternetoptions.png "opciones de internet JIT")
 

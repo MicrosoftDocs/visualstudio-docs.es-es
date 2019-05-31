@@ -71,7 +71,7 @@ ms.locfileid: "65687355"
 
  Este ejemplo produce el siguiente resultado:
 
- **La demanda de plena confianza: error en la solicitud.**
+ **La demanda de plena confianza: error en la solicitud.** 
 **ClassRequiringFullTrust.DoWork llamó.**
 ## <a name="related-rules"></a>Reglas relacionadas
  [CA2117: Los tipos APTCA solo amplían tipos base APTCA](../code-quality/ca2117-aptca-types-should-only-extend-aptca-base-types.md)

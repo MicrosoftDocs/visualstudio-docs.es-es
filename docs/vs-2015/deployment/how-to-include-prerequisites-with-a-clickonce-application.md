@@ -37,7 +37,7 @@ Para poder distribuir el software necesario con una aplicación [!INCLUDE[ndptec
 4. Busque el **nombre** elemento que contiene **http://go.microsoft.com/fwlink** y copie la dirección URL. Incluya a la parte **LinkID**.  
   
     > [!NOTE]
-    > Si no hay ningún **nombre** contiene elemento **http://go.microsoft.com/fwlink**, abra el **Product.xml** de archivos en la carpeta raíz para el requisito previo y busque el **fwlink** cadena.  
+    > Si no hay ningún **nombre** contiene elemento **http://go.microsoft.com/fwlink** , abra el **Product.xml** de archivos en la carpeta raíz para el requisito previo y busque el **fwlink** cadena.  
   
     > [!IMPORTANT]
     > Algunos requisitos previos tienen varios paquetes de instalador (por ejemplo, para los sistemas de 32 o 64 bits). Si hay varios elementos **Name** que contienen **fwlink**, debe repetir los pasos restantes para cada uno de ellos.  

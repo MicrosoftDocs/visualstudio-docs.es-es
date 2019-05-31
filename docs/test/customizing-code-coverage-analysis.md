@@ -55,7 +55,7 @@ La cobertura de código requiere que haya símbolos (archivos *.pdb*) para los e
 ```
 
 > [!NOTE]
-> La resolución de símbolos puede tardar tiempo, especialmente al utilizar una ubicación de archivo remota con muchos ensamblados. Por tanto, considere la posibilidad de copiar los archivos *.pdb* en la misma ubicación local que los archivos binarios (*.dll* y *.exe*).
+> La resolución de símbolos puede tardar tiempo, especialmente al utilizar una ubicación de archivo remota con muchos ensamblados. Por tanto, considere la posibilidad de copiar los archivos *.pdb* en la misma ubicación local que los archivos binarios ( *.dll* y *.exe*).
 
 ### <a name="exclude-and-include"></a>Excluir e incluir
 
@@ -89,7 +89,7 @@ Si el campo **Incluir** está vacío, el procesamiento de cobertura de código i
 
 Los nodos de inclusión y exclusión usan expresiones regulares. Para obtener más información, vea [Usar expresiones regulares en Visual Studio](../ide/using-regular-expressions-in-visual-studio.md). Las expresiones regulares no son iguales que los caracteres comodín. En concreto:
 
-- **.\\*** coincide con una cadena de caracteres cualquiera
+- **.\\** * coincide con una cadena de caracteres cualquiera
 
 - **\\.** coincide con un punto (".")
 

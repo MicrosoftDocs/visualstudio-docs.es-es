@@ -47,7 +47,7 @@ Este tema se describe cómo usar el **Editor de condiciones de regla** cuadro de
 |**OK**|Haga clic en esta opción para guardar la condición de la regla.|  
   
 ## <a name="entering-condition-expressions"></a>Escribir expresiones de condiciones  
- Las expresiones de condiciones se escriben como texto. Puede escribir **esto.** en el editor para hacer referencia a campos, propiedades y métodos utilizados en el flujo de trabajo, mediante un menú tipo IntelliSense. También puede escribir directamente un nombre de miembro del flujo de trabajo. Puede agregar operadores lógicos a la condición, por ejemplo AND, OR y NOT. También puede agregar predicados. Un predicado es un operador binario y dos operandos. Los operadores binarios admitidos son **==**, **>**, **\<**, **>=**, y **<=**. Los operandos admitidos son valor constante, función aritmética y miembros con ámbito público.  
+ Las expresiones de condiciones se escriben como texto. Puede escribir **esto.** en el editor para hacer referencia a campos, propiedades y métodos utilizados en el flujo de trabajo, mediante un menú tipo IntelliSense. También puede escribir directamente un nombre de miembro del flujo de trabajo. Puede agregar operadores lógicos a la condición, por ejemplo AND, OR y NOT. También puede agregar predicados. Un predicado es un operador binario y dos operandos. Los operadores binarios admitidos son **==** , **>** , **\<** , **>=** , y **<=** . Los operandos admitidos son valor constante, función aritmética y miembros con ámbito público.  
   
  Puede especificar el tipo para la comparación y puede comparar con **null** o una cadena vacía. Puede anidar las llamadas a miembros en una variable que contenga un tipo complejo, por ejemplo, `this.Address.State == "WA"`.  
   

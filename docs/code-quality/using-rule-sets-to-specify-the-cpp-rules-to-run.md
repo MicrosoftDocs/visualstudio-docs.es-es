@@ -62,7 +62,7 @@ Para crear un nuevo conjunto de reglas personalizado, guárdelo con un nuevo nom
 
 - Para contraer las reglas en todos los grupos, elija **Contraer todo**.
 
-- Para cambiar el campo que las reglas se agrupan por, elija el campo desde el **Group By** lista. Para mostrar las reglas desagrupadas, seleccione  **\<None >**.
+- Para cambiar el campo que las reglas se agrupan por, elija el campo desde el **Group By** lista. Para mostrar las reglas desagrupadas, seleccione  **\<None >** .
 
 - Para agregar o quitar campos en las columnas de la regla, elija **opciones de columna**.
 

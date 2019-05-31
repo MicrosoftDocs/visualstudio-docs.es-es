@@ -111,7 +111,7 @@ Puede permitir que un elemento se arrastra hasta otro, desde el cuadro de herram
   
       Puede usar la herramienta de exploración de la ruta de acceso para crear cada ruta de acceso:  
   
-   3. En **mezcla de proceso mediante la creación de vínculos en rutas de acceso**, haga clic en  **\<Agregar ruta de acceso >**.  
+   3. En **mezcla de proceso mediante la creación de vínculos en rutas de acceso**, haga clic en  **\<Agregar ruta de acceso >** .  
   
    4. Haga clic en la flecha desplegable a la derecha del elemento de lista. Aparece una vista de árbol.  
   

@@ -29,7 +29,7 @@ Las acciones rápidas de esta sección corrigen errores en el código que provoc
 
 ### <a name="correct-misspelled-symbol-or-keyword"></a>Corrección de símbolos o palabras clave mal escritos
 
-Si se equivoca al escribir un tipo o una palabra clave en Visual Studio, esta acción rápida lo corrige automáticamente. Verá estos elementos en el menú de bombilla como **"Cambiar '*palabra mal escrita*' a '*palabra correcta*'**. Por ejemplo:
+Si se equivoca al escribir un tipo o una palabra clave en Visual Studio, esta acción rápida lo corrige automáticamente. Verá estos elementos en el menú de bombilla como **"Cambiar '*palabra mal escrita*' a '*palabra correcta*'** . Por ejemplo:
 
 ```csharp
 // Before
@@ -448,7 +448,7 @@ End Select
 
 ### <a name="convert-to-interpolated-string"></a>Convertir en una cadena interpolada
 
-Las [cadenas interpoladas](/dotnet/csharp/language-reference/keywords/interpolated-strings) son una forma sencilla de expresar cadenas con variables insertadas, similar al método **[String.Format](/dotnet/api/system.string.format#overloads)**.  Esta acción rápida reconoce los casos en los que las cadenas están concatenadas o usan **String.Format** y cambia el uso a una cadena interpolada.
+Las [cadenas interpoladas](/dotnet/csharp/language-reference/keywords/interpolated-strings) son una forma sencilla de expresar cadenas con variables insertadas, similar al método **[String.Format](/dotnet/api/system.string.format#overloads)** .  Esta acción rápida reconoce los casos en los que las cadenas están concatenadas o usan **String.Format** y cambia el uso a una cadena interpolada.
 
 ```csharp
 // Before

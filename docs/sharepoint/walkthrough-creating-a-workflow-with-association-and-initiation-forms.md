@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Creación de un flujo de trabajo con la asociación y formularios de iniciación | Documentos de Microsoft'
+title: Crear flujo de trabajo con formularios de asociación e iniciación
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 08c63966528a2ae34d5a9d776ee111ecee96b22f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b64d1c9fbbd81a21ab268dfa29287895bd355197
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430380"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401156"
 ---
 # <a name="walkthrough-create-a-workflow-with-association-and-initiation-forms"></a>Tutorial: Crear un flujo de trabajo con formularios de asociación e iniciación
   Este tutorial muestra cómo crear un flujo de trabajo secuencial básico que incorpora el uso de formularios de asociación e iniciación. Estos son los formularios ASPX que habilite los parámetros que se agregarán a un flujo de trabajo al que asociar primero el Administrador de SharePoint (el formulario de asociación), y cuando se inicia el flujo de trabajo por el usuario (el formulario de iniciación).
@@ -90,7 +90,7 @@ ms.locfileid: "63430380"
 
      El **Asistente de personalización de SharePoint** aparece.
 
-10. En el **especificar el nombre de flujo de trabajo de depuración** , acepte el nombre predeterminado (**ExpenseReport - Workflow1**). Mantenga el valor de tipo de plantilla de flujo de trabajo predeterminada (**flujo de trabajo de lista)**. Elija el botón **Siguiente**.
+10. En el **especificar el nombre de flujo de trabajo de depuración** , acepte el nombre predeterminado (**ExpenseReport - Workflow1**). Mantenga el valor de tipo de plantilla de flujo de trabajo predeterminada (**flujo de trabajo de lista)** . Elija el botón **Siguiente**.
 
 11. En el **desea que Visual Studio asocie automáticamente el flujo de trabajo en una sesión de depuración?** página, desactive la casilla que se asocia automáticamente la plantilla de flujo de trabajo si está activada.
 

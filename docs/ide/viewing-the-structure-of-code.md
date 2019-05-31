@@ -1,5 +1,5 @@
 ---
-title: Visualización de la estructura del código con las ventanas Vista de clases, Jerarquía de llamadas, Examinador de objetos y Definición de código
+title: Ventana de vista de clases, jerarquía de llamadas, examinador de objetos y definición de código
 ms.date: 05/18/2018
 ms.topic: conceptual
 f1_keywords:
@@ -25,12 +25,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d1072e6e9a2b097d9d2f50cc372ee8ba621e3d3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9e2ec8e3e51036749030036eee6ff1d268a44f69
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62582089"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263066"
 ---
 # <a name="view-the-structure-of-code-using-different-tool-windows"></a>Visualización de la estructura del código mediante distintas ventanas de herramienta
 
@@ -56,7 +56,7 @@ La barra de herramientas de **Vista de clases** contiene los siguientes comandos
 
 |||
 |-|-|
-|**Nueva carpeta**|Crea una carpeta o subcarpeta virtual en la que se pueden organizar los elementos utilizados con frecuencia. Se guardan en el archivo de la solución activa (*.suo*). Después de cambiar el nombre o eliminar un elemento en el código, puede aparecer en una carpeta virtual como un nodo de error. Para corregir este problema, elimine el nodo de error. Si cambió el nombre de un elemento, puede volver a moverlo desde la jerarquía del proyecto hasta la carpeta.|
+|**Nueva carpeta**|Crea una carpeta o subcarpeta virtual en la que se pueden organizar los elementos utilizados con frecuencia. Se guardan en el archivo de la solución activa ( *.suo*). Después de cambiar el nombre o eliminar un elemento en el código, puede aparecer en una carpeta virtual como un nodo de error. Para corregir este problema, elimine el nodo de error. Si cambió el nombre de un elemento, puede volver a moverlo desde la jerarquía del proyecto hasta la carpeta.|
 |**Atrás**|Navegal al elemento seleccionado anteriormente.|
 |**Adelante**|Navega al siguiente elemento seleccionado.|
 |**Ver diagrama de clases** (solo para proyectos de código administrado)|Se vuelve disponible al seleccionar un espacio de nombres o al escribir en la **Vista de clases**. Cuando se selecciona un espacio de nombres, el diagrama de clases muestra todos los tipos que contiene. Cuando se selecciona un tipo, el diagrama de clases solo muestra ese tipo.|

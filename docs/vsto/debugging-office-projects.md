@@ -73,7 +73,7 @@ ms.locfileid: "63441880"
  Cada vez que se compila un proyecto, el conjunto de datos se vacía y se vuelve a crear. Si desea depurar un conjunto de datos en caché, debe abrir el documento fuera de Visual Studio y, a continuación, asociar el depurador.
 
 ## <a name="debug-word-document-projects-based-on-the-word-97-2003-document-doc-format"></a>Depurar proyectos de documento de Word basados en el documento de Word 97-2003 (* .doc) formato
- Para depurar un proyecto de documento de Word basado en el documento de Word 97-2003 (*/*.doc *) formato, debe agregar la carpeta del proyecto a la lista de carpetas de confianza. Para obtener más información sobre cómo hacerlo, consulte [conceder confianza a los documentos](../vsto/granting-trust-to-documents.md).
+ Para depurar un proyecto de documento de Word basado en el documento de Word 97-2003 ( */* .doc *) formato, debe agregar la carpeta del proyecto a la lista de carpetas de confianza. Para obtener más información sobre cómo hacerlo, consulte [conceder confianza a los documentos](../vsto/granting-trust-to-documents.md).
 
 ## <a name="debug-disabled-add-ins"></a>Complementos de depuración deshabilitada
  Las aplicaciones de Microsoft Office pueden deshabilitar los complementos de VSTO que se comporten de forma inesperada. La aplicación de Microsoft Office deshabilita los complementos de VSTO para evitar que se cargue código problemático cada vez que se inicie la aplicación. Sin embargo, esto también puede producir un comportamiento inesperado durante la depuración típica. Para obtener información acerca de cómo volver a habilitar los complementos de VSTO, consulte [Cómo: Volver a habilitar un complemento de VSTO que se ha deshabilitado](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md).

@@ -64,7 +64,7 @@ Este tutorial recorre paso a paso la creación, ejecución y personalización de
   
     Aparecerá el cuadro de diálogo **Nuevo proyecto** .  
   
-3. En **Plantillas instaladas**, haga clic en **Visual C#**.  
+3. En **Plantillas instaladas**, haga clic en **Visual C#** .  
   
 4. En la lista de tipos de aplicación, haga clic en **Biblioteca de clases**.  
   
@@ -112,7 +112,7 @@ public void Debit(double amount)
   
 #### <a name="to-create-a-unit-test-project"></a>Para crear un proyecto de prueba unitaria  
   
-1. En el menú **Archivo** , elija **Agregar**y, a continuación, elija **Nuevo proyecto...**.  
+1. En el menú **Archivo** , elija **Agregar**y, a continuación, elija **Nuevo proyecto...** .  
   
 2. En el cuadro de diálogo Nuevo proyecto, expanda **Instalado**, expanda **Visual C#** y, a continuación, elija **Prueba**.  
   
@@ -237,7 +237,7 @@ using BankAccountNS;
 ## <a name="BKMK_Fix_your_code_and_rerun_your_tests"></a> Corrija el código y vuelva a ejecutar las pruebas  
  **Analizar los resultados de pruebas**  
   
- El resultado de la prueba contiene un mensaje que describe el error. Para el método `AreEquals`, el mensaje muestra lo que se esperaba (el parámetro <strong>Expected\<*XXX*></strong>) y lo que se ha recibido realmente (el parámetro **Actual\<*YYY*>**). Se esperaba una disminución en el saldo en comparación con el inicial pero, en cambio, ha aumentado en la cantidad retirada.  
+ El resultado de la prueba contiene un mensaje que describe el error. Para el método `AreEquals`, el mensaje muestra lo que se esperaba (el parámetro <strong>Expected\<*XXX*></strong>) y lo que se ha recibido realmente (el parámetro **Actual\<*YYY*>** ). Se esperaba una disminución en el saldo en comparación con el inicial pero, en cambio, ha aumentado en la cantidad retirada.  
   
  Un nuevo examen del código Debit muestra que la prueba unitaria ha logrado encontrar un error. La cantidad retirada se agrega al saldo de cuenta en lugar de ser restarse.  
   

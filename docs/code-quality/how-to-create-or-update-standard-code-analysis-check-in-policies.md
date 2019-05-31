@@ -61,7 +61,7 @@ Desde el **ejecutar este conjunto de reglas** enumerar, use uno de los métodos 
 
 - Seleccione un conjunto de reglas estándar de Microsoft.
 
-- Seleccione una regla personalizada si hace clic en  **\<Seleccionar conjunto de reglas de Control de código fuente... >**. A continuación, escriba la ruta de acceso de control de versiones de la regla especificada en el Explorador de control de código fuente. La sintaxis de una ruta de acceso de control de versiones es:
+- Seleccione una regla personalizada si hace clic en  **\<Seleccionar conjunto de reglas de Control de código fuente... >** . A continuación, escriba la ruta de acceso de control de versiones de la regla especificada en el Explorador de control de código fuente. La sintaxis de una ruta de acceso de control de versiones es:
 
    **$/** `TeamProjectName` **/** `VersionControlPath`
 

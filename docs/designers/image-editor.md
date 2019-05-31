@@ -117,7 +117,7 @@ En esta tabla se describen los elementos de la barra de herramientas **Modo Edit
 |**Selección irregular**|Permite seleccionar una región irregular de una imagen. Después de seleccionar una región, la puede cortar, copiar, mover, escalar, girar, voltear o eliminar. Cuando hay una selección activa, las herramientas de dibujo solo afectan a la región seleccionada.|
 |**Selección de varita**|Permite seleccionar una región de color similar de una imagen. La *tolerancia*, es decir, la diferencia máxima entre colores adyacentes considerados similares, puede configurarse para incluir un rango mayor o menor de colores similares. Después de seleccionar una región, la puede cortar, copiar, mover, escalar, girar, voltear o eliminar. Cuando hay una selección activa, las herramientas de dibujo solo afectan a la región seleccionada.|
 |**Movimiento panorámico**|Permite mover la imagen con relación al marco de la ventana. En el modo **Movimiento panorámico**, seleccione un punto de la imagen y, después, muévalo alrededor.<br /><br /> Para activar temporalmente el modo **Movimiento panorámico**, mantenga presionada la tecla **Ctrl**.|
-|**Zoom**|Permite presentar más o menos detalles de la imagen con relación al marco de la ventana. En el modo **Zoom**, seleccione un punto de la imagen y muévalo a la derecha o hacia abajo para acercar, o a la izquierda o hacia arriba para alejar.<br /><br /> Para acercar o alejar, mantenga presionada la tecla **Ctrl** mientras usa la rueda del mouse o presiona el signo más (**+**) o el signo menos (**-**).|
+|**Zoom**|Permite presentar más o menos detalles de la imagen con relación al marco de la ventana. En el modo **Zoom**, seleccione un punto de la imagen y muévalo a la derecha o hacia abajo para acercar, o a la izquierda o hacia arriba para alejar.<br /><br /> Para acercar o alejar, mantenga presionada la tecla **Ctrl** mientras usa la rueda del mouse o presiona el signo más ( **+** ) o el signo menos ( **-** ).|
 |**Ajustar el zoom al tamaño real**|Muestra la imagen mediante una relación 1:1 entre los píxeles de la imagen y los píxeles de la pantalla.|
 |**Ajustar el zoom al tamaño completo**|Muestra la imagen completa en el marco de la ventana.|
 |**Ajustar el zoom al ancho**|Muestra el ancho completo en el marco de la ventana.|
@@ -150,11 +150,11 @@ En la tabla siguiente se describen los elementos de la barra de herramientas **E
 
 ### <a name="work-with-mip-levels"></a>Trabajar con niveles de MIP
 
-Algunos formatos de imagen, como DirectDraw Surface (*.dds*), admiten niveles de MIP con nivel de detalle (LOD) del espacio de textura. Para obtener información sobre cómo generar y trabajar con niveles de MIP, vea [Cómo: Crear y modificar niveles de MIP](../designers/how-to-create-and-modify-mip-levels.md)
+Algunos formatos de imagen, como DirectDraw Surface ( *.dds*), admiten niveles de MIP con nivel de detalle (LOD) del espacio de textura. Para obtener información sobre cómo generar y trabajar con niveles de MIP, vea [Cómo: Crear y modificar niveles de MIP](../designers/how-to-create-and-modify-mip-levels.md)
 
 ### <a name="work-with-transparency"></a>Trabajar con transparencia
 
-Algunos formatos de imagen, como DirectDraw Surface (*.dds*), admiten la transparencia. La transparencia se puede utilizar de varias maneras, según la herramienta que use. Para especificar el nivel de transparencia de una selección de color, en la ventana **Propiedades**, establezca el componente **A** (alfa) de la selección de color.
+Algunos formatos de imagen, como DirectDraw Surface ( *.dds*), admiten la transparencia. La transparencia se puede utilizar de varias maneras, según la herramienta que use. Para especificar el nivel de transparencia de una selección de color, en la ventana **Propiedades**, establezca el componente **A** (alfa) de la selección de color.
 
 En esta table se describen el modo en que diferentes tipos de herramientas controlan cómo se aplica la transparencia:
 
@@ -250,8 +250,8 @@ En la tabla siguiente se describen las propiedades de las herramientas:
 |Seleccionar todo|**Ctrl**+**A**|
 |Eliminar la selección actual|**Eliminar**|
 |Cancelar la selección actual|**Esc** (Escape)|
-|Acercar|**Ctrl**+**Rueda del mouse hacia delante**<br /><br /> **Ctrl**+**RePág**<br /><br /> Signo más (**+**)|
-|Alejar|**Ctrl**-**Rueda del mouse hacia atrás**<br /><br /> **Ctrl**-**AvPág**<br /><br /> Signo menos (**-**)|
+|Acercar|**Ctrl**+**Rueda del mouse hacia delante**<br /><br /> **Ctrl**+**RePág**<br /><br /> Signo más ( **+** )|
+|Alejar|**Ctrl**-**Rueda del mouse hacia atrás**<br /><br /> **Ctrl**-**AvPág**<br /><br /> Signo menos ( **-** )|
 |Aplicar a la imagen un movimiento panorámico hacia arriba|**Rueda del mouse hacia atrás**<br /><br /> **AvPág**|
 |Aplicar a la imagen un movimiento panorámico hacia abajo|**Rueda del mouse hacia delante**<br /><br /> **RePág**|
 |Aplicar a la imagen un movimiento panorámico hacia la izquierda|**Mayús**+**Rueda del mouse hacia atrás**<br /><br /> **Rueda del mouse a la izquierda**<br /><br /> **Mayús**+**AvPág**|

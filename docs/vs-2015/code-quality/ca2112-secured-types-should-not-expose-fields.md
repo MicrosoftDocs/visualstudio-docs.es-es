@@ -63,9 +63,9 @@ ms.locfileid: "65687325"
 
  Este ejemplo produce el siguiente resultado:
 
- **Crear una instancia de SecuredTypeWithFields.**
+ **Crear una instancia de SecuredTypeWithFields.** 
 **Campos de tipo segura: 22, 33**
-**cambiar el campo de tipo protegido...**
+**cambiar el campo de tipo protegido...** 
 **Campos de objeto almacenado en caché: 99, 33**
 ## <a name="related-rules"></a>Reglas relacionadas
  [CA1051: No declarar campos de instancia visibles](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)

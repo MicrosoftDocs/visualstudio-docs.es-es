@@ -13,7 +13,7 @@ ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 32558f746745fdcb717aa7c218f996924418ae79
 ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/22/2019
 ms.locfileid: "60082053"
@@ -47,7 +47,7 @@ Sincronizar la configuración de análisis de código para proyectos de código 
   
 3. Haga clic en **análisis de código**.  
   
-4. En el **ejecutar este conjunto de reglas** lista, haga clic en  **\<Examinar... >**.  
+4. En el **ejecutar este conjunto de reglas** lista, haga clic en  **\<Examinar... >** .  
   
 5. En el **abierto** diálogo cuadro, especifique el archivo de conjunto de la regla de directiva de protección.  
   
@@ -65,6 +65,6 @@ Sincronizar la configuración de análisis de código para proyectos de código 
   
 5. Abra el cuadro de diálogo de propiedades para el proyecto de código y mostrar el **análisis de código** página.  
   
-6. En el **ejecutar este conjunto de reglas** lista, haga clic en  **\<Examinar... >**.  
+6. En el **ejecutar este conjunto de reglas** lista, haga clic en  **\<Examinar... >** .  
   
 7. En el **abierto** diálogo cuadro, especifique el archivo de conjunto de la regla.

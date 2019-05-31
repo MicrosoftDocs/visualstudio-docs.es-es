@@ -24,7 +24,7 @@ Después de crear un paquete de arranque, puede crear versiones localizadas del 
 
  De forma predeterminada, Visual Studio 2010 incluye paquetes de programa previo localizados solo para .NET Framework 4, .NET Framework 4 Client Profile, F# Runtime 2.0 y F# Runtime 4.0. Siga tres pasos para crear paquetes localizados para otros programas previos.
 
-1. Cree una carpeta que se denomina después del nombre de la configuración regional en *\Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\\\<Nombrepaqueteprogramaprevio >*.
+1. Cree una carpeta que se denomina después del nombre de la configuración regional en *\Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\\\<Nombrepaqueteprogramaprevio >* .
 
 2. Cree un archivo que contenga los términos de licencia de software para el paquete de programa previo y colóquelo en la nueva carpeta.
 
@@ -76,9 +76,9 @@ Después de crear un paquete de arranque, puede crear versiones localizadas del 
 
 1. Cree una carpeta con el nombre *fr*. El nombre de la carpeta debe coincidir con el nombre de la configuración regional.
 
-     En equipos de 32 bits, cree la carpeta en *\Archivos de programa\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\DotNetFX35SP1\\*.
+     En equipos de 32 bits, cree la carpeta en *\Archivos de programa\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\DotNetFX35SP1\\* .
 
-     En equipos de 64 bits, cree la carpeta en *\Archivos de programa (86)\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\DotNetFX35SP1\\*.
+     En equipos de 64 bits, cree la carpeta en *\Archivos de programa (86)\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\DotNetFX35SP1\\* .
 
 2. Coloque una versión localizada de los términos de licencia de software en la carpeta *fr*.
 

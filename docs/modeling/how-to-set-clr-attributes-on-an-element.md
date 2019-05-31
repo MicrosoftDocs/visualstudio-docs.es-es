@@ -25,7 +25,7 @@ Los atributos personalizados son atributos especiales que se pueden agregar a di
 
 1. En el **DSL Explorer**, seleccione el elemento al que desea agregar un atributo personalizado.
 
-2. En el **propiedades** ventana, junto a la **atributos personalizados** propiedad, haga clic en el (**...** ) icono.
+2. En el **propiedades** ventana, junto a la **atributos personalizados** propiedad, haga clic en el ( **...** ) icono.
 
      El **editar atributos** abre el cuadro de diálogo.
 

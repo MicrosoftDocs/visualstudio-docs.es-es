@@ -76,7 +76,7 @@ Para los proyectos de C o C++, puede establecer el encabezado y ubicaciones de l
 
 1. En la parte superior de la **propiedades** panel, en **configuración**, seleccione **todas las configuraciones de**.
 
-1. En **C o C++** > **General** > **directorios de inclusión adicionales**, especifique la carpeta que contiene los archivos de encabezado.
+1. En **C o C++**  > **General** > **directorios de inclusión adicionales**, especifique la carpeta que contiene los archivos de encabezado.
 
 1. En **vinculador** > **General** > **directorios de bibliotecas adicionales**, especifique la carpeta que contiene los archivos LIB.
 

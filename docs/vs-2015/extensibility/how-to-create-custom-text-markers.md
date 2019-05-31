@@ -34,7 +34,7 @@ Si desea crear un marcador de texto personalizado para enfatizar u organizar el 
   
 1. Cree una entrada del registro de la manera siguiente:  
   
-    HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<Version>* \Text Editor\External Markers\\*\<MarkerGUID>*  
+    HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *\<Version>* \Text Editor\External Markers\\ *\<MarkerGUID>*  
   
     <em>\<MarkerGUID ></em>es un `GUID` usado para identificar el marcador que se va a agregar  
   
@@ -43,9 +43,9 @@ Si desea crear un marcador de texto personalizado para enfatizar u organizar el 
     *\<PackageGUID >* es el GUID del VSPackage implementa el objeto de automatización.  
   
    > [!NOTE]
-   > La ruta de acceso raíz de HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<versión >* puede reemplazarse por una raíz alternativa cuando se inicializa el shell de Visual Studio, para obtener más información, vea [Modificadores de línea de comandos](../extensibility/command-line-switches-visual-studio-sdk.md).  
+   > La ruta de acceso raíz de HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *\<versión >* puede reemplazarse por una raíz alternativa cuando se inicializa el shell de Visual Studio, para obtener más información, vea [Modificadores de línea de comandos](../extensibility/command-line-switches-visual-studio-sdk.md).  
   
-2. Cree cuatro valores en HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<versión >* \Text Editor\External marcadores\\*\<MarkerGUID >*  
+2. Cree cuatro valores en HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *\<versión >* \Text Editor\External marcadores\\ *\<MarkerGUID >*  
   
    - (Predeterminado)  
   

@@ -368,7 +368,7 @@ ms.locfileid: "63436723"
 
 2. En el **firma** ficha, seleccione el **firmar el ensamblado** casilla de verificación.
 
-3. En el **elegir un archivo de clave de nombre seguro** elija  **\<nuevo... >**.
+3. En el **elegir un archivo de clave de nombre seguro** elija  **\<nuevo... >** .
 
 4. En el **crear clave de nombre seguro** diálogo cuadro, escriba un nombre para el nuevo archivo de clave, desactive la **proteger mi archivo de clave con una contraseña** casilla de verificación y, a continuación, elija el **Aceptar** botón.
 
