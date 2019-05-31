@@ -36,7 +36,7 @@ ms.locfileid: "63447017"
 
  La ubicación de la carpeta de publicación es el directorio donde Visual Studio copia los archivos de la solución como, por ejemplo, los manifiestos, los ensamblados y otros archivos de la compilación. Es necesario tener acceso de escritura a este directorio.
 
- Las opciones incluyen el equipo local, un recurso compartido de archivos UNC o un sitio web HTTP/HTTPS. La ruta de acceso puede ser local (*c:\foldername\publishfolder*), relativo (*publicar\\*), o una ubicación completa (*\\\servername\foldername* o http://<em>nombreDeServidor/nombreDeCarpeta</em>).
+ Las opciones incluyen el equipo local, un recurso compartido de archivos UNC o un sitio web HTTP/HTTPS. La ruta de acceso puede ser local (*c:\foldername\publishfolder*), relativo (*publicar\\* ), o una ubicación completa ( *\\\servername\foldername* o http://<em>nombreDeServidor/nombreDeCarpeta</em>).
 
  De forma predeterminada, la ubicación de publicación es *http://localhost/projectname/* si tiene IIS instalado, o el *publicar\\*  directorio si no tiene IIS instalado.
 
@@ -44,7 +44,7 @@ ms.locfileid: "63447017"
 
  La URL de la carpeta de instalación es el directorio desde el que el usuario final instalará la personalización. También es la ruta de acceso que usará la solución para buscar actualizaciones. La ruta de acceso puede ser igual que la ubicación de la carpeta de publicación, pero esto no es un requisito.
 
- Las opciones incluyen el equipo local, un recurso compartido de archivos UNC o un sitio web HTTP/HTTPS. La ruta de acceso puede ser local (*c:\foldername\publishfolder*), relativo (*publicar\\*), o una ubicación completa (*\\\servername\foldername* o http://<em>nombreDeServidor/nombreDeCarpeta</em>). Todas las ubicaciones HTTP/HTTPS se deben crear con caracteres US-ASCII. No se admiten caracteres Unicode.
+ Las opciones incluyen el equipo local, un recurso compartido de archivos UNC o un sitio web HTTP/HTTPS. La ruta de acceso puede ser local (*c:\foldername\publishfolder*), relativo (*publicar\\* ), o una ubicación completa ( *\\\servername\foldername* o http://<em>nombreDeServidor/nombreDeCarpeta</em>). Todas las ubicaciones HTTP/HTTPS se deben crear con caracteres US-ASCII. No se admiten caracteres Unicode.
 
  Si se establece la ruta de instalación, los archivos de personalización deben estar en dicha ubicación para que los usuarios instalen la personalización. La ubicación solo debe establecerse si conoce la ubicación de implementación final.
 

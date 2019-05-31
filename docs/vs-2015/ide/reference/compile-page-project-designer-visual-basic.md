@@ -97,7 +97,7 @@ Use la página **Compilación** del Diseñador de proyectos para especificar las
   
   Al establecer **Option Strict** en **On**, estos tres valores de configuración de advertencias se establecen en **Error**. Al establecer **Option Strict** en **Off**, las tres opciones se establecen en **None**.  
   
-  Puede cambiar individualmente cada valor de configuración de advertencia por **None**, **Warning** o **Error**. Si se establecen las tres opciones de configuración de advertencia en **Error**, `On` aparece en el cuadro `Option strict`. Si se establecen las tres en **None**, `Off` aparece en este cuadro. Para cualquier otra combinación de estas opciones, aparece **(personalizado)**.  
+  Puede cambiar individualmente cada valor de configuración de advertencia por **None**, **Warning** o **Error**. Si se establecen las tres opciones de configuración de advertencia en **Error**, `On` aparece en el cuadro `Option strict`. Si se establecen las tres en **None**, `Off` aparece en este cuadro. Para cualquier otra combinación de estas opciones, aparece **(personalizado)** .  
   
   **Option Compare**  
   Especifica el tipo de comparación de cadena que se va a usar. Seleccione **Binario** para indicar al compilador que use comparaciones de cadenas binarias que distingan mayúsculas de minúsculas. Seleccione **Texto** para usar comparaciones de cadenas de texto que no distingan mayúsculas de minúsculas específicas de la configuración regional.  

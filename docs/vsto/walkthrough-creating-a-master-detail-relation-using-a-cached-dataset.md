@@ -177,7 +177,7 @@ ms.locfileid: "63438548"
 
 5. Deshabilitar la conexión a la base de datos. Desconecte el cable de red del equipo si se encuentra la base de datos en un servidor, o detener el servicio de SQL Server si la base de datos se encuentra en el equipo de desarrollo.
 
-6. Abra Excel y, a continuación, abra **mi Master-Detail.xlsx** desde el *\bin* directorio (*\My Master-Detail\bin* en Visual Basic o *\My Master-Detail\bin\ depurar* en C#).
+6. Abra Excel y, a continuación, abra **mi Master-Detail.xlsx** desde el *\bin* directorio ( *\My Master-Detail\bin* en Visual Basic o *\My Master-Detail\bin\ depurar* en C#).
 
 7. Desplácese por algunos de los registros para ver que la hoja de cálculo funciona normalmente cuando se desconecta.
 

@@ -60,10 +60,10 @@ VSPerfCmd.exe {Launch:AppName|Attach:PID} /{GlobalOff|GlobalOn}[Options]
  **Attach:** `PID`  
  Inicia la generación de perfiles del proceso especificado.  
   
- {**ProcessOff**&#124;**ProcessOn**}**:**`PID`  
+ {**ProcessOff**&#124;**ProcessOn**} **:** `PID`  
  Detiene o inicia la generación de perfiles para el proceso especificado.  
   
- {**ThreadOff**&#124;**ThreadOn**}**:**`TID`  
+ {**ThreadOff**&#124;**ThreadOn**} **:** `TID`  
  Detiene o inicia la generación de perfiles para el proceso especificado (solo método de instrumentación).  
   
 ## <a name="example"></a>Ejemplo  

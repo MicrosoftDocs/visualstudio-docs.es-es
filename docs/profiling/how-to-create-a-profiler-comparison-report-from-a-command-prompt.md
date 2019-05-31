@@ -24,12 +24,12 @@ Puede generar un informe de las Herramientas de generación de perfiles de [!INC
 
  Use la sintaxis siguiente para crear el informe de comparación:
 
- **VSPerfReport /diff**  `VspFileName1` *VspFileName2* [**/**`Options`]
+ **VSPerfReport /diff**  `VspFileName1` *VspFileName2* [ **/** `Options`]
 
  Puede agregar opciones de la tabla siguiente a la línea de comandos **VSPerfReport /diff**.
 
 |Opción|Descripción|
 |------------|-----------------|
-|**DiffThreshold:**[*Value*]|Omita la diferencia si está por debajo de este valor de umbral de porcentaje. Además, no aparecen nuevos datos que tengan valores por debajo de este umbral.|
+|**DiffThreshold:** [*Value*]|Omita la diferencia si está por debajo de este valor de umbral de porcentaje. Además, no aparecen nuevos datos que tengan valores por debajo de este umbral.|
 |**DiffTable:** *TableName*|Use esta tabla para comparar archivos. De forma predeterminada, se usa la tabla de funciones. Especifique el identificador que aparece en **VSPerfReport /querydifftables**.|
 |**DiffColumn:** *ColumnName*|Use esta columna para comparar valores. De forma predeterminado, se usa la columna de porcentaje de muestras exclusivas. Especifique el identificador que aparece en **VSPerfReport /querydifftables**.|

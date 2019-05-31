@@ -69,9 +69,9 @@ Las pruebas automatizadas que controlan la aplicación a través de la interfaz 
 
 1. **Crear un proyecto de prueba de IU codificada**
 
-    Las pruebas de IU codificadas deben incluirse en un proyecto de prueba de IU codificada. Si aún no tiene un proyecto de este tipo, cree uno. En el **Explorador de soluciones**, en el menú contextual de la solución, elija **Agregar**, **Nuevo proyecto** y seleccione **Visual Basic** o **Visual C#**. A continuación, elija **Pruebas**, **Prueba de IU codificada**.
+    Las pruebas de IU codificadas deben incluirse en un proyecto de prueba de IU codificada. Si aún no tiene un proyecto de este tipo, cree uno. En el **Explorador de soluciones**, en el menú contextual de la solución, elija **Agregar**, **Nuevo proyecto** y seleccione **Visual Basic** o **Visual C#** . A continuación, elija **Pruebas**, **Prueba de IU codificada**.
 
-   - <em>No se ven las plantillas de proyecto **Prueba de IU codificada</em>*.*
+   - <em>No se ven las plantillas de proyecto **Prueba de IU codificada</em>* .*
 
       Puede que esté usando una versión de Visual Studio que no es compatible con pruebas de IU programadas. Para crear pruebas de IU codificadas, debe usar Visual Studio Enterprise.
 

@@ -23,7 +23,7 @@ ms.locfileid: "62565165"
 ---
 # <a name="upgrade-mdf-files"></a>Actualizar archivos .mdf
 
-En este tema se describe las opciones para actualizar un archivo de base de datos (*.mdf*) después de instalar una versión más reciente de Visual Studio. Incluye instrucciones para las tareas siguientes:
+En este tema se describe las opciones para actualizar un archivo de base de datos ( *.mdf*) después de instalar una versión más reciente de Visual Studio. Incluye instrucciones para las tareas siguientes:
 
 - Actualizar un archivo de base de datos para utilizar una versión más reciente de SQL Server Express LocalDB
 
@@ -33,7 +33,7 @@ En este tema se describe las opciones para actualizar un archivo de base de dato
 
 - Asegúrese de SQL Server Express el motor de base de datos predeterminado
 
-Puede usar Visual Studio para abrir un proyecto que contiene un archivo de base de datos (*.mdf*) que se creó con una versión anterior de SQL Server Express o LocalDB. Sin embargo, para continuar desarrollando el proyecto en Visual Studio, debe tener esa versión de SQL Server Express o LocalDB instalada en el mismo equipo que Visual Studio, o debe actualizar el archivo de base de datos. Si actualiza el archivo de base de datos, no podrá obtener acceso a él mediante el uso de las versiones anteriores de SQL Server Express o LocalDB.
+Puede usar Visual Studio para abrir un proyecto que contiene un archivo de base de datos ( *.mdf*) que se creó con una versión anterior de SQL Server Express o LocalDB. Sin embargo, para continuar desarrollando el proyecto en Visual Studio, debe tener esa versión de SQL Server Express o LocalDB instalada en el mismo equipo que Visual Studio, o debe actualizar el archivo de base de datos. Si actualiza el archivo de base de datos, no podrá obtener acceso a él mediante el uso de las versiones anteriores de SQL Server Express o LocalDB.
 
 También se le pedirá que actualice un archivo de base de datos que se creó a través de una versión anterior de SQL Server Express o LocalDB si la versión del archivo no es compatible con la instancia de SQL Server Express o LocalDB instalada actualmente. Para resolver el problema, Visual Studio le pedirá que actualice el archivo.
 

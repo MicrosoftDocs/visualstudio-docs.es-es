@@ -47,7 +47,7 @@ En este tutorial se muestra cómo utilizar las ventanas **Pilas paralelas** y **
 - Cómo trabajan las ventanas con la escala de tamaño mediante la agrupación, el zoom y otras características relacionadas.  
   
 ## <a name="prerequisites"></a>Requisitos previos  
- En este tutorial se da por supuesto que **solo mi código** está habilitado. En el menú **Herramientas**, haga clic en **Opciones**, expanda el nodo **Depuración**, seleccione **General** y, a continuación, seleccione **Habilitar Solo mi código (solo administrado)**. Si no configura esta característica, puede utilizar este tutorial, pero los resultados pueden diferir de las ilustraciones.  
+ En este tutorial se da por supuesto que **solo mi código** está habilitado. En el menú **Herramientas**, haga clic en **Opciones**, expanda el nodo **Depuración**, seleccione **General** y, a continuación, seleccione **Habilitar Solo mi código (solo administrado)** . Si no configura esta característica, puede utilizar este tutorial, pero los resultados pueden diferir de las ilustraciones.  
   
 ## <a name="c-sample"></a>Ejemplo de C#  
  Si utiliza el ejemplo de C#, también se supone que Código externo está oculto. Para alternar si se muestra el código externo, haga clic con el botón derecho en el encabezado de tabla **Nombre** de la ventana **Pila de llamadas** y, a continuación, active o desactive **Mostrar código externo**. Si no configura esta característica, puede utilizar este tutorial, pero los resultados pueden diferir de las ilustraciones.  

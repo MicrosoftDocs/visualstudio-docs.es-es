@@ -60,7 +60,7 @@ En Visual Studio, los usuarios pueden validar el código fuente en un proyecto c
    > [!NOTE]
    > Solo se llamará al método en circunstancias concretas y los puntos de interrupción no funcionarán automáticamente. Para obtener más información, vea [Depurar la validación de capas](#debugging).  
   
-5. Para instalar la extensión en la instancia principal de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]o en otro equipo, busque el archivo **.vsix** en *bin\\*. Cópielo en el equipo donde desea instalarlo y, a continuación, haga doble clic en él. Para desinstalarla, use **Extensiones y actualizaciones** en el menú **Herramientas** .  
+5. Para instalar la extensión en la instancia principal de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]o en otro equipo, busque el archivo **.vsix** en *bin\\* . Cópielo en el equipo donde desea instalarlo y, a continuación, haga doble clic en él. Para desinstalarla, use **Extensiones y actualizaciones** en el menú **Herramientas** .  
   
 ## <a name="adding-a-layer-validator-to-a-separate-vsix"></a>Agregar un validador de capas a un VSIX independiente  
  Si desea crear un VSIX que contenga validadores de capas, comandos y otras extensiones, le recomendamos que cree un proyecto para definir VSIX y proyectos independientes para los controladores. Para obtener información sobre otros tipos de extensión de modelado, vea [modelos y diagramas UML ampliar](../modeling/extend-uml-models-and-diagrams.md).  
@@ -71,7 +71,7 @@ En Visual Studio, los usuarios pueden validar el código fuente en un proyecto c
   
 2. Identifique o cree un proyecto de VSIX en la solución. Un proyecto de VSIX contiene un archivo denominado **source.extension.vsixmanifest**. Si tiene que agregar un proyecto VSIX, siga estos pasos:  
   
-    1. En el cuadro de diálogo **Nuevo proyecto** , elija **Visual C#**, **Extensibilidad**, **Proyecto VSIX**.  
+    1. En el cuadro de diálogo **Nuevo proyecto** , elija **Visual C#** , **Extensibilidad**, **Proyecto VSIX**.  
   
     2. En el **Explorador de soluciones**, en el menú contextual del proyecto VSIX, elija **Establecer como proyecto de inicio**.  
   

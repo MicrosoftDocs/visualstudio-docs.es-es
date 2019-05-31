@@ -1,5 +1,5 @@
 ---
-title: Extender documentos de Word y libros de Excel en complementos VSTO en tiempo de ejecución
+title: Extender documentos de Microsoft Word y libros de Excel en complementos VSTO en tiempo de ejecución
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 11171cf619e77508852178ee442ce6e26f9b573f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2058029bfc188cd3284768e3d1782f7cda96c5c1
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437237"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402105"
 ---
 # <a name="extend-word-documents-and-excel-workbooks-in-vsto-add-ins-at-runtime"></a>Extender documentos de Word y libros de Excel en complementos VSTO en tiempo de ejecución
   Puede utilizar un complemento de VSTO para personalizar documentos de Word y libros de Excel de las maneras siguientes:

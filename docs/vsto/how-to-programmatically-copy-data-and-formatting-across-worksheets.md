@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Copiar datos y formato entre hojas de cálculo mediante programación
+title: Copiar datos y formato entre hojas de cálculo mediante programación
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 77feefe7a2d274403e483dbaa3167f53f72ae168
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b90704d6d9fe555920fb042939079bd53884cfbe
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62575304"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402211"
 ---
 # <a name="how-to-programmatically-copy-data-and-formatting-across-worksheets"></a>Procedimiento Copiar datos y formato entre hojas de cálculo mediante programación
   Puede copiar datos desde un rango de una hoja a todas las hojas en un libro mediante el <xref:Microsoft.Office.Interop.Excel.Worksheets.FillAcrossSheets%2A> método. Especificar un intervalo, y si desea copiar los datos, formato o ambos.

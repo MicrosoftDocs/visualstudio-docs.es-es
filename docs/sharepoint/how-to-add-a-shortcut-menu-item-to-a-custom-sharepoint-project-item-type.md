@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Agregar un elemento de menú contextual a un tipo de elemento de proyecto personalizado de SharePoint | Documentos de Microsoft
+title: Agregar elemento de menú contextual para el tipo de elemento de proyecto de SharePoint personalizado
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7de1bf04137c0e799e19e658307d630ec3fa6a78
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 95c47cdc00fc9035870aed4ac2e0bee4d3c1c5af
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967173"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401621"
 ---
 # <a name="how-to-add-a-shortcut-menu-item-to-a-custom-sharepoint-project-item-type"></a>Procedimiento Agregar un elemento de menú contextual a un tipo de elemento de proyecto personalizado de SharePoint
   Al definir un tipo de elemento de proyecto de SharePoint personalizado, puede agregar un elemento de menú contextual para el elemento de proyecto. El elemento de menú aparece cuando un usuario del botón secundario en el elemento de proyecto **el Explorador de soluciones**.

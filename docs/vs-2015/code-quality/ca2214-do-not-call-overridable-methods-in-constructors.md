@@ -52,6 +52,6 @@ ms.locfileid: "58988274"
 
  Este ejemplo produce el siguiente resultado:
 
- **Llamar al constructor base. ¿**
+ **Llamar al constructor base. ¿** 
 **DoSomething derivado se denomina - inicializado? No**
 **derivados de llamar al constructor.**

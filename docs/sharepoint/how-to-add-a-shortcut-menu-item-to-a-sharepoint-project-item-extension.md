@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Agregar un elemento de menú contextual para una extensión de elemento de proyecto de SharePoint | Documentos de Microsoft
+title: Agregar elemento de menú contextual para la extensión de elemento de proyecto de SharePoint
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 168e881191843d63f515d5066ec451848319d22e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8041f9cbf19d1e1324478b92d2655f1377102b81
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967160"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401637"
 ---
 # <a name="how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension"></a>Procedimiento Agregar un elemento de menú contextual para una extensión de elemento de proyecto de SharePoint
   Puede agregar un elemento de menú contextual a un elemento de proyecto de SharePoint existente mediante el uso de una extensión de elemento de proyecto. El elemento de menú aparece cuando un usuario del botón secundario en el elemento de proyecto **el Explorador de soluciones**.

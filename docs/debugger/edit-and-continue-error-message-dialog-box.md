@@ -40,7 +40,7 @@ Las posibles razones para este mensaje de error incluyen:
 - Se está intentando editar código mientras se depuraba una recuperación ante desastres. un volcado de Dr. Watson.
 - Si intenta modificar el código después de que se produce una excepción no controlada y la opción **desenredar la pila de llamadas en las excepciones no controladas** no está seleccionada.
 - Se está intentando editar código mientras se depura una aplicación incrustada en tiempo de ejecución.
-- Se está intentando editar código administrado mediante una versión de .NET Framework anteriores a 4.5.1 con un objetivo de la aplicación de 64 bits. Para utilizar editar y continuar para .NET Framework anteriores a 4.5.1, establezca el destino en **x86** en el  **\<NombreDelProyecto >** > **propiedades**  >  **Compilar** ficha, **compilador avanzada** configuración.
+- Se está intentando editar código administrado mediante una versión de .NET Framework anteriores a 4.5.1 con un objetivo de la aplicación de 64 bits. Para utilizar editar y continuar para .NET Framework anteriores a 4.5.1, establezca el destino en **x86** en el  **\<NombreDelProyecto >**  > **propiedades**  >  **Compilar** ficha, **compilador avanzada** configuración.
 - Se está intentando editar código en un ensamblado que se modificó durante la depuración y se volvió a cargar.
 - Se está intentando editar código en un ensamblado que no se ha cargado.
 - Comenzar a depurar una versión anterior de una aplicación, porque la versión más reciente tiene errores de compilación.
