@@ -13,12 +13,12 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 3a81f6aa138b361a44a272ebda3557d27a914c64
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 53dce8b6b468dd5754b5708afccdcbe6cb908d1d
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62854156"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66432218"
 ---
 # <a name="record-and-replay-live-aspnet-apps-on-azure-virtual-machines-using-the-snapshot-debugger"></a>La grabación y reproducción de las aplicaciones ASP.NET activas en Azure virtual machines con el depurador de instantáneas
 
@@ -44,7 +44,7 @@ En este tutorial va a:
 * Depuración en tiempo de desplazamiento está disponible para las siguientes aplicaciones web de máquina virtual de Azure:
   * Aplicaciones de ASP.NET (AMD64) que se ejecutan en .NET Framework 4.8 o posterior.
 
-## <a name="open-your-project-and-start-the-snapshot-debugger-with-time-travel-debugging-enabled"></a>Abra el proyecto e iniciar al depurador de instantáneas con la depuración en tiempo de viaje habilitado
+## <a name="start-the-snapshot-debugger-with-time-travel-debugging-enabled"></a>Iniciar al depurador de instantáneas con la depuración en tiempo de viaje habilitado
 
 1. Abra el proyecto para que gustaría recopilar un tiempo de grabación de viaje.
 

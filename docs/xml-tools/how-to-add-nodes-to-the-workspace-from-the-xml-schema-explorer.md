@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Agregar nodos al área de trabajo desde el Explorador de esquemas XML
+title: Agregar nodos al área de trabajo desde el Explorador de esquemas XML
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 3b5a5749-9693-4b29-b0c2-8e07e0e55514
@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f38760e6a04bd9e88fd4ff6e8c9d31f30ba27647
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 22ff9e7ede2861577403eb09d549911afef0f0a5
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62783259"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66432190"
 ---
 # <a name="how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer"></a>Procedimiento Adición de nodos al área de trabajo desde el Explorador de esquemas XML
 

@@ -1,5 +1,5 @@
 ---
-title: 'Diseñador de flujo de trabajo - Cómo: Definir y consumir a delegados de actividad'
+title: 'Diseñador de flujo de trabajo: Definir y consumir a delegados de actividad'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c68e42ad-3ec0-4c2d-b104-fe36c6d83b5e
@@ -8,12 +8,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 25f844acefed50b5bb35e3b1d8c6a570e11ca194
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 34cb06bbc5c9575f5a10507a8015c9819e7b533b
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949529"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66431800"
 ---
 # <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>Procedimiento Definir y usar delegados de actividad en el Diseñador de flujo de trabajo
 
@@ -34,7 +34,7 @@ ms.locfileid: "62949529"
 
 5. Haga clic en **crear argumento**. Asigne nombre al nuevo argumento **elementos**.
 
-6. En el **tipo de argumento** columna, seleccione **matriz de [T]**.
+6. En el **tipo de argumento** columna, seleccione **matriz de [T]** .
 
 7. En el Explorador de tipos, seleccione **objeto** y, a continuación, seleccione **Aceptar**.
 
@@ -52,7 +52,7 @@ ms.locfileid: "62949529"
 
 14. En el **tipo de Variable** columna, seleccione **Int32**. Deje el **ámbito** como **mientras**y el **predeterminado** columna en blanco.
 
-15. Establecer el **condición** propiedad de la <xref:System.Activities.Statements.While> actividad **índice < Items.Length;**.
+15. Establecer el **condición** propiedad de la <xref:System.Activities.Statements.While> actividad **índice < Items.Length;** .
 
 16. Arrastre un <xref:System.Activities.Statements.InvokeDelegate> actividad desde el **primitivas** sección del cuadro de herramientas para el **cuerpo** de la <xref:System.Activities.Statements.While> actividad.
 
@@ -60,7 +60,7 @@ ms.locfileid: "62949529"
 
 18. En el **propiedades** cuadrícula para el <xref:System.Activities.Statements.InvokeDelegate> actividad, haga clic en el **...**  situado en la **argumentos de delegado** propiedad.
 
-19. En el **valor** columna del argumento denominado **argumento**, escriba **elementos [índice]**. Haga clic en **Aceptar** para cerrar el **DelegateArguments** cuadro de diálogo.
+19. En el **valor** columna del argumento denominado **argumento**, escriba **elementos [índice]** . Haga clic en **Aceptar** para cerrar el **DelegateArguments** cuadro de diálogo.
 
 20. Arrastre una actividad <xref:System.Activities.Statements.Assign> sobre la línea horizontal bajo la actividad <xref:System.Activities.Statements.InvokeDelegate>. El <xref:System.Activities.Statements.Assign> se crea una actividad y un <xref:System.Activities.Statements.Sequence> actividad se crea automáticamente para contener las dos actividades en el **cuerpo** sección de la **MyForEach** actividad. La secuencia es necesaria porque el **cuerpo** sección solo puede contener una sola actividad. Creación automática de un nuevo <xref:System.Activities.Statements.Sequence> actividad es una característica nueva de .NET Framework 4.5.
 
@@ -76,11 +76,11 @@ ms.locfileid: "62949529"
 
 3. Arrastre un **MyForEach** actividad desde el cuadro de herramientas a la superficie del diseñador. La actividad está en una sección del cuadro de herramientas con el mismo nombre que el proyecto.
 
-4. Establecer el **elementos** propiedad de la **MyForEach** actividad **new Object [] {1, "abc"}**.
+4. Establecer el **elementos** propiedad de la **MyForEach** actividad **new Object [] {1, "abc"}** .
 
 5. Arrastre un <xref:System.Activities.Statements.WriteLine> actividad desde la **primitivas** sección del cuadro de herramientas para el **Delegate: cuerpo** sección de la **MyForEach** actividad.
 
-6. Establecer el **texto** propiedad de la <xref:System.Activities.Statements.WriteLine> actividad **Argument.ToString ()**.
+6. Establecer el **texto** propiedad de la <xref:System.Activities.Statements.WriteLine> actividad **Argument.ToString ()** .
 
 Cuando se ejecuta el flujo de trabajo, la consola muestra el siguiente resultado:
 
