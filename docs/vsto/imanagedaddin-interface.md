@@ -56,13 +56,13 @@ interface IManagedAddin : IUnknown
 
 1. La aplicación detecta los complementos de VSTO buscando las entradas en la siguiente clave del registro:
 
-    **HKEY_CURRENT_USER\Software\Microsoft\Office\\*\<nombreDeAplicación >* \Addins\\**
+    **HKEY_CURRENT_USER\Software\Microsoft\Office\\ *\<nombreDeAplicación >* \Addins\\**
 
     Cada entrada de esta clave del Registro es un identificador único del complemento de VSTO. Normalmente, se trata del nombre del ensamblado de complemento de VSTO.
 
 2. La aplicación busca una entrada `Manifest` en la entrada de cada complemento de VSTO.
 
-    Complementos VSTO administrados pueden almacenar la ruta de acceso completa de un manifiesto en el `Manifest` entrada bajo **HKEY_CURRENT_USER\Software\Microsoft\Office\\_\<nombreDeAplicación >_ \Addins\\  _\<ID de complemento >_**. Un manifiesto es un archivo (normalmente un archivo XML) que proporciona información que se usa para cargar el complemento VSTO.
+    Complementos VSTO administrados pueden almacenar la ruta de acceso completa de un manifiesto en el `Manifest` entrada bajo **HKEY_CURRENT_USER\Software\Microsoft\Office\\ _\<nombreDeAplicación >_ \Addins\\  _\<ID de complemento >_ **. Un manifiesto es un archivo (normalmente un archivo XML) que proporciona información que se usa para cargar el complemento VSTO.
 
 3. Si la aplicación encuentra una entrada `Manifest` , la aplicación intenta cargar un componente de cargador de complemento de VSTO administrado. Para ello, la aplicación intenta crear un objeto COM que implementa la interfaz IManagedAddin.
 
