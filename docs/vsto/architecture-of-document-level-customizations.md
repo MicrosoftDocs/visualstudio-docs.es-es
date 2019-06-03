@@ -84,18 +84,18 @@ ms.locfileid: "63440358"
 
 |Excel|Palabra|
 |-----------|----------|
-|Libro de Excel (*.xlsx*)<br /><br /> Libro de Excel habilitado para macros (*.xlsm*)<br /><br /> Libro binario de Excel (*.xlsb*)<br /><br /> Libro de Excel 97-2003 (*.xls*)<br /><br /> Plantilla de Excel (*.xltx*)<br /><br /> Plantilla de Excel habilitado para macros (*.xltm*)<br /><br /> Plantilla de Excel 97-2003 (*. xlt*)|Documento de Word (*.docx*)<br /><br /> Documento de Word habilitado para macros (*.docm*)<br /><br /> Documento de Word 97-2003 (*.doc*)<br /><br /> Plantilla de Word (*.dotx*)<br /><br /> Plantilla de Word habilitado para macros (*.dotm*)<br /><br /> Plantilla de Word 97-2003 (*.dot*)|
+|Libro de Excel ( *.xlsx*)<br /><br /> Libro de Excel habilitado para macros ( *.xlsm*)<br /><br /> Libro binario de Excel ( *.xlsb*)<br /><br /> Libro de Excel 97-2003 ( *.xls*)<br /><br /> Plantilla de Excel ( *.xltx*)<br /><br /> Plantilla de Excel habilitado para macros ( *.xltm*)<br /><br /> Plantilla de Excel 97-2003 ( *. xlt*)|Documento de Word ( *.docx*)<br /><br /> Documento de Word habilitado para macros ( *.docm*)<br /><br /> Documento de Word 97-2003 ( *.doc*)<br /><br /> Plantilla de Word ( *.dotx*)<br /><br /> Plantilla de Word habilitado para macros ( *.dotm*)<br /><br /> Plantilla de Word 97-2003 ( *.dot*)|
 
- Debe diseñar extensiones de código administrado únicamente para los documentos en los formatos que se admiten. De lo contrario, es posible que no se generen determinados eventos si el documento se abre en la aplicación. Por ejemplo, el <xref:Microsoft.Office.Tools.Excel.Workbook.Open> evento no se produce cuando se utilizan extensiones de código administrado con libros guardados en el formato de hoja de cálculo de Excel XML o en la página web (*.htm*; *.html*) formato.
+ Debe diseñar extensiones de código administrado únicamente para los documentos en los formatos que se admiten. De lo contrario, es posible que no se generen determinados eventos si el documento se abre en la aplicación. Por ejemplo, el <xref:Microsoft.Office.Tools.Excel.Workbook.Open> evento no se produce cuando se utilizan extensiones de código administrado con libros guardados en el formato de hoja de cálculo de Excel XML o en la página web ( *.htm*; *.html*) formato.
 
 ### <a name="support-for-word-documents-that-have-xml-file-name-extensions"></a>Compatibilidad con documentos de Word que tienen extensiones de nombre de archivo .xml
  Las plantillas de proyecto de nivel de documento no permiten crear proyectos basados en los siguientes formatos de archivo:
 
-- Documento XML de Word (*\*xml*).
+- Documento XML de Word ( *\*xml*).
 
-- Documento XML de Word 2003 (*\*xml*).
+- Documento XML de Word 2003 ( *\*xml*).
 
-  Si desea que los usuarios finales utilicen las personalizaciones en estos formatos de archivo, compile e implemente una personalización que use uno de los formatos de archivo compatibles que se especifican en la tabla anterior. Después de instalar la personalización, los usuarios finales pueden guardar el documento en el documento XML de Word (*\*xml*) formato o el documento XML de Word 2003 (*\*xml*) formato y la personalización continuará funcionando según lo previsto.
+  Si desea que los usuarios finales utilicen las personalizaciones en estos formatos de archivo, compile e implemente una personalización que use uno de los formatos de archivo compatibles que se especifican en la tabla anterior. Después de instalar la personalización, los usuarios finales pueden guardar el documento en el documento XML de Word ( *\*xml*) formato o el documento XML de Word 2003 ( *\*xml*) formato y la personalización continuará funcionando según lo previsto.
 
 ## <a name="Components"></a> Componentes de las personalizaciones
  Los componentes principales de una personalización son el documento y el ensamblado. Además de estos componentes, existen otras partes que desempeñan un papel importante en la forma en que las aplicaciones de Microsoft Office detectan y cargan personalizaciones.
@@ -139,7 +139,7 @@ ms.locfileid: "63440358"
 
 8. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] carga el ensamblado de personalización en el dominio de aplicación.
 
-9.  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] llama al controlador de eventos de **Startup** en el ensamblado de personalización. Para obtener más información, consulte [eventos en proyectos de Office](../vsto/events-in-office-projects.md)
+9. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] llama al controlador de eventos de **Startup** en el ensamblado de personalización. Para obtener más información, consulte [eventos en proyectos de Office](../vsto/events-in-office-projects.md)
 
 ## <a name="see-also"></a>Vea también
 - [Arquitectura de soluciones de Office en Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)

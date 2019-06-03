@@ -45,7 +45,7 @@ En Visual Studio, puede dibujar un *diagrama de casos de uso* quién usa la apli
   
   Los casos de uso solamente se usan para los requisitos funcionales de un sistema. Otros requisitos, como las reglas de negocio, los requisitos de calidad del servicio y las restricciones de implementación, deben representarse por separado. La arquitectura y los detalles internos también deben describirse por separado. Para obtener más información sobre cómo definir los requisitos del usuario, consulte [modelar los requisitos del usuario](../modeling/model-user-requirements.md).  
   
-   Los ejemplos que se usan en este tema están relacionados con un sitio web en el que los clientes pueden hacer pedidos de comida de restaurantes locales.  
+  Los ejemplos que se usan en este tema están relacionados con un sitio web en el que los clientes pueden hacer pedidos de comida de restaurantes locales.  
   
   ![Los elementos en un diagrama de casos de uso](../modeling/media/uml-ucovactor.png "UML_UCOvActor")  
   
@@ -57,7 +57,7 @@ En Visual Studio, puede dibujar un *diagrama de casos de uso* quién usa la apli
   
 - Su *system (4)* es todo lo que está desarrollando. Puede ser un pequeño componente de software cuyos actores simplemente son otros componentes de software; puede ser una aplicación completa; o puede ser un gran conjunto de aplicaciones distribuidas que se implementan en muchos equipos y dispositivos. Subsistemas del ejemplo son **sitio Web de pedidos de comida**, **comida entrega Business**, **versión 2 del sitio Web**.  
   
-   En un diagrama de casos de uso pueden mostrarse los casos de uso que el sistema o sus subsistemas admiten.   
+   En un diagrama de casos de uso pueden mostrarse los casos de uso que el sistema o sus subsistemas admiten.  
   
 ## <a name="BasicSteps"></a> Pasos básicos para dibujar diagramas de casos de uso  
   
@@ -170,7 +170,7 @@ En Visual Studio, puede dibujar un *diagrama de casos de uso* quién usa la apli
   
  ![Caso de uso mostrando muchos a muchos multiplicidad](../modeling/media/uml-ucguidemulti2.png "UML_UCGuideMulti2")  
   
-- Para indicar que varios actores de la misma clase pueden participar en una única instancia de un caso de uso, establezca la multiplicidad del extremo del actor de la asociación en ** 1... \\***.  
+- Para indicar que varios actores de la misma clase pueden participar en una única instancia de un caso de uso, establezca la multiplicidad del extremo del actor de la asociación en **1..\\***.  
   
    En la ilustración, uno o varios restaurantes pueden participar en la elaboración del mismo pedido de menú.  
   
@@ -190,11 +190,11 @@ En Visual Studio, puede dibujar un *diagrama de casos de uso* quién usa la apli
   
    - **1** indicar que exactamente una instancia de este rol participa en cada vínculo.  
   
-   - **1..\\*** para indicar que una o más instancias de este rol participan en cada vínculo.  
+   - **1..\\** * para indicar que una o más instancias de este rol participan en cada vínculo.  
   
    - **de 0.. 1** para indicar que la participación es opcional.  
   
-   - **\\*** para indicar que cero o más instancias de este rol participan en el vínculo.  
+   - **\\** * para indicar que cero o más instancias de este rol participan en el vínculo.  
   
 > [!NOTE]
 > Muchos equipos no incluyen información de multiplicidad en los diagramas de casos de uso, dejando las multiplicidades con el valor predeterminado de 1. En su lugar, proporcionan la información en descripciones independientes de los casos de uso. En este caso, se ocultarán todas las multiplicidades de los diagramas de casos de uso.  
@@ -215,7 +215,7 @@ En Visual Studio, puede dibujar un *diagrama de casos de uso* quién usa la apli
 3. Arrastre un actor o caso de uso desde **el Explorador de modelos** al nuevo diagrama.  
   
     > [!NOTE]
-    > Si en el nuevo diagrama se coloca un actor y un caso de uso que ya están asociados, la asociación entre ellos aparecerá automáticamente en el nuevo diagrama.   
+    > Si en el nuevo diagrama se coloca un actor y un caso de uso que ya están asociados, la asociación entre ellos aparecerá automáticamente en el nuevo diagrama.  
   
 ## <a name="Details"></a> Describir los casos de uso en detalle  
  Un caso de uso representa:  
