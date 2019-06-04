@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a002c3876eecf0f31a8d104fa235b1208af90699
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f526cc8d5ff7835b3d0b942325f5755898fad147
+ms.sourcegitcommit: c6249a8f3054db881ba62f4e80bf006d440f5a2d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62929132"
+ms.lasthandoff: 06/03/2019
+ms.locfileid: "66462142"
 ---
 # <a name="write-and-debug-running-xaml-code-with-xaml-hot-reload-in-visual-studio"></a>Escribir y depurar código XAML en ejecución con la recarga de acceso frecuente de XAML en Visual Studio
 
@@ -47,7 +47,7 @@ Los siguientes son conocidos de las limitaciones de XAML "hot" volver a cargar. 
 |Creación de objetos de recursos en un diccionario de recursos, como las de la ventana de la página de la aplicación o *App.xaml*|No admitido|Compatible|Ejemplo: agregar un ```SolidColorBrush``` en un diccionario de recursos para su uso como un ```StaticResource```.</br>Nota: Recursos estáticos, los convertidores de tipos de estilo y otros elementos que se escriben en un diccionario de recursos pueden aplicar o usan durante el uso de recarga de acceso frecuente de XAML. No se admite solo la creación del recurso.</br> Cambiar el diccionario de recursos ```Source``` propiedad.| 
 |Adición de nuevos controles, clases, windows u otros archivos al proyecto mientras se está ejecutando la aplicación|No admitido|No admitido|Ninguna|
 |Administrar paquetes de NuGet (agregar, quitar o actualizar paquetes)|No admitido|No admitido|Ninguna|
-|Cambiar el enlace de datos que usa la extensión de marcado {x: Bind}|N/D|Compatible con Visual Studio de 2019 y versiones posteriores|No se admite en Visual Studio de 2018 o versiones anteriores|
+|Cambiar el enlace de datos que usa la extensión de marcado {x: Bind}|N/D|Compatible con Visual Studio de 2019 y versiones posteriores|No se admite en Visual Studio 2017 o versiones anteriores|
 
 ## <a name="error-messages"></a>Mensajes de error
 
