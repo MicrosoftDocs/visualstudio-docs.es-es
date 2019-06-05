@@ -13,18 +13,18 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 8928feffed77f8bfbb3787bd9a20737b9c7b3f9e
-ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.openlocfilehash: 36bbec66e822d7e1daebcadbeeba30e166747368
+ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66213786"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66501130"
 ---
 # <a name="update-visual-studio-while-on-a-servicing-baseline"></a>Actualización de Visual Studio mientras se encuentra en una base de referencia de mantenimiento
 
-Visual Studio 2019 tendrá actualizaciones frecuentes durante su [ciclo de vida del producto](/visualstudio/productinfo/release-rhythm.md#release-channel-updates). Esto incluirá tanto actualizaciones menores de las versiones (por ejemplo: de 16.0 a 16.1) que pueden incluir nuevas características y componentes, y actualizaciones de mantenimiento (por ejemplo: de 16.0.4 a 16.0.5) que contienen solo correcciones destinadas a resolver problemas críticos. 
+Visual Studio 2019 tendrá actualizaciones frecuentes durante su [ciclo de vida del producto](/visualstudio/productinfo/release-rhythm#release-channel-updates). Esto incluirá tanto actualizaciones menores de las versiones (por ejemplo: de 16.0 a 16.1) que pueden incluir nuevas características y componentes, y actualizaciones de mantenimiento (por ejemplo: de 16.0.4 a 16.0.5) que contienen solo correcciones destinadas a resolver problemas críticos. 
 
-Los administradores de empresas puede optar por mantener a sus clientes en una línea de base de mantenimiento, que es compatible con las actualizaciones de mantenimiento durante un año después de la publicación de la siguiente línea de base de mantenimiento. Esto concede más flexibilidad a los desarrolladores y administradores para adoptar las nuevas características, las correcciones de errores o los componentes incluidos en las nuevas actualizaciones menores. La primera línea de base de mantenimiento es 16.0.x. Consulte [Opciones de soporte técnico para clientes de las versiones Enterprise y Professional](/visualstudio/releases/2019/servicing.md#support-options-for-enterprise-and-professional-customers) para obtener más información.
+Los administradores de empresas puede optar por mantener a sus clientes en una línea de base de mantenimiento, que es compatible con las actualizaciones de mantenimiento durante un año después de la publicación de la siguiente línea de base de mantenimiento. Esto concede más flexibilidad a los desarrolladores y administradores para adoptar las nuevas características, las correcciones de errores o los componentes incluidos en las nuevas actualizaciones menores. La primera línea de base de mantenimiento es 16.0.x. Consulte [Opciones de soporte técnico para clientes de las versiones Enterprise y Professional](https://docs.microsoft.com/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers) para obtener más información.
 
 ## <a name="how-to-get-onto-a-servicing-baseline"></a>Incorporación a una línea de base de mantenimiento
 

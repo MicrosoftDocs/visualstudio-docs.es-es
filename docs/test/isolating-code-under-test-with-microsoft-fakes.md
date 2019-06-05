@@ -10,16 +10,16 @@ author: gewarren
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: 89d072c7f9643c5991ec098f87d7ec35a295bbe1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8dd991af976c9262a6a1af7813c1201f68b36ab8
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62971320"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66431738"
 ---
 # <a name="isolate-code-under-test-with-microsoft-fakes"></a>Aislar el código en pruebas con Microsoft Fakes
 
-Microsoft Fakes ayuda a aislar el código que se está probando mediante la sustitución de otros elementos de la aplicación con *código auxiliar* o *correcciones de compatibilidad (shim)*. Se trata de pequeños fragmentos de código que están bajo el control de las pruebas. Al aislar código para pruebas, sabe que, en caso de error, la causa está localizada ahí y no en alguna otra parte. El código auxiliar y las correcciones de compatibilidad (shims) también permiten probar el código aunque no funcionen otras partes de la aplicación todavía.
+Microsoft Fakes ayuda a aislar el código que se está probando mediante la sustitución de otros elementos de la aplicación con *código auxiliar* o *correcciones de compatibilidad (shim)* . Se trata de pequeños fragmentos de código que están bajo el control de las pruebas. Al aislar código para pruebas, sabe que, en caso de error, la causa está localizada ahí y no en alguna otra parte. El código auxiliar y las correcciones de compatibilidad (shims) también permiten probar el código aunque no funcionen otras partes de la aplicación todavía.
 
 Fakes tiene dos versiones:
 
@@ -69,9 +69,7 @@ Para obtener una descripción más detallada, vea [Usar stubs para aislar las pa
      En su lugar, defina una interfaz que el otro componente pueda implementar y que también pueda implementar el código auxiliar con fines de evaluación:
 
     ```csharp
-    public int GetContosoPrice(IStockFeed feed)
-    { return feed.GetSharePrice("COOO"); }
-
+    public int GetContosoPrice(IStockFeed feed) => feed.GetSharePrice("COOO");
     ```
 
     ```vb
