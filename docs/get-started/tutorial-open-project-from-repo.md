@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: a3925fcac62dfee9f448bd826dc7948f8b08d498
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b1796ca10226e4aa5d0242bea89cc01f8452cf9e
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62944136"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402083"
 ---
 # <a name="tutorial-open-a-project-from-a-repo"></a>Tutorial: Abrir un proyecto desde un repositorio
 
@@ -109,11 +109,11 @@ Vea la animación siguiente para comprobar el trabajo que ha realizado en la sec
 
 1. Existen dos maneras de conectarse al repositorio de Azure DevOps:
 
-      - En la sección **Proveedores de servicio hospedado**, elija **Conectar…**.
+      - En la sección **Proveedores de servicio hospedado**, elija **Conectar…** .
 
         ![La sección Proveedores de servicio hospedado de la ventana Team Explorer dentro del IDE de Visual Studio](./media/open-proj-repo-azure-devops.png)
 
-      - En la lista desplegable **Administrar conexiones**, elija **Conectar a un proyecto…**.
+      - En la lista desplegable **Administrar conexiones**, elija **Conectar a un proyecto…** .
 
         ![La sección Administrar conexiones de la ventana Team Explorer dentro del IDE de Visual Studio](./media/open-proj-repo-azuredevops-manage-connections.png)
 
@@ -177,9 +177,9 @@ Vea la animación siguiente para comprobar el trabajo que ha realizado en la sec
 
 Si está listo para codificar con Visual Studio, explore en profundidad cualquiera de los siguientes tutoriales específicos del lenguaje:
 
-- [Tutoriales de Visual Studio | **C#**](./csharp/index.yml)
+- [Tutoriales de Visual Studio | **C#** ](./csharp/index.yml)
 - [Tutoriales de Visual Studio | **Visual Basic**](./visual-basic/index.yml)
-- [Tutoriales de Visual Studio | **C++**](/cpp/get-started/)
+- [Tutoriales de Visual Studio | **C++** ](/cpp/get-started/tutorial-console-cpp)
 - [Tutoriales de Visual Studio | **Python**](/visualstudio/python/)
 - [Tutoriales de Visual Studio | **JavaScript**, **TypeScript** y **Node.js**](/visualstudio/javascript/)
 
