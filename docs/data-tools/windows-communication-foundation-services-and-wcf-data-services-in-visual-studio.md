@@ -35,12 +35,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 57b66473333bfe5e22c3f5aca47764bb789a33cd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3032c73d92f69e6380427bfc675ee263a3eb013f
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62564837"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714469"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Servicios de Windows Communication Foundation y servicios de datos WCF en Visual Studio
 
@@ -56,7 +56,7 @@ WCF Data Services es una implementación del protocolo Open Data (OData) estánd
 
 ### <a name="wcf-programming-model"></a>Modelo de programación de WCF
 
-El modelo de programación de WCF se basa en la comunicación entre dos entidades: un servicio WCF y un cliente de WCF. El modelo de programación se encapsula en la <xref:System.ServiceModel> espacio de nombres en .NET Framework.
+El modelo de programación de WCF se basa en la comunicación entre dos entidades: un servicio WCF y un cliente de WCF. El modelo de programación se encapsula en la <xref:System.ServiceModel> espacio de nombres en. NET.
 
 ### <a name="wcf-service"></a>Servicio WCF
 
@@ -228,7 +228,7 @@ Puede enlazar los datos devueltos por un servicio de Windows Communication Found
 
 ## <a name="how-to-configure-a-service-to-reuse-existing-types"></a>Procedimiento Configurar un servicio para volver a usar los tipos existentes
 
-Cuando se agrega una referencia de servicio a un proyecto, se generan los tipos definidos en el servicio en el proyecto local. En muchos casos, esto crea tipos duplicados cuando un servicio utiliza tipos comunes de .NET Framework o tipos se definen en una biblioteca compartida.
+Cuando se agrega una referencia de servicio a un proyecto, se generan los tipos definidos en el servicio en el proyecto local. En muchos casos, esto crea tipos duplicados cuando un servicio utiliza tipos comunes de .NET o cuando se definen los tipos en una biblioteca compartida.
 
 Para evitar este problema, los tipos en ensamblados de referencia se comparten de forma predeterminada. Si desea deshabilitar el tipo de uso compartido para uno o varios ensamblados, puede hacer en el **configurar referencia de servicio** cuadro de diálogo.
 

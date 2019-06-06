@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: fa965caf63dad6e81e2aeabbc93e97c7aa4b7a80
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ef7b693a881aaa1457004c84968ebc80936fc2b2
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546204"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714853"
 ---
 # <a name="ca1403-auto-layout-types-should-not-be-com-visible"></a>CA1403: Los tipos de diseño automático no deben ser visibles a través de COM
 
@@ -39,7 +39,7 @@ Un tipo de valor visibles del modelo de objetos componentes (COM) se marca con e
 
 ## <a name="rule-description"></a>Descripción de la regla
 
-<xref:System.Runtime.InteropServices.LayoutKind> tipos de diseño son administrados por common language runtime. El diseño de estos tipos puede cambiar entre las versiones de .NET Framework, lo que interrumpe a los clientes COM que esperan un diseño concreto. Si el <xref:System.Runtime.InteropServices.StructLayoutAttribute> no se especifica el atributo, especifican los compiladores de C#, Visual Basic y C++ [LayoutKind.Auto](<xref:System.Runtime.InteropServices.LayoutKind.Auto>) para tipos de valor.
+<xref:System.Runtime.InteropServices.LayoutKind> tipos de diseño son administrados por common language runtime. El diseño de estos tipos puede cambiar entre las versiones de. NET, lo que interrumpe a los clientes COM que esperan un diseño concreto. Si el <xref:System.Runtime.InteropServices.StructLayoutAttribute> no se especifica el atributo, especifican los compiladores de C#, Visual Basic y C++ [LayoutKind.Auto](<xref:System.Runtime.InteropServices.LayoutKind.Auto>) para tipos de valor.
 
 A menos que marque en caso contrario, todos los tipos públicos y no genéricos son visibles para COM y todos los tipos no públicos y genéricos no son visibles para COM. Sin embargo, para reducir los falsos positivos, esta regla requiere la visibilidad de COM de tipo explícita. El ensamblado contenedor debe estar marcado con el <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> establecido en `false` y el tipo se debe marcar con el <xref:System.Runtime.InteropServices.ComVisibleAttribute> establecido en `true`.
 

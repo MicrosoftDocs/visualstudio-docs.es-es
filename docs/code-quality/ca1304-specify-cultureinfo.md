@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f1fe4ebce3a49c4aa626515e22eacd1c8e263847
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f6d4776f6bcbf89e95301bd2c7ef4f6f6b5680d9
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797502"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714357"
 ---
 # <a name="ca1304-specify-cultureinfo"></a>CA1304: Especificar CultureInfo
 
@@ -40,7 +40,7 @@ Un método o constructor llama a un miembro que tiene una sobrecarga que acepta 
 
 ## <a name="rule-description"></a>Descripción de la regla
 
-Cuando un <xref:System.Globalization.CultureInfo> o <xref:System.IFormatProvider?displayProperty=nameWithType> objeto no se proporciona, el valor predeterminado proporcionado por el miembro sobrecargado podría no tener el efecto deseado en todas las configuraciones regionales. Además, los miembros de .NET Framework eligen la referencia cultural predeterminada y formato basado en suposiciones que pueden no ser correctas para su código. Para asegurarse de que el código funciona según lo esperado para sus escenarios, debería proporcionar información de referencia cultural específica según las siguientes directrices:
+Cuando un <xref:System.Globalization.CultureInfo> o <xref:System.IFormatProvider?displayProperty=nameWithType> objeto no se proporciona, el valor predeterminado proporcionado por el miembro sobrecargado podría no tener el efecto deseado en todas las configuraciones regionales. Además, los miembros de .NET eligen referencia cultural predeterminada y formato basado en suposiciones que pueden no ser correctas para su código. Para asegurarse de que el código funciona según lo esperado para sus escenarios, debería proporcionar información de referencia cultural específica según las siguientes directrices:
 
 - Si el valor se mostrará al usuario, use la referencia cultural actual. Vea <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType>.
 

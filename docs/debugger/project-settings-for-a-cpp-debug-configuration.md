@@ -112,12 +112,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fb4f60c9e36b7c8c7a918b2298d7522e7c5d3793
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: df0b604d865c31bb389fe8955521fb61208e4c11
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63407884"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715447"
 ---
 # <a name="project-settings-for-a-c-debug-configuration"></a>Configuración del proyecto para una configuración de depuración de C++
 Puede cambiar la configuración del proyecto para una configuración de depuración de C o Visual C++ en el **páginas de propiedades** cuadro de diálogo, como se describe en [Cómo: Establecer configuraciones Debug y Release](../debugger/how-to-set-debug-and-release-configurations.md). En las siguientes tablas se muestra dónde encontrar los valores relacionados con el depurador en el cuadro de diálogo **Páginas de propiedades**.
@@ -139,7 +139,7 @@ Puede cambiar la configuración del proyecto para una configuración de depuraci
 | **Argumentos de comandos** (depurador Local de Windows)<br /><br /> **Argumentos de comando remoto** (depurador remoto de Windows) | -   Especifica los argumentos del comando especificado anteriormente.<br /><br /> Puede utilizar los siguientes operadores de redirección en este cuadro:<br /><br /> < `file`<br /> Lee stdin del archivo.<br /><br /> > `file`<br /> Escribe stdout en el archivo.<br /><br /> >> `file`<br /> Agrega stdout al archivo.<br /><br /> 2> `file`<br /> Escribe stderr en el archivo.<br /><br /> 2>> `file`<br /> Agrega stderr al archivo.<br /><br /> 2> &1<br /> Envía el resultado de stderr (2) a la misma posición que stdout (1).<br /><br /> 1> &2<br /> Envía el resultado de stdout (1) a la misma posición que stderr (2).<br /><br /> En la mayoría de los casos, estos operadores solo pueden utilizarse en aplicaciones de consola. |
 | **Directorio de trabajo** | Especifica el directorio de trabajo del programa que se está depurando en relación con el directorio del proyecto en el que se encuentra el archivo EXE. Si lo deja en blanco, el directorio de trabajo será el directorio del proyecto. Para la depuración remota, el directorio del proyecto está en el servidor remoto. |
 | **Asociar** (Depurador local de Windows y Depurador remoto de Windows) | Especifica si se debe iniciar o asociar a la aplicación. La configuración predeterminada es No. |
-| **Nombre de servidor remoto** (Depurador remoto de Windows) | Especifica el nombre de un equipo (que no es el suyo) en el que desea depurar una aplicación.<br /><br /> La macro de compilación RemoteMachine está establecida en el valor de esta propiedad; para obtener más información, vea [Macros comunes para propiedades y comandos de compilación](/cpp/ide/common-macros-for-build-commands-and-properties). |
+| **Nombre de servidor remoto** (Depurador remoto de Windows) | Especifica el nombre de un equipo (que no es el suyo) en el que desea depurar una aplicación.<br /><br /> La macro de compilación RemoteMachine está establecida en el valor de esta propiedad; para obtener más información, vea [Macros comunes para propiedades y comandos de compilación](/cpp/build/reference/common-macros-for-build-commands-and-properties). |
 | **Conexión** (Depurador remoto de Windows) | Permite intercambiar entre los tipos de conexión estándar y sin autenticación para la depuración remota. Especifique el nombre de un equipo remoto en el cuadro **Nombre de servidor remoto**. Entre los tipos de conexión se incluyen los siguientes:<br /><br /> -   **Remoto con autenticación de Windows**<br />-   **Remoto sin autenticación**<br /><br /> **Nota**: La depuración sin autenticación puede dejar el equipo remoto expuesto a infracciones de seguridad. El modo de autenticación de Windows es más seguro.<br /><br /> Para obtener más información, vea [Remote Debugging](../debugger/remote-debugging.md) (Instalación de la depuración remota). |
 | **Dirección URL HTTP** (Depurador de servicio web y Depurador de explorador web) | Especifica la dirección URL en la que se encuentra el proyecto que se depura. |
 | **Tipo de depurador** | Especifica el tipo de depurador que se usará: **Solo nativo**, **solo administrado**, **solo GPU**, **mixto**, **automática** (valor predeterminado), o **Script**.<br /><br /> -   **Solo nativo** es para código de C++ no administrado.<br />-   **Solo administrado** es para código que se ejecuta bajo Common Language Runtime (código administrado).<br />-   **Mixto** invoca depuradores para código administrado y no administrado.<br />-   **Automático** determina el tipo de depurador en función de la información del compilador y del archivo EXE.<br />-   **Script** invoca a un depurador para los scripts.<br />-   **Solo GPU** es para el código de C++ AMP que se ejecuta en un dispositivo GPU o en el rasterizador de referencia de DirectX. Consulte [código de depuración de GPU](../debugger/debugging-gpu-code.md). |

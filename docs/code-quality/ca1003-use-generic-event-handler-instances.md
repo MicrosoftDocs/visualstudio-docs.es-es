@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: f666dc71aaf9683d9a7c936cc4985e97146d9454
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 66bb2b2229608c1a7710b7c5c71cbc0d701234e3
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65842528"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714378"
 ---
 # <a name="ca1003-use-generic-event-handler-instances"></a>CA1003: Utilizar instancias genéricas de controlador de eventos
 
@@ -41,7 +41,7 @@ De forma predeterminada, esta regla busca solo en tipos visibles externamente, p
 
 ## <a name="rule-description"></a>Descripción de la regla
 
-Antes de. NET, para pasar información personalizada al controlador de eventos, un nuevo delegado tuvo que se puede declarar que especificó una clase que se derivó de la <xref:System.EventArgs?displayProperty=fullName> clase. Esto ya no es cierto en. NET. .NET Framework incorporó el <xref:System.EventHandler%601?displayProperty=fullName> delegado, un delegado genérico que permite que cualquier clase que se deriva de <xref:System.EventArgs> para usarse junto con el controlador de eventos.
+Antes de. NET, para pasar información personalizada al controlador de eventos, un nuevo delegado tuvo que se puede declarar que especificó una clase que se derivó de la <xref:System.EventArgs?displayProperty=fullName> clase. En. NET, el tipo genérico <xref:System.EventHandler%601?displayProperty=fullName> delegado permite que cualquier clase que se deriva de <xref:System.EventArgs> para usarse junto con el controlador de eventos.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
 

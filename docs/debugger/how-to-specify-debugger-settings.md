@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b109fd995f54ede3aa2c8a6381cb9e6296a6970
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4616bd95c0461e2318a4b0811f2f12c360a9aeae
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62847515"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714966"
 ---
 # <a name="how-to-specify-debugger-settings"></a>Procedimiento Especificación de la configuración del depurador
 En [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], se pueden especificar diversas configuraciones para el comportamiento del depurador, incluidas la forma en que se muestran las variables, si se presentan ciertas advertencias, cómo se establecen los puntos de interrupción y cómo éstos afectan a la ejecución de programas. La configuración del depurador se especifica en el cuadro de diálogo **Opciones**.
@@ -45,4 +45,4 @@ En [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], se pueden especifi
 - [General, Depuración, cuadro de diálogo Opciones](../debugger/general-debugging-options-dialog-box.md)
 - [Editar y continuar, Depuración, Opciones (Cuadro de diálogo)](https://msdn.microsoft.com/library/bcew296c.aspx)
 - [Configuración y preparación de la depuración](../debugger/debugger-settings-and-preparation.md)
-- [Macros comunes para propiedades y comandos de compilación](/cpp/ide/common-macros-for-build-commands-and-properties)
+- [Macros comunes para propiedades y comandos de compilación](/cpp/build/reference/common-macros-for-build-commands-and-properties)

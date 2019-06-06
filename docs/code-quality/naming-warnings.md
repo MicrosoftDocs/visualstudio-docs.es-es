@@ -14,15 +14,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3fc446207d2f8c2800135154ca435b821a0afd1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 90bdc70a2de900d43831994aff72e25031241cc3
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825447"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715307"
 ---
 # <a name="naming-warnings"></a>advertencias de nomenclatura
-Las advertencias de nomenclatura compatibles con el cumplimiento de las convenciones de nomenclatura de las instrucciones de diseño de .NET Framework.
+
+Las advertencias de nomenclatura compatibles con el cumplimiento para las convenciones de nomenclatura de las instrucciones de diseño. NET.
 
 ## <a name="in-this-section"></a>En esta sección
 
@@ -42,7 +43,7 @@ Las advertencias de nomenclatura compatibles con el cumplimiento de las convenci
 |[CA1719: Los nombres de parámetro no deberían coincidir con los nombres de los miembros](../code-quality/ca1719-parameter-names-should-not-match-member-names.md)|Un nombre de parámetro debe comunicar el significado de un parámetro y un nombre de miembro debe comunicar el significado de un miembro. Sería un diseño extraño si éstos fueran los mismos. Denominar un parámetro igual que el nombre del miembro no es intuitivo y dificulta el uso de la biblioteca.|
 |[CA1701: Palabras compuestas de la cadena de recursos deberían escribirse correctamente](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)|Cada palabra de la cadena de recursos se divide en tokens que se basan en las mayúsculas y minúsculas. La biblioteca de correctores ortográficos de Microsoft comprueba cada combinación de dos tokens contiguos. Si la reconoce, la palabra genera una infracción de la regla.|
 |[CA1703: Cadenas de recursos deberían tener la ortografía correcta](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)|Una cadena de recurso contiene una o varias palabras que la biblioteca de correctores ortográficos de Microsoft no reconoce.|
-|[CA1724: Nombres de tipo no deberían coincidir con los espacios de nombres](../code-quality/ca1724-type-names-should-not-match-namespaces.md)|Los nombres de tipo no deberían coincidir con los nombres de espacios de nombres que se definen en la biblioteca de clases de .NET Framework. Infracción de esta regla puede reducir la utilización de la biblioteca.|
+|[CA1724: Nombres de tipo no deberían coincidir con los espacios de nombres](../code-quality/ca1724-type-names-should-not-match-namespaces.md)|Los nombres de tipo no deberían coincidir con los nombres de espacios de nombres. NET. Infracción de esta regla puede reducir la utilización de la biblioteca.|
 |[CA1707: Los identificadores no deberían contener subrayado](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)|Por convención, los nombres del identificador no contienen el carácter de subrayado (_). Esta regla comprueba espacios de nombres, tipos, miembros y parámetros.|
 |[CA1721: Nombres de propiedades no deberían coincidir con los métodos get](../code-quality/ca1721-property-names-should-not-match-get-methods.md)|El nombre de un miembro público o protegido empieza por "Get" y en cualquier otro caso coincide con el nombre de una propiedad pública o protegida. Las propiedades y métodos "Get" deberían tener nombres que distingan claramente su función.|
 |[CA1716: Los identificadores no deberían coincidir con palabras clave](../code-quality/ca1716-identifiers-should-not-match-keywords.md)|Un nombre de espacio de nombres o un nombre de tipo coinciden con una palabra clave reservada en un lenguaje de programación. Los identificadores para los espacios de nombres y tipos no deberían coincidir con palabras clave definidas por los lenguajes que tienen como destino el Common Language Runtime.|

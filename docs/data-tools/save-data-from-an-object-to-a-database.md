@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c672103c0426f2d49eb47aa41014ee13ff0ecae9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b15776b67ded2fc813f1b8bcf82d8aa91f212346
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62565963"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715026"
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>Guardar los datos de un objeto en una base de datos
 
@@ -72,7 +72,7 @@ De forma predeterminada, `DBDirect` métodos se crean en un TableAdapter que se 
      [!code-csharp[VbRaddataSaving#25](../data-tools/codesnippet/CSharp/save-data-from-an-object-to-a-database_3.cs)]
      [!code-vb[VbRaddataSaving#25](../data-tools/codesnippet/VisualBasic/save-data-from-an-object-to-a-database_3.vb)]
 
-## <a name="net-framework-security"></a>seguridad en .NET Framework
+## <a name="net-security"></a>Seguridad de .NET
 
 Debe tener permiso para realizar seleccionado `INSERT`, `UPDATE`, o `DELETE` en la tabla en la base de datos.
 

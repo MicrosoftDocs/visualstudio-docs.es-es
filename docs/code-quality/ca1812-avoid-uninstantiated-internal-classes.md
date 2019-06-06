@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: def22bd4aee4f64b5e14f2bbe7978a0dfa061261
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: a0d55af3c5522c6bb9aa3ad8a023f070c187ca6f
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841446"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714271"
 ---
 # <a name="ca1812-avoid-uninstantiated-internal-classes"></a>CA1812: Evitar las clases internas sin instancia
 
@@ -58,9 +58,9 @@ Si aplica el <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?d
 
 Para corregir una infracción de esta regla, quite el tipo o agregue código que lo utiliza. Si el tipo contiene solo `static` agregar métodos, uno de los siguientes al tipo para evitar que el compilador emita un constructor de instancia público predeterminado:
 
-- Un constructor privado para los tipos que tienen como destino las versiones 1.0 y 1.1 de .NET Framework.
-
 - El `static` modificador C# tipos que tienen como destino [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] o una versión posterior.
+
+- Un constructor privado para los tipos que tienen como destino las versiones 1.0 y 1.1 de .NET Framework.
 
 ## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
 
