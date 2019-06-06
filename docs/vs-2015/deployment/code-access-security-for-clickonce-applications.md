@@ -41,7 +41,7 @@ Las aplicaciones ClickOnce se basan en .NET Framework y están sujetas a restric
 ## <a name="default-clickonce-code-access-security"></a>Seguridad de acceso del código de ClickOnce predeterminada  
  De forma predeterminada, una aplicación ClickOnce recibe permisos de plena confianza cuando se instala o ejecuta en un equipo cliente.  
   
-- Una aplicación que tenga permisos de plena confianza tendrá acceso sin restricciones a recursos como el sistema de archivos y el registro. Potencialmente, esto permite que a la aplicación (y el sistema del usuario final) sea susceptible a un ataque de software malintencionado.  
+- Una aplicación que tenga permisos de plena confianza tendrá acceso sin restricciones a recursos como el sistema de archivos y el registro. Potencialmente, esto permite que la aplicación (y el sistema del usuario final) sea susceptible a un ataque de software malintencionado.  
   
 - Cuando una aplicación requiere permisos de plena confianza, puede que se pida al usuario final que conceda permisos a la aplicación. Esto significa que la aplicación no proporciona realmente una experiencia ClickOnce y el mensaje de solicitud puede resultar confuso para los usuarios menos experimentados.  
   
