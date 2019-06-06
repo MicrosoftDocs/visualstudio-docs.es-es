@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8d2dadbb4bbd17b1ee1856dd896d78b0faef2cd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c52db730e471d845989b8fdfbadd259b5d166e8f
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825284"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715232"
 ---
 # <a name="security-warnings"></a>Advertencias de seguridad
 
@@ -36,7 +36,7 @@ Las advertencias de seguridad son compatibles con las bibliotecas y aplicaciones
 |[CA2104: No declarar tipos de referencias mutables de solo lectura](../code-quality/ca2104-do-not-declare-read-only-mutable-reference-types.md)|Un tipo visible externamente contiene un campo de sólo lectura visible externamente que es un tipo de referencia que se puede cambiar. Un tipo que mutable es un tipo cuyos datos de instancia se pueden modificar.|
 |[CA2105: Campos de matriz deben no ser de solo lectura](../code-quality/ca2105-array-fields-should-not-be-read-only.md)|Cuando se aplica el modificador de solo lectura (ReadOnly en Visual Basic) a un campo que contiene una matriz, el campo no se puede modificar para hacer referencia a una matriz distinta. Sin embargo, se pueden cambiar los elementos de la matriz almacenados en un campo de sólo lectura.|
 |[CA2106: Asegurar aserciones](../code-quality/ca2106-secure-asserts.md)|Un método valida un permiso y no se realiza ninguna comprobación de seguridad en el llamador. Validar un permiso de seguridad sin realizar ninguna comprobación de seguridad puede dejar una debilidad de seguridad explotable en el código.|
-|[CA2107: Revisión de deny y PermitOnly solo uso](../code-quality/ca2107-review-deny-and-permit-only-usage.md)|Utilizando el método PermitOnly y CodeAccessPermission.Deny solamente se debe utilizar acciones de seguridad si se conoce en profundidad la seguridad de .NET Framework. Debería realizarse una revisión de la seguridad del código que utiliza estas acciones de seguridad.|
+|[CA2107: Revisión de deny y PermitOnly solo uso](../code-quality/ca2107-review-deny-and-permit-only-usage.md)|Mediante PermitOnly método y las acciones de seguridad de CodeAccessPermission.Deny deben usarse únicamente por aquellos con conocimientos avanzados de seguridad de. NET. Debería realizarse una revisión de la seguridad del código que utiliza estas acciones de seguridad.|
 |[CA2108: Revisar la seguridad declarativa en los tipos de valor](../code-quality/ca2108-review-declarative-security-on-value-types.md)|Un tipo de valor público o protegido está protegido por acceso a datos o peticiones de vínculos.|
 |[CA2109: Revisar los controladores de eventos visibles](../code-quality/ca2109-review-visible-event-handlers.md)|Se detectó un método de control de eventos público o protegido. No se deberían exponer los métodos de control de eventos a menos que sea absolutamente necesario.|
 |[CA2111: Punteros no deberían estar visibles](../code-quality/ca2111-pointers-should-not-be-visible.md)|Un puntero no es privado, interno ni de solo lectura. El código malintencionado puede cambiar el valor del puntero, permitiendo potencialmente el acceso a ubicaciones arbitrarias en memoria o provocando errores del sistema o de aplicación.|

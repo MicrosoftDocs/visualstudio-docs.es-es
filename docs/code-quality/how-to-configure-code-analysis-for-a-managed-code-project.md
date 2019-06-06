@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 555017cc49beba849ba9008c52950a70cd067a73
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: f3c8fbde60e247ca9ec5fe82c9a16f28aded2abc
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65676291"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715063"
 ---
 # <a name="how-to-configure-static-code-analysis-for-managed-code"></a>Procedimiento Configurar el análisis de código estático para código administrado
 
@@ -29,7 +29,7 @@ Para obtener información sobre cómo configurar un conjunto de reglas para apli
 > [!NOTE]
 > En este artículo se aplica a análisis de código estático y no a [analizadores de Roslyn](use-roslyn-analyzers.md), que no ejecutan análisis de código después de la compilación.
 
-## <a name="to-configure-a-rule-set-for-a-net-framework-project"></a>Para configurar un conjunto de reglas para un proyecto de .NET Framework
+## <a name="configure-a-rule-set-for-a-net-framework-project"></a>Configurar un conjunto de reglas para un proyecto de .NET Framework
 
 1. Abra el **análisis de código** ficha en páginas de propiedades del proyecto. Puede hacerlo en cualquiera de las maneras siguientes:
 

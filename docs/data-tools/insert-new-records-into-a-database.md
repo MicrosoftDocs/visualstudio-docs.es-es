@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: a3fb276b3efb0d437d66d3e38c9e55b45b43e9c6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 64fc4735fd95c611dd1c2d905be6fa5b45c84664
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62566347"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715022"
 ---
 # <a name="insert-new-records-into-a-database"></a>Insertar nuevos registros en una base de datos
 
@@ -80,7 +80,7 @@ El ejemplo siguiente muestra la inserción de registros en una base de datos con
 [!code-vb[VbRaddataSaving#16](../data-tools/codesnippet/VisualBasic/insert-new-records-into-a-database_3.vb)]
 [!code-csharp[VbRaddataSaving#16](../data-tools/codesnippet/CSharp/insert-new-records-into-a-database_3.cs)]
 
-## <a name="net-framework-security"></a>seguridad en .NET Framework
+## <a name="net-security"></a>Seguridad de .NET
 
 Debe tener acceso a la base de datos a que está intentando conectarse, así como permiso para realizar inserciones en la tabla deseada.
 

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 79ed1bd03e90a92d8246c5f51a6ad64d52758167
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 442a98b76efb8013d5d40607e14586299718afc3
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66260958"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715099"
 ---
 # <a name="set-the-control-to-be-created-when-dragging-from-the-data-sources-window"></a>Establecer el control que se creará al arrastrar desde la ventana Orígenes de datos
 
@@ -45,7 +45,7 @@ En este contexto, el término *objeto* hace referencia a un objeto comercial per
 
     - Para mostrar todos los datos en un control único, seleccione un control diferente de la lista, como **DataGrid** o **List** en una aplicación WPF o **DataGridView** en una aplicación de Windows Forms.
 
-    La lista de controles disponibles depende de qué diseñador esté abierto, qué versión de .NET Framework sea el destino del proyecto y si se han agregado controles personalizados que admiten el enlace de datos al **Cuadro de herramientas**. Si el control que desea crear no está en la lista de controles disponibles, puede agregar el control a la lista. Para obtener más información, consulte [agregar controles personalizados a la ventana de orígenes de datos](../data-tools/add-custom-controls-to-the-data-sources-window.md).
+    La lista de controles disponibles depende de qué diseñador esté abierto, qué versión de .NET su proyecto tiene como destino, y si han agregado controles personalizados que compatibilidad con enlaces de datos a la **cuadro de herramientas**. Si el control que desea crear no está en la lista de controles disponibles, puede agregar el control a la lista. Para obtener más información, consulte [agregar controles personalizados a la ventana de orígenes de datos](../data-tools/add-custom-controls-to-the-data-sources-window.md).
 
     Para obtener información sobre cómo crear un control personalizado de Windows Forms que se puede agregar a la lista de controles para las tablas de datos u objetos en el **orígenes de datos** ventana, consulte [crear un control de usuario de Windows Forms que admita datos complejos enlace](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md).
 
@@ -63,7 +63,7 @@ Antes de arrastrar al diseñador un elemento que representa una columna o la pro
 
 4. Haga clic en el menú desplegable de la columna o propiedad y seleccione el control que desea crear cuando el elemento se arrastre al diseñador.
 
-     La lista de controles disponibles depende de qué diseñador esté abierto, qué versión de .NET Framework sea el destino del proyecto y qué controles personalizados que admiten el enlace de datos se hayan agregado al **Cuadro de herramientas**. Si el control que desea crear está en la lista de controles disponibles, puede agregarlo a la lista. Para obtener más información, consulte [agregar controles personalizados a la ventana de orígenes de datos](../data-tools/add-custom-controls-to-the-data-sources-window.md).
+     La lista de controles disponibles depende de qué diseñador esté abierto, qué versión de .NET su proyecto tiene como destino, y qué controles personalizados que admiten enlace de datos se han agregado a la **cuadro de herramientas**. Si el control que desea crear está en la lista de controles disponibles, puede agregarlo a la lista. Para obtener más información, consulte [agregar controles personalizados a la ventana de orígenes de datos](../data-tools/add-custom-controls-to-the-data-sources-window.md).
 
      Para obtener información sobre cómo crear un control personalizado que se puede agregar a la lista de controles para columnas de datos o propiedades en el **orígenes de datos** ventana, consulte [crear un control de usuario de Windows Forms que admita el enlace de datos simple](../data-tools/create-a-windows-forms-user-control-that-supports-simple-data-binding.md).
 

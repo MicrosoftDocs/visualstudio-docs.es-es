@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3097e52f99f044257b8eaf634455bdf19978d0c3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 93bd0fd71fbe8eae90750aa2e7597ee40bba17a2
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825048"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715279"
 ---
 # <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>Tutorial: Análisis de código administrado en previsión de defectos de código
 
 En este tutorial, analizaremos un proyecto administrado en previsión de defectos de código mediante la herramienta de análisis de código.
 
-En este tutorial le guiará por el proceso de uso de análisis de código para analizar los ensamblados de código administrado de .NET de conformidad con las instrucciones de diseño de Microsoft .NET Framework.
+En este tutorial le guiará por el proceso de uso de análisis de código para analizar los ensamblados de código administrado de .NET de conformidad con las instrucciones de diseño. NET.
 
 ## <a name="create-a-class-library"></a>Crear una biblioteca de clases
 
