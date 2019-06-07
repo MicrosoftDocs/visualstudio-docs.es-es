@@ -11,21 +11,19 @@ helpviewer_keywords:
 - IntelliTrace, debugging applications
 - debugger, (See also IntelliTrace [Visual Studio ALM])
 - debugging, (See also IntelliTrace [Visual Studio ALM])
-- IntelliTrace, collecting data from Test Manager
 - IntelliTrace
-- Test Manager, debugging with IntelliTrace
 - IntelliTrace, debugging after a crash
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf491eae46c22d0804c66ab51071740e42de631c
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: d297b883c4d5217a0175c739bf460872d464503f
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65678810"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746669"
 ---
 # <a name="intellitrace-for-visual-studio-enterprise-c-visual-basic-c"></a>IntelliTrace para Visual Studio Enterprise (C#, Visual Basic, C++)
 
@@ -44,7 +42,6 @@ Puede usar IntelliTrace en Visual Studio Enterprise (pero no en las ediciones Pr
 |||
 |-|-|
 |**Depurar la aplicación con IntelliTrace:**<br /><br /> - Deseo ver los últimos eventos.<br />- Deseo ver la información de llamadas con eventos anteriores.<br />- Guardar mi sesión de IntelliTrace.<br />- Controlar los datos que IntelliTrace recopila.|- [Inspeccionar el estado anterior de aplicación con IntelliTrace](../debugger/view-historical-application-state.md)<br />- [Tutorial: Uso de IntelliTrace](../debugger/walkthrough-using-intellitrace.md)<br />- [Características de IntelliTrace](../debugger/intellitrace-features.md)<br />- [Depuración histórica](../debugger/historical-debugging.md)|
-|**Recopilar datos de IntelliTrace durante una sesión de prueba en Test Manager**|- [Recopilar más datos de diagnóstico en las pruebas manuales](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)|
 |**Recopilar datos de IntelliTrace de aplicaciones implementadas**|- [Usar el recopilador independiente de IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)|
 |**Iniciar la depuración de un archivo de registro de IntelliTrace (archivo .iTrace).**|- [Uso de datos de IntelliTrace guardados](../debugger/using-saved-intellitrace-data.md)|
 
@@ -71,8 +68,6 @@ Puede guardar datos de IntelliTrace de estos orígenes:
 
 - Una sesión de IntelliTrace en Visual Studio 2015 Enterprise o versiones posteriores o versiones anteriores de Visual Studio Ultimate.
 
-- Sesiones de prueba en Microsoft Test Manager.
-
 - Aplicaciones web ASP.NET hospedadas en IIS, o aplicaciones de SharePoint 2010 y SharePoint 2013 que se ejecutan en la implementación cuando se usa Microsoft Monitoring Agent, solo o con System Center 2012. Consulte [usar el recolector independiente IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md) y [supervisión con Microsoft Monitoring Agent](https://technet.microsoft.com/library/dn465153.aspx).
 
 A continuación se muestran algunos ejemplos de cómo IntelliTrace puede servir de ayuda en la depuración:
@@ -84,10 +79,6 @@ A continuación se muestran algunos ejemplos de cómo IntelliTrace puede servir 
 - Se produce una excepción.
 
      Sin IntelliTrace, aparece un mensaje sobre la excepción, pero no se proporciona mucha información sobre los eventos que produjeron la excepción. Puede examinar la pila de llamadas para ver la cadena de llamadas que produjeron la excepción, pero no puede ver la secuencia de eventos que se produjeron durante esas llamadas. Con IntelliTrace, puede examinar los eventos que se produjeron antes de la excepción.
-
-- La aplicación se bloquea en un equipo de prueba pero se ejecuta correctamente en un equipo de desarrollo.
-
-     Puede recopilar datos de IntelliTrace desde Microsoft Test Manager, guardar los datos en un archivo .iTrace y adjuntar este archivo a un elemento de trabajo de Team Foundation Server para analizarlo más adelante. Consulte [recopilar más datos de diagnóstico en pruebas manuales](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts) y [Use datos de IntelliTrace guardados](../debugger/using-saved-intellitrace-data.md).
 
 - Se produce un error o un bloqueo en una aplicación implementada.
 

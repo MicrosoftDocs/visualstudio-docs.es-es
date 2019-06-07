@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c9172749dc00acf0fd43725f6754373a0ade16e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 41e6e5bf2152fffb06acfb8b5e1f3283da75a19a
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62900363"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745952"
 ---
 # <a name="ltdependencygt-element-clickonce-application"></a>&lt;dependencia&gt; elemento (aplicación ClickOnce)
 Identifica una dependencia de plataforma o ensamblado que se requiere para la aplicación.
@@ -126,7 +126,7 @@ Identifica una dependencia de plataforma o ensamblado que se requiere para la ap
 |-----------------------| - |
 | `dependencyType` | Obligatorio. Especifica el tipo de dependencia. Los valores válidos son `preprequisite` y `install`. Un `install` ensamblado se instala como parte de la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación. Un `prerequisite` ensamblado debe estar presente en la caché de ensamblados global (GAC) antes de la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] puede instalar la aplicación. |
 | `allowDelayedBinding` | Obligatorio. Especifica si el ensamblado se puede cargar mediante programación en tiempo de ejecución. |
-| `group` | Opcional. Si el `dependencyType` atributo está establecido en `install`, designa un grupo de ensamblados con nombre que solo se instalan a petición. Para obtener más información, vea [Tutorial: Descarga de ensamblados a petición con la API de implementación ClickOnce mediante el diseñador](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md).<br /><br /> Si establece en `framework` y `dependencyType` atributo está establecido en `prerequisite`, designa el ensamblado como parte de .NET Framework. No se comprueba la caché de ensamblado global (GAC) para este ensamblado cuando se instala en [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] y versiones posteriores. |
+| `group` | Opcional. Si el `dependencyType` atributo está establecido en `install`, designa un grupo de ensamblados con nombre que solo se instalan a petición. Para obtener más información, vea [Tutorial: Descarga de ensamblados a petición con la API de implementación ClickOnce mediante el diseñador](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md).<br /><br /> Si establece en `framework` y `dependencyType` atributo está establecido en `prerequisite`, designa el ensamblado como parte de .NET Framework. No se comprueba la caché de ensamblado global (GAC) para este ensamblado cuando se instala en .NET Framework 4 y versiones posteriores. |
 | `codeBase` | Obligatorio cuando el `dependencyType` atributo está establecido en `install`. La ruta de acceso al ensamblado dependiente. Puede ser una ruta de acceso absoluta o una ruta de acceso en relación con el código del manifiesto a la base. Esta ruta de acceso debe ser un URI válido en orden para el manifiesto del ensamblado sea válido. |
 | `size` | Obligatorio cuando el `dependencyType` atributo está establecido en `install`. El tamaño del ensamblado dependiente, en bytes. |
 

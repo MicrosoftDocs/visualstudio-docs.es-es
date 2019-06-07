@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5aa21d4bfccd50e31c2fd7e76bb8808bba19bc58
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3d608e4e9bf9987eb1dd430a9e22660c1da6a90a
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66333747"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746697"
 ---
 # <a name="metadatatype"></a>METADATA_TYPE
 Esta estructura especifica información sobre un tipo de campo que se toman de los metadatos.
@@ -58,7 +58,7 @@ public struct METADATA_TYPE {
 ## <a name="remarks"></a>Comentarios
  Esta estructura aparece como parte de la unión en el [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) estructura cuando la `dwKind` campo de la `TYPE_INFO` estructura está establecida en `TYPE_KIND_METADATA` (un valor de la [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) enumeración).
 
- El `tokClass` valor es un token de metadatos que identifica un tipo. Para obtener más información sobre cómo interpretar los bits superiores del identificador del token de metadatos, vea el `CorTokenType` enumeración en el archivo corhdr.h el [!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)] SDK.
+ El `tokClass` valor es un token de metadatos que identifica un tipo. Para obtener más información sobre cómo interpretar los bits superiores del identificador del token de metadatos, vea el `CorTokenType` enumeración en el archivo corhdr.h en .NET Framework SDK.
 
 ## <a name="requirements"></a>Requisitos
  Encabezado: sh.h

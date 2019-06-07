@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e285ead27b8d3d7c674a138d5f06c69a7e88d1fc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e9746119c746679817076c86e3d5a9080cec30d9
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779304"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744682"
 ---
 # <a name="ca1031-do-not-catch-general-exception-types"></a>CA1031: No capturar los tipos de excepción general
 
@@ -47,7 +47,7 @@ ms.locfileid: "62779304"
  No suprima las advertencias de esta regla. Detectar tipos de excepción general se pueden ocultar problemas en tiempo de ejecución de usuario de la biblioteca y puede dificultar la depuración.
 
 > [!NOTE]
-> A partir de la [!INCLUDE[net_v40_long](../code-quality/includes/net_v40_long_md.md)], common language runtime (CLR) ya no entrega excepciones de estado dañado que se producen en el sistema operativo y el código administrado, como las infracciones de acceso en [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)], controlarse en código administrado. Si desea compilar una aplicación en el [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] o versiones posteriores y mantener el control de excepciones de estado dañado, puede aplicar el <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute> al método que controla la excepción de estado dañado.
+> A partir de .NET Framework 4, common language runtime (CLR) ya no entrega excepciones de estado dañado que se producen en el sistema operativo y el código administrado, como las infracciones de acceso en [!INCLUDE[TLA#tla_mswin](../code-quality/includes/tlasharptla_mswin_md.md)], controlarse en código administrado. Si desea compilar una aplicación de .NET Framework 4 o versiones posteriores y mantener el control de excepciones de estado dañado, se puede aplicar el <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute> al método que controla la excepción de estado dañado.
 
 ## <a name="example"></a>Ejemplo
  El ejemplo siguiente muestra un tipo que infringe esta regla y un tipo que implementa correctamente el `catch` bloque.

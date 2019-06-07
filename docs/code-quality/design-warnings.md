@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f2f2437f09286b1b6ff0aa856eec845ecb83c1d
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: bd8b7c990ff0a56acd22cf4b7ddb16bc2e6c1618
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66715003"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745161"
 ---
 # <a name="design-warnings"></a>Advertencias de diseño
 
@@ -32,7 +32,7 @@ Adhesión de soporte técnico de advertencias de diseño a la [las directrices d
 | [CA1000: No declarar a miembros estáticos en tipos genéricos](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md) | Cuando se llama a un miembro estático de un tipo genérico, se debe especificar el argumento de tipo correspondiente a ese tipo. Cuando se llama a un miembro de instancia genérico que no admite la interferencia, se debe especificar el argumento de tipo para el miembro. En estos dos casos, la sintaxis para especificar el argumento de tipo es diferente y resulta fácil confundirse. |
 | [CA1001: los tipos que poseen campos descartables deben ser descartables](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md) | Una clase declara e implementa un campo de instancia es de tipo System.IDisposable y la clase no implementa IDisposable. Una clase que declara un campo IDisposable posee indirectamente un recurso no administrado y debería implementar la interfaz IDisposable. |
 | [CA1002: No exponer listas genéricas](../code-quality/ca1002-do-not-expose-generic-lists.md) | System.Collections.Generic.List < (de \<(T >) >) es una colección genérica diseñada para el rendimiento, no para la herencia. Por consiguiente, List no contiene ningún miembro virtual. En su lugar, se debe exponer las colecciones genéricas diseñadas para herencia. |
-| [CA1003: Utilizar instancias de controlador de eventos genéricos](../code-quality/ca1003-use-generic-event-handler-instances.md) | Un tipo contiene un delegado que devuelve void cuya firma contiene dos parámetros (el primero un objeto y el segundo un tipo asignable a EventArgs) y los destinos de ensamblado que contiene [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)]. |
+| [CA1003: Utilizar instancias de controlador de eventos genéricos](../code-quality/ca1003-use-generic-event-handler-instances.md) | Un tipo contiene a un delegado que devuelve void cuya firma contiene dos parámetros (el primero un objeto y el segundo un tipo asignable a EventArgs), y el ensamblado que contiene tiene como destino .NET Framework 2.0. |
 | [CA1004: Métodos genéricos deben proporcionar un parámetro de tipo](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md) | La inferencia es el modo en que se determina el argumento de tipo de un método genérico partiendo del tipo de argumento pasado al método, en lugar de especificar directamente el argumento de tipo. Para habilitar la inferencia, la firma de parámetro de un método genérico debe incluir un parámetro del mismo tipo que el parámetro type del método. En este caso, no es necesario especificar el argumento de tipo. Al utilizar la inferencia para todos los parámetros de tipo, la sintaxis para llamar a métodos de instancia genéricos y es idéntica; Esto simplifica el uso de métodos genéricos. |
 | [CA1005: Evite parámetros excesivos en tipos genéricos](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md) | Cuantos más parámetros type contenga un tipo genérico, más difícil resulta saber y recordar qué representa cada uno de ellos. Suele ser evidente con un parámetro de tipo, como en la lista\<T > y en algunos casos con dos parámetros de tipo, como en Dictionary\<TKey, TValue >. Sin embargo, si hay más de dos parámetros de tipo, la dificultad se vuelve demasiado grande para la mayoría de los usuarios. |
 | [CA1006: No anidar tipos genéricos en firmas de miembro](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md) | Un argumento de tipo anidado es un argumento de tipo que también es un tipo genérico. Para llamar a un miembro cuya firma contenga un argumento de tipo anidado, el usuario debe crear instancias de un tipo genérico y pasar este tipo al constructor de un segundo tipo genérico. El procedimiento y la sintaxis necesarios para ello son complejos, por lo que es preferible evitarlo. |

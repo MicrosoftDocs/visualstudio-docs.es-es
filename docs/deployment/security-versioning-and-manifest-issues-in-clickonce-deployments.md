@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a13e6ce35b798a79d3c8a283aa941b801ff03141
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: bb2ec5229132265feb1095c9ee921d73a1568dd2
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263488"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745606"
 ---
 # <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>Seguridad, control de versiones y manifiestos problemas en implementaciones de ClickOnce
 
@@ -59,7 +59,7 @@ Este error puede producirse solo si está editando su [!INCLUDE[ndptecclick](../
 
 ## <a name="specify-individual-net-framework-assemblies-in-the-manifest"></a>Especifique los ensamblados de .NET Framework individuales en el manifiesto
 
-La aplicación no se cargará si ha editado manualmente un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implementación para hacer referencia a una versión anterior de un [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] ensamblado. Por ejemplo, si ha agregado una referencia al ensamblado System.Net para una versión de la [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] antes de la versión especificada en el manifiesto, a continuación, se producirá un error. En general, no debe intentar especificar referencias a persona [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] ensamblados, como la versión de la [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] contra la que se ejecuta la aplicación se especifica como una dependencia en el manifiesto de aplicación.
+La aplicación no se cargará si ha editado manualmente un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implementación para hacer referencia a una versión anterior de un ensamblado de .NET Framework. Por ejemplo, si ha agregado una referencia al ensamblado System.Net para una versión de .NET Framework anteriores a la versión especificada en el manifiesto, se producirá un error. En general, no debe intentar especificar referencias a ensamblados de .NET Framework individuales, como la versión de .NET Framework con la que se ejecuta la aplicación se especifica como una dependencia en el manifiesto de aplicación.
 
 ## <a name="manifest-parsing-issues"></a>Existen problemas de análisis de manifiesto
 

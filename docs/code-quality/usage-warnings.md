@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 132f5c91b12ac0b7ada4d4987ca0298e47310436
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 53e7c0232406462a4c5938fd3f971189c9b2daca
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66715160"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745073"
 ---
 # <a name="usage-warnings"></a>advertencias de uso
 
@@ -56,7 +56,7 @@ Advertencias de uso admiten el uso adecuado de. NET.
 |[CA2225: Las sobrecargas del operador tienen alternativas con nombre](../code-quality/ca2225-operator-overloads-have-named-alternates.md)|Se detectó una sobrecarga del operador y no se encontró el método alternativo con el nombre esperado. El miembro alternativo con nombre proporciona acceso a la misma funcionalidad que el operador y se proporciona para los desarrolladores que programan en lenguajes que no admite operadores sobrecargados.|
 |[CA2226: Los operadores deben tener sobrecargar simétricas](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)|Un tipo implementa la igualdad o un operador de desigualdad y no implementa el operador opuesto.|
 |[CA2227: Propiedades de la colección deben ser de solo lectura](../code-quality/ca2227-collection-properties-should-be-read-only.md)|Una propiedad de colección grabable permite al usuario reemplazar la colección por otra diferente. Una propiedad de sólo lectura impide que la colección se reemplace, pero sí permite establecer miembros individuales.|
-|[CA2228: No enviar formatos de recursos no lanzados](../code-quality/ca2228-do-not-ship-unreleased-resource-formats.md)|Archivos de recursos que se compilaron con versiones preliminares de .NET Framework no podrían utilizables las versiones compatibles de .NET Framework.|
+|[CA2228: No enviar formatos de recursos no lanzados](../code-quality/ca2228-do-not-ship-unreleased-resource-formats.md)|Archivos de recursos que se compilaron con versiones preliminares de .NET no se podrían utilizables las versiones compatibles de. NET.|
 |[CA2229: implementar constructores de serialización](../code-quality/ca2229-implement-serialization-constructors.md)|Para corregir una infracción de esta regla, implemente el constructor de serialización. Para una clase sellada, marque el constructor como privado; de lo contrario, márquelo como protegido.|
 |[CA2230: Usar parámetros para argumentos de variable](../code-quality/ca2230-use-params-for-variable-arguments.md)|Un tipo público o protegido contiene un método público o protegido que utiliza la convención de llamada VarArgs en lugar de la palabra clave params.|
 |[CA2231: sobrecargar el operador equals al invalidar ValueType.Equals](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)|Un tipo de valor invalida `Object.Equals` pero no implementa el operador de igualdad.|

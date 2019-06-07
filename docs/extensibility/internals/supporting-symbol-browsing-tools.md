@@ -18,15 +18,15 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 649ba0583a70d0d53d8b12f26573daf3c52cf5e9
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a5e79969c3b4be22a3c9bb01f06297f54b0734ee
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66331201"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746006"
 ---
 # <a name="supporting-symbol-browsing-tools"></a>Compatibilidad con herramientas de exploración de símbolos
-**Examinador de objetos**, **vista de clases**, **Examinador de llamadas** y **resultados de la búsqueda de símbolos** herramientas proporcionan capacidades en Visual Studio de exploración de símbolos. Estas herramientas mostrar vistas de árbol jerárquico de símbolos y mostrar las relaciones entre los símbolos en el árbol. Pueden representar los símbolos de espacios de nombres, objetos, clases, miembros de clase y otros elementos de lenguaje contenidas en varios componentes. Los componentes incluyen los proyectos de Visual Studio, externos [!INCLUDE[dnprdnshort](../../code-quality/includes/dnprdnshort_md.md)] componentes y bibliotecas de tipos (.tlb). Para obtener más información, vea [Ver la estructura del código](../../ide/viewing-the-structure-of-code.md).
+**Examinador de objetos**, **vista de clases**, **Examinador de llamadas** y **resultados de la búsqueda de símbolos** herramientas proporcionan capacidades en Visual Studio de exploración de símbolos. Estas herramientas mostrar vistas de árbol jerárquico de símbolos y mostrar las relaciones entre los símbolos en el árbol. Pueden representar los símbolos de espacios de nombres, objetos, clases, miembros de clase y otros elementos de lenguaje contenidas en varios componentes. Los componentes incluyen los proyectos de Visual Studio, los componentes externos de .NET Framework y bibliotecas de tipos (.tlb). Para obtener más información, vea [Ver la estructura del código](../../ide/viewing-the-structure-of-code.md).
 
 ## <a name="symbol-browsing-libraries"></a>Bibliotecas de exploración de símbolos
  Como implementador de un idioma, puede ampliar las capacidades de exploración de símbolos de Visual Studio mediante la creación de bibliotecas que realizar un seguimiento de los símbolos de los componentes y proporcionan las listas de símbolos para el Administrador de objetos de Visual Studio a través de un conjunto de las interfaces. Se describe una biblioteca mediante el <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleLibrary2> interfaz. El Administrador de objetos de Visual Studio responde a solicitudes para los nuevos datos desde las herramientas de exploración de símbolos mediante la obtención de los datos de las bibliotecas y su organización. Posteriormente se rellena o se actualiza las herramientas con los datos solicitados. Para obtener una referencia al administrador de objetos de Visual Studio, <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectManager2>, pase el <xref:Microsoft.VisualStudio.Shell.Interop.SVsObjectManager> identificador al servicio el `GetService` método.

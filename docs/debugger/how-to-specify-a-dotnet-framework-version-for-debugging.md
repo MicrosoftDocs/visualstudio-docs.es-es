@@ -17,19 +17,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d2ce13fc55c94514bb9da24e43a5c54671becde5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bfe17100fcdcb0d475a7467233caa51ba7895225
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62906496"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747471"
 ---
 # <a name="how-to-specify-a-net-framework-version-for-debugging-c-visual-basic-f"></a>Procedimiento Especificar una versión de .NET Framework para la depuración (C#, Visual Basic, F#)
 
-El depurador de Visual Studio admite la depuración en versiones anteriores de Microsoft [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] , así como la versión actual. Si inicia una aplicación desde Visual Studio, el depurador siempre puede identificar la versión correcta de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] para la aplicación que se está depurando. Sin embargo, si la aplicación ya está funcionando y que inicie la depuración mediante el uso de **adjuntar a**, el depurador no siempre puede identificar una versión anterior de la [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Si esto ocurre, aparecerá un mensaje de error que indica,
+El depurador de Visual Studio admite la depuración de las versiones anteriores de Microsoft .NET Framework, así como la versión actual. Si inicia una aplicación desde Visual Studio, el depurador siempre puede identificar la versión correcta de .NET Framework para la aplicación que está depurando. Sin embargo, si la aplicación ya está funcionando y que inicie la depuración mediante el uso de **adjuntar a**, el depurador no siempre puede identificar una versión anterior de .NET Framework. Si esto ocurre, aparecerá un mensaje de error que indica,
 
 ``` cmd
-The debugger has made an incorrect assumption about the [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] version your application is going to use.
+The debugger has made an incorrect assumption about the .NET Framework version your application is going to use.
 ```
 
 En los casos excepcionales, donde aparece este error, puede establecer una clave del registro para indicar al depurador qué versión debe utilizar.
@@ -62,7 +62,7 @@ En los casos excepcionales, donde aparece este error, puede establecer una clave
 
 9. Cierre el **Editor del Registro**.
 
-     Si todavía obtiene un mensaje de error cuando empieza a depurar, compruebe que ha escrito correctamente el número de versión en el Registro. Compruebe también que está utilizando una versión de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] admitida por Visual Studio. El depurador es compatible con la versión actual de .NET Framework y con las versiones anteriores, pero puede no serlo con versiones futuras.
+     Si todavía obtiene un mensaje de error cuando empieza a depurar, compruebe que ha escrito correctamente el número de versión en el Registro. Compruebe también que utiliza una versión de .NET Framework compatible con Visual Studio. El depurador es compatible con la versión actual de .NET Framework y con las versiones anteriores, pero puede no serlo con versiones futuras.
 
 ## <a name="see-also"></a>Vea también
 - [Configuración y preparación de la depuración](../debugger/debugger-settings-and-preparation.md)

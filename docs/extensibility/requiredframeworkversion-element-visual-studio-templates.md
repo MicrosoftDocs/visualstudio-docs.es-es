@@ -12,12 +12,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77bc25ec831241a87782fc6628fba2ab8e7fa0e7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 0550fc1d286c04c61a1c0b2503326a002fde729e
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66334208"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744753"
 ---
 # <a name="requiredframeworkversion-element-visual-studio-templates"></a>RequiredFrameworkVersion (elemento) (plantillas de Visual Studio)
 
@@ -86,4 +86,4 @@ En este ejemplo, la versión mínima de .NET Framework que requiere la plantilla
 
 - [Referencia de esquema de plantillas de Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Creación de plantillas de proyecto y elemento](../ide/creating-project-and-item-templates.md)
-- [Tener como destino una versión específica de .NET Framework](../ide/visual-studio-multi-targeting-overview.md)
+- [Plataforma de destino de la información general](../ide/visual-studio-multi-targeting-overview.md)
