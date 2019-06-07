@@ -25,15 +25,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 489415eba929a73c25b8aea7262c3e930a5d90cd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1570aa3d4ea72dc1d133ce3096e1726fa1ffb782
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62898138"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745615"
 ---
 # <a name="product-and-package-schema-reference"></a>Referencia de esquemas de productos y paquetes
-Un *archivo producto* es un manifiesto XML que describe todas las dependencias externas requeridas por un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación. Algunos ejemplos de dependencias externas son el [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] y Microsoft Data Access Components (MDAC). Un archivo de paquete es similar a un archivo de producto, pero se usa para instalar los componentes dependientes de la referencia cultural de una dependencia, como ensamblados localizables, contratos de licencia y documentación.
+Un *archivo producto* es un manifiesto XML que describe todas las dependencias externas requeridas por un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación. .NET Framework y Microsoft Data Access Components (MDAC) son ejemplos de dependencias externas. Un archivo de paquete es similar a un archivo de producto, pero se usa para instalar los componentes dependientes de la referencia cultural de una dependencia, como ensamblados localizables, contratos de licencia y documentación.
 
  El archivo del producto y de paquetes consta de un nivel superior `Product` o `Package` elemento, cada uno de los cuales contiene los siguientes elementos.
 
@@ -53,7 +53,7 @@ Un *archivo producto* es un manifiesto XML que describe todas las dependencias e
  `InstallChecks` las pruebas que setup.exe debe realizar la existencia de un paquete determinado. `PackageFiles` Enumera todos los paquetes que el proceso de instalación que tenga que instalar, debe generar un error de una prueba determinada. Cada entrada de comando de comandos ejecuta una de las pruebas descritas por `InstallChecks`y especifica qué `PackageFile` para ejecutar la prueba falle. Puede usar el `Strings` elemento que se va a localizar los nombres de producto y los mensajes de error, por lo que puede usar un único binario de instalación para instalar la aplicación para cualquier número de idiomas.
 
 ## <a name="example"></a>Ejemplo
- En el ejemplo de código siguiente se muestra un archivo completa del producto para instalar el [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
+ En el ejemplo de código siguiente se muestra un archivo de producto completo para la instalación de .NET Framework.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
