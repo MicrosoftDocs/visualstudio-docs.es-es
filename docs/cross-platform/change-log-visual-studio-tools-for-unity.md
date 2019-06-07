@@ -1,7 +1,7 @@
 ---
 title: Registro de cambios (Visual Studio Tools para Unity, Windows) | Microsoft Docs
 ms.custom: ''
-ms.date: 04/02/2019
+ms.date: 05/28/2019
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
@@ -10,15 +10,75 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: f6523f958d334108eb6a3fbe9e5c44e416ff8df7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: acf80d1c700c0ac6c889ecd786a53cccda8604f3
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63403201"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66327352"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Registro de cambios (Visual Studio Tools para Unity, Windows)
 Registro de cambios de Visual Studio Tools para Unity.
+
+## <a name="4110"></a>4.1.1.0
+ Publicada el 24 de mayo de 2019
+
+### <a name="new-features"></a>Características nuevas
+
+- **Integración:**
+
+    - Se ha actualizado la API MonoBehaviour a 2019.1.
+
+### <a name="bug-fixes"></a>Correcciones de errores
+
+- **Integración:**
+
+    - Se ha corregido la notificación de advertencias y errores que se genera cuando está habilitada la compilación ligera.
+    
+    - Se ha corregido el rendimiento de la compilación ligera.
+
+## <a name="4100"></a>4.1.0.0
+ Publicada el 21 de mayo de 2019
+
+### <a name="new-features"></a>Características nuevas
+
+- **Integración:**
+
+    - Se ha agregado compatibilidad con la nueva API de lote para volver a cargar los proyectos más rápido.
+    
+    - Se ha deshabilitado la compilación completa para los proyectos de Unity, en favor del uso de los errores y advertencias de IntelliSense. De hecho, Unity crea una solución de Visual Studio con proyectos de biblioteca de clases que representan lo que Unity hace internamente. Dicho esto, el resultado de la compilación en Visual Studio nunca se utiliza o selecciona por Unity, ya que su canal de compilación está cerrado. La compilación en Visual Studio solo está consumiendo recursos para nada. Si necesita una compilación completa porque tiene herramientas o una configuración que depende de ella, puede deshabilitar esta optimización (Herramientas/Opciones/Herramientas para Unity/Deshabilitar la compilación completa de proyectos). 
+
+    - El Explorador de proyectos de Unity se muestra automáticamente cuando se carga un proyecto de Unity. Este explorador se acoplará junto al Explorador de soluciones.
+    
+    - Se ha actualizado el mecanismo de extracción de nombres del proyecto con Unity 2019.x.
+
+    - Se ha agregado compatibilidad para paquetes de Unity en el Explorador de proyectos de Unity. Solo son visibles los paquetes a los que se hace referencia (mediante manifest.json en la carpeta ```Packages```) y los paquetes locales (insertados en la carpeta ```Packages```).
+    
+- **Generación de proyectos:**
+
+    - Conservar las propiedades externas al procesar el archivo de solución.
+
+- **Evaluación:**
+
+    - Se ha agregado compatibilidad para nombres calificados con el alias (solo el espacio de nombres global por ahora). Así pues, el evaluador de expresiones acepta ahora tipos con el formato global::namespace.type.
+    
+    - Se ha agregado compatibilidad con el formato ```pointer[index]```, que es semánticamente idéntico al formato ```*(pointer+index)``` de desreferencia de puntero.
+
+### <a name="bug-fixes"></a>Correcciones de errores
+
+- **Integración:**
+
+    - Se han corregido problemas de dependencia con Microsoft.VisualStudio.MPF.
+    
+    - Se ha corregido la asociación del reproductor UWP, sin ningún proyecto cargado.
+    
+    - Se ha corregido la actualización automática de la base de datos de activos cuando Visual Studio aún no estaba asociado.
+    
+    - Se han corregido problemas de tema con etiquetas y casillas de verificación.
+    
+- **Depurador:**
+
+    - Se ha corregido la ejecución paso a paso con constructores estáticos.
 
 ## <a name="4005"></a>4.0.0.5
  Publicada el 27 de febrero de 2019

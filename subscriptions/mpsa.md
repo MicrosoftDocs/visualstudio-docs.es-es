@@ -7,12 +7,12 @@ ms.date: 03/14/2018
 ms.topic: conceptual
 description: Suscripciones de Visual Studio en un Contrato de servicios y productos de Microsoft (MPSA)
 searchscope: VS Subscription
-ms.openlocfilehash: cf0a6c0c7f09cefa70edd0af1dcedf46afdf81bf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ac051650c26dc2dbb7c6ee6d9405963536dd98c9
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63002326"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402174"
 ---
 # <a name="visual-studio-subscriptions-in-a-microsoft-products-and-services-agreement-mpsa"></a>Suscripciones de Visual Studio en un Contrato de servicios y productos de Microsoft (MPSA)
 
@@ -55,7 +55,7 @@ Tras realizar la asociación, todos los usuarios que cumplan los criterios neces
 
 Si se ha registrado en el Centro de negocios con un correo electrónico que no era una cuenta profesional (no registrada en Azure Active Directory "Azure AD"), como se explica en el párrafo cinco anterior, la asociación de inquilino será ligeramente diferente. Deberá realizar lo que se conoce como "aceptación de dominio". Durante este proceso, se hará a sí mismo el administrador global, con lo que el inquilino pasará de ser sin administrar a administrado.
 
-Para obtener una explicación más detallada de este proceso, puede consultar las [Guías de inicio rápido](https://www.microsoft.com/en-us/Licensing/existing-customer/business-center-training-and-resources.aspx). Descargue la guía denominada *"Instalación y uso de los servicios en línea"*, en que se detalla el proceso de aceptación de dominio. Una vez que haya finalizado este procedimiento, la cuenta de compras también se asociará a su inquilino.
+Para obtener una explicación más detallada de este proceso, puede consultar las [Guías de inicio rápido](https://www.microsoft.com/en-us/Licensing/existing-customer/business-center-training-and-resources.aspx). Descargue la guía denominada *"Instalación y uso de los servicios en línea"* , en que se detalla el proceso de aceptación de dominio. Una vez que haya finalizado este procedimiento, la cuenta de compras también se asociará a su inquilino.
 
 > [!NOTE]
 > Una vez completado el proceso de aceptación de dominio, debe atenerse a los criterios de los cinco pasos indicados en la sección Asociación previa al inquilino (administrado). Una vez que se cumplen los criterios, solo será necesario ponerse en contacto con el Equipo de Soporte Técnico de MPSA para proveer más administradores de suscripciones de Visual Studio.
@@ -64,4 +64,4 @@ Puede ponerse en contacto con el Equipo de Soporte Técnico por teléfono o corr
 
 Soporte técnico de MPSA: **1-866-200-9611**, disponible de lunes a viernes de 5:30 a 17:30, hora del Pacífico
 
-Correo electrónico: ngvlsup@microsoft.com
+En línea: https://support.microsoft.com/supportrequestform/2afa6f15-b710-db46-909a-8346017c802f?sl=enampsc=US

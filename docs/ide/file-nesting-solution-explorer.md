@@ -8,16 +8,16 @@ helpviewer_keywords:
 author: angelosp
 ms.author: angelpe
 manager: jillfra
-ms.openlocfilehash: 58e727c6335dd391abab4f50a110d361a658e00a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b40d943e2e05f380b5c8111db39c9cf13c8b3bf8
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62548959"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66432270"
 ---
-# <a name="customize-file-nesting-in-solution-explorer"></a>Personalizar el anidamiento de archivos en el Explorador de soluciones
+# <a name="file-nesting-in-solution-explorer"></a>Anidamiento de archivos en el Explorador de soluciones
 
-El anidamiento de archivos relacionados en el **Explorador de soluciones** no es nuevo, pero hasta ahora no se tenía ningún control sobre las reglas de anidamiento. Puede elegir entre los valores preestablecidos **Desactivado**, **Predeterminado** y **Web**, pero también puede personalizar el anidamiento a su gusto. Puede incluso crear una configuración específica de la solución y del proyecto, pero abordaremos esta posibilidad más adelante. En primer lugar, repasemos las opciones por defecto.
+El **Explorador de soluciones** anida archivos relacionados para ayudarle a organizarlos y que sean más fáciles de localizar. Por ejemplo, si agrega un formulario Windows Forms a un proyecto, el archivo de código para el formulario está anidado debajo del formulario en el **Explorador de soluciones**. En los proyectos de ASP.NET Core, el anidamiento de archivos se puede llevar un paso más lejos. Puede elegir entre los valores preestablecidos de anidamiento de archivos **Desactivado**, **Predeterminado** y **Web**. También puede [personalizar cómo se anidan los archivos](#customize-file-nesting) o [crear una configuración específica de la solución y del proyecto](#create-project-specific-settings).
 
 > [!NOTE]
 > Actualmente, la característica solo se admite para los proyectos de ASP.NET Core.
@@ -56,7 +56,7 @@ Centrémonos en el nodo **dependentFileProviders** y en sus nodos secundarios. C
 
 * **pathSegment**: Use este tipo de regla para anidar *jquery.min.js* en *jquery.js*
 
-* **allExtensions**: Use este tipo de regla para anidar *file.** en *file.js*
+* **allExtensions**: Use este tipo de regla para anidar *file.* * en *file.js*
 
 * **fileToFile**: Use este tipo de regla para anidar *bower.json* en *.bowerrc*
 
@@ -128,7 +128,7 @@ Toda la configuración, incluida la personalizada, se puede administrar mediante
 
 ![Activar reglas de anidamiento de archivos personalizadas](media/filenesting_activatecustom.png)
 
-## <a name="create-solution-specific-and-project-specific-settings"></a>Crear una configuración específica de la solución y del proyecto
+## <a name="create-project-specific-settings"></a>Creación de una configuración específica del proyecto
 
 Puede crear una configuración específica de la solución y del proyecto desde el menú contextual de la solución y el proyecto:
 
@@ -142,7 +142,7 @@ Puede hacer lo contrario e indicar a Visual Studio que *solo* use la configuraci
 
 La configuración específica de la solución y la específica del proyecto se pueden insertar en el repositorio del control de código fuente para que todo el equipo que trabaja en el código base pueda compartirlas.
 
-## <a name="disable-global-file-nesting-rules-for-a-particular-solution-or-project"></a>Deshabilitar las reglas de anidamiento de archivos globales en una solución o un proyecto
+## <a name="disable-file-nesting-rules-for-a-project"></a>Deshabilitación de las reglas de anidamiento de archivos para un proyecto
 
 Las reglas de anidamiento de archivos globales existentes se pueden deshabilitar en soluciones o proyectos específicos. Basta con usar la acción **remove** en un proveedor en lugar de **add**. Por ejemplo, si agrega el siguiente código de configuración a un proyecto, se deshabilitan todas las reglas **pathSegment** que existan globalmente para este proyecto concreto:
 
@@ -157,3 +157,4 @@ Las reglas de anidamiento de archivos globales existentes se pueden deshabilitar
 ## <a name="see-also"></a>Vea también
 
 - [Personalizar el IDE](../ide/personalizing-the-visual-studio-ide.md)
+- [Soluciones y proyectos en Visual Studio](solutions-and-projects-in-visual-studio.md)

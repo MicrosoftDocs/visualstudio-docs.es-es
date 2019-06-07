@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: a5ce4f298039d6d86f8c4855d1f139b6be1d1175
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a485f58e477d56625bc5ac88a014fc730057b97c
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822750"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66432308"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Análisis de pruebas automatizadas de IU mediante los registros de pruebas automatizadas de IU
 
@@ -24,23 +24,23 @@ Los registros de pruebas de IU codificadas filtran y guardan información import
 
 En función de su escenario, use uno de los siguientes métodos para habilitar el registro:
 
-- .NET Framework versión 4 de destino sin archivo *App.config* en el proyecto de prueba:
+- Si no hay ningún archivo *App.config* en el proyecto de prueba:
 
-   1. Abra el archivo *QTAgent32_40.exe.config*. De forma predeterminada, este archivo se encuentra en *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
+   1. Determine qué proceso *QTAgent\*.exe* se inicia al ejecutar la prueba. Una forma de hacerlo es ver la pestaña **Detalles** en el **Administrador de tareas** de Windows.
+   
+   2. Abra el correspondiente archivo *.config* de archivos desde la carpeta *%ProgramFiles(x86)%\Microsoft Visual Studio\\\<version>\\\<edition>\Common7\IDE*. Por ejemplo, si el proceso que se ejecuta es *QTAgent_40.exe*, abra *QTAgent_40.exe.config*.
 
-   2. Modifique el valor de EqtTraceLevel para que tenga el nivel de registro que quiera.
+   2. Modifique el valor de **EqtTraceLevel** para que tenga el nivel de registro que quiera.
+   
+      ```xml
+      <!-- You must use integral values for "value".
+           Use 0 for off, 1 for error, 2 for warn, 3 for info, and 4 for verbose. -->
+      <add name="EqtTraceLevel" value="4" />
+      ```
 
    3. Guarde el archivo.
 
-- .NET Framework versión 4.5 de destino sin archivo *App.config* en el proyecto de prueba:
-
-   1. Abra el archivo *QTAgent32.exe.config*. De forma predeterminada, este archivo se encuentra en *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
-
-   2. Modifique el valor de EqtTraceLevel para que tenga el nivel de registro que quiera.
-
-   3. Guarde el archivo.
-
-- Archivo *App.config* en el proyecto de prueba:
+- Si hay un archivo *App.config* en el proyecto de prueba:
 
     - Abra el archivo *App.config* en el proyecto y agregue el siguiente código bajo el nodo de configuración:
 
@@ -54,11 +54,13 @@ En función de su escenario, use uno de los siguientes métodos para habilitar e
 
 - Habilitar el registro desde el propio código de prueba:
 
-   <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.LoggerOverrideState%2A> = HtmlLoggerState.AllActionSnapshot;
+   ```csharp
+   Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.LoggerOverrideState = HtmlLoggerState.AllActionSnapshot;
+   ```
 
 ## <a name="step-2-run-your-coded-ui-test-and-view-the-log"></a>Paso 2: Ejecutar la prueba de IU codificada y ver el registro
 
-Cuando ejecute una prueba automatizada de IU una vez realizadas las modificaciones en el archivo *QTAgent32.exe.config*, verá que hay un vínculo de salida en los resultados del **Explorador de pruebas**. Los archivos de registro no solo se generan cuando la prueba produzca un error, sino también para las pruebas correctas cuando el nivel de seguimiento sea "detallado".
+Cuando ejecute una prueba automatizada de IU una vez realizadas las modificaciones en el archivo *QTAgent32\*.exe.config*, verá que hay un vínculo de salida en los resultados del **Explorador de pruebas**. Los archivos de registro no solo se generan cuando la prueba produzca un error, sino también para las pruebas correctas cuando el nivel de seguimiento sea **detallado**.
 
 1. En el menú **Prueba**, seleccione **Ventanas** y después elija **Explorador de pruebas**.
 

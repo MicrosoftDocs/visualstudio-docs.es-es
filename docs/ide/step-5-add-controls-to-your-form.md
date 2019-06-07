@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f1662f484d8738c381f704732389537b0ac3ad5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 4f091ea0841ac66cd106c3fa613f1219ddaaffcf
+ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431478"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66501201"
 ---
 # <a name="step-5-add-controls-to-your-form"></a>Paso 5: Agregar controles al formulario
 En este paso, se agregan controles, como un control <xref:System.Windows.Forms.PictureBox> y un control <xref:System.Windows.Forms.CheckBox>, al formulario. Luego puede agregar controles <xref:System.Windows.Forms.Button> al formulario.
@@ -30,8 +30,7 @@ En este paso, se agregan controles, como un control <xref:System.Windows.Forms.P
 
 4. Elija el nuevo control **PictureBox** para seleccionarlo y, a continuación, elija el triángulo negro de este control para mostrar la lista de tareas, tal y como se muestra en la imagen siguiente.
 
-     ![Tareas de PictureBox](../ide/media/express_pictureboxtasks.png)
-**PictureBox** tasks
+     ![Tareas de PictureBox](../ide/media/express_pictureboxtasks.png)<br/>***Tareas*** de *PictureBox*
 
     > [!NOTE]
     > Si agrega accidentalmente un tipo equivocado de control a TableLayoutPanel, puede eliminarlo. Haga clic con el botón derecho en el control y, después, pulse **Eliminar** en el menú contextual. También puede quitar controles del formulario mediante la barra de menús. En la barra de menús, pulse **Editar** > **Deshacer** o **Editar** > **Eliminar**.
@@ -45,8 +44,7 @@ En este paso, se agregan controles, como un control <xref:System.Windows.Forms.P
 
 7. Seleccione el control **TableLayoutPanel** del formulario y, después, agregue un control CheckBox al formulario. Haga doble clic en el elemento **CheckBox** del **cuadro de herramientas** para agregar un nuevo control CheckBox a la siguiente celda libre de la tabla. Como el control PictureBox ocupa las dos primeras celdas del control TableLayoutPanel, el control CheckBox se agrega en la celda inferior izquierda. Seleccione la propiedad **Text** y escriba la palabra **Stretch**, como se muestra en la imagen siguiente.
 
-     ![Control TextBox con la propiedad Stretch](../ide/media/express_pictureviewercheckbox.png)
-**TextBox** control with **Stretch** pr
+     ![Control TextBox con la propiedad Stretch](../ide/media/express_pictureviewercheckbox.png)<br/>*Control ***TextBox*** con* la *propiedad* ***Stretch***
 
 8. Seleccione el control **TableLayoutPanel** del formulario, vaya al grupo **Contenedores** del **cuadro de herramientas** (donde ha obtenido el control TableLayoutPanel) y haga doble clic en el elemento **FlowLayoutPanel** para agregar un nuevo control a la última celda de PictureBox (en la parte inferior derecha). Después, acople el control FlowLayoutPanel en TableLayoutPanel (para ello, pulse **Acoplar en contenedor primario** en la lista de tareas del triángulo negro de FlowLayoutPanel o establezca la propiedad **Dock** de FlowLayoutPanel en **Fill**).
 
@@ -71,8 +69,7 @@ En este paso, se agregan controles, como un control <xref:System.Windows.Forms.P
 
 5. Pulse el botón **Cerrar** para seleccionarlo. Mantenga presionada la tecla **CTRL** y elija los otros tres botones para que todos estén seleccionados. Mientras todos los botones están seleccionados, vaya a la ventana **Propiedades** y desplácese hacia arriba hasta la propiedad **AutoSize**. Esta propiedad indica al botón que cambie el tamaño automáticamente para ajustarse al texto que contiene. Establézcala en **true**. Ahora, los botones deberían tener el tamaño y orden correctos. (Si los cuatro botones están seleccionados, puede cambiar las cuatro propiedades **AutoSize** al mismo tiempo). En la siguiente imagen se muestran los cuatro botones.
 
-     ![Visor de imágenes con cuatro botones](../ide/media/express_autosize.png)
-**Picture Viewer** with four buttons
+     ![Visor de imágenes con cuatro botones](../ide/media/express_autosize.png)<br/>***Visor de imágenes*** con *cuatro botones*
 
 6. Ahora, ejecute de nuevo el programa para ver el formulario que acaba de diseñar. Al elegir los botones y la casilla todavía no sucede nada, pero funcionarán pronto.
 

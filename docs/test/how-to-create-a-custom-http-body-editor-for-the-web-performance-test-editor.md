@@ -8,12 +8,12 @@ ms.assetid: a0b2d8ff-3e2a-487e-9172-90047174f336
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2a90d0e02d5ae3ce3ce2e91d4d152244b06fd049
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b56195ce7cb6e52433e19dc2a7ae4b42e7580724
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950272"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66431839"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>Procedimiento para crear un editor de cuerpo HTTP personalizado para el Editor de pruebas de rendimiento web
 
@@ -285,7 +285,7 @@ Cuando se completa la edición del texto de la cadena y el usuario hace clic en 
 
 3. Al finalizar la grabación, en el Editor de pruebas de rendimiento web, expanda la solicitud para el servicio Web y seleccione **Texto de la cadena** o **Cuerpo binario**.
 
-4. En la ventana **Propiedades**, seleccione Cuerpo de la cadena o Cuerpo binario y elija los puntos suspensivos **(…)**.
+4. En la ventana **Propiedades**, seleccione Cuerpo de la cadena o Cuerpo binario y elija los puntos suspensivos **(…)** .
 
    Aparecerá el cuadro de diálogo **Editar datos del cuerpo HTTP**.
 
