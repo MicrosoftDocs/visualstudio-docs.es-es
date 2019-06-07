@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 49ff55e2a261e86ec5aae09573d6ac40c74c0091
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 71b9df9a8422d1b24a3e5476005942113356c353
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263474"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747422"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Problemas de configuración de servidor y cliente en implementaciones de ClickOnce
 Si usa Internet Information Services (IIS) en Windows Server y la implementación contiene un tipo de archivo que Windows no reconocen, como un archivo de Microsoft Word, IIS no transmitirá dicho archivo y no se realizará correctamente la implementación.
@@ -41,7 +41,7 @@ Si usa Internet Information Services (IIS) en Windows Server y la implementació
 
   Sin embargo, puede deshabilitar esta opción si desactiva la **usar extensión de archivo ".deploy"** opción el [Publish Options Dialog Box](/previous-versions/visualstudio/visual-studio-2010/7z83t16a(v=vs.100)), en cuyo caso debe configurar el servidor Web para desbloquear todas las extensiones de archivo se usa en la aplicación.
 
-  Tendrá que configurar *.manifest*, *.application*, y *.deploy*, por ejemplo, si está utilizando IIS donde no haya instalado el [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], o si no está uso de otro servidor Web (por ejemplo, Apache).
+  Tendrá que configurar *.manifest*, *.application*, y *.deploy*, por ejemplo, si está utilizando IIS donde no se ha instalado .NET Framework, o si está uso de otro servidor Web (por ejemplo, Apache).
 
 ## <a name="clickonce-and-secure-sockets-layer-ssl"></a>ClickOnce y la capa de Sockets seguros (SSL)
  Un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación funcionará bien a través de SSL, excepto cuando Internet Explorer envía un mensaje sobre el certificado SSL. El símbolo del sistema puede generarse cuando hay algún problema con el certificado, como cuando no coinciden los nombres de sitio o el certificado ha expirado. Para realizar [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] funcionan a través de una conexión SSL, asegúrese de que el certificado está actualizado y que los datos del certificado coincide con los datos del sitio.
@@ -121,7 +121,7 @@ Si usa Internet Information Services (IIS) en Windows Server y la implementació
   Para obtener instrucciones específicas sobre cómo configurar tipos MIME en Windows Server, consulte el artículo de Microsoft Knowledge Base KB326965, "IIS 6.0 no sirve tipos MIME desconocidos" en [ http://support.microsoft.com/default.aspx?scid=kb; en-us; 326965](http://support.microsoft.com/default.aspx?scid=kb;en-us;326965).
 
 ## <a name="content-type-mappings"></a>Asignaciones de tipo de contenido
- Cuando se publica a través de HTTP, el tipo de contenido (también conocido como el tipo MIME) para el *.application* archivo debe ser "application/x-ms-application". Si tiene [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] instalado en el servidor, se establecerá para automáticamente. Si esto no está instalado, deberá crear una asociación de tipo MIME para el [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación vroot (o todo el servidor).
+ Cuando se publica a través de HTTP, el tipo de contenido (también conocido como el tipo MIME) para el *.application* archivo debe ser "application/x-ms-application". Si tiene instalado en el servidor de .NET Framework 2.0, este se establecerá automáticamente. Si esto no está instalado, deberá crear una asociación de tipo MIME para el [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación vroot (o todo el servidor).
 
  Si implementa mediante un servidor IIS, ejecute <em>inetmgr.</em> exe y agregue un nuevo tipo de contenido de "application/x-ms-application" para el *.application* extensión.
 

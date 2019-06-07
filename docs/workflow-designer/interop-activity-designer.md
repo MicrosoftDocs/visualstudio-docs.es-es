@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e020e2f4e1ffae9c0e979f2230ff845b1cda203e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 688ef92fae5bd0cbaa5ddc653bbaab5692f4827f
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62536430"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747133"
 ---
 # <a name="interop-activity-designer"></a>Diseñador de actividades Interop
 
@@ -29,11 +29,7 @@ La actividad <xref:System.Activities.Statements.Interop> administra la ejecució
 
 El **interoperabilidad** Diseñador de actividad puede encontrarse en el **migración** categoría de la **cuadro de herramientas**, que se tiene acceso haciendo clic en el **delcuadrodeherramientas**ficha. Como alternativa, seleccione **cuadro de herramientas** desde el **vista** menús o presione **Ctrl**+**Alt** + **X**.
 
-El [migración](../workflow-designer/migration-activity-designers.md) categoría que contiene el <xref:System.Activities.Statements.Interop> actividad solo se muestra en **cuadro de herramientas** si el proyecto tiene como destino .NET Framework 4 completo.
-
-Para proyectos de C#, puede volver a destinar el proyecto para usar la versión completa de .NET Framework 4 con el botón secundario en el proyecto de **el Explorador de soluciones** y seleccionando **propiedades**. En el **aplicación** ficha, seleccione el **.NET Framework 4** opción el **.NET framework de destino**. Seleccione **Sí** confirmación del cambio.
-
-Para proyectos de Visual Basic, puede volver a destinar el proyecto para usar la versión completa de .NET Framework 4 con el botón secundario en el proyecto en **el Explorador de soluciones** y seleccionando **propiedades**. En el **compilar** pestaña, haga clic en el **Advanced Compile Options** botón. Seleccione **.Net Framework 4** desde el **lista plataforma de destino**y, a continuación, haga clic en **Aceptar**. Seleccione **Sí** confirmación del cambio.
+El [migración](../workflow-designer/migration-activity-designers.md) categoría que contiene el <xref:System.Activities.Statements.Interop> actividad aparece sólo en **cuadro de herramientas** si el proyecto tiene como destino .NET Framework 4 (completa) o una versión posterior. Si es necesario, puede cambiar la versión de framework que el proyecto está destinado.
 
 El **interoperabilidad** Diseñador de actividad se puede arrastrar desde **cuadro de herramientas** y se coloca en la superficie del Diseñador de flujo de trabajo donde se coloquen normalmente las actividades, tal como en un <xref:System.Activities.Statements.Sequence>. Quitar el **interoperabilidad** Diseñador de actividad se crea un <xref:System.Activities.Statements.Interop> actividad con un valor predeterminado **DisplayName** de interoperabilidad. Puede editar el <xref:System.Activities.Activity.DisplayName%2A> en el encabezado de la **interoperabilidad** Diseñador de actividad, o en el **DisplayName** cuadro de la cuadrícula de propiedades.
 

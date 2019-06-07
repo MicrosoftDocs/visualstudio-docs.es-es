@@ -10,15 +10,15 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a223d23cb792f13f1df9f869a540ffa61f50f9b
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: a8a93b4fd12cd9a0bd2e5a5f3c70486e370545a9
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66340644"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747649"
 ---
 # <a name="manage-undo-and-redo-by-using-the-legacy-api"></a>Administración de deshacer y rehacer mediante el uso de la API heredada
-Los editores deben admitir las operaciones de deshacer que permiten a los usuarios revertir sus cambios recientes cuando modifica el código. La mayoría de editores implementados en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] y [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] puede tener soporte para deshacer automáticamente proporcionada por el entorno de desarrollo integrado (IDE).
+Los editores deben admitir las operaciones de deshacer que permiten a los usuarios revertir sus cambios recientes cuando modifica el código. La mayoría de editores implementados en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] y .NET Framework puede tener soporte para deshacer automáticamente proporcionada por el entorno de desarrollo integrado (IDE).
 
 ## <a name="in-this-section"></a>En esta sección
 - [Cómo: Implementar la administración de deshacer](../extensibility/how-to-implement-undo-management.md) proporciona capacidad de deshacer para editores con una o varias vistas.

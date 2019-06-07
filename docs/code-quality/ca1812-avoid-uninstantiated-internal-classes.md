@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a0d55af3c5522c6bb9aa3ad8a023f070c187ca6f
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 6946434708e38bde7f6efcfc8404da14f91b41ee
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714271"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744702"
 ---
 # <a name="ca1812-avoid-uninstantiated-internal-classes"></a>CA1812: Evitar las clases internas sin instancia
 
@@ -58,7 +58,7 @@ Si aplica el <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?d
 
 Para corregir una infracción de esta regla, quite el tipo o agregue código que lo utiliza. Si el tipo contiene solo `static` agregar métodos, uno de los siguientes al tipo para evitar que el compilador emita un constructor de instancia público predeterminado:
 
-- El `static` modificador C# tipos que tienen como destino [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] o una versión posterior.
+- El `static` modificador C# tipos que tienen como destino .NET Framework 2.0 o posterior.
 
 - Un constructor privado para los tipos que tienen como destino las versiones 1.0 y 1.1 de .NET Framework.
 

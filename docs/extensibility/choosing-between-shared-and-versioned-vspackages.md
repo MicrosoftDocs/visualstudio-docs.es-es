@@ -12,17 +12,17 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 96eea3cb0abe4c0e1151b15680bbab984f9131c5
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: de7bb2ee0335322e0b089fd2af81026b1f6bd1ca
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66321021"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747788"
 ---
 # <a name="choose-between-shared-and-versioned-vspackages"></a>Elección entre VSPackages compartidos y con control de versiones
 Las diferentes versiones de Visual Studio pueden coexistir en el mismo equipo. Los paquetes VSPackage pueden admitir cualquier combinación de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] versiones.
 
- Puede permitir que las instalaciones en paralelo de VSPackages a través de cualquiera de las dos estrategias, la estrategia compartida o la estrategia con control de versiones. Ambos dar cabida a la presencia de varias versiones de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] y asociadas a las versiones de la [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
+ Puede permitir que las instalaciones en paralelo de VSPackages a través de cualquiera de las dos estrategias, la estrategia compartida o la estrategia con control de versiones. Ambos dar cabida a la presencia de varias versiones de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] y asociadas a las versiones de .NET Framework.
 
  En la estrategia compartida, se registra un VSPackage para su uso en varias versiones de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. En la estrategia con control de versiones, se instalan varios archivos DLL de VSPackage, uno para cada versión de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] que proporciona soporte técnico.
 

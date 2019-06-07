@@ -7,34 +7,35 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 092af518cc6c6fb1d98025cda54a6a1d491940c9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a5bd7a55e94b3b9d8ca9e68a91de8512f30eb500
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445124"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747502"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>Procedimiento Abrir un modelo desde un archivo en el código del programa
+
 Puede abrir los modelos DSL en cualquier aplicación.
 
- Desde una extensión de Visual Studio, puede usar ModelBus para este propósito. ModelBus proporciona un mecanismo estándar para hacer referencia a un modelo o elementos en un modelo y para buscar el modelo si se ha movido. Para obtener más información, consulte [integrar modelos utilizando Modelbus de Visual Studio](../modeling/integrating-models-by-using-visual-studio-modelbus.md).
+Desde una extensión de Visual Studio, puede usar ModelBus para este propósito. ModelBus proporciona un mecanismo estándar para hacer referencia a un modelo o elementos en un modelo y para buscar el modelo si se ha movido. Para obtener más información, consulte [integrar modelos utilizando Modelbus de Visual Studio](../modeling/integrating-models-by-using-visual-studio-modelbus.md).
 
-## <a name="target-framework"></a>Versión de .NET Framework de destino
- Establecer el **.NET framework de destino** de su proyecto de aplicación para **.NET Framework 4**.
+## <a name="target-framework"></a>Marco de trabajo de destino
 
-#### <a name="to-set-the-target-framework"></a>Para establecer la plataforma de destino
+Establecer el **.NET framework de destino** del proyecto de aplicación a .NET Framework 4 o posterior.
 
 1. Abra el proyecto de Visual Studio para la aplicación en el que desea leer un modelo DSL.
 
 2. En **el Explorador de soluciones**, haga clic en el proyecto y, a continuación, haga clic en **propiedades**.
 
-3. En la ventana Propiedades del proyecto, en el **aplicación** pestaña, establezca el **.NET framework de destino** campo **.NET Framework 4**.
+3. En la ventana Propiedades del proyecto, en el **aplicación** pestaña, establezca el **.NET framework de destino** campo **.NET Framework 4** (o posterior).
 
 > [!NOTE]
-> Es posible que deba hacer esto, incluso si se selecciona **.NET Framework 4** en el cuadro de diálogo de creación de proyecto. La plataforma de destino no debe ser **.NET Framework 4 Client Profile**.
+> La plataforma de destino no debe ser **.NET Framework 4 Client Profile**.
 
 ## <a name="references"></a>Referencias
- Tiene que agregar estas referencias al proyecto de aplicación de Visual Studio:
+
+Agregue estas referencias al proyecto de aplicación de Visual Studio:
 
 - `Microsoft.VisualStudio.Modeling.Sdk.11.0`
 
@@ -43,9 +44,10 @@ Puede abrir los modelos DSL en cualquier aplicación.
 - El ensamblado DSL, que encontrará en la carpeta bin del proyecto DSL. Su nombre es normalmente del formulario: *Suempresa*. *Convertirá*`.Dsl.dll`.
 
 ## <a name="important-classes-in-the-dsl"></a>Clases importantes en el DSL
- Antes de poder escribir el código que lee su DSL, debe saber los nombres de algunas de las clases generadas por su DSL. En la solución DSL, abra el **Dsl** del proyecto y busque en el **GeneratedCode** carpeta. Como alternativa, haga doble clic en el ensamblado del DSL en el proyecto **referencias**y abra el espacio de nombres DSL **Examinador de objetos**.
 
- Estas son las clases que se deben identificar:
+Antes de poder escribir el código que lee su DSL, debe saber los nombres de algunas de las clases generadas por su DSL. En la solución DSL, abra el **Dsl** del proyecto y busque en el **GeneratedCode** carpeta. Como alternativa, haga doble clic en el ensamblado del DSL en el proyecto **referencias**y abra el espacio de nombres DSL **Examinador de objetos**.
+
+Estas son las clases que se deben identificar:
 
 - *YourDslRootClass* : este es el nombre de la clase raíz en su `DslDefinition.dsl`.
 
@@ -53,8 +55,9 @@ Puede abrir los modelos DSL en cualquier aplicación.
 
 - *Sunombrededsl* `DomainModel` -esta clase se define en `DomainModel.cs` en el proyecto DSL.
 
-## <a name="reading-from-a-file"></a>Al leer un archivo
- El ejemplo siguiente está diseñado para leer un DSL en el que las clases importantes son los siguientes:
+## <a name="read-from-a-file"></a>Leer de un archivo
+
+El ejemplo siguiente está diseñado para leer un DSL en el que las clases importantes son los siguientes:
 
 - FamilyTreeModel
 
@@ -62,7 +65,7 @@ Puede abrir los modelos DSL en cualquier aplicación.
 
 - FamilyTreeDomainModel
 
-  La otra clase de dominio en este DSL es la persona.
+La otra clase de dominio en este DSL es la persona.
 
 ```csharp
 using System;
@@ -100,8 +103,9 @@ namespace StandaloneReadDslConsole
 } } } }
 ```
 
-## <a name="saving-to-a-file"></a>Guardar datos en un archivo
- La adición siguiente al código anterior realiza un cambio en el modelo y, a continuación, guarda en un archivo.
+## <a name="save-to-a-file"></a>Guardar en un archivo
+
+La adición siguiente al código anterior realiza un cambio en el modelo y, a continuación, guarda en un archivo.
 
 ```csharp
 using (Transaction t =

@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5d7d5fa0a53ead2f49f89df37943d734a1b73fb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: HT
+ms.openlocfilehash: 2f2343d71d2ed0745f9c5a2a799c3018a2e64945
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045347"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746248"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Especificar archivos de código fuente y símbolos (.pdb) en el depurador de Visual Studio (C#, C++, Visual Basic, F#)
 
@@ -76,7 +76,7 @@ El depurador también busca los archivos de símbolos en las siguientes ubicacio
 
      Servidores de símbolos que podría utilizar incluyen:
 
-     **Servidores de símbolos públicos de Microsoft**: Para depurar un bloqueo que se produce durante una llamada a un archivo DLL del sistema o a una biblioteca de terceros, a menudo necesita sistema *.pdb* archivos. Sistema *.pdb* archivos contienen símbolos para archivos DLL de Windows, *.exe* archivos y controladores de dispositivos. Puede obtener los símbolos para los sistemas operativos de Windows, MDAC, IIS, ISA y el [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] de los servidores de símbolos públicos de Microsoft.
+     **Servidores de símbolos públicos de Microsoft**: Para depurar un bloqueo que se produce durante una llamada a un archivo DLL del sistema o a una biblioteca de terceros, a menudo necesita sistema *.pdb* archivos. Sistema *.pdb* archivos contienen símbolos para archivos DLL de Windows, *.exe* archivos y controladores de dispositivos. Puede obtener los símbolos para los sistemas operativos Windows, MDAC, IIS, ISA y .NET Framework de los servidores de símbolos públicos de Microsoft.
 
      **Servidores de símbolos de una red interna o del equipo local**: Su equipo o compañía puede crear servidores de símbolos para sus propios productos y como memoria caché de símbolos de orígenes externos. Podría tener un servidor de símbolos en su propio equipo.
 

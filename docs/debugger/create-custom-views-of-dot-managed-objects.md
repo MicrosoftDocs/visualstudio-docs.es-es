@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 733f3ec7573287e934f8a5f0167db89c0683759a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 911f0423184f22919be016691b9333b2f62d1b61
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62564013"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744800"
 ---
 # <a name="create-custom-views-of-objects-c-visual-basic-c"></a>Crear vistas personalizadas de objetos (C#, Visual Basic, C++)
 Se puede personalizar la manera en que Visual Studio muestra los tipos de datos en las ventanas de variables del depurador.
@@ -41,7 +41,7 @@ Para C++ código, puede agregar expansiones de tipo de datos personalizados medi
 
 En C#, Visual Basic, y C++ (C++solo código /CLI), se pueden agregar expansiones para los datos personalizados mediante <xref:System.Diagnostics.DebuggerTypeProxyAttribute>, <xref:System.Diagnostics.DebuggerDisplayAttribute>, y <xref:System.Diagnostics.DebuggerBrowsableAttribute>.
 
-En código de [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)], Visual Basic no admite el atributo DebuggerBrowsable. Esta limitación se ha quitado en las versiones más recientes de .NET Framework.
+En el código de .NET Framework 2.0, Visual Basic no admite el atributo DebuggerBrowsable. Esta limitación se ha quitado en las versiones más recientes de .NET Framework.
 
 ## <a name="visualizers"></a>Visualizadores
 

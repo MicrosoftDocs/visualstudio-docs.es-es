@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8222c6526d54ffb7721c2f2799458fe5c8277cd7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3d4339295c47ee6bc8915eecfb581d9a0e8a4bed
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406634"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747666"
 ---
 # <a name="trusted-application-deployment-overview"></a>Introducción a la implementación de aplicaciones de confianza
 En este tema se proporciona información general sobre cómo implementar aplicaciones [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] que disponen de permisos elevados usando la tecnología de implementación de aplicaciones de confianza.
@@ -80,7 +80,7 @@ Siga estos pasos para aprovechar las ventajas de la implementación de aplicacio
 - *CertMgr.exe*, que es un componente de Internet Explorer y, por tanto, existe en Windows 98 y en todas las versiones posteriores. Para obtener más información, consulte [Certmgr.exe (herramienta de administrador de certificados)](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool).
 
 ### <a name="create-a-clickonce-application"></a>Crear una aplicación ClickOnce
- Una aplicación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] es una aplicación cliente [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] combinada con archivos de manifiesto que describen la aplicación y proporcionan parámetros de instalación. Puede convertir el programa en una aplicación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] con el comando **Publicar** de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Otra opción es generar todos los archivos necesarios para la implementación de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] mediante las herramientas incluidas en el [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Para obtener pasos detallados sobre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implementación, consulte [Tutorial: Implementar manualmente una aplicación ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
+ Un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] trata de una aplicación de cliente de .NET Framework combinada con archivos de manifiesto que describen la aplicación y proporcionan los parámetros de instalación. Puede convertir el programa en una aplicación [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] con el comando **Publicar** de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Otra opción es generar todos los archivos necesarios para la implementación de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] mediante las herramientas incluidas en el [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Para obtener pasos detallados sobre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implementación, consulte [Tutorial: Implementar manualmente una aplicación ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
 
  La implementación de aplicaciones de confianza es específica de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]y solo puede usarse con aplicaciones [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] .
 

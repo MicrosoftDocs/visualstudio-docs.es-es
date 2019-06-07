@@ -11,19 +11,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 069a9ce5f3126550f54a5d2780411f6832acee83
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 54e36b942780f9efd4ddb3612d9631188b17d791
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62994545"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744522"
 ---
 # <a name="export-diagrams-as-images"></a>Exportar diagramas como imágenes
+
 En Visual Studio, puede guardar diagramas de modelado en formatos de solo lectura para que puede compartirlos con las partes interesadas, usuarios o los miembros del equipo de proyecto que no usan la misma versión de Visual Studio.
 
- Para ver qué ediciones de Visual Studio admiten esta característica, vea [compatibilidad con la edición de arquitectura y las herramientas de modelado](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
+Para ver qué ediciones de Visual Studio admiten esta característica, vea [compatibilidad con la edición de arquitectura y las herramientas de modelado](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
-### <a name="to-copy-a-diagram-or-part-of-a-diagram-to-another-application"></a>Para copiar un diagrama o parte de un diagrama en otra aplicación
+## <a name="copy-a-diagram-or-part-of-a-diagram-to-another-application"></a>Copiar un diagrama o parte de un diagrama a otra aplicación
 
 1. En el diagrama, seleccione algunas formas o todas ellas.
 
@@ -31,15 +32,13 @@ En Visual Studio, puede guardar diagramas de modelado en formatos de solo lectur
 
 3. Pegue la selección en la aplicación que quiera.
 
-### <a name="to-save-a-modeling-diagram-as-an-xml-paper-specification-xps-file"></a>Para guardar un diagrama de modelado como archivo XML Paper Specification (XPS)
+## <a name="save-a-modeling-diagram-as-an-xml-paper-specification-xps-file"></a>Guardar un diagrama de modelado como un archivo XML Paper Specification (XPS)
 
 1. En el **archivo** menú, haga clic en **impresión** para abrir el **impresión** cuadro de diálogo.
 
 2. En el **nombre** lista, seleccione **Microsoft XPS Document Writer**y, a continuación, haga clic en **Aceptar**.
 
 3. En el **guarde el archivo como** cuadro de diálogo, guarde el archivo como un **documento XPS (\*.xps)** archivo.
-
-## <a name="net-framework-security"></a>Seguridad de .NET Framework
 
 ## <a name="see-also"></a>Vea también
 

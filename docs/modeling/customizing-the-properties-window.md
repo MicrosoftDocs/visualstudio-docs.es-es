@@ -9,43 +9,48 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 613f8828cf7e966fb66468588c73e1a8b9dbdd3d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5fc4e6086b8e4d98509fd6797f4fa99ae5e61329
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63414734"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744718"
 ---
-# <a name="customizing-the-properties-window"></a>Personalizar la ventana Propiedades
+# <a name="customize-the-properties-window"></a>Personalizar la ventana Propiedades
+
 Puede personalizar la apariencia y comportamiento de la ventana Propiedades de su lenguaje específico de dominio (DSL) en Visual Studio. En la definición de DSL, debe definir las propiedades de dominio en cada clase de dominio. De forma predeterminada, cuando se selecciona una instancia de la clase, en un diagrama o en el Explorador de modelos, cada propiedad de dominio se muestra en la ventana Propiedades. Esto permite ver y editar los valores de propiedades de dominio, incluso si no ha asignado a los campos de la forma del diagrama.
 
 ## <a name="names-descriptions-and-categories"></a>Los nombres, descripciones y categorías
- **Nombre y nombre para mostrar**. En la definición de una propiedad de dominio, el nombre para mostrar de la propiedad es el nombre que aparece en tiempo de ejecución en la ventana Propiedades. Por el contrario, el nombre se usa al escribir código de programa para actualizar la propiedad. El nombre debe ser un nombre alfanumérico de CLR correcto, pero el nombre para mostrar puede contener espacios.
 
- Cuando se establece el nombre de una propiedad en la definición de DSL, su nombre para mostrar se establece automáticamente en una copia del nombre. Si escribe un nombre de mayúsculas y minúsculas Pascal como "FuelGauge", el nombre para mostrar automáticamente contendrá un espacio: "Indicador de combustible". Sin embargo, puede establecer explícitamente el nombre para mostrar con otro valor.
+**Nombre y nombre para mostrar**. En la definición de una propiedad de dominio, el nombre para mostrar de la propiedad es el nombre que aparece en tiempo de ejecución en la ventana Propiedades. Por el contrario, el nombre se usa al escribir código de programa para actualizar la propiedad. El nombre debe ser un nombre alfanumérico de CLR correcto, pero el nombre para mostrar puede contener espacios.
 
- **Descripción**. La descripción de una propiedad de dominio aparece en dos lugares:
+Cuando se establece el nombre de una propiedad en la definición de DSL, su nombre para mostrar se establece automáticamente en una copia del nombre. Si escribe un nombre de mayúsculas y minúsculas Pascal como "FuelGauge", el nombre para mostrar automáticamente contendrá un espacio: "Indicador de combustible". Sin embargo, puede establecer explícitamente el nombre para mostrar con otro valor.
+
+**Descripción**. La descripción de una propiedad de dominio aparece en dos lugares:
 
 - En la parte inferior de la ventana Propiedades cuando el usuario selecciona la propiedad. Puede usarlo para explicar al usuario, lo que representa la propiedad.
 
 - En el código de programa generado. Si utiliza las funciones de documentación para extraer la documentación de API, aparecerá como la descripción de esta propiedad en la API.
 
-  **Categoría**. Una categoría es un encabezado en la ventana Propiedades.
+**Categoría**. Una categoría es un encabezado en la ventana Propiedades.
 
-## <a name="exposing-style-features"></a>Exponer las características de estilo
- Algunas de las características de los elementos gráficos dinámicas se pueden representar o *expone* como propiedades de dominio. Una característica que se haya expuesto de esta manera puede actualizarse por el usuario y mucho más fácilmente se pueden actualizar por código de programa.
+## <a name="expose-style-features"></a>Exponer las características de estilo
 
- Haga clic en una clase de la forma en la definición de DSL, elija **agregar expuestos**y, a continuación, elija una característica.
+Algunas de las características de los elementos gráficos dinámicas se pueden representar o *expone* como propiedades de dominio. Una característica que se haya expuesto de esta manera puede actualizarse por el usuario y mucho más fácilmente se pueden actualizar por código de programa.
 
- En las formas puede exponer el **FillColor**, **OutlineColor**, **TextColor**, **OutlineDashStyle**,  **OutlineThickness** y **FillGradientMode** propiedades. En los conectores puede exponer el **Color**`,`**TextColor**, **DashStyle**, y **grosor** propiedades. En los diagramas se pueden exponer el **FillColor** y **TextColor** propiedades.
+Haga clic en una clase de la forma en la definición de DSL, elija **agregar expuestos**y, a continuación, elija una característica.
 
-## <a name="forwarding-displaying-properties-of-related-elements"></a>Reenvío: Mostrar las propiedades de los elementos relacionados
- Cuando el usuario de su DSL, selecciona un elemento en un modelo, las propiedades de ese elemento se muestran en la ventana Propiedades. Sin embargo, también puede mostrar las propiedades de elementos relacionados especificados. Esto es útil si ha definido un grupo de elementos que funciona juntos. Por ejemplo, podría definir un elemento principal y un elemento opcional del complemento. Si el elemento principal se asigna a una forma y el otro no lo es, es útil ver todas sus propiedades como si estuvieran en un elemento.
+En las formas puede exponer el **FillColor**, **OutlineColor**, **TextColor**, **OutlineDashStyle**,  **OutlineThickness** y **FillGradientMode** propiedades. En los conectores puede exponer el **Color**`,`**TextColor**, **DashStyle**, y **grosor** propiedades. En los diagramas se pueden exponer el **FillColor** y **TextColor** propiedades.
 
- Este efecto se denomina *reenvío propiedad*, y se realiza automáticamente en varios casos. En otros casos, puede lograr la propiedad de reenvío al definir un descriptor de tipos de dominio.
+## <a name="forwarding-display-properties-of-related-elements"></a>Reenvío: Mostrar las propiedades de los elementos relacionados
 
-### <a name="default-property-forwarding-cases"></a>Propiedad de reenvío de los casos predeterminados
- Cuando el usuario selecciona una forma o conector o un elemento en el explorador, las siguientes propiedades se muestran en la ventana Propiedades:
+Cuando el usuario de su DSL, selecciona un elemento en un modelo, las propiedades de ese elemento se muestran en la ventana Propiedades. Sin embargo, también puede mostrar las propiedades de elementos relacionados especificados. Esto es útil si ha definido un grupo de elementos que funciona juntos. Por ejemplo, podría definir un elemento principal y un elemento opcional del complemento. Si el elemento principal se asigna a una forma y el otro no lo es, es útil ver todas sus propiedades como si estuvieran en un elemento.
+
+Este efecto se denomina *reenvío propiedad*, y se realiza automáticamente en varios casos. En otros casos, puede lograr la propiedad de reenvío al definir un descriptor de tipos de dominio.
+
+### <a name="default-property-forwarding-cases"></a>Casos de reenvío de propiedad predeterminados
+
+Cuando el usuario selecciona una forma o conector o un elemento en el explorador, las siguientes propiedades se muestran en la ventana Propiedades:
 
 - Las propiedades de dominio que se definen en la clase de dominio del elemento del modelo, los que se definen en las clases base incluidos. Una excepción son las propiedades de dominio para el que ha establecido **es examinable** a `False`.
 
@@ -55,15 +60,16 @@ Puede personalizar la apariencia y comportamiento de la ventana Propiedades de s
 
 - Propiedades de dominio que se definen en la forma seleccionada o conector.
 
-### <a name="adding-property-forwarding"></a>Adición de propiedad de reenvío
- Para reenviar una propiedad, defina un descriptor de tipos de dominio. Si tiene una relación de dominio entre dos clases de dominio, puede utilizar un descriptor de tipos de dominio para establecer una propiedad de dominio en la primera clase en el valor de una propiedad de dominio en la segunda clase de dominio. Por ejemplo, si tiene una relación entre un **libro** la clase de dominio y un **autor** la clase de dominio, puede utilizar un descriptor de tipos de dominio para realizar la **nombre** propiedad de un Del libro **autor** aparecen en la ventana Propiedades cuando el usuario selecciona el libro.
+### <a name="add-property-forwarding"></a>Agregar el reenvío de propiedad
+
+Para reenviar una propiedad, defina un descriptor de tipos de dominio. Si tiene una relación de dominio entre dos clases de dominio, puede utilizar un descriptor de tipos de dominio para establecer una propiedad de dominio en la primera clase en el valor de una propiedad de dominio en la segunda clase de dominio. Por ejemplo, si tiene una relación entre un **libro** la clase de dominio y un **autor** la clase de dominio, puede utilizar un descriptor de tipos de dominio para realizar la **nombre** propiedad de un Del libro **autor** aparecen en la ventana Propiedades cuando el usuario selecciona el libro.
 
 > [!NOTE]
 > Reenvío de la propiedad afecta a solo la ventana Propiedades cuando el usuario está editando un modelo. No se define una propiedad de dominio en la clase receptora. Si desea obtener acceso a la propiedad de dominio reenviados en otras partes de la definición de DSL o en el código de programa, debe tener acceso al elemento de reenvío.
 
- El siguiente procedimiento se da por supuesto que ha creado un DSL. Los primeros pasos resumen los requisitos previos.
+El siguiente procedimiento se da por supuesto que ha creado un DSL. Los primeros pasos resumen los requisitos previos.
 
-##### <a name="to-forward-a-property-from-another-element"></a>Para reenviar una propiedad de otro elemento
+#### <a name="forward-a-property-from-another-element"></a>Reenviar una propiedad de otro elemento
 
 1. Crear un [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] solución que contiene al menos dos clases, que en este ejemplo se denominan **libro** y **autor**. Debe haber una relación de cualquier tipo entre **libro** y **autor**.
 
@@ -90,9 +96,10 @@ Puede personalizar la apariencia y comportamiento de la ventana Propiedades de s
 8. En un diagrama de modelo, crear un libro, un autor y vincularlas mediante la relación de referencia. Seleccione el elemento de libro y en la ventana Propiedades debería ver el nombre del autor además de las propiedades del libro. Cambiar el nombre del autor vinculado, o vincular el libro a un autor diferente y observe que cambia el nombre del autor del libro.
 
 ## <a name="custom-property-editors"></a>Editores de propiedades personalizadas
- La ventana de propiedades proporciona un valor predeterminado adecuado experiencia para el tipo de cada propiedad de dominio de edición. Por ejemplo, para un tipo enumerado, el usuario ve una lista desplegable y, por una propiedad numérica, el usuario puede especificar dígitos. Esto sólo es cierto para los tipos integrados. Si especifica un tipo externo, el usuario podrá ver los valores de propiedad, pero no editarlo.
 
- Sin embargo, puede especificar los editores y los tipos siguientes:
+La ventana de propiedades proporciona un valor predeterminado adecuado experiencia para el tipo de cada propiedad de dominio de edición. Por ejemplo, para un tipo enumerado, el usuario ve una lista desplegable y, por una propiedad numérica, el usuario puede especificar dígitos. Esto sólo es cierto para los tipos integrados. Si especifica un tipo externo, el usuario podrá ver los valores de propiedad, pero no editarlo.
+
+Sin embargo, puede especificar los editores y los tipos siguientes:
 
 1. Otro editor que se usa con un tipo estándar. Por ejemplo, podría especificar un editor de la ruta de acceso de archivo para una propiedad de cadena.
 
@@ -100,11 +107,11 @@ Puede personalizar la apariencia y comportamiento de la ventana Propiedades de s
 
 3. Un editor de .NET como el editor de la ruta de acceso de archivo, o puede crear su propia propiedad personalizada del editor.
 
-    Una conversión entre un tipo externo y un tipo como cadena, que tiene un editor predeterminado.
+   Una conversión entre un tipo externo y un tipo como cadena, que tiene un editor predeterminado.
 
    En un DSL, un *tipo externo* es cualquier tipo que no es uno de los tipos simples (por ejemplo, un valor booleano o Int32) o una cadena.
 
-#### <a name="to-define-a-domain-property-that-has-an-external-type"></a>Para definir una propiedad de dominio que tiene un tipo externo
+### <a name="define-a-domain-property-that-has-an-external-type"></a>Definir una propiedad de dominio que tiene un tipo externo
 
 1. En **el Explorador de soluciones**, agregue una referencia al ensamblado (DLL) que contiene el tipo externo, en la **Dsl** proyecto.
 
@@ -127,8 +134,9 @@ Puede personalizar la apariencia y comportamiento de la ventana Propiedades de s
 
    En esta fase, los usuarios pueden ver los valores de la propiedad, pero no pueden modificarlo. Los valores mostrados se obtienen de la `ToString()` función. Puede escribir código de programa que establece el valor de la propiedad, por ejemplo en un comando o una regla.
 
-### <a name="setting-a-property-editor"></a>Un Editor de propiedades de configuración
- Agregue un atributo de CLR a la propiedad de dominio, en el formato siguiente:
+### <a name="set-a-property-editor"></a>Establecer un editor de propiedades
+
+Agregue un atributo de CLR a la propiedad de dominio, en el formato siguiente:
 
 ```csharp
 [System.ComponentModel.Editor (
@@ -136,13 +144,13 @@ Puede personalizar la apariencia y comportamiento de la ventana Propiedades de s
    typeof(System.Drawing.Design.UITypeEditor))]
 ```
 
- Puede establecer el atributo en una propiedad mediante el **el atributo personalizado** entrada en la ventana Propiedades.
+Puede establecer el atributo en una propiedad mediante el **el atributo personalizado** entrada en la ventana Propiedades.
 
- El tipo de `AnEditor` debe derivarse del tipo especificado en el segundo parámetro. El segundo parámetro debe ser <xref:System.Drawing.Design.UITypeEditor> o <xref:System.ComponentModel.ComponentEditor>. Para obtener más información, consulta <xref:System.ComponentModel.EditorAttribute>.
+El tipo de `AnEditor` debe derivarse del tipo especificado en el segundo parámetro. El segundo parámetro debe ser <xref:System.Drawing.Design.UITypeEditor> o <xref:System.ComponentModel.ComponentEditor>. Para obtener más información, consulta <xref:System.ComponentModel.EditorAttribute>.
 
- Puede especificar su propio editor o un editor proporcionado en el [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], tales como <xref:System.Windows.Forms.Design.FileNameEditor> o <xref:System.Drawing.Design.ImageEditor>. Por ejemplo, utilice el procedimiento siguiente para tener una propiedad en el que el usuario puede escribir un nombre de archivo.
+Puede especificar su propio editor o un editor de. NET, como <xref:System.Windows.Forms.Design.FileNameEditor> o <xref:System.Drawing.Design.ImageEditor>. Por ejemplo, utilice el procedimiento siguiente para tener una propiedad en el que el usuario puede escribir un nombre de archivo.
 
-##### <a name="to-define-a-file-name-domain-property"></a>Para definir una propiedad de dominio del nombre de archivo
+#### <a name="define-a-file-name-domain-property"></a>Definir una propiedad de dominio del nombre de archivo
 
 1. Agregar una propiedad de dominio a una clase de dominio en la definición de DSL.
 
@@ -165,21 +173,22 @@ Puede personalizar la apariencia y comportamiento de la ventana Propiedades de s
 
     3. Haga clic en el botón de puntos suspensivos. Aparece un cuadro de diálogo de archivo. Seleccione un archivo y cerrar el cuadro de diálogo. La ruta de acceso de archivo es ahora el valor de la propiedad de dominio.
 
-### <a name="defining-your-own-property-editor"></a>Definir su propio editor de propiedades
- Puede definir su propio editor. Podría hacerlo para permitir al usuario para editar un tipo que ha definido, o para editar un tipo estándar de una manera especial. Por ejemplo, podría permitir al usuario que escriba una cadena que representa una fórmula.
+### <a name="define-your-own-property-editor"></a>Definir su propio editor de propiedades
 
- Defina un editor escribiendo una clase derivada de <xref:System.Drawing.Design.UITypeEditor>. La clase debe invalidar:
+Puede definir su propio editor. Podría hacerlo para permitir al usuario para editar un tipo que ha definido, o para editar un tipo estándar de una manera especial. Por ejemplo, podría permitir al usuario que escriba una cadena que representa una fórmula.
+
+Defina un editor escribiendo una clase derivada de <xref:System.Drawing.Design.UITypeEditor>. La clase debe invalidar:
 
 - <xref:System.Drawing.Design.UITypeEditor.EditValue%2A>, para interactuar con el usuario y actualizar el valor de propiedad.
 
 - <xref:System.Drawing.Design.UITypeEditor.GetEditStyle%2A>, para especificar si el editor puede abrir un cuadro de diálogo o proporcionar un menú desplegable.
 
-  También puede proporcionar una representación gráfica del valor de la propiedad que se mostrará en la cuadrícula de propiedades. Para ello, invalide `GetPaintValueSupported`, y `PaintValue`.  Para obtener más información, consulta <xref:System.Drawing.Design.UITypeEditor>.
+También puede proporcionar una representación gráfica del valor de la propiedad que se mostrará en la cuadrícula de propiedades. Para ello, invalide `GetPaintValueSupported`, y `PaintValue`.  Para obtener más información, consulta <xref:System.Drawing.Design.UITypeEditor>.
 
 > [!NOTE]
 > Agregue el código en un archivo de código independiente en el **Dsl** proyecto.
 
- Por ejemplo:
+Por ejemplo:
 
 ```csharp
 internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor
@@ -193,7 +202,7 @@ internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor
 }
 ```
 
- Para usar este editor, establezca el **el atributo personalizado** de una propiedad de dominio para:
+Para usar este editor, establezca el **el atributo personalizado** de una propiedad de dominio para:
 
 ```csharp
 [System.ComponentModel.Editor (
@@ -201,22 +210,23 @@ internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor
    , typeof(System.Drawing.Design.UITypeEditor))]
 ```
 
- Para obtener más información, consulta <xref:System.Drawing.Design.UITypeEditor>.
+Para obtener más información, consulta <xref:System.Drawing.Design.UITypeEditor>.
 
-## <a name="providing-a-drop-down-list-of-values"></a>Proporcionar una lista desplegable de valores
- Puede proporcionar una lista de valores para un usuario elegir.
+## <a name="provide-a-drop-down-list-of-values"></a>Proporcione una lista desplegable de valores
+
+Puede proporcionar una lista de valores para un usuario elegir.
 
 > [!NOTE]
 > Esta técnica proporciona una lista de valores que pueden cambiar en tiempo de ejecución. Si desea proporcionar una lista que no cambia, en su lugar, considere el uso de un tipo enumerado como el tipo de la propiedad de dominio.
 
- Para definir una lista de valores estándar, a la propiedad de dominio se agrega un atributo CLR que tiene el formato siguiente:
+Para definir una lista de valores estándar, a la propiedad de dominio se agrega un atributo CLR que tiene el formato siguiente:
 
 ```csharp
 [System.ComponentModel.TypeConverter
 (typeof(MyTypeConverter))]
 ```
 
- Defina una clase que se derive de <xref:System.ComponentModel.TypeConverter>. Agregue el código en un archivo independiente en el **Dsl** proyecto. Por ejemplo:
+Defina una clase que se derive de <xref:System.ComponentModel.TypeConverter>. Agregue el código en un archivo independiente en el **Dsl** proyecto. Por ejemplo:
 
 ```csharp
 /// <summary>

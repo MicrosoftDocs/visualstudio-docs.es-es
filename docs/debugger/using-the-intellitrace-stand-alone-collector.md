@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ff893f5603d3156d4ed6fe09848682ab5d04b06
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: cf83992e92c90600f63516919774fe09f06434ff
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63407628"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746109"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector-c-visual-basic"></a>Usar el recopilador independiente IntelliTrace (C#, Visual Basic)
 
@@ -106,12 +106,12 @@ El **recolector independiente IntelliTrace** permite recopilar datos de diagnós
 
    2. Vaya al directorio del recopilador, por ejemplo: **C:\IntelliTraceCollector**
 
-   3. Use el comando **expand** , incluido el punto al final (**.**), para expandir IntelliTraceCollection.cab:
+   3. Use el comando **expand** , incluido el punto al final ( **.** ), para expandir IntelliTraceCollection.cab:
 
         `expand  /f:* IntelliTraceCollection.cab .`
 
        > [!NOTE]
-       > El punto (**.**) hace que se conserven las subcarpetas que contienen los planes de recolección localizados.
+       > El punto ( **.** ) hace que se conserven las subcarpetas que contienen los planes de recolección localizados.
 
 ## <a name="ConfigurePermissionsRunningCollector"></a> Configurar permisos para el directorio de recopilador
 
@@ -157,7 +157,7 @@ El **recolector independiente IntelliTrace** permite recopilar datos de diagnós
 
             - En sistemas operativos de 64 bits, abra el menú contextual de **Windows PowerShell**. Elija **Ejecutar como administrador**.
 
-            - En sistemas operativos de 32 bits, abra el menú contextual de **Windows PowerShell (x86)**. Elija **Ejecutar como administrador**.
+            - En sistemas operativos de 32 bits, abra el menú contextual de **Windows PowerShell (x86)** . Elija **Ejecutar como administrador**.
 
     2. En la ventana de comandos de PowerShell, use el comando **Import-Module** para importar **Microsoft.VisualStudio.IntelliTrace.PowerShell.dll**.
 
@@ -377,9 +377,7 @@ El **recolector independiente IntelliTrace** permite recopilar datos de diagnós
 
 ## <a name="WhereElse"></a> ¿De qué más sitios se pueden obtener datos de IntelliTrace?
 
-- Desde una sesión de depuración en Visual Studio Enterprise con IntelliTrace, vea [las características de IntelliTrace](../debugger/intellitrace-features.md).
-
-- En una sesión de prueba en Microsoft Test Manager, consulte [Cómo: Recopilar datos de IntelliTrace para ayudar a depurar problemas difíciles](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md).
+Puede obtener los datos de IntelliTrace desde una IntelliTrace sesión de depuración en Visual Studio Enterprise. Consulte [las características de IntelliTrace](../debugger/intellitrace-features.md).
 
 ## <a name="where-can-i-get-more-information"></a>¿Dónde puedo obtener más información?
  [Uso de datos de IntelliTrace guardados](../debugger/using-saved-intellitrace-data.md)

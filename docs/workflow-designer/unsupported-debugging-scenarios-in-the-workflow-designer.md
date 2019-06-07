@@ -8,18 +8,16 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 83c9b1158319b580bc860982b6c51c9c28edf5af
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 62d8a2ad847ef1b9aaad02b2739e8154b3148425
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62433882"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747268"
 ---
 # <a name="unsupported-debugging-scenarios-in-the-workflow-designer"></a>Escenarios de depuración no admitidos en el Diseñador de flujo de trabajo
 
-El Diseñador de flujo de trabajo en .NET Framework 4 tiene muchas características nuevas, pero todavía hay algunos escenarios de depuración que no se admite.
-
-Los siguientes son el Diseñador de flujo de trabajo no admitido, escenarios de depuración:
+El Diseñador de flujo de trabajo no admite los siguientes escenarios de depuración:
 
 - No se puede continuar la ejecución una vez editado el código.
 
@@ -29,7 +27,7 @@ Los siguientes son el Diseñador de flujo de trabajo no admitido, escenarios de 
 
 - El diseñador de flujo de trabajo no se puede utilizar para depurar flujos de trabajo creados en el código sin usar el diseñador.
 
-- No se puede depurar flujos de trabajo creados en versiones anteriores de Windows Workflow Foundation (WF) en el Diseñador de .NET Framework 4.
+- No se puede depurar flujos de trabajo creados en versiones anteriores de Windows Workflow Foundation (WF) en .NET Framework 4 o posterior.
 
 - No se pueden definir puntos de interrupción en los vínculos entre actividades o nodos <xref:System.Activities.Statements.Flowchart>.
 

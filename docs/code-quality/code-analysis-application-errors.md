@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d2350a495bf0540f77ff6f0d4222b18431e1586
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9bf1985e63fef0f567cb3a765915f5c6f73cdc59
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62540877"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745197"
 ---
 # <a name="code-analysis-application-errors"></a>Errores de aplicación de análisis de código
 
@@ -46,8 +46,8 @@ En esta sección es una referencia de los mensajes de error generados por la her
 |[CA0065](ca0065.md)|Construcción de metadatos no admitido: Tipo de '*TypeName*'contiene una propiedad y un campo con el mismo nombre'*PropertyFieldName*'|
 |[CA0066](ca0066.md)|El valor '*VersionID*' proporcionado para el **/targetframeworkversion** no es una versión reconocida.|
 |[CA0067](ca0067.md)|No se encontró el directorio.|
-|[CA0068](ca0068.md)|Depuración no se encuentra la información de ensamblado de destino *'AssemblyName'*.|
-|[CA0069](ca0069.md)|Con la plataforma alternativa. *FrameworkVersion1* no se pudo encontrar. Uso de *FrameworkVersion2* en su lugar. Para obtener mejores resultados de análisis, asegúrese de que la versión correcta de .NET Framework está instalada.|
+|[CA0068](ca0068.md)|Depuración no se encuentra la información de ensamblado de destino *'AssemblyName'* .|
+|[CA0069](ca0069.md)|Con la plataforma alternativa. *FrameworkVersion1* no se pudo encontrar. Uso de *FrameworkVersion2* en su lugar. Para obtener mejores resultados de análisis, asegúrese de que está instalada la versión de framework correctas.|
 |[CA0070](ca0070.md)|No se puede cargar el ensamblado o tipo debido a permisos de seguridad.|
 |[CA0501](ca0501.md)|No se puede leer el informe de salida.|
 |[CA0502](ca0502.md)|Idioma no admitido.|

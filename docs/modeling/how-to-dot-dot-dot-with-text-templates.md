@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 89436ba28cd47463709fca9b7d6293dab934b549
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c3bbcbb078925f36204c472c27821e6ba94fa4e0
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62993553"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747544"
 ---
 # <a name="how-to--with-text-templates"></a>Cómo: ... con plantillas de texto
 Las plantillas de texto en Visual Studio proporcionan una forma útil de generación de texto de cualquier tipo. Puede usar las plantillas de texto para generar texto en tiempo de ejecución como parte de la aplicación y en tiempo de diseño para generar algunos el código del proyecto. En este tema se resume con más frecuencia le pregunte "¿Cómo...?" preguntas.
@@ -45,13 +45,14 @@ Las plantillas de texto en Visual Studio proporcionan una forma útil de generac
      En el código, utilice `this.Host.ResolvePath(filename)` para obtener la ruta de acceso completa del archivo.
 
 ### <a name="invoke-methods-from-a-template"></a>Invocar métodos desde una plantilla
- Si los métodos ya existen, por ejemplo, en la norma [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] clases:
+
+Si los métodos ya existen, por ejemplo, en las clases. NET:
 
 - Utilice la \<#@assembly#> directiva al cargar el ensamblado y usar \<#@import#> para establecer el contexto de espacio de nombres. Para obtener más información, consulte [directiva de importación T4](../modeling/t4-import-directive.md).
 
    Si con frecuencia utilizan el mismo conjunto de ensamblado y directivas de importación, considere la posibilidad de escribir un procesador de directivas. En cada plantilla, puede invocar el procesador de directivas, que puede cargar los ensamblados y los archivos de modelo y establecer el contexto de espacio de nombres. Para obtener más información, consulte [procesadores de la directiva de plantilla de creación personalizado T4 texto](../modeling/creating-custom-t4-text-template-directive-processors.md).
 
-  Si va a escribir los métodos:
+Si va a escribir los métodos:
 
 - Si está escribiendo una plantilla de texto en tiempo de ejecución, escribir una definición de clase parcial que tiene el mismo nombre que la plantilla de texto en tiempo de ejecución. Agregue los métodos adicionales en esta clase.
 

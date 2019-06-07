@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: f567fa1d1f793395532efac5991b01c5087b638a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c94f1b2709f3541692a0dfcd2a92559135639c2a
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545762"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744582"
 ---
 # <a name="ca1804-remove-unused-locals"></a>CA1804: Quitar variables locales no utilizadas
 
@@ -40,7 +40,11 @@ ms.locfileid: "62545762"
  Las variables locales no usadas y las asignaciones innecesarias aumentan el tamaño de un ensamblado y reducen el rendimiento.
 
 ## <a name="how-to-fix-violations"></a>Cómo corregir infracciones
- Para corregir una infracción de esta regla, quite o use la variable local. Tenga en cuenta que el compilador de C# que se incluye con [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] quita sin usar las variables locales cuando el `optimize` está habilitada.
+
+Para corregir una infracción de esta regla, quite o use la variable local.
+
+> [!NOTE]
+> El C# compilador quita sin usar las variables locales cuando el `optimize` está habilitada.
 
 ## <a name="when-to-suppress-warnings"></a>Cuándo Suprimir advertencias
  Suprima una advertencia de esta regla si la variable generó el compilador. También es seguro suprimir una advertencia de esta regla, o para deshabilitar la regla, si el rendimiento y mantenimiento del código no son principales preocupaciones.

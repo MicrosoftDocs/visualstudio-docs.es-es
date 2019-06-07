@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d44c9a4a5c59907c527c47523c6c758adaf7ee51
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7dd2945ec12ac398f2887d20d3d0cb6156f4ed3c
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825499"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66745210"
 ---
 # <a name="performance-warnings"></a>advertencias de rendimiento
 Las advertencias de rendimiento compatibles con aplicaciones y bibliotecas de alto rendimiento.
@@ -38,7 +38,7 @@ Las advertencias de rendimiento compatibles con aplicaciones y bibliotecas de al
 | [CA1810: Inicializar campos estáticos de tipo de referencia insertados](../code-quality/ca1810-initialize-reference-type-static-fields-inline.md) | Cuando un tipo declara un constructor estático explícito, el compilador Just-In-Time (JIT) agrega una comprobación a cada constructor de instancia y a cada método estático del tipo para asegurarse de que se ha llamado anteriormente al constructor estático. Las comprobaciones del constructor estático pueden reducir el rendimiento. |
 | [CA1811: Evitar código privado fuera de lugar](../code-quality/ca1811-avoid-uncalled-private-code.md) | Miembro privado o interno (nivel de ensamblado) no tiene llamadores en el ensamblado, no se invoca por common language runtime y no se invoca un delegado. |
 | [CA1812: Evitar las clases internas sin instancia](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md) | El código del ensamblado no crea una instancia del tipo del nivel de ensamblado. |
-| [CA1813: Evitar atributos no sellados](../code-quality/ca1813-avoid-unsealed-attributes.md) | La biblioteca de clases de .NET Framework proporciona métodos para recuperar los atributos personalizados. De forma predeterminada, estos métodos buscan la jerarquía de herencia de atributo. La acción de sellar el atributo elimina la búsqueda en la jerarquía de herencia y puede mejorarse el rendimiento. |
+| [CA1813: Evitar atributos no sellados](../code-quality/ca1813-avoid-unsealed-attributes.md) | .NET proporciona métodos para recuperar los atributos personalizados. De forma predeterminada, estos métodos buscan la jerarquía de herencia de atributo. La acción de sellar el atributo elimina la búsqueda en la jerarquía de herencia y puede mejorarse el rendimiento. |
 | [CA1814: Preferir las matrices escalonadas antes que multidimensionales](../code-quality/ca1814-prefer-jagged-arrays-over-multidimensional.md) | Una matriz escalonada es una matriz cuyos elementos son matrices. Las matrices que constituyen los elementos pueden ser de diferentes tamaños, que pueden dar lugar a un espacio desaprovechado para algunos conjuntos de datos. |
 | [CA1815: Invalidar Equals y el operador Equals en los tipos de valores](../code-quality/ca1815-override-equals-and-operator-equals-on-value-types.md) | Para los tipos de valor, la implementación heredada de Equals utiliza la biblioteca de reflexión y compara el contenido de todos los campos. Mediante el cálculo, la reflexión es cara y no es necesario comparar cada campo para comprobar si hay igualdad. Si espera que los usuarios comparen u ordenen instancias, o utilicen instancias como claves de tabla hash, el tipo de valor debe implementar Equals. |
 | [CA1816: Llamar a GC. SuppressFinalize correctamente](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md) | Un método que es una implementación de Dispose no llama a GC. SuppressFinalize o un método que no es una implementación de Dispose llama a GC. SuppressFinalize o un método llama a GC. SuppressFinalize y pasa algo distinto de esto (Me en [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]). |

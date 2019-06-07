@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b68ea8c66b26ee2463969ca71b8f0e5ac78b3f0a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7a4e8f7bc60704842a8a0e940b336b4bb79093b2
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62823600"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66745132"
 ---
 # <a name="interoperability-warnings"></a>advertencias de interoperabilidad
 
@@ -32,7 +32,7 @@ Advertencias de interoperabilidad admiten la interacción con los clientes COM.
 | [CA1400: Deben existir puntos de entrada P/Invoke](../code-quality/ca1400-p-invoke-entry-points-should-exist.md) | Un método público o protegido se marca con el atributo System.Runtime.InteropServices.DllImportAttribute. No se pudo encontrar la biblioteca no administrada o el método no coincide con una función de la biblioteca. |
 | [CA1401: P/Invoke no deben estar visibles](../code-quality/ca1401-p-invokes-should-not-be-visible.md) | Un método público o protegido en un tipo público tiene el atributo System.Runtime.InteropServices.DllImportAttribute (también se implementa mediante la palabra clave Declare en Visual Basic). No se deberían exponer estos métodos. |
 | [CA1402: Evite sobrecargas en interfaces visibles para COM](../code-quality/ca1402-avoid-overloads-in-com-visible-interfaces.md) | Cuando se exponen métodos sobrecargados a los clientes COM, sólo la primera sobrecarga de método conserva su nombre. Las sobrecargas subsiguientes reciben un nombre único resultante de anexar al nombre un carácter de subrayado (_) y un entero correspondiente al orden de declaración de la sobrecarga. |
-| [CA1403: Tipos de diseño automático no deben ser visibles para COM](../code-quality/ca1403-auto-layout-types-should-not-be-com-visible.md) | Un tipo de valor Visible a través de COM se marca con el atributo System.Runtime.InteropServices.StructLayoutAttribute establecido en LayoutKind.Auto. El diseño de estos tipos puede cambiar entre las versiones de .NET Framework, lo que interrumpirá a los clientes COM que esperan un diseño concreto. |
+| [CA1403: Tipos de diseño automático no deben ser visibles para COM](../code-quality/ca1403-auto-layout-types-should-not-be-com-visible.md) | Un tipo de valor Visible a través de COM se marca con el atributo System.Runtime.InteropServices.StructLayoutAttribute establecido en LayoutKind.Auto. El diseño de estos tipos puede cambiar entre las versiones. NET, lo que interrumpirán a los clientes COM que esperan un diseño concreto. |
 | [CA1404: Llame a GetLastError inmediatamente después de P/Invoke](../code-quality/ca1404-call-getlasterror-immediately-after-p-invoke.md) | Se realiza una llamada al método Marshal.GetLastWin32Error o el equivalente [!INCLUDE[TLA2#tla_win32](../code-quality/includes/tla2sharptla_win32_md.md)] función GetLastError y la llamada inmediatamente anterior no es una plataforma de invocación de método. |
 | [CA1405: Tipos bases de tipos visibles COM deben ser visibles para COM](../code-quality/ca1405-com-visible-type-base-types-should-be-com-visible.md) | Un tipo visible a través de COM se deriva de un tipo no visible a través de COM. |
 | [CA1406: Evite argumentos Int64 para clientes Visual Basic 6](../code-quality/ca1406-avoid-int64-arguments-for-visual-basic-6-clients.md) | Los clientes COM de Visual Basic 6 no pueden tener acceso a los enteros de 64 bits. |

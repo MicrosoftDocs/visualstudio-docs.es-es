@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 15c02312d5c257f13b9c0394790bc8a2611d7972
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e19ec88a4dec7a13ecc3d77e5d4fc1f04bb114bd
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949804"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747797"
 ---
 # <a name="workflow-project-templates"></a>Plantillas de proyecto de flujo de trabajo
 
@@ -67,7 +67,7 @@ Si elige la **biblioteca del Diseñador de actividad** plantilla, Visual Studio 
 Para obtener un ejemplo de cómo implementar un diseñador de actividad personalizado, vea [Cómo: Crear un diseñador de actividad personalizado](/dotnet/framework/windows-workflow-foundation/how-to-create-a-custom-activity-designer).
 
 > [!NOTE]
-> Diseñadores de actividad personalizados pueden usarse para las actividades personalizadas y para las actividades de .NET Framework de forma predeterminada.
+> Diseñadores de actividad personalizados pueden usarse para las actividades personalizadas y para las actividades de .NET de forma predeterminada.
 
 ## <a name="see-also"></a>Vea también
 

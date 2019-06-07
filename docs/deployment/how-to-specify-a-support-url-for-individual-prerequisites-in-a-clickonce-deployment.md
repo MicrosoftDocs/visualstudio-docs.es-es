@@ -15,15 +15,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf115ad6ce8fb589e9b1c617f40053cf95af2b9c
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 78ba7398694e097f324695b6357abc0b35f8d3ee
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263219"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745567"
 ---
 # <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>Procedimiento Especificación de una dirección URL de soporte para requisitos previos individuales en una implementación ClickOnce
-Un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] puede probar la implementación de una serie de requisitos previos que deben estar disponibles en el equipo cliente para el [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación se ejecute. Estas dependencias incluyen la versión mínima necesaria de la [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], la versión del sistema operativo y los ensamblados que deben estar preinstalados en la caché global de ensamblados (GAC). [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], sin embargo, no se puede instalar cualquiera de estos requisitos previos. Si no se encuentra un requisito previo, simplemente detiene la instalación y muestra un cuadro de diálogo que explica el motivo del error de la instalación.
+Un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] puede probar la implementación de una serie de requisitos previos que deben estar disponibles en el equipo cliente para el [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación se ejecute. Estas dependencias incluyen la versión mínima necesaria de .NET Framework, la versión del sistema operativo y los ensamblados que deben estar preinstalados en la caché global de ensamblados (GAC). [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], sin embargo, no se puede instalar cualquiera de estos requisitos previos. Si no se encuentra un requisito previo, simplemente detiene la instalación y muestra un cuadro de diálogo que explica el motivo del error de la instalación.
 
  Hay dos métodos para instalar los requisitos previos. Puede instalarlos mediante una aplicación de programa previo. Como alternativa, puede especificar una dirección URL de soporte para requisitos previos individuales, que se muestra a los usuarios en el cuadro de diálogo si no se encuentra el requisito previo. La página hace referencia a esa dirección URL puede contener vínculos a instrucciones para instalar el requisito previo necesario. Si una aplicación no especifica una dirección URL de soporte para un requisito previo individual, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] muestra la dirección URL de soporte técnico especificada en el manifiesto de implementación para la aplicación como un todo, si está definido.
 
@@ -31,7 +31,7 @@ Un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] puede proba
 
 ### <a name="specify-a-support-url-for-an-individual-prerequisite"></a>Especifique una dirección URL de soporte técnico para un requisito previo individual
 
-1. Abra el manifiesto de aplicación (el *.manifest* archivo) para su [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación en un editor de texto.
+1. Abra el manifiesto de aplicación (el *.manifest* archivo) para el [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación en un editor de texto.
 
 2. Para un requisito previo del sistema operativo, agregue el `supportUrl` atributo a la `dependentOS` elemento:
 
@@ -65,7 +65,7 @@ Un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] puede proba
      </dependency>
    ```
 
-5. Opcional. Para las aplicaciones que tienen como destino .NET Framework 4, abra el manifiesto de implementación (el *.application* archivo) para su [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación en un editor de texto.
+5. Opcional. Para las aplicaciones que tienen como destino .NET Framework 4, abra el manifiesto de implementación (el *.application* archivo) para el [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación en un editor de texto.
 
 6. Para un requisito previo de .NET Framework 4, agregue el `supportUrl` atributo a la `compatibleFrameworks` elemento:
 

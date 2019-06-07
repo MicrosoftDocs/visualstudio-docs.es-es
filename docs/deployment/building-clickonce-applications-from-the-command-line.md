@@ -16,15 +16,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fcab7ac3bb2a7983d8500b6f27f910fa33fc1efe
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fc3cdf49746340c76855e9afb000c754464d6223
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62929158"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746085"
 ---
 # <a name="build-clickonce-applications-from-the-command-line"></a>Compilación de aplicaciones ClickOnce desde la línea de comandos
-En [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], puede compilar proyectos desde la línea de comandos, incluso si se crean en el entorno de desarrollo integrado (IDE). De hecho, puede volver a generar un proyecto creado con [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] en otro equipo que tenga solo el [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] instalado. Esto le permite reproducir una compilación mediante un proceso automatizado, por ejemplo, en una compilación central laboratorio o uso de técnicas avanzadas de scripting fuera del ámbito de compilar el proyecto en Sí.
+En [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], puede compilar proyectos desde la línea de comandos, incluso si se crean en el entorno de desarrollo integrado (IDE). De hecho, puede volver a generar un proyecto creado con [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] en otro equipo que tenga solo instalado .NET Framework. Esto le permite reproducir una compilación mediante un proceso automatizado, por ejemplo, en una compilación central laboratorio o uso de técnicas avanzadas de scripting fuera del ámbito de compilar el proyecto en Sí.
 
 ## <a name="use-msbuild-to-reproduce-clickonce-application-deployments"></a>Usar MSBuild para reproducir las implementaciones de aplicaciones ClickOnce
  Al invocar msbuild/target: Publish en la línea de comandos, se indica al sistema de MSBuild para compilar el proyecto y crear un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicación en la carpeta de publicación. Esto equivale a seleccionar la **publicar** comando en el IDE.
@@ -73,7 +73,7 @@ En [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]
 
 5. Escriba `msbuild /target:publish`.
 
-   Los pasos anteriores producirán un completo [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implementación de aplicaciones en una subcarpeta del proyecto denominada **publicar**. *CmdLineDemo.application* es el [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifiesto de implementación. La carpeta *CmdLineDemo_1.0.0.0* contiene los archivos *CmdLineDemo.exe* y *CmdLineDemo.exe.manifest*, el [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifiesto de aplicación. *Setup.exe* es el programa previo, que está configurado para instalar de forma predeterminada el [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. La carpeta DotNetFX contiene los archivos redistribuibles para la [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Esto es todo el conjunto de archivos que necesita para implementar la aplicación a través de Internet o a través de UNC o CD/DVD.
+   Los pasos anteriores producirán un completo [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implementación de aplicaciones en una subcarpeta del proyecto denominada **publicar**. *CmdLineDemo.application* es el [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifiesto de implementación. La carpeta *CmdLineDemo_1.0.0.0* contiene los archivos *CmdLineDemo.exe* y *CmdLineDemo.exe.manifest*, el [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifiesto de aplicación. *Setup.exe* es el programa previo, que está configurado para instalar .NET Framework de forma predeterminada. La carpeta DotNetFX contiene los archivos redistribuibles de .NET Framework. Esto es todo el conjunto de archivos que necesita para implementar la aplicación a través de Internet o a través de UNC o CD/DVD.
 
 ## <a name="publish-properties"></a>Publicación de propiedades
  Cuando se publica la aplicación en los procedimientos anteriores, las siguientes propiedades se insertan en el archivo de proyecto mediante el Asistente para publicación. Estas propiedades influyen directamente en el modo [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] se genera la aplicación.

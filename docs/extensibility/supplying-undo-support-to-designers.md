@@ -10,12 +10,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc17f59858637048c12929411a0f413ed625ad10
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e243ccfc92c5e17dd25e6d77dede439daac08761
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66331636"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747727"
 ---
 # <a name="supply-undo-support-to-designers"></a>Fuente de alimentación de deshacer a diseñadores
 
@@ -29,7 +29,7 @@ Implementaciones de diseñador que necesitan para proporcionar compatibilidad co
 
 - Admiten la persistencia de suministro y CodeDOM al implementar el <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService> y <xref:System.ComponentModel.Design.IComponentChangeService> clases.
 
-Para obtener más información sobre cómo escribir los diseñadores que utilizan [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], consulte [ampliar compatibilidad en tiempo de diseño](/previous-versions/37899azc(v=vs.140)).
+Para obtener más información sobre cómo escribir los diseñadores que utilizan .NET Framework, vea [ampliar compatibilidad en tiempo de diseño](/previous-versions/37899azc(v=vs.140)).
 
 El [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] proporciona una infraestructura de deshacer de forma predeterminada por:
 
@@ -50,7 +50,7 @@ Cualquier diseñador creado en Visual Studio tiene compatibilidad de la fase de 
 ## <a name="when-to-use-explicit-designer-undo-support"></a>Cuándo usar Deshacer diseñador explícita
  Los diseñadores deben proporcionar su propia administración de deshacer si usan una interfaz gráfica de usuario que se conoce como un adaptador de vista, distinta de la proporcionada por <xref:System.Windows.Forms.Control>.
 
- Un ejemplo de esto podría crear un producto con una interfaz de diseño gráfica basada en web en lugar de un [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]-interfaz gráfica basada en.
+ Un ejemplo de esto podría crear un producto con una interfaz de diseño gráfica basada en web en lugar de una interfaz gráfica basada en .NET Framework.
 
  En tales casos, sería necesario registrar este adaptador de vista con el uso de Visual Studio <xref:Microsoft.VisualStudio.Shell.Design.ProvideViewAdapterAttribute>y proporciona la administración de la fase de reversión explícita.
 
@@ -59,7 +59,7 @@ Cualquier diseñador creado en Visual Studio tiene compatibilidad de la fase de 
 ## <a name="undo-support-features-of-the-designer"></a>Compatibilidad con características del Diseñador de deshacer
  El SDK del entorno proporciona implementaciones predeterminadas de las interfaces necesarias para proporcionar soporte técnico que se puede utilizar los diseñadores que no utilizan de deshacer <xref:System.Windows.Forms.Control> en función de las clases para sus interfaces de usuario o el modelo de persistencia y CodeDOM estándar.
 
- El <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine> clase se deriva de la [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] <xref:System.ComponentModel.Design.UndoEngine> clase mediante la implementación de la <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager> clase para administrar las operaciones de deshacer.
+ El <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine> clase se deriva de .NET Framework <xref:System.ComponentModel.Design.UndoEngine> clase mediante la implementación de la <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager> clase para administrar las operaciones de deshacer.
 
  Visual Studio proporciona la siguiente funcionalidad para deshacer diseñador:
 
