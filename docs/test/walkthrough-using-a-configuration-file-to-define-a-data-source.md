@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Uso de un archivo de configuración para definir un origen de datos'
+title: Uso del archivo de configuración para definir el origen de datos
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ccb2400b209fa7902e8fde8dd7ba601e465a840d
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: aa57582a241400cbdfc9115d16326fda8019a5ae
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65461461"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66432245"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Tutorial: Uso de un archivo de configuración para definir un origen de datos
 
