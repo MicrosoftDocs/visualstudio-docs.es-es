@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
-ms.openlocfilehash: d98ffc8c9d864afaf0b42d029a4d65850f64d806
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 20c739057bcbded922df62ce00e1b0c7e07d9f75
+ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62972828"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66500995"
 ---
 # <a name="connecting-to-team-foundation-version-control"></a>Conectarse a Control de versiones de Team Foundation
 
@@ -115,7 +115,7 @@ Para obtener más información sobre los comandos mencionados aquí u otros, pue
 
 En la galería de extensiones de Visual Studio para Mac, hay una extensión del Control de versiones de Team Foundation que ofrece compatibilidad limitada para establecer conexión con TFVC. La extensión no es compatible y presenta varios errores conocidos, por lo que su experiencia puede variar al utilizarla.
 
-Para instalar la extensión, inicie Visual Studio para Mac y elija el menú **Visual Studio > Extensiones**. En la pestaña **Galería**, seleccione **Control de versiones > Control de versiones de Team Foundation para TFS y Azure DevOps** y haga clic en **Instalar...**:
+Para instalar la extensión, inicie Visual Studio para Mac y elija el menú **Visual Studio > Extensiones**. En la pestaña **Galería**, seleccione **Control de versiones > Control de versiones de Team Foundation para TFS y Azure DevOps** y haga clic en **Instalar...** :
 
 ![Administrador de extensiones](media/tfvc-install.png)
 
@@ -241,7 +241,7 @@ Las siguientes opciones pueden usarse para autenticar con un servidor:
 
 Para poder usar la autenticación básica, es necesario habilitar **credenciales de autenticación alternativas** en Azure DevOps Services. Para ello, siga estos pasos:
 
-1. Inicie sesión en su organización de Azure DevOps como propietario (https://dev.azure.com/{organization}/{project}).
+1. Inicie sesión en su organización de Azure DevOps como propietario (https:\//dev.azure.com/{organization}/{project}).
 
 2. En la barra de herramientas de la organización, haga clic en el icono de engranaje y seleccione **Directiva**:
 

@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 173cc6711f46d7fddad92c3ac871809dda100f36
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 7c588966a957cf6d3127e03c67ad1a1d605fabce
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65704651"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401735"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Tutorial: Crear y ejecutar pruebas unitarias en código administrado
 
@@ -365,9 +365,9 @@ Al ejecutar los dos métodos de prueba se muestra que las pruebas funcionan corr
 
 ### <a name="continue-the-analysis"></a>Continuar el análisis
 
-Pero los dos últimos métodos de prueba también son problemáticos. No puede saber qué condición del método en pruebas inicia la excepción cuando se ejecuta cualquier prueba. Alguna forma de diferenciar las dos condiciones, que es una cantidad de débito negativo o una cantidad mayor que el saldo, aumentaría la confianza en las pruebas.
+Puede mejorar aún más el método que se está probando. Con la implementación actual, no hay ninguna manera de saber qué condición (`amount > m_balance` o `amount < 0`) ha provocado la excepción producida durante la prueba. Sabemos solo que se ha producido un `ArgumentOutOfRangeException` en algún lugar del método. Sería mejor si pudiéramos decir qué condición en `BankAccount.Debit` produjo la excepción (`amount > m_balance` o `amount < 0`) para que pudiéramos estar seguros de que el método está comprobando correctamente el estado de sus argumentos.
 
-Examine de nuevo el método en pruebas y compruebe que ambas instrucciones condicionales utilizan un constructor `ArgumentOutOfRangeException` que tan solo toma el nombre del argumento como parámetro:
+Examine de nuevo el método en pruebas (`ArgumentOutOfRangeException`) y compruebe que ambas instrucciones condicionales utilizan un constructor `BankAccount.Debit` que tan solo toma el nombre del argumento como parámetro:
 
 ```csharp
 throw new ArgumentOutOfRangeException("amount");

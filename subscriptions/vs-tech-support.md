@@ -7,12 +7,12 @@ ms.date: 2/13/2019
 ms.topic: conceptual
 description: Vea cómo activar la ventaja de soporte técnico que se incluye con la suscripción de Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 5464157d27833781edbcbe041d17ad5ecab5eebb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e9b0d4c829f2ff6605885a26eec0a3ebd34282dd
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62811537"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402031"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Activación y uso de la ventaja de soporte técnico en suscripciones de Visual Studio
 
@@ -90,6 +90,9 @@ Al enviar un incidente en línea, primero se le pide que inicie sesión. En la l
 
    > [!div class="mx-imgBorder"]
    > ![Envío de incidentes mediante la ventaja de soporte técnico: elegir plan](_img/vs-tech-support/vs-tech-support-choose-plan.png)
+
+   > [!NOTE]
+   > Si no ve el plan de soporte técnico, vuelva a la página anterior y haga clic en **Siguiente** de nuevo.  Si así no se muestra el plan de soporte, copie el texto de la incidencia de soporte técnico en el Portapapeles, actualice la página y vuelva a crear el problema de soporte técnico.
 
 6. Complete los pasos restantes (gravedad, información de contacto, revisión).   Después de enviar el incidente, se ve una confirmación de que el incidente se ha enviado correctamente y se pueden cargar archivos para el caso. Se asigna al incidente un profesional de soporte técnico que se pone en contacto con usted mediante el método de contacto que haya seleccionado.
 

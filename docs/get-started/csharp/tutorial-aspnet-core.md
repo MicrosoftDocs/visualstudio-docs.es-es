@@ -3,7 +3,7 @@ title: 'Tutorial: Introducción a C# y ASP.NET Core'
 titleSuffix: ''
 description: Obtenga información sobre cómo crear una aplicación web ASP.NET Core en Visual Studio con C#, paso a paso.
 ms.custom: seodec18, get-started
-ms.date: 03/23/2019
+ms.date: 05/29/2019
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 191be9ea5433351f6f89366cc2240d8b0801e54b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 00423f3affa5c882137ee19c355252acbf23c976
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62972101"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402114"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>Tutorial: Introducción a C# y ASP.NET Core en Visual Studio
 
@@ -45,7 +45,7 @@ Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Vi
 
 ### <a name="update-visual-studio"></a>Actualizar Visual Studio
 
-Si ya ha instalado Visual Studio, asegúrese de que se está ejecutando la versión más reciente. Para obtener más información sobre cómo actualizar la instalación, vea la página [Actualización de Visual Studio a la versión más reciente](../../install/update-visual-studio.md).
+Si ya ha instalado Visual Studio, asegúrese de que se está ejecutando la versión más reciente. Para obtener más información sobre cómo actualizar la instalación, vea la página [Actualización de Visual Studio a la versión más reciente](../../install/update-visual-studio.md).
 
 ### <a name="choose-your-theme-optional"></a>Elija su tema (opcional)
 
@@ -61,7 +61,7 @@ En primer lugar, creará un proyecto de ASP.NET Core. En el tipo de proyecto se 
 
 2. En la barra de menús superior, elija **Archivo** > **Nuevo** > **Proyecto**.
 
-3. En el panel de la izquierda del cuadro de diálogo **Nuevo proyecto**, expanda **Visual C#**, expanda **Web** y después seleccione **.NET Core**. En el panel central, elija **Aplicación web ASP.NET Core**. Después, asigne el nombre del archivo *MyCoreApp* y elija **Aceptar**.
+3. En el panel de la izquierda del cuadro de diálogo **Nuevo proyecto**, expanda **Visual C#** , expanda **Web** y después seleccione **.NET Core**. En el panel central, elija **Aplicación web ASP.NET Core**. Después, asigne el nombre del archivo *MyCoreApp* y elija **Aceptar**.
 
    ![Plantilla de proyecto Aplicación web ASP.NET Core en el cuadro de diálogo Nuevo proyecto en el IDE de Visual Studio](media/csharp-aspnet-choose-template-name-razor-mycoreapp-file.png)
 
@@ -98,7 +98,7 @@ Si no ve la plantilla de proyecto **Aplicación web ASP.NET Core**, puede obtene
    ![Cuadro de diálogo Nueva aplicación web ASP.NET Core](media/new-project-csharp-aspnet-razor-web-app.png)
 
    > [!NOTE]
-   > Si no ve **ASP.NET Core 2.1** o posterior en el menú desplegable superior, asegúrese de que se ejecuta la versión más reciente de Visual Studio. Para obtener más información sobre cómo actualizar la instalación, vea la página [Actualización de Visual Studio a la versión más reciente](../../install/update-visual-studio.md).
+   > Si no ve **ASP.NET Core 2.1** en el menú desplegable superior, asegúrese de que se ejecuta la versión más reciente de Visual Studio. Para obtener más información sobre cómo actualizar la instalación, vea la página [Actualización de Visual Studio a la versión más reciente](../../install/update-visual-studio.md).
 
 ::: moniker-end
 
@@ -108,28 +108,28 @@ Si no ve la plantilla de proyecto **Aplicación web ASP.NET Core**, puede obtene
 
    ![Visualización de la ventana "Crear un proyecto"](../../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. En el cuadro de búsqueda de la ventana **Crear un proyecto**, escriba *ASP.NET*. Seguidamente, elija **C#** en la lista de lenguajes y luego, **Windows** en la lista de plataformas. 
+1. En el cuadro de búsqueda de la ventana **Crear un proyecto**, escriba *ASP.NET*. Seguidamente, elija **C#** en la lista de lenguajes y luego, **Windows** en la lista de plataformas.
 
    Después de aplicar los filtros de lenguaje y plataforma, elija la plantilla **Aplicación web ASP.NET Core** y, luego, **Siguiente**.
 
    ![Seleccionar la plantilla C# para Aplicación web ASP.NET Core](./media/vs-2019/csharp-create-new-project-search-aspnet-core-filtered.png)
 
    > [!NOTE]
-   > Si no ve la plantilla **Aplicación web ASP.NET Core**, puede instalarla desde la ventana **Crear un proyecto**. En el mensaje **¿No encuentra lo que busca?**, elija el vínculo **Instalar más herramientas y características**.
+   > Si no ve la plantilla **Aplicación web ASP.NET Core**, puede instalarla desde la ventana **Crear un proyecto**. En el mensaje **¿No encuentra lo que busca?** , elija el vínculo **Instalar más herramientas y características**.
    >
-   > ![Vínculo "Instalar más herramientas y características" del mensaje "¿No encuentra lo que busca?" que aparece en la ventana "Crear proyecto"](../../get-started/media/vs-2019/not-finding-what-looking-for.png) 
-   > 
+   > ![Vínculo "Instalar más herramientas y características" del mensaje "¿No encuentra lo que busca?" que aparece en la ventana "Crear proyecto"](../../get-started/media/vs-2019/not-finding-what-looking-for.png)
+   >
    > Luego, en el Instalador de Visual Studio, elija la carga de trabajo **Desarrollo de ASP.NET y web**.
    >
    > ![Carga de trabajo Desarrollo multiplataforma de .NET Core en el instalador de Visual Studio](../../get-started/media/aspnet-core-web-dev-workload.png)
    >
-   > Después, elija el botón **Modificar** en el Instalador de Visual Studio. Es posible que se le pida que guarde su trabajo; si es así, hágalo. Seguidamente, elija **Continuar** para instalar la carga de trabajo. Luego, vuelva al paso 2 de este procedimiento "[Crear un proyecto](#create-a-project)".
+   > Después, elija el botón **Modificar** en el Instalador de Visual Studio. Si se le pide que guarde su trabajo, hágalo. Seguidamente, elija **Continuar** para instalar la carga de trabajo. Luego, vuelva al paso 2 de este procedimiento "[Crear un proyecto](#create-a-project)".
 
 1. En la ventana **Configurar el nuevo proyecto**, escriba *MyCoreApp* en el cuadro **Nombre del proyecto**. Luego, elija **Crear**.
 
    ![En la ventana "Configurar el nuevo proyecto", asigne al proyecto el nombre "MyCoreApp".](./media/vs-2019/csharp-name-your-aspnet-mycoreapp-project.png)
 
-1. En la ventana **Crear una aplicación web ASP.NET Core**, compruebe que **ASP.NET Core 2.1** o posterior aparece en el menú desplegable de la parte superior. Luego, elija **Aplicación Web**, que incluye Razor Pages de ejemplo. Seguidamente, elija **Crear**.
+1. En la ventana **Crear una aplicación web ASP.NET Core**, compruebe que **ASP.NET Core 2.1** aparece en el menú desplegable de la parte superior. Luego, elija **Aplicación Web**, que incluye Razor Pages de ejemplo. Seguidamente, elija **Crear**.
 
    ![Ventana "Crear una aplicación web ASP.NET Core"](./media/vs-2019/csharp-create-aspnet-core-razor-pages-app.png)
 
@@ -180,16 +180,13 @@ Esta solución sigue el modelo de diseño **Razor Page**. La diferencia con el m
      ![Haga clic en el botón IIS Express de Visual Studio](media/csharp-aspnet-razor-iisexpress.png)
 
      > [!NOTE]
-     > Si recibe un mensaje de error que indica **No se puede conectar al servidor web "IIS Express"**, cierre Visual Studio y, luego, ábralo mediante la opción **Ejecutar como administrador** que aparece si hace clic con el botón derecho o en el menú contextual. A continuación, vuelva a ejecutar la aplicación.
+     > Si recibe un mensaje de error que indica **No se puede conectar al servidor web "IIS Express"** , cierre Visual Studio y, luego, ábralo mediante la opción **Ejecutar como administrador** que aparece si hace clic con el botón derecho o en el menú contextual. A continuación, vuelva a ejecutar la aplicación.
      >
-     > También es posible que obtenga un mensaje que le pregunta si desea aceptar un certificado SSL de IIS Express. Para ver el código en un explorador web, elija **Sí** y luego, si recibe un mensaje de advertencia de seguridad de seguimiento, elija **Sí**. 
+     > También es posible que obtenga un mensaje que le pregunta si desea aceptar un certificado SSL de IIS Express. Para ver el código en un explorador web, elija **Sí** y luego, si recibe un mensaje de advertencia de seguridad de seguimiento, elija **Sí**.
 
 1. Visual Studio inicia una ventana del explorador. Luego debería ver las páginas **Inicio**, **Acerca de** y **Contacto** en la barra de menús. (Si no es así, elija el elemento de menú "hamburguesa" para verlas).
 
     ![Selección del elemento de menú "hamburguesa" en la barra de menús de la aplicación web](media/csharp-aspnet-razor-browser-page.png)
-
-     > [!TIP]
-     > No se puede editar código en el editor de código de Visual Studio cuando el proyecto se abre en una ventana de explorador. 
 
 1. Elija **Acerca de** en la barra de menús.
 
@@ -199,7 +196,7 @@ Esta solución sigue el modelo de diseño **Razor Page**. La diferencia con el m
 
    ![Ver el texto de la página Acerca de](media/csharp-aspnet-razor-browser-page-about.png)
 
-1. Mantenga abierta la ventana del explorador y vuelva a Visual Studio.
+1. Vuelva a Visual Studio y, a continuación, presione **Mayús+F5** para detener el modo de depuración. También se cierra el proyecto en la ventana del explorador.
 
 1. En Visual Studio, elija **About.cshtml**. Luego, elimine la palabra _additional_ y, en su lugar, agregue las palabras _file and directory_.
 
@@ -235,7 +232,7 @@ Esta solución sigue el modelo de diseño **Razor Page**. La diferencia con el m
 
    ![Incorporación de la directiva "using System;"](media/csharp-aspnet-razor-add-usings.png)
 
-1. Presione **Ctrl**+**S** para guardar los cambios y actualizar la aplicación en el explorador web.
+1. Presione **Ctrl**+**S** para guardar los cambios y, a continuación, presione **F5** para abrir el proyecto en el explorador web.
 
 1. En la parte superior del sitio web, elija **Acerca de** para ver los cambios.
 
