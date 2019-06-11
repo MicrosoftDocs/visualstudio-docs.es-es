@@ -7,8 +7,10 @@
     - name: Inicio rápido
       expanded: true
       items:
-        - name: Herramientas de contenedor en Visual Studio
+        - name: Aplicación ASP.NET en un contenedor
           href: container-tools.md
+        - name: Aplicación React.js de página única en un contenedor
+          href: container-tools-react.md
     - name: Tutoriales
       expanded: true
       items:
