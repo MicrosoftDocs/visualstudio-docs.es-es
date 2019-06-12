@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9279257f238adf92ad560d2f2e1aa7f769905305
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a3d5b1150c67eeb5d47741ed9331dcdc11a82582
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62537419"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714952"
 ---
 # <a name="manage-project-and-solution-properties"></a>Administrar propiedades de soluciones y proyectos
 
@@ -48,7 +48,7 @@ Los proyectos de C++ y JavaScript tienen una interfaz de usuario diferente para 
 
 ![Propiedades de proyecto de Visual C&#43;&#43;](../ide/media/vs2015_projprops_cpp.png)
 
-Para obtener información sobre las propiedades de proyectos de C++, vea [Trabajar con configuraciones de proyecto (C++)](/cpp/ide/working-with-project-properties). Para obtener más información sobre las propiedades de JavaScript, vea [Página de propiedades, JavaScript](../ide/reference/property-pages-javascript.md).
+Para obtener información sobre las propiedades de proyectos de C++, vea [Trabajar con configuraciones de proyecto (C++)](/cpp/build/working-with-project-properties). Para obtener más información sobre las propiedades de JavaScript, vea [Página de propiedades, JavaScript](../ide/reference/property-pages-javascript.md).
 
 ## <a name="solution-properties"></a>Propiedades de la solución
 

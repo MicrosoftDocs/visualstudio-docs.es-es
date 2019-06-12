@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a2e67692daed4d00b841b7472e7d13ede0ca500
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 61bb5391f52bcfc587664259821d02ff2786acd3
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63420414"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820685"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>Paso 8: Escribir código para el controlador de eventos del botón Mostrar una imagen
 
@@ -87,7 +87,7 @@ El IDE incluye una eficaz herramienta denominada IntelliSense que ayuda a escrib
         >
         >  `If OpenFileDialog1.ShowDialog() = DialogResult.OK Then`
 
-    9. Ahora, agregue otra línea de código más. Puede escribirla (o copiar y pegar), pero puede resultar interesante utilizar IntelliSense para agregarla. Cuanto más se familiarice con IntelliSense, más rápidamente podrá escribir su propio código. El método `showButton_Click()` final tendrá el siguiente aspecto. (Pulse la pestaña **VB** para ver la versión de Visual Basic del código).
+    9. Ahora, agregue otra línea de código más. Puede escribirla (o copiar y pegar), pero puede resultar interesante utilizar IntelliSense para agregarla. Cuanto más se familiarice con IntelliSense, más rápidamente podrá escribir su propio código. El método `showButton_Click()` final tendrá el siguiente aspecto.
 
          [!code-csharp[VbExpressTutorial1Step8#1](../ide/codesnippet/CSharp/step-8-write-code-for-the-show-a-picture-button-event-handler_1.cs)]
          [!code-vb[VbExpressTutorial1Step8#1](../ide/codesnippet/VisualBasic/step-8-write-code-for-the-show-a-picture-button-event-handler_1.vb)]

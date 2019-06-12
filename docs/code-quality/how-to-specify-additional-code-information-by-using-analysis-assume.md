@@ -12,29 +12,31 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 09db0ff784c7d8fa5a9889487f6090ad9afbfea0
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: f23dd3821744687d4f595ad404bc076e1d05af7b
+ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66260870"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66835916"
 ---
 # <a name="how-to-specify-additional-code-information-by-using-analysisassume"></a>Procedimiento Especificar información de código adicional mediante _Analysis_assume
+
 Puede proporcionar sugerencias a la herramienta de análisis de código para código de C o C++ que ayudan al proceso de análisis y reducir las advertencias. Para proporcionar información adicional, utilice la siguiente función:
 
- `_Analysis_assume(`  `expr`  `)`
+`_Analysis_assume(`  `expr`  `)`
 
- `expr` -cualquier expresión que se supone que se evalúe como true.
+`expr` -cualquier expresión que se supone que se evalúe como true.
 
- La herramienta de análisis de código se da por supuesto que la condición representada por la expresión es verdadera en el punto donde aparece la función y siga siendo verdadera hasta que la expresión se modifica, por ejemplo, mediante la asignación a una variable.
+La herramienta de análisis de código se da por supuesto que la condición representada por la expresión es verdadera en el punto donde aparece la función y siga siendo verdadera hasta que la expresión se modifica, por ejemplo, mediante la asignación a una variable.
 
 > [!NOTE]
 > `_Analysis_assume` no afecta a la optimización de código. Fuera de la herramienta de análisis de código, `_Analysis_assume` se define como una operación inefectiva.
 
 ## <a name="example"></a>Ejemplo
- El siguiente código utiliza `_Analysis_assume` para corregir la advertencia de análisis de código [C6388](../code-quality/c6388.md):
 
-```
+El siguiente código utiliza `_Analysis_assume` para corregir la advertencia de análisis de código [C6388](../code-quality/c6388.md):
+
+```cpp
 #include<windows.h>
 #include<codeanalysis\sourceannotations.h>
 
@@ -56,4 +58,5 @@ void test( )
 ```
 
 ## <a name="see-also"></a>Vea también
- [__assume](/cpp/intrinsics/assume)
+
+- [__assume](/cpp/intrinsics/assume)

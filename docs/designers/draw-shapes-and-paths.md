@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e0efd4b4f9fb301f5bcba4a12857647a8d911f1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 222826121b270da93bc4bdd867b21fc62730cb07
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62899341"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820435"
 ---
 # <a name="draw-shapes-and-paths"></a>Dibujar formas y trazados
 
@@ -93,8 +93,8 @@ Las formas y los trazados usan gráficos vectoriales, por lo que se adaptan bien
 |||||
 |-|-|-|-|
 |![Dos formas antes de su combinación](../designers/media/b1_1.png)|Dos formas antes de su combinación|![Formar intersección](../designers/media/b1_4.png)|Formar intersección|
-|![Excluir superposición](../designers/media/b1_2.png)|Unir|![](../designers/media/b1_5.png)|Excluir superposición|
-|![Restar](../designers/media/b1_3.png)|Dividir|![](../designers/media/b1_6.png)|Restar|
+|![Unir](../designers/media/b1_2.png)|Unir|![Excluir superposición](../designers/media/b1_5.png)|Excluir superposición|
+|![Dividir](../designers/media/b1_3.png)|Dividir|![Restar](../designers/media/b1_6.png)|Restar|
 
  **Vea un vídeo corto:** ![Configurar las características instaladas](../designers/media/bldadminconsoleinitialconfigicon.png) [Trabajo con trazados: Combinar trazados](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195).
 

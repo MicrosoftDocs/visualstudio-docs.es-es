@@ -1,5 +1,5 @@
 ---
-title: Examinar el modelo de contenido de los nodos mediante la vista de modelo de contenido en el Diseñador de esquemas XML
+title: Examinar nodos mediante la vista modelo de contenido en el Diseñador de esquemas XML
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c42ddac8-b0e3-48d6-9832-112a19d6c104
@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dfefc7d6aaa40d628cc0ee9d582fddf65adb411e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 63e337162dc8499bf9ac2acb5606fbf75292574f
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63001898"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820454"
 ---
 # <a name="how-to-examine-the-content-model-of-nodes-using-the-content-model-view"></a>Procedimiento Examinar el modelo de contenido de los nodos mediante la vista de modelo de contenido
 
@@ -39,6 +39,6 @@ En este tema se describe cómo explorar los nodos mediante el [vista modelo de c
 
 7. Haga clic en cualquier nodo situado debajo del elemento `purchaseOrder` y busque en la barra de ruta de navegación dónde se encuentra el nodo seleccionado dentro del conjunto de esquemas.
 
-8. Haga clic en el **Mostrar documentación** botón en la barra de herramientas de XSD para ver la documentación. También puede hacer clic con el botón secundario en la superficie de diseño para ver la documentación.
+8. Haga clic en el **Mostrar documentación** botón en la barra de herramientas de XSD para alternar la documentación. También puede hacer clic con el botón secundario en la superficie de diseño para ver la documentación.
 
-9. Haga clic el `purchaseOrder` nodo y seleccione **generar XML de ejemplo** para ver el documento de instancia XML.
+9. Haga clic en el `purchaseOrder` nodo y seleccione **generar XML de ejemplo** para ver el documento de instancia XML.

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9db603567cb73827546bc488bf57aba641d97054
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1648d2ae3c46fa8382a96b497f307b370a8d345c
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541954"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820573"
 ---
 # <a name="ca2201-do-not-raise-reserved-exception-types"></a>CA2201: No provocar tipos de excepción reservados
 
@@ -46,6 +46,8 @@ Los siguientes tipos de excepción son demasiado generales para proporcionar inf
 
 Los siguientes tipos de excepción están reservados y deberían ser iniciados solo por common language runtime:
 
+- <xref:System.AccessViolationException?displayProperty=fullName>
+
 - <xref:System.ExecutionEngineException?displayProperty=fullName>
 
 - <xref:System.IndexOutOfRangeException?displayProperty=fullName>
@@ -53,6 +55,14 @@ Los siguientes tipos de excepción están reservados y deberían ser iniciados s
 - <xref:System.NullReferenceException?displayProperty=fullName>
 
 - <xref:System.OutOfMemoryException?displayProperty=fullName>
+
+- <xref:System.Runtime.InteropServices.COMException?displayProperty=fullName>
+
+- <xref:System.Runtime.InteropServices.ExternalException?displayProperty=fullName>
+
+- <xref:System.Runtime.InteropServices.SEHException?displayProperty=fullName>
+
+- <xref:System.StackOverflowException?displayProperty=fullName>
 
 **No inicie excepciones generales**
 

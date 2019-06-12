@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: f3f488d021be59538eac36a19a66970b9fc01463
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.openlocfilehash: ae7cbddb3ea7d7f94b23d723f6641a95dd28ed40
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66432232"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820343"
 ---
 # <a name="use-the-mstest-framework-in-unit-tests"></a>Usar el marco de trabajo MSTest en pruebas unitarias
 
@@ -81,6 +81,8 @@ Las pruebas unitarias pueden comprobar el comportamiento de aplicaciones concret
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>
 
+- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsException%2A?displayProperty=nameWithType>
+
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.CollectionAssert>
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.StringAssert>
@@ -90,8 +92,6 @@ Las pruebas unitarias pueden comprobar el comportamiento de aplicaciones concret
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.AssertInconclusiveException>
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.UnitTestAssertException>
-
-- <xref:Microsoft.VisualStudio.TestTools.UnitTesting.ExpectedExceptionAttribute>
 
 ## <a name="the-testcontext-class"></a>La clase TestContext
 

@@ -15,12 +15,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 12a854c4e43385177730ceddf045b76e2e61d342
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 90f218165c0543c1881857191efd202717c6e372
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65686896"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820886"
 ---
 # <a name="ca1063-implement-idisposable-correctly"></a>CA1063: Implementar IDisposable correctamente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
