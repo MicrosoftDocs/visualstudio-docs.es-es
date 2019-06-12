@@ -16,12 +16,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: f1b2c5b447d796ddd2098a6500b6094478fcd8b9
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 932805f938e9d96cd944230fcc8aa82a4710da31
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65842008"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820625"
 ---
 # <a name="ca1063-implement-idisposable-correctly"></a>CA1063: Implementar IDisposable correctamente
 
@@ -52,7 +52,7 @@ El <xref:System.IDisposable?displayProperty=nameWithType> interfaz no se impleme
 
 Infracción de cualquiera de estos patrones desencadena la advertencia CA1063.
 
-Cada tipo no sellado que declara e implementa el <xref:System.IDisposable> interfaz debe proporcionar su propio `protected virtual void Dispose(bool)` método. `Dispose()` debe llamar a `Dipose(true)`, y el finalizador debe llamar a `Dispose(false)`. Si crea un tipo no sellado que declara e implementa el <xref:System.IDisposable> interfaz, debe definir `Dispose(bool)` y llamarlo. Para obtener más información, consulte [limpiar recursos no administrados (Guía de. NET)](/dotnet/standard/garbage-collection/unmanaged) y [patrón Dispose](/dotnet/standard/design-guidelines/dispose-pattern).
+Cada tipo no sellado que declara e implementa el <xref:System.IDisposable> interfaz debe proporcionar su propio `protected virtual void Dispose(bool)` método. `Dispose()` debe llamar a `Dispose(true)`, y el finalizador debe llamar a `Dispose(false)`. Si crea un tipo no sellado que declara e implementa el <xref:System.IDisposable> interfaz, debe definir `Dispose(bool)` y llamarlo. Para obtener más información, consulte [limpiar recursos no administrados (Guía de. NET)](/dotnet/standard/garbage-collection/unmanaged) y [patrón Dispose](/dotnet/standard/design-guidelines/dispose-pattern).
 
 De forma predeterminada, esta regla busca solo en tipos visibles externamente, pero se trata de [configurable](#configurability).
 

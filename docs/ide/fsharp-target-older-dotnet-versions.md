@@ -8,12 +8,13 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3572e48328317634f036e8c1301d81c38314a21c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+monikerRange: vs-2017
+ms.openlocfilehash: 2e0d580ac18142010a306d3fb4de19eb69b0b91b
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62547889"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746713"
 ---
 # <a name="target-older-versions-of-net-f"></a>Especificar como destino versiones anteriores de .NET (F#)
 

@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 915a6c6d06380aa67c2c79ce52598668a9b33f18
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4242fabe943dd27624e44a9900981343ec180fcd
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442374"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820908"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>Introducción a los lenguajes específicos de dominio
 
@@ -21,7 +21,7 @@ En este tema se explica los conceptos básicos de la definición y uso de un len
 > [!NOTE]
 > El SDK de transformación de plantilla de texto y el SDK de modelado de Visual Studio se instalan automáticamente al instalar características específicas de Visual Studio. Para obtener más información, consulte [esta entrada de blog](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
 
-Si está familiarizado con los DSL, le recomendamos que trabaje a través de la **laboratorio de herramientas de DSL**, que encontrará en este sitio: [SDK de visualización y modelado](http://go.microsoft.com/fwlink/?LinkID=186128)
+Si está familiarizado con los DSL, le recomendamos que trabaje a través de la **laboratorio de herramientas de DSL**, que encontrará en este sitio: [SDK de modelado y](http://go.microsoft.com/fwlink/?LinkID=186128)
 
 ## <a name="what-can-you-do-with-a-domain-specific-language"></a>¿Qué puede hacer con un lenguaje específico de dominio?
 
@@ -137,11 +137,11 @@ Puede ejecutar la solución de DSL tan pronto como se ha creado. Más adelante, 
 
 Visual Studio experimental será similar en el ejemplo siguiente:
 
-![](../modeling/media/dsl_min.png)
+![Árbol de ejemplo de lenguaje específico de dominios en Visual Studio](../modeling/media/dsl_min.png)
 
 ### <a name="the-content-of-a-model"></a>El contenido de un modelo
 
-El contenido de un archivo que es una instancia de un DSL se denomina un *modelo*. El modelo contiene *modelo*<em>elementos</em> y *vínculos* entre los elementos. La definición de DSL especifica qué tipos de elementos de modelo y vínculos que pueden existir en el modelo. Por ejemplo, en un DSL creado a partir de la plantilla de lenguaje mínimo, hay un tipo de elemento de modelo y un tipo de vínculo.
+El contenido de un archivo que es una instancia de un DSL se denomina un *modelo*. El modelo contiene *modelo* <em>elementos</em> y *vínculos* entre los elementos. La definición de DSL especifica qué tipos de elementos de modelo y vínculos que pueden existir en el modelo. Por ejemplo, en un DSL creado a partir de la plantilla de lenguaje mínimo, hay un tipo de elemento de modelo y un tipo de vínculo.
 
 La definición de DSL puede especificar cómo deberá aparecer el modelo en un diagrama. Puede elegir entre una variedad de estilos de formas y conectores. Puede especificar que algunas formas aparecen dentro de otras formas.
 
@@ -180,7 +180,7 @@ Puede agregar cualquier número de archivos de plantilla de texto a un proyecto.
 > [!NOTE]
 > Al cambiar la definición de DSL, el código de plantilla de texto de ejemplo no funcionará, a menos que la actualice.
 
-Para obtener más información, consulte [generar código desde un lenguaje específico de dominio](../modeling/generating-code-from-a-domain-specific-language.md) y [escribir código para personalizar lenguajes específicos de dominio](../modeling/writing-code-to-customise-a-domain-specific-language.md).
+Para obtener más información, consulte [generar código desde un lenguaje específico de dominio](../modeling/generating-code-from-a-domain-specific-language.md) y [escribir código para personalizar un lenguaje específico de dominio](../modeling/writing-code-to-customise-a-domain-specific-language.md).
 
 ## <a name="customizing-the-dsl"></a>Personalizar el DSL
 
@@ -392,7 +392,7 @@ Cambiar el nombre de las clases de dominio existentes y relaciones. Por ejemplo,
 
  Puede usar el mismo procedimiento para instalar el DSL en su propio equipo para que no es necesario usar la instancia experimental de Visual Studio.
 
- Para obtener más información, vea [Implementación de soluciones de lenguaje específico de dominio](../modeling/deploying-domain-specific-language-solutions.md).
+ Para obtener más información, vea [Implementación de soluciones de lenguaje específico de dominio](msi-and-vsix-deployment-of-a-dsl.md).
 
 ## <a name="Reset"></a> Quitar el antiguo DSL Experimental
  Si ha creado DSL experimental que ya no desea, puede quitarlos del equipo mediante el restablecimiento de la instancia Experimental de Visual Studio.

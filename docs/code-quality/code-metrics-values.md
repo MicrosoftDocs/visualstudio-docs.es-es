@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b44f2a36297db3265a3904f1f76596ca6ba0e35
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 960c2b546abe3554a5912efde9bd09bb5b2189b7
+ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66260473"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66835960"
 ---
 # <a name="code-metrics-values"></a>Valores de las métricas de código
 
@@ -32,7 +32,7 @@ En la lista siguiente se muestra el código de los resultados de las métricas q
 
 - **Complejidad ciclomática** -mide la complejidad del código estructural. Se crea, calculando el número de rutas de acceso de código diferente en el flujo del programa. Un programa que tiene el flujo de control complejo requiere más pruebas para lograr una buena cobertura de código y es difícil de mantener. Para obtener más información, consulte el [entrada de Wikipedia para complejidad ciclomática](https://wikipedia.org/wiki/Cyclomatic_complexity).
 
-- **Profundidad de herencia** -indica el número de diferentes clases que heredan entre sí, remontándose a la clase base. Profundidad de herencia es similar a la clase en que un cambio en una clase base puede afectar a cualquiera de sus clases heredadas de acoplamiento. Cuanto mayor sea este número, mayor será la herencia y mayor será la posibilidad de que las modificaciones de la clase base dar lugar a importantes cambios. Profundidad de herencia de un valor bajo es bueno y un valor alto es incorrecto. 
+- **Profundidad de herencia** -indica el número de diferentes clases que heredan entre sí, remontándose a la clase base. Profundidad de herencia es similar a la clase en que un cambio en una clase base puede afectar a cualquiera de sus clases heredadas de acoplamiento. Cuanto mayor sea este número, mayor será la herencia y mayor será la posibilidad de que las modificaciones de la clase base dar lugar a importantes cambios. Profundidad de herencia de un valor bajo es bueno y un valor alto es incorrecto.
 
 - **Acoplamiento de clases** -mide el acoplamiento a las clases únicas a través de parámetros, variables locales, tipos de valor devuelto, llamadas a métodos, las creaciones de instancias genérica o de plantilla, clases base, implementaciones de interfaz, los campos definidos en los tipos externos, y decoración de atributo. Buen diseño de software dicta que deben tener alta cohesión y acoplamiento bajo los tipos y métodos. El significativo acoplamiento indica un diseño que es difícil reutilizar y mantener debido a sus interdependencias en otros tipos. Para obtener más información, consulte el [el acoplamiento de clases](https://blogs.msdn.microsoft.com/zainnab/2011/05/25/code-metrics-class-coupling/) entrada de blog.
 
@@ -43,9 +43,7 @@ En la lista siguiente se muestra el código de los resultados de las métricas q
 
 ## <a name="anonymous-methods"></a>Métodos anónimos
 
-Un *método anónimo* es simplemente un método que no tiene nombre. Métodos anónimos se utilizan con más frecuencia para pasar un bloque de código como parámetro delegado. Resultados de métricas para un método anónimo que se declara en un miembro, como un método o el descriptor de acceso, se asocian con el miembro que declara el método. No se asocian con el miembro que llama al método.
-
-Para obtener más información acerca de cómo tratan las métricas de código los métodos anónimos, consulte [métodos anónimos y análisis de código](../code-quality/anonymous-methods-and-code-analysis.md).
+Un *método anónimo* es simplemente un método que no tiene nombre. Métodos anónimos se utilizan con más frecuencia para pasar un bloque de código como parámetro delegado. Métricas de código da como resultado de un método anónimo que se declara en un miembro, como un método o el descriptor de acceso, se asocian al miembro que declara el método. No se asocian con el miembro que llama al método.
 
 ## <a name="generated-code"></a>Código generado
 
