@@ -21,12 +21,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b26c700e90189882f850d4bda1d47fb6f54c025
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 885dee2ca04060042e804ff964636d16e6a725ee
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62548158"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745812"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Procedimiento Agregar o quitar referencias con el Administrador de referencias
 
@@ -56,11 +56,11 @@ En el cuadro de diálogo **Administrador de referencias** se muestran distintas 
 
 ## <a name="assemblies-tab"></a>Pestaña Ensamblados
 
-En la pestaña **Ensamblados** se muestran todos los ensamblados de .NET Framework a los que se puede hacer referencia. La pestaña **Ensamblados** no muestra ningún ensamblado de la caché global de ensamblados (GAC) porque los ensamblados de la GAC forman parte del entorno en tiempo de ejecución. Si implementa o copia una aplicación que contiene una referencia a un ensamblado registrado en la memoria caché global de ensamblados, el ensamblado no se implementará ni copiará con la aplicación, independientemente de la configuración de **Copia local**. Para más información, vea [Administrar referencias en un proyecto](../ide/managing-references-in-a-project.md).
+El **ensamblados** ficha enumera todos los ensamblados de .NET que están disponibles para hacer referencia a. La pestaña **Ensamblados** no muestra ningún ensamblado de la caché global de ensamblados (GAC) porque los ensamblados de la GAC forman parte del entorno en tiempo de ejecución. Si implementa o copia una aplicación que contiene una referencia a un ensamblado registrado en la memoria caché global de ensamblados, el ensamblado no se implementará ni copiará con la aplicación, independientemente de la configuración de **Copia local**. Para más información, vea [Administrar referencias en un proyecto](../ide/managing-references-in-a-project.md).
 
 Al agregar manualmente una referencia a cualquiera de los espacios de nombres EnvDTE (<xref:EnvDTE>, <xref:EnvDTE80>, <xref:EnvDTE90>, <xref:EnvDTE90a> o <xref:EnvDTE100>), establezca la propiedad **Incrustar tipos de interoperabilidad** de la referencia en **False** en la ventana **Propiedades**. Si establece esta propiedad en **True**, se pueden producir problemas de compilación debido a ciertas propiedades de EnvDTE que no se pueden insertar.
 
-Todos los proyectos de escritorio contienen una referencia implícita a **mscorlib**. Los proyectos de [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] contienen una referencia implícita a <xref:Microsoft.VisualBasic>. Todos los proyectos contienen una referencia implícita a **System.Core**, aunque se quite de la lista de referencias.
+Todos los proyectos de escritorio contienen una referencia implícita a **mscorlib**. Proyectos de Visual Basic contienen una referencia implícita a <xref:Microsoft.VisualBasic>. Todos los proyectos contienen una referencia implícita a **System.Core**, aunque se quite de la lista de referencias.
 
 Si un tipo de proyecto no admite ensamblados, la pestaña no aparecerá en el cuadro de diálogo **Administrador de referencias**.
 
@@ -68,7 +68,9 @@ La pestaña **Ensamblados** consta de dos subpestañas:
 
 1. En **Framework** se enumeran todos los ensamblados que conforman la versión de la plataforma de destino.
 
-    Los proyectos de las aplicaciones de la Tienda Windows 8.x contienen referencias a todos los ensamblados de las [!INCLUDE[net_win8_profile](../ide/includes/net_win8_profile_md.md)] de destino de forma predeterminada cuando se crea un proyecto. En los proyectos administrados, un nodo de solo lectura bajo la carpeta **Referencias** del **Explorador de soluciones** indica la referencia a todo el marco. Por consiguiente, la pestaña **Marco** no enumera ninguno de los ensamblados del marco y en su lugar muestra el siguiente mensaje: "Ya se hace referencia a todos los ensamblados de .NET Framework. Use el Examinador de objetos para ver las referencias de .NET Framework". Para los proyectos de escritorio, la pestaña **Marco** muestra los ensamblados de la plataforma de destino, y el usuario debe agregar las referencias que requiera la aplicación.
+   Para los proyectos que no están destinadas a .NET Core o la plataforma Universal de Windows, el **Framework** pestaña muestra los ensamblados de marco de destino. El usuario debe agregar las referencias que requiera la aplicación.
+
+   Proyectos universales de Windows contienen referencias a todos los ensamblados en el marco de destino de forma predeterminada. En los proyectos administrados, un nodo de solo lectura bajo la carpeta **Referencias** del **Explorador de soluciones** indica la referencia a todo el marco. En consecuencia, el **Framework** ficha no mostrará ninguno de los ensamblados del marco de trabajo y en su lugar, muestra el mensaje siguiente: "Ya se hace referencia a todos los ensamblados de .NET Framework. Use el Examinador de objetos para explorar las referencias en el marco de trabajo".
 
 2. En **Extensiones** se muestran todos los ensamblados que los proveedores externos de componentes y controles han desarrollado para ampliar la plataforma de destino. Dependiendo del propósito de la aplicación del usuario, puede que se necesiten estos ensamblados.
 
@@ -84,22 +86,20 @@ La pestaña **Ensamblados** consta de dos subpestañas:
 
    Y versiones anteriores de [identificador de plataforma de destino]
 
-   Por ejemplo, si un proyecto tiene como destino .NET Framework 4 en una máquina de 32 bits, **Extensiones** enumerará los ensamblados que están registrados en *\Microsoft\.NETFramework\v4.0\AssemblyFoldersEx*, *\Microsoft\.NETFramework\v3.5\AssemblyFoldersEx*, *\Microsoft\.NETFramework\v3.0\AssemblyFoldersEx* y *\Microsoft\.NETFramework\v2.0\AssemblyFoldersEx*.
+   Por ejemplo, si un proyecto tiene como destino .NET Framework 4 en un equipo de 32 bits, **extensiones** enumera los ensamblados que están registrados en *\Microsoft\.NETFramework\v4.0\AssemblyFoldersEx*, *\Microsoft\.NETFramework\v3.5\AssemblyFoldersEx*, *\Microsoft\.NETFramework\v3.0\AssemblyFoldersEx*, y *\ Microsoft\.NETFramework\v2.0\AssemblyFoldersEx*.
 
-Dependiendo de la versión de .NET Framework del proyecto, es posible que algunos componentes de la lista no aparezcan. Esta desincronización puede aparecer bajo las condiciones siguientes:
+No se muestran algunos componentes en la lista, según la versión de framework de su proyecto. Esta desincronización puede aparecer bajo las condiciones siguientes:
 
-- Un componente que utiliza una versión reciente de .NET Framework es incompatible con un proyecto que tiene como destino una versión anterior de .NET Framework.
+- Un componente que utiliza una versión reciente de framework es incompatible con un proyecto que tenga como destino una versión anterior.
 
-    Para obtener información sobre cómo cambiar la versión de .NET Framework de destino de un proyecto, vea [Cómo: Usar una versión de .NET Framework como destino](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+   Para obtener información acerca de cómo cambiar la versión de framework de destino para un proyecto, vea [Cómo: Tener como destino una versión de framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 
-- Un componente que utiliza [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] es incompatible con un proyecto que tiene como destino [!INCLUDE[net_v45](../ide/includes/net_v45_md.md)].
-
-    Al crear una nueva aplicación, algunos proyectos tienen como destino [!INCLUDE[net_v45](../ide/includes/net_v45_md.md)] de forma predeterminada.
+- Un componente que utiliza .NET Framework 4 no es compatible con un proyecto destinado a .NET Framework 4.5.
 
 No se deben agregar referencias de archivos a resultados de otro proyecto de la misma solución, ya que puede provocar errores de compilación. En lugar de hacerlo, use la pestaña **Proyectos** del cuadro de diálogo **Agregar referencia** para crear referencias entre proyectos. Esto facilita el trabajo en equipo, permitiendo una mejor administración de las bibliotecas de clases creadas en los proyectos. Para más información, vea [Solucionar problemas de referencias rotas](../ide/troubleshooting-broken-references.md).
 
 > [!NOTE]
-> En Visual Studio 2015 o posterior, se crea una referencia de archivo en lugar de una referencia de proyecto si la versión de destino de .NET Framework de un proyecto es la 4.5 o posterior y la versión de .NET Framework de destino del otro proyecto es la 2, la 3, la 3.5 o la 4.0.
+> En Visual Studio 2015 o posterior, se crea una referencia de archivo en lugar de una referencia de proyecto si la versión de framework de destino de un proyecto es .NET Framework 4.5 o posterior, y la versión de destino del otro proyecto es .NET Framework 2, 3, 3.5 o 4.0.
 
 ### <a name="to-display-an-assembly-in-the-add-reference-dialog-box"></a>Para mostrar un ensamblado en el cuadro de diálogo Agregar referencia
 
@@ -125,7 +125,7 @@ No se deben agregar referencias de archivos a resultados de otro proyecto de la 
 
    - `[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\<VersionMinimum>\AssemblyFoldersEx\MyAssemblies]@="<AssemblyLocation>"`
 
-   *\<VersionMinimum\>* es la versión de .NET Framework más antigua que se aplica. Si *\<VersionMinimum\>* es v3.0, las carpetas especificadas en *AssemblyFoldersEx* se aplican a proyectos cuyo destino es .NET Framework 3.0 y versiones posteriores.
+   *\<VersionMinimum\>*  es la versión de framework más antigua que se aplica. Si *\<VersionMinimum\>* es v3.0, las carpetas especificadas en *AssemblyFoldersEx* se aplican a proyectos cuyo destino es .NET Framework 3.0 y versiones posteriores.
 
    *\<AssemblyLocation\>* es el directorio de los ensamblados que quiere que aparezcan en el cuadro de diálogo **Agregar referencia**, por ejemplo, *C:\MyAssemblies*.
 
@@ -137,13 +137,10 @@ No se deben agregar referencias de archivos a resultados de otro proyecto de la 
 
 La pestaña **Proyectos** muestra todos los proyectos compatibles de la solución actual, en la subpestaña **Solución**.
 
-Un proyecto puede hacer referencia a otro proyecto con una versión de .NET Framework de destino diferente. Por ejemplo, podría crear un proyecto cuya versión de destino fuera [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] pero que hiciera referencia a un ensamblado compilado para .NET Framework 2. En cambio, el proyecto de .NET Framework 2 no puede hacer referencia a un proyecto de [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)]. Para obtener más información, consulte [Información general sobre la compatibilidad con múltiples versiones](../ide/visual-studio-multi-targeting-overview.md).
+Un proyecto puede hacer referencia a otro proyecto que tenga como destino una versión diferente de framework. Por ejemplo, podría crear un proyecto que tiene como destino .NET Framework 4 pero que hace referencia a un ensamblado compilado para .NET Framework 2. Sin embargo, el proyecto de .NET Framework 2 no puede hacer referencia a un proyecto de .NET Framework 4. Para obtener más información, consulte [la plataforma de destino de la información general sobre](../ide/visual-studio-multi-targeting-overview.md).
 
-Un proyecto que tenga como destino [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] es incompatible con un proyecto que tenga como destino [!INCLUDE[net_client_v40_long](../deployment/includes/net_client_v40_long_md.md)].
-
-Se crea una referencia de archivo en lugar de una referencia de proyecto si un proyecto tiene como destino .NET Framework 4 y otro proyecto tiene como destino una versión anterior.
-
-Un proyecto cuyo destino sea [!INCLUDE[net_win8_profile](../ide/includes/net_win8_profile_md.md)] no puede agregar una referencia de proyecto a un proyecto cuyo destino sea .NET Framework, y viceversa.
+> [!NOTE]
+> Un proyecto destinado a .NET Framework 4 no es compatible con un proyecto destinado a .NET Framework 4 Client Profile.
 
 ## <a name="universal-windows-tab"></a>Pestaña Windows universal
 
@@ -177,9 +174,9 @@ Si un tipo de proyecto no admite COM, la pestaña no aparecerá en el cuadro de 
 
 Puede usar el botón **Examinar** para buscar un componente en el sistema de archivos.
 
-Un proyecto puede hacer referencia a un componente con una versión de .NET Framework de destino diferente. Por ejemplo, podría crear una aplicación que tuviera como destino .NET Framework 4.7 y que hiciera referencia a un componente que tuviera como destino .NET Framework 4. Para obtener más información, consulte [Información general sobre la compatibilidad con múltiples versiones](../ide/visual-studio-multi-targeting-overview.md).
+Un proyecto puede hacer referencia a un componente que tiene como destino una versión diferente de framework. Por ejemplo, podría crear una aplicación que tiene como destino .NET Framework 4.7 pero hace referencia a un componente que tiene como destino .NET Framework 4. Para obtener más información, consulte [la plataforma de destino de la información general sobre](../ide/visual-studio-multi-targeting-overview.md).
 
-No se deben agregar referencias de archivos a resultados de otro proyecto de la misma solución, ya que se pueden producir errores de compilación. En lugar de ello, use la pestaña **Solución** del cuadro de diálogo **Administrador de referencias** para crear referencias entre proyectos. Esto facilita el desarrollo en equipo, permitiendo una mejor administración de las bibliotecas de clases que se crean en los proyectos. Para más información, vea [Solucionar problemas de referencias rotas](../ide/troubleshooting-broken-references.md).
+Evite agregar referencias de archivos a resultados de otro proyecto en la misma solución, ya que se pueden producir errores de compilación. En lugar de ello, use la pestaña **Solución** del cuadro de diálogo **Administrador de referencias** para crear referencias entre proyectos. Esto facilita el desarrollo en equipo, permitiendo una mejor administración de las bibliotecas de clases que se crean en los proyectos. Para más información, vea [Solucionar problemas de referencias rotas](../ide/troubleshooting-broken-references.md).
 
 No puede buscar un SDK y agregarlo al proyecto. Solo puede buscar un archivo (por ejemplo, un ensamblado o *.winmd*) y agregarlo al proyecto.
 

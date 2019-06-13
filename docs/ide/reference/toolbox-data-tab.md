@@ -12,23 +12,23 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a83999345cd36f1677eca91b243e1ab3455c8a3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e9bee601f488c377c19eff8af060d854a7e7152e
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946796"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747697"
 ---
-# <a name="toolbox-data-tab"></a>Cuadro de herramientas, pestaña Datos
+# <a name="toolbox-data-tab"></a>Cuadro de herramientas, pestaña datos
 
 Muestra objetos de datos que puede agregar a formularios y componentes. La pestaña **Datos** del **Cuadro de herramientas** aparece cuando crea un proyecto que tiene un diseñador asociado. El **Cuadro de herramientas** aparece de manera predeterminada en el entorno de desarrollo integrado de Visual Studio; si necesita mostrar el **Cuadro de herramientas**, seleccione **Cuadro de herramientas** del menú **Ver**.
 
 > [!TIP]
 > Al ejecutar el Asistente para configuración de orígenes de datos se crean y configuran automáticamente la mayoría de elementos de datos. Para obtener más información, vea [Agregar nuevos orígenes de datos](../../data-tools/add-new-data-sources.md).
 
-## <a name="ui-element-list"></a>Lista de elementos de la interfaz de usuario
+## <a name="ui-element-list"></a>Lista de elementos de interfaz de usuario
 
-Para ir directamente a la página de referencia de .NET Framework para un componente, presione **F1** en el elemento del **cuadro de herramientas** o en el elemento de componente en la bandeja del diseñador.
+Para ir directamente a la página de referencia de .NET para un componente, presione **F1** en el elemento de la **cuadro de herramientas** o en el elemento de componente en la bandeja del diseñador.
 
 |nombre|Descripción|
 |----------|-----------------|

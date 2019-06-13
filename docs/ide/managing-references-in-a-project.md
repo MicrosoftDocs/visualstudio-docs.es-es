@@ -21,12 +21,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d04e5703c96b710208cc1ecc79a169a458463497
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 57cbff868cfdedb45b1973908ddb250ad09ea19e
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62535583"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747048"
 ---
 # <a name="manage-references-in-a-project"></a>Administrar referencias en un proyecto
 
@@ -38,7 +38,7 @@ Para agregar una referencia, haga clic con el botón derecho en el nodo **Refere
 
 Puede agregar una referencia a los siguientes tipos de componentes y servicios:
 
-- Bibliotecas de clases o ensamblados de .NET Framework
+- Los ensamblados o bibliotecas de clases .NET
 
 - Aplicaciones para UWP
 
@@ -101,11 +101,11 @@ Si implementa una aplicación que contiene una referencia a un componente person
 
 De forma predeterminada, la propiedad <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> está establecida en **False** si el ensamblado o el componente está en la caché global de ensamblados o es un componente del marco de trabajo. De lo contrario, el valor se establece en **True**. Las referencias de proyecto a proyecto siempre se establecen en **True**.
 
-## <a name="reference-a-project-or-assembly-that-targets-a-different-version-of-the-net-framework"></a>Referencia a un proyecto o ensamblado que tenga como destino una versión diferente de .NET Framework
+## <a name="reference-a-project-or-assembly-that-targets-a-different-version-of-net"></a>Referencia a un proyecto o ensamblado destinado a una versión diferente de .NET
 
-Puede crear aplicaciones que hagan referencia a proyectos o ensamblados destinados a otra versión de .NET Framework. Por ejemplo, se podría crear una aplicación destinada a .NET Framework 4.6 que haga referencia a un ensamblado destinado a .NET Framework 4.5. Si se crea un proyecto destinado a una versión anterior de .NET Framework, no se puede establecer una referencia en ese proyecto a un proyecto o ensamblado destinado a una versión más reciente.
+Puede crear aplicaciones que hacen referencia a proyectos o ensamblados que tienen como destino una versión diferente de .NET. Por ejemplo, se podría crear una aplicación destinada a .NET Framework 4.6 que haga referencia a un ensamblado destinado a .NET Framework 4.5. Si crea un proyecto que tenga como destino una versión anterior de. NET, no se puede establecer una referencia en ese proyecto a un proyecto o ensamblado destinado a una versión más reciente.
 
-Para obtener más información, consulte [Información general sobre la compatibilidad con múltiples versiones](../ide/visual-studio-multi-targeting-overview.md).
+Para obtener más información, consulte [la plataforma de destino de la información general sobre](../ide/visual-studio-multi-targeting-overview.md).
 
 ## <a name="project-to-project-references"></a>Referencias entre proyectos
 

@@ -17,12 +17,12 @@ ms.assetid: 0ee89c58-c900-48fc-a6a2-65ace00e8bab
 author: Joe-Sewell-PreEmptive
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5bf42ec3c706282adf2752d21c0c121f89c2ed5f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 87d093a540e3c6fae6a80761a5b945c572bd890d
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62557260"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744783"
 ---
 # <a name="capabilities-of-dotfuscator"></a>Funcionalidades de Dotfuscator
 
@@ -37,7 +37,7 @@ Dotfuscator Community admite una gran variedad de tipos de aplicaciones y ensam
 ## <a name="intellectual-property-protection"></a>Protección de la propiedad intelectual
 
 El diseño, el comportamiento y la implementación de la aplicación son formas de propiedad intelectual (PI).
-En cambio, las aplicaciones creadas para .NET Framework son prácticamente libros abiertos; es muy fácil usar técnicas de ingeniería inversa en los ensamblados de .NET, [ya que contienen metadatos de alto nivel y código intermedio][assemblies].
+Sin embargo, las aplicaciones creadas para .NET son esencialmente abrir los libros en pantalla; es fácil a los ensamblados de .NET de ingeniería inversa, [ya que contienen metadatos de alto nivel y código intermedio][assemblies].
 
 Dotfuscator Community incluye [ofuscación de .NET][obfuscation] básica en forma de [cambio de nombre][renaming].
 Ofuscar el código con Dotfuscator reduce el riesgo de acceso no autorizado al código fuente a través de técnicas de ingeniería inversa, ya que la información importante de nomenclatura ya no será pública.
@@ -50,7 +50,7 @@ Dotfuscator puede insertar un [comportamiento contra depuración][debug] en la a
 ## <a name="application-integrity-protection"></a>Protección de la integridad de la aplicación
 
 Además de proteger el código fuente, también es importante asegurarse de que la aplicación se usa como se ha diseñado.
-Los atacantes pueden intentar atacar la aplicación para evitar directivas de licencia (es decir, piratería de software), robar o manipular datos confidenciales controlados por la aplicación, o para cambiar su comportamiento.
+Los atacantes pueden intentar atacar la aplicación con el fin de evitar directivas de licencia (es decir, piratería de software), robar o manipular datos confidenciales controlados por la aplicación, o para cambiar el comportamiento de la aplicación.
 
 Dotfuscator Community puede insertar [código de validación de aplicación][checks] en los ensamblados, incluidas medidas [contra alteraciones][tamper], [contra depuración][debug] y [contra dispositivos con rooting][root].
 Cuando se detecta un estado de la aplicación no válido, el código de validación puede [llamar al código de aplicación para que se haga cargo de la situación de forma adecuada][check-app].

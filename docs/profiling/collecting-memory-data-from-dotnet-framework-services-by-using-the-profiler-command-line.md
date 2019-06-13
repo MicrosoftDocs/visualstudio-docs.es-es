@@ -8,15 +8,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8d7a15f1228d65cf13101811eca47a5cd7401a73
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: a4526bc9b4dde74488d3997bf18006454383cb06
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263507"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747813"
 ---
 # <a name="collect-memory-data-from-net-framework-services-by-using-the-profiler-command-line"></a>Recopilar datos de memoria de servicios de .NET Framework utilizando la línea de comandos del generador de perfiles
-En esta sección se describen los procedimientos y las opciones para recopilar datos de asignación de memoria y de duración de objetos para un servicio [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] mediante el método de muestreo desde la línea de comandos.
+Esta sección describen los procedimientos y las opciones para recopilar datos de duración de objetos para un servicio de .NET Framework mediante el método de muestreo desde la línea de comandos y de asignación de memoria.
 
 ## <a name="common-tasks"></a>Tareas comunes
 

@@ -9,14 +9,14 @@ ms.assetid: 1118c604-4b1b-4b21-a04e-45995b676fa8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3287bef750f25f3eb0b816488779d42d4505d8b9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b8548fb33e5a4b9156701e12231324e3f59c88f2
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950063"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747246"
 ---
-# <a name="how-to-create-a-visual-studio-add-in-for-the-web-performance-test-results-viewer"></a>Procedimiento para crear un complemento de Visual Studio para el Visor de resultados de pruebas de rendimiento web
+# <a name="how-to-create-an-add-in-for-the-web-performance-test-results-viewer"></a>Procedimiento Crear un complemento para el Visor de resultados de pruebas de rendimiento Web
 
 Puede extender la interfaz de usuario para el **Visor de resultados de pruebas de rendimiento web** utilizando los siguientes espacios de nombres:
 
@@ -256,9 +256,9 @@ El complemento de Visual Studio creado en el procedimiento anterior hace referen
 
 1. En el **Explorador de soluciones**, haga clic con el botón derecho en el nodo del proyecto WebPerfTestResultsViewerControl y seleccione **Propiedades**.
 
-2. Seleccione la pestaña **Aplicación**, elija la lista desplegable **Plataforma de destino**, seleccione **.NET Framework 4** y cierre **Propiedades**.
+2. Seleccione el **aplicación** ficha y, a continuación, elija el **.NET framework de destino** lista desplegable y seleccione **.NET Framework 4** (o posterior). Cerrar la **propiedades** ventana.
 
-     Esto es necesario por compatibilidad con las referencias DLL que se necesitan para extender el **Visor de resultados de pruebas de rendimiento web**.
+   Esto es necesario por compatibilidad con las referencias DLL que se necesitan para extender el **Visor de resultados de pruebas de rendimiento web**.
 
 3. En el **Explorador de soluciones**, en el proyecto WebPerfTestResultsViewerControl, haga clic con el botón derecho en el nodo **Referencias** y seleccione **Agregar referencia**.
 
@@ -300,15 +300,11 @@ El complemento de Visual Studio creado en el procedimiento anterior hace referen
             }
     ```
 
-## <a name="build-the-webperftestresultsvieweraddin-solution"></a>Compilar la solución WebPerfTestResultsViewerAddin
-
-### <a name="to-build-the-solution"></a>Para compilar la solución
+## <a name="build-the-solution"></a>Compilar la solución
 
 - En el menú **Compilar**, seleccione **Compilar solución**.
 
 ## <a name="register-the-webperftestresultsvieweraddin-add-in"></a>Registrar el complemento WebPerfTestResultsViewerAddin
-
-### <a name="to-register-the-add-in-using-the-add-in-manager"></a>Para registrar el complemento mediante el Administrador de complementos
 
 1. Seleccione **Administrador de complementos** en el menú **Herramientas**.
 
@@ -318,15 +314,13 @@ El complemento de Visual Studio creado en el procedimiento anterior hace referen
 
 4. Elija **Aceptar**.
 
-## <a name="run-the-web-performance-test-using-the-build-the-webperftestresultsvieweraddin-add-in"></a>Ejecutar la prueba de rendimiento web con el complemento WebPerfTestResultsViewerAddin
-
-### <a name="to-run-the-new-vs-add-in-for-the-web-test-results-viewer"></a>Para ejecutar el nuevo complemento de Visual Studio para el visor de resultados de pruebas web
+## <a name="run-the-web-performance-test-using-the-web-test-results-viewer"></a>Ejecutar la prueba de rendimiento web mediante el Visor de resultados de pruebas Web
 
 1. Ejecute la prueba de rendimiento web y verá la nueva pestaña del complemento WebPerfTestResultsViewerAddin en el **Visor de resultados de pruebas de rendimiento web**.
 
 2. Elija la pestaña para ver las propiedades de DataGridView.
 
-## <a name="net-framework-security"></a>Seguridad de .NET Framework
+## <a name="net-security"></a>Seguridad de .net
 
 Para mejorar la seguridad evitando que complementos malintencionados se activen de forma automática, Visual Studio proporciona configuraciones en una página de **Opciones de herramientas** denominada **Seguridad de macros/complementos**.
 

@@ -8,15 +8,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c0472fb572aab8559d8cbb571c044f9ef25f8ed
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 5b5f2c1d350f487b6490d0c2b4ce4fe0b83bb38f
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263825"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746780"
 ---
 # <a name="use-profiling-methods-to-collect-performance-data-from-the-command-line"></a>Usar métodos de generación de perfiles para recopilar datos de rendimiento desde la línea de comandos
-La elección de herramientas de línea de comandos y opciones de las herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] depende de factores como el tipo de aplicación de la que está generando perfiles, el método de generación de perfiles que desea utilizar y si se escribe la aplicación de destino en código nativo o de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
+La elección del [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] herramientas de línea de comandos de herramientas de generación de perfiles y las opciones depende de factores como el tipo de aplicación que está generando perfiles, el método de generación de perfiles que desea usar y, si la aplicación de destino se escribe en el modo nativo o en .NET Código de Framework.
 
  En este tema se organiza los temas de procedimientos de línea de comandos según el método de generación de perfiles que elija.
 
@@ -50,9 +50,9 @@ La elección de herramientas de línea de comandos y opciones de las herramienta
 - [Servicios nativos](../profiling/how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)
 
 ## <a name="use-net-memory-methods-to-collect-memory-allocation-and-object-lifetime-data"></a>Usar métodos de memoria de .NET para recopilar datos de asignación de memoria y de duración de objetos
- El método de memoria de .NET de herramientas de generación de perfiles permite recopilar datos de asignación de memoria de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] e información sobre la duración de objetos en el [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
+ El método de memoria de .NET de las herramientas de generación de perfiles permite recopilar datos de asignación de memoria de .NET Framework e información sobre la duración de objetos de .NET Framework.
 
- Puede iniciar la aplicación de destino mediante el generador de perfiles, adjuntar el generador de perfiles a una instancia en ejecución de una aplicación y crear versiones instrumentadas de la aplicación para recopilar información de tiempo detallada junto con los datos de memoria de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
+ Puede iniciar la aplicación de destino con el generador de perfiles; puede adjuntar el generador de perfiles a una instancia de ejecución de una aplicación. y puede crear versiones instrumentadas de la aplicación para recopilar información de tiempo detallada junto con los datos de memoria de .NET Framework.
 
 |Tarea|Tipo de aplicación de destino|
 |----------|-----------------------------|

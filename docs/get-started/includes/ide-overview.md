@@ -6,12 +6,12 @@ ms.author: gewarren
 author: gewarren
 manager: jillfra
 ms.topic: include
-ms.openlocfilehash: 9a8fd8ca5081e3353cdbb488da5d43f54275d8da
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 2d0d46a39bed9600ccdc0a7f343accf74378b81e
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65848352"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820884"
 ---
 El *entorno de desarrollo integrado* de Visual Studio es un panel de inicio creativo que se puede usar para editar, depurar y compilar código y, después, publicar una aplicación. Un entorno de desarrollo integrado (IDE) es un programa con numerosas características que se pueden usar para muchos aspectos del desarrollo de software. Más allá del editor estándar y el depurador que proporcionan la mayoría de IDE, Visual Studio incluye compiladores, herramientas de finalización de código, diseñadores gráficos y muchas más características para facilitar el proceso de desarrollo de software.
 
@@ -23,7 +23,7 @@ El *entorno de desarrollo integrado* de Visual Studio es un panel de inicio crea
 
 ::: moniker range="vs-2019"
 
-[![](../media/vs-2019/ide-overview.png "El IDE de Visual Studio 2017")](../media/vs-2019/ide-overview.png#lightbox)
+[![El IDE de Visual Studio de 2019](../media/vs-2019/ide-overview.png)](../media/vs-2019/ide-overview.png#lightbox)
 
 ::: moniker-end
 
@@ -174,7 +174,7 @@ Vamos a profundizar y crear un programa sencillo.
 
    En el cuadro de diálogo **Nuevo proyecto** se muestran varias *plantillas* de proyecto. Una plantilla contiene los archivos básicos y la configuración necesaria para un tipo de proyecto concreto.
 
-1. Elija la categoría de plantilla **.NET Core** bajo **Visual C#** y, después, elija la plantilla **Aplicación de consola (.NET Core)**. En el cuadro de texto **Nombre**, escriba **HelloWorld** y después haga clic en el botón **Aceptar**.
+1. Elija la categoría de plantilla **.NET Core** bajo **Visual C#** y, después, elija la plantilla **Aplicación de consola (.NET Core)** . En el cuadro de texto **Nombre**, escriba **HelloWorld** y después haga clic en el botón **Aceptar**.
 
    ![Plantilla de aplicación de .NET Core](../media/overview-new-project-dialog.png)
 

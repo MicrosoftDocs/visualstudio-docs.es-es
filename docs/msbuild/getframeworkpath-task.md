@@ -18,15 +18,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b836a0fef26f34e83f7238ebe4f6c64731b84257
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0d7bf2432e37278c924d1604e735feec7b848b01
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977674"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747555"
 ---
 # <a name="getframeworkpath-task"></a>GetFrameworkPath (tarea)
-Recupera la ruta de acceso a los ensamblados de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
+Recupera la ruta de acceso a los ensamblados de .NET Framework.
 
 ## <a name="task-parameters"></a>Parámetros de tareas
 En la siguiente tabla se describen los parámetros de la tarea `GetFrameworkPath` .
@@ -41,12 +41,12 @@ En la siguiente tabla se describen los parámetros de la tarea `GetFrameworkPath
 |`Path`|Parámetro de salida `String` opcional.<br /><br /> Contiene la ruta de acceso a los ensamblados de Framework más recientes, si alguno está disponible. De lo contrario, devuelve `null`.|
 
 ## <a name="remarks"></a>Comentarios
-Si están instaladas varias versiones de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], esta tarea devuelve la versión en la que puede ejecutarse [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].
+Si se instalan varias versiones de .NET Framework, esta tarea devuelve la versión que [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] está diseñado para ejecutarse.
 
 Además de los parámetros mencionados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.TaskExtension>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de estos parámetros adicionales y sus descripciones, consulte [TaskExtension base class](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Ejemplo
-En el ejemplo siguiente se usa la tarea `GetFrameworkPath` para almacenar la ruta de acceso a [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] en la propiedad `FrameworkPath`.
+En el ejemplo siguiente se usa el `GetFrameworkPath` tarea para almacenar la ruta de acceso a .NET Framework en el `FrameworkPath` propiedad.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

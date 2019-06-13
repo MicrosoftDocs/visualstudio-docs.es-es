@@ -20,19 +20,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d396d56aea8be3724078223261a3b6eb8835692
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 1a160d28a3953196a53673b64ae7d9ef9974a731
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445378"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747433"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Integración de Visual Studio (MSBuild)
 Visual Studio hospeda [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] para cargar y compilar proyectos administrados. Puesto que [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] es responsable del proyecto, prácticamente cualquier proyecto con el formato de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] puede utilizarse correctamente en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], aunque el proyecto lo haya creado una herramienta diferente y tenga un proceso de compilación personalizado.
 
  En este tema se describen los aspectos específicos del hospedaje de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] en [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] que deben tenerse en cuenta al personalizar los proyectos y los archivos *.targets* que se carguen y se compilen en [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Le ayudarán a garantizar que las características de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] como IntelliSense y la depuración funcionan para el proyecto personalizado.
 
- Para información sobre proyectos de C++, consulte [Archivos de proyecto](/cpp/ide/project-files).
+ Para información sobre proyectos de C++, consulte [Archivos de proyecto](/cpp/build/reference/project-files).
 
 ## <a name="project-file-name-extensions"></a>Extensiones de nombre de archivo de proyecto
  *MSBuild.exe* reconoce cualquier extensión de nombre de archivo de proyecto que coincida con el patrón *.\*proj*. Sin embargo, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] solamente reconoce un subconjunto de estas extensiones de nombre de archivo de proyecto, que determinan el sistema de proyectos específico del lenguaje que cargará el proyecto. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] no dispone de ningún sistema de proyectos independiente del lenguaje basado en [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] .
@@ -133,9 +133,9 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 
 1. En el **Explorador de soluciones**, abra el menú contextual del proyecto y, a continuación, elija **Descargar el proyecto**.
 
-     El proyecto aparecerá marcado como **(no disponible)**.
+     El proyecto aparecerá marcado como **(no disponible)** .
 
-2. En el **Explorador de soluciones**, abra el menú contextual del proyecto no disponible y seleccione **Editar\<Archivo de proyecto>**.
+2. En el **Explorador de soluciones**, abra el menú contextual del proyecto no disponible y seleccione **Editar\<Archivo de proyecto>** .
 
      El archivo de proyecto se abrirá en el Editor XML de Visual Studio.
 
@@ -165,7 +165,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 
   - `OriginalItemSpec`, que contiene la especificación del elemento original de la referencia.
 
-  - `ResolvedFrom`, establecido en "{TargetFrameworkDirectory}" si se ha resuelto en el directorio de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] .
+  - `ResolvedFrom`, se establece en "{TargetFrameworkDirectory}" si se ha resuelto en el directorio de .NET Framework.
 
 - Referencias COM:
 

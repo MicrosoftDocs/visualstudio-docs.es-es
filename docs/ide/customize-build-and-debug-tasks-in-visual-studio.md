@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 23888809dd4dfd05058ed71ba8a82e8e532d7e61
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eb3ef6eff6da9040fc7e438d8f3271c60897a5ec
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62963230"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820297"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>Personalización de las tareas de compilación y depuración para el desarrollo de "Abrir carpeta"
 
@@ -313,7 +313,7 @@ La configuración que se lee del archivo *.gitignore* se aplica al directorio pr
 ## <a name="see-also"></a>Vea también
 
 - [Desarrollo de código en Visual Studio sin proyectos o soluciones](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
-- [Open Folder projects for C++](/cpp/ide/non-msbuild-projects) (Proyectos Abrir carpeta para C++)
-- [CMake projects in C++](/cpp/ide/cmake-tools-for-visual-cpp) (Proyectos CMake en C++)
-- [Referencia de NMAKE](/cpp/build/nmake-reference)
+- [Open Folder projects for C++](/cpp/build/open-folder-projects-cpp) (Proyectos Abrir carpeta para C++)
+- [Para los proyectos de CMakeC++](/cpp/build/cmake-projects-in-visual-studio)
+- [Referencia de NMAKE](/cpp/build/reference/nmake-reference)
 - [Características del editor de código](../ide/writing-code-in-the-code-and-text-editor.md)

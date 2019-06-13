@@ -3,19 +3,19 @@ title: Incluir un paquete NuGet en el proyecto
 description: En este documento se explica cómo incluir un paquete NuGet en un proyecto de Xamarin. Le guía a lo largo del proceso de búsqueda y descarga de un paquete, además de presentar las características de integración del IDE.
 author: conceptdev
 ms.author: crdun
-ms.date: 04/14/2017
+ms.date: 04/24/2019
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
 ms.custom: video
-ms.openlocfilehash: 9f96354d9e460cebd81f52712f74dc6226f8706d
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 7ac4a10160a1273dd7766e880dfcf7f06bf64668
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65692336"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820613"
 ---
 # <a name="include-a-nuget-package-in-your-project"></a>Incluir un paquete NuGet en el proyecto
 
-NuGet es el administrador de paquetes más popular para el desarrollo de .NET y está integrado en Visual Studio para Mac y Visual Studio en Windows. Puede buscar y agregar paquetes a proyectos de Xamarin.iOS y Xamarin.Android mediante cualquier IDE.
+NuGet es el administrador de paquetes más popular para el desarrollo de .NET y está integrado en Visual Studio para Mac y Visual Studio en Windows. Puede buscar y agregar paquetes a su Xamarin, proyectos de .NET Core y ASP.NET mediante cualquier IDE.
 
 En este artículo se explica cómo incluir un paquete NuGet en un proyecto y se muestra la cadena de herramientas que hace que el proceso se desarrolle sin problemas.
 
@@ -31,7 +31,7 @@ En primer lugar, cree un proyecto denominado `HelloNuget` como se muestra a cont
 
 ## <a name="adding-a-package"></a>Adición de un paquete
 
-Con el proyecto abierto en Visual Studio para Mac, haga clic con el botón derecho en la carpeta **Paquetes** del **Panel de solución** y seleccione **Agregar paquetes**:
+Con el proyecto abierto en Visual Studio para Mac, haga doble clic en el **paquetes** carpeta en el **panel de solución** y seleccione **agregar paquetes de NuGet**:
 
 ![Acción contextual de adición de nuevo paquete NuGet](media/nuget-walkthrough-PackagesMenu.png)
 
@@ -43,9 +43,9 @@ Cuando la ventana se abre, carga una lista de paquetes del origen de paquetes pr
 
 ![Lista de paquetes NuGet](media/nuget-walkthrough-AddPackages1.png)
 
-Use el cuadro de búsqueda de la esquina superior derecha para buscar un paquete determinado, por ejemplo  `azure`. Cuando encuentre un paquete que quiera usar, selecciónelo y haga clic en el botón  **Agregar paquete**  para iniciar la instalación.
+Use el cuadro de búsqueda de la esquina superior derecha para buscar un paquete determinado, por ejemplo  `azure mobile`. Cuando haya encontrado un paquete que desea usar, selecciónelo y haga clic en el **Agregar paquete** botón para comenzar la instalación.
 
-[Adición del paquete NuGet Azure](media/nuget-walkthrough-AddPackages2.png)
+![Agregar paquete NuGet de Azure](media/nuget-walkthrough-AddPackages2.png)
 
 Una vez que el paquete se ha descargado, se agrega al proyecto. La solución cambia de este modo:
 
@@ -77,9 +77,9 @@ Haga clic con el botón derecho en **Paquetes** para acceder al menú contextual
 
 ![Menú Paquetes](media/nuget-walkthrough-PackagesMenu.png)
 
-* **Agregar paquetes**: abre la ventana para agregar más paquetes al proyecto.
-* **Actualizar**: comprueba el servidor de origen de cada paquete y descarga las versiones más recientes.
-* **Restaurar**: descarga todos los paquetes que faltan (sin actualizar los paquetes existentes a versiones más recientes).
+*   **Agregar paquetes de NuGet** -abre la ventana para agregar más paquetes al proyecto.
+*   **Actualizar**: comprueba el servidor de origen de cada paquete y descarga las versiones más recientes.
+*   **Restaurar**: descarga todos los paquetes que faltan (sin actualizar los paquetes existentes a versiones más recientes).
 
 Las opciones Actualizar y Restaurar también están disponibles en el nivel de solución y afectan a todos los proyectos de esta.
 

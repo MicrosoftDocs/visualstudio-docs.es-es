@@ -8,12 +8,12 @@ ms.assetid: a0b2d8ff-3e2a-487e-9172-90047174f336
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b56195ce7cb6e52433e19dc2a7ae4b42e7580724
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.openlocfilehash: 624d06dd44812269bcff1e67cf048fbb077e90ea
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66431839"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745826"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>Procedimiento para crear un editor de cuerpo HTTP personalizado para el Editor de pruebas de rendimiento web
 
@@ -43,7 +43,7 @@ Estas interfaces están contenidas en el espacio de nombres <xref:Microsoft.Visu
 
 1. En **Propiedades**, seleccione la pestaña **Aplicación**.
 
-1. En la lista desplegable **Plataforma de destino**, seleccione **.NET Framework 4**.
+1. En el **.NET framework de destino** lista desplegable, seleccione .NET Framework 4 (o posterior).
 
 1. Aparecerá el cuadro de diálogo **Cambio de plataforma de destino**.
 

@@ -1,5 +1,5 @@
 ---
-title: Referencia de API Microsoft.VisualStudio.TestTools.CppUnitTestFramework
+title: API Microsoft.VisualStudio.TestTools.CppUnitTestFramework
 ms.date: 11/04/2017
 ms.topic: reference
 ms.author: mblome
@@ -7,20 +7,20 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikeblome
-ms.openlocfilehash: 045f205ff5450b09d4ec4e76e14493a988bae375
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b80b7fb8439f9e2a2a2af92e458295d153e449e5
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62784087"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820771"
 ---
 # <a name="microsoftvisualstudiotesttoolscppunittestframework-api-reference"></a>Referencia de API Microsoft.VisualStudio.TestTools.CppUnitTestFramework
 
 Este tema se enumeran los miembros públicos de espacio de nombres `Microsoft::VisualStudio::CppUnitTestFramework`. Use estas API para escribir pruebas unitarias de C++ basadas en el marco de pruebas unitarias de tipo nativo de Microsoft. Al final del tema encontrará un [ejemplo de uso](#example).
 
- Los archivos de encabezado se encuentran en la carpeta _VisualStudio2012[x86]InstallFolder_**\VC\UnitTest\include**.
+ Los archivos de encabezado se encuentran en la carpeta _VisualStudio2012[x86]InstallFolder_ **\VC\UnitTest\include**.
 
- Los archivos lib se encuentran en la carpeta _VisualStudio2012[x86]InstallFolder_**\VC\UnitTest\lib**.
+ Los archivos lib se encuentran en la carpeta _VisualStudio2012[x86]InstallFolder_ **\VC\UnitTest\lib**.
 
 Las rutas de acceso de encabezado y biblioteca se configuran automáticamente en un proyecto de prueba nativo.
 

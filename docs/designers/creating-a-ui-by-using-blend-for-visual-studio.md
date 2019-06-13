@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a27799eb9c22ec633d5c8d8604fe58d6924cd623
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2651a5fc2c32de5018e8fa07f42c5067d469758c
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62847482"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820566"
 ---
 # <a name="blend-for-visual-studio-overview"></a>Introducción de Blend para Visual Studio
 
@@ -60,7 +60,7 @@ La ventana **Activos** contiene todos los objetos visuales disponibles y es simi
 
 |||
 |-|-|
-|![](../designers/media/b1_1.png)|**Cuadro de búsqueda** Escriba texto en el cuadro **Buscar** para filtrar la lista de activos.|
+|![Cuadro de búsqueda de recursos](../designers/media/b1_1.png)|**Cuadro de búsqueda** Escriba texto en el cuadro **Buscar** para filtrar la lista de activos.|
 |![Modo de cuadrícula y modo de lista](../designers/media/b1_2.png)|**Modo de cuadrícula y Modo de lista** Permite alternar entre la vista **Modo de cuadrícula** y la vista **Modo de lista** de los activos.|
 |![Categorías de recursos](../designers/media/b1_3.png)|**Categorías de activos** Haga clic en una categoría o subcategoría para ver la lista de activos de esa categoría.|
 |![Estilos](../designers/media/b1_4.png)|**Estilos** Muestre todos los estilos que se encuentran en el diccionario de recursos.|
@@ -115,7 +115,7 @@ Utilice esta ventana para ver y modificar las propiedades de un objeto. También
 |![Espacio de colores RGB](../designers/media/b1_12.png)|**Espacio de colores RGB** Modifique los colores mediante el ajuste de los valores de los editores de números **R**, **G** o **B** (rojo, verde, azul).|
 |![Canal alfa](../designers/media/b1_13.png)|**Canal alfa** Modifique el valor alfa mediante el editor de números situado al lado de **A**.|
 |![Convertir color en recurso](../designers/media/d839d12c-07a1-4127-a830-4a8e7069f4fe.png)|**Convertir color en recurso** Convierta el color seleccionado en un recurso de color. Los recursos de color están disponibles al hacer clic en la pestaña Recursos de color.|
-|![](../designers/media/b1_15.png)|**Valor hexadecimal** Vea el valor hexadecimal del color mostrado.|
+|![Valor hexadecimal del color](../designers/media/b1_15.png)|**Valor hexadecimal** Vea el valor hexadecimal del color mostrado.|
 |![Llamada 16](../designers/media/b5_label_16.png)|**Control deslizante de degradado** Aparece únicamente si se selecciona un pincel de degradado.|
 |![Mostrar propiedades avanzadas](../designers/media/d50027a1-6824-4ad8-8b4e-558b0756dcf8.png)|**Mostrar propiedades avanzadas** Vea las categorías de propiedades que se usan con menos frecuencia.|
 

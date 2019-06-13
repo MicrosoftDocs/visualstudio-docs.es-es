@@ -2,7 +2,7 @@
 title: Compatibilidad con Python en Visual Studio en Windows
 titleSuffix: ''
 description: Resumen de características de Python en Visual Studio, que lo convierten en el mejor IDE de Python en Windows (también conocidas como Herramientas de Python para Visual Studio, PTVS).
-ms.date: 03/12/2019
+ms.date: 06/05/2019
 ms.topic: overview
 author: JoshuaPartlow
 ms.author: joshuapa
@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8bcc0be91892494a81dd42f141da9c77329767cb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f218db0d10e6a7e959b3a5fdc2f38ceff2299c9b
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62785241"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747567"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Trabajar con Python en Visual Studio en Windows
 
@@ -37,6 +37,11 @@ Para comenzar:
 - Consulte una o varias de las guías de inicio rápido para crear un proyecto. Si no está seguro, empiece con [Inicio rápido: Apertura y ejecución de código de Python en una carpeta](quickstart-05-python-visual-studio-open-folder.md) o [Creación de una aplicación web con Flask](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json).
 ::: moniker-end
 - Siga el tutorial [Trabajar con Python en Visual Studio](tutorial-working-with-python-in-visual-studio-step-01-create-project.md) para obtener una experiencia completa.
+
+::: moniker range=">=vs-2019"
+> [!Note]
+> Visual Studio es compatible con todas las versiones oficialmente compatibles de Python, según lo especificado por el [Python Software Foundation](https://devguide.python.org/#status-of-python-branches). En concreto, versión 2.7, 3.5, 3.6 y 3.7.
+::: moniker-end
 
 ## <a name="support-for-multiple-interpreters"></a>Compatibilidad con diversos intérpretes
 
@@ -150,9 +155,9 @@ Para obtener más información:
 
 ## <a name="azure-sdk-for-python"></a>SDK de Azure para Python
 
-La carga de trabajo de Python incluye el SDK de Azure para Python, lo que simplifica el consumo de servicios de Azure desde aplicaciones de Windows, Mac OS X y Linux.
+Las bibliotecas de Azure para Python simplifican el consumo de servicios Azure desde aplicaciones de Windows, Mac OS X y Linux. Puede usarlos para crear y administrar recursos de Azure, así como para conectarse a servicios de Azure. 
 
-Para más información, vea [SDK de Azure para Python](/python/azure/?view=azure-python).
+Para obtener más información, consulte [Azure SDK para Python](/python/azure/?view=azure-python) y [bibliotecas de Azure para Python](/python/azure/python-sdk-azure-overview?view=azure-python) .
 
 ## <a name="questions-and-answers"></a>Preguntas y respuestas
 

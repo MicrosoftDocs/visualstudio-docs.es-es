@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 344af8760dad3c66c32590b7d2d665bef833e583
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bbe046f07a27a9fdcf07fc891f7c264a45a3d61c
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974168"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744724"
 ---
 # <a name="how-to-choose-collection-methods"></a>Procedimiento Elegir métodos de recopilación
 
@@ -34,7 +34,7 @@ Puede utilizar propiedad de la sesión de rendimiento **Método** para especific
 |----------------------------| - |
 | **Muestreo de la CPU** | Recopila estadísticas de la aplicación que son útiles para el análisis inicial y para analizar problemas de utilización de CPU. |
 | **Instrumentación** | Recopila datos de control de tiempo detallados que son útiles para un análisis enfocado y para analizar problemas de rendimiento de entrada/salida. |
-| **Asignación de memoria de .NET** | Recopila datos de asignación de memoria de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] mediante el método de generación de perfiles de muestreo. |
+| **Asignación de memoria de .NET** | Recopila datos de asignación de memoria de .NET Framework mediante el método de generación de perfiles de muestreo. |
 | **Simultaneidad** | Recopila datos de contención de recursos numéricos. |
 
 ## <a name="performance-explorer"></a>Explorador de rendimiento
@@ -75,7 +75,7 @@ Puede utilizar propiedad de la sesión de rendimiento **Método** para especific
 
 4. Haga clic en **Muestreo** o **Instrumentación**.
 
-5. Haga clic en **Recopilar información de asignación de objetos .NET** para recopilar el tamaño y el número de asignaciones de objetos [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
+5. Haga clic en **información de asignación de objetos de .NET recopile** para recopilar el tamaño y número de asignaciones de objetos de .NET Framework.
 
 6. Haga clic en **Recopilar también la información de duración de los objetos .NET** para recopilar datos sobre las generaciones de recolección de elementos no utilizados en que se reclama la memoria del objeto (opcional).
 
