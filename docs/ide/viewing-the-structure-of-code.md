@@ -25,16 +25,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e2ec8e3e51036749030036eee6ff1d268a44f69
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 685915d963e506d86c81a6bc4f7fc62998a0f7d9
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263066"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747708"
 ---
 # <a name="view-the-structure-of-code-using-different-tool-windows"></a>Visualización de la estructura del código mediante distintas ventanas de herramienta
 
-Puede examinar las clases y sus miembros en Visual Studio con diversas ventanas de herramienta, entre las que se incluyen **Vista de clases**, **Jerarquía de llamadas**, **Examinador de objetos** y **Definición de código** (solo en C++). Estas ventanas de herramienta permiten examinar el código de proyectos de Visual Studio, componentes de .NET Framework, componentes COM, bibliotecas de vínculos dinámicos (DLL) y bibliotecas de tipos (TLB).
+Puede examinar las clases y sus miembros en Visual Studio con diversas ventanas de herramienta, entre las que se incluyen **Vista de clases**, **Jerarquía de llamadas**, **Examinador de objetos** y **Definición de código** (solo en C++). Estas ventanas de herramientas pueden examinar el código en proyectos de Visual Studio, los componentes de .NET y componentes COM, bibliotecas de vínculos dinámicos (DLL) y bibliotecas de tipo (TLB).
 
 También puede usar el **Explorador de soluciones** para examinar los tipos y miembros de sus proyectos, buscar símbolos, ver la jerarquía de llamadas de un método o buscar referencias de símbolos, entre otros, sin tener que cambiar de una ventana de herramienta a otra.
 

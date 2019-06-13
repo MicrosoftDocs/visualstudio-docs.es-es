@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56b6890733d00fb650ea611e759c8f8d6a9b2bc5
-ms.sourcegitcommit: 0ef51e3517436a85cfb85bf492722d566ce602c4
+ms.openlocfilehash: 586d28c1e04c7f1e85a077b559586098093812bb
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "65934526"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745888"
 ---
 # <a name="common-msbuild-project-properties"></a>Propiedades comunes de proyectos de MSBuild
 En la tabla siguiente se enumeran las propiedades usadas con frecuencia definidas en los archivos de proyecto de Visual Studio o incluidas en archivos *.targets* que proporciona MSBuild.
@@ -118,7 +118,7 @@ En la tabla siguiente se enumeran las propiedades usadas con frecuencia definida
 | Satellite_Win32Resource | Inserta un archivo de recursos ( *.res*) de Win32 en el ensamblado satélite. |
 | SubsystemVersion | Especifica la versión mínima del subsistema que el archivo ejecutable generado puede utilizar. Esta propiedad es equivalente al modificador `/subsystemversion` del compilador. Para obtener información sobre el valor predeterminado de esta propiedad, vea [-subsystemversion (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/subsystemversion) o [-subsystemversion (Opciones del compilador de C#)](/dotnet/csharp/language-reference/compiler-options/subsystemversion-compiler-option). |
 | TargetCompactFramework | Versión de .NET Compact Framework necesaria para ejecutar la aplicación que se está compilando. Puede especificar esta propiedad para hacer referencia a ensamblados de .NET Framework concretos a los que no se pueda hacer referencia de ningún otro modo. |
-| TargetFrameworkVersion | Versión de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] necesaria para ejecutar la aplicación que se está compilando. Puede especificar esta propiedad para hacer referencia a ensamblados de .NET Framework concretos a los que no se pueda hacer referencia de ningún otro modo. |
+| TargetFrameworkVersion | La versión de .NET Framework que se requiere para ejecutar la aplicación que se está compilando. Puede especificar esta propiedad para hacer referencia a ensamblados de .NET Framework concretos a los que no se pueda hacer referencia de ningún otro modo. |
 | TreatWarningsAsErrors | Parámetro booleano que, si es `true`, hace que todas las advertencias se traten como errores. Este parámetro es equivalente al modificador `/nowarn` del compilador. |
 | UseHostCompilerIfAvailable | Parámetro booleano que, si es `true`, hace que la tarea de compilación utilice el objeto de compilador en proceso, si está disponible. Solo [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] utiliza este parámetro. |
 | Utf8Output | Parámetro booleano que, si es `true`, registra el resultado del compilador utilizando la codificación UTF-8. Este parámetro es equivalente al modificador `/utf8Output` del compilador. |

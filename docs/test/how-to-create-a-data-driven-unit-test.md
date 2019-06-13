@@ -14,12 +14,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 931a9c01bf7c8854d78e1385dbbd9a27b98cfdd7
-ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.openlocfilehash: 5960c84e2cb389580f2d7b0f476da2a456e62585
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65615439"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745869"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>Procedimiento Creación de una prueba unitaria controlada por datos
 
@@ -179,4 +179,4 @@ Cuando el método de prueba se ha corregido y la prueba se ejecuta de nuevo, la 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert?displayProperty=fullName>
 - [Haga una prueba unitaria de su código](../test/unit-test-your-code.md)
 - [Ejecutar pruebas unitarias con el Explorador de pruebas](../test/run-unit-tests-with-test-explorer.md)
-- [Escribir pruebas unitarias para .NET Framework con el Framework de pruebas unitarias de Microsoft para código administrado](../test/unit-test-your-code.md)
+- [Escribir pruebas unitarias para .NET con el marco de pruebas unitarias de Microsoft](../test/unit-test-your-code.md)

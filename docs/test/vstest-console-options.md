@@ -10,12 +10,12 @@ author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 95ed8806844781bdaab4d97d63cb1b7ef324dd7b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8bf4cea6dcd87b8cf0d2113ac3a245163ba89080
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976246"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746915"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>Opciones de la línea de comandos para VSTest.Console.exe
 
@@ -41,7 +41,7 @@ En la siguiente tabla se muestran todas las opciones de *VSTest.Console.exe* jun
 |**/UseVsixExtensions**|Esta opción hace que el proceso *vstest.console.exe* use u omita las extensiones VSIX instaladas (si procede) en la serie de pruebas.<br />Esta opción está en desuso. A partir de la siguiente versión principal de Visual Studio, esta opción puede desaparecer. Use extensiones disponibles como paquete NuGet.<br />Ejemplo: `/UseVsixExtensions:true`|
 |**/TestAdapterPath:[*ruta*]**|Obliga al proceso *vstest.console.exe* a usar adaptadores de prueba personalizados de una ruta de acceso especificada (si los hubiera) en la serie de pruebas.<br />Ejemplo: `/TestAdapterPath:[pathToCustomAdapters]`|
 |**/Platform:[*tipo de plataforma*]**|Arquitectura de la plataforma de destino que se usará para la ejecución de pruebas.<br />Los valores válidos son x86, x64 y ARM.|
-|**/Framework: [*versión de Framework*]**|Versión de .NET Framework de destino que se va a usar en la ejecución de pruebas.<br />Los valores válidos son Framework35, Framework40, Framework45 y FrameworkUap10.<br />Si la plataforma de destino se especifica como **Framework35**, las pruebas se ejecutan en "modo de compatibilidad" de CLR 4.0.<br />Ejemplo: `/Framework:framework40`|
+|**/Framework: [*versión de Framework*]**|Versión de .NET de destino que se usará para la ejecución de pruebas.<br />Los valores válidos son Framework35, Framework40, Framework45 y FrameworkUap10.<br />Si la plataforma de destino se especifica como **Framework35**, las pruebas se ejecutan en "modo de compatibilidad" de CLR 4.0.<br />Ejemplo: `/Framework:framework40`|
 |**/TestCaseFilter:[*expresión*]**|Ejecuta pruebas que coinciden con la expresión dada.<br /><Expression\> tiene el formato <property\>=<value\>[\|<Expression\>].<br />Ejemplo: `/TestCaseFilter:"Priority=1"`<br />Ejemplo: `/TestCaseFilter:"TestCategory=Nightly|FullyQualifiedName=Namespace.ClassName.MethodName"`<br />La opción de línea de comandos **/TestCaseFilter** no se puede usar con la opción de línea de comandos **/Tests**. <br />Para obtener información sobre cómo crear y usar expresiones, vea [TestCase filter](https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md) (Filtro TestCase).|
 |**/?**|Muestra información de uso.|
 |**/Logger:[*uri o nombre descriptivo*]**|Especifica un registrador para resultados de pruebas.<br />Ejemplo: Para registrar resultados en un archivo de resultados de pruebas (TRX) de Visual Studio, use **/Logger:trx**.<br />Ejemplo: Para publicar resultados de pruebas en Team Foundation Server, use TfsPublisher:<br />**/logger:TfsPublisher;**<br />**Collection=<url del proyecto\>;**<br />**BuildName=<nombre de compilación\>;**<br />**TeamProject=<nombre del proyecto\>;**<br />**[;Platform=<Valor predeterminado "Cualquier CPU">]**<br />**[;Flavor=<Valor predeterminado "Depurar">]**<br />**[;RunTitle=<título\>]**|
@@ -53,7 +53,7 @@ En la siguiente tabla se muestran todas las opciones de *VSTest.Console.exe* jun
 |**/Blame**|Realiza un seguimiento de las pruebas a medida que se ejecutan y, si se bloquea el proceso de host de prueba, emite los nombres de las pruebas en su secuencia de ejecución hasta, e incluyendo, la prueba específica que se estaba ejecutando en el momento del bloqueo. Este resultado facilita el aislamiento de la prueba infractora y un diagnóstico más profundo. [Más información](https://github.com/Microsoft/vstest-docs/blob/master/docs/extensions/blame-datacollector.md).|
 |**/Diag:[*nombre de archivo*]**|Escribe registros de seguimiento de diagnóstico en el archivo especificado.|
 |**/ResultsDirectory:[*ruta de acceso*]**|Si no existe, el directorio de los resultados de la prueba se creará en la ruta de acceso especificada.<br />Ejemplo: `/ResultsDirectory:<pathToResultsDirectory>`|
-|**/ParentProcessId:[*IdentificadorProcesoPrincipal*]**|El identificador del proceso principal responsable de iniciar el proceso actual.|
+|**/ParentProcessId:[*IdentificadorProcesoPrincipal*]**|Id. de proceso del proceso principal responsable de iniciar el proceso actual.|
 |**/Port:[*puerto*]**|El puerto para la conexión de socket y la recepción de mensajes de eventos.|
 |**/Collect:[*dataCollector friendlyName*]**|Habilita el recopilador de datos para la ejecución de pruebas. [Más información](https://aka.ms/vstest-collect).|
 

@@ -13,63 +13,53 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b23de974e7d8587cc7185eb9bb01d029fc2dcc27
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3271befd714f1b07c357426a931d62a7a854cbec
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62569736"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744999"
 ---
 # <a name="code-analysis-project-designer"></a>Análisis de código, Diseñador de proyectos
-Contiene la herramienta de análisis de código que puede optar por ejecutar en su código. La herramienta notifica información sobre los ensamblados, como las infracciones de las reglas de programación y de diseño estipuladas en las instrucciones de diseño de Microsoft .NET Framework.
+
+Contiene la herramienta de análisis de código que puede optar por ejecutar en su código. La herramienta notifica información sobre los ensamblados, como las infracciones de las reglas de programación y diseño estipuladas en las instrucciones de diseño de .NET de Microsoft.
 
 ## <a name="uielement-list"></a>Lista de UIElement
- Habilitar análisis de código
 
+ Habilitar código pública\
  Habilita o deshabilita el análisis de código para el proyecto.
 
- Diseñar reglas
-
+ Diseño Rules\
  Habilita o deshabilita las reglas de diseño. También puede expandir esta entrada para habilitar o deshabilitar reglas individuales.
 
- Reglas de globalización
-
+ Globalización Rules\
  Habilita o deshabilita las reglas de globalización. También puede expandir esta entrada para habilitar o deshabilitar reglas individuales.
 
- Reglas de interoperabilidad
-
+ Interoperabilidad Rules\
  Habilita o deshabilita las reglas de interoperabilidad. También puede expandir esta entrada para habilitar o deshabilitar reglas individuales.
 
- Reglas de mantenimiento
-
+ Mantenimiento Rules\
  Habilita o deshabilita las reglas de mantenimiento. También puede expandir esta entrada para habilitar o deshabilitar reglas individuales.
 
- Reglas de movilidad
-
+ Movilidad Rules\
  Habilita o deshabilita las reglas de movilidad. También puede expandir esta entrada para habilitar o deshabilitar reglas individuales.
 
- Reglas de nomenclatura
-
+ Nomenclatura Rules\
  Habilita o deshabilita las reglas de nomenclatura. También puede expandir esta entrada para habilitar o deshabilitar reglas individuales.
 
- Reglas de rendimiento
-
+ Rendimiento Rules\
  Habilita o deshabilita las reglas de rendimiento. También puede expandir esta entrada para habilitar o deshabilitar reglas individuales.
 
- Reglas de portabilidad
-
+ Portabilidad Rules\
  Habilita o deshabilita las reglas de portabilidad. También puede expandir esta entrada para habilitar o deshabilitar reglas individuales.
 
- Reglas de confiabilidad
-
+ Confiabilidad Rules\
  Habilita o deshabilita las reglas de confiabilidad. También puede expandir esta entrada para habilitar o deshabilitar reglas individuales.
 
- Reglas de seguridad
-
+ Seguridad Rules\
  Habilita o deshabilita las reglas de seguridad. También puede expandir esta entrada para habilitar o deshabilitar reglas individuales.
 
- Reglas de uso
-
+ Uso Rules\
  Habilita o deshabilita las reglas de uso. También puede expandir esta entrada para habilitar o deshabilitar reglas individuales.
 
 ## <a name="see-also"></a>Vea también

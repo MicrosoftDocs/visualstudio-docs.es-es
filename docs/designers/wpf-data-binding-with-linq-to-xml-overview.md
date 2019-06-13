@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ef02735ab10d6223e9098a4fa03312507d961cb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 400686710e09c19a806493232d471a1c946a630d
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62843934"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715070"
 ---
 # <a name="wpf-data-binding-with-linq-to-xml-overview"></a>Información general de enlace de datos WPF con LINQ to XML
 
@@ -21,7 +21,7 @@ Este tema presenta las características de enlace de datos dinámicos en el espa
 
 ## <a name="xaml-and-linq-to-xml"></a>XAML y LINQ to XML
 
-El lenguaje XAML es un dialecto XML creado por Microsoft para admitir tecnologías de .NET Framework 3.0. Se usa en WPF para representar los elementos de la interfaz de usuario y las características relacionadas como, por ejemplo, el enlace de datos y eventos. En Windows Workflow Foundation, XAML se utiliza para representar la estructura del programa, como por ejemplo el control de programas (*flujos de trabajo*). XAML permite que los aspectos declarativos de una tecnología se separen del código de procedimiento relacionado que define el comportamiento más individualizado de un programa.
+El lenguaje de marcado de aplicaciones Extensible (XAML) es un dialecto XML creado por Microsoft para admitir tecnologías de. NET. Se usa en WPF para representar los elementos de la interfaz de usuario y las características relacionadas como, por ejemplo, el enlace de datos y eventos. En Windows Workflow Foundation, XAML se utiliza para representar la estructura del programa, como por ejemplo el control de programas (*flujos de trabajo*). XAML permite que los aspectos declarativos de una tecnología se separen del código de procedimiento relacionado que define el comportamiento más individualizado de un programa.
 
 XAML puede interactuar con LINQ to XML de dos grandes formas:
 

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 18527e9b45726dbd76f1e76f5d63976278800f6f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 91f811a169f9cffc9cf175b68a875c2999d3745d
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62791076"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744991"
 ---
 # <a name="application-page-project-designer-c"></a>Página de aplicación, Diseñador de proyectos (C#)
 
@@ -50,14 +50,18 @@ Para obtener acceso a esta propiedad mediante programación, vea <xref:VSLangPro
 
 **Marco de destino**
 
-Especifica la versión de .NET Framework a la que se destina la aplicación. Esta opción puede tener valores diferentes dependiendo de qué versiones de .NET Framework están instaladas en el equipo.
+Especifica la versión de .NET que los destinos de la aplicación. Esta opción puede tener valores diferentes dependiendo de qué versiones de .NET están instaladas en el equipo.
 
-El valor predeterminado corresponde a la plataforma de destino seleccionada al crear el proyecto.
+Para los proyectos de .NET Framework, el valor predeterminado coincide con la plataforma de destino que especificó cuando creó el proyecto.
+
+Para un proyecto que tiene como destino .NET Core, las versiones disponibles pueden aparecer como sigue:
+
+![Versiones de framework de destino para un proyecto .NET Core](../media/application-target-framework.png)
 
 > [!NOTE]
 > Los paquetes de requisitos previos incluidos en el [cuadro de diálogo Requisitos previos](../../ide/reference/prerequisites-dialog-box.md) se establecen automáticamente la primera vez que abre el cuadro de diálogo. Si posteriormente cambia la plataforma de destino del proyecto, debe seleccionar manualmente los requisitos previos para que coincidan con la nueva plataforma de destino.
 
-Para obtener más información, vea [Cómo: Usar como destino una versión de .NET Framework](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) e [Información general sobre la compatibilidad con múltiples versiones (multi-targeting) en Visual Studio](../../ide/visual-studio-multi-targeting-overview.md).
+Para obtener más información, vea [Cómo: Una versión de .NET Framework de destino](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) y [la plataforma de destino de la información general sobre](../../ide/visual-studio-multi-targeting-overview.md).
 
 **Tipo de salida**
 
@@ -77,9 +81,9 @@ Para obtener más información sobre los redireccionamientos, vea [Redirecting a
 
 **Objeto de inicio**
 
-Define el punto de entrada que se llamará cuando se cargue la aplicación. Normalmente, esto se establece en el formulario principal de la aplicación o en el procedimiento `Main` que debe ejecutarse cuando se inicia la aplicación. Dado que las bibliotecas de clases no tienen un punto de entrada, su única opción para esta propiedad es **(Sin establecer)**.
+Define el punto de entrada que se llamará cuando se cargue la aplicación. Normalmente, esto se establece en el formulario principal de la aplicación o en el procedimiento `Main` que debe ejecutarse cuando se inicia la aplicación. Dado que las bibliotecas de clases no tienen un punto de entrada, su única opción para esta propiedad es **(Sin establecer)** .
 
-De forma predeterminada, en un proyecto de aplicación de WPF, esta opción está establecida en **(Sin establecer)**. La otra opción es \[projectname].App. En un proyecto de WPF, debe establecer el URI de inicio para cargar un recurso de UI cuando se inicia la aplicación. Para ello, abra el archivo *Application.xaml* del proyecto y establezca la propiedad `StartupUri` en un archivo *.xaml* del proyecto, como *Window1.xaml*. Para obtener una lista de elementos raíz aceptables, vea <xref:System.Windows.Application.StartupUri%2A>. También tiene que definir un método `public static void Main()` en una clase del proyecto. Esta clase aparecerá en la lista **Objeto de inicio** como *ProjectName.ClassName*. Después, puede seleccionar la clase como el objeto de inicio.
+De forma predeterminada, en un proyecto de aplicación de WPF, esta opción está establecida en **(Sin establecer)** . La otra opción es \[projectname].App. En un proyecto de WPF, debe establecer el URI de inicio para cargar un recurso de UI cuando se inicia la aplicación. Para ello, abra el archivo *Application.xaml* del proyecto y establezca la propiedad `StartupUri` en un archivo *.xaml* del proyecto, como *Window1.xaml*. Para obtener una lista de elementos raíz aceptables, vea <xref:System.Windows.Application.StartupUri%2A>. También tiene que definir un método `public static void Main()` en una clase del proyecto. Esta clase aparecerá en la lista **Objeto de inicio** como *ProjectName.ClassName*. Después, puede seleccionar la clase como el objeto de inicio.
 
 Para obtener más información, vea [/main (Opciones del compilador de C#)](/dotnet/csharp/language-reference/compiler-options/main-compiler-option). Para obtener acceso a esta propiedad mediante programación, vea <xref:VSLangProj.ProjectProperties.StartupObject%2A>.
 
@@ -115,4 +119,4 @@ Selecciona una opción de generación de manifiesto cuando la aplicación se eje
 
 Seleccione este botón de radio si va a proporcionar un archivo de recursos para el proyecto. Al seleccionar esta opción se deshabilitan las opciones **Icono** y **Manifiesto**.
 
-Escriba un nombre de ruta o use el botón Examinar (**...**) para agregar un archivo de recursos de Win32 al proyecto.
+Escriba un nombre de ruta o use el botón Examinar ( **...** ) para agregar un archivo de recursos de Win32 al proyecto.

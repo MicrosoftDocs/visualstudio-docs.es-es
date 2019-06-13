@@ -11,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 38cf992612126e8d24f05b23efd8af7fff4b4a74
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7dfcc4a01dfd5e9b63dc16afa0c2b3286419c193
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62966685"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820657"
 ---
 # <a name="welcome-to-the-visual-studio-ide--visual-basic"></a>Le damos la bienvenida al IDE de Visual Studio | Visual Basic
 
@@ -30,7 +30,7 @@ El *entorno de desarrollo integrado* de Visual Studio es un panel de inicio crea
 
 ::: moniker range=">=vs-2019"
 
-[![](media/vs-2019/ide-overview.png "El IDE de Visual Studio")](media/vs-2019/ide-overview.png#lightbox)
+[![El IDE de Visual Studio de 2019](media/vs-2019/ide-overview.png)](media/vs-2019/ide-overview.png#lightbox)
 
 ::: moniker-end
 
@@ -283,7 +283,7 @@ Vamos a profundizar y crear un programa sencillo.
 
    En el cuadro de diálogo **Nuevo proyecto** se muestran varias *plantillas* de proyecto. Una plantilla contiene los archivos básicos y la configuración necesaria para un tipo de proyecto concreto.
 
-1. Elija la categoría **.NET Core** bajo **Visual Basic** y, después, elija la plantilla **Aplicación de consola (.NET Core)**. En el cuadro de texto **Nombre**, escriba **HelloWorld** y después haga clic en el botón **Aceptar**.
+1. Elija la categoría **.NET Core** bajo **Visual Basic** y, después, elija la plantilla **Aplicación de consola (.NET Core)** . En el cuadro de texto **Nombre**, escriba **HelloWorld** y después haga clic en el botón **Aceptar**.
 
    ![Plantilla de aplicación de .NET Core](media/overview-npd.png)
 

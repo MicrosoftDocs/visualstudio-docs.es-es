@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f6f6bd03a47500c127360afd2d2a6ae6b62ee2e5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 74694528f6380896d47b9665d9e617098ef28620
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62793557"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746865"
 ---
 # <a name="create-solutions-and-projects"></a>Crear soluciones y proyectos
 
@@ -61,11 +61,11 @@ Si tiene un archivo que se aplica a varios proyectos, como un archivo Léame par
 
 ## <a name="create-a-net-project-that-targets-a-specific-version-of-the-net-framework"></a>Crear un proyecto .NET que tenga como destino una versión concreta de .NET Framework
 
-Cuando cree un proyecto, puede especificar la versión específica de .NET Framework que quiere que use el proyecto.
+Al crear un proyecto de .NET Framework, puede especificar una versión específica de .NET Framework que desea que el proyecto para usar. (Al crear un proyecto .NET Core, no especifique una versión de .NET framework).
 
 ::: moniker range="vs-2017"
 
-Para especificar una versión de .NET Framework, seleccione el menú desplegable **Plataforma** en el cuadro de diálogo **Nuevo proyecto**.
+Para especificar una versión de .NET Framework, elija el **Framework** menú desplegable en el **nuevo proyecto** cuadro de diálogo.
 
 ![Desplegable Plataforma en el cuadro de diálogo Nuevo proyecto](./media/vside-newproject-framework.png)
 
@@ -76,7 +76,7 @@ Para especificar una versión de .NET Framework, seleccione el menú desplegable
 
 ::: moniker range=">=vs-2019"
 
-Para especificar una versión de .NET Framework, elija el menú desplegable **Plataforma** de la página **Crear un proyecto**.
+Para especificar una versión de .NET Framework, elija el **Framework** menú desplegable en el **crear un nuevo proyecto** página.
 
 ![Selector de Framework en la configuración del nuevo proyecto](media/vs-2019/configure-new-project-framework.png)
 

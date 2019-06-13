@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f09afb11708afb310a3dcd52490f5b2bcda9d79b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6bdc9148b406d9d3806e5eb64f223dccb4b7c0b7
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62790933"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744976"
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>Elegir elementos del Cuadro de herramientas, componentes de WPF
 
@@ -31,7 +31,7 @@ En esta pestaña del cuadro de diálogo **Elegir elementos del cuadro de herrami
 - Cuando se desactive la casilla junto a un componente, el icono correspondiente se quitará del **Cuadro de herramientas**.
 
     > [!NOTE]
-    > Los componentes de .NET Framework instalados en el equipo siguen estando disponibles aunque no se muestren sus iconos en el **cuadro de herramientas**.
+    > Los componentes de .NET instalados en el equipo siguen estando disponibles si se muestran iconos para ellos en el **cuadro de herramientas**.
 
 Las columnas de la pestaña **Componentes WPF** contienen la siguiente información:
 
@@ -41,15 +41,15 @@ Enumera los nombres de los controles de WPF para los que existen entradas en el 
 
 **Espacio de nombres**
 
-Muestra la jerarquía del espacio de nombres de la [API de clases de .NET Framework](/dotnet/api/?view=netframework-4.7) que define la estructura del componente. Ordene esta columna para mostrar los componentes disponibles en cada espacio de nombres de .NET Framework instalado en el equipo.
+Muestra la jerarquía de la [.NET API](/dotnet/api/?view=netframework-4.7) espacio de nombres que define la estructura del componente. Ordene esta columna para mostrar los componentes disponibles dentro de cada espacio de nombres de .NET instalada en el equipo.
 
 **Nombre del ensamblado**
 
-Muestra el nombre del ensamblado de .NET Framework que incluye el espacio de nombres de cada componente. Ordene esta columna para mostrar los espacios de nombres contenidos en cada ensamblado de .NET Framework instalado en el equipo.
+Muestra el nombre del ensamblado .NET que incluye el espacio de nombres para cada componente. Ordene esta columna para mostrar los espacios de nombres contenidos en cada ensamblado de .NET instalada en el equipo.
 
 **Directorio**
 
-Muestra la ubicación del ensamblado de .NET Framework. La ubicación predeterminada de todos los ensamblados es la caché global de ensamblados. Para obtener más información sobre la caché global de ensamblados, consulte [Trabajar con ensamblados y la caché global de ensamblados](/dotnet/framework/app-domains/working-with-assemblies-and-the-gac).
+Muestra la ubicación del ensamblado. NET. La ubicación predeterminada de todos los ensamblados es la caché global de ensamblados. Para obtener más información sobre la caché global de ensamblados, consulte [Trabajar con ensamblados y la caché global de ensamblados](/dotnet/framework/app-domains/working-with-assemblies-and-the-gac).
 
 ## <a name="uielement-list"></a>Lista de UIElement
 
