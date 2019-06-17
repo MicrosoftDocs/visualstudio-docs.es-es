@@ -28,7 +28,7 @@
           href: how-to-run-code-analysis-manually-for-managed-code.md
         - name: Configuración
           items:
-            - name: Configurar análisis de código binario analizadores
+            - name: Configuración del análisis de código para analizadores binarios
               href: how-to-configure-code-analysis-for-a-managed-code-project.md
             - name: Habilitar análisis de código automático
               href: how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md
@@ -40,7 +40,7 @@
               href: in-source-suppression-overview.md
             - name: Suprimir advertencias de análisis de código para código generado
               href: how-to-suppress-code-analysis-warnings-for-generated-code.md
-        - name: Errores de aplicación de análisis de código
+        - name: Errores de la aplicación de análisis de código
           items:
             - name: Errores de directiva de análisis de código
               href: code-analysis-policy-errors.md
@@ -115,7 +115,7 @@
               href: fxcop-analyzer-options.md
         - name: Preguntas más frecuentes
           href: fxcop-analyzers-faq.md
-    - name: Migrar de análisis estático a los analizadores de FxCop
+    - name: Migración de análisis estáticos a analizadores FxCop
       items:
         - name: Información general
           href: fxcop-analyzers.yml
@@ -127,7 +127,7 @@
           href: using-rule-sets-to-group-code-analysis-rules.md
         - name: Conjuntos de reglas para paquetes de analizador
           href: analyzer-rule-sets.md
-        - name: Configurar conjuntos de reglas
+        - name: Configuración de conjuntos de reglas
           href: how-to-configure-code-analysis-for-a-managed-code-project.md
         - name: Configuración del análisis de código para una aplicación web ASP.NET
           href: how-to-configure-code-analysis-for-an-aspnet-web-application.md
@@ -137,13 +137,13 @@
           href: working-in-the-code-analysis-rule-set-editor.md
     - name: Directivas de inserción en el repositorio
       items:
-        - name: Cómo crear o actualizar las directivas de protección
+        - name: Creación y actualización de directivas de inserción en el repositorio
           href: how-to-create-or-update-standard-code-analysis-check-in-policies.md
-        - name: Implementar directivas de protección de análisis de código
+        - name: Implementación de directivas de inserción en el repositorio de análisis de código
           href: implementing-custom-code-analysis-check-in-policies-for-managed-code.md
-        - name: Exigir código mantenible
+        - name: Exigencia de código fácil de mantener
           href: how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy.md
-        - name: Sincronizar conjuntos de reglas de proyecto con la directiva de protección
+        - name: Sincronización de conjuntos de reglas de proyecto con la directiva de inserción en el repositorio
           href: how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy.md
         - name: Compatibilidad de versiones
           href: version-compatibility-for-code-analysis-check-in-policies.md
@@ -152,9 +152,9 @@
         - name: Información general
           displayName: code metrics
           href: code-metrics-values.md
-        - name: Generar datos de métricas de código
+        - name: Generación de datos de las métricas de código
           href: how-to-generate-code-metrics-data.md
-        - name: Trabajar con datos de métricas de código
+        - name: Trabajo con datos de las métricas de código
           href: working-with-code-metrics-data.md
     - name: Referencia
       items:
@@ -794,34 +794,34 @@
       href: demo-sample.md
     - name: Usar los comprobadores de C++ Core Guidelines
       href: using-the-cpp-core-guidelines-checkers.md
-    - name: Establecer propiedades de análisis de código
+    - name: Establecimiento de propiedades de análisis de código
       href: how-to-set-code-analysis-properties-for-c-cpp-projects.md
     - name: Conjuntos de reglas para código C++
       href: using-rule-sets-to-specify-the-cpp-rules-to-run.md
-    - name: Usar anotaciones de SAL para reducir defectos de código
+    - name: Uso de anotaciones SAL para reducir defectos de código
       items:
         - name: Información general
           displayName: SAL annotations
           href: using-sal-annotations-to-reduce-c-cpp-code-defects.md
         - name: Descripción de SAL
           href: understanding-sal.md
-        - name: Anotar parámetros de función y valores devueltos
+        - name: Anotación de parámetros de función y valores devueltos
           href: annotating-function-parameters-and-return-values.md
-        - name: Anotar comportamiento de la función
+        - name: Anotación del comportamiento de las funciones
           href: annotating-function-behavior.md
-        - name: Anotar structs y clases
+        - name: Anotación de clases y elementos struct
           href: annotating-structs-and-classes.md
-        - name: Anotar comportamiento de bloqueo
+        - name: Anotación del comportamiento de bloqueo
           href: annotating-locking-behavior.md
-        - name: Especifique cuándo y dónde se aplica una anotación
+        - name: Especificación de cuándo y dónde se aplica una anotación
           href: specifying-when-and-where-an-annotation-applies.md
         - name: Funciones intrínsecas
           href: intrinsic-functions.md
-        - name: Los procedimientos recomendados y ejemplos (SAL)
+        - name: Procedimientos recomendados y ejemplos (SAL)
           href: best-practices-and-examples-sal.md
-    - name: Especificar información de código adicional mediante _Analysis_assume
+    - name: Especificación de información de código adicional mediante _Analysis_assume
       href: how-to-specify-additional-code-information-by-using-analysis-assume.md
-    - name: C++Advertencias del corrector directrices principales
+    - name: Advertencias del comprobador de C++ Core Guidelines
       items:
         - name: Información general
           displayName: C++ core guidelines checker warnings
@@ -980,7 +980,7 @@
           href: C26497.md
         - name: C26498
           href: C26498.md
-    - name: C /C++ advertencias
+    - name: Advertencias de C/C++
       items:
         - name: Información general
           displayName: C++ warnings
