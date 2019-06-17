@@ -12,12 +12,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: f23dd3821744687d4f595ad404bc076e1d05af7b
-ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
+ms.openlocfilehash: 1d3c80f0780dcd577356de69944dcc76cca7133c
+ms.sourcegitcommit: ab06cde69d862440b4277bcd9bf02e7b50593a1b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66835916"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67132115"
 ---
 # <a name="how-to-specify-additional-code-information-by-using-analysisassume"></a>Procedimiento Especificar información de código adicional mediante _Analysis_assume
 
@@ -42,18 +42,18 @@ El siguiente código utiliza `_Analysis_assume` para corregir la advertencia de 
 
 using namespace vc_attributes;
 
-// calls free and sets ch to null
-void FreeAndNull(char* ch);
-
 //requires pc to be null
 void f([Pre(Null=Yes)] char* pc);
 
-void test( )
+// calls free and sets ch to null
+void FreeAndNull(char** ch);
+
+void test()
 {
-  char *pc = (char*)malloc(5);
-  FreeAndNull(pc);
-  _Analysis_assume(pc == NULL);
-  f(pc);
+    char pc = (char)malloc(5);
+    FreeAndNull(&pc);
+    __analysis_assume(pc == NULL);
+    f(pc);
 }
 ```
 

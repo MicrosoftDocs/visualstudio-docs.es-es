@@ -16,15 +16,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e3f406ac338edfc79c3d8fd802d1cb43d0224f21
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c07557fa64f86349a3baf8956d99b937ceab9f5a
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62850392"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043431"
 ---
 # <a name="error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer"></a>Error: El servicio Visual Studio Remote Debugger del equipo de destino no se puede conectar a este equipo
-Este error significa que el servicio del depurador remoto de Visual Studio se ejecuta con una cuenta de usuario que no se puede autenticar cuando intenta conectarse al equipo desde el que se realiza la depuración.
+Este error significa que el servicio del depurador remoto se está ejecutando bajo una cuenta de usuario que no se puede autenticar cuando intenta conectarse al equipo que está depurando en. Este error puede producirse cuando el motor de depuración heredado de depuración remota y el depurador remoto se ejecuta como un servicio.
 
  En la tabla siguiente se muestran las cuentas que pueden tener acceso al equipo:
 

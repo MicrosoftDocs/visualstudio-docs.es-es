@@ -14,9 +14,7 @@
 ### [Obtención y administración de claves de producto](product-keys.md)
 ### [Visual Studio con GitHub Enterprise](access-github.md)
 ### [Beneficios para los suscriptores](subscriber-benefits.md)
-### Visual Studio Dev Essentials
-#### [Unión a Visual Studio Dev Essentials](join-dev-essentials.md)
-#### [Rechazo de Visual Studio Dev Essentials](leave-vsde.md)
+### [Visual Studio Dev Essentials](join-dev-essentials.md)
 ## Uso de beneficios para los suscriptores
 ### Herramientas
 #### [IDE de Visual Studio](vs-ide-benefit.md)
@@ -33,7 +31,6 @@
 #### [Cuenta de desarrollador de Windows](vs-windows-dev.md)
 #### [Suscripción de Office 365](vs-office365.md)
 #### [Power BI Pro](vs-pbi.md)
-#### [Modern Requirements4TFS](vs-modernreq.md)
 #### [Pago por uso de Azure](vs-azure-payg.md)
 ### [Desarrollo profesional](professional-development.md)
 #### [Aprendizaje de LinkedIn](vs-linkedin-learning.md)
