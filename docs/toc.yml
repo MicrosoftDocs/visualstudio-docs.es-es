@@ -226,11 +226,7 @@
             - name: 'Especificar un icono de aplicación (Visual Basic, C#)'
               href: ide/how-to-specify-an-application-icon-visual-basic-csharp.md
             - name: Establecimiento de la plataforma de destino
-              items:
-                - name: Información general sobre la compatibilidad con múltiples versiones
-                  href: ide/visual-studio-multi-targeting-overview.md
-                - name: Uso de una versión de .NET Framework como destino
-                  href: ide/how-to-target-a-version-of-the-dotnet-framework.md
+              href: ide/visual-studio-multi-targeting-overview.md
             - name: Creación de plantillas
               items:
                 - name: Crear plantillas de proyecto y elemento
@@ -405,6 +401,10 @@
                       href: ide/reference/remove-unreachable-code.md
                     - name: Cambiar nombre
                       href: ide/reference/rename.md
+                    - name: Instrucciones de división o combinación "if".
+                      href: ide/reference/split-or-merge-if-statement.md
+                    - name: Sincronización de espacio de nombres y nombre de carpeta
+                      href: ide/reference/sync-namespace-and-folder-name.md
                     - name: Sincronizar tipo y nombre de archivo
                       href: ide/reference/sync-type-and-file.md
                     - name: Usar un tipo explícito
