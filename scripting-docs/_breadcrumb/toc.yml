@@ -12,7 +12,7 @@
           items: null
         - name: Interfaces de Windows Scripting
           tocHref: /scripting/winscript/
-          topicHref: /scripting/winscript/windows-scripting-interfaces
+          topicHref: /scripting/winscript/windows-script-interfaces
           items:
             - name: Referencia
               tocHref: /scripting/winscript/reference/
