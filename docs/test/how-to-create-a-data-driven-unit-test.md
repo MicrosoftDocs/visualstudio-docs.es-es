@@ -179,4 +179,4 @@ Cuando el método de prueba se ha corregido y la prueba se ejecuta de nuevo, la 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert?displayProperty=fullName>
 - [Haga una prueba unitaria de su código](../test/unit-test-your-code.md)
 - [Ejecutar pruebas unitarias con el Explorador de pruebas](../test/run-unit-tests-with-test-explorer.md)
-- [Escribir pruebas unitarias para .NET con el marco de pruebas unitarias de Microsoft](../test/unit-test-your-code.md)
+- [Escribir pruebas unitarias para .NET Framework con el Framework de pruebas unitarias de Microsoft](../test/unit-test-your-code.md)

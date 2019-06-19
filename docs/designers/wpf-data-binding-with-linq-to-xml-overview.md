@@ -21,7 +21,7 @@ Este tema presenta las características de enlace de datos dinámicos en el espa
 
 ## <a name="xaml-and-linq-to-xml"></a>XAML y LINQ to XML
 
-El lenguaje de marcado de aplicaciones Extensible (XAML) es un dialecto XML creado por Microsoft para admitir tecnologías de. NET. Se usa en WPF para representar los elementos de la interfaz de usuario y las características relacionadas como, por ejemplo, el enlace de datos y eventos. En Windows Workflow Foundation, XAML se utiliza para representar la estructura del programa, como por ejemplo el control de programas (*flujos de trabajo*). XAML permite que los aspectos declarativos de una tecnología se separen del código de procedimiento relacionado que define el comportamiento más individualizado de un programa.
+El lenguaje XAML es un dialecto XML creado por Microsoft para admitir tecnologías de .NET. Se usa en WPF para representar los elementos de la interfaz de usuario y las características relacionadas como, por ejemplo, el enlace de datos y eventos. En Windows Workflow Foundation, XAML se utiliza para representar la estructura del programa, como por ejemplo el control de programas (*flujos de trabajo*). XAML permite que los aspectos declarativos de una tecnología se separen del código de procedimiento relacionado que define el comportamiento más individualizado de un programa.
 
 XAML puede interactuar con LINQ to XML de dos grandes formas:
 

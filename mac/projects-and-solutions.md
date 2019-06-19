@@ -14,30 +14,30 @@ ms.locfileid: "66820961"
 ---
 # <a name="projects-and-solutions-in-visual-studio-for-mac"></a>Proyectos y soluciones en Visual Studio para Mac
 
-En este artículo proporciona información general sobre la *proyecto* y *solución* conceptos en Visual Studio para Mac.
+En este artículo se proporciona información general sobre los conceptos de *proyecto* y *solución* de Visual Studio para Mac.
 
 > [!NOTE] 
-> En este tema se aplica a Visual Studio para Mac. Para Visual Studio en Windows, consulte [proyectos y soluciones en Visual Studio](/visualstudio/ide/solutions-and-projects-in-visual-studio).
+> Este tema se aplica a Visual Studio para Mac. En el caso de Visual Studio para Windows, vea [Soluciones y proyectos en Visual Studio](/visualstudio/ide/solutions-and-projects-in-visual-studio).
 
 ## <a name="projects"></a>Proyectos
 
-Al crear una nueva aplicación, el sitio Web, etc. en Visual Studio para Mac, para empezar un proyecto. El proyecto contiene todos los archivos necesarios (código fuente, imágenes, archivos de datos, etc.) que son necesarios para compilar el archivo ejecutable, biblioteca o sitio Web.
+Al crear una nueva aplicación, un sitio web, etc. en Visual Studio para Mac, se comienza con un proyecto. El proyecto contiene todos los archivos necesarios (código fuente, imágenes, archivos de datos, etc.) para compilar el archivo ejecutable, la biblioteca o el sitio web.
 
-Un proyecto se define mediante un archivo (por ejemplo, `.csproj` para C# proyectos) que contiene código xml que define el archivo y la jerarquía de carpetas, rutas de acceso a archivos y configuraciones específicas del proyecto, como la configuración de compilación.
+Un proyecto se define mediante un archivo (por ejemplo, `.csproj` para proyectos de C#) que contiene XML que define la jerarquía de carpetas y archivos, las rutas de acceso a los archivos y las configuraciones específicas del proyecto, como la de compilación.
 
-Cuando se carga un proyecto de Visual Studio para Mac, el panel de solución utiliza el archivo de proyecto para mostrar los archivos y carpetas en el proyecto. Durante la compilación, MSBuild lee la configuración del archivo de proyecto para crear el ejecutable.
+Cuando Visual Studio para Mac carga un proyecto, el Panel de solución usa el archivo de proyecto para mostrar los archivos y las carpetas del proyecto. Durante la compilación, MSBuild lee la configuración del archivo de proyecto para crear el archivo ejecutable.
 
 ## <a name="solutions"></a>Soluciones
 
-Un *solución* es un contenedor que agrupa junto uno o más proyectos relacionados. Las soluciones se describen mediante un archivo de texto (extensión `.sln`) con su propio formato único; no se está diseñada para editarse manualmente.
+Una *solución* es un contenedor que agrupa uno o más proyectos relacionados. Las soluciones se describen mediante un archivo de texto (extensión `.sln`) con su propio formato único; no están diseñadas para modificarse de forma manual.
 
-## <a name="managing-projects-in-the-solution-pad"></a>Administración de proyectos en el panel de solución
+## <a name="managing-projects-in-the-solution-pad"></a>Administración de proyectos en el Panel de solución
 
-Una vez que se ha creado un proyecto o se ha cargado, puede usar para ver y administrar el proyecto o solución y los archivos contenidos en el panel de solución. La siguiente ilustración muestra el panel de solución con una solución .NET Core que contiene dos proyectos:
+Una vez que un proyecto se ha creado o se ha cargado, puede usar el Panel de solución para ver y administrar el proyecto o la solución y los archivos que incluye. En la siguiente ilustración se muestra el Panel de solución con una solución de .NET Core que contiene dos proyectos:
 
 ![Solución de ejemplo con varios proyectos](media/solution-example.png)
 
-Puede administrar las propiedades de proyectos y soluciones hace doble clic en el nombre del proyecto o solución, o con el botón secundario y elegir **opciones**.
+Puede administrar las propiedades de proyectos y soluciones si hace doble clic en el nombre del proyecto o la solución o si hace clic con el botón derecho y selecciona **Opciones**.
 
 Se proporciona más información sobre estas opciones en el artículo [Administrar propiedades de soluciones y proyectos](managing-solutions-and-project-properties.md).
 

@@ -43,7 +43,7 @@ Estas interfaces están contenidas en el espacio de nombres <xref:Microsoft.Visu
 
 1. En **Propiedades**, seleccione la pestaña **Aplicación**.
 
-1. En el **.NET framework de destino** lista desplegable, seleccione .NET Framework 4 (o posterior).
+1. En la lista desplegable **Marco de trabajo de destino**, seleccione .NET Framework 4 (o posterior).
 
 1. Aparecerá el cuadro de diálogo **Cambio de plataforma de destino**.
 

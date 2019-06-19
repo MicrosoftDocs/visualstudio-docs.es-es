@@ -34,7 +34,7 @@ Puede utilizar propiedad de la sesión de rendimiento **Método** para especific
 |----------------------------| - |
 | **Muestreo de la CPU** | Recopila estadísticas de la aplicación que son útiles para el análisis inicial y para analizar problemas de utilización de CPU. |
 | **Instrumentación** | Recopila datos de control de tiempo detallados que son útiles para un análisis enfocado y para analizar problemas de rendimiento de entrada/salida. |
-| **Asignación de memoria de .NET** | Recopila datos de asignación de memoria de .NET Framework mediante el método de generación de perfiles de muestreo. |
+| **Asignación de memoria de .NET** | Recopila datos de asignación de memoria de .NET Framework con el método de generación de perfiles de muestreo. |
 | **Simultaneidad** | Recopila datos de contención de recursos numéricos. |
 
 ## <a name="performance-explorer"></a>Explorador de rendimiento
@@ -75,7 +75,7 @@ Puede utilizar propiedad de la sesión de rendimiento **Método** para especific
 
 4. Haga clic en **Muestreo** o **Instrumentación**.
 
-5. Haga clic en **información de asignación de objetos de .NET recopile** para recopilar el tamaño y número de asignaciones de objetos de .NET Framework.
+5. Haga clic en **Recopilar información de asignación de objetos .NET** para recopilar el tamaño y el número de asignaciones de objetos de .NET Framework.
 
 6. Haga clic en **Recopilar también la información de duración de los objetos .NET** para recopilar datos sobre las generaciones de recolección de elementos no utilizados en que se reclama la memoria del objeto (opcional).
 

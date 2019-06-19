@@ -18,17 +18,17 @@ ms.locfileid: "66746304"
 ---
 # <a name="input-generation-using-dynamic-symbolic-execution"></a>Generación de entradas con la ejecución simbólica dinámica
 
-IntelliTest genera entradas para las [pruebas unitarias parametrizadas](test-generation.md#parameterized-unit-testing) analizando las condiciones de rama en el programa. Las entradas de prueba se eligen basándose en si pueden desencadenar nuevos comportamientos de rama del programa. El análisis es un proceso incremental. Afina un predicado `q: I -> {true, false}` formal a través de los parámetros de entrada de prueba `I`. `q` representa el conjunto de comportamientos que IntelliTest ya ha observado. Inicialmente, `q := false`, ya que nada ha observado todavía.
+IntelliTest genera entradas para las [pruebas unitarias parametrizadas](test-generation.md#parameterized-unit-testing) analizando las condiciones de rama en el programa. Las entradas de prueba se eligen basándose en si pueden desencadenar nuevos comportamientos de rama del programa. El análisis es un proceso incremental. Refina un predicado `q: I -> {true, false}` a través de los parámetros de entrada de prueba formales `I`. `q` representa el conjunto de comportamientos que IntelliTest ya ha observado. Inicialmente, `q := false`, ya que no se ha observado nada todavía.
 
 Los pasos del bucle son:
 
-1. IntelliTest determina entradas `i` que `q(i)=false` mediante un [solucionador](#constraint-solver). Mediante la construcción, la entrada `i` tomará una ruta de ejecución no vista anteriormente. Inicialmente, esto significa que `i` puede ser cualquier entrada, porque aún se ha detectado ninguna ruta de acceso de ejecución.
+1. IntelliTest determina entradas `i` como `q(i)=false` con un [solucionador de restricciones](#constraint-solver). Mediante la construcción, la entrada `i` toma una ruta de ejecución no vista anteriormente. Inicialmente, esto significa que `i` puede ser cualquier entrada, porque todavía no se ha detectado ninguna ruta de ejecución.
 
-1. IntelliTest ejecuta la prueba con el elegido al entrada `i`y supervisa la ejecución de la prueba y el programa sometido a prueba.
+1. IntelliTest ejecuta la prueba con la entrada `i` elegida y supervisa la ejecución de la prueba y el programa sometido a prueba.
 
-1. Durante la ejecución, el programa toma una ruta concreta que se determina mediante todas las ramas condicionales del programa. El conjunto de todas las condiciones que determinan la ejecución se denomina el *condición de ruta de acceso*, escrito como el predicado `p: I -> {true, false}` a través de los parámetros de entrada formales. IntelliTest calcula una representación de este predicado.
+1. Durante la ejecución, el programa toma una ruta concreta que se determina mediante todas las ramas condicionales del programa. El conjunto de todas las condiciones que determinan la ejecución se denomina *condición de ruta*, escrita como el predicado `p: I -> {true, false}` a través de los parámetros de entrada formales. IntelliTest calcula una representación de este predicado.
 
-1. IntelliTest establece `q := (q or p)`. En otras palabras, registra el hecho de que ha visto la ruta de acceso representada por `p`.
+1. IntelliTest establece `q := (q or p)`. En otras palabras, registra el hecho de que ha visto la ruta representada por `p`.
 
 1. Vaya al paso 1.
 
@@ -79,7 +79,7 @@ Si el tipo no es visible o los campos no son [visibles](#visibility), IntelliTes
 
 ## <a name="visibility"></a>Visibility
 
-.NET tiene un modelo de visibilidad elaborado: tipos, métodos, campos y otros miembros pueden ser **privada**, **pública**, **interno**y mucho más.
+.NET tiene un modelo de visibilidad elaborado: tipos, métodos, campos y otros miembros pueden ser **privados**, **públicos**, **internos**, etc.
 
 Cuando IntelliTest genera pruebas, intentará realizar solo acciones (como llamar a los constructores, métodos y campos de configuración) que sean legales respecto a las reglas de visibilidad de .NET desde el contexto de las pruebas generadas.
 
@@ -98,11 +98,11 @@ Las reglas son las siguientes:
 
 ## <a name="parameterized-mocks"></a>Objetos ficticios parametrizados
 
-¿Cómo se puede probar un método que tiene un parámetro de un tipo de interfaz? ¿O de una clase no sealed? IntelliTest no sabe que implementaciones se usarán más tarde cuando se llame a este método. Y quizás ni siquiera existe una implementación real disponible en tiempo de prueba.
+¿Cómo se puede probar un método que tiene un parámetro de un tipo de interfaz? ¿O de una clase no sealed? IntelliTest no sabe que implementaciones se usarán más tarde cuando se llame a este método. Y, quizás, ni siquiera haya una implementación real disponible en el momento de la prueba.
 
 La respuesta convencional es usar *objetos ficticios* con un comportamiento explícito.
 
-Un objeto ficticio implementa una interfaz (o amplía una clase no sealed). No representa una implementación real, sino solo un acceso directo que permite la ejecución de pruebas con el objeto ficticio. Su comportamiento se define manualmente como parte de cada caso de prueba que se utiliza. Existen muchas herramientas que facilitan la definición de objetos ficticios y su comportamiento esperado, pero este comportamiento todavía debe definirse manualmente.
+Un objeto ficticio implementa una interfaz (o amplía una clase no sealed). No representa una implementación real, sino solo un acceso directo que permite la ejecución de pruebas con el objeto ficticio. Su comportamiento se define manualmente como parte de cada caso de prueba donde se usa. Existen muchas herramientas que facilitan la definición de objetos ficticios y su comportamiento esperado, pero este comportamiento todavía debe definirse manualmente.
 
 En lugar de valores codificados de forma rígida en objetos ficticios, IntelliTest puede generar los valores. Igual que permite las [pruebas unitarias parametrizadas](test-generation.md#parameterized-unit-testing), IntelliTest también permite los objetos ficticios parametrizados.
 

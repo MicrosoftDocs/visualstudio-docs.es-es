@@ -22,7 +22,7 @@ ms.locfileid: "66747753"
 ---
 # <a name="toolbox-components-tab"></a>Cuadro de herramientas, pestaña Componentes
 
-Muestra los componentes que puede agregar a diseñadores de Visual Basic y C# para Windows Forms. Además de los componentes de .NET que se incluyen con Visual Studio, como el <xref:System.Messaging.MessageQueue> y <xref:System.Diagnostics.EventLog> componentes, puede agregar los componentes propios o de terceros a esta pestaña.
+Muestra los componentes que puede agregar a diseñadores de Visual Basic y C# para Windows Forms. Además de los componentes de .NET que se incluyen con Visual Studio, como <xref:System.Messaging.MessageQueue> y <xref:System.Diagnostics.EventLog>, puede agregar sus propios componentes o de terceros a esta pestaña.
 
 Para que se muestre esta pestaña, abra el diseñador de Windows Forms. Seleccione **Vista** > **Cuadro de herramientas**. En el **Cuadro de herramientas**, seleccione la pestaña **Componentes**.
 

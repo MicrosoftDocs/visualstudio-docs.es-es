@@ -45,7 +45,7 @@ La excepción <xref:Microsoft.VisualStudio.TestTools.UnitTesting.AssertFailedExc
 
 Si escribe una nueva clase de excepción de aserción, hereda de la clase base <xref:Microsoft.VisualStudio.TestTools.UnitTesting.UnitTestAssertException> para facilitar identificar la excepción como un error de aserción en lugar de una excepción inesperada iniciada desde el código de producción o de prueba.
 
-Para comprobar que realmente se produce una excepción que espera es iniciada por un método en el código de aplicación, use el <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsException%2A?displayProperty=nameWithType> método.
+Para comprobar que una excepción que espera que inicie un método en el código de la aplicación se inicia realmente, use el método <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.ThrowsException%2A?displayProperty=nameWithType>.
 
 ## <a name="see-also"></a>Vea también
 

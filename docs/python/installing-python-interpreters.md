@@ -29,7 +29,7 @@ También puede instalar manualmente cualquiera de los intérpretes que aparecen 
 
 ::: moniker range=">=vs-2019"
 > [!Note]
-> Visual Studio es compatible con todas las versiones oficialmente compatibles de Python, según lo especificado por el [Python Software Foundation](https://devguide.python.org/#status-of-python-branches). En concreto, versión 2.7, 3.5, 3.6 y 3.7.
+> Visual Studio admite todas las versiones oficialmente compatibles de Python, según lo especificado por [Python Software Foundation](https://devguide.python.org/#status-of-python-branches). En concreto, las versiones 2.7, 3.5, 3.6 y 3.7.
 ::: moniker-end
 
 Para **Visual Studio 2015 y versiones anteriores**, debe instalar manualmente uno de los intérpretes.

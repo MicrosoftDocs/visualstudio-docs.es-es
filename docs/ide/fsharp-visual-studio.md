@@ -48,7 +48,7 @@ En la tabla siguiente se resumen las características de las propiedades de proy
 |Compatibilidad con múltiples versiones (multi-targeting)|Sí||
 |Icono y manifiesto|No|Disponible a través de las opciones de la línea de comandos del compilador.|
 |Servicios de cliente ASP.NET|No||
-|ClickOnce|No|Usar un proyecto de cliente en otro lenguaje. NET, si corresponde.|
+|ClickOnce|No|Use un proyecto de cliente en otro lenguaje de .NET, si es aplicable.|
 |Nombres seguros|No|Disponible a través de las opciones de la línea de comandos del compilador.|
 |Publicación de ensamblados y control de versiones|No||
 |Análisis de código|No|Las herramientas de análisis de código se pueden ejecutar manualmente o como parte de un comando posterior a la compilación.|
@@ -60,7 +60,7 @@ El **Diseñador de proyectos** consta de varias páginas de propiedades de proye
 
 |Página del Diseñador de proyectos|Vínculos relacionados|Descripción|
 | - |-------------|-----------|
-|Administración de|[Página de aplicación, Diseñador de proyectos](reference/application-page-project-designer-csharp.md)|Permite especificar la configuración de nivel de aplicación y las propiedades, por ejemplo, si está creando una biblioteca o un archivo ejecutable, ¿qué versión de .NET los destinos de aplicación y obtener información acerca de dónde se almacenan los archivos de recursos que utiliza la aplicación.|
+|Administración de|[Página de aplicación, Diseñador de proyectos](reference/application-page-project-designer-csharp.md)|Permite especificar la configuración y las propiedades de nivel de aplicación, por ejemplo si se está creando una biblioteca o un archivo ejecutable, qué versión de .NET tiene la aplicación como destino e información sobre la ubicación de almacenamiento de los archivos de recursos que usa la aplicación.|
 |Compilar|[Página Compilación, Diseñador de proyectos](reference/build-page-project-designer-csharp.md)|Permite controlar cómo se compila el código.|
 |Eventos de compilación|[Eventos de compilación (Página, Diseñador de proyectos)](reference/build-events-page-project-designer-csharp.md)|Permite especificar comandos que se van a ejecutar antes o después de una compilación.|
 |Depuración|[Página Depuración, Diseñador de proyectos](reference/debug-page-project-designer.md)|Permite controlar cómo se ejecuta la aplicación durante la depuración. Esto incluye qué comandos se van a usar y cuál es el directorio de inicio de la aplicación, así como los modos de depuración especiales que quiera habilitar, como código nativo y SQL.|
@@ -89,7 +89,7 @@ En F# se admiten las siguientes características de los editores de código y te
 |Cambiar sangría|Aplica sangría o la quita en líneas seleccionadas.|Sí|
 |Sangría inteligente|Aplica o quita sangría automáticamente al cursor según las reglas de ámbito de F#.|Sí|
 |[Buscar y reemplazar texto](finding-and-replacing-text.md)|Permite buscar en un archivo, un proyecto o una solución y, potencialmente, cambiar texto.|Sí|
-|Ir a definición para la API de .NET|Cuando el cursor se coloca en una API. NET, muestra el código generado a partir de los metadatos de .NET.|No|
+|Ir a definición para la API de .NET|Cuando el cursor está colocado en una API de .NET, muestra código generado a partir de metadatos de .NET.|No|
 |Ir a definición para API definida por el usuario|Cuando el cursor está en una entidad de programa que ha definido, mueve el cursor a la ubicación del código donde se ha definido la entidad.|Sí|
 |Ir a la línea|Permite ir a una línea determinada de un archivo, por número de línea.|Sí|
 |Barras de navegación en la parte superior del archivo|Permite saltar a ubicaciones del código, por ejemplo, por nombre de función.|Sí|

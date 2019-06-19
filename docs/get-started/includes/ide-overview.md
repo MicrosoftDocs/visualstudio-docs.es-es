@@ -23,7 +23,7 @@ El *entorno de desarrollo integrado* de Visual Studio es un panel de inicio crea
 
 ::: moniker range="vs-2019"
 
-[![El IDE de Visual Studio de 2019](../media/vs-2019/ide-overview.png)](../media/vs-2019/ide-overview.png#lightbox)
+[![IDE de Visual Studio 2019](../media/vs-2019/ide-overview.png)](../media/vs-2019/ide-overview.png#lightbox)
 
 ::: moniker-end
 

@@ -38,7 +38,7 @@ Para agregar una referencia, haga clic con el botón derecho en el nodo **Refere
 
 Puede agregar una referencia a los siguientes tipos de componentes y servicios:
 
-- Los ensamblados o bibliotecas de clases .NET
+- Bibliotecas de clases o ensamblados de .NET
 
 - Aplicaciones para UWP
 
@@ -101,11 +101,11 @@ Si implementa una aplicación que contiene una referencia a un componente person
 
 De forma predeterminada, la propiedad <xref:Microsoft.VisualStudio.VCProjectEngine.VCProjectReference.CopyLocal%2A> está establecida en **False** si el ensamblado o el componente está en la caché global de ensamblados o es un componente del marco de trabajo. De lo contrario, el valor se establece en **True**. Las referencias de proyecto a proyecto siempre se establecen en **True**.
 
-## <a name="reference-a-project-or-assembly-that-targets-a-different-version-of-net"></a>Referencia a un proyecto o ensamblado destinado a una versión diferente de .NET
+## <a name="reference-a-project-or-assembly-that-targets-a-different-version-of-net"></a>Hacer referencia a un proyecto o ensamblado que tiene como destino otra versión de .NET
 
-Puede crear aplicaciones que hacen referencia a proyectos o ensamblados que tienen como destino una versión diferente de .NET. Por ejemplo, se podría crear una aplicación destinada a .NET Framework 4.6 que haga referencia a un ensamblado destinado a .NET Framework 4.5. Si crea un proyecto que tenga como destino una versión anterior de. NET, no se puede establecer una referencia en ese proyecto a un proyecto o ensamblado destinado a una versión más reciente.
+Puede crear aplicaciones que hagan referencia a proyectos o ensamblados que tengan como destino otra versión de .NET. Por ejemplo, se podría crear una aplicación destinada a .NET Framework 4.6 que haga referencia a un ensamblado destinado a .NET Framework 4.5. Si crea un proyecto destinado a una versión anterior de .NET, no puede establecer una referencia en ese proyecto a un proyecto o ensamblado destinado a una versión más reciente.
 
-Para obtener más información, consulte [la plataforma de destino de la información general sobre](../ide/visual-studio-multi-targeting-overview.md).
+Para obtener más información, vea [Información general sobre destinos de Framework](../ide/visual-studio-multi-targeting-overview.md).
 
 ## <a name="project-to-project-references"></a>Referencias entre proyectos
 

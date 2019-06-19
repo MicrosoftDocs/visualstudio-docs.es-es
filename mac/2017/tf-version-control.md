@@ -21,7 +21,7 @@ ms.locfileid: "66746332"
 
 Azure Repos ofrece dos modelos de control de versiones: [Git](/azure/devops/repos/git/?view=azure-devops), un sistema de control de versiones distribuido, y el [Control de versiones de Team Foundation](/azure/devops/repos/tfvc/index?view=azure-devops) (TFVC), un sistema de control de versiones centralizado.
 
-Visual Studio para Mac proporciona compatibilidad total con repositorios Git, pero requiere algunas soluciones alternativas para trabajar con TFVC. Si usa TFVC para el control de versiones de hoy en día, estas son algunas soluciones que puede usar para tener acceso a su código fuente que se hospeda en TFVC:
+Visual Studio para Mac proporciona compatibilidad total con repositorios Git, pero requiere algunas soluciones alternativas para trabajar con TFVC. Si usa TFVC para el control de versiones hoy en día, estas son algunas soluciones que puede usar para acceder al código fuente hospedado en TFVC:
 
 * [Uso de Visual Studio Code y de la extensión de Azure Repos para una UI gráfica](#use-visual-studio-code-and-the-azure-repos-extension)
 * [Conexión al repositorio con el cliente de la línea de comandos de Team Explorer Everywhere (TEE-CLC)](#connecting-using-the-team-explorer-everywhere-command-line-client)
@@ -31,7 +31,7 @@ El resto de la información de este artículo lo guiará en las opciones indicad
 
 ## <a name="requirements"></a>Requisitos
 
-* Visual Studio Community, Professional o Enterprise para Mac versión 7.8 y versiones posterior.
+* Visual Studio Community, Professional o Enterprise para Mac, versión 7.8 y posterior.
 * Azure DevOps Services, Team Foundation Server 2013 y versiones posteriores o Azure DevOps Server 2018 y versiones posteriores.
 * Un proyecto en Azure DevOps Services o Team Foundation Server/Azure DevOps Server, configurado para que use el Control de versiones de Team Foundation.
 
@@ -80,7 +80,7 @@ tf workspace -new MyWorkspace -collection:https://dev.azure.com/MyOrganization
 
 La configuración del entorno `TF_AUTO_SAVE_CREDENTIALS` se usa para guardar las credenciales, para que no se le pida que las escriba varias veces. Cuando se le pida un nombre de usuario, utilice el token de acceso personal que creó en la sección anterior y una contraseña en blanco.
 
-Para crear una asignación de los archivos de origen en una carpeta local, usará el `tf workfold` comando. En el ejemplo siguiente, se asociará una carpeta llamada "WebApp.Services" del proyecto de TFVC "MyRepository" y se configurará para que se copie en la carpeta local ~/Projects/ (por ejemplo, una carpeta "Proyectos" en la carpeta principal del usuario actual).
+Para crear una asignación de los archivos de origen a una carpeta local, se usa el comando `tf workfold`. En el ejemplo siguiente, se asociará una carpeta llamada "WebApp.Services" del proyecto de TFVC "MyRepository" y se configurará para que se copie en la carpeta local ~/Projects/ (por ejemplo, una carpeta "Proyectos" en la carpeta principal del usuario actual).
 
 ```bash
 tf workfold -map $/MyRepository/WebApp.Services -workspace:MyWorkspace ~/Projects/

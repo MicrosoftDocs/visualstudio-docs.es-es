@@ -308,7 +308,7 @@ Si intenta guardar un proyecto que contiene un tipo cuyo archivo de código fuen
 
 Si un archivo de código contiene un error de sintaxis, las formas que muestran código de dicho archivo serán de sólo lectura hasta que se corrija el error de sintaxis. Mientras permanecen en este estado, las formas presentan el texto en color rojo, y aparece un icono rojo con la siguiente información sobre herramientas: "El archivo de código fuente contiene un error de análisis".
 
-Un tipo que se hace referencia (por ejemplo, un tipo. NET), que existe en otro nodo del proyecto o en un nodo de ensamblado al que hace referencia, se indica en la superficie de diseño del Diseñador de clases como de solo lectura. Los tipos locales, que existen en el proyecto abierto, son de lectura y escritura, y así lo indica la forma correspondiente en la superficie de diseño del Diseñador de clases.
+Los tipos a los que se hace referencia (como uno de .NET), que existen bajo el nodo de otro proyecto o bajo un nodo de ensamblado al que se hace referencia, aparecen indicados en la superficie de diseño del Diseñador de clases como de solo lectura. Los tipos locales, que existen en el proyecto abierto, son de lectura y escritura, y así lo indica la forma correspondiente en la superficie de diseño del Diseñador de clases.
 
 Los indizadores son de lectura y escritura en el código y en la ventana **Detalles de clase**, pero el nombre del indizador es de solo lectura.
 

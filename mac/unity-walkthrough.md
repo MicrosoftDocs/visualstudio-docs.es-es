@@ -1,5 +1,5 @@
 ---
-title: Introducción a crear juegos con Unity en Visual Studio para Mac
+title: Introducción a la creación de juegos con Unity en Visual Studio para Mac
 description: Introducción a Unity y Visual Studio para Mac
 author: asb3993
 ms.author: amburns
@@ -14,11 +14,11 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 06/11/2019
 ms.locfileid: "66836164"
 ---
-# <a name="getting-started-building-games-with-unity-in-visual-studio-for-mac"></a>Introducción a crear juegos con Unity en Visual Studio para Mac 
+# <a name="getting-started-building-games-with-unity-in-visual-studio-for-mac"></a>Introducción a la creación de juegos con Unity en Visual Studio para Mac 
 
-Unity es un motor de juego que le permite desarrollar juegos en C#. En este tutorial se muestra cómo empezar a desarrollar y depuración juegos Unity con Visual Studio para Mac y Visual Studio para Mac Tools para la extensión de Unity junto con el entorno de Unity.
+Unity es un motor de juego que permite desarrollar juegos en C#. En este tutorial se muestra cómo empezar a desarrollar y depurar juegos de Unity con Visual Studio para Mac y la extensión Visual Studio for Mac Tools for Unity junto con el entorno de Unity.
 
-Visual Studio para Mac Tools para Unity es una extensión gratuita, instalada con Visual Studio para Mac. Permite a los desarrolladores de Unity aprovechar las ventajas de las características de productividad de Visual Studio para Mac, incluida la excelente compatibilidad de IntelliSense, depuración de las características y mucho más.
+Visual Studio for Mac Tools for Unity es una extensión gratuita instalada con Visual Studio para Mac. Permite a los desarrolladores de Unity aprovechar las características de productividad de Visual Studio para Mac, lo que incluye la excelente compatibilidad de IntelliSense, las características de depuración, etc.
 
 ## <a name="objectives"></a>Objetivos
 
@@ -30,125 +30,125 @@ Visual Studio para Mac Tools para Unity es una extensión gratuita, instalada co
 - Visual Studio para Mac ([https://www.visualstudio.com/vs/mac](https://www.visualstudio.com/vs/visual-studio-mac))
 - Unity 5.6.1 Personal Edition o superior ([https://store.unity.com](https://store.unity.com/), requiere una cuenta de unity.com para ejecutarse)
 
-## <a name="intended-audience"></a>Público destinatario
+## <a name="intended-audience"></a>Destinatarios
 
-Esta práctica está destinada a desarrolladores que están familiarizados con C#, aunque no se requiere la vasta experiencia.
+Este laboratorio está destinado a desarrolladores familiarizados con C#, aunque no se requiere una experiencia profunda.
 
-## <a name="task-1-creating-a-basic-unity-project"></a>Tarea 1: Crear un proyecto básico de Unity
+## <a name="task-1-creating-a-basic-unity-project"></a>Tarea 1: Creación de un proyecto básico de Unity
 
-1. Iniciar **Unity**. Si se solicita, inicie sesión.
+1. Inicie **Unity**. Si se le pide, inicie sesión.
 
-2. Haga clic en **nuevo**.
+2. Haga clic en **Nuevo**.
 
-    ![Botón de nueva en unity](media/unity-image1.png)
+    ![Botón Nuevo de Unity](media/unity-image1.png)
 
-3. Establecer el **nombre del proyecto** a **"UnityLab"** y seleccione **3D**. Haga clic en **crear un proyecto**.
+3. Establezca el **Nombre del proyecto** en **"UnityLab"** y seleccione **3D**. Haga clic en **Crear proyecto**.
 
-    ![Crear nueva pantalla de proyecto](media/unity-image2.png)
+    ![Pantalla de creación de nuevo proyecto](media/unity-image2.png)
 
-4. Ahora está buscando en la interfaz de Unity de forma predeterminada. Tiene la jerarquía de la escena con objetos del juego en el lado izquierdo, una vista 3D de la escena en blanco, que se muestra en la parte central, un panel de archivos de proyecto en la parte inferior y el inspector y los servicios de la derecha. Por supuesto, hay mucho más que eso, pero estos son algunos de los componentes más importantes.
+4. Ahora está viendo la interfaz predeterminada de Unity. Tiene la jerarquía de la escena con objetos del juego a la izquierda, una vista en 3D de la escena en blanco en la parte central, un panel de archivos de proyecto en la parte inferior y el inspector y los servicios a la derecha. Por supuesto, hay mucho más que eso, pero estos son algunos de los componentes más importantes.
 
-    ![interfaz de unity en blanco](media/unity-image3.png)
+    ![Interfaz de Unity en blanco](media/unity-image3.png)
 
-5. Para desarrolladores nuevos en Unity, todo lo que se ejecuta en la aplicación existirá en el contexto de un **escena**. Un archivo de escena es un único archivo que contiene a todo tipo de metadatos sobre los recursos utilizados en el proyecto de la escena actual y sus propiedades. Al empaquetar la aplicación para una plataforma, finalizará la aplicación resultante es una colección de uno o más escenas, además de cualquier código dependiente de la plataforma que agregue. Puede tener tantas escenas como quiera en un proyecto.
+5. Para los desarrolladores nuevos en Unity, todo lo que se ejecuta en la aplicación existe en el contexto de una **escena**. Un archivo de escena es un archivo único que contiene todo tipo de metadatos sobre los recursos usados en el proyecto para la escena actual y sus propiedades. Al empaquetar la aplicación para una plataforma, la aplicación resultante termina por ser una colección de una o más escenas, además de cualquier código dependiente de la plataforma que se agregue. Puede tener tantas escenas como quiera en un proyecto.
 
-6. La nueva escena solo tiene una cámara y una luz direccional. Una escena requiere un **cámara** para cualquier elemento sea visible y un **Audio Listener** para cualquier elemento audibles. Estos componentes están conectados a un **GameObject**.
+6. La nueva escena solo tiene una cámara y una luz direccional. Una escena requiere una **cámara** para que algo sea visible y un **cliente de escucha de audio** para que algo sea audible. Estos componentes están conectados a un elemento **GameObject**.
 
-7. Seleccione el **cámara principal** objeto desde el **jerarquía** panel.
+7. Seleccione el objeto **Cámara principal** en el panel **Jerarquía**.
 
-    ![objeto de cámara principal resaltado en el panel de jerarquías](media/unity-image4.png)
+    ![Objeto Cámara principal resaltado en el panel Jerarquía](media/unity-image4.png)
 
-8. Seleccione el **Inspector** panel desde el lado derecho de la ventana para revisar sus propiedades. Propiedades de la cámara incluyen información de transformación, en segundo plano, tipo de proyección, campo de visión y así sucesivamente. También se agregó un componente Audio Listener de forma predeterminada, que esencialmente hace audio de la escena de un micrófono virtual conectado a la cámara.
+8. Seleccione el panel **Inspector** en el lado derecho de la ventana para revisar sus propiedades. Las propiedades de la cámara incluyen información de transformación, segundo plano, tipo de proyección, campo de visión, etc. También se ha agregado un componente de cliente de escucha de audio de forma predeterminada, que básicamente representa el audio de la escena desde un micrófono virtual conectado a la cámara.
 
-    ![panel del inspector](media/unity-image5.png)
+    ![Panel Inspector](media/unity-image5.png)
 
-9. Seleccione el **luz direccional** objeto. Esto proporciona a luz a la escena para que los componentes, como los sombreadores sepan cómo procesar los objetos.
+9. Seleccione el objeto **Luz direccional**. Este proporciona luz a la escena para que componentes como los sombreadores sepan cómo representar objetos.
 
-    ![objeto light dirección resaltado](media/unity-image6.png)
+    ![Objeto Luz direccional resaltado](media/unity-image6.png)
 
-10. Use la **Inspector** para ver que incluye propiedades comunes de iluminación como tipo, color, intensidad, tipo de instantánea y así sucesivamente.
+10. Use el **Inspector** para ver que incluye propiedades comunes de iluminación como tipo, color, intensidad, tipo de sombra, etc.
 
-    ![Examinar las propiedades en el panel del inspector](media/unity-image7.png)
+    ![Examen de las propiedades del panel Inspector](media/unity-image7.png)
 
-11. Es importante hacer notar que los proyectos de Unity son un poco diferentes de su Visual Studio para homólogos de Mac. En el **proyecto** pestaña en la parte inferior, haga clic en el **activos** carpeta y seleccione **mostrar en Finder**.
+11. Es importante señalar que los proyectos de Unity son un poco diferentes a sus homólogos de Visual Studio para Mac. En la pestaña **Proyecto** de la parte inferior, haga clic con el botón derecho en la carpeta **Recursos** y seleccione **Mostrar en Finder**.
 
-    ![mostrar en la acción de contexto de finder](media/unity-image8.png)
+    ![Acción contextual Mostrar en Finder](media/unity-image8.png)
 
-12. Los proyectos contienen **activos**, **biblioteca**, **ProjectSettings**, y **Temp** pueden ver las carpetas que usted. Sin embargo, es el único que se muestra en la interfaz de la **activos** carpeta. El **biblioteca** carpeta es la memoria caché local para los activos importados; mantiene todos los metadatos para los recursos. El **ProjectSettings** , puede configurar almacenes de carpetas. El **Temp** carpeta se utiliza para los archivos temporales de Mono y Unity durante el proceso de compilación. También hay un archivo de solución que se puede abrir en Visual Studio para Mac (**UnityLab.sln** aquí).
+12. Los proyectos contienen las carpetas **Recursos**, **Biblioteca**, **ProjectSettings** y **Temp**, como se puede ver. Pero la única que se muestra en la interfaz es la carpeta **Recursos**. La carpeta **Biblioteca** es la caché local para los recursos importados; contiene todos los metadatos de los recursos. La carpeta **ProjectSettings** almacena las opciones que se pueden configurar. La carpeta **Temp** se usa para los archivos temporales de Mono y Unity durante el proceso de compilación. También hay un archivo de solución que se puede abrir en Visual Studio para Mac (**UnityLab.sln** aquí).
 
-    ![activos en el finder](media/unity-image9.png)
+    ![Recursos en Finder](media/unity-image9.png)
 
-13. Cerrar la **buscador** ventana y volver a **Unity**.
+13. Cierre la ventana **Finder** y vuelva a **Unity**.
 
-14. El **activos** carpeta contiene todos los activos de arte, código, audio, etcetera. Ahora está vacío, pero todos los archivos que se incluya en su proyecto va aquí. Esto siempre es la carpeta de nivel superior en el **Editor de Unity**. Pero siempre agregar y quitar archivos a través de la interfaz de Unity (o Visual Studio para Mac) y nunca a través del sistema de archivos directamente.
+14. La carpeta **Recursos** contiene todas las imágenes, el código, el audio, etc. de los recursos. Ahora está vacía, pero cada archivo que se incluya en el proyecto irá aquí. Esta es siempre la carpeta de nivel superior de **Unity Editor**. Agregue y quite archivos siempre a través de la interfaz de Unity (o Visual Studio para Mac) y nunca a través del sistema de archivos directamente.
 
-    ![carpeta de activos de unity](media/unity-image10.png)
+    ![Carpeta Recursos de Unity](media/unity-image10.png)
 
-15. El **GameObject** es fundamental para el desarrollo de Unity casi todo lo que se derive de ese tipo, incluidos los modelos, las luces, sistemas de partículas y así sucesivamente. Agregue un nuevo **cubo** objeto a la escena a través de la **GameObject > objeto 3D > cubo** menú.
+15. **GameObject** es fundamental para el desarrollo en Unity, ya que prácticamente todo deriva de ese tipo, incluidos los modelos, las luces, los sistemas de partículas, etc. Agregue un nuevo objeto **Cubo** a la escena por medio del menú **GameObject > Objeto 3D > Cubo**.
 
-    ![objeto de cubo en la escena](media/unity-image11.png)
+    ![Objeto Cubo en escena](media/unity-image11.png)
 
-16. Eche un vistazo rápido a las propiedades del nuevo **GameObject** y verá que tiene un nombre, etiqueta, layer y transformación. Estas propiedades son comunes a todos los **GameObjects**. Además, varios componentes se asociaron a la **cubo** para proporcionar necesitan funcionalidad incluidos malla filtro, colisionador de cuadro y representador.
+16. Eche un vistazo rápido a las propiedades del nuevo tipo **GameObject** y vea que tiene un nombre, una etiqueta, una capa y una transformación. Estas propiedades son comunes para todos los tipos **GameObjects**. Además, se han asociado varios componentes al **Cubo** para proporcionar funcionalidad necesaria que incluye un filtro de malla, un colisionador de cuadros y un representador.
 
-    ![propiedades de objeto de juego](media/unity-image12.png)
+    ![Propiedades de GameObject](media/unity-image12.png)
 
-17. Cambiar el nombre de la **cubo** objeto, que tiene el nombre **"Cubo"** de forma predeterminada, para **"Enemigo"** . Asegúrese de que presionar **ENTRAR** para guardar el cambio. Este será el cubo enemigo en nuestro juego sencillo.
+17. Cambie el nombre del objeto **Cubo**, que tiene el nombre **"Cubo"** de forma predeterminada, a **"Enemigo"**. Asegúrese de presionar **Entrar** para guardar el cambio. Este va a ser el cubo enemigo de este juego sencillo.
 
-    ![propiedad de cambio de nombre de objeto de cubo](media/unity-image13.png)
+    ![Propiedad de cambio de nombre del objeto Cubo](media/unity-image13.png)
 
-18. Agregue otro **cubo** objeto a la escena utilizando el mismo proceso que anteriormente y el nombre de éste **"Player"** .
+18. Agregue otro objeto **Cubo** a la escena mediante el mismo proceso anterior y póngale el nombre **"Jugador"**.
 
-    ![cambiar el nombre del segundo objeto de cubo](media/unity-image14.png)
+    ![Cambio de nombre del segundo objeto Cubo](media/unity-image14.png)
 
-19. Etiquetar el objeto player **"Player"** también (consulte **etiqueta** control de lista desplegable solo en el campo nombre). Vamos a usar en el script enemigo para ayudar a localizar el objeto de juego del Reproductor.
+19. Etiquete también el objeto de jugador **"Jugador"** (vea el control desplegable **Etiqueta** justo debajo del campo de nombre). Lo vamos a usar en el script de Enemigo para ayudar a localizar el objeto de juego Jugador.
 
-    ![el objeto player de etiquetado](media/unity-image15.png)
+    ![Etiquetado del objeto Jugador](media/unity-image15.png)
 
-20. En el **escena** ver, mover el objeto player fuera del objeto enemigo a lo largo del eje Z con el mouse. Puede mover a lo largo del eje Z, seleccione y arrastre el cubo por su **rojo** panel hacia la **azul** línea. Puesto que el cubo se encuentra en el espacio 3D, pero solo se puede arrastrar en 2D cada vez, el eje en el que se arrastra es especialmente importante.
+20. En la vista **Escena**, retire el objeto Jugador del objeto Enemigo a lo largo del eje Z con el mouse. Para moverse a lo largo del eje Z, seleccione y arrastre el cubo por su panel **rojo** hacia la línea **azul**. Puesto que el cubo se encuentra en el espacio 3D, pero solo se puede arrastrar en 2D cada vez, el eje en el que se arrastra es especialmente importante.
 
-    ![cubo de que muestra la vista de escena](media/unity-image16.png)
+    ![Vista Escena que muestra un cubo](media/unity-image16.png)
 
-21. Mueva el cubo hacia abajo y hacia la derecha en el eje. Esto actualiza la **Transform.Position** propiedad en el **Inspector**. Asegúrese de arrastrar a una ubicación de forma similar a los que se muestran aquí para facilitar los pasos posteriores en el laboratorio.
+21. Mueva el cubo hacia abajo y a la derecha a lo largo del eje. Esto actualiza la propiedad **Transform.Position** del **Inspector**. Asegúrese de arrastrar a una ubicación de forma similar a lo que se muestra aquí para facilitar los pasos posteriores del laboratorio.
 
-    ![mover un cubo a lo largo del eje](media/unity-image17.png)
+    ![Movimiento de un cubo a lo largo del eje](media/unity-image17.png)
 
-22. Ahora puede agregar código para controlar la lógica de enemigos para que persigue el Reproductor. Haga clic en el **activos** carpeta en el **proyecto** rellenar y seleccione **crear > C# Script**.
+22. Ahora puede agregar algún código para controlar la lógica de Enemigo de modo que persiga a Jugador. Haga clic con el botón derecho en la carpeta **Recursos** del panel **Proyecto** y seleccione **Crear > Script de C#**.
 
-    ![C#acción de contexto de script](media/unity-image18.png)
+    ![Acción contextual Script de C#](media/unity-image18.png)
 
-23. El nombre del nuevo C# script **"EnemyAI"** .
+23. Póngale el nombre **"EnemyAI"** al nuevo script de C#.
 
     ![Script de C#](media/unity-image19.png)
 
-24. Para adjuntar scripts a objetos de juego arrastrar el script recién creado en el **enemigo** objeto en el **jerarquía** panel. Ahora, ese objeto usará los comportamientos de esta secuencia de comandos.
+24. Para asociar scripts a objetos del juego, arrastre el script recién creado al objeto **Enemigo** en el panel **Jerarquía**. Ahora, ese objeto usa los comportamientos de este script.
 
-    ![resaltado que muestra el script agrega al objeto de juego](media/unity-image20.png)
+    ![Resaltado que muestra la incorporación del script al objeto del juego](media/unity-image20.png)
 
-25. Seleccione **archivo > Guardar escenas** para guardar la escena actual. Asígnele el nombre **"MyScene"** .
+25. Seleccione **Archivo > Guardar escenas** para guardar la escena actual. Asígnele el nombre **"MyScene"**.
 
-## <a name="task-2-working-with-visual-studio-for-mac-tools-for-unity"></a>Tarea 2: Trabajar con Visual Studio for Mac Tools para Unity
+## <a name="task-2-working-with-visual-studio-for-mac-tools-for-unity"></a>Tarea 2: Trabajo con Visual Studio for Mac Tools for Unity
 
-1. La mejor forma de editar C# código consiste en usar Visual Studio para Mac. Puede configurar Unity para usar Visual Studio para Mac como su controlador predeterminado. Seleccione **Unity > Preferencias**.
+1. La mejor forma de editar código de C# es usar Visual Studio para Mac. Puede configurar Unity para usar Visual Studio para Mac como controlador predeterminado. Seleccione **Unity > Preferencias**.
 
-2. Seleccione el **herramientas externas** ficha. Desde el **External Script Editor** lista desplegable, seleccione **examinar** y seleccione **aplicaciones/Visual Studio.app**. Como alternativa, si ya existe un **Visual Studio** opción, que seleccione.
+2. Seleccione la pestaña **Herramientas externas**. En la lista desplegable **External Script Editor**, seleccione **Examinar** y luego **Applications/Visual Studio.app**. Si ya existe una opción **Visual Studio**, simplemente selecciónela.
 
-    ![pestaña herramientas externas en las preferencias](media/unity-image21.png)
+    ![Pestaña Herramientas externas de Preferencias](media/unity-image21.png)
 
-3. Unity está ahora configurado para usar **Visual Studio para Mac** para editar scripts. Cerrar la **preferencias de Unity** cuadro de diálogo.
+3. Unity está ahora configurado para usar **Visual Studio para Mac** para la edición de scripts. Cierre el cuadro de diálogo **Preferencias de Unity**.
 
-    ![Visual Studio seleccionada en las preferencias](media/unity-image22.png)
+    ![Visual Studio seleccionado en Preferencias](media/unity-image22.png)
 
 4. Haga doble clic en **EnemyAI.cs** para abrirlo en **Visual Studio para Mac**.
 
-    ![Enemigo activo seleccionado en unity](media/unity-image23.png)
+    ![Recurso Enemigo seleccionado en Unity](media/unity-image23.png)
 
-5. La solución de Visual Studio es sencilla. Contiene un **activos** carpeta (el mismo desde **buscador**) y el **EnemyAI.cs** script que creó anteriormente. En proyectos más sofisticados, probablemente será diferente del que se ve en Unity la jerarquía.
+5. La solución de Visual Studio es sencilla. Contiene una carpeta **Recursos** (la misma de **Finder**) y el script **EnemyAI.cs** creado anteriormente. En proyectos más sofisticados, probablemente la jerarquía sea diferente a la que se ve en Unity.
 
-    ![Panel de solución de Visual Studio para Mac](media/unity-image24.png)
+    ![Panel Solución de Visual Studio para Mac](media/unity-image24.png)
 
-6. **EnemyAI.cs** está abierto en el editor. El script inicial solo contiene códigos auxiliares para el **iniciar** y **actualización** métodos.
+6. **EnemyAI.cs** está abierto en el editor. El script inicial solo contiene códigos auxiliares para los métodos **Start** y **Update**.
 
-7. Reemplace el código enemigo inicial con el código siguiente.
+7. Reemplace el código inicial de Enemigo por el código siguiente.
 
     ```csharp
     public class EnemyAI : MonoBehaviour
@@ -186,102 +186,102 @@ Esta práctica está destinada a desarrolladores que están familiarizados con C
     }
     ```
 
-8. Eche un vistazo rápido en el comportamiento de enemigos simple que se define aquí. En el **iniciar** método, obtenemos una referencia al objeto player (por su etiqueta), así como su **transformar**. En el **actualización** método, que se llama a cada fotograma, el enemigo se moverá hacia el objeto player. Las palabras clave y los nombres de utilizan la codificación en colores para que resulte más fácil entender el código base en Visual Studio para Mac.
+8. Eche un vistazo rápido al comportamiento sencillo de Enemigo definido aquí. En el método **Start**, se obtiene una referencia al objeto Jugador (por su etiqueta), así como su **transformación**. En el método **Update**, que se llama en cada fotograma, Enemigo se mueve hacia el objeto Jugador. Las palabras clave y los nombres usan codificación en colores para facilitar la comprensión del código base de Visual Studio para Mac.
 
-9. Guarde los cambios en la secuencia de comandos enemigo en **Visual Studio para Mac**.
+9. Guarde los cambios en el script de Enemigo en **Visual Studio para Mac**.
 
 ## <a name="task-3-debugging-the-unity-project"></a>Tarea 3: Depuración del proyecto de Unity
 
-1. Establezca un punto de interrupción en la primera línea de código en el **iniciar** método. Puede hacer clic en el margen del editor en el cursor de línea o en lugar de destino en la línea y presione **F9**.
+1. Establezca un punto de interrupción en la primera línea de código del método **Start**. Puede hacer clic en el margen del editor en la línea de destino o colocar el cursor en la línea y presionar **F9**.
 
-    ![Establecer punto de interrupción en visual studio para mac](media/unity-image25.png)
+    ![Establecimiento de punto de interrupción en Visual Studio para Mac](media/unity-image25.png)
 
-2. Haga clic en el **Iniciar depuración** o presionen **F5**. Esto compilará el proyecto y adjuntar a Unity para la depuración.
+2. Haga clic en el botón **Iniciar depuración** o presione **F5**. Con esto se compila el proyecto y se asocia a Unity para su depuración.
 
-    ![botón de inicio en visual studio para mac](media/unity-image26.png)
+    ![Botón de inicio de Visual Studio para Mac](media/unity-image26.png)
 
-3. Vuelva a **Unity** y haga clic en el **ejecutar** botón para iniciar el juego.
+3. Vuelva a **Unity** y haga clic en el botón **Ejecutar** para iniciar el juego.
 
-    ![botón de ejecución de unity](media/unity-image27.png)
+    ![Botón Ejecutar de Unity](media/unity-image27.png)
 
-4. Se alcanzará el punto de interrupción y ahora puede usar Visual Studio para las herramientas de depuración de Mac.
+4. Se debe alcanzar el punto de interrupción para poder usar las herramientas de depuración de Visual Studio para Mac.
 
-    ![punto de interrupción en visual studio para mac](media/unity-image28.png)
+    ![Punto de interrupción alcanzado en Visual Studio para Mac](media/unity-image28.png)
 
-5. Desde el **variables locales** rellenar, busque el **esto** puntero, que hace referencia a un **EnemyAI** objeto. Expanda la referencia y vea que puede examinar los miembros asociados como **velocidad**.
+5. En el panel **Variables locales**, busque **este** puntero, que hace referencia a un objeto **EnemyAI**. Expanda la referencia y vea que puede examinar los miembros asociados, como **Velocidad**.
 
-    ![variables locales de depuración del panel de visual studio para mac](media/unity-image29.png)
+    ![Panel de depuración Variables locales de Visual Studio para Mac](media/unity-image29.png)
 
-6. Quitar el punto de interrupción desde el **iniciar** método del mismo modo que fue agregado por haciendo clic en él en el margen o seleccionar la línea y presione **F9**.
+6. Quite el punto de interrupción del método **Start** del mismo modo que se agregó: ya sea haciendo clic en el margen o seleccionando la línea y presionando **F9**.
 
-    ![punto de interrupción en visual studio para mac](media/unity-image30.png)
+    ![Punto de interrupción alcanzado en Visual Studio para Mac](media/unity-image30.png)
 
-7. Presione **F10** al paso a través de la primera línea de código que busca el **Reproductor** objeto de juego con una etiqueta como parámetro.
+7. Presione **F10** para ir a la primera línea de código donde se encuentre el objeto **Jugador** con una etiqueta como parámetro.
 
-8. Mantenga el cursor del mouse sobre el **Reproductor** variable dentro de la ventana del editor de código para ver sus miembros asociados. Incluso puede expandir la superposición para ver las propiedades secundarias.
+8. Mantenga el cursor del mouse sobre la variable **player** dentro de la ventana del editor de código para ver sus miembros asociados. Incluso puede expandir la superposición para ver las propiedades secundarias.
 
-    ![ventana de depuración en visual studio para el editor de mac](media/unity-image31.png)
+    ![Ventana de depuración del editor de Visual Studio para Mac](media/unity-image31.png)
 
-9. Presione **F5** o presione la **ejecutar** botón para continuar la ejecución. Volver a Unity para ver el cubo enemigo repetidamente enfocar el cubo del Reproductor. Es posible que deba ajustar la cámara si no está visible.
+9. Presione **F5** o el botón **Ejecutar** para continuar con la ejecución. Vuelva a Unity para ver el cubo Enemigo acercarse repetidamente al cubo Jugador. Es posible que necesite ajustar la cámara si no está visible.
 
-    ![escena reproducir en unity](media/unity-image32.png)
+    ![Escena reproducida en Unity](media/unity-image32.png)
 
-10. Volver a **Visual Studio para Mac** y establezca un punto de interrupción en la primera línea de la **actualización** método. Se debe alcanzar inmediatamente.
+10. Vuelva a **Visual Studio para Mac** y establezca un punto de interrupción en la primera línea del método **Update**. Se debe alcanzar inmediatamente.
 
-    ![establecer un punto de interrupción en visual studio para mac](media/unity-image33.png)
+    ![Establecimiento de un punto de interrupción en Visual Studio para Mac](media/unity-image33.png)
 
-11. Supongamos que la velocidad es demasiado rápida y va a probar el impacto del cambio sin tener que reiniciar la aplicación. Busque el **velocidad** variable dentro de la **automático** o **variables locales** ventana y, a continuación, cámbielo a **"10"** y presione **ENTRAR** .
+11. Imagine que la velocidad es demasiado rápida y quiere probar el impacto del cambio sin reiniciar la aplicación. Busque la variable **Velocidad** en la ventana **Automático** o **Variables locales**, cámbiela a **"10"** y presione **Entrar**.
 
-    ![ajuste de las variables en la ventana variables locales](media/unity-image34.png)
+    ![Ajuste de las variables en la ventana Variables locales](media/unity-image34.png)
 
-12. Quitar el punto de interrupción y presione **F5** para reanudar la ejecución.
+12. Quite el punto de interrupción y presione **F5** para reanudar la ejecución.
 
-13. Vuelva a **Unity** para ver la aplicación en ejecución. El cubo enemigo se traslada a una quinta parte de la velocidad original.
+13. Vuelva a **Unity** para ver la aplicación en ejecución. El cubo Enemigo ahora se mueve a una quinta parte de la velocidad original.
 
-    ![ventana de Unity con la ejecución de aplicación](media/unity-image35.png)
+    ![Ventana de Unity con aplicación en ejecución](media/unity-image35.png)
 
-14. Detener la aplicación de Unity al hacer clic en el **reproducir** nuevamente en el botón.
+14. Detenga la aplicación de Unity al volver a hacer clic en el botón **Reproducir**.
 
-    ![detener la aplicación de unity](media/unity-image36.png)
+    ![Detención de la aplicación de Unity](media/unity-image36.png)
 
-15. Vuelva a **Visual Studio para Mac**. Detener la sesión de depuración, haga clic en el **detener** botón.
+15. Vuelva a **Visual Studio para Mac**. Detenga la sesión de depuración al hacer clic en el botón **Detener**.
 
-    ![Deteniendo la sesión de depuración en Visual Studio para Mac](media/unity-image37.png)
+    ![Detención de la sesión de depuración en Visual Studio para Mac](media/unity-image37.png)
 
-## <a name="task-4-exploring-unity-features-in-visual-studio-for-mac"></a>Tarea 4: Explorar las características de Unity en Visual Studio para Mac
+## <a name="task-4-exploring-unity-features-in-visual-studio-for-mac"></a>Tarea 4: Examen de las características de Unity en Visual Studio para Mac
 
-1. Visual Studio para Mac proporciona acceso rápido a documentación de Unity en el editor de código. Coloque el cursor en algún lugar en el **Vector3** de símbolos dentro de la **actualización** método y presione **⌘ comando + '** .
+1. Visual Studio para Mac proporciona acceso rápido a documentación de Unity en el editor de código. Coloque el cursor en algún lugar del símbolo **Vector3** dentro del método **Update** y presione **⌘ Comando + '**.
 
-    ![Seleccionar método de visual studio para el editor de mac](media/unity-image38.png)
+    ![Selección de método en el editor de Visual Studio para Mac](media/unity-image38.png)
 
-2. Se abre una nueva ventana del explorador en la documentación de **Vector3**. Cierre la ventana del explorador si se cumplen.
+2. Se abre una nueva ventana del explorador para la documentación de **Vector3**. Cierre la ventana del explorador cuando esté satisfecho.
 
-    ![ventana del explorador se abre en la documentación](media/unity-image39.png)
+    ![Ventana del explorador con la documentación abierta](media/unity-image39.png)
 
-3. Visual Studio para Mac también proporciona algunas aplicaciones auxiliares para crear rápidamente clases de comportamiento de Unity. Desde **el Explorador de soluciones**, haga clic en **activos** y seleccione **Agregar > nuevo MonoBehaviour**.
+3. Visual Studio para Mac también proporciona algunos asistentes para crear rápidamente clases de comportamiento de Unity. En el **Explorador de soluciones**, haga clic con el botón derecho en **Recursos** y seleccione **Agregar > Nuevo MonoBehaviour**.
 
-    ![nueva acción de contexto de monobehaviour](media/unity-image40.png)
+    ![Acción contextual Nuevo MonoBehaviour](media/unity-image40.png)
 
-4. La clase recién creada proporciona código auxiliar para el **iniciar** y **actualización** métodos. Después de la llave de cierre de la **actualización** método, comience a escribir **"onmouseup"** . A medida que escribe, observe que IntelliSense de Visual Studio rápidamente los ceros el método que se va a implementar. Selecciónelo en la lista Autocompletar proporcionado. Van a rellenar un código auxiliar del método automáticamente, incluidos los parámetros.
+4. La clase recién creada proporciona código auxiliar para los métodos **Start** y **Update**. Después de la llave de cierre del método **Update**, comience a escribir **"onmouseup"**. A medida que escribe, observe que IntelliSense de Visual Studio rápidamente sugiere el método que planea implementar. Selecciónelo en la lista Autocompletar proporcionada. Rellena un código auxiliar del método automáticamente, incluidos los parámetros.
 
-    ![IntelliSense en visual studio para mac](media/unity-image41.png)
+    ![IntelliSense en Visual Studio para Mac](media/unity-image41.png)
 
-5. Dentro de la **OnMouseUp** método, tipo **"base".** Para ver todos los métodos bases disponibles para llamar a. También puede explorar las diferentes sobrecargas de cada función con la opción de paginación en la esquina superior derecha de la ventana flotante de IntelliSense.
+5. Dentro del método **OnMouseUp**, escriba **"base."** para ver todos los métodos base disponibles a los que llamar. También puede examinar las diferentes sobrecargas de cada función con la opción de paginación de la esquina superior derecha del control flotante de IntelliSense.
 
-    ![exploración de las sobrecargas en visual studio para mac](media/unity-image42.png)
+    ![Examen de las sobrecargas de Visual Studio para Mac](media/unity-image42.png)
 
-6. Visual Studio para Mac también le permite definir fácilmente los sombreadores de nuevo. Desde **el Explorador de soluciones**, haga clic en **activos** y seleccione **Agregar > nuevo sombreador**.
+6. Visual Studio para Mac también permite definir fácilmente nuevos sombreadores. En el **Explorador de soluciones**, haga clic con el botón derecho en **Recursos** y seleccione **Agregar > Nuevo sombreador**.
 
-    ![nueva acción de sombreador en visual studio para mac](media/unity-image43.png)
+    ![Acción Nuevo sombreador de Visual Studio para Mac](media/unity-image43.png)
 
-7. El formato de archivo de sombreador obtiene todo color y tratamiento de la fuente para que sea más fácil de leer y comprender.
+7. El formato de archivo del sombreador obtiene tratamiento completo de color y fuente para facilitar su lectura y comprensión.
 
     ![Resaltado de sintaxis](media/unity-image44.png)
 
-8. Vuelva a **Unity**. Verá que, dado que Visual Studio para Mac funciona con el mismo sistema de proyecto, los cambios realizados en cualquier lugar se sincronizan automáticamente con las demás. Ahora es fácil de usar siempre la mejor herramienta para la tarea.
+8. Vuelva a **Unity**. Puede ver que, dado que Visual Studio para Mac funciona con el mismo sistema de proyectos, los cambios realizados en cualquier lugar se sincronizan automáticamente con los demás. Ahora es fácil usar siempre la mejor herramienta para la tarea.
 
-    ![panel activos de Unity](media/unity-image45.png)
+    ![Panel Recursos de Unity](media/unity-image45.png)
 
 ## <a name="summary"></a>Resumen
 
-En este laboratorio, ha aprendido cómo empezar a crear un juego con Unity y Visual Studio para Mac. Consulte [ https://unity3d.com/learn ](https://unity3d.com/learn) para obtener más información acerca de Unity.
+En este laboratorio ha aprendido cómo empezar a crear un juego con Unity y Visual Studio para Mac. Vea [https://unity3d.com/learn](https://unity3d.com/learn) para obtener más información sobre Unity.

@@ -33,7 +33,7 @@ El Cuadro de herramientas aparece junto con las vistas de diseñador, como la vi
 > [!NOTE]
 > Para algunos tipos de proyecto, el **Cuadro de herramientas** no puede mostrar todos los elementos.
 
-La versión de .NET que el proyecto también afecta al conjunto de controles visibles en el cuadro de herramientas. Puede cambiar la versión de framework de destino desde páginas de propiedades del proyecto, si es necesario. Seleccione el modo del proyecto en el **Explorador de soluciones** y, luego, en la barra de menús, elija **Proyecto** > **Propiedades de proyecto**. En la pestaña **Aplicación**, use el menú desplegable **Plataforma de destino**.
+La versión de .NET de destino del proyecto también afecta al conjunto de controles visible en el Cuadro de herramientas. Puede cambiar la versión del marco de destino desde las páginas de propiedades del proyecto, en caso necesario. Seleccione el modo del proyecto en el **Explorador de soluciones** y, luego, en la barra de menús, elija **Proyecto** > **Propiedades de proyecto**. En la pestaña **Aplicación**, use el menú desplegable **Plataforma de destino**.
 
 ## <a name="manage-the-toolbox-window-and-its-controls"></a>Administrar la ventana Cuadro de herramientas y sus controles
 

@@ -115,7 +115,7 @@ Utilice esta ventana para ver y modificar las propiedades de un objeto. También
 |![Espacio de colores RGB](../designers/media/b1_12.png)|**Espacio de colores RGB** Modifique los colores mediante el ajuste de los valores de los editores de números **R**, **G** o **B** (rojo, verde, azul).|
 |![Canal alfa](../designers/media/b1_13.png)|**Canal alfa** Modifique el valor alfa mediante el editor de números situado al lado de **A**.|
 |![Convertir color en recurso](../designers/media/d839d12c-07a1-4127-a830-4a8e7069f4fe.png)|**Convertir color en recurso** Convierta el color seleccionado en un recurso de color. Los recursos de color están disponibles al hacer clic en la pestaña Recursos de color.|
-|![Valor hexadecimal del color](../designers/media/b1_15.png)|**Valor hexadecimal** Vea el valor hexadecimal del color mostrado.|
+|![Valor hexadecimal de color](../designers/media/b1_15.png)|**Valor hexadecimal** Vea el valor hexadecimal del color mostrado.|
 |![Llamada 16](../designers/media/b5_label_16.png)|**Control deslizante de degradado** Aparece únicamente si se selecciona un pincel de degradado.|
 |![Mostrar propiedades avanzadas](../designers/media/d50027a1-6824-4ad8-8b4e-558b0756dcf8.png)|**Mostrar propiedades avanzadas** Vea las categorías de propiedades que se usan con menos frecuencia.|
 

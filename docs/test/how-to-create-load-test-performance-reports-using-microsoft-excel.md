@@ -70,7 +70,7 @@ Los informes de Excel se pueden generar en el **Analizador de pruebas de carga**
 
    2. En la página **Seleccionar la base de datos que contiene las pruebas de carga**, en **Nombre del servidor**, escriba el nombre del servidor que contiene los resultados de pruebas de carga.
 
-   3. En el **nombre de base de datos** lista desplegable, seleccione la base de datos que contiene los resultados de pruebas de carga.
+   3. En la lista desplegable **Nombre de la base de datos**, seleccione la base de datos que contiene los resultados de pruebas de carga.
 
 3. En la página **¿Cómo desea generar el informe?** , compruebe que **Crear un informe** está seleccionado y elija **Siguiente**.
 
@@ -125,7 +125,7 @@ Los informes de Excel se pueden generar en el **Analizador de pruebas de carga**
 
    2. En la página **Seleccionar la base de datos que contiene las pruebas de carga**, en **Nombre del servidor**, escriba el nombre del servidor que contiene los resultados de pruebas de carga.
 
-   3. En el **nombre de base de datos** lista desplegable, seleccione la base de datos que contiene los resultados de pruebas de carga.
+   3. En la lista desplegable **Nombre de la base de datos**, seleccione la base de datos que contiene los resultados de pruebas de carga.
 
 3. En la página **¿Cómo desea generar el informe?** , compruebe que **Crear un informe** está seleccionado y elija **Siguiente**.
 
@@ -144,7 +144,7 @@ Los informes de Excel se pueden generar en el **Analizador de pruebas de carga**
    > [!TIP]
    > Para conseguir mejores informes, las pruebas de carga y las pruebas de rendimiento web cuentan con varias propiedades disponibles que permiten obtener informes más completos. La solicitud de página tiene dos propiedades que se presentan en los informes: Objetivo y Nombre de informe. Los tiempos de respuesta de página se mostrarán con respecto al objetivo y se usará el nombre del informe en lugar de la dirección URL en los informes. En los parámetros de ejecución de una prueba de carga, en Administrar conjuntos de contadores, se incluye la propiedad Etiquetas de equipo para los nombres del equipo de los informes. Resulta muy útil para describir el rol de un equipo determinado en el informe.
 
-## <a name="net-security"></a>Seguridad de .net
+## <a name="net-security"></a>Seguridad de .NET
 
 Los resultados y los informes de pruebas de carga contienen información posiblemente sensible que podría utilizarse para crear ataques contra su equipo o su red. Los resultados y los informes de pruebas de carga contienen nombres de equipo y cadenas de conexión. Debe tenerlo en cuenta cuando comparta informes de pruebas de carga con otros usuarios.
 

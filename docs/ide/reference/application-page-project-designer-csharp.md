@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 91f811a169f9cffc9cf175b68a875c2999d3745d
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 897c3a82f5add84ad343c100b93fd8a4d2663610
+ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744991"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67160054"
 ---
 # <a name="application-page-project-designer-c"></a>Página de aplicación, Diseñador de proyectos (C#)
 
@@ -50,18 +50,18 @@ Para obtener acceso a esta propiedad mediante programación, vea <xref:VSLangPro
 
 **Marco de destino**
 
-Especifica la versión de .NET que los destinos de la aplicación. Esta opción puede tener valores diferentes dependiendo de qué versiones de .NET están instaladas en el equipo.
+Especifica la versión de .NET a la que se destina la aplicación. Esta opción puede tener valores diferentes según las versiones de .NET instaladas en el equipo.
 
-Para los proyectos de .NET Framework, el valor predeterminado coincide con la plataforma de destino que especificó cuando creó el proyecto.
+En los proyectos de .NET Framework, el valor predeterminado coincide con el marco de destino especificado al crear el proyecto.
 
-Para un proyecto que tiene como destino .NET Core, las versiones disponibles pueden aparecer como sigue:
+En un proyecto que tiene como destino .NET Core, las versiones disponibles pueden aparecer de este modo:
 
-![Versiones de framework de destino para un proyecto .NET Core](../media/application-target-framework.png)
+![Versiones de marco de destino de un proyecto de .NET Core](../media/application-target-framework.png)
 
 > [!NOTE]
 > Los paquetes de requisitos previos incluidos en el [cuadro de diálogo Requisitos previos](../../ide/reference/prerequisites-dialog-box.md) se establecen automáticamente la primera vez que abre el cuadro de diálogo. Si posteriormente cambia la plataforma de destino del proyecto, debe seleccionar manualmente los requisitos previos para que coincidan con la nueva plataforma de destino.
 
-Para obtener más información, vea [Cómo: Una versión de .NET Framework de destino](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) y [la plataforma de destino de la información general sobre](../../ide/visual-studio-multi-targeting-overview.md).
+Para obtener más información, vea [Información general sobre destinos de Framework](../../ide/visual-studio-multi-targeting-overview.md).
 
 **Tipo de salida**
 

@@ -165,7 +165,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 
   - `OriginalItemSpec`, que contiene la especificación del elemento original de la referencia.
 
-  - `ResolvedFrom`, se establece en "{TargetFrameworkDirectory}" si se ha resuelto en el directorio de .NET Framework.
+  - `ResolvedFrom`, establecido en "{TargetFrameworkDirectory}" si se ha resuelto desde el directorio de .NET Framework.
 
 - Referencias COM:
 

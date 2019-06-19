@@ -19,7 +19,7 @@ ms.locfileid: "66747398"
 Un proyecto se puede compilar para su ejecución en una *plataforma de destino*, que es una versión determinada de .NET Framework, y en una *plataforma de destino*, que es una arquitectura de software determinada.  Por ejemplo, puede diseñar una aplicación para que se ejecute en .NET Framework 2.0 en una plataforma de 32 bits compatible con la familia de procesadores 802x86 ("x86"). La combinación de la plataforma de destino y la plataforma de destino se denomina *contexto de destino*.
 
 ## <a name="target-framework-and-profile"></a>Marco y perfil de destino
- Una plataforma de destino es la versión de .NET Framework que se compila el proyecto particular. Es necesario especificar una versión del marco de trabajo de destino, ya que esto permite habilitar las características del compilador y las referencias de ensamblado exclusivas de esa versión del marco.
+ Un marco de destino es la versión concreta de .NET Framework para la que se ha compilado el proyecto. Es necesario especificar una versión del marco de trabajo de destino, ya que esto permite habilitar las características del compilador y las referencias de ensamblado exclusivas de esa versión del marco.
 
  Actualmente, se pueden usar las versiones siguientes de .NET Framework:
 
@@ -31,7 +31,7 @@ Un proyecto se puede compilar para su ejecución en una *plataforma de destino*,
 
 - .NET Framework 4.5.2
 
-- .NET Framework 4.6 (incluidas en [!INCLUDE[vs_dev14](../misc/includes/vs_dev14_md.md)])
+- .NET Framework 4.6 (incluido en [!INCLUDE[vs_dev14](../misc/includes/vs_dev14_md.md)])
 
 - .NET Framework 4.6.1
 
