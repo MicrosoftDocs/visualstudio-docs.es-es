@@ -1,22 +1,22 @@
 ---
 title: Usar el marco de pruebas unitarias de Microsoft para C++
-ms.date: 05/20/2019
+ms.date: 06/13/2019
 ms.topic: conceptual
 ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 56ed33ed5fa769a3bf830bcb2f57264c1a9ff531
-ms.sourcegitcommit: 0ef51e3517436a85cfb85bf492722d566ce602c4
+ms.openlocfilehash: bcd75724e5124c280d5c3e54bfe870041c432790
+ms.sourcegitcommit: ab06cde69d862440b4277bcd9bf02e7b50593a1b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "65934491"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67132132"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Usar el marco de pruebas unitarias de Microsoft para C++ en Visual Studio
 
-El marco de pruebas unitarias de Microsoft para C++ se incluye de forma predeterminada en la carga de trabajo de **desarrollo para el escritorio con C++**.
+El marco de pruebas unitarias de Microsoft para C++ se incluye de forma predeterminada en la carga de trabajo de **desarrollo para el escritorio con C++** .
 
 ## <a name="separate_project"></a>Para escribir pruebas unitarias en un proyecto independiente
 
@@ -28,7 +28,7 @@ En algunos casos (por ejemplo, al probar funciones no exportadas en una DLL), pu
 
 1. Modifique las propiedades del proyecto para incluir los encabezados y los archivos de biblioteca que sean necesarios para las pruebas unitarias.
 
-   1. En el **Explorador de soluciones**, haga clic con el botón derecho en el nodo de proyecto del programa que esté probando y, luego, elija **Propiedades** > **Propiedades de configuración** > **Directorios de VC++**.
+   1. En el **Explorador de soluciones**, haga clic con el botón derecho en el nodo de proyecto del programa que esté probando y, luego, elija **Propiedades** > **Propiedades de configuración** > **Directorios de VC++** .
 
    2. Haga clic en la flecha abajo de las siguientes filas y seleccione **\<Editar>** . Agregue estas rutas de acceso:
 
@@ -89,7 +89,7 @@ TEST_METHOD(Method1)
 
 Encontrará los siguientes rasgos predefinidos en `CppUnitTest.h`. Para obtener más información, vea la [referencia de API del marco de pruebas unitarias de Microsoft para C++](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md).
 
-|Macro|Descripción|
+|Macro|DESCRIPCIÓN|
 |-|-----------------|
 |`TEST_METHOD_ATTRIBUTE(attributeName, attributeValue)`|Para definir un rasgo, use la macro TEST_METHOD_ATTRIBUTE.|
 |`TEST_OWNER(ownerAlias)`|Para especificar un propietario del método de prueba, use el rasgo de propietario predefinido.|
