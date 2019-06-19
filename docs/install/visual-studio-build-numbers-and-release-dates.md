@@ -6,7 +6,7 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 06/06/2019
+ms.date: 06/12/2019
 ms.topic: reference
 helpviewer_keywords: ''
 ms.custom: seodec18
@@ -14,12 +14,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: d801dab9acb2148503392de12dfcf028de692eb8
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: cd5bc77481be374aa1b3f2368f925210380893d7
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746275"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032023"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Números de compilación y fechas de lanzamiento de Visual Studio
 
@@ -31,6 +31,9 @@ En la tabla siguiente se enumeran los números de compilación y las fechas de v
 
 | **Versión**| **Canal** | **Fecha de lanzamiento** | **Versión de compilación** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.1.3 | Release | 11 de junio de 2019 | 16.1.29009.5 |
+| 16.2.0 | Preview 2 | 11 de junio de 2019 | 16.2.29006.145 |
+| 16.0.5 | Release | 11 de junio de 2019 | 16.0.28803.514 |
 | 16.1.2 | Release | 5 de junio de 2019 | 16.1.29001.49 |
 | 16.1.1 | Release | 24 de mayo de 2019 | 16.1.28922.388 |
 | 16.1.0 | Release | 21 de mayo de 2019 | 16.1.28917.181 |
@@ -77,6 +80,8 @@ En la tabla siguiente se enumeran los números de compilación y las fechas de l
 
 | **Versión**| **Canal** | **Fecha de lanzamiento** | **Versión de compilación** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.13 | Release | 11 de junio de 2019 | 15.9.28307.718 |
+| 15.0.24 | Release | 11 de junio de 2019 | 15.0.26228.88 |
 | 15.9.12 | Release | 14 de mayo de 2019 | 15.9.28307.665 |
 | 15.0.23 | Release | 14 de mayo de 2019 | 15.0.26228.85 |
 | 15.9.11 | Release | 2 de abril de 2019 | 15.9.28307.586 |

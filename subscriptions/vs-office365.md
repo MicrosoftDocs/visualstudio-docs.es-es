@@ -7,16 +7,16 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Obtenga información sobre la ventaja de Office 365 que se incluye en algunas suscripciones de Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 41f30d01dab1adf98d50789c4ebd418a7f002fb8
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 33e70c6208505df175161b248a60e0527f7b2a6b
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263122"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032828"
 ---
 # <a name="office-365-proplus-in-visual-studio-subscriptions"></a>Office 365 ProPlus en suscripciones de Visual Studio
 
-Cree su mejor obra. Trabaje en cualquier parte con aplicaciones siempre actualizadas. Office 365 ProPlus es una suscripción que se incluye con aplicaciones premium como Word, Excel, PowerPoint, OneNote, Outlook, Publisher y Access (Publisher y Access solo están disponibles para equipos PC). Las aplicaciones se pueden instalar en varios dispositivos, como equipos PC, Mac, iPad, iPhone, tabletas Android y teléfonos Android. Office 365 también incluye servicios como 1 TB de almacenamiento de OneDrive, 60 minutos mensuales de Skype y soporte telefónico y asistencia al cliente por chat de Microsoft. Con una suscripción, obtiene las versiones más recientes de las aplicaciones y recibe, de manera automática, actualizaciones cuando se producen.
+Cree su mejor obra. Trabaje en cualquier parte con aplicaciones siempre actualizadas. Office 365 ProPlus es una suscripción que se incluye con aplicaciones premium como Word, Excel, PowerPoint, OneNote, Outlook, Publisher y Access (Publisher y Access solo están disponibles para equipos PC). Las aplicaciones se pueden instalar en varios dispositivos, como equipos PC, Mac, iPad, iPhone, tabletas Android y teléfonos Android. Con una suscripción, obtiene las versiones más recientes de las aplicaciones y recibe, de manera automática, actualizaciones cuando se producen.
 
 ## <a name="getting-started-with-office-365-proplus"></a>Introducción a Office 365 ProPlus
 
@@ -58,7 +58,7 @@ Si planea desarrollar aplicaciones para Office, querrá activar su [suscripción
 | Visual Studio Test Professional (estándar)                         | Licencia por volumen, venta directa                                              | No disponible                                             |  N/D          |
 | Plataformas MSDN (estándar)                                          | Licencia por volumen, venta directa                                              | No disponible                                              |  N/D          |
 | Visual Studio Enterprise, Visual Studio Professional (de nube mensual) | Azure | No disponible | N/D |
-| Visual Studio Dev Essentials | N/D  | No disponible |N/D |
+|  |
 
 <sup>1</sup>  *Incluye:  No para reventa (NFR), Visual Studio Industry Partner (VSIP), Microsoft Partner Network (MPN), FTE, MCT Software & Services Developer, BizSpark, Most Valuable Professional (MVP), Regional Director (RD), MCT Software & Services, Imagine, Microsoft Partner Network.*
 
