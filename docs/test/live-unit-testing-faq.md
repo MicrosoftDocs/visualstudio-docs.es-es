@@ -33,7 +33,7 @@ Live Unit Testing funciona con los tres marcos de pruebas unitarias conocidos qu
 |Marco de prueba  |Versión mínima del adaptador de Visual Studio  |Versión mínima del marco  |
 |---------|---------|---------|
 |xUnit.net |xunit.runner.visualstudio version 2.2.0-beta3-build1187 |xunit 1.9.2 |
-|NUnit |NUnit3TestAdapter versión 3.7.0 |NUnit version 3.5.0 |
+|NUnit |NUnit3TestAdapter version 3.7.0 |NUnit version 3.5.0 |
 |MSTest |MSTest.TestAdapter 1.1.4-preview |MSTest.TestFramework 1.0.5-preview |
 
 Si tiene proyectos de prueba basados en versiones anteriores de MSTest que hacen referencia a `Microsoft.VisualStudio.QualityTools.UnitTestFramework` y no quiere migrar a los paquetes NuGet de MSTest más recientes, actualice a la versión 15.4 o posterior de Visual Studio 2017.

@@ -34,7 +34,7 @@ ms.locfileid: "66747708"
 ---
 # <a name="view-the-structure-of-code-using-different-tool-windows"></a>Visualización de la estructura del código mediante distintas ventanas de herramienta
 
-Puede examinar las clases y sus miembros en Visual Studio con diversas ventanas de herramienta, entre las que se incluyen **Vista de clases**, **Jerarquía de llamadas**, **Examinador de objetos** y **Definición de código** (solo en C++). Estas ventanas de herramientas pueden examinar el código en proyectos de Visual Studio, los componentes de .NET y componentes COM, bibliotecas de vínculos dinámicos (DLL) y bibliotecas de tipo (TLB).
+Puede examinar las clases y sus miembros en Visual Studio con diversas ventanas de herramienta, entre las que se incluyen **Vista de clases**, **Jerarquía de llamadas**, **Examinador de objetos** y **Definición de código** (solo en C++). Estas ventanas de herramientas permiten examinar el código de proyectos de Visual Studio, componentes de .NET, componentes COM, bibliotecas de vínculos dinámicos (DLL) y bibliotecas de tipos (TLB).
 
 También puede usar el **Explorador de soluciones** para examinar los tipos y miembros de sus proyectos, buscar símbolos, ver la jerarquía de llamadas de un método o buscar referencias de símbolos, entre otros, sin tener que cambiar de una ventana de herramienta a otra.
 

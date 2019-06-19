@@ -17,7 +17,7 @@ ms.lasthandoff: 06/06/2019
 ms.locfileid: "66746270"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-concurrency-data-by-using-the-command-line"></a>Procedimiento Asociar el generador de perfiles a un servicio .NET para recopilar datos de simultaneidad mediante la línea de comandos
-En este artículo se describe cómo usar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] de servicio de herramientas de línea de comandos de herramientas de generación de perfiles al adjuntar el generador de perfiles a una versión .NET Framework y recopilar datos de simultaneidad de procesos y subprocesos utilizando el método de muestreo.
+En este artículo se explica cómo usar las herramientas de línea de comandos de Herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para adjuntar el generador de perfiles a un servicio de .NET Framework y recopilar datos de simultaneidad de procesos y subprocesos mediante el método de muestreo.
 
 > [!NOTE]
 > Las características de seguridad mejoradas en Windows 8 y Windows Server 2012 requirieron cambios significativos en la forma en que el generador de perfiles de Visual Studio recopila datos en estas plataformas. Las aplicaciones para UWP también requieren nuevas técnicas de recopilación. Consulte [Herramientas de rendimiento en aplicaciones de Windows 8 y Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).

@@ -28,7 +28,7 @@ ms.locfileid: "66746954"
 ---
 # <a name="microsoft-help-viewer"></a>Visor de Ayuda de Microsoft
 
-Puede instalar y ver el contenido de distintos productos y tecnologías en el equipo local usando el Visor de Ayuda de Microsoft. Estos productos incluyen Visual Studio,. NET, referencia del lenguaje, SQL Server y el desarrollo de Windows. El Visor de Ayuda le permite:
+Puede instalar y ver el contenido de distintos productos y tecnologías en el equipo local usando el Visor de Ayuda de Microsoft. Estos productos incluyen Visual Studio, .NET, Referencia del lenguaje, SQL Server y Desarrollo para Windows. El Visor de Ayuda le permite:
 
 - Descargar conjuntos de contenido, que también se conocen como libros. Esto puede ser útil si tiene que trabajar "sin conexión" y seguir teniendo acceso a la documentación.
 

@@ -57,14 +57,14 @@ Para obtener información sobre cómo tener acceso a esta propiedad mediante pro
 
 ### <a name="target-framework-all-configurations"></a>Plataforma de destino (todas las configuraciones)
 
-Especifica la versión de .NET que los destinos de la aplicación. Esta opción puede tener valores diferentes dependiendo de qué versiones de .NET están instaladas en el equipo.
+Especifica la versión de .NET a la que se destina la aplicación. Esta opción puede tener valores diferentes según las versiones de .NET instaladas en el equipo.
 
-Para los proyectos de .NET Framework, el valor predeterminado coincide con la plataforma de destino que especificó cuando creó el proyecto.
+En los proyectos de .NET Framework, el valor predeterminado coincide con el marco de destino especificado al crear el proyecto.
 
 > [!NOTE]
 > Los paquetes de requisitos previos que se muestran en el [cuadro de diálogo Requisitos previos](../../ide/reference/prerequisites-dialog-box.md) se establecen automáticamente la primera vez que abre el cuadro de diálogo. Si posteriormente cambia la plataforma de destino del proyecto, debe especificar manualmente los requisitos previos para que coincidan con la nueva plataforma de destino.
 
-Para obtener más información, vea [Cómo: Una versión de .NET Framework de destino](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) y [la plataforma de destino de la información general sobre](../../ide/visual-studio-multi-targeting-overview.md).
+Para obtener más información, vea [Cómo: Usar una versión de .NET Framework como destino](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) e [Información general sobre destinos de Framework](../../ide/visual-studio-multi-targeting-overview.md).
 
 ### <a name="application-type"></a>Tipo de aplicación
 
@@ -90,7 +90,7 @@ Si el proyecto es una Aplicación de explorador WPF, esta lista se titula **URI 
 
 Si **Habilitar marco de trabajo de la aplicación** está desactivado, esta lista se convierte en **Objeto de inicio** y muestra los formularios y las clases o módulos con un `Sub Main`.
 
-**Objeto de inicio** define el punto de entrada al que se va a llamar cuando se cargue la aplicación. Normalmente, esto se establece en el formulario principal de la aplicación o en el procedimiento `Sub Main` que debe ejecutarse cuando se inicia la aplicación. Dado que las bibliotecas de clases no tienen un punto de entrada, la única opción para esta propiedad es **(None)** . Para obtener más información, vea [/main](/dotnet/visual-basic/reference/command-line-compiler/main). Para obtener acceso a esta propiedad mediante programación, vea <xref:VSLangProj.ProjectProperties.StartupObject%2A>.
+**Objeto de inicio** define el punto de entrada al que se va a llamar cuando se cargue la aplicación. Normalmente, esto se establece en el formulario principal de la aplicación o en el procedimiento `Sub Main` que debe ejecutarse cuando se inicia la aplicación. Dado que las bibliotecas de clases no tienen un punto de entrada, la única opción para esta propiedad es **(None)**. Para obtener más información, vea [/main](/dotnet/visual-basic/reference/command-line-compiler/main). Para obtener acceso a esta propiedad mediante programación, vea <xref:VSLangProj.ProjectProperties.StartupObject%2A>.
 
 ### <a name="icon"></a>Iconos
 
@@ -153,7 +153,7 @@ Seleccione **Al cerrar la ventana principal** para especificar que se salga de l
 
 ### <a name="splash-screen"></a>Pantalla de presentación
 
-Seleccione el formulario que quiere usar como una pantalla de presentación. Debe haber creado anteriormente una pantalla de presentación con un formulario o una plantilla. El valor predeterminado es **(None)** .
+Seleccione el formulario que quiere usar como una pantalla de presentación. Debe haber creado anteriormente una pantalla de presentación con un formulario o una plantilla. El valor predeterminado es **(None)**.
 
 ### <a name="view-application-events"></a>Ver eventos de aplicaciones
 

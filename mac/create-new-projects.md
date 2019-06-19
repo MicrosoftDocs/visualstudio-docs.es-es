@@ -14,42 +14,42 @@ ms.locfileid: "66820743"
 ---
 # <a name="creating-a-new-project"></a>Crear un proyecto nuevo
 
-## <a name="opening-the-project-creation-dialog"></a>Abrir el cuadro de diálogo de creación del proyecto
+## <a name="opening-the-project-creation-dialog"></a>Apertura del cuadro de diálogo Creación de proyecto
 
-Hay varias maneras de crear un nuevo proyecto en Visual Studio para Mac. Cuando abra por primera vez Visual Studio para Mac, se mostrará la pantalla de bienvenida. Desde aquí puede elegir **New** que le llevará a la pantalla de creación del proyecto.
+Hay varias maneras de crear un proyecto en Visual Studio para Mac. Al abrir por primera vez Visual Studio para Mac, se muestra la pantalla de inicio. Desde ahí se puede elegir **Nuevo**, que lleva a la pantalla Creación de proyecto.
 
 > [!TIP]
-> Además, desde la pantalla de bienvenida también puede abrir y buscar, proyectos y soluciones recientes. También puede abrir proyectos recientes, vaya a la barra de menús y elegir **archivo > Soluciones recientes**
+> Además, desde la pantalla de inicio también se pueden abrir y buscar proyectos y soluciones recientes. También puede abrir proyectos recientes si va a la barra de menús y selecciona **Archivo > Soluciones recientes**
 
-![Pantalla de bienvenida con crear nuevo proyecto](media/first-run-project.png)
+![Pantalla de inicio con Crear nuevo proyecto](media/first-run-project.png)
 
-Si Visual Studio para Mac ya está abierto con una solución cargada, puede crear una nueva solución, vaya a la barra de menús y elegir **archivo > nueva solución**. Crear una nueva solución de este modo se cerrará la solución que ya está cargada.
+Si Visual Studio para Mac ya está abierto con una solución cargada, puede crear una nueva solución si va a la barra de menús y selecciona **Archivo > Nueva solución**. Al crear una nueva solución de este modo se cierra la solución que ya estaba cargada.
 
-## <a name="creating-a-new-project-from-a-template"></a>Crear un nuevo proyecto a partir de una plantilla
+## <a name="creating-a-new-project-from-a-template"></a>Creación de un proyecto a partir de una plantilla
 
-El **nuevo proyecto** cuadro de diálogo, de forma predeterminada, mostrará las plantillas usadas recientemente ordenadas por *usados más recientemente*.
+El cuadro de diálogo **Nuevo proyecto** muestra de forma predeterminada las plantillas usadas recientemente ordenadas por *Usadas recientemente*.
 
-Si no desea usar una plantilla recientes, puede elegir en las categorías de la izquierda del cuadro de diálogo. Cada categoría contiene varias plantillas de proyecto para que pueda elegir. Al hacer clic en un tipo de proyecto le permite ver una descripción en el lado derecho de la pantalla.
+Si no quiere usar una plantilla reciente, puede seleccionar entre las categorías de la izquierda del cuadro de diálogo. Cada categoría contiene varias plantillas de proyecto entre las que elegir. Al hacer clic en un tipo de proyecto, se puede ver una descripción en el lado derecho de la pantalla.
 
-![Pantalla de proyecto nuevo](media/project-creation-screen.png)
+![Pantalla Nuevo proyecto](media/project-creation-screen.png)
 
-## <a name="configuring-your-new-project"></a>Configurar el nuevo proyecto
+## <a name="configuring-your-new-project"></a>Configuración del nuevo proyecto
 
-Una vez haya elegido una plantilla de proyecto, las siguientes pantallas le guiará por los pasos de configuración necesarios para configurar el proyecto; Esto puede variar según el tipo de proyecto.
+Una vez que se elige una plantilla de proyecto, las siguientes pantallas guían a lo largo de los pasos de configuración necesarios para configurar el proyecto; esto puede variar según el tipo de proyecto.
 
-Todos los proyectos requieren un nuevo proyecto, junto con una ubicación para almacenar los archivos. Si el proyecto forma parte de una solución nueva, en lugar de agregarlo a una solución existente, también será necesario un nombre de la solución.
+Todos los proyectos requieren un nuevo proyecto, además de una ubicación para almacenar los archivos. Si el proyecto forma parte de una solución nueva, en lugar de agregarse a una solución existente, también es necesario un nombre de solución.
 
-Si lo desea, en esta fase también puede configurar las opciones de control de código fuente de Git. La imagen siguiente es un ejemplo del paso final de la configuración para un proyecto .NET Core:
+Opcionalmente, en esta fase también puede configurar opciones de control de código fuente de Git. La imagen siguiente es un ejemplo del paso de configuración final de un proyecto de .NET Core:
 
 ![Configuración de un proyecto nuevo](media/configure-new-project.png)
 
-## <a name="adding-additional-projects-to-a-solution"></a>Agregar proyectos adicionales a una solución
+## <a name="adding-additional-projects-to-a-solution"></a>Incorporación de proyectos adicionales a una solución
 
-Puede agregar proyectos adicionales a una solución haciendo clic en la solución en el panel de solución y elegir cualquiera **Agregar > Agregar nuevo proyecto** o **Agregar > Agregar proyecto existente**.
+Puede agregar proyectos adicionales a una solución si hace clic con el botón derecho en la solución en el Panel de solución y selecciona **Agregar > Agregar nuevo proyecto** o **Agregar > Agregar proyecto existente**.
 
-Agregar un nuevo proyecto le llevará a través de la creación del proyecto, como se muestra en [configurar el nuevo proyecto](#configuring-your-new-project).
+La incorporación de un nuevo proyecto lleva a través de la creación del proyecto, como se muestra en [Configuración del nuevo proyecto](#configuring-your-new-project).
 
-Optar por agregar un proyecto existente, podrá buscar un proyecto existente en el equipo y agregarlo a la solución.
+Si opta por agregar un proyecto existente, puede buscar un proyecto existente en el equipo y agregarlo a la solución.
 
 ## <a name="see-also"></a>Vea también
 

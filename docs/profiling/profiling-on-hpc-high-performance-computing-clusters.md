@@ -36,9 +36,9 @@ Para generar perfiles en un nodo de ejecución HPC, debe hacer lo siguiente:
 
 - Instale Microsoft HPC Pack 2008 en el mismo equipo en que está Visual Studio. El equipo no tiene que formar parte del clúster HPC. Puede instalar HPC Pack en el [Centro de descarga de Microsoft](http://go.microsoft.com/fwlink/?LinkID=177414).
 
-- Instale .NET Framework 4 y nodo de proceso de la versión independiente de las herramientas de generación de perfiles en el HPC. Programas de instalación de .NET Framework y el generador de perfiles independiente están disponibles en los medios de instalación de Visual Studio. **Tenga en cuenta** debe reiniciar el proceso después de instalar .NET Framework y antes de instalar las herramientas de generación de perfiles.
+- Instale .NET Framework 4 y la versión independiente de Herramientas de generación de perfiles en el nodo de ejecución de HPC. Los programas de instalación de .NET Framework y el generador de perfiles independiente están disponibles en los soportes de instalación de Visual Studio. **Nota** Debe reiniciar el equipo después de instalar .NET Framework y antes de hacer lo propio con Herramientas de generación de perfiles.
 
-  Para instalar .NET Framework 4 y las herramientas de generación de perfiles independientes en un nodo de proceso HPC activo y habilitar la generación de perfiles en el equipo del clúster, siga estos pasos:
+  Para instalar .NET Framework 4 y Herramientas de generación de perfiles independiente en un nodo de ejecución de HPC activo y habilitar la generación de perfiles en el equipo del clúster, siga estos pasos:
 
 1. Abra la ventana de símbolo del sistema que se instala con el paquete de HPC.
 

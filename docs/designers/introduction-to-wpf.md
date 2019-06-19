@@ -24,13 +24,13 @@ Windows Presentation Foundation (WPF) le permite crear aplicaciones de cliente d
 
 ![Ejemplo Contoso Healthcare UI](../designers/media/wpfintrofigure24.png)
 
-El núcleo de WPF es un motor de representación basado en vectores e independiente de la resolución que está diseñado para sacar partido al moderno hardware gráfico. WPF amplía el núcleo con un conjunto completo de características de desarrollo de aplicaciones que incluyen Extensible Application Markup Language (XAML), controles, enlace de datos, diseño, gráficos en 2D y 3D, animación, estilos, plantillas, documentos, elementos multimedia, texto y tipografía. WPF es parte de. NET, lo que permite compilar aplicaciones que incorporan otros elementos de la API. NET.
+El núcleo de WPF es un motor de representación basado en vectores e independiente de la resolución que está diseñado para sacar partido al moderno hardware gráfico. WPF amplía el núcleo con un conjunto completo de características de desarrollo de aplicaciones que incluyen Extensible Application Markup Language (XAML), controles, enlace de datos, diseño, gráficos en 2D y 3D, animación, estilos, plantillas, documentos, elementos multimedia, texto y tipografía. WPF es parte de. NET, así que permite compilar aplicaciones que incorporan otros elementos de la API de .NET.
 
 Esta introducción está dirigida a personas que aún no conocen WPF, y en ella se abordan sus conceptos y capacidades principales.
 
 ## <a name="program-with-wpf"></a>Programar con WPF
 
-WPF consisten en un subconjunto de tipos de .NET (la mayor parte) se encuentran en el <xref:System.Windows> espacio de nombres. Si ha compilado previamente aplicaciones con .NET mediante tecnologías administradas como ASP.NET y Windows Forms, la experiencia de programación de conceptos básicos de WPF deben resultarle familiares; crear instancias de clases, establecer propiedades, llamar a métodos y controlará eventos con el lenguaje de programación como favoritas de .NET C# o Visual Basic.
+WPF existe como un subconjunto de tipos de .NET que, en su mayoría, están ubicados en el espacio de nombres <xref:System.Windows>. Si ha compilado previamente aplicaciones con .NET mediante tecnologías administradas como ASP.NET y Windows Forms, la experiencia de programación fundamental en WPF debe resultarle familiar; cree instancias de clases, defina propiedades, llame a métodos y controle eventos con el lenguaje de programación de .NET que prefiera, como C# o Visual Basic.
 
 WPF incluye construcciones de programación adicionales que mejoran las propiedades y los eventos: las [propiedades de dependencia](/dotnet/framework/wpf/advanced/dependency-properties-overview) y los [eventos enrutados](/dotnet/framework/wpf/advanced/routed-events-overview).
 

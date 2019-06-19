@@ -22,44 +22,44 @@ ms.locfileid: "66744999"
 ---
 # <a name="code-analysis-project-designer"></a>Análisis de código, Diseñador de proyectos
 
-Contiene la herramienta de análisis de código que puede optar por ejecutar en su código. La herramienta notifica información sobre los ensamblados, como las infracciones de las reglas de programación y diseño estipuladas en las instrucciones de diseño de .NET de Microsoft.
+Contiene la herramienta de análisis de código que puede optar por ejecutar en su código. La herramienta notifica información sobre los ensamblados, como las infracciones de las reglas de programación y de diseño estipuladas en las instrucciones de diseño de Microsoft .NET.
 
 ## <a name="uielement-list"></a>Lista de UIElement
 
- Habilitar código pública\
+ Habilitar análisis de código\
  Habilita o deshabilita el análisis de código para el proyecto.
 
- Diseño Rules\
+ Diseñar reglas\
  Habilita o deshabilita las reglas de diseño. También puede expandir esta entrada para habilitar o deshabilitar reglas individuales.
 
- Globalización Rules\
+ Reglas de globalización\
  Habilita o deshabilita las reglas de globalización. También puede expandir esta entrada para habilitar o deshabilitar reglas individuales.
 
- Interoperabilidad Rules\
+ Reglas de interoperabilidad\
  Habilita o deshabilita las reglas de interoperabilidad. También puede expandir esta entrada para habilitar o deshabilitar reglas individuales.
 
- Mantenimiento Rules\
+ Reglas de mantenimiento\
  Habilita o deshabilita las reglas de mantenimiento. También puede expandir esta entrada para habilitar o deshabilitar reglas individuales.
 
- Movilidad Rules\
+ Reglas de movilidad\
  Habilita o deshabilita las reglas de movilidad. También puede expandir esta entrada para habilitar o deshabilitar reglas individuales.
 
- Nomenclatura Rules\
+ Reglas de nomenclatura\
  Habilita o deshabilita las reglas de nomenclatura. También puede expandir esta entrada para habilitar o deshabilitar reglas individuales.
 
- Rendimiento Rules\
+ Reglas de rendimiento\
  Habilita o deshabilita las reglas de rendimiento. También puede expandir esta entrada para habilitar o deshabilitar reglas individuales.
 
- Portabilidad Rules\
+ Reglas de portabilidad\
  Habilita o deshabilita las reglas de portabilidad. También puede expandir esta entrada para habilitar o deshabilitar reglas individuales.
 
- Confiabilidad Rules\
+ Reglas de confiabilidad\
  Habilita o deshabilita las reglas de confiabilidad. También puede expandir esta entrada para habilitar o deshabilitar reglas individuales.
 
- Seguridad Rules\
+ Reglas de seguridad\
  Habilita o deshabilita las reglas de seguridad. También puede expandir esta entrada para habilitar o deshabilitar reglas individuales.
 
- Uso Rules\
+ Reglas de uso\
  Habilita o deshabilita las reglas de uso. También puede expandir esta entrada para habilitar o deshabilitar reglas individuales.
 
 ## <a name="see-also"></a>Vea también

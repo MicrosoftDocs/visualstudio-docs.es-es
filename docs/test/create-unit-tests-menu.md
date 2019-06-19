@@ -21,7 +21,7 @@ ms.locfileid: "66745799"
 El comando **Crear pruebas unitarias** crea códigos auxiliares de método de pruebas unitarias. Esta característica permite una configuración sencilla de un proyecto de prueba, la clase de prueba y el código auxiliar de método de pruebas de su interior.
 
 > [!NOTE]
-> El **crear pruebas unitarias** comando de menú solo está disponible para código administrado que tenga como destino .NET Framework (pero no en .NET Core).
+> El comando de menú **Crear pruebas unitarias** solo está disponible para el código administrado que tiene como destino .NET Framework (pero no .NET Core).
 
 El comando de menú **Crear pruebas unitarias** es extensible y puede utilizarse para generar pruebas de MSTest, MSTest V2, NUnit y xUnit.
 

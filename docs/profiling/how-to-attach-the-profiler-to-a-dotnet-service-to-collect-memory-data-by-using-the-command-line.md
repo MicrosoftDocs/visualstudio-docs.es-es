@@ -17,7 +17,7 @@ ms.lasthandoff: 06/06/2019
 ms.locfileid: "66746298"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-memory-data-by-using-the-command-line"></a>Procedimiento Asociar el generador de perfiles a un servicio .NET para recopilar datos de memoria mediante la línea de comandos
-En este artículo se describe cómo usar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] de servicio de herramientas de línea de comandos de herramientas de generación de perfiles al adjuntar el generador de perfiles a una versión .NET Framework y recopilar datos de memoria. Puede recopilar datos sobre el número y tamaño de asignaciones de memoria, así como recopilar datos sobre la duración de objetos de memoria.
+En este artículo se explica cómo usar las herramientas de línea de comandos de Herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para adjuntar el generador de perfiles a un servicio de .NET Framework y recopilar datos de memoria. Puede recopilar datos sobre el número y tamaño de asignaciones de memoria, así como recopilar datos sobre la duración de objetos de memoria.
 
 > [!NOTE]
 > Las características de seguridad mejoradas en Windows 8 y Windows Server 2012 requirieron cambios significativos en la forma en que el generador de perfiles de Visual Studio recopila datos en estas plataformas. Las aplicaciones para UWP también requieren nuevas técnicas de recopilación. Consulte [Herramientas de rendimiento en aplicaciones de Windows 8 y Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
@@ -25,7 +25,7 @@ En este artículo se describe cómo usar [!INCLUDE[vsprvs](../code-quality/inclu
 > [!NOTE]
 > Para obtener la ruta de acceso a las herramientas de generación de perfiles, vea [Especificar la ruta de acceso a las herramientas de línea de comandos](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). En equipos de 64 bits, están disponibles las dos versiones de las herramientas, la de 64 bits y la de 32 bits. Para utilizar las herramientas de línea de comandos del generador de perfiles, debe agregar la ruta de acceso de las herramientas a la variable de entorno PATH de la ventana Símbolo del sistema o agregarla al propio comando.
 
- Para recopilar datos de memoria de un servicio de .NET Framework, usa el [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) herramienta para inicializar las variables de entorno adecuadas en el equipo que hospeda el servicio. El equipo se debe reiniciar para configurarlo para la generación de perfiles.
+ Para recopilar datos de memoria de un servicio de .NET Framework, use la herramienta [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) para inicializar las variables de entorno adecuadas en el equipo que hospeda el servicio. El equipo se debe reiniciar para configurarlo para la generación de perfiles.
 
  Después, use la herramienta [VSPerfCmd](../profiling/vsperfcmd.md) para adjuntar el generador de perfiles al proceso del servicio. Mientras el generador de perfiles está adjunto al servicio, puede pausar y reanudar la recolección de datos.
 

@@ -16,7 +16,7 @@ ms.lasthandoff: 06/06/2019
 ms.locfileid: "66747813"
 ---
 # <a name="collect-memory-data-from-net-framework-services-by-using-the-profiler-command-line"></a>Recopilar datos de memoria de servicios de .NET Framework utilizando la línea de comandos del generador de perfiles
-Esta sección describen los procedimientos y las opciones para recopilar datos de duración de objetos para un servicio de .NET Framework mediante el método de muestreo desde la línea de comandos y de asignación de memoria.
+En esta sección se explican los procedimientos y las opciones para recopilar datos de asignación de memoria y duración de objetos de un servicio de .NET Framework mediante el método de muestreo de la línea de comandos.
 
 ## <a name="common-tasks"></a>Tareas comunes
 

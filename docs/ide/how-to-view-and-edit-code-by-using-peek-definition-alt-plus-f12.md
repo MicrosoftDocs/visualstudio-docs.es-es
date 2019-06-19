@@ -18,11 +18,11 @@ ms.locfileid: "66747332"
 
 Puede usar el comando **Ver la definición** para ver y editar código sin salir del código que está escribiendo. **Ver la definición** e **Ir a definición** muestran la misma información, pero **Ver la definición** la muestra en una ventana emergente, mientras que **Ir a definición** muestra el código en una ventana de código independiente. **Ir a definición** hace que el contexto (es decir, la ventana de código activa, la línea actual y la posición del cursor) cambie a la ventana de código de definición. Con **Ver la definición**, puede ver y editar la definición y moverse por el archivo de definición manteniendo su lugar en el archivo de código original.
 
-Se puede usar **Ver la definición** con código de C#, Visual Basic y C++. En Visual Basic, **ver la definición** muestra un vínculo a la **Examinador de objetos** para los símbolos que no tienen metadatos de definición (por ejemplo, tipos de .NET que se generan en).
+Se puede usar **Ver la definición** con código de C#, Visual Basic y C++. En Visual Basic, **Ver la definición** muestra un vínculo al **Examinador de objetos** para los símbolos que no tienen metadatos de definición (por ejemplo, los tipos de .NET integrados).
 
-## <a name="use-peek-definition"></a>Usar la definición de Peek
+## <a name="use-peek-definition"></a>Usar Ver la definición
 
-### <a name="open-a-peek-definition-window"></a>Abra una ventana de definición de Peek
+### <a name="open-a-peek-definition-window"></a>Abrir una ventana Ver la definición
 
 1. Para ver una definición, seleccione **Ver la definición** en el menú contextual del tipo o el miembro que quiera explorar. Si la opción está habilitada, también puede ver una definición con el mouse, si presiona **Ctrl** (u otro modificador) y hace clic en el nombre del miembro. También puede presionar **Alt**+**F12** en el teclado.
 
@@ -75,7 +75,7 @@ Puede usar estos métodos abreviados de teclado con la ventana **Ver la definici
 |Abrir la ventana de definición|**Alt**+**F12**|
 |Cerrar la ventana de definición|**Esc**|
 |Promover la ventana de definición a una pestaña de documento normal|**Mayús**+**Alt**+**Inicio**|
-|Navegar entre ventanas de definición|**Ctrl**+**Alt**+ **-** y **Ctrl**+**Alt**+ **=**|
+|Navegar entre ventanas de definición|**Ctrl**+**Alt**+**-** y **Ctrl**+**Alt**+**=**|
 |Navegar entre varios resultados|**F8** y **Mayús**+**F8**|
 |Alternar entre la ventana del editor de código y la ventana de definición|**Mayús**+**Esc**|
 

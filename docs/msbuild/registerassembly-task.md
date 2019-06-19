@@ -26,7 +26,7 @@ ms.lasthandoff: 06/06/2019
 ms.locfileid: "66747321"
 ---
 # <a name="registerassembly-task"></a>RegisterAssembly (tarea)
-Lee los metadatos dentro del ensamblado especificado y agrega las entradas necesarias al registro, lo que permite a los clientes COM crear clases de .NET Framework de forma transparente. El comportamiento de esta tarea es similar, pero no idéntico, al de [Regasm.exe (Assembly Registration Tool)](/dotnet/framework/tools/regasm-exe-assembly-registration-tool).
+Lee los metadatos del ensamblado especificado y agrega las entradas necesarias al Registro, lo que permite a los clientes COM crear clases de .NET Framework de forma transparente. El comportamiento de esta tarea es similar, pero no idéntico, al de [Regasm.exe (Assembly Registration Tool)](/dotnet/framework/tools/regasm-exe-assembly-registration-tool).
 
 ## <a name="parameters"></a>Parámetros
  En la siguiente tabla se describen los parámetros de la tarea `RegisterAssembly` .

@@ -37,7 +37,7 @@ Dotfuscator Community admite una gran variedad de tipos de aplicaciones y ensam
 ## <a name="intellectual-property-protection"></a>Protección de la propiedad intelectual
 
 El diseño, el comportamiento y la implementación de la aplicación son formas de propiedad intelectual (PI).
-Sin embargo, las aplicaciones creadas para .NET son esencialmente abrir los libros en pantalla; es fácil a los ensamblados de .NET de ingeniería inversa, [ya que contienen metadatos de alto nivel y código intermedio][assemblies].
+En cambio, las aplicaciones creadas para .NET son básicamente libros abiertos; es fácil usar técnicas de ingeniería inversa en los ensamblados de .NET, [ya que contienen metadatos de alto nivel y código intermedio][assemblies].
 
 Dotfuscator Community incluye [ofuscación de .NET][obfuscation] básica en forma de [cambio de nombre][renaming].
 Ofuscar el código con Dotfuscator reduce el riesgo de acceso no autorizado al código fuente a través de técnicas de ingeniería inversa, ya que la información importante de nomenclatura ya no será pública.
@@ -50,7 +50,7 @@ Dotfuscator puede insertar un [comportamiento contra depuración][debug] en la a
 ## <a name="application-integrity-protection"></a>Protección de la integridad de la aplicación
 
 Además de proteger el código fuente, también es importante asegurarse de que la aplicación se usa como se ha diseñado.
-Los atacantes pueden intentar atacar la aplicación con el fin de evitar directivas de licencia (es decir, piratería de software), robar o manipular datos confidenciales controlados por la aplicación, o para cambiar el comportamiento de la aplicación.
+Los atacantes pueden intentar atacar la aplicación para evitar directivas de licencia (es decir, piratería de software), robar o manipular datos confidenciales controlados por la aplicación, o para cambiar su comportamiento.
 
 Dotfuscator Community puede insertar [código de validación de aplicación][checks] en los ensamblados, incluidas medidas [contra alteraciones][tamper], [contra depuración][debug] y [contra dispositivos con rooting][root].
 Cuando se detecta un estado de la aplicación no válido, el código de validación puede [llamar al código de aplicación para que se haga cargo de la situación de forma adecuada][check-app].

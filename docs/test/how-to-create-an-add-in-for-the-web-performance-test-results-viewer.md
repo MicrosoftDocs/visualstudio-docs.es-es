@@ -16,7 +16,7 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 06/06/2019
 ms.locfileid: "66747246"
 ---
-# <a name="how-to-create-an-add-in-for-the-web-performance-test-results-viewer"></a>Procedimiento Crear un complemento para el Visor de resultados de pruebas de rendimiento Web
+# <a name="how-to-create-an-add-in-for-the-web-performance-test-results-viewer"></a>Procedimiento Creación de un complemento para el Visor de resultados de pruebas de rendimiento web
 
 Puede extender la interfaz de usuario para el **Visor de resultados de pruebas de rendimiento web** utilizando los siguientes espacios de nombres:
 
@@ -256,7 +256,7 @@ El complemento de Visual Studio creado en el procedimiento anterior hace referen
 
 1. En el **Explorador de soluciones**, haga clic con el botón derecho en el nodo del proyecto WebPerfTestResultsViewerControl y seleccione **Propiedades**.
 
-2. Seleccione el **aplicación** ficha y, a continuación, elija el **.NET framework de destino** lista desplegable y seleccione **.NET Framework 4** (o posterior). Cerrar la **propiedades** ventana.
+2. Seleccione la pestaña **Aplicación**, luego la lista desplegable **Marco de trabajo de destino** y, por último, **.NET Framework 4** (o posterior). Cierre la ventana **Propiedades**.
 
    Esto es necesario por compatibilidad con las referencias DLL que se necesitan para extender el **Visor de resultados de pruebas de rendimiento web**.
 
@@ -314,13 +314,13 @@ El complemento de Visual Studio creado en el procedimiento anterior hace referen
 
 4. Elija **Aceptar**.
 
-## <a name="run-the-web-performance-test-using-the-web-test-results-viewer"></a>Ejecutar la prueba de rendimiento web mediante el Visor de resultados de pruebas Web
+## <a name="run-the-web-performance-test-using-the-web-test-results-viewer"></a>Ejecutar la prueba de rendimiento web mediante el Visor de resultados de pruebas de rendimiento web
 
 1. Ejecute la prueba de rendimiento web y verá la nueva pestaña del complemento WebPerfTestResultsViewerAddin en el **Visor de resultados de pruebas de rendimiento web**.
 
 2. Elija la pestaña para ver las propiedades de DataGridView.
 
-## <a name="net-security"></a>Seguridad de .net
+## <a name="net-security"></a>Seguridad de .NET
 
 Para mejorar la seguridad evitando que complementos malintencionados se activen de forma automática, Visual Studio proporciona configuraciones en una página de **Opciones de herramientas** denominada **Seguridad de macros/complementos**.
 

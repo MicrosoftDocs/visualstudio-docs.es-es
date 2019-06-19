@@ -51,7 +51,7 @@ Si cierra la **página de inicio** y quiere verla de nuevo, puede volver a abrir
 
 Lo primero que se ve al abrir Visual Studio es la ventana de inicio. La ventana de inicio está concebida para ayudar a "obtener código" más rápido. Tiene opciones para clonar o desproteger código, abrir una solución o un proyecto existente, crear un nuevo proyecto o simplemente abrir una carpeta que contiene algunos archivos de código.
 
-[![Ventana de inicio en Visual Studio de 2019](media/vs-2019/start-window-labeled.png)](media/vs-2019/start-window-labeled.png#lightbox)
+[![Ventana de inicio de Visual Studio 2019](media/vs-2019/start-window-labeled.png)](media/vs-2019/start-window-labeled.png#lightbox)
 
 Si es la primera vez que se usa Visual Studio, la lista de proyectos recientes está vacía.
 

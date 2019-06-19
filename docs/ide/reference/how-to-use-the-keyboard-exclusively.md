@@ -31,7 +31,7 @@ Para obtener un listado completo de las teclas de método abreviado de Visual S
 ::: moniker range="vs-2017"
 
 > [!TIP]
-> Para obtener más información acerca de las actualizaciones de accesibilidad, vea el [las mejoras de accesibilidad en Visual Studio 2017](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/) entrada de blog.
+> Para obtener más información sobre las actualizaciones de accesibilidad, vea la entrada de blog [Accessibility improvements in Visual Studio 2017](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/) (Mejoras de accesibilidad en Visual Studio 2017).
 
 ::: moniker-end
 
@@ -46,41 +46,41 @@ Puede agregar un control en el cuadro de herramientas a un formulario o diseñad
 
 1. En la barra de menús, elija **Ver** > **Cuadro de herramientas**.
 
-2. Use la **Ctrl**+**arriba** o **Ctrl**+**flecha abajo** claves para moverse entre las secciones de la  **Cuadro de herramientas** ficha.
+2. Use las teclas **Ctrl**+**Flecha arriba** o **Ctrl**+**Flecha abajo** para moverse por las secciones de la pestaña **Cuadro de herramientas**.
 
-3. Use la **arriba** clave o **flecha abajo** tecla para moverse entre los controles.
+3. Use la tecla **Flecha arriba** o **Flecha abajo** para moverse por los controles.
 
-4. Después de seleccionar el control, utilice el **ENTRAR** clave para agregar el control al formulario o diseñador.
+4. Después de seleccionar el control, use la tecla **Entrar** para agregar el control al formulario o al diseñador.
 
 ## <a name="dialog-box-options"></a>Opciones del cuadro de diálogo
 
 Puede moverse entre las opciones de un cuadro de diálogo y cambiar la configuración de las opciones mediante el teclado.
 
-### <a name="set-dialog-box-options-from-the-keyboard"></a>Establecer opciones del cuadro de diálogo desde el teclado
+### <a name="set-dialog-box-options-from-the-keyboard"></a>Establecer opciones de un cuadro de diálogo desde el teclado
 
 1. Use **Tab** o **Mayús**+**Tab** para moverse hacia arriba y hacia abajo a través de los controles del cuadro de diálogo.
 
 2. Para cambiar la configuración de las opciones:
 
-   - En los botones de radio, utilice el **arriba** y **flecha abajo** claves para cambiar la selección.
+   - En el caso de los botones de radio, use las teclas **Flecha arriba** y **Flecha abajo** para cambiar la selección.
 
-   - Para las casillas de verificación, presione **barra espaciadora** para seleccionar o anular la selección.
+   - En el caso de las casillas, presione la **Barra espaciadora** para activar o desactivar.
 
-   - Para las listas desplegables, use **Alt**+**flecha abajo** para mostrar elementos y, a continuación, utilice el **flecha arriba** y **flecha abajo** teclas para cambiar el elemento seleccionado.
+   - En el caso de las listas desplegables, use **Alt**+**Flecha abajo** para mostrar elementos y luego las teclas **Flecha arriba** y **Flecha abajo** para cambiar el elemento seleccionado.
 
    - En los botones, seleccione **Entrar** para invocar.
 
-   - Para las cuadrículas, use las teclas de flecha para desplazarse. Para las listas desplegables en las cuadrículas, use **MAYÚS**+**Alt**+**flecha abajo** para mostrar elementos y, a continuación, utilice el **flechaarriba** y **flecha abajo** claves para cambiar el elemento seleccionado.
+   - Para las cuadrículas, use las teclas de flecha para desplazarse. En el caso de las listas desplegables de las cuadrículas, use **Mayús**+**Alt**+**Flecha abajo** para mostrar elementos y luego use las teclas **Flecha arriba** y **Flecha abajo** para cambiar el elemento seleccionado.
 
 ## <a name="window-and-file-navigation"></a>Navegación de archivos y ventanas
 
 Existen varias formas de usar el teclado para moverse entre ventanas abiertas de herramientas y documentos. También puede mover y acoplar las ventanas de herramientas en diferentes ubicaciones con el teclado.
 
-### <a name="navigate-among-windows-and-files-in-the-ide"></a>Navegar entre las ventanas y los archivos en el IDE
+### <a name="navigate-among-windows-and-files-in-the-ide"></a>Desplazarse entre las ventanas y los archivos del IDE
 
-- Para moverse entre los archivos en un editor o diseñador, elija el **Ctrl**+**ficha** método abreviado de teclado para mostrar el navegador del IDE con **archivos activos** seleccionado. Pulse la tecla **Entrar** para ir al archivo resaltado.
+- Para moverse entre archivos en un editor o diseñador, seleccione el método abreviado de teclado **Ctrl**+**Tab** para mostrar el navegador del IDE con la opción **Archivos activos** seleccionada. Pulse la tecla **Entrar** para ir al archivo resaltado.
 
-- Para moverse entre las ventanas de herramientas acopladas, pulse el **Alt**+**F7** método abreviado de teclado para mostrar el navegador del IDE con **Active Windows herramienta** seleccionado. Presione la tecla **Entrar** para ir a la ventana resaltada.
+- Para moverse entre ventanas de herramientas acopladas, seleccione el método abreviado de teclado **Alt**+**F7** para mostrar el navegador del IDE con la opción **Ventanas de herramientas activas** seleccionada. Presione la tecla **Entrar** para ir a la ventana resaltada.
 
 ### <a name="to-move-and-dock-tool-windows-from-the-keyboard"></a>Para mover y acoplar ventanas de herramientas desde el teclado
 
@@ -88,7 +88,7 @@ Existen varias formas de usar el teclado para moverse entre ventanas abiertas de
 
 2. En el menú **Ventana**, seleccione la opción **Acoplable**.
 
-3. Presione **Alt**+**barra espaciadora**y, a continuación, elija **mover**.
+3. Presione **Alt**+**Barra espaciadora** y luego seleccione **Mover**.
 
    Aparece el diamante de guía de acoplamiento.
 

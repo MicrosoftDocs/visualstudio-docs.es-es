@@ -26,11 +26,11 @@ ms.locfileid: "66836099"
 ---
 # <a name="walkthrough-create-a-code-snippet"></a>Tutorial: Crear un fragmento de código
 
-Puede crear un fragmento de código en unos pocos pasos. Lo único que debe hacer es crear un archivo XML, rellenar los elementos correspondientes y agregarle código. Opcionalmente, puede hacer uso de parámetros de reemplazo y referencias de proyecto. Importar el fragmento de código a la instalación de Visual Studio mediante el **importación** situado en la **Administrador de fragmentos de código** (**herramientas** > **código Administrador de fragmentos de**).
+Puede crear un fragmento de código en unos pocos pasos. Lo único que debe hacer es crear un archivo XML, rellenar los elementos correspondientes y agregarle código. Opcionalmente, puede usar parámetros de reemplazo y referencias de proyecto. Importe el fragmento de código a la instalación de Visual Studio mediante el botón **Importar** del **Administrador de fragmentos de código** (**Herramientas** > **Administrador de fragmentos de código**).
 
 ## <a name="snippet-template"></a>Plantilla de fragmento de código
 
-El siguiente código XML es la plantilla de fragmento de código básico:
+El siguiente XML es la plantilla básica de fragmento de código:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -52,14 +52,14 @@ El siguiente código XML es la plantilla de fragmento de código básico:
 
 1. Cree un archivo XML en Visual Studio y agregue la plantilla que se ha mostrado anteriormente.
 
-2. Rellene el título del fragmento de código en el **título** elemento. Utilice el título **raíz cuadrada**.
+2. Rellene el título del fragmento de código en el elemento **Título**. Use el título **Raíz cuadrada**.
 
-3. Rellene el lenguaje del fragmento de código en el atributo **Language** del elemento **Code**. Para C#, utilice **CSharp**y Visual Basic, utilice **VB**.
+3. Rellene el lenguaje del fragmento de código en el atributo **Language** del elemento **Code**. En C#, use **CSharp** y, en Visual Basic, **VB**.
 
    > [!TIP]
-   > Para ver todos los valores de idioma disponibles, vaya el [sección atributos del elemento de código](code-snippets-schema-reference.md#attributes) en el [referencia de esquema de fragmentos de código](code-snippets-schema-reference.md) página.
+   > Para ver todos los valores de lenguaje disponibles, vaya a la sección [Atributos del elemento Code](code-snippets-schema-reference.md#attributes) de la página [Referencia de esquemas de fragmentos de código](code-snippets-schema-reference.md).
 
-4. Agregar el fragmento de código en el **CDATA** sección dentro la **código** elemento.
+4. Agregue el código del fragmento de código en la sección **CDATA**, dentro del elemento **Code**.
 
    Para C#:
 
@@ -69,7 +69,7 @@ El siguiente código XML es la plantilla de fragmento de código básico:
    </Code>
    ```
 
-   O para Visual Basic:
+   O bien, en Visual Basic:
 
    ```xml
    <Code Language="VB">
@@ -77,11 +77,11 @@ El siguiente código XML es la plantilla de fragmento de código básico:
    </Code>
    ```
 
-5. Guarde el fragmento de código como *SquareRoot.snippet* (puede guardarla en cualquier lugar).
+5. Guarde el fragmento de código como *SquareRoot.snippet* (puede guardarlo en cualquier lugar).
 
 ## <a name="import-a-code-snippet"></a>Importar un fragmento de código
 
-1. Puede importar un fragmento de código a la instalación de Visual Studio mediante el **Administrador de fragmentos de código**. Ábralo eligiendo **herramientas** > **Administrador de fragmentos de código**.
+1. Puede importar un fragmento de código a la instalación de Visual Studio mediante el **Administrador de fragmentos de código**. Para abrirlo, seleccione **Herramientas** > **Administrador de fragmentos de código**.
 
 2. Haga clic en el botón **Importar**.
 
@@ -89,42 +89,42 @@ El siguiente código XML es la plantilla de fragmento de código básico:
 
 4. Se abre el cuadro de diálogo **Importar fragmento de código**, que le pide que elija entre las opciones del panel derecho dónde agregar el fragmento de código. Una de las opciones debería ser **Mis fragmentos de código**. Selecciónela, haga clic en **Finalizar** y después en **Aceptar**.
 
-5. El fragmento de código se copia en una de las ubicaciones siguientes, dependiendo del lenguaje de código:
+5. El fragmento de código se copia en una de las ubicaciones siguientes, según el lenguaje del código:
 
    ::: moniker range="vs-2017"
 
-   *%USERPROFILE%\Documents\Visual studio 2017\Code Snippets\Visual C#fragmentos de código \My*
-   *fragmentos de código %USERPROFILE%\Documents\Visual Studio 2017\Code Snippets\Visual Basic\My*
+   *%USERPROFILE%\Documents\Visual Studio 2017\Code Snippets\Visual C#\My Code Snippets*
+    *%USERPROFILE%\Documents\Visual Studio 2017\Code Snippets\Visual Basic\My Code Snippets*
 
    ::: moniker-end
 
    ::: moniker range=">=vs-2019"
 
-   *%USERPROFILE%\Documents\Visual studio 2019\Code Snippets\Visual C#fragmentos de código \My*
-   *fragmentos de código %USERPROFILE%\Documents\Visual Studio 2019\Code Snippets\Visual Basic\My*
+   *%USERPROFILE%\Documents\Visual Studio 2019\Code Snippets\Visual C#\My Code Snippets*
+    *%USERPROFILE%\Documents\Visual Studio 2019\Code Snippets\Visual Basic\My Code Snippets*
 
    ::: moniker-end
 
-6. Pruebe el fragmento abriendo un C# o proyecto de Visual Basic. Con un archivo de código abierto en el editor, elija **fragmentos** > **Insertar fragmento de código** desde el menú contextual, a continuación, **Mis fragmentos de código**. Debería ver un fragmento de código denominado **raíz cuadrada**. Haga doble clic en ella.
+6. Pruebe el fragmento de código. Para ello, abra un proyecto de C# o Visual Basic. Con un archivo de código abierto en el editor, seleccione **Fragmentos de código** > **Insertar fragmento de código** en el menú contextual y luego **Mis fragmentos de código**. Debería ver un fragmento de código denominado **Raíz cuadrada**. Haga doble clic en ella.
 
    El fragmento de código se inserta en el archivo de código.
 
-## <a name="description-and-shortcut-fields"></a>Campos de descripción y el método abreviado
+## <a name="description-and-shortcut-fields"></a>Campos de descripción y de acceso directo
 
 ::: moniker range="vs-2017"
 
-1. Los campos de descripción proporcionan más información sobre el fragmento de código cuando se visualiza en el Administrador de fragmentos de código. El acceso directo es una etiqueta que los usuarios pueden escribir con el fin de insertar el fragmento de código. Edite el fragmento de código que agregó abriendo el archivo *%USERPROFILE%\Documents\Visual Studio 2017\Code fragmentos\\[Visual C# o Visual Basic] \My Code Snippet\SquareRoot.snippet*.
+1. Los campos de descripción proporcionan más información sobre el fragmento de código cuando se visualiza en el Administrador de fragmentos de código. El acceso directo es una etiqueta que los usuarios pueden escribir con el fin de insertar el fragmento de código. Edite el fragmento de código que ha agregado. Para ello, abra el archivo *%USERPROFILE%\Documents\Visual Studio 2017\Code Snippets\\[Visual C# o Visual Basic]\My Code Snippet\SquareRoot.snippet*.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-1. Los campos de descripción proporcionan más información sobre el fragmento de código cuando se visualiza en el Administrador de fragmentos de código. El acceso directo es una etiqueta que los usuarios pueden escribir con el fin de insertar el fragmento de código. Edite el fragmento de código que agregó abriendo el archivo *%USERPROFILE%\Documents\Visual Studio 2019\Code fragmentos\\[Visual C# o Visual Basic] \My Code Snippet\SquareRoot.snippet*.
+1. Los campos de descripción proporcionan más información sobre el fragmento de código cuando se visualiza en el Administrador de fragmentos de código. El acceso directo es una etiqueta que los usuarios pueden escribir con el fin de insertar el fragmento de código. Edite el fragmento de código que ha agregado. Para ello, abra el archivo *%USERPROFILE%\Documents\Visual Studio 2019\Code Snippets\\[Visual C# o Visual Basic]\My Code Snippet\SquareRoot.snippet*.
 
 ::: moniker-end
 
    > [!TIP]
-   > Puesto que está editando el archivo en el directorio donde Visual Studio colocado, no es necesario volver a importarlo a Visual Studio.
+   > Puesto que está editando el archivo en el directorio donde Visual Studio lo ha colocado, no tiene que volver a importarlo a Visual Studio.
 
 2. Agregue elementos **Author** y **Description** al elemento **Header** y rellénelos.
 
@@ -138,11 +138,11 @@ El siguiente código XML es la plantilla de fragmento de código básico:
    </Header>
    ```
 
-4. Abra el **Administrador de fragmentos de código** y seleccione su fragmento de código. En el panel derecho, tenga en cuenta que el **descripción** y **autor** ahora se rellenan los campos.
+4. Abra el **Administrador de fragmentos de código** y seleccione su fragmento de código. En el panel derecho, observe que ahora los campos **Descripción** y **Autor** están rellenos.
 
    ![Descripción del fragmento de código en el Administrador de fragmentos de código](media/code-snippet-description-author.png)
 
-5. Para agregar un acceso directo, agregue un **contextual** elemento dentro de la **encabezado** elemento:
+5. Para agregar un acceso directo, agregue un elemento **Acceso directo** dentro del elemento **Encabezado**:
 
    ```xml
    <Header>
@@ -155,15 +155,15 @@ El siguiente código XML es la plantilla de fragmento de código básico:
 
 6. Guarde de nuevo el archivo de fragmento de código.
 
-7. Para probar el acceso directo, abra el proyecto usó anteriormente, escriba **sqrt** en el editor y presione **ficha** (una vez para Visual Basic, dos veces para C#).
+7. Para probar el acceso directo, abra el proyecto que ha usado anteriormente, escriba **sqrt** en el editor y presione **Tab** (una vez en Visual Basic, dos veces en C#).
 
    Se inserta el fragmento de código.
 
 ## <a name="replacement-parameters"></a>Parámetros de reemplazo
 
-Desea que las partes de un fragmento de código sean reemplazadas por el usuario. Por ejemplo, es posible que desea que el usuario para reemplazar un nombre de variable con uno en su proyecto actual. Puede proporcionar dos tipos de reemplazos: literales y objetos. Use la [elemento Literal](code-snippets-schema-reference.md#literal-element) para identificar el reemplazo de un fragmento de código que está incluida completamente en el fragmento de código, pero probablemente tendrá que se personalice tras insertarla en el código (por ejemplo, un valor de cadena o numérica). Use la [elemento Object](code-snippets-schema-reference.md#object-element) para identificar un elemento que se requiere el fragmento de código, pero es probable que se defina fuera el fragmento de código por sí mismo (por ejemplo, una instancia de objeto o un control).
+Es posible que quiera que partes de un fragmento de código sean reemplazadas por el usuario. Por ejemplo, puede querer que el usuario reemplace un nombre de variable por uno de su proyecto actual. Puede proporcionar dos tipos de reemplazos: literales y objetos. Use el [elemento Literal](code-snippets-schema-reference.md#literal-element) para identificar un reemplazo de un fragmento de código que está totalmente incluido en el fragmento, pero que posiblemente se personalice una vez insertado en el código (por ejemplo, una cadena o un valor numérico). Use el [elemento Object](code-snippets-schema-reference.md#object-element) para identificar un elemento que el fragmento de código necesita pero que probablemente se defina fuera del propio fragmento de código (por ejemplo, una instancia de objeto o un control).
 
-1. Para permitir al usuario reemplazar fácilmente el número para calcular la raíz cuadrada de, modifique la **fragmento** elemento de la *SquareRoot.snippet* archivo como sigue:
+1. Para permitir al usuario reemplazar fácilmente el número cuya raíz cuadrada se va a calcular, modifique el elemento **Snippet** del archivo *SquareRoot.snippet* de esta forma:
 
    ```xml
    <Snippet>
@@ -180,7 +180,7 @@ Desea que las partes de un fragmento de código sean reemplazadas por el usuario
    </Snippet>
    ```
 
-   Tenga en cuenta que el reemplazo de literal es un identificador dado (`Number`). Que identificador hace referencia desde dentro del fragmento de código que lo rodea con `$` caracteres:
+   Observe que al reemplazo de literal se le asigna un identificador (`Number`). Se hace referencia a ese identificador desde dentro del fragmento de código al rodearlo con caracteres `$`:
 
    ```xml
    <![CDATA[double root = Math.Sqrt($Number$);]]>
@@ -188,20 +188,20 @@ Desea que las partes de un fragmento de código sean reemplazadas por el usuario
 
 2. Guarde el archivo de fragmento de código.
 
-3. Abra un proyecto e insertar el fragmento de código.
+3. Abra un proyecto e inserte el fragmento de código.
 
-   Se inserta el fragmento de código y se resalta el literal editable para el reemplazo. Mantenga el mouse sobre el parámetro de reemplazo para ver la información sobre herramientas para el valor.
+   El fragmento de código se inserta y el literal editable se resalta para su reemplazo. Mantenga el mouse sobre el parámetro de reemplazo para ver la información sobre herramientas del valor.
 
-   ![Código tooltip de parámetro de reemplazo de fragmento de código en Visual Studio](media/snippet-replacement-parameter-tooltip.png)
+   ![Información sobre herramientas de parámetro de reemplazo de fragmento de código en Visual Studio](media/snippet-replacement-parameter-tooltip.png)
 
    > [!TIP]
-   > Si hay más de un parámetro replacable en un fragmento de código, puede presionar **ficha** para navegar de uno a otro para cambiar los valores.
+   > Si hay más de un parámetro reemplazable en un fragmento de código, puede presionar **Tab** para ir de uno a otro a fin de cambiar los valores.
 
 ## <a name="import-a-namespace"></a>Importar un espacio de nombres
 
-Puede usar un fragmento de código para agregar un `using` directiva (C#) o `Imports` (instrucción, Visual Basic) mediante la inclusión de la [elemento Imports](code-snippets-schema-reference.md#imports-element). Para los proyectos de .NET Framework, también puede agregar una referencia al proyecto mediante el [References (elemento)](code-snippets-schema-reference.md#references-element).
+Puede usar un fragmento de código para agregar una directiva `using` (C#) o una instrucción `Imports` (Visual Basic) mediante la inclusión del [elemento Imports](code-snippets-schema-reference.md#imports-element). En los proyectos de .NET Framework, también puede agregar una referencia al proyecto mediante el [elemento References](code-snippets-schema-reference.md#references-element).
 
-El siguiente XML muestra un fragmento de código que utiliza el método `File.Exists` en el espacio de nombres System.IO y, por lo tanto, define la **importaciones** elemento que se va a importar el espacio de nombres System.IO.
+El siguiente XML muestra un fragmento de código que usa el método `File.Exists` en el espacio de nombres System.IO y, por lo tanto, define el elemento **Imports** para importar el espacio de nombres System.IO.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>

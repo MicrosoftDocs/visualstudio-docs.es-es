@@ -59,7 +59,7 @@ Estos métodos abreviados de teclado son *globales*, lo que significa que se pue
 
 |Comandos|Métodos abreviados de teclado|
 |--------------| - |
-|Build.BuildSelection|**Ctrl+B** (Visual Studio 2019)|
+|Build.BuildSelection|**Ctrl + B** (Visual Studio 2019)|
 |Build.BuildSolution|**Ctrl+Mayús+B**|
 |Build.Cancel|**Ctrl+Inter**|
 |Build.Compile|**Ctrl+F7**|
@@ -86,7 +86,7 @@ Estos métodos abreviados de teclado son *globales*, lo que significa que se pue
 |Debug.DOMExplorer|**Ctrl+Alt+V, D**|
 |Debug.EnableBreakpoints|**Ctrl+F9**|
 |Debug.Exceptions|**Ctrl+Alt+E**|
-|Debug.FunctionBreakpoint|**Ctrl+K, B** (Visual Studio 2019)<br />**Ctrl**+**B** (Visual Studio 2017)|
+|Debug.FunctionBreakpoint|**Ctrl + K, B** (Visual Studio 2019)<br />**Ctrl**+**B** (Visual Studio 2017)|
 |Debug.GoToPreviousCallorIntelliTraceEvent|**Ctrl+Mayús+F11**|
 |Debug.Graphics.StartDiagnostics|**Alt+F5**|
 |Debug.Immediate|**Ctrl+Alt+I**|
@@ -110,7 +110,7 @@ Estos métodos abreviados de teclado son *globales*, lo que significa que se pue
 |Debug.ParallelWatch3|**Ctrl+Mayús+D, 3**|
 |Debug.ParallelWatch4|**Ctrl+Mayús+D, 4**|
 |Debug.Processes|**Ctrl+Alt+Z**|
-|Debug.QuickWatch|**MAYÚS + F9** o **Ctrl + Alt + Q**|
+|Debug.QuickWatch|**Mayús + F9** o **Ctrl + Al t+ Q**|
 |Debug.RefreshWindowsapp|**Ctrl+Mayús+R**|
 |Debug.Registers|**Ctrl+Alt+G**|
 |Debug.Restart|**Ctrl+Mayús+F5**|
@@ -270,9 +270,9 @@ Estos métodos abreviados de teclado son *globales*, lo que significa que se pue
 |Project.AddNewItem|**Ctrl+Mayús+A**|
 |Project.ClassWizard|**Ctrl+Mayús+X**|
 |Project.Override|**Ctrl+Alt+Insert**|
-|Project.Previewchanges|**Alt+** , luego **Alt+C**|
-|Project.Publishselectedfiles|**Alt+** , luego **Alt+P**|
-|Project.Replaceselectedfilesfromserver|**Alt+** , luego **Alt+R**|
+|Project.Previewchanges|**Alt+**, luego **Alt+C**|
+|Project.Publishselectedfiles|**Alt+**, luego **Alt+P**|
+|Project.Replaceselectedfilesfromserver|**Alt+**, luego **Alt+R**|
 
 ### <a name="bkmk_projectContext"></a> Menús contextuales de proyectos y soluciones
 
@@ -296,9 +296,9 @@ Estos métodos abreviados de teclado son *globales*, lo que significa que se pue
 
 |Comandos|Métodos abreviados de teclado|
 |--------------| - |
-|SolutionExplorer.OpenFilesFilter|**Ctrl+[** , **O** (letra "O")<br /><br /> o<br /><br /> **Ctrl+[** , **Ctrl+O** (letra "O")|
-|SolutionExplorer.PendingChangesFilter|**Ctrl+[** , **P**<br /><br /> o<br /><br /> **Ctrl+[** , **Ctrl+P**|
-|SolutionExplorer.SyncWithActiveDocument|**Ctrl+[** , **S**<br /><br /> o<br /><br /> **Ctrl+[** , **Ctrl+S**|
+|SolutionExplorer.OpenFilesFilter|**Ctrl+[**, **O** (letra "O")<br /><br /> o<br /><br /> **Ctrl+[**, **Ctrl+O** (letra "O")|
+|SolutionExplorer.PendingChangesFilter|**Ctrl+[**, **P**<br /><br /> o<br /><br /> **Ctrl+[**, **Ctrl+P**|
+|SolutionExplorer.SyncWithActiveDocument|**Ctrl+[**, **S**<br /><br /> o<br /><br /> **Ctrl+[**, **Ctrl+S**|
 
 ### <a name="bkmk_team"></a> Equipo
 

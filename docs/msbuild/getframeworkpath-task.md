@@ -41,12 +41,12 @@ En la siguiente tabla se describen los parámetros de la tarea `GetFrameworkPath
 |`Path`|Parámetro de salida `String` opcional.<br /><br /> Contiene la ruta de acceso a los ensamblados de Framework más recientes, si alguno está disponible. De lo contrario, devuelve `null`.|
 
 ## <a name="remarks"></a>Comentarios
-Si se instalan varias versiones de .NET Framework, esta tarea devuelve la versión que [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] está diseñado para ejecutarse.
+Si hay instaladas varias versiones de .NET Framework, esta tarea devuelve la versión en la que puede ejecutarse [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].
 
 Además de los parámetros mencionados anteriormente, esta tarea hereda los parámetros de la clase <xref:Microsoft.Build.Tasks.TaskExtension>, que a su vez hereda de la clase <xref:Microsoft.Build.Utilities.Task>. Para obtener una lista de estos parámetros adicionales y sus descripciones, consulte [TaskExtension base class](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Ejemplo
-En el ejemplo siguiente se usa el `GetFrameworkPath` tarea para almacenar la ruta de acceso a .NET Framework en el `FrameworkPath` propiedad.
+En el ejemplo siguiente se usa la tarea `GetFrameworkPath` para almacenar la ruta de acceso a .NET Framework en la propiedad `FrameworkPath`.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

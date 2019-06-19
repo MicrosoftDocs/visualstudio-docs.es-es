@@ -40,7 +40,7 @@ Para comenzar:
 
 ::: moniker range=">=vs-2019"
 > [!Note]
-> Visual Studio es compatible con todas las versiones oficialmente compatibles de Python, según lo especificado por el [Python Software Foundation](https://devguide.python.org/#status-of-python-branches). En concreto, versión 2.7, 3.5, 3.6 y 3.7.
+> Visual Studio admite todas las versiones oficialmente compatibles de Python, según lo especificado por [Python Software Foundation](https://devguide.python.org/#status-of-python-branches). En concreto, las versiones 2.7, 3.5, 3.6 y 3.7.
 ::: moniker-end
 
 ## <a name="support-for-multiple-interpreters"></a>Compatibilidad con diversos intérpretes
@@ -155,9 +155,9 @@ Para obtener más información:
 
 ## <a name="azure-sdk-for-python"></a>SDK de Azure para Python
 
-Las bibliotecas de Azure para Python simplifican el consumo de servicios Azure desde aplicaciones de Windows, Mac OS X y Linux. Puede usarlos para crear y administrar recursos de Azure, así como para conectarse a servicios de Azure. 
+Las bibliotecas de Azure para Python simplifican el uso de servicios de Azure desde aplicaciones Windows, Mac OS X y Linux. Puede usarlas para crear y administrar recursos de Azure, así como para conectarse a servicios de Azure. 
 
-Para obtener más información, consulte [Azure SDK para Python](/python/azure/?view=azure-python) y [bibliotecas de Azure para Python](/python/azure/python-sdk-azure-overview?view=azure-python) .
+Para obtener más información, vea [SDK de Azure para Python](/python/azure/?view=azure-python) y [Bibliotecas de Azure para Python](/python/azure/python-sdk-azure-overview?view=azure-python).
 
 ## <a name="questions-and-answers"></a>Preguntas y respuestas
 

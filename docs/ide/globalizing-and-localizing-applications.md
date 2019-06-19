@@ -24,7 +24,7 @@ ms.locfileid: "66820871"
 ---
 # <a name="develop-globalized-and-localized-apps"></a>Desarrollo de aplicaciones localizadas y globalizadas
 
-Visual Studio facilitan el desarrollo para un público internacional al aprovechar los servicios integrados en [.NET](/dotnet/standard/globalization-localization/).
+Visual Studio facilita el desarrollo para destinatarios internacionales al aprovechar los servicios integrados en [.NET](/dotnet/standard/globalization-localization/).
 
 Por ejemplo, el sistema de proyectos para aplicaciones de Windows Forms puede generar archivos de recursos para la referencia cultural de la UI de reserva y para cada una de las referencias culturales de UI adicionales. Al compilar un proyecto en Visual Studio, los archivos de recursos se compilan desde el formato XML de Visual Studio (.resx) en un formato binario intermedio (.resources), que se inserta después en ensamblados satélite. Para obtener más información, consulte [Archivos de recursos en Visual Studio](/dotnet/framework/resources/creating-resource-files-for-desktop-apps#VSResFiles) y [Crear ensamblados satélite para aplicaciones de escritorio](/dotnet/framework/resources/creating-satellite-assemblies-for-desktop-apps).
 

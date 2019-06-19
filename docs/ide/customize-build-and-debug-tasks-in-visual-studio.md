@@ -314,6 +314,6 @@ La configuración que se lee del archivo *.gitignore* se aplica al directorio pr
 
 - [Desarrollo de código en Visual Studio sin proyectos o soluciones](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)
 - [Open Folder projects for C++](/cpp/build/open-folder-projects-cpp) (Proyectos Abrir carpeta para C++)
-- [Para los proyectos de CMakeC++](/cpp/build/cmake-projects-in-visual-studio)
+- [CMake projects for C++](/cpp/build/cmake-projects-in-visual-studio) (Proyectos de CMake para C++)
 - [Referencia de NMAKE](/cpp/build/reference/nmake-reference)
 - [Características del editor de código](../ide/writing-code-in-the-code-and-text-editor.md)

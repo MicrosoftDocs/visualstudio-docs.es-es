@@ -1,5 +1,5 @@
 ---
-title: Destino de .NET Framework
+title: Marcos .NET Framework de destino
 ms.date: 02/06/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -18,13 +18,13 @@ ms.contentlocale: es-ES
 ms.lasthandoff: 06/06/2019
 ms.locfileid: "66747620"
 ---
-# <a name="framework-targeting-overview"></a>Plataforma de destino de la información general
+# <a name="framework-targeting-overview"></a>Información general sobre destinos de Framework
 
-En Visual Studio, puede especificar la versión de .NET que desea que el proyecto de destino. Para aplicaciones de .NET Framework puedan ejecutarse en otro equipo, la versión de framework que se destina la aplicación debe ser compatible con la versión de framework que está instalada en el equipo.
+En Visual Studio, puede especificar la versión de .NET a la que quiere que vaya destinado el proyecto. Para que las aplicaciones de .NET Framework se ejecuten en otro equipo, la versión del marco de destino de la aplicación debe ser compatible con la versión del marco instalada en el equipo.
 
-Para obtener más información sobre plataformas de destino, vea [plataformas de destino](/dotnet/standard/frameworks).
+Para obtener más información sobre los marcos de destino, vea [Versiones de .NET Framework de destino](/dotnet/standard/frameworks).
 
-También puede crear una solución que contenga proyectos destinados a versiones diferentes de. NET. Compatibilidad de Framework ayuda a garantizar que la aplicación use solo la funcionalidad que está disponible en la versión del marco especificado.
+También puede crear una solución que contenga proyectos destinados a otras versiones de .NET. La elección del marco de destino ayuda a garantizar que la aplicación use solo la funcionalidad que está disponible en la versión especificada del marco.
 
 > [!TIP]
 > También puede dirigir aplicaciones a distintas plataformas. Para obtener más información, consulte [Compatibilidad con múltiples versiones (multi-targeting)](../msbuild/msbuild-multitargeting-overview.md).
@@ -33,39 +33,39 @@ También puede crear una solución que contenga proyectos destinados a versiones
 
 La elección del marco de destino incluye las siguientes características:
 
-- Al abrir un proyecto que tenga como destino una versión anterior de framework, Visual Studio puede actualizar el proyecto o deje el destino como automáticamente-es.
+- Si abre un proyecto que tiene como destino una versión anterior del marco, Visual Studio puede actualizarlo de forma automática o mantener el destino tal cual.
 
-- Al crear un proyecto de .NET Framework, puede especificar la versión de .NET Framework que desea tener como destino.
+- Al crear un proyecto de .NET Framework, puede especificar la versión de .NET Framework que quiere establecer como destino.
 
-- También puede [varias plataformas de destino](/dotnet/standard/frameworks#how-to-specify-target-frameworks) en un solo proyecto.
+- También puede [establecer varios marcos de destino](/dotnet/standard/frameworks#how-to-specify-target-frameworks) en un solo proyecto.
 
-- Se puede tener como destino una versión diferente de .NET en cada uno de varios proyectos en la misma solución.
+- Puede elegir como destino otra versión de .NET en cada uno de los proyectos de la misma solución.
 
-- Puede cambiar la versión de .NET que un proyecto existente destinos.
+- Puede cambiar la versión de .NET que tiene como destino un proyecto existente.
 
-   Al cambiar la versión de .NET que hace necesario cualquier destino de un proyecto, Visual Studio cambia a las referencias y archivos de configuración.
+   Si cambia la versión de .NET de destino de un proyecto, Visual Studio realiza los cambios necesarios en las referencias y los archivos de configuración.
 
-Cuando se trabaja en un proyecto que tiene como destino una versión anterior de framework, Visual Studio de forma dinámica, cambia el entorno de desarrollo, como sigue:
+Si trabaja en un proyecto que tiene como destino una versión anterior del marco, Visual Studio cambia de forma dinámica el entorno de desarrollo, de la siguiente forma:
 
 - Filtra los elementos de los cuadros de diálogo **Agregar nuevo elemento**, **Agregar nueva referencia** y **Agregar referencia de servicio** para omitir las opciones que no están disponibles en la versión de destino.
 
 - Filtra los controles personalizados del **Cuadro de herramientas** para quitar los que no están disponibles en la versión de destino y para mostrar solo los controles más actualizados cuando hay varios disponibles.
 
-- Filtra **IntelliSense** para omitir características del lenguaje que no están disponibles en la versión de destino.
+- Filtra **IntelliSense** para omitir características de lenguaje que no están disponibles en la versión de destino.
 
-- Filtra las propiedades en el **propiedades** ventana para omitirlas que no están disponibles en la versión de destino.
+- Filtra propiedades de la ventana **Propiedades** para omitir aquellas que no están disponibles en la versión de destino.
 
-- Filtra las opciones de menú para omitir las opciones que no están disponibles en la versión de destino.
+- Filtra opciones de menú para omitir aquellas que no están disponibles en la versión de destino.
 
 - Para las compilaciones, usa la versión y las opciones del compilador que son adecuadas para la versión de destino.
 
 > [!NOTE]
 > - La elección del marco de destino no garantiza que la aplicación se ejecute correctamente. Debe probar la aplicación para asegurarse de que se ejecuta en la versión de destino.
-> - No puede tener como destino versiones anteriores de framework a .NET Framework 2.0.
+> - No puede establecer como destino versiones de .NET Framework anteriores a la versión 2.0.
 
 ## <a name="select-a-target-framework-version"></a>Seleccionar una versión de la plataforma de destino
 
-Al crear un proyecto de .NET Framework, puede seleccionar la versión de .NET Framework de destino después de seleccionar una plantilla de proyecto. La lista de las plataformas disponibles incluye las versiones de las plataformas instaladas que son aplicables al tipo de plantilla seleccionada. Para las plantillas de proyecto que no sean .NET Framework, por ejemplo las plantillas de .NET Core, el **Framework** no aparece la lista desplegable.
+Al crear un proyecto de .NET Framework, seleccione la versión de destino de .NET Framework después de seleccionar una plantilla de proyecto. La lista de las plataformas disponibles incluye las versiones de las plataformas instaladas que son aplicables al tipo de plantilla seleccionada. En el caso de plantillas de proyecto que no son de .NET Framework, por ejemplo, las plantillas de .NET Core, la lista desplegable **Marco** no aparece.
 
 ::: moniker range="vs-2017"
 
@@ -79,13 +79,13 @@ Al crear un proyecto de .NET Framework, puede seleccionar la versión de .NET Fr
 
 ::: moniker-end
 
-En un proyecto existente, puede cambiar la versión de .NET de destino en el cuadro de diálogo de propiedades de proyecto. Para obtener más información, vea [Cómo: Tener como destino una versión de .NET](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+En un proyecto existente, puede cambiar la versión de .NET de destino en el cuadro de diálogo de propiedades del proyecto. Para obtener más información, vea [Cómo: Establecer una versión de .NET como destino](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 
 ## <a name="resolve-system-and-user-assembly-references"></a>Resolver referencias de ensamblado de usuario y sistema
 
-Para tener como destino una versión. NET, primero debe instalar las referencias de ensamblado adecuado. Puede descargar paquetes de desarrollador para distintas versiones de .NET en el [descargas de .NET](https://www.microsoft.com/net/download/windows) página.
+Para establecer como destino una versión de .NET, primero debe instalar las referencias de ensamblado adecuadas. Puede descargar los paquetes de desarrollador de distintas versiones de .NET en la página [Descargas de .NET](https://www.microsoft.com/net/download/windows).
 
-Para los proyectos de .NET Framework, el **Agregar referencia** deshabilita el cuadro de diálogo ensamblados del sistema que no pertenecen a la versión de .NET Framework de destino para que no se agreguen accidentalmente a un proyecto. (Los ensamblados del sistema son archivos *.dll* que se incluyen en una versión de .NET Framework). No se resolverán las referencias que pertenecen a una versión de framework que es mayor que la versión de destino, y no se puede agregar controles que dependan de este tipo de referencia. Si quiere habilitar este tipo de referencia, restablezca el .NET Framework de destino del proyecto a otro que incluya la referencia. Para obtener más información, vea [Cómo: Tener como destino una versión de framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+En los proyectos de .NET Framework, el cuadro de diálogo **Agregar referencia** deshabilita los ensamblados del sistema que no pertenecen a la versión de .NET Framework de destino para evitar que se agreguen a un proyecto de forma involuntaria. (Los ensamblados del sistema son archivos *.dll* que se incluyen en una versión de .NET Framework). No se resuelven las referencias que pertenecen a una versión del marco posterior a la versión de destino y no se pueden agregar controles que dependan de este tipo de referencia. Si quiere habilitar este tipo de referencia, restablezca el .NET Framework de destino del proyecto a otro que incluya la referencia. Para obtener más información, vea [Cómo: Establecer una versión de Framework como destino](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 
 Para obtener más información sobre las referencias de ensamblado, consulte [Resolver ensamblados en tiempo de diseño](../msbuild/resolving-assemblies-at-design-time.md).
 

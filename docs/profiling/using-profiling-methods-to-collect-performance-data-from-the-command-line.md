@@ -16,7 +16,7 @@ ms.lasthandoff: 06/06/2019
 ms.locfileid: "66746780"
 ---
 # <a name="use-profiling-methods-to-collect-performance-data-from-the-command-line"></a>Usar métodos de generación de perfiles para recopilar datos de rendimiento desde la línea de comandos
-La elección del [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] herramientas de línea de comandos de herramientas de generación de perfiles y las opciones depende de factores como el tipo de aplicación que está generando perfiles, el método de generación de perfiles que desea usar y, si la aplicación de destino se escribe en el modo nativo o en .NET Código de Framework.
+La elección de herramientas y opciones de línea de comandos de Herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] depende de factores como el tipo de aplicación cuyo perfil se esté generando, el método de generación de perfiles que se quiera usar y si la aplicación de destino se escribe en código nativo o de .NET Framework.
 
  En este tema se organiza los temas de procedimientos de línea de comandos según el método de generación de perfiles que elija.
 
@@ -50,9 +50,9 @@ La elección del [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] herra
 - [Servicios nativos](../profiling/how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)
 
 ## <a name="use-net-memory-methods-to-collect-memory-allocation-and-object-lifetime-data"></a>Usar métodos de memoria de .NET para recopilar datos de asignación de memoria y de duración de objetos
- El método de memoria de .NET de las herramientas de generación de perfiles permite recopilar datos de asignación de memoria de .NET Framework e información sobre la duración de objetos de .NET Framework.
+ El método de memoria de .NET de Herramientas de generación de perfiles permite recopilar datos de asignación de memoria e información sobre la duración de objetos en .NET Framework.
 
- Puede iniciar la aplicación de destino con el generador de perfiles; puede adjuntar el generador de perfiles a una instancia de ejecución de una aplicación. y puede crear versiones instrumentadas de la aplicación para recopilar información de tiempo detallada junto con los datos de memoria de .NET Framework.
+ Puede iniciar la aplicación de destino mediante el generador de perfiles, adjuntar el generador de perfiles a una instancia en ejecución de una aplicación y crear versiones instrumentadas de la aplicación para recopilar información de tiempo detallada junto con datos de memoria de .NET Framework.
 
 |Tarea|Tipo de aplicación de destino|
 |----------|-----------------------------|
