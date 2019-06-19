@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8866b4a2518c8c4d58f26b625e45a0188498021
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 4503066cab8e7ca324e7c81317999b737c750dd6
+ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746529"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67159937"
 ---
 # <a name="output-window"></a>Resultados (ventana)
 
@@ -67,7 +67,7 @@ Hay determinados comandos y características del IDE que se invocan en la [venta
 
 También puede programar sus propias aplicaciones para que escriban mensajes de diagnóstico en tiempo de ejecución en un panel de **salida**. Para hacer esto, use los miembros de la clase <xref:System.Diagnostics.Debug> o de la clase <xref:System.Diagnostics.Trace> del espacio de nombres <xref:System.Diagnostics> de la API de .NET. Los miembros de la clase <xref:System.Diagnostics.Debug> muestran la salida al compilar configuraciones de depuración de la solución o proyecto; los miembros de la clase <xref:System.Diagnostics.Trace> muestran la salida al compilar las configuraciones de depuración o lanzamiento. Para obtener más información, vea [Mensajes de diagnóstico en la ventana de resultados](../../debugger/diagnostic-messages-in-the-output-window.md).
 
-En C++, puede crear pasos y eventos de compilación personalizados cuyas advertencias y errores se muestran y enumeran en el panel de **salida**. Al presionar **F1** en una línea de salida, puede mostrar un tema de ayuda adecuado. Para obtener más información, vea [Dar formato a la presentación de un paso de compilación personalizada](/cpp/build/reference/formatting-the-output-of-a-custom-build-step-or-build-event).
+En C++, puede crear pasos y eventos de compilación personalizados cuyas advertencias y errores se muestran y enumeran en el panel de **salida**. Al presionar **F1** en una línea de salida, puede mostrar un tema de ayuda adecuado. Para obtener más información, vea [Dar formato a la presentación de un paso de compilación personalizada](/cpp/build/formatting-the-output-of-a-custom-build-step-or-build-event).
 
 ## <a name="scroll-behavior"></a>Comportamiento de desplazamiento
 
