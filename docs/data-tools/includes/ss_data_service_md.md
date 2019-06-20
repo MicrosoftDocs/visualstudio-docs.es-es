@@ -14,10 +14,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.openlocfilehash: a3443f74303c6ee90724c48eccdcedb761a130b9
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65840318"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67255036"
 ---
 Servicio de datos de WCF
