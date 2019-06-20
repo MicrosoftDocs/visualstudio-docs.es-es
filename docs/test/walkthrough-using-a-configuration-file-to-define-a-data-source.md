@@ -71,7 +71,7 @@ El elemento **section** debe ser similar a este:
 ```
 
 > [!NOTE]
-> El nombre del ensamblado debe coincidir con la versión que está usando.
+> El nombre del ensamblado debe coincidir con la versión que se esté usando.
 
 ## <a name="define-connection-strings"></a>Definir cadenas de conexión
 
