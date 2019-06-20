@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: 0170c6ed655ce54e2dbadf57341dff56616186ec
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65844812"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67258464"
 ---
 > [!WARNING]
 > Cuando se habilita el diagnóstico para un rol existente, todas las extensiones que se hayan establecido ya se deshabilitan al implementar el paquete. Se incluyen los siguientes:
