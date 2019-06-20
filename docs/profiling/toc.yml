@@ -24,9 +24,9 @@
       href: running-profiling-tools-with-or-without-the-debugger.md
 - name: Guías de procedimientos
   items:
-    - name: Analizar el uso de CPU
+    - name: Uso de CPU
       href: cpu-usage.md
-    - name: Analizar el uso de memoria
+    - name: Uso de memoria
       items:
         - name: Analizar el uso de memoria
           href: analyze-memory-usage.md
@@ -48,7 +48,7 @@
       href: javascript-memory.md
     - name: Analizar la capacidad de respuesta de la interfaz de usuario HTML
       href: html-ui-responsiveness.md
-    - name: Usar el Explorador de rendimiento
+    - name: Explorador de rendimiento
       items:
         - name: Usar el Explorador de rendimiento
           href: performance-explorer.md
@@ -56,7 +56,7 @@
           href: performance-tools-on-windows-8-and-windows-server-2012-applications.md
         - name: Información general (herramientas de rendimiento)
           items:
-            - name: Información general (herramientas de rendimiento)
+            - name: Información general de las herramientas de rendimiento
               href: overviews-performance-tools.md
             - name: Información general sobre las sesiones de rendimiento
               href: performance-session-overview.md
@@ -78,7 +78,7 @@
               href: performance-session-properties.md
             - name: Generación de perfiles y seguridad en Windows Vista
               href: profiling-and-windows-vista-security.md
-        - name: Introducción a las herramientas de rendimiento
+        - name: Primeros pasos
           items:
             - name: Introducción a las herramientas de rendimiento
               href: getting-started-with-performance-tools.md
@@ -88,7 +88,7 @@
               href: how-to-collect-performance-data-for-a-web-site.md
             - name: Crear manualmente sesiones de rendimiento
               href: how-to-manually-create-performance-sessions.md
-        - name: Configurar sesiones de rendimiento
+        - name: Configurar
           items:
             - name: Configurar sesiones de rendimiento
               href: configuring-performance-sessions.md
@@ -96,7 +96,7 @@
               href: how-to-reference-windows-symbol-information.md
             - name: Elegir métodos de recopilación
               href: how-to-choose-collection-methods.md
-            - name: Recopilar estadísticas de rendimiento mediante el muestreo
+            - name: Recopilación de estadísticas de rendimiento
               items:
                 - name: Recopilar estadísticas de rendimiento mediante el muestreo
                   href: collecting-performance-statistics-by-using-sampling.md
@@ -106,7 +106,7 @@
                   href: how-to-collect-line-level-sampling-data.md
             - name: Recopilar datos de asignación y duración de memoria de .NET
               href: collecting-dotnet-memory-allocation-and-lifetime-data.md
-            - name: Recopilar datos de control de tiempo detallados mediante la instrumentación
+            - name: Recopilación de datos detallados de tiempo
               items:
                 - name: Recopilar datos de control de tiempo detallados mediante la instrumentación
                   href: collecting-detailed-timing-data-by-using-instrumentation.md
@@ -124,7 +124,7 @@
               href: collecting-thread-and-process-concurrency-data.md
             - name: Recopilar datos de interacción de capas
               href: collecting-tier-interaction-data.md
-            - name: Recopilar datos de rendimiento adicionales
+            - name: Datos de rendimiento adicionales
               items:
                 - name: Recopilar datos de rendimiento adicionales
                   href: collecting-additional-performance-data.md
@@ -148,7 +148,7 @@
               href: how-to-specify-the-dotnet-framework-runtime.md
         - name: Controlar la recopilación de datos
           items:
-            - name: Controlar la recopilación de datos
+            - name: Cómo controlar la recopilación de datos
               href: controlling-data-collection.md
             - name: Iniciar y finalizar la recopilación de datos de rendimiento
               href: how-to-start-and-end-performance-data-collection.md
@@ -162,11 +162,11 @@
               href: how-to-limit-instrumentation-to-specific-functions.md
             - name: Excluir o incluir funciones cortas en la instrumentación
               href: how-to-exclude-or-include-short-functions-from-instrumentation.md
-        - name: Analizar datos de herramientas de rendimiento
+        - name: Datos de herramientas de rendimiento
           items:
             - name: Analizar datos de herramientas de rendimiento
               href: analyzing-performance-tools-data.md
-            - name: Usar reglas de rendimiento para el análisis de datos
+            - name: Reglas de rendimiento para el análisis
               items:
                 - name: Usar reglas de rendimiento para el análisis de datos
                   href: using-performance-rules-to-analyze-data.md
@@ -176,13 +176,13 @@
                   href: how-to-configure-performance-rules.md
                 - name: Referencia de reglas de rendimiento
                   items:
-                    - name: Referencia de reglas de rendimiento
+                    - name: Información general de referencia de reglas de rendimiento
                       href: performance-rules-reference.md
                     - name: Reglas de rendimiento por identificador
                       href: performance-rules-by-id.md
                     - name: Reglas de rendimiento de uso de .NET Framework
                       items:
-                        - name: Reglas de rendimiento de uso de .NET Framework
+                        - name: Información general de reglas de rendimiento de uso de .NET Framework
                           href: dotnet-framework-usage-performance-rules.md
                         - name: 'DA0001: Usar StringBuilder para las concatenaciones'
                           href: da0001-use-stringbuilder-for-concatenations.md
@@ -216,7 +216,7 @@
                           href: da0039-very-high-rate-of-lock-contentions.md
                     - name: Reglas de rendimiento de memoria y paginación
                       items:
-                        - name: Reglas de rendimiento de memoria y paginación
+                        - name: Información general de las reglas de rendimiento de memoria y paginación
                           href: memory-and-paging-performance-rules.md
                         - name: 'DA0014: Frecuencia extremadamente alta de paginación de memoria activa en el disco'
                           href: da0014-extremely-high-rates-of-paging-active-memory-to-disk.md
@@ -224,7 +224,7 @@
                           href: da0017-high-rates-of-paging-active-memory-to-disk.md
                     - name: Reglas de uso de herramientas de generación de perfiles
                       items:
-                        - name: Reglas de uso de herramientas de generación de perfiles
+                        - name: Información general de las reglas de uso de herramientas de generación de perfiles
                           href: profiling-tools-usage-rules.md
                         - name: 'DA0002: Falta VSPerfCorProf.dll'
                           href: da0002-vsperfcorprof-dll-is-missing.md
@@ -242,7 +242,7 @@
                           href: da0030-gather-tier-interaction-measurements-for-database-projects.md
                     - name: Reglas de rendimiento de la supervisión de recursos
                       items:
-                        - name: Reglas de rendimiento de la supervisión de recursos
+                        - name: Información general de las reglas de rendimiento de la supervisión de recursos
                           href: resource-monitoring-performance-rules.md
                         - name: 'DA0501: Promedio de consumo de CPU del proceso del que se está generando el perfil'
                           href: da0501-average-cpu-consumption-by-the-process-being-profiled.md
@@ -258,13 +258,13 @@
                           href: da0506-maximum-private-bytes-allocated-for-the-process-being-profiled.md
             - name: Vistas de informes de rendimiento
               items:
-                - name: Vistas de informes de rendimiento
+                - name: Información general de tipos de vistas de informes de rendimiento
                   href: performance-report-views.md
                 - name: Información general sobre el informe de rendimiento
                   href: performance-report-overview.md
                 - name: Vistas de datos comunes
                   items:
-                    - name: Vistas de datos comunes
+                    - name: Información general de los orígenes de datos comunes
                       href: common-data-views.md
                     - name: Vista Proceso
                       href: process-view.md
@@ -290,7 +290,7 @@
                       href: event-tracing-for-windows-etw-report.md
                 - name: Vistas de datos del método de muestreo del generador de perfiles
                   items:
-                    - name: Vistas de datos del método de muestreo del generador de perfiles
+                    - name: Información general de las vistas de datos del método de muestreo del generador de perfiles
                       href: profiler-sampling-method-data-views.md
                     - name: 'Vista Resumen: datos de muestreo'
                       href: summary-view-sampling-data.md
@@ -308,7 +308,7 @@
                       href: instruction-pointers-ips-view-sampling-data.md
                 - name: Vistas de datos del método de instrumentación
                   items:
-                    - name: Vistas de datos del método de instrumentación
+                    - name: Información general de las vistas de datos del método de instrumentación
                       href: instrumentation-method-data-views.md
                     - name: 'Vista Resumen: datos de instrumentación'
                       href: summary-view-instrumentation-data.md
@@ -322,7 +322,7 @@
                       href: functions-view-instrumentation-data.md
                 - name: Vistas de datos de memoria de .NET
                   items:
-                    - name: Vistas de datos de memoria de .NET
+                    - name: Información general de las vistas de datos de memoria de .NET
                       href: dotnet-memory-data-views.md
                     - name: 'Vista de resumen: datos de memoria de .NET'
                       href: summary-view-dotnet-memory-data.md
@@ -352,7 +352,7 @@
                       href: functions-view-dotnet-memory-instrumentation-data.md
                 - name: Vistas de datos de contención de recursos
                   items:
-                    - name: Vistas de datos de contención de recursos
+                    - name: Información general de las vistas de datos de contención de recursos
                       href: resource-contention-data-views.md
                     - name: 'Vista Resumen: vista de contención de recursos'
                       href: summary-view-resource-contention-view.md
@@ -378,11 +378,11 @@
                       href: instruction-pointers-ips-view-contention-data.md
                 - name: Vistas de interacción de capas
                   items:
-                    - name: Vistas de interacción de capas
+                    - name: Información general de las vistas de interacción de capas
                       href: tier-interaction-views.md
                     - name: Interacciones de capas (vista)
                       href: tier-interactions-view.md
-            - name: Personalizar las vistas de informes de las herramientas de rendimiento
+            - name: Personalización de vistas
               items:
                 - name: Personalizar las vistas de informes de las herramientas de rendimiento
                   href: customizing-performance-tools-report-views.md
@@ -400,7 +400,7 @@
                   href: how-to-filter-profiling-tools-report-views-to-display-just-my-code.md
         - name: Comparar archivos de datos de rendimiento
           items:
-            - name: Comparar archivos de datos de rendimiento
+            - name: Información general de la comparación de archivos de datos de rendimiento
               href: comparing-performance-data-files.md
             - name: Comparar archivos de datos de rendimiento
               href: how-to-compare-performance-data-files.md
@@ -408,7 +408,7 @@
           href: saving-symbol-information-with-performance-data-files.md
         - name: Guardar y exportar datos de herramientas de rendimiento
           href: saving-and-exporting-performance-tools-data.md
-        - name: Usar las herramientas de generación de perfiles desde la línea de comandos
+        - name: Herramientas de generación de perfiles en la línea de comandos
           items:
             - name: Usar las herramientas de generación de perfiles desde la línea de comandos
               href: using-the-profiling-tools-from-the-command-line.md
@@ -420,11 +420,11 @@
               href: using-profiling-methods-to-collect-performance-data-from-the-command-line.md
             - name: Agregar datos de interacción de capas desde la línea de comandos
               href: adding-tier-interaction-data-from-the-command-line.md
-            - name: Generación de perfiles de aplicaciones independientes en la línea de comandos
+            - name: Aplicaciones independientes
               items:
                 - name: Generación de perfiles de aplicaciones independientes en la línea de comandos
                   href: command-line-profiling-of-stand-alone-applications.md
-                - name: Recopilar estadísticas de aplicación para aplicaciones independientes mediante la línea de comandos del generador de perfiles
+                - name: Recopilación de estadísticas de aplicaciones para aplicaciones independientes
                   items:
                     - name: Recopilar estadísticas de aplicación para aplicaciones independientes mediante la línea de comandos del generador de perfiles
                       href: collecting-application-statistics-for-stand-alone-applications.md
@@ -434,7 +434,7 @@
                       href: how-to-attach-the-profiler-to-a-dotnet-app-and-collect-application-statistics.md
                     - name: Asociar el generador de perfiles a una aplicación independiente nativa y recopilar estadísticas de la aplicación mediante la línea de comandos
                       href: how-to-attach-the-profiler-to-a-native-app-and-collect-application-statistics.md
-                - name: Recopilación de datos detallados de control de tiempo para una aplicación independiente mediante la línea de comandos del generador de perfiles
+                - name: Recopilación de datos detallados de control de tiempo para una aplicación independiente
                   items:
                     - name: Recopilación de datos detallados de control de tiempo para una aplicación independiente mediante la línea de comandos del generador de perfiles
                       href: collecting-detailed-timing-data-for-a-stand-alone-application.md
@@ -442,7 +442,7 @@
                       href: how-to-instrument-a-dotnet-framework-component-and-collect-timing-data.md
                     - name: Instrumentar un componente nativo independiente y recopilar datos de control de tiempo con el generador de perfiles desde la línea de comandos
                       href: how-to-instrument-a-native-component-and-collect-timing-data.md
-                - name: Recopilación de datos de simultaneidad para aplicaciones independientes mediante la línea de comandos del generador de perfiles
+                - name: Recopilación de datos de simultaneidad para aplicaciones independientes
                   items:
                     - name: Recopilación de datos de simultaneidad para aplicaciones independientes mediante la línea de comandos del generador de perfiles
                       href: collecting-concurrency-data-for-stand-alone-applications.md
@@ -454,7 +454,7 @@
                       href: how-to-attach-the-profiler-to-a-dotnet-app-and-collect-concurrency-data.md
                     - name: Asociar el generador de perfiles a una aplicación nativa independiente y recopilar datos de simultaneidad mediante la línea de comandos
                       href: how-to-attach-the-profiler-to-a-native-app-and-collect-concurrency-data.md
-                - name: Recopilación de datos de memoria de .NET Framework para aplicaciones independientes mediante la línea de comandos del generador de perfiles
+                - name: Recopilación de datos de memoria de .NET Framework para aplicaciones independientes
                   items:
                     - name: Recopilación de datos de memoria de .NET Framework para aplicaciones independientes mediante la línea de comandos del generador de perfiles
                       href: collecting-dotnet-framework-memory-data-for-stand-alone-applications.md
@@ -466,19 +466,19 @@
                       href: how-to-instrument-a-dotnet-framework-component-and-collect-memory-data.md
                 - name: 'Tutorial: Generación de perfiles mediante muestreo desde la línea de comandos'
                   href: walkthrough-command-line-profiling-using-sampling.md
-            - name: Generación de perfiles de línea de comandos de aplicaciones web ASP.NET
+            - name: Aplicaciones web ASP.NET
               items:
                 - name: Generación de perfiles de línea de comandos de aplicaciones web ASP.NET
                   href: command-line-profiling-of-aspnet-web-applications.md
                 - name: Generación rápida de perfiles de sitio web con VSPerfASPNETCmd
                   href: rapid-web-site-profiling-with-vsperfaspnetcmd.md
-                - name: Recopilación de estadísticas de aplicación para aplicaciones web ASP.NET mediante el método de muestreo del generador de perfiles desde la línea de comandos
+                - name: Recopilación de estadísticas de aplicación para aplicaciones web ASP.NET mediante el método de muestreo del generador de perfiles
                   items:
                     - name: Recopilación de estadísticas de aplicación para aplicaciones web ASP.NET mediante el método de muestreo del generador de perfiles desde la línea de comandos
                       href: collecting-application-statistics-for-aspnet-using-the-profiler-sampling-method.md
                     - name: Asociar el generador de perfiles a una aplicación web ASP.NET para recopilar estadísticas de aplicación mediante la línea de comandos
                       href: how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line.md
-                - name: Recopilación de datos detallados de control de tiempo para una aplicación web ASP.NET mediante el método de instrumentación del generador de perfiles desde la línea de comandos
+                - name: Recopilación de datos detallados de tiempo para una aplicación web ASP.NET utilizando el método de instrumentación del generador de perfiles
                   items:
                     - name: Recopilación de datos detallados de control de tiempo para una aplicación web ASP.NET mediante el método de instrumentación del generador de perfiles desde la línea de comandos
                       href: collecting-detailed-timing-data-aspnet-profiler-instrumentation-method.md
@@ -486,13 +486,13 @@
                       href: how-to-instrument-statically-compiled-aspnet-and-collect-detailed-timing-data.md
                     - name: Instrumentar una aplicación web ASP.NET compilada dinámicamente y recopilar datos detallados de control de tiempo con el generador de perfiles mediante la línea de comandos
                       href: how-to-instrument-a-dynamically-compiled-aspnet-app-and-collect-timing-data.md
-                - name: Recopilación de datos de simultaneidad para una aplicación web ASP.NET con la línea de comandos del generador de perfiles
+                - name: Recopilación de datos de simultaneidad para una aplicación web ASP.NET
                   items:
                     - name: Recopilación de datos de simultaneidad para una aplicación web ASP.NET con la línea de comandos del generador de perfiles
                       href: collecting-concurrency-data-for-an-aspnet-web-application.md
                     - name: Asociar el generador de perfiles a una aplicación web ASP.NET para recopilar datos de simultaneidad mediante la línea de comandos
                       href: how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line.md
-                - name: Recopilación de datos de memoria de una aplicación web ASP.NET con la línea de comandos del generador de perfiles
+                - name: Recopilación de datos de memoria para una aplicación web ASP.NET
                   items:
                     - name: Recopilación de datos de memoria de una aplicación web ASP.NET con la línea de comandos del generador de perfiles
                       href: collecting-memory-data-from-an-aspnet-web-application.md
@@ -516,7 +516,7 @@
                       href: how-to-attach-the-profiler-to-a-dotnet-service-to-collect-application-statistics-by-using-the-command-line.md
                     - name: Asociar el generador de perfiles a un servicio nativo para recopilar estadísticas de aplicación mediante la línea de comandos
                       href: how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line.md
-                - name: Recopilación de datos detallados de control de tiempo para servicios mediante el método de instrumentación desde la línea de comandos del generador de perfiles
+                - name: Recopilar datos detallados de tiempo para servicios utilizando el método de instrumentación
                   items:
                     - name: Recopilación de datos detallados de control de tiempo para servicios mediante el método de instrumentación desde la línea de comandos del generador de perfiles
                       href: collecting-detailed-timing-data-for-services-by-using-the-instrumentation-method.md
@@ -524,7 +524,7 @@
                       href: how-to-instrument-a-dotnet-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md
                     - name: Instrumentar un servicio nativo y recopilar datos detallados de control de tiempo mediante la línea de comandos del generador de perfiles
                       href: how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md
-                - name: Recopilar datos de simultaneidad para un servicio mediante la línea de comandos del generador de perfiles
+                - name: Recopilación de datos de simultaneidad para un servicio
                   items:
                     - name: Recopilar datos de simultaneidad para un servicio mediante la línea de comandos del generador de perfiles
                       href: collecting-concurrency-data-for-a-service-by-using-the-profiler-command-line.md
@@ -532,7 +532,7 @@
                       href: how-to-attach-the-profiler-to-a-dotnet-service-to-collect-concurrency-data-by-using-the-command-line.md
                     - name: Asociar el generador de perfiles a un servicio nativo para recopilar datos de simultaneidad mediante la línea de comandos
                       href: how-to-attach-the-profiler-to-a-native-service-to-collect-concurrency-data-by-using-the-command-line.md
-                - name: Recopilación de datos de memoria de servicios de .NET Framework mediante la línea de comandos del generador de perfiles
+                - name: Recopilación de datos de memoria de servicios de .NET Framework
                   items:
                     - name: Recopilación de datos de memoria de servicios de .NET Framework mediante la línea de comandos del generador de perfiles
                       href: collecting-memory-data-from-dotnet-framework-services-by-using-the-profiler-command-line.md
@@ -542,7 +542,7 @@
                       href: how-to-instrument-a-dotnet-framework-service-and-collect-memory-data-by-using-the-profiler-command-line.md
             - name: Creación de informes del generador de perfiles desde la línea de comandos
               items:
-                - name: Creación de informes del generador de perfiles desde la línea de comandos
+                - name: Información general de creación de informes del generador de perfiles desde la línea de comandos
                   href: creating-profiler-reports-from-the-command-line.md
                 - name: Creación de informes básicos de generación de perfiles desde la línea de comandos
                   href: creating-basic-profiling-reports-from-the-command-line.md
@@ -560,7 +560,7 @@
               href: how-to-install-the-stand-alone-profiler.md
             - name: Referencia de las herramientas de generación de perfiles de la línea de comandos
               items:
-                - name: Referencia de las herramientas de generación de perfiles de la línea de comandos
+                - name: Información general de la referencia de las herramientas de generación de perfiles de la línea de comandos
                   href: command-line-profiling-tools-reference.md
                 - name: VSInstr
                   href: vsinstr.md
@@ -638,11 +638,11 @@
           href: profiling-on-hpc-high-performance-computing-clusters.md
         - name: APIs de herramientas de generación de perfiles
           items:
-            - name: APIs de herramientas de generación de perfiles
+            - name: Información general de las API de herramientas de generación de perfiles
               href: profiling-tools-apis.md
             - name: Referencia de la API del generador de perfiles de Visual Studio (nativa)
               items:
-                - name: Referencia de la API del generador de perfiles de Visual Studio (nativa)
+                - name: Información general de la referencia de la API del generador de perfiles de Visual Studio (nativa)
                   href: visual-studio-profiler-api-reference-native.md
                 - name: CommentMarkAtProfile
                   href: commentmarkatprofile.md
@@ -670,7 +670,7 @@
           href: troubleshooting-performance-tools-issues.md
     - name: Visualizador de simultaneidad
       items:
-        - name: Visualizador de simultaneidad
+        - name: Información general del Visualizador de simultaneidad
           href: concurrency-visualizer.md
         - name: Modelos comunes para aplicaciones multiproceso con comportamiento deficiente
           href: common-patterns-for-poorly-behaved-multithreaded-applications.md
@@ -678,7 +678,7 @@
           href: utilization-navigator.md
         - name: Vista de utilización
           items:
-            - name: Vista de utilización
+            - name: Información general de la vista de uso
               href: utilization-view.md
             - name: Gráfico de utilización de la CPU
               href: cpu-utilization-graph.md
@@ -696,7 +696,7 @@
               href: gpu-activity-other-processes.md
         - name: Vista de subprocesos (rendimiento paralelo)
           items:
-            - name: Vista de subprocesos (rendimiento paralelo)
+            - name: Información general de la vista de subprocesos (rendimiento paralelo)
               href: threads-view-parallel-performance.md
             - name: Informe de perfil de bloqueo de tiempo
               href: blocking-time-profile-report.md
@@ -760,7 +760,7 @@
               href: zoom-control-threads-view.md
         - name: Vista de núcleos
           items:
-            - name: Vista de núcleos
+            - name: Información general de la vista de núcleos
               href: cores-view.md
             - name: Leyenda de la vista Núcleos
               href: cores-view-legend.md
@@ -774,7 +774,7 @@
           href: advanced-settings-dialog-box-concurrency-visualizer.md
         - name: Marcadores del Visualizador de simultaneidad
           items:
-            - name: Marcadores del Visualizador de simultaneidad
+            - name: Información general de los marcadores del Visualizador de simultaneidad
               href: concurrency-visualizer-markers.md
             - name: Marcadores de marca
               href: flag-markers.md
@@ -786,13 +786,13 @@
               href: visualizing-eventsource-events-as-markers.md
         - name: SDK del Visualizador de simultaneidad
           items:
-            - name: SDK del Visualizador de simultaneidad
+            - name: Información general del SDK del Visualizador de simultaneidad
               href: concurrency-visualizer-sdk.md
             - name: Usar el SDK de marcadores del visualizador de simultaneidad
               href: how-to-use-the-concurrency-visualizer-markers-sdk.md
             - name: Referencia de la biblioteca C++
               items:
-                - name: Referencia de la biblioteca C++
+                - name: Información general de la referencia de biblioteca de C++
                   href: cpp-library-reference.md
                 - name: Espacio de nombres de simultaneidad (Visualizador de simultaneidad)
                   items:
@@ -830,7 +830,7 @@
                           href: marker-importance-enumeration.md
             - name: Referencia de la biblioteca C
               items:
-                - name: Referencia de la biblioteca C
+                - name: Información general de la referencia de biblioteca de C
                   href: c-library-reference.md
                 - name: CvCreateDefaultMarkerSeriesOfDefaultProvider (Función)
                   href: cvcreatedefaultmarkerseriesofdefaultprovider-function.md

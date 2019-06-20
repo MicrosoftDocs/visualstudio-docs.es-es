@@ -21,6 +21,8 @@
       items:
         - name: Información general
           displayName: 'static code analysis, binary analysis'
+          href: static-code-analysis-for-managed-code-overview.md
+        - name: Tutorial de análisis de código estático
           href: walkthrough-analyzing-managed-code-for-code-defects.md
         - name: Migración
           href: fxcop-analyzers.yml
@@ -36,9 +38,7 @@
               href: how-to-customize-the-code-analysis-dictionary.md
         - name: Supresión
           items:
-            - name: Suprimir advertencias
-              href: in-source-suppression-overview.md
-            - name: Suprimir advertencias de análisis de código para código generado
+            - name: Supresión de advertencias de análisis de código estático para código generado
               href: how-to-suppress-code-analysis-warnings-for-generated-code.md
         - name: Errores de la aplicación de análisis de código
           items:
@@ -100,6 +100,18 @@
               href: ca0505.md
             - name: FxCopCmd (errores)
               href: fxcopcmd-errors.md
+        - name: Directivas de inserción en el repositorio
+          items:
+            - name: Creación y actualización de directivas de inserción en el repositorio
+              href: how-to-create-or-update-standard-code-analysis-check-in-policies.md
+            - name: Implementación de directivas de inserción en el repositorio de análisis de código
+              href: implementing-custom-code-analysis-check-in-policies-for-managed-code.md
+            - name: Exigencia de código fácil de mantener
+              href: how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy.md
+            - name: Sincronización de conjuntos de reglas de proyecto con la directiva de inserción en el repositorio
+              href: how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy.md
+            - name: Compatibilidad de versiones
+              href: version-compatibility-for-code-analysis-check-in-policies.md
     - name: Analizadores de FxCop
       items:
         - name: Información general
@@ -135,18 +147,6 @@
           href: how-to-create-a-custom-rule-set.md
         - name: Uso del editor de conjuntos de reglas
           href: working-in-the-code-analysis-rule-set-editor.md
-    - name: Directivas de inserción en el repositorio
-      items:
-        - name: Creación y actualización de directivas de inserción en el repositorio
-          href: how-to-create-or-update-standard-code-analysis-check-in-policies.md
-        - name: Implementación de directivas de inserción en el repositorio de análisis de código
-          href: implementing-custom-code-analysis-check-in-policies-for-managed-code.md
-        - name: Exigencia de código fácil de mantener
-          href: how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy.md
-        - name: Sincronización de conjuntos de reglas de proyecto con la directiva de inserción en el repositorio
-          href: how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy.md
-        - name: Compatibilidad de versiones
-          href: version-compatibility-for-code-analysis-check-in-policies.md
     - name: Métrica de código
       items:
         - name: Información general
@@ -188,6 +188,8 @@
               href: native-recommended-rules-rule-set.md
             - name: Conjunto de reglas Reglas de seguridad para código administrado
               href: security-rules-rule-set-for-managed-code.md
+        - name: Suprimir advertencias
+          href: in-source-suppression-overview.md
         - name: Advertencias de código administrado
           items:
             - name: Información general
