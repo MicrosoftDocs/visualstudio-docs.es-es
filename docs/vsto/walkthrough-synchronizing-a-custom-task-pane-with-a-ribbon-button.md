@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Sincronizar un panel de tareas personalizado con un botón de la cinta de opciones'
+title: Sincronizar el panel de tareas personalizado con el botón de la cinta de opciones
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -23,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fb74c56536a749629def4654f90206808e3b87e3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ad910f94c6b6a4345f6973e84e02c85d4fe1f0e4
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443972"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328336"
 ---
 # <a name="walkthrough-synchronize-a-custom-task-pane-with-a-ribbon-button"></a>Tutorial: Sincronizar un panel de tareas personalizado con un botón de la cinta de opciones
   Este tutorial muestra cómo crear un panel de tareas personalizado que los usuarios puedan ocultar o mostrar haciendo clic en un botón de alternancia en la cinta de opciones. Siempre se debe crear un elemento de interfaz de usuario, como un botón, en el que los usuarios puedan hacer clic para mostrar u ocultar el panel de tareas personalizado, porque las aplicaciones de Microsoft Office no proporcionan una manera predeterminada para que los usuarios muestren u oculten los paneles de tareas personalizados.
@@ -71,7 +71,7 @@ ms.locfileid: "63443972"
 
 1. En el menú **Proyecto** , haga clic en **Agregar nuevo elemento**.
 
-2. En el cuadro de diálogo **Agregar nuevo elemento** , seleccione **Cinta (diseñador visual)**.
+2. En el cuadro de diálogo **Agregar nuevo elemento** , seleccione **Cinta (diseñador visual)** .
 
 3. Cambie el nombre de la nueva cinta de opciones por **ManageTaskPaneRibbon**y haga clic en **Agregar**.
 

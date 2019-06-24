@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Cambiar el formato de hoja de cálculo utilizando controles CheckBox'
+title: Cambiar el formato de hoja de cálculo utilizando controles CheckBox
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e2a7cd6143b9c97bbcd06337d38ae169dfa94305
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 42d2c46f6fd61d74476933cfda3dea8c62b00c95
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438611"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328699"
 ---
 # <a name="walkthrough-change-worksheet-formatting-using-checkbox-controls"></a>Tutorial: Cambiar el formato de hoja de cálculo utilizando controles CheckBox
   En este tutorial se muestra los aspectos básicos del uso de las casillas de verificación en una hoja de cálculo de Microsoft Office Excel para cambiar el formato. Utilizará las herramientas de desarrollo de Office en Visual Studio para crear y agregar código al proyecto. Para ver el resultado como un ejemplo completo, vea el ejemplo de controles de Excel en [tutoriales y ejemplos de desarrollo de Office](../vsto/office-development-samples-and-walkthroughs.md).

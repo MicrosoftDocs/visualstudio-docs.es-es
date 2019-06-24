@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Guardar mediante programación los datos adjuntos de elementos de correo electrónico de Outlook
+title: Guardar datos adjuntos de elementos de correo electrónico de Outlook mediante programación
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d222924e753db1b476a5d7729e2c794a8ab305e2
-ms.sourcegitcommit: c6249a8f3054db881ba62f4e80bf006d440f5a2d
+ms.openlocfilehash: e7e0cff4761b26bac8265592b681d4e56f2ad92f
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/03/2019
-ms.locfileid: "66462125"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328964"
 ---
 # <a name="how-to-programmatically-save-attachments-from-outlook-email-items"></a>Procedimiento Guardar mediante programación los datos adjuntos de elementos de correo electrónico de Outlook
 

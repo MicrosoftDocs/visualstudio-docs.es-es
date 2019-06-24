@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Agregar controles a un documento en tiempo de ejecución en un complemento de VSTO'
+title: Agregar controles al documento en tiempo de ejecución en complementos de VSTO
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f226f65e493ced3a33dcfe7514633992cce158d0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b6ac01f32a14589837d0cb7707cb3d2f8946bd0a
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62982419"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328401"
 ---
 # <a name="walkthrough-add-controls-to-a-document-at-runtime-in-a-vsto-add-in"></a>Tutorial: Agregar controles a un documento en tiempo de ejecución en un complemento de VSTO
   Puede agregar controles a cualquier documento abierto de Microsoft Office Word mediante el uso de un complemento de VSTO. Este tutorial muestra cómo usar la cinta de opciones para permitir que los usuarios agregar un <xref:Microsoft.Office.Tools.Word.Controls.Button> o un <xref:Microsoft.Office.Tools.Word.RichTextContentControl> a un documento.
@@ -62,7 +62,7 @@ ms.locfileid: "62982419"
 
 1. En el menú **Proyecto** , haga clic en **Agregar nuevo elemento**.
 
-2. En el cuadro de diálogo **Agregar nuevo elemento** , seleccione **Cinta (diseñador visual)**.
+2. En el cuadro de diálogo **Agregar nuevo elemento** , seleccione **Cinta (diseñador visual)** .
 
 3. Cambie el nombre de la nueva cinta de opciones por **MyRibbon**y haga clic en **Agregar**.
 
