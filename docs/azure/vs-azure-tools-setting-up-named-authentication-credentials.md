@@ -4,8 +4,6 @@ description: Aprenda a proporcionar credenciales que Visual Studio pueda usar pa
 author: ghogen
 manager: jillfra
 assetId: 61570907-42a1-40e8-bcd6-952b21a55786
-ms.prod: visual-studio-dev14
-ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
@@ -40,6 +38,6 @@ Si desea crear un certificado por sí mismo, puede consultar las instrucciones d
 ## <a name="next-steps"></a>Pasos siguientes
 
 - [Introducción general sobre Web Apps](https://docs.microsoft.com/azure/app-service/)
-- [Documentación de implementación de Azure App Service](https://docs.microsoft.com/azure/app-service/app-service-deploy-local-git) 
+- [Documentación de implementación de Azure App Service](https://docs.microsoft.com/azure/app-service/app-service-deploy-local-git)
 - [Implementar trabajos web con Visual Studio](https://docs.microsoft.com/azure/app-service/websites-dotnet-deploy-webjobs)
 - [Crear e implementar un servicio en la nube](https://docs.microsoft.com/azure/cloud-services/cloud-services-how-to-create-deploy-portal)
