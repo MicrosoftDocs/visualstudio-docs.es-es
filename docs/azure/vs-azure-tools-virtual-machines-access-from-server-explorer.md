@@ -4,8 +4,6 @@ description: Obtenga una visión general de cómo ver, crear y administrar Azure
 author: ghogen
 manager: jillfra
 assetId: eb3afde6-ba90-4308-9ac1-3cc29da4ede0
-ms.prod: visual-studio-dev14
-ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
@@ -35,7 +33,7 @@ Si tiene máquinas virtuales hospedadas por Azure, puede acceder a ellas en el E
    | Estado |Los valores incluyen: Iniciando, Iniciado, Deteniéndose, Detenido y Recuperando estado. Si aparece Recuperando estado, el estado actual es desconocido. Los valores para esta propiedad son distintos de los que se usan en [Azure Portal](http://go.microsoft.com/fwlink/p/?LinkID=525040). |
    | SubscriptionID |El Id. de suscripción de la cuenta de Azure. Esta información se puede mostrar en [Azure Portal](http://go.microsoft.com/fwlink/p/?LinkID=525040) mediante la visualización de las propiedades de una suscripción. |
 2. Seleccione un nodo de extremo y, a continuación, vea la ventana **Propiedades** .
-3. La tabla siguiente describe las propiedades disponibles de los extremos, pero son de solo lectura. Para agregar o editar los puntos de conexión de una máquina virtual, use [Azure Portal](http://go.microsoft.com/fwlink/p/?LinkID=525040). 
+3. La tabla siguiente describe las propiedades disponibles de los extremos, pero son de solo lectura. Para agregar o editar los puntos de conexión de una máquina virtual, use [Azure Portal](http://go.microsoft.com/fwlink/p/?LinkID=525040).
 
    | Propiedad. | Descripción |
    | --- | --- |
