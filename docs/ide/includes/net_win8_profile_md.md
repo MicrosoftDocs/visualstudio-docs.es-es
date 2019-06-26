@@ -14,10 +14,10 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.openlocfilehash: 944f67276c6e0adaa8611eef857024e08adb21b7
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65847353"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67253761"
 ---
 .NET para aplicaciones de Windows 8.x

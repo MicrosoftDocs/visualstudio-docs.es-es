@@ -9,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1e5f88acccd9ccbcd880b8403edb0eb40f97ad2e
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 1ed80454f6a87047de9e338d26c749d3c27a98ea
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714478"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67258124"
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Preguntas más frecuentes sobre Live Unit Testing
 
@@ -197,15 +197,6 @@ Las pruebas que se basan en estos valores pueden producir errores cuando las eje
 La solución se puede compilar incluso si no realiza ninguna edición si el proceso de compilación de la solución genera código fuente que forma parte de la propia solución y los archivos de destino de compilación no tienen entradas y salidas adecuadas especificadas. Los destinos deben disponer de una lista de entradas y salidas para que MSBuild pueda realizar las comprobaciones actualizadas adecuadas y determinar si es necesaria una nueva compilación.
 
 Live Unit Testing inicia una compilación siempre que detecta que los archivos de origen han cambiado. Dado que la compilación de la solución genera archivos de origen, Live Unit Testing entrará en un bucle de compilación infinito. Pero si las entradas y salidas del destino se comprueban cuando Live Unit Testing inicia la segunda compilación (después de detectar los archivos de origen recién generados desde la compilación anterior), saldrá del bucle de compilación porque las comprobaciones de las entradas y salidas indicarán que todo está actualizado.  
-
-## <a name="lightweight-solution-load"></a>Carga de solución ligera
-
-**¿Cómo funciona Live Unit Testing con la característica de carga de solución ligera?**
-
-Live Unit Testing en estos momentos no funciona bien con la característica de carga de solución ligera. Solo funciona después de cargar al menos un proyecto de prueba. Hasta entonces, no funcionará porque Live Unit Testing depende de al menos uno de los proyectos de prueba que hacen referencia al adaptador de prueba (MSTest, xUnit o NUnit) que se está cargando.
-
-> [!NOTE]
-> La carga de solución ligera ya no está disponible en la versión 15.5 de Visual Studio 2017 ni en versiones posteriores. En la versión 15.5 de Visual Studio 2017 y versiones posteriores, las soluciones de gran tamaño que contiene código administrado se cargan mucho más rápido que antes, incluso sin la carga de solución ligera.
 
 ## <a name="new-process-coverage"></a>Cobertura de nuevo proceso
 

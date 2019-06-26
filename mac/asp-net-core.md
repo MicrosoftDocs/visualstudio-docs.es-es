@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 04/02/2019
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
 ms.custom: video
-ms.openlocfilehash: 257d60d87a743d5c5e1099ee443c7bdb38055cca
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 53fd740d8a32954de566ab7d383004e4f503ca2c
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62985600"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67258902"
 ---
 # <a name="getting-started-with-aspnet-core"></a>Introducción a ASP.NET Core
 
@@ -23,13 +23,13 @@ ms.locfileid: "62985600"
 
 ## <a name="creating-an-aspnet-core-app-in-visual-studio-for-mac"></a>Crear una aplicación de ASP.NET Core en Visual Studio para Mac
 
-Abra Visual Studio para Mac. En la pantalla de inicio, seleccione **Nuevo proyecto...**.
+Abra Visual Studio para Mac. En la pantalla de inicio, seleccione **Nuevo proyecto...** .
 
 ![Cuadro de diálogo Nuevo proyecto](media/asp-net-core-2019-new-asp-core.png)
 
 Se mostrará el cuadro de diálogo Nuevo proyecto, que le permite seleccionar una plantilla para crear la aplicación.
 
-Hay una serie de proyectos que le proporcionarán una plantilla predefinida para empezar a compilar la aplicación de ASP.NET Core. Estos son:
+Hay una serie de proyectos que le proporcionarán una plantilla predefinida para empezar a compilar la aplicación de ASP.NET Core. Dichos componentes son:
 
 - **.NET Core > Vacío**
 - **.NET Core > API**
@@ -135,7 +135,7 @@ Cuando el proyecto se está ejecutando, el explorador web predeterminado debe in
 Las aplicaciones de ASP.NET Core usan el modelo de diseño Controlador de vista de modelos (MVC) para proporcionar una separación lógica de las responsabilidades para cada elemento de la aplicación. MVC consta de los siguientes elementos:
 
 - **Model**: clase que representa los datos de la aplicación.
-- **Vista**: muestra la interfaz de usuario de la aplicación (que suelen ser los datos del modelo).
+- **Ver**: muestra la interfaz de usuario de la aplicación (que suelen ser los datos del modelo).
 - **Controller**: clase que controla las solicitudes del explorador y responde a la entrada y la interacción del usuario.
 
 Para obtener más información sobre el uso de MVC, vea la guía [Overview of ASP.NET Core MVC](/aspnet/core/mvc/overview) (Introducción a MVC de ASP.NET Core).
@@ -222,7 +222,7 @@ Para agregar un controlador, haga lo siguiente:
 
     ![Aplicación en ejecución en el explorador con argumentos](media/asp-net-core-image10.png)
 
-## <a name="troubleshooting"></a>Solución de problemas
+## <a name="troubleshooting"></a>solución de problemas
 
 Si necesita instalar .NET Core manualmente en Mac OS 10.12 (Sierra) y versiones posteriores, haga lo siguiente:
 
@@ -236,7 +236,7 @@ Complete todos los pasos correctamente para asegurarse de que .NET Core se inst
 
 En esta guía, se le ha proporcionado una introducción a ASP.NET Core. Describe qué es, cuándo se usa y cómo se usa en Visual Studio para Mac.
 Para obtener más información sobre los pasos siguientes, vea las guías que se indican a continuación:
-- Documentos sobre [ASP.NET Core](/aspnet/core/?view=aspnetcore-2.1#build-web-ui-and-web-apis-using-aspnet-core-mvc).
+- Documentos sobre [ASP.NET Core](/aspnet/core/?view=aspnetcore-2.1#build-web-apis-and-web-ui-using-aspnet-core-mvc).
 - [Creating Backend Services for Native Mobile Applications](/aspnet/core/mobile/native-mobile-backend) (Crear servicios back-end para aplicaciones móviles nativas), donde se muestra cómo compilar un servicio REST mediante ASP.NET Core para una aplicación de Xamarin.Forms.
 - [Laboratorio práctico de ASP.NET Core](https://github.com/Microsoft/vs4mac-labs/tree/master/Web/Getting-Started).
 
