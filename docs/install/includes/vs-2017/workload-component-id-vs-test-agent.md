@@ -11,11 +11,11 @@ ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
 ms.openlocfilehash: 0a1661b885db877f216c0c9d3d8363825ea5f8eb
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65848929"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67259682"
 ---
 ## <a name="test-agent"></a>Test Agent
 
@@ -25,7 +25,7 @@ ms.locfileid: "65848929"
 
 ### <a name="components-included-by-this-workload"></a>Componentes incluidos en esta carga de trabajo
 
-Id. de componente | nombre | Versión | Tipo de dependencia
+Id. de componente | NOMBRE | Versión | Tipo de dependencia
 --- | --- | --- | ---
 Microsoft.VisualStudio.ComponentGroup.TestTools.TestAgent | Características principales de Test Agent | 15.0.27019.1 | Obligatorio
 
@@ -33,6 +33,6 @@ Microsoft.VisualStudio.ComponentGroup.TestTools.TestAgent | Características pri
 
 Estos son componentes que no están incluidos en ninguna carga de trabajo, pero que pueden seleccionarse como un componente individual.
 
-Id. de componente | nombre | Versión
+Id. de componente | NOMBRE | Versión
 --- | --- | ---
 N/D | N/D | N/D
