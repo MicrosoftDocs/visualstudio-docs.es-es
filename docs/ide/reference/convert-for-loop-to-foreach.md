@@ -9,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: fc14a07557b3ae46a84f506bc0fa9007efface63
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d61e79055b2158115b459e643a36170304b7f655
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62811906"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67261716"
 ---
 # <a name="refactoring-to-convert-between-a-for-loop-and-a-foreach-statement"></a>Refactorización para convertir un bucle for en una instrucción foreach y viceversa
 
@@ -39,15 +39,15 @@ Estos son algunos de los motivos por los que le puede convenir convertir un bucl
 
 - Quiere simplificar el código y reducir la probabilidad de que se produzcan errores lógicos en las secciones de inicializador, condición e iterador.
 
-### <a name="how-to-use-it"></a>Cómo se usa
+### <a name="how-to-use-it"></a>Cómo usarlo
 
 1. Coloque el símbolo de inserción en la palabra clave `for`.
 
-1. Presione **Ctrl**+**.** o haga clic en el icono del destornillador ![icono de destornillador](../media/screwdriver-icon.png) en el margen del archivo de código.
+1. Presione **Ctrl**+ **.** o haga clic en el icono del destornillador ![icono de destornillador](../media/screwdriver-icon.png) en el margen del archivo de código.
 
    ![Menú Convertir en "foreach"](media/convert-to-foreach.png)
 
-1. Seleccione **Convertir en "foreach"**. También puede seleccionar **Vista previa de cambios** para abrir el cuadro de diálogo [Vista previa de cambios](../../ide/preview-changes.md) y, después, seleccionar **Aplicar**.
+1. Seleccione **Convertir en "foreach"** . También puede seleccionar **Vista previa de cambios** para abrir el cuadro de diálogo [Vista previa de cambios](../../ide/preview-changes.md) y, después, seleccionar **Aplicar**.
 
 ## <a name="convert-a-foreach-statement-to-a-for-loop"></a>Convertir una instrucción foreach en un bucle for
 
@@ -67,20 +67,20 @@ Estos son algunos de los motivos por los que le puede convenir convertir una ins
 
 - Está [recorriendo en iteración una matriz multidimensional](/dotnet/csharp/programming-guide/arrays/using-foreach-with-arrays) y quiere tener más control sobre los elementos de la matriz.
 
-### <a name="how-to-use-it"></a>Cómo se usa
+### <a name="how-to-use-it"></a>Cómo usarlo
 
 1. Coloque el símbolo de inserción en la palabra clave `foreach` o `For Each`.
 
-1. Presione **Ctrl**+**.** o haga clic en el icono del destornillador ![icono de destornillador](../media/screwdriver-icon.png) en el margen del archivo de código.
+1. Presione **Ctrl**+ **.** o haga clic en el icono del destornillador ![icono de destornillador](../media/screwdriver-icon.png) en el margen del archivo de código.
 
    ![Menú Convertir en "for"](media/convert-to-for.png)
 
-1. Seleccione **Convertir en "for"**. También puede seleccionar **Vista previa de cambios** para abrir el cuadro de diálogo [Vista previa de cambios](../../ide/preview-changes.md) y, después, seleccionar **Aplicar**.
+1. Seleccione **Convertir en "for"** . También puede seleccionar **Vista previa de cambios** para abrir el cuadro de diálogo [Vista previa de cambios](../../ide/preview-changes.md) y, después, seleccionar **Aplicar**.
 
 1. Dado que la refactorización introduce una nueva variable de recuento de iteraciones, en la esquina superior derecha del editor aparecerá el cuadro **Cambiar nombre**. Si quiere elegir otro nombre para la variable, escríbalo y presione **Entrar** o seleccione **Aplicar** en el cuadro **Cambiar nombre**. Si no quiere elegir un nombre nuevo, presione **Esc** o seleccione **Aplicar** para descartar el cuadro **Cambiar nombre**.
 
 > [!NOTE]
-> En C#, el código generado por estas refactorizaciones usa un tipo explícito o [var](/dotnet/csharp/language-reference/keywords/var) como tipo de los elementos de la colección. El tipo en el código generado, explícito o implícito, depende de la configuración de estilo de código que queda dentro del ámbito. Estas opciones de estilo de código concretas se configuran en el nivel de máquina en **Herramientas** > **Opciones** > **Editor de texto** > **C#** > **Estilo de código** > **General** > **Preferencias de \'var'** o en el nivel de solución en un archivo [EditorConfig](../../ide/editorconfig-code-style-settings-reference.md#implicit-and-explicit-types). Si cambia una configuración de estilo de código en **Opciones**, vuelva a abrir el archivo de código para que los cambios surtan efecto.
+> En C#, el código generado por estas refactorizaciones usa un tipo explícito o [var](/dotnet/csharp/language-reference/keywords/var) como tipo de los elementos de la colección. El tipo en el código generado, explícito o implícito, depende de la configuración de estilo de código que queda dentro del ámbito. Estas opciones de estilo de código concretas se configuran en el nivel de máquina en **Herramientas** > **Opciones** > **Editor de texto** > **C#**  > **Estilo de código** > **General** > **Preferencias de \'var'** o en el nivel de solución en un archivo [EditorConfig](../../ide/editorconfig-language-conventions.md#implicit-and-explicit-types). Si cambia una configuración de estilo de código en **Opciones**, vuelva a abrir el archivo de código para que los cambios surtan efecto.
 
 ## <a name="see-also"></a>Vea también
 

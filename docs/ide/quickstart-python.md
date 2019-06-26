@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f81ca0d5c41f08174adfc891055939414e1bfe6f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ce4184cd3864cad787a4e4f8afc084445fa3c828
+ms.sourcegitcommit: 01c3c9dcade5d913bde2c7efa8c931a7b04e6cd0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62953964"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67365296"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>Inicio rápido: Creación de la primera aplicación web de Python con Visual Studio
 
@@ -33,7 +33,7 @@ Si todavía no ha instalado Visual Studio, vaya a la página de [descargas de Vi
 
 ::: moniker-end
 
-## <a name="create-the-project"></a>Crear el proyecto
+## <a name="create-the-project"></a>Creación del proyecto
 
 Los pasos siguientes crean un proyecto vacío que actúa como un contenedor para la aplicación:
 
@@ -105,7 +105,7 @@ Aquí, utilice los pasos siguientes para instalar la biblioteca de Flask en el "
 
     ![Explorador de soluciones en el que se muestra el entorno predeterminado](media/quickstart-python-02-default-environment-2019.png)
 
-2. Haga clic con el botón derecho en el entorno y seleccione **Administrar paquetes de Python...**. Este comando abre la ventana **Entornos de Python** en la pestaña **Paquetes (PyPI)**.
+2. Haga clic con el botón derecho en el entorno y seleccione **Administrar paquetes de Python...** . Este comando abre la ventana **Entornos de Python** en la pestaña **Paquetes (PyPI)** .
 
 3. En el campo de búsqueda, escriba "flask". Si **Flask** aparece debajo del cuadro de búsqueda, puede omitir este paso. En caso contrario, seleccione **Comando de ejecución: pip install flask**. Acepte los mensajes de privilegios de administrador y observe el progreso en la ventana **Salida** de Visual Studio. (Se le pedirá confirmación de elevación cuando la carpeta de paquetes del entorno global esté ubicada en un área protegida, como *C:\Archivos de programa*).
 
@@ -167,7 +167,7 @@ Ahora está listo para agregar un poco de código de Python para implementar una
 
 **Respuesta**: Consulte la documentación de Flask, empezando por el [inicio rápido de Flask](http://flask.pocoo.org/docs/0.12/quickstart/#quickstart).
 
-## <a name="run-the-application"></a>Ejecutar la aplicación
+## <a name="run-the-application"></a>Ejecución de la aplicación
 
 1. Haga clic con el botón derecho en *app.py* en el **Explorador de soluciones** y seleccione **Establecer como archivo de inicio**. Este comando identifica el archivo de código que se va a iniciar en Python cuando se ejecuta la aplicación.
 
@@ -177,8 +177,6 @@ Ahora está listo para agregar un poco de código de Python para implementar una
     ::: moniker range=">=vs-2019"
     ![Establecimiento del archivo de inicio para un proyecto en el Explorador de soluciones](media/quickstart-python-05-set-as-startup-file-2019.png)
     ::: moniker-end
-
-1. Haga clic con el botón derecho en *app.py* en el **Explorador de soluciones** y seleccione **Establecer como archivo de inicio**. Este comando identifica el archivo de código que se va a iniciar en Python cuando se ejecuta la aplicación.
 
 2. Haga clic con el botón derecho en el proyecto en el **Explorador de soluciones** y seleccione **Propiedades**. Después, haga clic en la pestaña **Depurar** y establezca la propiedad **Número de puerto** en `4449`. Este paso garantiza que Visual Studio inicia un explorador con `localhost:4449` para que coincida con los argumentos `app.run` en el código.
 

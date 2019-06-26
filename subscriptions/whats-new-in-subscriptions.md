@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: dc243e057e3e0d4eec6ea314b0e7aa0778d6c0dc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 647009d7e01cc821bdf4fa6a573e6caa73cb7794
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969428"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67259490"
 ---
 # <a name="what39s-new-in-visual-studio-subscriptions"></a>Novedades de las suscripciones de Visual Studio
 
@@ -35,7 +35,7 @@ Hemos agregado una nueva funcionalidad para que a los administradores de la nube
 
    ![Exporte una lista de suscriptores a Excel con el botón Exportar](media/export-subscriber-list-to-csv.png)
 
-* [**Edición en masa**](/visualstudio/subscriptions/edit-license#editing-multiple-subscribers-by-using-bulk-edit): edite la información de suscripción de varios suscriptores en masa.
+* [**Edición en masa**](/visualstudio/subscriptions/edit-license#editing-multiple-subscribers-using-bulk-edit): edite la información de suscripción de varios suscriptores en masa.
 
   ![Edite varios usuarios con el botón Edición masiva](media/bulk-edit-multiple-subscribers.png)
 
