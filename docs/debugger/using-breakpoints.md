@@ -34,12 +34,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a284c3630b60d5fc2211064524d87259b1f8349f
-ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.openlocfilehash: c2bf6a62bde77ce49c7723e435bc34c3cad74702
+ms.sourcegitcommit: 01c3c9dcade5d913bde2c7efa8c931a7b04e6cd0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65614514"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67365389"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Utilizar puntos de interrupción en el depurador de Visual Studio
 Los puntos de interrupción son una de las técnicas de depuración más importantes en el cuadro de herramientas de desarrollador. Establecer puntos de interrupción donde desee pausar la ejecución del depurador. Por ejemplo, es posible que desee ver el estado de las variables del código o examine la pila de llamadas en un determinado punto de interrupción. Si esta es la primera vez que intenta depurar código, le recomendamos que lea [Depuración para principiantes sin experiencia](../debugger/debugging-absolute-beginners.md) antes de continuar con este artículo.
@@ -49,7 +49,7 @@ Los puntos de interrupción son una de las técnicas de depuración más importa
 
  Para establecer un punto de interrupción en el código fuente, haga clic en el margen izquierdo junto a una línea de código. También puede seleccionar la línea y presione **F9**, seleccione **depurar** > **Alternar puntos de interrupción**, o haga clic en y seleccione **delpuntodeinterrupción**  >  **Insertar punto de interrupción**. El punto de interrupción aparece como un punto rojo en el margen izquierdo.
 
-En C# automáticamente se resaltan el código, el punto de interrupción y líneas de ejecución actual. Para C++ código, puede activar el resaltado de punto de interrupción y líneas actuales seleccionando **herramientas** (o **depurar**) > **opciones**  >  **Depuración** >  **resaltar la línea de código fuente completo para los puntos de interrupción y la instrucción actual (C++ sólo)**.
+En C# automáticamente se resaltan el código, el punto de interrupción y líneas de ejecución actual. Para C++ código, puede activar el resaltado de punto de interrupción y líneas actuales seleccionando **herramientas** (o **depurar**) > **opciones**  >  **Depuración** >  **resaltar la línea de código fuente completo para los puntos de interrupción y la instrucción actual (C++ sólo)** .
 
  ![Establezca un punto de interrupción](../debugger/media/basicbreakpoint.png "punto de interrupción básica")
 
@@ -144,9 +144,9 @@ Visualmente traza puntos de interrupción durante la ejecución de código, vea 
 
 4. Agregue lo siguiente a la **nombre de la función** cuadro y seleccione **C++** lenguaje.
 
-    ```C++
-    ((my_class *) 0xcccccccc)->my_method
-    ```
+   ```cpp
+   ((my_class *) 0xcccccccc)->my_method
+   ```
 
 ::: moniker range=">= vs-2019"
 
@@ -167,7 +167,7 @@ Los puntos de interrupción de datos en .NET Core no funcionarán para:
 - Propiedades que no se pueden expandir en la información sobre herramientas, las variables locales, automático, o inspección (ventana)
 - Variables estáticas
 - Clases con el atributo DebuggerTypeProxy
-- Campos dentro de structs 
+- Campos dentro de structs
 
 ::: moniker-end
 
@@ -189,11 +189,12 @@ Los puntos de interrupción de datos no funcionan en las siguientes condiciones:
 - Si un proceso que no se está depurando escribe en la ubicación de la memoria.
 - Si la ubicación de la memoria se comparte entre dos o más procesos.
 - Si la ubicación de la memoria se actualiza dentro del kernel. Por ejemplo, si se pasa memoria a la Windows de 32 bits `ReadFile` función, la memoria se actualizará desde el modo de kernel, por lo que el depurador no interrumpirá en la actualización.
+- Donde la expresión de inspección es mayor que 4 bytes en el hardware de 32 bits y 8 bytes en hardware de 64 bits. Esta es una limitación de la x86 arquitectura.
 
->[!NOTE]
->- Los puntos de interrupción de datos dependen de direcciones de memoria concreta. Cambia la dirección de una variable de una sesión de depuración a la siguiente, por lo que los puntos de interrupción de datos se deshabilitan automáticamente al final de cada sesión de depuración.
+> [!NOTE]
+> - Los puntos de interrupción de datos dependen de direcciones de memoria concreta. Cambia la dirección de una variable de una sesión de depuración a la siguiente, por lo que los puntos de interrupción de datos se deshabilitan automáticamente al final de cada sesión de depuración.
 >
->- Si se establece un punto de interrupción de datos en una variable local, el punto de interrupción se mantiene habilitado cuando finaliza la función, pero la dirección de memoria ya no es aplicable, por lo que el comportamiento del punto de interrupción es imprevisible. Si establece un punto de interrupción de datos en una variable local, debe eliminar o deshabilitar el punto de interrupción antes de que finalice la función.
+> - Si se establece un punto de interrupción de datos en una variable local, el punto de interrupción se mantiene habilitado cuando finaliza la función, pero la dirección de memoria ya no es aplicable, por lo que el comportamiento del punto de interrupción es imprevisible. Si establece un punto de interrupción de datos en una variable local, debe eliminar o deshabilitar el punto de interrupción antes de que finalice la función.
 
 ## <a name="BKMK_Specify_advanced_properties_of_a_breakpoint_"></a> Administrar puntos de interrupción en la ventana Puntos de interrupción
 
@@ -273,7 +274,7 @@ Al seleccionar **expresión condicional**, puede elegir entre dos condiciones: *
 
 3. Agregar un nuevo punto de interrupción en el punto que desea investigar; Por ejemplo, cuando el objeto es que se agregarán a la colección. Haga clic con el botón derecho en el punto de interrupción y seleccione **Condiciones**.
 
-4. Use el identificador de objeto en el campo **Expresión condicional**. Por ejemplo, si la variable `item` es el objeto que se agregarán a la colección, seleccione **es true** y tipo **item == $\<n >**, donde \<n > es el número de Id. de objeto .
+4. Use el identificador de objeto en el campo **Expresión condicional**. Por ejemplo, si la variable `item` es el objeto que se agregarán a la colección, seleccione **es true** y tipo **item == $\<n >** , donde \<n > es el número de Id. de objeto .
 
    La ejecución se interrumpirá en el punto cuando ese objeto se agregue a la colección.
 
