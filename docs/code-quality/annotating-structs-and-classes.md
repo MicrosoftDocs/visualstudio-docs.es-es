@@ -1,6 +1,6 @@
 ---
 title: Anotar structs y clases
-ms.date: 11/04/2016
+ms.date: 06/28/2019
 ms.topic: conceptual
 f1_keywords:
 - _Field_size_bytes_part_
@@ -24,14 +24,15 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: fa459e3461ef5e58eb1e5b0c675c7e1b408d6f88
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 35be465064c9524eb0e1339794b6a19b7a595da1
+ms.sourcegitcommit: d2b234e0a4a875c3cba09321cdf246842670d872
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62571425"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67493638"
 ---
 # <a name="annotating-structs-and-classes"></a>Anotar structs y clases
+
 Miembros de clase y struct se pueden anotar utilizando las anotaciones que actúan como invariables, que se supone que cumplirse en cualquier llamada de función o de entrada/salida de la función que implica la estructura envolvente como un parámetro o un valor de resultado.
 
 ## <a name="struct-and-class-annotations"></a>Anotaciones de clase y struct
@@ -75,6 +76,39 @@ Miembros de clase y struct se pueden anotar utilizando las anotaciones que actú
     ```cpp
     min(pM->nSize, sizeof(MyStruct))
     ```
+
+## <a name="example"></a>Ejemplo
+
+```cpp
+#include <sal.h>
+// For FIELD_OFFSET macro
+#include <windows.h>
+
+// This _Struct_size_bytes_ is equivalent to what below _Field_size_ means.
+_Struct_size_bytes_(FIELD_OFFSET(MyBuffer, buffer) + bufferSize * sizeof(int))
+struct MyBuffer
+{
+    static int MaxBufferSize;
+    
+    _Field_z_
+    const char* name;
+    
+    int firstField;
+
+    // ... other fields
+
+    _Field_range_(1, MaxBufferSize)
+    int bufferSize;
+    _Field_size_(bufferSize)        // Prefered way - easier to read and maintain.
+    int buffer[0];
+};
+```
+
+Notas para este ejemplo:
+
+- `_Field_z_` es equivalente a `_Null_terminated_`.  `_Field_z_` para el nombre de campo especifica que el campo nombre es una cadena terminada en null.
+- `_Field_range_` para `bufferSize` especifica que el valor de `bufferSize` debe estar comprendido entre 1 y `MaxBufferSize` (ambos inclusive).
+- Los resultados finales de la `_Struct_size_bytes_` y `_Field_size_` las anotaciones son equivalentes. Para estructuras o clases que tienen un diseño similar, `_Field_size_` es más fácil de leer y mantener, ya que tiene menos referencias y cálculos que el equivalente `_Struct_size_bytes_` anotación. `_Field_size_` no requiere conversión para el tamaño en bytes. Si el tamaño en bytes es la única opción, por ejemplo, para un campo de puntero void, `_Field_size_bytes_` se puede usar. Si ambos `_Struct_size_bytes_` y `_Field_size_` existe, ambos estarán disponibles para las herramientas. Es responsabilidad de la herramienta de qué hacer si las dos anotaciones están en desacuerdo.
 
 ## <a name="see-also"></a>Vea también
 
