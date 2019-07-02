@@ -8,12 +8,6 @@ metadata:
   description: Aprenda a usar Visual Studio para desarrollar aplicaciones, servicios y herramientas en el idioma de su elección para cualquier dispositivo y plataforma.
   ms.topic: hub-page
   monikerRange: '>=vs-2017'
-  ms.openlocfilehash: bac03cb71b4c925ecb7f5fd8f1ed69466f4bd114
-  ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
-  ms.translationtype: HT
-  ms.contentlocale: es-ES
-  ms.lasthandoff: 06/07/2019
-  ms.locfileid: "66462867"
 highlightedContent:
   items:
   - title: Configuración e instalación
@@ -161,21 +155,54 @@ additionalContent:
   - title: Cargas de trabajo
     items:
     - title: Web y nube
-      summary: "[Desarrollo web](/aspnet/) </br>\n[Administración y desarrollo de Azure](azure/index.yml) </br>\n[Python](python/index.yml) </br>\n[Node.js](javascript/index.yml) </br>\n[Almacenamiento y procesamiento de datos](data-tools/index.md) </br>\n[Ciencia de datos](python/data-science-and-analytical-applications-workload.md) </br>\n[Desarrollo de Office/SharePoint](https://developer.microsoft.com/office/docs) \n"
+      links:
+      - text: Desarrollo web
+        url: /aspnet/
+      - text: Administración y desarrollo de Azure
+        url: azure/index.yml
+      - text: Python
+        url: python/index.yml
+      - text: Node.js
+        url: javascript/index.yml
+      - text: Almacenamiento y procesamiento de datos
+        url: data-tools/index.md
+      - text: Ciencia de datos
+        url: python/data-science-and-analytical-applications-workload.md
+      - text: Desarrollo de Office/SharePoint
+        url: https://developer.microsoft.com/office/docs
     - title: Windows
-      summary: >
-        [Desarrollo de escritorio de .NET](/dotnet/framework/develop-client-apps) </br>
-
-        [Desarrollo de la Plataforma universal de Windows](cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md) </br>
-
-        [Desarrollo de Windows con C++](/cpp/windows/desktop-applications-visual-cpp)
+      links:
+      - text: Desarrollo de escritorio de .NET
+        url: /dotnet/framework/develop-client-apps
+      - text: Desarrollo de la Plataforma universal de Windows
+        url: cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md
+      - text: Desarrollo de Windows con C++
+        url: /cpp/windows/desktop-applications-visual-cpp
     - title: Móvil y juegos
-      summary: "[Desarrollo para dispositivos móviles con .NET (Xamarin)](/xamarin/) </br>\n[Desarrollo de juegos con Unity](cross-platform/visual-studio-tools-for-unity.md) </br>\n[Desarrollo para dispositivos móviles con JavaScript](/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017) (solo Visual Studio 2017 y 2015) </br>\n[Desarrollo móvil con C++](/visualstudio/cross-platform/) </br>\n[Desarrollo de juegos con C++](/windows/uwp/gaming/e2e) \n"
+      links:
+      - text: Desarrollo para dispositivos móviles con .NET (Xamarin)
+        url: /xamarin/
+      - text: Desarrollo de juegos con Unity
+        url: cross-platform/visual-studio-tools-for-unity.md
+      - text: Desarrollo móvil con JavaScript
+        url: /visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017
+        note: (Visual Studio 2017 and 2015 only)
+      - text: Desarrollo móvil con C++
+        url: /visualstudio/cross-platform/
+      - text: Desarrollo de juegos con C++
+        url: /windows/uwp/gaming/e2e
     - title: Otros conjuntos de herramientas
-      summary: >
-        [Desarrollo de extensiones de Visual Studio](extensibility/index.md) </br>
-
-        [Desarrollo de Linux con C++](/cpp/linux/) </br>
-
-        [Desarrollo multiplataforma de .NET Core](/dotnet/core/)
+      links:
+      - text: Desarrollo de extensiones de Visual Studio
+        url: extensibility/index.md
+      - text: Desarrollo para Linux con C++
+        url: /cpp/linux/
+      - text: Desarrollo multiplataforma de .NET Core
+        url: /dotnet/core/
   footer: '[Blogs](https://devblogs.microsoft.com/visualstudio/) - [Twitter](https://twitter.com/VisualStudio) - [Stack Overflow](https://stackoverflow.com/questions/tagged/visual-studio) - [Informe de problemas](ide/talk-to-us.md) - [Comunidad de desarrolladores](https://developercommunity.visualstudio.com/spaces/8/index.html)'
+ms.openlocfilehash: 1ce6f4c489f0a3c5ccf5b62f9541cba615f10742
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328820"
