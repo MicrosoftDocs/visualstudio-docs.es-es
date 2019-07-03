@@ -15,12 +15,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cd0ba9030d658abb78605cf2e14b5afaa9678f78
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c3fe11a4d92ecc95f5835fc8a8c654b2aac3d235
+ms.sourcegitcommit: d2b234e0a4a875c3cba09321cdf246842670d872
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63424303"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67493656"
 ---
 # <a name="uml-use-case-diagrams-guidelines"></a>Diagramas de casos de uso UML: Instrucciones
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -170,11 +170,11 @@ En Visual Studio, puede dibujar un *diagrama de casos de uso* quién usa la apli
   
  ![Caso de uso mostrando muchos a muchos multiplicidad](../modeling/media/uml-ucguidemulti2.png "UML_UCGuideMulti2")  
   
-- Para indicar que varios actores de la misma clase pueden participar en una única instancia de un caso de uso, establezca la multiplicidad del extremo del actor de la asociación en **1..\\***.  
+- Para indicar que varios actores de la misma clase pueden participar en una única instancia de un caso de uso, establezca la multiplicidad del extremo del actor de la asociación en **1..\*** .  
   
    En la ilustración, uno o varios restaurantes pueden participar en la elaboración del mismo pedido de menú.  
   
-- Para mostrar que cada actor puede participar al mismo tiempo varias apariciones de un caso de uso, establezca la multiplicidad en el extremo del caso de uso de la asociación en **\\***.  
+- Para mostrar que cada actor puede participar al mismo tiempo varias apariciones de un caso de uso, establezca la multiplicidad en el extremo del caso de uso de la asociación en **\*** .  
   
    En la ilustración, cada restaurante puede trabajar en la realización de más de un pedido a la vez.  
   
@@ -190,11 +190,11 @@ En Visual Studio, puede dibujar un *diagrama de casos de uso* quién usa la apli
   
    - **1** indicar que exactamente una instancia de este rol participa en cada vínculo.  
   
-   - **1..\\** * para indicar que una o más instancias de este rol participan en cada vínculo.  
+   - **1..\***  para indicar que una o más instancias de este rol participan en cada vínculo.  
   
    - **de 0.. 1** para indicar que la participación es opcional.  
   
-   - **\\** * para indicar que cero o más instancias de este rol participan en el vínculo.  
+   - **\*** para indicar que cero o más instancias de este rol participan en el vínculo.  
   
 > [!NOTE]
 > Muchos equipos no incluyen información de multiplicidad en los diagramas de casos de uso, dejando las multiplicidades con el valor predeterminado de 1. En su lugar, proporcionan la información en descripciones independientes de los casos de uso. En este caso, se ocultarán todas las multiplicidades de los diagramas de casos de uso.  
