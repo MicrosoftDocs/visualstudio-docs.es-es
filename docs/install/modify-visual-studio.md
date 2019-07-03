@@ -3,7 +3,7 @@ title: Modificar Visual Studio
 titleSuffix: ''
 description: Obtenga información sobre cómo modificar Visual Studio, paso a paso.
 ms.custom: H1Hack27Feb2017,seodec18
-ms.date: 03/30/2018
+ms.date: 06/25/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - modify Visual Studio
@@ -18,12 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: a08a14d8d07248efdcac759852a38777745e9a51
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 287ad470a94689b92cacb443c2b5f88eb30f5a70
+ms.sourcegitcommit: 01c3c9dcade5d913bde2c7efa8c931a7b04e6cd0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62951605"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67365409"
 ---
 # <a name="modify-visual-studio-by-adding-or-removing-workloads-and-components"></a>Modificación de Visual Studio mediante la incorporación o la eliminación de cargas de trabajo y componentes
 
@@ -46,7 +46,10 @@ Esta es la manera de hacerlo.
  Las cargas de trabajo contienen las características que necesita para el lenguaje de programación o la plataforma que está usando. Use cargas de trabajo para modificar Visual Studio de manera que admita el trabajo que quiere realizar, cuando quiera.
 
 >[!IMPORTANT]
->Para instalar, actualizar o modificar Visual Studio, debe iniciar sesión con una cuenta que tenga permisos administrativos. Para obtener más información, vea [Permisos de usuario y Visual Studio](../ide/user-permissions-and-visual-studio.md).
+>Para instalar, actualizar o modificar Visual Studio, debe iniciar sesión con una cuenta que tenga permisos administrativos. Para obtener más información, consulte [Permisos de usuario y Visual Studio](../ide/user-permissions-and-visual-studio.md).
+
+>[!TIP]
+> En el siguiente procedimiento se da por hecho que tiene una conexión a Internet. Para obtener más información sobre cómo modificar una [instalación sin conexión](create-an-offline-installation-of-visual-studio.md) creada anteriormente de Visual Studio, consulte la página [Control de actualizaciones a implementaciones de Visual Studio basadas en red](controlling-updates-to-visual-studio-deployments.md).
 
 ::: moniker range="vs-2017"
 
@@ -122,4 +125,6 @@ Si no quiere instalar cargas de trabajo para personalizar la instalación de Vis
 
 * [Actualizar Visual Studio](update-visual-studio.md)
 * [Actualizar una instalación basada en red de Visual Studio](update-a-network-installation-of-visual-studio.md)
+* [Actualización de Visual Studio mientras se encuentra en una base de referencia de mantenimiento](update-servicing-baseline.md)
+* [Control updates to network-based Visual Studio deployments](controlling-updates-to-visual-studio-deployments.md) (Control de actualizaciones de implementaciones de Visual Studio basadas en red)
 * [Desinstalar Visual Studio](uninstall-visual-studio.md)

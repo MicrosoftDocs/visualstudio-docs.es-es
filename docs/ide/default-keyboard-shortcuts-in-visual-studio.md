@@ -13,20 +13,24 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13463f38b963ff29ed6fc57fba3eac7865da70ba
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: 32335f010db2d030d64ae1319f3cc893526a30e0
+ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820921"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67160046"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Métodos abreviados de teclado predeterminados de Visual Studio
 
-Para obtener más información sobre la accesibilidad del teclado, vea [Sugerencias y trucos de accesibilidad](../ide/reference/accessibility-tips-and-tricks.md) y [Cómo: Usar el teclado exclusivamente](../ide/reference/how-to-use-the-keyboard-exclusively.md).
+Puede acceder a una serie de [comandos](reference/visual-studio-commands.md) y ventanas en Visual Studio eligiendo el acceso directo de teclado correspondiente. En esta página se indican los accesos directos predeterminados para el perfil **General**, que tal vez haya elegido al instalar Visual Studio. Independientemente del perfil que haya elegido, puede [identificar el acceso directo](identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) de un comando abriendo el cuadro de diálogo **Opciones**, expandiendo el nodo **Entorno** y, después, pulsando **Teclado**. También puede personalizar los métodos abreviados de teclado asignando un método abreviado diferente a un determinado comando.
 
-Puede acceder a una serie de comandos y ventanas en Visual Studio eligiendo el método abreviado de teclado correspondiente. En esta página se indican los métodos abreviados predeterminados para el perfil **General**, que tal vez haya elegido al instalar Visual Studio. Independientemente del perfil que haya elegido, puede identificar el método abreviado de un comando abriendo el cuadro de diálogo **Opciones**, expandiendo el nodo **Entorno** y, después, pulsando **Teclado**. También puede personalizar los métodos abreviados de teclado asignando un método abreviado diferente a un determinado comando.
+Para obtener una lista de los accesos directos de teclado comunes y otra información de productividad, consulte:
 
-Para obtener una lista de los métodos abreviados de teclado comunes y otra información de productividad, vea [Métodos abreviados de teclado para comandos de uso frecuente en Visual Studio](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md), [Sugerencias de teclado](../ide/tips-and-tricks-for-visual-studio.md) y [Sugerencias de productividad](../ide/productivity-tips-for-visual-studio.md).
+- [Accesos directos de teclado para comandos de uso frecuente](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)
+- [Sugerencias y trucos de Visual Studio](../ide/productivity-shortcuts.md)
+- [Sugerencias de productividad](../ide/productivity-features.md).
+
+Para obtener más información sobre la accesibilidad en Visual Studio, consulte [Sugerencias y trucos de accesibilidad](../ide/reference/accessibility-tips-and-tricks.md) y [Cómo: Usar el teclado exclusivamente](../ide/reference/how-to-use-the-keyboard-exclusively.md).
 
 |||||
 |-|-|-|-|
@@ -270,9 +274,9 @@ Estos métodos abreviados de teclado son *globales*, lo que significa que se pue
 |Project.AddNewItem|**Ctrl+Mayús+A**|
 |Project.ClassWizard|**Ctrl+Mayús+X**|
 |Project.Override|**Ctrl+Alt+Insert**|
-|Project.Previewchanges|**Alt+**, luego **Alt+C**|
-|Project.Publishselectedfiles|**Alt+**, luego **Alt+P**|
-|Project.Replaceselectedfilesfromserver|**Alt+**, luego **Alt+R**|
+|Project.Previewchanges|**Alt+** , luego **Alt+C**|
+|Project.Publishselectedfiles|**Alt+** , luego **Alt+P**|
+|Project.Replaceselectedfilesfromserver|**Alt+** , luego **Alt+R**|
 
 ### <a name="bkmk_projectContext"></a> Menús contextuales de proyectos y soluciones
 
@@ -296,9 +300,9 @@ Estos métodos abreviados de teclado son *globales*, lo que significa que se pue
 
 |Comandos|Métodos abreviados de teclado|
 |--------------| - |
-|SolutionExplorer.OpenFilesFilter|**Ctrl+[**, **O** (letra "O")<br /><br /> o<br /><br /> **Ctrl+[**, **Ctrl+O** (letra "O")|
-|SolutionExplorer.PendingChangesFilter|**Ctrl+[**, **P**<br /><br /> o<br /><br /> **Ctrl+[**, **Ctrl+P**|
-|SolutionExplorer.SyncWithActiveDocument|**Ctrl+[**, **S**<br /><br /> o<br /><br /> **Ctrl+[**, **Ctrl+S**|
+|SolutionExplorer.OpenFilesFilter|**Ctrl+[** , **O** (letra "O")<br /><br /> o<br /><br /> **Ctrl+[** , **Ctrl+O** (letra "O")|
+|SolutionExplorer.PendingChangesFilter|**Ctrl+[** , **P**<br /><br /> o<br /><br /> **Ctrl+[** , **Ctrl+P**|
+|SolutionExplorer.SyncWithActiveDocument|**Ctrl+[** , **S**<br /><br /> o<br /><br /> **Ctrl+[** , **Ctrl+S**|
 
 ### <a name="bkmk_team"></a> Equipo
 
@@ -527,7 +531,7 @@ Estos métodos abreviados de teclado son *globales*, lo que significa que se pue
 
 |Comandos|Métodos abreviados de teclado|
 |--------------| - |
-|Debug.Graphics.CaptureFrame|Ninguna|
+|Debug.Graphics.CaptureFrame|None|
 |Graphics.MovePixelSelectionDown|**Mayús+Alt+Flecha abajo**|
 |Graphics.MovePixelSelectionLeft|**Mayús+Alt+Flecha izquierda**|
 |Graphics.MovePixelSelectionRight|**Mayús+Alt+Flecha derecha**|
@@ -785,6 +789,7 @@ Estos métodos abreviados de teclado son *globales*, lo que significa que se pue
 | Edit.CollapseCurrentRegion | **Ctrl+M, Ctrl+S** |
 | Edit.CollapseTag | **Ctrl+M, Ctrl+T** |
 | Edit.CollapseToDefinitions | **Ctrl+M, Ctrl+O** (letra "O") |
+| Edit.ContractSelection | **Mayús+Alt +-** (no solo C++) |
 | Edit.CommentSelection | **Ctrl+K, Ctrl+C** |
 | Edit.CompleteWord | **Ctrl+Barra espaciadora**<br /><br /> o<br /><br /> **Alt+Flecha derecha** |
 | Edit.CopyParameterTip | **Ctrl+Mayús+Alt+C** |
@@ -797,6 +802,8 @@ Estos métodos abreviados de teclado son *globales*, lo que significa que se pue
 | Edit.DocumentStartExtend | **Ctrl+Mayús+Inicio** |
 | Edit.ExpandAllOutlining | **Ctrl+M, Ctrl+X** |
 | Edit.ExpandCurrentRegion | **Ctrl+M, Ctrl+E** |
+| Edit.ExpandSelection | **Mayús+Alt+=** (no solo C++) |
+| Edit.ExpandSelectiontoContainingBlock | **Mayús+Alt+]** |
 | Edit.FormatDocument | **Ctrl+K, Ctrl+D** |
 | Edit.FormatSelection | **Ctrl+K, Ctrl+F** |
 | Edit.GotoAll | **Ctrl+T**<br /><br /> o<br /><br /> **Ctrl+,** |
@@ -1150,5 +1157,4 @@ Estos métodos abreviados de teclado son *globales*, lo que significa que se pue
 
 ## <a name="see-also"></a>Vea también
 
-- [Editor de imágenes para iconos](/cpp/windows/image-editor-for-icons)
-- [Usar IntelliSense](../ide/using-intellisense.md)
+- [Comandos de Visual Studio](reference/visual-studio-commands.md)

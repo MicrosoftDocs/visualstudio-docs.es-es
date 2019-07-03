@@ -8,18 +8,17 @@ helpviewer_keywords:
 - customize codebases [Visual Studio]
 - tasks.vs.json file [Visual Studio]
 - launch.vs.json file [Visual Studio]
-- vsworkspacesettings.json file [Visual Studio]
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb3ef6eff6da9040fc7e438d8f3271c60897a5ec
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: 3bfe750e8dca68876ac5d894c0ca194f82a42f21
+ms.sourcegitcommit: b593bb889f049fcbdff502c30b73178ed17dbdf0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820297"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67291044"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>Personalización de las tareas de compilación y depuración para el desarrollo de "Abrir carpeta"
 
@@ -29,11 +28,10 @@ Si el código base usa herramientas de compilación personalizadas que Visual St
 
 Use estos archivos *.json* para personalizar el código base sin proyecto:
 
-|Nombre del archivo|Propósito|
+|Nombre de archivo|Propósito|
 |-|-|
 |*tasks.vs.json*|Especifique los modificadores del compilador y los comandos de compilación personalizada, además de las tareas arbitrarias (no relacionadas con la compilación).<br>Se accede a través del elemento de menú **Configurar tareas** del menú contextual del **Explorador de soluciones**.|
 |*launch.vs.json*|Especifique los argumentos de la línea de comandos para realizar la depuración.<br>Se accede a través del elemento de menú **Configuración de depuración e inicio** del menú contextual del **Explorador de soluciones**.|
-|*VSWorkspaceSettings.json*|Configuración genérica que podría afectar las tareas y el inicio. Por ejemplo, definir `envVars` en *VSWorkspaceSettings.json* agrega las variables de entorno especificadas para ejecutar los comandos de manera externa.<br>Puede crear manualmente este archivo.|
 
 Estos archivos *.json* se encuentran en una carpeta oculta llamada *.vs* en la carpeta raíz del código base. Visual Studio crea los archivos *tasks.vs.json* y *launch.vs.json* según sea necesario cuando se elija **Configurar tareas** o **Configuración de depuración e inicio** en un archivo o una carpeta del **Explorador de soluciones**. Estos archivos *.json* están ocultos porque los usuarios habitualmente no desean insertarlos en el control de código fuente. Sin embargo, si desea poder insertarlos en el control de código fuente, arrastre los archivos a la raíz del código base, donde estarán visibles.
 
@@ -193,7 +191,7 @@ Puede haber varios archivos *tasks.vs.json* en la raíz y en los subdirectorios 
 - El directorio principal del directorio actual, hasta llegar al directorio raíz.
 - Los archivos de configuración del directorio raíz.
 
-Estas reglas de agregación se aplican a los archivos *tasks.vs.json* y *VSWorkspaceSettings.json*. Para información sobre cómo se agrega configuración en otro archivo, consulte la sección correspondiente a dicho archivo en este artículo.
+Estas reglas de agregación se aplican a *tasks.vs.json*. Para información sobre cómo se agrega configuración en otro archivo, consulte la sección correspondiente a dicho archivo en este artículo.
 
 ### <a name="properties-for-tasksvsjson"></a>Propiedades de tasks.vs.json
 
@@ -289,10 +287,6 @@ Cuando guarda este archivo, el nombre de la configuración nueva aparece en la l
 
 > [!NOTE]
 > La propiedad de la matriz `configurations` en *launch.vs.json* se lee desde dos ubicaciones&mdash;el directorio raíz del código base y el directorio *.vs*. Si se produce algún conflicto, la prioridad la tiene el valor que aparece en *.vs\launch.vs.json*.
-
-## <a name="define-workspace-settings-in-vsworkspacesettingsjson"></a>Definición de la configuración del área de trabajo en VSWorkspaceSettings.json
-
-Puede especificar la configuración genérica que puede afectar las tareas e iniciarse en el archivo *VSWorkspaceSettings.json*. Por ejemplo, si define `envVars` en *VSWorkspaceSettings.json*, Visual Studio agrega las variables de entorno especificadas a los comandos que se ejecutan de manera externa. Para usar este archivo, debe crearlo de manera manual.
 
 ## <a name="additional-settings-files"></a>Archivos de configuración adicionales
 

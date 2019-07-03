@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Instrumentar una aplicación web ASP.NET compilada dinámicamente y recopilar datos de memoria mediante la línea de comandos del generador de perfiles | Microsoft Docs
+title: 'Línea de comandos de generador de perfiles: instrumentación de la aplicación de ASP.NET dinámica y obtención de los datos de memoria'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 2cdd9903-39db-47e8-93dd-5e6a21bc3435
@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 172f4a367aa520ebd0fac62d25007713c47e5801
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: f784807a99c288663bee381bfc1e481dd9d5d8e4
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63386277"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67031992"
 ---
 # <a name="how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line"></a>Procedimiento Instrumentar una aplicación web ASP.NET compilada dinámicamente y recopilar datos de memoria mediante la línea de comandos del generador de perfiles
 En este tema se explica cómo usar las herramientas de línea de comandos de las Herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para recopilar datos detallados de asignación de memoria y de duración de objetos de .NET para una aplicación web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] compilada dinámicamente mediante el método de generación de perfiles de instrumentación.
@@ -39,7 +39,7 @@ En este tema se explica cómo usar las herramientas de línea de comandos de las
 
      **VSPerfClrEnv /globaltracegc**
 
-     o bien
+     O bien
 
      **VSPerfClrEnv /globaltracegclife**
 
@@ -59,16 +59,16 @@ En este tema se explica cómo usar las herramientas de línea de comandos de las
 
    - La opción **/start:trace** inicia el generador de perfiles.
 
-   - La opción **/output:**`OutputFile` es necesaria con **/start**. `OutputFile` especifica el nombre y la ubicación del archivo de datos de generación de perfiles (.*vsp*).
+   - La opción **/output:** `OutputFile` es necesaria con **/start**. `OutputFile` especifica el nombre y la ubicación del archivo de datos de generación de perfiles (.*vsp*).
 
      Puede usar cualquiera de las siguientes opciones con la opción **/start:trace**.
 
    > [!NOTE]
    > Normalmente, las opciones **/user** y **/crosssession** son necesarias para aplicaciones ASP.NET.
 
-   | Opción | Descripción |
+   | Opción | DESCRIPCIÓN |
    | - | - |
-   | [/user](../profiling/user-vsperfcmd.md) **:**[`Domain`**\\**]`UserName` | Especifica el dominio opcional y el nombre de usuario de la cuenta propietaria del proceso de trabajo de [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Esta opción es necesaria si el proceso se está ejecutando como otro usuario distinto del usuario que inició la sesión. El nombre aparece en la columna **Nombre de usuario** de la pestaña **Procesos** del Administrador de tareas de Windows. |
+   | [/user](../profiling/user-vsperfcmd.md) **:** [`Domain` **\\** ]`UserName` | Especifica el dominio opcional y el nombre de usuario de la cuenta propietaria del proceso de trabajo de [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Esta opción es necesaria si el proceso se está ejecutando como otro usuario distinto del usuario que inició la sesión. El nombre aparece en la columna **Nombre de usuario** de la pestaña **Procesos** del Administrador de tareas de Windows. |
    | [/crosssession](../profiling/crosssession.md) | Habilita la generación de perfiles de procesos en otras sesiones. Esta opción es necesaria si la aplicación se ejecuta en una sesión diferente. El identificador de sesión se muestra en la columna **Id. de sesión** de la pestaña **Procesos** del Administrador de tareas de Windows. **/CS** se puede especificar como una abreviatura de **/crosssession**. |
    | [/globaloff](../profiling/globalon-and-globaloff.md) | Inicia el generador de perfiles con la recolección de datos en pausa. Utilice [/globalon](../profiling/globalon-and-globaloff.md) para reanudar la generación de perfiles. |
    | [/counter](../profiling/counter.md) **:** `Config` | Recopila información del contador de rendimiento del procesador especificado en `Config`. La información del contador se agrega a los datos recopilados en cada evento de generación de perfiles. |
@@ -85,11 +85,11 @@ En este tema se explica cómo usar las herramientas de línea de comandos de las
 
 - Los siguientes pares de opciones inician y detienen la recolección de datos. Especifique cada opción en una línea de comandos diferente. Puede activar y desactivar la recolección de datos varias veces.
 
-    |Opción|Descripción|
+    |Opción|DESCRIPCIÓN|
     |------------|-----------------|
-    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Inicia (**/globalon**) o detiene (**/globaloff**) la recolección de datos para todos los procesos.|
-    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Inicia (**/processon**) o detiene (**/processoff**) la recolección de datos para el proceso especificado por el identificador de proceso (`PID`).|
-    |[/threadon](../profiling/threadon-and-threadoff.md) **:** `TID` [/threadoff](../profiling/threadon-and-threadoff.md) **:** `TID`|Inicia (**/threadon**) o detiene (**/threadoff**) la recopilación de datos para el subproceso especificado por el identificador de subproceso (`TID`).|
+    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Inicia ( **/globalon**) o detiene ( **/globaloff**) la recolección de datos para todos los procesos.|
+    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Inicia ( **/processon**) o detiene ( **/processoff**) la recolección de datos para el proceso especificado por el identificador de proceso (`PID`).|
+    |[/threadon](../profiling/threadon-and-threadoff.md) **:** `TID` [/threadoff](../profiling/threadon-and-threadoff.md) **:** `TID`|Inicia ( **/threadon**) o detiene ( **/threadoff**) la recopilación de datos para el subproceso especificado por el identificador de subproceso (`TID`).|
 
 - También puede utilizar la opción [/mark](../profiling/mark.md) de **VSPerfCmd.exe** para insertar una marca de generación de perfiles en el archivo de datos. El comando **/mark** agrega un identificador, una marca de tiempo y una cadena de texto opcional definida por el usuario. Las marcas se pueden utilizar para filtrar los datos que se muestran en las vistas de informes y datos del generador de perfiles.
 

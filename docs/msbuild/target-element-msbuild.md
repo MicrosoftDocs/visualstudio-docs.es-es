@@ -1,6 +1,6 @@
 ---
 title: Elemento Target (MSBuild) | Microsoft Docs
-ms.date: 03/13/2017
+ms.date: 06/13/2019
 ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/msbuild/2003#Target
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e48d28f5270cd43da22d070f30706ce75a1655c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2b9910a677f5442e10c62a0623043033edd899c3
+ms.sourcegitcommit: dd3c8cbf56c7d7f82f6d8818211d45847ab3fcfc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62939305"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "67141174"
 ---
 # <a name="target-element-msbuild"></a>Elemento Target (MSBuild)
 Contiene un conjunto de tareas para que [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] las ejecute de manera secuencial.
@@ -55,7 +55,7 @@ Contiene un conjunto de tareas para que [!INCLUDE[vstecmsbuild](../extensibility
 
 ### <a name="attributes"></a>Atributos
 
-|Atributo|Descripción|
+|Atributo|DESCRIPCIÓN|
 |---------------|-----------------|
 |`Name`|Atributo necesario.<br /><br /> Nombre del destino.|
 |`Condition`|Atributo opcional.<br /><br /> La condición que se va a evaluar. Si la condición se evalúa como `false`, el destino no ejecutará el cuerpo del destino ni los destinos que se establecen en el atributo `DependsOnTargets`. Para obtener más información sobre las condiciones, consulte [Condiciones](../msbuild/msbuild-conditions.md).|
@@ -70,7 +70,7 @@ Contiene un conjunto de tareas para que [!INCLUDE[vstecmsbuild](../extensibility
 
 ### <a name="child-elements"></a>Elementos secundarios
 
-| Elemento | Descripción |
+| Elemento | DESCRIPCIÓN |
 | - | - |
 | [Task](../msbuild/task-element-msbuild.md) | Crea y ejecuta una instancia de una tarea [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Puede haber cero o más tareas en un destino. |
 | [PropertyGroup](../msbuild/propertygroup-element-msbuild.md) | Contiene un conjunto de elementos `Property` definidos por el usuario. A partir de .NET Framework 3.5, un elemento `Target` puede contener elementos `PropertyGroup`. |
@@ -79,12 +79,14 @@ Contiene un conjunto de tareas para que [!INCLUDE[vstecmsbuild](../extensibility
 
 ### <a name="parent-elements"></a>Elementos primarios
 
-| Elemento | Descripción |
+| Elemento | DESCRIPCIÓN |
 | - | - |
 | [Proyecto](../msbuild/project-element-msbuild.md) | Elemento raíz necesario de un archivo de proyecto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] . |
 
 ## <a name="remarks"></a>Comentarios
  El primer destino que se ejecutará se especifica en tiempo de ejecución. Los destinos pueden tener dependencias en otros destinos. Por ejemplo, un destino para la implementación depende de un destino para la compilación. El motor [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] ejecuta las dependencias en el orden en que aparecen en el atributo `DependsOnTargets`, de izquierda a derecha. Para obtener más información, consulte [Destinos](../msbuild/msbuild-targets.md).
+
+ MSBuild depende del orden de importación y la última definición de un destino con un atributo `Name` específico es la definición usada.
 
  Un destino solo se ejecuta una vez durante una compilación, incluso si más de un destino depende de él.
 

@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: e22463ad6a50270412652b2797628010e169b1ba
-ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
+ms.openlocfilehash: 7df082d8cf67a5c0eb4c6ecd5c017480c63a6b27
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65976236"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328826"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Novedades de Visual Studio 2019
 
@@ -33,13 +33,13 @@ Con Visual Studio 2019, recibirá las mejores herramientas y servicios para cu
 
 Este es un resumen de alto nivel de todas las novedades:
 
-* **[Desarrollo](#develop)**: concéntrese y mantenga su productividad con mejor rendimiento, la limpieza instantánea del código y mejores resultados de la búsqueda.
-* **[Colaboración](#collaborate)**: disfrute de una colaboración natural mediante un flujo de trabajo con "prioridad de Git", la edición y depuración en tiempo real y las revisiones de código directamente en Visual Studio.
-* **[Depuración](#debug)**: resalte valores específicos y navegue a ellos, optimice el uso de la memoria y cree capturas de pantalla automáticas de la ejecución de la aplicación.
+* **[Desarrollo](#develop)** : concéntrese y mantenga su productividad con mejor rendimiento, la limpieza instantánea del código y mejores resultados de la búsqueda.
+* **[Colaboración](#collaborate)** : disfrute de una colaboración natural mediante un flujo de trabajo con "prioridad de Git", la edición y depuración en tiempo real y las revisiones de código directamente en Visual Studio.
+* **[Depuración](#debug)** : resalte valores específicos y navegue a ellos, optimice el uso de la memoria y cree capturas de pantalla automáticas de la ejecución de la aplicación.
 
 Si quiere ver una lista completa de todas las novedades de esta versión, consulte las [notas de la versión](/visualstudio/releases/2019/release-notes/).
 
-## <a name="develop"></a>Desarrollar
+## <a name="develop"></a>Desarrollo
 
 Ahorre tiempo con las características nuevas.
 <br><br>
@@ -90,7 +90,7 @@ La limpieza dará formato al código y aplicará todas las correcciones de códi
 
 También puede guardar las colecciones de reparadores como un perfil. Por ejemplo, si tiene un conjunto pequeño de reparadores dirigidas que aplica con frecuencia mientras codifica y después tiene otro conjunto integral de reparadores para aplicar antes de una revisión del código, puede configurar perfiles para abordar estas distintas tareas.
 
-   ![Captura de pantalla del nuevo control de limpieza de código en Visual Studio 2019](media/vs-2019/code-cleanup-profile-configure.png)
+   ![Captura de pantalla de la configuración del control de limpieza de código en Visual Studio 2019](media/vs-2019/code-cleanup-profile-configure.png)
 
 ### <a name="per-monitor-aware-pma-rendering"></a>Representación con reconocimiento del monitor (PMA)
 
@@ -140,7 +140,7 @@ Se ha incluido una nueva extensión que puede descargar para su uso con Visual S
 
 Para obtener más información, vea la entrada de blog [Code reviews using the Visual Studio Pull Requests extension](https://devblogs.microsoft.com/visualstudio/code-reviews-using-the-visual-studio-pull-requests-extension/) (Revisiones de código mediante la extensión Solicitudes de incorporación de cambios de Visual Studio).
 
-## <a name="debug"></a>Depuración
+## <a name="debug"></a>Depurar
 
 Céntrese con un destino preciso.
 <br><br>
@@ -178,7 +178,7 @@ Agregamos compatibilidad con las aplicaciones de ASP.NET (escritorio y core) que
 
 Para más información, vea la página [Depuración de aplicaciones de Azure de ASP.NET en vivo con Snapshot Debugger](../debugger/debug-live-azure-applications.md) y la entrada de blog [Introducing Time Travel Debugging for Visual Studio Enterprise 2019](https://devblogs.microsoft.com/visualstudio/introducing-time-travel-debugging-for-visual-studio-enterprise-2019/) (Presentación de la depuración de viaje en el tiempo para Visual Studio Enterprise 2019).
 
-## <a name="whats-next"></a>Pasos adicionales
+## <a name="whats-next"></a>Pasos siguientes
 
 Actualizamos Visual Studio 2019 a menudo con nuevas características que pueden mejorar aún más su experiencia de desarrollo. Para obtener más información sobre las últimas innovaciones, vea el [blog de Visual Studio](https://devblogs.microsoft.com/visualstudio/). Y, para consultar un registro de las versiones en versión preliminar hasta la fecha, vea las [Notas de la versión preliminar](/visualstudio/releases/2019/release-notes-preview/).
 

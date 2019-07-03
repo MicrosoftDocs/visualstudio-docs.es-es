@@ -2,7 +2,7 @@
 title: Guía del administrador de Visual Studio
 titleSuffix: ''
 description: Obtenga más información sobre cómo implementar Visual Studio en un entorno empresarial.
-ms.date: 05/22/2019
+ms.date: 06/02/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 61b3a2dfae667bac7c3a6a62682cdbd5b1a5feb4
-ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
+ms.openlocfilehash: 9a586a0ab0d6b7a3ab34ef581e2ba6f5348232c2
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "66037510"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328796"
 ---
 # <a name="visual-studio-administrator-guide"></a>Guía del administrador de Visual Studio
 
@@ -40,7 +40,7 @@ Antes de implementar Visual Studio en la organización, hay algunas decisiones q
 
 * Decida sobre las necesidades de mantenimiento.
 
-  Si la empresa debe conservar durante más tiempo un conjunto de características pero quiere obtener actualizaciones de mantenimiento periódicas, planee el uso de una base de referencia de mantenimiento. Para obtener más información, vea la sección ***Opciones de soporte técnico para clientes de las versiones Enterprise y Professional*** de la página [Ciclo de vida y mantenimiento del producto de Visual Studio](/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers).
+  Si la empresa debe conservar durante más tiempo un conjunto de características pero quiere obtener actualizaciones de mantenimiento periódicas, planee el uso de una base de referencia de mantenimiento. Para más información, consulte la sección ***Opciones de soporte técnico para clientes de las versiones Enterprise y Professional*** de la página [Ciclo de vida y mantenimiento del producto de Visual Studio](/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers), así como la página [Procedimiento: Actualización de Visual Studio mientras se encuentra en una base de referencia de mantenimiento](update-servicing-baseline.md).
 
   Si piensa aplicar las actualizaciones de mantenimiento junto con las actualizaciones acumulativas de características, puede elegir las más recientes.
 
@@ -62,7 +62,7 @@ Antes de implementar Visual Studio en la organización, hay algunas decisiones q
 
 * Decida sobre las necesidades de mantenimiento.
 
-  Si la empresa debe conservar durante más tiempo un conjunto de características pero quiere obtener actualizaciones de mantenimiento periódicas, planee el uso de una base de referencia de mantenimiento. Para obtener más información, vea la sección ***Soporte técnico de versiones anteriores de Visual Studio*** de la página [Ciclo de vida y mantenimiento del producto de Visual Studio](/visualstudio/releases/2019/servicing#support-for-older-versions-of-visual-studio).
+  Si la empresa debe conservar durante más tiempo un conjunto de características pero quiere obtener actualizaciones de mantenimiento periódicas, planee el uso de una base de referencia de mantenimiento. Para más información, consulte la sección ***Soporte técnico de versiones anteriores de Visual Studio*** de la página [Ciclo de vida y mantenimiento del producto de Visual Studio](/visualstudio/releases/2019/servicing#support-for-older-versions-of-visual-studio), así como la página [Procedimiento: Actualización de Visual Studio mientras se encuentra en una base de referencia de mantenimiento](update-servicing-baseline.md).
 
   Si piensa aplicar las actualizaciones de mantenimiento junto con las actualizaciones acumulativas de características, puede elegir las más recientes.
 

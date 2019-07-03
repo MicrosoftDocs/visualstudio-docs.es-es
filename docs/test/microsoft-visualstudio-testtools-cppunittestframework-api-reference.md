@@ -1,31 +1,32 @@
 ---
 title: API Microsoft.VisualStudio.TestTools.CppUnitTestFramework
-ms.date: 11/04/2017
+ms.date: 06/13/2019
 ms.topic: reference
 ms.author: mblome
 manager: jillfra
 ms.workload:
 - multiple
 author: mikeblome
-ms.openlocfilehash: b80b7fb8439f9e2a2a2af92e458295d153e449e5
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: 3634dcd7cf136aa52de3ebf6bf5bfc3d57632d2c
+ms.sourcegitcommit: ab06cde69d862440b4277bcd9bf02e7b50593a1b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820771"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67132142"
 ---
 # <a name="microsoftvisualstudiotesttoolscppunittestframework-api-reference"></a>Referencia de API Microsoft.VisualStudio.TestTools.CppUnitTestFramework
 
 Este tema se enumeran los miembros públicos de espacio de nombres `Microsoft::VisualStudio::CppUnitTestFramework`. Use estas API para escribir pruebas unitarias de C++ basadas en el marco de pruebas unitarias de tipo nativo de Microsoft. Al final del tema encontrará un [ejemplo de uso](#example).
 
- Los archivos de encabezado se encuentran en la carpeta _VisualStudio2012[x86]InstallFolder_**\VC\UnitTest\include**.
+ Los archivos de encabezado se encuentran en la carpeta _VisualStudio2012[x86]InstallFolder_ **\VC\UnitTest\include**.
 
- Los archivos lib se encuentran en la carpeta _VisualStudio2012[x86]InstallFolder_**\VC\UnitTest\lib**.
+ Los archivos lib se encuentran en la carpeta _VisualStudio2012[x86]InstallFolder_ **\VC\UnitTest\lib**.
 
 Las rutas de acceso de encabezado y biblioteca se configuran automáticamente en un proyecto de prueba nativo.
 
 ## <a name="In_this_topic"></a> En este tema
- [CppUnitTest.h](#cppUnitTest_h)
+
+[CppUnitTest.h](#cppUnitTest_h)
 
 - [Crear clases y métodos de prueba](#create_test_classes_and_methods)
 
@@ -184,7 +185,7 @@ BEGIN_TEST_METHOD_ATTRIBUTE(testMethodName)
 END_TEST_METHOD_ATTRIBUTE()
 ```
 
- Agrega los atributos definidos con una o varias macros de `TEST_METHOD_ATTRIBUTE` al método de prueba *testClassName*.
+ Agrega los atributos definidos con una o varias macros de `TEST_METHOD_ATTRIBUTE` al método de prueba *testMethodName*.
 
  Una macro de `TEST_METHOD_ATTRIBUTE` define un atributo con el nombre *attributeName* y el valor *attributeValue*.
 
@@ -215,37 +216,38 @@ END_TEST_MODULE_ATTRIBUTE()
  Una macro de `TEST_MODULE_ATTRIBUTE` define un atributo con el nombre *attributeName* y el valor *attributeValue*.
 
 #### <a name="pre_defined_attributes"></a> Atributos predefinidos
- Estas macros de atributo predefinidas se pueden sustituir por las macros `TEST_METHOD_ATTRIBUTE`, `TEST_CLASS_ATTRIBUTE` o `TEST_MODULE_ATTRIBUTE` descritas anteriormente.
+
+ Estas macros de atributo predefinidas se proporcionan para mayor comodidad en los casos comunes. Se pueden sustituir por la macro `TEST_METHOD_ATTRIBUTE` descrita anteriormente.
 
 ```cpp
 TEST_OWNER(ownerAlias)
 ```
 
- Define un atributo con el nombre `Owner` y el valor del atributo de *ownerAlias*.
+ Define un `TEST_METHOD_ATTRIBUTE` con el nombre `Owner` y el valor del atributo de *ownerAlias*.
 
 ```cpp
 TEST_DESCRIPTION(description)
 ```
 
- Define un atributo con el nombre `Description` y el valor del atributo de *description*.
+ Define un `TEST_METHOD_ATTRIBUTE` con el nombre `Description` y el valor del atributo de *description*.
 
 ```cpp
 TEST_PRIORITY(priority)
 ```
 
- Define un atributo con el nombre `Priority` y el valor del atributo de *priority*.
+ Define un `TEST_METHOD_ATTRIBUTE` con el nombre `Priority` y el valor del atributo de *priority*.
 
 ```cpp
 TEST_WORKITEM(workitem)
 ```
 
- Define un atributo con el nombre `WorkItem` y el valor del atributo de *workItem*.
+ Define un `TEST_METHOD_ATTRIBUTE` con el nombre `WorkItem` y el valor del atributo de *workItem*.
 
 ```cpp
 TEST_IGNORE()
 ```
 
- Define un atributo con el nombre `Ignore` y el valor del atributo de `true`.
+ Define un `TEST_METHOD_ATTRIBUTE` con el nombre `Ignore` y el valor del atributo de `true`.
 
 ## <a name="cppUnitTestAssert_h"></a> CppUnitTestAssert.h
 

@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Iniciar una aplicación de .NET Framework independiente con el generador de perfiles para recopilar datos de memoria utilizando la línea de comandos | Microsoft Docs
+title: 'Línea de comandos de generador de perfiles: apertura de la aplicación cliente de .NET Framework y obtención de los datos de memoria'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 3bc53041-91b7-4ad0-8413-f8bf2c4b3f5e
@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d6600444d5fb991bce0500c587cb66b9baefdd22
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 1a1d08656ea4234f277265c81b1bef4275de7625
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63386063"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032958"
 ---
 # <a name="how-to-launch-a-stand-alone-net-framework-application-with-the-profiler-to-collect-memory-data-by-using-the-command-line"></a>Procedimiento Iniciar una aplicación de .NET Framework independiente con el generador de perfiles para recopilar datos de memoria mediante la línea de comandos
 En este tema se describe cómo utilizar las herramientas de línea de comandos de las herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para iniciar una aplicación independiente (cliente) de .NET Framework y recopilar datos de memoria.
@@ -42,31 +42,31 @@ En este tema se describe cómo utilizar las herramientas de línea de comandos d
 
     **VSPerfCmd /start:sample /output:** `OutputFile` [`Options`]
 
-   - La opción [/start](../profiling/start.md)**:sample** inicializa el generador de perfiles.
+   - La opción [/start](../profiling/start.md) **:sample** inicializa el generador de perfiles.
 
-   - La opción [/output](../profiling/output.md)**:**`OutputFile` es necesaria con **/start**. `OutputFile` especifica el nombre y la ubicación del archivo de datos de generación de perfiles (.vsp).
+   - La opción [/output](../profiling/output.md) **:** `OutputFile` es necesaria con **/start**. `OutputFile` especifica el nombre y la ubicación del archivo de datos de generación de perfiles (.vsp).
 
      Puede usar cualquiera de las siguientes opciones con la opción **/start:sample**.
 
-   | Opción | Descripción |
+   | Opción | DESCRIPCIÓN |
    | - | - |
    | [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath` | Especifica un contador de rendimiento de Windows que se va a recopilar durante la generación de perfiles. |
    | [/automark](../profiling/automark.md) **:** `Interval` | Utilizar solo con **/wincounter**. Especifica el número de milisegundos entre eventos de recopilación de contadores de rendimiento de Windows. El valor predeterminado es 500 ms. |
 
 3. Inicie la aplicación de destino. Tipo:
 
-    **VSPerfCmd**  [/launch](../profiling/launch.md) **:** `appName` **/gc:**{**allocation**&#124;**lifetime**}[`Options`]
+    **VSPerfCmd**  [/launch](../profiling/launch.md) **:** `appName` **/gc:** {**allocation**&#124;**lifetime**}[`Options`]
 
-   - La opción [/gc](../profiling/gc-vsperfcmd.md)**:** `Keyword` es necesaria para recopilar datos de memoria de .NET Framework. El parámetro de palabra clave especifica si se recopilan datos de asignación de memoria o si se recopilan tanto datos de asignación de memoria como datos de duración de objetos.
+   - La opción [/gc](../profiling/gc-vsperfcmd.md) **:** `Keyword` es necesaria para recopilar datos de memoria de .NET Framework. El parámetro de palabra clave especifica si se recopilan datos de asignación de memoria o si se recopilan tanto datos de asignación de memoria como datos de duración de objetos.
 
-     |Palabra clave|Descripción|
+     |Palabra clave|DESCRIPCIÓN|
      |-------------|-----------------|
      |**allocation**|Solo recopila datos de asignación de memoria.|
      |**lifetime**|Recopila datos de asignación de memoria y datos de duración de objetos.|
 
      Puede usar cualquiera de las siguientes opciones con la opción **/launch**.
 
-   |Opción|Descripción|
+   |Opción|DESCRIPCIÓN|
    |------------|-----------------|
    |[/args](../profiling/args.md) **:** `Arguments`|Especifica una cadena que contiene los argumentos de la línea de comandos que se van a pasar a la aplicación de destino.|
    |[/console](../profiling/console.md)|Inicia la aplicación de línea de comandos de destino en otra ventana.|
@@ -80,10 +80,10 @@ En este tema se describe cómo utilizar las herramientas de línea de comandos d
 
 - Los siguientes pares de opciones inician y detienen la recolección de datos. Especifique cada opción en una línea de comandos diferente. Puede activar y desactivar la recolección de datos varias veces.
 
-    |Opción|Descripción|
+    |Opción|DESCRIPCIÓN|
     |------------|-----------------|
-    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Inicia (**/globalon**) o detiene (**/globaloff**) la recolección de datos para todos los procesos.|
-    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [processoff](../profiling/processon-and-processoff.md) **:** `PID`|Inicia (**/processon**) o detiene (**/processoff**) la recolección de datos para el proceso especificado por el identificador de proceso (`PID`).|
+    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Inicia ( **/globalon**) o detiene ( **/globaloff**) la recolección de datos para todos los procesos.|
+    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [processoff](../profiling/processon-and-processoff.md) **:** `PID`|Inicia ( **/processon**) o detiene ( **/processoff**) la recolección de datos para el proceso especificado por el identificador de proceso (`PID`).|
     |[/attach](../profiling/attach.md) **:** `PID` [/detach](../profiling/detach.md)|**/attach** inicia la recolección de datos para el proceso especificado por `PID` (el Id. de proceso). **/detach** detiene la recolección de datos de todos los procesos.|
 
 - También puede utilizar la opción [/mark](../profiling/mark.md) de **VSPerfCmd.exe** para insertar una marca de generación de perfiles en el archivo de datos. El comando **/mark** agrega un identificador, una marca de tiempo y una cadena de texto opcional definida por el usuario. Las marcas se pueden utilizar para filtrar los datos.
@@ -97,7 +97,7 @@ En este tema se describe cómo utilizar las herramientas de línea de comandos d
 
     - Cierre la aplicación de destino.
 
-         o bien
+         O bien
 
     - Escriba **VSPerfCmd /detach**
 

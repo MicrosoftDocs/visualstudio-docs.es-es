@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f58581a601da59e7ff66a3bae5ddcb7432bf8e3
-ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
+ms.openlocfilehash: 130f4a5d39c756587dcf479abe4461f64e9461cb
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66836099"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67259816"
 ---
 # <a name="walkthrough-create-a-code-snippet"></a>Tutorial: Crear un fragmento de código
 
@@ -76,6 +76,9 @@ El siguiente XML es la plantilla básica de fragmento de código:
        <![CDATA[Dim root = Math.Sqrt(16)]]>
    </Code>
    ```
+   
+   > [!NOTE]
+   > No puede especificar cómo se debe aplicar sangría o formato a las líneas de código en la sección **CDATA** de un fragmento de código. Después de la inserción, el servicio de lenguaje aplica el formato automáticamente al código insertado. 
 
 5. Guarde el fragmento de código como *SquareRoot.snippet* (puede guardarlo en cualquier lugar).
 
@@ -83,7 +86,7 @@ El siguiente XML es la plantilla básica de fragmento de código:
 
 1. Puede importar un fragmento de código a la instalación de Visual Studio mediante el **Administrador de fragmentos de código**. Para abrirlo, seleccione **Herramientas** > **Administrador de fragmentos de código**.
 
-2. Haga clic en el botón **Importar**.
+2. Haga clic en el botón **Import** (Importar).
 
 3. Vaya a la ubicación donde ha guardado el fragmento de código en el procedimiento anterior, selecciónelo y haga clic en **Abrir**.
 

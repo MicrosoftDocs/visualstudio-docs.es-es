@@ -1,18 +1,18 @@
 ---
 title: Administrar suscripciones de Visual Studio
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 10/03/2017
+ms.author: lank
+manager: lank
+ms.date: 06/24/2019
 ms.topic: conceptual
 description: Obtener información sobre cómo sacar el máximo partido de las suscripciones de Visual Studio
 searchscope: VS Subscription
-ms.openlocfilehash: 2739578bb170d32b61246bb01236e621c8b7df8b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8d03dbd24b6fd8f00248e0c0d653359f9995da0d
+ms.sourcegitcommit: 01c3c9dcade5d913bde2c7efa8c931a7b04e6cd0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62833976"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67365428"
 ---
 # <a name="managing-subscriptions"></a>Administrar las suscripciones
 
@@ -125,6 +125,12 @@ Puede cambiar fácilmente la información de contacto y las preferencias en el p
    > [!div class="mx-imgBorder"]
    > ![Editar la información del perfil](_img/manage-vs-subscriptions/edit-profile-resized.png)
 
+### <a name="setting-communications-preferences"></a>Establecimiento de preferencias de comunicaciones
+Si desea recibir actualizaciones periódicas sobre su suscripción y ventajas, incluido el boletín de instancias de Visual Studio Subscription mensual, [actualice sus preferencias](https://app.vsaex.visualstudio.com/me?workflowID=devprogram&tab=edit) marcando la casilla para instancias de Visual Studio Subscription en su perfil de Visual Studio. Puede cambiar estas preferencias y anular la suscripción en cualquier momento. 
+
+   > [!div class="mx-imgBorder"]
+   > ![Establecimiento de preferencias](_img/manage-vs-subscriptions/change-prefs.png)
+   
 ### <a name="linking-my-subscription-to-existing-azure-devops-services-or-azure-subscriptions"></a>Vincular la suscripción a suscripciones existentes de Azure DevOps Services o Azure
 
 Si inicia sesión en su suscripción mediante una cuenta de Microsoft (MSA) personal y tiene una suscripción que incluye Azure DevOps Services o Microsoft Azure mediante una cuenta profesional o educativa administrada por Azure, puede vincular las dos suscripciones. Esto es lo que se denomina una "cuenta alternativa", que permite seguir usando la MSA para iniciar sesión en su suscripción, así como obtener acceso a los recursos existentes de Azure, Azure DevOps Services o IDE asociados a las cuentas profesionales o educativas.

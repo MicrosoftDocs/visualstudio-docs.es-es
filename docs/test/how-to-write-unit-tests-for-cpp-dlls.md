@@ -7,12 +7,12 @@ manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: ecd26aeae5e0a236bf776477ab3dca0e528e8200
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 56608e5c930dc94afbb9e8e7d78a8e95b8e2f88b
+ms.sourcegitcommit: ab06cde69d862440b4277bcd9bf02e7b50593a1b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226084"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67132167"
 ---
 # <a name="write-unit-tests-for-c-dlls-in-visual-studio"></a>Escribir pruebas unitarias para DLL de C/C++ en Visual Studio
 
@@ -46,7 +46,7 @@ ms.locfileid: "65226084"
 
   2. Seleccione **Propiedades de configuración** > **General**.
 
-  3. Establezca **Tipo de configuración** en **Biblioteca estática (.lib)**.
+  3. Establezca **Tipo de configuración** en **Biblioteca estática (.lib)** .
 
   Continúe con el procedimiento [Para vincular las pruebas a los archivos de biblioteca u objeto](#objectRef).
 
@@ -64,21 +64,19 @@ ms.locfileid: "65226084"
 
       ::: moniker range="vs-2017"
 
-      1. En el menú **Archivo**, seleccione **Nuevo** > **Proyecto** > **Visual C++** > **Prueba** > **Proyecto de prueba unitaria de C++**.
+      1. En el menú **Archivo**, seleccione **Nuevo** > **Proyecto** > **Visual C++** > **Prueba** > **Proyecto de prueba unitaria de C++** .
 
       ::: moniker-end
 
-  2. En el **Explorador de soluciones**, en el menú contextual del proyecto de prueba, seleccione **Referencias**. Se abrirá la ventana de **propiedades** del proyecto.
+  1. En el **Explorador de soluciones**, haga clic con el botón derecho en el proyecto de prueba y, a continuación, elija **Agregar** > **Referencia**.
 
-  3. Seleccione **Propiedades comunes** > **Marco de trabajo y referencias** y, luego, haga clic en el botón **Agregar nueva referencia**.
-
-  4. Seleccione **Proyectos** y, después, el proyecto que se va a probar.
+  1. Seleccione **Proyectos** y, después, el proyecto que se va a probar.
 
        Elija el botón de **Agregar** .
 
-  5. En las propiedades del proyecto de prueba, agregue la ubicación del proyecto en pruebas a los directorios de archivos de inclusión.
+  1. En las propiedades del proyecto de prueba, agregue la ubicación del proyecto en pruebas a los directorios de archivos de inclusión.
 
-       Seleccione **Propiedades de configuración** > **Directorios de VC++** > **Directorios de archivos de inclusión**.
+       Seleccione **Propiedades de configuración** > **Directorios de VC++**  > **Directorios de archivos de inclusión**.
 
        Elija **Editar** y agregue el directorio del encabezado del proyecto en pruebas.
 
@@ -98,7 +96,7 @@ ms.locfileid: "65226084"
       
       ::: moniker range="vs-2017"
 
-      1. En el menú **Archivo**, seleccione **Nuevo** > **Proyecto** > **Visual C++** > **Prueba** > **Proyecto de prueba unitaria de C++**.
+      1. En el menú **Archivo**, seleccione **Nuevo** > **Proyecto** > **Visual C++** > **Prueba** > **Proyecto de prueba unitaria de C++** .
 
       ::: moniker-end
 
@@ -112,7 +110,7 @@ ms.locfileid: "65226084"
 
        Seleccione **Editar** y agregue la ruta del directorio de los archivos **.obj** o **.lib**. La ruta de acceso está normalmente dentro de la carpeta de compilación del proyecto en pruebas.
 
-  5. Seleccione **Propiedades de configuración** > **Directorios de VC++** > **Directorios de archivos de inclusión**.
+  5. Seleccione **Propiedades de configuración** > **Directorios de VC++**  > **Directorios de archivos de inclusión**.
 
        Elija **Editar** y agregue el directorio del encabezado del proyecto en pruebas.
 
@@ -124,7 +122,7 @@ ms.locfileid: "65226084"
 
    1. En el **Explorador de soluciones**, en el menú contextual del proyecto en pruebas, seleccione **Propiedades**. Se abrirá la ventana de **propiedades** del proyecto.
 
-   2. Elija **Propiedades de configuración** > **Directorios de VC++**.
+   2. Elija **Propiedades de configuración** > **Directorios de VC++** .
 
    3. Edite los directorios de inclusión y de biblioteca:
 
@@ -135,7 +133,7 @@ ms.locfileid: "65226084"
 
 2. Agregue el archivo de prueba unitaria de C++:
 
-   - En el **Explorador de soluciones**, en el menú contextual del proyecto, elija **Agregar** > **Nuevo elemento** > **Pruebas unitarias de C++**.
+   - En el **Explorador de soluciones**, en el menú contextual del proyecto, elija **Agregar** > **Nuevo elemento** > **Pruebas unitarias de C++** .
 
    Vaya a [Escribir las pruebas unitarias](#addTests).
 

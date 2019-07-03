@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a867986f26037473f5a45341f8d454b560c586ff
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 37c56a14e5ac4358be53baa41094c23253608bbb
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975065"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043042"
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window"></a>Métodos abreviados de teclado y de mouse en el Diagrama de clases y la ventana Detalles de clase
 
@@ -28,7 +28,7 @@ Puede usar el teclado junto con el mouse para llevar a cabo acciones de navegaci
 
 Se admiten las siguientes acciones del mouse en los diagramas de clases:
 
-|Combinación del mouse|Contexto|Descripción|
+|Combinación del mouse|Contexto|DESCRIPCIÓN|
 | - |-------------|-----------------|
 |Doble clic|Shape (elementos)|Se abre el editor de código.|
 |Doble clic|Conector de círculo|Expandir o contraer el círculo.|
@@ -56,7 +56,7 @@ Puede usar un mouse para cambiar la apariencia de la ventana **Detalles de clase
 
 Se admiten las siguientes acciones del teclado en los diagramas de clases:
 
-|Key|Contexto|Descripción|
+|Key|Contexto|DESCRIPCIÓN|
 |---------|-------------|-----------------|
 |**Teclas de dirección**|Dentro de las formas de tipo|Navegación de tipo árbol por el contenido de la forma (permite efectuar un recorrido cíclico). Las teclas izquierda y derecha expanden y contraen el elemento actual, si es expansible, y navegan al elemento primario si no lo es (consulte los métodos de navegación por la vista de árbol para obtener información detallada sobre su comportamiento).|
 |**Teclas de dirección**|Formas de nivel superior|Mover las formas en el diagrama.|
@@ -103,3 +103,6 @@ Use las siguientes teclas para navegar por la ventana **Detalles de clase**:
 ## <a name="see-also"></a>Vea también
 
 - [Crear y configurar miembros de tipo](creating-and-configuring-type-members.md)
+- [Uso del teclado exclusivamente](../reference/how-to-use-the-keyboard-exclusively.md)
+- [Métodos abreviados de teclado predeterminados de Visual Studio](../default-keyboard-shortcuts-in-visual-studio.md)
+- [Métodos abreviados de teclado en Blend](../../designers/keyboard-shortcuts-in-blend.md)

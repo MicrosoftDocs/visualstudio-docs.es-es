@@ -8,12 +8,12 @@ manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: f27e2585d082f61021fbc736b394612095f56684
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 6c236a8454c9710bedbf080f4d7a09cfff6a7fac
+ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66715247"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67160178"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Escribir pruebas unitarias para C/C++ en Visual Studio
 
@@ -37,11 +37,11 @@ Los proyectos de prueba unitaria de C++ admiten [CodeLens](../ide/find-code-chan
 
 **Visual Studio 2017 y versiones posteriores (todas las ediciones)**
 
-- **Google Test** se incluye como un componente predeterminado de la carga de trabajo de **Desarrollo para el escritorio con C++** . Tiene una plantilla de proyecto que se puede agregar a una solución mediante el menú contextual **Agregar nuevo proyecto** del nodo de solución en el **Explorador de soluciones**, así como opciones que se pueden configurar mediante **Herramientas** > **Opciones**. Para más información, vea [Cómo usar Google Test para C++ en Visual Studio](how-to-use-google-test-for-cpp.md).
+- **Google Test** se incluye como un componente predeterminado de la carga de trabajo de **Desarrollo para el escritorio con C++** . Tiene una plantilla de proyecto que se puede agregar a una solución mediante el menú contextual **Agregar nuevo proyecto** del nodo de solución en el **Explorador de soluciones**, así como opciones que se pueden configurar mediante **Herramientas** > **Opciones**. Para obtener más información, vea [Cómo: Utilizar Google Test en Visual Studio](how-to-use-google-test-for-cpp.md).
 
-- **Boost.Test** se incluye como un componente predeterminado de la carga de trabajo de **Desarrollo para el escritorio con C++** . Se integra con el **Explorador de pruebas**, pero actualmente no tiene plantilla de proyecto, por lo que se debe configurar manualmente. Para más información, vea [Cómo usar Boost.Test para C++ en Visual Studio](how-to-use-boost-test-for-cpp.md).
+- **Boost.Test** se incluye como un componente predeterminado de la carga de trabajo de **Desarrollo para el escritorio con C++** . Se integra con el **Explorador de pruebas**, pero actualmente no tiene plantilla de proyecto, por lo que se debe configurar manualmente. Para obtener más información, vea [Cómo: Utilizar Boost.Test en Visual Studio](how-to-use-boost-test-for-cpp.md).
 
-- La compatibilidad con **CTest** se incluye con el componente [CMake Tools para Visual Studio](/cpp/build/cmake-tools-for-visual-cpp), que forma parte de la carga de trabajo de **Desarrollo para el escritorio con C++** . Con todo, CTest aún no está totalmente integrado con el **Explorador de pruebas**. Para más información, vea [Cómo usar Google Test para C++ en Visual Studio](how-to-use-ctest-for-cpp.md).
+- La compatibilidad con **CTest** se incluye con el componente **Herramientas de CMake en C++** , que forma parte de la carga de trabajo de **Desarrollo para el escritorio con C++** . Con todo, CTest aún no está totalmente integrado con el **Explorador de pruebas**. Para obtener más información, vea [Cómo: Utilizar CTest en Visual Studio](how-to-use-ctest-for-cpp.md).
 
 **Visual Studio 2015 y anterior**
 

@@ -11,16 +11,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ba1529840a38a23929b9926cc4bed5cc22a058cb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: befbb09d347043ae304702618506d193344e23ba
+ms.sourcegitcommit: fd5a5b057df3d733f5224c305096907989811f85
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825484"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67195246"
 ---
 # <a name="overview-of-net-compiler-platform-analyzers"></a>Introducción a los analizadores de .NET Compiler Platform
 
-Los analizadores de .NET Compiler Platform ("Roslyn") analizan el estilo, la calidad, el mantenimiento y el diseño del código, además de otros problemas. Visual Studio incluye un conjunto integrado de analizadores que analizan el código de C# o Visual Basic a medida que escribe. Puede configurar las preferencias de estos analizadores integrados en la página [Opciones del editor de texto](../ide/code-styles-and-quick-actions.md) o en un [archivo .editorconfig](../ide/editorconfig-code-style-settings-reference.md). Puede instalar analizadores adicionales como una extensión de Visual Studio o un paquete de NuGet.
+Los analizadores de .NET Compiler Platform ("Roslyn") analizan el estilo, la calidad, el mantenimiento y el diseño del código, además de otros problemas. Visual Studio incluye un conjunto integrado de analizadores que analizan el código de C# o Visual Basic a medida que escribe. Puede configurar las preferencias de estos analizadores integrados en la página [Opciones del editor de texto](../ide/code-styles-and-code-cleanup.md) o en un [archivo .editorconfig](../ide/editorconfig-code-style-settings-reference.md). Puede instalar analizadores adicionales como una extensión de Visual Studio o un paquete de NuGet.
 
 Si un analizador detecta infracciones de reglas, se notifican en el editor de código (como un *subrayado ondulado* bajo el código infractor) y en la ventana **Lista de errores**.
 
@@ -79,6 +79,14 @@ La captura de pantalla siguiente muestra la salida de compilación de línea de 
 ### <a name="rule-severity"></a>Gravedad de las reglas
 
 No se puede establecer la gravedad de las reglas de los analizadores que se han instalado como una extensión de Visual Studio. Para configurar la [gravedad de las reglas](../code-quality/use-roslyn-analyzers.md#rule-severity), instale los analizadores como paquetes NuGet.
+
+### <a name="categories"></a>Categorías
+
+A continuación se muestran los distintos tipos de analizadores que ayudan a analizar el código. 
+
+- Analizadores recomendados de Microsoft: [Analizadores de FxCop](../code-quality/fxcop-analyzers.yml)
+- Analizadores IDE de Visual Studio: [EditorConfig](../ide/code-styles-and-code-cleanup.md)
+- Analizadores de terceros: [StyleCop](https://www.nuget.org/packages/StyleCop.Analyzers/), [Roslynator](https://www.nuget.org/packages/Roslynator/), [XUnit Analyzers](https://www.nuget.org/packages/xunit.analyzers/) y [Sonar Analyzer](https://www.nuget.org/packages/SonarAnalyzer.CSharp/)
 
 ## <a name="next-steps"></a>Pasos siguientes
 

@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c7edb17ec3cefd87263ea367b3b012a391d77d6d
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 79bebcdaaf2d970f019da12141275358120ac70e
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747332"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043403"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Procedimiento para ver y editar código mediante Ver la definición (Alt+F12)
 
@@ -75,7 +75,7 @@ Puede usar estos métodos abreviados de teclado con la ventana **Ver la definici
 |Abrir la ventana de definición|**Alt**+**F12**|
 |Cerrar la ventana de definición|**Esc**|
 |Promover la ventana de definición a una pestaña de documento normal|**Mayús**+**Alt**+**Inicio**|
-|Navegar entre ventanas de definición|**Ctrl**+**Alt**+**-** y **Ctrl**+**Alt**+**=**|
+|Navegar entre ventanas de definición|**Ctrl**+**Alt**+ **-** y **Ctrl**+**Alt**+ **=**|
 |Navegar entre varios resultados|**F8** y **Mayús**+**F8**|
 |Alternar entre la ventana del editor de código y la ventana de definición|**Mayús**+**Esc**|
 
@@ -86,4 +86,4 @@ Puede usar estos métodos abreviados de teclado con la ventana **Ver la definici
 
 - [Navegación en el código](../ide/navigating-code.md)
 - [Ir a definición y Ver la definición](../ide/go-to-and-peek-definition.md)
-- [Sugerencias de productividad](../ide/productivity-tips-for-visual-studio.md)
+- [Características de productividad en Visual Studio](../ide/productivity-features.md)

@@ -1,6 +1,6 @@
 ---
 title: Personalizar una compilación | Microsoft Docs
-ms.date: 06/14/2017
+ms.date: 06/13/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, transforms
@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2bb6b2d6e7ae3504415f59aeef1fddb8d9f98865
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8e644fd6fc521318512bbc5dd25838a379af78a9
+ms.sourcegitcommit: dd3c8cbf56c7d7f82f6d8818211d45847ab3fcfc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778106"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "67141172"
 ---
 # <a name="customize-your-build"></a>Personalizar una compilación
 
@@ -93,7 +93,7 @@ Imagínese que tiene esta estructura de solución estándar:
     \Project2Tests
 ```
 
-Puede que convenga tener propiedades comunes para todos los proyectos *(1)*, propiedades comunes para los proyectos *src* *(2-src)* y propiedades comunes para los proyectos *test* *(2-test)*.
+Puede que convenga tener propiedades comunes para todos los proyectos *(1)* , propiedades comunes para los proyectos *src* *(2-src)* y propiedades comunes para los proyectos *test* *(2-test)* .
 
 Para que MSBuild combine correctamente los archivos "internos" (*2-src* y *2-test*) con el archivo "externo" (*1*), debe tener en cuenta que, cuando MSBuild encuentra un archivo *Directory.Build.props*, detiene el análisis. Para continuar con el análisis y efectuar la combinación con el archivo externo, coloque este código en ambos archivos internos:
 
@@ -107,6 +107,36 @@ A continuación tiene un resumen del enfoque general de MSBuild:
 - Para controlar el proceso de análisis/combinación, use `$(DirectoryBuildPropsPath)` e `$(ImportDirectoryBuildProps)`.
 
 O más sencillo: el primer *Directory.Build.props* que no importa nada es donde se detiene MSBuild.
+
+### <a name="choose-between-adding-properties-to-a-props-or-targets-file"></a>Elección entre la adición de propiedades a un archivo .props o .targets
+
+MSBuild depende del orden de importación y la última definición de una propiedad (o una `UsingTask` o destino) es la definición usada.
+
+Al usar importaciones explícitas, puede importar desde un archivo *.props* o *.targets* en cualquier momento. Esta es la convención que se usa ampliamente:
+
+- Los archivos *.props* se importan de forma temprana en el orden de importación.
+
+- Los archivos *.targets*  se importan de forma tardía en el orden de compilación.
+
+Las importaciones `<Project Sdk="SdkName">` aplican esta convención (es decir, primero se muestra la importación de *Sdk.props*, antes que todo el contenido del archivo, para después hacerlo la de *Sdk.targets*, después de todo este contenido).
+
+Para decidir dónde colocar las propiedades, use las siguientes instrucciones generales:
+
+- En el caso de que sean muchas las propiedades, no importa dónde se definan, ya que no se sobrescriben y serán de solo lectura en tiempo de ejecución.
+
+- Para un comportamiento que podría personalizarse en un proyecto individual, establezca valores predeterminados en los archivos *.props*.
+
+- Evite el establecimiento de propiedades dependientes en los archivos *.props* leyendo el valor de una propiedad posiblemente personalizada, ya que la personalización no tendrá lugar hasta que MSBuild lea el proyecto del usuario.
+
+- Establezca propiedades dependientes en los archivos *.targets*, ya que recogerán personalizaciones de proyectos individuales.
+
+- Si tiene que reemplazar propiedades, hágalo en un archivo *.targets*, después de que todas las personalizaciones de proyecto de usuario hayan tenido la oportunidad de surtir efecto. Tenga cuidado al usar propiedades derivadas, ya que también puede ser necesario reemplazarlas.
+
+- Incluya elementos en los archivos *.props* (condicionados por una propiedad). Se tienen en cuenta todas las propiedades antes que cualquier artículo, por lo que se recogen personalizaciones de propiedades de proyecto de usuario, lo que proporciona al proyecto del usuario la oportunidad de `Remove` o `Update` cualquier elemento incorporado por la importación.
+
+- Defina los destinos en los archivos *.targets*. Sin embargo, si un SDK importa el archivo *.targets*, recuerde que este escenario aumenta la dificultad del reemplazo del destino, ya que el proyecto del usuario carece de un lugar para reemplazarlo de forma predeterminada.
+
+- Si es posible, opte por la personalización de propiedades en tiempo de evaluación en lugar del cambio de las mismas dentro de un destino. Esta instrucción hace que resulte más fácil cargar un proyecto y saber lo que hace.
 
 ## <a name="msbuildprojectextensionspath"></a>MSBuildProjectExtensionsPath
 
@@ -138,7 +168,7 @@ antes de su contenido, y
 $(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\{TargetFileName}\ImportAfter\*.targets
 ```
 
-después. Esto permite que los SDK instalados aumenten la lógica de compilación de los tipos de proyecto comunes.
+después. Esta convención permite que los SDK instalados aumenten la lógica de compilación de los tipos de proyecto comunes.
 
 Se busca la misma estructura de directorios en `$(MSBuildUserExtensionsPath)`, que es la carpeta *%LOCALAPPDATA%\Microsoft\MSBuild* por usuario. Los archivos ubicados en esa carpeta se importarán para todas las compilaciones del tipo de proyecto correspondiente que se ejecuta con las credenciales del usuario. Puede deshabilitar las extensiones de usuario si establece propiedades con el mismo nombre que el archivo de importación con el patrón `ImportUserLocationsByWildcardBefore{ImportingFileNameWithNoDots}`. Por ejemplo, si se establece `ImportUserLocationsByWildcardBeforeMicrosoftCommonProps` en `false` se impedirá la importación de `$(MSBuildUserExtensionsPath)\$(MSBuildToolsVersion)\Imports\Microsoft.Common.props\ImportBefore\*`.
 

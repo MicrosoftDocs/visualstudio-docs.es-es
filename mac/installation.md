@@ -7,12 +7,12 @@ ms.date: 04/02/2019
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
-ms.openlocfilehash: f989ccba45a034d90562b69eabf871e0e2a545b4
-ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
+ms.openlocfilehash: 1f8cfd597d2bfe8642c5b83940ceb03b7dd06e69
+ms.sourcegitcommit: 16bcaca215de75479695738d3c2d703c78c3500e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "66037530"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "67309789"
 ---
 # <a name="install-visual-studio-2019-for-mac"></a>Instalación de Visual Studio 2019 para Mac
 
@@ -46,9 +46,21 @@ Para compilar aplicaciones Xamarin para iOS o macOS, también necesitará lo sig
 
     [![Haga clic en los vínculos a los términos de licencia y privacidad y, si está de acuerdo, continúe.](media/install-privacy-sml.png)](media/install-privacy.png#lightbox)
 
-6. Se mostrará una lista de las cargas de trabajo disponibles. Seleccione las que quiera usar:
+6. Se mostrará una lista de las cargas de trabajo disponibles. Seleccione los componentes que quiere usar:
 
-    [![Elija las características de carga de trabajo opcionales que quiera instalar.](media/install-selection-sml.png)](media/install-selection.png#lightbox)
+    [![Elija las características de carga de trabajo opcionales que quiera instalar.](media/install-selection.png)](media/install-selection.png#lightbox)
+
+   Si no desea instalar todas las plataformas, utilice la guía siguiente para ayudarle a elegirlas:
+
+   * **Aplicaciones con Xamarin**:
+      - Xamarin.Forms: seleccione las plataformas **Android** y **iOS**.
+      - Solo iOS: seleccione la plataforma **iOS** (tenga en cuenta que tendrá que instalar [**Xcode**](https://developer.apple.com/xcode/)).
+      - Solo Android: seleccione la plataforma **Android** (tenga en cuenta que tendrá que seleccionar también las dependencias pertinentes).
+      - Solo Mac: seleccione la plataforma **MacOS** (tenga en cuenta que tendrá que instalar [**Xcode**](https://developer.apple.com/xcode/)).
+      - Aplicaciones de Xamarin completamente multiplataforma: seleccione las plataformas **Android**, **iOS**, y **macOS**.
+   * **Aplicaciones de .NET core**: seleccione la plataforma **.NET Core**.
+   * **Aplicaciones web ASP.NET Core**: seleccione la plataforma **.NET Core**.
+   * **Desarrollo de juegos multiplataforma de Unity**: no es necesario instalar plataformas adicionales más allá de Visual Studio para Mac. Consulte la [guía de instalación de Unity](/visualstudio/mac/setup-vsmac-tools-unity) para obtener más información acerca de cómo instalar la extensión de Unity.
 
 7. Después de haber realizado las selecciones, presione el botón **Instalar**.
 8. El instalador mostrará el progreso a medida que se realice la descarga y la instalación de Visual Studio para Mac, así como de las cargas de trabajo seleccionadas. Es posible que se le solicite que indique la contraseña para conceder los privilegios necesarios para la instalación.

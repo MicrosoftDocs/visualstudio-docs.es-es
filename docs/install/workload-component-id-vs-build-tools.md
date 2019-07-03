@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: b99298df-0280-47fc-af73-44cd7a8ac553
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: cafb593069076ad18c22673635721df13fb94c8c
-ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
+ms.openlocfilehash: 242bf2a1c003cb494f451dc577afa83c2ac79660
+ms.sourcegitcommit: 01c3c9dcade5d913bde2c7efa8c931a7b04e6cd0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "66037567"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67365325"
 ---
 # <a name="visual-studio-build-tools-component-directory"></a>Directorio de componentes de Visual Studio Build Tools
 
@@ -30,6 +30,8 @@ ms.locfileid: "66037567"
 
 [!INCLUDE[workloads-components-header-2017_md](includes/workloads-components-header-2017_md.md)]
 
+Para instalar estos componentes mediante el instalador manual, descargue y ejecute [Build Tools para Visual Studio](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2017).
+
 [!INCLUDE[Visual Studio Build Tools 2017](includes/vs-2017/workload-component-id-vs-build-tools.md)]
 
 ::: moniker-end
@@ -37,6 +39,8 @@ ms.locfileid: "66037567"
 ::: moniker range=">= vs-2019"
 
 [!INCLUDE[workloads-components-header-2019_md](includes/workloads-components-header-2019_md.md)]
+
+Para instalar estos componentes mediante el instalador manual, descargue y ejecute [Build Tools para Visual Studio](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2019).
 
 [!INCLUDE[Visual Studio Build Tools 2019](includes/vs-2019/workload-component-id-vs-build-tools.md)]
 
