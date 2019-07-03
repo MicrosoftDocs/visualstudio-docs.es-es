@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 04/14/2017
 ms.assetid: 78107CFA-9308-4293-A92A-9B552A259E15
-ms.openlocfilehash: 7f130f5dec77e0a1965c68cf71e642fdb636832f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 54d786e721e151140cac2fa822ddbd04de6073ae
+ms.sourcegitcommit: d2b234e0a4a875c3cba09321cdf246842670d872
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62983367"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67493648"
 ---
 # <a name="understanding-build-configurations"></a>Descripción de las configuraciones de compilación
 
@@ -22,7 +22,7 @@ Cada plataforma tiene configuraciones específicas para su compilación.
 
 ## <a name="solution-configurations"></a>Configuraciones de solución
 
-Del mismo modo que las configuraciones de proyecto, las configuraciones de solución se usan para crear configuraciones personalizadas para un proyecto completo. Con la pestaña  **Asignaciones de configuración**  del elemento  **Compilar > Configuraciones** , puede asignar una configuración de destino para cada elemento de la solución, como se muestra en la imagen siguiente:
+Del mismo modo que las configuraciones de proyecto, las configuraciones de solución se usan para crear configuraciones personalizadas para un proyecto completo. Con la pestaña **Asignaciones de configuración** del elemento **Compilar > Configuraciones**, puede asignar una configuración de destino para cada elemento de la solución, como se muestra en la imagen siguiente:
 
 ![Opciones de asignación de configuración](media/projects-and-solutions-image3.png)
 
@@ -36,7 +36,7 @@ En Visual Studio para Mac, en lugar de establecer un proyecto de inicio, se pued
 
 ![Desplegable de configuración de ejecución](media/projects-and-solutions-image8.png)
 
-Una configuración de ejecución es un conjunto de opciones de ejecución con un nombre y varias configuraciones que se definen en un proyecto para diferentes fines. Las configuraciones de ejecución se definen en el nivel de proyecto, y para cada proyecto ejecutable se crea automáticamente una predeterminada, aunque es posible agregar tantas como sea necesario. Determinados tipos de proyecto generan automáticamente configuraciones de ejecución adicionales. Por ejemplo, los proyectos de watchOS pueden generar  _configuraciones de vista rápida y notificación_.
+Una configuración de ejecución es un conjunto de opciones de ejecución con un nombre y varias configuraciones que se definen en un proyecto para diferentes fines. Las configuraciones de ejecución se definen en el nivel de proyecto, y para cada proyecto ejecutable se crea automáticamente una predeterminada, aunque es posible agregar tantas como sea necesario. Determinados tipos de proyecto generan automáticamente configuraciones de ejecución adicionales. Por ejemplo, los proyectos de watchOS pueden generar _configuraciones de vista rápida y notificación_.
 
 Las configuraciones se pueden compartir con otros desarrolladores (en cuyo caso se almacenarán en el archivo .csproj) o conservarse localmente (en cuyo caso se almacenarán en un archivo .user).
 

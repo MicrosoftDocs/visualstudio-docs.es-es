@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 02/07/2019
 ms.assetid: 0FE27C0C-A861-4133-A74E-8D0505CF5342
-ms.openlocfilehash: 56f736aa1e32530b1db96ad301091151731b7d28
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b94a16fbd210bb229881d46071f24c59aea8419e
+ms.sourcegitcommit: 0cd282a7584b9bfd4df7882f8fdf3ad8a270e219
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62540117"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "67465141"
 ---
 # <a name="code-snippets"></a>Fragmentos de código
 
@@ -85,8 +85,6 @@ Hay dos palabras clave reservadas que se puede usar en un fragmento de código:
 - `$end$` &ndash; Cuando el usuario haya terminado de editar las palabras clave de un fragmento de código, el cursor se colocará en la ubicación de la palabra clave `$end$`.
 
 El fragmento de código `for` de la sección anterior es un ejemplo de estas dos palabras clave reservadas.
-
-Consulte la [referencia de fragmentos de código de Visual Studio](/visualstudio/ide/code-snippets-schema-reference#keywords) para más información.
 
 ## <a name="see-also"></a>Vea también
 
