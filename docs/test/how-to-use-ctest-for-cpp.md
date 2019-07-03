@@ -7,20 +7,20 @@ manager: jillfra
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: a97aa7dfcc1cc46d64813ea7714629cb8557055d
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 0b6c4eb391014342a18ec3fe56a03a651463105c
+ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714889"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67160090"
 ---
 # <a name="how-to-use-ctest-for-c-in-visual-studio-2017-and-later"></a>Cómo usar CTest para C++ en Visual Studio 2017 y versiones posteriores
 
-CMake (que incluye CTest) se integra en el IDE de Visual Studio de manera predeterminada como un componente de la carga de trabajo **Desarrollo para el escritorio con C++** . En caso de que deba instalarlo en su máquina, abra el programa de instalación de Visual Studio, haga clic en el botón **Desarrollo para el escritorio con C++** y después seleccione **Modificar**. Marque [Herramientas de CMake para Visual C++](/cpp/build/cmake-tools-for-visual-cpp) en la lista de componentes de carga de trabajo.
+CMake (que incluye CTest) se integra en el IDE de Visual Studio de manera predeterminada como un componente de la carga de trabajo **Desarrollo para el escritorio con C++** . En caso de que deba instalarlo en su máquina, abra el programa de instalación de Visual Studio, haga clic en el botón **Desarrollo para el escritorio con C++** y después seleccione **Modificar**. Seleccione **Herramientas de CMake en C++ para Windows** en la lista de componentes de carga de trabajo.
 
 ## <a name="to-write-tests"></a>Para escribir pruebas
 
-La compatibilidad con CMake en Visual Studio no tiene que ver con el sistema de proyectos de Visual Studio. Por lo tanto, puede escribir y configurar pruebas de CTest del mismo modo en que lo hace en cualquier entorno de CMake. Para obtener más información sobre cómo usar CMake en Visual Studio, vea el artículo sobre las [herramientas de CMake para Visual C++](/cpp/ide/cmake-tools-for-visual-cpp).
+La compatibilidad con CMake en Visual Studio no tiene que ver con el sistema de proyectos de Visual Studio. Por lo tanto, puede escribir y configurar pruebas de CTest del mismo modo en que lo hace en cualquier entorno de CMake. Para obtener más información sobre cómo usar CMake en Visual Studio, consulte el artículo sobre los [proyectos de CMake en Visual Studio](/cpp/build/cmake-projects-in-visual-studio).
 
 ## <a name="to-run-tests"></a>Para ejecutar pruebas
 

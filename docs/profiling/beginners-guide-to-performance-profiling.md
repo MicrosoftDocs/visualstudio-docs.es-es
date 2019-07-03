@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 950e37fd1f1f42f534522c09a8322311c06cebd6
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: a79bcf2aade3a84e0453aec1d64e37c8a6a5c24c
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65688506"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67033029"
 ---
 # <a name="measure-application-performance-by-analyzing-cpu-usage"></a>Medición del rendimiento de aplicaciones mediante el análisis de uso de CPU
 Puede utilizar las herramientas de generación de perfiles de Visual Studio para analizar problemas de rendimiento en su aplicación. Este procedimiento muestra cómo utilizar la pestaña **Uso de CPU** de las herramientas de diagnóstico para obtener datos de rendimiento para la aplicación. Se admiten las herramientas de diagnóstico para el desarrollo de .NET en Visual Studio, incluido ASP.NET, y para el desarrollo nativo de C++.
@@ -149,15 +149,18 @@ Se recomienda que, para empezar a analizar los datos, examine la lista de funcio
     ![Ruta de acceso activa de Herramientas de diagnóstico](../profiling/media/vs-2019/diag-tools-hot-path.png "DiagToolsHotPath")
     ::: moniker-end
 
+    > [!NOTE]
+    > Si ve el código en el árbol de llamadas marcado como código "broken" o "unwalkable stack", esto indica que es probable que se hayan quitado los eventos de Seguimiento de eventos para Windows (ETW). Pruebe a recopilar el mismo seguimiento una segunda vez para resolver el problema.
+
 ## <a name="view-external-code"></a>Ver código externo
 
-El código externo son funciones de los componentes del sistema y del marco que son ejecutadas por el código que escribe. El código externo incluye funciones que inician y detienen la aplicación, dibujan la UI, controlan los subprocesos y proporcionan otros servicios de bajo nivel a la aplicación. En la mayoría de los casos, no le interesará el código externo, por lo que la herramienta Uso de CPU reúne las funciones externas de un método de usuario en un nodo **[Código externo]**.
+El código externo son funciones de los componentes del sistema y del marco que son ejecutadas por el código que escribe. El código externo incluye funciones que inician y detienen la aplicación, dibujan la UI, controlan los subprocesos y proporcionan otros servicios de bajo nivel a la aplicación. En la mayoría de los casos, no le interesará el código externo, por lo que la herramienta Uso de CPU reúne las funciones externas de un método de usuario en un nodo **[Código externo]** .
 
 Si quiere ver las rutas de acceso a las llamadas de código externo, elija **Mostrar código externo** en la lista **Vista de filtro** y luego **Aplicar**.
 
 ![Elija Vista de filtro y, después, Mostrar código externo](../profiling/media/diag-tools-show-external-code.png "DiagToolsShowExternalCode")
 
-Tenga en cuenta que muchas cadenas de llamadas de código externo están profundamente anidadas, así que el ancho de la columna Nombre de la función puede superar el ancho de pantalla de todos los monitores, excepto de los más grandes. Si ese es el caso, los nombres de función se muestran como **[…]**.
+Tenga en cuenta que muchas cadenas de llamadas de código externo están profundamente anidadas, así que el ancho de la columna Nombre de la función puede superar el ancho de pantalla de todos los monitores, excepto de los más grandes. Si ese es el caso, los nombres de función se muestran como **[…]** .
 
 Utilice el cuadro de búsqueda para localizar un nodo que esté buscando y, luego, utilice la barra de desplazamiento horizontal para visualizar los datos.
 

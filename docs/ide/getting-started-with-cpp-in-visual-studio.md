@@ -11,12 +11,12 @@ dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 375879e6a6aba93b702c65412328458a9a5568ab
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a132787a5af0aca9b42775931b343b89710ce91b
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62962930"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043401"
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Introducción a C++ en Visual Studio
 
@@ -28,13 +28,13 @@ No es necesario estar familiarizado con C++ para completar este inicio rápido, 
 
 ::: moniker range="vs-2017"
 
-Para seguir este inicio rápido, se necesita una copia de Visual Studio 2017 que tenga instalada la carga de trabajo **Desarrollo de escritorio con C++**. Para obtener una guía rápida de instalación, vea [Install C++ support in Visual Studio](/cpp/build/vscpp-step-0-installation) (Instalar la compatibilidad con C++ en Visual Studio).
+Para seguir este inicio rápido, se necesita una copia de Visual Studio 2017 que tenga instalada la carga de trabajo **Desarrollo de escritorio con C++** . Para obtener una guía rápida de instalación, vea [Install C++ support in Visual Studio](/cpp/build/vscpp-step-0-installation) (Instalar la compatibilidad con C++ en Visual Studio).
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-Para seguir este inicio rápido, se necesita una copia de Visual Studio 2019 que tenga instalada la carga de trabajo **Desarrollo de escritorio con C++**. Para obtener una guía rápida de instalación, vea [Install C++ support in Visual Studio](/cpp/build/vscpp-step-0-installation) (Instalar la compatibilidad con C++ en Visual Studio).
+Para seguir este inicio rápido, se necesita una copia de Visual Studio 2019 que tenga instalada la carga de trabajo **Desarrollo de escritorio con C++** . Para obtener una guía rápida de instalación, vea [Install C++ support in Visual Studio](/cpp/build/vscpp-step-0-installation) (Instalar la compatibilidad con C++ en Visual Studio).
 
 ::: moniker-end
 
@@ -70,7 +70,7 @@ Visual Studio usa *proyectos* para organizar el código de una aplicación y *so
 
    ![Use el cuadro de diálogo Nuevo proyecto para crear el proyecto de la aplicación](../ide/media/get-started-cpp-new-project-dialog.png)
 
-   El cuadro de diálogo puede contener opciones diferentes en función de las cargas de trabajo de Visual Studio y los componentes que se hayan instalado. Si no ve las plantillas de proyecto de Visual C++, será necesario volver a ejecutar el Instalador de Visual Studio e instalar la carga de trabajo **Desarrollo de escritorio con C++**. Puede hacerlo directamente desde el cuadro de diálogo **Nuevo proyecto**. Para iniciar el Instalador, seleccione el vínculo **Abrir el instalador de Visual Studio** en el cuadro de diálogo.
+   El cuadro de diálogo puede contener opciones diferentes en función de las cargas de trabajo de Visual Studio y los componentes que se hayan instalado. Si no ve las plantillas de proyecto de Visual C++, será necesario volver a ejecutar el Instalador de Visual Studio e instalar la carga de trabajo **Desarrollo de escritorio con C++** . Puede hacerlo directamente desde el cuadro de diálogo **Nuevo proyecto**. Para iniciar el Instalador, seleccione el vínculo **Abrir el instalador de Visual Studio** en el cuadro de diálogo.
 
 1. Seleccione el botón **Aceptar** para crear el proyecto y la solución de la aplicación.
 
@@ -98,7 +98,7 @@ El siguiente paso es agregar código para mostrar la palabra "Hello" en la venta
 
    ![Error en la ventana Lista de errores](../ide/media/get-started-cpp-error-list.png)
 
-   El código no tiene una declaración para [std::cout](/cpp/standard-library/iostream), que se encuentra en el archivo de encabezado *\<iostream>*.
+   El código no tiene una declaración para [std::cout](/cpp/standard-library/iostream), que se encuentra en el archivo de encabezado *\<iostream>* .
 
 1. Para incluir el archivo de encabezado de *iostream*, escriba el siguiente código después de `#include "stdafx.h"`:
 
@@ -177,4 +177,4 @@ Cuando esta compilación acabe, habrá creado una aplicación que se puede copia
 
 - [Usar el IDE de Visual Studio para desarrollo de escritorio de C++](/cpp/ide/using-the-visual-studio-ide-for-cpp-desktop-development)
 - [Tutorial: Creación de una aplicación sencilla con C# o Visual Basic](../get-started/csharp/tutorial-wpf.md)
-- [Sugerencias de productividad para Visual Studio](../ide/productivity-tips-for-visual-studio.md)
+- [Características de productividad en Visual Studio](../ide/productivity-features.md)

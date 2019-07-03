@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: a5c903b0aa82f3711bdbe1fd7925829fbdc06c9a
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: a83e19f808a3f3ab7e1bf9f4fb58f5ddd7a218b7
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226047"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67033140"
 ---
 # <a name="create-a-vuejs-application-using-nodejs-tools-for-visual-studio"></a>Crear una aplicación Vue.js con Herramientas de Node.js para Visual Studio
 
@@ -169,7 +169,15 @@ Estos pasos requieren vue-cli 3.0, que actualmente se encuentra en versión beta
 
 #### <a name="build-with-vue-cli-30"></a>Compilar con vue-cli 3.0
 
-Un problema desconocido con vue-cli 3.0 evita la automatización del proceso de compilación. Cada vez que se intenta actualizar la carpeta wwwroot, debe ejecutar el comando `npm run build` en la carpeta client-app.
+Un problema desconocido con vue-cli 3.0 puede evitar la automatización del proceso de compilación. Cada vez que se intenta actualizar la carpeta wwwroot, debe ejecutar el comando `npm run build` en la carpeta client-app.
+
+Como alternativa, puede compilar el proyecto de cli-vue 3.0 como un evento anterior a la compilación mediante las propiedades del proyecto de ASP.NET. Haga clic con el botón derecho en el proyecto, elija **Propiedades**e incluya los siguientes comandos en la pestaña **Compilar**, en el cuadro de texto **Línea de comandos del evento anterior a la compilación**.
+
+``` cmd
+cd ./client-app
+npm run build
+cd ../
+```
 
 ## <a name="limitations"></a>Limitaciones
 

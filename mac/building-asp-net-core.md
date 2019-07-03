@@ -5,12 +5,12 @@ author: asb3993
 ms.author: amburns
 ms.date: 05/30/2019
 ms.assetid: 771C2F8E-46BC-4280-AFE8-ED9D5C7790CE
-ms.openlocfilehash: fb70966dd24c4d22d473b552297a60ddebdce106
-ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
+ms.openlocfilehash: 4e38378c22c6920e471b72d990d61d9b4ebd3d7f
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66836184"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67253804"
 ---
 # <a name="building-aspnet-core-applications-in-visual-studio-for-mac"></a>Compilación de aplicaciones de ASP.NET Core en Visual Studio para Mac 
 
@@ -23,7 +23,7 @@ En este laboratorio se va a crear y examinar una aplicación de ASP.NET Core con
 
 
 > [!div class="checklist"]
-> * Crear una aplicación web de ASP.NET Core
+> * Cree una aplicación web ASP.NET Core
 > * Examinar el hospedaje, la configuración y el modelo de middleware de ASP.NET Core
 > * Depurar una aplicación web de ASP.NET Core
 
@@ -35,13 +35,13 @@ En este laboratorio se va a crear y examinar una aplicación de ASP.NET Core con
 
 Este laboratorio está destinado a desarrolladores familiarizados con C#, aunque no se requiere una experiencia profunda.
 
-## <a name="task-1-creating-a-new-aspnet-core-application"></a>Tarea 1: Creación de una nueva aplicación de ASP.NET Core
+## <a name="task-1-creating-a-new-aspnet-core-application"></a>Tarea 1: Creación de una nueva aplicación de ASP.NET Core
 
 1. Inicie **Visual Studio para Mac**.
 
 2. Seleccione **Archivo > Nueva solución**.
 
-3. Seleccione la categoría **.NET Core > Aplicación** y la plantilla **Aplicación web de ASP.NET Core (C#)**. Haga clic en **Siguiente**.
+3. Seleccione la categoría **.NET Core > Aplicación** y la plantilla **Aplicación web de ASP.NET Core (C#)** . Haga clic en **Siguiente**.
 
     ![](media/netcore-image1.png)
 
@@ -49,7 +49,7 @@ Este laboratorio está destinado a desarrolladores familiarizados con C#, aunque
 
     ![](media/netcore-image2.png)
 
-## <a name="task-2-touring-the-solution"></a>Tarea 2: Examen de la solución
+## <a name="task-2-touring-the-solution"></a>Tarea 2: Examen de la solución
 
 1. La plantilla predeterminada crea una solución con un solo proyecto de ASP.NET Core denominado **CoreLab**. Expanda el nodo del proyecto para exponer su contenido.
 
@@ -59,7 +59,7 @@ Este laboratorio está destinado a desarrolladores familiarizados con C#, aunque
 
     ![](media/netcore-image4.png)
 
-3. La clase **HomeController** por convención controla todas las solicitudes entrantes que empiezan por **/Home**. El método **Index** controla las solicitudes a la raíz del directorio (como http://site.com/Home)) y otros métodos controlan las solicitudes a su ruta de acceso con nombre según la convención, como **About()** controla las solicitudes a **http://site.com/Home/About**. Por supuesto, todo esto es configurable. Algo a destacar es que **HomeController** es el controlador predeterminado de un proyecto nuevo, por lo que las solicitudes a la raíz del sitio (**http://site.com**) irían a través de **Index()** de **HomeController** al igual que las solicitudes a **http://site.com/Home** o **http://site.com/Home/Index**.
+3. La clase **HomeController** por convención controla todas las solicitudes entrantes que empiezan por **/Home**. El método **Index** controla las solicitudes a la raíz del directorio (como `http://site.com/Home`) y otros métodos controlan las solicitudes a su ruta de acceso con nombre según la convención, como **About()** controla las solicitudes a `http://site.com/Home/About`. Por supuesto, todo esto es configurable. Algo a destacar es que **HomeController** es el controlador predeterminado de un proyecto nuevo, por lo que las solicitudes a la raíz del sitio (`http://site.com`) irían a través de **Index()** de **HomeController** al igual que las solicitudes a `http://site.com/Home` o `http://site.com/Home/Index`.
 
     ![](media/netcore-image5.png)
 
@@ -79,7 +79,7 @@ Este laboratorio está destinado a desarrolladores familiarizados con C#, aunque
 
     ![](media/netcore-image9.png)
 
-## <a name="task-3-understanding-how-the-application-is-hosted"></a>Tarea 3: Descripción de cómo se hospeda la aplicación
+## <a name="task-3-understanding-how-the-application-is-hosted"></a>Tarea 3: Descripción de cómo se hospeda la aplicación
 
 1. En el **Explorador de soluciones**, abra **Program.cs**. Este es el programa previo que va a ejecutar la aplicación.
 
@@ -89,7 +89,7 @@ Este laboratorio está destinado a desarrolladores familiarizados con C#, aunque
 
     ![](media/netcore-image11.png)
 
-3. Aunque **WebHostBuilder** es responsable de crear el host que va a arrancar el servidor de la aplicación, exige proporcionar un servidor que implemente **IServer**. De forma predeterminada, este es **[Kestrel](https://docs.microsoft.com/aspnet/core/fundamentals/servers/kestrel)**, un servidor web multiplataforma para ASP.NET Core basado en **libuv**, que es una biblioteca de E/S asincrónica multiplataforma.
+3. Aunque **WebHostBuilder** es responsable de crear el host que va a arrancar el servidor de la aplicación, exige proporcionar un servidor que implemente **IServer**. De forma predeterminada, este es **[Kestrel](https://docs.microsoft.com/aspnet/core/fundamentals/servers/kestrel)** , un servidor web multiplataforma para ASP.NET Core basado en **libuv**, que es una biblioteca de E/S asincrónica multiplataforma.
 
     ![](media/netcore-image12.png)
 
@@ -123,7 +123,7 @@ Este laboratorio está destinado a desarrolladores familiarizados con C#, aunque
 
 3. Active **Ejecutar en la consola externa** y desactive **Pausar salida de la consola**. Normalmente la aplicación autohospedada no tendría su consola visible, sino que registraría sus resultados en el panel **Salida**. Para los fines de este laboratorio, se muestra también en una ventana independiente, aunque no es necesario hacerlo durante el desarrollo normal.
 
-4. Haga clic en **Aceptar**.
+4. Haga clic en **OK**.
 
     ![](media/netcore-image19.png)
 

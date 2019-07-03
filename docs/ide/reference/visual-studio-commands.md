@@ -12,34 +12,38 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5730238ec899aa4e34c8ed548f49625b33d432d7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 294ca45123faf1625b6f09a638ddc089a31d85cc
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62789375"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043586"
 ---
 # <a name="visual-studio-commands"></a>Comandos de Visual Studio
 
-Los comandos de Visual Studio le permiten invocar un comando desde la ventana **Comando** , la ventana **Inmediato** o el cuadro **Buscar/comando** . En todos los casos, el signo mayor que (`>`) se usa para indicar que se debe seguir un comando en lugar de una operación de búsqueda o de depuración.
+Puede escribir comandos de Visual Studio en la ventana **Comando**, la ventana **Inmediato** o el cuadro **Buscar/Comando**. En todos los casos, el signo mayor que (`>`) indica que se debe seguir un comando en lugar de una operación de búsqueda o de depuración.
 
-Encontrará una lista completa de los comandos y su sintaxis en el cuadro de diálogo **Teclado, Opciones de entorno** .
+Encontrará una lista completa de los comandos y su sintaxis en la página **Teclado** de **Herramientas** > **Opciones** > **Entorno**.
 
-El carácter de escape de los comandos de Visual Studio es un carácter de intercalación (^), lo que significa que el carácter que le sigue se interpreta literalmente, en lugar de interpretarse como un carácter de control. Esto se puede usar para insertar comillas rectas ("), espacios, barras diagonales iniciales, símbolos de intercalación o cualquier otro carácter literal en un valor de parámetro o modificador, con la excepción de los nombres de los modificadores. Por ejemplo,
+En las versiones localizadas del IDE, los nombres de los comandos se pueden escribir en el idioma nativo del IDE o en inglés. Por ejemplo, puede escribir `File.NewFile` o `Fichier.NouveauFichier` en el IDE francés para ejecutar el mismo comando.
+
+Muchos comandos tienen alias. Para obtener una lista de alias de comandos, consulte [Alias de comandos](../../ide/reference/visual-studio-command-aliases.md). Para ver los métodos abreviados de teclado de comandos, vea [Métodos abreviados de teclado predeterminados de Visual Studio](../default-keyboard-shortcuts-in-visual-studio.md).
+
+## <a name="escape-character"></a>Carácter de escape
+
+El carácter de escape para los comandos de Visual Studio es un símbolo de intercalación (^). El carácter de escape significa que el carácter que le sigue se interpreta literalmente, en lugar de interpretarse como un carácter de control. Esto se puede usar para insertar comillas rectas ("), espacios, barras diagonales iniciales, símbolos de intercalación o cualquier otro carácter literal en un valor de parámetro o modificador, con la excepción de los nombres de los modificadores. Por ejemplo:
 
 ```
 >Edit.Find ^^t /regex
 ```
 
-El símbolo de intercalación funciona igual tanto si está dentro como fuera de unas comillas. Si el símbolo de intercalación es el último carácter de la línea, se ignora.
+El símbolo de intercalación funciona igual tanto si está dentro como fuera de unas comillas. Si el símbolo de intercalación es el último carácter de la línea, se omite.
 
-En las versiones localizadas del IDE, los nombres de los comandos se pueden escribir en el idioma nativo del IDE o en inglés. Por ejemplo, puede escribir `File.NewFile` o `Fichier.NouveauFichier` en el IDE francés para ejecutar el mismo comando.
+## <a name="commands-with-arguments"></a>Comandos con argumentos
 
-Muchos comandos tienen alias. Para obtener una lista de alias de comandos, consulte [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md).
+Los siguientes comandos toman argumentos o modificadores:
 
-Los siguientes comandos toman argumentos o modificadores.
-
-| Nombre de comando | Descripción |
+| Nombre de comando | DESCRIPCIÓN |
 | - | - |
 | [Agregar elemento existente](../../ide/reference/add-existing-item-command.md) | Agrega un archivo existente a la solución actual y lo abre. |
 | [Agregar proyecto existente](../../ide/reference/add-existing-project-command.md) | Agrega un proyecto existente a la solución actual. |
@@ -78,4 +82,4 @@ Los siguientes comandos toman argumentos o modificadores.
 
 - [Ventana Comandos](../../ide/reference/command-window.md)
 - [Cuadro Buscar/Comando](../../ide/find-command-box.md)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [Alias de comandos de Visual Studio](../../ide/reference/visual-studio-command-aliases.md)

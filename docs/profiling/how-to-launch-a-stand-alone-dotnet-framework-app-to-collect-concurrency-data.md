@@ -1,5 +1,5 @@
 ---
-title: Procedimiento Iniciar una aplicación de .NET Framework independiente con el generador de perfiles para recopilar datos de simultaneidad mediante la línea de comandos | Microsoft Docs
+title: 'Línea de comandos de generador de perfiles: apertura de la aplicación de .NET cliente y obtención de los datos de simultaneidad'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 17a48848-bd3e-44ef-9971-e39836ff1df2
@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 47b004c5f7d127c78e4fd6f7c00b34c502d07f18
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: effc29e0f66cc298ec7a5e281c83df0ccad968d9
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63386727"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032963"
 ---
 # <a name="how-to-launch-a-stand-alone-net-framework-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line"></a>Procedimiento Iniciar una aplicación de .NET Framework independiente con el generador de perfiles para recopilar datos de simultaneidad mediante la línea de comandos
 En este tema se describe cómo utilizar las herramientas de línea de comandos de las herramientas de generación de perfiles de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para iniciar una aplicación independiente (cliente) de .NET Framework y recopilar datos de simultaneidad de procesos y de subprocesos.
@@ -32,7 +32,7 @@ En este tema se describe cómo utilizar las herramientas de línea de comandos d
 
 2. Inicie el generador de perfiles. Tipo:
 
-    [VSPerfCmd](../profiling/vsperfcmd.md) **/start:concurrency**[**,**{**ResourceOnly**&#124;**ThreadOnly**}] **/output:**`OutputFile` [`Options`]
+    [VSPerfCmd](../profiling/vsperfcmd.md) **/start:concurrency**[ **,** {**ResourceOnly**&#124;**ThreadOnly**}] **/output:** `OutputFile` [`Options`]
 
    - La opción [/start](../profiling/start.md) inicializa Profiler.
 
@@ -42,13 +42,13 @@ En este tema se describe cómo utilizar las herramientas de línea de comandos d
      | **/start:concurrency,resourceonly** | Habilita únicamente la recolección de datos de contención de recursos. |
      | **/start:concurrency,threadonly** | Habilita únicamente la recolección de datos de ejecución de subprocesos. |
 
-   - La opción [/output](../profiling/output.md)**:**`OutputFile` es necesaria con **/start**. `OutputFile` especifica el nombre y la ubicación del archivo de datos de generación de perfiles (.vsp).
+   - La opción [/output](../profiling/output.md) **:** `OutputFile` es necesaria con **/start**. `OutputFile` especifica el nombre y la ubicación del archivo de datos de generación de perfiles (.vsp).
 
      Puede usar cualquiera de las siguientes opciones con la opción **/start:concurrency**.
 
-   | Opción | Descripción |
+   | Opción | DESCRIPCIÓN |
    | - | - |
-   | [/user](../profiling/user-vsperfcmd.md) **:**[`domain\`]`username` | Especifica el dominio y el nombre de usuario opcionales de la cuenta a la que se va a conceder acceso al generador de perfiles. |
+   | [/user](../profiling/user-vsperfcmd.md) **:** [`domain\`]`username` | Especifica el dominio y el nombre de usuario opcionales de la cuenta a la que se va a conceder acceso al generador de perfiles. |
    | [/crosssession](../profiling/crosssession.md) | Habilita la generación de perfiles de procesos en otros inicios de sesión. |
    | [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath` | Especifica un contador de rendimiento de Windows que se va a recopilar durante la generación de perfiles. |
    | [/automark](../profiling/automark.md) **:** `Interval` | Utilizar solo con **/wincounter**. Especifica el número de milisegundos entre eventos de recopilación de contadores de rendimiento de Windows. El valor predeterminado es 500 ms. |
@@ -60,7 +60,7 @@ En este tema se describe cómo utilizar las herramientas de línea de comandos d
 
     Puede usar cualquiera de las siguientes opciones con la opción **/launch**.
 
-   |Opción|Descripción|
+   |Opción|DESCRIPCIÓN|
    |------------|-----------------|
    |[/args](../profiling/args.md) **:** `Arguments`|Especifica una cadena que contiene los argumentos de la línea de comandos que se van a pasar a la aplicación de destino.|
    |[/console](../profiling/console.md)|Inicia la aplicación de línea de comandos de destino en otra ventana.|
@@ -73,11 +73,11 @@ En este tema se describe cómo utilizar las herramientas de línea de comandos d
 
 1. Los siguientes pares de opciones de *VSPerfCmd.exe* inician y detienen la recopilación de datos. Especifique cada opción en una línea de comandos diferente. Puede activar y desactivar la recolección de datos varias veces.
 
-    |Opción|Descripción|
+    |Opción|DESCRIPCIÓN|
     |------------|-----------------|
-    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Inicia (**/globalon**) o detiene (**/globaloff**) la recolección de datos para todos los procesos.|
-    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Inicia (**/processon**) o detiene (**/processoff**) la recolección de datos para el proceso especificado por el identificador de proceso (`PID`).|
-    |[/attach](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} [/detach](../profiling/detach.md)[**:**{`PID`&#124;`ProcName`}]|**/attach** inicia la recopilación de datos para el proceso especificado por el identificador de proceso (`PID`) o por el nombre de proceso (ProcName). **/detach** detiene la recolección de datos para el proceso especificado o para todos los procesos si no se especifica uno.|
+    |[/globalon /globaloff](../profiling/globalon-and-globaloff.md)|Inicia ( **/globalon**) o detiene ( **/globaloff**) la recolección de datos para todos los procesos.|
+    |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|Inicia ( **/processon**) o detiene ( **/processoff**) la recolección de datos para el proceso especificado por el identificador de proceso (`PID`).|
+    |[/attach](../profiling/attach.md) **:** {`PID`&#124;`ProcName`} [/detach](../profiling/detach.md)[ **:** {`PID`&#124;`ProcName`}]|**/attach** inicia la recopilación de datos para el proceso especificado por el identificador de proceso (`PID`) o por el nombre de proceso (ProcName). **/detach** detiene la recolección de datos para el proceso especificado o para todos los procesos si no se especifica uno.|
 
 ## <a name="end-the-profiling-session"></a>Finalización de la sesión de generación de perfiles
  Para finalizar la sesión de generación de perfiles, el generador de perfiles no debe estar recopilando datos. Para dejar de recopilar datos de simultaneidad, cierre la aplicación para la que se generan perfiles o invoque la opción **VSPerfCmd /detach**. Después, invoque la opción **VSPerfCmd /shutdown** para desactivar el generador de perfiles y cerrar el archivo de datos de generación de perfiles. El comando **VSPerfClrEnv /off** borra las variables de entorno de generación de perfiles.
@@ -88,7 +88,7 @@ En este tema se describe cómo utilizar las herramientas de línea de comandos d
 
     - Cierre la aplicación de destino.
 
-         o bien
+         O bien
 
     - Escriba **VSPerfCmd /detach**
 

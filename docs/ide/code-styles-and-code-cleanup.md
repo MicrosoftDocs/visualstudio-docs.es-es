@@ -10,12 +10,12 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.Basic.Code_Style.General
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b2ebad946d62016199212cfeaae54c32db74d4c
-ms.sourcegitcommit: 3fe6bed9ef8fb1478106645f655c7472009ae43a
+ms.openlocfilehash: c31a04d5471224ed8433bba70baa5bd1dae9125e
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "64557990"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328758"
 ---
 # <a name="code-style-preferences"></a>Preferencias de estilo del código
 
@@ -30,8 +30,7 @@ La [configuración del estilo de código](../ide/editorconfig-code-style-setting
 
 ::: moniker range=">=vs-2019"
 
-Puede rellenar manualmente el archivo EditorConfig o generar manualmente el archivo a partir de la configuración de estilo de código que haya establecido en el cuadro de diálogo **Opciones** de Visual Studio para el editor de texto de C# o Visual Basic. Esta página de opciones está disponible en **Herramientas** > **Opciones** > **Editor de texto** > [**C#** o **Basic**] > **Estilo de código** > **General**.
-Haga clic en **Generar archivo .editorconfig desde la configuración** para generar automáticamente un archivo *.editorconfig* de estilo de codificación basado en la configuración establecida en la página **Opciones**.
+Puede rellenar manualmente el archivo EditorConfig o generar manualmente el archivo a partir de la configuración de estilo de código que haya establecido en el cuadro de diálogo **Opciones** de Visual Studio. Esta página de opciones está disponible en **Herramientas** > **Opciones** > **Editor de texto** > [**C#** o **Basic**] > **Estilo de código** > **General**. Haga clic en **Generar archivo .editorconfig desde la configuración** para generar automáticamente un archivo *.editorconfig* de estilo de codificación basado en la configuración establecida en la página **Opciones**.
 
 ![Generación del archivo .editorconfig desde la configuración de Visual Studio 2019](media/vs-2019/generate-editorconfig-file-small.png)
 
@@ -90,9 +89,13 @@ Para los archivos de código de C#, Visual Studio 2019 tiene el botón **Limpi
 > [!TIP]
 > Las reglas configuradas con una gravedad de **Ninguna** no participan en la limpieza de código, pero se pueden aplicar de manera individual a través del menú **Acciones rápidas y refactorizaciones**.
 
-En primer lugar, configure qué estilos de código quiere aplicar (en uno de los dos perfiles) en el cuadro de diálogo **Configurar limpieza de código**. Para abrir este cuadro de diálogo, haga clic en la flecha de expansión situada junto al icono de escoba para la limpieza de código y, después, elija **Configurar limpieza de código**. También puede presionar **Ctrl**+**K**, **Ctrl**+**Q**.
+En primer lugar, configure qué estilos de código quiere aplicar (en uno de los dos perfiles) en el cuadro de diálogo **Configurar limpieza de código**. Para abrir este cuadro de diálogo, haga clic en la flecha de expansión situada junto al icono de escoba para la limpieza de código y, después, elija **Configurar limpieza de código**.
 
 ![Configurar limpieza de código en Visual Studio 2019](media/configure-code-cleanup.png)
+
+Cuando haya configurado la limpieza de código, puede hacer clic en el icono de escoba o presionar **Ctrl**+**K**, **Ctrl**+**E** para ejecutar la limpieza de código. También puede ejecutar la limpieza de código en todo el proyecto o la solución. Haga clic con el botón derecho en el nombre del proyecto o la solución en el **Explorador de soluciones**, seleccione **Análisis y limpieza de código** y, luego, seleccione **Ejecutar limpieza de código**.
+
+![Ejecución de la limpieza de código en todo el proyecto o la solución](media/run-code-cleanup-project-solution.png)
 
 Si quiere que la configuración de estilo de código se aplique cada vez que guarde un archivo, es posible que le resulte útil la extensión [Limpieza de código al guardar](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.CodeCleanupOnSave).
 

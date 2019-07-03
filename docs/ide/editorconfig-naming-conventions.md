@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68840957a0c152add06804eac58f3d24afa1e846
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 35b0348788cfa23dd389b0647e24b7ac0aa0b7a1
+ms.sourcegitcommit: 16bcaca215de75479695738d3c2d703c78c3500e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66261963"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "67309822"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>Convenciones de nomenclatura .NET para EditorConfig
 
@@ -25,7 +25,7 @@ Las convenciones de nomenclatura deben ordenarse de la más específica a la men
 
 Para cada convención de nomenclatura, debe especificar los símbolos a los que se aplica, un estilo de nomenclatura y una gravedad de aplicación de la convención, con las propiedades que se describen a continuación. El orden de las propiedades no es importante.
 
-Para comenzar, elija un título para la regla de nomenclatura que va a usar en cada una de las propiedades que se necesitan para describir completamente la regla. Por ejemplo, `public_members_must_be_capitalized` es un buen nombre descriptivo para una regla de nomenclatura. En las secciones siguientes se hará referencia al título que elija como **<TítuloDeLaReglaDeNomenclatura\>** .
+Para comenzar, elija un título para la regla de nomenclatura que va a usar en cada una de las propiedades que se necesitan para describir completamente la regla. Por ejemplo, `public_members_must_be_capitalized` es un buen nombre descriptivo para una regla de nomenclatura. En esta página se hará referencia al título que elija como **<namingRuleTitle\>** en las secciones siguientes.
 
 ## <a name="symbols"></a>Símbolos
 
@@ -44,19 +44,19 @@ Para describir el tipo de símbolos a los que se aplica la regla de nomenclatura
 En la lista siguiente se muestran los valores permitidos y puede especificar varios valores si los separa con una coma.
 
 - \* (use este valor para especificar todos los símbolos)
-- namespace
-- clase
+- espacio de nombres
+- class
 - struct
 - interfaz
 - enum
 - propiedad
-- método
+- method
 - campo
-- evento
+- event
 - delegado
-- parámetro
+- Parámetro
 - type_parameter
-- locales
+- local
 - local_function
 
 ### <a name="accessibility-levels-of-symbols"></a>Niveles de accesibilidad de símbolos
@@ -68,13 +68,13 @@ Para describir los niveles de accesibilidad de los símbolos a los que quiere ap
 En la lista siguiente se muestran los valores permitidos y puede especificar varios valores si los separa con una coma.
 
 - \* (use este valor para especificar todos los niveles de accesibilidad)
-- public
+- público
 - internal o friend
-- private
+- privado
 - protected
 - protected\_internal o protected_friend
 - private\_protected
-- locales
+- local
 
    El nivel de accesibilidad `local` se aplica a los símbolos definidos dentro de un método. Es útil para definir las convenciones de nomenclatura de los símbolos cuya accesibilidad no puede especificarse en el código. Por ejemplo, si especifica `applicable_accessibilities = local` en una convención de nomenclatura para las constantes (`required_modifiers = const`), la regla se aplica únicamente a las constantes definidas dentro de un método y no a las definidas en un tipo.
 
@@ -116,7 +116,7 @@ Una regla de nomenclatura coincide con las firmas que tienen *todos* los modific
 
 ## <a name="style"></a>Estilo
 
-Ahora que se ha identificado el grupo de símbolos al que aplicar la regla de nomenclatura, se debe describir el estilo de nomenclatura. Un estilo puede ser que el nombre tenga un prefijo o sufijo determinado, o bien que palabras individuales del nombre se separen con un carácter determinado. También puede especificar un estilo de uso de mayúsculas. La propiedad de estilo tiene el formato siguiente:
+Ahora que ha identificado el grupo de símbolos al que aplicar la regla de nomenclatura, puede describir el estilo de nomenclatura. Un estilo puede ser que el nombre tenga un prefijo o sufijo determinado, o bien que palabras individuales del nombre se separen con un carácter determinado. También puede especificar un estilo de uso de mayúsculas. La propiedad de estilo tiene el formato siguiente:
 
 `dotnet_naming_rule.<namingRuleTitle>.style = <styleTitle>`
 
@@ -169,11 +169,19 @@ Gravedad | Efecto
 ------------ | -------------
 Ninguno o silencioso | Cuando no se sigue este estilo, no se muestra nada al usuario, pero el código generado automáticamente sigue este estilo.
 suggestion | Cuando no se sigue este estilo, se muestra al usuario como una sugerencia (como puntos debajo de los dos primeros caracteres). No tiene ningún efecto en tiempo de compilación.
-warning | Cuando no se sigue este estilo, se muestra una advertencia del compilador en la **lista de errores**.
+Warning (Advertencia) | Cuando no se sigue este estilo, se muestra una advertencia del compilador en la **lista de errores**.
 error | Cuando no se sigue este estilo, se muestra un error del compilador en la **lista de errores**.
 
 > [!NOTE]
 > No tiene que volver a compilar el proyecto para ver las infracciones de reglas de nomenclatura. Aparecen mientras se modifica el código, ya sea en la **lista de errores** o como una sugerencia.
+
+## <a name="default-naming-styles"></a>Estilos de nomenclatura predeterminados
+
+Si no especifica ninguna regla de nomenclatura personalizada, Visual Studio usa los siguientes estilos predeterminados:
+
+- Para clases, estructuras, enumeraciones, propiedades y eventos con accesibilidad `public`, `private`, `internal`, `protected` o `protected_internal`, el estilo de nomenclatura predeterminado es Pascal Case.
+
+- Para interfaces con accesibilidad `public`, `private`, `internal`, `protected` o `protected_internal`, el estilo de nomenclatura predeterminado es Pascal Case con el prefijo necesario **l**.
 
 ## <a name="example"></a>Ejemplo
 
@@ -209,6 +217,8 @@ Si cierra y vuelve a abrir el archivo de código, en lugar de ver la sugerencia 
 
 ## <a name="see-also"></a>Vea también
 
+- [Convenciones de lenguaje](editorconfig-language-conventions.md)
+- [Convenciones de formato](editorconfig-formatting-conventions.md)
 - [Roslyn naming conventions](https://github.com/dotnet/roslyn/blob/master/.editorconfig#L63) (Convenciones de nomenclatura de Roslyn)
-- [Lenguaje .NET y convenciones de formato](../ide/editorconfig-code-style-settings-reference.md)
 - [Crear opciones del editor personalizadas y portátiles](../ide/create-portable-custom-editor-options.md)
+- [Configuración de la convención de codificación de .NET para EditorConfig](editorconfig-code-style-settings-reference.md)

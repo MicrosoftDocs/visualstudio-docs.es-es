@@ -1,5 +1,5 @@
 ---
-title: Recopilación de datos detallados de control de tiempo de una aplicación web ASP.NET mediante el método de instrumentación del generador de perfiles desde la línea de comandos | Microsoft Docs
+title: 'VSPerfCmd: obtención de datos de intervalos de la aplicación web de ASP.NET mediante la instrumentación'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 79e8ad7842070d13941ad921ccb25ba502209eb0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 87e7f5f49072326028405e153cffe94ce1ca63f2
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63405954"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67033058"
 ---
 # <a name="collect-detailed-timing-data-for-an-aspnet-web-application-using-the-profiler-instrumentation-method-from-the-command-line"></a>Recopilación de datos detallados de tiempo para una aplicación web ASP.NET mediante el método de instrumentación del generador de perfiles en la línea de comandos
 En esta sección se describen los procedimientos y las opciones para recopilar datos de rendimiento detallados de una aplicación web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] mediante la herramienta de línea de comandos **VSPerfCmd** y el método de instrumentación.

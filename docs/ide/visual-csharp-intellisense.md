@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ef4f8974f448ad9e2e81d4f1ba98aa02ed9da354
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0a875ea2690a2932a10ff3a16364dd9d362a7642
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62581971"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328845"
 ---
 # <a name="c-intellisense"></a>IntelliSense para C#
 
@@ -86,7 +86,7 @@ Cuando escriba [invalidar](/dotnet/csharp/language-reference/keywords/override) 
 
 ### <a name="ai-enhanced-intellisense"></a>IntelliSense mejorado para inteligencia artificial
 
-Puede instalar una [extensión de IntelliCode](/visualstudio/intellicode/intellicode-visual-studio) experimental para Visual Studio que proporciona listas de finalización de IntelliSense mejoradas para inteligencia artificial. Esta extensión predice la API correcta más posible para uso por parte del desarrollador, en lugar de simplemente presentar una lista alfabética de miembros. Usa el contexto de código actual y patrones para proporcionar esta lista dinámica.
+[Visual Studio IntelliCode](/visualstudio/intellicode/intellicode-visual-studio) proporciona listas de finalización de código de IntelliSense mejoradas para inteligencia artificial. IntelliCode predice la API probablemente más correcta para usar, en lugar de simplemente presentar una lista alfabética de miembros. Usa el contexto de código actual y patrones para proporcionar esta lista dinámica.
 
 ## <a name="automatic-code-generation"></a>Generación automática de código
 
@@ -124,7 +124,7 @@ Aparece un subrayado ondulado de color rojo debajo de cada identificador no defi
 
 - Haga clic en el identificador no definido. Aparece una bombilla de error **Acciones rápidas** debajo del identificador. Haga clic en la bombilla de error.
 
-- Haga clic en el identificador no definido y, después, presione **CTRL**+**.** (**CTRL** + punto).
+- Haga clic en el identificador no definido y, después, presione **CTRL**+ **.** (**CTRL** + punto).
 
 - Haga clic con el botón derecho en el identificador no definido y, después, haga clic en **Acciones rápidas y refactorizaciones**.
 
@@ -158,7 +158,7 @@ Si presiona **TAB**, IntelliSense completa la instrucción automáticamente y mu
 Si presiona **TAB**, IntelliSense crea el código auxiliar de un método con la firma correcta y coloca el cursor en el cuerpo del controlador de eventos.
 
 > [!NOTE]
-> Use el comando **Navegar hacia atrás** del menú **Vista** (**CTRL**+**-**) para volver a la instrucción de enlace de eventos.
+> Use el comando **Navegar hacia atrás** del menú **Vista** (**CTRL**+ **-** ) para volver a la instrucción de enlace de eventos.
 
 ## <a name="see-also"></a>Vea también
 

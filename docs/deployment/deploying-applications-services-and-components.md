@@ -1,5 +1,5 @@
 ---
-title: Paseo por las características de implementación
+title: Primer vistazo a la implementación
 description: Conozca las opciones para implementar aplicaciones desde Visual Studio.
 ms.custom: mvc
 ms.date: 01/29/2019
@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae70551fdb223856774f7e2afa0d85f915f27a0c
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: aca4869126a6756c15b2eb2c2be61613b1a58e74
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66261984"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032557"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>Primer vistazo a la implementación en Visual Studio
 
@@ -120,6 +120,16 @@ Puede habilitar un desarrollo y pruebas más sofisticados si implementa las apli
 ## <a name="continuous-deployment"></a>Implementación continua
 
 Puede usar Azure Pipelines para habilitar la implementación continua de la aplicación. Para obtener más información, vea [Azure Pipelines](/azure/devops/pipelines/index?view=vsts) e [Implementar en Azure](/azure/devops/deploy-azure/index?view=vsts).
+
+## <a name="deploy-a-sql-database"></a>Implementación de una base de datos SQL
+
+- [Cambiar la plataforma de destino y publicar un proyecto de base de datos [SQL Server Data Tools (SSDT)]](/sql/ssdt/how-to-change-target-platform-and-publish-a-database-project)
+
+- [Crear un proyecto de Analysis Services (SSAS)](/sql/analysis-services/multidimensional-tutorial/lesson-2-5-deploying-an-analysis-services-project)
+
+- [Implementar paquetes y proyectos de Integration Services (SSIS)](/sql/integration-services/packages/deploy-integration-services-ssis-projects-and-packages)
+
+- [Compilar e implementar una base de datos local](/sql/ssdt/how-to-build-and-deploy-to-a-local-database)
 
 ## <a name="deployment-for-other-app-types"></a>Implementación de otros tipos de aplicaciones
 

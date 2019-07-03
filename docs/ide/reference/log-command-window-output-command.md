@@ -13,14 +13,15 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24c72b0c5aeb510186728d66e51935c337547adf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6ab2dfea4c51ee33407088c208aea351732b8a4a
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946848"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043524"
 ---
-# <a name="log-command-window-output-command"></a>Registrar resultados de la ventana de comandos (Comando)
+# <a name="log-command-window-output-command"></a>Comando Registrar resultados de la ventana Comandos
+
 Copia en un archivo todas las entradas y salidas de la ventana **Comandos**.
 
 ## <a name="syntax"></a>Sintaxis
@@ -30,43 +31,43 @@ Tools.LogCommandWindowOutput [filename] [/on|/off] [/overwrite]
 ```
 
 ## <a name="arguments"></a>Argumentos
- `filename`
 
- Opcional. Nombre del archivo de registro. De forma predeterminada, el archivo se crea en la carpeta de perfil del usuario. Si ya existe el nombre de archivo, el registro se anexa al final del archivo existente. Si no se especifica ningún archivo, se usa el último archivo especificado. Si no existe ningún archivo anterior, se crea un archivo de registro predeterminado, denominado cmdline.log.
+`filename`\
+Opcional. Nombre del archivo de registro. De forma predeterminada, el archivo se crea en la carpeta de perfil del usuario. Si ya existe el nombre de archivo, el registro se anexa al final del archivo existente. Si no se especifica ningún archivo, se usa el último archivo especificado. Si no existe ningún archivo anterior, se crea un archivo de registro predeterminado, denominado cmdline.log.
 
 > [!TIP]
 > Para cambiar la ubicación en la que se guarda el archivo de registro, escriba la ruta de acceso completa del archivo, entre comillas si la ruta de acceso contiene algún espacio.
 
 ## <a name="switches"></a>Modificadores
- /on
 
- Opcional. Inicia el registro de la ventana **Comandos** en el archivo especificado y anexa el archivo con la nueva información.
+/on\
+Opcional. Inicia el registro de la ventana **Comandos** en el archivo especificado y anexa el archivo con la nueva información.
 
- /off
+/off\
+Opcional. Detiene el registro de la ventana **Comandos**.
 
- Opcional. Detiene el registro de la ventana **Comandos**.
-
- /overwrite
-
- Opcional. Si el archivo especificado en el argumento `filename` coincide con un archivo existente, se sobrescribe.
+/overwrite\
+Opcional. Si el archivo especificado en el argumento `filename` coincide con un archivo existente, se sobrescribe.
 
 ## <a name="remarks"></a>Comentarios
- Si no se especifica ningún archivo, se crea el archivo cmdline.log de forma predeterminada. De manera predeterminada, el alias de este comando es Log.
+
+Si no se especifica ningún archivo, se crea el archivo cmdline.log de forma predeterminada. De manera predeterminada, el alias de este comando es Log.
 
 ## <a name="examples"></a>Ejemplos
- Este ejemplo crea un archivo de registro, cmdlog, e inicia el registro de comandos.
+
+Este ejemplo crea un archivo de registro, cmdlog, e inicia el registro de comandos.
 
 ```cmd
 >Tools.LogCommandWindowOutput cmdlog
 ```
 
- Este ejemplo detiene el registro de comandos.
+Este ejemplo detiene el registro de comandos.
 
 ```cmd
 >Tools.LogCommandWindowOutput /off
 ```
 
- Este ejemplo reanuda el registro de comandos en el archivo de registro usado anteriormente.
+Este ejemplo reanuda el registro de comandos en el archivo de registro usado anteriormente.
 
 ```cmd
 >Tools.LogCommandWindowOutput /on
@@ -77,4 +78,4 @@ Tools.LogCommandWindowOutput [filename] [/on|/off] [/overwrite]
 - [Comandos de Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Ventana Comandos](../../ide/reference/command-window.md)
 - [Cuadro Buscar/Comando](../../ide/find-command-box.md)
-- [Visual Studio Command Aliases](../../ide/reference/visual-studio-command-aliases.md)
+- [Alias de comandos de Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
