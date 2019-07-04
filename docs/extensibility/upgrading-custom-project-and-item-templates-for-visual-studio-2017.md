@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 9302ae3119bceb466e3d681036753bd8237cbeae
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d375dfc4a53015f57546f7cbfcc8b940fa81bd0b
+ms.sourcegitcommit: 74c5360186731de07828764eb32ea1033a8c2275
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66316335"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67559756"
 ---
 # <a name="upgrade-custom-project-and-item-templates-for-visual-studio-2017"></a>Actualizar proyectos personalizados y plantillas de elemento para Visual Studio 2017
 
@@ -180,9 +180,9 @@ Se muestran los puntos de diferencia entre las versiones de Visual Studio 2017 d
 
 Algunas extensiones basadas en MSI implementación plantillas en las ubicaciones de plantillas comunes, como los directorios siguientes:
 
-- **\<Directorio de instalación de Visual Studio > \Common7\IDE\\< ProjectTemplates/ItemTemplates >**
+- **\<Directorio de instalación de Visual Studio > \Common7\IDE\\< ProjectTemplates/ItemTemplates\>**
 
-- **\<Directorio de instalación de Visual Studio > \common7\ide\extensions\\\< ExtensionName\>\\< proyecto/ItemTemplates >**
+- **\<Directorio de instalación de Visual Studio > \common7\ide\extensions\\\< ExtensionName\>\\< proyecto/ItemTemplates\>**
 
 Si la extensión lleva a cabo una implementación basada en MSI, deberá generar el manifiesto de plantilla manualmente y asegúrese de que se incluye en la instalación de la extensión. Comparar los ejemplos de vstman enumerados anteriormente y el [referencia de esquema de manifiesto de Visual Studio plantilla](../extensibility/visual-studio-template-manifest-schema-reference.md).
 
