@@ -1,44 +1,42 @@
 - name: Tutoriales de Visual Basic
+  href: index.yml
+- name: Información general
   items:
-    - name: Tutoriales de Visual Basic
-      href: index.yml
-    - name: Información general
-      items:
-        - name: Acerca de Visual Studio
-          href: visual-studio-ide.md
-        - name: Acerca del editor de código
-          href: tutorial-editor.md
-        - name: Acerca de los proyectos y las soluciones
-          href: tutorial-projects-solutions.md
-        - name: Más características de Visual Studio
-          href: ../../ide/advanced-feature-overview.md?toc=/visualstudio/get-started/visual-basic/toc.json&bc=/visualstudio/get-started/visual-basic/breadcrumb/toc.json
-    - name: Cree una aplicación
-      expanded: true
-      items:
-        - name: Crear una aplicación de consola
-          href: tutorial-console.md
-        - name: Creación de una aplicación UWP
-          href: /windows/uwp/get-started/create-a-hello-world-app-xaml-universal?toc=/visualstudio/get-started/visual-basic/toc.json&bc=/visualstudio/get-started/visual-basic/breadcrumb/toc.json
-        - name: Crear una aplicación WPF
-          href: tutorial-wpf.md
-        - name: Creación de una aplicación web
-          href: /aspnet/web-pages/overview/getting-started/introducing-razor-syntax-vb
-        - name: Crear una aplicación de Windows Forms
-          href: ../../ide/create-a-visual-basic-winform-in-visual-studio.md?toc=/visualstudio/get-started/visual-basic/toc.json&bc=/visualstudio/get-started/visual-basic/breadcrumb/toc.json
-    - name: Conocer Visual Studio
-      expanded: true
-      items:
-        - name: Abrir un proyecto desde un repositorio
-          href: ../tutorial-open-project-from-repo.md?toc=/visualstudio/get-started/visual-basic/toc.json&bc=/visualstudio/get-started/visual-basic/breadcrumb/toc.json
-        - name: Escribir y editar código
-          href: tutorial-editor.md
-        - name: Compilar y generar
-          href: ../../ide/compiling-and-building-in-visual-studio.md
-        - name: Depurar el código
-          href: ../visual-basic/tutorial-debugger.md
-        - name: Pruebas unitarias
-          href: ../../test/getting-started-with-unit-testing.md?toc=/visualstudio/get-started/visual-basic/toc.json&bc=/visualstudio/get-started/visual-basic/breadcrumb/toc.json
-        - name: Implementar el proyecto
-          href: ../../deployment/index.md
-        - name: Acceder a datos
-          href: ../../data-tools/create-a-sql-database-by-using-a-designer.md?toc=/visualstudio/get-started/visual-basic/toc.json&bc=/visualstudio/get-started/visual-basic/breadcrumb/toc.json
+    - name: Acerca de Visual Studio
+      href: visual-studio-ide.md
+    - name: Acerca del editor de código
+      href: tutorial-editor.md
+    - name: Acerca de los proyectos y las soluciones
+      href: tutorial-projects-solutions.md
+    - name: Más características de Visual Studio
+      href: ../../ide/advanced-feature-overview.md?toc=/visualstudio/get-started/visual-basic/toc.json&bc=/visualstudio/get-started/visual-basic/breadcrumb/toc.json
+- name: Cree una aplicación
+  expanded: true
+  items:
+    - name: Crear una aplicación de consola
+      href: tutorial-console.md
+    - name: Creación de una aplicación UWP
+      href: /windows/uwp/get-started/create-a-hello-world-app-xaml-universal?toc=/visualstudio/get-started/visual-basic/toc.json&bc=/visualstudio/get-started/visual-basic/breadcrumb/toc.json
+    - name: Crear una aplicación WPF
+      href: tutorial-wpf.md
+    - name: Creación de una aplicación web
+      href: /aspnet/web-pages/overview/getting-started/introducing-razor-syntax-vb
+    - name: Crear una aplicación de Windows Forms
+      href: ../../ide/create-a-visual-basic-winform-in-visual-studio.md?toc=/visualstudio/get-started/visual-basic/toc.json&bc=/visualstudio/get-started/visual-basic/breadcrumb/toc.json
+- name: Conocer Visual Studio
+  expanded: true
+  items:
+    - name: Abrir un proyecto desde un repositorio
+      href: ../tutorial-open-project-from-repo.md?toc=/visualstudio/get-started/visual-basic/toc.json&bc=/visualstudio/get-started/visual-basic/breadcrumb/toc.json
+    - name: Escribir y editar código
+      href: tutorial-editor.md
+    - name: Compilar y generar
+      href: ../../ide/compiling-and-building-in-visual-studio.md
+    - name: Depurar el código
+      href: ../visual-basic/tutorial-debugger.md
+    - name: Pruebas unitarias
+      href: ../../test/getting-started-with-unit-testing.md?toc=/visualstudio/get-started/visual-basic/toc.json&bc=/visualstudio/get-started/visual-basic/breadcrumb/toc.json
+    - name: Implementar el proyecto
+      href: ../../deployment/index.md
+    - name: Acceder a datos
+      href: ../../data-tools/create-a-sql-database-by-using-a-designer.md?toc=/visualstudio/get-started/visual-basic/toc.json&bc=/visualstudio/get-started/visual-basic/breadcrumb/toc.json
