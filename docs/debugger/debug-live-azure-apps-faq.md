@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 315b24d384a1e3576af6590923c0e546785918ae
-ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
+ms.openlocfilehash: 813f06f55b6ae8f03a8d5a8e452ca05c4fe2054c
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67255984"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586840"
 ---
 # <a name="frequently-asked-questions-for-snapshot-debugging-in-visual-studio"></a>Preguntas frecuentes sobre depuración de instantáneas en Visual Studio
 
@@ -70,92 +70,91 @@ Para AKS:
 
 Escalado de máquinas virtuales o máquinas virtuales conjuntos de quitar los grupos de KeyVaults y NAT de entrada de extensión, certificados, depurador remoto como sigue:
 
-1. Quitar la extensión del depurador remoto  
+1. Quitar la extensión del depurador remoto
 
-   Hay varias formas de deshabilitar al depurador remoto para máquinas virtuales y conjuntos de escalado de máquinas virtuales:  
+   Hay varias formas de deshabilitar al depurador remoto para máquinas virtuales y conjuntos de escalado de máquinas virtuales:
 
-      - Deshabilitar al depurador remoto a través del explorador en la nube  
+      - Deshabilitar al depurador remoto a través del explorador en la nube
 
-         - Cloud Explorer > recurso de máquina virtual > deshabilitar la depuración (deshabilitar la depuración no existe para el escalado de máquinas virtuales que se establezca en Cloud Explorer).  
+         - Cloud Explorer > recurso de máquina virtual > deshabilitar la depuración (deshabilitar la depuración no existe para el escalado de máquinas virtuales que se establezca en Cloud Explorer).
 
+      - Deshabilitar al depurador remoto con las secuencias de comandos y Cmdlets de PowerShell
 
-      - Deshabilitar al depurador remoto con las secuencias de comandos y Cmdlets de PowerShell  
+         Para la máquina virtual:
 
-         Para la máquina virtual:  
-
+         ```powershell
+         Remove-AzVMExtension -ResourceGroupName $rgName -VMName $vmName -Name Microsoft.VisualStudio.Azure.RemoteDebug.VSRemoteDebugger
          ```
-         Remove-AzVMExtension -ResourceGroupName $rgName -VMName $vmName -Name Microsoft.VisualStudio.Azure.RemoteDebug.VSRemoteDebugger  
-         ```
 
-         Para conjuntos de escalado de máquinas virtuales:  
-         ```
-         $vmss = Get-AzVmss -ResourceGroupName $rgName -VMScaleSetName $vmssName  
-         $extension = $vmss.VirtualMachineProfile.ExtensionProfile.Extensions | Where {$_.Name.StartsWith('VsDebuggerService')} | Select -ExpandProperty Name  
-         Remove-AzVmssExtension -VirtualMachineScaleSet $vmss -Name $extension  
+         Para conjuntos de escalado de máquinas virtuales:
+
+         ```powershell
+         $vmss = Get-AzVmss -ResourceGroupName $rgName -VMScaleSetName $vmssName
+         $extension = $vmss.VirtualMachineProfile.ExtensionProfile.Extensions | Where {$_.Name.StartsWith('VsDebuggerService')} | Select -ExpandProperty Name
+         Remove-AzVmssExtension -VirtualMachineScaleSet $vmss -Name $extension
          ```
 
       - Deshabilitar al depurador remoto a través del portal de Azure
-         - Azure portal > su máquina virtual/virtual machine scale sets con hoja de recursos > extensiones  
-         - Desinstalar extensión Microsoft.VisualStudio.Azure.RemoteDebug.VSRemoteDebugger  
-
+         - Azure portal > su máquina virtual/virtual machine scale sets con hoja de recursos > extensiones
+         - Desinstalar extensión Microsoft.VisualStudio.Azure.RemoteDebug.VSRemoteDebugger
 
          > [!NOTE]
          > Conjuntos de escalado de máquina virtual: el portal no permite quitar los puertos DebuggerListener. Deberá usar Azure PowerShell. Para obtener información más detallada, vea a continuación.
-  
+
 2. Quite los certificados y Azure Key Vault
 
-   Al instalar la extensión del depurador remoto para máquina virtual o conjuntos de escalado de máquinas virtuales, se crean los certificados de cliente y servidor para autenticar al cliente de VS con la máquina Virtual de Azure/recursos de conjuntos de escalado de máquina virtual.  
+   Al instalar la extensión del depurador remoto para máquina virtual o conjuntos de escalado de máquinas virtuales, se crean los certificados de cliente y servidor para autenticar al cliente de VS con la máquina Virtual de Azure/recursos de conjuntos de escalado de máquina virtual.
 
-   - El certificado de cliente  
+   - El certificado de cliente
 
-      Este certificado es un certificado autofirmado ubicado en Cert: / CurrentUser/mi /  
+      Este certificado es un certificado autofirmado ubicado en Cert: / CurrentUser/mi /
 
       ```
-      Thumbprint                                Subject  
-      ----------                                -------  
+      Thumbprint                                Subject
+      ----------                                -------
 
-      1234123412341234123412341234123412341234  CN=ResourceName  
+      1234123412341234123412341234123412341234  CN=ResourceName
       ```
 
       Es una manera de eliminar este certificado desde el equipo a través de PowerShell
 
-      ```
-      $ResourceName = 'ResourceName' # from above  
-      Get-ChildItem -Path Cert:\CurrentUser\My | Where-Object {$_.Subject -match $ResourceName} | Remove-Item  
+      ```powershell
+      $ResourceName = 'ResourceName' # from above
+      Get-ChildItem -Path Cert:\CurrentUser\My | Where-Object {$_.Subject -match $ResourceName} | Remove-Item
       ```
 
    - El certificado de servidor
-      - La huella digital del certificado de servidor correspondiente se implementa como un secreto a Azure Key Vault. VS intentará encontrar o crear un almacén de claves con el prefijo MSVSAZ * en la región que corresponde a la máquina virtual o recurso de conjuntos de escalado de máquina virtual. Conjuntos de escalado de máquina virtual o máquina virtual todos los recursos implementados en esa región, por tanto, compartirán el mismo almacén de claves.  
-      - Para eliminar el secreto de huella digital del certificado de servidor, vaya a Azure portal y busque el almacén de claves MSVSAZ * en la misma región que hospeda el recurso. Eliminación del secreto que debe etiquetarse. `remotedebugcert<<ResourceName>>`  
-      - También deberá eliminar el secreto de servidor desde el recurso a través de PowerShell.  
+      - La huella digital del certificado de servidor correspondiente se implementa como un secreto a Azure Key Vault. VS intentará encontrar o crear un almacén de claves con el prefijo MSVSAZ * en la región que corresponde a la máquina virtual o recurso de conjuntos de escalado de máquina virtual. Conjuntos de escalado de máquina virtual o máquina virtual todos los recursos implementados en esa región, por tanto, compartirán el mismo almacén de claves.
+      - Para eliminar el secreto de huella digital del certificado de servidor, vaya a Azure portal y busque el almacén de claves MSVSAZ * en la misma región que hospeda el recurso. Eliminación del secreto que debe etiquetarse. `remotedebugcert<<ResourceName>>`
+      - También deberá eliminar el secreto de servidor desde el recurso a través de PowerShell.
 
-      Las máquinas virtuales:  
+      Las máquinas virtuales:
 
+      ```powershell
+      $vm.OSProfile.Secrets[0].VaultCertificates.Clear()
+      Update-AzVM -ResourceGroupName $rgName -VM $vm
       ```
-      $vm.OSProfile.Secrets[0].VaultCertificates.Clear()  
-      Update-AzVM -ResourceGroupName $rgName -VM $vm  
-      ```
-                        
-      Para conjuntos de escalado de máquinas virtuales:  
 
-      ```
-      $vmss.VirtualMachineProfile.OsProfile.Secrets[0].VaultCertificates.Clear()  
-      Update-AzVmss -ResourceGroupName $rgName -VMScaleSetName $vmssName -VirtualMachineScaleSet $vmss  
-      ```
-                        
-3. Quitar todos los grupos de NAT de entrada DebuggerListener (sólo al conjunto de escalado de máquinas virtuales)  
+      Para conjuntos de escalado de máquinas virtuales:
 
-   El depurador remoto presenta DebuggerListener en enlazados a los grupos NAT que se aplican al equilibrador de carga de su conjunto de escalado.  
+      ```powershell
+      $vmss.VirtualMachineProfile.OsProfile.Secrets[0].VaultCertificates.Clear()
+      Update-AzVmss -ResourceGroupName $rgName -VMScaleSetName $vmssName -VirtualMachineScaleSet $vmss
+      ```
 
-   ```
-   $inboundNatPools = $vmss.VirtualMachineProfile.NetworkProfile.NetworkInterfaceConfigurations.IpConfigurations.LoadBalancerInboundNatPools  
-   $inboundNatPools.RemoveAll({ param($pool) $pool.Id.Contains('inboundNatPools/DebuggerListenerNatPool-') }) | Out-Null  
-                
-   if ($LoadBalancerName)  
+3. Quitar todos los grupos de NAT de entrada DebuggerListener (sólo al conjunto de escalado de máquinas virtuales)
+
+   El depurador remoto presenta DebuggerListener en enlazados a los grupos NAT que se aplican al equilibrador de carga de su conjunto de escalado.
+
+   ```powershell
+   $inboundNatPools = $vmss.VirtualMachineProfile.NetworkProfile.NetworkInterfaceConfigurations.IpConfigurations.LoadBalancerInboundNatPools
+   $inboundNatPools.RemoveAll({ param($pool) $pool.Id.Contains('inboundNatPools/DebuggerListenerNatPool-') }) | Out-Null
+
+   if ($LoadBalancerName)
    {
-      $lb = Get-AzLoadBalancer -ResourceGroupName $ResourceGroup -name $LoadBalancerName  
-      $lb.FrontendIpConfigurations[0].InboundNatPools.RemoveAll({ param($pool) $pool.Id.Contains('inboundNatPools/DebuggerListenerNatPool-') }) | Out-Null  
-      Set-AzLoadBalancer -LoadBalancer $lb  
+      $lb = Get-AzLoadBalancer -ResourceGroupName $ResourceGroup -name $LoadBalancerName
+      $lb.FrontendIpConfigurations[0].InboundNatPools.RemoveAll({ param($pool) $pool.Id.Contains('inboundNatPools/DebuggerListenerNatPool-') }) | Out-Null
+      Set-AzLoadBalancer -LoadBalancer $lb
    }
    ```
 
@@ -164,12 +163,12 @@ Escalado de máquinas virtuales o máquinas virtuales conjuntos de quitar los gr
 Para App Service:
 1. Deshabilitar el depurador de instantáneas a través del portal de Azure para App Service.
 2. Azure portal > la hoja de recursos de servicio de aplicación > *configuración de la aplicación*
-3. Elimine las siguientes opciones de la aplicación en Azure portal y guardar los cambios. 
-    - INSTRUMENTATIONENGINE_EXTENSION_VERSION
-    - SNAPSHOTDEBUGGER_EXTENSION_VERSION
+3. Elimine las siguientes opciones de la aplicación en Azure portal y guardar los cambios.
+   - INSTRUMENTATIONENGINE_EXTENSION_VERSION
+   - SNAPSHOTDEBUGGER_EXTENSION_VERSION
 
-    > [!WARNING]
-    > Los cambios realizados en la configuración de la aplicación iniciarán un reinicio de la aplicación. Para obtener más información acerca de la configuración de la aplicación, consulte [configurar una aplicación de App Service en Azure portal](/azure/app-service/web-sites-configure).
+   > [!WARNING]
+   > Los cambios realizados en la configuración de la aplicación iniciarán un reinicio de la aplicación. Para obtener más información acerca de la configuración de la aplicación, consulte [configurar una aplicación de App Service en Azure portal](/azure/app-service/web-sites-configure).
 
 Para AKS:
 1. Actualizar el Dockerfile para quitar las secciones correspondientes a la [Visual Studio Snapshot Debugger en imágenes de Docker](https://github.com/Microsoft/vssnapshotdebugger-docker).
@@ -184,16 +183,18 @@ Hay varias formas de deshabilitar al depurador de instantáneas:
 
 - Cmdlets de PowerShell desde [Az PowerShell](https://docs.microsoft.com/powershell/azure/overview)
 
-    Máquina virtual:
-    ```
-        Remove-AzVMExtension -ResourceGroupName $rgName -VMName $vmName -Name Microsoft.Insights.VMDiagnosticsSettings 
-    ```
-    
-    Conjuntos de escalado de máquinas virtuales:
-    ```
-        $vmss = Get-AzVmss -ResourceGroupName $rgName -VMScaleSetName $vmssName
-        Remove-AzVmssExtension -VirtualMachineScaleSet $vmss -Name Microsoft.Insights.VMDiagnosticsSettings
-    ```
+   Máquina virtual:
+
+   ```powershell
+      Remove-AzVMExtension -ResourceGroupName $rgName -VMName $vmName -Name Microsoft.Insights.VMDiagnosticsSettings
+   ```
+
+   Conjuntos de escalado de máquinas virtuales:
+
+   ```powershell
+      $vmss = Get-AzVmss -ResourceGroupName $rgName -VMScaleSetName $vmssName
+      Remove-AzVmssExtension -VirtualMachineScaleSet $vmss -Name Microsoft.Insights.VMDiagnosticsSettings
+   ```
 
 ## <a name="see-also"></a>Vea también
 
