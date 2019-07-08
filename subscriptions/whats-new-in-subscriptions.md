@@ -2,64 +2,45 @@
 title: Novedades de las suscripciones de Visual Studio
 description: Obtenga información sobre las características nuevas y actualizadas que puede usar para administrar las suscripciones de Visual Studio.
 ms.custom: ''
-ms.date: 06/25/2018
+ms.date: 06/27/2019
 searchscope: VS Subscription
 ms.topic: conceptual
-author: TerryGLee
-ms.author: tglee
-manager: jillfra
-ms.openlocfilehash: 647009d7e01cc821bdf4fa6a573e6caa73cb7794
-ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
+author: evanwindom
+ms.author: lank
+manager: lank
+ms.openlocfilehash: 6984d4aab23817707280af6bce47deee8d79adf7
+ms.sourcegitcommit: 0cd282a7584b9bfd4df7882f8fdf3ad8a270e219
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67259490"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "67465120"
 ---
 # <a name="what39s-new-in-visual-studio-subscriptions"></a>Novedades de las suscripciones de Visual Studio
 
-Actualizamos el paquete de las ventajas de la suscripción a menudo para que le resulte más útil. Siga leyendo para obtener información sobre las características más recientes, ordenadas de forma trimestral.
+Actualizamos el paquete de las ventajas de la suscripción a menudo para que le resulte más útil. También haremos mejoras en nuestros portales de administración de suscriptores y suscripciones para brindarle la mejor experiencia posible.  Siga leyendo para obtener información sobre las características y actualizaciones más recientes, ordenadas de forma trimestral.
 
-## <a name="2018-q2-april-june"></a>T2 de 2018 (de abril a junio)
+## <a name="2019-q1-january-march"></a>T1 de 2019 (de enero a marzo)
 
-Esta es una pequeña recapitulación de las novedades del segundo trimestre.
+### <a name="maximum-usage-added-to-subscriptions-administration-portalhttpsmanagevisualstuidocom"></a>Uso máximo agregado al [portal de administración de suscripciones](https://manage.visualstuido.com)
+Esta nueva característica del portal de administración de suscripciones de Visual Studio permite realizar un seguimiento de cuántas suscripciones ha comprado y asignado, así como identificar el número máximo de suscripciones de cada nivel que haya asignado, tanto durante el último año como a lo largo de la duración de sus contratos. Esto puede ayudarle a entender el uso de la suscripción actual y planear futuras compras. 
 
-### <a name="cloud-administrators"></a>Administradores de la nube
+  > [!div class="mx-imgBorder"]
+  > ![Menú Uso máximo](_img/maximum-usage/maximum-usage-menu.png)
 
-Hemos agregado una nueva funcionalidad para que a los administradores de la nube les resulte más fácil administrar las suscripciones de nube:
+También puede ver un historial de ejecución de las asignaciones, incluidas las compras y asignaciones.   
 
-* [**Asignaciones en masa**](/visualstudio/subscriptions/assign-license#bulk-assignments): agregue y cargue varios suscriptores en masa.
+Para obtener más información, consulte nuestro artículo sobre [uso máximo](maximum-usage.md). 
 
-  ![Agregue varios usuarios con el botón Agregar en masa](media/bulk-add-multiple-subscribers.png)
+## <a name="2019-q2-april-june"></a>T2 de 2019 (de abril a junio)
 
-* [**Exportar**](/visualstudio/subscriptions/exporting-subscriptions): exporte una lista de los usuarios y los detalles de sus asignaciones. Una lista como esta puede resultar útil cuando quiera realizar un seguimiento de las asignaciones y las fechas de caducidad.
+### <a name="visual-studio-with-github-enterprise-subscriptions"></a>Suscripciones de Visual Studio con GitHub Enterprise
+En la conferencia //build de mayo, Microsoft anunció que los clientes con contrato Enterprise ahora pueden comprar suscripciones de Visual Studio que incluyen GitHub Enterprise.  Es una manera fácil de adquirir suscripciones de Visual Studio y GitHub Enterprise por un único precio más bajo.  
 
-   ![Exporte una lista de suscriptores a Excel con el botón Exportar](media/export-subscriber-list-to-csv.png)
+GitHub Enterprise está disponible con suscripciones de Visual Studio Enterprise y Professional de adquiridas a través de contratos Enterprise. También hay una oferta de mejora que le permite agregar GitHub Enterprise incluso si su contrato de Enterprise no tiene que renovarse.
 
-* [**Edición en masa**](/visualstudio/subscriptions/edit-license#editing-multiple-subscribers-using-bulk-edit): edite la información de suscripción de varios suscriptores en masa.
+Para obtener más información sobre las ventajas, las opciones y los precios, visite https://visualstudio.microsoft.com/subscriptions/visual-studio-github. 
 
-  ![Edite varios usuarios con el botón Edición masiva](media/bulk-edit-multiple-subscribers.png)
-
-* Explore los nuevos campos que están disponibles en la experiencia [**Agregar suscripción**](assign-license.md):
-
-  * **Correo electrónico de notificación**: si su organización no usa Azure AD y quiere usar un correo para notificaciones que sea distinto del correo de inicio de sesión, puede agregarlo.
-
-    ![Adición de una nueva dirección de correo electrónico de notificación](media/add-new-subscriber-notification-email.png)
-
-  * **Preferencias de comunicación**: elija el idioma que quiera usar para enviar correos de asignación.
-
-    ![Cambio del idioma que se va a usar cuando se envíen correos electrónicos de notificación](media/change-subscriber-communication-preference.png)
-
-  * **Agregar referencia**: agregue notas de referencia para las suscripciones que administre.
-
-    ![Adición de notas de referencia propias a cada suscripción](media/add-subscriber-reference-notes.png)
-
-* [**Reenviar correo electrónico de asignación**](resend-assignment-email.md): envíe un correo de notificación de nuevo a cualquier persona de la lista de suscriptores, tantas veces como quiera.
-
-  ![Reenvío del correo electrónico de activación a cualquier usuario o a varios usuarios siempre que se quiera](media/resend-subscriber-activation-emails.png)
-
-* [**Filtro**](search-license.md): organice y filtre los datos de suscriptor según se adapten mejor a sus necesidades.
-
-  ![Filtre los datos de suscriptor, basándose en los campos disponibles](media/filter-subscriber-data.png)
+Si su organización ya tiene Visual Studio con suscripciones a GitHub Enterprise, puede obtener más información sobre la [administración de Visual Studio con suscripciones a GitHub Enterprise ](assign-github.md) en nuestra documentación.  
 
 Eso es todo por ahora.
 
