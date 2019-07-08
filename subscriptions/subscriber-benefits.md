@@ -2,23 +2,24 @@
 title: 'Suscripciones de Visual Studio: ventajas para el suscriptor'
 author: evanwindom
 ms.author: jaunger
-manager: evelynp
-ms.date: 02/12/2018
+manager: lank
+ms.date: 06/28/2019
 ms.topic: conceptual
 description: Obtenga información sobre las ventajas incluidas en su suscripción de Visual Studio
 searchscope: VS Subscription
-ms.openlocfilehash: c7616bc468aad5b4753fb3a05652f976bae6299b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e076ad536849a3ef0c915cd3222d80c68eaa205b
+ms.sourcegitcommit: d2b234e0a4a875c3cba09321cdf246842670d872
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62427798"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67493744"
 ---
 # <a name="benefits-included-in-your-visual-studio-subscription"></a>Ventajas incluidas en su suscripción de Visual Studio
 
-Las suscripciones de Visual Studio ofrecen el conjunto de recursos más completo para que pueda crear, implementar y administrar aplicaciones importantes en sus plataformas y dispositivos preferidos, como Windows, iOS, Android y Linux.  Las ventajas específicas varían según el tipo de suscripción que tenga.  Para proporcionar el máximo valor para los suscriptores, las ventajas proporcionadas cambian periódicamente a medida que realizamos ajustes para centrarnos en las tecnologías más recientes y útiles, los materiales de aprendizaje y los beneficios disponibles para los asociados.
+Las suscripciones de Visual Studio (conocidas anteriormente como suscripciones MSDN) ofrecen el conjunto de recursos más completo para que pueda crear, implementar y administrar aplicaciones importantes en sus plataformas y dispositivos preferidos, como Windows, iOS, Android y Linux.  Las ventajas específicas varían según el tipo de suscripción que tenga.  Para proporcionar el máximo valor para los suscriptores, las ventajas proporcionadas cambian periódicamente a medida que realizamos ajustes para centrarnos en las tecnologías más recientes y útiles, los materiales de aprendizaje y los beneficios disponibles para los asociados.
 
-Las ventajas se agrupan en tres categorías:
+
+Las ventajas se agrupan en tres categorías en el [portal de suscriptores](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs:).
 
 ## <a name="tools"></a>Herramientas
 La categoría Herramientas proporciona acceso a una amplia variedad de ventajas, incluidas las ventajas más destacadas, como el [IDE de Visual Studio](vs-ide-benefit.md), [Azure DevOps Services](vs-azure-devops.md) y [Azure](vs-azure.md).  Dependiendo del nivel de suscripción, también verá las cuentas de desarrollador de Windows y Office 365, Visual Studio App Center y las ventajas de asociados como WhiteSource Bolt y ModernRequirements.
@@ -30,7 +31,7 @@ Para ayudarle a mejorar de forma continua sus habilidades y a mantenerse al día
 - Microsoft Azure para desarrolladores de .NET y otro tipo de excelente contenido de Pluralsight
 - Ciencia de datos para desarrolladores de DataCamp
 - Diseño de soluciones de base de datos para SQL Server de Microsoft Virtual Academy
-- LinkedIn Learning permite el acceso a personas, información y conocimientos que necesita para sobresalir.
+- LinkedIn Learning permite el acceso a personas, información y conocimientos que necesita para sobresalir.
 
 ## <a name="support"></a>Soporte técnico
 Como suscriptor de Visual Studio, también tendrá acceso a diversos tipos de soporte técnico en caso de que tenga alguna pregunta o necesite asistencia técnica.

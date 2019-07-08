@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Consiga Visual Studio Professional o Visual Studio Enterprise mes a mes o de forma anual sin contrato a largo plazo.
 searchscope: VS Subscription
-ms.openlocfilehash: 1b704b6180937d3a1b937b702fad4a2e564d93c6
-ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
+ms.openlocfilehash: de95cd0d1cc49006e451bf00c34757ab7daa5c0b
+ms.sourcegitcommit: 0cd282a7584b9bfd4df7882f8fdf3ad8a270e219
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66177553"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "67465126"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Adquirir suscripciones de nube de Visual Studio Professional y Visual Studio Enterprise
 
@@ -23,12 +23,12 @@ Puede adquirir [suscripciones](https://visualstudio.microsoft.com/subscriptions/
 > [!NOTE]
 > Microsoft ya no ofrece suscripciones anuales ni de Visual Studio Professional ni de Visual Studio Enterprise en las suscripciones de nube. Esto no supone cambio alguno en la experiencia actual de los clientes y ni en su capacidad para renovar, aumentar, reducir o cancelar las suscripciones. Conviene que los clientes nuevos vayan a [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) para explorar las diferentes opciones de compra de Visual Studio. Sigue siendo posible adquirir nuevas suscripciones de nube mensuales.
 
-## <a name="before-you-start"></a>Antes de empezar
+## <a name="before-you-start"></a>Antes de comenzar
 
 * Para facturar las compras que realice, necesita una [suscripción de Azure](https://azure.microsoft.com/pricing/purchase-options/). Puede [registrarse](https://portal.azure.com) antes de la primera compra o durante la primera compra en Visual Studio Marketplace.
 
 ## <a name="who-can-buy-visual-studio-cloud-subscriptions"></a>¿Quién puede comprar suscripciones a la nube de Visual Studio?
-Cualquier persona con [acceso de propietario y de colaborador](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fvsts%2Forganizations%2Fbilling%2Fadd-backup-billing-managers%3Fview%3Dvsts%2520%2520sa&data=02%7C01%7C%7Cb9e717e8abff47b0cd7e08d618edd860%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636723807145220358&sdata=aIaamEXHhx94KCYVY%2FFibqFzNBEqKPntpql867xAMgU%3D&reserved=0) a la suscripción de Azure puede comprar suscripciones de nube.
+Cualquier persona con acceso de [propietario](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner), [administrador de servicio](https://docs.microsoft.com/azure/billing/billing-add-change-azure-subscription-administrator#change-the-service-administrator-for-an-azure-subscription) o [coadministrador](https://docs.microsoft.com/azure/billing/billing-add-change-azure-subscription-administrator#add-or-change-co-administrator) a la suscripción de Azure puede comprar suscripciones a la nube.
 
 ## <a name="how-to-buy-cloud-subscriptions"></a>Cómo adquirir suscripciones de nube
 
@@ -94,7 +94,7 @@ R:  Recibirá derechos de licencia perpetuos del IDE de Visual Studio que se sum
 R:  Este cambio no afectará a los suscriptores existentes.
 
 #### <a name="q--do-i-need-to-do-anything-as-a-result-of-these-changes"></a>P:  ¿Tengo que hacer algo como consecuencia de estos cambios?
-R:  No.  Las suscripciones seguirán estando en vigor y podrá seguir administrándolas como lo hace actualmente.
+R:   No.  Las suscripciones seguirán estando en vigor y podrá seguir administrándolas como lo hace actualmente.
 
 #### <a name="q-what-if-i-want-to-increase-the-number-of-subscriptions-for-my-customers"></a>P: ¿Qué ocurre si quiero aumentar el número de suscripciones de mis clientes?
 
