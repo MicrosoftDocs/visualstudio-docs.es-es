@@ -20,15 +20,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 960ecd2680585602b2c026b00b36bf7d93b8021d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 05a74c77d4b2e4e75379adec8738ab92270596e3
+ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62900236"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67624523"
 ---
 # <a name="create-bootstrapper-packages"></a>Crear paquetes de programa previo
-El programa de instalación es un instalador genérico que se puede configurar para detectar e instalar componentes redistribuibles, como archivos de Windows Installer (*.msi*) y programas ejecutables. El instalador también se conoce como programa previo. Se programa mediante un conjunto de manifiestos XML que especifican los metadatos que administrarán la instalación del componente.  Cada componente redistribuible o requisito previo, que aparece en el **requisitos previos** cuadro de diálogo de ClickOnce es un paquete de programa previo. Un paquete de programa previo es un grupo de directorios y archivos que contienen archivos de manifiesto que describen cómo se debe instalar el requisito previo.
+El programa de instalación es un instalador genérico que se puede configurar para detectar e instalar componentes redistribuibles, como archivos de Windows Installer ( *.msi*) y programas ejecutables. El instalador también se conoce como programa previo. Se programa mediante un conjunto de manifiestos XML que especifican los metadatos que administrarán la instalación del componente.  Cada componente redistribuible o requisito previo, que aparece en el **requisitos previos** cuadro de diálogo de ClickOnce es un paquete de programa previo. Un paquete de programa previo es un grupo de directorios y archivos que contienen archivos de manifiesto que describen cómo se debe instalar el requisito previo.
 
 El programa previo detecta primero si los requisitos previos están ya instalados. Si no lo están, el programa previo muestra el contrato de licencia. Después de que el usuario acepta los contratos de licencia, comienza la instalación de los requisitos previos. Si se detectan todos los requisitos previos, el programa previo inicia el instalador de la aplicación.
 
@@ -43,36 +43,44 @@ Para crear un paquete de arranque, se debe crear un manifiesto de producto y, pa
 
 Una vez creados estos archivos, coloque el archivo del manifiesto del producto en una carpeta con el nombre del programa previo personalizado. El archivo del manifiesto del paquete va en una carpeta con el nombre de la configuración regional. Por ejemplo, si el archivo del manifiesto del paquete es para la redistribución en inglés, coloque el archivo en una carpeta llamada en. Repita este proceso para cada configuración regional, como ja para japonés y de para alemán. El paquete del programa previo personalizado final podría tener la siguiente estructura de carpetas.
 
-    ```xml
-    CustomBootstrapperPackage
-      product.xml
-      CustomBootstrapper.msi
-      de
-        eula.rtf
-        package.xml
-      en
-        eula.rtf
-        package.xml
-      ja
-        eula.rtf
-        package.xml
-    ```
+```
+CustomBootstrapperPackage
+  product.xml
+  CustomBootstrapper.msi
+  de
+    eula.rtf
+    package.xml
+  en
+    eula.rtf
+    package.xml
+  ja
+    eula.rtf
+    package.xml
+```
 
 A continuación, copie los archivos redistribuibles en la ubicación de carpeta de programa previo. Para obtener más información, vea [Cómo: Crear un paquete de programa previo localizado](../deployment/how-to-create-a-localized-bootstrapper-package.md).
 
-    *\Program Files\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages*
+```
+*\Program Files\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages*
+```
 
 o
 
-    *\Program Files (x86)\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages*
+```
+*\Program Files (x86)\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages*
+```
 
 También puede determinar la ubicación de la carpeta del programa previo con el valor de **Ruta de acceso** en la siguiente clave del Registro:
 
-    *HKLM\Software\Microsoft\GenericBootstrapper\11.0*
+```
+*HKLM\Software\Microsoft\GenericBootstrapper\11.0*
+```
 
 En los sistemas de 64 bits, use la siguiente clave del Registro:
 
-    *HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0*
+```
+*HKLM\Software\Wow6432Node\Microsoft\GenericBootstrapper\11.0*
+```
 
 Cada componente redistribuible aparece en su propia subcarpeta, en el directorio de los paquetes. El producto en el manifiesto y redistribuible archivos deben colocarse en esta subcarpeta. Las versiones localizadas de los manifiestos de paquete y el componente deben colocarse en subcarpetas con el nombre de referencia cultural.
 

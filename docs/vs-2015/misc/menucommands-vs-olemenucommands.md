@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 553d5e07-3e19-4aba-b490-6c7dd05fd82e
 caps.latest.revision: 46
 manager: jillfra
-ms.openlocfilehash: b6a12d683d3a2cb6b8d1c5ea5d7ca790de94adc6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 42c471ca924bfded62db32a956a26c07240459eb
+ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63000955"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67624451"
 ---
 # <a name="menucommands-vs-olemenucommands"></a>MenuCommands frente a OleMenuCommands
-Puede crear comandos de menú mediante la derivación de los objetos <xref:System.ComponentModel.Design.MenuCommand> o <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> e implementando los controladores de eventos apropiados. En la mayoría de los casos puede usar <xref:System.ComponentModel.Design.MenuCommand>, como hace la plantilla de proyecto de VSPackage, pero en ocasiones puede que deba usar <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>.  
+Puede crear comandos de menú mediante la derivación desde <xref:System.ComponentModel.Design.MenuCommand> o desde <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> objeto y la implementación de los controladores de eventos adecuado. En la mayoría de los casos puede usar <xref:System.ComponentModel.Design.MenuCommand>, como hace la plantilla de proyecto de VSPackage, pero en ocasiones puede que deba usar <xref:Microsoft.VisualStudio.Shell.OleMenuCommand>.  
   
  Los comandos que un VSPackage hace que estén disponibles para el IDE deben ser visibles y estar habilitados para que un usuario pueda usarlos. Cuando los comandos se crean en un archivo .vsct usando la plantilla de proyecto del paquete de Visual Studio, son visibles y están habilitados de forma predeterminada. La definición de algunos marcadores de comandos, como `DynamicItemStart`, puede cambiar el comportamiento predeterminado. La visibilidad, el estado habilitado y otras propiedades de un comando también pueden cambiarse en el código en tiempo de ejecución mediante el acceso al objeto <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> asociado con el comando.  
   
@@ -115,7 +115,7 @@ Puede crear comandos de menú mediante la derivación de los objetos <xref:Syste
    </CommandPlacements>
    ```
       
-        Creating multiple command placements that have the same GUID:ID and have different parents causes a menu to appear in multiple locations. For more information, see [CommandPlacements](../extensibility/commandplacements-element.md) element.  
+      La creación de varias ubicaciones de comando que tienen los mismos GUID:ID y tienen diferentes objetos primarios hace que un menú aparezca en varias ubicaciones. Para obtener más información, consulte el elemento [CommandPlacements](../extensibility/commandplacements-element.md) .  
   
     Para obtener más información acerca de los grupos de comandos y la relación jerárquica, consulte [creación de grupos reutilizables de botones](../extensibility/creating-reusable-groups-of-buttons.md).  
   
