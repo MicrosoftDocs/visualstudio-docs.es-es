@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f0b4069bf1b74c15f9fcf7cdb7e488247b8548e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5e443cf23b8726161a4252e6cef3b77f5d3c37bb
+ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62808507"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67624194"
 ---
 # <a name="walkthrough-use-xml-editor-features"></a>Tutorial: Uso de características del editor XML
 
@@ -30,7 +30,7 @@ En este tutorial se indican los pasos para crear un nuevo documento XML. El tuto
 
      Se abre un nuevo archivo en el editor. El archivo contiene una declaración XML predeterminada, `<?xml version="1.0" encoding="utf-8">`.
 
-3. En la ventana Propiedades del documento, haga clic en el botón Examinar (**...** ) en el **esquemas** campo.
+3. En la ventana Propiedades del documento, haga clic en el botón Examinar ( **...** ) en el **esquemas** campo.
 
      El **esquemas XSD** se muestra el cuadro de diálogo.
 
@@ -58,7 +58,7 @@ En este tutorial se indican los pasos para crear un nuevo documento XML. El tuto
 
     - **empleado** para agregar el elemento raíz.
 
-2. Seleccione **<!--** para agregar un nodo de comentario y presione **ENTRAR**.
+2. Seleccione  **&lt;!--** para agregar un nodo de comentario y presione **ENTRAR**.
 
      El editor inserta una etiqueta de cierre de comentario y coloca el cursor entre las etiquetas de comentario de apertura y de cierre.
 
@@ -70,7 +70,7 @@ En este tutorial se indican los pasos para crear un nuevo documento XML. El tuto
 
 5. Escriba `>` para cerrar la etiqueta.
 
-6. El editor agrega la etiqueta de cierre. Ésta se agrega con un subrayado ondulado que indica un error de validación. El **información sobre herramientas** muestra el mensaje: **El elemento 'empleado' tiene contenido incompleto. Se esperaba 'ID'**.
+6. El editor agrega la etiqueta de cierre. Ésta se agrega con un subrayado ondulado que indica un error de validación. El **información sobre herramientas** muestra el mensaje: **El elemento 'empleado' tiene contenido incompleto. Se esperaba 'ID'** .
 
 7. Tipo `<` y seleccione **ID** en la lista de miembros. A continuación, escriba `>`.
 
@@ -86,7 +86,7 @@ En este tutorial se indican los pasos para crear un nuevo documento XML. El tuto
 
 10. Vuelva al archivo XML y sustituya el **abc** texto con **123**.
 
-     El subrayado ondulado de color y **información sobre herramientas** desaparecen bajo el valor del elemento ID. El **información sobre herramientas** para el final de empleado muestra ahora el mensaje etiqueta: **El elemento 'empleado' tiene contenido incompleto. Se esperaba 'fecha-contratación'**.
+     El subrayado ondulado de color y **información sobre herramientas** desaparecen bajo el valor del elemento ID. El **información sobre herramientas** para el final de empleado muestra ahora el mensaje etiqueta: **El elemento 'empleado' tiene contenido incompleto. Se esperaba 'fecha-contratación'** .
 
 11. Coloque el cursor después de la etiqueta de cierre de identificador, escriba en `<`, seleccione **fecha-contratación** desde la lista de miembros y, a continuación, escriba en `>`.
 
@@ -96,7 +96,7 @@ En este tutorial se indican los pasos para crear un nuevo documento XML. El tuto
 
 ## <a name="to-format-the-xml-document"></a>Para dar formato al documento XML
 
-- Seleccione el **dar formato al documento** botón en la barra de herramientas del editor XML, o presione **Ctrl**+**E**,**d**.
+- Seleccione el **dar formato al documento** botón en la barra de herramientas del editor XML, o presione **Ctrl**+**E**,**d.** .
 
    ![Botón de documento de formato XML en Visual Studio](media/format-xml-document.png)
 
@@ -106,7 +106,7 @@ En este tutorial se indican los pasos para crear un nuevo documento XML. El tuto
 
 1. Desde el **archivo** menú, seleccione **Guardar como**.
 
-     El **Guardar archivo como** se muestra el cuadro de diálogo. El nombre de archivo predeterminado es *'Archivoxml1'*.
+     El **Guardar archivo como** se muestra el cuadro de diálogo. El nombre de archivo predeterminado es *'Archivoxml1'* .
 
 2. Escriba el nombre de archivo y la ubicación del documento XML y haga clic en **guardar**.
 
