@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Obtenga información sobre cómo aprovechar la ventaja Chat de asesoramiento de Azure incluida en las suscripciones de Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: c5d547062fa820ff868fe12f8cb899d9d1e508b8
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: 329aa109349a8f97e64cc478b7e843ca4d7b24e3
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67033178"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586977"
 ---
 # <a name="azure-advisory-chat"></a>Chat de asesoramiento de Azure
 
@@ -42,7 +42,6 @@ El empleo de Chat de asesoramiento de Azure es sencillo.
 | Visual Studio Professional (estándar, nube mensual) Visual Studio Enterprise (nube mensual, NFR<sup>1</sup>) |        Todas        | No disponible |     No     |
 |                                          Visual Studio Test Professional (estándar)                                          |        Todas        | No disponible |     No     |
 |                                                  Plataformas MSDN (estándar)                                                   |        Todas        | No disponible |     No     |
-
 
 <sup>1</sup>  *Incluye:  No para reventa (NFR), Most Valuable Professional (MVP), Regional Director (RD), Visual Studio Industry Partner (VSIP), BizSpark, Imagine, MCT*
 

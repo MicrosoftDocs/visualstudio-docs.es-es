@@ -1,18 +1,18 @@
 ---
 title: Instalación de una versión preliminar o actualización para Visual Studio para Mac
 description: Instrucciones para actualizar Visual Studio para Mac y acceder a versiones preliminares, incluidas las versiones preliminares de Visual Studio 2019 para Mac.
-author: conceptdev
-ms.author: crdun
+author: asb3993
+ms.author: amburns
 ms.date: 04/02/2019
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 0E1EF257-9DE4-4653-9DF4-805CE007A1A1
-ms.openlocfilehash: fbd6f51ee2a4db7407bb96dff82e31d6dca7389d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 73852795a693d3003912332d946a4d850e39a018
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62982852"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67691446"
 ---
 # <a name="install-a-preview-or-update-for-visual-studio-for-mac"></a>Instalación de una versión preliminar o actualización para Visual Studio para Mac
 

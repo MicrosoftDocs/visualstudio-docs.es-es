@@ -1,19 +1,18 @@
 ---
 title: Compilación de aplicaciones de ASP.NET Core en Visual Studio para Mac
 description: En este artículo se describe cómo empezar a trabajar con ASP.NET en Visual Studio para Mac, incluida la instalación y la creación de un nuevo proyecto.
-author: asb3993
-ms.author: amburns
+author: sayedihashimi
+ms.author: sayedha
 ms.date: 05/30/2019
 ms.assetid: 771C2F8E-46BC-4280-AFE8-ED9D5C7790CE
-ms.openlocfilehash: 4e38378c22c6920e471b72d990d61d9b4ebd3d7f
-ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
+ms.openlocfilehash: f0a2e8433877b3eb61228a886280707f3b4a37fe
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67253804"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67693134"
 ---
 # <a name="building-aspnet-core-applications-in-visual-studio-for-mac"></a>Compilación de aplicaciones de ASP.NET Core en Visual Studio para Mac 
-
 
 ASP.NET Core es un marco multiplataforma y de código abierto en el que se pueden crear modernas aplicaciones conectadas a Internet y basadas en la nube, por ejemplo, servicios y aplicaciones web, aplicaciones de IoT y back-end móviles. Las aplicaciones de ASP.NET Core se pueden ejecutar en [.NET Core](https://www.microsoft.com/net/core/platform) o en los runtime de .NET Framework. Se ha diseñado para proporcionar una plataforma de desarrollo optimizada para las aplicaciones que se implementan en la nube o se ejecutan en local. Consta de componentes modulares con una sobrecarga mínima, por lo que se conserva la flexibilidad a la hora de crear soluciones. Puede desarrollar y ejecutar las aplicaciones multiplataforma ASP.NET Core en Windows, Mac y Linux. ASP.NET Core es código abierto en [GitHub](https://github.com/aspnet/home).
 
@@ -21,9 +20,8 @@ En este laboratorio se va a crear y examinar una aplicación de ASP.NET Core con
 
 ## <a name="objectives"></a>Objetivos
 
-
 > [!div class="checklist"]
-> * Cree una aplicación web ASP.NET Core
+> * Crear una aplicación web de ASP.NET Core
 > * Examinar el hospedaje, la configuración y el modelo de middleware de ASP.NET Core
 > * Depurar una aplicación web de ASP.NET Core
 
@@ -35,7 +33,7 @@ En este laboratorio se va a crear y examinar una aplicación de ASP.NET Core con
 
 Este laboratorio está destinado a desarrolladores familiarizados con C#, aunque no se requiere una experiencia profunda.
 
-## <a name="task-1-creating-a-new-aspnet-core-application"></a>Tarea 1: Creación de una nueva aplicación de ASP.NET Core
+## <a name="task-1-creating-a-new-aspnet-core-application"></a>Tarea 1: Creación de una nueva aplicación de ASP.NET Core
 
 1. Inicie **Visual Studio para Mac**.
 
@@ -49,7 +47,7 @@ Este laboratorio está destinado a desarrolladores familiarizados con C#, aunque
 
     ![](media/netcore-image2.png)
 
-## <a name="task-2-touring-the-solution"></a>Tarea 2: Examen de la solución
+## <a name="task-2-touring-the-solution"></a>Tarea 2: Examen de la solución
 
 1. La plantilla predeterminada crea una solución con un solo proyecto de ASP.NET Core denominado **CoreLab**. Expanda el nodo del proyecto para exponer su contenido.
 
@@ -79,7 +77,7 @@ Este laboratorio está destinado a desarrolladores familiarizados con C#, aunque
 
     ![](media/netcore-image9.png)
 
-## <a name="task-3-understanding-how-the-application-is-hosted"></a>Tarea 3: Descripción de cómo se hospeda la aplicación
+## <a name="task-3-understanding-how-the-application-is-hosted"></a>Tarea 3: Descripción de cómo se hospeda la aplicación
 
 1. En el **Explorador de soluciones**, abra **Program.cs**. Este es el programa previo que va a ejecutar la aplicación.
 
@@ -123,7 +121,7 @@ Este laboratorio está destinado a desarrolladores familiarizados con C#, aunque
 
 3. Active **Ejecutar en la consola externa** y desactive **Pausar salida de la consola**. Normalmente la aplicación autohospedada no tendría su consola visible, sino que registraría sus resultados en el panel **Salida**. Para los fines de este laboratorio, se muestra también en una ventana independiente, aunque no es necesario hacerlo durante el desarrollo normal.
 
-4. Haga clic en **OK**.
+4. Haga clic en **Aceptar**.
 
     ![](media/netcore-image19.png)
 

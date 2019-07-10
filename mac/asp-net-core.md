@@ -1,17 +1,17 @@
 ---
 title: Introducción a ASP.NET Core
 description: En este artículo se describe cómo empezar a trabajar con ASP.NET en Visual Studio para Mac, incluida la instalación y la creación de un nuevo proyecto.
-author: conceptdev
-ms.author: crdun
+author: sayedihashimi
+ms.author: sayedha
 ms.date: 04/02/2019
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
 ms.custom: video
-ms.openlocfilehash: 53fd740d8a32954de566ab7d383004e4f503ca2c
-ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
+ms.openlocfilehash: 9dcd1b65e9d8ea60f082304b4f84a7108efb99a6
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67258902"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692943"
 ---
 # <a name="getting-started-with-aspnet-core"></a>Introducción a ASP.NET Core
 
@@ -29,7 +29,7 @@ Abra Visual Studio para Mac. En la pantalla de inicio, seleccione **Nuevo proyec
 
 Se mostrará el cuadro de diálogo Nuevo proyecto, que le permite seleccionar una plantilla para crear la aplicación.
 
-Hay una serie de proyectos que le proporcionarán una plantilla predefinida para empezar a compilar la aplicación de ASP.NET Core. Dichos componentes son:
+Hay una serie de proyectos que le proporcionarán una plantilla predefinida para empezar a compilar la aplicación de ASP.NET Core. Estos son:
 
 - **.NET Core > Vacío**
 - **.NET Core > API**
@@ -135,7 +135,7 @@ Cuando el proyecto se está ejecutando, el explorador web predeterminado debe in
 Las aplicaciones de ASP.NET Core usan el modelo de diseño Controlador de vista de modelos (MVC) para proporcionar una separación lógica de las responsabilidades para cada elemento de la aplicación. MVC consta de los siguientes elementos:
 
 - **Model**: clase que representa los datos de la aplicación.
-- **Ver**: muestra la interfaz de usuario de la aplicación (que suelen ser los datos del modelo).
+- **Vista**: muestra la interfaz de usuario de la aplicación (que suelen ser los datos del modelo).
 - **Controller**: clase que controla las solicitudes del explorador y responde a la entrada y la interacción del usuario.
 
 Para obtener más información sobre el uso de MVC, vea la guía [Overview of ASP.NET Core MVC](/aspnet/core/mvc/overview) (Introducción a MVC de ASP.NET Core).
@@ -222,7 +222,7 @@ Para agregar un controlador, haga lo siguiente:
 
     ![Aplicación en ejecución en el explorador con argumentos](media/asp-net-core-image10.png)
 
-## <a name="troubleshooting"></a>solución de problemas
+## <a name="troubleshooting"></a>Solución de problemas
 
 Si necesita instalar .NET Core manualmente en Mac OS 10.12 (Sierra) y versiones posteriores, haga lo siguiente:
 

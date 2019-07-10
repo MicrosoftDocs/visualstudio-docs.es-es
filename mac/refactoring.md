@@ -1,17 +1,17 @@
 ---
 title: Refactorización de código
 description: Perfeccionamiento del código con Visual Studio para Mac y acciones rápidas.
-author: conceptdev
-ms.author: crdun
+author: cobey
+ms.author: cobey
 ms.date: 03/29/2019
 ms.assetid: C7782BF3-016F-4B41-8A81-85FC540A1A8F
 ms.custom: video
-ms.openlocfilehash: 48e290fddd1c4b7c95ac5e76cb6cf5908247e6f6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5a87b87f3a14462daec1e069fe222164818d2a19
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62937929"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67691296"
 ---
 # <a name="refactoring"></a>Refactorización
 
@@ -42,7 +42,7 @@ Las acciones rápidas pueden utilizarse para:
 * Aplicar una refactorización (por ejemplo, insertar una variable temporal).
 * Generar código (por ejemplo, introducir una variable local).
 
-Ahora se pueden aplicar acciones rápidas mediante los iconos de bombilla ![light bulb icon](media/quick-actions-light-bulb-icon.png) o de destornillador ![screwdriver icon](media/quick-actions-screwdriver-icon.png) en el editor de C#, o presionando **Opción (⌥)**+**Entrar** cuando el cursor esté en una línea de código para la que haya una acción disponible. Verá una bombilla de error ![icono de bombilla de error](media/quick-actions-error-light-bulb-icon.png) si hay un subrayado ondulado de color rojo que indica un error. Visual Studio tiene una corrección disponible para ese error.
+Ahora se pueden aplicar acciones rápidas mediante los iconos de bombilla ![light bulb icon](media/quick-actions-light-bulb-icon.png) o de destornillador ![screwdriver icon](media/quick-actions-screwdriver-icon.png) en el editor de C#, o presionando **Opción (⌥)** +**Entrar** cuando el cursor esté en una línea de código para la que haya una acción disponible. Verá una bombilla de error ![icono de bombilla de error](media/quick-actions-error-light-bulb-icon.png) si hay un subrayado ondulado de color rojo que indica un error. Visual Studio tiene una corrección disponible para ese error.
 
 Para cualquier lenguaje, un tercero puede proporcionar diagnósticos y sugerencias, por ejemplo, como parte de un SDK, y las bombillas de Visual Studio se encienden siguiendo esas reglas.
 
@@ -57,7 +57,7 @@ El icono que aparece cuando hay una acción rápida disponible da una indicació
 
 - Las bombillas y los destornilladores aparecen en el margen izquierdo del editor cuando mueve el acento circunflejo a una línea de código para la que hay una acción rápida disponible.
 
-- Presione **Opción (⌥)**+**Entrar** en cualquier parte de una línea para ver una lista de acciones rápidas y refactorizaciones disponibles.
+- Presione **Opción (⌥)** +**Entrar** en cualquier parte de una línea para ver una lista de acciones rápidas y refactorizaciones disponibles.
 
 ![Mostrar elementos de contexto](media/refactoring-context-action.png)
 

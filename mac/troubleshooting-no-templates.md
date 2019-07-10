@@ -2,16 +2,16 @@
 title: ¿Por qué no puedo ver todas las plantillas disponibles?
 description: Artículo de solución de problemas sobre por qué no pueden verse todas las plantillas disponibles.
 ms.topic: troubleshooting
-author: conceptdev
-ms.author: crdun
+author: asb3993
+ms.author: amburns
 ms.date: 04/02/2019
 ms.assetid: 297D9094-B40F-4C1A-BF19-B14CB735003A
-ms.openlocfilehash: 909f2e2e8ac569b7fde1de1008f0cbd22171e3b6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 633a893933f99f34ed2870c236287a5e26799a76
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62971425"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67691919"
 ---
 # <a name="troubleshooting-why-can-i-not-see-all-available-templates"></a>Solución del problema: ¿Por qué no puedo ver todas las plantillas disponibles?
 

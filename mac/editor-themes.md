@@ -1,16 +1,16 @@
 ---
 title: Temas del editor
 description: En este artículo se describe cómo modificar el tema del editor o agregar el suyo propio en Visual Studio para Mac
-author: conceptdev
-ms.author: crdun
+author: cobey
+ms.author: cobey
 ms.date: 11/06/2018
 ms.assetid: 4C1B7952-CD45-4132-AD6B-01CF993D83F8
-ms.openlocfilehash: 0b9b9ba5697b68aab87133d05a8f8112decb3b09
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0c9c58f8da76b09055c1f2b70cd05a44890ce22c
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62983751"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67691633"
 ---
 # <a name="editor-themes"></a>Temas del editor
 

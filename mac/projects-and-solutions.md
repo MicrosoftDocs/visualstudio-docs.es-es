@@ -1,16 +1,16 @@
 ---
 title: Proyectos y soluciones
 description: Este documento se proporciona información general sobre los proyectos y las soluciones de Visual Studio para Mac.
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/23/2019
 ms.assetid: 8254505D-D96E-48BD-8A5E-CF6A917897EA
-ms.openlocfilehash: ec62e9c0b449f5f2aed568735c2a10d1f6634eed
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: b66a1dfbe0569c501d05b34425e198f1501438ca
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820961"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67691274"
 ---
 # <a name="projects-and-solutions-in-visual-studio-for-mac"></a>Proyectos y soluciones en Visual Studio para Mac
 

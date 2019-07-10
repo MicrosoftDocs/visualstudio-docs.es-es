@@ -1,16 +1,16 @@
 ---
 title: Comentarios de tareas
 description: Agregar comentarios de tarea en el código
-author: conceptdev
-ms.author: crdun
+author: cobey
+ms.author: cobey
 ms.date: 05/06/2018
 ms.assetid: 562DCB46-D8FA-4DC4-AAEA-F274448C4CD2
-ms.openlocfilehash: 3caef73ba46afd8eaf90826540248cb2d5c4efef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d88b74ab953f97e061f4be3befc227646006f38b
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62999735"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692322"
 ---
 # <a name="task-comments"></a>Comentarios de tareas
 
