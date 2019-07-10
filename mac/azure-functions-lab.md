@@ -1,18 +1,18 @@
 ---
 title: 'Tutorial: Comprobación de'
 description: Uso de Azure Functions en Visual Studio para Mac.
-author: conceptdev
-ms.author: crdun
+author: sayedihashimi
+ms.author: sayedha
 ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 38FD2070-5151-482E-B0A9-993715128736
-ms.openlocfilehash: f1c619bbddd5116ad2d425909d80e30ca99e06c3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: aebee9f649f183995f209568d78ef08fbde1ef1a
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62986498"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692897"
 ---
 # <a name="tutorial-getting-started-with-azure-functions"></a>Tutorial: Introducción a Azure Functions
 
@@ -131,7 +131,7 @@ En esta práctica aprenderá a empezar a compilar Azure Functions mediante Visua
 
     ![Nuevo método de ejecución con la inicialización del método resaltada](media/azure-functions-lab-image14.png)
 
-1. El primer parámetro se marca con el atributo **HttpTrigger**, que indica que este método lo invoca una solicitud HTTP. El atributo también especifica el nivel de autorización del método, así como los verbos que admite (solo **"GET"**, en este caso). Opcionalmente, también puede definir una **ruta** que reemplaza la ruta de acceso al método y proporciona una manera de extraer automáticamente las variables de la ruta de acceso. Puesto que, en este caso, la **ruta** es null, la ruta de acceso a este método tendrá como valor predeterminado **/api/Add**.
+1. El primer parámetro se marca con el atributo **HttpTrigger**, que indica que este método lo invoca una solicitud HTTP. El atributo también especifica el nivel de autorización del método, así como los verbos que admite (solo **"GET"** , en este caso). Opcionalmente, también puede definir una **ruta** que reemplaza la ruta de acceso al método y proporciona una manera de extraer automáticamente las variables de la ruta de acceso. Puesto que, en este caso, la **ruta** es null, la ruta de acceso a este método tendrá como valor predeterminado **/api/Add**.
 
     ![Nuevo método de ejecución con el parámetro resaltado](media/azure-functions-lab-image15.png)
 
@@ -226,7 +226,7 @@ En esta práctica aprenderá a empezar a compilar Azure Functions mediante Visua
     "generatedBy":"Microsoft.NET.Sdk.Functions-1.0.13",
     ```
 
-1. Al final del primer enlace, (después de la línea **"name": "req"**), agregue las propiedades siguientes: No olvide incluir una coma en la línea anterior. Esta propiedad sobrescribe la raíz predeterminada de tal forma que ahora extraerá los parámetros **int** de la ruta de acceso y los colocará en los parámetros del método denominados **x** e **y**.
+1. Al final del primer enlace, (después de la línea **"name": "req"** ), agregue las propiedades siguientes: No olvide incluir una coma en la línea anterior. Esta propiedad sobrescribe la raíz predeterminada de tal forma que ahora extraerá los parámetros **int** de la ruta de acceso y los colocará en los parámetros del método denominados **x** e **y**.
 
     ```json
     "direction": "in",
@@ -243,7 +243,7 @@ En esta práctica aprenderá a empezar a compilar Azure Functions mediante Visua
     }
     ```
 
-1. Actualice también la propiedad **entryPoint** al final del archivo para que use un método denominado **"Add2"**, como se muestra a continuación. Con esto se muestra que la ruta de acceso **api/Adder...** podría asignarse a un método apropiado con cualquier nombre (aquí, **Add2**).
+1. Actualice también la propiedad **entryPoint** al final del archivo para que use un método denominado **"Add2"** , como se muestra a continuación. Con esto se muestra que la ruta de acceso **api/Adder...** podría asignarse a un método apropiado con cualquier nombre (aquí, **Add2**).
 
     ```json
     "entryPoint": "<project-name>.<function-class-name>.Add2"
@@ -299,7 +299,7 @@ En esta práctica aprenderá a empezar a compilar Azure Functions mediante Visua
 
     ![Dirección URL para las funciones Http](media/azure-functions-lab-image31.png)
 
-1. Devuelva la ventana del explorador y vaya a **http://localhost:7071/api/Adder/3/5**.
+1. Devuelva la ventana del explorador y vaya a **http://localhost:7071/api/Adder/3/5** .
 
 1. Esta vez el método funciona una vez más, y extrae los parámetros de la ruta de acceso y genera una suma.
 
@@ -348,7 +348,7 @@ A menudo, el servicio que compile podría ser mucho más complejo que lo que hem
 
 1. Presione **F5** para compilar y ejecutar el proyecto.
 
-1. En la pestaña del explorador, vaya a **http://localhost:7071/api/Process/4/6**. Esto colocará otro mensaje a la cola, cuyo resultado final será que se agrega otra fila a la tabla.
+1. En la pestaña del explorador, vaya a **http://localhost:7071/api/Process/4/6** . Esto colocará otro mensaje a la cola, cuyo resultado final será que se agrega otra fila a la tabla.
 
 1. Vuelva a **Terminal** y espere a la solicitud entrante para **4 + 6**.
 
@@ -381,11 +381,11 @@ A menudo, el servicio que compile podría ser mucho más complejo que lo que hem
 
 1. Presione **F5** para compilar y ejecutar el proyecto.
 
-1. En la pestaña del explorador, actualice la dirección URL a **http://localhost:7071/api/Process/4/6**. Puesto que la fila de tabla para este registro existe, debería devolver inmediatamente y sin errores. Puesto que no hay ninguna salida HTTP, puede ver el resultado en Terminal.
+1. En la pestaña del explorador, actualice la dirección URL a **http://localhost:7071/api/Process/4/6** . Puesto que la fila de tabla para este registro existe, debería devolver inmediatamente y sin errores. Puesto que no hay ninguna salida HTTP, puede ver el resultado en Terminal.
 
     ![Terminal de salida que muestra que la fila de la tabla ya existe](media/azure-functions-lab-image33.png)
 
-1. Actualice la dirección URL para reflejar una combinación que todavía no ha probado, como **http://localhost:7071/api/Process/5/7**. Tenga en cuenta el mensaje en Terminal, que indica que no se encontró la fila de tabla (como se esperaba).
+1. Actualice la dirección URL para reflejar una combinación que todavía no ha probado, como **http://localhost:7071/api/Process/5/7** . Tenga en cuenta el mensaje en Terminal, que indica que no se encontró la fila de tabla (como se esperaba).
 
     ![Terminal de salida que muestra nuevo proceso](media/azure-functions-lab-image34.png)
 

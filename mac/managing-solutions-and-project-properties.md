@@ -1,16 +1,16 @@
 ---
 title: Administrar propiedades de soluciones y proyectos
 description: En este artículo se explica cómo administrar las propiedades de los proyectos y soluciones en Visual Studio para Mac
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 75247EB8-323A-4AFD-A451-6703A03D5D1F
-ms.openlocfilehash: 8d6a45f8cdd46483dda5ef252a6235e7eb2f0a04
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 514792804515541b7e4f64359a08e9c6093c5018
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62982733"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692884"
 ---
 # <a name="managing-project-and-solution-properties"></a>Administrar propiedades de soluciones y proyectos
 

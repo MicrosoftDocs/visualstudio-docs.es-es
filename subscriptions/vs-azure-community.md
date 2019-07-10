@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Obtenga información sobre la ventaja Comunidad Azure incluida en las suscripciones de Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: afeed3f51e9a7ac00885906711c943f63896c80e
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: 5cfdb90a42b7dc3baa68da21e7856a62ba7593b8
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67032261"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586952"
 ---
 # <a name="azure-community"></a>Comunidad Azure
 
@@ -54,7 +54,6 @@ La disponibilidad de la ventaja Comunidad Azure depende del nivel de suscripció
 |                              Visual Studio Test Professional (estándar)                               |    Licencia por volumen, venta directa     |   Un año    |    Sí     |
 |                                       Plataformas MSDN (estándar)                                       |    Licencia por volumen, venta directa     |   Un año    |    Sí     |
 | Visual Studio Enterprise (de nube mensual) Visual Studio Professional (de nube mensual), NFR<sup>1</sup> |        Todas        | No disponible |     No     |
-
 
 <sup>1</sup>  *Incluye:  No para reventa (NFR), Microsoft FTE, Most Valuable Professional (MVP), Regional Director (RD), Visual Studio Industry Partner (VSIP), BizSpark, Imagine, Microsoft Certified Trainer (MCT)*
 

@@ -1,16 +1,16 @@
 ---
 title: Control de versiones
 description: Empleo de Git y Subversion en Visual Studio para Mac.
-author: conceptdev
-ms.author: crdun
+author: jmatthiesen
+ms.author: jomatthi
 ms.date: 05/06/2018
 ms.assetid: 49917483-28AA-4598-A847-71F1F2E0DCB5
-ms.openlocfilehash: 0505177e01afd701fe5506df7dd0fc2a2e1f859c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 33d4fa8b641f71094930d5eac39164916b41f4b4
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965521"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692222"
 ---
 # <a name="version-control"></a>Control de versiones
 

@@ -1,18 +1,18 @@
 ---
 title: Introducción a Azure Functions
 description: Uso de Azure Functions en Visual Studio para Mac.
-author: conceptdev
-ms.author: crdun
+author: sayedihashimi
+ms.author: sayedha
 ms.date: 04/02/2019
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
-ms.openlocfilehash: db25a9cbc647e399da86781d155a7b55d8e3802e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d8312733c92ab2802c9594459d5e855b5600a352
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62984979"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692823"
 ---
 # <a name="introduction-to-azure-functions"></a>Introducción a Azure Functions
 
@@ -81,7 +81,7 @@ Con compatibilidad con Azure Functions en Visual Studio para Mac puede probar y 
 
 Las plantillas de función permiten crear rápidamente nuevas funciones mediante los desencadenadores y las plantillas más comunes. Para crear otro tipo de función, haga lo siguiente:
 
-1. Para agregar una nueva función, haga doble clic en el nombre del proyecto y seleccione **Agregar > Agregar función...**:
+1. Para agregar una nueva función, haga doble clic en el nombre del proyecto y seleccione **Agregar > Agregar función...** :
 
     ![acción contextual para agregar una nueva función](media/azure-functions-addnew.png)
 
@@ -100,7 +100,7 @@ Puede usar el procedimiento anterior para agregar más funciones a su proyecto d
 3. En el cuadro de diálogo **Publicar en Azure App Service**, puede seleccionar un servicio de aplicación existente o crear uno nuevo haciendo clic en **Nuevo**.
 4. En el cuadro de diálogo **Crear instancia de App Service**, especifique la configuración:  ![Opción de menú Publicar en Azure](media/azure-functions-image7.png)
 
-    |Parámetro  |Descripción  |
+    |Parámetro  |DESCRIPCIÓN  |
     |---------|---------|
     |**Nombre de App Service**|Un nombre único global que identifica la nueva instancia de Function App.|
     |**Suscripción**|La suscripción de Azure que se va a usar.|

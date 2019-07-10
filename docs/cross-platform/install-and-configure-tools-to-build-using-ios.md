@@ -12,12 +12,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 06449d299fdfd54bdb2526d16897e815900a9c1c
-ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.openlocfilehash: 411ab7f097a82fa850e3850c662d378f51ffd548
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65614438"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586819"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>Instalar y configurar herramientas para compilar con iOS
 
@@ -34,7 +34,7 @@ Para instalar y usar el agente remoto para desarrollar código para iOS, primero
 
 - Un equipo Mac con macOS Mojave, versión 10.14 o posterior.
 
-- Un [ID de Apple](https://appleid.apple.com/).
+- Debe disponer de un [ID de Apple](https://appleid.apple.com/)
 
 - Una cuenta activa del [programa Apple Developer](https://developer.apple.com/programs/).
 
@@ -66,7 +66,6 @@ Para instalar y usar el agente remoto para desarrollar código para iOS, primero
 
    Instale la versión 8.11.3 de Node.js en su Mac. Si instala el paquete de Node.js, debe incluir la versión 5.6.0 de npm. Tenga en cuenta que es posible que otras versiones de Node.js y npm no admitan algunos módulos que se usan en el agente remoto vcremote, lo que puede impedir la instalación de vcremote.
 
-
 ## <a name="Install"></a> Instalar al agente remoto para iOS
 
 Cuando se instala Visual C++ para el desarrollo móvil multiplataforma, Visual Studio puede comunicarse con [vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988), un agente remoto que se ejecuta en el equipo Mac para transferir archivos, compilar y ejecutar la aplicación de iOS, así como para enviar comandos de depuración.
@@ -79,7 +78,7 @@ Antes de instalar el agente remoto, asegúrese de que se cumplen los [Requisitos
 
    `sudo npm install -g --unsafe-perm vcremote`
 
-   El conmutador de instalación global (**-g**) es recomendable, pero no obligatorio.
+   El conmutador de instalación global ( **-g**) es recomendable, pero no obligatorio.
 
    Durante la instalación, se instalará vcremote y se activará el modo de desarrollador en su Mac. También se instalarán[Homebrew](https://brew.sh/) y dos paquetes de npm, vcremote-lib y vcremote-utils. Cuando se complete la instalación, puede pasar por alto las advertencias sobre dependencias opcionales omitidas.
 
@@ -142,7 +141,7 @@ Para conectar con el agente remoto desde Visual Studio, debe especificar la conf
 
 1. En la barra de menús de Visual Studio, elija **Herramientas**, **Opciones**.
 
-1. En el cuadro de diálogo **Opciones** , expanda **Multiplataforma**, **C++**, **iOS**.
+1. En el cuadro de diálogo **Opciones** , expanda **Multiplataforma**, **C++** , **iOS**.
 
 1. En los campos **Nombre de host** y **Puerto** , escriba los valores especificados por el agente remoto cuando se inició. El nombre de host puede ser el nombre DNS o dirección IP de su equipo Mac. El puerto predeterminado es 3030.
 
@@ -159,7 +158,7 @@ Para conectar con el agente remoto desde Visual Studio, debe especificar la conf
 
    Si el emparejamiento no se realiza correctamente, compruebe que se está ejecutando el agente remoto. Para ello, siga los pasos que se describen en [Start the remote agent](#Start). Si ha pasado demasiado tiempo desde que se generó el PIN de agente remoto, siga los pasos descritos en [Generate a new security PIN](#GeneratePIN) en el equipo Mac y vuelva a intentarlo. Si va a usar el nombre de host del equipo Mac, pruebe a usar la dirección IP en el **Nombre de host** en su lugar.
 
-1. Actualice el nombre de la carpeta en el campo **Raíz remota** para especificar la carpeta que usará el agente remoto en el directorio de inicio (*~*) del equipo Mac. De forma predeterminada, el agente remoto usa /Users/`username`/vcremote como la raíz remota.
+1. Actualice el nombre de la carpeta en el campo **Raíz remota** para especificar la carpeta que usará el agente remoto en el directorio de inicio ( *~* ) del equipo Mac. De forma predeterminada, el agente remoto usa /Users/`username`/vcremote como la raíz remota.
 
 1. Elija **Aceptar** para guardar la configuración de conexión de emparejamiento remota.
 

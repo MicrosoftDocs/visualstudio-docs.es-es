@@ -1,16 +1,16 @@
 ---
 title: Compatibilidad de .NET Core
 description: Este documento describe la compatibilidad de versiones de .NET Core en Visual Studio para Mac
-author: conceptdev
-ms.author: crdun
+author: sayedihashimi
+ms.author: sayedha
 ms.date: 06/13/2019
 ms.assetid: 8B8CEBE8-00DA-4AD1-8193-77F58B57F244
-ms.openlocfilehash: f123326f11f8fdbffd005d89358ed1fad7ba27cd
-ms.sourcegitcommit: dd3c8cbf56c7d7f82f6d8818211d45847ab3fcfc
+ms.openlocfilehash: 06e1d04ce9046798dda9ae2957c1ea84973b652d
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "67141190"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692899"
 ---
 # <a name="net-core-support"></a>Compatibilidad de .NET Core
 

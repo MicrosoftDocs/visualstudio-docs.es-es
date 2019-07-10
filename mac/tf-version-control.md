@@ -1,18 +1,18 @@
 ---
 title: Control de versiones de Team Foundation (TFVC)
 description: Conectarse desde Visual Studio para Mac a Team Foundation Server/Azure DevOps Services con Control de versiones de Team Foundation (TFVC).
-author: conceptdev
-ms.author: crdun
+author: jmatthiesen
+ms.author: jomatthi
 ms.date: 06/25/2019
 ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
-ms.openlocfilehash: 04a251621af1086c15bafa15b7a9fe01f8dab5a8
-ms.sourcegitcommit: 9d3529e40438ca45dcb0b31742c4cd5a89daa61e
+ms.openlocfilehash: 378d1eaf1d57818a976f41a81c1098d75bb12e48
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67398981"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67691954"
 ---
 # <a name="connecting-to-team-foundation-version-control"></a>Conectarse a Control de versiones de Team Foundation
 

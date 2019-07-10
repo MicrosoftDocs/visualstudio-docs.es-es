@@ -1,16 +1,16 @@
 ---
 title: Iniciar sesión en Visual Studio para Mac
 description: Cómo iniciar sesión en Visual Studio para Mac
-author: conceptdev
-ms.author: crdun
+author: asb3993
+ms.author: amburns
 ms.date: 04/02/2019
 ms.assetid: E4CFD03C-03AF-48CA-B409-6DB1CA45E991
-ms.openlocfilehash: fe3b3ce45f72028e6081a849a9b10cad7a9916b5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d3ef047d018d5069cd362af1becfe7c6d778bde7
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62963638"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692013"
 ---
 # <a name="sign-in-to-visual-studio-for-mac"></a>Iniciar sesión en Visual Studio para Mac
 

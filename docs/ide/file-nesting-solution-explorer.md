@@ -8,12 +8,12 @@ helpviewer_keywords:
 author: angelosp
 ms.author: angelpe
 manager: jillfra
-ms.openlocfilehash: 0ec16c23a3ed16f555bb1a3af952b422f4aceb35
-ms.sourcegitcommit: 16bcaca215de75479695738d3c2d703c78c3500e
+ms.openlocfilehash: a36ca2535785f72756ad66a69c2ebe4d7d5a373b
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "67309795"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67587027"
 ---
 # <a name="file-nesting-in-solution-explorer"></a>Anidamiento de archivos en el Explorador de soluciones
 
@@ -62,7 +62,7 @@ Centrémonos en el nodo **dependentFileProviders** y en sus nodos secundarios. C
 
 ### <a name="the-extensiontoextension-provider"></a>Proveedor extensionToExtension
 
-Este proveedor permite definir reglas de anidamiento de archivos mediante determinadas extensiones de archivo. Considere el siguiente ejemplo:
+Este proveedor permite definir reglas de anidamiento de archivos mediante determinadas extensiones de archivo. Considere el ejemplo siguiente:
 
 ![Ejemplo de reglas extentionToExtension](media/filenesting_extensiontoextension.png) ![Efecto del ejemplo extentionToExtension](media/filenesting_extensiontoextension_effect.png)
 
@@ -76,7 +76,7 @@ Este proveedor permite definir reglas de anidamiento de archivos mediante determ
 
 ### <a name="the-filesuffixtoextension-provider"></a>Proveedor fileSuffixToExtension
 
-Este proveedor funciona igual que el proveedor **extensionToExtension**, con la única diferencia que la regla tiene en cuenta el sufijo del archivo en lugar de simplemente la extensión. Considere el siguiente ejemplo:
+Este proveedor funciona igual que el proveedor **extensionToExtension**, con la única diferencia que la regla tiene en cuenta el sufijo del archivo en lugar de simplemente la extensión. Considere el ejemplo siguiente:
 
 ![Ejemplo de reglas fileSuffixToExtension](media/filenesting_filesuffixtoextension.png) ![Efecto del ejemplo fileSuffixToExtension](media/filenesting_filesuffixtoextension_effect.png)
 
@@ -88,7 +88,7 @@ Este proveedor funciona igual que el proveedor **extensionToExtension**, con la 
 
 Este proveedor anida archivos con una extensión adicional bajo el archivo sin extensión adicional. La extensión adicional solo puede aparecer al final del nombre de archivo completo.
 
-Considere el siguiente ejemplo:
+Considere el ejemplo siguiente:
 
 ![Ejemplo de reglas addedExtension](media/filenesting_addedextension.png) ![Efecto del ejemplo addedExtension](media/filenesting_addedextension_effect.png)
 
@@ -101,7 +101,7 @@ Considere el siguiente ejemplo:
 
 Este proveedor anida archivos con una extensión adicional bajo un archivo sin extensión adicional. La extensión adicional solo puede aparecer en mitad del nombre de archivo completo.
 
-Considere el siguiente ejemplo:
+Considere el ejemplo siguiente:
 
 ![Ejemplo de reglas pathSegment](media/filenesting_pathsegment.png) ![Efecto del ejemplo pathSegment](media/filenesting_pathsegment_effect.png)
 
@@ -110,7 +110,8 @@ Considere el siguiente ejemplo:
 > [!NOTE]
 > - Si no especifica extensiones de archivo concretas para la regla `pathSegment`, se aplica a todas las extensiones de archivo. Es decir, cualquier archivo con el mismo nombre y extensión que otro archivo más una extensión adicional en el medio se anida debajo del otro archivo.
 > - Puede limitar el efecto de la regla `pathSegment` a extensiones de archivo específicas de la siguiente manera:
->    ```
+>
+>    ```json
 >    "pathSegment": {
 >       "add": {
 >         ".*": [
@@ -125,7 +126,7 @@ Considere el siguiente ejemplo:
 
 ### <a name="the-allextensions-provider"></a>Proveedor allExtensions
 
-Este proveedor permite definir las reglas de anidamiento de archivos para archivos con cualquier extensión, pero el mismo nombre de archivo base. Considere el siguiente ejemplo:
+Este proveedor permite definir las reglas de anidamiento de archivos para archivos con cualquier extensión, pero el mismo nombre de archivo base. Considere el ejemplo siguiente:
 
 ![Reglas del ejemplo allExtensions](media/filenesting_allextensions.png) ![Efecto del ejemplo allExtensions](media/filenesting_allextensions_effect.png)
 
@@ -133,13 +134,13 @@ Este proveedor permite definir las reglas de anidamiento de archivos para archiv
 
 ### <a name="the-filetofile-provider"></a>Proveedor fileToFile
 
-Este proveedor permite definir las reglas de anidamiento de archivos basándose en los nombres de archivo completos. Considere el siguiente ejemplo:
+Este proveedor permite definir las reglas de anidamiento de archivos basándose en los nombres de archivo completos. Considere el ejemplo siguiente:
 
 ![Ejemplos de reglas fileToFile](media/filenesting_filetofile.png) ![Efecto del ejemplo fileToFile](media/filenesting_filetofile_effect.png)
 
 * *.bowerrc* está anidado en *bower.json* debido a la regla **fileToFile**.
 
-### <a name="rule-order"></a>Orden de reglas
+### <a name="rule-order"></a>Orden de las reglas
 
 El orden es importante en todas las partes del archivo de configuración personalizada. Puede cambiar el orden en que se ejecutan las reglas moviéndolas arriba o abajo dentro del nodo **dependentFileProvider**. Por ejemplo, si tiene una regla que hace que **file.js** sea el elemento primario de **file.ts**, y otra regla que hace que **file.coffee** sea el elemento primario de **file.ts**, el orden en que aparecen en el archivo dicta el comportamiento de anidamiento cuando los tres archivos están presentes. Puesto que **file.ts** solo puede tener un elemento primario, la regla que se ejecuta primero es la que tiene prioridad.
 
