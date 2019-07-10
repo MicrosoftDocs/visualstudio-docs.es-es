@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: be514104ebc3cd908cd9469c6b674a22f9dad401
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: a1b90f37dcdadc53b6f2a81b9b4e9a860dd6a529
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65696196"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692532"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>Ampliar DSL mediante MEF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -131,7 +131,7 @@ Puede ampliar su lenguaje específico de dominio (DSL) mediante el uso de Manage
   
    - Normalmente, este ensamblado tiene un nombre que termina con ". DSL.dll".  
   
-   - Si tiene acceso al proyecto de DSL, puede encontrar el archivo de ensamblado en el directorio **Dsl\bin\\\\** *  
+   - Si tiene acceso al proyecto de DSL, puede encontrar el archivo de ensamblado en el directorio **Dsl\\bin\\\***  
   
    - Si tiene acceso al archivo VSIX de DSL, puede encontrar el ensamblado cambiando la extensión de nombre de archivo del archivo VSIX para "zip". Descomprima el archivo zip.  
   
@@ -159,7 +159,7 @@ Puede ampliar su lenguaje específico de dominio (DSL) mediante el uso de Manage
   
    1. En **source.extension.vsixmanifest**, haga clic en **Agregar referencia**  
   
-   2. En el cuadro de diálogo, haga clic en **agregar carga** y, a continuación, busque el archivo VSIX del DSL. Se compila el archivo VSIX en la solución de DSL en ** DslPackage\bin\\\\***.  
+   2. En el cuadro de diálogo, haga clic en **agregar carga** y, a continuación, busque el archivo VSIX del DSL. Generado en el archivo VSIX en la solución de DSL, **DslPackage\\bin\\\*** .  
   
        Esto permite a los usuarios instalar el DSL y la extensión al mismo tiempo. Si el usuario ya ha instalado el DSL, se instalará solo la extensión.  
   
