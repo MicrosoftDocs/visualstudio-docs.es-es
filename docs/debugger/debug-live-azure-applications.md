@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: f3dbd175ef5575375c314b942fedff9f77403265
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: af3f393aea8d1ecddaf021c896839d663b7d4028
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62860404"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692112"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Depuración de aplicaciones de Azure de ASP.NET en vivo con Snapshot Debugger
 
@@ -65,17 +65,17 @@ En este tutorial va a:
 ::: moniker range=">=vs-2019"
 2. Elija **Depurar > Asociar Snapshot Debugger...** Seleccione la instancia de Azure App Service en la que se implementó el proyecto y una cuenta de Azure Storage y, a continuación, haga clic en **Adjuntar**.
 
-      ![Inicio de Snapshot Debugger desde el menú Depurar](../debugger/media/snapshot-debug-menu-attach.png)
+   ![Inicio de Snapshot Debugger desde el menú Depurar](../debugger/media/snapshot-debug-menu-attach.png)
 
-      ![Seleccione un recurso de Azure](../debugger/media/snapshot-select-azure-resource-appservices.png)
+   ![Seleccione un recurso de Azure](../debugger/media/snapshot-select-azure-resource-appservices.png)
 
 ::: moniker-end
 
-  > [!IMPORTANT]
-  > La primera vez que selecciona **Asociar Snapshot Debugger**, se le pide que instale la extensión de sitio de Snapshot Debugger en la instancia de Azure App Service. Esta instalación requiere un reinicio de Azure App Service.
+   > [!IMPORTANT]
+   > La primera vez que selecciona **Asociar Snapshot Debugger**, se le pide que instale la extensión de sitio de Snapshot Debugger en la instancia de Azure App Service. Esta instalación requiere un reinicio de Azure App Service.
 
-  > [!NOTE]
-  > La extensión de sitio de Application Insights también admite la depuración de instantáneas. Si aparece un mensaje de error "la extensión de sitio no está actualizada", vea las [sugerencias de solución de problemas y los problemas conocidos con la depuración de instantáneas](../debugger/debug-live-azure-apps-troubleshooting.md) para actualizar los detalles.
+   > [!NOTE]
+   > La extensión de sitio de Application Insights también admite la depuración de instantáneas. Si aparece un mensaje de error "la extensión de sitio no está actualizada", vea las [sugerencias de solución de problemas y los problemas conocidos con la depuración de instantáneas](../debugger/debug-live-azure-apps-troubleshooting.md) para actualizar los detalles.
 
    Visual Studio ahora está en modo de depuración de instantáneas.
    ![Modo de depuración instantánea](../debugger/media/snapshot-message.png)
