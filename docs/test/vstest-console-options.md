@@ -10,12 +10,12 @@ author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8bf4cea6dcd87b8cf0d2113ac3a245163ba89080
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: eef81a2075f05acf8ea6ab8b42f77797425a3abd
+ms.sourcegitcommit: 74c5360186731de07828764eb32ea1033a8c2275
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746915"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67559612"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>Opciones de la línea de comandos para VSTest.Console.exe
 
@@ -30,7 +30,7 @@ ms.locfileid: "66746915"
 
 En la siguiente tabla se muestran todas las opciones de *VSTest.Console.exe* junto con una breve descripción. Puede ver un resumen similar si escribe `VSTest.Console/?` en una línea de comandos.
 
-| Opción | Descripción |
+| Opción | DESCRIPCIÓN |
 |---|---|
 |**[*nombres de archivos de prueba*]**|Ejecuta pruebas desde los archivos especificados. Separe varios nombres de archivos de prueba con espacios.<br />Ejemplos: `mytestproject.dll`, `mytestproject.dll myothertestproject.exe`|
 |**/Settings:[*nombre de archivo*]**|Ejecuta pruebas con opciones adicionales, como recolectores de datos.<br />Ejemplo: `/Settings:Local.RunSettings`|
@@ -44,7 +44,7 @@ En la siguiente tabla se muestran todas las opciones de *VSTest.Console.exe* jun
 |**/Framework: [*versión de Framework*]**|Establezca como destino la versión de .NET que se va a usar para la ejecución de pruebas.<br />Los valores válidos son Framework35, Framework40, Framework45 y FrameworkUap10.<br />Si la plataforma de destino se especifica como **Framework35**, las pruebas se ejecutan en "modo de compatibilidad" de CLR 4.0.<br />Ejemplo: `/Framework:framework40`|
 |**/TestCaseFilter:[*expresión*]**|Ejecuta pruebas que coinciden con la expresión dada.<br /><Expression\> tiene el formato <property\>=<value\>[\|<Expression\>].<br />Ejemplo: `/TestCaseFilter:"Priority=1"`<br />Ejemplo: `/TestCaseFilter:"TestCategory=Nightly|FullyQualifiedName=Namespace.ClassName.MethodName"`<br />La opción de línea de comandos **/TestCaseFilter** no se puede usar con la opción de línea de comandos **/Tests**. <br />Para obtener información sobre cómo crear y usar expresiones, vea [TestCase filter](https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md) (Filtro TestCase).|
 |**/?**|Muestra información de uso.|
-|**/Logger:[*uri o nombre descriptivo*]**|Especifica un registrador para resultados de pruebas.<br />Ejemplo: Para registrar resultados en un archivo de resultados de pruebas (TRX) de Visual Studio, use **/Logger:trx**.<br />Ejemplo: Para publicar resultados de pruebas en Team Foundation Server, use TfsPublisher:<br />**/logger:TfsPublisher;**<br />**Collection=<url del proyecto\>;**<br />**BuildName=<nombre de compilación\>;**<br />**TeamProject=<nombre del proyecto\>;**<br />**[;Platform=<Valor predeterminado "Cualquier CPU">]**<br />**[;Flavor=<Valor predeterminado "Depurar">]**<br />**[;RunTitle=<título\>]**|
+|**/Logger:[*uri o nombre descriptivo*]**|Especifica un registrador para resultados de pruebas.<br />Ejemplo: Para registrar resultados en un archivo de resultados de pruebas (TRX) de Visual Studio, use **/Logger:trx**.<br />Ejemplo: Para publicar resultados de pruebas en Team Foundation Server, use TfsPublisher:<br />**/logger:TfsPublisher;**<br />**Collection=<url del proyecto\>;**<br />**BuildName=<nombre de compilación\>;**<br />**TeamProject=<nombre del proyecto\>;**<br />**[;Platform=\<Valor predeterminado "Cualquier CPU">]**<br />**[;Flavor=\<Valor predeterminado "Depurar">]**<br />**[;RunTitle=<título\>]**|
 |**/ListTests:[*nombre de archivo*]**|Muestra las pruebas detectadas del contenedor de pruebas especificado.|
 |**/ListDiscoverers**|Muestra los programas de detección de pruebas instalados.|
 |**/ListExecutors**|Muestra los programas de ejecución de pruebas instalados.|
