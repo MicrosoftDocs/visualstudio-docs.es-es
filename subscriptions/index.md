@@ -7,13 +7,12 @@ layout: LandingPage
 Ms.date: 06/25/2018
 Ms.topic: landing-page
 Description: Bienvenido a las suscripciones de Visual Studio
-Searchscope: VS Subscription
-ms.openlocfilehash: 1515b7da3cadb8397f38554498fb4880db2d3b03
-ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
+ms.openlocfilehash: d5083141fdaaf5eede2cc181c51cd0340575bbb9
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67259479"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67784384"
 ---
 # <a name="visual-studio-subscriptions"></a>Suscripciones de Visual Studio
 

@@ -1,7 +1,3 @@
 - name: Docs
   tocHref: /
   topicHref: /
-  items:
-    - name: Suscripciones de Visual Studio
-      tocHref: /visualstudio/subscriptions/
-      topicHref: /visualstudio/subscriptions
