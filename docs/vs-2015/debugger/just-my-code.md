@@ -14,12 +14,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 560ab40811bc53c97e7097e510144d62aeddfbb2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: efcabf9c7dc201f95515cd24bf3a14727f7149fe
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63421825"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823954"
 ---
 # <a name="just-my-code"></a>Solo mi código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +64,7 @@ Los desarrolladores que utilizan lenguajes de .NET Framework están familiarizad
 ### <a name="BKMK_NET_Exception_behavior"></a> Comportamiento de excepción  
  Si se produce una excepción no controlada en código que no es de usuario, el depurador interrumpe la ejecución en la línea del código de usuario donde se generó la excepción.  
   
- Si se han habilitado excepciones de primera aparición para la excepción, la línea de código de usuario se resalta en color verde. La pila de llamadas muestra un marco anotado con la etiqueta **[código externo]**.  
+ Si se han habilitado excepciones de primera aparición para la excepción, la línea de código de usuario se resalta en color verde. La pila de llamadas muestra un marco anotado con la etiqueta **[código externo]** .  
   
 ## <a name="BKMK_C___Just_My_Code"></a> Solo mi código de C++  
   
@@ -120,12 +120,12 @@ Los desarrolladores que utilizan lenguajes de .NET Framework están familiarizad
   
 ```  
   
-|Elemento|Descripción|  
+|Elemento|DESCRIPCIÓN|  
 |-------------|-----------------|  
-|Función|Obligatorio. Especifica una o más funciones como funciones que no son de usuario.|  
-|`Name`|Obligatorio. Expresión regular con formato ECMA-262 que especifica el nombre de función completo que debe coincidir. Por ejemplo:<br /><br /> `<Name>MyNS::MyClass.*</Name>`<br /><br /> indica al depurador que todos los métodos de `MyNS::MyClass` deben considerarse código que no es de usuario. La coincidencia distingue mayúsculas de minúsculas.|  
+|Función|Necesario. Especifica una o más funciones como funciones que no son de usuario.|  
+|`Name`|Necesario. Expresión regular con formato ECMA-262 que especifica el nombre de función completo que debe coincidir. Por ejemplo:<br /><br /> `<Name>MyNS::MyClass.*</Name>`<br /><br /> indica al depurador que todos los métodos de `MyNS::MyClass` deben considerarse código que no es de usuario. La coincidencia distingue mayúsculas de minúsculas.|  
 |`Module`|Opcional. Expresión regular con formato ECMA-262 que especifica la ruta de acceso completa al módulo que contiene la función. La búsqueda no distingue entre mayúsculas y minúsculas.|  
-|`Action`|Obligatorio. Uno de estos valores que distingue mayúsculas y minúsculas:<br /><br /> -   `NoStepInto`  : indica al depurador que omita la función coincidente.<br />-   `StepInto`  : indica al depurador paso a paso por las funciones coincidentes, invalidando cualquier otro `NoStepInto` para las funciones coincidentes.|  
+|`Action`|Necesario. Uno de estos valores que distingue mayúsculas y minúsculas:<br /><br /> -   `NoStepInto`  : indica al depurador que omita la función coincidente.<br />-   `StepInto`  : indica al depurador paso a paso por las funciones coincidentes, invalidando cualquier otro `NoStepInto` para las funciones coincidentes.|  
   
 ### <a name="BKMK_CPP_Customize_call_stack_behavior"></a> Personalizar el comportamiento de la pila de llamadas  
  Se puede especificar que se trate como código que no es de usuario módulos, archivos de código fuente y funciones en las pilas de llamadas; para ello, hay que especificarlos en archivos `*.natjmc`.  
@@ -158,22 +158,22 @@ Los desarrolladores que utilizan lenguajes de .NET Framework están familiarizad
   
  **Atributos del elemento Module**  
   
-|Atributo|Descripción|  
+|Atributo|DESCRIPCIÓN|  
 |---------------|-----------------|  
-|`Name`|Obligatorio. Ruta de acceso completa al módulo o los módulos. Puede usar los caracteres comodín `?` (cero o un carácter) y `*` (cero o más caracteres) de Windows. Por ejemplo,<br /><br /> `<Module Name=”?:\3rdParty\UtilLibs\*” />`<br /><br /> indica al depurador que trate como código externo todos los módulos de `\3rdParty\UtilLibs` en cualquier unidad.|  
+|`Name`|Necesario. Ruta de acceso completa al módulo o los módulos. Puede usar los caracteres comodín `?` (cero o un carácter) y `*` (cero o más caracteres) de Windows. Por ejemplo,<br /><br /> `<Module Name=”?:\3rdParty\UtilLibs\*” />`<br /><br /> indica al depurador que trate como código externo todos los módulos de `\3rdParty\UtilLibs` en cualquier unidad.|  
 |`Company`|Opcional. Nombre de la compañía que publica el módulo que está incrustado en el archivo ejecutable. Puede utilizar este atributo para eliminar la ambigüedad de los módulos.|  
   
  **Atributos del elemento File**  
   
-|Atributo|Descripción|  
+|Atributo|DESCRIPCIÓN|  
 |---------------|-----------------|  
-|`Name`|Obligatorio. Ruta de acceso completa del archivo o archivos de código fuente que se van a tratar como código externo. Puede usar los caracteres comodín `?` y `*` de Windows para especificar la ruta de acceso.|  
+|`Name`|Necesario. Ruta de acceso completa del archivo o archivos de código fuente que se van a tratar como código externo. Puede usar los caracteres comodín `?` y `*` de Windows para especificar la ruta de acceso.|  
   
  **Atributos del elemento Function**  
   
-|Atributo|Descripción|  
+|Atributo|DESCRIPCIÓN|  
 |---------------|-----------------|  
-|`Name`|Obligatorio. Nombre completo de la función que se va a tratar como código externo.|  
+|`Name`|Necesario. Nombre completo de la función que se va a tratar como código externo.|  
 |`Module`|Opcional. Nombre o ruta de acceso completa al módulo que contiene la función. Puede utilizar este atributo para eliminar la ambigüedad de funciones que tienen el mismo nombre.|  
 |`ExceptionImplementation`|Cuando se establece en `true`, la pila de llamadas muestra la función que produjo la excepción en lugar de esta función.|  
   
@@ -222,9 +222,9 @@ Los desarrolladores que utilizan lenguajes de .NET Framework están familiarizad
   
 - Si se encuentra la palabra clave `debugger` en:  
   
-    - **LibraryCode** código, el depurador siempre interrumpe.  
-  
-    - **UnrelatedCode** código, no se detiene el depurador.  
+  - **LibraryCode** código, el depurador siempre interrumpe.  
+
+  - **UnrelatedCode** código, no se detiene el depurador.  
   
 ### <a name="BKMK_JS_Exception_behavior"></a> Comportamiento de excepción  
  Si se produce una excepción no controlada en:  

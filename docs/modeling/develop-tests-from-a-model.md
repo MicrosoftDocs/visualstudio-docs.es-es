@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cc81e0f0912e2a32a6fc582420f4fef9823b9891
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7d2fd53b3dc1237e9d31daf0e80fff3ddf5f1475
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62982635"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821948"
 ---
 # <a name="develop-tests-from-a-model"></a>Desarrollar pruebas en un modelo
 Puede usar modelos arquitectónicos y modelos de requisitos que le ayuden a organizar las pruebas del sistema y sus componentes. Con esta práctica, tendrá la certeza de que incluye en la prueba los requisitos que son importantes para los usuarios y otras partes interesadas, y podrá actualizar las pruebas rápidamente cuando cambien los requisitos. Si usa [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)], también puede mantener vínculos entre los modelos y las pruebas.
@@ -46,9 +46,9 @@ Puede usar modelos arquitectónicos y modelos de requisitos que le ayuden a orga
 
 - Cree pruebas independientes basadas en las distintas cláusulas de la condición posterior. Por ejemplo, cree pruebas distintas para notificar el pedido al restaurante y para realizar el pago del cliente. Esta separación tiene las siguientes ventajas:
 
-    - Los cambios en los distintos aspectos de los requisitos suelen producirse de forma independiente. Al dividir las pruebas en diferentes aspectos de esta manera, resulta más sencillo actualizar las pruebas cuando cambian los requisitos.
+  - Los cambios en los distintos aspectos de los requisitos suelen producirse de forma independiente. Al dividir las pruebas en diferentes aspectos de esta manera, resulta más sencillo actualizar las pruebas cuando cambian los requisitos.
 
-    - Si el plan de desarrollo implementa un aspecto del caso de uso antes que otro, puede habilitar las pruebas de forma independiente a medida que progresa el desarrollo.
+  - Si el plan de desarrollo implementa un aspecto del caso de uso antes que otro, puede habilitar las pruebas de forma independiente a medida que progresa el desarrollo.
 
 - Cuando diseñe las pruebas, separe los datos de la prueba que ha elegido del código o del script que determina si se ha logrado la condición posterior. Por ejemplo, una prueba de una función aritmética sencilla podría ser: Entrada 4; Compruebe que el resultado es 2. En su lugar, diseñe el script como: Elija una entrada; multiplique el resultado por sí mismo y compruebe que el resultado es la entrada original. Este estilo permite variar las entradas de prueba sin cambiar el cuerpo principal de la prueba.
 

@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4c5713adc98a0b6ed3f57e604e2e1874b3d95f0a
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: ed6e544378089222cb69c491b0cd473544e05220
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65678864"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825650"
 ---
 # <a name="synchronized-settings-in-visual-studio"></a>Configuración sincronizada en Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,17 +30,17 @@ Al usar la misma cuenta de personalización para iniciar sesión en Visual Studi
 
 - Las siguientes opciones de las páginas **Herramientas &#124; Opciones**:
 
-    - La configuración de uso de mayúsculas y minúsculas de la barra de menús y de **Tema**, en la página de opciones **Entorno**, **General**
+  - La configuración de uso de mayúsculas y minúsculas de la barra de menús y de **Tema**, en la página de opciones **Entorno**, **General**
 
-    - Todos los valores de la página de opciones **Entorno**, **Fuentes y colores**
+  - Todos los valores de la página de opciones **Entorno**, **Fuentes y colores**
 
-    - Todos los métodos abreviados de teclado, en la página de opciones **Entorno**, **Teclado**
+  - Todos los métodos abreviados de teclado, en la página de opciones **Entorno**, **Teclado**
 
-    - Todos los valores de la página de opciones **Entorno, Pestañas y ventanas**
+  - Todos los valores de la página de opciones **Entorno, Pestañas y ventanas**
 
-    - Todos los valores de la página de opciones **Entorno**, **Inicio**
+  - Todos los valores de la página de opciones **Entorno**, **Inicio**
 
-    - Todos los valores de las páginas de opciones **Editor de texto**
+  - Todos los valores de las páginas de opciones **Editor de texto**
 
 - Todos los valores de las páginas de opciones Diseñador XAML
 
@@ -57,5 +57,5 @@ Al usar la misma cuenta de personalización para iniciar sesión en Visual Studi
 > [!WARNING]
 > La configuración no se sincroniza entre Visual Studio 2013 y Visual Studio 2015. La primera vez que abra Visual Studio 2015, se migra la configuración desde Visual Studio 2013, pero no se puede volver a migrar a Visual Studio 2013 después de eso.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Otras referencias
  [Personalizar el IDE](../ide/personalizing-the-visual-studio-ide.md)

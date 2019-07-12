@@ -12,12 +12,12 @@ ms.assetid: e3128ac3-2e92-48e9-87ab-3b6c9d80e8c9
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c46e42a00e21e6896a0571e788801d24d3978db1
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 289e506d3cd404bba9a3a63d97179b89a948d381
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65685342"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821976"
 ---
 # <a name="choosing-between-shared-and-versioned-vspackages"></a>Elección entre VSPackages compartidos y con versiones
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,9 +33,9 @@ Las diferentes versiones de Visual Studio pueden coexistir en el mismo equipo. L
   
 - Hacer que el VSPackage que sean compatibles con varias versiones de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Dos maneras de hacerlo así que están disponibles:  
   
-    - Limitar el VSPackage para usar solo las características de la versión anterior de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] que proporciona soporte técnico.  
-  
-    - Programar el paquete de VS para adaptarse a la versión de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] en que se está ejecutando. A continuación, si se produce un error en las consultas para los servicios más recientes, el paquete de VS puede ofrecer otros servicios que se admiten en versiones anteriores de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+  - Limitar el VSPackage para usar solo las características de la versión anterior de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] que proporciona soporte técnico.  
+
+  - Programar el paquete de VS para adaptarse a la versión de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] en que se está ejecutando. A continuación, si se produce un error en las consultas para los servicios más recientes, el paquete de VS puede ofrecer otros servicios que se admiten en versiones anteriores de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 - Registre el VSPackage adecuadamente. Para obtener más información, consulte [registro de VSPackage](../extensibility/internals/vspackage-registration.md) y [administra el registro de VSPackage](https://msdn.microsoft.com/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1).  
   

@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b82af5d19b45092f649b22503cfbdf1001433c30
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: ad4e3c3007a00245f632e4645deb1014b5c22508
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746805"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821388"
 ---
 # <a name="create-a-windows-forms-based-domain-specific-language"></a>Creación de un lenguaje específico de dominio basada en formularios de Windows
 
@@ -59,9 +59,9 @@ El **Diseñador de WinForm mínimo** plantilla DSL crea un DSL mínimo que puede
 
 - El `UI` proyecto contiene un ejemplo funcional de un control de formulario enlazado a la línea ADSL. Sin embargo, no funcionará cuando han cambiado la definición de DSL. El `UI` contiene el proyecto:
 
-    - Una clase de Windows Forms denominada `ModelViewControl`.
+  - Una clase de Windows Forms denominada `ModelViewControl`.
 
-    - Un archivo denominado `DataBinding.cs` que contiene una definición parcial adicional de `ModelViewControl`. Para ver su contenido, en **el Explorador de soluciones**, abra el menú contextual para el archivo y elija **ver código**.
+  - Un archivo denominado `DataBinding.cs` que contiene una definición parcial adicional de `ModelViewControl`. Para ver su contenido, en **el Explorador de soluciones**, abra el menú contextual para el archivo y elija **ver código**.
 
 ### <a name="about-the-ui-project"></a>Acerca del proyecto de interfaz de usuario
 

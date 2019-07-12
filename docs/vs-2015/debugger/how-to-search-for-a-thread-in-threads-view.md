@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: d5974bc962faf439af8de5d50bf51bad3d824647
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439090"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64827355"
 ---
 # <a name="how-to-search-for-a-thread-in-threads-view"></a>Procedimiento Búsqueda de un subproceso en la vista Subprocesos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,6 +40,6 @@ Puede buscar un subproceso concreto en la vista de subprocesos mediante el uso d
   
 5. Elija **seguridad** o **abajo** para la dirección inicial de la búsqueda.  
   
-6. Haga clic en **Aceptar**.  
+6. Haga clic en **OK**.  
   
    Si se encuentra un subproceso coincidente, éste se resalta en la ventana de vista de subprocesos.

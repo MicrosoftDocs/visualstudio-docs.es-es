@@ -23,12 +23,12 @@ caps.latest.revision: 54
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5169f59ec12482fd35e09d4eb226277b7fb01455
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 48b9bbc596e97215654ff48c72298242a47f603e
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65704535"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825459"
 ---
 # <a name="javascript-memory"></a>Memoria de JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -282,14 +282,14 @@ El analizador de memoria de JavaScript está disponible en Visual Studio para ay
   
   Para filtrar información diferencial entre instantáneas, elige uno de los filtros **Ámbito** de la parte superior de las vistas diferenciales.  
   
-- **Objetos dejados de la instantánea n.º \<número>**. Este filtro muestra la diferencia entre los objetos agregados al montón y quitados de él con respecto a la instantánea de línea de base y la anterior. Por ejemplo, si el resumen de instantánea muestra +205/-195 en el recuento de objetos, este filtro te mostrará los diez objetos que se agregaron pero no se quitaron.  
+- **Objetos dejados de la instantánea n.º \<número>** . Este filtro muestra la diferencia entre los objetos agregados al montón y quitados de él con respecto a la instantánea de línea de base y la anterior. Por ejemplo, si el resumen de instantánea muestra +205/-195 en el recuento de objetos, este filtro te mostrará los diez objetos que se agregaron pero no se quitaron.  
   
   > [!TIP]
   > Para mostrar la información más útil en este filtro, siga los pasos descritos en [Isolate a memory leak](#Isolate).  
   
-- **Objetos agregados entre las instantáneas n.º \<número> y \<número>**. Este filtro muestra todos los objetos agregados al montón desde la instantánea anterior.  
+- **Objetos agregados entre las instantáneas n.º \<número> y \<número>** . Este filtro muestra todos los objetos agregados al montón desde la instantánea anterior.  
   
-- **Todos los objetos de la instantánea n.º \<número>**. Este valor de filtro no filtra ningún objeto en el montón.  
+- **Todos los objetos de la instantánea n.º \<número>** . Este valor de filtro no filtra ningún objeto en el montón.  
   
   Para mostrar las referencias de objeto que no coinciden con el filtro **Ámbito** actual, seleccione **Mostrar referencias no coincidentes** en la lista de configuración ![Lista desplegable de configuración en el analizador de memoria](../profiling/media/js-mem-settings.png "JS_Mem_Settings") de la esquina superior derecha del panel. Si habilita este valor, las referencias no coincidentes se muestran con un texto gris.  
   
@@ -382,11 +382,11 @@ if (performance && performance.mark) {
   
 - Buscar objetos que se conserven en memoria involuntariamente después de que el usuario haya navegado a una nueva página. Esta es una causa frecuente de los problemas de memoria. Por ejemplo:  
   
-    - El uso incorrecto de la función [URL.CreateObjectUrl](https://msdn.microsoft.com/library/windows/apps/hh453196.aspx) puede producir este problema.  
-  
-    - Algunos objetos pueden proporcionar un método `dispose` y recomendaciones de uso. Por ejemplo, debería llamar a `dispose` en [WinJS.Binding.List](https://msdn.microsoft.com/library/windows/apps/Hh700774.aspx) si llama al método `createFiltered` de la lista y luego sale de una página.  
-  
-    - Podrías tener que quitar uno o varios agentes de escucha de eventos. Para obtener más información, consulta [View DOM event listeners](../debugger/view-dom-event-listeners.md).  
+  - El uso incorrecto de la función [URL.CreateObjectUrl](https://msdn.microsoft.com/library/windows/apps/hh453196.aspx) puede producir este problema.  
+
+  - Algunos objetos pueden proporcionar un método `dispose` y recomendaciones de uso. Por ejemplo, debería llamar a `dispose` en [WinJS.Binding.List](https://msdn.microsoft.com/library/windows/apps/Hh700774.aspx) si llama al método `createFiltered` de la lista y luego sale de una página.  
+
+  - Podrías tener que quitar uno o varios agentes de escucha de eventos. Para obtener más información, consulta [View DOM event listeners](../debugger/view-dom-event-listeners.md).  
   
 - Mira la última parte de [este vídeo](http://channel9.msdn.com/Events/Build/2013/3-316) de la conferencia Build 2013 sobre el analizador de memoria de JavaScript.  
   
@@ -394,11 +394,11 @@ if (performance && performance.mark) {
   
 - Considera la posibilidad de modificar temporalmente el código para aislar problemas. Por ejemplo, puedes:  
   
-    - Usar los comandos del analizador de memoria, `console.takeSnapshot` y `performance.mark`. (Vea [Associate source code with memory usage data](#JSConsoleCommands).)  
-  
-         Puedes usar estos comandos para intentar aislar los problemas que no se pueden aislar manualmente tomando una instantánea del montón.  
-  
-    - Crea un objeto de prueba y realiza un seguimiento de él en las vistas del analizador de memoria de JavaScript, como la vista Tipos. Por ejemplo, puedes adjuntar un objeto muy grande a otro para ver si un objeto o elemento determinado se ha detectado durante la recolección de elementos no utilizados.  
-  
-## <a name="see-also"></a>Vea también  
+  - Usar los comandos del analizador de memoria, `console.takeSnapshot` y `performance.mark`. (Vea [Associate source code with memory usage data](#JSConsoleCommands).)  
+
+    Puedes usar estos comandos para intentar aislar los problemas que no se pueden aislar manualmente tomando una instantánea del montón.  
+
+  - Crea un objeto de prueba y realiza un seguimiento de él en las vistas del analizador de memoria de JavaScript, como la vista Tipos. Por ejemplo, puedes adjuntar un objeto muy grande a otro para ver si un objeto o elemento determinado se ha detectado durante la recolección de elementos no utilizados.  
+
+## <a name="see-also"></a>Otras referencias  
  [Tutorial: Buscar fugas de memoria (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md)

@@ -23,12 +23,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5f9968b14eaf74a00a66d8fb7c86890938ddfa4b
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 64a5edbec2f9f482981002e609117996f0080e56
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65692548"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825894"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Leer datos XML en un conjunto de datos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -147,9 +147,9 @@ ADO.NET proporciona métodos sencillos para trabajar con datos XML. En este tuto
   
 - Dos <xref:System.Windows.Forms.Button> controles.  
   
-    - Lee el archivo XML en el conjunto de datos de un botón y lo muestra en el <xref:System.Windows.Forms.DataGridView> control.  
-  
-    - Un segundo botón extrae el esquema del conjunto de datos y, a través de un <xref:System.IO.StringWriter> lo muestra en el <xref:System.Windows.Forms.TextBox> control.  
+  - Lee el archivo XML en el conjunto de datos de un botón y lo muestra en el <xref:System.Windows.Forms.DataGridView> control.  
+
+  - Un segundo botón extrae el esquema del conjunto de datos y, a través de un <xref:System.IO.StringWriter> lo muestra en el <xref:System.Windows.Forms.TextBox> control.  
   
 #### <a name="to-add-controls-to-the-form"></a>Para agregar controles al formulario  
   
@@ -169,9 +169,9 @@ ADO.NET proporciona métodos sencillos para trabajar con datos XML. En este tuto
     |-------------|--------------|-------------|  
     |`TextBox1`|**Multiline**|`true`|  
     ||**ScrollBars**|**Vertical**|  
-    |`Button1`|**Name**|`ReadXmlButton`|  
+    |`Button1`|**Nombre**|`ReadXmlButton`|  
     ||**Texto**|`Read XML`|  
-    |`Button2`|**Name**|`ShowSchemaButton`|  
+    |`Button2`|**Nombre**|`ShowSchemaButton`|  
     ||**Texto**|`Show Schema`|  
   
 ## <a name="create-the-dataset-thatreceives-the-xml-data"></a>Crear el conjunto de datos thatreceives los datos XML  

@@ -8,12 +8,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 62d8a2ad847ef1b9aaad02b2739e8154b3148425
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 9cda710a3a2f4945e96e706479996da0a1fa7e12
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747268"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825732"
 ---
 # <a name="unsupported-debugging-scenarios-in-the-workflow-designer"></a>Escenarios de depuración no admitidos en el Diseñador de flujo de trabajo
 
@@ -41,16 +41,16 @@ El Diseñador de flujo de trabajo no admite los siguientes escenarios de depurac
 
 - La ventana o el menú contextual Punto de interrupción no admiten las siguientes columnas u opciones para la depuración de flujos de trabajo:
 
-    - Condición
+  - Condición
 
-    - Número de llamadas
+  - Número de llamadas
 
-    - Al visitar
+  - Al visitar
 
-    - Función
+  - Función
 
-    - Datos
+  - Datos
 
-    - Proceso
+  - Process
 
-    - Ir al desensamblado
+  - Ir al desensamblado
