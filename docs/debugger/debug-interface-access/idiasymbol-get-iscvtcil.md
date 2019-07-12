@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c185e2ece30a29801506347a393e138e49fd138b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63399975"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64796598"
 ---
 # <a name="idiasymbolgetiscvtcil"></a>IDiaSymbol::get_isCVTCIL
 Recupera una marca que indica si el módulo se convirtió desde un módulo de Common Intermediate Language (CIL) en un módulo nativo.
@@ -46,7 +46,7 @@ HRESULT get_isCVTCIL(
 
 ## <a name="requirements"></a>Requisitos
 
-|Requisito|Descripción|
+|Requisito|DESCRIPCIÓN|
 |-----------------|-----------------|
 |Encabezado:|dia2.h|
 |Versión:|SDK de DIA v8.0|

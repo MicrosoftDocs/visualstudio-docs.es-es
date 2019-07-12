@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7c9b267893bacef8c9126b1a17b4eb444af6a1dd
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 07/12/2019
 ms.locfileid: "65692885"
 ---
 # <a name="idiasymbol"></a>IDiaSymbol
@@ -37,7 +37,7 @@ IDiaSymbol : IUnknown
 > [!NOTE]
 > Símbolos devolverá datos significativos sólo para algunos de estos métodos, según el tipo de símbolo. Si el método devuelve `S_OK`, a continuación, ese método ha devuelto datos significativos.  
   
-|Método|Descripción|  
+|Método|DESCRIPCIÓN|  
 |------------|-----------------|  
 |[IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)|Recupera a todos los elementos secundarios del símbolo.|  
 |[IDiaSymbol::findChildrenEx](../../debugger/debug-interface-access/idiasymbol-findchildrenex.md)|Recupera a los elementos secundarios del símbolo. Este método es la versión extendida de [Findchildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md).|  

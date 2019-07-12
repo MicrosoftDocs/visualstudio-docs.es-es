@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 24ecf0e87a954afc2577c5e374bd22ac9da024be
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 918368ff9ce8f9d0363d3ae0cba85e55dc361086
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66335401"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824602"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Patrones compuestos para Visual Studio
 Patrones compuestos combinan elementos de interacción y diseño de configuraciones distintas. Algunos de los patrones compuestos más importantes en Visual Studio con respecto a la coherencia incluyen:
@@ -226,7 +226,7 @@ Patrones compuestos combinan elementos de interacción y diseño de configuracio
 
 - **Siempre** intenta crear un indicador que resume la información hace que estén disponible. Considere proporcionar un recuento del número de elementos de datos disponibles (por ejemplo, "3 referencias" en lugar de simplemente "Referencias") o pensar en alguna otra forma de resumir los datos.
 
-    - En casos donde los datos de un indicador no siempre se calcula y muestra, considere inmediatamente comentarios progresiva tal como se calculan los valores. Por ejemplo, considere la posibilidad de animar los cambios que reflejan las actualizaciones de los datos disponibles, similares a la manera en que se actualiza el icono dinámico de correo electrónico en Windows Phone como el número de correos electrónicos no leídos aumenta.
+  - En casos donde los datos de un indicador no siempre se calcula y muestra, considere inmediatamente comentarios progresiva tal como se calculan los valores. Por ejemplo, considere la posibilidad de animar los cambios que reflejan las actualizaciones de los datos disponibles, similares a la manera en que se actualiza el icono dinámico de correo electrónico en Windows Phone como el número de correos electrónicos no leídos aumenta.
 
 - **Nunca** agregar indicadores más que un usuario puede tardar bastante para una parte determinada del contenido. Indicadores de ambientales deben ser útiles sin necesidad de ninguna interacción del usuario. Indicadores de perderán su ambiente si requieren desbordamiento y otros controles de administración para ponerlos en la vista.
 
@@ -235,11 +235,11 @@ Patrones compuestos combinan elementos de interacción y diseño de configuracio
 
 - **Siempre** requieren que el usuario realizar algunas gesto explícito para abrir el contenido adicional. Gestos abiertos comunes incluyen:
 
-    - **Al mantener el mouse:** información sobre herramientas o contenido informativo no interactivo
+  - **Al mantener el mouse:** información sobre herramientas o contenido informativo no interactivo
 
-    - **Comando explícito:** moderador en línea
+  - **Comando explícito:** moderador en línea
 
-    - **Haga doble clic en el indicador de ambiente:** Ventana emergente de CodeLens
+  - **Haga doble clic en el indicador de ambiente:** Ventana emergente de CodeLens
 
 - **Siempre** descartar el contenido de detalle siempre que el usuario presiona la tecla Esc.
 
@@ -256,7 +256,7 @@ Patrones compuestos combinan elementos de interacción y diseño de configuracio
 
  En Visual Studio, como en Windows, los modelos de selección varían según el contexto en el que se produce la interacción. Selecciones pueden producirse en cuatro tipos de objetos:
 
-- Texto
+- Text
 
 - Objetos gráficos
 
@@ -272,7 +272,7 @@ Patrones compuestos combinan elementos de interacción y diseño de configuracio
 
 - Región
 
-#### <a name="scope"></a>Ámbito
+#### <a name="scope"></a>Scope
  El componente más importante de selección es asegurarse de que el usuario sabe en qué ventana funcionan (activación) y dónde el foco se encuentra (selección). Visual Studio extiende la funcionalidad de administración de la ventana de Windows, pero el esquema de activación es el mismo: interactuar con una ventana trae el foco a la ventana. Visual Studio tiene dos indicadores para la activación: uno para las ventanas de documento y otro para las ventanas de herramientas.
 
  Para las ventanas de documento, la ventana activa se indica mediante una ficha de ventana de documento llega a la parte delantera y cambiar su color de fondo:
@@ -293,7 +293,7 @@ Patrones compuestos combinan elementos de interacción y diseño de configuracio
 
  Una vez que una ventana está activa, se indica la importancia según los modelos de selección que se describen en esta sección de las instrucciones.
 
-#### <a name="context"></a>Contexto
+#### <a name="context"></a>Context
  Visual Studio fue diseñado para conservar un fuerte concepto de contexto, realizando un seguimiento de donde el usuario está trabajando. Sólo una ventana está activa, ya sea una ventana de herramientas o documento. Sin embargo, la ventana de documento superior siempre conserva una selección latente. Aunque el foco esté en una ventana de herramientas, la ventana de documento que estuvo activo muestra una selección, incluso en un estado inactivo. Esto sirve para conservar el contexto del usuario en el documento que estaba editando, que se muestra que Visual Studio conserva su estado para que puede devolver- and -shift sin problemas entre las ventanas de herramientas y ventanas de documento.
 
 ### <a name="text-selection"></a>Selección de texto
@@ -395,14 +395,14 @@ Patrones compuestos combinan elementos de interacción y diseño de configuracio
 
 | Estado | Apariencia | Detalles de Visual |
 |-------------------------|---------------| - |
-| **No seleccionado** | Default | ![Estado del botón predeterminado](../../extensibility/ux-guidelines/media/0713-10_defaultstate.png "0713 10_DefaultState") |
+| **No seleccionado** | Valor predeterminado | ![Estado del botón predeterminado](../../extensibility/ux-guidelines/media/0713-10_defaultstate.png "0713 10_DefaultState") |
 | **Selección primaria** | Puede cambiar el tamaño | ![Selección primaria con controladores de tamaño](../../extensibility/ux-guidelines/media/0713-11_primaryresize.png "0713 11_PrimaryResize") |
 | **Selección primaria** | No puede cambiar el tamaño | ![Selección primaria sin controladores de tamaño](../../extensibility/ux-guidelines/media/0713-13_primarynoresize.png "0713 13_PrimaryNoResize") |
 | **Selección primaria** | Bloqueado | ![Selección primaria bloqueada](../../extensibility/ux-guidelines/media/0713-15_primarylocked.png "0713 15_PrimaryLocked") |
 | **Selección secundaria** | Puede cambiar el tamaño | ![Selección secundaria con controladores de tamaño](../../extensibility/ux-guidelines/media/0713-17_secondaryresize.png "0713 17_SecondaryResize") |
 | **Selección secundaria** | No puede cambiar el tamaño | ![Selección secundaria sin controladores de tamaño](../../extensibility/ux-guidelines/media/0713-19_secondarynoresize.png "0713 19_SecondaryNoResize") |
 | **Selección secundaria** | Bloqueado | ![Selección secundaria bloqueada](../../extensibility/ux-guidelines/media/0713-21_secondarylocked.png "0713 21_SecondaryLocked") |
-| **Interfaz de usuario activo** | Default | ![Estado de IU active](../../extensibility/ux-guidelines/media/0713-23_uiactive.png "0713 23_UIActive") |
+| **Interfaz de usuario activo** | Valor predeterminado | ![Estado de IU active](../../extensibility/ux-guidelines/media/0713-23_uiactive.png "0713 23_UIActive") |
 
 ### <a name="view-selection-models"></a>Modelos de selección de vista
 
@@ -435,11 +435,11 @@ Patrones compuestos combinan elementos de interacción y diseño de configuracio
 
  Las selecciones en las listas pueden ser contiguas, separado, o la región. Cuando selecciones múltiples se permiten, contiguos y siempre debe ser compatible selección separado al soporte técnico para las selecciones de región (cuadro) son opcional. Las selecciones de región se inician y arrastrándola en el espacio en blanco del cuerpo de la lista.
 
-| Object | Selección |
+| Object | Número de selección |
 |--------|------------|
-| Lista | Contiguos |
-| Lista | No contiguo |
-| Lista | Región |
+| Enumerar | Contiguos |
+| Enumerar | No contiguo |
+| Enumerar | Región |
 
  Al hacer clic una vez en una lista, selecciona la fila donde se hizo clic. Si el usuario haga clic en una celda de la lista que admite la edición en contexto, la celda se activa inmediatamente para su edición en contexto. En caso contrario, toda la fila se selecciona inmediatamente y muestra un área resaltada.
 
@@ -483,7 +483,7 @@ Patrones compuestos combinan elementos de interacción y diseño de configuracio
 |Ventana|El tamaño y la ubicación de la ventana|Cuando se cierra la ventana<br /><br /> Cuando se cambia el modo de Visual Studio<br /><br /> Cuando finaliza la sesión de Visual Studio|El **opciones de usuario (.suo)** archivo del proyecto<br /><br /> Archivo de opciones personalizadas para la configuración de la ventana|
 |Documento|La selección actual en el documento<br /><br /> La vista del documento<br /><br /> El último varios lugares, el usuario ha visitado|Cuando se guarda el documento|El **opciones de usuario (.suo)** archivo del proyecto|
 |Proyecto|Referencias a archivos<br /><br /> Referencias a los directorios de disco<br /><br /> Referencias a otro software<br /><br /> Componentes<br /><br /> Información de estado sobre el propio proyecto|Cuando se guarda el proyecto|El archivo de proyecto|
-|Soluciones|Referencias a proyectos<br /><br /> Referencias a archivos|Cuando se guarda el proyecto o solución|El **solución (.sln)** archivo|
+|Solución|Referencias a proyectos<br /><br /> Referencias a archivos|Cuando se guarda el proyecto o solución|El **solución (.sln)** archivo|
 |Configuración de **Herramientas > Opciones**|Personalizaciones del teclado<br /><br /> Personalizaciones de la barra de herramientas<br /><br /> Combinaciones de colores|Cuando el **Herramientas > opciones** cierra el cuadro de diálogo<br /><br /> Cuando finaliza la sesión de Visual Studio|Registro en **HKEY_Current_User**|
 
  ¿Qué está haciendo el usuario y al que hacen, determina si se guarda una configuración en memoria (durante la sesión), que se guardan en el disco (en las sesiones como una configuración del registro), como parte de la solución o proyecto propio archivo, como parte de la **solución Opciones (.suo)** de archivos o como una configuración personalizada de archivos ese componente de software que solo conoce. La tabla anterior muestra en el que se puede guardar la configuración de varios eventos. Sin embargo, existen otras ocasiones en que desea guardar el estado:
@@ -521,7 +521,7 @@ Patrones compuestos combinan elementos de interacción y diseño de configuracio
 ||Experiencia básica|Experiencia optimizada|Experiencia con privilegios elevados|
 |-|----------------------|--------------------------|-------------------------|
 |Permite a los usuarios...|Corregir el código y solución/proyecto de nivel de lectura sin callejones|Realizar tareas de mantenimiento, refactorizaciones y navegación|Trabajar en una experiencia coherente, fluida e intuitiva con confianza|
-|Editor|Movimiento panorámico y selección<br /><br /> Barra de desplazamiento táctil para saltar y presione + arrastrar|Acercar el zoom<br /><br /> Desplazamiento rápido<br /><br /> Selección<br /><br /> Fácil usar del menú contextual||
+|Editor|Movimiento panorámico y selección<br /><br /> Barra de desplazamiento táctil para saltar y presione + arrastrar|Acercar el zoom<br /><br /> Desplazamiento rápido<br /><br /> Número de selección<br /><br /> Fácil usar del menú contextual||
 |Ventanas de herramientas superior|Movimiento panorámico de la lista<br /><br /> Selección de elementos<br /><br /> Barra de desplazamiento táctil para saltar y presione + arrastrar|Elemento fácil desplazamiento y la selección||
 |Basado en ventanas||Cambiar el tamaño de ventana<br /><br /> Acceso rápido||
 |Cuadro de documento||Facilitan la navegación entre archivos abiertos||

@@ -14,12 +14,12 @@ ms.assetid: 13b74765-0b7c-418e-8cd9-5f2e8db51ae5
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a3ed1acdbf8d09616c413fa832dc452af277434b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6790e61eddc81045bb168028ee7aeef7a0492e3c
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441207"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825748"
 ---
 # <a name="test-guide-for-source-control-plug-ins"></a>Guía de pruebas para los complementos de control de código fuente
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -59,53 +59,53 @@ Esta sección proporciona instrucciones para probar su complemento con control d
   
 - [Área de prueba 1: Incorporación y apertura desde el control de código fuente](../../extensibility/internals/test-area-1-add-to-open-from-source-control.md)  
   
-    - Case 1a: Agregar solución al Control de código fuente  
-  
-    - Escenario 1b: Abrir solución desde el Control de código fuente  
-  
-    - Caso 1C: Agregar solución desde Control de código fuente  
-  
+  - Case 1a: Agregar solución al Control de código fuente  
+
+  - Escenario 1b: Abrir solución desde el Control de código fuente  
+
+  - Caso 1C: Agregar solución desde Control de código fuente  
+
 - [Área de prueba 2: Obtención desde el control de código fuente](../../extensibility/internals/test-area-2-get-from-source-control.md)  
   
 - [Área de prueba 3: Extracción del repositorio y cancelación de la operación](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)  
   
-    - Caso 3: Desproteger o deshacer desprotección  
-  
-    - Case 3a: Desproteger  
-  
-    - Escenario 3b: Desprotección sin conexión  
-  
-    - Caso 3C: Edición de consulta o consulta guardar (QEQS)  
-  
-    - Caso 3d: Retirada silenciosa  
-  
-    - Case 3e: Deshacer desprotección  
+  - Caso 3: Desproteger o deshacer desprotección  
+
+  - Case 3a: Desproteger  
+
+  - Escenario 3b: Desprotección sin conexión  
+
+  - Caso 3C: Edición de consulta o consulta guardar (QEQS)  
+
+  - Caso 3d: Retirada silenciosa  
+
+  - Case 3e: Deshacer desprotección  
   
 - [Área de prueba 4: Inserción en el repositorio](../../extensibility/internals/test-area-4-check-in.md)  
   
-    - Escenario 4a: Elementos modificados  
-  
-    - Escenario 4b: Agregar archivos  
-  
-    - Caso 4 núcleos: Agregar proyectos  
+  - Escenario 4a: Elementos modificados  
+
+  - Escenario 4b: Agregar archivos  
+
+  - Caso 4 núcleos: Agregar proyectos  
   
 - [Área de prueba 5: Cambio del control de código fuente](../../extensibility/internals/test-area-5-change-source-control.md)  
   
-    - Case 5a: Enlazar  
-  
-    - Case 5b: Desenlazar  
-  
-    - Mayúsculas y minúsculas 5c: volver a enlazar  
-  
+  - Case 5a: Enlazar  
+
+  - Case 5b: Desenlazar  
+
+  - Mayúsculas y minúsculas 5c: volver a enlazar  
+
 - [Área de prueba 6: Eliminar](../../extensibility/internals/test-area-6-delete.md)  
-  
+
 - [Área de prueba 7: Compartir](../../extensibility/internals/test-area-7-share.md)  
-  
+
 - [Área de prueba 8: Cambio de los complementos](../../extensibility/internals/test-area-8-plug-in-switching.md)  
-  
-    - Case 8a: Cambio automático  
-  
-    - 8b Case: Cambio de solución  
-  
+
+  - Case 8a: Cambio automático  
+
+  - 8b Case: Cambio de solución  
+
 ## <a name="see-also"></a>Vea también  
  [Complementos de control de código fuente](../../extensibility/source-control-plug-ins.md)

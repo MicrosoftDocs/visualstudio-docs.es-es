@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ce10647737a34caf3f566ba4f50a84a51ea4c46f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443766"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64798014"
 ---
 # <a name="idiasymbolgethasalloca"></a>IDiaSymbol::get_hasAlloca
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Recupera una marca que especifica si la función contiene una llamada a `alloca`
   
 ## <a name="requirements"></a>Requisitos  
   
-|Requisito|Descripción|  
+|Requisito|DESCRIPCIÓN|  
 |-----------------|-----------------|  
 |Encabezado:|dia2.h|  
 |Versión:|SDK de DIA v8.0|  

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: db6c2e47d9f316f758b854e5ce40dfc19acb592b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63400010"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64830545"
 ---
 # <a name="idiasymbolgetisaggregated"></a>IDiaSymbol::get_isAggregated
 Recupera una marca que especifica si el símbolo de datos forma parte de un agregado o una colección de símbolos; el compilador tratará símbolos agregados como entidades independientes, pero realmente son parte de un único símbolo de mayor tamaño.
@@ -46,7 +46,7 @@ HRESULT get_isAggregated(
 
 ## <a name="requirements"></a>Requisitos
 
-|Requisito|Descripción|
+|Requisito|DESCRIPCIÓN|
 |-----------------|-----------------|
 |Encabezado:|dia2.h|
 |Versión:|SDK de DIA v8.0|

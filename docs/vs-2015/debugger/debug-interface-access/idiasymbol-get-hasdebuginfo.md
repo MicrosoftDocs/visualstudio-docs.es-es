@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 06cbf9fd26e675168975aa2c4a8c30033bbefe3a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446314"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64804749"
 ---
 # <a name="idiasymbolgethasdebuginfo"></a>IDiaSymbol::get_hasDebugInfo
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ HRESULT get_hasDebugInfo(
   
 ## <a name="requirements"></a>Requisitos  
   
-|Requisito|Descripción|  
+|Requisito|DESCRIPCIÓN|  
 |-----------------|-----------------|  
 |Encabezado:|dia2.h|  
 |Versión:|SDK de DIA v8.0|  

@@ -11,12 +11,12 @@ caps.latest.revision: 38
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 76f66d11a824a756b262460ebd4e7af78e88f766
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 19f22fc56881287cfb501143aaa4397f9a035d78
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60038178"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821641"
 ---
 # <a name="msbuild-items"></a>Elementos de MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,23 +39,23 @@ Los elementos de MSBuild son entradas del sistema de compilación y suelen repre
   
 - [Metadatos de elementos](#BKMK_ItemMetadata)  
   
-    - [Hacer referencia a metadatos de elementos en un archivo del proyecto](#BKMK_ReferencingItemMetadata)  
-  
-    - [Metadatos de elementos conocidos](#BKMK_WellKnownItemMetadata)  
-  
-    - [Transformar tipos de elemento mediante metadatos](#BKMK_Transforming)  
+  - [Hacer referencia a metadatos de elementos en un archivo del proyecto](#BKMK_ReferencingItemMetadata)  
+
+  - [Metadatos de elementos conocidos](#BKMK_WellKnownItemMetadata)  
+
+  - [Transformar tipos de elemento mediante metadatos](#BKMK_Transforming)  
   
 - [Definiciones de elementos](#BKMK_ItemDefinitions)  
   
 - [Atributos de los elementos de un ItemGroup de un destino](#BKMK_AttributesWithinTargets)  
   
-    - [Atributo Remove](#BKMK_RemoveAttribute)  
-  
-    - [Atributo KeepMetadata](#BKMK_KeepMetadata)  
-  
-    - [Atributo RemoveMetadata](#BKMK_RemoveMetadata)  
-  
-    - [Atributo KeepDuplicates](#BKMK_KeepDuplicates)  
+  - [Atributo Remove](#BKMK_RemoveAttribute)  
+
+  - [Atributo KeepMetadata](#BKMK_KeepMetadata)  
+
+  - [Atributo RemoveMetadata](#BKMK_RemoveMetadata)  
+
+  - [Atributo KeepDuplicates](#BKMK_KeepDuplicates)  
   
 ## <a name="BKMK_Creating1"></a> Crear elementos en un archivo del proyecto  
  Declara los elementos del archivo del proyecto como elementos secundarios de un elemento [ItemGroup](../msbuild/itemgroup-element-msbuild.md). El nombre del elemento secundario es el tipo del elemento. El atributo `Include` del elemento especifica los elementos (archivos) que se incluirán con ese tipo de elemento. Por ejemplo, el código XML siguiente crea un tipo de elemento denominado `Compile`, que incluye dos archivos.  
@@ -89,7 +89,7 @@ Los elementos de MSBuild son entradas del sistema de compilación y suelen repre
 ## <a name="BKMK_ReferencingItems"></a> Hacer referencia a elementos en un archivo del proyecto  
  Para hacer referencia a tipos de elemento en el archivo del proyecto, utilice la sintaxis @(`ItemType`). Por ejemplo, podría hacer referencia al tipo de elemento del ejemplo anterior utilizando `@(Compile)`. Con esta sintaxis, puede pasar elementos a las tareas especificando el tipo de elemento como un parámetro de la tarea. Para obtener más información, vea [Cómo: Seleccione los archivos de compilación](../msbuild/how-to-select-the-files-to-build.md).  
   
- De manera predeterminada, los elementos de un tipo de elemento se separan con punto y coma (;) cuando se expanden. Puede utilizar la sintaxis @(*ItemType*, '*separator*') para especificar un separador distinto del predeterminado. Para obtener más información, vea [Cómo: Mostrar una lista de elementos separada por comas](../msbuild/how-to-display-an-item-list-separated-with-commas.md).  
+ De manera predeterminada, los elementos de un tipo de elemento se separan con punto y coma (;) cuando se expanden. Puede utilizar la sintaxis @(*ItemType*, '*separator*') para especificar un separador distinto del predeterminado. Para obtener más información, consulte [Cómo Mostrar una lista de elementos separada por comas](../msbuild/how-to-display-an-item-list-separated-with-commas.md).  
   
 ## <a name="BKMK_Wildcards"></a> Utilizar caracteres comodín para especificar elementos  
  Puede utilizar los caracteres comodín **, \* y ? para especificar un grupo de archivos como entradas para una compilación en lugar de enumerar cada archivo por separado.  
@@ -130,7 +130,7 @@ Los elementos de MSBuild son entradas del sistema de compilación y suelen repre
 <Compile Include="*.res" Exclude="Form1.cs">  
 ```  
   
- Para obtener más información, vea [Cómo: Excluir archivos de la compilación](../msbuild/how-to-exclude-files-from-the-build.md).  
+ Para obtener más información, consulte [Cómo Excluir archivos de la compilación](../msbuild/how-to-exclude-files-from-the-build.md).  
   
 ## <a name="BKMK_ItemMetadata"></a> Metadatos de elementos  
  Los elementos pueden contener metadatos además de la información recopilada en los atributos `Include` y `Exclude`. Estos metadatos pueden ser utilizados por las tareas que requieren más información sobre los elementos o para procesar por lotes tareas y destinos. Para obtener más información, consulte [Procesamiento por lotes](../msbuild/msbuild-batching.md).  
@@ -358,8 +358,8 @@ Output:
  [Conceptos de MSBuild](../msbuild/msbuild-concepts.md)  
  [MSBuild](msbuild.md)   
  [Cómo: Seleccione los archivos de compilación](../msbuild/how-to-select-the-files-to-build.md)   
- [Cómo: Excluir archivos de la compilación](../msbuild/how-to-exclude-files-from-the-build.md)   
- [Cómo: Mostrar una lista de elementos separada por comas](../msbuild/how-to-display-an-item-list-separated-with-commas.md)   
+ [Procedimientos: Excluir archivos de la compilación](../msbuild/how-to-exclude-files-from-the-build.md)   
+ [Procedimientos: Mostrar una lista de elementos separada por comas](../msbuild/how-to-display-an-item-list-separated-with-commas.md)   
  [Definiciones de elementos](../msbuild/item-definitions.md)   
  [Procesamiento por lotes](../msbuild/msbuild-batching.md)   
  [Elemento Item (MSBuild)](../msbuild/item-element-msbuild.md)

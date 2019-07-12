@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de8e6cfa6ec99f42879043b873736102fd291176
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: b9217031866a53e229cb03838b1be835019b62ba
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746149"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825601"
 ---
 # <a name="using-saved-intellitrace-data-c-visual-basic-c"></a>Uso de los datos de IntelliTrace guardados (C#, Visual Basic, C++)
 
@@ -56,11 +56,11 @@ Inicie la depuración desde un archivo de registro de IntelliTrace (.iTrace) par
 
 - Si el archivo .iTrace está asociado a un elemento de trabajo de Team Foundation Server, siga estos pasos en el elemento de trabajo:
 
-    - En **Todos los vínculos**, busque el archivo .iTrace. Ábralo.
+  - En **Todos los vínculos**, busque el archivo .iTrace. Ábralo.
 
-         \- o -
+    \- o -
 
-    - En **Pasos de reproducción**, elija el vínculo **IntelliTrace** .
+  - En **Pasos de reproducción**, elija el vínculo **IntelliTrace** .
 
 > [!TIP]
 > Si cerró el archivo IntelliTrace durante la depuración, puede volver a abrirlo fácilmente. Vaya al menú **Depuración** , elija **IntelliTrace**, **Mostrar resumen de registro**. También puede elegir **Mostrar resumen de registro** en la ventana de **IntelliTrace** . Esto solo está disponible durante la depuración con IntelliTrace.
@@ -222,7 +222,7 @@ Inicie la depuración desde un archivo de registro de IntelliTrace (.iTrace) par
 |**Columna**|**Muestra**|
 |----------------|-------------------|
 |**ID**|El número de identificador del subproceso|
-|**Name**|El nombre del subproceso. Los subprocesos sin nombre se muestran como “\<Sin nombre>”.|
+|**Nombre**|El nombre del subproceso. Los subprocesos sin nombre se muestran como “\<Sin nombre>”.|
 |**Hora de inicio**|La hora en que se creó el subproceso|
 |**Hora de finalización**|La hora en que se completó el subproceso|
 
@@ -266,5 +266,5 @@ Inicie la depuración desde un archivo de registro de IntelliTrace (.iTrace) par
 #### <a name="forums"></a>Foros
  [Depurador de Visual Studio](http://go.microsoft.com/fwlink/?LinkId=262263)
 
-#### <a name="guidance"></a>Orientación
+#### <a name="guidance"></a>Guía
  [Pruebas para entrega continua con Visual Studio 2012 – capítulo 6: Un cuadro de herramientas de pruebas](http://go.microsoft.com/fwlink/?LinkID=255203)

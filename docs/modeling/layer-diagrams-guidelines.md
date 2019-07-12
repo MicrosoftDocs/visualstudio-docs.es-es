@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f5973643d8f87b4c992209e6512c51bc275de60b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7c470d5d4001238c9a803f0b6598fbedf9d346bc
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62936919"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824195"
 ---
 # <a name="dependency-diagrams-guidelines"></a>Diagramas de dependencia: instrucciones
 
@@ -107,9 +107,9 @@ Para describir los cambios que se va a realizar en el sistema o la arquitectura 
 |Eliminar una dependencia que no debería existir|Haga clic en la dependencia y, a continuación, presione **eliminar**.|
 |Cambiar o restringir la dirección de una dependencia|Establezca su **dirección** propiedad.|
 |Crear nuevas dependencias|Use la **dependencia** y **dependencia bidireccional** herramientas.<br /><br /> Para dibujar varias dependencias, haga doble clic en la herramienta. Cuando haya terminado, haga clic en el **puntero** herramientas o presione la **ESC** clave.|
-|Especificar qué artefactos asociados a una capa no pueden depender de los espacios de nombres especificados|Escriba los espacios de nombres en la capa **Forbidden Namespace Dependencies** propiedad. Use un punto y coma (**;**) para separar los espacios de nombres.|
-|Especificar qué artefactos asociados a una capa no deben pertenecer a los espacios de nombres especificados|Escriba los espacios de nombres en la capa **Forbidden Namespaces** propiedad. Use un punto y coma (**;**) para separar los espacios de nombres.|
-|Especificar qué artefactos asociados a una capa no deben pertenecer a uno de los espacios de nombres especificados|Escriba el espacio de nombres en la capa **Required Namespaces** propiedad. Use un punto y coma (**;**) para separar los espacios de nombres.|
+|Especificar qué artefactos asociados a una capa no pueden depender de los espacios de nombres especificados|Escriba los espacios de nombres en la capa **Forbidden Namespace Dependencies** propiedad. Use un punto y coma ( **;** ) para separar los espacios de nombres.|
+|Especificar qué artefactos asociados a una capa no deben pertenecer a los espacios de nombres especificados|Escriba los espacios de nombres en la capa **Forbidden Namespaces** propiedad. Use un punto y coma ( **;** ) para separar los espacios de nombres.|
+|Especificar qué artefactos asociados a una capa no deben pertenecer a uno de los espacios de nombres especificados|Escriba el espacio de nombres en la capa **Required Namespaces** propiedad. Use un punto y coma ( **;** ) para separar los espacios de nombres.|
 
 ### <a name="Improving"></a> Mejorar la estructura del código
 
@@ -141,7 +141,7 @@ Para que le resulte más fácil identificar las capas y dependencias o para anal
 
 - Cambiar el color de las capas y las dependencias.
 
-    - Seleccione una o varias capas o dependencias, con el botón secundario y, a continuación, haga clic en **propiedades**. En el **propiedades** ventana, edite el **Color** propiedad.
+  - Seleccione una o varias capas o dependencias, con el botón secundario y, a continuación, haga clic en **propiedades**. En el **propiedades** ventana, edite el **Color** propiedad.
 
 ## <a name="Validate"></a> Valide el código con el diagrama
 

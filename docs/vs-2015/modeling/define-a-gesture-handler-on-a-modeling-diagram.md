@@ -12,12 +12,12 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4c02e9dc3b1f355cc2c0f580ce88893ce7f34b46
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 365382566f7de28a611f1c8e0b063f68ca55f696
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433164"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825927"
 ---
 # <a name="define-a-gesture-handler-on-a-modeling-diagram"></a>Definir un controlador de gestos en un diagrama de modelado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -282,36 +282,36 @@ En Visual Studio, puede definir comandos que se ejecuten cuando el usuario haga 
   
 - `ShapeElement target`. La forma o el diagrama en el que el usuario ha arrastrado algo.  
   
-     `ShapeElement` es una clase de la implementación subyacente a las herramientas de modelado UML. Para reducir el riesgo de provocar un estado incoherente en el modelo y diagramas UML, se recomienda no utilizar los métodos de esta clase directamente. En su lugar, encapsule el elemento en un `IShape`y, a continuación, use los métodos descritos en [mostrar un modelo UML en diagramas](../modeling/display-a-uml-model-on-diagrams.md).  
+    `ShapeElement` es una clase de la implementación subyacente a las herramientas de modelado UML. Para reducir el riesgo de provocar un estado incoherente en el modelo y diagramas UML, se recomienda no utilizar los métodos de esta clase directamente. En su lugar, encapsule el elemento en un `IShape`y, a continuación, use los métodos descritos en [mostrar un modelo UML en diagramas](../modeling/display-a-uml-model-on-diagrams.md).  
+
+  - Para obtener un objeto `IShape`:  
+
+      ```  
+      IShape targetIShape = target.CreateIShape(target);  
+      ```  
+
+  - Para obtener el elemento del modelo que es el destino de la operación de arrastre o doble clic:  
+
+      ```  
+      IElement target = targetIShape.Element;  
+      ```  
+
+        You can cast this to a more specific type of element.  
+
+  - Para obtener el almacén de modelos UML que contiene el modelo UML:  
+
+      ```  
+      IModelStore modelStore =   
+        targetIShape.Element.GetModelStore();   
+      ```  
+
+  - Para obtener acceso al host y al proveedor de servicios:  
+
+      ```  
+      target.Store.GetService(typeof(EnvDTE.DTE)) as EnvDTE.DTE  
+      ```  
   
-    - Para obtener un objeto `IShape`:  
-  
-        ```  
-        IShape targetIShape = target.CreateIShape(target);  
-        ```  
-  
-    - Para obtener el elemento del modelo que es el destino de la operación de arrastre o doble clic:  
-  
-        ```  
-        IElement target = targetIShape.Element;  
-        ```  
-  
-         Puede convertirlo en un tipo de elemento más específico.  
-  
-    - Para obtener el almacén de modelos UML que contiene el modelo UML:  
-  
-        ```  
-        IModelStore modelStore =   
-          targetIShape.Element.GetModelStore();   
-        ```  
-  
-    - Para obtener acceso al host y al proveedor de servicios:  
-  
-        ```  
-        target.Store.GetService(typeof(EnvDTE.DTE)) as EnvDTE.DTE  
-        ```  
-  
-- `DiagramDragEventArgs eventArgs`. Este parámetro lleva el formato serializado del objeto de origen de una operación de arrastre:  
+- `DiagramDragEventArgs eventArgs` Este parámetro lleva el formato serializado del objeto de origen de una operación de arrastre:  
   
     ```  
     System.Windows.Forms.IDataObject data = eventArgs.Data;    

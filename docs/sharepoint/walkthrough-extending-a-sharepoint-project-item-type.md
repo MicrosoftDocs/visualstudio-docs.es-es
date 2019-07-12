@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f4922b791ea3ad7ab58c231342e11b5c175d4895
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 795cc62ca88f7ede87e978d910d397e0ce6e2ad7
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430352"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825982"
 ---
 # <a name="walkthrough-extend-a-sharepoint-project-item-type"></a>Tutorial: Extender un tipo de elemento de proyecto de SharePoint
   Puede usar el **modelo de conectividad a datos empresariales** elemento de proyecto para crear un modelo para el servicio de conectividad de datos profesionales (BDC) en SharePoint. De forma predeterminada, al crear un modelo utilizando este elemento de proyecto, los datos del modelo no se muestran a los usuarios. Por esta razón debe crear una lista externa en SharePoint que permita a los usuarios ver los datos.
@@ -28,9 +28,9 @@ ms.locfileid: "63430352"
 
 - Crear una extensión Visual Studio que realiza dos tareas principales:
 
-    - Genera una lista externa que muestra los datos en un modelo BDC. La extensión usa el modelo de objetos para el sistema del proyecto de SharePoint para generar un *Elements.xml* archivo que define la lista. También agrega el archivo al proyecto para que se implemente junto con el modelo BDC.
+  - Genera una lista externa que muestra los datos en un modelo BDC. La extensión usa el modelo de objetos para el sistema del proyecto de SharePoint para generar un *Elements.xml* archivo que define la lista. También agrega el archivo al proyecto para que se implemente junto con el modelo BDC.
 
-    - Agrega un elemento de menú contextual para el **modelo de conectividad a datos empresariales** elementos de proyecto en **el Explorador de soluciones**. Los desarrolladores pueden hacer clic en este elemento de menú para generar una lista externa para el modelo BDC.
+  - Agrega un elemento de menú contextual para el **modelo de conectividad a datos empresariales** elementos de proyecto en **el Explorador de soluciones**. Los desarrolladores pueden hacer clic en este elemento de menú para generar una lista externa para el modelo BDC.
 
 - Compilar un paquete de extensión de Visual Studio (VSIX) para implementar el ensamblado de la extensión.
 

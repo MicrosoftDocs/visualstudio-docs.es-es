@@ -17,12 +17,12 @@ caps.latest.revision: 41
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7cf00897e68fc4b6858e747bd9b3a7f159bf73c1
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: aa8951be6da4d77ffb51b6bc8f09a796b373a944
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439932"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826263"
 ---
 # <a name="aspnet-debugging-system-requirements"></a>Depuración ASP.NET: Requisitos del sistema
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,9 +31,9 @@ En este tema se describen los requisitos de software y seguridad de los escenari
   
 - Depuración local, en la que [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] y la aplicación web se ejecutan en el mismo equipo. Existen dos versiones de este escenario:  
   
-    - El código de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] reside en el sistema de archivos.  
-  
-    - El código de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] reside en un sitio web de IIS.  
+  - El código de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] reside en el sistema de archivos.  
+
+  - El código de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] reside en un sitio web de IIS.  
   
 - La depuración remota, en la que [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] se ejecuta en un equipo cliente y depura una aplicación web que se está ejecutando en un equipo servidor remoto.  
   
@@ -42,9 +42,9 @@ En este tema se describen los requisitos de software y seguridad de los escenari
   
  Para depurar el proceso de trabajo de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] , debe tener permiso para depurar dicho proceso. De forma predeterminada, las aplicaciones de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] se ejecutan como el usuario **ASPNET** . Si el proceso de trabajo se ejecuta con la cuenta **ASPNET**o **NETWORK SERVICE**, deberá tener privilegios de administrador para depurarlo.  
   
- El nombre del proceso de trabajo de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] varía en función del escenario de depuración y de la versión de IIS. Para obtener más información, vea [Cómo: Búsqueda del nombre de un proceso de ASP.NET](../debugger/how-to-find-the-name-of-the-aspnet-process.md).  
+ El nombre del proceso de trabajo de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] varía en función del escenario de depuración y de la versión de IIS. Para obtener más información, consulte [Cómo Búsqueda del nombre de un proceso de ASP.NET](../debugger/how-to-find-the-name-of-the-aspnet-process.md).  
   
- Puede cambiar la cuenta de usuario en la que se ejecuta el proceso de trabajo de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] editando el archivo machine.config en el servidor que ejecuta IIS. La mejor manera de hacerlo es mediante el **Administrador de Internet Information Services (IIS)**. Para obtener más información, vea [Cómo: Ejecución de un proceso de trabajo en una cuenta de usuario](../debugger/how-to-run-the-worker-process-under-a-user-account.md).  
+ Puede cambiar la cuenta de usuario en la que se ejecuta el proceso de trabajo de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] editando el archivo machine.config en el servidor que ejecuta IIS. La mejor manera de hacerlo es mediante el **Administrador de Internet Information Services (IIS)** . Para obtener más información, consulte [Cómo Ejecución de un proceso de trabajo en una cuenta de usuario](../debugger/how-to-run-the-worker-process-under-a-user-account.md).  
   
  Si cambia el proceso de trabajo de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] para que se ejecute en su propia cuenta de usuario, no tiene porqué ser administrador en el servidor que esté ejecutando IIS.  
   

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8860668452a22413db8c6fc3d0fdc664c7ba36dd
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63401389"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64835391"
 ---
 # <a name="idiasymbolgetinlspec"></a>IDiaSymbol::get_InlSpec
 Esta función recupera una marca que indica si la función se ha marcado como en línea (con uno de los [inline, __inline, \__forceinline](/cpp/cpp/inline-functions-cpp) atributos).
@@ -43,7 +43,7 @@ HRESULT get_inlSpec(
 
 ## <a name="requirements"></a>Requisitos
 
-|Requisito|Descripción|
+|Requisito|DESCRIPCIÓN|
 |-----------------|-----------------|
 |Encabezado:|dia2.h|
 |Versión:|SDK de DIA v8.0|

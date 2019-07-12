@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 87adaa2e43068784e5ec6488030f147891a027dd
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406055"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64817271"
 ---
 # <a name="idiasymbolgethaseha"></a>IDiaSymbol::get_hasEHa
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ HRESULT get_hasEHa(
   
 ## <a name="requirements"></a>Requisitos  
   
-|Requisito|Descripción|  
+|Requisito|DESCRIPCIÓN|  
 |-----------------|-----------------|  
 |Encabezado:|dia2.h|  
 |Versión:|SDK de DIA v8.0|  

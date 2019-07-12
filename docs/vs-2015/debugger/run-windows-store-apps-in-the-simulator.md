@@ -14,12 +14,12 @@ caps.latest.revision: 45
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 631c6daf808e08b9c7da9147116464a4140b076f
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 77de4fea82e05f539c89a75178d93f985e5a0fb3
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65683545"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823855"
 ---
 # <a name="run-windows-store-apps-in-the-simulator"></a>Ejecutar aplicaciones de la Tienda Windows en el simulador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,30 +55,30 @@ El simulador de Visual Studio para aplicaciones de la Tienda Windows es una apli
  Establece el modo de interacción en gestos táctiles de acercar y alejar utilizando dos dedos.  
   
 - ![Destino de simulador dos dedos](../debugger/media/simulator-twofinger.png "SIMULATOR_TwoFinger")  
-  
-    - El icono de destino doble indica la ubicación de los dos dedos en la pantalla del dispositivo.  
-  
-    - Mueve el mouse para colocar los iconos sobre el objeto en la pantalla del dispositivo.  
-  
-    - Gira la rueda del mouse hacia atrás o hacia delante para cambiar la distancia simulada de los dos dedos antes de realizar la emulación táctil de acercar o alejar.  
-  
+
+  - El icono de destino doble indica la ubicación de los dos dedos en la pantalla del dispositivo.  
+
+  - Mueve el mouse para colocar los iconos sobre el objeto en la pantalla del dispositivo.  
+
+  - Gira la rueda del mouse hacia atrás o hacia delante para cambiar la distancia simulada de los dos dedos antes de realizar la emulación táctil de acercar o alejar.  
+
 - ![Alejar, acercar y girar destinos](../debugger/media/simulator-twofingerengaged.png "SIMULATOR_TwoFingerEngaged")  
-  
-    - Presiona el botón primario y gira la rueda hacia atrás (hacia ti) para acercar (acercar los dedos).  
-  
-    - Presiona el botón primario y gira la rueda del mouse hacia delante (hacia el lado contrario a donde tú estás) para alejar (separar los dedos).  
+
+  - Presiona el botón primario y gira la rueda hacia atrás (hacia ti) para acercar (acercar los dedos).  
+
+  - Presiona el botón primario y gira la rueda del mouse hacia delante (hacia el lado contrario a donde tú estás) para alejar (separar los dedos).  
   
 ## <a name="object-rotation"></a>Rotación de objetos  
  El botón **Emulación táctil, girar** establece el modo de interacción en los gestos de rotación de dos dedos.  
   
 - Mueve el mouse para colocar los iconos sobre el objeto en la pantalla del dispositivo.  
   
-    - Gira la rueda del mouse hacia atrás o hacia delante para cambiar la orientación simulada de los dos dedos antes de rotar el objeto.  
-  
+  - Gira la rueda del mouse hacia atrás o hacia delante para cambiar la orientación simulada de los dos dedos antes de rotar el objeto.  
+
 - Presiona el botón primario y gira la rueda hacia atrás (hacia ti) para rotar el objeto hacia la izquierda. Al girar la rueda del mouse, uno de los dos iconos de destino rota alrededor del otro para indicar el tamaño relativo de la rotación.  
-  
-    - Presiona el botón primario y gira la rueda del mouse hacia delante (hacia el lado contrario a donde te encuentras) para rotar el objeto en el sentido de las agujas del reloj.  
-  
+
+  - Presiona el botón primario y gira la rueda del mouse hacia delante (hacia el lado contrario a donde te encuentras) para rotar el objeto en el sentido de las agujas del reloj.  
+
 ## <a name="BKMK_Enable_or_disable_Always_on_top_mode"></a> Habilitar o deshabilitar el modo Siempre visible  
  Puedes establecer la ventana del simulador para que siempre esté encima de las demás. El botón **Alternar la ventana de nivel superior** habilita o deshabilita el modo **Siempre visible** de la ventana del simulador.  
   
@@ -112,7 +112,7 @@ El simulador de Visual Studio para aplicaciones de la Tienda Windows es una apli
      ![Menú de contexto de configuración de captura de pantalla](../debugger/media/simulator-screenshotsettingscntxmnu.png "SIMULATOR_ScreenShotSettingsCntxMnu")  
   
 ## <a name="BKMK_Simulate_network_connection_properties"></a> Simular propiedades de conexión de red  
- Puedes ayudar a los usuarios de la aplicación a administrar los costos de las conexiones de red de uso medido haciendo que tengan conocimiento de ellos o de los cambios de estado del plan de datos, y habilitando la aplicación para utilizar esta información y evitar incurrir así en gastos adicionales por uso en roaming o por superar un límite de transferencia de datos determinado. Las API de [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx) le permiten responder a los eventos [NetworkStatusChanged](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx) y [TriggerType](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.background.systemtrigger.triggertype.aspx) que firman. Consulte [Inicio rápido: Administrar las restricciones de costo de red de uso medido](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx).  
+ Puedes ayudar a los usuarios de la aplicación a administrar los costos de las conexiones de red de uso medido haciendo que tengan conocimiento de ellos o de los cambios de estado del plan de datos, y habilitando la aplicación para utilizar esta información y evitar incurrir así en gastos adicionales por uso en roaming o por superar un límite de transferencia de datos determinado. Las API de [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx) le permiten responder a los eventos [NetworkStatusChanged](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx) y [TriggerType](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.background.systemtrigger.triggertype.aspx) que firman. Consulte [Quickstart: Administrar las restricciones de costo de red de uso medido](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx).  
   
  Para depurar o probar el código con reconocimiento de costos de red, el simulador puede imitar las propiedades de una red que se exponen a través del objeto [ConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.aspx) devuelto por [GetInternetConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.getinternetconnectionprofile.aspx).  
   

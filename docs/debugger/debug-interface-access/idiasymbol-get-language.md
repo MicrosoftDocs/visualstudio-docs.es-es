@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 97af3e1bcee89462b7060aaefa8f1fb452d2ab03
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63400698"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64825427"
 ---
 # <a name="idiasymbolgetlanguage"></a>IDiaSymbol::get_language
 Recupera el idioma de origen.

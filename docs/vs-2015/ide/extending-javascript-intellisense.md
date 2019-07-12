@@ -15,12 +15,12 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e995d9cfd37c625c03df0b607a9dd5184bec5d08
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: eea71ffe2b449e0ee5aff893efd05e12e4ecae73
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441460"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824933"
 ---
 # <a name="extending-javascript-intellisense"></a>Extender IntelliSense para JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ La característica de extensibilidad de IntelliSense para JavaScript le permite 
   
  El mecanismo de detección automática permite que el servicio de lenguaje para que busque automáticamente las extensiones que siguen la convención de nomenclatura de archivos *nombrebiblioteca*. intellisense.js y que se encuentran en el mismo directorio que la biblioteca de que se aplica la extensión. Por ejemplo, una extensión válida para la biblioteca de jQuery sería jQuery.intellisense.js. Para las extensiones de jQuery más restrictivas, puede usar los nombres de archivo, como jQuery-1.7.1.intellisense.js (una extensión específica de la versión) o jQuery.ui.intellisense.js (una extensión para una biblioteca de jQuery con ámbito). Si se encuentra más de una extensión para una determinada biblioteca, se utiliza la versión más restrictiva de la extensión.  
   
- Si desea usar la extensión para todos los archivos de proyecto de JavaScript, en su lugar, puede agregar la extensión a un grupo de referencias. Hay varios tipos de grupos de referencia, ya sean los que incluyen referencias implícitas y las que incluyen referencias de trabajo dedicado. Para agregar una extensión, deberá agregar el archivo como un grupo de referencia implícita, ya sea normalmente **implícita (Windows)**, **implícito (Web)**. Referencias implícitas se encuentran en el ámbito de cada archivo .js abierto en el Editor de código. Cuando se usa este método, deberá agregar la extensión y el archivo que está complementando la extensión.  
+ Si desea usar la extensión para todos los archivos de proyecto de JavaScript, en su lugar, puede agregar la extensión a un grupo de referencias. Hay varios tipos de grupos de referencia, ya sean los que incluyen referencias implícitas y las que incluyen referencias de trabajo dedicado. Para agregar una extensión, deberá agregar el archivo como un grupo de referencia implícita, ya sea normalmente **implícita (Windows)** , **implícito (Web)** . Referencias implícitas se encuentran en el ámbito de cada archivo .js abierto en el Editor de código. Cuando se usa este método, deberá agregar la extensión y el archivo que está complementando la extensión.  
   
  Use la **IntelliSense** página de la **opciones** cuadro de diálogo para agregar una extensión como un grupo de referencias. Puede tener acceso a la **IntelliSense** página eligiendo **herramientas**, **opciones** en la barra de menús y, después, elige **Editor de texto**, **JavaScript**, **IntelliSense**, **referencias**. Para obtener más información acerca de los grupos de referencia, consulte [IntelliSense para JavaScript](../ide/javascript-intellisense.md) y [opciones, Editor de texto, JavaScript, IntelliSense](../ide/reference/options-text-editor-javascript-intellisense.md).  
   
@@ -93,7 +93,7 @@ intellisense.addEventListener('statementcompletion', function (event) {
 ## <a name="intellisenseObject"></a> Objeto de IntelliSense  
  En la tabla siguiente se muestra las funciones que están disponibles para el `intellisense` objeto. La `intellisense` objeto está disponible solo en tiempo de diseño.  
   
-|Función|Descripción|  
+|Función|DESCRIPCIÓN|  
 |--------------|-----------------|  
 |`addEventListener(type, handler);`|Agrega un controlador de eventos para un evento de IntelliSense.<br /><br /> `type` es un valor de cadena. Los valores válidos incluyen `statementcompletion`, `signaturehelp`, y `statementcompletionhint`.<br /><br /> `handler` es una función de controlador de eventos que recibe un objeto de evento de uno de los siguientes tipos:<br /><br /> -   `CompletionEvent`, utilizado para la `statementcompletion` eventos.<br />-   `SignatureHelpEvent`, utilizado para la `signaturehelp` eventos.<br />-   `CompletionHintEvent`, utilizado para la `statementcompletionhint` eventos.<br /><br /> Para obtener ejemplos que utilizan esta función, vea [ejemplos de código](#CodeExamples).|  
 |`annotate(obj, doc);`|Especifica la documentación para un objeto mediante la copia de los comentarios de documentación de un objeto a otro objeto.<br /><br /> `obj` Especifica el objeto que se va a copiar la documentación.<br /><br /> `doc` Especifica el objeto desde el que se va a copiar la documentación.<br /><br /> Para obtener un ejemplo que muestra cómo usar esta función, vea [agregar anotaciones de IntelliSense](#Annotations).|  
@@ -115,19 +115,19 @@ intellisense.addEventListener('statementcompletion', function (event) {
   
  A continuación es los miembros de la `completionItem` objeto:  
   
-- `name`. Lectura y escritura cuando se utiliza en el `items` colección; en caso contrario, solo lectura. Devuelve una cadena que identifica el elemento de finalización.  
+- `name` Lectura y escritura cuando se utiliza en el `items` colección; en caso contrario, solo lectura. Devuelve una cadena que identifica el elemento de finalización.  
   
 - `kind`. Lectura y escritura cuando se utiliza en el `items` colección; en caso contrario, solo lectura. Devuelve una cadena que representa el tipo de elemento de finalización. Los valores posibles son el método, campo, propiedad, parámetro, variable y reserva.  
   
-- `glyph`. Lectura y escritura cuando se utiliza en el `items` colección; en caso contrario, solo lectura. Devuelve una cadena que representa un icono que se muestra en la lista de finalización. Los valores posibles de `glyph` utilice el siguiente formato: vs:*glyphType*, donde *glyphType* corresponde a los miembros de independiente del lenguaje en el <xref:Microsoft.VisualStudio.Language.Intellisense.StandardGlyphGroup> enumeración. Por ejemplo, `vs:GlyphGroupMethod` es un valor posible para `glyph`. Cuando `glyph` no se establece, el `kind` propiedad determina el icono predeterminado.  
+- `glyph` Lectura y escritura cuando se utiliza en el `items` colección; en caso contrario, solo lectura. Devuelve una cadena que representa un icono que se muestra en la lista de finalización. Los valores posibles de `glyph` utilice el siguiente formato: vs:*glyphType*, donde *glyphType* corresponde a los miembros de independiente del lenguaje en el <xref:Microsoft.VisualStudio.Language.Intellisense.StandardGlyphGroup> enumeración. Por ejemplo, `vs:GlyphGroupMethod` es un valor posible para `glyph`. Cuando `glyph` no se establece, el `kind` propiedad determina el icono predeterminado.  
   
 - `parentObject`. Sólo lectura. Devuelve el objeto primario.  
   
-- `value`. Sólo lectura. Devuelve un objeto que representa el valor del elemento de finalización.  
+- `value` Sólo lectura. Devuelve un objeto que representa el valor del elemento de finalización.  
   
-- `comments`. Sólo lectura. Devuelve una cadena que contiene los comentarios que están por encima del campo o variable.  
+- `comments` Sólo lectura. Devuelve una cadena que contiene los comentarios que están por encima del campo o variable.  
   
-- `scope`. Sólo lectura. Devuelve el ámbito del elemento de finalización. Los valores posibles son globales y locales, parámetros y miembros.  
+- `scope` Sólo lectura. Devuelve el ámbito del elemento de finalización. Los valores posibles son globales y locales, parámetros y miembros.  
   
 ### <a name="Items"></a> Propiedad Items  
  Obtiene o establece los elementos de finalización de la matriz de instrucción. Cada elemento de la matriz es un [completionItem propiedad](#CompletionItem) objeto. El `items` propiedad está disponible para el `statementcompletion` objeto de evento.  
@@ -141,15 +141,15 @@ intellisense.addEventListener('statementcompletion', function (event) {
   
  A continuación es los miembros de la `comments` objeto:  
   
-- `above`. Devuelve los comentarios antes de la función.  
+- `above` Devuelve los comentarios antes de la función.  
   
-- `inside`. Devuelve los comentarios dentro de la función, normalmente en formato VSDoc.  
+- `inside` Devuelve los comentarios dentro de la función, normalmente en formato VSDoc.  
   
 - `paramComments`. Devuelve una matriz que representa comentarios para cada parámetro de la función. Los miembros de la matriz se incluyen:  
   
-    - `name`. Devuelve una cadena que representa el nombre del parámetro.  
-  
-    - `comment`. Devuelve una cadena que contiene el parámetro de comentario.  
+  - `name` Devuelve una cadena que representa el nombre del parámetro.  
+
+  - `comment` Devuelve una cadena que contiene el parámetro de comentario.  
   
 ### <a name="FunctionHelp"></a> Propiedad functionHelp  
  Devuelve la Ayuda de la función. Esta propiedad está disponible para el `signaturehelp` objeto de evento.  
@@ -160,49 +160,49 @@ intellisense.addEventListener('statementcompletion', function (event) {
   
 - `functionName`. Lectura y escritura. Devuelve una cadena que contiene el nombre de función.  
   
-- `signatures`. Lectura y escritura. Obtiene o establece la matriz de firmas de función. Cada elemento de la matriz es un `signature` objeto. Algunos `signature` propiedades, como `locid`, corresponden a común [comentarios de documentación XML](../ide/xml-documentation-comments-javascript.md) atributos.  
+- `signatures` Lectura y escritura. Obtiene o establece la matriz de firmas de función. Cada elemento de la matriz es un `signature` objeto. Algunos `signature` propiedades, como `locid`, corresponden a común [comentarios de documentación XML](../ide/xml-documentation-comments-javascript.md) atributos.  
   
-     Los miembros de la `signature` objeto incluyen:  
-  
-    - `description`. Lectura y escritura. Devuelve una cadena que describe la función.  
-  
+  Los miembros de la `signature` objeto incluyen:  
+
+  - `description`. Lectura y escritura. Devuelve una cadena que describe la función.  
+
+  - `locid`. Lectura y escritura. Devuelve un identificador de cadena que contiene información de localización sobre la función.  
+
+  - `helpKeyword` Lectura y escritura. Devuelve una cadena que contiene la palabra clave de ayuda.  
+
+  - `externalFile`. Lectura y escritura. Devuelve una cadena que representa el archivo que contiene el identificador del miembro.  
+
+  - `externalid` Lectura y escritura. Devuelve una cadena que representa el identificador de miembro de la función.  
+
+  - `params` Lectura y escritura. Obtiene o establece la matriz de parámetros para la función. Cada elemento de la matriz de parámetros es un `parameter` objeto que tiene propiedades que corresponden a los siguientes atributos de la [ \<param >](../ide/param-javascript.md) elemento:  
+
+    - `name` Lectura y escritura. Devuelve una cadena que representa el nombre del parámetro.  
+
+    - `type`. Lectura y escritura. Devuelve una cadena que representa el tipo de parámetro.  
+
+    - `elementType`. Lectura y escritura. Si el tipo es `Array`, devuelve una cadena que representa el tipo de los elementos de la matriz.  
+
+    - `description`. Lectura y escritura. Devuelve una cadena que describe el parámetro.  
+
+    - `locid` Lectura y escritura. Devuelve un identificador de cadena que contiene información de localización sobre la función.  
+
+    - `optional` Lectura y escritura. Devuelve una cadena que indica si el parámetro es opcional. `true` indica que el parámetro es opcional; `false` indica que no lo está.  
+
+  - `returnValue`. Lectura y escritura. Obtiene o establece un objeto de valor devuelto con propiedades que corresponden a los siguientes atributos de la [ \<devuelve >](../ide/returns-javascript.md) elemento:  
+
+    - `type`. Lectura y escritura. Devuelve una cadena que representa el tipo de valor devuelto.  
+
+    - `elementType`. Lectura y escritura. Si el tipo es `Array`, devuelve una cadena que representa el tipo de los elementos de la matriz.  
+
+    - `description` Lectura y escritura. Devuelve una cadena que describe el valor devuelto.  
+
     - `locid`. Lectura y escritura. Devuelve un identificador de cadena que contiene información de localización sobre la función.  
-  
+
     - `helpKeyword`. Lectura y escritura. Devuelve una cadena que contiene la palabra clave de ayuda.  
-  
+
     - `externalFile`. Lectura y escritura. Devuelve una cadena que representa el archivo que contiene el identificador del miembro.  
-  
+
     - `externalid`. Lectura y escritura. Devuelve una cadena que representa el identificador de miembro de la función.  
-  
-    - `params`. Lectura y escritura. Obtiene o establece la matriz de parámetros para la función. Cada elemento de la matriz de parámetros es un `parameter` objeto que tiene propiedades que corresponden a los siguientes atributos de la [ \<param >](../ide/param-javascript.md) elemento:  
-  
-        - `name`. Lectura y escritura. Devuelve una cadena que representa el nombre del parámetro.  
-  
-        - `type`. Lectura y escritura. Devuelve una cadena que representa el tipo de parámetro.  
-  
-        - `elementType`. Lectura y escritura. Si el tipo es `Array`, devuelve una cadena que representa el tipo de los elementos de la matriz.  
-  
-        - `description`. Lectura y escritura. Devuelve una cadena que describe el parámetro.  
-  
-        - `locid`. Lectura y escritura. Devuelve un identificador de cadena que contiene información de localización sobre la función.  
-  
-        - `optional`. Lectura y escritura. Devuelve una cadena que indica si el parámetro es opcional. `true` indica que el parámetro es opcional; `false` indica que no lo está.  
-  
-    - `returnValue`. Lectura y escritura. Obtiene o establece un objeto de valor devuelto con propiedades que corresponden a los siguientes atributos de la [ \<devuelve >](../ide/returns-javascript.md) elemento:  
-  
-        - `type`. Lectura y escritura. Devuelve una cadena que representa el tipo de valor devuelto.  
-  
-        - `elementType`. Lectura y escritura. Si el tipo es `Array`, devuelve una cadena que representa el tipo de los elementos de la matriz.  
-  
-        - `description`. Lectura y escritura. Devuelve una cadena que describe el valor devuelto.  
-  
-        - `locid`. Lectura y escritura. Devuelve un identificador de cadena que contiene información de localización sobre la función.  
-  
-        - `helpKeyword`. Lectura y escritura. Devuelve una cadena que contiene la palabra clave de ayuda.  
-  
-        - `externalFile`. Lectura y escritura. Devuelve una cadena que representa el archivo que contiene el identificador del miembro.  
-  
-        - `externalid`. Lectura y escritura. Devuelve una cadena que representa el identificador de miembro de la función.  
   
 ### <a name="ParentObject"></a> parentObject, propiedad  
  Devuelve el objeto primario de una función miembro. Por ejemplo, para `document.getElementByID`, `parentObject` devuelve el `document` objeto. Esta propiedad está disponible para el `signaturehelp` objeto de evento.  
@@ -228,27 +228,27 @@ intellisense.addEventListener('statementcompletion', function (event) {
   
  A continuación es los miembros de la `symbolHelp` objeto:  
   
-- `name`. Lectura y escritura. Devuelve una cadena que contiene el nombre del identificador.  
+- `name` Lectura y escritura. Devuelve una cadena que contiene el nombre del identificador.  
   
-- `symbolType`. Lectura y escritura. Devuelve una cadena que representa el tipo de símbolo. Los valores posibles incluyen desconocido, booleano, número, cadena, objeto, función, matriz, fecha y Regex.  
+- `symbolType` Lectura y escritura. Devuelve una cadena que representa el tipo de símbolo. Los valores posibles incluyen desconocido, booleano, número, cadena, objeto, función, matriz, fecha y Regex.  
   
 - `symbolDisplayType`. Lectura y escritura. Devuelve una cadena que contiene el nombre de tipo para mostrar. Si `symbolDisplayType` no está configurado, `symbolType` se utiliza.  
   
-- `elementType`. Lectura y escritura. Si el `symbolType` es `Array`, devuelve una cadena que representa el tipo de los elementos de la matriz.  
+- `elementType` Lectura y escritura. Si el `symbolType` es `Array`, devuelve una cadena que representa el tipo de los elementos de la matriz.  
   
 - `scope`. Lectura y escritura. Devuelve una cadena que representa el ámbito del símbolo. Los valores posibles incluyen globales y locales, parámetros y miembros.  
   
-- `description`. Lectura y escritura. Devuelve una cadena que contiene una descripción del símbolo.  
+- `description` Lectura y escritura. Devuelve una cadena que contiene una descripción del símbolo.  
   
-- `locid`. Lectura y escritura. Devuelve un identificador de cadena que contiene información de localización sobre el símbolo.  
+- `locid` Lectura y escritura. Devuelve un identificador de cadena que contiene información de localización sobre el símbolo.  
   
-- `helpKeyword`. Lectura y escritura. Devuelve una cadena que contiene la palabra clave de ayuda.  
+- `helpKeyword` Lectura y escritura. Devuelve una cadena que contiene la palabra clave de ayuda.  
   
 - `externalFile`. Lectura y escritura. Devuelve una cadena que representa el archivo que contiene el identificador del miembro.  
   
 - `externalid`. Lectura y escritura. Devuelve una cadena que representa el identificador de miembro del símbolo.  
   
-- `functionHelp`. Lectura y escritura. Devuelve un [functionHelp propiedad](#FunctionHelp), que pueden contener información cuando el `symbolType` es la función.  
+- `functionHelp` Lectura y escritura. Devuelve un [functionHelp propiedad](#FunctionHelp), que pueden contener información cuando el `symbolType` es la función.  
   
 ### <a name="Scope"></a> definir el ámbito de propiedad  
  Devuelve el ámbito de la finalización del evento. Los valores posibles para la finalización de ámbito son global y los miembros. Esta propiedad está disponible para el `statementcompletion` objeto de evento.  

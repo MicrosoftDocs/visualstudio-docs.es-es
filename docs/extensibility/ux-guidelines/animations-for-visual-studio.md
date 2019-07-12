@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5a99ddbe8bf1b98ce6f2fabc32b9597cd02a704e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3f113bf8d9a77e8569126a6f0c7d96f1fe4f0eea
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66337019"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825237"
 ---
 # <a name="animations-for-visual-studio"></a>Animaciones para Visual Studio
 ## <a name="animation-fundamentals"></a>Aspectos básicos de animación
@@ -25,13 +25,13 @@ Siga estas reglas para garantizar los estilos de animación coherente y fácil d
 
 - **Control de tiempo y la velocidad son importantes** para asegurarse de que las transiciones sentirse rápido y natural:
 
-    - Completar transiciones animadas dentro de un medio segundo (500 milisegundos).
+  - Completar transiciones animadas dentro de un medio segundo (500 milisegundos).
 
-    - Las animaciones que se producirían con frecuencia deben ser lo suficientemente rápido, por lo que no interrumpen el flujo de trabajo del usuario. Vea la animación en un bucle y ajustar el tiempo hasta que parece correcto.
+  - Las animaciones que se producirían con frecuencia deben ser lo suficientemente rápido, por lo que no interrumpen el flujo de trabajo del usuario. Vea la animación en un bucle y ajustar el tiempo hasta que parece correcto.
 
-    - Las animaciones no deben ser tan rápido o discordante que resulta difícil de entender, pero no tan lento que realice una impacienta para la transición al finalizar.
+  - Las animaciones no deben ser tan rápido o discordante que resulta difícil de entender, pero no tan lento que realice una impacienta para la transición al finalizar.
 
-    - Utilice el control de tiempo variable para enfatizar la importancia. Por ejemplo, al navegar a través de una secuencia de elementos en un diagrama de clases, la velocidad a través de las transiciones entre los elementos, a continuación, ralentizar centrarse en los elementos importantes.
+  - Utilice el control de tiempo variable para enfatizar la importancia. Por ejemplo, al navegar a través de una secuencia de elementos en un diagrama de clases, la velocidad a través de las transiciones entre los elementos, a continuación, ralentizar centrarse en los elementos importantes.
 
 - **Usar aceleración no lineal gradual** desde un estado a otro, lo que ofrece una sensación de movimiento de calma y natural.
 
@@ -47,13 +47,13 @@ Siga estas reglas para garantizar los estilos de animación coherente y fácil d
 
 - **Al mostrar el progreso o estado** a través de animación:
 
-    - Deja de mostrar el movimiento de progreso cuando no está avanzando el proceso subyacente.
+  - Deja de mostrar el movimiento de progreso cuando no está avanzando el proceso subyacente.
 
-    - Distinguir procesos indeterminados de procesos determinados.
+  - Distinguir procesos indeterminados de procesos determinados.
 
-    - Asegúrese de que una animación tiene identificación Estados de error y de finalización.
+  - Asegúrese de que una animación tiene identificación Estados de error y de finalización.
 
-    - Minimizar el uso de animaciones de efecto que mostrar el estado y asegúrese de que tienen un valor real al proporcionar información adicional del uso real. Algunos ejemplos incluyen de emergencia y cambios de estado transitorio
+  - Minimizar el uso de animaciones de efecto que mostrar el estado y asegúrese de que tienen un valor real al proporcionar información adicional del uso real. Algunos ejemplos incluyen de emergencia y cambios de estado transitorio
 
 #### <a name="animation-donts"></a>Animación contras:
 
@@ -126,7 +126,7 @@ Muestran información complejas y de variable:
 
 - Progreso
 
-- Errores
+- Errors
 
 ##### <a name="structure"></a>Estructura
 
@@ -142,7 +142,7 @@ Muestran información complejas y de variable:
 
 - Voltear a través de imágenes
 
-##### <a name="time"></a>Tiempo
+##### <a name="time"></a>Hora
 
 - Cambio de mostrar a lo largo de tiempo, el lapso de tiempo y la presentación en pantalla
 

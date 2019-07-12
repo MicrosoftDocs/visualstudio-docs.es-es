@@ -14,10 +14,10 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: de270abfede0b128e63999ae8654a2ea72e073f0
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 07/12/2019
 ms.locfileid: "65703800"
 ---
 # <a name="idiasymbolgethassecuritychecks"></a>IDiaSymbol::get_hasSecurityChecks
@@ -45,7 +45,7 @@ HRESULT get_hasSecurityChecks(
   
 ## <a name="requirements"></a>Requisitos  
   
-|Requisito|Descripción|  
+|Requisito|DESCRIPCIÓN|  
 |-----------------|-----------------|  
 |Encabezado:|dia2.h|  
 |Versión:|SDK de DIA v8.0|  

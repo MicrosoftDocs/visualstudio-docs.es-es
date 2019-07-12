@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7132fae3623e1ad10fb35d2b903935cdbffee12d
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: d4b5ad6ca824e6c7091c6c508b51c2d51501b2fd
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65676694"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821526"
 ---
 # <a name="use-roslyn-analyzers"></a>Usar analizadores de Roslyn
 
@@ -62,13 +62,13 @@ Para cambiar la regla activa establecida para un proyecto, vaya a la **análisis
 
 Puede configurar la gravedad de las reglas del analizador, o *diagnósticos*, si se [instalar los analizadores](../code-quality/install-roslyn-analyzers.md) como un paquete de NuGet. En la siguiente tabla muestra las opciones de gravedad para el diagnóstico:
 
-|Gravedad|Comportamiento en tiempo de compilación|Comportamiento del Editor|
+|Severity|Comportamiento en tiempo de compilación|Comportamiento del Editor|
 |-|-|-|
 |Error|Las infracciones aparezcan como *errores* en el **lista de errores** en línea de comandos resultados de compilación y hacer que las compilaciones de un error.|Código que provoca el error aparece subrayado con una roja ondulada y marcada por un pequeño cuadro rojo en la barra de desplazamiento.|
 |Advertencia|Las infracciones aparezcan como *advertencias* en el **lista de errores** y en línea de comandos salida de la compilación, pero no se producirá un error en las compilaciones.|Código que provoca el error aparece subrayado con color verde ondulada y marcado por un pequeño cuadro verde en la barra de desplazamiento.|
 |Info|Las infracciones aparezcan como *mensajes* en el **lista de errores**y no en absoluto en la salida de la compilación de línea de comandos.|Código que provoca el error aparece subrayado con un gris ondulado y marcado por un pequeño cuadro gris en la barra de desplazamiento.|
 |Hidden|No visibles al usuario.|No visibles al usuario. El diagnóstico se notifica al motor de diagnóstico de IDE, sin embargo.|
-|Ninguna|Suprimir completamente.|Suprimir completamente.|
+|None|Suprimir completamente.|Suprimir completamente.|
 
 Además, puede "Restablecer" gravedad de una regla si se establece en **predeterminado**. Cada diagnóstico tiene una gravedad predeterminada que se puede ver en el **propiedades** ventana.
 
@@ -110,40 +110,40 @@ Hay varias maneras de suprimir las infracciones de reglas:
 
 - Desde el **analizar** menú
 
-   Seleccione **analizar** > **ejecutar análisis de código y suprimir problemas activos** en la barra de menús para suprimir todas las infracciones actuales. Esto se conoce a veces como "línea de base".
+  Seleccione **analizar** > **ejecutar análisis de código y suprimir problemas activos** en la barra de menús para suprimir todas las infracciones actuales. Esto se conoce a veces como "línea de base".
 
 - Desde **el Explorador de soluciones**
 
-   Para suprimir una infracción en **el Explorador de soluciones**, Establece la gravedad de la regla en **ninguno**.
+  Para suprimir una infracción en **el Explorador de soluciones**, Establece la gravedad de la regla en **ninguno**.
 
 - Desde el **editor de conjunto de reglas**
 
-   Para suprimir una infracción en el editor de conjunto de reglas, desactive la casilla junto a su nombre o establecer **acción** a **ninguno**.
+  Para suprimir una infracción en el editor de conjunto de reglas, desactive la casilla junto a su nombre o establecer **acción** a **ninguno**.
 
 - Desde el **editor de código**
 
-   Para suprimir una infracción del editor de código, coloque el cursor en la línea de código con la infracción y presione **Ctrl**+ **.** Para abrir el **acciones rápidas** menú. Seleccione **Suprimir regla** > **en origen/en el archivo de supresión**.
+  Para suprimir una infracción del editor de código, coloque el cursor en la línea de código con la infracción y presione **Ctrl**+ **.** Para abrir el **acciones rápidas** menú. Seleccione **Suprimir regla** > **en origen/en el archivo de supresión**.
 
-   ![Suprimir diagnóstico desde el menú Acciones rápidas](media/suppress-diagnostic-from-editor.png)
+  ![Suprimir diagnóstico desde el menú Acciones rápidas](media/suppress-diagnostic-from-editor.png)
 
 - Desde el **lista de errores**
 
-   Puede suprimir diagnóstico uno o varios de los **lista de errores** , seleccione los que quiere suprimir, y, a continuación, con el botón secundario y seleccione **suprimir** > **Source/In en Archivo de supresión**.
+  Puede suprimir diagnóstico uno o varios de los **lista de errores** , seleccione los que quiere suprimir, y, a continuación, con el botón secundario y seleccione **suprimir** > **Source/In en Archivo de supresión**.
 
-   - Si se suprimen **en origen**, el **vista previa de cambios** cuadro de diálogo se abre y muestra una vista previa de la C# [advertencia #pragma](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning) o Visual Basic [#Disable advertencia](/dotnet/visual-basic/language-reference/directives/directives) directiva que se agrega al código fuente.
+  - Si se suprimen **en origen**, el **vista previa de cambios** cuadro de diálogo se abre y muestra una vista previa de la C# [advertencia #pragma](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning) o Visual Basic [#Disable advertencia](/dotnet/visual-basic/language-reference/directives/directives) directiva que se agrega al código fuente.
 
-      ![Vista previa de la adición de advertencia #pragma de archivo de código](media/pragma-warning-preview.png)
+    ![Vista previa de la adición de advertencia #pragma de archivo de código](media/pragma-warning-preview.png)
 
-   - Si selecciona **en el archivo de supresión**, **vista previa de cambios** cuadro de diálogo se abre y muestra una vista previa de la <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> atributo que se agrega al archivo supresiones globales.
+  - Si selecciona **en el archivo de supresión**, **vista previa de cambios** cuadro de diálogo se abre y muestra una vista previa de la <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> atributo que se agrega al archivo supresiones globales.
 
-      ![Vista previa de agregar el atributo SuppressMessage al archivo de supresión](media/preview-changes-in-suppression-file.png)
+    ![Vista previa de agregar el atributo SuppressMessage al archivo de supresión](media/preview-changes-in-suppression-file.png)
 
-   En el **vista previa de cambios** cuadro de diálogo, seleccione **aplicar**.
+  En el **vista previa de cambios** cuadro de diálogo, seleccione **aplicar**.
 
-   > [!NOTE]
-   > Si no ve el **suprimir** opción de menú en **el Explorador de soluciones**, la infracción es probable que procede de la compilación y el análisis dinámico no. El **lista de errores** muestra diagnósticos o regla infracciones, tanto de análisis de código activo y compilación. Dado que los diagnósticos de compilación pueden ser obsoletos, por ejemplo, si ha editado el código para corregir la infracción, pero aún no vuelve a generar, no puede suprimir estos diagnósticos desde la **lista de errores**. Diagnósticos de análisis dinámico, ni IntelliSense, siempre están actualizados con fuentes actuales y se puede suprimir desde el **lista de errores**. Para excluir *compilar* diagnósticos desde la selección, cambie el **lista de errores** filtro de origen de **compilación + IntelliSense** a **Intellisense solo**. A continuación, seleccione los diagnósticos que desea suprimir y continuar como se describió anteriormente.
-   >
-   > ![Filtro de origen de la lista de errores en Visual Studio](media/error-list-filter.png)
+  > [!NOTE]
+  > Si no ve el **suprimir** opción de menú en **el Explorador de soluciones**, la infracción es probable que procede de la compilación y el análisis dinámico no. El **lista de errores** muestra diagnósticos o regla infracciones, tanto de análisis de código activo y compilación. Dado que los diagnósticos de compilación pueden ser obsoletos, por ejemplo, si ha editado el código para corregir la infracción, pero aún no vuelve a generar, no puede suprimir estos diagnósticos desde la **lista de errores**. Diagnósticos de análisis dinámico, ni IntelliSense, siempre están actualizados con fuentes actuales y se puede suprimir desde el **lista de errores**. Para excluir *compilar* diagnósticos desde la selección, cambie el **lista de errores** filtro de origen de **compilación + IntelliSense** a **Intellisense solo**. A continuación, seleccione los diagnósticos que desea suprimir y continuar como se describió anteriormente.
+  >
+  > ![Filtro de origen de la lista de errores en Visual Studio](media/error-list-filter.png)
 
 ## <a name="command-line-usage"></a>Uso de la línea de comandos
 

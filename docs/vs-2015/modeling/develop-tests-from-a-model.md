@@ -11,12 +11,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dbc05ccbf78069b6c9d155274b471100a4966a10
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 9ab0d9ae382f9410418a98fea606eebbb236b157
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65692251"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823331"
 ---
 # <a name="develop-tests-from-a-model"></a>Desarrollar pruebas en un modelo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,9 +52,9 @@ Puede usar modelos arquitectónicos y modelos de requisitos que le ayuden a orga
   
 - Cree pruebas independientes basadas en las distintas cláusulas de la condición posterior. Por ejemplo, cree pruebas distintas para notificar el pedido al restaurante y para realizar el pago del cliente. Esta separación tiene las siguientes ventajas:  
   
-    - Los cambios en los distintos aspectos de los requisitos suelen producirse de forma independiente. Al dividir las pruebas en diferentes aspectos de esta manera, resulta más sencillo actualizar las pruebas cuando cambian los requisitos.  
-  
-    - Si el plan de desarrollo implementa un aspecto del caso de uso antes que otro, puede habilitar las pruebas de forma independiente a medida que progresa el desarrollo.  
+  - Los cambios en los distintos aspectos de los requisitos suelen producirse de forma independiente. Al dividir las pruebas en diferentes aspectos de esta manera, resulta más sencillo actualizar las pruebas cuando cambian los requisitos.  
+
+  - Si el plan de desarrollo implementa un aspecto del caso de uso antes que otro, puede habilitar las pruebas de forma independiente a medida que progresa el desarrollo.  
   
 - Cuando diseñe las pruebas, separe los datos de la prueba que ha elegido del código o del script que determina si se ha logrado la condición posterior. Por ejemplo, una prueba de una función aritmética sencilla podría ser: Entrada 4; Compruebe que el resultado es 2. En su lugar, diseñe el script como: Elija una entrada; multiplique el resultado por sí mismo y compruebe que el resultado es la entrada original. Este estilo permite variar las entradas de prueba sin cambiar el cuerpo principal de la prueba.  
   

@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fe17c72463d58cb4e1ac0a76d904416559ed224b
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 54218fd5c351b400ce9744620987f50d35e0558f
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65690552"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825397"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>Procedimiento Agregar un controlador para arrastrar y colocar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,9 +27,9 @@ Puede agregar a su DSL controladores para eventos de arrastrar y colocar para qu
   
 - Las primeras dos secciones describen métodos alternativos para definir un controlador de gestos:  
   
-    - [Definir controladores de gestos por los métodos de invalidación de ShapeElement](#overrideShapeElement). Se puede invalidar `OnDragDrop`, `OnDoubleClick`, `OnDragOver` y otros métodos.  
-  
-    - [Definir controladores de gestos usando MEF](#MEF). Use este método si quiere que desarrolladores de terceros puedan definir sus propios controladores para su DSL. Los usuarios pueden elegir instalar las extensiones de terceros después de haber instalado su DSL.  
+  - [Definir controladores de gestos por los métodos de invalidación de ShapeElement](#overrideShapeElement). Se puede invalidar `OnDragDrop`, `OnDoubleClick`, `OnDragOver` y otros métodos.  
+
+  - [Definir controladores de gestos usando MEF](#MEF). Use este método si quiere que desarrolladores de terceros puedan definir sus propios controladores para su DSL. Los usuarios pueden elegir instalar las extensiones de terceros después de haber instalado su DSL.  
   
 - [Cómo decodificar el elemento arrastrado](#extracting). Los elementos se pueden arrastrar desde cualquier ventana o desde el escritorio, así como desde un DSL.  
   
@@ -84,7 +84,7 @@ using System.Linq;
   
 - <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDoubleClick%2A>: se llama a este método cuando el usuario hace doble clic en la forma o el diagrama.  
   
-   Para obtener más información, vea [Cómo: Interceptar un clic en una forma o decorador](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).  
+   Para obtener más información, consulte [Cómo Interceptar un clic en una forma o decorador](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).  
   
   Defina `IsAcceptableDropItem(e)` para determinar si el elemento arrastrado es aceptable, y ProcessDragDropItem(e) para actualizar su modelo cuando el elemento se suelta. Estos métodos deben extraer primero el elemento de los argumentos de evento. Para obtener información acerca de cómo hacerlo, consulte [cómo obtener una referencia al elemento arrastrado](#extracting).  
   
@@ -172,7 +172,7 @@ using System.Linq;
   
     1. Si aún no lo ha hecho, descargue e instale la extensión Visual Studio ModelBus. Para obtener más información, consulte [SDK de visualización y modelado](http://go.microsoft.com/fwlink/?LinkID=185579).  
   
-    2. Abra el archivo de definición de DSL del DSL de origen en DSL Designer (Diseñador de DSL). Haga clic en la superficie de diseño y, a continuación, haga clic en **habilitar Modelbus**. En el cuadro de diálogo, elija una o ambas opciones.  Haga clic en **Aceptar**. Se agrega un nuevo proyecto "ModelBus" a la solución de DSL.  
+    2. Abra el archivo de definición de DSL del DSL de origen en DSL Designer (Diseñador de DSL). Haga clic en la superficie de diseño y, a continuación, haga clic en **habilitar Modelbus**. En el cuadro de diálogo, elija una o ambas opciones.  Haga clic en **OK**. Se agrega un nuevo proyecto "ModelBus" a la solución de DSL.  
   
     3. Haga clic en **Transformar todas las plantillas** y recompile la solución.  
   

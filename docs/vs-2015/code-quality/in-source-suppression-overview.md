@@ -12,12 +12,12 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 5bb3632e1ed7bf07e236322700ba8553b53a75cb
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: cb2b23dcc01d90bc4365c7d5673e6232229b8d3e
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63426601"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825999"
 ---
 # <a name="in-source-suppression-overview"></a>Información general sobre supresiones en código fuente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Supresión en el código fuente es la capacidad para suprimir o pasar por alto i
  No debe utilizar supresiones en código fuente en las compilaciones de versión para evitar que los metadatos de supresión en el origen de trasvase de registros por accidente. Debido al costo de procesamiento de supresión en el código fuente, también puede disminuir el rendimiento de la aplicación mediante la inclusión de los metadatos de supresión en el código fuente.  
   
 > [!NOTE]
-> No tiene a mano código estos atributos por sí mismo. Para obtener más información, vea [Cómo: Suprimir advertencias mediante el elemento de menú](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md). El elemento de menú no está disponible para código C++.  
+> No tiene a mano código estos atributos por sí mismo. Para obtener más información, consulte [Cómo Suprimir advertencias mediante el elemento de menú](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md). El elemento de menú no está disponible para código C++.  
   
 ## <a name="suppressmessage-attribute"></a>Atributo SuppressMessage  
  Cuando haga clic en una advertencia de análisis de código en el **lista de errores** y, a continuación, haga clic en **Suprimir mensajes**, un **SuppressMessage** se agrega un atributo en el código o en el archivo de supresiones globales del proyecto.  
@@ -64,15 +64,15 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
   
 - **Ámbito** -el destino en el que se suprime la advertencia. Si el destino no se especifica, se establece en el destino del atributo. Los ámbitos admitidos incluyen lo siguiente:  
   
-    - Module  
-  
-    - Espacio de nombres  
-  
-    - Recurso  
-  
-    - Tipo  
-  
-    - Miembro  
+  - Module  
+
+  - Espacio de nombres  
+
+  - Recurso  
+
+  - Type  
+
+  - Member  
   
 - **Destino** : un identificador que se usa para especificar el destino en el que se suprime la advertencia. Debe contener un nombre de elemento completo.  
   

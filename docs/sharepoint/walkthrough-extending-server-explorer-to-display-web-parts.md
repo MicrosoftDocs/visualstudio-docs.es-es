@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5ef444d78e5a486f9e384ea02d1eb88461e3fce2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1c84cfcde4a5ffac1e1563a4d2b141bd6240b772
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430337"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821985"
 ---
 # <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>Tutorial: Extender el Explorador de servidores para mostrar elementos web
   En Visual Studio, puede usar el **conexiones de SharePoint** nodo de **Explorador de servidores** para ver los componentes de sitios de SharePoint. Sin embargo, **Explorador de servidores** no muestra algunos componentes de forma predeterminada. En este tutorial, podrá ampliar **Explorador de servidores** para que se muestre la Galería de elementos Web en cada uno conectado el sitio de SharePoint.
@@ -29,9 +29,9 @@ ms.locfileid: "63430337"
 
 - Crear una extensión de Visual Studio que extiende **Explorador de servidores** de las maneras siguientes:
 
-    - La extensión se agrega un **Galería de elementos Web** nodo en cada nodo de sitio de SharePoint en **Explorador de servidores**. Este nuevo nodo contiene nodos secundarios que representan cada elemento Web en la Galería de elementos Web en el sitio.
+  - La extensión se agrega un **Galería de elementos Web** nodo en cada nodo de sitio de SharePoint en **Explorador de servidores**. Este nuevo nodo contiene nodos secundarios que representan cada elemento Web en la Galería de elementos Web en el sitio.
 
-    - La extensión define un nuevo tipo de nodo que representa una instancia del elemento Web. Este nuevo tipo de nodo es la base para los nodos secundarios en la nueva **Galería de elementos Web** nodo. El nuevo tipo de nodo de elemento Web muestra información en el **propiedades** ventana acerca del elemento Web que representa. El tipo de nodo también incluye un elemento de menú contextual personalizado que puede usar como punto de partida para realizar otras tareas relacionadas con el elemento Web.
+  - La extensión define un nuevo tipo de nodo que representa una instancia del elemento Web. Este nuevo tipo de nodo es la base para los nodos secundarios en la nueva **Galería de elementos Web** nodo. El nuevo tipo de nodo de elemento Web muestra información en el **propiedades** ventana acerca del elemento Web que representa. El tipo de nodo también incluye un elemento de menú contextual personalizado que puede usar como punto de partida para realizar otras tareas relacionadas con el elemento Web.
 
 - Cree dos comandos de SharePoint personalizados que llama el ensamblado de extensión. Comandos de SharePoint son métodos que pueden llamarse mediante ensamblados de extensión para usar las API en el modelo de objetos de servidor de SharePoint. En este tutorial, creará los comandos que recuperan información del elemento Web desde el sitio de SharePoint local en el equipo de desarrollo. Para obtener más información, consulte [llamar a los modelos de objetos de SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).
 
@@ -338,7 +338,7 @@ ms.locfileid: "63430337"
 
     2. En el **Agregar conexión de SharePoint** diálogo cuadro, escriba la dirección URL del sitio de SharePoint a la que desea conectarse y, a continuación, elija el **Aceptar** botón.
 
-         Para especificar el sitio de SharePoint en el equipo de desarrollo, escriba **http://localhost**.
+         Para especificar el sitio de SharePoint en el equipo de desarrollo, escriba **http://localhost** .
 
 3. Expanda el nodo de conexión de sitio (que muestra la dirección URL del sitio) y, a continuación, expanda un nodo de sitio secundario (por ejemplo, **Team Site**).
 

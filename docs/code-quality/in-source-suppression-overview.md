@@ -14,12 +14,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 6cd61304e150da63d2d461ef364e7039789c71fc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 39fd588a51771aae79d22d2d7f0a02a648184c05
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825831"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821560"
 ---
 # <a name="suppress-code-analysis-warnings"></a>Suprimir advertencias de análisis de código
 
@@ -67,17 +67,17 @@ Las propiedades del atributo incluyen:
 
 - **Ámbito** -el destino en el que se suprime la advertencia. Si el destino no se especifica, se establece en el destino del atributo. Admite [ámbitos](xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope) incluyen lo siguiente:
 
-   - `module`
+  - `module`
 
-   - `resource`
+  - `resource`
 
-   - `type`
+  - `type`
 
-   - `member`
+  - `member`
 
-   - `namespace` -En este ámbito suprime las advertencias en el espacio de nombres. No suprime las advertencias con los tipos del espacio de nombres.
+  - `namespace` -En este ámbito suprime las advertencias en el espacio de nombres. No suprime las advertencias con los tipos del espacio de nombres.
 
-   - `namespaceanddescendants` -(Nuevo en Visual Studio de 2019) este ámbito suprime las advertencias en un espacio de nombres y todos los símbolos de sus descendientes. El `namespaceanddescendants` valor solo es válido para los analizadores de Roslyn y se omite binario, en función de FxCop análisis estático.
+  - `namespaceanddescendants` -(Nuevo en Visual Studio de 2019) este ámbito suprime las advertencias en un espacio de nombres y todos los símbolos de sus descendientes. El `namespaceanddescendants` valor solo es válido para los analizadores de Roslyn y se omite binario, en función de FxCop análisis estático.
 
 - **Destino** : un identificador que se usa para especificar el destino en el que se suprime la advertencia. Debe contener un nombre completo del elemento.
 

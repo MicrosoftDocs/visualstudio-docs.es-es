@@ -12,12 +12,12 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 00b3a24e2e10672a2f25fdf42a3993f75c378c86
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2eb167a323371c3503429f56bc1537a95f3f86b7
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432582"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67822085"
 ---
 # <a name="shader-designer"></a>Diseñador de sombras
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ En este documento se describe cómo trabajar con el Diseñador de sombras de [!I
   
 1. En el **Explorador de soluciones**, abra el menú contextual del proyecto al que quiera agregar el sombreador y, después, elija **Agregar**, **Nuevo elemento**.  
   
-2. En el cuadro de diálogo **Agregar nuevo elemento** en **Instalado**, seleccione **Gráficos**, y después seleccione **Gráfico de sombreador visual (.dgsl)**.  
+2. En el cuadro de diálogo **Agregar nuevo elemento** en **Instalado**, seleccione **Gráficos**, y después seleccione **Gráfico de sombreador visual (.dgsl)** .  
   
 3. Especifique el **Nombre** del archivo de sombreador y la **Ubicación** donde quiere que se cree.  
   
@@ -66,7 +66,7 @@ En este documento se describe cómo trabajar con el Diseñador de sombras de [!I
   
  En esta tabla se describen los elementos de la barra de herramientas **Modo Diseñador de sombras** que se muestran en el orden en que aparecen de izquierda a derecha:  
   
-|Elemento de la barra de herramientas|Descripción|  
+|Elemento de la barra de herramientas|DESCRIPCIÓN|  
 |------------------|-----------------|  
 |**Seleccionar**|Permite la interacción con nodos y bordes en el gráfico. En este modo, puede seleccionar nodos y moverlos o eliminarlos, y puede establecer bordes o interrumpirlos.|  
 |**Movimiento panorámico**|Habilita el movimiento de un gráfico de sombreador en relación con el marco de la ventana. Para realizar el movimiento panorámico, seleccione un punto en la superficie de diseño y muévalo.<br /><br /> En el modo **Seleccionar**, presione y mantenga presionada la tecla Ctrl para activar el modo **Movimiento panorámico** temporalmente.|  
@@ -93,17 +93,17 @@ En este documento se describe cómo trabajar con el Diseñador de sombras de [!I
   
 - Esta es la manera de hacerlo:  
   
-    - Para agregar un nodo al gráfico, selecciónelo en el **Cuadro de herramientas** y después muévalo a la superficie de diseño.  
-  
-    - Para quitar un nodo del gráfico, selecciónelo y después presione Supr.  
-  
-    - Para cambiar la posición de un nodo, selecciónelo y después muévalo a una nueva ubicación.  
-  
-    - Para conectar dos nodos, mueva un terminal de salida de un nodo a un terminal de entrada del otro nodo. Solo se pueden conectar los terminales que tienen tipos compatibles. Una línea entre los terminales muestra la conexión.  
-  
-    - Para quitar una conexión, en el menú contextual de uno de los terminales conectados, seleccione **Interrumpir vínculos**.  
-  
-    - Para configurar las propiedades de un nodo, seleccione el nodo y, después, en la ventana **Propiedades**, especifique los nuevos valores para las propiedades.  
+  - Para agregar un nodo al gráfico, selecciónelo en el **Cuadro de herramientas** y después muévalo a la superficie de diseño.  
+
+  - Para quitar un nodo del gráfico, selecciónelo y después presione Supr.  
+
+  - Para cambiar la posición de un nodo, selecciónelo y después muévalo a una nueva ubicación.  
+
+  - Para conectar dos nodos, mueva un terminal de salida de un nodo a un terminal de entrada del otro nodo. Solo se pueden conectar los terminales que tienen tipos compatibles. Una línea entre los terminales muestra la conexión.  
+
+  - Para quitar una conexión, en el menú contextual de uno de los terminales conectados, seleccione **Interrumpir vínculos**.  
+
+  - Para configurar las propiedades de un nodo, seleccione el nodo y, después, en la ventana **Propiedades**, especifique los nuevos valores para las propiedades.  
   
 ### <a name="previewing-shaders"></a>Vista previa de sombreadores  
  Para ayudarle a entender cómo aparecerá un sombreador en la aplicación, puede configurar cómo se muestra una vista previa del efecto. Para aproximarse a la aplicación, puede elegir una de varias formas para representar, configurar las texturas y otros parámetros de material, habilitar la animación de efectos basados en tiempo y examinar la vista previa desde distintos ángulos.  
@@ -126,7 +126,7 @@ En este documento se describe cómo trabajar con el Diseñador de sombras de [!I
   
    Estos son los parámetros de sombreador que se pueden modificar:  
   
-|Parámetro|Propiedades|  
+|Parámetro|Properties (Propiedades)|  
 |---------------|----------------|  
 |**Textura 1** – **Textura 8**|**Acceso**:                             **Público** para que esta propiedad se pueda establecer desde el Editor de modelos. De lo contrario, **Privado**.<br /><br /> **Nombre de archivo**: Ruta de acceso completa del archivo de textura asociado al registro de textura.|  
 |**Color ambiental de material**|**Acceso**:                             **Público** para que esta propiedad se pueda establecer desde el Editor de modelos. De lo contrario, **Privado**.<br /><br /> **Valor**: El color difuso del píxel actual debido a la iluminación indirecta o ambiente:.|  
@@ -158,7 +158,7 @@ En este documento se describe cómo trabajar con el Diseñador de sombras de [!I
   
 ## <a name="keyboard-shortcuts"></a>Métodos abreviados de teclado  
   
-|Comando|Métodos abreviados de teclado|  
+|Get-Help|Métodos abreviados de teclado|  
 |-------------|------------------------|  
 |Cambiar al modo **Seleccionar**|Ctrl+G, Ctrl+Q<br /><br /> S|  
 |Cambiar al modo **Zoom**|Ctrl+G, Ctrl+Z<br /><br /> Z|  
@@ -183,7 +183,7 @@ En este documento se describe cómo trabajar con el Diseñador de sombras de [!I
   
 ## <a name="related-topics"></a>Temas relacionados  
   
-|Título|Descripción|  
+|Título|DESCRIPCIÓN|  
 |-----------|-----------------|  
 |[Trabajar con activos 3D para juegos y aplicaciones](../designers/working-with-3-d-assets-for-games-and-apps.md)|Proporciona información general sobre las herramientas de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] que se pueden usar para trabajar con texturas e imágenes, modelos 3D y efectos de sombreador.|  
 |[Editor de imágenes](../designers/image-editor.md)|Describe cómo usar el editor de imágenes de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para trabajar con texturas e imágenes.|  

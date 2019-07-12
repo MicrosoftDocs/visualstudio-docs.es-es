@@ -14,12 +14,12 @@ caps.latest.revision: 57
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 373b5c8fd108e783123440820b38edf94a272a1d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4a4b607adcd4aab4c5b70f02cb28f06219c7d655
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440993"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823705"
 ---
 # <a name="layer-diagrams-guidelines"></a>Diagramas de capas: Instrucciones
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -101,9 +101,9 @@ Describe la arquitectura de la aplicación en un nivel alto mediante la creació
 |Eliminar una dependencia que no debería existir|Haga clic en la dependencia y, a continuación, presione **eliminar**.|  
 |Cambiar o restringir la dirección de una dependencia|Establezca su **dirección** propiedad.|  
 |Crear nuevas dependencias|Use la **dependencia** y **dependencia bidireccional** herramientas.<br /><br /> Para dibujar varias dependencias, haga doble clic en la herramienta. Cuando haya terminado, haga clic en el **puntero** herramientas o presione la **ESC** clave.|  
-|Especificar qué artefactos asociados a una capa no pueden depender de los espacios de nombres especificados|Escriba los espacios de nombres en la capa **Forbidden Namespace Dependencies** propiedad. Use un punto y coma (**;**) para separar los espacios de nombres.|  
-|Especificar qué artefactos asociados a una capa no deben pertenecer a los espacios de nombres especificados|Escriba los espacios de nombres en la capa **Forbidden Namespaces** propiedad. Use un punto y coma (**;**) para separar los espacios de nombres.|  
-|Especificar qué artefactos asociados a una capa no deben pertenecer a uno de los espacios de nombres especificados|Escriba el espacio de nombres en la capa **Required Namespaces** propiedad. Use un punto y coma (**;**) para separar los espacios de nombres.|  
+|Especificar qué artefactos asociados a una capa no pueden depender de los espacios de nombres especificados|Escriba los espacios de nombres en la capa **Forbidden Namespace Dependencies** propiedad. Use un punto y coma ( **;** ) para separar los espacios de nombres.|  
+|Especificar qué artefactos asociados a una capa no deben pertenecer a los espacios de nombres especificados|Escriba los espacios de nombres en la capa **Forbidden Namespaces** propiedad. Use un punto y coma ( **;** ) para separar los espacios de nombres.|  
+|Especificar qué artefactos asociados a una capa no deben pertenecer a uno de los espacios de nombres especificados|Escriba el espacio de nombres en la capa **Required Namespaces** propiedad. Use un punto y coma ( **;** ) para separar los espacios de nombres.|  
   
 ### <a name="Improving"></a> Mejorar la estructura del código  
  Los cambios de refactorización son mejoras que no afectan al comportamiento de la aplicación, pero que facilitan los cambios y las ampliaciones del código en el futuro. Un código bien estructurado tiene un diseño que resulta fácil abstraer en un diagrama de capas.  
@@ -134,7 +134,7 @@ Describe la arquitectura de la aplicación en un nivel alto mediante la creació
   
 - Cambiar el color de las capas y las dependencias.  
   
-    - Seleccione una o varias capas o dependencias, con el botón secundario y, a continuación, haga clic en **propiedades**. En el **propiedades** ventana, edite el **Color** propiedad.  
+  - Seleccione una o varias capas o dependencias, con el botón secundario y, a continuación, haga clic en **propiedades**. En el **propiedades** ventana, edite el **Color** propiedad.  
   
 ## <a name="Validate"></a> Valide el código con el diagrama  
  Una vez editado el diagrama, puede validarlo con el código manualmente en cualquier momento o automáticamente cada vez que se ejecute una compilación local o [!INCLUDE[esprbuild](../includes/esprbuild-md.md)].  

@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7488bb8b54751c7780cb9751309d227e5d5cb758
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.openlocfilehash: 4b209fad02cdcb3da230143a2c13ff4eaa648d76
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66401093"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825631"
 ---
 # <a name="walkthrough-create-a-custom-deployment-step-for-sharepoint-projects"></a>Tutorial: Crear un paso de implementación personalizado para proyectos de SharePoint
   Al implementar un proyecto de SharePoint, Visual Studio ejecuta una serie de pasos de implementación en un orden específico. Visual Studio incluye muchos pasos de implementación integrados, pero también puede crear sus propios.
@@ -29,9 +29,9 @@ ms.locfileid: "66401093"
 
 - Crear una extensión Visual Studio que realiza dos tareas principales:
 
-    - La extensión define un paso de implementación personalizado para actualizar las soluciones de SharePoint.
+  - La extensión define un paso de implementación personalizado para actualizar las soluciones de SharePoint.
 
-    - La extensión crea una extensión de proyecto que define una nueva configuración de implementación, que es un conjunto de pasos de implementación que se ejecutan para un proyecto determinado. La nueva configuración de implementación incluye el paso de implementación personalizado y varios pasos de implementación integrados.
+  - La extensión crea una extensión de proyecto que define una nueva configuración de implementación, que es un conjunto de pasos de implementación que se ejecutan para un proyecto determinado. La nueva configuración de implementación incluye el paso de implementación personalizado y varios pasos de implementación integrados.
 
 - Cree dos comandos de SharePoint personalizados que llama el ensamblado de extensión. Comandos de SharePoint son métodos que pueden llamarse mediante ensamblados de extensión para usar las API en el modelo de objetos de servidor de SharePoint. Para obtener más información, consulte [llamar a los modelos de objetos de SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).
 
@@ -290,7 +290,7 @@ ms.locfileid: "66401093"
 
     1. Nombre
 
-    2. Organización
+    2. Empresa
 
     3. Teléfono del trabajo
 

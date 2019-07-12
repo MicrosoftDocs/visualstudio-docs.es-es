@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: daf5251aa32f4101bfba21d053d72abceef1eb15
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a103777005718a54d271d2f94cb0e5cf0b094ce6
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440844"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826131"
 ---
 # <a name="walkthrough-insert-data-into-a-workbook-on-a-server"></a>Tutorial: Insertar datos en un libro en un servidor
   Este tutorial muestra cómo insertar datos en un conjunto de datos que se almacena en caché en un libro de Microsoft Office Excel sin iniciar Excel, mediante el <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> clase.
@@ -54,9 +54,9 @@ ms.locfileid: "63440844"
 
 - Acceso a una instancia en ejecución de Microsoft SQL Server o Microsoft SQL Server Express que tiene la base de datos de ejemplo AdventureWorksLT conectada a ella. Puede descargar la base de datos AdventureWorksLT el [sitio Web de CodePlex](http://go.microsoft.com/fwlink/?linkid=87843). Para obtener más información sobre cómo asociar una base de datos, vea los siguientes temas:
 
-    - Para adjuntar una base de datos mediante SQL Server Management Studio o SQL Server Management Studio Express, vea [Cómo: Adjuntar una base de datos (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database).
+  - Para adjuntar una base de datos mediante SQL Server Management Studio o SQL Server Management Studio Express, vea [Cómo: Adjuntar una base de datos (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database).
 
-    - Para adjuntar una base de datos mediante el uso de la línea de comandos, vea [Cómo: Adjuntar un archivo de base de datos a SQL Server Express](/previous-versions/sql/).
+  - Para adjuntar una base de datos mediante el uso de la línea de comandos, vea [Cómo: Adjuntar un archivo de base de datos a SQL Server Express](/previous-versions/sql/).
 
 ## <a name="create-a-class-library-project-that-defines-a-dataset"></a>Cree un proyecto de biblioteca de clases que define un conjunto de datos
  Para usar el mismo conjunto de datos en un proyecto de libro de Excel y una aplicación de consola, debe definir el conjunto de datos en un ensamblado independiente que se hace referencia por ambos proyectos. En este tutorial, defina el conjunto de datos en un proyecto de biblioteca de clases.
@@ -77,7 +77,7 @@ ms.locfileid: "63440844"
 
 7. En el **nuevo proyecto** diálogo cuadro, asegúrese de que el **crear directorio para la solución** casilla de verificación no está seleccionada.
 
-8. Haga clic en **Aceptar**.
+8. Haga clic en **OK**.
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Agrega el **AdventureWorksDataSet** proyecto a **el Explorador de soluciones** y abre el **Class1.cs** o **Class1.vb** archivo de código.
 
@@ -100,13 +100,13 @@ ms.locfileid: "63440844"
 
 5. Si tiene una conexión existente a la base de datos AdventureWorksLT, elija esa conexión y haga clic en **siguiente**.
 
-    De lo contrario, haga clic en **Nueva conexión**y use el cuadro de diálogo **Agregar conexión** para crear la nueva conexión. Para obtener más información, vea [Cómo: Conectarse a datos en una base de datos](../vsto/walkthrough-inserting-data-into-a-workbook-on-a-server.md).
+    De lo contrario, haga clic en **Nueva conexión**y use el cuadro de diálogo **Agregar conexión** para crear la nueva conexión. Para obtener más información, consulte [Cómo Conectarse a datos en una base de datos](../vsto/walkthrough-inserting-data-into-a-workbook-on-a-server.md).
 
 6. En la página **Guardar cadena de conexión en el archivo de configuración de la aplicación** , haga clic en **Siguiente**.
 
-7. En el **elija los objetos de base de datos** , expanda **tablas** y seleccione **Product (SalesLT)**.
+7. En el **elija los objetos de base de datos** , expanda **tablas** y seleccione **Product (SalesLT)** .
 
-8. Haga clic en **Finalizar**.
+8. Haga clic en **Finalizar**
 
     El *AdventureWorksLTDataSet.xsd* archivo se agrega a la **AdventureWorksDataSet** proyecto. Este archivo define los siguientes elementos:
 
@@ -135,7 +135,7 @@ ms.locfileid: "63440844"
 
 5. En el **nombre** , escriba **AdventureWorksReport**. No modifique la ubicación.
 
-6. Haga clic en **Aceptar**.
+6. Haga clic en **OK**.
 
      Se abre el **Asistente para proyectos de Visual Studio Tools para Office** .
 
@@ -216,7 +216,7 @@ ms.locfileid: "63440844"
 
 4. En el **nombre** , escriba **DataWriter**. No modifique la ubicación.
 
-5. Haga clic en **Aceptar**.
+5. Haga clic en **OK**.
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Agrega el **DataWriter** proyecto a **el Explorador de soluciones** y abre el **Program.cs** o **Module1.vb** archivo de código.
 
@@ -229,7 +229,7 @@ ms.locfileid: "63440844"
 
 2. En el **.NET** ficha, seleccione **Microsoft.VisualStudio.Tools.Applications.ServerDocument**.
 
-3. Haga clic en **Aceptar**.
+3. Haga clic en **OK**.
 
 4. En **el Explorador de soluciones**, haga clic en el **DataWriter** del proyecto y haga clic en **Agregar referencia**.
 

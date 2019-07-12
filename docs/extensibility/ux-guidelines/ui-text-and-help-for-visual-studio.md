@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7917bdd3b7a94af605b2626016c9a9a725fa2b29
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cb4066d9728dd633492b05e4cc872dbdd8a91b5c
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66310791"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823590"
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>Texto de la interfaz de usuario y la Ayuda de Visual Studio
 ## <a name="BKMK_UITextAndTerminology"></a> Terminología y el texto de la interfaz de usuario
@@ -162,7 +162,7 @@ ms.locfileid: "66310791"
 |Agregar o quitar|No destructiva. Se utiliza cuando se agrega o quita algo de una lista.|El cuadro de diálogo Administrador de conexiones de TFS server lista es un ejemplo de agregar o quitar.|
 |Eliminar|Destructiva. Se utiliza solo cuando se quita el elemento se descartarán o se eliminan del disco permanentemente.|Si el resultado de la eliminación de un archivo de disco, "Delete" requiere normalmente un símbolo del sistema.|
 
-## <a name="error-messages"></a>Mensajes de error
+## <a name="error-messages"></a>mensajes de error
 
 ### <a name="overview"></a>Información general
  Se producen errores. Establecer limitaciones en lo que puede hacer el usuario es un primer paso razonable para evitar que los mensajes de error evitables. Sin embargo, cuando se produce un error, un mensaje de error bien escrito puede ir un largo camino para mitigar el problema. Los mensajes de error son sin duda uno de los tipos más importantes de la notificación de que el usuario ve, ya que son sincrónicas e indican un problema que debe resolverse. Los mensajes de error mal escrito dejar a los usuarios en sus propias para decidir la causa de los errores y las posibles soluciones.
@@ -191,11 +191,11 @@ ms.locfileid: "66310791"
 
 - Algunas preguntas que preguntarse al construir un mensaje de error:
 
-    - ¿Puede averiguar el usuario de cómo solucionar el problema con este error por sí solo?
+  - ¿Puede averiguar el usuario de cómo solucionar el problema con este error por sí solo?
 
-    - ¿El usuario utiliza el vocabulario del mismo que este error?
+  - ¿El usuario utiliza el vocabulario del mismo que este error?
 
-    - ¿Es este ambigua de error o compartidos en varias situaciones? Si es así, ¿cómo guían a los usuarios a la solución que necesitan?
+  - ¿Es este ambigua de error o compartidos en varias situaciones? Si es así, ¿cómo guían a los usuarios a la solución que necesitan?
 
 #### <a name="build-errors"></a>Errores de compilación
  Dado que Visual Studio es una herramienta de desarrollo de software, muchos de sus componentes tienen una compilación, convertir o codificación de paso para convertir el trabajo del desarrollador en formato binario. Estas conversiones pueden producir errores cuando el compilador no puede procesar archivos creados de forma incorrecta o cuando las opciones del compilador no se han establecido correctamente.
@@ -272,7 +272,7 @@ ms.locfileid: "66310791"
 
 - **Botones de Ayuda de la interfaz de usuario** (en desuso). Un indicador visible en la barra de título que proporciona acceso al tema de Ayuda de F1 relacionado.
 
-### <a name="text"></a>Texto
+### <a name="text"></a>Text
 
 #### <a name="instructional-and-supplemental-text-in-dialogs"></a>Texto informativo y adicional en los cuadros de diálogo
  En los cuadros de diálogo que admiten tareas complejas, es posible que sea necesario para proporcionar texto informativo en la interfaz de usuario, a menudo en la parte superior del cuadro de diálogo o cerca de los controles complejos. Consulte [UI texto y la terminología](../../extensibility/ux-guidelines/ui-text-and-help-for-visual-studio.md#BKMK_UITextAndTerminology) para obtener más información sobre el estilo de escritura.

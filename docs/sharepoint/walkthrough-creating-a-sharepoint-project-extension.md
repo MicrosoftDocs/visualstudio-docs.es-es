@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: aa310539b3a36d78137f336b8fea8f40a5d459ca
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 10affe50b3410fa013205313f4087aaabb7c4769
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430411"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825805"
 ---
 # <a name="walkthrough-create-a-sharepoint-project-extension"></a>Tutorial: Crear una extensión de proyecto de SharePoint
   Este tutorial muestra cómo crear una extensión para los proyectos de SharePoint. Puede usar una extensión de proyecto para responder a eventos de nivel de proyecto, como cuando un proyecto es agregado, eliminado o cambiado de nombre. También puede agregar propiedades personalizadas o responder cuando cambia un valor de propiedad. A diferencia de las extensiones de elemento de proyecto, las extensiones de proyecto no se puede asociadas con un determinado tipo de proyecto de SharePoint. Cuando se crea una extensión de proyecto, la extensión de carga cuando se abre cualquier tipo de proyecto de SharePoint en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
@@ -30,11 +30,11 @@ ms.locfileid: "63430411"
 
 - Creación de un [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] extensión para los proyectos de SharePoint que hace lo siguiente:
 
-    - Agrega una propiedad de proyecto personalizadas a la ventana Propiedades. La propiedad se aplica a cualquier proyecto de SharePoint.
+  - Agrega una propiedad de proyecto personalizadas a la ventana Propiedades. La propiedad se aplica a cualquier proyecto de SharePoint.
 
-    - Usa el modelo de objetos de proyecto de SharePoint para agregar una carpeta asignada a un proyecto.
+  - Usa el modelo de objetos de proyecto de SharePoint para agregar una carpeta asignada a un proyecto.
 
-    - Usa el [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] (DTE) para eliminar una carpeta asignada desde el proyecto de modelo de objetos de automatización.
+  - Usa el [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] (DTE) para eliminar una carpeta asignada desde el proyecto de modelo de objetos de automatización.
 
 - Creación de un [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] paquete de extensión (VSIX) para implementar el ensamblado de la extensión de la propiedad de proyecto.
 

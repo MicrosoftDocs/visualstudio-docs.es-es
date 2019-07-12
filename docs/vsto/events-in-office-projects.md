@@ -32,12 +32,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0fdea53ec99c4f95fb4bb9526b3f154bea5b662b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e822ae5f50436a2f1b0b4863b7e6cf3a7d5d0963
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441823"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826056"
 ---
 # <a name="events-in-office-projects"></a>Eventos en proyectos de Office
   Cada plantilla de proyecto de Office genera automáticamente varios controladores de eventos. Los controladores de eventos de las personalizaciones de nivel de documento son ligeramente diferentes de los controladores de eventos de los complementos de VSTO.
@@ -56,13 +56,13 @@ ms.locfileid: "63441823"
 
 - En los proyectos de Microsoft Office Excel, los controladores de eventos tienen los nombres siguientes:
 
-    - `Sheet1_Startup`
+  - `Sheet1_Startup`
 
-    - `Sheet2_Startup`
+  - `Sheet2_Startup`
 
-    - `Sheet3_Startup`
+  - `Sheet3_Startup`
 
-    - `ThisWorkbook_Startup`
+  - `ThisWorkbook_Startup`
 
 ### <a name="shutdown-event"></a>Shutdown (evento)
  El evento **Shutdown** se desencadena para cada uno de los elementos host (documento u hoja de cálculo) cuando el dominio de aplicación en el que se ha cargado el código está a punto de descargarse. Es lo último a lo que se llama en la clase cuando se descarga.
@@ -73,13 +73,13 @@ ms.locfileid: "63441823"
 
 - En los proyectos de Microsoft Office Excel, los controladores de eventos tienen los nombres siguientes:
 
-    - `Sheet1_Shutdown`
+  - `Sheet1_Shutdown`
 
-    - `Sheet2_Shutdown`
+  - `Sheet2_Shutdown`
 
-    - `Sheet3_Shutdown`
+  - `Sheet3_Shutdown`
 
-    - `ThisWorkbook_Shutdown`
+  - `ThisWorkbook_Shutdown`
 
 > [!NOTE]
 > No quite controles mediante programación durante el controlador de eventos **Shutdown** del documento. Los elementos de la interfaz de usuario del documento ya no están disponibles cuando se produce el evento **Shutdown** . Si desea quitar controles antes de que se cierre la aplicación, agregue el código a otro controlador de eventos, como **BeforeClose** o **BeforeSave**.

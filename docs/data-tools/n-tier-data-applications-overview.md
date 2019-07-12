@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 35b882914deacafae46f2470c49efe1d6ace00f6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 995328205e99117f68050833853ada76f06eb4c8
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62566476"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821900"
 ---
 # <a name="n-tier-data-applications-overview"></a>Introducción a las aplicaciones de datos de n niveles
 *N niveles* aplicaciones de datos son las aplicaciones de datos que se dividen en varios *niveles*. Las aplicaciones con n niveles, también denominadas "aplicaciones distribuidas" o "aplicaciones multinivel", dividen el procesamiento en niveles independientes que se distribuyen entre el cliente y el servidor. Al desarrollar aplicaciones que tienen acceso a datos, se debe realizar una separación clara entre los distintos niveles que constituyen la aplicación.
@@ -49,11 +49,11 @@ El *nivel intermedio* es la capa que el nivel de presentación y la capa de dato
 
 - La lógica y los componentes de acceso a datos, como los siguientes:
 
-    - [Los TableAdapters](create-and-configure-tableadapters.md) y [objetos DataAdapter y DataReader](/dotnet/framework/data/adonet/dataadapters-and-datareaders).
+  - [Los TableAdapters](create-and-configure-tableadapters.md) y [objetos DataAdapter y DataReader](/dotnet/framework/data/adonet/dataadapters-and-datareaders).
 
-    - Representaciones de objeto de datos, como [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index) las clases de entidad.
+  - Representaciones de objeto de datos, como [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index) las clases de entidad.
 
-    - Los servicios de aplicación comunes, como autenticación, autorización y personalización.
+  - Los servicios de aplicación comunes, como autenticación, autorización y personalización.
 
 Las ilustraciones siguientes muestran las características y tecnologías que se encuentran disponibles en Visual Studio y dónde podrían integrarse en el nivel intermedio de una aplicación con n niveles.
 
@@ -62,7 +62,7 @@ Las ilustraciones siguientes muestran las características y tecnologías que se
 El nivel intermedio se conecta normalmente con la capa de datos mediante una conexión de datos. Esta conexión de datos está almacenada normalmente en el componente de acceso a datos.
 
 ## <a name="data-tier"></a>Capa de datos
-El *capa de datos* es básicamente el servidor que almacena datos de la aplicación (por ejemplo, un servidor que ejecuta SQL Server).
+Básicamente, el *nivel de datos* es el servidor que almacena los datos de una aplicación (por ejemplo, un servidor que ejecuta SQL Server).
 
 Las ilustraciones siguientes muestran las características y tecnologías que se encuentran disponibles en Visual Studio y dónde podrían integrarse en la capa de datos de una aplicación con n niveles.
 

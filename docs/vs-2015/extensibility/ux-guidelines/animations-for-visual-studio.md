@@ -8,12 +8,12 @@ ms.assetid: 446773a9-e6f7-4c0c-8dbc-9e303bf32eb1
 caps.latest.revision: 3
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: bd51e99f59f22eb31252be2a41c3b3fb5e89f846
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: c07fb0887ae01ec917b39f5d7537d5a78fb5a4c6
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077256"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825354"
 ---
 # <a name="animations-for-visual-studio"></a>Animaciones para Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,13 +27,13 @@ ms.locfileid: "60077256"
 
 - **Control de tiempo y la velocidad son importantes** para asegurarse de que las transiciones sentirse rápido y natural:
 
-    - Completar transiciones animadas dentro de un medio segundo (500 milisegundos).
+  - Completar transiciones animadas dentro de un medio segundo (500 milisegundos).
 
-    - Las animaciones que se producirían con frecuencia deben ser lo suficientemente rápido, por lo que no interrumpen el flujo de trabajo del usuario.
+  - Las animaciones que se producirían con frecuencia deben ser lo suficientemente rápido, por lo que no interrumpen el flujo de trabajo del usuario.
 
-    - Las animaciones no deben ser tan rápido o discordante que resulta difícil de entender, pero no tan lento que realice una impacienta para la transición al finalizar.
+  - Las animaciones no deben ser tan rápido o discordante que resulta difícil de entender, pero no tan lento que realice una impacienta para la transición al finalizar.
 
-    - Utilice el control de tiempo variable para enfatizar la importancia. Por ejemplo, al navegar a través de una secuencia de elementos en un diagrama de clases, la velocidad a través de las transiciones entre los elementos, a continuación, ralentizar centrarse en los elementos importantes.
+  - Utilice el control de tiempo variable para enfatizar la importancia. Por ejemplo, al navegar a través de una secuencia de elementos en un diagrama de clases, la velocidad a través de las transiciones entre los elementos, a continuación, ralentizar centrarse en los elementos importantes.
 
 - **Usar aceleración no lineal gradual** desde un estado a otro, lo que ofrece una sensación de movimiento de calma y natural
 
@@ -49,13 +49,13 @@ ms.locfileid: "60077256"
 
 - **Al mostrar el progreso o estado** a través de animación:
 
-    - Detener la presentación de movimiento de progreso cuando el proceso subyacente no está promoviendo.
+  - Detener la presentación de movimiento de progreso cuando el proceso subyacente no está promoviendo.
 
-    - Distinguir procesos indeterminados de procesos determinados.
+  - Distinguir procesos indeterminados de procesos determinados.
 
-    - Asegúrese de que una animación tiene identificación Estados de error y de finalización.
+  - Asegúrese de que una animación tiene identificación Estados de error y de finalización.
 
-    - Minimizar el uso de animaciones de efecto que mostrar el estado y asegúrese de que tienen un valor real al proporcionar información adicional del uso real. Algunos ejemplos incluyen de emergencia y cambios de estado transitorio
+  - Minimizar el uso de animaciones de efecto que mostrar el estado y asegúrese de que tienen un valor real al proporcionar información adicional del uso real. Algunos ejemplos incluyen de emergencia y cambios de estado transitorio
 
 #### <a name="do-not"></a>No:
 
@@ -128,7 +128,7 @@ ms.locfileid: "60077256"
 
 - Progreso
 
-- Errores
+- Errors
 
 ##### <a name="structure"></a>Estructura
 
@@ -144,7 +144,7 @@ ms.locfileid: "60077256"
 
 - Voltear a través de imágenes
 
-##### <a name="time"></a>Tiempo
+##### <a name="time"></a>Hora
 
 - Cambio de mostrar a lo largo de tiempo, el lapso de tiempo y la presentación en pantalla
 
@@ -326,7 +326,7 @@ ms.locfileid: "60077256"
 
 - Finalizando X y la posición Y: Interfaz de usuario
 
-- Guía de movimiento: Ninguna
+- Guía de movimiento: None
 
 - Duración: independiente de 200 milisegundos, 100 milisegundos cuando se usa como parte de una secuencia de animación de combinación
 

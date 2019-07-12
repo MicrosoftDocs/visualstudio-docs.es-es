@@ -9,12 +9,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b733af14e5b5124928c315ae4a87098513714214
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b93518a6ca5fa6464bf8f2e72f11cfa90b4dd4dd
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433336"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825593"
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>Crear lenguajes específicos de dominio basados en Windows Forms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,9 +62,9 @@ Una instancia de DSL, que muestra una interfaz de usuario del formulario de Wind
 
 - El `UI` proyecto contiene un ejemplo funcional de un control de formulario enlazado a la línea ADSL. Sin embargo, no funcionará cuando han cambiado la definición de DSL. El `UI` contiene el proyecto:  
 
-    - Una clase de Windows Forms denominada `ModelViewControl`.  
+  - Una clase de Windows Forms denominada `ModelViewControl`.  
 
-    - Un archivo denominado `DataBinding.cs` que contiene una definición parcial adicional de `ModelViewControl`. Para ver su contenido, en **el Explorador de soluciones**, abra el menú contextual para el archivo y elija **ver código**.  
+  - Un archivo denominado `DataBinding.cs` que contiene una definición parcial adicional de `ModelViewControl`. Para ver su contenido, en **el Explorador de soluciones**, abra el menú contextual para el archivo y elija **ver código**.  
 
 ### <a name="about-the-ui-project"></a>Acerca del proyecto de interfaz de usuario  
  Cuando se actualiza el archivo de definición de DSL para definir su propio DSL, tendrá que actualizar el control en el `UI` proyecto para mostrar su DSL. A diferencia de la `Dsl` y `DslPackage` proyectos, el ejemplo `UI` proyecto no se genera desde `DslDefinitionl.dsl`. Puede agregar archivos .tt para generar el código si lo desea, aunque no se trata en este tutorial.  
@@ -241,7 +241,7 @@ Una instancia de DSL, que muestra una interfaz de usuario del formulario de Wind
 
 1. En la vista de diseño de FarmControl.cs, seleccione un campo sencillo como nombre, tamaño o IsOrganic.  
 
-2. En la ventana Propiedades, expanda **DataBindings** y abra **(avanzado)**.  
+2. En la ventana Propiedades, expanda **DataBindings** y abra **(avanzado)** .  
 
      En el **formato y enlace de datos avanzado** cuadro de diálogo, en **modo de actualización del origen de datos**, elija **OnPropertyChanged**.  
 

@@ -24,12 +24,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5e1a4eeeaf6cc979fd9ee7c3ea36a900899596a4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 33481307ea6065b0421cd3ae20e54ca778ee4fd4
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63447154"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826021"
 ---
 # <a name="combine-vba-and-document-level-customizations"></a>Combinar VBA y personalizaciones de nivel de documento
   Puede utilizar código de Visual Basic para Aplicaciones (VBA) en un documento que forme parte de una personalización de nivel de documento de Microsoft Office Word o Microsoft Office Excel. Puede llamar a código VBA del documento desde el ensamblado de personalización o puede configurar el proyecto de modo que permita que el código VBA del documento llame a código del ensamblado de personalización.
@@ -88,9 +88,9 @@ Globals.Sheet1.Application.Run("MyMacro", missing, missing, missing,
 
 - El documento debe tener una de las siguientes extensiones de nombre de archivo:
 
-    - Para Word: *.docm* o *.doc*
+  - Para Word: *.docm* o *.doc*
 
-    - Para Excel: *.xlsm*, *.xltm*, *.xls*, o *. xlt*
+  - Para Excel: *.xlsm*, *.xltm*, *.xls*, o *. xlt*
 
 - El documento ya debe contener un proyecto de VBA con código VBA.
 
@@ -239,7 +239,7 @@ GetManagedClass(pdispInteropObject Object) As Object
 
 4. Quita la biblioteca de tipos incrustada del ensamblado.
 
-## <a name="troubleshoot"></a>Solucionar problemas
+## <a name="troubleshoot"></a>Solución de problemas
  En la tabla siguiente se enumeran algunos errores comunes y sugerencias para corregir los errores.
 
 |Error|Sugerencia|
@@ -251,7 +251,7 @@ GetManagedClass(pdispInteropObject Object) As Object
 
 ## <a name="see-also"></a>Vea también
 - [Cómo: Exponer código a VBA en un proyecto de Visual Basic](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)
-- [Cómo: Exponer código a VBA en un Visual C&#35; proyecto](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)
+- [Procedimientos: Exponer código a VBA en un Visual C&#35; proyecto](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)
 - [Tutorial: Llamar a código desde VBA en un proyecto de Visual Basic](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)
 - [Tutorial: Llamar a código desde VBA en un Visual C&#35; proyecto](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)
 - [Diseñar y crear soluciones de Office](../vsto/designing-and-creating-office-solutions.md)
