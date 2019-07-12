@@ -15,12 +15,12 @@ caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 16bc3bf0f2cb7fa51a42986ee99976410ca7874a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 310e13e781997fd3a6431e4257918f8e61b9420d
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439740"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823579"
 ---
 # <a name="uml-activity-diagrams-guidelines"></a>Diagramas de actividades UML: Instrucciones
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -208,15 +208,15 @@ En Visual Studio, puede dibujar un diagrama de actividades para describir un pro
  Puede especificar cómo se almacenan los elementos de un búfer estableciendo las propiedades del nodo de objeto:  
   
 - Establecer el **Ordering** propiedad:  
-  
-    - **Desordenados** para especificar un orden aleatorio o indeterminado. (Valor predeterminado).  
-  
-    - **Ordenar** para especificar un orden según una clave específica.  
-  
-    - **FIFO** para especificar un orden de primero en salir.  
-  
-    - **LIFO** para especificar un orden de último en entrar es el primero.  
-  
+
+  - **Desordenados** para especificar un orden aleatorio o indeterminado. (Valor predeterminado).  
+
+  - **Ordenar** para especificar un orden según una clave específica.  
+
+  - **FIFO** para especificar un orden de primero en salir.  
+
+  - **LIFO** para especificar un orden de último en entrar es el primero.  
+
 - Establecer el **límite superior** propiedad para especificar el número máximo de objetos que pueden incluirse en el búfer. El valor predeterminado es *. Esto significa que no hay límite.  
   
 ### <a name="describing-data-flow-with-input-and-output-pins"></a>Describir el flujo de datos con terminales de entrada y salida  
@@ -317,7 +317,7 @@ En Visual Studio, puede dibujar un diagrama de actividades para describir un pro
   
 - Puede establecer el **Is Synchronous** propiedad de la acción para indicar si la actividad espera hasta que se complete la operación.  
   
-    - Si establece **Is Synchronous** en false, indicará que el flujo puede continuar en la siguiente acción antes de completar la operación llamada. No debe definir terminales de salida o flujos de datos salientes desde la acción.  
+  - Si establece **Is Synchronous** en false, indicará que el flujo puede continuar en la siguiente acción antes de completar la operación llamada. No debe definir terminales de salida o flujos de datos salientes desde la acción.  
   
 ## <a name="Concurrent"></a> Flujos simultáneos  
  Puede usar el **nodo de bifurcación** y **nodo de unión** para describir dos o más subprocesos de actividades que se pueden ejecutar al mismo tiempo.  

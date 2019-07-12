@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 05e09dfc70ae5bc4adf85562f48c5cc8c4874bc6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6e21c3699d796d6037d3b8ca0e744e792b9810b6
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62971360"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824539"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Validación código con diagramas de dependencia
 
@@ -44,7 +44,7 @@ Para asegurarse de que código no entre en conflicto con el diseño, valide el c
 
 **Requisitos**
 
-- Programa para la mejora
+- Visual Studio
 
 - Una solución que tiene un proyecto de modelado con un diagrama de dependencia. Este diagrama de dependencia debe vincularse a artefactos de proyectos de C# o Visual Basic que se desean validar. Consulte [crear diagramas de dependencia desde el código](../modeling/create-layer-diagrams-from-your-code.md).
 
@@ -66,8 +66,8 @@ Se produce la validación de dependencias en tiempo real y los errores se muestr
 
 * Para habilitar el análisis de la solución completa cuando se usa la validación de dependencias en vivo, abra las opciones de configuración de la barra dorada que aparece en el **lista de errores**.
 
-   - Puede descartar la barra dorada permanentemente si no está interesado en ver todos los problemas de arquitectura de la solución.
-   - Si no habilita el análisis de la solución completa, el análisis se realiza solo para los archivos que se está editando.
+  - Puede descartar la barra dorada permanentemente si no está interesado en ver todos los problemas de arquitectura de la solución.
+  - Si no habilita el análisis de la solución completa, el análisis se realiza solo para los archivos que se está editando.
 
 * Al actualizar los proyectos para habilitar la validación en vivo, un cuadro de diálogo muestra el progreso de la conversión.
 

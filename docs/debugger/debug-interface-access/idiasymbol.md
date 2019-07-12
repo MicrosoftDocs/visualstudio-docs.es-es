@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b6698159828c6092f0bb00b9ccc132415df82d7b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 07/12/2019
 ms.locfileid: "62840709"
 ---
 # <a name="idiasymbol"></a>IDiaSymbol
@@ -34,7 +34,7 @@ La tabla siguiente muestran los métodos de `IDiaSymbol`.
 > [!NOTE]
 > Símbolos devolverá datos significativos sólo para algunos de estos métodos, según el tipo de símbolo. Si el método devuelve `S_OK`, a continuación, ese método ha devuelto datos significativos.
 
-|Método|Descripción|
+|Método|DESCRIPCIÓN|
 |------------|-----------------|
 |[IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)|Recupera a todos los elementos secundarios del símbolo.|
 |[IDiaSymbol::findChildrenEx](../../debugger/debug-interface-access/idiasymbol-findchildrenex.md)|Recupera a los elementos secundarios del símbolo. Este método es la versión extendida de [Findchildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md).|

@@ -13,12 +13,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 9b1ad310385d5c8c8cecaee408d049a172d53e1e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 47e7c2b6e02aab3b6b1df0c54ba91668bbb2673c
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436844"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825811"
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Procedimiento Crear o actualizar directivas de protección de análisis de código estándar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ Puede requerir que el análisis de código se ejecute en todos los proyectos de 
   
 - Active o desactive las siguientes opciones:  
   
-    |Opción|Descripción|  
+    |Opción|DESCRIPCIÓN|  
     |------------|-----------------|  
     |**Exigir la protección para que solo contenga los archivos que forman parte de la solución actual.**|Puede ejecutar análisis de código solo en los archivos especificados en los archivos de configuración de solución y proyecto. Esta directiva garantiza que se analiza todo el código que forma parte de una solución.|  
     |**Aplicar análisis de código de C/C ++ (/analyze)**|Requiere que todos los proyectos de C o C++ se compilan con la / analyze para ejecutar el análisis de código antes de que se pueden comprobar la opción del compilador.|  
@@ -64,13 +64,13 @@ Puede requerir que el análisis de código se ejecute en todos los proyectos de 
   
 - Desde el **ejecutar este conjunto de reglas** enumerar, use uno de los métodos siguientes:  
   
-    - Seleccione un conjunto de reglas estándar de Microsoft.  
-  
-    - Para seleccionar un conjunto de reglas personalizado, haga clic en  **\<Seleccionar conjunto de reglas de Control de código fuente... >** y, a continuación, escriba la ruta de acceso de control de versiones de la regla especificada en el Explorador de control de código fuente. La sintaxis de una ruta de acceso de control de versiones es:  
-  
-    - **$/** `TeamProjectName` **/** `VersionControlPath`  
-  
-    - Para obtener más información sobre cómo crear e implementar una regla de directiva de protección personalizadas conjunto, consulte [personalizado para implementar directivas de protección para código administrado](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md).  
+  - Seleccione un conjunto de reglas estándar de Microsoft.  
+
+  - Para seleccionar un conjunto de reglas personalizado, haga clic en  **\<Seleccionar conjunto de reglas de Control de código fuente... >** y, a continuación, escriba la ruta de acceso de control de versiones de la regla especificada en el Explorador de control de código fuente. La sintaxis de una ruta de acceso de control de versiones es:  
+
+  - **$/** `TeamProjectName` **/** `VersionControlPath`  
+
+  - Para obtener más información sobre cómo crear e implementar una regla de directiva de protección personalizadas conjunto, consulte [personalizado para implementar directivas de protección para código administrado](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md).  
   
 ## <a name="see-also"></a>Vea también  
  [Crear y usar directivas de protección del análisis de código](../code-quality/creating-and-using-code-analysis-check-in-policies.md)

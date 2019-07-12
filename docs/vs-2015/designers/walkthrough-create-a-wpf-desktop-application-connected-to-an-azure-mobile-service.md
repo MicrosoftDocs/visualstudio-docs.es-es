@@ -9,14 +9,14 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c3f1533df24af802ae0c9950d4765ea0a0bf04da
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: ac6e9a890c8009e493341b4bcda87f1e3e162d90
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65693549"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824548"
 ---
-# <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>Tutorial: Crear una aplicación de escritorio de WPF conectada a un servicio móvil de Azure
+# <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>Tutorial: Creación de una aplicación de escritorio de WPF conectada a un servicio móvil de Azure
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Puede usar Windows Presentation Foundation (WPF) para crear rápidamente una aplicación de escritorio moderna que usa un servicio móvil de Azure para almacenar y proporcionar datos.  
@@ -28,9 +28,9 @@ Puede usar Windows Presentation Foundation (WPF) para crear rápidamente una apl
   
 - Una cuenta activa de Microsoft Azure.  
   
-    - Puede suscribirse a una cuenta de prueba gratuita [aquí](https://azure.microsoft.com/pricing/free-trial/).  
-  
-    - Puede activar las [ventajas de suscriptor MSDN](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/?WT.mc_id=A261C142F). Su suscripción a MSDN ofrece créditos cada mes que puede usar para servicios de pago de Azure.  
+  - Puede suscribirse a una cuenta de prueba gratuita [aquí](https://azure.microsoft.com/pricing/free-trial/).  
+
+  - Puede activar las [ventajas de suscriptor MSDN](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/?WT.mc_id=A261C142F). Su suscripción a MSDN ofrece créditos cada mes que puede usar para servicios de pago de Azure.  
   
 ## <a name="create-a-project-and-add-references"></a>Crear un proyecto y agregar referencias  
  El primer paso es crear un proyecto de WPF y agregar un paquete de NuGet que le permite conectarse a los servicios móviles de Azure.  

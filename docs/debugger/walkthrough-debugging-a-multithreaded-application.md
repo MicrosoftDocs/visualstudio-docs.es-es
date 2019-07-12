@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fddd8efd11d2a3d61f0cff33cb832ebd8a0c5d2a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4f65bd7a904f30f132f654b6dd718532d9d0e66e
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406941"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821589"
 ---
 # <a name="view-threads-in-the-visual-studio-debugger-by-using-the-threads-window-c-visual-basic-c"></a>Ver conversaciones en el depurador de Visual Studio mediante el uso de la ventana de subprocesos (C#, Visual Basic, C++)
 En el **subprocesos** ventana, puede examinar y trabajar con los subprocesos en la aplicación que está depurando. Para obtener instrucciones detalladas sobre cómo usar el **subprocesos** ventana, consulte [Tutorial: Depuración mediante la ventana subprocesos](../debugger/how-to-use-the-threads-window.md).
@@ -48,7 +48,7 @@ En el **subprocesos** ventana, puede examinar y trabajar con los subprocesos en 
 
 - **Nombre**: Identifica cada subproceso por su nombre, si lo tiene, o como \<sin nombre >.
 
-- **ubicación**: Se muestra donde se está ejecutando el subproceso. Puede expandir esta ubicación para mostrar la pila de llamadas completa del subproceso.
+- **Ubicación**: Se muestra donde se está ejecutando el subproceso. Puede expandir esta ubicación para mostrar la pila de llamadas completa del subproceso.
 
 - **Prioridad**: Una columna avanzada (oculta de forma predeterminada) que muestra la prioridad o prioridad que el sistema ha asignado a cada subproceso.
 
@@ -101,9 +101,9 @@ Una flecha amarilla indica el subproceso actual (y la ubicación del puntero de 
 
 - Siga cualquiera de los pasos siguientes:
 
-    - Haga doble clic en un subproceso cualquiera.
+  - Haga doble clic en un subproceso cualquiera.
 
-    - Haga clic en un subproceso y seleccione **cambiar a subproceso**.
+  - Haga clic en un subproceso y seleccione **cambiar a subproceso**.
 
 ## <a name="group-and-sort-threads"></a>Agrupar y ordenar subprocesos
  Al agrupar los subprocesos, aparece un encabezado en la tabla para cada grupo. El título contiene una descripción de grupo, como **Subproceso de trabajadores** o **Subprocesos sin marcar** y un control de árbol. Los subprocesos de los miembros de cada de grupo aparecen bajo el título del grupo. Si desea ocultar los subprocesos de los miembros de un grupo, utilice el control de árbol para contraer el grupo.

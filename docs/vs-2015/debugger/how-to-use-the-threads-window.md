@@ -24,14 +24,14 @@ caps.latest.revision: 48
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 835843d2328d9d17ac899fc12c97251b7e6b4659
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: da41524fcb231ea399dbbd2a2904afd935e5c4f8
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65685318"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824258"
 ---
-# <a name="how-to-use-the-threads-window"></a>Procedimiento Utilice la ventana subprocesos
+# <a name="how-to-use-the-threads-window"></a>Procedimiento Uso de la ventana Subprocesos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 En el **subprocesos** ventana, puede examinar y trabajar con los subprocesos en la aplicación que está depurando.  
@@ -72,11 +72,11 @@ En el **subprocesos** ventana, puede examinar y trabajar con los subprocesos en 
   
 - Realice uno de estos pasos:  
   
-    - Haga doble clic en un subproceso cualquiera.  
-  
-    - Haga clic en un subproceso y haga clic en **cambiar a subproceso**.  
-  
-         La flecha amarilla aparece al lado del nuevo subproceso activo. El contorno deshabilitado de una flecha identifica el subproceso donde la ejecución interrumpió el depurador.  
+  - Haga doble clic en un subproceso cualquiera.  
+
+  - Haga clic en un subproceso y haga clic en **cambiar a subproceso**.  
+
+    La flecha amarilla aparece al lado del nuevo subproceso activo. El contorno deshabilitado de una flecha identifica el subproceso donde la ejecución interrumpió el depurador.  
   
 ## <a name="grouping-and-sorting-threads"></a>Agrupar y ordenar subprocesos  
  Al agrupar los subprocesos, aparece un encabezado en la tabla para cada grupo. El encabezado contiene una descripción de grupo, como "Subproceso de trabajadores" o "Subprocesos sin marcar" y un control de árbol. Los subprocesos de los miembros de cada de grupo aparecen bajo el título del grupo. Si desea ocultar los subprocesos de los miembros de un grupo, puede utilizar el control de árbol para contraer el grupo.  
@@ -116,11 +116,11 @@ En el **subprocesos** ventana, puede examinar y trabajar con los subprocesos en 
   
 - En la barra de herramientas de la parte superior de la ventana **Subprocesos**, vaya al cuadro **Buscar** y:  
   
-    - Escriba una cadena de búsqueda y, a continuación, presione ENTRAR.  
-  
-         \- o -  
-  
-    - Haga clic en la lista desplegable situada junto a la **búsqueda** cuadro y seleccione una cadena de búsqueda de una búsqueda anterior.  
+  - Escriba una cadena de búsqueda y, a continuación, presione ENTRAR.  
+
+    \- o -  
+
+  - Haga clic en la lista desplegable situada junto a la **búsqueda** cuadro y seleccione una cadena de búsqueda de una búsqueda anterior.  
   
 - (Opcional) Para incluir la pila de llamadas completa en la búsqueda, seleccione **Buscar en pila de llamadas**.  
   

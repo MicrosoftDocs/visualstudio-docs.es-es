@@ -13,12 +13,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 05300d33ae10cd899a40bf95596ea4eb19dea49d
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 622af2c5f15187f6e04b53b4f0ba433c91f85a07
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65701182"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826188"
 ---
 # <a name="creating-applications-in-bi-directional-languages"></a>Crear aplicaciones en lenguajes bidireccionales
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,15 +46,15 @@ Puede usar Visual Studio para crear aplicaciones que muestren correctamente el t
 - **Codificación de archivo** Puede guardar y abrir archivos con una codificación Unicode o específica del idioma. Para obtener más información, vea [Cómo: Guardar y abrir archivos con codificación](../ide/how-to-save-and-open-files-with-encoding.md).  
   
 ## <a name="features-with-limited-or-no-support"></a>Características con compatibilidad limitada o sin ella  
- Otras características comunes a las aplicaciones de idiomas bidireccionales no son completamente compatibles con Visual Studio o, en algunos casos, no son compatibles. Se incluyen los siguientes:  
+ Otras características comunes a las aplicaciones de idiomas bidireccionales no son completamente compatibles con Visual Studio o, en algunos casos, no son compatibles. Entre ellas se incluyen las siguientes:  
   
 - **Lectura de derecha a izquierda** De manera predeterminada, los controles de entrada de texto que usa en Visual Studio usan la lectura de izquierda a derecha. En la mayoría de los casos, puede usar gestos estándar de Windows para cambiar el sentido de la lectura. Por ejemplo, puede pulsar Ctrl+Mayús Der para cambiar la ventana Propiedades para que admita la lectura de derecha a izquierda de valores de propiedad.  
   
-     No obstante, la lectura de derecha a izquierda no se admite en todo Visual Studio. Entre las excepciones se incluyen:  
-  
-    - Las casillas, listas desplegables y otros controles de cuadros de diálogo de Visual Studio usan siempre la lectura de izquierda a derecha.  
-  
-    - El editor de código y el editor de texto no admiten la lectura de derecha a izquierda. Puede escribir texto en un idioma bidireccional, pero el sentido de la lectura siempre es de izquierda a derecha.  
+  No obstante, la lectura de derecha a izquierda no se admite en todo Visual Studio. Entre las excepciones se incluyen:  
+
+  - Las casillas, listas desplegables y otros controles de cuadros de diálogo de Visual Studio usan siempre la lectura de izquierda a derecha.  
+
+  - El editor de código y el editor de texto no admiten la lectura de derecha a izquierda. Puede escribir texto en un idioma bidireccional, pero el sentido de la lectura siempre es de izquierda a derecha.  
   
 ## <a name="naming-things-using-arabic-or-hebrew-text"></a>Asignar nombres con texto en árabe o hebreo  
  Puede usar texto en árabe o hebreo para asignar nombres a carpetas, variables u otros objetos. Al trabajar con el árabe, puede usar cualquier carácter árabe, incluidos kashida y diacríticos.  

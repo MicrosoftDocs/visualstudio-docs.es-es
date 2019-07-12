@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f2e31e74ba89c30cfbacc46d1b72428372191ae
-ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
+ms.openlocfilehash: 3ace83b86b3b1772cd111a36b5f011d023189501
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65476593"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824515"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Escenario: Cambiar el diseño mediante herramientas de visualización y modelado
 
@@ -355,11 +355,11 @@ Un diagrama de clases tiene las siguientes características principales:
 
 - Tipos como clases, interfaces y enumeraciones:
 
-    - Una *clase* es la definición de objetos que comparten determinadas características estructurales y de comportamiento.
+  - Una *clase* es la definición de objetos que comparten determinadas características estructurales y de comportamiento.
 
-    - Una *interfaz* define una parte del comportamiento externamente visible de un objeto.
+  - Una *interfaz* define una parte del comportamiento externamente visible de un objeto.
 
-    - Una *enumeración* es un clasificador que contiene una lista de valores literales.
+  - Una *enumeración* es un clasificador que contiene una lista de valores literales.
 
 - Los*atributos* son valores de un tipo determinado que describen cada instancia de un *clasificador*. Un clasificador es un nombre general para tipos, componentes, casos de uso e incluso actores.
 
@@ -432,7 +432,7 @@ Un diagrama de dependencia tiene las siguientes características principales:
 
 - *Capas* que describen grupos lógicos de artefactos.
 
-- *Vínculos* , es decir, asociaciones entre capas y artefactos.
+-           *Vínculos* , es decir, asociaciones entre capas y artefactos.
 
      Para crear las capas a partir de artefactos, arrastre elementos desde el Explorador de soluciones, los mapas de código, la vista de clases o el examinador de objetos. Para dibujar capas nuevas y luego vincularlas a artefactos, use el cuadro de herramientas o haga clic con el botón derecho en la superficie del diagrama para crear las capas y, después, arrastre elementos a esas capas.
 
@@ -446,7 +446,7 @@ Un diagrama de dependencia tiene las siguientes características principales:
 
     Para ver los artefactos que están vinculados a una capa, haga clic en la dependencia y, a continuación, haga clic en **ver vínculos** para abrir **Explorador de capas**.
 
-- *Dependencias* que indican que una capa puede usar la funcionalidad de otra capa, pero no viceversa. Una *dependencia bidireccional* indica que una capa puede usar la funcionalidad de otra capa, y viceversa.
+-           *Dependencias* que indican que una capa puede usar la funcionalidad de otra capa, pero no viceversa. Una *dependencia bidireccional* indica que una capa puede usar la funcionalidad de otra capa, y viceversa.
 
      Para mostrar las dependencias existentes en el diagrama de dependencia, haga clic en la superficie del diagrama y, a continuación, haga clic en **generar dependencias**. Para describir las dependencias previstas, dibuje unas nuevas.
 

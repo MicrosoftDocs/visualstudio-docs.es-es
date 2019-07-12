@@ -8,12 +8,12 @@ ms.assetid: 8202717a-e990-45cf-b092-438651ccb38a
 caps.latest.revision: 66
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 51edddcbac3815c450b2b0db7166fc7d5c593dbd
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 19d651e6b55fd5d18ece318e20aa7db67cf57fee
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65698788"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824189"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Desarrollo móvil multiplataforma en Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,9 +28,9 @@ Puede crear aplicaciones para dispositivos Android, iOS y Windows con Visual Stu
 
 - [Compilar una aplicación para Android, iOS y Windows (.NET Framework)](#NET)
 
-    - [Tener como destino Android, iOS y Windows desde una sola base de código](../cross-platform/cross-platform-mobile-development-in-visual-studio.md#AndroidHTML)
+  - [Tener como destino Android, iOS y Windows desde una sola base de código](../cross-platform/cross-platform-mobile-development-in-visual-studio.md#AndroidHTML)
 
-    - [Tener como destino dispositivos Windows 10](../cross-platform/cross-platform-mobile-development-in-visual-studio.md#WindowsHTML)
+  - [Tener como destino dispositivos Windows 10](../cross-platform/cross-platform-mobile-development-in-visual-studio.md#WindowsHTML)
 
 - [Compilar una aplicación para Android, iOS y Windows (HTML/JavaScript)](#HTML)
 
@@ -54,7 +54,7 @@ Puede crear aplicaciones para dispositivos Android, iOS y Windows con Visual Stu
 |[Obtener información acerca del emulador de Visual Studio para Android](http://www.visualstudio.com/explore/msft-android-emulator-vs) (VisualStudio.com)|
 
 ### <a name="AndroidHTML"></a> Tener como destino Android, iOS y Windows desde una sola base de código
- Puede compilar aplicaciones nativas para Android, iOS y Windows usando C# o F# (Visual Basic no se admite en este momento).  Para empezar, instale Visual Studio 2015, seleccione la opción **Personalizado** en el instalador y active la casilla bajo **Desarrollo móvil multiplataforma > C#/.NET (Xamarin)**. También puede comenzar con el [Instalador de Xamarin](https://www.xamarin.com/download), que es necesario para instalar Xamarin para Visual Studio 2013.
+ Puede compilar aplicaciones nativas para Android, iOS y Windows usando C# o F# (Visual Basic no se admite en este momento).  Para empezar, instale Visual Studio 2015, seleccione la opción **Personalizado** en el instalador y active la casilla bajo **Desarrollo móvil multiplataforma > C#/.NET (Xamarin)** . También puede comenzar con el [Instalador de Xamarin](https://www.xamarin.com/download), que es necesario para instalar Xamarin para Visual Studio 2013.
 
  Si ya tiene instalado Visual Studio 2015, ejecute el instalador desde **Panel de Control > Programas y características** y seleccione la misma opción **Personalizado** de Xamarin como antes.
 

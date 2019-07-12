@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f510568c977579fa3e48d57db548040d16dcb574
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1241edd105c948f1094948229a91851b7c38bbed
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66335487"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824331"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Fuentes y formato de Visual Studio
 ## <a name="BKMK_TheEnvironmentFont"></a> La fuente del entorno
@@ -394,11 +394,11 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
 - Los encabezados de mayor tamaño (fuente del entorno x 155% o superior) se pueden colorear para estos propósitos:
 
-    - Para proporcionar el atractivo visual a la firma de la interfaz de usuario de Visual Studio
+  - Para proporcionar el atractivo visual a la firma de la interfaz de usuario de Visual Studio
 
-    - Para llamar la atención sobre un área específica
+  - Para llamar la atención sobre un área específica
 
-    - Para ofrecer un alivio de color del texto de entorno oscuro de gris o negro estándar
+  - Para ofrecer un alivio de color del texto de entorno oscuro de gris o negro estándar
 
 - Color en los encabezados debe aprovechar existente Visual Studio marca colores, principalmente el principal púrpura, FF68217A #.
 

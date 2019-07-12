@@ -23,12 +23,12 @@ caps.latest.revision: 55
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7ebb3108ce7a1ee43d1355494a82cc4aee37dbc7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a38d9b354de528797d0044f7b631bd2287c34fb4
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445659"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823560"
 ---
 # <a name="uml-sequence-diagrams-guidelines"></a>Diagramas de secuencia UML: Instrucciones
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -205,7 +205,7 @@ En Visual Studio, puede dibujar un *diagrama de secuencia* para mostrar una inte
   
 - Tener en cuenta las excepciones o alternativas que pueden realizarse como una alternativa a la secuencia típica mostrada. Por ejemplo, "el cliente puede optar por omitir el resto de esta secuencia".  
   
-    - Considere la posibilidad de usa fragmentos como una alternativa más formal a este tipo de nota. Consulte [que describe las estructuras de Control con fragmentos](#Fragments)  
+  - Considere la posibilidad de usa fragmentos como una alternativa más formal a este tipo de nota. Consulte [que describe las estructuras de Control con fragmentos](#Fragments)  
   
 ## <a name="deciding-the-scope-of-the-diagram"></a>Decidir el ámbito del diagrama  
  Es importante tener claro lo que el diagrama está diseñado para mostrar.  
@@ -372,13 +372,13 @@ En Visual Studio, puede dibujar un *diagrama de secuencia* para mostrar una inte
   
 - Haga clic en el mensaje que desea mover y, a continuación, haga clic en **mover a diagrama**.  
   
-     Visual Studio:  
-  
-    - Reemplaza con un uso de interacción el mensaje seleccionado y sus mensajes secundarios.  
-  
-    - Mueva los mensajes reemplazados a un nuevo diagrama de secuencia.  
-  
-    - Crea un vínculo entre el uso de interacción y el nuevo diagrama de secuencia.  
+  Visual Studio:  
+
+  - Reemplaza con un uso de interacción el mensaje seleccionado y sus mensajes secundarios.  
+
+  - Mueva los mensajes reemplazados a un nuevo diagrama de secuencia.  
+
+  - Crea un vínculo entre el uso de interacción y el nuevo diagrama de secuencia.  
   
 #### <a name="to-navigate-to-the-sequence-referenced-by-an-interaction-use"></a>Para navegar a la secuencia a la que hace referencia un uso de interacción  
   

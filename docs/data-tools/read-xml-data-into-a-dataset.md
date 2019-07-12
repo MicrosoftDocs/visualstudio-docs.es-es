@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: fa0472ae7ad7200ead372057f1dd778c077f764e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 573196ebc0a0719cf736f1299eebae4eb6dcdb73
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62566220"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821929"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Leer datos XML en un conjunto de datos
 
@@ -119,9 +119,9 @@ La interfaz de usuario para esta aplicación consta de las siguientes acciones:
 
 - Dos <xref:System.Windows.Forms.Button> controles.
 
-    - Lee el archivo XML en el conjunto de datos de un botón y lo muestra en el <xref:System.Windows.Forms.DataGridView> control.
+  - Lee el archivo XML en el conjunto de datos de un botón y lo muestra en el <xref:System.Windows.Forms.DataGridView> control.
 
-    - Un segundo botón extrae el esquema del conjunto de datos y, a través de un <xref:System.IO.StringWriter> lo muestra en el <xref:System.Windows.Forms.TextBox> control.
+  - Un segundo botón extrae el esquema del conjunto de datos y, a través de un <xref:System.IO.StringWriter> lo muestra en el <xref:System.Windows.Forms.TextBox> control.
 
 ### <a name="to-add-controls-to-the-form"></a>Para agregar controles al formulario
 
@@ -141,9 +141,9 @@ La interfaz de usuario para esta aplicación consta de las siguientes acciones:
     |-------------|--------------|-------------|
     |`TextBox1`|**Multiline**|`true`|
     ||**ScrollBars**|**Vertical**|
-    |`Button1`|**Name**|`ReadXmlButton`|
+    |`Button1`|**Nombre**|`ReadXmlButton`|
     ||**Texto**|`Read XML`|
-    |`Button2`|**Name**|`ShowSchemaButton`|
+    |`Button2`|**Nombre**|`ShowSchemaButton`|
     ||**Texto**|`Show Schema`|
 
 ## <a name="create-the-dataset-that-receives-the-xml-data"></a>Crear el conjunto de datos que recibe los datos XML

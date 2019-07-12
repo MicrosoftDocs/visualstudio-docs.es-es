@@ -13,12 +13,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: aac43a88a62182a33ea3b340c5520e921d681cd7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 922edcd45dd42c8da5a9ec4dc8d3e8f450ceea09
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089580"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823597"
 ---
 # <a name="resource-details-view---contention-data"></a>Vista Detalles de recursos: datos de contención
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,10 +39,10 @@ La vista Detalles de recursos presenta un gráfico de escala de tiempo de los ev
   
 - Realice uno de estos pasos:  
   
-    - Haga clic en **Alejar** para volver al nivel de zoom anterior.  
-  
-    - Haga clic en **Restablecer zoom** para mostrar toda la escala de tiempo en la vista.  
-  
+  - Haga clic en **Alejar** para volver al nivel de zoom anterior.  
+
+  - Haga clic en **Restablecer zoom** para mostrar toda la escala de tiempo en la vista.  
+
 #### <a name="to-view-the-call-stack-of-an-event"></a>Para ver la pila de llamadas de un evento  
   
 - En el gráfico de escala de tiempo, haga clic en la barra de eventos.  

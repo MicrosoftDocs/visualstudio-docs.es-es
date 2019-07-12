@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2143b67297ba2e4bd2751054b789274595505cb3
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.openlocfilehash: b2026c61d05425f0f0d48a9fb722c62f760fcba2
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66431885"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825509"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>Métodos abreviados de teclado en el Diseñador de flujo de trabajo
 
@@ -29,7 +29,7 @@ Dentro de Visual Studio, los accesos directos de depuración y accesos directos 
 
 En la tabla siguiente se resume los métodos abreviados de teclado asignados a los comandos del Diseñador de flujo de trabajo.
 
-|Acceso directo|Finalidad|
+|Acceso directo|Propósito|
 |-|-------------|
 |CTRL+E, A|Muestra u oculta el diseñador de argumentos.|
 |CTRL+E, C|Contrae la actividad seleccionada en el sitio.|
@@ -79,11 +79,11 @@ De forma predeterminada, los métodos abreviados de teclado predeterminado para 
 
 - La reasignación de métodos abreviados de teclado para los siguientes comandos no tiene efecto alguno. Cuando edite una expresión, solo puede utilizar los métodos abreviados de teclado predeterminados para tener acceso a estos comandos.
 
-   - Cut
-   - Copiar
-   - Paste
-   - Seleccionar todo
-   - Undo
-   - Redo
+  - Cut
+  - Copiar
+  - Paste
+  - Seleccionar todo
+  - Undo
+  - Redo
 
 - Para reasignar los métodos abreviados de teclado para comandos de edición de expresiones dentro del Diseñador de flujo de trabajo en Visual Studio, edite los accesos directos en el ámbito del Diseñador de flujo de trabajo. Los cambios realizados en el ámbito del Editor de texto no se aplican automáticamente al diseñador de flujo de trabajo. Si desea reasignar los accesos directos en ambos lugares, debe aplicar los cambios dos veces (una vez para cada ámbito).

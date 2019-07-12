@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b2c3aad870112b580078f2dbb849f9ee1a771ed0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e3795bbe8a200b868687cdb8da053bc078b7f14c
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63001908"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825763"
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Procedimiento Generar un fragmento XML desde un esquema XML
 
@@ -25,11 +25,11 @@ Esta característica solamente está disponible en elementos. Además, se aplica
 
 - El elemento actual del editor debe estar vacío, sin atributos. Por ejemplo, todo lo siguiente es válido:
 
-    - `<Account`
+  - `<Account`
 
-    - `<Account>`
+  - `<Account>`
 
-    - `<Account></Account>`
+  - `<Account></Account>`
 
 - El cursor debe estar situado inmediatamente a la derecha del nombre del elemento.
 
@@ -56,7 +56,7 @@ Los valores predeterminados se generan e indican como valores editables. Si el e
 
      Se abre un nuevo archivo en el editor. El archivo contiene una declaración XML predeterminada, `<?xml version="1.0" encoding="utf-8">`.
 
-3. En la ventana Propiedades del documento, haga clic en el botón Examinar (**...** ) en el **esquemas** campo.
+3. En la ventana Propiedades del documento, haga clic en el botón Examinar ( **...** ) en el **esquemas** campo.
 
      El **esquemas XSD** se muestra el cuadro de diálogo.
 
@@ -66,7 +66,7 @@ Los valores predeterminados se generan e indican como valores editables. Si el e
 
 5. Seleccione el archivo de esquema y haga clic en **abierto**.
 
-6. Haga clic en **Aceptar**.
+6. Haga clic en **OK**.
 
      El esquema XML está ahora asociado con el documento XML.
 
@@ -157,4 +157,4 @@ Los valores predeterminados se generan e indican como valores editables. Si el e
 ## <a name="see-also"></a>Vea también
 
 - [Fragmentos XML](../xml-tools/xml-snippets.md)
-- [Cómo: Utilizar fragmentos XML](../xml-tools/how-to-use-xml-snippets.md)
+- [Procedimientos: Utilizar fragmentos XML](../xml-tools/how-to-use-xml-snippets.md)

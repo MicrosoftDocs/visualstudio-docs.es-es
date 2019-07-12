@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bcd102d8717b455a402bceb98e7ce85a2907e3bb
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: dfebb3ce5293e7594827a17b30261403b0f3ae9a
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65694978"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821299"
 ---
 # <a name="troubleshoot-office-solution-deployment"></a>Solución de problemas de implementación de soluciones de Office
   Este tema contiene información sobre cómo solucionar problemas comunes que pueden surgir al implementar soluciones de Office.
@@ -73,9 +73,12 @@ ms.locfileid: "65694978"
 
 2. En la página **Aplicación** , elija **Información de ensamblado**.
 
-3. En la primera **versión del ensamblado** , escriba un asterisco (\*) y, a continuación, elija el **Aceptar** botón.
+3. Establecer el número de revisión, el tercer campo de la **versión del ensamblado**, para un carácter comodín (\*). Por ejemplo, "1.0. *".  A continuación, elija el **Aceptar** botón.
 
    Después de cambiar la versión del ensamblado, puede continuar para firmar el ensamblado con un nombre seguro y Fusion cargará la versión más reciente de la personalización.
+
+ [!NOTE]
+> Se producirá a partir de Visual Studio 2017, si intenta usar caracteres comodín en la versión de ensamblado de un error de compilación.  Esto es porque los caracteres comodín en la versión del ensamblado se interrumpirá la característica de MSBuild determinista. Le pedirá que quite los caracteres comodín de la versión del ensamblado, o deshabilitar determinismo.  Para obtener más información acerca de la característica determinista vea: [Propiedades comunes de proyectos de MSBuild](../msbuild/common-msbuild-project-properties.md) y [personalizar una compilación](../msbuild/customize-your-build.md)
 
 ## <a name="installation-fails-when-the-uri-has-characters-that-arent-us-ascii"></a>Se produce un error en la instalación cuando el identificador URI tiene caracteres que no son ASCII de EE. UU.
  Al publicar una solución de Office en una ubicación HTTP/HTTPS/FTP, la ruta de acceso no puede tener caracteres Unicode que no estén en US-ASCII. Estos caracteres pueden producir un comportamiento incoherente en el programa de instalación. Utilice los caracteres US-ASCII para la ruta de instalación.

@@ -12,12 +12,12 @@ caps.latest.revision: 62
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f4fb99a7f7fcd7c91003bc7d74cf0ef6639cf773
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 13029e05e4f29e532918562afd2fee520b387464
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65698039"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821621"
 ---
 # <a name="msbuild"></a>MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,14 +59,14 @@ ms.locfileid: "65698039"
   
 - [Archivo del proyecto](#BKMK_ProjectFile)  
   
-    - [Propiedades](#BKMK_Properties)  
-  
-    - [Elementos](#BKMK_Items)  
-  
-    - [Tareas](#BKMK_Tasks)  
-  
-    - [Destinos](#BKMK_Targets)  
-  
+  - [Propiedades](#BKMK_Properties)  
+
+  - [Elementos](#BKMK_Items)  
+
+  - [Tareas](#BKMK_Tasks)  
+
+  - [Destinos](#BKMK_Targets)  
+
 - [Registros de compilación](#BKMK_BuildLogs)  
   
 - [Utilizar MSBuild en Visual Studio](#BKMK_VisualStudio)  
@@ -191,7 +191,7 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
   
 ## <a name="related-topics"></a>Temas relacionados  
   
-|Título|Descripción|  
+|Título|DESCRIPCIÓN|  
 |-----------|-----------------|  
 |[Tutorial: Crear un archivo del proyecto de MSBuild desde cero](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)|Muestra la forma de crear un archivo básico del proyecto de forma incremental, utilizando solo un editor de texto.|  
 |[Tutorial: Usar MSBuild](../msbuild/walkthrough-using-msbuild.md)|Presenta los bloques de compilación de MSBuild y muestra la forma de escribir, manipular y depurar proyectos de MSBuild sin cerrar el IDE de Visual Studio.|  

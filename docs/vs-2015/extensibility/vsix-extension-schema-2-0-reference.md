@@ -11,12 +11,12 @@ ms.assetid: 0da81b98-f5e3-40d3-ba9a-94551378d0b4
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9a8c6d236f9f11f53e79e4239868815c7bbe9137
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e6b00aa746b613d9eff90b9c91c029b100775cf2
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436929"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821730"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>Referencia de esquema 2.0 de la extensión VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,14 +46,14 @@ Un archivo de manifiesto de implementación de VSIX describe el contenido de un 
  En esta sección es los metadatos sobre el paquete, su identidad y anuncio de la información. `<Metadata>` contiene los siguientes elementos:  
   
 - `<Identity>` -Esto define la información de identificación de este paquete e incluye los siguientes atributos:  
-  
-    - `Id` : Este atributo debe ser un identificador único para el paquete elegido por su autor. Se debe calificar el nombre de la misma manera que los tipos CLR son tiene espacio de nombres: Company.Product.Feature.Name. El `Id` atributo está limitado a 100 caracteres.  
-  
-    - `Version` : Esto define la versión de este paquete y su contenido. Este atributo sigue el formato de control de versiones de ensamblado CLR: Principal.secundaria.compilación.revisión (1.2.40308.00). Un paquete con un mayor número de versión se considera actualizaciones del paquete y puede instalarse a través de la versión instalada actualmente.  
-  
-    - `Language` : Este atributo es el idioma predeterminado para el paquete y corresponde a los datos de texto de este manifiesto. Este atributo sigue la convención de código de configuración regional CLR para los ensamblados de recursos, por ejemplo: en-us, en, fr-fr. Puede especificar `neutral` para declarar una extensión independiente del idioma que se ejecutará en cualquier versión de Visual Studio. El valor predeterminado es `neutral`.  
-  
-    - `Publisher` : Este atributo identifica el publicador de este paquete, una empresa o un nombre individual. El `Publisher` atributo está limitado a 100 caracteres.  
+
+  - `Id` : Este atributo debe ser un identificador único para el paquete elegido por su autor. Se debe calificar el nombre de la misma manera que los tipos CLR son tiene espacio de nombres: Company.Product.Feature.Name. El `Id` atributo está limitado a 100 caracteres.  
+
+  - `Version` : Esto define la versión de este paquete y su contenido. Este atributo sigue el formato de control de versiones de ensamblado CLR: Principal.secundaria.compilación.revisión (1.2.40308.00). Un paquete con un mayor número de versión se considera actualizaciones del paquete y puede instalarse a través de la versión instalada actualmente.  
+
+  - `Language` : Este atributo es el idioma predeterminado para el paquete y corresponde a los datos de texto de este manifiesto. Este atributo sigue la convención de código de configuración regional CLR para los ensamblados de recursos, por ejemplo: en-us, en, fr-fr. Puede especificar `neutral` para declarar una extensión independiente del idioma que se ejecutará en cualquier versión de Visual Studio. El valor predeterminado es `neutral`.  
+
+  - `Publisher` : Este atributo identifica el publicador de este paquete, una empresa o un nombre individual. El `Publisher` atributo está limitado a 100 caracteres.  
   
 - `<DisplayName>` : Este elemento especifica el nombre del paquete fácil de usar que se muestra en la UI del Administrador de extensiones. El `DisplayName` contenido está limitado a 100 caracteres.  
   
@@ -81,10 +81,10 @@ Un archivo de manifiesto de implementación de VSIX describe el contenido de un 
 - `Experimental` : Establezca este atributo en true si tiene una extensión que actualmente está instalada para todos los usuarios, pero está desarrollando una versión actualizada en el mismo equipo. Por ejemplo, si ha instalado 1.0 MyExtension para todos los usuarios, pero desea depurar MyExtension 2.0 en el mismo equipo, establezca Experimental = "true". Este atributo está disponible en Visual Studio 2015 Update 1 y versiones posteriores.  
   
 - `Scope` : Este atributo puede tomar el valor "Global" o "ProductExtension":  
-  
-    - "Global" Especifica que la instalación no está dirigida a una SKU específica. Por ejemplo, este valor se utiliza cuando se instala un SDK de extensión.  
-  
-    - "ProductExtension" Especifica que una extensión VSIX (versión 1.0) tradicional con ámbito para cada SKU de Visual Studio está instalada. Este es el valor predeterminado.  
+
+  - "Global" Especifica que la instalación no está dirigida a una SKU específica. Por ejemplo, este valor se utiliza cuando se instala un SDK de extensión.  
+
+  - "ProductExtension" Especifica que una extensión VSIX (versión 1.0) tradicional con ámbito para cada SKU de Visual Studio está instalada. Este es el valor predeterminado.  
   
 - `AllUsers` : Este atributo opcional especifica si este paquete se instalará para todos los usuarios. De forma predeterminada, este atributo es false, que especifica que el paquete es por usuario. (Al establecer este valor en true, el usuario que instala debe elevar al nivel de privilegios administrativos para instalar VSIX resultante.  
   
@@ -96,67 +96,67 @@ Un archivo de manifiesto de implementación de VSIX describe el contenido de un 
   
 - `<InstallationTarget>` : Este elemento controla la ubicación donde el instalador de VSIX instala el paquete. Si el valor de la `Scope` atributo es "ProductExtension" el paquete debe tener como destino una SKU que tiene instalado un archivo de manifiesto como parte de su contenido para anunciar su disponibilidad a las extensiones. El `<InstallationTarget>` elemento tiene los siguientes atributos cuando el `Scope` atributo tiene la configuración explícita o el valor predeterminado "ProductExtension":  
   
-    - `Id` : Este atributo identifica el paquete.  El atributo sigue la convención de espacio de nombres: Company.Product.Feature.Name. El `Id` atributo puede contener solo caracteres alfanuméricos y está limitado a 100 caracteres. Valores esperados:  
-  
-        - Microsoft.VisualStudio.IntegratedShell  
-  
-        - Microsoft.VisualStudio.Pro  
-  
-        - Microsoft.VisualStudio.Premium  
-  
-        - Microsoft.VisualStudio.Ultimate  
-  
-        - Microsoft.VisualStudio.VWDExpress  
-  
-        - Microsoft.VisualStudio.VPDExpress  
-  
-        - Microsoft.VisualStudio.VSWinExpress  
-  
-        - Microsoft.VisualStudio.VSLS  
-  
-        - My.Shell.App  
-  
-    - `Version` : Este atributo especifica un intervalo de versiones con las versiones compatibles mínimas y máxima de esta SKU. Un paquete puede detallan las versiones de las SKU que admite. La notación de rango de versión es [10.0: 11.0], donde  
-  
-        - [: versión mínima inclusive.  
-  
-        - ] – versión máximo inclusivo.  
-  
-        - (-exclusivo de versión mínima.  
-  
-        - ): versión máxima exclusivo.  
-  
-        - Versión única # - solo la versión especificada.  
-  
-        > [!IMPORTANT]
-        > La versión 2.0 del esquema VSIX se introdujo en Visual Studio 2012. Para usar este esquema se debe tener Visual Studio 2012 o posterior instalado en el equipo y usa el VSIXInstaller.exe que forma parte de ese producto. Puede tener como destino versiones anteriores de Visual Studio con Visual Studio 2012 o posterior VSIXInstaller, pero solo mediante el uso de las versiones más recientes del instalador.  
-  
-    - `AnyAttribute*` – La `<InstallationTarget>` elemento permite a un conjunto abierto de atributos que se va exponer en tiempo de ejecución como un diccionario de pares nombre-valor.  
-  
+  - `Id` : Este atributo identifica el paquete.  El atributo sigue la convención de espacio de nombres: Company.Product.Feature.Name. El `Id` atributo puede contener solo caracteres alfanuméricos y está limitado a 100 caracteres. Valores esperados:  
+
+    - Microsoft.VisualStudio.IntegratedShell  
+
+    - Microsoft.VisualStudio.Pro  
+
+    - Microsoft.VisualStudio.Premium  
+
+    - Microsoft.VisualStudio.Ultimate  
+
+    - Microsoft.VisualStudio.VWDExpress  
+
+    - Microsoft.VisualStudio.VPDExpress  
+
+    - Microsoft.VisualStudio.VSWinExpress  
+
+    - Microsoft.VisualStudio.VSLS  
+
+    - My.Shell.App  
+
+  - `Version` : Este atributo especifica un intervalo de versiones con las versiones compatibles mínimas y máxima de esta SKU. Un paquete puede detallan las versiones de las SKU que admite. La notación de rango de versión es [10.0: 11.0], donde  
+
+    - [: versión mínima inclusive.  
+
+    - ] – versión máximo inclusivo.  
+
+    - (-exclusivo de versión mínima.  
+
+    - ): versión máxima exclusivo.  
+
+    - Versión única # - solo la versión especificada.  
+
+    > [!IMPORTANT]
+    > La versión 2.0 del esquema VSIX se introdujo en Visual Studio 2012. Para usar este esquema se debe tener Visual Studio 2012 o posterior instalado en el equipo y usa el VSIXInstaller.exe que forma parte de ese producto. Puede tener como destino versiones anteriores de Visual Studio con Visual Studio 2012 o posterior VSIXInstaller, pero solo mediante el uso de las versiones más recientes del instalador.  
+
+  - `AnyAttribute*` – La `<InstallationTarget>` elemento permite a un conjunto abierto de atributos que se va exponer en tiempo de ejecución como un diccionario de pares nombre-valor.  
+
 ### <a name="dependencies-element"></a>Elemento de dependencias  
  Este elemento contiene una lista de dependencias que declara este paquete. Si se especifican las dependencias, esos paquetes (identificado por su `Id`) debe haber sido instalada antes.  
   
 - `<Dependency>` elemento: este elemento secundario tiene los siguientes atributos:  
   
-    - `Id` : Este atributo debe ser un identificador único para el paquete dependiente. Este valor de identidad debe coincidir con el `<Metadata><Identity>Id` atributo de un paquete que depende este paquete. El `Id` atributo sigue la convención de espacio de nombres: Company.Product.Feature.Name. El atributo puede contener solo caracteres alfanuméricos y está limitado a 100 caracteres.  
-  
-    - `Version` : Este atributo especifica un intervalo de versiones con las versiones compatibles mínimas y máxima de esta SKU. Un paquete puede detallan las versiones de las SKU que admite. Es la notación de rango de versión [12.0, 13.0], donde:  
-  
-        - [: versión mínima inclusive.  
-  
-        - ] – versión máximo inclusivo.  
-  
-        - (-exclusivo de versión mínima.  
-  
-        - ): versión máxima exclusivo.  
-  
-        - Versión única # - solo la versión especificada.  
-  
-    - `DisplayName` : Este atributo es el nombre para mostrar del paquete dependiente que se usa en elementos de interfaz de usuario, como cuadros de diálogo y mensajes de error. El atributo es opcional, a menos que se instala el paquete dependiente de MSI.  
-  
-    - `Location` : Este atributo opcional especifica la ruta de acceso relativa en este VSIX a un paquete VSIX anidado o una dirección URL a la ubicación de descarga de la dependencia. Este atributo se utiliza para ayudar al usuario busque el paquete de requisitos previos.  
-  
-    - `AnyAttribute*` – La `Dependency` elemento acepta un conjunto abierto de atributos que se expondrá en tiempo de ejecución como un diccionario de pares nombre-valor.  
+  - `Id` : Este atributo debe ser un identificador único para el paquete dependiente. Este valor de identidad debe coincidir con el `<Metadata><Identity>Id` atributo de un paquete que depende este paquete. El `Id` atributo sigue la convención de espacio de nombres: Company.Product.Feature.Name. El atributo puede contener solo caracteres alfanuméricos y está limitado a 100 caracteres.  
+
+  - `Version` : Este atributo especifica un intervalo de versiones con las versiones compatibles mínimas y máxima de esta SKU. Un paquete puede detallan las versiones de las SKU que admite. Es la notación de rango de versión [12.0, 13.0], donde:  
+
+    - [: versión mínima inclusive.  
+
+    - ] – versión máximo inclusivo.  
+
+    - (-exclusivo de versión mínima.  
+
+    - ): versión máxima exclusivo.  
+
+    - Versión única # - solo la versión especificada.  
+
+  - `DisplayName` : Este atributo es el nombre para mostrar del paquete dependiente que se usa en elementos de interfaz de usuario, como cuadros de diálogo y mensajes de error. El atributo es opcional, a menos que se instala el paquete dependiente de MSI.  
+
+  - `Location` : Este atributo opcional especifica la ruta de acceso relativa en este VSIX a un paquete VSIX anidado o una dirección URL a la ubicación de descarga de la dependencia. Este atributo se utiliza para ayudar al usuario busque el paquete de requisitos previos.  
+
+  - `AnyAttribute*` – La `Dependency` elemento acepta un conjunto abierto de atributos que se expondrá en tiempo de ejecución como un diccionario de pares nombre-valor.  
   
 ### <a name="assets-element"></a>Elemento de activos  
  Este elemento contiene una lista de `<Asset>` etiquetas para cada elemento de extensión o contenido obtenidas por este paquete.  

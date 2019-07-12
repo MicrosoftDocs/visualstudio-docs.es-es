@@ -13,10 +13,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 153daa1f43ba4945a5eb32aea82c5d58ff57c5f6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 07/12/2019
 ms.locfileid: "62836805"
 ---
 # <a name="idiasymbolgetintro"></a>IDiaSymbol::get_intro
@@ -56,7 +56,7 @@ Ambos `A::f1` y `B::f1` son funciones virtuales, pero `A::f1` es virtual Introdu
 
 ## <a name="requirements"></a>Requisitos
 
-|Requisito|Descripción|
+|Requisito|DESCRIPCIÓN|
 |-----------------|-----------------|
 |Encabezado:|dia2.h|
 |Versión:|SDK de DIA v7.0|

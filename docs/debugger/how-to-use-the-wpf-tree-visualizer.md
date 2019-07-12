@@ -16,17 +16,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da18990620644834192c38c24ced9a25ecb56215
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4e005c1b41d2c563c5b47f358e87912cba64bf7f
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62906114"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821375"
 ---
 # <a name="how-to-use-the-wpf-tree-visualizer"></a>Procedimiento Usar el visualizador de árboles de WPF
 Puede usar el visualizador de árboles de WPF para explorar el árbol visual de un objeto de WPF y ver las propiedades de dependencia de WPF para los objetos contenidos en ese árbol. Para obtener más información sobre los árboles visuales, vea [árboles en WPF](/dotnet/framework/wpf/advanced/trees-in-wpf). Para obtener más información acerca de las propiedades de dependencia, consulte [información general sobre las propiedades de dependencia](/dotnet/framework/wpf/advanced/dependency-properties-overview).
 
- Al abrir el visualizador de árboles de WPF, verá dos paneles: el **árbol Visual** a la izquierda y la **propiedades de** _nombre_**:**  _Tipo_ panel de la derecha. Seleccione cualquier objeto en el **árbol Visual** panel y el **propiedades de** _nombre_**:**_tipo_ panel es actualiza automáticamente para mostrar las propiedades de ese objeto.
+ Al abrir el visualizador de árboles de WPF, verá dos paneles: el **árbol Visual** a la izquierda y la **propiedades de** _nombre_ **:**  _Tipo_ panel de la derecha. Seleccione cualquier objeto en el **árbol Visual** panel y el **propiedades de** _nombre_ **:** _tipo_ panel es actualiza automáticamente para mostrar las propiedades de ese objeto.
 
 ### <a name="to-open-the-wpf-tree-visualizer"></a>Para abrir el visualizador de árboles de WPF
 
@@ -40,21 +40,21 @@ Puede usar el visualizador de árboles de WPF para explorar el árbol visual de 
 
 - En el panel **Árbol visual**, escriba la cadena que desea buscar en el cuadro **Buscar**.
 
-     El visualizador de árboles de WPF buscará inmediatamente el primer objeto del árbol visual que coincida con la cadena que ha escrito. Escriba más caracteres si desea buscar una coincidencia más precisa.
+  El visualizador de árboles de WPF buscará inmediatamente el primer objeto del árbol visual que coincida con la cadena que ha escrito. Escriba más caracteres si desea buscar una coincidencia más precisa.
 
-    - Para ir a la siguiente coincidencia dentro del árbol visual, haga clic en **Siguiente**.
+  - Para ir a la siguiente coincidencia dentro del árbol visual, haga clic en **Siguiente**.
 
-    - Para volver a la coincidencia anterior, haga clic en **Anterior**.
+  - Para volver a la coincidencia anterior, haga clic en **Anterior**.
 
-    - Para borrar el criterio de búsqueda, haga clic en **Borrar**.
+  - Para borrar el criterio de búsqueda, haga clic en **Borrar**.
 
 ### <a name="to-search-the-properties-list"></a>Para buscar en la lista de propiedades
 
-- En el **propiedades de** _nombre_**:**_tipo_ panel, escriba la cadena que desea buscar en el **filtrar**cuadro.
+- En el **propiedades de** _nombre_ **:** _tipo_ panel, escriba la cadena que desea buscar en el **filtrar**cuadro.
 
-     El visualizador de árboles de WPF buscará inmediatamente las propiedades que coincidan con la cadena que ha escrito; ahora, la lista solo muestra las propiedades que coinciden con la cadena que ha escrito. Escriba más caracteres si desea buscar una coincidencia más precisa.
+  El visualizador de árboles de WPF buscará inmediatamente las propiedades que coincidan con la cadena que ha escrito; ahora, la lista solo muestra las propiedades que coinciden con la cadena que ha escrito. Escriba más caracteres si desea buscar una coincidencia más precisa.
 
-    - Para borrar el criterio de búsqueda, haga clic en **Borrar**.
+  - Para borrar el criterio de búsqueda, haga clic en **Borrar**.
 
 ### <a name="to-close-the-visualizer"></a>Para cerrar el visualizador
 

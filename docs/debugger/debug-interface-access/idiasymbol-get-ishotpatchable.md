@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6ac1547228be6312126bb48602e3a77fed0b3c25
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63399930"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64811189"
 ---
 # <a name="idiasymbolgetishotpatchable"></a>IDiaSymbol::get_isHotpatchable
 Recupera una marca que indica si el módulo se compiló con la [/hotpatch (crear una imagen)](/cpp/build/reference/hotpatch-create-hotpatchable-image) modificador del compilador.
@@ -46,7 +46,7 @@ HRESULT get_isHotpatchable(
 
 ## <a name="requirements"></a>Requisitos
 
-|Requisito|Descripción|
+|Requisito|DESCRIPCIÓN|
 |-----------------|-----------------|
 |Encabezado:|dia2.h|
 |Versión:|SDK de DIA v8.0|

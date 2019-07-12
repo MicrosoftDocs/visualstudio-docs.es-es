@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6b6cf1e800c785f73ebb11e09f11b617fe42aa32
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eccab4b899f3af22d54952d4eb9e8f990932afa4
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62981092"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825217"
 ---
 # <a name="walkthrough-simple-data-binding-in-vsto-add-in-project"></a>Tutorial: Enlace de datos simple en un proyecto de complemento de VSTO
 
@@ -47,9 +47,9 @@ Necesita los componentes siguientes para completar este tutorial:
 
 - Acceso a una instancia en ejecución de SQL Server 2005 o SQL Server 2005 Express que tenga asociada la base de datos de ejemplo `AdventureWorksLT` . Puede descargar el `AdventureWorksLT` desde la base de datos la [sitio Web de CodePlex](http://go.microsoft.com/fwlink/?LinkId=115611). Para obtener más información sobre cómo asociar una base de datos, vea los siguientes temas:
 
-    - Para adjuntar una base de datos mediante SQL Server Management Studio o SQL Server Management Studio Express, vea [Cómo: Adjuntar una base de datos (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database).
+  - Para adjuntar una base de datos mediante SQL Server Management Studio o SQL Server Management Studio Express, vea [Cómo: Adjuntar una base de datos (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database).
 
-    - Para adjuntar una base de datos mediante el uso de la línea de comandos, vea [Cómo: Adjuntar un archivo de base de datos a SQL Server Express](/previous-versions/sql/).
+  - Para adjuntar una base de datos mediante el uso de la línea de comandos, vea [Cómo: Adjuntar un archivo de base de datos a SQL Server Express](/previous-versions/sql/).
 
 ## <a name="create-a-new-project"></a>Crear un proyecto nuevo
 
@@ -59,7 +59,7 @@ El primer paso es crear un proyecto de complemento de VSTO de Word.
 
 1. Cree un proyecto de complemento de VSTO para Word con el nombre **Rellenar documentos desde una base de datos**, mediante Visual Basic o C#.
 
-     Para obtener más información, vea [Cómo: Crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+     Para obtener más información, consulte [Cómo Crear proyectos de Office en Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
      Visual Studio abre el *ThisAddIn.vb* o *ThisAddIn.cs* de archivos y agrega el **rellenar documentos desde una base de datos** proyecto al **el Explorador de soluciones** .
 
@@ -83,9 +83,9 @@ Use la ventana **Orígenes de datos** para agregar un conjunto de datos con tipo
 
 5. En la página **Guardar cadena de conexión en el archivo de configuración de la aplicación** , haga clic en **Siguiente**.
 
-6. En la página **Elegir los objetos de base de datos** expanda **Tablas** y seleccione **Customer (SalesLT)**.
+6. En la página **Elegir los objetos de base de datos** expanda **Tablas** y seleccione **Customer (SalesLT)** .
 
-7. Haga clic en **Finalizar**.
+7. Haga clic en **Finalizar**
 
     El *AdventureWorksLTDataSet.xsd* archivo se agrega a **el Explorador de soluciones**. Este archivo define los siguientes elementos:
 
@@ -154,8 +154,8 @@ Cuando abre Word, el control de contenido muestra los datos del conjunto de dato
 
 - [Datos en soluciones de Office](../vsto/data-in-office-solutions.md)
 - [Enlazar datos a controles en soluciones de Office](../vsto/binding-data-to-controls-in-office-solutions.md)
-- [Cómo: Rellenar hojas de cálculo con datos de una base de datos](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
-- [Cómo: Rellenar documentos con datos de una base de datos](../vsto/how-to-populate-documents-with-data-from-a-database.md)
+- [Procedimientos: Rellenar hojas de cálculo con datos de una base de datos](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
+- [Procedimientos: Rellenar documentos con datos de una base de datos](../vsto/how-to-populate-documents-with-data-from-a-database.md)
 - [Cómo: Rellenar documentos con datos de servicios](../vsto/how-to-populate-documents-with-data-from-services.md)
 - [Cómo: Rellenar documentos con datos de objetos](../vsto/how-to-populate-documents-with-data-from-objects.md)
 - [Cómo: Desplazarse por los registros de base de datos en una hoja de cálculo](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)
@@ -165,7 +165,7 @@ Cuando abre Word, el control de contenido muestra los datos del conjunto de dato
 - [Usar archivos de base de datos local en información general sobre soluciones de Office](../vsto/using-local-database-files-in-office-solutions-overview.md)
 - [Agregar nuevos orígenes de datos](../data-tools/add-new-data-sources.md)
 - [Enlazar controles de Windows Forms a datos en Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
-- [Cómo: Rellenar documentos con datos de objetos](../vsto/how-to-populate-documents-with-data-from-objects.md)
+- [Procedimientos: Rellenar documentos con datos de objetos](../vsto/how-to-populate-documents-with-data-from-objects.md)
 - [Cómo: Actualizar un origen de datos con datos de un control host](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)
 - [Usar archivos de base de datos local en información general sobre soluciones de Office](../vsto/using-local-database-files-in-office-solutions-overview.md)
 - [BindingSource component overview](/dotnet/framework/winforms/controls/bindingsource-component-overview) (Información general sobre el componente BindingSource)

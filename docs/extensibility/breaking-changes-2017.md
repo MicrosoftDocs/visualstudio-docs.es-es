@@ -9,12 +9,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 589f5eddb2b1e2a8fd61eea2a205f12d2d9c0742
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 0cc62384f2a413362f53ed0626031501e163d6a4
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66321354"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823805"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Cambios en la extensibilidad de Visual Studio 2017
 
@@ -63,35 +63,35 @@ Mayoría de los ensamblados de núcleo de Visual Studio ya no se instala en la G
 
 * Ensamblados que solo se instalaron en la GAC:
 
-   Estos ensamblados se instalan ahora en <em>[INSTALLDIR] \Common7\IDE\*, * [INSTALLDIR] \Common7\IDE\PublicAssemblies</em> o *\Common7\IDE\PrivateAssemblies [INSTALLDIR]* . Estas carpetas son parte de las rutas de búsqueda del proceso de Visual Studio.
+  Estos ensamblados se instalan ahora en <em>[INSTALLDIR] \Common7\IDE\*, * [INSTALLDIR] \Common7\IDE\PublicAssemblies</em> o *\Common7\IDE\PrivateAssemblies [INSTALLDIR]* . Estas carpetas son parte de las rutas de búsqueda del proceso de Visual Studio.
 
 * Ensamblados que se instalaron en una ruta de acceso que no sean de sondeo y en la GAC:
 
-   * La copia en la GAC se quitó del programa de instalación.
-   * Un *.pkgdef* archivo se agregó para especificar una entrada de base de código para el ensamblado.
+  * La copia en la GAC se quitó del programa de instalación.
+  * Un *.pkgdef* archivo se agregó para especificar una entrada de base de código para el ensamblado.
 
-      Por ejemplo:
+    Por ejemplo:
 
-      ```xml
-      [$RootKey$\RuntimeConfiguration\dependentAssembly\codeBase\{UniqueGUID}]
-      "name"="AssemblyName" "codeBase"="$PackageFolder$\AssemblyName.dll"
-      "publicKeyToken"="Public Key Token"
-      "culture"="neutral"
-      "version"=15.0.0.0
-      ```
+    ```
+    [$RootKey$\RuntimeConfiguration\dependentAssembly\codeBase\{UniqueGUID}]
+    "name"="AssemblyName" "codeBase"="$PackageFolder$\AssemblyName.dll"
+    "publicKeyToken"="Public Key Token"
+    "culture"="neutral"
+    "version"=15.0.0.0
+    ```
 
-      En tiempo de ejecución, el subsistema de Visual Studio pkgdef combina estas entradas en el archivo de configuración en tiempo de ejecución del proceso de Visual Studio (bajo *[VSAPPDATA]\devenv.exe.config*) como [ `<codeBase>` ](/dotnet/framework/configure-apps/file-schema/runtime/codebase-element) elementos. Se trata de la manera recomendada para permitir que el proceso de Visual Studio buscar el ensamblado, ya que se evita la búsqueda a través de las rutas de acceso de sondeo.
+    En tiempo de ejecución, el subsistema de Visual Studio pkgdef combina estas entradas en el archivo de configuración en tiempo de ejecución del proceso de Visual Studio (bajo *[VSAPPDATA]\devenv.exe.config*) como [ `<codeBase>` ](/dotnet/framework/configure-apps/file-schema/runtime/codebase-element) elementos. Se trata de la manera recomendada para permitir que el proceso de Visual Studio buscar el ensamblado, ya que se evita la búsqueda a través de las rutas de acceso de sondeo.
 
 ### <a name="reacting-to-this-breaking-change"></a>Reacción a este cambio importante
 
 * Si la extensión se ejecuta dentro del proceso de Visual Studio:
 
-   * El código podrá encontrar los ensamblados básicos de Visual Studio.
-   * Considere el uso de un *.pkgdef* archivo para especificar una ruta de acceso a los ensamblados, si es necesario.
+  * El código podrá encontrar los ensamblados básicos de Visual Studio.
+  * Considere el uso de un *.pkgdef* archivo para especificar una ruta de acceso a los ensamblados, si es necesario.
 
 * Si la extensión se ejecuta fuera del proceso de Visual Studio:
 
-   Considere la posibilidad de buscar ensamblados básicos de Visual Studio en <em>[INSTALLDIR] \Common7\IDE\*, * [INSTALLDIR] \Common7\IDE\PublicAssemblies</em> o *[INSTALLDIR] \Common7\IDE\PrivateAssemblies*con resolución de ensamblado o archivo de configuración.
+  Considere la posibilidad de buscar ensamblados básicos de Visual Studio en <em>[INSTALLDIR] \Common7\IDE\*, * [INSTALLDIR] \Common7\IDE\PublicAssemblies</em> o *[INSTALLDIR] \Common7\IDE\PrivateAssemblies*con resolución de ensamblado o archivo de configuración.
 
 ## <a name="change-reduce-registry-impact"></a>Cambio: Reducir el impacto en el registro
 

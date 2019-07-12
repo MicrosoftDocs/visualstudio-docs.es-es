@@ -21,12 +21,12 @@ caps.latest.revision: 86
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0dafd91a832fd4098fb19a26750310135723216f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 446e6eb6231ff4d744f22bd3d1ba4fa6dcca6525
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442976"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823185"
 ---
 # <a name="edit-uml-models-and-diagrams"></a>Editar modelos y diagramas UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -164,7 +164,7 @@ Puede crear y modificar un modelo UML a través de las vistas proporcionadas por
   
      \- o -  
   
-- En el **diseñadores de arquitectura** barra de herramientas, haga clic en el signo más (**+**) o signo menos (**-**), o elija un nivel de zoom.  
+- En el **diseñadores de arquitectura** barra de herramientas, haga clic en el signo más ( **+** ) o signo menos ( **-** ), o elija un nivel de zoom.  
   
 ## <a name="Searching"></a> Buscar en un diagrama  
  La función de búsqueda rápida busca elementos en un diagrama. Debe establecer **buscar en:** a **documento actual**.  
@@ -294,9 +294,9 @@ Puede crear y modificar un modelo UML a través de las vistas proporcionadas por
   
 - Haga clic en el elemento o bien en **Explorador de modelos UML** o en un diagrama y, a continuación, haga clic en **eliminar del modelo**.  
   
-    - El elemento se elimina de todos los diagramas en los que aparece.  
-  
-    - Todas las relaciones que terminan en este elemento también se eliminan del modelo.  
+  - El elemento se elimina de todos los diagramas en los que aparece.  
+
+  - Todas las relaciones que terminan en este elemento también se eliminan del modelo.  
   
 #### <a name="to-delete-a-relationship-from-the-model"></a>Para eliminar una relación del modelo  
   

@@ -11,12 +11,12 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: afed42cbdb03ba0fb47880ed0126bad9858f83fa
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 2fbdc27ba7a3ae69494bf8129e4c870f325fe621
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63407785"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824434"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio"></a>Depuración remota de ASP.NET Core en IIS en Azure en Visual Studio
 
@@ -63,7 +63,7 @@ No se admite la depuración entre dos equipos conectados a través de un servido
     En Visual Studio 2019, escriba **Ctrl + Q** para abrir el cuadro de búsqueda, escriba **asp.net**, elija **plantillas**, a continuación, elija **crear nueva aplicación Web de ASP.NET Core** . En el cuadro de diálogo que aparece, denomine el proyecto **MyASPApp**y, a continuación, elija **crear**. A continuación, elija **aplicación Web (Model-View-Controller)** y, a continuación, elija **crear**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    En Visual Studio 2017, elija **archivo > Nuevo > proyecto**, a continuación, seleccione **Visual C# > Web > aplicación Web ASP.NET Core**. En la sección de plantillas de ASP.NET Core, seleccione **aplicación Web (Model-View-Controller)**. Asegúrese de que está seleccionado ASP.NET Core 2.1, que **habilitar la compatibilidad con Docker** no está seleccionada y que **autenticación** está establecido en **sin autenticación**. Denomine el proyecto **MyASPApp**.
+    En Visual Studio 2017, elija **archivo > Nuevo > proyecto**, a continuación, seleccione **Visual C# > Web > aplicación Web ASP.NET Core**. En la sección de plantillas de ASP.NET Core, seleccione **aplicación Web (Model-View-Controller)** . Asegúrese de que está seleccionado ASP.NET Core 2.1, que **habilitar la compatibilidad con Docker** no está seleccionada y que **autenticación** está establecido en **sin autenticación**. Denomine el proyecto **MyASPApp**.
     ::: moniker-end
 
 1. Abra el archivo About.cshtml.cs y establecer un punto de interrupción en el `OnGet` método (en las plantillas anteriores, abra HomeController.cs en su lugar y establezca el punto de interrupción en el `About()` método).
@@ -90,7 +90,7 @@ Desde Visual Studio, puede publicar rápidamente y depurar la aplicación a una 
 
     Se alcanzará el punto de interrupción en Visual Studio.
 
-    Ya está. El resto de los pasos descritos en este tema se aplican a la depuración remota en una máquina virtual de Azure.
+    Eso es todo. El resto de los pasos descritos en este tema se aplican a la depuración remota en una máquina virtual de Azure.
 
 ## <a name="remote_debug_azure_vm"></a> Depuración remota de ASP.NET Core en una máquina virtual de Azure
 
@@ -108,9 +108,9 @@ En este artículo incluye pasos sobre cómo configurar una configuración básic
 
 * Si desea obtener ayuda para asegurarse de que la aplicación se ha configurado, implementado y que se ejecutan correctamente en IIS para que pueda Depurar, siga todos los pasos de este tema.
 
-    * Antes de comenzar, siga los pasos descritos en [instalación y ejecución de IIS](/azure/virtual-machines/windows/quick-create-portal).
+  * Antes de comenzar, siga los pasos descritos en [instalación y ejecución de IIS](/azure/virtual-machines/windows/quick-create-portal).
 
-    * Al abrir el puerto 80 en el grupo de seguridad de red, abra también el [corregir puerto](#bkmk_openports) para el depurador remoto (4024 o 4022). De este modo, no tendrá que abrirla de nuevo más tarde.
+  * Al abrir el puerto 80 en el grupo de seguridad de red, abra también el [corregir puerto](#bkmk_openports) para el depurador remoto (4024 o 4022). De este modo, no tendrá que abrirla de nuevo más tarde.
 
 ### <a name="update-browser-security-settings-on-windows-server"></a>Actualizar configuración de seguridad del explorador en Windows Server
 
@@ -118,7 +118,7 @@ Si está habilitada la configuración de seguridad mejorada de Internet Explorer
 
 - microsoft.com
 - go.microsoft.com
-- download.microsoft.com
+- download.Microsoft.com
 - iis.net
 
 Al descargar el software, obtendrá las solicitudes para conceder permiso para cargar varios scripts de sitios web y recursos. Algunos de estos recursos no son necesarias, pero para simplificar el proceso, haga clic en **agregar** cuando se le solicite.
@@ -251,7 +251,7 @@ Descargue la versión de las herramientas remotas que coincida con su versión d
 
 7. Haga clic en **Adjuntar**.
 
-8. Abra el sitio web del equipo remoto. En un explorador, vaya a **http://\<nombre del equipo remoto>**.
+8. Abra el sitio web del equipo remoto. En un explorador, vaya a **http://\<nombre del equipo remoto>** .
 
     Debería ver la página web de ASP.NET.
 9. En la aplicación ASP.NET en ejecución, haga clic en el vínculo a la **sobre** página.

@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d297b883c4d5217a0175c739bf460872d464503f
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: fd251ff10700df0ca01599b4247266d4375a4250
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746669"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821319"
 ---
 # <a name="intellitrace-for-visual-studio-enterprise-c-visual-basic-c"></a>IntelliTrace para Visual Studio Enterprise (C#, Visual Basic, C++)
 
@@ -74,19 +74,19 @@ A continuación se muestran algunos ejemplos de cómo IntelliTrace puede servir 
 
 - La aplicación ha dañado un archivo de datos, pero no se sabe dónde se produjo este evento.
 
-     Sin IntelliTrace, tiene que buscar en el código para encontrar todos los accesos posibles al archivo, colocar puntos de interrupción en esos accesos y volver a ejecutar la aplicación para encontrar el lugar donde se produjo el problema. Con IntelliTrace, puede ver todos los eventos de acceso a archivos recopilados y detalles concretos sobre la aplicación referentes al momento en que se produjo cada evento.
+  Sin IntelliTrace, tiene que buscar en el código para encontrar todos los accesos posibles al archivo, colocar puntos de interrupción en esos accesos y volver a ejecutar la aplicación para encontrar el lugar donde se produjo el problema. Con IntelliTrace, puede ver todos los eventos de acceso a archivos recopilados y detalles concretos sobre la aplicación referentes al momento en que se produjo cada evento.
 
 - Se produce una excepción.
 
-     Sin IntelliTrace, aparece un mensaje sobre la excepción, pero no se proporciona mucha información sobre los eventos que produjeron la excepción. Puede examinar la pila de llamadas para ver la cadena de llamadas que produjeron la excepción, pero no puede ver la secuencia de eventos que se produjeron durante esas llamadas. Con IntelliTrace, puede examinar los eventos que se produjeron antes de la excepción.
+  Sin IntelliTrace, aparece un mensaje sobre la excepción, pero no se proporciona mucha información sobre los eventos que produjeron la excepción. Puede examinar la pila de llamadas para ver la cadena de llamadas que produjeron la excepción, pero no puede ver la secuencia de eventos que se produjeron durante esas llamadas. Con IntelliTrace, puede examinar los eventos que se produjeron antes de la excepción.
 
 - Se produce un error o un bloqueo en una aplicación implementada.
 
-     En aplicaciones basadas en Microsoft Azure, puede configurar la recopilación de datos de IntelliTrace antes de publicar la aplicación. Mientras se ejecuta la aplicación, IntelliTrace guarda los datos en un archivo .iTrace. Consulte [depurar un servicio en la nube publicado con IntelliTrace y Visual Studio](../azure/vs-azure-tools-intellitrace-debug-published-cloud-services.md).
+  En aplicaciones basadas en Microsoft Azure, puede configurar la recopilación de datos de IntelliTrace antes de publicar la aplicación. Mientras se ejecuta la aplicación, IntelliTrace guarda los datos en un archivo .iTrace. Consulte [depurar un servicio en la nube publicado con IntelliTrace y Visual Studio](../azure/vs-azure-tools-intellitrace-debug-published-cloud-services.md).
 
-     Para las aplicaciones web ASP.NET hospedadas en IIS 7.0, 7.5, y 8.0, y las aplicaciones de SharePoint 2010 o SharePoint 2013, utilice Microsoft Monitoring Agent, solo o con System Center 2012, para guardar los datos de IntelliTrace en un archivo .iTrace.
+  Para las aplicaciones web ASP.NET hospedadas en IIS 7.0, 7.5, y 8.0, y las aplicaciones de SharePoint 2010 o SharePoint 2013, utilice Microsoft Monitoring Agent, solo o con System Center 2012, para guardar los datos de IntelliTrace en un archivo .iTrace.
 
-     Esto es útil cuando desea diagnosticar problemas con aplicaciones en fase de implementación. Consulte [usar el recolector independiente IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md).
+  Esto es útil cuando desea diagnosticar problemas con aplicaciones en fase de implementación. Consulte [usar el recolector independiente IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md).
 
 ## <a name="WhatData"></a> ¿Qué datos recopila IntelliTrace?
 
@@ -96,9 +96,9 @@ De forma predeterminada, IntelliTrace únicamente registra eventos de IntelliTra
 
 - **Eventos del depurador**
 
-     IntelliTrace registra siempre los eventos que se producen en el depurador de Visual Studio. Por ejemplo, iniciar la aplicación es un evento del depurador. Otros eventos del depurador son los eventos de parada, que hacen que la aplicación interrumpa la ejecución. Por ejemplo, el programa encuentra un punto de interrupción, alcanza un punto de seguimiento o se ejecuta un comando **Paso**.
+  IntelliTrace registra siempre los eventos que se producen en el depurador de Visual Studio. Por ejemplo, iniciar la aplicación es un evento del depurador. Otros eventos del depurador son los eventos de parada, que hacen que la aplicación interrumpa la ejecución. Por ejemplo, el programa encuentra un punto de interrupción, alcanza un punto de seguimiento o se ejecuta un comando **Paso**.
 
-     De forma predeterminada, para incrementar el rendimiento, IntelliTrace no registra todos los valores posibles para un evento del depurador. En su lugar, registra estos valores:
+  De forma predeterminada, para incrementar el rendimiento, IntelliTrace no registra todos los valores posibles para un evento del depurador. En su lugar, registra estos valores:
 
   - Valores de la ventana **Expresiones locales**. Mantenga abierta la ventana **Expresiones locales** para ver estos valores.
 
@@ -110,29 +110,29 @@ De forma predeterminada, IntelliTrace únicamente registra eventos de IntelliTra
 
 - **Excepciones**
 
-     IntelliTrace registra el tipo y el mensaje de excepción de estas clases de excepciones:
+  IntelliTrace registra el tipo y el mensaje de excepción de estas clases de excepciones:
 
-    - Excepciones controladas en las que la excepción se inicia y se detecta
+  - Excepciones controladas en las que la excepción se inicia y se detecta
 
-    - Excepciones no controladas
+  - Excepciones no controladas
 
 - **Eventos de .NET Framework**
 
-   De forma predeterminada, IntelliTrace registra los eventos más comunes de .NET Framework. Por ejemplo, para un <xref:System.Windows.Forms.CheckBox.CheckedChanged?displayProperty=nameWithType> eventos, IntelliTrace recopila el estado y el texto.
+  De forma predeterminada, IntelliTrace registra los eventos más comunes de .NET Framework. Por ejemplo, para un <xref:System.Windows.Forms.CheckBox.CheckedChanged?displayProperty=nameWithType> eventos, IntelliTrace recopila el estado y el texto.
 
 - **Eventos de aplicación de SharePoint 2010 y SharePoint 2013**
 
-     Puede registrar eventos de perfil de usuario y un subconjunto de eventos del sistema de registro unificado (ULS) para las aplicaciones de SharePoint 2010 y 2013 que se ejecutan fuera de Visual Studio. Puede guardar estos eventos en un archivo .iTrace. Requiere Visual Studio Enterprise 2015 o versiones posteriores, una versión anterior de Visual Studio Ultimate, o [Microsoft Monitoring Agent](http://go.microsoft.com/fwlink/?LinkId=320384) que se ejecutan en **seguimiento** modo.
+  Puede registrar eventos de perfil de usuario y un subconjunto de eventos del sistema de registro unificado (ULS) para las aplicaciones de SharePoint 2010 y 2013 que se ejecutan fuera de Visual Studio. Puede guardar estos eventos en un archivo .iTrace. Requiere Visual Studio Enterprise 2015 o versiones posteriores, una versión anterior de Visual Studio Ultimate, o [Microsoft Monitoring Agent](http://go.microsoft.com/fwlink/?LinkId=320384) que se ejecutan en **seguimiento** modo.
 
-     Al abrir el archivo .iTrace, especifique un identificador de correlación de SharePoint para buscar la solicitud web coincidente, ver los eventos registrados e iniciar la depuración desde un evento específico. Si el archivo contiene excepciones no controladas, puede elegir un identificador de correlación para empezar a depurar una excepción.
+  Al abrir el archivo .iTrace, especifique un identificador de correlación de SharePoint para buscar la solicitud web coincidente, ver los eventos registrados e iniciar la depuración desde un evento específico. Si el archivo contiene excepciones no controladas, puede elegir un identificador de correlación para empezar a depurar una excepción.
 
-     Vea:
+  Vea:
 
-    - [Uso del recopilador independiente de IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)
+  - [Uso del recopilador independiente de IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)
 
-    - [Uso de datos de IntelliTrace guardados](../debugger/using-saved-intellitrace-data.md)
+  - [Uso de datos de IntelliTrace guardados](../debugger/using-saved-intellitrace-data.md)
 
-    - [Tutorial: Depurar una aplicación de SharePoint mediante IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md)
+  - [Tutorial: Depurar una aplicación de SharePoint mediante IntelliTrace](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md)
 
 **Captura de instantáneas**
 

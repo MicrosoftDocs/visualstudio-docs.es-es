@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3bce742d4ce0374cb7270b964354d65a03e917d0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 8bf76967363f4c0d97d93c895fbeb6209c8503f0
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045608"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821683"
 ---
 # <a name="how-to-build-the-same-source-files-with-different-options"></a>Procedimiento Compilar los mismos archivos de código fuente con diferentes opciones
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ Al compilar proyectos, con frecuencia se compilan los mismos componentes con dis
     msbuild file.proj /property:Flavor=Debug  
     ```  
   
-     - O  
+     \- o -  
   
     ```  
     Msbuild file.proj /p:Flavor=Debug  
@@ -75,7 +75,7 @@ Al compilar proyectos, con frecuencia se compilan los mismos componentes con dis
   msbuild file.proj /p:Flavor=Debug;Platform=x86  
   ```  
   
-   - o bien:  
+   \- o -  
   
   ```  
   msbuild file.proj /p:Flavor=Debug /p:Platform=x86  

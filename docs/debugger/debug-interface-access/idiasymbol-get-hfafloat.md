@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f3305efc101603d66511e1e2c5ef356ead22b59f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63401422"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64801310"
 ---
 # <a name="idiasymbolgethfafloat"></a>IDiaSymbol::get_hfaFloat
 Recupera una marca que especifica si un tipo definido por el usuario (UDT) contiene el punto flotante agregado (HFA) datos homogéneos de tipo float.

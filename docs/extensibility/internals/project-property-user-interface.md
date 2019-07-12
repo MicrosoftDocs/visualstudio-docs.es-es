@@ -12,12 +12,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 86b3ebb0c931cec5dac40a980ba261c236307fe7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 9f701c1a2e31a52c05f0a7514c9d403522579e45
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66328262"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825840"
 ---
 # <a name="project-property-user-interface"></a>Interfaz de usuario de propiedades de proyecto
 
@@ -41,11 +41,11 @@ El proceso de extender un **propiedad del proyecto** cuadro de diálogo se descr
 
 - Un subtipo de proyecto puede determinar el CATID correspondiente para los distintos objetos extensibles del proyecto base en tiempo de ejecución mediante la recuperación de los siguientes <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> valores:
 
-    - <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2.VSHPROPID_ExtObjectCATID>
+  - <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2.VSHPROPID_ExtObjectCATID>
 
-    - <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2.VSHPROPID_BrowseObjectCATID>
+  - <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2.VSHPROPID_BrowseObjectCATID>
 
-    - <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2.VSHPROPID_CfgBrowseObjectCATID>
+  - <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2.VSHPROPID_CfgBrowseObjectCATID>
 
 Para determinar el CATID para el ámbito del proyecto, el subtipo de proyecto recupera las propiedades anteriores para [VSITEMID. Raíz](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Root>) desde el `VSITEMID typedef`. Un subtipo de proyecto también puede controlar qué **páginas de propiedades** se muestran las páginas del cuadro de diálogo para el proyecto, dependientes de la configuración y configuración independiente. Algunos subtipos de proyecto que deba quitar páginas integradas y agregar páginas específicas de subtipo de proyecto. Para habilitar esto, el proyecto de cliente administrado llama a la <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> método para las propiedades siguientes:
 

@@ -11,12 +11,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 55142e000a22b6e45543c6fc14594a12c93f4f92
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 76e8c92707279979cec6406bd1bcd5ad44a1f315
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65680289"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825780"
 ---
 # <a name="manage-models-and-diagrams-under-version-control"></a>Administrar modelos y diagramas con control de versiones
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,9 +37,9 @@ Administre distintas versiones de los diagramas y proyectos de modelado, incluid
   
 - Cada diagrama se almacena en dos archivos. Por ejemplo, un diagrama de clases contiene lo siguiente:  
   
-    - **DiagramName.classdiagram** : si este archivo se elimina o daña, se perderá el diagrama, pero las clases y asociaciones que se mostraban seguirán estando en el modelo y se podrán ver en el Explorador de modelos UML.  
-  
-    - **DiagramName.classdiagram.layout** : si se elimina este archivo, las formas seguirán apareciendo en el diagrama, pero perderán sus tamaños y posiciones. Cada archivo de diseño depende de un archivo de diagrama. Para verlo, haga clic en [+] junto al archivo de diagrama en el Explorador de soluciones.  
+  - **DiagramName.classdiagram** : si este archivo se elimina o daña, se perderá el diagrama, pero las clases y asociaciones que se mostraban seguirán estando en el modelo y se podrán ver en el Explorador de modelos UML.  
+
+  - **DiagramName.classdiagram.layout** : si se elimina este archivo, las formas seguirán apareciendo en el diagrama, pero perderán sus tamaños y posiciones. Cada archivo de diseño depende de un archivo de diagrama. Para verlo, haga clic en [+] junto al archivo de diagrama en el Explorador de soluciones.  
   
 > [!NOTE]
 > Es importante mantener la coherencia entre los archivos. Por ejemplo, si se usa control de código fuente para revertir los cambios en un archivo .uml, al mismo tiempo se deben deshacer los cambios correspondientes en los archivos .*diagram y .layout. Los elementos representados en una. \*archivo de diagrama se perderá si no se representan también en un archivo .uml.  
@@ -55,9 +55,9 @@ Administre distintas versiones de los diagramas y proyectos de modelado, incluid
   
 - Para asegurarse de que solo cambia el paquete en el que está trabajando:  
   
-    - Establezca la propiedad **LinkedPackage** de un diagrama de casos de uso, componente o clase UML.  
-  
-    - En el Explorador de modelos UML, arrastre una actividad o interacción al paquete en cuanto la cree. Este elemento aparecerá en el Explorador de modelos UML cuando cree el primer nodo en el diagrama de actividades o de secuencia.  
+  - Establezca la propiedad **LinkedPackage** de un diagrama de casos de uso, componente o clase UML.  
+
+  - En el Explorador de modelos UML, arrastre una actividad o interacción al paquete en cuanto la cree. Este elemento aparecerá en el Explorador de modelos UML cuando cree el primer nodo en el diagrama de actividades o de secuencia.  
   
 - Para facilitar el seguimiento de los paquetes, cambie el nombre de los archivos de paquete de manera que reflejen los nombres reales de los paquetes.  
   
