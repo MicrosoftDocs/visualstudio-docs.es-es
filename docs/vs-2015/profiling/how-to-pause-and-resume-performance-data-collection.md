@@ -11,14 +11,14 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5a67fa921c5fedf5d37585036b2c5e55c7497434
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 50eedfe849de2a0fe82ee337d26a8b66a15d6764
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432636"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826149"
 ---
-# <a name="how-to-pause-and-resume-performance-data-collection"></a>Procedimiento Pausar y reanudar la recolección de datos de rendimiento
+# <a name="how-to-pause-and-resume-performance-data-collection"></a>Procedimiento Pausa y reanudación de la recopilación de datos de rendimiento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 En la ventana de la página de la sesión de generación de perfiles, puede controlar la recolección de datos de generación de perfiles de forma interactiva.  
@@ -34,11 +34,11 @@ En la ventana de la página de la sesión de generación de perfiles, puede cont
   
 - En la página de la sesión de generación de perfiles:  
   
-    - Elija **Pausar recolección** para suspender la recolección de datos.  
-  
-    - Elija **Reanudar recolección** para reiniciar la recolección de datos después de haberla pausado.  
-  
-    - Elija **Detener generación de perfiles** para finalizar la sesión de generación de perfiles y generar informes.  
+  - Elija **Pausar recolección** para suspender la recolección de datos.  
+
+  - Elija **Reanudar recolección** para reiniciar la recolección de datos después de haberla pausado.  
+
+  - Elija **Detener generación de perfiles** para finalizar la sesión de generación de perfiles y generar informes.  
   
 ## <a name="see-also"></a>Vea también  
  [Controlar la recopilación de datos](../profiling/controlling-data-collection.md)   

@@ -8,12 +8,12 @@ ms.assetid: c3c3df69-83b4-4fd0-b5b1-e18c33f39376
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: bdaaacd84cdc23b56fd76d7f4e66184868ad533c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: ede8844b34473e1c900bd6af040cac99ceee1514
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075823"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824056"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Fuentes y formato de Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -70,7 +70,7 @@ internal partial class WebConfigModificationWindow : DialogWindow
 
  (Reemplace `Microsoft.VisualStudio.Shell.11.0` con la versión actual de la dll MPF.)
 
- Para mostrar el cuadro de diálogo, llame a "**ShowModal()**" en la clase a través de **OpenFileDialog**. **ShowModal()** establece el estado modal correcto en el shell, asegura que el cuadro de diálogo se centra en la ventana primaria y así sucesivamente.
+ Para mostrar el cuadro de diálogo, llame a "**ShowModal()** " en la clase a través de **OpenFileDialog**. **ShowModal()** establece el estado modal correcto en el shell, asegura que el cuadro de diálogo se centra en la ventana primaria y así sucesivamente.
 
  El código es como sigue:
 
@@ -417,11 +417,11 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
 - Los encabezados de mayor tamaño (fuente del entorno x 155% o superior) se pueden colorear para estos propósitos:
 
-    - Para proporcionar el atractivo visual a la firma de la interfaz de usuario de Visual Studio
+  - Para proporcionar el atractivo visual a la firma de la interfaz de usuario de Visual Studio
 
-    - Para llamar la atención sobre un área específica
+  - Para llamar la atención sobre un área específica
 
-    - Para ofrecer un alivio de color del texto de entorno oscuro de gris o negro estándar
+  - Para ofrecer un alivio de color del texto de entorno oscuro de gris o negro estándar
 
 - Color en los encabezados debe aprovechar existente Visual Studio marca colores, principalmente el principal púrpura, FF68217A #.
 

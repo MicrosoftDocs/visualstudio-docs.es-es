@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7596706fea9447e831d12084c8d390120a9163c7
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 1ecb5981a8111f3fca013d3b5f115155ac7baf89
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65690028"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824846"
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>Trabajar con elementos en el Diseñador XAML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,18 +30,18 @@ Para agregar elementos (controles, distribuciones y formas) a una aplicación, p
   
 - En el Diseñador XAML, realice una de las siguientes acciones:  
   
-    - Haga doble clic en un elemento en el **Cuadro de herramientas** (o seleccione un elemento en el Cuadro de herramientas y presione Entrar).  
-  
-    - Arrastre un elemento del **Cuadro de herramientas** a la mesa de trabajo.  
-  
-    - En el **Cuadro de herramientas**, seleccione una de las herramientas de dibujo (como [Elipse](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.ellipse.aspx) o [Rectángulo](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.rectangle.aspx)) y después dibuje un elemento en el panel activo.  
+  - Haga doble clic en un elemento en el **Cuadro de herramientas** (o seleccione un elemento en el Cuadro de herramientas y presione Entrar).  
+
+  - Arrastre un elemento del **Cuadro de herramientas** a la mesa de trabajo.  
+
+  - En el **Cuadro de herramientas**, seleccione una de las herramientas de dibujo (como [Elipse](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.ellipse.aspx) o [Rectángulo](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.rectangle.aspx)) y después dibuje un elemento en el panel activo.  
   
 ## <a name="changing-the-layering-order-of-elements"></a>Cambiar el orden de distribución en capas de los elementos  
  Cuando haya dos elementos en la mesa de trabajo en XAML Designer, aparecerá un elemento delante del otro en el orden de distribución en capas. En la parte inferior de la lista de elementos de la ventana Esquema del documento se encuentra el elemento que se sitúa en primer plano (excepto cuando se establece la propiedad **ZIndex** de un elemento). Cuando se inserta un elemento en una página, un formulario o un contenedor de diseño, el elemento se coloca automáticamente delante de los demás elementos en el elemento de contenedor activo. Para cambiar el orden de los elementos, puede usar los comandos de **Ordenar** o arrastrar los elementos en el árbol de objetos de la ventana Esquema del documento.  
   
 #### <a name="to-change-the-layering-order"></a>Para cambiar el orden de distribución en capas  
   
-- Realice una de las siguientes acciones:  
+- Realice una de las operaciones siguientes:  
   
   - En la ventana **Esquema del documento**, arrastre los elementos hacia arriba o hacia abajo para crear el orden de distribución en capas deseado.  
   
@@ -121,5 +121,5 @@ Para agregar elementos (controles, distribuciones y formas) a una aplicación, p
   
 - En la ventana Esquema del documento o en la mesa de trabajo, haga clic con el botón derecho en el elemento, elija **Diseño**, **Restablecer**  *NombreDeLaPropiedad*, donde *NombreDeLaPropiedad* es la propiedad que quiere restablecer (o seleccione **Diseño**, **Restablecer todo** para restablecer todas las propiedades de diseño del elemento).  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Otras referencias  
  [Crear una UI usando el Diseñador XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)

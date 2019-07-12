@@ -21,12 +21,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 44f25085edcc8b492946d54c7853f8ec32deb0c2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 0c9dcc0d09887cacca7e6cdaa2e4f2b719c6451c
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MTE95
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114969"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826243"
 ---
 # <a name="xsd-task"></a>XSD (tarea)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,21 +40,21 @@ Encapsula la herramienta de definición de esquema XML (xsd.exe), que genera arc
   
      Parámetro **String** opcional.  
   
-     Una lista de opciones especificada en la línea de comando. Por ejemplo, "*/option1 /option2 /option#*". Utilice este parámetro para especificar opciones que no están representadas por ningún otro parámetro de tarea **XSD**.  
+     Una lista de opciones especificada en la línea de comando. Por ejemplo, " */option1 /option2 /option#* ". Utilice este parámetro para especificar opciones que no están representadas por ningún otro parámetro de tarea **XSD**.  
   
 - **GenerateFromSchema**  
   
-     Parámetro **String** opcional.  
+  Parámetro **String** opcional.  
+
+  Especifica los tipos que se generan a partir del esquema especificado.  
+
+  Especifique uno de los valores siguientes, cada uno de los cuales corresponde a una opción XSD.  
+
+  - **classes** -  **/classes**  
+
+  - **dataset** -  **/dataset**  
   
-     Especifica los tipos que se generan a partir del esquema especificado.  
-  
-     Especifique uno de los valores siguientes, cada uno de los cuales corresponde a una opción XSD.  
-  
-    - **classes** - **/classes**  
-  
-    - **dataset** - **/dataset**  
-  
-- **Idioma**  
+- **Lenguaje**  
   
      Parámetro **String** opcional.  
   
@@ -78,7 +78,7 @@ Encapsula la herramienta de definición de esquema XML (xsd.exe), que genera arc
   
      Parámetro **Boolean** opcional.  
   
-     Si es `true`, evita que se muestre el copyright y el mensaje de número de versión cuando la tarea se inicia.   
+     Si es `true`, evita que se muestre el copyright y el mensaje de número de versión cuando la tarea se inicia.  
   
 - **TrackerLogDirectory**  
   
@@ -86,5 +86,5 @@ Encapsula la herramienta de definición de esquema XML (xsd.exe), que genera arc
   
      Especifica el directorio de registro de seguimiento.  
   
-## <a name="see-also"></a>Vea también  
+## <a name="see-also"></a>Otras referencias  
  [Referencia de tareas](../msbuild/msbuild-task-reference.md)
