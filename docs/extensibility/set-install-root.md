@@ -8,16 +8,16 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0b17bc1936d077e379ff9eca7460fab1a3a37722
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 2d5fc36c1244edd0988b6b76f8106020369cd90b
+ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66338403"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "67852193"
 ---
-# <a name="installing-outside-the-extensions-folder"></a>Instalación fuera de la carpeta de extensiones
+# <a name="install-outside-the-extensions-folder"></a>Instalar fuera de la carpeta de extensiones
 
-A partir de Visual Studio 2017 y VSIX v3 (versión 3), ahora existe compatibilidad para la instalación de los recursos de extensión fuera de la carpeta de extensiones. Actualmente, se habilitan las siguientes ubicaciones como ubicaciones de instalación válida (donde [INSTALLDIR] está asignada al directorio de instalación de la instancia de Visual Studio):
+A partir de Visual Studio 2017 y VSIX v3 activos de extensión (versión 3), puede instalarse fuera de la carpeta de extensiones. Actualmente, se habilitan las siguientes ubicaciones como ubicaciones de instalación válida (donde [INSTALLDIR] está asignada al directorio de instalación de la instancia de Visual Studio):
 
 * \MSBuild [INSTALLDIR]
 * [INSTALLDIR]\Xml\Schemas
@@ -25,9 +25,10 @@ A partir de Visual Studio 2017 y VSIX v3 (versión 3), ahora existe compatibilid
 * [INSTALLDIR]\Licenses
 * [INSTALLDIR]\Common7\IDE\ReferenceAssemblies
 * [INSTALLDIR]\Common7\IDE\RemoteDebugger
-* [INSTALLDIR]\Common7\IDE\VC\VCTargets
+* [INSTALLDIR] \Common7\IDE\VC\VCTargets (solo compatible con Visual Studio 2017; en desuso para 2019 de Visual Studio y versiones posteriores)
 
->**Nota:** El formato VSIX no permiten instalar fuera de la estructura de carpeta de instalación de VS.
+> [!NOTE]
+> El formato VSIX no permite instalar fuera de la estructura de carpeta de instalación de Visual Studio. 
 
 Para admitir la instalación de estos directorios, la extensión VSIX debe instalarse "por instancia por equipo". Esta opción puede habilitarse activando la casilla "todos los usuarios" en el diseñador extension.vsixmanifest:
 
@@ -49,7 +50,8 @@ Esto agregará algunos metadatos correspondiente `ProjectReference` propiedad de
  </ProjectReference>
 ```
 
->**Nota:** Puede editar el archivo .csproj directamente, si lo prefiere.
+> [!NOTE]
+> Puede editar el archivo .csproj directamente, si lo prefiere.
 
 ## <a name="how-to-set-a-subpath-under-the-installroot"></a>Cómo establecer una subruta en el valor de InstallRoot
 

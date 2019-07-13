@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 69ad1208f9c3e36ff4f73b633efc9de180a09457
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e13d6d323264136c6cab4c753ba53d40acd5a628
+ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62852094"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "67852223"
 ---
 # <a name="debugging-errors-and-warning-dialog-boxes"></a>Cuadros de diálogo de advertencias y errores de depuración
 A continuación, se muestran los cuadros de diálogo de advertencia y errores que se pueden encontrar mientras se depura una aplicación.
@@ -37,6 +37,8 @@ A continuación, se muestran los cuadros de diálogo de advertencia y errores qu
  [Cuadro de diálogo No se puede cambiar el valor](../debugger/cannot-change-value-dialog-box.md)
 
  [El depurador no puede mostrar el código fuente o el desensamblado](../debugger/debugger-cannot-display-source-code-or-disassembly.md)
+ 
+ [Servicios que se está quedando sin memoria del depurador](../debugger/error-debugger-services-no-memory.md)
 
  [Cuadro de diálogo Archivo ejecutable para sesión de depuración](../debugger/executable-for-debugging-session-dialog-box.md)
 

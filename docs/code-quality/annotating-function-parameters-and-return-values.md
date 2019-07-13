@@ -1,6 +1,6 @@
 ---
 title: Anotar parámetros de función y valores devueltos
-ms.date: 11/04/2016
+ms.date: 07/11/2019
 ms.topic: conceptual
 f1_keywords:
 - _Outptr_opt_result_bytebuffer_to_
@@ -119,18 +119,21 @@ f1_keywords:
 - _Outref_result_bytebuffer_
 - _Result_nullonfailure_
 - _Ret_null_
+- _Scanf_format_string_
+- _Scanf_s_format_string_
+- _Printf_format_string_
 ms.assetid: 82826a3d-0c81-421c-8ffe-4072555dca3a
 author: mikeblome
 ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: ace5afbf1c587a2c54c4221469cb7be0d6487c9a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1a33a29261a8a776ec570026fbc3ab575f712929
+ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63388554"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "67852167"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>Anotar parámetros de función y valores devueltos
 En este artículo se describe los usos típicos de las anotaciones de parámetros de función simple, escalares y punteros a estructuras y clases y casi todos los tipos de búferes.  En este artículo también muestra los patrones de uso común para las anotaciones. Para obtener información sobre las anotaciones adicionales que están relacionados con las funciones, vea [anotar comportamiento de la función](../code-quality/annotating-function-behavior.md)
@@ -285,6 +288,7 @@ En este artículo se describe los usos típicos de las anotaciones de parámetro
      Un puntero a una matriz terminada en null para el que la expresión `p`  -  `_Curr_` (es decir, `p` menos `_Curr_`) se define mediante el estándar del lenguaje adecuado.  Los elementos anteriores a `p` no tiene que ser válido en estado preliminar y debe ser válido en el estado posterior a la.
 
 ## <a name="optional-pointer-parameters"></a>Parámetros de puntero opcional
+
  Cuando se incluye una anotación del parámetro de puntero `_opt_`, indica que el parámetro puede ser null. En caso contrario, la anotación realiza la misma que la versión que no incluya `_opt_`. Esta es una lista de los `_opt_` variantes de las anotaciones de parámetro de puntero:
 
 ||||
@@ -384,6 +388,7 @@ En este artículo se describe los usos típicos de las anotaciones de parámetro
    El puntero devuelto señala a un búfer válido si la función se realiza correctamente, o null si se produce un error en la función. Esta anotación es para un parámetro de referencia.
 
 ## <a name="output-reference-parameters"></a>Parámetros de referencia de salida
+
  Un uso común del parámetro de referencia es para los parámetros de salida.  Para los parámetros de referencia de salida simples, por ejemplo, `int&`:`_Out_` proporciona la semántica correcta.  Sin embargo, cuando el valor de salida es un puntero, por ejemplo `int *&`, como las anotaciones de puntero equivalente `_Outptr_ int **` no proporcionan la semántica correcta.  Para expresar de forma concisa la semántica de referencia de parámetros de salida para los tipos de puntero, utilice estas anotaciones compuestas:
 
  **Las anotaciones y descripciones**
@@ -445,13 +450,62 @@ En este artículo se describe los usos típicos de las anotaciones de parámetro
      Resultado debe ser válido en el estado posterior a la, pero puede ser null en el estado de publicación. Apunta a un búfer válido de `s` bytes de los elementos válidos.
 
 ## <a name="return-values"></a>Valores devueltos
+
  El valor devuelto de una función es similar a un `_Out_` parámetro, pero está en un nivel diferente de de-reference y no tiene que tener en cuenta el concepto del puntero al resultado.  Para las siguientes anotaciones, el valor devuelto es el objeto anotado, un valor escalar, un puntero a una estructura o un puntero a un búfer. Estas anotaciones tienen la misma semántica que el correspondiente `_Out_` anotación.
 
 |||
 |-|-|
 |`_Ret_z_`<br /><br /> `_Ret_writes_(s)`<br /><br /> `_Ret_writes_bytes_(s)`<br /><br /> `_Ret_writes_z_(s)`<br /><br /> `_Ret_writes_to_(s,c)`<br /><br /> `_Ret_writes_maybenull_(s)`<br /><br /> `_Ret_writes_to_maybenull_(s)`<br /><br /> `_Ret_writes_maybenull_z_(s)`|`_Ret_maybenull_`<br /><br /> `_Ret_maybenull_z_`<br /><br /> `_Ret_null_`<br /><br /> `_Ret_notnull_`<br /><br /> `_Ret_writes_bytes_to_`<br /><br /> `_Ret_writes_bytes_maybenull_`<br /><br /> `_Ret_writes_bytes_to_maybenull_`|
 
+## <a name="format-string-parameters"></a>Parámetros de cadena de formato
+
+- `_Printf_format_string_` Indica que el parámetro es una cadena de formato para su uso en un `printf` expresión.
+
+     **Ejemplo**
+
+    ```cpp
+    int MyPrintF(_Printf_format_string_ const wchar_t* format, ...)
+    {
+           va_list args;
+           va_start(args, format);
+           int ret = vwprintf(format, args);
+           va_end(args);
+           return ret;
+    }
+    ```
+
+- `_Scanf_format_string_` Indica que el parámetro es una cadena de formato para su uso en un `scanf` expresión.
+
+     **Ejemplo**
+
+    ```cpp
+    int MyScanF(_Scanf_format_string_ const wchar_t* format, ...)
+    {
+           va_list args;
+           va_start(args, format);
+           int ret = vwscanf(format, args);
+           va_end(args);
+           return ret;
+    }
+    ```
+
+- `_Scanf_s_format_string_` Indica que el parámetro es una cadena de formato para su uso en un `scanf_s` expresión.
+
+     **Ejemplo**
+
+    ```cpp
+    int MyScanF_s(_Scanf_s_format_string_ const wchar_t* format, ...)
+    {
+           va_list args; 
+           va_start(args, format);
+           int ret = vwscanf_s(format, args);
+           va_end(args); 
+           return ret;
+    }
+    ```
+
 ## <a name="other-common-annotations"></a>Otras anotaciones comunes
+
  **Las anotaciones y descripciones**
 
 - `_In_range_(low, hi)`
@@ -490,6 +544,7 @@ En este artículo se describe los usos típicos de las anotaciones de parámetro
      `min(pM->nSize, sizeof(MyStruct))`
 
 ## <a name="related-resources"></a>Recursos relacionados
+
  [Blog del equipo de análisis de código](http://go.microsoft.com/fwlink/?LinkId=251197)
 
 ## <a name="see-also"></a>Vea también
