@@ -15,12 +15,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c3fe11a4d92ecc95f5835fc8a8c654b2aac3d235
-ms.sourcegitcommit: d2b234e0a4a875c3cba09321cdf246842670d872
+ms.openlocfilehash: fc5dbc6b483313d169a80dc66550dce80a147c96
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67493656"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823836"
 ---
 # <a name="uml-use-case-diagrams-guidelines"></a>Diagramas de casos de uso UML: Instrucciones
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -88,13 +88,13 @@ En Visual Studio, puede dibujar un *diagrama de casos de uso* quién usa la apli
   
     - Los actores representan las clases de usuarios, organizaciones y sistemas externos que interactúan con el sistema.  
   
-    - Cámbieles el nombre. Por ejemplo: **Agencia de tarjeta de crédito del cliente, restaurante.**  
+    - Cámbieles el nombre. Por ejemplo:  **Agencia de tarjeta de crédito del cliente, restaurante.**  
   
 3. Arrastre **casos de uso** desde el cuadro de herramientas a los sistemas adecuados.  
   
     - Los casos de uso representan las actividades que los actores realizan con la ayuda del sistema.  
   
-    - Asígneles títulos que los propios actores puedan reconocer. No use títulos que tengan relación con el código. Por ejemplo: **Pedir comida, paga por la comida, entregar comida**.  
+    - Asígneles títulos que los propios actores puedan reconocer. No use títulos que tengan relación con el código. Por ejemplo:  **Pedir comida, paga por la comida, entregar comida**.  
   
     - Comenzar con las transacciones más importantes, como **pedir**, dejando hasta posteriores interacciones más pequeñas como **Elegir elemento del menú**.  
   
@@ -115,13 +115,13 @@ En Visual Studio, puede dibujar un *diagrama de casos de uso* quién usa la apli
   
 - Crear **actores** que representen clases de personas, organizaciones, otros sistemas, software o dispositivos que interactúan con el sistema o subsistema.  
   
-    - Para obtener información sobre cómo se dibujan actores y otros elementos, vea [modelos y diagramas UML editar](../modeling/edit-uml-models-and-diagrams.md).  
-  
-    - En cada uno de los conjuntos de objetivos, identifique los actores en función de su tipo o rol, aun cuando las entidades o personas físicas sean las mismas. Por ejemplo, “Restaurante” y “Cliente” son actores diferentes, aunque un empleado del restaurante podría ocasionalmente actuar como cliente.  
+  - Para obtener información sobre cómo se dibujan actores y otros elementos, vea [modelos y diagramas UML editar](../modeling/edit-uml-models-and-diagrams.md).  
+
+  - En cada uno de los conjuntos de objetivos, identifique los actores en función de su tipo o rol, aun cuando las entidades o personas físicas sean las mismas. Por ejemplo, “Restaurante” y “Cliente” son actores diferentes, aunque un empleado del restaurante podría ocasionalmente actuar como cliente.  
   
 - Crear **casos de uso** para cada uno de los objetivos que los actores pretendan conseguir con el sistema.  
   
-    - Asigne un nombre y una descripción para los casos de uso; use palabras que el actor pueda entender y no emplee términos relacionados con la implementación.  
+  - Asigne un nombre y una descripción para los casos de uso; use palabras que el actor pueda entender y no emplee términos relacionados con la implementación.  
   
 - Usar **asociaciones** para vincular actores con casos de uso.  
   

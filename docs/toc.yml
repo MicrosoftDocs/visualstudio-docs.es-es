@@ -16,15 +16,6 @@
   items:
     - name: Instalar Visual Studio
       href: install/install-visual-studio.md
-    - name: Cuentas de personalización
-      items:
-        - name: Iniciar sesión en Visual Studio
-          displayName: personalization accounts
-          href: ide/signing-in-to-visual-studio.md
-        - name: Trabajar con varias cuentas de usuario
-          href: ide/work-with-multiple-user-accounts.md
-        - name: Ampliar una versión de prueba o actualizar una licencia
-          href: ide/how-to-unlock-visual-studio.md
     - name: Instalación sin conexión
       items:
         - name: Crear una instalación sin conexión de Visual Studio
@@ -61,8 +52,6 @@
           items:
             - name: Crear una instalación basada en red de Visual Studio
               href: install/create-a-network-installation-of-visual-studio.md
-            - name: Actualización de una instalación basada en red de Visual Studio
-              href: install/update-a-network-installation-of-visual-studio.md
             - name: Consideraciones sobre la red
               items:
                 - name: Instalar y usar Visual Studio detrás de un firewall o servidor proxy
@@ -77,28 +66,32 @@
               href: install/automatically-apply-product-keys-when-deploying-visual-studio.md
             - name: Establecimiento de valores predeterminados para implementaciones empresariales de Visual Studio
               href: install/set-defaults-for-enterprise-deployments.md
-            - name: Deshabilitación o traslado de la caché de paquetes
-              href: install/disable-or-move-the-package-cache.md
-            - name: Controlar las actualizaciones a implementaciones de Visual Studio
-              href: install/controlling-updates-to-visual-studio-deployments.md
-            - name: Actualización de Visual Studio mientras se encuentra en una base de referencia de mantenimiento
-              href: install/update-servicing-baseline.md
-        - name: Administración de instalaciones
+            - name: Implementación del Visor de ayuda
+              items:
+                - name: Guía del administrador del Visor de Ayuda
+                  href: help-viewer/administrator-guide.md
+                - name: Argumentos de línea de comandos para Help Content Manager
+                  href: help-viewer/command-line-arguments.md
+                - name: Invalidaciones de Help Content Manager
+                  href: help-viewer/behavior-overrides.md
+        - name: Administración y actualización de instalaciones
           items:
             - name: Herramientas para detectar y administrar instancias de Visual Studio
               href: install/tools-for-managing-visual-studio-instances.md
+            - name: Actualización de una instalación basada en red de Visual Studio
+              href: install/update-a-network-installation-of-visual-studio.md
+            - name: Actualización de Visual Studio mientras se encuentra en una base de referencia de mantenimiento
+              href: install/update-servicing-baseline.md
+            - name: Controlar las actualizaciones a implementaciones de Visual Studio
+              href: install/controlling-updates-to-visual-studio-deployments.md
+            - name: Administración de cambios de carga de paquete
+              href: install/changed-payloads.md
+            - name: Deshabilitación o traslado de la caché de paquetes
+              href: install/disable-or-move-the-package-cache.md
         - name: Administrar suscripciones
           items:
             - name: 'Suscripciones de Visual Studio: Información general del administrador'
               href: /visualstudio/subscriptions/admin-responsibilities
-        - name: Implementación del Visor de ayuda
-          items:
-            - name: Guía del administrador del Visor de Ayuda
-              href: help-viewer/administrator-guide.md
-            - name: Argumentos de línea de comandos para Help Content Manager
-              href: help-viewer/command-line-arguments.md
-            - name: Invalidaciones de Help Content Manager
-              href: help-viewer/behavior-overrides.md
         - name: Referencia
           items:
             - name: Identificadores de cargas de trabajo y componentes de Visual Studio
@@ -126,8 +119,6 @@
                   href: install/workload-component-id-vs-test-professional.md
                 - name: Visual Studio Feedback Client
                   href: install/workload-component-id-vs-feedback-client.md
-            - name: Cambios de carga de paquete
-              href: install/changed-payloads.md
             - name: Números de compilación y fechas de lanzamiento de Visual Studio
               href: install/visual-studio-build-numbers-and-release-dates.md
     - name: Usar Visual Studio desde una máquina virtual de Azure
@@ -718,6 +709,15 @@
           displayName: 'marketplace, gallery, vsix'
         - name: Administrar herramientas externas
           href: ide/managing-external-tools.md
+        - name: Cuentas de personalización
+          items:
+            - name: Iniciar sesión en Visual Studio
+              displayName: personalization accounts
+              href: ide/signing-in-to-visual-studio.md
+            - name: Trabajar con varias cuentas de usuario
+              href: ide/work-with-multiple-user-accounts.md
+            - name: Ampliar una versión de prueba o actualizar una licencia
+              href: ide/how-to-unlock-visual-studio.md
     - name: Rendimiento de Visual Studio
       items:
         - name: Optimizar el rendimiento

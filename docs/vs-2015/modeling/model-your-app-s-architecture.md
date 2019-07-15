@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: be66bf02294c12d39bcfd28793bb036696296476
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c9e5de52fbe15049f4acb3dacf236bfe9f4ecc92
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63417779"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823261"
 ---
 # <a name="model-your-app39s-architecture"></a>Modelar la aplicación&#39;arquitectura s
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +56,7 @@ Para ayudar a garantizar que el sistema de software o la aplicación cumple sus 
 ## <a name="Requirements"></a> Descripción de los requisitos  
  La forma más eficaz de desarrollar el diseño de alto nivel de una aplicación completa es hacerlo junto con un modelo de requisitos y otra descripción de las necesidades de los usuarios. Para obtener más información acerca de los modelos de requisitos, consulte [modelar los requisitos del usuario](../modeling/model-user-requirements.md).  
   
- Si el sistema que está desarrollando es un componente de un sistema más grande, es posible que parte de los requisitos, o todos ellos, puedan expresarse en interfaces programáticas.   
+ Si el sistema que está desarrollando es un componente de un sistema más grande, es posible que parte de los requisitos, o todos ellos, puedan expresarse en interfaces programáticas.  
   
  El modelo de requisitos proporciona estos elementos de información esenciales:  
   
@@ -79,7 +79,7 @@ Para ayudar a garantizar que el sistema de software o la aplicación cumple sus 
   El nivel de detalle que debe usarse en los requisitos o en un modelo arquitectónico dependerá de la escala del proyecto y del tamaño y distribución del equipo. Un equipo reducido que trabaje en un proyecto pequeño podría simplemente trazar un diagrama de clases de los conceptos de negocio y algunos modelos de diseño; un proyecto grande distribuido en varias regiones necesitaría mucho más detalle.  
   
 ## <a name="BigDecisions"></a> Patrones de arquitectura  
-  En una fase inicial de desarrollo, tendrá que elegir las principales tecnologías y elementos en los que se va a basar el diseño. Las áreas en las que deben tomarse estas decisiones son, entre otras:  
+ En una fase inicial de desarrollo, tendrá que elegir las principales tecnologías y elementos en los que se va a basar el diseño. Las áreas en las que deben tomarse estas decisiones son, entre otras:  
   
 - Las tecnologías de base; por ejemplo, la elección entre una base de datos y un sistema de archivos, la elección entre una aplicación de red y un cliente web, etc.  
   
@@ -194,7 +194,7 @@ Para ayudar a garantizar que el sistema de software o la aplicación cumple sus 
   Por ejemplo, en un sistema de ventas basado en web, el modelo de requisitos podría definir la compra de un cliente como un caso de uso. Puede crear un diagrama de secuencia para mostrar las interacciones que el cliente tiene con los componentes en la capa de la presentación y para mostrar las interacciones que tiene con los componentes de contabilidad y almacenamiento.  
   
 ### <a name="identifying-the-initiating-events"></a>Identificar los eventos de iniciación  
-  El trabajo realizado por la mayor parte de los sistemas de software puede dividirse cómodamente en las respuestas que da a diferentes entradas o eventos. El evento de iniciación puede ser uno de los eventos siguientes:  
+ El trabajo realizado por la mayor parte de los sistemas de software puede dividirse cómodamente en las respuestas que da a diferentes entradas o eventos. El evento de iniciación puede ser uno de los eventos siguientes:  
   
 - La primera acción de un caso de uso. Podría aparecer en el modelo de requisitos como un paso de un caso de uso o una acción de un diagrama de actividades. Para obtener más información, [diagramas de casos de uso de UML: Directrices](../modeling/uml-use-case-diagrams-guidelines.md) y [diagramas de actividades UML: Directrices](../modeling/uml-activity-diagrams-guidelines.md).  
   
@@ -244,9 +244,9 @@ Para ayudar a garantizar que el sistema de software o la aplicación cumple sus 
   
 - Modelo de los elementos primarios y sus relaciones. Pueden tratarse de clases o componentes e interfaces, con asociaciones y dependencias entre ellos. Normalmente, los elementos pertenecen a dos categorías:  
   
-    - Elementos que el desarrollador debe reproducir en cada elemento del código en el que se usa el modelo. Puede usar tipos de plantilla para describirlos. Para obtener más información, consulte [diagramas de casos de uso de UML: referencia](../modeling/uml-use-case-diagrams-reference.md).  
-  
-    - Elementos que describen las clases del marco que debe usar el programador.  
+  - Elementos que el desarrollador debe reproducir en cada elemento del código en el que se usa el modelo. Puede usar tipos de plantilla para describirlos. Para obtener más información, consulte [diagramas de casos de uso de UML: referencia](../modeling/uml-use-case-diagrams-reference.md).  
+
+  - Elementos que describen las clases del marco que debe usar el programador.  
   
 - Modelo de las interacciones entre los elementos, mediante diagramas de secuencia o actividades.  
   
