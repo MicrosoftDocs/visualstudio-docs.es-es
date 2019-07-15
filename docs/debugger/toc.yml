@@ -710,6 +710,8 @@
               href: cannot-change-value-dialog-box.md
             - name: El depurador no puede mostrar el código fuente o el desensamblado
               href: debugger-cannot-display-source-code-or-disassembly.md
+            - name: Servicios del depurador que se quedan sin memoria
+              href: error-debugger-services-no-memory.md
             - name: Archivo ejecutable para sesión de depuración (cuadro de diálogo)
               href: executable-for-debugging-session-dialog-box.md
             - name: Editar y continuar (cuadro de diálogo) (C++)
